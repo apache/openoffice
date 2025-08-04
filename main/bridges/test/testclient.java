@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,7 +49,7 @@ class MyTestFactory implements XTestFactory
 		{
 			return new MyCallMe();
 		}
-	
+
     public test.XInterfaceTest createInterfaceTest(  ) throws com.sun.star.uno.RuntimeException
 		{
 			return null;
@@ -92,7 +92,7 @@ class MyCallMe implements XCallMe
 		{
 			return new test.TestTypes();
 		}
-	
+
 }
 
 public class testclient
@@ -100,11 +100,11 @@ public class testclient
 	static void main( String[] args )
 		{
 			try {
-				
+
 				com.sun.star.comp.servicemanager.ServiceManager smgr =
 					new com.sun.star.comp.servicemanager.ServiceManager();
 				smgr.addFactories( new String[] { "com.sun.star.comp.connections.Connector" });
-				
+
 				Object  x  = smgr.createInstance("com.sun.star.connection.Connector");
 				if( x == null )
 				{
@@ -112,12 +112,12 @@ public class testclient
 					return;
 				}
 
-				
+
 				XConnector xConnector =
 					UnoRuntime.queryInterface( XConnector.class , x );
-				
+
 				XConnection xConnection = xConnector.connect(args[0]);
-			
+
 				if( null != xConnection )
 				{
 					System.out.println( "after connect" );
@@ -128,12 +128,12 @@ public class testclient
 						"remote",
 						null,
 						new Object[]{"iiop", xConnection, new MyInstanceProvider()});
-					
+
 					System.out.println( "after building bridge" );
 //  				Object rInitialObject = m_bridge.mapInterfaceFrom(rootOid, XInterface.class);
 //  				XTestFactory rFactory =
 //  					UnoRuntime.queryInterface(XTestFactory.class,rInitialObject );
-					
+
 //  				XCallMe callMerFactory->
 					Thread.currentThread().sleep( 100000 );
 				}
@@ -148,5 +148,5 @@ public class testclient
 			}
 
 			System.out.println( "exiting" );
-		}	
+		}
 }

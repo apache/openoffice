@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -60,7 +60,7 @@
 //_________________________________________________________________________________________________________________
 //	Defines
 //_________________________________________________________________________________________________________________
-// 
+//
 
 using namespace com::sun::star::uno;
 using namespace com::sun::star::lang;
@@ -101,8 +101,8 @@ MenuBarFactory::~MenuBarFactory()
 }
 
 // XUIElementFactory
-Reference< XUIElement > SAL_CALL MenuBarFactory::createUIElement( 
-    const ::rtl::OUString& ResourceURL, 
+Reference< XUIElement > SAL_CALL MenuBarFactory::createUIElement(
+    const ::rtl::OUString& ResourceURL,
     const Sequence< PropertyValue >& Args )
 throw ( ::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException )
 {
@@ -123,7 +123,7 @@ void MenuBarFactory::CreateUIElement(const ::rtl::OUString& ResourceURL
                                      ,const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XModuleManager >& _xModuleManager
                                      ,const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& _xServiceManager)
 {
-    Reference< XUIConfigurationManager > xCfgMgr;    
+    Reference< XUIConfigurationManager > xCfgMgr;
     Reference< XUIConfigurationManager > xConfigSource;
     Reference< XFrame >                  xFrame;
     rtl::OUString                        aResourceURL( ResourceURL );
@@ -178,7 +178,7 @@ void MenuBarFactory::CreateUIElement(const ::rtl::OUString& ResourceURL
             }
         }
     }
-    
+
     PropertyValue aPropValue;
     Sequence< Any > aPropSeq( _pExtraMode ? 5 : 4);
     aPropValue.Name = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Frame" ));
@@ -199,7 +199,7 @@ void MenuBarFactory::CreateUIElement(const ::rtl::OUString& ResourceURL
         aPropValue.Value <<= bExtraMode;
         aPropSeq[4] <<= aPropValue;
     }
-    
+
     vos::OGuard	aGuard( Application::GetSolarMutex() );
     Reference< XInitialization > xInit( _xMenuBar, UNO_QUERY );
     xInit->initialize( aPropSeq );

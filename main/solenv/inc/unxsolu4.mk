@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -68,7 +68,7 @@ CFLAGSPROF=-xpg
 CFLAGSDEBUG=-g
 CFLAGSDBGUTIL=
 #  -xO3                     optimization level 3
-CFLAGSOPT= -xO3 -xalias_level=compatible 
+CFLAGSOPT= -xO3 -xalias_level=compatible
 CFLAGSNOOPT=
 CFLAGSOUTOBJ=-o
 
@@ -91,9 +91,9 @@ CFLAGSOUTOBJ=-o
 #   compilation unit that uses std::hash_map<sal_Int64, sal_Int64> (see
 #   sfx2/source/toolbox/imgmgr.cxx:1.27) and thus unfortunately needs to be
 #   disabled globally
-# - wnoretvalue: "The last statement should return a value." 
+# - wnoretvalue: "The last statement should return a value."
 #   CC 5.9: the compiler does often not notice that there is no way
-#   to reach the closing brace of a function without either returning a proper 
+#   to reach the closing brace of a function without either returning a proper
 #   value or throwing an exception.
 # - hidef:  "d::foo() hides the function b::foo()." We got still some cases of mixed
 #   sal_uInt32 and ULONG usages which needs to be fixed. We can then remove this one
@@ -107,7 +107,7 @@ CFLAGSWERRCXX=-xwe
 # Once all modules on this platform compile without warnings, set
 # COMPILER_WARN_ERRORS=TRUE here instead of setting MODULES_WITH_WARNINGS (see
 # settings.mk):
-MODULES_WITH_WARNINGS := 
+MODULES_WITH_WARNINGS :=
 
 STDOBJVCL=$(L)/salmain.o
 

@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -31,10 +31,10 @@ CDEFS+=-D_PTHREADS -D_STD_NO_NAMESPACE -D_VOS_NO_NAMESPACE -D_UNO_NO_NAMESPACE -
 
 # obernervige Warnungen abschalten
 # 67  = invalid pragma name
-# 251 = An object cannot be deleted using a pointer of type 'void *' since the 
+# 251 = An object cannot be deleted using a pointer of type 'void *' since the
 #		type of the object allocated is unknown.
 # 370 = The friend declaration is not in the correct form for either a function or a class.
-#       (future error)	
+#       (future error)
 # 600 = Type specifier is omitted; "int" is no longer assumed.
 DISWARN=+W67,251,370,600
 
@@ -67,7 +67,7 @@ THREADLIB=-L/opt/dce/lib -ldce
 LINK=/opt/aCC/bin/aCC
 LINKFLAGS=
 LINKFLAGSAPPGUI=-Wl,+s
-LINKFLAGSSHLGUI=-b -L/usr/solar/lib -L/usr/contrib/X11R6/lib 
+LINKFLAGSSHLGUI=-b -L/usr/solar/lib -L/usr/contrib/X11R6/lib
 LINKFLAGSAPPCUI=-Wl,+s
 LINKFLAGSSHLCUI=-b -L/usr/contrib/X11R6/lib
 LINKFLAGSTACK=

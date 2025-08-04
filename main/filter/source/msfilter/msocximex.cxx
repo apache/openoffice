@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -768,7 +768,7 @@ class MultiPageContainerRecReader : public ContainerRecReader
         // container record array and by examining the flags present in
         // the record to determine we expect to read or not.
         // In this case for a MultPage control there is no Top or Left
-        // values in the control record array, however time contraints
+        // values in the control record array, however time constraints
         // and associated risk prevent further investigation of this
         // at the moment.
         // similar situation exists for the start of the container record
@@ -5082,7 +5082,7 @@ sal_Bool OCX_FontData::Export(SvStorageStreamRef &rContent,
 	{
 		aTmp = rPropSet->getPropertyValue(WW8_ASCII2STR("FontWeight"));
 		//Export font related props
-		if ( aTmp.hasValue() ) 
+		if ( aTmp.hasValue() )
 		{
 			float nBold = 0.0;
 			aTmp >>= nBold;
@@ -5107,7 +5107,7 @@ sal_Bool OCX_FontData::Export(SvStorageStreamRef &rContent,
 			if ( eUnderline == awt::FontUnderline::SINGLE )
 				fUnderline = 1;
 		}
-	
+
 		aTmp = rPropSet->getPropertyValue(WW8_ASCII2STR("FontStrikeout"));
 		if ( aTmp.hasValue() )
 		{
@@ -5115,9 +5115,9 @@ sal_Bool OCX_FontData::Export(SvStorageStreamRef &rContent,
 			aTmp >>= eLtStrikeout;
 			if ( eLtStrikeout == awt::FontStrikeout::SINGLE )
 				fStrike = 1;
-		}	
-		
-		sal_uInt8 nTmp= 1 * fBold  +  2* fItalic  + 4* fUnderline +  8 * fStrike; 
+		}
+
+		sal_uInt8 nTmp= 1 * fBold  +  2* fItalic  + 4* fUnderline +  8 * fStrike;
 		if ( nTmp > 0 )
 		{
 			nFlags |= 0x02;

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package transex3.model;
@@ -31,18 +31,18 @@ public class SdfString {
 	private String filename							= null;
 	private String modulename						= null;
 	private String filepath							= null;
-	
+
 	/*public HashMap getLanguageStrings() {
 		return languageStrings;
 	}*/
 	public Vector getLanguageStrings() {
 		return languageList;
 	}
-	
+
 	public void setLanguageStrings(Vector languageStrings) {
 		this.languageList = languageStrings;
 	}
-	
+
 	public void addSourceString( SdfEntity aSdfEntity )
     {
         if( id == null )
@@ -105,7 +105,7 @@ public class SdfString {
 
 	public String getFileName() {
 		return filename;
-	} 
+	}
 
 	public void setFileName(String filename) {
 		this.filename = filename;
@@ -155,7 +155,7 @@ public class SdfString {
 					aBW.write( sourceString.getHelpid()+"\t"  	);
 					aBW.write( sourceString.getPlatform()+"\t"  );
 					aBW.write( sourceString.getDummy2()+"\t"  	);
-					if( aEntity.getLangid() == null ) 
+					if( aEntity.getLangid() == null )
 						aBW.write( "\t"  );
 					else
 						aBW.write( aEntity.getLangid()+"\t"    );
@@ -173,7 +173,7 @@ public class SdfString {
 						aBW.write( aEntity.getQuickhelptext()+"\t" 	);
 					if( aEntity.getTitle() == null )
 						aBW.write( "\t"  );
-					else						
+					else
 						aBW.write( aEntity.getTitle()+"\t"   		);
 					aBW.write( "2002-02-02 02:02:02\n"   		);
 				}

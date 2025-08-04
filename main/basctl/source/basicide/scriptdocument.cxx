@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -82,7 +82,7 @@
 
 #include <rtl/uri.hxx>
 #include <rtl/bootstrap.hxx>
- 
+
 #include <osl/process.h>
 #include <osl/file.hxx>
 
@@ -257,7 +257,7 @@ namespace basctl
                         getDocumentRef() const { return m_xDocument; }
 
         /// returns a library container belonging to the document
-        Reference< XLibraryContainer > 
+        Reference< XLibraryContainer >
                     getLibraryContainer( LibraryContainerType _eType ) const;
 
         /// determines whether a given library is part of the shared installation
@@ -457,7 +457,7 @@ namespace basctl
                 bResult = xVBACompat->getVBACompatibilityMode();
         }
 #endif
-        return bResult; 
+        return bResult;
     }
 
     //--------------------------------------------------------------------
@@ -650,7 +650,7 @@ namespace basctl
         try
         {
             Reference< XNameContainer > xLib( getLibrary( _eType, _rLibName, sal_True ), UNO_QUERY_THROW );
-            
+
 		    // get element
 		    Any aElement( xLib->getByName( _rOldName ) );
 
@@ -1015,7 +1015,7 @@ namespace basctl
 				::rtl::OUString aSearchURL3( RTL_CONSTASCII_USTRINGPARAM( "share/extensions" ) );
 				if( aCanonicalFileURL.indexOf( aSearchURL1 ) != -1 ||
                     aCanonicalFileURL.indexOf( aSearchURL2 ) != -1 ||
-                    aCanonicalFileURL.indexOf( aSearchURL3 ) != -1 ) 
+                    aCanonicalFileURL.indexOf( aSearchURL3 ) != -1 )
                         bIsShared = true;
             }
         }
@@ -1125,7 +1125,7 @@ namespace basctl
     ScriptDocument::~ScriptDocument()
     {
     }
-    
+
     //--------------------------------------------------------------------
     const ScriptDocument& ScriptDocument::getApplicationScriptDocument()
     {
@@ -1250,7 +1250,7 @@ namespace basctl
 
         return aScriptDocs;
     }
-    
+
     //--------------------------------------------------------------------
     bool ScriptDocument::operator==( const ScriptDocument& _rhs ) const
     {
@@ -1280,7 +1280,7 @@ namespace basctl
     {
         return m_pImpl->getLibraryContainer( _eType );
     }
-    
+
     //--------------------------------------------------------------------
     Reference< XNameContainer > ScriptDocument::getLibrary( LibraryContainerType _eType, const ::rtl::OUString& _rLibName, bool _bLoadLibrary ) const
         SAL_THROW((NoSuchElementException))

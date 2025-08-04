@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -422,13 +422,13 @@ enum ScGetDBSelection
     /** Shrink selection to actually used data area within the selection. */
     SC_DBSEL_SHRINK_TO_USED_DATA,
 
-    /** If only one row or portion thereof is selected, shrink row to used data 
-        columns and select further rows down until end of data. If an area is 
-        selected, shrink rows to actually used columns. Else, no selection, 
+    /** If only one row or portion thereof is selected, shrink row to used data
+        columns and select further rows down until end of data. If an area is
+        selected, shrink rows to actually used columns. Else, no selection,
         expand to used data area. */
     SC_DBSEL_ROW_DOWN,
 
-    /** Behave as if the range corresponding to a ScDBData area was selected, 
+    /** Behave as if the range corresponding to a ScDBData area was selected,
         for API use. */
     SC_DBSEL_FORCE_MARK
 };
@@ -563,7 +563,7 @@ class ScGlobal
     static IntlWrapper*         pScIntlWrapper;
     static ::com::sun::star::lang::Locale*		pLocale;
 
-public:	
+public:
     static SvtSysLocale*        pSysLocale;
     // for faster access a pointer to the single instance provided by SvtSysLocale
     SC_DLLPUBLIC static const CharClass*     pCharClass;
@@ -576,10 +576,10 @@ public:
     static CollatorWrapper*		GetCaseCollator();
     static IntlWrapper*         GetScIntlWrapper();
     static ::com::sun::star::lang::Locale*		GetLocale();
-    
+
     SC_DLLPUBLIC static ::utl::TransliterationWrapper* GetpTransliteration(); //CHINA001
     static ::utl::TransliterationWrapper* GetCaseTransliteration();
-    
+
     SC_DLLPUBLIC static LanguageType	   		eLnge;
 	static sal_Unicode			cListDelimiter;
 

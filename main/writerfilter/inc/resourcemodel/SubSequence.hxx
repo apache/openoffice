@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,7 +41,7 @@ template <class T>
 class SubSequence;
 
 template <typename T>
-void dumpLine(OutputWithDepth<string> & o, SubSequence<T> & rSeq, 
+void dumpLine(OutputWithDepth<string> & o, SubSequence<T> & rSeq,
               sal_uInt32 nOffset, sal_uInt32 nStep);
 
 template <class T>
@@ -75,7 +75,7 @@ public:
 
     SubSequence(const SubSequence & rSubSequence, sal_uInt32 nOffset_,
                 sal_uInt32 nCount_)
-        : mpSequence(rSubSequence.mpSequence), 
+        : mpSequence(rSubSequence.mpSequence),
           mnOffset(rSubSequence.mnOffset + nOffset_),
           mnCount(nCount_)
     {
@@ -88,7 +88,7 @@ public:
     }
 
     SubSequence(sal_Int32 nCount_)
-        : mpSequence(new com::sun::star::uno::Sequence<T>(nCount_)), mnOffset(0), 
+        : mpSequence(new com::sun::star::uno::Sequence<T>(nCount_)), mnOffset(0),
           mnCount(nCount_)
     {
     }
@@ -103,29 +103,29 @@ public:
         return *mpSequence;
     }
 
-    void reset() { 
-        mnOffset = 0; 
+    void reset() {
+        mnOffset = 0;
         mnCount = mpSequence->getLength();
     }
 
     sal_uInt32 getOffset() const { return mnOffset; }
     sal_uInt32 getCount() const { return mnCount; }
 
-    const T & operator[] (sal_uInt32 nIndex) const 
-    { 
-        if (mnOffset + nIndex >= 
+    const T & operator[] (sal_uInt32 nIndex) const
+    {
+        if (mnOffset + nIndex >=
             sal::static_int_cast<sal_uInt32>(mpSequence->getLength()))
             throw ExceptionOutOfBounds("SubSequence::operator[]");
 
-        return (*mpSequence)[mnOffset + nIndex]; 
+        return (*mpSequence)[mnOffset + nIndex];
     }
 
     void dump(ostream & o) const
     {
         {
             char sBuffer[256];
-            
-            snprintf(sBuffer, sizeof(sBuffer), 
+
+            snprintf(sBuffer, sizeof(sBuffer),
                      "<sequence id='%p' offset='%lx' count='%lx'>",
                      mpSequence.get(), mnOffset, mnCount);
             o << sBuffer << endl;
@@ -193,29 +193,29 @@ public:
     {
         {
             char sBuffer[256];
-            
-            snprintf(sBuffer, sizeof(sBuffer), 
+
+            snprintf(sBuffer, sizeof(sBuffer),
                      "<sequence id='%p' offset='%" SAL_PRIxUINT32 "' count='%" SAL_PRIxUINT32 "'>",
                      mpSequence.get(), mnOffset, mnCount);
             o.addItem(sBuffer);
         }
-        
+
         sal_uInt32 n = 0;
         sal_uInt32 nStep = 16;
-        
-        try 
+
+        try
         {
             sal_uInt32 nCount = getCount();
             while (n < nCount)
             {
                 sal_uInt32 nBytes = nCount - n;
-                
+
                 if (nBytes > nStep)
                     nBytes = nStep;
-                
+
                 SubSequence<T> aSeq(*this, n, nBytes);
                 dumpLine(o, aSeq, n, nStep);
-                
+
                 n += nBytes;
             }
         }
@@ -223,7 +223,7 @@ public:
         {
             o.addItem("<exception/>");
         }
-    
+
         o.addItem("</sequence>");
     }
 

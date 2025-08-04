@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -46,7 +46,7 @@ namespace vcl
         {}
         ~ExtWindowImpl()
         {}
-        
+
         boost::shared_ptr< WindowArranger >      mxLayout;
         bool                                     mbOwnedByParent;
         rtl::OUString                            maIdentifier;
@@ -109,9 +109,9 @@ boost::shared_ptr< vcl::WindowArranger > Window::getLayout()
             pImpl->mxLayout->setParentWindow( this );
             pImpl->mxLayout->setOuterBorder( -1 );
         }
-        xRet = pImpl->mxLayout; 
+        xRet = pImpl->mxLayout;
     }
-    
+
     return xRet;
 }
 
@@ -128,7 +128,7 @@ void Window::addWindow( Window* i_pWin, bool i_bTakeOwnership )
         }
     }
 }
-    
+
 Window* Window::removeWindow( Window* i_pWin, Window* i_pNewParent )
 {
     Window* pRet = NULL;
@@ -149,12 +149,12 @@ Window* Window::removeWindow( Window* i_pWin, Window* i_pNewParent )
     }
     return pRet;
 }
-    
+
 Window* Window::findWindow( const rtl::OUString& i_rIdentifier ) const
 {
     if( getIdentifier() == i_rIdentifier )
         return const_cast<Window*>(this);
-    
+
     Window* pChild = mpWindowImpl->mpFirstChild;
     while ( pChild )
     {
@@ -170,7 +170,7 @@ Window* Window::findWindow( const rtl::OUString& i_rIdentifier ) const
 const rtl::OUString& Window::getIdentifier() const
 {
     static rtl::OUString aEmptyStr;
-    
+
     return (mpWindowImpl && mpWindowImpl->mpExtImpl) ? mpWindowImpl->mpExtImpl->maIdentifier : aEmptyStr;
 }
 
@@ -216,7 +216,7 @@ uno::Sequence< beans::PropertyValue > Window::getProperties() const
     aProps[1].Value = uno::makeAny( sal_Bool( IsVisible() ) );
     aProps[2].Name  = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Text" ) );
     aProps[2].Value = uno::makeAny( rtl::OUString( GetText() ) );
-    
+
     return aProps;
 }
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -105,13 +105,13 @@ public class ScAccessiblePageHeaderArea extends TestCase {
             xCell = oSheet.getCellByPosition(0, 0) ;
             xCell.setFormula("ScAccessiblePageHeaderArea");
         } catch(com.sun.star.lang.WrappedTargetException e) {
-            log.println("Exception ceating relation :");
+            log.println("Exception creating relation :");
             e.printStackTrace(log);
         } catch(com.sun.star.lang.IndexOutOfBoundsException e) {
-            log.println("Exception ceating relation :");
+            log.println("Exception creating relation :");
             e.printStackTrace(log);
         } catch(com.sun.star.lang.IllegalArgumentException e) {
-            log.println("Exception ceating relation :");
+            log.println("Exception creating relation :");
             e.printStackTrace(log);
         }
 
@@ -153,7 +153,7 @@ public class ScAccessiblePageHeaderArea extends TestCase {
         try {
             oObj = at.getAccessibleObjectForRole
                 (xRoot, AccessibleRole.HEADER, "").getAccessibleChild(0);
-            XAccessibleContext cont = (XAccessibleContext) 
+            XAccessibleContext cont = (XAccessibleContext)
                     UnoRuntime.queryInterface(XAccessibleContext.class, oObj);
             XAccessibleStateSet StateSet = cont.getAccessibleStateSet();
             if (StateSet.contains((short)27)) {
@@ -162,26 +162,26 @@ public class ScAccessiblePageHeaderArea extends TestCase {
         } catch (com.sun.star.lang.IndexOutOfBoundsException iabe) {
             throw new StatusException("Couldn't find needed Child",iabe);
         }
-        
+
         log.println("ImplementationName " + utils.getImplName(oObj));
         at.printAccessibleTree(log, xRoot, Param.getBool(util.PropertyName.DEBUG_IS_ACTIVE));
 
         TestEnvironment tEnv = new TestEnvironment(oObj);
-        
+
         XAccessibleContext zoomIn =
             at.getAccessibleObjectForRole(xRoot,AccessibleRole.PUSH_BUTTON, "Zoom In");
-        
-        final XAccessibleAction pressZoom = (XAccessibleAction) 
+
+        final XAccessibleAction pressZoom = (XAccessibleAction)
                     UnoRuntime.queryInterface(XAccessibleAction.class, zoomIn);
         tEnv.addObjRelation("EventProducer",
             new ifc.accessibility._XAccessibleEventBroadcaster.EventProducer() {
-                public void fireEvent() {           
+                public void fireEvent() {
                         try {
                             pressZoom.doAccessibleAction(0);
                         } catch (com.sun.star.lang.IndexOutOfBoundsException ibe) {}
                 }
-            });            
-                          
+            });
+
         return tEnv;
 
     }

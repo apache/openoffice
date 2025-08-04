@@ -1,5 +1,5 @@
 # *************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 # *************************************************************
 # unroll begin
 
@@ -31,7 +31,7 @@ $(MISC)/$(TARGET).$(SRS1NAME).dprr: $(SRC1FILES)
 
 .IF "$(WITH_LANG)"!=""
 
-$(foreach,i,$(SRC1FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)  
+$(foreach,i,$(SRC1FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)
 	@echo "Making:   " $(@:f)
 	$(COMMAND_ECHO)-$(MKDIR) $(@:d)
     $(COMMAND_ECHO)-$(RM) $@
@@ -72,7 +72,7 @@ $(MISC)/$(TARGET).$(SRS2NAME).dprr: $(SRC2FILES)
 
 .IF "$(WITH_LANG)"!=""
 
-$(foreach,i,$(SRC2FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)  
+$(foreach,i,$(SRC2FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)
 	@echo "Making:   " $(@:f)
 	$(COMMAND_ECHO)-$(MKDIR) $(@:d)
     $(COMMAND_ECHO)-$(RM) $@
@@ -113,7 +113,7 @@ $(MISC)/$(TARGET).$(SRS3NAME).dprr: $(SRC3FILES)
 
 .IF "$(WITH_LANG)"!=""
 
-$(foreach,i,$(SRC3FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)  
+$(foreach,i,$(SRC3FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)
 	@echo "Making:   " $(@:f)
 	$(COMMAND_ECHO)-$(MKDIR) $(@:d)
     $(COMMAND_ECHO)-$(RM) $@
@@ -154,7 +154,7 @@ $(MISC)/$(TARGET).$(SRS4NAME).dprr: $(SRC4FILES)
 
 .IF "$(WITH_LANG)"!=""
 
-$(foreach,i,$(SRC4FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)  
+$(foreach,i,$(SRC4FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)
 	@echo "Making:   " $(@:f)
 	$(COMMAND_ECHO)-$(MKDIR) $(@:d)
     $(COMMAND_ECHO)-$(RM) $@
@@ -195,7 +195,7 @@ $(MISC)/$(TARGET).$(SRS5NAME).dprr: $(SRC5FILES)
 
 .IF "$(WITH_LANG)"!=""
 
-$(foreach,i,$(SRC5FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)  
+$(foreach,i,$(SRC5FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)
 	@echo "Making:   " $(@:f)
 	$(COMMAND_ECHO)-$(MKDIR) $(@:d)
     $(COMMAND_ECHO)-$(RM) $@
@@ -236,7 +236,7 @@ $(MISC)/$(TARGET).$(SRS6NAME).dprr: $(SRC6FILES)
 
 .IF "$(WITH_LANG)"!=""
 
-$(foreach,i,$(SRC6FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)  
+$(foreach,i,$(SRC6FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)
 	@echo "Making:   " $(@:f)
 	$(COMMAND_ECHO)-$(MKDIR) $(@:d)
     $(COMMAND_ECHO)-$(RM) $@
@@ -277,7 +277,7 @@ $(MISC)/$(TARGET).$(SRS7NAME).dprr: $(SRC7FILES)
 
 .IF "$(WITH_LANG)"!=""
 
-$(foreach,i,$(SRC7FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)  
+$(foreach,i,$(SRC7FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)
 	@echo "Making:   " $(@:f)
 	$(COMMAND_ECHO)-$(MKDIR) $(@:d)
     $(COMMAND_ECHO)-$(RM) $@
@@ -318,7 +318,7 @@ $(MISC)/$(TARGET).$(SRS8NAME).dprr: $(SRC8FILES)
 
 .IF "$(WITH_LANG)"!=""
 
-$(foreach,i,$(SRC8FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)  
+$(foreach,i,$(SRC8FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)
 	@echo "Making:   " $(@:f)
 	$(COMMAND_ECHO)-$(MKDIR) $(@:d)
     $(COMMAND_ECHO)-$(RM) $@
@@ -359,7 +359,7 @@ $(MISC)/$(TARGET).$(SRS9NAME).dprr: $(SRC9FILES)
 
 .IF "$(WITH_LANG)"!=""
 
-$(foreach,i,$(SRC9FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)  
+$(foreach,i,$(SRC9FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)
 	@echo "Making:   " $(@:f)
 	$(COMMAND_ECHO)-$(MKDIR) $(@:d)
     $(COMMAND_ECHO)-$(RM) $@
@@ -400,7 +400,7 @@ $(MISC)/$(TARGET).$(SRS10NAME).dprr: $(SRC10FILES)
 
 .IF "$(WITH_LANG)"!=""
 
-$(foreach,i,$(SRC10FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)  
+$(foreach,i,$(SRC10FILES) $(COMMONMISC)/$(TARGET)/$i) : $$(@:f) $(LOCALIZESDF)
 	@echo "Making:   " $(@:f)
 	$(COMMAND_ECHO)-$(MKDIR) $(@:d)
     $(COMMAND_ECHO)-$(RM) $@

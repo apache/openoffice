@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -47,7 +47,7 @@ void closeErrorFile();
 
 /*
  * The main function implements a loader for applications which use UNO.
- * 
+ *
  * <p>This code runs on the Windows platform only.</p>
  *
  * <p>The main function detects a UNO installation on the system and adds the
@@ -61,11 +61,11 @@ void closeErrorFile();
  * environment variable to the program directory of the UNO installation.
  * If no installation is specified by the user, the default installation on
  * the system will be taken. The default installation is read from the
- * default value of the key "Software\OpenOffice\UNO\InstallPath" from the 
- * root key HKEY_CURRENT_USER in the Windows Registry. If this key is missing, 
+ * default value of the key "Software\OpenOffice\UNO\InstallPath" from the
+ * root key HKEY_CURRENT_USER in the Windows Registry. If this key is missing,
  * the key is read from the root key HKEY_LOCAL_MACHINE.</p>
  */
-int WINAPI WinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, 
+int WINAPI WinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance,
                     LPSTR lpCmdLine, int nCmdShow )
 {
     const char* ENVVARNAME = "PATH";
@@ -78,15 +78,15 @@ int WINAPI WinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance,
     int size;
     STARTUPINFO startup_info;
     PROCESS_INFORMATION process_info;
-    BOOL bCreate; 
-    
+    BOOL bCreate;
+
     (void) hInstance; /* unused */
     (void) hPrevInstance; /* unused */
     (void) nCmdShow; /* unused */
 
     /* get the path of the UNO installation */
     path = getPath();
-    
+
     if ( path != NULL )
     {
         /* The former code to call unoinfo first is removed because we can use the office path
@@ -94,13 +94,13 @@ int WINAPI WinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance,
            Further cleanup can remove unoinfo from the installation when all places where it is
            used are checked.
           */
-        
+
         /* get the value of the PATH environment variable */
         value = getenv( ENVVARNAME );
 
-        /* 
+        /*
          * add the UNO installation path to the PATH environment variable;
-         * note that this only affects the environment variable of the current 
+         * note that this only affects the environment variable of the current
          * process, the command processor's environment is not changed
          */
         size = strlen( ENVVARNAME ) + strlen( "=" ) + strlen( path ) + 1;
@@ -138,7 +138,7 @@ int WINAPI WinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance,
     bCreate = CreateProcess( NULL, cmdline, NULL,  NULL, FALSE, 0, NULL, NULL,
                              &startup_info, &process_info );
     free( cmdline );
-    if ( !bCreate )                            
+    if ( !bCreate )
     {
         writeError( "Error: cannot create process!\n" );
         closeErrorFile();
@@ -153,14 +153,14 @@ int WINAPI WinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance,
 
 /*
  * Gets the path of a UNO installation.
- *                                 
+ *
  * @return the installation path or NULL, if no installation was specified or
- *         found, or if an error occurred     
+ *         found, or if an error occurred
  */
 char const* getPath()
 {
     char const* path = cppuhelper_detail_findSofficePath();
- 
+
     if ( path == NULL )
         writeError( "Warning: getting path from Windows Registry failed!\n" );
 
@@ -175,7 +175,7 @@ char const* getPath()
  * prefixed by '_'.</p>
  *
  * @param appendix specifies the command line for the application excluding
- *                 the executable name 
+ *                 the executable name
  *
  * @return the command line for the application process or NULL, if an error
  *         occurred
@@ -205,7 +205,7 @@ char* createCommandLine( char* appendix )
         _makepath( cmdname, drive, dir, newbase, ext );
 
         /* create the command line */
-        cmdline = (char*) malloc( strlen( DQUOTE ) + strlen( cmdname ) + 
+        cmdline = (char*) malloc( strlen( DQUOTE ) + strlen( cmdname ) +
             strlen ( DQUOTE ) + strlen( SPACE ) + strlen( appendix ) + 1 );
         strcpy( cmdline, DQUOTE );
         strcat( cmdline, cmdname );
@@ -229,7 +229,7 @@ char* createCommandLine( char* appendix )
 
  * @param create specifies, if the error file should be created (create != 0)
  *
- * @return the pointer to the open error file or NULL, if no error file is 
+ * @return the pointer to the open error file or NULL, if no error file is
  *         open or can be created
  */
 FILE* getErrorFile( int create )
@@ -265,7 +265,7 @@ FILE* getErrorFile( int create )
                 GetTempPath( sizeof( fname ), fname );
                 strcat( fname, newbase );
                 strcat( fname, EXTENSION );
-                ferr = fopen( fname, MODE );                
+                ferr = fopen( fname, MODE );
             }
         }
     }

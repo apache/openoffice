@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -124,7 +124,7 @@ public class ViewForwarder {
         XCell xCell = null;
         try {
             XSpreadsheets oSheets = xSpreadsheetDoc.getSheets() ;
-            XIndexAccess oIndexSheets = 
+            XIndexAccess oIndexSheets =
                 UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
             Object o = oIndexSheets.getByIndex(0);
             XSpreadsheet oSheet = (XSpreadsheet)AnyConverter.toObject(
@@ -137,23 +137,23 @@ public class ViewForwarder {
             xCell = oSheet.getCellByPosition(0, 2) ;
             xCell.setFormula("Cell 2");
         } catch(com.sun.star.lang.IllegalArgumentException e) {
-            System.out.println("Exception ceating relation :");
+            System.out.println("Exception creating relation :");
             fail(e.getMessage());
         } catch(com.sun.star.lang.WrappedTargetException e) {
-            System.out.println("Exception ceating relation :");
+            System.out.println("Exception creating relation :");
             fail(e.getMessage());
         } catch(com.sun.star.lang.IndexOutOfBoundsException e) {
-            System.out.println("Exception ceating relation :");
+            System.out.println("Exception creating relation :");
             fail(e.getMessage());
         }
 
-        XModel aModel = 
+        XModel aModel =
             UnoRuntime.queryInterface(XModel.class, xSpreadsheetDoc);
 
         XController xController = aModel.getCurrentController();
 
         // get page styles
-        XStyleFamiliesSupplier StyleFam = 
+        XStyleFamiliesSupplier StyleFam =
             UnoRuntime.queryInterface(
                 XStyleFamiliesSupplier.class,
                 xSpreadsheetDoc );
@@ -179,7 +179,7 @@ public class ViewForwarder {
         }
 
         //get the property-set
-        final XPropertySet PropSet = 
+        final XPropertySet PropSet =
             UnoRuntime.queryInterface(XPropertySet.class, StdStyle);
 
         XHeaderFooterContent RPHFC = null;
@@ -238,9 +238,9 @@ public class ViewForwarder {
 
         // switching to 'Page Preview' mode
         try {
-            XDispatchProvider xDispProv = 
+            XDispatchProvider xDispProv =
                 UnoRuntime.queryInterface(XDispatchProvider.class, xController);
-            XURLTransformer xParser = 
+            XURLTransformer xParser =
                 UnoRuntime.queryInterface(XURLTransformer.class,
             mXMSF.createInstance("com.sun.star.util.URLTransformer"));
             // Because it's an in/out parameter we must use an
@@ -290,7 +290,7 @@ public class ViewForwarder {
 
         System.out.println("ImplementationName " + utils.getImplName(oObj));
 
-        XAccessibleComponent accPC = 
+        XAccessibleComponent accPC =
                 UnoRuntime.queryInterface(XAccessibleComponent.class, parent);
 
         System.out.println("Parent-BoundsX= "+accPC.getBounds().X);
@@ -298,7 +298,7 @@ public class ViewForwarder {
         System.out.println("Parent-BoundsWidth= "+accPC.getBounds().Width);
         System.out.println("Parent-BoundsHeight= "+accPC.getBounds().Height);
 
-        XAccessibleComponent accPPC = 
+        XAccessibleComponent accPPC =
                         UnoRuntime.queryInterface(XAccessibleComponent.class,
                         parent.getAccessibleContext().getAccessibleParent());
 
@@ -329,7 +329,7 @@ public class ViewForwarder {
             return;
         }
 
-        XAccessibleText accT = 
+        XAccessibleText accT =
                 UnoRuntime.queryInterface(XAccessibleText.class, oObj);
         System.out.println("Getting the text: "+accT.getText());
 
@@ -340,7 +340,7 @@ public class ViewForwarder {
         System.out.println("BoundsWidth= "+accC.getBounds().Width);
         System.out.println("BoundsHeight= "+accC.getBounds().Height);
 
-        accPC = 
+        accPC =
                 UnoRuntime.queryInterface(XAccessibleComponent.class, parent);
 
         System.out.println("Parent-BoundsX= "+accPC.getBounds().X);
@@ -348,7 +348,7 @@ public class ViewForwarder {
         System.out.println("Parent-BoundsWidth= "+accPC.getBounds().Width);
         System.out.println("Parent-BoundsHeight= "+accPC.getBounds().Height);
 
-        accPPC = 
+        accPPC =
         UnoRuntime.queryInterface(XAccessibleComponent.class,
                         parent.getAccessibleContext().getAccessibleParent());
 
@@ -375,7 +375,7 @@ public class ViewForwarder {
             return;
         }
 
-        accPC = 
+        accPC =
                 UnoRuntime.queryInterface(XAccessibleComponent.class, parent);
 
         try {
@@ -388,18 +388,18 @@ public class ViewForwarder {
             return;
         }
 
-        accT = 
+        accT =
                 UnoRuntime.queryInterface(XAccessibleText.class, oObj);
         System.out.println("Getting the text: "+accT.getText());
 
-        accC = 
+        accC =
                 UnoRuntime.queryInterface(XAccessibleComponent.class, oObj);
         System.out.println("BoundsX= "+accC.getBounds().X);
         System.out.println("BoundsY= "+accC.getBounds().Y);
         System.out.println("BoundsWidth= "+accC.getBounds().Width);
         System.out.println("BoundsHeight= "+accC.getBounds().Height);
 
-        accPC = 
+        accPC =
                 UnoRuntime.queryInterface(XAccessibleComponent.class, parent);
 
         System.out.println("Parent-BoundsX= "+accPC.getBounds().X);
@@ -407,7 +407,7 @@ public class ViewForwarder {
         System.out.println("Parent-BoundsWidth= "+accPC.getBounds().Width);
         System.out.println("Parent-BoundsHeight= "+accPC.getBounds().Height);
 
-        accPPC = 
+        accPPC =
         UnoRuntime.queryInterface(XAccessibleComponent.class,
                         parent.getAccessibleContext().getAccessibleParent());
 
@@ -461,7 +461,7 @@ public class ViewForwarder {
         System.out.println("SERVICES:");
         util.dbg.getSuppServices(oObj);
 
-        XAccessibleValue accV = 
+        XAccessibleValue accV =
                 UnoRuntime.queryInterface(XAccessibleValue.class, oObj);
         Object o = accV.getCurrentValue();
         if (o instanceof String)
@@ -477,14 +477,14 @@ public class ViewForwarder {
 
 
 
-        accC = 
+        accC =
                 UnoRuntime.queryInterface(XAccessibleComponent.class, oObj);
         System.out.println("BoundsX= "+accC.getBounds().X);
         System.out.println("BoundsY= "+accC.getBounds().Y);
         System.out.println("BoundsWidth= "+accC.getBounds().Width);
         System.out.println("BoundsHeight= "+accC.getBounds().Height);
 
-        accPC = 
+        accPC =
                 UnoRuntime.queryInterface(XAccessibleComponent.class, parent);
 
         System.out.println("Parent-BoundsX= "+accPC.getBounds().X);
@@ -492,7 +492,7 @@ public class ViewForwarder {
         System.out.println("Parent-BoundsWidth= "+accPC.getBounds().Width);
         System.out.println("Parent-BoundsHeight= "+accPC.getBounds().Height);
 
-        accPPC = 
+        accPPC =
                 UnoRuntime.queryInterface(XAccessibleComponent.class,
                         parent.getAccessibleContext().getAccessibleParent());
 
@@ -535,7 +535,7 @@ public class ViewForwarder {
         XCell xCell = null;
         try {
             XSpreadsheets oSheets = xSpreadsheetDoc.getSheets() ;
-            XIndexAccess oIndexSheets = 
+            XIndexAccess oIndexSheets =
                 UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
             Object o = oIndexSheets.getByIndex(0);
             XSpreadsheet oSheet = (XSpreadsheet)AnyConverter.toObject(
@@ -548,23 +548,23 @@ public class ViewForwarder {
             xCell = oSheet.getCellByPosition(0, 2) ;
             xCell.setFormula("Cell 2");
         } catch(com.sun.star.lang.IllegalArgumentException e) {
-            System.out.println("Exception ceating relation :");
+            System.out.println("Exception creating relation :");
             fail(e.getMessage());
         } catch(com.sun.star.lang.WrappedTargetException e) {
-            System.out.println("Exception ceating relation :");
+            System.out.println("Exception creating relation :");
             fail(e.getMessage());
         } catch(com.sun.star.lang.IndexOutOfBoundsException e) {
-            System.out.println("Exception ceating relation :");
+            System.out.println("Exception creating relation :");
             fail(e.getMessage());
         }
 
-        XModel aModel = 
+        XModel aModel =
             UnoRuntime.queryInterface(XModel.class, xSpreadsheetDoc);
 
         XController xController = aModel.getCurrentController();
 
         // get page styles
-        XStyleFamiliesSupplier StyleFam = 
+        XStyleFamiliesSupplier StyleFam =
             UnoRuntime.queryInterface(
                 XStyleFamiliesSupplier.class,
                 xSpreadsheetDoc );
@@ -590,7 +590,7 @@ public class ViewForwarder {
         }
 
         //get the property-set
-        final XPropertySet PropSet = 
+        final XPropertySet PropSet =
             UnoRuntime.queryInterface(XPropertySet.class, StdStyle);
 
         XHeaderFooterContent RPHFC = null;
@@ -649,9 +649,9 @@ public class ViewForwarder {
 
         // switching to 'Page Preview' mode
         try {
-            XDispatchProvider xDispProv = 
+            XDispatchProvider xDispProv =
                 UnoRuntime.queryInterface(XDispatchProvider.class, xController);
-            XURLTransformer xParser = 
+            XURLTransformer xParser =
                 UnoRuntime.queryInterface(XURLTransformer.class,
             mXMSF.createInstance("com.sun.star.util.URLTransformer"));
             // Because it's an in/out parameter we must use an
@@ -701,7 +701,7 @@ public class ViewForwarder {
 
         System.out.println("ImplementationName " + utils.getImplName(oObj));
 
-        XAccessibleComponent accPC = 
+        XAccessibleComponent accPC =
                 UnoRuntime.queryInterface(XAccessibleComponent.class, parent);
 
         System.out.println("Parent-BoundsX= "+accPC.getBounds().X);
@@ -709,7 +709,7 @@ public class ViewForwarder {
         System.out.println("Parent-BoundsWidth= "+accPC.getBounds().Width);
         System.out.println("Parent-BoundsHeight= "+accPC.getBounds().Height);
 
-        XAccessibleComponent accPPC = 
+        XAccessibleComponent accPPC =
                         UnoRuntime.queryInterface(XAccessibleComponent.class,
                         parent.getAccessibleContext().getAccessibleParent());
 
@@ -749,7 +749,7 @@ public class ViewForwarder {
             return;
         }
 
-        accPC = 
+        accPC =
                 UnoRuntime.queryInterface(XAccessibleComponent.class, parent);
 
         System.out.println("Press any key when the footer is not visible.");
@@ -795,7 +795,7 @@ public class ViewForwarder {
             return;
         }
 
-        XModel xModel = 
+        XModel xModel =
             UnoRuntime.queryInterface(XModel.class, xSpreadsheetDoc);
 
         XController xController = xModel.getCurrentController();
@@ -805,7 +805,7 @@ public class ViewForwarder {
         try {
             System.out.println("Getting spreadsheet") ;
             XSpreadsheets oSheets = xSpreadsheetDoc.getSheets() ;
-            XIndexAccess oIndexSheets = 
+            XIndexAccess oIndexSheets =
             UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
             Object o = oIndexSheets.getByIndex(0);
             XSpreadsheet oSheet = (XSpreadsheet)AnyConverter.toObject(
@@ -826,17 +826,17 @@ public class ViewForwarder {
         xCell.setFormula("Value");
 
         //setting property 'PrintHeaders' of the style 'Default'
-        XStyleFamiliesSupplier xSFS = 
+        XStyleFamiliesSupplier xSFS =
             UnoRuntime.queryInterface(XStyleFamiliesSupplier.class,
                                                             xSpreadsheetDoc);
         XNameAccess xNA = xSFS.getStyleFamilies();
         XPropertySet xPropSet = null;
         try {
             Object oPageStyles = xNA.getByName("PageStyles");
-            xNA = 
+            xNA =
                 UnoRuntime.queryInterface(XNameAccess.class, oPageStyles);
             Object oDefStyle = xNA.getByName("Default");
-            xPropSet = 
+            xPropSet =
                 UnoRuntime.queryInterface(XPropertySet.class, oDefStyle);
         } catch(com.sun.star.lang.WrappedTargetException e) {
             fail(e.getMessage());
@@ -864,9 +864,9 @@ public class ViewForwarder {
 
         //switching to 'Print Preview' mode
         try {
-            XDispatchProvider xDispProv = 
+            XDispatchProvider xDispProv =
                 UnoRuntime.queryInterface(XDispatchProvider.class, xController);
-            XURLTransformer xParser = 
+            XURLTransformer xParser =
                 UnoRuntime.queryInterface(XURLTransformer.class,
             mXMSF.createInstance("com.sun.star.util.URLTransformer"));
             URL[] aParseURL = new URL[1];
@@ -945,7 +945,7 @@ public class ViewForwarder {
         System.out.println("Getting the value: "+o + " is void " + util.utils.isVoid(o));
 
 
-        XAccessibleComponent accC = 
+        XAccessibleComponent accC =
                 UnoRuntime.queryInterface(XAccessibleComponent.class, oObj);
 
         System.out.println("BoundsX= "+accC.getBounds().X);
@@ -1000,16 +1000,16 @@ public class ViewForwarder {
 
         xSpreadsheetDoc = UnoRuntime.queryInterface(
                                             XSpreadsheetDocument.class, xComp);
-        XModel aModel = 
+        XModel aModel =
             UnoRuntime.queryInterface(XModel.class, xSpreadsheetDoc);
 
         XController xController = aModel.getCurrentController();
 
         // switching to 'Page Preview' mode
         try {
-            XDispatchProvider xDispProv = 
+            XDispatchProvider xDispProv =
                 UnoRuntime.queryInterface(XDispatchProvider.class, xController);
-            XURLTransformer xParser = 
+            XURLTransformer xParser =
                 UnoRuntime.queryInterface(XURLTransformer.class,
             mXMSF.createInstance("com.sun.star.util.URLTransformer"));
             // Because it's an in/out parameter we must use an

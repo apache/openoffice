@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,7 +51,7 @@
 *************************************************************************/
 char * RscChar::MakeUTF8( char * pStr, sal_uInt16 nTextEncoding )
 {
-	sal_Size nMaxUniCodeBuf = strlen( pStr ) + 1;  
+	sal_Size nMaxUniCodeBuf = strlen( pStr ) + 1;
 	if( nMaxUniCodeBuf * 6 > 0x0FFFFF )
         RscExit( 10 );
 
@@ -158,7 +158,7 @@ char * RscChar::MakeUTF8( char * pStr, sal_uInt16 nTextEncoding )
 
 	sal_uInt32 nInfo;
 	sal_Size   nSrcCvtBytes;
-	sal_Size nUniSize = rtl_convertTextToUnicode( hConv, 0, 
+	sal_Size nUniSize = rtl_convertTextToUnicode( hConv, 0,
 												pOrgStr, nOrgLen,
 												pUniCode, nMaxUniCodeBuf,
 												RTL_TEXTTOUNICODE_FLAGS_UNDEFINED_DEFAULT
@@ -172,9 +172,9 @@ char * RscChar::MakeUTF8( char * pStr, sal_uInt16 nTextEncoding )
 	delete[] pOrgStr, pOrgStr = 0;
 
 	hConv = rtl_createUnicodeToTextConverter( RTL_TEXTENCODING_UTF8 );
-	// factor fo 6 is the maximum size of an UNICODE character as utf8 
+	// factor fo 6 is the maximum size of an UNICODE character as utf8
     char * pUtf8 = (char *)rtl_allocateMemory( nUniSize * 6 );
-	rtl_convertUnicodeToText( hConv, 0, 
+	rtl_convertUnicodeToText( hConv, 0,
 							pUniCode, nUniSize,
 							pUtf8, nUniSize * 6,
 							RTL_UNICODETOTEXT_FLAGS_UNDEFINED_DEFAULT

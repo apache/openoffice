@@ -55,7 +55,7 @@ CurlRequest::~CurlRequest()
     if ( curlUrl != NULL )
         curl_url_cleanup( curlUrl );
     curl_easy_setopt( curl, CURLOPT_CURLU, NULL );
-    
+
     curl_easy_setopt( curl, CURLOPT_HTTPHEADER, NULL );
     if ( requestHeaders != NULL )
         curl_slist_free_all( requestHeaders );
@@ -178,7 +178,7 @@ CURLcode CurlRequest::delete_( CurlUri uri, rtl::OUString path ) throw (DAVExcep
     setURI( uri, path );
     curl_easy_setopt( curl, CURLOPT_HTTPGET, 1L );
     curl_easy_setopt( curl, CURLOPT_CUSTOMREQUEST, "DELETE" );
-    return perform();    
+    return perform();
 }
 
 CURLcode CurlRequest::get( CurlUri uri, rtl::OUString path ) throw(DAVException)

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -43,7 +43,7 @@ private:
 		the selection maAttribsSelection */
 	mutable SfxItemSet* mpAttribsCache;
 
-	/** if we have a chached attribute item set, this is the selection of it */
+	/** if we have a cached attribute item set, this is the selection of it */
 	mutable ESelection	maAttribCacheSelection;
 
 	/** this pointer may be null or point to an item set for the paragraph
@@ -78,7 +78,7 @@ public:
 
 	virtual XubString    CalcFieldValue( const SvxFieldItem& rField, sal_uInt32 nPara, sal_uInt16 nPos, Color*& rpTxtColor, Color*& rpFldColor );
 	virtual void 	     FieldClicked( const SvxFieldItem& rField, sal_uInt32 nPara, xub_StrLen nPos );
-	
+
 	virtual sal_Bool		IsValid() const;
 
 	Outliner&			GetOutliner() const { return rOutliner; }
@@ -106,19 +106,19 @@ public:
     virtual sal_Int16       GetNumberingStartValue( sal_uInt32 nPara );
     virtual void            SetNumberingStartValue( sal_uInt32 nPara, sal_Int16 nNumberingStartValue );
 
-    virtual sal_Bool        IsParaIsNumberingRestart( sal_uInt32 nPara );   
+    virtual sal_Bool        IsParaIsNumberingRestart( sal_uInt32 nPara );
     virtual void            SetParaIsNumberingRestart( sal_uInt32 nPara, sal_Bool bParaIsNumberingRestart );
 
 	/* this method flushes internal caches for this forwarder */
 	void				flushCache();
-    
+
     virtual const SfxItemSet*   GetEmptyItemSetPtr();
 
     // implementation functions for XParagraphAppend and XTextPortionAppend
     virtual void        AppendParagraph();
     virtual xub_StrLen  AppendTextPortion( sal_uInt32 nPara, const String &rText, const SfxItemSet &rSet );
     //XTextCopy
-    virtual void        CopyText(const SvxTextForwarder& rSource); 
+    virtual void        CopyText(const SvxTextForwarder& rSource);
 };
 
 #endif

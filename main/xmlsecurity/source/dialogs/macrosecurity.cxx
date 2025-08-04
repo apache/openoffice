@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -135,18 +135,18 @@ MacroSecurityLevelTP::MacroSecurityLevelTP( Window* _pParent, MacroSecurity* _pD
     else
     {
         DBG_ERROR("illegal macro security level");
-    }            
+    }
     maSecReadonlyFI.Show(bReadonly);
     if(bReadonly)
     {
         //move to the selected button
         if( pCheck && pCheck != &maVeryHighRB)
-        {        
+        {
             long nDiff = pCheck->GetPosPixel().Y() - maVeryHighRB.GetPosPixel().Y();
             Point aPos(maSecReadonlyFI.GetPosPixel());
             aPos.Y() += nDiff;
             maSecReadonlyFI.SetPosPixel(aPos);
-        }            
+        }
         maVeryHighRB.Enable(sal_False);
         maHighRB.Enable(sal_False);
         maMediumRB.Enable(sal_False);
@@ -366,7 +366,7 @@ MacroSecurityTrustedSourcesTP::MacroSecurityTrustedSourcesTP( Window* _pParent, 
     mbAuthorsReadonly = mpDlg->maSecOptions.IsReadOnly( SvtSecurityOptions::E_MACRO_TRUSTEDAUTHORS );
     maTrustCertROFI.Show( mbAuthorsReadonly );
     mbAuthorsReadonly ? maTrustCertLB.DisableTable() : maTrustCertLB.EnableTable();
-//  unused button 
+//  unused button
 //    maAddCertPB.Enable( !mbAuthorsReadonly );
 
     FillCertLB();
@@ -444,7 +444,7 @@ void ReadOnlyImage::RequestHelp( const HelpEvent& rHEvt )
 
         String aStr(ReadOnlyImage::GetHelpTip());
         if ( Help::IsBalloonHelpEnabled() )
-            Help::ShowBalloon( this, rHEvt.GetMousePosPixel(), aScreenRect, 
+            Help::ShowBalloon( this, rHEvt.GetMousePosPixel(), aScreenRect,
             aStr );
         else if ( Help::IsQuickHelpEnabled() )
             Help::ShowQuickHelp( this, aScreenRect, aStr );

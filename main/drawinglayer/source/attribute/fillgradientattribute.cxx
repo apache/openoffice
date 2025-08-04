@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -48,13 +48,13 @@ namespace drawinglayer
 		    sal_uInt16								mnSteps;
 
 		    ImpFillGradientAttribute(
-			    GradientStyle eStyle, 
-                double fBorder, 
-                double fOffsetX, 
-                double fOffsetY, 
-                double fAngle, 
-			    const basegfx::BColor& rStartColor, 
-                const basegfx::BColor& rEndColor, 
+			    GradientStyle eStyle,
+                double fBorder,
+                double fOffsetX,
+                double fOffsetY,
+                double fAngle,
+			    const basegfx::BColor& rStartColor,
+                const basegfx::BColor& rEndColor,
                 sal_uInt16 nSteps)
 		    :	mnRefCount(0),
 		        meStyle(eStyle),
@@ -112,13 +112,13 @@ namespace drawinglayer
 	    };
 
         FillGradientAttribute::FillGradientAttribute(
-			GradientStyle eStyle, 
-            double fBorder, 
-            double fOffsetX, 
-            double fOffsetY, 
-            double fAngle, 
-			const basegfx::BColor& rStartColor, 
-            const basegfx::BColor& rEndColor, 
+			GradientStyle eStyle,
+            double fBorder,
+            double fOffsetX,
+            double fOffsetY,
+            double fAngle,
+			const basegfx::BColor& rStartColor,
+            const basegfx::BColor& rEndColor,
             sal_uInt16 nSteps)
         :	mpFillGradientAttribute(new ImpFillGradientAttribute(
                 eStyle, fBorder, fOffsetX, fOffsetY, fAngle, rStartColor, rEndColor, nSteps))
@@ -166,7 +166,7 @@ namespace drawinglayer
 				{
 					delete mpFillGradientAttribute;
 				}
-				
+
 				mpFillGradientAttribute = rCandidate.mpFillGradientAttribute;
 				mpFillGradientAttribute->mnRefCount++;
 			}
@@ -189,44 +189,44 @@ namespace drawinglayer
 			return (*rCandidate.mpFillGradientAttribute == *mpFillGradientAttribute);
 		}
 
-		const basegfx::BColor& FillGradientAttribute::getStartColor() const 
+		const basegfx::BColor& FillGradientAttribute::getStartColor() const
         {
-            return mpFillGradientAttribute->getStartColor(); 
+            return mpFillGradientAttribute->getStartColor();
         }
 
-		const basegfx::BColor& FillGradientAttribute::getEndColor() const 
+		const basegfx::BColor& FillGradientAttribute::getEndColor() const
         {
-            return mpFillGradientAttribute->getEndColor(); 
+            return mpFillGradientAttribute->getEndColor();
         }
 
-		double FillGradientAttribute::getBorder() const 
+		double FillGradientAttribute::getBorder() const
         {
-            return mpFillGradientAttribute->getBorder(); 
+            return mpFillGradientAttribute->getBorder();
         }
 
-		double FillGradientAttribute::getOffsetX() const 
+		double FillGradientAttribute::getOffsetX() const
         {
-            return mpFillGradientAttribute->getOffsetX(); 
+            return mpFillGradientAttribute->getOffsetX();
         }
 
-		double FillGradientAttribute::getOffsetY() const 
+		double FillGradientAttribute::getOffsetY() const
         {
-            return mpFillGradientAttribute->getOffsetY(); 
+            return mpFillGradientAttribute->getOffsetY();
         }
 
-		double FillGradientAttribute::getAngle() const 
+		double FillGradientAttribute::getAngle() const
         {
-            return mpFillGradientAttribute->getAngle(); 
+            return mpFillGradientAttribute->getAngle();
         }
 
-		GradientStyle FillGradientAttribute::getStyle() const 
+		GradientStyle FillGradientAttribute::getStyle() const
         {
-            return mpFillGradientAttribute->getStyle(); 
+            return mpFillGradientAttribute->getStyle();
         }
 
-		sal_uInt16 FillGradientAttribute::getSteps() const 
+		sal_uInt16 FillGradientAttribute::getSteps() const
         {
-            return mpFillGradientAttribute->getSteps(); 
+            return mpFillGradientAttribute->getSteps();
         }
 
     } // end of namespace attribute

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,26 +49,26 @@
 
 using namespace ::com::sun::star;
 
-namespace cppcanvas 
-{ 
+namespace cppcanvas
+{
     namespace internal
     {
         namespace
         {
             class PolyPolyAction : public CachedPrimitiveBase
-            { 
-            public: 
-                PolyPolyAction( const ::basegfx::B2DPolyPolygon&,  
-                                const CanvasSharedPtr&, 
+            {
+            public:
+                PolyPolyAction( const ::basegfx::B2DPolyPolygon&,
+                                const CanvasSharedPtr&,
                                 const OutDevState&,
                                 bool bFill,
-                                bool bStroke ); 
-                PolyPolyAction( const ::basegfx::B2DPolyPolygon&,  
-                                const CanvasSharedPtr&, 
+                                bool bStroke );
+                PolyPolyAction( const ::basegfx::B2DPolyPolygon&,
+                                const CanvasSharedPtr&,
                                 const OutDevState&,
                                 bool bFill,
                                 bool bStroke,
-                                int nTransparency ); 
+                                int nTransparency );
 
                 virtual bool render( const ::basegfx::B2DHomMatrix& rTransformation,
                                      const Subset&					rSubset ) const;
@@ -90,11 +90,11 @@ namespace cppcanvas
 
             	// stroke color is now implicit: the maState.DeviceColor member
                 rendering::RenderState								maState;
-                        
+
                 uno::Sequence< double >								maFillColor;
             };
 
-            PolyPolyAction::PolyPolyAction( const ::basegfx::B2DPolyPolygon&	rPolyPoly, 
+            PolyPolyAction::PolyPolyAction( const ::basegfx::B2DPolyPolygon&	rPolyPoly,
                                             const CanvasSharedPtr&              rCanvas,
                                             const OutDevState&                  rState,
                                             bool                                bFill,
@@ -110,12 +110,12 @@ namespace cppcanvas
 
                 if( bFill )
                     maFillColor = rState.fillColor;
-        
+
                 if( bStroke )
                     maState.DeviceColor = rState.lineColor;
             }
 
-            PolyPolyAction::PolyPolyAction( const ::basegfx::B2DPolyPolygon&	rPolyPoly, 
+            PolyPolyAction::PolyPolyAction( const ::basegfx::B2DPolyPolygon&	rPolyPoly,
                                             const CanvasSharedPtr&              rCanvas,
                                             const OutDevState&                  rState,
                                             bool                                bFill,
@@ -141,7 +141,7 @@ namespace cppcanvas
                     // adapt fill color transparency
                     maFillColor[3] = 1.0 - nTransparency / 100.0;
                 }
-        
+
                 if( bStroke )
                 {
                     maState.DeviceColor = rState.lineColor;
@@ -166,13 +166,13 @@ namespace cppcanvas
 
 #ifdef SPECIAL_DEBUG
                 aLocalState.Clip.clear();
-                aLocalState.DeviceColor = 
+                aLocalState.DeviceColor =
                     ::vcl::unotools::colorToDoubleSequence( mpCanvas->getUNOCanvas()->getDevice(),
                                                             ::Color( 0x80FF0000 ) );
 
                 if( maState.Clip.is() )
-                    mpCanvas->getUNOCanvas()->fillPolyPolygon( maState.Clip, 
-                                                               mpCanvas->getViewState(), 
+                    mpCanvas->getUNOCanvas()->fillPolyPolygon( maState.Clip,
+                                                               mpCanvas->getViewState(),
                                                                aLocalState );
 
                 aLocalState.DeviceColor = maState.DeviceColor;
@@ -184,17 +184,17 @@ namespace cppcanvas
                     // fillPolyPolygon() might throw
                     const uno::Sequence< double > aTmpColor( aLocalState.DeviceColor );
                     aLocalState.DeviceColor = maFillColor;
-                    
-                    rCachedPrimitive = mpCanvas->getUNOCanvas()->fillPolyPolygon( mxPolyPoly, 
+
+                    rCachedPrimitive = mpCanvas->getUNOCanvas()->fillPolyPolygon( mxPolyPoly,
                                                                                   mpCanvas->getViewState(),
                                                                                   aLocalState );
-                    
+
                     aLocalState.DeviceColor = aTmpColor;
                 }
-                
+
                 if( aLocalState.DeviceColor.getLength() )
                 {
-                    rCachedPrimitive = mpCanvas->getUNOCanvas()->drawPolyPolygon( mxPolyPoly, 
+                    rCachedPrimitive = mpCanvas->getUNOCanvas()->drawPolyPolygon( mxPolyPoly,
                                                                                   mpCanvas->getViewState(),
                                                                                   aLocalState );
                 }
@@ -221,8 +221,8 @@ namespace cppcanvas
             {
                 rendering::RenderState aLocalState( maState );
                 ::canvas::tools::prependToRenderState(aLocalState, rTransformation);
-                
-                return tools::calcDevicePixelBounds( 
+
+                return tools::calcDevicePixelBounds(
                     maBounds,
                     mpCanvas->getViewState(),
                     aLocalState );
@@ -254,12 +254,12 @@ namespace cppcanvas
             // -------------------------------------------------------------------------------
 
             class TexturedPolyPolyAction : public CachedPrimitiveBase
-            { 
-            public: 
+            {
+            public:
                 TexturedPolyPolyAction( const ::basegfx::B2DPolyPolygon& rPoly,
-                                        const CanvasSharedPtr&		     rCanvas, 
+                                        const CanvasSharedPtr&		     rCanvas,
                                         const OutDevState&			     rState,
-                                        const rendering::Texture& 	     rTexture ); 
+                                        const rendering::Texture& 	     rTexture );
 
                 virtual bool render( const ::basegfx::B2DHomMatrix& rTransformation,
                                      const Subset&					rSubset ) const;
@@ -284,7 +284,7 @@ namespace cppcanvas
                 const rendering::Texture							maTexture;
             };
 
-            TexturedPolyPolyAction::TexturedPolyPolyAction( const ::basegfx::B2DPolyPolygon& rPolyPoly, 
+            TexturedPolyPolyAction::TexturedPolyPolyAction( const ::basegfx::B2DPolyPolygon& rPolyPoly,
                                                             const CanvasSharedPtr&		     rCanvas,
                                                             const OutDevState& 			     rState,
                                                             const rendering::Texture& 	     rTexture ) :
@@ -309,8 +309,8 @@ namespace cppcanvas
 
                 uno::Sequence< rendering::Texture > aSeq(1);
                 aSeq[0] = maTexture;
-                
-                rCachedPrimitive = mpCanvas->getUNOCanvas()->fillTexturedPolyPolygon( mxPolyPoly, 
+
+                rCachedPrimitive = mpCanvas->getUNOCanvas()->fillTexturedPolyPolygon( mxPolyPoly,
                                                                                       mpCanvas->getViewState(),
                                                                                       aLocalState,
                                                                                       aSeq );
@@ -336,8 +336,8 @@ namespace cppcanvas
             {
                 rendering::RenderState aLocalState( maState );
                 ::canvas::tools::prependToRenderState(aLocalState, rTransformation);
-                
-                return tools::calcDevicePixelBounds( 
+
+                return tools::calcDevicePixelBounds(
                     maBounds,
                     mpCanvas->getViewState(),
                     aLocalState );
@@ -368,12 +368,12 @@ namespace cppcanvas
             // -------------------------------------------------------------------------------
 
             class StrokedPolyPolyAction : public CachedPrimitiveBase
-            { 
-            public: 
+            {
+            public:
                 StrokedPolyPolyAction( const ::basegfx::B2DPolyPolygon&     rPoly,
-                                       const CanvasSharedPtr&				rCanvas, 
+                                       const CanvasSharedPtr&				rCanvas,
                                        const OutDevState&					rState,
-                                       const rendering::StrokeAttributes&	rStrokeAttributes ); 
+                                       const rendering::StrokeAttributes&	rStrokeAttributes );
 
                 virtual bool render( const ::basegfx::B2DHomMatrix& rTransformation,
                                      const Subset&					rSubset ) const;
@@ -396,7 +396,7 @@ namespace cppcanvas
                 const rendering::StrokeAttributes					maStrokeAttributes;
             };
 
-            StrokedPolyPolyAction::StrokedPolyPolyAction( const ::basegfx::B2DPolyPolygon&      rPolyPoly, 
+            StrokedPolyPolyAction::StrokedPolyPolyAction( const ::basegfx::B2DPolyPolygon&      rPolyPoly,
                                                           const CanvasSharedPtr&				rCanvas,
                                                           const OutDevState& 					rState,
                                                           const rendering::StrokeAttributes&	rStrokeAttributes ) :
@@ -420,7 +420,7 @@ namespace cppcanvas
                 rendering::RenderState aLocalState( maState );
                 ::canvas::tools::prependToRenderState(aLocalState, rTransformation);
 
-                rCachedPrimitive = mpCanvas->getUNOCanvas()->strokePolyPolygon( mxPolyPoly, 
+                rCachedPrimitive = mpCanvas->getUNOCanvas()->strokePolyPolygon( mxPolyPoly,
                                                                                 mpCanvas->getViewState(),
                                                                                 aLocalState,
                                                                                 maStrokeAttributes );
@@ -446,8 +446,8 @@ namespace cppcanvas
             {
                 rendering::RenderState aLocalState( maState );
                 ::canvas::tools::prependToRenderState(aLocalState, rTransformation);
-                
-                return tools::calcDevicePixelBounds( 
+
+                return tools::calcDevicePixelBounds(
                     maBounds,
                     mpCanvas->getViewState(),
                     aLocalState );
@@ -476,39 +476,39 @@ namespace cppcanvas
             }
         }
 
-        ActionSharedPtr PolyPolyActionFactory::createPolyPolyAction( const ::basegfx::B2DPolyPolygon& rPoly,  
-                                                                     const CanvasSharedPtr&           rCanvas, 
+        ActionSharedPtr PolyPolyActionFactory::createPolyPolyAction( const ::basegfx::B2DPolyPolygon& rPoly,
+                                                                     const CanvasSharedPtr&           rCanvas,
                                                                      const OutDevState&               rState	)
         {
             OSL_ENSURE( rState.isLineColorSet || rState.isFillColorSet,
                         "PolyPolyActionFactory::createPolyPolyAction() with empty line and fill color" );
-            return ActionSharedPtr( new PolyPolyAction( rPoly, rCanvas, rState, 
-                                                        rState.isFillColorSet, 
+            return ActionSharedPtr( new PolyPolyAction( rPoly, rCanvas, rState,
+                                                        rState.isFillColorSet,
                                                         rState.isLineColorSet ) );
         }
 
-        ActionSharedPtr PolyPolyActionFactory::createPolyPolyAction( const ::basegfx::B2DPolyPolygon&   rPoly,  
-                                                                     const CanvasSharedPtr&             rCanvas, 
+        ActionSharedPtr PolyPolyActionFactory::createPolyPolyAction( const ::basegfx::B2DPolyPolygon&   rPoly,
+                                                                     const CanvasSharedPtr&             rCanvas,
                                                                      const OutDevState&                 rState,
                                                                      const rendering::Texture&          rTexture )
         {
             return ActionSharedPtr( new TexturedPolyPolyAction( rPoly, rCanvas, rState, rTexture ) );
         }
 
-        ActionSharedPtr PolyPolyActionFactory::createLinePolyPolyAction( const ::basegfx::B2DPolyPolygon& rPoly,  
-                                                                         const CanvasSharedPtr&           rCanvas, 
+        ActionSharedPtr PolyPolyActionFactory::createLinePolyPolyAction( const ::basegfx::B2DPolyPolygon& rPoly,
+                                                                         const CanvasSharedPtr&           rCanvas,
                                                                          const OutDevState&               rState )
         {
             OSL_ENSURE( rState.isLineColorSet,
                         "PolyPolyActionFactory::createLinePolyPolyAction() called with empty line color" );
 
-            return ActionSharedPtr( new PolyPolyAction( rPoly, rCanvas, rState, 
-                                                        false, 
+            return ActionSharedPtr( new PolyPolyAction( rPoly, rCanvas, rState,
+                                                        false,
                                                         rState.isLineColorSet ) );
         }
-        
-        ActionSharedPtr PolyPolyActionFactory::createPolyPolyAction( const ::basegfx::B2DPolyPolygon&   rPoly,	  
-                                                                     const CanvasSharedPtr&				rCanvas, 
+
+        ActionSharedPtr PolyPolyActionFactory::createPolyPolyAction( const ::basegfx::B2DPolyPolygon&   rPoly,
+                                                                     const CanvasSharedPtr&				rCanvas,
                                                                      const OutDevState&					rState,
                                                                      const rendering::StrokeAttributes& rStrokeAttributes )
         {
@@ -517,15 +517,15 @@ namespace cppcanvas
             return ActionSharedPtr( new StrokedPolyPolyAction( rPoly, rCanvas, rState, rStrokeAttributes ) );
         }
 
-        ActionSharedPtr PolyPolyActionFactory::createPolyPolyAction( const ::basegfx::B2DPolyPolygon& rPoly,  
-                                                                     const CanvasSharedPtr&           rCanvas, 
+        ActionSharedPtr PolyPolyActionFactory::createPolyPolyAction( const ::basegfx::B2DPolyPolygon& rPoly,
+                                                                     const CanvasSharedPtr&           rCanvas,
                                                                      const OutDevState&               rState,
                                                                      int                              nTransparency 	)
         {
             OSL_ENSURE( rState.isLineColorSet || rState.isFillColorSet,
                         "PolyPolyActionFactory::createPolyPolyAction() with empty line and fill color" );
-            return ActionSharedPtr( new PolyPolyAction( rPoly, rCanvas, rState, 
-                                                        rState.isFillColorSet, 
+            return ActionSharedPtr( new PolyPolyAction( rPoly, rCanvas, rState,
+                                                        rState.isFillColorSet,
                                                         rState.isLineColorSet,
                                                         nTransparency ) );
         }

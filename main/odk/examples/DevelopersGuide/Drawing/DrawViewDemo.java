@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -62,7 +62,7 @@ public class DrawViewDemo
             // get the remote office context of a running office (a new office
             // instance is started if necessary)
 			com.sun.star.uno.XComponentContext xOfficeContext = Helper.connect();
-            
+
             // suppress Presentation Autopilot when opening the document
             // properties are the same as described for
             // com.sun.star.document.MediaDescriptor
@@ -70,19 +70,19 @@ public class DrawViewDemo
             pPropValues[ 0 ] = new PropertyValue();
             pPropValues[ 0 ].Name = "Silent";
             pPropValues[ 0 ].Value = new Boolean( true );
-            
+
             java.io.File sourceFile = new java.io.File(args[0]);
             StringBuffer sUrl = new StringBuffer("file:///");
             sUrl.append(sourceFile.getCanonicalPath().replace('\\', '/'));
-            
+
             xComponent = Helper.createDocument( xOfficeContext,
                                                 sUrl.toString(), "_blank", 0,
                                                 pPropValues );
             XModel xModel =
                 (XModel)UnoRuntime.queryInterface(
                     XModel.class, xComponent );
-            
-            
+
+
             // print all available properties of first view
             System.out.println("*** print all available properties of first view");
             XViewDataSupplier xViewDataSupplier =
@@ -93,15 +93,15 @@ public class DrawViewDemo
             {
                 PropertyValue[] aPropSeq = (PropertyValue[])
                     xIndexAccess.getByIndex( 0 );
-                
+
                 for( int i = 0; i < aPropSeq.length; i++ )
                 {
                     System.out.println( aPropSeq[ i ].Name + " = " +
                                         aPropSeq[ i ].Value );
                 }
             }
-            
-            
+
+
             // print all properties that are supported by the controller
             // and change into masterpage mode
             System.out.println("*** print all properties that are supported by the controller");
@@ -117,7 +117,7 @@ public class DrawViewDemo
             }
             System.out.println("*** change into masterpage mode");
             xPropSet.setPropertyValue( "IsMasterPageMode", new Boolean( true ) );
-            
+
         }
         catch( Exception ex )
         {

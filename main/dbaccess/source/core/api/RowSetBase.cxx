@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -235,7 +235,7 @@ const ORowSetValue& ORowSetBase::getValue(sal_Int32 columnIndex)
 }
 // -----------------------------------------------------------------------------
 const ORowSetValue& ORowSetBase::impl_getValue(sal_Int32 columnIndex)
-{	
+{
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "ORowSetBase::impl_getValue" );
 	if ( m_bBeforeFirst || m_bAfterLast )
 	{
@@ -379,7 +379,7 @@ Reference< ::com::sun::star::io::XInputStream > SAL_CALL ORowSetBase::getBinaryS
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "ORowSetBase::getBinaryStream" );
 	::osl::MutexGuard aGuard( *m_pMutex );
 	checkCache();
-	
+
 	if ( m_bBeforeFirst || m_bAfterLast )
 	{
 		OSL_ENSURE(0,"ORowSetBase::getBinaryStream: Illegal call here (we're before first or after last)!");
@@ -458,7 +458,7 @@ Any SAL_CALL ORowSetBase::getBookmark(  ) throw(SQLException, RuntimeException)
 	::connectivity::checkDisposed(m_rBHelper.bDisposed);
 	::osl::MutexGuard aGuard( *m_pMutex );
     checkCache();
-	
+
 	if ( m_bBeforeFirst || m_bAfterLast )
         ::dbtools::throwSQLException( DBACORE_RESSTRING( RID_STR_NO_BOOKMARK_BEFORE_OR_AFTER ), SQL_INVALID_CURSOR_POSITION, *m_pMySelf );
 
@@ -656,7 +656,7 @@ sal_Bool SAL_CALL ORowSetBase::next(  ) throw(SQLException, RuntimeException)
         sal_Bool bAfterLast = m_pCache->isAfterLast();
 		bRet = m_pCache->next();
 		doCancelModification( );
-        
+
 
 		if ( bRet || bAfterLast != m_pCache->isAfterLast() )
 		{
@@ -920,13 +920,13 @@ sal_Int32 SAL_CALL ORowSetBase::getRow(  ) throw(SQLException, RuntimeException)
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "ORowSetBase::getRow" );
 	DBG_TRACE2("DBACCESS ORowSetBase::getRow() Clone = %i ID = %i\n",m_bClone,osl_getThreadIdentifier(NULL));
 	::osl::MutexGuard aGuard( *m_pMutex );
-    
+
 	checkCache();
     return impl_getRow();
 }
 // -------------------------------------------------------------------------
 sal_Int32 ORowSetBase::impl_getRow()
-{   
+{
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "ORowSetBase::impl_getRow" );
 	sal_Int32  nPos = 0;
     if ( m_bBeforeFirst )
@@ -1213,7 +1213,7 @@ sal_Bool SAL_CALL ORowSetBase::rowUpdated(  ) throw(SQLException, RuntimeExcepti
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "ORowSetBase::rowUpdated" );
 	::osl::MutexGuard aGuard( *m_pMutex );
 	checkCache();
-    
+
     if ( impl_rowDeleted() )
         return sal_False;
 
@@ -1226,7 +1226,7 @@ sal_Bool SAL_CALL ORowSetBase::rowInserted(  ) throw(SQLException, RuntimeExcept
 	::osl::MutexGuard aGuard( *m_pMutex );
 
 	checkCache();
-    
+
     if ( impl_rowDeleted() )
         return sal_False;
 

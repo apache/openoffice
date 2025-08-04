@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 import javax.swing.event.TreeModelEvent;
@@ -185,7 +185,7 @@ public class AccessibilityTreeModel
         }
         catch (Exception e)
         {
-            System.out.println ("caught exception while removing child " 
+            System.out.println ("caught exception while removing child "
                 + aNode + " : " + e);
             e.printStackTrace ();
             return false;
@@ -195,7 +195,7 @@ public class AccessibilityTreeModel
 
     public void removeNode (XAccessibleContext xNode)
     {
-        if (xNode != null) 
+        if (xNode != null)
         {
             AccessibleTreeNode aNode = maNodeMap.GetNode (xNode);
             AccessibleTreeNode aRootNode = (AccessibleTreeNode)getRoot();
@@ -210,7 +210,7 @@ public class AccessibilityTreeModel
 
 
     /** Add add a new child to a parent.
-        @return 
+        @return
             Returns the new or existing representation of the specified
             accessible object.
     */
@@ -231,7 +231,7 @@ public class AccessibilityTreeModel
         }
         catch (Exception e)
         {
-            System.out.println ("caught exception while adding child " 
+            System.out.println ("caught exception while adding child "
                 + xNewChild + " to parent " + aParentNode + ": " + e);
             e.printStackTrace ();
         }
@@ -248,7 +248,7 @@ public class AccessibilityTreeModel
             {
                 if (maCanvas != null)
                     maCanvas.updateNode ((AccTreeNode)aParentNode);
-                
+
                 // A call to fireTreeNodesInserted for xNew
                 // should be sufficient but at least the
                 // StringNode object that contains the number of
@@ -263,7 +263,7 @@ public class AccessibilityTreeModel
         }
     }
 
-    
+
     /** Add the child node to the internal tree structure.
         @param aNode
             The node to insert into the internal tree structure.
@@ -286,11 +286,11 @@ public class AccessibilityTreeModel
                 }
                 bRet = true;
             }
-            
+
         }
         catch (Exception e)
         {
-            System.out.println ("caught exception while adding node " 
+            System.out.println ("caught exception while adding node "
                 + aNode + ": " + e);
             e.printStackTrace ();
         }
@@ -356,7 +356,7 @@ public class AccessibilityTreeModel
     }
 
     /** Create a TreeModelEvent object that informs listeners that one child
-        has been removed from or inserted into its parent. 
+        has been removed from or inserted into its parent.
     */
     public TreeModelEvent createEvent (XAccessibleContext xParent, XAccessible xChild)
     {
@@ -375,7 +375,7 @@ public class AccessibilityTreeModel
 
 
     protected TreeModelEvent createEvent (
-        AccessibleTreeNode aParentNode, 
+        AccessibleTreeNode aParentNode,
         AccessibleTreeNode aChildNode)
     {
         Object[] aPathToParent = createPath (aParentNode);
@@ -388,11 +388,11 @@ public class AccessibilityTreeModel
 
         if (nIndexInParent == -1)
             // This event may be passed only to treeStructureChanged of the listeners.
-            return new TreeModelEvent (this, 
+            return new TreeModelEvent (this,
                 aPathToParent);
         else
             // General purpose event for removing or inserting known nodes.
-            return new TreeModelEvent (this, 
+            return new TreeModelEvent (this,
                 aPathToParent,
                 new int[] {nIndexInParent},
                 new Object[] {aChildNode} );
@@ -443,7 +443,7 @@ public class AccessibilityTreeModel
     }
 
 
-     
+
     protected XAccessibleEventBroadcaster getBroadcaster (Object aObject)
     {
         if (aObject instanceof AccTreeNode)
@@ -487,15 +487,15 @@ public class AccessibilityTreeModel
 
     public void updateNode (XAccessibleContext xSource, java.lang.Class class1)
     {
-        updateNode (xSource, class1,null); 
+        updateNode (xSource, class1,null);
     }
 
-    /** Get a list of children of the node associated with xSource that are 
+    /** Get a list of children of the node associated with xSource that are
         affected by the given handlers.  Fire events that these children may
         have changed in the tree view.  Update the canvas representation of
         xSource.
     */
-    public AccTreeNode updateNode (XAccessibleContext xSource, 
+    public AccTreeNode updateNode (XAccessibleContext xSource,
         java.lang.Class class1, java.lang.Class class2)
     {
         AccessibleTreeNode aTreeNode = maNodeMap.GetNode (xSource);

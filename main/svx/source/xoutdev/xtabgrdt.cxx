@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -151,7 +151,7 @@ Bitmap XGradientList::CreateBitmapForUI(long nIndex)
     Bitmap aRetval;
     OSL_ENSURE(nIndex < Count(), "OOps, access out of range (!)");
 
-    if(nIndex < Count()) 
+    if(nIndex < Count())
     {
         const StyleSettings& rStyleSettings = Application::GetSettings().GetStyleSettings();
         const Size& rSize = rStyleSettings.GetListBoxPreviewDefaultPixelSize();
@@ -184,32 +184,32 @@ Bitmap XGradientList::CreateBitmapForUI(long nIndex)
 
         switch(rGradient.GetGradientStyle())
         {
-            case XGRAD_LINEAR : 
+            case XGRAD_LINEAR :
             {
                 aGradientStyle = drawinglayer::attribute::GRADIENTSTYLE_LINEAR;
                 break;
             }
-            case XGRAD_AXIAL : 
+            case XGRAD_AXIAL :
             {
                 aGradientStyle = drawinglayer::attribute::GRADIENTSTYLE_AXIAL;
                 break;
             }
-            case XGRAD_RADIAL : 
+            case XGRAD_RADIAL :
             {
                 aGradientStyle = drawinglayer::attribute::GRADIENTSTYLE_RADIAL;
                 break;
             }
-            case XGRAD_ELLIPTICAL : 
+            case XGRAD_ELLIPTICAL :
             {
                 aGradientStyle = drawinglayer::attribute::GRADIENTSTYLE_ELLIPTICAL;
                 break;
             }
-            case XGRAD_SQUARE : 
+            case XGRAD_SQUARE :
             {
-                aGradientStyle = drawinglayer::attribute::GRADIENTSTYLE_SQUARE; 
+                aGradientStyle = drawinglayer::attribute::GRADIENTSTYLE_SQUARE;
                 break;
             }
-            default : 
+            default :
             {
                 aGradientStyle = drawinglayer::attribute::GRADIENTSTYLE_RECT; // XGRAD_RECT
                 break;
@@ -249,7 +249,7 @@ Bitmap XGradientList::CreateBitmapForUI(long nIndex)
 
         // create processor and draw primitives
         drawinglayer::processor2d::BaseProcessor2D* pProcessor2D = drawinglayer::processor2d::createPixelProcessor2DFromOutputDevice(
-            aVirtualDevice, 
+            aVirtualDevice,
             aNewViewInformation2D);
 
         if(pProcessor2D)

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -139,7 +139,7 @@ namespace connectivity
 
         OSQLParser_Data( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& _xServiceFactory );
 
-    };		
+    };
 	/** Parser for SQL92
 	*/
 	class OOO_DLLPUBLIC_DBTOOLS OSQLParser
@@ -243,14 +243,14 @@ namespace connectivity
 		void setParseTree(OSQLParseNode * pNewParseTree);
 
 		// Is the parse in a special mode?
-		// Predicate chack is used to check a condition for a field
+		// Predicate check is used to check a condition for a field
 		sal_Bool inPredicateCheck() const {return m_xField.is();}
 		const ::rtl::OUString& getFieldName() const {return m_sFieldName;}
 
 		void reduceLiteral(OSQLParseNode*& pLiteral, sal_Bool bAppendBlank);
 		 // does not change the pLiteral argument
 		sal_Int16 buildNode(OSQLParseNode*& pAppend,OSQLParseNode* pCompare,OSQLParseNode* pLiteral,OSQLParseNode* pLiteral2);
-		
+
 		sal_Int16 buildComparsionRule(OSQLParseNode*& pAppend,OSQLParseNode* pLiteral);
 		// pCompre will be deleted if it is not used
 		sal_Int16 buildPredicateRule(OSQLParseNode*& pAppend,OSQLParseNode* pLiteral,OSQLParseNode*& pCompare,OSQLParseNode* pLiteral2 = NULL);

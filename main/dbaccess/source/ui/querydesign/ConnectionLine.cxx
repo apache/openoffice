@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -288,7 +288,7 @@ sal_Bool OConnectionLine::RecalcLine()
 	//////////////////////////////////////////////////////////////////////
 	// aSourceConnPosY bestimmen
     calcPointsYValue(pSourceWin,pSourceEntry,m_aSourceConnPos,m_aSourceDescrLinePos);
-	
+
 	//////////////////////////////////////////////////////////////////////
 	// aDestConnPosY bestimmen
     calcPointsYValue(pDestWin,pDestEntry,m_aDestConnPos,m_aDestDescrLinePos);
@@ -346,7 +346,7 @@ double dist_Euklid(const Point &p1, const Point& p2,const Point& pM, Point& q)
 	double l = (v.X() * w.Y() - v.Y() * w.X()) / a;
 	double a2 = w.X()*v.X()+w.Y()*v.Y();
 	a = a2 / (a * a);
-	q.X() = long(p1.X() + a * v.X()); 
+	q.X() = long(p1.X() + a * v.X());
 	q.Y() = long(p1.Y() + a * v.Y());
 	return l;
 }
@@ -370,14 +370,14 @@ bool OConnectionLine::CheckHit( const Point& rMousePos ) const
 	return false;
 }
 // -----------------------------------------------------------------------------
-Rectangle OConnectionLine::GetSourceTextPos() const 
-{ 
-	return GetTextPos(m_pTabConn->GetSourceWin(),m_aSourceConnPos,m_aSourceDescrLinePos); 
+Rectangle OConnectionLine::GetSourceTextPos() const
+{
+	return GetTextPos(m_pTabConn->GetSourceWin(),m_aSourceConnPos,m_aSourceDescrLinePos);
 }
 // -----------------------------------------------------------------------------
-Rectangle OConnectionLine::GetDestTextPos() const 
-{ 
-	return GetTextPos(m_pTabConn->GetDestWin(),m_aDestConnPos,m_aDestDescrLinePos); 
+Rectangle OConnectionLine::GetDestTextPos() const
+{
+	return GetTextPos(m_pTabConn->GetDestWin(),m_aDestConnPos,m_aDestDescrLinePos);
 }
 // -----------------------------------------------------------------------------
 Point OConnectionLine::getMidPoint() const

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -119,7 +119,7 @@ void XMLShapeExport::ImpExport3DShape(
 		aTransform.AddHomogenMatrix(xHomMat);
 		if(aTransform.NeedsAction())
 			mrExport.AddAttribute(XML_NAMESPACE_DR3D, XML_TRANSFORM, aTransform.GetExportString(mrExport.GetMM100UnitConverter()));
-		
+
 		switch(eShapeType)
 		{
 			case XmlShapeTypeDraw3DCubeObject:
@@ -224,9 +224,9 @@ void XMLShapeExport::ImpExport3DShape(
 
                 // export ViewBox
                 SdXMLImExViewBox aViewBox(
-                    aPolyPolygonRange.getMinX(), 
-                    aPolyPolygonRange.getMinY(), 
-                    aPolyPolygonRange.getWidth(), 
+                    aPolyPolygonRange.getMinX(),
+                    aPolyPolygonRange.getMinY(),
+                    aPolyPolygonRange.getWidth(),
                     aPolyPolygonRange.getHeight());
 
                 mrExport.AddAttribute(XML_NAMESPACE_SVG, XML_VIEWBOX, aViewBox.GetExportString());
@@ -281,7 +281,7 @@ void XMLShapeExport::export3DSceneAttributes( const com::sun::star::uno::Referen
 	aAny = xPropSet->getPropertyValue(OUString(RTL_CONSTASCII_USTRINGPARAM("D3DCameraGeometry")));
 	drawing::CameraGeometry aCamGeo;
 	aAny >>= aCamGeo;
-	
+
 	::basegfx::B3DVector aVRP(aCamGeo.vrp.PositionX, aCamGeo.vrp.PositionY, aCamGeo.vrp.PositionZ);
 	if(aVRP != ::basegfx::B3DVector(0.0, 0.0, 1.0)) // write only when not default
 	{
@@ -426,11 +426,11 @@ void XMLShapeExport::export3DLamps( const com::sun::star::uno::Reference< com::s
 		mrExport.GetMM100UnitConverter().convertBool(sStringBuffer, bLightOnOff);
 		aStr = sStringBuffer.makeStringAndClear();
 		mrExport.AddAttribute(XML_NAMESPACE_DR3D, XML_ENABLED, aStr);
-		
+
 		// specular
 		mrExport.AddAttribute(XML_NAMESPACE_DR3D, XML_SPECULAR,
 			nLamp == 1 ? XML_TRUE : XML_FALSE);
-		
+
 		// write light entry
 		SvXMLElementExport aOBJ(mrExport, XML_NAMESPACE_DR3D, XML_LIGHT, sal_True, sal_True);
 	}

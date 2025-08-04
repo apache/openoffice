@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,14 +42,14 @@ namespace io_acceptor
 {
 
 	typedef WeakImplHelper1< XConnection > MyPipeConnection;
-	
+
 	class PipeConnection :
 		public MyPipeConnection
 	{
 	public:
 		PipeConnection( const OUString &sConnectionDescription);
 		~PipeConnection();
-		
+
 		virtual sal_Int32 SAL_CALL read( Sequence< sal_Int8 >& aReadBytes, sal_Int32 nBytesToRead )
 			throw(::com::sun::star::io::IOException,
 				  ::com::sun::star::uno::RuntimeException);
@@ -70,7 +70,7 @@ namespace io_acceptor
 		OUString m_sDescription;
 	};
 
-	
+
 
 	PipeConnection::PipeConnection( const OUString &sConnectionDescription) :
 		m_nStatus( 0 ),
@@ -90,7 +90,7 @@ namespace io_acceptor
 	{
 		g_moduleCount.modCnt.release( &g_moduleCount.modCnt );
 	}
-	
+
 	sal_Int32 PipeConnection::read( Sequence < sal_Int8 > & aReadBytes , sal_Int32 nBytesToRead )
 		throw(::com::sun::star::io::IOException,
 			  ::com::sun::star::uno::RuntimeException)
@@ -151,9 +151,9 @@ namespace io_acceptor
 	{
 		return m_sDescription;
 	}
-	
+
 	/***************
-	 * PipeAcceptor 
+	 * PipeAcceptor
 	 **************/
 	PipeAcceptor::PipeAcceptor( const OUString &sPipeName , const OUString & sConnectionDescription) :
 		m_sPipeName( sPipeName ),

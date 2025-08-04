@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -173,7 +173,7 @@ public class _XMultiPropertySet extends MultiMethodTest {
         boolean result  = true ;
         // Creating listener
         oObj.addPropertiesChangeListener(testPropsNames, PClistener);
-        
+
         if ((testPropsAmount==1) && (testPropsNames[0].equals("none"))) {
             testPropsAmount = 0;
         }
@@ -274,15 +274,15 @@ public class _XMultiPropertySet extends MultiMethodTest {
             log.println("all properties are readOnly");
             tRes.tested("setPropertyValues()",Status.skipped(true));
             return;
-        }        
-        
+        }
+
         log.println("Changing all properties");
         Object[] gValues = oObj.getPropertyValues(testPropsNames);
         for (int i=0; i<testPropsAmount;i++) {
             Object oldValue = gValues[i];
             Object newValue = ValueChanger.changePValue(oldValue);
             gValues[i] = newValue;
-        }        
+        }
 
         try {
             oObj.setPropertyValues(testPropsNames, gValues);
@@ -325,7 +325,7 @@ public class _XMultiPropertySet extends MultiMethodTest {
             boolean isBound = ((property.Attributes &
                 PropertyAttribute.BOUND) != 0);
             boolean isExcluded = exclProps.contains(name);
-            
+
             //exclude UserDefined, because we can't change XNameContainer
             if (name.indexOf("UserDefined")>0 || name.indexOf("Device")>0) {
                 isWritable=false;

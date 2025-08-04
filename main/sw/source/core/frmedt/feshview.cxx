@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -2511,8 +2511,8 @@ sal_uInt8 SwFEShell::IsSelObjProtected( sal_uInt16 eType ) const
                             }
 
                             // set FLYPROTECT_POS if it is a Math object anchored 'as char' and baseline alignment is activated
-                            const bool bProtectMathPos = SotExchange::IsMath( xObj->getClassID() ) 
-                                    && FLY_AS_CHAR == pFly->GetFmt()->GetAnchor().GetAnchorId() 
+                            const bool bProtectMathPos = SotExchange::IsMath( xObj->getClassID() )
+                                    && FLY_AS_CHAR == pFly->GetFmt()->GetAnchor().GetAnchorId()
                                     && pDoc->get( IDocumentSettingAccess::MATH_BASELINE_ALIGNMENT );
                             if ((FLYPROTECT_POS & eType) && bProtectMathPos)
                                 nChk |= FLYPROTECT_POS;
@@ -2837,9 +2837,9 @@ long SwFEShell::GetSectionWidth( SwFmt& rFmt ) const
 	}
 	SwIterator<SwSectionFrm,SwFmt> aIter( rFmt );
     for ( SwSectionFrm* pSct = aIter.First(); pSct; pSct = aIter.Next() )
-    {        
+    {
         if( !pSct->IsFollow() )
-        {        
+        {
             return pSct->Frm().Width();
         }
     }

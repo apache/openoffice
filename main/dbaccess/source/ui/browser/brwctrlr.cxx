@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1229,7 +1229,7 @@ void SbaXDataBrowserController::propertyChange(const PropertyChangeEvent& evt) t
 			InvalidateAll();
 	}
 
-    
+
     if (evt.PropertyName.equals(PROPERTY_FILTER))
 	{
 		InvalidateFeature(ID_BROWSER_REMOVEFILTER);
@@ -1587,7 +1587,7 @@ FeatureState SbaXDataBrowserController::GetState(sal_uInt16 nId) const
 		}
 		// no chance without valid models
 		if (isValid() && !isValidCursor())
-			return aReturn;		
+			return aReturn;
 
 		switch (nId)
 		{
@@ -1644,9 +1644,9 @@ FeatureState SbaXDataBrowserController::GetState(sal_uInt16 nId) const
                     break;
                 }
                 // run through
-			case ID_BROWSER_PASTE:			
+			case ID_BROWSER_PASTE:
 			case ID_BROWSER_CUT:
-			{                
+			{
 				CellControllerRef xCurrentController = getBrowserView()->getVclControl()->Controller();
 				if (xCurrentController.Is() && xCurrentController->ISA(EditCellController))
 				{
@@ -2077,7 +2077,7 @@ void SbaXDataBrowserController::Execute(sal_uInt16 nId, const Sequence< Property
             }
             break;
         case SID_FM_DELETEROWS:
-            
+
             if (SaveModified())
             {
 				SbaGridControl* pVclGrid = getBrowserView()->getVclControl();
@@ -2705,7 +2705,7 @@ void SbaXDataBrowserController::LoadFinished(sal_Bool /*bWasSynch*/)
         {
     	    DBG_UNHANDLED_EXCEPTION();
         }
- 
+
 		// --------------------------------
 		// switch the control to alive mode
 		getBrowserView()->getGridControl()->setDesignMode(sal_False);

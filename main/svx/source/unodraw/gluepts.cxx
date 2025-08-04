@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -25,7 +25,7 @@
 #include "precompiled_svx.hxx"
 #include <com/sun/star/container/XIdentifierContainer.hpp>
 #include <com/sun/star/container/XIndexContainer.hpp>
-#ifndef _COM_SUN_STAR_DRAWING_GLUEPOINT2_HDL_ 
+#ifndef _COM_SUN_STAR_DRAWING_GLUEPOINT2_HDL_
 #include <com/sun/star/drawing/GluePoint2.hpp>
 #endif
 
@@ -264,7 +264,7 @@ void SAL_CALL SvxUnoGluePointAccess::removeByIdentifier( sal_Int32 Identifier ) 
 			if( (*pList)[i].GetId() == nId )
 			{
 				pList->Delete( i );
-				
+
 				// only repaint, no objectchange
 				mpObject->ActionChanged();
 				// mpObject->BroadcastObjectChange();
@@ -303,7 +303,7 @@ void SAL_CALL SvxUnoGluePointAccess::replaceByIdentifer( sal_Int32 Identifier, c
 				mpObject->ActionChanged();
 				// mpObject->BroadcastObjectChange();
 
-				return;					
+				return;
 			}
 		}
 
@@ -329,7 +329,7 @@ uno::Any SAL_CALL SvxUnoGluePointAccess::getByIdentifier( sal_Int32 Identifier )
 		{
 			const sal_uInt16 nId = (sal_uInt16)( Identifier - NON_USER_DEFINED_GLUE_POINTS ) + 1;
 
-			const SdrGluePointList* pList = mpObject->GetGluePointList();		
+			const SdrGluePointList* pList = mpObject->GetGluePointList();
 			const sal_uInt16 nCount = pList ? pList->GetCount() : 0;
 			for( sal_uInt16 i = 0; i < nCount; i++ )
 			{
@@ -355,7 +355,7 @@ uno::Any SAL_CALL SvxUnoGluePointAccess::getByIdentifier( sal_Int32 Identifier )
 uno::Sequence< sal_Int32 > SAL_CALL SvxUnoGluePointAccess::getIdentifiers() throw (uno::RuntimeException)
 {
     if( mpObject.is() )
-    { 
+    {
 	    const SdrGluePointList* pList = mpObject->GetGluePointList();
 	    const sal_uInt16 nCount = pList ? pList->GetCount() : 0;
 
@@ -363,7 +363,7 @@ uno::Sequence< sal_Int32 > SAL_CALL SvxUnoGluePointAccess::getIdentifiers() thro
 
 	    uno::Sequence< sal_Int32 > aIdSequence( nCount + NON_USER_DEFINED_GLUE_POINTS );
 	    sal_Int32 *pIdentifier = aIdSequence.getArray();
-    	
+
 	    for( i = 0; i < NON_USER_DEFINED_GLUE_POINTS; i++ )
 		    *pIdentifier++ = (sal_Int32)i;
 
@@ -398,7 +398,7 @@ void SAL_CALL SvxUnoGluePointAccess::insertByIndex( sal_Int32, const uno::Any& E
 			{
 				convert( aUnoGlue, aSdrGlue );
 				pList->Insert( aSdrGlue );
-				
+
 				// only repaint, no objectchange
 				mpObject->ActionChanged();
 				// mpObject->BroadcastObjectChange();
@@ -425,7 +425,7 @@ void SAL_CALL SvxUnoGluePointAccess::removeByIndex( sal_Int32 Index )
 			if( Index >= 0 && Index < pList->GetCount() )
 			{
 				pList->Delete( (sal_uInt16)Index );
-				
+
 				// only repaint, no objectchange
 				mpObject->ActionChanged();
 				// mpObject->BroadcastObjectChange();

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -167,8 +167,8 @@ OAddFieldWindow::OAddFieldWindow(Window* pParent
             ,m_xRowSet(_xRowSet)
             ,m_aActions(this,ModuleRes(RID_TB_SORTING))
             ,m_pListBox(new OAddFieldWindowListBox( this ))
-            ,m_aFixedLine(this, ModuleRes(ADDFIELD_FL_HELP_SEPARATOR) ) 
-            ,m_aHelpText(this, ModuleRes(ADDFIELD_HELP_FIELD) ) 
+            ,m_aFixedLine(this, ModuleRes(ADDFIELD_FL_HELP_SEPARATOR) )
+            ,m_aHelpText(this, ModuleRes(ADDFIELD_HELP_FIELD) )
             ,m_aInsertButton(this, WB_TABSTOP|WB_CENTER)
 			,m_nCommandType(0)
             ,m_bEscapeProcessing(sal_False)
@@ -187,7 +187,7 @@ OAddFieldWindow::OAddFieldWindow(Window* pParent
     setToolBox(&m_aActions);
     m_aActions.CheckItem(SID_FM_SORTUP);
     m_aActions.EnableItem(SID_ADD_CONTROL_PAIR, sal_False);
-	
+
     m_pListBox->SetDoubleClickHdl(LINK( this, OAddFieldWindow, OnDoubleClickHdl ) );
     m_pListBox->SetSelectHdl(LINK( this, OAddFieldWindow, OnSelectHdl ) );
     m_pListBox->SetDeselectHdl(LINK( this, OAddFieldWindow, OnSelectHdl ) );
@@ -327,7 +327,7 @@ void OAddFieldWindow::Update()
         {
             m_aActions.EnableItem(m_aActions.GetItemId(j),sal_False);
         }
-        
+
 	    String aTitle(ModuleRes(RID_STR_FIELDSELECTION));
 	    SetText(aTitle);
         if ( m_xRowSet.is() )
@@ -553,11 +553,11 @@ IMPL_LINK( OAddFieldWindow, OnSortAction, ToolBox*, /*NOTINTERESTEDIN*/ )
                 else if ( m_aActions.IsItemChecked(SID_FM_SORTDOWN) )
                     eSortMode = SortDescending;
             } // if ( SID_FM_REMOVE_FILTER_SORT != nCurItem )
-            
+
             m_pListBox->GetModel()->SetSortMode(eSortMode);
             if ( SID_FM_REMOVE_FILTER_SORT == nCurItem )
                 Update();
-            
+
             m_pListBox->GetModel()->Resort();
         }
     }

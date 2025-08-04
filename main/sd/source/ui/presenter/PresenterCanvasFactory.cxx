@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -201,7 +201,7 @@ Reference<rendering::XCanvas> PresenterCanvasFactory::CreateCanvasForSprite (
 {
     OSL_ASSERT(rxSharedWindow.is());
     (void)rxWindow.is();
-    
+
     SharedWindowContainer::iterator iDescriptor (
         mpSharedWindows->FindDescriptor(rxSharedWindow));
     if (iDescriptor != mpSharedWindows->end())
@@ -234,14 +234,14 @@ Reference<rendering::XCanvas> PresenterCanvasFactory::CreateCanvas (
     if (pWindow != NULL)
     {
         Sequence<Any> aArg (5);
-        
+
         // common: first any is VCL pointer to window (for VCL canvas)
         aArg[0] = makeAny(reinterpret_cast<sal_Int64>(pWindow));
         aArg[1] = Any();
         aArg[2] = makeAny(::com::sun::star::awt::Rectangle());
         aArg[3] = makeAny(sal_False);
         aArg[4] = makeAny(rxWindow);
-        
+
         Reference<lang::XMultiServiceFactory> xFactory (::comphelper::getProcessServiceFactory());
         return Reference<rendering::XCanvas>(
             xFactory->createInstanceWithArguments(

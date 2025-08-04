@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -40,7 +40,7 @@ class SwFrmFmt;
 
 class SwAccessibleCell : public	SwAccessibleContext,
                   ::com::sun::star::accessibility::XAccessibleValue,
-                  ::com::sun::star::accessibility::XAccessibleSelection, 
+                  ::com::sun::star::accessibility::XAccessibleSelection,
 					public  ::com::sun::star::accessibility::XAccessibleExtendedAttributes
 {
     // Implementation for XAccessibleSelection interface
@@ -125,8 +125,8 @@ public:
 
 	//=====  XAccessibleValue  ================================================
 
-	//=====  XAccessibleExtendedAttributes ================================================	
-	::com::sun::star::uno::Any SAL_CALL getExtendedAttributes() 
+	//=====  XAccessibleExtendedAttributes ================================================
+	::com::sun::star::uno::Any SAL_CALL getExtendedAttributes()
 		throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException) ;
 private:
     SwFrmFmt* GetTblBoxFormat() const;
@@ -145,33 +145,33 @@ public:
     virtual ::com::sun::star::uno::Any SAL_CALL getMinimumValue(  )
         throw (::com::sun::star::uno::RuntimeException);
 	//=====  XAccessibleComponent  ============================================
-	sal_Int32 SAL_CALL getBackground() 
+	sal_Int32 SAL_CALL getBackground()
 		throw (::com::sun::star::uno::RuntimeException);
 
 	//=====  XAccessibleSelection  ============================================
-	virtual void SAL_CALL selectAccessibleChild( 
-        sal_Int32 nChildIndex ) 
-        throw ( ::com::sun::star::lang::IndexOutOfBoundsException, 
+	virtual void SAL_CALL selectAccessibleChild(
+        sal_Int32 nChildIndex )
+        throw ( ::com::sun::star::lang::IndexOutOfBoundsException,
                 ::com::sun::star::uno::RuntimeException );
 
-    virtual sal_Bool SAL_CALL isAccessibleChildSelected( 
-        sal_Int32 nChildIndex ) 
-        throw ( ::com::sun::star::lang::IndexOutOfBoundsException, 
+    virtual sal_Bool SAL_CALL isAccessibleChildSelected(
+        sal_Int32 nChildIndex )
+        throw ( ::com::sun::star::lang::IndexOutOfBoundsException,
                 ::com::sun::star::uno::RuntimeException );
-    virtual void SAL_CALL clearAccessibleSelection(  ) 
+    virtual void SAL_CALL clearAccessibleSelection(  )
         throw ( ::com::sun::star::uno::RuntimeException );
-    virtual void SAL_CALL selectAllAccessibleChildren(  ) 
+    virtual void SAL_CALL selectAllAccessibleChildren(  )
         throw ( ::com::sun::star::uno::RuntimeException );
-    virtual sal_Int32 SAL_CALL getSelectedAccessibleChildCount(  ) 
+    virtual sal_Int32 SAL_CALL getSelectedAccessibleChildCount(  )
         throw ( ::com::sun::star::uno::RuntimeException );
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getSelectedAccessibleChild( 
-        sal_Int32 nSelectedChildIndex ) 
-        throw ( ::com::sun::star::lang::IndexOutOfBoundsException, 
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getSelectedAccessibleChild(
+        sal_Int32 nSelectedChildIndex )
+        throw ( ::com::sun::star::lang::IndexOutOfBoundsException,
                 ::com::sun::star::uno::RuntimeException);
 
-    virtual void SAL_CALL deselectAccessibleChild( 
-        sal_Int32 nSelectedChildIndex ) 
-        throw ( ::com::sun::star::lang::IndexOutOfBoundsException, 
+    virtual void SAL_CALL deselectAccessibleChild(
+        sal_Int32 nSelectedChildIndex )
+        throw ( ::com::sun::star::lang::IndexOutOfBoundsException,
                 ::com::sun::star::uno::RuntimeException );
 
 };

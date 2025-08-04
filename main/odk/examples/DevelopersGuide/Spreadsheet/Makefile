@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 # Builds the SpreadSheet examples of the Developers Guide.
@@ -81,7 +81,7 @@ APP3_JAR=$(SAMPLE_CLASS_OUT)/$(APP3_NAME).jar
 
 COMP1_IDLFILES = XExampleAddIn.idl
 
-# normally the idl file should be stored in a directory tree fitting the 
+# normally the idl file should be stored in a directory tree fitting the
 # module structure, for the example we know the module structure
 PACKAGE = org/openoffice/sheet/addin
 
@@ -203,8 +203,8 @@ ifeq "$(SDK_AUTO_DEPLOYMENT)" "YES"
 else
 	@echo --------------------------------------------------------------------------------
 	@echo  If you want to install your component automatically, please set the environment
-	@echo  variable SDK_AUTO_DEPLOYMENT = YES. But note that auto deployment is only 
-	@echo  possible if no office instance is running. 
+	@echo  variable SDK_AUTO_DEPLOYMENT = YES. But note that auto deployment is only
+	@echo  possible if no office instance is running.
 	@echo --------------------------------------------------------------------------------
 endif
 
@@ -217,14 +217,14 @@ ifeq "$(SDK_AUTO_DEPLOYMENT)" "YES"
 else
 	@echo --------------------------------------------------------------------------------
 	@echo  If you want to install your component automatically, please set the environment
-	@echo  variable SDK_AUTO_DEPLOYMENT = YES. But note that auto deployment is only 
-	@echo  possible if no office instance is running. 
+	@echo  variable SDK_AUTO_DEPLOYMENT = YES. But note that auto deployment is only
+	@echo  possible if no office instance is running.
 	@echo --------------------------------------------------------------------------------
 endif
 
 $(APP_CLASSFILES) : $(APP_JAVAFILES)
 	-$(MKDIR) $(subst /,$(PS),$(@D))
-	$(SDK_JAVAC) $(JAVAC_FLAGS) -classpath "$(SDK_CLASSPATH)" -d $(SAMPLE_CLASS_OUT) $(APP_JAVAFILES) 
+	$(SDK_JAVAC) $(JAVAC_FLAGS) -classpath "$(SDK_CLASSPATH)" -d $(SAMPLE_CLASS_OUT) $(APP_JAVAFILES)
 
 $(APP1_CLASS_OUT)/%.class : %.java $(APP_CLASSFILES)
 	-$(MKDIR) $(subst /,$(PS),$(@D))
@@ -266,7 +266,7 @@ $(APP3_JAR) : $(APP3_GEN_OUT)/$(APP3_NAME).mf $(APP3_CLASS_OUT)/$(APP3_NAME).cla
 	+$(SDK_JAR) uvf $@ $(SDK_JAVA_UNO_BOOTSTRAP_FILES)
 	+cd $(subst /,$(PS),$(SAMPLE_CLASS_OUT)) && $(SDK_JAR) uvf $(@F) $(APP_CLASSNAMES)
 
-$(SAMPLE_NAME) : $(COMP1_REGISTERFLAG) $(COMP2_REGISTERFLAG) $(APP1_JAR) $(APP2_JAR) $(APP3_JAR) 
+$(SAMPLE_NAME) : $(COMP1_REGISTERFLAG) $(COMP2_REGISTERFLAG) $(APP1_JAR) $(APP2_JAR) $(APP3_JAR)
 	@echo --------------------------------------------------------------------------------
 	@echo Please use one of the following commands to execute the examples!
 	@echo -
@@ -275,9 +275,9 @@ $(SAMPLE_NAME) : $(COMP1_REGISTERFLAG) $(COMP2_REGISTERFLAG) $(APP1_JAR) $(APP2_
 	@echo $(MAKE) $(APP3_NAME).run
 	@echo --------
 	@echo The "$(QM)$(COMP1_NAME)$(QM)" and "$(QM)$(COMP2_NAME)$(QM)"  component are installed if
-	@echo SDK_AUTO_DEPLOYMENT = YES. You can use this components inside your office 
+	@echo SDK_AUTO_DEPLOYMENT = YES. You can use this components inside your office
 	@echo installation, see the example descriptions. You can also load the "$(QM)ExampleAddIn.ods$(QM)"
-	@echo  document to see how the add-in functions can be used. For more details about the 
+	@echo  document to see how the add-in functions can be used. For more details about the
 	@echo "$(QM)$(COMP2_NAME)$(QM)" component see the "$(QM)DataPilotReadme.txt"$(QM).
 	@echo -
 	@echo $(MAKE) ExampleAddIn.ods.load

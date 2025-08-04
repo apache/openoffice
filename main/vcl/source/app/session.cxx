@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -90,7 +90,7 @@ class VCLSession : public cppu::WeakComponentImplHelper1 < XSessionManagerClient
 public:
     VCLSession();
     virtual ~VCLSession();
-    
+
     virtual void SAL_CALL addSessionManagerListener( const css::uno::Reference< XSessionManagerListener >& xListener ) throw( RuntimeException );
     virtual void SAL_CALL removeSessionManagerListener( const css::uno::Reference< XSessionManagerListener>& xListener ) throw( RuntimeException );
     virtual void SAL_CALL queryInteraction( const css::uno::Reference< XSessionManagerListener >& xListener ) throw( RuntimeException );
@@ -142,7 +142,7 @@ void VCLSession::callSaveRequested( bool bShutdown, bool bCancelable )
         // without session we assume UI is always possible,
         // so it was reqeusted and granted
         m_bInteractionRequested = m_bInteractionGranted = m_pSession ? false : true;
-        
+
         // answer the session manager even if no listeners available anymore
         DBG_ASSERT( ! aListeners.empty(), "saveRequested but no listeners !" );
         if( aListeners.empty() )
@@ -184,7 +184,7 @@ void VCLSession::callInteractionGranted( bool bInteractionGranted )
     sal_uLong nAcquireCount = Application::ReleaseSolarMutex();
     for( std::list< Listener >::const_iterator it = aListeners.begin(); it != aListeners.end(); ++it )
         it->m_xListener->approveInteraction( bInteractionGranted );
-    
+
     Application::AcquireSolarMutex( nAcquireCount );
 }
 
@@ -254,7 +254,7 @@ void VCLSession::SalSessionEventProc( SalSessionEvent* pEvent )
 void SAL_CALL VCLSession::addSessionManagerListener( const css::uno::Reference<XSessionManagerListener>& xListener ) throw( RuntimeException )
 {
     osl::MutexGuard aGuard( m_aMutex );
-    
+
     m_aListeners.push_back( Listener( xListener ) );
 }
 
@@ -272,7 +272,7 @@ void SAL_CALL VCLSession::removeSessionManagerListener( const css::uno::Referenc
         }
         else
             ++it;
-    }    
+    }
 }
 
 void SAL_CALL VCLSession::queryInteraction( const css::uno::Reference<XSessionManagerListener>& xListener ) throw( RuntimeException )
@@ -371,6 +371,6 @@ css::uno::Reference< XInterface > SAL_CALL vcl_session_createInstance( const css
     ImplSVData* pSVData = ImplGetSVData();
     if( ! pSVData->xSMClient.is() )
         pSVData->xSMClient = new VCLSession();
-    
+
 	return css::uno::Reference< XInterface >(pSVData->xSMClient, UNO_QUERY );
 }

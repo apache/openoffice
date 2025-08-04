@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -161,11 +161,11 @@ Simstr
 Simstr::operator+(const Simstr & S) const
 {
    Simstr ret = sz;
-   ret.push_back(S);                                         
+   ret.push_back(S);
    return ret;
 }
 
-Simstr &     
+Simstr &
 Simstr::operator+=(const Simstr & S)
 {
    push_back(S);
@@ -191,20 +191,20 @@ bool
 Simstr::operator!=(const Simstr & S) const
 { return strcmp(sz,S.sz) ? true : false; }
 
-bool  
-Simstr::operator<(const Simstr & S) const 
+bool
+Simstr::operator<(const Simstr & S) const
 { return (strcmp(sz,S.sz) < 0) ? true : false; }
 
-bool  
-Simstr::operator>(const Simstr & S) const 
+bool
+Simstr::operator>(const Simstr & S) const
 { return (strcmp(sz,S.sz) > 0) ? true : false; }
 
 bool
-Simstr::operator<=(const Simstr & S) const 
+Simstr::operator<=(const Simstr & S) const
 { return (strcmp(sz,S.sz) <= 0) ? true : false; }
 
-bool  
-Simstr::operator>=(const Simstr & S) const 
+bool
+Simstr::operator>=(const Simstr & S) const
 { return (strcmp(sz,S.sz) >= 0) ? true : false; }
 
 
@@ -212,19 +212,19 @@ Simstr::operator>=(const Simstr & S) const
 
 // **************          LIST - Funktionen        *****************
 
-   
+
 // Einzelzugriff
 
 char
 Simstr::get(int  n) const     { return (n >= len || n < 0) ? 0 : sz[n]; }
 
-char 
+char
 Simstr::get_front() const        { return sz[0]; }
 
-char 
+char
 Simstr::get_back() const        { return  len ? sz[len-1] : 0; }
 
-Simstr 
+Simstr
 Simstr::get(int  startPos, int  anzahl) const
 {
    if (startPos >= len || startPos < 0 || anzahl < 1)
@@ -262,7 +262,7 @@ Simstr::get_back(int  anzahl) const
    return ret;
 }
 
-Simstr 
+Simstr
 Simstr::get_first_token(char c) const
 {
    int posc = pos_first(c);
@@ -316,7 +316,7 @@ Simstr::push_front(char c)
    len++;
 }
 
-void 
+void
 Simstr::push_back(char c)
 {
    char * result = new char[len+2];
@@ -330,7 +330,7 @@ Simstr::push_back(char c)
    len++;
 }
 
-void 
+void
 Simstr::insert(int  pos, const Simstr & S)
 {
    if (pos < 0 || pos > len)
@@ -376,7 +376,7 @@ Simstr::push_back(const Simstr & S)
 
 // Remove
 
-void 
+void
 Simstr::remove(int  pos, int  anzahl)
 {
    if (pos >= len || pos < 0 || anzahl < 1)
@@ -464,11 +464,11 @@ Simstr::remove_all(char c)
    delete [] result;
 }
 
-void 
+void
 Simstr::remove_all(const Simstr & S)
 {
    int  pos;
-   while ( (pos=pos_first(S)) != NO_POS )  
+   while ( (pos=pos_first(S)) != NO_POS )
       remove(pos,S.len);
 }
 
@@ -643,7 +643,7 @@ Simstr::count(char c) const
 
 bool
 Simstr::is_no_text() const
-{ 
+{
    if (!len)
 	  return true;
 
@@ -656,7 +656,7 @@ Simstr::is_no_text() const
 
 // Change
 
-void 
+void
 Simstr::replace(int  pos, char c)
 {
 	if (pos < 0 || pos >= len)

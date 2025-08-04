@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -825,7 +825,7 @@ Window*	VCLXToolkit::ImplCreateWindow( VCLXWindow** ppNewComp,
 					pParent = DIALOG_NO_PARENT;
 				pNewWindow = new Dialog( pParent, nWinBits );
 				// #i70217# Don't always create a new component object. It's possible that VCL has called
-				// GetComponentInterface( sal_True ) in the Dialog ctor itself (see Window::IsTopWindow() ) 
+				// GetComponentInterface( sal_True ) in the Dialog ctor itself (see Window::IsTopWindow() )
 				// which creates a component object.
 				css::uno::Reference< css::awt::XWindowPeer > xWinPeer = pNewWindow->GetComponentInterface( sal_False );
 				if ( xWinPeer.is() )
@@ -1267,11 +1267,11 @@ css::uno::Reference< css::awt::XWindowPeer > VCLXToolkit::ImplCreateWindow(
 }
 
 // ::com::sun::star::awt::XMessageBoxFactory
-::com::sun::star::uno::Reference< ::com::sun::star::awt::XMessageBox > SAL_CALL VCLXToolkit::createMessageBox( 
+::com::sun::star::uno::Reference< ::com::sun::star::awt::XMessageBox > SAL_CALL VCLXToolkit::createMessageBox(
     const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer >& aParent,
     ::com::sun::star::awt::MessageBoxType eType,
-    ::sal_Int32 aButtons, 
-    const ::rtl::OUString& aTitle, 
+    ::sal_Int32 aButtons,
+    const ::rtl::OUString& aTitle,
     const ::rtl::OUString& aMessage ) throw (::com::sun::star::uno::RuntimeException)
 {
     ::com::sun::star::awt::WindowDescriptor aDescriptor;
@@ -1559,17 +1559,17 @@ void SAL_CALL VCLXToolkit::removeFocusListener(
 }
 
 // virtual
-void SAL_CALL VCLXToolkit::fireFocusGained( 
-    ::com::sun::star::uno::Reference< 
-    ::com::sun::star::uno::XInterface > const &) 
+void SAL_CALL VCLXToolkit::fireFocusGained(
+    ::com::sun::star::uno::Reference<
+    ::com::sun::star::uno::XInterface > const &)
     throw (::com::sun::star::uno::RuntimeException)
 {
 }
-        
-// virtual 
-void SAL_CALL VCLXToolkit::fireFocusLost( 
-    ::com::sun::star::uno::Reference< 
-    ::com::sun::star::uno::XInterface > const &) 
+
+// virtual
+void SAL_CALL VCLXToolkit::fireFocusLost(
+    ::com::sun::star::uno::Reference<
+    ::com::sun::star::uno::XInterface > const &)
     throw (::com::sun::star::uno::RuntimeException)
 {
 }
@@ -1669,11 +1669,11 @@ long VCLXToolkit::callKeyHandlers(::VclSimpleEvent const * pEvent,
 {
     ::css::uno::Sequence< ::css::uno::Reference< ::css::uno::XInterface > >
           aHandlers(m_aKeyHandlers.getElements());
-    
+
     if (aHandlers.hasElements())
     {
         ::Window * pWindow = static_cast< ::VclWindowEvent const * >(pEvent)->GetWindow();
-        
+
         // See implementation in vclxwindow.cxx for mapping between VCL and UNO AWT event
         ::KeyEvent * pKeyEvent = static_cast< ::KeyEvent * >(
             static_cast< ::VclWindowEvent const * >(pEvent)->GetData());

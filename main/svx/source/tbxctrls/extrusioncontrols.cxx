@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -231,7 +231,7 @@ IMPL_LINK( ExtrusionDirectionWindow, SelectHdl, void *, pControl )
 	{
 		int nProjection = getSelectedEntryId();
 		if( (nProjection >= 0) && (nProjection < 2 ) )
-		{       
+		{
             Sequence< PropertyValue > aArgs( 1 );
             aArgs[0].Name = msExtrusionProjection.copy(5);
             aArgs[0].Value <<= (sal_Int32)nProjection;
@@ -308,7 +308,7 @@ ExtrusionDepthDialog::ExtrusionDepthDialog( Window* pParent, double fDepth, Fiel
 	maOKButton( this, SVX_RES( BTN_OK ) ),
 	maCancelButton( this, SVX_RES( BTN_CANCEL ) ),
 	maHelpButton( this, SVX_RES( BTN_HELP ) )
-{ 
+{
 	bool bMetric = IsMetric( eDefaultUnit );
 	maMtrDepth.SetUnit( bMetric ? FUNIT_CM : FUNIT_INCH );
 	maMtrDepth.SetValue( (int) fDepth * 100, FUNIT_100TH_MM );
@@ -323,7 +323,7 @@ ExtrusionDepthDialog::~ExtrusionDepthDialog()
 double ExtrusionDepthDialog::getDepth() const
 {
 //	bool bMetric = IsMetric( meDefaultUnit );
-	return (double)( maMtrDepth.GetValue( FUNIT_100TH_MM ) ) / 100.0; 
+	return (double)( maMtrDepth.GetValue( FUNIT_100TH_MM ) ) / 100.0;
 }
 
 // ####################################################################
@@ -471,7 +471,7 @@ IMPL_LINK( ExtrusionDepthWindow, SelectHdl, void *, EMPTYARG )
 				EndPopupMode();
 
             const rtl::OUString aCommand( RTL_CONSTASCII_USTRINGPARAM( ".uno:ExtrusionDepthDialog" ));
-        
+
             Any a;
             Sequence< PropertyValue > aArgs( 2 );
             aArgs[0].Name = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Depth" ));
@@ -493,7 +493,7 @@ IMPL_LINK( ExtrusionDepthWindow, SelectHdl, void *, EMPTYARG )
 			{
 				fDepth = IsMetric( meUnit ) ? aDepthListMM[nSelected] : aDepthListInch[nSelected];
 			}
-        
+
             Sequence< PropertyValue > aArgs( 1 );
             aArgs[0].Name = msExtrusionDepth.copy(5);
             aArgs[0].Value <<= fDepth;
@@ -863,7 +863,7 @@ ExtrusionSurfaceWindow::ExtrusionSurfaceWindow( svt::ToolboxController& rControl
 	SetOutputSizePixel( getMenuSize() );
 
 	FreeResource();
-	
+
     AddStatusListener( msExtrusionSurface );
 }
 
@@ -980,7 +980,7 @@ Sequence< OUString > SAL_CALL ExtrusionSurfaceControl::getSupportedServiceNames(
 
 SFX_IMPL_TOOLBOX_CONTROL( ExtrusionColorControl, SvxColorItem );
 
-ExtrusionColorControl::ExtrusionColorControl( 
+ExtrusionColorControl::ExtrusionColorControl(
 	sal_uInt16 nSlotId, sal_uInt16 nId, ToolBox& rTbx )
 : SfxToolBoxControl	( nSlotId, nId, rTbx )
 {
@@ -1006,10 +1006,10 @@ SfxPopupWindowType ExtrusionColorControl::GetPopupWindowType() const
 
 SfxPopupWindow*	ExtrusionColorControl::CreatePopupWindow()
 {
-    SvxColorWindow_Impl* pColorWin = new SvxColorWindow_Impl( 
+    SvxColorWindow_Impl* pColorWin = new SvxColorWindow_Impl(
 		rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ".uno:Extrusion3DColor" )),
-		SID_EXTRUSION_3D_COLOR, 
-		m_xFrame, 
+		SID_EXTRUSION_3D_COLOR,
+		m_xFrame,
 		SVX_RESSTR( RID_SVXSTR_EXTRUSION_COLOR ),
         &GetToolBox() );
     pColorWin->StartPopupMode( &GetToolBox(), FLOATWIN_POPUPMODE_GRABFOCUS|FLOATWIN_POPUPMODE_ALLOWTEAROFF );

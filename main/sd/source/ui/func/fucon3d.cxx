@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -71,7 +71,7 @@ FuConstruct3dObject::FuConstruct3dObject (
     ::sd::Window*		pWin,
     ::sd::View*			pView,
     SdDrawDocument*	pDoc,
-    SfxRequest&		rReq) 
+    SfxRequest&		rReq)
     : FuConstruct(pViewSh, pWin, pView, pDoc, rReq)
 {
 }
@@ -450,7 +450,7 @@ SdrObject* FuConstruct3dObject::CreateDefaultObject(const sal_uInt16 nID, const 
 
 	E3dCompoundObject* p3DObj = ImpCreateBasic3DShape();
 
-	// E3dView::SetCurrent3DObj part		
+	// E3dView::SetCurrent3DObj part
 	// get transformed BoundVolume of the object
 	basegfx::B3DRange aObjVol(p3DObj->GetBoundVolume());
 	aObjVol.transform(p3DObj->GetTransform());
@@ -473,18 +473,18 @@ SdrObject* FuConstruct3dObject::CreateDefaultObject(const sal_uInt16 nID, const 
 	aCam.SetFocalLength(mpView->GetDefaultCamFocal());
 	aCam.SetDefaults(::basegfx::B3DPoint(0.0, 0.0, fDefaultCamPosZ), aLookAt, mpView->GetDefaultCamFocal());
 	pScene->SetCamera(aCam);
-	
+
 	pScene->Insert3DObj(p3DObj);
 	pScene->NbcSetSnapRect(a3DRect);
 	pScene->SetModel(mpDoc);
-		
+
 	ImpPrepareBasic3DShape(p3DObj, pScene);
-		
+
 	SfxItemSet aAttr(mpDoc->GetPool());
 	SetStyleSheet(aAttr, p3DObj);
 	aAttr.Put(XLineStyleItem (XLINE_NONE));
 	p3DObj->SetMergedItemSet(aAttr);
-	
+
 	// make object interactive at once
 	pScene->SetRectsDirty();
 

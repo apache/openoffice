@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -28,9 +28,9 @@
 
 using namespace rtl;
 
-namespace com { 
-namespace sun { 
-namespace star { 
+namespace com {
+namespace sun {
+namespace star {
 namespace i18n {
 
 InputSequenceChecker_hi::InputSequenceChecker_hi()
@@ -50,7 +50,7 @@ InputSequenceChecker_hi::~InputSequenceChecker_hi()
 #define __UP  1  // ChandraBindu & Anuswar
 #define	__NP  2  // Visarg
 #define __IV	3  // Independent Vowels
-#define __CN	4  // Consonants except _CK & _RC 
+#define __CN	4  // Consonants except _CK & _RC
 #define __CK	5  // Consonants that can be followed by Nukta
 #define __RC	6  // Ra
 #define __NM	7  // Matra
@@ -114,11 +114,11 @@ sal_Bool _DEV_Composible[2][2] = {
 #define getCharType(x) \
 	((x >= 0x0900 && x < 0x097f) ? devaCT[x - 0x0900] : __ND)
 
-sal_Bool SAL_CALL 
-InputSequenceChecker_hi::checkInputSequence(const OUString& Text, 
+sal_Bool SAL_CALL
+InputSequenceChecker_hi::checkInputSequence(const OUString& Text,
                                             sal_Int32       nStartPos,
-                                            sal_Unicode     inputChar, 
-                                            sal_Int16       inputCheckMode) 
+                                            sal_Unicode     inputChar,
+                                            sal_Int16       inputCheckMode)
   throw(com::sun::star::uno::RuntimeException)
 {
 	sal_Unicode currentChar = Text[nStartPos];
@@ -128,16 +128,16 @@ InputSequenceChecker_hi::checkInputSequence(const OUString& Text,
 	return (_DEV_Composible[inputCheckMode][dev_cell_check[ch2][ch1]]);
 }
 
-sal_Int32 SAL_CALL 
-InputSequenceChecker_hi::correctInputSequence(OUString& Text, 
+sal_Int32 SAL_CALL
+InputSequenceChecker_hi::correctInputSequence(OUString& Text,
                                             sal_Int32       nStartPos,
-                                            sal_Unicode     inputChar, 
-                                            sal_Int16       inputCheckMode) 
+                                            sal_Unicode     inputChar,
+                                            sal_Int16       inputCheckMode)
   throw(com::sun::star::uno::RuntimeException)
 {
     if (checkInputSequence(Text, nStartPos, inputChar, inputCheckMode))
         Text = Text.replaceAt(++nStartPos, 0, OUString(inputChar));
-    else 
+    else
         nStartPos=Text.getLength();
     return nStartPos;
 }

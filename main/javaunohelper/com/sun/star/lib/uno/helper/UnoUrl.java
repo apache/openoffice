@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -28,28 +28,28 @@ import java.util.Vector;
 
 /**
  * Object representation and parsing of Uno Urls,
- * which allow to locate a named Uno object in a 
- * different process. An Uno Url consists of the 
- * specification of a connection, protocol and 
+ * which allow to locate a named Uno object in a
+ * different process. An Uno Url consists of the
+ * specification of a connection, protocol and
  * rootOid delimited with a ';'.
  * The syntax of an Uno Url is
- * 
+ *
  * <code>
  * [uno:]connection-type,parameters;protocol-name,parameters;objectname";
  * </code>
- * 
+ *
  * An example Uno Url will look like this:
- * 
+ *
  * <code>
  * socket,host=localhost,port=2002;urp;StarOffice.ServiceManager
  * </code>
- * 
+ *
  * For more information about Uno Url please consult
  * <a href="http://udk.openoffice.org/common/man/spec/uno-url.html">
  * http://udk.openoffice.org/common/man/spec/uno-url.html</a>
- * 
+ *
  * Usage:
- * 
+ *
  * <code>
  *   UnoUrl url = UnoUrl.parseUnoUrl("socket,host=localhost,port=2002;urp;StarOffice.ServiceManager");
  * </code>
@@ -117,7 +117,7 @@ public class UnoUrl {
 	/**
 	 * Returns the name of the connection of this
 	 * Uno Url. Encoded characters are not allowed.
-	 * 
+	 *
 	 * @return The connection name as string.
 	 */
 	public String getConnection() {
@@ -127,7 +127,7 @@ public class UnoUrl {
 	/**
 	 * Returns the name of the protocol of this
 	 * Uno Url. Encoded characters are not allowed.
-	 * 
+	 *
 	 * @return The protocol name as string.
 	 */
 	public String getProtocol() {
@@ -137,7 +137,7 @@ public class UnoUrl {
 	/**
 	 * Return the object name. Encoded character are
 	 * not allowed.
-	 * 
+	 *
 	 * @return The object name as String.
 	 */
 	public String getRootOid() {
@@ -148,7 +148,7 @@ public class UnoUrl {
 	 * Returns the protocol parameters as
 	 * a Hashmap with key/value pairs. Encoded
 	 * characters like '%41' are decoded.
-	 * 
+	 *
 	 * @return a HashMap with key/value pairs for protocol parameters.
 	 */
 	public HashMap getProtocolParameters() {
@@ -159,7 +159,7 @@ public class UnoUrl {
 	 * Returns the connection parameters as
 	 * a Hashmap with key/value pairs. Encoded
 	 * characters like '%41' are decoded.
-	 * 
+	 *
 	 * @return a HashMap with key/value pairs for connection parameters.
 	 */
 	public HashMap getConnectionParameters() {
@@ -170,7 +170,7 @@ public class UnoUrl {
 	 * Returns the raw specification of the protocol
 	 * parameters. Encoded characters like '%41' are
 	 * not decoded.
-	 * 
+	 *
 	 * @return The uninterpreted protocol parameters as string.
 	 */
 	public String getProtocolParametersAsString() {
@@ -181,7 +181,7 @@ public class UnoUrl {
 	 * Returns the raw specification of the connection
 	 * parameters. Encoded characters like '%41' are
 	 * not decoded.
-	 * 
+	 *
 	 * @return The uninterpreted connection parameters as string.
 	 */
 	public String getConnectionParametersAsString() {
@@ -354,7 +354,7 @@ public class UnoUrl {
 	/**
 	 * Parses the given Uno Url and returns
 	 * an in memory object representation.
-	 * 
+	 *
 	 * @param unoUrl The given uno URl as string.
 	 * @return Object representation of class UnoUrl.
 	 * @throws IllegalArgumentException if Url cannot be parsed.

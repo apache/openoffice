@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1294,7 +1294,7 @@ static const SvxMSDffVertPair mso_sptCurvedDownVert[] =
 {
 	{ 0, 0 }, { 3 MSO_I, 23 MSO_I }, { 0, 22 MSO_I }, { 4 MSO_I, 0 },
 	{ 15 MSO_I, 0 }, { 1 MSO_I, 23 MSO_I }, { 7 MSO_I, 0 }, { 13 MSO_I, 2 MSO_I },
-	{ 14 MSO_I, 2 MSO_I }, { 8 MSO_I, 22 MSO_I }, { 12 MSO_I, 2 MSO_I }, 
+	{ 14 MSO_I, 2 MSO_I }, { 8 MSO_I, 22 MSO_I }, { 12 MSO_I, 2 MSO_I },
 	{ 0, 0 }, { 3 MSO_I, 23 MSO_I }, { 11 MSO_I, 2 MSO_I }, { 17 MSO_I, 26 MSO_I }, { 15 MSO_I, 0 },
 	{ 1 MSO_I, 23 MSO_I }, { 17 MSO_I, 26 MSO_I }, { 15 MSO_I, 22 MSO_I },
 	{ 0, 0 }, { 3 MSO_I, 23 MSO_I }, { 0, 22 MSO_I }, { 4 MSO_I, 0 },
@@ -1348,7 +1348,7 @@ static const mso_CustomShape msoCurvedDownArrow =
 static const SvxMSDffVertPair mso_sptCurvedUpVert[] =
 {
 	{ 0, 22 MSO_I }, { 3 MSO_I, 21 MSO_I }, { 0, 0 }, { 4 MSO_I, 21 MSO_I },
-	{ 14 MSO_I, 22 MSO_I }, { 1 MSO_I, 21 MSO_I }, { 7 MSO_I, 21 MSO_I }, 
+	{ 14 MSO_I, 22 MSO_I }, { 1 MSO_I, 21 MSO_I }, { 7 MSO_I, 21 MSO_I },
 	{ 12 MSO_I, 2 MSO_I }, { 13 MSO_I, 2 MSO_I }, { 8 MSO_I, 0 }, { 11 MSO_I, 2 MSO_I },
 	{ 0, 22 MSO_I }, { 3 MSO_I, 21 MSO_I }, { 10 MSO_I, 2 MSO_I }, { 16 MSO_I, 24 MSO_I },
 	{ 14 MSO_I, 22 MSO_I }, { 1 MSO_I, 21 MSO_I }, { 16 MSO_I, 24 MSO_I }, { 14 MSO_I, 0 },
@@ -4511,8 +4511,8 @@ static const mso_CustomShape msoRibbon =
 //msosptEllipseRibbon
 //svg path = ar@9@38@8@37,0@27@0@26@9@13@8@4@0@25@22@25@9@38@8@37@22@26@3@27l@7@40@3,wa@9@35@8@10@3,0@21@33@9@36@8@1@21@31@20@31@9@35@8@10@20@33,,l@5@40xewr@9@36@8@1@20@31@0@32nfl@20@33ear@9@36@8@1@21@31@22@32nfl@21@33em@0@26nfl@0@32em@22@26nfl@22@32e
 //odp path = A ?f9 ?f38 ?f8 ?f37 0 ?f27 ?f0 ?f26 ?f9 ?f13 ?f8 ?f4 ?f0 ?f25 ?f22 ?f25 ?f9 ?f38 ?f8 ?f37 ?f22 ?f26 ?f3 ?f27 L ?f7 ?f40 ?f3 0 W ?f9 ?f35 ?f8 ?f10 ?f3 0 ?f21 ?f33 ?f9 ?f36 ?f8 ?f1 ?f21 ?f31 ?f20 ?f31 ?f9 ?f35 ?f8 ?f10 ?f20 ?f33 0 0 L ?f5 ?f40 Z N W ?f9 ?f36 ?f8 ?f1 ?f20 ?f31 ?f0 ?f32 F L ?f20 ?f33 N A ?f9 ?f36 ?f8 ?f1 ?f21 ?f31 ?f22 ?f32 F L ?f21 ?f33 N M ?f0 ?f26 F L ?f0 ?f32 N M ?f22 ?f26 F L ?f22 ?f32 N
-static const SvxMSDffVertPair mso_sptEllipseRibbonVert[] =		
-{	
+static const SvxMSDffVertPair mso_sptEllipseRibbonVert[] =
+{
 	{ 9 MSO_I , 38 MSO_I },
 	{ 8 MSO_I , 37 MSO_I },
 	{ 0 , 27 MSO_I },
@@ -4559,7 +4559,7 @@ static const SvxMSDffVertPair mso_sptEllipseRibbonVert[] =
 static const sal_uInt16 mso_sptEllipseRibbonSegm[] =
 {
 	0xa30c /*ar*/,0x0002/*l*/,0xa50c/*wa*/,0x0001/*l*/,
-	0x6001/*x*/, 0x8000/*e*/,0xa504/*wr*/,0xaa00/*nf*/, 
+	0x6001/*x*/, 0x8000/*e*/,0xa504/*wr*/,0xaa00/*nf*/,
 	0x0001/*l*/, 0x8000/*e*/,0xa304/*ar*/,0xaa00/*nf*/,
 	0x0001/*l*/, 0x8000/*e*/,0x4000/*m*/,0xaa00/*nf*/,
 	0x0001/*l*/, 0x8000/*e*/,0x4000/*m*/,0xaa00/*nf*/,
@@ -4624,8 +4624,8 @@ static const SvxMSDffTextRectangles mso_sptEllipseRibbonTextRect[] =
 };
 
 static const sal_Int32 mso_sptEllipseRibbonDefault[] =
-{ 
-	3,5400,5400,18900 
+{
+	3,5400,5400,18900
 };
 
 static const SvxMSDffHandle mso_sptEllipseRibbonHandle[] =
@@ -4656,7 +4656,7 @@ static const mso_CustomShape msosptEllipseRibbon =
 
 //msosptEllipseRibbon2
 //svg path = wr@9@34@8@35,0@24@0@23@9,0@8@11@0@22@19@22@9@34@8@35@19@23@3@24l@7@36@3@4at@9@31@8@32@3@4@18@30@9@1@8@33@18@28@17@28@9@31@8@32@17@30,0@4l@5@36xear@9@1@8@33@17@28@0@29nfl@17@30ewr@9@1@8@33@18@28@19@29nfl@18@30em@0@23nfl@0@29em@19@23nfl@19@29e
-static const SvxMSDffVertPair mso_sptEllipseRibbon2Vert[] =		
+static const SvxMSDffVertPair mso_sptEllipseRibbon2Vert[] =
 {
 	{ 9 MSO_I , 34 MSO_I },
 	{ 8 MSO_I , 35 MSO_I },
@@ -4703,7 +4703,7 @@ static const SvxMSDffVertPair mso_sptEllipseRibbon2Vert[] =
 static const sal_uInt16 mso_sptEllipseRibbon2Segm[] =
 {
 	0xa50c/*wr*/,0x0002/*l*/,0xa30c/*at*/,0x0001/*l*/,
-	0x6001/*x*/, 0x8000/*e*/,0xa304/*ar*/,0xaa00/*nf*/, 
+	0x6001/*x*/, 0x8000/*e*/,0xa304/*ar*/,0xaa00/*nf*/,
 	0x0001/*l*/, 0x8000/*e*/,0xa504/*wr*/,0xaa00/*nf*/,
 	0x0001/*l*/, 0x8000/*e*/,0x4000/*m*/,0xaa00/*nf*/,
 	0x0001/*l*/, 0x8000/*e*/,0x4000/*m*/,0xaa00/*nf*/,
@@ -4764,7 +4764,7 @@ static const SvxMSDffTextRectangles mso_sptEllipseRibbon2TextRect[] =
 };
 
 static const sal_Int32 mso_sptEllipseRibbon2Default[] =
-{ 
+{
 	3,5400,16200,2700
 };
 
@@ -6463,9 +6463,9 @@ static const mso_CustomShape msoTextChevronInverted =
 	NULL, 0,
 	(SvxMSDffHandle*)mso_sptTextChevronInvertedHandle, sizeof( mso_sptTextChevronInvertedHandle ) / sizeof( SvxMSDffHandle )
 };
-//V 0 0 21600 ?f2 0 ?f0 21600 ?f0 
-//W 0 0 21600 ?f2 21600 ?f0 0 ?f0 N 
-//V 0 ?f3 21600 21600 0 ?f1 21600 ?f1 
+//V 0 0 21600 ?f2 0 ?f0 21600 ?f0
+//W 0 0 21600 ?f2 21600 ?f0 0 ?f0 N
+//V 0 ?f3 21600 21600 0 ?f1 21600 ?f1
 //W 0 ?f3 21600 21600 21600 ?f1 0 ?f1 N
 //mso_sptTextRingInside
 static const SvxMSDffVertPair mso_sptTextRingInsideVert[] =
@@ -8293,7 +8293,7 @@ static const mso_CustomShape msoCurvedConnector5 =
 /////////////////////////////teardrop////////////////////////////////////////////
 static const SvxMSDffVertPair mso_sptTearDropVert[] =
 {
-	{ 10800, 0 }, 
+	{ 10800, 0 },
 	{ 0, 10800 },												    // X
 	{ 10800, 21600 },                                               // Y
 	{ 21600, 10800 },                                               // X
@@ -8305,12 +8305,12 @@ static const SvxMSDffVertPair mso_sptTearDropVert[] =
 //    the first number(0xn***)  :  2/4/8 the first/second/third value is not directly value
 static const SvxMSDffCalculationData mso_sptTearDropCalc[] =
 {
-	{ 0x2000 , { DFF_Prop_adjustValue , 0 , 0 } },  // 0  adjust value #0 
-	{ 0x8000 , { 21600 , 0 , 0x0400 } }, 			// 1  21600 - @0                     y0       
-	{ 0x8000 , { 32400 , 0 , 0x0400 } },            // 2   (32400 - @0)    
+	{ 0x2000 , { DFF_Prop_adjustValue , 0 , 0 } },  // 0  adjust value #0
+	{ 0x8000 , { 21600 , 0 , 0x0400 } }, 			// 1  21600 - @0                     y0
+	{ 0x8000 , { 32400 , 0 , 0x0400 } },            // 2   (32400 - @0)
 	{ 0x2001 , { 0x0402 , 1 , 2 } },                // 3   (32400 - @0)/2               y1
-	{ 0x2002 , { 0x0400 , 10800 , 0 } }, 			// 4  (@0+10800)/2                  x2    
-}; 
+	{ 0x2002 , { 0x0400 , 10800 , 0 } }, 			// 4  (@0+10800)/2                  x2
+};
 
 //m, qx, qy, qx,C,C
 //the last number(0x***n) : repeat number of this current Segm
@@ -8562,7 +8562,7 @@ const mso_CustomShape* GetCustomShapeContent( MSO_SPT eSpType )
 		case mso_sptTextWave2 :					pCustomShape = &msoTextWave2; break;
 		case mso_sptTextWave3 :					pCustomShape = &msoTextWave3; break;
 		case mso_sptTextWave4 :					pCustomShape = &msoTextWave4; break;
-		case mso_sptTearDrop :                  pCustomShape = &msoTearDrop; break;    
+		case mso_sptTearDrop :                  pCustomShape = &msoTearDrop; break;
 		default :
 		break;
 	}

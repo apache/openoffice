@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -72,13 +72,13 @@ public class QuerySummary extends QueryMetaData
                     }) + sReturnChar;
             sFilterFraction = combineFilterNameFraction(this.getFilterConditions(), RID_QUERY + 53, RID_QUERY + 54) + sReturnChar;
             //      if (xDBMetaData.getNumericFunctions().length() > 0)
-            //          sAggregateFraction = combinePartString(RID_QUERY + 55, AggregateFieldNames, RID_QUERY + 56, RID_QUERY + 95, new String[]{ "<CALCULATEDFUNCTION>", "<FIELDNAME>"}) + sReturnChar;                
+            //          sAggregateFraction = combinePartString(RID_QUERY + 55, AggregateFieldNames, RID_QUERY + 56, RID_QUERY + 95, new String[]{ "<CALCULATEDFUNCTION>", "<FIELDNAME>"}) + sReturnChar;
             if (xDBMetaData.supportsGroupBy())
             {
                 sGroupByFraction = combinePartString(RID_QUERY + 57, GroupFieldNames, RID_QUERY + 58) + sReturnChar;
                 sHavingFraction = combineFilterNameFraction(getGroupByFilterConditions(), RID_QUERY + 59, RID_QUERY + 60);
             }
-            // TODO: remove the last return from the string 
+            // TODO: remove the last return from the string
             sSummary = sFieldNamesFraction + sSortingFraction + sFilterFraction + sAggregateFraction + sGroupByFraction + sHavingFraction;
             sSummary = JavaTools.replaceSubString(sSummary, PropertyNames.EMPTY_STRING, "~");
         }
@@ -156,7 +156,7 @@ public class QuerySummary extends QueryMetaData
         }
         return _basestring;
     }
-    // TODO: How can you merge the following two methods to a single one in a smarter way?? 
+    // TODO: How can you merge the following two methods to a single one in a smarter way??
 
     public String combinePartString(int _InitResID, String[] _FieldNames, int _AlternativeResID)
     {

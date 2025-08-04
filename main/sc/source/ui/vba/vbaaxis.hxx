@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -36,11 +36,11 @@ class ScVbaAxis : public ScVbaAxis_BASE
 	sal_Int32 mnType;
 	sal_Int32 mnGroup;
 	sal_Int32 mnCrosses;
-	sal_Bool bCrossesAreCustomized; 
+	sal_Bool bCrossesAreCustomized;
 	ScVbaChart* getChartPtr() throw( css::uno::RuntimeException );
 	sal_Bool isValueAxis() throw( css::script::BasicErrorException );
 	std::auto_ptr<ov::ShapeHelper> oShapeHelper;
-	
+
 public:
 	ScVbaAxis( const css::uno::Reference< ov::XHelperInterface >& xParent, const css::uno::Reference< css::uno::XComponentContext > & xContext, const css::uno::Reference< css::beans::XPropertySet >& _xPropertySet, sal_Int32 _nType, sal_Int32 _nGroup );
 	// Methods

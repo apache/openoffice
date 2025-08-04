@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,7 +45,7 @@ namespace drawinglayer
 
             #120230# This primitive is now evtl. metric dependent due to the value
             MinimalDiscreteDistance in the FillHatchAttribute if the value is not zero.
-            This is used for a more appealing, VCL-like visualisation by not letting the 
+            This is used for a more appealing, VCL-like visualisation by not letting the
             distances get too small between lines.
 
             The decomposition will deliver the hatch lines.
@@ -73,13 +73,13 @@ namespace drawinglayer
         public:
             /// constructors. The one without definition range will use output range as definition range
             FillHatchPrimitive2D(
-                const basegfx::B2DRange& rOutputRange, 
-                const basegfx::BColor& rBColor, 
+                const basegfx::B2DRange& rOutputRange,
+                const basegfx::BColor& rBColor,
                 const attribute::FillHatchAttribute& rFillHatch);
             FillHatchPrimitive2D(
-                const basegfx::B2DRange& rOutputRange, 
-                const basegfx::B2DRange& rDefinitionRange, 
-                const basegfx::BColor& rBColor, 
+                const basegfx::B2DRange& rOutputRange,
+                const basegfx::B2DRange& rDefinitionRange,
+                const basegfx::BColor& rBColor,
                 const attribute::FillHatchAttribute& rFillHatch);
 
             /// data read access

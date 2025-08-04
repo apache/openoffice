@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -39,11 +39,11 @@ namespace stoc_sec
 //==================================================================================================
 class Permission : public ::salhelper::SimpleReferenceObject
 {
-public:    
+public:
     ::rtl::Reference< Permission > m_next;
     // mode
     enum t_type { ALL, RUNTIME, SOCKET, FILE } m_type;
-    
+
     inline Permission(
         t_type type,
         ::rtl::Reference< Permission > const & next = ::rtl::Reference< Permission >() )
@@ -51,7 +51,7 @@ public:
         : m_next( next )
         , m_type( type )
         {}
-    
+
     virtual bool implies( Permission const & perm ) const SAL_THROW( () ) = 0;
     virtual ::rtl::OUString toString() const SAL_THROW( () ) = 0;
 };
@@ -64,7 +64,7 @@ public:
         SAL_THROW( () )
         : Permission( ALL, next )
         {}
-    
+
     virtual bool implies( Permission const & ) const SAL_THROW( () );
     virtual ::rtl::OUString toString() const SAL_THROW( () );
 };
@@ -88,7 +88,7 @@ public:
         SAL_THROW( (::com::sun::star::uno::RuntimeException) );
 #ifdef __DIAGNOSE
     ::com::sun::star::uno::Sequence< ::rtl::OUString > toStrings() const SAL_THROW( () );
-#endif    
+#endif
     void checkPermission( ::com::sun::star::uno::Any const & perm ) const
         SAL_THROW( (::com::sun::star::uno::RuntimeException) );
 };

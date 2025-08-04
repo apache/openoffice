@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -131,7 +131,7 @@ extern "C" UINT __stdcall CreateLayerLinks(MSIHANDLE handle)
     if (IsValidHandle(h1file))
     {
         DWORD dummy;
-        
+
         // Converting string into UTF-8 encoding and writing into file "basis-link"
 
         int nCharsRequired = MultiByteToWideChar( CP_ACP, 0, sBasisInstallPath.c_str(), -1, NULL, 0 );
@@ -152,7 +152,7 @@ extern "C" UINT __stdcall CreateLayerLinks(MSIHANDLE handle)
                     delete lpPathUTF8;
                 }
             }
-            
+
             delete lpPathW;
         }
 
@@ -194,7 +194,7 @@ extern "C" UINT __stdcall CreateLayerLinks(MSIHANDLE handle)
                     delete lpPathUTF8;
                 }
             }
-            
+
             delete lpPathW;
         }
 
@@ -211,7 +211,7 @@ extern "C" UINT __stdcall RemoveLayerLinks(MSIHANDLE handle)
     string sOfficeInstallPath = sInstallPath;
     string sBasisInstallPath = sInstallPath + TEXT("Basis\\");
     string sUreInstallPath = sInstallPath + TEXT("URE\\");
-	
+
     string sBasisLinkPath = sOfficeInstallPath + TEXT("basis-link");
     string sUreLinkPath = sBasisInstallPath + TEXT("ure-link");
     string sUreDirName = sUreInstallPath + TEXT("bin");

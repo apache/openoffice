@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -166,7 +166,7 @@ namespace dbtools
 	::rtl::OUString aDefault = ::comphelper::getString(xColProp->getPropertyValue(rPropMap.getNameByIndex(PROPERTY_ID_DEFAULTVALUE)));
 	if ( aDefault.getLength() )
     {
-		aSql.append(::rtl::OUString::createFromAscii(" DEFAULT ")); 
+		aSql.append(::rtl::OUString::createFromAscii(" DEFAULT "));
         aSql.append(sPreFix);
         aSql.append(aDefault);
         aSql.append(sPostFix);
@@ -211,7 +211,7 @@ namespace dbtools
 	Reference<XColumnsSupplier> xColumnSup(descriptor,UNO_QUERY);
 	Reference<XIndexAccess> xColumns(xColumnSup->getColumns(),UNO_QUERY);
 	// check if there are columns
-	if(!xColumns.is() || !xColumns->getCount()) 
+	if(!xColumns.is() || !xColumns->getCount())
 		::dbtools::throwFunctionSequenceException(_xConnection);
 
 	Reference< XPropertySet > xColProp;
@@ -233,7 +233,7 @@ namespace
 	{
 		::dbtools::OPropertyMap& rPropMap = OMetaConnection::getPropMap();
 		static const ::rtl::OUString sComma(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(",")));
-		
+
 		const ::rtl::OUString sQuote(_xMetaData->getIdentifierQuoteString());
 		::rtl::OUString sSql = ::rtl::OUString::createFromAscii(" (");
 		Reference< XPropertySet > xColProp;
@@ -314,12 +314,12 @@ namespace
 					::rtl::OUString sRefTable = getString(xColProp->getPropertyValue(rPropMap.getNameByIndex(PROPERTY_ID_REFERENCEDTABLE)));
 					::dbtools::qualifiedNameComponents(xMetaData,
 														sRefTable,
-														sCatalog, 
-														sSchema, 
+														sCatalog,
+														sSchema,
 														sTable,
 														::dbtools::eInDataManipulation);
 					sComposedName = ::dbtools::composeTableName( xMetaData, sCatalog, sSchema, sTable, sal_True, ::dbtools::eInTableDefinitions );
-					
+
 
 					if ( !sComposedName.getLength() )
 						::dbtools::throwFunctionSequenceException(_xConnection);
@@ -378,7 +378,7 @@ namespace
 	}
 	return aSql;
 }
-namespace 
+namespace
 {
 	Reference<XPropertySet> lcl_createSDBCXColumn(const Reference<XNameAccess>& _xPrimaryKeyColumns,
 										  const Reference<XConnection>& _xConnection,
@@ -436,7 +436,7 @@ namespace
 					}
 					else if ( DataType::OTHER == nField5 )
 						nField5 = _nDataType;
-					
+
 					if ( nField11 != ColumnValue::NO_NULLS )
 					{
 						try
@@ -445,7 +445,7 @@ namespace
                             {
                                 if ( _xPrimaryKeyColumns->hasByName(_rName) )
                                     nField11 = ColumnValue::NO_NULLS;
-                                
+
                             }
                             else
                             {
@@ -526,7 +526,7 @@ Reference<XPropertySet> createSDBCXColumn(const Reference<XPropertySet>& _xTable
 	::rtl::OUString aSchema, aTable;
 	_xTable->getPropertyValue(rPropMap.getNameByIndex(PROPERTY_ID_SCHEMANAME))	>>= aSchema;
 	_xTable->getPropertyValue(rPropMap.getNameByIndex(PROPERTY_ID_NAME))		>>= aTable;
-  
+
     Reference<XNameAccess> xPrimaryKeyColumns = getPrimaryKeyColumns_throw(_xTable);
 
 	xProp = lcl_createSDBCXColumn(xPrimaryKeyColumns,_xConnection,aCatalog, aSchema, aTable, _rName,_rName,_bCase,_bQueryForInfo,_bIsAutoIncrement,_bIsCurrency,_nDataType);
@@ -642,7 +642,7 @@ Reference< XTablesSupplier> getDataDefinitionByURLAndConnection(
             _rxFactory->createInstance( ::rtl::OUString::createFromAscii("com.sun.star.sdbc.DriverManager") ),
             UNO_QUERY_THROW );
 	    Reference< XDataDefinitionSupplier > xSupp( xManager->getDriverByURL( _rsUrl ), UNO_QUERY );
-    	
+
 	    if ( xSupp.is() )
         {
 		    xTablesSup = xSupp->getDataDefinitionByConnection( _xConnection );
@@ -747,8 +747,8 @@ sal_Int32 getTablePrivileges(const Reference< XDatabaseMetaData>& _xMetaData,
 		static ::rtl::OUString sNotSupportedState = ::rtl::OUString::createFromAscii("IM001");
 		// some drivers don't support any privileges so we assume that we are allowed to do all we want :-)
 		if(e.SQLState == sNotSupportedState)
-			nPrivileges |=	Privilege::DROP			| 
-							Privilege::REFERENCE	| 
+			nPrivileges |=	Privilege::DROP			|
+							Privilege::REFERENCE	|
 							Privilege::ALTER		|
 							Privilege::CREATE		|
 							Privilege::READ			|
@@ -807,7 +807,7 @@ bool isEmbeddedInDatabase( const Reference< XInterface >& _rxComponent, Referenc
 	try
 	{
 		Reference< XModel > xModel = lcl_getXModel( _rxComponent );
-    	
+
 		if ( xModel.is() )
 		{
 			Sequence< PropertyValue > aArgs = xModel->getArgs();
@@ -838,7 +838,7 @@ bool isEmbeddedInDatabase( const Reference< XInterface >& _rxComponent, Referenc
 	}
 	catch(Exception&)
 	{
-		// not intereseted in 
+		// not intereseted in
 	}
     return bIsEmbedded;
 }
@@ -875,7 +875,7 @@ sal_Int32 DBTypeConversion::convertUnicodeString( const ::rtl::OUString& _rSourc
             "$string$", _rSource,
             "$charset$",  lcl_getEncodingName( _eEncoding )
         );
-        
+
         throw SQLException(
             sMessage,
             NULL,

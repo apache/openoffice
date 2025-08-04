@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -241,7 +241,7 @@ void SAL_CALL SfxScriptLibraryContainer::writeLibraryElement
 
 Any SAL_CALL SfxScriptLibraryContainer::importLibraryElement
 	( const Reference < XNameContainer >& xLib,
-	  const OUString& aElementName, const OUString& aFile, 
+	  const OUString& aElementName, const OUString& aFile,
 	  const uno::Reference< io::XInputStream >& xInStream )
 {
 	Any aRetAny;
@@ -1003,7 +1003,7 @@ sal_Bool SfxScriptLibraryContainer::implLoadPasswordLibrary
 							throw io::IOException(); // read access denied, seems to be impossible
 
 						Reference< XNameContainer > xLib( pLib );
-			            Any aAny = importLibraryElement( xLib, 
+			            Any aAny = importLibraryElement( xLib,
 										aElementName, aSourceStreamName,
 									   	xInStream );
 			            if( pLib->hasByName( aElementName ) )
@@ -1109,9 +1109,9 @@ sal_Bool SfxScriptLibraryContainer::implLoadPasswordLibrary
 									throw io::IOException(); // read access denied, seems to be impossible
 
 								Reference< XNameContainer > xLib( pLib );
-			                    Any aAny = importLibraryElement( xLib, 
-												aElementName, 
-												aSourceStreamName, 
+			                    Any aAny = importLibraryElement( xLib,
+												aElementName,
+												aSourceStreamName,
 												xInStream );
 			                    if( pLib->hasByName( aElementName ) )
                                 {
@@ -1275,7 +1275,7 @@ bool SAL_CALL SfxScriptLibrary::isLibraryElementValid( ::com::sun::star::uno::An
 IMPLEMENT_FORWARD_XINTERFACE2( SfxScriptLibrary, SfxLibrary, SfxScriptLibrary_BASE );
 IMPLEMENT_FORWARD_XTYPEPROVIDER2( SfxScriptLibrary, SfxLibrary, SfxScriptLibrary_BASE );
 
-script::ModuleInfo SAL_CALL 
+script::ModuleInfo SAL_CALL
 SfxScriptLibrary::getModuleInfo( const ::rtl::OUString& ModuleName ) throw (NoSuchElementException, WrappedTargetException, RuntimeException)
 {
     if ( !hasModuleInfo( ModuleName ) )

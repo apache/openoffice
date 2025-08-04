@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -145,7 +145,7 @@ protected:
                                        Sequence<sal_Int16 >& OutParamIndex,
                                        Sequence< Any >& OutParam);
 	// Is used for OleObjectFactory service
-	virtual Any invokeWithDispIdComTlb(const OUString& sFuncName, 
+	virtual Any invokeWithDispIdComTlb(const OUString& sFuncName,
                                        const Sequence< Any >& Params,
                                        Sequence< sal_Int16 >& OutParamIndex,
                                        Sequence< Any >& OutParam);
@@ -189,15 +189,15 @@ protected:
         used. The interface is kept in the instance of this class.
      */
 	ITypeInfo*	getTypeInfo();
-	
+
 	/** Returns the DISPID for a function or property name. If true is returned then
 		id contains a valid DISPID.
 	*/
 	bool getDispid(const OUString& sFuncName, DISPID * id);
-    
+
 	/** Gets the element type in a VARIANT like style. E.g. if desc->lptdesc contains
 		a VT_PTR than it is replaced by VT_BYREF and VT_SAFEARRAY is replaced by VT_ARRAY
-		If the TYPEDESC describes an SAFEARRAY then varType is a combination of VT_ARRAY 
+		If the TYPEDESC describes an SAFEARRAY then varType is a combination of VT_ARRAY
 		and the element type.
 		The argument desc must be obtained from FUNCDESC::lprgelemdescParam[i].tdesc where
 		FUNCDESC was obtained from the ITypeInfo belonging to wrapped IDispatch.
@@ -212,10 +212,10 @@ protected:
 
     /** Returns a FUNCDESC structure which contains type information about the
         current XInvocation::invoke call. The FUNCDESC either describes a method,
-        a property put or a property get operation. 
+        a property put or a property get operation.
         It uses the types  com.sun.star.bridge.oleautomation.PropertyPutArgument
         which can be
-        contained in the sequence of in-arguments of invoke to determine if the call is 
+        contained in the sequence of in-arguments of invoke to determine if the call is
         a property put or property get operation.
         If no adequate FUNCDESC was found, an IllegalArgumentException is thrown.
         Therefore it is safe to assume that the returned FUNCDESC* is not NULL.

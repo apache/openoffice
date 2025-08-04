@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,8 +41,8 @@ class Gradient;
 
 /* Definition of internal::TransparencyGroupActionFactory class */
 
-namespace cppcanvas 
-{ 
+namespace cppcanvas
+{
     namespace internal
     {
         struct OutDevState;
@@ -64,8 +64,8 @@ namespace cppcanvas
             text layout) is Canvas-dependent.
          */
         class TransparencyGroupActionFactory
-        { 
-        public: 
+        {
+        public:
             /** Create new transparency group action.
 
             	@param rGroupMtf
@@ -88,12 +88,12 @@ namespace cppcanvas
              */
             static ActionSharedPtr createTransparencyGroupAction( MtfAutoPtr&					rGroupMtf,
                                                                   const Renderer::Parameters& 	rParms,
-                                                                  const ::basegfx::B2DPoint& 	rDstPoint,  
-                                                                  const ::basegfx::B2DVector& 	rDstSize,  
+                                                                  const ::basegfx::B2DPoint& 	rDstPoint,
+                                                                  const ::basegfx::B2DVector& 	rDstSize,
                                                                   double 						nAlpha,
-                                                                  const CanvasSharedPtr&		rCanvas, 
-                                                                  const OutDevState& 			rState ); 
-            
+                                                                  const CanvasSharedPtr&		rCanvas,
+                                                                  const OutDevState& 			rState );
+
             /** Create new transparency group action.
 
             	@param rGroupMtf
@@ -118,11 +118,11 @@ namespace cppcanvas
             static ActionSharedPtr createTransparencyGroupAction( MtfAutoPtr&					rGroupMtf,
                                                                   GradientAutoPtr&				rAlphaGradient,
                                                                   const Renderer::Parameters&	rParms,
-                                                                  const ::basegfx::B2DPoint& 	rDstPoint,  
-                                                                  const ::basegfx::B2DVector& 	rDstSize,  
-                                                                  const CanvasSharedPtr&		rCanvas, 
+                                                                  const ::basegfx::B2DPoint& 	rDstPoint,
+                                                                  const ::basegfx::B2DVector& 	rDstSize,
+                                                                  const CanvasSharedPtr&		rCanvas,
                                                                   const OutDevState& 			rState );
-            
+
         private:
             // static factory, disable big four
             TransparencyGroupActionFactory();
@@ -130,7 +130,7 @@ namespace cppcanvas
             TransparencyGroupActionFactory(const TransparencyGroupActionFactory&);
             TransparencyGroupActionFactory& operator=( const TransparencyGroupActionFactory& );
         };
-    } 
+    }
 }
 
 #endif /*_CPPCANVAS_TRANSPARENCYGROUPACTION_HXX */

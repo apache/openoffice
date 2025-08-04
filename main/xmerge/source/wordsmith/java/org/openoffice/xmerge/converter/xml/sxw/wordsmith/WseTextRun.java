@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,16 +53,16 @@ import java.awt.Color;
  *  @author   David Proulx
  */
 class WseTextRun extends Wse {
-    
+
     /**  Font specifier.  This is an index into the font table. */
     private byte fontIndex = 0;
     private String fontName = null;
-    
+
     /**  Size of the font. */
     private byte fontSize = 0;
-    
-    /** 
-     *  Color of the font.  This is an index into the color table. 
+
+    /**
+     *  Color of the font.  This is an index into the color table.
      *  High nibble is background color index, low nibble is font color
      *  index.
      */
@@ -72,8 +72,8 @@ class WseTextRun extends Wse {
      *  Reference to color table for color lookups.
      */
     private WseColorTable ct;
-    
-    /** 
+
+    /**
      *  The modifiers for the text run.  (Mostly) Bitwise flags. The "_TOKEN"
      *  values are not yet implemented in this converter.  They may not even
      *  be implemented in WordSmith yet.
@@ -91,7 +91,7 @@ class WseTextRun extends Wse {
     final public static int BOOKMARK_TOKEN   = 0x81;
     final public static int ANNOTATION_TOKEN = 0x82;
     final public static int LINK_TOKEN       = 0x83;
-    
+
     /**  The actual text. */
     private String text;
 
@@ -107,7 +107,7 @@ class WseTextRun extends Wse {
      *  @param ft   The font table.
      *  @param ct   The color Table.
      */
-    public WseTextRun(String txt, TextStyle t, StyleCatalog sc, 
+    public WseTextRun(String txt, TextStyle t, StyleCatalog sc,
                       WseFontTable ft, WseColorTable ct) {
 
         this.sc = sc;
@@ -115,17 +115,17 @@ class WseTextRun extends Wse {
 
         TextStyle ts = (TextStyle)t.getResolved();
 
-        if (ts.isSet(TextStyle.BOLD) && ts.getAttribute(TextStyle.BOLD)) 
+        if (ts.isSet(TextStyle.BOLD) && ts.getAttribute(TextStyle.BOLD))
             modifiers |= BOLD;
-        if (ts.isSet(TextStyle.ITALIC) && ts.getAttribute(TextStyle.ITALIC)) 
+        if (ts.isSet(TextStyle.ITALIC) && ts.getAttribute(TextStyle.ITALIC))
             modifiers |= ITALIC;
-        if (ts.isSet(TextStyle.UNDERLINE) && ts.getAttribute(TextStyle.UNDERLINE)) 
+        if (ts.isSet(TextStyle.UNDERLINE) && ts.getAttribute(TextStyle.UNDERLINE))
             modifiers |= UNDERLINE;
-        if (ts.isSet(TextStyle.STRIKETHRU) && ts.getAttribute(TextStyle.STRIKETHRU)) 
+        if (ts.isSet(TextStyle.STRIKETHRU) && ts.getAttribute(TextStyle.STRIKETHRU))
             modifiers |= STRIKETHRU;
-        if (ts.isSet(TextStyle.SUPERSCRIPT) && ts.getAttribute(TextStyle.SUPERSCRIPT)) 
+        if (ts.isSet(TextStyle.SUPERSCRIPT) && ts.getAttribute(TextStyle.SUPERSCRIPT))
             modifiers |= SUPERSCRIPT;
-        if (ts.isSet(TextStyle.SUBSCRIPT) && ts.getAttribute(TextStyle.SUBSCRIPT)) 
+        if (ts.isSet(TextStyle.SUBSCRIPT) && ts.getAttribute(TextStyle.SUBSCRIPT))
             modifiers |= SUBSCRIPT;
 
         fontSize = (byte)(ts.getFontSize() * 2);
@@ -136,52 +136,52 @@ class WseTextRun extends Wse {
             fontIndex = (byte)ft.getFontIndex(fontName);
         }
 
-        // Figure out the color index.  
+        // Figure out the color index.
         Color c = t.getFontColor();
-        if (c == null) 
+        if (c == null)
             c = Color.black;
         colorIndex = (byte)ct.findColor(c, true);
         c = t.getBackgroundColor();
         if (c == null)
             c = Color.white;
         colorIndex |= (byte)(ct.findColor(c, false) << 4);
-        
-        text = txt;  
-    }    
-    
-  
+
+        text = txt;
+    }
+
+
     /**
      *  Standard constructor for use when going from WordSmith to DOM.
-     * 
+     *
      *  @param dataArray   <code>byte</code> array.
      *  @param startIndex  The start index.
      *  @param ft          The font table.
      *  @param ct          The color table.
      */
-    public WseTextRun(byte dataArray[], int startIndex, WseFontTable ft, 
+    public WseTextRun(byte dataArray[], int startIndex, WseFontTable ft,
                       WseColorTable ct) {
-        
+
         this.ct = ct;
 
         startIndex++;  // Skip the leading "1"
-        
+
         int textLen = ((dataArray[startIndex] << 8)
                       | (dataArray[startIndex+1] & 0xFF));
         startIndex += 2;
-        
+
         fontIndex = dataArray[startIndex++];
         if (ft != null)
             fontName = ft.getFontName(fontIndex);
-        
+
         fontSize = dataArray[startIndex++];
-        
+
         colorIndex = dataArray[startIndex++];
         modifiers = dataArray[startIndex++];
-        
+
         text = new String(dataArray, startIndex, textLen);
         startIndex += textLen;  // skip the text
     }
-    
+
 
     /**
      *  Given a <code>byte</code> sequence, assumed to be a text run,
@@ -189,25 +189,25 @@ class WseTextRun extends Wse {
      *
      *  @param  dataArray   <code>byte</code> array.
      *  @param  startIndex  The start index
-     * 
+     *
      *  @return  The index of the first <code>byte</code> past the
      *           text run.
      */
     public static int computeNewIndex(byte dataArray[], int startIndex) {
-        
+
         startIndex++;  // Skip the leading "1"
-        
+
         int textLen = ((dataArray[startIndex] << 8)
         | (dataArray[startIndex+1] & 0xFF));
         startIndex += 2;
-        
+
         startIndex += 4;  // skip attributes
         //        text = new String(dataArray, startIndex, textLen);
         startIndex += textLen;  // skip the text
         return startIndex;
     }
-    
-    
+
+
     /**
      *  Return true if the sequence starting at
      *  <code>dataArray[startIndex]</code> is a valid text run.
@@ -230,8 +230,8 @@ class WseTextRun extends Wse {
      */
     int getByteCount() {
         return text.length() + 7;
-    }    
-    
+    }
+
 
     /**
      *  Return an <code>byte</code> array representing this text run.
@@ -252,8 +252,8 @@ class WseTextRun extends Wse {
         System.arraycopy(txtBytes, 0, b, 7, textLen);
         return b;
     }
-    
-    
+
+
     /**
      *  Return the text of this run.
      *
@@ -262,8 +262,8 @@ class WseTextRun extends Wse {
     public String getText() {
         return text;
     }
-    
-    
+
+
     /**
      *  Return a <code>TextStyle</code> that reflects the formatting
      *  of this run.
@@ -276,11 +276,11 @@ class WseTextRun extends Wse {
         if ((modifiers & BOLD) != 0) mod |= TextStyle.BOLD;
         if ((modifiers & ITALIC) != 0) mod |= TextStyle.ITALIC;
         if ((modifiers & UNDERLINE) != 0) mod |= TextStyle.UNDERLINE;
-        if ((modifiers & STRIKETHRU) != 0) 
+        if ((modifiers & STRIKETHRU) != 0)
             mod |= TextStyle.STRIKETHRU;
         if ((modifiers & SUPERSCRIPT) != 0) mod |= TextStyle.SUPERSCRIPT;
         if ((modifiers & SUBSCRIPT) != 0) mod |= TextStyle.SUBSCRIPT;
-        
+
         int mask = TextStyle.BOLD | TextStyle.ITALIC
         | TextStyle.UNDERLINE
         | TextStyle.STRIKETHRU | TextStyle.SUPERSCRIPT
@@ -298,7 +298,7 @@ class WseTextRun extends Wse {
 
         return x;
     }
- 
+
 
     /**
      * Display debug information.

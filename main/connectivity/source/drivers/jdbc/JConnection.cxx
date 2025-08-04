@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -274,7 +274,7 @@ java_sql_Connection::java_sql_Connection( const java_sql_Driver& _rDriver )
     ,m_bParameterSubstitution(sal_False)
     ,m_bIgnoreDriverPrivileges(sal_True)
     ,m_bIgnoreCurrency(sal_False)
-{      
+{
 }
 // -----------------------------------------------------------------------------
 java_sql_Connection::~java_sql_Connection()
@@ -284,7 +284,7 @@ java_sql_Connection::~java_sql_Connection()
 	{
 		SDBThreadAttach t;
         clearObject(*t.pEnv);
-		
+
 		{
 			if ( m_pDriverobject )
 				t.pEnv->DeleteGlobalRef( m_pDriverobject );
@@ -586,7 +586,7 @@ Any SAL_CALL java_sql_Connection::getWarnings(  ) throw(SQLException, RuntimeExc
         aWarning.SQLState = aAsException.SQLState;
         aWarning.ErrorCode = aAsException.ErrorCode;
         aWarning.NextException = aAsException.NextException;
-        
+
 		return makeAny( aWarning );
 	}
 
@@ -725,7 +725,7 @@ void java_sql_Connection::loadDriverFromProperties( const ::rtl::OUString& _sDri
 
                     if( t.pEnv && m_pDriverobject )
                         m_pDriverobject = t.pEnv->NewGlobalRef( m_pDriverobject );
-                    
+
                     {
                         jclass tempClass = t.pEnv->GetObjectClass(m_pDriverobject);
                         if ( m_pDriverobject )
@@ -756,7 +756,7 @@ void java_sql_Connection::loadDriverFromProperties( const ::rtl::OUString& _sDri
             *this
         );
 	}
-	
+
 	enableAutoRetrievingEnabled( bAutoRetrievingEnabled );
 	setAutoRetrievingStatement( sGeneratedValueStatement );
 }

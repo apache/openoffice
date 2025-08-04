@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -63,11 +63,11 @@ class ExpandContentProviderImpl : protected MutexHolder, public t_impl_helper
     uno::Reference< util::XMacroExpander > m_xMacroExpander;
     OUString expandUri(
         uno::Reference< ucb::XContentIdentifier > const & xIdentifier ) const;
-    
+
 protected:
     inline void check() const;
     virtual void SAL_CALL disposing();
-    
+
 public:
     inline ExpandContentProviderImpl(
         uno::Reference< uno::XComponentContext > const & xComponentContext )
@@ -78,7 +78,7 @@ public:
               uno::UNO_QUERY_THROW )
         {}
     virtual ~ExpandContentProviderImpl() throw ();
-    
+
     // XServiceInfo
     virtual OUString SAL_CALL getImplementationName()
         throw (uno::RuntimeException);
@@ -86,7 +86,7 @@ public:
         throw (uno::RuntimeException);
     virtual uno::Sequence< OUString > SAL_CALL getSupportedServiceNames()
         throw (uno::RuntimeException);
-    
+
     // XContentProvider
     virtual uno::Reference< ucb::XContent > SAL_CALL queryContent(
         uno::Reference< ucb::XContentIdentifier > const & xIdentifier )
@@ -210,7 +210,7 @@ uno::Reference< ucb::XContent > ExpandContentProviderImpl::queryContent(
 {
     check();
     OUString uri( expandUri( xIdentifier ) );
-    
+
     ::ucbhelper::Content ucb_content;
     if (::ucbhelper::Content::create(
             uri, uno::Reference< ucb::XCommandEnvironment >(), ucb_content ))

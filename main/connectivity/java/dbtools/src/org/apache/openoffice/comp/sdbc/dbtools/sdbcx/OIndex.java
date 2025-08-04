@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package org.apache.openoffice.comp.sdbc.dbtools.sdbcx;
@@ -40,7 +40,7 @@ import com.sun.star.sdbcx.XDataDescriptorFactory;
 import com.sun.star.uno.Type;
 
 public class OIndex extends ODescriptor implements XColumnsSupplier, XDataDescriptorFactory, XServiceInfo {
-    
+
     private static final String[] services = {
             "com.sun.star.sdbcx.Index"
     };
@@ -51,7 +51,7 @@ public class OIndex extends ODescriptor implements XColumnsSupplier, XDataDescri
     protected boolean isClustered;
     private OTable table;
     private OContainer columns;
-    
+
     public OIndex(String name, boolean isCaseSensitive, String catalogName,
             boolean isUnique, boolean isPrimaryKeyIndex, boolean isClustered, List<String> columnNames, OTable table) throws ElementExistException {
         super(name, isCaseSensitive);
@@ -63,7 +63,7 @@ public class OIndex extends ODescriptor implements XColumnsSupplier, XDataDescri
         columns = new OIndexColumnContainer(this, this, columnNames);
         registerProperties();
     }
-    
+
     private void registerProperties() {
         registerProperty(PropertyIds.CATALOG.name, PropertyIds.CATALOG.id, Type.STRING, (short)PropertyAttribute.READONLY,
                 new PropertyGetter() {
@@ -96,16 +96,16 @@ public class OIndex extends ODescriptor implements XColumnsSupplier, XDataDescri
     }
 
     // XServiceInfo
-    
+
     public String getImplementationName() {
         return getClass().getName();
     }
-    
+
     @Override
     public String[] getSupportedServiceNames() {
         return services.clone();
     }
-    
+
     @Override
     public boolean supportsService(String serviceName) {
         for (String service : getSupportedServiceNames()) {
@@ -115,9 +115,9 @@ public class OIndex extends ODescriptor implements XColumnsSupplier, XDataDescri
         }
         return false;
     }
-    
+
     // XDataDescriptorFactory
-    
+
     @Override
     public XPropertySet createDataDescriptor() {
         SdbcxIndexDescriptor descriptor = new SdbcxIndexDescriptor(isCaseSensitive());
@@ -128,12 +128,12 @@ public class OIndex extends ODescriptor implements XColumnsSupplier, XDataDescri
         }
         return descriptor;
     }
-    
+
     @Override
     public XNameAccess getColumns() {
         return columns;
     }
-    
+
     public OTable getTable() {
         return table;
     }

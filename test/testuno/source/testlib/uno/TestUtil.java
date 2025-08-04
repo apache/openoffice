@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -39,15 +39,15 @@ import testlib.uno.CellInfo;
  */
 
 public class TestUtil {
-	
+
 	private static int colLimit = 1024;
 	private static int rowLimit = 1048576;
 	private static Random random = new Random();
 
 	public TestUtil() {
-		
+
 	}
-	
+
 	/**
 	 * Generate a random cell index
 	 * @return cellIndex    column: cellIndex[0]  row: cellIndex[1]
@@ -55,29 +55,29 @@ public class TestUtil {
 	 */
 	public static CellInfo randCell() throws Exception {
 		CellInfo cInfo = new CellInfo();
-		
+
 		cInfo.setCol(random.nextInt(colLimit));
 		cInfo.setRow(random.nextInt(rowLimit));
-		
+
 		return cInfo;
 	}
-	
+
 	/**
 	 * Generate a random cell index, in the limited range
-	 * @param colTop  The max column limit 
+	 * @param colTop  The max column limit
 	 * @param rowTop  The max row limit
 	 * @return
 	 * @throws Exception
 	 */
 	public static CellInfo randCell(int colTop, int rowTop) throws Exception {
 		CellInfo cInfo = new CellInfo();
-		
+
 		cInfo.setCol(random.nextInt(colTop));
 		cInfo.setRow(random.nextInt(rowTop));
-		
+
 		return cInfo;
 	}
-	
+
 	/**
 	 * Generate a font size number in limited range
 	 * @param max  The font size in Excel2003 is [1,409]
@@ -96,9 +96,9 @@ public class TestUtil {
 
 		return size;
 	}
-	
+
 	/**
-	 * Generate a series of font size number 
+	 * Generate a series of font size number
 	 * @param listSize
 	 * @param max
 	 * @return
@@ -111,7 +111,7 @@ public class TestUtil {
 		}
 		return sizeList;
 	}
-	
+
 	/**
 	 * Generate a random decimal RGB color number
 	 * @return
@@ -122,9 +122,9 @@ public class TestUtil {
 		int g = random.nextInt(256);
 		int b = random.nextInt(256);
 
-		return r * 65536 + g * 256 + b; 
+		return r * 65536 + g * 256 + b;
 	}
-	
+
 	/**
 	 * Generate a random decimal RGB color number in limited color space
 	 * @param rMax  The R value limit, get a value in [0, rMax]
@@ -138,9 +138,9 @@ public class TestUtil {
 		int g = random.nextInt(gMax + 1) % 256;
 		int b = random.nextInt(bMax + 1) % 256;
 
-		return r * 65536 + g * 256 + b; 
+		return r * 65536 + g * 256 + b;
 	}
-	
+
 	/**
 	 * Generate a series of decimal RGB color number
 	 * @param size Set the quantity of random color value generated into the array
@@ -152,10 +152,10 @@ public class TestUtil {
 		for (int i = 0; i < size; i++) {
 			colorList[i] = randColor();
 		}
-		
+
 		return colorList;
 	}
-	
+
 	/**
 	 * Add "=" before a string
 	 * @param expression
@@ -164,7 +164,7 @@ public class TestUtil {
 	public static String toFormula(String expression) {
 		return "=" + expression;
 	}
-	
+
 	/**
 	 * Use specific operator to connect a series of number
 	 * @param number
@@ -173,7 +173,7 @@ public class TestUtil {
 	 */
 	public static String connectByOperator(double[] number, String operator) throws Exception{
 		StringBuffer buffer = new StringBuffer();
-		
+
 		for (int i = 0; i < number.length; i++) {
 			buffer.append(number[i]);
 			if (i < number.length - 1) {
@@ -182,7 +182,7 @@ public class TestUtil {
 		}
 		return buffer.toString();
 	}
-		
+
 	/**
 	 * Print the properties list of specific object to console
 	 * @param obj   The instance of the object of which the property list you want to get. e.g. instance of XCell.
@@ -192,14 +192,14 @@ public class TestUtil {
 		// Get the property set of specific object
 		XPropertySet xPropertySet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, obj);
 		XPropertySetInfo xPropertySetInfo = xPropertySet.getPropertySetInfo();
-		 
+
 	    // Get all properties info
 	    Property[] aProps = xPropertySetInfo.getProperties();
 
 	    for (int i = 0; i < aProps.length; i++) {
 	        // Print name and type of each property
 	    	System.out.print("[" + (i + 1) + "]: Name=\"" + aProps[i].Name + "\" " + aProps[i].Type.toString() + " (");
-	 
+
 	        // Get flag. pay attention to the READONLY properties
 	        short nAttribs = aProps[i].Attributes;
 	        if ((nAttribs & PropertyAttribute.MAYBEVOID) != 0)
@@ -218,10 +218,10 @@ public class TestUtil {
 	            System.out.print("MAYBEDEFAULT|");
 	        if ((nAttribs & PropertyAttribute.REMOVEABLE) != 0)
 	            System.out.print("REMOVEABLE|");
-	        
+
 	        System.out.println(")");
         }
 
 	}
-	
+
 }

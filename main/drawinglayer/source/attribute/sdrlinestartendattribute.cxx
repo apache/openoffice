@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -48,15 +48,15 @@ namespace drawinglayer
 			unsigned								mbEndActive : 1L;		// end of Line is active
 			unsigned								mbStartCentered : 1L;	// Line is centered on line start point
 			unsigned								mbEndCentered : 1L;		// Line is centered on line end point
-		
+
 			ImpSdrLineStartEndAttribute(
-				const basegfx::B2DPolyPolygon& rStartPolyPolygon, 
+				const basegfx::B2DPolyPolygon& rStartPolyPolygon,
                 const basegfx::B2DPolyPolygon& rEndPolyPolygon,
-				double fStartWidth, 
-                double fEndWidth, 
-                bool bStartActive, 
-                bool bEndActive, 
-                bool bStartCentered, 
+				double fStartWidth,
+                double fEndWidth,
+                bool bStartActive,
+                bool bEndActive,
+                bool bStartCentered,
                 bool bEndCentered)
 			:	mnRefCount(0),
 		    	maStartPolyPolygon(rStartPolyPolygon),
@@ -91,7 +91,7 @@ namespace drawinglayer
 				    && isStartCentered() == rCandidate.isStartCentered()
 				    && isEndCentered() == rCandidate.isEndCentered());
             }
-            
+
             static ImpSdrLineStartEndAttribute* get_global_default()
             {
                 static ImpSdrLineStartEndAttribute* pDefault = 0;
@@ -99,13 +99,13 @@ namespace drawinglayer
                 if(!pDefault)
                 {
                     pDefault = new ImpSdrLineStartEndAttribute(
-			            basegfx::B2DPolyPolygon(), 
+			            basegfx::B2DPolyPolygon(),
                         basegfx::B2DPolyPolygon(),
-			            0.0, 
-                        0.0, 
-                        false, 
-                        false, 
-                        false, 
+			            0.0,
+                        0.0,
+                        false,
+                        false,
+                        false,
                         false);
 
                     // never delete; start with RefCount 1, not 0
@@ -117,13 +117,13 @@ namespace drawinglayer
 		};
 
         SdrLineStartEndAttribute::SdrLineStartEndAttribute(
-			const basegfx::B2DPolyPolygon& rStartPolyPolygon, 
+			const basegfx::B2DPolyPolygon& rStartPolyPolygon,
             const basegfx::B2DPolyPolygon& rEndPolyPolygon,
-			double fStartWidth, 
-            double fEndWidth, 
-            bool bStartActive, 
-            bool bEndActive, 
-            bool bStartCentered, 
+			double fStartWidth,
+            double fEndWidth,
+            bool bStartActive,
+            bool bEndActive,
+            bool bStartCentered,
             bool bEndCentered)
 		:	mpSdrLineStartEndAttribute(new ImpSdrLineStartEndAttribute(
                 rStartPolyPolygon, rEndPolyPolygon, fStartWidth, fEndWidth, bStartActive, bEndActive, bStartCentered, bEndCentered))
@@ -171,7 +171,7 @@ namespace drawinglayer
 				{
 					delete mpSdrLineStartEndAttribute;
 				}
-				
+
 				mpSdrLineStartEndAttribute = rCandidate.mpSdrLineStartEndAttribute;
 				mpSdrLineStartEndAttribute->mnRefCount++;
 			}
@@ -194,44 +194,44 @@ namespace drawinglayer
 			return (*rCandidate.mpSdrLineStartEndAttribute == *mpSdrLineStartEndAttribute);
 		}
 
-		const basegfx::B2DPolyPolygon& SdrLineStartEndAttribute::getStartPolyPolygon() const 
-        { 
-            return mpSdrLineStartEndAttribute->getStartPolyPolygon(); 
+		const basegfx::B2DPolyPolygon& SdrLineStartEndAttribute::getStartPolyPolygon() const
+        {
+            return mpSdrLineStartEndAttribute->getStartPolyPolygon();
         }
 
-        const basegfx::B2DPolyPolygon& SdrLineStartEndAttribute::getEndPolyPolygon() const 
-        { 
-            return mpSdrLineStartEndAttribute->getEndPolyPolygon(); 
+        const basegfx::B2DPolyPolygon& SdrLineStartEndAttribute::getEndPolyPolygon() const
+        {
+            return mpSdrLineStartEndAttribute->getEndPolyPolygon();
         }
 
-        double SdrLineStartEndAttribute::getStartWidth() const 
-        { 
-            return mpSdrLineStartEndAttribute->getStartWidth(); 
+        double SdrLineStartEndAttribute::getStartWidth() const
+        {
+            return mpSdrLineStartEndAttribute->getStartWidth();
         }
 
-        double SdrLineStartEndAttribute::getEndWidth() const 
-        { 
-            return mpSdrLineStartEndAttribute->getEndWidth(); 
+        double SdrLineStartEndAttribute::getEndWidth() const
+        {
+            return mpSdrLineStartEndAttribute->getEndWidth();
         }
 
-        bool SdrLineStartEndAttribute::isStartActive() const 
-        { 
-            return mpSdrLineStartEndAttribute->isStartActive(); 
+        bool SdrLineStartEndAttribute::isStartActive() const
+        {
+            return mpSdrLineStartEndAttribute->isStartActive();
         }
 
-        bool SdrLineStartEndAttribute::isEndActive() const 
-        { 
-            return mpSdrLineStartEndAttribute->isEndActive(); 
+        bool SdrLineStartEndAttribute::isEndActive() const
+        {
+            return mpSdrLineStartEndAttribute->isEndActive();
         }
 
-        bool SdrLineStartEndAttribute::isStartCentered() const 
-        { 
-            return mpSdrLineStartEndAttribute->isStartCentered(); 
+        bool SdrLineStartEndAttribute::isStartCentered() const
+        {
+            return mpSdrLineStartEndAttribute->isStartCentered();
         }
 
-        bool SdrLineStartEndAttribute::isEndCentered() const 
-        { 
-            return mpSdrLineStartEndAttribute->isEndCentered(); 
+        bool SdrLineStartEndAttribute::isEndCentered() const
+        {
+            return mpSdrLineStartEndAttribute->isEndCentered();
         }
     } // end of namespace attribute
 } // end of namespace drawinglayer

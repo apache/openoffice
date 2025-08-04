@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
- 
+
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_filter.hxx"
@@ -46,17 +46,17 @@ PDFInteractionHandler::~PDFInteractionHandler()
 }
 
 
-void SAL_CALL PDFInteractionHandler::handle( const Reference< task::XInteractionRequest >& i_xRequest ) 
+void SAL_CALL PDFInteractionHandler::handle( const Reference< task::XInteractionRequest >& i_xRequest )
 	throw (RuntimeException)
 {
     handleInteractionRequest( i_xRequest );
 }
 
-sal_Bool SAL_CALL PDFInteractionHandler::handleInteractionRequest( const Reference< task::XInteractionRequest >& i_xRequest ) 
+sal_Bool SAL_CALL PDFInteractionHandler::handleInteractionRequest( const Reference< task::XInteractionRequest >& i_xRequest )
 	throw (RuntimeException)
 {
     sal_Bool bHandled = sal_False;
-    
+
     Any aRequest( i_xRequest->getRequest() );
     task::PDFExportException aExc;
     if( aRequest >>= aExc )
@@ -84,7 +84,7 @@ OUString PDFInteractionHandler_getImplementationName ()
 
 #define SERVICE_NAME "com.sun.star.filter.pdfexport.PDFExportInteractionHandler"
 
-sal_Bool SAL_CALL PDFInteractionHandler_supportsService( const OUString& ServiceName ) 
+sal_Bool SAL_CALL PDFInteractionHandler_supportsService( const OUString& ServiceName )
 	throw (RuntimeException)
 {
     return ServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM ( SERVICE_NAME ) );
@@ -111,7 +111,7 @@ Reference< XInterface > SAL_CALL PDFInteractionHandler_createInstance( const Ref
 
 // -----------------------------------------------------------------------------
 
-OUString SAL_CALL PDFInteractionHandler::getImplementationName() 
+OUString SAL_CALL PDFInteractionHandler::getImplementationName()
 	throw (RuntimeException)
 {
 	return PDFInteractionHandler_getImplementationName();
@@ -119,7 +119,7 @@ OUString SAL_CALL PDFInteractionHandler::getImplementationName()
 
 // -----------------------------------------------------------------------------
 
-sal_Bool SAL_CALL PDFInteractionHandler::supportsService( const OUString& rServiceName ) 
+sal_Bool SAL_CALL PDFInteractionHandler::supportsService( const OUString& rServiceName )
 	throw (RuntimeException)
 {
     return PDFInteractionHandler_supportsService( rServiceName );

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #ifndef SC_PROPERTYPANEL_APPEARANCE_HXX
@@ -29,11 +29,11 @@
 
 class FixedText;
 namespace svx { class ToolboxButtonColorUpdater; }
-namespace sc { namespace sidebar { 
+namespace sc { namespace sidebar {
     class CellLineStylePopup;
     class CellBorderStylePopup;
     class CellLineStyleControl;
-    class CellBorderUpdater; 
+    class CellBorderUpdater;
 }}
 class ToolBox;
 class CheckBox;
@@ -167,8 +167,8 @@ private:
     bool                                    mbBLTR : 1;
 
     // popups
-    svx::sidebar::ColorPopup                maFillColorPopup; 
-    svx::sidebar::ColorPopup                maLineColorPopup; 
+    svx::sidebar::ColorPopup                maFillColorPopup;
+    svx::sidebar::ColorPopup                maLineColorPopup;
     ::boost::scoped_ptr< CellLineStylePopup > mpCellLineStylePopup;
     ::boost::scoped_ptr< CellBorderStylePopup > mpCellBorderStylePopup;
 
@@ -182,11 +182,11 @@ private:
     DECL_LINK(TbxLineStyleSelectHdl, ToolBox*);
     DECL_LINK(CBOXGridShowClkHdl, void*);
 
-    // for fill color picker 
+    // for fill color picker
     svx::sidebar::PopupControl* CreateFillColorPopupControl(svx::sidebar::PopupContainer* pParent);
     void SetFillColor(const String& rsColorName, const Color aColor);
 
-    // for line color picker 
+    // for line color picker
     svx::sidebar::PopupControl* CreateLineColorPopupControl(svx::sidebar::PopupContainer* pParent);
     void SetLineColor(const String& rsColorName, const Color aColor);
 

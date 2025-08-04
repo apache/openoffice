@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -114,7 +114,7 @@ void ConfigurationClassifier::PartitionResources (
     OSL_TRACE("copying resource ids to C2-C1\r");
 #endif
     CopyResources(aC2minusC1, mxConfiguration2, maC2minusC1);
-    
+
     // Process the unique resources that belong to both configurations.
     ResourceIdVector::const_iterator iResource;
     for (iResource=aC1andC2.begin(); iResource!=aC1andC2.end(); ++iResource)
@@ -150,7 +150,7 @@ void ConfigurationClassifier::ClassifyResources (
         for (sal_Int32 j=0; j<nL2 && !bFound; ++j)
             if (aA1[i]->getResourceURL().equals(aA2[j]->getResourceURL()))
                 bFound = true;
-        
+
         if (bFound)
             rS1andS2.push_back(aA1[i]);
         else
@@ -166,7 +166,7 @@ void ConfigurationClassifier::ClassifyResources (
         for (sal_Int32 i=0; i<nL1 && !bFound; ++i)
             if (aA2[j]->getResourceURL().equals(aA1[i]->getResourceURL()))
                 bFound = true;
-        
+
         if ( ! bFound)
             rS2minusS1.push_back(aA2[j]);
     }
@@ -191,7 +191,7 @@ void ConfigurationClassifier::CopyResources (
                 OUString(),
                 AnchorBindingMode_INDIRECT));
         const sal_Int32 nL (aBoundResources.getLength());
-        
+
         rTarget.reserve(rTarget.size() + 1 + nL);
         rTarget.push_back(*iResource);
 
@@ -200,7 +200,7 @@ void ConfigurationClassifier::CopyResources (
             OUStringToOString(FrameworkHelper::ResourceIdToString(*iResource),
                 RTL_TEXTENCODING_UTF8).getStr());
 #endif
-        
+
         const Reference<XResourceId>* aA = aBoundResources.getConstArray();
         for (sal_Int32 i=0; i<nL; ++i)
         {

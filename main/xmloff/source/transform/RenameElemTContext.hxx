@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -28,7 +28,7 @@
 #include "TransformerContext.hxx"
 
 
-class XMLRenameElemTransformerContext : public XMLTransformerContext 
+class XMLRenameElemTransformerContext : public XMLTransformerContext
 {
 	::rtl::OUString m_aElemQName;
 	::rtl::OUString m_aAttrQName;
@@ -39,7 +39,7 @@ public:
 
 	// The following consutructor renames the element names "rQName"
 	// to bPrefix/eToken
-	XMLRenameElemTransformerContext( XMLTransformerBase& rTransformer, 
+	XMLRenameElemTransformerContext( XMLTransformerBase& rTransformer,
 						   const ::rtl::OUString& rQName,
 		   				   sal_uInt16 nPrefix,
 		   				   ::xmloff::token::XMLTokenEnum eToken	);
@@ -47,7 +47,7 @@ public:
 	// The following consutructor renames the element names "rQName"
 	// to bPrefix/eToken and adds an attribute nAPrefix/eAToken that has
 	// the value eVToken.
-	XMLRenameElemTransformerContext( XMLTransformerBase& rTransformer, 
+	XMLRenameElemTransformerContext( XMLTransformerBase& rTransformer,
 						   const ::rtl::OUString& rQName,
 		   				   sal_uInt16 nPrefix,
 		   				   ::xmloff::token::XMLTokenEnum eToken,

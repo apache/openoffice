@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -44,7 +44,7 @@ import com.sun.star.lang.IndexOutOfBoundsException;
 import com.sun.star.uno.UnoRuntime;
 
 
-class TextAttributeDialog 
+class TextAttributeDialog
     extends TextActionDialog
 {
     public TextAttributeDialog (XAccessibleContext xContext)
@@ -57,7 +57,7 @@ class TextAttributeDialog
     protected void Layout ()
     {
         super.Layout ();
-        
+
         maForeground = Color.black;
         maBackground = Color.white;
 
@@ -68,28 +68,28 @@ class TextAttributeDialog
         maUnderlineCheckBox = new JCheckBox ("underline");
         maItalicsCheckBox = new JCheckBox ("italics");
 
-        JButton aForegroundButton = new JButton ("Foreground", 
+        JButton aForegroundButton = new JButton ("Foreground",
             new TextAttributeDialog.ColorIcon(true));
-        aForegroundButton.addActionListener (new ActionListener() 
+        aForegroundButton.addActionListener (new ActionListener()
             {
-                public void actionPerformed (ActionEvent aEvent) 
-                { 
+                public void actionPerformed (ActionEvent aEvent)
+                {
                     maForeground = JColorChooser.showDialog (
-                        TextAttributeDialog.this, 
-                        "Select Foreground Color", 
+                        TextAttributeDialog.this,
+                        "Select Foreground Color",
                         maForeground);
                 }
             } );
-           
-        JButton aBackgroundButton = new JButton("Background", 
+
+        JButton aBackgroundButton = new JButton("Background",
             new TextAttributeDialog.ColorIcon(false));
-        aBackgroundButton.addActionListener (new ActionListener() 
+        aBackgroundButton.addActionListener (new ActionListener()
             {
                 public void actionPerformed (ActionEvent eEvent)
-                { 
+                {
                     maBackground = JColorChooser.showDialog(
-                        TextAttributeDialog.this, 
-                        "Select Background Color", 
+                        TextAttributeDialog.this,
+                        "Select Background Color",
                         maBackground);
                 }
             } );
@@ -127,14 +127,14 @@ class TextAttributeDialog
         aSequence[5] = new PropertyValue();
         aSequence[5].Name = "CharBackTransparent";
         aSequence[5].Value = new Boolean (false);
-        
+
         return xText.setAttributes (
-            GetSelectionStart(), 
+            GetSelectionStart(),
             GetSelectionEnd(),
             aSequence);
     }
 
-    class ColorIcon 
+    class ColorIcon
         implements Icon
     {
         public ColorIcon(boolean bWhich) { bForeground = bWhich; }
@@ -154,21 +154,21 @@ class TextAttributeDialog
             else
                 return maBackground;
         }
-        
+
         private static final int nHeight = 16;
         private static final int nWidth = 16;
         private boolean bForeground;
     }
 
-          
 
 
-    private JCheckBox 
-        maBoldCheckBox, 
-        maUnderlineCheckBox, 
+
+    private JCheckBox
+        maBoldCheckBox,
+        maUnderlineCheckBox,
         maItalicsCheckBox;
-    private Color 
-        maForeground, 
+    private Color
+        maForeground,
         maBackground;
 
 }

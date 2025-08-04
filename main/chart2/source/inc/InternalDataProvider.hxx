@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -75,12 +75,12 @@ class InternalDataProvider :
 {
 public:
     explicit InternalDataProvider(const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > & _xContext);
-    
+
     // #120559# allow handing over a default for data orientation (DataInColumns) that will
     // be used when no data is available
-    explicit InternalDataProvider( 
-        const ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XChartDocument > & xChartDoc, 
-        bool bConnectToModel, 
+    explicit InternalDataProvider(
+        const ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XChartDocument > & xChartDoc,
+        bool bConnectToModel,
         bool bDefaultDataInColumns );
     explicit InternalDataProvider( const InternalDataProvider & rOther );
 	virtual ~InternalDataProvider();
@@ -155,7 +155,7 @@ public:
     // ____ XDateCategories ____
     virtual ::com::sun::star::uno::Sequence< double > SAL_CALL getDateCategories() throw (::com::sun::star::uno::RuntimeException);
     virtual void SAL_CALL setDateCategories( const ::com::sun::star::uno::Sequence< double >& rDates ) throw (::com::sun::star::uno::RuntimeException);
-    
+
     // ____ XAnyDescriptionAccess ____
     virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any > > SAL_CALL
         getAnyRowDescriptions() throw (::com::sun::star::uno::RuntimeException);
@@ -165,7 +165,7 @@ public:
         throw (::com::sun::star::uno::RuntimeException);
     virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any > > SAL_CALL
         getAnyColumnDescriptions() throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setAnyColumnDescriptions( 
+    virtual void SAL_CALL setAnyColumnDescriptions(
         const ::com::sun::star::uno::Sequence<
         ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any > >& aColumnDescriptions )
         throw (::com::sun::star::uno::RuntimeException);
@@ -179,7 +179,7 @@ public:
         throw (::com::sun::star::uno::RuntimeException);
     virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< ::rtl::OUString > > SAL_CALL
         getComplexColumnDescriptions() throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setComplexColumnDescriptions( 
+    virtual void SAL_CALL setComplexColumnDescriptions(
         const ::com::sun::star::uno::Sequence<
         ::com::sun::star::uno::Sequence< ::rtl::OUString > >& aColumnDescriptions )
         throw (::com::sun::star::uno::RuntimeException);
@@ -218,7 +218,7 @@ public:
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloneable > SAL_CALL createClone()
         throw (::com::sun::star::uno::RuntimeException);
 	// ::com::sun::star::lang::XInitialization:
-    virtual void SAL_CALL initialize(const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any > & aArguments) 
+    virtual void SAL_CALL initialize(const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any > & aArguments)
 		throw (::com::sun::star::uno::RuntimeException, ::com::sun::star::uno::Exception);
 
 private:

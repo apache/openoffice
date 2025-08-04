@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,29 +7,29 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
-#ifndef __com_sun_star_drawing_RotationDescriptor_idl__ 
-#define __com_sun_star_drawing_RotationDescriptor_idl__ 
- 
- 
-//============================================================================= 
- 
- module com {  module sun {  module star {  module drawing {  
- 
-//============================================================================= 
- 
+#ifndef __com_sun_star_drawing_RotationDescriptor_idl__
+#define __com_sun_star_drawing_RotationDescriptor_idl__
+
+
+//=============================================================================
+
+ module com {  module sun {  module star {  module drawing {
+
+//=============================================================================
+
 /** This abstract service specifies the general characteristics of an optional
 	rotation and shearing for a <type>Shape</type>.
 
@@ -39,9 +39,9 @@
 	@deprecated
  */
 published service RotationDescriptor
-{ 
-	//------------------------------------------------------------------------- 
-	 
+{
+	//-------------------------------------------------------------------------
+
 	/** This is the angle for rotation of this <type>Shape</type>.
 		The shape is rotated counter-clockwise around the center
 		of the bounding box.
@@ -52,21 +52,21 @@ published service RotationDescriptor
 		property of the service <type>Shape</type> instead.
 		@deprecated
 	*/
-	[property] long RotateAngle; 
-  
-	//------------------------------------------------------------------------- 
-	 
+	[property] long RotateAngle;
+
+	//-------------------------------------------------------------------------
+
 	/** This is the amount of shearing for this <type>Shape</type>.
 		The shape is sheared counter-clockwise around the center
 		of the bounding box
 
 		@deprecated
 	*/
-	[optional, property] long ShearAngle;  
-}; 
- 
-//============================================================================= 
- 
-}; }; }; };  
- 
-#endif 
+	[optional, property] long ShearAngle;
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

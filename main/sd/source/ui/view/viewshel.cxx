@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -678,7 +678,7 @@ void ViewShell::Command(const CommandEvent& rCEvt, ::sd::Window* pWin)
    			{
 				bConsumed = GetView()->getSmartTags().Command(rCEvt);
 		    }
-			
+
 			if( !bConsumed && HasCurrentFunction())
 		    {
 		        GetCurrentFunction()->Command(rCEvt);
@@ -815,9 +815,9 @@ void ViewShell::SetupRulers (void)
 }
 
 const SfxPoolItem* ViewShell::GetNumBulletItem(SfxItemSet& aNewAttr, sal_uInt16& nNumItemId)
-{	
+{
 	const SfxPoolItem* pTmpItem = NULL;
-	
+
 	if(aNewAttr.GetItemState(nNumItemId, sal_False, &pTmpItem) == SFX_ITEM_SET)
 	{
 		return pTmpItem;
@@ -837,7 +837,7 @@ const SfxPoolItem* ViewShell::GetNumBulletItem(SfxItemSet& aNewAttr, sal_uInt16&
      			{
 				const SdrMarkList& rMarkList = mpView->GetMarkedObjectList();
 				const sal_uInt32 nCount = rMarkList.GetMarkCount();
-            
+
 				for(sal_uInt32 nNum = 0; nNum < nCount; nNum++)
 				{
 					SdrObject* pObj = rMarkList.GetMark(nNum)->GetMarkedSdrObj();
@@ -858,7 +858,7 @@ const SfxPoolItem* ViewShell::GetNumBulletItem(SfxItemSet& aNewAttr, sal_uInt16&
 
 			const SvxNumBulletItem *pItem = NULL;
 			if(bOutliner)
-			{				
+			{
 				SfxStyleSheetBasePool* pSSPool = mpView->GetDocSh()->GetStyleSheetPool();
 				String aStyleName((SdResId(STR_LAYOUT_OUTLINE)));
 				aStyleName.AppendAscii( RTL_CONSTASCII_STRINGPARAM( " 1" ) );
@@ -871,7 +871,7 @@ const SfxPoolItem* ViewShell::GetNumBulletItem(SfxItemSet& aNewAttr, sal_uInt16&
 				pItem = (SvxNumBulletItem*) aNewAttr.GetPool()->GetSecondaryPool()->GetPoolDefaultItem(EE_PARA_NUMBULLET);
 
 			aNewAttr.Put(*pItem, EE_PARA_NUMBULLET);
-		
+
 			if(bTitle && aNewAttr.GetItemState(EE_PARA_NUMBULLET,sal_True) == SFX_ITEM_ON )
 			{
 				SvxNumBulletItem* pItem = (SvxNumBulletItem*)aNewAttr.GetItem(EE_PARA_NUMBULLET,sal_True);
@@ -910,7 +910,7 @@ void ViewShell::Resize (void)
 
     if (mpParentWindow == NULL)
         return;
-    
+
     // Make sure that the new size is not degenerate.
     const Size aSize (mpParentWindow->GetSizePixel());
 	if (aSize.Width()==0 || aSize.Height()==0)
@@ -1635,7 +1635,7 @@ void ViewShell::SwitchViewFireFocus(::com::sun::star::uno::Reference< ::com::sun
 {
 	if (xAcc.get())
 	{
-		::accessibility::AccessibleDocumentViewBase* pBase = static_cast< ::accessibility::AccessibleDocumentViewBase* >(xAcc.get());	
+		::accessibility::AccessibleDocumentViewBase* pBase = static_cast< ::accessibility::AccessibleDocumentViewBase* >(xAcc.get());
 		if (pBase)
 		{
 			pBase->SwitchViewActivated();
@@ -1649,7 +1649,7 @@ void ViewShell::SwitchActiveViewFireFocus()
 		SwitchViewFireFocus(mpContentWindow->GetAccessible(sal_False));
 	}
 }
-// move these two methods from DrawViewShell. 
+// move these two methods from DrawViewShell.
 void ViewShell::fireSwitchCurrentPage(sal_Int32 pageIndex)
 {
 	GetViewShellBase().GetDrawController().fireSwitchCurrentPage(pageIndex);

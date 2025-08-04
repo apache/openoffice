@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -54,25 +54,25 @@ import org.openoffice.setup.InstallData;
 public class ChooseUninstallationComponents extends JPanel implements MouseListener, KeyListener, TreeSelectionListener {
 
     private JTree componentTree;
-    private PanelLabel descriptionLabel;    
+    private PanelLabel descriptionLabel;
     private PanelLabel sizeLabel;
-    
+
     private String sizeString;
-    
+
     public ChooseUninstallationComponents() {
 
         InstallData data = InstallData.getInstance();
 
         setLayout(new BorderLayout());
         setBorder(new EmptyBorder(new Insets(10, 10, 10, 10)));
-              
+
         String titleText    = ResourceManager.getString("String_ChooseComponents1");
         String subtitleText = ResourceManager.getString("String_ChooseUninstallationComponents2");
         PanelTitle titleBox = new PanelTitle(titleText, subtitleText, 2, 40);
         // PanelTitle titleBox = new PanelTitle(titleText, subtitleText);
         titleBox.addVerticalStrut(20);
         add(titleBox, BorderLayout.NORTH);
-                
+
         DefaultMutableTreeNode root = SetupDataProvider.createTree();
 
         componentTree = new JTree(root);
@@ -85,30 +85,30 @@ public class ChooseUninstallationComponents extends JPanel implements MouseListe
         componentTree.getSelectionModel().setSelectionMode(TreeSelectionModel.SINGLE_TREE_SELECTION);
         componentTree.addTreeSelectionListener(this);
         // if ( data.useRtl() ) { componentTree.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT); }
-       
+
         String BorderTitle = ResourceManager.getString("String_ChooseComponents3");
         TitledBorder PanelBorder = BorderFactory.createTitledBorder(BorderTitle);
-        
+
         BorderLayout PanelLayout = new BorderLayout();
         PanelLayout.setHgap(20);
         JPanel DescriptionPanel = new JPanel();
         DescriptionPanel.setBorder(PanelBorder);
         DescriptionPanel.setLayout(PanelLayout);
-        
+
         String DescriptionText = "";
-        descriptionLabel = new PanelLabel(DescriptionText, 3, 20);        
+        descriptionLabel = new PanelLabel(DescriptionText, 3, 20);
         sizeString = ResourceManager.getString("String_ChooseComponents4");
         sizeLabel = new PanelLabel(sizeString, 1, 5);
         if ( data.useRtl() ) { descriptionLabel.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT); }
-        
+
         DescriptionPanel.add(descriptionLabel, BorderLayout.CENTER);
         DescriptionPanel.add(sizeLabel, BorderLayout.EAST);
         if ( data.useRtl() ) { DescriptionPanel.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT); }
-        
+
         add(new JScrollPane(componentTree), BorderLayout.CENTER);
         add(DescriptionPanel, BorderLayout.SOUTH);
     }
-    
+
     private void updateNode(DefaultMutableTreeNode node) {
         if (node != null) {
             DisplayPackageDescription nodeInfo = (DisplayPackageDescription)node.getUserObject();
@@ -116,12 +116,12 @@ public class ChooseUninstallationComponents extends JPanel implements MouseListe
 
             DefaultTreeModel model = (DefaultTreeModel)componentTree.getModel();
             model.nodeChanged(node);
-            
+
             descriptionLabel.setText(nodeInfo.getDescription());
             sizeLabel.setText(sizeString + nodeInfo.getSize());
         }
     }
- 
+
     /**
      * Implement the MouseListener Interface
      */
@@ -136,14 +136,14 @@ public class ChooseUninstallationComponents extends JPanel implements MouseListe
         if ((selPath != null) && (componentTree.getPathBounds(selPath).getX() + 20 >= event.getX())) {
             updateNode((DefaultMutableTreeNode)selPath.getLastPathComponent());
         }
-    } 
+    }
     public void mouseReleased(MouseEvent e) {
     }
-    
+
     /**
      * Implement the KeyListener Interface
      */
-    public void keyPressed(KeyEvent event)  {   
+    public void keyPressed(KeyEvent event)  {
     }
     public void keyReleased(KeyEvent event) {
     }
@@ -155,9 +155,9 @@ public class ChooseUninstallationComponents extends JPanel implements MouseListe
             }
         }
     }
-    
-    /** 
-     * Implement the TreeSelectionListener Interface. 
+
+    /**
+     * Implement the TreeSelectionListener Interface.
      */
     public void valueChanged(TreeSelectionEvent event) {
         DefaultMutableTreeNode node = (DefaultMutableTreeNode)componentTree.getLastSelectedPathComponent();

@@ -142,9 +142,9 @@ protected:
 
 private:
 	// This method is only allowed for sdr::properties::TextProperties
-	SVX_DLLPRIVATE SdrOutliner* GetTextEditOutliner() const 
-	{ 
-		return pEdtOutl; 
+	SVX_DLLPRIVATE SdrOutliner* GetTextEditOutliner() const
+	{
+		return pEdtOutl;
 	}
 
 	// This method is only allowed for sdr::properties::TextProperties
@@ -255,11 +255,11 @@ private:
 	// #101029#: Extracted from ImpGetDrawOutliner()
     SVX_DLLPRIVATE void ImpInitDrawOutliner( SdrOutliner& rOutl ) const;
 	// #101029#: Extracted from Paint()
-    SVX_DLLPRIVATE void ImpSetupDrawOutlinerForPaint( FASTBOOL 		bContourFrame, 
-                                       SdrOutliner& 	rOutliner, 
-                                       Rectangle& 		rTextRect, 
-                                       Rectangle& 		rAnchorRect, 
-                                       Rectangle& 		rPaintRect, 
+    SVX_DLLPRIVATE void ImpSetupDrawOutlinerForPaint( FASTBOOL 		bContourFrame,
+                                       SdrOutliner& 	rOutliner,
+                                       Rectangle& 		rTextRect,
+                                       Rectangle& 		rAnchorRect,
+                                       Rectangle& 		rPaintRect,
                                        Fraction& 		aFitXKorreg ) const;
 	SVX_DLLPRIVATE SdrObject* ImpConvertContainedTextToSdrPathObjs(bool bToPoly) const;
 	SVX_DLLPRIVATE void ImpLinkAnmeldung();
@@ -441,7 +441,7 @@ public:
 
 	virtual sal_uInt32 GetHdlCount() const;
 	virtual SdrHdl* GetHdl(sal_uInt32 nHdlNum) const;
-	
+
     // special drag methods
     virtual bool hasSpecialDrag() const;
 	virtual bool applySpecialDrag(SdrDragStat& rDrag);
@@ -570,19 +570,19 @@ public:
 	//////////////////////////////////////////////////////////////////////////////
 	// text primitive decomposition helpers
 	void impDecomposeContourTextPrimitive(
-		drawinglayer::primitive2d::Primitive2DSequence& rTarget, 
+		drawinglayer::primitive2d::Primitive2DSequence& rTarget,
 		const drawinglayer::primitive2d::SdrContourTextPrimitive2D& rSdrContourTextPrimitive,
 		const drawinglayer::geometry::ViewInformation2D& aViewInformation) const;
 	void impDecomposePathTextPrimitive(
-		drawinglayer::primitive2d::Primitive2DSequence& rTarget, 
+		drawinglayer::primitive2d::Primitive2DSequence& rTarget,
 		const drawinglayer::primitive2d::SdrPathTextPrimitive2D& rSdrPathTextPrimitive,
 		const drawinglayer::geometry::ViewInformation2D& aViewInformation) const;
 	void impDecomposeBlockTextPrimitive(
-		drawinglayer::primitive2d::Primitive2DSequence& rTarget, 
+		drawinglayer::primitive2d::Primitive2DSequence& rTarget,
 		const drawinglayer::primitive2d::SdrBlockTextPrimitive2D& rSdrBlockTextPrimitive,
 		const drawinglayer::geometry::ViewInformation2D& aViewInformation) const;
 	void impDecomposeStretchTextPrimitive(
-		drawinglayer::primitive2d::Primitive2DSequence& rTarget, 
+		drawinglayer::primitive2d::Primitive2DSequence& rTarget,
 		const drawinglayer::primitive2d::SdrStretchTextPrimitive2D& rSdrStretchTextPrimitive,
 		const drawinglayer::geometry::ViewInformation2D& aViewInformation) const;
 

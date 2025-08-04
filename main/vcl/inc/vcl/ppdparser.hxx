@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -178,7 +178,7 @@ private:
 
     // fonts
     const PPDKey*                       		m_pFontList;
-    
+
     // translations
     PPDTranslator*                              m_pTranslator;
 
@@ -189,7 +189,7 @@ private:
     void parseOpenUI( const ByteString& rLine );
     void parseConstraint( const ByteString& rLine );
     void parse( std::list< ByteString >& rLines );
-    
+
     String handleTranslation( const ByteString& i_rString, bool i_bIsGlobalized );
 
     static void scanPPDDir( const String& rDir );
@@ -234,15 +234,15 @@ public:
 
     // match the best paper for width and height
     String          matchPaper( int nWidth, int nHeight ) const;
-    
+
     bool getMargins( const String& rPaperName,
                      int &rLeft, int& rRight,
                      int &rUpper, int& rLower ) const;
     // values in pt
     // returns true if paper found
-    
+
     // values int pt
-    
+
     String          getDefaultInputSlot() const;
     int             getInputSlots() const
     { return m_pInputSlots ? m_pInputSlots->countValues() : 0; }
@@ -274,8 +274,8 @@ public:
                                        String& rEncoding,
                                        String& rCharset ) const;
     String          getFont( int ) const;
-    
-    
+
+
     rtl::OUString   translateKey( const rtl::OUString& i_rKey,
                                   const com::sun::star::lang::Locale& i_rLocale = com::sun::star::lang::Locale() ) const;
     rtl::OUString   translateOption( const rtl::OUString& i_rKey,

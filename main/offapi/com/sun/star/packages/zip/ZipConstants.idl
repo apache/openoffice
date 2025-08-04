@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,40 +7,40 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
 #ifndef __com_sun_star_package_zip_ZipConstants_idl__
 #define __com_sun_star_package_zip_ZipConstants_idl__
- 
 
 
-//============================================================================= 
- 
+
+//=============================================================================
+
 module com {  module sun {  module star {   module packages {  module zip {
- 
-//============================================================================= 
- 
+
+//=============================================================================
+
 /** defines the constants used by the ZIP interfaces.
  */
 published constants ZipConstants
-{ 
+{
 	//-------------------------------------------------------------------------
-    /** Compression method for the deflate algorithm (the only one currently 
+    /** Compression method for the deflate algorithm (the only one currently
 	   supported).
 	 */
     const short DEFLATED = 8;
-	
+
 	//-------------------------------------------------------------------------
     /** Compression level for no compression.
 	 */
@@ -62,8 +62,8 @@ published constants ZipConstants
     const short DEFAULT_COMPRESSION = -1;
 
 	//-------------------------------------------------------------------------
-    /** Compression strategy best used for data consisting mostly of small 
-	  values with a somewhat random distribution. Forces more Huffman 
+    /** Compression strategy best used for data consisting mostly of small
+	  values with a somewhat random distribution. Forces more Huffman
 	  coding and less string matching.
 	 */
     const short FILTERED = 1;
@@ -299,9 +299,9 @@ published constants ZipConstants
 	 */
 	const short ENDCOM = 20;
 
-}; 
-//============================================================================= 
- 
+};
+//=============================================================================
+
 }; }; }; }; };
- 
-#endif 
+
+#endif

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package com.sun.star.sdbcx.comp.postgresql;
@@ -67,7 +67,7 @@ public class PostgresqlResultSet extends ComponentBase
     private XColumnLocate implColumnLocate;
     private XPropertySet implPropertySet;
     private Object statement;
-    
+
     public PostgresqlResultSet(XResultSet impl, Object statement) {
         this.impl = impl;
         this.implRow = UnoRuntime.queryInterface(XRow.class, impl);
@@ -81,9 +81,9 @@ public class PostgresqlResultSet extends ComponentBase
         this.implPropertySet = UnoRuntime.queryInterface(XPropertySet.class, impl);
         this.statement = statement;
     }
-    
+
     // XComponent:
-    
+
     @Override
     protected void postDisposing() {
         try {
@@ -91,15 +91,15 @@ public class PostgresqlResultSet extends ComponentBase
         } catch (SQLException sqlException) {
         }
     };
-    
+
     // XCloseable:
-    
+
     public void close() throws SQLException {
         dispose();
     }
 
     // XResultSet:
-    
+
     public boolean absolute(int arg0) throws SQLException {
         return impl.absolute(arg0);
     }
@@ -173,7 +173,7 @@ public class PostgresqlResultSet extends ComponentBase
     }
 
     // XRow:
-    
+
     public XArray getArray(int arg0) throws SQLException {
         return implRow.getArray(arg0);
     }
@@ -255,17 +255,17 @@ public class PostgresqlResultSet extends ComponentBase
     }
 
     // XResultSetMetaDataSupplier:
-    
+
     public XResultSetMetaData getMetaData() throws SQLException {
         return new PostgresqlResultSetMetaData(implResultSetMetaDataSupplier.getMetaData());
     }
-    
+
     // XCancellable:
 
     public void cancel() {
         implCancellable.cancel();
     }
-    
+
     // XWarningsSupplier:
 
     public void clearWarnings() throws SQLException {
@@ -276,8 +276,8 @@ public class PostgresqlResultSet extends ComponentBase
         return implWarningsSupplier.getWarnings();
     }
 
-    // XResultSetUpdate: 
-    
+    // XResultSetUpdate:
+
     public void cancelRowUpdates() throws SQLException {
         implResultSetUpdate.cancelRowUpdates();
     }
@@ -303,7 +303,7 @@ public class PostgresqlResultSet extends ComponentBase
     }
 
     // XRowUpdate:
-    
+
     public void updateBinaryStream(int arg0, XInputStream arg1, int arg2) throws SQLException {
         implRowUpdate.updateBinaryStream(arg0, arg1, arg2);
     }
@@ -373,13 +373,13 @@ public class PostgresqlResultSet extends ComponentBase
     }
 
     // XColumnLocate:
-    
+
     public int findColumn(String arg0) throws SQLException {
         return implColumnLocate.findColumn(arg0);
     }
 
     // XPropertySet:
-    
+
     public void addPropertyChangeListener(String arg0, XPropertyChangeListener arg1) throws UnknownPropertyException, WrappedTargetException {
         implPropertySet.addPropertyChangeListener(arg0, arg1);
     }

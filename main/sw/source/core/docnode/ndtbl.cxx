@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -327,7 +327,7 @@ sal_Bool SwNodes::InsBoxen( SwTableNode* pTblNd,
 		pPrvBox = new SwTableBox( pBoxFmt, *pSttNd, pLine );
 
         SwTableBoxes & rTabBoxes = pLine->GetTabBoxes();
-        sal_uInt16 nRealInsPos = nInsPos + n;        
+        sal_uInt16 nRealInsPos = nInsPos + n;
         if (nRealInsPos > rTabBoxes.Count())
             nRealInsPos = rTabBoxes.Count();
 
@@ -1240,23 +1240,23 @@ SwNodeRange * SwNodes::ExpandRangeForTableBox(const SwNodeRange & rRange)
 {
     SwNodeRange * pResult = NULL;
     bool bChanged = false;
-    
+
 	SwNodeIndex aNewStart = rRange.aStart;
 	SwNodeIndex aNewEnd = rRange.aEnd;
-	
+
 	SwNodeIndex aEndIndex = rRange.aEnd;
 	SwNodeIndex aIndex = rRange.aStart;
-	
+
 	while (aIndex < aEndIndex)
 	{
 		SwNode& rNode = aIndex.GetNode();
-		
+
 		if (rNode.IsStartNode())
 		{
             // advance aIndex to the end node of this start node
             SwNode * pEndNode = rNode.EndOfSectionNode();
             aIndex = *pEndNode;
-			
+
             if (aIndex > aNewEnd)
             {
                 aNewEnd = aIndex;
@@ -1267,34 +1267,34 @@ SwNodeRange * SwNodes::ExpandRangeForTableBox(const SwNodeRange & rRange)
 		{
             SwNode * pStartNode = rNode.StartOfSectionNode();
 			SwNodeIndex aStartIndex = *pStartNode;
-			
+
 			if (aStartIndex < aNewStart)
             {
 				aNewStart = aStartIndex;
                 bChanged = true;
             }
 		}
-		
+
 		if (aIndex < aEndIndex)
-			++aIndex;	
+			++aIndex;
 	}
-    
+
     SwNode * pNode = &aIndex.GetNode();
     while (pNode->IsEndNode())
     {
         SwNode * pStartNode = pNode->StartOfSectionNode();
         SwNodeIndex aStartIndex(*pStartNode);
-        aNewStart = aStartIndex;        
+        aNewStart = aStartIndex;
         aNewEnd = aIndex;
         bChanged = true;
-        
+
         ++aIndex;
         pNode = &aIndex.GetNode();
     }
-    
+
     if (bChanged)
         pResult = new SwNodeRange(aNewStart, aNewEnd);
-    
+
     return pResult;
 }
 

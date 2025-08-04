@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -62,7 +62,7 @@ SHL1VERSIONMAP=testsmgr_cpnt.map
 
 # --- Application 1 ------------------------------------------------
 APP1TARGET= $(TARGET1)
-APP1OBJS=   $(OBJ)$/testloader.obj 
+APP1OBJS=   $(OBJ)$/testloader.obj
 
 APP1STDLIBS= \
 		$(CPPULIB) 	\
@@ -83,13 +83,13 @@ APP2STDLIBS= \
 
 # --- Application 3 - testsmgr main ------------------------------------
 APP3TARGET=	$(TARGET3)
-APP3OBJS  =	$(OBJ)$/testsmgr.obj 
+APP3OBJS  =	$(OBJ)$/testsmgr.obj
 APP3STDLIBS= \
 		$(CPPULIB)	\
 		$(CPPUHELPERLIB) 	\
 		$(SALHELPERLIB) 	\
 		$(REGLIB) 	\
-		$(SALLIB) 	
+		$(SALLIB)
 
 .IF "$(GUI)"=="UNX"
 APP3STDLIBS+= -l$(SHL1TARGET)
@@ -100,7 +100,7 @@ APP3STDLIBS+= i$(SHL1TARGET).lib
 
 # --- Application 4 - testcorefl main ------------------------------------
 APP4TARGET=	$(TARGET4)
-APP4OBJS  = 	$(OBJ)$/testcorefl.obj 
+APP4OBJS  = 	$(OBJ)$/testcorefl.obj
 APP4STDLIBS= \
 		$(CPPULIB) 		\
 		$(CPPUHELPERLIB) 	\
@@ -108,7 +108,7 @@ APP4STDLIBS= \
 
 # --- Application 5 - testinvocation main ------------------------------------
 APP5TARGET= 	$(TARGET5)
-APP5OBJS  = 	$(OBJ)$/testiadapter.obj 
+APP5OBJS  = 	$(OBJ)$/testiadapter.obj
 APP5STDLIBS= \
 		$(CPPULIB) 		\
 		$(CPPUHELPERLIB) 	\
@@ -116,7 +116,7 @@ APP5STDLIBS= \
 
 # --- Application 6 - testitrosp main ------------------------------------
 APP6TARGET= 	$(TARGET6)
-APP6OBJS  = 	$(OBJ)$/testintrosp.obj 
+APP6OBJS  = 	$(OBJ)$/testintrosp.obj
 APP6STDLIBS= \
 		$(CPPULIB) 		\
 		$(CPPUHELPERLIB) 	\
@@ -125,7 +125,7 @@ APP6STDLIBS= \
 
 # --- Application 7 - testconv main ------------------------------------
 APP7TARGET= 	$(TARGET7)
-APP7OBJS  = 	$(OBJ)$/testconv.obj 
+APP7OBJS  = 	$(OBJ)$/testconv.obj
 APP7STDLIBS= \
 		$(CPPULIB) 		\
 		$(CPPUHELPERLIB) 	\
@@ -133,7 +133,7 @@ APP7STDLIBS= \
 
 # --- Application 8 - testproxyfac main ------------------------------------
 APP8TARGET= 	$(TARGET8)
-APP8OBJS  = 	$(OBJ)$/testproxyfac.obj 
+APP8OBJS  = 	$(OBJ)$/testproxyfac.obj
 APP8STDLIBS= \
 		$(CPPULIB) 		\
 		$(CPPUHELPERLIB) 	\
@@ -141,7 +141,7 @@ APP8STDLIBS= \
 
 # --- Application 9 - testproxyfac main ------------------------------------
 APP9TARGET= 	$(TARGET9)
-APP9OBJS  = 	$(OBJ)$/testsmgr2.obj 
+APP9OBJS  = 	$(OBJ)$/testsmgr2.obj
 APP9STDLIBS= \
 		$(CPPULIB) 		\
 		$(CPPUHELPERLIB) 	\

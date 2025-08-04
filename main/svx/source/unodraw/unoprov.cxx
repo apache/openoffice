@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -247,10 +247,10 @@ SfxItemPropertyMapEntry* ImplGetSvxGraphicObjectPropertyMap()
 		LINE_PROPERTIES
 		LINE_PROPERTIES_START_END
 		SHAPE_DESCRIPTOR_PROPERTIES
-        
+
         // #i118485# Full properties now, shear included
 		MISC_OBJ_PROPERTIES
-	
+
         LINKTARGET_PROPERTIES
 		SHADOW_PROPERTIES
 		TEXT_PROPERTIES
@@ -776,7 +776,7 @@ SfxItemPropertyMapEntry* ImplGetSvxTableShapePropertyMap()
 		{ MAP_CHAR_LEN(UNO_NAME_MISC_OBJ_MOVEPROTECT),	SDRATTR_OBJMOVEPROTECT, &::getBooleanCppuType(),0, 0},
 		{ MAP_CHAR_LEN(UNO_NAME_MISC_OBJ_SIZEPROTECT),	SDRATTR_OBJSIZEPROTECT, &::getBooleanCppuType(),0, 0},
 	    { MAP_CHAR_LEN(UNO_NAME_MISC_OBJ_BOUNDRECT),	OWN_ATTR_BOUNDRECT, &::getCppuType((const ::com::sun::star::awt::Rectangle*)0), ::com::sun::star::beans::PropertyAttribute::READONLY, 0},
-	    	//IAccessibility2 Implementation 2009-----, the name property of table should also be exported. 
+	    	//IAccessibility2 Implementation 2009-----, the name property of table should also be exported.
 		{ MAP_CHAR_LEN(UNO_NAME_MISC_OBJ_NAME), 		SDRATTR_OBJECTNAME				, &::getCppuType((const ::rtl::OUString*)0),	0,	0},
 		{ MAP_CHAR_LEN(UNO_NAME_MISC_OBJ_TITLE),		OWN_ATTR_MISC_OBJ_TITLE			, &::getCppuType((const ::rtl::OUString*)0),	0,	0},
 		{ MAP_CHAR_LEN(UNO_NAME_MISC_OBJ_DESCRIPTION),	OWN_ATTR_MISC_OBJ_DESCRIPTION	, &::getCppuType((const ::rtl::OUString*)0),	0,	0},

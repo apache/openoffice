@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -56,7 +56,7 @@ PropertySetContainer::~PropertySetContainer()
 
 // XInterface
 void SAL_CALL PropertySetContainer::acquire() throw ()
-{ 
+{
 	OWeakObject::acquire();
 }
 
@@ -65,26 +65,26 @@ void SAL_CALL PropertySetContainer::release() throw ()
 	OWeakObject::release();
 }
 
-Any SAL_CALL PropertySetContainer::queryInterface( const Type& rType ) 
+Any SAL_CALL PropertySetContainer::queryInterface( const Type& rType )
 throw ( RuntimeException )
 {
-	Any a = ::cppu::queryInterface( 
+	Any a = ::cppu::queryInterface(
 				rType ,
 				SAL_STATIC_CAST( XIndexContainer*, this ),
 				SAL_STATIC_CAST( XIndexReplace*, this ),
 				SAL_STATIC_CAST( XIndexAccess*, this ),
 				SAL_STATIC_CAST( XElementAccess*, this ) );
-	
+
 	if( a.hasValue() )
 	{
 		return a;
 	}
-		
+
 	return OWeakObject::queryInterface( rType );
 }
 
 // XIndexContainer
-void SAL_CALL PropertySetContainer::insertByIndex( sal_Int32 Index, const ::com::sun::star::uno::Any& Element ) 
+void SAL_CALL PropertySetContainer::insertByIndex( sal_Int32 Index, const ::com::sun::star::uno::Any& Element )
 	throw ( IllegalArgumentException, IndexOutOfBoundsException, WrappedTargetException, RuntimeException )
 {
 	ResetableGuard aGuard( m_aLock );
@@ -94,7 +94,7 @@ void SAL_CALL PropertySetContainer::insertByIndex( sal_Int32 Index, const ::com:
 	if ( nSize >= Index )
 	{
 		Reference< XPropertySet > aPropertySetElement;
-		
+
 		if ( Element >>= aPropertySetElement )
 		{
 			if ( nSize == Index )
@@ -108,7 +108,7 @@ void SAL_CALL PropertySetContainer::insertByIndex( sal_Int32 Index, const ::com:
 		}
 		else
 		{
-			throw IllegalArgumentException( 
+			throw IllegalArgumentException(
 				OUString( RTL_CONSTASCII_USTRINGPARAM( WRONG_TYPE_EXCEPTION )),
 				(OWeakObject *)this, 2 );
 		}
@@ -117,7 +117,7 @@ void SAL_CALL PropertySetContainer::insertByIndex( sal_Int32 Index, const ::com:
 		throw IndexOutOfBoundsException( OUString(), (OWeakObject *)this );
 }
 
-void SAL_CALL PropertySetContainer::removeByIndex( sal_Int32 Index ) 
+void SAL_CALL PropertySetContainer::removeByIndex( sal_Int32 Index )
 	throw ( IndexOutOfBoundsException, WrappedTargetException, RuntimeException )
 {
 	ResetableGuard aGuard( m_aLock );
@@ -133,20 +133,20 @@ void SAL_CALL PropertySetContainer::removeByIndex( sal_Int32 Index )
 }
 
 // XIndexReplace
-void SAL_CALL PropertySetContainer::replaceByIndex( sal_Int32 Index, const ::com::sun::star::uno::Any& Element ) 
+void SAL_CALL PropertySetContainer::replaceByIndex( sal_Int32 Index, const ::com::sun::star::uno::Any& Element )
 	throw ( IllegalArgumentException, IndexOutOfBoundsException, WrappedTargetException, RuntimeException)
 {
 	if ( (sal_Int32)m_aPropertySetVector.size() > Index )
 	{
 		Reference< XPropertySet > aPropertySetElement;
-		
+
 		if ( Element >>= aPropertySetElement )
 		{
 			m_aPropertySetVector[ Index ] = aPropertySetElement;
 		}
 		else
 		{
-			throw IllegalArgumentException( 
+			throw IllegalArgumentException(
 				OUString( RTL_CONSTASCII_USTRINGPARAM( WRONG_TYPE_EXCEPTION )),
 				(OWeakObject *)this, 2 );
 		}
@@ -156,15 +156,15 @@ void SAL_CALL PropertySetContainer::replaceByIndex( sal_Int32 Index, const ::com
 }
 
 // XIndexAccess
-sal_Int32 SAL_CALL PropertySetContainer::getCount() 
+sal_Int32 SAL_CALL PropertySetContainer::getCount()
 	throw ( RuntimeException )
 {
 	ResetableGuard aGuard( m_aLock );
-	
+
 	return m_aPropertySetVector.size();
 }
 
-Any SAL_CALL PropertySetContainer::getByIndex( sal_Int32 Index ) 
+Any SAL_CALL PropertySetContainer::getByIndex( sal_Int32 Index )
 	throw ( IndexOutOfBoundsException, WrappedTargetException, RuntimeException )
 {
 	ResetableGuard aGuard( m_aLock );
@@ -181,11 +181,11 @@ Any SAL_CALL PropertySetContainer::getByIndex( sal_Int32 Index )
 }
 
 // XElementAccess
-sal_Bool SAL_CALL PropertySetContainer::hasElements() 
+sal_Bool SAL_CALL PropertySetContainer::hasElements()
 	throw (::com::sun::star::uno::RuntimeException)
 {
 	ResetableGuard aGuard( m_aLock );
-	
+
 	return !( m_aPropertySetVector.empty() );
 }
 

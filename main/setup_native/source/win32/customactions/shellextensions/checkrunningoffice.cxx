@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -81,14 +81,14 @@ static std::_tstring GetMsiProperty( MSIHANDLE handle, const std::_tstring& sPro
 		LPTSTR buffer = reinterpret_cast<LPTSTR>(_alloca(nBytes));
 		ZeroMemory( buffer, nBytes );
 		MsiGetProperty(handle, sProperty.c_str(), buffer, &nChars);
-		result = buffer;			
+		result = buffer;
 	}
 
 	return	result;
 }
-	
+
 static inline bool IsSetMsiProperty(MSIHANDLE handle, const std::_tstring& sProperty)
-{   
+{
 	std::_tstring value = GetMsiProperty(handle, sProperty);
 	return (value.length() > 0);
 }
@@ -116,7 +116,7 @@ static BOOL MoveFileEx9x( LPCSTR lpExistingFileNameA, LPCSTR lpNewFileNameA, DWO
 
 		// Path names in WININIT.INI must be in short path name form
 
-		if ( 
+		if (
 			GetShortPathNameA( lpExistingFileNameA, szExistingFileNameA, MAX_PATH ) &&
 			(!lpNewFileNameA || GetShortPathNameA( lpNewFileNameA, szNewFileNameA, MAX_PATH ))
 			)
@@ -124,7 +124,7 @@ static BOOL MoveFileEx9x( LPCSTR lpExistingFileNameA, LPCSTR lpNewFileNameA, DWO
 			CHAR	szBuffer[32767];	// The buffer size must not exceed 32K
 			DWORD	dwBufLen = GetPrivateProfileSectionA( RENAME_SECTION, szBuffer, elementsof(szBuffer), WININIT_FILENAME );
 
-			CHAR	szRename[MAX_PATH];	// This is enough for at most to times 67 chracters
+			CHAR	szRename[MAX_PATH];	// This is enough for at most to times 67 characters
 			strcpy( szRename, szNewFileNameA );
 			strcat( szRename, "=" );
 			strcat( szRename, szExistingFileNameA );
@@ -176,7 +176,7 @@ extern "C" UINT __stdcall IsOfficeRunning( MSIHANDLE handle )
 	OSVERSIONINFO	osverinfo;
 	osverinfo.dwOSVersionInfoSize = sizeof(OSVERSIONINFO);
     GetVersionEx( &osverinfo );
-    
+
     // renaming the vcl resource doesn't work reliable with OS >= Windows Vista
     if (osverinfo.dwMajorVersion < 6 )
     {
@@ -233,12 +233,12 @@ extern "C" UINT __stdcall IsOfficeRunning( MSIHANDLE handle )
         // Property empty -> no office installed
         if ( sOfficeInstallPath.length() == 0 )
             return ERROR_SUCCESS;
-    
+
         std::_tstring sRenameSrc = sOfficeInstallPath + TEXT("program");
         std::_tstring sRenameDst = sOfficeInstallPath + TEXT("program_test");
-    
+
         bool bSuccess = MoveFile( sRenameSrc.c_str(), sRenameDst.c_str() );
-    
+
         if ( bSuccess )
         {
             MoveFile( sRenameDst.c_str(), sRenameSrc.c_str() );
@@ -252,14 +252,14 @@ extern "C" UINT __stdcall IsOfficeRunning( MSIHANDLE handle )
                 return ERROR_SUCCESS;
             if ( dwError == ERROR_PATH_NOT_FOUND )
                 return ERROR_SUCCESS;
-            
+
             // The destination folder should never exist, don't know what to do here
             if ( dwError == ERROR_ALREADY_EXISTS )
                 return ERROR_SUCCESS;
-            
-            if ( FormatMessage( 
-                FORMAT_MESSAGE_ALLOCATE_BUFFER | 
-                FORMAT_MESSAGE_FROM_SYSTEM | 
+
+            if ( FormatMessage(
+                FORMAT_MESSAGE_ALLOCATE_BUFFER |
+                FORMAT_MESSAGE_FROM_SYSTEM |
                 FORMAT_MESSAGE_IGNORE_INSERTS,
                 NULL,
                 GetLastError(),
@@ -273,7 +273,7 @@ extern "C" UINT __stdcall IsOfficeRunning( MSIHANDLE handle )
             }
             else
                 OutputDebugStringFormat( TEXT("Error Code %d: Unknown"), dwError );
-            
+
             MsiSetProperty( handle, TEXT("OFFICERUNS"), TEXT("1") );
             SetMsiErrorCode( MSI_ERROR_OFFICE_IS_RUNNING );
         }

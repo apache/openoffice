@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -245,7 +245,7 @@ ScPivotLayoutDlg::ScPivotLayoutDlg( SfxBindings* pB, SfxChildWindow* pCW, Window
 ScPivotLayoutDlg::~ScPivotLayoutDlg()
 {
     RemoveChildEventListener( LINK( this, ScPivotLayoutDlg, ChildEventListener ) );
-    
+
 	for( sal_uInt16 i = 2, nEntries = maLbOutPos.GetEntryCount();  i < nEntries; ++i )
 		delete (String*)maLbOutPos.GetEntryData( i );
 }
@@ -764,7 +764,7 @@ IMPL_LINK( ScPivotLayoutDlg, OkHdl, OKButton *, EMPTYARG )
 		//	#95513# don't hide the dialog before executing the slot, instead it is used as
 		//	parent for message boxes in ScTabViewShell::GetDialogParent
 
-        const SfxPoolItem* pRet = GetBindings().GetDispatcher()->Execute( 
+        const SfxPoolItem* pRet = GetBindings().GetDispatcher()->Execute(
             SID_PIVOT_TABLE, SFX_CALLMODE_SLOT | SFX_CALLMODE_RECORD, &aOutItem, 0L, 0L );
 
         bool bSuccess = true;
@@ -778,7 +778,7 @@ IMPL_LINK( ScPivotLayoutDlg, OkHdl, OKButton *, EMPTYARG )
             // Table successfully inserted.
             Close();
         else
-        {    
+        {
             // Table insertion failed.  Keep the dialog open.
             mbRefInputMode = true;
             SetDispatcherLock(true);

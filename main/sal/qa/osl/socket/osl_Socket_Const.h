@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -54,7 +54,7 @@
 
 const char * pTestString1 = "test socket";
 const char * pTestString2 = " Passed#OK";
-//define read count 
+//define read count
 //------------------------------------------------------------------------
 //------------------------------------------------------------------------
 
@@ -63,7 +63,7 @@ extern "C"
 {
 #endif
 
-#	include <stdio.h> 
+#	include <stdio.h>
 //------------------------------------------------------------------------
 // OS dependent declaration and includes
 //------------------------------------------------------------------------
@@ -82,19 +82,19 @@ extern "C"
 #	include <sys/types.h>
 #	include <sys/socket.h>
 #	include <netdb.h>
-#	include <netinet/in.h>           
+#	include <netinet/in.h>
 #       include <arpa/inet.h>
 #endif
 #if ( defined WNT )                     // Windows
-#	include <winsock.h> 
+#	include <winsock.h>
 #	include <string.h>
 #endif
 
 
 //------------------------------------------------------------------------
-// macro definition for the ASCII array/OUString declarations, 
-// we use p### for the ASCII array, 
-//        a### for the OUString, 
+// macro definition for the ASCII array/OUString declarations,
+// we use p### for the ASCII array,
+//        a### for the OUString,
 //        n###Len for its length
 //------------------------------------------------------------------------
 
@@ -132,7 +132,7 @@ extern "C"
 // #define IP_PORT_MYPORT8  8896
 // #define IP_PORT_MYPORT9  8897
 // #define IP_PORT_MYPORT10  8898
-// 
+//
 // #define IP_PORT_TMP    9999
 // #define IP_PORT_INVAL  99999
 

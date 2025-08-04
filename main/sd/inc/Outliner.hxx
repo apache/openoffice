@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,21 +7,21 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
 
-#ifndef SD_OUTLINER_HXX   
+#ifndef SD_OUTLINER_HXX
 #define SD_OUTLINER_HXX
 
 #include <svx/svdobj.hxx>
@@ -90,7 +90,7 @@ class Window;
     <p>Some related pieces of information:
     The search dialog (<type>SvxSearchDialog</type>) can be controlled in
     more than one way:
-    <ul><li>A set of option flags returned by the slot call 
+    <ul><li>A set of option flags returned by the slot call
     SID_SEARCH_OPTIONS handled by the
     <member>SdDrawDocument::GetState()</member> method.</li>
     <li>The contents of the search item of type
@@ -101,7 +101,7 @@ class Window;
     queried.  This is only sufficient for searching the outline view.
     </p>
 */
-class Outliner 
+class Outliner
     : public SdrOutliner,
       public ::boost::noncopyable
 {
@@ -122,14 +122,14 @@ public:
 	Outliner( SdDrawDocument* pDoc, sal_uInt16 nMode );
 	virtual ~Outliner();
 
-	/** Despite the name this method is called prior to spell cheking *and*
+	/** Despite the name this method is called prior to spell checking *and*
         searching and replacing.  The position of current view
         mode/page/object/caret position is remembered and, depending on the
         search mode, may be restored after finishing searching/spell
         checking.
     */
 	void PrepareSpelling (void);
- 
+
     /** Initialize a spell check but do not start it yet.  This method
         is a better candidate for the name PrepareSpelling.
     */
@@ -160,9 +160,9 @@ public:
     /** callback for textconversion */
 	sal_Bool ConvertNextDocument (void);
 
-    /** Starts the text conversion (hangul/hanja or Chinese simplified/traditional) 
+    /** Starts the text conversion (hangul/hanja or Chinese simplified/traditional)
     for the current viewshell */
-    void StartConversion( sal_Int16 nSourceLanguage,  sal_Int16 nTargetLanguage, 
+    void StartConversion( sal_Int16 nSourceLanguage,  sal_Int16 nTargetLanguage,
                 const Font *pTargetFont, sal_Int32 nOptions, sal_Bool bIsInteractive );
 
     /** This is called internally when text conversion is started.
@@ -225,7 +225,7 @@ private:
 
     /// The number of pages in the current view.
 	sal_uInt16 mnPageCount;
-    
+
     /// Number of objects on the current page / in the current selection.
 	sal_Int32 mnObjectCount;
 
@@ -328,7 +328,7 @@ private:
 
     /** This flag remebers a selection change between a call to the
         selection change listener callback and the next
-        <member>DetectChange()</member> method call. 
+        <member>DetectChange()</member> method call.
     */
     bool mbSelectionHasChanged;
 
@@ -336,7 +336,7 @@ private:
         to a programatical change of the selection.
     */
     bool mbExpectingSelectionChangeEvent;
-    
+
     /** This flag is set to true when the whole document has been
         processed once 'officially', i.e. a message box has been shown
         that tells the user so.
@@ -363,7 +363,7 @@ private:
     /** Do search and replace for whole document.
     */
     bool SearchAndReplaceAll (void);
-    
+
     /** Do search and replace for next match.
         @return
             The return value specifies whether the search ended (</sal_True>) or
@@ -447,7 +447,7 @@ private:
     void PrepareSearchAndReplace (void);
 
     /** Prepare to do a text conversion on the current text
-		object. This includes putting it into edit mode. 
+		object. This includes putting it into edit mode.
 	*/
     void PrepareConversion (void);
 
@@ -460,7 +460,7 @@ private:
 
     /** Switch to the page or master page specified by the
         <member>mnPage</member> index.  Master page mode is specified by
-        <member>meEditMode</member>. 
+        <member>meEditMode</member>.
         @param eEditMode
             The new edit mode.
         @param nPageIndex

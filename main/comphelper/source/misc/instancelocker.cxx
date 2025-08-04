@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -135,7 +135,7 @@ void SAL_CALL OInstanceLocker::initialize( const uno::Sequence< uno::Any >& aArg
 
 	if ( m_bDisposed )
 		throw lang::DisposedException(); // TODO
-	
+
 	if ( !m_refCount )
 		throw uno::RuntimeException(); // the object must be refcounted already!
 
@@ -162,7 +162,7 @@ void SAL_CALL OInstanceLocker::initialize( const uno::Sequence< uno::Any >& aArg
             !( aArguments[1] >>= nModes ) ||
             (
               !( nModes & embed::Actions::PREVENT_CLOSE ) &&
-              !( nModes & embed::Actions::PREVENT_TERMINATION ) 
+              !( nModes & embed::Actions::PREVENT_TERMINATION )
             )
            )
         {
@@ -178,7 +178,7 @@ void SAL_CALL OInstanceLocker::initialize( const uno::Sequence< uno::Any >& aArg
 					::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("If the third argument is provided, it must be XActionsApproval implementation!" ) ),
 					uno::Reference< uno::XInterface >(),
 					0 );
-	
+
 		m_pLockListener = new OLockListener( uno::Reference< lang::XComponent > ( static_cast< lang::XComponent* >( this ) ),
 											xInstance,
 											nModes,
@@ -304,7 +304,7 @@ void OLockListener::Dispose()
 		catch( uno::Exception& )
 		{}
 	}
-	
+
 	m_xInstance = uno::Reference< uno::XInterface >();
 	m_bDisposed = sal_True;
 }

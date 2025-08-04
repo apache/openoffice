@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -279,7 +279,7 @@ SvStream& operator<<(SvStream& rOut, AnimationNode& rNode )
 }
 
 AnimationExporter::AnimationExporter( const EscherSolverContainer& rSolverContainer, ppt::ExSoundCollection& rExSoundCollection ) :
-	mrSolverContainer	( rSolverContainer ), 
+	mrSolverContainer	( rSolverContainer ),
 	mrExSoundCollection ( rExSoundCollection ),
 	mnCurrentGroup(0)
 {
@@ -514,7 +514,7 @@ void AnimationExporter::exportNode( SvStream& rStrm, Reference< XAnimationNode >
 	sal_Int16 nFillDefault = GetFillMode( xNode, nFDef );
 
 	bool bSkipChildren = false;
-	
+
 	Reference< XAnimationNode > xAudioNode;
 	static sal_uInt32 nAudioGroup;
 
@@ -853,7 +853,7 @@ void AnimationExporter::exportAnimNode( SvStream& rStrm, const Reference< XAnima
 				const NamedValue* p = aUserData.getConstArray();
 				sal_Int32 nLength = aUserData.getLength();
 				while( nLength-- )
-				{	
+				{
 					if( p->Name.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( "node-type" ) ) )
 					{
 						sal_Int16 nType = 0;
@@ -930,7 +930,7 @@ sal_Int16 AnimationExporter::exportAnimPropertySet( SvStream& rStrm, const Refer
 		const NamedValue* p = aUserData.getConstArray();
 		sal_Int32 nLength = aUserData.getLength();
 		while( nLength-- )
-		{	
+		{
 			if( p->Name.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( "node-type" ) ) )
 			{
 				pAny[ DFF_ANIM_NODE_TYPE ] = &(p->Value);
@@ -1097,7 +1097,7 @@ sal_Int16 AnimationExporter::exportAnimPropertySet( SvStream& rStrm, const Refer
 		{
 //			sal_uInt32 nColorSpace = xColor->getColorSpace() == AnimationColorSpace::RGB ? 0 : 1;
 //			exportAnimPropertyuInt32( rStrm, DFF_ANIM_COLORSPACE, nColorSpace, TRANSLATE_NONE );
-			
+
 			sal_Bool bDirection = !xColor->getDirection();
 			exportAnimPropertyuInt32( rStrm, DFF_ANIM_DIRECTION, bDirection, TRANSLATE_NONE );
 		}
@@ -1133,11 +1133,11 @@ sal_Int16 AnimationExporter::exportAnimPropertySet( SvStream& rStrm, const Refer
 	}
 	if ( pAny[ DFF_ANIM_EVENT_FILTER ] )
 	{
-		// TODO DFF_ANIM_EVENT_FILTER 
+		// TODO DFF_ANIM_EVENT_FILTER
 	}
 	if ( pAny[ DFF_ANIM_VOLUME ] )
 	{
-		// TODO DFF_ANIM_VOLUME 
+		// TODO DFF_ANIM_VOLUME
 	}
 	return nNodeType;
 }
@@ -1295,7 +1295,7 @@ void AnimationExporter::exportAnimEvent( SvStream& rStrm, const Reference< XAnim
 
 		switch( i )
 		{
-			case 0 : 
+			case 0 :
 			case 1 :
 			{
 				Any aAny;
@@ -1942,7 +1942,7 @@ void AnimationExporter::exportAnimateMotion( SvStream& rStrm, const Reference< X
 		EscherExContainer aAnimateMotion( rStrm, DFF_msofbtAnimateMotion );
 		{
 			{	//SJ: Ignored from import filter
-				EscherExAtom aAnimateMotionData( rStrm, DFF_msofbtAnimateMotionData ); 
+				EscherExAtom aAnimateMotionData( rStrm, DFF_msofbtAnimateMotionData );
 				sal_uInt32 nBits = 0x98;
 				sal_uInt32 nOrigin = 0x2;
 				float fByX = 100.0;	// nBits&1

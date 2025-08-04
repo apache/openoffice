@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -79,7 +79,7 @@ protected:
 							  SvxCSS1PropertyInfo& rPropInfo );
 
 	using CSS1Parser::ParseStyleSheet;
-	
+
 public:
     SwCSS1Parser( SwDoc *pDoc, sal_uInt32 aFHeight[7], const String& rBaseURL, sal_Bool bNewDoc );
 	virtual ~SwCSS1Parser();
@@ -99,7 +99,7 @@ public:
 	// eine TextFmtColl zu einer Pool-Id ermitteln
 	SwTxtFmtColl *GetTxtFmtColl( sal_uInt16 nTxtColl, const String& rClass );
 
-	// This methods do the same as the one of SwDoc, but change the 
+	// This methods do the same as the one of SwDoc, but change the
 	// encoding if required.
 	SwTxtFmtColl *GetTxtCollFromPool( sal_uInt16 nPoolId ) const;
 	SwCharFmt *GetCharFmtFromPool( sal_uInt16 nPoolId ) const;
@@ -142,7 +142,7 @@ public:
 	static sal_Bool MayBePositioned( const SvxCSS1PropertyInfo& rPropInfo,
 								 sal_Bool bAutoWidth=sal_False );
 
-	static sal_uInt16 GetScriptFromClass( String& rClass, 
+	static sal_uInt16 GetScriptFromClass( String& rClass,
 									  sal_Bool bSubClassOnly = sal_True );
 
 	sal_Bool IsBodyBGColorSet() const { return bBodyBGColorSet; }
@@ -166,7 +166,7 @@ public:
 	inline void SetTDTagStyles();
 	inline void SetATagStyles();
 	inline void SetDelayedStyles();
-	
+
 	virtual void SetDfltEncoding( rtl_TextEncoding eEnc );
 };
 

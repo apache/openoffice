@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -809,7 +809,7 @@ void unoToSbxValue( SbxVariable* pVar, const Any& aValue )
 			// SbUnoObject instanzieren
 			String aName;
 			SbUnoObject* pSbUnoObject = new SbUnoObject( aName, aValue );
-			//If this is called externally e.g. from the scripting 
+			//If this is called externally e.g. from the scripting
 			//framework then there is no 'active' runtime the default property will not be set up
 			//only a vba object will have XDefaultProp set anyway so... this
 			//test seems a bit of overkill
@@ -1775,7 +1775,7 @@ bool checkUnoObjectType( SbUnoObject* pUnoObj, const ::rtl::OUString& rClass )
 					xInv->getValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("$GetTypeName") ) ) >>= sTypeName;
 					if ( sTypeName.isEmpty() || sTypeName.equals(  rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("IDispatch") ) ) )
 						// can't check type, leave it pass
-						result = true;	
+						result = true;
 					else
 						result = sTypeName.equals( rClass );
 				}
@@ -2357,7 +2357,7 @@ void SbUnoObject::SFX_NOTIFY( SfxBroadcaster& rBC, const TypeId& rBCType,
                         Reference< XDirectInvocation > xDirectInvoke;
                         if ( pMeth->needsDirectInvocation() )
                             xDirectInvoke.set( mxInvocation, UNO_QUERY );
-                        
+
                         Any aRetAny;
                         if ( xDirectInvoke.is() )
                             aRetAny = xDirectInvoke->directInvoke( pMeth->GetName(), args );
@@ -2594,7 +2594,7 @@ void clearUnoMethodsForBasic( StarBASIC* pBasic )
 	{
         SbxObject* pObject = dynamic_cast< SbxObject* >( pMeth->GetParent() );
         if ( pObject )
-        { 
+        {
             StarBASIC* pModBasic = dynamic_cast< StarBASIC* >( pObject->GetParent() );
             if ( pModBasic == pBasic )
             {
@@ -2603,7 +2603,7 @@ void clearUnoMethodsForBasic( StarBASIC* pBasic )
                 // we should either set module parent to NULL without clearing it, or even
                 // set the new StarBASIC as the parent of the module
                 // pObject->SetParent( NULL );
-                
+
                 if( pMeth == pFirst )
                     pFirst = pMeth->pNext;
                 else if( pMeth->pPrev )
@@ -3135,7 +3135,7 @@ void RTL_Impl_CreateUnoServiceWithArguments( StarBASIC* pBasic, SbxArray& rPar, 
 {
     (void)pBasic;
     (void)bWrite;
-    
+
 	// Wir brauchen mindestens 2 Parameter
 	if ( rPar.Count() < 3 )
 	{
@@ -3622,7 +3622,7 @@ SbxVariable* SbUnoService::Find( const String& rName, SbxClassType )
 			for( int i = 0 ; i < nCtorCount ; ++i )
 			{
 				Reference< XServiceConstructorDescription > xCtor = pCtorSeq[i];
-				
+
 				String aName( xCtor->getName() );
 				if( !aName.Len() )
 				{
@@ -3767,7 +3767,7 @@ void SbUnoService::SFX_NOTIFY( SfxBroadcaster& rBC, const TypeId& rBCType,
 					Reference < XPropertySet > xProps( ::comphelper::getProcessServiceFactory(), UNO_QUERY_THROW );
 					xContext.set( xProps->getPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "DefaultContext" )) ), UNO_QUERY_THROW );
 				}
-				Reference< XMultiComponentFactory > xServiceMgr( xContext->getServiceManager() ); 
+				Reference< XMultiComponentFactory > xServiceMgr( xContext->getServiceManager() );
 
 				Any aRetAny;
 				if( xServiceMgr.is() )
@@ -3924,7 +3924,7 @@ void SbUnoSingleton::SFX_NOTIFY( SfxBroadcaster& rBC, const TypeId& rBCType,
 		SbxObject::SFX_NOTIFY( rBC, rBCType, rHint, rHintType );
 }
 
- 
+
 //========================================================================
 //========================================================================
 //========================================================================
@@ -4435,7 +4435,7 @@ public:
         throw( UnknownPropertyException );
     virtual sal_Bool SAL_CALL hasMethod( const ::rtl::OUString& rName ) throw();
     virtual sal_Bool SAL_CALL hasProperty( const ::rtl::OUString& rProp ) throw();
-    
+
     virtual Any SAL_CALL invoke( const ::rtl::OUString& rFunction,
                                  const Sequence< Any >& rParams,
                                  Sequence< sal_Int16 >& rOutParamIndex,
@@ -4638,7 +4638,7 @@ Reference< XInterface > createComListener( const Any& aControlAny, const ::rtl::
 	Reference< XInterface > xRet;
 
 	Reference< XComponentContext > xContext = getComponentContext_Impl();
-	Reference< XMultiComponentFactory > xServiceMgr( xContext->getServiceManager() ); 
+	Reference< XMultiComponentFactory > xServiceMgr( xContext->getServiceManager() );
 
 	Reference< XInvocation > xProxy = new ModuleInvocationProxy( aPrefix, xScopeObj );
 
@@ -4759,7 +4759,7 @@ bool SbModule::createCOMWrapperForIface( Any& o_rRetAny, SbClassModuleObject* pP
 	// TODO: Check if support for multiple interfaces is needed
 
 	Reference< XComponentContext > xContext = getComponentContext_Impl();
-	Reference< XMultiComponentFactory > xServiceMgr( xContext->getServiceManager() ); 
+	Reference< XMultiComponentFactory > xServiceMgr( xContext->getServiceManager() );
 	Reference< XSingleServiceFactory > xComImplementsFactory
 	(
         xServiceMgr->createInstanceWithContext(

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -231,7 +231,7 @@ namespace
                     {
                         if ( xReferencedTableColumns->hasByName(*pIter) )
                             aInfoData->AppendConnLine(*pIter,*pIter);
-                    }            
+                    }
                 }
                 catch( const Exception& )
                 {
@@ -863,7 +863,7 @@ namespace
 								if (bMulti && !(pEntryField->isOtherFunction() || (aFieldName.toChar() == '*')))
 									pParseNode->replaceNodeValue(pEntryField->GetAlias(),aFieldName);
 								::rtl::OUString sHavingStr = aHavingStr;
-								
+
 								sal_uInt32 nCount = pParseNode->count();
 								for( sal_uInt32 node = 1 ; node < nCount ; ++node)
 									pParseNode->getChild(node)->parseNodeToStr(	sHavingStr,
@@ -1330,7 +1330,7 @@ namespace
 			GetInnerJoinCriteria(_pView,pNodeTmp);
 			// now simplify again, join are checked in ComparisonPredicate
 			::connectivity::OSQLParseNode::absorptions(pNodeTmp);
-			pNodeTmp = pNode->getChild(1);			
+			pNodeTmp = pNode->getChild(1);
 
 			// it could happen that pCondition is not more valid
 			eErrorCode = GetORCriteria(_pView,_pSelectionBrw,pNodeTmp, rLevel);
@@ -1436,7 +1436,7 @@ namespace
 			if ( SQL_ISRULE( pSearchCondition, search_condition) ) // we have a or
 			{
 				_pSelectionBrw->DuplicateConditionLevel( nLevel);
-				eErrorCode = GetORCriteria(_pView,_pSelectionBrw,pSearchCondition->getChild(0), nLevel,bHaving,bMustAddOrOnOneLine );				
+				eErrorCode = GetORCriteria(_pView,_pSelectionBrw,pSearchCondition->getChild(0), nLevel,bHaving,bMustAddOrOnOneLine );
 				++nLevel;
 				eErrorCode = GetORCriteria(_pView,_pSelectionBrw,pSearchCondition->getChild(2), nLevel,bHaving,bMustAddOrOnOneLine );
 			}
@@ -1683,7 +1683,7 @@ namespace
 							OSelectionBrowseBox* _pSelectionBrw,
 							const ::connectivity::OSQLParseNode * pCondition,
 							const sal_uInt16 nLevel,
-							sal_Bool bHaving 
+							sal_Bool bHaving
                             ,bool bAddOrOnOneLine)
 	{
 		SqlParseError eErrorCode = eOk;
@@ -1791,7 +1791,7 @@ namespace
 			}
 			// else ???
 
-			
+
 			if( eOk == ( eErrorCode = FillDragInfo(_pView,pCondition->getChild(nPos),aDragLeft)))
 			{
 				if(bHaving)
@@ -1910,9 +1910,9 @@ namespace
 		sal_Bool bRet = sal_True;
 		if (SQL_ISRULE(_pNode,qualified_join))
 			pJoinNode = _pNode;
-        else if (SQL_ISRULE(_pNode,table_ref) 
-                &&  _pNode->count() == 3 
-                &&  SQL_ISPUNCTUATION(_pNode->getChild(0),"(") 
+        else if (SQL_ISRULE(_pNode,table_ref)
+                &&  _pNode->count() == 3
+                &&  SQL_ISPUNCTUATION(_pNode->getChild(0),"(")
                 &&  SQL_ISPUNCTUATION(_pNode->getChild(2),")") ) // '(' joined_table ')'
 			pJoinNode = _pNode->getChild(1);
 		else if (! ( SQL_ISRULE(_pNode, table_ref) && _pNode->count() == 2) ) // table_node table_primary_as_range_column
@@ -2004,7 +2004,7 @@ namespace
 
             insertConnection(_pView,eJoinType,aDragLeft,aDragRight,bNatural);
         }
-		
+
 
 		return sal_True;
 	}
@@ -2417,7 +2417,7 @@ namespace
 					eOrderDir = ORDER_DESC;
 
                 ::connectivity::OSQLParseNode* pArgument = pChild->getChild(0);
-                
+
 				if(SQL_ISRULE(pArgument,column_ref))
 				{
 					if( eOk == FillDragInfo(_pView,pArgument,aDragLeft))
@@ -2445,7 +2445,7 @@ namespace
 					_pSelectionBrw->AddOrder( aDragLeft, eOrderDir, i );
                 else if( SQL_ISRULE(pArgument, set_fct_spec ) )
                 {
-                    
+
 		            Reference< XConnection> xConnection = rController.getConnection();
 		            if(xConnection.is())
 		            {
@@ -2492,7 +2492,7 @@ namespace
 		{
             OQueryController& rController = static_cast<OQueryController&>(_pView->getController());
 			::connectivity::OSQLParseNode* pGroupBy = pSelectRoot->getChild(3)->getChild(2)->getChild(2);
-			
+
 			for( sal_uInt32 i=0 ; i < pGroupBy->count() && eOk == eErrorCode; ++i )
 			{
                 OTableFieldDescRef aDragInfo = new OTableFieldDesc();
@@ -2514,7 +2514,7 @@ namespace
 					_pSelectionBrw->AddGroupBy( aDragInfo, i );
                 }
                 else if( SQL_ISRULE(pArgument, set_fct_spec ) )
-                {                    
+                {
 		            Reference< XConnection> xConnection = rController.getConnection();
 		            if(xConnection.is())
 		            {

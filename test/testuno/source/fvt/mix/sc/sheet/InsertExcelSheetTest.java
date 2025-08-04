@@ -257,7 +257,7 @@ public class InsertExcelSheetTest {
         vclApp.dispatch(".uno:Open");
         // add filename
         filePickerPath.setText("linked-normal.ods");
-        
+
         // Insert button
         filePickerOpen.click();
         sleep(1);
@@ -300,7 +300,7 @@ public class InsertExcelSheetTest {
         vclApp.dispatch(".uno:Open");
         // add filename
         filePickerPath.setText("linked-normal.ods");
-        
+
         // Insert button
         filePickerOpen.click();
 
@@ -397,7 +397,7 @@ public class InsertExcelSheetTest {
                 sleep(1);
             }
         } while ((retry) && (tryCount < maxTries));
-        
+
         // select sheet3
         scSheetsList.select(2);
 
@@ -435,7 +435,7 @@ public class InsertExcelSheetTest {
         scInsertSheetDlg.ok();
 
         log.info("sheet inserted...");
-        
+
         // check for message box
         activeMsgBox = new VclMessageBox(vclApp, Constant.UID_ACTIVE);
         boolean msgExists = activeMsgBox.exists(1); // wait 1 second for the dialog
@@ -477,7 +477,7 @@ public class InsertExcelSheetTest {
         vclApp.dispatch(".uno:Open");
         // add filename
         filePickerPath.setText("linked-value.ods");
-        
+
         // Insert button
         filePickerOpen.click();
         sleep(1);
@@ -517,7 +517,7 @@ public class InsertExcelSheetTest {
         vclApp.dispatch(".uno:Open");
         // add filename
         filePickerPath.setText("linked-value.ods");
-        
+
         // Insert button
         filePickerOpen.click();
 
@@ -615,7 +615,7 @@ public class InsertExcelSheetTest {
                 sleep(1);
             }
         } while ((retry) && (tryCount < maxTries));
-        
+
         // select sheet3
         scSheetsList.select(2);
 
@@ -684,7 +684,7 @@ public class InsertExcelSheetTest {
         vclApp.dispatch(".uno:Open");
         // add filename
         filePickerPath.setText("linked-none.ods");
-        
+
         // Insert button
         filePickerOpen.click();
         sleep(1);
@@ -724,7 +724,7 @@ public class InsertExcelSheetTest {
         vclApp.dispatch(".uno:Open");
         // add filename
         filePickerPath.setText("linked-none.ods");
-        
+
         // Insert button
         filePickerOpen.click();
         sleep(1);

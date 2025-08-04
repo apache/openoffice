@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -110,7 +110,7 @@ public:
             m_bUserPaneNeeded = true;
         }
     }
-    
+
     inline void    setFilterHelper(FilterHelper* pFilterHelper) {
         m_pFilterHelper = pFilterHelper;
     }
@@ -118,7 +118,7 @@ public:
     inline void    setFilePickerDelegate(AquaFilePickerDelegate* pDelegate) {
         m_pDelegate = pDelegate;
     }
-    
+
     inline bool    isAutoExtensionEnabled() {
         return ([((NSButton*) m_pToggles[AUTOEXTENSION]) state] == NSOnState);
     }
@@ -127,13 +127,13 @@ private:
     //------------------------------------------------------------------------------------
     // private member variables
     //------------------------------------------------------------------------------------
-    
+
     /** the native view object */
     NSView*    m_pUserPane;
 
     /** the checkbox controls */
     NSControl* m_pToggles[ TOGGLE_LAST ];
-    
+
     /** the visibility flags for the checkboxes */
     bool m_bToggleVisibility[TOGGLE_LAST];
 
@@ -142,13 +142,13 @@ private:
 
     /** the popup menu controls (except for the filter control) */
     NSControl* m_pListControls[ LIST_LAST ];
-    
+
     /** a map to store a control's label text */
     ::std::map<NSControl *, NSString *> m_aMapListLabels;
-    
+
     /** a map to store a popup menu's label text field */
     ::std::map<NSPopUpButton *, NSTextField *> m_aMapListLabelFields;
-    
+
     /** the visibility flags for the popup menus */
     bool m_bListVisibility[ LIST_LAST ];
 
@@ -157,16 +157,16 @@ private:
 
     /** indicates if the user pane was laid out already */
     bool m_bIsUserPaneLaidOut;
-    
+
     /** indicates if a filter control is needed */
     bool m_bIsFilterControlNeeded;
-    
+
     /** a list with all actively used controls */
     ::std::list<NSControl*> m_aActiveControls;
-    
+
     /** the filter helper */
     FilterHelper *m_pFilterHelper;
-    
+
     /** the save or open panel's delegate */
     AquaFilePickerDelegate *m_pDelegate;
 
@@ -180,7 +180,7 @@ private:
     void         createFilterControl();
     void         createUserPane();
     NSTextField* createLabelWithString( NSString* label);
-    
+
     int          getControlElementName(const Class clazz, const int nControlId) const;
     NSControl*   getControl( const sal_Int16 nControlId ) const;
     static int   getVerticalDistance(const NSControl* first, const NSControl* second);

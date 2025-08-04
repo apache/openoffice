@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -146,7 +146,7 @@ DrawViewShell::DrawViewShell( SfxViewFrame* pFrame, ViewShellBase& rViewShellBas
           ::boost::bind(&DrawViewShell::GetSidebarContextName, this),
           uno::Reference<frame::XController>(&rViewShellBase.GetDrawController()),
           sfx2::sidebar::EnumContext::Context_Default))
-          
+
 {
 	if (pFrameViewArgument != NULL)
 		mpFrameView = pFrameViewArgument;
@@ -168,10 +168,10 @@ DrawViewShell::DrawViewShell( SfxViewFrame* pFrame, ViewShellBase& rViewShellBas
 DrawViewShell::~DrawViewShell()
 {
     mpSelectionChangeHandler->Disconnect();
-    
+
     mpAnnotationManager.reset();
     mpViewOverlayManager.reset();
-   
+
     OSL_ASSERT (GetViewShell()!=NULL);
 
     if( mxScannerListener.is() )
@@ -413,8 +413,8 @@ void DrawViewShell::Construct(DrawDocShell* pDocSh, PageKind eInitialPageKind)
 								::com::sun::star::uno::UNO_QUERY );
 		}
 	}
-	
-    mpAnnotationManager.reset( new AnnotationManager( GetViewShellBase() ) );    
+
+    mpAnnotationManager.reset( new AnnotationManager( GetViewShellBase() ) );
     mpViewOverlayManager.reset( new ViewOverlayManager( GetViewShellBase() ) );
 }
 
@@ -856,7 +856,7 @@ void DrawViewShell::Notify (SfxBroadcaster&, const SfxHint& rHint)
 void DrawViewShell::ExecuteAnnotation (SfxRequest& rRequest)
 {
     if( mpAnnotationManager.get() )
-        mpAnnotationManager->ExecuteAnnotation( rRequest );    
+        mpAnnotationManager->ExecuteAnnotation( rRequest );
 }
 
 // --------------------------------------------------------------------
@@ -864,7 +864,7 @@ void DrawViewShell::ExecuteAnnotation (SfxRequest& rRequest)
 void DrawViewShell::GetAnnotationState (SfxItemSet& rItemSet )
 {
     if( mpAnnotationManager.get() )
-        mpAnnotationManager->GetAnnotationState( rItemSet );    
+        mpAnnotationManager->GetAnnotationState( rItemSet );
 }
 
 

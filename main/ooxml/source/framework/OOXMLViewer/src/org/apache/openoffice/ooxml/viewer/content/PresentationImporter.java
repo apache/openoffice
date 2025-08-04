@@ -46,8 +46,8 @@ public class PresentationImporter
         aParser.Parse();
         return aModel;
     }
-    
-    
+
+
 
     private Parser CreateParser (
         final InputStream aStream,
@@ -58,7 +58,7 @@ public class PresentationImporter
             ContentType.PmlDocument,
             aStream,
             new Vector<String>());
-        
+
         aParser.GetActionManager().AddElementStartAction(
             "p06_CT_SlideIdListEntry",
             new IAction()
@@ -68,14 +68,14 @@ public class PresentationImporter
                     Location aStartLocation, Location aEndLocation)
                 {
                     final String aReferenceId = aContext.GetAttributes().GetRawAttributeValue("r06_id");
-                    
+
                     aModel.GetSlideManager().GetSlideForPart(
                         aPart.getPartById(aReferenceId));
-                        
+
                     System.out.println(aReferenceId);
                 }
             });
-        
+
         return aParser;
     }
 }

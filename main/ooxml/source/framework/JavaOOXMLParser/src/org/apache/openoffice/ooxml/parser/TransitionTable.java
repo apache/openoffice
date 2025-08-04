@@ -30,7 +30,7 @@ public class TransitionTable
     public TransitionTable (final Vector<String[]> aData)
     {
         maTransitions = new HashMap<>();
-        
+
         for (final String[] aLine : aData)
         {
             // Create new transition.
@@ -70,16 +70,16 @@ public class TransitionTable
             return aPerElementTransitions.get((nPrefixId<<16) | nLocalId);
     }
 
-    
-    
-    
+
+
+
     public int GetTransitionCount ()
     {
         return maTransitions.size();
     }
-    
-    
-    
-    
+
+
+
+
     private final Map<Integer,Map<Integer,Transition>> maTransitions;
 }

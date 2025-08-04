@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -58,7 +58,7 @@ namespace embed {
 
 struct XMLSignatureCreationResult
 {
-    sal_Int32 nSecurityId; 
+    sal_Int32 nSecurityId;
     com::sun::star::xml::crypto::SecurityOperationStatus nSignatureCreationResult;
 
     XMLSignatureCreationResult( sal_Int32 nId, com::sun::star::xml::crypto::SecurityOperationStatus nResult )
@@ -70,7 +70,7 @@ struct XMLSignatureCreationResult
 
 struct XMLSignatureVerifyResult
 {
-    sal_Int32 nSecurityId; 
+    sal_Int32 nSecurityId;
     com::sun::star::xml::crypto::SecurityOperationStatus nSignatureVerifyResult;
 
     XMLSignatureVerifyResult( sal_Int32 nId, com::sun::star::xml::crypto::SecurityOperationStatus nResult )
@@ -95,7 +95,7 @@ typedef ::std::vector<XMLSignatureVerifyResult> XMLSignatureVerifyResults;
  2. help to listen signature creation result;
  3. help to listen signature verify result;
  4. help to indicate which signature to verify.
- 
+
  **********************************************************/
 
 class XMLSignatureHelper
@@ -178,10 +178,10 @@ public:
         for finding the certificate apparently use memcmp - hence they fail to find the
         certificate.
      */
-    void SetX509Certificate(sal_Int32 nSecurityId, const rtl::OUString& ouX509IssuerName, 
+    void SetX509Certificate(sal_Int32 nSecurityId, const rtl::OUString& ouX509IssuerName,
 		const rtl::OUString& ouX509SerialNumber, const rtl::OUString& ouX509Cert);
-     
-    void SetX509Certificate(sal_Int32 nSecurityId, sal_Int32 nSecurityEnvironmentIndex,	
+
+    void SetX509Certificate(sal_Int32 nSecurityId, sal_Int32 nSecurityEnvironmentIndex,
 		const rtl::OUString& ouX509IssuerName,	const rtl::OUString& ouX509SerialNumber,
 		const rtl::OUString& ouX509Cert);
     void	    SetDateTime( sal_Int32 nSecurityId, const Date& rDate, const Time& rTime );
@@ -190,7 +190,7 @@ public:
     bool        CreateAndWriteSignature( const com::sun::star::uno::Reference< com::sun::star::xml::sax::XDocumentHandler >& xDocumentHandler );
     bool        CreateAndWriteSignature( const com::sun::star::uno::Reference< com::sun::star::io::XOutputStream >& xOutputStream );
     bool        ReadAndVerifySignature( const com::sun::star::uno::Reference< com::sun::star::io::XInputStream >& xInputStream );
-	
+
 	// MT: ??? I think only for adding/removing, not for new signatures...
     // MM: Yes, but if you want to insert a new signature into an existing signature file, those function
     //     will be very usefull, see Mission 3 in the new "multisigdemo" program   :-)

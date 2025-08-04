@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -135,7 +135,7 @@ void lcl_AdjustPositioningAttr( SwDrawFrmFmt* _pFrmFmt,
                     bR2L = true;
                     //Badaa: 2008-04-18 * Support for Classical Mongolian Script (SCMS) joint with Jiayanmin
                     //ASSERT( false, "<lcl_AdjustPositioningAttr(..)> - vertical from left-to-right not supported." );
-                    //End 
+                    //End
                 }
                 break;
                 case FRMDIR_VERT_TOP_RIGHT:
@@ -164,7 +164,7 @@ void lcl_AdjustPositioningAttr( SwDrawFrmFmt* _pFrmFmt,
         }
         // use geometry of drawing object
         const SwRect aObjRect = _rSdrObj.GetSnapRect();
-       
+
         if ( bVert )
         {
             if ( bR2L ) {
@@ -670,7 +670,7 @@ void SwDoc::InitDrawModel()
                 // use pMasterPage instead of a new created SdrPage
                 // pDrawModel->AllocPage( FALSE );
                 // pDrawModel->InsertPage( pDrawPage );
-                SdrPage* pDrawPage = pMasterPage;                
+                SdrPage* pDrawPage = pMasterPage;
                 pRoot->SetDrawPage( pDrawPage );
                 pDrawPage->SetSize( pRoot->Frm().SSize() );
             }

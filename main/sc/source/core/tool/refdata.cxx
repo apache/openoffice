@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -133,29 +133,29 @@ void ScSingleRefData::CalcAbsIfRel( const ScAddress& rPos )
 //UNUSED2008-05      if ( !Flags.bFlag3D )
 //UNUSED2008-05          Flags.bTabRel = sal_True;   // ist bei einigen aelteren Dokumenten nicht gesetzt
 //UNUSED2008-05  }
-//UNUSED2008-05  
-//UNUSED2008-05  
+//UNUSED2008-05
+//UNUSED2008-05
 //UNUSED2008-05  /*
 //UNUSED2008-05   bis Release 3.1 sah Store so aus
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05      sal_uInt8 n = ( ( r.bOldFlag3D & 0x03 ) << 6 )   // RelName, 3D
 //UNUSED2008-05              | ( ( r.bRelTab & 0x03 ) << 4 )     // Relative, RelAbs
 //UNUSED2008-05              | ( ( r.bRelRow & 0x03 ) << 2 )
 //UNUSED2008-05              |   ( r.bRelCol & 0x03 );
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05   bis Release 3.1 sah Load so aus
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05      r.bRelCol = ( n & 0x03 );
 //UNUSED2008-05      r.bRelRow = ( ( n >> 2 ) & 0x03 );
 //UNUSED2008-05      r.bRelTab = ( ( n >> 4 ) & 0x03 );
 //UNUSED2008-05      r.bOldFlag3D = ( ( n >> 6 ) & 0x03 );
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05   bRelCol == SR_DELETED war identisch mit bRelCol == (SR_RELATIVE | SR_RELABS)
 //UNUSED2008-05   leider..
 //UNUSED2008-05   3.1 liest Zukunft: Deleted wird nicht unbedingt erkannt, nur wenn auch Relativ.
 //UNUSED2008-05   Aber immer noch nCol > MAXCOL und gut sollte sein..
 //UNUSED2008-05   */
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05  sal_uInt8 ScSingleRefData::CreateStoreByteFromFlags() const
 //UNUSED2008-05  {
 //UNUSED2008-05      return (sal_uInt8)(
@@ -169,8 +169,8 @@ void ScSingleRefData::CalcAbsIfRel( const ScAddress& rPos )
 //UNUSED2008-05          |   (Flags.bColRel      & 0x01)
 //UNUSED2008-05          );
 //UNUSED2008-05  }
-//UNUSED2008-05  
-//UNUSED2008-05  
+//UNUSED2008-05
+//UNUSED2008-05
 //UNUSED2008-05  void ScSingleRefData::CreateFlagsFromLoadByte( sal_uInt8 n )
 //UNUSED2008-05  {
 //UNUSED2008-05      Flags.bColRel       = (n & 0x01 );
@@ -343,7 +343,7 @@ ScComplexRefData& ScComplexRefData::Extend( const ScSingleRefData & rRef, const 
         Ref2.SetColRel( aRef.IsColRel());
     if (Ref2.nRow == aRef.nRow)
         Ref2.SetRowRel( aRef.IsRowRel());
-    // $Sheet1.$A$5:$A$6 => $Sheet1.$A$5:$A$5:$A$6 => $Sheet1.$A$5:$A$6, and 
+    // $Sheet1.$A$5:$A$6 => $Sheet1.$A$5:$A$5:$A$6 => $Sheet1.$A$5:$A$6, and
     // not $Sheet1.$A$5:Sheet1.$A$6 (with invisible second 3D, but relative).
     if (Ref2.nTab == aRef.nTab)
         Ref2.SetTabRel( bInherit3Dtemp ? Ref1.IsTabRel() : aRef.IsTabRel());

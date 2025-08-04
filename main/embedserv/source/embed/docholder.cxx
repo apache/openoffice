@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -138,7 +138,7 @@ void DocumentHolder::LoadDocInFrame( sal_Bool bPluginMode )
             -1,
             aAny,
             beans::PropertyState_DIRECT_VALUE);
-        
+
         aAny <<= sal_False;
         aSeq[1] = beans::PropertyValue(
             rtl::OUString(
@@ -146,7 +146,7 @@ void DocumentHolder::LoadDocInFrame( sal_Bool bPluginMode )
             -1,
             aAny,
             beans::PropertyState_DIRECT_VALUE);
-        
+
         aAny <<= (sal_Bool) sal_True;
         aSeq[2] = beans::PropertyValue(
             rtl::OUString(
@@ -294,7 +294,7 @@ HRESULT DocumentHolder::InPlaceActivate(
         {   // determine XWindow and window handle of parent
             HWND                          hWndxWinParent(0);
             uno::Reference<awt::XWindow>  xWin;
-            
+
             static const ::rtl::OUString aToolkitServiceName(
                 RTL_CONSTASCII_USTRINGPARAM ( "com.sun.star.awt.Toolkit" ) );
             uno::Reference<awt::XSystemChildFactory> xToolkit(
@@ -305,7 +305,7 @@ HRESULT DocumentHolder::InPlaceActivate(
                 if( !m_pCHatchWin )
                     m_pCHatchWin = new winwrap::CHatchWin(
                         m_hInstance,this);
-                
+
                 if(m_pCHatchWin->Init(hWndSite,/*ID_HATCHWINDOW*/2000, NULL)) {
                     m_pCHatchWin->RectsSet(&rcPos,&rcClip); //set visible area
                     hWndxWinParent = m_pCHatchWin->Window();
@@ -316,7 +316,7 @@ HRESULT DocumentHolder::InPlaceActivate(
                     delete m_pCHatchWin, m_pCHatchWin = 0;
                     hWndxWinParent = hWndSite;
                 }
-                
+
                 aAny <<= sal_Int32(hWndxWinParent);
                 xWin = uno::Reference<awt::XWindow>(
                     xToolkit->createSystemChild(
@@ -325,7 +325,7 @@ HRESULT DocumentHolder::InPlaceActivate(
                         lang::SystemDependent::SYSTEM_WIN32),
                     uno::UNO_QUERY);
             }
-            
+
             if(xWin.is()) {
                 xWin->setPosSize(
                     m_pCHatchWin ? HATCHWIN_BORDERWIDTHDEFAULT : 0,
@@ -334,7 +334,7 @@ HRESULT DocumentHolder::InPlaceActivate(
                     rcPos.bottom - rcPos.top,
                     awt::PosSize::POSSIZE);
                 xWin->setVisible(sal_True);
-                
+
                 m_xEditWindow = xWin;
                 m_hWndxWinParent = hWndxWinParent;
             }
@@ -346,7 +346,7 @@ HRESULT DocumentHolder::InPlaceActivate(
                 SetParent(m_hWndxWinParent,hWndSite);
                 ShowWindow(m_hWndxWinParent,SW_SHOW);  //Make visible.
             }
-            
+
             if ( !m_xFrame.is() )
                 // initially set size to "empty", this guarantees that the final resize
                 // is always executed (will be done by "SetObjectRects" after getting internal border)
@@ -358,7 +358,7 @@ HRESULT DocumentHolder::InPlaceActivate(
                     awt::PosSize::POSSIZE);
             m_xEditWindow->setVisible(sal_True);
         }
-        
+
         if(m_xContainerWindow.is()) {
             if(m_hWndxWinCont) {
                 if(m_pIOleIPFrame) {
@@ -370,7 +370,7 @@ HRESULT DocumentHolder::InPlaceActivate(
             }
             m_xContainerWindow->setVisible(true);
         }
-        
+
         if(m_xFrame.is())
             m_xFrame->activate();
         else {
@@ -380,10 +380,10 @@ HRESULT DocumentHolder::InPlaceActivate(
             m_xFrame = uno::Reference<frame::XFrame>(
                 m_xFactory->createInstance(aFrameServiceName),
                 uno::UNO_QUERY);
-            
+
             if(!m_xFrame.is())
                 return ERROR;
-            
+
             m_xFrame->initialize(m_xEditWindow);
 
             uno::Reference<frame::XDispatchProviderInterception>
@@ -398,13 +398,13 @@ HRESULT DocumentHolder::InPlaceActivate(
                     rtl::OUString::createFromAscii("LayoutManager"));
                 aAny >>= m_xLayoutManager;
             }
-            
+
             if(m_xLayoutManager.is())
                 m_xLayoutManager->setDockingAreaAcceptor(this);
-            
+
             // load the model into the frame
             LoadDocInFrame( sal_True );
-            
+
             static const ::rtl::OUString aDesktopServiceName (
                 RTL_CONSTASCII_USTRINGPARAM ( "com.sun.star.frame.Desktop" ) );
             uno::Reference< frame::XFramesSupplier > xDesktop(
@@ -412,7 +412,7 @@ HRESULT DocumentHolder::InPlaceActivate(
                 uno::UNO_QUERY );
             if(xDesktop.is())
                 xDesktop->getFrames()->append(m_xFrame);
-            
+
             // determine the menuhandle to get menutitems.
             if(m_xLayoutManager.is()) {
                 uno::Reference< ::com::sun::star::ui::XUIElement > xUIEl(
@@ -434,14 +434,14 @@ HRESULT DocumentHolder::InPlaceActivate(
                             "private:resource/menubar/menubar" )));
             }
         }
-        
+
         // TODO/cd: Workaround for status indicator bug. It always makes the
         // document window visible, when someone tries to use the status
         // indicator. As we save our document when we get the deactivation
         // from OLE this conflict to hide floating windows.
         if(m_xLayoutManager.is())
             m_xLayoutManager->setVisible(true);
-        
+
         // get document border and resize rects according to border
         GetDocumentBorder( &m_aBorder );
         SetObjectRects( &rcPos, &rcClip );
@@ -456,7 +456,7 @@ HRESULT DocumentHolder::InPlaceActivate(
         // setTitle(m_aDocumentNamePart);
         if (fIncludeUI)
             hr=UIActivate();
-        
+
         m_pIOleIPSite->DiscardUndoState();
     }
     catch( uno::Exception& )
@@ -880,7 +880,7 @@ uno::Reference< frame::XFrame > DocumentHolder::DocumentFrame()
 uno::Reference< frame::XDispatchProviderInterceptor > DocumentHolder::CreateNewInterceptor()
 {
 	::osl::MutexGuard aGuard( m_aMutex );
-	
+
 	ClearInterceptorInternally();
 
 	uno::Reference< frame::XDispatchProviderInterceptor > xInterceptor( m_pInterceptor = new Interceptor( m_xOleAccess, this, m_bLink ) );
@@ -1319,14 +1319,14 @@ HRESULT DocumentHolder::SetContRects(LPCRECT aRect)
         memset(&wi,0,sizeof(wi));
 		if(m_pIOleIPFrame) {
 			m_pIOleIPFrame->GetBorder((LPRECT)&wi);
-			m_xContainerWindow->setPosSize( 
+			m_xContainerWindow->setPosSize(
 				0,0,
 				wi.right - wi.left,
 				wi.bottom - wi.top,
 				awt::PosSize::POSSIZE);
 		}
 		else
-	       m_xContainerWindow->setPosSize( 
+	       m_xContainerWindow->setPosSize(
 			0,0,
             aRect->right - aRect->left,
             aRect->bottom - aRect->top,
@@ -1514,7 +1514,7 @@ DocumentHolder::queryClosing(
 		util::CloseVetoException
 	)
 {
-	if ( !m_bLink 
+	if ( !m_bLink
 	  && ( m_xDocument.is() && m_xDocument == aSource.Source || m_xFrame.is() && m_xFrame == aSource.Source ) )
 		throw util::CloseVetoException();
 }
@@ -1634,7 +1634,7 @@ void SAL_CALL DocumentHolder::modified( const lang::EventObject& /*aEvent*/ )
 //         mgw.width[5]=1;
 //     }
 
-// Fix strange warnings about some 
+// Fix strange warnings about some
 // ATL::CAxHostWindow::QueryInterface|AddRef|Releae functions.
 // warning C4505: 'xxx' : unreferenced local function has been removed
 #if defined(_MSC_VER)

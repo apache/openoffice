@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -70,7 +70,7 @@ public class PathSettings extends TestCase {
 
     private static NamedValue[]  m_Properties;
     private static XPropertySet xPS;
-    
+
     /**
      * restores the old values of the path settings
      * @param tParam the test parameter
@@ -78,10 +78,10 @@ public class PathSettings extends TestCase {
      */
     protected void cleanup(TestParameters tParam, PrintWriter log) {
         log.println("restore old values of path settings...");
-        
+
         for (int i=0; i < m_Properties.length; i++){
             try{
-                
+
                 xPS.setPropertyValue(m_Properties[i].Name, m_Properties[i].Value);
 
             } catch (com.sun.star.beans.UnknownPropertyException e){
@@ -90,7 +90,7 @@ public class PathSettings extends TestCase {
             } catch (WrappedTargetException e){
             }
         }
-    }    
+    }
     /**
      * Creating a Testenvironment for the interfaces to be tested.
      * Creates an instance of the service
@@ -126,25 +126,25 @@ public class PathSettings extends TestCase {
         exclProps.add("UIConfig");
         tEnv.addObjRelation("XFastPropertySet.ExcludeProps", exclProps);
         tEnv.addObjRelation("XMultiPropertySet.ExcludeProps", exclProps);
-        
+
         saveAllPropertyValues(oObj);
 
         return tEnv;
     } // finish method getTestEnvironment
-    
+
     private void saveAllPropertyValues(XInterface oObj){
-        
+
         xPS = (XPropertySet) UnoRuntime.queryInterface(
                                                 XPropertySet.class, oObj);
-        
+
         XPropertySetInfo xPSI = xPS.getPropertySetInfo();
-        
+
         Property[] allProperties = xPSI.getProperties();
         m_Properties = new NamedValue[allProperties.length];
-        
+
         for (int i=0; i < allProperties.length; i++){
             try{
-                m_Properties[i] = new NamedValue(allProperties[i].Name, 
+                m_Properties[i] = new NamedValue(allProperties[i].Name,
                                    xPS.getPropertyValue(allProperties[i].Name));
 
             } catch (com.sun.star.beans.UnknownPropertyException e){

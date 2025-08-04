@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -55,7 +55,7 @@ import com.sun.star.wizards.ui.UIConsts;
  * You can also instantiate the class, to encapsulate
  * some functionality of SimpleFileAccess. The instance
  * keeps a reference to an XSimpleFileAccess and an
- * XFileIdentifierConverter, saves the permanent 
+ * XFileIdentifierConverter, saves the permanent
  * overhead of querying for those interfaces, and delivers
  * convenience methods for using them.
  * These Convenience methods include mainly Exception-handling.
@@ -64,7 +64,7 @@ public class FileAccess
 {
 
     /**
-     * 
+     *
      * @param xMSF
      * @param sPath
      * @param sAddPath
@@ -591,7 +591,7 @@ public class FileAccess
      * @param xMSF
      * @param FilterName the prefix of the filename. a "-" is added to the prefix !
      * @param FolderName the folder (URL) to look for files...
-     * @return an array with two array members. The first one, with document titles, 
+     * @return an array with two array members. The first one, with document titles,
      * the second with the corresponding URLs.
      * @deprecated please use the getFolderTitles() with ArrayList
      */
@@ -692,7 +692,7 @@ public class FileAccess
     }
 
     /**
-     * 
+     *
      * @param xMSF
      * @param _sStartFilterName
      * @param FolderNames
@@ -994,7 +994,7 @@ public class FileAccess
 
     /**
      * @author rpiterman
-     * @param path 
+     * @param path
      * @param pathSeparator
      * @return
      */
@@ -1050,8 +1050,8 @@ public class FileAccess
     }
 
     /**
-     * 
-     * @param url 
+     *
+     * @param url
      * @return the parent dir of the given url.
      * if the path points to file, gives the directory in which the file is.
      */
@@ -1154,7 +1154,7 @@ public class FileAccess
     }
 
     /**
-     * shortens a filename to a user displayable representation. 
+     * shortens a filename to a user displayable representation.
      * @param path
      * @param maxLength
      * @return

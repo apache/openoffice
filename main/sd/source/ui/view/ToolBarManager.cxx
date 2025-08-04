@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -316,7 +316,7 @@ public:
     void LockViewShellManager (void);
     void LockUpdate (void);
     void UnlockUpdate (void);
-    
+
     ToolBarRules& GetToolBarRules (void);
 
 private:
@@ -956,7 +956,7 @@ void ToolBarManager::Implementation::Update (
                 mrBase.GetViewShellManager());
 
             // 3) Unlock the ViewShellManager::UpdateLock.  This updates the
-            // shell stack.  We have to be carfull here.  The deletion of
+            // shell stack.  We have to be careful here.  The deletion of
             // the lock may end in a synchronous call to LockUpdate(). When
             // at this time the lock has been deleted but the auto_ptr has
             // not yet been reset then the lock is deleted a second time.

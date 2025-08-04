@@ -59,4 +59,4 @@ class ExitHelper
 
 } // namespace desktop
 
-#endif // #ifndef _DESKTOP_EXITHELPER_HXX_ 
+#endif // #ifndef _DESKTOP_EXITHELPER_HXX_

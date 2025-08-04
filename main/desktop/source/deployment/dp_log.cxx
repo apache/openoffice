@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -57,11 +57,11 @@ class ProgressLogImpl : public ::dp_misc::MutexHolder, public t_log_helper
 protected:
     virtual void SAL_CALL disposing();
     virtual ~ProgressLogImpl();
-    
+
 public:
     ProgressLogImpl( Sequence<Any> const & args,
                      Reference<XComponentContext> const & xContext );
-    
+
     // XProgressHandler
     virtual void SAL_CALL push( Any const & Status ) throw (RuntimeException);
     virtual void SAL_CALL update( Any const & Status ) throw (RuntimeException);
@@ -99,7 +99,7 @@ ProgressLogImpl::ProgressLogImpl(
     OUString log_file;
     boost::optional< Reference<task::XInteractionHandler> > interactionHandler;
     comphelper::unwrapArgs( args, log_file, interactionHandler );
-    
+
     Reference<ucb::XSimpleFileAccess> xSimpleFileAccess(
         xContext->getServiceManager()->createInstanceWithContext(
             OUSTR("com.sun.star.ucb.SimpleFileAccess"),
@@ -107,12 +107,12 @@ ProgressLogImpl::ProgressLogImpl(
     // optional ia handler:
     if (interactionHandler)
         xSimpleFileAccess->setInteractionHandler( *interactionHandler );
-    
+
     m_xLogFile.set(
         xSimpleFileAccess->openFileWrite( log_file ), UNO_QUERY_THROW );
     Reference<io::XSeekable> xSeekable( m_xLogFile, UNO_QUERY_THROW );
     xSeekable->seek( xSeekable->getLength() );
-    
+
     // write log stamp
     OStringBuffer buf;
     buf.append(
@@ -169,12 +169,12 @@ void ProgressLogImpl::update( Any const & Status )
 {
     if (! Status.hasValue())
         return;
-    
+
     OUStringBuffer buf;
     OSL_ASSERT( m_log_level >= 0 );
     for ( sal_Int32 n = 0; n < m_log_level; ++n )
         buf.append( static_cast<sal_Unicode>(' ') );
-    
+
     OUString msg;
     if (Status >>= msg) {
         buf.append( msg );

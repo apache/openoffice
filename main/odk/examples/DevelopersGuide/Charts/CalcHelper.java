@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -97,7 +97,7 @@ public class CalcHelper
         }
         catch( Exception ex )
         {}
-        
+
         return aSheet;
     }
 
@@ -129,7 +129,7 @@ public class CalcHelper
 
     // ____________________
 
-    /** Insert a chart using the given name as name of the OLE object and the range as correspoding
+    /** Insert a chart using the given name as name of the OLE object and the range as corresponding
         range of data to be used for rendering.  The chart is placed in the sheet for charts at
         position aUpperLeft extending as large as given in aExtent.
 
@@ -196,7 +196,7 @@ public class CalcHelper
             }
             catch( NoSuchElementException ex )
             {
-                System.out.println( "Couldn't find chart with name " + sChartName + ": " + ex );                
+                System.out.println( "Couldn't find chart with name " + sChartName + ": " + ex );
             }
             catch( Exception ex )
             {}
@@ -267,7 +267,7 @@ public class CalcHelper
         {
             System.out.println( "Sheet not found" + ex );
         }
-        
+
         return aRange;
     }
 
@@ -292,13 +292,13 @@ public class CalcHelper
             double fFactor = 2.0 * java.lang.Math.PI / (double)(nRowCount - 1);
             String aFormula;
 
-            // set variable factor for cos formula 
+            // set variable factor for cos formula
             int nFactorCol = nColumnCount + 2;
             (aSheet.getCellByPosition( nFactorCol - 1, 0 )).setValue( 0.2 );
 
             XText xCellText = (XText) UnoRuntime.queryInterface( XText.class, aSheet.getCellByPosition( nFactorCol - 1, 1 ) );
             xCellText.setString( "Change the factor above and\nwatch the changes in the chart" );
-            
+
             for( nCol = 0; nCol < nColumnCount; nCol++ )
             {
                 for( nRow = 0; nRow < nRowCount; nRow++ )
@@ -327,7 +327,7 @@ public class CalcHelper
         {
             System.out.println( "Sheet not found" + ex );
         }
-        
+
         return aRange;
     }
 

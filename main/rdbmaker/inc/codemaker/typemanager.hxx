@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -30,21 +30,21 @@ typedef ::std::list< Registry* > 	RegistryList;
 
 #if defined( _MSC_VER ) && ( _MSC_VER < 1200 )
 typedef	::std::__hash_map__
-<	
+<
 	::rtl::OString, // Typename
 	RTTypeClass, 	// TypeClass
-	HashString, 
-	EqualString, 
+	HashString,
+	EqualString,
 	NewAlloc
-> T2TypeClassMap; 
+> T2TypeClassMap;
 #else
 typedef	::std::hash_map
-<	
+<
 	::rtl::OString, // Typename
 	RTTypeClass, 	// TypeClass
-	HashString, 
+	HashString,
 	EqualString
-> T2TypeClassMap; 
+> T2TypeClassMap;
 #endif
 
 struct TypeManagerImpl
@@ -54,7 +54,7 @@ struct TypeManagerImpl
 		{}
 
 	sal_Int32		m_refCount;
-};	
+};
 
 class TypeManager
 {
@@ -89,7 +89,7 @@ public:
 	virtual TypeReader getTypeReader(const ::rtl::OString& /*name*/)
 		{ return TypeReader(); }
 	virtual RTTypeClass	getTypeClass(const ::rtl::OString& /*name*/)
-		{ return RT_TYPE_INVALID; } 
+		{ return RT_TYPE_INVALID; }
 
 	virtual void setBase(const ::rtl::OString& /*base*/) {}
 	virtual ::rtl::OString getBase() { return ::rtl::OString(); }
@@ -108,7 +108,7 @@ struct RegistryTypeManagerImpl
 {
 	RegistryTypeManagerImpl()
 		: m_pMergedRegistry(NULL)
-		, m_base("/") 
+		, m_base("/")
 		, m_isMerged(sal_False)
 		{}
 
@@ -116,8 +116,8 @@ struct RegistryTypeManagerImpl
 	RegistryList	m_registries;
 	Registry*		m_pMergedRegistry;
 	::rtl::OString 	m_base;
-	sal_Bool		m_isMerged;	
-};	
+	sal_Bool		m_isMerged;
+};
 
 class RegistryTypeManager : public TypeManager
 {
@@ -164,5 +164,5 @@ protected:
 protected:
 	RegistryTypeManagerImpl* m_pImpl;
 };
-	
+
 #endif // _CODEMAKER_TYPEMANAGER_HXX_

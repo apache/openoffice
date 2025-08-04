@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -78,7 +78,7 @@ class OPropertySetHelperInfo_Impl
 {
 	Sequence < Property > aInfos;
 
-public:	
+public:
 	OPropertySetHelperInfo_Impl( IPropertyArrayHelper & rHelper_ ) SAL_THROW( () );
 
 	// XPropertySetInfo-Methoden
@@ -110,7 +110,7 @@ Sequence< Property > OPropertySetHelperInfo_Impl::getProperties(void) throw(::co
 /**
  * Return the sequence of properties, which are provided throug the constructor.
  */
-Property OPropertySetHelperInfo_Impl::getPropertyByName( const OUString & PropertyName ) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::uno::RuntimeException) 
+Property OPropertySetHelperInfo_Impl::getPropertyByName( const OUString & PropertyName ) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::uno::RuntimeException)
 {
 	Property * pR;
 	pR = (Property *)bsearch( &PropertyName, aInfos.getConstArray(), aInfos.getLength(),
@@ -120,7 +120,7 @@ Property OPropertySetHelperInfo_Impl::getPropertyByName( const OUString & Proper
 		throw UnknownPropertyException();
 	}
 
-	return *pR;	
+	return *pR;
 }
 
 /**
@@ -273,10 +273,10 @@ Any OPropertySetHelper::getPropertyValue(
 
 // XPropertySet
 void OPropertySetHelper::addPropertyChangeListener(
-	const OUString& rPropertyName, 
+	const OUString& rPropertyName,
 	const Reference < XPropertyChangeListener > & rxListener )
-     throw(::com::sun::star::beans::UnknownPropertyException, 
-		   ::com::sun::star::lang::WrappedTargetException, 
+     throw(::com::sun::star::beans::UnknownPropertyException,
+		   ::com::sun::star::lang::WrappedTargetException,
 		   ::com::sun::star::uno::RuntimeException)
 {
 	MutexGuard aGuard( rBHelper.rMutex );
@@ -309,11 +309,11 @@ void OPropertySetHelper::addPropertyChangeListener(
 
 			aBoundLC.addInterface( (sal_Int32)nHandle, rxListener );
 		}
-		else 
+		else
 			// add the change listener to the helper container
-			rBHelper.aLC.addInterface( 
+			rBHelper.aLC.addInterface(
 							getPropertyTypeIdentifier(  ),
-							rxListener 
+							rxListener
 									 );
 	}
 }
@@ -321,10 +321,10 @@ void OPropertySetHelper::addPropertyChangeListener(
 
 // XPropertySet
 void OPropertySetHelper::removePropertyChangeListener(
-	const OUString& rPropertyName, 
+	const OUString& rPropertyName,
 	const Reference < XPropertyChangeListener >& rxListener )
-	throw(::com::sun::star::beans::UnknownPropertyException, 
-		  ::com::sun::star::lang::WrappedTargetException, 
+	throw(::com::sun::star::beans::UnknownPropertyException,
+		  ::com::sun::star::lang::WrappedTargetException,
 		  ::com::sun::star::uno::RuntimeException)
 {
 	MutexGuard aGuard( rBHelper.rMutex );
@@ -345,9 +345,9 @@ void OPropertySetHelper::removePropertyChangeListener(
 		}
 		else {
 			// remove the change listener to the helper container
-			rBHelper.aLC.removeInterface( 
+			rBHelper.aLC.removeInterface(
 							getPropertyTypeIdentifier(  ),
-							rxListener 
+							rxListener
 										);
 		}
 	}
@@ -357,8 +357,8 @@ void OPropertySetHelper::removePropertyChangeListener(
 void OPropertySetHelper::addVetoableChangeListener(
 	const OUString& rPropertyName,
 	const Reference< XVetoableChangeListener > & rxListener )
-	throw(::com::sun::star::beans::UnknownPropertyException, 
-		  ::com::sun::star::lang::WrappedTargetException, 
+	throw(::com::sun::star::beans::UnknownPropertyException,
+		  ::com::sun::star::lang::WrappedTargetException,
 		  ::com::sun::star::uno::RuntimeException)
 {
 	MutexGuard aGuard( rBHelper.rMutex );
@@ -392,9 +392,9 @@ void OPropertySetHelper::addVetoableChangeListener(
 		}
 		else
 			// add the vetoable listener to the helper container
-			rBHelper.aLC.addInterface( 
+			rBHelper.aLC.addInterface(
 								getVetoableTypeIdentifier(  ),
-								rxListener 
+								rxListener
 									 );
 	}
 }
@@ -403,8 +403,8 @@ void OPropertySetHelper::addVetoableChangeListener(
 void OPropertySetHelper::removeVetoableChangeListener(
 	const OUString& rPropertyName,
 	const Reference < XVetoableChangeListener > & rxListener )
-	throw(::com::sun::star::beans::UnknownPropertyException, 
-		  ::com::sun::star::lang::WrappedTargetException, 
+	throw(::com::sun::star::beans::UnknownPropertyException,
+		  ::com::sun::star::lang::WrappedTargetException,
 		  ::com::sun::star::uno::RuntimeException)
 {
 	MutexGuard aGuard( rBHelper.rMutex );
@@ -427,9 +427,9 @@ void OPropertySetHelper::removeVetoableChangeListener(
 		}
 		else
 			// add the vetoable listener to the helper container
-			rBHelper.aLC.removeInterface( 
-								getVetoableTypeIdentifier( ), 
-								rxListener 
+			rBHelper.aLC.removeInterface(
+								getVetoableTypeIdentifier( ),
+								rxListener
 										);
 	}
 }
@@ -487,10 +487,10 @@ void OPropertySetHelper::setDependentFastPropertyValue( sal_Int32 i_handle, cons
 
 // XFastPropertySet
 void OPropertySetHelper::setFastPropertyValue( sal_Int32 nHandle, const Any& rValue )
-	 throw(::com::sun::star::beans::UnknownPropertyException, 
-		   ::com::sun::star::beans::PropertyVetoException, 
-		   ::com::sun::star::lang::IllegalArgumentException, 
-		   ::com::sun::star::lang::WrappedTargetException, 
+	 throw(::com::sun::star::beans::UnknownPropertyException,
+		   ::com::sun::star::beans::PropertyVetoException,
+		   ::com::sun::star::lang::IllegalArgumentException,
+		   ::com::sun::star::lang::WrappedTargetException,
 		   ::com::sun::star::uno::RuntimeException)
 {
 	OSL_ENSURE( !rBHelper.bInDispose, "do not setFastPropertyValue in the dispose call" );
@@ -557,8 +557,8 @@ void OPropertySetHelper::setFastPropertyValue( sal_Int32 nHandle, const Any& rVa
 
 // XFastPropertySet
 Any OPropertySetHelper::getFastPropertyValue( sal_Int32 nHandle )
-	 throw(::com::sun::star::beans::UnknownPropertyException, 
-		   ::com::sun::star::lang::WrappedTargetException, 
+	 throw(::com::sun::star::beans::UnknownPropertyException,
+		   ::com::sun::star::lang::WrappedTargetException,
 		   ::com::sun::star::uno::RuntimeException)
 
 {
@@ -647,7 +647,7 @@ void OPropertySetHelper::fire
 
 			if(
                (bVetoable && (nAttributes & PropertyAttribute::CONSTRAINED)) ||
-               (!bVetoable && (nAttributes & PropertyAttribute::BOUND)) 
+               (!bVetoable && (nAttributes & PropertyAttribute::BOUND))
               )
 			{
 				pEvts[nChangesLen].Source = xSource;
@@ -719,13 +719,13 @@ void OPropertySetHelper::fire
 			// broadcast to all listeners with "" property name
 			if( bVetoable ){
 				// fire change Events?
-				pLC = rBHelper.aLC.getContainer( 
+				pLC = rBHelper.aLC.getContainer(
 							getVetoableTypeIdentifier()
 												);
 			}
 			else {
-				pLC = rBHelper.aLC.getContainer( 
-							getPropertyTypeIdentifier(  ) 
+				pLC = rBHelper.aLC.getContainer(
+							getPropertyTypeIdentifier(  )
 												);
 			}
 			if( pLC )
@@ -781,7 +781,7 @@ void OPropertySetHelper::fire
 		if( !bVetoable )
 		{
 			OInterfaceContainerHelper * pCont = 0;
-			pCont = rBHelper.aLC.getContainer( 
+			pCont = rBHelper.aLC.getContainer(
 								getPropertiesTypeIdentifier(  )
 											 );
 			if( pCont )
@@ -894,7 +894,7 @@ void OPropertySetHelper::setFastPropertyValues(
 		// fire change events
 		impl_fireAll( pHandles, pConvertedValues, pOldValues, n );
 	}
-	catch( ... ) 
+	catch( ... )
 	{
 		delete [] pOldValues;
 		delete [] pConvertedValues;
@@ -929,7 +929,7 @@ void OPropertySetHelper::setPropertyValues(
 	catch( ... )
 	{
 		delete [] pHandles;
-		throw; 
+		throw;
 	}
 	delete [] pHandles;
 }
@@ -959,8 +959,8 @@ Sequence<Any> OPropertySetHelper::getPropertyValues( const Sequence<OUString>& r
 }
 
 // XMultiPropertySet
-void OPropertySetHelper::addPropertiesChangeListener( 
-	const Sequence<OUString> & , 
+void OPropertySetHelper::addPropertiesChangeListener(
+	const Sequence<OUString> & ,
 	const Reference < XPropertiesChangeListener > & rListener )
 	throw(::com::sun::star::uno::RuntimeException)
 {
@@ -1075,7 +1075,7 @@ void OPropertySetHelper::removePropertyStateChangeListener( const OUString& aPro
 
 //  		// Only ascii strings allowed with this helper !
 //  		OSL_ASSERT( p[i] < 127 );
-//  		pw[i] = p[i];	
+//  		pw[i] = p[i];
 //  	}
 //  	OUString ow( pw , nLen );
 //  	delete pw;
@@ -1094,7 +1094,7 @@ static int compare_Property_Impl( const void *arg1, const void *arg2 )
 
 void OPropertyArrayHelper::init( sal_Bool bSorted ) SAL_THROW( () )
 {
-	sal_Int32 i, nElements = aInfos.getLength();	
+	sal_Int32 i, nElements = aInfos.getLength();
 	const Property* pProperties = aInfos.getConstArray();
 
 	for( i = 1; i < nElements; i++ )
@@ -1126,17 +1126,17 @@ OPropertyArrayHelper::OPropertyArrayHelper(
 	sal_Int32 nEle,
 	sal_Bool bSorted )
 	SAL_THROW( () )
-	: aInfos(pProps, nEle)	
+	: aInfos(pProps, nEle)
 	, bRightOrdered( sal_False )
 {
 	init( bSorted );
 }
 
-OPropertyArrayHelper::OPropertyArrayHelper( 
+OPropertyArrayHelper::OPropertyArrayHelper(
 	const Sequence< Property > & aProps,
 	sal_Bool bSorted )
 	SAL_THROW( () )
-	: aInfos(aProps)	
+	: aInfos(aProps)
 	, bRightOrdered( sal_False )
 {
 	init( bSorted );
@@ -1157,7 +1157,7 @@ sal_Bool OPropertyArrayHelper::fillPropertyMembersByHandle
 )
 {
 	const Property* pProperties = aInfos.getConstArray();
-	sal_Int32 nElements = aInfos.getLength();	
+	sal_Int32 nElements = aInfos.getLength();
 
 	if( bRightOrdered )
 	{

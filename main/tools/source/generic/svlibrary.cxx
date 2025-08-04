@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -92,7 +92,7 @@ static uno::Sequence< rtl::OUString > GetMultiPaths_Impl()
 
 bool SvLibrary::LoadModule( osl::Module& rModule, const rtl::OUString& rLibName, ::oslGenericFunction baseModule, ::sal_Int32 mode )
 {
-	static uno::Sequence < rtl::OUString > aPaths = GetMultiPaths_Impl();	
+	static uno::Sequence < rtl::OUString > aPaths = GetMultiPaths_Impl();
 	bool bLoaded = false;
 
 	for (sal_Int32 n=0; n<aPaths.getLength(); n++)
@@ -108,7 +108,7 @@ bool SvLibrary::LoadModule( osl::Module& rModule, const rtl::OUString& rLibName,
 
 			aMod = aMod.copy( sizeof("vnd.sun.star.expand:") -1 );
 			aMod = ::rtl::Uri::decode( aMod, rtl_UriDecodeWithCharset, RTL_TEXTENCODING_UTF8 );
-			aMod = xMacroExpander->expandMacros( aMod ); 
+			aMod = xMacroExpander->expandMacros( aMod );
 		}
 
 		aMod += ::rtl::OUString( sal_Unicode('/') );
@@ -117,7 +117,7 @@ bool SvLibrary::LoadModule( osl::Module& rModule, const rtl::OUString& rLibName,
 		if ( bLoaded )
 			break;
 	}
-	
+
 	if (!bLoaded )
 		bLoaded = rModule.loadRelative( baseModule, rLibName, mode );
 

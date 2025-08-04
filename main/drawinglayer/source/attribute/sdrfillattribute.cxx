@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -49,10 +49,10 @@ namespace drawinglayer
 
 		public:
 			ImpSdrFillAttribute(
-				double fTransparence, 
-                const basegfx::BColor& rColor, 
-                const FillGradientAttribute& rGradient, 
-				const FillHatchAttribute& rHatch, 
+				double fTransparence,
+                const basegfx::BColor& rColor,
+                const FillGradientAttribute& rGradient,
+				const FillHatchAttribute& rHatch,
                 const SdrFillGraphicAttribute& rFillGraphic)
 			:	mnRefCount(0),
 			    mfTransparence(fTransparence),
@@ -87,7 +87,7 @@ namespace drawinglayer
                 if(!pDefault)
                 {
                     pDefault = new ImpSdrFillAttribute(
-				        0.0, 
+				        0.0,
                         basegfx::BColor(),
                         FillGradientAttribute(),
 				        FillHatchAttribute(),
@@ -102,10 +102,10 @@ namespace drawinglayer
 		};
 
         SdrFillAttribute::SdrFillAttribute(
-			double fTransparence, 
-            const basegfx::BColor& rColor, 
-            const FillGradientAttribute& rGradient, 
-			const FillHatchAttribute& rHatch, 
+			double fTransparence,
+            const basegfx::BColor& rColor,
+            const FillGradientAttribute& rGradient,
+			const FillHatchAttribute& rHatch,
             const SdrFillGraphicAttribute& rFillGraphic)
 		:	mpSdrFillAttribute(
                 new ImpSdrFillAttribute(
@@ -154,7 +154,7 @@ namespace drawinglayer
 				{
 					delete mpSdrFillAttribute;
 				}
-				
+
 				mpSdrFillAttribute = rCandidate.mpSdrFillAttribute;
 				mpSdrFillAttribute->mnRefCount++;
 			}
@@ -177,29 +177,29 @@ namespace drawinglayer
 			return (*rCandidate.mpSdrFillAttribute == *mpSdrFillAttribute);
 		}
 
-		double SdrFillAttribute::getTransparence() const 
-        { 
-            return mpSdrFillAttribute->getTransparence();	
+		double SdrFillAttribute::getTransparence() const
+        {
+            return mpSdrFillAttribute->getTransparence();
         }
 
-		const basegfx::BColor& SdrFillAttribute::getColor() const 
-        { 
-            return mpSdrFillAttribute->getColor(); 
+		const basegfx::BColor& SdrFillAttribute::getColor() const
+        {
+            return mpSdrFillAttribute->getColor();
         }
 
-		const FillGradientAttribute& SdrFillAttribute::getGradient() const 
-        { 
-            return mpSdrFillAttribute->getGradient(); 
+		const FillGradientAttribute& SdrFillAttribute::getGradient() const
+        {
+            return mpSdrFillAttribute->getGradient();
         }
 
-		const FillHatchAttribute& SdrFillAttribute::getHatch() const 
-        { 
-            return mpSdrFillAttribute->getHatch(); 
+		const FillHatchAttribute& SdrFillAttribute::getHatch() const
+        {
+            return mpSdrFillAttribute->getHatch();
         }
 
-		const SdrFillGraphicAttribute& SdrFillAttribute::getFillGraphic() const 
-        { 
-            return mpSdrFillAttribute->getFillGraphic(); 
+		const SdrFillGraphicAttribute& SdrFillAttribute::getFillGraphic() const
+        {
+            return mpSdrFillAttribute->getFillGraphic();
         }
     } // end of namespace attribute
 } // end of namespace drawinglayer

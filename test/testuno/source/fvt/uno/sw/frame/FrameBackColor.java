@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 package fvt.uno.sw.frame;
 
@@ -47,7 +47,7 @@ public class FrameBackColor {
 	private XText xText=null;
 	@Before
 	public void setUp() throws Exception {
-		app.start();		
+		app.start();
 	}
 
 	@After
@@ -67,7 +67,7 @@ public class FrameBackColor {
 		xText.insertTextContent(xTextCursor,xTextFrame,false);
 		XPropertySet xFrameProps = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xTextFrame);
 		xFrameProps.setPropertyValue("BackColor",0x0000FF00);
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class,SWUtil.saveTo_Override_reload(xTextDocument, "writer8",Testspace.getPath("output/test.odt"), app));
 		XTextFramesSupplier xTFS_odt = (XTextFramesSupplier) UnoRuntime.queryInterface(XTextFramesSupplier.class, assertDocument_odt);
 		XNameAccess xTextFrames_odt = xTFS_odt.getTextFrames();
@@ -76,7 +76,7 @@ public class FrameBackColor {
 		XPropertySet xFrameProps_assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextFrame_Assert_odt);
 		assertEquals("verify Frame background color",0x0000FF00,xFrameProps_assert_odt.getPropertyValue("BackColor"));
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class,SWUtil.saveTo_Override_reload(xTextDocument, "MS Word 97",Testspace.getPath("output/test.doc"), app));
 		XTextFramesSupplier xTFS_doc = (XTextFramesSupplier) UnoRuntime.queryInterface(XTextFramesSupplier.class, assertDocument_doc);
 		XNameAccess xTextFrames_doc = xTFS_doc.getTextFrames();

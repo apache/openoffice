@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -543,7 +543,7 @@ uno::Reference< util::XCloseable > OCommonEmbeddedObject::LoadDocumentFromStorag
 		{
 		}
 
-		OSL_ENSURE( aTempFileURL.getLength(), "Coudn't retrieve temporary file URL!\n" );
+		OSL_ENSURE( aTempFileURL.getLength(), "Couldn't retrieve temporary file URL!\n" );
 
         aLoadArgs.put( "URL", aTempFileURL );
         aLoadArgs.put( "InputStream", xTempInpStream );
@@ -897,7 +897,7 @@ uno::Reference< util::XCloseable > OCommonEmbeddedObject::CreateTempDocFromLink_
 		{
 		}
 
-		OSL_ENSURE( aTempFileURL.getLength(), "Coudn't retrieve temporary file URL!\n" );
+		OSL_ENSURE( aTempFileURL.getLength(), "Couldn't retrieve temporary file URL!\n" );
 
 		aTempMediaDescr[0].Name = ::rtl::OUString::createFromAscii( "URL" );
 		aTempMediaDescr[0].Value <<= aTempFileURL;
@@ -1744,7 +1744,7 @@ void SAL_CALL OCommonEmbeddedObject::reload(
 			LinkInit_Impl( aObject, lArguments, lObjArgs );
 		}
 	}
-	
+
 	m_aDocMediaDescriptor = GetValuableArgs_Impl( lArguments, sal_True );
 
 	// TODO: use lObjArgs for StoreVisualReplacement

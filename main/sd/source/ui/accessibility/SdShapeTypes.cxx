@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -69,59 +69,59 @@ AccessibleShape*
 
 
 ShapeTypeDescriptor aSdShapeTypeList[] = {
-    ShapeTypeDescriptor (   
+    ShapeTypeDescriptor (
         PRESENTATION_OUTLINER,
         ::rtl::OUString::createFromAscii ("com.sun.star.presentation.OutlinerShape"),
-        CreateSdAccessibleShape ),    
-    ShapeTypeDescriptor (   
+        CreateSdAccessibleShape ),
+    ShapeTypeDescriptor (
         PRESENTATION_SUBTITLE,
         ::rtl::OUString::createFromAscii ("com.sun.star.presentation.SubtitleShape"),
-        CreateSdAccessibleShape ),    
-    ShapeTypeDescriptor (   
+        CreateSdAccessibleShape ),
+    ShapeTypeDescriptor (
         PRESENTATION_GRAPHIC_OBJECT,
         ::rtl::OUString::createFromAscii ("com.sun.star.presentation.GraphicObjectShape"),
-        CreateSdAccessibleShape ),    
-    ShapeTypeDescriptor (   
+        CreateSdAccessibleShape ),
+    ShapeTypeDescriptor (
         PRESENTATION_PAGE,
         ::rtl::OUString::createFromAscii ("com.sun.star.presentation.PageShape"),
-        CreateSdAccessibleShape ),    
-    ShapeTypeDescriptor (   
+        CreateSdAccessibleShape ),
+    ShapeTypeDescriptor (
         PRESENTATION_OLE,
         ::rtl::OUString::createFromAscii ("com.sun.star.presentation.OLE2Shape"),
-        CreateSdAccessibleShape ),    
-    ShapeTypeDescriptor (   
+        CreateSdAccessibleShape ),
+    ShapeTypeDescriptor (
         PRESENTATION_CHART,
         ::rtl::OUString::createFromAscii ("com.sun.star.presentation.ChartShape"),
-        CreateSdAccessibleShape ),    
-    ShapeTypeDescriptor (   
+        CreateSdAccessibleShape ),
+    ShapeTypeDescriptor (
         PRESENTATION_TABLE,
         ::rtl::OUString::createFromAscii ("com.sun.star.presentation.TableShape"),
-        CreateSdAccessibleShape ),    
-    ShapeTypeDescriptor (   
+        CreateSdAccessibleShape ),
+    ShapeTypeDescriptor (
         PRESENTATION_NOTES,
         ::rtl::OUString::createFromAscii ("com.sun.star.presentation.NotesShape"),
-        CreateSdAccessibleShape ),    
-    ShapeTypeDescriptor (   
+        CreateSdAccessibleShape ),
+    ShapeTypeDescriptor (
         PRESENTATION_TITLE,
         ::rtl::OUString::createFromAscii ("com.sun.star.presentation.TitleTextShape"),
         CreateSdAccessibleShape ),
-    ShapeTypeDescriptor (   
+    ShapeTypeDescriptor (
         PRESENTATION_HANDOUT,
         ::rtl::OUString::createFromAscii ("com.sun.star.presentation.HandoutShape"),
         CreateSdAccessibleShape ),
-    ShapeTypeDescriptor (   
+    ShapeTypeDescriptor (
 		PRESENTATION_HEADER,
 		::rtl::OUString::createFromAscii ("com.sun.star.presentation.HeaderShape"),
         CreateSdAccessibleShape ),
-    ShapeTypeDescriptor (   
+    ShapeTypeDescriptor (
 		PRESENTATION_FOOTER,
 		::rtl::OUString::createFromAscii ("com.sun.star.presentation.FooterShape"),
         CreateSdAccessibleShape ),
-    ShapeTypeDescriptor (   
+    ShapeTypeDescriptor (
 		PRESENTATION_DATETIME,
 		::rtl::OUString::createFromAscii ("com.sun.star.presentation.DateTimeShape"),
         CreateSdAccessibleShape ),
-    ShapeTypeDescriptor (   
+    ShapeTypeDescriptor (
 		PRESENTATION_PAGENUMBER,
 		::rtl::OUString::createFromAscii ("com.sun.star.presentation.SlideNumberShape"),
         CreateSdAccessibleShape )

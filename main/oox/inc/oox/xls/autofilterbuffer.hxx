@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -43,12 +43,12 @@ namespace xls {
 struct ApiFilterSettings
 {
     typedef ::std::vector< ::com::sun::star::sheet::TableFilterField2 > FilterFieldVector;
-    
+
     FilterFieldVector   maFilterFields;     /// List of UNO API filter settings.
     OptValue< bool >    mobNeedsRegExp;     /// If set, requires regular expressions to be enabled/disabled.
 
     explicit            ApiFilterSettings();
-    
+
     void                appendField( bool bAnd, sal_Int32 nOperator, double fValue );
     void                appendField( bool bAnd, sal_Int32 nOperator, const ::rtl::OUString& rValue );
 };
@@ -134,12 +134,12 @@ struct FilterCriterionModel
     sal_Int32           mnOperator;     /// Comparison operator.
     sal_uInt8           mnDataType;     /// Operand data type (BIFF only).
     sal_uInt8           mnStrLen;       /// Length of string operand (BIFF5-BIFF8 only).
-    
+
     explicit            FilterCriterionModel();
 
     /** Sets the passed BIFF operator constant. */
     void                setBiffOperator( sal_uInt8 nOperator );
-    
+
     /** Imports the criterion model from the passed BIFF12 stream. */
     void                readBiffData( SequenceInputStream& rStrm );
     /** Imports the initial criterion data from the passed BIFF5/BIFF8 stream. */
@@ -257,7 +257,7 @@ public:
     /** Applies the filters to the passed database range object.
         @return  True = this buffer contains valid auto filter settings. */
     bool                finalizeImport( const ::com::sun::star::uno::Reference< ::com::sun::star::sheet::XDatabaseRange >& rxDatabaseRange );
-    
+
 private:
     /** Returns the auto filter object used to perform auto filtering. */
     AutoFilter*         getActiveAutoFilter();

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -336,7 +336,7 @@ xub_StrLen SwAttrIter::GetNextAttr( ) const
 		nNext=p;
 	    else
 		nNext=p+1;
-	}	
+	}
     if( pRedln )
 		return pRedln->GetNextRedln( nNext );
 	return nNext;
@@ -432,7 +432,7 @@ sal_Bool SwTxtNode::IsSymbol( const xub_StrLen nBegin ) const//swmodtest 080307
 	SwScriptInfo aScriptInfo;
     SwAttrIter aIter( *(SwTxtNode*)this, aScriptInfo );
     aIter.Seek( nBegin );
-    return aIter.GetFnt()->IsSymbol( 
+    return aIter.GetFnt()->IsSymbol(
 		const_cast<ViewShell *>(getIDocumentLayoutAccess()->GetCurrentViewShell()) );//swmod 080311
 }
 
@@ -698,7 +698,7 @@ void SwTxtNode::GetMinMaxSize( sal_uLong nIndex, sal_uLong& rMin, sal_uLong &rMa
             case CHAR_HARDHYPHEN:
             {
                 XubString sTmp( cChar );
-                SwDrawTextInfo aDrawInf( const_cast<ViewShell *>(getIDocumentLayoutAccess()->GetCurrentViewShell()), 
+                SwDrawTextInfo aDrawInf( const_cast<ViewShell *>(getIDocumentLayoutAccess()->GetCurrentViewShell()),
 					*pOut, 0, sTmp, 0, 1, 0, sal_False );//swmod 080311
                 nAktWidth = aIter.GetFnt()->_GetTxtSize( aDrawInf ).Width();
                 aArg.nWordWidth += nAktWidth;

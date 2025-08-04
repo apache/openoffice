@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -102,7 +102,7 @@ public:
     static StackMode getStackMode(
         const ::com::sun::star::uno::Reference<
             ::com::sun::star::chart2::XDiagram > & xDiagram,
-        bool& rbFound, bool& rbAmbiguous 
+        bool& rbFound, bool& rbAmbiguous
         );
 
     /** @param bOnlyAtFirstChartType
@@ -121,7 +121,7 @@ public:
 
     /** Retrieves the stackmode of the first DataSeries or none. If the series have differing stack
         modes, rbAmbiguous is set to true. If no series is there rbFound is set to false.
-    
+
         @param xCorrespondingCoordinateSystem
             The coordinate system in which the given chart type xChartType is
             located.  (This is needed for determining percent stacking.  If
@@ -249,7 +249,7 @@ public:
     static bool isSupportingDateAxis( const ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XDiagram >& xDiagram );
     static bool isDateNumberFormat( sal_Int32 nNumberFormat, const ::com::sun::star::uno::Reference< ::com::sun::star::util::XNumberFormats >& xNumberFormats );
     static sal_Int32 getDateNumberFormat( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XNumberFormatsSupplier >& xNumberFormatsSupplier );
-    
+
     static sal_Int32 getPercentNumberFormat( const ::com::sun::star::uno::Reference<
                 ::com::sun::star::util::XNumberFormatsSupplier >& xNumberFormatsSupplier );
 

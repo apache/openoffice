@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -88,17 +88,17 @@ protected:
     virtual void createSdrDragEntries();
 
 public:
-	PathDragMove(SdrDragView& rNewView, 
+	PathDragMove(SdrDragView& rNewView,
 		const rtl::Reference <MotionPathTag >& xTag,
 		const basegfx::B2DPolyPolygon& rPathPolyPolygon)
-	:	SdrDragMove(rNewView), 
+	:	SdrDragMove(rNewView),
 		maPathPolyPolygon(rPathPolyPolygon),
 		mxTag( xTag )
 	{}
 
-	PathDragMove(SdrDragView& rNewView, 
+	PathDragMove(SdrDragView& rNewView,
 		const rtl::Reference <MotionPathTag >& xTag)
-	:	SdrDragMove(rNewView), 
+	:	SdrDragMove(rNewView),
 		maPathPolyPolygon(),
 		mxTag( xTag )
 	{}
@@ -152,17 +152,17 @@ protected:
     virtual void createSdrDragEntries();
 
 public:
-	PathDragResize(SdrDragView& rNewView, 
+	PathDragResize(SdrDragView& rNewView,
 		const rtl::Reference <MotionPathTag >& xTag,
 		const basegfx::B2DPolyPolygon& rPathPolyPolygon)
-	:	SdrDragResize(rNewView), 
+	:	SdrDragResize(rNewView),
 		maPathPolyPolygon(rPathPolyPolygon),
 		mxTag( xTag )
 	{}
 
-	PathDragResize(SdrDragView& rNewView, 
+	PathDragResize(SdrDragView& rNewView,
 		const rtl::Reference <MotionPathTag >& xTag)
-	:	SdrDragResize(rNewView), 
+	:	SdrDragResize(rNewView),
 		maPathPolyPolygon(),
 		mxTag( xTag )
 	{}
@@ -241,7 +241,7 @@ void PathDragObjOwn::createSdrDragEntries()
 bool PathDragObjOwn::EndSdrDrag(bool /*bCopy*/)
 {
 	Hide();
-	
+
     SdrObject* pObj = GetDragObj();
 
     if(pObj)
@@ -292,7 +292,7 @@ void SdPathHdl::CreateB2dIAObject()
 {
 	// first throw away old one
 	GetRidOfIAObject();
-	
+
 	if(pHdlList)
 	{
 		SdrMarkView* pView = pHdlList->GetView();
@@ -506,7 +506,7 @@ bool MotionPathTag::MouseButtonDown( const MouseEvent& rMEvt, SmartHdl& rHdl )
 			return true;
 		}
 		else if( rMEvt.IsLeft() )
-		{			
+		{
 			OutputDevice* pOut = mrView.GetViewShell()->GetActiveWindow();
 			Point aMDPos( pOut->PixelToLogic( rMEvt.GetPosPixel() ) );
 
@@ -519,7 +519,7 @@ bool MotionPathTag::MouseButtonDown( const MouseEvent& rMEvt, SmartHdl& rHdl )
 
 				Point aPt(aMDPos); // - pMarkedPV->GetOffset());
 
-				if(bNewObj) 
+				if(bNewObj)
 					aPt = mrView.GetSnapPos(aPt,mrView.GetSdrPageView());
 
 				sal_Bool bClosed0(mpPathObj->IsClosedObj());
@@ -527,21 +527,21 @@ bool MotionPathTag::MouseButtonDown( const MouseEvent& rMEvt, SmartHdl& rHdl )
 				sal_uInt32 nInsPointNum = mpPathObj->NbcInsPointOld(aPt, bNewObj, sal_True);
 
 				if(bClosed0 != mpPathObj->IsClosedObj())
-				{ 
+				{
 					// Obj was closed implicit
 					// object changed
 					mpPathObj->SetChanged();
 					mpPathObj->BroadcastObjectChange();
 				}
 
-				if(0xffffffff != nInsPointNum) 
+				if(0xffffffff != nInsPointNum)
 				{
 					mrView.UnmarkAllPoints();
 					mrView.updateHandles();
 
 					bool bRet = mrView.BegDragObj(aMDPos, pOut, mrView.GetHdl(nInsPointNum+1), 0, new PathDragObjOwn( mrView ) );
 
-					if (bRet) 
+					if (bRet)
 					{
 						const_cast< SdrDragStat* >( &mrView.GetDragStat() )->SetMinMoved();
 						mrView.MovDragObj(aMDPos);
@@ -571,7 +571,7 @@ bool MotionPathTag::MouseButtonDown( const MouseEvent& rMEvt, SmartHdl& rHdl )
 				            pHdl = dynamic_cast< SmartHdl* >( mrView.PickHandle(aMDPos) );
 					    }
 					}
-	
+
 		            if (pHdl)
 				        mrView.MarkPoint(*pHdl);
                 }
@@ -581,7 +581,7 @@ bool MotionPathTag::MouseButtonDown( const MouseEvent& rMEvt, SmartHdl& rHdl )
 				{
 					mrView.BrkAction();
 					const sal_uInt16 nDrgLog = (sal_uInt16)pOut->PixelToLogic(Size(DRGPIX,0)).Width();
-					
+
 					rtl::Reference< MotionPathTag > xTag( this );
 					SdrDragMethod* pDragMethod;
 
@@ -602,12 +602,12 @@ bool MotionPathTag::MouseButtonDown( const MouseEvent& rMEvt, SmartHdl& rHdl )
 					{
 						pDragMethod = new PathDragResize( mrView, xTag, aDragPoly );
 					}
-					
+
 					mrView.BegDragObj(aMDPos, NULL, pHdl, nDrgLog, pDragMethod );
 				}
 				return true;
 			}
-		} 
+		}
 	}
 
 	return false;
@@ -697,7 +697,7 @@ bool MotionPathTag::OnMarkHandle( const KeyEvent& rKEvt )
 		// rescue ID of point with focus
 		sal_uInt32 nPol(pHdl->GetPolyNum());
 		sal_uInt32 nPnt(pHdl->GetPointNum());
-			
+
 		if(mrView.IsPointMarked(pHdl))
 		{
 			if(rKEvt.GetKeyCode().IsShift())
@@ -722,7 +722,7 @@ bool MotionPathTag::OnMarkHandle( const KeyEvent& rKEvt )
 			for(sal_uInt32 a(0); !pNewOne && a < rHdlList.GetHdlCount(); a++)
 			{
 				SdrHdl* pAct = rHdlList.GetHdl(a);
-				
+
 				if(pAct && pAct->GetKind() == HDL_POLY && pAct->GetPolyNum() == nPol && pAct->GetPointNum() == nPnt)
 					pNewOne = pAct;
 			}
@@ -1003,13 +1003,13 @@ void MotionPathTag::addCustomHandles( SdrHdlList& rHandlerList )
 					const bool bSelected= pMrkPnts && pMrkPnts->Exist(sal::static_int_cast< sal_uInt16 >(nHandle));
 					pSmartHdl->SetSelected(bSelected);
 
-					if( mrView.IsPlusHandlesAlwaysVisible() || bSelected ) 
+					if( mrView.IsPlusHandlesAlwaysVisible() || bSelected )
 					{
 						sal_uInt32 nPlusAnz=mpPathObj->GetPlusHdlCount(*pSmartHdl);
-						for (sal_uInt32 nPlusNum=0; nPlusNum<nPlusAnz; nPlusNum++) 
+						for (sal_uInt32 nPlusNum=0; nPlusNum<nPlusAnz; nPlusNum++)
 						{
 							SdrHdl* pPlusHdl = mpPathObj->GetPlusHdl(*pSmartHdl,nPlusNum);
-							if (pPlusHdl!=NULL) 
+							if (pPlusHdl!=NULL)
 							{
 								pPlusHdl->SetObj(mpPathObj);
 								pPlusHdl->SetPageView(mrView.GetSdrPageView());
@@ -1024,22 +1024,22 @@ void MotionPathTag::addCustomHandles( SdrHdlList& rHandlerList )
 			{
 				Rectangle aRect(mpPathObj->GetCurrentBoundRect());
 
-				if(!aRect.IsEmpty()) 
+				if(!aRect.IsEmpty())
 				{
 					sal_uLong nCount = rHandlerList.GetHdlCount();
 
 					sal_Bool bWdt0=aRect.Left()==aRect.Right();
 					sal_Bool bHgt0=aRect.Top()==aRect.Bottom();
-					if (bWdt0 && bHgt0) 
+					if (bWdt0 && bHgt0)
 					{
 						rHandlerList.AddHdl(new SmartHdl( xThis, mpPathObj, aRect.TopLeft(),HDL_UPLFT));
-					} 
+					}
 					else if (bWdt0 || bHgt0)
 					{
 						rHandlerList.AddHdl(new SmartHdl( xThis, mpPathObj, aRect.TopLeft()    ,HDL_UPLFT));
 						rHandlerList.AddHdl(new SmartHdl( xThis, mpPathObj, aRect.BottomRight(),HDL_LWRGT));
-					} 
-					else 
+					}
+					else
 					{
 						if (!bWdt0 && !bHgt0) rHandlerList.AddHdl(new SmartHdl( xThis, mpPathObj, aRect.TopLeft()     ,HDL_UPLFT));
 						if (          !bHgt0) rHandlerList.AddHdl(new SmartHdl( xThis, mpPathObj, aRect.TopCenter()   ,HDL_UPPER));
@@ -1099,10 +1099,10 @@ void MotionPathTag::deselect()
 	{
 		SdrUShortCont* pPts = mpMark->GetMarkedPoints();
 
-		if( pPts ) 
+		if( pPts )
 			pPts->Clear();
 	}
-    
+
     selectionChanged();
 }
 
@@ -1129,7 +1129,7 @@ void MotionPathTag::DeleteMarkedPoints()
 
 		SdrUShortCont* pPts = mpMark->GetMarkedPoints();
 
-		if( pPts ) 
+		if( pPts )
 		{
 			PolyPolygonEditor aEditor( mpPathObj->GetPathPoly(), mpPathObj->IsClosed() );
 			if( aEditor.DeletePoints( pPts->getContainer() ) )
@@ -1189,10 +1189,10 @@ SdrPathSegmentKind MotionPathTag::GetMarkedSegmentsKind() const
 
 void MotionPathTag::SetMarkedSegmentsKind(SdrPathSegmentKind eKind)
 {
-	if(mpPathObj && isSelected() && (GetMarkedPointCount() != 0)) 
+	if(mpPathObj && isSelected() && (GetMarkedPointCount() != 0))
 	{
 		SdrUShortCont* pPts = mpMark->GetMarkedPoints();
-		if(pPts) 
+		if(pPts)
 		{
 			PolyPolygonEditor aEditor( mpPathObj->GetPathPoly(), mpPathObj->IsClosed() );
 			if(aEditor.SetSegmentsKind( eKind, pPts->getContainer()) )
@@ -1225,28 +1225,28 @@ SdrPathSmoothKind MotionPathTag::GetMarkedPointsSmooth() const
 void MotionPathTag::SetMarkedPointsSmooth(SdrPathSmoothKind eKind)
 {
 	basegfx::B2VectorContinuity eFlags;
-	
-	if(SDRPATHSMOOTH_ANGULAR == eKind) 
+
+	if(SDRPATHSMOOTH_ANGULAR == eKind)
 	{
 		eFlags = basegfx::CONTINUITY_NONE;
 	}
-	else if(SDRPATHSMOOTH_ASYMMETRIC == eKind) 
+	else if(SDRPATHSMOOTH_ASYMMETRIC == eKind)
 	{
 		eFlags = basegfx::CONTINUITY_C1;
 	}
-	else if(SDRPATHSMOOTH_SYMMETRIC == eKind) 
+	else if(SDRPATHSMOOTH_SYMMETRIC == eKind)
 	{
 		eFlags = basegfx::CONTINUITY_C2;
 	}
-	else 
+	else
 	{
 		return;
 	}
 
-	if(mpPathObj && mpMark && isSelected() && (GetMarkedPointCount() != 0)) 
+	if(mpPathObj && mpMark && isSelected() && (GetMarkedPointCount() != 0))
 	{
 		SdrUShortCont* pPts = mpMark->GetMarkedPoints();
-		if(pPts) 
+		if(pPts)
 		{
 			PolyPolygonEditor aEditor( mpPathObj->GetPathPoly(), mpPathObj->IsClosed() );
 			if(aEditor.SetPointsSmooth( eFlags, pPts->getContainer() ) )
@@ -1259,7 +1259,7 @@ void MotionPathTag::SetMarkedPointsSmooth(SdrPathSmoothKind eKind)
 		}
 	}
 }
-	
+
 void MotionPathTag::CloseMarkedObjects(sal_Bool /*bToggle*/, sal_Bool /*bOpen*/ )
 {
 	// not supported for motion path

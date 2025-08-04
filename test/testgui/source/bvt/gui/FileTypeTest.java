@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,20 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 /**
- * 
+ *
  */
 package bvt.gui;
 
@@ -44,7 +44,7 @@ import org.openoffice.test.common.Logger;
 import testlib.gui.SCTool;
 
 /**
- * 
+ *
  */
 public class FileTypeTest {
 
@@ -60,17 +60,17 @@ public class FileTypeTest {
 	public static void afterClass() {
 		app.stop();
 	}
-	
+
 	@Before
 	public void before() {
 		app.stop();
 		app.start();
 	}
-	
-	
+
+
 	/**
 	 * Test New/Save a text document
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -268,7 +268,7 @@ public class FileTypeTest {
 	 * New/Save a draw document 1. New a draw document 2. Insert a picture 3.
 	 * Save it as the input filename 4. Reopen the saved file 5. Check if the
 	 * picture is still there
-	 * 
+	 *
 	 * @param filename
 	 *            : filename to be saved
 	 * @throws Exception
@@ -326,7 +326,7 @@ public class FileTypeTest {
 	/**
 	 * New/Save a math 1. New a math 2. Insert a formula 3. Save it as the input
 	 * filename 4. Reopen the saved file 5. Check if the formula is still there
-	 * 
+	 *
 	 * @param filename
 	 *            : filename to be saved
 	 * @throws Exception

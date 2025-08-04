@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -102,49 +102,49 @@ namespace sdbtools
         EntryGuard aGuard( *this );
         return m_pImpl->sCatalog;
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL TableName::setCatalogName( const ::rtl::OUString& _catalogName ) throw (RuntimeException)
     {
         EntryGuard aGuard( *this );
         m_pImpl->sCatalog = _catalogName;
     }
-    
+
     //--------------------------------------------------------------------
     ::rtl::OUString SAL_CALL TableName::getSchemaName() throw (RuntimeException)
     {
         EntryGuard aGuard( *this );
         return m_pImpl->sSchema;
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL TableName::setSchemaName( const ::rtl::OUString& _schemaName ) throw (RuntimeException)
     {
         EntryGuard aGuard( *this );
         m_pImpl->sSchema = _schemaName;
     }
-    
+
     //--------------------------------------------------------------------
     ::rtl::OUString SAL_CALL TableName::getTableName() throw (RuntimeException)
     {
         EntryGuard aGuard( *this );
         return m_pImpl->sName;
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL TableName::setTableName( const ::rtl::OUString& _tableName ) throw (RuntimeException)
     {
         EntryGuard aGuard( *this );
         m_pImpl->sName = _tableName;
     }
-    
+
     //--------------------------------------------------------------------
     ::rtl::OUString SAL_CALL TableName::getNameForSelect() throw (RuntimeException)
     {
         EntryGuard aGuard( *this );
         return composeTableNameForSelect( getConnection(), m_pImpl->sCatalog, m_pImpl->sSchema, m_pImpl->sName );
     }
-    
+
     //--------------------------------------------------------------------
     Reference< XPropertySet > SAL_CALL TableName::getTable() throw (NoSuchElementException, RuntimeException)
     {
@@ -172,7 +172,7 @@ namespace sdbtools
 
         return xTable;
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL TableName::setTable( const Reference< XPropertySet >& _table ) throw (IllegalArgumentException, RuntimeException)
     {
@@ -202,7 +202,7 @@ namespace sdbtools
             throw IllegalArgumentException( e.Message, e.Context, 0 );
         }
     }
-    
+
     //--------------------------------------------------------------------
     namespace
     {
@@ -212,7 +212,7 @@ namespace sdbtools
         */
         EComposeRule lcl_translateCompositionType_throw( sal_Int32 _nType )
         {
-            struct 
+            struct
             {
                 sal_Int32       nCompositionType;
                 EComposeRule    eComposeRule;
@@ -252,7 +252,7 @@ namespace sdbtools
             m_pImpl->sCatalog, m_pImpl->sSchema, m_pImpl->sName, _Quote,
             lcl_translateCompositionType_throw( _Type ) );
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL TableName::setComposedName( const ::rtl::OUString& _ComposedName, ::sal_Int32 _Type ) throw (RuntimeException)
     {

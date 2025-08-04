@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -61,7 +61,7 @@ namespace drawinglayer
 			double											mfDirection;
             TextEffectStyle2D                               meTextEffectStyle2D;
 
-			/** the last used object to view transformtion used from getDecomposition 
+			/** the last used object to view transformtion used from getDecomposition
                 for decide buffering
              */
 			basegfx::B2DHomMatrix							maLastObjectToViewTransformation;
@@ -71,7 +71,7 @@ namespace drawinglayer
 			virtual Primitive2DSequence create2DDecomposition(const geometry::ViewInformation2D& rViewInformation) const;
 
 		public:
-            /// construcor
+            /// constructor
 			TextEffectPrimitive2D(
                 const Primitive2DSequence& rTextContent,
 				const basegfx::B2DPoint& rRotationCenter,

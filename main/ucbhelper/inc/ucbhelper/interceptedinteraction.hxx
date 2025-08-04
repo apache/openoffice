@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,7 +49,7 @@ namespace ucbhelper{
 
 /** @short  it wraps any other interaction handler and intercept
             its handle() requests.
-              
+
     @descr  This class can be used as:
             - instance if special interactions must be suppressed
               only
@@ -60,28 +60,28 @@ class UCBHELPER_DLLPUBLIC InterceptedInteraction : public ::cppu::WeakImplHelper
     //-------------------------------------------
     // types
     public:
-    
+
         struct InterceptedRequest
         {
             //-----------------------------------
             /** @short  marks an Handle as invalid.
              */
             static const sal_Int32 INVALID_HANDLE = -1;
-            
+
             //-----------------------------------
             /** @short  contains the interaction request, which should be intercepted. */
             ::com::sun::star::uno::Any Request;
-            
+
             //-----------------------------------
             /** @short  specify the fix continuation, which must be selected, if the
                         interaction could be intercepted successfully.
               */
             ::com::sun::star::uno::Type Continuation;
-            
+
             //-----------------------------------
             /** @short  specify, if both interactions must have the same type
                         or can be derived from.
-                        
+
                 @descr  Interaction base on exceptions - and exceptions are real types.
                         So they can be checked in its type. These parameter "MatchExact"
                         influence the type-check in the following way:
@@ -89,24 +89,24 @@ class UCBHELPER_DLLPUBLIC InterceptedInteraction : public ::cppu::WeakImplHelper
                                      if it supports exactly the same type ...
                                      or
                             FALSE => derived exceptions will be intercepted too.
-                            
+
                 @attention  This parameter does not influence the check of the continuation
                             type! The continuation must be matched exactly everytimes ...
              */
             sal_Bool MatchExact;
-            
+
             //-----------------------------------
             /** @short  its an unique identifier, which must be managed by the outside code.
-            
+
                 @descr  If there is a derived class, which overwrites the InterceptedInteraction::intercepted()
                         method, it will be called with a reference to an InterceptedRequest struct.
                         Then it can use the handle to react without checking the request type again.
              */
             sal_Int32 Handle;
-            
+
             //-----------------------------------
             /** @short  default ctor.
-            
+
                 @descr  Such constructed object can't be used really.
                         Might it will crash if its used!
                         Dont forget to initialize all(!) members ...
@@ -116,17 +116,17 @@ class UCBHELPER_DLLPUBLIC InterceptedInteraction : public ::cppu::WeakImplHelper
                 MatchExact = sal_False;
                 Handle     = INVALID_HANDLE;
             }
-            
+
             //-----------------------------------
             /** @short  initialize this instance.
-            
+
                 @param  nHandle
                         used to identify every intercepted request
-            
+
                 @param  aRequest
                         must contain an exception object, which can be checked
                         in its uno-type against the later handled interaction.
-                        
+
                 @param  aContinuation
                         must contain a continuation object, which is used
                         in its uno-type to locate the same continuation
@@ -147,12 +147,12 @@ class UCBHELPER_DLLPUBLIC InterceptedInteraction : public ::cppu::WeakImplHelper
                 MatchExact   = bMatchExact;
             }
         };
-    
+
         //---------------------------------------
         /** @short  represent the different states, which can occur
                     as result of an interception.
-                    
-            @see    impl_interceptRequest()                    
+
+            @see    impl_interceptRequest()
          */
         enum EInterceptionState
         {
@@ -165,26 +165,26 @@ class UCBHELPER_DLLPUBLIC InterceptedInteraction : public ::cppu::WeakImplHelper
             /** the request could be intercepted and the specified continuation could be selected successfully. */
             E_INTERCEPTED
         };
-        
+
     //-------------------------------------------
     // member
     protected:
-    
+
         //---------------------------------------
         /** @short  reference to the intercepted interaction handler.
-        
+
             @descr  NULL is allowed for this member!
                     All interaction will be aborted then ...
                     expecting th handle() was overwritten by
                     a derived class.
          */
         ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionHandler > m_xInterceptedHandler;
-        
+
         //---------------------------------------
         /** @short  these list contains the requests, which should be intercepted.
          */
-        ::std::vector< InterceptedRequest > m_lInterceptions;        
-    
+        ::std::vector< InterceptedRequest > m_lInterceptions;
+
     //-------------------------------------------
     // native interface
     public:
@@ -193,14 +193,14 @@ class UCBHELPER_DLLPUBLIC InterceptedInteraction : public ::cppu::WeakImplHelper
         /** @short  initialize a new instance with default values.
          */
         InterceptedInteraction();
-        
+
         //---------------------------------------
         /** @short  initialize a new instance with real values.
-        
+
             @param  xInterceptedHandler
                     the outside interaction handler, which should
                     be intercepted here.
-                    
+
             @param  lInterceptions
                     the list of intercepted requests.
          */
@@ -214,82 +214,82 @@ class UCBHELPER_DLLPUBLIC InterceptedInteraction : public ::cppu::WeakImplHelper
             @attention  If such interaction handler isn't set here,
                         all incoming requests will be aborted ...
                         if the right continuation is available!
-                    
+
             @param  xInterceptedHandler
                     the outside interaction handler, which should
                     be intercepted here.
-         */                    
+         */
         void setInterceptedHandler(const ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionHandler >& xInterceptedHandler);
-        
+
         //---------------------------------------
         /** @short  set a new list of intercepted interactions.
 
             @attention  If the interface method handle() will be overwritten by
                         a derived class, the functionality behind these static list
                         can't be used.
-                    
+
             @param  lInterceptions
                     the list of intercepted requests.
-         */                    
+         */
         void setInterceptions(const ::std::vector< InterceptedRequest >& lInterceptions);
-                    
+
         //---------------------------------------
         /** @short  extract a requested continuation from te list of available ones.
-        
+
             @param  lContinuations
                     the list of available continuations.
-                    
+
             @param  aType
                     is used to locate the right continuation,
                     by checking its interface type.
-                    
+
             @return A valid reference to the continuation, if it could be located ...
                     or an empty reference otherwise.
          */
         static ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionContinuation > extractContinuation(
                     const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionContinuation > >& lContinuations,
                     const ::com::sun::star::uno::Type&                                                                                             aType         );
-                    
+
     //-------------------------------------------
     // useable for derived classes
     protected:
-    
+
         //---------------------------------------
         /** @short  can be overwritten by a derived class to handle interceptions
                     outside.
-                    
+
             @descr  This base implementation checks, if the request could be intercepted
                     successfully. Then this method intercepted() is called.
                     The default implementation returns "NOT_INTERCEPTED" everytimes.
                     So the method impl_interceptRequest() uses the right continuation automatically.
-                    
+
                     If this method was overwritten and something different "NO_INTERCEPTED"
                     is returned, the method impl_interceptRequest() will return immediately with
                     the result, which is returned by this intercepted() method.
                     Then the continuations must be selected inside the intercepted() call!
-                    
+
             @param  rRequest
                     it points to the intercepted request (means the item of the
                     set interception list). e.g. its "Handle" member can be used
                     to identify it and react very easy, without the need to check the
                     type of the exception ...
-                    
+
             @param  xOrgRequest
                     points to the original interaction, which was intercepted.
                     It provides access to the exception and the list of possible
                     continuations.
-                    
+
             @return The result of this operation.
                     Note: If E_NOT_INTERCEPTED is returned the default handling of the base class
                     will be used automatically for this request!
          */
         virtual EInterceptionState intercepted(const InterceptedRequest&                                                             rRequest   ,
                                                const ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionRequest >& xOrgRequest);
-    
+
     //-------------------------------------------
     // uno interface
     public:
-    
+
         //---------------------------------------
         /** @short  implements the default handling of this class ....
                     or can be overwritten by any derived class.
@@ -303,39 +303,39 @@ class UCBHELPER_DLLPUBLIC InterceptedInteraction : public ::cppu::WeakImplHelper
                     If this method was overwritten by a derived implementation
                     -> the new implementation has to do everything by itself.
                     Of course it can access all members/helpers and work with it.
-                    But the default implementation isn't used automatically then.                    
-                    
+                    But the default implementation isn't used automatically then.
+
             @param  xRequest
                     the interaction request, which should be intercepted.
-         */                    
+         */
         virtual void SAL_CALL handle(const ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionRequest >& xRequest)
             throw(::com::sun::star::uno::RuntimeException);
-            
+
     //-------------------------------------------
     // helper
     private:
-    
+
         //---------------------------------------
         /** @short  implements the default handling:
                     - intercept or forward to internal handler.
          */
         UCBHELPER_DLLPRIVATE void impl_handleDefault(const ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionRequest >& xRequest);
-        
+
         //---------------------------------------
         /** @short  implements the interception of requests.
-        
+
             @descr  The incoming request will be analyzed, if it match
                     any request of the m_lIntercepions list.
                     If an interception could be found, its continuation will be
                     searched and selected.
-                    
+
                     The method return the state of that operation.
                     But it doesn't call the intercepted and here set
                     interaction handler. That has to be done in the outside method.
-                    
+
             @param  xRequest
                     the interaction request, which should be intercepted.
-                    
+
             @return A identifier, which indicates if the request was intercepted,
                     the continuation was found and selected ... or not.
          */

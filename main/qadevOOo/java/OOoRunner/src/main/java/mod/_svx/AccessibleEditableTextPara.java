@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -64,8 +64,8 @@ public class AccessibleEditableTextPara extends TestCase {
         TestParameters Param, PrintWriter log) {
 
         XInterface oObj = null;
-        
-        
+
+
         XModel aModel = (XModel)
             UnoRuntime.queryInterface(XModel.class, xSpreadsheetDoc);
 
@@ -82,15 +82,15 @@ public class AccessibleEditableTextPara extends TestCase {
             XAccessibleEditableText et = (XAccessibleEditableText) UnoRuntime.queryInterface(XAccessibleEditableText.class, oObj);
             et.setText("AccessibleEditablePara");
         } catch (com.sun.star.lang.IndexOutOfBoundsException e) {
-            
+
         }
         log.println("ImplementationName " + utils.getImplName(oObj));
 
         TestEnvironment tEnv = new TestEnvironment(oObj);
-        
+
         final XAccessibleEditableText edText = (XAccessibleEditableText)
-            UnoRuntime.queryInterface(XAccessibleEditableText.class,oObj) ;        
-        
+            UnoRuntime.queryInterface(XAccessibleEditableText.class,oObj) ;
+
         tEnv.addObjRelation("EventProducer",
             new ifc.accessibility._XAccessibleEventBroadcaster.EventProducer() {
                 public void fireEvent() {
@@ -98,7 +98,7 @@ public class AccessibleEditableTextPara extends TestCase {
                     int l = new String("AccessibleEditablePara").length();
                     edText.deleteText(0, l);
                     edText.setText("Event");
-                    edText.setText("AccessibleEditablePara");                    
+                    edText.setText("AccessibleEditablePara");
                     }catch(com.sun.star.lang.IndexOutOfBoundsException e) {}
                 }
             });
@@ -141,7 +141,7 @@ public class AccessibleEditableTextPara extends TestCase {
             throw new StatusException( "Couldn't create document ", e );
         }
     }
-    
+
     /**
     * Sleeps for 0.5 sec. to allow StarOffice to react on <code>
     * reset</code> call.
@@ -153,5 +153,5 @@ public class AccessibleEditableTextPara extends TestCase {
             log.println("While waiting :" + e) ;
         }
     }
-    
+
 }

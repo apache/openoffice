@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -62,7 +62,7 @@ SalData::SalData()
     if( s_aAutoReleaseKey == 0 )
         s_aAutoReleaseKey = osl_createThreadKey( releasePool );
 }
-    
+
 SalData::~SalData()
 {
     CGPatternRelease( mxP50Pattern );
@@ -85,7 +85,7 @@ SalData::~SalData()
             osl_setThreadKeyData( s_aAutoReleaseKey, NULL );
             [pPool release];
         }
-        
+
         osl_destroyThreadKey( s_aAutoReleaseKey );
         s_aAutoReleaseKey = 0;
     }
@@ -243,11 +243,11 @@ NSCursor* SalData::getCursor( PointerStyle i_eStyle )
 {
     if( i_eStyle >= POINTER_COUNT )
         return nil;
-    
+
     NSCursor* pCurs = maCursors[ i_eStyle ];
     if( pCurs == INVALID_CURSOR_PTR )
     {
-        pCurs = nil;        
+        pCurs = nil;
         if( aCursorTab[ i_eStyle ].pBaseName )
         {
             NSPoint aHotSpot = aCursorTab[ i_eStyle ].aHotSpot;

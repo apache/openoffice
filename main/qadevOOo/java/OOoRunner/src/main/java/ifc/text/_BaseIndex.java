@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -102,7 +102,7 @@ public class _BaseIndex extends MultiPropertyTest {
     public void _LevelFormat() {
         log.println(
                 "Testing property 'LevelFormat' with custom property tester");
-        testProperty("LevelFormat", 
+        testProperty("LevelFormat",
                      new PropertyTester() {
             PropertyValue[][] newVal = null;
             PropertyValue[][] oldVal = null;
@@ -143,18 +143,18 @@ public class _BaseIndex extends MultiPropertyTest {
                 return indProp;
             }
 
-            protected void checkResult(String propName, Object oldValue, 
-                                       Object newValue, Object resValue, 
+            protected void checkResult(String propName, Object oldValue,
+                                       Object newValue, Object resValue,
                                        Exception exception)
                                 throws Exception {
                 PropertyValue[][] res = (PropertyValue[][]) ((XIndexAccess) UnoRuntime.queryInterface(
-                                                                     XIndexAccess.class, 
+                                                                     XIndexAccess.class,
                                                                      resValue)).getByIndex(0);
 
                 log.println("Result:");
                 printLevelFormatProperty(resValue);
 
-                boolean result = (res.length != oldVal.length) || 
+                boolean result = (res.length != oldVal.length) ||
                                  !util.ValueComparer.equalValue(res, oldVal);
 
                 tRes.tested(propName, result);
@@ -172,7 +172,7 @@ public class _BaseIndex extends MultiPropertyTest {
         PropertyValue[][] val = null;
 
         try {
-            log.println(" \u0421ollection has " + indProp.getCount() + 
+            log.println(" \u0421ollection has " + indProp.getCount() +
                         " elements : ");
 
             for (int i = 0; i < indProp.getCount(); i++) {
@@ -184,7 +184,7 @@ public class _BaseIndex extends MultiPropertyTest {
                     log.println("    " + j + " level :");
 
                     for (int k = 0; k < val[j].length; k++) {
-                        log.println("      " + val[j][k].Name + "=" + 
+                        log.println("      " + val[j][k].Name + "=" +
                                     val[j][k].Value);
                     }
                 }

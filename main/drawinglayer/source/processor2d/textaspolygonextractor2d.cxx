@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -60,12 +60,12 @@ namespace drawinglayer
 					//		- ModifiedColorPrimitive2D
 					//		- TransformPrimitive2D
 					//		- GroupPrimitive2D
-					
+
 					// encapsulate with flag and use decomposition
 					mnInText++;
 					process(rCandidate.get2DDecomposition(getViewInformation2D()));
 					mnInText--;
-					
+
 					break;
 				}
 				case PRIMITIVE2D_ID_TEXTSIMPLEPORTIONPRIMITIVE2D :
@@ -78,12 +78,12 @@ namespace drawinglayer
 					//		- ModifiedColorPrimitive2D
 					//		- TransformPrimitive2D
 					//		- GroupPrimitive2D
-					
+
 					// encapsulate with flag and use decomposition
 					mnInText++;
 					process(rCandidate.get2DDecomposition(getViewInformation2D()));
 					mnInText--;
-					
+
 					break;
 				}
 
@@ -174,7 +174,7 @@ namespace drawinglayer
 						process(rModifiedColorCandidate.getChildren());
 						maBColorModifierStack.pop();
 					}
-					
+
 					break;
 				}
 
@@ -187,8 +187,8 @@ namespace drawinglayer
 
 					// create new transformations for CurrentTransformation and for local ViewInformation2D
 					const geometry::ViewInformation2D aViewInformation2D(
-						getViewInformation2D().getObjectTransformation() * rTransformCandidate.getTransformation(), 
-						getViewInformation2D().getViewTransformation(), 
+						getViewInformation2D().getObjectTransformation() * rTransformCandidate.getTransformation(),
+						getViewInformation2D().getViewTransformation(),
 						getViewInformation2D().getViewport(),
 						getViewInformation2D().getVisualizedPage(),
 						getViewInformation2D().getViewTime(),

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,18 +7,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  **************************************************************/
- 
+
  // MARKER(update_precomp.py): autogen include statement, do not remove
 //This file is about the conversion of the UOF v2.0 and ODF document format
 #include "precompiled_filter.hxx"
@@ -431,11 +431,11 @@ bool UOF2Merge::merge()
 
 	m_xExtDocHdl->startDocument();
 
-	::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream > xUOFXMLInputStream = 
+	::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream > xUOFXMLInputStream =
 		storageRef->openInputStream(UOFELEMNAME);
 	startUOFRootXML(xUOFXMLInputStream);
 
-	::com::sun::star::uno::Reference< 
+	::com::sun::star::uno::Reference<
 		::com::sun::star::xml::sax::XDocumentHandler > xUOF2SubXMLDocHdl( new UOF2FlatDocMergeHandler(*this) );
 	::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XDocumentHandler > xObjdataXMLDocHdl;
 
@@ -513,7 +513,7 @@ bool UOF2Merge::merge()
 
 void UOF2Merge::startUOFRootXML( const ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream >& xUOFXMLInStream )
 {
-	::com::sun::star::uno::Reference< 
+	::com::sun::star::uno::Reference<
 		::com::sun::star::xml::sax::XDocumentHandler > xUOFXMLDocHdl(new UOF2UOFXMLDocMergeHandler(*this));
 	m_xSaxParser->setDocumentHandler(xUOFXMLDocHdl);
 

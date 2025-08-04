@@ -26,7 +26,7 @@ import org.apache.openoffice.ooxml.schema.model.base.QualifiedName;
 /** Each transition corresponds to an 'element' schema element.
  *  It moves from the start state to the end state when a certain start tag is
  *  processed.  The element corresponds to another complex type which will be
- *  parsed during the transition. 
+ *  parsed during the transition.
  */
 public class Transition
 {
@@ -42,25 +42,25 @@ public class Transition
         msElementTypeName = sElementTypeName;
     }
 
-    
-    
-    
+
+
+
     public State GetStartState ()
     {
         return maStartState;
     }
 
-    
-    
-    
+
+
+
     public State GetEndState ()
     {
         return maEndState;
     }
-    
 
-    
-    
+
+
+
     public QualifiedName GetElementName()
     {
         return maElementName;
@@ -86,10 +86,10 @@ public class Transition
             maEndState.GetFullname(),
             msElementTypeName);
     }
-    
-    
-    
-        
+
+
+
+
     private final State maStartState;
     private final State maEndState;
     private final QualifiedName maElementName;

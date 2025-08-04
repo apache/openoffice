@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -363,7 +363,7 @@ public:
 
     /** Analyzes a string for a 'Doc'#Tab construct, or 'Do''c'#Tab etc..
 
-        @returns the position of the unquoted # hash mark in 'Doc'#Tab, or 
+        @returns the position of the unquoted # hash mark in 'Doc'#Tab, or
                  STRING_NOTFOUND if none. */
     static xub_StrLen GetDocTabPos( const String& rString );
 
@@ -426,7 +426,7 @@ public:
     const ScAddress& GetPos() const { return aPos; }
 
     void MoveRelWrap( SCCOL nMaxCol, SCROW nMaxRow );
-    static void MoveRelWrap( ScTokenArray& rArr, ScDocument* pDoc, const ScAddress& rPos, 
+    static void MoveRelWrap( ScTokenArray& rArr, ScDocument* pDoc, const ScAddress& rPos,
                              SCCOL nMaxCol, SCROW nMaxRow );
 
     sal_Bool UpdateNameReference( UpdateRefMode eUpdateRefMode,
@@ -452,7 +452,7 @@ public:
 
     sal_Bool HasModifiedRange();
 
-    /** If the character is allowed as first character in sheet names or 
+    /** If the character is allowed as first character in sheet names or
         references, includes '$' and '?'. */
     static inline sal_Bool IsCharWordChar( String const & rStr,
                                        xub_StrLen nPos,
@@ -469,7 +469,7 @@ public:
                 return ScGlobal::pCharClass->isLetterNumeric( rStr, nPos );
         }
 
-    /** If the character is allowed in sheet names, thus may be part of a 
+    /** If the character is allowed in sheet names, thus may be part of a
         reference, includes '$' and '?' and such. */
     static inline sal_Bool IsWordChar( String const & rStr,
                                    xub_StrLen nPos,
@@ -486,11 +486,11 @@ public:
                 return ScGlobal::pCharClass->isLetterNumeric( rStr, nPos );
         }
 
-    /** If the character is allowed as tested by nFlags (SC_COMPILER_C_... 
-        bits) for all known address conventions. If more than one bit is given 
-        in nFlags, all bits must match. If bTestLetterNumeric is sal_False and 
+    /** If the character is allowed as tested by nFlags (SC_COMPILER_C_...
+        bits) for all known address conventions. If more than one bit is given
+        in nFlags, all bits must match. If bTestLetterNumeric is sal_False and
         char>=128, no LetterNumeric test is done and sal_False is returned. */
-    static inline bool IsCharFlagAllConventions( String const & rStr, 
+    static inline bool IsCharFlagAllConventions( String const & rStr,
                                                  xub_StrLen nPos,
                                                  sal_uLong nFlags,
                                                  bool bTestLetterNumeric = true )
@@ -501,7 +501,7 @@ public:
                 for ( int nConv = formula::FormulaGrammar::CONV_UNSPECIFIED;
                         ++nConv < formula::FormulaGrammar::CONV_LAST; )
                 {
-                    if (pConventions[nConv] && 
+                    if (pConventions[nConv] &&
                             ((pConventions[nConv]->mpCharTable[ sal_uInt8(c) ] & nFlags) != nFlags))
                         return false;
                     // convention not known => assume valid

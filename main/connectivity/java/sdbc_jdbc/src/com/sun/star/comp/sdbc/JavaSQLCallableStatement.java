@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 package com.sun.star.comp.sdbc;
 
@@ -43,7 +43,7 @@ public class JavaSQLCallableStatement extends JavaSQLPreparedStatement implement
     public JavaSQLCallableStatement(JavaSQLConnection connection, String sql) {
         super(connection, sql);
     }
-    
+
     @Override
     protected void createStatement() throws SQLException {
         checkDisposed();
@@ -60,9 +60,9 @@ public class JavaSQLCallableStatement extends JavaSQLPreparedStatement implement
             }
         }
     }
-    
+
     // XRow
-    
+
     @Override
     public synchronized XInputStream getBinaryStream(int columnIndex) throws SQLException {
         createStatement();
@@ -72,7 +72,7 @@ public class JavaSQLCallableStatement extends JavaSQLPreparedStatement implement
         }
         return null;
     }
-    
+
     @Override
     public XInputStream getCharacterStream(int columnIndex) throws SQLException {
         createStatement();
@@ -82,7 +82,7 @@ public class JavaSQLCallableStatement extends JavaSQLPreparedStatement implement
         }
         return null;
     }
-    
+
     @Override
     public synchronized boolean getBoolean(int columnIndex) throws SQLException {
         createStatement();
@@ -92,7 +92,7 @@ public class JavaSQLCallableStatement extends JavaSQLPreparedStatement implement
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public synchronized byte getByte(int columnIndex) throws SQLException {
         createStatement();
@@ -112,7 +112,7 @@ public class JavaSQLCallableStatement extends JavaSQLPreparedStatement implement
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public synchronized Date getDate(int columnIndex) throws SQLException {
         createStatement();
@@ -127,7 +127,7 @@ public class JavaSQLCallableStatement extends JavaSQLPreparedStatement implement
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public synchronized double getDouble(int columnIndex) throws SQLException {
         createStatement();
@@ -137,7 +137,7 @@ public class JavaSQLCallableStatement extends JavaSQLPreparedStatement implement
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public synchronized float getFloat(int columnIndex) throws SQLException {
         createStatement();
@@ -147,7 +147,7 @@ public class JavaSQLCallableStatement extends JavaSQLPreparedStatement implement
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public synchronized int getInt(int columnIndex) throws SQLException {
         createStatement();
@@ -157,7 +157,7 @@ public class JavaSQLCallableStatement extends JavaSQLPreparedStatement implement
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public synchronized long getLong(int columnIndex) throws SQLException {
         createStatement();
@@ -182,7 +182,7 @@ public class JavaSQLCallableStatement extends JavaSQLPreparedStatement implement
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public synchronized XClob getClob(int columnIndex) throws SQLException {
         createStatement();
@@ -197,7 +197,7 @@ public class JavaSQLCallableStatement extends JavaSQLPreparedStatement implement
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public synchronized XBlob getBlob(int columnIndex) throws SQLException {
         createStatement();
@@ -212,7 +212,7 @@ public class JavaSQLCallableStatement extends JavaSQLPreparedStatement implement
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public synchronized XRef getRef(int columnIndex) throws SQLException {
         createStatement();
@@ -227,7 +227,7 @@ public class JavaSQLCallableStatement extends JavaSQLPreparedStatement implement
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public synchronized Object getObject(int columnIndex, XNameAccess typeMap) throws SQLException {
         createStatement();
@@ -256,7 +256,7 @@ public class JavaSQLCallableStatement extends JavaSQLPreparedStatement implement
             throw Tools.toUnoExceptionLogged(this, logger, exception);
         }
     }
-    
+
     @Override
     public synchronized short getShort(int columnIndex) throws SQLException {
         createStatement();
@@ -266,7 +266,7 @@ public class JavaSQLCallableStatement extends JavaSQLPreparedStatement implement
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public synchronized String getString(int columnIndex) throws SQLException {
         createStatement();
@@ -281,7 +281,7 @@ public class JavaSQLCallableStatement extends JavaSQLPreparedStatement implement
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public synchronized Time getTime(int columnIndex) throws SQLException {
         createStatement();
@@ -296,7 +296,7 @@ public class JavaSQLCallableStatement extends JavaSQLPreparedStatement implement
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public synchronized DateTime getTimestamp(int columnIndex) throws SQLException {
         createStatement();
@@ -311,7 +311,7 @@ public class JavaSQLCallableStatement extends JavaSQLPreparedStatement implement
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public synchronized boolean wasNull() throws SQLException {
         createStatement();
@@ -321,9 +321,9 @@ public class JavaSQLCallableStatement extends JavaSQLPreparedStatement implement
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     // XOutParameters
-    
+
     @Override
     public synchronized void registerOutParameter(int index, int sqlType, String typeName) throws SQLException {
         createStatement();
@@ -333,7 +333,7 @@ public class JavaSQLCallableStatement extends JavaSQLPreparedStatement implement
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public void registerNumericOutParameter(int index, int sqlType, int scale) throws SQLException {
         createStatement();

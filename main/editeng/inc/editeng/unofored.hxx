@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -47,7 +47,7 @@ public:
 	virtual void		SetParaAttribs( sal_uInt32 nPara, const SfxItemSet& rSet );
     virtual void        RemoveAttribs( const ESelection& rSelection, sal_Bool bRemoveParaAttribs, sal_uInt16 nWhich );
 	virtual void		GetPortions( sal_uInt32 nPara, SvUShorts& rList ) const;
-	
+
 	virtual sal_uInt16		GetItemState( const ESelection& rSel, sal_uInt16 nWhich ) const;
 	virtual sal_uInt16		GetItemState( sal_uInt32 nPara, sal_uInt16 nWhich ) const;
 
@@ -84,12 +84,12 @@ public:
     virtual sal_Bool		SetDepth( sal_uInt32 nPara, sal_Int16 nNewDepth );
 
     virtual const SfxItemSet*   GetEmptyItemSetPtr();
- 
+
     // implementation functions for XParagraphAppend and XTextPortionAppend
     virtual void        AppendParagraph();
     virtual xub_StrLen  AppendTextPortion( sal_uInt32 nPara, const String &rText, const SfxItemSet &rSet );
     //XTextCopy
-    virtual void        CopyText(const SvxTextForwarder& rSource); 
+    virtual void        CopyText(const SvxTextForwarder& rSource);
 };
 
 #endif

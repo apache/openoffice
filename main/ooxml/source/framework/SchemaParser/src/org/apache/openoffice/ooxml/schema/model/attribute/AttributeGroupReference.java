@@ -41,28 +41,28 @@ public class AttributeGroupReference
         super(null, null, aLocation);
         maReferencedElement = aReferencedElementName;
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public INode GetOnlyChild ()
     {
         throw new RuntimeException("AttributeGroupReference has no children");
     }
 
-    
-    
-    
+
+
+
     @Override
     public void AcceptVisitor (final INodeVisitor aVisitor)
     {
         aVisitor.Visit(this);
     }
 
-    
-    
-    
+
+
+
     public QualifiedName GetReferencedName ()
     {
         return maReferencedElement;
@@ -75,36 +75,36 @@ public class AttributeGroupReference
     {
         return aSchemaBase.AttributeGroups.Get(maReferencedElement);
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public INode GetReferencedNode (final SchemaBase aSchemaBase)
     {
         return GetReferencedAttributeGroup(aSchemaBase);
     }
 
-        
-    
-    
+
+
+
     @Override
     public NodeType GetNodeType ()
     {
         return NodeType.AttributeGroupReference;
     }
 
-    
-    
-    
+
+
+
     @Override
     public String toString ()
     {
         return "reference to attribute group "+maReferencedElement.GetDisplayName();
     }
-    
-    
-    
-    
+
+
+
+
     private final QualifiedName maReferencedElement;
 }

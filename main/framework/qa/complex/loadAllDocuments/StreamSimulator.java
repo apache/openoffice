@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -38,7 +38,7 @@ public class StreamSimulator implements com.sun.star.io.XInputStream    ,
 {
     //_________________________________
     /**
-     * @member  m_sFileName     name of the corrsponding file on disk
+     * @member  m_sFileName     name of the corresponding file on disk
      * @member  m_xInStream     the internal input stream for reading
      * @member  m_xOutStream    the internal input stream for writing
      * @member  m_xSeek         points at runtime to m_xInStream or m_xOutStream and make it seekable
@@ -173,15 +173,15 @@ public class StreamSimulator implements com.sun.star.io.XInputStream    ,
         {
             nRead = m_xInStream.readSomeBytes(lData,nMaxBytesToRead);
         }
-        catch (com.sun.star.io.NotConnectedException       exConnect) { 
+        catch (com.sun.star.io.NotConnectedException       exConnect) {
         }
-        catch (com.sun.star.io.BufferSizeExceededException exBuffer ) {   
+        catch (com.sun.star.io.BufferSizeExceededException exBuffer ) {
         }
-        catch (com.sun.star.io.IOException                 exIO     ) {    
+        catch (com.sun.star.io.IOException                 exIO     ) {
         }
-        catch (com.sun.star.uno.RuntimeException           exRuntime) { 
+        catch (com.sun.star.uno.RuntimeException           exRuntime) {
         }
-        catch (com.sun.star.uno.Exception                  exUno    ) {  
+        catch (com.sun.star.uno.Exception                  exUno    ) {
         }
 
         return nRead;
@@ -189,7 +189,7 @@ public class StreamSimulator implements com.sun.star.io.XInputStream    ,
 
     //_________________________________
 
-    public void skipBytes(int nBytesToSkip) 
+    public void skipBytes(int nBytesToSkip)
                                 throws com.sun.star.io.NotConnectedException,
                                 com.sun.star.io.BufferSizeExceededException ,
                                 com.sun.star.io.IOException
@@ -205,15 +205,15 @@ public class StreamSimulator implements com.sun.star.io.XInputStream    ,
         {
             m_xInStream.skipBytes(nBytesToSkip);
         }
-        catch (com.sun.star.io.NotConnectedException       exConnect) { 
+        catch (com.sun.star.io.NotConnectedException       exConnect) {
         }
-        catch (com.sun.star.io.BufferSizeExceededException exBuffer ) { 
+        catch (com.sun.star.io.BufferSizeExceededException exBuffer ) {
         }
-        catch (com.sun.star.io.IOException                 exIO     ) { 
+        catch (com.sun.star.io.IOException                 exIO     ) {
         }
-        catch (com.sun.star.uno.RuntimeException           exRuntime) { 
+        catch (com.sun.star.uno.RuntimeException           exRuntime) {
         }
-        catch (com.sun.star.uno.Exception                  exUno    ) { 
+        catch (com.sun.star.uno.Exception                  exUno    ) {
         }
 
     }
@@ -233,13 +233,13 @@ public class StreamSimulator implements com.sun.star.io.XInputStream    ,
         {
             nAvailable = m_xInStream.available();
         }
-        catch (com.sun.star.io.NotConnectedException exConnect) { 
+        catch (com.sun.star.io.NotConnectedException exConnect) {
         }
-        catch (com.sun.star.io.IOException           exIO     ) { 
+        catch (com.sun.star.io.IOException           exIO     ) {
         }
-        catch (com.sun.star.uno.RuntimeException     exRuntime) { 
+        catch (com.sun.star.uno.RuntimeException     exRuntime) {
         }
-        catch (com.sun.star.uno.Exception            exUno    ) { 
+        catch (com.sun.star.uno.Exception            exUno    ) {
         }
 
         return nAvailable;
@@ -261,13 +261,13 @@ public class StreamSimulator implements com.sun.star.io.XInputStream    ,
         {
             m_xInStream.closeInput();
         }
-        catch (com.sun.star.io.NotConnectedException exConnect) { 
+        catch (com.sun.star.io.NotConnectedException exConnect) {
         }
-        catch (com.sun.star.io.IOException           exIO     ) { 
+        catch (com.sun.star.io.IOException           exIO     ) {
         }
-        catch (com.sun.star.uno.RuntimeException     exRuntime) { 
+        catch (com.sun.star.uno.RuntimeException     exRuntime) {
         }
-        catch (com.sun.star.uno.Exception            exUno    ) { 
+        catch (com.sun.star.uno.Exception            exUno    ) {
         }
 
     }
@@ -278,7 +278,7 @@ public class StreamSimulator implements com.sun.star.io.XInputStream    ,
      * and try to map all necessary functions to the internal
      * open out-stream.
      */
-    public void writeBytes(byte[] lData) 
+    public void writeBytes(byte[] lData)
                                 throws com.sun.star.io.NotConnectedException,
                                 com.sun.star.io.BufferSizeExceededException ,
                                 com.sun.star.io.IOException
@@ -294,15 +294,15 @@ public class StreamSimulator implements com.sun.star.io.XInputStream    ,
         {
             m_xOutStream.writeBytes(lData);
         }
-        catch (com.sun.star.io.NotConnectedException       exConnect) { 
+        catch (com.sun.star.io.NotConnectedException       exConnect) {
         }
-        catch (com.sun.star.io.BufferSizeExceededException exBuffer ) { 
+        catch (com.sun.star.io.BufferSizeExceededException exBuffer ) {
         }
-        catch (com.sun.star.io.IOException                 exIO     ) { 
+        catch (com.sun.star.io.IOException                 exIO     ) {
         }
-        catch (com.sun.star.uno.RuntimeException           exRuntime) { 
+        catch (com.sun.star.uno.RuntimeException           exRuntime) {
         }
-        catch (com.sun.star.uno.Exception                  exUno    ) { 
+        catch (com.sun.star.uno.Exception                  exUno    ) {
         }
 
     }
@@ -324,15 +324,15 @@ public class StreamSimulator implements com.sun.star.io.XInputStream    ,
         {
             m_xOutStream.flush();
         }
-        catch (com.sun.star.io.NotConnectedException       exConnect) { 
+        catch (com.sun.star.io.NotConnectedException       exConnect) {
         }
-        catch (com.sun.star.io.BufferSizeExceededException exBuffer ) { 
+        catch (com.sun.star.io.BufferSizeExceededException exBuffer ) {
         }
-        catch (com.sun.star.io.IOException                 exIO     ) { 
+        catch (com.sun.star.io.IOException                 exIO     ) {
         }
-        catch (com.sun.star.uno.RuntimeException           exRuntime) { 
+        catch (com.sun.star.uno.RuntimeException           exRuntime) {
         }
-        catch (com.sun.star.uno.Exception                  exUno    ) { 
+        catch (com.sun.star.uno.Exception                  exUno    ) {
         }
     }
 
@@ -353,15 +353,15 @@ public class StreamSimulator implements com.sun.star.io.XInputStream    ,
         {
             m_xOutStream.closeOutput();
         }
-        catch (com.sun.star.io.NotConnectedException       exConnect) { 
+        catch (com.sun.star.io.NotConnectedException       exConnect) {
         }
-        catch (com.sun.star.io.BufferSizeExceededException exBuffer ) { 
+        catch (com.sun.star.io.BufferSizeExceededException exBuffer ) {
         }
-        catch (com.sun.star.io.IOException                 exIO     ) { 
+        catch (com.sun.star.io.IOException                 exIO     ) {
         }
-        catch (com.sun.star.uno.RuntimeException           exRuntime) { 
+        catch (com.sun.star.uno.RuntimeException           exRuntime) {
         }
-        catch (com.sun.star.uno.Exception                  exUno    ) { 
+        catch (com.sun.star.uno.Exception                  exUno    ) {
         }
 
     }
@@ -372,7 +372,7 @@ public class StreamSimulator implements com.sun.star.io.XInputStream    ,
      * and try to map all necessary functions to the internal
      * open stream.
      */
-    public void seek(long nLocation ) 
+    public void seek(long nLocation )
                     throws com.sun.star.lang.IllegalArgumentException,
                     com.sun.star.io.IOException
     {
@@ -458,11 +458,11 @@ public class StreamSimulator implements com.sun.star.io.XInputStream    ,
         {
             nLen = m_xSeek.getLength();
         }
-        catch (com.sun.star.io.IOException       exIO     ) { 
+        catch (com.sun.star.io.IOException       exIO     ) {
         }
-        catch (com.sun.star.uno.RuntimeException exRuntime) { 
+        catch (com.sun.star.uno.RuntimeException exRuntime) {
         }
-        catch (com.sun.star.uno.Exception        exUno    ) { 
+        catch (com.sun.star.uno.Exception        exUno    ) {
         }
 
         return nLen;

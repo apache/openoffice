@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -72,7 +72,7 @@
 
 #ifndef OOVBA_DLLIMPLEMENTATION
 #define OOVBA_DLLIMPLEMENTATION
-#endif 
+#endif
 
 #include <vbahelper/vbahelper.hxx>
 #include <sfx2/app.hxx>
@@ -189,7 +189,7 @@ implnCopy()
 		pViewShell->CopyToClip(NULL,false,false,true);
 }
 
-void 
+void
 implnCut()
 {
 	ScTabViewShell* pViewShell =  getCurrentBestViewShell();
@@ -202,23 +202,23 @@ void implnPasteSpecial(SfxViewShell* pViewShell, sal_uInt16 nFlags,sal_uInt16 nF
 	sal_Bool bAsLink(sal_False), bOtherDoc(sal_False);
 	InsCellCmd eMoveMode = INS_NONE;
 
-	if ( !pTabViewShell ) 
+	if ( !pTabViewShell )
 		// none active, try next best
 		pTabViewShell = getCurrentBestViewShell();
 	if ( pTabViewShell )
 	{
-		ScViewData* pView = pTabViewShell->GetViewData();	
+		ScViewData* pView = pTabViewShell->GetViewData();
 		Window* pWin = ( pView != NULL ) ? pView->GetActiveWin() : NULL;
 		if ( pView && pWin )
 		{
 			if ( bAsLink && bOtherDoc )
 				pTabViewShell->PasteFromSystem(0);//SOT_FORMATSTR_ID_LINK
-			else 
+			else
 			{
 				ScTransferObj* pOwnClip = ScTransferObj::GetOwnClipboard( pWin );
-				ScDocument* pDoc = NULL; 
+				ScDocument* pDoc = NULL;
 				if ( pOwnClip )
-					pDoc = pOwnClip->GetDocument();	
+					pDoc = pOwnClip->GetDocument();
 				pTabViewShell->PasteFromClip( nFlags, pDoc,
 					nFunction, bSkipEmpty, bTranspose, bAsLink,
 					eMoveMode, IDF_NONE, sal_True );
@@ -229,8 +229,8 @@ void implnPasteSpecial(SfxViewShell* pViewShell, sal_uInt16 nFlags,sal_uInt16 nF
 
 }
 
-ScDocShell* 
-getDocShell( css::uno::Reference< css::frame::XModel>& xModel ) 
+ScDocShell*
+getDocShell( css::uno::Reference< css::frame::XModel>& xModel )
 {
 	uno::Reference< uno::XInterface > xIf( xModel, uno::UNO_QUERY_THROW );
 	ScModelObj* pModel = dynamic_cast< ScModelObj* >( xIf.get() );
@@ -241,7 +241,7 @@ getDocShell( css::uno::Reference< css::frame::XModel>& xModel )
 
 }
 
-ScTabViewShell* 
+ScTabViewShell*
 getBestViewShell(  css::uno::Reference< css::frame::XModel>& xModel )
 {
 	ScDocShell* pDocShell = getDocShell( xModel );
@@ -250,17 +250,17 @@ getBestViewShell(  css::uno::Reference< css::frame::XModel>& xModel )
 	return NULL;
 }
 
-ScTabViewShell* 
+ScTabViewShell*
 getCurrentBestViewShell()
-{ 
+{
 	uno::Reference< frame::XModel > xModel = getCurrentDocument();
 	return getBestViewShell( xModel );
 }
 
-SfxViewFrame* 
+SfxViewFrame*
 getCurrentViewFrame()
 {
-	ScTabViewShell* pViewShell = getCurrentBestViewShell();	
+	ScTabViewShell* pViewShell = getCurrentBestViewShell();
 	if ( pViewShell )
 		return pViewShell->GetViewFrame();
 	return NULL;
@@ -306,9 +306,9 @@ void dispatchExecute(SfxViewShell* pViewShell, sal_uInt16 nSlot, SfxCallMode nCa
 		{
 			pDispatcher->Execute( nSlot , nCall );
 		}
-	}	
+	}
 }
-	
+
 void
 dispatchRequests( const uno::Reference< frame::XModel>& xModel, const rtl::OUString& aUrl, const uno::Sequence< beans::PropertyValue >& sProps )
 {
@@ -328,7 +328,7 @@ dispatchRequests( const uno::Reference< frame::XModel>& xModel, const rtl::OUStr
 		uno::Reference<lang::XMultiComponentFactory > xServiceManager = xContext->getServiceManager();
 		if ( !xServiceManager.is() )
 			return;
-			
+
 		uno::Reference<util::XURLTransformer> xParser( xServiceManager->createInstanceWithContext(
             rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.util.URLTransformer" ) ), xContext),
             uno::UNO_QUERY_THROW );
@@ -381,7 +381,7 @@ getCurrentDoc( const rtl::OUString& sKey ) throw (uno::RuntimeException)
 	{
 		OSL_TRACE("getModelFromBasic() StarBASIC* is NULL" );
 		return xModel;
-	}    
+	}
     SbxObject* p = pBasic;
     SbxObject* pParent = p->GetParent();
     SbxObject* pParentParent = pParent ? pParent->GetParent() : NULL;
@@ -396,7 +396,7 @@ getCurrentDoc( const rtl::OUString& sKey ) throw (uno::RuntimeException)
     }
 
 
-    uno::Any aModel; 
+    uno::Any aModel;
     SbxVariable *pCompVar = basicChosen->Find(  sKey, SbxCLASS_OBJECT );
 
 	if ( pCompVar )
@@ -405,7 +405,7 @@ getCurrentDoc( const rtl::OUString& sKey ) throw (uno::RuntimeException)
 		if ( sal_False == ( aModel >>= xModel ) ||
 			!xModel.is() )
 		{
-			throw uno::RuntimeException( 
+			throw uno::RuntimeException(
 				rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Can't extract model from basic ( its obviously not set yet ) therefore don't know the current documet context") ), uno::Reference< uno::XInterface >() );
 		}
 		else
@@ -418,8 +418,8 @@ getCurrentDoc( const rtl::OUString& sKey ) throw (uno::RuntimeException)
 	else
 	{
 		OSL_TRACE("Failed to get %s", rtl::OUStringToOString( sKey, RTL_TEXTENCODING_UTF8 ).getStr() );
-		throw uno::RuntimeException( 
-			rtl::OUString( 
+		throw uno::RuntimeException(
+			rtl::OUString(
 				RTL_CONSTASCII_USTRINGPARAM(
 					"Can't determine the currently selected document") ),
 			uno::Reference< uno::XInterface >() );
@@ -427,7 +427,7 @@ getCurrentDoc( const rtl::OUString& sKey ) throw (uno::RuntimeException)
 	return xModel;
 }
 
- uno::Reference< frame::XModel > 
+ uno::Reference< frame::XModel >
 getCurrentDocCtx( const rtl::OUString& ctxName, const uno::Reference< uno::XComponentContext >& xContext ) throw (uno::RuntimeException)
 {
     uno::Reference< frame::XModel > xModel;
@@ -465,14 +465,14 @@ getCurrentExcelDoc( const uno::Reference< uno::XComponentContext >& xContext ) t
     return xModel;
 }
 
- uno::Reference< frame::XModel > 
+ uno::Reference< frame::XModel >
 getCurrentWordDoc( const uno::Reference< uno::XComponentContext >& xContext ) throw (uno::RuntimeException)
 {
     static const rtl::OUString sThisWordDoc( RTL_CONSTASCII_USTRINGPARAM("ThisWordDoc" ) );
     uno::Reference< frame::XModel > xModel;
     try
     {
-        xModel = getCurrentDoc( sThisWordDoc ); 
+        xModel = getCurrentDoc( sThisWordDoc );
     }
     catch( uno::Exception& e )
     {
@@ -497,7 +497,7 @@ OORGBToXLRGB( sal_Int32 nCol )
 	sal_Int32 nRGB =  ( nAutoBits | (nBlue << 16) | (nGreen << 8) | nRed );
 	return nRGB;
 }
-sal_Int32 
+sal_Int32
 XLRGBToOORGB( sal_Int32 nCol )
 {
         sal_Int32 nAutoBits = nCol;
@@ -514,7 +514,7 @@ XLRGBToOORGB( sal_Int32 nCol )
 	sal_Int32 nRGB =  ( nAutoBits | (nRed << 16) | (nGreen << 8) | nBlue );
 	return nRGB;
 }
-uno::Any 
+uno::Any
 OORGBToXLRGB( const uno::Any& aCol )
 {
 	sal_Int32 nCol(0);
@@ -522,7 +522,7 @@ OORGBToXLRGB( const uno::Any& aCol )
 	nCol = OORGBToXLRGB( nCol );
 	return uno::makeAny( nCol );
 }
-uno::Any 
+uno::Any
 XLRGBToOORGB(  const uno::Any& aCol )
 {
 	sal_Int32 nCol(0);
@@ -548,7 +548,7 @@ void PrintOutHelper( SfxViewShell* pViewShell, const uno::Any& From, const uno::
 
 	rtl::OUString sRange(  RTL_CONSTASCII_USTRINGPARAM( "-" ) );
 	rtl::OUString sFileName;
-	
+
 	if (( nFrom || nTo ) )
 	{
 		if ( nFrom )
@@ -567,7 +567,7 @@ void PrintOutHelper( SfxViewShell* pViewShell, const uno::Any& From, const uno::
 	if ( pViewFrame )
 	{
 		SfxAllItemSet aArgs( SFX_APP()->GetPool() );
-				
+
 		SfxBoolItem sfxCollate( SID_PRINT_COLLATE, bCollate );
 		aArgs.Put( sfxCollate, sfxCollate.Which() );
 		SfxInt16Item sfxCopies( SID_PRINT_COPIES, nCopies );
@@ -576,7 +576,7 @@ void PrintOutHelper( SfxViewShell* pViewShell, const uno::Any& From, const uno::
 		{
 			SfxStringItem sfxFileName( SID_FILE_NAME, sFileName);
 			aArgs.Put( sfxFileName, sfxFileName.Which() );
-		
+
 		}
 		if (  sRange.getLength() )
 		{
@@ -593,7 +593,7 @@ void PrintOutHelper( SfxViewShell* pViewShell, const uno::Any& From, const uno::
 		{
 			if ( bPreview )
 			{
-				if ( !pViewFrame->GetFrame().IsInPlace() ) 	
+				if ( !pViewFrame->GetFrame().IsInPlace() )
 				{
 					// #TODO is this necessary ( calc specific )
 //					SC_MOD()->InputEnterHandler();
@@ -605,12 +605,12 @@ void PrintOutHelper( SfxViewShell* pViewShell, const uno::Any& From, const uno::
 			else
 				pDispatcher->Execute( (sal_uInt16)SID_PRINTDOC, (SfxCallMode)SFX_CALLMODE_SYNCHRON, aArgs );
 		}
-			
+
 	}
-	
+
 	// #FIXME #TODO
 	// 1 ActivePrinter ( how/can we switch a printer via API? )
-	// 2 PrintToFile ( ms behaviour if this option is specified but no 
+	// 2 PrintToFile ( ms behaviour if this option is specified but no
 	//   filename supplied 'PrToFileName' then the user will be prompted )
 	// 3 Need to check behaviour of Selected sheets with range ( e.g. From & To
 	//    values ) in oOO these options are mutually exclusive
@@ -708,13 +708,13 @@ rtl::OUString getAnyAsString( const uno::Any& pvargItem ) throw ( uno::RuntimeEx
 }
 
 
-rtl::OUString 
+rtl::OUString
 ContainerUtilities::getUniqueName( const uno::Sequence< ::rtl::OUString >&  _slist, const rtl::OUString& _sElementName, const ::rtl::OUString& _sSuffixSeparator)
 {
 	return getUniqueName(_slist, _sElementName, _sSuffixSeparator, sal_Int32(2));
 }
 
-rtl::OUString 
+rtl::OUString
 ContainerUtilities::getUniqueName( const uno::Sequence< rtl::OUString >& _slist, const rtl::OUString _sElementName, const rtl::OUString& _sSuffixSeparator, sal_Int32 _nStartSuffix)
 {
 	sal_Int32 a = _nStartSuffix;
@@ -724,7 +724,7 @@ ContainerUtilities::getUniqueName( const uno::Sequence< rtl::OUString >& _slist,
 	if ( nLen == 0 )
 		return _sElementName;
 
-	while (bElementexists == true) 
+	while (bElementexists == true)
 	{
 		for (sal_Int32 i = 0; i < nLen; i++)
 		{
@@ -738,17 +738,17 @@ ContainerUtilities::getUniqueName( const uno::Sequence< rtl::OUString >& _slist,
 	return rtl::OUString();
 }
 
-sal_Int32 
+sal_Int32
 ContainerUtilities::FieldInList( const uno::Sequence< rtl::OUString >& SearchList, const rtl::OUString& SearchString )
 {
 	sal_Int32 FieldLen = SearchList.getLength();
 	sal_Int32 retvalue = -1;
-	for (sal_Int32 i = 0; i < FieldLen; i++) 
+	for (sal_Int32 i = 0; i < FieldLen; i++)
 	{
 		// I wonder why comparing lexicographically is done
 		// when its a match is whats interesting?
-		//if (SearchList[i].compareTo(SearchString) == 0) 
-		if ( SearchList[i].equals( SearchString ) ) 
+		//if (SearchList[i].compareTo(SearchString) == 0)
+		if ( SearchList[i].equals( SearchString ) )
 		{
 			retvalue = i;
 			break;
@@ -773,7 +773,7 @@ rtl::OUString VBAToRegexp(const rtl::OUString &rIn, bool bForLike )
 	if ( bForLike )
 		sResult.append(static_cast<sal_Unicode>('^'));
 
-	while (start < end) 
+	while (start < end)
 	{
 		switch (*start)
 		{
@@ -850,7 +850,7 @@ double getPixelTo100thMillimeterConversionFactor( const css::uno::Reference< css
 	}
 	else
 	{
-		fConvertFactor = xDevice->getInfo().PixelPerMeterX/100000;	
+		fConvertFactor = xDevice->getInfo().PixelPerMeterX/100000;
 	}
 	return fConvertFactor;
 }
@@ -886,7 +886,7 @@ ConcreteXShapeGeometryAttributes::~ConcreteXShapeGeometryAttributes()
 
 sal_Int32 getPointerStyle( const uno::Reference< frame::XModel >& xModel )
 {
-    
+
     sal_Int32 nPointerStyle( POINTER_ARROW );
     try
     {
@@ -906,7 +906,7 @@ sal_Int32 getPointerStyle( const uno::Reference< frame::XModel >& xModel )
 }
 
 // #FIXME this method looks wrong, shouldn't it just affect calc *or* writer
-// document/frame/window(s) but not both ( and depending on what api called 
+// document/frame/window(s) but not both ( and depending on what api called
 // this )
 void setCursorHelper( const uno::Reference< frame::XModel >& xModel, const Pointer& rPointer, sal_Bool bOverWrite )
 {
@@ -953,13 +953,13 @@ void setDefaultPropByIntrospection( const uno::Any& aObj, const uno::Any& aValue
 {
     uno::Reference< beans::XIntrospectionAccess > xUnoAccess( getIntrospectionAccess( aObj ) );
 
-    // #MAYBE #FIXME sort of a bit of a hack, 
+    // #MAYBE #FIXME sort of a bit of a hack,
     uno::Reference<  script::XDefaultProperty > xDflt( aObj, uno::UNO_QUERY_THROW );
     uno::Reference< beans::XPropertySet > xPropSet;
 
     if ( xUnoAccess.is() )
         xPropSet.set( xUnoAccess->queryAdapter( ::getCppuType( (const uno::Reference< beans::XPropertySet > *)0 ) ), uno::UNO_QUERY);
-           
+
     if ( xPropSet.is() )
         xPropSet->setPropertyValue( xDflt->getDefaultPropertyName(), aValue );
     else
@@ -1200,11 +1200,11 @@ void UserFormGeometryHelper::implSetSize( double fSize, bool bHeight, bool bOute
 
 
 	ShapeHelper::ShapeHelper( const css::uno::Reference< css::drawing::XShape >& _xShape) throw (css::script::BasicErrorException ) : xShape( _xShape )
-	{ 
-		if( !xShape.is() ) 
+	{
+		if( !xShape.is() )
 			throw css::uno::RuntimeException( rtl::OUString::createFromAscii("No valid shape for helper"), css::uno::Reference< css::uno::XInterface >() );
 	}
-    
+
 	double ShapeHelper::getHeight() const
 	{
         	return  Millimeter::getInPoints(xShape->getSize().Height);
@@ -1224,10 +1224,10 @@ void UserFormGeometryHelper::implSetSize( double fSize, bool bHeight, bool bOute
 			throw css::script::BasicErrorException( rtl::OUString(), css::uno::Reference< css::uno::XInterface >(), SbERR_METHOD_FAILED, rtl::OUString() );
     		}
 	}
-    
-    
+
+
 	double ShapeHelper::getWidth() const
-	{ 
+	{
 		return Millimeter::getInPoints(xShape->getSize().Width);
     	}
 
@@ -1244,35 +1244,35 @@ void UserFormGeometryHelper::implSetSize( double fSize, bool bHeight, bool bOute
 			throw css::script::BasicErrorException( rtl::OUString(), css::uno::Reference< css::uno::XInterface >(), SbERR_METHOD_FAILED, rtl::OUString() );
 		}
 	}
-    
-    
+
+
 	double ShapeHelper::getLeft() const
 	{
 		return Millimeter::getInPoints(xShape->getPosition().X);
 	}
 
-    
+
 	void ShapeHelper::setLeft(double _fLeft)
 	{
 		css::awt::Point aPoint = xShape->getPosition();
 		aPoint.X = Millimeter::getInHundredthsOfOneMillimeter(_fLeft);
 		xShape->setPosition(aPoint);
 	}
-    
+
 
 	double ShapeHelper::getTop() const
 	{
         	return Millimeter::getInPoints(xShape->getPosition().Y);
 	}
 
-    
+
 	void ShapeHelper::setTop(double _fTop)
 	{
 		css::awt::Point aPoint = xShape->getPosition();
 		aPoint.Y = Millimeter::getInHundredthsOfOneMillimeter(_fTop);
 		xShape->setPosition(aPoint);
 	}
-    
+
 	void DebugHelper::exception( const rtl::OUString&  DetailedMessage, const css::uno::Exception& ex,  int err, const rtl::OUString& /*additionalArgument*/ ) throw( css::script::BasicErrorException )
 	{
 		// #TODO #FIXME ( do we want to support additionalArg here )
@@ -1289,20 +1289,20 @@ void UserFormGeometryHelper::implSetSize( double fSize, bool bHeight, bool bOute
 	}
 
 	Millimeter::Millimeter():m_nMillimeter(0) {}
-    
+
 	Millimeter::Millimeter(double mm):m_nMillimeter(mm) {}
-    
+
 	void Millimeter::set(double mm) { m_nMillimeter = mm; }
-	void Millimeter::setInPoints(double points) 
-	{ 
+	void Millimeter::setInPoints(double points)
+	{
 		m_nMillimeter = points * factor / 100.0;
 	}
-      
+
 	void Millimeter::setInHundredthsOfOneMillimeter(double hmm)
 	{
 		m_nMillimeter = hmm / 100;
 	}
-    
+
 	double Millimeter::get()
 	{
 		return m_nMillimeter;
@@ -1314,14 +1314,14 @@ void UserFormGeometryHelper::implSetSize( double fSize, bool bHeight, bool bOute
 	double Millimeter::getInPoints()
 	{
 		return m_nMillimeter / factor * 100.0;
-	}    
+	}
 
 	sal_Int32 Millimeter::getInHundredthsOfOneMillimeter(double points)
 	{
 		sal_Int32 mm = static_cast<sal_Int32>(points * factor);
 		return mm;
 	}
-    
+
 	double Millimeter::getInPoints(int _hmm)
 	{
 		double points = double( static_cast<double>(_hmm) / factor);

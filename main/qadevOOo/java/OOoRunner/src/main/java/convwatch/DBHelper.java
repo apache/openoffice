@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -37,13 +37,13 @@ class ShareConnection
     private Connection m_aConnection = null;
     public ShareConnection()
         {}
-    
+
     public Connection getConnection()
         {
             if (m_aConnection == null)
             {
                 try
-                {    
+                {
                     m_aConnection = DBHelper.getMySQLConnection();
                 }
                 catch(java.sql.SQLException e)
@@ -65,7 +65,7 @@ class ShareConnection
                 m_aCon = _aCon;
                 m_sSQL = _sSQL;
             }
-        
+
         public void run()
             {
                 Statement oStmt = null;
@@ -74,13 +74,13 @@ class ShareConnection
                     GlobalLogWriter.get().println("DB: ERROR: in ExecSQL, connection not established.");
                     return;
                 }
-                
+
                 // Connection oCon = null;
                 try
-                { 
+                {
                     // oCon = getMySQLConnection();
                     oStmt = m_aCon.createStatement();
-                    
+
                     GlobalLogWriter.get().println("DB: " + m_sSQL);
                     /* ResultSet oResult = */
                     oStmt.executeUpdate(m_sSQL);
@@ -99,8 +99,8 @@ public class DBHelper
      * This method inserts given values into<br>
      * the table 'states'
      * @param values a set of comma separated values to be inserted
-     */        
-    
+     */
+
     public void SQLinsertValues(Connection _aCon, String _sTableName, String value_names, String values)
         {
             if (_aCon == null)
@@ -108,13 +108,13 @@ public class DBHelper
                 GlobalLogWriter.get().println("DB: ERROR: in SQLinsertValues, connection not established.");
                 return;
             }
-            
+
             // String aInsertStr = "";
-            // 
+            //
             // aInsertStr = "INSERT INTO " + _sTableName + " (" + value_names + " ) VALUES (" + values + ")";
             // ExecSQL(_aCon, aInsertStr);
             StringBuffer aInsertStr = new StringBuffer();
-             
+
             aInsertStr.append( "INSERT INTO " ) . append( _sTableName );
             aInsertStr.append( " (").append( value_names ).append ( ")" );
             aInsertStr.append(" VALUES (" ).append( values ).append( ")" );
@@ -128,13 +128,13 @@ public class DBHelper
                 GlobalLogWriter.get().println("DB: ERROR: in SQLinsertValues, connection not established.");
                 return;
             }
-            
+
             // String aUpdateStr = "";
-            // 
+            //
             // aUpdateStr = "UPDATE " + _sTableName + " SET " + _sSet + " WHERE " + _sWhere;
             // ExecSQL( _aCon, aUpdateStr );
             StringBuffer aUpdateStr = new StringBuffer();
-             
+
             aUpdateStr.append( "UPDATE " ).append( _sTableName )
                 .append( " SET " ).append( _sSet )
                 .append( " WHERE " ).append( _sWhere );
@@ -145,7 +145,7 @@ public class DBHelper
     private static String m_sDBName;
     private static String m_sDBUser;
     private static String m_sDBPasswd;
-    
+
     protected synchronized void fillDBConnection(String _sInfo)
         {
             StringTokenizer aTokenizer = new StringTokenizer(_sInfo,",",false);
@@ -171,12 +171,12 @@ public class DBHelper
                 }
             }
         }
-    
+
     /**
      * This method establishes a Connection<br>
      * with the database 'module_unit' on jakobus
-     */        
-        
+     */
+
     public static Connection getMySQLConnection() throws SQLException
         {
             try
@@ -202,28 +202,28 @@ public class DBHelper
      * module/platform combination
      * @param mdl the name of the module, e.g. sal
      * @param os the name of the platform, e.g. unxsols
-     */    
+     */
     // LLA: public static void SQLdeleteValues(Connection _aCon, String _sEnvironment, String _sUnitName, String _sMethodName, String _sCWS, String _sDate)
     // LLA:     {
-    // LLA:         String sSQL = 
+    // LLA:         String sSQL =
     // LLA:             "DELETE FROM states WHERE " +
     // LLA:             "     unit=" + DatabaseEntry.Quote(_sUnitName) +
-    // LLA:             " AND pf="   + DatabaseEntry.Quote (_sEnvironment) + 
+    // LLA:             " AND pf="   + DatabaseEntry.Quote (_sEnvironment) +
     // LLA:             " AND meth=" + DatabaseEntry.Quote (_sMethodName) +
     // LLA:             " AND cws="  + DatabaseEntry.Quote(_sCWS) +
     // LLA:             " AND dt="   + DatabaseEntry.Quote(_sDate);
-    // LLA:         
+    // LLA:
     // LLA:         // ExecSQL(_aCon, sSQL);
     // LLA:     }
-    
+
     protected synchronized void ExecSQL(Connection _aCon, String _sSQL)
             {
                 MySQLThread aSQLThread = new MySQLThread(_aCon, _sSQL);
                 aSQLThread.start();
             }
-            
 
-    
+
+
     // public static int QueryIntFromSQL(String _sSQL, String _sColumnName, String _sValue)
     //     {
     //         boolean bNeedSecondTry = false;
@@ -251,10 +251,10 @@ public class DBHelper
             Connection oCon = null;
             int nValue = 0;
             try
-            { 
+            {
                 // oCon = getMySQLConnection();
                 oStmt = _aCon.createStatement();
-                
+
                 ResultSet oResult = oStmt.executeQuery(_sSQL);
                 oResult.next();
 
@@ -297,7 +297,7 @@ public class DBHelper
             }
 			return ts + _sToQuote + ts;
 		}
-    
+
 /* default date format in the MySQL DB yyyy-MM-dd */
     public static String today()
         {

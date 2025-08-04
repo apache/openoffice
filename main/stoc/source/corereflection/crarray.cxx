@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -105,7 +105,7 @@ void ArrayIdlClassImpl::realloc( Any & rArray, sal_Int32 nLen )
 			OUString( RTL_CONSTASCII_USTRINGPARAM("illegal length given!") ),
 			(XWeak *)(OWeakObject *)this, 1 );
 	}
-	
+
 	uno_Sequence ** ppSeq = (uno_Sequence **)rArray.getValue();
 	uno_sequence_realloc( ppSeq, (typelib_TypeDescription *)getTypeDescr(),
 						  nLen,
@@ -124,7 +124,7 @@ sal_Int32 ArrayIdlClassImpl::getLen( const Any & rArray )
 			OUString( RTL_CONSTASCII_USTRINGPARAM("no sequence given!") ),
 			(XWeak *)(OWeakObject *)this, 0 );
 	}
-	
+
 	return (*(uno_Sequence **)rArray.getValue())->nElements;
 }
 //__________________________________________________________________________________________________
@@ -138,7 +138,7 @@ Any ArrayIdlClassImpl::get( const Any & rArray, sal_Int32 nIndex )
 			OUString( RTL_CONSTASCII_USTRINGPARAM("no sequence given!") ),
 			(XWeak *)(OWeakObject *)this, 0 );
 	}
-	
+
 	uno_Sequence * pSeq = *(uno_Sequence **)rArray.getValue();
 	if (pSeq->nElements <= nIndex)
 	{
@@ -146,7 +146,7 @@ Any ArrayIdlClassImpl::get( const Any & rArray, sal_Int32 nIndex )
 			OUString( RTL_CONSTASCII_USTRINGPARAM("illegal index given!") ),
 			(XWeak *)(OWeakObject *)this );
 	}
-	
+
 	Any aRet;
 	typelib_TypeDescription * pElemTypeDescr = 0;
 	TYPELIB_DANGER_GET( &pElemTypeDescr, getTypeDescr()->pType );
@@ -169,7 +169,7 @@ void ArrayIdlClassImpl::set( Any & rArray, sal_Int32 nIndex, const Any & rNewVal
 			OUString( RTL_CONSTASCII_USTRINGPARAM("no sequence given!") ),
 			(XWeak *)(OWeakObject *)this, 0 );
 	}
-	
+
 	uno_Sequence * pSeq = *(uno_Sequence **)rArray.getValue();
 	if (pSeq->nElements <= nIndex)
 	{
@@ -177,7 +177,7 @@ void ArrayIdlClassImpl::set( Any & rArray, sal_Int32 nIndex, const Any & rNewVal
 			OUString( RTL_CONSTASCII_USTRINGPARAM("illegal index given!") ),
 			(XWeak *)(OWeakObject *)this );
 	}
-	
+
 	uno_Sequence ** ppSeq = (uno_Sequence **)rArray.getValue();
 	uno_sequence_reference2One(
         ppSeq, (typelib_TypeDescription *)getTypeDescr(),
@@ -185,10 +185,10 @@ void ArrayIdlClassImpl::set( Any & rArray, sal_Int32 nIndex, const Any & rNewVal
         reinterpret_cast< uno_ReleaseFunc >(cpp_release) );
 	rArray.pData = ppSeq;
 	pSeq = *ppSeq;
-	
+
 	typelib_TypeDescription * pElemTypeDescr = 0;
 	TYPELIB_DANGER_GET( &pElemTypeDescr, getTypeDescr()->pType );
-	
+
 	if (! coerce_assign( &pSeq->elements[nIndex * pElemTypeDescr->nSize],
 						 pElemTypeDescr, rNewValue, getReflection() ))
 	{

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -152,7 +152,7 @@ namespace frm
     {
         return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.comp.forms.FormOperations" ) );
     }
-    
+
     //--------------------------------------------------------------------
     Sequence< ::rtl::OUString > FormOperations::getSupportedServiceNames_Static(  ) throw(RuntimeException)
     {
@@ -160,13 +160,13 @@ namespace frm
         aNames[0] = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.form.runtime.FormOperations" ) );
         return aNames;
     }
-    
+
     //--------------------------------------------------------------------
     Reference< XInterface > SAL_CALL FormOperations::Create(const Reference< XMultiServiceFactory >& _rxFactory )
     {
         return *new FormOperations( _rxFactory );
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL FormOperations::initialize( const Sequence< Any >& _arguments ) throw (Exception, RuntimeException)
     {
@@ -188,13 +188,13 @@ namespace frm
 
         throw IllegalArgumentException( ::rtl::OUString(), *this, 0 );
     }
-    
+
     //--------------------------------------------------------------------
     ::rtl::OUString SAL_CALL FormOperations::getImplementationName(  ) throw (RuntimeException)
     {
         return getImplementationName_Static();
     }
-    
+
     //--------------------------------------------------------------------
     ::sal_Bool SAL_CALL FormOperations::supportsService( const ::rtl::OUString& _ServiceName ) throw (RuntimeException)
     {
@@ -203,7 +203,7 @@ namespace frm
         const ::rtl::OUString* pEnd = aSupportedServiceNames.getConstArray() + aSupportedServiceNames.getLength();
         return ::std::find( pBegin, pEnd, _ServiceName ) != pEnd;
     }
-    
+
     //--------------------------------------------------------------------
     Sequence< ::rtl::OUString > SAL_CALL FormOperations::getSupportedServiceNames(  ) throw (RuntimeException)
     {
@@ -216,35 +216,35 @@ namespace frm
         MethodGuard aGuard( *this );
         return m_xCursor;
     }
-    
+
     //--------------------------------------------------------------------
     Reference< XResultSetUpdate > SAL_CALL FormOperations::getUpdateCursor() throw (RuntimeException)
     {
         MethodGuard aGuard( *this );
         return m_xUpdateCursor;
     }
-    
+
     //--------------------------------------------------------------------
     Reference< XFormController > SAL_CALL FormOperations::getController() throw (RuntimeException)
     {
         MethodGuard aGuard( *this );
         return m_xController;
     }
-    
+
     //--------------------------------------------------------------------
     Reference< XFeatureInvalidation > SAL_CALL FormOperations::getFeatureInvalidation() throw (RuntimeException)
     {
         MethodGuard aGuard( *this );
         return m_xFeatureInvalidation;
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL FormOperations::setFeatureInvalidation( const Reference< XFeatureInvalidation > & _rxFeatureInvalidation ) throw (RuntimeException)
     {
         MethodGuard aGuard( *this );
         m_xFeatureInvalidation = _rxFeatureInvalidation;
     }
-    
+
     //--------------------------------------------------------------------
     FeatureState SAL_CALL FormOperations::getState( ::sal_Int16 _nFeature ) throw (RuntimeException)
     {
@@ -427,7 +427,7 @@ namespace frm
 
         return aState;
     }
-    
+
     //--------------------------------------------------------------------
     ::sal_Bool SAL_CALL FormOperations::isEnabled( ::sal_Int16 _nFeature ) throw (RuntimeException)
     {
@@ -436,7 +436,7 @@ namespace frm
         FeatureState aState( getState( _nFeature ) );
         return aState.Enabled;
     }
-    
+
     //--------------------------------------------------------------------
     namespace
     {
@@ -728,7 +728,7 @@ namespace frm
 
         impl_invalidateAllSupportedFeatures_nothrow( aGuard );
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL FormOperations::executeWithArguments( ::sal_Int16 _nFeature, const Sequence< NamedValue >& _rArguments ) throw (RuntimeException, IllegalArgumentException, SQLException, WrappedTargetException)
     {
@@ -820,7 +820,7 @@ namespace frm
 	    }
 	    return bResult;
     }
-    
+
     //--------------------------------------------------------------------
     ::sal_Bool SAL_CALL FormOperations::commitCurrentControl() throw (RuntimeException, SQLException)
     {
@@ -885,7 +885,7 @@ namespace frm
         }
         return bIs;
     }
-    
+
     //--------------------------------------------------------------------
     ::sal_Bool SAL_CALL FormOperations::isModifiedRow() throw (RuntimeException, WrappedTargetException)
     {
@@ -910,19 +910,19 @@ namespace frm
 
         impl_invalidateAllSupportedFeatures_nothrow( aGuard );
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL FormOperations::rowChanged( const EventObject& /*_Event*/ ) throw (RuntimeException)
     {
         // not interested in
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL FormOperations::rowSetChanged( const EventObject& /*_Event*/ ) throw (RuntimeException)
     {
         // not interested in
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL FormOperations::modified( const EventObject& /*_Source*/ ) throw( RuntimeException )
     {
@@ -935,7 +935,7 @@ namespace frm
             impl_invalidateModifyDependentFeatures_nothrow( aGuard );
 	    }
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL FormOperations::propertyChange( const PropertyChangeEvent& _rEvent ) throw (RuntimeException)
     {
@@ -983,13 +983,13 @@ namespace frm
             impl_invalidateAllSupportedFeatures_nothrow( aGuard );
 	    }
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL FormOperations::disposing( const EventObject& /*_Source*/ ) throw (RuntimeException)
     {
         // TODO: should we react on this? Or is this the responsibility of our owner to dispose us?
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL FormOperations::disposing()
     {

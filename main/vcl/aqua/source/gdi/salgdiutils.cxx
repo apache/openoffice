@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -57,7 +57,7 @@ void AquaSalGraphics::SetPrinterGraphics( CGContextRef xContext, long nDPIX, lon
     mbWindow    = false;
     mbPrinter   = true;
     mbVirDev    = false;
-    
+
     mrContext   = xContext;
     mfFakeDPIScale = fScale;
     mnRealDPIX  = nDPIX;
@@ -248,7 +248,7 @@ void AquaSalGraphics::RefreshRect(float lX, float lY, float lWidth, float lHeigh
         // require that the width and the height need to be increased by four
         const Rectangle aVclRect(Point(static_cast<long int>(lX-1),
 					static_cast<long int>(lY-1) ),
-				 Size( 	static_cast<long int>(lWidth+4), 
+				 Size( 	static_cast<long int>(lWidth+4),
 					static_cast<long int>(lHeight+4) ) );
         mpFrame->maInvalidRect.Union( aVclRect );
     }
@@ -257,14 +257,14 @@ void AquaSalGraphics::RefreshRect(float lX, float lY, float lWidth, float lHeigh
 CGPoint* AquaSalGraphics::makeCGptArray(sal_uLong nPoints, const SalPoint*  pPtAry)
 {
     CGPoint *CGpoints = new CGPoint[ nPoints];
-    if ( CGpoints ) 
+    if ( CGpoints )
       {
         for(sal_uLong i=0;i<nPoints;i++)
           {
-            CGpoints[i].x = (float)(pPtAry[i].mnX);  
-            CGpoints[i].y = (float)(pPtAry[i].mnY);  
+            CGpoints[i].x = (float)(pPtAry[i].mnX);
+            CGpoints[i].y = (float)(pPtAry[i].mnY);
           }
-      }    
+      }
     return CGpoints;
 }
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -198,9 +198,9 @@ void ScChartHelper::UpdateChartsOnDestinationPage( ScDocument* pDestDoc, const S
             if( pObject->GetObjIdentifier() == OBJ_OLE2 && ((SdrOle2Obj*)pObject)->IsChart() )
             {
                 String aChartName = ((SdrOle2Obj*)pObject)->GetPersistName();
-                Reference< chart2::XChartDocument > xChartDoc( pDestDoc->GetChartByName( aChartName ) );			
+                Reference< chart2::XChartDocument > xChartDoc( pDestDoc->GetChartByName( aChartName ) );
 				Reference< util::XModifiable > xModif(xChartDoc, uno::UNO_QUERY_THROW);
-				xModif->setModified( sal_True);		
+				xModif->setModified( sal_True);
 			}
 			pObject = aIter.Next();
 		}
@@ -288,7 +288,7 @@ void ScChartHelper::SetChartRanges( const uno::Reference< chart2::XChartDocument
                 // the range string must be in Calc A1 format.
                 uno::Reference< chart2::data::XDataSequence > xNewSeq(
                     xDataProvider->createDataSequenceByRangeRepresentation( rRanges[nRange++] ));
-                
+
                 uno::Reference< beans::XPropertySet > xNewProps( xNewSeq, uno::UNO_QUERY );
                 if( xNewProps.is() )
                     xNewProps->setPropertyValue( aPropertyNameRole, xLabel->getPropertyValue( aPropertyNameRole ) );
@@ -304,7 +304,7 @@ void ScChartHelper::SetChartRanges( const uno::Reference< chart2::XChartDocument
                 // the range string must be in Calc A1 format.
                 uno::Reference< chart2::data::XDataSequence > xNewSeq(
                     xDataProvider->createDataSequenceByRangeRepresentation( rRanges[nRange++] ));
-                
+
                 uno::Reference< beans::XPropertySet > xNewProps( xNewSeq, uno::UNO_QUERY );
                 if( xNewProps.is() )
                     xNewProps->setPropertyValue( aPropertyNameRole, xValues->getPropertyValue( aPropertyNameRole ) );

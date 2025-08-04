@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -40,7 +40,7 @@ public abstract class SymbolLookup {
 	 * across all instances of the lookup table.
 	 */
 	abstract public void initialize();
-	
+
 	/**
 	 * Associate a symbol with a  numeric value in the lookup table
 	 * @param symbol	The symbol that will act as the key in the lookup table
@@ -51,7 +51,7 @@ public abstract class SymbolLookup {
     	stringToID.put(symbol, iObj);
     	idToString.put(iObj, symbol);
 	}
-	
+
 	/**
 	 * Retrieve the symbol associated with a given identifier
 	 * @param	id	The identfier for which we need to retieve the symbol string
@@ -60,7 +60,7 @@ public abstract class SymbolLookup {
 	public String getStringFromID(int id) {
 		return (String)idToString.get(new Integer(id));
 	}
-	
+
 	/**
 	 * Retrieve the identifier associated with a given symbol
 	 * @param	symbol	The symbol for which we need to retieve the identifier
@@ -71,7 +71,7 @@ public abstract class SymbolLookup {
 		Integer i = (Integer)stringToID.get(symbol);
 		if (i == null)
 			throw new UnsupportedFunctionException("Token '" + symbol + "' not supported by Pocket Excel");
-	
+
 		return ((Integer)stringToID.get(symbol)).intValue();
 	}
 }

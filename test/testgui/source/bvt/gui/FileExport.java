@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,20 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 /**
- * 
+ *
  */
 package bvt.gui;
 
@@ -211,7 +211,7 @@ public class FileExport {
 
 	/**
 	 * Test Open/SaveAs ooxml file by Aoo
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -230,7 +230,7 @@ public class FileExport {
 
 		testedlogfile = abspre + "testgui" + File.separatorChar + "cases_tested.txt";
 		samplespath = "samples";
-		
+
 		if (outpath.length() == 0) {
 			File workspacepath = Testspace.getFile("output");// ..\\testspace\\output
 			outpath = workspacepath.getAbsolutePath();
@@ -351,7 +351,7 @@ public class FileExport {
 
 			if (!savetopdfformat(exportname, newpath)) {
 				continue;
-			}			
+			}
 		}
 	}
 
@@ -401,7 +401,7 @@ public class FileExport {
 				extName = "xls";
 				formatchanged = true;
 			}
-			
+
 			scenario = FileUtil.getFileExtName(file).toLowerCase() + " to " + extName;
 
 			int dotIndex = file.lastIndexOf(".");
@@ -470,9 +470,9 @@ public class FileExport {
 				targetExtName = "ppt";
 			else if (extName.equals("ods"))
 				targetExtName = "xls";
-			
+
 			scenario = extName + " to " + targetExtName;
-			
+
 			int dotIndex = file.lastIndexOf(".");
 			String pre = file.substring(0, dotIndex + 1);
 			String saveTo = reportDir + File.separator + pre + targetExtName;
@@ -573,7 +573,7 @@ public class FileExport {
 				}
 				return true;
 			}
-		
+
 		}.test(timeout, interval);
 	}
 
@@ -608,7 +608,7 @@ public class FileExport {
 			String newfile = pre + extName;
 
 			scenario = FileUtil.getFileExtName(file).toLowerCase() + " to pdf";
-			
+
 			String saveTo = reportDir + File.separator + newfile;
 			// Save the text document
 			app.dispatch(".uno:ExportToPDF");
@@ -616,7 +616,7 @@ public class FileExport {
 
 			submitSaveDlg(saveTo);
 			HandleBlockers(true);
-			
+
 			if(statusBar.exists(timeout))
 				statusBar.waitForEnabled(timeout, interval);
 			else
@@ -632,7 +632,7 @@ public class FileExport {
 					throw e;
 			}
 
-			
+
 			File targetFile = new File(saveTo);
 			result.addRow("data", sourceFile.getCanonicalPath(),
 					sourceFile.length(), scenario, saveTo, targetFile.length(),

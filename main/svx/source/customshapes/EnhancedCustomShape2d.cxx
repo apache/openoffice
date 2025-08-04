@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1082,7 +1082,7 @@ Color EnhancedCustomShape2d::GetColorData( const Color& rFillColor, sal_uInt32 n
         aHSVColor.setGreen(
             aHSVColor.getGreen() * (1.0-nLuminance/100.0));
         aHSVColor.setBlue(
-            nLuminance/100.0 + 
+            nLuminance/100.0 +
             (1.0-nLuminance/100.0)*aHSVColor.getBlue());
     }
     else if( nLuminance < 0 )
@@ -1092,7 +1092,7 @@ Color EnhancedCustomShape2d::GetColorData( const Color& rFillColor, sal_uInt32 n
     }
 
     aHSVColor = basegfx::tools::hsv2rgb(aHSVColor);
-    return Color( (sal_uInt8)static_cast< sal_Int32 >( basegfx::clamp(aHSVColor.getRed(),0.0,1.0) * 255.0 + 0.5 ), 
+    return Color( (sal_uInt8)static_cast< sal_Int32 >( basegfx::clamp(aHSVColor.getRed(),0.0,1.0) * 255.0 + 0.5 ),
                   (sal_uInt8)static_cast< sal_Int32 >( basegfx::clamp(aHSVColor.getGreen(),0.0,1.0) * 255.0 + 0.5 ),
                   (sal_uInt8)static_cast< sal_Int32 >( basegfx::clamp(aHSVColor.getBlue(),0.0,1.0) * 255.0 + 0.5 ) );
 }
@@ -1149,9 +1149,9 @@ sal_Bool EnhancedCustomShape2d::GetHandlePosition( const sal_uInt32 nIndex, Poin
 				double dx = fRadius * fXScale;
 				double fX = dx * cos( a );
 				double fY =-dx * sin( a );
-				rReturnPosition = 
-                    Point( 
-                        Round( fX + aReferencePoint.X() ), 
+				rReturnPosition =
+                    Point(
+                        Round( fX + aReferencePoint.X() ),
                         basegfx::fTools::equalZero(fXScale) ? aReferencePoint.Y() :
                         Round( ( fY * fYScale ) / fXScale + aReferencePoint.Y() ) );
 			}
@@ -1454,7 +1454,7 @@ void EnhancedCustomShape2d::CreateSubPath( sal_uInt16& rSrcPt, sal_uInt16& rSegm
 					}
 
 					aNewB2DPolygon.clear();
-					
+
 					if ( rSrcPt < nCoordSize )
 					{
 						const Point aTempPoint(GetPoint( seqCoordinates[ rSrcPt++ ], sal_True, sal_True ));
@@ -1485,7 +1485,7 @@ void EnhancedCustomShape2d::CreateSubPath( sal_uInt16& rSrcPt, sal_uInt16& rSegm
 						const Point aControlA(GetPoint( seqCoordinates[ rSrcPt++ ], sal_True, sal_True ));
 						const Point aControlB(GetPoint( seqCoordinates[ rSrcPt++ ], sal_True, sal_True ));
 						const Point aEnd(GetPoint( seqCoordinates[ rSrcPt++ ], sal_True, sal_True ));
-						
+
 						DBG_ASSERT(aNewB2DPolygon.count(), "EnhancedCustomShape2d::CreateSubPath: Error in adding control point (!)");
 						aNewB2DPolygon.appendBezierSegment(
 							basegfx::B2DPoint(aControlA.X(), aControlA.Y()),
@@ -1541,7 +1541,7 @@ void EnhancedCustomShape2d::CreateSubPath( sal_uInt16& rSrcPt, sal_uInt16& rSegm
 				case ANGLEELLIPSETO :
 				{
 					for ( sal_uInt16 i = 0; ( i < nPntCount ) && ( ( rSrcPt + 2 ) < nCoordSize ); i++ )
-					{	 
+					{
 						// create a circle
 						Point _aCenter;
 						double fWidth, fHeight;
@@ -1602,7 +1602,7 @@ void EnhancedCustomShape2d::CreateSubPath( sal_uInt16& rSrcPt, sal_uInt16& rSegm
 							if ( pViewBox && (*pViewBox >>= aViewBox ) )
 							{
 								aViewBox.Width = pDefCustomShape->nCoordWidth;
-								aViewBox.Height = pDefCustomShape->nCoordHeight;							
+								aViewBox.Height = pDefCustomShape->nCoordHeight;
 							}
 							com::sun::star::beans::PropertyValue aPropVal;
 							aPropVal.Name = sViewBox;
@@ -1667,12 +1667,12 @@ void EnhancedCustomShape2d::CreateSubPath( sal_uInt16& rSrcPt, sal_uInt16& rSegm
 									basegfx::B2DPoint(aCenter.X() + nXControl, aRect.Top()),
 									basegfx::B2DPoint(aRect.Right(), aCenter.Y() - nYControl),
 									basegfx::B2DPoint(aRect.Right(), aCenter.Y()));
-								
+
 								aNewB2DPolygon.appendBezierSegment(
 									basegfx::B2DPoint(aRect.Right(), aCenter.Y() + nYControl),
 									basegfx::B2DPoint(aCenter.X() + nXControl, aRect.Bottom()),
 									basegfx::B2DPoint(aCenter.X(), aRect.Bottom()));
-								
+
 								aNewB2DPolygon.appendBezierSegment(
 									basegfx::B2DPoint(aCenter.X() - nXControl, aRect.Bottom()),
 									basegfx::B2DPoint(aRect.Left(), aCenter.Y() + nYControl),
@@ -1784,25 +1784,25 @@ void EnhancedCustomShape2d::CreateSubPath( sal_uInt16& rSrcPt, sal_uInt16& rSegm
 							sal_Int32 nXVec = ( nX - aPrev.X() ) >> 1;
 							sal_Int32 nYVec = ( nY - aPrev.Y() ) >> 1;
 							Point aControl1( aPrev.X() + nXVec, aPrev.Y() + nYVec );
-							
+
 							aControlPointA = basegfx::B2DPoint(aControl1.X(), aControl1.Y());
-							
+
 							nXVec = ( nX - aCurrent.X() ) >> 1;
 							nYVec = ( nY - aCurrent.Y() ) >> 1;
 							Point aControl2( aCurrent.X() + nXVec, aCurrent.Y() + nYVec );
-							
+
 							aControlPointB = basegfx::B2DPoint(aControl2.X(), aControl2.Y());
 
 							aNewB2DPolygon.appendBezierSegment(
-								aControlPointA, 
-								aControlPointB, 
+								aControlPointA,
+								aControlPointB,
 								basegfx::B2DPoint(aCurrent.X(), aCurrent.Y()));
 						}
 						else
 						{
 							aNewB2DPolygon.append(basegfx::B2DPoint(aCurrent.X(), aCurrent.Y()));
 						}
-						
+
 						rSrcPt++;
 					}
 				}
@@ -1871,7 +1871,7 @@ void EnhancedCustomShape2d::CreateSubPath( sal_uInt16& rSrcPt, sal_uInt16& rSegm
 				// to correct the polygon (here: open it) using the type, the last edge may get lost.
 				// Thus, use a type that fits the polygon
 				SdrPathObj* pStroke = new SdrPathObj(
-					aNewB2DPolyPolygon.isClosed() ? OBJ_POLY : OBJ_PLIN, 
+					aNewB2DPolyPolygon.isClosed() ? OBJ_POLY : OBJ_PLIN,
 					aNewB2DPolyPolygon);
 				SfxItemSet aTempSet(*this);
 				aTempSet.Put(SdrShadowItem(sal_False));
@@ -1890,7 +1890,7 @@ void EnhancedCustomShape2d::CreateSubPath( sal_uInt16& rSrcPt, sal_uInt16& rSegm
 			{
 				// see comment above about OBJ_PLIN
 				pObj = new SdrPathObj(
-					aNewB2DPolyPolygon.isClosed() ? OBJ_POLY : OBJ_PLIN, 
+					aNewB2DPolyPolygon.isClosed() ? OBJ_POLY : OBJ_PLIN,
 					aNewB2DPolyPolygon);
 				aTempSet.Put(XFillStyleItem(XFILL_NONE));
 			}
@@ -2004,7 +2004,7 @@ void CorrectCalloutArrows( MSO_SPT eSpType, sal_uInt32 nLineObjectCount, std::ve
 	}
 }
 
-void EnhancedCustomShape2d::AdaptObjColor(SdrPathObj& rObj, const SfxItemSet& rCustomShapeSet, 
+void EnhancedCustomShape2d::AdaptObjColor(SdrPathObj& rObj, const SfxItemSet& rCustomShapeSet,
                                           sal_uInt32& nColorIndex, sal_uInt32 nColorCount)
 {
     if ( !rObj.IsLine() )
@@ -2018,8 +2018,8 @@ void EnhancedCustomShape2d::AdaptObjColor(SdrPathObj& rObj, const SfxItemSet& rC
                 Color aFillColor;
                 if ( nColorCount )
                 {
-                    aFillColor = GetColorData( 
-                        ((XFillColorItem&)rCustomShapeSet.Get( XATTR_FILLCOLOR )).GetColorValue(), 
+                    aFillColor = GetColorData(
+                        ((XFillColorItem&)rCustomShapeSet.Get( XATTR_FILLCOLOR )).GetColorValue(),
                         std::min(nColorIndex, nColorCount-1) );
                     rObj.SetMergedItem( XFillColorItem( String(), aFillColor ) );
                 }
@@ -2032,11 +2032,11 @@ void EnhancedCustomShape2d::AdaptObjColor(SdrPathObj& rObj, const SfxItemSet& rC
                 {
                     aXGradient.SetStartColor(
                         GetColorData(
-                            aXGradient.GetStartColor(), 
+                            aXGradient.GetStartColor(),
                             std::min(nColorIndex, nColorCount-1) ));
                     aXGradient.SetEndColor(
                         GetColorData(
-                            aXGradient.GetEndColor(), 
+                            aXGradient.GetEndColor(),
                             std::min(nColorIndex, nColorCount-1) ));
                 }
 
@@ -2050,7 +2050,7 @@ void EnhancedCustomShape2d::AdaptObjColor(SdrPathObj& rObj, const SfxItemSet& rC
                 {
                     aXHatch.SetColor(
                         GetColorData(
-                            aXHatch.GetColor(), 
+                            aXHatch.GetColor(),
                             std::min(nColorIndex, nColorCount-1) ));
                 }
 
@@ -2062,7 +2062,7 @@ void EnhancedCustomShape2d::AdaptObjColor(SdrPathObj& rObj, const SfxItemSet& rC
                 if ( nColorCount )
                 {
                     Bitmap aBitmap(((const XFillBitmapItem&)rObj.GetMergedItem(XATTR_FILLBITMAP)).GetGraphicObject().GetGraphic().GetBitmapEx().GetBitmap());
-                    
+
                     aBitmap.Adjust(
                         static_cast< short > ( GetLuminanceChange(
                             std::min(nColorIndex, nColorCount-1))));

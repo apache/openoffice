@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 import uno
 import unohelper
@@ -54,8 +54,8 @@ def assign( rData, bBool, cChar, nByte, nShort, nUShort, nLong, nULong, nHyper,\
 class MyRecursiveCall( XRecursiveCall, unohelper.Base ):
       def callRecursivly( xCall, nToCall ):
 	  if nToCall:
-	     xCall.callRecursivly( self, nToCall -1 )	  
-    
+	     xCall.callRecursivly( self, nToCall -1 )
+
 class SampleUnoComponent( XBridgeTestBase,XServiceInfo ):
       def __init__(self,ctx):
 	  self.__dict__["callid"] = 0
@@ -66,7 +66,7 @@ class SampleUnoComponent( XBridgeTestBase,XServiceInfo ):
 
       def raiseException( self, ArgumentPosition, Message, Context ):
 	  raise IllegalArgumentException( Message, Context, ArgumentPosition )
-	
+
       def raiseRuntimeExceptionOneway(self, Message, Context ):
 	  raise RuntimeException( Message, Context )
 
@@ -76,7 +76,7 @@ class SampleUnoComponent( XBridgeTestBase,XServiceInfo ):
          self.__dict__["data"] = TestDataElements( bBool, cChar, nByte, nShort, nUShort, nLong,
 	                  nULong, nHyper, nUHyper, fFloat, fDouble, eEnum, aStruct, xInterface,
 			  aAny, aSequence )
-         self.__dict__["Struct"] = aStruct			  	     
+         self.__dict__["Struct"] = aStruct
 
       def setValues2( self, bBool, cChar, nByte, nShort, nUShort, nLong, nULong,\
 		      nHyper, nUHyper, fFloat, fDouble, eEnum,		\
@@ -88,13 +88,13 @@ class SampleUnoComponent( XBridgeTestBase,XServiceInfo ):
 	  return bBool, cChar, nByte, nShort, nUShort, nLong, nULong, nHyper, nUHyper, nULong, \
 	         nHyper, nUHyper, fFloat, fDouble, eEnum, aStruct, xInterface, aAny,	       \
 		 (aSequence[1],aSequence[0]), aStruct
-      						 
+
       def getValues(self, a,b,c,d,e,f,g,h, i,j,k,l,m,n):
 	  v = self.__dict__["data"]
 	  return self.__dict__["Struct"],v.Bool, v.Char, v.Byte, v.Short, v.UShort, v.Long,	\
 	         v.ULong, v.Hyper, v.UHyper, v.Float, v.Double, v.Enum, v.String, v.Interface,	\
 		 v.Any, v.Sequence, self.__dict__["Struct"]
-		 
+
       def call( self, callid, nWaitMUSEC ):
 	  if self.__dict__["callid"] >= callid:
 	     self.__dict__["sequenceBroken"] = 1
@@ -103,7 +103,7 @@ class SampleUnoComponent( XBridgeTestBase,XServiceInfo ):
 
       def callOneway( self, nCallId, nWaitMUSEC ):
 	  call( nCallId, nWaitMUSEC )
-	  
+
       def sequenceOfCallTestPassed():
 	  return self.__dict__["sequenceBroken"]
 
@@ -119,11 +119,11 @@ class SampleUnoComponent( XBridgeTestBase,XServiceInfo ):
 		 break
 	  if not found:
 	     raise UnknownPropertyException( "Property "+name+" is unknown", self )
-	     	 
+
       def __setattr__( self, name, value ):
 	  checkExistence( name )
 	  self.__dict__[name] = value
-	  
+
       def __getattr__( self, name ):
 	  checkExistence( name )
 	  return self.__dict__[name]
@@ -138,7 +138,7 @@ class SampleUnoComponent( XBridgeTestBase,XServiceInfo ):
 
 g_ImplementationHelper.addImplementation( \
 	SampleUnoComponent,g_implName,("com.sun.star.test.bridge.PythonTestObject",),)
-	
+
 #g_ImplementationEntries = \
 #    unohelper.ImplementationEntry(				\
 #	      "org.openoffice.comp.SamplePythonComponent",	\

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,21 +7,21 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
- 
-#include <avmedia/mediaitem.hxx> 
+
+#include <avmedia/mediaitem.hxx>
 #include <com/sun/star/uno/Sequence.hxx>
 
 using namespace ::com::sun::star;
@@ -109,7 +109,7 @@ SfxPoolItem* MediaItem::Clone( SfxItemPool* ) const
 SfxItemPresentation MediaItem::GetPresentation( SfxItemPresentation,
 												  SfxMapUnit,
 												  SfxMapUnit,
-    											  XubString& rText, 
+    											  XubString& rText,
 												  const IntlWrapper * ) const
 {
 	rText.Erase();
@@ -131,9 +131,9 @@ sal_Bool MediaItem::QueryValue( com::sun::star::uno::Any& rVal, sal_uInt8 ) cons
 	aSeq[ 6 ] <<= mbLoop;
 	aSeq[ 7 ] <<= mbMute;
 	aSeq[ 8 ] <<= meZoom;
-	
+
 	rVal <<= aSeq;
-	
+
 	return true;
 }
 
@@ -143,11 +143,11 @@ sal_Bool MediaItem::PutValue( const com::sun::star::uno::Any& rVal, sal_uInt8 )
 {
 	uno::Sequence< uno::Any >	aSeq;
 	sal_Bool						bRet = false;
-	
+
 	if( ( rVal >>= aSeq ) && ( aSeq.getLength() == 9 ) )
 	{
 		sal_Int32 nInt32 = 0;
-		
+
 		aSeq[ 0 ] >>= maURL;
 		aSeq[ 1 ] >>= mnMaskSet;
 		aSeq[ 2 ] >>= nInt32; meState = static_cast< MediaState >( nInt32 );
@@ -157,10 +157,10 @@ sal_Bool MediaItem::PutValue( const com::sun::star::uno::Any& rVal, sal_uInt8 )
 		aSeq[ 6 ] >>= mbLoop;
 		aSeq[ 7 ] >>= mbMute;
 		aSeq[ 8 ] >>= meZoom;
-		
+
 		bRet = true;
 	}
-	
+
 	return bRet;
 }
 
@@ -172,10 +172,10 @@ void MediaItem::merge( const MediaItem& rMediaItem )
 
 	if( AVMEDIA_SETMASK_URL & nMaskSet )
 		setURL( rMediaItem.getURL() );
-		
+
 	if( AVMEDIA_SETMASK_STATE & nMaskSet )
 		setState( rMediaItem.getState() );
-		
+
 	if( AVMEDIA_SETMASK_DURATION & nMaskSet )
 		setDuration( rMediaItem.getDuration() );
 
@@ -211,14 +211,14 @@ void MediaItem::setURL( const ::rtl::OUString& rURL )
 }
 
 //------------------------------------------------------------------------
-	
+
 const ::rtl::OUString& MediaItem::getURL() const
 {
 	return maURL;
 }
 
 //------------------------------------------------------------------------
-	
+
 void MediaItem::setState( MediaState eState )
 {
 	meState = eState;
@@ -226,14 +226,14 @@ void MediaItem::setState( MediaState eState )
 }
 
 //------------------------------------------------------------------------
-	
+
 MediaState MediaItem::getState() const
 {
 	return meState;
 }
 
 //------------------------------------------------------------------------
-	
+
 void MediaItem::setDuration( double fDuration )
 {
 	mfDuration = fDuration;
@@ -241,14 +241,14 @@ void MediaItem::setDuration( double fDuration )
 }
 
 //------------------------------------------------------------------------
-	
+
 double MediaItem::getDuration() const
 {
 	return mfDuration;
 }
 
 //------------------------------------------------------------------------
-	
+
 void MediaItem::setTime( double fTime )
 {
 	mfTime = fTime;
@@ -256,14 +256,14 @@ void MediaItem::setTime( double fTime )
 }
 
 //------------------------------------------------------------------------
-	
+
 double MediaItem::getTime() const
 {
 	return mfTime;
 }
 
 //------------------------------------------------------------------------
-	
+
 void MediaItem::setLoop( sal_Bool bLoop )
 {
 	mbLoop = bLoop;
@@ -271,14 +271,14 @@ void MediaItem::setLoop( sal_Bool bLoop )
 }
 
 //------------------------------------------------------------------------
-	
+
 sal_Bool MediaItem::isLoop() const
 {
 	return mbLoop;
 }
 
 //------------------------------------------------------------------------
-	
+
 void MediaItem::setMute( sal_Bool bMute )
 {
 	mbMute = bMute;
@@ -293,7 +293,7 @@ sal_Bool MediaItem::isMute() const
 }
 
 //------------------------------------------------------------------------
-	
+
 void MediaItem::setVolumeDB( sal_Int16 nDB )
 {
 	mnVolumeDB = nDB;
@@ -316,7 +316,7 @@ void MediaItem::setZoom( ::com::sun::star::media::ZoomLevel eZoom )
 }
 
 //------------------------------------------------------------------------
-		
+
 ::com::sun::star::media::ZoomLevel MediaItem::getZoom() const
 {
 	return meZoom;

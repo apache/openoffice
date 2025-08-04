@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,7 +48,7 @@ WW8Sttbf::WW8Sttbf(WW8Stream & rStream, sal_uInt32 nOffset, sal_uInt32 nCount)
         mEntryOffsets.push_back(nOffset);
 
         sal_uInt32 nStringLength = getU16(nOffset);
-        
+
         nOffset += 2 + nStringLength * (mbComplex ? 2 : 1);
 
         mExtraOffsets.push_back(nOffset);
@@ -95,12 +95,12 @@ WW8SttbTableResource::~WW8SttbTableResource()
 void WW8SttbTableResource::resolve(Table & rTable)
 {
     sal_uInt32 nCount = mpSttbf->getEntryCount();
-    
+
     for (sal_uInt32 n = 0; n < nCount; n++)
     {
         WW8StringValue::Pointer_t pVal(new WW8StringValue(mpSttbf->getEntry(n)));
         ::writerfilter::Reference<Properties>::Pointer_t pProps(new WW8StringProperty(0, pVal));
-        
+
         rTable.entry(n, pProps);
     }
 }
@@ -134,29 +134,29 @@ sal_uInt32 WW8SttbRgtplc::getEntryCount()
     return getU16(2);
 }
 
-::writerfilter::Reference<Properties>::Pointer_t 
+::writerfilter::Reference<Properties>::Pointer_t
 WW8SttbRgtplc::getEntry(sal_uInt32 nIndex)
 {
     ::writerfilter::Reference<Properties>::Pointer_t pResult;
-    
+
     sal_uInt32 nOffset = 6;
-    
+
     for(; nIndex > 0; --nIndex)
     {
         sal_uInt16 nCount = getU16(nOffset);
-        
+
         nOffset = nOffset + 2 + nCount;
     }
-    
+
     sal_uInt16 nCount = getU16(nOffset);
-    
+
     if (nCount > 0)
     {
         WW8Tplc * pTplc = new WW8Tplc(*this, nOffset + 2, nCount);
-        
+
         pResult.reset(pTplc);
     }
-    
+
     return pResult;
 }
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -69,10 +69,10 @@ namespace rptxml
 		static const SvXMLEnumMapEntry*	GetKeepTogetherOptions();
 		static const SvXMLEnumMapEntry*	GetCommandTypeOptions();
         static const SvXMLEnumMapEntry* GetImageScaleOptions();
-        
+
         static const XMLPropertyMapEntry* GetTableStyleProps();
         static const XMLPropertyMapEntry* GetColumnStyleProps();
-        
+
         static const XMLPropertyMapEntry* GetRowStyleProps();
 
         static void copyStyleElements(const bool _bOld,const ::rtl::OUString& _sStyleName,const SvXMLStylesContext* _pAutoStyles,const com::sun::star::uno::Reference< com::sun::star::beans::XPropertySet>& _xProp);
@@ -80,7 +80,7 @@ namespace rptxml
 
         static SvXMLTokenMap* GetReportElemTokenMap();
         static SvXMLTokenMap* GetSubDocumentElemTokenMap();
-        
+
 	};
 // -----------------------------------------------------------------------------
 } // rptxml

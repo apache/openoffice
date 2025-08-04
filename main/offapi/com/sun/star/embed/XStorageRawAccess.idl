@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -82,7 +82,7 @@ published interface XStorageRawAccess
 
 		<p>
 		This method returns a stream from the package as it is stored there,
-		without any decompression/decription and etc. This method can be
+		without any decompression/description and etc. This method can be
 		helpful to check file consistency, for example by signing.
 		</p>
 
@@ -92,7 +92,7 @@ published interface XStorageRawAccess
 
 		@param sStreamName
 			the name of the substream that should be open
-	
+
 		@throws ::com::sun::star::embed::InvalidStorageException
 			this storage is in invalid state for any reason
 
@@ -100,7 +100,7 @@ published interface XStorageRawAccess
 			one of provided arguments is illegal
 
 		@throws ::com::sun::star::container::NoSuchElementException
-			there is no element with specified name 
+			there is no element with specified name
 
 		@throws ::com::sun::star::io::IOException
 			in case of io errors during stream opening
@@ -139,7 +139,7 @@ published interface XStorageRawAccess
 
 		@param sStreamName
 			the name of the substream that should be open
-	
+
 		@param xInputStream
 			a raw stream representing encrypted stream
 
@@ -153,7 +153,7 @@ published interface XStorageRawAccess
 			the stream is not an encrypted one
 
 		@throws ::com::sun::star::container::NoSuchElementException
-			there is no element with specified name 
+			there is no element with specified name
 
 		@throws ::com::sun::star::io::IOException
 			in case of io errors during stream opening
@@ -190,7 +190,7 @@ published interface XStorageRawAccess
 
 		@param sStreamName
 			the name of the substream that should be open
-	
+
 		@param xInputStream
 			a raw stream representing encrypted stream
 

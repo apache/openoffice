@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,12 +48,12 @@ class NIST_Hash
 	{
 		return z ^ ( x & ( y ^ z ) );
 	}
-	
+
 	sal_uInt32 f2( sal_uInt32 x, sal_uInt32 y, sal_uInt32 z )
 	{
 		return x ^ y ^ z;
 	}
-	
+
 	sal_uInt32 f3( sal_uInt32 x, sal_uInt32 y, sal_uInt32 z )
 	{
 		return ( x & y ) + ( z & ( x ^ y ) );
@@ -96,7 +96,7 @@ class NIST_Hash
 	sal_uInt32 hashdata[5];
 public:
 	NIST_Hash( const char* pString, sal_uInt32 nLen );
-	
+
 	sal_uInt32 *getHash() { return hashdata; }
 };
 
@@ -208,7 +208,7 @@ void NIST_Hash::transform()
 
 #define BLOCKSIZE sizeof( data )
 
-NIST_Hash::NIST_Hash( const char* pString, sal_uInt32 nLen ) 
+NIST_Hash::NIST_Hash( const char* pString, sal_uInt32 nLen )
 {
 	hashdata[0] = 0x67452301;
 	hashdata[1] = 0xefcdab89;

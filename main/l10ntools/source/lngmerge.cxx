@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,15 +49,15 @@ LngParser::LngParser( const ByteString &rLngFile, sal_Bool bUTF8, sal_Bool bULFF
 		SvFileStream aStream( String( sSource, RTL_TEXTENCODING_ASCII_US ), STREAM_STD_READ );
 		if ( aStream.IsOpen()) {
 			ByteString sLine;
-            bool bFirstLine = true;			
+            bool bFirstLine = true;
             while ( !aStream.IsEof()) {
 				aStream.ReadLine( sLine );
-				
+
                 if( bFirstLine ){       // Always remove UTF8 BOM from the first line
                     Export::RemoveUTF8ByteOrderMarker( sLine );
                     bFirstLine = false;
                 }
-                
+
                 pLines->Insert( new ByteString( sLine ), LIST_APPEND );
 			}
 		}
@@ -84,7 +84,7 @@ void LngParser::FillInFallbacks( ByteStringHashMap Text )
     ByteString sCur;
     for( unsigned int n = 0; n < aLanguages.size(); n++ ){
         sCur = aLanguages[ n ];
-        
+
         if( Export::isAllowed( sCur ) ){
             ByteString sFallbackLang = Export::GetFallbackLanguage( sCur );
             if( sFallbackLang.Len() ){
@@ -108,7 +108,7 @@ sal_Bool LngParser::CreateSDF(
 	if ( !aSDFStream.IsOpen()) {
 		nError = SDF_COULD_NOT_OPEN;
 	}
-    aSDFStream.SetStreamCharSet( RTL_TEXTENCODING_UTF8 );	
+    aSDFStream.SetStreamCharSet( RTL_TEXTENCODING_UTF8 );
     nError = SDF_OK;
 	DirEntry aEntry( String( sSource, RTL_TEXTENCODING_ASCII_US ));
 	aEntry.ToAbs();
@@ -128,11 +128,11 @@ sal_Bool LngParser::CreateSDF(
     ByteString sLine;
 
     while( nPos < pLines->Count() ){
-        sLine = *pLines->GetObject( nPos++ );    
+        sLine = *pLines->GetObject( nPos++ );
         while( nPos < pLines->Count() && !isNextGroup( sGroup , sLine ) ){
             ReadLine( sLine , Text );
             sID = sGroup;
-            sLine = *pLines->GetObject( nPos++ );    
+            sLine = *pLines->GetObject( nPos++ );
         };
         if( bStart ){
             bStart = false;
@@ -140,18 +140,18 @@ sal_Bool LngParser::CreateSDF(
         }
         else {
 
-            WriteSDF( aSDFStream , Text , rPrj , rRoot , sActFileName , sID );    
+            WriteSDF( aSDFStream , Text , rPrj , rRoot , sActFileName , sID );
         }
     }
 	aSDFStream.Close();
 	return true;
 }
 
- void LngParser::WriteSDF( SvFileStream &aSDFStream , ByteStringHashMap &rText_inout ,	
+ void LngParser::WriteSDF( SvFileStream &aSDFStream , ByteStringHashMap &rText_inout ,
      const ByteString &rPrj , const ByteString &rRoot ,
      const ByteString &sActFileName , const ByteString &sID )
  {
-     
+
     sal_Bool bExport = true;
     if ( bExport ) {
    		ByteString sTimeStamp( Export::GetTimeStamp());
@@ -159,10 +159,10 @@ sal_Bool LngParser::CreateSDF(
 		FillInFallbacks( rText_inout );
         for( unsigned int n = 0; n < aLanguages.size(); n++ ){
             sCur = aLanguages[ n ];
-            ByteString sAct = rText_inout[ sCur ];	
+            ByteString sAct = rText_inout[ sCur ];
             if ( !sAct.Len() && sCur.Len() )
                 sAct = rText_inout[ ByteString("en-US") ];
-		    
+
             ByteString sOutput( rPrj ); sOutput += "\t";
 			if ( rRoot.Len())
 			    sOutput += sActFileName;
@@ -196,7 +196,7 @@ sal_Bool LngParser::CreateSDF(
 	sLang.EraseTrailingChars( ' ' );
 	ByteString sText = sLine_in.GetToken( 1, '\"' ).GetToken( 0, '\"' );
 	if( sLang.Len() )
-        rText_inout[ sLang ] = sText;   
+        rText_inout[ sLang ] = sText;
  }
 
 /*****************************************************************************/
@@ -217,7 +217,7 @@ sal_Bool LngParser::Merge(
 
 	MergeDataFile aMergeDataFile( rSDFFile, sSource , sal_False, RTL_TEXTENCODING_MS_1252);//, bDBIsUTF8 );
     ByteString sTmp( Export::sLanguages );
-    if( sTmp.ToUpperAscii().Equals("ALL") ) 
+    if( sTmp.ToUpperAscii().Equals("ALL") )
         Export::SetLanguages( aMergeDataFile.GetLanguages() );
     aLanguages = Export::GetLanguages();
 
@@ -290,7 +290,7 @@ sal_Bool LngParser::Merge(
 
 						if ( sNewText.Len()) {
 							ByteString *pLine = pLines->GetObject( nPos );
-                            
+
 								ByteString sText1( sLang );
 								sText1 += " = \"";
 								sText1 += sNewText;
@@ -317,10 +317,10 @@ sal_Bool LngParser::Merge(
         if ( nLastLangPos ) {
             for( unsigned int n = 0; n < aLanguages.size(); n++ ){
                 sCur = aLanguages[ n ];
-                if(   //( !sCur.EqualsIgnoreCaseAscii("de") || 
-                      //( sCur.EqualsIgnoreCaseAscii("de") && Export::isMergingGermanAllowed( rPrj ) ) ) 
+                if(   //( !sCur.EqualsIgnoreCaseAscii("de") ||
+                      //( sCur.EqualsIgnoreCaseAscii("de") && Export::isMergingGermanAllowed( rPrj ) ) )
                     !sCur.EqualsIgnoreCaseAscii("en-US") && !Text[ sCur ].Len() && pEntrys ){
-                    
+
                     ByteString sNewText;
                     pEntrys->GetText( sNewText, STRING_TYP_TEXT, sCur, sal_True );
                     if (( sNewText.Len()) &&

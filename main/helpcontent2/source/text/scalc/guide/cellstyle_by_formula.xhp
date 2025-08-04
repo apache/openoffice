@@ -36,7 +36,7 @@
 <bookmark_value>cell styles;assigning by formulas</bookmark_value>
 <bookmark_value>formulas;assigning cell formats</bookmark_value>
 </bookmark><comment>mw deleted "applying;"</comment>
-<paragraph xml-lang="en-US" id="hd_id3145673" role="heading" level="1" l10n="U"><variable id="cellstyle_by_formula"><link href="text/scalc/guide/cellstyle_by_formula.xhp" name="Assigning Formats by Formula">Assigning Formats by Formula</link> 
+<paragraph xml-lang="en-US" id="hd_id3145673" role="heading" level="1" l10n="U"><variable id="cellstyle_by_formula"><link href="text/scalc/guide/cellstyle_by_formula.xhp" name="Assigning Formats by Formula">Assigning Formats by Formula</link>
 </variable></paragraph>
 <paragraph xml-lang="en-US" id="par_id3150275" role="paragraph" l10n="CHG">The STYLE() function can be added to an existing formula in a cell. For example, together with the CURRENT function, you can color a cell depending on its value. The formula =...+STYLE(IF(CURRENT()&gt;3; "Red"; "Green")) applies the cell style "Red" to cells if the value is greater than 3, otherwise the cell style "Green" is applied.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3151385" role="paragraph" l10n="U">If you would like to apply a formula to all cells in a selected area, you can use the <item type="menuitem">Find &amp; Replace</item> dialog.</paragraph>

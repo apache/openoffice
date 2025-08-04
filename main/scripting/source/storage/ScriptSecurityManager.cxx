@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -60,7 +60,7 @@ namespace scripting_securitymgr
 
 static OUString s_configProv = ::rtl::OUString::createFromAscii(
     "com.sun.star.configuration.ConfigurationProvider");
- 
+
 static OUString s_configAccess = ::rtl::OUString::createFromAscii(
     "com.sun.star.configuration.ConfigurationAccess");
 
@@ -92,7 +92,7 @@ ScriptSecurityManager::ScriptSecurityManager(
     m_xConfigProvFactory.set( xMgr->createInstanceWithContext( s_configProv, m_xContext ), UNO_QUERY_THROW );
 }
 
-void ScriptSecurityManager::addScriptStorage( rtl::OUString scriptStorageURL, 
+void ScriptSecurityManager::addScriptStorage( rtl::OUString scriptStorageURL,
     sal_Int32 storageID)
 throw ( RuntimeException )
 {
@@ -100,7 +100,7 @@ throw ( RuntimeException )
     if ( ph_it != m_permissionSettings.end() )
     {
         OSL_TRACE( "ScriptSecurityManager::addScriptStorage: already called for %s",
-            ::rtl::OUStringToOString( scriptStorageURL, 
+            ::rtl::OUStringToOString( scriptStorageURL,
                 RTL_TEXTENCODING_ASCII_US ).pData->buffer);
         return;
     }
@@ -112,18 +112,18 @@ throw ( RuntimeException )
     newPerm.execPermission=sal_False;
 
     //need to check if storage has any scripts
-    try 
+    try
     {
         // we have some scripts so read config & decide on that basis
-        // Setup flags: m_runMacroSetting, m_warning, m_confirmationRequired, 
+        // Setup flags: m_runMacroSetting, m_warning, m_confirmationRequired,
         readConfiguration();
     }
     catch ( RuntimeException & rte )
     {
         OSL_TRACE( "ScriptSecurityManager::addScriptStorage: caught RuntimeException: %s",
-            ::rtl::OUStringToOString( rte.Message, 
+            ::rtl::OUStringToOString( rte.Message,
                 RTL_TEXTENCODING_ASCII_US ).pData->buffer);
-        throw RuntimeException( 
+        throw RuntimeException(
             OUSTR( "ScriptSecurityManager::addScriptStorage: caught RuntimeException" ).concat( rte.Message ),
         Reference< XInterface >() );
     }
@@ -136,7 +136,7 @@ throw ( RuntimeException )
             break;
         }
         case PERMISSION_PATHLIST:         // according to path list
-        { 
+        {
             OSL_TRACE("according to path");
             // check path
             rtl::OUString path = scriptStorageURL.copy( 0, scriptStorageURL.lastIndexOf( '/' ) );
@@ -176,7 +176,7 @@ throw ( RuntimeException )
                 }
             }
             break;
-        } 
+        }
         case PERMISSION_ALWAYS:         // always
             if( m_warning == sal_True )
             {
@@ -194,22 +194,22 @@ throw ( RuntimeException )
             }
             break;
         default:
-                // 
+                //
                 throw RuntimeException(
                     OUSTR( "ScriptSecurityManager::addScriptStorage got invalid OfficeBasic setting"),
                     Reference< XInterface > ());
     }
-    
+
     if ( newPerm.execPermission == sal_True )
     {
         OSL_TRACE("setting exec permission to true for %s",
-            ::rtl::OUStringToOString( scriptStorageURL, 
+            ::rtl::OUStringToOString( scriptStorageURL,
                 RTL_TEXTENCODING_ASCII_US ).pData->buffer );
     }
     else
     {
         OSL_TRACE("setting exec permission to false for %s",
-            ::rtl::OUStringToOString( scriptStorageURL, 
+            ::rtl::OUStringToOString( scriptStorageURL,
                 RTL_TEXTENCODING_ASCII_US ).pData->buffer );
     }
 
@@ -222,13 +222,13 @@ bool ScriptSecurityManager::isSecureURL( const OUString & path )
     OSL_TRACE( "no of elts in path list = %d",
         (int)m_secureURL.getLength() );
     OSL_TRACE("document path: %s",
-        ::rtl::OUStringToOString( path, 
+        ::rtl::OUStringToOString( path,
             RTL_TEXTENCODING_ASCII_US ).pData->buffer);
     int length = m_secureURL.getLength();
     for( int j = 0; j < length ; j++ )
     {
         OSL_TRACE("path list element: %s",
-            ::rtl::OUStringToOString( m_secureURL[j], 
+            ::rtl::OUStringToOString( m_secureURL[j],
                 RTL_TEXTENCODING_ASCII_US ).pData->buffer);
 #ifdef WIN32
         OSL_TRACE("case insensitive comparison");
@@ -255,7 +255,7 @@ throw ( RuntimeException )
 short ScriptSecurityManager::executePathDialog( const OUString & path )
 throw ( RuntimeException )
 {
-    return executeDialog( path );    
+    return executeDialog( path );
 }
 
 short ScriptSecurityManager::executeDialog( const OUString & path )
@@ -295,23 +295,23 @@ throw ( RuntimeException )
 }
 
 /**
- * checks to see whether the requested ScriptPermission is allowed. 
+ * checks to see whether the requested ScriptPermission is allowed.
  * This was modelled after the Java AccessController, but at this time
  * we can't see a good reason not to return a bool, rather than throw
  * an exception if the request is not granted (as is the case in Java).
  */
 void ScriptSecurityManager::checkPermission( const OUString & scriptStorageURL,
-    const OUString & permissionRequest ) 
+    const OUString & permissionRequest )
     throw ( RuntimeException, lang::IllegalArgumentException, security::AccessControlException )
 {
     if( permissionRequest.equals( OUString::createFromAscii( "execute" ) ) )
     {
-        OSL_TRACE( 
-            "ScriptSecurityManager::checkPermission: execute permission request for %s", 
-            ::rtl::OUStringToOString( scriptStorageURL, 
+        OSL_TRACE(
+            "ScriptSecurityManager::checkPermission: execute permission request for %s",
+            ::rtl::OUStringToOString( scriptStorageURL,
                 RTL_TEXTENCODING_ASCII_US ).pData->buffer);
         Permission_Hash::const_iterator ph_it = m_permissionSettings.find( scriptStorageURL );
-        Permission_Hash::const_iterator ph_itend = 
+        Permission_Hash::const_iterator ph_itend =
             m_permissionSettings.end();
         if ( ph_it != ph_itend )
         {
@@ -326,8 +326,8 @@ void ScriptSecurityManager::checkPermission( const OUString & scriptStorageURL,
                 security::RuntimePermission permission;
                 permission.Name = OUString::createFromAscii( "execute" ).concat( scriptStorageURL );
                 aPermission <<= permission;
-                throw security::AccessControlException( 
-                    OUString::createFromAscii( "ScriptSecurityManager::checkPermission: no execute permission for URL" ).concat( scriptStorageURL ), 
+                throw security::AccessControlException(
+                    OUString::createFromAscii( "ScriptSecurityManager::checkPermission: no execute permission for URL" ).concat( scriptStorageURL ),
                     Reference< XInterface > (), aPermission );
             }
         }
@@ -345,8 +345,8 @@ void ScriptSecurityManager::removePermissionSettings ( ::rtl::OUString & scriptS
 
     if ( ph_it == m_permissionSettings.end() )
     {
-        OSL_TRACE( "Entry for storage url %s doesn't exist in map", 
-            ::rtl::OUStringToOString( scriptStorageURL, 
+        OSL_TRACE( "Entry for storage url %s doesn't exist in map",
+            ::rtl::OUStringToOString( scriptStorageURL,
                 RTL_TEXTENCODING_ASCII_US ).pData->buffer);
         return;
     }
@@ -359,7 +359,7 @@ void ScriptSecurityManager::removePermissionSettings ( ::rtl::OUString & scriptS
 void ScriptSecurityManager::readConfiguration()
     throw ( RuntimeException)
 {
-    try 
+    try
     {
         beans::PropertyValue configPath;
         configPath.Name = ::rtl::OUString::createFromAscii( "nodepath" );
@@ -373,7 +373,7 @@ void ScriptSecurityManager::readConfiguration()
 
         m_confirmationRequired = sal_True;
         OSL_VERIFY( xPropSet->getPropertyValue( OUSTR( "Confirmation" ) ) >>= m_confirmationRequired );
-        if ( m_confirmationRequired == sal_True ) 
+        if ( m_confirmationRequired == sal_True )
         {
             OSL_TRACE( "ScriptSecurityManager:readConfiguration: confirmation is true" );
         }
@@ -385,7 +385,7 @@ void ScriptSecurityManager::readConfiguration()
         m_warning = true;
         OSL_VERIFY( xPropSet->getPropertyValue( OUSTR( "Warning" ) ) >>= m_warning );
 
-        if ( m_warning == sal_True ) 
+        if ( m_warning == sal_True )
         {
             OSL_TRACE( "ScriptSecurityManager:readConfiguration: warning is true" );
         }
@@ -416,7 +416,7 @@ void ScriptSecurityManager::readConfiguration()
     catch ( Exception & e )
     {
         OSL_TRACE( "Unknown exception in readconf: %s",
-            ::rtl::OUStringToOString(e.Message , 
+            ::rtl::OUStringToOString(e.Message ,
             RTL_TEXTENCODING_ASCII_US ).pData->buffer  );
         throw RuntimeException(
             OUSTR( "ScriptSecurityManager:readConfiguration: exception? :" ).concat( e.Message ),
@@ -445,12 +445,12 @@ void ScriptSecurityManager::readConfiguration()
     );
     for( int i = 0; i < length; i++ )
     {
-        OSL_TRACE( "ScriptSecurityManager:readConfiguration path = %s", 
-            ::rtl::OUStringToOString(m_secureURL[i] , 
+        OSL_TRACE( "ScriptSecurityManager:readConfiguration path = %s",
+            ::rtl::OUStringToOString(m_secureURL[i] ,
             RTL_TEXTENCODING_ASCII_US ).pData->buffer  );
 
         OSL_TRACE( "ScriptSecurityManager: subpath = %s",
-            ::rtl::OUStringToOString( 
+            ::rtl::OUStringToOString(
             xStringSubstitution->substituteVariables( m_secureURL[i], true ),
             RTL_TEXTENCODING_ASCII_US ).pData->buffer );
         m_secureURL[i] = xStringSubstitution->substituteVariables( m_secureURL[i], true );
@@ -459,8 +459,8 @@ void ScriptSecurityManager::readConfiguration()
     int length2 = m_secureURL.getLength();
     for( int j = 0; j < length2 ; j++ )
     {
-        OSL_TRACE( "ScriptSecurityManager: path = %s", 
-            ::rtl::OUStringToOString(m_secureURL[j] , 
+        OSL_TRACE( "ScriptSecurityManager: path = %s",
+            ::rtl::OUStringToOString(m_secureURL[j] ,
             RTL_TEXTENCODING_ASCII_US ).pData->buffer  );
     }
 #endif

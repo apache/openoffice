@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -65,27 +65,27 @@ class ProgressBarWrapper : public UIElementWrapperBase
         // public interfaces
         void setStatusBar( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindow >& rStatusBar, sal_Bool bOwnsInstance = sal_False );
         ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindow > getStatusBar() const;
-        
+
         // wrapped methods of ::com::sun::star::task::XStatusIndicator
         void start( const ::rtl::OUString& Text, ::sal_Int32 Range ) throw (::com::sun::star::uno::RuntimeException);
         void end() throw (::com::sun::star::uno::RuntimeException);
         void setText( const ::rtl::OUString& Text ) throw (::com::sun::star::uno::RuntimeException);
         void setValue( ::sal_Int32 Value ) throw (::com::sun::star::uno::RuntimeException);
         void reset() throw (::com::sun::star::uno::RuntimeException);
-         
+
         // UNO interfaces
         // XComponent
         virtual void SAL_CALL dispose() throw (::com::sun::star::uno::RuntimeException);
-        
+
         // XInitialization
         virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments ) throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
-        
+
         // XUpdatable
         virtual void SAL_CALL update() throw (::com::sun::star::uno::RuntimeException);
 
         // XUIElement
         virtual ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL getRealInterface() throw (::com::sun::star::uno::RuntimeException);
-        
+
 	//-------------------------------------------------------------------------------------------------------------
 	//	variables
 	//	(should be private everyway!)

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -52,7 +52,7 @@ inline Cli_environment::Cli_environment()
 {
 #if OSL_DEBUG_LEVEL >= 2
     _numRegisteredObjects = 0;
-#endif    
+#endif
 }
 
 Cli_environment::~Cli_environment()
@@ -69,7 +69,7 @@ System::Object* Cli_environment::registerInterface(
     //obj must be a transparent proxy
     OSL_ASSERT(RemotingServices::IsTransparentProxy(obj));
     _numRegisteredObjects ++;
-#endif    
+#endif
     OSL_ASSERT( ! m_objects->ContainsKey(oid));
     m_objects->Add(oid, new WeakReference(obj));
     return obj;
@@ -90,11 +90,11 @@ System::Object* Cli_environment::registerInterface      (
 }
 
 void Cli_environment::revokeInterface(System::String* oid, System::Type* type)
-{   
+{
     System::String* key = type != NULL ? createKey(oid, type) : oid;
 #if OSL_DEBUG_LEVEL >= 1
     _numRegisteredObjects --;
-#endif    
+#endif
 #if OSL_DEBUG_LEVEL >= 2
     int i = 1;
     if (m_objects->ContainsKey(key) == false)
@@ -148,7 +148,7 @@ System::String* Cli_environment::getObjectIdentifier(System::Object* obj)
         if (proxyImpl)
             oId= proxyImpl->getOid();
     }
-    
+
     if (oId == 0)
     {
         StringBuilder * buf= new StringBuilder(256);

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -136,7 +136,7 @@ bool lcl_NumberFormatFromItemToPropertySet( sal_uInt16 nWhichId, const SfxItemSe
     if( bOverwriteAttributedDataPointsAlso )
     {
         Reference< chart2::XDataSeries > xSeries( xPropertySet, uno::UNO_QUERY);
-        if( aValue != aOldValue || 
+        if( aValue != aOldValue ||
             ::chart::DataSeriesHelper::hasAttributedDataPointDifferentValue( xSeries, aPropertyName, aOldValue ) )
         {
             ::chart::DataSeriesHelper::setPropertyAlsoToAllAttributedDataPoints( xSeries, aPropertyName, aValue );
@@ -183,7 +183,7 @@ bool lcl_UseSourceFormatFromItemToPropertySet( sal_uInt16 nWhichId, const SfxIte
     if( bOverwriteAttributedDataPointsAlso )
     {
         Reference< chart2::XDataSeries > xSeries( xPropertySet, uno::UNO_QUERY);
-        if( aNewValue != aOldValue || 
+        if( aNewValue != aOldValue ||
             ::chart::DataSeriesHelper::hasAttributedDataPointDifferentValue( xSeries, aPropertyName, aOldValue ) )
         {
             ::chart::DataSeriesHelper::setPropertyAlsoToAllAttributedDataPoints( xSeries, aPropertyName, aNewValue );
@@ -336,7 +336,7 @@ bool DataPointItemConverter::ApplySpecialItem(
                 if( m_bOverwriteLabelsForAttributedDataPointsAlso )
                 {
                     Reference< chart2::XDataSeries > xSeries( GetPropertySet(), uno::UNO_QUERY);
-                    if( bOldValue != rValue || 
+                    if( bOldValue != rValue ||
                         DataSeriesHelper::hasAttributedDataPointDifferentValue( xSeries, C2U( "Label" ), aOldValue ) )
                     {
                         DataSeriesHelper::setPropertyAlsoToAllAttributedDataPoints( xSeries, C2U( "Label" ), uno::makeAny( aLabel ) );
@@ -376,7 +376,7 @@ bool DataPointItemConverter::ApplySpecialItem(
                 if( m_bOverwriteLabelsForAttributedDataPointsAlso )
                 {
                     Reference< chart2::XDataSeries > xSeries( GetPropertySet(), uno::UNO_QUERY);
-                    if( !aOldValue.equals(aNewValue) || 
+                    if( !aOldValue.equals(aNewValue) ||
                         DataSeriesHelper::hasAttributedDataPointDifferentValue( xSeries, C2U( "LabelSeparator" ), uno::makeAny( aOldValue ) ) )
                     {
                         DataSeriesHelper::setPropertyAlsoToAllAttributedDataPoints( xSeries, C2U( "LabelSeparator" ), uno::makeAny( aNewValue ) );
@@ -398,7 +398,7 @@ bool DataPointItemConverter::ApplySpecialItem(
 
         case SCHATTR_DATADESCR_PLACEMENT:
         {
-            
+
             try
             {
                 sal_Int32 nNew = static_cast< const SfxInt32Item & >( rItemSet.Get( nWhichId )).GetValue();
@@ -411,7 +411,7 @@ bool DataPointItemConverter::ApplySpecialItem(
                 if( m_bOverwriteLabelsForAttributedDataPointsAlso )
                 {
                     Reference< chart2::XDataSeries > xSeries( GetPropertySet(), uno::UNO_QUERY);
-                    if( nOld!=nNew || 
+                    if( nOld!=nNew ||
                         DataSeriesHelper::hasAttributedDataPointDifferentValue( xSeries, C2U( "LabelPlacement" ), uno::makeAny( nOld ) ) )
                     {
                         DataSeriesHelper::setPropertyAlsoToAllAttributedDataPoints( xSeries, C2U( "LabelPlacement" ), uno::makeAny( nNew ) );
@@ -559,7 +559,7 @@ void DataPointItemConverter::FillSpecialItem(
                     (SCHATTR_DATADESCR_SHOW_CATEGORY==nWhichId) ? aLabel.ShowCategoryName : aLabel.ShowLegendSymbol ));
 
                 rOutItemSet.Put( SfxBoolItem( nWhichId, bValue ));
-                
+
                 if( m_bOverwriteLabelsForAttributedDataPointsAlso )
                 {
                     if( DataSeriesHelper::hasAttributedDataPointDifferentValue(

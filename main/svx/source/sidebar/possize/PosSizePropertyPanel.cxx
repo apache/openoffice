@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include <sfx2/sidebar/ResourceDefinitions.hrc>
@@ -64,7 +64,7 @@ PosSizePropertyPanel::PosSizePropertyPanel(
     SfxBindings* pBindings,
     const cssu::Reference<css::ui::XSidebar>& rxSidebar)
 :   Control(
-        pParent, 
+        pParent,
         SVX_RES(RID_SIDEBAR_POSSIZE_PANEL)),
     mpFtPosX(new FixedText(this, SVX_RES(FT_SBSHAPE_HORIZONTAL))),
     mpMtrPosX(new MetricField(this, SVX_RES(MF_SBSHAPE_HORIZONTAL))),
@@ -93,7 +93,7 @@ PosSizePropertyPanel::PosSizePropertyPanel(
     mePoolUnit(),
 
     // #124409# init with fallback default
-    meDlgUnit(FUNIT_INCH), 
+    meDlgUnit(FUNIT_INCH),
 
     maTransfPosXControl(SID_ATTR_TRANSFORM_POS_X, *pBindings, *this),
     maTransfPosYControl(SID_ATTR_TRANSFORM_POS_Y, *pBindings, *this),
@@ -149,13 +149,13 @@ PosSizePropertyPanel::PosSizePropertyPanel(
 
     maLayouter.GetCell(2,0).SetControl(*mpFtWidth);
     maLayouter.GetCell(3,0).SetControl(*mpMtrWidth);
-    
+
     maLayouter.GetCell(2,2).SetControl(*mpFtHeight);
     maLayouter.GetCell(3,2).SetControl(*mpMtrHeight);
-    
+
     maLayouter.GetCell(4,0).SetControl(*mpCbxScale).SetGridWidth(3);
     maLayouter.GetCell(5,0).SetControl(*mpFtAngle).SetGridWidth(3);
-        
+
 
     maLayouter.GetColumn(0)
         .SetWeight(1)
@@ -254,24 +254,24 @@ void PosSizePropertyPanel::Initialize()
     mpMtrPosY->SetModifyHdl( LINK( this, PosSizePropertyPanel, ChangePosYHdl ) );
     mpMtrPosX->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Horizontal")));	//wj acc
     mpMtrPosY->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Vertical")));		//wj acc
-    
+
     //Size : Width / Height
     mpMtrWidth->SetModifyHdl( LINK( this, PosSizePropertyPanel, ChangeWidthHdl ) );
     mpMtrHeight->SetModifyHdl( LINK( this, PosSizePropertyPanel, ChangeHeightHdl ) );
     mpMtrWidth->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Width")));	//wj acc
     mpMtrHeight->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Height")));	//wj acc
-    
+
     //Size : Keep ratio
     mpCbxScale->SetClickHdl( LINK( this, PosSizePropertyPanel, ClickAutoHdl ) );
-    
+
     //rotation:
     mpMtrAngle->SetModifyHdl(LINK( this, PosSizePropertyPanel, AngleModifiedHdl));
     mpMtrAngle->EnableAutocomplete( false );
     mpMtrAngle->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Rotation")));	//wj acc
-    
+
     //rotation control
     mpDial->SetModifyHdl(LINK( this, PosSizePropertyPanel, RotationHdl));
-    
+
     //flip:
     mpFlipTbx->SetSelectHdl( LINK( this, PosSizePropertyPanel, FlipHdl) );
     mpFlipTbx->SetItemImage(
@@ -282,11 +282,11 @@ void PosSizePropertyPanel::Initialize()
         GetImage(mxFrame, A2S(".uno:FlipVertical"), sal_False, Theme::IsHighContrastMode()));
     mpFlipTbx->SetQuickHelpText(FLIP_HORIZONTAL,String(SVX_RES(STR_QH_HORI_FLIP))); //Add
     mpFlipTbx->SetQuickHelpText(FLIP_VERTICAL,String(SVX_RES(STR_QH_VERT_FLIP))); //Add
-    
-    mpMtrPosX->SetAccessibleRelationLabeledBy(mpFtPosX.get());	
-    mpMtrPosY->SetAccessibleRelationLabeledBy(mpFtPosY.get());	
-    mpMtrWidth->SetAccessibleRelationLabeledBy(mpFtWidth.get());	
-    mpMtrHeight->SetAccessibleRelationLabeledBy(mpFtHeight.get());	
+
+    mpMtrPosX->SetAccessibleRelationLabeledBy(mpFtPosX.get());
+    mpMtrPosY->SetAccessibleRelationLabeledBy(mpFtPosY.get());
+    mpMtrWidth->SetAccessibleRelationLabeledBy(mpFtWidth.get());
+    mpMtrHeight->SetAccessibleRelationLabeledBy(mpFtHeight.get());
     mpMtrAngle->SetAccessibleRelationLabeledBy(mpFtAngle.get());
 #ifdef HAS_IA2
     mpMtrAngle->SetMpSubEditAccLableBy(mpFtAngle.get());
@@ -314,7 +314,7 @@ void PosSizePropertyPanel::Initialize()
         maUIScale = mpView->GetModel()->GetUIScale();
         mbAdjustEnabled = hasText(*mpView);
     }
-    
+
     mePoolUnit = maTransfWidthControl.GetCoreMetric();
 
     // #124409# no need to do this, the mpBindings->Update( SID_ATTR_METRIC )
@@ -355,7 +355,7 @@ PosSizePropertyPanel* PosSizePropertyPanel::Create (
         throw lang::IllegalArgumentException(A2S("no XFrame given to PosSizePropertyPanel::Create"), NULL, 1);
     if (pBindings == NULL)
         throw lang::IllegalArgumentException(A2S("no SfxBindings given to PosSizePropertyPanel::Create"), NULL, 2);
-    
+
     return new PosSizePropertyPanel(
         pParent,
         rxFrame,
@@ -369,7 +369,7 @@ void PosSizePropertyPanel::DataChanged(
     const DataChangedEvent& rEvent)
 {
     (void)rEvent;
-    
+
     SetupIcons();
 }
 
@@ -461,7 +461,7 @@ void PosSizePropertyPanel::HandleContextChange(
         case CombinedEnumContext(Application_DrawImpress, Context_MultiObject):
             nLayoutMode = 3;
             break;
-    }    
+    }
 
     switch (nLayoutMode)
     {
@@ -473,12 +473,12 @@ void PosSizePropertyPanel::HandleContextChange(
             mpMtrPosX->Hide();
             mpFtPosY->Hide();
             mpMtrPosY->Hide();
-            
+
             //rotation
             mpFtAngle->Show();
             mpMtrAngle->Show();
             mpDial->Show();
-            
+
             //flip
             mpFtFlip->Show();
             mpFlipTbx->Show();
@@ -496,14 +496,14 @@ void PosSizePropertyPanel::HandleContextChange(
             mpFtFlip->SetPosPixel(Point(LogicToPixel(Point(FT_FLIP_X2,FT_FLIP_Y2), MAP_APPFONT)));
 
             Size aSize(GetOutputSizePixel().Width(),PS_SECTIONPAGE_HEIGHT2);
-            aSize = LogicToPixel( aSize, MapMode(MAP_APPFONT) ); 
+            aSize = LogicToPixel( aSize, MapMode(MAP_APPFONT) );
             SetSizePixel(aSize);
             if (mxSidebar.is())
                 mxSidebar->requestLayout();
         }
         break;
 
-        case 1:		
+        case 1:
         {
             mpMtrWidth->SetMin( 2 );
             mpMtrHeight->SetMin( 2 );
@@ -511,22 +511,22 @@ void PosSizePropertyPanel::HandleContextChange(
             mpMtrPosX->Hide();
             mpFtPosY->Hide();
             mpMtrPosY->Hide();
-        
+
             //rotation
             mpFtAngle->Hide();
             mpMtrAngle->Hide();
             mpDial->Hide();
-        
+
             //flip
             mpFlipTbx->Hide();
             mpFtFlip->Hide();
             mbIsFlip = false;
-        
+
             AdaptWidthHeightScalePosition(false);
             AdaptAngleFlipDialPosition(true);
-        
+
             Size aSize(GetOutputSizePixel().Width(),PS_SECTIONPAGE_HEIGHT3);
-            aSize = LogicToPixel( aSize, MapMode(MAP_APPFONT) ); 
+            aSize = LogicToPixel( aSize, MapMode(MAP_APPFONT) );
             SetSizePixel(aSize);
             if (mxSidebar.is())
                 mxSidebar->requestLayout();
@@ -541,30 +541,30 @@ void PosSizePropertyPanel::HandleContextChange(
             mpMtrPosX->Show();
             mpFtPosY->Show();
             mpMtrPosY->Show();
-        
+
             //rotation
             mpFtAngle->Show();
             mpMtrAngle->Show();
             mpDial->Show();
-        
+
             //flip
             mpFlipTbx->Show();
             mpFtFlip->Show();
             Size aTbxSize = mpFlipTbx->CalcWindowSizePixel();
             mpFlipTbx->SetOutputSizePixel( aTbxSize );
             mbIsFlip = true;
-        
+
             AdaptWidthHeightScalePosition(true);
             AdaptAngleFlipDialPosition(true);
 
             Size aSize(GetOutputSizePixel().Width(),PS_SECTIONPAGE_HEIGHT);
-            aSize = LogicToPixel( aSize, MapMode(MAP_APPFONT) ); 
+            aSize = LogicToPixel( aSize, MapMode(MAP_APPFONT) );
             SetSizePixel(aSize);
             if (mxSidebar.is())
                 mxSidebar->requestLayout();
         }
         break;
-        
+
         case 3:
         {
             mpMtrWidth->SetMin( 1 );
@@ -573,22 +573,22 @@ void PosSizePropertyPanel::HandleContextChange(
             mpMtrPosX->Show();
             mpFtPosY->Show();
             mpMtrPosY->Show();
-        
+
             //rotation
             mpFtAngle->Hide();
             mpMtrAngle->Hide();
             mpDial->Hide();
-        
+
             //flip
             mpFlipTbx->Hide();
             mpFtFlip->Hide();
             mbIsFlip = false;
-        
+
             AdaptWidthHeightScalePosition(true);
             AdaptAngleFlipDialPosition(true);
 
             Size aSize(GetOutputSizePixel().Width(),PS_SECTIONPAGE_HEIGHT4);
-            aSize = LogicToPixel( aSize, MapMode(MAP_APPFONT) ); 
+            aSize = LogicToPixel( aSize, MapMode(MAP_APPFONT) );
             SetSizePixel(aSize);
             if (mxSidebar.is())
                 mxSidebar->requestLayout();
@@ -711,7 +711,7 @@ IMPL_LINK( PosSizePropertyPanel, AngleModifiedHdl, void *, EMPTYARG )
     SfxInt32Item aAngleItem( SID_ATTR_TRANSFORM_ANGLE,(sal_uInt32) nTmp);
     SfxInt32Item aRotXItem( SID_ATTR_TRANSFORM_ROT_X, basegfx::fround(mlRotX * fUIScale));
     SfxInt32Item aRotYItem( SID_ATTR_TRANSFORM_ROT_Y, basegfx::fround(mlRotY * fUIScale));
-    
+
     GetBindings()->GetDispatcher()->Execute(
         SID_ATTR_TRANSFORM, SFX_CALLMODE_RECORD, &aAngleItem, &aRotXItem, &aRotYItem, 0L );
 
@@ -729,7 +729,7 @@ IMPL_LINK( PosSizePropertyPanel, RotationHdl, void *, EMPTYARG )
     SfxInt32Item aAngleItem( SID_ATTR_TRANSFORM_ANGLE,(sal_uInt32) nTmp);
     SfxInt32Item aRotXItem( SID_ATTR_TRANSFORM_ROT_X, basegfx::fround(mlRotX * fUIScale));
     SfxInt32Item aRotYItem( SID_ATTR_TRANSFORM_ROT_Y, basegfx::fround(mlRotY * fUIScale));
-    
+
     GetBindings()->GetDispatcher()->Execute(
         SID_ATTR_TRANSFORM, SFX_CALLMODE_RECORD, &aAngleItem, &aRotXItem, &aRotYItem, 0L );
 
@@ -762,12 +762,12 @@ IMPL_LINK( PosSizePropertyPanel, FlipHdl, ToolBox*, pBox )
 
 
 
-void PosSizePropertyPanel::NotifyItemUpdate( 
-    sal_uInt16 nSID, 
-    SfxItemState eState, 
+void PosSizePropertyPanel::NotifyItemUpdate(
+    sal_uInt16 nSID,
+    SfxItemState eState,
     const SfxPoolItem* pState,
     const bool /* bIsEnabled */)
-{  
+{
     mpFtAngle->Enable();
     mpMtrAngle->Enable();
     mpDial->Enable();
@@ -775,8 +775,8 @@ void PosSizePropertyPanel::NotifyItemUpdate(
     mpFlipTbx->Enable();
 
     const SfxUInt32Item*	pWidthItem;
-    const SfxUInt32Item*	pHeightItem;		
-    
+    const SfxUInt32Item*	pHeightItem;
+
     SfxViewShell* pCurSh = SfxViewShell::Current();
     if ( pCurSh )
         mpView = pCurSh->GetDrawView();
@@ -820,7 +820,7 @@ void PosSizePropertyPanel::NotifyItemUpdate(
 
             mpMtrWidth->SetText( String());
             break;
-            
+
         case SID_ATTR_TRANSFORM_HEIGHT:
             if ( SFX_ITEM_AVAILABLE == eState )
             {
@@ -848,7 +848,7 @@ void PosSizePropertyPanel::NotifyItemUpdate(
 
                 if(pItem)
                 {
-                    long nTmp = pItem->GetValue(); 
+                    long nTmp = pItem->GetValue();
                     nTmp = Fraction( nTmp ) / maUIScale;
                     SetFieldUnit( *mpMtrPosX, meDlgUnit, true );
                     SetMetricValue( *mpMtrPosX, nTmp, mePoolUnit );
@@ -866,7 +866,7 @@ void PosSizePropertyPanel::NotifyItemUpdate(
 
                 if(pItem)
                 {
-                    long nTmp = pItem->GetValue(); 
+                    long nTmp = pItem->GetValue();
                     nTmp = Fraction( nTmp ) / maUIScale;
                     SetFieldUnit( *mpMtrPosY, meDlgUnit, true );
                     SetMetricValue( *mpMtrPosY, nTmp, mePoolUnit );
@@ -884,7 +884,7 @@ void PosSizePropertyPanel::NotifyItemUpdate(
 
                 if(pItem)
                 {
-                    mlRotX = pItem->GetValue(); 
+                    mlRotX = pItem->GetValue();
                     mlRotX = Fraction( mlRotX ) / maUIScale;
                 }
             }
@@ -897,7 +897,7 @@ void PosSizePropertyPanel::NotifyItemUpdate(
 
                 if(pItem)
                 {
-                    mlRotY = pItem->GetValue(); 
+                    mlRotY = pItem->GetValue();
                     mlRotY = Fraction( mlRotY ) / maUIScale;
                 }
             }
@@ -966,7 +966,7 @@ void PosSizePropertyPanel::NotifyItemUpdate(
 
                 if(pItem)
                 {
-                    long nTmp = pItem->GetValue(); 
+                    long nTmp = pItem->GetValue();
 
                     mpMtrAngle->SetValue( nTmp );
                     mpDial->SetRotation( nTmp );
@@ -1006,7 +1006,7 @@ void PosSizePropertyPanel::NotifyItemUpdate(
             mpMtrAngle->SetText( String() );
             mpDial->SetRotation( 0 );
             break;
-            
+
         case SID_ATTR_METRIC:
             MetricState( eState, pState );
             UpdateUIScale();
@@ -1029,7 +1029,7 @@ void PosSizePropertyPanel::NotifyItemUpdate(
             const SdrObject* pObj = rMarkList.GetMark(0)->GetMarkedSdrObj();
             const SdrObjKind eKind((SdrObjKind)pObj->GetObjIdentifier());
 
-            if(((nCombinedContext == CombinedEnumContext(Application_DrawImpress, Context_Draw) 
+            if(((nCombinedContext == CombinedEnumContext(Application_DrawImpress, Context_Draw)
                || nCombinedContext == CombinedEnumContext(Application_DrawImpress, Context_TextObject)
                  ) && OBJ_EDGE == eKind)
                || OBJ_CAPTION == eKind)
@@ -1042,12 +1042,12 @@ void PosSizePropertyPanel::NotifyItemUpdate(
             }
             break;
         }
-        
+
         default:
         {
             sal_uInt16 nMarkObj = 0;
             bool isNoEdge = true;
-            
+
             while(isNoEdge && rMarkList.GetMark(nMarkObj))
             {
                 const SdrObject* pObj = rMarkList.GetMark(nMarkObj)->GetMarkedSdrObj();
@@ -1097,9 +1097,9 @@ void PosSizePropertyPanel::NotifyItemUpdate(
 
 
 
-SfxBindings* PosSizePropertyPanel::GetBindings() 
-{ 
-    return mpBindings; 
+SfxBindings* PosSizePropertyPanel::GetBindings()
+{
+    return mpBindings;
 }
 
 
@@ -1144,7 +1144,7 @@ void PosSizePropertyPanel::executeSize()
                 GetBindings()->GetDispatcher()->Execute(SID_ATTR_TRANSFORM, SFX_CALLMODE_RECORD, &aWidthItem, &aPointItem, 0L );
             else if ( mpMtrHeight->IsValueModified())
                 GetBindings()->GetDispatcher()->Execute(SID_ATTR_TRANSFORM, SFX_CALLMODE_RECORD, &aHeightItem, &aPointItem, 0L );
-        }		
+        }
     }
 }
 
@@ -1161,7 +1161,7 @@ void PosSizePropertyPanel::executePosX()
 
         Size aPageSize;
         Rectangle aRect;
-        maRect = mpView->GetAllMarkedRect();	
+        maRect = mpView->GetAllMarkedRect();
         aRect = mpView->GetAllMarkedRect();
 
         Fraction aUIScale = mpView->GetModel()->GetUIScale();
@@ -1169,12 +1169,12 @@ void PosSizePropertyPanel::executePosX()
         lX = Fraction( lX ) * aUIScale;
         lY += maAnchorPos.Y();
         lY = Fraction( lY ) * aUIScale;
-        
+
         SfxInt32Item aPosXItem( SID_ATTR_TRANSFORM_POS_X,(sal_uInt32) lX);
         SfxInt32Item aPosYItem( SID_ATTR_TRANSFORM_POS_Y,(sal_uInt32) lY);
-    
+
         GetBindings()->GetDispatcher()->Execute(
-            SID_ATTR_TRANSFORM, SFX_CALLMODE_RECORD, &aPosXItem, 0L );	
+            SID_ATTR_TRANSFORM, SFX_CALLMODE_RECORD, &aPosXItem, 0L );
     }
 }
 
@@ -1189,7 +1189,7 @@ void PosSizePropertyPanel::executePosY()
 
         Size aPageSize;
         Rectangle aRect;
-        maRect = mpView->GetAllMarkedRect();	
+        maRect = mpView->GetAllMarkedRect();
         aRect = mpView->GetAllMarkedRect();
 
         Fraction aUIScale = mpView->GetModel()->GetUIScale();
@@ -1197,12 +1197,12 @@ void PosSizePropertyPanel::executePosY()
         lX = Fraction( lX ) * aUIScale;
         lY += maAnchorPos.Y();
         lY = Fraction( lY ) * aUIScale;
-        
+
         SfxInt32Item aPosXItem( SID_ATTR_TRANSFORM_POS_X,(sal_uInt32) lX);
         SfxInt32Item aPosYItem( SID_ATTR_TRANSFORM_POS_Y,(sal_uInt32) lY);
-    
+
         GetBindings()->GetDispatcher()->Execute(
-            SID_ATTR_TRANSFORM, SFX_CALLMODE_RECORD, &aPosYItem, 0L );	
+            SID_ATTR_TRANSFORM, SFX_CALLMODE_RECORD, &aPosYItem, 0L );
     }
 }
 
@@ -1276,7 +1276,7 @@ FieldUnit PosSizePropertyPanel::GetCurrentUnit( SfxItemState eState, const SfxPo
             }
         }
     }
-    
+
     return eUnit;
 }
 
@@ -1285,7 +1285,7 @@ FieldUnit PosSizePropertyPanel::GetCurrentUnit( SfxItemState eState, const SfxPo
 void PosSizePropertyPanel::DisableControls()
 {
     if( mbPositionProtected )
-    {	
+    {
         // the position is protected("Position protect" option in modal dialog is checked),
         // disable all the Position controls in sidebar
         mpFtPosX->Disable();

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -212,7 +212,7 @@ OUString lcl_GetRawString( ScDocument* pDoc, const ScAddress& rPos )
                 }
             }
         }
-    }    
+    }
     return aVal;
 }
 } // anonymous namespace
@@ -1840,7 +1840,7 @@ void ScXMLExport::_ExportContent()
 					}
 				}
 			}
-			
+
 			IncrementProgressBar(sal_False);
         }
     }
@@ -3031,7 +3031,7 @@ void ScXMLExport::WriteCell(ScMyCell& aCell, sal_Int32 nEqualCellCount)
 
 	if (!bIsEmpty)
 	{
-        if ((aCell.nType == table::CellContentType_TEXT && IsEditCell(aCell)) || 
+        if ((aCell.nType == table::CellContentType_TEXT && IsEditCell(aCell)) ||
             (aCell.nType == table::CellContentType_FORMULA && IsMultiLineFormulaCell(aCell)))
 		{
             bEditCell = sal_True;
@@ -3534,7 +3534,7 @@ sal_Bool ScXMLExport::IsMultiLineFormulaCell(ScMyCell& rCell) const
         return static_cast<ScFormulaCell*>(rCell.pBaseCell)->IsMultilineResult();
     }
 
-    ScAddress aAddr(static_cast<SCCOL>(rCell.aCellAddress.Column), 
+    ScAddress aAddr(static_cast<SCCOL>(rCell.aCellAddress.Column),
                     static_cast<SCROW>(rCell.aCellAddress.Row),
                     static_cast<SCTAB>(rCell.aCellAddress.Sheet));
     ScBaseCell* pBaseCell = pDoc ? pDoc->GetCell(aAddr) : NULL;
@@ -3923,7 +3923,7 @@ void ScXMLExport::WriteNamedExpressions(const com::sun::star::uno::Reference <co
 						else if( nWhichTable !=MAXTABCOUNT)
 							continue;
                         uno::Reference <sheet::XNamedRange2> xNamedRange(xNamedRanges->getByScopeName(sRangeScope,sNamedRange), uno::UNO_QUERY);
-						//range scope name support 
+						//range scope name support
 						if (xNamedRange.is())
 						{
 							uno::Reference <container::XNamed> xNamed (xNamedRange, uno::UNO_QUERY);
@@ -3931,9 +3931,9 @@ void ScXMLExport::WriteNamedExpressions(const com::sun::star::uno::Reference <co
 							if (xNamed.is() && xCellRangeReferrer.is())
 							{
 								rtl::OUString sOUName(xNamed->getName());
-							
+
 								AddAttribute(sAttrName, sOUName);
-								
+
 								OUString sOUBaseCellAddress;
 								ScRangeStringConverter::GetStringFromAddress( sOUBaseCellAddress,
 									xNamedRange->getReferencePosition(), pDoc, FormulaGrammar::CONV_OOO, ' ', sal_False, SCA_ABS_3D );

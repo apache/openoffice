@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -57,11 +57,11 @@ typedef struct
 void PyUNO_callable_del (PyObject* self)
 {
     PyUNO_callable* me;
-  
+
     me = (PyUNO_callable*) self;
     delete me->members;
     PyObject_Del (self);
-  
+
     return;
 }
 
@@ -78,14 +78,14 @@ PyObject* PyUNO_callable_call (PyObject* self, PyObject* args, PyObject*)
     Any ret_value;
     RuntimeCargo *cargo = 0;
     me = (PyUNO_callable*) self;
-  
+
     PyRef ret;
     try
     {
         Runtime runtime;
         cargo = runtime.getImpl()->cargo;
         any_params = runtime.pyObject2Any (args, me->members->mode);
-    
+
         if (any_params.getValueTypeClass () == com::sun::star::uno::TypeClass_SEQUENCE)
         {
             any_params >>= aParams;
@@ -98,8 +98,8 @@ PyObject* PyUNO_callable_call (PyObject* self, PyObject* args, PyObject*)
 
         {
             PyThreadDetach antiguard; //python free zone
-            
-            // do some logging if desired ... 
+
+            // do some logging if desired ...
             if( isLog( cargo, LogLevel::CALL ) )
             {
                 logCall( cargo, "try     py->uno[0x", me->members->xInvocation.get(),
@@ -117,7 +117,7 @@ PyObject* PyUNO_callable_call (PyObject* self, PyObject* args, PyObject*)
                           me->members->methodName, ret_value, aOutParam);
             }
         }
-        
+
 
         PyRef temp = runtime.any2PyObject (ret_value);
         if( aOutParam.getLength() )
@@ -132,7 +132,7 @@ PyObject* PyUNO_callable_call (PyObject* self, PyObject* args, PyObject*)
                 Py_INCREF( Py_None );
                 PyTuple_SetItem( return_list.get() , i , Py_None );
             }
-            
+
             for( i = 0 ; i < aOutParam.getLength() ; i ++ )
             {
                 PyRef ref = runtime.any2PyObject( aOutParam[i] );
@@ -147,7 +147,7 @@ PyObject* PyUNO_callable_call (PyObject* self, PyObject* args, PyObject*)
     }
     catch( com::sun::star::reflection::InvocationTargetException & e )
     {
-        
+
         if( isLog( cargo, LogLevel::CALL ) )
         {
             logException( cargo, "except  py->uno[0x", me->members->xInvocation.get() ,
@@ -198,7 +198,7 @@ static PyTypeObject PyUNO_callable_Type =
     (getattrfunc) 0,
     (setattrfunc) 0,
 #if PY_MAJOR_VERSION >= 3
-    0, 
+    0,
 #else
     (cmpfunc) 0,
 #endif
@@ -250,7 +250,7 @@ PyRef PyUNO_callable_new (
     enum ConversionMode mode )
 {
     PyUNO_callable* self;
-  
+
     self = PyObject_New (PyUNO_callable, &PyUNO_callable_Type);
     if (self == NULL)
         return NULL; //NULL == Error!

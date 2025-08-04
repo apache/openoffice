@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,32 +42,32 @@ import org.openoffice.netbeans.modules.office.actions.ParcelCookie;
  * @author tomaso
  */
 public class ParcelDataNode extends DataNode {
-    
+
     public ParcelDataNode(ParcelDataObject obj) {
         this(obj, Children.LEAF);
     }
-    
+
     public ParcelDataNode(ParcelDataObject obj, Children ch) {
         super(obj, ch);
         setIconBase("/org/openoffice/netbeans/modules/office/resources/ParcelIcon");
     }
-    
+
     protected ParcelDataObject getParcelDataObject() {
         return (ParcelDataObject)getDataObject();
     }
-    
+
     public static class ParcelPasteType extends PasteType {
         ParcelDataNode sourceParcel = null;
         File targetDocument = null;
         boolean isCut = false;
-        
+
         public ParcelPasteType(ParcelDataNode sourceParcel,
             File targetDocument, boolean isCut) {
             this.sourceParcel = sourceParcel;
             this.targetDocument = targetDocument;
             this.isCut = isCut;
         }
-        
+
         public Transferable paste() {
             ParcelCookie parcelCookie =
                 (ParcelCookie)sourceParcel.getCookie(ParcelCookie.class);
@@ -104,7 +104,7 @@ public class ParcelDataNode extends DataNode {
         return sheet;
     }
      */
-    
+
     // Don't use getDefaultAction(); just make that first in the data loader's getActions list
-    
+
 }

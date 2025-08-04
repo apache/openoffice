@@ -26,12 +26,12 @@
 
 module com { module sun { module star { module frame {
 
-/** specifies a factory that creates instances of registered status bar 
+/** specifies a factory that creates instances of registered status bar
     controller.
 
     <p>
-    A status bar controller can be registered for a command URL and a model 
-    service name. A status bar will automatically create a status bar controller 
+    A status bar controller can be registered for a command URL and a model
+    service name. A status bar will automatically create a status bar controller
     if it contains a registered command URL.
     </p>
 

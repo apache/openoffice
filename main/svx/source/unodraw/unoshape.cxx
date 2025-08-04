@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1318,9 +1318,9 @@ void SAL_CALL SvxShape::setSize( const awt::Size& rSize )
         // scenes it may recalculate the whole scene since in AOO this depends
         // on the contained geometry (layouted to show all content)
         const bool b3DConstruction(dynamic_cast< E3dObject* >(mpObj.get()) && mpModel->isLocked());
-		Rectangle aRect( 
-            b3DConstruction ? 
-                Rectangle(maPosition.X, maPosition.Y, maSize.Width, maSize.Height) : 
+		Rectangle aRect(
+            b3DConstruction ?
+                Rectangle(maPosition.X, maPosition.Y, maSize.Width, maSize.Height) :
                 svx_getLogicRectHack(mpObj.get()) );
 		Size aLocalSize( rSize.Width, rSize.Height );
 		ForceMetricToItemPoolMetric(aLocalSize);

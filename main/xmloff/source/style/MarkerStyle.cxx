@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -58,9 +58,9 @@ XMLMarkerStyleImport::~XMLMarkerStyleImport()
 {
 }
 
-sal_Bool XMLMarkerStyleImport::importXML( 
-    const uno::Reference< xml::sax::XAttributeList >& xAttrList, 
-    uno::Any& rValue, 
+sal_Bool XMLMarkerStyleImport::importXML(
+    const uno::Reference< xml::sax::XAttributeList >& xAttrList,
+    uno::Any& rValue,
     OUString& rStrName )
 {
 	sal_Bool bHasViewBox    = sal_False;
@@ -85,17 +85,17 @@ sal_Bool XMLMarkerStyleImport::importXML(
 		if( IsXMLToken( aStrAttrName, XML_NAME ) )
 		{
 			rStrName = aStrValue;
-		} 
+		}
 		else if( IsXMLToken( aStrAttrName, XML_DISPLAY_NAME ) )
 		{
 			aDisplayName = aStrValue;
-		} 
+		}
 		else if( IsXMLToken( aStrAttrName, XML_VIEWBOX ) )
 		{
 			pViewBox = new SdXMLImExViewBox( aStrValue, rUnitConverter );
 			bHasViewBox = sal_True;
 
-		} 
+		}
 		else if( IsXMLToken( aStrAttrName, XML_D ) )
 		{
 			strPathData = aStrValue;
@@ -114,10 +114,10 @@ sal_Bool XMLMarkerStyleImport::importXML(
                 // ViewBox probably not used, but stay with former processing inside of
                 // SdXMLImExSvgDElement
                 const basegfx::B2DRange aSourceRange(
-                    pViewBox->GetX(), pViewBox->GetY(), 
+                    pViewBox->GetX(), pViewBox->GetY(),
                     pViewBox->GetX() + pViewBox->GetWidth(), pViewBox->GetY() + pViewBox->GetHeight());
                 const basegfx::B2DRange aTargetRange(
-                    0.0, 0.0, 
+                    0.0, 0.0,
                     pViewBox->GetWidth(), pViewBox->GetHeight());
 
                 if(!aSourceRange.equal(aTargetRange))
@@ -140,7 +140,7 @@ sal_Bool XMLMarkerStyleImport::importXML(
 
         if( aDisplayName.getLength() )
         {
-            rImport.AddStyleDisplayName( XML_STYLE_FAMILY_SD_MARKER_ID, rStrName, 
+            rImport.AddStyleDisplayName( XML_STYLE_FAMILY_SD_MARKER_ID, rStrName,
                                         aDisplayName );
             rStrName = aDisplayName;
         }
@@ -168,12 +168,12 @@ XMLMarkerStyleExport::~XMLMarkerStyleExport()
 {
 }
 
-sal_Bool XMLMarkerStyleExport::exportXML( 
-    const OUString& rStrName, 
+sal_Bool XMLMarkerStyleExport::exportXML(
+    const OUString& rStrName,
     const uno::Any& rValue )
 {
     sal_Bool bRet(sal_False);
-    
+
     if(rStrName.getLength())
     {
         drawing::PolyPolygonBezierCoords aBezier;
@@ -201,12 +201,12 @@ sal_Bool XMLMarkerStyleExport::exportXML(
             // Viewbox (viewBox="0 0 1500 1000")
 
             SdXMLImExViewBox aViewBox(
-                aPolyPolygonRange.getMinX(), 
+                aPolyPolygonRange.getMinX(),
                 aPolyPolygonRange.getMinY(),
                 aPolyPolygonRange.getWidth(),
-                aPolyPolygonRange.getHeight());  
+                aPolyPolygonRange.getHeight());
             rExport.AddAttribute( XML_NAMESPACE_SVG, XML_VIEWBOX, aViewBox.GetExportString() );
-            
+
             /////////////////
             // Pathdata
             const ::rtl::OUString aPolygonString(
@@ -224,7 +224,7 @@ sal_Bool XMLMarkerStyleExport::exportXML(
             SvXMLElementExport rElem( rExport, XML_NAMESPACE_DRAW, XML_MARKER, sal_True, sal_False );
         }
     }
-    
+
     return bRet;
 }
 

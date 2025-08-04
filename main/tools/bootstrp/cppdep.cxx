@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -26,7 +26,7 @@
 
 #include <stdio.h>
 #include <string.h>
- 
+
 #include <unistd.h>
 
 #include <sys/stat.h>
@@ -183,7 +183,7 @@ ByteString CppDep::IsIncludeStatement( ByteString aLine )
 #ifdef DEBUG_VERBOSE
 		fprintf( stderr, "found starting C comment : %s\n", aLine.GetBuffer() );
 #endif
-		aLine.Erase(aLine.Search("/*",0), aLine.Len() - 1);	
+		aLine.Erase(aLine.Search("/*",0), aLine.Len() - 1);
 #ifdef DEBUG_VERBOSE
 		fprintf( stderr, "cleaned string : %s\n", aLine.GetBuffer() );
 #endif
@@ -193,7 +193,7 @@ ByteString CppDep::IsIncludeStatement( ByteString aLine )
 #ifdef DEBUG_VERBOSE
 		fprintf( stderr, "found C++ comment : %s\n", aLine.GetBuffer() );
 #endif
-		aLine.Erase(aLine.Search("//",0), aLine.Len() - 1);	
+		aLine.Erase(aLine.Search("//",0), aLine.Len() - 1);
 #ifdef DEBUG_VERBOSE
 		fprintf( stderr, "cleaned string : %s\n", aLine.GetBuffer() );
 #endif

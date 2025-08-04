@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -47,7 +47,7 @@ uno::Reference< uno::XInterface > OFunction::create(uno::Reference< uno::XCompon
 DBG_NAME( rpt_OFunction )
 // -----------------------------------------------------------------------------
 OFunction::OFunction(uno::Reference< uno::XComponentContext > const & _xContext)
-:FunctionBase(m_aMutex) 
+:FunctionBase(m_aMutex)
 ,FunctionPropertySet(_xContext,static_cast< Implements >(IMPLEMENTS_PROPERTY_SET),uno::Sequence< ::rtl::OUString >())
 ,m_xContext(_xContext)
 ,m_bPreEvaluated(sal_False)
@@ -64,10 +64,10 @@ OFunction::~OFunction()
 // -----------------------------------------------------------------------------
 IMPLEMENT_FORWARD_XINTERFACE2(OFunction,FunctionBase,FunctionPropertySet)
 // -----------------------------------------------------------------------------
-void SAL_CALL OFunction::dispose() throw(uno::RuntimeException) 
+void SAL_CALL OFunction::dispose() throw(uno::RuntimeException)
 {
 	FunctionPropertySet::dispose();
-	cppu::WeakComponentImplHelperBase::dispose(); 
+	cppu::WeakComponentImplHelperBase::dispose();
 }
 // -----------------------------------------------------------------------------
 ::rtl::OUString OFunction::getImplementationName_Static(  ) throw(uno::RuntimeException)
@@ -85,7 +85,7 @@ uno::Sequence< ::rtl::OUString > OFunction::getSupportedServiceNames_Static(  ) 
 {
 	uno::Sequence< ::rtl::OUString > aServices(1);
 	aServices.getArray()[0] = SERVICE_FUNCTION;
-	
+
 	return aServices;
 }
 //--------------------------------------------------------------------------

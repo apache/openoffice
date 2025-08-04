@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,7 +48,7 @@ struct TickInfo
     double      fScaledTickValue;
     ::com::sun::star::uno::Reference<
                     ::com::sun::star::chart2::XScaling > xInverseScaling;
-    
+
     ::basegfx::B2DVector  aTickScreenPosition;
     bool        bPaintIt;
 
@@ -102,7 +102,7 @@ public:
 
 private: //methods
     bool        isDateAxis() const;
-    
+
 protected: //member
     ExplicitScaleData     m_rScale;
     ExplicitIncrementData m_rIncrement;
@@ -151,7 +151,7 @@ private: //member
     //labels might be posioned high or low on the border of the diagram far away from the axis
     //add this vector to go from the axis line to the label line (border of the diagram)
     ::basegfx::B2DVector    m_aAxisLineToLabelLineShift;
-    
+
     double      m_fStrech_LogicToScreen;
     double      m_fOffset_LogicToScreen;
 };

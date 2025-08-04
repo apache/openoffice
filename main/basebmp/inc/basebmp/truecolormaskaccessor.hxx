@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -35,15 +35,15 @@
 namespace basebmp
 {
 
-namespace 
+namespace
 {
-    /// Shift left for positive shift value, and right otherwise 
+    /// Shift left for positive shift value, and right otherwise
     template< typename T > inline T shiftLeft( T v, int shift )
     {
         return shift > 0 ? v << shift : v >> (-shift);
     }
 
-    /// Shift right for positive shift value, and left otherwise 
+    /// Shift right for positive shift value, and left otherwise
     template< typename T > inline T shiftRight( T v, int shift )
     {
         return shift > 0 ? v >> shift : v << (-shift);
@@ -71,7 +71,7 @@ namespace
     When true, the final pixel values will be byte-swapped before
     passed to/from the iterator.
  */
-template< class    Accessor, 
+template< class    Accessor,
           typename ColorType,
           int      RedMask,
           int      GreenMask,
@@ -90,11 +90,11 @@ private:
     template<class A, typename C, int R, int G, int B, bool S> friend class TrueColorMaskAccessor;
 #endif
 
-    Accessor     maAccessor;  
+    Accessor     maAccessor;
 
 public:
     // calc corrective shifts for all three channels in advance
-    enum { 
+    enum {
         red_shift   = numberOfTrailingZeros<RedMask>::value,
         green_shift = numberOfTrailingZeros<GreenMask>::value,
         blue_shift  = numberOfTrailingZeros<BlueMask>::value,
@@ -110,13 +110,13 @@ public:
         maAccessor()
     {}
 
-    template< class A > explicit 
+    template< class A > explicit
     TrueColorMaskAccessor( TrueColorMaskAccessor< A,
                                                   ColorType,
                                                   RedMask,
                                                   GreenMask,
                                                   BlueMask,
-                                                  SwapBytes > const& rSrc ) : 
+                                                  SwapBytes > const& rSrc ) :
         maAccessor( rSrc.maAccessor )
     {}
 
@@ -139,16 +139,16 @@ public:
         const unsigned_data_type green(v & GreenMask);
         const unsigned_data_type blue (v & BlueMask);
 
-        value_type res( (shiftRight(red, 
+        value_type res( (shiftRight(red,
                                     red_shift-8*sizeof(component_type)+red_bits)) |
                         (shiftRight(red,
                                     red_shift-8*sizeof(component_type)+2*red_bits)),
-                        
+
                         (shiftRight(green,
                                     green_shift-8*sizeof(component_type)+green_bits)) |
                         (shiftRight(green,
                                     green_shift-8*sizeof(component_type)+2*green_bits)),
-                        
+
                         (shiftRight(blue,
                                     blue_shift-8*sizeof(component_type)+blue_bits)) |
                         (shiftRight(blue,
@@ -162,7 +162,7 @@ public:
         const unsigned_data_type green(v.getGreen());
         const unsigned_data_type blue (v.getBlue());
 
-        unsigned_data_type res( 
+        unsigned_data_type res(
             (shiftLeft(red,
                        red_shift-8*sizeof(component_type)+red_bits) & RedMask) |
             (shiftLeft(green,
@@ -176,10 +176,10 @@ public:
     // -------------------------------------------------------
 
     template< class Iterator >
-    value_type operator()(Iterator const& i) const 
-    { 
-        return toValue( 
-            unsigned_cast<data_type>( maAccessor(i)) ); 
+    value_type operator()(Iterator const& i) const
+    {
+        return toValue(
+            unsigned_cast<data_type>( maAccessor(i)) );
     }
 
     template< class Iterator, class Difference >
@@ -193,7 +193,7 @@ public:
 
     template< typename V, class Iterator >
     void set(V const& value, Iterator const& i) const
-    { 
+    {
         maAccessor.set(
             toPacked(
                 vigra::detail::RequiresExplicitCast<value_type>::cast(
@@ -204,10 +204,10 @@ public:
     template< typename V, class Iterator, class Difference >
     void set(V const& value, Iterator const& i, Difference const& diff) const
     {
-        maAccessor.set( 
+        maAccessor.set(
             toPacked(
                 vigra::detail::RequiresExplicitCast<value_type>::cast(
-                    value)), 
+                    value)),
             i,
             diff );
     }
@@ -216,7 +216,7 @@ public:
 //-----------------------------------------------------------------------------
 
 /** Convert Color to packed true color value for TrueColorMaskAccessor
- */    
+ */
 template< class Accessor > struct ColorConvert
 {
     typename Accessor::data_type operator()( const Accessor&               acc,
@@ -229,13 +229,13 @@ template< class Accessor > struct ColorConvert
 //-----------------------------------------------------------------------------
 
 // partial specialization for TrueColorMaskAccessor
-template< class    Accessor, 
+template< class    Accessor,
           typename ColorType,
           int      RedMask,
           int      GreenMask,
           int      BlueMask,
-          bool     SwapBytes > struct AccessorTraits< 
-    TrueColorMaskAccessor< Accessor, 
+          bool     SwapBytes > struct AccessorTraits<
+    TrueColorMaskAccessor< Accessor,
                            ColorType,
                            RedMask,
                            GreenMask,
@@ -243,7 +243,7 @@ template< class    Accessor,
                            SwapBytes > >
 {
     /// value type of described accessor
-    typedef typename TrueColorMaskAccessor< Accessor, 
+    typedef typename TrueColorMaskAccessor< Accessor,
                                             ColorType,
                                             RedMask,
                                             GreenMask,
@@ -251,7 +251,7 @@ template< class    Accessor,
                                             SwapBytes >::value_type  value_type;
 
     /// Retrieve stand-alone color lookup function for given Accessor type
-    typedef ColorConvert< TrueColorMaskAccessor< Accessor, 
+    typedef ColorConvert< TrueColorMaskAccessor< Accessor,
                                                  ColorType,
                                                  RedMask,
                                                  GreenMask,
@@ -273,7 +273,7 @@ template< class    Accessor,
      *  want to wrap a masked_accessor with a TrueColorMaskAccessor,
      *  not the other way around.
      */
-    template< class MaskAccessor, 
+    template< class MaskAccessor,
               class Iterator,
               class MaskIterator > struct                            masked_accessor
     {

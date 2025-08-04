@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -165,7 +165,7 @@ SdrObject* EnhancedCustomShapeEngine::ImplForceGroupWithText( const SdrObjCustom
 		if ( bHasText )
 		{
 			// #i37011# also create a text object and add at rPos + 1
-			SdrTextObj* pTextObj = (SdrTextObj*)SdrObjFactory::MakeNewObject(	
+			SdrTextObj* pTextObj = (SdrTextObj*)SdrObjFactory::MakeNewObject(
 				pCustoObj->GetObjInventor(), OBJ_TEXT, 0L, pCustoObj->GetModel());
 
 			// Copy text content
@@ -239,7 +239,7 @@ void SetTemporary( ::com::sun::star::uno::Reference< ::com::sun::star::drawing::
 		SvxShape* pShape = SvxShape::getImplementation( xShape );
 		if ( pShape )
 			pShape->TakeSdrObjectOwnership();
-/*		
+/*
 		::com::sun::star::uno::Reference<
 			::com::sun::star::drawing::XShapes > xShapes( xShape, ::com::sun::star::uno::UNO_QUERY );
 		if ( xShapes.is() )
@@ -418,7 +418,7 @@ com::sun::star::drawing::PolyPolygonBezierCoords SAL_CALL EnhancedCustomShapeEng
 
 			basegfx::B2DPolyPolygon aPolyPolygon;
 			SdrObjListIter aIter( *pObj, IM_DEEPWITHGROUPS );
-			
+
 			while ( aIter.IsMore() )
 			{
 				SdrObject* pNewObj = NULL;

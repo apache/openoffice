@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -107,8 +107,8 @@ public class FilterComponent
     final int SO_THIRDBOOLFIELDNAME = 256 + 3;
     final int SO_FOURTHBOOLFIELDNAME = 256 + 4;
     int SO_BOOLEANLIST[] =
-    
-    
+
+
     {
         SO_FIRSTBOOLFIELDNAME, SO_SECONDBOOLFIELDNAME, SO_THIRDBOOLFIELDNAME, SO_FOURTHBOOLFIELDNAME
     };
@@ -389,7 +389,7 @@ public class FilterComponent
      * @param iWidth
      * @param FilterCount
      * @param _oQueryMetaData
-     * @param _firstHelpID 
+     * @param _firstHelpID
      */
     public FilterComponent(WizardDialog CurUnoDialog, XMultiServiceFactory _xMSF, int iStep, int iPosX, int iPosY, int iWidth, int FilterCount, QueryMetaData _oQueryMetaData, int _firstHelpID)
     {
@@ -526,8 +526,8 @@ public class FilterComponent
     }
 
     // -------------------------------------------------------------------------
-    // 
-    // 
+    //
+    //
     // -------------------------------------------------------------------------
     final class ControlRow
     {
@@ -721,7 +721,7 @@ public class FilterComponent
 
         /**
          * @returns true if the current condition is complete, all needed fields are filled with values.
-         * So we can enable the next. 
+         * So we can enable the next.
          */
         boolean isConditionComplete()
         {

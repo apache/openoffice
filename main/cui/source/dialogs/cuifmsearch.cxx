@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,7 +42,7 @@
 #include <svl/cjkoptions.hxx>
 #include <com/sun/star/i18n/TransliterationModules.hpp>
 #include <comphelper/processfactory.hxx>
-#include <svx/svxdlg.hxx> 
+#include <svx/svxdlg.hxx>
 
 using namespace ::com::sun::star::uno;
 using namespace ::com::sun::star::i18n;
@@ -126,9 +126,9 @@ FmSearchDialog::FmSearchDialog(Window* pParent, const UniString& sInitialText, c
     ,m_pbHelp                   (this, CUI_RES(1))
     ,m_sSearch                  ( m_pbSearchAgain.GetText() )
     ,m_sCancel                  ( Button::GetStandardText( BUTTON_CANCEL ) )
-    ,m_pPreSearchFocus( NULL )                                      
+    ,m_pPreSearchFocus( NULL )
 	,m_lnkContextSupplier(lnkContextSupplier)
-    ,m_pConfig( NULL )                                              
+    ,m_pConfig( NULL )
 {
 	DBG_ASSERT(m_lnkContextSupplier.IsSet(), "FmSearchDialog::FmSearchDialog : have no ContextSupplier !");
 
@@ -197,9 +197,9 @@ FmSearchDialog::FmSearchDialog(Window* pParent, const UniString& sInitialText, c
 
 //------------------------------------------------------------------------
 void FmSearchDialog::implMoveControls(
-            Control** _ppControls, 
-            sal_Int32 _nControls, 
-            sal_Int32 _nUp, 
+            Control** _ppControls,
+            sal_Int32 _nControls,
+            sal_Int32 _nUp,
             Control* /*_pToResize*/)
 {
 	for (sal_Int32 i=0; i<_nControls; ++i)
@@ -568,7 +568,7 @@ void FmSearchDialog::InitContext(sal_Int16 nContext)
 	fmscContext.nContext = nContext;
 
 #ifdef DBG_UTIL
-	sal_uInt32 nResult = 
+	sal_uInt32 nResult =
 #endif
     m_lnkContextSupplier.Call(&fmscContext);
 	DBG_ASSERT(nResult > 0, "FmSearchDialog::InitContext : ContextSupplier didn't give me any controls !");
@@ -632,7 +632,7 @@ void FmSearchDialog::EnableSearchUI(sal_Bool bEnable)
 
 	if ( !bEnable )
 	{
-		// if one of my children has the focus, remember it 
+		// if one of my children has the focus, remember it
 		// 104332 - 2002-10-17 - fs@openoffice.org
 		Window* pFocusWindow = Application::GetFocusWindow( );
 		if ( pFocusWindow && IsChild( pFocusWindow ) )

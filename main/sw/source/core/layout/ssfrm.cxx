@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -226,7 +226,7 @@ void SwFrm::CheckDirChange()
     SetInvalidR2L( sal_True );
     sal_Bool bChg = bOldR2L != IsRightToLeft();
     //Badaa: 2008-04-18 * Support for Classical Mongolian Script (SCMS) joint with Jiayanmin
-    sal_Bool bOldVertL2R = IsVertLR();   
+    sal_Bool bOldVertL2R = IsVertLR();
     if( ( IsVertical() != bOldVert ) || bChg || IsReverse() != bOldRev || bOldVertL2R != IsVertLR() )
     {
         InvalidateAll();
@@ -324,7 +324,7 @@ Point SwFrm::GetFrmAnchorPos( sal_Bool bIgnoreFlysAnchoredAtThisFrame ) const
     //Badaa: 2008-04-18 * Support for Classical Mongolian Script (SCMS) joint with Jiayanmin
     if ( ( IsVertical() && !IsVertLR() ) || IsRightToLeft() )
 		aAnchor.X() += Frm().Width();
-	
+
     if ( IsTxtFrm() )
     {
         SwTwips nBaseOfstForFly =
@@ -411,7 +411,7 @@ SwFrm::~SwFrm()
 /*************************************************************************/
 
 const SwFrmFmt * SwLayoutFrm::GetFmt() const
-{ 
+{
     return static_cast< const SwFlyFrmFmt * >( GetDep() );
 }
 
@@ -498,7 +498,7 @@ void SwCntntFrm::RegisterToNode( SwCntntNode& rNode )
 
 void SwCntntFrm::DelFrms( const SwCntntNode& rNode )
 {
-	SwIterator<SwCntntFrm,SwCntntNode> aIter( rNode );    
+	SwIterator<SwCntntFrm,SwCntntNode> aIter( rNode );
 	for( SwCntntFrm* pFrm = aIter.First(); pFrm; pFrm = aIter.Next() )
 	{
         // --> OD 2005-12-01 #i27138#

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -62,7 +62,7 @@ namespace framework
 //_________________________________________________________________________________________________________________
 
 
-PanelManager::PanelManager( 
+PanelManager::PanelManager(
     const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& rSMGR,
     const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XFrame >& rFrame ) :
     m_xSMGR( rSMGR ),
@@ -77,7 +77,7 @@ PanelManager::PanelManager(
 PanelManager::~PanelManager()
 {
 }
-		
+
 //---------------------------------------------------------------------------------------------------------
 // Creation and layouting
 //---------------------------------------------------------------------------------------------------------
@@ -94,7 +94,7 @@ bool PanelManager::createPanels()
             delete m_aPanels[PANEL_BOTTOM];
             delete m_aPanels[PANEL_LEFT  ];
             delete m_aPanels[PANEL_RIGHT ];
-            
+
             m_aPanels[PANEL_TOP   ] = new Panel( m_xSMGR, xWindow, PANEL_TOP    );
             m_aPanels[PANEL_BOTTOM] = new Panel( m_xSMGR, xWindow, PANEL_BOTTOM );
             m_aPanels[PANEL_LEFT  ] = new Panel( m_xSMGR, xWindow, PANEL_LEFT   );
@@ -136,39 +136,39 @@ bool PanelManager::destroyDockingWindow( const ::rtl::OUString& /*rResourceName*
 //---------------------------------------------------------------------------------------------------------
 //  XDockableWindowListener
 //---------------------------------------------------------------------------------------------------------
-void SAL_CALL PanelManager::startDocking( const awt::DockingEvent& ) 
+void SAL_CALL PanelManager::startDocking( const awt::DockingEvent& )
 throw (uno::RuntimeException)
 {
 }
 
-awt::DockingData SAL_CALL PanelManager::docking( const awt::DockingEvent& ) 
+awt::DockingData SAL_CALL PanelManager::docking( const awt::DockingEvent& )
 throw (uno::RuntimeException)
 {
     return awt::DockingData();
 }
 
-void SAL_CALL PanelManager::endDocking( const awt::EndDockingEvent& ) 
+void SAL_CALL PanelManager::endDocking( const awt::EndDockingEvent& )
 throw (uno::RuntimeException)
 {
 }
 
-sal_Bool SAL_CALL PanelManager::prepareToggleFloatingMode( const lang::EventObject& ) 
+sal_Bool SAL_CALL PanelManager::prepareToggleFloatingMode( const lang::EventObject& )
 throw (uno::RuntimeException)
 {
     return false;
 }
 
-void SAL_CALL PanelManager::toggleFloatingMode( const lang::EventObject& ) 
+void SAL_CALL PanelManager::toggleFloatingMode( const lang::EventObject& )
 throw (uno::RuntimeException)
 {
 }
 
-void SAL_CALL PanelManager::closed( const lang::EventObject& ) 
+void SAL_CALL PanelManager::closed( const lang::EventObject& )
 throw (uno::RuntimeException)
 {
 }
 
-void SAL_CALL PanelManager::endPopupMode( const awt::EndPopupModeEvent& ) 
+void SAL_CALL PanelManager::endPopupMode( const awt::EndPopupModeEvent& )
 throw (uno::RuntimeException)
 {
 }

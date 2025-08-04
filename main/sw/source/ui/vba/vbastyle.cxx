@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -37,13 +37,13 @@ SwVbaStyle::SwVbaStyle( const uno::Reference< XHelperInterface >& xParent, const
     mxStyle.set( _xPropertySet, uno::UNO_QUERY_THROW );
 }
 
-void SAL_CALL 
+void SAL_CALL
 SwVbaStyle::setName( const ::rtl::OUString& Name ) throw (uno::RuntimeException)
 {
 	mxStyle->setName(Name);
 }
 
-::rtl::OUString SAL_CALL 
+::rtl::OUString SAL_CALL
 SwVbaStyle::getName() throw (uno::RuntimeException)
 {
 	return mxStyle->getName();
@@ -78,9 +78,9 @@ void SAL_CALL SwVbaStyle::setLanguageID( ::sal_Int32 _languageid ) throw (uno::R
     uno::Reference< lang::XServiceInfo > xServiceInfo( mxStyle, uno::UNO_QUERY_THROW );
     if( xServiceInfo->supportsService( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.style.ParagraphStyle") ) ) )
         nType = word::WdStyleType::wdStyleTypeParagraph;
-    else if( xServiceInfo->supportsService( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.style.CharacterStyle") ) ) )    
+    else if( xServiceInfo->supportsService( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.style.CharacterStyle") ) ) )
         nType = word::WdStyleType::wdStyleTypeCharacter;
-    else // if( xServiceInfo->supportsService( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.text.NumberingStyle") ) ) )    
+    else // if( xServiceInfo->supportsService( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.text.NumberingStyle") ) ) )
         nType = word::WdStyleType::wdStyleTypeList;
     return nType;
 }

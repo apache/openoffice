@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -61,7 +61,7 @@ static void ooo_mount_operation_class_init (OOoMountOperationClass *klass)
 using namespace com::sun::star;
 
 static void ooo_mount_operation_ask_password (GMountOperation *op,
-    const char * /*message*/, const char *default_user, 
+    const char * /*message*/, const char *default_user,
     const char *default_domain, GAskPasswordFlags flags)
 {
     uno::Reference< task::XInteractionHandler > xIH;
@@ -81,7 +81,7 @@ static void ooo_mount_operation_ask_password (GMountOperation *op,
 
     ::rtl::OUString aHostName, aDomain, aUserName, aPassword;
 
-    ucbhelper::SimpleAuthenticationRequest::EntityType eUserName = 
+    ucbhelper::SimpleAuthenticationRequest::EntityType eUserName =
         (flags & G_ASK_PASSWORD_NEED_USERNAME)
           ? ucbhelper::SimpleAuthenticationRequest::ENTITY_MODIFY
           : ucbhelper::SimpleAuthenticationRequest::ENTITY_NA;
@@ -89,7 +89,7 @@ static void ooo_mount_operation_ask_password (GMountOperation *op,
     if (default_user)
         aUserName = rtl::OUString(default_user, strlen(default_user), RTL_TEXTENCODING_UTF8);
 
-    ucbhelper::SimpleAuthenticationRequest::EntityType ePassword = 
+    ucbhelper::SimpleAuthenticationRequest::EntityType ePassword =
         (flags & G_ASK_PASSWORD_NEED_PASSWORD)
           ? ucbhelper::SimpleAuthenticationRequest::ENTITY_MODIFY
           : ucbhelper::SimpleAuthenticationRequest::ENTITY_NA;
@@ -107,7 +107,7 @@ static void ooo_mount_operation_ask_password (GMountOperation *op,
     if ( aPassword.getLength() == 0 )
         aPassword = aPrevPassword;
 
-    ucbhelper::SimpleAuthenticationRequest::EntityType eDomain = 
+    ucbhelper::SimpleAuthenticationRequest::EntityType eDomain =
         (flags & G_ASK_PASSWORD_NEED_DOMAIN)
           ? ucbhelper::SimpleAuthenticationRequest::ENTITY_MODIFY
           : ucbhelper::SimpleAuthenticationRequest::ENTITY_NA;
@@ -157,7 +157,7 @@ static void ooo_mount_operation_ask_password (GMountOperation *op,
         case ucb::RememberAuthentication_SESSION:
             g_mount_operation_set_password_save(op, G_PASSWORD_SAVE_FOR_SESSION);
             break;
-        case ucb::RememberAuthentication_PERSISTENT: 
+        case ucb::RememberAuthentication_PERSISTENT:
             g_mount_operation_set_password_save(op, G_PASSWORD_SAVE_PERMANENTLY);
             break;
     }

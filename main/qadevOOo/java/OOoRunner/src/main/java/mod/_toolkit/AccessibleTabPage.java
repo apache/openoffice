@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -89,7 +89,7 @@ public class AccessibleTabPage extends TestCase {
      * Creates the Desktop service (<code>com.sun.star.frame.Desktop</code>).
      */
     protected void initialize(TestParameters Param, PrintWriter log) {
-        the_Desk = (XDesktop) UnoRuntime.queryInterface(XDesktop.class, 
+        the_Desk = (XDesktop) UnoRuntime.queryInterface(XDesktop.class,
                                                         DesktopTools.createDesktop(
                                                                 (XMultiServiceFactory) Param.getMSF()));
     }
@@ -137,7 +137,7 @@ public class AccessibleTabPage extends TestCase {
      * @see ifc.accessibility._XAccessibleEventBroadcaster
      * @see com.sun.star.accessibility.XAccessibleEventBroadcaster
      */
-    protected TestEnvironment createTestEnvironment(TestParameters tParam, 
+    protected TestEnvironment createTestEnvironment(TestParameters tParam,
                                                     PrintWriter log) {
         log.println("creating a test environment");
 
@@ -174,13 +174,13 @@ public class AccessibleTabPage extends TestCase {
 
         shortWait();
 
-        XModel aModel1 = (XModel) UnoRuntime.queryInterface(XModel.class, 
+        XModel aModel1 = (XModel) UnoRuntime.queryInterface(XModel.class,
                                                             xTextDoc);
 
         XController secondController = aModel1.getCurrentController();
 
         XDispatchProvider aProv = (XDispatchProvider) UnoRuntime.queryInterface(
-                                          XDispatchProvider.class, 
+                                          XDispatchProvider.class,
                                           secondController);
 
         XURLTransformer urlTransf = null;
@@ -227,18 +227,18 @@ public class AccessibleTabPage extends TestCase {
 
         shortWait();
 
-        XWindow xWindow = (XWindow) UnoRuntime.queryInterface(XWindow.class, 
+        XWindow xWindow = (XWindow) UnoRuntime.queryInterface(XWindow.class,
                                                               tk.getActiveTopWindow());
 
         XAccessible xRoot = at.getAccessibleObject(xWindow);
 
-        XAccessibleContext closeButton = at.getAccessibleObjectForRole(xRoot, 
-                                                                       AccessibleRole.PUSH_BUTTON, 
+        XAccessibleContext closeButton = at.getAccessibleObjectForRole(xRoot,
+                                                                       AccessibleRole.PUSH_BUTTON,
                                                                        "Close");
 
         accCloseButton = (XAccessibleAction) UnoRuntime.queryInterface(
                                  XAccessibleAction.class, closeButton);
-        
+
         oObj = at.getAccessibleObjectForRole(xRoot, AccessibleRole.PAGE_TAB);
 
         log.println("ImplementationName: " + util.utils.getImplName(oObj));
@@ -249,7 +249,7 @@ public class AccessibleTabPage extends TestCase {
         tEnv.addObjRelation("LimitedBounds", "toolkit.AccessibleTabPage");
 
         XAccessibleComponent accComp = (XAccessibleComponent) UnoRuntime.queryInterface(
-                                               XAccessibleComponent.class, 
+                                               XAccessibleComponent.class,
                                                oObj);
         final Point point = accComp.getLocationOnScreen();
 
@@ -257,13 +257,13 @@ public class AccessibleTabPage extends TestCase {
 
         XInterface xEventInt = at.getAccessibleObjectForRole(xRoot, AccessibleRole.PAGE_TAB, "Variables");
         final XAccessibleComponent eventAccComp = (XAccessibleComponent) UnoRuntime.queryInterface(
-                                               XAccessibleComponent.class, 
+                                               XAccessibleComponent.class,
                                                xEventInt);
-        
-        tEnv.addObjRelation("EventProducer", 
+
+        tEnv.addObjRelation("EventProducer",
                             new ifc.accessibility._XAccessibleEventBroadcaster.EventProducer() {
             public void fireEvent() {
-               eventAccComp.grabFocus(); 
+               eventAccComp.grabFocus();
             }
         });
 

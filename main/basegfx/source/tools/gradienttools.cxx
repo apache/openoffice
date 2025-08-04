@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,9 +53,9 @@ namespace basegfx
         for the border treatment. Factored out here.
     */
     ODFGradientInfo init1DGradientInfo(
-        const B2DRange& rTargetRange, 
+        const B2DRange& rTargetRange,
         sal_uInt32 nSteps,
-        double fBorder, 
+        double fBorder,
         double fAngle,
         bool bAxial)
     {
@@ -70,14 +70,14 @@ namespace basegfx
 
         // add object expansion
         const bool bAngleUsed(!fTools::equalZero(fAngle));
-        
+
         if(bAngleUsed)
         {
             const double fAbsCos(fabs(cos(fAngle)));
             const double fAbsSin(fabs(sin(fAngle)));
             const double fNewX(fTargetSizeX * fAbsCos + fTargetSizeY * fAbsSin);
             const double fNewY(fTargetSizeY * fAbsCos + fTargetSizeX * fAbsSin);
-            
+
             fTargetOffsetX -= (fNewX - fTargetSizeX) / 2.0;
             fTargetOffsetY -= (fNewY - fTargetSizeY) / 2.0;
             fTargetSizeX = fNewX;
@@ -91,7 +91,7 @@ namespace basegfx
             aTextureTransform.scale(1.0, fSizeWithoutBorder * 0.5);
             aTextureTransform.translate(0.0, 0.5);
         }
-        else 
+        else
         {
             if(!fTools::equal(fSizeWithoutBorder, 1.0))
             {
@@ -123,10 +123,10 @@ namespace basegfx
         except for the border treatment. Factored out here.
     */
     ODFGradientInfo initEllipticalGradientInfo(
-        const B2DRange& rTargetRange, 
+        const B2DRange& rTargetRange,
         const B2DVector& rOffset,
         sal_uInt32 nSteps,
-        double fBorder, 
+        double fBorder,
         double fAngle,
         bool bCircular)
     {
@@ -148,7 +148,7 @@ namespace basegfx
             fTargetOffsetY -= (fOriginalDiag - fTargetSizeY) / 2.0;
             fTargetSizeX = fOriginalDiag;
             fTargetSizeY = fOriginalDiag;
-        }    
+        }
         else
         {
             fTargetOffsetX -= (0.4142 / 2.0 ) * fTargetSizeX;
@@ -192,10 +192,10 @@ namespace basegfx
         here.
     */
     ODFGradientInfo initRectGradientInfo(
-        const B2DRange& rTargetRange, 
+        const B2DRange& rTargetRange,
         const B2DVector& rOffset,
         sal_uInt32 nSteps,
-        double fBorder, 
+        double fBorder,
         double fAngle,
         bool bSquare)
     {
@@ -212,11 +212,11 @@ namespace basegfx
         if(bSquare)
         {
             const double fSquareWidth(std::max(fTargetSizeX, fTargetSizeY));
-            
+
             fTargetOffsetX -= (fSquareWidth - fTargetSizeX) / 2.0;
             fTargetOffsetY -= (fSquareWidth - fTargetSizeY) / 2.0;
             fTargetSizeX = fTargetSizeY = fSquareWidth;
-        }    
+        }
 
         // add object expansion
         const bool bAngleUsed(!fTools::equalZero(fAngle));
@@ -235,7 +235,7 @@ namespace basegfx
         }
 
         const double fHalfBorder((1.0 - fBorder) * 0.5);
-        
+
         aTextureTransform.scale(fHalfBorder, fHalfBorder);
         aTextureTransform.translate(0.5, 0.5);
         aTextureTransform.scale(fTargetSizeX, fTargetSizeY);
@@ -268,92 +268,92 @@ namespace basegfx
     namespace tools
     {
         ODFGradientInfo createLinearODFGradientInfo(
-            const B2DRange& rTargetArea, 
-            sal_uInt32 nSteps, 
-            double fBorder, 
+            const B2DRange& rTargetArea,
+            sal_uInt32 nSteps,
+            double fBorder,
             double fAngle)
         {
             return init1DGradientInfo(
-                rTargetArea, 
+                rTargetArea,
                 nSteps,
-                fBorder, 
+                fBorder,
                 fAngle,
                 false);
         }
 
         ODFGradientInfo createAxialODFGradientInfo(
-            const B2DRange& rTargetArea, 
-            sal_uInt32 nSteps, 
-            double fBorder, 
+            const B2DRange& rTargetArea,
+            sal_uInt32 nSteps,
+            double fBorder,
             double fAngle)
         {
             return init1DGradientInfo(
-                rTargetArea, 
+                rTargetArea,
                 nSteps,
-                fBorder, 
+                fBorder,
                 fAngle,
                 true);
         }
 
         ODFGradientInfo createRadialODFGradientInfo(
-            const B2DRange& rTargetArea, 
+            const B2DRange& rTargetArea,
             const B2DVector& rOffset,
-            sal_uInt32 nSteps, 
+            sal_uInt32 nSteps,
             double fBorder)
         {
             return initEllipticalGradientInfo(
-                rTargetArea, 
+                rTargetArea,
                 rOffset,
                 nSteps,
-                fBorder, 
+                fBorder,
                 0.0,
                 true);
         }
 
         ODFGradientInfo createEllipticalODFGradientInfo(
-            const B2DRange& rTargetArea, 
+            const B2DRange& rTargetArea,
             const B2DVector& rOffset,
-            sal_uInt32 nSteps, 
-            double fBorder, 
+            sal_uInt32 nSteps,
+            double fBorder,
             double fAngle)
         {
             return initEllipticalGradientInfo(
-                rTargetArea, 
+                rTargetArea,
                 rOffset,
                 nSteps,
-                fBorder, 
+                fBorder,
                 fAngle,
                 false);
         }
 
         ODFGradientInfo createSquareODFGradientInfo(
-            const B2DRange& rTargetArea, 
+            const B2DRange& rTargetArea,
             const B2DVector& rOffset,
-            sal_uInt32 nSteps, 
-            double fBorder, 
+            sal_uInt32 nSteps,
+            double fBorder,
             double fAngle)
         {
             return initRectGradientInfo(
-                rTargetArea, 
+                rTargetArea,
                 rOffset,
                 nSteps,
-                fBorder, 
+                fBorder,
                 fAngle,
                 true);
         }
 
         ODFGradientInfo createRectangularODFGradientInfo(
-            const B2DRange& rTargetArea, 
+            const B2DRange& rTargetArea,
             const B2DVector& rOffset,
-            sal_uInt32 nSteps, 
-            double fBorder, 
+            sal_uInt32 nSteps,
+            double fBorder,
             double fAngle)
         {
             return initRectGradientInfo(
-                rTargetArea, 
+                rTargetArea,
                 rOffset,
                 nSteps,
-                fBorder, 
+                fBorder,
                 fAngle,
                 false);
         }

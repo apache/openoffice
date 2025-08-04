@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -71,7 +71,7 @@ void lcl_getFormatter(com::sun::star::uno::Reference<com::sun::star::text::XNumb
     if(!_xFormatter.is())
    	{
 		try
-		{ 
+		{
 			Reference< XMultiServiceFactory > xMSF = ::comphelper::getProcessServiceFactory();
 			Reference < XInterface > xI = xMSF->createInstance(
 				::rtl::OUString::createFromAscii( "com.sun.star.text.DefaultNumberingProvider" ) );
@@ -308,7 +308,7 @@ SvxNumberFormat::SvxNumberFormat(SvStream &rStream)
             }
         }
     }
-    
+
     if( NUMITEM_VERSION_04 <= nVersion )
     {
         rStream >> nUSHORT;
@@ -318,11 +318,11 @@ SvxNumberFormat::SvxNumberFormat(SvStream &rStream)
         long nLong;
         rStream >> nLong;
         mnListtabPos = nLong;
-        rStream >> nLong;        
+        rStream >> nLong;
         mnFirstLineIndent = nLong;
         rStream >> nLong;
         mnIndentAt = nLong;
-    }    
+    }
 }
 /* -----------------08.12.98 11:14-------------------
  *
@@ -477,7 +477,7 @@ sal_Bool  SvxNumberFormat::operator==( const SvxNumberFormat& rFormat) const
 	if (
         (pGraphicBrush && !rFormat.pGraphicBrush) ||
         (!pGraphicBrush && rFormat.pGraphicBrush) ||
-        (pGraphicBrush && *pGraphicBrush != *rFormat.pGraphicBrush) 
+        (pGraphicBrush && *pGraphicBrush != *rFormat.pGraphicBrush)
        )
     {
 		return sal_False;

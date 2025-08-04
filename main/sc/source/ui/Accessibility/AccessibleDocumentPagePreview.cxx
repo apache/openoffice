@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1919,7 +1919,7 @@ throw (::com::sun::star::uno::RuntimeException)
 		{
 			sName = sFileName + rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(" - ")) + sName;
 			sName += String(ScResId(STR_ACC_DOC_PREVIEW_SUFFIX));
-			
+
 		}
 	}
 
@@ -1936,7 +1936,7 @@ throw (::com::sun::star::uno::RuntimeException)
 //UNUSED2009-05             ScPagePreviewCountData aCount( rData, mpViewShell->GetWindow(), GetNotesChilds(), GetShapeChilds() );
 //UNUSED2009-05             //! order is background shapes, header, table or notes, footer, foreground shapes, controls
 //UNUSED2009-05             sal_Int32 nIndex (aCount.nBackShapes + aCount.nHeaders);
-//UNUSED2009-05 
+//UNUSED2009-05
 //UNUSED2009-05             mpTable = new ScAccessiblePreviewTable( this, mpViewShell, nIndex );
 //UNUSED2009-05             mpTable->acquire();
 //UNUSED2009-05             mpTable->Init();
@@ -1958,7 +1958,7 @@ throw (::com::sun::star::uno::RuntimeException)
 //UNUSED2009-05             mpTable->SetCurrentIndexInParent(aCount.nBackShapes + aCount.nHeaders);
 //UNUSED2009-05         if (mpFooter)
 //UNUSED2009-05             mpFooter->SetCurrentIndexInParent(aCount.nBackShapes + aCount.nHeaders + aCount.nTables + aCount.nNoteParagraphs);
-//UNUSED2009-05 
+//UNUSED2009-05
 //UNUSED2009-05         if (mpNotesChilds)
 //UNUSED2009-05             mpNotesChilds->SetOffset(aCount.nBackShapes + aCount.nHeaders);
 //UNUSED2009-05     }

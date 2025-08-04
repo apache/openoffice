@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -343,7 +343,7 @@ bool Submission::doSubmit( const Reference< XInteractionHandler >& xHandler )
         Reference< XDocument > aInstanceDoc = getInstanceDocument(xResult);
         aResult = xSubmission->replace(getReplace(), aInstanceDoc, Reference< XFrame >());
     }
-        
+
     return ( aResult == CSubmission::SUCCESS );
 }
 
@@ -445,7 +445,7 @@ sal_Bool SAL_CALL Submission::convertFastPropertyValue(
 {
     if ( nHandle == HANDLE_IncludeNamespacePrefixes )
     {
-        // for convinience reasons (????), we accept a string which contains
+        // for convenience reasons (????), we accept a string which contains
         // a comma-separated list of namespace prefixes
         ::rtl::OUString sTokenList;
         if ( rValue >>= sTokenList )
@@ -496,10 +496,10 @@ OUString lcl_message( const OUString& rID, const OUString& rText )
     return aMessage.makeStringAndClear();
 }
 
-void SAL_CALL Submission::submitWithInteraction( 
-    const Reference<XInteractionHandler>& _rxHandler ) 
-    throw ( VetoException, 
-            WrappedTargetException, 
+void SAL_CALL Submission::submitWithInteraction(
+    const Reference<XInteractionHandler>& _rxHandler )
+    throw ( VetoException,
+            WrappedTargetException,
             RuntimeException )
 {
     // as long as this class is not really threadsafe, we need to copy
@@ -521,14 +521,14 @@ void SAL_CALL Submission::submitWithInteraction(
     bool bValid = pModel->isValid();
     if( ! bValid )
     {
-        InvalidDataOnSubmitException aInvalidDataException( 
+        InvalidDataOnSubmitException aInvalidDataException(
             lcl_message(sID, OUSTRING(" due to invalid data") ), *this );
 
         if( _rxHandler.is() )
         {
             // laboriously create interaction request
-            comphelper::OInteractionRequest* pRequest 
-                = new comphelper::OInteractionRequest( 
+            comphelper::OInteractionRequest* pRequest
+                = new comphelper::OInteractionRequest(
                     makeAny( aInvalidDataException ) );
             Reference<XInteractionRequest> xRequest = pRequest;
 
@@ -572,7 +572,7 @@ void SAL_CALL Submission::submitWithInteraction(
     catch( const Exception& e )
     {
         // exception caught: re-throw as wrapped target exception
-        throw WrappedTargetException( 
+        throw WrappedTargetException(
             lcl_message( sID, OUSTRING(" due to exception being thrown") ),
             *this, makeAny( e ) );
     }
@@ -581,10 +581,10 @@ void SAL_CALL Submission::submitWithInteraction(
     {
         mxModel->rebuild();
     }
-    else 
+    else
     {
         // other failure: throw wrapped target exception, too.
-        throw WrappedTargetException( 
+        throw WrappedTargetException(
             lcl_message( sID, OUString() ), *this, Any() );
     }
 }
@@ -653,7 +653,7 @@ Reference< XDocument > Submission::getInstanceDocument(const Reference< XXPathOb
         if (aList->getLength() > 0)
             aDocument = aList->item(0)->getOwnerDocument();
     }
-    return aDocument;            
+    return aDocument;
 }
 
 Reference< XDocumentFragment > Submission::createSubmissionDocument(const Reference< XXPathObject >& aObj, sal_Bool bRemoveWSNodes)

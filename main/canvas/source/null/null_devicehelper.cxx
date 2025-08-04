@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -79,7 +79,7 @@ namespace nullcanvas
         return geometry::RealSize2D( 210, 280 );
     }
 
-    uno::Reference< rendering::XLinePolyPolygon2D > DeviceHelper::createCompatibleLinePolyPolygon( 
+    uno::Reference< rendering::XLinePolyPolygon2D > DeviceHelper::createCompatibleLinePolyPolygon(
         const uno::Reference< rendering::XGraphicDevice >& 				/*rDevice*/,
         const uno::Sequence< uno::Sequence< geometry::RealPoint2D > >&	points )
     {
@@ -87,12 +87,12 @@ namespace nullcanvas
         if( !mpSpriteCanvas )
             return uno::Reference< rendering::XLinePolyPolygon2D >(); // we're disposed
 
-        return uno::Reference< rendering::XLinePolyPolygon2D >( 
-            new ::basegfx::unotools::UnoPolyPolygon( 
+        return uno::Reference< rendering::XLinePolyPolygon2D >(
+            new ::basegfx::unotools::UnoPolyPolygon(
                 ::basegfx::unotools::polyPolygonFromPoint2DSequenceSequence( points )));
     }
 
-    uno::Reference< rendering::XBezierPolyPolygon2D > DeviceHelper::createCompatibleBezierPolyPolygon( 
+    uno::Reference< rendering::XBezierPolyPolygon2D > DeviceHelper::createCompatibleBezierPolyPolygon(
         const uno::Reference< rendering::XGraphicDevice >& 						/*rDevice*/,
         const uno::Sequence< uno::Sequence< geometry::RealBezierSegment2D > >&	points )
     {
@@ -100,12 +100,12 @@ namespace nullcanvas
         if( !mpSpriteCanvas )
             return uno::Reference< rendering::XBezierPolyPolygon2D >(); // we're disposed
 
-        return uno::Reference< rendering::XBezierPolyPolygon2D >( 
-            new ::basegfx::unotools::UnoPolyPolygon( 
+        return uno::Reference< rendering::XBezierPolyPolygon2D >(
+            new ::basegfx::unotools::UnoPolyPolygon(
                 ::basegfx::unotools::polyPolygonFromBezier2DSequenceSequence( points ) ) );
     }
 
-    uno::Reference< rendering::XBitmap > DeviceHelper::createCompatibleBitmap( 
+    uno::Reference< rendering::XBitmap > DeviceHelper::createCompatibleBitmap(
         const uno::Reference< rendering::XGraphicDevice >& 	/*rDevice*/,
         const geometry::IntegerSize2D& 						size )
     {
@@ -117,17 +117,17 @@ namespace nullcanvas
             new CanvasBitmap(
                 ::basegfx::unotools::b2ISizeFromIntegerSize2D( size ),
                 mpSpriteCanvas,
-                false )); 
+                false ));
     }
 
-    uno::Reference< rendering::XVolatileBitmap > DeviceHelper::createVolatileBitmap( 
+    uno::Reference< rendering::XVolatileBitmap > DeviceHelper::createVolatileBitmap(
         const uno::Reference< rendering::XGraphicDevice >& 	/*rDevice*/,
         const geometry::IntegerSize2D& 						/*size*/ )
     {
         return uno::Reference< rendering::XVolatileBitmap >();
     }
 
-    uno::Reference< rendering::XBitmap > DeviceHelper::createCompatibleAlphaBitmap( 
+    uno::Reference< rendering::XBitmap > DeviceHelper::createCompatibleAlphaBitmap(
         const uno::Reference< rendering::XGraphicDevice >& 	/*rDevice*/,
         const geometry::IntegerSize2D& 						size )
     {
@@ -139,10 +139,10 @@ namespace nullcanvas
             new CanvasBitmap(
                 ::basegfx::unotools::b2ISizeFromIntegerSize2D( size ),
                 mpSpriteCanvas,
-                true )); 
+                true ));
     }
 
-    uno::Reference< rendering::XVolatileBitmap > DeviceHelper::createVolatileAlphaBitmap( 
+    uno::Reference< rendering::XVolatileBitmap > DeviceHelper::createVolatileAlphaBitmap(
         const uno::Reference< rendering::XGraphicDevice >& 	/*rDevice*/,
         const geometry::IntegerSize2D& 						/*size*/ )
     {
@@ -160,7 +160,7 @@ namespace nullcanvas
         // TODO(F3): offer fullscreen mode the XCanvas way
         return false;
     }
-    
+
     ::sal_Int32 DeviceHelper::createBuffers( ::sal_Int32 /*nBuffers*/ )
     {
         // TODO(F3): implement XBufferStrategy interface. For now, we
@@ -203,19 +203,19 @@ namespace nullcanvas
     {
         return uno::Any();
     }
-    
-    namespace 
-    { 
+
+    namespace
+    {
         struct DeviceColorSpace: public rtl::StaticWithInit<uno::Reference<rendering::XColorSpace>,
-                                                            DeviceColorSpace> 
+                                                            DeviceColorSpace>
         {
             uno::Reference<rendering::XColorSpace> operator()()
             {
                 return vcl::unotools::createStandardColorSpace();
             }
-        }; 
+        };
     }
-    
+
     uno::Reference<rendering::XColorSpace> DeviceHelper::getColorSpace() const
     {
         // always the same

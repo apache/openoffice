@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "precompiled_sd.hxx"
@@ -110,15 +110,15 @@ static snewfoil_value_info standard[] =
 {
     {BMP_LAYOUT_EMPTY, BMP_LAYOUT_EMPTY_H, STR_AUTOLAYOUT_NONE, WritingMode_LR_TB,        AUTOLAYOUT_NONE},
 	{BMP_LAYOUT_HEAD03, BMP_LAYOUT_HEAD03_H, STR_AUTOLAYOUT_TITLE, WritingMode_LR_TB,       AUTOLAYOUT_TITLE},
-    {BMP_LAYOUT_HEAD02, BMP_LAYOUT_HEAD02_H, STR_AUTOLAYOUT_CONTENT, WritingMode_LR_TB,        AUTOLAYOUT_ENUM},   
+    {BMP_LAYOUT_HEAD02, BMP_LAYOUT_HEAD02_H, STR_AUTOLAYOUT_CONTENT, WritingMode_LR_TB,        AUTOLAYOUT_ENUM},
 	{BMP_LAYOUT_HEAD02A, BMP_LAYOUT_HEAD02A_H, STR_AUTOLAYOUT_2CONTENT, WritingMode_LR_TB,       AUTOLAYOUT_2TEXT},
-	{BMP_LAYOUT_HEAD01, BMP_LAYOUT_HEAD01_H, STR_AUTOLAYOUT_ONLY_TITLE, WritingMode_LR_TB,  AUTOLAYOUT_ONLY_TITLE},    
+	{BMP_LAYOUT_HEAD01, BMP_LAYOUT_HEAD01_H, STR_AUTOLAYOUT_ONLY_TITLE, WritingMode_LR_TB,  AUTOLAYOUT_ONLY_TITLE},
 	{BMP_LAYOUT_TEXTONLY, BMP_LAYOUT_TEXTONLY_H, STR_AUTOLAYOUT_ONLY_TEXT, WritingMode_LR_TB,   AUTOLAYOUT_ONLY_TEXT},
     {BMP_LAYOUT_HEAD03B, BMP_LAYOUT_HEAD03B_H, STR_AUTOLAYOUT_2CONTENT_CONTENT, WritingMode_LR_TB,    AUTOLAYOUT_2OBJTEXT},
 	{BMP_LAYOUT_HEAD03C, BMP_LAYOUT_HEAD03C_H, STR_AUTOLAYOUT_CONTENT_2CONTENT, WritingMode_LR_TB,    AUTOLAYOUT_TEXT2OBJ},
-	{BMP_LAYOUT_HEAD03A, BMP_LAYOUT_HEAD03A_H, STR_AUTOLAYOUT_2CONTENT_OVER_CONTENT,WritingMode_LR_TB, AUTOLAYOUT_2OBJOVERTEXT},    
+	{BMP_LAYOUT_HEAD03A, BMP_LAYOUT_HEAD03A_H, STR_AUTOLAYOUT_2CONTENT_OVER_CONTENT,WritingMode_LR_TB, AUTOLAYOUT_2OBJOVERTEXT},
 	{BMP_LAYOUT_HEAD02B, BMP_LAYOUT_HEAD02B_H, STR_AUTOLAYOUT_CONTENT_OVER_CONTENT, WritingMode_LR_TB, AUTOLAYOUT_OBJOVERTEXT},
-    {BMP_LAYOUT_HEAD04, BMP_LAYOUT_HEAD04_H, STR_AUTOLAYOUT_4CONTENT, WritingMode_LR_TB,        AUTOLAYOUT_4OBJ},   
+    {BMP_LAYOUT_HEAD04, BMP_LAYOUT_HEAD04_H, STR_AUTOLAYOUT_4CONTENT, WritingMode_LR_TB,        AUTOLAYOUT_4OBJ},
 	{BMP_LAYOUT_HEAD06, BMP_LAYOUT_HEAD06_H, STR_AUTOLAYOUT_6CONTENT, WritingMode_LR_TB,    AUTOLAYOUT_6CLIPART},
 
 	// vertical
@@ -155,7 +155,7 @@ LayoutMenu::LayoutMenu (
 
     SetBackground(sfx2::sidebar::Theme::GetWallpaper(sfx2::sidebar::Theme::Paint_PanelBackground));
     SetColor(sfx2::sidebar::Theme::GetColor(sfx2::sidebar::Theme::Paint_PanelBackground));
-    
+
 #ifdef DEBUG
     SetText(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("sd:LayoutMenu")));
 #endif
@@ -194,7 +194,7 @@ void LayoutMenu::implConstruct( DrawDocShell& rDocumentShell )
 
     Window::SetHelpId(HID_SD_TASK_PANE_PREVIEW_LAYOUTS);
     SetAccessibleName(SdResId(STR_TASKPANEL_LAYOUT_MENU_TITLE));
-    
+
     Link aStateChangeLink (LINK(this,LayoutMenu,StateChangeHandler));
     mxListener = new ::sd::tools::SlotStateListener(
         aStateChangeLink,
@@ -245,7 +245,7 @@ void LayoutMenu::Dispose (void)
 AutoLayout LayoutMenu::GetSelectedAutoLayout (void)
 {
     AutoLayout aResult = AUTOLAYOUT_NONE;
-    
+
     if ( ! IsNoSelection() && GetSelectItemId()!=0)
     {
         AutoLayout* pLayout = static_cast<AutoLayout*>(GetItemData(GetSelectItemId()));
@@ -266,7 +266,7 @@ Size LayoutMenu::GetPreferredSize (void)
 {
     Size aItemSize = CalcItemSizePixel (Size());
     Size aPreferredWindowSize = CalcWindowSizePixel (
-        aItemSize, 
+        aItemSize,
          (sal_uInt16)mnPreferredColumnCount,
         (sal_uInt16)CalculateRowCount (aItemSize,mnPreferredColumnCount));
     return aPreferredWindowSize;
@@ -372,7 +372,7 @@ void LayoutMenu::Resize (void)
                 nColumnCount = 4;
 
             int nRowCount = CalculateRowCount (aItemSize, nColumnCount);
-            
+
             SetColCount ((sal_uInt16)nColumnCount);
             SetLineCount ((sal_uInt16)nRowCount);
         }
@@ -395,7 +395,7 @@ void LayoutMenu::MouseButtonDown (const MouseEvent& rEvent)
         if (nIndex > 0)
             SelectItem(nIndex);
     }
-    
+
     ValueSet::MouseButtonDown (rEvent);
 }
 
@@ -540,7 +540,7 @@ void LayoutMenu::AssignLayoutToSelectedSlides (AutoLayout aLayout)
             pPageSelection.reset(new ::sd::slidesorter::SlideSorterViewShell::PageSelection());
             pPageSelection->push_back(pMainViewShell->GetActualPage());
 		}
-			
+
 
 		if (pPageSelection->empty())
 			break;
@@ -585,7 +585,7 @@ SfxRequest LayoutMenu::CreateRequest (
             break;
 
         SetOfByte aVisibleLayers (pPage->TRG_GetMasterPageVisibleLayers());
-    
+
         aRequest.AppendItem(
             SfxStringItem (ID_VAL_PAGENAME, String()));//pPage->GetName()));
         aRequest.AppendItem(SfxUInt32Item (ID_VAL_WHATLAYOUT, aLayout));
@@ -610,7 +610,7 @@ void LayoutMenu::Fill (void)
 	SvtLanguageOptions aLanguageOptions;
     sal_Bool bVertical = aLanguageOptions.IsVerticalTextEnabled();
     SdDrawDocument* pDocument = mrBase.GetDocument();
-    sal_Bool bRightToLeft = (pDocument!=NULL 
+    sal_Bool bRightToLeft = (pDocument!=NULL
         && pDocument->GetDefaultWritingMode() == WritingMode_RL_TB);
 
     // Get URL of the view in the center pane.
@@ -628,7 +628,7 @@ void LayoutMenu::Fill (void)
     }
     catch (RuntimeException&)
     {}
-    
+
 	snewfoil_value_info* pInfo = NULL;
     if (sCenterPaneViewName.equals(framework::FrameworkHelper::msNotesViewURL))
     {
@@ -654,10 +654,10 @@ void LayoutMenu::Fill (void)
 	{
         if ((WritingMode_TB_RL != pInfo->meWritingMode) || bVertical)
         {
-            BitmapEx aBmp (SdResId (bHighContrast 
-                             ? pInfo->mnHCBmpResId 
+            BitmapEx aBmp (SdResId (bHighContrast
+                             ? pInfo->mnHCBmpResId
                              : pInfo->mnBmpResId));
-		
+
             if (bRightToLeft && (WritingMode_TB_RL != pInfo->meWritingMode))
                 aBmp.Mirror (BMP_MIRROR_HORZ);
 
@@ -805,7 +805,7 @@ void LayoutMenu::UpdateSelection (void)
         ViewShell* pViewShell = mrBase.GetMainViewShell().get();
         if (pViewShell == NULL)
             break;
-        
+
         SdPage* pCurrentPage = pViewShell->getCurrentPage();
         if (pCurrentPage == NULL)
             break;

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "precompiled_sd.hxx"
@@ -138,7 +138,7 @@ bool MasterPageContainerQueue::RequestPreview (const SharedMasterPageDescriptor&
         && rpDescriptor->maLargePreview.GetSizePixel().Width() == 0)
     {
         sal_Int32 nPriority (CalculatePriority(rpDescriptor));
-        
+
         // Add a new or replace an existing request.
         RequestQueue::iterator iRequest (::std::find_if(
             mpRequestQueue->begin(),
@@ -189,7 +189,7 @@ sal_Int32 MasterPageContainerQueue::CalculatePriority (
     // Add a term that introduces an order based on the appearance in the
     // AllMasterPagesSelector.
     nPriority -= rpDescriptor->maToken / 3;
-    
+
     // Process requests for the CurrentMasterPagesSelector first.
     if (rpDescriptor->meOrigin == MasterPageContainer::MASTERPAGE)
         nPriority += snMasterPagePriorityBoost;
@@ -237,7 +237,7 @@ IMPL_LINK(MasterPageContainerQueue, DelayedPreviewCreation, Timer*, pTimer)
         }
 
         mpRequestQueue->erase(mpRequestQueue->begin());
-        
+
         if (aRequest.mpDescriptor.get() != NULL)
         {
             mnRequestsServedCount += 1;
@@ -250,7 +250,7 @@ IMPL_LINK(MasterPageContainerQueue, DelayedPreviewCreation, Timer*, pTimer)
         }
     }
     while (false);
-    
+
     if (mpRequestQueue->size() > 0 && ! bWaitForMoreRequests)
     {
         int nTimeout (snDelayedCreationTimeout);

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -71,7 +71,7 @@ namespace pcr
         ,m_pInfoService  ( new OPropertyInfoService )
     {
         DBG_CTOR( PropertyHandler, NULL );
-        
+
 		m_xTypeConverter = Reference< XTypeConverter >(
 			m_aContext.createComponent( "com.sun.star.script.Converter" ),
 			UNO_QUERY_THROW
@@ -111,7 +111,7 @@ namespace pcr
         while ( readdListener->hasMoreElements() )
             addPropertyChangeListener( static_cast< XPropertyChangeListener* >( readdListener->next() ) );
     }
-    
+
     //--------------------------------------------------------------------
     void PropertyHandler::onNewComponent()
     {
@@ -246,7 +246,7 @@ namespace pcr
         DBG_ERROR( "PropertyHandler::onInteractivePropertySelection: not implemented!" );
         return InteractiveSelectionResult_Cancelled;
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL PropertyHandler::actuatingPropertyChanged( const ::rtl::OUString& /*_rActuatingPropertyName*/, const Any& /*_rNewValue*/, const Any& /*_rOldValue*/, const Reference< XObjectInspectorUI >& /*_rxInspectorUI*/, sal_Bool /*_bFirstTimeInit*/ ) throw (NullPointerException, RuntimeException)
     {
@@ -261,14 +261,14 @@ namespace pcr
             throw NullPointerException();
         m_aPropertyListeners.addListener( _rxListener );
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL PropertyHandler::removePropertyChangeListener( const Reference< XPropertyChangeListener >& _rxListener ) throw (RuntimeException)
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         m_aPropertyListeners.removeListener( _rxListener );
     }
-    
+
     //--------------------------------------------------------------------
     sal_Bool SAL_CALL PropertyHandler::suspend( sal_Bool /*_bSuspend*/ ) throw (RuntimeException)
     {
@@ -453,7 +453,7 @@ namespace pcr
         StlSyntaxSequence< ::rtl::OUString > aAllServices( getSupportedServiceNames() );
         return ::std::find( aAllServices.begin(), aAllServices.end(), ServiceName ) != aAllServices.end();
     }
-    
+
 //........................................................................
 }   // namespace pcr
 //........................................................................

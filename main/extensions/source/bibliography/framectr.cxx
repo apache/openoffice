@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -134,7 +134,7 @@ const CmdToInfoCache& GetCommandToInfoCache()
             bCacheInitialized = sal_True;
         }
     }
-    
+
     return aCmdToInfoCache;
 }
 
@@ -230,7 +230,7 @@ sal_Bool SAL_CALL BibFrameController_Impl::supportsService( const ::rtl::OUStrin
     // base services are included there and should be asked by uno-rtti.
     ::com::sun::star::uno::Sequence< ::rtl::OUString > lNames(1);
     lNames[0] = ::rtl::OUString::createFromAscii("com.sun.star.frame.Bibliography");
-    return lNames;    
+    return lNames;
 }
 
 void BibFrameController_Impl::attachFrame( const uno::Reference< XFrame > & xArg ) throw (::com::sun::star::uno::RuntimeException)
@@ -301,7 +301,7 @@ uno::Reference< frame::XDispatch >	BibFrameController_Impl::queryDispatch( const
         CmdToInfoCache::const_iterator pIter = rCmdCache.find( aURL.Complete );
         if ( pIter != rCmdCache.end() )
         {
-            if (( pDatMan->HasActiveConnection() ) || 
+            if (( pDatMan->HasActiveConnection() ) ||
                 ( !pIter->second.bActiveConnection ))
                 return (frame::XDispatch*) this;
         }
@@ -318,7 +318,7 @@ uno::Sequence<uno::Reference< XDispatch > > BibFrameController_Impl::queryDispat
     return aDispatches;
 }
 
-uno::Sequence< ::sal_Int16 > SAL_CALL BibFrameController_Impl::getSupportedCommandGroups() 
+uno::Sequence< ::sal_Int16 > SAL_CALL BibFrameController_Impl::getSupportedCommandGroups()
 throw (::com::sun::star::uno::RuntimeException)
 {
     uno::Sequence< ::sal_Int16 > aDispatchInfo( 4 );
@@ -330,12 +330,12 @@ throw (::com::sun::star::uno::RuntimeException)
 
     return aDispatchInfo;
 }
- 
-uno::Sequence< frame::DispatchInformation > SAL_CALL BibFrameController_Impl::getConfigurableDispatchInformation( ::sal_Int16 nCommandGroup ) 
+
+uno::Sequence< frame::DispatchInformation > SAL_CALL BibFrameController_Impl::getConfigurableDispatchInformation( ::sal_Int16 nCommandGroup )
 throw (::com::sun::star::uno::RuntimeException)
 {
     const CmdToInfoCache& rCmdCache = GetCommandToInfoCache();
-    
+
     sal_Bool                                    bGroupFound( sal_False );
     frame::DispatchInformation                  aDispatchInfo;
     std::list< frame::DispatchInformation >     aDispatchInfoList;
@@ -364,7 +364,7 @@ throw (::com::sun::star::uno::RuntimeException)
 
     ::com::sun::star::uno::Sequence< ::com::sun::star::frame::DispatchInformation > aSeq =
         comphelper::containerToSequence< ::com::sun::star::frame::DispatchInformation, std::list< ::com::sun::star::frame::DispatchInformation > >( aDispatchInfoList );
-    
+
     return aSeq;
 }
 
@@ -417,7 +417,7 @@ sal_Bool BibFrameController_Impl::SaveModified(const Reference< form::runtime::X
 }
 
 Window* lcl_GetFocusChild( Window* pParent )
-{        
+{
     sal_uInt16 nChildren = pParent->GetChildCount();
     for( sal_uInt16 nChild = 0; nChild < nChildren; ++nChild)
     {
@@ -668,29 +668,29 @@ void BibFrameController_Impl::dispatch(const util::URL& _rURL, const uno::Sequen
         {
             Window* pChild = lcl_GetFocusChild( VCLUnoHelper::GetWindow( xWindow ) );
             if(pChild)
-            {        
+            {
                 KeyEvent aEvent( 0, KEYFUNC_CUT );
                 pChild->KeyInput( aEvent );
             }
-        }    
+        }
         else if(aCommand.EqualsAscii("Copy"))
         {
             Window* pChild = lcl_GetFocusChild( VCLUnoHelper::GetWindow( xWindow ) );
             if(pChild)
-            {        
+            {
                 KeyEvent aEvent( 0, KEYFUNC_COPY );
                 pChild->KeyInput( aEvent );
             }
-        }    
+        }
         else if(aCommand.EqualsAscii("Paste"))
         {
             Window* pChild = lcl_GetFocusChild( VCLUnoHelper::GetWindow( xWindow ) );
             if(pChild)
-            {        
+            {
                 KeyEvent aEvent( 0, KEYFUNC_PASTE );
                 pChild->KeyInput( aEvent );
             }
-        }    
+        }
     }
 }
 IMPL_STATIC_LINK( BibFrameController_Impl, DisposeHdl, void*, EMPTYARG )
@@ -808,7 +808,7 @@ void BibFrameController_Impl::addStatusListener(
                     {
                     }
                 }
-            }            
+            }
             uno::Reference< datatransfer::XTransferable > xContents = xClip->getContents(  );
         }
     }
@@ -824,12 +824,12 @@ void BibFrameController_Impl::addStatusListener(
             xSet->getPropertyValue(C2U("RowCount")) >>= nCount;
             aEvent.IsEnabled  = nCount > 0;
         }
-    }            
+    }
     else if (aURL.Path == C2U("Bib/InsertRecord"))
     {
         Reference< beans::XPropertySet >  xSet(pDatMan->getForm(), UNO_QUERY);
         aEvent.IsEnabled = canInsertRecords(xSet);
-    }            
+    }
     aListener->statusChanged( aEvent );
 }
 //-----------------------------------------------------------------------------
@@ -914,7 +914,7 @@ void BibFrameController_Impl::ChangeDataSource(const uno::Sequence< beans::Prope
 		aDBTableName = pDatMan->getActiveDataTable();
 	}
 	else
-    {        
+    {
         m_xDatMan->unload();
         pDatMan->setActiveDataTable(aDBTableName);
         pDatMan->updateGridModel();

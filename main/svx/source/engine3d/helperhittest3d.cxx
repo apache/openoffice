@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -69,7 +69,7 @@ void getAllHit3DObjectWithRelativePoint(
     const basegfx::B3DPoint& rFront,
     const basegfx::B3DPoint& rBack,
     const E3dCompoundObject& rObject,
-    const drawinglayer::geometry::ViewInformation3D& rObjectViewInformation3D, 
+    const drawinglayer::geometry::ViewInformation3D& rObjectViewInformation3D,
     ::std::vector< basegfx::B3DPoint >& o_rResult,
     bool bAnyHit)
 {
@@ -80,7 +80,7 @@ void getAllHit3DObjectWithRelativePoint(
         // rObject is a E3dCompoundObject, so it cannot be a scene (which is a E3dObject)
         const sdr::contact::ViewContactOfE3d& rVCObject = static_cast< sdr::contact::ViewContactOfE3d& >(rObject.GetViewContact());
 	    const drawinglayer::primitive3d::Primitive3DSequence aPrimitives(rVCObject.getViewIndependentPrimitive3DSequence());
-                    
+
         if(aPrimitives.hasElements())
         {
             // make BoundVolume empty and overlapping test for speedup
@@ -107,7 +107,7 @@ void getAllHit3DObjectWithRelativePoint(
 E3dScene* fillViewInformation3DForCompoundObject(drawinglayer::geometry::ViewInformation3D& o_rViewInformation3D, const E3dCompoundObject& rCandidate)
 {
 	// Search for root scene (outmost scene) of the 3d object since e.g. in chart, multiple scenes may
-	// be placed between object and outmost scene. On that search, remember the in-between scene's 
+	// be placed between object and outmost scene. On that search, remember the in-between scene's
 	// transformation for the correct complete ObjectTransformation. For historical reasons, the
 	// root scene's own object transformation is part of the scene's ViewTransformation, o do not
 	// add it. For more details, see ViewContactOfE3dScene::createViewInformation3D.
@@ -145,9 +145,9 @@ E3dScene* fillViewInformation3DForCompoundObject(drawinglayer::geometry::ViewInf
         {
             // build new ViewInformation containing all transforms for the candidate
 	        const drawinglayer::geometry::ViewInformation3D aViewInfo3D(rVCScene.getViewInformation3D());
-            
+
 			o_rViewInformation3D = drawinglayer::geometry::ViewInformation3D(
-                aViewInfo3D.getObjectTransformation() * aInBetweenSceneMatrix, 
+                aViewInfo3D.getObjectTransformation() * aInBetweenSceneMatrix,
                 aViewInfo3D.getOrientation(),
                 aViewInfo3D.getProjection(),
                 aViewInfo3D.getDeviceToView(),
@@ -167,8 +167,8 @@ E3dScene* fillViewInformation3DForCompoundObject(drawinglayer::geometry::ViewInf
 //////////////////////////////////////////////////////////////////////////////
 
 SVX_DLLPUBLIC void getAllHit3DObjectsSortedFrontToBack(
-    const basegfx::B2DPoint& rPoint, 
-    const E3dScene& rScene, 
+    const basegfx::B2DPoint& rPoint,
+    const E3dScene& rScene,
     ::std::vector< const E3dCompoundObject* >& o_rResult)
 {
 	o_rResult.clear();
@@ -244,7 +244,7 @@ SVX_DLLPUBLIC void getAllHit3DObjectsSortedFrontToBack(
 //////////////////////////////////////////////////////////////////////////////
 
 bool checkHitSingle3DObject(
-    const basegfx::B2DPoint& rPoint, 
+    const basegfx::B2DPoint& rPoint,
 	const E3dCompoundObject& rCandidate)
 {
 	const uno::Sequence< beans::PropertyValue > aEmptyParameters;

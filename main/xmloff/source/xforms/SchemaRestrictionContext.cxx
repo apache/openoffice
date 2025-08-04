@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -88,7 +88,7 @@ static SvXMLTokenMapEntry aChildren[] =
 
 
 SchemaRestrictionContext::SchemaRestrictionContext(
-    SvXMLImport& rImport, 
+    SvXMLImport& rImport,
     sal_uInt16 nPrefix,
     const OUString& rLocalName,
     Reference<com::sun::star::xforms::XDataTypeRepository>& rRepository,
@@ -116,9 +116,9 @@ void SchemaRestrictionContext::CreateDataType()
 
     try
     {
-        mxDataType = 
-            Reference<XPropertySet>( 
-                mxRepository->cloneDataType( 
+        mxDataType =
+            Reference<XPropertySet>(
+                mxRepository->cloneDataType(
                     lcl_getBasicTypeName( mxRepository,
                                           GetImport().GetNamespaceMap(),
                                           msBaseName ),
@@ -132,8 +132,8 @@ void SchemaRestrictionContext::CreateDataType()
     DBG_ASSERT( mxDataType.is(), "can't create type" );
 }
 
-void SchemaRestrictionContext::HandleAttribute( 
-    sal_uInt16 nToken, 
+void SchemaRestrictionContext::HandleAttribute(
+    sal_uInt16 nToken,
     const OUString& rValue )
 {
     if( nToken == XML_BASE )
@@ -192,11 +192,11 @@ Any lcl_date( const OUString& rValue )
     if( nPos1 > 0  &&  nPos2 > 0 )
     {
         Date aDate;
-        aDate.Year = static_cast<sal_uInt16>( 
+        aDate.Year = static_cast<sal_uInt16>(
                      rValue.copy( 0, nPos1 ).toInt32() );
-        aDate.Month = static_cast<sal_uInt16>( 
+        aDate.Month = static_cast<sal_uInt16>(
                       rValue.copy( nPos1 + 1, nPos2 - nPos1 - 1 ).toInt32() );
-        aDate.Day   = static_cast<sal_uInt16>( 
+        aDate.Day   = static_cast<sal_uInt16>(
                       rValue.copy( nPos2 + 1 ).toInt32() );
         aAny <<= aDate;
     }
@@ -227,7 +227,7 @@ Any lcl_time( const OUString& rValue )
 }
 
 
-SvXMLImportContext* SchemaRestrictionContext::HandleChild( 
+SvXMLImportContext* SchemaRestrictionContext::HandleChild(
     sal_uInt16 nToken,
     sal_uInt16 nPrefix,
     const OUString& rLocalName,
@@ -337,7 +337,7 @@ SvXMLImportContext* SchemaRestrictionContext::HandleChild(
             case com::sun::star::xsd::DataTypeClass::BOOLEAN:
                 // invalid: These shouldn't have min/max-inclusive
                 break;
- 
+
                 /* data types not yet supported:
                    case com::sun::star::xsd::DataTypeClass::DURATION:
                    case com::sun::star::xsd::DataTypeClass::gYearMonth:

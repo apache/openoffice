@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 package com.sun.star.comp.sdbc;
 
@@ -32,27 +32,27 @@ import com.sun.star.sdbc.XStatement;
 
 public class JavaSQLStatement extends JavaSQLStatementBase
         implements XStatement, XServiceInfo, XBatchExecution {
-    
+
     private static final String[] services = {
             "com.sun.star.sdbc.Statement"
     };
-    
+
     public JavaSQLStatement(JavaSQLConnection connection) {
         super(connection);
     }
-    
+
     // XServiceInfo
-    
+
     @Override
     public String getImplementationName() {
         return "com.sun.star.sdbcx.JStatement";
     }
-    
+
     @Override
     public String[] getSupportedServiceNames() {
         return services.clone();
     }
-    
+
     @Override
     public boolean supportsService(String serviceName) {
         for (String service : services) {
@@ -62,9 +62,9 @@ public class JavaSQLStatement extends JavaSQLStatementBase
         }
         return false;
     }
-    
+
     // XBatchExecution
-    
+
     @Override
     public synchronized void addBatch(String sql) throws SQLException {
         createStatement();
@@ -74,7 +74,7 @@ public class JavaSQLStatement extends JavaSQLStatementBase
             throw Tools.toUnoException(this, sqlException);
         }
     }
-    
+
     @Override
     public void clearBatch() throws SQLException {
         createStatement();
@@ -84,7 +84,7 @@ public class JavaSQLStatement extends JavaSQLStatementBase
             throw Tools.toUnoException(this, sqlException);
         }
     }
-    
+
     @Override
     public synchronized int[] executeBatch() throws SQLException {
         createStatement();
@@ -94,9 +94,9 @@ public class JavaSQLStatement extends JavaSQLStatementBase
             throw Tools.toUnoException(this, sqlException);
         }
     }
-    
+
     // XStatement
-    
+
     @Override
     public synchronized boolean execute(String sql) throws SQLException {
         createStatement();
@@ -107,7 +107,7 @@ public class JavaSQLStatement extends JavaSQLStatementBase
             throw Tools.toUnoExceptionLogged(this, logger, sqlException);
         }
     }
-    
+
     @Override
     public synchronized XResultSet executeQuery(String sql) throws SQLException {
         logger.log(LogLevel.FINE, Resources.STR_LOG_EXECUTE_QUERY, sql);
@@ -124,7 +124,7 @@ public class JavaSQLStatement extends JavaSQLStatementBase
             throw Tools.toUnoExceptionLogged(this, logger, sqlException);
         }
     }
-    
+
     @Override
     public synchronized int executeUpdate(String sql) throws SQLException {
         createStatement();
@@ -137,15 +137,15 @@ public class JavaSQLStatement extends JavaSQLStatementBase
             throw Tools.toUnoExceptionLogged(this, logger, sqlException);
         }
     }
-    
+
     @Override
     public synchronized XConnection getConnection() throws SQLException {
         checkDisposed();
         return connection;
     }
-    
+
     // others
-    
+
     @Override
     protected synchronized void createStatement() throws SQLException {
         checkDisposed();

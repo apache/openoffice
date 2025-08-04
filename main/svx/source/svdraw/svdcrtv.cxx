@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -86,9 +86,9 @@ ImplConnectMarkerOverlay::ImplConnectMarkerOverlay(const SdrCreateView& rView, S
 			maObjects.append(*pNew);
 
 			// gluepoints
-			if(rView.IsAutoVertexConnectors()) 
+			if(rView.IsAutoVertexConnectors())
 			{
-				for(sal_uInt16 i(0); i < 4; i++) 
+				for(sal_uInt16 i(0); i < 4; i++)
 				{
 					SdrGluePoint aGluePoint(rObject.GetVertexGluePoint(i));
 					const Point& rPosition = aGluePoint.GetAbsolutePos(rObject);
@@ -161,7 +161,7 @@ void ImpSdrCreateViewExtraData::CreateAndShowOverlay(const SdrCreateView& rView,
 				const sdr::contact::ViewContact& rVC = pObject->GetViewContact();
 				const drawinglayer::primitive2d::Primitive2DSequence aSequence = rVC.getViewIndependentPrimitive2DSequence();
 				sdr::overlay::OverlayObject* pNew = new sdr::overlay::OverlayPrimitive2DSequenceObject(aSequence);
-			    
+
 				pOverlayManager->add(*pNew);
 			    maObjects.append(*pNew);
 			}
@@ -281,15 +281,15 @@ void SdrCreateView::BrkAction()
 
 void SdrCreateView::TakeActionRect(Rectangle& rRect) const
 {
-	if (pAktCreate!=NULL) 
+	if (pAktCreate!=NULL)
 	{
 		rRect=aDragStat.GetActionRect();
-		if (rRect.IsEmpty()) 
+		if (rRect.IsEmpty())
 		{
 			rRect=Rectangle(aDragStat.GetPrev(),aDragStat.GetNow());
 		}
-	} 
-	else 
+	}
+	else
 	{
 		SdrDragView::TakeActionRect(rRect);
 	}
@@ -299,20 +299,20 @@ sal_Bool SdrCreateView::CheckEdgeMode()
 {
 	sal_uInt32 nInv=nAktInvent;
 	sal_uInt16 nIdn=nAktIdent;
-	if (pAktCreate!=NULL) 
+	if (pAktCreate!=NULL)
 	{
 		nInv=pAktCreate->GetObjInventor();
 		nIdn=pAktCreate->GetObjIdentifier();
 		// wird vom EdgeObj gemanaged
 		if (nAktInvent==SdrInventor && nAktIdent==OBJ_EDGE) return sal_False;
 	}
-	
-	if (!IsCreateMode() || nAktInvent!=SdrInventor || nAktIdent!=OBJ_EDGE) 
+
+	if (!IsCreateMode() || nAktInvent!=SdrInventor || nAktIdent!=OBJ_EDGE)
 	{
 		ImpClearConnectMarker();
 		return sal_False;
-	} 
-	else 
+	}
+	else
 	{
 		// sal_True heisst: MouseMove soll Connect checken
 		return !IsAction();
@@ -323,7 +323,7 @@ void SdrCreateView::SetConnectMarker(const SdrObjConnection& rCon, const SdrPage
 {
 	SdrObject* pTargetObject = rCon.pObj;
 
-	if(pTargetObject) 
+	if(pTargetObject)
 	{
 		// if target object changes, throw away overlay object to make room for changes
 		if(mpCoMaOverlay && pTargetObject != &mpCoMaOverlay->GetTargetObject())
@@ -335,8 +335,8 @@ void SdrCreateView::SetConnectMarker(const SdrObjConnection& rCon, const SdrPage
 		{
 			mpCoMaOverlay = new ImplConnectMarkerOverlay(*this, *pTargetObject);
 		}
-	} 
-	else 
+	}
+	else
 	{
 		ImpClearConnectMarker();
 	}
@@ -349,11 +349,11 @@ void SdrCreateView::HideConnectMarker()
 
 sal_Bool SdrCreateView::MouseMove(const MouseEvent& rMEvt, Window* pWin)
 {
-	if(CheckEdgeMode() && pWin) 
+	if(CheckEdgeMode() && pWin)
 	{
 		SdrPageView* pPV = GetSdrPageView();
-	
-		if(pPV) 
+
+		if(pPV)
 		{
 			// Defaultete Hit-Toleranz bei IsMarkedHit() mal aendern !!!!
 			Point aPos(pWin->PixelToLogic(rMEvt.GetPosPixel()));
@@ -383,29 +383,29 @@ sal_Bool SdrCreateView::IsMeasureTool() const
 
 void SdrCreateView::SetCurrentObj(sal_uInt16 nIdent, sal_uInt32 nInvent)
 {
-	if (nAktInvent!=nInvent || nAktIdent!=nIdent) 
+	if (nAktInvent!=nInvent || nAktIdent!=nIdent)
 	{
 		nAktInvent=nInvent;
 		nAktIdent=nIdent;
 		SdrObject* pObj = SdrObjFactory::MakeNewObject(nInvent,nIdent,NULL,NULL);
-		
-		if(pObj) 
+
+		if(pObj)
 		{
 			// Auf pers. Wunsch von Marco:
 			// Mauszeiger bei Textwerkzeug immer I-Beam. Fadenkreuz
 			// mit kleinem I-Beam erst bai MouseButtonDown
-			if(IsTextTool()) 
+			if(IsTextTool())
 			{
 				// #81944# AW: Here the correct pointer needs to be used
 				// if the default is set to vertical writing
 				aAktCreatePointer = POINTER_TEXT;
 			}
-			else 
+			else
 				aAktCreatePointer = pObj->GetCreatePointer();
 
 			SdrObject::Free( pObj );
-		} 
-		else 
+		}
+		else
 		{
 			aAktCreatePointer = Pointer(POINTER_CROSS);
 		}
@@ -421,34 +421,34 @@ sal_Bool SdrCreateView::ImpBegCreateObj(sal_uInt32 nInvent, sal_uInt16 nIdent, c
 	sal_Bool bRet=sal_False;
 	UnmarkAllObj();
 	BrkAction();
-	
+
 	ImpClearConnectMarker();
 
-	if (pPV!=NULL) 
+	if (pPV!=NULL)
 	{
 		pCreatePV=pPV;
 	}
-	else 
+	else
 	{
 		pCreatePV = GetSdrPageView();
 	}
-	if (pCreatePV!=NULL) 
+	if (pCreatePV!=NULL)
 	{ // ansonsten keine Seite angemeldet!
 		String aLay(aAktLayer);
-		
-		if(nInvent == SdrInventor && nIdent == OBJ_MEASURE && aMeasureLayer.Len()) 
+
+		if(nInvent == SdrInventor && nIdent == OBJ_MEASURE && aMeasureLayer.Len())
 		{
 			aLay = aMeasureLayer;
 		}
 
 		SdrLayerID nLayer=pCreatePV->GetPage()->GetLayerAdmin().GetLayerID(aLay,sal_True);
 		if (nLayer==SDRLAYER_NOTFOUND) nLayer=0;
-		if (!pCreatePV->GetLockedLayers().IsSet(nLayer) && pCreatePV->GetVisibleLayers().IsSet(nLayer)) 
+		if (!pCreatePV->GetLockedLayers().IsSet(nLayer) && pCreatePV->GetVisibleLayers().IsSet(nLayer))
 		{
 			if(pPreparedFactoryObject)
 			{
 				pAktCreate = pPreparedFactoryObject;
-				
+
 				if(pCreatePV->GetPage())
 				{
 					pAktCreate->SetPage(pCreatePV->GetPage());
@@ -469,7 +469,7 @@ sal_Bool SdrCreateView::ImpBegCreateObj(sal_uInt32 nInvent, sal_uInt16 nIdent, c
 											nAktIdent!=sal_uInt16(OBJ_FREEFILL) )) { // Kein Fang fuer Edge und Freihand!
 				aPnt=GetSnapPos(aPnt,pCreatePV);
 			}
-			if (pAktCreate!=NULL) 
+			if (pAktCreate!=NULL)
 			{
 				sal_Bool bStartEdit=sal_False; // nach Ende von Create automatisch TextEdit starten
 				if (pDefaultStyleSheet!=NULL) pAktCreate->NbcSetStyleSheet(pDefaultStyleSheet, sal_False);
@@ -483,18 +483,18 @@ sal_Bool SdrCreateView::ImpBegCreateObj(sal_uInt32 nInvent, sal_uInt16 nIdent, c
 					pAktCreate->SetMergedItemSet(aDefaultAttr);
 				}
 
-				if (HAS_BASE(SdrCaptionObj,pAktCreate)) 
+				if (HAS_BASE(SdrCaptionObj,pAktCreate))
 				{
 					SfxItemSet aSet(pMod->GetItemPool());
 					aSet.Put(XFillColorItem(String(),Color(COL_WHITE))); // Falls einer auf Solid umschaltet
 					aSet.Put(XFillStyleItem(XFILL_NONE));
-					
+
 					pAktCreate->SetMergedItemSet(aSet);
 
 					bStartEdit=sal_True;
 				}
 				if (nInvent==SdrInventor && (nIdent==OBJ_TEXT || nIdent==OBJ_TEXTEXT ||
-					nIdent==OBJ_TITLETEXT || nIdent==OBJ_OUTLINETEXT)) 
+					nIdent==OBJ_TITLETEXT || nIdent==OBJ_OUTLINETEXT))
 				{
 					// Fuer alle Textrahmen default keinen Hintergrund und keine Umrandung
 					SfxItemSet aSet(pMod->GetItemPool());
@@ -502,7 +502,7 @@ sal_Bool SdrCreateView::ImpBegCreateObj(sal_uInt32 nInvent, sal_uInt16 nIdent, c
 					aSet.Put(XFillStyleItem(XFILL_NONE));
 					aSet.Put(XLineColorItem(String(),Color(COL_BLACK))); // Falls einer auf Solid umschaltet
 					aSet.Put(XLineStyleItem(XLINE_NONE));
-					
+
 					pAktCreate->SetMergedItemSet(aSet);
 
 					bStartEdit=sal_True;
@@ -540,12 +540,12 @@ sal_Bool SdrCreateView::ImpBegCreateObj(sal_uInt32 nInvent, sal_uInt16 nIdent, c
 				aDragStat.SetPageView(pCreatePV);
 				aDragStat.SetMinMove(ImpGetMinMovLogic(nMinMov,pOut));
 				pDragWin=pOut;
-				if (pAktCreate->BegCreate(aDragStat)) 
+				if (pAktCreate->BegCreate(aDragStat))
 				{
 					ShowCreateObj(/*pOut,sal_True*/);
 					bRet=sal_True;
-				} 
-				else 
+				}
+				else
 				{
 					SdrObject::Free( pAktCreate );
 					pAktCreate=NULL;
@@ -587,11 +587,11 @@ void SdrCreateView::MovCreateObj(const Point& rPnt)
 {
 	if (pAktCreate!=NULL) {
 		Point aPnt(rPnt);
-		if (!aDragStat.IsNoSnap()) 
+		if (!aDragStat.IsNoSnap())
 		{
 			aPnt=GetSnapPos(aPnt,pCreatePV);
 		}
-		if (IsOrtho()) 
+		if (IsOrtho())
 		{
 			if (aDragStat.IsOrtho8Possible()) OrthoDistance8(aDragStat.GetPrev(),aPnt,IsBigOrtho());
 			else if (aDragStat.IsOrtho4Possible()) OrthoDistance4(aDragStat.GetPrev(),aPnt,IsBigOrtho());
@@ -602,15 +602,15 @@ void SdrCreateView::MovCreateObj(const Point& rPnt)
 		sal_Bool bDidLimit(ImpLimitToWorkArea(aPnt));
 		if(bDidLimit && IsOrtho())
 		{
-			if(aDragStat.IsOrtho8Possible()) 
+			if(aDragStat.IsOrtho8Possible())
 				OrthoDistance8(aDragStat.GetPrev(), aPnt, sal_False);
-			else if(aDragStat.IsOrtho4Possible()) 
+			else if(aDragStat.IsOrtho4Possible())
 				OrthoDistance4(aDragStat.GetPrev(), aPnt, sal_False);
 		}
 
 		if (aPnt==aDragStat.GetNow()) return;
 		bool bMerk(aDragStat.IsMinMoved());
-		if (aDragStat.CheckMinMoved(aPnt)) 
+		if (aDragStat.CheckMinMoved(aPnt))
 		{
 			Rectangle aBound;
 			if (!bMerk) aDragStat.NextPoint();
@@ -632,12 +632,12 @@ sal_Bool SdrCreateView::EndCreateObj(SdrCreateCmd eCmd)
 	sal_Bool bRet=sal_False;
 	SdrObject* pObjMerk=pAktCreate;
 	SdrPageView* pPVMerk=pCreatePV;
-	
-	if (pAktCreate!=NULL) 
+
+	if (pAktCreate!=NULL)
 	{
 		sal_uIntPtr nAnz=aDragStat.GetPointAnz();
-		
-		if (nAnz<=1 && eCmd==SDRCREATE_FORCEEND) 
+
+		if (nAnz<=1 && eCmd==SDRCREATE_FORCEEND)
 		{
 			BrkCreateObj(); // Objekte mit nur einem Punkt gibt's nicht (zumindest noch nicht)
 			return sal_False; // sal_False=Event nicht ausgewertet
@@ -648,19 +648,19 @@ sal_Bool SdrCreateView::EndCreateObj(SdrCreateCmd eCmd)
 		Point aP0=aDragStat.GetPoint(0);
 		while (bPntsEq && i<nAnz) { bPntsEq=aP0==aDragStat.GetPoint(i); i++; }
 
-		if (pAktCreate->EndCreate(aDragStat,eCmd)) 
+		if (pAktCreate->EndCreate(aDragStat,eCmd))
 		{
 			HideCreateObj();
 
-			if (!bPntsEq) 
-			{ 
+			if (!bPntsEq)
+			{
 				// sonst Brk, weil alle Punkte gleich sind.
 				SdrObject* pObj=pAktCreate;
 				pAktCreate=NULL;
-				
+
 				const SdrLayerAdmin& rAd = pCreatePV->GetPage()->GetLayerAdmin();
 				SdrLayerID nLayer(0);
-				
+
 				// #i72535#
 				if(pObj->ISA(FmFormObj))
 				{
@@ -672,7 +672,7 @@ sal_Bool SdrCreateView::EndCreateObj(SdrCreateCmd eCmd)
 					nLayer = rAd.GetLayerID(aAktLayer, sal_True);
 				}
 
-				if(SDRLAYER_NOTFOUND == nLayer) 
+				if(SDRLAYER_NOTFOUND == nLayer)
 				{
 					nLayer=0;
 				}
@@ -681,11 +681,11 @@ sal_Bool SdrCreateView::EndCreateObj(SdrCreateCmd eCmd)
 
 				// #83403# recognize creation of a new 3D object inside a 3D scene
 				sal_Bool bSceneIntoScene(sal_False);
-				
-				if(pObjMerk 
-					&& pObjMerk->ISA(E3dScene) 
-					&& pCreatePV 
-					&& pCreatePV->GetAktGroup() 
+
+				if(pObjMerk
+					&& pObjMerk->ISA(E3dScene)
+					&& pCreatePV
+					&& pCreatePV->GetAktGroup()
 					&& pCreatePV->GetAktGroup()->ISA(E3dScene))
 				{
 					sal_Bool bDidInsert = ((E3dView*)this)->ImpCloneAll3DObjectsToDestScene(
@@ -709,20 +709,20 @@ sal_Bool SdrCreateView::EndCreateObj(SdrCreateCmd eCmd)
 
 				pCreatePV=NULL;
 				bRet=sal_True; // sal_True=Event ausgewertet
-			} 
-			else 
+			}
+			else
 			{
 				BrkCreateObj();
 			}
-		} 
-		else 
+		}
+		else
 		{ // Mehr Punkte
 			if (eCmd==SDRCREATE_FORCEEND || // nix da, Ende erzwungen
 				nAnz==0 ||                             // keine Punkte da (kann eigentlich nicht vorkommen)
 				(nAnz<=1 && !aDragStat.IsMinMoved())) { // MinMove nicht erfuellt
 				BrkCreateObj();
-			} 
-			else 
+			}
+			else
 			{
 				// replace for DrawCreateObjDiff
 				HideCreateObj();
@@ -731,10 +731,10 @@ sal_Bool SdrCreateView::EndCreateObj(SdrCreateCmd eCmd)
 				bRet=sal_True;
 			}
 		}
-		if (bRet && pObjMerk!=NULL && IsTextEditAfterCreate()) 
+		if (bRet && pObjMerk!=NULL && IsTextEditAfterCreate())
 		{
 			SdrTextObj* pText=PTR_CAST(SdrTextObj,pObjMerk);
-			if (pText!=NULL && pText->IsTextFrame()) 
+			if (pText!=NULL && pText->IsTextFrame())
 			{
 				SdrBeginTextEdit(pText, pPVMerk, (Window*)0L, sal_True, (SdrOutliner*)0L, (OutlinerView*)0L);
 			}
@@ -745,21 +745,21 @@ sal_Bool SdrCreateView::EndCreateObj(SdrCreateCmd eCmd)
 
 void SdrCreateView::BckCreateObj()
 {
-	if (pAktCreate!=NULL) 
+	if (pAktCreate!=NULL)
 	{
-		if (aDragStat.GetPointAnz()<=2 ) 
+		if (aDragStat.GetPointAnz()<=2 )
 		{
 			BrkCreateObj();
-		} 
-		else 
+		}
+		else
 		{
 			HideCreateObj();
 			aDragStat.PrevPoint();
-			if (pAktCreate->BckCreate(aDragStat)) 
+			if (pAktCreate->BckCreate(aDragStat))
 			{
 				ShowCreateObj();
-			} 
-			else 
+			}
+			else
 			{
 				BrkCreateObj();
 			}
@@ -769,7 +769,7 @@ void SdrCreateView::BckCreateObj()
 
 void SdrCreateView::BrkCreateObj()
 {
-	if (pAktCreate!=NULL) 
+	if (pAktCreate!=NULL)
 	{
 		HideCreateObj();
 		pAktCreate->BrkCreate(aDragStat);
@@ -781,7 +781,7 @@ void SdrCreateView::BrkCreateObj()
 
 void SdrCreateView::ShowCreateObj(/*OutputDevice* pOut, sal_Bool bFull*/)
 {
-	if(IsCreateObj() && !aDragStat.IsShown()) 
+	if(IsCreateObj() && !aDragStat.IsShown())
 	{
 		if(pAktCreate)
 		{
@@ -804,7 +804,7 @@ void SdrCreateView::ShowCreateObj(/*OutputDevice* pOut, sal_Bool bFull*/)
 				const SfxItemSet& rSet = pAktCreate->GetMergedItemSet();
 				const XFillStyle eFill(((XFillStyleItem&)(rSet.Get(XATTR_FILLSTYLE))).GetValue());
 				const XLineStyle eLine(((XLineStyleItem&)(rSet.Get(XATTR_LINESTYLE))).GetValue());
-				
+
 				if(XLINE_NONE == eLine && XFILL_NONE == eFill)
 				{
 					bUseSolidDragging = sal_False;
@@ -894,7 +894,7 @@ void SdrCreateView::ShowCreateObj(/*OutputDevice* pOut, sal_Bool bFull*/)
 
 void SdrCreateView::HideCreateObj()
 {
-	if(IsCreateObj() && aDragStat.IsShown()) 
+	if(IsCreateObj() && aDragStat.IsShown())
 	{
 		// for migration from XOR, replace DrawDragObj here to create
 		// overlay objects instead.
@@ -923,13 +923,13 @@ sal_Bool SdrCreateView::GetAttributes(SfxItemSet& rTargetSet, sal_Bool bOnlyHard
 
 sal_Bool SdrCreateView::SetAttributes(const SfxItemSet& rSet, sal_Bool bReplaceAll)
 {
-	if(pAktCreate) 
+	if(pAktCreate)
 	{
 		pAktCreate->SetMergedItemSetAndBroadcast(rSet, bReplaceAll);
 
 		return sal_True;
-	} 
-	else 
+	}
+	else
 	{
 		return SdrDragView::SetAttributes(rSet,bReplaceAll);
 	}
@@ -937,12 +937,12 @@ sal_Bool SdrCreateView::SetAttributes(const SfxItemSet& rSet, sal_Bool bReplaceA
 
 SfxStyleSheet* SdrCreateView::GetStyleSheet() const // SfxStyleSheet* SdrCreateView::GetStyleSheet(sal_Bool& rOk) const
 {
-	if (pAktCreate!=NULL) 
+	if (pAktCreate!=NULL)
 	{
 		//rOk=sal_True;
 		return pAktCreate->GetStyleSheet();
-	} 
-	else 
+	}
+	else
 	{
 		return SdrDragView::GetStyleSheet(); // SdrDragView::GetStyleSheet(rOk);
 	}
@@ -950,12 +950,12 @@ SfxStyleSheet* SdrCreateView::GetStyleSheet() const // SfxStyleSheet* SdrCreateV
 
 sal_Bool SdrCreateView::SetStyleSheet(SfxStyleSheet* pStyleSheet, sal_Bool bDontRemoveHardAttr)
 {
-	if (pAktCreate!=NULL) 
+	if (pAktCreate!=NULL)
 	{
 		pAktCreate->SetStyleSheet(pStyleSheet,bDontRemoveHardAttr);
 		return sal_True;
-	} 
-	else 
+	}
+	else
 	{
 		return SdrDragView::SetStyleSheet(pStyleSheet,bDontRemoveHardAttr);
 	}

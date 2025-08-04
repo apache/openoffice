@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -305,7 +305,7 @@ EmbeddedObjectRef::EmbeddedObjectRef( const EmbeddedObjectRef& rObj )
 EmbeddedObjectRef::~EmbeddedObjectRef()
 {
     delete mpImp->pGraphic;
-	if ( mpImp->pHCGraphic ) 
+	if ( mpImp->pHCGraphic )
         DELETEZ( mpImp->pHCGraphic );
     Clear();
     delete mpImp;
@@ -459,7 +459,7 @@ void EmbeddedObjectRef::GetReplacement( sal_Bool bUpdate )
         DELETEZ( mpImp->pGraphic );
         mpImp->aMediaType = ::rtl::OUString();
         mpImp->pGraphic = new Graphic;
-		if ( mpImp->pHCGraphic ) 
+		if ( mpImp->pHCGraphic )
             DELETEZ( mpImp->pHCGraphic );
         mpImp->mnGraphicVersion++;
     }
@@ -613,7 +613,7 @@ Graphic* EmbeddedObjectRef::GetHCGraphic() const
 				if ( !pStream->GetError() )
 				{
         			GraphicFilter* pGF = GraphicFilter::GetGraphicFilter();
-					Graphic* pGraphic = new Graphic(); 
+					Graphic* pGraphic = new Graphic();
         			if ( pGF->ImportGraphic( *pGraphic, String(), *pStream, GRFILTER_FORMAT_DONTKNOW ) == 0 )
 						mpImp->pHCGraphic = pGraphic;
 					else
@@ -636,7 +636,7 @@ void EmbeddedObjectRef::SetGraphicStream( const uno::Reference< io::XInputStream
         delete mpImp->pGraphic;
     mpImp->pGraphic = new Graphic();
     mpImp->aMediaType = rMediaType;
-	if ( mpImp->pHCGraphic ) 
+	if ( mpImp->pHCGraphic )
         DELETEZ( mpImp->pHCGraphic );
     mpImp->mnGraphicVersion++;
 
@@ -647,7 +647,7 @@ void EmbeddedObjectRef::SetGraphicStream( const uno::Reference< io::XInputStream
         GraphicFilter* pGF = GraphicFilter::GetGraphicFilter();
         pGF->ImportGraphic( *mpImp->pGraphic, String(), *pGraphicStream, GRFILTER_FORMAT_DONTKNOW );
         mpImp->mnGraphicVersion++;
-    
+
 		if ( mpImp->pContainer )
 		{
 			pGraphicStream->Seek( 0 );
@@ -669,7 +669,7 @@ void EmbeddedObjectRef::SetGraphic( const Graphic& rGraphic, const ::rtl::OUStri
         delete mpImp->pGraphic;
     mpImp->pGraphic = new Graphic( rGraphic );
     mpImp->aMediaType = rMediaType;
-	if ( mpImp->pHCGraphic ) 
+	if ( mpImp->pHCGraphic )
         DELETEZ( mpImp->pHCGraphic );
     mpImp->mnGraphicVersion++;
 
@@ -917,7 +917,7 @@ void EmbeddedObjectRef::UpdateReplacementOnDemand()
 {
     DELETEZ( mpImp->pGraphic );
     mpImp->bNeedUpdate = sal_True;
-	if ( mpImp->pHCGraphic ) 
+	if ( mpImp->pHCGraphic )
         DELETEZ( mpImp->pHCGraphic );
     mpImp->mnGraphicVersion++;
 
@@ -978,10 +978,10 @@ rtl::OUString EmbeddedObjectRef::GetChartType()
 						uno::Reference< chart2::XChartTypeContainer > xCTCnt( aCooSysSeq[nCooSysIdx], uno::UNO_QUERY_THROW );
 						uno::Sequence< uno::Reference< chart2::XChartType > > aChartTypes( xCTCnt->getChartTypes());
 						int nDimesionCount = aCooSysSeq[nCooSysIdx]->getDimension();
-						if( nDimesionCount == 3 )	
-							Style += rtl::OUString::createFromAscii("3D ");	
+						if( nDimesionCount == 3 )
+							Style += rtl::OUString::createFromAscii("3D ");
 						else
-							Style += rtl::OUString::createFromAscii("2D ");	
+							Style += rtl::OUString::createFromAscii("2D ");
 						for( sal_Int32 nCTIdx=0; nCTIdx<aChartTypes.getLength(); ++nCTIdx )
 						{
 							rtl::OUString strChartType = aChartTypes[nCTIdx]->getChartType();
@@ -1044,7 +1044,7 @@ rtl::OUString EmbeddedObjectRef::GetChartType()
 			}
 		}
 	}
-	return Style;	
+	return Style;
 }
 
 // #i104867#

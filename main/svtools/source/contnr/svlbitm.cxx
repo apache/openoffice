@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -198,7 +198,7 @@ sal_Bool SvLBoxButtonData::HasDefaultImages( void ) const
 }
 
 sal_Bool SvLBoxButtonData::IsRadio() {
-	return pImpl->bShowRadioButton; 
+	return pImpl->bShowRadioButton;
 }
 
 // ***************************************************************
@@ -243,7 +243,7 @@ void SvLBoxString::Paint( const Point& rPos, SvLBox& rDev, sal_uInt16 /* nFlags 
 	}
 	else
 		rDev.DrawText( rPos, aStr);
-	
+
 }
 
 SvLBoxItem* SvLBoxString::Create() const
@@ -409,7 +409,7 @@ void SvLBoxButton::Paint( const Point& rPos, SvLBox& rDev, sal_uInt16 /* nFlags 
         ? SV_BMP_STATICIMAGE : pData->GetIndex( nItemFlags );
 	sal_uInt16 nStyle = eKind != SvLBoxButtonKind_disabledCheckbox &&
         rDev.IsEnabled() ? 0 : IMAGE_DRAW_DISABLE;
-        
+
 ///
 //Native drawing
 ///
@@ -422,7 +422,7 @@ void SvLBoxButton::Paint( const Point& rPos, SvLBox& rDev, sal_uInt16 /* nFlags 
         ImplControlValue    aControlValue;
         Rectangle           aCtrlRegion( rPos, aSize );
         ControlState        nState = 0;
-        
+
         //states CTRL_STATE_DEFAULT, CTRL_STATE_PRESSED and CTRL_STATE_ROLLOVER are not implemented
         if ( IsStateHilighted() ) 					nState |= CTRL_STATE_FOCUSED;
         if ( nStyle != IMAGE_DRAW_DISABLE )			nState |= CTRL_STATE_ENABLED;
@@ -438,7 +438,7 @@ void SvLBoxButton::Paint( const Point& rPos, SvLBox& rDev, sal_uInt16 /* nFlags 
                                 aCtrlRegion, nState, aControlValue, rtl::OUString() );
     }
 
-    if( !bNativeOK) 
+    if( !bNativeOK)
         rDev.DrawImage( rPos, pData->aBmps[nIndex + nBaseOffs] ,nStyle);
 }
 
@@ -461,7 +461,7 @@ void SvLBoxButton::ImplAdjustBoxSize( Size& io_rSize, ControlType i_eType, Windo
         ImplControlValue    aControlValue;
         Rectangle           aCtrlRegion( Point( 0, 0 ), io_rSize );
         ControlState        nState = CTRL_STATE_ENABLED;
-        
+
         aControlValue.setTristateVal( BUTTONVALUE_ON );
 
         Rectangle aNativeBounds, aNativeContent;

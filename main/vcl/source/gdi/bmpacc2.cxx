@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -75,7 +75,7 @@ IMPL_FORMAT_SETPIXEL_NOMASK( _4BIT_MSN_PAL )
 {
 	sal_uInt8& rByte = pScanline[ nX >> 1 ];
 
-	( nX & 1 ) ? ( rByte &= 0xf0, rByte |= ( rBitmapColor.GetIndex() & 0x0f ) ) : 
+	( nX & 1 ) ? ( rByte &= 0xf0, rByte |= ( rBitmapColor.GetIndex() & 0x0f ) ) :
 				 ( rByte &= 0x0f, rByte |= ( rBitmapColor.GetIndex() << 4 ) );
 }
 
@@ -92,7 +92,7 @@ IMPL_FORMAT_SETPIXEL_NOMASK( _4BIT_LSN_PAL )
 {
 	sal_uInt8& rByte = pScanline[ nX >> 1 ];
 
-	( nX & 1 ) ? ( rByte &= 0x0f, rByte |= ( rBitmapColor.GetIndex() << 4 ) ) : 
+	( nX & 1 ) ? ( rByte &= 0x0f, rByte |= ( rBitmapColor.GetIndex() << 4 ) ) :
 				 ( rByte &= 0xf0, rByte |= ( rBitmapColor.GetIndex() & 0x0f ) );
 }
 
@@ -106,7 +106,7 @@ IMPL_FORMAT_GETPIXEL_NOMASK( _8BIT_PAL )
 // ------------------------------------------------------------------
 
 IMPL_FORMAT_SETPIXEL_NOMASK( _8BIT_PAL )
-{	
+{
 	pScanline[ nX ] = rBitmapColor.GetIndex();
 }
 
@@ -280,7 +280,7 @@ IMPL_FORMAT_GETPIXEL_NOMASK( _32BIT_TC_BGRA )
 // ------------------------------------------------------------------
 
 IMPL_FORMAT_SETPIXEL_NOMASK( _32BIT_TC_BGRA )
-{		   
+{
 	*( pScanline = pScanline + ( nX << 2 ) )++ = rBitmapColor.GetBlue();
 	*pScanline++ = rBitmapColor.GetGreen();
 	*pScanline++ = rBitmapColor.GetRed();

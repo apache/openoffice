@@ -31,9 +31,9 @@ struct IncludesCollection {
 //    bool add_dir(string dirPath);
     PathFilePair split_path(const string& filePath);
     void add_to_collection(const string& dirPath);
-    
+
     public:
-        bool exists(string filePath); 
+        bool exists(string filePath);
 };
 
 #else
@@ -55,4 +55,4 @@ int call_IncludesCollection_exists(struct IncludesCollection* m, const char* fil
 }
 #endif
 
-#endif // COLLECTDIRCONTENT_H 
+#endif // COLLECTDIRCONTENT_H

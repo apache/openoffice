@@ -39,9 +39,9 @@ public class SimpleTypeManager
         ParseData(aData);
     }
 
-    
-    
-    
+
+
+
     private void ParseData (final Vector<String[]> aData)
     {
         for (final String[] aLine : aData)
@@ -67,7 +67,7 @@ public class SimpleTypeManager
                 default:
                     throw new RuntimeException("unexpected parser type: "+aLine[4]);
             }
-            
+
             Vector<ISimpleTypeParser> aVariants = maSimpleTypeToParsersMap.get(nSimpleTypeId);
             if (aVariants == null)
             {
@@ -77,7 +77,7 @@ public class SimpleTypeManager
             if (bIsList)
                 aVariants.add(new ListParser(aVariantParser));
             else
-                aVariants.add(aVariantParser);            
+                aVariants.add(aVariantParser);
         }
     }
 
@@ -91,7 +91,7 @@ public class SimpleTypeManager
         final Vector<ISimpleTypeParser> aTypeParsers = maSimpleTypeToParsersMap.get(aAttributeDescriptor.GetTypeId());
         if (aTypeParsers == null)
             throw new RuntimeException("type "+aAttributeDescriptor.GetTypeId()+" is not supported");
-        
+
         for (final ISimpleTypeParser aParser : aTypeParsers)
         {
             try
@@ -109,10 +109,10 @@ public class SimpleTypeManager
         }
         return null;
     }
-    
-    
-    
-    
+
+
+
+
     private final NameMap maAttributeValueMap;
     private Map<Integer,Vector<ISimpleTypeParser>> maSimpleTypeToParsersMap;
 }

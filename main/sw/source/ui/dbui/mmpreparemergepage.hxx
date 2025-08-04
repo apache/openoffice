@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -47,22 +47,22 @@ class SwMailMergePrepareMergePage : public svt::OWizardPage
     PushButton      m_aNextPB;
     PushButton      m_aLastPB;
     CheckBox        m_ExcludeCB;
-                    
+
     FixedLine       m_aNoteHeaderFL;
     FixedInfo       m_aEditFI;
     PushButton      m_aEditPB;
-                    
+
 
     SwMailMergeWizard*  m_pWizard;
-    
+
     DECL_LINK(EditDocumentHdl_Impl, PushButton*);
     DECL_LINK(ExcludeHdl_Impl, CheckBox*);
     DECL_LINK(MoveHdl_Impl, void*);
-    
+
     virtual void        ActivatePage();
     virtual sal_Bool    commitPage( ::svt::WizardTypes::CommitPageReason _eReason );
 
-public:     
+public:
         SwMailMergePrepareMergePage( SwMailMergeWizard* _pParent);
         ~SwMailMergePrepareMergePage();
 

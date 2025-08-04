@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -323,7 +323,7 @@ namespace dbtools
 
 			::rtl::OUString sError;
 			OSQLParseNode* pParseNode = implPredicateTree( sError, sValue, _rxField );
-			if ( _pErrorMessage ) 
+			if ( _pErrorMessage )
                 *_pErrorMessage = sError;
 
 			sReturn = implParseNode(pParseNode,_bForStatementUse);
@@ -377,9 +377,9 @@ namespace dbtools
         Reference<XPropertySet> xColumn = pColumn;
         pColumn->setFunction(sal_True);
         pColumn->setRealName(sField);
-        
+
 		OSQLParseNode* pParseNode = implPredicateTree( sError, _rPredicateValue, xColumn );
-		if ( _pErrorMessage ) 
+		if ( _pErrorMessage )
             *_pErrorMessage = sError;
         return pParseNode ? implParseNode(pParseNode,_bForStatementUse) : sReturn;
     }
@@ -398,7 +398,7 @@ namespace dbtools
                     OSQLParseNode* pFuncSpecParent = pOdbcSpec->getParent();
 					OSL_ENSURE( pFuncSpecParent, "OPredicateInputController::getPredicateValue: an ODBC func spec node without parent?" );
 					if ( pFuncSpecParent )
-						pFuncSpecParent->parseNodeToStr(sReturn, m_xConnection, &m_aParser.getContext(), sal_False, sal_True);						
+						pFuncSpecParent->parseNodeToStr(sReturn, m_xConnection, &m_aParser.getContext(), sal_False, sal_True);
 				}
 				else
 				{
@@ -406,7 +406,7 @@ namespace dbtools
 					if ( SQL_NODE_STRING == pValueNode->getNodeType() )
 						sReturn = pValueNode->getTokenValue();
 					else
-						pValueNode->parseNodeToStr(sReturn, m_xConnection, &m_aParser.getContext(), sal_False, sal_True);						
+						pValueNode->parseNodeToStr(sReturn, m_xConnection, &m_aParser.getContext(), sal_False, sal_True);
 					// sReturn = pOdbcSpec->getChild(1)->getTokenValue();
 				}
 			}

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -119,7 +119,7 @@ DomainMapper::DomainMapper( const uno::Reference< uno::XComponentContext >& xCon
                             uno::Reference< io::XInputStream > xInputStream,
                             uno::Reference< lang::XComponent > xModel,
                             SourceDocumentType eDocumentType) :
-    LoggedProperties(dmapper_logger, "DomainMapper"), 
+    LoggedProperties(dmapper_logger, "DomainMapper"),
     LoggedTable(dmapper_logger, "DomainMapper"),
     LoggedStream(dmapper_logger, "DomainMapper"),
     m_pImpl( new DomainMapper_Impl( *this, xContext, xModel, eDocumentType )),
@@ -191,9 +191,9 @@ void DomainMapper::lcl_attribute(Id nName, Value & val)
     static ::rtl::OUString sLocalBookmarkName;
     sal_Int32 nIntValue = val.getInt();
     rtl::OUString sStringValue = val.getString();
-    
+
     SectionPropertyMap * pSectionContext = m_pImpl->GetSectionContext();
-    
+
     if( nName >= NS_rtf::LN_WIDENT && nName <= NS_rtf::LN_LCBSTTBFUSSR )
         m_pImpl->GetFIB().SetData( nName, nIntValue );
     else //if( !m_pImpl->getTableManager().attribute( nName, val) )
@@ -2150,7 +2150,7 @@ void DomainMapper::lcl_attribute(Id nName, Value & val)
                     pSectionContext->SetGridLinePitch( ConversionHelper::convertTwipToMM100( nIntValue ) );
                 }
             }
-        break;  
+        break;
             case NS_ooxml::LN_CT_DocGrid_charSpace:
                 /* WRITERFILTERSTATUS: done: 100, planned: 2, spent: 0 */
             {
@@ -2158,8 +2158,8 @@ void DomainMapper::lcl_attribute(Id nName, Value & val)
                 if(pSectionContext)
                 {
                     pSectionContext->SetDxtCharSpace( nIntValue );
-                }                
-            }    
+                }
+            }
             break;
             case NS_ooxml::LN_CT_DocGrid_type:
                 /* WRITERFILTERSTATUS: done: 100, planned: 2, spent: 0 */
@@ -3677,15 +3677,15 @@ void DomainMapper::sprmWithProps( Sprm& rSprm, PropertyMapPtr rContext, SprmType
             break;
             default:;
         }
-        
+
         PropertyMap * pTargetContext = rContext.get();
-        
-        if (pSectionContext != NULL && 
+
+        if (pSectionContext != NULL &&
             nSprmId == NS_ooxml::LN_EG_SectPrContents_textDirection)
         {
             pTargetContext = pSectionContext;
         }
-        
+
         pTargetContext->Insert(PROP_WRITING_MODE, false, uno::makeAny( nDirection ) );
     }
     break;  // sprmSTextFlow
@@ -4038,11 +4038,11 @@ void DomainMapper::sprmWithProps( Sprm& rSprm, PropertyMapPtr rContext, SprmType
         //apply numbering to paragraph if it was set at the style
         OSL_ENSURE( pEntry.get(), "no style sheet found" );
         const StyleSheetPropertyMap* pStyleSheetProperties = dynamic_cast<const StyleSheetPropertyMap*>(pEntry ? pEntry->pProperties.get() : 0);
-        
+
         if( pStyleSheetProperties && pStyleSheetProperties->GetListId() >= 0 )
-            rContext->Insert( PROP_NUMBERING_STYLE_NAME, true, uno::makeAny( 
+            rContext->Insert( PROP_NUMBERING_STYLE_NAME, true, uno::makeAny(
                         ListDef::GetStyleName( pStyleSheetProperties->GetListId( ) ) ), false);
-        
+
         if( pStyleSheetProperties && pStyleSheetProperties->GetListLevel() >= 0 )
             rContext->Insert( PROP_NUMBERING_LEVEL, true, uno::makeAny(pStyleSheetProperties->GetListLevel()), false);
     }
@@ -4130,7 +4130,7 @@ void DomainMapper::sprmWithProps( Sprm& rSprm, PropertyMapPtr rContext, SprmType
                 m_pImpl->ResetGraphicImport();
                 // todo: It's a shape, now start shape import
             }
-        } 
+        }
     }
     break;
 
@@ -4241,7 +4241,7 @@ void DomainMapper::sprmWithProps( Sprm& rSprm, PropertyMapPtr rContext, SprmType
                 {
                     m_pImpl->appendOLE( sStreamName, pOLEHandler );
                 }
-            } 
+            }
         }
     }
     break;
@@ -4362,10 +4362,10 @@ void DomainMapper::markLastParagraphInSection( )
 
 void DomainMapper::lcl_startShape( uno::Reference< drawing::XShape > xShape )
 {
-    m_pImpl->PushShapeContext( xShape );        
+    m_pImpl->PushShapeContext( xShape );
 }
 
-void DomainMapper::lcl_endShape( ) 
+void DomainMapper::lcl_endShape( )
 {
     m_pImpl->PopShapeContext( );
 }
@@ -4497,7 +4497,7 @@ void DomainMapper::lcl_text(const sal_uInt8 * data_, size_t len)
 
             if( !bool(pContext))
                 pContext.reset(new PropertyMap());
-            
+
             m_pImpl->appendTextPortion( sText, pContext );
         }
     }
@@ -4569,7 +4569,7 @@ void DomainMapper::lcl_utext(const sal_uInt8 * data_, size_t len)
             {
                 if( !bool(pContext))
                     pContext.reset(new PropertyMap());
-                
+
                 m_pImpl->appendTextPortion( sText, pContext );
             }
 

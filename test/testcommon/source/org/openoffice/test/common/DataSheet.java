@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 package org.openoffice.test.common;
 
@@ -38,14 +38,14 @@ public class DataSheet {
 	private Document doc = null;
 	private Element workBookEl = null;
 	private static final SimpleDateFormat DATEFORMAT = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS");
-	
+
 	public DataSheet(File file) {
 		this(file, false);
 	}
-	
+
 	public DataSheet(File file, boolean append) {
 		this.file = file;
-		
+
 		if (append && file.exists()) {
 			doc = FileUtil.parseXML(file.getAbsolutePath());
 			if (doc != null) {
@@ -55,8 +55,8 @@ public class DataSheet {
 					return;
 				}
 			}
-		} 
-		
+		}
+
 		doc = FileUtil.newXML();
 		workBookEl = doc.createElement("Workbook");
 		workBookEl.setAttribute("xmlns", "urn:schemas-microsoft-com:office:spreadsheet");
@@ -70,10 +70,10 @@ public class DataSheet {
 //		Element numberFormatEl = doc.createElement("NumberFormat");
 //		styleEl.appendChild(numberFormatEl);
 //		numberFormatEl.setAttribute("ss:Format", "General Date");
-		
+
 	}
-	
-	
+
+
 	private Element getTableElement(String sheetName) {
 		NodeList nodes = workBookEl.getElementsByTagName("Worksheet");
 		for (int i = 0; i < nodes.getLength(); i++) {
@@ -82,7 +82,7 @@ public class DataSheet {
 				return (Element) e.getElementsByTagName("Table").item(0);
 			}
 		}
-		
+
 		Element worksheetEl = doc.createElement("Worksheet");
 		worksheetEl.setAttribute("ss:Name", sheetName);
 		workBookEl.appendChild(worksheetEl);
@@ -90,7 +90,7 @@ public class DataSheet {
 		worksheetEl.appendChild(tableEl);
 		return tableEl;
 	}
-	
+
 	public void addRow(String sheetName, Object... datas) {
 		Element tableEl = getTableElement(sheetName);
 		Element rowEl = doc.createElement("Row");
@@ -113,7 +113,7 @@ public class DataSheet {
 				dataEl.setTextContent(o == null ? "" : o.toString());
 			}
 		}
-		
+
 		tableEl.appendChild(rowEl);
 		FileUtil.storeXML(doc, file);
 	}

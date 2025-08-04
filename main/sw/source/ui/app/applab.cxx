@@ -157,7 +157,7 @@ const SwFrmFmt *lcl_InsertLabText( SwWrtShell& rSh, const SwLabItem& rItem,
 	{
 		aSet.Put( SvxLRSpaceItem( 0, 0, 0, 0, RES_LR_SPACE ) );
 	}
-	const SwFrmFmt *pFmt = rSh.NewFlyFrm(aSet, sal_True,  &rFmt );	// Fly einfuegen
+	const SwFrmFmt *pFmt = rSh.NewFlyFrm(aSet, sal_True,  &rFmt );	// Fly einfügen
 	ASSERT( pFmt, "Fly not inserted" );
 
 	rSh.UnSelectFrm();	//Rahmen wurde automatisch selektiert
@@ -196,7 +196,7 @@ static sal_uInt16 nBCTitleNo = 0;
 	SwAbstractDialogFactory* pDialogFactory = SwAbstractDialogFactory::Create();
 	DBG_ASSERT(pDialogFactory, "SwAbstractDialogFactory fail!");
 
-	AbstarctSwLabDlg* pDlg = pDialogFactory->CreateSwLabDlg( 0, aSet, pNewDBMgr, bLabel, DLG_LAB );
+	AbstractSwLabDlg* pDlg = pDialogFactory->CreateSwLabDlg( 0, aSet, pNewDBMgr, bLabel, DLG_LAB );
 	DBG_ASSERT(pDlg, "Dialogdiet fail!");
 
 	if ( RET_OK == pDlg->Execute() )
@@ -277,9 +277,9 @@ static sal_uInt16 nBCTitleNo = 0;
 
 			aDesc.SetUseOn(nsUseOnPage::PD_ALL); // Seitennumerierung
 
-			// Einstellen der Seitengroesse
+			// Einstellen der Seitengröße
 			rFmt.SetFmtAttr(SwFmtFrmSize(ATT_FIX_SIZE,
-									rItem.lPaperWidth == 0 ? rItem.lLeft  + rItem.nCols * rItem.lHDist + MINLAY : rItem.lPaperWidth,
+									rItem.lPaperWidth == 0 ? rItem.lLeft + rItem.nCols * rItem.lHDist + MINLAY : rItem.lPaperWidth,
 									rItem.bCont || rItem.lPaperHeight == 0 ? rItem.lUpper + rItem.nRows * rItem.lVDist + MINLAY : rItem.lPaperHeight));
 
 			// Numerierungsart
@@ -303,7 +303,7 @@ static sal_uInt16 nBCTitleNo = 0;
 
 			pSh->ChgPageDesc( 0, aDesc );
 
-			// Rahmen einfuegen
+			// Rahmen einfügen
 			SwFldMgr*		 pFldMgr = new SwFldMgr;
 			pFldMgr->SetEvalExpFlds(sal_False);
 

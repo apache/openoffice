@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,9 +41,9 @@ namespace com { namespace sun { namespace star { namespace i18n {
 // ftp://ftp.unicode.org/Public/3.0-Update/UnicodeData-3.0.0.html
 // http://charts.unicode.org/Web/U3040.html Hiragana (U+3040..U+309F)
 // http://charts.unicode.org/Web/U30A0.html Katakana (U+30A0..U+30FF)
-// http://charts.unicode.org/Web/UFF00.html 
+// http://charts.unicode.org/Web/UFF00.html
 
-OneToOneMappingTable_t large2small[] = {        
+OneToOneMappingTable_t large2small[] = {
     MAKE_PAIR( 0x3041, 0x3042 ),  // HIRAGANA LETTER SMALL A --> HIRAGANA LETTER A
     MAKE_PAIR( 0x3043, 0x3044 ),  // HIRAGANA LETTER SMALL I --> HIRAGANA LETTER I
     MAKE_PAIR( 0x3045, 0x3046 ),  // HIRAGANA LETTER SMALL U --> HIRAGANA LETTER U

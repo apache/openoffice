@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,7 +48,7 @@ class QLayout;
 
 class ResMgr;
 
-class KDE4FilePicker : 
+class KDE4FilePicker :
     public cppu::WeakComponentImplHelper8<
         ::com::sun::star::ui::dialogs::XFilterManager,
         ::com::sun::star::ui::dialogs::XFilterGroupManager,
@@ -58,32 +58,32 @@ class KDE4FilePicker :
         ::com::sun::star::lang::XInitialization,
         ::com::sun::star::util::XCancellable,
         ::com::sun::star::lang::XEventListener,
-        ::com::sun::star::lang::XServiceInfo >		
+        ::com::sun::star::lang::XServiceInfo >
 {
 protected:
     ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > m_xServiceMgr;   // to instantiate own services
 
 	::com::sun::star::uno::Reference< ::com::sun::star::ui::dialogs::XFilePickerListener > m_xListener;
-	
+
     ResMgr *_resMgr;
-	
+
 	//the dialog to display
 	KFileDialog* _dialog;
-	
+
 	osl::Mutex _helperMutex;
-	
+
 	//running filter string to add to dialog
 	QString _filter;
-	
+
 	//filter for reverse lookup of filter text
 	QHash<QString, QString> _filters;
-	
+
 	//mapping of SAL control ID's to created custom controls
 	QHash<sal_Int16, QWidget*> _customWidgets;
-	
+
 	//widget to contain extra custom controls
 	QWidget* _extraControls;
-	
+
 	//layout for extra custom controls
 	QLayout* _layout;
 
@@ -158,10 +158,10 @@ public:
 
 private:
     // prevent copy and assignment
-    KDE4FilePicker( const KDE4FilePicker& );           
+    KDE4FilePicker( const KDE4FilePicker& );
     KDE4FilePicker& operator=( const KDE4FilePicker& );
-	
+
 	//add a custom control widget to the file dialog
 	void addCustomControl(sal_Int16 controlId);
-	
-}; 
+
+};

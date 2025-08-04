@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -44,20 +44,20 @@ public:
 
     static uno::Reference<XFastContextHandler> createAndSetParentAndDefine
     (OOXMLFastContextHandler * pHandler, sal_uInt32 nToken, Id nId, Id nDefine);
-    
+
     static uno::Reference<XFastContextHandler> createAndSetParentRef
-    (OOXMLFastContextHandler * pHandler, sal_uInt32 nToken, 
+    (OOXMLFastContextHandler * pHandler, sal_uInt32 nToken,
      const uno::Reference < xml::sax::XFastAttributeList > & Attribs);
 
-    static void newProperty(OOXMLFastContextHandler * pHandler, 
-                            Id nId, 
+    static void newProperty(OOXMLFastContextHandler * pHandler,
+                            Id nId,
                             const ::rtl::OUString & rValue);
 
-    static void newProperty(OOXMLFastContextHandler * pHandler, 
-                            Id nId, sal_Int32 nValue); 
+    static void newProperty(OOXMLFastContextHandler * pHandler,
+                            Id nId, sal_Int32 nValue);
 
-    static void mark(OOXMLFastContextHandler * pHandler, 
-                     Id nId, 
+    static void mark(OOXMLFastContextHandler * pHandler,
+                     Id nId,
                      const ::rtl::OUString & rValue);
 
     static void attributes
@@ -66,7 +66,7 @@ public:
 };
 
 template <class T>
-uno::Reference<XFastContextHandler> 
+uno::Reference<XFastContextHandler>
 OOXMLFastHelper<T>::createAndSetParent
 (OOXMLFastContextHandler * pHandler, sal_uInt32 nToken, Id nId)
 {
@@ -94,12 +94,12 @@ OOXMLFastHelper<T>::createAndSetParent
 #endif
 
     uno::Reference<XFastContextHandler> aResult(pTmp);
-    
+
     return aResult;
 }
 
 template <class T>
-uno::Reference<XFastContextHandler> 
+uno::Reference<XFastContextHandler>
 OOXMLFastHelper<T>::createAndSetParentAndDefine
 (OOXMLFastContextHandler * pHandler, sal_uInt32 nToken, Id nId, Id nDefine)
 {
@@ -107,20 +107,20 @@ OOXMLFastHelper<T>::createAndSetParentAndDefine
     debug_logger->startElement("helper.createAndSetParentAndDefine");
     debug_logger->attribute("context", pHandler->getType());
     debug_logger->attribute("id", (*QNameToString::Instance())(nId));
-    
+
     static char buffer[16];
     snprintf(buffer, sizeof(buffer), "0x%08" SAL_PRIxUINT32, nId);
-     
+
     debug_logger->attribute("idnum", buffer);
 #endif
-    
+
     OOXMLFastContextHandler * pTmp = new T(pHandler);
-    
+
     pTmp->setToken(nToken);
     pTmp->setId(nId);
     pTmp->setDefine(nDefine);
-    
-    
+
+
 #ifdef DEBUG_HELPER
     debug_logger->startElement("created");
     debug_logger->addTag(pTmp->toTag());
@@ -129,12 +129,12 @@ OOXMLFastHelper<T>::createAndSetParentAndDefine
 #endif
 
     uno::Reference<XFastContextHandler> aResult(pTmp);
-    
+
     return aResult;
 }
 
 template <class T>
-uno::Reference<XFastContextHandler> 
+uno::Reference<XFastContextHandler>
 OOXMLFastHelper<T>::createAndSetParentRef
 (OOXMLFastContextHandler * pHandler, sal_uInt32 nToken,
  const uno::Reference < xml::sax::XFastAttributeList > & Attribs)
@@ -147,7 +147,7 @@ OOXMLFastHelper<T>::createAndSetParentRef
 
     boost::shared_ptr<OOXMLFastContextHandler> pTmp(new T(pHandler));
 
-    uno::Reference<XFastContextHandler> xChild = 
+    uno::Reference<XFastContextHandler> xChild =
         pTmp->createFastChildContext(nToken, Attribs);
 
     OOXMLFastContextHandler * pResult = NULL;
@@ -170,26 +170,26 @@ OOXMLFastHelper<T>::createAndSetParentRef
 }
 
 template <class T>
-void OOXMLFastHelper<T>::newProperty(OOXMLFastContextHandler * pHandler, 
-                                     Id nId, 
+void OOXMLFastHelper<T>::newProperty(OOXMLFastContextHandler * pHandler,
+                                     Id nId,
                                      const ::rtl::OUString & rValue)
 {
     OOXMLValue::Pointer_t pVal(new T(rValue));
 
 #ifdef DEBUG_HELPER
-    string aStr = (*QNameToString::Instance())(nId); 
+    string aStr = (*QNameToString::Instance())(nId);
 
     debug_logger->startElement("newProperty-from-string");
     debug_logger->attribute("name", aStr);
     debug_logger->attribute
-        ("value", 
+        ("value",
          ::rtl::OUStringToOString
          (rValue, RTL_TEXTENCODING_ASCII_US).getStr());
 
     if (aStr.size() == 0)
         debug_logger->addTag(XMLTag::Pointer_t(new XMLTag("unknown-qname")));
 #endif
-    
+
     pHandler->newProperty(nId, pVal);
 
 #ifdef DEBUG_HELPER
@@ -199,22 +199,22 @@ void OOXMLFastHelper<T>::newProperty(OOXMLFastContextHandler * pHandler,
 }
 
 template <class T>
-void OOXMLFastHelper<T>::newProperty(OOXMLFastContextHandler * pHandler, 
-                                     Id nId, 
+void OOXMLFastHelper<T>::newProperty(OOXMLFastContextHandler * pHandler,
+                                     Id nId,
                                      sal_Int32 nVal)
 {
     OOXMLValue::Pointer_t pVal(new T(nVal));
 
 #ifdef DEBUG_HELPER
-    string aStr = (*QNameToString::Instance())(nId); 
+    string aStr = (*QNameToString::Instance())(nId);
 
     debug_logger->startElement("helper.newProperty-from-int");
     debug_logger->attribute("name", aStr);
     debug_logger->attribute("value", pVal->toString());
-    
+
     if (aStr.size() == 0)
         debug_logger->addTag(XMLTag::Pointer_t(new XMLTag("unknown-qname")));
-    
+
     debug_logger->endElement("helper.newProperty-from-int");
 #endif
 
@@ -222,13 +222,13 @@ void OOXMLFastHelper<T>::newProperty(OOXMLFastContextHandler * pHandler,
 }
 
 template <class T>
-void OOXMLFastHelper<T>::mark(OOXMLFastContextHandler * pHandler, 
-                              Id nId, 
+void OOXMLFastHelper<T>::mark(OOXMLFastContextHandler * pHandler,
+                              Id nId,
                               const ::rtl::OUString & rValue)
 {
     OOXMLValue::Pointer_t pVal(new T(rValue));
 
-    string aStr = (*QNameToString::Instance())(nId); 
+    string aStr = (*QNameToString::Instance())(nId);
 
 #ifdef DEBUG_HELPER
     debug_logger->startElement("helper.mark");

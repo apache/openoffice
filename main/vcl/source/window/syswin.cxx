@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -327,7 +327,7 @@ void SystemWindow::EnableSaveBackground( sal_Bool bSave )
 {
     if( ImplGetSVData()->maWinData.mbNoSaveBackground )
         bSave = false;
-    
+
     Window* pWindow = this;
     while ( pWindow->mpWindowImpl->mpBorderWindow )
         pWindow = pWindow->mpWindowImpl->mpBorderWindow;
@@ -555,7 +555,7 @@ static void ImplWindowStateFromStr( WindowStateData& rData, const ByteString& rS
     }
     else
         rData.SetState( 0 );
-    
+
     // read maximized pos/size
     aTokenStr = rStr.GetToken( 0, ',', nIndex );
     if ( aTokenStr.Len() )
@@ -669,7 +669,7 @@ void SystemWindow::ImplMoveToScreen( long& io_rX, long& io_rY, long i_nWidth, lo
         i_nWidth = 50;
     if( i_nHeight < 1 )
         i_nHeight = 50;
-    
+
     // check left border
     bool bMove = false;
     if( io_rX + i_nWidth < aScreenRect.Left() )
@@ -749,7 +749,7 @@ void SystemWindow::SetWindowStateData( const WindowStateData& rData )
         // 91625 - ignore Minimize
         //nState &= ~(WINDOWSTATE_STATE_MINIMIZED);
         aState.mnState  = nState & SAL_FRAMESTATE_SYSTEMMASK;
-        
+
         // normalize window positions onto screen
         ImplMoveToScreen( aState.mnX, aState.mnY, aState.mnWidth, aState.mnHeight, pWindow );
         ImplMoveToScreen( aState.mnMaximizedX, aState.mnMaximizedY, aState.mnMaximizedWidth, aState.mnMaximizedHeight, pWindow );
@@ -775,7 +775,7 @@ void SystemWindow::SetWindowStateData( const WindowStateData& rData )
                             if( (unsigned long) (aState.mnX + displacement + aState.mnWidth + g.nRightDecoration) > (unsigned long) aDesktop.nRight ||
                                 (unsigned long) (aState.mnY + displacement + aState.mnHeight + g.nBottomDecoration) > (unsigned long) aDesktop.nBottom )
                             {
-                                // displacing would leave screen 
+                                // displacing would leave screen
                                 aState.mnX = g.nLeftDecoration ? g.nLeftDecoration : 10; // should result in (0,0)
                                 aState.mnY = displacement;
                                 if( bWrapped ||
@@ -1014,7 +1014,7 @@ void SystemWindow::SetMenuBar( MenuBar* pMenuBar )
                 }
                 MenuBar::ImplDestroy( pOldMenuBar, bDelete );
                 if( bDelete )
-                    pOldWindow = NULL;  // will be deleted in MenuBar::ImplDestroy, 
+                    pOldWindow = NULL;  // will be deleted in MenuBar::ImplDestroy,
             }
 
         }

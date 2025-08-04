@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -83,10 +83,10 @@ XMLImageMapExport::XMLImageMapExport(SvXMLExport& rExp) :
 
 XMLImageMapExport::~XMLImageMapExport()
 {
-	
+
 }
 
-void XMLImageMapExport::Export( 
+void XMLImageMapExport::Export(
 	const Reference<XPropertySet> & rPropertySet)
 {
 	if (rPropertySet->getPropertySetInfo()->hasPropertyByName(msImageMap))
@@ -109,7 +109,7 @@ void XMLImageMapExport::Export(
 		{
 			// image map container element
 			SvXMLElementExport aImageMapElement(
-				mrExport, XML_NAMESPACE_DRAW, XML_IMAGE_MAP, 
+				mrExport, XML_NAMESPACE_DRAW, XML_IMAGE_MAP,
 				mbWhiteSpace, mbWhiteSpace);
 
 			// iterate over image map elements and call ExportMapEntry(...)
@@ -143,26 +143,26 @@ void XMLImageMapExport::ExportMapEntry(
 		enum XMLTokenEnum eType = XML_TOKEN_INVALID;
 
 		// distinguish map entries by their service name
-		Sequence<OUString> sServiceNames = 
+		Sequence<OUString> sServiceNames =
 			xServiceInfo->getSupportedServiceNames();
 		sal_Int32 nLength = sServiceNames.getLength();
 		for( sal_Int32 i=0; i<nLength; i++ )
 		{
 			OUString& rName = sServiceNames[i];
-			
-			if ( rName.equalsAsciiL(sAPI_ImageMapRectangleObject, 
+
+			if ( rName.equalsAsciiL(sAPI_ImageMapRectangleObject,
 									sizeof(sAPI_ImageMapRectangleObject)-1) )
 			{
 				eType = XML_AREA_RECTANGLE;
 				break;
 			}
-			else if ( rName.equalsAsciiL(sAPI_ImageMapCircleObject, 
+			else if ( rName.equalsAsciiL(sAPI_ImageMapCircleObject,
 										 sizeof(sAPI_ImageMapCircleObject)-1) )
 			{
 				eType = XML_AREA_CIRCLE;
 				break;
 			}
-			else if ( rName.equalsAsciiL(sAPI_ImageMapPolygonObject, 
+			else if ( rName.equalsAsciiL(sAPI_ImageMapPolygonObject,
 										 sizeof(sAPI_ImageMapPolygonObject)-1))
 			{
 				eType = XML_AREA_POLYGON;
@@ -171,7 +171,7 @@ void XMLImageMapExport::ExportMapEntry(
 		}
 
 		// return from method if no proper service is found!
-		DBG_ASSERT(XML_TOKEN_INVALID != eType, 
+		DBG_ASSERT(XML_TOKEN_INVALID != eType,
 				   "Image map element doesn't support appropriate service!");
 		if (XML_TOKEN_INVALID == eType)
 			return;
@@ -197,8 +197,8 @@ void XMLImageMapExport::ExportMapEntry(
 			mrExport.AddAttribute(
 				XML_NAMESPACE_OFFICE, XML_TARGET_FRAME_NAME, sTargt);
 
-			mrExport.AddAttribute( 
-				XML_NAMESPACE_XLINK, XML_SHOW, 
+			mrExport.AddAttribute(
+				XML_NAMESPACE_XLINK, XML_SHOW,
 				sTargt.equalsAsciiL( "_blank", sizeof("_blank")-1 )
 										? XML_NEW : XML_REPLACE );
 		}
@@ -237,7 +237,7 @@ void XMLImageMapExport::ExportMapEntry(
 		}
 
 		// write element
-		DBG_ASSERT(XML_TOKEN_INVALID != eType, 
+		DBG_ASSERT(XML_TOKEN_INVALID != eType,
                    "No name?! How did this happen?");
 		SvXMLElementExport aAreaElement(mrExport, XML_NAMESPACE_DRAW, eType,
 										mbWhiteSpace, mbWhiteSpace);
@@ -260,7 +260,7 @@ void XMLImageMapExport::ExportMapEntry(
 			mrExport.Characters(sDescription);
 		}
 
-		// export events attached to this 
+		// export events attached to this
 		Reference<XEventsSupplier> xSupplier(rPropertySet, UNO_QUERY);
 		mrExport.GetEventExport().Export(xSupplier, mbWhiteSpace);
 	}
@@ -278,7 +278,7 @@ void XMLImageMapExport::ExportRectangle(
 	// parameters svg:x, svg:y, svg:width, svg:height
 	OUStringBuffer aBuffer;
 	mrExport.GetMM100UnitConverter().convertMeasure(aBuffer, aRectangle.X);
-	mrExport.AddAttribute( XML_NAMESPACE_SVG, XML_X, 
+	mrExport.AddAttribute( XML_NAMESPACE_SVG, XML_X,
 						  aBuffer.makeStringAndClear() );
 	mrExport.GetMM100UnitConverter().convertMeasure(aBuffer, aRectangle.Y);
 	mrExport.AddAttribute( XML_NAMESPACE_SVG, XML_Y,
@@ -287,7 +287,7 @@ void XMLImageMapExport::ExportRectangle(
 	mrExport.AddAttribute( XML_NAMESPACE_SVG, XML_WIDTH,
 						  aBuffer.makeStringAndClear() );
 	mrExport.GetMM100UnitConverter().convertMeasure(aBuffer, aRectangle.Height);
-	mrExport.AddAttribute( XML_NAMESPACE_SVG, XML_HEIGHT, 
+	mrExport.AddAttribute( XML_NAMESPACE_SVG, XML_HEIGHT,
 						  aBuffer.makeStringAndClear() );
 }
 
@@ -302,10 +302,10 @@ void XMLImageMapExport::ExportCircle(
 	// parameters svg:cx, svg:cy
 	OUStringBuffer aBuffer;
 	mrExport.GetMM100UnitConverter().convertMeasure(aBuffer, aCenter.X);
-	mrExport.AddAttribute( XML_NAMESPACE_SVG, XML_CX, 
+	mrExport.AddAttribute( XML_NAMESPACE_SVG, XML_CX,
 						  aBuffer.makeStringAndClear() );
 	mrExport.GetMM100UnitConverter().convertMeasure(aBuffer, aCenter.Y);
-	mrExport.AddAttribute( XML_NAMESPACE_SVG, XML_CY, 
+	mrExport.AddAttribute( XML_NAMESPACE_SVG, XML_CY,
 						  aBuffer.makeStringAndClear() );
 
 	// radius
@@ -313,7 +313,7 @@ void XMLImageMapExport::ExportCircle(
 	sal_Int32 nRadius = 0;
 	aAny >>= nRadius;
 	mrExport.GetMM100UnitConverter().convertMeasure(aBuffer, nRadius);
-	mrExport.AddAttribute( XML_NAMESPACE_SVG, XML_R, 
+	mrExport.AddAttribute( XML_NAMESPACE_SVG, XML_R,
 						  aBuffer.makeStringAndClear() );
 }
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -92,10 +92,10 @@ namespace
 		:"=r"(p): : "$2","$29" );
 
 #ifdef BRDEBUG
-	 if (nStackLongs * 4 > 512 ) 
-		 fprintf(stderr,"too many arguments"); 
+	 if (nStackLongs * 4 > 512 )
+		 fprintf(stderr,"too many arguments");
 #endif
-	
+
 	// now begin to load the C++ function arguments into storage
 	nw = 0;
 
@@ -131,7 +131,7 @@ namespace
 			gpr[nw++] = *pStackLongs;
 			gpr[nw++] = *(pStackLongs+1);
 		  } else {
-			if (((long) p) & 4)          
+			if (((long) p) & 4)
 			  p++;
 			*p++ = *pStackLongs;
 			*p++ = *(pStackLongs+1);
@@ -170,12 +170,12 @@ namespace
 	}
 
 	/* figure out the address of the function we need to invoke */
-	off = nVtableIndex; 
+	off = nVtableIndex;
 	off = off * 4;                         // 4 bytes per slot
 	mfunc = *((unsigned long **)pAdjustedThisPtr);    // get the address of the vtable
-	mfunc = (unsigned long *)((char *)mfunc + off); // get the address from the vtable entry at offset 
+	mfunc = (unsigned long *)((char *)mfunc + off); // get the address from the vtable entry at offset
 	mfunc = *((unsigned long **)mfunc);                 // the function is stored at the address
-	ptr = (void (*)())mfunc;   
+	ptr = (void (*)())mfunc;
 
 #ifdef BRDEBUG
 	fprintf(stderr,"calling function %p\n",mfunc);
@@ -236,7 +236,7 @@ namespace
   }
 
 
-  //================================================================================================== 
+  //==================================================================================================
   static void cpp_call(
 	  bridges::cpp_uno::shared::UnoInterfaceProxy * pThis,
 	  bridges::cpp_uno::shared::VtableSlot  aVtableSlot,
@@ -273,7 +273,7 @@ namespace
 	  else
 	  {
 		// complex return via ptr
-		pCppReturn = *(void **)pCppStack = 
+		pCppReturn = *(void **)pCppStack =
 		  (bridges::cpp_uno::shared::relatesToInterfaceType( pReturnTypeDescr )
 		   ? alloca( pReturnTypeDescr->nSize ): pUnoReturn); // direct way
 		*pPT++ = 'I'; //signify that a complex return type on stack
@@ -371,7 +371,7 @@ namespace
 		{
 		  uno_copyAndConvertData(
 			  *(void **)pCppStack = pCppArgs[nPos] = alloca( pParamTypeDescr->nSize ),
-			  pUnoArgs[nPos], pParamTypeDescr, 
+			  pUnoArgs[nPos], pParamTypeDescr,
 			  pThis->getBridge()->getUno2Cpp() );
 
 		  pTempIndizes[nTempIndizes] = nPos; // has to be reconverted
@@ -440,7 +440,7 @@ namespace
 	catch (...)
 	{
 	  // fill uno exception
-	  fillUnoException( CPPU_CURRENT_NAMESPACE::__cxa_get_globals()->caughtExceptions, 
+	  fillUnoException( CPPU_CURRENT_NAMESPACE::__cxa_get_globals()->caughtExceptions,
 		  *ppUnoExc, pThis->getBridge()->getCpp2Uno() );
 
 	  // temporary params

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -88,7 +88,7 @@ HRESULT STDMETHODCALLTYPE VistaFilePickerEventHandler::QueryInterface(REFIID rII
 
 	if ( rIID == IID_IFileDialogControlEvents )
 		*ppObject = (IFileDialogControlEvents*)this;
-    
+
 	if ( *ppObject != NULL )
 	{
 		((IUnknown*)*ppObject)->AddRef();
@@ -171,7 +171,7 @@ void lcl_updateVersionListDirectly(IFileDialog* pDialog)
     TFileDialog          iDialog   (pDialog);
     TFileOpenDialog      iOpen     ;
     TFileDialogCustomize iCustomize;
-    
+
 #ifdef __MINGW32__
     iDialog->QueryInterface(IID_IFileOpenDialog, (void**)(&iOpen));
     iDialog->QueryInterface(IID_IFileDialogCustomize, (void**)(&iCustomize));
@@ -183,7 +183,7 @@ void lcl_updateVersionListDirectly(IFileDialog* pDialog)
     // make sure version list match to the current selection always ...
     // at least an empty version list will be better then the wrong one .-)
     iCustomize->RemoveAllControlItems(CONTROL_VERSIONLIST);
-    
+
     HRESULT                   hResult = E_FAIL;
     ComPtr< IShellItemArray > iItems;
     ComPtr< IShellItem >      iItem;
@@ -202,16 +202,16 @@ void lcl_updateVersionListDirectly(IFileDialog* pDialog)
         // we can show one version list only within control
         if (nCount != 1)
             return;
-        
+
         hResult = iItems->GetItemAt(0, &iItem);
-    }    
+    }
     else
     if (iDialog.is())
         hResult = iDialog->GetCurrentSelection(&iItem);
 
     if ( FAILED(hResult) )
         return;
-    
+
     const ::rtl::OUString sURL = lcl_getURLFromShellItem2(iItem);
     if (sURL.getLength() < 1)
         return;
@@ -219,21 +219,21 @@ void lcl_updateVersionListDirectly(IFileDialog* pDialog)
     INetURLObject aURL(sURL);
     if (aURL.GetProtocol() != INET_PROT_FILE)
         return;
-    
+
     ::rtl::OUString sMain = aURL.GetMainURL(INetURLObject::NO_DECODE);
     if ( ! ::utl::UCBContentHelper::IsDocument(sURL))
         return;
-*/    
+*/
     try
     {
         css::uno::Reference< css::embed::XStorage > xStorage = ::comphelper::OStorageHelper::GetStorageFromURL(sURL, css::embed::ElementModes::READ);
         if ( ! xStorage.is() )
             return;
-        
+
         css::uno::Reference< css::lang::XMultiServiceFactory >                 xSMGR     = ::comphelper::getProcessServiceFactory();
         css::uno::Reference< css::document::XDocumentRevisionListPersistence > xReader   (xSMGR->createInstance(SERVICENAME_REVISIONPERSISTENCE), css::uno::UNO_QUERY_THROW);
         css::uno::Sequence< css::util::RevisionTag >                           lVersions = xReader->load(xStorage);
-        
+
         for (::sal_Int32 i=0; i<lVersions.getLength(); ++i)
         {
             const css::util::RevisionTag& aTag = lVersions[i];
@@ -269,7 +269,7 @@ STDMETHODIMP VistaFilePickerEventHandler::OnTypeChange(IFileDialog* pDialog)
 {
     UINT nFileTypeIndex;
 	HRESULT hResult = pDialog->GetFileTypeIndex( &nFileTypeIndex );
-	
+
 	if ( hResult == S_OK )
 	{
 		if ( m_pInternalNotify->onFileTypeChanged( nFileTypeIndex ))
@@ -330,14 +330,14 @@ STDMETHODIMP VistaFilePickerEventHandler::OnControlActivating(IFileDialogCustomi
 }
 
 //-----------------------------------------------------------------------------------------
-void SAL_CALL VistaFilePickerEventHandler::addFilePickerListener( const css::uno::Reference< css::ui::dialogs::XFilePickerListener >& xListener ) 
+void SAL_CALL VistaFilePickerEventHandler::addFilePickerListener( const css::uno::Reference< css::ui::dialogs::XFilePickerListener >& xListener )
     throw( css::uno::RuntimeException )
 {
     m_lListener.addInterface(::getCppuType( (const css::uno::Reference< css::ui::dialogs::XFilePickerListener >*)NULL ), xListener);
 }
 
 //-----------------------------------------------------------------------------------------
-void SAL_CALL VistaFilePickerEventHandler::removeFilePickerListener( const css::uno::Reference< css::ui::dialogs::XFilePickerListener >& xListener ) 
+void SAL_CALL VistaFilePickerEventHandler::removeFilePickerListener( const css::uno::Reference< css::ui::dialogs::XFilePickerListener >& xListener )
     throw( css::uno::RuntimeException )
 {
     m_lListener.removeInterface(::getCppuType( (const css::uno::Reference< css::ui::dialogs::XFilePickerListener >*)NULL ), xListener);
@@ -351,7 +351,7 @@ void VistaFilePickerEventHandler::startListening( const TFileDialog& pBroadcaste
 
     if (m_pDialog.is())
         return;
-    
+
     m_pDialog = pBroadcaster;
     m_pDialog->Advise(this, &m_nListenerHandle);
 }
@@ -373,54 +373,54 @@ static const ::rtl::OUString PROP_PICKER_LISTENER = ::rtl::OUString::createFromA
 class AsyncPickerEvents : public RequestHandler
 {
 public:
-    
+
     AsyncPickerEvents()
     {}
-    
+
     virtual ~AsyncPickerEvents()
     {}
 
     virtual void before()
     {}
-    
+
     virtual void doRequest(const RequestRef& rRequest)
     {
         const ::sal_Int32 nEventID   = rRequest->getRequest();
         const ::sal_Int16 nControlID = rRequest->getArgumentOrDefault(PROP_CONTROL_ID, (::sal_Int16)0);
         const css::uno::Reference< css::ui::dialogs::XFilePickerListener > xListener = rRequest->getArgumentOrDefault(PROP_PICKER_LISTENER, css::uno::Reference< css::ui::dialogs::XFilePickerListener >());
-    
+
         if ( ! xListener.is())
             return;
-        
+
         css::ui::dialogs::FilePickerEvent aEvent;
         aEvent.ElementId = nControlID;
-        
+
         switch (nEventID)
         {
             case VistaFilePickerEventHandler::E_FILE_SELECTION_CHANGED :
                     xListener->fileSelectionChanged(aEvent);
                     break;
-            
+
             case VistaFilePickerEventHandler::E_DIRECTORY_CHANGED :
                     xListener->directoryChanged(aEvent);
                     break;
-            
+
             case VistaFilePickerEventHandler::E_HELP_REQUESTED :
                     xListener->helpRequested(aEvent);
                     break;
-            
+
             case VistaFilePickerEventHandler::E_CONTROL_STATE_CHANGED :
                     xListener->controlStateChanged(aEvent);
                     break;
-            
+
             case VistaFilePickerEventHandler::E_DIALOG_SIZE_CHANGED :
                     xListener->dialogSizeChanged();
                     break;
-            
+
             // no default here. Let compiler detect changes on enum set !
         }
     }
-    
+
     virtual void after()
     {}
 };
@@ -434,20 +434,20 @@ void VistaFilePickerEventHandler::impl_sendEvent(  EEventType eEventType,
     ::cppu::OInterfaceContainerHelper* pContainer = m_lListener.getContainer( ::getCppuType( ( const css::uno::Reference< css::ui::dialogs::XFilePickerListener >*) NULL ) );
     if ( ! pContainer)
         return;
-    
+
     ::cppu::OInterfaceIteratorHelper pIterator(*pContainer);
     while (pIterator.hasMoreElements())
     {
         try
         {
             css::uno::Reference< css::ui::dialogs::XFilePickerListener > xListener (pIterator.next(), css::uno::UNO_QUERY);
-        
+
             RequestRef rRequest(new Request());
             rRequest->setRequest (eEventType);
             rRequest->setArgument(PROP_PICKER_LISTENER, xListener);
 			if ( nControlID )
 				rRequest->setArgument(PROP_CONTROL_ID, nControlID);
-        
+
             aNotify.triggerRequestDirectly(rRequest);
             //aNotify.triggerRequestNonBlocked(rRequest);
         }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,23 +7,23 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
 #ifndef DBAUI_APPDETAILVIEW_HXX
 #define DBAUI_APPDETAILVIEW_HXX
 
-#ifndef _COM_SUN_STAR_FRAME_XCONTROLLER_HPP_ 
+#ifndef _COM_SUN_STAR_FRAME_XCONTROLLER_HPP_
 #include <com/sun/star/frame/XController.hpp>
 #endif
 #ifndef _COM_SUN_STAR_CONTAINER_XNAMEACCESS_HPP_
@@ -38,10 +38,10 @@
 #ifndef _COM_SUN_STAR_SDB_APPLICATION_NAMEDDATABASEOBJECT_HPP_
 #include <com/sun/star/sdb/application/NamedDatabaseObject.hpp>
 #endif
-#ifndef _SV_SPLIT_HXX 
+#ifndef _SV_SPLIT_HXX
 #include <vcl/split.hxx>
 #endif
-#ifndef _SV_FIXED_HXX 
+#ifndef _SV_FIXED_HXX
 #include <vcl/fixed.hxx>
 #endif
 #ifndef _SV_MNEMONIC_HXX
@@ -176,7 +176,7 @@ namespace dbaui
 								 , public IClipboardTest
 	{
 		Splitter							m_aHorzSplitter;
-		OTitleWindow						m_aTasks;		
+		OTitleWindow						m_aTasks;
 		OTitleWindow						m_aContainer;
 		OAppBorderWindow&					m_rBorderWin;		// my parent
 		OAppDetailPageHelper*				m_pControlHelper;
@@ -222,9 +222,9 @@ namespace dbaui
         inline OAppBorderWindow& getBorderWin() const { return m_rBorderWin; }
         inline OTasksWindow& getTasksWindow() const { return *static_cast< OTasksWindow* >( m_aTasks.getChildWindow() ); }
 
-		sal_Bool isCutAllowed()	;	
-		sal_Bool isCopyAllowed()	;	
-		sal_Bool isPasteAllowed();	
+		sal_Bool isCutAllowed()	;
+		sal_Bool isCopyAllowed()	;
+		sal_Bool isPasteAllowed();
 		virtual sal_Bool hasChildPathFocus() { return HasChildPathFocus(); }
 		void copy();
 		void cut();
@@ -232,7 +232,7 @@ namespace dbaui
 
 		/** return the qualified name.
 			@param	_pEntry
-				The entry of a table, or query, form, report to get the qualified name. 
+				The entry of a table, or query, form, report to get the qualified name.
 				If the entry is <NULL/>, the first selected is chosen.
 			@return
 				the qualified name

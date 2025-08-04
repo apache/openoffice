@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -2470,7 +2470,7 @@ Label_MaskStateMachine:
     }
     if (mnRangeOpPosInSymbol >= 0 && mnRangeOpPosInSymbol == (pSym-1) - &cSymbol[0])
     {
-        // This is a trailing range operator, which is nonsense. Will be caught 
+        // This is a trailing range operator, which is nonsense. Will be caught
         // in next round.
         mnRangeOpPosInSymbol = -1;
         *--pSym = 0;
@@ -2507,10 +2507,10 @@ sal_Bool ScCompiler::IsOpCode( const String& rName, bool bInArray )
     }
     else if (mxSymbols->isODFF())
     {
-        // ODFF names that are not written in the current mapping but to be 
-        // recognized. New names will be written in a future relase, then 
-        // exchange (!) with the names in 
-        // formula/source/core/resource/core_resource.src to be able to still 
+        // ODFF names that are not written in the current mapping but to be
+        // recognized. New names will be written in a future relase, then
+        // exchange (!) with the names in
+        // formula/source/core/resource/core_resource.src to be able to still
         // read the old names as well.
         struct FunctionName
         {
@@ -2888,7 +2888,7 @@ sal_Bool ScCompiler::IsReference( const String& rName )
     {
         if (IsDoubleReference( rName))
             return true;
-        // Now try with a symbol up to the range operator, rewind source 
+        // Now try with a symbol up to the range operator, rewind source
         // position.
         sal_Int32 nLen = mnRangeOpPosInSymbol;
         while (cSymbol[++nLen])
@@ -2901,8 +2901,8 @@ sal_Bool ScCompiler::IsReference( const String& rName )
     }
     else
     {
-        // Special treatment for the 'E:\[doc]Sheet1:Sheet3'!D5 Excel sickness, 
-        // mnRangeOpPosInSymbol did not catch the range operator as it is 
+        // Special treatment for the 'E:\[doc]Sheet1:Sheet3'!D5 Excel sickness,
+        // mnRangeOpPosInSymbol did not catch the range operator as it is
         // within a quoted name.
         switch (pConv->meConv)
         {
@@ -2932,9 +2932,9 @@ sal_Bool ScCompiler::IsMacro( const String& rName )
     else
         pObj = pSfxApp->GetBasic();
 
-    // ODFF recommends to store user-defined functions prefixed with "USER.", 
-    // use only unprefixed name if encountered. BASIC doesn't allow '.' in a 
-    // function name so a function "USER.FOO" could not exist, and macro check 
+    // ODFF recommends to store user-defined functions prefixed with "USER.",
+    // use only unprefixed name if encountered. BASIC doesn't allow '.' in a
+    // function name so a function "USER.FOO" could not exist, and macro check
     // is assigned the lowest priority in function name check.
     if (FormulaGrammar::isODFF( GetGrammar()) && aName.EqualsIgnoreCaseAscii( "USER.", 0, 5))
         aName.Erase( 0, 5);
@@ -3538,7 +3538,7 @@ inline bool lcl_UpperAsciiOrI18n( String& rUpper, const String& rOrg, FormulaGra
 {
     if (FormulaGrammar::isODFF( eGrammar ))
     {
-        // ODFF has a defined set of English function names, avoid i18n 
+        // ODFF has a defined set of English function names, avoid i18n
         // overhead.
         rUpper = rOrg;
         rUpper.ToUpperAscii();
@@ -3709,8 +3709,8 @@ sal_Bool ScCompiler::NextNewToken( bool bInArray )
         return false;
     }
 
-    // Provide single token information and continue. Do not set an error, that 
-    // would prematurely end compilation. Simple unknown names are handled by 
+    // Provide single token information and continue. Do not set an error, that
+    // would prematurely end compilation. Simple unknown names are handled by
     // the interpreter.
     ScGlobal::pCharClass->toLower( aUpper );
     ScRawToken aToken;

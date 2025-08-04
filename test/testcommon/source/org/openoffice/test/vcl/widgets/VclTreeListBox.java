@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -26,14 +26,14 @@ import org.openoffice.test.vcl.client.Constant;
 
 
 public class VclTreeListBox extends VclControl {
-	
+
 	public VclTreeListBox(VclApp app, String id) {
 		super(app, id);
 	}
 
 	/**
 	 * Returns the number of entries in a TreeListBox. Namely all the expanded node.
-	 * 
+	 *
 	 * @return Number of list box entries. Error if the return value is -1.
 	 */
 	public int getItemCount() {
@@ -61,11 +61,11 @@ public class VclTreeListBox extends VclControl {
 	public String getItemText(int index) {
 		return (String) invoke(Constant.M_GetItemText, new Object[] {index + 1});
 	}
-	
+
 	/**
 	 * Returns the number of selected entries in a TreeListbox(you can select
 	 * more than one entry).
-	 * 
+	 *
 	 * @return The number of selected entries. Error is the return value is -1.
 	 */
 	public int getSelCount() {
@@ -85,7 +85,7 @@ public class VclTreeListBox extends VclControl {
 
 	/**
 	 * Returns the text of the first string column of the first selected entry
-	 * 
+	 *
 	 * @return
 	 */
 	public String getSelText() {
@@ -99,7 +99,7 @@ public class VclTreeListBox extends VclControl {
 	 * @return
 	 */
 	public String getSelText(int col) {
-		return (String) invoke(Constant.M_GetSelText, new Object[]{col + 1});	
+		return (String) invoke(Constant.M_GetSelText, new Object[]{col + 1});
 	}
 
 	/**
@@ -112,7 +112,7 @@ public class VclTreeListBox extends VclControl {
 		return invoke(Constant.M_GetSelText, new Object[]{(index + 1), (col + 1)}).toString();
 	}
 
-	
+
 	/**
 	 * Select the entry at the given index
 	 * @param index starting from 0
@@ -128,7 +128,7 @@ public class VclTreeListBox extends VclControl {
 	public void unselect(int index) {
 		invoke(Constant.M_Select, new Object[]{index + 1, false});
 	}
-	
+
 	/**
 	 * Collapse the specified entry
 	 * Notice: index starting from 0
@@ -139,11 +139,11 @@ public class VclTreeListBox extends VclControl {
 //		Tester.typeKeys("<left>");
 		invoke(Constant.M_Collapse, new Object[]{index + 1, false});
 	}
-	
+
 	public void collapse() {
 		collapse(getSelIndex());
 	}
-	
+
 	public void collapse(String text) {
 		String[] items = getAllItemsText();
 		for (int i = 0; i < items.length; i++) {
@@ -151,7 +151,7 @@ public class VclTreeListBox extends VclControl {
 				collapse(i);
 		}
 	}
-	
+
 	/**
 	 * Expand the specified entry
 	 * Notice: index starting from 0
@@ -162,11 +162,11 @@ public class VclTreeListBox extends VclControl {
 //		Tester.typeKeys("<right>");
 		invoke(Constant.M_Expand, new Object[]{index + 1, false});
 	}
-	
+
 	public void expand() {
 		expand(getSelIndex());
 	}
-	
+
 	public void expand(String text) {
 		String[] items = getAllItemsText();
 		for (int i = 0; i < items.length; i++) {
@@ -174,8 +174,8 @@ public class VclTreeListBox extends VclControl {
 				expand(i);
 		}
 	}
-	
-    /** 
+
+    /**
      * Select the node via its text
      * @param str
      * @return the index of the node
@@ -183,7 +183,7 @@ public class VclTreeListBox extends VclControl {
     public void select(String str) {
     	select(str, 0);
 	}
-    
+
     /**
      * Select the entry with the given string and after the given index
      * @param str
@@ -200,10 +200,10 @@ public class VclTreeListBox extends VclControl {
 		}
     	throw new RuntimeException(str + " is not found in the tree");
     }
-    
-    
+
+
 	/**
-	 * Return the text of all items 
+	 * Return the text of all items
 	 * @return A String[] includes all items text
 	 */
 	public String[] getAllItemsText() {
@@ -214,7 +214,7 @@ public class VclTreeListBox extends VclControl {
 		}
 		return ret;
 	}
-	
+
 	/**
 	 * Check if the list box has the specified item
 	 * @param str
@@ -230,19 +230,19 @@ public class VclTreeListBox extends VclControl {
 		return false;
 	}
 	/**
-	 * 
+	 *
 	 * @return
 	 */
 	public boolean isChecked(int row) {
 		return ((Boolean)invoke(Constant.M_IsChecked, new Object[]{new Integer(row+1)})).booleanValue();
 	}
-	
+
 	public boolean isChecked(int row, int col) {
 		return ((Boolean)invoke(Constant.M_IsChecked, new Object[]{new Integer(row+1), new Integer(col+1)})).booleanValue();
 	}
-	
+
 	/**
-	 * @param 
+	 * @param
 	 * @return
 	 */
 	public boolean isShowing(String str) {
@@ -256,7 +256,7 @@ public class VclTreeListBox extends VclControl {
 		}
 		return ret;
 	}
-	
+
 	/**
 	 * Check if the selected node is tristate
 	 * @return
@@ -264,11 +264,11 @@ public class VclTreeListBox extends VclControl {
 	public boolean isTristate(int row) {
 		return ((Boolean)invoke(Constant.M_IsTristate, new Object[]{new Integer(row+1)})).booleanValue();
 	}
-	
+
 	public boolean isTristate(int row, int col) {
 		return ((Boolean)invoke(Constant.M_IsTristate, new Object[]{new Integer(row+1), new Integer(col+1)})).booleanValue();
 	}
-	
+
 	/**
 	 * Check if the selected node is tristate
 	 * @return
@@ -276,7 +276,7 @@ public class VclTreeListBox extends VclControl {
 	public boolean isTristate() {
 		return ((Boolean)invoke(Constant.M_IsTristate)).booleanValue();
 	}
-	
+
 	/**
 	 * Get the state of the selected node
 	 * @return
@@ -284,7 +284,7 @@ public class VclTreeListBox extends VclControl {
 	public int getState() {
 		return ((Long)invoke(Constant.M_GetState)).intValue();
 	}
-	
+
 	/**
 	 * Get the state of the selected node
 	 * @return
@@ -292,27 +292,27 @@ public class VclTreeListBox extends VclControl {
 	public int getState(int row) {
 		return ((Long)invoke(Constant.M_GetState, new Object[]{new Integer(row+1)})).intValue();
 	}
-	
+
 	public int getState(int row, int col) {
 		return ((Long)invoke(Constant.M_GetState, new Object[]{new Integer(row+1), new Integer(col+1)})).intValue();
 	}
-	
+
 	/**
-	 * check the selected node 
+	 * check the selected node
 	 *
 	 */
 	public void check()  {
 		invoke(Constant.M_Check);
 	}
-	
+
 	public void check(int row)  {
 		invoke(Constant.M_Check, new Object[]{new Integer(row+1)});
 	}
-	
+
 	public void check(int row, int col)  {
 		invoke(Constant.M_Check, new Object[]{new Integer(row+1), new Integer(col+1)});
 	}
-	
+
 	/**
 	 * uncheck the selected node
 	 *
@@ -320,15 +320,15 @@ public class VclTreeListBox extends VclControl {
 	public void unCheck() {
 		invoke(Constant.M_UnCheck);
 	}
-	
+
 	public void unCheck(int row) {
 		invoke(Constant.M_UnCheck, new Object[]{new Integer(row+1)});
 	}
-	
+
 	public void unCheck(int row, int col) {
 		invoke(Constant.M_UnCheck, new Object[]{new Integer(row+1), new Integer(col+1)});
 	}
-	
+
 	/**
 	 * Set the selected node to tristate
 	 *
@@ -336,16 +336,16 @@ public class VclTreeListBox extends VclControl {
     public void triState() {
     	invoke(Constant.M_TriState);
 	}
-    
-    
+
+
     public void triState(int row) {
     	invoke(Constant.M_TriState, new Object[]{new Integer(row+1)});
 	}
-    
+
     public void triState(int row, int col) {
     	invoke(Constant.M_TriState, new Object[]{new Integer(row+1), new Integer(col+1)});
 	}
-    
+
     /**
 	 * Collapse all nodes in the tree list box.
 	 *
@@ -355,7 +355,7 @@ public class VclTreeListBox extends VclControl {
 			collapse(i);
 		}
 	}
-	
+
 	/**
 	 * Expand all nodes in the tree list box
 	 *
@@ -365,9 +365,9 @@ public class VclTreeListBox extends VclControl {
 			expand(i);
 		}
 	}
-	
+
 	/**
-	 * Select the specified node by path. 
+	 * Select the specified node by path.
 	 * @param path The node path likes "Node1->Node2->Node3"
 	 * @return true if the node exists, false otherwise
 	 */
@@ -389,7 +389,7 @@ public class VclTreeListBox extends VclControl {
 			}
 		}
 	}
-	
+
 	/**
 	 * Get the column type of the given row
 	 * @param row

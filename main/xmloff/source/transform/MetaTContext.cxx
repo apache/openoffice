@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -68,7 +68,7 @@ XMLTokenEnum aMetaTokens[] =
 
 TYPEINIT1( XMLMetaTransformerContext, XMLTransformerContext );
 
-XMLMetaTransformerContext::XMLMetaTransformerContext( XMLTransformerBase& rImp, 
+XMLMetaTransformerContext::XMLMetaTransformerContext( XMLTransformerBase& rImp,
 							  				  const OUString& rQName ) :
 	XMLTransformerContext( rImp, rQName )
 {
@@ -78,13 +78,13 @@ XMLMetaTransformerContext::~XMLMetaTransformerContext()
 {
 }
 
-XMLTransformerContext *XMLMetaTransformerContext::CreateChildContext( 
+XMLTransformerContext *XMLMetaTransformerContext::CreateChildContext(
 			sal_uInt16 /*nPrefix*/,
 			const OUString& rLocalName,
 			const OUString& rQName,
 			const Reference< XAttributeList >& )
 {
-	XMLPersTextContentTContext *pContext = 
+	XMLPersTextContentTContext *pContext =
 		new XMLPersTextContentTContext( GetTransformer(), rQName );
 	XMLMetaContexts_Impl::value_type aVal( rLocalName, pContext );
 	m_aContexts.insert( aVal );
@@ -110,9 +110,9 @@ void XMLMetaTransformerContext::EndElement()
 					GetTransformer().GetNamespaceMap().GetQNameByKey(
 							XML_NAMESPACE_META, GetXMLToken(XML_KEYWORDS ) );
 
-				Reference< XAttributeList > xAttrList = 
+				Reference< XAttributeList > xAttrList =
 					new XMLMutableAttributeList;
-				GetTransformer().GetDocHandler()->startElement( aKeywordsQName, 
+				GetTransformer().GetDocHandler()->startElement( aKeywordsQName,
 															xAttrList );
 			}
 

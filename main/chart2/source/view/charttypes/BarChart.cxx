@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -112,7 +112,7 @@ drawing::Direction3D BarChart::getPreferredDiagramAspectRatio() const
             double fXSlotCount = 1.0;
             if(!m_aZSlots.empty())
                 fXSlotCount = m_aZSlots.begin()->size();
-            
+
             aRet.DirectionZ = aScale.DirectionZ/(aScale.DirectionX + aScale.DirectionX*(fXSlotCount-1.0)*pPosHelper->getScaledSlotWidth());
         }
         else
@@ -154,7 +154,7 @@ awt::Point BarChart::getLabelScreenPositionAndAlignment(
     bool bReverse = !pPosHelper->isMathematicalOrientationY();
     bool bNormalOutside = (!bReverse == !!(fBaseValue < fScaledUpperYValue));
     double fDepth = fScaledUpperBarDepth;
-    
+
     switch(nLabelPlacement)
     {
     case ::com::sun::star::chart::DataLabelPlacement::TOP:
@@ -266,7 +266,7 @@ awt::Point BarChart::getLabelScreenPositionAndAlignment(
         break;
     default:
         DBG_ERROR("this label alignment is not implemented yet");
-        
+
         break;
     }
     if(3==m_nDimension)
@@ -453,7 +453,7 @@ void BarChart::createShapes()
     bool bOnlyConnectionLinesForThisPoint = false;
 
     adaptOverlapAndGapwidthForGroupBarsPerAxis();
-    
+
     //better performance for big data
     std::map< VDataSeries*, FormerBarPoint > aSeriesFormerPointMap;
     m_bPointsWereSkipped = false;
@@ -476,7 +476,7 @@ void BarChart::createShapes()
         {
             ::std::vector< VDataSeriesGroup >::iterator             aXSlotIter = aZSlotIter->begin();
             const ::std::vector< VDataSeriesGroup >::const_iterator aXSlotEnd = aZSlotIter->end();
-            
+
             for( aXSlotIter = aZSlotIter->begin(); aXSlotIter != aXSlotEnd; aXSlotIter++ )
 	        {
                 sal_Int32 nAttachedAxisIndex = aXSlotIter->getAttachedAxisIndexForFirstSeries();
@@ -613,7 +613,7 @@ void BarChart::createShapes()
                     if(pPosHelper->isStrongLowerRequested(0) && fUnscaledLogicX==pPosHelper->getLogicMaxX())
                         continue;//point not visible
                     double fLogicX = pPosHelper->getScaledSlotPos( fUnscaledLogicX, fSlotX );
-                    
+
                     double fLogicBarHeight = (*aSeriesIter)->getYValue( nPointIndex );
                     if( ::rtl::math::isNan( fLogicBarHeight )) //no value at this category
                         continue;
@@ -714,7 +714,7 @@ void BarChart::createShapes()
                                     fLogicBarDepth*=-1.0;
                             }
                         }
-                        
+
                         //better performance for big data
                         FormerBarPoint aFormerPoint( aSeriesFormerPointMap[pSeries] );
                         pPosHelper->setCoordinateSystemResolution( m_aCoordinateSystemResolution );
@@ -815,7 +815,7 @@ void BarChart::createShapes()
                                 //    if( !aLineProperties.isLineVisible() )
                                 //    {
                                 //        //todo
-                                //        //aLineProperties.Color = 
+                                //        //aLineProperties.Color =
                                 //    }
 
                                 //    xShape = m_pShapeFactory->createLine2D( xPointGroupShape_Shapes
@@ -852,7 +852,7 @@ void BarChart::createShapes()
 
                             LabelAlignment eAlignment(LABEL_ALIGN_CENTER);
                             sal_Int32 nLabelPlacement = pSeries->getLabelPlacement( nPointIndex, m_xChartTypeModel, m_nDimension, pPosHelper->isSwapXAndY() );
-                            
+
                             double fLowerBarDepth = fLogicBarDepth;
                             double fUpperBarDepth = fLogicBarDepth;
                             {

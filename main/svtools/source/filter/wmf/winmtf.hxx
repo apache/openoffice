@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -302,7 +302,7 @@ struct LOGFONTW
 #define WIN_MTF_ASSERT_MIFE     0x20000000
 
 void WinMtfAssertHandler( const sal_Char*, sal_uInt32 nFlags = WIN_MTF_ASSERT_MIFE );
-#endif 
+#endif
 
 enum WinMtfClipPathType{ EMPTY, RECTANGLE, COMPLEX };
 
@@ -573,12 +573,12 @@ class WinMtfOutput
 		sal_Int32			mnDevWidth, mnDevHeight;
 		sal_Int32			mnWinOrgX, mnWinOrgY;		// aktuelles Window-Origin
 		sal_Int32			mnWinExtX, mnWinExtY;		// aktuelles Window-Extent
-	
+
 		sal_Int32			mnPixX, mnPixY;				// Reference Device in pixel
 		sal_Int32			mnMillX, mnMillY;			// Reference Device in Mill
 		Rectangle			mrclFrame;					// rectangle in logical units 1/100th mm
 		Rectangle			mrclBounds;
-        
+
 		GDIMetaFile*		mpGDIMetaFile;
 
 		void				UpdateLineStyle();
@@ -729,11 +729,11 @@ private:
 	sal_uInt32		nRecSize;
 
 	// embedded EMF data
-	SvMemoryStream* pEMFStream; 
+	SvMemoryStream* pEMFStream;
 
 	// total number of comment records containing EMF data
 	sal_uInt32      nEMFRecCount;
-	
+
 	// number of EMF records read
 	sal_uInt32      nEMFRec;
 
@@ -760,7 +760,7 @@ public:
 
 					WMFReader( SvStream& rStreamWMF, GDIMetaFile& rGDIMetaFile, FilterConfigItem* pConfigItem = NULL )
 						: WinMtf( new WinMtfOutput( rGDIMetaFile ), rStreamWMF, pConfigItem ) {};
-                    
+
                     ~WMFReader();
 
 	// Liesst aus dem Stream eine WMF-Datei und fuellt das GDIMetaFile

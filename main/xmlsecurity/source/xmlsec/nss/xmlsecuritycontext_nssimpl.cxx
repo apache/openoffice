@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,11 +50,11 @@ using ::rtl::OUString ;
 using ::com::sun::star::xml::crypto::XSecurityEnvironment ;
 using ::com::sun::star::xml::crypto::XXMLSecurityContext ;
 
-XMLSecurityContext_NssImpl :: XMLSecurityContext_NssImpl( const Reference< XMultiServiceFactory >& aFactory ) 
+XMLSecurityContext_NssImpl :: XMLSecurityContext_NssImpl( const Reference< XMultiServiceFactory >& aFactory )
 	://i39448 : m_pKeysMngr( NULL ) ,
 	m_xServiceManager( aFactory ) ,
 	m_nDefaultEnvIndex(-1)
-	//m_xSecurityEnvironment( NULL ) 
+	//m_xSecurityEnvironment( NULL )
 {
 	//Init xmlsec library
 	if( xmlSecInit() < 0 ) {
@@ -108,25 +108,25 @@ sal_Int32 SAL_CALL XMLSecurityContext_NssImpl::getSecurityEnvironmentNumber(  )
 {
 	return m_vSecurityEnvironments.size();
 }
-	
+
 ::com::sun::star::uno::Reference< ::com::sun::star::xml::crypto::XSecurityEnvironment > SAL_CALL
 	XMLSecurityContext_NssImpl::getSecurityEnvironmentByIndex( sal_Int32 index )
 	throw (::com::sun::star::uno::RuntimeException)
 {
 	::com::sun::star::uno::Reference< ::com::sun::star::xml::crypto::XSecurityEnvironment > xSecurityEnvironment;
-	
+
 	if (index >= 0 && index < ( sal_Int32 )m_vSecurityEnvironments.size())
 	{
 		xSecurityEnvironment = m_vSecurityEnvironments[index];
 	}
 	else
 		throw RuntimeException() ;
-		
+
 	return xSecurityEnvironment;
 }
-	
-::com::sun::star::uno::Reference< ::com::sun::star::xml::crypto::XSecurityEnvironment > SAL_CALL 
-	XMLSecurityContext_NssImpl::getSecurityEnvironment(  ) 
+
+::com::sun::star::uno::Reference< ::com::sun::star::xml::crypto::XSecurityEnvironment > SAL_CALL
+	XMLSecurityContext_NssImpl::getSecurityEnvironment(  )
 	throw (::com::sun::star::uno::RuntimeException)
 {
 	if (m_nDefaultEnvIndex >= 0 && m_nDefaultEnvIndex < ( sal_Int32 )m_vSecurityEnvironments.size())
@@ -221,7 +221,7 @@ void SAL_CALL XMLSecurityContext_NssImpl :: setSecurityEnvironment( const Refere
 }
 
 /* XXMLSecurityContext */
-Reference< XSecurityEnvironment > SAL_CALL XMLSecurityContext_NssImpl :: getSecurityEnvironment() 
+Reference< XSecurityEnvironment > SAL_CALL XMLSecurityContext_NssImpl :: getSecurityEnvironment()
 	throw (RuntimeException)
 {
 	return	m_xSecurityEnvironment ;
@@ -281,10 +281,10 @@ Reference< XSingleServiceFactory > XMLSecurityContext_NssImpl :: impl_createFact
 
 #if 0 //not useful any longer
 /* XUnoTunnel */
-sal_Int64 SAL_CALL XMLSecurityContext_NssImpl :: getSomething( const Sequence< sal_Int8 >& aIdentifier ) 
+sal_Int64 SAL_CALL XMLSecurityContext_NssImpl :: getSomething( const Sequence< sal_Int8 >& aIdentifier )
 throw (RuntimeException)
 {
-	if( aIdentifier.getLength() == 16 && 0 == rtl_compareMemory( getUnoTunnelId().getConstArray(), aIdentifier.getConstArray(), 16 ) ) { 
+	if( aIdentifier.getLength() == 16 && 0 == rtl_compareMemory( getUnoTunnelId().getConstArray(), aIdentifier.getConstArray(), 16 ) ) {
 		return ( sal_Int64 )this ;
 	}
 	return 0 ;

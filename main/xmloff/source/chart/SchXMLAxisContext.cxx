@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -235,7 +235,7 @@ void SchXMLAxisContext::CreateGrid( OUString sAutoStyleName, bool bIsMajor )
         xGridProp = xAxis->getMajorGrid();
     else
         xGridProp = xAxis->getMinorGrid();
-	
+
     // set properties
 	if( xGridProp.is())
 	{
@@ -457,9 +457,9 @@ void SchXMLAxisContext::CreateAxis()
             return;
     }
 
-    
+
     m_xAxisProps = Reference<beans::XPropertySet>( lcl_getChartAxis( m_aCurrentAxis, m_xDiagram ), uno::UNO_QUERY );
-    
+
     if( m_bAddMissingXAxisForNetCharts && m_aCurrentAxis.eDimension==SCH_XML_AXIS_Y && m_aCurrentAxis.nAxisIndex==0 )
     {
         try
@@ -489,7 +489,7 @@ void SchXMLAxisContext::CreateAxis()
 
         if( m_bAxisTypeImported )
             m_xAxisProps->setPropertyValue( OUString::createFromAscii( "AxisType" ), uno::makeAny(m_nAxisType) );
-        
+
         if( m_aAutoStyleName.getLength())
         {
             const SvXMLStylesContext* pStylesCtxt = m_rImportHelper.GetAutoStylesContext();
@@ -521,7 +521,7 @@ void SchXMLAxisContext::CreateAxis()
                     if( m_bAddMissingXAxisForNetCharts )
                     {
                         //copy style from y axis to added x axis:
-                        
+
                         Reference< chart::XAxisSupplier > xAxisSuppl( xDiaProp, uno::UNO_QUERY );
 		                if( xAxisSuppl.is() )
                         {
@@ -552,9 +552,9 @@ void SchXMLAxisContext::CreateAxis()
                     if( m_bAdaptXAxisOrientationForOld2DBarCharts && m_aCurrentAxis.eDimension == SCH_XML_AXIS_X )
                     {
                         bool bIs3DChart = false;
-                        if( xDiaProp.is() && ( xDiaProp->getPropertyValue(OUString(RTL_CONSTASCII_USTRINGPARAM("Dim3D"))) >>= bIs3DChart ) 
+                        if( xDiaProp.is() && ( xDiaProp->getPropertyValue(OUString(RTL_CONSTASCII_USTRINGPARAM("Dim3D"))) >>= bIs3DChart )
                             && !bIs3DChart )
-                        {	
+                        {
                             Reference< chart2::XChartDocument > xChart2Document( GetImport().GetModel(), uno::UNO_QUERY );
                             if( xChart2Document.is() )
                             {
@@ -779,12 +779,12 @@ void SchXMLAxisContext::CorrectAxisPositions( const Reference< chart2::XChartDoc
                     //Reference< chart2::XAxis > xMajorZAxis = lcl_getAxis( xCooSys, 2, 0 );
                     Reference< chart2::XAxis > xSecondaryXAxis = lcl_getAxis( xCooSys, 0, 1 );
                     Reference< chart2::XAxis > xSecondaryYAxis = lcl_getAxis( xCooSys, 1, 1 );
-                    
+
                     Reference< beans::XPropertySet > xMainXAxisProp( xMainXAxis, uno::UNO_QUERY );
                     Reference< beans::XPropertySet > xMainYAxisProp( xMainYAxis, uno::UNO_QUERY );
                     Reference< beans::XPropertySet > xSecondaryXAxisProp( xSecondaryXAxis, uno::UNO_QUERY );
                     Reference< beans::XPropertySet > xSecondaryYAxisProp( xSecondaryYAxis, uno::UNO_QUERY );
-                    
+
                     if( xMainXAxisProp.is() && xMainYAxisProp.is() )
                     {
                         chart2::ScaleData aMainXScale = xMainXAxis->getScaleData();
@@ -816,7 +816,7 @@ void SchXMLAxisContext::CorrectAxisPositions( const Reference< chart2::XChartDoc
                                 if( xSecondaryYAxisProp.is() )
                                     xSecondaryYAxisProp->setPropertyValue( OUString::createFromAscii("CrossoverPosition")
                                     , uno::makeAny( ::com::sun::star::chart::ChartAxisPosition_END) );
-                            }    
+                            }
                         }
                         else
                         {

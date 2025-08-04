@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -111,7 +111,7 @@ namespace
                                     }
                                 }
 
-                                // remember new last corected character node
+                                // remember new last corrected character node
                                 pLast = pCharNode;
                             }
                             break;
@@ -324,7 +324,7 @@ namespace svgio
                         mpTarget->parseAttributes(xAttribs);
                         break;
                     }
-                    
+
                     /// styles (as stylesheets)
                     case SVGTokenStyle:
                     {
@@ -395,8 +395,8 @@ namespace svgio
                         /// invalid token, ignore
 #ifdef DBG_UTIL
                         myAssert(
-                            rtl::OUString::createFromAscii("Unknown Base SvgToken <") + 
-                            aName + 
+                            rtl::OUString::createFromAscii("Unknown Base SvgToken <") +
+                            aName +
                             rtl::OUString::createFromAscii("> (!)"));
 #endif
                         break;
@@ -417,7 +417,7 @@ namespace svgio
                 switch(aSVGToken)
                 {
                     /// valid tokens for which a new one was created
-                    
+
                     /// structural elements
                     case SVGTokenDefs:
                     case SVGTokenG:
@@ -434,7 +434,7 @@ namespace svgio
                     case SVGTokenPolyline:
                     case SVGTokenRect:
                     case SVGTokenImage:
-                    
+
                     /// title and description
                     case SVGTokenTitle:
                     case SVGTokenDesc:
@@ -451,7 +451,7 @@ namespace svgio
                     case SVGTokenTspan:
                     case SVGTokenTextPath:
                     case SVGTokenTref:
-                    
+
                     /// styles (as stylesheets)
                     case SVGTokenStyle:
 
@@ -581,7 +581,7 @@ namespace svgio
                             if(maCssContents.size())
                             {
                                 const ::rtl::OUString aTrimmedChars(aChars.trim());
-                                
+
                                 if(aTrimmedChars.getLength())
                                 {
                                     std::vector< rtl::OUString >::iterator aString(maCssContents.end() - 1);

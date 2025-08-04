@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -454,7 +454,7 @@ sal_Bool ScViewFunc::CopyToClip( ScDocument* pClipDoc, sal_Bool bCut, sal_Bool b
                     if (nRowDelta)
                         aClipParam.meDirection = ScClipParam::Row;
                 }
-   
+
                 SCCOL nColSize = p->aEnd.Col() - p->aStart.Col() + 1;
                 SCROW nRowSize = p->aEnd.Row() - p->aStart.Row() + 1;
 
@@ -466,7 +466,7 @@ sal_Bool ScViewFunc::CopyToClip( ScDocument* pClipDoc, sal_Bool bCut, sal_Bool b
                 }
                 if (aClipParam.meDirection == ScClipParam::Row && nColSize != nPrevColSize)
                 {
-                    // likewise, row-oriented ranges must have identical 
+                    // likewise, row-oriented ranges must have identical
                     // column size.
                     bValidRanges = false;
                     break;
@@ -820,7 +820,7 @@ sal_Bool ScViewFunc::PasteFromSystem( sal_uLong nFormatId, sal_Bool bApi )
 //----------------------------------------------------------------------------
 //		P A S T E
 
-sal_Bool ScViewFunc::PasteOnDrawObjectLinked( 
+sal_Bool ScViewFunc::PasteOnDrawObjectLinked(
     const uno::Reference<datatransfer::XTransferable>& rxTransferable,
     SdrObject& rHitObj)
 {
@@ -1268,7 +1268,7 @@ sal_Bool ScViewFunc::PasteFromClip( sal_uInt16 nFlags, ScDocument* pClipDoc,
 	//	pDoc->HasCommonAttr( StartCol,nStartRow, nUndoEndCol,nUndoEndRow, nStartTab,
 	//							pClipDoc, nClipStartX, nClipStartY );
 
-    ScDocFunc& rDocFunc = pDocSh->GetDocFunc(); 
+    ScDocFunc& rDocFunc = pDocSh->GetDocFunc();
     if ( bRecord )
     {
         String aUndo = ScGlobal::GetRscString( pClipDoc->IsCutMode() ? STR_UNDO_MOVE : STR_UNDO_COPY );
@@ -1541,7 +1541,7 @@ sal_Bool ScViewFunc::PasteFromClip( sal_uInt16 nFlags, ScDocument* pClipDoc,
 
 bool ScViewFunc::PasteMultiRangesFromClip(
     sal_uInt16 nFlags, ScDocument* pClipDoc, sal_uInt16 nFunction,
-    bool bSkipEmpty, bool bTranspose, bool bAsLink, bool bAllowDialogs, 
+    bool bSkipEmpty, bool bTranspose, bool bAsLink, bool bAllowDialogs,
     InsCellCmd eMoveMode, sal_uInt16 /*nContFlags*/, sal_uInt16 nUndoFlags)
 {
     ScViewData& rViewData = *GetViewData();
@@ -1587,7 +1587,7 @@ bool ScViewFunc::PasteMultiRangesFromClip(
     // For multi-selection paste, we don't support cell duplication for larger
     // destination range.  In case the destination is marked, we reset it to
     // the clip size.
-    ScRange aMarkedRange(rCurPos.Col(), rCurPos.Row(), nTab1, 
+    ScRange aMarkedRange(rCurPos.Col(), rCurPos.Row(), nTab1,
                          rCurPos.Col()+nColSize-1, rCurPos.Row()+nRowSize-1, nTab2);
 
     // Extend the marked range to account for filtered rows in the destination
@@ -1598,8 +1598,8 @@ bool ScViewFunc::PasteMultiRangesFromClip(
             return false;
     }
 
-    bool bAskIfNotEmpty = 
-        bAllowDialogs && (nFlags & IDF_CONTENTS) && 
+    bool bAskIfNotEmpty =
+        bAllowDialogs && (nFlags & IDF_CONTENTS) &&
         nFunction == PASTE_NOFUNC && SC_MOD()->GetInputOptions().GetReplaceCellsWarn();
 
     if (bAskIfNotEmpty)
@@ -1648,10 +1648,10 @@ bool ScViewFunc::PasteMultiRangesFromClip(
 
     CursorSwitcher aCursorSwitch(this);
     sal_uInt16 nNoObjFlags = nFlags & ~IDF_OBJECTS;
-    pDoc->CopyMultiRangeFromClip(rCurPos, aMark, nNoObjFlags, pClipDoc, 
+    pDoc->CopyMultiRangeFromClip(rCurPos, aMark, nNoObjFlags, pClipDoc,
                                  true, bAsLink, false, bSkipEmpty);
 
-    if (pMixDoc.get())          
+    if (pMixDoc.get())
         pDoc->MixDocument(aMarkedRange, nFunction, bSkipEmpty, pMixDoc.get());
 
     AdjustBlockHeight();            // update row heights before pasting objects
@@ -1659,7 +1659,7 @@ bool ScViewFunc::PasteMultiRangesFromClip(
     if (nFlags & IDF_OBJECTS)
     {
         //  Paste the drawing objects after the row heights have been updated.
-        pDoc->CopyMultiRangeFromClip(rCurPos, aMark, IDF_OBJECTS, pClipDoc, 
+        pDoc->CopyMultiRangeFromClip(rCurPos, aMark, IDF_OBJECTS, pClipDoc,
                                      true, false, false, true);
     }
 
@@ -1681,13 +1681,13 @@ bool ScViewFunc::PasteMultiRangesFromClip(
         aOptions.bAsLink    = bAsLink;
         aOptions.eMoveMode  = eMoveMode;
 
-        ScUndoPaste* pUndo = new ScUndoPaste(pDocSh, 
-            aMarkedRange.aStart.Col(), 
-            aMarkedRange.aStart.Row(), 
-            aMarkedRange.aStart.Tab(), 
-            aMarkedRange.aEnd.Col(), 
-            aMarkedRange.aEnd.Row(), 
-            aMarkedRange.aEnd.Tab(), 
+        ScUndoPaste* pUndo = new ScUndoPaste(pDocSh,
+            aMarkedRange.aStart.Col(),
+            aMarkedRange.aStart.Row(),
+            aMarkedRange.aStart.Tab(),
+            aMarkedRange.aEnd.Col(),
+            aMarkedRange.aEnd.Row(),
+            aMarkedRange.aEnd.Tab(),
             aMark, pUndoDoc.release(), NULL, nFlags|nUndoFlags, NULL, NULL, NULL, NULL, false, &aOptions);
 
         if (bInsertCells)

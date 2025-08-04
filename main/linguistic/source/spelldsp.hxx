@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -110,7 +110,7 @@ public:
     virtual sal_Bool SAL_CALL isValid( const ::rtl::OUString& aWord, const ::com::sun::star::lang::Locale& aLocale, const ::com::sun::star::beans::PropertyValues& aProperties ) throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::linguistic2::XSpellAlternatives > SAL_CALL spell( const ::rtl::OUString& aWord, const ::com::sun::star::lang::Locale& aLocale, const ::com::sun::star::beans::PropertyValues& aProperties ) throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
 
-    // XSupportedLanguages 
+    // XSupportedLanguages
     virtual ::com::sun::star::uno::Sequence< ::sal_Int16 > SAL_CALL getLanguages(  ) throw (::com::sun::star::uno::RuntimeException);
     virtual ::sal_Bool SAL_CALL hasLanguage( ::sal_Int16 nLanguage ) throw (::com::sun::star::uno::RuntimeException);
 
@@ -139,7 +139,7 @@ inline ::com::sun::star::uno::Reference<
 	::com::sun::star::beans::XPropertySet >
 		SpellCheckerDispatcher::GetPropSet()
 {
-	return xPropSet.is() ? 
+	return xPropSet.is() ?
 		xPropSet : xPropSet = linguistic::GetLinguProperties();
 }
 
@@ -148,7 +148,7 @@ inline ::com::sun::star::uno::Reference<
 	::com::sun::star::linguistic2::XSearchableDictionaryList >
 		SpellCheckerDispatcher::GetDicList()
 {
-	return xDicList.is() ? 
+	return xDicList.is() ?
 		xDicList : xDicList = linguistic::GetSearchableDictionaryList();
 }
 

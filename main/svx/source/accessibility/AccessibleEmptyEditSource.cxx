@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -118,7 +118,7 @@ namespace accessibility
 
         sal_uInt16			GetItemState( const ESelection& /*rSel*/, sal_uInt16 /*nWhich*/ ) const { return 0; }
         sal_uInt16			GetItemState( sal_uInt32 /*nPara*/, sal_uInt16 /*nWhich*/ ) const { return 0; }
-        
+
         SfxItemPool* 	GetPool() const { return NULL; }
 
         void			QuickInsertText( const String& /*rText*/, const ESelection& /*rSel*/ ) {}
@@ -132,7 +132,7 @@ namespace accessibility
         xub_StrLen  AppendTextPortion( sal_uInt32 /*nPara*/, const String & /*rText*/, const SfxItemSet & /*rSet*/ ) { return 0; }
 
         //XTextCopy
-        void        CopyText(const SvxTextForwarder& ){} 
+        void        CopyText(const SvxTextForwarder& ){}
 
         XubString		CalcFieldValue( const SvxFieldItem& /*rField*/, sal_uInt32 /*nPara*/, sal_uInt16 /*nPos*/, Color*& /*rpTxtColor*/, Color*& /*rpFldColor*/ )
         {
@@ -283,7 +283,7 @@ namespace accessibility
         ::std::auto_ptr< SvxEditSource > tmp = mpEditSource;
         mpEditSource = pProxySource;
         pProxySource = tmp;
-        
+
         // register as listener
         StartListening( mpEditSource->GetBroadcaster() );
 

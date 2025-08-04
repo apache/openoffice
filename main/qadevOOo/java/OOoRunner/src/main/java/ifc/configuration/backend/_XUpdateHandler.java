@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,70 +45,70 @@ public class _XUpdateHandler extends MultiMethodTest {
 
         try {
             xLayerHandler.startLayer();
-            xLayerHandler.overrideNode("org.openoffice.Setup", (short) 0, 
+            xLayerHandler.overrideNode("org.openoffice.Setup", (short) 0,
                                        false);
             xLayerHandler.overrideNode("Office", (short) 0, false);
-            xLayerHandler.overrideProperty("ooSetupInstCompleted", (short) 0, 
-                                           new Type(java.lang.String.class), 
+            xLayerHandler.overrideProperty("ooSetupInstCompleted", (short) 0,
+                                           new Type(java.lang.String.class),
                                            false);
             xLayerHandler.setPropertyValue(new Boolean(false));
             xLayerHandler.endProperty();
-            xLayerHandler.overrideProperty("ooSetupShowIntro", (short) 0, 
-                                           new Type(java.lang.String.class), 
+            xLayerHandler.overrideProperty("ooSetupShowIntro", (short) 0,
+                                           new Type(java.lang.String.class),
                                            false);
             xLayerHandler.setPropertyValue(new Boolean(true));
             xLayerHandler.endProperty();
-            xLayerHandler.overrideProperty("ooSetupLocales", (short) 0, 
-                                           new Type(java.lang.String.class), 
+            xLayerHandler.overrideProperty("ooSetupLocales", (short) 0,
+                                           new Type(java.lang.String.class),
                                            false);
             xLayerHandler.setPropertyValue("en-US");
             xLayerHandler.endProperty();
             xLayerHandler.overrideNode("Factories", (short) 0, false);
-            xLayerHandler.addOrReplaceNode("com.sun.star.chart.ChartDocument", 
+            xLayerHandler.addOrReplaceNode("com.sun.star.chart.ChartDocument",
                                            (short) 0);
-            xLayerHandler.overrideProperty("ooSetupFactoryEmptyDocumentURL", 
-                                           (short) 0, 
-                                           new Type(java.lang.String.class), 
+            xLayerHandler.overrideProperty("ooSetupFactoryEmptyDocumentURL",
+                                           (short) 0,
+                                           new Type(java.lang.String.class),
                                            false);
             xLayerHandler.setPropertyValue("private:factory/schart");
             xLayerHandler.endProperty();
-            xLayerHandler.overrideProperty("ooSetupFactoryIcon", (short) 0, 
-                                           new Type(java.lang.Long.class), 
+            xLayerHandler.overrideProperty("ooSetupFactoryIcon", (short) 0,
+                                           new Type(java.lang.Long.class),
                                            false);
             xLayerHandler.setPropertyValue(new Integer(13));
             xLayerHandler.endProperty();
-            xLayerHandler.overrideProperty("ooSetupFactoryShortName", 
-                                           (short) 0, 
-                                           new Type(java.lang.String.class), 
+            xLayerHandler.overrideProperty("ooSetupFactoryShortName",
+                                           (short) 0,
+                                           new Type(java.lang.String.class),
                                            false);
             xLayerHandler.setPropertyValue("schart");
             xLayerHandler.setPropertyValueForLocale("TemplateFile", "en-US");
             xLayerHandler.endProperty();
-            xLayerHandler.overrideProperty("ooSetupFactoryTemplateFile", 
-                                           (short) 0, 
-                                           new Type(java.lang.String.class), 
+            xLayerHandler.overrideProperty("ooSetupFactoryTemplateFile",
+                                           (short) 0,
+                                           new Type(java.lang.String.class),
                                            false);
             xLayerHandler.setPropertyValue("empty");
             xLayerHandler.endProperty();
-            xLayerHandler.addProperty("ooSetupFactoryTemplateFile", (short) 0, 
+            xLayerHandler.addProperty("ooSetupFactoryTemplateFile", (short) 0,
                                       new Type(java.lang.String.class));
-            xLayerHandler.addPropertyWithValue("ooSetupFactoryTemplateFile", 
+            xLayerHandler.addPropertyWithValue("ooSetupFactoryTemplateFile",
                                                (short) 0, "TemplateFile");
             xLayerHandler.endNode();
 
             xLayerHandler.addOrReplaceNode("dropme", (short) 0);
-            xLayerHandler.overrideProperty("anyway", (short) 0, 
-                                           new Type(java.lang.String.class), 
+            xLayerHandler.overrideProperty("anyway", (short) 0,
+                                           new Type(java.lang.String.class),
                                            false);
             xLayerHandler.setPropertyValue("nice");
             xLayerHandler.endProperty();
             xLayerHandler.dropNode("dropme");
             xLayerHandler.endNode();
 
-            xLayerHandler.addOrReplaceNodeFromTemplate("FromTemplate", 
+            xLayerHandler.addOrReplaceNodeFromTemplate("FromTemplate",
                                                        new com.sun.star.configuration.backend.TemplateIdentifier(
-                                                               "org.openoffice.Setup", 
-                                                               "Setup"), 
+                                                               "org.openoffice.Setup",
+                                                               "Setup"),
                                                        (short) 0);
             xLayerHandler.endNode();
 
@@ -213,17 +213,17 @@ public class _XUpdateHandler extends MultiMethodTest {
             log.println("Layer called (before): " + xLayer.hasBeenCalled());
             oObj.startUpdate();
             oObj.addOrReplaceNode("whatever", (short) 0);
-            oObj.addOrReplaceNodeFromTemplate("Office", (short) 0, 
+            oObj.addOrReplaceNodeFromTemplate("Office", (short) 0,
                                               new TemplateIdentifier());
-            oObj.addOrReplaceProperty("prop", (short) 0, 
+            oObj.addOrReplaceProperty("prop", (short) 0,
                                       new Type(java.lang.String.class));
             oObj.addOrReplacePropertyWithValue("prop2", (short) 0, "this");
-            oObj.modifyProperty("ooSetupFactoryIcon", (short) 0, (short) 0, 
+            oObj.modifyProperty("ooSetupFactoryIcon", (short) 0, (short) 0,
                                 new Type(java.lang.String.class));
             oObj.resetPropertyValue();
             oObj.resetPropertyValueForLocale("en-US");
             oObj.endProperty();
-            oObj.modifyProperty("ooSetupFactoryEmptyDocumentURL", (short) 0, 
+            oObj.modifyProperty("ooSetupFactoryEmptyDocumentURL", (short) 0,
                                 (short) 0, new Type(java.lang.String.class));
             oObj.setPropertyValue("newValue");
             oObj.setPropertyValueForLocale("newValue-US", "de-DE");

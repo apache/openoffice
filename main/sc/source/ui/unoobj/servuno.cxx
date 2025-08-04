@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -59,7 +59,7 @@
 #include <com/sun/star/document/XCodeNameQuery.hpp>
 #include <com/sun/star/drawing/XDrawPagesSupplier.hpp>
 #include <com/sun/star/form/XFormsSupplier.hpp>
-#include <svx/unomod.hxx> 
+#include <svx/unomod.hxx>
 #include <vbahelper/vbaaccesshelper.hxx>
 
 #include <comphelper/processfactory.hxx>
@@ -98,7 +98,7 @@ public:
             throw uno::RuntimeException();
         if ( sName == pDoc->GetCodeName() )
             maCachedObject = maWorkbook;
-        else 
+        else
         {
             String sCodeName;
             SCTAB nCount = pDoc->GetTableCount();
@@ -119,7 +119,7 @@ public:
                         aArgs[0] = maWorkbook;
                         aArgs[1] = uno::Any( xModel );
                         aArgs[2] = uno::Any( rtl::OUString( sSheetName ) );
-                        // use the convience function
+                        // use the convenience function
                         maCachedObject <<= ooo::vba::createVBAUnoAPIServiceWithArgs( mpDocShell, "ooo.vba.excel.Worksheet", aArgs );
                         break;
                     }
@@ -145,7 +145,7 @@ public:
         if ( !pDoc )
             throw uno::RuntimeException();
         SCTAB nCount = pDoc->GetTableCount();
-        uno::Sequence< rtl::OUString > aNames( nCount + 1 ); 
+        uno::Sequence< rtl::OUString > aNames( nCount + 1 );
         SCTAB index = 0;
         String sCodeName;
         for( ; index < nCount; ++index )
@@ -192,7 +192,7 @@ public:
                     sal_Int32 nCntrls = xFormControls->getCount();
                     for( sal_Int32 cIndex = 0; cIndex < nCntrls; ++cIndex )
                     {
-                        uno::Reference< uno::XInterface > xControl( xFormControls->getByIndex( cIndex ), uno::UNO_QUERY_THROW );	
+                        uno::Reference< uno::XInterface > xControl( xFormControls->getByIndex( cIndex ), uno::UNO_QUERY_THROW );
                         bMatched = ( xControl == xIf );
                         if ( bMatched )
                         {

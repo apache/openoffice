@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package fvt.uno.sw.puretext;
@@ -66,12 +66,12 @@ public class InsertCharacterToTable {
 		xTable.initialize(4, 4);
 		xText.insertTextContent(xTextCursor, xTable, false);
         //insert text in to table cell
-		insertIntoCell( "A1","test", xTable );	
+		insertIntoCell( "A1","test", xTable );
 		insertIntoCell( "C4","123", xTable );
 		insertIntoCell( "D2","fsdf132134", xTable );
 		insertIntoCell( "B3","*^$%^$^$", xTable );
 
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -81,7 +81,7 @@ public class InsertCharacterToTable {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -90,7 +90,7 @@ public class InsertCharacterToTable {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
 		// reopen the document and assert create table successfully
@@ -103,7 +103,7 @@ public class InsertCharacterToTable {
 		assertEquals("assert table cell text","*^$%^$^$",getFromCell("B3", xTable_Assert_odt));
 		assertEquals("assert table cell text","123",getFromCell("C4", xTable_Assert_odt));
 		assertEquals("assert table cell text","fsdf132134",getFromCell("D2", xTable_Assert_odt));
-		
+
 		// reopen the document and assert create table successfully
 		XTextDocument assertDocument_doc = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class,app.loadDocument(Testspace.getPath("output/test.doc")));
 		XTextTablesSupplier xTablesSupplier_doc = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_doc);
@@ -128,5 +128,5 @@ public class InsertCharacterToTable {
 		XText xCellText = (XText) UnoRuntime.queryInterface(XText.class, xTable.getCellByName(sCellName));
 		// Set the text in the cell to sText
 		return xCellText.getString();
-	}	
+	}
 }

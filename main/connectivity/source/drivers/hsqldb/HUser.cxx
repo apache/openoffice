@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -113,7 +113,7 @@ void OHSQLUser::findPrivilegesAndGrantPrivileges(const ::rtl::OUString& objName,
 				xRes = xMeta->getTablePrivileges(aCatalog,sSchema,sTable);
 			}
 			break;
-		
+
 		case PrivilegeObject::COLUMN:
 			{
 				Any aCatalog;
@@ -123,7 +123,7 @@ void OHSQLUser::findPrivilegesAndGrantPrivileges(const ::rtl::OUString& objName,
 			}
 			break;
 	}
-	
+
 	if ( xRes.is() )
 	{
 		static const ::rtl::OUString sSELECT	= ::rtl::OUString::createFromAscii("SELECT");
@@ -145,7 +145,7 @@ void OHSQLUser::findPrivilegesAndGrantPrivileges(const ::rtl::OUString& objName,
 			::rtl::OUString sGrantee	= xCurrentRow->getString(5);
 			::rtl::OUString sPrivilege	= xCurrentRow->getString(6);
 			::rtl::OUString sGrantable	= xCurrentRow->getString(7);
-			
+
 			if (!m_Name.equalsIgnoreAsciiCase(sGrantee))
 				continue;
 
@@ -212,7 +212,7 @@ sal_Int32 SAL_CALL OHSQLUser::getGrantablePrivileges( const ::rtl::OUString& obj
 {
 	::osl::MutexGuard aGuard(m_aMutex);
 	checkDisposed(OUser_BASE_RBHELPER::rBHelper.bDisposed);
-    
+
 	sal_Int32 nRights,nRightsWithGrant;
 	findPrivilegesAndGrantPrivileges(objName,objType,nRights,nRightsWithGrant);
 	return nRightsWithGrant;
@@ -226,7 +226,7 @@ void SAL_CALL OHSQLUser::grantPrivileges( const ::rtl::OUString& objName, sal_In
         const ::rtl::OUString sError( aResources.getResourceString(STR_PRIVILEGE_NOT_GRANTED));
         ::dbtools::throwGenericSQLException(sError,*this);
     } // if ( objType != PrivilegeObject::TABLE )
-    
+
 
 	::osl::MutexGuard aGuard(m_aMutex);
 
@@ -241,7 +241,7 @@ void SAL_CALL OHSQLUser::grantPrivileges( const ::rtl::OUString& objName, sal_In
 		sGrant += ::dbtools::quoteTableName(xMeta,objName,::dbtools::eInDataManipulation);
 		sGrant += ::rtl::OUString::createFromAscii(" TO ");
 		sGrant += m_Name;
-		
+
 		Reference<XStatement> xStmt = m_xConnection->createStatement();
 		if(xStmt.is())
 			xStmt->execute(sGrant);
@@ -271,7 +271,7 @@ void SAL_CALL OHSQLUser::revokePrivileges( const ::rtl::OUString& objName, sal_I
 		sGrant += ::dbtools::quoteTableName(xMeta,objName,::dbtools::eInDataManipulation);
 		sGrant += ::rtl::OUString::createFromAscii(" FROM ");
 		sGrant += m_Name;
-		
+
 		Reference<XStatement> xStmt = m_xConnection->createStatement();
 		if(xStmt.is())
 			xStmt->execute(sGrant);
@@ -291,7 +291,7 @@ void SAL_CALL OHSQLUser::changePassword( const ::rtl::OUString& /*oldPassword*/,
 	sAlterPwd += newPassword;
 	sAlterPwd += ::rtl::OUString::createFromAscii("')") ;
 
-	
+
 	Reference<XStatement> xStmt = m_xConnection->createStatement();
 	if ( xStmt.is() )
 	{
@@ -305,35 +305,35 @@ void SAL_CALL OHSQLUser::changePassword( const ::rtl::OUString& /*oldPassword*/,
 	::rtl::OUString sPrivs;
 	if((nRights & Privilege::INSERT) == Privilege::INSERT)
 		sPrivs += ::rtl::OUString::createFromAscii("INSERT");
-	
+
 	if((nRights & Privilege::DELETE) == Privilege::DELETE)
 	{
 		if(sPrivs.getLength())
 			sPrivs += ::rtl::OUString::createFromAscii(",");
 		sPrivs += ::rtl::OUString::createFromAscii("DELETE");
 	}
-	
+
 	if((nRights & Privilege::UPDATE) == Privilege::UPDATE)
 	{
 		if(sPrivs.getLength())
 			sPrivs += ::rtl::OUString::createFromAscii(",");
 		sPrivs += ::rtl::OUString::createFromAscii("UPDATE");
 	}
-	
+
 	if((nRights & Privilege::ALTER) == Privilege::ALTER)
 	{
 		if(sPrivs.getLength())
 			sPrivs += ::rtl::OUString::createFromAscii(",");
 		sPrivs += ::rtl::OUString::createFromAscii("ALTER");
 	}
-	
+
 	if((nRights & Privilege::SELECT) == Privilege::SELECT)
 	{
 		if(sPrivs.getLength())
 			sPrivs += ::rtl::OUString::createFromAscii(",");
 		sPrivs += ::rtl::OUString::createFromAscii("SELECT");
 	}
-	
+
 	if((nRights & Privilege::REFERENCE) == Privilege::REFERENCE)
 	{
 		if(sPrivs.getLength())

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -33,16 +33,16 @@ import java.lang.Math;
 import com.sun.star.uno.UnoRuntime;
 
 public class SDraw  {
-    
-    
+
+
     public static void main(String args[]) {
-        
+
         //oooooooooooooooooooooooooooStep 1oooooooooooooooooooooooooooooooooooooooo
         // bootstrap UNO and get the remote component context. The context can
         // be used to get the service manager
         //*************************************************************************
         com.sun.star.uno.XComponentContext xContext = null;
-            
+
         try {
             // get the remote office component context
             xContext = com.sun.star.comp.helper.Bootstrap.bootstrap();
@@ -55,19 +55,19 @@ public class SDraw  {
 
         com.sun.star.lang.XComponent xDrawDoc = null;
         com.sun.star.drawing.XDrawPage xDrawPage = null;
-        
+
         //oooooooooooooooooooooooooooStep 2oooooooooooooooooooooooooooooooooooooooo
         // open an empty document. In this case it's a draw document.
         // For this purpose an instance of com.sun.star.frame.Desktop
         // is created. It's interface XDesktop provides the XComponentLoader,
         // which is used to open the document via loadComponentFromURL
         //*************************************************************************
-        
-        //Open document        
-        //Draw        
+
+        //Open document
+        //Draw
         System.out.println("Opening an empty Draw document ...");
         xDrawDoc = openDraw(xContext);
-        
+
         //oooooooooooooooooooooooooooStep 3oooooooooooooooooooooooooooooooooooooooo
         // get the drawpage an insert some shapes.
         // the documents DrawPageSupplier supplies the DrawPage vi IndexAccess
@@ -75,8 +75,8 @@ public class SDraw  {
         // instance of the ShapeType and add it to the Shapes-container
         // provided by the drawpage
         //*************************************************************************
-        
-        
+
+
         // get the drawpage of drawing here
         try {
             System.out.println( "getting Drawpage" );
@@ -93,9 +93,9 @@ public class SDraw  {
             System.err.println( "Couldn't create document"+ e );
             e.printStackTrace(System.err);
         }
-        
+
         createSequence(xDrawDoc, xDrawPage);
-        
+
         //put something on the drawpage
         System.out.println( "inserting some Shapes" );
         com.sun.star.drawing.XShapes xShapes = (com.sun.star.drawing.XShapes)
@@ -104,24 +104,24 @@ public class SDraw  {
         xShapes.add(createShape(xDrawDoc,2000,1500,1000,1000,"Line",0));
         xShapes.add(createShape(xDrawDoc,3000,4500,15000,1000,"Ellipse",16711680));
         xShapes.add(createShape(xDrawDoc,5000,3500,7500,5000,"Rectangle",6710932));
-        
-        //*************************************************************************        
-        System.out.println("done");        
+
+        //*************************************************************************
+        System.out.println("done");
         System.exit(0);
     }
-    
+
     public static com.sun.star.lang.XComponent openDraw(
         com.sun.star.uno.XComponentContext xContext)
     {
         com.sun.star.frame.XComponentLoader xCLoader;
         com.sun.star.text.XTextDocument xDoc = null;
         com.sun.star.lang.XComponent xComp = null;
-        
+
         try {
             // get the remote office service manager
             com.sun.star.lang.XMultiComponentFactory xMCF =
                 xContext.getServiceManager();
-            
+
             Object oDesktop = xMCF.createInstanceWithContext(
                                         "com.sun.star.frame.Desktop", xContext);
 
@@ -132,15 +132,15 @@ public class SDraw  {
                 new com.sun.star.beans.PropertyValue[0];
             String strDoc = "private:factory/sdraw";
             xComp = xCLoader.loadComponentFromURL(strDoc, "_blank", 0, szEmptyArgs);
-            
-        } catch(Exception e){            
+
+        } catch(Exception e){
             System.err.println(" Exception " + e);
             e.printStackTrace(System.err);
-        }        
-        
+        }
+
         return xComp;
     }
-    
+
     public static com.sun.star.drawing.XShape createShape(
         com.sun.star.lang.XComponent xDocComp, int height, int width, int x,
         int y, String kind, int col)
@@ -149,12 +149,12 @@ public class SDraw  {
         com.sun.star.awt.Size size = new com.sun.star.awt.Size();
         com.sun.star.awt.Point position = new com.sun.star.awt.Point();
         com.sun.star.drawing.XShape xShape = null;
-        
+
         //get MSF
         com.sun.star.lang.XMultiServiceFactory xDocMSF =
             (com.sun.star.lang.XMultiServiceFactory) UnoRuntime.queryInterface(
                 com.sun.star.lang.XMultiServiceFactory.class, xDocComp );
-        
+
         try {
             Object oInt = xDocMSF.createInstance("com.sun.star.drawing."
                                                  +kind + "Shape");
@@ -166,26 +166,26 @@ public class SDraw  {
             position.Y = y;
             xShape.setSize(size);
             xShape.setPosition(position);
-            
+
         } catch ( Exception e ) {
             System.err.println( "Couldn't create instance "+ e );
             e.printStackTrace(System.err);
         }
-        
+
         com.sun.star.beans.XPropertySet xSPS = (com.sun.star.beans.XPropertySet)
             UnoRuntime.queryInterface(
                 com.sun.star.beans.XPropertySet.class, xShape);
-        
-        try {            
-            xSPS.setPropertyValue("FillColor", new Integer(col));            
-        } catch (Exception e) {            
-            System.err.println("Can't change colors " + e);            
+
+        try {
+            xSPS.setPropertyValue("FillColor", new Integer(col));
+        } catch (Exception e) {
+            System.err.println("Can't change colors " + e);
             e.printStackTrace(System.err);
-        }        
-        
-        return xShape;        
+        }
+
+        return xShape;
     }
-    
+
     public static com.sun.star.drawing.XShape createSequence(
         com.sun.star.lang.XComponent xDocComp, com.sun.star.drawing.XDrawPage xDP)
     {
@@ -202,12 +202,12 @@ public class SDraw  {
         int r = 40;
         int g = 0;
         int b = 80;
-        
+
         //get MSF
         com.sun.star.lang.XMultiServiceFactory xDocMSF =
             (com.sun.star.lang.XMultiServiceFactory)UnoRuntime.queryInterface(
                 com.sun.star.lang.XMultiServiceFactory.class, xDocComp );
-        
+
         for (int i=0; i<370; i=i+25) {
             try{
                 oInt = xDocMSF.createInstance("com.sun.star.drawing.EllipseShape");
@@ -220,39 +220,39 @@ public class SDraw  {
                     (new Float(y+(Math.sin((i*Math.PI)/180))*5000)).intValue();
                 xShape.setSize(size);
                 xShape.setPosition(position);
-                
+
             } catch ( Exception e ) {
                 // Some exception occures.FAILED
                 System.err.println( "Couldn't get Shape "+ e );
                 e.printStackTrace(System.err);
             }
-            
+
             b=b+8;
-            
+
             com.sun.star.beans.XPropertySet xSPS = (com.sun.star.beans.XPropertySet)
                 UnoRuntime.queryInterface(com.sun.star.beans.XPropertySet.class,
                                           xShape);
-            
-            try {                
+
+            try {
                 xSPS.setPropertyValue("FillColor", new Integer(getCol(r,g,b)));
                 xSPS.setPropertyValue("Shadow", new Boolean(true));
-            } catch (Exception e) {                
-                System.err.println("Can't change colors " + e);                
+            } catch (Exception e) {
+                System.err.println("Can't change colors " + e);
                 e.printStackTrace(System.err);
             }
             xShapes.add(xShape);
         }
-        
+
         com.sun.star.drawing.XShapeGrouper xSGrouper =
             (com.sun.star.drawing.XShapeGrouper)UnoRuntime.queryInterface(
                 com.sun.star.drawing.XShapeGrouper.class, xDP);
-        
-        xShape = xSGrouper.group(xShapes);        
-        
+
+        xShape = xSGrouper.group(xShapes);
+
         return xShape;
     }
-    
-    public static int getCol(int r, int g, int b) {        
-        return r*65536+g*256+b;        
+
+    public static int getCol(int r, int g, int b) {
+        return r*65536+g*256+b;
     }
 }

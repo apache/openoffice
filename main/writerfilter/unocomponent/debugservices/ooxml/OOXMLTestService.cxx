@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -95,47 +95,47 @@ sal_Int32 SAL_CALL ScannerTestService::run( const uno::Sequence< rtl::OUString >
 #endif
 
         rtl::OUString arg=aArguments[0];
-        
+
         ::comphelper::setProcessServiceFactory(xServiceFactory);
-        
+
         uno::Reference<com::sun::star::ucb::XSimpleFileAccess> xFileAccess
             (xFactory->createInstanceWithContext
              (::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM
-                              ("com.sun.star.ucb.SimpleFileAccess")), 
+                              ("com.sun.star.ucb.SimpleFileAccess")),
               xContext), uno::UNO_QUERY_THROW );
-        
+
         rtl_uString *dir=NULL;
         osl_getProcessWorkingDir(&dir);
         rtl::OUString absFileUrl;
         osl_getAbsoluteFileURL(dir, arg.pData, &absFileUrl.pData);
         rtl_uString_release(dir);
-        
-        uno::Reference<io::XInputStream> xInputStream = 
+
+        uno::Reference<io::XInputStream> xInputStream =
             xFileAccess->openFileRead(absFileUrl);
-        ooxml::OOXMLStream::Pointer_t pDocStream = 
+        ooxml::OOXMLStream::Pointer_t pDocStream =
             ooxml::OOXMLDocumentFactory::createStream(xContext, xInputStream);
-        
+
         ooxml::OOXMLDocument::Pointer_t pDocument
             (ooxml::OOXMLDocumentFactory::createDocument(pDocStream));
-        
-#if 0        
+
+#if 0
         uno::Reference<text::XTextDocument> xDocument
             (xFactory->createInstanceWithContext
              (::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM
-                              ("com.sun.star.text.TextDocument")), 
+                              ("com.sun.star.text.TextDocument")),
               xContext), uno::UNO_QUERY_THROW );
         uno::Reference<frame::XModel> xModel
             (xDocument, uno::UNO_QUERY_THROW);
-        
+
         uno::Reference<drawing::XDrawPageSupplier> xDrawPageSupplier
             (xDocument, uno::UNO_QUERY_THROW);
         uno::Reference<drawing::XShapes> xShapes
             (xDrawPageSupplier->getDrawPage(), uno::UNO_QUERY_THROW);
-        
+
         pDocument->setModel(xModel);
         pDocument->setShapes(xShapes);
 #endif
-        
+
 		Stream::Pointer_t pStream = createStreamHandler();
 		pDocument->resolve(*pStream);
 

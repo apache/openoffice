@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,7 +45,7 @@ using ::basegfx::B2DTuple;
 //-----------------------------------------------------------------------------
 
 namespace{
-/**	@descr	This is a supporting function for lcl_clip2d.  It computes a new parametric 
+/**	@descr	This is a supporting function for lcl_clip2d.  It computes a new parametric
 			value for an entering (dTE) or leaving (dTL) intersection point with one
 			of the edges bounding the clipping area.
 			For explanation of the parameters please refer to :
@@ -58,7 +58,7 @@ namespace{
 bool lcl_CLIPt(double fDenom,double fNum, double & fTE, double & fTL)
 {
 	double	fT;
-	
+
 	if (fDenom > 0)				//	Intersection enters: PE
 	{
 		fT = fNum / fDenom;		//	Parametric value at the intersection.
@@ -77,7 +77,7 @@ bool lcl_CLIPt(double fDenom,double fNum, double & fTE, double & fTL)
 	}
 	else if (fNum > 0)
 		return false;			//	Line lies on the outside of the edge.
-	
+
 	return true;
 }
 
@@ -96,7 +96,7 @@ bool lcl_CLIPt(double fDenom,double fNum, double & fTE, double & fTL)
 */
 bool lcl_clip2d(B2DTuple& rPoint0, B2DTuple& rPoint1, const B2DRectangle& rRectangle)
 {
-	//Direction vector of the line.						
+	//Direction vector of the line.
     B2DTuple aDirection = rPoint1 - rPoint0;
 
 	if( aDirection.getX()==0 && aDirection.getY()==0 && rRectangle.isInside(rPoint0) )
@@ -109,8 +109,8 @@ bool lcl_clip2d(B2DTuple& rPoint0, B2DTuple& rPoint1, const B2DRectangle& rRecta
 		//	Values of the line parameter where the line enters resp. leaves the rectangle.
 		double fTE = 0,
 			   fTL = 1;
-				
-		//	Test whether at least a part lies in the four half-planes with respect to 
+
+		//	Test whether at least a part lies in the four half-planes with respect to
 		//	the rectangles four edges.
 		if( lcl_CLIPt(aDirection.getX(), rRectangle.getMinX() - rPoint0.getX(), fTE, fTL) )
 			if( lcl_CLIPt(-aDirection.getX(), rPoint0.getX() - rRectangle.getMaxX(), fTE, fTL) )
@@ -132,7 +132,7 @@ bool lcl_clip2d(B2DTuple& rPoint0, B2DTuple& rPoint1, const B2DRectangle& rRecta
 						}
 						return true;
 					}
-					
+
 		//	Line is not visible.
 		return false;
 	}
@@ -216,7 +216,7 @@ void Clipping::clipPolygonAtRectangle( const drawing::PolyPolygonShape3D& rPolyg
 
     if(!rPolygon.SequenceX.getLength())
         return;
-    
+
     //need clipping?:
     {
         ::basegfx::B3DRange a3DRange( BaseGFXHelper::getBoundVolume( rPolygon ) );

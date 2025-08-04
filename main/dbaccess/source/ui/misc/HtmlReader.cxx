@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -94,7 +94,7 @@ OHTMLReader::OHTMLReader(SvStream& rIn,const SharedConnection& _rxConnection,
 						const Reference< ::com::sun::star::util::XNumberFormatter >& _rxNumberF,
 						const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& _rM,
 						const TColumnVector* pList,
-						const OTypeInfoMap* _pInfoMap) 
+						const OTypeInfoMap* _pInfoMap)
 	:HTMLParser(rIn)
 	,ODatabaseExport( _rxConnection, _rxNumberF, _rM, pList, _pInfoMap, rIn )
 	,m_nTableCount(0)
@@ -182,7 +182,7 @@ void OHTMLReader::NextToken( int nToken )
 			case HTML_TBODY_ON:
                 {
                     sal_uInt32 nTell = rInput.Tell(); // verändert vielleicht die Position des Streams
-				    if ( !m_xTable.is() ) 
+				    if ( !m_xTable.is() )
                     {// erste Zeile als Header verwenden
 					    m_bError = !CreateTable(nToken);
                         if ( m_bAppendFirstLine )
@@ -554,7 +554,7 @@ sal_Bool OHTMLReader::CreateTable(int nToken)
 		CreateDefaultColumn(aColumnName);
 
 	if ( m_vDestVector.empty() )
-		return sal_False;	
+		return sal_False;
 
 	if(!aTableName.Len())
 		aTableName = aTempName;

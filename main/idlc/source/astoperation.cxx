@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -71,7 +71,7 @@ sal_Bool AstOperation::dumpBlob(typereg::Writer & rBlob, sal_uInt16 index)
         returnTypeName, nParam, nExcep);
 
 	if ( nParam )
-	{	
+	{
 		DeclList::const_iterator iter = getIteratorBegin();
 		DeclList::const_iterator end = getIteratorEnd();
 		AstDeclaration* pDecl = NULL;
@@ -79,7 +79,7 @@ sal_Bool AstOperation::dumpBlob(typereg::Writer & rBlob, sal_uInt16 index)
 		sal_uInt16 paramIndex = 0;
 		while ( iter != end )
 		{
-			pDecl = *iter;		
+			pDecl = *iter;
 			if ( pDecl->getNodeType() == NT_parameter )
 			{
 				AstParameter* pParam = (AstParameter*)pDecl;
@@ -97,12 +97,12 @@ sal_Bool AstOperation::dumpBlob(typereg::Writer & rBlob, sal_uInt16 index)
 					default:
 						paramMode = RT_PARAM_INVALID;
 						break;
-				}			
+				}
                 if (pParam->isRest()) {
                     paramMode = static_cast< RTParamMode >(
                         paramMode | RT_PARAM_REST);
                 }
-				
+
 				rBlob.setMethodParameterData(
                     index, paramIndex++, paramMode,
                     OStringToOUString(
@@ -112,7 +112,7 @@ sal_Bool AstOperation::dumpBlob(typereg::Writer & rBlob, sal_uInt16 index)
                         RTL_TEXTENCODING_UTF8));
 			}
 			++iter;
-		}		
+		}
 	}
 
 	if ( nExcep )
@@ -127,23 +127,23 @@ sal_Bool AstOperation::dumpBlob(typereg::Writer & rBlob, sal_uInt16 index)
                 OStringToOUString(
                     (*iter)->getRelativName(), RTL_TEXTENCODING_UTF8));
 			++iter;
-		}		
+		}
 	}
 
 	return sal_True;
-}	
+}
 
 AstDeclaration* AstOperation::addDeclaration(AstDeclaration* pDecl)
 {
 	if ( pDecl->getNodeType() == NT_parameter )
 	{
 		AstParameter* pParam = (AstParameter*)pDecl;
-		if ( isOneway() && 
+		if ( isOneway() &&
 			 (pParam->getDirection() == DIR_OUT || pParam->getDirection() == DIR_INOUT) )
 		{
 			idlc()->error()->error2(EIDL_ONEWAY_CONFLICT, pDecl, this);
-			return NULL;			
+			return NULL;
 		}
 	}
 	return AstScope::addDeclaration(pDecl);
-}	
+}

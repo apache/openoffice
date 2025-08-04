@@ -19,12 +19,10 @@
  *
  *************************************************************/
 
-
-
 #include "sc.hrc"
 
 // Imageliste hier, damit sie nicht in ui.src beim Zusammenbauen der
-// "echten" Imagelisten stoert
+// "echten" Imagelisten stört
 
 #define OUTLINE_ID_LIST										\
 	IdList = { 1; 2; 3; 4; 5; 6; 7; 8; 9; 10; 11; 12; };	\
@@ -32,15 +30,15 @@
 
 ImageList RID_OUTLINEBITMAPS
 {
-	Prefix = "ou";
-	MaskColor = STD_MASKCOLOR;
+	Prefix = "ou" ;
+	MaskColor = STD_MASKCOLOR ;
 	OUTLINE_ID_LIST
 };
 
 ImageList RID_OUTLINEBITMAPS_H
 {
-	Prefix = "ouh";
-	MaskColor = SC_HC_MASKCOLOR;
+	Prefix = "ouh" ;
+	MaskColor = SC_HC_MASKCOLOR ;
 	OUTLINE_ID_LIST
 };
 

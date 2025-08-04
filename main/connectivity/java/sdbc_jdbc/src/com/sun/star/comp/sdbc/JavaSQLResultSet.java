@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 package com.sun.star.comp.sdbc;
 
@@ -76,16 +76,16 @@ public class JavaSQLResultSet extends PropertySet
     private static final String[] services = {
             "com.sun.star.sdbc.ResultSet"
     };
-    
+
     private java.sql.ResultSet jdbcResultSet;
     private JavaSQLConnection connection;
     private Object statement;
     private ResourceBasedEventLogger logger;
-    
+
     public JavaSQLResultSet(java.sql.ResultSet jdbcResultSet, JavaSQLConnection connection) {
         this (jdbcResultSet, connection, null);
     }
-    
+
     public JavaSQLResultSet(java.sql.ResultSet jdbcResultSet, JavaSQLConnection connection, Object statement) {
         this.jdbcResultSet = jdbcResultSet;
         this.connection = connection;
@@ -93,9 +93,9 @@ public class JavaSQLResultSet extends PropertySet
         logger = new ConnectionLog(connection.getLogger(), ObjectType.RESULT);
         registerProperties();
     }
-    
+
     // XComponent
-    
+
     @Override
     protected synchronized void postDisposing() {
         super.postDisposing();
@@ -108,26 +108,26 @@ public class JavaSQLResultSet extends PropertySet
             jdbcResultSet = null;
         }
     }
-    
+
     // XCloseable
-    
+
     @Override
     public void close() throws SQLException {
         dispose();
     }
-    
+
     // XServiceInfo
-    
+
     @Override
     public String getImplementationName() {
         return "com.sun.star.sdbcx.JResultSet";
     }
-    
+
     @Override
     public String[] getSupportedServiceNames() {
         return services.clone();
     }
-    
+
     @Override
     public boolean supportsService(String serviceName) {
         for (String service : services) {
@@ -137,9 +137,9 @@ public class JavaSQLResultSet extends PropertySet
         }
         return false;
     }
-    
+
     // XPropertySet
-    
+
     private void registerProperties() {
         registerProperty(PropertyIds.CURSORNAME.name, PropertyIds.CURSORNAME.id, Type.STRING, (short)PropertyAttribute.READONLY,
                 new PropertyGetter() {
@@ -193,7 +193,7 @@ public class JavaSQLResultSet extends PropertySet
                     }
                 });
     }
-    
+
     private String getCursorName() throws WrappedTargetException {
         try {
             String cursorName = jdbcResultSet.getCursorName();
@@ -205,7 +205,7 @@ public class JavaSQLResultSet extends PropertySet
             throw new WrappedTargetException("SQL error", this, Tools.toUnoException(this, exception));
         }
     }
-    
+
     private int getFetchDirection() throws WrappedTargetException {
         try {
             return jdbcResultSet.getFetchDirection();
@@ -237,25 +237,25 @@ public class JavaSQLResultSet extends PropertySet
             throw new WrappedTargetException("SQL error", this, Tools.toUnoException(this, exception));
         }
     }
-    
+
     private int getResultSetConcurrency() throws WrappedTargetException {
         try {
             return jdbcResultSet.getConcurrency();
         } catch (java.sql.SQLException exception) {
             throw new WrappedTargetException("SQL error", this, Tools.toUnoException(this, exception));
-        }        
+        }
     }
-    
+
     private int getResultSetType() throws WrappedTargetException {
         try {
             return jdbcResultSet.getType();
         } catch (java.sql.SQLException exception) {
             throw new WrappedTargetException("SQL error", this, Tools.toUnoException(this, exception));
-        }        
+        }
     }
-    
+
     // everything else
-    
+
     @Override
     public int findColumn(String columnName) throws SQLException {
         try {
@@ -264,7 +264,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public XInputStream getBinaryStream(int columnIndex) throws SQLException {
         try {
@@ -273,7 +273,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public XInputStream getCharacterStream(int columnIndex) throws SQLException {
         try {
@@ -282,7 +282,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public boolean getBoolean(int columnIndex) throws SQLException {
         try {
@@ -291,7 +291,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public byte getByte(int columnIndex) throws SQLException {
         try {
@@ -300,7 +300,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public byte[] getBytes(int columnIndex) throws SQLException {
         try {
@@ -309,7 +309,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public Date getDate(int columnIndex) throws SQLException {
         try {
@@ -323,7 +323,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public double getDouble(int columnIndex) throws SQLException {
         try {
@@ -332,7 +332,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public float getFloat(int columnIndex) throws SQLException {
         try {
@@ -341,7 +341,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public int getInt(int columnIndex) throws SQLException {
         try {
@@ -350,7 +350,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public int getRow() throws SQLException {
         try {
@@ -359,7 +359,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public long getLong(int columnIndex) throws SQLException {
         try {
@@ -368,7 +368,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public XResultSetMetaData getMetaData() throws SQLException {
         try {
@@ -382,7 +382,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public XArray getArray(int columnIndex) throws SQLException {
         try {
@@ -396,7 +396,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public XClob getClob(int columnIndex) throws SQLException {
         try {
@@ -410,7 +410,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public XBlob getBlob(int columnIndex) throws SQLException {
         try {
@@ -424,7 +424,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public XRef getRef(int columnIndex) throws SQLException {
         try {
@@ -438,7 +438,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public Object getObject(int columnIndex, XNameAccess typeMap) throws SQLException {
         if (typeMap.hasElements()) {
@@ -466,7 +466,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoExceptionLogged(this, logger, exception);
         }
     }
-    
+
     @Override
     public short getShort(int columnIndex) throws SQLException {
         try {
@@ -475,7 +475,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public String getString(int columnIndex) throws SQLException {
         try {
@@ -489,7 +489,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public Time getTime(int columnIndex) throws SQLException {
         try {
@@ -503,7 +503,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public DateTime getTimestamp(int columnIndex) throws SQLException {
         try {
@@ -517,7 +517,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public boolean isAfterLast() throws SQLException {
         try {
@@ -526,7 +526,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public boolean isFirst() throws SQLException {
         try {
@@ -535,7 +535,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public boolean isLast() throws SQLException {
         try {
@@ -544,7 +544,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public void beforeFirst() throws SQLException {
         try {
@@ -553,7 +553,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public void afterLast() throws SQLException {
         try {
@@ -562,7 +562,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public boolean first() throws SQLException {
         try {
@@ -571,7 +571,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public boolean last() throws SQLException {
         try {
@@ -580,7 +580,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public boolean absolute(int row) throws SQLException {
         try {
@@ -589,7 +589,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public boolean relative(int row) throws SQLException {
         try {
@@ -598,7 +598,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public boolean previous() throws SQLException {
         try {
@@ -607,12 +607,12 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public Object getStatement() throws SQLException {
         return statement;
     }
-    
+
     @Override
     public boolean rowDeleted() throws SQLException {
         try {
@@ -621,7 +621,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public boolean rowInserted() throws SQLException {
         try {
@@ -630,7 +630,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public boolean rowUpdated() throws SQLException {
         try {
@@ -639,7 +639,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public boolean isBeforeFirst() throws SQLException {
         try {
@@ -648,7 +648,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public boolean next() throws SQLException {
         try {
@@ -657,7 +657,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public boolean wasNull() throws SQLException {
         try {
@@ -666,7 +666,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public void clearWarnings() throws SQLException {
         try {
@@ -675,7 +675,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public Object getWarnings() throws SQLException {
         try {
@@ -694,16 +694,16 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, sqlException);
         }
     }
-    
+
     @Override
     public void insertRow() throws SQLException {
         try {
             jdbcResultSet.insertRow();
         } catch (java.sql.SQLException exception) {
             throw Tools.toUnoException(this, exception);
-        }        
+        }
     }
-    
+
     @Override
     public void updateRow() throws SQLException {
         try {
@@ -712,7 +712,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public void deleteRow() throws SQLException {
         try {
@@ -721,7 +721,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public void cancelRowUpdates() throws SQLException {
         try {
@@ -730,7 +730,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public void moveToInsertRow() throws SQLException {
         try {
@@ -739,7 +739,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public void moveToCurrentRow() throws SQLException {
         try {
@@ -748,7 +748,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public void updateNull(int columnIndex) throws SQLException {
         try {
@@ -757,7 +757,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public void updateBoolean(int columnIndex, boolean x) throws SQLException {
         try {
@@ -766,7 +766,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public void updateByte(int columnIndex, byte x) throws SQLException {
         try {
@@ -775,7 +775,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public void updateShort(int columnIndex, short x) throws SQLException {
         try {
@@ -784,7 +784,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public void updateInt(int columnIndex, int x) throws SQLException {
         try {
@@ -793,7 +793,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public void updateLong(int columnIndex, long x) throws SQLException {
         try {
@@ -802,7 +802,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public void updateFloat(int columnIndex, float x) throws SQLException {
         try {
@@ -811,7 +811,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public void updateDouble(int columnIndex, double x) throws SQLException {
         try {
@@ -820,7 +820,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public void updateString(int columnIndex, String x) throws SQLException {
         try {
@@ -829,7 +829,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public void updateBytes(int columnIndex, byte[] x) throws SQLException {
         try {
@@ -838,7 +838,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public void updateDate(int columnIndex, Date x) throws SQLException {
         try {
@@ -847,7 +847,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public void updateTime(int columnIndex, Time x) throws SQLException {
         try {
@@ -856,7 +856,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public void updateTimestamp(int columnIndex, DateTime x) throws SQLException {
         try {
@@ -866,7 +866,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public void updateBinaryStream(int columnIndex, XInputStream x, int length) throws SQLException {
         try {
@@ -876,7 +876,7 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
+
     @Override
     public void updateCharacterStream(int columnIndex, XInputStream x, int length) throws SQLException {
         try {
@@ -886,9 +886,9 @@ public class JavaSQLResultSet extends PropertySet
                     Charset.forName("UTF16-LE")), length);
         } catch (java.sql.SQLException exception) {
             throw Tools.toUnoException(this, exception);
-        }        
+        }
     }
-    
+
     @Override
     public void updateObject(int columnIndex, Object x) throws SQLException {
         if (!DbTools.updateObject(this, columnIndex, x)) {
@@ -897,7 +897,7 @@ public class JavaSQLResultSet extends PropertySet
             throw new SQLException(error, this, StandardSQLState.SQL_GENERAL_ERROR.text(), 0, Any.VOID);
         }
     }
-    
+
     @Override
     public void updateNumericObject(int columnIndex, Object x, int scale) throws SQLException {
         try {
@@ -912,7 +912,7 @@ public class JavaSQLResultSet extends PropertySet
             updateObject(columnIndex, x);
         }
     }
-    
+
     @Override
     public void refreshRow() throws SQLException {
         try {
@@ -921,6 +921,6 @@ public class JavaSQLResultSet extends PropertySet
             throw Tools.toUnoException(this, exception);
         }
     }
-    
-    
+
+
 }

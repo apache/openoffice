@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,17 +53,17 @@ private:
 
 
                                 DECL_LINK( ReleaseTimeoutHdl, Timer* pTimer );
-					
-public:				
-					
+
+public:
+
 								GraphicCache( GraphicManager& rMgr,
-											  sal_uLong nDisplayCacheSize = 10000000UL, 
+											  sal_uLong nDisplayCacheSize = 10000000UL,
 											  sal_uLong nMaxObjDisplayCacheSize = 2400000UL );
 								~GraphicCache();
-								
-public:							
-								
-	void						AddGraphicObject( const GraphicObject& rObj, Graphic& rSubstitute, 
+
+public:
+
+	void						AddGraphicObject( const GraphicObject& rObj, Graphic& rSubstitute,
                                                   const ByteString* pID, const GraphicObject* pCopyObj );
 	void						ReleaseGraphicObject( const GraphicObject& rObj );
 
@@ -72,33 +72,33 @@ public:
 	void						GraphicObjectWasSwappedIn( const GraphicObject& rObj );
 
 	ByteString					GetUniqueID( const GraphicObject& rObj ) const;
-								
-public:							
-								
+
+public:
+
 	void						SetMaxDisplayCacheSize( sal_uLong nNewCacheSize );
 	sal_uLong						GetMaxDisplayCacheSize() const { return mnMaxDisplaySize; };
-								
+
 	void						SetMaxObjDisplayCacheSize( sal_uLong nNewMaxObjSize, sal_Bool bDestroyGreaterCached = sal_False );
 	sal_uLong						GetMaxObjDisplayCacheSize() const { return mnMaxObjDisplaySize; }
-								
+
 	sal_uLong						GetUsedDisplayCacheSize() const { return mnUsedDisplaySize; }
 	sal_uLong						GetFreeDisplayCacheSize() const { return( mnMaxDisplaySize - mnUsedDisplaySize ); }
 
     void                        SetCacheTimeout( sal_uLong nTimeoutSeconds );
     sal_uLong                       GetCacheTimeout() const { return mnReleaseTimeoutSeconds; }
-								
+
 	void						ClearDisplayCache();
-	sal_Bool						IsDisplayCacheable( OutputDevice* pOut, const Point& rPt, const Size& rSz, 
+	sal_Bool						IsDisplayCacheable( OutputDevice* pOut, const Point& rPt, const Size& rSz,
 													const GraphicObject& rObj, const GraphicAttr& rAttr ) const;
-	sal_Bool						IsInDisplayCache( OutputDevice* pOut, const Point& rPt, const Size& rSz, 
+	sal_Bool						IsInDisplayCache( OutputDevice* pOut, const Point& rPt, const Size& rSz,
 												  const GraphicObject& rObj, const GraphicAttr& rAttr ) const;
-	sal_Bool						CreateDisplayCacheObj( OutputDevice* pOut, const Point& rPt, const Size& rSz, 
+	sal_Bool						CreateDisplayCacheObj( OutputDevice* pOut, const Point& rPt, const Size& rSz,
 													   const GraphicObject& rObj, const GraphicAttr& rAttr,
 													   const BitmapEx& rBmpEx );
-	sal_Bool						CreateDisplayCacheObj( OutputDevice* pOut, const Point& rPt, const Size& rSz, 
+	sal_Bool						CreateDisplayCacheObj( OutputDevice* pOut, const Point& rPt, const Size& rSz,
 													   const GraphicObject& rObj, const GraphicAttr& rAttr,
 													   const GDIMetaFile& rMtf );
-	sal_Bool						DrawDisplayCacheObj( OutputDevice* pOut, const Point& rPt, const Size& rSz, 
+	sal_Bool						DrawDisplayCacheObj( OutputDevice* pOut, const Point& rPt, const Size& rSz,
 													 const GraphicObject& rObj, const GraphicAttr& rAttr );
 };
 

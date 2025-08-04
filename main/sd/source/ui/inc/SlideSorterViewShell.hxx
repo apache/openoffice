@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,7 +50,7 @@ public:
     SFX_DECL_INTERFACE(SD_IF_SDSLIDESORTERVIEWSHELL)
 
     static ::boost::shared_ptr<SlideSorterViewShell> Create(
-        SfxViewFrame* pFrame, 
+        SfxViewFrame* pFrame,
         ViewShellBase& rViewShellBase,
         ::Window* pParentWindow,
         FrameView* pFrameView,
@@ -77,7 +77,7 @@ public:
     virtual SdPage*	GetActualPage (void);
 
 	/// inherited from sd::ViewShell
-	virtual SdPage* getCurrentPage() const; 
+	virtual SdPage* getCurrentPage() const;
 
 	void ExecCtrl (SfxRequest& rRequest);
 	virtual void GetCtrlState (SfxItemSet &rSet);
@@ -126,15 +126,15 @@ public:
         sal_Int8 nDropAction);
     virtual sal_Int8 AcceptDrop (
         const AcceptDropEvent& rEvt,
-        DropTargetHelper& rTargetHelper, 
-        ::sd::Window* pTargetWindow = NULL, 
-        sal_uInt16 nPage = SDRPAGE_NOTFOUND, 
+        DropTargetHelper& rTargetHelper,
+        ::sd::Window* pTargetWindow = NULL,
+        sal_uInt16 nPage = SDRPAGE_NOTFOUND,
         sal_uInt16 nLayer = SDRPAGE_NOTFOUND );
 	virtual sal_Int8 ExecuteDrop (
-        const ExecuteDropEvent& rEvt, 
+        const ExecuteDropEvent& rEvt,
         DropTargetHelper& rTargetHelper,
-        ::sd::Window* pTargetWindow = NULL, 
-        sal_uInt16 nPage = SDRPAGE_NOTFOUND, 
+        ::sd::Window* pTargetWindow = NULL,
+        sal_uInt16 nPage = SDRPAGE_NOTFOUND,
         sal_uInt16 nLayer = SDRPAGE_NOTFOUND);
 
     typedef ::std::vector<SdPage*> PageSelection;
@@ -196,9 +196,9 @@ protected:
 private:
     ::boost::shared_ptr<SlideSorter> mpSlideSorter;
     bool mbIsArrangeGUIElementsPending;
-    
+
     SlideSorterViewShell (
-        SfxViewFrame* pFrame, 
+        SfxViewFrame* pFrame,
         ViewShellBase& rViewShellBase,
         ::Window* pParentWindow,
         FrameView* pFrameView);

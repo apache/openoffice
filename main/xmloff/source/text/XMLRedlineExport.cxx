@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -164,8 +164,8 @@ void XMLRedlineExport::ExportChangesList(
 		if (pChangesList->size() > 0)
 		{
 			// changes container element
-			SvXMLElementExport aChanges(rExport, XML_NAMESPACE_TEXT, 
-										XML_TRACKED_CHANGES, 
+			SvXMLElementExport aChanges(rExport, XML_NAMESPACE_TEXT,
+										XML_TRACKED_CHANGES,
 										sal_True, sal_True);
 
 			// iterate over changes list
@@ -219,10 +219,10 @@ void XMLRedlineExport::ExportChangesListElements()
 		Reference<XEnumerationAccess> aEnumAccess = xSupplier->getRedlines();
 
 		// redline protection key
-		Reference<XPropertySet> aDocPropertySet( rExport.GetModel(), 
+		Reference<XPropertySet> aDocPropertySet( rExport.GetModel(),
 												 uno::UNO_QUERY );
 		// redlining enabled?
-		sal_Bool bEnabled = *(sal_Bool*)aDocPropertySet->getPropertyValue( 
+		sal_Bool bEnabled = *(sal_Bool*)aDocPropertySet->getPropertyValue(
 												sRecordChanges ).getValue();
 
 		// only export if we have redlines or attributes
@@ -232,14 +232,14 @@ void XMLRedlineExport::ExportChangesListElements()
 			// export only if we have changes, but tracking is not enabled
 			if ( !bEnabled != !aEnumAccess->hasElements() )
 			{
-				rExport.AddAttribute( 
-					XML_NAMESPACE_TEXT, XML_TRACK_CHANGES, 
+				rExport.AddAttribute(
+					XML_NAMESPACE_TEXT, XML_TRACK_CHANGES,
 					bEnabled ? XML_TRUE : XML_FALSE );
 			}
 
 			// changes container element
-			SvXMLElementExport aChanges(rExport, XML_NAMESPACE_TEXT, 
-										XML_TRACKED_CHANGES, 
+			SvXMLElementExport aChanges(rExport, XML_NAMESPACE_TEXT,
+										XML_TRACKED_CHANGES,
 										sal_True, sal_True);
 
 			// get enumeration and iterate over elements
@@ -250,7 +250,7 @@ void XMLRedlineExport::ExportChangesListElements()
 				Reference<XPropertySet> xPropSet;
 				aAny >>= xPropSet;
 
-				DBG_ASSERT(xPropSet.is(), 
+				DBG_ASSERT(xPropSet.is(),
 						   "can't get XPropertySet; skipping Redline");
 				if (xPropSet.is())
 				{
@@ -316,7 +316,7 @@ void XMLRedlineExport::ExportChangesListAutoStyles()
 				Reference<XPropertySet> xPropSet;
 				aAny >>= xPropSet;
 
-				DBG_ASSERT(xPropSet.is(), 
+				DBG_ASSERT(xPropSet.is(),
 						   "can't get XPropertySet; skipping Redline");
 				if (xPropSet.is())
 				{
@@ -356,11 +356,11 @@ void XMLRedlineExport::ExportChangeInline(
 	if (XML_TOKEN_INVALID != eElement)
 	{
 		// we always need the ID
-		rExport.AddAttribute(XML_NAMESPACE_TEXT, XML_CHANGE_ID, 
+		rExport.AddAttribute(XML_NAMESPACE_TEXT, XML_CHANGE_ID,
 							 GetRedlineID(rPropSet));
 
 		// export the element (no whitespace because we're in the text body)
-		SvXMLElementExport aChangeElem(rExport, XML_NAMESPACE_TEXT, 
+		SvXMLElementExport aChangeElem(rExport, XML_NAMESPACE_TEXT,
 									   eElement, sal_False, sal_False);
 	}
 }
@@ -379,7 +379,7 @@ void XMLRedlineExport::ExportChangedRegion(
                              XML_FALSE);
 
     // export change region element
-	SvXMLElementExport aChangedRegion(rExport, XML_NAMESPACE_TEXT, 
+	SvXMLElementExport aChangedRegion(rExport, XML_NAMESPACE_TEXT,
 									  XML_CHANGED_REGION, sal_True, sal_True);
 
 
@@ -388,7 +388,7 @@ void XMLRedlineExport::ExportChangedRegion(
 		aAny = rPropSet->getPropertyValue(sRedlineType);
 		OUString sType;
 		aAny >>= sType;
-		SvXMLElementExport aChange(rExport, XML_NAMESPACE_TEXT,	
+		SvXMLElementExport aChange(rExport, XML_NAMESPACE_TEXT,
 								   ConvertTypeName(sType), sal_True, sal_True);
 
 		ExportChangeInfo(rPropSet);
@@ -402,7 +402,7 @@ void XMLRedlineExport::ExportChangedRegion(
 			rExport.GetTextParagraphExport()->exportText(xText);
 			// default parameters: bProgress, bExportParagraph ???
 		}
-		// else: no text interface -> content is inline and will 
+		// else: no text interface -> content is inline and will
 		//       be exported there
 	}
 
@@ -421,7 +421,7 @@ void XMLRedlineExport::ExportChangedRegion(
 		// delete an insertion. This assumption is asserted in
 		// ExportChangeInfo(Sequence<PropertyValue>&).
 		SvXMLElementExport aSecondChangeElem(
-			rExport, XML_NAMESPACE_TEXT, XML_INSERTION, 
+			rExport, XML_NAMESPACE_TEXT, XML_INSERTION,
 			sal_True, sal_True);
 
 		ExportChangeInfo(aSuccessorData);
@@ -471,7 +471,7 @@ void XMLRedlineExport::ExportChangeInfo(
 	const Reference<XPropertySet> & rPropSet)
 {
 
-	SvXMLElementExport aChangeInfo(rExport, XML_NAMESPACE_OFFICE, 
+	SvXMLElementExport aChangeInfo(rExport, XML_NAMESPACE_OFFICE,
 								   XML_CHANGE_INFO, sal_True, sal_True);
 
 	Any aAny = rPropSet->getPropertyValue(sRedlineAuthor);
@@ -480,7 +480,7 @@ void XMLRedlineExport::ExportChangeInfo(
 	if (sTmp.getLength() > 0)
 	{
 		SvXMLElementExport aCreatorElem( rExport, XML_NAMESPACE_DC,
-										  XML_CREATOR, sal_True, 
+										  XML_CREATOR, sal_True,
 										  sal_False );
 		rExport.Characters(sTmp);
 	}
@@ -492,7 +492,7 @@ void XMLRedlineExport::ExportChangeInfo(
 		OUStringBuffer sBuf;
 		rExport.GetMM100UnitConverter().convertDateTime(sBuf, aDateTime);
 		SvXMLElementExport aDateElem( rExport, XML_NAMESPACE_DC,
-										  XML_DATE, sal_True, 
+										  XML_DATE, sal_True,
 										  sal_False );
 		rExport.Characters(sBuf.makeStringAndClear());
 	}
@@ -532,7 +532,7 @@ void XMLRedlineExport::ExportChangeInfo(
 			rVal.Value >>= aDateTime;
 			OUStringBuffer sBuf;
 			rExport.GetMM100UnitConverter().convertDateTime(sBuf, aDateTime);
-			rExport.AddAttribute(XML_NAMESPACE_OFFICE, XML_CHG_DATE_TIME, 
+			rExport.AddAttribute(XML_NAMESPACE_OFFICE, XML_CHG_DATE_TIME,
 								 sBuf.makeStringAndClear());
 		}
 		else if( rVal.Name.equals(sRedlineType) )
@@ -540,14 +540,14 @@ void XMLRedlineExport::ExportChangeInfo(
 			// check if this is an insertion; cf. comment at calling location
 			OUString sTmp;
 			rVal.Value >>= sTmp;
-			DBG_ASSERT(sTmp.equals(sInsert), 
+			DBG_ASSERT(sTmp.equals(sInsert),
 					   "hierarchical change must be insertion");
 		}
 		// else: unknown value -> ignore
 	}
 
 	// finally write element
-	SvXMLElementExport aChangeInfo(rExport, XML_NAMESPACE_OFFICE, 
+	SvXMLElementExport aChangeInfo(rExport, XML_NAMESPACE_OFFICE,
 								   XML_CHANGE_INFO, sal_True, sal_True);
 
     WriteComment( sComment );
@@ -606,15 +606,15 @@ void XMLRedlineExport::ExportStartOrEndRedline(
         // TODO: use GetRedlineID or elimiate that function
         OUStringBuffer sBuffer(sChangePrefix);
         sBuffer.append(sId);
-	
-        rExport.AddAttribute(XML_NAMESPACE_TEXT, XML_CHANGE_ID, 
+
+        rExport.AddAttribute(XML_NAMESPACE_TEXT, XML_CHANGE_ID,
                              sBuffer.makeStringAndClear());
 
-        // export the element 
+        // export the element
         // (whitespace because we're not inside paragraphs)
         SvXMLElementExport aChangeElem(
-            rExport, XML_NAMESPACE_TEXT, 
-            bIsCollapsed ? XML_CHANGE : 
+            rExport, XML_NAMESPACE_TEXT,
+            bIsCollapsed ? XML_CHANGE :
                 ( bIsStart ? XML_CHANGE_START : XML_CHANGE_END ),
             sal_True, sal_True);
     }

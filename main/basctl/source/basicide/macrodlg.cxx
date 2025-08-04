@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -118,7 +118,7 @@ MacroChooser::MacroChooser( Window* pParnt, sal_Bool bCreateEntries ) :
 
 	aBasicBox.SetMode( BROWSEMODE_MODULES );
     aBasicBox.SetStyle( WB_TABSTOP | WB_BORDER |
-                        WB_HASLINES | WB_HASLINESATROOT | 
+                        WB_HASLINES | WB_HASLINESATROOT |
                         WB_HASBUTTONS | WB_HASBUTTONSATROOT |
                         WB_HSCROLL );
 
@@ -387,13 +387,13 @@ SbMethod* MacroChooser::CreateMacro()
                 aModName = aModName.GetToken( 0, ' ', nIndex );
             }
 	        pModule = pBasic->FindModule( aModName );
-        }    
+        }
         else if ( pBasic->GetModules()->Count() )
 	        pModule = (SbModule*)pBasic->GetModules()->Get( 0 );
 
         if ( !pModule )
         {
-	        pModule = createModImpl( static_cast<Window*>( this ), 
+	        pModule = createModImpl( static_cast<Window*>( this ),
 		        aDocument, aBasicBox, aLibName, aModName );
         }
 
@@ -419,7 +419,7 @@ void MacroChooser::SaveSetCurEntry( SvTreeListBox& rBox, SvLBoxEntry* pEntry )
 
 void MacroChooser::CheckButtons()
 {
-	SvLBoxEntry* pCurEntry = aBasicBox.GetCurEntry();    
+	SvLBoxEntry* pCurEntry = aBasicBox.GetCurEntry();
     BasicEntryDescriptor aDesc( aBasicBox.GetEntryDescriptor( pCurEntry ) );
 	SvLBoxEntry* pMacroEntry = aMacroBox.FirstSelected();
 	SbMethod* pMethod = GetMacro();
@@ -830,7 +830,7 @@ IMPL_LINK( MacroChooser, ButtonHdl, Button *, pButton )
         ScriptDocument aDocument( aDesc.GetDocument() );
         String aLibName( aDesc.GetLibName() );
 		String aModName;
-		createModImpl( static_cast<Window*>( this ), aDocument, 
+		createModImpl( static_cast<Window*>( this ), aDocument,
 			aBasicBox, aLibName, aModName, true );
 	}
 	else if ( pButton == &aOrganizeButton )

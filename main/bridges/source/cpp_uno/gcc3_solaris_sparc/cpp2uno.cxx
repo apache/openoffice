@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,10 +53,10 @@ static typelib_TypeClass cpp2uno_call(
 	typelib_TypeDescription * pReturnTypeDescr = 0;
 	if (pReturnTypeRef)
 		TYPELIB_DANGER_GET( &pReturnTypeDescr, pReturnTypeRef );
-	
+
 	void * pUnoReturn = 0;
 	void * pCppReturn = 0; // complex return ptr: if != 0 && != pUnoReturn, reconversion need
-	
+
 	if (pReturnTypeDescr)
 	{
 		if (bridges::cpp_uno::shared::isSimpleType( pReturnTypeDescr ))
@@ -83,9 +83,9 @@ static typelib_TypeClass cpp2uno_call(
 	sal_Int32 * pTempIndizes = (sal_Int32 *)(pUnoArgs + (2 * nParams));
 	// type descriptions for reconversions
 	typelib_TypeDescription ** ppTempParamTypeDescr = (typelib_TypeDescription **)(pUnoArgs + (3 * nParams));
-	
+
 	sal_Int32 nTempIndizes   = 0;
-	
+
 	for ( sal_Int32 nPos = 0; nPos < nParams; ++nPos )
 	{
 		const typelib_MethodParameter & rParam = pParams[nPos];
@@ -150,14 +150,14 @@ static typelib_TypeClass cpp2uno_call(
 		}
 		pCppStack += sizeof(sal_Int32); // standard parameter length
 	}
-	
+
 	// ExceptionHolder
 	uno_Any aUnoExc; // Any will be constructed by callee
 	uno_Any * pUnoExc = &aUnoExc;
 
 	// invoke uno dispatch call
 	(*pThis->getUnoI()->pDispatcher)(pThis->getUnoI(), pMemberTypeDescr, pUnoReturn, pUnoArgs, &pUnoExc );
-	
+
 	// in case an exception occurred...
 	if (pUnoExc)
 	{
@@ -165,7 +165,7 @@ static typelib_TypeClass cpp2uno_call(
 		for ( ; nTempIndizes--; )
 		{
 			sal_Int32 nIndex = pTempIndizes[nTempIndizes];
-			
+
 			if (pParams[nIndex].bIn) // is in/inout => was constructed
 				uno_destructData( pUnoArgs[nIndex], ppTempParamTypeDescr[nTempIndizes], 0 );
 			TYPELIB_DANGER_RELEASE( ppTempParamTypeDescr[nTempIndizes] );
@@ -184,7 +184,7 @@ static typelib_TypeClass cpp2uno_call(
 		{
 			sal_Int32 nIndex = pTempIndizes[nTempIndizes];
 			typelib_TypeDescription * pParamTypeDescr = ppTempParamTypeDescr[nTempIndizes];
-			
+
 			if (pParams[nIndex].bOut) // inout/out
 			{
 				// convert and assign
@@ -194,7 +194,7 @@ static typelib_TypeClass cpp2uno_call(
 			}
 			// destroy temp uno param
 			uno_destructData( pUnoArgs[nIndex], pParamTypeDescr, 0 );
-			
+
 			TYPELIB_DANGER_RELEASE( pParamTypeDescr );
 		}
 		// return
@@ -253,7 +253,7 @@ static typelib_TypeClass cpp_mediate(
 	{
 		throw RuntimeException( rtl::OUString::createFromAscii("illegal vtable index!"), (XInterface *)pCppI );
 	}
-	
+
 	// determine called method
 	sal_Int32 nMemberPos = pTypeDescr->pMapFunctionIndexToMemberIndex[nFunctionIndex];
 	OSL_ENSURE( nMemberPos < pTypeDescr->nAllMembers, "### illegal member index!" );
@@ -287,7 +287,7 @@ static typelib_TypeClass cpp_mediate(
 				((typelib_InterfaceAttributeTypeDescription *)aMemberDescr.get())->pAttributeTypeRef;
 			aParam.bIn		= sal_True;
 			aParam.bOut		= sal_False;
-			
+
 			eRet = cpp2uno_call(
 				pCppI, aMemberDescr.get(),
 				0, // indicates void return
@@ -319,7 +319,7 @@ static typelib_TypeClass cpp_mediate(
 		(*pCppI->getBridge()->getCppEnv()->getRegisteredInterface)(
 		    pCppI->getBridge()->getCppEnv(),
 		    (void **)&pInterface, pCppI->getOid().pData, (typelib_InterfaceTypeDescription *)pTD );
-			
+
                 if (pInterface)
                 {
                     ::uno_any_construct(

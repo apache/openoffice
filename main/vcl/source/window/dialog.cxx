@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -634,7 +634,7 @@ sal_Bool Dialog::ImplStartExecuteModal()
                     "Dialog::StartExecuteModal() - Parent input disabled, use another parent to ensure modality!" );
         DBG_ASSERT( ! pParent->IsInModalMode(),
                     "Dialog::StartExecuteModal() - Parent already modally disabled, use another parent to ensure modality!" );
-            
+
     }
 #endif
 
@@ -660,10 +660,10 @@ sal_Bool Dialog::ImplStartExecuteModal()
     SetModalInputMode( sal_True );
     mbOldSaveBack = IsSaveBackgroundEnabled();
     EnableSaveBackground();
-    
+
     // FIXME: no layouting, workaround some clipping issues
     ImplAdjustNWFSizes();
-    
+
     Show();
 
     pSVData->maAppData.mnModalMode++;
@@ -687,7 +687,7 @@ short Dialog::Execute()
 
     ImplDelData aDelData;
     ImplAddDel( &aDelData );
-    
+
 #ifdef DBG_UTIL
     ImplDelData aParentDelData;
     Window* pDialogParent = mpDialogParent;
@@ -877,8 +877,8 @@ void Dialog::SetModalInputMode( sal_Bool bModal )
             mpPrevExecuteDlg->EnableInput( sal_True, sal_True, sal_True, this );
             // ensure continued modality of prev dialog
             // do not change modality counter
-			
-			
+
+
 			// #i119994# need find the last modal dialog before reactive it
             Dialog * pPrevModalDlg = mpPrevExecuteDlg;
 
@@ -886,12 +886,12 @@ void Dialog::SetModalInputMode( sal_Bool bModal )
 				pPrevModalDlg = pPrevModalDlg->mpPrevExecuteDlg;
 
             if( pPrevModalDlg &&
-            ( pPrevModalDlg == mpPrevExecuteDlg 
+            ( pPrevModalDlg == mpPrevExecuteDlg
 				|| !pPrevModalDlg->IsWindowOrChild( this, sal_True ) ) )
             {
 				mpPrevExecuteDlg->SetModalInputMode( sal_False );
 				mpPrevExecuteDlg->SetModalInputMode( sal_True );
-            }			
+            }
         }
     }
 }
@@ -964,15 +964,15 @@ void Dialog::Draw( OutputDevice* pDev, const Point& rPos, const Size& rSize, sal
 {
     Point aPos = pDev->LogicToPixel( rPos );
     Size aSize = pDev->LogicToPixel( rSize );
-    
+
     Wallpaper aWallpaper = GetBackground();
     if ( !aWallpaper.IsBitmap() )
         ImplInitSettings();
-    
+
     pDev->Push();
     pDev->SetMapMode();
     pDev->SetLineColor();
-    
+
     if ( aWallpaper.IsBitmap() )
         pDev->DrawBitmapEx( aPos, aSize, aWallpaper.GetBitmap() );
     else

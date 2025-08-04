@@ -3673,7 +3673,7 @@ void ScScenariosObj::Notify( SfxBroadcaster&, const SfxHint& rHint )
 
 sal_Bool ScScenariosObj::GetScenarioIndex_Impl( const rtl::OUString& rName, SCTAB& rIndex )
 {
-	//!	Case-insensitiv ????
+	//!	Case-insensitive ????
 
 	if ( pDocShell )
 	{

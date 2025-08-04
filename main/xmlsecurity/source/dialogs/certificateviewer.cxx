@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -296,10 +296,10 @@ CertificateViewerDetailsTP::CertificateViewerDetailsTP( Window* _pParent, Certif
 	aDetails = XmlSec::GetHexString( aSeq, pHexSep, nLineBreak );
 	InsertElement( String( XMLSEC_RES( STR_SERIALNUM ) ), aLBEntry, aDetails, true );
 
-    std::pair< ::rtl::OUString, ::rtl::OUString> pairIssuer = 
+    std::pair< ::rtl::OUString, ::rtl::OUString> pairIssuer =
         XmlSec::GetDNForCertDetailsView(xCert->getIssuerName());
 	aLBEntry = pairIssuer.first;
-	aDetails = pairIssuer.second; 
+	aDetails = pairIssuer.second;
 	InsertElement( String( XMLSEC_RES( STR_ISSUER ) ), aLBEntry, aDetails );
     /*
 	aSeq = xCert->getIssuerUniqueID();
@@ -320,7 +320,7 @@ CertificateViewerDetailsTP::CertificateViewerDetailsTP( Window* _pParent, Certif
 	aLBEntry += GetSettings().GetUILocaleDataWrapper().getTime( aDateTime.GetTime() );
 	InsertElement( String( XMLSEC_RES( STR_VALIDTO ) ), aLBEntry, aLBEntry );
 
-    std::pair< ::rtl::OUString, ::rtl::OUString > pairSubject = 
+    std::pair< ::rtl::OUString, ::rtl::OUString > pairSubject =
         XmlSec::GetDNForCertDetailsView(xCert->getSubjectName());
 	aLBEntry = pairSubject.first;
 	aDetails = pairSubject.second;

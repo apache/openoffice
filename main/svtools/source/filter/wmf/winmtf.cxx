@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -300,13 +300,13 @@ WinMtfFontStyle::WinMtfFontStyle( LOGFONTW& rFont )
 	}
 	else if ( aFontSize.Height() < 0 )
 		aFontSize.Height() *= -1;
-	
+
 	if ( !rFont.lfWidth )
 	{
         // #117968# VirtualDevice is not thread safe, but filter is used in multithreading
         vos::OGuard aGuard( Application::GetSolarMutex() );
 		VirtualDevice aVDev;
-	
+
         aFont.SetSize( aFontSize );
 		aVDev.SetFont( aFont );
 		FontMetric aMetric( aVDev.GetFontMetric() );
@@ -331,7 +331,7 @@ void WinMtfAssertHandler( const sal_Char* pAction, sal_uInt32 nFlags )
     if ( nFlags & WIN_MTF_ASSERT_MIFE )
     {
         if ( ( nAssertCount == 0 ) || ( bOnlyOnce == sal_False ) )
-        {   
+        {
             ByteString aText( "WMF/EMF Import: " );
             if ( pAction )
             {
@@ -354,12 +354,12 @@ WinMtf::WinMtf( WinMtfOutput* pWinMtfOutput, SvStream& rStreamWMF, FilterConfigI
 	pFilterConfigItem	( pConfigItem )
 {
 #ifdef WIN_MTF_ASSERT
-    // we want to assert not implemented features, but we do this 
+    // we want to assert not implemented features, but we do this
     // only once, so that nobody is handicaped by getting too much assertions
     // I hope this will bring more testdocuments, without support of these
     // testdocuments the implementation of missing features won't be possible. (SJ)
     WinMtfAssertHandler( NULL, WIN_MTF_ASSERT_INIT | WIN_MTF_ASSERT_ONCE );
-#endif 
+#endif
 
 	SvLockBytes *pLB = pWMF->GetLockBytes();
 	if ( pLB )
@@ -990,7 +990,7 @@ void WinMtfOutput::UpdateClipRegion()
 		aClipPath.bNeedsUpdate = sal_False;
 
 		mpGDIMetaFile->AddAction( new MetaPopAction() );                    // taking the original clipregion
-		mpGDIMetaFile->AddAction( new MetaPushAction( PUSH_CLIPREGION ) );  // 
+		mpGDIMetaFile->AddAction( new MetaPushAction( PUSH_CLIPREGION ) );  //
 
 		switch ( aClipPath.GetType() )
 		{
@@ -1398,7 +1398,7 @@ void WinMtfOutput::DrawPolyPolygon( PolyPolygon& rPolyPolygon, sal_Bool bRecordP
 		if ( aClipPath.GetType() == COMPLEX )
 		{
 			PolyPolygon aDest;
-			aClipPath.GetClipPath().GetIntersection( rPolyPolygon, aDest );	
+			aClipPath.GetClipPath().GetIntersection( rPolyPolygon, aDest );
 			ImplDrawClippedPolyPolygon( aDest );
 		}
 		else
@@ -1570,10 +1570,10 @@ void WinMtfOutput::DrawText( Point& rPosition, String& rText, sal_Int32* pDXArry
         vos::OGuard aGuard( Application::GetSolarMutex() );
 	    VirtualDevice aVDev;
 		sal_Int32 nTextWidth;
-		
+
         aVDev.SetMapMode( MapMode( MAP_100TH_MM ) );
 		aVDev.SetFont( maFont );
-		
+
         if( pDXArry )
 		{
 			sal_uInt32 nLen = rText.Len();
@@ -1586,7 +1586,7 @@ void WinMtfOutput::DrawText( Point& rPosition, String& rText, sal_Int32* pDXArry
 
 		if( mnTextAlign & TA_UPDATECP )
 			rPosition = maActPos;
-	
+
 		if ( mnTextAlign & TA_RIGHT_CENTER )
 		{
 			double fLenght = ( ( mnTextAlign & TA_RIGHT_CENTER ) == TA_RIGHT ) ? nTextWidth : nTextWidth >> 1;
@@ -1596,7 +1596,7 @@ void WinMtfOutput::DrawText( Point& rPosition, String& rText, sal_Int32* pDXArry
 
 		if( mnTextAlign & TA_UPDATECP )
 			maActPos.X() = rPosition.X() + nTextWidth;
-	}   
+	}
 	if ( bChangeFont || ( maLatestFont != aTmp ) )
     {
 		maLatestFont = aTmp;
@@ -1613,13 +1613,13 @@ void WinMtfOutput::DrawText( Point& rPosition, String& rText, sal_Int32* pDXArry
 	{
 		/* because text without dx array is badly scaled, we
 		   will create such an array if necessary */
-		sal_Int32* pDX = pDXArry;		
+		sal_Int32* pDX = pDXArry;
 		if ( !pDXArry )
 		{
             // #117968# VirtualDevice is not thread safe, but filter is used in multithreading
             vos::OGuard aGuard( Application::GetSolarMutex() );
 	        VirtualDevice aVDev;
-			
+
             pDX = new sal_Int32[ rText.Len() ];
 			aVDev.SetMapMode( MAP_100TH_MM );
 			aVDev.SetFont( maLatestFont );
@@ -1737,7 +1737,7 @@ void WinMtfOutput::ResolveBitmapActions( List& rSaveList )
 				{
 					if ( nObjectsOfSameSize == 2 )
 					{
-						BSaveStruct* pSave2 = (BSaveStruct*)rSaveList.GetObject( i + 1 ); 
+						BSaveStruct* pSave2 = (BSaveStruct*)rSaveList.GetObject( i + 1 );
                         if ( ( pSave->aBmp.GetPrefSize() == pSave2->aBmp.GetPrefSize() ) &&
                              ( pSave->aBmp.GetPrefMapMode() == pSave2->aBmp.GetPrefMapMode() ) )
                         {
@@ -1780,7 +1780,7 @@ void WinMtfOutput::ResolveBitmapActions( List& rSaveList )
 					{
 						case 0x1 :
 						case 0xe :
-						{						
+						{
 							SetRasterOp( R2_XORPEN );
 							ImplDrawBitmap( aPos, aSize, aBitmap );
 							SetRasterOp( R2_COPYPEN );
@@ -2062,7 +2062,7 @@ void WinMtfOutput::ModifyWorldTransform( const XForm& rXForm, sal_uInt32 nMode )
 
 		case MWT_RIGHTMULTIPLY :
 		case MWT_LEFTMULTIPLY :
-        {                
+        {
             const XForm* pLeft;
             const XForm* pRight;
 

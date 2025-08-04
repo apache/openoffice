@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -67,7 +67,7 @@ namespace dbaui
 		Edit*						pHelpTextCell;
         Edit*						pDescrCell;
 		OTableFieldDescWin*			pDescrWin;			// properties of one column
-		
+
 		 ::boost::shared_ptr<OTableRow> pActRow;
 
 		sal_uLong						nIndexEvent;
@@ -145,7 +145,7 @@ namespace dbaui
 		virtual sal_Bool	CursorMoving(long nNewRow, sal_uInt16 nNewCol);
 		virtual void	UpdateAll();
 		SfxUndoManager& GetUndoManager() const;
-		
+
 		void			SetDescrWin( OTableFieldDescWin* pWin ){ pDescrWin = pWin; if (pDescrWin && pActRow) pDescrWin->DisplayData(pActRow->GetActFieldDescr()); }
 		sal_Bool			SaveCurRow();
 		void			SwitchType( const TOTypeInfoSP& _pType );
@@ -201,16 +201,16 @@ namespace dbaui
 		sal_Int32 HasFieldName( const String& rFieldName );
 		String GenerateName( const String& rName );
 		sal_Bool SetDataPtr( long nRow );
-		
+
 		sal_Bool SaveData(long nRow, sal_uInt16 nColumnId);
 		/** AdjustFieldDescription set the needed values for the description
 			@param	_pFieldDesc		the field description where to set the values
 			@param	_rMultiSel		contains the positions which changed for undo/redo
-			@param	_nPos			the current position 
+			@param	_nPos			the current position
 			@param	_bSet			should a key be set
 			@param	_bPrimaryKey	which value should the pkey have
 		*/
-		void AdjustFieldDescription( OFieldDescription* _pFieldDesc, 
+		void AdjustFieldDescription( OFieldDescription* _pFieldDesc,
 									 MultiSelection& _rMultiSel,
 									 sal_Int32 _nPos,
 									 sal_Bool _bSet,

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -90,7 +90,7 @@ namespace {
     SfxDispatcher* LocalGetDispatcher (const SfxBindings* pBindings)
     {
         SfxDispatcher* pDispatcher = NULL;
-        
+
         if (SfxViewFrame::Current() != NULL)
             pDispatcher = SfxViewFrame::Current()->GetDispatcher();
         else if (pBindings != NULL)
@@ -175,7 +175,7 @@ __EXPORT Svx3DWin::Svx3DWin( SfxBindings* pInBindings,
 		aLbLight6			( this, SVX_RES( LB_LIGHT_6 ) ),
 		aLbLight7			( this, SVX_RES( LB_LIGHT_7 ) ),
 		aLbLight8			( this, SVX_RES( LB_LIGHT_8 ) ),
-		
+
 		aBtnLightColor		( this, SVX_RES( BTN_LIGHT_COLOR ) ),
 
 		// #99694# Keyboard shortcuts activate the next control, so the
@@ -184,7 +184,7 @@ __EXPORT Svx3DWin::Svx3DWin( SfxBindings* pInBindings,
 		aLbAmbientlight		( this, SVX_RES( LB_AMBIENTLIGHT ) ),	// ListBox
 		aBtnAmbientColor	( this, SVX_RES( BTN_AMBIENT_COLOR ) ), // color button
         aFLTexture         ( this, SVX_RES( FL_TEXTURE ) ),
-        
+
 		// Texturen
 		aFtTexKind			( this, SVX_RES( FT_TEX_KIND ) ),
 		aBtnTexLuminance	( this, SVX_RES( BTN_TEX_LUMINANCE ) ),
@@ -453,14 +453,14 @@ __EXPORT Svx3DWin::Svx3DWin( SfxBindings* pInBindings,
 	aBtnTexColor.SetAccessibleRelationLabeledBy( &aFtTexKind );
 	aBtnTexReplace.SetAccessibleRelationLabeledBy( &aFtTexMode );
 	aBtnTexModulate.SetAccessibleRelationLabeledBy( &aFtTexMode );
-	aBtnTexBlend.SetAccessibleRelationLabeledBy( &aFtTexMode );	
+	aBtnTexBlend.SetAccessibleRelationLabeledBy( &aFtTexMode );
 	aBtnTexObjectX.SetAccessibleRelationLabeledBy( &aFtTexProjectionX );
 	aBtnTexParallelX.SetAccessibleRelationLabeledBy( &aFtTexProjectionX );
-	aBtnTexCircleX.SetAccessibleRelationLabeledBy( &aFtTexProjectionX );	
-	aBtnTexObjectY.SetAccessibleRelationLabeledBy( &aFtTexProjectionY );	
+	aBtnTexCircleX.SetAccessibleRelationLabeledBy( &aFtTexProjectionX );
+	aBtnTexObjectY.SetAccessibleRelationLabeledBy( &aFtTexProjectionY );
 	aBtnTexParallelY.SetAccessibleRelationLabeledBy( &aFtTexProjectionY );
-	aBtnTexCircleY.SetAccessibleRelationLabeledBy( &aFtTexProjectionY );	
-	aBtnTexFilter.SetAccessibleRelationLabeledBy( &aFtTexFilter );		
+	aBtnTexCircleY.SetAccessibleRelationLabeledBy( &aFtTexProjectionY );
+	aBtnTexFilter.SetAccessibleRelationLabeledBy( &aFtTexFilter );
 	aCtlLightPreview.SetAccessibleRelationLabeledBy( &aCtlLightPreview );
 	aBtnNormalsObj.SetAccessibleRelationMemberOf(&aFLNormals);
 	aBtnNormalsFlat.SetAccessibleRelationMemberOf(&aFLNormals);
@@ -477,7 +477,7 @@ __EXPORT Svx3DWin::Svx3DWin( SfxBindings* pInBindings,
 	aBtnLight5.SetAccessibleRelationMemberOf(&aFLLight);
 	aBtnLight6.SetAccessibleRelationMemberOf(&aFLLight);
 	aBtnLight7.SetAccessibleRelationMemberOf(&aFLLight);
-	aBtnLight8.SetAccessibleRelationMemberOf(&aFLLight);	
+	aBtnLight8.SetAccessibleRelationMemberOf(&aFLLight);
 
 	aBtnTexLuminance.SetAccessibleRelationMemberOf(&aFLTexture);
 	aBtnTexColor.SetAccessibleRelationMemberOf(&aFLTexture);
@@ -494,7 +494,7 @@ __EXPORT Svx3DWin::Svx3DWin( SfxBindings* pInBindings,
 
 	aBtnMatColor.SetAccessibleRelationMemberOf(&aFLMaterial);
 	aBtnEmissionColor.SetAccessibleRelationMemberOf(&aFLMaterial);
-	
+
 	aBtnSpecularColor.SetAccessibleRelationMemberOf(&aFLMatSpecular);
 }
 

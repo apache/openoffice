@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -29,7 +29,7 @@ import com.sun.star.frame.XStorable;
 import com.sun.star.lang.*;
 import com.sun.star.document.XDocumentSubStorageSupplier;
 
- 
+
 import org.hsqldb.lib.StopWatch;
 import com.sun.star.uno.UnoRuntime;
 import com.sun.star.beans.PropertyState;
@@ -59,7 +59,7 @@ public class HsqlDriverTest {
     public static void afterClass() throws Exception {
         connection.tearDown();
     }
-	
+
     @Test
     public void test(){
         XDataSource ds = null;
@@ -71,7 +71,7 @@ public class HsqlDriverTest {
         } catch(Exception ex) {
             throw new RuntimeException("factory: unable to construct data source" );
         }
-        
+
         try{
             XDocumentSubStorageSupplier doc = (XDocumentSubStorageSupplier)UnoRuntime.queryInterface(XDocumentSubStorageSupplier.class,ds);
             XStorage stor = doc.getDocumentSubStorage("database",4);
@@ -107,13 +107,13 @@ public class HsqlDriverTest {
             info = new com.sun.star.beans.PropertyValue[]{
                 new com.sun.star.beans.PropertyValue("Storage",0,stor,PropertyState.DIRECT_VALUE)
                 ,new com.sun.star.beans.PropertyValue("URL",0,mod.getURL(),PropertyState.DIRECT_VALUE)
-            };        
+            };
             drv = (XDriver)UnoRuntime.queryInterface(XDriver.class, xMSF.createInstance("com.sun.star.sdbcx.comp.hsqldb.Driver"));
-        
+
 
             TestCacheSize test = new TestCacheSize(xMSF,info,drv);
 
-            StopWatch     sw   = new StopWatch();      
+            StopWatch     sw   = new StopWatch();
 
             try{
                 test.setUp();
@@ -131,7 +131,7 @@ public class HsqlDriverTest {
     }
     public void test2(){
         System.gc();
-       
+
         com.sun.star.beans.PropertyValue[] info = null;
         XDriver drv = null;
         XMultiServiceFactory xMSF = UnoRuntime.queryInterface(XMultiServiceFactory.class, connection.getComponentContext().getServiceManager());
@@ -139,13 +139,13 @@ public class HsqlDriverTest {
             info = new com.sun.star.beans.PropertyValue[]{
                 new com.sun.star.beans.PropertyValue("JavaDriverClass",0,"org.hsqldb.jdbcDriver",PropertyState.DIRECT_VALUE)
                 ,new com.sun.star.beans.PropertyValue("ParameterNameSubstitution",0, false,PropertyState.DIRECT_VALUE)
-            };        
+            };
             drv = (XDriver)UnoRuntime.queryInterface(XDriver.class,xMSF.createInstance("com.sun.star.comp.sdbc.JDBCDriver"));
             TestCacheSize test = new TestCacheSize(xMSF,info,drv);
             test.setURL("jdbc:hsqldb:g:\\hsql\\db");
 
 
-            StopWatch     sw   = new StopWatch();      
+            StopWatch     sw   = new StopWatch();
 
             try{
                 test.setUp();

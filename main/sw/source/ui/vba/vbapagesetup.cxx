@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -32,7 +32,7 @@
 using namespace ::com::sun::star;
 using namespace ::ooo::vba;
 
-SwVbaPageSetup::SwVbaPageSetup(const uno::Reference< XHelperInterface >& xParent, 
+SwVbaPageSetup::SwVbaPageSetup(const uno::Reference< XHelperInterface >& xParent,
 				const uno::Reference< uno::XComponentContext >& xContext,
 				const uno::Reference< frame::XModel >& xModel,
                 const uno::Reference< beans::XPropertySet >& xProps ) throw (uno::RuntimeException):
@@ -42,7 +42,7 @@ SwVbaPageSetup::SwVbaPageSetup(const uno::Reference< XHelperInterface >& xParent
     mxPageProps.set( xProps, uno::UNO_QUERY_THROW );
     mnOrientPortrait = word::WdOrientation::wdOrientPortrait;
     mnOrientLandscape = word::WdOrientation::wdOrientLandscape;
-}		
+}
 
 double SAL_CALL SwVbaPageSetup::getGutter() throw (uno::RuntimeException)
 {
@@ -89,7 +89,7 @@ void SAL_CALL SwVbaPageSetup::setHeaderDistance( double _headerdistance ) throw 
     mxPageProps->getPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("HeaderIsOn"))) >>= isHeaderOn;
     if( !isHeaderOn )
         mxPageProps->setPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("HeaderIsOn")), uno::makeAny( sal_True ) );
-        
+
     mxPageProps->getPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("TopMargin"))) >>= aktTopMargin;
     mxPageProps->getPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("HeaderBodyDistance"))) >>= aktSpacing;
     mxPageProps->getPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("HeaderHeight"))) >>= aktHeaderHeight;
@@ -123,7 +123,7 @@ void SAL_CALL SwVbaPageSetup::setFooterDistance( double _footerdistance ) throw 
     mxPageProps->getPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("FooterIsOn"))) >>= isFooterOn;
     if( !isFooterOn )
         mxPageProps->setPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("FooterIsOn")), uno::makeAny( sal_True ) );
-        
+
     mxPageProps->getPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("BottomMargin"))) >>= aktBottomMargin;
     mxPageProps->getPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("FooterBodyDistance"))) >>= aktSpacing;
     mxPageProps->getPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("FooterHeight"))) >>= aktFooterHeight;
@@ -239,7 +239,7 @@ rtl::OUString SwVbaPageSetup::getStyleOfFirstPage() throw (uno::RuntimeException
         wdSectionStart = word::WdSectionStart::wdSectionOddPage;
     else
         wdSectionStart = word::WdSectionStart::wdSectionNewPage;
-    return wdSectionStart;    
+    return wdSectionStart;
 }
 
 void SAL_CALL SwVbaPageSetup::setSectionStart( ::sal_Int32 /*_sectionstart*/ ) throw (uno::RuntimeException)
@@ -248,14 +248,14 @@ void SAL_CALL SwVbaPageSetup::setSectionStart( ::sal_Int32 /*_sectionstart*/ ) t
     // #FIXME:
 }
 
-rtl::OUString& 
+rtl::OUString&
 SwVbaPageSetup::getServiceImplName()
 {
 	static rtl::OUString sImplName( RTL_CONSTASCII_USTRINGPARAM("SwVbaPageSetup") );
 	return sImplName;
 }
 
-uno::Sequence< rtl::OUString > 
+uno::Sequence< rtl::OUString >
 SwVbaPageSetup::getServiceNames()
 {
 	static uno::Sequence< rtl::OUString > aServiceNames;

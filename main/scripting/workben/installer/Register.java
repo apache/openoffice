@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package installer;
@@ -29,12 +29,12 @@ public class Register{
                                            "drafts.com.sun.star.script.framework.storage.theScriptStorageManager=drafts.com.sun.star.script.framework.storage.ScriptStorageManager",
                                            "drafts.com.sun.star.script.framework.theScriptRuntimeManager=drafts.com.sun.star.script.framework.ScriptRuntimeManager"};
 
-  
+
     private static String quotedString ( String stringToQuote ) {
             String doubleQuote = "\"";
 	    String result = new String ( doubleQuote + stringToQuote + doubleQuote );
 	    return result;
-    } 
+    }
     private static boolean regSingletons( String path, String progPath, String opSys, JLabel statusLabel ) {
         try{
             boolean goodResult = false;
@@ -47,12 +47,12 @@ public class Register{
                     env[0] = "LD_LIBRARY_PATH=" + progPath;
                     command.exec( "chmod a+x " + progPath + "regsingleton", null );
                     regCmd = progPath + "regsingleton " + path + "user" + File.separator + "uno_packages" + File.separator + "cache" + File.separator + "services.rdb " + singletonDefParams[i];
-                    goodResult = command.exec( regCmd, env ); 
+                    goodResult = command.exec( regCmd, env );
                 }
                 else {
 		    // Windows
                     regCmd = quotedString( progPath + "regsingleton.exe" ) + " " + quotedString( path + "user" + File.separator + "uno_packages" + File.separator + "cache" + File.separator + "services.rdb" ) + " " + quotedString( singletonDefParams[i] );
-                    goodResult = command.exec( regCmd,null ); 
+                    goodResult = command.exec( regCmd,null );
                 }
                 if ( !goodResult ){
                     System.out.println("Regsingleton cmd failed, cmd: " + regCmd );
@@ -60,7 +60,7 @@ public class Register{
                     return false;
 		}
 	    }
-	} 
+	}
         catch ( Exception e ) {
             String message = "\nError installing scripting package, please view SFrameworkInstall.log.";
             System.out.println(message);
@@ -69,8 +69,8 @@ public class Register{
             return false;
         }
         return true;
-    
-        
+
+
     }
     public static boolean register(String path, JLabel statusLabel) {
         String[] packages = {"ooscriptframe.zip", "bshruntime.zip", "jsruntime.zip"};
@@ -78,13 +78,13 @@ public class Register{
 	try {
 	    String s=null;
 	    boolean goodResult = false;
-	    String env[] = new String[1]; 
+	    String env[] = new String[1];
             ExecCmd command = new ExecCmd();
 	    boolean isWindows =
                 (System.getProperty("os.name").indexOf("Windows") != -1);
 
 	    String progpath = path.concat("program" + File.separator);
-            
+
             statusLabel.setText("Registering Scripting Framework...");
 
             // pkgchk Scripting Framework Components
@@ -96,7 +96,7 @@ public class Register{
 
 	        if (!isWindows) {
 		    env[0]="LD_LIBRARY_PATH=" + progpath;
-		
+
 		    goodResult = command.exec("chmod a+x " + progpath + "pkgchk", null );
 
 		    if ( goodResult ){
@@ -134,14 +134,14 @@ public class Register{
             //     return false;
             // }
             // updating ProtocolHandler
-            /* statusLabel.setText("Updating ProtocolHandler...");            
+            /* statusLabel.setText("Updating ProtocolHandler...");
             if(!FileUpdater.updateProtocolHandler(path, statusLabel)) {
 		    statusLabel.setText("Updating ProtocolHandler failed, please view SFrameworkInstall.log");
 		    return false;
 	    } */
-            
+
             // updating StarBasic libraries
-            statusLabel.setText("Updating StarBasic libraries...");            
+            statusLabel.setText("Updating StarBasic libraries...");
             if(!FileUpdater.updateScriptXLC(path, statusLabel)) {
 		    statusLabel.setText("Updating user/basic/script.xlc failed, please view SFrameworkInstall.log");
 		    return false;
@@ -150,14 +150,14 @@ public class Register{
 		    statusLabel.setText("Updating user/basic/dialog.xlc failed, please view SFrameworkInstall.log");
 		    return false;
 	    }
-	    
+
 	}
 	catch(Exception e){
 		String message = "\nError installing scripting package, please view SFrameworkInstall.log.";
 		System.out.println(message);
 		e.printStackTrace();
 		statusLabel.setText(message);
-		return false;	
+		return false;
 	}
 	return true;
     }// register

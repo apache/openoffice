@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -77,7 +77,7 @@ protected:
 ExampleComponent1Impl::ExampleComponent1Impl( const Reference<XMultiServiceFactory> & rXSMgr )
 	: m_xSMgr(rXSMgr)
 {
-}	
+}
 
 //*************************************************************************
 ExampleComponent1Impl::~ExampleComponent1Impl()
@@ -85,15 +85,15 @@ ExampleComponent1Impl::~ExampleComponent1Impl()
 }
 
 //*************************************************************************
-OUString SAL_CALL ExampleComponent1Impl::getImplementationName(  ) 
+OUString SAL_CALL ExampleComponent1Impl::getImplementationName(  )
 	throw(RuntimeException)
 {
 	Guard< Mutex > aGuard( m_mutex );
 	return OUString( RTL_CONSTASCII_USTRINGPARAM(IMPLNAME1) );
-}	
+}
 
 //*************************************************************************
-sal_Bool SAL_CALL ExampleComponent1Impl::supportsService( const OUString& ServiceName ) 
+sal_Bool SAL_CALL ExampleComponent1Impl::supportsService( const OUString& ServiceName )
 	throw(RuntimeException)
 {
 	Guard< Mutex > aGuard( m_mutex );
@@ -103,29 +103,29 @@ sal_Bool SAL_CALL ExampleComponent1Impl::supportsService( const OUString& Servic
 		if( pArray[i] == ServiceName )
 			return sal_True;
 	return sal_False;
-}	
+}
 
 //*************************************************************************
-Sequence<OUString> SAL_CALL ExampleComponent1Impl::getSupportedServiceNames(  ) 
+Sequence<OUString> SAL_CALL ExampleComponent1Impl::getSupportedServiceNames(  )
 	throw(RuntimeException)
 {
 	Guard< Mutex > aGuard( m_mutex );
 	return getSupportedServiceNames_Static();
-}	
+}
 
 //*************************************************************************
-Sequence<OUString> SAL_CALL ExampleComponent1Impl::getSupportedServiceNames_Static(  ) 
+Sequence<OUString> SAL_CALL ExampleComponent1Impl::getSupportedServiceNames_Static(  )
 {
 	OUString aName( RTL_CONSTASCII_USTRINGPARAM(SERVICENAME1) );
 	return Sequence< OUString >( &aName, 1 );
-}	
+}
 
 //*************************************************************************
 OUString SAL_CALL ExampleComponent1Impl::getMessage() throw(RuntimeException)
 {
 	Guard< Mutex > aGuard( m_mutex );
 	return OUString::createFromAscii("Lalelu nur der Mann im Mond schaut zu ...");
-}	
+}
 
 
 //*************************************************************************
@@ -138,8 +138,8 @@ Reference<XInterface> SAL_CALL ExampleComponent1_CreateInstance( const Reference
 	if (pXTest)
 	{
 		xRet = Reference< XInterface >::query(pXTest);
-	}	
-    
+	}
+
 	return xRet;
 }
 
@@ -166,7 +166,7 @@ sal_Bool SAL_CALL component_writeInfo(
 			Reference< XRegistryKey > xNewKey(
 				reinterpret_cast< XRegistryKey * >( pRegistryKey )->createKey(
 					OUString( RTL_CONSTASCII_USTRINGPARAM("/" IMPLNAME1 "/UNO/SERVICES") ) ) );
-			
+
 			const Sequence< OUString > & rSNL =
 				::excomp_impl::ExampleComponent1Impl::getSupportedServiceNames_Static();
 			const OUString * pArray = rSNL.getConstArray();
@@ -187,7 +187,7 @@ void * SAL_CALL component_getFactory(
 	const sal_Char * pImplName, void * pServiceManager, void * /* pRegistryKey */ )
 {
 	void * pRet = 0;
-	
+
 	if (rtl_str_compare( pImplName, IMPLNAME1 ) == 0)
 	{
 		Reference< XSingleServiceFactory > xFactory( createSingleFactory(
@@ -195,14 +195,14 @@ void * SAL_CALL component_getFactory(
 			OUString( RTL_CONSTASCII_USTRINGPARAM(IMPLNAME1) ),
 			::excomp_impl::ExampleComponent1_CreateInstance,
 			::excomp_impl::ExampleComponent1Impl::getSupportedServiceNames_Static() ) );
-		
+
 		if (xFactory.is())
 		{
 			xFactory->acquire();
 			pRet = xFactory.get();
 		}
 	}
-	
+
 	return pRet;
 }
 }

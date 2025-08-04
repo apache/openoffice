@@ -120,7 +120,7 @@ class PyMailSMTPService(unohelper.Base, XSmtpService):
             self.server = smtplib.SMTP(server, port,timeout=tout)
         if dbg:
             self.server.set_debuglevel(1)
-        
+
         if dbg:
             out.write("ConnectionType: %s\n" % str(connectiontype))
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -32,7 +32,7 @@
 #include <com/sun/star/container/XNameContainer.hpp>
 #include <com/sun/star/datatransfer/DataFlavor.hpp>
 #include <tools/link.hxx>
-#include <tools/gen.hxx> 
+#include <tools/gen.hxx>
 #include <vcl/timer.hxx>
 #include <svl/hint.hxx>
 #include <svl/brdcst.hxx>
@@ -69,7 +69,7 @@ namespace rptui
         SplitWindow                         m_aSplitWin;
 
         ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface>		m_xReportComponent;
-		OReportController&					m_rReportController;        
+		OReportController&					m_rReportController;
         OScrollWindowHelper                 m_aScrollWindow;
 		Window*								m_pTaskPane;
 		PropBrw*							m_pPropWin;
@@ -87,11 +87,11 @@ namespace rptui
 		sal_Bool								m_bGridVisible;
 		sal_Bool								m_bGridSnap;
 		sal_Bool								m_bDeleted;
-		
+
 
 		DECL_LINK( MarkTimeout, Timer * );
 		DECL_LINK( SplitHdl, void* );
-		
+
 		void ImplInitSettings();
 
         ODesignView(ODesignView&);
@@ -103,7 +103,7 @@ namespace rptui
 		virtual void DataChanged( const DataChangedEvent& rDCEvt );
 
 	public:
-		ODesignView(Window* pParent, 
+		ODesignView(Window* pParent,
 					const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >&,
 					OReportController& _rController);
 		virtual ~ODesignView();
@@ -252,7 +252,7 @@ namespace rptui
 			@return <TRUE/> if the keycode is handled otherwise <FALSE/>
 		*/
 		sal_Bool		 handleKeyEvent(const KeyEvent& _rEvent);
-        
+
         /** set the section as marked or not marked
 			@param	_pSectionView	the section where to set the marked flag
 			@param	_bMark	the marked flag

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -747,7 +747,7 @@ start:
 		case SbxBYREF | SbxSINGLE:
 			if( !pDec->getSingle( *p->pSingle ) )
 			{
-				SbxBase::SetError( SbxERR_OVERFLOW ); 
+				SbxBase::SetError( SbxERR_OVERFLOW );
 				*p->pSingle = 0;
 			}
 			break;
@@ -756,7 +756,7 @@ start:
 		case SbxBYREF | SbxDOUBLE:
 			if( !pDec->getDouble( *p->pDouble ) )
 			{
-				SbxBase::SetError( SbxERR_OVERFLOW ); 
+				SbxBase::SetError( SbxERR_OVERFLOW );
 				*p->pDouble = 0;
 			}
 			break;
@@ -764,14 +764,14 @@ start:
 		{
 			double d;
 			pDec->getDouble( d );
-			*p->pULong64 = ImpDoubleToUINT64( d ); 
+			*p->pULong64 = ImpDoubleToUINT64( d );
 			break;
 		}
 		case SbxBYREF | SbxLONG64:
 		{
 			double d;
 			pDec->getDouble( d );
-			*p->pLong64 = ImpDoubleToINT64( d ); 
+			*p->pLong64 = ImpDoubleToINT64( d );
 			break;
 		}
 		case SbxBYREF | SbxCURRENCY:

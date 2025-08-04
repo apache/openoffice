@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -74,7 +74,7 @@ TextAttrib*     SpellErrorAttrib::Clone() const
   -----------------------------------------------------------------------*/
 int SpellErrorAttrib::operator==( const TextAttrib& rAttr ) const
 {
-    return Which() == rAttr.Which() && 
+    return Which() == rAttr.Which() &&
             m_aSpellErrorDescription == static_cast<const SpellErrorAttrib&>(rAttr).m_aSpellErrorDescription;
 }
 /*-- 10.09.2003 14:27:43---------------------------------------------------
@@ -118,13 +118,13 @@ TextAttrib* SpellLanguageAttrib::Clone() const
   -----------------------------------------------------------------------*/
 int SpellLanguageAttrib::operator==( const TextAttrib& rAttr ) const
 {
-    return Which() == rAttr.Which() && 
+    return Which() == rAttr.Which() &&
             m_eLanguage == static_cast<const SpellLanguageAttrib&>(rAttr).m_eLanguage;
 }
 /*-- 31.10.2003 16:07:45---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-SpellBackgroundAttrib::SpellBackgroundAttrib(const Color& rCol) : 
+SpellBackgroundAttrib::SpellBackgroundAttrib(const Color& rCol) :
     TextAttrib(TEXTATTR_SPELL_BACKGROUND),
     m_aBackgroundColor(rCol)
 {
@@ -162,6 +162,6 @@ TextAttrib* SpellBackgroundAttrib::Clone() const
   -----------------------------------------------------------------------*/
 int  SpellBackgroundAttrib::operator==( const TextAttrib& rAttr ) const
 {
-    return Which() == rAttr.Which() && 
+    return Which() == rAttr.Which() &&
             m_aBackgroundColor == static_cast<const SpellBackgroundAttrib&>(rAttr).m_aBackgroundColor;
 }

@@ -257,13 +257,13 @@ void InformationDialog::InitDialog()
 		Any( sal_Int32( 115 ) ),
 		Any( getString( STR_INFO_DIALOG ) ),
 		Any( sal_Int32( DIALOG_WIDTH ) ) };
-	
+
 	sal_Int32 nCount = sizeof( pNames ) / sizeof( OUString );
 
 	Sequence< rtl::OUString >	aNames( pNames, nCount );
 	Sequence< Any >				aValues( pValues, nCount );
 
-	mxDialogModelMultiPropertySet->setPropertyValues( aNames, aValues ); 
+	mxDialogModelMultiPropertySet->setPropertyValues( aNames, aValues );
 
 	sal_Int64 nSource = mnSourceSize;
 	sal_Int64 nDest   = mnDestSize;
@@ -447,7 +447,7 @@ sal_Bool InformationDialog::execute()
         sal_Bool bOpenNewDocument = static_cast< sal_Bool >( mxCheckBox->getState() );
         mrbOpenNewDocument = bOpenNewDocument;
 	}
-	
+
 	endExecute( sal_True );
 	return mbStatus;
 }

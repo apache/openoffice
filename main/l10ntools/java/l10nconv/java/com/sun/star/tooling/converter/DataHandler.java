@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -24,8 +24,8 @@
  * DataHandler.java
  *
  * take the data from the reader
- * and put it to the Writer 
- * 
+ * and put it to the Writer
+ *
  */
 
 package com.sun.star.tooling.converter;
@@ -33,17 +33,17 @@ package com.sun.star.tooling.converter;
 import java.util.*;
 
 /**
- * Handle the Data to get it from the Source 
- * readable to the Target 
- * 
+ * Handle the Data to get it from the Source
+ * readable to the Target
+ *
  * @author Christian Schmidt
  */
 public class DataHandler {
 
     /**
-     * An arrays that holds the names that will be 
+     * An arrays that holds the names that will be
      * keys for the HashMap containing the data
-     * 
+     *
      */
     private final String[]      dataNames = { "BlockNr", "Project",
             "SourceFile", "Dummy", "ResType", "GID", "LID", "HID", "Platform",
@@ -54,7 +54,7 @@ public class DataHandler {
     private static final String EMPTY     = new String("");
 
     /**
-     * The HashMap containing the data 
+     * The HashMap containing the data
      */
     private final Map           data      = new ExtMap(dataNames, null);
 
@@ -64,7 +64,7 @@ public class DataHandler {
 
     /**
      * fill the data from the desired source
-     * 
+     *
      * @param source where to get the data from
      * @return true if data is read and false if null is read
      * @throws IOException
@@ -77,20 +77,20 @@ public class DataHandler {
 
         line = source.getData();
         if (line == null){
-            
+
             return false;
-        }else{   
-        
+        }else{
+
             this.data.putAll(line);
             return true;
         }
-       
+
 
     }
 
     /**
      * fill this data with the inData
-     * 
+     *
      * @param inData the data to handle by this handler
      */
     public void fillDataWith(Map inData) {
@@ -105,7 +105,7 @@ public class DataHandler {
 
     /**
      * The designated output is filled with the content of this handler
-     * 
+     *
      * @param output an array of Maps [0] should hold the source language data [1] the target language data
      * @throws java.io.IOException
      */
@@ -123,7 +123,7 @@ public class DataHandler {
     }
     /**
      * The designated output is filled with the content of this handler
-     * 
+     *
      * @param output a Map that should hold the source language data and the target language data
      * @throws java.io.IOException
      */

@@ -41,7 +41,7 @@
 #ifndef WIN32_LEAN_AND_MEAN
 #	define WIN32_LEAN_AND_MEAN
 # ifdef _MSC_VER
-#	pragma warning(push,1) 
+#	pragma warning(push,1)
 # endif
 #	include <windows.h>
 # ifdef _MSC_VER

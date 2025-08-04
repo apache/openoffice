@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -83,7 +83,7 @@ SvXMLImportContext *XMLGraphicsDefaultStyle::CreateChildContext( sal_uInt16 nPre
 				pContext = new XMLShapePropertySetContext( GetImport(), nPrefix, rLocalName, xAttrList,	nFamily, GetProperties(), xImpPrMap );
 		}
 	}
-		
+
 	if( !pContext )
 		pContext = XMLPropStyleContext::CreateChildContext( nPrefix, rLocalName, xAttrList );
 
@@ -97,10 +97,10 @@ void XMLGraphicsDefaultStyle::SetDefaults()
 	if( !xFact.is() )
 		return;
 
-	Reference< XPropertySet > xDefaults( xFact->createInstance( OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.drawing.Defaults") ) ), UNO_QUERY ); 
+	Reference< XPropertySet > xDefaults( xFact->createInstance( OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.drawing.Defaults") ) ), UNO_QUERY );
 	if( !xDefaults.is() )
 		return;
-											// SJ: #i114750# 
+											// SJ: #i114750#
 	sal_Bool bWordWrapDefault = sal_True;	// initializing with correct odf fo:wrap-option default
 	sal_Int32 nUPD( 0 );
 	sal_Int32 nBuild( 0 );
@@ -112,7 +112,7 @@ void XMLGraphicsDefaultStyle::SetDefaults()
 		||
 		((nUPD > 300) && (nUPD <= 330))
 	) )
-		bWordWrapDefault = sal_False;		
+		bWordWrapDefault = sal_False;
 
 	const OUString sTextWordWrap( RTL_CONSTASCII_USTRINGPARAM( "TextWordWrap" ) );
 	Reference< XPropertySetInfo > xInfo( xDefaults->getPropertySetInfo() );

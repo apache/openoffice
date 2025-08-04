@@ -40,9 +40,9 @@ public class FiniteAutomatonContainer
     {
         maComplexTypeNameToAutomatonMap = new HashMap<>();
     }
-    
-    
-    
+
+
+
 
     public void AddAutomaton (
         final QualifiedName aElementName,
@@ -51,17 +51,17 @@ public class FiniteAutomatonContainer
         maComplexTypeNameToAutomatonMap.put(aElementName, aAutomaton);
     }
 
-    
-    
-    
+
+
+
     public Iterable<FiniteAutomaton> GetAutomatons()
     {
         return maComplexTypeNameToAutomatonMap.values();
     }
 
-    
-    
-    
+
+
+
     public int GetAutomatonCount ()
     {
         return maComplexTypeNameToAutomatonMap.size();
@@ -79,9 +79,9 @@ public class FiniteAutomatonContainer
         return aStates;
     }
 
-    
-    
-    
+
+
+
     public int GetStateCount()
     {
         int nStateCount = 0;
@@ -101,9 +101,9 @@ public class FiniteAutomatonContainer
         return nTransitionCount;
     }
 
-    
-    
-    
+
+
+
     public FiniteAutomatonContainer CreateDFAs ()
     {
         final StateContainer aDFAStateContainer = new StateContainer();
@@ -118,10 +118,10 @@ public class FiniteAutomatonContainer
         }
         return aDFAs;
     }
-    
-    
-    
-    
+
+
+
+
     public FiniteAutomatonContainer MinimizeDFAs ()
     {
         PrintStream aLog = null;
@@ -134,7 +134,7 @@ public class FiniteAutomatonContainer
             e.printStackTrace();
             return null;
         }
-            
+
         final StateContainer aNewStateContainer = new StateContainer();
         final FiniteAutomatonContainer aDFAs = new FiniteAutomatonContainer(aNewStateContainer);
         for (final Entry<QualifiedName, FiniteAutomaton> aEntry : maComplexTypeNameToAutomatonMap.entrySet())
@@ -150,17 +150,17 @@ public class FiniteAutomatonContainer
         }
         return aDFAs;
     }
-    
-    
-    
-    
+
+
+
+
     public FiniteAutomaton GetTopLevelAutomaton ()
     {
         return maComplexTypeNameToAutomatonMap.get(null);
     }
 
-    
-    
-    
+
+
+
     private final Map<QualifiedName, FiniteAutomaton> maComplexTypeNameToAutomatonMap;
 }

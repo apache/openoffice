@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -74,7 +74,7 @@ static void s_setCurrent(uno_Environment * pEnv)
 	oslThreadIdentifier threadId = osl_getThreadIdentifier(NULL);
 
 	osl::MutexGuard guard(s_threadMap_mutex);
-	if (pEnv) 
+	if (pEnv)
 		s_threadMap[threadId] = pEnv;
 	else
 	{
@@ -118,7 +118,7 @@ extern "C" void SAL_CALL uno_getCurrentEnvironment(uno_Environment ** ppEnv, rtl
 	{
 		rtl::OUString envDcp(pTypeName);
 		envDcp += currPurpose;
-		
+
 		uno_getEnvironment(ppEnv, envDcp.pData, NULL);
 	}
 	else
@@ -139,10 +139,10 @@ static rtl::OUString s_getPrefix(rtl::OUString const & str1, rtl::OUString const
 	sal_Int32 nIndex1 = 0;
 	sal_Int32 nIndex2 = 0;
 	sal_Int32 sim = 0;
-	
+
 	rtl::OUString token1;
 	rtl::OUString token2;
-	
+
 	do
 	{
 		token1 = str1.getToken(0, ':', nIndex1);
@@ -211,7 +211,7 @@ static int s_getNextEnv(uno_Environment ** ppEnv, uno_Environment * pCurrEnv, un
 	}
 
 	return res;
-} 
+}
 
 extern "C" { static void s_pull(va_list * pParam)
 {
@@ -226,7 +226,7 @@ static void s_callInto_v(uno_Environment * pEnv, uno_EnvCallee * pCallee, va_lis
 	cppu::Enterable * pEnterable = reinterpret_cast<cppu::Enterable *>(pEnv->pReserved);
 	if (pEnterable)
 		pEnterable->callInto(s_pull, pCallee, pParam);
-				
+
 	else
 		pCallee(pParam);
 }
@@ -324,7 +324,7 @@ extern "C" void SAL_CALL uno_Environment_enter(uno_Environment * pTargetEnv)
 	uno_Environment * pCurrEnv = s_getCurrent();
 
 	int res;
-	while ( (res = s_getNextEnv(&pNextEnv, pCurrEnv, pTargetEnv)) != 0) 
+	while ( (res = s_getNextEnv(&pNextEnv, pCurrEnv, pTargetEnv)) != 0)
 	{
 		cppu::Enterable * pEnterable;
 
@@ -336,7 +336,7 @@ extern "C" void SAL_CALL uno_Environment_enter(uno_Environment * pTargetEnv)
 				pEnterable->leave();
 			pCurrEnv->release(pCurrEnv);
 			break;
-			
+
 		case 1:
 			pNextEnv->acquire(pNextEnv);
 			pEnterable = reinterpret_cast<cppu::Enterable *>(pNextEnv->pReserved);

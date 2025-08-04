@@ -285,7 +285,7 @@ int main(argc, argv)
 				width = atoi(argv[0]+2);
 			break;
 		case 'n':
-            // Use "-n" switch to generate dependencies with windows-native slash style 
+            // Use "-n" switch to generate dependencies with windows-native slash style
             native_win_slashes = TRUE;
 			break;
 		case 'o':
@@ -337,7 +337,7 @@ int main(argc, argv)
 		case 'm':
 			warn_multiple = TRUE;
 			break;
-			
+
 		/* Ignore -O, -g so we can just pass ${CFLAGS} to
 		   makedepend
 		 */
@@ -350,10 +350,10 @@ int main(argc, argv)
 			warning("ignoring option %s\n", argv[0]);
 		}
 	}
-    
+
     convert_slashes(objprefix);
     objprefix = append_slash(objprefix);
-	
+
     if (!defincdir) {
 #ifdef PREINCDIR
 	    if (incp >= includedirs + MAXDIRS)
@@ -446,7 +446,7 @@ int main(argc, argv)
 	 * now peruse through the list of files.
 	 */
     incCollection = create_IncludesCollection();
-	
+
     for(fp=filelist; *fp; fp++) {
 		struct symhash *includes;
 		filecontent = getfile(*fp);
@@ -455,7 +455,7 @@ int main(argc, argv)
 		includes = hash_copy( maininclist );
 		find_includes(filecontent, ip, ip, 0, FALSE, incCollection, includes);
 		hash_free( includes );
-		
+
 		freefile(filecontent);
 		recursive_pr_include(ip, ip->i_file, base_name(*fp));
 		inc_clean();
@@ -507,7 +507,7 @@ struct filepointer *getfile(file)
 	if ((bytes_read = read(fd, content->f_base, malloc_size)) < 0)
 		if ( st.st_mode & S_IFREG )
 			fatalerr("makedepend:  Failed to read file \"%s\"\n", file);
-	
+
 	close(fd);
 	content->f_len = bytes_read+1;
 	content->f_p = content->f_base;
@@ -599,7 +599,7 @@ char *get_line(filep)
 
 				*p++ = '\0';
 				/* punt lines with just # (yacc generated) */
-				for (cp = bol+1; 
+				for (cp = bol+1;
 				     *cp && (*cp == ' ' || *cp == '\t'); cp++);
 				if (*cp) goto done;
 			}
@@ -758,8 +758,8 @@ void warning1(char *msg, ...)
 #endif /* DEBUG_MKDEPEND */
 }
 
-void convert_slashes(path) 
-    char* path; 
+void convert_slashes(path)
+    char* path;
 {
 #if defined (WNT) || defined(OS2)
 	/*
@@ -780,8 +780,8 @@ void convert_slashes(path)
 #endif
 }
 
-char* append_slash(path) 
-    char* path; 
+char* append_slash(path)
+    char* path;
 {
     char *new_string;
     if ((path[strlen(path) - 1] == '/') || (path[strlen(path) - 1] == '\\')) {

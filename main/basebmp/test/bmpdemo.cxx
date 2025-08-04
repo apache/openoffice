@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -78,7 +78,7 @@ namespace
 {
 
 /// template meta function: add const qualifier, if given 2nd type has it
-template<typename A, typename B> struct clone_const 
+template<typename A, typename B> struct clone_const
 {
     typedef B type;
 };
@@ -87,7 +87,7 @@ template<typename A, typename B> struct clone_const<const A,B>
     typedef const B type;
 };
 
-template< class DestIterator, class DestAccessor > class Renderer : 
+template< class DestIterator, class DestAccessor > class Renderer :
         public basegfx::B2DPolyPolygonRasterConverter
 {
 private:
@@ -100,8 +100,8 @@ public:
     Renderer(const basegfx::B2DPolyPolygon&     rPolyPolyRaster,
              typename DestIterator::value_type  fillColor,
              typename DestIterator::value_type  clearColor,
-             DestIterator                       begin, 
-             DestIterator                       end, 
+             DestIterator                       begin,
+             DestIterator                       end,
              DestAccessor                       accessor ) :
         B2DPolyPolygonRasterConverter(rPolyPolyRaster,
                                       basegfx::B2DRange(0,0,
@@ -116,13 +116,13 @@ public:
 
     virtual void span(const double& rfXLeft,
                       const double& rfXRight,
-                      sal_Int32 	nY, 
+                      sal_Int32 	nY,
                       bool 			bOn )
     {
         DestIterator currIter( begin_ + vigra::Diff2D(0,nY) );
-        typename DestIterator::row_iterator rowIter( currIter.rowIterator() + 
+        typename DestIterator::row_iterator rowIter( currIter.rowIterator() +
                                                      basegfx::fround(rfXLeft) );
-        typename DestIterator::row_iterator rowEnd( currIter.rowIterator() + 
+        typename DestIterator::row_iterator rowEnd( currIter.rowIterator() +
                                                     basegfx::fround(rfXRight) );
         if( bOn )
             while( rowIter != rowEnd )
@@ -139,13 +139,13 @@ public:
     }
 };
 
-template< class DestIterator, class DestAccessor > 
+template< class DestIterator, class DestAccessor >
     std::auto_ptr< Renderer< DestIterator, DestAccessor > > makeRenderer(
         const basegfx::B2DPolyPolygon&                          rPolyPolyRaster,
         typename DestIterator::value_type                       fillColor,
         typename DestIterator::value_type                       clearColor,
         vigra::triple<DestIterator, DestIterator, DestAccessor> dest )
-{ 
+{
     return std::auto_ptr< Renderer< DestIterator, DestAccessor > >(
         new Renderer< DestIterator, DestAccessor >(rPolyPolyRaster,
                                                    fillColor,
@@ -215,7 +215,7 @@ public:
 };
 
 /// template meta function: remove const qualifier from plain type
-template <typename T> struct remove_const 
+template <typename T> struct remove_const
 {
     typedef T type;
 };
@@ -248,21 +248,21 @@ template< typename data_type, int bits_per_pixel, bool MsbFirst, typename differ
     const unsigned int nIntraWordPositions( sizeof(data_type)*8 / bits_per_pixel );
 
     //      create bits_per_pixel 1s      shift to intra-word position
-    return ((~(~0 << bits_per_pixel)) << bits_per_pixel*(MsbFirst ? 
-                                                         (nIntraWordPositions-1 - (d % nIntraWordPositions)) : 
+    return ((~(~0 << bits_per_pixel)) << bits_per_pixel*(MsbFirst ?
+                                                         (nIntraWordPositions-1 - (d % nIntraWordPositions)) :
                                                          (d % nIntraWordPositions)));
 }
 
 template< int num_intraword_positions, int bits_per_pixel, bool MsbFirst, typename difference_type > inline difference_type get_shift( difference_type remainder )
 {
-    return bits_per_pixel*(MsbFirst ? 
+    return bits_per_pixel*(MsbFirst ?
                            (num_intraword_positions - 1 - remainder) :
                            remainder);
 }
 
-template< typename Datatype, 
-          typename Valuetype, 
-          int      bits_per_pixel, 
+template< typename Datatype,
+          typename Valuetype,
+          int      bits_per_pixel,
           bool     MsbFirst > class PackedPixelColumnIterator
 {
 public:
@@ -412,7 +412,7 @@ public:
 
     value_type get() const
     {
-        // TODO(Q3): use traits to get unsigned type for data_type (if  
+        // TODO(Q3): use traits to get unsigned type for data_type (if
         // not already)
         return static_cast<unsigned int>(*y() & mask_) >> shift_;
     }
@@ -437,9 +437,9 @@ public:
     }
 };
 
-template< typename Datatype, 
-          typename Valuetype,           
-          int      bits_per_pixel, 
+template< typename Datatype,
+          typename Valuetype,
+          int      bits_per_pixel,
           bool     MsbFirst > class PackedPixelRowIterator
 {
 public:
@@ -480,14 +480,14 @@ private:
         remainder_ = newValue % num_intraword_positions;
 
         const mask_type shifted_mask(
-            MsbFirst ? 
+            MsbFirst ?
             // TODO(Q3): use traits to get unsigned type for data_type
             // (if not already)
-            static_cast<unsigned int>(mask_) >> bits_per_pixel : 
+            static_cast<unsigned int>(mask_) >> bits_per_pixel :
             mask_ << bits_per_pixel );
 
         // data_offset is 0 for shifted mask, and 1 for wrapped-around mask
-        mask_ = (1-data_offset)*shifted_mask + data_offset*(MsbFirst ? 
+        mask_ = (1-data_offset)*shifted_mask + data_offset*(MsbFirst ?
                                                             bit_mask << bits_per_pixel*(num_intraword_positions-1) :
                                                             bit_mask);
     }
@@ -510,14 +510,14 @@ private:
         remainder_ = newRemainder + isNegative*num_intraword_positions;
 
         const mask_type shifted_mask(
-            MsbFirst ? 
+            MsbFirst ?
             mask_ << bits_per_pixel :
             // TODO(Q3): use traits to get unsigned type for data_type
             // (if not already)
             static_cast<unsigned int>(mask_) >> bits_per_pixel );
 
         // data_offset is 0 for shifted mask, and 1 for wrapped-around mask
-        mask_ = (1-data_offset)*shifted_mask + data_offset*(MsbFirst ? 
+        mask_ = (1-data_offset)*shifted_mask + data_offset*(MsbFirst ?
                                                             bit_mask :
                                                             bit_mask << bits_per_pixel*(num_intraword_positions-1));
     }
@@ -529,8 +529,8 @@ private:
 
     bool less( PackedPixelRowIterator const & rhs ) const
     {
-        return data_ == rhs.data_ ? 
-            (remainder_ < rhs.remainder_) : 
+        return data_ == rhs.data_ ?
+            (remainder_ < rhs.remainder_) :
             (data_ < rhs.data_);
     }
 
@@ -657,7 +657,7 @@ public:
     {
         // TODO(Q3): use traits to get unsigned type for data_type (if
         // not already)
-        return static_cast<unsigned int>(*data_ & mask_) >> 
+        return static_cast<unsigned int>(*data_ & mask_) >>
             get_shift<num_intraword_positions, bits_per_pixel, MsbFirst>(remainder_);
     }
 
@@ -670,9 +670,9 @@ public:
 
     void set( value_type v ) const
     {
-        const value_type pixel_value( 
-            (v << 
-             get_shift<num_intraword_positions, bits_per_pixel, MsbFirst>(remainder_)) 
+        const value_type pixel_value(
+            (v <<
+             get_shift<num_intraword_positions, bits_per_pixel, MsbFirst>(remainder_))
             & mask_ );
         *data_ = (*data_ & ~mask_) | pixel_value;
     }
@@ -685,9 +685,9 @@ public:
     }
 };
 
-template< typename Datatype, 
-          typename Valuetype,           
-          int      bits_per_pixel, 
+template< typename Datatype,
+          typename Valuetype,
+          int      bits_per_pixel,
           bool     MsbFirst > class PackedPixelIterator
 {
 public:
@@ -696,13 +696,13 @@ public:
     typedef Valuetype                                   value_type;
     typedef vigra::Diff2D                               difference_type;
     typedef image_traverser_tag                         iterator_category;
-    typedef PackedPixelRowIterator<data_type, 
+    typedef PackedPixelRowIterator<data_type,
                                    value_type,
-                                   bits_per_pixel, 
+                                   bits_per_pixel,
                                    MsbFirst>            row_iterator;
-    typedef PackedPixelColumnIterator<data_type, 
+    typedef PackedPixelColumnIterator<data_type,
                                       value_type,
-                                      bits_per_pixel, 
+                                      bits_per_pixel,
                                       MsbFirst>         column_iterator;
 
     typedef data_type*                                  pointer;
@@ -723,12 +723,12 @@ public:
 
 private:
     pointer current() const
-    { 
+    {
         return y() + (x / num_intraword_positions);
     }
 
     pointer current(int dx, int dy) const
-    { 
+    {
         return y(dy) + ((x+dx)/num_intraword_positions);
     }
 
@@ -812,9 +812,9 @@ public:
 
         // TODO(Q3): use traits to get unsigned type for data_type (if
         // not already)
-        return (static_cast<unsigned int>(*current() & 
+        return (static_cast<unsigned int>(*current() &
                                           get_mask<data_type, bits_per_pixel, MsbFirst>(remainder))
-                >> (MsbFirst ? 
+                >> (MsbFirst ?
                     (num_intraword_positions - remainder) :
                     remainder));
     }
@@ -825,18 +825,18 @@ public:
 
         // TODO(Q3): use traits to get unsigned type for data_type (if
         // not already)
-        return (static_cast<unsigned int>(*current(d.x,d.y) & 
+        return (static_cast<unsigned int>(*current(d.x,d.y) &
                                           get_mask<data_type, bits_per_pixel, MsbFirst>(remainder))
-                >> get_shift<num_intraword_positions, bits_per_pixel, MsbFirst>(remainder)); 
+                >> get_shift<num_intraword_positions, bits_per_pixel, MsbFirst>(remainder));
     }
 
     void set( value_type v ) const
     {
         const int remainder( x() % num_intraword_positions );
         const int mask( get_mask<data_type, bits_per_pixel, MsbFirst>(remainder) );
-        const value_type pixel_value( 
-            (v << 
-             get_shift<num_intraword_positions, bits_per_pixel, MsbFirst>(remainder)) 
+        const value_type pixel_value(
+            (v <<
+             get_shift<num_intraword_positions, bits_per_pixel, MsbFirst>(remainder))
             & mask );
         pointer p = current();
         *p = (*p & ~mask) | pixel_value;
@@ -846,9 +846,9 @@ public:
     {
         const int remainder( x(d.x) % num_intraword_positions );
         const int mask( get_mask<data_type, bits_per_pixel, MsbFirst>(remainder) );
-        const value_type pixel_value( 
+        const value_type pixel_value(
             (v <<
-             get_shift<num_intraword_positions, bits_per_pixel, MsbFirst>(remainder)) 
+             get_shift<num_intraword_positions, bits_per_pixel, MsbFirst>(remainder))
              & mask );
         pointer p = current(d.x,d.y);
         *p = (*p & ~mask) | pixel_value;
@@ -874,7 +874,7 @@ private:
                  BitmapColor const& rRHS ) const
     {
         // convert RGBValue's linear space to a normed linear space
-        return sqrt( 
+        return sqrt(
             vigra::sq(rLHS.GetRed()-rRHS.GetRed()) +
             vigra::sq(rLHS.GetGreen()-rRHS.GetGreen()) +
             vigra::sq(rLHS.GetBlue()-rRHS.GetBlue()) );
@@ -912,16 +912,16 @@ private:
     value_type toCol( BitmapColor const& rCol ) const
     {
         return value_type(rCol.GetRed(),rCol.GetGreen(),rCol.GetBlue());
-    } 
+    }
 
 public:
-    PaletteImageAccessor() : 
+    PaletteImageAccessor() :
         palette(0),
         num_entries(0)
     {}
 
     PaletteImageAccessor( const BitmapColor* pPalette,
-                          data_type          entries ) : 
+                          data_type          entries ) :
         palette(pPalette),
         num_entries(entries)
     {}
@@ -938,8 +938,8 @@ public:
 
     template< typename V, class Iterator >
     void set(V const& value, Iterator const& i) const
-    { 
-        i.set( 
+    {
+        i.set(
             find_best_match(
                 vigra::detail::RequiresExplicitCast<value_type>::cast(value) ));
     }
@@ -947,9 +947,9 @@ public:
     template< typename V, class Iterator, class Difference >
     void set(V const& value, Iterator const& i, Difference const& diff) const
     {
-        i.set( 
+        i.set(
             find_best_match(
-                vigra::detail::RequiresExplicitCast<value_type>::cast(value)), 
+                vigra::detail::RequiresExplicitCast<value_type>::cast(value)),
             diff );
     }
 };
@@ -976,9 +976,9 @@ class TestWindow : public Dialog
 		}
 		virtual ~TestWindow() {}
         virtual void MouseButtonUp( const MouseEvent& /*rMEvt*/ )
-		{ 
+		{
 			//TODO: do something cool
-            EndDialog(); 
+            EndDialog();
         }
 		virtual void Paint( const Rectangle& rRect );
 };
@@ -1072,16 +1072,16 @@ void TestWindow::Paint( const Rectangle& /*rRect*/ )
         ::rtl::OUString aSvg;
         basegfx::B2DPolyPolygon aPoly;
 
-        basegfx::tools::importFromSvgD( aPoly, 
-                                        ::rtl::OUString::createFromAscii( 
+        basegfx::tools::importFromSvgD( aPoly,
+                                        ::rtl::OUString::createFromAscii(
                                             "m0 0 h7 v7 h-7 z" ) );
-        basegfx::tools::importFromSvgD( aPoly, 
-                                        ::rtl::OUString::createFromAscii( 
+        basegfx::tools::importFromSvgD( aPoly,
+                                        ::rtl::OUString::createFromAscii(
                                             "m2 2 h3 v3 h-3 z" ) );
 
-        pDevice->fillPolyPolygon( 
+        pDevice->fillPolyPolygon(
             aPoly,
-            basebmp::Color(0xFFFFFFFF), 
+            basebmp::Color(0xFFFFFFFF),
             basebmp::DrawMode_PAINT );
     }
 
@@ -1097,17 +1097,17 @@ void TestWindow::Paint( const Rectangle& /*rRect*/ )
         pMask->drawLine( aPt111, aPt222, aCol333, basebmp::DrawMode_PAINT );
 
 
-        ::rtl::OUString aSvg = ::rtl::OUString::createFromAscii( 
+        ::rtl::OUString aSvg = ::rtl::OUString::createFromAscii(
             "m 0 0 h5 l5 5 v5 h-5 l-5-5 z" );
         basegfx::B2DPolyPolygon aPoly;
         basegfx::tools::importFromSvgD( aPoly, aSvg );
         pMask->clear(basebmp::Color(0xFFFFFFFF));
-        pMask->drawPolygon( 
+        pMask->drawPolygon(
             aPoly.getB2DPolygon(0),
-            basebmp::Color(0), 
+            basebmp::Color(0),
             basebmp::DrawMode_PAINT );
 
-        basebmp::BitmapDeviceSharedPtr pSubsetDevice = 
+        basebmp::BitmapDeviceSharedPtr pSubsetDevice =
             basebmp::subsetBitmapDevice( pDevice,
                                          basegfx::B2IRange(3,3,7,7) );
 
@@ -1119,7 +1119,7 @@ void TestWindow::Paint( const Rectangle& /*rRect*/ )
 
     {
         const basebmp::Color aCol(0xFFFFFFFF);
-        basegfx::B2DPolygon aRect = basegfx::tools::createPolygonFromRect( 
+        basegfx::B2DPolygon aRect = basegfx::tools::createPolygonFromRect(
             basegfx::B2DRange( 0,0,1001,1001 ));
         pDevice->drawPolygon( aRect, aCol, basebmp::DrawMode_PAINT );
 
@@ -1166,7 +1166,7 @@ void TestWindow::Paint( const Rectangle& /*rRect*/ )
             basegfx::B2DPolygon aPoly;
             aPoly.append( basegfx::B2DPoint(project( aP1 ) + aCenter) );
             aPoly.append( basegfx::B2DPoint(project( aP2 ) + aCenter) );
-            pDevice->fillPolyPolygon( 
+            pDevice->fillPolyPolygon(
                 basegfx::tools::createAreaGeometryForPolygon(
                     aPoly,
 //                    std::max(1,n/30),
@@ -1175,7 +1175,7 @@ void TestWindow::Paint( const Rectangle& /*rRect*/ )
                     basegfx::tools::B2DLINEJOIN_NONE),
                 aLineColor,
                 basebmp::DrawMode_PAINT);
-            
+
             aPoint.setX( (int)((((double)aP1.getX())*cosd - ((double)aP1.getY())*sind)*factor) );
             aPoint.setY( (int)((((double)aP1.getY())*cosd + ((double)aP1.getX())*sind)*factor) );
             aP1 = aPoint;
@@ -1190,7 +1190,7 @@ void TestWindow::Paint( const Rectangle& /*rRect*/ )
 
     // Fill bitmap with generated content
     {
-        ScopedBitmapWriteAccess pWriteAccess( aBitmap.AcquireWriteAccess(), 
+        ScopedBitmapWriteAccess pWriteAccess( aBitmap.AcquireWriteAccess(),
                                               aBitmap );
         for( int y=0; y<aTestSize.getY(); ++y )
             for( int x=0; x<aTestSize.getX(); ++x )
@@ -1221,7 +1221,7 @@ void TestApp::Main()
     try
     {
         uno::Reference< uno::XComponentContext > xCtx = ::cppu::defaultBootstrap_InitialComponentContext();
-        xFactory = uno::Reference< lang::XMultiServiceFactory >(  xCtx->getServiceManager(), 
+        xFactory = uno::Reference< lang::XMultiServiceFactory >(  xCtx->getServiceManager(),
                                                                   uno::UNO_QUERY );
         if( xFactory.is() )
             ::comphelper::setProcessServiceFactory( xFactory );

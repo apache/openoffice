@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -295,7 +295,7 @@ static inline const sal_Unicode* static_getLineEndText( LineEnd aLineEnd )
 }
 
 void  TextEngine::ReplaceText(const TextSelection& rSel, const String& rText)
-{        
+{
     ImpInsertText( rSel, rText );
 }
 
@@ -728,13 +728,13 @@ sal_Bool TextEngine::IsInputSequenceCheckingRequired( sal_Unicode c, const TextS
     sal_uInt16 nMaxPos   = rCurSel.GetEnd().GetIndex();
     if (nMaxPos < nFirstPos)
         nFirstPos = nMaxPos;
-    
-    sal_Bool bIsSequenceChecking =  
+
+    sal_Bool bIsSequenceChecking =
         aCTLOptions.IsCTLFontEnabled() &&
-        aCTLOptions.IsCTLSequenceChecking() && 
+        aCTLOptions.IsCTLSequenceChecking() &&
         nFirstPos != 0 && /* first char needs not to be checked */
         xBI.is() && i18n::ScriptType::COMPLEX == xBI->getScriptType( rtl::OUString( c ), 0 );
-    
+
     return bIsSequenceChecking;
 }
 
@@ -781,10 +781,10 @@ TextPaM TextEngine::ImpInsertText( sal_Unicode c, const TextSelection& rCurSel, 
             if (xISC.is())
             {
                 xub_StrLen nTmpPos = aPaM.GetIndex();
-                sal_Int16 nCheckMode = aCTLOptions.IsCTLSequenceCheckingRestricted() ? 
+                sal_Int16 nCheckMode = aCTLOptions.IsCTLSequenceCheckingRestricted() ?
                         i18n::InputSequenceCheckMode::STRICT : i18n::InputSequenceCheckMode::BASIC;
 
-                // the text that needs to be checked is only the one 
+                // the text that needs to be checked is only the one
                 // before the current cursor position
                 rtl::OUString aOldText( mpDoc->GetText( aPaM.GetPara() ).Copy(0, nTmpPos) );
                 rtl::OUString aNewText( aOldText );
@@ -899,8 +899,8 @@ TextPaM TextEngine::ImpInsertText( const TextSelection& rCurSel, const XubString
 			aPaM = ImpInsertParaBreak( aPaM );
 
 		nStart = nEnd+1;
-		
-        if ( nStart < nEnd )    // #108611# overflow 
+
+        if ( nStart < nEnd )    // #108611# overflow
             break;
 	}
 
@@ -1062,7 +1062,7 @@ long TextEngine::ImpGetXPos( sal_uLong nPara, TextLine* pLine, sal_uInt16 nIndex
         if ( nIndex == ( nTextPortionStart + pPortion->GetLen() ) )
         {
             // End of Portion
-            if ( ( pPortion->GetKind() == PORTIONKIND_TAB ) || 
+            if ( ( pPortion->GetKind() == PORTIONKIND_TAB ) ||
                  ( !IsRightToLeft() && !pPortion->IsRightToLeft() ) ||
                  ( IsRightToLeft() && pPortion->IsRightToLeft() ) )
             {
@@ -1070,7 +1070,7 @@ long TextEngine::ImpGetXPos( sal_uLong nPara, TextLine* pLine, sal_uInt16 nIndex
                 if ( ( pPortion->GetKind() == PORTIONKIND_TAB ) && ( (nTextPortion+1) < pParaPortion->GetTextPortions().Count() ) )
                 {
                     TETextPortion* pNextPortion = pParaPortion->GetTextPortions().GetObject( nTextPortion+1 );
-                    if ( ( pNextPortion->GetKind() != PORTIONKIND_TAB ) && ( 
+                    if ( ( pNextPortion->GetKind() != PORTIONKIND_TAB ) && (
                               ( !IsRightToLeft() && pNextPortion->IsRightToLeft() ) ||
                               ( IsRightToLeft() && !pNextPortion->IsRightToLeft() ) ) )
                     {
@@ -1295,7 +1295,7 @@ sal_uLong TextEngine::CalcTextWidth()
 		{
 			sal_uLong nParaWidth = CalcTextWidth( --nPara );
 			if ( nParaWidth > mnCurTextWidth )
-				mnCurTextWidth = nParaWidth; 
+				mnCurTextWidth = nParaWidth;
 		}
 	}
 	return mnCurTextWidth+1;// Ein breiter, da in CreateLines bei >= umgebrochen wird.
@@ -1698,7 +1698,7 @@ void TextEngine::FormatDoc()
 			{
 				sal_uLong nNewParaWidth = CalcTextWidth( nPara );
 				if ( nNewParaWidth >= mnCurTextWidth )
-					mnCurTextWidth = nNewParaWidth; 
+					mnCurTextWidth = nNewParaWidth;
 				else if ( ( nOldParaWidth != 0xFFFFFFFF ) && ( nOldParaWidth >= mnCurTextWidth ) )
 					mnCurTextWidth = 0xFFFFFFFF;
 			}
@@ -1945,7 +1945,7 @@ void TextEngine::CreateTextPortions( sal_uLong nPara, sal_uInt16 nStartPos )
 
 	sal_uInt16 nInvPos;
     #ifdef DBG_UTIL
-	sal_Bool bFound = 
+	sal_Bool bFound =
     #endif
         aPositions.Seek_Entry( nPortionStart, &nInvPos );
 	DBG_ASSERT( bFound && ( nInvPos < (aPositions.Count()-1) ), "InvPos ?!" );
@@ -2064,7 +2064,7 @@ void TextEngine::ImpPaint( OutputDevice* pOutDev, const Point& rStartPos, Rectan
 
 	if ( !IsFormatted() )
 		FormatDoc();
-    
+
     bool bTransparent = false;
     Window* pOutWin = dynamic_cast<Window*>(pOutDev);
     bTransparent = (pOutWin && pOutWin->IsPaintTransparent());
@@ -2807,7 +2807,7 @@ void TextEngine::RemoveAttribs( sal_uLong nPara, sal_uInt16 nWhich, sal_Bool bId
                 FormatAndUpdate( NULL );
         }
     }
-}        
+}
 void TextEngine::RemoveAttrib( sal_uLong nPara, const TextCharAttrib& rAttrib )
 {
     if ( nPara < mpDoc->GetNodes().Count() )
@@ -2820,7 +2820,7 @@ void TextEngine::RemoveAttrib( sal_uLong nPara, const TextCharAttrib& rAttrib )
             for(sal_uInt16 nAttr = nAttrCount; nAttr; --nAttr)
             {
                 if(rAttribs.GetAttrib( nAttr - 1 ) == &rAttrib)
-                {        
+                {
                     rAttribs.RemoveAttrib( nAttr -1 );
                     break;
                 }
@@ -2831,7 +2831,7 @@ void TextEngine::RemoveAttrib( sal_uLong nPara, const TextCharAttrib& rAttrib )
             FormatAndUpdate( NULL );
         }
     }
-}        
+}
 
 void TextEngine::SetAttrib( const TextAttrib& rAttr, sal_uLong nPara, sal_uInt16 nStart, sal_uInt16 nEnd, sal_Bool bIdleFormatAndUpdate )
 {
@@ -3070,11 +3070,11 @@ LocaleDataWrapper* TextEngine::ImpGetLocaleDataWrapper()
     return mpLocaleDataWrapper;
 }
 
-void TextEngine::SetRightToLeft( sal_Bool bR2L ) 
-{ 
+void TextEngine::SetRightToLeft( sal_Bool bR2L )
+{
     if ( mbRightToLeft != bR2L )
     {
-        mbRightToLeft = bR2L; 
+        mbRightToLeft = bR2L;
         meAlign = bR2L ? TXTALIGN_RIGHT : TXTALIGN_LEFT;
 		FormatFullDoc();
 		UpdateViews();
@@ -3136,7 +3136,7 @@ sal_uInt8 TextEngine::ImpGetRightToLeft( sal_uLong nPara, sal_uInt16 nPos, sal_u
 			ImpInitWritingDirections( nPara );
 
 		TEWritingDirectionInfos& rDirInfos = pParaPortion->GetWritingDirectionInfos();
-		for ( sal_uInt16 n = 0; n < rDirInfos.Count(); n++ ) 
+		for ( sal_uInt16 n = 0; n < rDirInfos.Count(); n++ )
 		{
 			if ( ( rDirInfos[n].nStartPos <= nPos ) && ( rDirInfos[n].nEndPos >= nPos ) )
 	   		{
@@ -3235,11 +3235,11 @@ long TextEngine::ImpGetPortionXOffset( sal_uLong nPara, TextLine* pLine, sal_uIn
 void TextEngine::ImpInitLayoutMode( OutputDevice* pOutDev, sal_Bool bDrawingR2LPortion )
 {
     sal_uLong nLayoutMode = pOutDev->GetLayoutMode();
-    
+
     nLayoutMode &= ~(TEXT_LAYOUT_BIDI_RTL | TEXT_LAYOUT_COMPLEX_DISABLED | TEXT_LAYOUT_BIDI_STRONG );
     if ( bDrawingR2LPortion )
         nLayoutMode |= TEXT_LAYOUT_BIDI_RTL;
-    
+
     pOutDev->SetLayoutMode( nLayoutMode );
 }
 

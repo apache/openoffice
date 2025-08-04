@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -162,7 +162,7 @@ OString createFileNameFromType( const OString& destination,
 
     OUString uSysFileName;
     OSL_VERIFY( FileBase::getSystemPathFromFileURL(
-        convertToFileUrl(fileName), uSysFileName) == FileBase::E_None );    
+        convertToFileUrl(fileName), uSysFileName) == FileBase::E_None );
 	return OUStringToOString(uSysFileName, osl_getThreadTextEncoding());
 }
 
@@ -207,7 +207,7 @@ sal_Bool checkFileContent(const OString& targetFileName, const OString& tmpFileN
 
     if (target) fclose(target);
     if (tmp) fclose(tmp);
-    
+
     return bFindChanges;
 }
 
@@ -218,14 +218,14 @@ sal_Bool makeValidTypeFile(const OString& targetFileName, const OString& tmpFile
         if (checkFileContent(targetFileName, tmpFileName)) {
             if ( !unlink(targetFileName.getStr()) )
                 if ( !rename(tmpFileName.getStr(), targetFileName.getStr()) )
-                    return sal_True;        
-        } else 
+                    return sal_True;
+        } else
             return removeTypeFile(tmpFileName);
     } else {
         if (fileExists(targetFileName))
             if (!removeTypeFile(targetFileName))
                 return sal_False;
-        
+
         if ( rename(tmpFileName.getStr(), targetFileName.getStr()) ) {
             if (errno == EEXIST)
                 return sal_True;
@@ -298,7 +298,7 @@ FileStream::FileStream(const OString& name, FileAccessMode mode)
     if ( !name.isEmpty() )
     {
         OUString sUrl(convertToFileUrl(name));
-#ifdef SAL_UNX        
+#ifdef SAL_UNX
         sal_uInt64 uAttr = osl_File_Attribute_OwnWrite |
                            osl_File_Attribute_OwnRead |
                            osl_File_Attribute_GrpWrite |
@@ -341,7 +341,7 @@ void FileStream::createTempFile(const OString& sPath)
     sTmpPath = convertToFileUrl(sTmp);
 
     if (osl_createTempFile(sTmpPath.pData, &m_file, &sTmpName.pData) == osl_File_E_None) {
-#ifdef SAL_UNX       
+#ifdef SAL_UNX
         sal_uInt64 uAttr = osl_File_Attribute_OwnWrite |
                            osl_File_Attribute_OwnRead |
                            osl_File_Attribute_GrpWrite |
@@ -351,7 +351,7 @@ void FileStream::createTempFile(const OString& sPath)
             m_file = NULL;
             return;
         }
-#endif  
+#endif
         OUString sSysTmpName;
         FileBase::getSystemPathFromFileURL(sTmpName, sSysTmpName);
         m_name = OUStringToOString(sSysTmpName, osl_getThreadTextEncoding());
@@ -430,7 +430,7 @@ FileStream &operator<<(FileStream& o, const ::rtl::OString& s) {
     sal_uInt64 writtenBytes;
     osl_writeFile(o.m_file, s.getStr(), s.getLength() * sizeof(sal_Char), &writtenBytes);
     return o;
-    
+
 }
 FileStream &operator<<(FileStream& o, ::rtl::OStringBuffer* s) {
     sal_uInt64 writtenBytes;

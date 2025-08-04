@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,15 +53,15 @@ module com {  module sun {  module star {  module text {
 published service AccessibleTextGraphicObject
 {
 	/** This interface comprises the basic accessibility of text graphics.
-		
+
 		<ul>
-			<li>The parent returned by 
+			<li>The parent returned by
                 <method scope="::com::sun::star::accessibility"
                 >XAccessibleContext::getAccessibleParent</method> is the
                 accessible view of a paragraph if the graphic is bound as
                 character, and the accessible view of the document (or of a
                 page in the page preview) in any other case.
-			<li>There are no chidren returned by
+			<li>There are no children returned by
 				<method scope="::com::sun::star::accessibility"
                 >XAccessibleContext::getAccessibleChild</method>.
 			<li>The role is <const scope="::com::sun::star::accessibility"
@@ -106,7 +106,7 @@ published service AccessibleTextGraphicObject
 	 */
 	interface ::com::sun::star::accessibility::XAccessibleContext;
 
-	/** This interface describes the graphical representation of a 
+	/** This interface describes the graphical representation of a
 	  	graphic.
 	 */
 	interface ::com::sun::star::accessibility::XAccessibleComponent;

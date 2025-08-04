@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -395,7 +395,7 @@ sal_Bool SAL_CALL TimeContainerEnumeration::hasMoreElements() throw (RuntimeExce
 	return maIter != maChilds.end();
 }
 
-Any SAL_CALL TimeContainerEnumeration::nextElement() 
+Any SAL_CALL TimeContainerEnumeration::nextElement()
 	throw (NoSuchElementException, WrappedTargetException, RuntimeException)
 {
 	Guard< Mutex > aGuard( maMutex );
@@ -490,7 +490,7 @@ AnimationNode::AnimationNode( const AnimationNode& rNode )
 
 	// attributes for XAnimateTransform
 	mnTransformType( rNode.mnTransformType ),
-	
+
 	// attributes for XTransitionFilter
 	mnTransition( rNode.mnTransition ),
 	mnSubtype( rNode.mnSubtype ),
@@ -644,7 +644,7 @@ void AnimationNode::initTypeProvider( sal_Int16 nNodeType ) throw()
 		mpId[nNodeType] = new Sequence< sal_Int8 >( 16 );
 		rtl_createUuid( (sal_uInt8 *)mpId[nNodeType]->getArray(), 0, sal_True );
 
-		static sal_Int32 type_numbers[] = 
+		static sal_Int32 type_numbers[] =
 		{
 			7, // CUSTOM
 			9, // PAR
@@ -1159,7 +1159,7 @@ void SAL_CALL AnimationNode::setParent( const Reference< XInterface >& Parent ) 
 		mpParent = 0;
 		Reference< XUnoTunnel > xTunnel( mxParent.get(), UNO_QUERY );
 		if( xTunnel.is() )
-			mpParent = reinterpret_cast< AnimationNode* >( sal::static_int_cast< sal_IntPtr >(xTunnel->getSomething( getUnoTunnelId() ))); 
+			mpParent = reinterpret_cast< AnimationNode* >( sal::static_int_cast< sal_IntPtr >(xTunnel->getSomething( getUnoTunnelId() )));
 
 		fireChangeListener();
 	}
@@ -1824,7 +1824,7 @@ Reference< XEnumeration > SAL_CALL AnimationNode::createEnumeration()
 	throw (RuntimeException)
 {
 	Guard< Mutex > aGuard( maMutex );
-	
+
 	return new TimeContainerEnumeration( maChilds);
 }
 

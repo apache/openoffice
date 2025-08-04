@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -243,7 +243,7 @@ void SwAnnotationShell::Exec( SfxRequest &rReq )
 				{
 					aNewAttr.Put(*pItem);
 				}
-				else 
+				else
 				{
 					FontUnderline eFU = ( (const SvxUnderlineItem&) aEditAttr.Get( EE_CHAR_UNDERLINE ) ).GetLineStyle();
 					aNewAttr.Put( SvxUnderlineItem( eFU != UNDERLINE_NONE ?UNDERLINE_NONE : UNDERLINE_SINGLE,  EE_CHAR_UNDERLINE ) );
@@ -1238,7 +1238,7 @@ void SwAnnotationShell::ExecLingu(SfxRequest &rReq)
             if (aReplaceText.Len() > 0)
                 ReplaceTextWithSynonym( pOLV->GetEditView(), aReplaceText );
             break;
-        }        
+        }
         case SID_THESAURUS:
 		{
             pOLV->StartThesaurus();
@@ -1347,7 +1347,7 @@ void SwAnnotationShell::GetLinguState(SfxItemSet &rSet)
 				SwLangHelper::GetLanguageStatus(pOLV,rSet);
 				break;
 			}
-            
+
             case SID_THES:
             {
                 String          aStatusVal;
@@ -1362,8 +1362,8 @@ void SwAnnotationShell::GetLinguState(SfxItemSet &rSet)
                     !xThes.is() || nLang == LANGUAGE_NONE || !xThes->hasLocale( aLocale ))
                     rSet.DisableItem( SID_THES );
                 break;
-            }        
-            
+            }
+
             // disable "Thesaurus" if the language is not supported
             case SID_THESAURUS:
 			{

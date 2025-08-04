@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -838,7 +838,7 @@ void SwFrmPage::Reset( const SfxItemSet &rSet )
         m_bIsMathOLE = ((const SfxBoolItem*)pItem)->GetValue();
     if (SFX_ITEM_SET == rSet.GetItemState(FN_MATH_BASELINE_ALIGNMENT, sal_False, &pItem))
         m_bIsMathBaselineAlignment = ((const SfxBoolItem*)pItem)->GetValue();
-    EnableVerticalPositioning( !(m_bIsMathOLE && m_bIsMathBaselineAlignment 
+    EnableVerticalPositioning( !(m_bIsMathOLE && m_bIsMathBaselineAlignment
             && FLY_AS_CHAR == rAnchor.GetAnchorId()) );
 
 	if (bFormat)
@@ -1928,7 +1928,7 @@ IMPL_LINK( SwFrmPage, AnchorTypeHdl, RadioButton *, EMPTYARG )
 		PosHdl(&aVerticalDLB);
 	}
 
-    EnableVerticalPositioning( !(m_bIsMathOLE && m_bIsMathBaselineAlignment 
+    EnableVerticalPositioning( !(m_bIsMathOLE && m_bIsMathBaselineAlignment
             && FLY_AS_CHAR == eId) );
 
 	return 0;
@@ -2936,7 +2936,7 @@ void lcl_Move(Window& rWin, sal_Int32 nDiff)
 
 SwFrmAddPage::SwFrmAddPage(Window *pParent, const SfxItemSet &rSet ) :
 	SfxTabPage(pParent, 	SW_RES(TP_FRM_ADD), rSet),
-    
+
     aNamesFL           (this, SW_RES(FL_NAME)),
     aNameFT            (this, SW_RES(FT_NAME)),
 	aNameED            (this, SW_RES(ED_NAME)),

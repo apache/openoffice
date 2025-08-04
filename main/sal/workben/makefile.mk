@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -62,7 +62,7 @@ CXXFLAGS+= $(LFS_CFLAGS)
 
 # --- Files --------------------------------------------------------
 
-.IF "$(TESTAPP)" == "test_osl_getVolInfo"    
+.IF "$(TESTAPP)" == "test_osl_getVolInfo"
 
 SHL1OBJS=$(SLO)$/t_osl_getVolInfo.obj
 SHL1TARGET=togvi
@@ -77,15 +77,15 @@ SHL1STDLIBS+=$(SOLARLIBDIR)$/gtest.lib
 SHL1STDLIBS=$(LB)$/libsal.so
 SHL1STDLIBS+=$(SOLARLIBDIR)$/libgtest$(DLLPOSTFIX).a
 .ENDIF
-	
-SHL1IMPLIB=i$(SHL1TARGET) 
+
+SHL1IMPLIB=i$(SHL1TARGET)
 SHL1DEF=$(MISC)$/$(SHL1TARGET).def
-DEF1NAME=$(SHL1TARGET) 
+DEF1NAME=$(SHL1TARGET)
 DEF1EXPORTFILE=export.exp
 .ENDIF
 
-.IF "$(TESTAPP)" == "test_osl_joinProcess"    
-OBJFILES=$(OBJ)$/t_ojp_exe.obj 
+.IF "$(TESTAPP)" == "test_osl_joinProcess"
+OBJFILES=$(OBJ)$/t_ojp_exe.obj
 APP1TARGET=ojpx
 APP1OBJS=$(OBJFILES)
 
@@ -106,10 +106,10 @@ SHL1STDLIBS+=$(SOLARLIBDIR)$/gtest.lib
 SHL1STDLIBS=$(LB)$/libsal.so
 SHL1STDLIBS+=$(SOLARLIBDIR)$/libgtest$(DLLPOSTFIX).a
 .ENDIF
-	
-SHL1IMPLIB=i$(SHL1TARGET) 
+
+SHL1IMPLIB=i$(SHL1TARGET)
 SHL1DEF=$(MISC)$/$(SHL1TARGET).def
-DEF1NAME=$(SHL1TARGET) 
+DEF1NAME=$(SHL1TARGET)
 DEF1EXPORTFILE=export.exp
 .ENDIF
 
@@ -146,7 +146,7 @@ DEF1EXPORTFILE=export.exp
 				$(COMDLG32LIB)\
 				$(ADVAPI32LIB)
 
-	APP1DEPN=	$(LB)$/asal.lib	
+	APP1DEPN=	$(LB)$/asal.lib
 
 .ENDIF # salstattest
 

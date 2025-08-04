@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -537,7 +537,7 @@ DBG_NAME(sfx2_SfxBaseController)
 SfxBaseController::SfxBaseController( SfxViewShell* pViewShell )
     :   m_pData ( new IMPL_SfxBaseController_DataContainer( m_aMutex, pViewShell, this ))
 {
-    DBG_CTOR(sfx2_SfxBaseController,NULL);    
+    DBG_CTOR(sfx2_SfxBaseController,NULL);
     m_pData->m_pViewShell->SetController( this );
 }
 
@@ -547,7 +547,7 @@ SfxBaseController::SfxBaseController( SfxViewShell* pViewShell )
 
 SfxBaseController::~SfxBaseController()
 {
-    DBG_DTOR(sfx2_SfxBaseController,NULL);    
+    DBG_DTOR(sfx2_SfxBaseController,NULL);
 	delete m_pData;
 }
 
@@ -1490,10 +1490,10 @@ css::uno::Reference< css::frame::XTitle > SfxBaseController::impl_getTitleHelper
         css::uno::Reference< css::frame::XModel >           xModel           = getModel ();
         css::uno::Reference< css::frame::XUntitledNumbers > xUntitledProvider(xModel                                       , css::uno::UNO_QUERY      );
         css::uno::Reference< css::frame::XController >      xThis            (static_cast< css::frame::XController* >(this), css::uno::UNO_QUERY_THROW);
-    
+
         ::framework::TitleHelper* pHelper                 = new ::framework::TitleHelper(::comphelper::getProcessServiceFactory());
                                   m_pData->m_xTitleHelper = css::uno::Reference< css::frame::XTitle >(static_cast< ::cppu::OWeakObject* >(pHelper), css::uno::UNO_QUERY_THROW);
-    
+
         pHelper->setOwner                   (xThis            );
         pHelper->connectWithUntitledNumbers (xUntitledProvider);
     }
@@ -1516,7 +1516,7 @@ void SAL_CALL SfxBaseController::setTitle(const ::rtl::OUString& sTitle)
 {
     impl_getTitleHelper()->setTitle (sTitle);
 }
-    
+
 //=============================================================================
 // css::frame::XTitleChangeBroadcaster
 void SAL_CALL SfxBaseController::addTitleChangeListener(const css::uno::Reference< css::frame::XTitleChangeListener >& xListener)

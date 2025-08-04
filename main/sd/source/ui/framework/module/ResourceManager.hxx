@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -52,7 +52,7 @@ namespace sd { namespace framework {
 */
 class ResourceManager
     : private sd::MutexOwner,
-      public ResourceManagerInterfaceBase      
+      public ResourceManagerInterfaceBase
 {
 public:
     ResourceManager (
@@ -66,14 +66,14 @@ public:
         activate the resource managed by the called object.
     */
     void AddActiveMainView (const ::rtl::OUString& rsMainViewURL);
-    
+
     virtual void SAL_CALL disposing (void);
 
     /** Allow the ResourceManager to make resource activation or
         deactivation requests.
     */
     void Enable (void);
-    
+
     /** Disable the resource management.  When called, the ResourceManager
         requests the resource to be deactivated.  Until enabled again it
         does not make any further requests for resource activation or
@@ -82,7 +82,7 @@ public:
         Call this for example to hide resources in read-only mode.
     */
     void Disable (void);
-    
+
     // XConfigurationChangeListener
 
     virtual void SAL_CALL notifyConfigurationChange (

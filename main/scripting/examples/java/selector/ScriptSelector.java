@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 import javax.swing.*;
@@ -145,7 +145,7 @@ public class ScriptSelector {
 
                             Object[][] out = new Object[1][0];
                             out[0] = new Object[0];
-                                                                                
+
                             short[][] num = new short[1][0];
                             num[0] = new short[0];
 
@@ -306,7 +306,7 @@ public class ScriptSelector {
         JButton button)
     {
         boolean enable = false;
-                                                                                
+
         try
         {
             if (props != null)
@@ -328,7 +328,7 @@ public class ScriptSelector {
         {
             // leave enable set to false
         }
-                                                                        
+
         button.setEnabled(enable);
     }
 
@@ -336,14 +336,14 @@ public class ScriptSelector {
 
         XBrowseNode result = null;
 
-           
+
         XComponentContext xcc = ctxt.getComponentContext();
         XMultiComponentFactory xmcf = xcc.getServiceManager();
         XBrowseNodeFactory xBrowseFac = (XBrowseNodeFactory)
             UnoRuntime.queryInterface( XBrowseNodeFactory.class, xcc.getValueByName(
                 "/singletons/com.sun.star.script.browse.theBrowseNodeFactory") );
 
-           
+
         result = (XBrowseNode)UnoRuntime.queryInterface(
            XBrowseNode.class, xBrowseFac.createView( BrowseNodeFactoryViewTypes.MACROORGANIZER ) );
         return result;
@@ -366,7 +366,7 @@ class ScriptSelectorPanel extends JPanel {
     public XBrowseNode getSelection() {
         DefaultMutableTreeNode node = (DefaultMutableTreeNode)
             tree.getLastSelectedPathComponent();
-        
+
         if (node == null) {
             return null;
         }
@@ -506,7 +506,7 @@ class ScriptTreeRenderer extends DefaultTreeCellRenderer {
         XBrowseNode xbn = (XBrowseNode)node.getUserObject();
         if (xbn.getType() == BrowseNodeTypes.SCRIPT) {
             setIcon(scriptIcon);
-        } 
+        }
         else if(xbn.getType() == BrowseNodeTypes.CONTAINER) {
             setIcon(containerIcon);
         }

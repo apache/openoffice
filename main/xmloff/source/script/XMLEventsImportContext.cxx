@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,7 +53,7 @@ TYPEINIT1(XMLEventsImportContext,  SvXMLImportContext);
 
 
 XMLEventsImportContext::XMLEventsImportContext(
-	SvXMLImport& rImport, 
+	SvXMLImport& rImport,
 	sal_uInt16 nPrfx,
 	const OUString& rLocalName) :
 		SvXMLImportContext(rImport, nPrfx, rLocalName)
@@ -62,7 +62,7 @@ XMLEventsImportContext::XMLEventsImportContext(
 
 
 XMLEventsImportContext::XMLEventsImportContext(
-	SvXMLImport& rImport, 
+	SvXMLImport& rImport,
 	sal_uInt16 nPrfx,
 	const OUString& rLocalName,
 	const Reference<XEventsSupplier> & xEventsSupplier) :
@@ -73,7 +73,7 @@ XMLEventsImportContext::XMLEventsImportContext(
 
 
 XMLEventsImportContext::XMLEventsImportContext(
-	SvXMLImport& rImport, 
+	SvXMLImport& rImport,
 	sal_uInt16 nPrfx,
 	const OUString& rLocalName,
 	const Reference<XNameReplace> & xNameReplace) :
@@ -109,7 +109,7 @@ void XMLEventsImportContext::EndElement()
 	// nothing to be done
 }
 
-SvXMLImportContext* XMLEventsImportContext::CreateChildContext( 
+SvXMLImportContext* XMLEventsImportContext::CreateChildContext(
 	sal_uInt16 p_nPrefix,
 	const OUString& rLocalName,
 	const Reference<XAttributeList> & xAttrList )
@@ -147,7 +147,7 @@ SvXMLImportContext* XMLEventsImportContext::CreateChildContext(
 
 	// b) delegate to factory
 	return GetImport().GetEventImport().CreateContext(
-		GetImport(), p_nPrefix, rLocalName, xAttrList, 
+		GetImport(), p_nPrefix, rLocalName, xAttrList,
 		this, sEventName, sLanguage);
 }
 
@@ -195,7 +195,7 @@ sal_Bool XMLEventsImportContext::GetEventSequence(
     {
         aIter++;
     }
-    
+
     // if we're not at the end, set the sequence
     sal_Bool bRet = (aIter != aCollectEvents.end());
     if (bRet)
@@ -204,7 +204,7 @@ sal_Bool XMLEventsImportContext::GetEventSequence(
     return bRet;
 }
 
-void XMLEventsImportContext::AddEventValues( 
+void XMLEventsImportContext::AddEventValues(
 	const OUString& rEventName,
 	const Sequence<PropertyValue> & rValues )
 {
@@ -216,7 +216,7 @@ void XMLEventsImportContext::AddEventValues(
 		{
 			Any aAny;
 			aAny <<= rValues;
-            
+
             try
             {
                 xEvents->replaceByName(rEventName, aAny);
@@ -225,8 +225,8 @@ void XMLEventsImportContext::AddEventValues(
                 Sequence<OUString> aMsgParams(1);
 
                 aMsgParams[0] = rEventName;
-                
-                GetImport().SetError(XMLERROR_FLAG_ERROR | 
+
+                GetImport().SetError(XMLERROR_FLAG_ERROR |
                                      XMLERROR_ILLEGAL_EVENT,
                                      aMsgParams, rException.Message, 0);
             }
@@ -234,7 +234,7 @@ void XMLEventsImportContext::AddEventValues(
 	}
 	else
 	{
-// 		EventNameValuesPair* aPair = new EventNameValuesPair(rEventName, 
+// 		EventNameValuesPair* aPair = new EventNameValuesPair(rEventName,
 // 															rValues);
 // 		aCollectEvents.push_back(*aPair);
 		EventNameValuesPair aPair(rEventName, rValues);

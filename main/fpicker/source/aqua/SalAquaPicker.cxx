@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -74,7 +74,7 @@ SalAquaPicker::SalAquaPicker()
 SalAquaPicker::~SalAquaPicker()
 {
     DBG_PRINT_ENTRY(CLASS_NAME, __func__);
-    
+
     ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
     NSAutoreleasePool *pool = [NSAutoreleasePool new];
@@ -118,7 +118,7 @@ void SAL_CALL SalAquaPicker::implInitialize()
              * here but unfortunately this
              * a) only works when the dialog is already displayed because it seems to act on the corresponding checkbox (that we don't show but that doesn't matter)
              * b) Mac OS X saves this setting on an application-based level which means that the last state is always being restored again when the app runs for the next time
-             * 
+             *
              * So the only reliable way seems to be using the NSUserDefaults object because that is where that value is stored and
              * to just overwrite it if it has the wrong value.
              */
@@ -141,10 +141,10 @@ void SAL_CALL SalAquaPicker::implInitialize()
             OSL_TRACE("m_nDialogType is UNKNOWN: %d", m_nDialogType);
             break;
     }
-    
+
     if (m_pDialog == nil) {
         OSL_TRACE("An error occurred while creating the dialog!");
-    } 
+    }
     else {
         [(NSOpenPanel*)m_pDialog setCanCreateDirectories:YES];
         //Retain the dialog instance or it will go away immediately
@@ -166,14 +166,14 @@ int SalAquaPicker::run()
         //this is the case e.g. for the folder picker at this stage
         implInitialize();
     }
-    
+
     NSView *userPane = m_pControlHelper->getUserPane();
     if (userPane != NULL) {
         [m_pDialog setAccessoryView:userPane];
     }
 
     int retVal = 0;
-    
+
     NSString *startDirectory;
     if (m_sDisplayDirectory.getLength() > 0) {
         NSString *temp = [NSString stringWithOUString:m_sDisplayDirectory];
@@ -199,14 +199,14 @@ int SalAquaPicker::run()
         default:
             break;
     }
-    
+
     if (retVal == NSFileHandlingPanelOKButton) {
         NSString* pDir = [m_pDialog directory];
         if (pDir) {
             implsetDisplayDirectory([[NSURL fileURLWithPath:pDir] OUStringForInfo:FULLPATH]);
         }
     }
-    
+
     DBG_PRINT_EXIT(CLASS_NAME, __func__, retVal);
 
     [pool release];

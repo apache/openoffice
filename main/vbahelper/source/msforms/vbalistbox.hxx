@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -36,13 +36,13 @@
 typedef cppu::ImplInheritanceHelper2<ScVbaControl, ov::msforms::XListBox, css::script::XDefaultProperty > ListBoxImpl_BASE;
 class ScVbaListBox : public ListBoxImpl_BASE
     ,public PropListener
-{		
+{
 	std::auto_ptr< ListControlHelper > mpListHelper;
-	rtl::OUString sSourceName; 
+	rtl::OUString sSourceName;
 	rtl::OUString msDftPropName;
 
     sal_Int16 m_nIndex;
-	
+
 public:
 	ScVbaListBox( const css::uno::Reference< ov::XHelperInterface >& xParent, const css::uno::Reference< css::uno::XComponentContext >& xContext, const css::uno::Reference< css::uno::XInterface >& xControl, const css::uno::Reference< css::frame::XModel >& xModel, ov::AbstractGeometryAttributes* pGeomHelper );
 
@@ -69,10 +69,10 @@ public:
 
 	// XDefaultProperty
     rtl::OUString SAL_CALL getDefaultPropertyName(  ) throw (css::uno::RuntimeException) { return ::rtl::OUString::createFromAscii("Value"); }
-    
+
     //XHelperInterface
     virtual rtl::OUString& getServiceImplName();
-    virtual css::uno::Sequence<rtl::OUString> getServiceNames();    
+    virtual css::uno::Sequence<rtl::OUString> getServiceNames();
 
     //PropListener
     virtual void setValueEvent( const css::uno::Any& value );

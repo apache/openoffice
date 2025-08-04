@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -105,7 +105,7 @@ public class DocumentConverter extends EnhancedComplexTestCase
                 log.println("found " + PropertyName.DOC_COMPARATOR_INPUT_PATH + " " + sINPATH);
                 m_sInputPath = sINPATH;
             }
-            
+
             // REFERENCE_PATH ----------
             String sREF = (String)param.get( PropertyName.DOC_COMPARATOR_REFERENCE_PATH );
             if (sREF == null || sREF.length() == 0)
@@ -118,21 +118,21 @@ public class DocumentConverter extends EnhancedComplexTestCase
                 log.println("found " + PropertyName.DOC_COMPARATOR_REFERENCE_PATH + " " + sREF);
                 m_sReferencePath = sREF;
             }
-            
+
             if (bQuit == true)
             {
                 // log.println("must quit.");
                 assure("Must quit, Parameter problems.", false);
             }
-            
+
             if (m_sInputPath.startsWith("file:") ||
                 m_sReferencePath.startsWith("file:"))
             {
                 assure("We can't handle file: URL right, use system path instead.", false);
             }
-            
+
         }
-    
+
     /**
      * Function returns a List of software which must accessible as an external executable
      */
@@ -144,7 +144,7 @@ public class DocumentConverter extends EnhancedComplexTestCase
         }
 
     // the test ======================================================================
-    public void convert() 
+    public void convert()
         {
             GlobalLogWriter.set(log);
             // check if all need software is installed and accessible
@@ -158,7 +158,7 @@ public class DocumentConverter extends EnhancedComplexTestCase
             {
                 assure("Must quit", false);
             }
-            
+
             initMember();
 
             File aInputPath = new File(m_sInputPath);
@@ -169,7 +169,7 @@ public class DocumentConverter extends EnhancedComplexTestCase
                 String sRemovePath = aInputPath.getAbsolutePath();
                 // a whole directory
                 FileFilter aFileFilter = FileHelper.getFileFilter();
-                
+
                 Object[] aList = DirectoryHelper.traverse(m_sInputPath, aFileFilter, aGTA.includeSubDirectories());
                 for (int i=0;i<aList.length;i++)
                 {
@@ -214,7 +214,7 @@ public class DocumentConverter extends EnhancedComplexTestCase
                 param.put("ServiceFactory", xMSF);
             }
             GraphicalTestArguments aGTA = getGraphicalTestArguments();
-            
+
             if (aGTA.getOfficeProgram().toLowerCase().equals("msoffice"))
             {
                 // ReferenceType is MSOffice
@@ -234,7 +234,7 @@ public class DocumentConverter extends EnhancedComplexTestCase
                     {
                         sOutputFile += fs + sInputFileBasename;
                     }
-                    
+
                     a.storeToFileWithMSOffice(aGTA, _sInputFile, sOutputFile);
                 }
                 catch(ConvWatchCancelException e)
@@ -261,7 +261,7 @@ public class DocumentConverter extends EnhancedComplexTestCase
                     assure(e.getMessage(), false);
                 }
             }
-            
+
             if (aGTA.restartOffice())
             {
                 // Office shutdown

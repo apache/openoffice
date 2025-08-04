@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -75,7 +75,7 @@ private:
     EntryMap        maEntries;
 
 public:
-    GdiPlusBuffer() 
+    GdiPlusBuffer()
     :   Timer(),
         maEntries()
     {
@@ -182,7 +182,7 @@ static GdiPlusBuffer aGdiPlusBuffer;
 // ------------------------------------------------------------------
 // - WinSalBitmap -
 
-WinSalBitmap::WinSalBitmap() 
+WinSalBitmap::WinSalBitmap()
 :   maSize(),
     mhDIB(0),
     mhDDB(0),
@@ -219,8 +219,8 @@ void WinSalBitmap::Destroy()
 
 // ------------------------------------------------------------------
 
-GdiPlusBmpPtr WinSalBitmap::ImplGetGdiPlusBitmap(const WinSalBitmap* pAlphaSource) const 
-{ 
+GdiPlusBmpPtr WinSalBitmap::ImplGetGdiPlusBitmap(const WinSalBitmap* pAlphaSource) const
+{
     WinSalBitmap* pThat = const_cast< WinSalBitmap* >(this);
 
     if(maGdiPlusBitmap.get() && pAlphaSource != mpAssociatedAlpha)
@@ -257,7 +257,7 @@ GdiPlusBmpPtr WinSalBitmap::ImplGetGdiPlusBitmap(const WinSalBitmap* pAlphaSourc
         }
     }
 
-    return maGdiPlusBitmap; 
+    return maGdiPlusBitmap;
 }
 
 // ------------------------------------------------------------------
@@ -288,7 +288,7 @@ Gdiplus::Bitmap* WinSalBitmap::ImplCreateGdiPlusBitmap()
         aSalTwoRect.mnSrcWidth = aSalTwoRect.mnDestWidth = pRGB->mnWidth;
         aSalTwoRect.mnSrcHeight = aSalTwoRect.mnDestHeight = pRGB->mnHeight;
 
-        pExtraRGB = StretchAndConvert( 
+        pExtraRGB = StretchAndConvert(
             *pRGB,
             aSalTwoRect,
             BMP_FORMAT_24BIT_TC_BGR,
@@ -298,7 +298,7 @@ Gdiplus::Bitmap* WinSalBitmap::ImplCreateGdiPlusBitmap()
         pRGB = pExtraRGB;
     }
 
-    if(pRGB 
+    if(pRGB
         && pRGB->mnWidth > 0
         && pRGB->mnHeight > 0
         && BMP_FORMAT_24BIT_TC_BGR == (pRGB->mnFormat & ~BMP_FORMAT_TOP_DOWN))
@@ -387,7 +387,7 @@ Gdiplus::Bitmap* WinSalBitmap::ImplCreateGdiPlusBitmap(const WinSalBitmap& rAlph
         aSalTwoRect.mnSrcWidth = aSalTwoRect.mnDestWidth = pRGB->mnWidth;
         aSalTwoRect.mnSrcHeight = aSalTwoRect.mnDestHeight = pRGB->mnHeight;
 
-        pExtraRGB = StretchAndConvert( 
+        pExtraRGB = StretchAndConvert(
             *pRGB,
             aSalTwoRect,
             BMP_FORMAT_24BIT_TC_BGR,
@@ -421,7 +421,7 @@ Gdiplus::Bitmap* WinSalBitmap::ImplCreateGdiPlusBitmap(const WinSalBitmap& rAlph
         aSalTwoRect.mnSrcHeight = aSalTwoRect.mnDestHeight = pA->mnHeight;
         const BitmapPalette& rTargetPalette = Bitmap::GetGreyPalette(256);
 
-        pExtraA = StretchAndConvert( 
+        pExtraA = StretchAndConvert(
             *pA,
             aSalTwoRect,
             BMP_FORMAT_8BIT_PAL,
@@ -431,12 +431,12 @@ Gdiplus::Bitmap* WinSalBitmap::ImplCreateGdiPlusBitmap(const WinSalBitmap& rAlph
         pA = pExtraA;
     }
 
-    if(pRGB 
-        && pA 
+    if(pRGB
+        && pA
         && pRGB->mnWidth > 0
         && pRGB->mnHeight > 0
-        && pRGB->mnWidth == pA->mnWidth 
-        && pRGB->mnHeight == pA->mnHeight 
+        && pRGB->mnWidth == pA->mnWidth
+        && pRGB->mnHeight == pA->mnHeight
         && BMP_FORMAT_24BIT_TC_BGR == (pRGB->mnFormat & ~BMP_FORMAT_TOP_DOWN)
         && BMP_FORMAT_8BIT_PAL == (pA->mnFormat & ~BMP_FORMAT_TOP_DOWN))
     {

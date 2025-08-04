@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #ifndef SFX_SIDEBAR_PANEL_HXX
@@ -66,14 +66,14 @@ public:
     bool IsExpanded (void) const;
     bool HasIdPredicate (const ::rtl::OUString& rsId) const;
     const ::rtl::OUString& GetId (void) const;
-    
+
     virtual void Paint (const Rectangle& rUpdateArea);
     virtual void Resize (void);
     virtual void DataChanged (const DataChangedEvent& rEvent);
     virtual void Activate (void);
 
     void PrintWindowTree (void);
-    
+
 private:
     const ::rtl::OUString msPanelId;
     ::boost::scoped_ptr<PanelTitleBar> mpTitleBar;
@@ -86,7 +86,7 @@ private:
 };
 typedef ::boost::shared_ptr<Panel> SharedPanel;
 typedef ::std::vector<SharedPanel> SharedPanelContainer;
-    
+
 
 } } // end of namespace sfx2::sidebar
 

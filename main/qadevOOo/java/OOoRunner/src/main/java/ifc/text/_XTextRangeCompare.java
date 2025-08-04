@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -105,9 +105,9 @@ public class _XTextRangeCompare extends MultiMethodTest {
     /**
      * One cursor is created and to its position a paragraph
      * inserted, then the fist five characters was selected.
-     * A second cursor was created and the last 7 characteres 
+     * A second cursor was created and the last 7 characteres
      * was selected.<p>
-     * 
+     *
      * Has <b>OK</b> status if the compare returns 1, i.e.
      * the second cursor end is before the first.
      */
@@ -120,7 +120,7 @@ public class _XTextRangeCompare extends MultiMethodTest {
             cursor1 = oText.createTextCursor();
             oText.insertString(cursor1, nameStr, false);
 
-            cursor1.gotoStart(false); 
+            cursor1.gotoStart(false);
             cursor1.goRight((short)5, true);
             cursor2 = oText.createTextCursor();
             cursor2.gotoEnd(false);
@@ -132,7 +132,7 @@ public class _XTextRangeCompare extends MultiMethodTest {
             log.println("check: oObj.compareRegionStarts(cursor1, cursor2)");
 
             n = oObj.compareRegionEnds(cursor1, cursor2);
-            
+
             log.println( "Result (short) : " + n );
         }catch(com.sun.star.lang.IllegalArgumentException e){
             log.println( "Exception: " + e);
@@ -146,9 +146,9 @@ public class _XTextRangeCompare extends MultiMethodTest {
     /**
      * One cursor is created and to its position a paragraph
      * inserted, then the fist five characters was selected.
-     * A second cursor was created and the last 7 characters 
+     * A second cursor was created and the last 7 characters
      * was selected.<p>
-     * 
+     *
      * Has <b>OK</b> status if the compare returns 1, i.e.
      * the second cursor start is before the first.
      */
@@ -160,7 +160,7 @@ public class _XTextRangeCompare extends MultiMethodTest {
             cursor1 = oText.createTextCursor();
             oText.insertString(cursor1, nameStr, false);
 
-            cursor1.gotoStart(false); 
+            cursor1.gotoStart(false);
             cursor1.goRight((short)5, true);
             cursor2 = oText.createTextCursor();
             cursor2.gotoEnd(false);
@@ -171,7 +171,7 @@ public class _XTextRangeCompare extends MultiMethodTest {
             log.println("cursor2: '"+cursor2.getString() + "'");
             log.println("check: oObj.compareRegionStarts(cursor1, cursor2)");
             n = oObj.compareRegionStarts(cursor1, cursor2);
-            
+
             log.println( "Result (short) : " + n );
         }catch(com.sun.star.lang.IllegalArgumentException e){
             log.println( "Exception: " + e);

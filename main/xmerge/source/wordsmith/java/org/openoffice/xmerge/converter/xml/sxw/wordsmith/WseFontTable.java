@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -116,7 +116,7 @@ class WseFontTable extends Wse {
         int len = fontNames.size();
         for (int i = 0; i < len; i++) {
             String name = (String) fontNames.elementAt(i);
-            if (name.equals(fontName)) 
+            if (name.equals(fontName))
                 return i;
         }
         return -1;
@@ -155,13 +155,13 @@ class WseFontTable extends Wse {
      */
     static boolean isValid(byte dataArray[], int startIndex) {
         try {
-            if (dataArray[startIndex] != 3) 
+            if (dataArray[startIndex] != 3)
                 return false;
             int len = ((dataArray[startIndex+1] << 8)
               | (dataArray[startIndex+2] & 0xFF));
             len &= 0xFFFF;  // eliminate problems with sign-extension
-            
-            if (dataArray[startIndex + len + 2] != 0) 
+
+            if (dataArray[startIndex + len + 2] != 0)
                 return false;
         } catch (ArrayIndexOutOfBoundsException e) {
             return false;
@@ -183,7 +183,7 @@ class WseFontTable extends Wse {
             String name = (String)fontNames.elementAt(i);
             length += name.length() + 1;  // extra byte is for trailing "0"
         }
-        return length;        
+        return length;
     }
 
     /**
@@ -192,7 +192,7 @@ class WseFontTable extends Wse {
      *  @return  An <code>byte</code> array representing this font table.
      */
     byte[] getBytes() {
-        
+
         int length = getByteCount();
         int nFonts = fontNames.size();
         byte b[] = new byte[length];

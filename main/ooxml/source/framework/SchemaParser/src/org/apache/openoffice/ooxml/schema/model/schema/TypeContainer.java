@@ -35,66 +35,66 @@ public class TypeContainer<T extends Node>
     {
         maTypes = new HashMap<>();
     }
-    
-    
-    
-    
+
+
+
+
     public void Add (final T aType)
     {
         maTypes.put(aType.GetName().GetDisplayName(), aType);
     }
 
 
-    
+
 
     public T Get (final QualifiedName aName)
     {
         return maTypes.get(aName.GetDisplayName());
     }
 
-    
-    
-    
+
+
+
     public T Get (final String sPrefixedName)
     {
         return maTypes.get(sPrefixedName);
     }
-    
-    
-    
-    
+
+
+
+
     public boolean Contains (final String sPrefixedName)
     {
         return maTypes.containsKey(sPrefixedName);
     }
-    
-    
-    
-    
+
+
+
+
     public int GetCount ()
     {
         return maTypes.size();
     }
 
-    
-    
-    
+
+
+
     public Iterable<T> GetUnsorted ()
     {
         return maTypes.values();
     }
 
-    
-    
-    
+
+
+
     public Iterable<T> GetSorted ()
     {
         final Set<T> aSortedItems = new TreeSet<T>(maTypes.values());
         return aSortedItems;
-    }    
-    
-    
-    
+    }
+
+
+
 
     Map<String,T> maTypes;
 }

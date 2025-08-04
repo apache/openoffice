@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -81,7 +81,7 @@ enum DATASOURCE_TYPE
 	DST_USERDEFINE10,
 
 
-	DST_UNKNOWN			/// unrecognized type 
+	DST_UNKNOWN			/// unrecognized type
 };
 
 #define PAGE_DBSETUPWIZARD_INTRO                     0
@@ -134,7 +134,7 @@ public:
 
 	/// on a given string, cut the type prefix and return the result
 	String cutPrefix(const ::rtl::OUString& _sURL) const;
-    
+
     /// on a given string, return the type prefix
 	String getPrefix(const ::rtl::OUString& _sURL) const;
 
@@ -157,7 +157,7 @@ public:
 
     /// check if the given data source allows to show column description.
     sal_Bool supportsColumnDescription(const ::rtl::OUString& _sURL) const;
-    
+
     // check if a Browse button may be shown to insert connection url
     sal_Bool supportsBrowsing(const ::rtl::OUString& _sURL) const;
 

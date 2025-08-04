@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -33,7 +33,7 @@
 #include "share.hxx"
 
 // At least Clang 3.8 can't compile our CPPU_CURRENT_NAMESPACE::__cxa_get_globals()
-// decleration with <exception> or anything else that indirectly includes <cxxabi.h>
+// declaration with <exception> or anything else that indirectly includes <cxxabi.h>
 // included, as it sees it as a an overload of __cxxabi::__cxa_get_globals() with a
 // different return type. Thus, it has to be placed in a file that doesn't include
 // those, and wrapped in a function:

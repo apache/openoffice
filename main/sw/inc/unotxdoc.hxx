@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -223,7 +223,7 @@ class SW_DLLPUBLIC SwXTextDocument : public SwXTextDocumentBaseClass,
     SfxViewFrame*                                   m_pHiddenViewFrame;
     css::uno::Reference< css::uno::XInterface>      xPropertyHelper;
     SwXDocumentPropertyHelper*                      pPropertyHelper;
-    
+
     SwPrintUIOptions *                              m_pPrintUIOptions;
     SwRenderData *                               m_pRenderData;
 
@@ -427,8 +427,8 @@ public:
 
     // ::com::sun::star::util::XCloneable
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloneable > SAL_CALL createClone(  ) throw (::com::sun::star::uno::RuntimeException);
-    
-    
+
+
     //
 	void						Invalidate();
 	void						Reactivate(SwDocShell* pNewDocShell);
@@ -448,7 +448,7 @@ public:
 
     // #121125#, #122868# - clean up rendering data
     void CleanUpRenderingData();
-    
+
     void * SAL_CALL operator new( size_t ) throw();
 	void SAL_CALL operator delete( void * ) throw();
 
@@ -615,7 +615,7 @@ class SwViewOptionAdjust_Impl
 public:
     SwViewOptionAdjust_Impl( ViewShell& rSh, const SwViewOption &rViewOptions );
     ~SwViewOptionAdjust_Impl();
-    void AdjustViewOptions( SwPrintData const* const pPrtOptions );  
+    void AdjustViewOptions( SwPrintData const* const pPrtOptions );
     bool checkShell( const ViewShell& rCompare ) const
-    { return &rCompare == &m_rShell; } 
+    { return &rCompare == &m_rShell; }
 };

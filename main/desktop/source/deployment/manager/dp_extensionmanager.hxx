@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,7 +50,7 @@ typedef ::std::hash_map<
 
 class ExtensionManager : private ::dp_misc::MutexHolder,
         public ::cppu::WeakComponentImplHelper1< css::deployment::XExtensionManager >
-{ 
+{
 public:
     ExtensionManager( css::uno::Reference< css::uno::XComponentContext >const& xContext);
     virtual     ~ExtensionManager();
@@ -60,7 +60,7 @@ public:
 
     void check();
     void fireModified();
-    
+
 public:
 
 //    XModifyBroadcaster
@@ -74,12 +74,12 @@ public:
 //XExtensionManager
     virtual css::uno::Sequence<
         css::uno::Reference<css::deployment::XPackageTypeInfo> > SAL_CALL
-        getSupportedPackageTypes() 
+        getSupportedPackageTypes()
             throw (css::uno::RuntimeException);
-    
+
     virtual css::uno::Reference<css::task::XAbortChannel> SAL_CALL
     createAbortChannel() throw (css::uno::RuntimeException);
-    
+
     virtual css::uno::Reference<css::deployment::XPackage> SAL_CALL addExtension(
         ::rtl::OUString const & url,
         css::uno::Sequence<css::beans::NamedValue> const & properties,
@@ -91,9 +91,9 @@ public:
                css::ucb::CommandAbortedException,
                css::lang::IllegalArgumentException,
                css::uno::RuntimeException);
-    
+
     virtual void SAL_CALL removeExtension(
-        ::rtl::OUString const & identifier, 
+        ::rtl::OUString const & identifier,
         ::rtl::OUString const & filename,
         ::rtl::OUString const & repository,
         css::uno::Reference<css::task::XAbortChannel> const & xAbortChannel,
@@ -136,14 +136,14 @@ public:
             css::uno::RuntimeException);
 
 
-    virtual css::uno::Sequence< css::uno::Reference<css::deployment::XPackage> > 
+    virtual css::uno::Sequence< css::uno::Reference<css::deployment::XPackage> >
         SAL_CALL getDeployedExtensions(
         ::rtl::OUString const & repository,
         css::uno::Reference<css::task::XAbortChannel> const &,
         css::uno::Reference<css::ucb::XCommandEnvironment> const & xCmdEnv )
-        throw (css::deployment::DeploymentException, 
+        throw (css::deployment::DeploymentException,
             css::ucb::CommandFailedException,
-            css::ucb::CommandAbortedException, 
+            css::ucb::CommandAbortedException,
             css::lang::IllegalArgumentException,
             css::uno::RuntimeException);
 
@@ -154,7 +154,7 @@ public:
         ::rtl::OUString const & filename,
         css::uno::Reference< css::ucb::XCommandEnvironment> const & xCmdEnv )
         throw (
-            css::deployment::DeploymentException, 
+            css::deployment::DeploymentException,
             css::ucb::CommandFailedException,
             css::lang::IllegalArgumentException,
             css::uno::RuntimeException);
@@ -165,31 +165,31 @@ public:
         ::rtl::OUString const & filename,
         css::uno::Reference< css::ucb::XCommandEnvironment> const & xCmdEnv )
         throw (
-            css::deployment::DeploymentException, 
+            css::deployment::DeploymentException,
             css::ucb::CommandFailedException,
             css::lang::IllegalArgumentException,
             css::uno::RuntimeException);
-    
+
     virtual css::uno::Sequence< css::uno::Sequence<css::uno::Reference<css::deployment::XPackage> > >
         SAL_CALL getAllExtensions(
         css::uno::Reference<css::task::XAbortChannel> const &,
         css::uno::Reference<css::ucb::XCommandEnvironment> const & xCmdEnv )
-        throw (css::deployment::DeploymentException, 
+        throw (css::deployment::DeploymentException,
             css::ucb::CommandFailedException,
-            css::ucb::CommandAbortedException, 
+            css::ucb::CommandAbortedException,
             css::lang::IllegalArgumentException,
             css::uno::RuntimeException);
 
-    
+
     virtual void SAL_CALL reinstallDeployedExtensions(
         ::rtl::OUString const & repository,
         css::uno::Reference< css::task::XAbortChannel> const & xAbortChannel,
         css::uno::Reference< css::ucb::XCommandEnvironment> const & xCmdEnv )
         throw (
             css::deployment::DeploymentException,
-            css::ucb::CommandFailedException, 
+            css::ucb::CommandFailedException,
             css::ucb::CommandAbortedException,
-            css::lang::IllegalArgumentException, 
+            css::lang::IllegalArgumentException,
             css::uno::RuntimeException);
 
     virtual sal_Bool SAL_CALL synchronize(
@@ -213,15 +213,15 @@ public:
         css::uno::Reference<css::ucb::XCommandEnvironment> const & xCmdEnv)
         throw (css::deployment::DeploymentException,
                css::uno::RuntimeException);
-    
+
     virtual sal_Bool SAL_CALL isReadOnlyRepository(::rtl::OUString const & repository)
         throw (css::uno::RuntimeException);
-    
+
 private:
 
     struct StrSyncRepository : public ::dp_misc::StaticResourceString<
         StrSyncRepository, RID_STR_SYNCHRONIZING_REPOSITORY> {};
-    
+
     struct ExtensionInfos
     {
         ::rtl::OUString identifier;
@@ -232,7 +232,7 @@ private:
 
     css::uno::Reference< css::uno::XComponentContext> m_xContext;
     css::uno::Reference<css::deployment::XPackageManagerFactory> m_xPackageManagerFactory;
-    
+
     //only to be used within addExtension
     ::osl::Mutex m_addMutex;
     /* contains the names of all repositories (except tmp) in order of there
@@ -256,7 +256,7 @@ private:
     void activateExtension(
         ::rtl::OUString const & identifier,
         ::rtl::OUString const & fileName,
-        bool bUserDisabled, bool bStartup, 
+        bool bUserDisabled, bool bStartup,
         css::uno::Reference<css::task::XAbortChannel> const & xAbortChannel,
         css::uno::Reference<css::ucb::XCommandEnvironment> const & xCmdEnv);
 
@@ -267,7 +267,7 @@ private:
         css::uno::Reference<css::ucb::XCommandEnvironment> const & xCmdEnv );
 
 
-    ::std::list<css::uno::Reference<css::deployment::XPackage> > 
+    ::std::list<css::uno::Reference<css::deployment::XPackage> >
     getExtensionsWithSameId(::rtl::OUString  const & identifier,
                             ::rtl::OUString const & fileName,
                             css::uno::Reference< css::ucb::XCommandEnvironment> const & xCmdEnv =
@@ -293,7 +293,7 @@ private:
         css::uno::Reference<css::task::XAbortChannel> const & xAbortChannel,
         css::uno::Reference<css::ucb::XCommandEnvironment> const & xCmdEnv);
 
-    
+
     void addExtensionsToMap(
         id2extensions & mapExt,
         css::uno::Sequence<css::uno::Reference<css::deployment::XPackage> > const & seqExt,
@@ -310,13 +310,13 @@ private:
         css::uno::Reference<css::task::XAbortChannel> const & xAbortChannel,
         css::uno::Reference<css::ucb::XCommandEnvironment> const & xCmdEnv,
         css::uno::Reference<css::deployment::XPackage> & out_existingExtension )
-        throw (css::deployment::DeploymentException, 
+        throw (css::deployment::DeploymentException,
                css::ucb::CommandFailedException,
-               css::ucb::CommandAbortedException, 
+               css::ucb::CommandAbortedException,
                css::lang::IllegalArgumentException,
                css::uno::RuntimeException);
-        
-        
+
+
 };
 
 }

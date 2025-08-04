@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "precompiled_svx.hxx"
@@ -135,7 +135,7 @@ long SvxSBFontNameBox::PreNotify( NotifyEvent& rNEvt )
     return FontNameBox::PreNotify( rNEvt );
 }
 //<<modify
-long SvxSBFontNameBox::Notify( NotifyEvent& rNEvt) //SfxBroadcaster& rBC, const SfxHint& rHint 
+long SvxSBFontNameBox::Notify( NotifyEvent& rNEvt) //SfxBroadcaster& rBC, const SfxHint& rHint
 {
 	//SfxItemSetHint* pHint = PTR_CAST(SfxItemSetHint, &rHint);
 	//if ( pHint )
@@ -153,7 +153,7 @@ long SvxSBFontNameBox::Notify( NotifyEvent& rNEvt) //SfxBroadcaster& rBC, const 
 	}
 
 	return bHandle ? bHandle : FontNameBox::Notify( rNEvt );
-} 
+}
 void SvxSBFontNameBox::Select()
 {
 	FontNameBox::Select();
@@ -161,8 +161,8 @@ void SvxSBFontNameBox::Select()
 	if ( !IsTravelSelect() )
 	{
 		FillList();
-		FontInfo aInfo( pFontList->Get( GetText(),WEIGHT_NORMAL, ITALIC_NORMAL ) );//meWeight, meItalic 
-    
+		FontInfo aInfo( pFontList->Get( GetText(),WEIGHT_NORMAL, ITALIC_NORMAL ) );//meWeight, meItalic
+
 		SvxFontItem aFontItem( aInfo.GetFamily(), aInfo.GetName(), aInfo.GetStyleName(),
 			aInfo.GetPitch(), aInfo.GetCharSet(), SID_ATTR_CHAR_FONT );
 

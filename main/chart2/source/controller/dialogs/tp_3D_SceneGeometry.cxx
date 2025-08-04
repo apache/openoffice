@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -147,7 +147,7 @@ ThreeD_SceneGeometry_TabPage::ThreeD_SceneGeometry_TabPage( Window* pWindow
     sal_Bool bRightAngledAxes = false;
 
     uno::Reference< chart2::XDiagram > xDiagram( m_xSceneProperties, uno::UNO_QUERY );
-    if( ChartTypeHelper::isSupportingRightAngledAxes( 
+    if( ChartTypeHelper::isSupportingRightAngledAxes(
             DiagramHelper::getChartTypeByIndex( xDiagram, 0 ) ) )
     {
         m_xSceneProperties->getPropertyValue( C2U("RightAngledAxes")) >>= bRightAngledAxes;
@@ -249,7 +249,7 @@ IMPL_LINK( ThreeD_SceneGeometry_TabPage, PerspectiveChanged, void*, EMPTYARG )
 IMPL_LINK( ThreeD_SceneGeometry_TabPage, PerspectiveToggled, void*, EMPTYARG )
 {
     m_aMFPerspective.Enable( m_aCbxPerspective.IsChecked() );
-    applyPerspectiveToModel();    
+    applyPerspectiveToModel();
     return 0;
 }
 
@@ -266,7 +266,7 @@ IMPL_LINK( ThreeD_SceneGeometry_TabPage, RightAngledAxesToggled, void*, EMPTYARG
         m_nXRotation = m_aMFXRotation.GetValue();
         m_nYRotation = m_aMFYRotation.GetValue();
         m_nZRotation = m_aMFZRotation.GetValue();
-       
+
         m_aMFXRotation.SetValue(static_cast<sal_Int64>(ThreeDHelper::getValueClippedToRange(static_cast<double>(m_nXRotation), ThreeDHelper::getXDegreeAngleLimitForRightAngledAxes())));
         m_aMFYRotation.SetValue(static_cast<sal_Int64>(ThreeDHelper::getValueClippedToRange(static_cast<double>(m_nYRotation), ThreeDHelper::getYDegreeAngleLimitForRightAngledAxes())));
         m_aMFZRotation.SetEmptyFieldValue();
@@ -285,7 +285,7 @@ IMPL_LINK( ThreeD_SceneGeometry_TabPage, RightAngledAxesToggled, void*, EMPTYARG
     }
 
     ThreeDHelper::switchRightAngledAxes( m_xSceneProperties, m_aCbxRightAngledAxes.IsChecked(), true /*bRotateLights*/ );
-    
+
     return 0;
 }
 

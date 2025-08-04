@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "precompiled_sd.hxx"
@@ -54,7 +54,7 @@ public:
         document.
     */
     void UnregisterDocument (SdDrawDocument& rDocument);
-    
+
     /** Add a listener that is informed of master pages that are newly
         assigned to slides or become unassigned.
         @param rEventListener
@@ -82,7 +82,7 @@ private:
     ::std::vector<Link> maListeners;
 
     struct DrawDocHash {
-        size_t operator()(SdDrawDocument* argument) const 
+        size_t operator()(SdDrawDocument* argument) const
         { return reinterpret_cast<unsigned long>(argument); }
     };
     typedef ::std::hash_map<SdDrawDocument*,
@@ -125,7 +125,7 @@ MasterPageObserver&  MasterPageObserver::Instance (void)
     {
         OSL_DOUBLE_CHECKED_LOCKING_MEMORY_BARRIER();
     }
-    
+
     DBG_ASSERT(Implementation::mpInstance!=NULL,
         "MasterPageObserver::Instance(): instance is NULL");
     return *Implementation::mpInstance;
@@ -149,7 +149,7 @@ void MasterPageObserver::UnregisterDocument (SdDrawDocument& rDocument)
 
 
 
-    
+
 void MasterPageObserver::AddEventListener (const Link& rEventListener)
 {
 
@@ -215,7 +215,7 @@ void MasterPageObserver::Implementation::UnregisterDocument (
 
 
 
-    
+
 void MasterPageObserver::Implementation::AddEventListener (
     const Link& rEventListener)
 {
@@ -225,7 +225,7 @@ void MasterPageObserver::Implementation::AddEventListener (
         rEventListener) == maListeners.end())
     {
         maListeners.push_back (rEventListener);
-        
+
         // Tell the new listener about all the master pages that are
         // currently in use.
         typedef ::std::vector<String> StringList;
@@ -267,7 +267,7 @@ void MasterPageObserver::Implementation::RemoveEventListener (
 
 
 
-MasterPageObserver::MasterPageNameSet 
+MasterPageObserver::MasterPageNameSet
     MasterPageObserver::Implementation::GetMasterPageNames (
         SdDrawDocument& rDocument)
 {
@@ -347,8 +347,8 @@ void MasterPageObserver::Implementation::AnalyzeUsedMasterPages (
 
         ::std::set<String>::iterator J;
         int i=0;
-        for (J=aOldMasterPagesDescriptor->second.begin(); 
-             J!=aOldMasterPagesDescriptor->second.end(); 
+        for (J=aOldMasterPagesDescriptor->second.begin();
+             J!=aOldMasterPagesDescriptor->second.end();
              ++J)
             OSL_TRACE("old used master page %d is %s",
             i++,
@@ -369,8 +369,8 @@ void MasterPageObserver::Implementation::AnalyzeUsedMasterPages (
                     RTL_TEXTENCODING_UTF8).getStr());
 
 			MasterPageObserverEvent aEvent (
-				MasterPageObserverEvent::ET_MASTER_PAGE_ADDED, 
-				rDocument, 
+				MasterPageObserverEvent::ET_MASTER_PAGE_ADDED,
+				rDocument,
 				*I);
             SendEvent (aEvent);
         }
@@ -390,7 +390,7 @@ void MasterPageObserver::Implementation::AnalyzeUsedMasterPages (
 
 			MasterPageObserverEvent aEvent (
 				MasterPageObserverEvent::ET_MASTER_PAGE_REMOVED,
-				rDocument, 
+				rDocument,
 				*I);
 			SendEvent (aEvent);
         }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package installer;
@@ -47,26 +47,26 @@ public class Navigation extends javax.swing.JPanel {
         navBack = new javax.swing.JButton();
         navNext = new javax.swing.JButton();
         navCancel = new javax.swing.JButton();
-        
+
         setLayout(new java.awt.GridBagLayout());
         java.awt.GridBagConstraints gridBagConstraints1;
-        
+
         navBack.setText("<< Back");
         gridBagConstraints1 = new java.awt.GridBagConstraints();
         add(navBack, gridBagConstraints1);
-        
+
         navNext.setText("Next >>");
         gridBagConstraints1 = new java.awt.GridBagConstraints();
         gridBagConstraints1.gridx = 2;
         gridBagConstraints1.gridy = 0;
         add(navNext, gridBagConstraints1);
-        
+
         navCancel.setText("Cancel");
         gridBagConstraints1 = new java.awt.GridBagConstraints();
         gridBagConstraints1.gridx = 6;
         gridBagConstraints1.gridy = 0;
         add(navCancel, gridBagConstraints1);
-        
+
     }//GEN-END:initComponents
 
 

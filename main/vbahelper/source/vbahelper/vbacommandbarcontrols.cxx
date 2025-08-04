@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -138,7 +138,7 @@ ScVbaCommandBarControls::createCollectionObject( const uno::Any& aSource )
 }
 
 // Methods
-uno::Any SAL_CALL 
+uno::Any SAL_CALL
 ScVbaCommandBarControls::Item( const uno::Any& aIndex, const uno::Any& /*aIndex*/ ) throw (uno::RuntimeException)
 {
     sal_Int32 nPosition = -1;
@@ -147,7 +147,7 @@ ScVbaCommandBarControls::Item( const uno::Any& aIndex, const uno::Any& /*aIndex*
         rtl::OUString sName;
         aIndex >>= sName;
         nPosition = VbaCommandBarHelper::findControlByName( m_xIndexAccess, sName, m_bIsMenu );
-    } 
+    }
     else
     {
         aIndex >>= nPosition;
@@ -157,11 +157,11 @@ ScVbaCommandBarControls::Item( const uno::Any& aIndex, const uno::Any& /*aIndex*
     {
         throw uno::RuntimeException();
     }
-    
-    return createCollectionObject( uno::makeAny( nPosition ) ); 
+
+    return createCollectionObject( uno::makeAny( nPosition ) );
 }
 
-uno::Reference< XCommandBarControl > SAL_CALL 
+uno::Reference< XCommandBarControl > SAL_CALL
 ScVbaCommandBarControls::Add( const uno::Any& Type, const uno::Any& Id, const uno::Any& Parameter, const uno::Any& Before, const uno::Any& Temporary ) throw (script::BasicErrorException, uno::RuntimeException)
 {
     // Parameter is not supported
@@ -171,7 +171,7 @@ ScVbaCommandBarControls::Add( const uno::Any& Type, const uno::Any& Id, const un
     sal_Int32 nType = office::MsoControlType::msoControlButton;
     sal_Int32 nPosition = 0;
     sal_Bool bTemporary = sal_True;
-    
+
     if( Type.hasValue() )
     {
         Type >>= nType;
@@ -193,7 +193,7 @@ ScVbaCommandBarControls::Add( const uno::Any& Type, const uno::Any& Id, const un
 
     if( Temporary.hasValue() )
         Temporary >>= bTemporary;
-    
+
     uno::Any aSubMenu;
     if( nType == office::MsoControlType::msoControlPopup )
     {
@@ -202,7 +202,7 @@ ScVbaCommandBarControls::Add( const uno::Any& Type, const uno::Any& Id, const un
         aSubMenu <<= xSCF->createInstanceWithContext( mxContext );
     }
 
-    // create control 
+    // create control
     uno::Sequence< beans::PropertyValue > aProps;
     rtl::OUString sHelpUrl;
     sal_uInt16 nItemType = 0;
@@ -231,15 +231,15 @@ ScVbaCommandBarControls::Add( const uno::Any& Type, const uno::Any& Id, const un
 
     return uno::Reference< XCommandBarControl >( pNewCommandBarControl );
 }
-   
+
 // XHelperInterface
-rtl::OUString& 
+rtl::OUString&
 ScVbaCommandBarControls::getServiceImplName()
 {
     static rtl::OUString sImplName( RTL_CONSTASCII_USTRINGPARAM("ScVbaCommandBarControls") );
     return sImplName;
 }
-uno::Sequence<rtl::OUString> 
+uno::Sequence<rtl::OUString>
 ScVbaCommandBarControls::getServiceNames()
 {
     static uno::Sequence< rtl::OUString > aServiceNames;

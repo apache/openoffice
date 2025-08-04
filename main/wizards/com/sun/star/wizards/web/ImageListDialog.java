@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -43,7 +43,7 @@ import com.sun.star.wizards.ui.ImageList.Counter;
  * The model and the renderer are
  * still abstract in this class.
  * To use the class one should extend it,
- * in the constructor then set the imageList 
+ * in the constructor then set the imageList
  * properties (member name il) like image size, grid size,
  * model renderer aso, and then call "build".
  * This class uses a counter renderer which
@@ -58,7 +58,7 @@ import com.sun.star.wizards.ui.ImageList.Counter;
  * <br/>
  * the constructor should receive, among others, an Array of String resources - see
  * constructor documentation for details.
- * 
+ *
  * @author rpiterman
  */
 public abstract class ImageListDialog extends UnoDialog2 implements UIConsts
@@ -92,12 +92,12 @@ public abstract class ImageListDialog extends UnoDialog2 implements UIConsts
     private int hid;
 
     /**
-     * 
+     *
      * @param xmsf
      * @param resources_ a string array with the following strings :
      * dialog title, label text, ok, cancel, help, deselect, other.
-     * <br/> if "deselect" and "other" are not displayed, 
-     * the array can also be shorter. but if "other" is displayed 
+     * <br/> if "deselect" and "other" are not displayed,
+     * the array can also be shorter. but if "other" is displayed
      * and "deselect" not, both must be there :-(
      */
     public ImageListDialog(
@@ -114,7 +114,7 @@ public abstract class ImageListDialog extends UnoDialog2 implements UIConsts
      * adds the controls to the dialog, depending on
      * the size of the image list.
      * This method should be called by subclasses after setting
-     * the il ImageList member properties 
+     * the il ImageList member properties
      */
     protected void build()
     {
@@ -196,7 +196,7 @@ public abstract class ImageListDialog extends UnoDialog2 implements UIConsts
         il.tabIndex = 1;
         il.create(this);
 
-        /*lblContainer = insertLabel("lblContainer", 
+        /*lblContainer = insertLabel("lblContainer",
         new String[] {PropertyNames.PROPERTY_HEIGHT, PropertyNames.PROPERTY_NAME, PropertyNames.PROPERTY_POSITION_X, PropertyNames.PROPERTY_POSITION_Y, PropertyNames.PROPERTY_TABINDEX, PropertyNames.PROPERTY_WIDTH},
         new Object[] { 176,"lblContainer",6,17,new Short((short)5),214}
         );*/

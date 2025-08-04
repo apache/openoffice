@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -65,16 +65,16 @@ class ScVbaWorksheet : public WorksheetImpl_BASE
 
 	css::uno::Reference< css::container::XNameAccess > getFormControls();
 	css::uno::Any getControlShape( const rtl::OUString& sName );
-	
+
 	css::uno::Reference< css::beans::XPropertySet > getFirstDBRangeProperties() throw (css::uno::RuntimeException);
-	
+
 protected:
 
 	ScVbaWorksheet( const css::uno::Reference< ov::XHelperInterface >& xParent,  const css::uno::Reference< css::uno::XComponentContext >& xContext );
 public:
 	ScVbaWorksheet( const css::uno::Reference< ov::XHelperInterface >& xParent,
 		const css::uno::Reference< css::uno::XComponentContext >& xContext,
-		const css::uno::Reference< css::sheet::XSpreadsheet >& xSheet, 
+		const css::uno::Reference< css::sheet::XSpreadsheet >& xSheet,
 		const css::uno::Reference< css::frame::XModel >& xModel )throw (css::uno::RuntimeException)  ;
 	ScVbaWorksheet( css::uno::Sequence< css::uno::Any > const& aArgs, css::uno::Reference< css::uno::XComponentContext >const& xContext ) throw ( css::lang::IllegalArgumentException );
 
@@ -128,7 +128,7 @@ public:
 	virtual css::uno::Reference< ov::excel::XRange > SAL_CALL Rows(const css::uno::Any& aIndex ) throw (css::uno::RuntimeException);
 	virtual css::uno::Reference< ov::excel::XRange > SAL_CALL Columns(const css::uno::Any& aIndex ) throw (css::uno::RuntimeException);
 
-	virtual css::uno::Any SAL_CALL Evaluate( const ::rtl::OUString& Name ) throw (css::uno::RuntimeException); 
+	virtual css::uno::Any SAL_CALL Evaluate( const ::rtl::OUString& Name ) throw (css::uno::RuntimeException);
 	virtual css::uno::Any SAL_CALL PivotTables( const css::uno::Any& Index ) throw (css::uno::RuntimeException);
 	virtual css::uno::Any SAL_CALL Comments( const css::uno::Any& Index ) throw (css::uno::RuntimeException);
 	virtual css::uno::Any SAL_CALL Hyperlinks( const css::uno::Any& aIndex ) throw (css::uno::RuntimeException);
@@ -148,7 +148,7 @@ public:
     virtual css::uno::Any SAL_CALL Spinners( const css::uno::Any& rIndex ) throw (css::uno::RuntimeException);
 
 	virtual void SAL_CALL setEnableCalculation( ::sal_Bool EnableCalculation ) throw ( css::script::BasicErrorException, css::uno::RuntimeException);
-	virtual ::sal_Bool SAL_CALL getEnableCalculation(  ) throw (css::script::BasicErrorException, css::uno::RuntimeException); 
+	virtual ::sal_Bool SAL_CALL getEnableCalculation(  ) throw (css::script::BasicErrorException, css::uno::RuntimeException);
 	virtual void SAL_CALL ShowDataForm(  ) throw (css::uno::RuntimeException);
 	// XInvocation
 	virtual css::uno::Reference< css::beans::XIntrospectionAccess > SAL_CALL getIntrospection(  ) throw (css::uno::RuntimeException);
@@ -164,7 +164,7 @@ public:
 	virtual void SAL_CALL PrintOut( const css::uno::Any& From, const css::uno::Any& To, const css::uno::Any& Copies, const css::uno::Any& Preview, const css::uno::Any& ActivePrinter, const css::uno::Any& PrintToFile, const css::uno::Any& Collate, const css::uno::Any& PrToFileName, const css::uno::Any& IgnorePrintAreas ) throw (css::uno::RuntimeException);
 	// XHelperInterface
 	virtual rtl::OUString& getServiceImplName();
-	virtual css::uno::Sequence<rtl::OUString> getServiceNames();	
+	virtual css::uno::Sequence<rtl::OUString> getServiceNames();
 };
 
 #endif /* SC_VBA_WORKSHEET_HXX */

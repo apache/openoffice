@@ -35,41 +35,41 @@ class Transition
         mnActionStateId = nActionStateId;
     }
 
-    
-    
-    
+
+
+
     public int GetStartStateId ()
     {
         return mnStartStateId;
     }
 
-    
-    
-    
+
+
+
     public int GetEndStateId ()
     {
         return mnEndStateId;
     }
 
-    
-    
-    
+
+
+
     public int GetElementId ()
     {
         return mnElementId;
     }
 
-    
-    
-    
+
+
+
     public int GetActionId ()
     {
         return mnActionStateId;
     }
 
-    
-    
-    
+
+
+
     private final int mnStartStateId;
     private final int mnEndStateId;
     private final int mnElementId;

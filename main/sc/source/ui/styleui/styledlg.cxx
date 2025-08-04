@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -184,13 +184,13 @@ void __EXPORT ScStyleDlg::PageCreated( sal_uInt16 nPageId, SfxTabPage& rTabPage 
 	}
 	else if ( nDlgRsc == RID_SCDLG_STYLES_PAGE )
 	{
-		SfxAllItemSet aSet(*(GetInputSetImpl()->GetPool()));//CHINA001 
+		SfxAllItemSet aSet(*(GetInputSetImpl()->GetPool()));//CHINA001
 		switch ( nPageId )
 		{
 			case TP_PAGE_STD:
 				//CHINA001 ((SvxPageDescPage&)rTabPage).SetMode( SVX_PAGE_MODE_CENTER );
-				aSet.Put (SfxAllEnumItem((const sal_uInt16)SID_ENUM_PAGE_MODE, SVX_PAGE_MODE_CENTER)); //CHINA001 
-				rTabPage.PageCreated(aSet); //CHINA001 
+				aSet.Put (SfxAllEnumItem((const sal_uInt16)SID_ENUM_PAGE_MODE, SVX_PAGE_MODE_CENTER)); //CHINA001
+				rTabPage.PageCreated(aSet); //CHINA001
 				break;
 
 			case TP_PAGE_HEADER:
@@ -202,7 +202,7 @@ void __EXPORT ScStyleDlg::PageCreated( sal_uInt16 nPageId, SfxTabPage& rTabPage 
 			case TP_BACKGROUND:
 					if( nDlgRsc == RID_SCDLG_STYLES_PAGE)
 						//CHINA001 ((SvxBackgroundTabPage&)rTabPage).ShowSelector();
-					{	//add CHINA001 
+					{	//add CHINA001
 						aSet.Put (SfxUInt32Item(SID_FLAG_TYPE, SVX_SHOW_SELECTOR));
 						rTabPage.PageCreated(aSet);
 					}

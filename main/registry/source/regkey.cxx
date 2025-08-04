@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -92,8 +92,8 @@ RegError REGISTRY_CALLTYPE getKeyName(RegKeyHandle hKey, rtl_uString** pKeyName)
 //*********************************************************************
 //	createKey
 //
-RegError REGISTRY_CALLTYPE createKey(RegKeyHandle hKey, 
-									 rtl_uString* keyName, 
+RegError REGISTRY_CALLTYPE createKey(RegKeyHandle hKey,
+									 rtl_uString* keyName,
 									 RegKeyHandle* phNewKey)
 {
 	*phNewKey = 0;
@@ -101,7 +101,7 @@ RegError REGISTRY_CALLTYPE createKey(RegKeyHandle hKey,
 	ORegKey* pKey = static_cast< ORegKey* >(hKey);
 	if (!pKey)
 		return REG_INVALID_KEY;
-		
+
 	if (pKey->isDeleted())
 		return REG_INVALID_KEY;
 
@@ -109,13 +109,13 @@ RegError REGISTRY_CALLTYPE createKey(RegKeyHandle hKey,
 		return REG_REGISTRY_READONLY;
 
 	return pKey->createKey(keyName, phNewKey);
-}	
+}
 
 //*********************************************************************
 //	openKey
 //
-RegError REGISTRY_CALLTYPE openKey(RegKeyHandle hKey, 
-								   rtl_uString* keyName, 
+RegError REGISTRY_CALLTYPE openKey(RegKeyHandle hKey,
+								   rtl_uString* keyName,
 								   RegKeyHandle* phOpenKey)
 {
 	*phOpenKey = 0;
@@ -123,19 +123,19 @@ RegError REGISTRY_CALLTYPE openKey(RegKeyHandle hKey,
 	ORegKey* pKey = static_cast< ORegKey* >(hKey);
 	if (!pKey)
 		return REG_INVALID_KEY;
-		
+
 	if (pKey->isDeleted())
 		return REG_INVALID_KEY;
 
 	return pKey->openKey(keyName, phOpenKey);
-}	
+}
 
 //*********************************************************************
 //	openSubKeys
 //
-RegError REGISTRY_CALLTYPE openSubKeys(RegKeyHandle hKey, 
-									   rtl_uString* keyName, 
-									   RegKeyHandle** pphSubKeys, 
+RegError REGISTRY_CALLTYPE openSubKeys(RegKeyHandle hKey,
+									   rtl_uString* keyName,
+									   RegKeyHandle** pphSubKeys,
 									   sal_uInt32* pnSubKeys)
 {
 	*pphSubKeys = NULL;
@@ -144,12 +144,12 @@ RegError REGISTRY_CALLTYPE openSubKeys(RegKeyHandle hKey,
 	ORegKey* pKey = static_cast< ORegKey* >(hKey);
 	if (!pKey)
 		return REG_INVALID_KEY;
-		
+
 	if (pKey->isDeleted())
 		return REG_INVALID_KEY;
 
 	return pKey->openSubKeys(keyName, pphSubKeys, pnSubKeys);
-}	
+}
 
 //*********************************************************************
 //	closeSubKeys
@@ -168,12 +168,12 @@ RegError REGISTRY_CALLTYPE closeSubKeys(RegKeyHandle* phSubKeys,
 	rtl_freeMemory(phSubKeys);
 
 	return REG_NO_ERROR;
-}	
+}
 
 //*********************************************************************
 //	deleteKey
 //
-RegError REGISTRY_CALLTYPE deleteKey(RegKeyHandle hKey, 
+RegError REGISTRY_CALLTYPE deleteKey(RegKeyHandle hKey,
 									 rtl_uString* keyName)
 {
 	ORegKey* pKey = static_cast< ORegKey* >(hKey);
@@ -187,7 +187,7 @@ RegError REGISTRY_CALLTYPE deleteKey(RegKeyHandle hKey,
 		return REG_REGISTRY_READONLY;
 
 	return pKey->deleteKey(keyName);
-}	
+}
 
 //*********************************************************************
 //	closeKey
@@ -199,15 +199,15 @@ RegError REGISTRY_CALLTYPE closeKey(RegKeyHandle hKey)
 		return REG_INVALID_KEY;
 
 	return pKey->closeKey(hKey);
-}	
+}
 
 //*********************************************************************
 //	setValue
 //
-RegError REGISTRY_CALLTYPE setValue(RegKeyHandle hKey, 
-								   	rtl_uString* keyName, 
-								   	RegValueType valueType, 
-								   	RegValue pData, 
+RegError REGISTRY_CALLTYPE setValue(RegKeyHandle hKey,
+								   	rtl_uString* keyName,
+								   	RegValueType valueType,
+								   	RegValue pData,
 								   	sal_uInt32 valueSize)
 {
 	ORegKey* pKey = static_cast< ORegKey* >(hKey);
@@ -218,7 +218,7 @@ RegError REGISTRY_CALLTYPE setValue(RegKeyHandle hKey,
 		return REG_INVALID_KEY;
 
 	if (pKey->isReadOnly())
-		return REG_REGISTRY_READONLY;		
+		return REG_REGISTRY_READONLY;
 
 	OUString valueName( RTL_CONSTASCII_USTRINGPARAM("value") );
 	if (keyName->length)
@@ -237,19 +237,19 @@ RegError REGISTRY_CALLTYPE setValue(RegKeyHandle hKey,
 			else
 				return _ret1;
 		}
-		
+
 		return pKey->closeKey(pSubKey);
 	}
 
 	return pKey->setValue(valueName, valueType, pData, valueSize);
-}	
+}
 
 //*********************************************************************
 //	setLongValueList
 //
-RegError REGISTRY_CALLTYPE setLongListValue(RegKeyHandle hKey, 
-						   		 	  		rtl_uString* keyName, 
-				   			 		  		sal_Int32* pValueList, 
+RegError REGISTRY_CALLTYPE setLongListValue(RegKeyHandle hKey,
+						   		 	  		rtl_uString* keyName,
+				   			 		  		sal_Int32* pValueList,
 				   			 		  		sal_uInt32 len)
 {
 	ORegKey* pKey = static_cast< ORegKey* >(hKey);
@@ -279,19 +279,19 @@ RegError REGISTRY_CALLTYPE setLongListValue(RegKeyHandle hKey,
 			else
 				return _ret1;
 		}
-		
+
 		return pKey->closeKey(pSubKey);
 	}
 
 	return pKey->setLongListValue(valueName, pValueList, len);
-}	
+}
 
 //*********************************************************************
 //	setStringValueList
 //
-RegError REGISTRY_CALLTYPE setStringListValue(RegKeyHandle hKey, 
-						   		 	  		 rtl_uString* keyName, 
-				   			 		  		 sal_Char** pValueList, 
+RegError REGISTRY_CALLTYPE setStringListValue(RegKeyHandle hKey,
+						   		 	  		 rtl_uString* keyName,
+				   			 		  		 sal_Char** pValueList,
 				   			 		  		 sal_uInt32 len)
 {
 	ORegKey* pKey = static_cast< ORegKey* >(hKey);
@@ -321,19 +321,19 @@ RegError REGISTRY_CALLTYPE setStringListValue(RegKeyHandle hKey,
 			else
 				return _ret1;
 		}
-		
+
 		return pKey->closeKey(pSubKey);
 	}
 
 	return pKey->setStringListValue(valueName, pValueList, len);
-}	
+}
 
 //*********************************************************************
 //	setUnicodeValueList
 //
-RegError REGISTRY_CALLTYPE setUnicodeListValue(RegKeyHandle hKey, 
-						   		 	  		   rtl_uString* keyName, 
-				   			 		  		   sal_Unicode** pValueList, 
+RegError REGISTRY_CALLTYPE setUnicodeListValue(RegKeyHandle hKey,
+						   		 	  		   rtl_uString* keyName,
+				   			 		  		   sal_Unicode** pValueList,
 				   			 		  		   sal_uInt32 len)
 {
 	ORegKey* pKey = static_cast< ORegKey* >(hKey);
@@ -363,24 +363,24 @@ RegError REGISTRY_CALLTYPE setUnicodeListValue(RegKeyHandle hKey,
 			else
 				return _ret1;
 		}
-		
+
 		return pKey->closeKey(pSubKey);
 	}
 
 	return pKey->setUnicodeListValue(valueName, pValueList, len);
-}	
+}
 
 //*********************************************************************
 //	getValueInfo
 //
-RegError REGISTRY_CALLTYPE getValueInfo(RegKeyHandle hKey, 
-										rtl_uString* keyName, 
-										RegValueType* pValueType, 
+RegError REGISTRY_CALLTYPE getValueInfo(RegKeyHandle hKey,
+										rtl_uString* keyName,
+										RegValueType* pValueType,
 										sal_uInt32* pValueSize)
 {
 	*pValueType = RG_VALUETYPE_NOT_DEFINED;
 	*pValueSize = 0;
-	
+
 	ORegKey* pKey = static_cast< ORegKey* >(hKey);
 	if (!pKey)
 		return REG_INVALID_KEY;
@@ -398,13 +398,13 @@ RegError REGISTRY_CALLTYPE getValueInfo(RegKeyHandle hKey,
 		RegError _ret = pKey->openKey(keyName, (RegKeyHandle*)&pSubKey);
 		if (_ret != REG_NO_ERROR)
 			return _ret;
-		
+
 		if (pSubKey->getValueInfo(valueName, &valueType, &valueSize) != REG_NO_ERROR)
 		{
             (void) pKey->releaseKey(pSubKey);
 			return REG_INVALID_VALUE;
 		}
-		
+
 		*pValueType = valueType;
 		*pValueSize = valueSize;
 
@@ -419,15 +419,15 @@ RegError REGISTRY_CALLTYPE getValueInfo(RegKeyHandle hKey,
 
 	*pValueType = valueType;
 	*pValueSize = valueSize;
-		
+
 	return REG_NO_ERROR;
-}	
+}
 
 //*********************************************************************
 //	getValueInfo
 //
-RegError REGISTRY_CALLTYPE getValue(RegKeyHandle hKey, 
-									rtl_uString* keyName, 
+RegError REGISTRY_CALLTYPE getValue(RegKeyHandle hKey,
+									rtl_uString* keyName,
 									RegValue pValue)
 {
 	ORegKey* pKey = static_cast< ORegKey* >(hKey);
@@ -451,19 +451,19 @@ RegError REGISTRY_CALLTYPE getValue(RegKeyHandle hKey,
             (void) pKey->releaseKey(pSubKey);
 			return _ret1;
 		}
-		
+
 		return pKey->releaseKey(pSubKey);
 	}
 
 	return pKey->getValue(valueName, pValue);
-}	
+}
 
 //*********************************************************************
 //	getLongValueList
 //
-RegError REGISTRY_CALLTYPE getLongListValue(RegKeyHandle hKey, 
+RegError REGISTRY_CALLTYPE getLongListValue(RegKeyHandle hKey,
 											rtl_uString* keyName,
-											sal_Int32** pValueList, 
+											sal_Int32** pValueList,
 											sal_uInt32* pLen)
 {
 	OSL_PRECOND((pValueList != 0) && (pLen != 0), "registry::getLongListValue(): invalid parameter");
@@ -490,19 +490,19 @@ RegError REGISTRY_CALLTYPE getLongListValue(RegKeyHandle hKey,
             (void) pKey->releaseKey(pSubKey);
 			return _ret1;
 		}
-		
+
 		return pKey->releaseKey(pSubKey);
 	}
 
 	return pKey->getLongListValue(valueName, pValueList, pLen);
-}	
+}
 
 //*********************************************************************
 //	getStringValueList
 //
-RegError REGISTRY_CALLTYPE getStringListValue(RegKeyHandle hKey, 
+RegError REGISTRY_CALLTYPE getStringListValue(RegKeyHandle hKey,
 											  rtl_uString* keyName,
-											  sal_Char*** pValueList, 
+											  sal_Char*** pValueList,
 											  sal_uInt32* pLen)
 {
 	OSL_PRECOND((pValueList != 0) && (pLen != 0), "registry::getStringListValue(): invalid parameter");
@@ -529,19 +529,19 @@ RegError REGISTRY_CALLTYPE getStringListValue(RegKeyHandle hKey,
             (void) pKey->releaseKey(pSubKey);
 			return _ret1;
 		}
-		
+
 		return pKey->releaseKey(pSubKey);
 	}
 
 	return pKey->getStringListValue(valueName, pValueList, pLen);
-}	
+}
 
 //*********************************************************************
 //	getUnicodeListValue
 //
-RegError REGISTRY_CALLTYPE getUnicodeListValue(RegKeyHandle hKey, 
+RegError REGISTRY_CALLTYPE getUnicodeListValue(RegKeyHandle hKey,
 											   rtl_uString* keyName,
-											   sal_Unicode*** pValueList, 
+											   sal_Unicode*** pValueList,
 											   sal_uInt32* pLen)
 {
 	OSL_PRECOND((pValueList != 0) && (pLen != 0), "registry::getUnicodeListValue(): invalid parameter");
@@ -568,18 +568,18 @@ RegError REGISTRY_CALLTYPE getUnicodeListValue(RegKeyHandle hKey,
             (void) pKey->releaseKey(pSubKey);
 			return _ret1;
 		}
-		
+
 		return pKey->releaseKey(pSubKey);
 	}
 
 	return pKey->getUnicodeListValue(valueName, pValueList, pLen);
-}	
+}
 
 //*********************************************************************
 //	freeValueList
 //
-RegError REGISTRY_CALLTYPE freeValueList(RegValueType valueType, 
-					   			  		 RegValue pValueList, 
+RegError REGISTRY_CALLTYPE freeValueList(RegValueType valueType,
+					   			  		 RegValue pValueList,
 					   			  		 sal_uInt32 len)
 {
 	switch (valueType)
@@ -645,12 +645,12 @@ RegError REGISTRY_CALLTYPE getKeyType(RegKeyHandle hKey,
 	ORegKey* pKey = static_cast< ORegKey* >(hKey);
 	if (!pKey)
 		return REG_INVALID_KEY;
-		
+
 	if (pKey->isDeleted())
 		return REG_INVALID_KEY;
 
-	return pKey->getKeyType(keyName, pKeyType);	
-}	
+	return pKey->getKeyType(keyName, pKeyType);
+}
 
 //*********************************************************************
 //	getLinkTarget
@@ -672,7 +672,7 @@ RegError REGISTRY_CALLTYPE getResolvedKeyName(RegKeyHandle hKey,
 	ORegKey* pKey = static_cast< ORegKey* >(hKey);
 	if (!pKey)
 		return REG_INVALID_KEY;
-		
+
 	if (pKey->isDeleted())
 		return REG_INVALID_KEY;
 
@@ -694,12 +694,12 @@ RegError REGISTRY_CALLTYPE getKeyNames(RegKeyHandle hKey,
 	ORegKey* pKey = static_cast< ORegKey* >(hKey);
 	if (!pKey)
 		return REG_INVALID_KEY;
-		
+
 	if (pKey->isDeleted())
 		return REG_INVALID_KEY;
 
-	return pKey->getKeyNames(keyName, pSubKeyNames, pnSubKeys);		
-}	
+	return pKey->getKeyNames(keyName, pSubKeyNames, pnSubKeys);
+}
 
 //*********************************************************************
 //	freeKeyNames
@@ -714,8 +714,8 @@ RegError REGISTRY_CALLTYPE freeKeyNames(rtl_uString** pKeyNames,
 
 	rtl_freeMemory(pKeyNames);
 
-	return REG_NO_ERROR;		
-}	
+	return REG_NO_ERROR;
+}
 
 //*********************************************************************
 //  C API
@@ -724,66 +724,66 @@ RegError REGISTRY_CALLTYPE freeKeyNames(rtl_uString** pKeyNames,
 //*********************************************************************
 //	reg_createKey
 //
-RegError REGISTRY_CALLTYPE reg_createKey(RegKeyHandle hKey, 
-										 rtl_uString* keyName, 
+RegError REGISTRY_CALLTYPE reg_createKey(RegKeyHandle hKey,
+										 rtl_uString* keyName,
 										 RegKeyHandle* phNewKey)
 {
 	if (!hKey)
  		return REG_INVALID_KEY;
 
 	return createKey(hKey, keyName, phNewKey);
-}	
+}
 
 //*********************************************************************
 //	reg_openKey
 //
-RegError REGISTRY_CALLTYPE reg_openKey(RegKeyHandle hKey, 
-									   rtl_uString* keyName, 
+RegError REGISTRY_CALLTYPE reg_openKey(RegKeyHandle hKey,
+									   rtl_uString* keyName,
 									   RegKeyHandle* phOpenKey)
 {
 	if (!hKey)
 		return REG_INVALID_KEY;
 
 	return openKey(hKey, keyName, phOpenKey);
-}	
+}
 
 //*********************************************************************
 //	reg_openSubKeys
 //
-RegError REGISTRY_CALLTYPE reg_openSubKeys(RegKeyHandle hKey, 
-										   rtl_uString* keyName, 
-										   RegKeyHandle** pphSubKeys, 
+RegError REGISTRY_CALLTYPE reg_openSubKeys(RegKeyHandle hKey,
+										   rtl_uString* keyName,
+										   RegKeyHandle** pphSubKeys,
 										   sal_uInt32* pnSubKeys)
 {
 	if (!hKey)
 		return REG_INVALID_KEY;
 
 	return openSubKeys(hKey, keyName, pphSubKeys, pnSubKeys);
-}	
+}
 
 //*********************************************************************
 //	reg_closeSubKeys
 //
-RegError REGISTRY_CALLTYPE reg_closeSubKeys(RegKeyHandle* pphSubKeys, 
+RegError REGISTRY_CALLTYPE reg_closeSubKeys(RegKeyHandle* pphSubKeys,
 											sal_uInt32 nSubKeys)
 {
 	if (!pphSubKeys)
 		return REG_INVALID_KEY;
 
 	return closeSubKeys(pphSubKeys, nSubKeys);
-}	
+}
 
 //*********************************************************************
 //	reg_deleteKey
 //
-RegError REGISTRY_CALLTYPE reg_deleteKey(RegKeyHandle hKey, 
+RegError REGISTRY_CALLTYPE reg_deleteKey(RegKeyHandle hKey,
 										 rtl_uString* keyName)
 {
 	if (!hKey)
 		return REG_INVALID_KEY;
 
 	return deleteKey(hKey, keyName);
-}	
+}
 
 //*********************************************************************
 //	reg_closeKey
@@ -794,7 +794,7 @@ RegError REGISTRY_CALLTYPE reg_closeKey(RegKeyHandle hKey)
 		return REG_INVALID_KEY;
 
 	return closeKey(hKey);
-}	
+}
 
 
 //*********************************************************************
@@ -803,7 +803,7 @@ RegError REGISTRY_CALLTYPE reg_closeKey(RegKeyHandle hKey)
 RegError REGISTRY_CALLTYPE reg_getKeyName(RegKeyHandle hKey, rtl_uString** pKeyName)
 {
 	if (hKey)
-	{	
+	{
 		rtl_uString_assign( pKeyName, ((ORegKey*)hKey)->getName().pData );
 		return REG_NO_ERROR;
 	} else
@@ -816,106 +816,106 @@ RegError REGISTRY_CALLTYPE reg_getKeyName(RegKeyHandle hKey, rtl_uString** pKeyN
 //*********************************************************************
 //	reg_setValue
 //
-RegError REGISTRY_CALLTYPE reg_setValue(RegKeyHandle hKey, 
-										rtl_uString* keyName, 
-										RegValueType valueType, 
-										RegValue pData, 
+RegError REGISTRY_CALLTYPE reg_setValue(RegKeyHandle hKey,
+										rtl_uString* keyName,
+										RegValueType valueType,
+										RegValue pData,
 										sal_uInt32 valueSize)
 {
 	if (!hKey)
 		return REG_INVALID_KEY;
 
 	return setValue(hKey, keyName, valueType, pData, valueSize);
-}	
+}
 
 //*********************************************************************
 //	reg_setLongListValue
 //
-RegError REGISTRY_CALLTYPE reg_setLongListValue(RegKeyHandle hKey, 
-					   		 	  				rtl_uString* keyName, 
-			   			 		  				sal_Int32* pValueList, 
+RegError REGISTRY_CALLTYPE reg_setLongListValue(RegKeyHandle hKey,
+					   		 	  				rtl_uString* keyName,
+			   			 		  				sal_Int32* pValueList,
 			   			 		  				sal_uInt32 len)
 {
 	if (!hKey)
 		return REG_INVALID_KEY;
 
 	return setLongListValue(hKey, keyName, pValueList, len);
-}	
+}
 
 //*********************************************************************
 //	reg_setStringListValue
 //
-RegError REGISTRY_CALLTYPE reg_setStringListValue(RegKeyHandle hKey, 
-					   		 	  			  	  rtl_uString* keyName, 
-			   			 		  			  	  sal_Char** pValueList, 
+RegError REGISTRY_CALLTYPE reg_setStringListValue(RegKeyHandle hKey,
+					   		 	  			  	  rtl_uString* keyName,
+			   			 		  			  	  sal_Char** pValueList,
 			   			 		  			  	  sal_uInt32 len)
 {
 	if (!hKey)
 		return REG_INVALID_KEY;
 
 	return setStringListValue(hKey, keyName, pValueList, len);
-}	
+}
 
 //*********************************************************************
 //	reg_setUnicodeListValue
 //
-RegError REGISTRY_CALLTYPE reg_setUnicodeListValue(RegKeyHandle hKey, 
-					   		 	  			   	   rtl_uString* keyName, 
-			   			 		  			   	   sal_Unicode** pValueList, 
+RegError REGISTRY_CALLTYPE reg_setUnicodeListValue(RegKeyHandle hKey,
+					   		 	  			   	   rtl_uString* keyName,
+			   			 		  			   	   sal_Unicode** pValueList,
 			   			 		  			   	   sal_uInt32 len)
 {
 	if (!hKey)
 		return REG_INVALID_KEY;
 
 	return setUnicodeListValue(hKey, keyName, pValueList, len);
-}	
+}
 
 //*********************************************************************
 //	reg_getValueInfo
 //
-RegError REGISTRY_CALLTYPE reg_getValueInfo(RegKeyHandle hKey, 
-											rtl_uString* keyName, 
-											RegValueType* pValueType, 
+RegError REGISTRY_CALLTYPE reg_getValueInfo(RegKeyHandle hKey,
+											rtl_uString* keyName,
+											RegValueType* pValueType,
 											sal_uInt32* pValueSize)
 {
 	if (!hKey)
 		return REG_INVALID_KEY;
 
 	return getValueInfo(hKey, keyName, pValueType, pValueSize);
-}	
+}
 
 //*********************************************************************
 //	reg_getValueInfo
 //
-RegError REGISTRY_CALLTYPE reg_getValue(RegKeyHandle hKey, 
-										rtl_uString* keyName, 
+RegError REGISTRY_CALLTYPE reg_getValue(RegKeyHandle hKey,
+										rtl_uString* keyName,
 										RegValue pData)
 {
 	if (!hKey)
 		return REG_INVALID_KEY;
 
 	return getValue(hKey, keyName, pData);
-}	
+}
 
 //*********************************************************************
 //	reg_getLongListValue
 //
-RegError REGISTRY_CALLTYPE reg_getLongListValue(RegKeyHandle hKey, 
-					   		 	  				rtl_uString* keyName, 
-			   			 		  				sal_Int32** pValueList, 
+RegError REGISTRY_CALLTYPE reg_getLongListValue(RegKeyHandle hKey,
+					   		 	  				rtl_uString* keyName,
+			   			 		  				sal_Int32** pValueList,
 			   			 		  				sal_uInt32* pLen)
 {
 	if (!hKey)
 		return REG_INVALID_KEY;
 
 	return getLongListValue(hKey, keyName, pValueList, pLen);
-}	
+}
 
 //*********************************************************************
 //	reg_getStringListValue
 //
-RegError REGISTRY_CALLTYPE reg_getStringListValue(RegKeyHandle hKey, 
-				   			  					  rtl_uString* keyName, 
+RegError REGISTRY_CALLTYPE reg_getStringListValue(RegKeyHandle hKey,
+				   			  					  rtl_uString* keyName,
 				   			  					  sal_Char*** pValueList,
 				   			  					  sal_uInt32* pLen)
 {
@@ -923,47 +923,47 @@ RegError REGISTRY_CALLTYPE reg_getStringListValue(RegKeyHandle hKey,
 		return REG_INVALID_KEY;
 
 	return getStringListValue(hKey, keyName, pValueList, pLen);
-}	
+}
 
 //*********************************************************************
 //	reg_getUnicodeListValue
 //
-RegError REGISTRY_CALLTYPE reg_getUnicodeListValue(RegKeyHandle hKey, 
-					   		 	  				   rtl_uString* keyName, 
-			   			 		  				   sal_Unicode*** pValueList, 
+RegError REGISTRY_CALLTYPE reg_getUnicodeListValue(RegKeyHandle hKey,
+					   		 	  				   rtl_uString* keyName,
+			   			 		  				   sal_Unicode*** pValueList,
 			   			 		  				   sal_uInt32* pLen)
 {
 	if (!hKey)
 		return REG_INVALID_KEY;
 
 	return getUnicodeListValue(hKey, keyName, pValueList, pLen);
-}	
+}
 
 //*********************************************************************
 //	reg_freeValueList
 //
-RegError REGISTRY_CALLTYPE reg_freeValueList(RegValueType valueType, 
-				   			  				 RegValue pValueList, 
+RegError REGISTRY_CALLTYPE reg_freeValueList(RegValueType valueType,
+				   			  				 RegValue pValueList,
 				   			  				 sal_uInt32 len)
 {
 	if (pValueList)
 		return freeValueList(valueType, pValueList, len);
 	else
 		return REG_INVALID_VALUE;
-}												 
+}
 
 //*********************************************************************
 //	reg_createLink
 //
 RegError REGISTRY_CALLTYPE reg_createLink(RegKeyHandle hKey,
-				  			   		      rtl_uString* linkName, 
+				  			   		      rtl_uString* linkName,
 										  rtl_uString* linkTarget)
 {
 	if (!hKey)
 		return REG_INVALID_KEY;
 
 	return createLink(hKey, linkName, linkTarget);
-}	
+}
 
 //*********************************************************************
 //	reg_deleteLink
@@ -975,7 +975,7 @@ RegError REGISTRY_CALLTYPE reg_deleteLink(RegKeyHandle hKey,
 		return REG_INVALID_KEY;
 
 	return deleteLink(hKey, linkName);
-}	
+}
 
 //*********************************************************************
 //	reg_getKeyType
@@ -988,7 +988,7 @@ RegError REGISTRY_CALLTYPE reg_getKeyType(RegKeyHandle hKey,
 		return REG_INVALID_KEY;
 
 	return getKeyType(hKey, keyName, pKeyType);
-}	
+}
 
 //*********************************************************************
 //	reg_getLinkTarget
@@ -1001,7 +1001,7 @@ RegError REGISTRY_CALLTYPE reg_getLinkTarget(RegKeyHandle hKey,
 		return REG_INVALID_KEY;
 
 	return getLinkTarget(hKey, linkName, pLinkTarget);
-}	
+}
 
 //*********************************************************************
 //	reg_getResolvedKeyName

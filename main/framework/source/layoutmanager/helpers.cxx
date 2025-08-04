@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -28,7 +28,7 @@
 #include "helpers.hxx"
 #include <threadhelp/resetableguard.hxx>
 #include <services.h>
- 
+
 // interface includes
 #include <com/sun/star/ui/DockingArea.hpp>
 #include <com/sun/star/awt/XTopWindow.hpp>
@@ -73,7 +73,7 @@ bool isDefaultPos( const ::Point& aPos )
 bool isReverseOrderDockingArea( const sal_Int32 nDockArea )
 {
     ui::DockingArea eDockArea = static_cast< ui::DockingArea >( nDockArea );
-    return (( eDockArea == ui::DockingArea_DOCKINGAREA_BOTTOM ) || 
+    return (( eDockArea == ui::DockingArea_DOCKINGAREA_BOTTOM ) ||
             ( eDockArea == ui::DockingArea_DOCKINGAREA_RIGHT ));
 }
 
@@ -86,7 +86,7 @@ bool isToolboxHorizontalAligned( ToolBox* pToolBox )
 
 bool isHorizontalDockingArea( const ui::DockingArea& nDockingArea )
 {
-    return (( nDockingArea == ui::DockingArea_DOCKINGAREA_TOP ) || 
+    return (( nDockingArea == ui::DockingArea_DOCKINGAREA_TOP ) ||
             ( nDockingArea == ui::DockingArea_DOCKINGAREA_BOTTOM ));
 }
 
@@ -98,7 +98,7 @@ bool isHorizontalDockingArea( const sal_Int32 nDockArea )
 ::rtl::OUString retrieveToolbarNameFromHelpURL( Window* pWindow )
 {
     ::rtl::OUString aToolbarName;
-    
+
     if ( pWindow->GetType() == WINDOW_TOOLBOX )
     {
         ToolBox* pToolBox = dynamic_cast<ToolBox *>( pWindow );
@@ -131,7 +131,7 @@ Window* getWindowFromXUIElement( const uno::Reference< ui::XUIElement >& xUIElem
         xWindow = uno::Reference< awt::XWindow >( xUIElement->getRealInterface(), uno::UNO_QUERY );
     return VCLUnoHelper::GetWindow( xWindow );
 }
-    
+
 SystemWindow* getTopSystemWindow( const uno::Reference< awt::XWindow >& xWindow )
 {
     Window* pWindow = VCLUnoHelper::GetWindow( xWindow );
@@ -180,7 +180,7 @@ bool lcl_checkUIElement(const uno::Reference< ui::XUIElement >& xUIElement, awt:
 uno::Reference< awt::XWindowPeer > createToolkitWindow( const uno::Reference< lang::XMultiServiceFactory >& rFactory, const uno::Reference< awt::XWindowPeer >& rParent, const char* pService )
 {
     const rtl::OUString aAWTToolkit( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.awt.Toolkit" ));
-    
+
     uno::Reference< awt::XWindowPeer > xPeer;
     if ( rFactory.is() )
     {
@@ -190,7 +190,7 @@ uno::Reference< awt::XWindowPeer > createToolkitWindow( const uno::Reference< la
             // describe window properties.
             css::awt::WindowDescriptor aDescriptor;
             aDescriptor.Type                =   awt::WindowClass_SIMPLE;
-            aDescriptor.WindowServiceName   =   ::rtl::OUString::createFromAscii( pService );  
+            aDescriptor.WindowServiceName   =   ::rtl::OUString::createFromAscii( pService );
             aDescriptor.ParentIndex         =   -1;
             aDescriptor.Parent              =   uno::Reference< awt::XWindowPeer >( rParent, uno::UNO_QUERY );
             aDescriptor.Bounds              =   awt::Rectangle(0,0,0,0);
@@ -348,7 +348,7 @@ void impl_setDockingWindowVisibility( const css::uno::Reference< css::lang::XMul
 {
     const ::rtl::OUString aDockWinPrefixCommand( RTL_CONSTASCII_USTRINGPARAM( "DockingWindow" ));
     css::uno::WeakReference< css::frame::XDispatchHelper > xDispatchHelper;
-    
+
     sal_Int32 nID    = rDockingWindowName.toInt32();
     sal_Int32 nIndex = nID - DOCKWIN_ID_BASE;
 
@@ -357,9 +357,9 @@ void impl_setDockingWindowVisibility( const css::uno::Reference< css::lang::XMul
     {
         ::rtl::OUString aDockWinCommand( RTL_CONSTASCII_USTRINGPARAM( ".uno:" ));
         ::rtl::OUString aDockWinArgName( aDockWinPrefixCommand );
-        
+
         aDockWinArgName += ::rtl::OUString::valueOf( nIndex );
-        
+
         css::uno::Sequence< css::beans::PropertyValue > aArgs(1);
         aArgs[0].Name  = aDockWinArgName;
         aArgs[0].Value = css::uno::makeAny( bVisible );
@@ -381,8 +381,8 @@ void impl_setDockingWindowVisibility( const css::uno::Reference< css::lang::XMul
     }
 }
 
-void impl_addWindowListeners( 
-    const css::uno::Reference< css::uno::XInterface >& xThis, 
+void impl_addWindowListeners(
+    const css::uno::Reference< css::uno::XInterface >& xThis,
     const css::uno::Reference< css::ui::XUIElement >& xUIElement )
 {
     css::uno::Reference< css::awt::XWindow > xWindow( xUIElement->getRealInterface(), css::uno::UNO_QUERY );
@@ -391,10 +391,10 @@ void impl_addWindowListeners(
     {
         try
         {
-            xDockWindow->addDockableWindowListener( 
+            xDockWindow->addDockableWindowListener(
                 css::uno::Reference< css::awt::XDockableWindowListener >(
                     xThis, css::uno::UNO_QUERY ));
-            xWindow->addWindowListener( 
+            xWindow->addWindowListener(
                 css::uno::Reference< css::awt::XWindowListener >(
                     xThis, css::uno::UNO_QUERY ));
             xDockWindow->enableDocking( sal_True );

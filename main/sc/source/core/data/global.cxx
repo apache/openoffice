@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -541,7 +541,7 @@ void ScGlobal::Init()
     pSysLocale = new SvtSysLocale;
     pCharClass = pSysLocale->GetCharClassPtr();
     pLocaleData = pSysLocale->GetLocaleDataPtr();
-	
+
 	ppRscString = new String *[ STR_COUNT ];
 	for( sal_uInt16 nC = 0 ; nC < STR_COUNT ; nC++ ) ppRscString[ nC ] = NULL;
 
@@ -1211,7 +1211,7 @@ public:
         ~ScResourcePublisher() { FreeResource(); }
 	sal_Bool			IsAvailableRes( const ResId& rId ) const
 						{ return Resource::IsAvailableRes( rId ); }
-	
+
 };
 
 
@@ -1596,7 +1596,7 @@ String ScFuncDesc::GetSignature() const
 		aFormula.appendAscii( "(" );
         ::std::vector< ::rtl::OUString >::const_iterator aIter = _aArguments.begin();
         ::std::vector< ::rtl::OUString >::const_iterator aEnd = _aArguments.end();
-        
+
 		if ( nArgCount > 0 && aIter != aEnd )
 		{
 			sal_Bool bLastArg = ( aIter->getLength() == 0 );
@@ -1655,12 +1655,12 @@ sal_uInt16 ScFuncDesc::GetSuppressedArgCount() const
     return sRet;
 }
 // -----------------------------------------------------------------------------
-const formula::IFunctionCategory* ScFuncDesc::getCategory() const 
+const formula::IFunctionCategory* ScFuncDesc::getCategory() const
 {
     return ScGlobal::GetStarCalcFunctionMgr()->getCategory(nCategory);
 }
 // -----------------------------------------------------------------------------
-::rtl::OUString ScFuncDesc::getDescription() const 
+::rtl::OUString ScFuncDesc::getDescription() const
 {
     ::rtl::OUString sRet;
     if ( pFuncDesc )
@@ -1669,13 +1669,13 @@ const formula::IFunctionCategory* ScFuncDesc::getCategory() const
 }
 // -----------------------------------------------------------------------------
 // GetSuppressedArgCount
-xub_StrLen ScFuncDesc::getSuppressedArgumentCount() const 
+xub_StrLen ScFuncDesc::getSuppressedArgumentCount() const
 {
     return GetSuppressedArgCount();
 }
 // -----------------------------------------------------------------------------
-// 
-void ScFuncDesc::fillVisibleArgumentMapping(::std::vector<sal_uInt16>& _rArguments) const 
+//
+void ScFuncDesc::fillVisibleArgumentMapping(::std::vector<sal_uInt16>& _rArguments) const
 {
     if (!bHasSuppressedArgs || !pDefArgFlags)
     {
@@ -1724,34 +1724,34 @@ void ScFuncDesc::initArgumentInfo()  const
     }
 }
 // -----------------------------------------------------------------------------
-::rtl::OUString ScFuncDesc::getSignature() const 
+::rtl::OUString ScFuncDesc::getSignature() const
 {
     return GetSignature();
 }
 // -----------------------------------------------------------------------------
-rtl::OString ScFuncDesc::getHelpId() const 
+rtl::OString ScFuncDesc::getHelpId() const
 {
     return sHelpId;
 }
 // -----------------------------------------------------------------------------
 
 // parameter
-sal_uInt32 ScFuncDesc::getParameterCount() const 
+sal_uInt32 ScFuncDesc::getParameterCount() const
 {
     return nArgCount;
 }
 // -----------------------------------------------------------------------------
-::rtl::OUString ScFuncDesc::getParameterName(sal_uInt32 _nPos) const 
+::rtl::OUString ScFuncDesc::getParameterName(sal_uInt32 _nPos) const
 {
     return *(ppDefArgNames[_nPos]);
 }
 // -----------------------------------------------------------------------------
-::rtl::OUString ScFuncDesc::getParameterDescription(sal_uInt32 _nPos) const 
+::rtl::OUString ScFuncDesc::getParameterDescription(sal_uInt32 _nPos) const
 {
     return *(ppDefArgDescs[_nPos]);
 }
 // -----------------------------------------------------------------------------
-bool ScFuncDesc::isParameterOptional(sal_uInt32 _nPos) const 
+bool ScFuncDesc::isParameterOptional(sal_uInt32 _nPos) const
 {
     return pDefArgFlags[_nPos].bOptional;
 }

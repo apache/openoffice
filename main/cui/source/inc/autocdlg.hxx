@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -329,13 +329,13 @@ private:
 	SvxCheckListBox	aCheckLB;
 
     // Just for writer
-	OfaACorrCheckListBox	aSwCheckLB;	
+	OfaACorrCheckListBox	aSwCheckLB;
     String			sHeader1;
 	String			sHeader2;
-    
+
     String          sNonBrkSpace;
     String          sOrdinal;
-	
+
     SvLBoxButtonData*	pCheckButtonData;
 
 	FixedLine	aSingleFL;
@@ -454,7 +454,7 @@ class OfaSmartTagOptionsTabPage : public SfxTabPage
 	using TabPage::ActivatePage;
 
 private:
-    
+
 	// controls
     CheckBox				m_aMainCB;
 	SvxCheckListBox			m_aSmartTagTypesLB;
@@ -463,14 +463,14 @@ private:
 
     // construction via Create()
     OfaSmartTagOptionsTabPage( Window* pParent,	const SfxItemSet& rSet );
-    
+
     /** Inserts items into m_aSmartTagTypesLB
-    
+
         Reads out the smart tag types supported by the SmartTagMgr and
         inserts the associated strings into the list box.
     */
     void FillListBox( const SmartTagMgr& rSmartTagMgr );
-    
+
     /** Clears the m_aSmartTagTypesLB
     */
     void ClearListBox();
@@ -481,7 +481,7 @@ private:
         check box.
     */
 	DECL_LINK( CheckHdl, CheckBox* );
-    
+
     /** Handler for the push button
 
         Calls the displayPropertyPage function of the smart tag recognizer
@@ -495,7 +495,7 @@ private:
         smart tag types list box changes.
     */
     DECL_LINK( SelectHdl, SvxCheckListBox* );
-    
+
 public:
 
 	virtual ~OfaSmartTagOptionsTabPage();

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -136,7 +136,7 @@ void IceSalSession::handleOldX11SaveYourself( SalFrame* pFrame )
         if( pOneInstance )
         {
             SalSessionSaveRequestEvent aEvent( true, false );
-            pOneInstance->CallCallback( &aEvent );        
+            pOneInstance->CallCallback( &aEvent );
         }
     }
 }
@@ -288,8 +288,8 @@ IMPL_STATIC_LINK( SessionManagerClient, SaveYourselfHdl, void*, EMPTYARG )
         /*
           If we have no actual frames open, e.g. we launched a quickstarter,
           and then shutdown all our frames leaving just a quickstarter running,
-          then we don't want to launch an empty toplevel frame on the next 
-          start. (The job of scheduling the restart of the quick-starter is a 
+          then we don't want to launch an empty toplevel frame on the next
+          start. (The job of scheduling the restart of the quick-starter is a
           task of the quick-starter)
         */
         *pSmRestartHint = SmRestartNever;
@@ -308,7 +308,7 @@ IMPL_STATIC_LINK( SessionManagerClient, SaveYourselfHdl, void*, EMPTYARG )
     if( pOneInstance )
     {
         SalSessionSaveRequestEvent aEvent( pThis != 0, false );
-        pOneInstance->CallCallback( &aEvent );        
+        pOneInstance->CallCallback( &aEvent );
     }
     else
         saveDone();
@@ -324,7 +324,7 @@ IMPL_STATIC_LINK_NOINSTANCE( SessionManagerClient, InteractionHdl, void*, EMPTYA
         SalSessionInteractionEvent aEvent( true );
         pOneInstance->CallCallback( &aEvent );
     }
-    
+
     return 0;
 }
 
@@ -336,7 +336,7 @@ IMPL_STATIC_LINK_NOINSTANCE( SessionManagerClient, ShutDownCancelHdl, void*, EMP
         SalSessionShutdownCancelEvent aEvent;
         pOneInstance->CallCallback( &aEvent );
     }
-    
+
     return 0;
 }
 
@@ -560,7 +560,7 @@ String SessionManagerClient::getExecName()
 	rtl::OUString aExec, aSysExec;
 	osl_getExecutableFile( &aExec.pData );
     osl_getSystemPathFromFileURL( aExec.pData, &aSysExec.pData );
-	
+
 	int nPos = aSysExec.indexOf( rtl::OUString::createFromAscii( ".bin" ) );
 	if( nPos != -1 )
 		aSysExec = aSysExec.copy( 0, nPos );

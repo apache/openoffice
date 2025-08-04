@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -61,24 +61,24 @@ private:
 	sal_uLong				mnActDist;
 	long				mnActDeltaX;
 	long				mnActDeltaY;
-					
+
 	void				ImplCreateImageList();
 	void				ImplSetRegion( const Bitmap& rRegionBmp );
     using Window::ImplGetMousePointer;
 	PointerStyle		ImplGetMousePointer( long nDistX, long nDistY );
 	void				ImplDrawWheel();
 	void				ImplRecalcScrollValues();
-						
+
 						DECL_LINK( ImplScrollHdl, Timer* pTimer );
-						
-protected:				
-						
+
+protected:
+
 	virtual void		Paint( const Rectangle& rRect );
 	virtual void		MouseMove( const MouseEvent& rMEvt );
 	virtual void		MouseButtonUp( const MouseEvent& rMEvt );
-						
-public:					
-						
+
+public:
+
 						ImplWheelWindow( Window* pParent );
 						~ImplWheelWindow();
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -153,7 +153,7 @@ class SVT_DLLPUBLIC SvtOptionsDrawinglayer
 		sal_uInt32 GetMaximumPaperRightMargin() const;
 		sal_uInt32 GetMaximumPaperTopMargin() const;
 		sal_uInt32 GetMaximumPaperBottomMargin() const;
-		
+
 		void SetMaximumPaperWidth(sal_uInt32 nNew);
 		void SetMaximumPaperHeight(sal_uInt32 nNew);
 		void SetMaximumPaperLeftMargin(sal_uInt32 nNew);
@@ -161,8 +161,8 @@ class SVT_DLLPUBLIC SvtOptionsDrawinglayer
 		void SetMaximumPaperTopMargin(sal_uInt32 nNew);
 		void SetMaximumPaperBottomMargin(sal_uInt32 nNew);
 
-		// #i95644# helper to check if AA is allowed on this system. Currently, for WIN its disabled 
-		// and OutDevSupport_TransparentRect is checked (this  hits XRenderExtension, e.g. 
+		// #i95644# helper to check if AA is allowed on this system. Currently, for WIN its disabled
+		// and OutDevSupport_TransparentRect is checked (this  hits XRenderExtension, e.g.
 		// currently for SunRay as long as not supported there)
 		sal_Bool IsAAPossibleOnThisSystem() const;
 

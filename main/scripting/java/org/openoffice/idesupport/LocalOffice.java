@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -27,13 +27,13 @@ import java.io.File;
 import java.net.ConnectException;
 import java.util.Vector;
 
-/** 
+/**
  * LocalOffice represents a connection to the local office.
  *
- * This class allows to get access to some scripting framework 
- * releated functionality of the locally running office. The 
- * office has to be started with options appropriate for establishing 
- * local connection. 
+ * This class allows to get access to some scripting framework
+ * releated functionality of the locally running office. The
+ * office has to be started with options appropriate for establishing
+ * local connection.
  *
  * @author misha <misha@openoffice.org>
  */
@@ -42,8 +42,8 @@ public class LocalOffice
     /**
      * Creates an instance of the local office connection.
      *
-     * @param parent is an application specific class loader. 
-     * @param officePath is a platform specific path string 
+     * @param parent is an application specific class loader.
+     * @param officePath is a platform specific path string
      *   to the office distribution.
      * @param port is a communication port.
      */
@@ -55,8 +55,8 @@ public class LocalOffice
         path.addElement(officePath + "/program/classes/jurt.jar");
         path.addElement(officePath + "/program/classes/unoil.jar");
         path.addElement(officePath + "/program/classes/juh.jar");
-        path.addElement(System.getProperties().getProperty("netbeans.home") + 
-            File.separator + "modules" + 
+        path.addElement(System.getProperties().getProperty("netbeans.home") +
+            File.separator + "modules" +
             File.separator + "ext" +
             File.separator + "localoffice.jar");
         // commented out so code will compile
@@ -78,7 +78,7 @@ public class LocalOffice
     /**
      * Connects to the running office.
      *
-     * @param officePath is a platform specific path string 
+     * @param officePath is a platform specific path string
      *   to the office distribution.
      * @param port is a communication port.
      */

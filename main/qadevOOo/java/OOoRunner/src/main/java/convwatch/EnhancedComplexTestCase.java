@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 package convwatch;
 
@@ -37,7 +35,7 @@ public abstract class EnhancedComplexTestCase extends ComplexTestCase
     //     {
     //         // System.out.println("before()");
     //     }
-    // 
+    //
     // public void after()
     //     {
     //         // System.out.println("after()");
@@ -86,7 +84,7 @@ public abstract class EnhancedComplexTestCase extends ComplexTestCase
                 }
             }
         }
-    
+
     // -----------------------------------------------------------------------------
 
     protected abstract Object[] mustInstalledSoftware();
@@ -95,7 +93,7 @@ public abstract class EnhancedComplexTestCase extends ComplexTestCase
             String sNEEDCHECK = (String)param.get( PropertyName.CHECK_NEED_TOOLS );
 // TODO: I need to get the boolean value with get("name") because, if it is not given getBool() returns
 //       with a default of 'false' which is not very helpful if the default should be 'true'
-//       maybe a getBoolean("name", true) could be a better choise.
+//       maybe a getBoolean("name", true) could be a better choice.
             if (sNEEDCHECK == null)
             {
                 sNEEDCHECK = "false";
@@ -107,7 +105,7 @@ public abstract class EnhancedComplexTestCase extends ComplexTestCase
             }
             return false;
         }
-    
+
     // -----------------------------------------------------------------------------
 
     public GraphicalTestArguments getGraphicalTestArguments()
@@ -120,7 +118,7 @@ public abstract class EnhancedComplexTestCase extends ComplexTestCase
             if (aGTA.getExportFilterName() != null && aGTA.getExportFilterName().toLowerCase().equals("help"))
             {
                 aGTA = null;
-            }   
+            }
             return aGTA;
         }
 }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -825,7 +825,7 @@ double SAL_CALL AnalysisAddIn::getRandbetween( double fMin, double fMax ) THROWD
 	rtl_random_getBytes(aPool, &nScRandomSeed, SCRANDOMQ_SIZE * sizeof(nScRandomSeed[0]));
 	SqSeeded = sal_True;
     }
-    
+
     // Use George Marsaglia's 1998 KISS PRNG algorithm.
     nScRandomSeed[0] = 69069 * nScRandomSeed[0] + 12345;
     nScRandomSeed[1] ^= (nScRandomSeed[1] << 13);
@@ -835,7 +835,7 @@ double SAL_CALL AnalysisAddIn::getRandbetween( double fMin, double fMax ) THROWD
     nScRandomSeed[1] = (nScRandomt >> 32);
 
     fScRandomW = (nScRandomSeed[0] + nScRandomSeed[1] + (nScRandomSeed[3] = nScRandomt));
- 
+
 	// fMax -> range
     double fRet = fMax - fMin + 1.0;
     fRet *= fScRandomW / SAL_MAX_UINT32 ;

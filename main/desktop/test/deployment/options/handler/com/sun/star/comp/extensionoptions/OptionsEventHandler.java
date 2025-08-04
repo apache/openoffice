@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package com.sun.star.comp.extensionoptions;
@@ -61,14 +61,14 @@ public class OptionsEventHandler {
 
         static private final String __serviceName =
         "com.sun.star.comp.extensionoptions.OptionsEventHandler";
-    
+
         private XComponentContext m_cmpCtx;
 
         private XMultiComponentFactory m_xMCF;
 
         private XNameAccess m_xAccessLeaves;
 
-        /**Names of supported options pages. 
+        /**Names of supported options pages.
          */
         private String[] m_arWindowNames = {
             "Writer1", "Writer2", "Writer3", "Calc1", "Calc2", "Calc3",
@@ -80,10 +80,10 @@ public class OptionsEventHandler {
          */
         private String[] m_arStringControls = {
             "String0", "String1", "String2", "String3", "String4"};
-        
+
         public _OptionsEventHandler(XComponentContext xCompContext) {
                 m_cmpCtx = xCompContext;
-                m_xMCF = m_cmpCtx.getServiceManager();                
+                m_xMCF = m_cmpCtx.getServiceManager();
 
             //Create the com.sun.star.configuration.ConfigurationUpdateAccess
             //for the registry node which contains the data for our option
@@ -119,7 +119,7 @@ public class OptionsEventHandler {
                 return;
             }
         }
-        
+
         /** This method returns an array of all supported service names.
          * @return Array of supported service names.
          */
@@ -135,7 +135,7 @@ public class OptionsEventHandler {
             String[] sSupportedServiceNames = { __serviceName };
             return sSupportedServiceNames;
         }
-      
+
         /** This method returns true, if the given service will be
          * supported by the component.
          * @param sServiceName Service name.
@@ -144,7 +144,7 @@ public class OptionsEventHandler {
         public boolean supportsService( String sServiceName ) {
             return sServiceName.equals( __serviceName );
         }
-    
+
         /** Return the class name of the component.
          * @return Class name of the component.
          */
@@ -165,10 +165,10 @@ public class OptionsEventHandler {
                     throw new WrappedTargetException(sMethod, this, e);
                 }
             }
-                
+
             return true;
         }
-        
+
         //XContainerWindowEventHandler
         public String[] getSupportedMethodNames() {
             return new String[] {"external_event"};
@@ -188,13 +188,13 @@ public class OptionsEventHandler {
                     "Method external_event requires a string in the event object argument.",
                     this, (short) -1);
             }
-            
+
             return true;
         }
 
         private void saveData(com.sun.star.awt.XWindow aWindow)
             throws com.sun.star.lang.IllegalArgumentException,
-            com.sun.star.uno.Exception { 
+            com.sun.star.uno.Exception {
 
             //Determine the name of the options page. This serves two purposes. First, if this
             //options page is supported by this handler and second we use the name two locate
@@ -214,7 +214,7 @@ public class OptionsEventHandler {
 
             //This is an implementation which will be used for several options pages
             //which all have the same controls. m_arStringControls is an array which
-            //contains the names. 
+            //contains the names.
             for (int i = 0; i < m_arStringControls.length; i++) {
 
                 //To obtain the data from the controls we need to get their model.
@@ -229,7 +229,7 @@ public class OptionsEventHandler {
 
                 //From the control we get the model, which in turn supports the
                 //XPropertySet interface, which we finally use to get the data from
-                //the control.                
+                //the control.
                 XPropertySet xProp = (XPropertySet) UnoRuntime.queryInterface(
                     XPropertySet.class, xControl.getModel());
 
@@ -267,7 +267,7 @@ public class OptionsEventHandler {
             }
 
             //Committing the changes will cause or changes to be written to the registry.
-            XChangesBatch xUpdateCommit = 
+            XChangesBatch xUpdateCommit =
                 (XChangesBatch) UnoRuntime.queryInterface(XChangesBatch.class, m_xAccessLeaves);
             xUpdateCommit.commitChanges();
         }
@@ -327,7 +327,7 @@ public class OptionsEventHandler {
                 //control
                 XPropertySet xProp = (XPropertySet) UnoRuntime.queryInterface(
                     XPropertySet.class, xControl.getModel());
-                
+
                 if (xProp == null)
                     throw new com.sun.star.uno.Exception(
                         "Could not get XPropertySet from control.", this);
@@ -381,7 +381,7 @@ public class OptionsEventHandler {
                 throw new com.sun.star.uno.Exception(
                     "Name - property of window is not a string.", this);
             }
-            
+
             //Eventually we can check if we this handler can "handle" this options page.
             //The class has a member m_arWindowNames which contains all names of windows
             //for which it is intended
@@ -393,8 +393,8 @@ public class OptionsEventHandler {
             return null;
         }
     }
-  
-    
+
+
     /**
      * Gives a factory for creating the service.
      * This method is called by the <code>JavaLoader</code>
@@ -408,11 +408,11 @@ public class OptionsEventHandler {
     public static XSingleComponentFactory __getComponentFactory(String sImplName)
     {
         XSingleComponentFactory xFactory = null;
-    
+
         if ( sImplName.equals( _OptionsEventHandler.class.getName() ) )
             xFactory = Factory.createComponentFactory(_OptionsEventHandler.class,
                                              _OptionsEventHandler.getServiceNames());
-        
+
         return xFactory;
     }
 
@@ -440,5 +440,5 @@ public class OptionsEventHandler {
     public void initialize( Object[] object )
         throws com.sun.star.uno.Exception {
     }
-    
+
 }

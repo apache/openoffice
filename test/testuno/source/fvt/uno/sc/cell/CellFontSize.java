@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,7 +49,7 @@ import com.sun.star.table.XCell;
 
 /**
  *  Check the cell background color and font color setting can be applied and saved
- * 
+ *
  */
 @RunWith(value = Parameterized.class)
 public class CellFontSize {
@@ -58,12 +58,12 @@ public class CellFontSize {
 	private String inputType;
 	private double[] inputData;
 	private String fileType;
-	
+
 	private static final UnoApp unoApp = new UnoApp();
-	
+
 	XComponent scComponent = null;
 	XSpreadsheetDocument scDocument = null;
-	
+
 	@Parameters
 	public static Collection<Object[]> data() throws Exception {
 		double[] list1 = TestUtil.randFontSizeList(30, 409); // Excel2003's value range [is 1,409]
@@ -76,19 +76,19 @@ public class CellFontSize {
 			{list3, "CharHeight", list3, "ods"},
 			{list4, "CharHeight", list4, "ods"},
 			{list1, "CharHeight", list1, "xls"},
-			{list2, "CharHeight", list2, "xls"}, 
+			{list2, "CharHeight", list2, "xls"},
 			{list3, "CharHeight", list3, "xls"}
 		});
 	}
-	
+
 	public CellFontSize(double[] expected, String inputType, double[] inputData, String fileType) {
 		this.expected = expected;
 		this.inputType = inputType;
 		this.inputData = inputData;
 		this.fileType = fileType;
 	}
-	
-	
+
+
 	@Before
 	public void setUp() throws Exception {
 		scComponent = unoApp.newDocument("scalc");
@@ -98,9 +98,9 @@ public class CellFontSize {
 	@After
 	public void tearDown() throws Exception {
 		unoApp.closeDocument(scComponent);
-		
+
 	}
-	
+
 	@BeforeClass
 	public static void setUpConnection() throws Exception {
 		unoApp.start();
@@ -109,9 +109,9 @@ public class CellFontSize {
 	@AfterClass
 	public static void tearDownConnection() throws InterruptedException, Exception {
 		unoApp.close();
-		SCUtil.clearTempDir();	
+		SCUtil.clearTempDir();
 	}
-	
+
 	/**
 	 * Check the cell background color and font color
 	 * 1. Create a spreadsheet file.
@@ -124,18 +124,18 @@ public class CellFontSize {
 	@Test
 	public void testCellFontSize() throws Exception {
 		String fileName = "testCellFontSize";
-		
+
 		int cellNum = inputData.length;
 		XCell[] cells = new XCell[cellNum];
 		double[] results = new double[cellNum];
 		CellInfo cInfo = TestUtil.randCell(256, 100);
-		
+
 		XSpreadsheet sheet = SCUtil.getCurrentSheet(scDocument);
-		
+
 		for (int i = 0; i < cellNum; i++) {
 			cells[i] = sheet.getCellByPosition(cInfo.getCol(), cInfo.getRow() + i);
 		}
-		
+
 		cells[0].setValue(inputData[0]);
 		SCUtil. setTextToCell(cells[1], inputType);
 		cells[2].setFormula("=TRUE()");
@@ -144,11 +144,11 @@ public class CellFontSize {
 		for (int i = 0; i < cellNum; i++) {
 			SCUtil.setCellProperties(cells[i], inputType, inputData[i]);
 		}
-		
+
 		SCUtil.saveFileAs(scComponent, fileName, fileType);
 		scDocument = SCUtil.reloadFile(unoApp, scDocument, fileName + "." + fileType);
 		sheet = SCUtil.getCurrentSheet(scDocument);
-		
+
 		for (int i = 0; i < cellNum; i++) {
 			cells[i] = sheet.getCellByPosition(cInfo.getCol(), cInfo.getRow() + i);
 			results[i] = ((Float) SCUtil.getCellProperties(cells[i], inputType)).floatValue();
@@ -156,7 +156,7 @@ public class CellFontSize {
 		SCUtil.closeFile(scDocument);
 
 		assertArrayEquals("Incorrect cell font size(" + inputType + ") value got in ." + fileType + " file.", expected, results, 0);
-			
-	}	
+
+	}
 
 }

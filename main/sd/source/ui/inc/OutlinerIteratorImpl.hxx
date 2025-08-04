@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -32,7 +32,7 @@ class SdDrawDocument;
 class SdPage;
 class SdrObjListIter;
 
-namespace sd { 
+namespace sd {
 
 class ViewShell;
 
@@ -47,7 +47,7 @@ class IteratorImplBase;
 */
 class IteratorImplBase
 {
-public: 
+public:
     /** The constructor stores the given arguments to be used by the derived
         classes.
         @param pDocument
@@ -136,14 +136,14 @@ protected:
     <p>For documentation of the methods please refere to the base class
     <type>IteratorImplBase</type>.</p>
 */
-class SelectionIteratorImpl 
+class SelectionIteratorImpl
     : public IteratorImplBase
 {
 public:
     SelectionIteratorImpl (
         const ::std::vector< SdrObjectWeakRef >& rObjectList,
         sal_Int32 nObjectIndex,
-        SdDrawDocument* pDocument, 
+        SdDrawDocument* pDocument,
         const ::boost::weak_ptr<ViewShell>& rpViewShellWeak,
         bool bDirectionIsForward);
     SelectionIteratorImpl (const SelectionIteratorImpl& rObject);
@@ -167,7 +167,7 @@ private:
         @return
             Returns <TRUE/> when both iterators point to the same object.
     */
-    virtual bool IsEqual (const IteratorImplBase& rIterator, IteratorType aType) const; 
+    virtual bool IsEqual (const IteratorImplBase& rIterator, IteratorType aType) const;
 
     IteratorImplBase& operator= (const IteratorImplBase& rIterator);
 };
@@ -185,16 +185,16 @@ class ViewIteratorImpl : public IteratorImplBase
 {
 public:
     ViewIteratorImpl (
-        sal_Int32 nPageIndex, 
-        SdDrawDocument* pDocument, 
+        sal_Int32 nPageIndex,
+        SdDrawDocument* pDocument,
         const ::boost::weak_ptr<ViewShell>& rpViewShellWeak,
         bool bDirectionIsForward);
     ViewIteratorImpl (
-        sal_Int32 nPageIndex, 
-        SdDrawDocument* pDocument, 
+        sal_Int32 nPageIndex,
+        SdDrawDocument* pDocument,
         const ::boost::weak_ptr<ViewShell>& rpViewShellWeak,
-        bool bDirectionIsForward, 
-        PageKind ePageKind, 
+        bool bDirectionIsForward,
+        PageKind ePageKind,
         EditMode eEditMode);
     virtual ~ViewIteratorImpl (void);
 
@@ -245,9 +245,9 @@ class DocumentIteratorImpl : public ViewIteratorImpl
 public:
     DocumentIteratorImpl (
         sal_Int32 nPageIndex,
-        PageKind ePageKind, 
+        PageKind ePageKind,
         EditMode eEditMode,
-        SdDrawDocument* pDocument, 
+        SdDrawDocument* pDocument,
         const ::boost::weak_ptr<ViewShell>& rpViewShellWeak,
         bool bDirectionIsForward);
     virtual ~DocumentIteratorImpl (void);

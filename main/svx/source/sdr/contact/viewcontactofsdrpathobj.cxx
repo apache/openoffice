@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,7 +51,7 @@ namespace sdr
 			const SfxItemSet& rItemSet = GetPathObj().GetMergedItemSet();
 			const drawinglayer::attribute::SdrLineFillShadowTextAttribute aAttribute(
 				drawinglayer::primitive2d::createNewSdrLineFillShadowTextAttribute(
-					rItemSet, 
+					rItemSet,
 					GetPathObj().getText(0),
                     false));
             basegfx::B2DPolyPolygon aUnitPolyPolygon(GetPathObj().GetPathPoly());
@@ -70,7 +70,7 @@ namespace sdr
 				aFallbackLine.append(basegfx::B2DPoint(0.0, 0.0));
 				aFallbackLine.append(basegfx::B2DPoint(1000.0, 1000.0));
 				aUnitPolyPolygon = basegfx::B2DPolyPolygon(aFallbackLine);
-				
+
 				nPolyCount = 1;
 			}
 
@@ -78,7 +78,7 @@ namespace sdr
 			basegfx::B2DHomMatrix aObjectMatrix;
 			const bool bIsLine(
 				!aUnitPolyPolygon.areControlPointsUsed()
-				&& 1 == nPolyCount 
+				&& 1 == nPolyCount
 				&& 2 == aUnitPolyPolygon.getB2DPolygon(0).count());
 
 			if(bIsLine)
@@ -119,18 +119,18 @@ namespace sdr
 					rGeoStat.nDrehWink ? (36000 - rGeoStat.nDrehWink) * F_PI18000 : 0.0,
 					aObjectRange.getMinX(), aObjectRange.getMinY());
 
-				// ceate unit polygon from object's absolute path
+				// create unit polygon from object's absolute path
 				basegfx::B2DHomMatrix aInverse(aObjectMatrix);
 				aInverse.invert();
 				aUnitPolyPolygon.transform(aInverse);
 			}
 
-			// create primitive. Always create primitives to allow the decomposition of 
+			// create primitive. Always create primitives to allow the decomposition of
 			// SdrPathPrimitive2D to create needed invisible elements for HitTest and/or BoundRect
 			const drawinglayer::primitive2d::Primitive2DReference xReference(
 				new drawinglayer::primitive2d::SdrPathPrimitive2D(
-					aObjectMatrix, 
-					aAttribute, 
+					aObjectMatrix,
+					aAttribute,
 					aUnitPolyPolygon));
 
 			return drawinglayer::primitive2d::Primitive2DSequence(&xReference, 1);

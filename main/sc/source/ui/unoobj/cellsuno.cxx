@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1098,7 +1098,7 @@ sal_Bool lcl_PutDataArray( ScDocShell& rDocShell, const ScRange& rRange,
         using XCellRangeData::setDataArray() significantly. */
     bool bDoubleAlloc = ScColumn::bDoubleAlloc;
     ScColumn::bDoubleAlloc = true;
-    
+
 	sal_Bool bError = sal_False;
 	SCROW nDocRow = nStartRow;
 	for (long nRow=0; nRow<nRows; nRow++)
@@ -1119,7 +1119,7 @@ sal_Bool lcl_PutDataArray( ScDocShell& rDocShell, const ScRange& rRange,
                         pDoc->SetError( nDocCol, nDocRow, nTab, NOTAVAILABLE );
                     }
                     break;
-                    
+
                     //	#87871# accept integer types because Basic passes a floating point
                     //	variable as byte, short or long if it's an integer number.
                     case uno::TypeClass_BYTE:
@@ -1161,7 +1161,7 @@ sal_Bool lcl_PutDataArray( ScDocShell& rDocShell, const ScRange& rRange,
                             bError = true;
                     }
                     break;
-                    
+
                     default:
                         bError = true;		// invalid type
                 }
@@ -1824,7 +1824,7 @@ const SfxItemPropertyMap* ScCellRangesBase::GetItemPropertyMap()
     return pPropSet->getPropertyMap();
 }
 
-void lcl_GetPropertyWhich( const SfxItemPropertySimpleEntry* pEntry, 
+void lcl_GetPropertyWhich( const SfxItemPropertySimpleEntry* pEntry,
                                                 sal_uInt16& rItemWhich )
 {
 	//	Which-ID des betroffenen Items, auch wenn das Item die Property
@@ -5530,7 +5530,7 @@ void SAL_CALL ScCellRangeObj::autoFormat( const rtl::OUString& aName )
 		for (nIndex=0; nIndex<nCount; nIndex++)
 		{
 			(*pAutoFormat)[nIndex]->GetName(aCompare);
-			if ( aCompare == aNameString )						//!	Case-insensitiv ???
+			if ( aCompare == aNameString )						//!	Case-insensitive ???
 				break;
 		}
 		if (nIndex<nCount)
@@ -7376,9 +7376,9 @@ void ScTableSheetObj::PrintAreaUndo_Impl( ScPrintRangeSaver* pOldRanges )
 		if(bUndo)
 		{
             pDocSh->GetUndoManager()->AddUndoAction(
-			    new ScUndoPrintRange( 
-                    pDocSh, 
-                    nTab, 
+			    new ScUndoPrintRange(
+                    pDocSh,
+                    nTab,
                     pOldRanges,
                     pDoc->CreatePrintRangeSaver())); // create new ranges
 

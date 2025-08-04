@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -73,7 +73,7 @@ public class UnoControlGroupBox extends TestCase {
         util.DesktopTools.closeDoc(xTextDoc);
     }
 
-    protected TestEnvironment createTestEnvironment(TestParameters Param, 
+    protected TestEnvironment createTestEnvironment(TestParameters Param,
                                                     PrintWriter log) {
         XInterface oObj = null;
         XWindowPeer the_win = null;
@@ -83,18 +83,18 @@ public class UnoControlGroupBox extends TestCase {
         XControl aControl = null;
 
         //Insert a ControlShape and get the ControlModel
-        XControlShape aShape = FormTools.createUnoControlShape(xTextDoc, 3000, 
-                                                               4500, 15000, 
-                                                               10000, 
-                                                               "GroupBox", 
+        XControlShape aShape = FormTools.createUnoControlShape(xTextDoc, 3000,
+                                                               4500, 15000,
+                                                               10000,
+                                                               "GroupBox",
                                                                "UnoControlGroupBox");
 
         WriterTools.getDrawPage(xTextDoc).add((XShape) aShape);
 
         XControlModel the_Model = aShape.getControl();
 
-        XControlShape aShape2 = FormTools.createControlShape(xTextDoc, 3000, 
-                                                             4500, 5000, 10000, 
+        XControlShape aShape2 = FormTools.createControlShape(xTextDoc, 3000,
+                                                             4500, 5000, 10000,
                                                              "TextField");
 
         WriterTools.getDrawPage(xTextDoc).add((XShape) aShape2);
@@ -103,7 +103,7 @@ public class UnoControlGroupBox extends TestCase {
 
         //Try to query XControlAccess
         XControlAccess the_access = (XControlAccess) UnoRuntime.queryInterface(
-                                            XControlAccess.class, 
+                                            XControlAccess.class,
                                             xTextDoc.getCurrentController());
 
         //get the GroupBoxControl for the needed Object relations
@@ -135,7 +135,7 @@ public class UnoControlGroupBox extends TestCase {
         tEnv.addObjRelation("TOOLKIT", the_kit);
         tEnv.addObjRelation("MODEL", the_Model);
 
-        XWindow forObjRel = (XWindow) UnoRuntime.queryInterface(XWindow.class, 
+        XWindow forObjRel = (XWindow) UnoRuntime.queryInterface(XWindow.class,
                                                                 aControl);
 
         tEnv.addObjRelation("XWindow.AnotherWindow", forObjRel);

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -466,7 +466,7 @@ SfxItemState SwFmt::GetItemState( sal_uInt16 nWhich, sal_Bool bSrchInParent, con
         if(aFill.get() && aFill->isUsed())
         {
             // if yes, fill the local SvxBrushItem using the new fill attributes
-            // as good as possible to have an instance for the pointer to point 
+            // as good as possible to have an instance for the pointer to point
             // to and return as state that it is set
             static SvxBrushItem aSvxBrushItem(RES_BACKGROUND);
 
@@ -611,7 +611,7 @@ sal_Bool SwFmt::SetFmtAttr( const SfxItemSet& rSet )
             OSL_ENSURE(false, "Do no longer use SvxBrushItem, instead use [XATTR_FILL_FIRST .. XATTR_FILL_LAST] FillAttributes (simple fallback is in place and used)");
 
             // copy all items to be set anyways to a local ItemSet with is also prepared for the new
-            // fill attribute ranges [XATTR_FILL_FIRST .. XATTR_FILL_LAST]. Add the attributes 
+            // fill attribute ranges [XATTR_FILL_FIRST .. XATTR_FILL_LAST]. Add the attributes
             // corresponding as good as possible to the new fill properties and set the whole ItemSet
             const SvxBrushItem& rSource(static_cast< const SvxBrushItem& >(*pSource));
             setSvxBrushItemAsFillAttributesToTargetSet(rSource, aTempSet);
@@ -840,7 +840,7 @@ IDocumentChartDataProviderAccess* SwFmt::getIDocumentChartDataProviderAccess() {
 
 //UUUU
 const SvxBrushItem& SwFmt::GetBackground(sal_Bool bInP) const
-{ 
+{
     //UUUU   FlyFrame              PageStyle
     if(supportsFullDrawingLayerFillAttributeSet())
     {
@@ -856,7 +856,7 @@ const SvxBrushItem& SwFmt::GetBackground(sal_Bool bInP) const
         return aSvxBrushItem;
     }
 
-    return aSet.GetBackground(bInP); 
+    return aSet.GetBackground(bInP);
 }
 
 //UUUU
@@ -867,7 +867,7 @@ bool SwFmt::supportsFullDrawingLayerFillAttributeSet() const
     return (RES_FLYFRMFMT == Which() || RES_FRMFMT == Which());
 }
 
-//UUUU 
+//UUUU
 drawinglayer::attribute::SdrAllFillAttributesHelperPtr SwFmt::getSdrAllFillAttributesHelper() const
 {
     return drawinglayer::attribute::SdrAllFillAttributesHelperPtr();

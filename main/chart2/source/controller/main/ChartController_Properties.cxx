@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -239,7 +239,7 @@ namespace
                 sal_Int32 nNumberFormat=ExplicitValueProvider::getExplicitNumberFormatKeyForDataLabel( xObjectProperties, xSeries, nPointIndex, xDiagram );
                 sal_Int32 nPercentNumberFormat=ExplicitValueProvider::getExplicitPercentageNumberFormatKeyForDataLabel(
                         xObjectProperties,uno::Reference< util::XNumberFormatsSupplier >(xChartModel, uno::UNO_QUERY));
-                
+
                 pItemConverter =  new wrapper::DataPointItemConverter( xChartModel, xContext,
                                         xObjectProperties, xSeries, rDrawModel.GetItemPool(), rDrawModel,
                                         pNumberFormatterWrapper,
@@ -351,7 +351,7 @@ rtl::OUString lcl_getTitleCIDForCommand( const ::rtl::OString& rDispatchCommand,
         nTitleType = TitleHelper::SECONDARY_X_AXIS_TITLE;
     else if( rDispatchCommand.equals("SecondaryYTitle") )
         nTitleType = TitleHelper::SECONDARY_Y_AXIS_TITLE;
-  
+
     uno::Reference< XTitle > xTitle( TitleHelper::getTitle( nTitleType, xChartModel ) );
     return ObjectIdentifier::createClassifiedIdentifierForObject( xTitle, xChartModel );
 }
@@ -369,7 +369,7 @@ rtl::OUString lcl_getAxisCIDForCommand( const ::rtl::OString& rDispatchCommand, 
     }
     else if( rDispatchCommand.equals("DiagramAxisY"))
     {
-        nDimensionIndex=1; bMainAxis=true; 
+        nDimensionIndex=1; bMainAxis=true;
     }
     else if( rDispatchCommand.equals("DiagramAxisZ"))
     {
@@ -381,7 +381,7 @@ rtl::OUString lcl_getAxisCIDForCommand( const ::rtl::OString& rDispatchCommand, 
     }
     else if( rDispatchCommand.equals("DiagramAxisB"))
     {
-        nDimensionIndex=1; bMainAxis=false;     
+        nDimensionIndex=1; bMainAxis=false;
     }
 
     uno::Reference< XDiagram > xDiagram( ChartModelHelper::findDiagram( xChartModel ) );
@@ -574,7 +574,7 @@ rtl::OUString lcl_getObjectCIDForCommand( const ::rtl::OString& rDispatchCommand
             return rSelectedCID;
         else
             return ObjectIdentifier::createDataCurveCID(
-                ObjectIdentifier::getSeriesParticleFromCID( rSelectedCID ), 
+                ObjectIdentifier::getSeriesParticleFromCID( rSelectedCID ),
                     RegressionCurveHelper::getRegressionCurveIndex( xRegCurveCnt,
                         RegressionCurveHelper::getFirstCurveNotMeanValueLine( xRegCurveCnt ) ), false );
     }
@@ -623,7 +623,7 @@ rtl::OUString lcl_getObjectCIDForCommand( const ::rtl::OString& rDispatchCommand
             Reference< XAxis > xAxis = ObjectIdentifier::getAxisForCID( rSelectedCID, xChartModel );
             return ObjectIdentifier::createClassifiedIdentifierForGrid( xAxis, xChartModel );
         }
-        
+
     }
     //-------------------------------------------------------------------------
     // minor grid
@@ -719,7 +719,7 @@ void SAL_CALL ChartController::executeDlg_ObjectProperties( const ::rtl::OUStrin
             m_xUndoManager );
 
     bool bSuccess = ChartController::executeDlg_ObjectProperties_withoutUndoGuard( aObjectCID, false );
-    if( bSuccess ) 
+    if( bSuccess )
         aUndoGuard.commit();
 }
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -46,7 +46,7 @@ using namespace ::com::sun::star::task		;	// XStatusIndicator
 
 static sal_Bool ImpIsTreeAvailable( Reference< XMultiServiceFactory >& rXCfgProv, const String& rTree )
 {
-	sal_Bool	bAvailable = rTree.Len() != 0;	
+	sal_Bool	bAvailable = rTree.Len() != 0;
 	if ( bAvailable )
 	{
 		xub_StrLen	nTokenCount = rTree.GetTokenCount( (sal_Unicode)'/' );
@@ -60,7 +60,7 @@ static sal_Bool ImpIsTreeAvailable( Reference< XMultiServiceFactory >& rXCfgProv
 		Any aAny;
 		aAny <<= (OUString)rTree.GetToken( i++, (sal_Unicode)'/' );
 
-		// creation arguments: nodepath   
+		// creation arguments: nodepath
 		PropertyValue aPathArgument;
 		aPathArgument.Name = OUString( RTL_CONSTASCII_USTRINGPARAM( "nodepath" ) );
 		aPathArgument.Value = aAny;
@@ -78,7 +78,7 @@ static sal_Bool ImpIsTreeAvailable( Reference< XMultiServiceFactory >& rXCfgProv
 		catch ( ::com::sun::star::uno::Exception& )
 		{
 			bAvailable = sal_False;
-		}	
+		}
 		if ( xReadAccess.is() )
 		{
 			for ( ; bAvailable && ( i < nTokenCount ); i++ )
@@ -104,7 +104,7 @@ static sal_Bool ImpIsTreeAvailable( Reference< XMultiServiceFactory >& rXCfgProv
 						{
 							bAvailable = sal_False;
 						}
-					}				
+					}
 				}
 			}
 		}
@@ -120,7 +120,7 @@ void FilterConfigItem::ImpInitTree( const String& rSubTree )
 	sTree += rSubTree;
 	Reference< XMultiServiceFactory > xSMGR = getProcessServiceFactory();	// get global uno service manager
 
-	Reference< XMultiServiceFactory > xCfgProv(		
+	Reference< XMultiServiceFactory > xCfgProv(
 		xSMGR->createInstance( OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.configuration.ConfigurationProvider" ) ) ),
 			UNO_QUERY );
 
@@ -129,19 +129,19 @@ void FilterConfigItem::ImpInitTree( const String& rSubTree )
 		if ( ImpIsTreeAvailable( xCfgProv, String( sTree ) ) )
 		{
 			Any aAny;
-			// creation arguments: nodepath   
+			// creation arguments: nodepath
 			PropertyValue aPathArgument;
 			aAny <<= sTree;
 			aPathArgument.Name = OUString( RTL_CONSTASCII_USTRINGPARAM( "nodepath" ) );
 			aPathArgument.Value = aAny;
 
-			// creation arguments: commit mode   
+			// creation arguments: commit mode
 			PropertyValue aModeArgument;
 			sal_Bool bAsyncron = sal_True;
 			aAny <<= bAsyncron;
 			aModeArgument.Name = OUString( RTL_CONSTASCII_USTRINGPARAM( "lazywrite" ) );
 			aModeArgument.Value = aAny;
-		
+
 			Sequence< Any > aArguments( 2 );
 			aArguments[ 0 ] <<= aPathArgument;
 			aArguments[ 1 ] <<= aModeArgument;
@@ -173,7 +173,7 @@ FilterConfigItem::FilterConfigItem( ::com::sun::star::uno::Sequence< ::com::sun:
 		aFilterData = *pFilterData;
 }
 
-FilterConfigItem::FilterConfigItem( const OUString& rSubTree, 
+FilterConfigItem::FilterConfigItem( const OUString& rSubTree,
 	::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >* pFilterData )
 {
 	ImpInitTree( rSubTree );

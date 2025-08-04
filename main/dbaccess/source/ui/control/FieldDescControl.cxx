@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -725,7 +725,7 @@ IMPL_LINK( OFieldDescControl, FormatClickHdl, Button *, /*pButton*/ )
 }
 
 // -----------------------------------------------------------------------
-void OFieldDescControl::SetModified(sal_Bool /*bModified*/) 
+void OFieldDescControl::SetModified(sal_Bool /*bModified*/)
 {
 }
 //------------------------------------------------------------------------
@@ -920,7 +920,7 @@ void OFieldDescControl::ActivateAggregate( EControlType eType )
 			pRequired->InsertEntry( aYes );
 			pRequired->InsertEntry( aNo );
 			pRequired->SelectEntryPos(1);
-			
+
             InitializeControl(pRequired,HID_TAB_ENT_REQUIRED,true);
 		}
 	}
@@ -1166,7 +1166,7 @@ void OFieldDescControl::DeactivateAggregate( EControlType eType )
 void OFieldDescControl::SetPosSize( Control** ppControl, long nRow, sal_uInt16 nCol )
 {
 	DBG_CHKTHIS(OFieldDescControl,NULL);
-	
+
 	//////////////////////////////////////////////////////////////////////
 	// Groesse ermitteln
     const sal_Int32 nControlHeight = GetMaxControlHeight();
@@ -1224,12 +1224,12 @@ void OFieldDescControl::SetPosSize( Control** ppControl, long nRow, sal_uInt16 n
     const sal_Int32 nControl_Spacing_y = LogicToPixel(Size(0, CONTROL_SPACING_Y),MAP_APPFONT).Height();
 	aPosition.Y() += ((nRow+1)*nControl_Spacing_y) +
 					(nRow*nControlHeight);
-	
+
 	//////////////////////////////////////////////////////////////////////
 	// Control anzeigen
 	(*ppControl)->SetPosSizePixel( aPosition, aSize );
     aSize = (*ppControl)->GetSizePixel();
-    
+
 	(*ppControl)->Show();
 }
 //------------------------------------------------------------------------------
@@ -1474,7 +1474,7 @@ void OFieldDescControl::DisplayData(OFieldDescription* pFieldDescr )
 	if( pBoolDefault )
 	{
 		// wenn pRequired auf sal_True gesetzt ist, dann darf das sal_Bool Feld nicht den Eintrag <<keiner>> besitzen
-		::rtl::OUString sValue; 
+		::rtl::OUString sValue;
 		pFieldDescr->GetControlDefault() >>= sValue;
 		String sDef = BoolStringUI(sValue);
 

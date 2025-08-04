@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package installer;
@@ -31,23 +31,23 @@ import javax.swing.*;
 import java.net.*;
 
 public class InstUtil {
-    
+
     public static File buildSversionLocation() throws IOException {
 		File theFile = null;
         StringBuffer str = new StringBuffer();
         str.append(System.getProperty("user.home"));
         str.append(File.separator);
 		StringBuffer thePath = new StringBuffer(str.toString());
-        
+
         String os = System.getProperty("os.name");
-	
+
 		if (os.indexOf("Windows") != -1) {
-			boolean bSVersionInHomeDir = new File(thePath.toString() + "sversion.ini").exists(); 
+			boolean bSVersionInHomeDir = new File(thePath.toString() + "sversion.ini").exists();
 
 			if (!bSVersionInHomeDir) {
 				thePath.append("Application Data");
 				thePath.append(File.separator);
-			} 
+			}
 			theFile = findVersionFile(new File(thePath.toString()));
         } else if (os.indexOf("SunOS") != -1) {
             thePath.append(".sversionrc");
@@ -56,20 +56,20 @@ public class InstUtil {
             thePath.append(".sversionrc");
 			theFile = new File(thePath.toString());
 		}
-        
-		if (theFile == null) 
+
+		if (theFile == null)
 		{
 			throw new IOException("Could not locate the OpenOffice settings file.\nAre you sure StarOffice is installed on your system?");
 		}
-		if  (!theFile.exists()) 
+		if  (!theFile.exists())
 		{
 			throw new IOException("Could not locate the OpenOffice settings file.\nAre you sure StarOffice is installed on your system?");
 		}
         return theFile;
     }
 
-    
-    
+
+
     public static boolean hasNetbeansInstallation() {
         boolean result = false;
         try
@@ -100,13 +100,13 @@ public class InstUtil {
                 {
                     // at least one supported version for netbeans present, so return;
                     return true;
-                } 
+                }
 
             }
         }
         return false;
-    }	    
- 
+    }
+
 
     public static boolean hasJeditInstallation() {
         boolean result = false;
@@ -116,7 +116,7 @@ public class InstUtil {
             if ( !result )
             {
                 System.out.println("No supported version for JEdit found.");
-            } 
+            }
         }
         catch ( IOException ioe )
         {
@@ -125,21 +125,21 @@ public class InstUtil {
             result = false;
         }
         return result;
-    }	
-       
-    
-    
+    }
+
+
+
     public static Properties getNetbeansLocation() throws IOException {
 	File theFile = null;
 	Properties results = new Properties();
-        
+
 	StringBuffer str = new StringBuffer();
         str.append(System.getProperty("user.home"));
         str.append(File.separator);
 	StringBuffer thePath = new StringBuffer(str.toString());
-        
+
         String os = System.getProperty("os.name");
-        
+
 	if (os.indexOf("Windows") != -1) {
 		//theFile = findVersionFile(new File(str.toString()));
 		thePath.append(".netbeans");
@@ -172,34 +172,34 @@ public class InstUtil {
         else
         {
 	    System.out.println( "No NetBeans user directory found" );
-	    return null;	
+	    return null;
         }
-	
-	
-	return results;	
-    }    
-    
+
+
+	return results;
+    }
+
 
 
     public static Properties getJeditLocation() throws IOException {
-	
+
 	/*if( !hasJeditInstallation() ) {
 		System.out.println( "No Jedit found (line195 InstUtil");
-		return null;	
+		return null;
 	}*/
-	
+
 	File theFile = null;
 	Properties results = new Properties();
-        
+
 	StringBuffer str = new StringBuffer();
         str.append(System.getProperty("user.home"));
         str.append(File.separator);
 	StringBuffer thePath = new StringBuffer(str.toString());
-        
+
         String os = System.getProperty("os.name");
         thePath.append(".jedit");
 	//System.out.println( ".jedit path " + thePath );
-	
+
 	File jeditLogFile = new File( thePath.toString() + File.separator + "activity.log" );
 	if( jeditLogFile.exists() ) {
 		String[] jeditDetails = getJeditInstallation( jeditLogFile );
@@ -211,20 +211,20 @@ public class InstUtil {
 	else {
 		System.out.println( "Prompt user for Jedit installation path" );
 	}
-	
-	
-	return results;	
+
+
+	return results;
     }
 
 
 
-    
-    
+
+
     private static String getNetbeansInstallation( File logFile ) {
 	    String installPath = "";
 	    try {
 	    BufferedReader reader = new BufferedReader(new FileReader(logFile));
-	    
+
 	    for (String s = reader.readLine(); s != null; s = reader.readLine()) {
 		s.trim();
 		if( s.indexOf( "IDE Install" ) != -1 ) {
@@ -246,23 +246,23 @@ public class InstUtil {
 	    }
 	    }
 	    catch( IOException ioe ) {
-		System.out.println( "Error reading Netbeans location information" );    
+		System.out.println( "Error reading Netbeans location information" );
             }
 	    //catch( FileNotFoundException fnfe ) {
 		//System.out.println( "NetBeans ide.log FileNotFoundException" );
 	    //}
-	    
-	    return installPath;
-    }	    
 
-    
+	    return installPath;
+    }
+
+
     private static String[] getJeditInstallation( File logFile ) {
 	    String[] jeditDetails = new String[2];
 	    try {
 	    BufferedReader reader = new BufferedReader(new FileReader(logFile));
 	    String installPath = "";
 	    String version = "";
-	    
+
 	    for (String s = reader.readLine(); s != null; s = reader.readLine()) {
 		s.trim();
 		if( s.indexOf( "jEdit home directory is" ) != -1 ) {
@@ -294,17 +294,17 @@ public class InstUtil {
 	    }
 	    }
 	    catch( IOException ioe ) {
-		System.out.println( "Error reading Jedit location information" );    
+		System.out.println( "Error reading Jedit location information" );
             }
 	    //catch( FileNotFoundException fnfe ) {
 		//System.out.println( "Jedit activity.log FileNotFoundException" );
 	    //}
-	    
+
 	    return jeditDetails;
     }
 
-    
-    
+
+
 	public static File findVersionFile(File start)
 	{
 		File versionFile = null;
@@ -328,20 +328,20 @@ public class InstUtil {
 		}
 
 		return versionFile;
-	}	
-    
+	}
+
     public static boolean verifySversionExists(File sversionFile) {
         if (!sversionFile.exists())
             return false;
         return true;
     }
-    
+
     public static Properties getOfficeVersions(File sversionFile) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(sversionFile));
         Vector values;
         String sectionName = null;
         Properties results = new Properties();
-        
+
         for (String s = reader.readLine(); s != null; s = reader.readLine()) {
             s.trim();
             //System.out.println(s);
@@ -355,14 +355,14 @@ public class InstUtil {
             if ((sectionName != null) && sectionName.equalsIgnoreCase("Versions")) {
                 int equals = s.indexOf( "=" );
 		String officeName = s.substring(0, equals );
-		
+
 		String instPath = s.substring(equals + 8, s.length());
 		String [] parts = new String[2];
 		parts[0] = officeName;
 		parts[1] = instPath + File.separator;
 		//System.out.println( "InstUtil officeName " + officeName );
 		//System.out.println( "InstUtil instPath " + instPath );
-		
+
 		//String [] parts = s.split("=");
                 if (parts.length == 2) {
                     //ver.version = parts[0].trim();
@@ -395,14 +395,14 @@ public class InstUtil {
 				results.put(parts[0].trim(), URLDecoder.decode(url.getPath()));
 			}
                         //File f = new File(url);
-			
+
 			//.sversion: OpenOffice.org 643=file:///scriptdev/neil/ScriptFrameOpenoffice1.0.1
 			// parts = Installation name. f.getPath = Installation path
                         //results.put(parts[0].trim(), f.getPath());
-			
+
                         //results.put(parts[0].trim(), URLDecoder.decode(url.getPath()));
 			//results.put( parts[0].trim(), windowsPath );
-                        
+
                     }
                     catch (MalformedURLException eSyntax) {
                         //throw new IOException("Error while reading version information");
@@ -416,20 +416,20 @@ public class InstUtil {
                 }
             }
         }
-        
+
         return results;
     }
-    
+
     public static String getJavaVersion() {
         return System.getProperty("java.version");
     }
-    
+
     public static boolean isCorrectJavaVersion() {
         if (System.getProperty("java.version").startsWith("1.4"))
             return true;
         return false;
     }
-    
+
     public static void main(String args[]) {
         InstUtil inst = new InstUtil();
 		File f = null;
@@ -456,7 +456,7 @@ public class InstUtil {
             System.err.println("Not correct Java Version");
         }
     }
-    
+
     public static final String [] versions = {"NetBeans 3.4", "jEdit 4.0.3", "jEdit 4.1pre5" };
     private static File tmpDir = null;
 }

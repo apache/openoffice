@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -250,7 +250,7 @@ void SwView::StartTextConversion(
     {
         return;
     }
-    
+
     SpellKontext(sal_True);
 
     const SwViewOption* pVOpt = pWrtShell->GetViewOptions();
@@ -526,11 +526,11 @@ bool SwView::IsValidSelectionForThesaurus() const
 {
     // must not be a multi-selection, and if it is a selection it needs
     // to be within a single paragraph
-    
+
     const bool bMultiSel = pWrtShell->GetCrsr() != pWrtShell->GetCrsr()->GetNext();
     const sal_Bool bSelection = ((SwCrsrShell*)pWrtShell)->HasSelection();
     return !bMultiSel && (!bSelection || pWrtShell->IsSelOnePara() );
-}    
+}
 
 
 String SwView::GetThesaurusLookUpText( bool bSelection ) const
@@ -580,7 +580,7 @@ void SwView::InsertThesaurusSynonym( const String &rSynonmText, const String &rL
     pWrtShell->EndAllAction();
 
     pWrtShell->SetInsMode( bOldIns );
-}    
+}
 
 
 /*--------------------------------------------------------------------
@@ -627,7 +627,7 @@ void SwView::StartThesaurus()
 		// create dialog
 		{	//Scope for SwWait-Object
 			SwWait aWait( *GetDocShell(), true );
-			// load library with dialog only on demand ... 
+			// load library with dialog only on demand ...
 			SvxAbstractDialogFactory* pFact = SvxAbstractDialogFactory::Create();
 			pDlg = pFact->CreateThesaurusDialog( &GetEditWin(), xThes, aTmp, eLang );
 		}
@@ -656,7 +656,7 @@ struct ExecuteInfo
 class AsyncExecute
 {
 public:
-    DECL_STATIC_LINK( AsyncExecute, ExecuteHdl_Impl, ExecuteInfo* ); 
+    DECL_STATIC_LINK( AsyncExecute, ExecuteHdl_Impl, ExecuteInfo* );
 };
 
 IMPL_STATIC_LINK_NOINSTANCE( AsyncExecute, ExecuteHdl_Impl, ExecuteInfo*, pExecuteInfo )
@@ -713,7 +713,7 @@ sal_Bool SwView::ExecSpellPopup(const Point& rPt)
 					aMessageText = aGrammarCheckRes.aErrors[ nErrorInResult ].aShortComment;
 				// we like to use the grammar checking context menu if we either get
 				// some suggestions or at least a comment about the error found...
-                bUseGrammarContext = bCorrectionRes && 
+                bUseGrammarContext = bCorrectionRes &&
 						(aSuggestions.getLength() > 0 || aMessageText.getLength() > 0);
             }
 
@@ -724,11 +724,11 @@ sal_Bool SwView::ExecSpellPopup(const Point& rPt)
 				// get paragraph text
 				String aParaText;
                 SwPosition aPoint( *pWrtShell->GetCrsr()->GetPoint() );
-				const SwTxtNode *pNode = dynamic_cast< const SwTxtNode * >( 
+				const SwTxtNode *pNode = dynamic_cast< const SwTxtNode * >(
                                             &aPoint.nNode.GetNode() );
 				if (pNode)
 					aParaText = pNode->GetTxt();	// this may include hidden text but that should be Ok
-                else 
+                else
                 {
 					DBG_ERROR( "text node expected but not found" );
                 }
@@ -752,11 +752,11 @@ sal_Bool SwView::ExecSpellPopup(const Point& rPt)
                 aEvent.ExecutePosition.Y = aPixPos.Y();
                 Menu* pMenu = 0;
 
-                ::rtl::OUString sMenuName = ::rtl::OUString::createFromAscii( 
+                ::rtl::OUString sMenuName = ::rtl::OUString::createFromAscii(
                     bUseGrammarContext ? "private:resource/GrammarContextMenu" : "private:resource/SpellContextMenu");
                 if(TryContextMenuInterception( *pPopup, sMenuName, pMenu, aEvent ))
                 {
-                    
+
                     //! happy hacking for context menu modifying extensions of this
                     //! 'custom made' menu... *sigh* (code copied from sfx2 and framework)
                     if ( pMenu )
@@ -785,7 +785,7 @@ sal_Bool SwView::ExecSpellPopup(const Point& rPt)
                                 uno::Reference< util::XURLTransformer > xURLTransformer;
                                 if (xMgr.is())
                                 {
-                                    xURLTransformer = uno::Reference< util::XURLTransformer >( xMgr->createInstance( 
+                                    xURLTransformer = uno::Reference< util::XURLTransformer >( xMgr->createInstance(
                                             C2U("com.sun.star.util.URLTransformer")), UNO_QUERY);
                                 }
 
@@ -794,7 +794,7 @@ sal_Bool SwView::ExecSpellPopup(const Point& rPt)
                                 uno::Sequence< beans::PropertyValue > aArgs;
                                 xDispatch = xDispatchProvider->queryDispatch( aURL, rtl::OUString(), 0 );
 
-                            
+
                                 if (xDispatch.is())
                                 {
                                     // Execute dispatch asynchronously
@@ -804,12 +804,12 @@ sal_Bool SwView::ExecSpellPopup(const Point& rPt)
                                     pExecuteInfo->aArgs         = aArgs;
                                     Application::PostUserEvent( STATIC_LINK(0, AsyncExecute , ExecuteHdl_Impl), pExecuteInfo );
                                 }
-                            }                
+                            }
                             catch (Exception &)
                             {
-                            }    
+                            }
                         }
-                    }        
+                    }
                     else
                     {
                         pPopup->Execute( aToFill.SVRect(), pEditWin );
@@ -842,9 +842,9 @@ sal_Bool SwView::ExecSmartTagPopup( const Point& rPt )
     // This data structure maps a smart tag type string to the property bag
     SwRect aToFill;
     Sequence< rtl::OUString > aSmartTagTypes;
-    Sequence< Reference< container::XStringKeyMap > > aStringKeyMaps;                                
+    Sequence< Reference< container::XStringKeyMap > > aStringKeyMaps;
     Reference<text::XTextRange> xRange;
-    
+
     pWrtShell->GetSmartTagTerm( rPt, aToFill, aSmartTagTypes, aStringKeyMaps, xRange);
     if ( xRange.is() && aSmartTagTypes.getLength() )
     {
@@ -885,7 +885,7 @@ protected:
     virtual void LoseFocus() {
 //	printf("ListBox: lose focus!!\n");
 	ListBox::LoseFocus();
-    }    
+    }
 
     virtual void Select() {
 //	printf("SELECT!!! IsTravelSelect=%i\n", IsTravelSelect());
@@ -930,9 +930,9 @@ public:
 	aText.SetText(rtl::OUString::createFromAscii("Cancel"));
 	Size tSize=aText.GetOptimalSize(WINDOWSIZE_PREFERRED);
 	aText.SetSizePixel(Size(lbSize.Width(), tSize.Height()));
-	aText.SetPosPixel(Point(0, lbSize.Height()));     	
+	aText.SetPosPixel(Point(0, lbSize.Height()));
 	aText.Show();
-	SetSizePixel(Size(lbSize.Width(), lbSize.Height()+tSize.Height()));	
+	SetSizePixel(Size(lbSize.Width(), lbSize.Height()+tSize.Height()));
 //	SetSizePixel(Size(200, 200));
     }
 
@@ -952,7 +952,7 @@ protected:
     virtual long PreNotify( NotifyEvent& rNEvt ) {
 	if (rNEvt.GetType() == EVENT_LOSEFOCUS && aListBox.GetImplWin()==rNEvt.GetWindow()) {
 	    EndDialog(8);
-	    return 1;	   
+	    return 1;
 	}
 	if (rNEvt.GetType() == EVENT_KEYINPUT) {
 //	    printf("PreNotify::KEYINPUT\n");

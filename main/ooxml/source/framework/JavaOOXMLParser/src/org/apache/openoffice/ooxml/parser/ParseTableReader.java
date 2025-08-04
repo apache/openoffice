@@ -30,7 +30,7 @@ import java.util.Vector;
 
 /** A simple reader for the parse table data that allows simple filtering on the
  *  first word in each line.
- *  
+ *
  *  Lines that only contain comments or whitespace are ignored.
  *
  */
@@ -39,11 +39,11 @@ public class ParseTableReader
     public ParseTableReader (final File aFile)
     {
         maSections = new HashMap<>();
-        
+
         try
         {
             final BufferedReader aReader = new BufferedReader(new FileReader(aFile));
-            
+
             while (true)
             {
                 final String sLine = aReader.readLine();
@@ -53,7 +53,7 @@ public class ParseTableReader
                     continue;
                 else if (sLine.isEmpty())
                     continue;
-            
+
                 final String[] aLineParts = sLine.split("\\s+");
                 for (int nIndex=0; nIndex<aLineParts.length; ++nIndex)
                 {
@@ -70,9 +70,9 @@ public class ParseTableReader
                 }
                 GetSection(aLineParts[0]).add(aLineParts);
             }
-            
+
             aReader.close();
-        } 
+        }
         catch (final Exception aException)
         {
             throw new RuntimeException(aException);
@@ -80,8 +80,8 @@ public class ParseTableReader
     }
 
 
-    
-    
+
+
     public Vector<String[]> GetSection (final String sSectionName)
     {
         Vector<String[]> aSection = maSections.get(sSectionName);
@@ -93,8 +93,8 @@ public class ParseTableReader
         return aSection;
     }
 
-    
-    
+
+
 
     private final Map<String,Vector<String[]>> maSections;
 }

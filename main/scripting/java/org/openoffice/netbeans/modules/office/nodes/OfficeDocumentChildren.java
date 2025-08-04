@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -39,25 +39,25 @@ import org.openoffice.netbeans.modules.office.actions.OfficeDocumentCookie;
 
 public class OfficeDocumentChildren extends Children.Keys
     implements ChangeListener {
-    
+
     private OfficeDocumentCookie document = null;
-    
+
     public OfficeDocumentChildren(OfficeDocumentCookie cookie) {
         document = cookie;
     }
-    
+
     private void refreshKeys() {
         if (document == null) {
             setKeys(Collections.EMPTY_SET);
             return;
         }
-        
+
         Enumeration parcels = document.getParcels();
         if (parcels.hasMoreElements() != true) {
             setKeys(Collections.EMPTY_SET);
             return;
         }
-        
+
         ArrayList keys = new ArrayList();
         while (parcels.hasMoreElements()) {
             String parcel = (String)parcels.nextElement();
@@ -65,31 +65,31 @@ public class OfficeDocumentChildren extends Children.Keys
         }
         setKeys(keys);
     }
-    
+
     protected void addNotify() {
         super.addNotify();
         document.addChangeListener(this);
         refreshKeys();
     }
-    
+
     protected void removeNotify() {
         super.removeNotify();
         document.removeChangeListener(this);
         setKeys(Collections.EMPTY_SET);
     }
-    
+
     protected Node[] createNodes(Object key) {
         String name = (String)key;
         return new Node[] {new ParcelNode(name)};
     }
-    
+
     public void stateChanged(ChangeEvent e) {
         refreshKeys();
     }
-    
+
     private class ParcelNode extends AbstractNode {
         private String name;
-        
+
         public ParcelNode(String name) {
             super(Children.LEAF);
             this.name = name;
@@ -113,11 +113,11 @@ public class OfficeDocumentChildren extends Children.Keys
         public HelpCtx getHelpCtx() {
             return HelpCtx.DEFAULT_HELP;
         }
-        
+
         public boolean canDestroy() {
             return true;
         }
-        
+
         public void destroy() throws IOException {
             OfficeSettings settings = OfficeSettings.getDefault();
             String message = "If you already have this document open in " +

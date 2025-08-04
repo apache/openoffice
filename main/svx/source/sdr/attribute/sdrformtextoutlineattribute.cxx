@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,7 +45,7 @@ namespace drawinglayer
 		    sal_uInt8                           mnTransparence;
 
 			ImpSdrFormTextOutlineAttribute(
-                const LineAttribute& rLineAttribute, 
+                const LineAttribute& rLineAttribute,
                 const StrokeAttribute& rStrokeAttribute,
                 sal_uInt8 nTransparence)
 			:	mnRefCount(0),
@@ -88,7 +88,7 @@ namespace drawinglayer
         };
 
         SdrFormTextOutlineAttribute::SdrFormTextOutlineAttribute(
-			const LineAttribute& rLineAttribute, 
+			const LineAttribute& rLineAttribute,
             const StrokeAttribute& rStrokeAttribute,
             sal_uInt8 nTransparence)
 		:	mpSdrFormTextOutlineAttribute(new ImpSdrFormTextOutlineAttribute(
@@ -137,7 +137,7 @@ namespace drawinglayer
 				{
 					delete mpSdrFormTextOutlineAttribute;
 				}
-				
+
 				mpSdrFormTextOutlineAttribute = rCandidate.mpSdrFormTextOutlineAttribute;
 				mpSdrFormTextOutlineAttribute->mnRefCount++;
 			}
@@ -159,20 +159,20 @@ namespace drawinglayer
 
 			return (*rCandidate.mpSdrFormTextOutlineAttribute == *mpSdrFormTextOutlineAttribute);
 		}
-		
-        const LineAttribute& SdrFormTextOutlineAttribute::getLineAttribute() const 
-		{ 
-			return mpSdrFormTextOutlineAttribute->getLineAttribute(); 
+
+        const LineAttribute& SdrFormTextOutlineAttribute::getLineAttribute() const
+		{
+			return mpSdrFormTextOutlineAttribute->getLineAttribute();
 		}
 
-		const StrokeAttribute& SdrFormTextOutlineAttribute::getStrokeAttribute() const 
-		{ 
-			return mpSdrFormTextOutlineAttribute->getStrokeAttribute(); 
+		const StrokeAttribute& SdrFormTextOutlineAttribute::getStrokeAttribute() const
+		{
+			return mpSdrFormTextOutlineAttribute->getStrokeAttribute();
 		}
 
-		sal_uInt8 SdrFormTextOutlineAttribute::getTransparence() const 
-		{ 
-			return mpSdrFormTextOutlineAttribute->getTransparence(); 
+		sal_uInt8 SdrFormTextOutlineAttribute::getTransparence() const
+		{
+			return mpSdrFormTextOutlineAttribute->getTransparence();
 		}
 	} // end of namespace attribute
 } // end of namespace drawinglayer

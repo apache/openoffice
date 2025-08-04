@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -258,7 +258,7 @@ sal_uLong ScDocShell::DBaseImport( const String& rFullFileName, CharSet eCharSet
         if ( !xConnection.is() || !xDrvMan.is() )
             return nRet;
         ::utl::DisposableComponent aConnectionHelper(xConnection);
-		
+
         ScProgress aProgress( this, ScGlobal::GetRscString( STR_LOAD_DOC ), 0 );
         uno::Reference<lang::XMultiServiceFactory> xFactory = comphelper::getProcessServiceFactory();
 		uno::Reference<sdbc::XRowSet> xRowSet( xFactory->createInstance(
@@ -756,7 +756,7 @@ sal_uLong ScDocShell::DBaseExport( const String& rFullFileName, CharSet eCharSet
 		// get dBase driver
         uno::Reference< sdbc::XDriverAccess> xAccess(xDrvMan,uno::UNO_QUERY);
         uno::Reference< sdbcx::XDataDefinitionSupplier > xDDSup( xAccess->getDriverByURL( xConnection->getMetaData()->getURL() ), uno::UNO_QUERY );
-		if ( !xDDSup.is() ) 
+		if ( !xDDSup.is() )
             return SCERR_EXPORT_CONNECT;
 
 		// create table

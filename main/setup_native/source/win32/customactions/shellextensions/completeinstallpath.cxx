@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,7 +45,7 @@
 
 using namespace std;
 
-namespace 
+namespace
 {
 	std::_tstring GetMsiProperty( MSIHANDLE handle, const std::_tstring& sProperty )
 	{
@@ -74,31 +74,31 @@ extern "C" UINT __stdcall CompleteInstallPath( MSIHANDLE handle )
 	// this causes in an update installation, that INSTALLLOCATION is set to "c:\program files",
 	// so that in an OOo 3.3 or later, the directory "program" or "share" are directly created
 	// below "c:\program files".
-	
+
 	TCHAR	szValue[8192];
 	DWORD	nValueSize = sizeof(szValue);
 	HKEY	hKey;
 	std::_tstring	sInstDir;
 	std::_tstring	mystr;
 
-	// Reading property OFFICEDIRHOSTNAME_, that contains the part of the path behind 
+	// Reading property OFFICEDIRHOSTNAME_, that contains the part of the path behind
 	// the program files folder.
-	
+
 	std::_tstring	sInstallLocation = GetMsiProperty( handle, TEXT("INSTALLLOCATION") );
 	std::_tstring	sOfficeDirHostname = GetMsiProperty( handle, TEXT("OFFICEDIRHOSTNAME_") );
-	
+
 	// If sInstallLocation ends with (contains) the string sOfficeDirHostname,
 	// INSTALLLOCATION is good and nothing has to be done here.
-	
+
 	bool pathCompletionRequired = true;
 
 	if ( _tcsstr( sInstallLocation.c_str(), sOfficeDirHostname.c_str() ) )
 	{
-		pathCompletionRequired = false;  // nothing to do 
+		pathCompletionRequired = false;  // nothing to do
 		// mystr = "Nothing to do, officedir is included into installlocation";
 		// MessageBox( NULL, mystr.c_str(), "It is part of installlocation", MB_OK );
 	}
-	
+
 	// If the path INSTALLLOCATION does not end with this string, INSTALLLOCATION is maybe
 	// transferred from an OOo 3.0, OOo 3.1 and OOo 3.2 and need to be changed therefore.
 
@@ -124,7 +124,7 @@ extern "C" UINT __stdcall CompleteInstallPath( MSIHANDLE handle )
 
 		// mystr = "Checking registry";
 		// MessageBox( NULL, mystr.c_str(), "registry search", MB_OK );
-	
+
 		bool oldVersionExists = false;
 
 		if ( ERROR_SUCCESS == RegOpenKey( HKEY_CURRENT_USER,  sProductKey30.c_str(), &hKey ) )
@@ -135,29 +135,29 @@ extern "C" UINT __stdcall CompleteInstallPath( MSIHANDLE handle )
 		else if ( ERROR_SUCCESS == RegOpenKey( HKEY_CURRENT_USER,  sProductKey31.c_str(), &hKey ) )
 		{
 			oldVersionExists = true;
-			RegCloseKey( hKey );		
+			RegCloseKey( hKey );
 		}
 		else if ( ERROR_SUCCESS == RegOpenKey( HKEY_CURRENT_USER,  sProductKey32.c_str(), &hKey ) )
 		{
 			oldVersionExists = true;
-			RegCloseKey( hKey );		
+			RegCloseKey( hKey );
 		}
 		else if ( ERROR_SUCCESS == RegOpenKey( HKEY_LOCAL_MACHINE,  sProductKey30.c_str(), &hKey ) )
 		{
 			oldVersionExists = true;
-			RegCloseKey( hKey );		
+			RegCloseKey( hKey );
 		}
 		else if ( ERROR_SUCCESS == RegOpenKey( HKEY_LOCAL_MACHINE,  sProductKey31.c_str(), &hKey ) )
 		{
 			oldVersionExists = true;
-			RegCloseKey( hKey );		
+			RegCloseKey( hKey );
 		}
 		else if ( ERROR_SUCCESS == RegOpenKey( HKEY_LOCAL_MACHINE,  sProductKey32.c_str(), &hKey ) )
 		{
 			oldVersionExists = true;
-			RegCloseKey( hKey );		
+			RegCloseKey( hKey );
 		}
-	
+
 		if ( oldVersionExists )
 		{
 			// Adding the new path content sOfficeDirHostname

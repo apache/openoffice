@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -644,7 +644,7 @@ sal_uInt32 PPTWriter::ImplInsertBookmarkURL( const String& rBookmarkURL, const s
 	INetURLObject aBookmarkURI( rBookmarkURL );
 	if( aBaseURI.GetProtocol() == aBookmarkURI.GetProtocol() )
 	{
-		rtl::OUString aRelUrl( INetURLObject::GetRelURL( maBaseURI, rBookmarkURL, 
+		rtl::OUString aRelUrl( INetURLObject::GetRelURL( maBaseURI, rBookmarkURL,
 			INetURLObject::WAS_ENCODED, INetURLObject::DECODE_TO_IURI, RTL_TEXTENCODING_UTF8, INetURLObject::FSYS_DETECT ) );
 		if ( aRelUrl.getLength() )
 			sBookmarkURL = aRelUrl;
@@ -1407,7 +1407,7 @@ void PPTWriter::ImplWriteParagraphs( SvStream& rOut, TextObj& rTextObj )
             nBulletFlags = 0;
         }
 
-        // Write nTextOfs and nBullets 
+        // Write nTextOfs and nBullets
         if ( mpStyleSheet->IsHardAttribute( nInstance, nDepth, ParaAttr_TextOfs, pPara->nTextOfs ) )
             nPropertyFlags |= 0x100;
         if ( mpStyleSheet->IsHardAttribute( nInstance, nDepth, ParaAttr_BulletOfs, pPara->nBulletOfs ))
@@ -2764,7 +2764,7 @@ void ParagraphObj::ImplGetNumberingLevel( PPTExBulletProvider& rBuProv, sal_Int1
                                 break;
 								case SVX_NUM_NUMBER_UPPER_ZH :
 								{
-									if ( sSuffix.Len() )			
+									if ( sSuffix.Len() )
 										nMappedNumType = 0x110001;   // Simplified Chinese with single-byte period.
 									else
 										nMappedNumType = 0x100001;   // Simplified Chinese.
@@ -2774,10 +2774,10 @@ void ParagraphObj::ImplGetNumberingLevel( PPTExBulletProvider& rBuProv, sal_Int1
                                 {
 									nMappedNumType = 0x120001;   // Double byte circle numbers.
                                 }
-                                break;								
+                                break;
 								case SVX_NUM_NUMBER_UPPER_ZH_TW :
 								{
-									if ( sSuffix.Len() )			
+									if ( sSuffix.Len() )
 										nMappedNumType = 0x160001;   // Traditional Chinese with single-byte period.
 									else
 										nMappedNumType = 0x150001;   // Traditional Chinese.
@@ -2795,7 +2795,7 @@ void ParagraphObj::ImplGetNumberingLevel( PPTExBulletProvider& rBuProv, sal_Int1
 								break;
 								case SVX_NUM_FULL_WIDTH_ARABIC :
 								{
-									if ( sSuffix.Len() )			
+									if ( sSuffix.Len() )
 										nMappedNumType = 0x1D0001;   // Double-byte Arabic numbers with double-byte period.
 									else
 										nMappedNumType = 0x1C0001;   // Double-byte Arabic numbers.
@@ -4259,7 +4259,7 @@ void PPTWriter::ImplCreateTextShape( EscherPropertyContainer& rPropOpt, EscherSo
 
 void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& aSolverContainer, PageType ePageType, sal_Bool bMasterPage, int nPageNumber )
 {
-    // #119551# PPT does not support groups of polygons and text (MS patch KB2289187) 
+    // #119551# PPT does not support groups of polygons and text (MS patch KB2289187)
     // sal_uInt32  nGroupLevel = 0;
 
     sal_uInt32  nInstance, nGroups, nShapes, nShapeCount, nPer, nLastPer, nIndices, nOlePictureId;
@@ -4520,7 +4520,7 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
 						aPolygon.Rotate( aRect.TopLeft(), (sal_uInt16)( mnAngle / 10 ) );
 						if ( ImplGetText() )
 						{
-							// #119551# PPT does not support groups of polygons and text (MS patch KB2289187) 
+							// #119551# PPT does not support groups of polygons and text (MS patch KB2289187)
                             // mpPptEscherEx->EnterGroup( 0,0 );
 							// nGroupLevel = mpPptEscherEx->GetGroupLevel();
 							bNeedText = sal_False;
@@ -4723,7 +4723,7 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
                     aTextRefPoint = ::com::sun::star::awt::Point( maRect.Left(), maRect.Top() );
                     mnTextSize = 0;
                     bAdditionalText = sal_True;
-                    // #119551# PPT does not support groups of polygons and text (MS patch KB2289187) 
+                    // #119551# PPT does not support groups of polygons and text (MS patch KB2289187)
                     // mpPptEscherEx->EnterGroup( &maRect,0 );
                 }
                 mpPptEscherEx->OpenContainer( ESCHER_SpContainer );
@@ -4742,7 +4742,7 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
             {
                 if ( ImplGetText() )
                 {
-                    // #119551# PPT does not support groups of polygons and text (MS patch KB2289187) 
+                    // #119551# PPT does not support groups of polygons and text (MS patch KB2289187)
                     // mpPptEscherEx->EnterGroup( 0,0 );
                     // nGroupLevel = mpPptEscherEx->GetGroupLevel();
                     bAdditionalText = sal_True;
@@ -4762,7 +4762,7 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
             {
                 if ( ImplGetText() )
                 {
-                    // #119551# PPT does not support groups of polygons and text (MS patch KB2289187) 
+                    // #119551# PPT does not support groups of polygons and text (MS patch KB2289187)
                     // mpPptEscherEx->EnterGroup( 0,0 );
                     // nGroupLevel = mpPptEscherEx->GetGroupLevel();
                     bAdditionalText = sal_True;
@@ -4782,7 +4782,7 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
             {
                 if ( ImplGetText() )
                 {
-                    // #119551# PPT does not support groups of polygons and text (MS patch KB2289187) 
+                    // #119551# PPT does not support groups of polygons and text (MS patch KB2289187)
                     // mpPptEscherEx->EnterGroup( 0,0 );
                     // nGroupLevel = mpPptEscherEx->GetGroupLevel();
                     bAdditionalText = sal_True;
@@ -4802,7 +4802,7 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
             {
                 if ( ImplGetText() )
                 {
-                    // #119551# PPT does not support groups of polygons and text (MS patch KB2289187) 
+                    // #119551# PPT does not support groups of polygons and text (MS patch KB2289187)
                     // mpPptEscherEx->EnterGroup( 0,0 );
                     // nGroupLevel = mpPptEscherEx->GetGroupLevel();
                     bAdditionalText = sal_True;
@@ -5087,7 +5087,7 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
 						if (pObj && pObj->IsNotVisibleAsMaster())
 							continue;
 					}
-					
+
                     mType = "drawing.Text";
 	                ImplCreateTextShape( aPropOpt, aSolverContainer, sal_True );
                 }
@@ -5430,7 +5430,7 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
                     {
 						sal_uInt32 nTextType = EPP_TEXTTYPE_Body;
 						if ( mnTextStyle == EPP_TEXTSTYLE_BODY )
-						{				
+						{
 							if ( bSecOutl )
 								nTextType = EPP_TEXTTYPE_HalfBody;
 							else if ( mType == "presentation.Subtitle" )
@@ -5501,7 +5501,7 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
                 ImplFlipBoundingBox( aPropOpt );
             aPropOpt.CreateShapeProperties( mXShape );
 			aPropOpt.Commit( *mpStrm );
-			if ( GetCurrentGroupLevel() > 0 )		
+			if ( GetCurrentGroupLevel() > 0 )
 		        mpPptEscherEx->AddChildAnchor( maRect );
 			else
 				mpPptEscherEx->AddClientAnchor( maRect );
@@ -5564,7 +5564,7 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
                 mnAngle &=~0xffff;  // nAngle auf volle Gradzahl runden
                 aPropOpt.AddOpt( ESCHER_Prop_Rotation, mnAngle );
 
-                // #119551# PPT does not support groups of polygons and text (MS patch KB2289187) 
+                // #119551# PPT does not support groups of polygons and text (MS patch KB2289187)
                 // mpPptEscherEx->SetGroupSnapRect( nGroupLevel, maRect );
                 // mpPptEscherEx->SetGroupLogicRect( nGroupLevel, maRect );
             }
@@ -5576,7 +5576,7 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
 
             aPropOpt.CreateShapeProperties( mXShape );
             aPropOpt.Commit( *mpStrm );
-			if ( GetCurrentGroupLevel() > 0 )		
+			if ( GetCurrentGroupLevel() > 0 )
 		        mpPptEscherEx->AddChildAnchor( maRect );
 			else
 				mpPptEscherEx->AddClientAnchor( maRect );
@@ -5588,8 +5588,8 @@ void PPTWriter::ImplWritePage( const PHLayout& rLayout, EscherSolverContainer& a
             delete pClientTextBox, pClientTextBox = NULL;
 
             mpPptEscherEx->CloseContainer();  // ESCHER_SpContainer
-            
-            // #119551# PPT does not support groups of polygons and text (MS patch KB2289187) 
+
+            // #119551# PPT does not support groups of polygons and text (MS patch KB2289187)
             // mpPptEscherEx->LeaveGroup();
         }
     }
@@ -5678,7 +5678,7 @@ sal_Bool PPTWriter::ImplCreateCellBorder( const CellBorder* pCellBorder, sal_Int
 }
 
 //get merged cell's width
-sal_Int32 GetCellRight( sal_Int32 nColumn,  
+sal_Int32 GetCellRight( sal_Int32 nColumn,
 	Rectangle& rect,
 	std::vector< std::pair< sal_Int32, sal_Int32 > >& aColumns,
 	uno::Reference< table::XMergeableCell >& xCell )
@@ -5695,7 +5695,7 @@ sal_Int32 GetCellRight( sal_Int32 nColumn,
 	return nRight;
 }
 //get merged cell's height
-sal_Int32 GetCellBottom( sal_Int32 nRow, 
+sal_Int32 GetCellBottom( sal_Int32 nRow,
 	Rectangle& rect,
 	std::vector< std::pair< sal_Int32, sal_Int32 > >& aRows,
 	uno::Reference< table::XMergeableCell >& xCell )
@@ -5802,7 +5802,7 @@ void PPTWriter::ImplCreateTable( uno::Reference< drawing::XShape >& rXShape, Esc
 				aPropOpt.CreateShapeProperties( rXShape );
 				aPropOpt.Commit( *mpStrm );
 				aPropOpt2.Commit( *mpStrm, 3, ESCHER_UDefProp );
-				if ( GetCurrentGroupLevel() > 0 )		
+				if ( GetCurrentGroupLevel() > 0 )
 					mpPptEscherEx->AddChildAnchor( maRect );
 				else
 					mpPptEscherEx->AddClientAnchor( maRect );
@@ -5821,7 +5821,7 @@ void PPTWriter::ImplCreateTable( uno::Reference< drawing::XShape >& rXShape, Esc
 							sal_Int32 nTop    = aRows[ nRow ].first;
 							sal_Int32 nRight  = GetCellRight( nColumn, maRect,aColumns,xCell );
 							sal_Int32 nBottom = GetCellBottom( nRow,  maRect,aRows,xCell );
-							
+
 							mbFontIndependentLineSpacing = sal_False;
 							mXPropSet = uno::Reference< beans::XPropertySet >( xCell, uno::UNO_QUERY_THROW );
 							mXText = uno::Reference< text::XSimpleText >( xCell, uno::UNO_QUERY_THROW );
@@ -5875,7 +5875,7 @@ void PPTWriter::ImplCreateTable( uno::Reference< drawing::XShape >& rXShape, Esc
 				static const rtl::OUString sTopBorder( String( RTL_CONSTASCII_USTRINGPARAM( "TopBorder" ) ) );
 				static const rtl::OUString sBottomBorder( String( RTL_CONSTASCII_USTRINGPARAM( "BottomBorder" ) ) );
 				static const rtl::OUString sLeftBorder( String( RTL_CONSTASCII_USTRINGPARAM( "LeftBorder" ) ) );
-				static const rtl::OUString sRightBorder( String( RTL_CONSTASCII_USTRINGPARAM( "RightBorder" ) ) );	
+				static const rtl::OUString sRightBorder( String( RTL_CONSTASCII_USTRINGPARAM( "RightBorder" ) ) );
 				static const rtl::OUString	sDiagonalTLBR( RTL_CONSTASCII_USTRINGPARAM ( "DiagonalTLBR" ) );
 				static const rtl::OUString	sDiagonalBLTR( RTL_CONSTASCII_USTRINGPARAM ( "DiagonalBLTR" ) );
 
@@ -5909,7 +5909,7 @@ void PPTWriter::ImplCreateTable( uno::Reference< drawing::XShape >& rXShape, Esc
 						if (( nLine && !bTop ) || (nLine == xRows->getCount()))
 						{	// bottom border
 							sal_Int32 nRow =  nLine;
-							
+
 							while( nRow )
 							{   //find last no merged cell
 								uno::Reference< table::XMergeableCell > xCell( xCellRange->getCellByPosition( nColumn, nRow - 1 ), uno::UNO_QUERY_THROW );
@@ -5982,7 +5982,7 @@ void PPTWriter::ImplCreateTable( uno::Reference< drawing::XShape >& rXShape, Esc
 									}
 									nColumn = 0;
 								}
-								else 
+								else
 									nColumn --;
 							}
 						}

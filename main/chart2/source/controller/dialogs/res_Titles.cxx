@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -65,11 +65,11 @@ TitleResources::TitleResources( Window* pWindow, bool bShowSecondaryAxesTitle )
          nMaxTextWidth = ::std::max( nMaxTextWidth, m_aFT_SecondaryXAxis.CalcMinimumSize().Width() ) ;
          nMaxTextWidth = ::std::max( nMaxTextWidth, m_aFT_SecondaryYAxis.CalcMinimumSize().Width() ) ;
      }
-     
+
      Size aControlDistance( m_aFT_Main.LogicToPixel( Size(RSC_SP_CTRL_DESC_X,RSC_SP_CTRL_GROUP_Y), MapMode(MAP_APPFONT) ) );
      long nEditFieldXPos = m_aFT_Main.GetPosPixel().X() + nMaxTextWidth + aControlDistance.Width();
      long nEditFieldWidth = m_aEd_Main.GetPosPixel().X() + m_aEd_Main.GetSizePixel().Width() - nEditFieldXPos;
- 
+
      if( nEditFieldWidth > 10 )
      {
          Size aFTSize( m_aFT_Main.GetSizePixel() );
@@ -84,7 +84,7 @@ TitleResources::TitleResources( Window* pWindow, bool bShowSecondaryAxesTitle )
              m_aFT_SecondaryXAxis.SetSizePixel(aFTSize);
              m_aFT_SecondaryYAxis.SetSizePixel(aFTSize);
          }
- 
+
          m_aEd_Main.SetPosPixel( Point( nEditFieldXPos, m_aEd_Main.GetPosPixel().Y() ) );
          m_aEd_Sub.SetPosPixel( Point( nEditFieldXPos, m_aEd_Sub.GetPosPixel().Y() ) );
          m_aEd_XAxis.SetPosPixel( Point( nEditFieldXPos, m_aEd_XAxis.GetPosPixel().Y() ) );
@@ -95,7 +95,7 @@ TitleResources::TitleResources( Window* pWindow, bool bShowSecondaryAxesTitle )
              m_aEd_SecondaryXAxis.SetPosPixel( Point( nEditFieldXPos, m_aEd_SecondaryXAxis.GetPosPixel().Y() ) );
              m_aEd_SecondaryYAxis.SetPosPixel( Point( nEditFieldXPos, m_aEd_SecondaryYAxis.GetPosPixel().Y() ) );
          }
- 
+
          Size aEditSize( m_aEd_Main.GetSizePixel() );
          aEditSize.Width() = nEditFieldWidth;
          m_aEd_Main.SetSizePixel( aEditSize );
@@ -109,7 +109,7 @@ TitleResources::TitleResources( Window* pWindow, bool bShowSecondaryAxesTitle )
              m_aEd_SecondaryYAxis.SetSizePixel( aEditSize );
          }
      }
- 
+
      m_aFT_SecondaryXAxis.Show( bShowSecondaryAxesTitle );
      m_aEd_SecondaryXAxis.Show( bShowSecondaryAxesTitle );
      m_aFT_SecondaryYAxis.Show( bShowSecondaryAxesTitle );

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,7 +50,7 @@ using namespace std;
 
 namespace toolkit
 {
-	
+
 // Methods XElementAccess
 Type NameContainer_Impl::getElementType()
 	throw(RuntimeException)
@@ -58,7 +58,7 @@ Type NameContainer_Impl::getElementType()
 	return mType;
 }
 
-sal_Bool NameContainer_Impl::hasElements() 
+sal_Bool NameContainer_Impl::hasElements()
 	throw(RuntimeException)
 {
 	sal_Bool bRet = (mnElementCount > 0);
@@ -66,7 +66,7 @@ sal_Bool NameContainer_Impl::hasElements()
 }
 
 // Methods XNameAccess
-Any NameContainer_Impl::getByName( const OUString& aName ) 
+Any NameContainer_Impl::getByName( const OUString& aName )
 	throw(NoSuchElementException, WrappedTargetException, RuntimeException)
 {
 	NameContainerNameMap::iterator aIt = mHashMap.find( aName );
@@ -85,7 +85,7 @@ Sequence< OUString > NameContainer_Impl::getElementNames()
 	return mNames;
 }
 
-sal_Bool NameContainer_Impl::hasByName( const OUString& aName ) 
+sal_Bool NameContainer_Impl::hasByName( const OUString& aName )
 	throw(RuntimeException)
 {
 	NameContainerNameMap::iterator aIt = mHashMap.find( aName );
@@ -95,7 +95,7 @@ sal_Bool NameContainer_Impl::hasByName( const OUString& aName )
 
 
 // Methods XNameReplace
-void NameContainer_Impl::replaceByName( const OUString& aName, const Any& aElement ) 
+void NameContainer_Impl::replaceByName( const OUString& aName, const Any& aElement )
 	throw(IllegalArgumentException, NoSuchElementException, WrappedTargetException, RuntimeException)
 {
 	Type aAnyType = aElement.getValueType();
@@ -112,7 +112,7 @@ void NameContainer_Impl::replaceByName( const OUString& aName, const Any& aEleme
 	mValues.getArray()[ iHashResult ] = aElement;
 
 	// Fire event
-	ContainerEvent aEvent;		
+	ContainerEvent aEvent;
 	aEvent.Source = *this;
 	aEvent.Element <<= aElement;
 	aEvent.ReplacedElement = aOldElement;
@@ -122,7 +122,7 @@ void NameContainer_Impl::replaceByName( const OUString& aName, const Any& aEleme
 
 
 // Methods XNameContainer
-void NameContainer_Impl::insertByName( const OUString& aName, const Any& aElement ) 
+void NameContainer_Impl::insertByName( const OUString& aName, const Any& aElement )
 	throw(IllegalArgumentException, ElementExistException, WrappedTargetException, RuntimeException)
 {
 	Type aAnyType = aElement.getValueType();
@@ -143,14 +143,14 @@ void NameContainer_Impl::insertByName( const OUString& aName, const Any& aElemen
 	mHashMap[ aName ] = nCount;
 
 	// Fire event
-	ContainerEvent aEvent;		
+	ContainerEvent aEvent;
 	aEvent.Source = *this;
 	aEvent.Element <<= aElement;
 	aEvent.Accessor <<= aName;
 	maContainerListeners.elementInserted( aEvent );
 }
 
-void NameContainer_Impl::removeByName( const OUString& Name ) 
+void NameContainer_Impl::removeByName( const OUString& Name )
 	throw(NoSuchElementException, WrappedTargetException, RuntimeException)
 {
 	NameContainerNameMap::iterator aIt = mHashMap.find( Name );
@@ -163,7 +163,7 @@ void NameContainer_Impl::removeByName( const OUString& Name )
 	Any aOldElement = mValues.getConstArray()[ iHashResult ];
 
 	// Fire event
-	ContainerEvent aEvent;		
+	ContainerEvent aEvent;
 	aEvent.Source = *this;
 	aEvent.Element = aOldElement;
 	aEvent.Accessor <<= Name;

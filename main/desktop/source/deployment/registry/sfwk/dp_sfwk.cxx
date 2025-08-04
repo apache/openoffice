@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -59,12 +59,12 @@ class BackendImpl : public ::dp_registry::backend::PackageRegistryBackend
     class PackageImpl : public ::dp_registry::backend::Package
     {
         BackendImpl * getMyBackend() const;
-        
+
         Reference< container::XNameContainer > m_xNameCntrPkgHandler;
-        OUString m_descr;        
-        
+        OUString m_descr;
+
         void initPackageHandler();
-        
+
         // Package
         virtual beans::Optional< beans::Ambiguous<sal_Bool> > isRegistered_(
             ::osl::ResettableMutexGuard & guard,
@@ -76,7 +76,7 @@ class BackendImpl : public ::dp_registry::backend::PackageRegistryBackend
             bool startup,
             ::rtl::Reference<AbortChannel> const & abortChannel,
             Reference<XCommandEnvironment> const & xCmdEnv );
-        
+
     public:
         PackageImpl(
             ::rtl::Reference<BackendImpl> const & myBackend,
@@ -87,7 +87,7 @@ class BackendImpl : public ::dp_registry::backend::PackageRegistryBackend
         virtual OUString SAL_CALL getLicenseText() throw (RuntimeException);
     };
     friend class PackageImpl;
-    
+
     // PackageRegistryBackend
     virtual Reference<deployment::XPackage> bindPackage_(
         OUString const & url, OUString const & mediaType,
@@ -96,12 +96,12 @@ class BackendImpl : public ::dp_registry::backend::PackageRegistryBackend
 
     const Reference<deployment::XPackageTypeInfo> m_xTypeInfo;
 
-    
+
 public:
     BackendImpl(
         Sequence<Any> const & args,
         Reference<XComponentContext> const & xComponentContext );
-    
+
     // XPackageRegistry
     virtual Sequence< Reference<deployment::XPackageTypeInfo> > SAL_CALL
     getSupportedPackageTypes() throw (RuntimeException);
@@ -114,12 +114,12 @@ BackendImpl * BackendImpl::PackageImpl::getMyBackend() const
 {
     BackendImpl * pBackend = static_cast<BackendImpl *>(m_myBackend.get());
     if (NULL == pBackend)
-    {    
+    {
         //May throw a DisposedException
         check();
         //We should never get here...
         throw RuntimeException(
-            OUSTR("Failed to get the BackendImpl"), 
+            OUSTR("Failed to get the BackendImpl"),
             static_cast<OWeakObject*>(const_cast<PackageImpl *>(this)));
     }
     return pBackend;
@@ -149,7 +149,7 @@ BackendImpl::PackageImpl::PackageImpl(
       m_descr(libType)
 {
     initPackageHandler();
-    
+
     sal_Int32 segmEnd = url.getLength();
     if (url.getLength() > 0 && url[ url.getLength() - 1 ] == '/')
         --segmEnd;
@@ -261,7 +261,7 @@ Reference<deployment::XPackage> BackendImpl::bindPackage_(
                 StrCannotDetectMediaType::get() + url,
                 static_cast<OWeakObject *>(this), static_cast<sal_Int16>(-1) );
     }
-    
+
     String type, subType;
     INetContentTypeParameterList params;
     if (INetContentTypes::parse( mediaType, type, subType, &params ))
@@ -272,15 +272,15 @@ Reference<deployment::XPackage> BackendImpl::bindPackage_(
             {
                 OUString lang = OUString::createFromAscii("Script");
                 OUString sParcelDescURL = makeURL(
-                    url, OUSTR("parcel-descriptor.xml") ); 
+                    url, OUSTR("parcel-descriptor.xml") );
 
                 ::ucbhelper::Content ucb_content;
 
                 if (create_ucb_content( &ucb_content, sParcelDescURL,
                         xCmdEnv, false /* no throw */ ))
                 {
-                    ParcelDescDocHandler* pHandler = 
-                        new ParcelDescDocHandler(); 
+                    ParcelDescDocHandler* pHandler =
+                        new ParcelDescDocHandler();
                     Reference< xml::sax::XDocumentHandler >
                         xDocHandler = pHandler;
 
@@ -289,7 +289,7 @@ Reference<deployment::XPackage> BackendImpl::bindPackage_(
 
                     Reference< xml::sax::XParser > xParser(
                       xContext->getServiceManager()->createInstanceWithContext(
-                            OUSTR("com.sun.star.xml.sax.Parser"), xContext ), 
+                            OUSTR("com.sun.star.xml.sax.Parser"), xContext ),
                                 UNO_QUERY_THROW );
 
                     xParser->setDocumentHandler( xDocHandler );
@@ -298,7 +298,7 @@ Reference<deployment::XPackage> BackendImpl::bindPackage_(
                     source.sSystemId = ucb_content.getURL();
                     xParser->parseStream( source );
 
-                    if ( pHandler->isParsed() ) 
+                    if ( pHandler->isParsed() )
                     {
                         lang = pHandler->getParcelLanguage();
                     }
@@ -330,14 +330,14 @@ void BackendImpl::PackageImpl:: initPackageHandler()
 {
     if (m_xNameCntrPkgHandler.is())
         return;
-    
+
     BackendImpl * that = getMyBackend();
     Any aContext;
 
     if ( that->m_eContext == CONTEXT_USER )
     {
         aContext  <<= OUSTR("user");
-    } 
+    }
     else if ( that->m_eContext == CONTEXT_SHARED )
     {
         aContext  <<= OUSTR("share");
@@ -357,7 +357,7 @@ void BackendImpl::PackageImpl:: initPackageHandler()
         // NOT supported at the momemtn // TODO
     }
 
-    Reference< provider::XScriptProviderFactory > xFac( 
+    Reference< provider::XScriptProviderFactory > xFac(
         that->getComponentContext()->getValueByName(
             OUSTR( "/singletons/com.sun.star.script.provider.theMasterScriptProviderFactory") ), UNO_QUERY );
 
@@ -398,11 +398,11 @@ void BackendImpl::PackageImpl::processPackage_(
 {
     if ( !m_xNameCntrPkgHandler.is() )
     {
-        dp_misc::TRACE("no package handler!!!!\n");   
-        throw RuntimeException( OUSTR("No package Handler " ), 
+        dp_misc::TRACE("no package handler!!!!\n");
+        throw RuntimeException( OUSTR("No package Handler " ),
             Reference< XInterface >() );
-    }     
-    
+    }
+
     if (doRegisterPackage)
     {
         // will throw if it fails

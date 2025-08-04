@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -107,7 +107,7 @@ xdictionary::xdictionary(const sal_Char *lang) :
 xdictionary::~xdictionary() {
         osl_unloadModule(hModule);
         for (sal_Int32 i = 0; i < CACHE_MAX; i++) {
-            if (cache[i].size > 0) {    
+            if (cache[i].size > 0) {
                 delete cache[i].contents;
                 delete cache[i].wordboundary;
             }
@@ -169,7 +169,7 @@ WordBreakCache::WordBreakCache() :
     wordboundary( NULL ),
     size( 0 )
 {
-}    
+}
 
 /*
  * Compare two unicode string,
@@ -191,7 +191,7 @@ sal_Bool WordBreakCache::equals(const sal_Unicode* str, Boundary& boundary) {
  * @param pos : Position of the given character.
  * @return true if CJK.
  */
-sal_Bool xdictionary::seekSegment(const rtl::OUString &rText, sal_Int32 pos, 
+sal_Bool xdictionary::seekSegment(const rtl::OUString &rText, sal_Int32 pos,
 	Boundary& segBoundary)
 {
     sal_Int32 indexUtf16;
@@ -223,7 +223,7 @@ sal_Bool xdictionary::seekSegment(const rtl::OUString &rText, sal_Int32 pos,
 }
 
 #define KANJA       1
-#define KATAKANA    2   
+#define KATAKANA    2
 #define HIRAKANA    3
 
 static sal_Int16 JapaneseCharType(sal_Unicode c)
@@ -251,7 +251,7 @@ WordBreakCache& xdictionary::getCache(const sal_Unicode *text, Boundary& wordBou
                 delete aCache.wordboundary;
                 aCache.size = len;
             }
-            else 
+            else
                 aCache.size = len > DEFAULT_SIZE ? len : DEFAULT_SIZE;
             aCache.contents = new sal_Unicode[aCache.size + 1];
             aCache.wordboundary = new sal_Int32[aCache.size + 2];

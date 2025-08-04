@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -94,7 +94,7 @@ ORelationTableView::ORelationTableView( Window* pParent, ORelationDesignView* pV
     , ::comphelper::OContainerListener(m_aMutex)
 	,m_pExistingConnection(NULL)
     ,m_bInRemove(false)
-    
+
 {
 	DBG_CTOR(ORelationTableView,NULL);
 	SetHelpId(HID_CTL_RELATIONTAB);
@@ -176,7 +176,7 @@ void ORelationTableView::ReSync()
 				continue;
 			}
 		} // if ( !arrInvalidTables.empty() )
-        
+
 		addConnection( new ORelationTableConnection(this, *aConIter), sal_False ); // don't add the data again
 	}
 
@@ -213,7 +213,7 @@ void ORelationTableView::AddConnection(const OJoinExchangeData& jxdSource, const
 	}
 	// insert table connection into view
 
-	TTableConnectionData::value_type pTabConnData(new ORelationTableConnectionData(pSourceWin->GetData(), 
+	TTableConnectionData::value_type pTabConnData(new ORelationTableConnectionData(pSourceWin->GetData(),
 														                           pDestWin->GetData()));
 
 	// die Namen der betroffenen Felder
@@ -338,7 +338,7 @@ void ORelationTableView::AddTabWin(const ::rtl::OUString& _rComposedName, const 
 	//////////////////////////////////////////////////////////////////
 	// Neue Datenstruktur in DocShell eintragen
     TTableWindowData::value_type pNewTabWinData(createTableWindowData( _rComposedName, rWinName,rWinName ));
-	pNewTabWinData->ShowAll(sal_False);	
+	pNewTabWinData->ShowAll(sal_False);
 
 	//////////////////////////////////////////////////////////////////
 	// Neues Fenster in Fensterliste eintragen
@@ -373,7 +373,7 @@ void ORelationTableView::RemoveTabWin( OTableWindow* pTabWin )
 	{
         m_pView->getController().ClearUndoManager();
 		OJoinTableView::RemoveTabWin( pTabWin );
-        
+
 		m_pView->getController().InvalidateFeature(SID_RELATION_ADD_RELATION);
         m_pView->getController().InvalidateFeature(ID_BROWSER_UNDO);
         m_pView->getController().InvalidateFeature(ID_BROWSER_REDO);
@@ -430,7 +430,7 @@ bool ORelationTableView::allowQueries() const
 // -----------------------------------------------------------------------------
 void ORelationTableView::_elementInserted( const container::ContainerEvent& /*_rEvent*/ )  throw(::com::sun::star::uno::RuntimeException)
 {
-    
+
 }
 // -----------------------------------------------------------------------------
 void ORelationTableView::_elementRemoved( const container::ContainerEvent& _rEvent ) throw(::com::sun::star::uno::RuntimeException)
@@ -444,7 +444,7 @@ void ORelationTableView::_elementRemoved( const container::ContainerEvent& _rEve
         {
             m_pView->getController().ClearUndoManager();
 		    OJoinTableView::RemoveTabWin( pTableWindow );
-            
+
 		    m_pView->getController().InvalidateFeature(SID_RELATION_ADD_RELATION);
             m_pView->getController().InvalidateFeature(ID_BROWSER_UNDO);
             m_pView->getController().InvalidateFeature(ID_BROWSER_REDO);

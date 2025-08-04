@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package embeddedobj.test;
@@ -42,7 +42,7 @@ import com.sun.star.beans.*;
 import com.sun.star.lang.*;
 
 
-public class EmbedContFrame extends Frame 
+public class EmbedContFrame extends Frame
 {
 	private EmbedContApp m_aApp;
 
@@ -61,7 +61,7 @@ public class EmbedContFrame extends Frame
 		}
 	};
 
-	public EmbedContFrame( String sName ) 
+	public EmbedContFrame( String sName )
 	{
 		super( sName );
 		addWindowListener( m_aCloser );
@@ -113,18 +113,18 @@ public class EmbedContFrame extends Frame
 	    // Get component context
         XComponentContext xComponentContext =
         	com.sun.star.comp.helper.Bootstrap.createInitialComponentContext( null );
-        
+
         // initial serviceManager
         XMultiComponentFactory xLocalServiceManager = xComponentContext.getServiceManager();
-                
+
         // create a connector, so that it can contact the office
         Object  oUrlResolver  = xLocalServiceManager.createInstanceWithContext( "com.sun.star.bridge.UnoUrlResolver",
 																				xComponentContext );
         XUnoUrlResolver xUrlResolver = (XUnoUrlResolver)UnoRuntime.queryInterface( XUnoUrlResolver.class, oUrlResolver );
-        
+
         Object oInitialObject = xUrlResolver.resolve( sConnectionString );
         XNamingService xName = (XNamingService)UnoRuntime.queryInterface( XNamingService.class, oInitialObject );
-        
+
         XMultiServiceFactory xMSF = null;
         if( xName != null ) {
             Object oMSF = xName.getRegisteredObject( "StarOffice.ServiceManager" );
@@ -132,7 +132,7 @@ public class EmbedContFrame extends Frame
         }
 		else
 			System.out.println( "Error: Can't get XNamingService interface from url resolver!" );
-        
+
         return xMSF;
 	}
-}  
+}

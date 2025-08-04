@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -140,12 +140,12 @@ TableDesignPane::TableDesignPane( ::Window* pParent, ViewShellBase& rBase, bool 
         else
             mnOrgOffsetY[i] = 0;
     }
-    
+
 	// get current controller and initialize listeners
 	try
 	{
 		mxView = Reference< XDrawView >::query(mrBase.GetController());
-		addListener();	
+		addListener();
 
 		Reference< XController > xController( mrBase.GetController(), UNO_QUERY_THROW );
 		Reference< XStyleFamiliesSupplier > xFamiliesSupp( xController->getModel(), UNO_QUERY_THROW );
@@ -218,7 +218,7 @@ LayoutSize TableDesignPane::GetHeightForWidth (const sal_Int32 nWidth)
         Size aItemSize = pValueSet->CalcItemSizePixel(aImage.GetSizePixel());
         aItemSize.Width() += 10;
         aItemSize.Height() += 10;
-        
+
         int nColumnCount = (pValueSet->GetSizePixel().Width() - pValueSet->GetScrollWidth()) / aItemSize.Width();
         if (nColumnCount < 1)
             nColumnCount = 1;
@@ -297,7 +297,7 @@ void TableDesignPane::ApplyStyle()
 			{
 				SfxRequest aReq( SID_TABLE_STYLE, SFX_CALLMODE_SYNCHRON, SFX_APP()->GetPool() );
 				aReq.AppendItem( SfxStringItem( SID_TABLE_STYLE, sStyleName ) );
-				
+
 				rtl::Reference< sdr::SelectionController > xController( pView->getSelectionController() );
 				if( xController.is() )
 					xController->Execute( aReq );
@@ -342,14 +342,14 @@ void TableDesignPane::ApplyOptions()
 {
 	static sal_uInt16 gParamIds[CB_BANDED_COLUMNS-CB_HEADER_ROW+1] =
 	{
-		ID_VAL_USEFIRSTROWSTYLE, ID_VAL_USELASTROWSTYLE, ID_VAL_USEBANDINGROWSTYLE, 
+		ID_VAL_USEFIRSTROWSTYLE, ID_VAL_USELASTROWSTYLE, ID_VAL_USEBANDINGROWSTYLE,
 		ID_VAL_USEFIRSTCOLUMNSTYLE, ID_VAL_USELASTCOLUMNSTYLE, ID_VAL_USEBANDINGCOLUMNSTYLE
 	};
 
 	if( mxSelectedTable.is() )
 	{
 		SfxRequest aReq( SID_TABLE_STYLE_SETTINGS, SFX_CALLMODE_SYNCHRON, SFX_APP()->GetPool() );
-			
+
 		for( sal_uInt16 i = 0; i < (CB_BANDED_COLUMNS-CB_HEADER_ROW+1); ++i )
 		{
 			aReq.AppendItem( SfxBoolItem( gParamIds[i], static_cast< CheckBox* >( mxControls[CB_HEADER_ROW+i].get() )->IsChecked() ) );
@@ -400,7 +400,7 @@ void TableDesignPane::onSelectionChanged()
 			}
 
 			Reference< XShapeDescriptor > xDesc( aSel, UNO_QUERY );
-			if( xDesc.is() && 
+			if( xDesc.is() &&
 				( xDesc->getShapeType().equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( "com.sun.star.drawing.TableShape" ) ) ||
 				  xDesc->getShapeType().equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( "com.sun.star.presentation.TableShape" ) ) ) )
 			{
@@ -466,7 +466,7 @@ void TableDesignPane::updateLayout()
             Size aItemSize = pValueSet->CalcItemSizePixel(aImage.GetSizePixel());
 			pValueSet->SetItemWidth( aItemSize.Width() );
 			pValueSet->SetItemHeight( aItemSize.Height() );
-			
+
             aItemSize.Width() += 10;
             aItemSize.Height() += 10;
             int nColumnCount = (aValueSetSize.Width() - pValueSet->GetScrollWidth()) / aItemSize.Width();
@@ -483,7 +483,7 @@ void TableDesignPane::updateLayout()
 
 			pValueSet->SetColCount ((sal_uInt16)nColumnCount);
             pValueSet->SetLineCount ((sal_uInt16)nRowCount);
- 
+
 			if( !mbModal )
 			{
 				WinBits nStyle = pValueSet->GetStyle() & ~(WB_VSCROLL);
@@ -763,7 +763,7 @@ static void FillCellInfoMatrix( const CellInfoVector& rStyle, const TableStyleSe
 					}
 				}
 			}
-			
+
 			if( !xCellInfo.get() )
 			{
 				if( rSettings.mbUseColumnBanding )
@@ -800,7 +800,7 @@ const Bitmap CreateDesignPreview( const Reference< XIndexAccess >& xTableStyle, 
 	CellInfoMatrix aMatrix;
 	FillCellInfoMatrix( aCellInfoVector, rSettings, aMatrix );
 
-// bbbbbbbbbbbb w = 12 pixel 
+// bbbbbbbbbbbb w = 12 pixel
 // bccccccccccb h = 7 pixel
 // bccccccccccb b = border color
 // bcttttttttcb c = cell color

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -128,7 +128,7 @@ public class JavaTools
 
     /**converts a list of Integer values included in an Integer vector to a list of int values
      *
-     * 
+     *
      * @param _aIntegerVector
      * @return
      */
@@ -153,8 +153,8 @@ public class JavaTools
     }
 
     /**converts a list of Boolean values included in a Boolean vector to a list of boolean values
-     * 
-     * 
+     *
+     *
      * @param _aBooleanVector
      * @return
      */
@@ -516,8 +516,8 @@ public class JavaTools
                 {
                     retvector.add(baselist[i]);
                 //          else
-                // here you could call the method of a defined interface to notify the calling method                                           
-                //      }       
+                // here you could call the method of a defined interface to notify the calling method
+                //      }
                 }
             }
             retarray = new String[retvector.size()];
@@ -541,7 +541,7 @@ public class JavaTools
                     {
                         retvector.add(baselist[i]);
                     //          else
-                    // here you could call the method of a defined interface to notify the calling method                                           
+                    // here you could call the method of a defined interface to notify the calling method
                     }
                 }
                 retarray = new String[retvector.size()][2];
@@ -589,7 +589,7 @@ public class JavaTools
     /**
      * searches a multidimensional array for duplicate fields. According to the following example
      * SlaveFieldName1 ;SlaveFieldName2; SlaveFieldName3
-     * MasterFieldName1;MasterFieldName2;MasterFieldName3 
+     * MasterFieldName1;MasterFieldName2;MasterFieldName3
      * The entries SlaveFieldNameX and MasterFieldNameX are grouped together and then the created groups are compared
      * If a group is duplicate the entry of the second group is returned.
      * @param _scomplist

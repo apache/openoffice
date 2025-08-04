@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,12 +41,12 @@ using namespace ::xmloff::token;
 
 TYPEINIT1( XMLControlOASISTransformerContext, XMLTransformerContext );
 
-XMLControlOASISTransformerContext::XMLControlOASISTransformerContext( 
-		XMLTransformerBase& rImp, 
+XMLControlOASISTransformerContext::XMLControlOASISTransformerContext(
+		XMLTransformerBase& rImp,
 		const OUString& rQName,
 	    sal_Bool bCreateControl	) :
 	XMLTransformerContext( rImp, rQName ),
-	m_aElemQName( rImp.GetNamespaceMap().GetQNameByKey( XML_NAMESPACE_FORM, 
+	m_aElemQName( rImp.GetNamespaceMap().GetQNameByKey( XML_NAMESPACE_FORM,
 							::xmloff::token::GetXMLToken( XML_CONTROL ) ) ),
 	m_bCreateControl( bCreateControl )
 {
@@ -56,7 +56,7 @@ XMLControlOASISTransformerContext::~XMLControlOASISTransformerContext()
 {
 }
 
-void XMLControlOASISTransformerContext::StartElement( 
+void XMLControlOASISTransformerContext::StartElement(
 	const Reference< XAttributeList >& rAttrList )
 {
 
@@ -69,7 +69,7 @@ void XMLControlOASISTransformerContext::StartElement(
 //		GetTransformer().ProcessAttrList( xAttrList, OOO_SHAPE_ACTIONS,
 //										  sal_True );
 
-	XMLMutableAttributeList *pControlMutableAttrList = 
+	XMLMutableAttributeList *pControlMutableAttrList =
 		m_bCreateControl ? new XMLMutableAttributeList : 0;
 	Reference< XAttributeList > xControlAttrList( pControlMutableAttrList );
 
@@ -79,7 +79,7 @@ void XMLControlOASISTransformerContext::StartElement(
 		const OUString& rAttrName = xAttrList->getNameByIndex( i );
 		OUString aLocalName;
 		sal_uInt16 nPrefix =
-			GetTransformer().GetNamespaceMap().GetKeyByAttrName( rAttrName, 
+			GetTransformer().GetNamespaceMap().GetKeyByAttrName( rAttrName,
 																 &aLocalName );
 		XMLTransformerActions::key_type aKey( nPrefix, aLocalName );
 		XMLTransformerActions::const_iterator aIter =
@@ -88,7 +88,7 @@ void XMLControlOASISTransformerContext::StartElement(
 		{
 			if( !pMutableAttrList )
 			{
-				pMutableAttrList = 
+				pMutableAttrList =
 					new XMLMutableAttributeList( rAttrList );
 				xAttrList = pMutableAttrList;
 			}
@@ -98,7 +98,7 @@ void XMLControlOASISTransformerContext::StartElement(
 			case XML_ATACTION_MOVE_TO_ELEM:
 				if( m_bCreateControl )
 				{
-					pControlMutableAttrList->AddAttribute( rAttrName, 
+					pControlMutableAttrList->AddAttribute( rAttrName,
 														   rAttrValue );
 					pMutableAttrList->RemoveAttributeByIndex( i );
 					--i;
@@ -110,16 +110,16 @@ void XMLControlOASISTransformerContext::StartElement(
 					OUString aAttrValue( rAttrValue );
 					sal_uInt16 nValPrefix =
 						static_cast<sal_uInt16>( (*aIter).second.m_nParam2 );
-					GetTransformer().RemoveNamespacePrefix( aAttrValue, 
+					GetTransformer().RemoveNamespacePrefix( aAttrValue,
 															nValPrefix );
-					OUString aNewAttrQName( 
-						GetTransformer().GetNamespaceMap().GetQNameByKey( 
-							(*aIter).second.GetQNamePrefixFromParam1(), 
-							::xmloff::token::GetXMLToken( 
+					OUString aNewAttrQName(
+						GetTransformer().GetNamespaceMap().GetQNameByKey(
+							(*aIter).second.GetQNamePrefixFromParam1(),
+							::xmloff::token::GetXMLToken(
 								(*aIter).second.GetQNameTokenFromParam1()) ) );
 					if( m_bCreateControl )
 					{
-						pControlMutableAttrList->AddAttribute( aNewAttrQName, 
+						pControlMutableAttrList->AddAttribute( aNewAttrQName,
 															   aAttrValue );
 						pMutableAttrList->RemoveAttributeByIndex( i );
 						--i;
@@ -127,7 +127,7 @@ void XMLControlOASISTransformerContext::StartElement(
 					}
 					else
 					{
-						pMutableAttrList->RenameAttributeByIndex( i, 
+						pMutableAttrList->RenameAttributeByIndex( i,
 															  aNewAttrQName );
 						pMutableAttrList->SetValueByIndex( i, aAttrValue );
 					}
@@ -148,7 +148,7 @@ void XMLControlOASISTransformerContext::StartElement(
 	}
 
 	if( m_bCreateControl )
-		GetTransformer().GetDocHandler()->startElement( m_aElemQName, 
+		GetTransformer().GetDocHandler()->startElement( m_aElemQName,
 														xControlAttrList );
 	XMLTransformerContext::StartElement( xAttrList );
 }

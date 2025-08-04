@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -166,10 +166,10 @@ protected:
     virtual void		drawPolygon( sal_uInt32 nPoints, const SalPoint* pPtAry );
     virtual void		drawPolyPolygon( sal_uInt32 nPoly, const sal_uInt32* pPoints, PCONSTSALPOINT* pPtAry );
     virtual bool        drawPolyPolygon( const ::basegfx::B2DPolyPolygon&, double fTransparency );
-    virtual bool        drawPolyLine( 
-        const ::basegfx::B2DPolygon&, 
-        double fTransparency, 
-        const ::basegfx::B2DVector& rLineWidth, 
+    virtual bool        drawPolyLine(
+        const ::basegfx::B2DPolygon&,
+        double fTransparency,
+        const ::basegfx::B2DVector& rLineWidth,
         basegfx::B2DLineJoin,
         com::sun::star::drawing::LineCap);
     virtual sal_Bool	drawPolyLineBezier( sal_uInt32 nPoints, const SalPoint* pPtAry, const sal_uInt8* pFlgAry );
@@ -281,7 +281,7 @@ public:
     //             pFont: describes from which font to create a subset
     //             pGlyphIDs: the glyph ids to be extracted
     //             pEncoding: the character code corresponding to each glyph
-    //             pWidths: the advance widths of the correspoding glyphs (in PS font units)
+    //             pWidths: the advance widths of the corresponding glyphs (in PS font units)
     //             nGlyphs: the number of glyphs
     //             rInfo: additional outgoing information
     // implementation note: encoding 0 with glyph id 0 should be added implicitly

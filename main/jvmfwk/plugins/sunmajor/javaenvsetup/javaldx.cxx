@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -73,7 +73,7 @@ SAL_IMPLEMENT_MAIN_WITH_ARGS(argc, argv)
         return -1;
     }
 
-    
+
     JavaInfo * pInfo = NULL;
     errcode = jfw_getSelectedJRE( & pInfo);
 
@@ -87,7 +87,7 @@ SAL_IMPLEMENT_MAIN_WITH_ARGS(argc, argv)
         fprintf(stderr,"javaldx failed!\n");
         return -1;
     }
-    
+
     if (pInfo == NULL)
     {
         if (false == findAndSelect(&pInfo))
@@ -109,7 +109,7 @@ SAL_IMPLEMENT_MAIN_WITH_ARGS(argc, argv)
             return -1;
         }
     }
-    
+
     //Only do something if the sunjavaplugin created this JavaInfo
     rtl::OUString sVendor0(RTL_CONSTASCII_USTRINGPARAM("Oracle Corporation"));
     rtl::OUString sVendor1(RTL_CONSTASCII_USTRINGPARAM("Sun Microsystems Inc."));
@@ -134,11 +134,11 @@ SAL_IMPLEMENT_MAIN_WITH_ARGS(argc, argv)
             || sVendor9.equals(pInfo->sVendor) == sal_True
             || sVendor10.equals(pInfo->sVendor) == sal_True))
         return 0;
-    
+
     rtl::OString sPaths = getLD_LIBRARY_PATH(pInfo->arVendorData);
     fprintf(stdout, "%s\n", sPaths.getStr());
     jfw_freeJavaInfo(pInfo);
-    
+
     return 0;
 }
 

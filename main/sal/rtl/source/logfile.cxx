@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -58,8 +58,8 @@ namespace {
 static oslFileHandle g_aFile = 0;
 static sal_Bool g_bHasBeenCalled = sal_False;
 static const sal_Int32 g_BUFFERSIZE = 4096;
-static sal_Char *g_buffer = 0;	
-	
+static sal_Char *g_buffer = 0;
+
 class	LoggerGuard
 {
 public:
@@ -76,7 +76,7 @@ LoggerGuard::~LoggerGuard()
 			osl_writeFile( g_aFile, g_buffer, nConverted, (sal_uInt64 *)&nWritten );
 		osl_closeFile( g_aFile );
 		g_aFile = 0;
-		
+
 		rtl_freeMemory( g_buffer );
 		g_buffer = 0;
 		g_bHasBeenCalled = sal_False;
@@ -134,11 +134,11 @@ void init() {
 				info.Size = sizeof (oslProcessInfo);
 				if (osl_getProcessInfo (0, osl_Process_IDENTIFIER, &info) == osl_Process_E_None)
 					aProcessId = info.Ident;
-				
+
 				//	Construct name of log file and open the file.
 				OUStringBuffer buf( 128 );
 				buf.append( value );
-				
+
 				// if the filename ends with .nopid, the incoming filename is not modified
 				if( value.getLength() < 6 /* ".nopid" */ ||
 					rtl_ustr_ascii_compare_WithLength(
@@ -173,7 +173,7 @@ void init() {
 							osl_writeFile( g_aFile, g_buffer, nConverted , (sal_uInt64 *)&nWritten );
                         }
 					}
-					
+
 					nConverted = sprintf (g_buffer, "Process id is %" SAL_PRIuUINT32 "\n", aProcessId);
 					if( nConverted )
                     {

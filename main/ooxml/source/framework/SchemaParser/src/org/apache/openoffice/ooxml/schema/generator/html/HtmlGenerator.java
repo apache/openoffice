@@ -63,7 +63,7 @@ import org.apache.openoffice.ooxml.schema.model.simple.SimpleType;
 import org.apache.openoffice.ooxml.schema.model.simple.SimpleTypeReference;
 import org.apache.openoffice.ooxml.schema.model.simple.Union;
 
-/** Create a single HTML page that shows information about all 
+/** Create a single HTML page that shows information about all
  *  complex and simple types.
  */
 public class HtmlGenerator
@@ -90,7 +90,7 @@ public class HtmlGenerator
     }
 
 
-    
+
 
     /** Read a template HTML file, expand its $... references and write the resulting content.
      */
@@ -99,10 +99,10 @@ public class HtmlGenerator
         CopyFile("linking-template.html", true);
         maOut.close();
     }
-    
 
-    
-    
+
+
+
     private void CopyFile (
         final String sBasename,
         final boolean bIsTemplate)
@@ -115,14 +115,14 @@ public class HtmlGenerator
                         new File(
                             new File("bin/org/apache/openoffice/ooxml/schema/generator/html"),
                             sBasename))));
-            
+
             final Pattern aReferencePattern = Pattern.compile("^(.*?)\\$([^\\$]+)\\$(.*)$");
             while (true)
             {
                 final String sLine = aIn.readLine();
                 if (sLine == null)
                     break;
-                
+
                 if (bIsTemplate)
                 {
                     final Matcher aMatcher = aReferencePattern.matcher(sLine);
@@ -150,20 +150,20 @@ public class HtmlGenerator
                     maOut.printf("%s\n", sLine);
             }
             aIn.close();
-        } 
+        }
         catch (final Exception e)
         {
             e.printStackTrace();
         }
     }
-    
-    
-    
-    
+
+
+
+
     private void WriteJsonData ()
     {
         maOut.printf("Data={\n");
-        
+
         WriteTopLevelNodes(maSchemaBase.ComplexTypes.GetSorted());
         WriteTopLevelNodes(maSchemaBase.SimpleTypes.GetSorted());
         WriteTopLevelNodes(maSchemaBase.Groups.GetSorted());
@@ -172,15 +172,15 @@ public class HtmlGenerator
         maOut.printf("}\n");
     }
 
-    
-    
-    
+
+
+
     private void WriteTopLevelNodes (final Iterable<? extends INode> aNodes)
     {
         for (final INode aNode : aNodes)
         {
             maOut.printf("    \"%s\" : {\n", aNode.GetName().GetDisplayName());
-            
+
             final String sSavedIndentation = msIndentation;
             msIndentation += msSingleIndentation + msSingleIndentation;
             aNode.AcceptVisitor(this);
@@ -190,9 +190,9 @@ public class HtmlGenerator
         }
     }
 
-    
-    
-    
+
+
+
     @Override
     public void Visit (final All aNode)
     {
@@ -386,7 +386,7 @@ public class HtmlGenerator
         WriteLocation(aNode);
         WritePair("base-type", aNode.GetBaseType().GetDisplayName());
         WriteAttributes(aNode);
-        
+
         if (aNode.HasFeature(Restriction.EnumerationBit))
             WritePair("enumeration", Join(aNode.GetEnumeration(), ";"));
         if (aNode.HasFeature(Restriction.PatternBit))
@@ -509,10 +509,10 @@ public class HtmlGenerator
         WritePair("referenced-attribute-group", aReference.GetReferencedName().GetDisplayName());
         WriteAttributes(aReference);
     }
-    
-    
-    
-    
+
+
+
+
     private void WriteChildren (
         final INode aParent)
     {
@@ -523,22 +523,22 @@ public class HtmlGenerator
             for (final INode aChild : aParent.GetChildren())
             {
                 maOut.printf("%s%s{\n", msIndentation, msSingleIndentation, nIndex++);
-                
+
                 final String sSavedIndentation = msIndentation;
                 msIndentation += msSingleIndentation + msSingleIndentation;
                 aChild.AcceptVisitor(this);
                 msIndentation = sSavedIndentation;
-            
+
                 maOut.printf("%s%s},\n", msIndentation, msSingleIndentation);
-            }    
-                
+            }
+
             maOut.printf("%s]\n", msIndentation);
         }
     }
-    
-    
-    
-    
+
+
+
+
     private void WriteAttributes (
         final INode aParent)
     {
@@ -548,36 +548,36 @@ public class HtmlGenerator
             int nIndex = 0;
             for (final INode aAttribute: aParent.GetAttributes())
             {
-                
+
                 maOut.printf("%s%s{\n", msIndentation, msSingleIndentation, nIndex++);
-                
+
                 final String sSavedIndentation = msIndentation;
                 msIndentation += msSingleIndentation + msSingleIndentation;
                 aAttribute.AcceptVisitor(this);
                 msIndentation = sSavedIndentation;
-            
+
                 maOut.printf("%s%s},\n", msIndentation, msSingleIndentation);
-            }    
-                
+            }
+
             maOut.printf("%s],\n", msIndentation);
         }
     }
-    
-    
 
-    
+
+
+
     private void WriteLocation (
         final INode aNode)
     {
         if (aNode.GetLocation() == null)
             return;
-        
+
         WritePair("location", aNode.GetLocation().toString());
     }
 
 
 
-    
+
     private void WritePair (
         final String sKey,
         final String sValue)
@@ -585,15 +585,15 @@ public class HtmlGenerator
         maOut.printf("%s\"%s\"%s:%s\"%s\"%s\n", msIndentation, sKey, msSpace, msSpace, sValue, ",");
     }
 
-    
-    
-    
+
+
+
     private String Join (final Collection<String> aValues, final String sSeparator)
     {
         final Iterator<String> aIterator = aValues.iterator();
         if ( ! aIterator.hasNext())
             return "";
-        
+
         final StringBuffer aBuffer = new StringBuffer(aIterator.next());
         while (aIterator.hasNext())
         {
@@ -602,18 +602,18 @@ public class HtmlGenerator
         }
         return aBuffer.toString();
     }
-    
-    
-    
-    
+
+
+
+
     private String QuoteString (final String sValue)
     {
         return sValue.replace("<", "&lt;").replace(">", "&gt;").replace("\"", "&quot;");
     }
-    
-    
-    
-    
+
+
+
+
     private final SchemaBase maSchemaBase;
     private final Map<String, Schema> maTopLevelSchemas;
     private final PrintStream maOut;

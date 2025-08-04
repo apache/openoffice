@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -310,7 +310,7 @@ ScrollBarManager& SlideSorterController::GetScrollBarManager (void)
     OSL_ASSERT(mpInsertionIndicatorHandler.get()!=NULL);
     return mpInsertionIndicatorHandler;
 }
-    
+
 
 
 
@@ -370,11 +370,11 @@ bool SlideSorterController::Command (
 
     if (pWindow == NULL)
         return false;
-    
+
     ViewShell* pViewShell = mrSlideSorter.GetViewShell();
     if (pViewShell == NULL)
         return false;
-    
+
     switch (rEvent.GetCommand())
     {
         case COMMAND_CONTEXTMENU:
@@ -458,7 +458,7 @@ bool SlideSorterController::Command (
                     aMenuLocation = aBBox.Center();
                 }
             }
-            
+
             mbIsContextMenuOpen = true;
             if (pViewShell != NULL)
             {
@@ -556,7 +556,7 @@ void SlideSorterController::PreModelChange (void)
     if (mbPostModelChangePending)
         return;
     mbPreModelChangeDone = true;
-    
+
     if (mrSlideSorter.GetViewShell() != NULL)
         mrSlideSorter.GetViewShell()->Broadcast(
             ViewShellHint(ViewShellHint::HINT_COMPLEX_MODEL_CHANGE_START));
@@ -647,7 +647,7 @@ IMPL_LINK(SlideSorterController, WindowEventHandler, VclWindowEvent*, pEvent)
                 {
                     GetFocusManager().HideFocus();
                     mrView.GetToolTip().Hide();
-                    
+
                     // Select the current slide so that it is properly
                     // visualized when the focus is moved to the edit view.
                     GetPageSelector().SelectPage(GetCurrentSlideManager()->GetCurrentSlide());
@@ -668,7 +668,7 @@ IMPL_LINK(SlideSorterController, WindowEventHandler, VclWindowEvent*, pEvent)
                 if( bool(pActiveWindow) )
                     pActiveWindow->SetDrawMode(nDrawMode);
                 mrView.HandleDrawModeChange();
-                
+
                 // When the system font has changed a layout has to be done.
                 mrView.Resize();
                 FontProvider::Instance().Invalidate();

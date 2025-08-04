@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -44,7 +44,7 @@
 
 
 namespace chelp {
-	
+
 	class ResultSetBase
 		: public cppu::OWeakObject,
 		  public com::sun::star::lang::XComponent,
@@ -56,26 +56,26 @@ namespace chelp {
 		  public com::sun::star::ucb::XContentAccess
 	{
 	public:
-		
+
 		ResultSetBase( const com::sun::star::uno::Reference< com::sun::star::lang::XMultiServiceFactory >&  xMSF,
 					   const com::sun::star::uno::Reference< com::sun::star::ucb::XContentProvider >&  xProvider,
 					   sal_Int32 nOpenMode,
 					   const com::sun::star::uno::Sequence< com::sun::star::beans::Property >& seq,
 					   const com::sun::star::uno::Sequence< com::sun::star::ucb::NumberedSortingInfo >& seqSort );
-		
+
 		virtual ~ResultSetBase();
-		
+
 		// XInterface
 		virtual com::sun::star::uno::Any SAL_CALL
 		queryInterface(
 			const com::sun::star::uno::Type& aType )
 			throw( com::sun::star::uno::RuntimeException);
-		
+
 		virtual void SAL_CALL
 		acquire(
 			void )
 			throw();
-		
+
 		virtual void SAL_CALL
 		release(
 			void )
@@ -134,7 +134,7 @@ namespace chelp {
 			else
 				return false;
 		}
-		
+
 		virtual sal_Int8 SAL_CALL
 		getByte(
 			sal_Int32 columnIndex )
@@ -452,7 +452,7 @@ namespace chelp {
 			void  )
 			throw( com::sun::star::sdbc::SQLException,
 				   com::sun::star::uno::RuntimeException);
-		
+
 		// XCloseable
 
 		virtual void SAL_CALL
@@ -550,11 +550,11 @@ namespace chelp {
 		typedef std::vector< com::sun::star::uno::Reference< com::sun::star::ucb::XContentIdentifier > > IdentSet;
 		typedef std::vector< com::sun::star::uno::Reference< com::sun::star::sdbc::XRow > >              ItemSet;
 		typedef std::vector< rtl::OUString >                                                             PathSet;
-		
+
 		IdentSet                            m_aIdents;
 		ItemSet                             m_aItems;
 		PathSet                             m_aPath;
-		
+
 		com::sun::star::uno::Sequence< com::sun::star::beans::Property >           m_sProperty;
 		com::sun::star::uno::Sequence< com::sun::star::ucb::NumberedSortingInfo >  m_sSortingInfo;
 

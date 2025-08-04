@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -249,7 +249,7 @@ bool ImplReadDIBInfoHeader(SvStream& rIStm, DIBV5Header& rHeader, bool& bTopDown
     {
 		rIStm.SetError( SVSTREAM_FILEFORMAT_ERROR );
     }
-    
+
     // #144105# protect a little against damaged files
     if( rHeader.nSizeImage > ( 16 * static_cast< sal_uInt32 >( rHeader.nWidth * rHeader.nHeight ) ) )
     {
@@ -312,7 +312,7 @@ void ImplDecodeRLE( sal_uInt8* pBuffer, DIBV5Header& rHeader, BitmapWriteAccess&
 					for( sal_uLong i = 0UL; i < nCountByte; i++ )
 					{
 						cTmp = *pRLE++;
-						
+
 						if( nX < nWidth )
 							rAcc.SetPixelIndex( nY, nX++, cTmp >> 4 );
 
@@ -461,7 +461,7 @@ bool ImplReadDIBBits(SvStream& rIStm, DIBV5Header& rHeader, BitmapWriteAccess& r
 			const long nI(bTopDown ? 1 : -1);
 			long nY(bTopDown ? 0 : nHeight - 1);
 			long nCount(nHeight);
-	
+
 			switch(rHeader.nBitCount)
 			{
 				case( 1 ):
@@ -647,7 +647,7 @@ bool ImplReadDIBBody( SvStream& rIStm, Bitmap& rBmp, Bitmap* pBmpAlpha, sal_uLon
 
             // some clipboard entries have alpha mask on zero to say that there is
             // no alpha; do only use this when the other masks are set. The MS docu
-            // says that that masks are only to be set when bV5Compression is set to 
+            // says that that masks are only to be set when bV5Compression is set to
             // BI_BITFIELDS, but there seem to exist a wild variety of usages...
             if((bRedSet || bGreenSet || bBlueSet) && (0 == aHeader.nV5AlphaMask))
             {
@@ -690,17 +690,17 @@ bool ImplReadDIBBody( SvStream& rIStm, Bitmap& rBmp, Bitmap* pBmpAlpha, sal_uLon
 				// read coding information
 				rIStm >> nCodedSize >> nUncodedSize >> aHeader.nCompression;
 				pData = (sal_uInt8*) rtl_allocateMemory( nUncodedSize );
-				
+
 				// decode buffer
 				nCodedPos = rIStm.Tell();
 				aCodec.BeginCompression();
 				aCodec.Read( rIStm, pData, nUncodedSize );
 				aCodec.EndCompression();
-				
+
 				// skip unread bytes from coded buffer
 				rIStm.SeekRel( nCodedSize - ( rIStm.Tell() - nCodedPos ) );
-				
-				// set decoded bytes to memory stream, 
+
+				// set decoded bytes to memory stream,
 				// from which we will read the bitmap data
 				pIStm = pMemStm = new SvMemoryStream;
 				pMemStm->SetBuffer( (char*) pData, nUncodedSize, false, nUncodedSize );
@@ -732,8 +732,8 @@ bool ImplReadDIBBody( SvStream& rIStm, Bitmap& rBmp, Bitmap* pBmpAlpha, sal_uLon
 
 				if(bRet && aHeader.nXPelsPerMeter && aHeader.nYPelsPerMeter)
 				{
-					MapMode aMapMode( 
-                        MAP_MM, 
+					MapMode aMapMode(
+                        MAP_MM,
                         Point(),
 						Fraction(1000, aHeader.nXPelsPerMeter),
 						Fraction(1000, aHeader.nYPelsPerMeter));
@@ -747,7 +747,7 @@ bool ImplReadDIBBody( SvStream& rIStm, Bitmap& rBmp, Bitmap* pBmpAlpha, sal_uLon
             {
 				rtl_freeMemory(pData);
             }
-			
+
 			delete pMemStm;
 			aNewBmp.ReleaseAccess(pAcc);
 
@@ -1017,11 +1017,11 @@ bool ImplWriteDIBBits(SvStream& rOStm, BitmapReadAccess& rAcc, BitmapReadAccess*
                 {
 					bNative = true;
                 }
-                
+
                 break;
 			}
 
-			default: 
+			default:
             {
                 break;
             }
@@ -1241,7 +1241,7 @@ bool ImplWriteDIBBody(const Bitmap& rBitmap, SvStream& rOStm, BitmapReadAccess& 
 	rOStm << aHeader.nPlanes;
 	rOStm << aHeader.nBitCount;
 	rOStm << aHeader.nCompression;
-	
+
     nImageSizePos = rOStm.Tell();
 	rOStm.SeekRel( sizeof( aHeader.nSizeImage ) );
 
@@ -1294,7 +1294,7 @@ bool ImplWriteDIBBody(const Bitmap& rBitmap, SvStream& rOStm, BitmapReadAccess& 
         {
 			ImplWriteDIBPalette(aMemStm, rAcc);
         }
-		
+
 		// write uncoded bits
 		bRet = ImplWriteDIBBits(aMemStm, rAcc, pAccAlpha, nCompression, aHeader.nSizeImage);
 
@@ -1303,12 +1303,12 @@ bool ImplWriteDIBBody(const Bitmap& rBitmap, SvStream& rOStm, BitmapReadAccess& 
 
 		// seek over compress info
 		rOStm.SeekRel(12);
-		
+
 		// write compressed data
 		aCodec.BeginCompression(3);
 		aCodec.Write(rOStm, (sal_uInt8*)aMemStm.GetData(), nUncodedSize);
 		aCodec.EndCompression();
-		
+
 		// update compress info ( coded size, uncoded size, uncoded compression )
         nLastPos = rOStm.Tell();
 		nCodedSize = nLastPos - nCodedPos - 12;
@@ -1356,9 +1356,9 @@ bool ImplWriteDIBFileHeader(SvStream& rOStm, BitmapReadAccess& rAcc, bool bUseDI
 //////////////////////////////////////////////////////////////////////////////
 
 bool ImplReadDIB(
-    Bitmap& rTarget, Bitmap* 
-    pTargetAlpha, 
-    SvStream& rIStm, 
+    Bitmap& rTarget, Bitmap*
+    pTargetAlpha,
+    SvStream& rIStm,
     bool bFileHeader)
 {
     const sal_uInt16 nOldFormat(rIStm.GetNumberFormatInt());
@@ -1396,10 +1396,10 @@ bool ImplReadDIB(
 }
 
 bool ImplWriteDIB(
-    const Bitmap& rSource, 
-    const Bitmap* pSourceAlpha, 
-    SvStream& rOStm, 
-    bool bCompressed, 
+    const Bitmap& rSource,
+    const Bitmap* pSourceAlpha,
+    SvStream& rOStm,
+    bool bCompressed,
     bool bFileHeader)
 {
     const Size aSizePix(rSource.GetSizePixel());
@@ -1465,15 +1465,15 @@ bool ImplWriteDIB(
 //////////////////////////////////////////////////////////////////////////////
 
 bool ReadDIB(
-    Bitmap& rTarget, 
-    SvStream& rIStm, 
+    Bitmap& rTarget,
+    SvStream& rIStm,
     bool bFileHeader)
 {
     return ImplReadDIB(rTarget, 0, rIStm, bFileHeader);
 }
 
 bool ReadDIBBitmapEx(
-    BitmapEx& rTarget, 
+    BitmapEx& rTarget,
     SvStream& rIStm)
 {
     Bitmap aBmp;
@@ -1553,8 +1553,8 @@ bool ReadDIBBitmapEx(
 }
 
 bool ReadDIBV5(
-    Bitmap& rTarget, 
-    Bitmap& rTargetAlpha, 
+    Bitmap& rTarget,
+    Bitmap& rTargetAlpha,
     SvStream& rIStm)
 {
     return ImplReadDIB(rTarget, &rTargetAlpha, rIStm, true);
@@ -1563,16 +1563,16 @@ bool ReadDIBV5(
 //////////////////////////////////////////////////////////////////////////////
 
 bool WriteDIB(
-    const Bitmap& rSource, 
-    SvStream& rOStm, 
-    bool bCompressed, 
+    const Bitmap& rSource,
+    SvStream& rOStm,
+    bool bCompressed,
     bool bFileHeader)
 {
     return ImplWriteDIB(rSource, 0, rOStm, bCompressed, bFileHeader);
 }
 
 bool WriteDIBBitmapEx(
-    const BitmapEx& rSource, 
+    const BitmapEx& rSource,
     SvStream& rOStm)
 {
     if(ImplWriteDIB(rSource.GetBitmap(), 0, rOStm, true, true))
@@ -1596,8 +1596,8 @@ bool WriteDIBBitmapEx(
 }
 
 bool WriteDIBV5(
-    const Bitmap& rSource, 
-    const Bitmap& rSourceAlpha, 
+    const Bitmap& rSource,
+    const Bitmap& rSourceAlpha,
     SvStream& rOStm)
 {
     return ImplWriteDIB(rSource, &rSourceAlpha, rOStm, false, true);

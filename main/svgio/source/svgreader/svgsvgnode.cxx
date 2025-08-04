@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -323,12 +323,12 @@ namespace svgio
                     // If it is relative, the question is to what. The previous implementation assumed relative to the
                     // local ViewBox which is implied by (4.2 Basic data types):
                     //
-                    // "Note that the non-property <length> definition also allows a percentage unit identifier. 
-                    // The meaning of a percentage length value depends on the attribute for which the percentage 
-                    // length value has been specified. Two common cases are: (a) when a percentage length value 
-                    // represents a percentage of the viewport width or height (refer to the section that discusses 
-                    // units in general), and (b) when a percentage length value represents a percentage of the 
-                    // bounding box width or height on a given object (refer to the section that describes object 
+                    // "Note that the non-property <length> definition also allows a percentage unit identifier.
+                    // The meaning of a percentage length value depends on the attribute for which the percentage
+                    // length value has been specified. Two common cases are: (a) when a percentage length value
+                    // represents a percentage of the viewport width or height (refer to the section that discusses
+                    // units in general), and (b) when a percentage length value represents a percentage of the
+                    // bounding box width or height on a given object (refer to the section that describes object
                     // bounding box units)."
 
                     // Comparisons with common browsers show, that it's mostly interpreted relative to the viewport
@@ -603,7 +603,7 @@ namespace svgio
                             {
                                 // no clip needed, but an invisible HiddenGeometryPrimitive2D
                                 // to allow getting the full Svg range using the primitive mechanisms.
-                                // This is needed since e.g. an SdrObject using this as graphic will 
+                                // This is needed since e.g. an SdrObject using this as graphic will
                                 // create a mapping transformation to exactly map the content to it's
                                 // real life size
                                 const drawinglayer::primitive2d::Primitive2DReference xLine(

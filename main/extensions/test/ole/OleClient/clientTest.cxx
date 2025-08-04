@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -88,7 +88,7 @@ extern "C" int __cdecl main( int , char **)
 		return -1;
 	}
 
-	
+
 	_Module.Init( ObjectMap, GetModuleHandle( NULL));
 
 	if( FAILED(hr=doTest()))
@@ -148,17 +148,17 @@ bool doParameterTest(const Reference<XInvocation> & inv)
     Sequence<Any> seqNamed5(arArgs, 1);
     arArgs[0] <<= arg2;
     Sequence<Any> seqNamed6(arArgs, 1);
-    
+
     arArgs[0] <<= (sal_Int32) 123;
     arArgs[1] <<= (sal_Int32) 456;
     Sequence<Any> seqPositional(arArgs, 2);
     arArgs[0] <<= (sal_Int32) 123;
     Sequence<Any> seqPositional2(arArgs, 1);
-    
+
     arArgs[0] <<= Any();
     arArgs[1] <<= Any();
     Sequence<Any> seqPositional3(arArgs, 2);
-    
+
     arArgs[0] <<= (sal_Int32) 123;
     arArgs[1] <<= SCode(DISP_E_PARAMNOTFOUND);
     Sequence<Any> seqOutOpt1(arArgs, 2);
@@ -176,7 +176,7 @@ bool doParameterTest(const Reference<XInvocation> & inv)
     arArgs1[2] <<= (sal_Int32) 0;
     arArgs1[3] <<= (sal_Int32) 0;
     Sequence<Any> seqMix0(arArgs1, 4);
-    
+
     arArgs1[0] <<= (sal_Int32) 123;
     arArgs1[1] <<= (sal_Int32) 456;
     arArgs1[2] <<= arg3;
@@ -211,7 +211,7 @@ bool doParameterTest(const Reference<XInvocation> & inv)
     inv->invoke(OUString(L"optional5"), seqPositional, seqIndices, seqOut);
     if ( ! checkOutArgs(seqOut, seqIndices, seqPositional))
         return false;
-    
+
     //2 optional args, 1 provided
     seqIndices.realloc(0);
     seqOut.realloc(0);
@@ -237,7 +237,7 @@ bool doParameterTest(const Reference<XInvocation> & inv)
     inv->invoke(OUString(L"optional5"), seqPositional3, seqIndices, seqOut);
     if ( ! checkOutArgs(seqOut, seqIndices, seqOutOpt2))
         return false;
-    
+
     //named args --------------------------------------------
 
     // 2 named args, correct position
@@ -285,7 +285,7 @@ bool doParameterTest(const Reference<XInvocation> & inv)
     inv->invoke(OUString(L"optional5"), seqNamed4, seqIndices, seqOut);
     if ( ! checkOutArgs(seqOut, seqIndices, seqNamed2 ))
         return false;
-    
+
 
     //2 args, 1 provided (correct order)
     seqIndices.realloc(0);
@@ -347,8 +347,8 @@ bool doParameterTest(const Reference<XInvocation> & inv)
     inv->invoke(OUString(L"optional7"), seqMix2Out, seqIndices, seqOut);
     if ( ! checkOutArgs(seqOut, seqIndices, seqMix2Out))
          return false;
- 
-	
+
+
     return true;
 }
 bool doPropertyTest(const Reference<XInvocation> & inv)
@@ -375,7 +375,7 @@ bool doPropertyTest(const Reference<XInvocation> & inv)
     Any inrefDecimal, outrefDecimal;
     Any inParamsLong, outParamsLong;
     Reference<XInterface> xintUnknown(getComObject(L"AxTestComponents.Foo"));
-    
+
 	inBool <<= (sal_Bool) sal_True;
 	inv->setValue(OUString(L"prpBool"), inBool);
 	outBool = inv->getValue(OUString(L"prpBool"));
@@ -416,7 +416,7 @@ bool doPropertyTest(const Reference<XInvocation> & inv)
     inUnknown <<= xintUnknown;
 	inv->setValue(OUString(L"prpUnknown"), inUnknown);
 	outUnknown = inv->getValue(OUString(L"prpUnknown"));
-    
+
     Currency cur(99999);
     inCY <<= cur;
     inv->setValue(OUString(L"prpCurrency"), inCY);
@@ -440,7 +440,7 @@ bool doPropertyTest(const Reference<XInvocation> & inv)
     inrefLong <<= (sal_Int32) 123456;
     inv->setValue(OUString(L"prprefLong"), inrefLong);
     outrefLong = inv->getValue(OUString(L"prprefLong"));
-    
+
 	inrefVariant <<= OUString(L"A string in an any");
 	inv->setValue(OUString(L"prprefVariant"), inrefVariant);
 	outrefVariant = inv->getValue(OUString(L"prprefVariant"));
@@ -452,7 +452,7 @@ bool doPropertyTest(const Reference<XInvocation> & inv)
 
     if (inBool != outBool || inByte != outByte || inShort != outShort || inLong != outLong
  		|| inFloat != outFloat || inDouble != outDouble || inString != outString
- 		|| inVariant != outVariant || inObject != outObject 
+ 		|| inVariant != outVariant || inObject != outObject
         || inUnknown != outUnknown || inCY != outCY
         || inDate != outDate || inDecimal != outDecimal || inSCode != outSCode
         || inrefLong != outrefLong ||inrefVariant != outrefVariant
@@ -482,7 +482,7 @@ bool doPropertyWithArgumentTest(const Reference<XInvocation> & inv)
     Sequence<Any> seqMultiArgPut2(arMultiArgs, 2);
 
     arMultiArgs[0] <<= NamedArgument(OUString(L"val2"), makeAny((sal_Int32) 1));
-    arMultiArgs[1] <<= PropertyPutArgument(makeAny((sal_Int32) 3));   
+    arMultiArgs[1] <<= PropertyPutArgument(makeAny((sal_Int32) 3));
     Sequence<Any> seqMultiArgPut3(arMultiArgs, 2);
 
     arMultiArgs[0] <<= NamedArgument(OUString(L"val2"), makeAny((sal_Int32) 1));
@@ -497,12 +497,12 @@ bool doPropertyWithArgumentTest(const Reference<XInvocation> & inv)
     arMultiArgs[1] <<= makeAny((sal_Int32) 2);
     Sequence<Any> seqMultiArgGet1(arMultiArgs, 2);
     Sequence<Any> seqMultiArgGet2(arMultiArgs, 1);
-    
+
 
     arMultiArgs[0] <<= makeAny((sal_Int32) 0);
     arMultiArgs[1] <<= PropertyPutArgument(makeAny((sal_Int32) 0));
     Sequence<Any> seqMultiArgPut5(arMultiArgs, 2);
-    
+
     arMultiArgs[0] <<= makeAny((sal_Int32) 1);
     arMultiArgs[1] <<= PropertyPutArgument(makeAny((sal_Int32) 2));
     Sequence<Any> seqMultiArgPut6(arMultiArgs, 2);
@@ -514,7 +514,7 @@ bool doPropertyWithArgumentTest(const Reference<XInvocation> & inv)
     arMultiArgs[0] = makeAny((sal_Int32) 0);
     arMultiArgs[1] = makeAny((sal_Int32) 0);
     Sequence<Any> seqMultiVoid2(arMultiArgs, 2);
-    
+
     //[propput, ...] HRESULT prpMultiArg1([in,out,optional] VARIANT* val1, [in,out,optional] VARIANT* val2, [in] VARIANT* newVal);
     //[propget, ...] HRESULT prpMultiArg1([in,out,optional] VARIANT* val1, [in,out,optional] VARIANT* val2, [out, optional, retval] VARIANT* pVal);
     seqIndices.realloc( 0);
@@ -548,7 +548,7 @@ bool doPropertyWithArgumentTest(const Reference<XInvocation> & inv)
 
     arMultiArgs[0] = makeAny((sal_Int32) 1);
     arMultiArgs[1] = makeAny((SCode(DISP_E_PARAMNOTFOUND)));
-                          
+
     if (anyRet != ((PropertyPutArgument const *) seqMultiArgPut2[1].getValue())->Value
         || ! checkOutArgs(seqOut, seqIndices, Sequence<Any>(arMultiArgs, 2)))
     {
@@ -613,7 +613,7 @@ bool doPropertyWithArgumentTest(const Reference<XInvocation> & inv)
     if ( anyRet !=  ((PropertyPutArgument const*) seqMultiArgPut6[1].getValue())->Value
          || !checkOutArgs(seqOut, seqIndices, seqMultiArgGet2))
         return false;
-    
+
 
     //hasProperty, hasMethod
     if (inv->hasProperty(OUSTR("prpMultiArg1")))
@@ -627,7 +627,7 @@ bool doPropertyWithArgumentTest(const Reference<XInvocation> & inv)
     if ( ! inv->hasMethod(OUSTR("inLong")))
         return false;
 
-	return true;    
+	return true;
 }
 bool doSimpleTest(const Reference<XInvocation> & inv)
 {
@@ -652,7 +652,7 @@ bool doSimpleTest(const Reference<XInvocation> & inv)
     Any inrefVariant, outrefVariant;
     Any inrefDecimal, outrefDecimal;
 
-	Reference<XInterface> xIntFoo(getComObject(L"AxTestComponents.Foo"));	
+	Reference<XInterface> xIntFoo(getComObject(L"AxTestComponents.Foo"));
 	//###################################################################################
 	//	in and out parameter
 	//###################################################################################
@@ -742,7 +742,7 @@ bool doSimpleTest(const Reference<XInvocation> & inv)
 	seqOut.realloc(0);
     inv->invoke(OUString(L"outDate"), Sequence< Any > (& outDate, 1), seqIndices, seqOut);
     outDate <<= seqOut[0];
-    
+
     Decimal dec(3, 0, 0xffffffff, 0xffffffff, 0xfffffff0);
     inDecimal <<= dec;
     inv->invoke(OUString(L"inDecimal"), Sequence<Any>( & inDecimal, 1), seqIndices, seqOut);
@@ -761,7 +761,7 @@ bool doSimpleTest(const Reference<XInvocation> & inv)
 
     if (inBool != outBool || inByte != outByte || inShort != outShort || inLong != outLong
 		|| inFloat != outFloat || inDouble != outDouble || inString != outString
-		|| inVariant != outVariant || inObject != outObject || inUnknown != outUnknown 
+		|| inVariant != outVariant || inObject != outObject || inUnknown != outUnknown
 		|| inCY != outCY
         || inDate != outDate || inDecimal != outDecimal || inSCode != outSCode)
 		return false;
@@ -779,7 +779,7 @@ bool doSimpleTest(const Reference<XInvocation> & inv)
 	seqOut.realloc(0);
 	inv->invoke(OUString(L"inoutByte"), Sequence< Any > ( & inByte, 1), seqIndices, seqOut);
 	outByte <<= seqOut[0];
-	
+
 	outShort = Any();
 	seqIndices.realloc( 0);
 	seqOut.realloc(0);
@@ -797,7 +797,7 @@ bool doSimpleTest(const Reference<XInvocation> & inv)
 	seqOut.realloc(0);
 	inv->invoke(OUString(L"inoutString"), Sequence< Any > ( & inString, 1), seqIndices, seqOut);
 	outString <<= seqOut[0];
-	
+
 	outFloat = Any();
 	seqIndices.realloc( 0);
 	seqOut.realloc(0);
@@ -833,7 +833,7 @@ bool doSimpleTest(const Reference<XInvocation> & inv)
 	seqOut.realloc(0);
 	inv->invoke(OUString(L"inoutDate"), Sequence< Any > ( & inDate, 1), seqIndices, seqOut);
 	outDate <<= seqOut[0];
-    
+
     outDecimal = Any();
 	seqIndices.realloc( 0);
 	seqOut.realloc(0);
@@ -862,7 +862,7 @@ bool doSimpleTest(const Reference<XInvocation> & inv)
 	seqOut.realloc(0);
     inv->invoke(OUString(L"outLong"), Sequence< Any > (& outrefLong, 1), seqIndices, seqOut);
     outrefLong <<= seqOut[0];
-    
+
 	inrefVariant <<= OUString(L" A string in an any");
 	inv->invoke(OUString(L"inrefVariant"), Sequence< Any > ( & inrefVariant, 1), seqIndices, seqOut);
 	seqIndices.realloc( 0);
@@ -894,7 +894,7 @@ bool doSimpleTest(const Reference<XInvocation> & inv)
 	param[1] = inFloat;
 	param[2] = inVariant;
 	inv->invoke(OUString(L"mixed1"), Sequence< Any >(param, 3), seqIndices, seqOut);
-	
+
 	if (seqOut.getLength() != 3 || inByte != seqOut[0] || inFloat != seqOut[1]
 		|| inVariant != seqOut[2])
 			return false;
@@ -907,7 +907,7 @@ bool doSimpleSequenceTest(const Reference<XInvocation> & inv)
 	Sequence<sal_Int16> seqIndices;
 	Sequence<Any> seqOut;
 	Any voidAny;
-	Any inArAny; 
+	Any inArAny;
 	Any outArray;
 	Any inArBool, outArBool;
 	Any inArByte, outArByte;
@@ -950,7 +950,7 @@ bool doSimpleSequenceTest(const Reference<XInvocation> & inv)
 	sal_Int8 arByte[]={1,2,3};
 	Sequence<sal_Int8> seqByte(arByte, 3);
 	inArByte <<= seqByte;
-	inv->invoke(OUString(L"inSequenceByte"),Sequence<Any>( & inArByte, 1), seqIndices, seqOut);	
+	inv->invoke(OUString(L"inSequenceByte"),Sequence<Any>( & inArByte, 1), seqIndices, seqOut);
 	seqIndices.realloc(0);
 	seqOut.realloc(0);
 	inv->invoke(OUString(L"outSequenceByte"), Sequence< Any >( & voidAny, 1), seqIndices, seqOut);
@@ -959,7 +959,7 @@ bool doSimpleSequenceTest(const Reference<XInvocation> & inv)
 	sal_Int16 arShort[]={4,5,6};
 	Sequence<sal_Int16> seqShort(arShort, 3);
 	inArShort<<= seqShort;
-	inv->invoke(OUString(L"inSequenceShort"),Sequence< Any >( & inArShort, 1), seqIndices, seqOut);	
+	inv->invoke(OUString(L"inSequenceShort"),Sequence< Any >( & inArShort, 1), seqIndices, seqOut);
 	seqIndices.realloc(0);
 	seqOut.realloc(0);
 	inv->invoke(OUString(L"outSequenceShort"), Sequence< Any >( & voidAny, 1), seqIndices, seqOut);
@@ -968,19 +968,19 @@ bool doSimpleSequenceTest(const Reference<XInvocation> & inv)
 	sal_Int32 arLong[] = {7,8,9};
 	Sequence<sal_Int32> seqLong(arLong, 3);
 	inArLong <<= seqLong;
-	inv->invoke(OUString(L"inSequenceLong"),Sequence< Any > ( & inArLong, 1), seqIndices, seqOut);	
+	inv->invoke(OUString(L"inSequenceLong"),Sequence< Any > ( & inArLong, 1), seqIndices, seqOut);
 	seqIndices.realloc(0);
 	seqOut.realloc(0);
 	inv->invoke(OUString(L"outSequenceLong"), Sequence< Any >( & voidAny, 1), seqIndices, seqOut);
 	outArLong <<= seqOut[0];
 
-	inv->invoke(OUString(L"inSequenceLong"),Sequence< Any > ( & inArLong, 1), seqIndices, seqOut);	
+	inv->invoke(OUString(L"inSequenceLong"),Sequence< Any > ( & inArLong, 1), seqIndices, seqOut);
 	seqIndices.realloc(0);
 	seqOut.realloc(0);
 	inv->invoke(OUString(L"outSequenceLong"), Sequence< Any >( & voidAny, 1), seqIndices, seqOut);
 	outArLong <<= seqOut[0];
 
-	inv->invoke( OUString(L"inSequenceString"),Sequence< Any > ( & inArString, 1), seqIndices, seqOut);	
+	inv->invoke( OUString(L"inSequenceString"),Sequence< Any > ( & inArString, 1), seqIndices, seqOut);
 	seqIndices.realloc(0);
 	seqOut.realloc(0);
 	inv->invoke(OUString(L"outSequenceString"), Sequence< Any >( & voidAny, 1), seqIndices, seqOut);
@@ -989,7 +989,7 @@ bool doSimpleSequenceTest(const Reference<XInvocation> & inv)
 	float arFloat[]={3.14f, 31.4f, 314.f};
 	Sequence<float> seqFloat( arFloat, 3);
 	inArFloat <<= seqFloat;
-	inv->invoke( OUString(L"inSequenceFloat"),Sequence< Any > ( & inArFloat, 1), seqIndices, seqOut);	
+	inv->invoke( OUString(L"inSequenceFloat"),Sequence< Any > ( & inArFloat, 1), seqIndices, seqOut);
 	seqIndices.realloc(0);
 	seqOut.realloc(0);
 	inv->invoke(OUString(L"outSequenceFloat"), Sequence< Any >( & voidAny, 1), seqIndices, seqOut);
@@ -998,23 +998,23 @@ bool doSimpleSequenceTest(const Reference<XInvocation> & inv)
 	double arDouble[]={3.145, 31.45, 3145.};
 	Sequence<double> seqDouble( arDouble, 3);
 	inArDouble <<= seqDouble;
-	inv->invoke(OUString(L"inSequenceDouble"),Sequence< Any >( & inArDouble, 1), seqIndices, seqOut);	
+	inv->invoke(OUString(L"inSequenceDouble"),Sequence< Any >( & inArDouble, 1), seqIndices, seqOut);
 	seqIndices.realloc(0);
 	seqOut.realloc(0);
 	inv->invoke(OUString(L"outSequenceDouble"), Sequence< Any >( & voidAny, 1), seqIndices, seqOut);
 	outArDouble <<= seqOut[0];
 
 	Sequence<Reference<XInvocation> > seqObj(2);
-	seqObj[0]= 	getComObject(L"AxTestComponents.Basic");	
+	seqObj[0]= 	getComObject(L"AxTestComponents.Basic");
 	seqObj[1]= 	getComObject(L"AxTestComponents.Basic");
 	inArObject <<= seqObj;
-	inv->invoke(OUString(L"inSequenceObject"),Sequence< Any >( & inArObject, 1), seqIndices, seqOut);	
+	inv->invoke(OUString(L"inSequenceObject"),Sequence< Any >( & inArObject, 1), seqIndices, seqOut);
 	seqIndices.realloc(0);
 	seqOut.realloc(0);
 	inv->invoke(OUString(L"outSequenceObject"), Sequence< Any >( & voidAny, 1), seqIndices, seqOut);
 	outArObject <<= seqOut[0];
-	
-	if ( ! equalSequences(inArByte, outArByte) || ! equalSequences(inArShort, outArShort) 
+
+	if ( ! equalSequences(inArByte, outArByte) || ! equalSequences(inArShort, outArShort)
 		|| ! equalSequences(inArLong, outArLong) || ! equalSequences(inArString, outArray)
 		|| ! equalSequences(inArFloat, outArFloat) || ! equalSequences(inArDouble, outArDouble)
 		|| ! equalSequences(inArString, outArString)  || ! equalSequences(inArObject, outArObject))
@@ -1029,35 +1029,35 @@ bool doSimpleSequenceTest(const Reference<XInvocation> & inv)
 	inv->invoke(OUString(L"inoutArray"), Sequence< Any >( & inArString, 1), seqIndices, seqOut);
 	outArray <<= seqOut[0];
 
-	inv->invoke(OUString(L"inoutSequenceByte"), Sequence<Any>( & inArByte, 1), seqIndices, seqOut);	
+	inv->invoke(OUString(L"inoutSequenceByte"), Sequence<Any>( & inArByte, 1), seqIndices, seqOut);
 	inv->invoke(OUString(L"inoutSequenceByte"), Sequence<Any>( & inArByte, 1), seqIndices, seqOut);
 	outArByte <<= seqOut[0];
 
-	inv->invoke(OUString(L"inoutSequenceShort"), Sequence<Any>( & inArShort, 1), seqIndices, seqOut);	
+	inv->invoke(OUString(L"inoutSequenceShort"), Sequence<Any>( & inArShort, 1), seqIndices, seqOut);
 	inv->invoke(OUString(L"inoutSequenceShort"), Sequence<Any>( & inArShort, 1), seqIndices, seqOut);
 	outArShort <<= seqOut[0];
 
-	inv->invoke(OUString(L"inoutSequenceLong"), Sequence<Any>( & inArLong, 1), seqIndices, seqOut);	
+	inv->invoke(OUString(L"inoutSequenceLong"), Sequence<Any>( & inArLong, 1), seqIndices, seqOut);
 	inv->invoke(OUString(L"inoutSequenceLong"), Sequence< Any >( & inArLong, 1), seqIndices, seqOut);
 	outArLong <<= seqOut[0];
 
-	inv->invoke(OUString(L"inoutSequenceString"), Sequence<Any>( & inArString, 1), seqIndices, seqOut);	
+	inv->invoke(OUString(L"inoutSequenceString"), Sequence<Any>( & inArString, 1), seqIndices, seqOut);
 	inv->invoke(OUString(L"inoutSequenceString"), Sequence<Any>( & inArString, 1), seqIndices, seqOut);
 	outArString <<= seqOut[0];
 
-	inv->invoke(OUString(L"inoutSequenceFloat"), Sequence<Any>( & inArFloat, 1), seqIndices, seqOut);	
+	inv->invoke(OUString(L"inoutSequenceFloat"), Sequence<Any>( & inArFloat, 1), seqIndices, seqOut);
 	inv->invoke(OUString(L"inoutSequenceFloat"), Sequence<Any>( & inArFloat, 1), seqIndices, seqOut);
 	outArFloat <<= seqOut[0];
 
-	inv->invoke(OUString(L"inoutSequenceDouble"), Sequence<Any>( & inArDouble, 1), seqIndices, seqOut);	
+	inv->invoke(OUString(L"inoutSequenceDouble"), Sequence<Any>( & inArDouble, 1), seqIndices, seqOut);
 	inv->invoke(OUString(L"inoutSequenceDouble"), Sequence<Any>( & inArDouble, 1), seqIndices, seqOut);
 	outArDouble <<= seqOut[0];
 
-	inv->invoke(OUString(L"inoutSequenceObject"), Sequence<Any>( & inArObject, 1), seqIndices, seqOut);	
+	inv->invoke(OUString(L"inoutSequenceObject"), Sequence<Any>( & inArObject, 1), seqIndices, seqOut);
 	inv->invoke(OUString(L"inoutSequenceObject"), Sequence<Any>( & inArObject, 1), seqIndices, seqOut);
 	outArObject <<= seqOut[0];
 
-	if ( ! equalSequences(inArByte, outArByte) || ! equalSequences(inArShort, outArShort) 
+	if ( ! equalSequences(inArByte, outArByte) || ! equalSequences(inArShort, outArShort)
 		|| ! equalSequences(inArLong, outArLong) || ! equalSequences(inArString, outArray)
 		|| ! equalSequences(inArFloat, outArFloat) || ! equalSequences(inArDouble, outArDouble)
 		|| ! equalSequences(inArString, outArString)  || ! equalSequences(inArObject, outArObject))
@@ -1078,7 +1078,7 @@ HRESULT doTest()
 
 	Sequence< sal_Int16> seqIndices;
 	Sequence<Any> seqOut;
-	
+
 	Any aAny;
 	Any anyOut;
 	char buff[1024];
@@ -1093,9 +1093,9 @@ HRESULT doTest()
     if (! doPropertyTest(inv))
     {
         fprintf(stdout, "### Test failed!\n");
-		return E_FAIL;        
+		return E_FAIL;
     }
-    
+
 	if ( ! doSimpleSequenceTest(inv))
 	{
 		fprintf(stdout, "### Test failed! \n");
@@ -1114,7 +1114,7 @@ HRESULT doTest()
 		return E_FAIL;
     }
 
-    
+
 
 
 
@@ -1137,10 +1137,10 @@ HRESULT doTest()
 	seq2i[2]= seqLongi3;
 	seqAny<<= seq2i;
 	// dimension length 3,5
-	inv->invoke( OUString(L"inMulDimArrayLong"),Sequence< Any > ( &seqAny, 1), seqIndices, seqOut);	
-//	
+	inv->invoke( OUString(L"inMulDimArrayLong"),Sequence< Any > ( &seqAny, 1), seqIndices, seqOut);
+//
 	//inMulDimArrayVariant
-	inv->invoke( OUString(L"inMulDimArrayVariant"),Sequence< Any > ( &seqAny, 1), seqIndices, seqOut);	
+	inv->invoke( OUString(L"inMulDimArrayVariant"),Sequence< Any > ( &seqAny, 1), seqIndices, seqOut);
 
 	//inMulDimArrayLong2
 	sal_Int32 arLongii1[]={1,2,3};
@@ -1163,12 +1163,12 @@ HRESULT doTest()
 
 	seq2ii2[0]= seqLongii4;
 	seq2ii2[1]= seqLongii5;
-	
+
 	Sequence< Sequence< Sequence< sal_Int32> > >  seq3ii(2);
 	seq3ii[0]=seq2ii;
 	seq3ii[1]=seq2ii2;
 	seqAny<<= seq3ii;
-	inv->invoke( OUString(L"inMulDimArrayLong2"),Sequence< Any > ( &seqAny, 1), seqIndices, seqOut);	
+	inv->invoke( OUString(L"inMulDimArrayLong2"),Sequence< Any > ( &seqAny, 1), seqIndices, seqOut);
 
 	// inMulDimArrayByte2
 	sal_Int8 arByteii1[]={1,2,3};
@@ -1191,12 +1191,12 @@ HRESULT doTest()
 
 	seq2Byteii2[0]= seqByteii4;
 	seq2Byteii2[1]= seqByteii5;
-	
+
 	Sequence< Sequence< Sequence< sal_Int8> > >  seq3Byteii(2);
 	seq3Byteii[0]=seq2Byteii;
 	seq3Byteii[1]=seq2Byteii2;
 	seqAny<<= seq3Byteii;
-	inv->invoke( OUString(L"inMulDimArrayByte2"),Sequence< Any > ( &seqAny, 1), seqIndices, seqOut);	
+	inv->invoke( OUString(L"inMulDimArrayByte2"),Sequence< Any > ( &seqAny, 1), seqIndices, seqOut);
 
 
 
@@ -1235,7 +1235,7 @@ HRESULT doTest()
 
 	aAny <<= OUString( L" A string in an any");
 	aAny=invMfc->invoke( OUString(L"inVariant"), Sequence< Any > ( &aAny, 1), seqIndices, seqOut);
-	
+
 	// Tests with Sequences later.
 	//	OUString arStr4[]= {L"string0", L"string1", L"string2"};
 	//	Sequence<OUString> seqStr4( arStr4, 3);
@@ -1253,7 +1253,7 @@ HRESULT doTest()
 //	//###################################################################################
 //	//	out parameter MFC ActiveX
 //	//###################################################################################
-//	
+//
 //	// outShort
 	aAny= invMfc->invoke( OUString(L"outShort"), Sequence< Any > ( &aAny, 1), seqIndices, seqOut);
 	anyOut<<= seqOut[0];
@@ -1306,7 +1306,7 @@ HRESULT doTest()
 	//###################################################################################
 	//	Sequence parameter MFC ActiveX
 	//###################################################################################
-	// Sequences are not directly supported. 
+	// Sequences are not directly supported.
 
 
 	delete pWin;

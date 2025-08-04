@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -87,56 +87,56 @@ VbaWindowBase::getHeight() throw (uno::RuntimeException)
 	return getWindow()->getPosSize().Height;
 }
 
-void SAL_CALL 
+void SAL_CALL
 VbaWindowBase::setHeight( sal_Int32 _height ) throw (uno::RuntimeException)
 {
 	setPosSize( getWindow(), _height, css::awt::PosSize::HEIGHT );
 }
 
-sal_Int32 SAL_CALL 
+sal_Int32 SAL_CALL
 VbaWindowBase::getLeft() throw (uno::RuntimeException)
 {
 	return getWindow()->getPosSize().X;
 }
 
-void SAL_CALL 
+void SAL_CALL
 VbaWindowBase::setLeft( sal_Int32 _left ) throw (uno::RuntimeException)
 {
 	setPosSize( getWindow(), _left, css::awt::PosSize::X );
 }
 
-sal_Int32 SAL_CALL 
+sal_Int32 SAL_CALL
 VbaWindowBase::getTop() throw (uno::RuntimeException)
 {
 	return getWindow()->getPosSize().Y;
 }
 
-void SAL_CALL 
+void SAL_CALL
 VbaWindowBase::setTop( sal_Int32 _top ) throw (uno::RuntimeException)
 {
 	setPosSize( getWindow(), _top, css::awt::PosSize::Y );
 }
 
-sal_Int32 SAL_CALL 
+sal_Int32 SAL_CALL
 VbaWindowBase::getWidth() throw (uno::RuntimeException)
 {
 	return getWindow()->getPosSize().Width;
 }
 
-void SAL_CALL 
+void SAL_CALL
 VbaWindowBase::setWidth( sal_Int32 _width ) throw (uno::RuntimeException)
 {
 	setPosSize( getWindow(), _width, css::awt::PosSize::WIDTH );
 }
 
-rtl::OUString& 
+rtl::OUString&
 VbaWindowBase::getServiceImplName()
 {
 	static rtl::OUString sImplName( RTL_CONSTASCII_USTRINGPARAM("VbaWindowBase") );
 	return sImplName;
 }
 
-uno::Sequence< rtl::OUString > 
+uno::Sequence< rtl::OUString >
 VbaWindowBase::getServiceNames()
 {
 	static uno::Sequence< rtl::OUString > aServiceNames;

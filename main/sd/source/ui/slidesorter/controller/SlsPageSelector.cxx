@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -95,7 +95,7 @@ void PageSelector::DeselectAllPages (void)
     for (int nPageIndex=0; nPageIndex<nPageCount; nPageIndex++)
         DeselectPage(nPageIndex);
 
-    DBG_ASSERT (mnSelectedPageCount==0, 
+    DBG_ASSERT (mnSelectedPageCount==0,
         "PageSelector::DeselectAllPages: the selected pages counter is not 0");
     mnSelectedPageCount = 0;
     mpSelectionAnchor.reset();
@@ -262,7 +262,7 @@ void PageSelector::CheckConsistency (void) const
     }
     if (nSelectionCount!=mnSelectedPageCount)
     {
-        // #120020# The former call to assert(..) internally calls 
+        // #120020# The former call to assert(..) internally calls
         // SlideSorterModel::GetPageDescriptor which will crash in this situation
         // (only in non-pro code). All what is wanted there is to assert it (the
         // error is already detected), so do this directly.
@@ -391,7 +391,7 @@ void PageSelector::UpdateCurrentPage (const bool bUpdateOnlyWhenPending)
         return;
 
     mbIsUpdateCurrentPagePending = false;
-    
+
     // Make the first selected page the current page.
     SharedPageDescriptor pCurrentPageDescriptor;
     const sal_Int32 nPageCount (GetPageCount());
@@ -414,9 +414,9 @@ void PageSelector::UpdateCurrentPage (const bool bUpdateOnlyWhenPending)
         // we store (and at the end of this scope restore) the current
         // selection.
         ::boost::shared_ptr<PageSelection> pSelection (GetPageSelection());
-                
+
         mrController.GetCurrentSlideManager()->SwitchCurrentSlide(pCurrentPageDescriptor);
-                
+
         // Restore the selection and prevent a recursive call to
         // UpdateCurrentPage().
         SetPageSelection(pSelection, false);

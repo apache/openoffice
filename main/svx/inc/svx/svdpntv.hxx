@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -164,14 +164,14 @@ protected:
 	Rectangle					aMaxWorkArea;
 	SfxItemSet					aDefaultAttr;
 	Timer						aComeBackTimer;
-	
+
 	SdrAnimationMode			eAnimationMode;
 
 	sal_uInt16						nHitTolPix;
 	sal_uInt16						nMinMovPix;
 	sal_uInt16						nHitTolLog;
 	sal_uInt16						nMinMovLog;
-	sal_uIntPtr						nMasterCacheMode;	
+	sal_uIntPtr						nMasterCacheMode;
 	sal_uIntPtr                       nGraphicManagerDrawMode;
 
 	// hold an incarnation of Drawinglayer configuration options
@@ -207,7 +207,7 @@ protected:
 
 	// #114898#
 	// Flag which decides if buffered overlay for this view is allowed. When
-	// set, the output will be buffered in an overlay vdev. When not, overlay is 
+	// set, the output will be buffered in an overlay vdev. When not, overlay is
 	// directly painted to OutDev. Default is sal_False.
 	unsigned					mbBufferedOverlayAllowed : 1;
 
@@ -567,11 +567,11 @@ public:
 
 	// #103911# Set document color for svx at SdrPageViews
 	void SetApplicationDocumentColor(Color aDocumentColor);
-    
+
 	// #i38135#
 	// Sets the timer for Object animations and restarts.
 	void SetAnimationTimer(sal_uInt32 nTime);
-	
+
 	// access to Drawinglayer configuration options
 	const SvtOptionsDrawinglayer& getOptionsDrawinglayer() const { return maDrawinglayerOpt; }
 };

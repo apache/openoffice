@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,7 +53,7 @@ public:
     typedef ::boost::function<void(const TimeValue&)> Task;
 
     static const sal_Int32 NotAValidTaskId = 0;
-    
+
     static sal_Int32 ScheduleSingleTaskRelative (
         const Task& rTask,
         const sal_Int64 nDelay);
@@ -77,7 +77,7 @@ public:
 
 
 
-typedef cppu::WeakComponentImplHelper1< 
+typedef cppu::WeakComponentImplHelper1<
     css::awt::XCallback
     > PresenterClockTimerInterfaceBase;
 
@@ -93,7 +93,7 @@ public:
         virtual void TimeHasChanged (const oslDateTime& rCurrentTime) = 0;
     };
     typedef ::boost::shared_ptr<Listener> SharedListener;
-    
+
     static ::rtl::Reference<PresenterClockTimer> Instance (
         const css::uno::Reference<css::uno::XComponentContext>& rxContext);
 
@@ -101,7 +101,7 @@ public:
     void RemoveListener (const SharedListener& rListener);
 
     static oslDateTime GetCurrentTime (void);
-    
+
     /** Return the difference between the two different times in
         nanoseconds.
     */
@@ -126,7 +126,7 @@ private:
     PresenterClockTimer (
         const css::uno::Reference<css::uno::XComponentContext>& rxContext);
     ~PresenterClockTimer (void);
-    
+
     void CheckCurrentTime (const TimeValue& rCurrentTime);
 };
 

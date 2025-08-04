@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -163,7 +163,7 @@ void SAL_CALL ImportDocumentHandler::startElement(const ::rtl::OUString & _sName
 
 			    switch( m_pReportElemTokenMap->Get( XML_NAMESPACE_REPORT, sLocalName ) )
 			    {
-				    case XML_TOK_COMMAND_TYPE: 
+				    case XML_TOK_COMMAND_TYPE:
                         {
                             sal_uInt16 nRet = static_cast<sal_uInt16>(sdb::CommandType::COMMAND);
 		                    const SvXMLEnumMapEntry* aXML_EnumMap = OXMLHelper::GetCommandTypeOptions();
@@ -171,13 +171,13 @@ void SAL_CALL ImportDocumentHandler::startElement(const ::rtl::OUString & _sName
 					        m_xDatabaseDataProvider->setCommandType(nRet);
                         }
 					    break;
-				    case XML_TOK_COMMAND: 
+				    case XML_TOK_COMMAND:
 					    m_xDatabaseDataProvider->setCommand(sValue);
 					    break;
-                    case XML_TOK_FILTER: 
+                    case XML_TOK_FILTER:
 					    m_xDatabaseDataProvider->setFilter(sValue);
 					    break;
-                    case XML_TOK_ESCAPE_PROCESSING: 
+                    case XML_TOK_ESCAPE_PROCESSING:
 					    m_xDatabaseDataProvider->setEscapeProcessing(sValue == s_sTRUE);
 					    break;
                     default:
@@ -214,10 +214,10 @@ void SAL_CALL ImportDocumentHandler::startElement(const ::rtl::OUString & _sName
 
 			    switch( pMasterElemTokenMap->Get( XML_NAMESPACE_REPORT, sLocalName ) )
 			    {
-				    case XML_TOK_MASTER: 
+				    case XML_TOK_MASTER:
                         sMasterField = sValue;
 					    break;
-				    case XML_TOK_SUB_DETAIL: 
+				    case XML_TOK_SUB_DETAIL:
                         sDetailField = sValue;
 					    break;
 			    }
@@ -276,9 +276,9 @@ void SAL_CALL ImportDocumentHandler::startElement(const ::rtl::OUString & _sName
         xNewAttribs = pList;
         pList->AppendAttributeList(_xAttrList);
         pList->AddAttribute(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("table:cell-range-address")),::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("local-table.$A$1:.$Z$65536")));
-        
+
     }
-    
+
     if ( bExport )
         m_xDelegatee->startElement(_sName,xNewAttribs);
 }
@@ -299,7 +299,7 @@ void SAL_CALL ImportDocumentHandler::endElement(const ::rtl::OUString & _sName) 
             m_xDatabaseDataProvider->setDetailFields(uno::Sequence< ::rtl::OUString>(&*m_aDetailFields.begin(),m_aDetailFields.size()));
         bExport = false;
     }
-    else if ( _sName.equalsAscii("rpt:detail") 
+    else if ( _sName.equalsAscii("rpt:detail")
         ||    _sName.equalsAscii("rpt:formatted-text")
         ||    _sName.equalsAscii("rpt:master-detail-field")
         ||    _sName.equalsAscii("rpt:report-component")
@@ -356,7 +356,7 @@ void SAL_CALL ImportDocumentHandler::initialize( const uno::Sequence< uno::Any >
     } // if ( !m_xDatabaseDataProvider.is() )
 
     m_aArguments = m_xDatabaseDataProvider->detectArguments(NULL);
-    
+
     uno::Reference< reflection::XProxyFactory >	xProxyFactory( m_xContext->getServiceManager()->createInstanceWithContext(
         ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.reflection.ProxyFactory")),m_xContext),
         uno::UNO_QUERY);

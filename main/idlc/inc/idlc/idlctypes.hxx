@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -107,9 +107,9 @@ enum ParseState
 	PS_ModuleDeclSeen,		// Seen complete module declaration
 	PS_AttributeDeclSeen, 	// Seen complete attribute declaration
 	PS_PropertyDeclSeen,	// Seen complete property declaration
-	PS_OperationDeclSeen, 	// Seen complete operation declaration	
+	PS_OperationDeclSeen, 	// Seen complete operation declaration
     PS_InterfaceInheritanceDeclSeen, // Seen complete interface inheritance decl
-	PS_ConstantsDeclSeen, 	// Seen complete constants declaration	
+	PS_ConstantsDeclSeen, 	// Seen complete constants declaration
 
 	PS_ServiceSeen,			// Seen a SERVICE keyword
 	PS_ServiceIDSeen,		// Seen the service ID
@@ -138,7 +138,7 @@ enum ParseState
 	PS_ConstantsSqSeen,		// '{' seen for constants
 	PS_ConstantsQsSeen,		// '}' seen for constants
 	PS_ConstantsBodySeen,  	// Seen complete constants body
-	
+
 	PS_InterfaceSeen,		// Seen an INTERFACE keyword
 	PS_InterfaceIDSeen,		// Seen the interface ID
 	PS_InterfaceHeadSeen,	// Seen the interface head
@@ -258,6 +258,6 @@ enum ParseState
 
 	PS_DeclsCommaSeen,		// Seen ',' in declarators list
 	PS_DeclsDeclSeen		// Seen complete decl in decls list
-};	
+};
 
 #endif // _IDLC_IDLCTYPES_HXX_

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package oooapplet;
@@ -37,9 +37,9 @@ public class OOoViewer extends Applet {
     private OOoBean oBean;
 
     static private CustomURLClassLoader m_loader;
-    
+
     Object  m_objBean;
-    
+
     public void init() {
         try {
             if (m_loader == null) {
@@ -83,7 +83,7 @@ public class OOoViewer extends Applet {
         Method methLoad = beanClass.getMethod(
             "loadFromURL", new Class[] {
                 String.class, arProp.getClass() });
-        
+
         methLoad.invoke(m_objBean, new Object[] {"private:factory/swriter", null});
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
@@ -97,9 +97,9 @@ public class OOoViewer extends Applet {
             e.printStackTrace();
         } catch (java.lang.NoSuchMethodException e) {
             e.printStackTrace();        }
-        
-        
-        
+
+
+
         validate();
     }
 
@@ -130,11 +130,11 @@ public class OOoViewer extends Applet {
 final class CustomURLClassLoader extends URLClassLoader {
 
     private Vector resourcePaths;
-    
+
     public CustomURLClassLoader( URL[] urls ) {
         super( urls );
     }
-    
+
     protected Class findClass( String name ) throws ClassNotFoundException {
         // This is only called via this.loadClass -> super.loadClass ->
         // this.findClass, after this.loadClass has already called
@@ -144,10 +144,10 @@ final class CustomURLClassLoader extends URLClassLoader {
     }
 
 
-    
+
     protected Class loadClass( String name, boolean resolve )
         throws ClassNotFoundException
-    {          
+    {
         Class c = findLoadedClass( name );
         if ( c == null ) {
             try {
@@ -174,12 +174,12 @@ final class CustomURLClassLoader extends URLClassLoader {
 
     public URL getResource(String name) {
         if (resourcePaths == null) return null;
-        
+
         URL result = super.getResource(name);
         if (result != null) {
             return result;
         }
-        
+
         URL u = null;
         URI uri = null;
         for (Enumeration e = resourcePaths.elements(); e.hasMoreElements();) {

@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -159,7 +159,7 @@ $$(info No precompiled header available for $$*.)
 $$(info precompiled header flags (  ex) : $$(sort $$(PCH_CXXFLAGS) $$(PCH_DEFS) $$(gb_LinkTarget_EXCEPTIONFLAGS)))
 $$(info precompiled header flags (noex) : $$(sort $$(PCH_CXXFLAGS) $$(PCH_DEFS) $$(gb_LinkTarget_NOEXCEPTIONFLAGS)))
 $$(info .           object flags        : $$(sort $$(T_CXXFLAGS) $$(DEFS)))
-$$@ : PCHFLAGS := 
+$$@ : PCHFLAGS :=
 endif
 endif
 endif
@@ -278,7 +278,7 @@ gb_LinkTarget_DEFAULTDEFS := $(gb_GLOBALDEFS)
 # defined by platform
 #  gb_LinkTarget_CXXFLAGS
 #  gb_LinkTarget_LDFLAGS
-#  gb_LinkTarget_INCLUDE 
+#  gb_LinkTarget_INCLUDE
 #  gb_LinkTarget_INCLUDE_STL
 
 .PHONY : $(call gb_LinkTarget_get_clean_target,%)
@@ -403,13 +403,13 @@ $(call gb_LinkTarget_get_headers_target,%) : $(call gb_LinkTarget_get_external_h
 define gb_LinkTarget_LinkTarget
 $(call gb_LinkTarget_get_clean_target,$(1)) : AUXTARGETS :=
 $(call gb_LinkTarget_get_external_headers_target,$(1)) : SELF := $(1)
-$(call gb_LinkTarget_get_target,$(1)) : DLLTARGET := 
+$(call gb_LinkTarget_get_target,$(1)) : DLLTARGET :=
 $(call gb_LinkTarget_get_clean_target,$(1)) \
 $(call gb_LinkTarget_get_target,$(1)) : ASMOBJECTS :=
 $(call gb_LinkTarget_get_clean_target,$(1)) \
-$(call gb_LinkTarget_get_target,$(1)) : COBJECTS := 
+$(call gb_LinkTarget_get_target,$(1)) : COBJECTS :=
 $(call gb_LinkTarget_get_clean_target,$(1)) \
-$(call gb_LinkTarget_get_target,$(1)) : CXXOBJECTS := 
+$(call gb_LinkTarget_get_target,$(1)) : CXXOBJECTS :=
 $(call gb_LinkTarget_get_clean_target,$(1)) \
 $(call gb_LinkTarget_get_target,$(1)) : OBJCOBJECTS :=
 $(call gb_LinkTarget_get_clean_target,$(1)) \
@@ -435,12 +435,12 @@ $(call gb_LinkTarget_get_target,$(1)) : INCLUDE := $$(gb_LinkTarget_INCLUDE)
 $(call gb_LinkTarget_get_headers_target,$(1)) \
 $(call gb_LinkTarget_get_target,$(1)) : INCLUDE_STL := $$(gb_LinkTarget_INCLUDE_STL)
 $(call gb_LinkTarget_get_target,$(1)) : T_LDFLAGS := $$(gb_LinkTarget_LDFLAGS) $(LDFLAGS)
-$(call gb_LinkTarget_get_target,$(1)) : LINKED_LIBS := 
-$(call gb_LinkTarget_get_target,$(1)) : LINKED_STATIC_LIBS := 
-$(call gb_LinkTarget_get_target,$(1)) : EXTERNAL_LIBS := 
+$(call gb_LinkTarget_get_target,$(1)) : LINKED_LIBS :=
+$(call gb_LinkTarget_get_target,$(1)) : LINKED_STATIC_LIBS :=
+$(call gb_LinkTarget_get_target,$(1)) : EXTERNAL_LIBS :=
 $(call gb_LinkTarget_get_target,$(1)) : LIBS :=
-$(call gb_LinkTarget_get_target,$(1)) : TARGETTYPE := 
-$(call gb_LinkTarget_get_target,$(1)) : VERSIONMAP := 
+$(call gb_LinkTarget_get_target,$(1)) : TARGETTYPE :=
+$(call gb_LinkTarget_get_target,$(1)) : VERSIONMAP :=
 $(call gb_LinkTarget_get_headers_target,$(1)) \
 $(call gb_LinkTarget_get_target,$(1)) : PCH_NAME :=
 $(call gb_LinkTarget_get_target,$(1)) : PCHOBJS :=
@@ -450,8 +450,8 @@ $(call gb_LinkTarget_get_target,$(1)) : NATIVERES :=
 
 ifeq ($(gb_FULLDEPS),$(true))
 -include $(call gb_LinkTarget_get_dep_target,$(1))
-$(call gb_LinkTarget_get_dep_target,$(1)) : COBJECTS := 
-$(call gb_LinkTarget_get_dep_target,$(1)) : CXXOBJECTS := 
+$(call gb_LinkTarget_get_dep_target,$(1)) : COBJECTS :=
+$(call gb_LinkTarget_get_dep_target,$(1)) : CXXOBJECTS :=
 $(call gb_LinkTarget_get_dep_target,$(1)) : OBJCOBJECTS :=
 $(call gb_LinkTarget_get_dep_target,$(1)) : OBJCXXOBJECTS :=
 $(call gb_LinkTarget_get_dep_target,$(1)) : GENCOBJECTS :=
@@ -465,8 +465,8 @@ $(call gb_LinkTarget_get_dep_target,$(1)) : DEFS := $$(gb_LinkTarget_DEFAULTDEFS
 $(call gb_LinkTarget_get_dep_target,$(1)) : PCH_DEFS := $$(gb_LinkTarget_DEFAULTDEFS) $(CPPFLAGS)
 $(call gb_LinkTarget_get_dep_target,$(1)) : INCLUDE := $$(gb_LinkTarget_INCLUDE)
 $(call gb_LinkTarget_get_dep_target,$(1)) : INCLUDE_STL := $$(gb_LinkTarget_INCLUDE_STL)
-$(call gb_LinkTarget_get_dep_target,$(1)) : TARGETTYPE := 
-$(call gb_LinkTarget_get_dep_target,$(1)) : VERSIONMAP := 
+$(call gb_LinkTarget_get_dep_target,$(1)) : TARGETTYPE :=
+$(call gb_LinkTarget_get_dep_target,$(1)) : VERSIONMAP :=
 $(call gb_LinkTarget_get_dep_target,$(1)) : PCH_NAME :=
 endif
 
@@ -816,7 +816,7 @@ endef
 #
 # An error is signaled, when any of the library names does not look like
 # a base name, ie is prefixed by -l or is followed by .lib or .so.
-# 
+#
 # @param target
 # @param libraries
 #     A list of (base names of) libraries that will be added to the target

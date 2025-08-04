@@ -30,27 +30,27 @@ public class Slide
         msSlideName = sSlideName;
         mnShapeCount = nShapeCount;
     }
-    
-    
-    
-    
+
+
+
+
     public String getSlideName ()
     {
         return msSlideName;
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public String toString ()
     {
         return msSlideName +" has "+mnShapeCount+" shapes";
     }
 
-    
-    
-    
+
+
+
     private final String msSlideName;
     private final int mnShapeCount;
 }

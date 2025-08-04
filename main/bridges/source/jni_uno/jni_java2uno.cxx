@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -194,7 +194,7 @@ jobject Bridge::call_uno(
         return_size = sizeof (largest);
         break;
     }
-    
+
 #ifdef BROKEN_ALLOCA
     char * mem = (char *) malloc(
 #else
@@ -206,7 +206,7 @@ jobject Bridge::call_uno(
     void * uno_ret = return_size == 0 ? 0 : (mem + (nParams * sizeof (void *)));
     largest * uno_args_mem = (largest *)
         (mem + (nParams * sizeof (void *)) + return_size);
-    
+
     OSL_ASSERT( (0 == nParams) || (nParams == jni->GetArrayLength( jo_args )) );
     for ( sal_Int32 nPos = 0; nPos < nParams; ++nPos )
     {
@@ -502,14 +502,14 @@ JNICALL Java_com_sun_star_bridges_jni_1uno_JNI_1proxy_dispatch_1call(
         }
 
         typelib_InterfaceTypeDescription * td =
-            reinterpret_cast< typelib_InterfaceTypeDescription * >( 
+            reinterpret_cast< typelib_InterfaceTypeDescription * >(
                 jni->GetLongField(
                     jo_proxy, jni_info->m_field_JNI_proxy_m_td_handle ) );
         uno_Interface * pUnoI =
             reinterpret_cast< uno_Interface * >(
                 jni->GetLongField(
                     jo_proxy, jni_info->m_field_JNI_proxy_m_receiver_handle ) );
-        
+
         typelib_TypeDescriptionReference ** ppAllMembers = td->ppAllMembers;
         for ( sal_Int32 nPos = td->nAllMembers; nPos--; )
         {
@@ -518,7 +518,7 @@ JNICALL Java_com_sun_star_bridges_jni_1uno_JNI_1proxy_dispatch_1call(
             // typelib_typedescriptionreference_getDescription()
             typelib_TypeDescriptionReference * member_type =
                 ppAllMembers[ nPos ];
-            
+
             // check method_name against fully qualified type_name
             // of member_type; type_name is of the form
             //  <name> "::" <method_name> *(":@" <idx> "," <idx> ":" <name>)
@@ -673,7 +673,7 @@ JNICALL Java_com_sun_star_bridges_jni_1uno_JNI_1proxy_finalize__J(
         reinterpret_cast< typelib_TypeDescription * >(
             jni->GetLongField(
                 jo_proxy, jni_info->m_field_JNI_proxy_m_td_handle ) );
-    
+
 #if OSL_DEBUG_LEVEL > 1
     {
     JLocalAutoRef jo_oid(
@@ -681,7 +681,7 @@ JNICALL Java_com_sun_star_bridges_jni_1uno_JNI_1proxy_finalize__J(
             jo_proxy, jni_info->m_field_JNI_proxy_m_oid ) );
     OUString oid( jstring_to_oustring( jni, (jstring) jo_oid.get() ) );
     OString cstr_msg(
-        OUStringToOString( 
+        OUStringToOString(
             OUSTR("freeing java uno proxy: ") + oid,
             RTL_TEXTENCODING_ASCII_US ) );
     OSL_TRACE( cstr_msg.getStr() );

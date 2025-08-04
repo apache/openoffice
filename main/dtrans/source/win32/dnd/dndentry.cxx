@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,7 +51,7 @@ Reference< XInterface > SAL_CALL createDropTarget( const Reference< XMultiServic
 }
 
 
-extern "C" 
+extern "C"
 {
 SAL_DLLPUBLIC_EXPORT sal_Bool SAL_CALL component_canUnload( TimeValue *pTime )
 {
@@ -69,7 +69,7 @@ SAL_DLLPUBLIC_EXPORT void SAL_CALL component_getImplementationEnvironment(
 }
 
 //----------------------------------------------------------------------
-// component_getFactory 
+// component_getFactory
 // returns a factory to create XFilePicker-Services
 //----------------------------------------------------------------------
 
@@ -81,21 +81,21 @@ SAL_DLLPUBLIC_EXPORT void* SAL_CALL component_getFactory( const sal_Char* pImplN
 	if ( pSrvManager && ( 0 == rtl_str_compare( pImplName, DNDSOURCE_IMPL_NAME ) ) )
 	{
 		Sequence< OUString > aSNS( 1 );
-		aSNS.getArray( )[0] = OUString( RTL_CONSTASCII_USTRINGPARAM( DNDSOURCE_SERVICE_NAME ) );		
-		
+		aSNS.getArray( )[0] = OUString( RTL_CONSTASCII_USTRINGPARAM( DNDSOURCE_SERVICE_NAME ) );
+
 		xFactory= createSingleFactory(
 			reinterpret_cast< XMultiServiceFactory* > ( pSrvManager ),
 			OUString::createFromAscii( pImplName ),
 			createDragSource,
 			aSNS,
 			&g_moduleCount.modCnt);
-		
+
 	}
 	else if( pSrvManager && ( 0 == rtl_str_compare( pImplName, DNDTARGET_IMPL_NAME ) ) )
 	{
 		Sequence< OUString > aSNS( 1 );
-		aSNS.getArray( )[0] = OUString( RTL_CONSTASCII_USTRINGPARAM( DNDTARGET_SERVICE_NAME ) );		
-		
+		aSNS.getArray( )[0] = OUString( RTL_CONSTASCII_USTRINGPARAM( DNDTARGET_SERVICE_NAME ) );
+
 		xFactory= createSingleFactory(
 			reinterpret_cast< XMultiServiceFactory* > ( pSrvManager ),
 			OUString::createFromAscii( pImplName ),
@@ -108,7 +108,7 @@ SAL_DLLPUBLIC_EXPORT void* SAL_CALL component_getFactory( const sal_Char* pImplN
 	{
 		xFactory->acquire();
 		pRet = xFactory.get();
-	}			
+	}
 
 	return pRet;
 }

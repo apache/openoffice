@@ -54,20 +54,20 @@ public class ContentView
         if (aModel != null)
             setModel(aModel);
     }
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
     private TreeModel CreateTreeForPresentationModel (final PresentationModel aModel)
     {
         final DefaultMutableTreeNode aRootNode = new DefaultMutableTreeNode(
             "presentation");
         final DefaultTreeModel aTreeModel = new DefaultTreeModel(aRootNode);
-        
+
         for (final Slide aSlide : aModel.GetSlideManager().GetSlides())
-        {            
+        {
                 DefaultMutableTreeNode aNode = new DefaultMutableTreeNode(
                     aSlide.toString());
                 aRootNode.add(aNode);

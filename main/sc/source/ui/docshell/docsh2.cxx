@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -102,14 +102,14 @@ sal_Bool __EXPORT ScDocShell::InitNew( const uno::Reference < embed::XStorage >&
         aArgs[ 0 ] <<= GetModel();
 	aGlobs <<= ::comphelper::getProcessServiceFactory()->createInstanceWithArguments( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "ooo.vba.excel.Globals" ) ), aArgs );
 	GetBasicManager()->SetGlobalUNOConstant( "VBAGlobals", aGlobs );
-        // Fake ThisComponent being setup by Activate ( which is a view 
-        // related thing ), 
+        // Fake ThisComponent being setup by Activate ( which is a view
+        // related thing ),
         //  a) if another document is opened then in theory  ThisComponent
-        //     will be reset as before, 
+        //     will be reset as before,
         //  b) when this document is  'really' Activated then ThisComponent
         //     again will be set as before
         // The only wrinkle seems if this document is loaded 'InVisible'
-        // but.. I don't see that this is possible from the vba API 
+        // but.. I don't see that this is possible from the vba API
         // I could be wrong though
         // There may be implications setting the current component
         // too early :-/ so I will just manually set the Basic Variables

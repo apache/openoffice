@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -74,7 +74,7 @@ namespace
             ::svt::uno::Wizard::Create,
             ::svt::uno::Wizard::getImplementationName_static,
             ::svt::uno::Wizard::getSupportedServiceNames_static,
-            ::cppu::createSingleComponentFactory, NULL, 0 
+            ::cppu::createSingleComponentFactory, NULL, 0
         },
         { 0, 0, 0, 0, 0, 0 }
     };
@@ -132,7 +132,7 @@ SAL_DLLPUBLIC_EXPORT void * SAL_CALL component_getFactory (
 		}
 		else if( 0 == GraphicProvider::getImplementationName_Static().compareToAscii( pImplementationName ) )
 		{
-			xFactory =  ::cppu::createOneInstanceFactory( 
+			xFactory =  ::cppu::createOneInstanceFactory(
 				reinterpret_cast< lang::XMultiServiceFactory * >( _pServiceManager ),
 				GraphicProvider::getImplementationName_Static(),
 				GraphicProvider_CreateInstance,
@@ -140,13 +140,13 @@ SAL_DLLPUBLIC_EXPORT void * SAL_CALL component_getFactory (
 		}
 		else if( 0 == GraphicRendererVCL::getImplementationName_Static().compareToAscii( pImplementationName ) )
 		{
-			xFactory = ::cppu::createOneInstanceFactory( 
+			xFactory = ::cppu::createOneInstanceFactory(
 				reinterpret_cast< lang::XMultiServiceFactory * >( _pServiceManager ),
 				GraphicRendererVCL::getImplementationName_Static(),
 				GraphicRendererVCL_CreateInstance,
 				GraphicRendererVCL::getSupportedServiceNames_Static() );
 		}
-		else 
+		else
 		{
 		    pResult =  component_getFactoryHelper( pImplementationName, reinterpret_cast< lang::XMultiServiceFactory * >( _pServiceManager ),reinterpret_cast< registry::XRegistryKey* >( pRegistryKey ), serviceDecl );
             if ( !pResult )

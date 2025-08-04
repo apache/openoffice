@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -58,14 +58,14 @@ public:
 	void SAL_CALL shutdown();
 
     // notifications may be added the
-    // the event queue but will only 
+    // the event queue but will only
     // be notified to the clients after
     // resume was called
     void suspend();
-    
+
     // resume notifying events
     void resume();
-     
+
 	// this class is responsible for the memory management of
 	// the CEventNotification instance
     void SAL_CALL notifyEvent(CEventNotification* EventNotification);
@@ -85,16 +85,16 @@ private:
 
 	static unsigned int WINAPI ThreadProc(LPVOID pParam);
 
-private:    
+private:
     std::list<CEventNotification*>  m_EventList;
     HANDLE							m_hThread;
 	bool							m_bRun;
-	unsigned						m_ThreadId;    
-    ::cppu::OBroadcastHelper&		m_rBroadcastHelper;		
+	unsigned						m_ThreadId;
+    ::cppu::OBroadcastHelper&		m_rBroadcastHelper;
     HANDLE                          m_hEvents[2];
     HANDLE&                         m_NotifyEvent;
-    HANDLE&                         m_ResumeNotifying;	
-    osl::Mutex						m_Mutex;    
+    HANDLE&                         m_ResumeNotifying;
+    osl::Mutex						m_Mutex;
 
 // prevent copy and assignment
 private:

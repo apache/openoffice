@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -30,7 +30,7 @@
 #include <osl/diagnose.h>
 
 //-----------------------------------
-// 
+//
 //-----------------------------------
 
 CDialogCustomControlBase::CDialogCustomControlBase(HWND aControlHandle, HWND aParentHandle) :
@@ -40,7 +40,7 @@ CDialogCustomControlBase::CDialogCustomControlBase(HWND aControlHandle, HWND aPa
 }
 
 //-----------------------------------
-// 
+//
 //-----------------------------------
 
 void SAL_CALL CDialogCustomControlBase::SetFont(HFONT hFont)
@@ -53,7 +53,7 @@ void SAL_CALL CDialogCustomControlBase::SetFont(HFONT hFont)
 }
 
 //-----------------------------------
-// 
+//
 //-----------------------------------
 
 void SAL_CALL CDialogCustomControlBase::AlignToBuddy(HWND aBuddyHandle)
@@ -65,7 +65,7 @@ void SAL_CALL CDialogCustomControlBase::AlignToBuddy(HWND aBuddyHandle)
 
 	POINT pt = {rcBuddy.left,rcBuddy.top};
 	ScreenToClient(m_ParentHandle,&pt);
-	
+
 	int cx_new = rcBuddy.right - rcBuddy.left;
 	int cy_new = rcBuddy.bottom - rcBuddy.top;
 
@@ -74,30 +74,30 @@ void SAL_CALL CDialogCustomControlBase::AlignToBuddy(HWND aBuddyHandle)
 	// this job
 	RECT rcMe;
 	GetWindowRect(m_CustomControlHandle,&rcMe);
-	
+
 	POINT ptMe = {rcMe.left,rcMe.top};
 	ScreenToClient(m_ParentHandle,&ptMe);
 
 	SetWindowPos(
 		m_CustomControlHandle,
-		HWND_TOP, 
-		pt.x, 
-		ptMe.y, 
-		cx_new, 
-		cy_new, 
+		HWND_TOP,
+		pt.x,
+		ptMe.y,
+		cx_new,
+		cy_new,
 		SWP_NOACTIVATE);
 }
 
 //-----------------------------------
-// 
+//
 //-----------------------------------
 
-CDummyCustomControl::CDummyCustomControl(HWND, HWND) 	
+CDummyCustomControl::CDummyCustomControl(HWND, HWND)
 {
 }
 
 //-----------------------------------
-// 
+//
 //-----------------------------------
 
 void SAL_CALL CDummyCustomControl::Align()
@@ -106,7 +106,7 @@ void SAL_CALL CDummyCustomControl::Align()
 }
 
 //-----------------------------------
-// 
+//
 //-----------------------------------
 
 void SAL_CALL CDummyCustomControl::SetFont(HFONT)
@@ -115,7 +115,7 @@ void SAL_CALL CDummyCustomControl::SetFont(HFONT)
 }
 
 //-----------------------------------
-// 
+//
 //-----------------------------------
 
 CStaticCustomControl::CStaticCustomControl(HWND aControlHandle, HWND aParentHandle) :
@@ -124,17 +124,17 @@ CStaticCustomControl::CStaticCustomControl(HWND aControlHandle, HWND aParentHand
 }
 
 //-----------------------------------
-// Align to the "File name" static 
+// Align to the "File name" static
 // text of the standard FileOpen dlg
 //-----------------------------------
 
 void SAL_CALL CStaticCustomControl::Align()
 {
-	AlignToBuddy(GetDlgItem(m_ParentHandle,stc3));	
+	AlignToBuddy(GetDlgItem(m_ParentHandle,stc3));
 }
 
 //-----------------------------------
-// 
+//
 //-----------------------------------
 
 CPushButtonCustomControl::CPushButtonCustomControl(HWND aControlHandle, HWND aParentHandle) :
@@ -143,7 +143,7 @@ CPushButtonCustomControl::CPushButtonCustomControl(HWND aControlHandle, HWND aPa
 }
 
 //-----------------------------------
-// Align to the "OK" button of the 
+// Align to the "OK" button of the
 // standard FileOpen dlg
 //-----------------------------------
 
@@ -153,7 +153,7 @@ void SAL_CALL CPushButtonCustomControl::Align()
 }
 
 //-----------------------------------
-// 
+//
 //-----------------------------------
 
 CComboboxCustomControl::CComboboxCustomControl(HWND aControlHandle, HWND aParentHandle) :
@@ -172,7 +172,7 @@ void SAL_CALL CComboboxCustomControl::Align()
 }
 
 //-----------------------------------
-// 
+//
 //-----------------------------------
 
 CCheckboxCustomControl::CCheckboxCustomControl(HWND aControlHandle, HWND aParentHandle) :
@@ -181,7 +181,7 @@ CCheckboxCustomControl::CCheckboxCustomControl(HWND aControlHandle, HWND aParent
 }
 
 //-----------------------------------
-// Align to the "File name" combobox 
+// Align to the "File name" combobox
 // of the standard FileOpen dlg
 //-----------------------------------
 

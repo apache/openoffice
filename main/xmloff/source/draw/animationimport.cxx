@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -618,10 +618,10 @@ Any AnimationsImportHelperImpl::convertTiming( const OUString& rValue )
 Sequence< double > AnimationsImportHelperImpl::convertKeyTimes( const OUString& rValue )
 {
 	sal_Int32 nElements = 0;
-	
+
 	if( rValue.getLength() )
 		nElements = count_codes( rValue, (sal_Unicode)';' ) + 1; // a non empty string has at least one value
-	
+
 	Sequence< double > aKeyTimes( nElements );
 
 	if( nElements )
@@ -638,10 +638,10 @@ Sequence< double > AnimationsImportHelperImpl::convertKeyTimes( const OUString& 
 Sequence< TimeFilterPair > AnimationsImportHelperImpl::convertTimeFilter( const OUString& rValue )
 {
 	sal_Int32 nElements = 0;
-	
+
 	if( rValue.getLength() )
 		nElements = count_codes( rValue, (sal_Unicode)';' ) + 1; // a non empty string has at least one value
-	
+
 	Sequence< TimeFilterPair > aTimeFilter( nElements );
 
 	if( nElements )
@@ -719,7 +719,7 @@ AnimationNodeContext::AnimationNodeContext(
 					{
 						OUString aLocalName;
 						sal_uInt16 nPrefix = GetImport().GetNamespaceMap().GetKeyByAttrName( xAttrList->getNameByIndex( nAttribute ), &aLocalName );
-						if( (nPrefix == XML_NAMESPACE_PRESENTATION) && IsXMLToken( aLocalName, XML_PRESET_ID ) ) 
+						if( (nPrefix == XML_NAMESPACE_PRESENTATION) && IsXMLToken( aLocalName, XML_PRESET_ID ) )
 						{
 							const OUString& rValue = xAttrList->getValueByIndex( nAttribute );
 							if( rValue.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( "ooo-entrance-random" ) ) )
@@ -742,7 +742,7 @@ AnimationNodeContext::AnimationNodeContext(
 						pServiceName = "com.sun.star.animations.ParallelTimeContainer";
 				}
 				break;
-			default:									
+			default:
 				pServiceName = 0;
 			}
 
@@ -927,14 +927,14 @@ void AnimationNodeContext::init_node(  const ::com::sun::star::uno::Reference< :
 					xAudio->setSource( makeAny( GetImport().GetAbsoluteReference( rValue ) ) );
 					break;
 				}
-				
+
 			}
 			// fall through intented!
 			case ANA_Target:
 			{
 				{
 					Any aTarget( mpHelper->convertTarget( rValue ) );
-	
+
 					if( xAnimate.is() )
 					{
 						xAnimate->setTarget( aTarget );
@@ -1332,17 +1332,17 @@ AnimationsImport::AnimationsImport( const Reference< XMultiServiceFactory > & rS
 	// add namespaces
 	GetNamespaceMap().Add(
 		GetXMLToken(XML_NP_PRESENTATION),
-        GetXMLToken(XML_N_PRESENTATION), 
+        GetXMLToken(XML_N_PRESENTATION),
 		XML_NAMESPACE_PRESENTATION);
 
 	GetNamespaceMap().Add(
 		GetXMLToken(XML_NP_SMIL),
-        GetXMLToken(XML_N_SMIL), 
+        GetXMLToken(XML_N_SMIL),
 		XML_NAMESPACE_SMIL);
 
 	GetNamespaceMap().Add(
 		GetXMLToken(XML_NP_ANIMATION),
-        GetXMLToken(XML_N_ANIMATION), 
+        GetXMLToken(XML_N_ANIMATION),
 		XML_NAMESPACE_ANIMATION);
 
 	mxRootNode = Reference< XAnimationNode >::query(rSMgr->createInstance(
@@ -1462,7 +1462,7 @@ void AnimationNodeContext::postProcessRootNode( SvXMLImport& /*rImport*/, const 
 						}
 						break;
 
-						}						
+						}
 					}
 
 					Reference< XTimeContainer > xRootContainer( xRootNode, UNO_QUERY_THROW );

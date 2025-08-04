@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -39,9 +39,9 @@ import util.FormTools;
 import util.WriterTools;
 
 public class OScrollBarModel extends TestCase {
-    
+
     XTextDocument xTextDoc;
-    
+
     /**
     * Creates Writer document.
     */
@@ -49,8 +49,8 @@ public class OScrollBarModel extends TestCase {
 
         log.println( "creating a textdocument" );
         xTextDoc = WriterTools.createTextDoc(((XMultiServiceFactory) tParam.getMSF()));
-    } 
-    
+    }
+
     /**
     * Disposes the Writer document.
     */
@@ -64,10 +64,10 @@ public class OScrollBarModel extends TestCase {
         } catch (com.sun.star.util.CloseVetoException e) {
             log.println("couldn't close document");
         } catch (com.sun.star.lang.DisposedException e) {
-            log.println("couldn't close document");            
+            log.println("couldn't close document");
         }
-    }    
-    
+    }
+
     protected synchronized TestEnvironment createTestEnvironment(TestParameters Param, PrintWriter log) {
 
         XInterface oObj = null;
@@ -79,9 +79,9 @@ public class OScrollBarModel extends TestCase {
         oObj = aShape.getControl();
         log.println( "creating a new environment for OScrollBarModel object" );
         TestEnvironment tEnv = new TestEnvironment( oObj );
-        
+
         System.out.println("Implementation Name: "+util.utils.getImplName(oObj));
-        
+
         String objName = "ScrollBar";
         tEnv.addObjRelation("OBJNAME", "com.sun.star.form.component." + objName);
         PropertyValue prop = new PropertyValue();
@@ -91,5 +91,5 @@ public class OScrollBarModel extends TestCase {
         tEnv.addObjRelation("XPropertyContainer.propertyNotRemovable", "HelpText");
         return tEnv;
     }
-    
+
 }

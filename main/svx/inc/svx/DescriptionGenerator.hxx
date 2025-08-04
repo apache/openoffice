@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -33,7 +33,7 @@
 
 namespace accessibility {
 
-/** This class creates description strings for shapes.  
+/** This class creates description strings for shapes.
     <p>Initialized with a given shape additional calls to the
     <member>addProperty</member> method will build a descriptive string that
     starts with a general shape description and the shapes style.  Appended
@@ -102,9 +102,9 @@ public:
             This which id is used to localize the property value.  If it is
             not known a value of -1 signals to use a default representation.
     */
-    void AddProperty (const ::rtl::OUString& sPropertyName, 
-        PropertyType aType, 
-        const ::rtl::OUString& sLocalizedName=::rtl::OUString(), 
+    void AddProperty (const ::rtl::OUString& sPropertyName,
+        PropertyType aType,
+        const ::rtl::OUString& sLocalizedName=::rtl::OUString(),
         long nWhichId=-1);
 
     /** Add the given property name and its associated value to the
@@ -124,8 +124,8 @@ public:
             This which id is used to localize the property value.  If it is
             not known a value of -1 signals to use a default representation.
     */
-    void AddProperty (const ::rtl::OUString& sPropertyName, 
-        PropertyType aType, 
+    void AddProperty (const ::rtl::OUString& sPropertyName,
+        PropertyType aType,
         sal_Int32 nResourceId,
         long nWhichId=-1);
 
@@ -136,7 +136,7 @@ public:
     */
     void AppendString (const ::rtl::OUString& sString);
 
-    /** This method adds for debuging and development the list of all known
+    /** This method adds for debugging and development the list of all known
         properties to the description.   Don't use in production code.
     */
     void AddPropertyNames (void);

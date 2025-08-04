@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -126,7 +126,7 @@ sal_Int32 GlobalSyncData::GetMappedId()
             nLinkId = mParaIds[ nLinkId ];
         else
             nLinkId = -1;
-    
+
         DBG_ASSERT( nLinkId >= 0, "unmapped id in GlobalSyncData" );
     }
 
@@ -399,7 +399,7 @@ sal_Bool PageSyncData::PlaySyncPageAct( PDFWriter& rWriter, sal_uInt32& rCurGDIM
             break;
 			case PDFExtOutDevDataSync::BeginGroup :
 			{
-				/* first determining if this BeginGroup is starting a GfxLink, 
+				/* first determining if this BeginGroup is starting a GfxLink,
 				   by searching for a EndGroup or a EndGroupGfxLink */
 				mbGroupIgnoreGDIMtfActions = sal_False;
 				std::deque< PDFExtOutDevDataSync >::iterator aBeg = mActions.begin();
@@ -644,7 +644,7 @@ void PDFExtOutDevData::PlayGlobalActions( PDFWriter& rWriter )
 //--->i56629
 sal_Int32 PDFExtOutDevData::CreateNamedDest(const String& sDestName,  const Rectangle& rRect, sal_Int32 nPageNr, PDFWriter::DestAreaType eType )
 {
-    mpGlobalSyncData->mActions.push_back( PDFExtOutDevDataSync::CreateNamedDest );    
+    mpGlobalSyncData->mActions.push_back( PDFExtOutDevDataSync::CreateNamedDest );
     mpGlobalSyncData->mParaOUStrings.push_back( sDestName );
     mpGlobalSyncData->mParaRects.push_back( rRect );
     mpGlobalSyncData->mParaMapModes.push_back( mrOutDev.GetMapMode() );

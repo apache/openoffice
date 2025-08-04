@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "precompiled_sc.hxx"
@@ -56,7 +56,7 @@ AlignmentPropertyPanel::AlignmentPropertyPanel(
     const cssu::Reference<css::frame::XFrame>& rxFrame,
     SfxBindings* pBindings)
     : Control(
-        pParent, 
+        pParent,
             ScResId(RID_PROPERTYPANEL_SC_ALIGNMENT)),
       mpTBHorizontalBackground(ControlFactory::CreateToolBoxBackground(this)),
       mpTBHorizontal(ControlFactory::CreateToolBox(
@@ -148,7 +148,7 @@ void AlignmentPropertyPanel::Initialize()
 
 	aLink = LINK(this, AlignmentPropertyPanel, CBOXMergnCellClkHdl);
 	mpCBXMergeCell->SetClickHdl ( aLink );
-	
+
 	aLink = LINK(this, AlignmentPropertyPanel, CBOXWrapTextClkHdl);
 	mpCBXWrapText->SetClickHdl ( aLink );
 
@@ -190,8 +190,8 @@ IMPL_LINK( AlignmentPropertyPanel, AngleModifiedHdl, void *, EMPTYARG )
 	String sTmp = mpMtrAngle->GetText();
 
 	sal_Unicode nChar = sTmp.GetChar( 0 );
-	if((sTmp.Len()== 1 &&  nChar == '-') || 
-		(nChar != '-' && ((nChar < '0') || (nChar > '9') ) ))	////modify 
+	if((sTmp.Len()== 1 &&  nChar == '-') ||
+		(nChar != '-' && ((nChar < '0') || (nChar > '9') ) ))	////modify
 		return 0;
 
 	double dTmp = sTmp.ToDouble();
@@ -199,7 +199,7 @@ IMPL_LINK( AlignmentPropertyPanel, AngleModifiedHdl, void *, EMPTYARG )
 
 	sal_Int64 nTmp = (sal_Int64)dTmp*100;
 	SfxInt32Item aAngleItem( SID_ATTR_ALIGN_DEGREES,(sal_uInt32) nTmp);
-	
+
 	GetBindings()->GetDispatcher()->Execute(
 		SID_ATTR_ALIGN_DEGREES, SFX_CALLMODE_RECORD, &aAngleItem, 0L );
 	return 0;
@@ -211,7 +211,7 @@ IMPL_LINK( AlignmentPropertyPanel, RotationHdl, void *, EMPTYARG )
 {
 	sal_Int32 nTmp = mpCtrlDial->GetRotation();
 	SfxInt32Item aAngleItem( SID_ATTR_ALIGN_DEGREES,(sal_uInt32) nTmp);
-	
+
 	GetBindings()->GetDispatcher()->Execute(
 		SID_ATTR_ALIGN_DEGREES, SFX_CALLMODE_RECORD, &aAngleItem, 0L );
 
@@ -321,14 +321,14 @@ IMPL_LINK(AlignmentPropertyPanel, CBOXMergnCellClkHdl, void*, EMPTYARG)
 {
 	bool bState = mpCBXMergeCell->IsChecked();
 
-	//Modified 
+	//Modified
 	//SfxBoolItem aItem( FID_MERGE_TOGGLE , bState);
 	//GetBindings()->GetDispatcher()->Execute(FID_MERGE_TOGGLE, SFX_CALLMODE_RECORD, &aItem, false, 0L);
 	if(bState)
 		GetBindings()->GetDispatcher()->Execute(FID_MERGE_ON, SFX_CALLMODE_RECORD);
 	else
 		GetBindings()->GetDispatcher()->Execute(FID_MERGE_OFF, SFX_CALLMODE_RECORD);
-	GetBindings()->Invalidate(FID_MERGE_TOGGLE,true,false);	
+	GetBindings()->Invalidate(FID_MERGE_TOGGLE,true,false);
 	//modified end
 
 	return 0;
@@ -357,7 +357,7 @@ AlignmentPropertyPanel* AlignmentPropertyPanel::Create (
         throw lang::IllegalArgumentException(A2S("no XFrame given to AlignmentPropertyPanel::Create"), NULL, 1);
     if (pBindings == NULL)
         throw lang::IllegalArgumentException(A2S("no SfxBindings given to AlignmentPropertyPanel::Create"), NULL, 2);
-    
+
     return new AlignmentPropertyPanel(
         pParent,
         rxFrame,
@@ -392,14 +392,14 @@ void AlignmentPropertyPanel::HandleContextChange(
 
 //////////////////////////////////////////////////////////////////////////////
 
-void AlignmentPropertyPanel::NotifyItemUpdate( 
-    sal_uInt16 nSID, 
-    SfxItemState eState, 
+void AlignmentPropertyPanel::NotifyItemUpdate(
+    sal_uInt16 nSID,
+    SfxItemState eState,
     const SfxPoolItem* pState,
     const bool bIsEnabled)
 {
     (void)bIsEnabled;
-    
+
 	switch(nSID)
 	{
 	case SID_H_ALIGNCELL:
@@ -464,7 +464,7 @@ void AlignmentPropertyPanel::NotifyItemUpdate(
 			mpCBXWrapText->Check(false);
 			mpCBXWrapText->Disable();
 		}
-		else 
+		else
 		{
 			mpCBXWrapText->Enable();
 			if(eState >= SFX_ITEM_DEFAULT && pState && pState->ISA(SfxBoolItem) )
@@ -487,7 +487,7 @@ void AlignmentPropertyPanel::NotifyItemUpdate(
 	case SID_ATTR_ALIGN_DEGREES:
 		if (eState >= SFX_ITEM_AVAILABLE)
 		{
-			long nTmp = ((const SfxInt32Item*)pState)->GetValue(); 
+			long nTmp = ((const SfxInt32Item*)pState)->GetValue();
 			mpMtrAngle->SetValue( nTmp / 100);	//wj
 			mpCtrlDial->SetRotation( nTmp );
 			switch(nTmp)
@@ -525,7 +525,7 @@ void AlignmentPropertyPanel::NotifyItemUpdate(
 		break;
 	case SID_ATTR_ALIGN_STACKED:
 		if (eState >= SFX_ITEM_AVAILABLE)
-		{			
+		{
 			mpCbStacked->EnableTriState(false);
 			const SfxBoolItem* aStackItem = (const SfxBoolItem*)pState;
 			bool IsChecked = (bool)aStackItem->GetValue();
@@ -560,9 +560,9 @@ void AlignmentPropertyPanel::NotifyItemUpdate(
 
 //////////////////////////////////////////////////////////////////////////////
 
-SfxBindings* AlignmentPropertyPanel::GetBindings() 
-{ 
-    return mpBindings; 
+SfxBindings* AlignmentPropertyPanel::GetBindings()
+{
+    return mpBindings;
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -571,7 +571,7 @@ void AlignmentPropertyPanel::FormatDegrees(double& dTmp)
 {
 	while(dTmp<0)
 		dTmp += 360;
-	while (dTmp > 359)	//modify 
+	while (dTmp > 359)	//modify
 		dTmp = 359;
 }
 
@@ -610,7 +610,7 @@ void AlignmentPropertyPanel::UpdateHorAlign()
 	}
 	switch(meHorAlignState)
 	{
-	case SVX_HOR_JUSTIFY_LEFT:	
+	case SVX_HOR_JUSTIFY_LEFT:
 		mpTBHorizontal->SetItemState(ID_SUBSTLEFT,	STATE_CHECK);
 		mpFTLeftIndent->Enable();
 		mpMFLeftIndent->Enable();
@@ -629,7 +629,7 @@ void AlignmentPropertyPanel::UpdateVerAlign()
 	mpTBVertical->SetItemState(IID_VERT_TOP,		STATE_NOCHECK);
 	mpTBVertical->SetItemState(IID_VERT_CENTER,	STATE_NOCHECK);
 	mpTBVertical->SetItemState(IID_VERT_BOTTOM,	STATE_NOCHECK);
-	
+
 	switch(meVerAlignState)
 	{
 	case SVX_VER_JUSTIFY_TOP:	mpTBVertical->SetItemState(IID_VERT_TOP,		STATE_CHECK);break;

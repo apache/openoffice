@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -174,7 +174,7 @@ public:
 	void			SetMaxMRUCount( sal_uInt16 n )	{ mnMaxMRUCount = n; }
 	sal_uInt16			GetMaxMRUCount() const		{ return mnMaxMRUCount; }
 
-	/**	An Entry is selectable if its mnFlags does not have the 
+	/**	An Entry is selectable if its mnFlags does not have the
 		LISTBOX_ENTRY_FLAG_DISABLE_SELECTION flag set. */
 	bool			IsEntrySelectable( sal_uInt16 nPos ) const;
 
@@ -307,7 +307,7 @@ public:
 
 	void			SetTopEntry( sal_uInt16 nTop );
 	sal_uInt16			GetTopEntry() const 			{ return mnTop; }
-	// ShowProminentEntry will set the entry correspoding to nEntryPos
+	// ShowProminentEntry will set the entry corresponding to nEntryPos
 	// either at top or in the middle depending on the chosen style
 	void            ShowProminentEntry( sal_uInt16 nEntryPos );
 	void            SetProminentEntryType( ProminentEntry eType ) { meProminentType = eType; }

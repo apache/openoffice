@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,11 +50,11 @@ using ::com::sun::star::xml::sax::XAttributeList;
 TYPEINIT1( XMLIndexTabStopEntryContext, XMLIndexSimpleEntryContext );
 
 XMLIndexTabStopEntryContext::XMLIndexTabStopEntryContext(
-	SvXMLImport& rImport, 
+	SvXMLImport& rImport,
 	XMLIndexTemplateContext& rTemplate,
 	sal_uInt16 nPrfx,
 	const OUString& rLocalName ) :
-		XMLIndexSimpleEntryContext(rImport, rTemplate.sTokenTabStop, 
+		XMLIndexSimpleEntryContext(rImport, rTemplate.sTokenTabStop,
                                    rTemplate, nPrfx, rLocalName),
 		sLeaderChar(),
 		nTabPosition(0),
@@ -78,7 +78,7 @@ void XMLIndexTabStopEntryContext::StartElement(
 	{
 		OUString sLocalName;
 		sal_uInt16 nPrefix = GetImport().GetNamespaceMap().
-			GetKeyByAttrName( xAttrList->getNameByIndex(nAttr), 
+			GetKeyByAttrName( xAttrList->getNameByIndex(nAttr),
 							  &sLocalName );
 		OUString sAttr = xAttrList->getValueByIndex(nAttr);
 		if (XML_NAMESPACE_STYLE == nPrefix)
@@ -137,7 +137,7 @@ void XMLIndexTabStopEntryContext::FillPropertyValues(
 
 	// right aligned?
 	pValues[nNextEntry].Name = rTemplateContext.sTabStopRightAligned;
-	pValues[nNextEntry].Value.setValue( &bTabRightAligned, 
+	pValues[nNextEntry].Value.setValue( &bTabRightAligned,
                                         ::getBooleanCppuType());
 	nNextEntry++;
 
@@ -158,13 +158,13 @@ void XMLIndexTabStopEntryContext::FillPropertyValues(
 	}
 
     // tab character #i21237#
- 	pValues[nNextEntry].Name = 
+ 	pValues[nNextEntry].Name =
         OUString( RTL_CONSTASCII_USTRINGPARAM("WithTab") );
 	pValues[nNextEntry].Value.setValue( &bWithTab,
                                         ::getBooleanCppuType());
-	nNextEntry++;  
+	nNextEntry++;
 
     // check whether we really filled all elements of the sequence
-    DBG_ASSERT( nNextEntry == rValues.getLength(), 
+    DBG_ASSERT( nNextEntry == rValues.getLength(),
                 "length incorrectly precumputed!" );
 }

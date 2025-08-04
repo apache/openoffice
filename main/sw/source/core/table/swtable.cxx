@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -482,7 +482,7 @@ void SwTable::Modify( const SfxPoolItem* pOld, const SfxPoolItem *pNew )
 		pOldSize = (const SwFmtFrmSize*)pOld;
 		pNewSize = (const SwFmtFrmSize*)pNew;
 	}
-    else 
+    else
         CheckRegistration( pOld, pNew );
 
 	if( pOldSize || pNewSize )
@@ -1663,7 +1663,7 @@ SwFrmFmt* SwTableLine::ClaimFrmFmt()
 {
     // This method makes sure that this object is an exclusive SwTableLine client
     // of an SwTableLineFmt object
-    // If other SwTableLine objects currently listen to the same SwTableLineFmt as 
+    // If other SwTableLine objects currently listen to the same SwTableLineFmt as
     // this one, something needs to be done
 	SwTableLineFmt *pRet = (SwTableLineFmt*)GetFrmFmt();
 	SwIterator<SwTableLine,SwFmt> aIter( *pRet );
@@ -1886,7 +1886,7 @@ SwFrmFmt* SwTableBox::ClaimFrmFmt()
 {
     // This method makes sure that this object is an exclusive SwTableBox client
     // of an SwTableBoxFmt object
-    // If other SwTableBox objects currently listen to the same SwTableBoxFmt as 
+    // If other SwTableBox objects currently listen to the same SwTableBoxFmt as
     // this one, something needs to be done
 	SwTableBoxFmt *pRet = (SwTableBoxFmt*)GetFrmFmt();
 	SwIterator<SwTableBox,SwFmt> aIter( *pRet );
@@ -2118,7 +2118,7 @@ void ChgTextToNum( SwTableBox& rBox, const String& rTxt, const Color* pCol,
 void ChgTextToNum( SwTableBox& rBox, const String& rTxt, const Color* pCol,
 					sal_Bool bChgAlign,sal_uLong nNdPos )
 {
-	
+
 	if( ULONG_MAX != nNdPos )
 	{
 		SwDoc* pDoc = rBox.GetFrmFmt()->GetDoc();
@@ -2754,18 +2754,18 @@ public:
         : m_pTable(NULL), m_pCellFrm(NULL), m_pTabFrm(NULL)
     {
     }
-    
+
     ~Impl() {}
 
-    void setTable(const SwTable * pTable) { 
-        m_pTable = pTable; 
+    void setTable(const SwTable * pTable) {
+        m_pTable = pTable;
         SwFrmFmt * pFrmFmt = m_pTable->GetFrmFmt();
         m_pTabFrm = SwIterator<SwTabFrm,SwFmt>::FirstElement(*pFrmFmt);
         if (m_pTabFrm->IsFollow())
             m_pTabFrm = m_pTabFrm->FindMaster(true);
     }
     const SwTable * getTable() const { return m_pTable; }
-    
+
     const SwCellFrm * getCellFrm() const { return m_pCellFrm; }
 
     const SwFrm * getNextFrmInTable(const SwFrm * pFrm);
@@ -2782,12 +2782,12 @@ const SwFrm * SwTableCellInfo::Impl::getNextFrmInTable(const SwFrm * pFrm)
         pResult = pFrm->GetLower();
     else if (pFrm->GetNext())
         pResult = pFrm->GetNext();
-    else 
+    else
     {
         while (pFrm->GetUpper() != NULL)
         {
             pFrm = pFrm->GetUpper();
-            
+
             if (pFrm->IsTabFrm())
             {
                 m_pTabFrm = static_cast<const SwTabFrm *>(pFrm)->GetFollow();
@@ -2827,7 +2827,7 @@ const SwCellFrm * SwTableCellInfo::Impl::getNextTableBoxsCellFrm(const SwFrm * p
 
     while ((pFrm = getNextCellFrm(pFrm)) != NULL)
     {
-        const SwCellFrm * pCellFrm = static_cast<const SwCellFrm *>(pFrm);        
+        const SwCellFrm * pCellFrm = static_cast<const SwCellFrm *>(pFrm);
         const SwTableBox * pTabBox = pCellFrm->GetTabBox();
         TableBoxes_t::const_iterator aIt = m_HandledTableBoxes.find(pTabBox);
 
@@ -2867,7 +2867,7 @@ SwTableCellInfo::SwTableCellInfo(const SwTable * pTable)
 }
 
 SwTableCellInfo::~SwTableCellInfo()
-{    
+{
 }
 
 bool SwTableCellInfo::getNext()

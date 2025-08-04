@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -254,7 +254,7 @@ public class ReportTextImplementation extends ReportImplementationHelper impleme
                 getRecordParser().setRecordFieldNames(sNewList);
                 getRecordParser().GroupFieldNames = JavaTools.ArrayoutofString(sGroupFieldNames, PropertyNames.SEMI_COLON);
                 getRecordParser().setCommandType(Integer.valueOf(sCommandType).intValue());
-                
+
                 sMsgQueryCreationImpossible = JavaTools.replaceSubString(sMsgQueryCreationImpossible, getRecordParser().Command, "<STATEMENT>");
                 bgetConnection = getRecordParser().getConnection(_properties);
                 int nCommandType = com.sun.star.sdb.CommandType.COMMAND;
@@ -409,7 +409,7 @@ public class ReportTextImplementation extends ReportImplementationHelper impleme
         {
             Logger.getLogger( ReportTextImplementation.class.getName() ).log( Level.SEVERE, null, ex );
         }
-//            catch (java.lang.Exception javaexception) 
+//            catch (java.lang.Exception javaexception)
 //            {
 //                javaexception.printStackTrace(System.out);
 //            }
@@ -437,18 +437,18 @@ public class ReportTextImplementation extends ReportImplementationHelper impleme
         }
         DataVector.removeAllElements();
     }
-//    public void updateProgressDisplay(int iCounter) 
+//    public void updateProgressDisplay(int iCounter)
 //        {
-//            try 
+//            try
 //            {
-//                if (iCounter % 10 == 0) 
+//                if (iCounter % 10 == 0)
 //                {
 //                    sProgressCurRecord = JavaTools.replaceSubString(sProgressBaseCurRecord, String.valueOf(iCounter), "<COUNT>");
 //                    setControlProperty("lblCurProgress", PropertyNames.PROPERTY_LABEL, sProgressCurRecord);
 //                    super.xReschedule.reschedule();
 //                }
-//            } 
-//            catch (java.lang.Exception jexception) 
+//            }
+//            catch (java.lang.Exception jexception)
 //            {
 //                jexception.printStackTrace(System.out);
 //            }

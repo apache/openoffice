@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -65,7 +65,7 @@
 //_________________________________________________________________________________________________________________
 //	Defines
 //_________________________________________________________________________________________________________________
-// 
+//
 
 using namespace com::sun::star::uno;
 using namespace com::sun::star::lang;
@@ -107,18 +107,18 @@ void HeaderMenuController::fillPopupMenu( const Reference< ::com::sun::star::fra
 {
     VCLXPopupMenu*                                     pPopupMenu        = (VCLXPopupMenu *)VCLXMenu::GetImplementation( rPopupMenu );
     PopupMenu*                                         pVCLPopupMenu     = 0;
-    
+
     vos::OGuard aSolarMutexGuard( Application::GetSolarMutex() );
-    
+
     resetPopupMenu( rPopupMenu );
     if ( pPopupMenu )
         pVCLPopupMenu = (PopupMenu *)pPopupMenu->GetMenu();
-        
+
     Reference< XStyleFamiliesSupplier > xStyleFamiliesSupplier( rModel, UNO_QUERY );
     if ( pVCLPopupMenu && xStyleFamiliesSupplier.is())
     {
         Reference< XNameAccess > xStyleFamilies = xStyleFamiliesSupplier->getStyleFamilies();
-        
+
         rtl::OUString aCmd( RTL_CONSTASCII_USTRINGPARAM( ".uno:InsertPageHeader" ));
         rtl::OUString aHeaderFooterIsOnStr(RTL_CONSTASCII_USTRINGPARAM( "HeaderIsOn" ));
         if ( m_bFooter )
@@ -128,7 +128,7 @@ void HeaderMenuController::fillPopupMenu( const Reference< ::com::sun::star::fra
         }
         const rtl::OUString aIsPhysicalStr( RTL_CONSTASCII_USTRINGPARAM( "IsPhysical" ));
         const rtl::OUString aDisplayNameStr( RTL_CONSTASCII_USTRINGPARAM( "DisplayName" ));
-        
+
         try
         {
             Reference< XNameContainer > xNameContainer;
@@ -154,8 +154,8 @@ void HeaderMenuController::fillPopupMenu( const Reference< ::com::sun::star::fra
                             rtl::OUString aDisplayName;
                             sal_Bool      bHeaderIsOn( sal_False );
                             xPropSet->getPropertyValue( aDisplayNameStr ) >>= aDisplayName;
-                            xPropSet->getPropertyValue( aHeaderFooterIsOnStr ) >>= bHeaderIsOn;                            
-                            
+                            xPropSet->getPropertyValue( aHeaderFooterIsOnStr ) >>= bHeaderIsOn;
+
                             rtl::OUStringBuffer aStrBuf( aCmd );
                             aStrBuf.appendAscii( "?PageStyle:string=");
                             aStrBuf.append( aDisplayName );
@@ -171,13 +171,13 @@ void HeaderMenuController::fillPopupMenu( const Reference< ::com::sun::star::fra
                                 bFirstItemInserted = sal_True;
                                 bFirstChecked      = bHeaderIsOn;
                             }
-                            
+
                             pVCLPopupMenu->SetItemCommand( nId, aCommand );
 
                             if ( bHeaderIsOn )
                                 pVCLPopupMenu->CheckItem( nId, sal_True );
                             ++nId;
-			                
+
                             // Check if all entries have the same state
                             if( bAllOneState && n && bHeaderIsOn != bLastCheck )
 				                bAllOneState = sal_False;
@@ -194,7 +194,7 @@ void HeaderMenuController::fillPopupMenu( const Reference< ::com::sun::star::fra
 
                     rtl::OUStringBuffer aStrBuf( aCmd );
                     aStrBuf.appendAscii( "?On:bool=" );
-                    
+
                     // Command depends on check state of first menu item entry
                     if ( !bFirstChecked )
                         aStrBuf.appendAscii( "true" );
@@ -221,7 +221,7 @@ void SAL_CALL HeaderMenuController::disposing( const EventObject& ) throw ( Runt
     m_xFrame.clear();
     m_xDispatch.clear();
     m_xServiceManager.clear();
-    
+
     if ( m_xPopupMenu.is() )
         m_xPopupMenu->removeMenuListener( Reference< css::awt::XMenuListener >(( OWeakObject *)this, UNO_QUERY ));
     m_xPopupMenu.clear();
@@ -255,15 +255,15 @@ void HeaderMenuController::impl_select(const Reference< XDispatch >& _xDispatch,
 void SAL_CALL HeaderMenuController::updatePopupMenu() throw (::com::sun::star::uno::RuntimeException)
 {
     osl::ResettableMutexGuard aLock( m_aMutex );
-    
+
 	throwIfDisposed();
 
     Reference< com::sun::star::frame::XModel > xModel( m_xModel );
     aLock.clear();
-    
+
     if ( !xModel.is() )
 		svt::PopupMenuControllerBase::updatePopupMenu();
-    
+
     aLock.reset();
     if ( m_xPopupMenu.is() && m_xModel.is() )
         fillPopupMenu( m_xModel, m_xPopupMenu );

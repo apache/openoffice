@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -121,10 +121,10 @@ protected:
     virtual void		drawPolygon( sal_uInt32 nPoints, const SalPoint* pPtAry ) = 0;
     virtual void		drawPolyPolygon( sal_uInt32 nPoly, const sal_uInt32* pPoints, PCONSTSALPOINT* pPtAry ) = 0;
     virtual bool        drawPolyPolygon( const ::basegfx::B2DPolyPolygon&, double fTransparency ) = 0;
-    virtual bool        drawPolyLine( 
-        const ::basegfx::B2DPolygon&, 
-        double fTransparency, 
-        const ::basegfx::B2DVector& rLineWidths, 
+    virtual bool        drawPolyLine(
+        const ::basegfx::B2DPolygon&,
+        double fTransparency,
+        const ::basegfx::B2DVector& rLineWidths,
         basegfx::B2DLineJoin,
         com::sun::star::drawing::LineCap) = 0;
     virtual sal_Bool	drawPolyLineBezier( sal_uInt32 nPoints, const SalPoint* pPtAry, const sal_uInt8* pFlgAry ) = 0;
@@ -251,14 +251,14 @@ public:
     // OutputDevice for all its device specific preferred font substitutions
     virtual void			GetDevFontSubstList( OutputDevice* ) = 0;
     virtual bool			AddTempDevFont( ImplDevFontList*, const String& rFileURL, const String& rFontName ) = 0;
-    // CreateFontSubset: a method to get a subset of glyhps of a font
+    // CreateFontSubset: a method to get a subset of glyphs of a font
     // inside a new valid font file
     // returns sal_True if creation of subset was successful
     // parameters: rToFile: contains a osl file URL to write the subset to
     //             pFont: describes from which font to create a subset
     //             pGlyphIDs: the glyph ids to be extracted
     //             pEncoding: the character code corresponding to each glyph
-    //             pWidths: the advance widths of the correspoding glyphs (in PS font units)
+    //             pWidths: the advance widths of the corresponding glyphs (in PS font units)
     //             nGlyphs: the number of glyphs
     //             rInfo: additional outgoing information
     // implementation note: encoding 0 with glyph id 0 should be added implicitly
@@ -297,7 +297,7 @@ public:
                                           long* pDataLen ) = 0;
     // frees the font data again
     virtual void			FreeEmbedFontData( const void* pData, long nDataLen ) = 0;
-    
+
     // get the same widths as in CreateFontSubset and GetEmbedFontData
     // in case of an embeddable font also fill the mapping
     // between unicode and glyph id
@@ -344,7 +344,7 @@ public:
         false: no substitution has taken place, rNewText, rLen, rCutStart, rCutStop remain unchanged
      */
     virtual bool            filterText( const String& rOrigText, String& rNewText, xub_StrLen nIndex, xub_StrLen& rLen, xub_StrLen& rCutStart, xub_StrLen& rCutStop );
-    
+
     virtual bool            supportsOperation( OutDevSupportType ) const = 0;
 
     // mirroring specifica
@@ -377,12 +377,12 @@ public:
                                              PCONSTSALPOINT* pPtAry,
                                              const OutputDevice *pOutDev );
     bool                    DrawPolyPolygon( const ::basegfx::B2DPolyPolygon&, double fTransparency, const OutputDevice* );
-    
-    bool DrawPolyLine( 
-        const basegfx::B2DPolygon& i_rPolygon, 
-        double i_fTransparency, 
-        const basegfx::B2DVector& i_rLineWidth, 
-        basegfx::B2DLineJoin i_eLineJoin, 
+
+    bool DrawPolyLine(
+        const basegfx::B2DPolygon& i_rPolygon,
+        double i_fTransparency,
+        const basegfx::B2DVector& i_rLineWidth,
+        basegfx::B2DLineJoin i_eLineJoin,
         com::sun::star::drawing::LineCap i_eLineCap,
         const OutputDevice* i_pOutDev);
 
@@ -504,7 +504,7 @@ public:
         const SalBitmap* pAlphaBitmap,
         const OutputDevice* pOutDev );
 
-    bool DrawAlphaRect( long nX, long nY, long nWidth, long nHeight, 
+    bool DrawAlphaRect( long nX, long nY, long nWidth, long nHeight,
                         sal_uInt8 nTransparency, const OutputDevice *pOutDev );
 
     virtual SystemGraphicsData   GetGraphicsData() const = 0;

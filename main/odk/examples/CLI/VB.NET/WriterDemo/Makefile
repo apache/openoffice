@@ -48,7 +48,7 @@ ALL : WriterDemo
 include $(SETTINGS)/stdtarget.mk
 
 # build executables
-$(WRITERDEMO_OUT)/%.exe: %.vb 
+$(WRITERDEMO_OUT)/%.exe: %.vb
 	-$(MKDIR) $(subst /,$(PS),$(@D))
 	vbc $(VBC_FLAGS) \
 		-target:exe \
@@ -72,7 +72,7 @@ WriterDemo : $(WRITERDEMO_OUT)/WriterDemo.exe
 	@echo $(MAKE) WriterDemo.run
 	@echo -------------------------------------------------------------------------------
 else
-WriterDemo : 
+WriterDemo :
 	@echo --------------------------------------------------------------------------------
 	@echo This example works only under Windows!
 	@echo --------------------------------------------------------------------------------

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -35,7 +35,7 @@ import org.openoffice.xmerge.converter.xml.sxc.SxcDocumentSerializer;
 import org.openoffice.xmerge.converter.xml.sxc.pexcel.records.Workbook;
 
 /**
- *  <p>Pocket Excel implementation of <code>SxcDocumentDeserializer</code> 
+ *  <p>Pocket Excel implementation of <code>SxcDocumentDeserializer</code>
  *  for the {@link
  *  org.openoffice.xmerge.converter.xml.sxc.pexcel.PluginFactoryImpl
  *  PluginFactoryImpl}.</p>
@@ -58,7 +58,7 @@ public final class SxcDocumentSerializerImpl extends SxcDocumentSerializer {
         super(document);
     }
 
-    
+
     public ConvertData serialize() throws ConvertException, IOException {
 
         // Get the server side document name.  This value should not
@@ -86,7 +86,7 @@ public final class SxcDocumentSerializerImpl extends SxcDocumentSerializer {
             traverseBody(node);
         }
 
-        // get settings for this document 
+        // get settings for this document
 	    org.w3c.dom.Document settingsDoc = sxcDoc.getSettingsDOM();
 		if(settingsDoc!=null) {
 			NodeList settingsList = settingsDoc.getElementsByTagName(TAG_OFFICE_SETTINGS);
@@ -106,7 +106,7 @@ public final class SxcDocumentSerializerImpl extends SxcDocumentSerializer {
 
         return cd;
     }
-    
+
 
     /**
      *  A cell reference in a StarOffice formula looks like

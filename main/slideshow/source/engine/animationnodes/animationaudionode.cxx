@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,7 +41,7 @@ namespace slideshow {
 namespace internal {
 
 AnimationAudioNode::AnimationAudioNode(
-    const uno::Reference< animations::XAnimationNode >& xNode, 
+    const uno::Reference< animations::XAnimationNode >& xNode,
     const BaseContainerNodeSharedPtr&                   rParent,
     const NodeContext&                                  rContext )
     : BaseNode( xNode, rParent, rContext ),
@@ -50,10 +50,10 @@ AnimationAudioNode::AnimationAudioNode(
       mpPlayer()
 {
     mxAudioNode->getSource() >>= maSoundURL;
-    
+
     OSL_ENSURE( maSoundURL.getLength(),
                 "could not extract sound source URL/empty URL string" );
-    
+
     ENSURE_OR_THROW( getContext().mxComponentContext.is(),
                       "Invalid component context" );
 }
@@ -68,21 +68,21 @@ void AnimationAudioNode::dispose()
 void AnimationAudioNode::activate_st()
 {
     createPlayer();
-    
+
     AnimationEventHandlerSharedPtr aHandler(
         boost::dynamic_pointer_cast<AnimationEventHandler>( getSelf() ) );
     OSL_ENSURE( aHandler,
                 "could not cast self to AnimationEventHandler?" );
     getContext().mrEventMultiplexer.addCommandStopAudioHandler( aHandler );
-    
-    if (mpPlayer && mpPlayer->startPlayback()) 
+
+    if (mpPlayer && mpPlayer->startPlayback())
     {
         // TODO(F2): Handle end time attribute, too
-        if( getXAnimationNode()->getDuration().hasValue() ) 
+        if( getXAnimationNode()->getDuration().hasValue() )
         {
             scheduleDeactivationEvent();
         }
-        else 
+        else
         {
             // no node duration. Take inherent media time, then
             scheduleDeactivationEvent(
@@ -91,7 +91,7 @@ void AnimationAudioNode::activate_st()
                            "AnimationAudioNode::deactivate with delay") );
         }
     }
-    else 
+    else
     {
         // deactivate ASAP:
         scheduleDeactivationEvent(
@@ -110,14 +110,14 @@ void AnimationAudioNode::deactivate_st( NodeState /*eDestState*/ )
     OSL_ENSURE( aHandler,
                 "could not cas self to AnimationEventHandler?" );
     getContext().mrEventMultiplexer.removeCommandStopAudioHandler( aHandler );
-    
+
     // force-end sound
-    if (mpPlayer) 
+    if (mpPlayer)
     {
         mpPlayer->stopPlayback();
         resetPlayer();
     }
-    
+
     // notify _after_ state change:
     getContext().mrEventQueue.addEvent(
         makeEvent( boost::bind( &EventMultiplexer::notifyAudioStopped,
@@ -138,14 +138,14 @@ void AnimationAudioNode::createPlayer() const
 {
     if (mpPlayer)
         return;
-    
-    try 
+
+    try
     {
         mpPlayer = SoundPlayer::create( getContext().mrEventMultiplexer,
                                         maSoundURL,
                                         getContext().mxComponentContext );
     }
-    catch( lang::NoSupportException& ) 
+    catch( lang::NoSupportException& )
     {
         // catch possible exceptions from SoundPlayer,
         // since being not able to playback the sound
@@ -156,7 +156,7 @@ void AnimationAudioNode::createPlayer() const
 
 void AnimationAudioNode::resetPlayer() const
 {
-    if (mpPlayer) 
+    if (mpPlayer)
     {
         mpPlayer->stopPlayback();
         mpPlayer->dispose();

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,22 +7,22 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
 /*
  * Creates logfile and file for debug information
- * 
+ *
  */
 package com.sun.star.tooling.converter;
 
@@ -30,11 +30,11 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 
 /**
- * Handle the whole output during converting process except the converted files. 
- * Write output to logfiles and to screen depending on switches given 
+ * Handle the whole output during converting process except the converted files.
+ * Write output to logfiles and to screen depending on switches given
  * at command line.
  * @author Christian Schmidt 2005
- *  
+ *
  */
 public class OutputHandler {
 
@@ -63,7 +63,7 @@ public class OutputHandler {
     /**
      * Write the data to screen and if the switches were set to
      * logfile and debugfile
-     * 
+     *
      * @param out the String to write
      */
     final static void out(String out) {
@@ -96,9 +96,9 @@ public class OutputHandler {
     }
 
     /**
-     * write the data to log file and if the switch is set 
+     * write the data to log file and if the switch is set
      * to the debug file
-     * 
+     *
      * @param out the String to write
      */
     final static void log(String out) {
@@ -123,7 +123,7 @@ public class OutputHandler {
 
     /**
      * write the string to the debug file
-     * 
+     *
      * @param out the String to write
      * @throws IOException
      */
@@ -141,7 +141,7 @@ public class OutputHandler {
 
     /**
      * Set a new value to indicate whether a debug file should be written or not
-     * 
+     *
      * @param doDebug
      *            The debug value to set.
      */
@@ -157,8 +157,8 @@ public class OutputHandler {
     //	}
 
     /**
-     * Set the debug file to write to. 
-     * 
+     * Set the debug file to write to.
+     *
      * @param dbgFile
      *            The debug File to use.
      */

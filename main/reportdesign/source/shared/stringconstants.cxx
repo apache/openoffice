@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -75,7 +75,7 @@ IMPLEMENT_CONSTASCII_USTRING(PROPERTY_REPORTFOOTER			, "ReportFooter");
 IMPLEMENT_CONSTASCII_USTRING(PROPERTY_PAGEHEADER			, "PageHeader");
 IMPLEMENT_CONSTASCII_USTRING(PROPERTY_PAGEFOOTER			, "PageFooter");
 IMPLEMENT_CONSTASCII_USTRING(PROPERTY_DETAIL				, "Detail");
-IMPLEMENT_CONSTASCII_USTRING(PROPERTY_CAPTION				, "Caption");	 
+IMPLEMENT_CONSTASCII_USTRING(PROPERTY_CAPTION				, "Caption");
 IMPLEMENT_CONSTASCII_USTRING(PROPERTY_BACKGRAPHICURL		, "BackGraphicURL");
 IMPLEMENT_CONSTASCII_USTRING(PROPERTY_COMMAND				, "Command");
 IMPLEMENT_CONSTASCII_USTRING(PROPERTY_BACKGRAPHICLOCATION	, "BackGraphicLocation");
@@ -159,9 +159,9 @@ IMPLEMENT_CONSTASCII_USTRING(PROPERTY_FONTUNDERLINE,	"CharUnderline");
 IMPLEMENT_CONSTASCII_USTRING(PROPERTY_FONTWEIGHT,		"CharWeight");
 IMPLEMENT_CONSTASCII_USTRING(PROPERTY_FONTWIDTH,		"FontWidth");
 IMPLEMENT_CONSTASCII_USTRING(PROPERTY_FONTWORDLINEMODE,	"FontWordLineMode");
-IMPLEMENT_CONSTASCII_USTRING(PROPERTY_FONTTYPE,			"FontType"); 
+IMPLEMENT_CONSTASCII_USTRING(PROPERTY_FONTTYPE,			"FontType");
 
-IMPLEMENT_CONSTASCII_USTRING(PROPERTY_ENABLED	,		"Enabled"); 
+IMPLEMENT_CONSTASCII_USTRING(PROPERTY_ENABLED	,		"Enabled");
 
 IMPLEMENT_CONSTASCII_USTRING(PROPERTY_CHAREMPHASIS,		"CharEmphasis");
 IMPLEMENT_CONSTASCII_USTRING(PROPERTY_CHARFONTNAME,		"CharFontName");

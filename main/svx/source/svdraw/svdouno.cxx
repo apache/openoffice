@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -138,7 +138,7 @@ namespace
             DBG_ASSERT( pPageWindow, "lcl_ensureControlVisibility: invalid PageViewWindow!" );
             if ( !pPageWindow )
                 continue;
-            
+
             if ( !pPageWindow->HasObjectContact() )
                 continue;
 
@@ -388,7 +388,7 @@ bool SdrUnoObj::supportsFullDrag() const
     // to ckeck some things out. Current solution is working, so default is
     // enabled
     static bool bDoSupportFullDrag(true);
-    
+
     return bDoSupportFullDrag;
 }
 
@@ -399,7 +399,7 @@ SdrObject* SdrUnoObj::getFullDragClone() const
 
     if(bHandleSpecial)
     {
-	    // special handling for SdrUnoObj (FormControl). Create a SdrGrafObj 
+	    // special handling for SdrUnoObj (FormControl). Create a SdrGrafObj
 	    // for drag containing the graphical representation. This does not work too
         // well, so the default is to simply clone
 	    pRetval = new SdrGrafObj(SdrDragView::GetObjGraphic(GetModel(), this), GetLogicRect());
@@ -556,7 +556,7 @@ void SdrUnoObj::SetUnoControlModel( const uno::Reference< awt::XControlModel >& 
     ViewContactOfUnoControl* pVC = NULL;
     if ( impl_getViewContact( pVC ) )
 	{
-		// flushViewObjectContacts() removes all existing VOCs for the local DrawHierarchy. This 
+		// flushViewObjectContacts() removes all existing VOCs for the local DrawHierarchy. This
         // is always allowed since they will be re-created on demand (and with the changed model)
         GetViewContact().flushViewObjectContacts(true);
 	}
@@ -582,7 +582,7 @@ uno::Reference< awt::XControl > SdrUnoObj::GetUnoControl(const SdrView& _rView, 
     OSL_ENSURE( pUnoContact, "SdrUnoObj::GetUnoControl: wrong contact type!" );
     if ( pUnoContact )
         xControl = pUnoContact->getControl();
-  
+
     return xControl;
 }
 
@@ -591,11 +591,11 @@ uno::Reference< awt::XControl > SdrUnoObj::GetTemporaryControlForWindow(
     const Window& _rWindow, uno::Reference< awt::XControlContainer >& _inout_ControlContainer ) const
 {
     uno::Reference< awt::XControl > xControl;
-  
+
     ViewContactOfUnoControl* pVC = NULL;
     if ( impl_getViewContact( pVC ) )
         xControl = pVC->getTemporaryControlForWindow( _rWindow, _inout_ControlContainer );
-  
+
     return xControl;
 }
 

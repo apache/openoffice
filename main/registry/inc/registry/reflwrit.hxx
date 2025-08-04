@@ -100,7 +100,7 @@ public:
 							  sal_uInt16 				methodCount,
 							  sal_uInt16				referenceCount);
 
-	// Copy constructcor
+	// Copy constructor
 	inline RegistryTypeWriter(const RegistryTypeWriter& toCopy);
 
 	/** Destructor. The Destructor frees the internal data block.

@@ -48,18 +48,18 @@ public class Extension
         maBaseTypeName = aBaseTypeName;
     }
 
-    
-    
-    
+
+
+
     @Override
     public void AcceptVisitor (final INodeVisitor aVisitor)
     {
         aVisitor.Visit(this);
     }
 
-    
-    
-    
+
+
+
     @Override
     public NodeType GetNodeType()
     {
@@ -82,8 +82,8 @@ public class Extension
         return aSchema.GetTypeForName(maBaseTypeName);
     }
 
-    
-    
+
+
 
     @Override
     public INode GetReferencedNode (final SchemaBase aSchema)
@@ -91,32 +91,32 @@ public class Extension
         return GetBaseType(aSchema);
     }
 
-    
-    
+
+
 
     public Vector<INode> GetTypeNodes (final SchemaBase aSchemaBase)
     {
         final Vector<INode> aNodes = new Vector<>();
-        
+
         AddNodes(aSchemaBase.GetTypeForName(maBaseTypeName), aNodes, aSchemaBase);
         for (final INode aChild : GetChildren())
             AddNodes(aChild, aNodes, aSchemaBase);
-        
+
         return aNodes;
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public String toString ()
     {
     	return "extension of base type "+maBaseTypeName.GetDisplayName();
     }
-    
-    
-    
-    
+
+
+
+
     private void AddNodes (
         final INode aParent,
         final Vector<INode> aNodes,
@@ -145,16 +145,16 @@ public class Extension
                             throw new RuntimeException();
                     }
                     break;
-                    
+
                 default:
                     aNodes.add(aNode);
                     return;
             }
         }
     }
-    
-    
-    
-    
+
+
+
+
     public QualifiedName maBaseTypeName;
 }

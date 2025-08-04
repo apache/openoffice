@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -52,7 +52,7 @@ ElementCollector::ElementCollector(
  *	ElementCollector -- constructor method
  *
  *   SYNOPSIS
- *	ElementCollector(nSecurityId, nBufferId, nPriority, bToModify 
+ *	ElementCollector(nSecurityId, nBufferId, nPriority, bToModify
  *	                 xReferenceResolvedListener);
  *
  *   FUNCTION
@@ -63,7 +63,7 @@ ElementCollector::ElementCollector(
  *			related with. Either a signature or an encryption is
  *			a security entity.
  *	nBufferId -	the id of the element bufferred in the document
- *			wrapper component. The document wrapper component 
+ *			wrapper component. The document wrapper component
  *			uses this id to search the particular bufferred
  *			element.
  *	nPriority -	the priority value. ElementCollector with lower
@@ -272,20 +272,20 @@ ElementCollector* ElementCollector::clone(
  *	Email: michael.mi@sun.com
  ******************************************************************************/
 {
-	ElementCollector* pClonedOne 
-		= new ElementCollector(m_nSecurityId, 
+	ElementCollector* pClonedOne
+		= new ElementCollector(m_nSecurityId,
 				       nBufferId, nPriority, m_bToModify,
 				       m_xReferenceResolvedListener);
-	
+
 	if (m_bAbleToNotify)
 	{
 		pClonedOne->notifyListener();
 	}
-	
+
 	if (m_pBufferNode != NULL)
 	{
 		m_pBufferNode->addElementCollector(pClonedOne);
 	}
-	
+
 	return pClonedOne;
 }

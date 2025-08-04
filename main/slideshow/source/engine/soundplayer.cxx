@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,7 +51,7 @@ namespace slideshow
     namespace internal
     {
         // TODO(Q3): Move the whole SoundPlayer class to avmedia.
-    
+
         boost::shared_ptr<SoundPlayer> SoundPlayer::create(
             EventMultiplexer & rEventMultiplexer,
             const ::rtl::OUString& rSoundURL,
@@ -70,7 +70,7 @@ namespace slideshow
         {
             return bPauseShow ? stopPlayback() : startPlayback();
         }
-    
+
         void SoundPlayer::dispose()
         {
             if( mThis )
@@ -78,7 +78,7 @@ namespace slideshow
                 mrEventMultiplexer.removePauseHandler( mThis );
                 mThis.reset();
             }
-            
+
 			if( mxPlayer.is() )
             {
 				mxPlayer->stop();
@@ -89,7 +89,7 @@ namespace slideshow
                 mxPlayer.clear();
 			}
         }
-    
+
         SoundPlayer::SoundPlayer(
             EventMultiplexer & rEventMultiplexer,
             const ::rtl::OUString& rSoundURL,
@@ -103,7 +103,7 @@ namespace slideshow
 
             try
             {
-        		const INetURLObject aURL( rSoundURL );		
+        		const INetURLObject aURL( rSoundURL );
                 mxPlayer.set( avmedia::MediaWindow::createPlayer(
                                 aURL.GetMainURL( INetURLObject::DECODE_UNAMBIGUOUS ) ),
                                 uno::UNO_QUERY);
@@ -112,7 +112,7 @@ namespace slideshow
             {
                 throw;
             }
-            catch( uno::Exception& ) 
+            catch( uno::Exception& )
             {
             }
 
@@ -141,10 +141,10 @@ namespace slideshow
         {
             if( !mxPlayer.is() )
                 return 0.0;
-            
+
             const double nDuration( mxPlayer->getDuration() );
             if( mxPlayer->isPlaying() )
-                return ::std::max( 0.0, 
+                return ::std::max( 0.0,
                                    nDuration - mxPlayer->getMediaTime() );
             else
                 return nDuration;
@@ -158,7 +158,7 @@ namespace slideshow
             if( mxPlayer->isPlaying() )
                 mxPlayer->stop();
 
-            mxPlayer->start();            
+            mxPlayer->start();
             return true;
         }
 

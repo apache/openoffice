@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -35,7 +35,7 @@ public class VclListBox extends VclControl  {
 
 	/**
 	 * Returns the number of entries in a TreeListBox.
-	 * 
+	 *
 	 * @return Number of list box entries. Error if the return value is -1.
 	 */
 	public int getItemCount() {
@@ -45,7 +45,7 @@ public class VclListBox extends VclControl  {
 	/**
 	 * Get the text of the specified entry in the tree list box Notice:
 	 * index,col starting from 0
-	 * 
+	 *
 	 * @param index
 	 * @param col
 	 * @return
@@ -56,7 +56,7 @@ public class VclListBox extends VclControl  {
 
 	/**
 	 * Get the text of the specified node Notice: index starting from 0
-	 * 
+	 *
 	 * @param index
 	 * @return
 	 */
@@ -67,7 +67,7 @@ public class VclListBox extends VclControl  {
 	/**
 	 * Returns the number of selected entries in a TreeListbox(you can select
 	 * more than one entry).
-	 * 
+	 *
 	 * @return The number of selected entries. Error is the return value is -1.
 	 */
 	public int getSelCount() {
@@ -77,7 +77,7 @@ public class VclListBox extends VclControl  {
 	/**
 	 * Returns the index number of the selected entry in the TreeListBox.
 	 * Notice: index starting from 0
-	 * 
+	 *
 	 * @return The index number of selected entries. Error is the return value
 	 *         is -1.
 	 */
@@ -94,7 +94,7 @@ public class VclListBox extends VclControl  {
 
 	/**
 	 * Select the specified node via its index Notice: index starting from 0
-	 * 
+	 *
 	 * @param index
 	 */
 	public void select(int index) {
@@ -103,7 +103,7 @@ public class VclListBox extends VclControl  {
 
 	/**
 	 * Selects the text of an entry.
-	 * 
+	 *
 	 * @param str
 	 *            the item string
 	 */
@@ -116,7 +116,7 @@ public class VclListBox extends VclControl  {
 					return;
 				}
 			}
-			
+
 			throw new RuntimeException(text + " is not found in the list box");
 		} else {
 			invoke(Constant.M_Select, new Object[] { text });
@@ -125,7 +125,7 @@ public class VclListBox extends VclControl  {
 
 	/**
 	 * Append one item to be selected after selected some items.
-	 * 
+	 *
 	 * @param i
 	 *            the index of the item
 	 */
@@ -135,7 +135,7 @@ public class VclListBox extends VclControl  {
 
 	/**
 	 * Append one item to be selected after selected some items.
-	 * 
+	 *
 	 * @param text
 	 *            the text of the item
 	 */
@@ -145,7 +145,7 @@ public class VclListBox extends VclControl  {
 
 	/**
 	 * get all items'text.
-	 * 
+	 *
 	 */
 	public String[] getItemsText() {
 		int count = getItemCount();
@@ -157,7 +157,7 @@ public class VclListBox extends VclControl  {
 	}
 
 	/**
-	 * 
+	 *
 	 * @param text
 	 * @return
 	 */
@@ -167,14 +167,14 @@ public class VclListBox extends VclControl  {
 			if (text.equals(getItemText(i)))
 				return i;
 		}
-		
+
 		throw new RuntimeException(text + " is not found in the list box");
 	}
-	
-	
+
+
 	/**
 	 * Check if the list box has the specified item
-	 * 
+	 *
 	 * @param str
 	 * @return
 	 */

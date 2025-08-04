@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,19 +7,19 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
-# Builds the Databse SDBC driver skeleton example of the Developers Guide.
+# Builds the Database SDBC driver skeleton example of the Developers Guide.
 
 PRJ=../../../..
 SETTINGS=$(PRJ)/settings
@@ -63,12 +63,12 @@ ALL : \
 include $(SETTINGS)/stdtarget.mk
 
 $(OUT_COMP_SLO)/%.$(OBJ_EXT) : %.cxx $(SDKTYPEFLAG)
-	-$(MKDIR) $(subst /,$(PS),$(@D))	 
+	-$(MKDIR) $(subst /,$(PS),$(@D))
 	$(CC) $(CC_FLAGS) $(CC_INCLUDES) $(STL_INCLUDES) -I$(OUT_COMP_INC) $(CC_DEFINES) $(CC_OUTPUT_SWITCH)$(subst /,$(PS),$@) $<
 
 #$(COMP_MAPFILE) : $(SLOFILES)
-#	-$(MKDIR) $(subst /,$(PS),$(@D))	 
-#	cat $(PRJ)/settings/component.uno.map > $(COMP_MAPFILE) 
+#	-$(MKDIR) $(subst /,$(PS),$(@D))
+#	cat $(PRJ)/settings/component.uno.map > $(COMP_MAPFILE)
 #ifeq "$(OS)" "MACOSX"
 #	nm -gx $(SLOFILES) | $(ADDSYMBOLS) >> $(COMP_MAPFILE)
 #endif
@@ -83,7 +83,7 @@ $(SHAREDLIB_OUT)/%.$(SHAREDLIB_EXT) : $(SLOFILES)
 	$(LINK_MANIFEST)
 else
 $(SHAREDLIB_OUT)/%.$(SHAREDLIB_EXT) : $(SLOFILES)
-	-$(MKDIR) $(subst /,$(PS),$(@D))	 
+	-$(MKDIR) $(subst /,$(PS),$(@D))
 	$(LINK) $(COMP_LINK_FLAGS) $(LINK_LIBS) -o $@ $(SLOFILES) \
 	$(CPPUHELPERLIB) $(CPPULIB) $(SALLIB) $(STC++LIB) $(CPPUHELPERDYLIB) $(CPPUDYLIB) $(SALDYLIB)
 ifeq "$(OS)" "MACOSX"
@@ -113,8 +113,8 @@ $(COMP_COMPONENTS) :
 	@echo $(OSEP)/components$(CSEP) >> $@
 
 $(COMP_PACKAGE) : $(COMP_LIBRARY) $(COMP_UNOPKG_MANIFEST) $(COMP_COMPONENTS)
-	-$(MKDIR) $(subst /,$(PS),$(@D)) && $(DEL) $(subst \\,\,$(subst /,$(PS),$@))	 
-	-$(MKDIR) $(subst /,$(PS),$(OUT_COMP_MISC)/$(UNOPKG_PLATFORM))	 
+	-$(MKDIR) $(subst /,$(PS),$(@D)) && $(DEL) $(subst \\,\,$(subst /,$(PS),$@))
+	-$(MKDIR) $(subst /,$(PS),$(OUT_COMP_MISC)/$(UNOPKG_PLATFORM))
 	$(COPY) $(subst /,$(PS),$<) $(subst /,$(PS),$(OUT_COMP_MISC)/$(UNOPKG_PLATFORM))
 	cd $(subst /,$(PS),$(OUT_COMP_MISC)) && $(SDK_ZIP) ../../bin/$(@F) $(COMP_NAME).components
 	cd $(subst /,$(PS),$(OUT_COMP_MISC)) && $(SDK_ZIP) -u ../../bin/$(@F) $(UNOPKG_PLATFORM)/$(<F)
@@ -122,15 +122,15 @@ $(COMP_PACKAGE) : $(COMP_LIBRARY) $(COMP_UNOPKG_MANIFEST) $(COMP_COMPONENTS)
 
 $(COMP_REGISTERFLAG) : $(COMP_PACKAGE)
 ifeq "$(SDK_AUTO_DEPLOYMENT)" "YES"
-	-$(MKDIR) $(subst /,$(PS),$(@D))	 
+	-$(MKDIR) $(subst /,$(PS),$(@D))
 	-$(DEL) $(subst \\,\,$(subst /,$(PS),$@))
 	$(DEPLOYTOOL) $(COMP_PACKAGE_URL)
 	@echo flagged > $(subst /,$(PS),$@)
 else
 	@echo --------------------------------------------------------------------------------
 	@echo  If you want to install your component automatically, please set the environment
-	@echo  variable SDK_AUTO_DEPLOYMENT = YES. But note that auto deployment is only 
-	@echo  possible if no office instance is running. 
+	@echo  variable SDK_AUTO_DEPLOYMENT = YES. But note that auto deployment is only
+	@echo  possible if no office instance is running.
 	@echo --------------------------------------------------------------------------------
 endif
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -114,7 +114,7 @@ oslModule SAL_CALL osl_loadAsciiModule(const sal_Char *pszModuleName, sal_Int32 
 
 	sal_Char szError[ PATH_MAX*2 ];
 	sprintf( szError, "Module: %s;\n error: %s;\n\n"
-			 "Please contact technical support and report above informations.\n\n", 
+			 "Please contact technical support and report above informations.\n\n",
 			 buffer, err);
 #if OSL_DEBUG_LEVEL>0
 	debug_printf("osl_loadModule error %s", szError);
@@ -133,20 +133,20 @@ oslModule SAL_CALL osl_loadAsciiModule(const sal_Char *pszModuleName, sal_Int32 
 /* osl_getModuleHandle */
 /*****************************************************************************/
 
-sal_Bool SAL_CALL 
+sal_Bool SAL_CALL
 osl_getModuleHandle(rtl_uString *pModuleName, oslModule *pResult)
 {
     HMODULE hmod;
     APIRET  rc;
 
     OSL_ENSURE(pModuleName,"osl_loadModule : string is not valid");
-    
+
     if (pModuleName)
     {
         char buffer[PATH_MAX];
 
-        if (UnicodeToText(buffer, PATH_MAX, pModuleName->buffer, 
-                          pModuleName->length)) 
+        if (UnicodeToText(buffer, PATH_MAX, pModuleName->buffer,
+                          pModuleName->length))
         {
             rc = DosQueryModuleHandle(buffer, &hmod);
             if( rc == NO_ERROR)
@@ -182,7 +182,7 @@ void SAL_CALL osl_unloadModule(oslModule hModule)
 /*****************************************************************************/
 /* osl_getSymbol */
 /*****************************************************************************/
-void* SAL_CALL 
+void* SAL_CALL
 osl_getSymbol(oslModule Module, rtl_uString* pSymbolName)
 {
     return (void *) osl_getFunctionSymbol(Module, pSymbolName);
@@ -199,10 +199,10 @@ oslGenericFunction SAL_CALL osl_getFunctionSymbol( oslModule Module, rtl_uString
 	OSL_ASSERT(Module);
 	OSL_ASSERT(strSymbolName);
 
-	rtl_uString2String( 
-		&symbolName, 
-		strSymbolName->buffer, 
-		strSymbolName->length, 
+	rtl_uString2String(
+		&symbolName,
+		strSymbolName->buffer,
+		strSymbolName->length,
 		RTL_TEXTENCODING_UTF8,
 		OUSTRING_TO_OSTRING_CVTFLAGS
 	);
@@ -216,7 +216,7 @@ oslGenericFunction SAL_CALL osl_getFunctionSymbol( oslModule Module, rtl_uString
 /*****************************************************************************/
 /* osl_getAsciiFunctionSymbol */
 /*****************************************************************************/
-oslGenericFunction SAL_CALL 
+oslGenericFunction SAL_CALL
 osl_getAsciiFunctionSymbol( oslModule Module, const sal_Char *pSymbol )
 {
     PFN  pFunction;
@@ -255,8 +255,8 @@ osl_getAsciiFunctionSymbol( oslModule Module, const sal_Char *pSymbol )
 /*****************************************************************************/
 sal_Bool SAL_CALL osl_getModuleURLFromAddress(void * addr, rtl_uString ** ppLibraryUrl)
 {
-	//APIRET APIENTRY DosQueryModFromEIP (HMODULE *phMod, ULONG *pObjNum, 
-	//          ULONG BuffLen, PCHAR pBuff, ULONG *pOffset, ULONG Address) 
+	//APIRET APIENTRY DosQueryModFromEIP (HMODULE *phMod, ULONG *pObjNum,
+	//          ULONG BuffLen, PCHAR pBuff, ULONG *pOffset, ULONG Address)
 	HMODULE	hMod;
 	ULONG	ObjNum;
 	CHAR	Buff[2*_MAX_PATH];
@@ -292,7 +292,7 @@ sal_Bool SAL_CALL osl_getModuleURLFromAddress(void * addr, rtl_uString ** ppLibr
 /*****************************************************************************/
 sal_Bool SAL_CALL osl_getModuleURLFromFunctionAddress( oslGenericFunction addr, rtl_uString ** ppLibraryUrl )
 {
-    return osl_getModuleURLFromAddress( ( void * )addr, ppLibraryUrl ); 
+    return osl_getModuleURLFromAddress( ( void * )addr, ppLibraryUrl );
 }
 
 /*****************************************************************************/

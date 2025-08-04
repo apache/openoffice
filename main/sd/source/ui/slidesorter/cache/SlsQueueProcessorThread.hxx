@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -36,17 +36,17 @@ class SlideSorterView;
 namespace sd { namespace slidesorter { namespace cache {
 
 
-template <class Queue, 
-          class RequestData, 
-          class BitmapCache, 
+template <class Queue,
+          class RequestData,
+          class BitmapCache,
           class BitmapFactory>
-class QueueProcessorThread 
+class QueueProcessorThread
     : public ::osl::Thread
 {
 public:
     QueueProcessorThread (
-        view::SlideSorterView& rView, 
-        Queue& rQueue, 
+        view::SlideSorterView& rView,
+        Queue& rQueue,
         BitmapCache& rCache);
     ~QueueProcessorThread (void);
 
@@ -84,7 +84,7 @@ protected:
 
     /**	Called after the thread is terminated via the terminate
     	method.  Used to kill the thread by calling delete on this.
-    */	
+    */
     virtual void SAL_CALL onTerminated (void);
 
 private:
@@ -179,7 +179,7 @@ void QueueProcessorThread<Queue, Request, Cache, Factory>
     Request* pRequest = NULL;
     int nPriorityClass;
     bool bRequestIsValid = false;
-    
+
     do
     {
         {
@@ -230,9 +230,9 @@ void QueueProcessorThread<Queue, Request, Cache, Factory>
 
 
 
-template <class Queue, 
-          class RequestData, 
-          class BitmapCache, 
+template <class Queue,
+          class RequestData,
+          class BitmapCache,
           class BitmapFactory>
 void QueueProcessorThread<
     Queue, RequestData, BitmapCache, BitmapFactory
@@ -244,9 +244,9 @@ void QueueProcessorThread<
 
 
 
-template <class Queue, 
-          class RequestData, 
-          class BitmapCache, 
+template <class Queue,
+          class RequestData,
+          class BitmapCache,
           class BitmapFactory>
 void QueueProcessorThread<
     Queue, RequestData, BitmapCache, BitmapFactory
@@ -258,9 +258,9 @@ void QueueProcessorThread<
 
 
 
-template <class Queue, 
-          class RequestData, 
-          class BitmapCache, 
+template <class Queue,
+          class RequestData,
+          class BitmapCache,
           class BitmapFactory>
 void QueueProcessorThread<
     Queue, RequestData, BitmapCache, BitmapFactory
@@ -273,9 +273,9 @@ void QueueProcessorThread<
 
 
 
-template <class Queue, 
-          class RequestData, 
-          class BitmapCache, 
+template <class Queue,
+          class RequestData,
+          class BitmapCache,
           class BitmapFactory>
 void QueueProcessorThread<
     Queue, RequestData, BitmapCache, BitmapFactory
@@ -295,9 +295,9 @@ void QueueProcessorThread<
 
 /** This callback method is called when the run() method terminates.
 */
-template <class Queue, 
-          class RequestData, 
-          class BitmapCache, 
+template <class Queue,
+          class RequestData,
+          class BitmapCache,
           class BitmapFactory>
 void SAL_CALL QueueProcessorThread<
     Queue, RequestData, BitmapCache, BitmapFactory

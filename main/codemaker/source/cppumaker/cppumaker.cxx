@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -64,21 +64,21 @@ void produce(
 }
 
 void produceAllTypes(RegistryKey& rTypeKey, bool bIsExtraType,
-						 TypeManager const & typeMgr, 
+						 TypeManager const & typeMgr,
                          codemaker::GeneratedTypeSet & generated,
 						 CppuOptions* pOptions,
 						 sal_Bool bFullScope)
 	throw( CannotDumpException )
 {
     OString typeName = typeMgr.getTypeName(rTypeKey);
-    
+
     produce(rTypeKey, bIsExtraType, typeMgr, generated, pOptions);
 
     RegistryKeyList typeKeys = typeMgr.getTypeKeys(typeName);
 	RegistryKeyList::const_iterator iter = typeKeys.begin();
     RegistryKey key, subKey;
     RegistryKeyArray subKeys;
-    
+
 	while (iter != typeKeys.end())
 	{
         key = (*iter).first;
@@ -98,19 +98,19 @@ void produceAllTypes(RegistryKey& rTypeKey, bool bIsExtraType,
                             typeMgr, generated, pOptions);
                 }
             }
-        }      
+        }
 
         ++iter;
 	}
 }
 
 void produceAllTypes(const OString& typeName,
-                     TypeManager const & typeMgr, 
+                     TypeManager const & typeMgr,
                      codemaker::GeneratedTypeSet & generated,
                      CppuOptions* pOptions,
                      sal_Bool bFullScope)
 	throw( CannotDumpException )
-{   
+{
     produce(typeName, typeMgr, generated, pOptions);
 
     RegistryKeyList typeKeys = typeMgr.getTypeKeys(typeName);
@@ -136,8 +136,8 @@ void produceAllTypes(const OString& typeName,
                             typeMgr, generated, pOptions);
                 }
             }
-        }      
-        
+        }
+
         ++iter;
 	}
 }
@@ -148,7 +148,7 @@ SAL_IMPLEMENT_MAIN_WITH_ARGS(argc, argv)
 {
 	CppuOptions options;
 
-	try 
+	try
 	{
 		if (!options.initOptions(argc, argv))
 		{
@@ -162,7 +162,7 @@ SAL_IMPLEMENT_MAIN_WITH_ARGS(argc, argv)
 	}
 
 	RegistryTypeManager typeMgr;
-	
+
 	if (!typeMgr.init(options.getInputFiles(), options.getExtraInputFiles()))
 	{
 		fprintf(stderr, "%s : init registries failed, check your registry files.\n", options.getProgramName().getStr());
@@ -175,7 +175,7 @@ SAL_IMPLEMENT_MAIN_WITH_ARGS(argc, argv)
 	}
 
     codemaker::GeneratedTypeSet generated;
-	try 
+	try
 	{
 		if (options.isValid("-T"))
 		{
@@ -228,8 +228,8 @@ SAL_IMPLEMENT_MAIN_WITH_ARGS(argc, argv)
 	}
 	catch( CannotDumpException& e)
 	{
-		fprintf(stderr, "%s ERROR: %s\n", 
-				options.getProgramName().getStr(), 
+		fprintf(stderr, "%s ERROR: %s\n",
+				options.getProgramName().getStr(),
 				e.m_message.getStr());
 		exit(99);
 	}

@@ -1,7 +1,7 @@
 /*
  * $XFree86: xc/include/extensions/randr.h,v 1.4 2001/11/24 07:24:58 keithp Exp $
  *
- * Copyright © 2000, Compaq Computer Corporation, 
+ * Copyright © 2000, Compaq Computer Corporation,
  * Copyright © 2002, Hewlett Packard, Inc.
  *
  * Permission to use, copy, modify, distribute, and sell this software and its
@@ -18,7 +18,7 @@
  * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO EVENT SHALL HP
  * BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
  * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION
- * OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN 
+ * OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
  * CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  *
  * Author:  Jim Gettys, HP Labs, Hewlett-Packard, Inc.

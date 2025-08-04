@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -95,7 +95,7 @@ protected:
 public:
 
     // XElementAccess
-    virtual typename Collection<T>::Type_t SAL_CALL getElementType() 
+    virtual typename Collection<T>::Type_t SAL_CALL getElementType()
         throw( typename Collection<T>::RuntimeException_t )
     {
         return Collection<T>::getElementType();
@@ -111,14 +111,14 @@ public:
     virtual typename Collection<T>::Any_t SAL_CALL getByName(
         const rtl::OUString& aName )
         throw( typename Collection<T>::NoSuchElementException_t,
-               typename Collection<T>::WrappedTargetException_t, 
+               typename Collection<T>::WrappedTargetException_t,
                typename Collection<T>::RuntimeException_t )
     {
         if( hasItem( aName ) )
             return com::sun::star::uno::makeAny( getItem( aName ) );
         else
             throw typename Collection<T>::NoSuchElementException_t();
-                
+
     }
 
     virtual Names_t SAL_CALL getElementNames()

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -419,7 +419,7 @@ void OFormLayerXMLImport_Impl::startPage(const Reference< XDrawPage >& _rxDrawPa
 
 	// add a new entry to our page map
 	::std::pair< MapDrawPage2MapIterator, bool > aPagePosition;
-	aPagePosition = 
+	aPagePosition =
 		m_aControlIds.insert(MapDrawPage2Map::value_type(_rxDrawPage, MapString2PropertySet()));
 	OSL_ENSURE(aPagePosition.second, "OFormLayerXMLImport_Impl::startPage: already imported this page!");
 	m_aCurrentPageIds = aPagePosition.first;
@@ -519,7 +519,7 @@ SvXMLImportContext* OFormLayerXMLImport_Impl::createContext(const sal_uInt16 _nP
         if ( m_xCurrentPageFormsSupp.is() )
             pContext = new OFormImport(*this, *this, _nPrefix, _rLocalName, m_xCurrentPageFormsSupp->getForms() );
     }
-    else if (  ( _nPrefix == XML_NAMESPACE_XFORMS 
+    else if (  ( _nPrefix == XML_NAMESPACE_XFORMS
             && ( xmloff::token::IsXMLToken( _rLocalName, xmloff::token::XML_MODEL ) ) )
             )
     {
@@ -529,7 +529,7 @@ SvXMLImportContext* OFormLayerXMLImport_Impl::createContext(const sal_uInt16 _nP
     if ( !pContext )
     {
         OSL_ENSURE( false, "unknown element" );
-        pContext = 
+        pContext =
             new SvXMLImportContext(m_rImporter, _nPrefix, _rLocalName);
     }
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -305,11 +305,11 @@ namespace svgio
             }
         }
 
-        const basegfx::B2DRange* SvgPatternNode::getViewBox() const 
-        { 
+        const basegfx::B2DRange* SvgPatternNode::getViewBox() const
+        {
             if(mpViewBox)
             {
-                return mpViewBox; 
+                return mpViewBox;
             }
 
             const_cast< SvgPatternNode* >(this)->tryToFindLink();
@@ -322,11 +322,11 @@ namespace svgio
             return 0;
         }
 
-        const SvgAspectRatio& SvgPatternNode::getSvgAspectRatio() const 
-        { 
+        const SvgAspectRatio& SvgPatternNode::getSvgAspectRatio() const
+        {
             if(maSvgAspectRatio.isSet())
             {
-                return maSvgAspectRatio; 
+                return maSvgAspectRatio;
             }
 
             const_cast< SvgPatternNode* >(this)->tryToFindLink();
@@ -336,14 +336,14 @@ namespace svgio
                 return mpXLink->getSvgAspectRatio();
             }
 
-            return maSvgAspectRatio; 
+            return maSvgAspectRatio;
         }
 
-        const SvgNumber& SvgPatternNode::getX() const 
-        { 
+        const SvgNumber& SvgPatternNode::getX() const
+        {
             if(maX.isSet())
             {
-                return maX; 
+                return maX;
             }
 
             const_cast< SvgPatternNode* >(this)->tryToFindLink();
@@ -353,14 +353,14 @@ namespace svgio
                 return mpXLink->getX();
             }
 
-            return maX; 
+            return maX;
         }
 
-        const SvgNumber& SvgPatternNode::getY() const 
-        { 
+        const SvgNumber& SvgPatternNode::getY() const
+        {
             if(maY.isSet())
             {
-                return maY; 
+                return maY;
             }
 
             const_cast< SvgPatternNode* >(this)->tryToFindLink();
@@ -370,14 +370,14 @@ namespace svgio
                 return mpXLink->getY();
             }
 
-            return maY; 
+            return maY;
         }
 
-        const SvgNumber& SvgPatternNode::getWidth() const 
-        { 
+        const SvgNumber& SvgPatternNode::getWidth() const
+        {
             if(maWidth.isSet())
             {
-                return maWidth; 
+                return maWidth;
             }
 
             const_cast< SvgPatternNode* >(this)->tryToFindLink();
@@ -387,14 +387,14 @@ namespace svgio
                 return mpXLink->getWidth();
             }
 
-            return maWidth; 
+            return maWidth;
         }
 
-        const SvgNumber& SvgPatternNode::getHeight() const 
-        { 
+        const SvgNumber& SvgPatternNode::getHeight() const
+        {
             if(maHeight.isSet())
             {
-                return maHeight; 
+                return maHeight;
             }
 
             const_cast< SvgPatternNode* >(this)->tryToFindLink();
@@ -404,14 +404,14 @@ namespace svgio
                 return mpXLink->getHeight();
             }
 
-            return maHeight; 
+            return maHeight;
         }
 
-        const SvgUnits* SvgPatternNode::getPatternUnits() const 
-        { 
+        const SvgUnits* SvgPatternNode::getPatternUnits() const
+        {
             if(mpPatternUnits)
             {
-                return mpPatternUnits; 
+                return mpPatternUnits;
             }
 
             const_cast< SvgPatternNode* >(this)->tryToFindLink();
@@ -421,14 +421,14 @@ namespace svgio
                 return mpXLink->getPatternUnits();
             }
 
-            return 0; 
+            return 0;
         }
 
-        const SvgUnits* SvgPatternNode::getPatternContentUnits() const 
-        { 
+        const SvgUnits* SvgPatternNode::getPatternContentUnits() const
+        {
             if(mpPatternContentUnits)
             {
-                return mpPatternContentUnits; 
+                return mpPatternContentUnits;
             }
 
             const_cast< SvgPatternNode* >(this)->tryToFindLink();
@@ -438,14 +438,14 @@ namespace svgio
                 return mpXLink->getPatternContentUnits();
             }
 
-            return 0; 
+            return 0;
         }
 
-        const basegfx::B2DHomMatrix* SvgPatternNode::getPatternTransform() const 
-        { 
+        const basegfx::B2DHomMatrix* SvgPatternNode::getPatternTransform() const
+        {
             if(mpaPatternTransform)
             {
-                return mpaPatternTransform; 
+                return mpaPatternTransform;
             }
 
             const_cast< SvgPatternNode* >(this)->tryToFindLink();
@@ -455,7 +455,7 @@ namespace svgio
                 return mpXLink->getPatternTransform();
             }
 
-            return 0; 
+            return 0;
         }
 
     } // end of namespace svgreader

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1040,7 +1040,7 @@ void SwXCell::setPropertyValue(const OUString& rPropertyName, const uno::Any& aV
 	vos::OGuard aGuard(Application::GetSolarMutex());
 	if(IsValid())
 	{
-        const SfxItemPropertySimpleEntry* pEntry = 
+        const SfxItemPropertySimpleEntry* pEntry =
             m_pPropSet->getPropertyMap()->getByName(rPropertyName);
         if( !pEntry )
         {
@@ -1199,7 +1199,7 @@ SwXCell* SwXCell::CreateXCell(SwFrmFmt* pTblFmt, SwTableBox* pBox, SwTable *pTab
 		//wenn es die Box gibt, dann wird auch eine Zelle zurueckgegeben
 		if(pFoundBox)
 		{
-			SwIterator<SwXCell,SwFmt> aIter( *pTblFmt ); 
+			SwIterator<SwXCell,SwFmt> aIter( *pTblFmt );
 			SwXCell* pXCell = aIter.First();
 			while( pXCell )
 			{
@@ -1306,7 +1306,7 @@ void SwXTextTableRow::setPropertyValue(const OUString& rPropertyName,
 		SwTableLine* pLn = SwXTextTableRow::FindLine(pTable, pLine);
 		if(pLn)
 		{
-            const SfxItemPropertySimpleEntry* pEntry = 
+            const SfxItemPropertySimpleEntry* pEntry =
                 m_pPropSet->getPropertyMap()->getByName(rPropertyName);
 			SwDoc* pDoc = pFmt->GetDoc();
             if (!pEntry)
@@ -1366,7 +1366,7 @@ uno::Any SwXTextTableRow::getPropertyValue(const OUString& rPropertyName) throw(
 		SwTableLine* pLn = SwXTextTableRow::FindLine(pTable, pLine);
 		if(pLn)
 		{
-            const SfxItemPropertySimpleEntry* pEntry = 
+            const SfxItemPropertySimpleEntry* pEntry =
                                     m_pPropSet->getPropertyMap()->getByName(rPropertyName);
             if (!pEntry)
 				throw beans::UnknownPropertyException(OUString ( RTL_CONSTASCII_USTRINGPARAM ( "Unknown property: " ) ) + rPropertyName, static_cast < cppu::OWeakObject * > ( this ) );
@@ -1725,7 +1725,7 @@ void SwXTextTableCursor::setPropertyValue(const OUString& rPropertyName,
 		const SwTableNode* pTblNode = pSttNode->FindTableNode();
 		lcl_FormatTable((SwFrmFmt*)pTblNode->GetTable().GetFrmFmt());
         SwUnoTableCrsr* pTblCrsr = dynamic_cast<SwUnoTableCrsr*>(pUnoCrsr);
-        const SfxItemPropertySimpleEntry* pEntry = 
+        const SfxItemPropertySimpleEntry* pEntry =
                                     m_pPropSet->getPropertyMap()->getByName(rPropertyName);
         if(pEntry)
 		{
@@ -1787,7 +1787,7 @@ uno::Any SwXTextTableCursor::getPropertyValue(const OUString& rPropertyName)
 		const SwTableNode* pTblNode = pSttNode->FindTableNode();
 		lcl_FormatTable((SwFrmFmt*)pTblNode->GetTable().GetFrmFmt());
         SwUnoTableCrsr* pTblCrsr = dynamic_cast<SwUnoTableCrsr*>(pUnoCrsr);
-        const SfxItemPropertySimpleEntry* pEntry = 
+        const SfxItemPropertySimpleEntry* pEntry =
                                     m_pPropSet->getPropertyMap()->getByName(rPropertyName);
         if(pEntry)
 		{
@@ -2972,7 +2972,7 @@ void SwXTextTable::setPropertyValue(const OUString& rPropertyName,
 	SwFrmFmt* pFmt = GetFrmFmt();
 	if(!aValue.hasValue())
 		throw lang::IllegalArgumentException();
-    const SfxItemPropertySimpleEntry* pEntry = 
+    const SfxItemPropertySimpleEntry* pEntry =
                                 m_pPropSet->getPropertyMap()->getByName(rPropertyName);
     if( !pEntry )
         throw lang::IllegalArgumentException();
@@ -3098,7 +3098,7 @@ void SwXTextTable::setPropertyValue(const OUString& rPropertyName,
 				}
 				break;
                 case FN_UNO_TABLE_BORDER_DISTANCES:
-                {    
+                {
                     table::TableBorderDistances aTableBorderDistances;
                     if( !(aValue >>= aTableBorderDistances) ||
                         (!aTableBorderDistances.IsLeftDistanceValid &&
@@ -3124,7 +3124,7 @@ void SwXTextTable::setPropertyValue(const OUString& rPropertyName,
                             SwTableBox* pBox = rBoxes.GetObject(k);
                             const SwFrmFmt* pBoxFmt = pBox->GetFrmFmt();
                             const SvxBoxItem& rBox = pBoxFmt->GetBox();
-                            if( 
+                            if(
                                 (aTableBorderDistances.IsLeftDistanceValid && nLeftDistance !=   rBox.GetDistance( BOX_LINE_LEFT )) ||
                                 (aTableBorderDistances.IsRightDistanceValid && nRightDistance !=  rBox.GetDistance( BOX_LINE_RIGHT )) ||
                                 (aTableBorderDistances.IsTopDistanceValid && nTopDistance !=    rBox.GetDistance( BOX_LINE_TOP )) ||
@@ -3132,7 +3132,7 @@ void SwXTextTable::setPropertyValue(const OUString& rPropertyName,
                             {
                                 SvxBoxItem aSetBox( rBox );
                                 SwFrmFmt* pSetBoxFmt = pBox->ClaimFrmFmt();
-                                if( aTableBorderDistances.IsLeftDistanceValid ) 
+                                if( aTableBorderDistances.IsLeftDistanceValid )
                                     aSetBox.SetDistance( nLeftDistance, BOX_LINE_LEFT );
                                 if( aTableBorderDistances.IsRightDistanceValid )
                                     aSetBox.SetDistance( nRightDistance, BOX_LINE_RIGHT );
@@ -3141,7 +3141,7 @@ void SwXTextTable::setPropertyValue(const OUString& rPropertyName,
                                 if( aTableBorderDistances.IsBottomDistanceValid )
                                     aSetBox.SetDistance( nBottomDistance, BOX_LINE_BOTTOM );
                                 pDoc->SetAttr( aSetBox, *pSetBoxFmt );
-                            }    
+                            }
                         }
                     }
                     pDoc->GetIDocumentUndoRedo().EndUndo(UNDO_END, NULL);
@@ -3178,7 +3178,7 @@ uno::Any SwXTextTable::getPropertyValue(const OUString& rPropertyName) throw( be
 	vos::OGuard aGuard(Application::GetSolarMutex());
 	uno::Any aRet;
 	SwFrmFmt* pFmt = GetFrmFmt();
-    const SfxItemPropertySimpleEntry* pEntry = 
+    const SfxItemPropertySimpleEntry* pEntry =
                                 m_pPropSet->getPropertyMap()->getByName(rPropertyName);
 	if(pFmt)
 	{
@@ -3241,7 +3241,7 @@ uno::Any SwXTextTable::getPropertyValue(const OUString& rPropertyName) throw( be
 						pUnoCrsr->SetMark();
                         const SwStartNode* pLastNd = pBRBox->GetSttNd();
                         pUnoCrsr->GetPoint()->nNode = *pLastNd;
-                        
+
 						pUnoCrsr->Move( fnMoveForward, fnGoNode );
                         SwUnoTableCrsr* pCrsr = dynamic_cast<SwUnoTableCrsr*>(pUnoCrsr);
 						pCrsr->MakeBoxSels();
@@ -3276,15 +3276,15 @@ uno::Any SwXTextTable::getPropertyValue(const OUString& rPropertyName) throw( be
 				}
 				break;
                 case FN_UNO_TABLE_BORDER_DISTANCES :
-                {    
+                {
                     table::TableBorderDistances aTableBorderDistances( 0, sal_True, 0, sal_True, 0, sal_True, 0, sal_True ) ;
                     SwTable* pTable = SwTable::FindTable( pFmt );
                     const SwTableLines &rLines = pTable->GetTabLines();
                     bool bFirst = true;
-                    sal_uInt16 nLeftDistance = 0; 
-                    sal_uInt16 nRightDistance = 0; 
-                    sal_uInt16 nTopDistance = 0; 
-                    sal_uInt16 nBottomDistance = 0; 
+                    sal_uInt16 nLeftDistance = 0;
+                    sal_uInt16 nRightDistance = 0;
+                    sal_uInt16 nTopDistance = 0;
+                    sal_uInt16 nBottomDistance = 0;
 
                     for(sal_uInt16 i = 0; i < rLines.Count(); i++)
                     {
@@ -3305,38 +3305,38 @@ uno::Any SwXTextTable::getPropertyValue(const OUString& rPropertyName) throw( be
                             }
                             else
                             {
-                                if( aTableBorderDistances.IsLeftDistanceValid && 
+                                if( aTableBorderDistances.IsLeftDistanceValid &&
                                     nLeftDistance != TWIP_TO_MM100_UNSIGNED( rBox.GetDistance( BOX_LINE_LEFT   )))
                                     aTableBorderDistances.IsLeftDistanceValid = sal_False;
-                                if( aTableBorderDistances.IsRightDistanceValid && 
+                                if( aTableBorderDistances.IsRightDistanceValid &&
                                     nRightDistance != TWIP_TO_MM100_UNSIGNED( rBox.GetDistance( BOX_LINE_RIGHT   )))
                                     aTableBorderDistances.IsRightDistanceValid = sal_False;
-                                if( aTableBorderDistances.IsTopDistanceValid && 
+                                if( aTableBorderDistances.IsTopDistanceValid &&
                                     nTopDistance != TWIP_TO_MM100_UNSIGNED( rBox.GetDistance( BOX_LINE_TOP   )))
                                     aTableBorderDistances.IsTopDistanceValid = sal_False;
-                                if( aTableBorderDistances.IsBottomDistanceValid && 
+                                if( aTableBorderDistances.IsBottomDistanceValid &&
                                     nBottomDistance != TWIP_TO_MM100_UNSIGNED( rBox.GetDistance( BOX_LINE_BOTTOM   )))
                                     aTableBorderDistances.IsBottomDistanceValid = sal_False;
-                            }    
+                            }
 
-                        }    
-                        if( !aTableBorderDistances.IsLeftDistanceValid && 
-                                !aTableBorderDistances.IsRightDistanceValid && 
-                                !aTableBorderDistances.IsTopDistanceValid && 
+                        }
+                        if( !aTableBorderDistances.IsLeftDistanceValid &&
+                                !aTableBorderDistances.IsRightDistanceValid &&
+                                !aTableBorderDistances.IsTopDistanceValid &&
                                 !aTableBorderDistances.IsBottomDistanceValid )
                             break;
                     }
                     if( aTableBorderDistances.IsLeftDistanceValid)
-                        aTableBorderDistances.LeftDistance = nLeftDistance; 
+                        aTableBorderDistances.LeftDistance = nLeftDistance;
                     if( aTableBorderDistances.IsRightDistanceValid)
                         aTableBorderDistances.RightDistance  = nRightDistance;
                     if( aTableBorderDistances.IsTopDistanceValid)
                         aTableBorderDistances.TopDistance    = nTopDistance;
                     if( aTableBorderDistances.IsBottomDistanceValid)
                         aTableBorderDistances.BottomDistance = nBottomDistance;
-                    
+
                     aRet <<= aTableBorderDistances;
-                }        
+                }
                 break;
 				case FN_UNO_TABLE_COLUMN_SEPARATORS:
 				{
@@ -3745,7 +3745,7 @@ void SwXCellRange::setPropertyValue(const OUString& rPropertyName,
 	{
 		/* ASK OLIVER
 		lcl_FormatTable(pFmt);*/
-        const SfxItemPropertySimpleEntry* pEntry = 
+        const SfxItemPropertySimpleEntry* pEntry =
                                     m_pPropSet->getPropertyMap()->getByName(rPropertyName);
         if(pEntry)
 		{
@@ -3862,7 +3862,7 @@ uno::Any SwXCellRange::getPropertyValue(const OUString& rPropertyName) throw( be
 	{
 		/* ASK OLIVER
 		lcl_FormatTable(pFmt);*/
-        const SfxItemPropertySimpleEntry* pEntry = 
+        const SfxItemPropertySimpleEntry* pEntry =
                                     m_pPropSet->getPropertyMap()->getByName(rPropertyName);
         if(pEntry)
 		{

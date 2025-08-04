@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -71,7 +71,7 @@ namespace slideshow
                 even when they schedule new regular events without delay.
             */
             bool addEventWhenQueueIsEmpty (const EventSharedPtr& rpEvent);
-            
+
             /** Process the event queue.
 
             	This method executes all events whose timeout has
@@ -92,7 +92,7 @@ namespace slideshow
             bool isEmpty() const;
 
             /** Query timeout for the topmost event in the queue.
-            
+
                 @return Timeout in seconds, until the next event is
                 ready. The time returned here is relative to the pres
                 timer (i.e. the timer specified at the EventQueue
@@ -114,12 +114,12 @@ namespace slideshow
                 @attention do only call from event loop, this calls process_()!
              */
             void forceEmpty();
-            
+
             /** Gets the queue's timer object.
              */
             ::boost::shared_ptr< ::canvas::tools::ElapsedTime > const &
             getTimer() const { return mpTimer; }
-            
+
         private:
             mutable ::osl::Mutex      maMutex;
 
@@ -140,7 +140,7 @@ namespace slideshow
             EventEntryVector                maNextEvents;
             ImplQueueType                   maNextNextEvents;
             void process_( bool bFireAllEvents );
-            
+
             // perform timing of events via relative time
             // measurements. The world time starts, when the
             // EventQueue object is created

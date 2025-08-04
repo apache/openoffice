@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -64,7 +64,7 @@ namespace vclcanvas
                                               ::com::sun::star::beans::XPropertySet,
                                               ::com::sun::star::lang::XServiceName >	WindowGraphicDeviceBase_Base;
     typedef ::canvas::BufferedGraphicDeviceBase< ::canvas::BaseMutexHelper< WindowGraphicDeviceBase_Base >,
-                                                 SpriteDeviceHelper, 
+                                                 SpriteDeviceHelper,
                                                  tools::LocalGuard,
                                                  ::cppu::OWeakObject > 	SpriteCanvasBase_Base;
 
@@ -91,7 +91,7 @@ namespace vclcanvas
     };
 
 	typedef ::canvas::SpriteCanvasBase< SpriteCanvasBaseSpriteSurface_Base,
-                                        SpriteCanvasHelper, 
+                                        SpriteCanvasHelper,
                                         tools::LocalGuard,
                                         ::cppu::OWeakObject >			SpriteCanvasBaseT;
 
@@ -108,9 +108,9 @@ namespace vclcanvas
                          public RepaintTarget
     {
     public:
-        SpriteCanvas( const ::com::sun::star::uno::Sequence< 
+        SpriteCanvas( const ::com::sun::star::uno::Sequence<
                             ::com::sun::star::uno::Any >&               aArguments,
-                      const ::com::sun::star::uno::Reference< 
+                      const ::com::sun::star::uno::Reference<
                             ::com::sun::star::uno::XComponentContext >& rxContext );
 
         void initialize();
@@ -130,7 +130,7 @@ namespace vclcanvas
         //                                    Classname     Base doing refcounting        Base implementing the XComponent interface
         //                                       |                 |                            |
         //                                       V                 V                            V
-        DECLARE_UNO3_XCOMPONENT_AGG_DEFAULTS( SpriteCanvas, WindowGraphicDeviceBase_Base, ::cppu::WeakComponentImplHelperBase ); 
+        DECLARE_UNO3_XCOMPONENT_AGG_DEFAULTS( SpriteCanvas, WindowGraphicDeviceBase_Base, ::cppu::WeakComponentImplHelperBase );
 
         // XBufferController (partial)
         virtual ::sal_Bool SAL_CALL showBuffer( ::sal_Bool bUpdateAll ) throw (::com::sun::star::uno::RuntimeException);
@@ -146,7 +146,7 @@ namespace vclcanvas
         virtual bool repaint( const GraphicObjectSharedPtr&                   rGrf,
                               const ::com::sun::star::rendering::ViewState&   viewState,
                               const ::com::sun::star::rendering::RenderState& renderState,
-                              const ::Point&                                  rPt, 
+                              const ::Point&                                  rPt,
                               const ::Size&                                   rSz,
                               const GraphicAttr&                              rAttr ) const;
 

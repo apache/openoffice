@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
  // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -487,7 +487,7 @@ void SwFrameShell::Execute(SfxRequest &rReq)
 					rSize.SetHeight(rSh.GetAnyCurRect(RECT_FLY_EMBEDDED).Height());
 
                 // disable vertical positioning for Math Objects anchored 'as char' if baseline alignment is activated
-                aSet.Put( SfxBoolItem( FN_MATH_BASELINE_ALIGNMENT, 
+                aSet.Put( SfxBoolItem( FN_MATH_BASELINE_ALIGNMENT,
                         rSh.GetDoc()->get( IDocumentSettingAccess::MATH_BASELINE_ALIGNMENT ) ) );
                 const uno::Reference < embed::XEmbeddedObject > xObj( rSh.GetOleRef() );
                 aSet.Put( SfxBoolItem( FN_OLE_IS_MATH, xObj.is() && SotExchange::IsMath( xObj->getClassID() ) ) );
@@ -1312,7 +1312,7 @@ void SwFrameShell::ExecDrawDlgTextFrame(SfxRequest& rReq)
         case SID_ATTRIBUTES_AREA:
         {
             SwWrtShell& rSh = GetShell();
-                
+
             if(rSh.IsFrmSelected())
             {
                 SdrView* pView = rSh.GetDrawView();
@@ -1325,9 +1325,9 @@ void SwFrameShell::ExecDrawDlgTextFrame(SfxRequest& rReq)
                 SvxAbstractDialogFactory* pFact = SvxAbstractDialogFactory::Create();
                 DBG_ASSERT(pFact, "Dialogdiet Factory fail!");
                 AbstractSvxAreaTabDialog * pDlg = pFact->CreateSvxAreaTabDialog(
-                    NULL, 
-                    &aNewAttr, 
-                    pDoc, 
+                    NULL,
+                    &aNewAttr,
+                    pDoc,
                     false);
                 DBG_ASSERT(pDlg, "Dialogdiet fail!");
 
@@ -1338,8 +1338,8 @@ void SwFrameShell::ExecDrawDlgTextFrame(SfxRequest& rReq)
 
                     static sal_uInt16 __READONLY_DATA aInval[] =
                     {
-                        SID_ATTR_FILL_STYLE, 
-                        SID_ATTR_FILL_COLOR, 
+                        SID_ATTR_FILL_STYLE,
+                        SID_ATTR_FILL_COLOR,
                         SID_ATTR_FILL_TRANSPARENCE,
                         SID_ATTR_FILL_FLOATTRANSPARENCE,
                         0
@@ -1364,7 +1364,7 @@ void SwFrameShell::ExecDrawDlgTextFrame(SfxRequest& rReq)
 
 //UUUU
 void SwFrameShell::DisableStateTextFrame(SfxItemSet &rSet)
-{ 
+{
     SfxWhichIter aIter(rSet);
     sal_uInt16 nWhich(aIter.FirstWhich());
 
@@ -1375,7 +1375,7 @@ void SwFrameShell::DisableStateTextFrame(SfxItemSet &rSet)
             case SID_ATTRIBUTES_AREA:
             {
                 SwWrtShell& rSh = GetShell();
-                
+
                 if(!rSh.IsFrmSelected())
                 {
                     rSet.DisableItem(nWhich);

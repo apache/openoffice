@@ -40,19 +40,19 @@ public class GroupReference
         final Location aLocation)
     {
         super(aParent, null, aLocation);
-        
+
         maReferencedGroupName = aReferencedGroupName;
     }
-    
-    
-    
-    
+
+
+
+
     public QualifiedName GetReferencedGroupName ()
     {
         return maReferencedGroupName;
     }
-    
-    
+
+
 
 
     public Group GetReferencedGroup (final SchemaBase aSchemaBase)
@@ -66,18 +66,18 @@ public class GroupReference
             return (Group)aType;
     }
 
-    
-    
-    
+
+
+
     @Override
     public INode GetReferencedNode (final SchemaBase aSchemaBase)
     {
         return GetReferencedGroup(aSchemaBase);
     }
 
-        
-    
-    
+
+
+
     @Override
     public NodeType GetNodeType ()
     {
@@ -92,18 +92,18 @@ public class GroupReference
     {
         aVisitor.Visit(this);
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public String toString ()
     {
         return "group reference to "+maReferencedGroupName.GetDisplayName();
     }
-    
-    
-    
-    
+
+
+
+
     private final QualifiedName maReferencedGroupName;
 }

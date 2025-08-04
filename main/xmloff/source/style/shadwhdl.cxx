@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,7 +49,7 @@ XMLShadowPropHdl::~XMLShadowPropHdl()
 }
 
 sal_Bool XMLShadowPropHdl::importXML( const OUString& rStrImpValue, uno::Any& rValue, const SvXMLUnitConverter& rUnitConverter ) const
-{ 
+{
 	sal_Bool bRet = sal_False;
 	table::ShadowFormat aShadow;
 	aShadow.Location = table::ShadowLocation_BOTTOM_RIGHT;
@@ -119,11 +119,11 @@ sal_Bool XMLShadowPropHdl::importXML( const OUString& rStrImpValue, uno::Any& rV
 
 	rValue <<= aShadow;
 
-	return bRet; 
+	return bRet;
 }
 
 sal_Bool XMLShadowPropHdl::exportXML( OUString& rStrExpValue, const uno::Any& rValue, const SvXMLUnitConverter& rUnitConverter ) const
-{ 
+{
 	sal_Bool bRet = sal_False;
   	OUStringBuffer aOut;
 	table::ShadowFormat aShadow;
@@ -131,7 +131,7 @@ sal_Bool XMLShadowPropHdl::exportXML( OUString& rStrExpValue, const uno::Any& rV
 	if( rValue >>= aShadow )
 	{
 		sal_Int32 nX = 1, nY = 1;
-		
+
 		switch( aShadow.Location )
 		{
 			case table::ShadowLocation_TOP_LEFT:

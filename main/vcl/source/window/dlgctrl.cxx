@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -319,7 +319,7 @@ static Window* ImplFindDlgCtrlWindow( Window* pParent, Window* pWindow, sal_uInt
 
     if( pWindow == NULL )
         pWindow = pSWindow;
-    
+
     while ( pSWindow )
     {
         // the DialogControlStart mark is only accepted for the direct children
@@ -371,7 +371,7 @@ static Window* ImplFindDlgCtrlWindow( Window* pParent, Window* pWindow, sal_uInt
         pTempWindow = ImplGetNextWindow( pParent, i, i, sal_False );
 
         // the DialogControlStart mark is only accepted for the direct children
-        if ( !i 
+        if ( !i
           || ( pTempWindow && !ImplHasIndirectTabParent( pTempWindow )
                && pTempWindow->ImplGetWindow()->IsDialogControlStart() ) )
             break;
@@ -464,10 +464,10 @@ static Window* ImplFindAccelWindow( Window* pParent, sal_uInt16& rIndex, xub_Uni
             if( pAccelWin )
                 return pAccelWin;
         }
-        
+
         if ( i == nStart )
             break;
-        
+
         if ( i < nFormEnd )
 		{
             pWindow = ImplGetNextWindow( pParent, i, i, bCheckEnable );
@@ -835,10 +835,10 @@ sal_Bool Window::ImplDlgCtrl( const KeyEvent& rKEvt, sal_Bool bKeyInput )
                 if ( nStyle & WB_GROUP )
                     break;
 
-				//Solution:Pure window shouldn't get window after controls such as buttons. 
+				//Solution:Pure window shouldn't get window after controls such as buttons.
                 //if ( pWindow->IsVisible() && pWindow->IsEnabled() && pWindow->IsInputEnabled() )
-				if ( pWindow->IsVisible() && pWindow->IsEnabled() && 
-					 pWindow->IsInputEnabled() && ( 
+				if ( pWindow->IsVisible() && pWindow->IsEnabled() &&
+					 pWindow->IsInputEnabled() && (
 									pWindow->GetType() != WINDOW_WINDOW &&
 									pWindow->GetType() != WINDOW_SYSWINDOW &&
 									pWindow->GetType() != WINDOW_WORKWINDOW &&
@@ -893,7 +893,7 @@ sal_Bool Window::ImplDlgCtrl( const KeyEvent& rKEvt, sal_Bool bKeyInput )
 
         return sal_True;
     }
-    
+
     return sal_False;
 }
 
@@ -1069,7 +1069,7 @@ static sal_Unicode getAccel( const String& rStr )
 static Window* ImplGetLabelFor( Window* pFrameWindow, WindowType nMyType, Window* pLabel, sal_Unicode nAccel )
 {
     Window* pWindow = NULL;
-    
+
     if( nMyType == WINDOW_FIXEDTEXT		||
         nMyType == WINDOW_FIXEDLINE		||
         nMyType == WINDOW_GROUPBOX )
@@ -1132,10 +1132,10 @@ Window* Window::GetAccessibleRelationLabelFor() const
 {
     if ( mpWindowImpl->mbDisableAccessibleLabelForRelation )
         return NULL;
-        
-	if ( mpWindowImpl->mpAccessibleInfos && mpWindowImpl->mpAccessibleInfos->pLabelForWindow ) 
+
+	if ( mpWindowImpl->mpAccessibleInfos && mpWindowImpl->mpAccessibleInfos->pLabelForWindow )
 		return mpWindowImpl->mpAccessibleInfos->pLabelForWindow;
-        
+
 
     Window* pWindow = NULL;
     Window* pFrameWindow = ImplGetFrameWindow();
@@ -1153,11 +1153,11 @@ Window* Window::GetAccessibleRelationLabelFor() const
         return pWindow;
 
     sal_Unicode nAccel = getAccel( GetText() );
-    
+
     pWindow = ImplGetLabelFor( pFrameWindow, GetType(), const_cast<Window*>(this), nAccel );
     if( ! pWindow && mpWindowImpl->mpRealParent )
         pWindow = ImplGetLabelFor( mpWindowImpl->mpRealParent, GetType(), const_cast<Window*>(this), nAccel );
-    return pWindow;    
+    return pWindow;
 }
 
 // -----------------------------------------------------------------------
@@ -1172,7 +1172,7 @@ static Window* ImplGetLabeledBy( Window* pFrameWindow, WindowType nMyType, Windo
         // that comes before this control; with the exception of push buttons
         // which are labeled only if the fixed text, fixed line or group box
         // is directly before the control
-        
+
         // get form start and form end and index of this control
         sal_uInt16 nIndex, nFormStart, nFormEnd;
         Window* pSWindow = ::ImplFindDlgCtrlWindow( pFrameWindow,
@@ -1221,13 +1221,13 @@ Window* Window::GetAccessibleRelationLabeledBy() const
 {
     if ( mpWindowImpl->mbDisableAccessibleLabeledByRelation )
         return NULL;
-	
-	if ( mpWindowImpl->mpAccessibleInfos && mpWindowImpl->mpAccessibleInfos->pLabeledByWindow ) 
+
+	if ( mpWindowImpl->mpAccessibleInfos && mpWindowImpl->mpAccessibleInfos->pLabeledByWindow )
 		return mpWindowImpl->mpAccessibleInfos->pLabeledByWindow;
 
     Window* pWindow = NULL;
     Window* pFrameWindow = ImplGetFrameWindow();
-    
+
 	if ( mpWindowImpl->mpRealParent )
 	{
 		pWindow = mpWindowImpl->mpRealParent->GetParentLabeledBy( this );
@@ -1245,11 +1245,11 @@ Window* Window::GetAccessibleRelationLabeledBy() const
 //            GetType() == WINDOW_GROUPBOX ) )
     // #i100833# MT 2010/02: Group box and fixed lines can also label a fixed text.
     // See tools/options/print for example.
-    
+
     pWindow = ImplGetLabeledBy( pFrameWindow, GetType(), const_cast<Window*>(this) );
     if( ! pWindow && mpWindowImpl->mpRealParent )
         pWindow = ImplGetLabeledBy( mpWindowImpl->mpRealParent, GetType(), const_cast<Window*>(this) );
-    
+
     return pWindow;
 }
 

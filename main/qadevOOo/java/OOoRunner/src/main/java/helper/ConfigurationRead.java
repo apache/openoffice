@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -36,15 +36,15 @@ import com.sun.star.uno.UnoRuntime;
 public class ConfigurationRead {
 
     XHierarchicalNameAccess root = null;
-    
-    /** 
+
+    /**
      * Creates new ConfigurationRead
-     * @param xMSF An instance of service 
+     * @param xMSF An instance of service
      *      "com.sun.star.configuration.ConfigurationProvider"
      * @param rootnode The root of the configuration nodes.
      */
     public ConfigurationRead(XMultiServiceFactory xMSF, String rootnode) {
-        
+
         PropertyValue [] nodeArgs = new PropertyValue [1];
         PropertyValue nodepath = new PropertyValue();
         nodepath.Name = "nodepath";
@@ -60,7 +60,7 @@ public class ConfigurationRead {
 
             root = (XHierarchicalNameAccess)
                             UnoRuntime.queryInterface(
-                            XHierarchicalNameAccess.class, rootObject);        
+                            XHierarchicalNameAccess.class, rootObject);
         }
         catch(com.sun.star.uno.Exception e) {
             e.printStackTrace();
@@ -70,25 +70,25 @@ public class ConfigurationRead {
     /**
      * Creates new ConfigurationRead. This uses "org.openoffice.Setup"
      * as default root name.
-     * @param xMSF An instance of service 
+     * @param xMSF An instance of service
      *      "com.sun.star.configuration.ConfigurationProvider"
      */
     public ConfigurationRead(XMultiServiceFactory xMSF) {
         this(xMSF, "org.openoffice.Setup");
     }
-    
+
     /**
      * Does the node with this hierarchical name exist?
      * @param name The hierarchical name of a subnode.
      * @return True, if the node exists.
      */
-    public boolean hasByHieracrhicalName(String name) throws NoSuchElementException, 
+    public boolean hasByHieracrhicalName(String name) throws NoSuchElementException,
                                     com.sun.star.lang.WrappedTargetException {
 
         return root.hasByHierarchicalName(name);
-        
+
     }
-    
+
 
     /**
      * Get the elements of the root node.
@@ -97,19 +97,19 @@ public class ConfigurationRead {
     public String[] getRootNodeNames() {
 
         XNameAccess xName = (XNameAccess)
-                    UnoRuntime.queryInterface(XNameAccess.class, root);        
+                    UnoRuntime.queryInterface(XNameAccess.class, root);
         String[]names = xName.getElementNames();
         return names;
     }
-    
+
     /**
      * Get all elements of this node
      * @param name The name of the node
      * @return All elements of this node (as hierarchical names).
-     */ 
+     */
     public String[] getSubNodeNames(String name) {
         String[]names = null;
-        try {                                    
+        try {
 
             Object next = root.getByHierarchicalName(name);
             XNameAccess x = (XNameAccess)UnoRuntime.queryInterface(
@@ -124,7 +124,7 @@ public class ConfigurationRead {
         }
         return names;
     }
-    
+
     /**
      * Get contents of a node by its hierarchical name.
      * @param name The hierarchical name of the node.

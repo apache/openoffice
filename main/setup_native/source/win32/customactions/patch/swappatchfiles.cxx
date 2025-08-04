@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -81,7 +81,7 @@ static std::_tstring GetMsiProperty( MSIHANDLE handle, const std::_tstring& sPro
 		LPTSTR buffer = reinterpret_cast<LPTSTR>(_alloca(nBytes));
 		ZeroMemory( buffer, nBytes );
 		MsiGetProperty(handle, sProperty.c_str(), buffer, &nChars);
-		result = buffer;			
+		result = buffer;
 	}
 
 	return	result;
@@ -90,18 +90,18 @@ static std::_tstring GetMsiProperty( MSIHANDLE handle, const std::_tstring& sPro
 // The provided GUID must be without surrounding '{}'
 static std::_tstring GetGuidPart(const std::_tstring& guid, int index)
 {
-	assert((guid.length() == 36) && "No GUID or wrong format!"); 
+	assert((guid.length() == 36) && "No GUID or wrong format!");
 	assert(((index > -1) && (index < 5)) && "Out of range!");
-	
+
 	if (index == 0) return std::_tstring(guid.c_str(), 8);
 	if (index == 1) return std::_tstring(guid.c_str() + 9, 4);
 	if (index == 2) return std::_tstring(guid.c_str() + 14, 4);
 	if (index == 3) return std::_tstring(guid.c_str() + 19, 4);
 	if (index == 4) return std::_tstring(guid.c_str() + 24, 12);
-	
+
 	return std::_tstring();
 }
-	
+
 static void Swap(char* p1, char* p2)
 {
 	char tmp = *p1;
@@ -113,51 +113,51 @@ static std::_tstring Invert(const std::_tstring& str)
 {
 	char* buff = reinterpret_cast<char*>(_alloca(str.length()));
 	strncpy(buff, str.c_str(), str.length());
-	
+
 	char* front = buff;
 	char* back = buff + str.length() - 1;
-	
+
 	while (front < back)
 		Swap(front++, back--);
-	
+
 	return std::_tstring(buff, str.length());
 }
 
 // Convert the upgrade code (which is a GUID) according
 // to the way the windows installer does when writing it
 // to the registry
-// The first 8 bytes will be inverted, from the last 
+// The first 8 bytes will be inverted, from the last
 // 8 bytes always the nibbles will be inverted for further
-// details look in the MSDN under compressed registry keys 
+// details look in the MSDN under compressed registry keys
 static std::_tstring ConvertGuid(const std::_tstring& guid)
 {
 	std::_tstring convertedGuid;
-	
+
 	std::_tstring part = GetGuidPart(guid, 0);
 	convertedGuid = Invert(part);
-	
+
 	part = GetGuidPart(guid, 1);
 	convertedGuid += Invert(part);
-	
+
 	part = GetGuidPart(guid, 2);
 	convertedGuid += Invert(part);
-	
+
 	part = GetGuidPart(guid, 3);
 	convertedGuid += Invert(std::_tstring(part.c_str(), 2));
 	convertedGuid += Invert(std::_tstring(part.c_str() + 2, 2));
-	
+
 	part = GetGuidPart(guid, 4);
 	int pos = 0;
 	for (int i = 0; i < 6; i++)
 	{
 		convertedGuid += Invert(std::_tstring(part.c_str() + pos, 2));
-		pos += 2;		
+		pos += 2;
 	}
 	return convertedGuid;
 }
 
 static inline bool IsSetMsiProperty(MSIHANDLE handle, const std::_tstring& sProperty)
-{   
+{
 	std::_tstring value = GetMsiProperty(handle, sProperty);
 	return (value.length() > 0);
 }
@@ -185,7 +185,7 @@ static BOOL MoveFileEx9x( LPCSTR lpExistingFileNameA, LPCSTR lpNewFileNameA, DWO
 
 		// Path names in WININIT.INI must be in short path name form
 
-		if ( 
+		if (
 			GetShortPathNameA( lpExistingFileNameA, szExistingFileNameA, MAX_PATH ) &&
 			(!lpNewFileNameA || GetShortPathNameA( lpNewFileNameA, szNewFileNameA, MAX_PATH ))
 			)
@@ -193,7 +193,7 @@ static BOOL MoveFileEx9x( LPCSTR lpExistingFileNameA, LPCSTR lpNewFileNameA, DWO
 			CHAR	szBuffer[32767];	// The buffer size must not exceed 32K
 			DWORD	dwBufLen = GetPrivateProfileSectionA( RENAME_SECTION, szBuffer, elementsof(szBuffer), WININIT_FILENAME );
 
-			CHAR	szRename[MAX_PATH];	// This is enough for at most to times 67 chracters
+			CHAR	szRename[MAX_PATH];	// This is enough for at most to times 67 characters
 			strcpy( szRename, szNewFileNameA );
 			strcat( szRename, "=" );
 			strcat( szRename, szExistingFileNameA );
@@ -243,14 +243,14 @@ static BOOL MoveFileExImpl( LPCSTR lpExistingFileNameA, LPCSTR lpNewFileNameA, D
 static bool SwapFiles( const std::_tstring& sFileName1, const std::_tstring& sFileName2 )
 {
 	std::_tstring	sTempFileName = sFileName1 + TEXT(".tmp");
-	
+
 	bool fSuccess = true;
 
 	//Try to move the original file to a temp file
 	fSuccess = MoveFileExImpl( sFileName1.c_str(), sTempFileName.c_str(), MOVEFILE_REPLACE_EXISTING);
 
 	std::_tstring	mystr;
-	
+
 	if ( fSuccess )
 	{
 		fSuccess = MoveFileExImpl( sFileName2.c_str(), sFileName1.c_str(), MOVEFILE_REPLACE_EXISTING );
@@ -299,14 +299,14 @@ static bool SwapFiles( const std::_tstring& sFileName1, const std::_tstring& sFi
 	}
 
 	OutputDebugStringFormat( TEXT("%s <-> %s: %s"), sFileName1.c_str(), sFileName2.c_str(), fSuccess ? TEXT("OK") : TEXT("FAILED") );
-	
+
 	if (!fSuccess )
 	{
 		DWORD	dwError = GetLastError();
 		LPVOID lpMsgBuf;
-		if ( FormatMessage( 
-			FORMAT_MESSAGE_ALLOCATE_BUFFER | 
-			FORMAT_MESSAGE_FROM_SYSTEM | 
+		if ( FormatMessage(
+			FORMAT_MESSAGE_ALLOCATE_BUFFER |
+			FORMAT_MESSAGE_FROM_SYSTEM |
 			FORMAT_MESSAGE_IGNORE_INSERTS,
 			NULL,
 			GetLastError(),
@@ -331,7 +331,7 @@ static std::_tstring strip( const std::_tstring& s, _TCHAR c )
 	std::_tstring	result = s;
 
 	std::_tstring::size_type f;
-	
+
 	do
 	{
 		f = result.find( c );
@@ -345,18 +345,18 @@ static std::_tstring strip( const std::_tstring& s, _TCHAR c )
 static std::_tstring trim( const std::_tstring& rString )
 {
 	std::_tstring temp = rString;
-	
+
 	while ( temp.length() && temp[0] == ' ' || temp[0] == '\t' )
 		temp.erase( 0, 1 );
-		
+
 	std::_tstring::size_type	len = temp.length();
-	
+
 	while ( len && temp[len-1] == ' ' || temp[len-1] == '\t' )
 	{
 		temp.erase( len - 1, 1 );
 		len = temp.length();
 	}
-	
+
 	return temp;
 }
 
@@ -367,67 +367,67 @@ static bool readLine( FILE *fp, std::_tstring& rLine )
 	bool	bEOL = false;
 	std::_tstring	line;
 
-		
+
 	while ( !bEOL && _fgetts( szBuffer, sizeof(szBuffer), fp ) )
 	{
 		int	len = _tcslen(szBuffer);
-		
+
 		bSuccess = true;
-		
+
 		while ( len && szBuffer[len - 1] == '\n' )
 		{
 			szBuffer[--len] = 0;
 			bEOL = true;
 		}
-			
+
 		line.append( szBuffer );
 	}
-	
+
 	rLine = line;
 	return bSuccess;
 }
 
 
-static std::_tstring getProfileString( 
-	const std::_tstring& aFileName, 
-	const std::_tstring& aSectionName, 
-	const std::_tstring& aKeyName, 
+static std::_tstring getProfileString(
+	const std::_tstring& aFileName,
+	const std::_tstring& aSectionName,
+	const std::_tstring& aKeyName,
 	const std::_tstring& aDefault = _T("") )
 {
 	FILE	*fp = _tfopen( aFileName.c_str(), _T("r") );
 	std::_tstring	retValue = aDefault.length() ? aDefault : _T("");
-	
+
 	if ( fp )
 	{
 		std::_tstring line;
 		std::_tstring section;
-		
+
 		while ( readLine( fp, line ) )
 		{
 			line = trim( line );
-			
+
 			if ( line.length() && line[0] == '[' )
 			{
 				line.erase( 0, 1 );
 				std::_tstring::size_type end = line.find( ']', 0 );
-				
+
 				if ( std::_tstring::npos != end )
 					section = trim( line.substr( 0, end ) );
 			}
 			else
 			{
 
-				std::_tstring::size_type iEqualSign = line.find( '=', 0 ); 
+				std::_tstring::size_type iEqualSign = line.find( '=', 0 );
 
 				if ( iEqualSign != std::_tstring::npos )
 				{
 					std::_tstring	keyname = line.substr( 0, iEqualSign );
 					keyname = trim( keyname );
-					
+
 					std::_tstring	value = line.substr( iEqualSign + 1 /*, std::_tstring::npos */ );
 					value = trim( value );
-					
-					if ( 
+
+					if (
 						0 == _tcsicmp( section.c_str(), aSectionName.c_str() ) &&
 						0 == _tcsicmp( keyname.c_str(), aKeyName.c_str() )
 						 )
@@ -438,10 +438,10 @@ static std::_tstring getProfileString(
 				}
 			}
 		}
-		
+
 		fclose( fp );
 	}
-	
+
 	return retValue;
 }
 
@@ -456,16 +456,16 @@ static std::queue< std::_tstring > getProfileSections( const std::_tstring& aFil
 	{
 		std::_tstring line;
 		std::_tstring section;
-		
+
 		while ( readLine( fp, line ) )
 		{
 			line = trim( line );
-			
+
 			if ( line.length() && line[0] == '[' )
 			{
 				line.erase( 0, 1 );
 				std::_tstring::size_type end = line.find( ']', 0 );
-				
+
 				if ( std::_tstring::npos != end )
 					section = trim( line.substr( 0, end ) );
 
@@ -475,10 +475,10 @@ static std::queue< std::_tstring > getProfileSections( const std::_tstring& aFil
 
 			}
 		}
-		
+
 		fclose( fp );
 	}
-	
+
 	OutputDebugStringFormat( TEXT("*** Done Section Names ***") );
 
 	return aResult;
@@ -495,23 +495,23 @@ static std::queue< std::_tstring > getProfileKeys( const std::_tstring& aFileNam
 	{
 		std::_tstring line;
 		std::_tstring section;
-		
+
 		while ( readLine( fp, line ) )
 		{
 			line = trim( line );
-			
+
 			if ( line.length() && line[0] == '[' )
 			{
 				line.erase( 0, 1 );
 				std::_tstring::size_type end = line.find( ']', 0 );
-				
+
 				if ( std::_tstring::npos != end )
 					section = trim( line.substr( 0, end ) );
 			}
 			else
 			{
 
-				std::_tstring::size_type iEqualSign = line.find( '=', 0 ); 
+				std::_tstring::size_type iEqualSign = line.find( '=', 0 );
 
 				if ( iEqualSign != std::_tstring::npos )
 				{
@@ -528,7 +528,7 @@ static std::queue< std::_tstring > getProfileKeys( const std::_tstring& aFileNam
 				}
 			}
 		}
-		
+
 		fclose( fp );
 	}
 
@@ -587,7 +587,7 @@ extern "C" UINT __stdcall InstallPatchedFiles( MSIHANDLE handle )
 
 			aKeyNames.pop();
 		}
-			
+
 		aSectionNames.pop();
 	}
 
@@ -599,9 +599,9 @@ extern "C" UINT __stdcall UninstallPatchedFiles( MSIHANDLE handle )
 	TCHAR	szValue[8192];
 	DWORD	nValueSize = sizeof(szValue);
 	HKEY	hKey;
-	
+
 	std::_tstring	sInstDir;
-	
+
 	std::_tstring	sProductKey = GetMsiProperty( handle, TEXT("FINDPRODUCT") );
 
 	if ( ERROR_SUCCESS == RegOpenKey( HKEY_CURRENT_USER,  sProductKey.c_str(), &hKey ) )
@@ -636,7 +636,7 @@ extern "C" UINT __stdcall UninstallPatchedFiles( MSIHANDLE handle )
 
 	aSectionNames = getProfileSections( sPatchFile );
 	while ( !aSectionNames.empty() )
-	{	
+	{
 		std::_tstring	sSectionName = aSectionNames.front();
 		if ( std::_tstring(TEXT("_root")) == sSectionName ) { sSectionName = TEXT(""); }
 		// mystr = "Section: " + sSectionName;
@@ -668,7 +668,7 @@ extern "C" UINT __stdcall UninstallPatchedFiles( MSIHANDLE handle )
 
 			aKeyNames.pop();
 		}
-		
+
 		aSectionNames.pop();
 	}
 
@@ -728,13 +728,13 @@ extern "C" UINT __stdcall SetFeatureState( MSIHANDLE handle )
 
 	TCHAR szProductCode[32767];
 
-	GetPrivateProfileString( 
-		TEXT("Bootstrap"), 
+	GetPrivateProfileString(
+		TEXT("Bootstrap"),
 		TEXT("ProductCode"),
 		TEXT("NOTFOUND"),
 		szProductCode,
 		elementsof(szProductCode),
-		sSetupiniPath.c_str() 
+		sSetupiniPath.c_str()
 		);
 
 	if ( !_tcsicmp( szProductCode, TEXT("NOTFOUND") ) )
@@ -745,7 +745,7 @@ extern "C" UINT __stdcall SetFeatureState( MSIHANDLE handle )
 	}
 
 	// 2. Converting Product code
-	
+
 	std::_tstring productCode = TEXT(szProductCode);
 	productCode = ConvertGuid(std::_tstring(productCode.c_str() + 1, productCode.length() - 2));
 	mystr = TEXT("Changed product code: ") + productCode;
@@ -779,7 +779,7 @@ extern "C" UINT __stdcall SetFeatureState( MSIHANDLE handle )
 		int counter = 0;
 		// DWORD counter = 0;
 		LONG lEnumResult;
-		
+
 		do
 		{
 			TCHAR szValueName[8192];
@@ -789,7 +789,7 @@ extern "C" UINT __stdcall SetFeatureState( MSIHANDLE handle )
 			DWORD nValueDataSize = sizeof(szValueData);
 
 			lEnumResult = RegEnumValue( hKey, counter, szValueName, pValueNameSize, NULL, NULL, (LPBYTE)szValueData, &nValueDataSize);
-			
+
 			if ( ERROR_SUCCESS == lEnumResult )
 			{
 				std::_tstring sValueName = szValueName;
@@ -808,21 +808,21 @@ extern "C" UINT __stdcall SetFeatureState( MSIHANDLE handle )
 					{
 						MsiSetFeatureState(handle,sValueName.c_str(),INSTALLSTATE_ABSENT); // do not install this feature
 						// mystr = TEXT("Do NOT install: ") + sValueName;
-						// MessageBox( NULL, mystr.c_str(), "ValueName", MB_OK );				
+						// MessageBox( NULL, mystr.c_str(), "ValueName", MB_OK );
 					}
 					else
 					{
 						MsiSetFeatureState(handle,sValueName.c_str(),INSTALLSTATE_LOCAL); // do install this feature
 						// mystr = TEXT("Do install: ") + sValueName;
-						// MessageBox( NULL, mystr.c_str(), "ValueName", MB_OK );					
-					}	
+						// MessageBox( NULL, mystr.c_str(), "ValueName", MB_OK );
+					}
 				}
 			}
 
 			counter = counter + 1;
-			
+
 		} while ( ERROR_SUCCESS == lEnumResult );
-		
+
 		RegCloseKey( hKey );
 	}
 
@@ -848,7 +848,7 @@ extern "C" UINT __stdcall SetNewFeatureState( MSIHANDLE handle )
         // mystr = TEXT("OnlineUpdate wird NICHT installiert!");
         // MessageBox(NULL, mystr.c_str(), "INSTALLSTATE_ABSENT", MB_OK);
     }
-    
+
 	return ERROR_SUCCESS;
 }
 
@@ -876,7 +876,7 @@ extern "C" UINT __stdcall ShowOnlineUpdateDialog( MSIHANDLE handle )
         UnsetMsiProperty(handle, TEXT("SHOW_ONLINEUPDATE_DIALOG"));
 
         // Setting SELECT_OU_FEATURE to 1, which is probably superfluous
-        // because this is already the default value. But only this 
+        // because this is already the default value. But only this
         // guarantees, that CustomAction SetNewFeatureState always sets
         // the correct FeatureState for "gm_o_Onlineupdate", if it is
         // already installed.

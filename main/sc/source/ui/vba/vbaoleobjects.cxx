@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -39,7 +39,7 @@ class IndexAccessWrapper : public XIndexAccess_BASE
 typedef std::vector< uno::Reference< drawing::XControlShape > > OLEObjects;
 	OLEObjects vObjects;
 public:
-        IndexAccessWrapper(  const uno::Reference< container::XIndexAccess >& xIndexAccess ) 
+        IndexAccessWrapper(  const uno::Reference< container::XIndexAccess >& xIndexAccess )
 	{
 		sal_Int32 nLen = xIndexAccess->getCount();
 		for ( sal_Int32 index = 0; index < nLen; ++index )
@@ -59,7 +59,7 @@ public:
 	{
 		if ( Index < 0 || Index >= getCount() )
 			throw lang::IndexOutOfBoundsException();
-		return uno::makeAny( vObjects[ Index ] ); 
+		return uno::makeAny( vObjects[ Index ] );
 	}
 
 	    // Methods XElementAcess
@@ -161,14 +161,14 @@ ScVbaOLEObjects::getElementType() throw (uno::RuntimeException)
 {
     return ooo::vba::excel::XOLEObject::static_type(0);
 }
-rtl::OUString& 
+rtl::OUString&
 ScVbaOLEObjects::getServiceImplName()
 {
 	static rtl::OUString sImplName( RTL_CONSTASCII_USTRINGPARAM("ScVbaOLEObjects") );
 	return sImplName;
 }
 
-uno::Sequence< rtl::OUString > 
+uno::Sequence< rtl::OUString >
 ScVbaOLEObjects::getServiceNames()
 {
 	static uno::Sequence< rtl::OUString > aServiceNames;

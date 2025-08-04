@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -217,18 +217,18 @@ namespace
 
     // ------------------------------------------------------------------------
     Any lcl_toAny_bool( const OUString& rStr )
-    { 
+    {
         bool b = ( rStr == OUSTRING("true")  ||  rStr == OUSTRING("1") );
         return makeAny( b );
     }
 
     // ------------------------------------------------------------------------
     OUString lcl_toXSD_double( const Any& rAny )
-    { 
+    {
         double f = 0.0;
         rAny >>= f;
 
-        return rtl::math::isFinite( f ) 
+        return rtl::math::isFinite( f )
             ? rtl::math::doubleToUString( f, rtl_math_StringFormat_Automatic,
                                         rtl_math_DecimalPlaces_Max, '.',
                                         sal_True )
@@ -237,9 +237,9 @@ namespace
 
     // ------------------------------------------------------------------------
     Any lcl_toAny_double( const OUString& rString )
-    { 
+    {
         rtl_math_ConversionStatus eStatus;
-        double f = rtl::math::stringToDouble( 
+        double f = rtl::math::stringToDouble(
             rString, sal_Unicode('.'), sal_Unicode(','), &eStatus, NULL );
         return ( eStatus == rtl_math_ConversionStatus_Ok ) ? makeAny( f ) : Any();
     }
@@ -544,7 +544,7 @@ rtl::OUString Convert::toXSD( const Any_t& rAny )
     return aIter != maMap.end() ? aIter->second.first( rAny ) : OUString();
 }
 
-Convert::Any_t Convert::toAny( const rtl::OUString& rValue, 
+Convert::Any_t Convert::toAny( const rtl::OUString& rValue,
                                const Type_t& rType )
 {
     Map_t::iterator aIter = maMap.find( rType );

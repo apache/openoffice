@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,7 +42,7 @@ namespace slideshow {
 namespace internal {
 
 BaseContainerNode::BaseContainerNode(
-    const uno::Reference< animations::XAnimationNode >&     xNode, 
+    const uno::Reference< animations::XAnimationNode >&     xNode,
     const BaseContainerNodeSharedPtr&                       rParent,
     const NodeContext&                                      rContext )
     : BaseNode( xNode, rParent, rContext ),
@@ -86,7 +86,7 @@ void BaseContainerNode::deactivate_st( NodeState eDestState )
 bool BaseContainerNode::hasPendingAnimation() const
 {
     // does any of our children returns "true" on
-    // AnimationNode::hasPendingAnimation()? 
+    // AnimationNode::hasPendingAnimation()?
     // If yes, we, too, return true
     VectorOfNodes::const_iterator const iEnd( maChildren.end() );
     return (std::find_if(
@@ -98,9 +98,9 @@ void BaseContainerNode::appendChildNode( AnimationNodeSharedPtr const& pNode )
 {
     if (! checkValidNode())
         return;
-    
+
     // register derived classes as end listeners at all children.
-    // this is necessary to control the children animation 
+    // this is necessary to control the children animation
     // sequence, and to determine our own end event
     if (pNode->registerDeactivatingListener( getSelf() )) {
         maChildren.push_back( pNode );
@@ -131,12 +131,12 @@ bool BaseContainerNode::notifyDeactivatedChild(
         OSL_ENSURE( false, "unknown notifier!" );
         return false;
     }
-    
+
     std::size_t const nSize = maChildren.size();
     OSL_ASSERT( mnFinishedChildren < nSize );
     ++mnFinishedChildren;
     bool const bFinished = (mnFinishedChildren >= nSize);
-    
+
     // all children finished, and we've got indefinite duration?
     // think of ParallelTimeContainer::notifyDeactivating()
     // if duration given, we will be deactivated by some end event
@@ -144,7 +144,7 @@ bool BaseContainerNode::notifyDeactivatedChild(
     if (bFinished && isDurationIndefinite()) {
         deactivate();
     }
-    
+
     return bFinished;
 }
 
@@ -156,12 +156,12 @@ void BaseContainerNode::showState() const
         BaseNodeSharedPtr pNode =
             boost::dynamic_pointer_cast<BaseNode>(maChildren[i]);
         VERBOSE_TRACE(
-            "Node connection: n0x%X -> n0x%X", 
-            (const char*)this+debugGetCurrentOffset(), 
+            "Node connection: n0x%X -> n0x%X",
+            (const char*)this+debugGetCurrentOffset(),
             (const char*)pNode.get()+debugGetCurrentOffset() );
         pNode->showState();
     }
-    
+
     BaseNode::showState();
 }
 #endif

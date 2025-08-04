@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -37,7 +37,7 @@ import java.util.Hashtable;
 import lib.MultiPropertyTest;
 import lib.Status;
 import share.LogWriter;
- 
+
 
 import util.utils;
 
@@ -155,7 +155,7 @@ public class _ParagraphProperties extends MultiPropertyTest {
      */
     protected PropertyTester PageDescTester = new PropertyTester() {
         protected Object getNewValue(String propName, Object oldValue) {
-            if (!util.utils.isVoid(oldValue) && 
+            if (!util.utils.isVoid(oldValue) &&
                     (oldValue.equals("Default"))) {
                 return "HTML";
             } else {
@@ -171,7 +171,7 @@ public class _ParagraphProperties extends MultiPropertyTest {
      */
     protected PropertyTester ShortTester = new PropertyTester() {
         protected Object getNewValue(String propName, Object oldValue) {
-            if ((oldValue != null) && 
+            if ((oldValue != null) &&
                     (oldValue.equals(new Short((short) 0)))) {
                 return new Short((short) 2);
             } else {
@@ -187,7 +187,7 @@ public class _ParagraphProperties extends MultiPropertyTest {
      */
     protected PropertyTester BooleanTester = new PropertyTester() {
         protected Object getNewValue(String propName, Object oldValue) {
-            if ((oldValue != null) && 
+            if ((oldValue != null) &&
                     (oldValue.equals(new Boolean((boolean) false)))) {
                 return new Boolean((boolean) true);
             } else {
@@ -293,7 +293,7 @@ public class _ParagraphProperties extends MultiPropertyTest {
         log.println("Testing with custom Property tester");
 
         try {
-            oObj.setPropertyValue("ParaAdjust", 
+            oObj.setPropertyValue("ParaAdjust",
                                   com.sun.star.style.ParagraphAdjust.BLOCK);
         } catch (com.sun.star.lang.WrappedTargetException e) {
             log.println("Exception occurred setting property 'ParagraphAdjust'" + e);
@@ -334,7 +334,7 @@ public class _ParagraphProperties extends MultiPropertyTest {
      * Tested with custom property tester. <p>
      */
     public void _ParaIsConnectBorder() {
-        
+
         log.println("Testing with custom Property tester");
         testProperty("ParaIsConnectBorder", BooleanTester);
     }
@@ -362,7 +362,7 @@ public class _ParagraphProperties extends MultiPropertyTest {
      */
     public void _NumberingRules() {
         requiredMethod("NumberingStyleName");
-        
+
         XIndexReplace NumberingRules = null;
         PropertyValue[] propertyValues = null;
         try {
@@ -388,12 +388,12 @@ public class _ParagraphProperties extends MultiPropertyTest {
             Status.failed( "could not get NumberlingLevel-Array from NumberingRuels: "+ ex.toString() );
             return;
         }
-        
+
         _NumberingLevel numb = new _NumberingLevel((LogWriter)log, tParam, propertyValues);
 
         boolean result = numb.testPropertieArray();
-        
-        tRes.tested("NumberingRules", result);        
+
+        tRes.tested("NumberingRules", result);
     }
 
     public void _ParaUserDefinedAttributes() {
@@ -418,7 +418,7 @@ public class _ParagraphProperties extends MultiPropertyTest {
             String[] els = uda.getElementNames();
             oObj.setPropertyValue("ParaUserDefinedAttributes", uda);
             uda = (XNameContainer) AnyConverter.toObject(
-                          new Type(XNameContainer.class), 
+                          new Type(XNameContainer.class),
                           oObj.getPropertyValue("ParaUserDefinedAttributes"));
             els = uda.getElementNames();
 
@@ -449,19 +449,19 @@ public class _ParagraphProperties extends MultiPropertyTest {
 
         tRes.tested("ParaUserDefinedAttributes", res);
     }
-    
+
     private class OwnUserDefinedAttributes implements XNameContainer{
         Hashtable members = null;
-        
-        
+
+
         public OwnUserDefinedAttributes() {
             members = new Hashtable();
         }
-        
+
         public Object getByName(String str) throws com.sun.star.container.NoSuchElementException, com.sun.star.lang.WrappedTargetException {
             return members.get(str);
         }
-        
+
         public String[] getElementNames() {
             Enumeration oEnum = members.keys();
             int count = members.size();
@@ -471,33 +471,33 @@ public class _ParagraphProperties extends MultiPropertyTest {
                 res[i] = (String)oEnum.nextElement();
             return res;
         }
-        
+
         public com.sun.star.uno.Type getElementType() {
             Enumeration oEnum = members.keys();
             String key = (String)oEnum.nextElement();
             Object o = members.get(key);
             return new Type(o.getClass());
         }
-        
+
         public boolean hasByName(String str) {
             return members.get(str) != null;
         }
-        
+
         public boolean hasElements() {
             return members.size() > 0;
         }
-        
+
         public void insertByName(String str, Object obj) throws com.sun.star.lang.IllegalArgumentException, com.sun.star.container.ElementExistException, com.sun.star.lang.WrappedTargetException {
             members.put(str, obj);
         }
-        
+
         public void removeByName(String str) throws com.sun.star.container.NoSuchElementException, com.sun.star.lang.WrappedTargetException {
             members.remove(str);
         }
-        
+
         public void replaceByName(String str, Object obj) throws com.sun.star.lang.IllegalArgumentException, com.sun.star.container.NoSuchElementException, com.sun.star.lang.WrappedTargetException {
             members.put(str, obj);
         }
-        
+
     }
 } // finish class _ParagraphProperties

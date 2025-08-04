@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -843,7 +843,7 @@ void FmSearchEngine::Init(const ::rtl::OUString& sVisibleFields)
 
 	// important: The case of the columns does not need to be exact - for instance:
 	// - a user created a form which works on a table, for which the driver returns a column name "COLUMN"
-	// - the driver itself works case-insensitve with column names
+	// - the driver itself works case-insensitive with column names
 	// - a control in the form is bound to "column" - not the different case
 	// In such a scenario, the form and the field would work okay, but we here need to case for the different case
 	// explicitly

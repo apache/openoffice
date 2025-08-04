@@ -31,10 +31,10 @@ import java.util.Vector;
 import org.apache.openoffice.ooxml.schema.model.base.QualifiedName;
 
 /** Represents the set of states of a single complex type.
- * 
+ *
  *  Because states have to be unique, the state container is an object shared
  *  by all StateContext objects.
- *  
+ *
  *  There is a single start state but there can be more than one accepting state.
  */
 public class StateContext
@@ -48,10 +48,10 @@ public class StateContext
         maStartState = GetOrCreateState(new QualifiedName(null, null, sBaseStateName), null);
         maDisambiguateCounters = new HashMap<>();
     }
-    
-    
-    
-    
+
+
+
+
     public State CreateState (
         final QualifiedName aBasename,
         final String sSuffix)
@@ -63,17 +63,17 @@ public class StateContext
         AddState(aState);
         return aState;
     }
-    
-    
-    
+
+
+
     public State CreateState (final String sBasename)
     {
         return CreateState(new QualifiedName(sBasename), null);
     }
-    
-    
-    
-    
+
+
+
+
     public State CreateState (
         final State aState,
         final String sSuffix)
@@ -88,19 +88,19 @@ public class StateContext
             return CreateState(aState.GetBasename(), aState.GetSuffix());
     }
 
-    
-    
-    
+
+
+
     public State GetState (
         final QualifiedName aBasename,
         final String sSuffix)
     {
         return maStateContainer.GetStateForFullname(State.GetStateName(aBasename, sSuffix));
     }
-    
-    
-    
-    
+
+
+
+
     public State GetOrCreateState (
         final QualifiedName aBasename,
         final String sSuffix)
@@ -113,18 +113,18 @@ public class StateContext
         }
         return aState;
     }
-    
-    
-    
-    
+
+
+
+
     public State GetStartStateForTypeName (final QualifiedName aName)
     {
         return GetOrCreateState(aName, null);
     }
 
-    
-    
-    
+
+
+
     public State CreateEndState ()
     {
         final State aEndState = CreateState(
@@ -134,7 +134,7 @@ public class StateContext
         return aEndState;
     }
 
-    
+
 
     /** Some algorithms can not easily produce unique suffixes.
      *  Append an integer to the given suffix so that it becomes unique.
@@ -154,24 +154,24 @@ public class StateContext
             if (nDisambiguateCounter != null)
                 nIndex = nDisambiguateCounter+1;
             maDisambiguateCounters.put(sStateName, nIndex);
-        
+
             return sSuffix + "_" + nIndex;
         }
     }
-    
-    
-    
-    
+
+
+
+
     public boolean HasState (
         final QualifiedName aBasename,
         final String sSuffix)
     {
         return maStateContainer.HasState(State.GetStateName(aBasename, sSuffix));
     }
-    
-    
-    
-    
+
+
+
+
     /** Return whether a state with the given name already belongs to the state
      *  context.
      */
@@ -179,20 +179,20 @@ public class StateContext
     {
         return maStateContainer.HasState(sFullname);
     }
-    
-    
-    
-    
+
+
+
+
     /** The start state is the state a parser is in initially.
      */
     public State GetStartState ()
     {
         return maStartState;
     }
-    
 
-    
-    
+
+
+
     public Iterable<State> GetAcceptingStates ()
     {
         final Vector<State> aAcceptingStates = new Vector<>();
@@ -201,10 +201,10 @@ public class StateContext
                 aAcceptingStates.add(aState);
         return aAcceptingStates;
     }
-    
-    
-    
-    
+
+
+
+
     /** Add the given state to the state context.
      */
     public void AddState (final State aState)
@@ -213,26 +213,26 @@ public class StateContext
         maStates.add(aState);
     }
 
-    
-    
-    
+
+
+
     public void RemoveState (final State aState)
     {
         maStateContainer.RemoveState(aState);
         maStates.remove(aState);
     }
-    
-    
-    
-    
+
+
+
+
     public int GetStateCount ()
     {
         return maStates.size();
     }
-    
-    
-    
-    
+
+
+
+
     public Iterable<State> GetStatesSorted()
     {
         final Set<State> aSortedStates = new TreeSet<>();
@@ -240,17 +240,17 @@ public class StateContext
         return aSortedStates;
     }
 
-    
-    
-    
+
+
+
     public Iterable<State> GetStates()
     {
         return maStates;
     }
 
-    
-    
-    
+
+
+
     public int GetTransitionCount ()
     {
         int nStateCount = 0;
@@ -258,10 +258,10 @@ public class StateContext
             nStateCount += aState.GetTransitionCount();
         return nStateCount;
     }
-    
-    
-    
-    
+
+
+
+
     private final StateContainer maStateContainer;
     private final Set<State> maStates;
     private final State maStartState;

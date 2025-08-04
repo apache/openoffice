@@ -108,7 +108,7 @@ enum SlideExclusionState {UNDEFINED, EXCLUDED, INCLUDED, MIXED};
     excluded from the slide show.
 */
 SlideExclusionState GetSlideExclusionState (model::PageEnumeration& rPageSet);
-    
+
 } // end of anonymous namespace
 
 
@@ -1054,7 +1054,7 @@ bool SlotManager::RenameSlideFromDrawViewShell( sal_uInt16 nPageId, const String
 void SlotManager::InsertSlide (SfxRequest& rRequest)
 {
     const sal_Int32 nInsertionIndex (GetInsertionPosition());
-    
+
     PageSelector::BroadcastLock aBroadcastLock (mrSlideSorter);
 
     SdPage* pNewPage = NULL;
@@ -1095,7 +1095,7 @@ void SlotManager::InsertSlide (SfxRequest& rRequest)
     }
     if (pNewPage == NULL)
         return;
-    
+
     // When a new page has been inserted then select it, make it the
     // current page, and focus it.
     view::SlideSorterView::DrawLock aDrawLock (mrSlideSorter);
@@ -1217,7 +1217,7 @@ void SlotManager::ChangeSlideExclusionState (
                 bExcludeSlide);
         }
     }
-    
+
 	SfxBindings& rBindings (mrSlideSorter.GetViewShell()->GetViewFrame()->GetBindings());
 	rBindings.Invalidate(SID_PRESENTATION);
 	rBindings.Invalidate(SID_REHEARSE_TIMINGS);
@@ -1247,7 +1247,7 @@ sal_Int32 SlotManager::GetInsertionPosition (void)
     {
         return mrSlideSorter.GetController().GetSelectionManager()->GetInsertionPosition() - 1;
     }
-    
+
     // Use the index of the last selected slide.
     else if (rSelector.GetSelectedPageCount() > 0)
     {
@@ -1313,14 +1313,14 @@ SlideExclusionState GetSlideExclusionState (model::PageEnumeration& rPageSet)
                 break;
 
             case EXCLUDED:
-                // The pages before where all not part of the show, 
+                // The pages before where all not part of the show,
                 // this one is.
                 if ( ! bState)
                     eState = MIXED;
                 break;
 
             case INCLUDED:
-                // The pages before where all part of the show, 
+                // The pages before where all part of the show,
                 // this one is not.
                 if (bState)
                     eState = MIXED;

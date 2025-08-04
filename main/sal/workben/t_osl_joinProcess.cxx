@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -37,26 +37,26 @@
 #endif
 
 const rtl::OUString CWD        = rtl::OUString::createFromAscii(".");
-        
+
 //------------------------------
-// 
+//
 //------------------------------
 
 class Test_osl_Process : public ::testing::Test
 {
 public:
 };
-    
+
 /*-------------------------------------
     Start a process and join with this
     process specify a timeout so that
-    osl_joinProcessWithTimeout returns 
+    osl_joinProcessWithTimeout returns
     osl_Process_E_TimedOut
  -------------------------------------*/
 
 TEST_F(Test_osl_Process, test_osl_joinProcessWithTimeout_timeout_failure)
-{                           
-    oslProcess process;        
+{
+    oslProcess process;
     oslProcessError osl_error = osl_executeProcess(
         IMAGE_NAME.pData,
         NULL,
@@ -67,34 +67,34 @@ TEST_F(Test_osl_Process, test_osl_joinProcessWithTimeout_timeout_failure)
         NULL,
         0,
         &process);
-                
+
     ASSERT_TRUE(osl_error == osl_Process_E_None) << "osl_createProcess failed";
-    
+
     TimeValue timeout;
     timeout.Seconds = 1;
     timeout.Nanosec = 0;
-    
+
     osl_error = osl_joinProcessWithTimeout(process, &timeout);
-            
-    ASSERT_TRUE(osl_Process_E_TimedOut == osl_error) << "osl_joinProcessWithTimeout returned without timeout failure";        
-    
+
+    ASSERT_TRUE(osl_Process_E_TimedOut == osl_error) << "osl_joinProcessWithTimeout returned without timeout failure";
+
     osl_error = osl_terminateProcess(process);
-    
+
     ASSERT_TRUE(osl_error == osl_Process_E_None) << "osl_terminateProcess failed";
-    
-    osl_freeProcessHandle(process);    
+
+    osl_freeProcessHandle(process);
 }
-    
+
 /*-------------------------------------
     Start a process and join with this
     process specify a timeout so that
-    osl_joinProcessWithTimeout returns 
+    osl_joinProcessWithTimeout returns
     osl_Process_E_None
  -------------------------------------*/
 
 TEST_F(Test_osl_Process, test_osl_joinProcessWithTimeout_without_timeout_failure)
 {
-    oslProcess process;        
+    oslProcess process;
     oslProcessError osl_error = osl_executeProcess(
         IMAGE_NAME.pData,
         NULL,
@@ -105,28 +105,28 @@ TEST_F(Test_osl_Process, test_osl_joinProcessWithTimeout_without_timeout_failure
         NULL,
         0,
         &process);
-                
+
     ASSERT_TRUE(osl_error == osl_Process_E_None) << "osl_createProcess failed";
-    
+
     TimeValue timeout;
     timeout.Seconds = 10;
     timeout.Nanosec = 0;
-    
+
     osl_error = osl_joinProcessWithTimeout(process, &timeout);
-            
-    ASSERT_TRUE(osl_Process_E_None == osl_error) << "osl_joinProcessWithTimeout returned with failure";        
-                                   
-    osl_freeProcessHandle(process); 
+
+    ASSERT_TRUE(osl_Process_E_None == osl_error) << "osl_joinProcessWithTimeout returned with failure";
+
+    osl_freeProcessHandle(process);
 }
 
 /*-------------------------------------
     Start a process and join with this
-    process specify an infinite timeout 
+    process specify an infinite timeout
  -------------------------------------*/
 
 TEST_F(Test_osl_Process, test_osl_joinProcessWithTimeout_infinite)
 {
-    oslProcess process;        
+    oslProcess process;
     oslProcessError osl_error = osl_executeProcess(
         IMAGE_NAME.pData,
         NULL,
@@ -137,14 +137,14 @@ TEST_F(Test_osl_Process, test_osl_joinProcessWithTimeout_infinite)
         NULL,
         0,
         &process);
-                
+
     ASSERT_TRUE(osl_error == osl_Process_E_None) << "osl_createProcess failed";
-            
+
     osl_error = osl_joinProcessWithTimeout(process, NULL);
-            
-    ASSERT_TRUE(osl_Process_E_None == osl_error) << "osl_joinProcessWithTimeout returned with failure";        
-                                    
-    osl_freeProcessHandle(process); 
+
+    ASSERT_TRUE(osl_Process_E_None == osl_error) << "osl_joinProcessWithTimeout returned with failure";
+
+    osl_freeProcessHandle(process);
 }
 
  /*-------------------------------------
@@ -154,7 +154,7 @@ TEST_F(Test_osl_Process, test_osl_joinProcessWithTimeout_infinite)
 
 TEST_F(Test_osl_Process, test_osl_joinProcess)
 {
-    oslProcess process;        
+    oslProcess process;
     oslProcessError osl_error = osl_executeProcess(
         IMAGE_NAME.pData,
         NULL,
@@ -165,14 +165,14 @@ TEST_F(Test_osl_Process, test_osl_joinProcess)
         NULL,
         0,
         &process);
-                
+
     ASSERT_TRUE(osl_error == osl_Process_E_None) << "osl_createProcess failed";
-            
+
     osl_error = osl_joinProcess(process);
-            
-    ASSERT_TRUE(osl_Process_E_None == osl_error) << "osl_joinProcess returned with failure";        
-                                    
-    osl_freeProcessHandle(process); 
+
+    ASSERT_TRUE(osl_Process_E_None == osl_error) << "osl_joinProcess returned with failure";
+
+    osl_freeProcessHandle(process);
 }
 
 int main(int argc, char **argv)

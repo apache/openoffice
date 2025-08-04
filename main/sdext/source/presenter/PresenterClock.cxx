@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -147,7 +147,7 @@ namespace {
         static const double mnRelativeSecondHandLength;
         static const double mnRelativeSecondHandLength2;
         static const double mnRelativeSecondHandWidth;
-        
+
         void PaintAngledLine (
             const double nAngle,
             const double nInnerRadius,
@@ -289,7 +289,7 @@ PresenterClock::PresenterClock (
       mbIsShowSeconds(true)
 {
     SetMode(mnMode);
-    
+
     maViewState.AffineTransform = geometry::AffineMatrix2D(1,0,0, 0,1,0);
     maRenderState.AffineTransform = geometry::AffineMatrix2D(1,0,0, 0,1,0);
     maRenderState.DeviceColor = Sequence<double>(4);
@@ -480,7 +480,7 @@ void SAL_CALL PresenterClock::mouseReleased (const css::awt::MouseEvent& rEvent)
 {
     (void)rEvent;
 }
-    
+
 
 
 
@@ -489,7 +489,7 @@ void SAL_CALL PresenterClock::mouseEntered (const css::awt::MouseEvent& rEvent)
 {
     (void)rEvent;
 }
-    
+
 
 
 
@@ -558,10 +558,10 @@ void PresenterClock::Paint (const awt::Rectangle& rUpdateBox)
     {
         if (mbIsResizePending)
             Resize();
-        
+
         Reference<rendering::XPolyPolygon2D> xUpdatePolygon (
             PresenterGeometryHelper::CreatePolygon(rUpdateBox, mxCanvas->getDevice()));
-                
+
         Clear(xUpdatePolygon);
 
         if (mpClockPainter.get() != NULL)
@@ -573,7 +573,7 @@ void PresenterClock::Paint (const awt::Rectangle& rUpdateBox)
                 mnMinute,
                 mnSecond,
                 mbIsShowSeconds);
-        
+
         if (mpClockPainter2.get() != NULL)
             mpClockPainter2->Paint(
                 mxCanvas,
@@ -589,7 +589,7 @@ void PresenterClock::Paint (const awt::Rectangle& rUpdateBox)
     {
         (void)e;
     }
-        
+
     // Make the back buffer visible.
     Reference<rendering::XSpriteCanvas> xSpriteCanvas (mxCanvas, UNO_QUERY);
     if (xSpriteCanvas.is())
@@ -940,7 +940,7 @@ void AnalogBitmapPainter::Paint (
     (void)rBackgroundColor;
     (void)nSecond;
     (void)bShowSeconds;
-    
+
     if ( ! rxCanvas.is())
         return;
 
@@ -1132,7 +1132,7 @@ void AnalogBitmapPainter::LoadBitmaps (
     if ( ! xBitmapLoader.is())
         return;
 
-    
+
     // Iterate over all entries in the bitmap list and load the bitmaps.
     Reference<container::XNameAccess> xBitmaps (
         rxClockTheme->getByName(OUString::createFromAscii("Bitmaps")),
@@ -1168,14 +1168,14 @@ void AnalogBitmapPainter::LoadBitmap (
             pDescriptor = &maHourHand;
         else if (rsKey == OUString::createFromAscii("MinuteHand"))
             pDescriptor = &maMinuteHand;
-        
+
         if (pDescriptor == NULL)
             return;
-        
+
         OUString sFileName;
         if ( ! (rValues[0] >>= sFileName))
             return;
-        
+
         rValues[1] >>= pDescriptor->maOffset.X;
         rValues[2] >>= pDescriptor->maOffset.Y;
 
@@ -1257,12 +1257,12 @@ void DigitalDefaultPainter::Paint (
 {
     (void)rBackgroundColor;
     (void)rRenderState;
-    
+
     if ( ! mxFont.is())
         CreateFont(rxCanvas,bIsShowSeconds);
     if ( ! mxFont.is())
         return;
-    
+
     OUString sText;
 
     if (mbIs24HourFormat)
@@ -1302,7 +1302,7 @@ void DigitalDefaultPainter::Paint (
                 return;
         }
     }
-    
+
     rendering::StringContext aContext (
         sText,
         0,
@@ -1380,7 +1380,7 @@ void DigitalDefaultPainter::CreateFont (
             sTimeTemplate,
             0,
             sTimeTemplate.getLength());
-        
+
         // When the font size is adapted to the window size (as large as
         // possible without overlapping) then that is done in a four step
         // process:
@@ -1408,7 +1408,7 @@ void DigitalDefaultPainter::CreateFont (
                     aContext,
                     rendering::TextDirection::WEAK_LEFT_TO_RIGHT,
                     0));
-                
+
                 if ( ! xLayout.is())
                     break;
 

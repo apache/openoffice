@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package org.openoffice.test.common;
@@ -40,19 +40,19 @@ public class Logger extends java.util.logging.Logger implements TestRule {
 	private static String curClassName;
 
 	private boolean screenshotEnabled = true;
-	
+
 	static {
 		File logDir = Testspace.getFile("log");
 		logDir.mkdirs();
-		String loggingProperties = 
-				"java.util.logging.ConsoleHandler.level=INFO\n" 
+		String loggingProperties =
+				"java.util.logging.ConsoleHandler.level=INFO\n"
 				+ "java.util.logging.ConsoleHandler.formatter=java.util.logging.SimpleFormatter\n"
-				+ "java.util.logging.FileHandler.level=INFO\n" 
+				+ "java.util.logging.FileHandler.level=INFO\n"
 				+ "java.util.logging.FileHandler.formatter=java.util.logging.SimpleFormatter\n"
-				+ "java.util.logging.FileHandler.limit=1024000\n" 
-				+ "java.util.logging.FileHandler.count=1\n" 
+				+ "java.util.logging.FileHandler.limit=1024000\n"
+				+ "java.util.logging.FileHandler.count=1\n"
 				+ "java.util.logging.FileHandler.pattern=" + logDir.getAbsolutePath().replace("\\", "/") + "/%u.log\n"
-				+ "java.util.logging.FileHandler.append=true\n" 
+				+ "java.util.logging.FileHandler.append=true\n"
 				+ "handlers= java.util.logging.ConsoleHandler,java.util.logging.FileHandler ";
 		InputStream inputStream = new ByteArrayInputStream(loggingProperties.getBytes());
 		LogManager logManager = LogManager.getLogManager();
@@ -73,13 +73,13 @@ public class Logger extends java.util.logging.Logger implements TestRule {
 		logger.setScreenshotEnabled(screenshotEnabled);
 		return logger;
 	}
-	
+
 	public static Logger getLogger(String name, boolean screenshotEnabled) {
 		Logger logger = getLogger(name);
 		logger.setScreenshotEnabled(screenshotEnabled);
 		return logger;
 	}
-	
+
 	@SuppressWarnings("rawtypes")
 	public static Logger getLogger(Object obj) {
 		if (obj == null)
@@ -120,7 +120,7 @@ public class Logger extends java.util.logging.Logger implements TestRule {
 			screenshotPath = Testspace.getPath(SCREENSHOT_DIR + "/" + description.getDisplayName() + ".png");
 			GraphicsUtil.screenShot(screenshotPath);
 		}
-		
+
 		log(Level.SEVERE, MessageFormat.format("[{0}] is failed. Screenshot: {1}", description.getMethodName(), screenshotPath), e);
 		// Check if crash occurs!
 		// if (e instanceof CommunicationException) {

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -40,9 +40,9 @@ import com.sun.star.xml.crypto.sax.*;
 import com.sun.star.xml.wrapper.*;
 
 /*
- * the XMLSecurityFrameworkController class is used to controll the xml security framework.
+ * the XMLSecurityFrameworkController class is used to control the xml security framework.
  */
-public class XMLSecurityFrameworkController 
+public class XMLSecurityFrameworkController
 	implements XDocumentHandler, XSignatureCreationResultListener, XSignatureVerifyResultListener,
 		   XEncryptionResultListener, XDecryptionResultListener, XSAXEventKeeperStatusChangeListener
 {
@@ -51,7 +51,7 @@ public class XMLSecurityFrameworkController
 	 */
 	private XMultiComponentFactory  m_xRemoteServiceManager;
 	private XComponentContext       m_xRemoteContext;
-	
+
 	/*
 	 * xml security related UNO components
 	 */
@@ -61,62 +61,62 @@ public class XMLSecurityFrameworkController
 	private XXMLSecurityContext     m_xXMLSecurityContext;
 	private XXMLSignature           m_xXMLSignature;
 	private XXMLEncryption          m_xXMLEncryption;
-	
+
         /*
          * used to reserve the current SAX ancestor path
          */
 	private Stack  m_currentPath;
-	
+
 	/*
 	 * maintains all SignatureEntities.
 	 */
 	private Vector m_signatureList;
-	
+
 	/*
 	 * maintains all EncryptionEntities.
 	 */
 	private Vector m_encryptionList;
-	
+
 	/*
 	 * maintains all unsolved reference Ids.
 	 * These ids are strings which is the value of the id attribute
 	 * of the referenced element.
 	 */
 	private Vector m_vUnsolvedReferenceIds;
-	
+
 	/*
 	 * maintains all unsolved reference keeper ids.
 	 * The keeper id is used to uniquely identify a bufferred element
 	 * by the SAXEventKeeper.
 	 */
 	private Vector m_vUnsolvedReferencedKeeperIds;
-	
+
 	/*
-	 * maintains the left time that each unsolved reference can be 
+	 * maintains the left time that each unsolved reference can be
 	 * claimed.
 	 */
 	private Vector m_vUnsolvedReferenceRefNum;
-	
+
 	/*
 	 * whether exporting or importing
 	 */
 	private boolean m_bIsExporting;
-	
+
 	/*
 	 * whether java or c
 	 */
 	private boolean m_bIsJavaBased;
-	
+
 	/*
 	 * whether the SAXEventKeeper is blocking
 	 */
 	private boolean m_bIsBlocking;
-	
+
 	/*
 	 * whether it is collecting a bufferred element
 	 */
 	private boolean m_bIsInsideCollectedElement;
-	
+
 	/*
 	 * whether a SAXEventKeeper is in the SAX chain
 	 */
@@ -126,7 +126,7 @@ public class XMLSecurityFrameworkController
 	 * the ParsingThread used to parse the document
 	 */
 	private ParsingThread m_parsingThread;
-	
+
 	/*
 	 * the next document handler that will receives SAX events
 	 * from the parsing thread.
@@ -135,18 +135,18 @@ public class XMLSecurityFrameworkController
 	 * variable will be the xOutputHandler.
 	 */
 	private XDocumentHandler m_xExportHandler;
-	
+
 	/*
 	 * the TestTool used to feedback information
 	 */
 	private TestTool m_testTool;
-	
+
 	/*
 	 * for encryption target
 	 */
 	private boolean m_bIsEncryptionTarget;
 	private EncryptionEntity m_EncryptionForTarget;
-	
+
 	XMLSecurityFrameworkController(
 		TestTool testTool,
 		boolean bIsExporting,
@@ -161,45 +161,45 @@ public class XMLSecurityFrameworkController
 	{
 		m_bIsExporting = bIsExporting;
 		m_bIsJavaBased = bIsJavaBased;
-		
+
 		m_xOutputHandler = xOutputHandler;
 		m_xXMLSecurityContext = xXMLSecurityContext;
 		m_xXMLSignature = xXMLSignature;
 		m_xXMLEncryption = xXMLEncryption;
 		m_xRemoteServiceManager = xRemoteServiceManager;
 		m_xRemoteContext = xRemoteContext;
-		
+
 		m_testTool = testTool;
 		m_parsingThread = parsingThread;
-		
+
 		m_signatureList = new Vector();
 		m_encryptionList = new Vector();
-		
+
 		m_vUnsolvedReferenceIds = new Vector();
 		m_vUnsolvedReferencedKeeperIds = new Vector();
 		m_vUnsolvedReferenceRefNum = new Vector();
-		
+
 		m_xXMLDocumentWrapper = null;
 		m_xSAXEventKeeper = null;
-		
+
 		m_bSAXEventKeeperIncluded = false;
 		m_bIsBlocking = false;
 		m_bIsInsideCollectedElement = false;
-		
+
 		m_bIsEncryptionTarget = false;
 		m_EncryptionForTarget = null;
 
 		changeOutput();
-		
+
 		m_currentPath = new Stack();
-		
+
 		foundSecurityRelated();
 	}
-	
+
 /**************************************************************************************
  * private methods
  **************************************************************************************/
- 
+
         /*
          * changes the output document handler.
          */
@@ -208,7 +208,7 @@ public class XMLSecurityFrameworkController
 		if (m_bIsExporting)
 		{
 			m_parsingThread.setHandler(this);
-			
+
 			/*
 			 * If the SAXEventKeeper is in the SAX chain, then redirects output
 			 * to the SAXEventKeeper, otherwise, to the m_xOutputHandler
@@ -218,7 +218,7 @@ public class XMLSecurityFrameworkController
 				m_xExportHandler = (XDocumentHandler)UnoRuntime.queryInterface(
 							XDocumentHandler.class, m_xSAXEventKeeper);
 				m_xSAXEventKeeper.setNextHandler(m_xOutputHandler);
-				
+
 				m_testTool.updatesSAXChainInformation("XMLExporter -> SAXEventKeeper -> SAXWriter");
 			}
 			else
@@ -244,14 +244,14 @@ public class XMLSecurityFrameworkController
 			m_xExportHandler = m_xOutputHandler;
 		}
 	}
-        
+
         /*
          * handles the situation when a security related element is found.
          * if the SAXEventKeeper is not initialized, then creates a
          * SAXEventKeeper.
          * the return value represents whether the SAXEventKeeper is newly
          * created.
-         */	
+         */
 	private boolean foundSecurityRelated()
 	{
 		if (m_xSAXEventKeeper == null)
@@ -259,7 +259,7 @@ public class XMLSecurityFrameworkController
 			m_testTool.showMessage("Message from : "+
 						(m_bIsExporting?"XMLExporter":"XMLImporter")+
 						"\n\nA security related content found, a SAXEventKeeper is created.\n ");
-			
+
 			m_bIsBlocking = false;
 			m_bIsInsideCollectedElement = false;
 
@@ -269,7 +269,7 @@ public class XMLSecurityFrameworkController
 				 * creates an XMLDocumentWrapper component.
 				 */
 				Object xmlDocumentObj = null;
-				
+
 				if (m_bIsJavaBased)
 				{
 					xmlDocumentObj = m_xRemoteServiceManager.createInstanceWithContext(
@@ -280,24 +280,24 @@ public class XMLSecurityFrameworkController
 					xmlDocumentObj = m_xRemoteServiceManager.createInstanceWithContext(
 						TestTool.XMLDOCUMENTWRAPPER_COMPONENT_C, m_xRemoteContext);
 				}
-				
+
 				m_xXMLDocumentWrapper = (XXMLDocumentWrapper)UnoRuntime.queryInterface(
 					XXMLDocumentWrapper.class, xmlDocumentObj);
-					
+
 				/*
 				 * creates a SAXEventKeeper component.
 				 */
 				Object saxEventKeeperObj = m_xRemoteServiceManager.createInstanceWithContext(
 					TestTool.SAXEVENTKEEPER_COMPONENT, m_xRemoteContext);
 
-				m_xSAXEventKeeper = 
+				m_xSAXEventKeeper =
 					(XSecuritySAXEventKeeper)UnoRuntime.queryInterface(
-						XSecuritySAXEventKeeper.class, saxEventKeeperObj); 
-	                        
+						XSecuritySAXEventKeeper.class, saxEventKeeperObj);
+
 	                        /*
 	                         * initializes the SAXEventKeeper component with the XMLDocumentWrapper component.
 	                         */
-				XInitialization xInitialization = 
+				XInitialization xInitialization =
 					(XInitialization)UnoRuntime.queryInterface(
 						XInitialization.class, m_xSAXEventKeeper);
 				Object args[]=new Object[1];
@@ -308,18 +308,18 @@ public class XMLSecurityFrameworkController
 			{
 				e.printStackTrace();
 			}
-			
+
 			/*
 			 * configures the SAXEventKeeper's status change listener.
 			 */
-			XSAXEventKeeperStatusChangeBroadcaster xSaxEventKeeperStatusChangeBroadcaster = 
+			XSAXEventKeeperStatusChangeBroadcaster xSaxEventKeeperStatusChangeBroadcaster =
 				(XSAXEventKeeperStatusChangeBroadcaster)UnoRuntime.queryInterface(
-					XSAXEventKeeperStatusChangeBroadcaster.class, m_xSAXEventKeeper); 
+					XSAXEventKeeperStatusChangeBroadcaster.class, m_xSAXEventKeeper);
 			xSaxEventKeeperStatusChangeBroadcaster.addSAXEventKeeperStatusChangeListener(this);
 		}
-		
+
 		boolean rc = !m_bSAXEventKeeperIncluded;
-		
+
 		/*
 		 * changes the export document handler.
 		 */
@@ -335,16 +335,16 @@ public class XMLSecurityFrameworkController
 	private void findKeyOrReference(SecurityEntity signatureEntity, String uriStr, boolean isFindingKey)
 	{
 		int i=0;
-		
+
 		while (i<m_vUnsolvedReferenceIds.size())
 		{
 			String id = (String)m_vUnsolvedReferenceIds.elementAt(i);
-			
+
 			if (id.equals(uriStr))
 			{
 				int refNum = ((Integer)m_vUnsolvedReferenceRefNum.elementAt(i)).intValue();
 				int keeperId = ((Integer)m_vUnsolvedReferencedKeeperIds.elementAt(i)).intValue();
-				
+
 				if (isFindingKey)
 				{
 					/*
@@ -354,17 +354,17 @@ public class XMLSecurityFrameworkController
 						keeperId,
 						m_bIsExporting?
 						(ElementMarkPriority.BEFOREMODIFY):(ElementMarkPriority.AFTERMODIFY));
-					
+
 					/*
 					 * notifies the key keeper id.
 					 */
 					signatureEntity.setKeyId(cloneKeeperId);
-					
+
 					/*
 					 * sets the security id for the key.
 					 */
 					m_xSAXEventKeeper.setSecurityId(cloneKeeperId, signatureEntity.getSecurityId());
-	
+
 					/*
 					 * sets the resolve listener.
 					 */
@@ -381,15 +381,15 @@ public class XMLSecurityFrameworkController
 					 * clones a new ElementCollector for the referenced element.
 					 */
 					int cloneKeeperId = m_xSAXEventKeeper.cloneElementCollector(
-						keeperId, 
+						keeperId,
 						m_bIsExporting?
 						(ElementMarkPriority.AFTERMODIFY):(ElementMarkPriority.BEFOREMODIFY));
-					
+
 					/*
 					 * sets the security id.
 					 */
 					m_xSAXEventKeeper.setSecurityId(cloneKeeperId, signatureEntity.getSecurityId());
-					
+
 					/*
 					 * sets the resolve listener.
 					 */
@@ -398,7 +398,7 @@ public class XMLSecurityFrameworkController
 							XReferenceResolvedBroadcaster.class, m_xSAXEventKeeper);
 					xReferenceResolvedBroadcaster.addReferenceResolvedListener(cloneKeeperId,
 						signatureEntity.getReferenceListener());
-						
+
 					try{
 						XReferenceCollector xReferenceCollector =
 							(XReferenceCollector)UnoRuntime.queryInterface(
@@ -410,7 +410,7 @@ public class XMLSecurityFrameworkController
 						e.printStackTrace();
 					}
 				}
-					
+
 				/*
 				 * if this unsolved reference reaches its max reference number, remove this reference
 				 * from all vectors.
@@ -428,7 +428,7 @@ public class XMLSecurityFrameworkController
 					m_vUnsolvedReferenceRefNum.setElementAt(new Integer(refNum),(i));
 					++i;
 				}
-				
+
 				/*
 				 * If it is find a key, then no further search is needed, one
 				 * signature has one key at most.
@@ -444,7 +444,7 @@ public class XMLSecurityFrameworkController
 			}
 		}
 	}
-        
+
 	/*
 	 * checks whether a startElement event represents any security related information.
 	 * return true if this event can't be forwarded into the SAX chain.
@@ -452,7 +452,7 @@ public class XMLSecurityFrameworkController
 	private boolean checkSecurityElement(String localName, com.sun.star.xml.sax.XAttributeList xattribs)
 	{
 		boolean rc = false;
-		
+
 		if (localName.equals("Signature"))
 		/*
 		 * this element is a Signature element.
@@ -476,23 +476,23 @@ public class XMLSecurityFrameworkController
 			if (!m_currentPath.empty())
 			{
 				Object signedInfo = m_currentPath.pop();
-				
+
 				if (!m_currentPath.empty())
 				{
 					Object objSignature = m_currentPath.peek();
-			
+
 					if ((objSignature instanceof SignatureEntity) && signedInfo.toString().equals("SignedInfo"))
 					/*
 					 * this element is a Reference element in a signature.
 					 */
 					{
 						String uriStr = xattribs.getValueByName("URI");
-						
+
 						if (uriStr.charAt(0) == '#')
 						{
 							uriStr = uriStr.substring(1);
 							SignatureEntity signatureEntity = (SignatureEntity)objSignature;
-			
+
 							if (uriStr != null && uriStr.length()>0)
 							{
 								signatureEntity.addReferenceId(uriStr);
@@ -505,7 +505,7 @@ public class XMLSecurityFrameworkController
 			}
 			m_currentPath.push(localName);
 		}
-		else if(localName.equals("KeyValue") || 
+		else if(localName.equals("KeyValue") ||
 		        localName.equals("KeyName") ||
 		        localName.equals("X509Data") ||
 		        localName.equals("EncryptedKey"))
@@ -513,11 +513,11 @@ public class XMLSecurityFrameworkController
 			if (!m_currentPath.empty())
 			{
 				Object keyInfo = m_currentPath.pop();
-				
+
 				if (!m_currentPath.empty())
 				{
 					Object objSorE = m_currentPath.peek();
-					
+
 					if ((objSorE instanceof SignatureEntity) && keyInfo.toString().equals("KeyInfo"))
 					/*
 					 * this element is the key element of a signature.
@@ -537,7 +537,7 @@ public class XMLSecurityFrameworkController
 				}
 				m_currentPath.push(keyInfo);
 			}
-			
+
 			m_currentPath.push(localName);
 		}
 		else if(localName.equals("RetrievalMethod"))
@@ -545,11 +545,11 @@ public class XMLSecurityFrameworkController
 			if (!m_currentPath.empty())
 			{
 				Object keyInfo = m_currentPath.pop();
-				
+
 				if (!m_currentPath.empty())
 				{
 					Object objSorE = m_currentPath.peek();
-					
+
 					if ((objSorE instanceof SignatureEntity) && keyInfo.toString().equals("KeyInfo"))
 					/*
 					 * this element is the RetrievalMethod element in a signature,
@@ -558,7 +558,7 @@ public class XMLSecurityFrameworkController
 					{
 						String uriStr = xattribs.getValueByName("URI");
 						SignatureEntity signatureEntity = (SignatureEntity)objSorE;
-		
+
 						if (uriStr != null && uriStr.length()>0)
 						{
 							signatureEntity.setKeyURI(uriStr);
@@ -573,7 +573,7 @@ public class XMLSecurityFrameworkController
 					{
 						String uriStr = xattribs.getValueByName("URI");
 						EncryptionEntity theEncryption = (EncryptionEntity)objSorE;
-		
+
 						if (uriStr != null && uriStr.length()>0)
 						{
 							theEncryption.setKeyURI(uriStr);
@@ -599,9 +599,9 @@ public class XMLSecurityFrameworkController
 				m_xXMLEncryption,
 				m_xRemoteServiceManager,
 				m_xRemoteContext);
-				
+
 			m_encryptionList.add(theEncryption);
-			
+
 			if (m_bIsExporting)
 			{
 				m_currentPath.push(theEncryption);
@@ -618,7 +618,7 @@ public class XMLSecurityFrameworkController
 				{
 					theEncryption.setKeyId(0);
 				}
-				
+
 				rc = true;
 			}
 		}
@@ -629,23 +629,23 @@ public class XMLSecurityFrameworkController
 		{
 			m_currentPath.push(localName);
 		}
-		
+
 		return rc;
 	}
-	
+
 	/*
 	 * checks whether a startElement event is referenced by any security entity.
 	 */
 	private void checkReference(String localName, com.sun.star.xml.sax.XAttributeList xattribs, String id)
 	{
 		String refNumStr = xattribs.getValueByName("refNum");
-		
+
 		if ( m_bIsEncryptionTarget )
 		{
 			m_EncryptionForTarget.setReference(m_bIsExporting);
 			m_bIsEncryptionTarget = false;
 		}
-		
+
 		if (id != null && id.length()>0 )
 		/*
 		 * only if this element has id attribute, then it can be referenced by
@@ -658,14 +658,14 @@ public class XMLSecurityFrameworkController
 			 * referencing number to 999.
 			 */
 			int refNum = 999;
-			
+
 			if (refNumStr != null && refNumStr.length()>0 )
 			{
 				refNum = new Integer(refNumStr).intValue();
 			}
-			
+
 			int length;
-				
+
 			/*
 			 * searches the signature list to check whether any sigture has
 			 * reference on this element.
@@ -674,18 +674,18 @@ public class XMLSecurityFrameworkController
 			for (int i=0; i<length; ++i)
 			{
 				SignatureEntity signatureEntity = (SignatureEntity)m_signatureList.elementAt(i);
-				
+
 				if (signatureEntity.setReference(id, m_bIsExporting))
 				{
 					refNum--;
 				}
-				
+
 				if (signatureEntity.setKey(id, m_bIsExporting))
 				{
 					refNum--;
 				}
 			}
-			
+
 			/*
 			 * searches the encryption list for reference.
 			 */
@@ -693,13 +693,13 @@ public class XMLSecurityFrameworkController
 			for (int i=0; i<length; ++i)
 			{
 				EncryptionEntity theEncryption = (EncryptionEntity)m_encryptionList.elementAt(i);
-				
+
 				if (theEncryption.setKey(id, m_bIsExporting))
 				{
 					refNum--;
 				}
 			}
-			
+
 			/*
 			 * if the max referencing number is not reached, then add this element
 			 * into the unsolved reference list.
@@ -707,7 +707,7 @@ public class XMLSecurityFrameworkController
 			if (refNum>0)
 			{
 				int keeperId;
-				
+
 				if (localName.equals("EncryptedKey"))
 				{
 					keeperId = m_xSAXEventKeeper.addSecurityElementCollector(
@@ -722,14 +722,14 @@ public class XMLSecurityFrameworkController
 						(ElementMarkPriority.AFTERMODIFY):(ElementMarkPriority.BEFOREMODIFY),
 						false);
 				}
-					
+
 				m_vUnsolvedReferenceIds.add(id);
 				m_vUnsolvedReferencedKeeperIds.add(new Integer(keeperId));
 				m_vUnsolvedReferenceRefNum.add(new Integer(refNum));
 			}
 		}
 	}
-	
+
 	/*
 	 * configures the output handler.
 	 */
@@ -738,12 +738,12 @@ public class XMLSecurityFrameworkController
 		m_xOutputHandler = handler;
 		changeOutput();
 	}
-	
-	
+
+
 /**************************************************************************************
  * protected methods
  **************************************************************************************/
-        
+
         /*
          * methods used to transfer unsolved reference information.
          */
@@ -751,7 +751,7 @@ public class XMLSecurityFrameworkController
 	{
 		return m_vUnsolvedReferenceIds;
 	}
-	
+
 	protected Vector getUnsolvedReferenceKeeperIds()
 	{
 		return m_vUnsolvedReferencedKeeperIds;
@@ -761,7 +761,7 @@ public class XMLSecurityFrameworkController
 	{
 		return m_vUnsolvedReferenceRefNum;
 	}
-	
+
 	protected String getBufferNodeTreeInformation()
 	{
 		if (m_xSAXEventKeeper != null)
@@ -773,7 +773,7 @@ public class XMLSecurityFrameworkController
 			return null;
 		}
 	}
-	
+
 	protected void getDocument(XDocumentHandler handler)
 	{
 		if (m_xXMLDocumentWrapper != null)
@@ -788,7 +788,7 @@ public class XMLSecurityFrameworkController
 			}
 		}
 	}
-	
+
 	protected void endMission()
 	{
 		while (m_signatureList.size()>0 || m_encryptionList.size()>0)
@@ -806,7 +806,7 @@ public class XMLSecurityFrameworkController
 				theEncryption.endMission();
 			}
 		}
-		
+
 		while (m_vUnsolvedReferenceIds.size()>0)
 		{
 			int keeperId = ((Integer)m_vUnsolvedReferencedKeeperIds.elementAt(0)).intValue();
@@ -815,21 +815,21 @@ public class XMLSecurityFrameworkController
 			m_vUnsolvedReferencedKeeperIds.remove(0);
 			m_vUnsolvedReferenceRefNum.remove(0);
 		}
-		
+
 		m_xSAXEventKeeper.setNextHandler(null);
-		
-		XSAXEventKeeperStatusChangeBroadcaster xSaxEventKeeperStatusChangeBroadcaster = 
+
+		XSAXEventKeeperStatusChangeBroadcaster xSaxEventKeeperStatusChangeBroadcaster =
 			(XSAXEventKeeperStatusChangeBroadcaster)UnoRuntime.queryInterface(
-				XSAXEventKeeperStatusChangeBroadcaster.class, m_xSAXEventKeeper); 
+				XSAXEventKeeperStatusChangeBroadcaster.class, m_xSAXEventKeeper);
 		xSaxEventKeeperStatusChangeBroadcaster.addSAXEventKeeperStatusChangeListener(null);
-		
+
 		m_xSAXEventKeeper = null;
 		m_xXMLDocumentWrapper = null;
 		m_xOutputHandler = null;
 		m_xXMLSecurityContext = null;
 		m_xXMLSignature = null;
 		m_xXMLEncryption = null;
-		
+
 		m_xExportHandler = null;
 		m_parsingThread.setHandler(null);
 	}
@@ -850,7 +850,7 @@ public class XMLSecurityFrameworkController
 		{
 			e.printStackTrace();
 		}
-		
+
 	}
 
         public void endDocument()
@@ -863,7 +863,7 @@ public class XMLSecurityFrameworkController
 			e.printStackTrace();
 		}
 	}
-	
+
 	public void startElement (String str, com.sun.star.xml.sax.XAttributeList xattribs)
 	{
 		try{
@@ -872,10 +872,10 @@ public class XMLSecurityFrameworkController
 			{
 				idAttr = xattribs.getValueByName("Id");
 			}
-			
+
 			boolean hasIdAttr = (idAttr != null && idAttr.length()>0 );
 			boolean needResend = false;
-			
+
 			if (hasIdAttr ||
 			    (str.equals("Signature")||str.equals("EncryptedData")))/* || str.equals("EncryptedKey"))) */
 			{
@@ -884,16 +884,16 @@ public class XMLSecurityFrameworkController
 					needResend = true;
 				}
 			}
-			
+
 			boolean suppressToNext = checkSecurityElement(str, xattribs);
-			
+
 			checkReference(str, xattribs, idAttr);
-			
+
 			if (needResend)
 			{
 				m_xSAXEventKeeper.setNextHandler(null);
-				
-				XDocumentHandler saxEventKeeperHandler = 
+
+				XDocumentHandler saxEventKeeperHandler =
 					(XDocumentHandler)UnoRuntime.queryInterface(
 						XDocumentHandler.class, m_xSAXEventKeeper);
 				saxEventKeeperHandler.startElement(str, xattribs);
@@ -916,7 +916,7 @@ public class XMLSecurityFrameworkController
 		if (!m_currentPath.empty())
 		{
 	        	Object obj = m_currentPath.pop();
-        	
+
         		if (obj.toString().equals("SignedInfo"))
         		{
 				if (!m_currentPath.empty())
@@ -935,7 +935,7 @@ public class XMLSecurityFrameworkController
 
 	        	}
         	}
-		
+
 		try{
 			m_xExportHandler.endElement(str);
 		}
@@ -944,7 +944,7 @@ public class XMLSecurityFrameworkController
 			e.printStackTrace();
 		}
 	}
-	
+
 	public void characters(String str)
 	{
 		try{
@@ -955,11 +955,11 @@ public class XMLSecurityFrameworkController
 			e.printStackTrace();
 		}
 	}
-	
+
 	public void ignorableWhitespace(String str)
 	{
 	}
-	
+
 	public void processingInstruction(String aTarget, String aData)
 	{
 		try{
@@ -971,12 +971,12 @@ public class XMLSecurityFrameworkController
 		}
 	}
 
-	public void setDocumentLocator (com.sun.star.xml.sax.XLocator xLocator ) 
+	public void setDocumentLocator (com.sun.star.xml.sax.XLocator xLocator )
 		throws com.sun.star.xml.sax.SAXException
 	{
 	}
-	
-	
+
+
 	/*
 	 * XSignatureCreationResultListener
 	 */
@@ -986,7 +986,7 @@ public class XMLSecurityFrameworkController
 		message += "A Signature is created:";
 		message += "\nSecurity Id = "+securityId;
 		message += "\nCreation result = "+((creationResult==SecurityOperationStatus.OPERATION_SUCCEEDED)?"Succeed":"Fail");
-		
+
 		m_testTool.showMessage("Message from : SignatureCreator\n\n"+message+"\n ");
 	}
 
@@ -999,7 +999,7 @@ public class XMLSecurityFrameworkController
 		message += "A Signature is verified:";
 		message += "\nSecurity Id = "+securityId;
 		message += "\nVerify result = "+((verifyResult==SecurityOperationStatus.OPERATION_SUCCEEDED)?"Succeed":"Fail");
-		
+
 		m_testTool.showMessage("Message from : SignatureVerifier\n\n"+message+"\n ");
 	}
 
@@ -1012,10 +1012,10 @@ public class XMLSecurityFrameworkController
 		message += "An EncryptedData is encrypted:";
 		message += "\nSecurity Id = "+securityId;
 		message += "\nEncrypt result = "+((encryptionResult==SecurityOperationStatus.OPERATION_SUCCEEDED)?"Succeed":"Fail");
-		
+
 		m_testTool.showMessage("Message from : Encryptor\n\n"+message+"\n ");
 	}
-	
+
 	/*
 	 * XDecryptionResultListener methods
 	 */
@@ -1025,10 +1025,10 @@ public class XMLSecurityFrameworkController
 		message += "An EncryptedData is decrypted:";
 		message += "\nSecurity Id = "+securityId;
 		message += "\nDecrypt result = "+((decryptionResult==SecurityOperationStatus.OPERATION_SUCCEEDED)?"Succeed":"Fail");
-		
+
 		m_testTool.showMessage("Message from : Decryptor\n\n"+message+"\n ");
 	}
-	
+
 	/*
 	 * XSAXEventKeeperStatusChangeListener methods
 	 */
@@ -1037,19 +1037,19 @@ public class XMLSecurityFrameworkController
 		m_testTool.showMessage("Message from : SAXEventKeeper\n\n"+
 					(isBlocking?"The SAX event stream is blocked.":"The SAX event stream is unblocked.")+
 					"\n ");
-		
+
 		this.m_bIsBlocking = isBlocking;
 	}
-	
+
 	public void collectionStatusChanged(boolean isInsideCollectedElement)
 	{
 		m_testTool.showMessage("Message from : SAXEventKeeper\n\n"+
 					(isInsideCollectedElement?"Begin to buffer data ...":"End of data bufferring.")+
 					"\n ");
-					
+
 		/*
 		this.m_bIsInsideCollectedElement = isInsideCollectedElement;
-		
+
 		if ( !m_bIsInsideCollectedElement && !m_bIsBlocking)
 		{
 			m_bSAXEventKeeperIncluded = false;
@@ -1061,7 +1061,7 @@ public class XMLSecurityFrameworkController
 		changeOutput();
 		*/
 	}
-	
+
 	public void bufferStatusChanged(boolean isBufferEmpty)
 	{
 		m_testTool.showMessage("Message from : SAXEventKeeper\n\n"+

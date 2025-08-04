@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 # Builds the Database examples of the Developers Guide.
@@ -67,11 +67,11 @@ include $(SETTINGS)/stdtarget.mk
 
 $(APP1_CLASSFILES) : $(APP1_JAVAFILES)
 	-$(MKDIR) $(subst /,$(PS),$(@D))
-	$(SDK_JAVAC) $(JAVAC_FLAGS) -classpath "$(SDK_CLASSPATH)" -d $(OUT_APP_CLASS) $(APP1_JAVAFILES) 
+	$(SDK_JAVAC) $(JAVAC_FLAGS) -classpath "$(SDK_CLASSPATH)" -d $(OUT_APP_CLASS) $(APP1_JAVAFILES)
 
 $(APP3_CLASSFILES) : $(APP3_JAVAFILES)
 	-$(MKDIR) $(subst /,$(PS),$(@D))
-	$(SDK_JAVAC) $(JAVAC_FLAGS) -classpath "$(SDK_CLASSPATH)" -d $(OUT_APP_CLASS) $(APP3_JAVAFILES) 
+	$(SDK_JAVAC) $(JAVAC_FLAGS) -classpath "$(SDK_CLASSPATH)" -d $(OUT_APP_CLASS) $(APP3_JAVAFILES)
 
 $(OUT_APP_CLASS)/%.class : %.java
 	-$(MKDIR) $(subst /,$(PS),$(@D))
@@ -104,7 +104,7 @@ $(APP3_JAR) : $(OUT_APP_CLASS)/$(APP3_NAME).mf $(APP3_CLASSFILES)
 
 $(EXAMPLE_NAME) : $(APP1_JAR) $(APP2_JAR) $(APP3_JAR)
 	@echo --------------------------------------------------------------------------------
-	@echo This examples needs a running database with name "$(QM)MYDB0$(QM)". Make sure that you 
+	@echo This examples needs a running database with name "$(QM)MYDB0$(QM)". Make sure that you
 	@echo have created such a database and have established a connection to it.
 	@echo Please use one of the following commands to execute the examples!
 	@echo -

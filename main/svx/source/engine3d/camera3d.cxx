@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -200,7 +200,7 @@ void Camera3D::SetBankAngle(double fAngle)
 		aTemp.set(2, 2, fCos);
 		aTemp.set(2, 1, fSin);
 		aTemp.set(1, 2, -fSin);
-		
+
 		aTf *= aTemp;
 	}
 
@@ -213,12 +213,12 @@ void Camera3D::SetBankAngle(double fAngle)
 		aTemp.set(2, 2, fCos);
 		aTemp.set(0, 2, fSin);
 		aTemp.set(2, 0, -fSin);
-		
+
 		aTf *= aTemp;
 	}
 
 	aTf.rotate(0.0, 0.0, fBankAngle);
-	
+
 	{
 		basegfx::B3DHomMatrix aTemp;
 		const double fSin(aDiff.getX());
@@ -228,10 +228,10 @@ void Camera3D::SetBankAngle(double fAngle)
 		aTemp.set(2, 2, fCos);
 		aTemp.set(0, 2, fSin);
 		aTemp.set(2, 0, -fSin);
-		
+
 		aTf *= aTemp;
 	}
-	
+
 	if ( fV != 0.0 )
 	{
 		basegfx::B3DHomMatrix aTemp;
@@ -242,7 +242,7 @@ void Camera3D::SetBankAngle(double fAngle)
 		aTemp.set(2, 2, fCos);
 		aTemp.set(2, 1, fSin);
 		aTemp.set(1, 2, -fSin);
-		
+
 		aTf *= aTemp;
 	}
 
@@ -275,7 +275,7 @@ void Camera3D::Rotate(double fHAngle, double fVAngle)
 	basegfx::B3DVector aDiff(aLookAt - aPosition);
 	const double fV(sqrt(aDiff.getX() * aDiff.getX() + aDiff.getZ() * aDiff.getZ()));
 
-	if ( fV != 0.0 )	
+	if ( fV != 0.0 )
 	{
 		basegfx::B3DHomMatrix aTemp;
 		const double fSin(aDiff.getZ() / fV);
@@ -285,7 +285,7 @@ void Camera3D::Rotate(double fHAngle, double fVAngle)
 		aTemp.set(2, 2, fCos);
 		aTemp.set(0, 2, fSin);
 		aTemp.set(2, 0, -fSin);
-		
+
 		aTf *= aTemp;
 	}
 
@@ -293,7 +293,7 @@ void Camera3D::Rotate(double fHAngle, double fVAngle)
 		aTf.rotate(0.0, 0.0, fVAngle);
 	}
 
-	if ( fV != 0.0 )	
+	if ( fV != 0.0 )
 	{
 		basegfx::B3DHomMatrix aTemp;
 		const double fSin(-aDiff.getZ() / fV);
@@ -328,7 +328,7 @@ void Camera3D::RotateAroundLookAt(double fHAngle, double fVAngle)
 	basegfx::B3DVector aDiff(aPosition - aLookAt);
 	const double fV(sqrt(aDiff.getX() * aDiff.getX() + aDiff.getZ() * aDiff.getZ()));
 
-	if ( fV != 0.0 )	
+	if ( fV != 0.0 )
 	{
 		basegfx::B3DHomMatrix aTemp;
 		const double fSin(aDiff.getZ() / fV);
@@ -346,7 +346,7 @@ void Camera3D::RotateAroundLookAt(double fHAngle, double fVAngle)
 		aTf.rotate(0.0, 0.0, fVAngle);
 	}
 
-	if ( fV != 0.0 )	
+	if ( fV != 0.0 )
 	{
 		basegfx::B3DHomMatrix aTemp;
 		const double fSin(-aDiff.getZ() / fV);

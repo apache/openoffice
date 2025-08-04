@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -55,13 +55,13 @@ const sal_Char sAPI_CharacterStyleName[] = "CharacterStyleName";
 TYPEINIT1( XMLIndexBibliographyEntryContext, XMLIndexSimpleEntryContext);
 
 XMLIndexBibliographyEntryContext::XMLIndexBibliographyEntryContext(
-	SvXMLImport& rImport, 
+	SvXMLImport& rImport,
 	XMLIndexTemplateContext& rTemplate,
 	sal_uInt16 nPrfx,
 	const OUString& rLocalName ) :
-		XMLIndexSimpleEntryContext(rImport, 
-								   rTemplate.sTokenBibliographyDataField, 
-								   rTemplate, 
+		XMLIndexSimpleEntryContext(rImport,
+								   rTemplate.sTokenBibliographyDataField,
+								   rTemplate,
 								   nPrfx, rLocalName),
 		nBibliographyInfo(BibliographyDataField::IDENTIFIER),
 		bBibliographyInfoOK(sal_False)
@@ -119,7 +119,7 @@ void XMLIndexBibliographyEntryContext::StartElement(
 	{
 		OUString sLocalName;
 		sal_uInt16 nPrefix = GetImport().GetNamespaceMap().
-			GetKeyByAttrName( xAttrList->getNameByIndex(nAttr), 
+			GetKeyByAttrName( xAttrList->getNameByIndex(nAttr),
 							  &sLocalName );
 		if (XML_NAMESPACE_TEXT == nPrefix)
 		{
@@ -132,7 +132,7 @@ void XMLIndexBibliographyEntryContext::StartElement(
 			{
 				sal_uInt16 nTmp;
 				if (SvXMLUnitConverter::convertEnum(
-					nTmp, xAttrList->getValueByIndex(nAttr), 
+					nTmp, xAttrList->getValueByIndex(nAttr),
 					aBibliographyDataFieldMap))
 				{
 					nBibliographyInfo = nTmp;
@@ -171,7 +171,7 @@ void XMLIndexBibliographyEntryContext::FillPropertyValues(
 	// bibliography data field
 	sal_Int32 nIndex = bCharStyleNameOK ? 2 : 1;
 	rValues[nIndex].Name = rTemplateContext.sBibliographyDataField;
-	Any aAny;	
+	Any aAny;
 	aAny <<= nBibliographyInfo;
 	rValues[nIndex].Value = aAny;
 }

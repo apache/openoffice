@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -261,7 +261,7 @@ void AnimationImporter::import( const Reference< XDrawPage >& xPage, const DffRe
 			processAfterEffectNodes();
 		}
 	}
-	
+
 #ifdef DBG_ANIM_LOG
 	fclose( mpFile );
 #endif
@@ -418,7 +418,7 @@ void AnimationImporter::importAnimationContainer( const Atom* pAtom, const Refer
 				dump( "<par" );
 				dump( aNode );
 				dump( aSet );
-				importTimeContainer( pAtom, xNode );	
+				importTimeContainer( pAtom, xNode );
 				dump( "</par>\n" );
 
 				// for iteration containers, map target from childs to iteration
@@ -469,7 +469,7 @@ void AnimationImporter::importAnimationContainer( const Atom* pAtom, const Refer
 				dump( "<seq" );
 				dump( aNode );
 				dump( aSet );
-				importTimeContainer( pAtom, xNode );	
+				importTimeContainer( pAtom, xNode );
 				dump( "</seq>\n" );
 
 				if( aSet.hasProperty( DFF_ANIM_NODE_TYPE ) )
@@ -550,7 +550,7 @@ void AnimationImporter::importAnimationContainer( const Atom* pAtom, const Refer
 				dump( "<audio" );
 				dump( aNode );
 				dump( aSet );
-				importAudioContainer( pAtom, xNode );	
+				importAudioContainer( pAtom, xNode );
 				dump( "</audio>\n" );
 			}
 			break;
@@ -809,7 +809,7 @@ bool AnimationImporter::convertAnimationNode( const Reference< XAnimationNode >&
 		if( nMasterRel != 2 )
 		{
 			Event aEvent;
-			
+
 			aEvent.Source <<= xParent;
 			aEvent.Trigger = EventTrigger::END_EVENT;
 			aEvent.Repeat = 0;
@@ -1338,7 +1338,7 @@ void AnimationImporter::fillNode( Reference< XAnimationNode >& xNode, const Anim
 			if( aString.getLength() )
 			{
 				sal_Int32 nElements = 1; // a non empty string has at least one value
-				
+
 				sal_Int32 fromIndex = 0;
 				while(true)
 				{
@@ -1349,7 +1349,7 @@ void AnimationImporter::fillNode( Reference< XAnimationNode >& xNode, const Anim
 					fromIndex++;
 					nElements++;
 				}
-				
+
 				Sequence< TimeFilterPair > aTimeFilter( nElements );
 
 				TimeFilterPair* pValues = aTimeFilter.getArray();
@@ -1368,7 +1368,7 @@ void AnimationImporter::fillNode( Reference< XAnimationNode >& xNode, const Anim
 				}
 
 				xAnim->setTimeFilter( aTimeFilter );
-			}	
+			}
 		}
 	}
 
@@ -1513,7 +1513,7 @@ void AnimationImporter::importTimeContainer( const Atom* pAtom, const Reference<
 
 			pChildAtom = pAtom->findNextChildAtom( pChildAtom );
 		}
-	}		
+	}
 }
 
 // --------------------------------------------------------------------
@@ -1567,7 +1567,7 @@ void AnimationImporter::importAnimationNodeContainer( const Atom* pAtom, const R
 				case DFF_msofbtAnimateMotion:
 					importAnimateMotionContainer( pChildAtom, xNode );
 					break;
-				
+
 				case DFF_msofbtAnimCommand:
 					importCommandContainer( pChildAtom, xNode );
 					break;
@@ -1582,8 +1582,8 @@ void AnimationImporter::importAnimationNodeContainer( const Atom* pAtom, const R
 			}
 
 			pChildAtom = pAtom->findNextChildAtom( pChildAtom );
-		}	
-	}	
+		}
+	}
 }
 
 // --------------------------------------------------------------------
@@ -2539,7 +2539,7 @@ void AnimationImporter::importAnimateRotationContainer( const Atom* pAtom, const
 
 			pChildAtom = pAtom->findNextChildAtom( pChildAtom );
 		}
-	}		
+	}
 }
 // --------------------------------------------------------------------
 
@@ -2751,8 +2751,8 @@ void AnimationImporter::importAnimateKeyPoints( const Atom* pAtom, const Referen
 				dump( ";" );
 
             if( aValues[i] >>= aStr )
-                dump( "%s", 
-                      ::rtl::OUStringToOString( aStr, 
+                dump( "%s",
+                      ::rtl::OUStringToOString( aStr,
                                                 RTL_TEXTENCODING_ASCII_US ).getStr() );
             else if( aValues[i] >>= nVal )
                 dump( "%f", nVal );
@@ -2763,8 +2763,8 @@ void AnimationImporter::importAnimateKeyPoints( const Atom* pAtom, const Referen
                 if( aValues[i] >>= aValuePair )
                 {
                     if( aValuePair.First >>= aStr )
-                        dump( "%s", 
-                              ::rtl::OUStringToOString( aStr, 
+                        dump( "%s",
+                              ::rtl::OUStringToOString( aStr,
                                                         RTL_TEXTENCODING_ASCII_US ).getStr() );
                     else if( aValuePair.First >>= nVal )
                         dump( "%f", nVal );
@@ -2772,8 +2772,8 @@ void AnimationImporter::importAnimateKeyPoints( const Atom* pAtom, const Referen
                         dump( "%X", (sal_Int32)&aValuePair.First );
 
                     if( aValuePair.Second >>= aStr )
-                        dump( ",%s", 
-                              ::rtl::OUStringToOString( aStr, 
+                        dump( ",%s",
+                              ::rtl::OUStringToOString( aStr,
                                                         RTL_TEXTENCODING_ASCII_US ).getStr() );
                     else if( aValuePair.Second >>= nVal )
                         dump( ",%f", nVal );
@@ -2822,7 +2822,7 @@ bool AnimationImporter::importAttributeValue( const Atom* pAtom, Any& rAny )
 				break;
 
 				case DFF_ANIM_PROP_TYPE_INT32 :
-				{	
+				{
 					if ( nRecLen == 5 )
 					{
 						sal_uInt32 nInt32;
@@ -3065,7 +3065,7 @@ sal_Int32 AnimationImporter::importTargetElementContainer( const Atom* pAtom, An
 // default			case 0: rSubType = ShapeAnimationSubType::AS_WHOLE; break;
 					case 6: rSubType = ShapeAnimationSubType::ONLY_BACKGROUND; break;
 					case 8: rSubType = ShapeAnimationSubType::ONLY_TEXT; break;
-					case 2: // one paragraph 
+					case 2: // one paragraph
 					{
 						if( ((begin == -1) && (end == -1)) || !pSdrObject->ISA( SdrTextObj )  )
 							break;
@@ -3108,7 +3108,7 @@ sal_Int32 AnimationImporter::importTargetElementContainer( const Atom* pAtom, An
 
 				case 2: // sound
 					{
-						OUString aSoundURL( ((ImplSdPPTImport*)mpPPTImport)->ReadSound( nRefId ) ); 
+						OUString aSoundURL( ((ImplSdPPTImport*)mpPPTImport)->ReadSound( nRefId ) );
 						rTarget <<= aSoundURL;
 						dump( " srcRef=\"%s\"", aSoundURL );
 					}
@@ -3144,7 +3144,7 @@ sal_Int32 AnimationImporter::importTargetElementContainer( const Atom* pAtom, An
 			{
 				sal_Int32 nU1;
 				mrStCtrl >> nU1;
-	
+
 				// HINT: nU1 == 1 : target document. ?
 //				dump( " unknown_0x2b01=\"%#lx\"", nU1 );
 			}
@@ -3239,7 +3239,7 @@ void AnimationImporter::dump_atom_header( const Atom* pAtom, bool bOpen, bool bA
 		{
 			fprintf(mpFile, "<%s", pTitle );
 
-			fprintf(mpFile, " instance=\"%hu\"%s", 
+			fprintf(mpFile, " instance=\"%hu\"%s",
 						pAtom->getInstance(),
 						bAppend ? "" : ">\n");
 		}
@@ -3320,7 +3320,7 @@ void AnimationImporter::dump_atom( const Atom* pAtom, bool bNewLine )
 					else
 					{
 						if( pChildAtom->seekToContent() )
-						{		
+						{
 							fprintf(mpFile, " value=\""  );
 							dump_atom( pChildAtom, false );
 							fprintf(mpFile, "\"");
@@ -3414,7 +3414,7 @@ void AnimationImporter::dump( const AnimationNode& rNode )
 		fprintf(mpFile," restart=\"%s\"",
 			rNode.mnRestart == 1 ? "always" : (rNode.mnRestart == 2 ? "whenOff" : (rNode.mnRestart == 3 ? "never" : "unknown")) );
 	}
-	
+
 	if( rNode.mnFill )
 	{
 		fprintf(mpFile," fill=\"%s\"",
@@ -3431,7 +3431,7 @@ void AnimationImporter::dump( const AnimationNode& rNode )
 	{
 		fprintf(mpFile, " dur=\"indefinite\"" );
 	}
-	
+
 	if( rNode.mnU1 ) fprintf(mpFile," u1=\"%#lx\"", rNode.mnU1);
 	if( rNode.mnU3 ) fprintf(mpFile," u3=\"%#lx\"", rNode.mnU3);
 	if( rNode.mnU4 ) fprintf(mpFile," u4=\"%#lx\"", rNode.mnU4);
@@ -3482,7 +3482,7 @@ void AnimationImporter::dump( Any& rAny )
 	}
 	else if( rAny >>= aEvent )
 	{
-		static const char* triggers[] = 
+		static const char* triggers[] =
 		{
 			"none","onbegin","onend","begin",
 			"end","onclick","ondoubleclick","onmouseenter",
@@ -3552,7 +3552,7 @@ void AnimationImporter::dump( const PropertySet& rSet )
 				if( aAny >>= nMasterRel )
 				{
 					fprintf( mpFile, " direction=\"%s\"", nMasterRel == 0 ? "sameClick" : ( nMasterRel == 2 ? "nextClick" : "lastClick" )  );
-					bKnown = true;			
+					bKnown = true;
 				}
 			}
 		}

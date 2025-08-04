@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -46,8 +46,8 @@ namespace com { namespace sun { namespace star { namespace task
 
 namespace pdfi
 {
-    typedef std::hash_map< rtl::OUString, rtl::OUString, rtl::OUStringHash > PropertyMap; 
-    typedef sal_Int32 ImageId;    
+    typedef std::hash_map< rtl::OUString, rtl::OUString, rtl::OUStringHash > PropertyMap;
+    typedef sal_Int32 ImageId;
 
     /// What to do with a polygon. values can be ORed together
     enum PolygonAction { PATH_STROKE=1, PATH_FILL=2, PATH_EOFILL=4 };
@@ -61,14 +61,14 @@ namespace pdfi
         fPix *= px2mm;
         return fPix;
     }
-    
+
     inline double convmm2Px( double fMM )
     {
         const double mm2px = PDFI_OUTDEV_RESOLUTION/25.4;
         fMM *= mm2px;
         return fMM;
     }
-    
+
     inline double convPx2mmPrec2( double fPix )
     {
         return rtl_math_round( convPx2mm( fPix ), 2, rtl_math_RoundingMode_Floor );
@@ -145,12 +145,12 @@ namespace pdfi
                 Transformation == rRight.Transformation &&
                 Clip == rRight.Clip;
         }
-            
+
         bool isRotatedOrSkewed() const
         { return Transformation.get( 0, 1 ) != 0.0 ||
                 Transformation.get( 1, 0 ) != 0.0; }
     };
-        
+
     struct GraphicsContextHash
     {
         size_t operator()(const GraphicsContext& rGC ) const
@@ -185,7 +185,7 @@ namespace pdfi
 
     /** retrieve password from user
      */
-    bool getPassword( const ::com::sun::star::uno::Reference< 
+    bool getPassword( const ::com::sun::star::uno::Reference<
                             ::com::sun::star::task::XInteractionHandler >& xHandler,
                       rtl::OUString&                                       rOutPwd,
                       bool                                                 bFirstTry,

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -495,7 +495,7 @@ public:
 
     // XServiceInfo
     virtual ::rtl::OUString SAL_CALL getImplementationName() throw( ::com::sun::star::uno::RuntimeException );
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames() throw( ::com::sun::star::uno::RuntimeException );       
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames() throw( ::com::sun::star::uno::RuntimeException );
 
 	using  svt::PopupWindowController::createPopupWindow;
 };
@@ -699,7 +699,7 @@ IMPL_LINK( FontworkCharacterSpacingWindow, SelectHdl, void *, EMPTYARG )
 	else if ( nSelection == 6 )	// KernCharacterPairs
 	{
         rtl::OUString   aCommand( RTL_CONSTASCII_USTRINGPARAM( ".uno:FontworkKernCharacterPairs" ));
-    
+
         Sequence< PropertyValue > aArgs( 1 );
         aArgs[0].Name = msFontworkKernCharacterPairs.copy(5);
         aArgs[0].Value <<= (sal_Bool) sal_True;
@@ -709,7 +709,7 @@ IMPL_LINK( FontworkCharacterSpacingWindow, SelectHdl, void *, EMPTYARG )
 		implSetKernCharacterPairs( sal_True, true );
 	}
 	else if( nSelection >= 0 )
-	{       
+	{
         Sequence< PropertyValue > aArgs( 1 );
         aArgs[0].Name = msFontworkCharacterSpacing.copy(5);
         aArgs[0].Value <<=( sal_Int32)nCharacterSpacing;
@@ -735,7 +735,7 @@ public:
 
     // XServiceInfo
     virtual ::rtl::OUString SAL_CALL getImplementationName() throw( ::com::sun::star::uno::RuntimeException );
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames() throw( ::com::sun::star::uno::RuntimeException );       
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames() throw( ::com::sun::star::uno::RuntimeException );
 
 	using svt::PopupWindowController::createPopupWindow;
 };

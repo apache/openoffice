@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -186,7 +186,7 @@ void XMLShapeExport::ImpExportNewTrans_FeaturesAndWrite(::basegfx::B2DTuple& rTR
 
 		aTransform.AddSkewX(atan(fTRShear));
 
-        // #i78696# 
+        // #i78696#
         // fTRRotate is mathematically correct, but due to the error
         // we export/import it mirrored. Since the API implementation is fixed and
         // uses the correctly oriented angle, it is necessary for compatibility to
@@ -1070,13 +1070,13 @@ void XMLShapeExport::ImpExportPolygonShape(
         }
 
         // write object, but after attributes are added since this call will
-        // consume all of these added attributes and the destructor will close the 
+        // consume all of these added attributes and the destructor will close the
         // scope. Also before text is added; this may add sub-scopes as needed
         SvXMLElementExport aOBJ(
-            mrExport, 
-            XML_NAMESPACE_DRAW, 
-            eName, 
-            bCreateNewline, 
+            mrExport,
+            XML_NAMESPACE_DRAW,
+            eName,
+            bCreateNewline,
             sal_True);
 
         ImpExportDescription( xShape ); // #i68101#

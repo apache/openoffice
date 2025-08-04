@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -411,7 +411,7 @@ SdStyleSheet* SdStyleSheet::GetRealStyleSheet() const
 
     ::sd::DrawViewShell* pDrawViewShell = 0;
 
-    ::sd::ViewShellBase* pBase = dynamic_cast< ::sd::ViewShellBase* >( SfxViewShell::Current() );    
+    ::sd::ViewShellBase* pBase = dynamic_cast< ::sd::ViewShellBase* >( SfxViewShell::Current() );
     if( pBase )
         pDrawViewShell = dynamic_cast< ::sd::DrawViewShell* >( pBase->GetMainViewShell().get() );
 
@@ -1110,7 +1110,7 @@ void SAL_CALL SdStyleSheet::setPropertyValue( const OUString& aPropertyName, con
 
 		if( pEntry->nWID == WID_STYLE_FAMILY )
 			throw PropertyVetoException();
-	
+
 		if( (pEntry->nWID == EE_PARA_NUMBULLET) && (GetFamily() == SD_STYLE_FAMILY_MASTERPAGE) )
 		{
 			String aStr;
@@ -1133,7 +1133,7 @@ void SAL_CALL SdStyleSheet::setPropertyValue( const OUString& aPropertyName, con
 			}
 			throw IllegalArgumentException();
 		}
-		
+
 		SfxItemSet aSet( GetPool().GetPool(),	pEntry->nWID, pEntry->nWID);
 		aSet.Put( rStyleSet );
 
@@ -1243,7 +1243,7 @@ Any SAL_CALL SdStyleSheet::getPropertyValue( const OUString& PropertyName ) thro
 				return aAny;
 
 			// Hole Wert aus ItemSet
-			aAny = SvxItemPropertySet_getPropertyValue( GetStylePropertySet(),pEntry, aSet );	
+			aAny = SvxItemPropertySet_getPropertyValue( GetStylePropertySet(),pEntry, aSet );
 		}
 
 		if( *pEntry->pType != aAny.getValueType() )
@@ -1330,7 +1330,7 @@ PropertyState SAL_CALL SdStyleSheet::getPropertyState( const OUString& PropertyN
 			eState = PropertyState_AMBIGUOUS_VALUE;
 			break;
 		}
-		
+
 		// if a item is set, this doesn't mean we want it :)
 		if( ( PropertyState_DIRECT_VALUE == eState ) )
 		{
@@ -1348,7 +1348,7 @@ PropertyState SAL_CALL SdStyleSheet::getPropertyState( const OUString& PropertyN
 					if( ( pItem == NULL ) || ( pItem->GetName().Len() == 0) )
 						eState = PropertyState_DEFAULT_VALUE;
 				}
-			}	
+			}
 		}
 
 		return eState;
@@ -1412,7 +1412,7 @@ Any SAL_CALL SdStyleSheet::getPropertyDefault( const OUString& aPropertyName ) t
 	const SfxItemPropertySimpleEntry* pEntry = getPropertyMapEntry( aPropertyName );
 	if( pEntry == NULL )
 		throw UnknownPropertyException();
-    Any aRet; 
+    Any aRet;
 	if( pEntry->nWID == WID_STYLE_FAMILY )
 	{
 		aRet <<= GetFamilyString(nFamily);

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "precompiled_svx.hxx"
@@ -106,7 +106,7 @@ void ParaLineSpacingControl::initial()
 {
     maLineSpacing.SetStyle( maLineSpacing.GetStyle()| WB_3DLOOK |  WB_NO_DIRECTSELECT  );
 
-    maLineSpacing.SetControlBackground( 
+    maLineSpacing.SetControlBackground(
         GetSettings().GetStyleSettings().GetHighContrastMode()
         ? GetSettings().GetStyleSettings().GetMenuColor()
         : sfx2::sidebar::Theme::GetColor( sfx2::sidebar::Theme::Paint_PanelBackground ));
@@ -179,7 +179,7 @@ void ParaLineSpacingControl::PopupModeEndCallback()
 		aSeq[0].Name = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("maLineValue") );
 		aSeq[0].Value <<= ::rtl::OUString( String::CreateFromInt64( maValue ));
 		aWinOpt2.SetUserData( aSeq );
-	}	
+	}
 }
 
 void ParaLineSpacingControl::Rearrange(SfxItemState currSPState,FieldUnit currMetricUnit,SvxLineSpacingItem* currSPItem,const ::sfx2::sidebar::EnumContext currentContext)
@@ -246,7 +246,7 @@ void ParaLineSpacingControl::Rearrange(SfxItemState currSPState,FieldUnit currMe
 	}
 	if( !aWinOpt.Exists() && !aWinOpt2.Exists() )
 		mbLineSPDisable = sal_True;
-	else 
+	else
 		mbLineSPDisable = sal_False;
 
 	if( mbLineSPDisable )
@@ -283,7 +283,7 @@ void ParaLineSpacingControl::Rearrange(SfxItemState currSPState,FieldUnit currMe
 				{
 				case SVX_INTER_LINE_SPACE_OFF:
 					{
-						aLineDist.SelectEntryPos( LLINESPACE_1 );	
+						aLineDist.SelectEntryPos( LLINESPACE_1 );
 						pActLineDistFld->Disable();
 						pActLineDistFld->SetText( String() );
 						mbUseLineSPCustom = DO_NOT_CUSTOM;
@@ -323,9 +323,9 @@ void ParaLineSpacingControl::Rearrange(SfxItemState currSPState,FieldUnit currMe
 							aLineDist.SelectEntryPos( LLINESPACE_2 );
 							pActLineDistFld->Disable();
 							pActLineDistFld->SetText( String() );
-							
+
 							mbUseLineSPCustom = DO_NOT_CUSTOM;
-							maLineSpacing.SelectItem(4);							
+							maLineSpacing.SelectItem(4);
 							bValueSetFocus = sal_True;	//wj
 							break;
 						}
@@ -460,7 +460,7 @@ void ParaLineSpacingControl::Rearrange(SfxItemState currSPState,FieldUnit currMe
 		pActLineDistFld->SetText( String() );
 		maLineSpacing.SetNoSelection();
               maLineSpacing.SelectItem(0);
-	
+
 	    mbUseLineSPCustom = DO_NOT_CUSTOM;
 	}
 	else
@@ -470,7 +470,7 @@ void ParaLineSpacingControl::Rearrange(SfxItemState currSPState,FieldUnit currMe
 		aLineDist.SetNoSelection();
 		maLineSpacing.SetNoSelection();
               maLineSpacing.SelectItem(0);
-		mbUseLineSPCustom = DO_NOT_CUSTOM;		
+		mbUseLineSPCustom = DO_NOT_CUSTOM;
 	}
 
 	aLineDist.SaveValue();
@@ -596,7 +596,7 @@ IMPL_LINK( ParaLineSpacingControl, LineSPDistAtHdl_Impl, MetricField*, /* pBox *
 }
 
 void ParaLineSpacingControl::ExecuteLineSpace()
-{		
+{
 	aLineDist.SaveValue();
 	maLineSpacing.SetNoSelection();
 
@@ -693,8 +693,8 @@ IMPL_LINK(ParaLineSpacingControl, VSSelHdl, void *, pControl)
 {
 	maLineSpacing.SetNoSelection();
 	bool bClosePop = true;
-	if(pControl == &maLineSpacing)  
-	{		
+	if(pControl == &maLineSpacing)
+	{
 		sal_uInt16 iPos = maLineSpacing.GetSelectItemId();
 		switch ( iPos )
 		{
@@ -749,7 +749,7 @@ IMPL_LINK(ParaLineSpacingControl, VSSelHdl, void *, pControl)
 						bClosePop = sal_False;
 				}
 				break;
-		}	
+		}
 	}
 	if(bClosePop)
 		mrParaPropertyPanel.EndSpacingPopupMode();

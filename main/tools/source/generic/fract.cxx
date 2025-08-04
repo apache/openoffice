@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -140,7 +140,7 @@ Fraction::Fraction( long nN1, long nN2, long nD1, long nD2 )
 	if( nN2 < 0 ) { i = -i; nN2 = -nN2; }
 	if( nD1 < 0 ) { i = -i; nD1 = -nD1; }
 	if( nD2 < 0 ) { i = -i; nD2 = -nD2; }
-	
+
     n = GetGGT( nN1, nD1 ); if( n > 1 ) { nN1 /= n; nD1 /= n; }
     n = GetGGT( nN1, nD2 ); if( n > 1 ) { nN1 /= n; nD2 /= n; }
     n = GetGGT( nN2, nD1 ); if( n > 1 ) { nN2 /= n; nD1 /= n; }
@@ -301,7 +301,7 @@ Fraction& Fraction::operator += ( const Fraction& rVal )
 
     BigInt nD( nDenominator );
     nD *= BigInt( rVal.nDenominator );
-	
+
     Reduce( nN, nD );
 
     if ( nN.bIsBig || nD.bIsBig )
@@ -509,7 +509,7 @@ const char nbits_table[32] =
 static int impl_NumberOfBits( unsigned long nNum )
 {
     // http://en.wikipedia.org/wiki/De_Bruijn_sequence
-    // 
+    //
     // background paper: Using de Bruijn Sequences to Index a 1 in a
     // Computer Word (1998) Charles E. Leiserson,
     // Harald Prokop, Keith H. Randall

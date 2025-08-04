@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -136,7 +136,7 @@ void PropertyChgHelper::GetCurrentValues()
 		{
 			sal_Bool *pbVal		= NULL,
 				 *pbResVal	= NULL;
-			
+
             if (pPropName[i].equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( UPN_IS_IGNORE_CONTROL_CHARACTERS ) ))
 			{
 				pbVal	 = &bIsIgnoreControlCharacters;
@@ -174,9 +174,9 @@ void PropertyChgHelper::SetTmpPropVals( const PropertyValues &rPropVals )
 			sal_Bool  *pbResVal = NULL;
 			switch (pVal[i].Handle)
 			{
-				case UPH_IS_IGNORE_CONTROL_CHARACTERS : 
+				case UPH_IS_IGNORE_CONTROL_CHARACTERS :
 						pbResVal = &bResIsIgnoreControlCharacters; break;
-				case UPH_IS_USE_DICTIONARY_LIST		: 
+				case UPH_IS_USE_DICTIONARY_LIST		:
 						pbResVal = &bResIsUseDictionaryList; break;
 				default:
 						;
@@ -341,7 +341,7 @@ sal_Bool SAL_CALL
 }
 
 ///////////////////////////////////////////////////////////////////////////
-	
+
 
 PropertyHelper_Thes::PropertyHelper_Thes(
 		const Reference< XInterface > &rxSource,
@@ -419,7 +419,7 @@ void PropertyHelper_Spell::GetCurrentValues()
 		{
 			sal_Bool *pbVal		= NULL,
 				 *pbResVal	= NULL;
-			
+
             if (pPropName[i].equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( UPN_IS_SPELL_UPPER_CASE ) ))
 			{
 				pbVal	 = &bIsSpellUpperCase;
@@ -679,7 +679,7 @@ void SAL_CALL
 void PropertyHelper_Hyphen::SetTmpPropVals( const PropertyValues &rPropVals )
 {
 	PropertyChgHelper::SetTmpPropVals( rPropVals );
-	
+
 	// return value is default value unless there is an explicitly supplied
 	// temporary value
 	nResHyphMinLeading	 	= nHyphMinLeading;
@@ -720,12 +720,12 @@ PropertyHelper_Thesaurus::PropertyHelper_Thesaurus(
 PropertyHelper_Thesaurus::~PropertyHelper_Thesaurus()
 {
 }
-	
+
 void PropertyHelper_Thesaurus::AddAsPropListener()
 {
 	pInst->AddAsPropListener();
 }
-	
+
 void PropertyHelper_Thesaurus::RemoveAsPropListener()
 {
 	pInst->RemoveAsPropListener();
@@ -745,7 +745,7 @@ PropertyHelper_Hyphenation::PropertyHelper_Hyphenation(
 	pInst = new PropertyHelper_Hyphen( rxSource, rxPropSet );
 	xPropHelper = pInst;
 }
-				
+
 PropertyHelper_Hyphenation::~PropertyHelper_Hyphenation()
 {
 }
@@ -787,7 +787,7 @@ sal_Bool PropertyHelper_Hyphenation::addLinguServiceEventListener(
 {
 	return pInst->addLinguServiceEventListener( rxListener );
 }
-			
+
 sal_Bool PropertyHelper_Hyphenation::removeLinguServiceEventListener(
 				const ::com::sun::star::uno::Reference<
 					::com::sun::star::linguistic2::XLinguServiceEventListener >& rxListener )
@@ -852,7 +852,7 @@ sal_Bool PropertyHelper_Spelling::addLinguServiceEventListener(
 {
 	return pInst->addLinguServiceEventListener( rxListener );
 }
-			
+
 sal_Bool PropertyHelper_Spelling::removeLinguServiceEventListener(
 				const ::com::sun::star::uno::Reference<
 					::com::sun::star::linguistic2::XLinguServiceEventListener >& rxListener )
@@ -861,7 +861,7 @@ sal_Bool PropertyHelper_Spelling::removeLinguServiceEventListener(
 	return pInst->removeLinguServiceEventListener( rxListener );
 }
 
-		
+
 ///////////////////////////////////////////////////////////////////////////
 
 }   // namespace linguistic

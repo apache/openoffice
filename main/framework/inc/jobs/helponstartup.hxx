@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -69,7 +69,7 @@ class HelpOnStartup : private ThreadHelpBase
         //.......................................
         /** @short  reference to an uno service manager. */
         css::uno::Reference< css::lang::XMultiServiceFactory > m_xSMGR;
-    
+
         //.......................................
         /** @short  such module manager is used to classify new opened documents. */
         css::uno::Reference< css::frame::XModuleManager > m_xModuleManager;
@@ -83,13 +83,13 @@ class HelpOnStartup : private ThreadHelpBase
         css::uno::Reference< css::container::XNameAccess > m_xConfig;
 
         //.......................................
-        /** @short  knows the current locale of this office session, 
+        /** @short  knows the current locale of this office session,
                     which is needed to build complete help URLs.
          */
         ::rtl::OUString m_sLocale;
 
         //.......................................
-        /** @short  knows the current operating system of this office session, 
+        /** @short  knows the current operating system of this office session,
                     which is needed to build complete help URLs.
          */
         ::rtl::OUString m_sSystem;
@@ -123,7 +123,7 @@ class HelpOnStartup : private ThreadHelpBase
         //---------------------------------------
         // css.lang.XServiceInfo
         DECLARE_XSERVICEINFO
-    
+
         // css.task.XJob
         virtual css::uno::Any SAL_CALL execute(const css::uno::Sequence< css::beans::NamedValue >& lArguments)
             throw(css::lang::IllegalArgumentException,

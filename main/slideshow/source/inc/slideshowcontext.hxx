@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -58,16 +58,16 @@ namespace slideshow
 
 	            @param rShapeManager
                 ShapeManager, which handles all shapes
-                
+
                 @param rEventQueue
                 Event queue, where time-based events are to be
                 scheduled. A node must not schedule events there
                 before it's not resolved.
-                
+
                 @param rEventMultiplexer
                 Event multiplexer. Clients can register there for
                 about any event that happens in the slideshow
-                
+
                 @param rScreenUpdater
                 Screen updater. Gets notified of necessary screen
                 updates.
@@ -75,9 +75,9 @@ namespace slideshow
                 @param rActivitiesQueue
                 Activities queue, where repeating activities are
                 to be scheduled.
-                
+
                 @param rUserEventQueue
-                User event queue                
+                User event queue
 
                 @param rViewContainer
                 Holds all views added to slideshow
@@ -93,7 +93,7 @@ namespace slideshow
                               UserEventQueue&                                   rUserEventQueue,
                               CursorManager&                                    rCursorManager,
                               const UnoViewContainer&                           rViewContainer,
-                              const ::com::sun::star::uno::Reference< 
+                              const ::com::sun::star::uno::Reference<
                                   ::com::sun::star::uno::XComponentContext>&    rComponentContext );
             void dispose();
 
@@ -105,7 +105,7 @@ namespace slideshow
             UserEventQueue&									mrUserEventQueue;
             CursorManager&                                  mrCursorManager;
             const UnoViewContainer&                         mrViewContainer;
-            ::com::sun::star::uno::Reference< 
+            ::com::sun::star::uno::Reference<
                 ::com::sun::star::uno::XComponentContext>	mxComponentContext;
         };
     }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -63,7 +63,7 @@ public class _UnoControlDateFieldModel extends MultiPropertyTest {
             }
         }) ;
     }
-    
+
     /**
     * This property can be VOID, and in case if it is so new
     * value must defined.
@@ -75,7 +75,7 @@ public class _UnoControlDateFieldModel extends MultiPropertyTest {
             }
         }) ;
     }
-    
+
 
     /**
     * This property can be void, so if old value is <code> null </code>
@@ -113,7 +113,7 @@ public class _UnoControlDateFieldModel extends MultiPropertyTest {
             }
         }) ;
     }
-    
+
     /**
     * Redefined method returns value, that differs from property value.
     */
@@ -125,7 +125,7 @@ public class _UnoControlDateFieldModel extends MultiPropertyTest {
                 return new Integer(17);
         }
     };
-    
+
     /**
     * This property can be void, so if old value is <code> null </code>
     * new value must be specified.
@@ -133,9 +133,9 @@ public class _UnoControlDateFieldModel extends MultiPropertyTest {
     public void _TextLineColor() {
         log.println("Testing with custom Property tester") ;
         testProperty("TextLineColor", ColorTester) ;
-    } 
-    
-    public void _DateShowCentury() {        
+    }
+
+    public void _DateShowCentury() {
         boolean res = false;
         try {
             util.dbg.printPropertyInfo(oObj,"DateShowCentury",log);
@@ -156,13 +156,13 @@ public class _UnoControlDateFieldModel extends MultiPropertyTest {
         } catch (com.sun.star.beans.UnknownPropertyException upe) {
             log.println("Don't know the Property 'DateShowCentury'");
         } catch (com.sun.star.lang.WrappedTargetException wte) {
-            log.println("WrappedTargetException while getting Property 'DateShowCentury'");        
+            log.println("WrappedTargetException while getting Property 'DateShowCentury'");
         } catch (com.sun.star.lang.IllegalArgumentException iae) {
             log.println("IllegalArgumentException while getting Property 'DateShowCentury'");
         } catch (com.sun.star.beans.PropertyVetoException pve) {
             log.println("PropertyVetoException while getting Property 'DateShowCentury'");
-        } 
-        tRes.tested("DateShowCentury",res);        
-        
+        }
+        tRes.tested("DateShowCentury",res);
+
     }
 }

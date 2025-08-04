@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -146,7 +146,7 @@ void LoggedStream::startShape( ::com::sun::star::uno::Reference< ::com::sun::sta
 #ifdef DEBUG_LOGGING
     mHelper.startElement("shape");
 #endif
-    
+
     lcl_startShape(xShape);
 }
 
@@ -156,7 +156,7 @@ void LoggedStream::endShape()
 
 #ifdef DEBUG_LOGGING
     mHelper.endElement("shape");
-#endif    
+#endif
 }
 
 void LoggedStream::text(const sal_uInt8 * data, size_t len)
@@ -170,12 +170,12 @@ void LoggedStream::text(const sal_uInt8 * data, size_t len)
     mHelper.chars(sText);
     mHelper.endElement("data");
 #endif
-    
+
     lcl_text(data, len);
 
 #ifdef DEBUG_LOGGING
     mHelper.endElement("text");
-#endif    
+#endif
 }
 
 void LoggedStream::utext(const sal_uInt8 * data, size_t len)
@@ -188,17 +188,17 @@ void LoggedStream::utext(const sal_uInt8 * data, size_t len)
     ::rtl::OUStringBuffer aBuffer = ::rtl::OUStringBuffer(len);
     aBuffer.append( (const sal_Unicode *) data, len);
     sText = aBuffer.makeStringAndClear();
-    
+
     mHelper.chars(sText);
 
     mHelper.endElement("data");
 #endif
-    
+
     lcl_utext(data, len);
 
 #ifdef DEBUG_LOGGING
     mHelper.endElement("utext");
-#endif    
+#endif
 }
 
 void LoggedStream::props(writerfilter::Reference<Properties>::Pointer_t ref)
@@ -206,12 +206,12 @@ void LoggedStream::props(writerfilter::Reference<Properties>::Pointer_t ref)
 #ifdef DEBUG_LOGGING
     mHelper.startElement("props");
 #endif
-    
+
     lcl_props(ref);
 
 #ifdef DEBUG_LOGGING
     mHelper.endElement("props");
-#endif    
+#endif
 }
 
 void LoggedStream::table(Id name, writerfilter::Reference<Table>::Pointer_t ref)
@@ -220,12 +220,12 @@ void LoggedStream::table(Id name, writerfilter::Reference<Table>::Pointer_t ref)
     mHelper.startElement("table");
     mHelper.attribute("name", (*QNameToString::Instance())(name));
 #endif
-    
+
     lcl_table(name, ref);
 
 #ifdef DEBUG_LOGGING
     mHelper.endElement("table");
-#endif    
+#endif
 }
 
 void LoggedStream::substream(Id name, writerfilter::Reference<Stream>::Pointer_t ref)
@@ -234,12 +234,12 @@ void LoggedStream::substream(Id name, writerfilter::Reference<Stream>::Pointer_t
     mHelper.startElement("substream");
     mHelper.attribute("name", (*QNameToString::Instance())(name));
 #endif
-    
+
     lcl_substream(name, ref);
 
 #ifdef DEBUG_LOGGING
     mHelper.endElement("substream");
-#endif    
+#endif
 }
 
 void LoggedStream::info(const string & _info)
@@ -248,12 +248,12 @@ void LoggedStream::info(const string & _info)
     mHelper.startElement("info");
     mHelper.attribute("text", _info);
 #endif
-    
+
     lcl_info(_info);
 
 #ifdef DEBUG_LOGGING
     mHelper.endElement("info");
-#endif    
+#endif
 }
 
 // class LoggedProperties

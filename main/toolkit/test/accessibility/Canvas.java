@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 import java.util.*;
@@ -40,7 +40,7 @@ import com.sun.star.accessibility.XAccessibleComponent;
     <p>The canvas listens to selection events of the associated JTree and
     highlights the first selected node of that tree.</p>
 */
-class Canvas 
+class Canvas
     extends JPanel
     implements MouseListener, MouseMotionListener, TreeSelectionListener//, Scrollable
 {
@@ -69,7 +69,7 @@ class Canvas
     }
 
     /** Tell the canvas which tree view to use to highlight accessible
-        objects. 
+        objects.
     */
     public void setTree (JTree aTree)
     {
@@ -88,7 +88,7 @@ class Canvas
         if (maNodes.indexOf (aNode) == -1)
         {
             maNodes.add (aNode);
-            
+
             CanvasShape aObject = (CanvasShape) maObjects.get (aNode);
             if (aObject == null)
             {
@@ -98,7 +98,7 @@ class Canvas
                     maBoundingBox = aObject.getBBox();
                 else
                     maBoundingBox = maBoundingBox.union (aObject.getBBox());
-                
+
                 maObjects.put (aNode, aObject);
                 maObjectList.add (aObject);
 
@@ -130,14 +130,14 @@ class Canvas
                 aObject.update();
         }
     }
-    
+
     public void updateNodeGeometry (AccTreeNode aNode)
     {
         CanvasShape aObject = (CanvasShape)maObjects.get(aNode);
         if (aObject != null)
             aObject.updateGeometry();
     }
-    
+
     public void clear ()
     {
         while (maNodes.size() > 0)
@@ -180,7 +180,7 @@ class Canvas
         Options.SetBoolean ("Antialiasing", bNewValue);
         repaint ();
     }
-    
+
     public boolean getShowText ()
     {
         return Options.GetBoolean ("ShowText");
@@ -212,10 +212,10 @@ class Canvas
 
             Graphics2D g2 = (Graphics2D)g;
             if (getAntialiasing())
-                g2.setRenderingHint (RenderingHints.KEY_ANTIALIASING, 
+                g2.setRenderingHint (RenderingHints.KEY_ANTIALIASING,
                     RenderingHints.VALUE_ANTIALIAS_ON);
             else
-                g2.setRenderingHint (RenderingHints.KEY_ANTIALIASING, 
+                g2.setRenderingHint (RenderingHints.KEY_ANTIALIASING,
                     RenderingHints.VALUE_ANTIALIAS_OFF);
 
             setupTransformation ();
@@ -233,7 +233,7 @@ class Canvas
             g2.fill (aScreen);
             g2.setColor (Color.BLACK);
             g2.draw (aScreen);
-            
+
             synchronized (maObjectList)
             {
                 int nCount = maObjectList.size();
@@ -249,7 +249,7 @@ class Canvas
                         bShowDescriptions, bShowNames, bShowText);
                 }
             }
-            
+
             // Paint highlighted frame around active object as the last thing.
             if (maActiveObject != null)
                 maActiveObject.paint_highlight (
@@ -299,7 +299,7 @@ class Canvas
                     // Calculate the scales that would map the screen onto the
                     // widget in both of the coordinate axes and select the
                     // smaller
-                    // of the two: it maps the screen onto the widget in both 
+                    // of the two: it maps the screen onto the widget in both
                     // axes at the same time.
                     double nHScale = (aWidgetSize.getWidth() - 10) / aScreenSize.getWidth();
                     double nVScale = (aWidgetSize.getHeight() - 10) / aScreenSize.getHeight();
@@ -320,7 +320,7 @@ class Canvas
                     mnHOffset = 0;
                 if (mnVOffset < 0)
                     mnVOffset = 0;
-            
+
                 setPreferredSize (new Dimension (
                     (int)(2*mnHOffset + mnScale * aScreenSize.getWidth()),
                     (int)(2*mnVOffset + mnScale * aScreenSize.getHeight())));
@@ -337,8 +337,8 @@ class Canvas
         }
         maLastWidgetSize = aWidgetSize;
     }
-    
-    
+
+
 
     /**  Call getAccessibleAt to determine accessible object under mouse.
     */
@@ -409,7 +409,7 @@ class Canvas
         {
             if (maActiveObject != null)
                 maActiveObject.unhighlight();
-            
+
             maActiveObject = aNewActiveObject;
             if (maActiveObject != null)
             {
@@ -427,7 +427,7 @@ class Canvas
         else
             return false;
     }
-    
+
     /** Called when the selection of the tree changes.  Highlight the
         corresponding graphical representation of the first selected object.
     */
@@ -443,7 +443,7 @@ class Canvas
         }
     }
 
-    private int 
+    private int
         mnXAnchor,
         mnYAnchor,
         maResizeFlag;
@@ -451,19 +451,19 @@ class Canvas
         mnHOffset,
         mnVOffset,
         mnScale;
-    private CanvasShape 
+    private CanvasShape
         maActiveObject;
     private java.util.HashMap
         maObjects;
-    private Vector 
+    private Vector
         maObjectList,
         maContexts,
         maNodes;
-    private Rectangle 
+    private Rectangle
         maBoundingBox;
     private JTree
         maTree;
     // The size of the widget at the last call of setupTransformation()
-    private Dimension 
+    private Dimension
         maLastWidgetSize;
 }

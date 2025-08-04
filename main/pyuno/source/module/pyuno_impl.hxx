@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -143,7 +143,7 @@ PyRef ustring2PyUnicode( const rtl::OUString &source );
 PyRef ustring2PyString( const ::rtl::OUString & source );
 rtl::OUString pyString2ustring( PyObject *str );
 
-    
+
 PyRef AnyToPyObject (const com::sun::star::uno::Any & a, const Runtime &r )
     throw ( com::sun::star::uno::RuntimeException );
 
@@ -253,7 +253,7 @@ public:
     PyRef getWrappedObject() { return mWrappedObject; }
     com::sun::star::uno::Sequence< com::sun::star::uno::Type > getWrappedTypes() { return mTypes; }
     virtual ~Adapter();
-    
+
     // XInvocation
     virtual com::sun::star::uno::Reference< ::com::sun::star::beans::XIntrospectionAccess >
            SAL_CALL getIntrospection(  ) throw (::com::sun::star::uno::RuntimeException);

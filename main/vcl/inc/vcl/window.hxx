@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -334,7 +334,7 @@ typedef sal_uInt16 StateChangedType;
 #define DLGWINDOW_FIRST                 2
 //#endif
 
-enum WindowSizeType { 
+enum WindowSizeType {
     WINDOWSIZE_MINIMUM,
     WINDOWSIZE_PREFERRED,
     WINDOWSIZE_MAXIMUM
@@ -575,7 +575,7 @@ public:
 
     SAL_DLLPRIVATE sal_Bool        ImplIsInTaskPaneList();
     SAL_DLLPRIVATE void        ImplIsInTaskPaneList( sal_Bool mbIsInTaskList );
-    SAL_DLLPRIVATE ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XCanvas > 
+    SAL_DLLPRIVATE ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XCanvas >
                                ImplGetCanvas( const Size& rFullscreenSize, bool bFullscreen, bool bSpriteCanvas ) const;
 
 private:
@@ -777,16 +777,16 @@ public:
     void                EnableInput( sal_Bool bEnable, sal_Bool bChild, sal_Bool bSysWin,
                                      const Window* pExcludeWindow = NULL );
     sal_Bool                IsInputEnabled() const;
-    
+
     /** Override <code>EnableInput</code>. This can be necessary due to other people
         using EnableInput for whole window hierarchies.
-        
-        
+
+
         <code>AlwaysEnableInput</code> and <code>AlwaysDisableInput</code> are
         mutually exclusive; the last setter wins.
         @param bAlways
         sets always enabled flag
-        
+
         @param bChild
         if true children are recursively set to AlwaysEnableInput
     */
@@ -800,13 +800,13 @@ public:
         Windows with AlwaysDisableInput will not get key events even if enabled
         and input enabled.This can be necessary due to other people using EnableInput
         for whole window hierarchies.
-        
+
         <code>AlwaysEnableInput</code> and <code>AlwaysDisableInput</code> are
         mutually exclusive; the last setter wins.
-        
+
         @param bAlways
         sets always disable flag
-        
+
         @param bChild
         if true children are recursively set to AlwaysDisableInput
     */
@@ -822,25 +822,25 @@ public:
     not evaluate events but still react to those events externally. In these
     rare cases call SetCallHandlersOnInputDisabled( true ) to have your handler
     called anyway.
-    
+
     Currently only mouse events get this special treatment.
-    
+
     Use this sparingly, chances are if you want to use it you're working around
     the real problem.
-    
+
     @param bCall
     Enable/Disable calling event handlers for this disabled, modal or input disabled window.
     This call is implicity done recursively for possible child windows.
     */
     void                SetCallHandlersOnInputDisabled( bool bCall );
     /** get state of SetCallHandlersOnInputDisabled
-    
+
     @returns whether handlers are called regardless of input enabled state
     */
     bool                IsCallHandlersOnInputDisabled() const;
     /** A window is in modal mode if one of its children or subchildren
         is a running modal window (a modal dialog)
-        
+
         @returns sal_True if a child or subchild is a running modal window
     */
     sal_Bool                IsInModalMode() const;
@@ -875,7 +875,7 @@ public:
     Point               OutputToAbsoluteScreenPixel( const Point& rPos ) const;
     Point               AbsoluteScreenToOutputPixel( const Point& rPos ) const;
     Rectangle           GetDesktopRectPixel() const;
-    //  window extents including border and decoratrion
+    //  window extents including border and decoration
     Rectangle           GetWindowExtentsRelative( Window *pRelativeWindow ) const;
     // window extents of the client window, coordinates to be used in SetPosPixel
     Rectangle           GetClientWindowExtentsRelative( Window *pRelativeWindow ) const;
@@ -916,8 +916,8 @@ public:
     sal_uInt16              GetGetFocusFlags() const;
 	void				GrabFocusToDocument();
 
-    /** 
-     * Set this when you need to act as if the window has focus even if it 
+    /**
+     * Set this when you need to act as if the window has focus even if it
      * doesn't.  This is necessary for implementing tab stops inside floating
      * windows, but floating windows don't get focus from the system.
      */
@@ -1052,7 +1052,7 @@ public:
 
     void    SetAccessibleDescription( const String& rDescr );
     String  GetAccessibleDescription() const;
-    
+
     void    SetAccessibleRelationLabeledBy( Window* pLabeledBy );
     Window* GetAccessibleRelationLabeledBy() const;
 
@@ -1061,7 +1061,7 @@ public:
 
     void    SetAccessibleRelationMemberOf( Window* pMemberOf );
     Window* GetAccessibleRelationMemberOf() const;
-    
+
 
     // to avoid sending accessibility events in cases like closing dialogs
     // by default checks complete parent path
@@ -1069,13 +1069,13 @@ public:
     void    SetAccessibilityEventsSuppressed(sal_Bool bSuppressed);
 
     /// request XCanvas render interface for this window
-    ::com::sun::star::uno::Reference< 
+    ::com::sun::star::uno::Reference<
 		::com::sun::star::rendering::XCanvas > GetCanvas() const;
     /// request XSpriteCanvas render interface for this window
-    ::com::sun::star::uno::Reference< 
+    ::com::sun::star::uno::Reference<
 		::com::sun::star::rendering::XSpriteCanvas > GetSpriteCanvas() const;
     /// request fullscreen XSpriteCanvas render interface for this window
-    ::com::sun::star::uno::Reference< 
+    ::com::sun::star::uno::Reference<
 		::com::sun::star::rendering::XSpriteCanvas > GetFullscreenSpriteCanvas( const Size& rFullscreenSize ) const;
 
     /*  records all DrawText operations within the passed rectangle;
@@ -1120,7 +1120,7 @@ public:
 
     // a helper method for a Control's Draw method
     void PaintToDevice( OutputDevice* pDevice, const Point& rPos, const Size& rSize );
-    
+
     /* mark Window for deletion in top of event queue
     */
     void doLazyDelete();
@@ -1130,12 +1130,12 @@ public:
 
     virtual XubString GetSurroundingText() const;
     virtual Selection GetSurroundingTextSelection() const;
-    
+
     // ExtImpl
-    
+
     // layouting
     boost::shared_ptr< vcl::WindowArranger > getLayout();
-    
+
     /* add a child Window
        addWindow will do the following things
        - insert the passed window into the child list (equivalent to i_pWin->SetParent( this ))
@@ -1143,11 +1143,11 @@ public:
          the parent's desctructor.
          This means: do not pass in member windows or stack objects here. Do not cause
          the destructor of the added window to be called in any way.
-         
+
          to avoid ownership pass i_bTakeOwnership as "false"
     */
     void addWindow( Window* i_pWin, bool i_bTakeOwnership = true );
-    
+
     /* remove a child Window
        the remove window functions will
        - reparent the searched window (equivalent to i_pWin->SetParent( i_pNewParent ))
@@ -1155,7 +1155,7 @@ public:
        caution: ownership passes to the new parent or the caller, if the new parent was NULL
     */
     Window* removeWindow( Window* i_pWin, Window* i_pNewParent = NULL );
-    
+
     /* return the identifier of this window
     */
     const rtl::OUString& getIdentifier() const;
@@ -1165,12 +1165,12 @@ public:
        hierarchy you'd like to find them again using the findWindow method
     */
     void setIdentifier( const rtl::OUString& );
-    
+
     /* returns the first found descendant that matches
        the passed identifier or NULL
     */
     Window* findWindow( const rtl::OUString& ) const;
-    
+
     /* get/set properties
        this will contain window properties (like visible, enabled)
        as well as properties of derived classes (e.g. text of Edit fields)

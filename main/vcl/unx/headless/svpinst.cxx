@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -113,7 +113,7 @@ SvpSalInstance::~SvpSalInstance()
 {
     if( s_pDefaultInstance == this )
         s_pDefaultInstance = NULL;
-    
+
 	// close 'wakeup' pipe.
 	close (m_pTimeoutFDS[0]);
 	close (m_pTimeoutFDS[1]);
@@ -156,7 +156,7 @@ void SvpSalInstance::CancelEvent( const SalFrame* pFrame, void* pData, sal_uInt1
 void SvpSalInstance::deregisterFrame( SalFrame* pFrame )
 {
     m_aFrames.remove( pFrame );
-    
+
 	if( osl_acquireMutex( m_aEventGuard ) )
     {
         // cancel outstanding events for this frame
@@ -334,7 +334,7 @@ bool SvpSalInstance::CheckYieldMutex()
 	{
 	    bRet = false;
 	}
-    
+
     return bRet;
 }
 
@@ -400,7 +400,7 @@ void SvpSalInstance::Yield( bool bWait, bool bHandleAllCurrentEvents )
 		}
         else
             nTimeoutMS = -1; // wait until something happens
-        
+
         // release yield mutex
         nAcquireCount = ReleaseYieldMutex();
         // poll
@@ -409,10 +409,10 @@ void SvpSalInstance::Yield( bool bWait, bool bHandleAllCurrentEvents )
         aPoll.events = POLLIN;
         aPoll.revents = 0;
         poll( &aPoll, 1, nTimeoutMS );
-        
+
         // acquire yield mutex again
         AcquireYieldMutex( nAcquireCount );
-        
+
         // clean up pipe
         if( (aPoll.revents & POLLIN) != 0 )
         {

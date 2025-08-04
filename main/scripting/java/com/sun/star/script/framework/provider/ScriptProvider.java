@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -71,7 +71,7 @@ import com.sun.star.ucb.XCommandProcessor;
 import com.sun.star.ucb.XContentIdentifier;
 import com.sun.star.ucb.XContentIdentifierFactory;
 
-import com.sun.star.sdbc.XRow; 
+import com.sun.star.sdbc.XRow;
 
 import com.sun.star.script.framework.browse.ProviderBrowseNode;
 import com.sun.star.script.framework.browse.DialogFactory;
@@ -108,7 +108,7 @@ public abstract class ScriptProvider
    // TODO should this be implemented in this class
     private XBrowseNode m_xBrowseNodeProxy;
     private XScriptContext m_xScriptContext;
- 
+
     public ScriptProvider( XComponentContext ctx, String language )
     {
         this.language = language;
@@ -139,7 +139,7 @@ public abstract class ScriptProvider
 
             XMLParserFactory.setOfficeDTDURL(me.expandMacros(
                 "${$OOO_BASE_DIR/program/bootstraprc::BaseInstallation}/share/dtd/officedocument/1_0/"));
-            
+
         }
         catch ( Exception e )
         {
@@ -160,7 +160,7 @@ public abstract class ScriptProvider
         }
         return m_xScriptContext;
     }
-    public void initialize( Object[] aArguments ) 
+    public void initialize( Object[] aArguments )
         throws com.sun.star.uno.Exception
     {
         LogUtils.DEBUG( "entering XInit for language " + language);
@@ -230,7 +230,7 @@ public abstract class ScriptProvider
                         extensionDb = "vnd.sun.star.expand:${$OOO_BASE_DIR/program/" + PathUtils.BOOTSTRAP_NAME + "::UserInstallation}/user";
                         extensionRepository = "user";
                     }
-                    
+
                     if ( originalContextURL.endsWith( "uno_packages") )
                     {
                         isPkgProvider = true;
@@ -246,7 +246,7 @@ public abstract class ScriptProvider
                     }
                     else
                     {
-                        m_container = new ParcelContainer( m_xContext, contextUrl, language  ); 
+                        m_container = new ParcelContainer( m_xContext, contextUrl, language  );
                     }
                 }
             }
@@ -261,7 +261,7 @@ public abstract class ScriptProvider
 
             // TODO should all be done in this class instead of
             // deleagation????
-            m_xBrowseNodeProxy = new ProviderBrowseNode( this, 
+            m_xBrowseNodeProxy = new ProviderBrowseNode( this,
                 m_container, m_xContext );
 
             m_xInvocationProxy = (XInvocation)UnoRuntime.queryInterface(XInvocation.class, m_xBrowseNodeProxy);
@@ -345,7 +345,7 @@ public abstract class ScriptProvider
     }
 
 
-   
+
     public abstract XScript getScript( /*IN*/String scriptURI )
         throws com.sun.star.uno.RuntimeException,
                ScriptFrameworkErrorException;
@@ -371,7 +371,7 @@ public abstract class ScriptProvider
             ScriptMetaData scriptData = m_container.findScript( details );
             if ( scriptData == null )
             {
-                throw new ScriptFrameworkErrorException( details.function + " does not exist", 
+                throw new ScriptFrameworkErrorException( details.function + " does not exist",
                     null, details.function, language, ScriptFrameworkErrorType.NO_SUCH_SCRIPT );
             }
             return scriptData;
@@ -379,12 +379,12 @@ public abstract class ScriptProvider
         catch (  com.sun.star.lang.IllegalArgumentException ila )
         {
             // TODO specify the correct error Type
-            throw new ScriptFrameworkErrorException( ila.getMessage(), 
+            throw new ScriptFrameworkErrorException( ila.getMessage(),
                 null, scriptURI, language, ScriptFrameworkErrorType.UNKNOWN );
         }
         catch ( com.sun.star.container.NoSuchElementException nse )
         {
-            throw new ScriptFrameworkErrorException( nse.getMessage(), 
+            throw new ScriptFrameworkErrorException( nse.getMessage(),
                 null, details.function, language, ScriptFrameworkErrorType.NO_SUCH_SCRIPT );
         }
         catch ( com.sun.star.lang.WrappedTargetException wta )
@@ -396,7 +396,7 @@ public abstract class ScriptProvider
             {
                 message = wrapped.getMessage();
             }
-            throw new ScriptFrameworkErrorException( message, 
+            throw new ScriptFrameworkErrorException( message,
                 null, details.function, language, ScriptFrameworkErrorType.UNKNOWN );
         }
 
@@ -534,9 +534,9 @@ public abstract class ScriptProvider
     {
         // TODO needs implementing?
         if ( true )
-        { 
+        {
             throw new com.sun.star.uno.RuntimeException(
-                "getByName not implemented" );           
+                "getByName not implemented" );
         }
         return new Object();
     }
@@ -546,16 +546,16 @@ public abstract class ScriptProvider
         // TODO needs implementing?
         String[] result = new String[0];
         if ( true )
-        { 
+        {
             throw new com.sun.star.uno.RuntimeException(
-                "getElementNames not implemented" );           
-                
+                "getElementNames not implemented" );
+
         }
         return result;
     }
-  
 
-    // Performs the getRegStatus functionality for the PkgMgr 
+
+    // Performs the getRegStatus functionality for the PkgMgr
     public boolean hasByName( String aName )
     {
         boolean result = false;
@@ -566,7 +566,7 @@ public abstract class ScriptProvider
         return result;
     }
 
-    public com.sun.star.uno.Type getElementType() 
+    public com.sun.star.uno.Type getElementType()
     {
         // TODO at the moment this returns void indicating
         // type is unknown should indicate XPackage ? do we implement XPackage
@@ -578,10 +578,10 @@ public abstract class ScriptProvider
         // TODO needs implementing?
         boolean result = false;
         if ( true )
-        { 
+        {
             throw new com.sun.star.uno.RuntimeException(
-                "hasElements not implemented" );           
-                
+                "hasElements not implemented" );
+
         }
         return result;
     }
@@ -589,10 +589,10 @@ public abstract class ScriptProvider
     {
         // TODO needs implementing
         if ( true )
-        { 
+        {
             throw new com.sun.star.uno.RuntimeException(
-                "replaceByName not implemented" );           
-                
+                "replaceByName not implemented" );
+
         }
     }
 
@@ -602,11 +602,11 @@ public abstract class ScriptProvider
         XPackage newPackage = ( XPackage ) UnoRuntime.queryInterface( XPackage.class, aElement );
         if ( aName.length() == 0 )
         {
-            throw new  com.sun.star.lang.IllegalArgumentException( "Empty name" ); 
+            throw new  com.sun.star.lang.IllegalArgumentException( "Empty name" );
         }
         if ( newPackage == null )
         {
-            throw new com.sun.star.lang.IllegalArgumentException( "No package supplied" ); 
+            throw new com.sun.star.lang.IllegalArgumentException( "No package supplied" );
         }
 
         ((UnoPkgContainer)m_container).processUnoPackage( newPackage, language  );
@@ -632,9 +632,9 @@ public abstract class ScriptProvider
             LogUtils.DEBUG("Deregistering library " + libName );
             if ( c.removeParcel( libName ) )
             {
-                ((UnoPkgContainer)m_container).deRegisterPackageContainer( Name ); 
+                ((UnoPkgContainer)m_container).deRegisterPackageContainer( Name );
             }
-            else 
+            else
             {
                 throw new com.sun.star.container.NoSuchElementException( libName + " cannot be removed from container." );
             }
@@ -678,15 +678,15 @@ public abstract class ScriptProvider
         LogUtils.DEBUG("unable to determine the model's TDOC URL");
         return "";
     }
-    
+
     private  XModel getModelFromDocUrl( String docUrl )
     {
         LogUtils.DEBUG("getModelFromDocUrl - searching for match for ->" + docUrl + "<-" );
         XModel xModel = null;
         try
-        { 
+        {
             Object[] args = new String[] {"Local", "Office" };
-        
+
             Object ucb = m_xMultiComponentFactory.createInstanceWithArgumentsAndContext( "com.sun.star.ucb.UniversalContentBroker", args, m_xContext );
 
 
@@ -701,19 +701,19 @@ public abstract class ScriptProvider
             XContentProvider xCntAccess = ( XContentProvider )
                 UnoRuntime.queryInterface( XContentProvider.class,
                     ucb );
-            
 
-            XContent xCnt = xCntAccess.queryContent( xCntId ); 
+
+            XContent xCnt = xCntAccess.queryContent( xCntId );
 
 
             XCommandProcessor xCmd = ( XCommandProcessor )
-                UnoRuntime.queryInterface( XCommandProcessor.class, xCnt ); 
+                UnoRuntime.queryInterface( XCommandProcessor.class, xCnt );
 
-    
+
             Property[] pArgs = new Property[ ] { new Property() };
             pArgs[ 0 ].Name = "DocumentModel";
             pArgs[ 0 ].Handle = -1;
-    
+
             Command command = new Command();
 
             command.Handle = -1;
@@ -721,18 +721,18 @@ public abstract class ScriptProvider
             command.Argument = pArgs;
 
             com.sun.star.ucb.XCommandEnvironment env = null ;
-            Object result =  xCmd.execute( command, 0, env ) ; 
+            Object result =  xCmd.execute( command, 0, env ) ;
 
-            XRow values = ( XRow ) UnoRuntime.queryInterface( XRow.class, 
-                result ); 
-    
+            XRow values = ( XRow ) UnoRuntime.queryInterface( XRow.class,
+                result );
+
             xModel = ( XModel )  UnoRuntime.queryInterface( XModel.class,
                 values.getObject( 1, null ) );
         }
         catch ( Exception ignore )
         {
             LogUtils.DEBUG("Failed to get model exception " + ignore );
-          
+
         }
         return xModel;
     }

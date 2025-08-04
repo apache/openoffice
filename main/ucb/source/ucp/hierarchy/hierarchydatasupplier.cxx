@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -353,7 +353,7 @@ HierarchyResultSetDataSupplier::queryPropertyValues( sal_uInt32 nIndex  )
 
 	if ( nIndex < m_pImpl->m_aResults.size() )
 	{
-        uno::Reference< sdbc::XRow > xRow 
+        uno::Reference< sdbc::XRow > xRow
             = m_pImpl->m_aResults[ nIndex ]->xRow;
 		if ( xRow.is() )
 		{
@@ -369,10 +369,10 @@ HierarchyResultSetDataSupplier::queryPropertyValues( sal_uInt32 nIndex  )
         static rtl::OUString aLinkType(
             rtl::OUString::createFromAscii( HIERARCHY_LINK_CONTENT_TYPE ) );
 
-        HierarchyContentProperties aData( 
+        HierarchyContentProperties aData(
             m_pImpl->m_aResults[ nIndex ]->aData );
 
-        uno::Reference< sdbc::XRow > xRow 
+        uno::Reference< sdbc::XRow > xRow
             = HierarchyContent::getPropertyValues(
                 m_pImpl->m_xSMgr,
                 getResultSet()->getProperties(),

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -147,9 +147,9 @@ void ScNamedRangeObj::Modify_Impl( const String* pNewRangeName, const ScTokenArr
               {
                      sal_uInt16 nPos = 0;
                      SCTAB nameScope = MAXTABCOUNT;
-                     if (aScopeName != EMPTY_STRING ) 
+                     if (aScopeName != EMPTY_STRING )
                          pDoc->GetTable(aScopeName, nameScope);
-					 
+
                      if (pNames->SearchName( aName, nPos, nameScope ))
                      {
                             SCTAB newNameScope = MAXTABCOUNT;
@@ -159,7 +159,7 @@ void ScNamedRangeObj::Modify_Impl( const String* pNewRangeName, const ScTokenArr
 							else if (!pNewScopeName || *pNewScopeName == EMPTY_STRING )
 								newNameScope = nameScope;
 							//end of add
-                            
+
                             ScRangeData* pOld = (*pNames)[nPos];
 
                             String aInsName(pOld->GetName());
@@ -214,7 +214,7 @@ void ScNamedRangeObj::Modify_Impl( const String* pNewRangeName, const ScTokenArr
 								}
 								else
 								{
-									 delete pNew;		//! uno::Exception/Fehler oder so									 
+									 delete pNew;		//! uno::Exception/Fehler oder so
 								}
 							}
                        }
@@ -615,13 +615,13 @@ void ScNamedRangesObj::ImplAddNewByScopeAndName(SCTAB aScope, const ::rtl::OUStr
 	       String aContStr(aContent);
 		if (pNames && !pNames->SearchName(aNameStr, nIndex,aScope))
 		{
-                   
+
             // GRAM_PODF_A1 for API compatibility.
                    ScRangeData* pNew = new ScRangeData( pDoc, aNameStr, aContStr,
 												aPos, nNewType,formula::FormulaGrammar::GRAM_PODF_A1 );//GRAM_ODFF,//
 
                    pNew->SetRangeScope(aScope);
-			
+
 				   const bool bSupportUndo(!pDoc->IsImportingXML());
 				   if ( bSupportUndo )
 				   {
@@ -639,7 +639,7 @@ void ScNamedRangesObj::ImplAddNewByScopeAndName(SCTAB aScope, const ::rtl::OUStr
 					   }
 				   }
 				   else
-				   {					   
+				   {
 					   if ( pNames->Insert(pNew) )
 					   {
 							ScDocFunc aFunc(*pDocShell);
@@ -673,12 +673,12 @@ void SAL_CALL ScNamedRangesObj::addNewByScopeName( const rtl::OUString& aScopeNa
 {
        ScUnoGuard aGuard;
        SCTAB scope = MAXTABCOUNT;
-       if (aScopeName.getLength() != 0 && pDocShell && 
+       if (aScopeName.getLength() != 0 && pDocShell &&
 		          !pDocShell->GetDocument()->GetTable( String(aScopeName), scope ) )
            throw uno::RuntimeException();
        ImplAddNewByScopeAndName(scope, aRangeName, aContent, aPosition, nUnoType);
-		
-		
+
+
 }
 
 void SAL_CALL ScNamedRangesObj::addNewFromTitles( const table::CellRangeAddress& aSource,
@@ -738,7 +738,7 @@ void SAL_CALL ScNamedRangesObj::removeByName( const rtl::OUString& aName )
 												throw(uno::RuntimeException)
 {
      ScUnoGuard aGuard;
-     ImplRemoveByScopeAndName(MAXTABCOUNT, aName);	
+     ImplRemoveByScopeAndName(MAXTABCOUNT, aName);
 }
 
 
@@ -747,10 +747,10 @@ void SAL_CALL ScNamedRangesObj::removeByScopeName( const ::rtl::OUString& aScope
 {
        ScUnoGuard aGuard;
        SCTAB scope = MAXTABCOUNT;
-	if (aScopeName.getLength() != 0 && pDocShell && 
+	if (aScopeName.getLength() != 0 && pDocShell &&
 		                 !pDocShell->GetDocument()->GetTable( String(aScopeName), scope ))
            throw uno::RuntimeException();
-	ImplRemoveByScopeAndName(scope, aRangeName);	
+	ImplRemoveByScopeAndName(scope, aRangeName);
 }
 
 
@@ -929,8 +929,8 @@ sal_Bool SAL_CALL ScNamedRangesObj::hasByScopeName( const ::rtl::OUString& aScop
 	{
 	       SCTAB scope = MAXTABCOUNT;
 	       if (aScopeName.getLength() != 0 && !pDocShell->GetDocument()->GetTable( String(aScopeName), scope ) )
-	           return sal_False; 
-			
+	           return sal_False;
+
 		ScRangeName* pNames = pDocShell->GetDocument()->GetRangeName();
 		if (pNames)
 		{

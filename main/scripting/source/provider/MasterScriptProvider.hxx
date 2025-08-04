@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -47,7 +47,7 @@ namespace func_provider
 
  typedef ::cppu::WeakImplHelper5<
      css::script::provider::XScriptProvider,
-     css::script::browse::XBrowseNode, css::lang::XServiceInfo, 
+     css::script::browse::XBrowseNode, css::lang::XServiceInfo,
      css::lang::XInitialization,
      css::container::XNameContainer > t_helper;
 
@@ -65,13 +65,13 @@ public:
         throw( css::uno::RuntimeException );
 
     // XBrowseNode implementation
-    virtual ::rtl::OUString SAL_CALL getName() 
+    virtual ::rtl::OUString SAL_CALL getName()
         throw ( css::uno::RuntimeException );
-    virtual css::uno::Sequence< css::uno::Reference< css::script::browse::XBrowseNode > > SAL_CALL getChildNodes() 
+    virtual css::uno::Sequence< css::uno::Reference< css::script::browse::XBrowseNode > > SAL_CALL getChildNodes()
         throw ( css::uno::RuntimeException );
-    virtual sal_Bool SAL_CALL hasChildNodes() 
+    virtual sal_Bool SAL_CALL hasChildNodes()
         throw ( css::uno::RuntimeException );
-    virtual sal_Int16 SAL_CALL getType() 
+    virtual sal_Int16 SAL_CALL getType()
         throw ( css::uno::RuntimeException );
     // XNameContainer
     virtual void SAL_CALL insertByName( const ::rtl::OUString& aName, const css::uno::Any& aElement ) throw ( css::lang::IllegalArgumentException, css::container::ElementExistException, css::lang::WrappedTargetException, css::uno::RuntimeException);
@@ -95,13 +95,13 @@ public:
     // XScriptProvider implementation
     virtual css::uno::Reference < css::script::provider::XScript > SAL_CALL
         getScript( const ::rtl::OUString& scriptURI )
-        throw( css::script::provider::ScriptFrameworkErrorException, 
+        throw( css::script::provider::ScriptFrameworkErrorException,
                css::uno::RuntimeException );
 
     /**
      *  XInitialise implementation
-     *  
-     * @param args expected to contain a single ::rtl::OUString 
+     *
+     * @param args expected to contain a single ::rtl::OUString
      * containing the URI
      */
     virtual void SAL_CALL initialize( const css::uno::Sequence < css::uno::Any > & args )
@@ -109,7 +109,7 @@ public:
 
     // Public method to return all Language Providers in this MasterScriptProviders
     // context.
-    css::uno::Sequence< css::uno::Reference< css::script::provider::XScriptProvider > > SAL_CALL 
+    css::uno::Sequence< css::uno::Reference< css::script::provider::XScriptProvider > > SAL_CALL
         getAllProviders() throw ( css::uno::RuntimeException );
 
     bool isPkgProvider() { return m_bIsPkgMSP; }
@@ -122,7 +122,7 @@ private:
     void  createPkgProvider();
     bool  isValid();
     ::rtl::OUString getURLForModel();
-    const css::uno::Sequence< ::rtl::OUString >& getProviderNames(); 
+    const css::uno::Sequence< ::rtl::OUString >& getProviderNames();
 
     ProviderCache* providerCache();
     /* to obtain other services if needed */
@@ -133,14 +133,14 @@ private:
     css::uno::Sequence< css::uno::Any >                             m_sAargs;
     ::rtl::OUString                                                 m_sNodeName;
 
-    // This component supports XInitialization, it can be created 
+    // This component supports XInitialization, it can be created
     // using createInstanceXXX() or createInstanceWithArgumentsXXX using
     // the service Manager.
     // Need to detect proper initialisation and validity
     // for the object, so m_bIsValid indicates that the object is valid is set in ctor
     // in case of createInstanceWithArgumentsXXX() called m_bIsValid is set to reset
     // and then set to true when initialisation is complete
-    bool m_bIsValid;    
+    bool m_bIsValid;
     // m_bInitialised ensure initialisation only takes place once.
     bool m_bInitialised;
     bool m_bIsPkgMSP;

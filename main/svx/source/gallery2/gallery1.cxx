@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -333,7 +333,7 @@ void Gallery::ImplLoadSubDirs( const INetURLObject& rBaseURL, sal_Bool& rbDirIsR
                 static const ::rtl::OUString s_sIsReadOnly(RTL_CONSTASCII_USTRINGPARAM("IsReadOnly"));
                 static const ::rtl::OUString s_sSDG_EXT(RTL_CONSTASCII_USTRINGPARAM("sdg"));
                 static const ::rtl::OUString s_sSDV_EXT(RTL_CONSTASCII_USTRINGPARAM("sdv"));
-                
+
 				while( xResultSet->next() )
 				{
 					INetURLObject aThmURL( xContentAccess->queryContentIdentifierString() );
@@ -342,7 +342,7 @@ void Gallery::ImplLoadSubDirs( const INetURLObject& rBaseURL, sal_Bool& rbDirIsR
 					{
 						INetURLObject	aSdgURL( aThmURL); aSdgURL.SetExtension( s_sSDG_EXT );
 						INetURLObject	aSdvURL( aThmURL ); aSdvURL.SetExtension( s_sSDV_EXT );
-						
+
 						OUString		aTitle;
 						sal_Bool		bReadOnly = sal_False;
 
@@ -934,5 +934,5 @@ void Gallery::ReleaseTheme( GalleryTheme* pTheme, SfxListener& rListener )
 	}
 }
 
-sal_Bool GalleryThemeEntry::IsDefault() const 
+sal_Bool GalleryThemeEntry::IsDefault() const
 { return( ( nId > 0 ) && ( nId != ( RID_GALLERYSTR_THEME_MYTHEME - RID_GALLERYSTR_THEME_START ) ) ); }

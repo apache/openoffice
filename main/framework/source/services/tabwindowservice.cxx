@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -99,7 +99,7 @@ DEFINE_INIT_SERVICE                 (   TabWindowService,
                                             m_aTransactionManager.setWorkingMode( E_WORK );
                                         }
                                     )
-                                    
+
 //*****************************************************************************************************************
 //	constructor
 //*****************************************************************************************************************
@@ -288,7 +288,7 @@ void SAL_CALL TabWindowService::dispose()
 
 	if (m_pTabWin)
 	    m_pTabWin->RemoveEventListener( LINK( this, TabWindowService, EventListener ) );
-	
+
     m_pTabWin = NULL;
     m_xTabWin.clear();
 }
@@ -363,13 +363,13 @@ IMPL_LINK( TabWindowService, EventListener, VclSimpleEvent*, pEvent )
 
     if ( !pEvent && !pEvent->ISA(VclWindowEvent))
         return 0;
-    
+
     sal_uLong           nEventId = pEvent->GetId();
     VclWindowEvent* pWinEvt  = static_cast< VclWindowEvent* >(pEvent);
 
     css::uno::Reference< css::uno::XInterface > xThis ( static_cast< ::cppu::OWeakObject* >(this), css::uno::UNO_QUERY );
     css::lang::EventObject aEvent( xThis );
-    
+
     if (nEventId == VCLEVENT_OBJECT_DYING)
     {
         m_lListener.disposeAndClear (aEvent);
@@ -384,14 +384,14 @@ IMPL_LINK( TabWindowService, EventListener, VclSimpleEvent*, pEvent )
     ::cppu::OInterfaceContainerHelper* pContainer = m_lListener.getContainer(::getCppuType((const css::uno::Reference< css::awt::XTabListener >*) NULL));
     if ( ! pContainer)
         return 0;
-    
+
     ::cppu::OInterfaceIteratorHelper pIterator(*pContainer);
     while (pIterator.hasMoreElements())
     {
         try
         {
             css::awt::XTabListener* pListener = (css::awt::XTabListener*)pIterator.next();
-        
+
             switch (nEventId)
             {
                 case VCLEVENT_TABPAGE_ACTIVATE :
@@ -465,16 +465,16 @@ FwkTabWindow* TabWindowService::mem_TabWin ()
     if ( ! m_xTabWin.is ())
     {
         Window* pFakeParent = dynamic_cast< Window* >(Application::GetDefaultDevice ());
-    
+
         m_pTabWin = new FwkTabWindow (pFakeParent);
         m_xTabWin = VCLUnoHelper::GetInterface (m_pTabWin);
-    
+
         m_pTabWin->AddEventListener( LINK( this, TabWindowService, EventListener ) );
     }
 
     if (m_xTabWin.is ())
         pWin = m_pTabWin;
-        
+
     return pWin;
 }
 

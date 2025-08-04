@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,7 +49,7 @@ AstDeclaration* SAL_CALL scopeAsDecl(AstScope* pScope)
 {
 	if (pScope == NULL) return NULL;
 
-	switch( pScope->getScopeNodeType() ) 
+	switch( pScope->getScopeNodeType() )
 	{
 		case NT_service:
 		case NT_singleton:
@@ -74,13 +74,13 @@ AstDeclaration* SAL_CALL scopeAsDecl(AstScope* pScope)
 		default:
 			return NULL;
 	}
-}	
+}
 
 AstScope* SAL_CALL declAsScope(AstDeclaration* pDecl)
 {
 	if (pDecl == NULL) return NULL;
 
-	switch(pDecl->getNodeType()) 
+	switch(pDecl->getNodeType())
 	{
 		case NT_interface:
 			return (AstInterface*)(pDecl);
@@ -105,7 +105,7 @@ AstScope* SAL_CALL declAsScope(AstDeclaration* pDecl)
 		default:
 			return NULL;
    }
-}	
+}
 
 static void SAL_CALL predefineXInterface(AstModule* pRoot)
 {
@@ -117,7 +117,7 @@ static void SAL_CALL predefineXInterface(AstModule* pRoot)
     pParentScope = pModule;
     pModule = new AstModule(OString("sun"), pParentScope);
     pModule->setPredefined(true);
-    pParentScope->addDeclaration(pModule);                            
+    pParentScope->addDeclaration(pModule);
     pParentScope = pModule;
     pModule = new AstModule(OString("star"), pParentScope);
     pModule->setPredefined(true);
@@ -148,7 +148,7 @@ static void SAL_CALL predefineXInterface(AstModule* pRoot)
     pOp = new AstOperation(1, (AstType*)(pRoot->lookupPrimitiveType(ET_void)),
                                          OString("acquire"), pInterface);
     pInterface->addMember(pOp);
-    
+
     // define XInterface::release
     pOp = new AstOperation(1, (AstType*)(pRoot->lookupPrimitiveType(ET_void)),
                                          OString("release"), pInterface);
@@ -162,7 +162,7 @@ static void SAL_CALL initializePredefinedTypes(AstModule* pRoot)
 	{
 		 pPredefined = new AstBaseType(ET_long, OString("long"), pRoot);
 		 pRoot->addDeclaration(pPredefined);
-		 
+
 		 pPredefined = new AstBaseType(ET_ulong, OString("unsigned long"), pRoot);
 		 pRoot->addDeclaration(pPredefined);
 
@@ -171,37 +171,37 @@ static void SAL_CALL initializePredefinedTypes(AstModule* pRoot)
 
 		 pPredefined = new AstBaseType(ET_uhyper, OString("unsigned hyper"), pRoot);
 		 pRoot->addDeclaration(pPredefined);
-		 
+
 		 pPredefined = new AstBaseType(ET_short, OString("short"), pRoot);
 		 pRoot->addDeclaration(pPredefined);
-		 
+
 		 pPredefined = new AstBaseType(ET_ushort, OString("unsigned short"), pRoot);
 		 pRoot->addDeclaration(pPredefined);
-		 
+
 		 pPredefined = new AstBaseType(ET_float, OString("float"), pRoot);
 		 pRoot->addDeclaration(pPredefined);
-		 
+
 		 pPredefined = new AstBaseType(ET_double, OString("double"), pRoot);
 		 pRoot->addDeclaration(pPredefined);
-		 
+
 		 pPredefined = new AstBaseType(ET_char, OString("char"), pRoot);
 		 pRoot->addDeclaration(pPredefined);
-		 
+
 		 pPredefined = new AstBaseType(ET_byte, OString("byte"), pRoot);
 		 pRoot->addDeclaration(pPredefined);
-		 
+
 		 pPredefined = new AstBaseType(ET_any, OString("any"), pRoot);
 		 pRoot->addDeclaration(pPredefined);
 
 		 pPredefined = new AstBaseType(ET_string, OString("string"), pRoot);
 		 pRoot->addDeclaration(pPredefined);
-		 
+
 		 pPredefined = new AstBaseType(ET_type, OString("type"), pRoot);
 		 pRoot->addDeclaration(pPredefined);
-		 
+
 		 pPredefined = new AstBaseType(ET_boolean, OString("boolean"), pRoot);
 		 pRoot->addDeclaration(pPredefined);
-		 
+
 		 pPredefined = new AstBaseType(ET_void, OString("void"), pRoot);
 		 pRoot->addDeclaration(pPredefined);
 	}
@@ -220,9 +220,9 @@ Idlc::Idlc(Options* pOptions)
 	m_pScopes = new AstStack();
 	// init root object after construction
 	m_pRoot = NULL;
-	m_pErrorHandler = new ErrorHandler();		
+	m_pErrorHandler = new ErrorHandler();
 	m_bGenerateDoc = m_pOptions->isValid("-C");
-}	
+}
 
 Idlc::~Idlc()
 {
@@ -232,13 +232,13 @@ Idlc::~Idlc()
 		delete m_pScopes;
 	if (m_pErrorHandler)
 		delete m_pErrorHandler;
-}	
+}
 
 void Idlc::init()
 {
 	if ( m_pRoot )
 		delete m_pRoot;
-		
+
 	m_pRoot = new AstModule(NT_root, OString(), NULL);
 
 	// push the root node on the stack
@@ -246,7 +246,7 @@ void Idlc::init()
 	initializePredefinedTypes(m_pRoot);
     predefineXInterface(m_pRoot);
 }
-	
+
 void Idlc::reset()
 {
 	m_bIsDocValid = sal_False;
@@ -262,31 +262,31 @@ void Idlc::reset()
 	m_mainFileName = OString();
 	m_realFileName = OString();
 	m_documentation = OString();
-	
+
 	m_pScopes->clear();
 	if ( m_pRoot)
 		delete m_pRoot;
 
 	m_pRoot = new AstModule(NT_root, OString(), NULL);
-	
+
 	// push the root node on the stack
 	m_pScopes->push(m_pRoot);
-	initializePredefinedTypes(m_pRoot);	
+	initializePredefinedTypes(m_pRoot);
 }
 
 sal_Bool Idlc::isDocValid()
-{ 
+{
 	if ( m_bGenerateDoc )
-		return m_bIsDocValid; 
+		return m_bIsDocValid;
 	return sal_False;
 }
-	 
+
 static Idlc* pStaticIdlc = NULL;
 
 Idlc* SAL_CALL idlc()
 {
 	return pStaticIdlc;
-}	
+}
 
 Idlc* SAL_CALL setIdlc(Options* pOptions)
 {
@@ -297,7 +297,7 @@ Idlc* SAL_CALL setIdlc(Options* pOptions)
 	pStaticIdlc = new Idlc(pOptions);
 	pStaticIdlc->init();
 	return pStaticIdlc;
-}	
+}
 
 AstDeclaration const * resolveTypedefs(AstDeclaration const * type) {
     if (type != 0) {

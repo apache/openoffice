@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,8 +45,8 @@ OSplitterView::OSplitterView(Window* _pParent,sal_Bool _bVertical) : Window(_pPa
 	,m_pRight(NULL)
 	,m_bVertical(_bVertical)
 {
-	DBG_CTOR(OSplitterView,NULL);	
-	ImplInitSettings( sal_True, sal_True, sal_True );	
+	DBG_CTOR(OSplitterView,NULL);
+	ImplInitSettings( sal_True, sal_True, sal_True );
 }
 // -----------------------------------------------------------------------------
 OSplitterView::~OSplitterView()
@@ -58,7 +58,7 @@ OSplitterView::~OSplitterView()
 IMPL_LINK( OSplitterView, SplitHdl, Splitter*, /*pSplit*/ )
 {
 	OSL_ENSURE(m_pSplitter, "Splitter is NULL!");
-	if ( m_bVertical ) 
+	if ( m_bVertical )
 	{
 		long nPosY = m_pSplitter->GetPosPixel().Y();
 		m_pSplitter->SetPosPixel( Point( m_pSplitter->GetSplitPosPixel(), nPosY ) );
@@ -138,9 +138,9 @@ void OSplitterView::Resize()
 	{
 		aSplitPos	= m_pSplitter->GetPosPixel();
 		aSplitSize	= m_pSplitter->GetOutputSizePixel();
-		if ( m_bVertical ) 
+		if ( m_bVertical )
 		{
-			// calculate the splitter pos and size			
+			// calculate the splitter pos and size
 			aSplitPos.Y() = aPlaygroundPos.Y();
 			aSplitSize.Height() = aPlaygroundSize.Height();
 
@@ -187,7 +187,7 @@ void OSplitterView::Resize()
 
 	if ( m_pRight )
 	{
-		if ( m_bVertical ) 
+		if ( m_bVertical )
 			m_pRight->SetPosSizePixel( aSplitPos.X() + aSplitSize.Width(), aPlaygroundPos.Y(),
 								   aPlaygroundSize.Width() - aSplitSize.Width() - aSplitPos.X(), aPlaygroundSize.Height());
 		else

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -40,12 +40,12 @@ namespace sw { namespace mark
 #endif
             // IDocumentMarkAccess
             virtual ::sw::mark::IMark* makeMark(const SwPaM& rPaM, const ::rtl::OUString& rName, IDocumentMarkAccess::MarkType eMark);
-        
-            virtual sw::mark::IFieldmark* makeFieldBookmark( const SwPaM& rPaM, 
-                const rtl::OUString& rName, 
+
+            virtual sw::mark::IFieldmark* makeFieldBookmark( const SwPaM& rPaM,
+                const rtl::OUString& rName,
                 const rtl::OUString& rType);
-            virtual sw::mark::IFieldmark* makeNoTextFieldBookmark( const SwPaM& rPaM, 
-                const rtl::OUString& rName, 
+            virtual sw::mark::IFieldmark* makeNoTextFieldBookmark( const SwPaM& rPaM,
+                const rtl::OUString& rName,
                 const rtl::OUString& rType);
 
             virtual ::sw::mark::IMark* getMarkForTxtNode(const SwTxtNode& rTxtNode, IDocumentMarkAccess::MarkType eMark);
@@ -67,13 +67,13 @@ namespace sw { namespace mark
             virtual void deleteMark(const ::sw::mark::IMark* const pMark);
             virtual void clearAllMarks();
 
-            // marks 
+            // marks
             virtual const_iterator_t getAllMarksBegin() const;
             virtual const_iterator_t getAllMarksEnd() const;
             virtual sal_Int32 getAllMarksCount() const;
             virtual const_iterator_t findMark(const ::rtl::OUString& rName) const;
 
-            // bookmarks 
+            // bookmarks
             virtual const_iterator_t getBookmarksBegin() const;
             virtual const_iterator_t getBookmarksEnd() const;
             virtual sal_Int32 getBookmarksCount() const;

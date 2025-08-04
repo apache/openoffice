@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -83,7 +83,7 @@ class OInputStream : public WeakImplHelper1 < XInputStream >
 {
 	public:
 		OInputStream( const Sequence< sal_Int8 >&seq ) : m_seq( seq ), nPos( 0 ) {}
-		
+
 		virtual sal_Int32 SAL_CALL readBytes(
 			Sequence< sal_Int8 >& aData ,
 			sal_Int32 nBytesToRead
@@ -194,7 +194,7 @@ class OUriBinding : public WeakImplHelper1 < ::com::sun::star::xml::crypto::XUri
 
 		virtual void SAL_CALL setUriBinding(
 			const ::rtl::OUString& aUri ,
-			const ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream >& aInputStream 
+			const ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream >& aInputStream
 		) throw( ::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException ) {
 			m_vUris.push_back( aUri ) ;
 			m_vStreams.push_back( aInputStream ) ;
@@ -210,7 +210,7 @@ class OUriBinding : public WeakImplHelper1 < ::com::sun::star::xml::crypto::XUri
 					break;
 				}
 			}
-										
+
 			return xInputStream;
 		}
 

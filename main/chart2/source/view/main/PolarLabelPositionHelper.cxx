@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -62,7 +62,7 @@ awt::Point PolarLabelPositionHelper::getLabelScreenPositionAndAlignmentForLogicV
 {
     double fUnitCircleAngleDegree = m_pPosHelper->transformToAngleDegree( fLogicValueOnAngleAxis );
     double fUnitCircleRadius = m_pPosHelper->transformToRadius( fLogicValueOnRadiusAxis );
-    
+
     return getLabelScreenPositionAndAlignmentForUnitCircleValues(
            rAlignment, ::com::sun::star::chart::DataLabelPlacement::OUTSIDE
            , fUnitCircleAngleDegree, 0.0
@@ -78,7 +78,7 @@ awt::Point PolarLabelPositionHelper::getLabelScreenPositionAndAlignmentForUnitCi
 {
     bool bCenter = (nLabelPlacement != ::com::sun::star::chart::DataLabelPlacement::OUTSIDE)
                 && (nLabelPlacement != ::com::sun::star::chart::DataLabelPlacement::INSIDE);
-    
+
     double fAngleDegree = fUnitCircleStartAngleDegree + fUnitCircleWidthAngleDegree/2.0;
     double fRadius = 0.0;
     if( !bCenter ) //e.g. for pure pie chart(one ring only) or for angle axis of polyar coordinate system
@@ -88,7 +88,7 @@ awt::Point PolarLabelPositionHelper::getLabelScreenPositionAndAlignmentForUnitCi
 
     awt::Point aRet( this->transformSceneToScreenPosition(
         m_pPosHelper->transformUnitCircleToScene( fAngleDegree, fRadius, fLogicZ+0.5 ) ) );
-    
+
     if(3==m_nDimensionCount && nLabelPlacement == ::com::sun::star::chart::DataLabelPlacement::OUTSIDE)
     {
         //check whether the upper or the downer edge is more distant from the center

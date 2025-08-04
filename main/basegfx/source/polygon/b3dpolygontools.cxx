@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -246,7 +246,7 @@ namespace basegfx
 		{
 			double fRetval(0.0);
 			const sal_uInt32 nPointCount(rCandidate.count());
-			
+
 			if(nPointCount > 1L)
 			{
 				const sal_uInt32 nLoopCount(rCandidate.isClosed() ? nPointCount : nPointCount - 1L);
@@ -425,7 +425,7 @@ namespace basegfx
                             // new split is inside edge, create and append snippet [fLastDotDashMovingLength, fDotDashMovingLength]
                             const bool bHandleLine(bIsLine && pLineTarget);
                             const bool bHandleGap(!bIsLine && pGapTarget);
-                            
+
                             if(bHandleLine || bHandleGap)
                             {
                                 if(!aSnippet.count())
@@ -456,7 +456,7 @@ namespace basegfx
                         // append snippet [fLastDotDashMovingLength, fEdgeLength]
                         const bool bHandleLine(bIsLine && pLineTarget);
                         const bool bHandleGap(!bIsLine && pGapTarget);
-                                       
+
                         if(bHandleLine || bHandleGap)
                         {
                             if(!aSnippet.count())
@@ -672,7 +672,7 @@ namespace basegfx
 						if(bChangeY)
 						{
 							aTexCoor.setY(fOne);
-							
+
 							if(bChangeX)
 							{
 								bPolarPoints = true;
@@ -682,8 +682,8 @@ namespace basegfx
 					else
 					{
 						double fX(fOne - ((atan2(aVector.getZ(), aVector.getX()) + F_PI) / F_2PI));
-						
-						// correct cartesinan point coordiante dependent from center value
+
+						// correct cartesian point coordinate dependent from center value
 						if(fX > fXCenter + 0.5)
 						{
 							fX -= fOne;
@@ -826,7 +826,7 @@ namespace basegfx
 		bool isInEpsilonRange(const B3DPolygon& rCandidate, const B3DPoint& rTestPosition, double fDistance)
 		{
 			const sal_uInt32 nPointCount(rCandidate.count());
-			
+
 			if(nPointCount)
 			{
                 const sal_uInt32 nEdgeCount(rCandidate.isClosed() ? nPointCount : nPointCount - 1L);
@@ -893,7 +893,7 @@ namespace basegfx
 					        {
 						        const B3DPoint aPreviousPoint(aCurrentPoint);
 						        aCurrentPoint = rCandidate.getB3DPoint(a);
-        						
+
 						        // cross-over in Z?
 						        const bool bCompZA(fTools::more(aPreviousPoint.getZ(), rPoint.getZ()));
 						        const bool bCompZB(fTools::more(aCurrentPoint.getZ(), rPoint.getZ()));
@@ -903,7 +903,7 @@ namespace basegfx
 							        // cross-over in Y?
 							        const bool bCompYA(fTools::more(aPreviousPoint.getY(), rPoint.getY()));
 							        const bool bCompYB(fTools::more(aCurrentPoint.getY(), rPoint.getY()));
-        						
+
 							        if(bCompYA == bCompYB)
 							        {
 								        if(bCompYA)
@@ -934,7 +934,7 @@ namespace basegfx
 					        {
 						        const B3DPoint aPreviousPoint(aCurrentPoint);
 						        aCurrentPoint = rCandidate.getB3DPoint(a);
-        						
+
 						        // cross-over in Z?
 						        const bool bCompZA(fTools::more(aPreviousPoint.getZ(), rPoint.getZ()));
 						        const bool bCompZB(fTools::more(aCurrentPoint.getZ(), rPoint.getZ()));
@@ -944,7 +944,7 @@ namespace basegfx
 							        // cross-over in X?
 							        const bool bCompXA(fTools::more(aPreviousPoint.getX(), rPoint.getX()));
 							        const bool bCompXB(fTools::more(aCurrentPoint.getX(), rPoint.getX()));
-        						
+
 							        if(bCompXA == bCompXB)
 							        {
 								        if(bCompXA)
@@ -975,7 +975,7 @@ namespace basegfx
 					        {
 						        const B3DPoint aPreviousPoint(aCurrentPoint);
 						        aCurrentPoint = rCandidate.getB3DPoint(a);
-        						
+
 						        // cross-over in Y?
 						        const bool bCompYA(fTools::more(aPreviousPoint.getY(), rPoint.getY()));
 						        const bool bCompYB(fTools::more(aCurrentPoint.getY(), rPoint.getY()));
@@ -985,7 +985,7 @@ namespace basegfx
 							        // cross-over in X?
 							        const bool bCompXA(fTools::more(aPreviousPoint.getX(), rPoint.getX()));
 							        const bool bCompXB(fTools::more(aCurrentPoint.getX(), rPoint.getX()));
-        						
+
 							        if(bCompXA == bCompXB)
 							        {
 								        if(bCompXA)
@@ -1054,7 +1054,7 @@ namespace basegfx
 					const double fZero(0.0);
 					const double fOne(1.0);
                     double fParamTestOnCurr(0.0);
-					
+
                     if(aEdgeVector.getX() > aEdgeVector.getY())
                     {
                         if(aEdgeVector.getX() > aEdgeVector.getZ())
@@ -1132,7 +1132,7 @@ namespace basegfx
 				{
 					const B3DVector aCompareEdge(rPlanePoint - rEdgeStart);
 					const double fScalarCompare(rPlaneNormal.scalar(aCompareEdge));
-	                
+
 					fCut = fScalarCompare / fScalarEdge;
 					return true;
 				}
@@ -1156,7 +1156,7 @@ namespace basegfx
                     return getCutBetweenLineAndPlane(aPlaneNormal, aPointOnPlane, rEdgeStart, rEdgeEnd, fCut);
                 }
             }
-            
+
             return false;
         }
 
@@ -1200,7 +1200,7 @@ namespace basegfx
 
 			if(nPointCount > 1)
 			{
-				// Start by copying the source polygon to get a writeable copy. The closed state is 
+				// Start by copying the source polygon to get a writeable copy. The closed state is
 				// copied by aRetval's initialisation, too, so no need to copy it in this method
 				B3DPolygon aRetval(rCandidate);
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -87,7 +87,7 @@ public class UnoControlDialog extends TestCase {
     * for Control, adds to Dialog a button, sets its size and
     * sets the dialog visible. <p>
     */
-    public synchronized TestEnvironment createTestEnvironment(TestParameters Param, 
+    public synchronized TestEnvironment createTestEnvironment(TestParameters Param,
                                                               PrintWriter log) {
         XInterface oObj = null;
         XMultiServiceFactory xMSF = (XMultiServiceFactory) Param.getMSF();
@@ -112,23 +112,23 @@ public class UnoControlDialog extends TestCase {
 
         try {
             dlgModel = (XControlModel) UnoRuntime.queryInterface(
-                               XControlModel.class, 
+                               XControlModel.class,
                                xMSF.createInstance(
                                        "com.sun.star.awt.UnoControlDialogModel"));
 
             XControl dlgControl = (XControl) UnoRuntime.queryInterface(
-                                          XControl.class, 
+                                          XControl.class,
                                           xMSF.createInstance(
                                                   "com.sun.star.awt.UnoControlDialog"));
 
             dlgControl.setModel(dlgModel);
 
             XControlModel butModel = (XControlModel) UnoRuntime.queryInterface(
-                                             XControlModel.class, 
+                                             XControlModel.class,
                                              xMSF.createInstance(
                                                      "com.sun.star.awt.UnoControlButtonModel"));
 
-            butControl = (XControl) UnoRuntime.queryInterface(XControl.class, 
+            butControl = (XControl) UnoRuntime.queryInterface(XControl.class,
                                                               xMSF.createInstance(
                                                                       "com.sun.star.awt.UnoControlButton"));
 
@@ -137,34 +137,34 @@ public class UnoControlDialog extends TestCase {
 
             // creating additional controls for XUnoControlContainer
             tabControl1 = (XTabController) UnoRuntime.queryInterface(
-                                  XTabController.class, 
+                                  XTabController.class,
                                   xMSF.createInstance(
                                           "com.sun.star.awt.TabController"));
 
             tabControl2 = (XTabController) UnoRuntime.queryInterface(
-                                  XTabController.class, 
+                                  XTabController.class,
                                   xMSF.createInstance(
                                           "com.sun.star.awt.TabController"));
 
 
             // creating additional controls for XControlContainer
             butModel = (XControlModel) UnoRuntime.queryInterface(
-                               XControlModel.class, 
+                               XControlModel.class,
                                xMSF.createInstance(
                                        "com.sun.star.awt.UnoControlButtonModel"));
 
-            butControl1 = (XControl) UnoRuntime.queryInterface(XControl.class, 
+            butControl1 = (XControl) UnoRuntime.queryInterface(XControl.class,
                                                                xMSF.createInstance(
                                                                        "com.sun.star.awt.UnoControlButton"));
 
             butControl1.setModel(butModel);
 
             butModel = (XControlModel) UnoRuntime.queryInterface(
-                               XControlModel.class, 
+                               XControlModel.class,
                                xMSF.createInstance(
                                        "com.sun.star.awt.UnoControlButtonModel"));
 
-            butControl2 = (XControl) UnoRuntime.queryInterface(XControl.class, 
+            butControl2 = (XControl) UnoRuntime.queryInterface(XControl.class,
                                                                xMSF.createInstance(
                                                                        "com.sun.star.awt.UnoControlButton"));
 
@@ -173,7 +173,7 @@ public class UnoControlDialog extends TestCase {
             ctrlCont = (XControlContainer) UnoRuntime.queryInterface(
                                XControlContainer.class, dlgControl);
 
-            xWinDlg = (XWindow) UnoRuntime.queryInterface(XWindow.class, 
+            xWinDlg = (XWindow) UnoRuntime.queryInterface(XWindow.class,
                                                           dlgControl);
 
             xWinDlg.setVisible(true);

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,16 +8,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
@@ -29,7 +29,7 @@
   <property name="classes.dir"            value="classes"/>
   <property name="source.dir"             location="${basedir}/src/${name}"/>
   <property name="build.dir"              location="${out}/misc"/>
-  <property name="dist.dir"               location="${out}/bin"/>  
+  <property name="dist.dir"               location="${out}/bin"/>
   <property name="compile.debug"          value="true"/>
   <property name="compile.optimize"       value="false"/>
   <property name="lib.dir"                location="{$basedir}/lib"/>
@@ -54,7 +54,7 @@
     <mkdir dir="${build.dir}"/>
     <mkdir dir="${build.dir}/${classes.dir}"/>
     <mkdir dir="${build.dir}/${classes.dir}/${name}"/>
-    <mkdir dir="${dist.dir}"/>        
+    <mkdir dir="${dist.dir}"/>
   </target>
 
   <!-- show information about current sub target in recursive builds -->
@@ -88,18 +88,18 @@
     <copy todir="${build.dir}/${classes.dir}/${name}/org/openoffice/setup/Icons">
       <fileset dir="${source.dir}/org/openoffice/setup/Icons" includes="*.gif,*.png"/>
     </copy>
-  </target>  
+  </target>
 
   <target name="jar-javainstaller" depends="compile-javainstaller" unless="jarFile.uptodate">
     <jar file="${dist.dir}/${name}.jar">
         <fileset dir="${build.dir}/${classes.dir}/${name}" includes="**/*"/>
         <manifest>
-          <attribute name="Main-Class" value="org.openoffice.setup.Main"/> 
-        </manifest>         
+          <attribute name="Main-Class" value="org.openoffice.setup.Main"/>
+        </manifest>
     </jar>
   </target>
 
-  <!-- CLEAN UP OUTPUT TREES -->    
+  <!-- CLEAN UP OUTPUT TREES -->
   <target name="clean" unless="jarFile.uptodate">
    <!-- <delete dir="${build.dir}"/> -->
   </target>
@@ -110,12 +110,12 @@
     <java jar="${dist.dir}/${name}.jar" fork="true"/>
      <!-- </java> -->
   </target>
-  
+
   <target name="debug" depends="jar-javainstaller">
     <echo message="Starting for debugging: java -jar ${dist.dir}/${name}.jar" />
     <java jar="${dist.dir}/${name}.jar" fork="true"/>
-     <!-- </java> -->  
+     <!-- </java> -->
 </target>
-  
-     
+
+
 </project>

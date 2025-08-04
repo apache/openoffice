@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -52,7 +52,7 @@ ScVbaFont::ScVbaFont(
 {
 }
 
-SfxItemSet*  
+SfxItemSet*
 ScVbaFont::GetDataSet()
 {
     return mpRangeObj ? excel::ScVbaCellRangeAccess::GetDataSet( mpRangeObj ) : 0;
@@ -73,7 +73,7 @@ uno::Reference< beans::XPropertySet > lcl_TextProperties( uno::Reference< table:
 void SAL_CALL
 ScVbaFont::setSuperscript( const uno::Any& aValue ) throw ( uno::RuntimeException )
 {
-	// #FIXEME create some sort of generic get/set code where 
+	// #FIXEME create some sort of generic get/set code where
 	// you can pass a functor
 	// get/set - Super/sub script code is exactly the same
 	// except for the call applied at each cell position
@@ -312,7 +312,7 @@ ScVbaFont::setFontStyle( const uno::Any& aValue ) throw( uno::RuntimeException )
         rtl::OUString aToken = aStyles.getToken( 0, ' ', nIndex );
         aTokens.push_back( aToken );
     }while( nIndex >= 0 );
-    
+
     std::vector< rtl::OUString >::iterator it;
     for( it = aTokens.begin(); it != aTokens.end(); ++it )
     {
@@ -336,7 +336,7 @@ ScVbaFont::getFontStyle() throw ( uno::RuntimeException )
     getBold() >>= bValue;
     if( bValue )
         aStyles.appendAscii("Bold");
-    
+
     getItalic() >>= bValue;
     if( bValue )
     {

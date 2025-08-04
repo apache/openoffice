@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -129,11 +129,11 @@ public:
     bool mbIsLeaving;
 
     EventDescriptor (
-        sal_uInt32 nEventType, 
+        sal_uInt32 nEventType,
         const MouseEvent& rEvent,
         SlideSorter& rSlideSorter);
     EventDescriptor (
-        sal_uInt32 nEventType, 
+        sal_uInt32 nEventType,
         const AcceptDropEvent& rEvent,
         const sal_Int8 nDragAction,
         SlideSorter& rSlideSorter);
@@ -210,7 +210,7 @@ protected:
     virtual bool HandleUnprocessedEvent (EventDescriptor& rDescriptor);
 
     void ReprocessEvent (EventDescriptor& rDescriptor);
-    
+
 private:
     const bool mbIsMouseOverIndicatorAllowed;
 };
@@ -338,7 +338,7 @@ public:
     virtual void Abort (void);
 
     virtual SelectionFunction::Mode GetMode (void) const;
-    
+
 protected:
     virtual bool ProcessButtonDownEvent (SelectionFunction::EventDescriptor& rDescriptor);
     virtual bool ProcessButtonUpEvent (SelectionFunction::EventDescriptor& rDescriptor);
@@ -358,7 +358,7 @@ SelectionFunction::SelectionFunction (
     SfxRequest& rRequest)
     : FuPoor (
         rSlideSorter.GetViewShell(),
-        rSlideSorter.GetContentWindow().get(), 
+        rSlideSorter.GetContentWindow().get(),
         &rSlideSorter.GetView(),
         rSlideSorter.GetModel().GetDocument(),
         rRequest),
@@ -478,7 +478,7 @@ sal_Bool SelectionFunction::KeyInput (const KeyEvent& rEvent)
             }
             break;
         }
-        
+
         case KEY_TAB:
             if ( ! rFocusManager.IsFocusShowing())
             {
@@ -577,7 +577,7 @@ sal_Bool SelectionFunction::KeyInput (const KeyEvent& rEvent)
                     mrSlideSorter.GetController().GetFocusManager().GetFocusedPageDescriptor());
             }
             break;
-            
+
         default:
             break;
 	}
@@ -918,7 +918,7 @@ void SelectionFunction::ResetMouseAnchor (void)
 //===== EventDescriptor =======================================================
 
 SelectionFunction::EventDescriptor::EventDescriptor (
-    const sal_uInt32 nEventType, 
+    const sal_uInt32 nEventType,
     const MouseEvent& rEvent,
     SlideSorter& rSlideSorter)
     : maMousePosition(rEvent.GetPosPixel()),
@@ -953,7 +953,7 @@ SelectionFunction::EventDescriptor::EventDescriptor (
 
 
 SelectionFunction::EventDescriptor::EventDescriptor (
-    const sal_uInt32 nEventType, 
+    const sal_uInt32 nEventType,
     const AcceptDropEvent& rEvent,
     const sal_Int8 nDragAction,
     SlideSorter& rSlideSorter)
@@ -1007,7 +1007,7 @@ SelectionFunction::EventDescriptor::EventDescriptor (
         mpHitPage = pHitDescriptor->GetPage();
         mpHitDescriptor = pHitDescriptor;
     }
-    
+
     mnEventCode |= EncodeKeyEvent(rEvent) | EncodeState();
 }
 
@@ -1053,7 +1053,7 @@ sal_uInt32 SelectionFunction::EventDescriptor::EncodeMouseEvent (
     // page object.
     if (mbIsOverButton)
         nEventCode |= OVER_BUTTON;
-    
+
     return nEventCode;
 }
 
@@ -1147,16 +1147,16 @@ void SelectionFunction::ModeHandler::ProcessEvent (
         case BUTTON_UP:
             bIsProcessed = ProcessButtonUpEvent(rDescriptor);
             break;
-            
+
         case MOUSE_MOTION:
             bIsProcessed = ProcessMotionEvent(rDescriptor);
             break;
-            
+
         case MOUSE_DRAG:
             bIsProcessed = ProcessDragEvent(rDescriptor);
             break;
     }
-    
+
     if ( ! bIsProcessed)
         HandleUnprocessedEvent(rDescriptor);
 }
@@ -1193,7 +1193,7 @@ bool SelectionFunction::ModeHandler::ProcessMotionEvent (EventDescriptor& rDescr
     {
         mrSelectionFunction.SwitchToNormalMode();
         mrSlideSorter.GetView().SetPageUnderMouse(model::SharedPageDescriptor());
-        
+
         return true;
     }
     else
@@ -1362,7 +1362,7 @@ bool NormalModeHandler::ProcessButtonDownEvent (
             SetCurrentPage(rDescriptor.mpHitDescriptor);
             SwitchView(rDescriptor.mpHitDescriptor);
             break;
-                            
+
         case BUTTON_DOWN | LEFT_BUTTON | SINGLE_CLICK | OVER_SELECTED_PAGE | SHIFT_MODIFIER:
         case BUTTON_DOWN | LEFT_BUTTON | SINGLE_CLICK | OVER_UNSELECTED_PAGE | SHIFT_MODIFIER:
             // Range selection with the shift modifier.
@@ -1404,7 +1404,7 @@ bool NormalModeHandler::ProcessButtonDownEvent (
             // Do not change the selection.  Just adjust the insertion indicator.
             rDescriptor.mbMakeSelectionVisible = false;
             break;
-            
+
         case BUTTON_DOWN | RIGHT_BUTTON | SINGLE_CLICK | NOT_OVER_PAGE:
             // Remember the current selection so that when a multi selection
             // is started, we can restore the previous selection.
@@ -1418,7 +1418,7 @@ bool NormalModeHandler::ProcessButtonDownEvent (
             mrSlideSorter.GetModel().SaveCurrentSelection();
             DeselectAllPages();
             break;
-            
+
         default:
             return false;
     }
@@ -1454,7 +1454,7 @@ bool NormalModeHandler::ProcessButtonUpEvent (
             break;
         case BUTTON_UP | LEFT_BUTTON | SINGLE_CLICK | NOT_OVER_PAGE:
             break;
-            
+
         default:
             bIsProcessed = false;
             break;
@@ -1472,7 +1472,7 @@ bool NormalModeHandler::ProcessMotionEvent (
 {
     if (ModeHandler::ProcessMotionEvent(rDescriptor))
         return true;
-    
+
     bool bIsProcessed (true);
     switch (rDescriptor.mnEventCode)
     {
@@ -1505,8 +1505,8 @@ bool NormalModeHandler::ProcessMotionEvent (
             mrSelectionFunction.SwitchToMultiSelectionMode(
                 rDescriptor.maMouseModelPosition,
                 rDescriptor.mnEventCode);
-            break;                    
-            
+            break;
+
         default:
             bIsProcessed = false;
             break;
@@ -1901,7 +1901,7 @@ bool DragAndDropModeHandler::ProcessButtonUpEvent (
 bool DragAndDropModeHandler::ProcessDragEvent (SelectionFunction::EventDescriptor& rDescriptor)
 {
     OSL_ASSERT(mpDragAndDropContext);
- 
+
     if (rDescriptor.mbIsLeaving)
     {
         mrSelectionFunction.SwitchToNormalMode();
@@ -1912,7 +1912,7 @@ bool DragAndDropModeHandler::ProcessDragEvent (SelectionFunction::EventDescripto
             rDescriptor.maMousePosition,
             rDescriptor.meDragMode);
     }
-        
+
     return true;
 }
 
@@ -1966,7 +1966,7 @@ bool ButtonModeHandler::ProcessButtonDownEvent (SelectionFunction::EventDescript
                 rDescriptor.mpHitDescriptor,
                 rDescriptor.maMouseModelPosition);
             return true;
-            
+
         default:
             return false;
     }
@@ -1974,7 +1974,7 @@ bool ButtonModeHandler::ProcessButtonDownEvent (SelectionFunction::EventDescript
 
 
 
-    
+
 bool ButtonModeHandler::ProcessButtonUpEvent (SelectionFunction::EventDescriptor& rDescriptor)
 {
     switch (rDescriptor.mnEventCode & BUTTON_MASK)
@@ -1986,7 +1986,7 @@ bool ButtonModeHandler::ProcessButtonUpEvent (SelectionFunction::EventDescriptor
             mrSelectionFunction.SwitchToNormalMode();
             return true;
     }
-    
+
     return false;
 }
 
@@ -2003,7 +2003,7 @@ bool ButtonModeHandler::ProcessMotionEvent (SelectionFunction::EventDescriptor& 
                 rDescriptor.maMouseModelPosition,
                 true);
             return true;
-            
+
         case MOUSE_MOTION:
             mrSlideSorter.GetView().GetButtonBar().ProcessMouseMotionEvent(
                 rDescriptor.mpHitDescriptor,
@@ -2017,5 +2017,5 @@ bool ButtonModeHandler::ProcessMotionEvent (SelectionFunction::EventDescriptor& 
 
 
 
-   
+
 } } } // end of namespace ::sd::slidesorter::controller

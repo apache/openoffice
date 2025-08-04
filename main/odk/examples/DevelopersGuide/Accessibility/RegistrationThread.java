@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -33,7 +33,7 @@ import com.sun.star.lang.XMultiServiceFactory;
 import com.sun.star.accessibility.*;
 import com.sun.star.awt.XExtendedToolkit;
 
-/** This class is used as a thread and registers or unregsiters a listener 
+/** This class is used as a thread and registers or unregsiters a listener
     given the constructor at all nodes of a tree of accessibility objects.
 */
 public class RegistrationThread
@@ -50,8 +50,8 @@ public class RegistrationThread
             This flag decides whether to add or remove the listener.
     */
     public RegistrationThread (
-        EventListenerProxy aListener, 
-        XAccessibleContext xRoot, 
+        EventListenerProxy aListener,
+        XAccessibleContext xRoot,
         boolean bRegister,
         boolean bShowMessages)
     {
@@ -79,7 +79,7 @@ public class RegistrationThread
         {
             if ( ! mbRegister)
                 MessageArea.print ("un");
-            MessageArea.println ("registered at " + nNodeCount 
+            MessageArea.println ("registered at " + nNodeCount
                 + " objects in accessibility tree of " + mxRoot.getAccessibleName());
         }
     }
@@ -100,7 +100,7 @@ public class RegistrationThread
             // Register the root node.
             XAccessibleEventBroadcaster xBroadcaster =
                 (XAccessibleEventBroadcaster) UnoRuntime.queryInterface (
-                    XAccessibleEventBroadcaster.class, 
+                    XAccessibleEventBroadcaster.class,
                     xRoot);
             if (xBroadcaster != null)
             {
@@ -110,7 +110,7 @@ public class RegistrationThread
                     xBroadcaster.removeEventListener (maListener);
                 nNodeCount += 1;
             }
-            
+
             // Call this method recursively to register all sub-trees.
             try
             {

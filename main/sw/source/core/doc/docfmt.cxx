@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -552,7 +552,7 @@ static bool lcl_InsAttr(
                     || isPARATR_LIST(nWhich)
                     || isFRMATR(nWhich)
                     || isGRFATR(nWhich)
-                    || isUNKNOWNATR(nWhich) 
+                    || isUNKNOWNATR(nWhich)
                     || isDrawingLayerAttribute(nWhich) ) //UUUU
             {
                 pOtherSet = &rChgSet;
@@ -944,21 +944,21 @@ static bool lcl_InsAttr(
             {
             //Modify here for #119405, by easyfan, 2012-05-24
             //The data parameter flag: bExpandCharToPara, comes from the data member of SwDoc,
-            //Which is set in SW MS word Binary filter WW8ImplRreader. With this flag on, means that 
-            //current setting attribute set is a character range properties set and comes from a MS word 
+            //Which is set in SW MS word Binary filter WW8ImplRreader. With this flag on, means that
+            //current setting attribute set is a character range properties set and comes from a MS word
             //binary file, And the setting range include a paragraph end position (0X0D);
             //More specifications, as such property inside the character range properties set recorded in
-            //MS word binary file are dealed and inserted into data model (SwDoc) one by one, so we 
+            //MS word binary file are dealed and inserted into data model (SwDoc) one by one, so we
             //only dealing the scenario that the char properties set with 1 item inside;
-            
+
                     if (bExpandCharToPara && pCharSet && pCharSet->Count() ==1 )
             {
                 SwTxtNode* pCurrentNd = pStt->nNode.GetNode().GetTxtNode();
-                
+
                 if (pCurrentNd)
                 {
                     pCurrentNd->TryCharSetExpandToNum(*pCharSet);
-                        
+
                 }
             }
             //End of modification, by easyfan
@@ -1066,11 +1066,11 @@ static bool lcl_InsAttr(
     }
 
     //The data parameter flag: bExpandCharToPara, comes from the data member of SwDoc,
-    //Which is set in SW MS word Binary filter WW8ImplRreader. With this flag on, means that 
-    //current setting attribute set is a character range properties set and comes from a MS word 
+    //Which is set in SW MS word Binary filter WW8ImplRreader. With this flag on, means that
+    //current setting attribute set is a character range properties set and comes from a MS word
     //binary file, And the setting range include a paragraph end position (0X0D);
     //More specifications, as such property inside the character range properties set recorded in
-    //MS word binary file are dealed and inserted into data model (SwDoc) one by one, so we 
+    //MS word binary file are dealed and inserted into data model (SwDoc) one by one, so we
     //only dealing the scenario that the char properties set with 1 item inside;
     if (bExpandCharToPara && pCharSet && pCharSet->Count() ==1)
     {
@@ -1083,13 +1083,13 @@ static bool lcl_InsAttr(
         for (;aStartPos<=aEndPos;aStartPos.nNode++)
         {
             SwTxtNode* pCurrentNd = aStartPos.nNode.GetNode().GetTxtNode();
-            
+
             if (pCurrentNd)
             {
                 pCurrentNd->TryCharSetExpandToNum(*pCharSet);
-                    
+
             }
-                
+
         }
     }
 

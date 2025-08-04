@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -533,7 +533,7 @@ protected:
 	void Start(Ww1Shell&, sal_uInt8, W1_BRC*, sal_uInt16, Ww1Manager&, SvxBoxItem&);
 
     using Ww1SingleSprm::Start;
-	
+
 public:
 	Ww1SingleSprmPBrc(sal_Char* sName) :
 		Ww1SingleSprmWord(sName) {
@@ -556,13 +556,13 @@ public:
 class Ww1SingleSprmPBrc10 : public Ww1SingleSprmPBrc
 {
 	sal_uInt16 nLine;	// BRC_TOP, BRC_LEFT, ...
-	
+
 	using Ww1SingleSprmPBrc::Start;
-	
+
 public:
 	Ww1SingleSprmPBrc10(sal_uInt16 nL, sal_Char* sName)
 	: Ww1SingleSprmPBrc(sName), nLine(nL) {}
-	
+
 	void Start(Ww1Shell&, sal_uInt8, sal_uInt8*, sal_uInt16, Ww1Manager&);
 };
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -745,7 +745,7 @@ void XclExpPivotCache::SaveXml( XclExpXmlStream& rStrm )
         .appendAscii("rId")
         .append( rStrm.GetUniqueIdOUString() )
         .makeStringAndClear();
-    rWorkbook->startElement( XML_pivotCache, 
+    rWorkbook->startElement( XML_pivotCache,
             XML_cacheId, OString::valueOf( (sal_Int32)maPCInfo.mnStrmId ).getStr(),
             FSNS( XML_r, XML_id ), XclXmlUtils::ToOString( sId ).getStr(),
             FSEND );
@@ -1038,9 +1038,9 @@ sal_uInt16 XclExpPTField::GetItemIndex( const String& rName, sal_uInt16 nDefault
 
 // fill data --------------------------------------------------------------
 
-/** 
- * Calc's subtotal names are escaped with backslashes ('\'), while Excel's 
- * are not escaped at all. 
+/**
+ * Calc's subtotal names are escaped with backslashes ('\'), while Excel's
+ * are not escaped at all.
  */
 static OUString lcl_convertCalcSubtotalName(const OUString& rName)
 {
@@ -1614,7 +1614,7 @@ void XclExpPivotTable::WriteQsiSxTag( XclExpStream& rStrm ) const
     if (bOlapPTReport)  nFlags |= 0x0004;
     rStrm << nFlags;
 
-    // Feature-specific options.  The value differs depending on the table 
+    // Feature-specific options.  The value differs depending on the table
     // type, but we assume the table type is always pivot table.
     sal_uInt32 nOptions = 0x00000000;
     bool bNoStencil = false;

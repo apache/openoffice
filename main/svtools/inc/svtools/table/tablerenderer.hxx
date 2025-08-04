@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -156,14 +156,14 @@ namespace svt { namespace table
                 <TRUE/> if and only if the table control currently has the focus
                 <br/>
                 Note that this flag is equal to the respective flag in the
-                previous ->PrepareRow call, it's passed here for convinience
+                previous ->PrepareRow call, it's passed here for convenience
                 only.
             @param _bSelected
                 <TRUE/> if and only if the row whose header cell is to be
                 painted is selected currently.
                 <br/>
                 Note that this flag is equal to the respective flag in the
-                previous ->PrepareRow call, it's passed here for convinience
+                previous ->PrepareRow call, it's passed here for convenience
                 only.
             @param _rDevice
                 denotes the device to paint onto
@@ -187,13 +187,13 @@ namespace svt { namespace table
                 the row or the column of the cell is currently selected.
                 <br/>
                 Note that this flag is equal to the respective flag in the
-                previous ->PrepareRow call, it's passed here for convinience
+                previous ->PrepareRow call, it's passed here for convenience
                 only.
             @param i_hasControlFocus
                 <TRUE/> if and only if the table control currently has the focus
                 <br/>
                 Note that this flag is equal to the respective flag in the
-                previous ->PrepareRow call, it's passed here for convinience
+                previous ->PrepareRow call, it's passed here for convenience
                 only.
             @param _rDevice
                 denotes the device to paint onto
@@ -206,7 +206,7 @@ namespace svt { namespace table
                             bool i_hasControlFocus, bool _bSelected,
                             OutputDevice& _rDevice, const Rectangle& _rArea,
 			                const StyleSettings& _rStyle ) = 0;
-        
+
         /** draws a cell cursor in the given rectangle
 
             The cell cursor is used to indicate the active/current cell

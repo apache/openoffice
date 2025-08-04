@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -147,7 +147,7 @@ public:
 };
 
 //----------------------------------------------------------------------------
-//	
+//
 //----------------------------------------------------------------------------
 
 HANDLE	Pipe::CreatePipeDataMapping( LPCTSTR lpName )
@@ -182,13 +182,13 @@ HANDLE	Pipe::CreatePipeDataMapping( LPCTSTR lpName )
 			{
 				_tcscat( lpMappingFileName, lpMappingName );
 
-				HANDLE hFile = CreateFile( 
-					lpMappingFileName, 
-					GENERIC_READ | GENERIC_WRITE, 
-					FILE_SHARE_READ | FILE_SHARE_WRITE, 
-					NULL, 
-					OPEN_ALWAYS, 
-					FILE_ATTRIBUTE_TEMPORARY | FILE_FLAG_DELETE_ON_CLOSE, 
+				HANDLE hFile = CreateFile(
+					lpMappingFileName,
+					GENERIC_READ | GENERIC_WRITE,
+					FILE_SHARE_READ | FILE_SHARE_WRITE,
+					NULL,
+					OPEN_ALWAYS,
+					FILE_ATTRIBUTE_TEMPORARY | FILE_FLAG_DELETE_ON_CLOSE,
 					NULL );
 
 				if ( IsValidHandle(hFile) )
@@ -213,7 +213,7 @@ HANDLE	Pipe::CreatePipeDataMapping( LPCTSTR lpName )
 }
 
 //----------------------------------------------------------------------------
-//	
+//
 //----------------------------------------------------------------------------
 
 HANDLE	Pipe::OpenPipeDataMapping( LPCTSTR lpName )
@@ -233,7 +233,7 @@ HANDLE	Pipe::OpenPipeDataMapping( LPCTSTR lpName )
 }
 
 //----------------------------------------------------------------------------
-//	
+//
 //----------------------------------------------------------------------------
 
 HANDLE	Pipe::CreatePipeDataMutex( LPCTSTR lpName, BOOL bInitialOwner )
@@ -253,7 +253,7 @@ HANDLE	Pipe::CreatePipeDataMutex( LPCTSTR lpName, BOOL bInitialOwner )
 }
 
 //----------------------------------------------------------------------------
-//	
+//
 //----------------------------------------------------------------------------
 
 HANDLE Pipe::CreatePipeConnectionSemaphore( LPCTSTR lpName, LONG lInitialCount, LONG lMaximumCount )
@@ -281,7 +281,7 @@ Pipe::Pipe( const Pipe& rPipe ) :
 m_hReadPipe( INVALID_HANDLE_VALUE ),
 m_hWritePipe( INVALID_HANDLE_VALUE )
 {
-	DuplicateHandle( 
+	DuplicateHandle(
 		GetCurrentProcess(),
 		rPipe.m_hReadPipe,
 		GetCurrentProcess(),
@@ -290,7 +290,7 @@ m_hWritePipe( INVALID_HANDLE_VALUE )
 		FALSE,
 		DUPLICATE_SAME_ACCESS );
 
-	DuplicateHandle( 
+	DuplicateHandle(
 		GetCurrentProcess(),
 		rPipe.m_hWritePipe,
 		GetCurrentProcess(),
@@ -308,7 +308,7 @@ const Pipe& Pipe::operator = ( const Pipe& rPipe )
 {
 	Close();
 
-	DuplicateHandle( 
+	DuplicateHandle(
 		GetCurrentProcess(),
 		rPipe.m_hReadPipe,
 		GetCurrentProcess(),
@@ -317,7 +317,7 @@ const Pipe& Pipe::operator = ( const Pipe& rPipe )
 		FALSE,
 		DUPLICATE_SAME_ACCESS );
 
-	DuplicateHandle( 
+	DuplicateHandle(
 		GetCurrentProcess(),
 		rPipe.m_hWritePipe,
 		GetCurrentProcess(),
@@ -325,7 +325,7 @@ const Pipe& Pipe::operator = ( const Pipe& rPipe )
 		0,
 		FALSE,
 		DUPLICATE_SAME_ACCESS );
-	
+
 	return *this;
 }
 
@@ -337,7 +337,7 @@ Pipe::Pipe( HANDLE hReadPipe, HANDLE hWritePipe ) :
 m_hReadPipe( INVALID_HANDLE_VALUE ),
 m_hWritePipe( INVALID_HANDLE_VALUE )
 {
-	DuplicateHandle( 
+	DuplicateHandle(
 		GetCurrentProcess(),
 		hReadPipe,
 		GetCurrentProcess(),
@@ -346,7 +346,7 @@ m_hWritePipe( INVALID_HANDLE_VALUE )
 		FALSE,
 		DUPLICATE_SAME_ACCESS );
 
-	DuplicateHandle( 
+	DuplicateHandle(
 		GetCurrentProcess(),
 		hWritePipe,
 		GetCurrentProcess(),
@@ -469,8 +469,8 @@ ClientPipe *ClientPipe::Create( LPCTSTR lpName )
 			{
 				BOOL fSuccess;
 				HANDLE	hReadPipe = INVALID_HANDLE_VALUE, hWritePipe = INVALID_HANDLE_VALUE;
-				
-				fSuccess = DuplicateHandle( 
+
+				fSuccess = DuplicateHandle(
 					hSourceProcess,
 					pData->hReadPipe,
 					GetCurrentProcess(),
@@ -479,7 +479,7 @@ ClientPipe *ClientPipe::Create( LPCTSTR lpName )
 					FALSE,
 					DUPLICATE_SAME_ACCESS );
 
-				fSuccess = fSuccess && DuplicateHandle( 
+				fSuccess = fSuccess && DuplicateHandle(
 					hSourceProcess,
 					pData->hWritePipe,
 					GetCurrentProcess(),
@@ -502,7 +502,7 @@ ClientPipe *ClientPipe::Create( LPCTSTR lpName )
 				ReleaseSemaphore( hConnectionRequest, 1, NULL );
 
 				CloseHandle( hConnectionRequest );
-				
+
 				CloseHandle( hSourceProcess );
 			}
 
@@ -526,7 +526,7 @@ m_hMapping( NULL ),
 m_hSynchronize( NULL ),
 m_lpName( NULL )
 {
-	DuplicateHandle( 
+	DuplicateHandle(
 		GetCurrentProcess(),
 		hMapping,
 		GetCurrentProcess(),
@@ -612,7 +612,7 @@ Pipe *ServerPipe::AcceptConnection()
 			else
 			{
 				CloseHandle( hClientWritePipe );
-				CloseHandle( hServerWritePipe );	
+				CloseHandle( hServerWritePipe );
 			}
 		}
 
@@ -639,7 +639,7 @@ ServerPipe *ServerPipe::Create( LPCTSTR lpName )
 		if ( ERROR_FILE_EXISTS != GetLastError() )
 		{
 			HANDLE	hSynchronize = CreatePipeDataMutex( lpName, FALSE);
-			
+
 			WaitForSingleObject( hSynchronize, INFINITE );
 
 			PipeData	*pData = (PipeData*)MapViewOfFile( hMapping, FILE_MAP_ALL_ACCESS, 0, 0, 0 );

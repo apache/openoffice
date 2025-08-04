@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -34,7 +34,7 @@ enum BASETYPE
 	BT_ANY,
 	BT_TYPE,
 	BT_BOOLEAN,
-	BT_CHAR,		
+	BT_CHAR,
 	BT_STRING,
 	BT_FLOAT,
 	BT_DOUBLE,
@@ -54,7 +54,7 @@ enum CunoTypeDecl
 	CUNOTYPEDECL_ALLTYPES,
 	CUNOTYPEDECL_NOINTERFACES,
 	CUNOTYPEDECL_ONLYINTERFACES
-};	
+};
 
 class CunoOptions;
 class FileStream;
@@ -64,7 +64,7 @@ class CunoType
 public:
 	CunoType(TypeReader& typeReader,
 			 const ::rtl::OString& typeName,
-			 const TypeManager& typeMgr, 
+			 const TypeManager& typeMgr,
 			 const TypeDependency& typeDependencies);
 
 	virtual ~CunoType();
@@ -119,10 +119,10 @@ protected:
 	::rtl::OString	checkRealBaseType(const ::rtl::OString& type, sal_Bool bResolveTypeOnly = sal_False);
 	void	dumpCppuGetTypeMemberDecl(FileStream& o, CunoTypeDecl eDeclFlag);
 
- 	sal_Bool isNestedType() 
+ 	sal_Bool isNestedType()
 		{ return m_bIsNestedType; };
 
- 	RegistryKeyNames& getNestedTypeNames() 
+ 	RegistryKeyNames& getNestedTypeNames()
 		{ return  m_nestedTypeNames; };
 
  	sal_Bool isNestedTypeByName(const ::rtl::OString& type);
@@ -138,8 +138,8 @@ protected:
 	::rtl::OString		m_typeName;
 	::rtl::OString		m_name;
 	TypeReader			m_reader;
-	TypeManager&		m_typeMgr;	
-	TypeDependency  	m_dependencies;	
+	TypeManager&		m_typeMgr;
+	TypeDependency  	m_dependencies;
 	sal_Bool 			m_bIsNestedType;
 	RegistryKeyNames 	m_nestedTypeNames;
 };
@@ -149,7 +149,7 @@ class InterfaceType : public CunoType
 public:
 	InterfaceType(TypeReader& typeReader,
 				 const ::rtl::OString& typeName,
-				 const TypeManager& typeMgr, 
+				 const TypeManager& typeMgr,
 				 const TypeDependency& typeDependencies);
 
 	virtual ~InterfaceType();
@@ -189,7 +189,7 @@ class ModuleType : public CunoType
 public:
 	ModuleType(TypeReader& typeReader,
 		   	   const ::rtl::OString& typeName,
-			   const TypeManager& typeMgr, 
+			   const TypeManager& typeMgr,
 			   const TypeDependency& typeDependencies);
 
 	virtual ~ModuleType();
@@ -207,7 +207,7 @@ class ConstantsType : public ModuleType
 public:
 	ConstantsType(TypeReader& typeReader,
 		   	   const ::rtl::OString& typeName,
-			   const TypeManager& typeMgr, 
+			   const TypeManager& typeMgr,
 			   const TypeDependency& typeDependencies);
 
 	virtual ~ConstantsType();
@@ -220,7 +220,7 @@ class StructureType : public CunoType
 public:
 	StructureType(TypeReader& typeReader,
 				  const ::rtl::OString& typeName,
-				  const TypeManager& typeMgr, 
+				  const TypeManager& typeMgr,
 				  const TypeDependency& typeDependencies);
 
 	virtual ~StructureType();
@@ -235,7 +235,7 @@ class ExceptionType : public CunoType
 public:
 	ExceptionType(TypeReader& typeReader,
 				  const ::rtl::OString& typeName,
-				  const TypeManager& typeMgr, 
+				  const TypeManager& typeMgr,
 				  const TypeDependency& typeDependencies);
 
 	virtual ~ExceptionType();
@@ -250,7 +250,7 @@ class EnumType : public CunoType
 public:
 	EnumType(TypeReader& typeReader,
 	 		 const ::rtl::OString& typeName,
-	 		 const TypeManager& typeMgr, 
+	 		 const TypeManager& typeMgr,
 	 		 const TypeDependency& typeDependencies);
 
 	virtual ~EnumType();
@@ -284,20 +284,20 @@ public:
 
 
 sal_Bool produceType(const ::rtl::OString& typeName,
-					 TypeManager& typeMgr, 
+					 TypeManager& typeMgr,
 					 TypeDependency& typeDependencies,
 					 CunoOptions* pOptions)
 				 throw( CannotDumpException );
 
 /**
- * This function returns a C++ scoped name, represents the namespace 
+ * This function returns a C++ scoped name, represents the namespace
  * scoping of this type, e.g. com:.sun::star::uno::XInterface. If the scope of
  * the type is equal scope, the relativ name will be used.
  */
-::rtl::OString scopedName(const ::rtl::OString& scope, const ::rtl::OString& type, 
+::rtl::OString scopedName(const ::rtl::OString& scope, const ::rtl::OString& type,
 				   sal_Bool bNoNameSpace=sal_False);
 
-::rtl::OString shortScopedName(const ::rtl::OString& scope, const ::rtl::OString& type, 
+::rtl::OString shortScopedName(const ::rtl::OString& scope, const ::rtl::OString& type,
 				   		sal_Bool bNoNameSpace=sal_False);
 
 

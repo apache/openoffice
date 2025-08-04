@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -155,7 +155,7 @@ void lclProcessElement( OStringBuffer& rBuffer, const OString& rElement )
     sal_Int32 nElementLen = rElement.getLength();
     if( nElementLen == 0 )
         return;
-        
+
     const sal_Char* pcOpen = rElement.getStr();
     const sal_Char* pcClose = pcOpen + nElementLen - 1;
 
@@ -226,7 +226,7 @@ bool lclProcessCharacters( OStringBuffer& rBuffer, const OString& rChars )
         literally and must not be stipped away here. Example: The element
             <font>abc </font>
         contains the three letters a, b, and c, followed by a space character.
-        
+
         Consecutive space characters, or a leading single space character, are
         stored in a <span> element. If there are N space characters (N > 1),
         then the <span> element contains exactly (N-1) NBSP (non-breaking

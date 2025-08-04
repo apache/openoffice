@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -55,7 +55,7 @@ ContentProvider::ContentProvider(
                 const uno::Reference< lang::XMultiServiceFactory >& rSMgr )
 : ::ucbhelper::ContentProviderImplHelper( rSMgr )
 {
-	
+
 }
 
 //=========================================================================
@@ -75,8 +75,8 @@ ContentProvider::~ContentProvider()
 	}
 }
 // -----------------------------------------------------------------------------
-ODMHANDLE ContentProvider::getHandle() 
-{ 
+ODMHANDLE ContentProvider::getHandle()
+{
 	if(!m_aOdmHandle)
 	{
 		ODMSTATUS odm = NODMRegisterApp(&m_aOdmHandle,ODM_API_VERSION,ODMA_ODMA_REGNAME,NULL,NULL);
@@ -94,7 +94,7 @@ ODMHANDLE ContentProvider::getHandle()
 			break;
 		}
 	}
-	return m_aOdmHandle; 
+	return m_aOdmHandle;
 }
 // -----------------------------------------------------------------------------
 
@@ -163,7 +163,7 @@ uno::Reference< ucb::XContent > SAL_CALL ContentProvider::queryContent(
 	rtl::OUString sOdma = aScheme.getToken(3,'.',nIndex);
 	rtl::OUString sCanonicURL = Identifier->getContentIdentifier();
 	// check if url starts with odma
-    if ( !(Identifier->getContentProviderScheme().equalsIgnoreAsciiCase( aScheme ) || 
+    if ( !(Identifier->getContentProviderScheme().equalsIgnoreAsciiCase( aScheme ) ||
 		   Identifier->getContentProviderScheme().equalsIgnoreAsciiCase( sOdma )) )
         throw ucb::IllegalIdentifierException();
 
@@ -201,14 +201,14 @@ uno::Reference< ucb::XContent > SAL_CALL ContentProvider::queryContent(
 	// Create a new content.
 
 	sCanonicURL = convertURL(sCanonicURL);
-	
+
 	::rtl::Reference<ContentProperties> aProp;
 	// first check if we got an ODMA ID from outside
 	if( sCanonicURL.matchIgnoreAsciiCaseAsciiL(RTL_CONSTASCII_STRINGPARAM(ODMA_URL_ODMAID)))
 	{// we get an original ODMA id so we have to look for the name
 		::rtl::OString sDocId = ::rtl::OUStringToOString(sCanonicURL,RTL_TEXTENCODING_MS_1252);
 		sal_Char* lpszDocName = new sal_Char[ODM_NAME_MAX];
-		
+
 		ODMSTATUS odm = NODMGetDocInfo(	getHandle(),
 										const_cast<sal_Char*>(sDocId.getStr()),
 										ODM_NAME,
@@ -227,7 +227,7 @@ uno::Reference< ucb::XContent > SAL_CALL ContentProvider::queryContent(
 	}
 	else // we got an already fetched name here so look for it
 	{
-		// we have a valid document name 
+		// we have a valid document name
 		aProp = getContentPropertyWithTitle(sCanonicURL);
 		if(!aProp.is())
 			aProp = getContentPropertyWithSavedAsName(sCanonicURL);
@@ -264,8 +264,8 @@ void ContentProvider::closeDocument(const ::rtl::OString& _sDocumentId)
 	if(aIter != m_aContents.end())
 	{
 		DWORD dwFlags = ODM_SILENT;
-		ODMSTATUS odm = NODMCloseDocEx(	ContentProvider::getHandle(), 
-										const_cast<sal_Char*>(_sDocumentId.getStr()), 
+		ODMSTATUS odm = NODMCloseDocEx(	ContentProvider::getHandle(),
+										const_cast<sal_Char*>(_sDocumentId.getStr()),
 										&dwFlags,
 										0xFFFFFFFF,
 										0xFFFFFFFF,
@@ -433,7 +433,7 @@ void ContentProvider::append(const ::rtl::Reference<ContentProperties>& _rProp)
 		::rtl::OString sQuery("SELECT ODM_DOCID, ODM_NAME WHERE ODM_TITLETEXT = '");
 		sQuery += sTitleText;
 		sQuery += "'";
-		
+
 		DWORD dwFlags = ODM_SPECIFIC;
 		odm = NODMQueryExecute(getHandle(), sQuery,dwFlags, lpszDMSList, pQueryId );
 		if(odm == ODM_SUCCESS)
@@ -443,7 +443,7 @@ void ContentProvider::append(const ::rtl::Reference<ContentProperties>& _rProp)
 			sal_Char* lpszDocId		= new sal_Char[ODM_DOCID_MAX * nMaxCount];
 			sal_Char* lpszDocName	= new sal_Char[ODM_NAME_MAX * nMaxCount];
 			sal_Char* lpszDocInfo	= new sal_Char[ODM_DOCID_MAX];
-			
+
 			::rtl::OUString sContentType(RTL_CONSTASCII_USTRINGPARAM(ODMA_CONTENT_TYPE));
 			do
 			{
@@ -485,7 +485,7 @@ void ContentProvider::append(const ::rtl::Reference<ContentProperties>& _rProp)
 		delete [] pQueryId;
 	}
 	delete [] lpszDMSList;
-	
+
 
 	return aReturn;
 }
@@ -524,7 +524,7 @@ void ContentProvider::append(const ::rtl::Reference<ContentProperties>& _rProp)
 	if(!_rProp->m_bIsOpen)
 	{
 		sal_Char *pFileName = new sal_Char[ODM_FILENAME_MAX];
-		
+
 		DWORD dwFlag = ODM_MODIFYMODE | ODM_SILENT;
 		ODMSTATUS odm = NODMOpenDoc(getHandle(), dwFlag, const_cast<sal_Char*>(_rProp->m_sDocumentId.getStr()), pFileName);
 		switch(odm)
@@ -589,7 +589,7 @@ sal_Bool ContentProvider::deleteDocument(const ::rtl::Reference<ContentPropertie
 								 const_cast< sal_Char*>(_rProp->m_sDocumentId.getStr()));
 	if(odm == ODM_SUCCESS)
 		m_aContents.erase(_rProp->m_sDocumentId);
-	
+
 	return odm == ODM_SUCCESS;
 }
 // -----------------------------------------------------------------------------

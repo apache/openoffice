@@ -37,7 +37,7 @@ public class DocumentTokenFormatter
     {
         maScanner = aScanner;
         maView = aView.GetDocumentFactory();
-        
+
         maTagStartEndStyle = new Style().SetForegroundColor(new Color(0x87CEFA));  // Light Sky Blue
         maNamespaceNameStyle = new Style().SetForegroundColor(new Color(0x7B68EE)); // Medium Slate Blue
         maIdentifierStyle = new Style()
@@ -45,15 +45,15 @@ public class DocumentTokenFormatter
             .SetBold();
         maTextStyle = new Style().SetForegroundColor(new Color(0xF08080)); // Light Coral
         maAttributeValueStyle = new Style().SetForegroundColor(new Color(0xFFA07A)); // Light Salmon
-        
+
         msIndentation = "";
 
         maNamespaceMap = new HashMap<String,String>();
     }
-    
-    
-    
-    
+
+
+
+
     public void Parse ()
     {
         try
@@ -66,13 +66,13 @@ public class DocumentTokenFormatter
                 {
                     case EOF:
                         return;
-                        
+
                     case TAG_START:
                     case END_TAG_START:
                         ParseTag();
                         AppendText("\n", TokenType.WHITESPACE, null, -1);
                         break;
-                        
+
                     default:
                         ParseText();
                 }
@@ -85,33 +85,33 @@ public class DocumentTokenFormatter
         maView.FinishText();
     }
 
-    
-    
-    
+
+
+
     Map<String,String> GetNamespaceMap ()
     {
         return maNamespaceMap;
     }
-    
-    
-    
-    
+
+
+
+
     private void ParseIntro ()
     {
         final Token aStartToken = maScanner.Next();
         ExpectToken(aStartToken, TokenType.INTRO_START);
         ShowToken(aStartToken);
-        
+
         ParseTagContent();
-        
+
         final Token aEndToken = maScanner.Next();
         ExpectToken(aEndToken, TokenType.INTRO_END);
         ShowToken(aEndToken);
     }
-    
-    
-    
-    
+
+
+
+
     private void ParseTag ()
     {
         final Token aStartToken = maScanner.Next();
@@ -121,16 +121,16 @@ public class DocumentTokenFormatter
         if (aStartToken.Type == TokenType.END_TAG_START)
             DecreaseIndentation();
         ShowToken(aStartToken);
-        
+
         ParseTagContent();
-        
+
         final Token aEndToken = maScanner.Next();
         if (aStartToken.Type == TokenType.TAG_START)
             ExpectToken(aEndToken, TokenType.TAG_END, TokenType.ELEMENT_END);
         else
             ExpectToken(aEndToken, TokenType.TAG_END);
         ShowToken(aEndToken);
-        
+
         if (aStartToken.Type != TokenType.END_TAG_START
             && aEndToken.Type != TokenType.ELEMENT_END)
         {
@@ -141,17 +141,17 @@ public class DocumentTokenFormatter
             maView.EndGroup();
         }
     }
-    
-    
-    
-    
+
+
+
+
     private void ParseTagContent ()
     {
         ParseQualifiedName();
-        
+
         if (maScanner.Peek().Type != TokenType.IDENTIFIER)
             return;
-        
+
         IncreaseIndentation();
         while (true)
         {
@@ -174,20 +174,20 @@ public class DocumentTokenFormatter
             final Token aAssignToken = maScanner.Next();
             ExpectToken(aAssignToken, TokenType.ATTRIBUTE_DEFINE);
             ShowToken(aAssignToken);
-            
+
             final Token aValueToken = maScanner.Next();
             ExpectToken(aValueToken, TokenType.ATTRIBUTE_VALUE);
             ShowToken(aValueToken, maAttributeValueStyle);
-            
+
             if (msLastNamespaceName.equals("xmlns"))
                 SaveNamespaceDefinition(msLastName, StripValueQuotes(aValueToken.Text));
         }
         DecreaseIndentation();
     }
-    
-    
-    
-    
+
+
+
+
     private void ParseQualifiedName ()
     {
         final Token aNameToken = maScanner.Next();
@@ -200,7 +200,7 @@ public class DocumentTokenFormatter
             ShowToken(aNameToken, maNamespaceNameStyle);
             ShowToken(aSeparatorToken);
             ShowToken(aSecondNameToken, maIdentifierStyle);
-            
+
             msLastNamespaceName = aNameToken.Text;
             msLastName = aSecondNameToken.Text;
         }
@@ -212,10 +212,10 @@ public class DocumentTokenFormatter
             msLastName = aNameToken.Text;
         }
     }
-    
-    
-    
-    
+
+
+
+
     private void ParseText ()
     {
         final Token aTextToken = maScanner.Next();
@@ -223,10 +223,10 @@ public class DocumentTokenFormatter
         ShowToken(aTextToken, maTextStyle);
         AppendText("\n", TokenType.WHITESPACE, null, -1);
     }
-    
-    
-    
-    
+
+
+
+
     private TokenType ExpectToken (final Token aToken, final TokenType ... aExcpectedTypes)
     {
         for (final TokenType eType : aExcpectedTypes)
@@ -258,28 +258,28 @@ public class DocumentTokenFormatter
                             aToken.toString()));
         }
     }
-    
-    
-    
-    
+
+
+
+
     private void ShowToken (final Token aToken)
     {
         AppendText(aToken.Text, aToken.Type, GetStyle(aToken.Type), aToken.Offset);
     }
-    
-    
-    
-    
+
+
+
+
     private void ShowToken (
         final Token aToken,
         final Style aStyle)
     {
         AppendText(aToken.Text, aToken.Type, aStyle, aToken.Offset);
     }
-    
-    
-    
-    
+
+
+
+
     private void AppendText (
         final String sText,
         final TokenType eTokenType,
@@ -301,10 +301,10 @@ public class DocumentTokenFormatter
             e.printStackTrace();
         }
     }
-    
 
-    
-    
+
+
+
     private void AddText (
         final String sText,
         final TokenType eTokenType,
@@ -313,18 +313,18 @@ public class DocumentTokenFormatter
     {
         maView.AddText(sText, eTokenType, aStyle, nOffset);
     }
-    
-    
-    
-    
+
+
+
+
     private void IncreaseIndentation ()
     {
         msIndentation += "    ";
     }
 
-    
-    
-    
+
+
+
     private void DecreaseIndentation ()
     {
         if ( ! msIndentation.isEmpty())
@@ -332,8 +332,8 @@ public class DocumentTokenFormatter
     }
 
 
-    
-    
+
+
     private Style GetStyle (final TokenType eType)
     {
         switch(eType)
@@ -345,13 +345,13 @@ public class DocumentTokenFormatter
             case INTRO_END:
             case ELEMENT_END:
                 return maTagStartEndStyle;
-                
+
             case IDENTIFIER:
                 return maIdentifierStyle;
-    
+
             case TEXT:
                 return maTextStyle;
-                
+
             case ATTRIBUTE_VALUE:
                 return maAttributeValueStyle;
 
@@ -361,24 +361,24 @@ public class DocumentTokenFormatter
     }
 
 
-    
-    
+
+
     private String StripValueQuotes (final String sQuotedValue)
     {
         final String sValue = sQuotedValue.substring(1, sQuotedValue.length()-1);
         return sValue;
     }
-    
-    
-    
-    
+
+
+
+
     private void SaveNamespaceDefinition (final String sShortName, final String sLongName)
     {
         maNamespaceMap.put(sShortName, sLongName);
     }
-    
-    
-    
+
+
+
 
     private final XMLScanner maScanner;
     private final DocumentFactory<TokenType> maView;
@@ -389,11 +389,11 @@ public class DocumentTokenFormatter
     private final Style maAttributeValueStyle;
     private String msIndentation;
     private boolean mbIsAtBeginningOfLine;
-    
+
     private String msLastNamespaceName;
     private String msLastName;
     private Map<String,String> maNamespaceMap;
-    
+
     private final boolean mbStartNewLineBeforeEachAttribute = false;
     private final boolean mbStartNewLineBeforeNamespaceDefinition = true;
 }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -114,7 +114,7 @@ void SwChartHelper::DoUpdateAllCharts( SwDoc* pDoc )
                 catch ( uno::Exception& )
                 {
                 }
-                
+
             }
         }
         aIdx.Assign( *pStNd->EndOfSectionNode(), + 1 );
@@ -1386,7 +1386,7 @@ uno::Sequence< beans::PropertyValue > SAL_CALL SwChartDataProvider::detectArgume
         if (!pIt)
             return aResult; // failed -> return empty property sequence
         pSequenceMapping[i] = pIt - pSortedMapping;
-		
+
 		if (i != pSequenceMapping[i])
 			bNeedSequenceMapping = sal_True;
     }
@@ -1679,7 +1679,7 @@ sal_Bool SwChartDataProvider::DeleteBox( const SwTable *pTable, const SwTableBox
                         bNowEmpty = sal_True;
                         bSeqDisposed = sal_True;
                     }
-					
+
                     if (bNowEmpty)
                         aDelIt = aIt;
                 }
@@ -1706,8 +1706,8 @@ void SwChartDataProvider::DisposeAllDataSequences( const SwTable *pTable )
 		if (!bDisposed)
 			pTable->GetFrmFmt()->GetDoc()->GetChartControllerHelper().StartOrContinueLocking();
 
-        //! make a copy of the STL container! 
-        //! This is necessary since calling 'dispose' will implicitly remove an element 
+        //! make a copy of the STL container!
+        //! This is necessary since calling 'dispose' will implicitly remove an element
         //! of the original container, and thus any iterator in the original container
         //! would become invalid.
         const Set_DataSequenceRef_t aSet( aDataSequences[ pTable ] );
@@ -2600,9 +2600,9 @@ void SAL_CALL SwChartDataSequence::dispose(  )
             else {
                 DBG_ERROR( "table missing" );
             }
-		
+
 		//Comment: The bug is crashed for an exception threw out in SwCharDataSequence::setModified(), just because
-		//the SwCharDataSequence object has been disposed. Actually, the former design of SwClient will disband 
+		//the SwCharDataSequence object has been disposed. Actually, the former design of SwClient will disband
 		//itself from the notification list in its destruction. But the SwCharDataSeqence won't be destructed but disposed
 		//in code (the data member SwChartDataSequence::bDisposed will be set to TRUE), the relationship between client
 		//and modification are not released. So any notification from modify object will lead said exception threw out.
@@ -2613,7 +2613,7 @@ void SAL_CALL SwChartDataSequence::dispose(  )
 			pRegisteredIn->Remove(this);
 			pTblCrsr = NULL;
 		}
-		
+
         }
 
         // require listeners to release references to this object

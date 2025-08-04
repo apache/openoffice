@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -390,7 +390,7 @@ private:
 class ScUndoTabProtect : public ScSimpleUndo
 {
 public:
-                    ScUndoTabProtect(ScDocShell* pShell, SCTAB nTab, 
+                    ScUndoTabProtect(ScDocShell* pShell, SCTAB nTab,
                                      ::std::auto_ptr<ScTableProtection> pProtectSettings);
 	virtual			~ScUndoTabProtect();
 
@@ -521,17 +521,17 @@ private:
 //UNUSED2009-05                     ScUndoSetGrammar( ScDocShell* pShell,
 //UNUSED2009-05                                       formula::FormulaGrammar::Grammar eGrammar );
 //UNUSED2009-05     virtual         ~ScUndoSetGrammar();
-//UNUSED2009-05 
+//UNUSED2009-05
 //UNUSED2009-05     virtual void    Undo();
 //UNUSED2009-05     virtual void    Redo();
 //UNUSED2009-05     virtual void    Repeat(SfxRepeatTarget& rTarget);
 //UNUSED2009-05     virtual sal_Bool    CanRepeat(SfxRepeatTarget& rTarget) const;
-//UNUSED2009-05 
+//UNUSED2009-05
 //UNUSED2009-05     virtual String  GetComment() const;
-//UNUSED2009-05 
+//UNUSED2009-05
 //UNUSED2009-05 private:
 //UNUSED2009-05     formula::FormulaGrammar::Grammar meNewGrammar, meOldGrammar;
-//UNUSED2009-05 
+//UNUSED2009-05
 //UNUSED2009-05     void DoChange( formula::FormulaGrammar::Grammar eGrammar );
 //UNUSED2009-05 };
 

@@ -38,19 +38,19 @@ public class StateSet
     {
         maStates = new TreeSet<>();
     }
-        
-    
-    
-    
+
+
+
+
     public StateSet (final State aState)
     {
         this();
         maStates.add(aState);
     }
 
-    
-    
-    
+
+
+
     public StateSet (final StateSet aSet)
     {
         this();
@@ -58,7 +58,7 @@ public class StateSet
     }
 
 
-    
+
 
     public StateSet (final Iterable<State> aStates)
     {
@@ -66,25 +66,25 @@ public class StateSet
         for (final State aState : aStates)
             maStates.add(aState);
     }
-    
-    
-    
-    
+
+
+
+
     public void AddState (final State aState)
     {
         maStates.add(aState);
     }
 
-    
-    
-    
+
+
+
     public void AddStates (final StateSet aStates)
     {
         maStates.addAll(aStates.maStates);
     }
 
-    
-    
+
+
 
     public boolean IsDisjoint (final StateSet aOther)
     {
@@ -96,50 +96,50 @@ public class StateSet
                 return false;
         return true;
     }
-    
-    
-    
-    
+
+
+
+
     public void RemoveState (final State aState)
     {
         maStates.remove(aState);
     }
-    
-    
-    
-    
+
+
+
+
     public Iterable<State> GetStates ()
     {
         return maStates;
     }
 
 
-    
+
 
     public boolean ContainsState (final State aState)
     {
         return maStates.contains(aState);
     }
 
-    
-    
-    
+
+
+
     public int GetStateCount ()
     {
         return maStates.size();
     }
-    
 
-    
-    
+
+
+
     public boolean HasStates ()
     {
         return ! maStates.isEmpty();
     }
 
-    
-    
-    
+
+
+
     public State CreateStateForStateSet (final StateContext aContext)
     {
         // Find a name for the new state.  If there is type state in the given
@@ -150,18 +150,18 @@ public class StateSet
         {
             final QualifiedName aName = aState.GetBasename();
             final String sSuffix = aState.GetSuffix();
-            
+
             if (aBaseName == null)
             {
                 aBaseName = aName;
-                sShortestSuffix = sSuffix; 
+                sShortestSuffix = sSuffix;
             }
             else if (aBaseName.compareTo(aName) != 0)
             {
                 System.out.printf("%s != %s\n", aBaseName, aName);
                 throw new RuntimeException("state set contains states with different base names: "+toString());
             }
-            
+
             if (sShortestSuffix == null)
                 sShortestSuffix = sSuffix;
             else if (sSuffix.length() < sShortestSuffix.length())
@@ -175,7 +175,7 @@ public class StateSet
             aBaseName,
             aContext.GetUnambiguousSuffix(aBaseName, sShortestSuffix));
         assert(aNewState!=null);
-        
+
         // Mark the new state as accepting if at least one of its original states
         // is accepting.
         for (final State aState : maStates)
@@ -191,18 +191,18 @@ public class StateSet
             if (aTextType != null)
                 aNewState.SetTextType(aTextType);
         }
-        
+
         return aNewState;
     }
-    
-    
-    
+
+
+
 
     @Override
     public int compareTo (final StateSet aOther)
     {
         final int nStateCount = maStates.size();
-        
+
         if (nStateCount != aOther.maStates.size())
             return nStateCount - aOther.maStates.size();
         else
@@ -220,26 +220,26 @@ public class StateSet
             return 0;
         }
     }
-    
-    
-    
+
+
+
 
     public boolean IsEmpty()
     {
         return maStates.isEmpty();
     }
 
-    
-    
-    
+
+
+
     @Override
     public String toString ()
     {
         return "set of "+maStates.size()+" states "+maStates.toString();
     }
-        
-    
-    
-    
+
+
+
+
     private final Set<State> maStates;
 }

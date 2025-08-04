@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -38,7 +38,7 @@
 #include "layer.hxx"
 
 #include <boost/bind.hpp>
- 
+
 
 using namespace ::com::sun::star;
 
@@ -55,7 +55,7 @@ namespace slideshow
             mbBoundsDirty(false),
             mbBackgroundLayer(true),
             mbClipSet(false)
-        { 
+        {
         }
 
         Layer::Layer( const basegfx::B2DRange& rMaxLayerBounds ) :
@@ -66,7 +66,7 @@ namespace slideshow
             mbBoundsDirty(false),
             mbBackgroundLayer(false),
             mbClipSet(false)
-        { 
+        {
         }
 
         ViewLayerSharedPtr Layer::addView( const ViewSharedPtr& rNewView )
@@ -75,9 +75,9 @@ namespace slideshow
 
             ViewEntryVector::iterator aIter;
             const ViewEntryVector::iterator aEnd( maViewEntries.end() );
-            if( (aIter=std::find_if( maViewEntries.begin(), 
+            if( (aIter=std::find_if( maViewEntries.begin(),
                                      aEnd,
-                                     boost::bind<bool>( 
+                                     boost::bind<bool>(
                                          std::equal_to< ViewSharedPtr >(),
                                          boost::bind( &ViewEntry::getView, _1 ),
                                          boost::cref( rNewView )))) != aEnd )
@@ -93,12 +93,12 @@ namespace slideshow
                 pNewLayer = rNewView;
             else
                 pNewLayer = rNewView->createViewLayer(maBounds);
-            
+
             // add to local list
-            maViewEntries.push_back( 
-                ViewEntry( rNewView, 
+            maViewEntries.push_back(
+                ViewEntry( rNewView,
                            pNewLayer ));
-            
+
             return maViewEntries.back().mpViewLayer;
         }
 
@@ -107,10 +107,10 @@ namespace slideshow
             OSL_ASSERT( rView );
 
             ViewEntryVector::iterator       aIter;
-            const ViewEntryVector::iterator aEnd( maViewEntries.end() );            
+            const ViewEntryVector::iterator aEnd( maViewEntries.end() );
             if( (aIter=std::find_if( maViewEntries.begin(),
                                        aEnd,
-                                       boost::bind<bool>( 
+                                       boost::bind<bool>(
                                            std::equal_to< ViewSharedPtr >(),
                                            boost::bind( &ViewEntry::getView, _1 ),
                                            boost::cref( rView )))) == aEnd )
@@ -121,7 +121,7 @@ namespace slideshow
 
             OSL_ENSURE( std::count_if( maViewEntries.begin(),
                                        aEnd,
-                                       boost::bind<bool>( 
+                                       boost::bind<bool>(
                                            std::equal_to< ViewSharedPtr >(),
                                            boost::bind( &ViewEntry::getView, _1 ),
                                            boost::cref( rView ))) == 1,
@@ -136,13 +136,13 @@ namespace slideshow
         void Layer::viewChanged( const ViewSharedPtr& rChangedView )
         {
             ViewEntryVector::iterator aIter;
-            const ViewEntryVector::iterator aEnd( maViewEntries.end() );            
-            if( (aIter=std::find_if( maViewEntries.begin(), 
+            const ViewEntryVector::iterator aEnd( maViewEntries.end() );
+            if( (aIter=std::find_if( maViewEntries.begin(),
                                      aEnd,
-                                     boost::bind<bool>( 
+                                     boost::bind<bool>(
                                          std::equal_to< ViewSharedPtr >(),
                                          boost::bind( &ViewEntry::getView, _1 ),
-                                         boost::cref( rChangedView )))) != 
+                                         boost::cref( rChangedView )))) !=
                 aEnd )
             {
                 // adapt size of given ViewLayer - background layer
@@ -197,7 +197,7 @@ namespace slideshow
         {
             // TODO(Q1): move this to B2DMultiRange
             if( !rUpdateRange.isEmpty() )
-                maUpdateAreas.appendElement( rUpdateRange, 
+                maUpdateAreas.appendElement( rUpdateRange,
                                              basegfx::ORIENTATION_POSITIVE );
         }
 
@@ -207,7 +207,7 @@ namespace slideshow
             {
                 if( !mbBoundsDirty )
                     maNewBounds.reset();
-                
+
                 maNewBounds.expand( rShape->getUpdateArea() );
             }
 
@@ -241,7 +241,7 @@ namespace slideshow
 
             return true;
         }
-        
+
         void Layer::clearUpdateRanges()
         {
             maUpdateAreas.clear();
@@ -252,9 +252,9 @@ namespace slideshow
             // clear content on all view layers
             std::for_each( maViewEntries.begin(),
                            maViewEntries.end(),
-                           boost::bind( 
+                           boost::bind(
                                &ViewLayer::clear,
-                               boost::bind( 
+                               boost::bind(
                                    &ViewEntry::getViewLayer,
                                    _1)));
 
@@ -283,12 +283,12 @@ namespace slideshow
             if( maUpdateAreas.count() )
             {
                 // perform proper layer update. That means, setup proper
-                // clipping, and render each shape that intersects with 
+                // clipping, and render each shape that intersects with
                 // the calculated update area
                 ::basegfx::B2DPolyPolygon aClip( maUpdateAreas.solveCrossovers() );
                 aClip = ::basegfx::tools::stripNeutralPolygons(aClip);
                 aClip = ::basegfx::tools::stripDispensablePolygons(aClip, false);
- 
+
                 // actually, if there happen to be shapes with zero
                 // update area in the maUpdateAreas vector, the
                 // resulting clip polygon will be empty.
@@ -297,9 +297,9 @@ namespace slideshow
                     // set clip to all view layers
                     std::for_each( maViewEntries.begin(),
                                    maViewEntries.end(),
-                                   boost::bind( 
+                                   boost::bind(
                                        &ViewLayer::setClip,
-                                       boost::bind( 
+                                       boost::bind(
                                            &ViewEntry::getViewLayer,
                                            _1),
                                        boost::cref(aClip)));
@@ -307,9 +307,9 @@ namespace slideshow
                     // clear update area on all view layers
                     std::for_each( maViewEntries.begin(),
                                    maViewEntries.end(),
-                                   boost::bind( 
+                                   boost::bind(
                                        &ViewLayer::clear,
-                                       boost::bind( 
+                                       boost::bind(
                                            &ViewEntry::getViewLayer,
                                            _1)));
 
@@ -329,9 +329,9 @@ namespace slideshow
                 basegfx::B2DPolyPolygon aEmptyClip;
                 std::for_each( maViewEntries.begin(),
                                maViewEntries.end(),
-                               boost::bind( 
+                               boost::bind(
                                    &ViewLayer::setClip,
-                                   boost::bind( 
+                                   boost::bind(
                                        &ViewEntry::getViewLayer,
                                        _1),
                                    boost::cref(aEmptyClip)));
@@ -347,7 +347,7 @@ namespace slideshow
 
         LayerSharedPtr Layer::createBackgroundLayer( const basegfx::B2DRange& rMaxLayerBounds )
         {
-            return LayerSharedPtr(new Layer( rMaxLayerBounds, 
+            return LayerSharedPtr(new Layer( rMaxLayerBounds,
                                              BackgroundLayer ));
         }
 

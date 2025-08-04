@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -75,9 +75,9 @@ namespace drawinglayer
                     {
                         // rotated 45 degrees
                         texture::GeoTexSvxHatch aHatch(
-                            getDefinitionRange(), 
-                            getOutputRange(), 
-                            fDistance, 
+                            getDefinitionRange(),
+                            getOutputRange(),
+                            fDistance,
                             fAngle - F_PI4);
 
                         aHatch.appendTransformations(aMatrices);
@@ -88,9 +88,9 @@ namespace drawinglayer
                     {
                         // rotated 90 degrees
                         texture::GeoTexSvxHatch aHatch(
-                            getDefinitionRange(), 
-                            getOutputRange(), 
-                            fDistance, 
+                            getDefinitionRange(),
+                            getOutputRange(),
+                            fDistance,
                             fAngle - F_PI2);
 
                         aHatch.appendTransformations(aMatrices);
@@ -101,9 +101,9 @@ namespace drawinglayer
                     {
                         // angle as given
                         texture::GeoTexSvxHatch aHatch(
-                            getDefinitionRange(), 
-                            getOutputRange(), 
-                            fDistance, 
+                            getDefinitionRange(),
+                            getOutputRange(),
+                            fDistance,
                             fAngle);
 
                         aHatch.appendTransformations(aMatrices);
@@ -147,8 +147,8 @@ namespace drawinglayer
         }
 
         FillHatchPrimitive2D::FillHatchPrimitive2D(
-            const basegfx::B2DRange& rOutputRange, 
-            const basegfx::BColor& rBColor, 
+            const basegfx::B2DRange& rOutputRange,
+            const basegfx::BColor& rBColor,
             const attribute::FillHatchAttribute& rFillHatch)
         :   DiscreteMetricDependentPrimitive2D(),
             maOutputRange(rOutputRange),
@@ -159,9 +159,9 @@ namespace drawinglayer
         }
 
         FillHatchPrimitive2D::FillHatchPrimitive2D(
-            const basegfx::B2DRange& rOutputRange, 
-            const basegfx::B2DRange& rDefinitionRange, 
-            const basegfx::BColor& rBColor, 
+            const basegfx::B2DRange& rOutputRange,
+            const basegfx::B2DRange& rDefinitionRange,
+            const basegfx::BColor& rBColor,
             const attribute::FillHatchAttribute& rFillHatch)
         :   DiscreteMetricDependentPrimitive2D(),
             maOutputRange(rOutputRange),
@@ -177,7 +177,7 @@ namespace drawinglayer
             {
                 const FillHatchPrimitive2D& rCompare = (FillHatchPrimitive2D&)rPrimitive;
 
-                return (getOutputRange() == rCompare.getOutputRange() 
+                return (getOutputRange() == rCompare.getOutputRange()
                     && getDefinitionRange() == rCompare.getDefinitionRange()
                     && getFillHatch() == rCompare.getFillHatch()
                     && getBColor() == rCompare.getBColor());

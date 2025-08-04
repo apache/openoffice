@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -339,7 +339,7 @@ static ImplDevFontAttributes Os2Font2DevFontAttributes( const PFONTMETRICS pFont
         ||  aDFA.maName.EqualsAscii( "ZapfChancery" )
         ||  aDFA.maName.EqualsAscii( "ZapfDingbats" ) )
             aDFA.mnQuality += 500;
-    }    
+    }
 
     // TODO: add alias names
 
@@ -465,7 +465,7 @@ void ImplOs2FontData::UpdateFromHPS( HPS hPS ) const
     // even if the font works some fonts have problems with the glyph API
     // => the heuristic below tries to figure out which fonts have the problem
 	DWORD	fontType = Ft2QueryFontType( 0, pFontMetric->szFacename);
-    if( fontType != FT2_FONTTYPE_TRUETYPE 
+    if( fontType != FT2_FONTTYPE_TRUETYPE
 		&& (pFontMetric->fsDefn & FM_DEFN_GENERIC) == 0)
 		mbDisableGlyphApi = true;
 }
@@ -635,7 +635,7 @@ USHORT Os2SalGraphics::ImplDoSetFont( ImplFontSelectData* i_pFont, float& o_rFon
 	PFONTMETRICS 	pFontMetric = NULL;
 	FATTRS		  	aFAttrs;
 	PM_BOOL		  	bOutline = FALSE;
-	APIRET			rc;			
+	APIRET			rc;
 
 	memset( &aFAttrs, 0, sizeof( FATTRS ) );
 	aFAttrs.usRecordLength = sizeof( FATTRS );
@@ -652,7 +652,7 @@ USHORT Os2SalGraphics::ImplDoSetFont( ImplFontSelectData* i_pFont, float& o_rFon
 
 		// use match&registry fields to get correct match
 		aFAttrs.lMatch	     	= pFontMetric->lMatch;
-		aFAttrs.idRegistry 		= pFontMetric->idRegistry;			
+		aFAttrs.idRegistry 		= pFontMetric->idRegistry;
 		aFAttrs.usCodePage 		= pFontMetric->usCodePage;
 
 		if ( bOutline )
@@ -676,7 +676,7 @@ USHORT Os2SalGraphics::ImplDoSetFont( ImplFontSelectData* i_pFont, float& o_rFon
 
 	// use family name for outline fonts
     if ( mbPrinter ) {
-		// use font face name for printers because otherwise ft2lib will fail 
+		// use font face name for printers because otherwise ft2lib will fail
 		// to select the correct font for GPI (ticket#117)
 		strncpy( (char*)(aFAttrs.szFacename), pFontMetric->szFacename, sizeof( aFAttrs.szFacename ) );
 	} else if ( !pFontMetric) {
@@ -1083,7 +1083,7 @@ void Os2SalGraphics::GetDevFontList( ImplDevFontList* pList )
 	char 	drive[_MAX_DRIVE], dir[_MAX_DIR];
 	char 	fname[_MAX_FNAME], ext[_MAX_EXT];
 	// get module handle (and name)
-	rc = DosQueryModFromEIP( &hMod, &ObjNum, sizeof( Buff), Buff, 
+	rc = DosQueryModFromEIP( &hMod, &ObjNum, sizeof( Buff), Buff,
 							&Offset, (ULONG)ImplSalGetUniString);
 	DosQueryModuleName(hMod, sizeof(Buff), Buff);
 	// replace module path with font path
@@ -1168,7 +1168,7 @@ void Os2SalGraphics::GetDevFontList( ImplDevFontList* pList )
 			continue;
 
 		// skip bitmap fonts (but keep WarpSans)
-		if ( (pFontMetric->fsDefn & FM_DEFN_OUTLINE) == 0 
+		if ( (pFontMetric->fsDefn & FM_DEFN_OUTLINE) == 0
 			&& strncmp( pFontMetric->szFacename, "WarpSans", 8) )
 			// Font nicht aufnehmen
 			continue;
@@ -1414,7 +1414,7 @@ bool Os2SalGraphics::GetGlyphOutline( sal_GlyphId aGlyphId, ::basegfx::B2DPolyPo
         aMatrix.scale( mfFontScale, mfFontScale );
         rB2DPolyPoly.transform( aMatrix );
     }
-    
+
     return bRet;
 }
 
@@ -1746,10 +1746,10 @@ void Os2SalGraphics::GetGlyphWidths( const ImplFontData* pFont,
 
     // TODO: much better solution: move SetFont and restoration of old font to caller
     ScopedFont aOldFont(*this);
-    
+
     float fScale = 0.0;
     ImplDoSetFont( &aIFSD, fScale, 0);
-    
+
     if( pFont->IsSubsettable() )
     {
         // get raw font file data
@@ -1761,12 +1761,12 @@ void Os2SalGraphics::GetGlyphWidths( const ImplFontData* pFont,
         sal_uInt32 nFaceNum = 0;
         if( !*xRawFontData.get() )  // TTC candidate
             nFaceNum = ~0U;  // indicate "TTC font extracts only"
-    
+
         ScopedTrueTypeFont aSftTTF;
         int nRC = aSftTTF.open( (void*)xRawFontData.get(), xRawFontData.size(), nFaceNum );
         if( nRC != SF_OK )
             return;
-    
+
         int nGlyphs = GetTTGlyphCount( aSftTTF.get() );
         if( nGlyphs > 0 )
         {
@@ -1820,7 +1820,7 @@ void Os2SalGraphics::GetGlyphWidths( const ImplFontData* pFont,
                 rWidths.push_back( nCharWidth );
             }
         }
-    }    
+    }
 }
 
 //--------------------------------------------------------------------------
@@ -1836,14 +1836,14 @@ SystemFontData Os2SalGraphics::GetSysFontData( int nFallbacklevel ) const
 
     if (nFallbacklevel >= MAX_FALLBACK) nFallbacklevel = MAX_FALLBACK - 1;
     if (nFallbacklevel < 0 ) nFallbacklevel = 0;
-    
+
     aSysFontData.nSize = sizeof( SystemFontData );
-    aSysFontData.hFont = mhFonts[nFallbacklevel]; 
+    aSysFontData.hFont = mhFonts[nFallbacklevel];
     aSysFontData.bFakeBold = false;
     aSysFontData.bFakeItalic = false;
     aSysFontData.bAntialias = true;
     aSysFontData.bVerticalCharacterType = false;
-        
+
     return aSysFontData;
 }
 

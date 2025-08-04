@@ -556,7 +556,7 @@ SourceConfig - Perl extension for parsing general info databases
 
 =head1 DESCRIPTION
 
-SourceConfig is a perl extension to load and parse General Info Databses.
+SourceConfig is a perl extension to load and parse General Info Databases.
 It uses a simple object oriented interface to retrieve the information stored
 in the database.
 
