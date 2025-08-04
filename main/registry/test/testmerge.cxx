@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -187,9 +187,9 @@ void test_merge()
     REG_ENSURE(!myRegistry->create(OUString::createFromAscii("mergetest.rdb")), "testMerge error 1");
     REG_ENSURE(myRegistry->getName().equals(OUString::createFromAscii("mergetest.rdb")), "testMerge error 1.a)");
     REG_ENSURE(!myRegistry->openRootKey(rootKey), "testMerge error 2");
-    REG_ENSURE(!myRegistry->loadKey(rootKey, OUString::createFromAscii("/stardiv/IchbineinMergeKey"), 
+    REG_ENSURE(!myRegistry->loadKey(rootKey, OUString::createFromAscii("/stardiv/IchbineinMergeKey"),
 				OUString::createFromAscii("merge1.rdb")), "testMerge error 3");
-    REG_ENSURE(!myRegistry->mergeKey(rootKey, OUString::createFromAscii("/stardiv/IchbineinMergeKey"), 
+    REG_ENSURE(!myRegistry->mergeKey(rootKey, OUString::createFromAscii("/stardiv/IchbineinMergeKey"),
 				OUString::createFromAscii("merge2.rdb")), "testMerge error 4");
 
     ///////////////////////////////////////////////////////////////////////////

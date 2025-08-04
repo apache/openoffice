@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -173,7 +173,7 @@ namespace pcr
 
         return aReturn;
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL SubmissionPropertyHandler::setPropertyValue( const ::rtl::OUString& _rPropertyName, const Any& _rValue ) throw (UnknownPropertyException, RuntimeException)
     {
@@ -216,7 +216,7 @@ namespace pcr
         	OSL_ENSURE( sal_False, "SubmissionPropertyHandler::setPropertyValue: caught an exception!" );
         }
     }
-    
+
     //--------------------------------------------------------------------
     Sequence< ::rtl::OUString > SAL_CALL SubmissionPropertyHandler::getActuatingProperties( ) throw (RuntimeException)
     {
@@ -389,7 +389,7 @@ namespace pcr
 
         return aPropertyValue;
     }
-    
+
     //--------------------------------------------------------------------
     Any SAL_CALL SubmissionPropertyHandler::convertToControlValue( const ::rtl::OUString& _rPropertyName, const Any& _rPropertyValue, const Type& _rControlValueType ) throw (UnknownPropertyException, RuntimeException)
     {

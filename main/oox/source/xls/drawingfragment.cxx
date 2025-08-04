@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -210,7 +210,7 @@ ContextHandlerRef DrawingFragment::onCreateContext( sal_Int32 nElement, const At
                 case XDR_TOKEN( pos ):          if( mxAnchor.get() ) mxAnchor->importPos( rAttribs );           break;
                 case XDR_TOKEN( ext ):          if( mxAnchor.get() ) mxAnchor->importExt( rAttribs );           break;
                 case XDR_TOKEN( clientData ):   if( mxAnchor.get() ) mxAnchor->importClientData( rAttribs );    break;
-                
+
                 default:                        return GroupShapeContext::createShapeContext( *this, *this, nElement, rAttribs, ShapePtr(), &mxShape );
             }
         }
@@ -330,7 +330,7 @@ void VmlControlMacroAttacher::attachMacro( const OUString& rMacroUrl )
     // editable drop downs are treated like edit boxes
     bool bEditDropDown = (mnCtrlType == XML_Drop) && (mnDropStyle == XML_ComboEdit);
     sal_Int32 nCtrlType = bEditDropDown ? XML_Edit : mnCtrlType;
-    
+
     switch( nCtrlType )
     {
         case XML_Button:
@@ -478,7 +478,7 @@ Reference< XShape > VmlDrawing::createAndInsertClientXShape( const ::oox::vml::S
                     rAxModel.mnPasswordChar = '*';
             }
             break;
-            
+
             case XML_GBox:
             {
                 AxFrameModel& rAxModel = aControl.createModel< AxFrameModel >();
@@ -668,7 +668,7 @@ sal_uInt32 VmlDrawing::convertControlTextColor( const OUString& rTextColor ) con
     }
 
     const GraphicHelper& rGraphicHelper = getBaseFilter().getGraphicHelper();
-    
+
     /*  Predefined color names or system color names (resolve to RGB to detect
         valid color name). */
     sal_Int32 nColorToken = AttributeConversion::decodeToken( rTextColor );

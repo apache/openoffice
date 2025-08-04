@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -91,7 +91,7 @@ void SAL_CALL PanelWrapper::release() throw()
     UIElementWrapperBase::release();
 }
 
-uno::Any SAL_CALL PanelWrapper::queryInterface( const uno::Type & rType ) 
+uno::Any SAL_CALL PanelWrapper::queryInterface( const uno::Type & rType )
 throw( ::com::sun::star::uno::RuntimeException )
 {
 	return UIElementWrapperBase::queryInterface( rType );
@@ -143,7 +143,7 @@ void SAL_CALL PanelWrapper::initialize( const Sequence< Any >& aArguments ) thro
 
     if ( m_bDisposed )
         throw DisposedException();
-    
+
     if ( !m_bInitialized )
     {
         UIElementWrapperBase::initialize( aArguments );
@@ -174,7 +174,7 @@ void SAL_CALL PanelWrapper::initialize( const Sequence< Any >& aArguments ) thro
                 if ( pWindow )
                 {
                     sal_uInt32 nStyles = WB_LINESPACING | WB_BORDER | WB_SCROLL | WB_MOVEABLE | WB_3DLOOK | WB_DOCKABLE | WB_SIZEABLE | WB_CLOSEABLE;
-                    
+
                     pPanelWindow = new PanelWindow( pWindow, nStyles );
                     m_xPanelWindow = VCLUnoHelper::GetInterface( pPanelWindow );
 					pPanelWindow->setResourceURL( m_aResourceURL );
@@ -202,7 +202,7 @@ void SAL_CALL PanelWrapper::disposing( const ::com::sun::star::lang::EventObject
 void SAL_CALL PanelWrapper::update() throw (::com::sun::star::uno::RuntimeException)
 {
     ResetableGuard aLock( m_aLock );
-    
+
     if ( m_bDisposed )
         throw DisposedException();
 }
@@ -223,7 +223,7 @@ void SAL_CALL PanelWrapper::setFastPropertyValue_NoBroadcast( sal_Int32 nHandle,
     UIElementWrapperBase::setFastPropertyValue_NoBroadcast( nHandle, aValue );
 
     aLock.lock();
-    
+
     sal_Bool bNewNoClose( m_bNoClose );
     if ( m_xPanelWindow.is() && !m_bDisposed && ( bNewNoClose != bNoClose ))
     {

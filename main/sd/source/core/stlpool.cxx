@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -94,12 +94,12 @@ SdStyleSheetPool::SdStyleSheetPool(SfxItemPool const& _rPool, SdDrawDocument* pD
 		// create graphics family
 		mxGraphicFamily = new SdStyleFamily( xPool, SD_STYLE_FAMILY_GRAPHICS );
 		mxCellFamily = new SdStyleFamily( xPool, SD_STYLE_FAMILY_CELL );
-		
+
 		mxTableFamily = sdr::table::CreateTableDesignFamily();
 		Reference< XNamed > xNamed( mxTableFamily, UNO_QUERY );
 		if( xNamed.is() )
 			msTableFamilyName = xNamed->getName();
-		
+
 		// create presentation families, one for each master page
 		const sal_uInt16 nCount = mpDoc->GetMasterSdPageCount(PK_STANDARD);
 		for( sal_uInt16 nPage = 0; nPage < nCount; ++nPage )
@@ -573,7 +573,7 @@ void SdStyleSheetPool::CopyTableStyles(SdStyleSheetPool& rSourcePool)
 	if( xSource.is() && xFactory.is() && mxTableFamily.is() )
 	{
 		for( sal_Int32 nIndex = 0; nIndex < xSource->getCount(); nIndex++ ) try
-		{	
+		{
 			Reference< XStyle > xSourceTableStyle( xSource->getByIndex( nIndex ), UNO_QUERY );
 			if( xSourceTableStyle.is() )
 			{
@@ -1257,7 +1257,7 @@ Any SAL_CALL SdStyleSheetPool::getByName( const OUString& aName ) throw(NoSuchEl
 Sequence< OUString > SAL_CALL SdStyleSheetPool::getElementNames() throw(RuntimeException)
 {
 	throwIfDisposed();
-	
+
 	Sequence< OUString > aNames( maStyleFamilyMap.size() + 3 );
 	OUString* pNames = aNames.getArray();
 

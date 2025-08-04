@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include <vbalistcontrolhelper.hxx>
@@ -27,7 +27,7 @@ using namespace ooo::vba;
 
 const static rtl::OUString ITEMS( RTL_CONSTASCII_USTRINGPARAM("StringItemList") );
 
-void SAL_CALL 
+void SAL_CALL
 ListControlHelper::AddItem( const uno::Any& pvargItem, const uno::Any& pvargIndex ) throw (uno::RuntimeException)
 {
 	if ( pvargItem.hasValue()  )
@@ -42,13 +42,13 @@ ListControlHelper::AddItem( const uno::Any& pvargItem, const uno::Any& pvargInde
 
 		rtl::OUString sString = getAnyAsString( pvargItem );
 
-		// if no index specified or item is to be appended to end of 
+		// if no index specified or item is to be appended to end of
 		// list just realloc the array and set the last item
 		if ( nIndex  == sList.getLength() )
 		{
 			sal_Int32 nOldSize = sList.getLength();
 			sList.realloc( nOldSize + 1 );
-			sList[ nOldSize ] = sString; 
+			sList[ nOldSize ] = sString;
 		}
 		else
 		{
@@ -62,10 +62,10 @@ ListControlHelper::AddItem( const uno::Any& pvargItem, const uno::Any& pvargInde
 			const rtl::OUString* pEndString = sList.getArray() + sList.getLength();
 			// insert the new element
 			sVec.push_back( sString );
-			// copy elements	
+			// copy elements
 			for ( ; pString != pEndString; ++pString )
 				sVec.push_back( *pString );
-		
+
 			sList.realloc(  sList.getLength() + 1 );
 
 			// point at first element to be overwritten
@@ -73,16 +73,16 @@ ListControlHelper::AddItem( const uno::Any& pvargItem, const uno::Any& pvargInde
 			pEndString = sList.getArray() + sList.getLength();
 			std::vector< rtl::OUString >::iterator it = sVec.begin();
 			for ( ; pString != pEndString; ++pString, ++it)
-				*pString = *it;	
+				*pString = *it;
 			//
 		}
 
 		m_xProps->setPropertyValue( ITEMS, uno::makeAny( sList ) );
-		
+
 	}
 }
 
-void SAL_CALL 
+void SAL_CALL
 ListControlHelper::removeItem( const uno::Any& index ) throw (uno::RuntimeException)
 {
     sal_Int32 nIndex = 0;
@@ -111,7 +111,7 @@ ListControlHelper::removeItem( const uno::Any& index ) throw (uno::RuntimeExcept
 	}
 }
 
-void SAL_CALL 
+void SAL_CALL
 ListControlHelper::Clear(  ) throw (uno::RuntimeException)
 {
 	// urk, setValue doesn't seem to work !!
@@ -134,7 +134,7 @@ ListControlHelper::getListCount() throw (uno::RuntimeException)
     return sList.getLength();
 }
 
-uno::Any SAL_CALL 
+uno::Any SAL_CALL
 ListControlHelper::List( const ::uno::Any& pvargIndex, const uno::Any& pvarColumn ) throw (uno::RuntimeException)
 {
     uno::Sequence< rtl::OUString > sList;
@@ -147,12 +147,12 @@ ListControlHelper::List( const ::uno::Any& pvargIndex, const uno::Any& pvarColum
         pvargIndex >>= nIndex;
         if( nIndex < 0 || nIndex >= nLength )
             throw uno::RuntimeException( rtl::OUString::createFromAscii(
-                    "Bad row Index" ), uno::Reference< uno::XInterface >() );       
+                    "Bad row Index" ), uno::Reference< uno::XInterface >() );
         aRet <<= sList[ nIndex ];
     }
     else if ( pvarColumn.hasValue() ) // pvarColumn on its own would be bad
             throw uno::RuntimeException( rtl::OUString::createFromAscii(
-                    "Bad column Index" ), uno::Reference< uno::XInterface >() );       
+                    "Bad column Index" ), uno::Reference< uno::XInterface >() );
     else // List() ( e.g. no args )
     {
         uno::Sequence< uno::Sequence< rtl::OUString > > sReturnArray( nLength );
@@ -160,7 +160,7 @@ ListControlHelper::List( const ::uno::Any& pvargIndex, const uno::Any& pvarColum
         {
             sReturnArray[ i ].realloc( 10 );
             sReturnArray[ i ][ 0 ] = sList[ i ];
-        }        
+        }
         aRet = uno::makeAny( sReturnArray );
     }
     return aRet;

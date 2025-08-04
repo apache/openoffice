@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,7 +45,7 @@
 #include <com/sun/star/rendering/TextDirection.hpp>
 #include <com/sun/star/rendering/TexturingMode.hpp>
 #include <osl/mutex.hxx>
-    
+
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
 using namespace ::com::sun::star::drawing::framework;
@@ -134,7 +134,7 @@ void PresenterSlideShowView::LateInit (void)
             mxWindow->addPaintListener(this);
             mxWindow->addWindowListener(this);
         }
-                
+
         // The window does not have to paint a background.  We do
         // that ourself.
         Reference<awt::XWindowPeer> xPeer (mxWindow, UNO_QUERY);
@@ -147,7 +147,7 @@ void PresenterSlideShowView::LateInit (void)
     mxViewWindow = CreateViewWindow(mxWindow);
 
     mxViewCanvas = CreateViewCanvas(mxViewWindow);
-            
+
     if (mxViewWindow.is())
     {
         // Register listeners at window.
@@ -209,12 +209,12 @@ void PresenterSlideShowView::disposing (void)
     // Tell all listeners that we are disposed.
     lang::EventObject aEvent;
     aEvent.Source = static_cast<XWeak*>(this);
-    
+
     ::cppu::OInterfaceContainerHelper* pIterator
           = maBroadcaster.getContainer(getCppuType((Reference<lang::XEventListener>*)NULL));
     if (pIterator != NULL)
         pIterator->disposeAndClear(aEvent);
-    
+
     // Do this for
     // XPaintListener, XModifyListener,XMouseListener,XMouseMotionListener,XWindowListener?
 
@@ -682,7 +682,7 @@ void SAL_CALL PresenterSlideShowView::mouseExited (const awt::MouseEvent& rEvent
 
 
 //----- XMouseMotionListener --------------------------------------------------
-    
+
 void SAL_CALL PresenterSlideShowView::mouseDragged (const awt::MouseEvent& rEvent)
     throw (RuntimeException)
 {
@@ -763,7 +763,7 @@ void SAL_CALL PresenterSlideShowView::windowHidden (const lang::EventObject& rEv
 
 
 //----- XView -----------------------------------------------------------------
-    
+
 Reference<XResourceId> SAL_CALL PresenterSlideShowView::getResourceId (void)
     throw(RuntimeException)
 {
@@ -1064,7 +1064,7 @@ void PresenterSlideShowView::Resize (void)
     {
         pIterator->notifyEach(&util::XModifyListener::modified, aEvent);
     }
-    
+
     // Due to constant aspect ratio resizing may lead a preview that changes
     // its position but not its size.  This invalidates the back buffer and
     // we have to enforce a complete repaint.

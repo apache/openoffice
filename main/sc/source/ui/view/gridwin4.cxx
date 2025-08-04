@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1295,7 +1295,7 @@ void ScGridWindow::DrawButtons( SCCOL nX1, SCROW /*nY1*/, SCCOL nX2, SCROW /*nY2
 					//if address(nCol,nRow) is not the start pos of the merge area, the value of the nSizeX will be incorrect, it will be the length of the cell.
 					//should first get the start pos of the merge area, then get the nSizeX through the start pos.
 					pDoc->ExtendOverlapped(nStartCol, nStartRow,nCol, nRow, nTab);//get nStartCol,nStartRow
-					pViewData->GetMergeSizePixel( nStartCol, nStartRow, nSizeX, nSizeY );//get nSizeX 
+					pViewData->GetMergeSizePixel( nStartCol, nStartRow, nSizeX, nSizeY );//get nSizeX
 					nSizeY = pViewData->ToPixel(pDoc->GetRowHeight(nRow, nTab), pViewData->GetPPTY());
 					Point aScrPos = pViewData->GetScrPos( nCol, nRow, eWhich );
 
@@ -1840,32 +1840,32 @@ void ScGridWindow::GetSelectionRects( ::std::vector< Rectangle >& rPixelRects )
 //UNUSED2008-05  {
 //UNUSED2008-05      if ( nX2 < pViewData->GetPosX(eHWhich) || nY2 < pViewData->GetPosY(eVWhich) )
 //UNUSED2008-05          return;
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05      Update();           // wegen XOR
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05      MapMode aOld = GetMapMode(); SetMapMode(MAP_PIXEL);
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05      SCTAB nTab = pViewData->GetTabNo();
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05      SCCOL nPosX = pViewData->GetPosX(WhichH(eWhich));
 //UNUSED2008-05      SCROW nPosY = pViewData->GetPosY(WhichV(eWhich));
 //UNUSED2008-05      if (nX1 < nPosX) nX1 = nPosX;
 //UNUSED2008-05      if (nX2 < nPosX) nX2 = nPosX;
 //UNUSED2008-05      if (nY1 < nPosY) nY1 = nPosY;
 //UNUSED2008-05      if (nY2 < nPosY) nY2 = nPosY;
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05      Point aScrPos( pViewData->GetScrPos( nX1, nY1, eWhich ) );
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05      long nSizeXPix=0;
 //UNUSED2008-05      long nSizeYPix=0;
 //UNUSED2008-05      ScDocument* pDoc = pViewData->GetDocument();
 //UNUSED2008-05      double nPPTX = pViewData->GetPPTX();
 //UNUSED2008-05      double nPPTY = pViewData->GetPPTY();
 //UNUSED2008-05      SCCOLROW i;
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05      sal_Bool bLayoutRTL = pDoc->IsLayoutRTL( nTab );
 //UNUSED2008-05      long nLayoutSign = bLayoutRTL ? -1 : 1;
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05      if (ValidCol(nX2) && nX2>=nX1)
 //UNUSED2008-05          for (i=nX1; i<=nX2; i++)
 //UNUSED2008-05              nSizeXPix += ScViewData::ToPixel( pDoc->GetColWidth( static_cast<SCCOL>(i), nTab ), nPPTX );
@@ -1874,7 +1874,7 @@ void ScGridWindow::GetSelectionRects( ::std::vector< Rectangle >& rPixelRects )
 //UNUSED2008-05          aScrPos.X() -= nLayoutSign;
 //UNUSED2008-05          nSizeXPix   += 2;
 //UNUSED2008-05      }
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05      if (ValidRow(nY2) && nY2>=nY1)
 //UNUSED2008-05          for (i=nY1; i<=nY2; i++)
 //UNUSED2008-05              nSizeYPix += ScViewData::ToPixel( pDoc->GetRowHeight( i, nTab ), nPPTY );
@@ -1883,7 +1883,7 @@ void ScGridWindow::GetSelectionRects( ::std::vector< Rectangle >& rPixelRects )
 //UNUSED2008-05          aScrPos.Y() -= 1;
 //UNUSED2008-05          nSizeYPix   += 2;
 //UNUSED2008-05      }
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05      aScrPos.X() -= 2 * nLayoutSign;
 //UNUSED2008-05      aScrPos.Y() -= 2;
 //UNUSED2008-05  //	Rectangle aRect( aScrPos, Size( nSizeXPix + 3, nSizeYPix + 3 ) );
@@ -1894,12 +1894,12 @@ void ScGridWindow::GetSelectionRects( ::std::vector< Rectangle >& rPixelRects )
 //UNUSED2008-05          aRect.Left() = aRect.Right();   // end position is left
 //UNUSED2008-05          aRect.Right() = aScrPos.X();
 //UNUSED2008-05      }
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05      Invert(Rectangle( aRect.Left(), aRect.Top(), aRect.Left()+2, aRect.Bottom() ));
 //UNUSED2008-05      Invert(Rectangle( aRect.Right()-2, aRect.Top(), aRect.Right(), aRect.Bottom() ));
 //UNUSED2008-05      Invert(Rectangle( aRect.Left()+3, aRect.Top(), aRect.Right()-3, aRect.Top()+2 ));
 //UNUSED2008-05      Invert(Rectangle( aRect.Left()+3, aRect.Bottom()-2, aRect.Right()-3, aRect.Bottom() ));
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05      SetMapMode(aOld);
 //UNUSED2008-05  }
 

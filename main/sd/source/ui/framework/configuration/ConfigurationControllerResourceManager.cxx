@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -109,7 +109,7 @@ void ConfigurationControllerResourceManager::DeactivateResources (
         rResources.rend(),
         ::boost::bind(&ConfigurationControllerResourceManager::DeactivateResource,
             this, _1, rxConfiguration));
-}    
+}
 
 
 
@@ -148,7 +148,7 @@ void ConfigurationControllerResourceManager::ActivateResource (
 #endif
         return;
     }
-    
+
     try
     {
         // 2. Create the resource.
@@ -167,7 +167,7 @@ void ConfigurationControllerResourceManager::ActivateResource (
         {
             (void)e;
         }
-        
+
         if (xResource.is())
         {
 #if defined VERBOSE && VERBOSE>=1
@@ -221,7 +221,7 @@ void ConfigurationControllerResourceManager::DeactivateResource (
     {
         // 1. Remove resource from URL->Object map.
         ResourceDescriptor aDescriptor (RemoveResource(rxResourceId));
-        
+
         if (aDescriptor.mxResource.is() && aDescriptor.mxResourceFactory.is())
         {
             // 2.  Notify listeners that the resource is being deactivated.
@@ -257,7 +257,7 @@ void ConfigurationControllerResourceManager::DeactivateResource (
     {
         DBG_UNHANDLED_EXCEPTION();
     }
-    
+
     // 5.  Notify listeners that the resource is being deactivated.
     mpBroadcaster->NotifyListeners(
         FrameworkHelper::msResourceDeactivationEndEvent,
@@ -292,7 +292,7 @@ void ConfigurationControllerResourceManager::AddResource (
     aDescriptor.mxResource = rxResource;
     aDescriptor.mxResourceFactory = rxFactory;
     maResourceMap[rxResource->getResourceId()] = aDescriptor;
-    
+
 #if defined VERBOSE && VERBOSE>=2
     OSL_TRACE("ConfigurationControllerResourceManager::AddResource(): added %s -> %x\n",
         OUStringToOString(

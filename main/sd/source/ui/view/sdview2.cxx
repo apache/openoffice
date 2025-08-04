@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -470,7 +470,7 @@ void View::DragFinished( sal_Int8 nDropAction )
             if( pObj && pObj->GetPage() )
             {
 #ifdef DBG_UTIL
-			    SdrObject* pChkObj = 
+			    SdrObject* pChkObj =
 #endif
 					pObj->GetPage()->RemoveObject(nOrdNum);
 			    DBG_ASSERT(pChkObj==pObj,"pChkObj!=pObj beim RemoveObject()");
@@ -614,7 +614,7 @@ sal_Int8 View::AcceptDrop( const AcceptDropEvent& rEvt, DropTargetHelper& rTarge
 						{
 							mpDropMarkerObj = pPickObj;
 							ImplClearDrawDropMarker();
-							
+
 							if(mpDropMarkerObj)
 							{
 								mpDropMarker = new SdrDropMarkerOverlay(*this, *mpDropMarkerObj);
@@ -956,7 +956,7 @@ sal_Bool View::GetExchangeList( List*& rpExchangeList, List* pBookmarkList, sal_
             if( nType == 0  || nType == 2 )
 				bNameOK = mpDocSh->CheckPageName (
                     mpViewSh->GetActiveWindow(), *pNewName);
-            
+
             if( bNameOK && ( nType == 1  || nType == 2 ) )
             {
                 if( mpDoc->GetObj( *pNewName ) )

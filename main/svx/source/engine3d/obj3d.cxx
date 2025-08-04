@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -198,7 +198,7 @@ sdr::properties::BaseProperties* E3dObject::CreateObjectSpecificProperties()
 
 TYPEINIT1(E3dObject, SdrAttrObj);
 
-E3dObject::E3dObject() 
+E3dObject::E3dObject()
 :   maSubList(),
     maLocalBoundVol(),
     maTransformation(),
@@ -421,7 +421,7 @@ void E3dObject::NbcResize(const Point& rRef, const Fraction& xFact, const Fracti
 		const drawinglayer::geometry::ViewInformation3D aViewInfo3D(rVCScene.getViewInformation3D());
 		basegfx::B2DPoint aScaleCenter2D((double)rRef.X(), (double)rRef.Y());
 		basegfx::B2DHomMatrix aInverseSceneTransform(rVCScene.getObjectTransformation());
-		
+
 		aInverseSceneTransform.invert();
 		aScaleCenter2D = aInverseSceneTransform * aScaleCenter2D;
 
@@ -452,7 +452,7 @@ void E3dObject::NbcResize(const Point& rRef, const Fraction& xFact, const Fracti
 		// anwenden
 		basegfx::B3DHomMatrix mObjTrans(GetTransform());
 		mObjTrans *= mTrans;
-    
+
         E3DModifySceneSnapRectUpdater aUpdater(this);
 		SetTransform(mObjTrans);
 	}
@@ -675,7 +675,7 @@ basegfx::B3DRange E3dObject::RecalcBoundVolume() const
 			{
                 const uno::Sequence< beans::PropertyValue > aEmptyParameters;
                 const drawinglayer::geometry::ViewInformation3D aLocalViewInformation3D(aEmptyParameters);
-				
+
                 aRetval = drawinglayer::primitive3d::getB3DRangeFromPrimitive3DSequence(
 					xLocalSequence, aLocalViewInformation3D);
 			}
@@ -951,11 +951,11 @@ void E3dObject::NbcRotate(const Point& rRef, long nWink, double sn, double cs)
 
 	// SendRepaintBroadcast();
 	double fWinkelInRad = nWink/100 * F_PI180;
-	
+
 	basegfx::B3DHomMatrix aRotateZ;
 	aRotateZ.rotate(0.0, 0.0, fWinkelInRad);
 	NbcSetTransform(aRotateZ * GetTransform());
-	
+
 	SetRectsDirty();    // Veranlasst eine Neuberechnung aller BoundRects
 	NbcRotateGluePoints(rRef,nWink,sn,cs);  // Rotiert die Klebepunkte (die haben noch Koordinaten relativ
 											// zum Urpsung des Blattes
@@ -981,7 +981,7 @@ TYPEINIT1(E3dCompoundObject, E3dObject);
 |*
 \************************************************************************/
 
-E3dCompoundObject::E3dCompoundObject() 
+E3dCompoundObject::E3dCompoundObject()
 :   E3dObject(),
     aMaterialAmbientColor(),
     bCreateNormals(false),
@@ -992,7 +992,7 @@ E3dCompoundObject::E3dCompoundObject()
 	SetDefaultAttributes(aDefault);
 }
 
-E3dCompoundObject::E3dCompoundObject(E3dDefaultAttributes& rDefault) 
+E3dCompoundObject::E3dCompoundObject(E3dDefaultAttributes& rDefault)
 :   E3dObject(),
     aMaterialAmbientColor(),
     bCreateNormals(false),
@@ -1038,7 +1038,7 @@ basegfx::B2DPolyPolygon E3dCompoundObject::TakeXorPoly() const
 	{
         const sdr::contact::ViewContactOfE3dScene& rVCScene = static_cast< sdr::contact::ViewContactOfE3dScene& >(pRootScene->GetViewContact());
 		const basegfx::B3DPolyPolygon aCubePolyPolygon(CreateWireframe());
-		aRetval = basegfx::tools::createB2DPolyPolygonFromB3DPolyPolygon(aCubePolyPolygon, 
+		aRetval = basegfx::tools::createB2DPolyPolygonFromB3DPolyPolygon(aCubePolyPolygon,
 			aViewInfo3D.getObjectToView() * GetTransform());
 		aRetval.transform(rVCScene.getObjectTransformation());
 	}
@@ -1250,7 +1250,7 @@ basegfx::B2DPolyPolygon E3dCompoundObject::TransformToScreenCoor(const basegfx::
 
 	if(pRootScene)
 	{
-		aRetval = basegfx::tools::createB2DPolyPolygonFromB3DPolyPolygon(rCandidate, 
+		aRetval = basegfx::tools::createB2DPolyPolygonFromB3DPolyPolygon(rCandidate,
 			aViewInfo3D.getObjectToView() * GetTransform());
 		const sdr::contact::ViewContactOfE3dScene& rVCScene = static_cast< sdr::contact::ViewContactOfE3dScene& >(pRootScene->GetViewContact());
 		aRetval.transform(rVCScene.getObjectTransformation());
@@ -1261,7 +1261,7 @@ basegfx::B2DPolyPolygon E3dCompoundObject::TransformToScreenCoor(const basegfx::
 
 sal_Bool E3dCompoundObject::IsAOrdNumRemapCandidate(E3dScene*& prScene) const
 {
-	if(GetObjList() 
+	if(GetObjList()
 		&& GetObjList()->GetOwnerObj()
 		&& GetObjList()->GetOwnerObj()->ISA(E3dScene))
 	{

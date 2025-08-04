@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -214,7 +214,7 @@ ScEditWindow* GetScEditWindow ()
 //CHINA001 }
 //CHINA001
 //CHINA001 // -----------------------------------------------------------------------
-//CHINA001 
+//CHINA001
 //CHINA001 #define SET_CMD(i,id) x
 //CHINA001 aCmd  = aDel;							x
 //CHINA001 aCmd += ScGlobal::GetRscString( id );	x
@@ -420,7 +420,7 @@ ScEditWindow::ScEditWindow( Window* pParent, const ResId& rResId, ScEditWindowLo
 		//	Feldbefehle:
 	pEdEngine->SetData( aData );
 	pEdEngine->SetControlWord( pEdEngine->GetControlWord() | EE_CNTRL_MARKFIELDS );
-	mbRTL = ScGlobal::IsSystemRTL(); 
+	mbRTL = ScGlobal::IsSystemRTL();
 	if (mbRTL)
 		pEdEngine->SetDefaultHorizontalTextDirection(EE_HTEXTDIR_R2L);
 
@@ -481,7 +481,7 @@ void ScEditWindow::SetFont( const ScPatternAttr& rPattern )
 	pSet->Put( rPattern.GetItem(ATTR_CJK_FONT_HEIGHT), EE_CHAR_FONTHEIGHT_CJK );
 	pSet->Put( rPattern.GetItem(ATTR_CTL_FONT_HEIGHT), EE_CHAR_FONTHEIGHT_CTL );
 	if (mbRTL)
-		pSet->Put( SvxAdjustItem( SVX_ADJUST_RIGHT, EE_PARA_JUST ) );	
+		pSet->Put( SvxAdjustItem( SVX_ADJUST_RIGHT, EE_PARA_JUST ) );
 	pEdEngine->SetDefaults( pSet );
 }
 
@@ -599,7 +599,7 @@ void __EXPORT ScEditWindow::KeyInput( const KeyEvent& rKEvt )
 	else if ( !rKEvt.GetKeyCode().IsMod1() && !rKEvt.GetKeyCode().IsShift() &&
 		    	rKEvt.GetKeyCode().IsMod2() && rKEvt.GetKeyCode().GetCode() == KEY_DOWN )
 	{
-		if (aObjectSelectLink.IsSet() )			
+		if (aObjectSelectLink.IsSet() )
 			aObjectSelectLink.Call(this);
 	}
 }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -54,13 +54,13 @@ STDMETHODIMP JScriptValue::GetTypeInfo( UINT /*iTInfo*/,
 // JScriptValue, IDispatch --------------------------------------------
 STDMETHODIMP JScriptValue::GetIDsOfNames( REFIID /*riid*/,
 											 LPOLESTR *rgszNames,
-											 UINT /*cNames*/,			
+											 UINT /*cNames*/,
 											 LCID /*lcid*/,
 											 DISPID *rgDispId)
 {
 	if( !rgDispId)
 		return E_POINTER;
-	
+
 
 	HRESULT ret= S_OK;
 	CComBSTR name(*rgszNames);
@@ -94,7 +94,7 @@ STDMETHODIMP JScriptValue::Invoke( DISPID dispIdMember,
 		return DISP_E_NONAMEDARGS;
 
 
-	HRESULT ret= S_OK; 
+	HRESULT ret= S_OK;
 	switch( dispIdMember)
 	{
 	case 0: // DISPID_VALUE
@@ -108,13 +108,13 @@ STDMETHODIMP JScriptValue::Invoke( DISPID dispIdMember,
 		break;
 	case 1:
 		if( wFlags & DISPATCH_METHOD)
-			ret= Set( pDispParams->rgvarg[1], pDispParams->rgvarg[0]); 
+			ret= Set( pDispParams->rgvarg[1], pDispParams->rgvarg[0]);
 		if( FAILED( ret))
 			ret= DISP_E_EXCEPTION;
 		break;
-	case 2: 
+	case 2:
 		if( wFlags & DISPATCH_METHOD)
-			ret= Get( pVarResult); 
+			ret= Get( pVarResult);
 		if( FAILED( ret))
 			ret= DISP_E_EXCEPTION;
 		break;
@@ -140,7 +140,7 @@ STDMETHODIMP JScriptValue::Invoke( DISPID dispIdMember,
 
 // JScriptValue, IScriptOutParam-----------------------
 STDMETHODIMP JScriptValue::Set( VARIANT type, VARIANT value)
-{	
+{
 	Lock();
 	HRESULT hr= S_OK;
 	m_varValue.Clear();
@@ -244,13 +244,13 @@ STDMETHODIMP JScriptOutParam::GetTypeInfo( UINT /*iTInfo*/,
 // JScriptOutParam, IDispatch --------------------------------------------
 STDMETHODIMP JScriptOutParam::GetIDsOfNames( REFIID /*riid*/,
 											 LPOLESTR *rgszNames,
-											 UINT /*cNames*/,			
+											 UINT /*cNames*/,
 											 LCID /*lcid*/,
 											 DISPID *rgDispId)
 {
 	if( !rgDispId)
 		return E_POINTER;
-	
+
 
 	HRESULT ret= S_OK;
 	CComBSTR name(*rgszNames);
@@ -274,7 +274,7 @@ STDMETHODIMP JScriptOutParam::Invoke( DISPID dispIdMember,
 						 EXCEPINFO* /*pExcepInfo*/,
 						 UINT* /*puArgErr*/)
 {
-	HRESULT ret= S_OK; 
+	HRESULT ret= S_OK;
 	switch( dispIdMember)
 	{
 	case 0: // DISPID_VALUE
@@ -292,7 +292,7 @@ STDMETHODIMP JScriptOutParam::Invoke( DISPID dispIdMember,
 		else
 			ret= E_POINTER;
 		break;
-	case 1: // 
+	case 1: //
 		if( wFlags & DISPATCH_PROPERTYGET && pVarResult)
 		{
 			if( FAILED( VariantCopy( pVarResult, &m_varValue)))

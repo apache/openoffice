@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -76,9 +76,9 @@ DBG_NAME(ODBTable)
 ODBTable::ODBTable(connectivity::sdbcx::OCollection* _pTables
 		,const Reference< XConnection >& _rxConn
 		,const ::rtl::OUString& _rCatalog
-		,const ::rtl::OUString& _rSchema 
+		,const ::rtl::OUString& _rSchema
 		,const ::rtl::OUString& _rName
-		,const ::rtl::OUString& _rType 
+		,const ::rtl::OUString& _rType
 		,const ::rtl::OUString& _rDesc
 		,const Reference< XNameAccess >& _xColumnDefinitions) throw(SQLException)
 	:OTable_Base(_pTables,_rxConn,_rxConn->getMetaData().is() && _rxConn->getMetaData()->supportsMixedCaseQuotedIdentifiers(), _rName, _rType, _rDesc, _rSchema, _rCatalog )
@@ -97,7 +97,7 @@ ODBTable::ODBTable(connectivity::sdbcx::OCollection* _pTables
 // -----------------------------------------------------------------------------
 ODBTable::ODBTable(connectivity::sdbcx::OCollection* _pTables
 				   ,const Reference< XConnection >& _rxConn)
-				throw(SQLException) 
+				throw(SQLException)
 	:OTable_Base(_pTables,_rxConn, _rxConn->getMetaData().is() && _rxConn->getMetaData()->supportsMixedCaseQuotedIdentifiers())
 	,m_nPrivileges(-1)
 {
@@ -197,7 +197,7 @@ void ODBTable::construct()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "ODBTable::construct" );
 	::osl::MutexGuard aGuard(m_aMutex);
-	
+
 	// we don't collect the privileges here, this is potentially expensive. Instead we determine them on request.
 	// (see getFastPropertyValue)
 	m_nPrivileges = -1;
@@ -224,10 +224,10 @@ void ODBTable::construct()
 
 	registerProperty(PROPERTY_PRIVILEGES, PROPERTY_ID_PRIVILEGES, PropertyAttribute::BOUND | PropertyAttribute::READONLY,
 					&m_nPrivileges, ::getCppuType(static_cast<sal_Int32*>(NULL)));
-	
+
 	registerMayBeVoidProperty(PROPERTY_TEXTLINECOLOR, PROPERTY_ID_TEXTLINECOLOR, PropertyAttribute::BOUND | PropertyAttribute::MAYBEVOID,
 					&m_aTextLineColor, ::getCppuType(static_cast<sal_Int32*>(NULL)));
-	
+
 	registerProperty(PROPERTY_TEXTEMPHASIS, PROPERTY_ID_TEXTEMPHASIS, PropertyAttribute::BOUND,
 					&m_nFontEmphasis, ::getCppuType(&m_nFontEmphasis));
 
@@ -275,12 +275,12 @@ void ODBTable::construct()
 				pIter->Attributes = PropertyAttribute::READONLY;
 		}
 	}
-	
-	return new ::cppu::OPropertyArrayHelper(aProps);			
+
+	return new ::cppu::OPropertyArrayHelper(aProps);
 }
-// -----------------------------------------------------------------------------																
-::cppu::IPropertyArrayHelper & SAL_CALL ODBTable::getInfoHelper() 
-{																
+// -----------------------------------------------------------------------------
+::cppu::IPropertyArrayHelper & SAL_CALL ODBTable::getInfoHelper()
+{
 	return *ODBTable_PROP::getArrayHelper(isNew() ? 1 : 0);
 }
 // -------------------------------------------------------------------------
@@ -305,7 +305,7 @@ Sequence< Type > SAL_CALL ODBTable::getTypes(  ) throw(RuntimeException)
 
 	Sequence< Type > aTypes(OTable_Base::getTypes());
 	::std::vector<Type> aOwnTypes;
-	aOwnTypes.reserve(aTypes.getLength());	
+	aOwnTypes.reserve(aTypes.getLength());
 
 	const Type* pIter = aTypes.getConstArray();
 	const Type* pEnd = pIter + aTypes.getLength();
@@ -314,7 +314,7 @@ Sequence< Type > SAL_CALL ODBTable::getTypes(  ) throw(RuntimeException)
 		if( (*pIter != aRenameType || getRenameService().is()) && (*pIter != aAlterType || getAlterService().is()))
 			aOwnTypes.push_back(*pIter);
 	}
-	
+
 	Type* pTypes = aOwnTypes.empty() ? 0 : &aOwnTypes[0];
 	return Sequence< Type >(pTypes, aOwnTypes.size());
 }

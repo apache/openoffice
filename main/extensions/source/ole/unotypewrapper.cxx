@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -90,7 +90,7 @@ STDMETHODIMP UnoTypeWrapper::GetTypeInfo( UINT /*iTInfo*/,
 // UnoTypeWrapper, IDispatch --------------------------------------------
 STDMETHODIMP UnoTypeWrapper::GetIDsOfNames( REFIID /*riid*/,
                                             LPOLESTR *rgszNames,
-                                            UINT /*cNames*/,			
+                                            UINT /*cNames*/,
                                             LCID /*lcid*/,
                                             DISPID *rgDispId)
 {
@@ -121,12 +121,12 @@ STDMETHODIMP UnoTypeWrapper::Invoke( DISPID dispIdMember,
 {
     if (pDispParams == NULL)
         return DISP_E_EXCEPTION;
-        
+
     if( pDispParams->cNamedArgs)
 		return DISP_E_NONAMEDARGS;
-    
-    
-	HRESULT ret= S_OK; 
+
+
+	HRESULT ret= S_OK;
 	switch( dispIdMember)
 	{
 	case DISPID_VALUE: // DISPID_VALUE
@@ -151,7 +151,7 @@ STDMETHODIMP UnoTypeWrapper::Invoke( DISPID dispIdMember,
 
 // IUnoTypeWrapper-----------------------
 STDMETHODIMP UnoTypeWrapper::put_Name(BSTR  val)
-{	
+{
  	Lock();
  	HRESULT hr = S_OK;
     m_sName = val;

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -36,7 +36,7 @@ using ::rtl::OUString ;
 using ::com::sun::star::xml::wrapper::XXMLElementWrapper ;
 using ::com::sun::star::xml::crypto::XXMLSignatureTemplate ;
 
-XMLSignatureTemplateImpl :: XMLSignatureTemplateImpl( const Reference< XMultiServiceFactory >& aFactory ) 
+XMLSignatureTemplateImpl :: XMLSignatureTemplateImpl( const Reference< XMultiServiceFactory >& aFactory )
 	:m_xTemplate( NULL ),
      m_xServiceManager( aFactory ),
 	 m_nStatus ( ::com::sun::star::xml::crypto::SecurityOperationStatus_UNKNOWN )
@@ -47,40 +47,40 @@ XMLSignatureTemplateImpl :: ~XMLSignatureTemplateImpl() {
 }
 
 /* XXMLSignatureTemplate */
-void SAL_CALL XMLSignatureTemplateImpl :: setTemplate( const Reference< XXMLElementWrapper >& aTemplate ) 
+void SAL_CALL XMLSignatureTemplateImpl :: setTemplate( const Reference< XXMLElementWrapper >& aTemplate )
 	throw( com::sun::star::uno::RuntimeException, com::sun::star::lang::IllegalArgumentException)
 {
 	m_xTemplate = aTemplate ;
 }
 
 /* XXMLSignatureTemplate */
-Reference< XXMLElementWrapper > SAL_CALL XMLSignatureTemplateImpl :: getTemplate() 
+Reference< XXMLElementWrapper > SAL_CALL XMLSignatureTemplateImpl :: getTemplate()
 	throw (com::sun::star::uno::RuntimeException)
 {
 	return m_xTemplate ;
 }
 
-void SAL_CALL XMLSignatureTemplateImpl :: setTarget( const ::com::sun::star::uno::Reference< ::com::sun::star::xml::wrapper::XXMLElementWrapper >& aXmlElement ) 
+void SAL_CALL XMLSignatureTemplateImpl :: setTarget( const ::com::sun::star::uno::Reference< ::com::sun::star::xml::wrapper::XXMLElementWrapper >& aXmlElement )
 	throw( com::sun::star::uno::RuntimeException, com::sun::star::lang::IllegalArgumentException)
 {
 	targets.push_back( aXmlElement );
 }
 
-::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::xml::wrapper::XXMLElementWrapper > > SAL_CALL XMLSignatureTemplateImpl :: getTargets() 
+::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::xml::wrapper::XXMLElementWrapper > > SAL_CALL XMLSignatureTemplateImpl :: getTargets()
 	throw (com::sun::star::uno::RuntimeException)
 {
 	sal_Int32 length = targets.size();
 	::com::sun::star::uno::Sequence<
 		::com::sun::star::uno::Reference< ::com::sun::star::xml::wrapper::XXMLElementWrapper >
 		> aTargets (length);
-		
+
 	sal_Int32 i;
-	
+
 	for (i=0; i<length; i++)
 	{
 		aTargets[i] = targets[i];
 	}
-	
+
 	return aTargets;
 }
 

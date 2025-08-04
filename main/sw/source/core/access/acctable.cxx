@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
- 
+
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
@@ -214,12 +214,12 @@ void SwAccessibleTableData_Impl::CollectRowHeaderData( const SwFrm *pFrm )
 				//return ;
 
 				maRows.insert( pLower->Frm().Top() - maTabFrmPos.Y() );
-		
+
 				CollectRowHeaderData( pLower );
 
 
 			}
-			else if( pLower->IsCellFrm() && 
+			else if( pLower->IsCellFrm() &&
                      rLower.IsAccessible( mbIsInPagePreview ) )
 			{
 				//Added by yanjun. Can't find the "GetRowHeaderFlag" function(Need vefiry).
@@ -263,12 +263,12 @@ void SwAccessibleTableData_Impl::CollectColumnHeaderData( const SwFrm *pFrm )
 					return ;
 
 				maRows.insert( pLower->Frm().Top() - maTabFrmPos.Y() );
-		
+
 				CollectColumnHeaderData( pLower );
 
 
 			}
-			else if( pLower->IsCellFrm() && 
+			else if( pLower->IsCellFrm() &&
                      rLower.IsAccessible( mbIsInPagePreview ) )
 			{
 				maColumns.insert( pLower->Frm().Left() - maTabFrmPos.X() );
@@ -1475,7 +1475,7 @@ void SwAccessibleTable::InvalidatePosOrSize( const SwRect& rOldBox )
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
-	//need to update children 
+	//need to update children
 	SwAccessibleTableData_Impl *pNewTableData = CreateNewTableData();
 	if( !pNewTableData->CompareExtents( GetTableData() ) )
 	{
@@ -1837,17 +1837,17 @@ void SAL_CALL SwAccessibleTable::deselectAccessibleChild(
 	pCrsrShell->EndAction();
 }
 
-void  SwAccessibleTable::SetTableData(SwAccessibleTableData_Impl* mpNewTableData)  
+void  SwAccessibleTable::SetTableData(SwAccessibleTableData_Impl* mpNewTableData)
 {
 	mpTableData = mpNewTableData;
 }
 
-sal_Int32 SAL_CALL SwAccessibleTable::getBackground() 
+sal_Int32 SAL_CALL SwAccessibleTable::getBackground()
 		throw (::com::sun::star::uno::RuntimeException)
 {
 	const SvxBrushItem &rBack = GetFrm()->GetAttrSet()->GetBackground();
 	sal_uInt32 crBack = rBack.GetColor().GetColor();
-	
+
 	if (COL_AUTO == crBack)
 	{
 		uno::Reference<XAccessible> xAccDoc = getAccessibleParent();
@@ -1914,12 +1914,12 @@ void SwAccessibleTable::AddSelectionCell(const SwAccessibleContext* pAccCell ,sa
 	else
 	{
 		m_vecCellRemove.push_back(pAccCell);
-	}	
+	}
 }
 
 //=====  XAccessibleTableSelection  ============================================
-sal_Bool SAL_CALL SwAccessibleTable::selectRow( sal_Int32 row ) 
-	throw (lang::IndexOutOfBoundsException, uno::RuntimeException) 
+sal_Bool SAL_CALL SwAccessibleTable::selectRow( sal_Int32 row )
+	throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
 {
 	if( isAccessibleColumnSelected( row ) )
 		return sal_True;
@@ -1934,7 +1934,7 @@ sal_Bool SAL_CALL SwAccessibleTable::selectRow( sal_Int32 row )
 
 	return sal_True;
 }
-sal_Bool SAL_CALL SwAccessibleTable::selectColumn( sal_Int32 column ) 
+sal_Bool SAL_CALL SwAccessibleTable::selectColumn( sal_Int32 column )
 	throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
 {
 	if( isAccessibleColumnSelected( column ) )
@@ -1950,7 +1950,7 @@ sal_Bool SAL_CALL SwAccessibleTable::selectColumn( sal_Int32 column )
 	}
 	return sal_True;
 }
-sal_Bool SAL_CALL SwAccessibleTable::unselectRow( sal_Int32 row ) 
+sal_Bool SAL_CALL SwAccessibleTable::unselectRow( sal_Int32 row )
 	throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
 {
 	if( isAccessibleSelected( row , 0 ) &&  isAccessibleSelected( row , getAccessibleColumnCount()-1 ) )
@@ -1966,7 +1966,7 @@ sal_Bool SAL_CALL SwAccessibleTable::unselectRow( sal_Int32 row )
 	}
 	return sal_True;
 }
-sal_Bool SAL_CALL SwAccessibleTable::unselectColumn( sal_Int32 column ) 
+sal_Bool SAL_CALL SwAccessibleTable::unselectColumn( sal_Int32 column )
 	throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
 {
 	if( isAccessibleSelected( 0 , column ) &&  isAccessibleSelected( getAccessibleRowCount()-1,column))

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -72,7 +72,7 @@ SalFrameGeometry SalFrame::GetGeometry()
 
 // ----------------------------------------------------------------------------
 
-SalGraphics::SalGraphics() 
+SalGraphics::SalGraphics()
 :   m_nLayout( 0 ),
     m_bAntiAliasB2DDraw(false)
 {
@@ -314,7 +314,7 @@ basegfx::B2DPoint SalGraphics::mirror( const basegfx::B2DPoint& i_rPoint, const 
         w = i_pOutDev->GetOutputWidthPixel();
     else
         w = GetGraphicsWidth();
-    
+
     DBG_ASSERT( w, "missing graphics width" );
 
     basegfx::B2DPoint aRet( i_rPoint );
@@ -343,9 +343,9 @@ basegfx::B2DPolygon SalGraphics::mirror( const basegfx::B2DPolygon& i_rPoly, con
         w = i_pOutDev->GetOutputWidthPixel();
     else
         w = GetGraphicsWidth();
-    
+
     DBG_ASSERT( w, "missing graphics width" );
-    
+
     basegfx::B2DPolygon aRet;
 	if( w )
     {
@@ -354,9 +354,9 @@ basegfx::B2DPolygon SalGraphics::mirror( const basegfx::B2DPolygon& i_rPoly, con
         {
             aRet.append( mirror( i_rPoly.getB2DPoint( i ), i_pOutDev, i_bBack ) );
             if( i_rPoly.isPrevControlPointUsed( i ) )
-                aRet.setPrevControlPoint( i, mirror( i_rPoly.getPrevControlPoint( i ), i_pOutDev, i_bBack ) ); 
+                aRet.setPrevControlPoint( i, mirror( i_rPoly.getPrevControlPoint( i ), i_pOutDev, i_bBack ) );
             if( i_rPoly.isNextControlPointUsed( i ) )
-                aRet.setNextControlPoint( i, mirror( i_rPoly.getNextControlPoint( i ), i_pOutDev, i_bBack ) ); 
+                aRet.setNextControlPoint( i, mirror( i_rPoly.getNextControlPoint( i ), i_pOutDev, i_bBack ) );
         }
         aRet.setClosed( i_rPoly.isClosed() );
         aRet.flip();
@@ -373,9 +373,9 @@ basegfx::B2DPolyPolygon SalGraphics::mirror( const basegfx::B2DPolyPolygon& i_rP
         w = i_pOutDev->GetOutputWidthPixel();
     else
         w = GetGraphicsWidth();
-    
+
     DBG_ASSERT( w, "missing graphics width" );
-    
+
     basegfx::B2DPolyPolygon aRet;
 	if( w )
     {
@@ -430,10 +430,10 @@ void	SalGraphics::DrawRect( long nX, long nY, long nWidth, long nHeight, const O
 		mirror( nX, nWidth, pOutDev );
 	drawRect( nX, nY, nWidth, nHeight );
 }
-bool SalGraphics::drawPolyLine( 
+bool SalGraphics::drawPolyLine(
     const basegfx::B2DPolygon& /*rPolyPolygon*/,
     double /*fTransparency*/,
-    const basegfx::B2DVector& /*rLineWidths*/, 
+    const basegfx::B2DVector& /*rLineWidths*/,
     basegfx::B2DLineJoin /*eLineJoin*/,
     com::sun::star::drawing::LineCap /*eLineCap*/)
 {
@@ -445,7 +445,7 @@ void SalGraphics::DrawPolyLine( sal_uInt32 nPoints, const SalPoint* pPtAry, cons
 	if( (m_nLayout & SAL_LAYOUT_BIDI_RTL) || (pOutDev && pOutDev->IsRTLEnabled()) )
 	{
 		SalPoint* pPtAry2 = new SalPoint[nPoints];
-		sal_Bool bCopied = mirror( nPoints, pPtAry, pPtAry2, pOutDev ); 
+		sal_Bool bCopied = mirror( nPoints, pPtAry, pPtAry2, pOutDev );
 		drawPolyLine( nPoints, bCopied ? pPtAry2 : pPtAry );
 		delete [] pPtAry2;
 	}
@@ -458,7 +458,7 @@ void SalGraphics::DrawPolygon( sal_uInt32 nPoints, const SalPoint* pPtAry, const
 	if( (m_nLayout & SAL_LAYOUT_BIDI_RTL) || (pOutDev && pOutDev->IsRTLEnabled()) )
 	{
 		SalPoint* pPtAry2 = new SalPoint[nPoints];
-		sal_Bool bCopied = mirror( nPoints, pPtAry, pPtAry2, pOutDev ); 
+		sal_Bool bCopied = mirror( nPoints, pPtAry, pPtAry2, pOutDev );
 		drawPolygon( nPoints, bCopied ? pPtAry2 : pPtAry );
 		delete [] pPtAry2;
 	}
@@ -477,7 +477,7 @@ void SalGraphics::DrawPolyPolygon( sal_uInt32 nPoly, const sal_uInt32* pPoints, 
         {
             sal_uLong nPoints = pPoints[i];
             pPtAry2[i] = new SalPoint[ nPoints ];
-		    mirror( nPoints, pPtAry[i], pPtAry2[i], pOutDev ); 
+		    mirror( nPoints, pPtAry[i], pPtAry2[i], pOutDev );
         }
 
         drawPolyPolygon( nPoly, pPoints, (PCONSTSALPOINT*)pPtAry2 );
@@ -493,7 +493,7 @@ void SalGraphics::DrawPolyPolygon( sal_uInt32 nPoly, const sal_uInt32* pPoints, 
 bool SalGraphics::DrawPolyPolygon( const ::basegfx::B2DPolyPolygon& i_rPolyPolygon, double i_fTransparency, const OutputDevice* i_pOutDev )
 {
     bool bRet = false;
-	if( (m_nLayout & SAL_LAYOUT_BIDI_RTL) || (i_pOutDev && i_pOutDev->IsRTLEnabled()) ) 
+	if( (m_nLayout & SAL_LAYOUT_BIDI_RTL) || (i_pOutDev && i_pOutDev->IsRTLEnabled()) )
 	{
         basegfx::B2DPolyPolygon aMirror( mirror( i_rPolyPolygon, i_pOutDev ) );
         bRet = drawPolyPolygon( aMirror, i_fTransparency );
@@ -511,10 +511,10 @@ bool SalGraphics::drawPolyPolygon( const ::basegfx::B2DPolyPolygon&, double /*fT
 sal_Bool SalGraphics::DrawPolyLineBezier( sal_uInt32 nPoints, const SalPoint* pPtAry, const sal_uInt8* pFlgAry, const OutputDevice* pOutDev )
 {
     sal_Bool bResult = sal_False;
-	if( (m_nLayout & SAL_LAYOUT_BIDI_RTL) || (pOutDev && pOutDev->IsRTLEnabled()) ) 
+	if( (m_nLayout & SAL_LAYOUT_BIDI_RTL) || (pOutDev && pOutDev->IsRTLEnabled()) )
 	{
 		SalPoint* pPtAry2 = new SalPoint[nPoints];
-		sal_Bool bCopied = mirror( nPoints, pPtAry, pPtAry2, pOutDev ); 
+		sal_Bool bCopied = mirror( nPoints, pPtAry, pPtAry2, pOutDev );
 		bResult = drawPolyLineBezier( nPoints, bCopied ? pPtAry2 : pPtAry, pFlgAry );
 		delete [] pPtAry2;
 	}
@@ -526,10 +526,10 @@ sal_Bool SalGraphics::DrawPolyLineBezier( sal_uInt32 nPoints, const SalPoint* pP
 sal_Bool SalGraphics::DrawPolygonBezier( sal_uInt32 nPoints, const SalPoint* pPtAry, const sal_uInt8* pFlgAry, const OutputDevice* pOutDev )
 {
     sal_Bool bResult = sal_False;
-	if( (m_nLayout & SAL_LAYOUT_BIDI_RTL) || (pOutDev && pOutDev->IsRTLEnabled()) ) 
+	if( (m_nLayout & SAL_LAYOUT_BIDI_RTL) || (pOutDev && pOutDev->IsRTLEnabled()) )
 	{
 		SalPoint* pPtAry2 = new SalPoint[nPoints];
-		sal_Bool bCopied = mirror( nPoints, pPtAry, pPtAry2, pOutDev ); 
+		sal_Bool bCopied = mirror( nPoints, pPtAry, pPtAry2, pOutDev );
 		bResult = drawPolygonBezier( nPoints, bCopied ? pPtAry2 : pPtAry, pFlgAry );
 		delete [] pPtAry2;
 	}
@@ -542,7 +542,7 @@ sal_Bool SalGraphics::DrawPolyPolygonBezier( sal_uInt32 i_nPoly, const sal_uInt3
                                                    const SalPoint* const* i_pPtAry, const sal_uInt8* const* i_pFlgAry, const OutputDevice* i_pOutDev )
 {
     sal_Bool bRet = sal_False;
-	if( (m_nLayout & SAL_LAYOUT_BIDI_RTL) || (i_pOutDev && i_pOutDev->IsRTLEnabled()) ) 
+	if( (m_nLayout & SAL_LAYOUT_BIDI_RTL) || (i_pOutDev && i_pOutDev->IsRTLEnabled()) )
 	{
         // TODO: optimize, reduce new/delete calls
         SalPoint **pPtAry2 = new SalPoint*[i_nPoly];
@@ -551,7 +551,7 @@ sal_Bool SalGraphics::DrawPolyPolygonBezier( sal_uInt32 i_nPoly, const sal_uInt3
         {
             sal_uLong nPoints = i_pPoints[i];
             pPtAry2[i] = new SalPoint[ nPoints ];
-		    mirror( nPoints, i_pPtAry[i], pPtAry2[i], i_pOutDev ); 
+		    mirror( nPoints, i_pPtAry[i], pPtAry2[i], i_pOutDev );
         }
 
         bRet = drawPolyPolygonBezier( i_nPoly, i_pPoints, (PCONSTSALPOINT*)pPtAry2, i_pFlgAry );
@@ -565,16 +565,16 @@ sal_Bool SalGraphics::DrawPolyPolygonBezier( sal_uInt32 i_nPoly, const sal_uInt3
     return bRet;
 }
 
-bool SalGraphics::DrawPolyLine( 
-    const ::basegfx::B2DPolygon& i_rPolygon, 
+bool SalGraphics::DrawPolyLine(
+    const ::basegfx::B2DPolygon& i_rPolygon,
     double i_fTransparency,
-    const ::basegfx::B2DVector& i_rLineWidth, 
+    const ::basegfx::B2DVector& i_rLineWidth,
     basegfx::B2DLineJoin i_eLineJoin,
     com::sun::star::drawing::LineCap i_eLineCap,
     const OutputDevice* i_pOutDev )
 {
     bool bRet = false;
-	if( (m_nLayout & SAL_LAYOUT_BIDI_RTL) || (i_pOutDev && i_pOutDev->IsRTLEnabled()) ) 
+	if( (m_nLayout & SAL_LAYOUT_BIDI_RTL) || (i_pOutDev && i_pOutDev->IsRTLEnabled()) )
 	{
         basegfx::B2DPolygon aMirror( mirror( i_rPolygon, i_pOutDev ) );
         bRet = drawPolyLine( aMirror, i_fTransparency, i_rLineWidth, i_eLineJoin, i_eLineCap );
@@ -589,7 +589,7 @@ void	SalGraphics::CopyArea( long nDestX, long nDestY,
                                long nSrcWidth, long nSrcHeight,
                                sal_uInt16 nFlags, const OutputDevice *pOutDev )
 {
-	if( (m_nLayout & SAL_LAYOUT_BIDI_RTL) || (pOutDev && pOutDev->IsRTLEnabled()) ) 
+	if( (m_nLayout & SAL_LAYOUT_BIDI_RTL) || (pOutDev && pOutDev->IsRTLEnabled()) )
 	{
 		mirror( nDestX, nSrcWidth, pOutDev );
 		mirror( nSrcX, nSrcWidth, pOutDev );
@@ -599,14 +599,14 @@ void	SalGraphics::CopyArea( long nDestX, long nDestY,
 void	SalGraphics::CopyBits( const SalTwoRect& rPosAry,
                                SalGraphics* pSrcGraphics, const OutputDevice *pOutDev, const OutputDevice *pSrcOutDev )
 {
-	if( ( (m_nLayout & SAL_LAYOUT_BIDI_RTL) || (pOutDev && pOutDev->IsRTLEnabled()) ) || 
+	if( ( (m_nLayout & SAL_LAYOUT_BIDI_RTL) || (pOutDev && pOutDev->IsRTLEnabled()) ) ||
         (pSrcGraphics && ( (pSrcGraphics->GetLayout() & SAL_LAYOUT_BIDI_RTL)  || (pSrcOutDev && pSrcOutDev->IsRTLEnabled()) ) ) )
 	{
 		SalTwoRect aPosAry2 = rPosAry;
 		if( (pSrcGraphics && (pSrcGraphics->GetLayout() & SAL_LAYOUT_BIDI_RTL)) || (pSrcOutDev && pSrcOutDev->IsRTLEnabled()) )
-			mirror( aPosAry2.mnSrcX, aPosAry2.mnSrcWidth, pSrcOutDev ); 
-		if( (m_nLayout & SAL_LAYOUT_BIDI_RTL) || (pOutDev && pOutDev->IsRTLEnabled()) ) 
-			mirror( aPosAry2.mnDestX, aPosAry2.mnDestWidth, pOutDev ); 
+			mirror( aPosAry2.mnSrcX, aPosAry2.mnSrcWidth, pSrcOutDev );
+		if( (m_nLayout & SAL_LAYOUT_BIDI_RTL) || (pOutDev && pOutDev->IsRTLEnabled()) )
+			mirror( aPosAry2.mnDestX, aPosAry2.mnDestWidth, pOutDev );
 		copyBits( aPosAry2, pSrcGraphics );
 	}
 	else
@@ -618,7 +618,7 @@ void	SalGraphics::DrawBitmap( const SalTwoRect& rPosAry,
 	if( (m_nLayout & SAL_LAYOUT_BIDI_RTL) || (pOutDev && pOutDev->IsRTLEnabled()) )
 	{
 		SalTwoRect aPosAry2 = rPosAry;
-		mirror( aPosAry2.mnDestX, aPosAry2.mnDestWidth, pOutDev ); 
+		mirror( aPosAry2.mnDestX, aPosAry2.mnDestWidth, pOutDev );
 		drawBitmap( aPosAry2, rSalBitmap );
 	}
 	else
@@ -631,7 +631,7 @@ void	SalGraphics::DrawBitmap( const SalTwoRect& rPosAry,
 	if( (m_nLayout & SAL_LAYOUT_BIDI_RTL) || (pOutDev && pOutDev->IsRTLEnabled()) )
 	{
 		SalTwoRect aPosAry2 = rPosAry;
-		mirror( aPosAry2.mnDestX, aPosAry2.mnDestWidth, pOutDev ); 
+		mirror( aPosAry2.mnDestX, aPosAry2.mnDestWidth, pOutDev );
 		drawBitmap( aPosAry2, rSalBitmap, nTransparentColor );
 	}
 	else
@@ -644,7 +644,7 @@ void SalGraphics::DrawBitmap( const SalTwoRect& rPosAry,
 	if( (m_nLayout & SAL_LAYOUT_BIDI_RTL) || (pOutDev && pOutDev->IsRTLEnabled()) )
 	{
 		SalTwoRect aPosAry2 = rPosAry;
-		mirror( aPosAry2.mnDestX, aPosAry2.mnDestWidth, pOutDev ); 
+		mirror( aPosAry2.mnDestX, aPosAry2.mnDestWidth, pOutDev );
 		drawBitmap( aPosAry2, rSalBitmap, rTransparentBitmap );
 	}
 	else
@@ -657,7 +657,7 @@ void	SalGraphics::DrawMask( const SalTwoRect& rPosAry,
 	if( (m_nLayout & SAL_LAYOUT_BIDI_RTL) || (pOutDev && pOutDev->IsRTLEnabled()) )
 	{
 		SalTwoRect aPosAry2 = rPosAry;
-		mirror( aPosAry2.mnDestX, aPosAry2.mnDestWidth, pOutDev ); 
+		mirror( aPosAry2.mnDestX, aPosAry2.mnDestWidth, pOutDev );
 		drawMask( aPosAry2, rSalBitmap, nMaskColor );
 	}
 	else
@@ -686,7 +686,7 @@ void	SalGraphics::Invert( sal_uInt32 nPoints, const SalPoint* pPtAry, SalInvert 
 	if( (m_nLayout & SAL_LAYOUT_BIDI_RTL) || (pOutDev && pOutDev->IsRTLEnabled()) )
 	{
 		SalPoint* pPtAry2 = new SalPoint[nPoints];
-		sal_Bool bCopied = mirror( nPoints, pPtAry, pPtAry2, pOutDev ); 
+		sal_Bool bCopied = mirror( nPoints, pPtAry, pPtAry2, pOutDev );
 		invert( nPoints, bCopied ? pPtAry2 : pPtAry, nFlags );
 		delete [] pPtAry2;
 	}
@@ -794,7 +794,7 @@ sal_Bool SalGraphics::GetNativeControlRegion( ControlType nType, ControlPart nPa
         Rectangle rgn( rControlRegion );
         mirror( rgn, pOutDev );
         mirror( nType, aValue, pOutDev );
-        if( getNativeControlRegion( nType, nPart, rgn, nState, aValue, aCaption, 
+        if( getNativeControlRegion( nType, nPart, rgn, nState, aValue, aCaption,
                                                 rNativeBoundingRegion, rNativeContentRegion ) )
         {
             mirror( rNativeBoundingRegion, pOutDev, true );
@@ -809,19 +809,19 @@ sal_Bool SalGraphics::GetNativeControlRegion( ControlType nType, ControlPart nPa
         }
     }
     else
-        return getNativeControlRegion( nType, nPart, rControlRegion, nState, aValue, aCaption, 
+        return getNativeControlRegion( nType, nPart, rControlRegion, nState, aValue, aCaption,
                                                 rNativeBoundingRegion, rNativeContentRegion );
 }
 
 bool SalGraphics::DrawAlphaBitmap( const SalTwoRect& rPosAry,
                                    const SalBitmap& rSourceBitmap,
-                                   const SalBitmap& rAlphaBitmap, 
+                                   const SalBitmap& rAlphaBitmap,
                                    const OutputDevice *pOutDev )
 {
 	if( (m_nLayout & SAL_LAYOUT_BIDI_RTL) || (pOutDev && pOutDev->IsRTLEnabled()) )
 	{
 		SalTwoRect aPosAry2 = rPosAry;
-		mirror( aPosAry2.mnDestX, aPosAry2.mnDestWidth, pOutDev ); 
+		mirror( aPosAry2.mnDestX, aPosAry2.mnDestWidth, pOutDev );
 		return drawAlphaBitmap( aPosAry2, rSourceBitmap, rAlphaBitmap );
 	}
 	else
@@ -854,7 +854,7 @@ bool SalGraphics::DrawTransformedBitmap(
     }
 }
 
-bool SalGraphics::DrawAlphaRect( long nX, long nY, long nWidth, long nHeight, 
+bool SalGraphics::DrawAlphaRect( long nX, long nY, long nWidth, long nHeight,
                                  sal_uInt8 nTransparency, const OutputDevice *pOutDev )
 {
 	if( (m_nLayout & SAL_LAYOUT_BIDI_RTL) || (pOutDev && pOutDev->IsRTLEnabled()) )

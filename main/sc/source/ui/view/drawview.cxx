@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -226,7 +226,7 @@ void ScDrawView::InvalidateDrawTextAttrs()
 	rBindings.Invalidate( SID_ULINE_VAL_DOTTED );
 	rBindings.Invalidate( SID_ATTR_CHAR_OVERLINE );
 	rBindings.Invalidate( SID_ATTR_CHAR_COLOR );
-	rBindings.Invalidate( SID_ATTR_PARA_ADJUST_LEFT );			
+	rBindings.Invalidate( SID_ATTR_PARA_ADJUST_LEFT );
 	rBindings.Invalidate( SID_ATTR_PARA_ADJUST_RIGHT );
 	rBindings.Invalidate( SID_ATTR_PARA_ADJUST_BLOCK );
 	rBindings.Invalidate( SID_ATTR_PARA_ADJUST_CENTER);
@@ -239,9 +239,9 @@ void ScDrawView::InvalidateDrawTextAttrs()
 	rBindings.Invalidate( SID_ATTR_PARA_LINESPACE_20 );
 	rBindings.Invalidate( SID_SET_SUPER_SCRIPT );
 	rBindings.Invalidate( SID_SET_SUB_SCRIPT );
-	rBindings.Invalidate( SID_ATTR_CHAR_KERNING ); 
+	rBindings.Invalidate( SID_ATTR_CHAR_KERNING );
 	rBindings.Invalidate( SID_ATTR_CHAR_STRIKEOUT );
-	rBindings.Invalidate( SID_ATTR_CHAR_SHADOWED ); 
+	rBindings.Invalidate( SID_ATTR_CHAR_SHADOWED );
 	rBindings.Invalidate( SID_TEXTDIRECTION_LEFT_TO_RIGHT );
 	rBindings.Invalidate( SID_TEXTDIRECTION_TOP_TO_BOTTOM );
 	rBindings.Invalidate( SID_ATTR_PARA_LEFT_TO_RIGHT );
@@ -833,7 +833,7 @@ sal_Bool ScDrawView::SelectObject( const String& rName )
 	return ( pFound != NULL );
 }
 
-//Solution: If  object  is marked , return true , else return false . 
+//Solution: If  object  is marked , return true , else return false .
 //==================================================
 sal_Bool ScDrawView::GetObjectIsMarked(  SdrObject* pObject  )
 {
@@ -848,7 +848,7 @@ sal_Bool ScDrawView::GetObjectIsMarked(  SdrObject* pObject  )
 //UNUSED2008-05  {
 //UNUSED2008-05      //  used for modifying a chart's data area - PersistName must always be used
 //UNUSED2008-05      //  (as in ScDocument::FindChartData and UpdateChartArea)
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05      const SdrMarkList& rMarkList = GetMarkedObjectList();
 //UNUSED2008-05      if (rMarkList.GetMarkCount() == 1)
 //UNUSED2008-05      {
@@ -857,7 +857,7 @@ sal_Bool ScDrawView::GetObjectIsMarked(  SdrObject* pObject  )
 //UNUSED2008-05              if ( pDoc->IsChart(pObj) )
 //UNUSED2008-05                  return static_cast<SdrOle2Obj*>(pObj)->GetPersistName();
 //UNUSED2008-05      }
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05      return EMPTY_STRING;        // nichts gefunden
 //UNUSED2008-05  }
 
@@ -978,11 +978,11 @@ SdrUndoManager* ScDrawView::getSdrUndoManagerForEnhancedTextEdit() const
 }
 
 // #123922# helper to apply a Graphic to an existing SdrObject
-SdrObject* ScDrawView::ApplyGraphicToObject( 
-    SdrObject& rHitObject, 
+SdrObject* ScDrawView::ApplyGraphicToObject(
+    SdrObject& rHitObject,
     const Graphic& rGraphic,
-    const String& rBeginUndoText, 
-    const String& rFile, 
+    const String& rBeginUndoText,
+    const String& rFile,
     const String& rFilter)
 {
     if(dynamic_cast< SdrGrafObj* >(&rHitObject))

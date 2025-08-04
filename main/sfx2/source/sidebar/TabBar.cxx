@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "precompiled_sfx2.hxx"
@@ -61,7 +61,7 @@ TabBar::TabBar (
       maPopupMenuProvider(rPopupMenuProvider)
 {
     SetBackground(Theme::GetPaint(Theme::Paint_TabBarBackground).GetWallpaper());
-    
+
     mpMenuButton->SetModeImage(
         Theme::GetImage(Theme::Image_TabBarMenu),
         Theme::IsHighContrastMode()
@@ -138,7 +138,7 @@ void TabBar::SetDecks (
             OSL_ASSERT(pDescriptor!=NULL);
             continue;
         }
-            
+
         Item& rItem (maItems[nIndex++]);
         rItem.msDeckId = pDescriptor->msId;
         rItem.mpButton.reset(CreateTabItem(*pDescriptor));
@@ -163,7 +163,7 @@ void TabBar::UpdateButtonIcons (void)
         Theme::IsHighContrastMode()
             ? BMP_COLOR_HIGHCONTRAST
             : BMP_COLOR_NORMAL);
-    
+
     mpMenuButton->SetModeImage(Theme::GetImage(Theme::Image_TabBarMenu), eColorMode);
 
     for(ItemContainer::const_iterator
@@ -216,7 +216,7 @@ void TabBar::Layout (void)
     {
         Button& rButton (*iItem->mpButton);
         rButton.Show( ! iItem->mbIsHidden);
-        
+
         if (iItem->mbIsHidden)
             continue;
 
@@ -225,7 +225,7 @@ void TabBar::Layout (void)
             Point(nX,nY),
             aTabItemSize);
         rButton.Show();
-        
+
         nY += rButton.GetSizePixel().Height() + 1 + aPadding.Bottom();
     }
     Invalidate();
@@ -373,7 +373,7 @@ void TabBar::UpdateFocusManager (FocusManager& rFocusManager)
 {
     ::std::vector<Button*> aButtons;
     aButtons.reserve(maItems.size()+1);
-    
+
     aButtons.push_back(mpMenuButton.get());
     for(ItemContainer::const_iterator
             iItem(maItems.begin()), iEnd(maItems.end());
@@ -419,7 +419,7 @@ IMPL_LINK(TabBar, OnToolboxClicked, void*, EMPTYARG)
             mpMenuButton->GetSizePixel()),
         aMenuData);
     mpMenuButton->Check(sal_False);
-    
+
     return 0;
 }
 

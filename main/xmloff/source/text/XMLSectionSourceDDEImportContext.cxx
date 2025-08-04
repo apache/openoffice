@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -57,7 +57,7 @@ const sal_Char sAPI_IsAutomaticUpdate[] = "IsAutomaticUpdate";
 TYPEINIT1(XMLSectionSourceDDEImportContext, SvXMLImportContext);
 
 XMLSectionSourceDDEImportContext::XMLSectionSourceDDEImportContext(
-	SvXMLImport& rImport, 
+	SvXMLImport& rImport,
 	sal_uInt16 nPrfx,
 	const OUString& rLocalName,
 	Reference<XPropertySet> & rSectPropSet) :
@@ -74,7 +74,7 @@ XMLSectionSourceDDEImportContext::~XMLSectionSourceDDEImportContext()
 {
 }
 
-enum XMLSectionSourceDDEToken 
+enum XMLSectionSourceDDEToken
 {
 	XML_TOK_SECTION_DDE_APPLICATION,
 	XML_TOK_SECTION_DDE_TOPIC,
@@ -84,11 +84,11 @@ enum XMLSectionSourceDDEToken
 
 static __FAR_DATA SvXMLTokenMapEntry aSectionSourceDDETokenMap[] =
 {
-	{ XML_NAMESPACE_OFFICE, XML_DDE_APPLICATION, 
+	{ XML_NAMESPACE_OFFICE, XML_DDE_APPLICATION,
 		  XML_TOK_SECTION_DDE_APPLICATION },
 	{ XML_NAMESPACE_OFFICE, XML_DDE_TOPIC, XML_TOK_SECTION_DDE_TOPIC },
 	{ XML_NAMESPACE_OFFICE, XML_DDE_ITEM, XML_TOK_SECTION_DDE_ITEM },
-	{ XML_NAMESPACE_OFFICE, XML_AUTOMATIC_UPDATE, 
+	{ XML_NAMESPACE_OFFICE, XML_AUTOMATIC_UPDATE,
 		  XML_TOK_SECTION_IS_AUTOMATIC_UPDATE },
 	XML_TOKEN_MAP_END
 };
@@ -102,13 +102,13 @@ void XMLSectionSourceDDEImportContext::StartElement(
 	OUString sTopic;
 	OUString sItem;
 	sal_Bool bAutomaticUpdate = sal_False;
-	
+
 	sal_Int16 nLength = xAttrList->getLength();
 	for(sal_Int16 nAttr = 0; nAttr < nLength; nAttr++)
 	{
 		OUString sLocalName;
 		sal_uInt16 nPrefix = GetImport().GetNamespaceMap().
-			GetKeyByAttrName( xAttrList->getNameByIndex(nAttr), 
+			GetKeyByAttrName( xAttrList->getNameByIndex(nAttr),
 							  &sLocalName );
 
 		switch (aTokenMap.Get(nPrefix, sLocalName))
@@ -158,7 +158,7 @@ void XMLSectionSourceDDEImportContext::StartElement(
 		aValues[3].setValue(&bAutomaticUpdate, ::getBooleanCppuType());
 		aNames[3] = sIsAutomaticUpdate;
 
-		Reference<XMultiPropertySet> rMultiPropSet(rSectionPropertySet, 
+		Reference<XMultiPropertySet> rMultiPropSet(rSectionPropertySet,
 												   UNO_QUERY);
 		DBG_ASSERT(rMultiPropSet.is(), "we'd really like a XMultiPropertySet");
 		if (rMultiPropSet.is())
@@ -172,7 +172,7 @@ void XMLSectionSourceDDEImportContext::EndElement()
 	// nothing to be done!
 }
 
-SvXMLImportContext* XMLSectionSourceDDEImportContext::CreateChildContext( 
+SvXMLImportContext* XMLSectionSourceDDEImportContext::CreateChildContext(
 	sal_uInt16 nPrefix,
 	const OUString& rLocalName,
 	const Reference<XAttributeList> & )

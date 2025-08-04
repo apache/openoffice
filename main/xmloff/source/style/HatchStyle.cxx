@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -76,9 +76,9 @@ XMLHatchStyleImport::~XMLHatchStyleImport()
 {
 }
 
-sal_Bool XMLHatchStyleImport::importXML( 
-    const uno::Reference< xml::sax::XAttributeList >& xAttrList, 
-    uno::Any& rValue, 
+sal_Bool XMLHatchStyleImport::importXML(
+    const uno::Reference< xml::sax::XAttributeList >& xAttrList,
+    uno::Any& rValue,
     OUString& rStrName )
 {
 	sal_Bool bRet = sal_False;
@@ -104,7 +104,7 @@ sal_Bool XMLHatchStyleImport::importXML(
 	{ XML_NAMESPACE_DRAW, XML_COLOR, XML_TOK_HATCH_COLOR },
 	{ XML_NAMESPACE_DRAW, XML_HATCH_DISTANCE, XML_TOK_HATCH_DISTANCE },
 	{ XML_NAMESPACE_DRAW, XML_ROTATION, XML_TOK_HATCH_ROTATION },
-	XML_TOKEN_MAP_END 
+	XML_TOKEN_MAP_END
 };
 
 	SvXMLTokenMap aTokenMap( aHatchAttrTokenMap );
@@ -125,7 +125,7 @@ sal_Bool XMLHatchStyleImport::importXML(
 				{
 					rStrName = rStrValue;
 					bHasName = sal_True;
-				}			
+				}
 				break;
 			case XML_TOK_HATCH_DISPLAY_NAME:
 				aDisplayName = rStrValue;
@@ -167,7 +167,7 @@ sal_Bool XMLHatchStyleImport::importXML(
 
 	if( aDisplayName.getLength() )
 	{
-		rImport.AddStyleDisplayName( XML_STYLE_FAMILY_SD_HATCH_ID, rStrName, 
+		rImport.AddStyleDisplayName( XML_STYLE_FAMILY_SD_HATCH_ID, rStrName,
 									 aDisplayName );
 		rStrName = aDisplayName;
 	}
@@ -195,8 +195,8 @@ XMLHatchStyleExport::~XMLHatchStyleExport()
 {
 }
 
-sal_Bool XMLHatchStyleExport::exportXML( 
-    const OUString& rStrName, 
+sal_Bool XMLHatchStyleExport::exportXML(
+    const OUString& rStrName,
     const uno::Any& rValue )
 {
 	sal_Bool bRet = sal_False;
@@ -209,7 +209,7 @@ sal_Bool XMLHatchStyleExport::exportXML(
 			OUString aStrValue;
 			OUStringBuffer aOut;
 
-            SvXMLUnitConverter& rUnitConverter = 
+            SvXMLUnitConverter& rUnitConverter =
                 rExport.GetMM100UnitConverter();
 
 			// Style
@@ -221,31 +221,31 @@ sal_Bool XMLHatchStyleExport::exportXML(
 			{
 				// Name
 				sal_Bool bEncoded = sal_False;
-				rExport.AddAttribute( XML_NAMESPACE_DRAW, XML_NAME, 
+				rExport.AddAttribute( XML_NAMESPACE_DRAW, XML_NAME,
 									  rExport.EncodeStyleName( rStrName,
 										 					   &bEncoded ) );
 				if( bEncoded )
-					rExport.AddAttribute( XML_NAMESPACE_DRAW, XML_DISPLAY_NAME, 
+					rExport.AddAttribute( XML_NAMESPACE_DRAW, XML_DISPLAY_NAME,
 									  	  rStrName );
-				
+
 				aStrValue = aOut.makeStringAndClear();
 				rExport.AddAttribute( XML_NAMESPACE_DRAW, XML_STYLE, aStrValue );
-				
+
 				// Color
 				rUnitConverter.convertColor( aOut, Color( aHatch.Color ) );
 				aStrValue = aOut.makeStringAndClear();
 				rExport.AddAttribute( XML_NAMESPACE_DRAW, XML_COLOR, aStrValue );
-				
+
 				// Distance
 				rUnitConverter.convertMeasure( aOut, aHatch.Distance );
 				aStrValue = aOut.makeStringAndClear();
 				rExport.AddAttribute( XML_NAMESPACE_DRAW, XML_HATCH_DISTANCE, aStrValue );
-				
+
 				// Angle
 				rUnitConverter.convertNumber( aOut, sal_Int32( aHatch.Angle ) );
 				aStrValue = aOut.makeStringAndClear();
 				rExport.AddAttribute( XML_NAMESPACE_DRAW, XML_ROTATION, aStrValue );
-				
+
 				// Do Write
 				SvXMLElementExport rElem( rExport, XML_NAMESPACE_DRAW, XML_HATCH,
 										  sal_True, sal_False );

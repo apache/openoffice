@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -107,7 +107,7 @@ enum SylkVersion
 
 ScImportExport::ScImportExport( ScDocument* p )
     : pDocSh( PTR_CAST(ScDocShell,p->GetDocumentShell()) ), pDoc( p ),
-      nSizeLimit( 0 ), cSep( '\t' ), cStr( '"' ), 
+      nSizeLimit( 0 ), cSep( '\t' ), cStr( '"' ),
       bFormulas( sal_False ), bIncludeFiltered( sal_True ),
       bAll( sal_True ), bSingle( sal_True ), bUndo( sal_False ),
       bOverflow( sal_False ), mbApi( true ), mExportTextOptions()
@@ -122,7 +122,7 @@ ScImportExport::ScImportExport( ScDocument* p )
 ScImportExport::ScImportExport( ScDocument* p, const ScAddress& rPt )
     : pDocSh( PTR_CAST(ScDocShell,p->GetDocumentShell()) ), pDoc( p ),
 	  aRange( rPt ),
-      nSizeLimit( 0 ), cSep( '\t' ), cStr( '"' ), 
+      nSizeLimit( 0 ), cSep( '\t' ), cStr( '"' ),
       bFormulas( sal_False ), bIncludeFiltered( sal_True ),
       bAll( sal_False ), bSingle( sal_True ), bUndo( sal_Bool( pDocSh != NULL ) ),
       bOverflow( sal_False ), mbApi( true ), mExportTextOptions()
@@ -665,7 +665,7 @@ static const sal_Unicode* lcl_ScanString( const sal_Unicode* p, String& rString,
 void lcl_UnescapeSylk( String & rString, SylkVersion eVersion )
 {
     // Older versions didn't escape the semicolon.
-    // Older versions quoted the string and doubled embedded quotes, but not 
+    // Older versions quoted the string and doubled embedded quotes, but not
     // the semicolons, which was plain wrong.
     if (eVersion >= SYLK_OOO32)
         rString.SearchAndReplaceAll( DOUBLE_SEMICOLON, ';' );
@@ -739,18 +739,18 @@ static const sal_Unicode* lcl_ScanSylkFormula( const sal_Unicode* p,
     }
     else
     {
-        // Nasty. If in old versions the formula contained a semicolon, it was 
-        // quoted and embedded quotes were doubled, but semicolons were not. If 
-        // there was no semicolon, it could still contain quotes and doubled 
-        // embedded quotes if it was something like ="a""b", which was saved as 
-        // E"a""b" as is and has to be preserved, even if older versions 
-        // couldn't even load it correctly. However, theoretically another 
-        // field might follow and thus the line contain a semicolon again, such 
+        // Nasty. If in old versions the formula contained a semicolon, it was
+        // quoted and embedded quotes were doubled, but semicolons were not. If
+        // there was no semicolon, it could still contain quotes and doubled
+        // embedded quotes if it was something like ="a""b", which was saved as
+        // E"a""b" as is and has to be preserved, even if older versions
+        // couldn't even load it correctly. However, theoretically another
+        // field might follow and thus the line contain a semicolon again, such
         // as ...;E"a""b";...
         bool bQuoted = false;
         if (*p == '"')
         {
-            // May be a quoted expression or just a string constant expression 
+            // May be a quoted expression or just a string constant expression
             // with quotes.
             while (*(++p))
             {
@@ -844,7 +844,7 @@ sal_Bool ScImportExport::Text2Doc( SvStream& rStrm )
 			{
 				aCell.Erase();
 
-				if( *p == cStr )//cStr = " 
+				if( *p == cStr )//cStr = "
 				{
 					p = lcl_ScanString( p, aCell, cStr, DQM_KEEP );
 				}
@@ -852,9 +852,9 @@ sal_Bool ScImportExport::Text2Doc( SvStream& rStrm )
 				const sal_Unicode* q = p;
 				while( *p && *p != cSep )// cSep = tab
 					p++;
-                
+
                 aCell.Append( q, sal::static_int_cast<xub_StrLen>( p - q ) );
-                
+
 				if( *p )
 					p++;
 				if (ValidCol(nCol) && ValidRow(nRow) )
@@ -894,7 +894,7 @@ sal_Bool ScImportExport::Text2Doc( SvStream& rStrm )
 		//
 
 
-static bool lcl_PutString( 
+static bool lcl_PutString(
     ScDocument* pDoc, SCCOL nCol, SCROW nRow, SCTAB nTab, const String& rStr, sal_uInt8 nColFormat,
     SvNumberFormatter* pFormatter, bool bDetectNumFormat,
     ::utl::TransliterationWrapper& rTransliteration, CalendarWrapper& rCalendar,
@@ -1119,7 +1119,7 @@ static bool lcl_PutString(
     // Standard or date not determined -> SetString / EditCell
     if( rStr.Search( _LF ) == STRING_NOTFOUND )
         pDoc->SetString( nCol, nRow, nTab, rStr, pFormatter, bDetectNumFormat );
-    else 
+    else
     {
         bMultiLine = true;
         pDoc->PutCell( nCol, nRow, nTab, new ScEditCell( rStr, pDoc ) );
@@ -1215,7 +1215,7 @@ sal_Bool ScImportExport::ExtText2Doc( SvStream& rStrm )
     // Determine range for Undo.
     // TODO: we don't need this during import of a file to a new sheet or
     // document, could set bDetermineRange=false then.
-    bool bDetermineRange = true;   
+    bool bDetermineRange = true;
 
     // Row heights don't need to be adjusted on the fly if EndPaste() is called
     // afterwards, which happens only if bDetermineRange. This variable also
@@ -1225,7 +1225,7 @@ sal_Bool ScImportExport::ExtText2Doc( SvStream& rStrm )
     bool bQuotedAsText = pExtOptions && pExtOptions->IsQuotedAsText();
 
     sal_uLong nOriginalStreamPos = rStrm.Tell();
- 
+
     do
     {
         for( ;; )
@@ -1259,7 +1259,7 @@ sal_Bool ScImportExport::ExtText2Doc( SvStream& rStrm )
                             if (bIsQuoted && bQuotedAsText)
                                 nFmt = SC_COL_TEXT;
 
-                            bMultiLine |= lcl_PutString( 
+                            bMultiLine |= lcl_PutString(
                                 pDoc, nCol, nRow, nTab, aCell, nFmt,
                                 &aNumFormatter, bDetectNumFormat, aTransliteration, aCalendar,
                                 pEnglishTransliteration, pEnglishCalendar);
@@ -1301,8 +1301,8 @@ sal_Bool ScImportExport::ExtText2Doc( SvStream& rStrm )
                             if (bIsQuoted && bQuotedAsText)
                                 nFmt = SC_COL_TEXT;
 
-                            bMultiLine |= lcl_PutString( 
-                                pDoc, nCol, nRow, nTab, aCell, nFmt, 
+                            bMultiLine |= lcl_PutString(
+                                pDoc, nCol, nRow, nTab, aCell, nFmt,
                                 &aNumFormatter, bDetectNumFormat, aTransliteration,
                                 aCalendar, pEnglishTransliteration, pEnglishCalendar);
                         }
@@ -1330,9 +1330,9 @@ sal_Bool ScImportExport::ExtText2Doc( SvStream& rStrm )
         }
         // so far nRow/nEndCol pointed to the next free
         if (nRow > nStartRow)
-            --nRow;      
+            --nRow;
         if (nEndCol > nStartCol)
-            nEndCol = ::std::min( static_cast<SCCOL>(nEndCol - 1), MAXCOL);      
+            nEndCol = ::std::min( static_cast<SCCOL>(nEndCol - 1), MAXCOL);
 
         if (bDetermineRange)
         {
@@ -1613,7 +1613,7 @@ sal_Bool ScImportExport::Sylk2Doc( SvStream& rStrm )
                             {   // don't ignore value
                                 if( bText )
                                 {
-                                    pDoc->PutCell( nCol, nRow, aRange.aStart.Tab(), 
+                                    pDoc->PutCell( nCol, nRow, aRange.aStart.Tab(),
                                             ScBaseCell::CreateTextCell( aText, pDoc),
                                             (sal_Bool) sal_True);
                                 }

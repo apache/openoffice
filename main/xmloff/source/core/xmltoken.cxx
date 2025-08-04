@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -3092,7 +3092,7 @@ namespace xmloff { namespace token {
         TOKEN( "at-labels-and-axis",    XML_AT_LABELS_AND_AXIS ),
         TOKEN( "filled-radar",                    XML_FILLED_RADAR ),
         TOKEN( "surface",               XML_SURFACE ),
-        
+
         TOKEN( "mathvariant",           XML_MATHVARIANT ),
         TOKEN( "mathsize",              XML_MATHSIZE ),
         TOKEN( "mathweight",            XML_MATHWEIGHT ),
@@ -3114,7 +3114,7 @@ namespace xmloff { namespace token {
 
         TOKEN( "outside-minimum",       XML_OUTSIDE_MINIMUM ),
         TOKEN( "outside-maximum",       XML_OUTSIDE_MAXIMUM ),
-        
+
         TOKEN( "legend-expansion",      XML_LEGEND_EXPANSION),
         TOKEN( "legend-expansion-aspect-ratio", XML_LEGEND_EXPANSION_ASPECT_RATIO),
         TOKEN( "balanced",              XML_BALANCED),
@@ -3128,7 +3128,7 @@ namespace xmloff { namespace token {
         TOKEN( "minor-interval-value",  XML_MINOR_INTERVAL_VALUE ),
         TOKEN( "major-interval-unit",   XML_MAJOR_INTERVAL_UNIT ),
         TOKEN( "minor-interval-unit",   XML_MINOR_INTERVAL_UNIT ),
-        
+
         TOKEN( "min-value", XML_MIN_VALUE ),
         TOKEN( "max-value", XML_MAX_VALUE ),
 

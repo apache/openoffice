@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -67,7 +67,7 @@ static __FAR_DATA SvXMLTokenMapEntry aDashStyleAttrTokenMap[] =
 	{ XML_NAMESPACE_DRAW, XML_DOTS2,			XML_TOK_DASH_DOTS2 },
 	{ XML_NAMESPACE_DRAW, XML_DOTS2_LENGTH,	    XML_TOK_DASH_DOTS2LEN },
 	{ XML_NAMESPACE_DRAW, XML_DISTANCE,		    XML_TOK_DASH_DISTANCE },
-	XML_TOKEN_MAP_END 
+	XML_TOKEN_MAP_END
 };
 
 SvXMLEnumMapEntry __READONLY_DATA pXML_DashStyle_Enum[] =
@@ -92,9 +92,9 @@ XMLDashStyleImport::~XMLDashStyleImport()
 {
 }
 
-sal_Bool XMLDashStyleImport::importXML( 
-    const uno::Reference< xml::sax::XAttributeList >& xAttrList, 
-    uno::Any& rValue, 
+sal_Bool XMLDashStyleImport::importXML(
+    const uno::Reference< xml::sax::XAttributeList >& xAttrList,
+    uno::Any& rValue,
     OUString& rStrName )
 {
 	drawing::LineDash aLineDash;
@@ -126,12 +126,12 @@ sal_Bool XMLDashStyleImport::importXML(
 		case XML_TOK_DASH_NAME:
 			{
 				rStrName = rStrValue;
-			}			
+			}
 			break;
 		case XML_TOK_DASH_DISPLAY_NAME:
 			{
 				aDisplayName = rStrValue;
-			}			
+			}
 			break;
 		case XML_TOK_DASH_STYLE:
 			{
@@ -203,7 +203,7 @@ sal_Bool XMLDashStyleImport::importXML(
 
 	if( aDisplayName.getLength() )
 	{
-		rImport.AddStyleDisplayName( XML_STYLE_FAMILY_SD_STROKE_DASH_ID, 
+		rImport.AddStyleDisplayName( XML_STYLE_FAMILY_SD_STROKE_DASH_ID,
 									 rStrName, aDisplayName );
 		rStrName = aDisplayName;
 	}
@@ -227,8 +227,8 @@ XMLDashStyleExport::~XMLDashStyleExport()
 {
 }
 
-sal_Bool XMLDashStyleExport::exportXML( 
-    const OUString& rStrName, 
+sal_Bool XMLDashStyleExport::exportXML(
+    const OUString& rStrName,
     const uno::Any& rValue )
 {
 	sal_Bool bRet = sal_False;
@@ -242,17 +242,17 @@ sal_Bool XMLDashStyleExport::exportXML(
 		if( rValue >>= aLineDash )
 		{
 			sal_Bool bIsRel = aLineDash.Style == drawing::DashStyle_RECTRELATIVE || aLineDash.Style == drawing::DashStyle_ROUNDRELATIVE;
-			
+
 			OUString aStrValue;
 			OUStringBuffer aOut;
 
 			// Name
 			sal_Bool bEncoded = sal_False;
-			rExport.AddAttribute( XML_NAMESPACE_DRAW, XML_NAME, 
+			rExport.AddAttribute( XML_NAMESPACE_DRAW, XML_NAME,
 								  rExport.EncodeStyleName( rStrName,
 														   &bEncoded ) );
 			if( bEncoded )
-				rExport.AddAttribute( XML_NAMESPACE_DRAW, XML_DISPLAY_NAME, 
+				rExport.AddAttribute( XML_NAMESPACE_DRAW, XML_DISPLAY_NAME,
 									  rStrName );
 
 			// Style
@@ -302,7 +302,7 @@ sal_Bool XMLDashStyleExport::exportXML(
 					rExport.AddAttribute( XML_NAMESPACE_DRAW, XML_DOTS2_LENGTH, aStrValue );
 				}
 			}
-			
+
 			// distance
 			if( bIsRel )
 			{
@@ -317,7 +317,7 @@ sal_Bool XMLDashStyleExport::exportXML(
 
 
 			// do Write
-            SvXMLElementExport rElem( rExport, 
+            SvXMLElementExport rElem( rExport,
                                       XML_NAMESPACE_DRAW, XML_STROKE_DASH,
                                       sal_True, sal_False );
 		}

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -99,7 +99,7 @@ void XMLFootnoteSeparatorExport::exportXML(
 			rState.maValue >>= nLineTextDistance;
 			break;
 		case CTF_PM_FTN_LINE_WEIGTH:
-			DBG_ASSERT( i == nIdx, 
+			DBG_ASSERT( i == nIdx,
 						"received wrong property state index" );
 			rState.maValue >>= nLineWeight;
 			break;
@@ -112,7 +112,7 @@ void XMLFootnoteSeparatorExport::exportXML(
 	if (nLineWeight > 0)
 	{
 		rExport.GetMM100UnitConverter().convertMeasure(sBuf, nLineWeight);
-		rExport.AddAttribute(XML_NAMESPACE_STYLE, XML_WIDTH, 
+		rExport.AddAttribute(XML_NAMESPACE_STYLE, XML_WIDTH,
 							 sBuf.makeStringAndClear());
 	}
 
@@ -128,7 +128,7 @@ void XMLFootnoteSeparatorExport::exportXML(
 	if (nLineDistance > 0)
 	{
 		rExport.GetMM100UnitConverter().convertMeasure(sBuf, nLineDistance);
-		rExport.AddAttribute(XML_NAMESPACE_STYLE, XML_DISTANCE_AFTER_SEP, 
+		rExport.AddAttribute(XML_NAMESPACE_STYLE, XML_DISTANCE_AFTER_SEP,
 							 sBuf.makeStringAndClear());
 	}
 
@@ -144,7 +144,7 @@ void XMLFootnoteSeparatorExport::exportXML(
 	if (rExport.GetMM100UnitConverter().convertEnum(
 		sBuf, eLineAdjust, aXML_HorizontalAdjust_Enum))
 	{
-		rExport.AddAttribute(XML_NAMESPACE_STYLE, XML_ADJUSTMENT, 
+		rExport.AddAttribute(XML_NAMESPACE_STYLE, XML_ADJUSTMENT,
 							 sBuf.makeStringAndClear());
 	}
 
@@ -155,9 +155,9 @@ void XMLFootnoteSeparatorExport::exportXML(
 
 	// color
 	rExport.GetMM100UnitConverter().convertColor(sBuf, nLineColor);
-	rExport.AddAttribute(XML_NAMESPACE_STYLE, XML_COLOR, 
+	rExport.AddAttribute(XML_NAMESPACE_STYLE, XML_COLOR,
 						 sBuf.makeStringAndClear());
-		
-	SvXMLElementExport aElem(rExport, XML_NAMESPACE_STYLE, 
+
+	SvXMLElementExport aElem(rExport, XML_NAMESPACE_STYLE,
 							 XML_FOOTNOTE_SEP, sal_True, sal_True);
 }

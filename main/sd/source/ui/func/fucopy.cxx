@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -58,10 +58,10 @@ TYPEINIT1( FuCopy, FuPoor );
 \************************************************************************/
 
 FuCopy::FuCopy (
-    ViewShell* pViewSh, 
-    ::sd::Window* pWin, 
+    ViewShell* pViewSh,
+    ::sd::Window* pWin,
     ::sd::View* pView,
-    SdDrawDocument* pDoc, 
+    SdDrawDocument* pDoc,
     SfxRequest& rReq)
 	: FuPoor(pViewSh, pWin, pView, pDoc, rReq)
 {
@@ -202,13 +202,13 @@ void FuCopy::DoExecute( SfxRequest& rReq )
 
 		// Anzahl moeglicher Kopien berechnen
 		aRect = mpView->GetAllMarkedRect();
-		
+
 		if( lWidth < 0L )
 		{
 			long nTmp = ( aRect.Right() - aRect.Left() ) / -lWidth;
 			nNumber = (sal_uInt16) Min( nTmp, (long)nNumber );
 		}
-		
+
 		if( lHeight < 0L )
 		{
 			long nTmp = ( aRect.Bottom() - aRect.Top() ) / -lHeight;
@@ -232,16 +232,16 @@ void FuCopy::DoExecute( SfxRequest& rReq )
 
 			// make a copy of selected objects
 			mpView->CopyMarked();
-			
-    		// get newly selected objects 
+
+    		// get newly selected objects
     		SdrMarkList aCopyMarkList( mpView->GetMarkedObjectList() );
 	    	sal_uLong		j, nCopyMarkCount = aMarkList.GetMarkCount();
-				
+
 			// set protection flags at marked copies to null
 			for( j = 0; j < nCopyMarkCount; j++ )
 			{
 				pObj = aCopyMarkList.GetMark( j )->GetMarkedSdrObj();
-				
+
 				if( pObj )
 				{
 					pObj->SetMoveProtect( sal_False );
@@ -260,7 +260,7 @@ void FuCopy::DoExecute( SfxRequest& rReq )
 
 			if( mpView->IsMoveAllowed() )
 				mpView->MoveAllMarked( Size( lSizeX, lSizeY ) );
-			
+
 			// set protection flags at marked copies to original values
 			if( nMarkCount == nCopyMarkCount )
 			{
@@ -268,8 +268,8 @@ void FuCopy::DoExecute( SfxRequest& rReq )
 			    {
 			        SdrObject* pSrcObj = aMarkList.GetMark( j )->GetMarkedSdrObj();
 			        SdrObject* pDstObj = aCopyMarkList.GetMark( j )->GetMarkedSdrObj();
-			    
-				    if( pSrcObj && pDstObj && 
+
+				    if( pSrcObj && pDstObj &&
 				        ( pSrcObj->GetObjInventor() == pDstObj->GetObjInventor() ) &&
 				        ( pSrcObj->GetObjIdentifier() == pDstObj->GetObjIdentifier() ) )
 				    {
@@ -308,4 +308,4 @@ void FuCopy::DoExecute( SfxRequest& rReq )
 	}
 }
 
-} // end of namespace 
+} // end of namespace

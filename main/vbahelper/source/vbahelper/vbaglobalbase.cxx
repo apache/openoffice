@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -34,8 +34,8 @@ rtl::OUString sApplication( RTL_CONSTASCII_USTRINGPARAM("Application") );
 // special key to return the Application
 rtl::OUString sAppService( RTL_CONSTASCII_USTRINGPARAM("ooo.vba.Application") );
 
-VbaGlobalsBase::VbaGlobalsBase( 
-const uno::Reference< ov::XHelperInterface >& xParent, 
+VbaGlobalsBase::VbaGlobalsBase(
+const uno::Reference< ov::XHelperInterface >& xParent,
 const uno::Reference< uno::XComponentContext >& xContext, const rtl::OUString& sDocCtxName )
 :  Globals_BASE( xParent, xContext ), msDocCtxName( sDocCtxName )
 {
@@ -49,8 +49,8 @@ const uno::Reference< uno::XComponentContext >& xContext, const rtl::OUString& s
 
     ::cppu::ContextEntry_Init aHandlerContextInfo[] =
     {
-        ::cppu::ContextEntry_Init( sApplication, uno::Any() ), 
-        ::cppu::ContextEntry_Init( sDocCtxName, uno::Any() ), 
+        ::cppu::ContextEntry_Init( sApplication, uno::Any() ),
+        ::cppu::ContextEntry_Init( sDocCtxName, uno::Any() ),
         ::cppu::ContextEntry_Init( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("/singletons/com.sun.star.lang.theServiceManager" ) ), aSrvMgr )
     };
     // don't pass a delegate, this seems to introduce yet another cyclic dependency ( and
@@ -89,12 +89,12 @@ VbaGlobalsBase::init(  const uno::Sequence< beans::PropertyValue >& aInitArgs )
             uno::Reference< XHelperInterface > xParent( aInitArgs[ nIndex ].Value, uno::UNO_QUERY );
             mxParent = xParent;
         }
-        else 
+        else
             xNameContainer->replaceByName( aInitArgs[ nIndex ].Name, aInitArgs[ nIndex ].Value );
     }
 }
 
-uno::Reference< uno::XInterface > SAL_CALL 
+uno::Reference< uno::XInterface > SAL_CALL
 VbaGlobalsBase::createInstance( const ::rtl::OUString& aServiceSpecifier ) throw (uno::Exception, uno::RuntimeException)
 {
     uno::Reference< uno::XInterface > xReturn;
@@ -109,10 +109,10 @@ VbaGlobalsBase::createInstance( const ::rtl::OUString& aServiceSpecifier ) throw
     return xReturn;
 }
 
-uno::Reference< uno::XInterface > SAL_CALL 
+uno::Reference< uno::XInterface > SAL_CALL
 VbaGlobalsBase::createInstanceWithArguments( const ::rtl::OUString& aServiceSpecifier, const uno::Sequence< uno::Any >& Arguments ) throw (uno::Exception, uno::RuntimeException)
 {
-    
+
     uno::Reference< uno::XInterface > xReturn;
     if ( aServiceSpecifier.equals( sAppService ) )
     {
@@ -125,10 +125,10 @@ VbaGlobalsBase::createInstanceWithArguments( const ::rtl::OUString& aServiceSpec
     return xReturn;
 }
 
-uno::Sequence< ::rtl::OUString > SAL_CALL 
+uno::Sequence< ::rtl::OUString > SAL_CALL
 VbaGlobalsBase::getAvailableServiceNames(  ) throw (uno::RuntimeException)
 {
-    static const rtl::OUString names[] = { 
+    static const rtl::OUString names[] = {
     // common
         ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM ( "ooo.vba.msforms.UserForm" ) ),
       };

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -143,7 +143,7 @@ void OXMLRowColumn::fillStyle(const ::rtl::OUString& _sStyleName)
 		{
             PropertySetInfo* pInfo = new PropertySetInfo();
 			static PropertyMapEntry pMap[] =
-			{ 
+			{
 				{PROPERTY_WIDTH,		static_cast<sal_uInt16>(PROPERTY_WIDTH.length),		PROPERTY_ID_WIDTH,			&::getCppuType(static_cast< sal_Int32* >( NULL ))		,PropertyAttribute::BOUND,0},
 				{PROPERTY_HEIGHT,		static_cast<sal_uInt16>(PROPERTY_HEIGHT.length),	PROPERTY_ID_HEIGHT,			&::getCppuType(static_cast< sal_Int32* >( NULL ))		,PropertyAttribute::BOUND,0},
 				{ NULL, 0, 0, NULL, 0, 0 }
@@ -158,7 +158,7 @@ void OXMLRowColumn::fillStyle(const ::rtl::OUString& _sStyleName)
                 xProp->getPropertyValue(PROPERTY_WIDTH) >>= nWidth;
                 m_pContainer->addWidth(nWidth);
 			}
-            else 
+            else
             {
                 pAutoStyle = PTR_CAST(XMLPropStyleContext,pAutoStyles->FindStyleChildContext(XML_STYLE_FAMILY_TABLE_ROW,_sStyleName));
 			    if ( pAutoStyle )

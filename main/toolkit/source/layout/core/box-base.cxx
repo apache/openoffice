@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -73,7 +73,7 @@ static bool isVisible( uno::Reference< awt::XLayoutConstrains > xWidget )
 
     return true;
 }
-    
+
 bool Box_Base::ChildData::isVisible()
 {
     // FIXME: call the 'isVisible' method on it ?
@@ -148,7 +148,7 @@ uno::Reference< beans::XPropertySet > SAL_CALL
 Box_Base::getChildProperties( const uno::Reference< awt::XLayoutConstrains >& xChild )
     throw (uno::RuntimeException)
 {
-    
+
     for ( std::list< ChildData * >::iterator it = maChildren.begin();
           it != maChildren.end(); it++)
     {

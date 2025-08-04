@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -39,7 +39,7 @@
 #include <basegfx/matrix/b2dhommatrix.hxx>
 #include <basegfx/point/b2dpoint.hxx>
 
-// Makes parser a static resource, 
+// Makes parser a static resource,
 // we're synchronized externally.
 // But watch out, the parser might have
 // state not visible to this code!
@@ -83,7 +83,7 @@ namespace slideshow
                 // bounds of the shape this expression is associated with
                 ::basegfx::B2DRectangle		maShapeBounds;
 
-                // when true, enable usage of time-dependent variable '$' 
+                // when true, enable usage of time-dependent variable '$'
                 // in expressions
                 bool						mbParseAnimationFunction;
             };
@@ -105,8 +105,8 @@ namespace slideshow
 
                 void operator()( StringIteratorT, StringIteratorT ) const
                 {
-                    mpContext->maOperandStack.push( 
-                        ExpressionNodeFactory::createConstantValueExpression( 
+                    mpContext->maOperandStack.push(
+                        ExpressionNodeFactory::createConstantValueExpression(
                             maGenerator( mpContext->maShapeBounds ) ) );
                 }
 
@@ -115,7 +115,7 @@ namespace slideshow
                 ParserContextSharedPtr	mpContext;
             };
 
-            template< typename Generator > ShapeBoundsFunctor< Generator > 
+            template< typename Generator > ShapeBoundsFunctor< Generator >
 	            makeShapeBoundsFunctor( const Generator& 				rGenerator,
                                         const ParserContextSharedPtr&	rContext )
             {
@@ -138,7 +138,7 @@ namespace slideshow
 
                 void operator()( StringIteratorT, StringIteratorT ) const
                 {
-                    mpContext->maOperandStack.push( 
+                    mpContext->maOperandStack.push(
                         ExpressionNodeFactory::createConstantValueExpression( mnValue ) );
                 }
 
@@ -162,7 +162,7 @@ namespace slideshow
                 void operator()( double n ) const
                 {
                     // push constant value expression to the stack
-                    mpContext->maOperandStack.push( 
+                    mpContext->maOperandStack.push(
                         ExpressionNodeFactory::createConstantValueExpression( n ) );
                 }
 
@@ -192,7 +192,7 @@ namespace slideshow
                     }
 
                     // push special t value expression to the stack
-                    mpContext->maOperandStack.push( 
+                    mpContext->maOperandStack.push(
                         ExpressionNodeFactory::createValueTExpression() );
                 }
 
@@ -220,7 +220,7 @@ namespace slideshow
                     {
                         return maFunctor( (*mpArg)(t) );
                     }
-                    
+
                     virtual bool isConstant() const
                     {
                         return mpArg->isConstant();
@@ -255,16 +255,16 @@ namespace slideshow
                     // check for constness
                     if( pArg->isConstant() )
                     {
-                        rNodeStack.push( 
+                        rNodeStack.push(
                             ExpressionNodeFactory::createConstantValueExpression(
                                 maFunctor( (*pArg)(0.0) ) ) );
                     }
                     else
                     {
                         // push complex node, that calcs the value on demand
-                        rNodeStack.push( 
+                        rNodeStack.push(
                             ExpressionNodeSharedPtr(
-                                new UnaryFunctionExpression( 
+                                new UnaryFunctionExpression(
                                     maFunctor,
                                     pArg ) ) );
                     }
@@ -280,17 +280,17 @@ namespace slideshow
             // ExpressionNodeFactory, to use a generic
             // makeFunctionFunctor template, which is overloaded for
             // unary, binary, ternary, etc. function pointers.
-            template< typename Functor > UnaryFunctionFunctor<Functor> 
+            template< typename Functor > UnaryFunctionFunctor<Functor>
 	            makeUnaryFunctionFunctor( const Functor& 				rFunctor,
                                           const ParserContextSharedPtr&	rContext )
             {
                 return UnaryFunctionFunctor<Functor>( rFunctor, rContext );
             }
 
-            // MSVC has problems instantiating above template function with plain function 
+            // MSVC has problems instantiating above template function with plain function
             // pointers (doesn't like the const reference there). Thus, provide it with
             // a dedicated overload here.
-            UnaryFunctionFunctor< double (*)(double) > 
+            UnaryFunctionFunctor< double (*)(double) >
 	            makeUnaryFunctionFunctor( double (*pFunc)(double),
                                           const ParserContextSharedPtr&	rContext )
             {
@@ -302,7 +302,7 @@ namespace slideshow
                 @tpl Generator
                 Generator functor, to generate an ExpressionNode of
                 appropriate type
-                
+
              */
             template< class Generator > class BinaryFunctionFunctor
             {
@@ -338,7 +338,7 @@ namespace slideshow
                     {
                         // call the operator() at pNode, store result
                         // in constant value ExpressionNode.
-                        rNodeStack.push( 
+                        rNodeStack.push(
                             ExpressionNodeFactory::createConstantValueExpression(
                                 (*pNode)( 0.0 ) ) );
                     }
@@ -354,7 +354,7 @@ namespace slideshow
                 ParserContextSharedPtr	mpContext;
             };
 
-            template< typename Generator > BinaryFunctionFunctor<Generator> 
+            template< typename Generator > BinaryFunctionFunctor<Generator>
             	makeBinaryFunctionFunctor( const Generator&					rGenerator,
                                            const ParserContextSharedPtr&	rContext )
             {
@@ -364,13 +364,13 @@ namespace slideshow
 
             // Workaround for MSVC compiler anomaly (stack trashing)
             //
-            // The default ureal_parser_policies implementation of parse_exp 
-            // triggers a really weird error in MSVC7 (Version 13.00.9466), in 
-            // that the real_parser_impl::parse_main() call of parse_exp() 
+            // The default ureal_parser_policies implementation of parse_exp
+            // triggers a really weird error in MSVC7 (Version 13.00.9466), in
+            // that the real_parser_impl::parse_main() call of parse_exp()
             // overwrites the frame pointer _on the stack_ (EBP of the calling
-            // function gets overwritten while lying on the stack). 
+            // function gets overwritten while lying on the stack).
             //
-            // For the time being, our parser thus can only read the 1.0E10 
+            // For the time being, our parser thus can only read the 1.0E10
             // notation, not the 1.0e10 one.
             //
             // TODO(F1): Also handle the 1.0e10 case here.
@@ -379,9 +379,9 @@ namespace slideshow
                 template< typename ScannerT >
 	                static typename ::boost::spirit::parser_result< ::boost::spirit::chlit<>, ScannerT >::type
                 parse_exp(ScannerT& scan)
-                { 
+                {
                     // as_lower_d somehow breaks MSVC7
-                    return ::boost::spirit::ch_p('E').parse(scan); 
+                    return ::boost::spirit::ch_p('E').parse(scan);
                 }
             };
 
@@ -389,27 +389,27 @@ namespace slideshow
                less literally written down below, only slightly
                obfuscated by the parser actions):
 
-               identifier = '$'|'pi'|'e'|'X'|'Y'|'Width'|'Height'                                                   
-                                                                                                                    
+               identifier = '$'|'pi'|'e'|'X'|'Y'|'Width'|'Height'
+
                function = 'abs'|'sqrt'|'sin'|'cos'|'tan'|'atan'|'acos'|'asin'|'exp'|'log'
 
-               basic_expression =                                                                                   
-               				 number |                                                                            
-               				 identifier |                                                                        
-               				 function '(' additive_expression ')' |                                              
-               				 '(' additive_expression ')'                                                         
-                                                                                                                    
-               unary_expression = 
+               basic_expression =
+               				 number |
+               				 identifier |
+               				 function '(' additive_expression ')' |
+               				 '(' additive_expression ')'
+
+               unary_expression =
                					'-' basic_expression |
                                 basic_expression
-                                                                                                                    
-               multiplicative_expression =                                                                          
-               				    unary_expression ( ( '*' unary_expression )* |                           
+
+               multiplicative_expression =
+               				    unary_expression ( ( '*' unary_expression )* |
                                 				   ( '/' unary_expression )* )
-                                                                                                                    
-               additive_expression =                                                                                
-               					multiplicative_expression ( ( '+' multiplicative_expression )* |                              
-               											    ( '-' multiplicative_expression )* ) 
+
+               additive_expression =
+               					multiplicative_expression ( ( '+' multiplicative_expression )* |
+               											    ( '-' multiplicative_expression )* )
 
              */
             class ExpressionGrammar : public ::boost::spirit::grammar< ExpressionGrammar >
@@ -443,8 +443,8 @@ namespace slideshow
                               |   	str_p( "width"  )[ makeShapeBoundsFunctor(::std::mem_fun_ref(&::basegfx::B2DRange::getWidth),  self.getContext()) ]
                               |		str_p( "height" )[ makeShapeBoundsFunctor(::std::mem_fun_ref(&::basegfx::B2DRange::getHeight), self.getContext()) ]
                               ;
-                        
-                        unaryFunction = 
+
+                        unaryFunction =
                             	(str_p( "abs"  ) >> '(' >> additiveExpression >> ')' )[ makeUnaryFunctionFunctor(&fabs, self.getContext()) ]
                             |	(str_p( "sqrt" ) >> '(' >> additiveExpression >> ')' )[ makeUnaryFunctionFunctor(&sqrt, self.getContext()) ]
                             |	(str_p( "sin"  ) >> '(' >> additiveExpression >> ')' )[ makeUnaryFunctionFunctor(&sin,  self.getContext()) ]
@@ -457,32 +457,32 @@ namespace slideshow
                             |	(str_p( "log"  ) >> '(' >> additiveExpression >> ')' )[ makeUnaryFunctionFunctor(&log,  self.getContext()) ]
                             ;
 
-                        binaryFunction = 
+                        binaryFunction =
 	                            (str_p( "min"  ) >> '(' >> additiveExpression >> ',' >> additiveExpression >> ')' )[ makeBinaryFunctionFunctor(&ExpressionNodeFactory::createMinExpression, self.getContext()) ]
                             |	(str_p( "max"  ) >> '(' >> additiveExpression >> ',' >> additiveExpression >> ')' )[ makeBinaryFunctionFunctor(&ExpressionNodeFactory::createMaxExpression, self.getContext()) ]
                             ;
 
-                        basicExpression = 
+                        basicExpression =
                             	real_parser<double, custom_real_parser_policies<double> >()[ DoubleConstantFunctor(self.getContext()) ]
                             |	identifier
                             |	unaryFunction
                             |	binaryFunction
                             |	'(' >> additiveExpression >> ')'
                             ;
-                            
-                        unaryExpression = 
+
+                        unaryExpression =
                             	('-' >> basicExpression)[ makeUnaryFunctionFunctor(::std::negate<double>(), self.getContext()) ]
                             |	basicExpression
                             ;
 
-                        multiplicativeExpression = 
+                        multiplicativeExpression =
                             	unaryExpression
                             >> *( ('*' >> unaryExpression)[ makeBinaryFunctionFunctor(&ExpressionNodeFactory::createMultipliesExpression, self.getContext()) ]
                                 | ('/' >> unaryExpression)[ makeBinaryFunctionFunctor(&ExpressionNodeFactory::createDividesExpression,    self.getContext()) ]
                                 )
                             ;
 
-                        additiveExpression = 
+                        additiveExpression =
                                 multiplicativeExpression
                             >> *( ('+' >> multiplicativeExpression)[ makeBinaryFunctionFunctor(&ExpressionNodeFactory::createPlusExpression,  self.getContext()) ]
                                 | ('-' >> multiplicativeExpression)[ makeBinaryFunctionFunctor(&ExpressionNodeFactory::createMinusExpression, self.getContext()) ]
@@ -502,9 +502,9 @@ namespace slideshow
                     {
                         return additiveExpression;
                     }
-                    
+
                 private:
-                    // the constituents of the Spirit arithmetic expression grammar. 
+                    // the constituents of the Spirit arithmetic expression grammar.
                     // For the sake of readability, without 'ma' prefix.
                     ::boost::spirit::rule< ScannerT >	additiveExpression;
                     ::boost::spirit::rule< ScannerT >	multiplicativeExpression;
@@ -513,7 +513,7 @@ namespace slideshow
                     ::boost::spirit::rule< ScannerT >	unaryFunction;
                     ::boost::spirit::rule< ScannerT >	binaryFunction;
                     ::boost::spirit::rule< ScannerT >	identifier;
-                };                
+                };
 
                 const ParserContextSharedPtr& getContext() const
                 {
@@ -523,13 +523,13 @@ namespace slideshow
             private:
                 ParserContextSharedPtr	mpParserContext; // might get modified during parsing
             };
-            
+
 #ifdef BOOST_SPIRIT_SINGLE_GRAMMAR_INSTANCE
             const ParserContextSharedPtr& getParserContext()
             {
                 static ParserContextSharedPtr lcl_parserContext( new ParserContext() );
 
-                // clear node stack (since we reuse the static object, that's 
+                // clear node stack (since we reuse the static object, that's
                 // the whole point here)
                 while( !lcl_parserContext->maOperandStack.empty() )
                     lcl_parserContext->maOperandStack.pop();
@@ -542,10 +542,10 @@ namespace slideshow
         ExpressionNodeSharedPtr SmilFunctionParser::parseSmilValue( const ::rtl::OUString& 			rSmilValue,
                                                                     const ::basegfx::B2DRectangle&	rRelativeShapeBounds )
         {
-            // TODO(Q1): Check if a combination of the RTL_UNICODETOTEXT_FLAGS_* 
-            // gives better conversion robustness here (we might want to map space 
+            // TODO(Q1): Check if a combination of the RTL_UNICODETOTEXT_FLAGS_*
+            // gives better conversion robustness here (we might want to map space
             // etc. to ASCII space here)
-            const ::rtl::OString& rAsciiSmilValue( 
+            const ::rtl::OString& rAsciiSmilValue(
                 rtl::OUStringToOString( rSmilValue, RTL_TEXTENCODING_ASCII_US ) );
 
             StringIteratorT aStart( rAsciiSmilValue.getStr() );
@@ -566,7 +566,7 @@ namespace slideshow
 
 
             ExpressionGrammar aExpressionGrammer( pContext );
-            const ::boost::spirit::parse_info<StringIteratorT> aParseInfo( 
+            const ::boost::spirit::parse_info<StringIteratorT> aParseInfo(
                   ::boost::spirit::parse( aStart,
                                           aEnd,
                                           aExpressionGrammer,
@@ -577,7 +577,7 @@ namespace slideshow
             if( !aParseInfo.full )
                 throw ParseError( "SmilFunctionParser::parseSmilValue(): string not fully parseable" );
 
-            // parser's state stack now must contain exactly _one_ ExpressionNode, 
+            // parser's state stack now must contain exactly _one_ ExpressionNode,
             // which represents our formula.
             if( pContext->maOperandStack.size() != 1 )
                 throw ParseError( "SmilFunctionParser::parseSmilValue(): incomplete or empty expression" );
@@ -588,10 +588,10 @@ namespace slideshow
         ExpressionNodeSharedPtr SmilFunctionParser::parseSmilFunction( const ::rtl::OUString& 			rSmilFunction,
                                                                        const ::basegfx::B2DRectangle&	rRelativeShapeBounds )
         {
-            // TODO(Q1): Check if a combination of the RTL_UNICODETOTEXT_FLAGS_* 
-            // gives better conversion robustness here (we might want to map space 
+            // TODO(Q1): Check if a combination of the RTL_UNICODETOTEXT_FLAGS_*
+            // gives better conversion robustness here (we might want to map space
             // etc. to ASCII space here)
-            const ::rtl::OString& rAsciiSmilFunction( 
+            const ::rtl::OString& rAsciiSmilFunction(
                 rtl::OUStringToOString( rSmilFunction, RTL_TEXTENCODING_ASCII_US ) );
 
             StringIteratorT aStart( rAsciiSmilFunction.getStr() );
@@ -612,7 +612,7 @@ namespace slideshow
 
 
             ExpressionGrammar aExpressionGrammer( pContext );
-            const ::boost::spirit::parse_info<StringIteratorT> aParseInfo( 
+            const ::boost::spirit::parse_info<StringIteratorT> aParseInfo(
                   ::boost::spirit::parse( aStart,
                                           aEnd,
                                           aExpressionGrammer >> ::boost::spirit::end_p,
@@ -623,7 +623,7 @@ namespace slideshow
             if( !aParseInfo.full )
                 throw ParseError( "SmilFunctionParser::parseSmilFunction(): string not fully parseable" );
 
-            // parser's state stack now must contain exactly _one_ ExpressionNode, 
+            // parser's state stack now must contain exactly _one_ ExpressionNode,
             // which represents our formula.
             if( pContext->maOperandStack.size() != 1 )
                 throw ParseError( "SmilFunctionParser::parseSmilFunction(): incomplete or empty expression" );

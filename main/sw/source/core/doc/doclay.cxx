@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -2348,45 +2348,45 @@ sal_Bool SwDoc::IsInVerticalText( const SwPosition& rPos, const Point* pPt ) con
     return FRMDIR_VERT_TOP_RIGHT == nDir || FRMDIR_VERT_TOP_LEFT == nDir;
 }
 
-void SwDoc::SetCurrentViewShell( ViewShell* pNew ) 
-{ 
-    pCurrentView = pNew; 
+void SwDoc::SetCurrentViewShell( ViewShell* pNew )
+{
+    pCurrentView = pNew;
 }
 
-SwLayouter* SwDoc::GetLayouter() 
-{ 
-    return pLayouter; 
+SwLayouter* SwDoc::GetLayouter()
+{
+    return pLayouter;
 }
 
-const SwLayouter* SwDoc::GetLayouter() const 
-{ 
-    return pLayouter; 
+const SwLayouter* SwDoc::GetLayouter() const
+{
+    return pLayouter;
 }
 
-void SwDoc::SetLayouter( SwLayouter* pNew ) 
-{ 
-    pLayouter = pNew; 
+void SwDoc::SetLayouter( SwLayouter* pNew )
+{
+    pLayouter = pNew;
 }
 
-const ViewShell *SwDoc::GetCurrentViewShell() const 
-{ 
+const ViewShell *SwDoc::GetCurrentViewShell() const
+{
     return pCurrentView;
 }
 
-ViewShell *SwDoc::GetCurrentViewShell()		
-{ 
+ViewShell *SwDoc::GetCurrentViewShell()
+{
     return pCurrentView;
 }	//swmod 080219 It must be able to communicate to a ViewShell.This is going to be removedd later.
 
-const SwRootFrm *SwDoc::GetCurrentLayout() const 
-{ 
+const SwRootFrm *SwDoc::GetCurrentLayout() const
+{
 	if(GetCurrentViewShell())
 		return GetCurrentViewShell()->GetLayout();
 	return 0;
 }
 
 SwRootFrm *SwDoc::GetCurrentLayout()
-{ 
+{
 	if(GetCurrentViewShell())
 		return GetCurrentViewShell()->GetLayout();
 	return 0;
@@ -2399,15 +2399,15 @@ bool SwDoc::HasLayout() const
 }
 
 std::set<SwRootFrm*> SwDoc::GetAllLayouts()
-{ 	
+{
     std::set<SwRootFrm*> aAllLayouts;
     ViewShell *pStart = GetCurrentViewShell();
     ViewShell *pTemp = pStart;
     if ( pTemp )
     {
-        do 
+        do
         {
-            if (pTemp->GetLayout()) 
+            if (pTemp->GetLayout())
             {
                 aAllLayouts.insert(pTemp->GetLayout());
                 pTemp = (ViewShell*)pTemp->GetNext();
@@ -2418,7 +2418,7 @@ std::set<SwRootFrm*> SwDoc::GetAllLayouts()
     return aAllLayouts;
 }//swmod 070825
 
- 
+
 void SwDoc::ShareLayout(boost::shared_ptr<SwRootFrm>& rPtr)
 {
     pLayoutPtr = rPtr;

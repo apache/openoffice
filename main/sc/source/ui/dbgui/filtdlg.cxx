@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -117,7 +117,7 @@ ScFilterDlg::ScFilterDlg( SfxBindings* pB, SfxChildWindow* pCW, Window* pParent,
 		pEntryLists[i] = NULL;
 	for (SCSIZE i=0;i<MAXQUERY;i++)
 	{
-		 bRefreshExceptQuery[i]=sal_False; 
+		 bRefreshExceptQuery[i]=sal_False;
 	}
 	aBtnMore.SetMoreText( String(ScResId( SCSTR_MOREBTN_MOREOPTIONS )) );
 	aBtnMore.SetLessText( String(ScResId( SCSTR_MOREBTN_FEWEROPTIONS )) );
@@ -135,7 +135,7 @@ ScFilterDlg::ScFilterDlg( SfxBindings* pB, SfxChildWindow* pCW, Window* pParent,
 	aLbConnect1.SetAccessibleName(sIndexName);
 	sIndexName = sAccName;
 	sIndexName.AppendAscii (RTL_CONSTASCII_STRINGPARAM (" 2"));
-	aLbConnect2.SetAccessibleName(sIndexName);	
+	aLbConnect2.SetAccessibleName(sIndexName);
 
 	sAccName = String(ScResId(RID_FILTER_FIELDNAME));
 	sIndexName = sAccName;
@@ -147,26 +147,26 @@ ScFilterDlg::ScFilterDlg( SfxBindings* pB, SfxChildWindow* pCW, Window* pParent,
 	sIndexName = sAccName;
 	sIndexName.AppendAscii (RTL_CONSTASCII_STRINGPARAM (" 3"));
 	aLbField3.SetAccessibleName(sIndexName);
-	
+
 
 	sAccName = String(ScResId(RID_FILTER_CONDITION));
 	sIndexName = sAccName;
 	sIndexName.AppendAscii (RTL_CONSTASCII_STRINGPARAM (" 1"));
-	aLbCond1.SetAccessibleName(sIndexName);	
+	aLbCond1.SetAccessibleName(sIndexName);
 	sIndexName = sAccName;
 	sIndexName.AppendAscii (RTL_CONSTASCII_STRINGPARAM (" 2"));
-	aLbCond2.SetAccessibleName(sIndexName);	
+	aLbCond2.SetAccessibleName(sIndexName);
 	sIndexName = sAccName;
 	sIndexName.AppendAscii (RTL_CONSTASCII_STRINGPARAM (" 3"));
-	aLbCond3.SetAccessibleName(sIndexName);	
-	
+	aLbCond3.SetAccessibleName(sIndexName);
+
 	sAccName = String(ScResId(RID_FILTER_VALUE));
 	sIndexName = sAccName;
 	sIndexName.AppendAscii (RTL_CONSTASCII_STRINGPARAM (" 1"));
-	aEdVal1.SetAccessibleName(sIndexName);		
+	aEdVal1.SetAccessibleName(sIndexName);
 	sIndexName = sAccName;
 	sIndexName.AppendAscii (RTL_CONSTASCII_STRINGPARAM (" 2"));
-	aEdVal2.SetAccessibleName(sIndexName);		
+	aEdVal2.SetAccessibleName(sIndexName);
 	sIndexName = sAccName;
 	sIndexName.AppendAscii (RTL_CONSTASCII_STRINGPARAM (" 3"));
 	aEdVal3.SetAccessibleName(sIndexName);
@@ -175,7 +175,7 @@ ScFilterDlg::ScFilterDlg( SfxBindings* pB, SfxChildWindow* pCW, Window* pParent,
 	aEdCopyArea.SetAccessibleName(ScResId(STR_COPY_AREA_TO));
 	aLbCopyArea.SetAccessibleRelationLabeledBy(&aBtnCopyResult);
 	aEdCopyArea.SetAccessibleRelationLabeledBy(&aBtnCopyResult);
-	
+
 	aLbConnect1.SetAccessibleRelationLabeledBy(&aFtConnect);
 	aLbConnect2.SetAccessibleRelationLabeledBy(&aFtConnect);
 	aLbField1.SetAccessibleRelationLabeledBy(&aFtField);
@@ -326,31 +326,31 @@ void __EXPORT ScFilterDlg::Init( const SfxItemSet& rArgSet )
 
 	aScrollBar.SetRange( Range( 0, 4 ) );
 	aScrollBar.SetLineSize( 1 );
-	aLbConnect1.Hide(); 
+	aLbConnect1.Hide();
 	// Disable/Enable Logik:
 
 	   (aLbField1.GetSelectEntryPos() != 0)
 	&& (aLbField2.GetSelectEntryPos() != 0)
-		? aLbConnect2.SelectEntryPos( (sal_uInt16)theQueryData.GetEntry(1).eConnect )  
+		? aLbConnect2.SelectEntryPos( (sal_uInt16)theQueryData.GetEntry(1).eConnect )
 		: aLbConnect2.SetNoSelection();
 
 	   (aLbField2.GetSelectEntryPos() != 0)
 	&& (aLbField3.GetSelectEntryPos() != 0)
-		? aLbConnect3.SelectEntryPos( (sal_uInt16)theQueryData.GetEntry(2).eConnect )  
+		? aLbConnect3.SelectEntryPos( (sal_uInt16)theQueryData.GetEntry(2).eConnect )
 		: aLbConnect3.SetNoSelection();
 
 	   (aLbField3.GetSelectEntryPos() != 0)
 	&& (aLbField4.GetSelectEntryPos() != 0)
-		? aLbConnect4.SelectEntryPos( (sal_uInt16)theQueryData.GetEntry(3).eConnect )  
+		? aLbConnect4.SelectEntryPos( (sal_uInt16)theQueryData.GetEntry(3).eConnect )
 		: aLbConnect4.SetNoSelection();
 	if ( aLbField1.GetSelectEntryPos() == 0 )
 	{
-		aLbConnect2.Disable(); 
+		aLbConnect2.Disable();
 		aLbField2.Disable();
 		aLbCond2.Disable();
 		aEdVal2.Disable();
 	}
-	else if ( aLbConnect2.GetSelectEntryCount() == 0 )  
+	else if ( aLbConnect2.GetSelectEntryCount() == 0 )
 	{
 		aLbField2.Disable();
 		aLbCond2.Disable();
@@ -359,12 +359,12 @@ void __EXPORT ScFilterDlg::Init( const SfxItemSet& rArgSet )
 
 	if ( aLbField2.GetSelectEntryPos() == 0 )
 	{
-		aLbConnect3.Disable();  
+		aLbConnect3.Disable();
 		aLbField3.Disable();
 		aLbCond3.Disable();
 		aEdVal3.Disable();
 	}
-	else if ( aLbConnect3.GetSelectEntryCount() == 0 ) 
+	else if ( aLbConnect3.GetSelectEntryCount() == 0 )
 	{
 		aLbField3.Disable();
 		aLbCond3.Disable();
@@ -372,12 +372,12 @@ void __EXPORT ScFilterDlg::Init( const SfxItemSet& rArgSet )
 	}
 	if ( aLbField3.GetSelectEntryPos() == 0 )
 	{
-		aLbConnect4.Disable(); 
+		aLbConnect4.Disable();
 		aLbField4.Disable();
 		aLbCond4.Disable();
 		aEdVal4.Disable();
 	}
-	else if ( aLbConnect4.GetSelectEntryCount() == 0 )  
+	else if ( aLbConnect4.GetSelectEntryCount() == 0 )
 	{
 		aLbField4.Disable();
 		aLbCond4.Disable();
@@ -855,7 +855,7 @@ IMPL_LINK( ScFilterDlg, LbSelectHdl, ListBox*, pLb )
 			for (sal_uInt16 i= nOffset; i< MAXQUERY; i++)
 			{
 				theQueryData.GetEntry(i).bDoQuery = sal_False;
-				bRefreshExceptQuery[i]=sal_False; 
+				bRefreshExceptQuery[i]=sal_False;
 				theQueryData.GetEntry(i).nField =  static_cast<SCCOL>(0);
 			}
 			bRefreshExceptQuery[nOffset] =sal_True;
@@ -899,10 +899,10 @@ IMPL_LINK( ScFilterDlg, LbSelectHdl, ListBox*, pLb )
 			for (sal_uInt16 i= nTemp; i< MAXQUERY; i++)
 			{
 				theQueryData.GetEntry(i).bDoQuery = sal_False;
-				bRefreshExceptQuery[i]=sal_False; 
+				bRefreshExceptQuery[i]=sal_False;
 				theQueryData.GetEntry(i).nField =  static_cast<SCCOL>(0);
 			}
-			bRefreshExceptQuery[nTemp]=sal_True; 
+			bRefreshExceptQuery[nTemp]=sal_True;
 		}
 		else
 		{
@@ -936,10 +936,10 @@ IMPL_LINK( ScFilterDlg, LbSelectHdl, ListBox*, pLb )
 			for (sal_uInt16 i= nTemp; i< MAXQUERY; i++)
 			{
 				theQueryData.GetEntry(i).bDoQuery = sal_False;
-				bRefreshExceptQuery[i]=sal_False;  
+				bRefreshExceptQuery[i]=sal_False;
 				theQueryData.GetEntry(i).nField =  static_cast<SCCOL>(0);
 			}
-			bRefreshExceptQuery[nTemp]=sal_True; 
+			bRefreshExceptQuery[nTemp]=sal_True;
 		}
 		else
 		{
@@ -948,7 +948,7 @@ IMPL_LINK( ScFilterDlg, LbSelectHdl, ListBox*, pLb )
 			{
 				aLbConnect4.Enable();
 			}
-			
+
 			sal_uInt16 	nField	= pLb->GetSelectEntryPos();
 			sal_uInt16 nQ=2+nOffset;
 			theQueryData.GetEntry(nQ).bDoQuery = sal_True;
@@ -965,10 +965,10 @@ IMPL_LINK( ScFilterDlg, LbSelectHdl, ListBox*, pLb )
 			for (sal_uInt16 i= nTemp; i< MAXQUERY; i++)
 			{
 				theQueryData.GetEntry(i).bDoQuery = sal_False;
-				bRefreshExceptQuery[i]=sal_False; 
+				bRefreshExceptQuery[i]=sal_False;
 				theQueryData.GetEntry(i).nField =  static_cast<SCCOL>(0);
 			}
-			bRefreshExceptQuery[nTemp]=sal_True; 
+			bRefreshExceptQuery[nTemp]=sal_True;
 		}
 		else
 		{
@@ -994,7 +994,7 @@ IMPL_LINK( ScFilterDlg, LbSelectHdl, ListBox*, pLb )
 		sal_uInt16 nQ=2+nOffset;
 		theQueryData.GetEntry(nQ).eOp=(ScQueryOp)pLb->GetSelectEntryPos();
 	}
-	else 
+	else
 	{
 		sal_uInt16 nQ=3+nOffset;
 		theQueryData.GetEntry(nQ).eOp=(ScQueryOp)pLb->GetSelectEntryPos();
@@ -1117,13 +1117,13 @@ IMPL_LINK( ScFilterDlg, ValModifyHdl, ComboBox*, pEd )
 			sal_uInt16 	nField	= pLbField->GetSelectEntryPos();
 			rEntry.nField = nField ? (theQueryData.nCol1 +
 				static_cast<SCCOL>(nField) - 1) : static_cast<SCCOL>(0);
-		   
+
 			ScQueryOp eOp  = (ScQueryOp)pLbCond->GetSelectEntryPos();
             rEntry.eOp	   = eOp;
             rEntry.bQueryByDate = mbHasDates[nQE];
 
 		}
-	}		
+	}
 	return 0;
 }
 
@@ -1144,11 +1144,11 @@ sal_uInt16 ScFilterDlg::GetSliderPos()
 	return (sal_uInt16) aScrollBar.GetThumbPos();
 }
 void ScFilterDlg::RefreshEditRow( sal_uInt16 nOffset )
-{		
-	if (nOffset==0) 
+{
+	if (nOffset==0)
 		aConnLbArr[0]->Hide();
 	else
-		aConnLbArr[0]->Show();	
+		aConnLbArr[0]->Show();
 
 	for ( sal_uInt16 i=0; i<4; i++ )
 	{
@@ -1209,9 +1209,9 @@ void ScFilterDlg::RefreshEditRow( sal_uInt16 nOffset )
 				else
 					aConnLbArr[i]->SetNoSelection();
 			}
-			
+
 		}
-		else 
+		else
 		{
 			if (nOffset==0)
 			{
@@ -1219,7 +1219,7 @@ void ScFilterDlg::RefreshEditRow( sal_uInt16 nOffset )
 				{
 					aConnLbArr[i+1]->SetNoSelection();
 					aConnLbArr[i+1]->Disable();
-				}			
+				}
 			}
 			else
 			{
@@ -1232,7 +1232,7 @@ void ScFilterDlg::RefreshEditRow( sal_uInt16 nOffset )
 			aFieldLbArr[i]->Disable();
 			aCondLbArr[i]->Disable();
 			aValueEdArr[i]->Disable();
-		}				
+		}
 		aFieldLbArr[i]->SelectEntryPos( nFieldSelPos );
 		aCondLbArr [i]->SelectEntryPos( nCondPos );
 		aValueEdArr[i]->SetText( aValStr );

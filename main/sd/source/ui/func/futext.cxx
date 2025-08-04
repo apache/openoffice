@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -148,7 +148,7 @@ static sal_Bool bTestText = 0;
 |*
 \************************************************************************/
 
-FuText::FuText( ViewShell* pViewSh, ::sd::Window* pWin, ::sd::View* pView, SdDrawDocument* pDoc, SfxRequest& rReq ) 
+FuText::FuText( ViewShell* pViewSh, ::sd::Window* pWin, ::sd::View* pView, SdDrawDocument* pDoc, SfxRequest& rReq )
 : FuConstruct(pViewSh, pWin, pView, pDoc, rReq)
 , bFirstObjCreated(sal_False)
 , rRequest (rReq)
@@ -418,7 +418,7 @@ sal_Bool FuText::MouseButtonDown(const MouseEvent& rMEvt)
 							// this does not make sense and caused troubles. (see issue 112855)
 
 //							::Outliner* pOutl = mpView->GetTextEditOutliner();
-//							
+//
 //							if (mxTextObj.is() && (mxTextObj->GetOutlinerParaObject() ||
 //								(pOutl && pOutl->GetText(pOutl->GetParagraph( 0 )).Len() != 0)))
 							if( mpView->IsTextEdit() )
@@ -1565,7 +1565,7 @@ void FuText::ChangeFontSize( bool bGrow, OutlinerView* pOLV, const FontList* pFo
                     pTextObj->SetObjectItemNoBroadcast( aShapeSet.Get( EE_CHAR_FONTHEIGHT_CTL ) );
                 }
             }
-        }                
+        }
     }
 }
 

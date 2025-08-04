@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,23 +7,23 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_slideshow.hxx"
- 
+
 // must be first
 #include <canvas/debug.hxx>
 #include <canvas/verbosetrace.hxx>
@@ -77,7 +77,7 @@ namespace slideshow
                 @param nNumPropEntries
                 Number of property table entries (in pPropCopyTable)
              */
-            AppletShape( const ::com::sun::star::uno::Reference< 
+            AppletShape( const ::com::sun::star::uno::Reference<
                        		::com::sun::star::drawing::XShape >&	xShape,
                          double										nPrio,
                          const ::rtl::OUString&                     rServiceName,
@@ -92,9 +92,9 @@ namespace slideshow
 
             virtual void addViewLayer( const ViewLayerSharedPtr& 	rNewLayer,
                                        bool							bRedrawLayer );
-            virtual bool removeViewLayer( const ViewLayerSharedPtr& rNewLayer );			
+            virtual bool removeViewLayer( const ViewLayerSharedPtr& rNewLayer );
             virtual bool clearAllViewLayers();
-            
+
 
             // ExternalShapeBase methods
             //------------------------------------------------------------------
@@ -157,8 +157,8 @@ namespace slideshow
             ::basegfx::B2DRectangle aBounds = AppletShape::getBounds();
             ::std::for_each( maViewAppletShapes.begin(),
                              maViewAppletShapes.end(),
-                             ::boost::bind( 
-                                 &ViewAppletShape::resize, 
+                             ::boost::bind(
+                                 &ViewAppletShape::resize,
                                  _1,
                                  ::boost::cref( aBounds ) ) );
         }
@@ -170,22 +170,22 @@ namespace slideshow
         {
             try
             {
-                maViewAppletShapes.push_back( 
-                    ViewAppletShapeSharedPtr( new ViewAppletShape( rNewLayer, 
+                maViewAppletShapes.push_back(
+                    ViewAppletShapeSharedPtr( new ViewAppletShape( rNewLayer,
                                                                    getXShape(),
                                                                    maServiceName,
                                                                    mpPropCopyTable,
                                                                    mnNumPropEntries,
                                                                    mxComponentContext )));
-                
+
                 // push new size to view shape
                 maViewAppletShapes.back()->resize( getBounds() );
-                
+
                 // render the Shape on the newly added ViewLayer
                 if( bRedrawLayer )
                     maViewAppletShapes.back()->render( getBounds() );
             }
-            catch(uno::Exception&) 
+            catch(uno::Exception&)
             {
                 // ignore failed shapes - slideshow should run with
                 // the remaining content
@@ -193,14 +193,14 @@ namespace slideshow
         }
 
 		// ---------------------------------------------------------------------
-		
+
         bool AppletShape::removeViewLayer( const ViewLayerSharedPtr& rLayer )
         {
             const ViewAppletShapeVector::iterator aEnd( maViewAppletShapes.end() );
 
-            OSL_ENSURE( ::std::count_if(maViewAppletShapes.begin(), 
-                                        aEnd, 
-                                        ::boost::bind<bool>( 
+            OSL_ENSURE( ::std::count_if(maViewAppletShapes.begin(),
+                                        aEnd,
+                                        ::boost::bind<bool>(
                                             ::std::equal_to< ViewLayerSharedPtr >(),
                                             ::boost::bind( &ViewAppletShape::getViewLayer, _1 ),
                                             ::boost::cref( rLayer ) ) ) < 2,
@@ -208,9 +208,9 @@ namespace slideshow
 
             ViewAppletShapeVector::iterator aIter;
 
-            if( (aIter=::std::remove_if( maViewAppletShapes.begin(), 
-                                         aEnd, 
-                                         ::boost::bind<bool>( 
+            if( (aIter=::std::remove_if( maViewAppletShapes.begin(),
+                                         aEnd,
+                                         ::boost::bind<bool>(
                                              ::std::equal_to< ViewLayerSharedPtr >(),
                                              ::boost::bind( &ViewAppletShape::getViewLayer,
                                                             _1 ),
@@ -227,7 +227,7 @@ namespace slideshow
         }
 
 		// ---------------------------------------------------------------------
-		
+
         bool AppletShape::clearAllViewLayers()
         {
             maViewAppletShapes.clear();
@@ -241,13 +241,13 @@ namespace slideshow
             // redraw all view shapes, by calling their update() method
             if( ::std::count_if( maViewAppletShapes.begin(),
                                  maViewAppletShapes.end(),
-                                 ::boost::bind<bool>( 
-                                     ::boost::mem_fn( &ViewAppletShape::render ), 
+                                 ::boost::bind<bool>(
+                                     ::boost::mem_fn( &ViewAppletShape::render ),
                                      _1,
-                                     ::boost::cref( rCurrBounds ) ) ) 
+                                     ::boost::cref( rCurrBounds ) ) )
                 != static_cast<ViewAppletShapeVector::difference_type>(maViewAppletShapes.size()) )
             {
-                // at least one of the ViewShape::update() calls did return 
+                // at least one of the ViewShape::update() calls did return
                 // false - update failed on at least one ViewLayer
                 return false;
             }
@@ -256,7 +256,7 @@ namespace slideshow
         }
 
 		// ---------------------------------------------------------------------
-        
+
         bool AppletShape::implStartIntrinsicAnimation()
         {
             ::basegfx::B2DRectangle aBounds = getBounds();
@@ -266,12 +266,12 @@ namespace slideshow
                                             _1,
                                             ::boost::cref( aBounds )));
             mbIsPlaying = true;
-            
+
             return true;
         }
-        
+
 		// ---------------------------------------------------------------------
-        
+
         bool AppletShape::implEndIntrinsicAnimation()
         {
             ::std::for_each( maViewAppletShapes.begin(),
@@ -284,7 +284,7 @@ namespace slideshow
         }
 
 		// ---------------------------------------------------------------------
-        
+
         bool AppletShape::implPauseIntrinsicAnimation()
         {
             // TODO(F1): any way of temporarily disabling/deactivating

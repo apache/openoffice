@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -139,8 +139,8 @@ OSection::OSection(const uno::Reference< report::XReportDefinition >& _xParent
     //.getSdrModel()->createNewPage(m_xSection);
 }
 //--------------------------------------------------------------------------
-// TODO: VirtualFunctionFinder: This is virtual function! 
-// 
+// TODO: VirtualFunctionFinder: This is virtual function!
+//
 OSection::~OSection()
 {
     DBG_DTOR( rpt_OSection,NULL);
@@ -164,16 +164,16 @@ uno::Any SAL_CALL OSection::queryInterface( const uno::Type& _rType ) throw (uno
 }
 
 // -----------------------------------------------------------------------------
-void SAL_CALL OSection::dispose() throw(uno::RuntimeException) 
+void SAL_CALL OSection::dispose() throw(uno::RuntimeException)
 {
     OSL_ENSURE(!rBHelper.bDisposed,"Already disposed!");
 	SectionPropertySet::dispose();
-	cppu::WeakComponentImplHelperBase::dispose(); 
-    
+	cppu::WeakComponentImplHelperBase::dispose();
+
 }
 // -----------------------------------------------------------------------------
-// TODO: VirtualFunctionFinder: This is virtual function! 
-// 
+// TODO: VirtualFunctionFinder: This is virtual function!
+//
 void SAL_CALL OSection::disposing()
 {
     lang::EventObject aDisposeEvent( static_cast< ::cppu::OWeakObject* >( this ) );
@@ -191,7 +191,7 @@ void SAL_CALL OSection::disposing()
             uno::Reference< drawing::XShape> xShape(m_xDrawPage->getByIndex(0),uno::UNO_QUERY);
             m_xDrawPage->remove(xShape);
             ::comphelper::disposeComponent(xShape);
-        } 
+        }
         catch(const uno::Exception&)
         {}
     }
@@ -243,7 +243,7 @@ void OSection::init()
 				{
 		            ::comphelper::query_aggregation(m_xProxy,m_xDrawPage);
 				}
-            
+
         	    // set ourself as delegator
 				{
     		        if ( m_xProxy.is() )
@@ -379,7 +379,7 @@ void SAL_CALL OSection::setNewRowOrCol( ::sal_Int16 _newroworcol ) throw (lang::
                         ,1
                         ,m_xContext);
     checkNotPageHeaderFooter();
-                       
+
 	set(PROPERTY_NEWROWORCOL,_newroworcol,m_nNewRowOrCol);
 }
 // -----------------------------------------------------------------------------
@@ -396,7 +396,7 @@ void SAL_CALL OSection::setKeepTogether( ::sal_Bool _keeptogether ) throw (lang:
         ::osl::MutexGuard aGuard(m_aMutex);
         checkNotPageHeaderFooter();
     }
-    
+
 	set(PROPERTY_KEEPTOGETHER,_keeptogether,m_bKeepTogether);
 }
 // -----------------------------------------------------------------------------
@@ -516,7 +516,7 @@ uno::Sequence< ::rtl::OUString > SAL_CALL OSection::getAvailableReportComponentN
 
 	const ::std::vector< ::rtl::OUString >& aRet = lcl_getControlModelMap();
 	const ::rtl::OUString* pRet = aRet.empty() ? 0 : &aRet[0];
-	return uno::Sequence< ::rtl::OUString >(pRet, aRet.size()); 
+	return uno::Sequence< ::rtl::OUString >(pRet, aRet.size());
 }
 // -----------------------------------------------------------------------------
 // XChild

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -455,7 +455,7 @@ void Os2SalGraphics::drawBitmap( const SalTwoRect& rPosAry,
 
     const Os2SalBitmap& rSalBitmap = static_cast<const Os2SalBitmap&>(rSSalBitmap);
     const Os2SalBitmap& rTransparentBitmap = static_cast<const Os2SalBitmap&>(rSTransparentBitmap);
-	
+
 	if( bFastTransparent )
 	{
 		ImplDrawBitmap( mhPS, mnHeight, rPosAry, rTransparentBitmap, FALSE, ROP_SRCAND );
@@ -532,7 +532,7 @@ void Os2SalGraphics::drawBitmap( const SalTwoRect& rPosAry,
 // -----------------------------------------------------------------------
 
 bool Os2SalGraphics::drawAlphaBitmap( const SalTwoRect& rTR,
-				      const SalBitmap&  rSrcBitmap, 
+				      const SalBitmap&  rSrcBitmap,
 				      const SalBitmap&  rAlphaBmp )
 {
 	// TODO(P3) implement alpha blending
@@ -555,7 +555,7 @@ bool Os2SalGraphics::drawTransformedBitmap(
 
 // -----------------------------------------------------------------------
 
-bool Os2SalGraphics::drawAlphaRect( long nX, long nY, long nWidth, 
+bool Os2SalGraphics::drawAlphaRect( long nX, long nY, long nWidth,
                                     long nHeight, sal_uInt8 nTransparency )
 {
 	// TODO(P3) implement alpha blending
@@ -569,7 +569,7 @@ void Os2SalGraphics::drawMask( const SalTwoRect& rPosAry,
 							SalColor nMaskColor )
 {
 	DBG_ASSERT( !mbPrinter, "No transparency print possible!" );
-	
+
     const Os2SalBitmap& rSalBitmap = static_cast<const Os2SalBitmap&>(rSSalBitmap);
 
 	SalTwoRect	aPosAry = rPosAry;

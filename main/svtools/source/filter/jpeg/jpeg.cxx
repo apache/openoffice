@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -93,7 +93,7 @@ extern "C" long JPEGCallback( void* pCallbackData, long nPercent )
 
 #define BUF_SIZE  4096
 
-typedef struct 
+typedef struct
 {
   struct jpeg_destination_mgr pub;  /* public fields */
 
@@ -361,7 +361,7 @@ void* JPEGReader::CreateBitmap( void* pParam )
         // read the bitmap into memory.
         return NULL;
     }
-    
+
 	if( bGray )
 	{
 		BitmapPalette aGrayPal( 256 );
@@ -380,9 +380,9 @@ void* JPEGReader::CreateBitmap( void* pParam )
     if ( bSetLogSize )
     {
         unsigned long nUnit = ((JPEGCreateBitmapParam*)pParam)->density_unit;
-        
-        if( ( ( 1 == nUnit ) || ( 2 == nUnit ) ) && 
-            ( (JPEGCreateBitmapParam*) pParam )->X_density && 
+
+        if( ( ( 1 == nUnit ) || ( 2 == nUnit ) ) &&
+            ( (JPEGCreateBitmapParam*) pParam )->X_density &&
             ( (JPEGCreateBitmapParam*) pParam )->Y_density )
         {
             Point       aEmptyPoint;
@@ -395,7 +395,7 @@ void* JPEGReader::CreateBitmap( void* pParam )
             aBmp.SetPrefMapMode( MapMode( MAP_100TH_MM ) );
         }
     }
-	
+
     pAcc = aBmp.AcquireWriteAccess();
 
     if( pAcc )
@@ -479,7 +479,7 @@ void JPEGReader::FillBitmap()
 
                 if(bCheckOwnReader)
                 {
-                    // #122985# Trying to copy the RGB data from jpeg import to make things faster. Unfortunately 
+                    // #122985# Trying to copy the RGB data from jpeg import to make things faster. Unfortunately
                     // it has no GBR format, so RGB three-byte groups need to be 'flipped' to GBR first,
                     // then CopyScanline can use a memcpy to do the data transport. CopyScanline can also
                     // do the needed conversion from BMP_FORMAT_24BIT_TC_RGB (and it works well), but this
@@ -753,7 +753,7 @@ sal_Bool JPEGWriter::Write( const Graphic& rGraphic )
 		if ( bIsGrey )
 			bGreys = sal_True;
 	}
-	
+
 	if( pExpWasGrey )
 	    *pExpWasGrey = bGreys;
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,20 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
- 
+
 #include "vbahyperlinks.hxx"
 #include <algorithm>
 #include <vector>
@@ -84,7 +84,7 @@ bool EqualAnchorFunctor::operator()( const uno::Reference< excel::XHyperlink >& 
     sal_Int32 nType = rxHlink->getType();
     if( nType != mnType )
         return false;
-        
+
     switch( nType )
     {
         case office::MsoHyperlinkType::msoHyperlinkRange:
@@ -121,7 +121,7 @@ public:
     /** Inserts the passed hyperlink into the collection. Will remove a
         Hyperlink object with the same anchor as the passed Hyperlink object. */
     void insertHyperlink( const uno::Reference< excel::XHyperlink >& rxHlink ) throw (uno::RuntimeException);
-    
+
     // XIndexAccess
     virtual sal_Int32 SAL_CALL getCount() throw (uno::RuntimeException);
     virtual uno::Any SAL_CALL getByIndex( sal_Int32 nIndex ) throw (lang::IndexOutOfBoundsException, lang::WrappedTargetException, uno::RuntimeException);
@@ -129,7 +129,7 @@ public:
     // XElementAccess
     virtual uno::Type SAL_CALL getElementType() throw (uno::RuntimeException);
     virtual sal_Bool SAL_CALL hasElements() throw (uno::RuntimeException);
-    
+
 private:
     typedef ::std::vector< uno::Reference< excel::XHyperlink > > HyperlinkVector;
     HyperlinkVector     maHlinks;
@@ -247,7 +247,7 @@ uno::Reference< excel::XHyperlink > SAL_CALL ScVbaHyperlinks::Add(
         the spreadsheet document. Parent of the Hyperlink is the anchor object. */
     uno::Reference< excel::XHyperlink > xHlink( new ScVbaHyperlink(
         xAnchor, mxContext, rAddress, rSubAddress, rScreenTip, rTextToDisplay ) );
-        
+
     /*  If creation of the hyperlink did not throw, insert it into the
         collection. */
     mxContainer->insertHyperlink( xHlink );

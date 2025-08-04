@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -268,9 +268,9 @@ SdrObject* FuConstPolygon::CreateDefaultObject(const sal_uInt16 nID, const Recta
 				case SID_DRAW_BEZIER_NOFILL:
 				{
 					basegfx::B2DPolygon aInnerPoly;
-					
+
 					aInnerPoly.append(basegfx::B2DPoint(rRectangle.Left(), rRectangle.Bottom()));
-					
+
 					const basegfx::B2DPoint aCenterBottom(rRectangle.Center().X(), rRectangle.Bottom());
 					aInnerPoly.appendBezierSegment(
 						aCenterBottom,
@@ -296,12 +296,12 @@ SdrObject* FuConstPolygon::CreateDefaultObject(const sal_uInt16 nID, const Recta
 						basegfx::B2DPoint(rRectangle.Left(), rRectangle.Top()),
 						basegfx::B2DPoint(rRectangle.Center().X(), rRectangle.Top()),
 						basegfx::B2DPoint(rRectangle.Center().X(), rRectangle.Center().Y()));
-					
+
 					aInnerPoly.appendBezierSegment(
 						basegfx::B2DPoint(rRectangle.Center().X(), rRectangle.Bottom()),
 						basegfx::B2DPoint(rRectangle.Right(), rRectangle.Bottom()),
 						basegfx::B2DPoint(rRectangle.Right(), rRectangle.Top()));
-					
+
 					aPoly.append(aInnerPoly);
 					break;
 				}
@@ -311,7 +311,7 @@ SdrObject* FuConstPolygon::CreateDefaultObject(const sal_uInt16 nID, const Recta
 					basegfx::B2DPolygon aInnerPoly;
 					const sal_Int32 nWdt(rRectangle.GetWidth());
 					const sal_Int32 nHgt(rRectangle.GetHeight());
-					
+
 					aInnerPoly.append(basegfx::B2DPoint(rRectangle.Left(), rRectangle.Bottom()));
 					aInnerPoly.append(basegfx::B2DPoint(rRectangle.Left() + (nWdt * 30) / 100, rRectangle.Top() + (nHgt * 70) / 100));
 					aInnerPoly.append(basegfx::B2DPoint(rRectangle.Left(), rRectangle.Top() + (nHgt * 15) / 100));
@@ -320,7 +320,7 @@ SdrObject* FuConstPolygon::CreateDefaultObject(const sal_uInt16 nID, const Recta
 					aInnerPoly.append(basegfx::B2DPoint(rRectangle.Left() + (nWdt * 80) / 100, rRectangle.Top() + (nHgt * 50) / 100));
 					aInnerPoly.append(basegfx::B2DPoint(rRectangle.Left() + (nWdt * 80) / 100, rRectangle.Top() + (nHgt * 75) / 100));
 					aInnerPoly.append(basegfx::B2DPoint(rRectangle.Bottom(), rRectangle.Right()));
-					
+
 					if(SID_DRAW_POLYGON_NOFILL == nID)
 					{
 						aInnerPoly.append(basegfx::B2DPoint(rRectangle.Center().X(), rRectangle.Bottom()));

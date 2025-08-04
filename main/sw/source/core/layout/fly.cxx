@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -136,7 +136,7 @@ SwFlyFrm::SwFlyFrm( SwFlyFrmFmt *pFmt, SwFrm* pSib, SwFrm *pAnch ) :
             bVertLR = 0;
             bVertical = 0;
 		}
-        else 
+        else
         {
             const ViewShell *pSh = getRootFrm() ? getRootFrm()->GetCurrShell() : 0;
             if( pSh && pSh->GetViewOptions()->getBrowseMode() )
@@ -155,7 +155,7 @@ SwFlyFrm::SwFlyFrm( SwFlyFrmFmt *pFmt, SwFrm* pSib, SwFrm *pAnch ) :
                 	bVertLR = 0;
             }
         }
-        
+
         bInvalidR2L = 0;
         if( FRMDIR_HORI_RIGHT_TOP == nDir )
             bRightToLeft = 1;
@@ -443,7 +443,7 @@ void SwFlyFrm::InitDrawObj( sal_Bool bNotify )
 	//ContactObject aus dem Format suchen. Wenn bereits eines existiert, so
 	//braucht nur eine neue Ref erzeugt werden, anderfalls ist es jetzt an
 	//der Zeit das Contact zu erzeugen.
-	
+
     IDocumentDrawModelAccess* pIDDMA = GetFmt()->getIDocumentDrawModelAccess();
 	SwFlyDrawContact *pContact = SwIterator<SwFlyDrawContact,SwFmt>::FirstElement( *GetFmt() );
 	if ( !pContact )
@@ -1518,7 +1518,7 @@ void SwFlyFrm::Format( const SwBorderAttrs *pAttrs )
 			{//Bug 120881:For enlarging fixed size Pagenumber frame,kangjian
 				if(nNewSize <= 500 && IsPageNumberingFrm())
 					nNewSize = nNewSize - nLR + 150;
-			
+
 				else
 					nNewSize -= nLR;
 			//Bug 120881(End)
@@ -2322,7 +2322,7 @@ void SwFrm::AppendDrawObj( SwAnchoredObject& _rNewObj )
                 _rNewObj.DrawObj()->SetLayer(aInvisibleControlLayerID);
             }
             else
-            {        
+            {
                 _rNewObj.DrawObj()->SetLayer(aControlLayerID);
             }
         }
@@ -2920,7 +2920,7 @@ const SwFlyFrmFmt * SwFlyFrm::GetFmt() const
 {
     return static_cast< const SwFlyFrmFmt * >( GetDep() );
 }
-    
+
 SwFlyFrmFmt * SwFlyFrm::GetFmt()
 {
     return static_cast< SwFlyFrmFmt * >( GetDep() );
@@ -2933,7 +2933,7 @@ sal_Bool SwFlyFrm::IsPageNumberingFrm()
 		return false;
 	if (bInCnt || bLayout)//Incorrect anchor type...
 		return false;
-	if (!(GetAnchorFrm()->IsTxtFrm() && GetAnchorFrm()->GetUpper() 
+	if (!(GetAnchorFrm()->IsTxtFrm() && GetAnchorFrm()->GetUpper()
 		&& (GetAnchorFrm()->GetUpper()->FindFooterOrHeader())))//Not in header or footer frame
 		return false;
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -104,16 +104,16 @@ void SAL_CALL TagWindowAsModified::initialize(const css::uno::Sequence< css::uno
 
     if (lArguments.getLength() > 0)
         lArguments[0] >>= xFrame;
-    
+
     if ( ! xFrame.is ())
         return;
-                
+
     // SAFE -> ----------------------------------
     WriteGuard aWriteLock(m_aLock);
     m_xFrame = xFrame ;
     aWriteLock.unlock();
     // <- SAFE ----------------------------------
-    
+
     xFrame->addFrameActionListener(this);
     impl_update (xFrame);
 }
@@ -133,21 +133,21 @@ void SAL_CALL TagWindowAsModified::modified(const css::lang::EventObject& aEvent
         (aEvent.Source != xModel)
        )
         return;
-        
+
     aReadLock.unlock();
     // <- SAFE ----------------------------------
-    
+
     ::sal_Bool bModified = xModel->isModified ();
-    
+
     // SYNCHRONIZED ->
     ::vos::OClearableGuard aSolarGuard(Application::GetSolarMutex());
-    
+
     Window* pWindow = VCLUnoHelper::GetWindow(xWindow);
     if ( ! pWindow)
         return;
-    
-    sal_Bool bSystemWindow = pWindow->IsSystemWindow(); 
-    sal_Bool bWorkWindow   = (pWindow->GetType() == WINDOW_WORKWINDOW); 
+
+    sal_Bool bSystemWindow = pWindow->IsSystemWindow();
+    sal_Bool bWorkWindow   = (pWindow->GetType() == WINDOW_WORKWINDOW);
     if (!bSystemWindow && !bWorkWindow)
         return;
 
@@ -155,7 +155,7 @@ void SAL_CALL TagWindowAsModified::modified(const css::lang::EventObject& aEvent
         pWindow->SetExtendedStyle(WB_EXT_DOCMODIFIED);
     else
         pWindow->SetExtendedStyle( ! WB_EXT_DOCMODIFIED);
-    
+
     aSolarGuard.clear();
     // <- SYNCHRONIZED
 }
@@ -179,10 +179,10 @@ void SAL_CALL TagWindowAsModified::frameAction(const css::frame::FrameActionEven
         (aEvent.Source != xFrame)
        )
         return;
-        
+
     aWriteLock.unlock();
     // <- SAFE ----------------------------------
-    
+
     impl_update (xFrame);
 }
 
@@ -202,7 +202,7 @@ void SAL_CALL TagWindowAsModified::disposing(const css::lang::EventObject& aEven
         m_xFrame = css::uno::Reference< css::frame::XFrame >();
         return;
     }
-        
+
     css::uno::Reference< css::frame::XModel > xModel(m_xModel.get(), css::uno::UNO_QUERY);
     if (
         (xModel.is ()           ) &&
@@ -228,13 +228,13 @@ void TagWindowAsModified::impl_update (const css::uno::Reference< css::frame::XF
     css::uno::Reference< css::frame::XModel >      xModel ;
     if (xController.is ())
         xModel = xController->getModel ();
-    
+
     if (
         ( ! xWindow.is ()) ||
         ( ! xModel.is  ())
        )
         return;
-    
+
     // SAFE -> ----------------------------------
     WriteGuard aWriteLock(m_aLock);
     // Note: frame was set as member outside ! we have to refresh connections
@@ -243,7 +243,7 @@ void TagWindowAsModified::impl_update (const css::uno::Reference< css::frame::XF
     m_xModel  = xModel ;
     aWriteLock.unlock();
     // <- SAFE ----------------------------------
-    
+
     css::uno::Reference< css::util::XModifyBroadcaster > xModifiable(xModel, css::uno::UNO_QUERY);
     if (xModifiable.is ())
         xModifiable->addModifyListener (this);

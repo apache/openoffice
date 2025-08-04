@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -34,14 +34,14 @@
 
 TYPEINIT1( SvxEditSourceHint, TextHint );
 
-SvxEditSourceHint::SvxEditSourceHint( sal_uLong _nId ) : 
+SvxEditSourceHint::SvxEditSourceHint( sal_uLong _nId ) :
     TextHint( _nId ),
     mnStart( 0 ),
     mnEnd( 0 )
 {
 }
 
-SvxEditSourceHint::SvxEditSourceHint( sal_uLong _nId, sal_uLong nValue, sal_uLong nStart, sal_uLong nEnd ) : 
+SvxEditSourceHint::SvxEditSourceHint( sal_uLong _nId, sal_uLong nValue, sal_uLong nStart, sal_uLong nEnd ) :
     TextHint( _nId, nValue ),
     mnStart( nStart),
     mnEnd( nEnd )
@@ -75,7 +75,7 @@ void SvxEditSourceHint::SetStartValue( sal_uLong n )
 
 void SvxEditSourceHint::SetEndValue( sal_uLong n )
 {
-    mnEnd = n; 
+    mnEnd = n;
 }
 TYPEINIT1( SvxEditSourceHintEndPara , SvxEditSourceHint );
 //------------------------------------------------------------------------
@@ -92,7 +92,7 @@ TYPEINIT1( SvxEditSourceHintEndPara , SvxEditSourceHint );
             case EE_NOTIFY_PARAGRAPHINSERTED:
                 return ::std::auto_ptr<SfxHint>( new TextHint( TEXT_HINT_PARAINSERTED, aNotify->nParagraph ) );
 
-            case EE_NOTIFY_PARAGRAPHREMOVED: 
+            case EE_NOTIFY_PARAGRAPHREMOVED:
                 return ::std::auto_ptr<SfxHint>( new TextHint( TEXT_HINT_PARAREMOVED, aNotify->nParagraph ) );
 
             case EE_NOTIFY_PARAGRAPHSMOVED:
@@ -169,7 +169,7 @@ sal_Bool SvxEditSourceHelper::GetAttributeRun( sal_uInt16& nStartIndex, sal_uInt
     for( nAttr=0, nClosestStartIndex_s=0, nClosestStartIndex_e=0; nAttr<aCharAttribs.Count(); ++nAttr )
     {
         nCurrIndex = aCharAttribs[nAttr].nStart;
-        
+
         //if( nCurrIndex > nIndex )
         //    break; // aCharAttribs array is sorted in increasing order for nStart values
 
@@ -285,19 +285,19 @@ sal_Bool SvxEditSourceHelper::GetAttributeRun( sal_uInt16& nStartIndex, sal_uInt
 
     return sal_True;
 
-#else // old implementation	
+#else // old implementation
 
     EECharAttribArray aCharAttribs;
-    
+
     rEE.GetCharAttribs( nPara, aCharAttribs );
-    
+
     // find closest index in front of nIndex
     sal_uInt16 nAttr, nCurrIndex;
     sal_Int32 nClosestStartIndex;
     for( nAttr=0, nClosestStartIndex=0; nAttr<aCharAttribs.Count(); ++nAttr )
     {
         nCurrIndex = aCharAttribs[nAttr].nStart;
-        
+
         if( nCurrIndex > nIndex )
             break; // aCharAttribs array is sorted in increasing order for nStart values
 

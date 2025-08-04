@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -43,22 +43,22 @@ using namespace com::sun::star::reflection;
 using namespace rtl;
 
 namespace cppu {
-	
+
 /*---------------------------------------------------------
 *	This helper class implements XIdlClass. Is used by
 *	createStdIdlClass()
 *---------------------------------------------------------*/
-class OStdIdlClass : 	
+class OStdIdlClass :
 			public OWeakObject,
 			public XIdlClass,
 			public XIdlClassProvider
 {
 public:
-	OStdIdlClass( 	
-					const Reference < XMultiServiceFactory > &rSMgr , 
-					const OUString & sImplementationName , 
+	OStdIdlClass(
+					const Reference < XMultiServiceFactory > &rSMgr ,
+					const OUString & sImplementationName ,
 					const Reference < XIdlClass > & rSuperClass,
-					const Sequence < OUString > &seq 
+					const Sequence < OUString > &seq
 				) SAL_THROW( () );
 
 	// XInterface
@@ -74,7 +74,7 @@ public:
 
     // XIdlClass
     virtual Sequence< Reference< XIdlClass > > SAL_CALL getClasses(  ) throw(RuntimeException)
-    									{ return Sequence < Reference < XIdlClass > > (); } 
+    									{ return Sequence < Reference < XIdlClass > > (); }
     virtual Reference< XIdlClass > SAL_CALL getClass( const ::rtl::OUString& ) throw(RuntimeException)
     									{ return Reference < XIdlClass > (); }
     virtual sal_Bool SAL_CALL equals( const Reference< XIdlClass >& Type ) throw(RuntimeException)
@@ -136,7 +136,7 @@ Reference< XIdlReflection > const & OStdIdlClass::get_corefl()
                     xContext->getValueByName(
                         OUString( RTL_CONSTASCII_USTRINGPARAM("/singletons/com.sun.star.reflection.theCoreReflection") ) ) >>= x;
                     OSL_ENSURE( x.is(), "### CoreReflection singleton not accessible!?" );
-                    
+
                     if (x.is())
                     {
                         ::osl::MutexGuard guard( ::osl::Mutex::getGlobalMutex() );
@@ -159,10 +159,10 @@ Reference< XIdlReflection > const & OStdIdlClass::get_corefl()
 }
 
 OStdIdlClass::OStdIdlClass(
-					const Reference < XMultiServiceFactory > &rSMgr , 
-					const OUString & sImplementationName , 
+					const Reference < XMultiServiceFactory > &rSMgr ,
+					const OUString & sImplementationName ,
 					const Reference < XIdlClass > & rSuperClass,
-					const Sequence < OUString > &seq 
+					const Sequence < OUString > &seq
 						  ) SAL_THROW( () ) :
 				m_sImplementationName( sImplementationName ) ,
 				m_seqSupportedInterface( seq ),
@@ -170,17 +170,17 @@ OStdIdlClass::OStdIdlClass(
 {
 	if( rSuperClass.is() )
 		m_seqSuperClasses = Sequence< Reference < XIdlClass > >( &rSuperClass, 1 );
-			
+
 }
-	
+
 Any SAL_CALL OStdIdlClass::queryInterface( const Type & rType )
 	 throw(::com::sun::star::uno::RuntimeException)
 {
 	Any aRet( ::cppu::queryInterface(
 		rType, static_cast< XIdlClass * >( this ), static_cast< XIdlClassProvider * >( this ) ) );
-	
+
 	return (aRet.hasValue() ? aRet : OWeakObject::queryInterface( rType ));
-}	
+}
 
 
 Sequence< Reference< XIdlClass > > SAL_CALL OStdIdlClass::getInterfaces(  ) throw(RuntimeException)
@@ -191,12 +191,12 @@ Sequence< Reference< XIdlClass > > SAL_CALL OStdIdlClass::getInterfaces(  ) thro
     if( rCoreRefl.is() )
     {
         Sequence< Reference< XIdlClass > > seqClasses( nMax );
-        
+
         for( int n = 0 ; n < nMax ; n++ )
         {
             seqClasses.getArray()[n] = rCoreRefl->forName( m_seqSupportedInterface.getArray()[n] );
-        }	
-        
+        }
+
         return seqClasses;
 	}
 	return Sequence< Reference< XIdlClass > > () ;
@@ -209,13 +209,13 @@ Sequence< Reference < XIdlClass > > SAL_CALL OStdIdlClass::getIdlClasses(void)
 {
 	// weak reference to cache the standard class
     static WeakReference< XIdlClass >	weakRef;
-	
-	// try to make weakref hard	
+
+	// try to make weakref hard
 	Reference < XIdlClass > r = weakRef;
 
-	if( ! r.is() ) {		
+	if( ! r.is() ) {
 		// xidlclass has not been initialized before or has been destroyed already.
-		r = ::cppu::createStandardClass( 
+		r = ::cppu::createStandardClass(
 										m_rSMgr ,
 										OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.comp.cppuhelper.OStdIdlClass") ) ,
 										Reference < XIdlClass > () ,
@@ -235,20 +235,20 @@ Sequence< Reference < XIdlClass > > SAL_CALL OStdIdlClass::getIdlClasses(void)
 
 // external constructor
 XIdlClass *  SAL_CALL createStandardClassWithSequence(
-					const Reference < XMultiServiceFactory > &rSMgr , 
-					const OUString & sImplementationName , 
+					const Reference < XMultiServiceFactory > &rSMgr ,
+					const OUString & sImplementationName ,
 					const Reference < XIdlClass > & rSuperClass,
 					const Sequence < OUString > &seqInterfaceNames )
 	SAL_THROW( () )
 {
-	return SAL_STATIC_CAST( 
-						XIdlClass * , 
-						new OStdIdlClass(	
-											rSMgr , 
+	return SAL_STATIC_CAST(
+						XIdlClass * ,
+						new OStdIdlClass(
+											rSMgr ,
 											sImplementationName,
-											rSuperClass, 	
-											seqInterfaceNames 
-										  ) 
+											rSuperClass,
+											seqInterfaceNames
+										  )
 					   );
 }
 

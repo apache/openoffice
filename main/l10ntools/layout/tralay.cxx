@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,7 +49,7 @@ class TranslateLayout : public Application
 {
     ByteString mGid1;
     ByteString mLanguage;
-    ByteString mLocalize; 
+    ByteString mLocalize;
     ByteString mOutput;
     ByteString mProject;
     ByteString mRoot;
@@ -266,7 +266,7 @@ void TranslateLayout::MergeLanguage( ByteString const& language )
         fprintf(stderr, "error: parsing: %s\n", xmlFile.GetBuffer() );
         return;
     }
-    
+
     layoutXml->Extract();
     insertMarker( layoutXml, xmlFile );
 
@@ -282,7 +282,7 @@ void TranslateLayout::MergeLanguage( ByteString const& language )
             if ( XMLElement* element = ( *languageMap )[ "en-US" ] )
                 translateElement( element, language, &resData, mergeData );
     }
-    
+
 #ifndef WNT
     ByteString outFile = "/dev/stdout";
 #else

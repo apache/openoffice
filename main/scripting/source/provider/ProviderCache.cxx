@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,7 +45,7 @@ ProviderCache::ProviderCache( const Reference< XComponentContext >& xContext, co
 {
     // initialise m_hProviderDetailsCache with details of ScriptProviders
     // will use createContentEnumeration
-    
+
     m_xMgr = m_xContext->getServiceManager();
     ENSURE_OR_THROW( m_xMgr.is(), "ProviderCache::ProviderCache() failed to obtain ServiceManager" );
     populateCache();
@@ -58,7 +58,7 @@ ProviderCache::ProviderCache( const Reference< XComponentContext >& xContext, co
 {
     // initialise m_hProviderDetailsCache with details of ScriptProviders
     // will use createContentEnumeration
-    
+
     m_xMgr = m_xContext->getServiceManager();
     ENSURE_OR_THROW( m_xMgr.is(), "ProviderCache::ProviderCache() failed to obtain ServiceManager" );
     populateCache();
@@ -67,8 +67,8 @@ ProviderCache::ProviderCache( const Reference< XComponentContext >& xContext, co
 ProviderCache::~ProviderCache()
 {
 }
- 
-Reference< provider::XScriptProvider > 
+
+Reference< provider::XScriptProvider >
 ProviderCache::getProvider( const ::rtl::OUString& providerName )
 {
     ::osl::Guard< osl::Mutex > aGuard( m_mutex );
@@ -77,14 +77,14 @@ ProviderCache::getProvider( const ::rtl::OUString& providerName )
     if ( h_it != m_hProviderDetailsCache.end() )
     {
         if (  h_it->second.provider.is() )
-        { 
+        {
             provider = h_it->second.provider;
         }
-	else 
+	else
 	{
 	    // need to create provider and insert into hash
             provider = createProvider( h_it->second );
-	}	      
+	}
     }
     return provider;
 }
@@ -104,20 +104,20 @@ ProviderCache::getAllProviders() throw ( RuntimeException )
     {
         sal_Int32 providerIndex = 0;
 	sal_Int32 index = 0;
-        for ( index = 0; h_it !=  h_itEnd; ++h_it, index++ )	 
+        for ( index = 0; h_it !=  h_itEnd; ++h_it, index++ )
         {
             Reference< provider::XScriptProvider > xScriptProvider  = h_it->second.provider;
             if ( xScriptProvider.is() )
             {
                 providers[ providerIndex++ ] = xScriptProvider;
             }
-            else 
+            else
             {
                 // create provider
                 try
-                { 
-                    xScriptProvider  = createProvider( h_it->second ); 
-                    providers[ providerIndex++ ] = xScriptProvider; 
+                {
+                    xScriptProvider  = createProvider( h_it->second );
+                    providers[ providerIndex++ ] = xScriptProvider;
                 }
                 catch ( Exception& e )
                 {
@@ -127,14 +127,14 @@ ProviderCache::getAllProviders() throw ( RuntimeException )
                     //    Reference< XInterface >() );
                 }
             }
-        }		
+        }
 
         if ( providerIndex < index )
         {
             providers.realloc( providerIndex );
         }
-	
-    }	     
+
+    }
     else
     {
         OSL_TRACE("no available providers, something very wrong!!!");
@@ -148,7 +148,7 @@ ProviderCache::populateCache() throw ( RuntimeException )
     // wrong name in services.rdb
     ::rtl::OUString serviceName;
     ::osl::Guard< osl::Mutex > aGuard( m_mutex );
-    try 
+    try
     {
         ::rtl::OUString languageProviderName( RTL_CONSTASCII_USTRINGPARAM(
             "com.sun.star.script.provider.LanguageScriptProvider" ) );
@@ -163,7 +163,7 @@ ProviderCache::populateCache() throw ( RuntimeException )
             Reference< lang::XServiceInfo > xServiceInfo( factory, UNO_QUERY_THROW );
 
             Sequence< ::rtl::OUString > serviceNames = xServiceInfo->getSupportedServiceNames();
-            	    
+
             if ( serviceNames.getLength() > 0 )
             {
                 ::rtl::OUString searchString( RTL_CONSTASCII_USTRINGPARAM (
@@ -180,7 +180,7 @@ ProviderCache::populateCache() throw ( RuntimeException )
                         break;
                     }
                 }
-            }		    
+            }
         }
     }
     catch ( Exception e )
@@ -194,7 +194,7 @@ ProviderCache::populateCache() throw ( RuntimeException )
 
 Reference< provider::XScriptProvider >
 ProviderCache::createProvider( ProviderDetails& details ) throw ( RuntimeException )
-{ 
+{
     try
     {
         details.provider.set(
@@ -205,7 +205,7 @@ ProviderCache::createProvider( ProviderDetails& details ) throw ( RuntimeExcepti
         ::rtl::OUString temp = ::rtl::OUString::createFromAscii("ProviderCache::createProvider() Error creating provider from factory!!!");
         throw RuntimeException( temp.concat( e.Message ), Reference< XInterface >() );
     }
-        
-    return details.provider; 
+
+    return details.provider;
 }
 } //end namespace

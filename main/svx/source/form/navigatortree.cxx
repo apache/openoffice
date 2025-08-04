@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -2191,9 +2191,9 @@ namespace svxform
     {
         RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "svx", "Ocke.Janssen@sun.com", "NavigatorTree::MarkViewObjects" );
         FmFormShell* pFormShell = GetNavModel()->GetFormShell();
-		if( !pFormShell ) 
+		if( !pFormShell )
             return;
-        
+
         // first collect all sdrobjects
         ::std::set< Reference< XFormComponent > > aObjects;
         CollectObjects(pFormData,bDeep,aObjects);
@@ -2218,7 +2218,7 @@ namespace svxform
             {
                 // unfortunately, the writer doesn't like marking an already-marked object, again, so reset the mark first
                 pFormView->MarkObj( pSdrObject, pPageView, !bMark, sal_False );
-            }            
+            }
         } // while ( aIter.IsMore() )
         if ( bMark )
         {
@@ -2249,7 +2249,7 @@ namespace svxform
 		    {
 			    pControlData = (FmControlData*)pEntryData;
                 _rObjects.insert(pControlData->GetFormComponent());
-		    } // if( pEntryData->ISA(FmControlData) ) 
+		    } // if( pEntryData->ISA(FmControlData) )
             else if (bDeep && (pEntryData->ISA(FmFormData)))
                 CollectObjects((FmFormData*)pEntryData,bDeep,_rObjects);
 	    } // for( sal_uInt32 i=0; i<pChildList->Count(); i++ )
@@ -2258,10 +2258,10 @@ namespace svxform
 	void NavigatorTree::MarkViewObj( FmControlData* pControlData, sal_Bool bMarkHandles, sal_Bool bMark)
 	{
         RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "svx", "Ocke.Janssen@sun.com", "NavigatorTree::MarkViewObj" );
-		if( !pControlData ) 
+		if( !pControlData )
             return;
 		FmFormShell* pFormShell = GetNavModel()->GetFormShell();
-		if( !pFormShell ) 
+		if( !pFormShell )
             return;
 
 		//////////////////////////////////////////////////////////////////////
@@ -2293,7 +2293,7 @@ namespace svxform
                 continue;
 
             bPaint = true;
-            
+
         } // while ( aIter.IsMore() )
         if ( bPaint )
         {

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -163,7 +163,7 @@ static BOOL RaiseSignalEx( HANDLE hProcess, int sig )
 		{
 			if ( te.th32OwnerProcessID == dwProcessId )
 			{
-				hThread = OpenThread( 
+				hThread = OpenThread(
 					THREAD_SUSPEND_RESUME | THREAD_QUERY_INFORMATION |
 					THREAD_GET_CONTEXT | THREAD_SET_CONTEXT,
 					FALSE, te.th32ThreadID );
@@ -185,7 +185,7 @@ static BOOL RaiseSignalEx( HANDLE hProcess, int sig )
 		{
 			ZeroMemory( &aContext, sizeof(aContext) );
 			aContext.ContextFlags = CONTEXT_FULL;
-			
+
 			fSuccess = GetThreadContext( hThread, &aContext );
 
 			if ( fSuccess )
@@ -300,7 +300,7 @@ static void ParseCommandArgs( LPDWORD lpProcesses, LPDWORD lpdwNumProcesses, int
 			      0 == lstrcmpi( argv[argn], TEXT("/h") ) ||
 			      0 == lstrcmpi( argv[argn], TEXT("--help") ) )
 		{
-			_tprintf(  
+			_tprintf(
 				_T("Terminates a process by sending a signal.\n\n")
 				_T("Usage: kill [ -l ] [ -signal ] pid ...\n\n")
 				_T("-l        Lists supported signals\n")
@@ -322,7 +322,7 @@ static void ParseCommandArgs( LPDWORD lpProcesses, LPDWORD lpdwNumProcesses, int
 			{
 				_TCHAR *endptr = NULL;
 
-				if ( 0 == lstrcmpi( SupportedSignals[n].lpSignalName, argsig ) || 
+				if ( 0 == lstrcmpi( SupportedSignals[n].lpSignalName, argsig ) ||
 					 _tcstoul( argsig, &endptr, 0 ) == static_cast< unsigned >(SupportedSignals[n].iSignalValue) && (!endptr || !*endptr) )
 				{
 					*pSig = SupportedSignals[n].iSignalValue;
@@ -332,10 +332,10 @@ static void ParseCommandArgs( LPDWORD lpProcesses, LPDWORD lpdwNumProcesses, int
 
 			if ( n >= NumSupportedSignals )
 			{
-				_ftprintf( stderr,  
+				_ftprintf( stderr,
 					_T("kill: Illegal argument %s\n")
-					_T("Type 'kill --help' to show allowed syntax.\n") 
-					_T("Type 'kill -l' to show supported signals.\n"), 
+					_T("Type 'kill --help' to show allowed syntax.\n")
+					_T("Type 'kill -l' to show supported signals.\n"),
 					argv[argn] );
 				ExitProcess( 0 );
 			}
@@ -344,10 +344,10 @@ static void ParseCommandArgs( LPDWORD lpProcesses, LPDWORD lpdwNumProcesses, int
 		{
 			unsigned long value = 0;
 			_TCHAR	*endptr = NULL;
-			
+
 			value = _tcstoul( argv[argn], &endptr, 0 );
 
-			if ( !endptr || !*endptr ) 
+			if ( !endptr || !*endptr )
 			{
 				if ( *lpdwNumProcesses < dwMaxProcesses )
 				{
@@ -387,9 +387,9 @@ static void ParseCommandArgs( LPDWORD lpProcesses, LPDWORD lpdwNumProcesses, int
 
 	if ( !*lpdwNumProcesses )
 	{
-		_ftprintf( stderr, 
+		_ftprintf( stderr,
 			_T("kill: No process specified.\n")
-			_T("Use kill --help to show allowed syntax.\n") 
+			_T("Use kill --help to show allowed syntax.\n")
 			);
 		ExitProcess( 0 );
 	}

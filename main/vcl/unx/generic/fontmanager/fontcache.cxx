@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -254,7 +254,7 @@ void FontCache::read()
 #endif
         return;
     }
-    
+
 
     ByteString aLine;
     aStream.ReadLine( aLine );
@@ -265,7 +265,7 @@ void FontCache::read()
         #endif
         return;
     }
-    
+
     int nDir = 0;
     FontDirMap* pDir = NULL;
     xub_StrLen nIndex;
@@ -321,7 +321,7 @@ void FontCache::read()
         {
             OString aFile( aLine.Copy( 5 ) );
             aStream.ReadLine( aLine );
-            
+
             const char* pLine = aLine.GetBuffer();
 
             fonttype::type eType = (fonttype::type)atoi( pLine );
@@ -334,15 +334,15 @@ void FontCache::read()
                 pLine++;
             if( *pLine != ';' )
                 continue;
-                
+
             pLine++;
-            sal_Int32 nFonts = atoi( pLine );            
+            sal_Int32 nFonts = atoi( pLine );
             for( int n = 0; n < nFonts; n++ )
             {
                 aStream.ReadLine( aLine );
                 pLine = aLine.GetBuffer();
                 int nLen = aLine.Len();
-                
+
                 PrintFontManager::PrintFont* pFont = NULL;
                 switch( eType )
                 {
@@ -357,10 +357,10 @@ void FontCache::read()
                         break;
                     default: break;
                 }
-                
+
                 for( nIndex = 0; nIndex < nLen && pLine[nIndex] != ';'; nIndex++ )
                     ;
-                
+
                 pFont->m_nFamilyName = pAtoms->getAtom( ATOM_FAMILYNAME,
                                                         OUString( pLine, nIndex, RTL_TEXTENCODING_UTF8 ),
                                                         sal_True );
@@ -378,7 +378,7 @@ void FontCache::read()
                 aStream.ReadLine( aLine );
                 pLine = aLine.GetBuffer();
                 nLen = aLine.Len();
-                
+
                 // get up to 20 token positions
                 const int nMaxTokens = 20;
                 int nTokenPos[nMaxTokens];
@@ -483,8 +483,8 @@ void FontCache::read()
                     delete pFont;
                     continue;
                 }
-                
-                FontCacheEntry& rEntry = (*pDir)[aFile].m_aEntry;                
+
+                FontCacheEntry& rEntry = (*pDir)[aFile].m_aEntry;
                 rEntry.push_back( pFont );
             }
         }
@@ -779,7 +779,7 @@ bool FontCache::scanAdditionalFiles( const OString& rDir )
     int nDirID = rManager.getDirectoryAtom( rDir );
     FontCacheData::const_iterator dir = m_aCache.find( nDirID );
     bool bFound = (dir != m_aCache.end());
-    
+
     return (bFound && dir->second.m_bUserOverrideOnly);
 }
 

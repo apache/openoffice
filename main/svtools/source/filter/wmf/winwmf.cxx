@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -483,7 +483,7 @@ void WMFReader::ReadRecordParams( sal_uInt16 nFunc )
 										*pWMF >> nDxTmp;
 										nDx = nDx + nDxTmp;
 									}
-								}							
+								}
 							}
 							pDXAry[ i ] = nDx;
 						}
@@ -568,7 +568,7 @@ void WMFReader::ReadRecordParams( sal_uInt16 nFunc )
 						}
 					}
 					aBmp.ReleaseAccess( pAcc );
-                    if ( nSye && nSxe && 
+                    if ( nSye && nSxe &&
                         ( ( nSx + nSxe ) <= aBmp.GetSizePixel().Width() ) &&
                             ( ( nSy + nSye <= aBmp.GetSizePixel().Height() ) ) )
                     {
@@ -579,7 +579,7 @@ void WMFReader::ReadRecordParams( sal_uInt16 nFunc )
 				    aBmpSaveList.Insert( new BSaveStruct( aBmp, aDestRect, nWinROP ), LIST_APPEND );
 				}
 			}
-		}		
+		}
 		break;
 
 		case W_META_STRETCHBLT:
@@ -595,7 +595,7 @@ void WMFReader::ReadRecordParams( sal_uInt16 nFunc )
 
 			if( nFunc == W_META_STRETCHDIB )
 				*pWMF >> nUsage;
-            
+
             // nSye and nSxe is the number of pixels that has to been used
 			if( nFunc == W_META_STRETCHDIB || nFunc == W_META_STRETCHBLT || nFunc == W_META_DIBSTRETCHBLT )
 				*pWMF >> nSye >> nSxe;
@@ -612,14 +612,14 @@ void WMFReader::ReadRecordParams( sal_uInt16 nFunc )
 										// pOut->DrawRect( Rectangle( ReadYX(), aDestSize ), sal_False );
 
 				Size aDestSize( ReadYXExt() );
-                if ( aDestSize.Width() && aDestSize.Height() )  // #92623# do not try to read buggy bitmaps 
+                if ( aDestSize.Width() && aDestSize.Height() )  // #92623# do not try to read buggy bitmaps
                 {
 				    Rectangle aDestRect( ReadYX(), aDestSize );
 				    if ( nWinROP != PATCOPY )
 					    ReadDIB(aBmp, *pWMF, false);
 
                     // test if it is sensible to crop
-                    if ( nSye && nSxe && 
+                    if ( nSye && nSxe &&
                         ( ( nSx + nSxe ) <= aBmp.GetSizePixel().Width() ) &&
                             ( ( nSy + nSye <= aBmp.GetSizePixel().Height() ) ) )
                     {
@@ -649,8 +649,8 @@ void WMFReader::ReadRecordParams( sal_uInt16 nFunc )
 				{
 					for ( sal_Int32 x = 0; x < pBmp->Width(); x++ )
 					{
-						const BitmapColor aColor( pBmp->GetColor( y, x ) );						
-						
+						const BitmapColor aColor( pBmp->GetColor( y, x ) );
+
 						nRed += aColor.GetRed();
 						nGreen += aColor.GetGreen();
 						nBlue += aColor.GetBlue();
@@ -843,15 +843,15 @@ void WMFReader::ReadRecordParams( sal_uInt16 nFunc )
 					  >> nLen;
                 if ( ( nMode == W_MFCOMMENT ) && ( nLen >= 4 ) )
                 {
-                    sal_uInt32 nNewMagic; // we have to read int32 for 
+                    sal_uInt32 nNewMagic; // we have to read int32 for
                     *pWMF >> nNewMagic;   // META_ESCAPE_ENHANCED_METAFILE CommentIdentifier
-                    
+
                     if( nNewMagic == 0x2c2a4f4f &&  nLen >= 14 )
                     {
                         sal_uInt16 nMagic2;
                         *pWMF >> nMagic2;
                         if( nMagic2 == 0x0a ) // 2nd half of magic
-                        {                     // continue with private escape  
+                        {                     // continue with private escape
                             sal_uInt32 nCheck, nEsc;
                             *pWMF >> nCheck
                                   >> nEsc;
@@ -883,7 +883,7 @@ void WMFReader::ReadRecordParams( sal_uInt16 nFunc )
 							        switch( nEsc )
 							        {
 								        case PRIVATE_ESCAPE_UNICODE :
-								        {	
+								        {
                                             // we will use text instead of polygons only if we have the correct font
 									        if ( Application::GetDefaultDevice()->IsFontAvailable( pOut->GetFont().GetName() ) )
 									        {
@@ -925,12 +925,12 @@ void WMFReader::ReadRecordParams( sal_uInt16 nFunc )
                     }
                     else if ( (nNewMagic == static_cast< sal_uInt32 >(0x43464D57)) && (nLen >= 34) && ( (sal_Int32)(nLen + 10) <= (sal_Int32)(nRecSize * 2) ))
                     {
-                        sal_uInt32 nComType, nVersion, nFlags, nComRecCount, 
+                        sal_uInt32 nComType, nVersion, nFlags, nComRecCount,
                                    nCurRecSize, nRemainingSize, nEMFTotalSize;
                         sal_uInt16 nCheck;
-                        
+
                         *pWMF >> nComType >> nVersion >> nCheck >> nFlags
-                              >> nComRecCount >> nCurRecSize 
+                              >> nComRecCount >> nCurRecSize
                               >> nRemainingSize >> nEMFTotalSize; // the nRemainingSize is not mentioned in MSDN documentation
                                                                   // but it seems to be required to read in data produced by OLE
 
@@ -957,7 +957,7 @@ void WMFReader::ReadRecordParams( sal_uInt16 nFunc )
                                 delete pEMFStream;
                                 pEMFStream = NULL;
                             }
-                            
+
                             if( pEMFStream )
                             {
                                 sal_Int8* pBuf = new sal_Int8[ nCurRecSize ];
@@ -1037,7 +1037,7 @@ sal_Bool WMFReader::ReadHeader()
     }
 	else
 	{
-		nUnitsPerInch = 96;       
+		nUnitsPerInch = 96;
         pWMF->Seek( nStrmPos + 18 );    // set the streampos to the start of the metaactions
         GetPlaceableBound( aPlaceableBound, pWMF );
         pWMF->Seek( nStrmPos );
@@ -1079,7 +1079,7 @@ void WMFReader::ReadWMF()
 {
 	sal_uInt16	nFunction;
 	sal_uLong	nPos, nPercent, nLastPercent;
-	
+
 	nSkipActions = 0;
 	nCurrentAction = 0;
 	nUnicodeEscapeAction = 0;
@@ -1088,7 +1088,7 @@ void WMFReader::ReadWMF()
     nEMFRecCount    = 0;
     nEMFRec         = 0;
     nEMFSize        = 0;
-	
+
 	sal_Bool bEMFAvailable = sal_False;
 
 	pOut->SetMapMode( MM_ANISOTROPIC );
@@ -1140,7 +1140,7 @@ void WMFReader::ReadWMF()
 						ReadRecordParams( nFunction );
 					else
 						nSkipActions--;
-	                
+
 					if( pEMFStream && nEMFRecCount == nEMFRec )
 					{
 						GDIMetaFile aMeta;
@@ -1149,7 +1149,7 @@ void WMFReader::ReadWMF()
 						bEMFAvailable = pEMFReader->ReadEnhWMF();
 						delete pEMFReader; // destroy first!!!
 
-						if( bEMFAvailable )   
+						if( bEMFAvailable )
 						{
 							pOut->AddFromGDIMetaFile( aMeta );
 							pOut->SetrclFrame( Rectangle(0, 0, aMeta.GetPrefSize().Width(), aMeta.GetPrefSize().Height() ));
@@ -1217,14 +1217,14 @@ sal_Bool WMFReader::GetPlaceableBound( Rectangle& rPlaceableBound, SvStream* pSt
     rPlaceableBound.Top()    = (sal_Int32)0x7fffffff;
     rPlaceableBound.Right()  = (sal_Int32)0x80000000;
     rPlaceableBound.Bottom() = (sal_Int32)0x80000000;
-    
+
 	sal_Int16 nMapMode = MM_ANISOTROPIC;
 
     sal_uInt16 nFunction;
     sal_uInt32 nRSize;
 	sal_uInt32 nPos = pStm->Tell();
 	sal_uInt32 nEnd = pStm->Seek( STREAM_SEEK_TO_END );
-	
+
     pStm->Seek( nPos );
 
     if( nEnd - nPos )
@@ -1259,7 +1259,7 @@ sal_Bool WMFReader::GetPlaceableBound( Rectangle& rPlaceableBound, SvStream* pSt
 					*pStm >> nHeight >> nWidth;
 					rPlaceableBound.SetSize( Size( nWidth, nHeight ) );
 				}
-				break;				
+				break;
 
 				case W_META_SETMAPMODE :
 					*pStm >> nMapMode;
@@ -1377,7 +1377,7 @@ sal_Bool WMFReader::GetPlaceableBound( Rectangle& rPlaceableBound, SvStream* pSt
 
 			        if( nFunction == W_META_STRETCHDIB )
 				        *pStm >> nUsage;
-            
+
                     // nSye and nSxe is the number of pixels that has to been used
 			        if( nFunction == W_META_STRETCHDIB || nFunction == W_META_STRETCHBLT || nFunction == W_META_DIBSTRETCHBLT )
 				        *pStm >> nSye >> nSxe;
@@ -1394,7 +1394,7 @@ sal_Bool WMFReader::GetPlaceableBound( Rectangle& rPlaceableBound, SvStream* pSt
 										        // pOut->DrawRect( Rectangle( ReadYX(), aDestSize ), sal_False );
 
 				        Size aDestSize( ReadYXExt() );
-                        if ( aDestSize.Width() && aDestSize.Height() )  // #92623# do not try to read buggy bitmaps 
+                        if ( aDestSize.Width() && aDestSize.Height() )  // #92623# do not try to read buggy bitmaps
                         {
 				            Rectangle aDestRect( ReadYX(), aDestSize );
                             GetWinExtMax( aDestRect, rPlaceableBound, nMapMode );

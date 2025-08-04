@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -46,7 +46,7 @@ using namespace com::sun::star;
 
 //////////////////////////////////////////////////////////////////////////////
 
-namespace 
+namespace
 {
 	// animated extractor
 
@@ -77,7 +77,7 @@ namespace
 	public:
 		AnimatedExtractingProcessor2D(
 			const drawinglayer::geometry::ViewInformation2D& rViewInformation,
-			bool bTextAnimationAllowed, 
+			bool bTextAnimationAllowed,
 			bool bGraphicAnimationAllowed);
         virtual ~AnimatedExtractingProcessor2D();
 
@@ -89,7 +89,7 @@ namespace
 
     AnimatedExtractingProcessor2D::AnimatedExtractingProcessor2D(
 		const drawinglayer::geometry::ViewInformation2D& rViewInformation,
-		bool bTextAnimationAllowed, 
+		bool bTextAnimationAllowed,
 		bool bGraphicAnimationAllowed)
 	:	drawinglayer::processor2d::BaseProcessor2D(rViewInformation),
         maPrimitive2DSequence(),
@@ -122,7 +122,7 @@ namespace
 				}
 				break;
 			}
-			
+
 			// decompose animated gifs where SdrGrafPrimitive2D produces a GraphicPrimitive2D
             // which then produces the animation infos (all when used/needed)
 			case PRIMITIVE2D_ID_SDRGRAFPRIMITIVE2D :
@@ -152,7 +152,7 @@ namespace
 				process(rCandidate.get2DDecomposition(getViewInformation2D()));
 				break;
 			}
-			
+
 			default :
 			{
 				// nothing to do for the rest
@@ -205,13 +205,13 @@ namespace sdr
             // which IS the OC of this object. Eventually StopGettingViewed() needs
             // to get asynchron later
 			GetObjectContact().RemoveViewObjectContact(*this);
-			
+
 			// take care of remebered ViewContact
 			GetViewContact().RemoveViewObjectContact(*this);
 		}
 
-		const basegfx::B2DRange& ViewObjectContact::getObjectRange() const 
-		{ 
+		const basegfx::B2DRange& ViewObjectContact::getObjectRange() const
+		{
 			if(maObjectRange.isEmpty())
 			{
 				// if range is not computed (new or LazyInvalidate objects), force it
@@ -221,12 +221,12 @@ namespace sdr
                 if(xSequence.hasElements())
                 {
 					const drawinglayer::geometry::ViewInformation2D& rViewInformation2D(GetObjectContact().getViewInformation2D());
-                    const_cast< ViewObjectContact* >(this)->maObjectRange = 
+                    const_cast< ViewObjectContact* >(this)->maObjectRange =
                         drawinglayer::primitive2d::getB2DRangeFromPrimitive2DSequence(xSequence, rViewInformation2D);
 				}
 			}
 
-			return maObjectRange; 
+			return maObjectRange;
 		}
 
 		void ViewObjectContact::ActionChanged()
@@ -259,7 +259,7 @@ namespace sdr
 			{
 				// reset flag
 				mbLazyInvalidate = false;
-				
+
 				// force ObjectRange
 				getObjectRange();
 
@@ -300,7 +300,7 @@ namespace sdr
 
                 if(bTextAnimationAllowed || bGraphicAnimationAllowed)
                 {
-				    AnimatedExtractingProcessor2D aAnimatedExtractor(GetObjectContact().getViewInformation2D(), 
+				    AnimatedExtractingProcessor2D aAnimatedExtractor(GetObjectContact().getViewInformation2D(),
 					    bTextAnimationAllowed, bGraphicAnimationAllowed);
 				    aAnimatedExtractor.process(mxPrimitive2DSequence);
 
@@ -337,11 +337,11 @@ namespace sdr
                     const basegfx::BColor aRGBWhite(1.0, 1.0, 1.0);
                     const basegfx::BColorModifierSharedPtr aBColorModifier(
                         new basegfx::BColorModifier_interpolate(
-                            aRGBWhite, 
+                            aRGBWhite,
                             0.5));
                     const drawinglayer::primitive2d::Primitive2DReference xReference(
                         new drawinglayer::primitive2d::ModifiedColorPrimitive2D(
-                            xRetval, 
+                            xRetval,
                             aBColorModifier));
 
                     xRetval = drawinglayer::primitive2d::Primitive2DSequence(&xReference, 1);
@@ -372,13 +372,13 @@ namespace sdr
 			{
 				// has changed, copy content
 				const_cast< ViewObjectContact* >(this)->mxPrimitive2DSequence = xNewPrimitiveSequence;
-				
+
                 // check for animated stuff
 				const_cast< ViewObjectContact* >(this)->checkForPrimitive2DAnimations();
 
 				// always update object range when PrimitiveSequence changes
 				const drawinglayer::geometry::ViewInformation2D& rViewInformation2D(GetObjectContact().getViewInformation2D());
-                const_cast< ViewObjectContact* >(this)->maObjectRange = 
+                const_cast< ViewObjectContact* >(this)->maObjectRange =
                     drawinglayer::primitive2d::getB2DRangeFromPrimitive2DSequence(mxPrimitive2DSequence, rViewInformation2D);
 			}
 

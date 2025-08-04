@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -195,7 +195,7 @@ void GalleryPreview::Command(const CommandEvent& rCEvt )
 	Window::Command( rCEvt );
 
     if( mpTheme && ( rCEvt.GetCommand() == COMMAND_CONTEXTMENU ) )
-        ( (GalleryBrowser2*) GetParent() )->ShowContextMenu( this, 
+        ( (GalleryBrowser2*) GetParent() )->ShowContextMenu( this,
 			( rCEvt.IsMouseEvent() ? &rCEvt.GetMousePosPixel() : NULL ) );
 }
 
@@ -212,7 +212,7 @@ void GalleryPreview::KeyInput( const KeyEvent& rKEvt )
             case( KEY_BACKSPACE ):
                 pBrowser->TogglePreview( this );
             break;
-                
+
             case( KEY_HOME ):
                 pBrowser->Travel( GALLERYBROWSERTRAVEL_FIRST );
             break;
@@ -286,13 +286,13 @@ void GalleryPreview::PreviewMedia( const INetURLObject& rURL )
 	if( rURL.GetProtocol() != INET_PROT_NOT_VALID )
 	{
 		::avmedia::MediaFloater* pFloater = AVMEDIA_MEDIAWINDOW();
-		
+
 		if( !pFloater )
 		{
 			SfxViewFrame::Current()->GetBindings().GetDispatcher()->Execute( SID_AVMEDIA_PLAYER, SFX_CALLMODE_SYNCHRON );
 			pFloater = AVMEDIA_MEDIAWINDOW();
 		}
-		
+
 		if( pFloater )
 			pFloater->setURL( rURL.GetMainURL( INetURLObject::DECODE_UNAMBIGUOUS ), true );
 	}
@@ -469,7 +469,7 @@ void GalleryIconView::UserDraw( const UserDrawEvent& rUDEvt )
 		//	//	if( pObj->GetObjKind() == SGA_OBJ_SOUND )
         //    //    {
         //    //        Bitmap aTemp = pObj->GetThumbBmp().GetBitmap();
-        //    //        
+        //    //
         //    //        aTemp.Replace( COL_LIGHTMAGENTA, COL_WHITE );
         //    //        aBitmapEx = BitmapEx(aTemp);
         //    //    }
@@ -551,7 +551,7 @@ void GalleryIconView::Command( const CommandEvent& rCEvt )
 
     if( rCEvt.GetCommand() == COMMAND_CONTEXTMENU )
 	{
-        ( (GalleryBrowser2*) GetParent() )->ShowContextMenu( this, 
+        ( (GalleryBrowser2*) GetParent() )->ShowContextMenu( this,
 			( rCEvt.IsMouseEvent() ? &rCEvt.GetMousePosPixel() : NULL ) );
 	}
 }
@@ -659,7 +659,7 @@ String GalleryListView::GetCellText(long _nRow, sal_uInt16 nColumnId) const
 
 		if( pObj )
 		{
-			sRet = GalleryBrowser2::GetItemText( *mpTheme, *pObj, 
+			sRet = GalleryBrowser2::GetItemText( *mpTheme, *pObj,
 				( GALLERY_BRWBOX_TITLE == nColumnId ) ? GALLERY_ITEM_TITLE : GALLERY_ITEM_PATH );
 
 		    mpTheme->ReleaseObject( pObj );
@@ -679,11 +679,11 @@ Rectangle GalleryListView::GetFieldCharacterBounds(sal_Int32 _nRow,sal_Int32 _nC
 	{
         SvxFont aFont( GetFont() );
         AccessibleStringWrap aStringWrap( *this, aFont, GetCellText(_nRow, sal::static_int_cast<sal_uInt16>( GetColumnId( sal::static_int_cast<sal_uInt16>(_nColumnPos) ) ) ) );
-        
+
         // get the bounds inside the string
         aStringWrap.GetCharacterBounds(nIndex, aRect);
 
-        // offset to 
+        // offset to
 	}
 	return aRect;
 }
@@ -894,7 +894,7 @@ void GalleryListView::Command( const CommandEvent& rCEvt )
 
 		if( rCEvt.IsMouseEvent() && ( GetRowAtYPosPixel( rCEvt.GetMousePosPixel().Y() ) != BROWSER_ENDOFSELECTION ) )
 			pPos = &rCEvt.GetMousePosPixel();
-		
+
 		( (GalleryBrowser2*) GetParent() )->ShowContextMenu( this, pPos );
 	}
 }
@@ -949,7 +949,7 @@ sal_Int8 GalleryListView::ExecuteDrop( const BrowserExecuteDropEvent& rEvt )
     ExecuteDropEvent aEvt( rEvt );
 
     aEvt.maPosPixel.Y() += GetTitleHeight();
-    
+
     return(	( (GalleryBrowser2*) GetParent() )->ExecuteDrop( *this, aEvt ) );
 }
 

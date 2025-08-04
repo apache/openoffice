@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,7 +51,7 @@ sal_Int32 SAL_CALL InputStream::available()
     return 0;
 }
 
-void SAL_CALL InputStream::closeInput() 
+void SAL_CALL InputStream::closeInput()
     throw( io::NotConnectedException, io::IOException, uno::RuntimeException )
 {
     if (mpStream)
@@ -59,7 +59,7 @@ void SAL_CALL InputStream::closeInput()
 }
 
 void SAL_CALL InputStream::skipBytes( sal_Int32 nBytesToSkip )
-    throw( io::NotConnectedException, io::BufferSizeExceededException, 
+    throw( io::NotConnectedException, io::BufferSizeExceededException,
       io::IOException, uno::RuntimeException )
 {
     if (!mpStream)
@@ -85,7 +85,7 @@ sal_Int32 SAL_CALL InputStream::readBytes( uno::Sequence< sal_Int8 >& aData, sal
     {
         aData.realloc( nBytesToRead );
     }
-    catch ( const uno::Exception &e ) 
+    catch ( const uno::Exception &e )
     {
         throw io::BufferSizeExceededException();
     }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -66,7 +66,7 @@
 #ifndef _EDIT_HXX //autogen
 #include <vcl/edit.hxx>
 #endif
-#ifndef _COM_SUN_STAR_CONTAINER_XNAMEACCESS_HPP_ 
+#ifndef _COM_SUN_STAR_CONTAINER_XNAMEACCESS_HPP_
 #include <com/sun/star/container/XNameAccess.hpp>
 #endif
 #ifndef _COM_SUN_STAR_CONTAINER_XHIERARCHICALNAMEACCESS_HPP_
@@ -110,7 +110,7 @@ public:
 	String				m_aQryLabel;
 	String				m_sTblLabel;
 	rtl::OUString       m_sCatalog;
-	rtl::OUString       m_sSchema;	
+	rtl::OUString       m_sSchema;
 	String				m_aName;
 	const IObjectNameCheck&
 						m_rObjectNameCheck;
@@ -299,15 +299,15 @@ OSaveAsDlg::OSaveAsDlg( Window * pParent,
 					::rtl::OUString sCatalog,sSchema,sTable;
 					::dbtools::qualifiedNameComponents(m_pImpl->m_xMetaData,
 														m_pImpl->m_aName,
-														sCatalog, 
-														sSchema, 
+														sCatalog,
+														sSchema,
 														sTable,
 														::dbtools::eInDataManipulation);
 
 					sal_uInt16 nPos = m_pImpl->m_aCatalog.GetEntryPos(String(sCatalog));
 					if ( nPos != COMBOBOX_ENTRY_NOTFOUND )
 						m_pImpl->m_aCatalog.SelectEntryPos(nPos);
-					
+
 					if ( sSchema.getLength() )
 					{
 						nPos = m_pImpl->m_aSchema.GetEntryPos(String(sSchema));
@@ -335,7 +335,7 @@ OSaveAsDlg::OSaveAsDlg( Window * pParent,
 				m_pImpl->m_aTitle.setCheck(bCheck); // enable non valid sql chars as well
 				m_pImpl->m_aSchema.setCheck(bCheck); // enable non valid sql chars as well
 				m_pImpl->m_aCatalog.setCheck(bCheck); // enable non valid sql chars as well
-				
+
 				Size aSize = GetSizePixel();
 				aSize.Height() =
 					aPos.Y() + m_pImpl->m_aPB_OK.GetSizePixel().Height() + m_pImpl->m_aTitle.GetSizePixel().Height() / 2;
@@ -361,7 +361,7 @@ OSaveAsDlg::OSaveAsDlg( Window * pParent,
 {
 	m_pImpl = new OSaveAsDlgImpl(this,rDefault,_rObjectNameCheck,_nFlags);
 	implInitOnlyTitle(_sLabel);
-	implInit();	
+	implInit();
 }
 // -----------------------------------------------------------------------------
 OSaveAsDlg::~OSaveAsDlg()
@@ -469,7 +469,7 @@ void OSaveAsDlg::implInit()
 		SetText( String( ModuleRes( STR_TITLE_RENAME ) ) );
 		m_pImpl->m_aTitle.SetHelpId(HID_DLG_RENAME);
 	}
-	
+
 	m_pImpl->m_aPB_OK.SetClickHdl(LINK(this,OSaveAsDlg,ButtonClickHdl));
 	m_pImpl->m_aTitle.SetModifyHdl(LINK(this,OSaveAsDlg,EditModifyHdl));
 	m_pImpl->m_aTitle.GrabFocus();

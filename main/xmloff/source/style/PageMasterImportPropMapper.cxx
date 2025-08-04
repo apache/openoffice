@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -66,9 +66,9 @@ sal_Bool PageMasterImportPropertyMapper::handleSpecialItem(
 
 	if( CTF_PM_REGISTER_STYLE==nContextID )
 	{
-		::rtl::OUString sDisplayName( rImport.GetStyleDisplayName( 
+		::rtl::OUString sDisplayName( rImport.GetStyleDisplayName(
 					XML_STYLE_FAMILY_TEXT_PARAGRAPH, rValue ) );
-		Reference < XNameContainer > xParaStyles = 
+		Reference < XNameContainer > xParaStyles =
 			rImport.GetTextImport()->GetParaStyles();
 		if( xParaStyles.is() && xParaStyles->hasByName( sDisplayName ) )
 		{
@@ -78,7 +78,7 @@ sal_Bool PageMasterImportPropertyMapper::handleSpecialItem(
 	}
 	else
 	{
-		bRet = SvXMLImportPropertyMapper::handleSpecialItem( 
+		bRet = SvXMLImportPropertyMapper::handleSpecialItem(
 					rProperty, rProperties, rValue,
 					rUnitConverter, rNamespaceMap );
 	}

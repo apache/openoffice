@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -147,9 +147,9 @@ void ViewShell::Init( const SwViewOption *pNewOpt )
 			// it is necessary to suppress notifications in the layout when the layout is discarded in its dtor
 			// unfortunately this was done by asking whether the doc is in dtor - though the correct question should
 			// have been if the rootfrm is in dtor (or even better: discard the layout before the SwRootFrm is destroyed!)
-			// SwDoc::IsInDtor() is used at several places all over the code that need to be checked whether 
+			// SwDoc::IsInDtor() is used at several places all over the code that need to be checked whether
 			// "pDoc->IsInDtor()" means what is says or in fact should check for "pRootFrm->IsInDtor()". As this will take some time, I decided
-			// to postpone that investigations and the changes it will bring to the 3.5 release and for 3.4 make sure 
+			// to postpone that investigations and the changes it will bring to the 3.5 release and for 3.4 make sure
 			// that the layout still gets destroyed in the doc dtor. This is done by sharing "the" layout (that we still have) with the doc.
 			GetDoc()->ShareLayout( pLayout );
         }
@@ -391,7 +391,7 @@ ViewShell::~ViewShell()
 	{
 		GetLayout()->DeRegisterShell( this );
 		if(pDoc->GetCurrentViewShell()==this)
-			pDoc->SetCurrentViewShell( this->GetNext()!=this ? 
+			pDoc->SetCurrentViewShell( this->GetNext()!=this ?
 			(ViewShell*)this->GetNext() : NULL );
 	}
 

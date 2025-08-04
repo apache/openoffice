@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -69,8 +69,8 @@ using namespace ::com::sun::star;
 #define PTWAINMSG				MSG*
 #define FIXTODOUBLE( nFix ) 	((double)nFix.Whole+(double)nFix.Frac/65536.)
 #define FIXTOLONG( nFix )		((long)floor(FIXTODOUBLE(nFix)+0.5))
-								
-#if defined WNT				
+
+#if defined WNT
 #define TWAIN_LIBNAME			"TWAIN_32.DLL"
 #define TWAIN_FUNCNAME			"DSM_Entry"
 #endif
@@ -139,7 +139,7 @@ public:
 	void						                Destroy();
 
 	bool						                SelectSource();
-	bool						                InitXfer(); 
+	bool						                InitXfer();
 };
 
 // ---------
@@ -169,7 +169,7 @@ LRESULT CALLBACK TwainMsgProc( int nCode, WPARAM wParam, LPARAM lParam )
 	{
 		pMsg->message = WM_USER;
 		pMsg->lParam = 0;
-		
+
 		return 0;
 	}
 }
@@ -199,7 +199,7 @@ ImpTwain::ImpTwain( ScannerManager& rMgr, const Link& rNotifyLink ) :
 	aAppIdent.ProtocolMajor = TWON_PROTOCOLMAJOR;
 	aAppIdent.ProtocolMinor = TWON_PROTOCOLMINOR;
 	aAppIdent.SupportedGroups =	DG_IMAGE | DG_CONTROL;
-	strncpy( aAppIdent.Version.Info, "8.0", 32 ); 
+	strncpy( aAppIdent.Version.Info, "8.0", 32 );
     aAppIdent.Version.Info[32] = aAppIdent.Version.Info[33] = 0;
 	strncpy( aAppIdent.Manufacturer, "Sun Microsystems", 32 );
     aAppIdent.Manufacturer[32] = aAppIdent.Manufacturer[33] = 0;
@@ -210,7 +210,7 @@ ImpTwain::ImpTwain( ScannerManager& rMgr, const Link& rNotifyLink ) :
 
 	WNDCLASS aWc = { 0, &TwainWndProc, 0, sizeof( WNDCLASS ), GetModuleHandle( NULL ), NULL, NULL, NULL, NULL, "TwainClass" };
 	RegisterClass( &aWc );
-	
+
 	hTwainWnd = CreateWindowEx( WS_EX_TOPMOST, aWc.lpszClassName, "TWAIN", 0, 0, 0, 0, 0, HWND_DESKTOP, NULL, aWc.hInstance, 0 );
 	hTwainHook = SetWindowsHookEx( WH_GETMESSAGE, &TwainMsgProc, NULL, GetCurrentThreadId() );
 
@@ -388,7 +388,7 @@ bool ImpTwain::ImplHandleMsg( void* pMsg )
 				ImplFallback( nEvent );
 			}
 			break;
-			
+
 			case MSG_CLOSEDSREQ:
 				ImplFallback( TWAIN_EVENT_QUIT );
 			break;
@@ -494,7 +494,7 @@ IMPL_LINK( ImpTwain, ImplFallbackHdl, void*, pData )
 		case( 5 ):
 		{
 			TW_USERINTERFACE aUI = { true, true, hTwainWnd };
-		
+
 			PFUNC( &aAppIdent, &aSrcIdent, DG_CONTROL, DAT_USERINTERFACE, MSG_DISABLEDS, &aUI );
 			nCurState = 4;
 
@@ -572,7 +572,7 @@ uno::Reference< frame::XFrame > ImpTwain::ImplGetActiveFrame()
             // query desktop instance
             uno::Reference< frame::XDesktop > xDesktop( xMgr->createInstance(
                                                             OUString::createFromAscii( "com.sun.star.frame.Desktop" ) ), uno::UNO_QUERY );
-        
+
             if( xDesktop.is() )
             {
                 // query property set from desktop, which contains the currently active frame
@@ -595,7 +595,7 @@ uno::Reference< frame::XFrame > ImpTwain::ImplGetActiveFrame()
                     }
 
                     uno::Reference< frame::XFrame > xActiveFrame;
-                
+
                     if( (aActiveFrame >>= xActiveFrame) &&
                         xActiveFrame.is() )
                     {
@@ -636,7 +636,7 @@ void ImpTwain::ImplRegisterCloseListener()
     try
     {
         uno::Reference< util::XCloseBroadcaster > xCloseBroadcaster( ImplGetActiveFrameCloseBroadcaster() );
-        
+
         if( xCloseBroadcaster.is() )
         {
             xCloseBroadcaster->addCloseListener(this);
@@ -662,9 +662,9 @@ void ImpTwain::ImplDeregisterCloseListener()
 {
     try
     {
-        uno::Reference< util::XCloseBroadcaster > xCloseBroadcaster( 
+        uno::Reference< util::XCloseBroadcaster > xCloseBroadcaster(
             ImplGetActiveFrameCloseBroadcaster() );
-        
+
         if( xCloseBroadcaster.is() )
         {
             xCloseBroadcaster->removeCloseListener(this);
@@ -717,7 +717,7 @@ void ImpTwain::ImplSendCloseEvent()
     try
     {
         uno::Reference< util::XCloseable > xCloseable( ImplGetActiveFrame(), uno::UNO_QUERY );
-        
+
         if( xCloseable.is() )
             xCloseable->close( true );
     }
@@ -740,17 +740,17 @@ class Twain
 	const ScannerManager*			            mpCurMgr;
 	ImpTwain* 						            mpImpTwain;
 	TwainState						            meState;
-												
+
 									            DECL_LINK( ImpNotifyHdl, ImpTwain* );
-														
-public:													
-														
+
+public:
+
 									Twain();
 									~Twain();
-														
+
 	bool							SelectSource( ScannerManager& rMgr );
 	bool							PerformTransfer( ScannerManager& rMgr, const uno::Reference< lang::XEventListener >& rxListener );
-														
+
 	TwainState						GetState() const { return meState; }
 };
 
@@ -782,7 +782,7 @@ bool Twain::SelectSource( ScannerManager& rMgr )
         // #107835# hold reference to ScannerManager, to prevent premature death
         mxMgr = uno::Reference< scanner::XScannerManager >( static_cast< OWeakObject* >( const_cast< ScannerManager* >( mpCurMgr = &rMgr ) ),
                                                             uno::UNO_QUERY ),
-		
+
 		meState = TWAIN_STATE_NONE;
 		mpImpTwain = new ImpTwain( rMgr, LINK( this, Twain, ImpNotifyHdl ) );
 		bRet = mpImpTwain->SelectSource();
@@ -804,7 +804,7 @@ bool Twain::PerformTransfer( ScannerManager& rMgr, const uno::Reference< lang::X
         // #107835# hold reference to ScannerManager, to prevent premature death
         mxMgr = uno::Reference< scanner::XScannerManager >( static_cast< OWeakObject* >( const_cast< ScannerManager* >( mpCurMgr = &rMgr ) ),
                                                             uno::UNO_QUERY ),
-		
+
 		mxListener = rxListener;
 		meState = TWAIN_STATE_NONE;
 		mpImpTwain = new ImpTwain( rMgr, LINK( this, Twain, ImpNotifyHdl ) );
@@ -850,7 +850,7 @@ IMPL_LINK( Twain, ImpNotifyHdl, ImpTwain*, nEvent )
 			if( mpImpTwain )
 			{
 				meState = ( mpCurMgr->GetData() ? TWAIN_STATE_DONE : TWAIN_STATE_CANCELED );
-				
+
 				mpImpTwain->Destroy();
 				mpImpTwain = NULL;
                 mpCurMgr = NULL;
@@ -907,7 +907,7 @@ AWT::Size ScannerManager::getSize() throw()
 		if( pBIH )
 		{
 			aRet.Width = pBIH->biWidth;
-			aRet.Height = pBIH->biHeight; 
+			aRet.Height = pBIH->biHeight;
 		}
 		else
 			aRet.Width = aRet.Height = 0;
@@ -964,7 +964,7 @@ SEQ( sal_Int8 ) ScannerManager::getDIB() throw()
 			}
 
 			aRet = SEQ( sal_Int8 )( sizeof( BITMAPFILEHEADER ) + nDIBSize );
-			
+
 			sal_Int8*		pBuf = aRet.getArray();
 			SvMemoryStream* pMemStm = new SvMemoryStream( (char*) pBuf, sizeof( BITMAPFILEHEADER ), STREAM_WRITE );
 
@@ -988,7 +988,7 @@ SEQ( ScannerContext ) SAL_CALL ScannerManager::getAvailableScanners() throw()
 {
 	vos::OGuard				aGuard( maProtector );
 	SEQ( ScannerContext )	aRet( 1 );
-	
+
 	aRet.getArray()[0].ScannerName = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "TWAIN" ) );
 	aRet.getArray()[0].InternalData = 0;
 
@@ -997,7 +997,7 @@ SEQ( ScannerContext ) SAL_CALL ScannerManager::getAvailableScanners() throw()
 
 // -----------------------------------------------------------------------------
 
-sal_Bool SAL_CALL ScannerManager::configureScanner( ScannerContext& rContext ) 
+sal_Bool SAL_CALL ScannerManager::configureScanner( ScannerContext& rContext )
     throw( ScannerException )
 {
 	vos::OGuard				            aGuard( maProtector );
@@ -1013,7 +1013,7 @@ sal_Bool SAL_CALL ScannerManager::configureScanner( ScannerContext& rContext )
 
 // -----------------------------------------------------------------------------
 
-void SAL_CALL ScannerManager::startScan( const ScannerContext& rContext, const uno::Reference< lang::XEventListener >& rxListener ) 
+void SAL_CALL ScannerManager::startScan( const ScannerContext& rContext, const uno::Reference< lang::XEventListener >& rxListener )
     throw( ScannerException )
 {
 	vos::OGuard				            aGuard( maProtector );
@@ -1036,13 +1036,13 @@ ScanError SAL_CALL ScannerManager::getError( const ScannerContext& rContext )
 
 	if( rContext.InternalData != 0 || rContext.ScannerName != ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "TWAIN" ) ) )
 		throw ScannerException( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Scanner does not exist" ) ), xThis, ScanError_InvalidContext );
-    
+
 	return( ( aTwain.GetState() == TWAIN_STATE_CANCELED ) ? ScanError_ScanCanceled : ScanError_ScanErrorNone );
 }
 
 // -----------------------------------------------------------------------------
 
-uno::Reference< awt::XBitmap > SAL_CALL ScannerManager::getBitmap( const ScannerContext& /*rContext*/ ) 
+uno::Reference< awt::XBitmap > SAL_CALL ScannerManager::getBitmap( const ScannerContext& /*rContext*/ )
     throw( ScannerException )
 {
 	vos::OGuard	aGuard( maProtector );

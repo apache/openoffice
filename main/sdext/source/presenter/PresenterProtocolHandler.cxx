@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -169,7 +169,7 @@ namespace {
     };
 
 } // end of anonymous namespace
-    
+
 
 namespace {
     typedef ::cppu::WeakComponentImplHelper2 <
@@ -208,24 +208,24 @@ public:
         const css::uno::Reference<css::frame::XStatusListener>& rxListener,
         const css::util::URL& rURL)
         throw(css::uno::RuntimeException);
-    
+
     virtual void SAL_CALL removeStatusListener (
         const css::uno::Reference<css::frame::XStatusListener>& rxListener,
         const css::util::URL& rURL)
         throw(css::uno::RuntimeException);
 
-    
+
     // document::XEventListener
 
     virtual void SAL_CALL notifyEvent (const css::document::EventObject& rEvent)
         throw(css::uno::RuntimeException);
 
-    
+
     // lang::XEventListener
 
     virtual void SAL_CALL disposing (const css::lang::EventObject& rEvent)
         throw(css::uno::RuntimeException);
-    
+
 private:
     OUString msURLPath;
     ::boost::scoped_ptr<Command> mpCommand;
@@ -238,7 +238,7 @@ private:
         const OUString& rsURLPath,
         const ::rtl::Reference<PresenterController>& rpPresenterController);
     virtual ~Dispatch (void);
-    
+
     void ThrowIfDisposed (void) const throw (css::lang::DisposedException);
 };
 
@@ -379,7 +379,7 @@ void PresenterProtocolHandler::ThrowIfDisposed (void) const
 
 
 
-    
+
 //===== PresenterProtocolHandler::Dispatch ====================================
 
 Reference<frame::XDispatch> PresenterProtocolHandler::Dispatch::Create (
@@ -471,12 +471,12 @@ Command* PresenterProtocolHandler::Dispatch::CreateCommand (
                     if (rsURLPath == A2S("ShowNotes"))
                         return new SetNotesViewCommand(true, rpPresenterController);
                     break;
-                    
+
                 case sal_Char('S'):
                     if (rsURLPath == A2S("ShowSlideSorter"))
                         return new SetSlideSorterCommand(true, rpPresenterController);
                     break;
-                    
+
                 case sal_Char('H'):
                     if (rsURLPath == A2S("ShowHelp"))
                         return new SetHelpViewCommand(true, rpPresenterController);
@@ -567,7 +567,7 @@ void SAL_CALL PresenterProtocolHandler::Dispatch::addStatusListener(
     else
         throw RuntimeException();
 }
-    
+
 
 
 
@@ -609,7 +609,7 @@ void PresenterProtocolHandler::Dispatch::ThrowIfDisposed (void) const
 
 
 
-    
+
 //----- document::XEventListener ----------------------------------------------
 
 void SAL_CALL PresenterProtocolHandler::Dispatch::notifyEvent (
@@ -957,7 +957,7 @@ NotesFontSizeCommand::NotesFontSizeCommand(
 {
     if (mpPresenterController.get() == NULL)
         return NULL;
-    
+
     PresenterPaneContainer::SharedPaneDescriptor pDescriptor (
         mpPresenterController->GetPaneContainer()->FindViewURL(
             PresenterViewFactory::msNotesViewURL));

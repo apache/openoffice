@@ -629,4 +629,3 @@ sal_Bool SAL_CALL CDOTransferable::cmpAllContentTypeParameter(
 	}
 	return retVal;
 }
-		

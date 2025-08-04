@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "precompiled_sfx2.hxx"
@@ -68,7 +68,7 @@ Image Tools::GetImage (
         static const sal_Int32 nUnoCommandPrefixLength = strlen(sUnoCommandPrefix);
         static const sal_Char* sCommandImagePrefix = "private:commandimage/";
         static const sal_Int32 nCommandImagePrefixLength = strlen(sCommandImagePrefix);
-        
+
         if (rsURL.compareToAscii(sUnoCommandPrefix, nUnoCommandPrefixLength) == 0)
         {
             const Image aPanelImage (::GetImage(rxFrame, rsURL, sal_False, Theme::IsHighContrastMode()));
@@ -80,7 +80,7 @@ Image Tools::GetImage (
             aCommandName.appendAscii(sUnoCommandPrefix);
             aCommandName.append(rsURL.copy(nCommandImagePrefixLength));
             const ::rtl::OUString sCommandName (aCommandName.makeStringAndClear());
-        
+
             const Image aPanelImage (::GetImage(rxFrame, sCommandName, sal_False, Theme::IsHighContrastMode()));
             return aPanelImage;
         }
@@ -193,7 +193,7 @@ Reference<frame::XDispatch> Tools::GetDispatch (
 {
     if ( ! rxFrame.is() || ! rxFrame->getController().is())
         return ::rtl::OUString();
-    
+
     try
     {
         const ::comphelper::ComponentContext aContext (::comphelper::getProcessServiceFactory());
@@ -207,7 +207,7 @@ Reference<frame::XDispatch> Tools::GetDispatch (
         // Ignored.
     }
     return ::rtl::OUString();
-}   
+}
 
 
 } } // end of namespace sfx2::sidebar

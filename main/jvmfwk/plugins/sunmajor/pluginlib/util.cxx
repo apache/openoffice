@@ -545,7 +545,7 @@ void createJavaInfoFromWinReg(std::vector<rtl::Reference<VendorBase> > & vecInfo
 }
 
 
-bool getJavaInfoFromRegistry(const wchar_t* szRegKey, 
+bool getJavaInfoFromRegistry(const wchar_t* szRegKey,
                              vector<OUString>& vecJavaHome)
 {
     HKEY    hRoot;
@@ -765,7 +765,7 @@ vector<Reference<VendorBase> > getAllJREInfos()
     return vecInfos;
 }
 
-    
+
 vector<OUString> getVectorFromCharArray(char const * const * ar, int size)
 {
     vector<OUString> vec;
@@ -885,7 +885,7 @@ rtl::Reference<VendorBase> getJREInfoByPath(
     if (entry2 != mapJREs.end())
     {
         JFW_TRACE2(OUSTR("[Java framework] sunjavaplugin" SAL_DLLEXTENSION ": ")
-                   + OUSTR("JRE found again (detected before): ") + sResolvedDir 
+                   + OUSTR("JRE found again (detected before): ") + sResolvedDir
                    + OUSTR(".\n"));
         return entry2->second;
     }
@@ -936,7 +936,7 @@ rtl::Reference<VendorBase> getJREInfoByPath(
             if (entry != mapJREs.end())
             {
                 JFW_TRACE2(OUSTR("[Java framework] sunjavaplugin" SAL_DLLEXTENSION ": ")
-                   + OUSTR("JRE found again (detected before): ") + sFilePath 
+                   + OUSTR("JRE found again (detected before): ") + sFilePath
                    + OUSTR(".\n"));
 
                 return entry->second;
@@ -1039,13 +1039,13 @@ rtl::Reference<VendorBase> getJREInfoByPath(
                 }
             }
         }
-    }    
+    }
     if (ret.is() == false)
         vecBadPaths.push_back(sFilePath);
     else
     {
         JFW_TRACE2(OUSTR("[Java framework] sunjavaplugin" SAL_DLLEXTENSION ": ")
-                   + OUSTR("Found JRE: ") + sResolvedDir 
+                   + OUSTR("Found JRE: ") + sResolvedDir
                    + OUSTR(" \n at: ") + path + OUSTR(".\n"));
 
         mapJREs.insert(MAPJRE::value_type(sResolvedDir, ret));

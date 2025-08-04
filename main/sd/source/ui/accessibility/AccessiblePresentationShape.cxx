@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -59,8 +59,8 @@ AccessiblePresentationShape::~AccessiblePresentationShape (void)
 
 
 //=====  XServiceInfo  ========================================================
-    
-::rtl::OUString SAL_CALL 
+
+::rtl::OUString SAL_CALL
     AccessiblePresentationShape::getImplementationName (void)
     throw (::com::sun::star::uno::RuntimeException)
 {
@@ -136,7 +136,7 @@ AccessiblePresentationShape::~AccessiblePresentationShape (void)
     {
         case PRESENTATION_TITLE:
 	    sDescription = ::rtl::OUString ( String(SdResId(SID_SD_A11Y_P_TITLE_D)) );
-	    aDG.Initialize (sDescription);		
+	    aDG.Initialize (sDescription);
             break;
         case PRESENTATION_OUTLINER:
 	    sDescription = ::rtl::OUString ( String(SdResId(SID_SD_A11Y_P_OUTLINER_D)) );
@@ -227,7 +227,7 @@ AccessiblePresentationShape::~AccessiblePresentationShape (void)
             break;
         case PRESENTATION_PAGENUMBER:
 			sName = ::rtl::OUString ( String(SdResId(SID_SD_A11Y_P_NUMBER_N_STYLE)) );
-            break;			
+            break;
         default:
             sName = ::rtl::OUString (String(SdResId(SID_SD_A11Y_P_UNKNOWN_N_STYLE)));
             uno::Reference<drawing::XShapeDescriptor> xDescriptor (mxShape, uno::UNO_QUERY);
@@ -239,4 +239,4 @@ AccessiblePresentationShape::~AccessiblePresentationShape (void)
     return sName;
 
 }
-} // end of namespace accessibility	
+} // end of namespace accessibility

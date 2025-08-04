@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -595,13 +595,13 @@ void Os2SalLayout::DrawText( SalGraphics& rGraphics ) const
 		// convert to codepage
 		ByteString str( mpOutGlyphs, gsl_getSystemTextEncoding() );
 		// gliph size is not recalculated, so it could be wrong!
-		rc = Ft2CharStringPosAtA( static_cast<Os2SalGraphics&>(rGraphics).mhPS, 
-					&aPt, NULL, CHS_VECTOR, mnGlyphCount, (PSZ)str.GetBuffer(), 
+		rc = Ft2CharStringPosAtA( static_cast<Os2SalGraphics&>(rGraphics).mhPS,
+					&aPt, NULL, CHS_VECTOR, mnGlyphCount, (PSZ)str.GetBuffer(),
 					(LONG*)mpGlyphAdvances, 0);
 	} else {
 		// try unicode rendering to screen
-		rc = Ft2CharStringPosAtW( static_cast<Os2SalGraphics&>(rGraphics).mhPS, 
-					&aPt, NULL, CHS_VECTOR, mnGlyphCount, (LPWSTR)mpOutGlyphs, 
+		rc = Ft2CharStringPosAtW( static_cast<Os2SalGraphics&>(rGraphics).mhPS,
+					&aPt, NULL, CHS_VECTOR, mnGlyphCount, (LPWSTR)mpOutGlyphs,
 					(LONG*)mpGlyphAdvances, 0);
 		if (rc == GPI_ERROR) {
 			// if *W fails, convert to codepage and use *A (fallback to GPI into ft2)
@@ -610,8 +610,8 @@ void Os2SalLayout::DrawText( SalGraphics& rGraphics ) const
 			debug_printf("Os2SalLayout::DrawText HPS %08x PosAtW failed '%s'!\n",static_cast<Os2SalGraphics&>(rGraphics).mhPS,str.GetBuffer());
 #endif
 			// gliph size is not recalculated, so it could be wrong!
-			rc = Ft2CharStringPosAtA( static_cast<Os2SalGraphics&>(rGraphics).mhPS, 
-						&aPt, NULL, CHS_VECTOR, mnGlyphCount, (PSZ)str.GetBuffer(), 
+			rc = Ft2CharStringPosAtA( static_cast<Os2SalGraphics&>(rGraphics).mhPS,
+						&aPt, NULL, CHS_VECTOR, mnGlyphCount, (PSZ)str.GetBuffer(),
 						(LONG*)mpGlyphAdvances, 0);
 		}
 	}

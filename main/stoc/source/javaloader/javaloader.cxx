@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -97,7 +97,7 @@ static Sequence< OUString > loader_getSupportedServiceNames()
     }
     return *pNames;
 }
-	
+
 static OUString loader_getImplementationName()
 {
     static OUString *pImplName = 0;
@@ -118,18 +118,18 @@ class JavaComponentLoader : public WeakImplHelper2<XImplementationLoader, XServi
 {
     css::uno::Reference<XComponentContext> m_xComponentContext;
     /** Do not use m_javaLoader directly. Instead use getJavaLoader.
-     */ 
+     */
     css::uno::Reference<XImplementationLoader> m_javaLoader;
     /** The retured Reference contains a null pointer if the office is not configured
         to run java.
-        
+
         @exception com::sun::star::uno::RuntimeException
         If the Java implementation of the loader could not be obtained, for reasons other
         then that java was not configured the RuntimeException is thrown.
      */
     const css::uno::Reference<XImplementationLoader> & getJavaLoader();
-    
-    
+
+
 public:
 	JavaComponentLoader(const css::uno::Reference<XComponentContext> & xCtx)
         throw(RuntimeException);
@@ -160,7 +160,7 @@ const css::uno::Reference<XImplementationLoader> & JavaComponentLoader::getJavaL
 
     if (m_javaLoader.is())
         return m_javaLoader;
-    
+
 	uno_Environment * pJava_environment = NULL;
 	uno_Environment * pUno_environment = NULL;
 	typelib_InterfaceTypeDescription * pType_XImplementationLoader = 0;
@@ -334,7 +334,7 @@ const css::uno::Reference<XImplementationLoader> & JavaComponentLoader::getJavaL
 
 JavaComponentLoader::JavaComponentLoader(const css::uno::Reference<XComponentContext> & xCtx) throw(RuntimeException) :
     m_xComponentContext(xCtx)
-    
+
 {
 
 }
@@ -347,8 +347,8 @@ JavaComponentLoader::~JavaComponentLoader() throw()
 OUString SAL_CALL JavaComponentLoader::getImplementationName()
     throw(::com::sun::star::uno::RuntimeException)
 {
-	return loader_getImplementationName();	
-}	
+	return loader_getImplementationName();
+}
 
 sal_Bool SAL_CALL JavaComponentLoader::supportsService(const OUString & ServiceName)
     throw(::com::sun::star::uno::RuntimeException)
@@ -361,7 +361,7 @@ sal_Bool SAL_CALL JavaComponentLoader::supportsService(const OUString & ServiceN
 		bSupport = pArray[i] == ServiceName;
 
 	return bSupport;
-}	
+}
 
 Sequence<OUString> SAL_CALL JavaComponentLoader::getSupportedServiceNames()
     throw(::com::sun::star::uno::RuntimeException)
@@ -417,7 +417,7 @@ static Mutex & getInitMutex()
 css::uno::Reference<XInterface> SAL_CALL JavaComponentLoader_CreateInstance(const css::uno::Reference<XComponentContext> & xCtx) throw(Exception)
 {
     css::uno::Reference<XInterface> xRet;
-    
+
     try {
         MutexGuard guard( getInitMutex() );
         // The javaloader is never destroyed and there can be only one!
@@ -438,7 +438,7 @@ css::uno::Reference<XInterface> SAL_CALL JavaComponentLoader_CreateInstance(cons
         osl_trace("javaloader - could not init javaloader cause of %s", message.getStr());
         throw;
     }
-    
+
     return xRet;
 }
 

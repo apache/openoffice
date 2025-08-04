@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,7 +48,7 @@ SalConverterCache::~SalConverterCache()
 #include <stdio.h>
 // <---
 
-rtl_UnicodeToTextConverter 
+rtl_UnicodeToTextConverter
 SalConverterCache::GetU2TConverter( rtl_TextEncoding nEncoding )
 {
     if( rtl_isOctetTextEncoding( nEncoding ) )
@@ -56,7 +56,7 @@ SalConverterCache::GetU2TConverter( rtl_TextEncoding nEncoding )
         ConverterT& rConverter( m_aConverters[ nEncoding ] );
 		if ( rConverter.mpU2T == NULL )
 		{
-			rConverter.mpU2T = 
+			rConverter.mpU2T =
                 rtl_createUnicodeToTextConverter( nEncoding );
 // ---> FIXME
 if ( rConverter.mpU2T == NULL )
@@ -68,7 +68,7 @@ if ( rConverter.mpU2T == NULL )
 	return NULL;
 }
 
-rtl_TextToUnicodeConverter 
+rtl_TextToUnicodeConverter
 SalConverterCache::GetT2UConverter( rtl_TextEncoding nEncoding )
 {
     if( rtl_isOctetTextEncoding( nEncoding ) )
@@ -76,7 +76,7 @@ SalConverterCache::GetT2UConverter( rtl_TextEncoding nEncoding )
         ConverterT& rConverter( m_aConverters[ nEncoding ] );
 		if ( rConverter.mpT2U == NULL )
 		{
-			rConverter.mpT2U = 
+			rConverter.mpT2U =
                 rtl_createTextToUnicodeConverter( nEncoding );
 // ---> FIXME
 if ( rConverter.mpT2U == NULL )
@@ -102,15 +102,15 @@ SalConverterCache::IsSingleByteEncoding( rtl_TextEncoding nEncoding )
 			aTextEncInfo.StructSize = sizeof( aTextEncInfo );
 			rtl_getTextEncodingInfo( nEncoding, &aTextEncInfo );
 
-			if (   aTextEncInfo.MinimumCharSize == aTextEncInfo.MaximumCharSize 
+			if (   aTextEncInfo.MinimumCharSize == aTextEncInfo.MaximumCharSize
 				&& aTextEncInfo.MinimumCharSize == 1)
 				rConverter.mbSingleByteEncoding = True;
 			else
 				rConverter.mbSingleByteEncoding = False;
 		}
-		
+
 		return rConverter.mbSingleByteEncoding;
-	} 
+	}
 	return False;
 }
 
@@ -118,7 +118,7 @@ SalConverterCache::IsSingleByteEncoding( rtl_TextEncoding nEncoding )
 // code point nChar. This list has been compiled from the according
 // ttmap files in /usr/openwin/lib/X11/fonts/TrueType/ttmap/
 Bool
-SalConverterCache::EncodingHasChar( rtl_TextEncoding nEncoding, 
+SalConverterCache::EncodingHasChar( rtl_TextEncoding nEncoding,
 		sal_Unicode nChar )
 {
 	Bool bMatch = False;
@@ -172,7 +172,7 @@ SalConverterCache::EncodingHasChar( rtl_TextEncoding nEncoding,
 					||	( nChar >= 0x00a0 && nChar <= 0x017e )
 					||	( nChar >= 0x02c7 && nChar <= 0x02dd );
 			break;
-		
+
 		case RTL_TEXTENCODING_ISO_8859_4:
 			bMatch = 	( nChar >= 0x0020 && nChar <= 0x007e )
 					||	( nChar >= 0x00a0 && nChar <= 0x017e )
@@ -263,7 +263,7 @@ SalConverterCache::EncodingHasChar( rtl_TextEncoding nEncoding,
 		case RTL_TEXTENCODING_MS_1361:
 		case RTL_TEXTENCODING_JIS_X_0208:
 
-			// XXX Big5 and Korean EUC contain Ascii chars, but Solaris 
+			// XXX Big5 and Korean EUC contain Ascii chars, but Solaris
 			// *-big5-1 and *-ksc5601.1992-3 fonts dont, in general CJK fonts
 			// are monospaced, so dont trust them for latin chars
 			if (nChar <= 0xFF)
@@ -273,7 +273,7 @@ SalConverterCache::EncodingHasChar( rtl_TextEncoding nEncoding,
 			}
 
 		default:
-			// XXX really convert the unicode char into the encoding 
+			// XXX really convert the unicode char into the encoding
 			// and check for conversion errors, this is expensive !
 			rtl_UnicodeToTextConverter aConverter;
 			rtl_UnicodeToTextContext   aContext;
@@ -291,27 +291,27 @@ SalConverterCache::EncodingHasChar( rtl_TextEncoding nEncoding,
 			sal_Size   nConvertedChars;
 			sal_Size   nSize;
 
-			nSize = rtl_convertUnicodeToText( aConverter, aContext, 
-					&nChar, 1, pConversionBuffer, sizeof(pConversionBuffer), 
-					  RTL_UNICODETOTEXT_FLAGS_UNDEFINED_ERROR	
+			nSize = rtl_convertUnicodeToText( aConverter, aContext,
+					&nChar, 1, pConversionBuffer, sizeof(pConversionBuffer),
+					  RTL_UNICODETOTEXT_FLAGS_UNDEFINED_ERROR
 					| RTL_UNICODETOTEXT_FLAGS_INVALID_ERROR,
 					&nConversionInfo, &nConvertedChars );
 
 			rtl_destroyUnicodeToTextContext( aConverter, aContext );
 
 			bMatch =    (nConvertedChars == 1)
-					 && (nSize == 1 || nSize == 2) // XXX Fix me this is a hack 
+					 && (nSize == 1 || nSize == 2) // XXX Fix me this is a hack
 					 && ((nConversionInfo & RTL_UNICODETOTEXT_INFO_ERROR) == 0);
 			break;
 	}
 
-	return bMatch;	
+	return bMatch;
 }
 
 // wrapper for rtl_convertUnicodeToText that handles the usual cases for
 // textconversion in drawtext and gettextwidth routines
 sal_Size
-SalConverterCache::ConvertStringUTF16( const sal_Unicode *pText, int nTextLen, 
+SalConverterCache::ConvertStringUTF16( const sal_Unicode *pText, int nTextLen,
 		sal_Char *pBuffer, sal_Size nBufferSize, rtl_TextEncoding nEncoding )
 {
 	rtl_UnicodeToTextConverter aConverter = GetU2TConverter(nEncoding);
@@ -323,10 +323,10 @@ SalConverterCache::ConvertStringUTF16( const sal_Unicode *pText, int nTextLen,
 	sal_uInt32  nCvtInfo;
 	sal_Size    nCvtChars;
 
-	rtl_UnicodeToTextContext aContext = 
+	rtl_UnicodeToTextContext aContext =
 		 	rtl_createUnicodeToTextContext( aConverter );
 
-	sal_Size nSize = rtl_convertUnicodeToText( aConverter, aContext, 
+	sal_Size nSize = rtl_convertUnicodeToText( aConverter, aContext,
 				pText, nTextLen, pBuffer, nBufferSize,
 				nCvtFlags, &nCvtInfo, &nCvtChars );
 

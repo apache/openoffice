@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -56,9 +56,9 @@
 #include "global.hxx"
 #include "inputopt.hxx"
 #include "rangeutl.hxx"
-    
 
-ScFormulaReferenceHelper::ScFormulaReferenceHelper(IAnyRefDialog* _pDlg,SfxBindings* _pBindings) 
+
+ScFormulaReferenceHelper::ScFormulaReferenceHelper(IAnyRefDialog* _pDlg,SfxBindings* _pBindings)
  : m_pDlg(_pDlg)
  , pRefEdit (NULL)
  , m_pWindow(NULL)
@@ -182,7 +182,7 @@ bool ScFormulaReferenceHelper::ParseWithNames( ScRangeList& rRanges, const Strin
         else if ( aRangeUtil.MakeRangeFromName( aRangeStr, pDoc, nRefTab, aRange, RUTL_NAMES, aDetails ) )
             rRanges.Append( aRange );
         else
-            bError = true;        
+            bError = true;
     }
 
     return !bError;
@@ -745,7 +745,7 @@ bool ScRefHandler::EnterRefMode()
 	m_aHelper.SetDispatcherLock( sal_True );
 	//@Test
 	//SFX_APPWINDOW->Disable(sal_True);	  //@BugID 54702
-	
+
 	return m_bInRefMode = true;
 }
 

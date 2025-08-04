@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -43,29 +43,29 @@ TYPEINIT1( XMLPersElemContentTContext, XMLPersAttrListTContext );
 
 void XMLPersElemContentTContext::AddContent( XMLTransformerContext *pContext )
 {
-	OSL_ENSURE( pContext && pContext->IsPersistent(), 
+	OSL_ENSURE( pContext && pContext->IsPersistent(),
 				"non-persistent context" );
 	XMLTransformerContextVector::value_type aVal( pContext );
 	m_aChildContexts.push_back( aVal );
 }
 
-XMLPersElemContentTContext::XMLPersElemContentTContext( 
-		XMLTransformerBase& rImp, 
+XMLPersElemContentTContext::XMLPersElemContentTContext(
+		XMLTransformerBase& rImp,
 		const OUString& rQName ) :
 	XMLPersAttrListTContext( rImp, rQName )
 {
 }
 
-XMLPersElemContentTContext::XMLPersElemContentTContext( 
-		XMLTransformerBase& rImp, 
+XMLPersElemContentTContext::XMLPersElemContentTContext(
+		XMLTransformerBase& rImp,
 		const OUString& rQName,
 	   sal_uInt16 nActionMap ) :
 	XMLPersAttrListTContext( rImp, rQName, nActionMap )
 {
 }
 
-XMLPersElemContentTContext::XMLPersElemContentTContext( 
-		XMLTransformerBase& rImp, 
+XMLPersElemContentTContext::XMLPersElemContentTContext(
+		XMLTransformerBase& rImp,
 		const OUString& rQName,
 	    sal_uInt16 nPrefix,
 		::xmloff::token::XMLTokenEnum eToken ) :
@@ -73,8 +73,8 @@ XMLPersElemContentTContext::XMLPersElemContentTContext(
 {
 }
 
-XMLPersElemContentTContext::XMLPersElemContentTContext( 
-		XMLTransformerBase& rImp, 
+XMLPersElemContentTContext::XMLPersElemContentTContext(
+		XMLTransformerBase& rImp,
 		const OUString& rQName,
 	    sal_uInt16 nPrefix,
 		::xmloff::token::XMLTokenEnum eToken,
@@ -104,11 +104,11 @@ XMLTransformerContext *XMLPersElemContentTContext::CreateChildContext(
 		switch( (*aIter).second.m_nActionType )
 		{
 		case XML_ETACTION_COPY:
-			pContext = new XMLPersMixedContentTContext( GetTransformer(), 
+			pContext = new XMLPersMixedContentTContext( GetTransformer(),
 													   rQName );
 			break;
 		case XML_ETACTION_COPY_TEXT:
-			pContext = new XMLPersMixedContentTContext( GetTransformer(), 
+			pContext = new XMLPersMixedContentTContext( GetTransformer(),
 													   rQName );
 			break;
 		case XML_ETACTION_RENAME_ELEM:
@@ -124,16 +124,16 @@ XMLTransformerContext *XMLPersElemContentTContext::CreateChildContext(
 			break;
 		case XML_ETACTION_RENAME_ELEM_ADD_PROC_ATTR:
 			{
-				XMLPersMixedContentTContext *pMC = 
+				XMLPersMixedContentTContext *pMC =
 					new XMLPersMixedContentTContext( GetTransformer(), rQName,
 						(*aIter).second.GetQNamePrefixFromParam1(),
 						(*aIter).second.GetQNameTokenFromParam1(),
-						static_cast< sal_uInt16 >( 
+						static_cast< sal_uInt16 >(
 							(*aIter).second.m_nParam3  >> 16 ) );
-				pMC->AddAttribute( 
+				pMC->AddAttribute(
 					(*aIter).second.GetQNamePrefixFromParam2(),
 					(*aIter).second.GetQNameTokenFromParam2(),
-				   	static_cast< ::xmloff::token::XMLTokenEnum >( 
+				   	static_cast< ::xmloff::token::XMLTokenEnum >(
 						(*aIter).second.m_nParam3 & 0xffff ) );
 				pContext = pMC;
 			}
@@ -143,15 +143,15 @@ XMLTransformerContext *XMLPersElemContentTContext::CreateChildContext(
 				   	static_cast< sal_uInt16 >( (*aIter).second.m_nParam1 ) );
 			break;
 		default:
-			pContext = GetTransformer().CreateUserDefinedContext( 
+			pContext = GetTransformer().CreateUserDefinedContext(
 							(*aIter).second, rQName, sal_True );
-			OSL_ENSURE( pContext && pContext->IsPersistent(), 
+			OSL_ENSURE( pContext && pContext->IsPersistent(),
 						"unknown or not persistent action" );
 			if( pContext && !pContext->IsPersistent() )
 			{
 				delete pContext;
 				pContext = 0;
-			}		
+			}
 			break;
 		}
 	}

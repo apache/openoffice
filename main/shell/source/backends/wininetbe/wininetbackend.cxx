@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -36,9 +36,9 @@
 #include <sal/alloca.h>
 #if defined _MSC_VER
 #pragma warning(pop)
-#endif 
+#endif
 
-#define WININET_DLL_NAME "wininet.dll" 
+#define WININET_DLL_NAME "wininet.dll"
 #define EQUAL_SIGN '='
 #define COLON      ':'
 #define SPACE      ' '
@@ -56,8 +56,8 @@ struct Library {
 
 }
 
-typedef struct  
-{  
+typedef struct
+{
     rtl::OUString Server;
     rtl::OUString Port;
 } ProxyEntry;
@@ -71,26 +71,26 @@ namespace // private
     ProxyEntry ReadProxyEntry(const rtl::OUString& aProxy, sal_Int32& i)
     {
         ProxyEntry aProxyEntry;
-        
+
         aProxyEntry.Server = aProxy.getToken( 0, COLON, i );
         if ( i > -1 )
             aProxyEntry.Port = aProxy.getToken( 0, COLON, i );
-        
+
         return aProxyEntry;
     }
-    
+
     ProxyEntry FindProxyEntry(const rtl::OUString& aProxyList, const rtl::OUString& aType)
     {
         sal_Int32 nIndex = 0;
-        
+
         do
         {
             // get the next token, e.g. ftp=server:port
             rtl::OUString nextToken = aProxyList.getToken( 0, SPACE, nIndex );
-                
-            // split the next token again into the parts separated 
+
+            // split the next token again into the parts separated
             // through '=', e.g. ftp=server:port -> ftp and server:port
-            sal_Int32 i = 0;              
+            sal_Int32 i = 0;
             if( nextToken.indexOf( EQUAL_SIGN ) > -1 )
             {
                 if( aType.equals( nextToken.getToken( 0, EQUAL_SIGN, i ) ) )
@@ -98,12 +98,12 @@ namespace // private
             }
             else if( aType.getLength() == 0)
                 return ReadProxyEntry(nextToken, i);
-            
+
         } while ( nIndex >= 0 );
-        
+
         return ProxyEntry();
     }
-    
+
 } // end private namespace
 
 //------------------------------------------------------------------------------
@@ -115,8 +115,8 @@ WinInetBackend::WinInetBackend()
     {
         typedef BOOL ( WINAPI *InternetQueryOption_Proc_T )( HINTERNET, DWORD, LPVOID, LPDWORD );
 
-        InternetQueryOption_Proc_T lpfnInternetQueryOption = 
-            reinterpret_cast< InternetQueryOption_Proc_T >( 
+        InternetQueryOption_Proc_T lpfnInternetQueryOption =
+            reinterpret_cast< InternetQueryOption_Proc_T >(
                 GetProcAddress( hWinInetDll.module, "InternetQueryOptionA" ) );
         if (lpfnInternetQueryOption)
         {
@@ -129,7 +129,7 @@ WinInetBackend::WinInetBackend()
                 INTERNET_OPTION_PROXY,
                 (LPVOID)lpi,
                 &dwLength );
-        
+
             // allocate sufficient space on the heap
             // insufficient space on the heap results
             // in a stack overflow exception, we assume
@@ -140,8 +140,8 @@ WinInetBackend::WinInetBackend()
             // automatically done
             lpi = reinterpret_cast< LPINTERNET_PROXY_INFO >(
                 alloca( dwLength ) );
-        
-            bRet = lpfnInternetQueryOption( 
+
+            bRet = lpfnInternetQueryOption(
                 NULL,
                 INTERNET_OPTION_PROXY,
                 (LPVOID)lpi,
@@ -150,10 +150,10 @@ WinInetBackend::WinInetBackend()
             // if a proxy is disabled, InternetQueryOption returns
             // an empty proxy list, so we don't have to check if
             // proxy is enabled or not
-        
+
             rtl::OUString aProxyList       = rtl::OUString::createFromAscii( lpi->lpszProxy );
             rtl::OUString aProxyBypassList = rtl::OUString::createFromAscii( lpi->lpszProxyBypass );
-        
+
             // override default for ProxyType, which is "0" meaning "No proxies".
             sal_Int32 nProperties = 1;
 
@@ -182,7 +182,7 @@ WinInetBackend::WinInetBackend()
                 while ( nIndex >= 0 );
 
                 aProxyBypassList = aReverseList.makeStringAndClear();
-            
+
                 valueNoProxy_.IsPresent = true;
                 valueNoProxy_.Value <<= aProxyBypassList.replace( SPACE, SEMI_COLON );
             }
@@ -200,9 +200,9 @@ WinInetBackend::WinInetBackend()
                 // ftp=server:port;http=server:port;server:port
                 // the last token server:port is type independent
                 // so the ie chooses this proxy server
-    
-                // if there is no port specified for a type independent 
-                // server the ie uses the port of an http server if 
+
+                // if there is no port specified for a type independent
+                // server the ie uses the port of an http server if
                 // there is one and it has a port
                 //-------------------------------------------------
 
@@ -214,13 +214,13 @@ WinInetBackend::WinInetBackend()
 
                 ProxyEntry aFtpProxy  = FindProxyEntry( aProxyList, rtl::OUString(
                     RTL_CONSTASCII_USTRINGPARAM( "ftp" ) ) );
-            
+
                 if( aTypeIndepProxy.Server.getLength() )
                 {
                     aHttpProxy.Server = aTypeIndepProxy.Server;
                     aHttpsProxy.Server  = aTypeIndepProxy.Server;
                     aFtpProxy.Server  = aTypeIndepProxy.Server;
-                
+
                     if( aTypeIndepProxy.Port.getLength() )
                     {
                         aHttpProxy.Port = aTypeIndepProxy.Port;
@@ -233,7 +233,7 @@ WinInetBackend::WinInetBackend()
                         aHttpsProxy.Port  = aHttpProxy.Port;
                     }
                 }
-                
+
                 // http proxy name
                 if( aHttpProxy.Server.getLength() > 0 )
                 {
@@ -282,7 +282,7 @@ WinInetBackend::WinInetBackend()
 
 //------------------------------------------------------------------------------
 
-WinInetBackend::~WinInetBackend(void) 
+WinInetBackend::~WinInetBackend(void)
 {
 }
 
@@ -360,15 +360,15 @@ rtl::OUString SAL_CALL WinInetBackend::getBackendName(void) {
 
 //------------------------------------------------------------------------------
 
-rtl::OUString SAL_CALL WinInetBackend::getImplementationName(void) 
-    throw (uno::RuntimeException) 
+rtl::OUString SAL_CALL WinInetBackend::getImplementationName(void)
+    throw (uno::RuntimeException)
 {
     return getBackendName() ;
 }
 
 //------------------------------------------------------------------------------
 
-uno::Sequence<rtl::OUString> SAL_CALL WinInetBackend::getBackendServiceNames(void) 
+uno::Sequence<rtl::OUString> SAL_CALL WinInetBackend::getBackendServiceNames(void)
 {
     uno::Sequence<rtl::OUString> aServiceNameList(1);
     aServiceNameList[0] = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.configuration.backend.WinInetBackend")) ;
@@ -378,22 +378,22 @@ uno::Sequence<rtl::OUString> SAL_CALL WinInetBackend::getBackendServiceNames(voi
 
 //------------------------------------------------------------------------------
 
-sal_Bool SAL_CALL WinInetBackend::supportsService(const rtl::OUString& aServiceName) 
-    throw (uno::RuntimeException) 
+sal_Bool SAL_CALL WinInetBackend::supportsService(const rtl::OUString& aServiceName)
+    throw (uno::RuntimeException)
 {
     uno::Sequence< rtl::OUString > const svc = getBackendServiceNames();
 
     for(sal_Int32 i = 0; i < svc.getLength(); ++i )
         if(svc[i] == aServiceName)
             return true;
-            
+
     return false;
 }
 
 //------------------------------------------------------------------------------
 
-uno::Sequence<rtl::OUString> SAL_CALL WinInetBackend::getSupportedServiceNames(void) 
-    throw (uno::RuntimeException) 
+uno::Sequence<rtl::OUString> SAL_CALL WinInetBackend::getSupportedServiceNames(void)
+    throw (uno::RuntimeException)
 {
     return getBackendServiceNames() ;
 }

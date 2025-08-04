@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -36,7 +36,7 @@ SbiCodeGen::SbiCodeGen( SbModule& r, SbiParser* p, short nInc )
 		 : rMod( r ), aCode( p, nInc )
 {
 	pParser = p;
-	bStmnt = sal_False; 
+	bStmnt = sal_False;
 	nLine = 0;
 	nCol = 0;
 	nForLevel = 0;
@@ -124,7 +124,7 @@ void SbiCodeGen::Save()
 	// OPTION EXPLICIT-Flag uebernehmen
 	if( pParser->bExplicit )
 		p->SetFlag( SBIMG_EXPLICIT );
-	
+
 	int nIfaceCount = 0;
 	if( rMod.mnType == com::sun::star::script::ModuleType::CLASS )
 	{
@@ -177,7 +177,7 @@ void SbiCodeGen::Save()
 			sal_uInt16 nPassCount = 1;
 			if( nIfaceCount )
 			{
-				int nPropPrefixFound = 
+				int nPropPrefixFound =
 					aProcName.Search( String( RTL_CONSTASCII_USTRINGPARAM("Property ") ) );
 				String aPureProcName = aProcName;
 				String aPropPrefix;
@@ -349,9 +349,9 @@ public:
 	virtual ~PCodeVisitor();
 
 	virtual void start( sal_uInt8* pStart ) = 0;
-	virtual void processOpCode0( SbiOpcode eOp ) = 0; 
-	virtual void processOpCode1( SbiOpcode eOp, T nOp1 ) = 0; 
-	virtual void processOpCode2( SbiOpcode eOp, T nOp1, T nOp2 ) = 0; 
+	virtual void processOpCode0( SbiOpcode eOp ) = 0;
+	virtual void processOpCode1( SbiOpcode eOp, T nOp1 ) = 0;
+	virtual void processOpCode2( SbiOpcode eOp, T nOp1, T nOp2 ) = 0;
 	virtual bool processParams() = 0;
 	virtual void end() = 0;
 };
@@ -388,7 +388,7 @@ public:
 		for( ; pCode < pEnd; )
 		{
 			SbiOpcode eOp = (SbiOpcode)(*pCode++);
-			
+
 			if ( eOp <= SbOP0_END )
 				visitor.processOpCode0( eOp );
 			else if( eOp >= SbOP1_START && eOp <= SbOP1_END )
@@ -409,7 +409,7 @@ public:
 				else
 					pCode += ( sizeof( T ) * 2 );
 				visitor.processOpCode2( eOp, nOp1, nOp2 );
-			}	
+			}
 		}
 		visitor.end();
 	}
@@ -422,22 +422,22 @@ class OffSetAccumulator : public PCodeVisitor< T >
 	T m_nNumSingleParams;
 	T m_nNumDoubleParams;
 public:
-	
+
 	OffSetAccumulator() : m_nNumOp0(0), m_nNumSingleParams(0), m_nNumDoubleParams(0){}
 	virtual void start( sal_uInt8* /*pStart*/ ){}
 	virtual void processOpCode0( SbiOpcode /*eOp*/ ){ ++m_nNumOp0; }
 	virtual void processOpCode1( SbiOpcode /*eOp*/, T /*nOp1*/ ){  ++m_nNumSingleParams; }
 	virtual void processOpCode2( SbiOpcode /*eOp*/, T /*nOp1*/, T /*nOp2*/ ) { ++m_nNumDoubleParams; }
 	virtual void end(){}
-	S offset() 
-	{ 
-		T result = 0 ; 
+	S offset()
+	{
+		T result = 0 ;
 		static const S max = std::numeric_limits< S >::max();
-		result = m_nNumOp0 + ( ( sizeof(S) + 1 ) * m_nNumSingleParams ) + ( (( sizeof(S) * 2 )+ 1 )  * m_nNumDoubleParams ); 
-		if ( result > max ) 
+		result = m_nNumOp0 + ( ( sizeof(S) + 1 ) * m_nNumSingleParams ) + ( (( sizeof(S) * 2 )+ 1 )  * m_nNumDoubleParams );
+		if ( result > max )
 			return max;
-	
-		return static_cast<S>(result); 
+
+		return static_cast<S>(result);
 	}
    virtual bool processParams(){ return false; }
 };
@@ -453,7 +453,7 @@ class BufferTransformer : public PCodeVisitor< T >
 public:
 	BufferTransformer():m_pStart(NULL), m_ConvertedBuf( NULL, 1024 ) {}
 	virtual void start( sal_uInt8* pStart ){ m_pStart = pStart; }
-	virtual void processOpCode0( SbiOpcode eOp ) 
+	virtual void processOpCode0( SbiOpcode eOp )
 	{
 		m_ConvertedBuf += (sal_uInt8)eOp;
 	}
@@ -477,12 +477,12 @@ public:
 					nOp1 = static_cast<T>( convertBufferOffSet(m_pStart, nOp1) );
 				break;
 			default:
-				break; // 
-				
+				break; //
+
 		}
 		m_ConvertedBuf += (S)nOp1;
 	}
-	virtual void processOpCode2( SbiOpcode eOp, T nOp1, T nOp2 ) 
+	virtual void processOpCode2( SbiOpcode eOp, T nOp1, T nOp2 )
 	{
 		m_ConvertedBuf += (sal_uInt8)eOp;
 		if ( eOp == _CASEIS )
@@ -490,33 +490,33 @@ public:
 					nOp1 = static_cast<T>( convertBufferOffSet(m_pStart, nOp1) );
 		m_ConvertedBuf += (S)nOp1;
 		m_ConvertedBuf += (S)nOp2;
-		
+
 	}
 	virtual bool processParams(){ return true; }
 	virtual void end() {}
 	// yeuch, careful here, you can only call
 	// GetBuffer on the returned SbiBuffer once, also
 	// you (as the caller) get to own the memory
-	SbiBuffer& buffer() 
-	{ 
+	SbiBuffer& buffer()
+	{
 		return m_ConvertedBuf;
 	}
 	static S convertBufferOffSet( sal_uInt8* pStart, T nOp1 )
 	{
 		PCodeBufferWalker< T > aBuff( pStart, nOp1);
 		OffSetAccumulator< T, S > aVisitor;
-		aBuff.visitBuffer( aVisitor ); 
+		aBuff.visitBuffer( aVisitor );
 		return aVisitor.offset();
 	}
 };
 
-sal_uInt32 
+sal_uInt32
 SbiCodeGen::calcNewOffSet( sal_uInt8* pCode, sal_uInt16 nOffset )
 {
 	return BufferTransformer< sal_uInt16, sal_uInt32 >::convertBufferOffSet( pCode, nOffset );
 }
 
-sal_uInt16 
+sal_uInt16
 SbiCodeGen::calcLegacyOffSet( sal_uInt8* pCode, sal_uInt32 nOffset )
 {
 	return BufferTransformer< sal_uInt32, sal_uInt16 >::convertBufferOffSet( pCode, nOffset );
@@ -528,7 +528,7 @@ PCodeBuffConvertor<T,S>::convert()
 {
 	PCodeBufferWalker< T > aBuf( m_pStart, m_nSize );
 	BufferTransformer< T, S > aTrnsfrmer;
-	aBuf.visitBuffer( aTrnsfrmer );	
+	aBuf.visitBuffer( aTrnsfrmer );
 	m_pCnvtdBuf = (sal_uInt8*)aTrnsfrmer.buffer().GetBuffer();
 	m_nCnvtdSize = static_cast<S>( aTrnsfrmer.buffer().GetSize() );
 }

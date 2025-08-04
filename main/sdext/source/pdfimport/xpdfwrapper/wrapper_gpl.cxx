@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "pdfioutdev_gpl.hxx"
@@ -88,15 +88,15 @@ int main(int argc, char **argv)
             }
         }
     }
-        
+
     // PDFDoc takes over ownership for all strings below
     GooString* pFileName    = new GooString(argv[1]);
     GooString* pTempErrFileName     = new GooString("_err.pdf");
     GooString* pTempErrFileNamePath = new GooString(argv[0]);
 
     GooString* pErrFileName = new GooString(pTempErrFileNamePath,pTempErrFileName);
-   
-        
+
+
     // check for password string(s)
     GooString* pOwnerPasswordStr( aPwBuf[0] != 0
                                  ? new GooString( aPwBuf )
@@ -108,7 +108,7 @@ int main(int argc, char **argv)
                                   : (GooString *)NULL );
     if( outputFile[0] != '\001' )
         g_binary_out = fopen(outputFile,"wb");
-    
+
 #ifdef WNT
     // Win actually modifies output for O_TEXT file mode, so need to
     // revert to binary here
@@ -118,15 +118,15 @@ int main(int argc, char **argv)
     PDFDoc aDoc( pFileName,
                  pOwnerPasswordStr,
                  pUserPasswordStr );
-  
+
     PDFDoc aErrDoc( pErrFileName,
                  pOwnerPasswordStr,
                  pUserPasswordStr );
-   
-    
+
+
    // Check various permissions.
    if ( !aDoc.isOk()||
-        !aDoc.okToPrint() ||    
+        !aDoc.okToPrint() ||
         !aDoc.okToChange()||
         !aDoc.okToCopy()||
         !aDoc.okToAddNotes() )
@@ -144,16 +144,16 @@ int main(int argc, char **argv)
        // do the conversion
        for( int i=1; i<=nPages; ++i )
        {
-          aErrDoc.displayPage( pOutDev, 
-                            i, 
-                            PDFI_OUTDEV_RESOLUTION, 
+          aErrDoc.displayPage( pOutDev,
+                            i,
+                            PDFI_OUTDEV_RESOLUTION,
                             PDFI_OUTDEV_RESOLUTION,
                             0, gTrue, gTrue, gTrue );
           aErrDoc.processLinks( pOutDev, i );
        }
    }
    else
-   {  
+   {
       pdfi::PDFOutDev* pOutDev( new pdfi::PDFOutDev(&aDoc) );
 
       // tell receiver early - needed for proper progress calculation
@@ -166,9 +166,9 @@ int main(int argc, char **argv)
       const int nPages = aDoc.getNumPages();
       for( int i=1; i<=nPages; ++i )
       {
-        aDoc.displayPage( pOutDev, 
-                          i, 
-                          PDFI_OUTDEV_RESOLUTION, 
+        aDoc.displayPage( pOutDev,
+                          i,
+                          PDFI_OUTDEV_RESOLUTION,
                           PDFI_OUTDEV_RESOLUTION,
                           0, gTrue, gTrue, gTrue );
         aDoc.processLinks( pOutDev, i );

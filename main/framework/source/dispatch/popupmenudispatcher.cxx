@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -94,7 +94,7 @@ const sal_Int32 PROTOCOL_LENGTH     = 19;
 //*****************************************************************************************************************
 //	constructor
 //*****************************************************************************************************************
-PopupMenuDispatcher::PopupMenuDispatcher( 
+PopupMenuDispatcher::PopupMenuDispatcher(
     const uno::Reference< XMultiServiceFactory >& xFactory )
 		//	Init baseclasses first
         :   ThreadHelpBase          ( &Application::GetSolarMutex()  )
@@ -159,12 +159,12 @@ DEFINE_INIT_SERVICE(PopupMenuDispatcher,
 //*****************************************************************************************************************
 //	XInitialization
 //*****************************************************************************************************************
-void SAL_CALL PopupMenuDispatcher::initialize( 
-    const css::uno::Sequence< css::uno::Any >& lArguments ) 
+void SAL_CALL PopupMenuDispatcher::initialize(
+    const css::uno::Sequence< css::uno::Any >& lArguments )
 throw( css::uno::Exception, css::uno::RuntimeException)
 {
     css::uno::Reference< css::frame::XFrame > xFrame;
-    
+
     /* SAFE { */
     WriteGuard aWriteLock(m_aLock);
 
@@ -176,7 +176,7 @@ throw( css::uno::Exception, css::uno::RuntimeException)
             m_xWeakFrame = xFrame;
 
 	        m_bActivateListener = sal_True;
-            uno::Reference< css::frame::XFrameActionListener > xFrameActionListener( 
+            uno::Reference< css::frame::XFrameActionListener > xFrameActionListener(
                 (OWeakObject *)this, css::uno::UNO_QUERY );
             xFrame->addFrameActionListener( xFrameActionListener );
         }
@@ -189,27 +189,27 @@ throw( css::uno::Exception, css::uno::RuntimeException)
 //*****************************************************************************************************************
 //	XDispatchProvider
 //*****************************************************************************************************************
-css::uno::Reference< css::frame::XDispatch > 
-SAL_CALL PopupMenuDispatcher::queryDispatch( 
+css::uno::Reference< css::frame::XDispatch >
+SAL_CALL PopupMenuDispatcher::queryDispatch(
     const css::util::URL&  rURL    ,
     const ::rtl::OUString& sTarget ,
-    sal_Int32              nFlags  ) 
+    sal_Int32              nFlags  )
 throw( css::uno::RuntimeException )
 {
     css::uno::Reference< css::frame::XDispatch > xDispatch;
-    
+
     if ( rURL.Complete.compareToAscii( PROTOCOL_VALUE, PROTOCOL_LENGTH ) == 0 )
     {
         // --- SAFE ---
 	    ResetableGuard aGuard( m_aLock );
         impl_RetrievePopupControllerQuery();
         impl_CreateUriRefFactory();
-        
+
         css::uno::Reference< css::container::XNameAccess > xPopupCtrlQuery( m_xPopupCtrlQuery );
         css::uno::Reference< css::uri::XUriReferenceFactory > xUriRefFactory( m_xUriRefFactory );
         aGuard.unlock();
         // --- SAFE ---
-        
+
         if ( xPopupCtrlQuery.is() )
         {
             try
@@ -219,9 +219,9 @@ throw( css::uno::RuntimeException )
                 sal_Int32     nSchemePart( 0 );
                 rtl::OUString aBaseURL( RTL_CONSTASCII_USTRINGPARAM( "vnd.sun.star.popup:" ));
                 rtl::OUString aURL( rURL.Complete );
-                
+
                 nSchemePart = aURL.indexOf( ':' );
-                if (( nSchemePart > 0 ) && 
+                if (( nSchemePart > 0 ) &&
                     ( aURL.getLength() > ( nSchemePart+1 )))
                 {
                     nQueryPart  = aURL.indexOf( '?', nSchemePart );
@@ -230,13 +230,13 @@ throw( css::uno::RuntimeException )
                     else if ( nQueryPart == -1 )
                         aBaseURL += aURL.copy( nSchemePart+1 );
                 }
-                
+
                 css::uno::Reference< css::frame::XDispatchProvider > xDispatchProvider;
-                
+
                 // Find popup menu controller using the base URL
                 xPopupCtrlQuery->getByName( aBaseURL ) >>= xDispatchProvider;
                 aGuard.unlock();
-                
+
                 // Ask popup menu dispatch provider for dispatch object
                 if ( xDispatchProvider.is() )
                     xDispatch = xDispatchProvider->queryDispatch( rURL, sTarget, nFlags );
@@ -253,9 +253,9 @@ throw( css::uno::RuntimeException )
     return xDispatch;
 }
 
-css::uno::Sequence< css::uno::Reference< css::frame::XDispatch > > SAL_CALL 
-PopupMenuDispatcher::queryDispatches( 
-    const css::uno::Sequence< css::frame::DispatchDescriptor >& lDescriptor ) 
+css::uno::Sequence< css::uno::Reference< css::frame::XDispatch > > SAL_CALL
+PopupMenuDispatcher::queryDispatches(
+    const css::uno::Sequence< css::frame::DispatchDescriptor >& lDescriptor )
 throw( css::uno::RuntimeException )
 {
     sal_Int32 nCount = lDescriptor.getLength();
@@ -273,10 +273,10 @@ throw( css::uno::RuntimeException )
 //*****************************************************************************************************************
 //	XDispatch
 //*****************************************************************************************************************
-void 
+void
 SAL_CALL PopupMenuDispatcher::dispatch(
     const URL&                        /*aURL*/            ,
-	const Sequence< PropertyValue >&  /*seqProperties*/	) 
+	const Sequence< PropertyValue >&  /*seqProperties*/	)
 throw( RuntimeException )
 {
 }
@@ -284,7 +284,7 @@ throw( RuntimeException )
 //*****************************************************************************************************************
 //	XDispatch
 //*****************************************************************************************************************
-void 
+void
 SAL_CALL PopupMenuDispatcher::addStatusListener(
     const uno::Reference< XStatusListener >& xControl,
 	const URL&							aURL	)
@@ -300,10 +300,10 @@ throw( RuntimeException )
 //*****************************************************************************************************************
 //	XDispatch
 //*****************************************************************************************************************
-void 
+void
 SAL_CALL PopupMenuDispatcher::removeStatusListener(
     const uno::Reference< XStatusListener >& xControl,
-	const URL&							aURL	) 
+	const URL&							aURL	)
 throw( RuntimeException )
 {
 	// Ready for multithreading
@@ -317,9 +317,9 @@ throw( RuntimeException )
 //	 XFrameActionListener
 //*****************************************************************************************************************
 
-void 
-SAL_CALL PopupMenuDispatcher::frameAction( 
-    const FrameActionEvent& aEvent ) 
+void
+SAL_CALL PopupMenuDispatcher::frameAction(
+    const FrameActionEvent& aEvent )
 throw ( RuntimeException )
 {
 	ResetableGuard aGuard( m_aLock );
@@ -335,7 +335,7 @@ throw ( RuntimeException )
 //*****************************************************************************************************************
 //	 XEventListener
 //*****************************************************************************************************************
-void 
+void
 SAL_CALL PopupMenuDispatcher::disposing( const EventObject& ) throw( RuntimeException )
 {
 	// Ready for multithreading
@@ -368,7 +368,7 @@ void PopupMenuDispatcher::impl_RetrievePopupControllerQuery()
     {
         css::uno::Reference< css::frame::XLayoutManager > xLayoutManager;
         css::uno::Reference< css::frame::XFrame > xFrame( m_xWeakFrame );
-        
+
         if ( xFrame.is() )
         {
             css::uno::Reference< css::beans::XPropertySet > xPropSet( xFrame, css::uno::UNO_QUERY );
@@ -384,7 +384,7 @@ void PopupMenuDispatcher::impl_RetrievePopupControllerQuery()
                         rtl::OUString aMenuBar( RTL_CONSTASCII_USTRINGPARAM( "private:resource/menubar/menubar" ));
                         xMenuBar = xLayoutManager->getElement( aMenuBar );
 
-                        m_xPopupCtrlQuery = css::uno::Reference< css::container::XNameAccess >( 
+                        m_xPopupCtrlQuery = css::uno::Reference< css::container::XNameAccess >(
                                                 xMenuBar, css::uno::UNO_QUERY );
                     }
                 }
@@ -404,13 +404,13 @@ void PopupMenuDispatcher::impl_CreateUriRefFactory()
 {
     if ( !m_xUriRefFactory.is() )
     {
-        rtl::OUString aUriRefFactoryService( 
+        rtl::OUString aUriRefFactoryService(
             RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.uri.UriReferenceFactory" ));
-        
+
         m_xUriRefFactory = css::uno::Reference< css::uri::XUriReferenceFactory >(
                                 m_xFactory->createInstance( aUriRefFactoryService ),
                                 css::uno::UNO_QUERY);
-        
+
     }
 }
 

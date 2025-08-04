@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -150,7 +150,7 @@ bool lcl_IsUnsupportedUnicodeChar( CharClass& rCC, const String& rTxt,
         short nScript = rCC.getScript( rTxt, nStt );
         switch( nScript )
         {
-            case ::com::sun::star::i18n::UnicodeScript_kCJKRadicalsSupplement: 
+            case ::com::sun::star::i18n::UnicodeScript_kCJKRadicalsSupplement:
             case ::com::sun::star::i18n::UnicodeScript_kHangulJamo:
             case ::com::sun::star::i18n::UnicodeScript_kCJKSymbolPunctuation:
             case ::com::sun::star::i18n::UnicodeScript_kHiragana:
@@ -164,9 +164,9 @@ bool lcl_IsUnsupportedUnicodeChar( CharClass& rCC, const String& rTxt,
             case ::com::sun::star::i18n::UnicodeScript_kCJKCompatibilityIdeograph:
             case ::com::sun::star::i18n::UnicodeScript_kHalfwidthFullwidthForm:
                 return true;
-            default: ; //do nothing 
+            default: ; //do nothing
         }
-        
+
 	}
 	return false;
 }
@@ -348,7 +348,7 @@ sal_Bool SvxAutoCorrect::IsAutoCorrectChar( sal_Unicode cChar )
 
 sal_Bool SvxAutoCorrect::NeedsHardspaceAutocorr( sal_Unicode cChar )
 {
-    return cChar == ';' || cChar == ':'  || cChar == '?' || cChar == '!' || 
+    return cChar == ';' || cChar == ':'  || cChar == '?' || cChar == '!' ||
         cChar == '/' /*case for the urls exception*/;
 }
 
@@ -649,7 +649,7 @@ sal_Bool SvxAutoCorrect::FnChgToEnEmDash(
 
     // Replace [A-z0-9]--[A-z0-9] double dash with "emDash" or "enDash".
     // Finnish and Hungarian use enDash instead of emDash.
-    bool bEnDash = (eLang == LANGUAGE_HUNGARIAN || eLang == LANGUAGE_FINNISH);    
+    bool bEnDash = (eLang == LANGUAGE_HUNGARIAN || eLang == LANGUAGE_FINNISH);
     if( ((cEmDash && !bEnDash) || (cEnDash && bEnDash)) && 4 <= nEndPos - nSttPos )
 	{
 		String sTmp( rTxt.Copy( nSttPos, nEndPos - nSttPos ) );
@@ -676,7 +676,7 @@ sal_Bool SvxAutoCorrect::FnAddNonBrkSpace(
                                 LanguageType eLang )
 {
     bool bRet = false;
-    
+
     CharClass& rCC = GetCharClass( eLang );
     const lang::Locale rLocale = rCC.getLocale( );
 
@@ -697,7 +697,7 @@ sal_Bool SvxAutoCorrect::FnAddNonBrkSpace(
             xub_StrLen nSttWdPos = nEndPos;
             while( nSttWdPos && !IsWordDelim( rTxt.GetChar( --nSttWdPos )))
                 ;
-            
+
             // Check the presence of "://" in the word
             xub_StrLen nStrPos = rTxt.Search( String::CreateFromAscii( "://" ), nSttWdPos + 1 );
             if ( STRING_NOTFOUND == nStrPos && nEndPos > 0 )
@@ -705,7 +705,7 @@ sal_Bool SvxAutoCorrect::FnAddNonBrkSpace(
                 // Check the previous char
                 sal_Unicode cPrevChar = rTxt.GetChar( nEndPos - 1 );
                 if ( ( chars.indexOf( sal_Unicode( cPrevChar ) ) == -1 ) && cPrevChar != '\t' )
-                { 
+                {
                     // Remove any previous normal space
                     xub_StrLen nPos = nEndPos - 1;
                     while ( cPrevChar == ' ' || cPrevChar == CHAR_HARDBLANK )
@@ -714,13 +714,13 @@ sal_Bool SvxAutoCorrect::FnAddNonBrkSpace(
                         nPos--;
                         cPrevChar = rTxt.GetChar( nPos );
                     }
-    
+
                     if ( nPos != 0 )
                     {
                         nPos++;
                         if ( nEndPos - nPos > 0 )
                             rDoc.Delete( nPos, nEndPos );
-    
+
                         // Add the non-breaking space at the end pos
                         if ( bHasSpace )
                             rDoc.Insert( nPos, CHAR_HARDBLANK );
@@ -1225,7 +1225,7 @@ sal_uLong SvxAutoCorrect::AutoCorrect( SvxAutoCorrDoc& rDoc, const String& rTxt,
 	sal_uLong nRet = 0;
     bool bIsNextRun = bRunNext;
     bRunNext = false;  // if it was set, then it has to be turned off
-    
+
 	do{		                            // only for middle check loop !!
 		if( cChar )
 		{
@@ -1262,8 +1262,8 @@ sal_uLong SvxAutoCorrect::AutoCorrect( SvxAutoCorrDoc& rDoc, const String& rTxt,
 				rDoc.Insert( nInsPos, cChar );
 			else
 				rDoc.Replace( nInsPos, cChar );
-    
-            // Hardspaces autocorrection    
+
+            // Hardspaces autocorrection
             if ( IsAutoCorrFlag( AddNonBrkSpace ) )
             {
                 if ( NeedsHardspaceAutocorr( cChar ) &&
@@ -1333,7 +1333,7 @@ sal_uLong SvxAutoCorrect::AutoCorrect( SvxAutoCorrDoc& rDoc, const String& rTxt,
 		// no symbol characters
 		if( lcl_IsSymbolChar( rCC, rTxt, nCapLttrPos, nInsPos ))
 			break;
-            
+
 		if( IsAutoCorrFlag( Autocorrect ) )
 		{
 			const String* pPara = 0;
@@ -1421,7 +1421,7 @@ sal_uLong SvxAutoCorrect::AutoCorrect( SvxAutoCorrDoc& rDoc, const String& rTxt,
 
 	if( nRet )
 	{
-        const char* aHelpIds[] = 
+        const char* aHelpIds[] =
         {
             HID_AUTOCORR_HELP_WORD,
             HID_AUTOCORR_HELP_SENT,

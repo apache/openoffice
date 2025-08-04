@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -37,7 +37,7 @@ OOXMLParserState::OOXMLParserState() :
     mbInSectionGroup(false),
     mbInParagraphGroup(false),
     mbInCharacterGroup(false),
-    mbLastParagraphInSection(false), 
+    mbLastParagraphInSection(false),
     mbForwardEvents(true),
     mnContexts(0),
     mnHandle(0),
@@ -87,7 +87,7 @@ bool OOXMLParserState::isInCharacterGroup() const
 void OOXMLParserState::setInCharacterGroup(bool bInCharacterGroup)
 {
     mbInCharacterGroup = bInCharacterGroup;
-} 
+}
 
 void OOXMLParserState::setForwardEvents(bool bForwardEvents)
 {
@@ -161,24 +161,24 @@ void OOXMLParserState::setCellProperties
     if (mCellProps.size() > 0)
     {
         OOXMLPropertySet::Pointer_t & rCellProps = mCellProps.top();
-        
+
         if (rCellProps.get() == NULL)
             rCellProps = pProps;
-        else 
+        else
             rCellProps->add(pProps);
     }
 }
-    
+
 void OOXMLParserState::setRowProperties
 (OOXMLPropertySet::Pointer_t pProps)
 {
     if (mRowProps.size() > 0)
     {
         OOXMLPropertySet::Pointer_t & rRowProps = mRowProps.top();
-        
+
         if (rRowProps.get() == NULL)
             rRowProps = pProps;
-        else 
+        else
             rRowProps->add(pProps);
     }
 }
@@ -188,7 +188,7 @@ void OOXMLParserState::resolveCellProperties(Stream & rStream)
     if (mCellProps.size() > 0)
     {
         OOXMLPropertySet::Pointer_t & rCellProps = mCellProps.top();
-        
+
         if (rCellProps.get() != NULL)
         {
             rStream.props(rCellProps);
@@ -202,7 +202,7 @@ void OOXMLParserState::resolveRowProperties(Stream & rStream)
     if (mRowProps.size() > 0)
     {
         OOXMLPropertySet::Pointer_t & rRowProps = mRowProps.top();
-        
+
         if (rRowProps.get() != NULL)
         {
             rStream.props(rRowProps);
@@ -216,7 +216,7 @@ void OOXMLParserState::resolveTableProperties(Stream & rStream)
     if (mTableProps.size() > 0)
     {
         OOXMLPropertySet::Pointer_t & rTableProps = mTableProps.top();
-        
+
         if (rTableProps.get() != NULL)
         {
             rStream.props(rTableProps);
@@ -231,7 +231,7 @@ void OOXMLParserState::setTableProperties
     if (mTableProps.size() > 0)
     {
         OOXMLPropertySet::Pointer_t & rTableProps = mTableProps.top();
-        if (rTableProps.get() == NULL) 
+        if (rTableProps.get() == NULL)
             rTableProps = pProps;
         else
             rTableProps->add(pProps);
@@ -243,12 +243,12 @@ void OOXMLParserState::startTable()
     OOXMLPropertySet::Pointer_t pCellProps;
     OOXMLPropertySet::Pointer_t pRowProps;
     OOXMLPropertySet::Pointer_t pTableProps;
-    
+
     mCellProps.push(pCellProps);
     mRowProps.push(pRowProps);
     mTableProps.push(pTableProps);
 }
-    
+
 void OOXMLParserState::endTable()
 {
     mCellProps.pop();
@@ -276,7 +276,7 @@ XMLTag::Pointer_t OOXMLParserState::toTag() const
 {
     XMLTag::Pointer_t pTag(new XMLTag("parserstate"));
 
-    string sTmp; 
+    string sTmp;
 
     if (isInSectionGroup())
         sTmp += "s";
@@ -292,7 +292,7 @@ XMLTag::Pointer_t OOXMLParserState::toTag() const
         sTmp += "c";
     else
         sTmp += "-";
-    
+
     if (isForwardEvents())
         sTmp += "f";
     else

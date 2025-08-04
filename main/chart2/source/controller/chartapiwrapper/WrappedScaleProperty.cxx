@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -158,7 +158,7 @@ void WrappedScaleProperty::setPropertyValue( tScaleProperty eScaleProperty, cons
     bool bSetScaleData     = false;
 
     chart2::ScaleData aScaleData( xAxis->getScaleData() );
-    
+
     sal_Bool bBool = false;
     switch( eScaleProperty )
     {
@@ -315,7 +315,7 @@ void WrappedScaleProperty::setPropertyValue( tScaleProperty eScaleProperty, cons
             if( rOuterValue >>= bBool )
             {
                 bool bWasLogarithm = AxisHelper::isLogarithmic( aScaleData.Scaling );
-                
+
                 // safe comparison between sal_Bool and bool
                 if( (!bBool) != (!bWasLogarithm) )
                 {
@@ -356,17 +356,17 @@ Any WrappedScaleProperty::getPropertyValue( tScaleProperty eScaleProperty, const
                         throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
     Any aRet( m_aOuterValue );
-    
+
     Reference< chart2::XAxis > xAxis( xInnerPropertySet, uno::UNO_QUERY );
     OSL_ENSURE(xAxis.is(),"need an XAxis");
     if(!xAxis.is())
         return aRet;
-    
+
     chart2::ScaleData aScaleData( xAxis->getScaleData() );
-    
+
     ExplicitScaleData aExplicitScale;
     ExplicitIncrementData aExplicitIncrement;
-        
+
     switch( eScaleProperty )
     {
         case SCALE_PROP_MAX:
@@ -391,7 +391,7 @@ Any WrappedScaleProperty::getPropertyValue( tScaleProperty eScaleProperty, const
             }
             break;
         }
-        
+
         case SCALE_PROP_STEPMAIN:
         {
             aRet = aScaleData.IncrementData.Distance;
@@ -445,7 +445,7 @@ Any WrappedScaleProperty::getPropertyValue( tScaleProperty eScaleProperty, const
             {
                 m_spChart2ModelContact->getExplicitValuesForAxis(
                     xAxis, aExplicitScale, aExplicitIncrement );
-                
+
                 if( !aExplicitIncrement.SubIncrements.empty() &&
                      aExplicitIncrement.SubIncrements[ 0 ].IntervalCount > 0 )
                 {

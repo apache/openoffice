@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -65,7 +65,7 @@ ScVbaColorFormat::setColorFormat( sal_Int16 _ntype )
 }
 
 // Attribute
-sal_Int32 SAL_CALL 
+sal_Int32 SAL_CALL
 ScVbaColorFormat::getRGB() throw (uno::RuntimeException)
 {
     sal_Int32 nRGB = 0;
@@ -91,7 +91,7 @@ ScVbaColorFormat::getRGB() throw (uno::RuntimeException)
     return nRGB;
 }
 
-void SAL_CALL 
+void SAL_CALL
 ScVbaColorFormat::setRGB( sal_Int32 _rgb ) throw (uno::RuntimeException)
 {
     sal_Int32 nRGB = XLRGBToOORGB( _rgb );
@@ -117,17 +117,17 @@ ScVbaColorFormat::setRGB( sal_Int32 _rgb ) throw (uno::RuntimeException)
             m_pFillFormat->setForeColorAndInternalStyle(nRGB);
         }
         break;
-    default:    
+    default:
         throw uno::RuntimeException( rtl::OUString::createFromAscii("Second parameter of ColorFormat is wrong."), uno::Reference< uno::XInterface >() );
     }
 }
 
-sal_Int32 SAL_CALL 
+sal_Int32 SAL_CALL
 ScVbaColorFormat::getSchemeColor() throw (uno::RuntimeException)
 {
     sal_Int32 nColor = getRGB();
     // #TODO I guess the number of elements is determined by the correct scheme
-    // the implementation here seems to be a rehash of color index ( which seems to be a 
+    // the implementation here seems to be a rehash of color index ( which seems to be a
     // different thing ) - I would guess we need to know/import etc. the correct color scheme
     // or at least find out a little more
     sal_Int32 i = 0;
@@ -139,8 +139,8 @@ ScVbaColorFormat::getSchemeColor() throw (uno::RuntimeException)
 
     if( i == 56 ) // this is most likely an error condition
         --i;
-    return i; 
-    // #TODO figure out what craziness is this, 
+    return i;
+    // #TODO figure out what craziness is this,
     // the 56 colors seems incorrect, as in default XL ( 2003 ) there are 80 colors
 /*
     if( i == 56 )
@@ -152,7 +152,7 @@ ScVbaColorFormat::getSchemeColor() throw (uno::RuntimeException)
 */
 }
 
-void SAL_CALL 
+void SAL_CALL
 ScVbaColorFormat::setSchemeColor( sal_Int32 _schemecolor ) throw (uno::RuntimeException)
 {
     // the table is 0 based

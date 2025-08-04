@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,7 +51,7 @@
 #include "svx/svxgrahicitem.hxx"
 //#include "linectrl.hrc"
 #include <sfx2/request.hxx>
-#include "svx/ofaitem.hxx" 
+#include "svx/ofaitem.hxx"
 #include <svx/svdobj.hxx>
 #include <svx/svdview.hxx>
 #include <svx/svdmodel.hxx>
@@ -122,12 +122,12 @@ SvxLineTabPage::SvxLineTabPage
     aCbxSynchronize     ( this, CUI_RES( CBX_SYNCHRONIZE ) ),
     aFLSeparator        ( this, CUI_RES( FL_SEPARATOR ) ),
     aCtlPreview         ( this, CUI_RES( CTL_PREVIEW ) ),
-    
+
     // #116827#
     maFLEdgeStyle       ( this, CUI_RES( FL_EDGE_STYLE ) ),
     maFTEdgeStyle       ( this, CUI_RES( FT_EDGE_STYLE ) ),
     maLBEdgeStyle       ( this, CUI_RES( LB_EDGE_STYLE ) ),
-    
+
     // LineCaps
     maFTCapStyle        ( this, CUI_RES( FT_CAP_STYLE ) ),
     maLBCapStyle        ( this, CUI_RES( LB_CAP_STYLE ) ),
@@ -137,7 +137,7 @@ SvxLineTabPage::SvxLineTabPage
     nNumMenuGalleryItems(0),
     nSymbolType(SVX_SYMBOLTYPE_UNKNOWN), //unbekannt bzw. unchanged
     pSymbolAttr(NULL),
-    //#58425# Symbole auf einer Linie (z.B. StarChart) 
+    //#58425# Symbole auf einer Linie (z.B. StarChart)
     aFlSymbol           ( this, CUI_RES(FL_SYMBOL_FORMAT)),
     aSymbolMB           ( this, CUI_RES(MB_SYMBOL_BITMAP)),
     aSymbolWidthFT      ( this, CUI_RES(FT_SYMBOL_WIDTH)),
@@ -145,7 +145,7 @@ SvxLineTabPage::SvxLineTabPage
 	aSymbolHeightFT		( this, CUI_RES(FT_SYMBOL_HEIGHT)),
 	aSymbolHeightMF		( this, CUI_RES(MF_SYMBOL_HEIGHT)),
     aSymbolRatioCB      ( this, CUI_RES(CB_SYMBOL_RATIO)),
-    
+
     bLastWidthModified(sal_False),
     aSymbolLastSize(Size(0,0)),
     bSymbols(sal_False),
@@ -174,9 +174,9 @@ SvxLineTabPage::SvxLineTabPage
 	aTsbCenterEnd.SetAccessibleName(String(CUI_RES( STR_CENTER_END ) ) );
 
 	FreeResource();
-	
+
 	aCtlPreview.SetAccessibleName(String(CUI_RES(STR_EXAMPLE)));
-	
+
 	// diese Page braucht ExchangeSupport
 	SetExchangeSupport();
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -847,7 +847,7 @@ void ScAutoFmtPreview::Init()
     maArray.SetUseDiagDoubleClipping( false );
 	CalcCellArray( sal_False );
 	CalcLineMap();
-    
+
     TypeId aType(TYPE(ScDocShell));
     ScDocShell* pDocShell = (ScDocShell*)SfxObjectShell::GetFirst(&aType);
     SfxViewFrame* pFrame = SfxViewFrame::GetFirst( pDocShell );
@@ -959,8 +959,8 @@ void ScAutoFmtPreview::DoPaint( const Rectangle& /* rRect */ )
     DrawRect( aRect );
 
     Point aPos( (aWndSize.Width() - aPrvSize.Width()) / 2, (aWndSize.Height() - aPrvSize.Height()) / 2 );
-    if (Application::GetSettings().GetLayoutRTL()) 
-       aPos.X() = -aPos.X(); 
+    if (Application::GetSettings().GetLayoutRTL())
+       aPos.X() = -aPos.X();
     DrawOutDev( aPos, aWndSize, Point(), aWndSize, aVD );
 
     aVD.SetDrawMode( nOldDrawMode );

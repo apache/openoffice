@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -78,7 +78,7 @@ bool VPolarAngleAxis::createTextShapes_ForAngleAxis(
     PropertyMapper::getTextLabelMultiPropertyLists( xProps, aPropNames, aPropValues, false );
     LabelPositionHelper::doDynamicFontResize( aPropValues, aPropNames, xProps
         , rAxisLabelProperties.m_aFontReferenceSize );
-    
+
     uno::Any* pColorAny = PropertyMapper::getValuePointer(aPropValues,aPropNames,C2U("CharColor"));
     sal_Int32 nColor = Color( COL_AUTO ).GetColor();
     if(pColorAny)
@@ -90,7 +90,7 @@ bool VPolarAngleAxis::createTextShapes_ForAngleAxis(
 
     //TickInfo* pLastVisibleNeighbourTickInfo = NULL;
     sal_Int32 nTick = 0;
-    
+
     for( TickInfo* pTickInfo = rTickIter.firstInfo()
         ; pTickInfo
         ; pTickInfo = rTickIter.nextInfo(), nTick++ )
@@ -127,7 +127,7 @@ bool VPolarAngleAxis::createTextShapes_ForAngleAxis(
                 *pColorAny = uno::makeAny(bHasExtraColor?nExtraColor:nColor);
 
             double fLogicAngle = pTickInfo->getUnscaledTickValue();
-        
+
             LabelAlignment eLabelAlignment(LABEL_ALIGN_CENTER);
             PolarLabelPositionHelper aPolarLabelPositionHelper(m_pPosHelper,nDimensionCount,xTarget,&aShapeFactory);
             sal_Int32 nScreenValueOffsetInRadiusDirection = m_aAxisLabelProperties.m_aMaximumSpaceForLabels.Height/15;
@@ -137,7 +137,7 @@ bool VPolarAngleAxis::createTextShapes_ForAngleAxis(
 
             // #i78696# use mathematically correct rotation now
             const double fRotationAnglePi(rAxisLabelProperties.fRotationAngleDegree * (F_PI / -180.0));
-        
+
             uno::Any aATransformation = ShapeFactory::makeTransformation( aAnchorScreenPosition2D, fRotationAnglePi );
             rtl::OUString aStackedLabel = ShapeFactory::getStackedString( aLabel, rAxisLabelProperties.bStackCharacters );
 
@@ -207,7 +207,7 @@ void VPolarAngleAxis::createShapes()
 {
     if( !prepareShapeCreation() )
         return;
-    
+
     double fLogicRadius = m_pPosHelper->getOuterLogicRadius();
     double fLogicZ      = 1.0;//as defined
 

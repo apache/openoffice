@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -371,7 +371,7 @@ Any SAL_CALL TransferableHelper::getTransferData( const DataFlavor& rFlavor ) th
 			    GetData( aSubstFlavor );
                 bDone = maAny.hasValue();
             }
-            else if(SotExchange::GetFormatDataFlavor(SOT_FORMATSTR_ID_BMP, aSubstFlavor ) 
+            else if(SotExchange::GetFormatDataFlavor(SOT_FORMATSTR_ID_BMP, aSubstFlavor )
                 && TransferableDataHelper::IsEqual( aSubstFlavor, rFlavor )
                 && SotExchange::GetFormatDataFlavor(FORMAT_BITMAP, aSubstFlavor))
             {
@@ -427,7 +427,7 @@ Any SAL_CALL TransferableHelper::getTransferData( const DataFlavor& rFlavor ) th
 					    delete pSrcStm;
 
 					    SvMemoryStream	aDstStm( 65535, 65535 );
-						
+
 						// taking wmf without file header
 						if ( ConvertGDIMetaFileToWMF( aMtf, aDstStm, NULL, sal_False ) )
                         {
@@ -1218,11 +1218,11 @@ void TransferableHelper::StartDrag( Window* pWindow, sal_Int8 nDnDSourceActions,
 
 		// On Mac OS X we are forced to execute 'startDrag' synchronously
 		// contrary to the XDragSource interface specification because
-		// we can receive drag events from the system only in the main 
+		// we can receive drag events from the system only in the main
 		// thread
 #if !defined(QUARTZ)
 		const sal_uInt32 nRef = Application::ReleaseSolarMutex();
-#endif 
+#endif
 
 		try
 		{
@@ -1241,7 +1241,7 @@ void TransferableHelper::StartDrag( Window* pWindow, sal_Int8 nDnDSourceActions,
 		// See above for the reason of this define
 #if !defined(QUARTZ)
 		Application::AcquireSolarMutex( nRef );
-#endif 
+#endif
 	}
 }
 
@@ -1891,7 +1891,7 @@ sal_Bool TransferableDataHelper::GetBitmapEx( const DataFlavor& rFlavor, BitmapE
            and nYPelsPerMeter of the bitmap fileheader isn't including the correct value.
            Due to this reason the following code assumes that bitmaps with a logical size
            greater than 50 cm aren't having the correct mapmode set.
-        
+
            The following code should be removed if DDBs and DIBs are supported via clipboard
            properly.
         */
@@ -2016,7 +2016,7 @@ sal_Bool TransferableDataHelper::GetGraphic( const ::com::sun::star::datatransfe
 	DataFlavor	aFlavor;
 	sal_Bool	bRet = sal_False;
 
-    if(SotExchange::GetFormatDataFlavor(SOT_FORMATSTR_ID_PNG, aFlavor) && 
+    if(SotExchange::GetFormatDataFlavor(SOT_FORMATSTR_ID_PNG, aFlavor) &&
         TransferableDataHelper::IsEqual(aFlavor, rFlavor))
 	{
         // try to get PNG first

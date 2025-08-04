@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -633,7 +633,7 @@ const SfxPoolItem* SfxItemSet::Put( const SfxPoolItem& rItem, sal_uInt16 nWhich 
 			SFX_ASSERT( !_pPool->IsItemFlag(nWhich, SFX_ITEM_POOLABLE) ||
 						rItem.ISA(SfxSetItem) || **ppFnd == rItem,
 						nWhich, "putted Item unequal" );
-			
+
 			InvalidateHashKey();	//i120575
 			return *ppFnd;
 		}
@@ -1148,7 +1148,7 @@ void SfxItemSet::Intersect( const SfxItemSet& rSet )
 			pItem = aIter.NextItem();
 		}
 	}
-	InvalidateHashKey();	//i120575	
+	InvalidateHashKey();	//i120575
 }
 
 // -----------------------------------------------------------------------
@@ -1221,7 +1221,7 @@ void SfxItemSet::Differentiate( const SfxItemSet& rSet )
 		}
 
 	}
-	InvalidateHashKey();	//i120575	
+	InvalidateHashKey();	//i120575
 }
 
 // -----------------------------------------------------------------------
@@ -1425,7 +1425,7 @@ void SfxItemSet::MergeValues( const SfxItemSet& rSet, sal_Bool bIgnoreDefaults )
 				MergeValue( *pItem, bIgnoreDefaults );
 		}
 	}
-	InvalidateHashKey();	//i120575	
+	InvalidateHashKey();	//i120575
 }
 
 // -----------------------------------------------------------------------
@@ -1448,7 +1448,7 @@ void SfxItemSet::MergeValue( const SfxPoolItem& rAttr, sal_Bool bIgnoreDefaults 
 		ppFnd += *(pPtr+1) - *pPtr + 1;
 		pPtr += 2;
 	}
-	InvalidateHashKey();	//i120575	
+	InvalidateHashKey();	//i120575
 }
 
 // -----------------------------------------------------------------------
@@ -1483,7 +1483,7 @@ void SfxItemSet::InvalidateItem( sal_uInt16 nWhich )
 		ppFnd += *(pPtr+1) - *pPtr + 1;
 		pPtr += 2;
 	}
-	InvalidateHashKey();	//i120575	
+	InvalidateHashKey();	//i120575
 }
 
 // -----------------------------------------------------------------------
@@ -1645,7 +1645,7 @@ SvStream &SfxItemSet::Load
 		}
 	}
 
-	
+
 	InvalidateHashKey();	//i120575
 	return rStream;
 }
@@ -2026,7 +2026,7 @@ const SfxPoolItem* SfxAllItemSet::Put( const SfxPoolItem& rItem, sal_uInt16 nWhi
 
     if ( bIncrementCount )
         ++_nCount;
-	
+
 	InvalidateHashKey();	//i120575
 
 	return &rNew;
@@ -2163,20 +2163,20 @@ sal_Bool SfxItemSet::QuickCompare( SfxItemSet & rCmp)
 		 Count() != rCmp.Count() )
 		return sal_False;
 
-	if ((0==Count())&&(0==rCmp.Count())) 
+	if ((0==Count())&&(0==rCmp.Count()))
 		return sal_True;
 
-	if (!IsValidateHashKey()) 
+	if (!IsValidateHashKey())
 	{
 		UpdateHashKey();
 	}
-	if (!rCmp.IsValidateHashKey()) 
+	if (!rCmp.IsValidateHashKey())
 	{
 		rCmp.UpdateHashKey();
 	}
 
 	//improved performance here, in most cases, the hashkey is not equal.
-	if (GetHashKey() != rCmp.GetHashKey()) 
+	if (GetHashKey() != rCmp.GetHashKey())
 		return sal_False;
 
 	if ( 0 == memcmp( _aItems, rCmp._aItems,  TotalCount() * sizeof(_aItems[0]) ) )

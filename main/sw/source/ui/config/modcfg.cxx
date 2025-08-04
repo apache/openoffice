@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -512,7 +512,7 @@ enum InsertConfigProp
     INS_PROP_CAP_OBJECT_OLEMISC_POSITION,               //91
     INS_PROP_CAP_OBJECT_OLEMISC_CHARACTERSTYLE,         //92
     INS_PROP_CAP_OBJECT_OLEMISC_APPLYATTRIBUTES        //93
-};    
+};
 const Sequence<OUString>& SwInsertConfig::GetPropertyNames()
 {
 	static Sequence<OUString> aNames;
@@ -615,7 +615,7 @@ const Sequence<OUString>& SwInsertConfig::GetPropertyNames()
             "Caption/OfficeObject/OLEMisc/Settings/Position",               //91
             "Caption/OfficeObject/OLEMisc/Settings/CharacterStyle",         //92
             "Caption/OfficeObject/OLEMisc/Settings/ApplyAttributes"         //93
-        };                                                                  
+        };
         const int nCount = INS_PROP_CAP_OBJECT_OLEMISC_APPLYATTRIBUTES + 1;
         const int nWebCount = INS_PROP_TABLE_BORDER + 1;
 		aNames.realloc(nCount);
@@ -739,7 +739,7 @@ void SwInsertConfig::Commit()
 			}
 			break;//"Table/Split",
             case INS_PROP_CAP_AUTOMATIC: pValues[nProp].setValue(&bInsWithCaption, rType);break;//"Caption/Automatic",
-            case INS_PROP_CAP_CAPTIONORDERNUMBERINGFIRST: 
+            case INS_PROP_CAP_CAPTIONORDERNUMBERINGFIRST:
                 pValues[nProp] <<= bCaptionOrderNumberingFirst;
             break;//"Caption/CaptionOrderNumberingFirst"
 
@@ -900,7 +900,7 @@ void lcl_ReadOpt(InsCaptionOpt& rOpt, const Any* pValues, sal_Int32 nProp, sal_I
 		break;//CaptionText",
         case 5:
 		{
-			OUString sTemp; 
+			OUString sTemp;
 			if(pValues[nProp] >>= sTemp)
 				rOpt.SetSeparator(sTemp);
 		}

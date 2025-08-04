@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include <sax/fshelper.hxx>
@@ -90,7 +90,7 @@ void FastSerializerHelper::endElement(const char* elementName)
 {
 	mpSerializer->endUnknownElement(::rtl::OUString(), ::rtl::OUString::createFromAscii(elementName));
 }
-	
+
 void FastSerializerHelper::startElementV(sal_Int32 elementTokenId, va_list args)
 {
 	FastAttributeList* pAttrList = new FastAttributeList( mxTokenHandler );
@@ -120,7 +120,7 @@ void FastSerializerHelper::singleElementV(sal_Int32 elementTokenId, va_list args
 			break;
 		const char* pValue = va_arg(args, const char*);
 		if 	(pValue)
-			pAttrList->add(nName, pValue);	
+			pAttrList->add(nName, pValue);
 	}
 
 	const com::sun::star::uno::Reference<com::sun::star::xml::sax::XFastAttributeList> xAttrList(pAttrList);
@@ -140,7 +140,7 @@ void FastSerializerHelper::startElementV(sal_Int32 elementTokenId, XFastAttribut
 
 void FastSerializerHelper::singleElement(const char* elementName, XFastAttributeListRef xAttrList)
 {
-	mpSerializer->singleUnknownElement(::rtl::OUString(), ::rtl::OUString::createFromAscii(elementName), xAttrList);	
+	mpSerializer->singleUnknownElement(::rtl::OUString(), ::rtl::OUString::createFromAscii(elementName), xAttrList);
 }
 
 void FastSerializerHelper::singleElementV(sal_Int32 elementTokenId, XFastAttributeListRef xAttrList)
@@ -214,6 +214,6 @@ FastAttributeList * FastSerializerHelper::createAttrList()
 {
 	return new FastAttributeList( mxTokenHandler );
 }
-	
+
 
 }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -836,7 +836,7 @@ bool ScTable::ShrinkToUsedDataArea( bool& o_bShrunk, SCCOL& rStartCol, SCROW& rS
             o_bShrunk = true;
     } while( bChanged );
 
-    return rStartCol != rEndCol || (bColumnsOnly ? 
+    return rStartCol != rEndCol || (bColumnsOnly ?
             !aCol[rStartCol].IsEmptyBlock( rStartRow, rEndRow) :
             (rStartRow != rEndRow || aCol[rStartCol].HasDataAt( rStartRow)));
 }
@@ -992,7 +992,7 @@ void ScTable::GetNextPos( SCCOL& rCol, SCROW& rRow, SCsCOL nMovX, SCsROW nMovY,
 	{
 		sal_Bool bUp = ( nMovY < 0 );
 		nRow = rMark.GetNextMarked( nCol, nRow, bUp );
-        while ( VALIDROW(nRow) && 
+        while ( VALIDROW(nRow) &&
                 (RowHidden(nRow) || pDocument->HasAttrib(nCol, nRow, nTab, nCol, nRow, nTab, HASATTR_OVERLAPPED)) )
 		{
 			//	#53697# ausgeblendete ueberspringen (s.o.)
@@ -1022,7 +1022,7 @@ void ScTable::GetNextPos( SCCOL& rCol, SCROW& rRow, SCsCOL nMovX, SCsROW nMovY,
 			else if (nRow > MAXROW)
 				nRow = 0;
 			nRow = rMark.GetNextMarked( nCol, nRow, bUp );
-            while ( VALIDROW(nRow) && 
+            while ( VALIDROW(nRow) &&
                     (RowHidden(nRow) || pDocument->HasAttrib(nCol, nRow, nTab, nCol, nRow, nTab, HASATTR_OVERLAPPED)) )
 			{
 				//	#53697# ausgeblendete ueberspringen (s.o.)
@@ -1642,7 +1642,7 @@ ScTable::VisibleDataCellIterator::VisibleDataCellIterator(ScFlatBoolRowSegments&
     mrRowSegs(rRowSegs),
     mrColumn(rColumn),
     mpCell(NULL),
-    mnCurRow(ROW_NOT_FOUND), 
+    mnCurRow(ROW_NOT_FOUND),
     mnUBound(ROW_NOT_FOUND)
 {
 }
@@ -1654,20 +1654,20 @@ ScTable::VisibleDataCellIterator::~VisibleDataCellIterator()
 ScBaseCell* ScTable::VisibleDataCellIterator::reset(SCROW nRow)
 {
     if (nRow > MAXROW)
-    {    
+    {
         mnCurRow = ROW_NOT_FOUND;
         return NULL;
     }
 
     ScFlatBoolRowSegments::RangeData aData;
     if (!mrRowSegs.getRangeData(nRow, aData))
-    {    
+    {
         mnCurRow = ROW_NOT_FOUND;
         return NULL;
     }
 
     if (!aData.mbValue)
-    {    
+    {
         // specified row is visible.  Take it.
         mnCurRow = nRow;
         mnUBound = aData.mnRow2;
@@ -1679,7 +1679,7 @@ ScBaseCell* ScTable::VisibleDataCellIterator::reset(SCROW nRow)
         mnCurRow = aData.mnRow2 + 1;
         mnUBound = mnCurRow; // get range data on the next iteration.
         if (mnCurRow > MAXROW)
-        {    
+        {
             // Make sure the row doesn't exceed our current limit.
             mnCurRow = ROW_NOT_FOUND;
             return NULL;
@@ -1729,7 +1729,7 @@ ScBaseCell* ScTable::VisibleDataCellIterator::next()
             return mpCell;
     }
     mnCurRow = ROW_NOT_FOUND;
-    return NULL;    
+    return NULL;
 }
 
 SCROW ScTable::VisibleDataCellIterator::getRow() const

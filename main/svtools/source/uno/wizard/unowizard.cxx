@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -248,7 +248,7 @@ namespace svt { namespace uno
     {
         return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.comp.svtools.uno.Wizard" ) );
     }
-    
+
     //--------------------------------------------------------------------
     Sequence< ::rtl::OUString > SAL_CALL Wizard::getSupportedServiceNames_static() throw(RuntimeException)
     {
@@ -262,7 +262,7 @@ namespace svt { namespace uno
     {
         return getImplementationName_static();
     }
-    
+
     //--------------------------------------------------------------------
     Sequence< ::rtl::OUString > SAL_CALL Wizard::getSupportedServiceNames() throw(RuntimeException)
     {
@@ -334,7 +334,7 @@ namespace svt { namespace uno
 
         pWizardImpl->enableButtons( lcl_convertWizardButtonToWZB( i_WizardButton ), i_Enable );
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     void SAL_CALL Wizard::setDefaultButton( ::sal_Int16 i_WizardButton ) throw (RuntimeException)
     {
@@ -346,7 +346,7 @@ namespace svt { namespace uno
 
         pWizardImpl->defaultButton( lcl_convertWizardButtonToWZB( i_WizardButton ) );
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     sal_Bool SAL_CALL Wizard::travelNext(  ) throw (RuntimeException)
     {
@@ -358,7 +358,7 @@ namespace svt { namespace uno
 
         return pWizardImpl->travelNext();
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     sal_Bool SAL_CALL Wizard::travelPrevious(  ) throw (RuntimeException)
     {
@@ -370,7 +370,7 @@ namespace svt { namespace uno
 
         return pWizardImpl->travelPrevious();
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     void SAL_CALL Wizard::enablePage( ::sal_Int16 i_PageID, ::sal_Bool i_Enable ) throw (NoSuchElementException, InvalidStateException, RuntimeException)
     {
@@ -412,7 +412,7 @@ namespace svt { namespace uno
 
         return pWizardImpl->advanceTo( i_PageId );
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     ::sal_Bool SAL_CALL Wizard::goBackTo( ::sal_Int16 i_PageId ) throw (RuntimeException)
     {
@@ -424,7 +424,7 @@ namespace svt { namespace uno
 
         return pWizardImpl->goBackTo( i_PageId );
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     Reference< XWizardPage > SAL_CALL Wizard::getCurrentPage(  ) throw (RuntimeException)
     {
@@ -458,7 +458,7 @@ namespace svt { namespace uno
         // simply disambiguate
         Wizard_Base::OGenericUnoDialog::setTitle( i_Title );
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     ::sal_Int16 SAL_CALL Wizard::execute(  ) throw (RuntimeException)
     {

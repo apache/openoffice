@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -100,13 +100,13 @@ void PageInfo::addShape( ShapeInfo* pShapeInfo )
 // -----------------------------------------------------------------------------
 
 FlashExporter::FlashExporter(
-    const Reference< XMultiServiceFactory > &rxMSF, 
+    const Reference< XMultiServiceFactory > &rxMSF,
 
     // #56084# variables for selection export
     const Reference< XShapes >& rxSelectedShapes,
     const Reference< XDrawPage >& rxSelectedDrawPage,
 
-    sal_Int32 nJPEGCompressMode, 
+    sal_Int32 nJPEGCompressMode,
     sal_Bool bExportOLEAsJPEG)
 :   mxMSF(rxMSF),
 
@@ -252,7 +252,7 @@ sal_Bool FlashExporter::exportAll( Reference< XComponent > xDoc, Reference< XOut
 
 		// AS: If the background is different than the previous slide,
 		//  we have to remove the old one and place the new one.
-		if (nPage) 
+		if (nPage)
 		{
 			if (maPagesMap[nPage].mnBackgroundID != maPagesMap[nPage-1].mnBackgroundID)
 			{
@@ -476,7 +476,7 @@ sal_uInt16 FlashExporter::exportDrawPageBackground(sal_uInt16 nPage, Reference< 
 		//  the previous index.
 		if (gPrivateCache.end() != it)
 		{
-			maPagesMap[nPage].mnBackgroundID = 
+			maPagesMap[nPage].mnBackgroundID =
 				maPagesMap[it->second].mnBackgroundID;
 			return it->second;
 		}
@@ -498,7 +498,7 @@ sal_uInt16 FlashExporter::exportDrawPageBackground(sal_uInt16 nPage, Reference< 
 
 	if (gMasterCache.end() != it)
 	{
-		maPagesMap[nPage].mnBackgroundID = 
+		maPagesMap[nPage].mnBackgroundID =
 			maPagesMap[it->second].mnBackgroundID;
 
 		return it->second;                // AS: Yes, so don't export it again.
@@ -523,14 +523,14 @@ sal_uInt16 FlashExporter::exportMasterPageObjects(sal_uInt16 nPage, Reference< X
 
 	if (gObjectCache.end() != it)
 	{
-		maPagesMap[nPage].mnObjectsID = 
+		maPagesMap[nPage].mnObjectsID =
 			maPagesMap[it->second].mnObjectsID;
 
 		return it->second;                // AS: Yes, so don't export it again.
 	}
 
 	gObjectCache[shapesum] = nPage;
-	
+
 	sal_uInt16 rObjectsID = mpWriter->startSprite();
 	exportDrawPageContents( xMasterPage, false, true );
 	mpWriter->endSprite();
@@ -571,7 +571,7 @@ void FlashExporter::exportShapes( const Reference< XShapes >& xShapes, bool bStr
 		{
 			Reference< XShapes > xShapes2( xShape, UNO_QUERY );
 			if( xShapes2.is() && xShape->getShapeType().equalsAsciiL(RTL_CONSTASCII_STRINGPARAM("com.sun.star.drawing.GroupShape")))
-				// export the contents of group shapes, but we only ever stream at the top 
+				// export the contents of group shapes, but we only ever stream at the top
 				// recursive level anyway, so pass false for streaming.
 				exportShapes( xShapes2, false, bMaster);
 			else
@@ -711,7 +711,7 @@ bool FlashExporter::getMetaFile( Reference< XComponent >&xComponent, GDIMetaFile
 
 	utl::TempFile aFile;
 	aFile.EnableKillingFile();
-	
+
 	Sequence< PropertyValue > aFilterData(bExportAsJPEG ? 3 : 2);
 	aFilterData[0].Name = OUString( RTL_CONSTASCII_USTRINGPARAM("Version") );
 	aFilterData[0].Value <<= (sal_Int32)6000;
@@ -782,7 +782,7 @@ bool FlashExporter::getMetaFile( Reference< XComponent >&xComponent, GDIMetaFile
         if(usesClipActions(rMtf))
         {
             // #121267# It is necessary to prepare the metafile since the export does *not* support
-            // clip regions. This tooling method clips the geometry content of the metafile internally 
+            // clip regions. This tooling method clips the geometry content of the metafile internally
             // against it's own clip regions, so that the export is safe to ignore clip regions
             clipMetafileContentAgainstOwnRegions(rMtf);
         }

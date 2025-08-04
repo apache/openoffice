@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -71,9 +71,9 @@ static rtl::OUString GetLabelFromCommandURL( const rtl::OUString& rCommandURL, c
     xUICommandDescription = xTmpNameAccess;
     if ( !xUICommandDescription.is() )
     {
-        xUICommandDescription = uno::Reference< container::XNameAccess >( 
-                                    xServiceManager->createInstance( 
-                                        rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( 
+        xUICommandDescription = uno::Reference< container::XNameAccess >(
+                                    xServiceManager->createInstance(
+                                        rtl::OUString( RTL_CONSTASCII_USTRINGPARAM(
                                             "com.sun.star.frame.UICommandDescription" ))),
                                     uno::UNO_QUERY );
         xTmpNameAccess = xUICommandDescription;
@@ -82,14 +82,14 @@ static rtl::OUString GetLabelFromCommandURL( const rtl::OUString& rCommandURL, c
     xModuleManager = xTmpModuleMgr;
     if ( !xModuleManager.is() )
     {
-        xModuleManager = uno::Reference< ::com::sun::star::frame::XModuleManager >( 
-            xServiceManager->createInstance( 
-                rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( 
+        xModuleManager = uno::Reference< ::com::sun::star::frame::XModuleManager >(
+            xServiceManager->createInstance(
+                rtl::OUString( RTL_CONSTASCII_USTRINGPARAM(
                     "com.sun.star.frame.ModuleManager" ))),
             uno::UNO_QUERY_THROW );
         xTmpModuleMgr = xModuleManager;
     }
-    
+
     // Retrieve label from UI command description service
 	try
     {
@@ -179,7 +179,7 @@ sal_Bool SfxRecordingFloatWrapper_Impl::QueryClose()
 	return bRet;
 }
 
-SfxRecordingFloat_Impl::SfxRecordingFloat_Impl( 
+SfxRecordingFloat_Impl::SfxRecordingFloat_Impl(
     SfxBindings* pBind ,
 	SfxChildWindow* pChildWin ,
     Window* pParent )
@@ -199,16 +199,16 @@ SfxRecordingFloat_Impl::SfxRecordingFloat_Impl(
     Size aTbxSize = aTbx.CalcWindowSizePixel();
     aTbx.SetPosSizePixel( Point(), aTbxSize );
 	SetOutputSizePixel( aTbxSize );
-    
+
     // create a generic toolbox controller for our internal toolbox
-    svt::GenericToolboxController* pController = new svt::GenericToolboxController( 
+    svt::GenericToolboxController* pController = new svt::GenericToolboxController(
                                                     ::comphelper::getProcessServiceFactory(),
-                                                    xFrame, 
+                                                    xFrame,
                                                     &aTbx,
                                                     SID_STOP_RECORDING,
                                                     aCommandStr );
-    xStopRecTbxCtrl = uno::Reference< frame::XToolbarController >( 
-                            static_cast< cppu::OWeakObject* >( pController ), 
+    xStopRecTbxCtrl = uno::Reference< frame::XToolbarController >(
+                            static_cast< cppu::OWeakObject* >( pController ),
                         uno::UNO_QUERY );
     uno::Reference< util::XUpdatable > xUpdate( xStopRecTbxCtrl, uno::UNO_QUERY );
     if ( xUpdate.is() )

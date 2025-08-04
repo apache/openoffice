@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -62,10 +62,10 @@ static DWORD WINAPI GetUserDomainW_WINDOWS( LPWSTR lpBuffer, DWORD nSize )
 	DWORD	dwResult = 0;
 
 
-	if ( ERROR_SUCCESS  == RegOpenKeyEx( 
-		HKEY_LOCAL_MACHINE, 
-		TEXT("Network\\Logon"), 
-		0, KEY_READ, &hkeyLogon ) ) 
+	if ( ERROR_SUCCESS  == RegOpenKeyEx(
+		HKEY_LOCAL_MACHINE,
+		TEXT("Network\\Logon"),
+		0, KEY_READ, &hkeyLogon ) )
 	{
 		DWORD	dwLogon = 0;
 		DWORD	dwLogonSize = sizeof(dwLogon);
@@ -76,9 +76,9 @@ static DWORD WINAPI GetUserDomainW_WINDOWS( LPWSTR lpBuffer, DWORD nSize )
 		{
 			HKEY	hkeyNetworkProvider;
 
-			if ( ERROR_SUCCESS  == RegOpenKeyEx( 
-				HKEY_LOCAL_MACHINE, 
-				TEXT("SYSTEM\\CurrentControlSet\\Services\\MSNP32\\NetworkProvider"), 
+			if ( ERROR_SUCCESS  == RegOpenKeyEx(
+				HKEY_LOCAL_MACHINE,
+				TEXT("SYSTEM\\CurrentControlSet\\Services\\MSNP32\\NetworkProvider"),
 				0, KEY_READ, &hkeyNetworkProvider ) )
 			{
 				DWORD	dwBufferSize = nSize;
@@ -120,7 +120,7 @@ static rtl::OUString GetUserDomain()
 		nResult = GetUserDomainW_WINDOWS( reinterpret_cast<LPWSTR>(aBuffer), sizeof( aBuffer ) );
 	else
 		nResult = GetUserDomainW_NT( reinterpret_cast<LPWSTR>(aBuffer), sizeof( aBuffer ) );
-	
+
 	if ( nResult > 0 )
 		return rtl::OUString( aBuffer );
 	else
@@ -164,37 +164,37 @@ rtl::OUString NetworkDomain::GetNTDomainName()
 static rtl_uString *getDomainName()
 {
 	/* Initialize and assume failure */
-	rtl_uString	*ustrDomainName = NULL; 
-	
+	rtl_uString	*ustrDomainName = NULL;
+
 	char	szBuffer[256];
-	
+
 	long	nCopied = sizeof(szBuffer);
 	char	*pBuffer = szBuffer;
 	long	nBufSize;
-	
+
 	do
 	{
 		nBufSize = nCopied;
-		nCopied = sysinfo( SI_SRPC_DOMAIN, pBuffer, nBufSize );	
-	
+		nCopied = sysinfo( SI_SRPC_DOMAIN, pBuffer, nBufSize );
+
 		/*	If nCopied is greater than buffersize we need to allocate
 			a buffer with suitable size */
-		
+
 		if ( nCopied > nBufSize )
 			pBuffer = (char *)alloca( nCopied );
-		
+
 	} while ( nCopied > nBufSize );
 
 	if ( -1 != nCopied 	)
 	{
-		rtl_string2UString( 
+		rtl_string2UString(
 			&ustrDomainName,
-			pBuffer, 
-			nCopied - 1, 
-			osl_getThreadTextEncoding(), 
+			pBuffer,
+			nCopied - 1,
+			osl_getThreadTextEncoding(),
 			OSTRING_TO_OUSTRING_CVTFLAGS );
 	}
-	
+
 	return ustrDomainName;
 }
 
@@ -210,12 +210,12 @@ static rtl_uString *getDomainName()
 static rtl_uString *getDomainName()
 {
 	/* Initialize and assume failure */
-	rtl_uString	*ustrDomainName = NULL; 
-	
+	rtl_uString	*ustrDomainName = NULL;
+
 	char	*pBuffer;
 	int		result;
 	size_t	nBufSize = 0;
-	
+
 	do
 	{
 		nBufSize += 256; /* Increase buffer size by steps of 256 bytes */
@@ -225,21 +225,21 @@ static rtl_uString *getDomainName()
 		is set to EINVAL. This only applies to libc. With glibc the name
 		is truncated. */
 	} while ( -1 == result && EINVAL == errno );
-	
+
 	if ( 0 == result )
 	{
-		rtl_string2UString( 
+		rtl_string2UString(
 			&ustrDomainName,
-			pBuffer, 
-			strlen( pBuffer ), 
-			osl_getThreadTextEncoding(), 
+			pBuffer,
+			strlen( pBuffer ),
+			osl_getThreadTextEncoding(),
 			OSTRING_TO_OUSTRING_CVTFLAGS );
 	}
-	
+
 	return ustrDomainName;
 }
 
-#else /* LINUX */ 
+#else /* LINUX */
 
 //_________________________________________________________________________________________________________________
 //	Other Unix
@@ -258,7 +258,7 @@ static rtl_uString *getDomainName()
 
 rtl::OUString NetworkDomain::GetYPDomainName()
 {
-	rtl_uString* pResult = getDomainName(); 
+	rtl_uString* pResult = getDomainName();
 	if ( pResult )
 		return rtl::OUString( pResult );
 	else

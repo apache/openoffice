@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -68,7 +68,7 @@ BSTR PromptNew(long hWnd)
 
      // Initialize COM
      ::CoInitialize( NULL );
-     
+
     // Instantiate DataLinks object.
   	hr = CoCreateInstance(
 					CLSID_DataLinks,				//clsid -- Data Links UI
@@ -83,7 +83,7 @@ BSTR PromptNew(long hWnd)
         dlPrompt->Release( );
         return connstr;
     }
-    
+
     dlPrompt->put_hWnd(hWnd);
     if( FAILED( hr ) )
     {
@@ -95,7 +95,7 @@ BSTR PromptNew(long hWnd)
     // Prompt for connection information.
     hr = dlPrompt->PromptNew((IDispatch **)&piTmpConnection);
 
-    if( FAILED( hr ) || !piTmpConnection ) 
+    if( FAILED( hr ) || !piTmpConnection )
     {
         dlPrompt->Release( );
         return connstr;
@@ -125,7 +125,7 @@ BSTR PromptEdit(long hWnd,BSTR connstr)
      // Initialize COM
      ::CoInitialize( NULL );
 
-     hr = CoCreateInstance(CLSID_CADOConnection, 
+     hr = CoCreateInstance(CLSID_CADOConnection,
                 NULL,
                 CLSCTX_INPROC_SERVER,
                 IID_IADOConnection,
@@ -136,14 +136,14 @@ BSTR PromptEdit(long hWnd,BSTR connstr)
         return connstr;
     }
 
-     
+
     hr = piTmpConnection->put_ConnectionString(connstr);
     if( FAILED( hr ) )
     {
         piTmpConnection->Release( );
         return connstr;
     }
-    
+
     // Instantiate DataLinks object.
   	hr = CoCreateInstance(
 					CLSID_DataLinks,				//clsid -- Data Links UI
@@ -158,7 +158,7 @@ BSTR PromptEdit(long hWnd,BSTR connstr)
         dlPrompt->Release( );
         return connstr;
     }
-    
+
     dlPrompt->put_hWnd(hWnd);
     if( FAILED( hr ) )
     {
@@ -168,7 +168,7 @@ BSTR PromptEdit(long hWnd,BSTR connstr)
     }
 
     VARIANT_BOOL pbSuccess;
-        
+
     // Prompt for connection information.
     hr = dlPrompt->PromptEdit((IDispatch **)&piTmpConnection,&pbSuccess);
     if( SUCCEEDED( hr ) && sal_False == pbSuccess ) //if user press cancel then sal_False == pbSuccess
@@ -178,7 +178,7 @@ BSTR PromptEdit(long hWnd,BSTR connstr)
         return connstr;
     }
 
-    if( FAILED( hr ) ) 
+    if( FAILED( hr ) )
     {
         // Prompt for new connection information.
         piTmpConnection->Release( );

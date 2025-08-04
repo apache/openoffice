@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -445,7 +445,7 @@ sal_Bool SdTpOptionsMisc::FillItemSet( SfxItemSet& rAttrs )
         aOptsItem.GetOptionsMisc().SetStartWithPresenterScreen( aCbxStartWithPresenterScreen.IsChecked() );
         aOptsItem.GetOptionsMisc().SetSummationOfParagraphs( aCbxCompatibility.IsChecked() );
         aOptsItem.GetOptionsMisc().SetPrinterIndependentLayout (
-            aCbxUsePrinterMetrics.IsChecked() 
+            aCbxUsePrinterMetrics.IsChecked()
             ? ::com::sun::star::document::PrinterIndependentLayout::DISABLED
             : ::com::sun::star::document::PrinterIndependentLayout::ENABLED);
 		rAttrs.Put( aOptsItem );
@@ -621,7 +621,7 @@ void SdTpOptionsMisc::SetImpressMode (void)
         - aCbxQuickEdit.GetPosPixel().Y();
 
     // Put both "Text objects" check boxes side by side.
-    lcl_MoveWin (aCbxPickThrough, 
+    lcl_MoveWin (aCbxPickThrough,
         nDialogWidth/2 - aCbxPickThrough.GetPosPixel().X(),
         -nLineHeight);
 
@@ -835,7 +835,7 @@ void SdTpOptionsMisc::UpdateCompatibilityControls (void)
                     break;
                 }
             }
-            
+
         }
         while (false); // One 'loop'.
     }
@@ -844,7 +844,7 @@ void SdTpOptionsMisc::UpdateCompatibilityControls (void)
         // When there is an exception then simply use the default value of
         // bIsEnabled and disable the controls.
     }
-    
+
     aTxtCompatibility.Enable (bIsEnabled);
 	aCbxCompatibility.Enable(bIsEnabled);
     aCbxUsePrinterMetrics.Enable (bIsEnabled);

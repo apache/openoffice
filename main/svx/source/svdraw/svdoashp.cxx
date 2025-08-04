@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1793,7 +1793,7 @@ void SdrObjCustomShape::NbcSetLogicRect( const Rectangle& rRect )
 	ImpJustifyRect( aRect );
 	InvalidateRenderGeometry();
 
-    // #115391# 
+    // #115391#
     AdaptTextMinSize();
 
 	SetRectsDirty();
@@ -1870,7 +1870,7 @@ void SdrObjCustomShape::NbcResize( const Point& rRef, const Fraction& rxFact, co
 		if ( ( ( yFact.GetNumerator() < 0 ) && ( yFact.GetDenominator() > 0 ) ) ||
 			( ( yFact.GetNumerator() > 0 ) && ( yFact.GetDenominator() < 0 ) ) )
 		{
-			SetMirroredY( IsMirroredY() == sal_False );	
+			SetMirroredY( IsMirroredY() == sal_False );
 		}
 	}
 
@@ -1974,13 +1974,13 @@ void SdrObjCustomShape::NbcMirror( const Point& rRef1, const Point& rRef2 )
             // update fObjectRotation
             long nTextObjRotation = aGeo.nDrehWink;
             double fWink = nTextObjRotation;
-            
+
             fWink /= 100.0;
-            
+
             bool bSingleFlip = (IsMirroredX()!= IsMirroredY());
-            
+
             fObjectRotation = fmod( bSingleFlip ? -fWink : fWink, 360.0 );
-            
+
             if ( fObjectRotation < 0 )
             {
                 fObjectRotation = 360.0 + fObjectRotation;
@@ -2024,7 +2024,7 @@ void SdrObjCustomShape::NbcShear( const Point& rRef, long nWink, double tn, FAST
 SdrGluePoint SdrObjCustomShape::GetVertexGluePoint(sal_uInt16 nPosNum) const
 {
 	sal_Int32 nWdt = ImpGetLineWdt(); // #i25616# ((XLineWidthItem&)(GetObjectItem(XATTR_LINEWIDTH))).GetValue();
-	
+
 	// #i25616#
 	if(!LineIsOutsideGeometry())
 	{
@@ -2602,7 +2602,7 @@ void SdrObjCustomShape::SetVerticalWriting( sal_Bool bVertical )
 			if ( pOutlinerParaObject )
 				pOutlinerParaObject->SetVertical(bVertical);
 			SetObjectItemSet( aNewSet );
-	
+
 			// restore object size
 			SetSnapRect(aObjectRect);
 		}
@@ -2824,7 +2824,7 @@ FASTBOOL SdrObjCustomShape::AdjustTextFrameWidthAndHeight(FASTBOOL bHgt, FASTBOO
 
 		// taking care of handles that should not been changed
 		std::vector< SdrCustomShapeInteraction > aInteractionHandles( GetInteractionHandles( this ) );
-	
+
 //		SendRepaintBroadcast();
 		aRect = aNewTextRect;
 		SetRectsDirty();
@@ -3364,7 +3364,7 @@ void SdrObjCustomShape::TRSetBaseGeometry(const basegfx::B2DHomMatrix& rMatrix, 
 	{
 		GeoStat aGeoStat;
 
-        // #i78696# 
+        // #i78696#
         // fRotate is mathematically correct, but aGeoStat.nDrehWink is
         // mirrored -> mirror value here
 		aGeoStat.nDrehWink = NormAngle360(FRound(-fRotate / F_PI18000));

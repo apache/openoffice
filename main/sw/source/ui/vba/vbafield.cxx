@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,14 +42,14 @@ SwVbaField::SwVbaField(  const uno::Reference< ooo::vba::XHelperInterface >& rPa
 }
 
 // XHelperInterface
-rtl::OUString& 
+rtl::OUString&
 SwVbaField::getServiceImplName()
 {
     static rtl::OUString sImplName( RTL_CONSTASCII_USTRINGPARAM("SwVbaField") );
-    return sImplName;    
+    return sImplName;
 }
 
-uno::Sequence<rtl::OUString> 
+uno::Sequence<rtl::OUString>
 SwVbaField::getServiceNames()
 {
     static uno::Sequence< rtl::OUString > aServiceNames;
@@ -272,7 +272,7 @@ uno::Any lcl_createField( const uno::Reference< XHelperInterface >& xParent, con
 typedef ::cppu::WeakImplHelper1< css::container::XEnumeration > FieldEnumeration_BASE;
 typedef ::cppu::WeakImplHelper2< container::XIndexAccess, container::XEnumerationAccess > FieldCollectionHelper_BASE;
 
-class FieldEnumeration : public FieldEnumeration_BASE 
+class FieldEnumeration : public FieldEnumeration_BASE
 {
     uno::Reference< XHelperInterface > mxParent;
     uno::Reference< uno::XComponentContext > mxContext;
@@ -282,8 +282,8 @@ public:
     FieldEnumeration(  const uno::Reference< XHelperInterface >& xParent, const uno::Reference< uno::XComponentContext > & xContext, const uno::Reference< frame::XModel >& xModel, const uno::Reference< container::XEnumeration >& xEnumeration ) : mxParent( xParent ), mxContext( xContext ), mxModel( xModel ), mxEnumeration( xEnumeration )
     {
     }
-    virtual ::sal_Bool SAL_CALL hasMoreElements(  ) throw (uno::RuntimeException) 
-    { 
+    virtual ::sal_Bool SAL_CALL hasMoreElements(  ) throw (uno::RuntimeException)
+    {
         return mxEnumeration->hasMoreElements();
     }
     virtual uno::Any SAL_CALL nextElement(  ) throw (container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException)
@@ -311,15 +311,15 @@ public:
 	virtual ::sal_Bool SAL_CALL hasElements(  ) throw (uno::RuntimeException) { return mxEnumerationAccess->hasElements(); }
 	// XIndexAccess
 	virtual ::sal_Int32 SAL_CALL getCount(  ) throw (uno::RuntimeException)
-    { 
+    {
         uno::Reference< container::XEnumeration > xEnumeration =  mxEnumerationAccess->createEnumeration();
         sal_Int32 nCount = 0;
         while( xEnumeration->hasMoreElements() )
         {
             ++nCount;
             xEnumeration->nextElement();
-        }    
-        return nCount;    
+        }
+        return nCount;
     }
 	virtual uno::Any SAL_CALL getByIndex( ::sal_Int32 Index ) throw (lang::IndexOutOfBoundsException, lang::WrappedTargetException, uno::RuntimeException )
 	{
@@ -345,13 +345,13 @@ public:
         return uno::Reference< container::XEnumeration >( new FieldEnumeration( mxParent, mxContext, mxModel, xEnumeration ) );
     }
 };
- 
+
 SwVbaFields::SwVbaFields( const uno::Reference< XHelperInterface >& xParent, const uno::Reference< uno::XComponentContext > & xContext, const uno::Reference< frame::XModel >& xModel ) : SwVbaFields_BASE( xParent, xContext , uno::Reference< container::XIndexAccess >( new FieldCollectionHelper( xParent, xContext, xModel ) ) ), mxModel( xModel )
 {
     mxMSF.set( mxModel, uno::UNO_QUERY_THROW );
 }
 
-uno::Reference< word::XField > SAL_CALL 
+uno::Reference< word::XField > SAL_CALL
 SwVbaFields::Add( const css::uno::Reference< ::ooo::vba::word::XRange >& Range, const css::uno::Any& Type, const css::uno::Any& Text, const css::uno::Any& /*PreserveFormatting*/ ) throw (css::uno::RuntimeException)
 {
     sal_Int32 nType = word::WdFieldType::wdFieldEmpty;
@@ -415,19 +415,19 @@ uno::Reference< text::XTextField > SwVbaFields::Create_Field_FileName( const rtl
     return xTextField;
 }
 
-uno::Reference< container::XEnumeration > SAL_CALL 
+uno::Reference< container::XEnumeration > SAL_CALL
 SwVbaFields::createEnumeration() throw (uno::RuntimeException)
 {
     uno::Reference< container::XEnumerationAccess > xEnumerationAccess( m_xIndexAccess, uno::UNO_QUERY_THROW );
     return xEnumerationAccess->createEnumeration();
 }
 
-// ScVbaCollectionBaseImpl      
-uno::Any 
+// ScVbaCollectionBaseImpl
+uno::Any
 SwVbaFields::createCollectionObject( const uno::Any& aSource )
 {
     return lcl_createField( mxParent, mxContext, mxModel, aSource );
-} 
+}
 
 sal_Int32 SAL_CALL SwVbaFields::Update() throw (uno::RuntimeException)
 {
@@ -446,21 +446,21 @@ sal_Int32 SAL_CALL SwVbaFields::Update() throw (uno::RuntimeException)
 }
 
 // XHelperInterface
-rtl::OUString& 
+rtl::OUString&
 SwVbaFields::getServiceImplName()
 {
     static rtl::OUString sImplName( RTL_CONSTASCII_USTRINGPARAM("SwVbaFields") );
-    return sImplName;    
+    return sImplName;
 }
 
 // XEnumerationAccess
-uno::Type SAL_CALL 
+uno::Type SAL_CALL
 SwVbaFields::getElementType() throw (uno::RuntimeException)
 {
-    return  word::XField::static_type(0); 
+    return  word::XField::static_type(0);
 }
 
-uno::Sequence<rtl::OUString> 
+uno::Sequence<rtl::OUString>
 SwVbaFields::getServiceNames()
 {
     static uno::Sequence< rtl::OUString > aServiceNames;

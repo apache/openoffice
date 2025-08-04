@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -69,7 +69,7 @@ sal_Bool _TAC_Composible[3][5] = {
 /* Mode 2 */    {sal_True,	sal_True,	sal_False,  	sal_False,  	sal_True}  // STRICT = 2
 };
 
-static sal_Bool SAL_CALL check(sal_Unicode ch1, sal_Unicode ch2, sal_Int16 inputCheckMode) 
+static sal_Bool SAL_CALL check(sal_Unicode ch1, sal_Unicode ch2, sal_Int16 inputCheckMode)
 {
 	sal_Int16  composible_class;
 	switch (_TAC_celltype_inputcheck[getCharType(ch1)][getCharType(ch2)]) {
@@ -83,18 +83,18 @@ static sal_Bool SAL_CALL check(sal_Unicode ch1, sal_Unicode ch2, sal_Int16 input
 	return (_TAC_Composible[inputCheckMode][composible_class]);
 }
 
-sal_Bool SAL_CALL 
+sal_Bool SAL_CALL
 InputSequenceChecker_th::checkInputSequence(const OUString& Text, sal_Int32 nStartPos,
 	sal_Unicode inputChar, sal_Int16 inputCheckMode) throw(com::sun::star::uno::RuntimeException)
 {
     return check(Text[nStartPos], inputChar, inputCheckMode);
 }
 
-sal_Int32 SAL_CALL 
-InputSequenceChecker_th::correctInputSequence(OUString& Text, 
+sal_Int32 SAL_CALL
+InputSequenceChecker_th::correctInputSequence(OUString& Text,
                                             sal_Int32       nStartPos,
-                                            sal_Unicode     inputChar, 
-                                            sal_Int16       inputCheckMode) 
+                                            sal_Unicode     inputChar,
+                                            sal_Int16       inputCheckMode)
   throw(com::sun::star::uno::RuntimeException)
 {
 /* 9 rules for input sequence correction, see issue i42661 for detail,
@@ -123,10 +123,10 @@ http://www.openoffice.org/issues/show_bug.cgi?id=42661
     else if (nStartPos > 0 && getCharType(Text[nStartPos-1]) == CT_CONS) {
         sal_uInt16 t1=getCharType(Text[nStartPos]), t2=getCharType(inputChar);
         if ( (CT_ABV(t1) && CT_ABV(t2)) || // 1.
-                (t1==CT_TONE && t2==CT_TONE) )// 2. 
+                (t1==CT_TONE && t2==CT_TONE) )// 2.
             Text = Text.replaceAt(nStartPos, 1, OUString(inputChar));
-        else if ( (t1==CT_TONE && CT_ABV(t2)) ||  // 5. 
-                (t1==CT_FV1 && t2==CT_TONE) ||  // 6. 
+        else if ( (t1==CT_TONE && CT_ABV(t2)) ||  // 5.
+                (t1==CT_FV1 && t2==CT_TONE) ||  // 6.
                 (Text[nStartPos]==0x0E4C && CT_ABV1(t2)) ) // 8.
             Text = Text.replaceAt(nStartPos++, 0, OUString(inputChar));
         else
@@ -135,8 +135,8 @@ http://www.openoffice.org/issues/show_bug.cgi?id=42661
         sal_uInt16 t1=getCharType(Text[nStartPos-1]), t2=getCharType(Text[nStartPos]), t3=getCharType(inputChar);
         if (CT_ABV(t1) && t2==CT_TONE && t3==CT_TONE) // 3.
             Text = Text.replaceAt(nStartPos, 1, OUString(inputChar));
-        else if ( (CT_ABV(t1) && t2==CT_TONE && CT_ABV(t3)) || // 4. 
-                (t1==CT_TONE && t2==CT_FV1 && t3==CT_TONE) || // 7. 
+        else if ( (CT_ABV(t1) && t2==CT_TONE && CT_ABV(t3)) || // 4.
+                (t1==CT_TONE && t2==CT_FV1 && t3==CT_TONE) || // 7.
                 (CT_ABV1(t1) && Text[nStartPos]==0x0E4C && CT_ABV1(t3)) ) // 9.
             Text = Text.replaceAt(nStartPos-1, 1, OUString(inputChar));
         else

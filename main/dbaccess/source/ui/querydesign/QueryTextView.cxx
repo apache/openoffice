@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,16 +50,16 @@
 #ifndef DBACCESS_SHARED_DBUSTRINGS_HRC
 #include "dbustrings.hrc"
 #endif
-#ifndef _TOOLKIT_HELPER_VCLUNOHELPER_HXX_ 
+#ifndef _TOOLKIT_HELPER_VCLUNOHELPER_HXX_
 #include <toolkit/helper/vclunohelper.hxx>
 #endif
-#ifndef _SV_SPLIT_HXX 
+#ifndef _SV_SPLIT_HXX
 #include <vcl/split.hxx>
 #endif
-#ifndef _SV_SVAPP_HXX 
+#ifndef _SV_SVAPP_HXX
 #include <vcl/svapp.hxx>
 #endif
-#ifndef _COMPHELPER_TYPES_HXX_ 
+#ifndef _COMPHELPER_TYPES_HXX_
 #include <comphelper/types.hxx>
 #endif
 #ifndef DBAUI_QUERYDESIGNVIEW_HXX
@@ -92,7 +92,7 @@ OQueryTextView::~OQueryTextView()
 {
 	DBG_DTOR(OQueryTextView,NULL);
 	::std::auto_ptr<Window> aTemp(m_pEdit);
-	m_pEdit = NULL;	
+	m_pEdit = NULL;
 }
 // -----------------------------------------------------------------------------
 void OQueryTextView::GetFocus()

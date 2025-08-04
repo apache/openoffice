@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -47,7 +47,7 @@ using namespace com::sun::star::lang;
 using namespace com::sun::star::beans;
 using namespace com::sun::star::sdbc;
 
-MacabDatabaseMetaData::MacabDatabaseMetaData(MacabConnection* _pCon) 
+MacabDatabaseMetaData::MacabDatabaseMetaData(MacabConnection* _pCon)
 		: m_xConnection(_pCon),
 		  m_bUseCatalog(sal_True)
 {
@@ -865,17 +865,17 @@ Reference< XResultSet > SAL_CALL MacabDatabaseMetaData::getSchemas(  ) throw(SQL
     return new ODatabaseMetaDataResultSet( ODatabaseMetaDataResultSet::eSchemas );
 }
 // -------------------------------------------------------------------------
-Reference< XResultSet > SAL_CALL MacabDatabaseMetaData::getColumnPrivileges( 
-	const Any&, const ::rtl::OUString&, const ::rtl::OUString&, 
+Reference< XResultSet > SAL_CALL MacabDatabaseMetaData::getColumnPrivileges(
+	const Any&, const ::rtl::OUString&, const ::rtl::OUString&,
 	const ::rtl::OUString& ) throw(SQLException, RuntimeException)
 {
     return new ODatabaseMetaDataResultSet( ODatabaseMetaDataResultSet::eColumnPrivileges );
 }
 // -------------------------------------------------------------------------
-Reference< XResultSet > SAL_CALL MacabDatabaseMetaData::getColumns( 
+Reference< XResultSet > SAL_CALL MacabDatabaseMetaData::getColumns(
 	const Any&,
 	const ::rtl::OUString&,
-	const ::rtl::OUString& tableNamePattern, 
+	const ::rtl::OUString& tableNamePattern,
 	const ::rtl::OUString& columnNamePattern) throw(SQLException, RuntimeException)
 {
 	::connectivity::ODatabaseMetaDataResultSet* pResult = new ::connectivity::ODatabaseMetaDataResultSet(::connectivity::ODatabaseMetaDataResultSet::eColumns);
@@ -959,7 +959,7 @@ Reference< XResultSet > SAL_CALL MacabDatabaseMetaData::getColumns(
 	return xRef;
 }
 // -------------------------------------------------------------------------
-Reference< XResultSet > SAL_CALL MacabDatabaseMetaData::getTables( 
+Reference< XResultSet > SAL_CALL MacabDatabaseMetaData::getTables(
 	const Any&,
 	const ::rtl::OUString&,
 	const ::rtl::OUString&,
@@ -1002,7 +1002,7 @@ Reference< XResultSet > SAL_CALL MacabDatabaseMetaData::getTables(
 		::std::vector<MacabGroup *> xGroups = m_xConnection->getAddressBook()->getMacabGroups();
 		sal_Int32 i, nGroups;
 		nGroups = xGroups.size();
-		
+
 		aRow[0] = ODatabaseMetaDataResultSet::getEmptyValue();
 		aRow[1] = ODatabaseMetaDataResultSet::getEmptyValue();
 		aRow[2] = ODatabaseMetaDataResultSet::getEmptyValue();
@@ -1021,21 +1021,21 @@ Reference< XResultSet > SAL_CALL MacabDatabaseMetaData::getTables(
 	return xRef;
 }
 // -------------------------------------------------------------------------
-Reference< XResultSet > SAL_CALL MacabDatabaseMetaData::getProcedureColumns( 
-	const Any&, const ::rtl::OUString&, 
+Reference< XResultSet > SAL_CALL MacabDatabaseMetaData::getProcedureColumns(
+	const Any&, const ::rtl::OUString&,
 	const ::rtl::OUString&, const ::rtl::OUString& ) throw(SQLException, RuntimeException)
 {
     return new ODatabaseMetaDataResultSet( ODatabaseMetaDataResultSet::eProcedureColumns );
 }
 // -------------------------------------------------------------------------
-Reference< XResultSet > SAL_CALL MacabDatabaseMetaData::getProcedures( 
-	const Any&, const ::rtl::OUString&, 
+Reference< XResultSet > SAL_CALL MacabDatabaseMetaData::getProcedures(
+	const Any&, const ::rtl::OUString&,
 	const ::rtl::OUString& ) throw(SQLException, RuntimeException)
 {
     return new ODatabaseMetaDataResultSet( ODatabaseMetaDataResultSet::eProcedures );
 }
 // -------------------------------------------------------------------------
-Reference< XResultSet > SAL_CALL MacabDatabaseMetaData::getVersionColumns( 
+Reference< XResultSet > SAL_CALL MacabDatabaseMetaData::getVersionColumns(
 	const Any&, const ::rtl::OUString&, const ::rtl::OUString& table ) throw(SQLException, RuntimeException)
 {
     return new ODatabaseMetaDataResultSet( ODatabaseMetaDataResultSet::eVersionColumns );
@@ -1068,47 +1068,47 @@ Reference< XResultSet > SAL_CALL MacabDatabaseMetaData::getVersionColumns(
 	return xRef;
 }
 // -------------------------------------------------------------------------
-Reference< XResultSet > SAL_CALL MacabDatabaseMetaData::getExportedKeys( 
+Reference< XResultSet > SAL_CALL MacabDatabaseMetaData::getExportedKeys(
 	const Any&, const ::rtl::OUString&, const ::rtl::OUString& ) throw(SQLException, RuntimeException)
 {
     return new ODatabaseMetaDataResultSet( ODatabaseMetaDataResultSet::eExportedKeys );
 }
 // -------------------------------------------------------------------------
-Reference< XResultSet > SAL_CALL MacabDatabaseMetaData::getImportedKeys( 
+Reference< XResultSet > SAL_CALL MacabDatabaseMetaData::getImportedKeys(
 	const Any&, const ::rtl::OUString&, const ::rtl::OUString& ) throw(SQLException, RuntimeException)
 {
     return new ODatabaseMetaDataResultSet( ODatabaseMetaDataResultSet::eImportedKeys );
 }
 // -------------------------------------------------------------------------
-Reference< XResultSet > SAL_CALL MacabDatabaseMetaData::getPrimaryKeys( 
+Reference< XResultSet > SAL_CALL MacabDatabaseMetaData::getPrimaryKeys(
 	const Any&, const ::rtl::OUString&, const ::rtl::OUString& ) throw(SQLException, RuntimeException)
 {
     return new ODatabaseMetaDataResultSet( ODatabaseMetaDataResultSet::ePrimaryKeys );
 }
 // -------------------------------------------------------------------------
-Reference< XResultSet > SAL_CALL MacabDatabaseMetaData::getIndexInfo( 
-	const Any&, const ::rtl::OUString&, const ::rtl::OUString&, 
+Reference< XResultSet > SAL_CALL MacabDatabaseMetaData::getIndexInfo(
+	const Any&, const ::rtl::OUString&, const ::rtl::OUString&,
 	sal_Bool, sal_Bool ) throw(SQLException, RuntimeException)
 {
     return new ODatabaseMetaDataResultSet( ODatabaseMetaDataResultSet::eIndexInfo );
 }
 // -------------------------------------------------------------------------
-Reference< XResultSet > SAL_CALL MacabDatabaseMetaData::getBestRowIdentifier( 
-	const Any&, const ::rtl::OUString&, const ::rtl::OUString&, sal_Int32, 
+Reference< XResultSet > SAL_CALL MacabDatabaseMetaData::getBestRowIdentifier(
+	const Any&, const ::rtl::OUString&, const ::rtl::OUString&, sal_Int32,
 	sal_Bool ) throw(SQLException, RuntimeException)
 {
     return new ODatabaseMetaDataResultSet( ODatabaseMetaDataResultSet::eBestRowIdentifier );
 }
 // -------------------------------------------------------------------------
-Reference< XResultSet > SAL_CALL MacabDatabaseMetaData::getTablePrivileges( 
+Reference< XResultSet > SAL_CALL MacabDatabaseMetaData::getTablePrivileges(
 	const Any&, const ::rtl::OUString&, const ::rtl::OUString& ) throw(SQLException, RuntimeException)
 {
     return new ODatabaseMetaDataResultSet( ODatabaseMetaDataResultSet::eTablePrivileges );
 }
 // -------------------------------------------------------------------------
-Reference< XResultSet > SAL_CALL MacabDatabaseMetaData::getCrossReference( 
-	const Any&, const ::rtl::OUString&, 
-	const ::rtl::OUString&, const Any&, 
+Reference< XResultSet > SAL_CALL MacabDatabaseMetaData::getCrossReference(
+	const Any&, const ::rtl::OUString&,
+	const ::rtl::OUString&, const Any&,
 	const ::rtl::OUString&, const ::rtl::OUString& ) throw(SQLException, RuntimeException)
 {
     return new ODatabaseMetaDataResultSet( ODatabaseMetaDataResultSet::eCrossReference );

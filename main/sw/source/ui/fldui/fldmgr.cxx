@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1220,7 +1220,7 @@ sal_Bool SwFldMgr::InsertFld(
                         pCurShell->GetFldType(0, RES_DBSETNUMBERFLD);
                     pFld = new SwDBSetNumberField( pTyp, aDBData, nFormatId);
                     bExp = sal_True;
-                    break;	
+                    break;
                 }
             }
             break;
@@ -1582,7 +1582,7 @@ void SwFldMgr::UpdateCurFld(sal_uLong nFormat,
 		}
 		break;
         case TYP_AUTHORITY :
-        {    
+        {
             //#i99069# changes to a bibliography field should change the field type
             SwAuthorityField* pAuthorityField = static_cast<SwAuthorityField*>(pTmpFld);
             SwAuthorityFieldType* pAuthorityType = static_cast<SwAuthorityFieldType*>(pType);
@@ -1595,10 +1595,10 @@ void SwFldMgr::UpdateCurFld(sal_uLong nFormat,
                 pType->UpdateFlds();
                 pSh->SetModified();
             }
-        
-            if( aTempEntry.GetAuthorField( AUTH_FIELD_IDENTIFIER ) == 
-                pAuthorityField->GetFieldText( AUTH_FIELD_IDENTIFIER ) ) 
-                bSetPar1 = sal_False; //otherwise it's a new or changed entry, the field needs to be updated    
+
+            if( aTempEntry.GetAuthorField( AUTH_FIELD_IDENTIFIER ) ==
+                pAuthorityField->GetFieldText( AUTH_FIELD_IDENTIFIER ) )
+                bSetPar1 = sal_False; //otherwise it's a new or changed entry, the field needs to be updated
             bSetPar2 = sal_False;
         }
         break;

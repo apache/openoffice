@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -64,7 +64,7 @@ void lcl_resolveCharEntities(OUString & aLocalString)
         if (ch)
         {
             aResult.append(aLocalString.copy(nStart,nEscapePos-nStart)).append(ch);
-            
+
             sal_Int32 nEscapeEnd=aLocalString.indexOf(';',nEscapePos);
             nStart = nEscapeEnd+1;
             nEscapePos=aLocalString.indexOf('&',nStart);
@@ -77,12 +77,12 @@ void lcl_resolveCharEntities(OUString & aLocalString)
     while ( nEscapePos > 0);
 
     aResult.append(aLocalString.copy(nStart));
-   
+
     aLocalString = aResult.makeStringAndClear();
 }
 
 //----------------------------------------------------------------------------
-sal_Bool splitLastFromConfigurationPath(OUString const& _sInPath, 
+sal_Bool splitLastFromConfigurationPath(OUString const& _sInPath,
                                         OUString& _rsOutPath,
                                         OUString& _rsLocalName)
 {
@@ -134,8 +134,8 @@ sal_Bool splitLastFromConfigurationPath(OUString const& _sInPath,
         nPos = _sInPath.lastIndexOf('/',nEnd);
         nStart = nPos + 1;
     }
-    OSL_ASSERT( -1 <= nPos && 
-                nPos < nStart && 
+    OSL_ASSERT( -1 <= nPos &&
+                nPos < nStart &&
                 nStart < nEnd &&
                 nEnd <= _sInPath.getLength() );
 
@@ -203,7 +203,7 @@ sal_Int32 lcl_findPrefixEnd(OUString const& _sNestedPath, OUString const& _sPref
 
     OSL_ENSURE(nPrefixLength == 0 || _sPrefixPath[nPrefixLength-1] != '/',
                 "Cannot handle slash-terminated prefix paths");
-        
+
     sal_Bool bIsPrefix;
     if (_sNestedPath.getLength() > nPrefixLength)
     {
@@ -219,19 +219,19 @@ sal_Int32 lcl_findPrefixEnd(OUString const& _sNestedPath, OUString const& _sPref
     {
         bIsPrefix = false;
     }
-    
+
     return bIsPrefix ? nPrefixLength : 0;
 }
 
 //----------------------------------------------------------------------------
-sal_Bool isPrefixOfConfigurationPath(OUString const& _sNestedPath, 
+sal_Bool isPrefixOfConfigurationPath(OUString const& _sNestedPath,
                                      OUString const& _sPrefixPath)
 {
     return _sPrefixPath.getLength() == 0 || lcl_findPrefixEnd(_sNestedPath,_sPrefixPath) != 0;
 }
 
 //----------------------------------------------------------------------------
-OUString dropPrefixFromConfigurationPath(OUString const& _sNestedPath, 
+OUString dropPrefixFromConfigurationPath(OUString const& _sNestedPath,
                                          OUString const& _sPrefixPath)
 {
     if ( sal_Int32 nPrefixEnd = lcl_findPrefixEnd(_sNestedPath,_sPrefixPath) )
@@ -275,7 +275,7 @@ OUString lcl_wrapName(const OUString& _sContent, const OUString& _sType)
         case sal_Unicode('\"'): aNormalized.appendAscii( RTL_CONSTASCII_STRINGPARAM("&quot;") ); break;
 
         default: aNormalized.append( *pCur );
-        }            
+        }
     }
 
     // suffix: closing quote and bracket

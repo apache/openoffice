@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -35,10 +35,10 @@
 #include <algorithm>
 #include <vector>
 
-static basegfx::B2VectorOrientation flipOrientation( 
+static basegfx::B2VectorOrientation flipOrientation(
     basegfx::B2VectorOrientation eOrient)
 {
-    return eOrient == basegfx::ORIENTATION_POSITIVE ? 
+    return eOrient == basegfx::ORIENTATION_POSITIVE ?
         basegfx::ORIENTATION_NEGATIVE : basegfx::ORIENTATION_POSITIVE;
 }
 
@@ -144,11 +144,11 @@ namespace basegfx
 
         void appendPolyRange(const ImplB2DPolyRange& rPolyRange)
         {
-            maRanges.insert(maRanges.end(), 
-                            rPolyRange.maRanges.begin(), 
+            maRanges.insert(maRanges.end(),
+                            rPolyRange.maRanges.begin(),
                             rPolyRange.maRanges.end());
-            maOrient.insert(maOrient.end(), 
-                            rPolyRange.maOrient.begin(), 
+            maOrient.insert(maOrient.end(),
+                            rPolyRange.maOrient.begin(),
                             rPolyRange.maOrient.end());
             updateBounds();
         }
@@ -208,7 +208,7 @@ namespace basegfx
                 return false;
 
             const std::vector<B2DRange>::const_iterator aEnd( maRanges.end() );
-            return std::find_if( maRanges.begin(), 
+            return std::find_if( maRanges.begin(),
                                  aEnd,
                                  boost::bind<bool>( boost::mem_fn( &B2DRange::overlaps ),
                                                     _1,
@@ -268,7 +268,7 @@ namespace basegfx
     B2DPolyRange::B2DPolyRange( const ElementType& rElem ) :
         mpImpl( ImplB2DPolyRange( rElem ) )
     {}
-    
+
     B2DPolyRange::B2DPolyRange( const B2DRange& rRange, B2VectorOrientation eOrient ) :
         mpImpl( ImplB2DPolyRange( rRange, eOrient ) )
     {}
@@ -375,7 +375,7 @@ namespace basegfx
     {
         return mpImpl->isInside(rTuple);
     }
-    
+
     bool B2DPolyRange::isInside( const B2DRange& rRange ) const
     {
         return mpImpl->isInside(rRange);

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -107,7 +107,7 @@ void getOwnUpdateInfos(
                 infos(getUpdateInformation(updateInformation, urls, id, anyError));
             if (anyError.hasValue())
                 out_errors.push_back(std::make_pair(i->second.extension, anyError));
-            
+
             for (sal_Int32 j = 0; j < infos.getLength(); ++j)
             {
                 dp_misc::DescriptionInfoset infoset(
@@ -116,7 +116,7 @@ void getOwnUpdateInfos(
                 if (!infoset.hasDescription())
                     continue;
                 boost::optional< OUString > id2(infoset.getIdentifier());
-                if (!id2) 
+                if (!id2)
                     continue;
                 OSL_ASSERT(*id2 == id);
                 if (*id2 == id)
@@ -149,7 +149,7 @@ void getDefaultUpdateInfos(
     Sequence< Reference< xml::dom::XElement > >
         infos(
             getUpdateInformation(
-                updateInformation, 
+                updateInformation,
                 Sequence< OUString >(&sDefaultURL, 1), OUString(), anyError));
     if (anyError.hasValue())
         out_errors.push_back(std::make_pair(Reference<deployment::XPackage>(), anyError));
@@ -210,14 +210,14 @@ bool onlyBundledExtensions(
                 onlyBundled = false;
                 break;
             }
-            
+
         }
     }
     else
     {
         const uno::Sequence< uno::Sequence< Reference<deployment::XPackage > > > seqAllExt =
             xExtMgr->getAllExtensions(Reference<task::XAbortChannel>(), Reference<ucb::XCommandEnvironment>());
-        
+
         for (int pos = seqAllExt.getLength(); pos --; )
         {
             if (!containsBundledOnly(seqAllExt[pos]))
@@ -275,7 +275,7 @@ UPDATE_SOURCE isUpdateUserExtension(
                 retVal = UPDATE_SOURCE_BUNDLED;
             else if (index == 3)
                 retVal = UPDATE_SOURCE_ONLINE;
-            
+
         }
         //No update for bundled extensions, they are updated only by the setup
         //else if (bundledVersion.getLength())
@@ -300,7 +300,7 @@ UPDATE_SOURCE isUpdateUserExtension(
                 retVal = UPDATE_SOURCE_ONLINE;
         }
     }
-        
+
     return retVal;
 }
 
@@ -313,7 +313,7 @@ UPDATE_SOURCE isUpdateSharedExtension(
     if (bReadOnlyShared)
         return UPDATE_SOURCE_NONE;
     UPDATE_SOURCE retVal = UPDATE_SOURCE_NONE;
-    
+
     if (sharedVersion.getLength())
     {
         int index = determineHighestVersion(
@@ -355,9 +355,9 @@ getExtensionWithHighestVersion(
         //greatest has a value
         if (! current.is())
             continue;
-        
+
         if (dp_misc::compareVersions(current->getVersion(), greatest->getVersion()) == dp_misc::GREATER)
-            greatest = current;   
+            greatest = current;
     }
     return greatest;
 }
@@ -370,7 +370,7 @@ extension(ext)
 
 
 UpdateInfoMap getOnlineUpdateInfos(
-    Reference<uno::XComponentContext> const &xContext, 
+    Reference<uno::XComponentContext> const &xContext,
     Reference<deployment::XExtensionManager> const & xExtMgr,
     Reference<deployment::XUpdateInformationProvider > const & updateInformation,
     std::vector<Reference<deployment::XPackage > > const * extensionList,
@@ -385,15 +385,15 @@ UpdateInfoMap getOnlineUpdateInfos(
     {
         const uno::Sequence< uno::Sequence< Reference<deployment::XPackage > > > seqAllExt =  xExtMgr->getAllExtensions(
             Reference<task::XAbortChannel>(), Reference<ucb::XCommandEnvironment>());
-        
+
         //fill the UpdateInfoMap. key = extension identifier, value = UpdateInfo
         for (int pos = seqAllExt.getLength(); pos --; )
         {
             uno::Sequence<Reference<deployment::XPackage> > const &   seqExt = seqAllExt[pos];
-            
+
             Reference<deployment::XPackage> extension = getExtensionWithHighestVersion(seqExt);
             OSL_ASSERT(extension.is());
-            
+
             std::pair<UpdateInfoMap::iterator, bool> insertRet = infoMap.insert(
                 UpdateInfoMap::value_type(
                     dp_misc::getIdentifier(extension), UpdateInfo(extension)));
@@ -409,7 +409,7 @@ UpdateInfoMap getOnlineUpdateInfos(
             std::pair<UpdateInfoMap::iterator, bool> insertRet = infoMap.insert(
                 UpdateInfoMap::value_type(
                     dp_misc::getIdentifier(*i), UpdateInfo(*i)));
-            OSL_ASSERT(insertRet.second == true);            
+            OSL_ASSERT(insertRet.second == true);
         }
     }
 
@@ -437,7 +437,7 @@ OUString getHighestVersion(
     case 3: return onlineVersion;
     default: OSL_ASSERT(0);
     }
-        
+
     return OUString();
 }
 } //namespace dp_misc

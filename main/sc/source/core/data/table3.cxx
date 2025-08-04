@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -426,7 +426,7 @@ void ScTable::SwapCol(SCCOL nCol1, SCCOL nCol2)
 				SetPattern(nCol1, nRow, *pPat2, sal_True);
 				SetPattern(nCol2, nRow, *pPat1, sal_True);
 				if( IsPooledItem( pPat1 ) ) pPat1->ReleaseRef();
-				
+
 			}
 		}
 	}
@@ -983,11 +983,11 @@ sal_Bool ScTable::ValidQuery(SCROW nRow, const ScQueryParam& rParam,
             else
                 nCellVal = GetValue( static_cast<SCCOL>(rEntry.nField), nRow );
 
-            /* NOTE: lcl_PrepareQuery() prepares a filter query such that if a 
-             * date+time format was queried rEntry.bQueryByDate is not set. In 
-             * case other queries wanted to use this mechanism they should do 
-             * the same, in other words only if rEntry.nVal is an integer value 
-             * rEntry.bQueryByDate should be true and the time fraction be 
+            /* NOTE: lcl_PrepareQuery() prepares a filter query such that if a
+             * date+time format was queried rEntry.bQueryByDate is not set. In
+             * case other queries wanted to use this mechanism they should do
+             * the same, in other words only if rEntry.nVal is an integer value
+             * rEntry.bQueryByDate should be true and the time fraction be
              * stripped here. */
             if (rEntry.bQueryByDate)
             {
@@ -996,15 +996,15 @@ sal_Bool ScTable::ValidQuery(SCROW nRow, const ScQueryParam& rParam,
                 if (pEntry)
                 {
                     short nNumFmtType = pEntry->GetType();
-                    /* NOTE: Omitting the check for absence of 
-                     * NUMBERFORMAT_TIME would include also date+time formatted 
-                     * values of the same day. That may be desired in some 
-                     * cases, querying all time values of a day, but confusing 
-                     * in other cases. A user can always setup a standard 
+                    /* NOTE: Omitting the check for absence of
+                     * NUMBERFORMAT_TIME would include also date+time formatted
+                     * values of the same day. That may be desired in some
+                     * cases, querying all time values of a day, but confusing
+                     * in other cases. A user can always setup a standard
                      * filter query for x >= date AND x < date+1 */
                     if ((nNumFmtType & NUMBERFORMAT_DATE) && !(nNumFmtType & NUMBERFORMAT_TIME))
                     {
-                        // The format is of date type.  Strip off the time 
+                        // The format is of date type.  Strip off the time
                         // element.
                         nCellVal = ::rtl::math::approxFloor(nCellVal);
                     }
@@ -1042,7 +1042,7 @@ sal_Bool ScTable::ValidQuery(SCROW nRow, const ScQueryParam& rParam,
 			}
 		}
         else if ( (rEntry.eOp == SC_EQUAL || rEntry.eOp == SC_NOT_EQUAL) ||
-                  (rEntry.eOp == SC_CONTAINS || rEntry.eOp == SC_DOES_NOT_CONTAIN || 
+                  (rEntry.eOp == SC_CONTAINS || rEntry.eOp == SC_DOES_NOT_CONTAIN ||
                    rEntry.eOp == SC_BEGINS_WITH || rEntry.eOp == SC_ENDS_WITH ||
                    rEntry.eOp == SC_DOES_NOT_BEGIN_WITH || rEntry.eOp == SC_DOES_NOT_END_WITH) ||
                 (rEntry.bQueryByString && (pCell ? pCell->HasStringData() :
@@ -1067,7 +1067,7 @@ sal_Bool ScTable::ValidQuery(SCROW nRow, const ScQueryParam& rParam,
                 GetInputString( static_cast<SCCOL>(rEntry.nField), nRow, aCellStr );
 
             sal_Bool bRealRegExp = (rParam.bRegExp && ((rEntry.eOp == SC_EQUAL)
-                || (rEntry.eOp == SC_NOT_EQUAL) || (rEntry.eOp == SC_CONTAINS) 
+                || (rEntry.eOp == SC_NOT_EQUAL) || (rEntry.eOp == SC_CONTAINS)
                 || (rEntry.eOp == SC_DOES_NOT_CONTAIN) || (rEntry.eOp == SC_BEGINS_WITH)
                 || (rEntry.eOp == SC_ENDS_WITH) || (rEntry.eOp == SC_DOES_NOT_BEGIN_WITH)
                 || (rEntry.eOp == SC_DOES_NOT_END_WITH)));
@@ -1078,7 +1078,7 @@ sal_Bool ScTable::ValidQuery(SCROW nRow, const ScQueryParam& rParam,
             {
 				xub_StrLen nStart = 0;
 				xub_StrLen nEnd   = aCellStr.Len();
-                
+
 				// from 614 on, nEnd is behind the found text
                 sal_Bool bMatch = sal_False;
                 if ( rEntry.eOp == SC_ENDS_WITH || rEntry.eOp == SC_DOES_NOT_END_WITH )
@@ -1087,7 +1087,7 @@ sal_Bool ScTable::ValidQuery(SCROW nRow, const ScQueryParam& rParam,
                     nStart = aCellStr.Len();
                     bMatch = (sal_Bool) rEntry.GetSearchTextPtr( rParam.bCaseSens )
                         ->SearchBkwrd( aCellStr, &nStart, &nEnd );
-                } 
+                }
                 else
                 {
                     bMatch = (sal_Bool) rEntry.GetSearchTextPtr( rParam.bCaseSens )
@@ -1157,7 +1157,7 @@ sal_Bool ScTable::ValidQuery(SCROW nRow, const ScQueryParam& rParam,
                         String aQuer( pTransliteration->transliterate(
                             *rEntry.pStr, ScGlobal::eLnge, 0, rEntry.pStr->Len(),
                             NULL ) );
-                        xub_StrLen nIndex = (rEntry.eOp == SC_ENDS_WITH 
+                        xub_StrLen nIndex = (rEntry.eOp == SC_ENDS_WITH
                             || rEntry.eOp == SC_DOES_NOT_END_WITH)? (aCell.Len()-aQuer.Len()):0;
                         xub_StrLen nStrPos = aCell.Search( aQuer, nIndex );
                         switch (rEntry.eOp)
@@ -1968,7 +1968,7 @@ sal_Int32 ScTable::GetMaxStringLen( SCCOL nCol, SCROW nRowStart,
         return 0;
 }
 
-xub_StrLen ScTable::GetMaxNumberStringLen( 
+xub_StrLen ScTable::GetMaxNumberStringLen(
     sal_uInt16& nPrecision, SCCOL nCol, SCROW nRowStart, SCROW nRowEnd ) const
 {
     if ( ValidCol(nCol) )

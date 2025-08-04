@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include <vector>
@@ -41,7 +41,7 @@ namespace transex3
 {
 
 bool Treeconfig::parseConfig(){
-    
+
     string source_config_file = string( static_cast<ByteString>( Export::GetEnv("SOURCE_ROOT_DIR") ).GetBuffer() );
     if( source_config_file.empty() )
     {
@@ -64,7 +64,7 @@ bool Treeconfig::parseConfig(){
 // if you are in some misc place like /tmp then return true
 // => the application can decide what to do in case the function returns true thus how to handle pwd() path
 bool Treeconfig::getActiveRepositories( vector<string>& active_repos ){
-    
+
     bool isPresent = isConfigFilePresent();
     bool hasPath   = false;
     string pwd;
@@ -86,7 +86,7 @@ bool Treeconfig::getActiveRepositories( vector<string>& active_repos ){
     }
     else                              // I am NOT within SOURCE_ROOT_DIR
         hasPath = true;
-    
+
     if( isPresent )
     {
         hasPath = false;                // if config_file is present don't care about pwd
@@ -131,11 +131,11 @@ bool Treeconfig::isConfigFilePresent()
 {
     string config_file = Export::GetEnv( "SOURCE_ROOT_DIR" );
     config_file += "/source_config";
-    
+
     struct stat status;
     if( stat( config_file.c_str() , &status ) < 0 )
     {
-        return false; 
+        return false;
     }
 #ifdef WNT
     return ( status.st_mode & _S_IFREG ) && ( _access( config_file.c_str() , 4 ) >= 0 ) ;

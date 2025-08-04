@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -44,7 +44,7 @@
 #include "compiler.hxx"
 #include "formula/opcode.hxx" //CHINA001
 //<!--Added by PengYunQuan for Validity Cell Range Picker
-#include "tabvwsh.hxx" 
+#include "tabvwsh.hxx"
 #include <sfx2/viewfrm.hxx>
 #include <sfx2/childwin.hxx>
 #include "reffact.hxx"
@@ -87,7 +87,7 @@ void ScTPValidationValue::SetReferenceHdl( const ScRange&rRange , ScDocument* pD
 {
 	if ( rRange.aStart != rRange.aEnd )
 		if ( ScValidationDlg *pValidationDlg = GetValidationDlg() )
-			if( m_pRefEdit ) 
+			if( m_pRefEdit )
 				pValidationDlg/*->GetRefHandler()*/->RefInputStart( m_pRefEdit );
 
 	if ( m_pRefEdit )
@@ -102,9 +102,9 @@ void ScTPValidationValue::SetReferenceHdl( const ScRange&rRange , ScDocument* pD
 void ScTPValidationValue:: SetActiveHdl()
 {
 	if ( m_pRefEdit ) m_pRefEdit->GrabFocus();
-	
+
 	if ( ScValidationDlg *pValidationDlg = GetValidationDlg() )
-		if( m_pRefEdit ) 
+		if( m_pRefEdit )
 		{
 			pValidationDlg/*->GetRefHandler()*/->RefInputDone();
 		}
@@ -131,7 +131,7 @@ void			ScTPValidationValue::RefInputStartPreHdl( ScRefEdit* pEdit, ScRefButton* 
 
 void			ScTPValidationValue::RefInputDonePreHdl()
 {
-	
+
 	if( m_pRefEdit && m_pRefEdit->GetParent()!= this )
 	{
 		if( Window *pPreWnd = m_pRefEdit==&maEdMax?&maFtMax:(m_pRefEdit==&maEdMin?&maFtMin:NULL) )
@@ -145,20 +145,20 @@ void			ScTPValidationValue::RefInputDonePreHdl()
 		m_btnRef.SetParent( m_pRefEdit ); //if Edit SetParent but button not, the tab order will be incorrect, need button to setparent to anthor window and restore parent later in order to restore the tab order
 //		aExample1.SetParent( m_pRefEdit ); // the aExample1's child order will affect acc key
 	}
-	
+
 	if( m_btnRef.GetParent()!=this ) m_btnRef.SetParent( this );
 //	if( aExample1.GetParent()!=this ) aExample1.SetParent( this );
 }
 
 void			ScTPValidationValue::RefInputDonePostHdl()
 {
-	
-	
+
+
 	if( m_pRefEdit && !m_pRefEdit->HasFocus() )
 		m_pRefEdit->GrabFocus();
 
 }
-	
+
 
 sal_Bool ScValidationDlg::Close()
 {
@@ -345,7 +345,7 @@ ScTPValidationValue::ScTPValidationValue( Window* pParent, const SfxItemSet& rAr
 
     // list separator in formulas
     //CHINA001 const String& rListSep = ScCompiler::pSymbolTableNative[ ocSep ];
-	String aListSep = ::GetScCompilerNativeSymbol( ocSep ); //CHINA001 
+	String aListSep = ::GetScCompilerNativeSymbol( ocSep ); //CHINA001
     DBG_ASSERT( aListSep.Len() == 1, "ScTPValidationValue::ScTPValidationValue - list separator error" );
     mcFmlaSep = aListSep.Len() ? aListSep.GetChar( 0 ) : ';';
 	//<!--Added by PengYunQuan for Validity Cell Range Picker
@@ -574,7 +574,7 @@ void ScTPValidationValue::TidyListBoxes()
 
 		pWnd = GetChild(0);
 
-		while( std::find( alstOrder.begin(), alstOrder.end(), pWnd ) != alstOrder.end() && NULL != ( pWnd = pWnd->GetWindow( WINDOW_NEXT) ) ) ; 
+		while( std::find( alstOrder.begin(), alstOrder.end(), pWnd ) != alstOrder.end() && NULL != ( pWnd = pWnd->GetWindow( WINDOW_NEXT) ) ) ;
 
 		if ( pWnd )
 		{
@@ -591,7 +591,7 @@ void ScTPValidationValue::TidyListBoxes()
 IMPL_LINK( ScTPValidationValue, EditSetFocusHdl, Edit *, /*pEdit*/ )
 {
 	sal_uInt16  nPos=maLbAllow.GetSelectEntryPos();
-	
+
 	if ( nPos == SC_VALIDDLG_ALLOW_RANGE )
 	{
 		SetupRefDlg();
@@ -963,12 +963,12 @@ bool ScValidationDlg::RemoveRefDlg( sal_Bool bRestoreModal /* = sal_True */ )
 	}
 
 	if ( !m_bOwnRefHdlr ) return false;
-	if( LeaveRefStatus() && LeaveRefMode() ) 
+	if( LeaveRefStatus() && LeaveRefMode() )
 	{
 		m_bOwnRefHdlr = false;
 
 		if( bRestoreModal )
-			SetModal( sal_True );		
+			SetModal( sal_True );
 	}
 
 	if ( SfxChildWindow* pWnd = pTabVwSh->GetViewFrame()->GetChildWindow( SID_VALIDITY_REFERENCE ) )
@@ -986,7 +986,7 @@ void ScTPValidationValue::ScRefButtonEx::Click()
 {
 	if( ScTPValidationValue *pParent = dynamic_cast< ScTPValidationValue*>( GetParent() ) )
 		pParent->OnClick( this );
-		
+
 	ScRefButton::Click();
 }
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -83,7 +83,7 @@ SdPage* ViewClipboard::GetFirstMasterPage (const SdTransferable& rTransferable)
             const List* pBookmarks = &rTransferable.GetPageBookmarks();
             if (pBookmarks == NULL)
                 break;
-            
+
             DrawDocShell* pDocShell = rTransferable.GetPageDocShell();
             if (pDocShell == NULL)
                 break;
@@ -100,7 +100,7 @@ SdPage* ViewClipboard::GetFirstMasterPage (const SdTransferable& rTransferable)
             {
                 String sName (*(String*) pBookmarks->GetObject(nIndex));
                 sal_Bool bIsMasterPage;
-                
+
                 // SdPage* GetMasterSdPage(sal_uInt16 nPgNum, PageKind ePgKind);
                 // sal_uInt16 GetMasterSdPageCount(PageKind ePgKind) const;
 
@@ -173,7 +173,7 @@ void ViewClipboard::AssignMasterPage (
         if (String(sLayoutName, sLayoutName.Len()-nLength, nLength).Equals (
             sLayoutSuffix))
             sLayoutName = String(sLayoutName, 0, sLayoutName.Len()-nLength);
-			
+
         pDocument->SetMasterPage (
             pPage->GetPageNum() / 2,
             sLayoutName,
@@ -250,23 +250,23 @@ sal_uInt16 ViewClipboard::InsertSlides (
 
         if( bWait )
             pWin->LeaveWait();
-		        
+
         pDoc->InsertBookmarkAsPage(
-            const_cast<List*>(pBookmarkList), 
-            NULL, 
-            sal_False, 
-            sal_False, 
+            const_cast<List*>(pBookmarkList),
+            NULL,
+            sal_False,
+            sal_False,
             nInsertPosition,
             (&rTransferable == SD_MOD()->pTransferDrag),
-            pDataDocSh, 
-            sal_True, 
-            bMergeMasterPages, 
+            pDataDocSh,
+            sal_True,
+            bMergeMasterPages,
             sal_False);
 
         if( bWait )
             pWin->EnterWait();
     }
-    
+
     return nInsertPgCnt;
 }
 

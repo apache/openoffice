@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -211,8 +211,8 @@ IMPL_LINK( ImplDockFloatWin2, DockingHdl, ImplDockFloatWin2*, EMPTYARG )
         }
     }
 
-    if( mpDockWin->IsDockable()	&& 
-        mpDockWin->GetWindow()->IsVisible() && 
+    if( mpDockWin->IsDockable()	&&
+        mpDockWin->GetWindow()->IsVisible() &&
         (Time::GetSystemTicks() - mnLastTicks > 500) &&
         ( aState.mnState & ( MOUSE_LEFT | MOUSE_MIDDLE | MOUSE_RIGHT ) ) &&
         !(aState.mnState & KEY_MOD1) && // i43499 CTRL disables docking now
@@ -510,14 +510,14 @@ Rectangle DockingManager::GetPosSizePixel( const Window *pWindow )
 
 // if TEAROFF_DASHED defined a single dashed line is used
 // otherwise multiple smaller lines will be painted
-//#define TEAROFF_DASHED  
+//#define TEAROFF_DASHED
 
 // size of the drag area
 #ifdef TEAROFF_DASHED
-#define POPUP_DRAGBORDER    2 
-#define POPUP_DRAGGRIP      5 
+#define POPUP_DRAGBORDER    2
+#define POPUP_DRAGGRIP      5
 #else
-#define POPUP_DRAGBORDER    3  
+#define POPUP_DRAGBORDER    3
 #define POPUP_DRAGGRIP      5
 #endif
 #define POPUP_DRAGHEIGHT    (POPUP_DRAGGRIP+POPUP_DRAGBORDER+POPUP_DRAGBORDER)
@@ -558,10 +558,10 @@ public:
 	bool				hasGrip() const { return mbHasGrip; }
 };
 
-ImplPopupFloatWin::ImplPopupFloatWin( Window* pParent, ImplDockingWindowWrapper* pDockingWin, bool bHasGrip ) : 
+ImplPopupFloatWin::ImplPopupFloatWin( Window* pParent, ImplDockingWindowWrapper* pDockingWin, bool bHasGrip ) :
     FloatingWindow( pParent, WB_NOBORDER | WB_SYSTEMWINDOW | WB_NOSHADOW)
 {
-    mpWindowImpl->mbToolbarFloatingWindow = sal_True;   // indicate window type, required for accessibility 
+    mpWindowImpl->mbToolbarFloatingWindow = sal_True;   // indicate window type, required for accessibility
                                                     // which should not see this window as a toplevel window
     mpDockingWin = pDockingWin;
     mbHighlight = sal_False;
@@ -584,7 +584,7 @@ ImplPopupFloatWin::~ImplPopupFloatWin()
 
     // this is to avoid appearance of this window as standalone window in the accessibility hierarchy
     // as this window is only used as a helper for subtoolbars that are not teared-off, the parent toolbar
-    // has to provide accessibility support (as implemented in the toolkit) 
+    // has to provide accessibility support (as implemented in the toolkit)
     // so the contained toolbar should appear as child of the corresponding toolbar item of the parent toolbar
     return ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible >();
 }
@@ -615,7 +615,7 @@ void ImplPopupFloatWin::ImplSetBorder()
 void ImplPopupFloatWin::Resize()
 {
     // the borderview overwrites the border during resize so restore it
-    ImplSetBorder();    
+    ImplSetBorder();
 }
 
 Rectangle ImplPopupFloatWin::GetDragRect() const
@@ -738,8 +738,8 @@ void ImplPopupFloatWin::DrawGrip()
         //aRect.nLeft = aRect.nLeft + (aRect.getWidth() - width) / 2;
         aRect.nLeft = (aRect.nLeft + aRect.nRight - width) / 2;
         aRect.nRight = aRect.nLeft + width;
-        
-        int i=0; 
+
+        int i=0;
         while( i< POPUP_DRAGGRIP )
         {
             DrawRect( aRect );
@@ -834,7 +834,7 @@ void ImplPopupFloatWin::Tracking( const TrackingEvent& rTEvt )
         {
             // move the window according to mouse pos
             PointerState aState = GetParent()->GetPointerState();
-            if (ImplHasMirroredGraphics() && IsRTLEnabled()) 
+            if (ImplHasMirroredGraphics() && IsRTLEnabled())
                 ImplMirrorFramePos(aState.maPos);
             maTearOffPosition = aState.maPos - maDelta;
             GetWindow( WINDOW_BORDER )->SetPosPixel( maTearOffPosition );
@@ -851,8 +851,8 @@ ImplDockingWindowWrapper::ImplDockingWindowWrapper( const Window *pWindow )
 
     mpDockingWindow = (Window*) pWindow;
     mpParent        = pWindow->GetParent();
-    mbDockable      = sal_True; 
-    mbLocked        = sal_False; 
+    mbDockable      = sal_True;
+    mbLocked        = sal_False;
     mnFloatBits     = WB_BORDER | WB_CLOSEABLE | WB_SIZEABLE | (pWindow->GetStyle() & DOCKWIN_FLOATSTYLES);
     DockingWindow *pDockWin = dynamic_cast< DockingWindow* > ( mpDockingWindow );
     if( pDockWin )
@@ -1143,7 +1143,7 @@ sal_Bool ImplDockingWindowWrapper::Close()
 void ImplDockingWindowWrapper::ToggleFloatingMode()
 {
     // notify dockingwindow/toolbox
-    // note: this must be done *before* notifying the 
+    // note: this must be done *before* notifying the
     //       listeners to have the toolbox in the proper state
     if( GetWindow()->ImplIsDockingWindow() )
         ((DockingWindow*) GetWindow())->ToggleFloatingMode();
@@ -1229,7 +1229,7 @@ sal_Bool ImplDockingWindowWrapper::IsTitleButtonVisible( sal_uInt16 nButton ) co
     {
         if ( nButton == TITLE_BUTTON_DOCKING )
             return mbDockBtn;
-        else // if ( nButton == TITLE_BUTTON_HIDE ) 
+        else // if ( nButton == TITLE_BUTTON_HIDE )
             return mbHideBtn;
     }
 }
@@ -1311,7 +1311,7 @@ IMPL_LINK( ImplDockingWindowWrapper, PopupModeEnd, void*, EMPTYARG )
     if ( mpOldBorderWin )
     {
         GetWindow()->SetParent( mpOldBorderWin );
-        ((ImplBorderWindow*)mpOldBorderWin)->GetBorder( 
+        ((ImplBorderWindow*)mpOldBorderWin)->GetBorder(
             GetWindow()->mpWindowImpl->mnLeftBorder, GetWindow()->mpWindowImpl->mnTopBorder,
             GetWindow()->mpWindowImpl->mnRightBorder, GetWindow()->mpWindowImpl->mnBottomBorder );
         mpOldBorderWin->Resize();
@@ -1369,7 +1369,7 @@ void ImplDockingWindowWrapper::SetFloatingMode( sal_Bool bFloatMode )
                                          mnFloatBits & ( WB_MOVEABLE | WB_SIZEABLE | WB_CLOSEABLE ) ?
                                           mnFloatBits | WB_SYSTEMWINDOW
 //#ifdef __USE_OWNERDRAWDECORATION__
-                                          | WB_OWNERDRAWDECORATION 
+                                          | WB_OWNERDRAWDECORATION
 //#endif
                                           : mnFloatBits,
                                          this );
@@ -1443,7 +1443,7 @@ void ImplDockingWindowWrapper::SetFloatingMode( sal_Bool bFloatMode )
                 if ( mpOldBorderWin )
                 {
                     GetWindow()->SetParent( mpOldBorderWin );
-                    ((ImplBorderWindow*)mpOldBorderWin)->GetBorder( 
+                    ((ImplBorderWindow*)mpOldBorderWin)->GetBorder(
                         GetWindow()->mpWindowImpl->mnLeftBorder, GetWindow()->mpWindowImpl->mnTopBorder,
                         GetWindow()->mpWindowImpl->mnRightBorder, GetWindow()->mpWindowImpl->mnBottomBorder );
                     mpOldBorderWin->Resize();

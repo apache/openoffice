@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -39,7 +39,7 @@ namespace drawinglayer
 {
     namespace primitive2d
     {
-        Primitive2DSequence GraphicPrimitive2D::create2DDecomposition(const geometry::ViewInformation2D& 
+        Primitive2DSequence GraphicPrimitive2D::create2DDecomposition(const geometry::ViewInformation2D&
 #ifdef USE_DEBUG_CODE_TO_TEST_METAFILE_DECOMPOSE
             rViewInformation
 #else
@@ -102,7 +102,7 @@ namespace drawinglayer
                 // the pure primitive solution with the color modifiers works well, too, but when
                 // it is a bitmap graphic the old modification currently is faster; so use it here
                 // instead of creating all as in create2DColorModifierEmbeddingsAsNeeded (see below).
-                // Still, crop, rotation, mirroring and transparency is handled by primitives already 
+                // Still, crop, rotation, mirroring and transparency is handled by primitives already
                 // (see above).
                 // This could even be done when vector graphic, but we explicitly want to have the
                 // pure primitive solution for this; this will allow vector graphics to stay vector
@@ -198,7 +198,7 @@ namespace drawinglayer
         }
 
         GraphicPrimitive2D::GraphicPrimitive2D(
-            const basegfx::B2DHomMatrix& rTransform, 
+            const basegfx::B2DHomMatrix& rTransform,
             const GraphicObject& rGraphicObject,
             const GraphicAttr& rGraphicAttr)
         :	BufferedDecompositionPrimitive2D(),
@@ -209,7 +209,7 @@ namespace drawinglayer
         }
 
         GraphicPrimitive2D::GraphicPrimitive2D(
-            const basegfx::B2DHomMatrix& rTransform, 
+            const basegfx::B2DHomMatrix& rTransform,
             const GraphicObject& rGraphicObject)
         :	BufferedDecompositionPrimitive2D(),
             maTransform(rTransform),

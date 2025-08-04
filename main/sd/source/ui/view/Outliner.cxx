@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -537,7 +537,7 @@ bool Outliner::StartSearchAndReplace (const SvxSearchItem* pSearchItem)
         }
 	if ( Application::IsAccessibilityEnabled() )
 	{
-		SvxSearchDialog* pSearchDlg = 
+		SvxSearchDialog* pSearchDlg =
 			((SvxSearchDialog*)(SfxViewFrame::Current()->GetChildWindow(
 			SvxSearchDialogWrapper::GetChildWindowId())->GetWindow()));
 		pSearchDlg->SetDocWin( pViewShell->GetActiveWindow() );
@@ -571,7 +571,7 @@ void Outliner::Initialize (bool bDirectionIsForward)
             OSL_ASSERT(pViewShell);
             return;
         }
-        
+
         // In case we are searching in an outline view then first remove the
         // current selection and place cursor at its start or end.
 		if (pViewShell->ISA(OutlineViewShell))
@@ -635,7 +635,7 @@ bool Outliner::SearchAndReplaceAll (void)
         OSL_ASSERT(pViewShell);
         return true;
     }
-    
+
     if (pViewShell->ISA(OutlineViewShell))
     {
         // Put the cursor to the beginning/end of the outliner.
@@ -1065,7 +1065,7 @@ void Outliner::EndOfSearch (void)
         OSL_ASSERT(pViewShell);
         return;
     }
-    
+
     // Before we display a dialog we first jump to where the last valid text
     // object was found.  All page and view mode switching since then was
     // temporary and should not be visible to the user.

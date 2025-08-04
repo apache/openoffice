@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -120,7 +120,7 @@ class DocObjectWrapper : public DocObjectWrapper_BASE
     SbPropertyRef getProperty( const rtl::OUString& aName ) throw (RuntimeException);
     String mName; // for debugging
 
-public:    
+public:
     DocObjectWrapper( SbModule* pMod );
     virtual ~DocObjectWrapper();
 
@@ -142,16 +142,16 @@ public:
     virtual ::sal_Bool SAL_CALL hasMethod( const ::rtl::OUString& aName ) throw (RuntimeException);
     virtual ::sal_Bool SAL_CALL hasProperty( const ::rtl::OUString& aName ) throw (RuntimeException);
     virtual  Any SAL_CALL queryInterface( const Type& aType ) throw ( RuntimeException );
-    
+
     virtual Sequence< Type > SAL_CALL getTypes() throw ( RuntimeException );
 };
 
 DocObjectWrapper::DocObjectWrapper( SbModule* pVar ) : m_pMod( pVar ), mName( pVar->GetName() )
-{   
+{
     SbObjModule* pMod = PTR_CAST(SbObjModule,pVar);
     if ( pMod )
     {
-        if ( pMod->GetModuleType() == ModuleType::DOCUMENT ) 
+        if ( pMod->GetModuleType() == ModuleType::DOCUMENT )
         {
             Reference< XMultiServiceFactory > xFactory = comphelper::getProcessServiceFactory();
             // Use proxy factory service to create aggregatable proxy.
@@ -159,7 +159,7 @@ DocObjectWrapper::DocObjectWrapper( SbModule* pVar ) : m_pMod( pVar ), mName( pV
             Reference< XInterface > xIf;
             if ( pUnoObj )
             {
-                   Any aObj = pUnoObj->getUnoAny(); 
+                   Any aObj = pUnoObj->getUnoAny();
                    aObj >>= xIf;
                    if ( xIf.is() )
                    {
@@ -184,11 +184,11 @@ DocObjectWrapper::DocObjectWrapper( SbModule* pVar ) : m_pMod( pVar ), mName( pV
                     OSL_ENSURE( false, "DocObjectWrapper::DocObjectWrapper: Caught exception!" );
                 }
             }
-     
+
             if ( m_xAggProxy.is() )
             {
                 osl_incrementInterlockedCount( &m_refCount );
-      
+
                 /* i35609 - Fix crash on Solaris. The setDelegator call needs
                     to be in its own block to ensure that all temporary Reference
                     instances that are acquired during the call are released
@@ -196,7 +196,7 @@ DocObjectWrapper::DocObjectWrapper( SbModule* pVar ) : m_pMod( pVar ), mName( pV
                 {
                     m_xAggProxy->setDelegator( static_cast< cppu::OWeakObject * >( this ) );
                 }
-        
+
                  osl_decrementInterlockedCount( &m_refCount );
             }
         }
@@ -209,7 +209,7 @@ DocObjectWrapper::acquire() throw ()
     osl_incrementInterlockedCount( &m_refCount );
     OSL_TRACE("DocObjectWrapper::acquire(%s) 0x%x refcount is now %d", rtl::OUStringToOString( mName, RTL_TEXTENCODING_UTF8 ).getStr(), this, m_refCount );
 }
-void SAL_CALL 
+void SAL_CALL
 DocObjectWrapper::release() throw ()
 {
     if ( osl_decrementInterlockedCount( &m_refCount ) == 0 )
@@ -229,7 +229,7 @@ Sequence< Type > SAL_CALL DocObjectWrapper::getTypes()
     throw ( RuntimeException )
 {
     if ( m_Types.getLength() == 0 )
-    { 
+    {
         Sequence< Type > sTypes;
         if ( m_xAggregateTypeProv.is() )
             sTypes = m_xAggregateTypeProv->getTypes();
@@ -237,7 +237,7 @@ Sequence< Type > SAL_CALL DocObjectWrapper::getTypes()
         Type* pPtr = m_Types.getArray();
         for ( int i=0; i<m_Types.getLength(); ++i, ++pPtr )
         {
-            if ( i == 0 ) 
+            if ( i == 0 )
                 *pPtr = XInvocation::static_type( NULL );
             else
                 *pPtr = sTypes[ i - 1 ];
@@ -246,13 +246,13 @@ Sequence< Type > SAL_CALL DocObjectWrapper::getTypes()
     return m_Types;
 }
 
-Reference< XIntrospectionAccess > SAL_CALL 
+Reference< XIntrospectionAccess > SAL_CALL
 DocObjectWrapper::getIntrospection(  ) throw (RuntimeException)
 {
     return NULL;
 }
 
-Any SAL_CALL 
+Any SAL_CALL
 DocObjectWrapper::invoke( const ::rtl::OUString& aFunctionName, const Sequence< Any >& aParams, Sequence< ::sal_Int16 >& aOutParamIndex, Sequence< Any >& aOutParam ) throw (IllegalArgumentException, CannotConvertException, InvocationTargetException, RuntimeException)
 {
     if ( m_xAggInv.is() &&  m_xAggInv->hasMethod( aFunctionName ) )
@@ -347,19 +347,19 @@ DocObjectWrapper::invoke( const ::rtl::OUString& aFunctionName, const Sequence< 
     return aReturn;
 }
 
-void SAL_CALL 
+void SAL_CALL
 DocObjectWrapper::setValue( const ::rtl::OUString& aPropertyName, const Any& aValue ) throw (UnknownPropertyException, CannotConvertException, InvocationTargetException, RuntimeException)
 {
     if ( m_xAggInv.is() &&  m_xAggInv->hasProperty( aPropertyName ) )
             return m_xAggInv->setValue( aPropertyName, aValue );
-    
+
     SbPropertyRef pProperty = getProperty( aPropertyName );
     if ( !pProperty.Is() )
        throw UnknownPropertyException();
     unoToSbxValue( (SbxVariable*) pProperty, aValue );
 }
 
-Any SAL_CALL 
+Any SAL_CALL
 DocObjectWrapper::getValue( const ::rtl::OUString& aPropertyName ) throw (UnknownPropertyException, RuntimeException)
 {
     if ( m_xAggInv.is() &&  m_xAggInv->hasProperty( aPropertyName ) )
@@ -377,20 +377,20 @@ DocObjectWrapper::getValue( const ::rtl::OUString& aPropertyName ) throw (Unknow
     return aRet;
 }
 
-::sal_Bool SAL_CALL 
+::sal_Bool SAL_CALL
 DocObjectWrapper::hasMethod( const ::rtl::OUString& aName ) throw (RuntimeException)
 {
     if ( m_xAggInv.is() && m_xAggInv->hasMethod( aName ) )
-        return sal_True;        
+        return sal_True;
     return getMethod( aName ).Is();
 }
 
-::sal_Bool SAL_CALL 
+::sal_Bool SAL_CALL
 DocObjectWrapper::hasProperty( const ::rtl::OUString& aName ) throw (RuntimeException)
 {
     sal_Bool bRes = sal_False;
     if ( m_xAggInv.is() && m_xAggInv->hasProperty( aName ) )
-        bRes = sal_True;        
+        bRes = sal_True;
     else bRes = getProperty( aName ).Is();
     return bRes;
 }
@@ -484,7 +484,7 @@ class AsyncQuitHandler
     AsyncQuitHandler() {}
     AsyncQuitHandler( const AsyncQuitHandler&);
 public:
-    static AsyncQuitHandler& instance() 
+    static AsyncQuitHandler& instance()
     {
         static AsyncQuitHandler dInst;
         return dInst;
@@ -497,7 +497,7 @@ public:
 	{
             uno::Reference< frame::XDesktop > xDeskTop( xFactory->createInstance( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.frame.Desktop") ) ), uno::UNO_QUERY );
            if ( xDeskTop.is() )
-               xDeskTop->terminate(); 
+               xDeskTop->terminate();
         }
     }
     DECL_LINK( OnAsyncQuit, void* );
@@ -801,7 +801,7 @@ void SbModule::SFX_NOTIFY( SfxBroadcaster& rBC, const TypeId& rBCType,
 		}
 		else
 		{
-			// #i92642: Special handling for name property to avoid 
+			// #i92642: Special handling for name property to avoid
 			// side effects when using name as variable implicitly
 			bool bForwardToSbxObject = true;
 
@@ -861,7 +861,7 @@ void SbModule::SetSource32( const ::rtl::OUString& r )
 					if( eCurTok == COMPATIBLE )
 						aTok.SetCompatible( true );
 					else if ( ( eCurTok == VBASUPPORT ) && ( aTok.Next() == NUMBER ) )
-					{	
+					{
         					sal_Bool bIsVBA = ( aTok.GetDbl()== 1 );
         					SetVBACompat( bIsVBA );
 						aTok.SetCompatible( bIsVBA );
@@ -1010,7 +1010,7 @@ sal_Bool SbModule::IsVBACompat() const
 {
 	return mbVBACompat;
 }
- 
+
 void SbModule::SetVBACompat( sal_Bool bCompat )
 {
     if( mbVBACompat != bCompat )
@@ -1305,16 +1305,16 @@ void SbModule::RunInit()
 
 // Mit private/dim deklarierte Variablen loeschen
 
-void SbModule::AddVarName( const String& aName ) 
-{ 
+void SbModule::AddVarName( const String& aName )
+{
     // see if the name is added already
     std::vector< String >::iterator it_end = mModuleVariableNames.end();
     for ( std::vector< String >::iterator it = mModuleVariableNames.begin(); it != it_end; ++it )
     {
         if ( aName == *it )
-            return;	
+            return;
     }
-    mModuleVariableNames.push_back( aName ); 
+    mModuleVariableNames.push_back( aName );
 }
 
 void SbModule::RemoveVars()
@@ -1322,8 +1322,8 @@ void SbModule::RemoveVars()
     std::vector< String >::iterator it_end = mModuleVariableNames.end();
     for ( std::vector< String >::iterator it = mModuleVariableNames.begin(); it != it_end; ++it )
     {
-    // We don't want a Find being called in a derived class ( e.g. 
-    // SbUserform because it could trigger say an initialise event  
+    // We don't want a Find being called in a derived class ( e.g.
+    // SbUserform because it could trigger say an initialise event
     // which would cause basic to be re-run in the middle of the init ( and remember RemoveVars is called from compile and we don't want code to run as part of the compile )
     SbxVariableRef p = SbModule::Find( *it, SbxCLASS_PROPERTY );
     if( p.Is() )
@@ -1631,8 +1631,8 @@ sal_Bool SbModule::ClearBP( sal_uInt16 nLine )
 			sal_uInt16 b = pBreaks->operator[]( i );
 			if( b == nLine )
 			{
-				pBreaks->erase( pBreaks->begin() + i ); 
-				bRes = sal_True; 
+				pBreaks->erase( pBreaks->begin() + i );
+				bRes = sal_True;
 				break;
 			}
 			if( b < nLine )
@@ -1646,7 +1646,7 @@ sal_Bool SbModule::ClearBP( sal_uInt16 nLine )
 
 void SbModule::ClearAllBP()
 {
-	delete pBreaks; 
+	delete pBreaks;
 	pBreaks = NULL;
 }
 
@@ -1985,7 +1985,7 @@ SbMethod::SbMethod( const SbMethod& r )
 	nDebugFlags  = r.nDebugFlags;
 	nLine1		 = r.nLine1;
 	nLine2		 = r.nLine2;
-        refStatics = r.refStatics; 
+        refStatics = r.refStatics;
 	SetFlag( SBX_NO_MODIFY );
 }
 
@@ -2004,7 +2004,7 @@ SbxArray* SbMethod::GetLocals()
 void SbMethod::ClearStatics()
 {
 	refStatics = new SbxArray;
-	
+
 }
 SbxArray* SbMethod::GetStatics()
 {
@@ -2167,7 +2167,7 @@ SbObjModule::SetUnoObject( const uno::Any& aObj ) throw ( uno::RuntimeException 
     if ( pUnoObj && pUnoObj->getUnoAny() == aObj ) // object is equal, nothing to do
         return;
     pDocObject = new SbUnoObject( GetName(), uno::makeAny( aObj ) );
-            
+
     com::sun::star::uno::Reference< com::sun::star::lang::XServiceInfo > xServiceInfo( aObj, com::sun::star::uno::UNO_QUERY_THROW );
     if( xServiceInfo->supportsService( rtl::OUString::createFromAscii( "ooo.vba.excel.Worksheet" ) ) )
     {
@@ -2180,7 +2180,7 @@ SbObjModule::SetUnoObject( const uno::Any& aObj ) throw ( uno::RuntimeException 
 }
 
 SbxVariable*
-SbObjModule::GetObject() 
+SbObjModule::GetObject()
 {
     return pDocObject;
 }
@@ -2300,10 +2300,10 @@ public:
             }
         }
     }
-	
+
     //liuchen 2009-7-21, support Excel VBA Form_QueryClose event
     virtual void SAL_CALL windowClosing( const lang::EventObject& /*e*/ ) throw (uno::RuntimeException)
-    {    
+    {
 #if IN_THE_FUTURE
 		uno::Reference< awt::XDialog > xDialog( e.Source, uno::UNO_QUERY );
 		if ( xDialog.is() )
@@ -2328,14 +2328,14 @@ public:
 #if IN_THE_FUTURE
 					xVbaMethodParameter->setVbaMethodParameter( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Cancel")), aParams[0]);
 					return;
-	
-				}			
-			}		
+
+				}
+			}
 		}
 #endif
     }
 	//liuchen 2009-7-21
-	
+
     virtual void SAL_CALL windowClosed( const lang::EventObject& /*e*/ ) throw (uno::RuntimeException)
     {
         mbOpened = sal_False;
@@ -2362,7 +2362,7 @@ public:
             }
         }
     }
-   
+
     virtual void SAL_CALL windowDeactivated( const lang::EventObject& /*e*/ ) throw (uno::RuntimeException)
     {
         if ( mpUserForm )
@@ -2448,7 +2448,7 @@ void SbUserFormModule::triggerMethod( const String& aMethodToRun, Sequence< Any 
 	// Search method
 	SbxVariable* pMeth = SbObjModule::Find( aMethodToRun, SbxCLASS_METHOD );
 	if( pMeth )
-	{		
+	{
 		if ( aArguments.getLength() > 0 )   // Setup parameters
 		{
 			SbxArrayRef xArray = new SbxArray;
@@ -2468,11 +2468,11 @@ void SbUserFormModule::triggerMethod( const String& aMethodToRun, Sequence< Any 
 
 			SbxValues aVals;
 			pMeth->Get( aVals );
-			
+
 			for ( sal_Int32 i = 0; i < aArguments.getLength(); ++i )
 			{
 				aArguments[i] = sbxToUnoValue( xArray->Get( static_cast< sal_uInt16 >(i) + 1) );
-			}		
+			}
 			pMeth->SetParameters( NULL );
 		}
 		else
@@ -2581,7 +2581,7 @@ void SbUserFormModule::Unload()
 	{
 		return;
 	}
-	
+
     if ( m_xDialog.is() )
     {
 		triggerTerminateEvent();
@@ -2617,7 +2617,7 @@ void SbUserFormModule::InitObject()
     try
     {
         String aHook( RTL_CONSTASCII_USTRINGPARAM( "VBAGlobals" ) );
-        SbUnoObject* pGlobs = (SbUnoObject*)GetParent()->Find( aHook, SbxCLASS_DONTCARE ); 
+        SbUnoObject* pGlobs = (SbUnoObject*)GetParent()->Find( aHook, SbxCLASS_DONTCARE );
         if ( m_xModel.is() && pGlobs )
         {
             // broadcast INITIALIZE_USERFORM script event before the dialog is created
@@ -2631,8 +2631,8 @@ void SbUserFormModule::InitObject()
             rtl::OUString sDialogUrl( RTL_CONSTASCII_USTRINGPARAM("vnd.sun.star.script:" ) );
             rtl::OUString sProjectName( RTL_CONSTASCII_USTRINGPARAM("Standard") );
             if ( this->GetParent()->GetName().Len() )
-                sProjectName = this->GetParent()->GetName(); 
-            sDialogUrl = sDialogUrl.concat( sProjectName ).concat( rtl::OUString( '.') ).concat( GetName() ).concat( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("?location=document") ) ); 
+                sProjectName = this->GetParent()->GetName();
+            sDialogUrl = sDialogUrl.concat( sProjectName ).concat( rtl::OUString( '.') ).concat( GetName() ).concat( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("?location=document") ) );
 
             uno::Reference< awt::XDialogProvider > xProvider( xFactory->createInstanceWithArguments( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.awt.DialogProvider")), aArgs  ), uno::UNO_QUERY_THROW );
             m_xDialog = xProvider->createDialog( sDialogUrl );

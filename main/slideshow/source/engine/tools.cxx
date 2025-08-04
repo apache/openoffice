@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -116,12 +116,12 @@ namespace slideshow
 
                 // scale, shear and rotation pivot point is the shape
                 // center - adapt origin accordingly
-                aTransform.translate( -0.5, -0.5 ); 
+                aTransform.translate( -0.5, -0.5 );
 
                 // ensure valid size (zero size will inevitably lead
                 // to a singular transformation matrix)
                 aTransform.scale( ::basegfx::pruneScaleValue(
-                                      rSize.getX() ), 
+                                      rSize.getX() ),
                                   ::basegfx::pruneScaleValue(
                                       rSize.getY() ) );
 
@@ -140,7 +140,7 @@ namespace slideshow
                     if( bNeedRotation )
                         aTransform.rotate( nRotation );
                 }
-                
+
                 // move left, top corner back to position of the
                 // shape. Since we've already translated the
                 // center of the shape to the origin (the
@@ -157,8 +157,8 @@ namespace slideshow
         // =========================
 
         /// extract unary double value from Any
-        bool extractValue( double&						o_rValue, 
-                           const uno::Any& 				rSourceAny, 
+        bool extractValue( double&						o_rValue,
+                           const uno::Any& 				rSourceAny,
                            const ShapeSharedPtr&		rShape,
                            const ::basegfx::B2DVector&	rSlideBounds )
         {
@@ -178,7 +178,7 @@ namespace slideshow
             try
             {
                 // Parse string into ExpressionNode, eval node at time 0.0
-                o_rValue = (*SmilFunctionParser::parseSmilValue( 
+                o_rValue = (*SmilFunctionParser::parseSmilValue(
                                 aString,
                                 calcRelativeShapeBounds(rSlideBounds,
                                                         rShape->getBounds()) ))(0.0);
@@ -192,8 +192,8 @@ namespace slideshow
         }
 
         /// extract enum/constant group value from Any
-        bool extractValue( sal_Int32&						o_rValue, 
-                           const uno::Any& 					rSourceAny, 
+        bool extractValue( sal_Int32&						o_rValue,
+                           const uno::Any& 					rSourceAny,
                            const ShapeSharedPtr&			/*rShape*/,
                            const ::basegfx::B2DVector&		/*rSlideBounds*/ )
         {
@@ -237,8 +237,8 @@ namespace slideshow
         }
 
         /// extract enum/constant group value from Any
-        bool extractValue( sal_Int16&						o_rValue, 
-                           const uno::Any& 					rSourceAny, 
+        bool extractValue( sal_Int16&						o_rValue,
+                           const uno::Any& 					rSourceAny,
                            const ShapeSharedPtr&			rShape,
                            const ::basegfx::B2DVector&		rSlideBounds )
         {
@@ -258,8 +258,8 @@ namespace slideshow
         }
 
         /// extract color value from Any
-        bool extractValue( RGBColor&					o_rValue, 
-                           const uno::Any& 				rSourceAny, 
+        bool extractValue( RGBColor&					o_rValue,
+                           const uno::Any& 				rSourceAny,
                            const ShapeSharedPtr&		/*rShape*/,
                            const ::basegfx::B2DVector&	/*rSlideBounds*/ )
         {
@@ -302,10 +302,10 @@ namespace slideshow
                                       "extractValue(): inappropriate length for RGB color value" );
 
                     // truncate to byte
-                    o_rValue = RGBColor( ::cppcanvas::makeColor( 
-                                             static_cast<sal_uInt8>(aTmp[0]), 
+                    o_rValue = RGBColor( ::cppcanvas::makeColor(
+                                             static_cast<sal_uInt8>(aTmp[0]),
                                              static_cast<sal_uInt8>(aTmp[1]),
-                                             static_cast<sal_uInt8>(aTmp[2]), 
+                                             static_cast<sal_uInt8>(aTmp[2]),
                                              255 ) );
 
                     // succeeded
@@ -340,8 +340,8 @@ namespace slideshow
         }
 
         /// extract color value from Any
-        bool extractValue( HSLColor&					o_rValue, 
-                           const uno::Any& 				rSourceAny, 
+        bool extractValue( HSLColor&					o_rValue,
+                           const uno::Any& 				rSourceAny,
                            const ShapeSharedPtr&		/*rShape*/,
                            const ::basegfx::B2DVector&	/*rSlideBounds*/ )
         {
@@ -374,13 +374,13 @@ namespace slideshow
                     return true;
                 }
             }
-            
+
             return false; // nothing left to try
         }
 
         /// extract plain string from Any
-        bool extractValue( ::rtl::OUString&				o_rValue, 
-                           const uno::Any& 				rSourceAny, 
+        bool extractValue( ::rtl::OUString&				o_rValue,
+                           const uno::Any& 				rSourceAny,
                            const ShapeSharedPtr&		/*rShape*/,
                            const ::basegfx::B2DVector&	/*rSlideBounds*/ )
         {
@@ -392,8 +392,8 @@ namespace slideshow
         }
 
         /// extract bool value from Any
-        bool extractValue( bool&						o_rValue, 
-                           const uno::Any& 				rSourceAny, 
+        bool extractValue( bool&						o_rValue,
+                           const uno::Any& 				rSourceAny,
                            const ShapeSharedPtr&		/*rShape*/,
                            const ::basegfx::B2DVector&	/*rSlideBounds*/ )
         {
@@ -412,7 +412,7 @@ namespace slideshow
             if( !(rSourceAny >>= aString) )
                 return false; // nothing left to try
 
-            // we also take the strings "true" and "false", 
+            // we also take the strings "true" and "false",
             // as well as "on" and "off" here
             if( aString.equalsIgnoreAsciiCaseAscii("true") ||
                 aString.equalsIgnoreAsciiCaseAscii("on") )
@@ -432,8 +432,8 @@ namespace slideshow
         }
 
         /// extract double 2-tuple from Any
-        bool extractValue( ::basegfx::B2DTuple&			o_rPair, 
-                           const uno::Any& 				rSourceAny, 
+        bool extractValue( ::basegfx::B2DTuple&			o_rPair,
+                           const uno::Any& 				rSourceAny,
                            const ShapeSharedPtr&		rShape,
                            const ::basegfx::B2DVector&	rSlideBounds )
         {
@@ -456,7 +456,7 @@ namespace slideshow
             return true;
         }
 
-        bool findNamedValue( uno::Sequence< beans::NamedValue > const& rSequence, 
+        bool findNamedValue( uno::Sequence< beans::NamedValue > const& rSequence,
                              const beans::NamedValue&				rSearchKey )
         {
             const beans::NamedValue* 	pArray = rSequence.getConstArray();
@@ -474,9 +474,9 @@ namespace slideshow
 
             return true;
         }
-        
-        bool findNamedValue( beans::NamedValue* 						o_pRet, 
-                             const uno::Sequence< beans::NamedValue >& 	rSequence, 
+
+        bool findNamedValue( beans::NamedValue* 						o_pRet,
+                             const uno::Sequence< beans::NamedValue >& 	rSequence,
                              const ::rtl::OUString&						rSearchString )
         {
             const beans::NamedValue* 	pArray = rSequence.getConstArray();
@@ -506,7 +506,7 @@ namespace slideshow
                                       rShapeBounds.getMaxY() / rPageSize.getY() );
 		}
 
-        // TODO(F2): Currently, the positional attributes DO NOT mirror the XShape properties. 
+        // TODO(F2): Currently, the positional attributes DO NOT mirror the XShape properties.
         // First and foremost, this is because we must operate with the shape boundrect,
         // not position and size (the conversion between logic rect, snap rect and boundrect
         // are non-trivial for draw shapes, and I won't duplicate them here). Thus, shapes
@@ -552,20 +552,20 @@ namespace slideshow
                 // scale, shear and rotation pivot point is the
                 // sprite's pixel center - adapt origin accordingly
                 aTransform.translate( -0.5*rPixelSize.getX(),
-                                      -0.5*rPixelSize.getY() ); 
+                                      -0.5*rPixelSize.getY() );
 
-                const ::basegfx::B2DSize aSize( 
+                const ::basegfx::B2DSize aSize(
                     pAttr->isWidthValid() ? pAttr->getWidth() : rOrigSize.getX(),
                     pAttr->isHeightValid() ? pAttr->getHeight() : rOrigSize.getY() );
 
                 // ensure valid size (zero size will inevitably lead
                 // to a singular transformation matrix).
                 aTransform.scale( ::basegfx::pruneScaleValue(
-                                      aSize.getX() / 
+                                      aSize.getX() /
                                       ::basegfx::pruneScaleValue(
-                                          rOrigSize.getX() ) ), 
+                                          rOrigSize.getX() ) ),
                                   ::basegfx::pruneScaleValue(
-                                      aSize.getY() / 
+                                      aSize.getY() /
                                       ::basegfx::pruneScaleValue(
                                           rOrigSize.getY() ) ) );
 
@@ -589,7 +589,7 @@ namespace slideshow
                 // the sprite (we've translated the center of the
                 // sprite to the origin above).
                 aTransform.translate( 0.5*rPixelSize.getX(),
-                                      0.5*rPixelSize.getY() ); 
+                                      0.5*rPixelSize.getY() );
             }
 
             // return identity transform for un-attributed
@@ -599,7 +599,7 @@ namespace slideshow
         }
 
         ::basegfx::B2DRectangle getShapeUpdateArea( const ::basegfx::B2DRectangle&		rUnitBounds,
-                                                    const ::basegfx::B2DHomMatrix&		rShapeTransform, 
+                                                    const ::basegfx::B2DHomMatrix&		rShapeTransform,
                                                     const ShapeAttributeLayerSharedPtr&	pAttr )
         {
             ::basegfx::B2DHomMatrix aTransform;
@@ -614,9 +614,9 @@ namespace slideshow
                 const double nCharScale( pAttr->getCharScale() );
 
                 // center of scaling is the middle of the shape
-                aTransform.translate( -0.5, -0.5 ); 
+                aTransform.translate( -0.5, -0.5 );
                 aTransform.scale( nCharScale, nCharScale );
-                aTransform.translate( 0.5, 0.5 ); 
+                aTransform.translate( 0.5, 0.5 );
             }
 
             aTransform *= rShapeTransform;
@@ -624,8 +624,8 @@ namespace slideshow
             ::basegfx::B2DRectangle aRes;
 
             // apply shape transformation to unit rect
-            return ::canvas::tools::calcTransformedRectBounds( 
-                aRes, 
+            return ::canvas::tools::calcTransformedRectBounds(
+                aRes,
                 rUnitBounds,
                 aTransform );
         }
@@ -647,7 +647,7 @@ namespace slideshow
                                       rShapeBounds.getMaxY(),
                                       rUnitBounds.getMaxY() ) );
         }
-        
+
         ::basegfx::B2DRectangle getShapePosSize( const ::basegfx::B2DRectangle&			rOrigBounds,
                                                  const ShapeAttributeLayerSharedPtr&	pAttr )
         {
@@ -662,7 +662,7 @@ namespace slideshow
             }
             else
             {
-                // cannot use maBounds anymore, attributes might have been 
+                // cannot use maBounds anymore, attributes might have been
                 // changed by now.
                 // Have to use absolute values here, as negative sizes
                 // (aka mirrored shapes) _still_ have the same bounds,
@@ -686,14 +686,14 @@ namespace slideshow
                 // the positional attribute retrieved from the
                 // ShapeAttributeLayer actually denotes the _middle_
                 // of the shape (do it as the PPTs do...)
-                return ::basegfx::B2DRectangle( aPos - 0.5*aSize, 
+                return ::basegfx::B2DRectangle( aPos - 0.5*aSize,
                                                 aPos + 0.5*aSize );
             }
         }
 
         RGBColor unoColor2RGBColor( sal_Int32 nColor )
         {
-            return RGBColor( 
+            return RGBColor(
                 ::cppcanvas::makeColor(
                     // convert from API color to IntSRGBA color
                     // (0xAARRGGBB -> 0xRRGGBBAA)
@@ -702,7 +702,7 @@ namespace slideshow
                     static_cast< sal_uInt8 >( nColor ),
                     static_cast< sal_uInt8 >( nColor >> 24U ) ) );
         }
-        
+
         sal_Int32 RGBAColor2UnoColor( ::cppcanvas::Color::IntSRGBA aColor )
         {
             return ::cppcanvas::makeColorARGB(
@@ -713,7 +713,7 @@ namespace slideshow
                 ::cppcanvas::getGreen(aColor),
                 ::cppcanvas::getBlue(aColor));
         }
-        
+
         /*sal_Int32 RGBAColor2UnoColor( ::cppcanvas::Color::IntSRGBA aColor )
         {
             return ::cppcanvas::unMakeColor(
@@ -726,7 +726,7 @@ namespace slideshow
         }*/
 
         sal_Int8 unSignedToSigned(sal_Int8 nInt)
-        {	
+        {
             if(nInt < 0 ){
                 sal_Int8 nInt2 = nInt >> 1U;
                 return nInt2;
@@ -734,7 +734,7 @@ namespace slideshow
                 return nInt;
             }
         }
-        
+
         void fillRect( const ::cppcanvas::CanvasSharedPtr& rCanvas,
                        const ::basegfx::B2DRectangle&	   rRect,
                        ::cppcanvas::Color::IntSRGBA        aFillColor )
@@ -742,8 +742,8 @@ namespace slideshow
             const ::basegfx::B2DPolygon aPoly(
                 ::basegfx::tools::createPolygonFromRect( rRect ));
 
-            ::cppcanvas::PolyPolygonSharedPtr pPolyPoly( 
-                ::cppcanvas::BaseGfxFactory::getInstance().createPolyPolygon( rCanvas, 
+            ::cppcanvas::PolyPolygonSharedPtr pPolyPoly(
+                ::cppcanvas::BaseGfxFactory::getInstance().createPolyPolygon( rCanvas,
                                                                               aPoly ) );
 
             if( pPolyPoly )
@@ -766,7 +766,7 @@ namespace slideshow
             // pixel, and the bitmap is initialized white,
             // depending on the slide content a one pixel wide
             // line will show to the bottom and the right.
-            fillRect( pCanvas, 
+            fillRect( pCanvas,
                       ::basegfx::B2DRectangle( 0.0, 0.0,
                                                rSize.getX(),
                                                rSize.getY() ),
@@ -780,7 +780,7 @@ namespace slideshow
             // off. OTOH, every other slide background (solid fill,
             // gradient, bitmap) render one pixel less, thus revealing
             // ugly white pixel to the right and the bottom.
-            fillRect( pCanvas, 
+            fillRect( pCanvas,
                       ::basegfx::B2DRectangle( 0.0, 0.0,
                                                rSize.getX()-1,
                                                rSize.getY()-1 ),
@@ -789,37 +789,37 @@ namespace slideshow
 
         ::basegfx::B2DRectangle getAPIShapeBounds( const uno::Reference< drawing::XShape >& xShape )
         {
-            uno::Reference< beans::XPropertySet > xPropSet( xShape, 
+            uno::Reference< beans::XPropertySet > xPropSet( xShape,
                                                             uno::UNO_QUERY_THROW );
             // read bound rect
             awt::Rectangle aTmpRect;
-            if( !(xPropSet->getPropertyValue( 
+            if( !(xPropSet->getPropertyValue(
                       ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("BoundRect") ) ) >>= aTmpRect) )
             {
                 ENSURE_OR_THROW( false,
                                   "getAPIShapeBounds(): Could not get \"BoundRect\" property from shape" );
             }
 
-            return ::basegfx::B2DRectangle( aTmpRect.X, 
+            return ::basegfx::B2DRectangle( aTmpRect.X,
                                             aTmpRect.Y,
-                                            aTmpRect.X+aTmpRect.Width, 
+                                            aTmpRect.X+aTmpRect.Width,
                                             aTmpRect.Y+aTmpRect.Height );
         }
 
         double getAPIShapePrio( const uno::Reference< drawing::XShape >& xShape )
         {
-            uno::Reference< beans::XPropertySet > xPropSet( xShape, 
+            uno::Reference< beans::XPropertySet > xPropSet( xShape,
                                                             uno::UNO_QUERY_THROW );
             // read prio
             sal_Int32 nPrio(0);
-            if( !(xPropSet->getPropertyValue( 
+            if( !(xPropSet->getPropertyValue(
                       ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("ZOrder") ) ) >>= nPrio) )
             {
                 ENSURE_OR_THROW( false,
                                   "getAPIShapePrio(): Could not get \"ZOrder\" property from shape" );
             }
 
-            // TODO(F2): Check and adapt the range of possible values here. 
+            // TODO(F2): Check and adapt the range of possible values here.
             // Maybe we can also take the total number of shapes here
             return nPrio / 65535.0;
         }
@@ -834,16 +834,16 @@ namespace slideshow
                                            rSlideSize.getX(),
                                            rSlideSize.getY() );
             basegfx::B2DRange aTmpRect;
-            canvas::tools::calcTransformedRectBounds( aTmpRect, 
-                                                      aRect, 
+            canvas::tools::calcTransformedRectBounds( aTmpRect,
+                                                      aRect,
                                                       pView->getTransformation() );
 
             // #i42440# Returned slide size is one pixel too small, as
             // rendering happens one pixel to the right and below the
             // actual bound rect.
-            return basegfx::B2IVector( 
+            return basegfx::B2IVector(
                 basegfx::fround( aTmpRect.getRange().getX() ) + 1,
                 basegfx::fround( aTmpRect.getRange().getY() ) + 1 );
-        } 
+        }
     }
 }

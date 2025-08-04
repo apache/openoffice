@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -322,10 +322,10 @@ XMLTextFrameContourContext_Impl::XMLTextFrameContourContext_Impl(
         if(aPolyPolygon.count())
         {
             const basegfx::B2DRange aSourceRange(
-                aViewBox.GetX(), aViewBox.GetY(), 
+                aViewBox.GetX(), aViewBox.GetY(),
                 aViewBox.GetX() + aViewBox.GetWidth(), aViewBox.GetY() + aViewBox.GetHeight());
             const basegfx::B2DRange aTargetRange(
-                0.0, 0.0, 
+                0.0, 0.0,
                 nWidth, nHeight);
 
             if(!aSourceRange.equal(aTargetRange))
@@ -844,7 +844,7 @@ XMLTextFrameContext_Impl::XMLTextFrameContext_Impl(
     const Reference< XAttributeList > & rAttrList,
     TextContentAnchorType eATyp,
     sal_uInt16 nNewType,
-    const Reference< XAttributeList > & rFrameAttrList, 
+    const Reference< XAttributeList > & rFrameAttrList,
     bool bSetNameForFrame)
 :   SvXMLImportContext( rImport, nPrfx, rLName )
 ,   mbListContextPushed( false )
@@ -1602,10 +1602,10 @@ SvXMLImportContext *XMLTextFrameContext::CreateChildContext(
 
                 if( !pContext )
                 {
-                    pContext = new XMLTextFrameContext_Impl( 
-                        GetImport(), 
+                    pContext = new XMLTextFrameContext_Impl(
+                        GetImport(),
                         p_nPrefix,
-                        rLocalName, 
+                        rLocalName,
                         xAttrList,
                         m_eDefaultAnchorType,
                         nFrameType,
@@ -1626,12 +1626,12 @@ SvXMLImportContext *XMLTextFrameContext::CreateChildContext(
     {
         // read another image
         pContext = new XMLTextFrameContext_Impl(
-            GetImport(), 
-            p_nPrefix, 
-            rLocalName, 
+            GetImport(),
+            p_nPrefix,
+            rLocalName,
             xAttrList,
-            m_eDefaultAnchorType, 
-            XML_TEXT_FRAME_GRAPHIC, 
+            m_eDefaultAnchorType,
+            XML_TEXT_FRAME_GRAPHIC,
             m_xAttrList,
             false);
 

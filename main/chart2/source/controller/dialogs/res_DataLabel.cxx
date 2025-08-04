@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -180,14 +180,14 @@ DataLabelResources::DataLabelResources( Window* pWindow, const SfxItemSet& rInAt
     aCBSize.setWidth(nCBXWidth);
     m_aCBNumber.SetSizePixel( aCBSize );
     m_aCBPercent.SetSizePixel( aCBSize );
-    
+
     //place and align separator and label placement listboxes
     Size aSize( m_aFT_LabelPlacement.GetSizePixel() );
     aSize.setWidth( m_aFT_LabelPlacement.CalcMinimumSize().getWidth() );
     m_aFT_LabelPlacement.SetSizePixel(aSize);
 
     long nWantedMinLeftBorder = m_aFT_LabelPlacement.GetPosPixel().X() + aSize.getWidth () + aControlDistance.Width();
-    
+
     m_aSeparatorResources.PositionBelowControl(m_aCBSymbol);
     m_aSeparatorResources.AlignListBoxWidthAndXPos( nWantedMinLeftBorder, -1, m_aLB_LabelPlacement.CalcMinimumSize().getWidth() );
     m_aSeparatorResources.Show(true);

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,7 +42,7 @@ sal_uInt32 gcd(sal_uInt32 a, sal_uInt32 b)
     while ((a & 1) == 0)
         a >>= 1;
 
-    do 
+    do
     {
         while ((b & 1) == 0)
             b >>= 1;
@@ -102,26 +102,26 @@ Fraction Fraction::inverse() const
     return Fraction(mnDenominator, mnNumerator);
 }
 
-Fraction Fraction::operator + (const Fraction & rFraction) const 
+Fraction Fraction::operator + (const Fraction & rFraction) const
 {
     sal_uInt32 nLCM = lcm(mnDenominator, rFraction.mnDenominator);
 
     return Fraction(mnNumerator * nLCM / mnDenominator + rFraction.mnNumerator * nLCM / rFraction.mnDenominator, nLCM);
 }
 
-Fraction Fraction::operator - (const Fraction & rFraction) const 
+Fraction Fraction::operator - (const Fraction & rFraction) const
 {
     sal_uInt32 nLCM = lcm(mnDenominator, rFraction.mnDenominator);
 
     return Fraction(mnNumerator * nLCM / mnDenominator - rFraction.mnNumerator * nLCM / rFraction.mnDenominator, nLCM);
 }
 
-Fraction Fraction::operator * (const Fraction & rFraction) const 
+Fraction Fraction::operator * (const Fraction & rFraction) const
 {
     return Fraction(mnNumerator * rFraction.mnNumerator, mnDenominator * rFraction.mnDenominator);
 }
 
-Fraction Fraction::operator / (const Fraction & rFraction) const 
+Fraction Fraction::operator / (const Fraction & rFraction) const
 {
     return *this * rFraction.inverse();
 }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -122,7 +122,7 @@ Reference< XResultSet > SAL_CALL java_sql_DatabaseMetaData::getTables(
 
     jobject out(0);
     SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
-	
+
     {
 		// Java-Call absetzen
 		static jmethodID mID(NULL);
@@ -313,7 +313,7 @@ sal_Int32 SAL_CALL java_sql_DatabaseMetaData::getMaxTableNameLength(  ) throw(SQ
     return impl_callIntMethod( "getMaxTableNameLength", mID );
 }
 // -------------------------------------------------------------------------
-sal_Int32 java_sql_DatabaseMetaData::impl_getMaxTablesInSelect_throw(  ) 
+sal_Int32 java_sql_DatabaseMetaData::impl_getMaxTablesInSelect_throw(  )
 {
 	static jmethodID mID(NULL);
     return impl_callIntMethod( "getMaxTablesInSelect", mID );
@@ -351,7 +351,7 @@ Reference< XResultSet > SAL_CALL java_sql_DatabaseMetaData::getIndexInfo(
 
     jobject out(0);
     SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
-	
+
     {
 		// Java-Call absetzen
 		static jmethodID mID(NULL);
@@ -392,7 +392,7 @@ Reference< XResultSet > SAL_CALL java_sql_DatabaseMetaData::getBestRowIdentifier
 
     jobject out(0);
     SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
-	
+
     {
 		// Java-Call absetzen
 		static jmethodID mID(NULL);
@@ -629,7 +629,7 @@ Reference< XResultSet > java_sql_DatabaseMetaData::impl_callResultSetMethodWithS
 
     SDBThreadAttach t;
     OSL_ENSURE( t.pEnv, "java_sql_DatabaseMetaData::impl_callResultSetMethodWithStrings: no Java environment anymore!" );
-	
+
     {
         const  char* pSignature = _pOptionalAdditionalString
             ?   "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;"
@@ -638,7 +638,7 @@ Reference< XResultSet > java_sql_DatabaseMetaData::impl_callResultSetMethodWithS
         obtainMethodId(t.pEnv, _pMethodName,pSignature, _inout_MethodID);
 
         // call method
-        
+
         {
             jvalue args[4];
             // convert parameters
@@ -693,7 +693,7 @@ sal_Bool SAL_CALL java_sql_DatabaseMetaData::storesLowerCaseIdentifiers(  ) thro
     return impl_callBooleanMethod( "storesLowerCaseIdentifiers", mID );
 }
 // -------------------------------------------------------------------------
-sal_Bool java_sql_DatabaseMetaData::impl_storesMixedCaseQuotedIdentifiers_throw(  ) 
+sal_Bool java_sql_DatabaseMetaData::impl_storesMixedCaseQuotedIdentifiers_throw(  )
 {
 	static jmethodID mID(NULL);
     return impl_callBooleanMethod( "storesMixedCaseQuotedIdentifiers", mID );
@@ -867,7 +867,7 @@ sal_Bool SAL_CALL java_sql_DatabaseMetaData::supportsSchemasInIndexDefinitions( 
     return impl_callBooleanMethod( "supportsSchemasInIndexDefinitions", mID );
 }
 // -------------------------------------------------------------------------
-sal_Bool java_sql_DatabaseMetaData::impl_supportsSchemasInTableDefinitions_throw(  ) 
+sal_Bool java_sql_DatabaseMetaData::impl_supportsSchemasInTableDefinitions_throw(  )
 {
 	static jmethodID mID(NULL);
     return impl_callBooleanMethod( "supportsSchemasInTableDefinitions", mID );
@@ -885,7 +885,7 @@ sal_Bool SAL_CALL java_sql_DatabaseMetaData::supportsCatalogsInIndexDefinitions(
     return impl_callBooleanMethod( "supportsCatalogsInIndexDefinitions", mID );
 }
 // -------------------------------------------------------------------------
-sal_Bool java_sql_DatabaseMetaData::impl_supportsCatalogsInDataManipulation_throw(  ) 
+sal_Bool java_sql_DatabaseMetaData::impl_supportsCatalogsInDataManipulation_throw(  )
 {
 	static jmethodID mID(NULL);
     return impl_callBooleanMethod( "supportsCatalogsInDataManipulation", mID );
@@ -903,7 +903,7 @@ Reference< XResultSet > SAL_CALL java_sql_DatabaseMetaData::getTableTypes(  ) th
     return impl_callResultSetMethod( "getTableTypes", mID );
 }
 // -------------------------------------------------------------------------
-sal_Int32 java_sql_DatabaseMetaData::impl_getMaxStatements_throw(  ) 
+sal_Int32 java_sql_DatabaseMetaData::impl_getMaxStatements_throw(  )
 {
 	static jmethodID mID(NULL);
     return impl_callIntMethod( "getMaxStatements", mID );
@@ -1001,7 +1001,7 @@ sal_Bool SAL_CALL java_sql_DatabaseMetaData::supportsConvert( sal_Int32 fromType
 
     jboolean out( sal_False );
 	SDBThreadAttach t;
-	
+
     {
         static jmethodID mID(NULL);
         obtainMethodId(t.pEnv, pMethodName,"(II)Z", mID);
@@ -1343,7 +1343,7 @@ sal_Bool SAL_CALL java_sql_DatabaseMetaData::supportsResultSetConcurrency( sal_I
 
 	jboolean out( sal_False );
     SDBThreadAttach t;
-	
+
 	{
 		static jmethodID mID(NULL);
         obtainMethodId(t.pEnv, pMethodName,"(II)Z", mID);

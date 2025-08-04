@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,17 +45,17 @@ using namespace ::com::sun::star;
 namespace accessibility
 {
 
-    AccessibleHyperlink::AccessibleHyperlink( SvxAccessibleTextAdapter& r, SvxFieldItem* p, sal_uInt32 nP, sal_uInt16 nR, sal_Int32 nStt, sal_Int32 nEnd, const ::rtl::OUString& rD ) 
+    AccessibleHyperlink::AccessibleHyperlink( SvxAccessibleTextAdapter& r, SvxFieldItem* p, sal_uInt32 nP, sal_uInt16 nR, sal_Int32 nStt, sal_Int32 nEnd, const ::rtl::OUString& rD )
     : rTA( r )
-    { 
-        pFld = p; 
-        nPara = nP; 
-        nRealIdx = nR; 
-        nStartIdx = nStt; 
-        nEndIdx = nEnd; 
+    {
+        pFld = p;
+        nPara = nP;
+        nRealIdx = nR;
+        nStartIdx = nStt;
+        nEndIdx = nEnd;
         aDescription = rD;
     }
-    
+
     AccessibleHyperlink::~AccessibleHyperlink()
     {
         delete pFld;
@@ -66,7 +66,7 @@ namespace accessibility
     {
     	 return isValid() ? 1 : 0;
     }
-    
+
     sal_Bool SAL_CALL AccessibleHyperlink::doAccessibleAction( sal_Int32 nIndex  ) throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
     {
     	sal_Bool bRet = sal_False;
@@ -77,26 +77,26 @@ namespace accessibility
     	}
     	return bRet;
     }
-    
+
     ::rtl::OUString  SAL_CALL AccessibleHyperlink::getAccessibleActionDescription( sal_Int32 nIndex ) throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
     {
     	::rtl::OUString aDesc;
 
     	if ( isValid() && ( nIndex == 0 ) )
     	    aDesc = aDescription;
-    
+
     	return aDesc;
     }
-    
+
     uno::Reference< ::com::sun::star::accessibility::XAccessibleKeyBinding > SAL_CALL AccessibleHyperlink::getAccessibleActionKeyBinding( sal_Int32 nIndex ) throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
     {
     	uno::Reference< ::com::sun::star::accessibility::XAccessibleKeyBinding > xKeyBinding;
-    
+
     	if( isValid() && ( nIndex == 0 ) )
     	{
     		::comphelper::OAccessibleKeyBindingHelper* pKeyBindingHelper = new ::comphelper::OAccessibleKeyBindingHelper();
     		xKeyBinding = pKeyBindingHelper;
-    
+
             awt::KeyStroke aKeyStroke;
     		aKeyStroke.Modifiers = 0;
     		aKeyStroke.KeyCode = KEY_RETURN;
@@ -104,7 +104,7 @@ namespace accessibility
     		aKeyStroke.KeyFunc = 0;
     		pKeyBindingHelper->AddKeyBinding( aKeyStroke );
     	}
-    
+
     	return xKeyBinding;
     }
 
@@ -113,22 +113,22 @@ namespace accessibility
     {
     	return uno::Any();
     }
-    
+
     uno::Any SAL_CALL AccessibleHyperlink::getAccessibleActionObject( sal_Int32 /*nIndex*/ ) throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
     {
     	return uno::Any();
     }
-    
+
     sal_Int32 SAL_CALL AccessibleHyperlink::getStartIndex() throw (uno::RuntimeException)
     {
     	return nStartIdx;
     }
-    
+
     sal_Int32 SAL_CALL AccessibleHyperlink::getEndIndex() throw (uno::RuntimeException)
     {
     	return nEndIdx;
     }
-    
+
     sal_Bool SAL_CALL AccessibleHyperlink::isValid(  ) throw (uno::RuntimeException)
     {
     	return rTA.IsValid();
@@ -144,7 +144,7 @@ namespace accessibility
 
 /*
 
-class SVX_DLLPUBLIC SvxAccessibleHyperlink : 
+class SVX_DLLPUBLIC SvxAccessibleHyperlink :
 		public ::cppu::WeakImplHelper1<
 		::com::sun::star::accessibility::XAccessibleHyperlink >
 {
@@ -169,35 +169,35 @@ public:
 	sal_Bool IsValidHyperlink();
 
 	// XAccessibleAction
-    virtual sal_Int32 SAL_CALL getAccessibleActionCount() 
+    virtual sal_Int32 SAL_CALL getAccessibleActionCount()
 		throw (::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL doAccessibleAction( sal_Int32 nIndex ) 
-		throw (::com::sun::star::lang::IndexOutOfBoundsException, 
-				::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getAccessibleActionDescription( 
-				sal_Int32 nIndex ) 
+    virtual sal_Bool SAL_CALL doAccessibleAction( sal_Int32 nIndex )
 		throw (::com::sun::star::lang::IndexOutOfBoundsException,
 				::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Reference< 
+    virtual ::rtl::OUString SAL_CALL getAccessibleActionDescription(
+				sal_Int32 nIndex )
+		throw (::com::sun::star::lang::IndexOutOfBoundsException,
+				::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference<
 			::com::sun::star::accessibility::XAccessibleKeyBinding > SAL_CALL
-		   	getAccessibleActionKeyBinding( sal_Int32 nIndex ) 
-		throw (::com::sun::star::lang::IndexOutOfBoundsException, 
+		   	getAccessibleActionKeyBinding( sal_Int32 nIndex )
+		throw (::com::sun::star::lang::IndexOutOfBoundsException,
 				::com::sun::star::uno::RuntimeException);
 
 	// XAccessibleHyperlink
-    virtual ::com::sun::star::uno::Any SAL_CALL getAccessibleActionAnchor( 
-				sal_Int32 nIndex ) 
-		throw (::com::sun::star::lang::IndexOutOfBoundsException, 
+    virtual ::com::sun::star::uno::Any SAL_CALL getAccessibleActionAnchor(
+				sal_Int32 nIndex )
+		throw (::com::sun::star::lang::IndexOutOfBoundsException,
 				::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Any SAL_CALL getAccessibleActionObject( 
-			sal_Int32 nIndex ) 
-		throw (::com::sun::star::lang::IndexOutOfBoundsException, 
+    virtual ::com::sun::star::uno::Any SAL_CALL getAccessibleActionObject(
+			sal_Int32 nIndex )
+		throw (::com::sun::star::lang::IndexOutOfBoundsException,
 				::com::sun::star::uno::RuntimeException);
-    virtual sal_Int32 SAL_CALL getStartIndex() 
+    virtual sal_Int32 SAL_CALL getStartIndex()
 		throw (::com::sun::star::uno::RuntimeException);
-    virtual sal_Int32 SAL_CALL getEndIndex() 
+    virtual sal_Int32 SAL_CALL getEndIndex()
 		throw (::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL isValid(  ) 
+    virtual sal_Bool SAL_CALL isValid(  )
 		throw (::com::sun::star::uno::RuntimeException);
 };
 
@@ -214,8 +214,8 @@ SvxAccessibleHyperlink::SvxAccessibleHyperlink( const SvxURLField *p,
 	else
 		mpField = NULL;
 }
-	
-SvxAccessibleHyperlink::SvxAccessibleHyperlink(SdrObject* p, 
+
+SvxAccessibleHyperlink::SvxAccessibleHyperlink(SdrObject* p,
 											::accessibility::AccessibleShape* pAcc) :
 	nStartIdx( -1 ),
 	nEndIdx( -1 ),
@@ -244,7 +244,7 @@ SvxAccessibleHyperlink::~SvxAccessibleHyperlink()
 	{
 		if (nIndex < 0 || nIndex >=mpImageMap->GetIMapObjectCount())
 			throw IndexOutOfBoundsException();
-		
+
 		IMapObject* pMapObj = mpImageMap->GetIMapObject(sal_uInt16(nIndex));
 		if (pMapObj->GetURL().Len())
 			return ::rtl::OUString( pMapObj->GetURL() );
@@ -253,17 +253,17 @@ SvxAccessibleHyperlink::~SvxAccessibleHyperlink()
 	{
 		if (nIndex != 0)
 	        throw ::com::sun::star::lang::IndexOutOfBoundsException();
-		
+
 		SdrUnoObj* pUnoCtrl = dynamic_cast< SdrUnoObj* >( m_pShape );
-	
-		if(pUnoCtrl) 
+
+		if(pUnoCtrl)
 		{
 			try
 			{
 				uno::Reference< awt::XControlModel > xControlModel( pUnoCtrl->GetUnoControlModel(), uno::UNO_QUERY_THROW );
 				uno::Reference< beans::XPropertySet > xPropSet( xControlModel, uno::UNO_QUERY_THROW );
 				uno::Reference< beans::XPropertySetInfo > xPropInfo( xPropSet->getPropertySetInfo(), uno::UNO_QUERY_THROW );
-		
+
 				form::FormButtonType eButtonType = form::FormButtonType_URL;
 				const ::rtl::OUString sButtonType( RTL_CONSTASCII_USTRINGPARAM( "ButtonType" ) );
 				if(xPropInfo->hasPropertyByName( sButtonType ) && (xPropSet->getPropertyValue( sButtonType ) >>= eButtonType ) )
@@ -301,18 +301,18 @@ sal_Bool SvxAccessibleHyperlink::IsValidHyperlink()
 		return sal_False;
 }
 // XAccessibleAction
-sal_Int32 SAL_CALL SvxAccessibleHyperlink::getAccessibleActionCount() 
+sal_Int32 SAL_CALL SvxAccessibleHyperlink::getAccessibleActionCount()
 		throw (RuntimeException)
 {
 	if (mpImageMap)
 		return mpImageMap->GetIMapObjectCount();
 	else
 		return 1;	// only shape link or url field
-		
+
 	//return mpField ? 1 : (mpImageMap ? mpImageMap->GetIMapObjectCount() : 0);
 }
 
-sal_Bool SAL_CALL SvxAccessibleHyperlink::doAccessibleAction( sal_Int32 nIndex ) 
+sal_Bool SAL_CALL SvxAccessibleHyperlink::doAccessibleAction( sal_Int32 nIndex )
 		throw (IndexOutOfBoundsException, RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
@@ -320,8 +320,8 @@ sal_Bool SAL_CALL SvxAccessibleHyperlink::doAccessibleAction( sal_Int32 nIndex )
 	sal_Bool bRet = sal_False;
 
 	OUString url = GetHyperlinkURL(nIndex);
-	
-	if( url.getLength() > 0 ) 
+
+	if( url.getLength() > 0 )
 	{
 		SfxStringItem aStrItem(SID_FILE_NAME, url);
 		const SfxObjectShell* pDocSh = SfxObjectShell::Current();
@@ -345,16 +345,16 @@ sal_Bool SAL_CALL SvxAccessibleHyperlink::doAccessibleAction( sal_Int32 nIndex )
 
 	return bRet;
 }
-		
+
 OUString SAL_CALL SvxAccessibleHyperlink::getAccessibleActionDescription(
-		sal_Int32 nIndex ) 
+		sal_Int32 nIndex )
 		throw (IndexOutOfBoundsException, RuntimeException)
 {
 	return GetHyperlinkURL(nIndex);
 }
 
 ::com::sun::star::uno::Reference< XAccessibleKeyBinding > SAL_CALL
-	SvxAccessibleHyperlink::getAccessibleActionKeyBinding( sal_Int32 ) 
+	SvxAccessibleHyperlink::getAccessibleActionKeyBinding( sal_Int32 )
 	throw (IndexOutOfBoundsException, RuntimeException)
 {
 	::com::sun::star::uno::Reference< XAccessibleKeyBinding > xKeyBinding;
@@ -378,7 +378,7 @@ OUString SAL_CALL SvxAccessibleHyperlink::getAccessibleActionDescription(
 
 // XAccessibleHyperlink
 Any SAL_CALL SvxAccessibleHyperlink::getAccessibleActionAnchor(
-		sal_Int32 nIndex ) 
+		sal_Int32 nIndex )
 		throw (IndexOutOfBoundsException, RuntimeException)
 {
 	Any aRet;
@@ -386,7 +386,7 @@ Any SAL_CALL SvxAccessibleHyperlink::getAccessibleActionAnchor(
 	::rtl::OUString retText;
 	if(mpField && nIndex == 0)
 	{
-		retText = mpField->GetRepresentation();		
+		retText = mpField->GetRepresentation();
 		aRet <<= retText;
 		return aRet;
 	}
@@ -405,8 +405,8 @@ Any SAL_CALL SvxAccessibleHyperlink::getAccessibleActionAnchor(
 	return aRet;
 }
 
-Any SAL_CALL SvxAccessibleHyperlink::getAccessibleActionObject( 
-			sal_Int32 nIndex ) 
+Any SAL_CALL SvxAccessibleHyperlink::getAccessibleActionObject(
+			sal_Int32 nIndex )
 	throw (IndexOutOfBoundsException, RuntimeException)
 {
 	::rtl::OUString retText = GetHyperlinkURL(nIndex);
@@ -415,26 +415,26 @@ Any SAL_CALL SvxAccessibleHyperlink::getAccessibleActionObject(
 	return aRet;
 }
 
-sal_Int32 SAL_CALL SvxAccessibleHyperlink::getStartIndex() 
+sal_Int32 SAL_CALL SvxAccessibleHyperlink::getStartIndex()
 		throw (RuntimeException)
 {
 	return nStartIdx;
 }
 
-sal_Int32 SAL_CALL SvxAccessibleHyperlink::getEndIndex() 
+sal_Int32 SAL_CALL SvxAccessibleHyperlink::getEndIndex()
 		throw (RuntimeException)
 {
 	return nEndIdx;
 }
 
-sal_Bool SAL_CALL SvxAccessibleHyperlink::isValid(  ) 
+sal_Bool SAL_CALL SvxAccessibleHyperlink::isValid(  )
 		throw (RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 	//return mpField ? sal_True: ( mpImageMap ? sal_True : sal_False );
 	if (mpField || m_pShape)
 		return sal_True;
-	else 
+	else
 		return sal_False;
 }
 

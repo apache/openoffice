@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -599,7 +599,7 @@ const wwSprmSearcher *wwSprmParser::GetWW8SprmSearcher()
         {0x9031, 2, L_FIX}, // "sprmSDyaLinePitch"
                             // sep.dyaLinePitch;dya; WRONG:long; RIGHT:short; !
         {0x5032, 2, L_FIX}, // "sprmSClm" ;;;
-        {0x5033, 2, L_FIX}, // "sprmSTextFlow" sep.wTextFlow;complex 
+        {0x5033, 2, L_FIX}, // "sprmSTextFlow" sep.wTextFlow;complex
         {0x5400, 2, L_FIX}, // "sprmTJc" tap.jc;jc;word (low order byte is
                             // significant);
         {0x9601, 2, L_FIX}, // "sprmTDxaLeft" tap.rgdxaCenter
@@ -6388,7 +6388,7 @@ bool WW8Dop::Write(SvStream& rStrm, WW8Fib& rFib) const
 	Set_UInt32( pData, lKeyProtDoc );
 
 	a16Bit = 0;
-	if (wvkSaved)	
+	if (wvkSaved)
         a16Bit |= 0x0007;
 	a16Bit |= (0x0ff8 & (wScaleSaved << 3));
 	a16Bit |= (0x3000 & (zkSaved << 12));
@@ -6436,7 +6436,7 @@ bool WW8Dop::Write(SvStream& rStrm, WW8Fib& rFib) const
 		Set_UInt16( pData, nfcEdnRef );
 		Set_UInt16( pData, hpsZoonFontPag );
 		Set_UInt16( pData, dywDispPag );
-        
+
         //500 -> 508, Appear to be repeated here in 2000+
         pData += 8;
         Set_UInt32(pData, GetCompatabilityOptions());
@@ -6533,7 +6533,7 @@ sal_uInt16 WW8DopTypography::GetConvertedLang() const
 //-----------------------------------------
 //				Sprms
 //-----------------------------------------
-sal_uInt16 wwSprmParser::GetSprmTailLen(sal_uInt16 nId, const sal_uInt8* pSprm) 
+sal_uInt16 wwSprmParser::GetSprmTailLen(sal_uInt16 nId, const sal_uInt8* pSprm)
     const
 {
     SprmInfo aSprm = GetSprmInfo(nId);
@@ -6614,13 +6614,13 @@ sal_uInt16 wwSprmParser::GetSprmId(const sal_uInt8* pSp) const
     switch (mnVersion)	// 6 stands for "6 OR 7",  7 stands for "ONLY 7"
     {
         case 6:
-        case 7: 
+        case 7:
             nId = *pSp;
-            if (0x0100 < nId) 
+            if (0x0100 < nId)
                 nId = 0;
             break;
         default:
-        case 8: 
+        case 8:
             nId = SVBT16ToShort(pSp);
             if (0x0800 > nId)
                 nId = 0;
@@ -6656,8 +6656,8 @@ SEPr::SEPr() :
     xaPage(12242), yaPage(15842), xaPageNUp(12242), yaPageNUp(15842),
     dxaLeft(1800), dxaRight(1800), dyaTop(1440), dyaBottom(1440), dzaGutter(0),
     dyaHdrTop(720), dyaHdrBottom(720), ccolM1(0), fEvenlySpaced(1),
-    reserved3(0), fBiDi(0), fFacingCol(0), fRTLGutter(0), fRTLAlignment(0), 
-    dxaColumns(720), dxaColumnWidth(0), dmOrientFirst(0), fLayout(0), 
+    reserved3(0), fBiDi(0), fFacingCol(0), fRTLGutter(0), fRTLAlignment(0),
+    dxaColumns(720), dxaColumnWidth(0), dmOrientFirst(0), fLayout(0),
     reserved4(0)
 {
     memset(rgdxaColumnWidthSpacing, 0, sizeof(rgdxaColumnWidthSpacing));

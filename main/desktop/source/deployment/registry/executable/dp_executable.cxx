@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -52,7 +52,7 @@ class BackendImpl : public ::dp_registry::backend::PackageRegistryBackend
     class ExecutablePackageImpl : public ::dp_registry::backend::Package
     {
         BackendImpl * getMyBackend() const;
-        
+
         // Package
         virtual beans::Optional< beans::Ambiguous<sal_Bool> > isRegistered_(
             ::osl::ResettableMutexGuard & guard,
@@ -67,7 +67,7 @@ class BackendImpl : public ::dp_registry::backend::PackageRegistryBackend
 
         bool getFileAttributes(sal_uInt64& out_Attributes);
         bool isUrlTargetInExtension();
-        
+
     public:
         inline ExecutablePackageImpl(
             ::rtl::Reference<PackageRegistryBackend> const & myBackend,
@@ -79,10 +79,10 @@ class BackendImpl : public ::dp_registry::backend::PackageRegistryBackend
             {}
     };
     friend class ExecutablePackageImpl;
-    
+
     typedef ::std::hash_map< OUString, Reference<XInterface>,
                              ::rtl::OUStringHash > t_string2object;
-   
+
     // PackageRegistryBackend
     virtual Reference<deployment::XPackage> bindPackage_(
         OUString const & url, OUString const & mediaType, sal_Bool bRemoved,
@@ -97,7 +97,7 @@ class BackendImpl : public ::dp_registry::backend::PackageRegistryBackend
 public:
     BackendImpl( Sequence<Any> const & args,
                  Reference<XComponentContext> const & xComponentContext );
-    
+
     // XPackageRegistry
     virtual Sequence< Reference<deployment::XPackageTypeInfo> > SAL_CALL
     getSupportedPackageTypes() throw (RuntimeException);
@@ -125,7 +125,7 @@ BackendImpl::BackendImpl(
         OUString dbFile = makeURL(getCachePath(), OUSTR("backenddb.xml"));
         m_backendDb.reset(
             new ExecutableBackendDb(getComponentContext(), dbFile));
-   }    
+   }
 }
 
 void BackendImpl::addDataToDb(OUString const & url)
@@ -192,7 +192,7 @@ Reference<deployment::XPackage> BackendImpl::bindPackage_(
             if (subType.EqualsIgnoreCaseAscii("vnd.sun.star.executable"))
             {
                 return new BackendImpl::ExecutablePackageImpl(
-                    this, url, name,  m_xExecutableTypeInfo, bRemoved, 
+                    this, url, name,  m_xExecutableTypeInfo, bRemoved,
                     identifier);
             }
         }
@@ -208,12 +208,12 @@ BackendImpl * BackendImpl::ExecutablePackageImpl::getMyBackend() const
 {
     BackendImpl * pBackend = static_cast<BackendImpl *>(m_myBackend.get());
     if (NULL == pBackend)
-    {    
+    {
         //May throw a DisposedException
         check();
         //We should never get here...
         throw RuntimeException(
-            OUSTR("Failed to get the BackendImpl"), 
+            OUSTR("Failed to get the BackendImpl"),
             static_cast<OWeakObject*>(const_cast<ExecutablePackageImpl *>(this)));
     }
     return pBackend;
@@ -258,7 +258,7 @@ void BackendImpl::ExecutablePackageImpl::processPackage_(
                                | osl_File_Attribute_OthExe);
             else if (!getMyBackend()->m_context.equals(OUSTR("bundled"))
                 && !getMyBackend()->m_context.equals(OUSTR("bundled_prereg")))
-                //Bundled extension are required to be in the properly 
+                //Bundled extension are required to be in the properly
                 //installed. That is an executable must have the right flags
                 OSL_ASSERT(0);
 
@@ -276,7 +276,7 @@ void BackendImpl::ExecutablePackageImpl::processPackage_(
 
 //We currently cannot check if this XPackage represents a content of a particular extension
 //But we can check if we are within $UNO_USER_PACKAGES_CACHE etc.
-//Done for security reasons. For example an extension manifest could contain a path to 
+//Done for security reasons. For example an extension manifest could contain a path to
 //an executable outside the extension.
 bool BackendImpl::ExecutablePackageImpl::isUrlTargetInExtension()
 {
@@ -287,7 +287,7 @@ bool BackendImpl::ExecutablePackageImpl::isUrlTargetInExtension()
     else if (getMyBackend()->m_context.equals(OUSTR("shared")))
         sExtensionDir = dp_misc::expandUnoRcTerm(OUSTR("$UNO_SHARED_PACKAGES_CACHE"));
     else if (getMyBackend()->m_context.equals(OUSTR("bundled"))
-        || getMyBackend()->m_context.equals(OUSTR("bundled_prereg"))) 
+        || getMyBackend()->m_context.equals(OUSTR("bundled_prereg")))
         sExtensionDir = dp_misc::expandUnoRcTerm(OUSTR("$BUNDLED_EXTENSIONS"));
     else
         OSL_ASSERT(0);

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -47,7 +47,7 @@ namespace
 
     const sal_Char **GetStiNames() throw()
     {
-        static const sal_Char *stiName[] = 
+        static const sal_Char *stiName[] =
         {
             "Normal",
             "Heading 1",
@@ -196,9 +196,9 @@ namespace ww
             return stiUser;
         else
         {
-            static sti aMapping[] = 
+            static sti aMapping[] =
             {
-                stiNil, stiAtnRef, stiAtnText, stiToc8, stiToc7, stiToc6, 
+                stiNil, stiAtnRef, stiAtnText, stiToc8, stiToc7, stiToc6,
                 stiToc5, stiToc4, stiToc3, stiToc2, stiToc1, stiIndex7,
                 stiIndex6, stiIndex5, stiIndex4, stiIndex3, stiIndex2,
                 stiIndex1, stiLnn, stiIndexHeading, stiFooter, stiHeader,

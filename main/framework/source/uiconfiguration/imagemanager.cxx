@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -164,7 +164,7 @@ throw (::com::sun::star::uno::RuntimeException)
 ::sal_Bool SAL_CALL ImageManager::hasImage( ::sal_Int16 nImageType, const ::rtl::OUString& aCommandURL )
 throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException)
 {
-    return m_pImpl->hasImage(nImageType,aCommandURL);   
+    return m_pImpl->hasImage(nImageType,aCommandURL);
 }
 
 Sequence< uno::Reference< XGraphic > > SAL_CALL ImageManager::getImages(
@@ -175,42 +175,42 @@ throw ( ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno:
     return m_pImpl->getImages(nImageType,aCommandURLSequence);
 }
 
-void SAL_CALL ImageManager::replaceImages( 
-    ::sal_Int16 nImageType, 
-    const Sequence< ::rtl::OUString >& aCommandURLSequence, 
-    const Sequence< uno::Reference< XGraphic > >& aGraphicsSequence ) 
-throw ( ::com::sun::star::lang::IllegalArgumentException, 
-        ::com::sun::star::lang::IllegalAccessException, 
+void SAL_CALL ImageManager::replaceImages(
+    ::sal_Int16 nImageType,
+    const Sequence< ::rtl::OUString >& aCommandURLSequence,
+    const Sequence< uno::Reference< XGraphic > >& aGraphicsSequence )
+throw ( ::com::sun::star::lang::IllegalArgumentException,
+        ::com::sun::star::lang::IllegalAccessException,
         ::com::sun::star::uno::RuntimeException)
 {
     m_pImpl->replaceImages(nImageType,aCommandURLSequence,aGraphicsSequence);
 }
 
-void SAL_CALL ImageManager::removeImages( ::sal_Int16 nImageType, const Sequence< ::rtl::OUString >& aCommandURLSequence ) 
-throw ( ::com::sun::star::lang::IllegalArgumentException, 
-        ::com::sun::star::lang::IllegalAccessException, 
+void SAL_CALL ImageManager::removeImages( ::sal_Int16 nImageType, const Sequence< ::rtl::OUString >& aCommandURLSequence )
+throw ( ::com::sun::star::lang::IllegalArgumentException,
+        ::com::sun::star::lang::IllegalAccessException,
         ::com::sun::star::uno::RuntimeException)
 {
     m_pImpl->removeImages(nImageType,aCommandURLSequence);
 }
 
-void SAL_CALL ImageManager::insertImages( ::sal_Int16 nImageType, const Sequence< ::rtl::OUString >& aCommandURLSequence, const Sequence< uno::Reference< XGraphic > >& aGraphicSequence ) 
-throw ( ::com::sun::star::container::ElementExistException, 
-        ::com::sun::star::lang::IllegalArgumentException, 
-        ::com::sun::star::lang::IllegalAccessException, 
+void SAL_CALL ImageManager::insertImages( ::sal_Int16 nImageType, const Sequence< ::rtl::OUString >& aCommandURLSequence, const Sequence< uno::Reference< XGraphic > >& aGraphicSequence )
+throw ( ::com::sun::star::container::ElementExistException,
+        ::com::sun::star::lang::IllegalArgumentException,
+        ::com::sun::star::lang::IllegalAccessException,
         ::com::sun::star::uno::RuntimeException)
 {
     m_pImpl->insertImages(nImageType,aCommandURLSequence,aGraphicSequence);
 }
 
 // XUIConfiguration
-void SAL_CALL ImageManager::addConfigurationListener( const uno::Reference< ::com::sun::star::ui::XUIConfigurationListener >& xListener ) 
+void SAL_CALL ImageManager::addConfigurationListener( const uno::Reference< ::com::sun::star::ui::XUIConfigurationListener >& xListener )
 throw (::com::sun::star::uno::RuntimeException)
 {
     m_pImpl->addConfigurationListener(xListener);
 }
 
-void SAL_CALL ImageManager::removeConfigurationListener( const uno::Reference< ::com::sun::star::ui::XUIConfigurationListener >& xListener ) 
+void SAL_CALL ImageManager::removeConfigurationListener( const uno::Reference< ::com::sun::star::ui::XUIConfigurationListener >& xListener )
 throw (::com::sun::star::uno::RuntimeException)
 {
     /* SAFE AREA ----------------------------------------------------------------------------------------------- */
@@ -218,26 +218,26 @@ throw (::com::sun::star::uno::RuntimeException)
 }
 
 // XUIConfigurationPersistence
-void SAL_CALL ImageManager::reload() 
-throw ( ::com::sun::star::uno::Exception, 
+void SAL_CALL ImageManager::reload()
+throw ( ::com::sun::star::uno::Exception,
         ::com::sun::star::uno::RuntimeException )
 {
     m_pImpl->reload();
 }
 
-void SAL_CALL ImageManager::store() 
+void SAL_CALL ImageManager::store()
 throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
 {
     m_pImpl->store();
 }
 
-void SAL_CALL ImageManager::storeToStorage( const uno::Reference< XStorage >& Storage ) 
+void SAL_CALL ImageManager::storeToStorage( const uno::Reference< XStorage >& Storage )
 throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
 {
     m_pImpl->storeToStorage(Storage);
 }
 
-sal_Bool SAL_CALL ImageManager::isModified() 
+sal_Bool SAL_CALL ImageManager::isModified()
 throw (::com::sun::star::uno::RuntimeException)
 {
     return m_pImpl->isModified();

@@ -353,7 +353,7 @@ void SvxPageWindow::DrawPage(const Point& rOrg,const sal_Bool bSecond,const sal_
 
 //UUUU
 void SvxPageWindow::drawFillAttributes(
-    const drawinglayer::attribute::SdrAllFillAttributesHelperPtr& rFillAttributes, 
+    const drawinglayer::attribute::SdrAllFillAttributesHelperPtr& rFillAttributes,
     const Rectangle& rPaintRange,
     const Rectangle& rDefineRange)
 {
@@ -363,8 +363,8 @@ void SvxPageWindow::drawFillAttributes(
         rPaintRange.Right(),
         rPaintRange.Bottom());
 
-    if(!aPaintRange.isEmpty() && 
-        !basegfx::fTools::equalZero(aPaintRange.getWidth()) && 
+    if(!aPaintRange.isEmpty() &&
+        !basegfx::fTools::equalZero(aPaintRange.getWidth()) &&
         !basegfx::fTools::equalZero(aPaintRange.getHeight()))
     {
         const basegfx::B2DRange aDefineRange(
@@ -401,14 +401,14 @@ void SvxPageWindow::drawFillAttributes(
         if(aSequence.getLength())
         {
             const drawinglayer::geometry::ViewInformation2D aViewInformation2D(
-                basegfx::B2DHomMatrix(), 
-                GetViewTransformation(), 
-                aPaintRange, 
+                basegfx::B2DHomMatrix(),
+                GetViewTransformation(),
+                aPaintRange,
                 0,
-                0.0, 
+                0.0,
                 com::sun::star::uno::Sequence< com::sun::star::beans::PropertyValue >());
             drawinglayer::processor2d::BaseProcessor2D* pProcessor = drawinglayer::processor2d::createProcessor2DFromOutputDevice(
-                *this, 
+                *this,
                 aViewInformation2D);
 
             if(pProcessor)
@@ -444,14 +444,14 @@ void SvxPageWindow::SetFtBorder(const SvxBoxItem& rNew)
     pFtBorder = new SvxBoxItem(rNew);
 }
 
-void SvxPageWindow::EnableFrameDirection(sal_Bool bEnable) 
-{ 
-    bFrameDirection = bEnable; 
+void SvxPageWindow::EnableFrameDirection(sal_Bool bEnable)
+{
+    bFrameDirection = bEnable;
 }
 
-void SvxPageWindow::SetFrameDirection(sal_Int32 nDirection) 
-{ 
-    nFrameDirection = nDirection; 
+void SvxPageWindow::SetFrameDirection(sal_Int32 nDirection)
+{
+    nFrameDirection = nDirection;
 }
 
 void SvxPageWindow::ResetBackground()

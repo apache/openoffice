@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,8 +50,8 @@ namespace drawinglayer
 {
 	namespace primitive2d
 	{
-		bool ScenePrimitive2D::impGetShadow3D(const geometry::ViewInformation2D& /*rViewInformation*/) const 
-		{ 
+		bool ScenePrimitive2D::impGetShadow3D(const geometry::ViewInformation2D& /*rViewInformation*/) const
+		{
             ::osl::MutexGuard aGuard( m_aMutex );
 
 			// create on demand
@@ -70,9 +70,9 @@ namespace drawinglayer
 
 				// create shadow extraction processor
 				processor3d::Shadow3DExtractingProcessor aShadowProcessor(
-					getViewInformation3D(), 
+					getViewInformation3D(),
 					getObjectTransformation(),
-					aLightNormal, 
+					aLightNormal,
 					fShadowSlant,
                     aScene3DRange);
 
@@ -277,12 +277,12 @@ namespace drawinglayer
 
 			    // use default 3D primitive processor to create BitmapEx for aUnitVisiblePart and process
 			    processor3d::ZBufferProcessor3D aZBufferProcessor3D(
-                    aViewInformation3D, 
+                    aViewInformation3D,
 					rViewInformation,
-				    getSdrSceneAttribute(), 
+				    getSdrSceneAttribute(),
 				    getSdrLightingAttribute(),
-                    fLogicX, 
-                    fLogicY, 
+                    fLogicX,
+                    fLogicY,
 				    aUnitVisibleRange,
                     nOversampleValue);
 
@@ -334,7 +334,7 @@ namespace drawinglayer
 			{
 				// create 2D geometry extraction processor
 				processor3d::Geometry2DExtractingProcessor aGeometryProcessor(
-					getViewInformation3D(), 
+					getViewInformation3D(),
 					getObjectTransformation());
 
 				// process local primitives
@@ -403,9 +403,9 @@ namespace drawinglayer
         }
 
 		ScenePrimitive2D::ScenePrimitive2D(
-			const primitive3d::Primitive3DSequence& rxChildren3D, 
-			const attribute::SdrSceneAttribute& rSdrSceneAttribute, 
-			const attribute::SdrLightingAttribute& rSdrLightingAttribute, 
+			const primitive3d::Primitive3DSequence& rxChildren3D,
+			const attribute::SdrSceneAttribute& rSdrSceneAttribute,
+			const attribute::SdrLightingAttribute& rSdrLightingAttribute,
 			const basegfx::B2DHomMatrix& rObjectTransformation,
 			const geometry::ViewInformation3D& rViewInformation3D)
 		:	BufferedDecompositionPrimitive2D(),
@@ -444,7 +444,7 @@ namespace drawinglayer
 			// transform unit range to discrete coordinate range
 			basegfx::B2DRange aRetval(0.0, 0.0, 1.0, 1.0);
 			aRetval.transform(rViewInformation.getObjectToViewTransformation() * getObjectTransformation());
-			
+
 			// force to discrete expanded bounds (it grows, so expanding works perfectly well)
 			aRetval.expand(basegfx::B2DTuple(floor(aRetval.getMinX()), floor(aRetval.getMinY())));
 			aRetval.expand(basegfx::B2DTuple(ceil(aRetval.getMaxX()), ceil(aRetval.getMaxY())));
@@ -467,7 +467,7 @@ namespace drawinglayer
 		}
 
 		Primitive2DSequence ScenePrimitive2D::get2DDecomposition(const geometry::ViewInformation2D& rViewInformation) const
-		{ 
+		{
 			::osl::MutexGuard aGuard( m_aMutex );
 
 			// get the involved ranges (see helper method calculateDiscreteSizes for details)
@@ -481,7 +481,7 @@ namespace drawinglayer
 			    basegfx::B2DRange aVisibleDiscreteRange;
 			    calculateDiscreteSizes(rViewInformation, aDiscreteRange, aVisibleDiscreteRange, aUnitVisibleRange);
 				bDiscreteSizesAreCalculated = true;
-				
+
 				// needs to be painted when the new part is not part of the last
                 // decomposition
 				if(!maOldUnitVisiblePart.isInside(aUnitVisibleRange))

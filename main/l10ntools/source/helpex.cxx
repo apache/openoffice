@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,7 +41,7 @@
 #define STATE_UNMERGE	        0x0009
 #define STATE_UTF8		        0x000A
 #define STATE_LANGUAGES	        0x000B
-#define STATE_FORCE_LANGUAGES   0x000C 
+#define STATE_FORCE_LANGUAGES   0x000C
 #define STATE_OUTPUTX           0xfe
 #define STATE_OUTPUTY           0xff
 
@@ -92,9 +92,9 @@ sal_Bool ParseCommandLine( int argc, char* argv[])
 			nState = STATE_PRJ; // next token specifies the cur. project
 		}
  		else if ( ByteString( argv[ i ]).ToUpperAscii() == "-LF" ) {
-			nState = STATE_FORCE_LANGUAGES; 
+			nState = STATE_FORCE_LANGUAGES;
 		}
-       
+
 		else if ( ByteString( argv[ i ]).ToUpperAscii() == "-R" ) {
 			nState = STATE_ROOT; // next token specifies path to project root
 		}
@@ -212,19 +212,19 @@ int _cdecl main( int argc, char *argv[] )
 	//sal_uInt32 startfull = Export::startMessure();
 
     bool hasInputList = sInputFile.GetBuffer()[0]=='@';
-//    printf("x = %s , y = %s , o = %s\n", sOutputFileX.GetBuffer(),  sOutputFileY.GetBuffer() , sOutputFile.GetBuffer() ); 
+//    printf("x = %s , y = %s , o = %s\n", sOutputFileX.GetBuffer(),  sOutputFileY.GetBuffer() , sOutputFile.GetBuffer() );
     bool hasNoError = true;
-	
+
     if ( sOutputFile.Len() ){                                               // Merge single file ?
 		//printf("DBG: Inputfile = %s\n",sInputFile.GetBuffer());
 		HelpParser aParser( sInputFile, bUTF8 , false );
-		
+
 		if ( bMergeMode )
 		{
-			
+
 			//sal_uInt64 startreadloc = Export::startMessure();
-			MergeDataFile aMergeDataFile( sSDFFile, sInputFile , sal_False, RTL_TEXTENCODING_MS_1252 ); 
-		    //MergeDataFile aMergeDataFile( sSDFFile, sInputFile , sal_False, RTL_TEXTENCODING_MS_1252, false ); 
+			MergeDataFile aMergeDataFile( sSDFFile, sInputFile , sal_False, RTL_TEXTENCODING_MS_1252 );
+		    //MergeDataFile aMergeDataFile( sSDFFile, sInputFile , sal_False, RTL_TEXTENCODING_MS_1252, false );
             //Export::stopMessure( ByteString("read localize.sdf") , startreadloc );
 
 			hasNoError = aParser.Merge( sSDFFile, sOutputFile , Export::sLanguages , aMergeDataFile );
@@ -233,14 +233,14 @@ int _cdecl main( int argc, char *argv[] )
 			hasNoError = aParser.CreateSDF( sOutputFile, sPrj, sPrjRoot, sInputFile, new XMLFile( '0' ), "help" );
 	}else if ( sOutputFileX.Len() && sOutputFileY.Len() && hasInputList ) {  // Merge multiple files ?
 		if ( bMergeMode ){
-            
+
             ifstream aFStream( sInputFile.Copy( 1 , sInputFile.Len() ).GetBuffer() , ios::in );
-                                                                                                                  
+
             if( !aFStream ){
                 cerr << "ERROR: - helpex - Can't open the file " << sInputFile.Copy( 1 , sInputFile.Len() ).GetBuffer() << "\n";
                 exit(-1);
             }
-        
+
             vector<ByteString> filelist;
             rtl::OStringBuffer filename;
             sal_Char aChar;
@@ -251,24 +251,24 @@ int _cdecl main( int argc, char *argv[] )
                 else
                     filename.append( aChar );
             }
-            if( filename.getLength() > 0 ) 
+            if( filename.getLength() > 0 )
                 filelist.push_back( ByteString ( filename.makeStringAndClear().getStr() ) );
-	        
+
             aFStream.close();
             ByteString sHelpFile(""); // dummy
             //MergeDataFile aMergeDataFile( sSDFFile, sHelpFile , sal_False, RTL_TEXTENCODING_MS_1252, false );
-            MergeDataFile aMergeDataFile( sSDFFile, sHelpFile , sal_False, RTL_TEXTENCODING_MS_1252 ); 
+            MergeDataFile aMergeDataFile( sSDFFile, sHelpFile , sal_False, RTL_TEXTENCODING_MS_1252 );
 
 	        //aMergeDataFile.Dump();
             std::vector<ByteString> aLanguages;
 	        HelpParser::parse_languages( aLanguages , aMergeDataFile );
-			
+
 			bool bCreateDir = true;
 	        for( vector<ByteString>::iterator pos = filelist.begin() ; pos != filelist.end() ; ++pos )
             {
-                sHelpFile = *pos;   
+                sHelpFile = *pos;
                 cout << ".";cout.flush();
-		        
+
                 HelpParser aParser( sHelpFile , bUTF8 , true );
                 hasNoError = aParser.Merge( sSDFFile , sOutputFileX , sOutputFileY , true , aLanguages , aMergeDataFile , bCreateDir );
 				bCreateDir = false;
@@ -276,11 +276,11 @@ int _cdecl main( int argc, char *argv[] )
         }
     } else
         cerr << "helpex ERROR: Wrong input parameters!\n";
-    
+
 	//Export::stopMessure( ByteString("full cycle") , startfull );
 	if( hasNoError )
         return 0;
-    else 
+    else
         return 1;
 }
 #endif

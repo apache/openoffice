@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -66,7 +66,7 @@ namespace oooimprovement
     LogPacker::LogPacker(const Reference<XMultiServiceFactory>& sf)
         : m_ServiceFactory(sf)
     {}
-    
+
     sal_Int32 LogPacker::pack(const OUString& fileurl)
     {
         Reference<XSimpleFileAccess> file_access(
@@ -104,8 +104,8 @@ namespace oooimprovement
         unzipped_stream->closeInput();
         zipped_stream->flush();
         zipped_stream->closeOutput();
-        Reference<XTransactedObject>(storage, UNO_QUERY_THROW)->commit(); 
+        Reference<XTransactedObject>(storage, UNO_QUERY_THROW)->commit();
         file_access->kill(fileurl);
         return logged_events;
     }
-} 
+}

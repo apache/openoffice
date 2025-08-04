@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -77,7 +77,7 @@ class SalPrinterBmp : public psp::PrinterBmp
 		virtual sal_uInt32	GetWidth () const;
 		virtual sal_uInt32	GetHeight() const;
 		virtual sal_uInt32	GetDepth ()	const;
-        
+
         static sal_uInt32 getRGBFromColor( const basebmp::Color& rCol )
         {
             return 	  ((rCol.getBlue()) 		 & 0x000000ff)
@@ -246,9 +246,9 @@ bool PspGraphics::setClipRegion( const Region& i_rClip )
             if(nH)
             {
                 m_pPrinterGfx->UnionClipRegion(
-                    aRectIter->Left(), 
-                    aRectIter->Top(), 
-                    nW, 
+                    aRectIter->Left(),
+                    aRectIter->Top(),
+                    nW,
                     nH);
             }
         }
@@ -351,10 +351,10 @@ void PspGraphics::drawPolyPolygon( sal_uInt32 nPoly, const sal_uInt32* pPoints, 
     m_pPrinterGfx->DrawPolyPolygon (nPoly, pPoints, (const Point**)pPtAry);
 }
 
-bool PspGraphics::drawPolyLine( 
-    const ::basegfx::B2DPolygon&, 
-    double /*fTransparency*/, 
-    const ::basegfx::B2DVector& /*rLineWidths*/, 
+bool PspGraphics::drawPolyLine(
+    const ::basegfx::B2DPolygon&,
+    double /*fTransparency*/,
+    const ::basegfx::B2DVector& /*rLineWidths*/,
     basegfx::B2DLineJoin /*eJoin*/,
     com::sun::star::drawing::LineCap /*eLineCap*/)
 {

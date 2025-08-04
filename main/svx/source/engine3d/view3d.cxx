@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -133,7 +133,7 @@ Impl3DMirrorConstructOverlay::Impl3DMirrorConstructOverlay(const E3dView& rView)
 			        {
 				        sdr::contact::ViewContact& rVC = pObject->GetViewContact();
 				        sdr::contact::ViewObjectContact& rVOC = rVC.GetViewObjectContact(rOC);
-    				    
+
                         const drawinglayer::primitive2d::Primitive2DSequence aNewSequence(rVOC.getPrimitive2DSequenceHierarchy(aDisplayInfo));
                         drawinglayer::primitive2d::appendPrimitive2DSequenceToPrimitive2DSequence(maFullOverlay, aNewSequence);
 			        }
@@ -177,7 +177,7 @@ void Impl3DMirrorConstructOverlay::SetMirrorAxis(Point aMirrorAxisA, Point aMirr
 
 		if(pTargetOverlay)
 		{
-	        // buld transfoprmation: translate and rotate so that given edge is 
+	        // buld transfoprmation: translate and rotate so that given edge is
             // on x axis, them mirror in y and translate back
 	        const basegfx::B2DVector aEdge(aMirrorAxisB.X() - aMirrorAxisA.X(), aMirrorAxisB.Y() - aMirrorAxisA.Y());
             basegfx::B2DHomMatrix aMatrixTransform(basegfx::tools::createTranslateB2DHomMatrix(
@@ -206,7 +206,7 @@ void Impl3DMirrorConstructOverlay::SetMirrorAxis(Point aMirrorAxisA, Point aMirr
                     aContent = drawinglayer::primitive2d::Primitive2DSequence(&aUnifiedTransparencePrimitive2D, 1);
 
 					sdr::overlay::OverlayPrimitive2DSequenceObject* pNew = new sdr::overlay::OverlayPrimitive2DSequenceObject(aContent);
-            		
+
 		            pTargetOverlay->add(*pNew);
 		            maObjects.append(*pNew);
                 }
@@ -372,7 +372,7 @@ SdrModel* E3dView::GetMarkedObjModel() const
 		{
             // reset all selection flags at 3D objects
 			pScene = ((E3dObject*)pObj)->GetScene();
-			
+
 			if(pScene)
             {
 				pScene->SetSelected(false);
@@ -404,7 +404,7 @@ SdrModel* E3dView::GetMarkedObjModel() const
 		}
 	}
 
-	// create new mark list which contains all indirectly selected3d 
+	// create new mark list which contains all indirectly selected3d
     // scenes as selected objects
     SdrMarkList aOldML(GetMarkedObjectList());
     SdrMarkList aNewML;
@@ -418,7 +418,7 @@ SdrModel* E3dView::GetMarkedObjModel() const
 		if(pObj && pObj->ISA(E3dObject))
 		{
 			pScene = ((E3dObject*)pObj)->GetScene();
-			
+
             if(pScene && !IsObjMarked(pScene) && GetSdrPageView())
 			{
 				((E3dView*)this)->MarkObj(pScene, GetSdrPageView(), sal_False, sal_True);
@@ -478,7 +478,7 @@ sal_Bool E3dView::Paste(const SdrModel& rMod, const Point& rPos, SdrObjList* pLs
     Point aPos(rPos);
 	SdrObjList* pDstList = pLst;
     ImpGetPasteObjList(aPos, pDstList);
-    
+
 	if(!pDstList)
 		return sal_False;
 
@@ -542,7 +542,7 @@ sal_Bool E3dView::ImpCloneAll3DObjectsToDestScene(E3dScene* pSrcScene, E3dScene*
 			{
 				// #116235#
 				E3dCompoundObject* pNewCompoundObj = dynamic_cast< E3dCompoundObject* >(pCompoundObj->Clone());
-				
+
 				if(pNewCompoundObj)
 				{
                     // get dest scene's current range in 3D world coordinates
@@ -574,7 +574,7 @@ sal_Bool E3dView::ImpCloneAll3DObjectsToDestScene(E3dScene* pSrcScene, E3dScene*
                         const double fFactor((aSceneScale.getX() * fSizeFactor) / (basegfx::fTools::equalZero(fObjSize) ? 1.0 : fObjSize));
                         fScale *= fFactor;
                     }
-                    
+
                     if(aObjectScale.getY() * fScale > aSceneScale.getY() * fSizeFactor)
                     {
                         const double fObjSize(aObjectScale.getY() * fScale);
@@ -728,9 +728,9 @@ void E3dView::ImpChangeSomeAttributesFor3DConversion2(SdrObject* pObj)
 		XLineStyle eLineStyle = (XLineStyle)((const XLineStyleItem&)rSet.Get(XATTR_LINESTYLE)).GetValue();
 		XFillStyle eFillStyle = ITEMVALUE(rSet, XATTR_FILLSTYLE, XFillStyleItem);
 
-		if(((SdrPathObj*)pObj)->IsClosed() 
-			&& eLineStyle == XLINE_SOLID 
-			&& !nLineWidth 
+		if(((SdrPathObj*)pObj)->IsClosed()
+			&& eLineStyle == XLINE_SOLID
+			&& !nLineWidth
 			&& eFillStyle != XFILL_NONE)
 		{
 			if(pObj->GetPage() && GetModel()->IsUndoEnabled() )
@@ -801,7 +801,7 @@ void E3dView::ImpCreateSingle3DObjectFlat(E3dScene* pScene, SdrObject* pObj, sal
 			p3DObj->NbcSetLayer(pObj->GetLayer());
 
 			p3DObj->SetMergedItemSet(aSet);
-			
+
 			p3DObj->NbcSetStyleSheet(pObj->GetStyleSheet(), sal_True);
 
 			// Neues 3D-Objekt einfuegen
@@ -826,7 +826,7 @@ void E3dView::ImpCreate3DObject(E3dScene* pScene, SdrObject* pObj, sal_Bool bExt
 		}
 		else
 			ImpChangeSomeAttributesFor3DConversion(pObj);
-		
+
 		// convert completely to path objects
 		SdrObject* pNewObj1 = pObj->ConvertToPolyObj(sal_False, sal_False);
 
@@ -844,7 +844,7 @@ void E3dView::ImpCreate3DObject(E3dScene* pScene, SdrObject* pObj, sal_Bool bExt
 			}
 			else
 				ImpChangeSomeAttributesFor3DConversion2(pNewObj1);
-			
+
 			// convert completely to path objects
 			SdrObject* pNewObj2 = pObj->ConvertToContourObj(pNewObj1, sal_True);
 
@@ -1072,7 +1072,7 @@ struct E3dDepthNeighbour
     :   mpNext(0),
         mpObj(0),
         maPreparedPolyPolygon()
-    { 
+    {
     }
 };
 
@@ -1081,19 +1081,19 @@ struct E3dDepthLayer
 	E3dDepthLayer*		        mpDown;
 	E3dDepthNeighbour*	        mpNext;
 
-	E3dDepthLayer() 
+	E3dDepthLayer()
     :   mpDown(0),
         mpNext(0)
-    { 
+    {
     }
 
-	~E3dDepthLayer() 
-    { 
-        while(mpNext) 
-        { 
-            E3dDepthNeighbour* pSucc = mpNext->mpNext; 
-            delete mpNext; 
-            mpNext = pSucc; 
+	~E3dDepthLayer()
+    {
+        while(mpNext)
+        {
+            E3dDepthNeighbour* pSucc = mpNext->mpNext;
+            delete mpNext;
+            mpNext = pSucc;
         }
     }
 };
@@ -1133,20 +1133,20 @@ void E3dView::DoDepthArrange(E3dScene* pScene, double fDepth)
                         // using logical AND clipping
                         const basegfx::B2DPolyPolygon aAndPolyPolygon(
                             basegfx::tools::solvePolygonOperationAnd(
-                                aExtrudePoly, 
+                                aExtrudePoly,
                                 pAct->maPreparedPolyPolygon));
 
                         bOverlap = (0 != aAndPolyPolygon.count());
-                        
+
 						if(bOverlap)
 						{
 							// second ciriteria: is another fillstyle or color used?
 							const SfxItemSet& rCompareSet = pAct->mpObj->GetMergedItemSet();
-							
+
 							XFillStyle eCompareFillStyle = ITEMVALUE(rCompareSet, XATTR_FILLSTYLE, XFillStyleItem);
 
 							if(eLocalFillStyle == eCompareFillStyle)
-							{				  
+							{
 								if(eLocalFillStyle == XFILL_SOLID)
 								{
 									Color aCompareColor = ((const XFillColorItem&)(rCompareSet.Get(XATTR_FILLCOLOR))).GetColorValue();
@@ -1396,7 +1396,7 @@ E3dScene* E3dView::SetCurrent3DObj(E3dObject* p3DObj)
 	aVolume.transform(p3DObj->GetTransform());
 	double fW(aVolume.getWidth());
 	double fH(aVolume.getHeight());
-	
+
 	Rectangle aRect(0,0, (long) fW, (long) fH);
 
 	pScene = new E3dPolyScene(Get3DDefaultAttributes());

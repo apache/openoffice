@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -200,7 +200,7 @@ bool MenuBarMerger::CreateSubMenu(
     return true;
 }
 
-bool MenuBarMerger::MergeMenuItems( 
+bool MenuBarMerger::MergeMenuItems(
     Menu*                     pMenu,
     sal_uInt16                nPos,
     sal_uInt16                nModIndex,
@@ -229,7 +229,7 @@ bool MenuBarMerger::MergeMenuItems(
                     PopupMenu* pSubMenu = new PopupMenu();
                     pMenu->SetPopupMenu( nItemId, pSubMenu );
                     ++nItemId;
-                    
+
                     CreateSubMenu( pSubMenu, nItemId, rModuleIdentifier, rMenuItem.aSubMenu );
                 }
                 else
@@ -242,11 +242,11 @@ bool MenuBarMerger::MergeMenuItems(
     return true;
 }
 
-bool MenuBarMerger::ReplaceMenuItem( 
-    Menu*                     pMenu, 
-    sal_uInt16                nPos, 
-    sal_uInt16&               rItemId, 
-    const ::rtl::OUString&    rModuleIdentifier, 
+bool MenuBarMerger::ReplaceMenuItem(
+    Menu*                     pMenu,
+    sal_uInt16                nPos,
+    sal_uInt16&               rItemId,
+    const ::rtl::OUString&    rModuleIdentifier,
     const AddonMenuContainer& rAddonMenuItems )
 {
     // There is no replace available. Therfore we first have to
@@ -257,15 +257,15 @@ bool MenuBarMerger::ReplaceMenuItem(
 }
 
 bool MenuBarMerger::RemoveMenuItems(
-    Menu*                     pMenu, 
-    sal_uInt16                nPos, 
+    Menu*                     pMenu,
+    sal_uInt16                nPos,
     const ::rtl::OUString&    rMergeCommandParameter )
 {
     const sal_uInt16 nParam( sal_uInt16( rMergeCommandParameter.toInt32() ));
     sal_uInt16       nCount( 1 );
-    
+
     nCount = std::max( nParam, nCount );
-    
+
     sal_uInt16 i = 0;
     while (( nPos < pMenu->GetItemCount() ) && ( i < nCount ))
     {
@@ -276,8 +276,8 @@ bool MenuBarMerger::RemoveMenuItems(
     return true;
 }
 
-bool MenuBarMerger::ProcessMergeOperation( 
-    Menu*                     pMenu, 
+bool MenuBarMerger::ProcessMergeOperation(
+    Menu*                     pMenu,
     sal_uInt16                nPos,
     sal_uInt16&               nItemId,
     const ::rtl::OUString&    rMergeCommand,
@@ -330,7 +330,7 @@ bool MenuBarMerger::ProcessFallbackOperation(
         sal_Int32        nLevel( aRefPathInfo.nLevel );
         const sal_Int32  nSize( rReferencePath.size() );
         bool             bFirstLevel( true );
-        
+
         while ( nLevel < nSize )
         {
             if ( nLevel == nSize-1 )
@@ -355,10 +355,10 @@ bool MenuBarMerger::ProcessFallbackOperation(
             else
             {
                 const ::rtl::OUString aCmd( rReferencePath[nLevel] );
-                
+
                 sal_uInt16 nInsPos( MENU_APPEND );
                 PopupMenu* pPopupMenu( new PopupMenu );
-                
+
                 if ( bFirstLevel && ( aRefPathInfo.eResult == RP_MENUITEM_INSTEAD_OF_POPUPMENU_FOUND ))
                 {
                     // special case: menu item without popup
@@ -367,14 +367,14 @@ bool MenuBarMerger::ProcessFallbackOperation(
                     pCurrMenu->SetItemCommand( nSetItemId, aCmd );
                     pCurrMenu->SetPopupMenu( nSetItemId, pPopupMenu );
                 }
-                else                
+                else
                 {
                     // normal case: insert a new item with popup
                     pCurrMenu->InsertItem( rItemId, ::rtl::OUString(), 0, MENU_APPEND );
                     pCurrMenu->SetItemCommand( rItemId, aCmd );
                     pCurrMenu->SetPopupMenu( rItemId, pPopupMenu );
                 }
-                
+
                 pCurrMenu = pPopupMenu;
                 ++rItemId;
                 bFirstLevel = false;
@@ -387,13 +387,13 @@ bool MenuBarMerger::ProcessFallbackOperation(
     return false;
 }
 
-void MenuBarMerger::GetMenuEntry( 
+void MenuBarMerger::GetMenuEntry(
     const uno::Sequence< beans::PropertyValue >& rAddonMenuEntry,
     AddonMenuItem&                               rAddonMenuItem )
 {
 	// Reset submenu member
     rAddonMenuItem.aSubMenu.clear();
-	
+
 	for ( sal_Int32 i = 0; i < rAddonMenuEntry.getLength(); i++ )
 	{
         ::rtl::OUString aMenuEntryPropName = rAddonMenuEntry[i].Name;
@@ -421,14 +421,14 @@ void MenuBarMerger::GetSubMenu(
     AddonMenuContainer&                                           rSubMenu )
 {
     rSubMenu.clear();
-    
+
     const sal_Int32 nCount = rSubMenuEntries.getLength();
     rSubMenu.reserve(rSubMenu.size() + nCount);
     for ( sal_Int32 i = 0; i < nCount; i++ )
     {
         const uno::Sequence< beans::PropertyValue >& rMenuEntry = rSubMenuEntries[ i ];
 
-        AddonMenuItem aMenuItem;        
+        AddonMenuItem aMenuItem;
         GetMenuEntry( rMenuEntry, aMenuItem );
         rSubMenu.push_back( aMenuItem );
     }

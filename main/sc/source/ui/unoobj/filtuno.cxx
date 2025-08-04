@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -188,12 +188,12 @@ sal_Int16 SAL_CALL ScFilterOptionsObj::execute() throw(uno::RuntimeException)
             // HTML import.
             ::std::auto_ptr<AbstractScTextImportOptionsDlg> pDlg(
                 pFact->CreateScTextImportOptionsDlg(NULL, RID_SCDLG_TEXT_IMPORT_OPTIONS));
-    
+
             if (pDlg->Execute() == RET_OK)
             {
                 LanguageType eLang = pDlg->GetLanguageType();
                 OUStringBuffer aBuf;
-    
+
                 aBuf.append(String::CreateFromInt32(static_cast<sal_Int32>(eLang)));
                 aBuf.append(sal_Unicode(' '));
                 aBuf.append(pDlg->IsDateConversionSet() ? sal_Unicode('1') : sal_Unicode('0'));
@@ -272,7 +272,7 @@ sal_Int16 SAL_CALL ScFilterOptionsObj::execute() throw(uno::RuntimeException)
 //CHINA001		ScImportOptionsDlg* pDlg = new ScImportOptionsDlg( NULL, bAscii,
 //CHINA001		&aOptions, &aTitle, bMultiByte, bDBEnc,
 //CHINA001		!bExport );
-//CHINA001 
+//CHINA001
 
 		AbstractScImportOptionsDlg* pDlg = pFact->CreateScImportOptionsDlg( NULL, RID_SCDLG_IMPORTOPT,
 																			bAscii, &aOptions, &aTitle, bMultiByte, bDBEnc,

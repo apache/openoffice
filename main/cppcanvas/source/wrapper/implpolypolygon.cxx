@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,12 +48,12 @@ namespace cppcanvas
                                           const uno::Reference< rendering::XPolyPolygon2D >& rPolyPoly ) :
             CanvasGraphicHelper( rParentCanvas ),
             mxPolyPoly( rPolyPoly ),
-            maStrokeAttributes(1.0, 
-                               10.0, 
-                               uno::Sequence< double >(), 
-                               uno::Sequence< double >(), 
-                               rendering::PathCapType::ROUND, 
-                               rendering::PathCapType::ROUND, 
+            maStrokeAttributes(1.0,
+                               10.0,
+                               uno::Sequence< double >(),
+                               uno::Sequence< double >(),
+                               rendering::PathCapType::ROUND,
+                               rendering::PathCapType::ROUND,
                                rendering::PathJoinType::ROUND ),
             maFillColor(),
             maStrokeColor(),
@@ -69,7 +69,7 @@ namespace cppcanvas
 
         void ImplPolyPolygon::addPolygon( const ::basegfx::B2DPolygon& rPoly )
         {
-            OSL_ENSURE( mxPolyPoly.is(), 
+            OSL_ENSURE( mxPolyPoly.is(),
                         "ImplPolyPolygon::addPolygon(): Invalid polygon" );
 
             if( !mxPolyPoly.is() )
@@ -77,9 +77,9 @@ namespace cppcanvas
 
             uno::Reference< rendering::XGraphicDevice > xDevice( getGraphicDevice() );
 
-            OSL_ENSURE( xDevice.is(), 
+            OSL_ENSURE( xDevice.is(),
                         "ImplPolyPolygon::addPolygon(): Invalid graphic device" );
-            
+
             if( !xDevice.is() )
                 return;
 
@@ -91,7 +91,7 @@ namespace cppcanvas
 
         void ImplPolyPolygon::addPolyPolygon( const ::basegfx::B2DPolyPolygon& rPoly )
         {
-            OSL_ENSURE( mxPolyPoly.is(), 
+            OSL_ENSURE( mxPolyPoly.is(),
                         "ImplPolyPolygon::addPolyPolygon(): Invalid polygon" );
 
             if( !mxPolyPoly.is() )
@@ -99,9 +99,9 @@ namespace cppcanvas
 
             uno::Reference< rendering::XGraphicDevice > xDevice( getGraphicDevice() );
 
-            OSL_ENSURE( xDevice.is(), 
+            OSL_ENSURE( xDevice.is(),
                         "ImplPolyPolygon::addPolyPolygon(): Invalid graphic device" );
-            
+
             if( !xDevice.is() )
                 return;
 
@@ -113,27 +113,27 @@ namespace cppcanvas
 
         void ImplPolyPolygon::setRGBAFillColor( Color::IntSRGBA aColor )
         {
-            maFillColor = tools::intSRGBAToDoubleSequence( getGraphicDevice(), 
+            maFillColor = tools::intSRGBAToDoubleSequence( getGraphicDevice(),
                                                            aColor );
             mbFillColorSet = true;
         }
 
         void ImplPolyPolygon::setRGBALineColor( Color::IntSRGBA aColor )
         {
-            maStrokeColor = tools::intSRGBAToDoubleSequence( getGraphicDevice(), 
+            maStrokeColor = tools::intSRGBAToDoubleSequence( getGraphicDevice(),
                                                              aColor );
             mbStrokeColorSet = true;
         }
 
         Color::IntSRGBA ImplPolyPolygon::getRGBAFillColor() const
         {
-            return tools::doubleSequenceToIntSRGBA( getGraphicDevice(),  
+            return tools::doubleSequenceToIntSRGBA( getGraphicDevice(),
                                                     maFillColor );
         }
 
         Color::IntSRGBA ImplPolyPolygon::getRGBALineColor() const
         {
-            return tools::doubleSequenceToIntSRGBA( getGraphicDevice(),  
+            return tools::doubleSequenceToIntSRGBA( getGraphicDevice(),
                                                     maStrokeColor );
         }
 
@@ -154,7 +154,7 @@ namespace cppcanvas
             OSL_ENSURE( pCanvas.get() != NULL &&
                         pCanvas->getUNOCanvas().is(),
                         "ImplBitmap::draw: invalid canvas" );
-            
+
             if( pCanvas.get() == NULL ||
                 !pCanvas->getUNOCanvas().is() )
                 return false;
@@ -164,8 +164,8 @@ namespace cppcanvas
                 rendering::RenderState aLocalState( getRenderState() );
                 aLocalState.DeviceColor = maFillColor;
 
-                pCanvas->getUNOCanvas()->fillPolyPolygon( mxPolyPoly, 
-                                                          pCanvas->getViewState(), 
+                pCanvas->getUNOCanvas()->fillPolyPolygon( mxPolyPoly,
+                                                          pCanvas->getViewState(),
                                                           aLocalState );
             }
 
@@ -175,17 +175,17 @@ namespace cppcanvas
                 aLocalState.DeviceColor = maStrokeColor;
 
                 if( ::rtl::math::approxEqual(maStrokeAttributes.StrokeWidth, 1.0) )
-                    pCanvas->getUNOCanvas()->drawPolyPolygon( mxPolyPoly, 
-                                                              pCanvas->getViewState(), 
+                    pCanvas->getUNOCanvas()->drawPolyPolygon( mxPolyPoly,
+                                                              pCanvas->getViewState(),
                                                               aLocalState );
                 else
-                    pCanvas->getUNOCanvas()->strokePolyPolygon( mxPolyPoly, 
-                                                                pCanvas->getViewState(), 
+                    pCanvas->getUNOCanvas()->strokePolyPolygon( mxPolyPoly,
+                                                                pCanvas->getViewState(),
                                                                 aLocalState,
                                                                 maStrokeAttributes );
             }
 
-            return true;            
+            return true;
         }
 
         uno::Reference< rendering::XPolyPolygon2D > ImplPolyPolygon::getUNOPolyPolygon() const

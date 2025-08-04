@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -58,7 +58,7 @@ using namespace com::sun::star::io;
 #include "factreg.hxx"
 
 namespace io_stm {
-	
+
 	class Pump : public WeakImplHelper5<
 		  XActiveDataSource, XActiveDataSink, XActiveDataControl, XConnectable, XServiceInfo >
 	{
@@ -80,31 +80,31 @@ namespace io_stm {
 		void fireStarted();
 		void fireTerminated();
 		void fireError( const Any &a );
-			
+
 	public:
 		Pump();
 		virtual ~Pump();
-		
+
 		// XActiveDataSource
 		virtual void SAL_CALL setOutputStream( const Reference< ::com::sun::star::io::XOutputStream >& xOutput ) throw();
 		virtual Reference< ::com::sun::star::io::XOutputStream > SAL_CALL getOutputStream() throw();
-		
+
 		// XActiveDataSink
 		virtual void SAL_CALL setInputStream( const Reference< ::com::sun::star::io::XInputStream >& xStream ) throw();
 		virtual Reference< ::com::sun::star::io::XInputStream > SAL_CALL getInputStream() throw();
-		
+
 		// XActiveDataControl
 		virtual void SAL_CALL addListener( const Reference< ::com::sun::star::io::XStreamListener >& xListener ) throw();
 		virtual void SAL_CALL removeListener( const Reference< ::com::sun::star::io::XStreamListener >& xListener ) throw();
 		virtual void SAL_CALL start() throw( RuntimeException );
 		virtual void SAL_CALL terminate() throw();
-		
+
 		// XConnectable
 		virtual void SAL_CALL setPredecessor( const Reference< ::com::sun::star::io::XConnectable >& xPred ) throw();
 		virtual Reference< ::com::sun::star::io::XConnectable > SAL_CALL getPredecessor() throw();
 		virtual void SAL_CALL setSuccessor( const Reference< ::com::sun::star::io::XConnectable >& xSucc ) throw();
 		virtual Reference< ::com::sun::star::io::XConnectable > SAL_CALL getSuccessor() throw();
-		
+
 	public: // XServiceInfo
 		virtual OUString    SAL_CALL getImplementationName() throw(  );
 		virtual Sequence< OUString > SAL_CALL getSupportedServiceNames(void) throw(  );
@@ -117,7 +117,7 @@ Pump::Pump() : m_aThread( 0 ),
 {
 	g_moduleCount.modCnt.acquire( &g_moduleCount.modCnt );
 }
-	
+
 Pump::~Pump()
 {
 	// exit gracefully
@@ -221,7 +221,7 @@ void Pump::close()
         MutexGuard guard( m_aMutex );
         rInput = m_xInput;
 		m_xInput.clear();
-        
+
         rOutput = m_xOutput;
         m_xOutput.clear();
         m_xSucc.clear();
@@ -235,7 +235,7 @@ void Pump::close()
 		}
 		catch( Exception & )
 		{
-			// go down calm 
+			// go down calm
 		}
 	}
 	if( rOutput.is() )
@@ -271,7 +271,7 @@ void Pump::run()
                 rInput = m_xInput;
                 rOutput = m_xOutput;
             }
-            
+
 			if( ! rInput.is() )
 			{
 				NotConnectedException exception(

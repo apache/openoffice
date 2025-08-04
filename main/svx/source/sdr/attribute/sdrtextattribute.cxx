@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -76,19 +76,19 @@ namespace drawinglayer
 
 		public:
 			ImpSdrTextAttribute(
-				const SdrText* pSdrText, 
+				const SdrText* pSdrText,
                 const OutlinerParaObject& rOutlinerParaObject,
-				XFormTextStyle eFormTextStyle, 
-				sal_Int32 aTextLeftDistance, 
+				XFormTextStyle eFormTextStyle,
+				sal_Int32 aTextLeftDistance,
 				sal_Int32 aTextUpperDistance,
-				sal_Int32 aTextRightDistance, 
-				sal_Int32 aTextLowerDistance, 
+				sal_Int32 aTextRightDistance,
+				sal_Int32 aTextLowerDistance,
                 SdrTextHorzAdjust aSdrTextHorzAdjust,
                 SdrTextVertAdjust aSdrTextVertAdjust,
-				bool bContour, 
-                bool bFitToSize, 
-				bool bHideContour, 
-                bool bBlink, 
+				bool bContour,
+                bool bFitToSize,
+				bool bHideContour,
+                bool bBlink,
 				bool bScroll,
                 bool bInEditMode,
                 bool bFixedCellHeight,
@@ -161,15 +161,15 @@ namespace drawinglayer
 			}
 
 			// data read access
-			const SdrText& getSdrText() const 
+			const SdrText& getSdrText() const
 			{
 				OSL_ENSURE(mpSdrText, "Access to text of default version of ImpSdrTextAttribute (!)");
-				return *mpSdrText; 
+				return *mpSdrText;
 			}
-            const OutlinerParaObject& getOutlinerParaObject() const 
-			{ 
+            const OutlinerParaObject& getOutlinerParaObject() const
+			{
 				OSL_ENSURE(mpOutlinerParaObject, "Access to OutlinerParaObject of default version of ImpSdrTextAttribute (!)");
-				return *mpOutlinerParaObject; 
+				return *mpOutlinerParaObject;
 			}
 			bool isContour() const { return mbContour; }
 			bool isFitToSize() const { return mbFitToSize; }
@@ -201,7 +201,7 @@ namespace drawinglayer
 						{
 							return false;
 						}
-		                
+
 						// #i102062# for primitive visualisation, the WrongList (SpellChecking)
 						// is important, too, so use isWrongListEqual since there is no WrongList
 						// comparison in the regular OutlinerParaObject compare (since it's
@@ -257,26 +257,26 @@ namespace drawinglayer
 		};
 
         SdrTextAttribute::SdrTextAttribute(
-			const SdrText& rSdrText, 
+			const SdrText& rSdrText,
             const OutlinerParaObject& rOutlinerParaObject,
-			XFormTextStyle eFormTextStyle, 
-			sal_Int32 aTextLeftDistance, 
+			XFormTextStyle eFormTextStyle,
+			sal_Int32 aTextLeftDistance,
 			sal_Int32 aTextUpperDistance,
-			sal_Int32 aTextRightDistance, 
-			sal_Int32 aTextLowerDistance, 
+			sal_Int32 aTextRightDistance,
+			sal_Int32 aTextLowerDistance,
             SdrTextHorzAdjust aSdrTextHorzAdjust,
             SdrTextVertAdjust aSdrTextVertAdjust,
-			bool bContour, 
-            bool bFitToSize, 
-			bool bHideContour, 
-            bool bBlink, 
+			bool bContour,
+            bool bFitToSize,
+			bool bHideContour,
+            bool bBlink,
 			bool bScroll,
             bool bInEditMode,
             bool bFixedCellHeight,
 			bool bWrongSpell)
 		:	mpSdrTextAttribute(new ImpSdrTextAttribute(
 				&rSdrText, rOutlinerParaObject, eFormTextStyle, aTextLeftDistance, aTextUpperDistance,
-				aTextRightDistance, aTextLowerDistance, aSdrTextHorzAdjust, aSdrTextVertAdjust, bContour, 
+				aTextRightDistance, aTextLowerDistance, aSdrTextHorzAdjust, aSdrTextVertAdjust, bContour,
 				bFitToSize, bHideContour, bBlink, bScroll, bInEditMode, bFixedCellHeight, bWrongSpell))
 		{
 		}
@@ -322,7 +322,7 @@ namespace drawinglayer
 				{
 					delete mpSdrTextAttribute;
 				}
-				
+
 				mpSdrTextAttribute = rCandidate.mpSdrTextAttribute;
 				mpSdrTextAttribute->mnRefCount++;
 			}
@@ -345,94 +345,94 @@ namespace drawinglayer
 			return (*rCandidate.mpSdrTextAttribute == *mpSdrTextAttribute);
 		}
 
-		const SdrText& SdrTextAttribute::getSdrText() const 
-		{ 
-			return mpSdrTextAttribute->getSdrText(); 
+		const SdrText& SdrTextAttribute::getSdrText() const
+		{
+			return mpSdrTextAttribute->getSdrText();
 		}
 
-		const OutlinerParaObject& SdrTextAttribute::getOutlinerParaObject() const 
-		{ 
-			return mpSdrTextAttribute->getOutlinerParaObject(); 
+		const OutlinerParaObject& SdrTextAttribute::getOutlinerParaObject() const
+		{
+			return mpSdrTextAttribute->getOutlinerParaObject();
 		}
 
-		bool SdrTextAttribute::isContour() const 
-		{ 
-			return mpSdrTextAttribute->isContour(); 
+		bool SdrTextAttribute::isContour() const
+		{
+			return mpSdrTextAttribute->isContour();
 		}
 
-		bool SdrTextAttribute::isFitToSize() const 
-		{ 
-			return mpSdrTextAttribute->isFitToSize(); 
+		bool SdrTextAttribute::isFitToSize() const
+		{
+			return mpSdrTextAttribute->isFitToSize();
 		}
 
-		bool SdrTextAttribute::isHideContour() const 
-		{ 
-			return mpSdrTextAttribute->isHideContour(); 
+		bool SdrTextAttribute::isHideContour() const
+		{
+			return mpSdrTextAttribute->isHideContour();
 		}
 
-		bool SdrTextAttribute::isBlink() const 
-		{ 
-			return mpSdrTextAttribute->isBlink(); 
+		bool SdrTextAttribute::isBlink() const
+		{
+			return mpSdrTextAttribute->isBlink();
 		}
 
-		bool SdrTextAttribute::isScroll() const 
-		{ 
-			return mpSdrTextAttribute->isScroll(); 
+		bool SdrTextAttribute::isScroll() const
+		{
+			return mpSdrTextAttribute->isScroll();
 		}
 
-		bool SdrTextAttribute::isInEditMode() const 
-		{ 
-			return mpSdrTextAttribute->isInEditMode(); 
+		bool SdrTextAttribute::isInEditMode() const
+		{
+			return mpSdrTextAttribute->isInEditMode();
 		}
 
-		bool SdrTextAttribute::isFixedCellHeight() const 
-		{ 
-			return mpSdrTextAttribute->isFixedCellHeight(); 
+		bool SdrTextAttribute::isFixedCellHeight() const
+		{
+			return mpSdrTextAttribute->isFixedCellHeight();
 		}
 
-		bool SdrTextAttribute::isWrongSpell() const 
-		{ 
-			return mpSdrTextAttribute->isWrongSpell(); 
+		bool SdrTextAttribute::isWrongSpell() const
+		{
+			return mpSdrTextAttribute->isWrongSpell();
 		}
 
-		const SdrFormTextAttribute& SdrTextAttribute::getSdrFormTextAttribute() const 
-		{ 
-			return mpSdrTextAttribute->getSdrFormTextAttribute(); 
+		const SdrFormTextAttribute& SdrTextAttribute::getSdrFormTextAttribute() const
+		{
+			return mpSdrTextAttribute->getSdrFormTextAttribute();
 		}
 
-		sal_Int32 SdrTextAttribute::getTextLeftDistance() const 
-		{ 
-			return mpSdrTextAttribute->getTextLeftDistance(); 
+		sal_Int32 SdrTextAttribute::getTextLeftDistance() const
+		{
+			return mpSdrTextAttribute->getTextLeftDistance();
 		}
 
-		sal_Int32 SdrTextAttribute::getTextUpperDistance() const 
-		{ 
-			return mpSdrTextAttribute->getTextUpperDistance(); 
+		sal_Int32 SdrTextAttribute::getTextUpperDistance() const
+		{
+			return mpSdrTextAttribute->getTextUpperDistance();
 		}
 
-		sal_Int32 SdrTextAttribute::getTextRightDistance() const 
-		{ 
-			return mpSdrTextAttribute->getTextRightDistance(); 
+		sal_Int32 SdrTextAttribute::getTextRightDistance() const
+		{
+			return mpSdrTextAttribute->getTextRightDistance();
 		}
 
-		sal_Int32 SdrTextAttribute::getTextLowerDistance() const 
-		{ 
-			return mpSdrTextAttribute->getTextLowerDistance(); 
+		sal_Int32 SdrTextAttribute::getTextLowerDistance() const
+		{
+			return mpSdrTextAttribute->getTextLowerDistance();
 		}
 
-		sal_uInt32 SdrTextAttribute::getPropertiesVersion() const 
-		{ 
-			return mpSdrTextAttribute->getPropertiesVersion(); 
+		sal_uInt32 SdrTextAttribute::getPropertiesVersion() const
+		{
+			return mpSdrTextAttribute->getPropertiesVersion();
 		}
 
-		SdrTextHorzAdjust SdrTextAttribute::getSdrTextHorzAdjust() const 
-		{ 
-			return mpSdrTextAttribute->getSdrTextHorzAdjust(); 
+		SdrTextHorzAdjust SdrTextAttribute::getSdrTextHorzAdjust() const
+		{
+			return mpSdrTextAttribute->getSdrTextHorzAdjust();
 		}
 
-		SdrTextVertAdjust SdrTextAttribute::getSdrTextVertAdjust() const 
-		{ 
-			return mpSdrTextAttribute->getSdrTextVertAdjust(); 
+		SdrTextVertAdjust SdrTextAttribute::getSdrTextVertAdjust() const
+		{
+			return mpSdrTextAttribute->getSdrTextVertAdjust();
 		}
 
 		void SdrTextAttribute::getBlinkTextTiming(drawinglayer::animation::AnimationEntryList& rAnimList) const

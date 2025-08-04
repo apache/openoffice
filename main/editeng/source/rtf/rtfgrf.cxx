@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -305,7 +305,7 @@ sal_Bool SvxRTFParser::ReadBmpData( Graphic& rGrf, SvxRTFPictureType& rPicType )
 	const sal_Char* pFilterNm = 0;
 	SvCacheStream* pTmpFile = 0;
 
-	int nToken = 0; 
+	int nToken = 0;
     bool bValidBmp = true, bFirstTextToken = true;
 	int _nOpenBrakets = 1,		// die erste wurde schon vorher erkannt !!
 		nValidDataBraket = 1;
@@ -320,8 +320,8 @@ sal_Bool SvxRTFParser::ReadBmpData( Graphic& rGrf, SvxRTFPictureType& rPicType )
 		sal_uInt16 nVal = sal_uInt16( nTokenValue );
 		switch( nToken )
 		{
-        case '}':       
-            --_nOpenBrakets;    
+        case '}':
+            --_nOpenBrakets;
             if( nShapePropertyBracket > 0 && nShapePropertyBracket > _nOpenBrakets )
             {
                 nShapePropertyBracket = -1;
@@ -329,8 +329,8 @@ sal_Bool SvxRTFParser::ReadBmpData( Graphic& rGrf, SvxRTFPictureType& rPicType )
                 {
                     rPicType.aPropertyPairs.push_back( ::std::pair< OUString, OUString >( sShapePropertyName, sShapePropertyValue ) );
                     sShapePropertyName = sShapePropertyValue = ::rtl::OUString();
-                }    
-            }    
+                }
+            }
         break;
 		case '{':
 			{
@@ -428,7 +428,7 @@ sal_Bool SvxRTFParser::ReadBmpData( Graphic& rGrf, SvxRTFPictureType& rPicType )
                 {
                     if (rPicType.uPicLen < nSize)
                         nSize = rPicType.uPicLen;
-                    
+
                     rStrm.Read(aData, nSize);
                     pTmpFile->Write(aData, nSize);
                     rPicType.uPicLen -= nSize;
@@ -455,14 +455,14 @@ sal_Bool SvxRTFParser::ReadBmpData( Graphic& rGrf, SvxRTFPictureType& rPicType )
             nToken = GetNextToken();
             if( nToken != '}' )
                 sShapePropertyName = aToken;
-            else 
+            else
                 nToken = SkipToken( -1 );
         break;
         case RTF_SV:
             nToken = GetNextToken();
             if( nToken != '}' )
                 sShapePropertyValue = aToken;
-            else 
+            else
                 nToken = SkipToken( -1 );
         break;
 		case RTF_TEXTTOKEN:

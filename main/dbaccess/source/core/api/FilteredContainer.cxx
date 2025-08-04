@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -57,7 +57,7 @@ namespace dbaccess
 */
 sal_Int32 createWildCardVector(Sequence< ::rtl::OUString >& _rTableFilter, ::std::vector< WildCard >& _rOut)
 {
-    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "api", "Ocke.Janssen@sun.com", "OFilteredContainer::createWildCardVector" );	
+    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "api", "Ocke.Janssen@sun.com", "OFilteredContainer::createWildCardVector" );
 	// for wildcard search : remove all table filters which are a wildcard expression and build a WildCard
 	// for them
 	::rtl::OUString* pTableFilters = _rTableFilter.getArray();
@@ -252,7 +252,7 @@ sal_Int32 createWildCardVector(Sequence< ::rtl::OUString >& _rTableFilter, ::std
     //==========================================================================
 	//= OViewContainer
 	//==========================================================================
-	OFilteredContainer::OFilteredContainer(::cppu::OWeakObject& _rParent, 
+	OFilteredContainer::OFilteredContainer(::cppu::OWeakObject& _rParent,
 								 ::osl::Mutex& _rMutex,
 								 const Reference< XConnection >& _xCon,
 								 sal_Bool _bCase,
@@ -265,7 +265,7 @@ sal_Int32 createWildCardVector(Sequence< ::rtl::OUString >& _rTableFilter, ::std
 	    ,m_pRefreshListener(_pRefreshListener)
         ,m_nInAppend(_nInAppend)
 	    ,m_xConnection(_xCon)
-	{					  
+	{
 	}
     // -------------------------------------------------------------------------
 	void OFilteredContainer::construct(const Reference< XNameAccess >& _rxMasterContainer,
@@ -284,7 +284,7 @@ sal_Int32 createWildCardVector(Sequence< ::rtl::OUString >& _rTableFilter, ::std
         }
 
         m_xMasterContainer = _rxMasterContainer;
-        
+
         if ( m_xMasterContainer.is() )
         {
             addMasterContainerListener();
@@ -406,7 +406,7 @@ sal_Int32 createWildCardVector(Sequence< ::rtl::OUString >& _rTableFilter, ::std
 		m_xMasterContainer	= NULL;
 		m_xMetaData			= NULL;
 		m_pWarningsContainer = NULL;
-		m_pRefreshListener	= NULL; 
+		m_pRefreshListener	= NULL;
 		m_bConstructed		= sal_False;
 	}
 

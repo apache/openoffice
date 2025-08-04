@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -87,7 +87,7 @@ namespace drawinglayer
 
 				// create geometry
 				::std::vector< basegfx::B3DPolyPolygon > aFill;
-				extractPlanesFromSlice(aFill, rSliceVector, 
+				extractPlanesFromSlice(aFill, rSliceVector,
 					bCreateNormals, getSmoothHorizontalNormals(), getSmoothNormals(), getSmoothLids(), false,
 					0.5, 0.6, bCreateTextureCoordiantesX || bCreateTextureCoordiantesY, aTexTransform);
 
@@ -127,20 +127,20 @@ namespace drawinglayer
 				{
 					// add fill
 					aRetval = create3DPolyPolygonFillPrimitives(
-						aFill, 
-						getTransform(), 
-						getTextureSize(), 
-						getSdr3DObjectAttribute(), 
-						getSdrLFSAttribute().getFill(), 
+						aFill,
+						getTransform(),
+						getTextureSize(),
+						getSdr3DObjectAttribute(),
+						getSdrLFSAttribute().getFill(),
 						getSdrLFSAttribute().getFillFloatTransGradient());
 				}
 				else
 				{
 					// create simplified 3d hit test geometry
                     aRetval = createHiddenGeometryPrimitives3D(
-				        aFill, 
-				        getTransform(), 
-				        getTextureSize(), 
+				        aFill,
+				        getTransform(),
+				        getTextureSize(),
 				        getSdr3DObjectAttribute());
 				}
 
@@ -154,7 +154,7 @@ namespace drawinglayer
 						const sal_uInt32 nCount(aVerLine.count());
 						basegfx::B3DPolyPolygon aReducedLoops;
 						basegfx::B3DPolyPolygon aNewLineGeometry;
-						
+
 						// sort out doubles (front and back planes when no edge rounding is done). Since
 						// this is a line geometry merged from PolyPolygons, loop over all Polygons
 						for(a = 0; a < nCount; a++)
@@ -162,7 +162,7 @@ namespace drawinglayer
 							const sal_uInt32 nReducedCount(aReducedLoops.count());
 							const basegfx::B3DPolygon aCandidate(aVerLine.getB3DPolygon(a));
 							bool bAdd(true);
-							
+
 							if(nReducedCount)
 							{
 								for(sal_uInt32 b(0); bAdd && b < nReducedCount; b++)
@@ -173,7 +173,7 @@ namespace drawinglayer
 									}
 								}
 							}
-							
+
 							if(bAdd)
 							{
 								aReducedLoops.append(aCandidate);
@@ -190,13 +190,13 @@ namespace drawinglayer
 								// get loop pair
 								const basegfx::B3DPolygon aCandA(aReducedLoops.getB3DPolygon(b - 1));
 								const basegfx::B3DPolygon aCandB(aReducedLoops.getB3DPolygon(b));
-								
+
 								// for each loop pair create the connection edges
 								createReducedOutlines(
-									rViewInformation, 
-									getTransform(), 
+									rViewInformation,
+									getTransform(),
 									aCandA,
-									aCandB, 
+									aCandB,
 									aNewLineGeometry);
 							}
 						}
@@ -204,7 +204,7 @@ namespace drawinglayer
 						// add reduced loops themselves
 						aNewLineGeometry.append(aReducedLoops);
 
-						// to create vertical edges at non-C1/C2 steady loops, use maCorrectedPolyPolygon 
+						// to create vertical edges at non-C1/C2 steady loops, use maCorrectedPolyPolygon
 						// directly since the 3D Polygons do not suport this.
 						//
 						// Unfortunately there is no bezier polygon provided by the chart module; one reason is
@@ -217,7 +217,7 @@ namespace drawinglayer
 						// This is all not very well designed ATM. Ideally, the ReducedLineGeometry is responsible
 						// for creating the outer geometry edges (createReducedOutlines), but for special edges
 						// like the vertical ones for pie center and both start/end, the incarnation with the
-						// knowledge about that it needs to create those and IS a pie segment -> in this case, 
+						// knowledge about that it needs to create those and IS a pie segment -> in this case,
 						// the chart itself.
 						const sal_uInt32 nPolyCount(maCorrectedPolyPolygon.count());
 
@@ -231,7 +231,7 @@ namespace drawinglayer
 								sal_uInt32 nIndexA(nPointCount);
 								sal_uInt32 nIndexB(nPointCount);
 								sal_uInt32 nIndexC(nPointCount);
-								
+
 								for(sal_uInt32 d(0); d < nPointCount; d++)
 								{
 									const sal_uInt32 nPrevInd((d + nPointCount - 1) % nPointCount);
@@ -273,7 +273,7 @@ namespace drawinglayer
 								}
 								else if(bIndexAUsed && bIndexBUsed)
 								{
-									// outer edges detected (they are approx. 90 degrees), but center one not. 
+									// outer edges detected (they are approx. 90 degrees), but center one not.
 									// Look with the knowledge that it's in-between the two found ones
 									if(((nIndexA + 2) % nPointCount) == nIndexB)
 									{
@@ -298,7 +298,7 @@ namespace drawinglayer
 									aToBeAdded.append(aEnd);
 									aNewLineGeometry.append(aToBeAdded);
 								}
-								
+
 								if(bIndexBUsed)
 								{
 									const basegfx::B2DPoint aPoint(aCandidate.getB2DPoint(nIndexB));
@@ -327,7 +327,7 @@ namespace drawinglayer
 
 						// append loops themselves
 						aNewLineGeometry.append(aReducedLoops);
-						
+
 						if(aNewLineGeometry.count())
 						{
 							const Primitive3DSequence aLines(create3DPolyPolygonLinePrimitives(
@@ -393,19 +393,19 @@ namespace drawinglayer
 		}
 
 		SdrExtrudePrimitive3D::SdrExtrudePrimitive3D(
-			const basegfx::B3DHomMatrix& rTransform, 
+			const basegfx::B3DHomMatrix& rTransform,
 			const basegfx::B2DVector& rTextureSize,
 			const attribute::SdrLineFillShadowAttribute3D& rSdrLFSAttribute,
 			const attribute::Sdr3DObjectAttribute& rSdr3DObjectAttribute,
 			const basegfx::B2DPolyPolygon& rPolyPolygon,
-			double fDepth, 
-			double fDiagonal, 
+			double fDepth,
+			double fDiagonal,
 			double fBackScale,
-			bool bSmoothNormals, 
+			bool bSmoothNormals,
 			bool bSmoothHorizontalNormals,
-			bool bSmoothLids, 
-			bool bCharacterMode, 
-			bool bCloseFront, 
+			bool bSmoothLids,
+			bool bCharacterMode,
+			bool bCloseFront,
 			bool bCloseBack)
 		:	SdrPrimitive3D(rTransform, rTextureSize, rSdrLFSAttribute, rSdr3DObjectAttribute),
             maCorrectedPolyPolygon(),
@@ -464,7 +464,7 @@ namespace drawinglayer
 			if(SdrPrimitive3D::operator==(rPrimitive))
 			{
 				const SdrExtrudePrimitive3D& rCompare = static_cast< const SdrExtrudePrimitive3D& >(rPrimitive);
-				
+
 				return (getPolyPolygon() == rCompare.getPolyPolygon()
 					&& getDepth() == rCompare.getDepth()
 					&& getDiagonal() == rCompare.getDiagonal()

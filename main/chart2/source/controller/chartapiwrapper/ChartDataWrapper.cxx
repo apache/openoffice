@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -689,7 +689,7 @@ void ChartDataWrapper::applyData( lcl_Operator& rDataOperator )
     Reference< chart2::XChartDocument > xChartDoc( m_spChart2ModelContact->getChart2Document() );
     if( !xChartDoc.is() )
         return;
-    
+
     // remember some diagram properties to reset later
     sal_Bool bStacked = sal_False;
     sal_Bool bPercent = sal_False;
@@ -714,10 +714,10 @@ void ChartDataWrapper::applyData( lcl_Operator& rDataOperator )
     DataSourceHelper::detectRangeSegmentation(
         uno::Reference< frame::XModel >( xChartDoc, uno::UNO_QUERY ),
         aRangeString, aSequenceMapping, bUseColumns, bFirstCellAsLabel, bHasCategories );
-    
+
     if( !bHasCategories && rDataOperator.setsCategories( bUseColumns ) )
         bHasCategories = true;
-    
+
     aRangeString = C2U("all");
     uno::Sequence< beans::PropertyValue > aArguments( DataSourceHelper::createArguments(
             aRangeString, aSequenceMapping, bUseColumns, bFirstCellAsLabel, bHasCategories ) );

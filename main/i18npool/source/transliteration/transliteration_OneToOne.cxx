@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,35 +41,35 @@ sal_Int16 SAL_CALL transliteration_OneToOne::getType() throw(RuntimeException)
 }
 
 OUString SAL_CALL
-transliteration_OneToOne::folding( const OUString& /*inStr*/, sal_Int32 /*startPos*/, 
+transliteration_OneToOne::folding( const OUString& /*inStr*/, sal_Int32 /*startPos*/,
         sal_Int32 /*nCount*/, Sequence< sal_Int32 >& /*offset*/) throw(RuntimeException)
 {
         throw RuntimeException();
 }
 
 sal_Bool SAL_CALL
-transliteration_OneToOne::equals( const OUString& /*str1*/, sal_Int32 /*pos1*/, sal_Int32 /*nCount1*/, 
+transliteration_OneToOne::equals( const OUString& /*str1*/, sal_Int32 /*pos1*/, sal_Int32 /*nCount1*/,
         sal_Int32& /*nMatch1*/, const OUString& /*str2*/, sal_Int32 /*pos2*/, sal_Int32 /*nCount2*/, sal_Int32& /*nMatch2*/ )
         throw(RuntimeException)
 {
     throw RuntimeException();
 }
 
-Sequence< OUString > SAL_CALL 
-transliteration_OneToOne::transliterateRange( const OUString& /*str1*/, const OUString& /*str2*/ ) 
+Sequence< OUString > SAL_CALL
+transliteration_OneToOne::transliterateRange( const OUString& /*str1*/, const OUString& /*str2*/ )
         throw(RuntimeException)
 {
     throw RuntimeException();
 }
 
-OUString SAL_CALL 
-transliteration_OneToOne::transliterate( const OUString& inStr, sal_Int32 startPos, 
-    sal_Int32 nCount, Sequence< sal_Int32 >& offset) 
+OUString SAL_CALL
+transliteration_OneToOne::transliterate( const OUString& inStr, sal_Int32 startPos,
+    sal_Int32 nCount, Sequence< sal_Int32 >& offset)
     throw(RuntimeException)
 {
     // Create a string buffer which can hold nCount + 1 characters.
     // The reference count is 0 now.
-    rtl_uString * newStr = x_rtl_uString_new_WithLength( nCount ); // defined in x_rtl_ustring.h  
+    rtl_uString * newStr = x_rtl_uString_new_WithLength( nCount ); // defined in x_rtl_ustring.h
     sal_Unicode * dst = newStr->buffer;
     const sal_Unicode * src = inStr.getStr() + startPos;
 
@@ -94,7 +94,7 @@ transliteration_OneToOne::transliterate( const OUString& inStr, sal_Int32 startP
     return OUString( newStr, SAL_NO_ACQUIRE ); // take over ownership of <newStr>
 }
 
-sal_Unicode SAL_CALL 
+sal_Unicode SAL_CALL
 transliteration_OneToOne::transliterateChar2Char( sal_Unicode inChar) throw(RuntimeException, MultipleCharsOutputException)
 {
     return func ? func( inChar) : (*table)[ inChar ];

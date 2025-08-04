@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,8 +41,8 @@ using namespace ::xmloff::token;
 
 TYPEINIT1( XMLCreateElemTransformerContext, XMLTransformerContext );
 
-XMLCreateElemTransformerContext::XMLCreateElemTransformerContext( 
-		XMLTransformerBase& rImp, 
+XMLCreateElemTransformerContext::XMLCreateElemTransformerContext(
+		XMLTransformerBase& rImp,
 		const OUString& rQName,
 	   sal_uInt16 nActionMap ) :
 	XMLTransformerContext( rImp, rQName ),
@@ -54,7 +54,7 @@ XMLCreateElemTransformerContext::~XMLCreateElemTransformerContext()
 {
 }
 
-void XMLCreateElemTransformerContext::StartElement( 
+void XMLCreateElemTransformerContext::StartElement(
 		const Reference< XAttributeList >& rAttrList )
 {
 	Reference< XAttributeList > xAttrList( rAttrList );
@@ -62,7 +62,7 @@ void XMLCreateElemTransformerContext::StartElement(
 	XMLTransformerContextVector aChildContexts;
 
 	XMLMutableAttributeList *pMutableAttrList = 0;
-	XMLTransformerActions *pActions = 
+	XMLTransformerActions *pActions =
 		GetTransformer().GetUserDefinedActions( m_nActionMap );
 	OSL_ENSURE( pActions, "go no actions" );
 	if( pActions )
@@ -73,8 +73,8 @@ void XMLCreateElemTransformerContext::StartElement(
 			const OUString& rAttrName = xAttrList->getNameByIndex( i );
 			const OUString& rAttrValue = xAttrList->getValueByIndex( i );
 			OUString aLocalName;
-			sal_uInt16 nPrefix = 
-				GetTransformer().GetNamespaceMap().GetKeyByAttrName( rAttrName, 
+			sal_uInt16 nPrefix =
+				GetTransformer().GetNamespaceMap().GetKeyByAttrName( rAttrName,
 														   &aLocalName );
 
 			XMLTransformerActions::key_type aKey( nPrefix, aLocalName );
@@ -92,16 +92,16 @@ void XMLCreateElemTransformerContext::StartElement(
 				{
 				case XML_ATACTION_MOVE_TO_ELEM:
 					{
-						OUString aElemQName( 
-							GetTransformer().GetNamespaceMap().GetQNameByKey( 
-								(*aIter).second.GetQNamePrefixFromParam1(), 
-								::xmloff::token::GetXMLToken( 
+						OUString aElemQName(
+							GetTransformer().GetNamespaceMap().GetQNameByKey(
+								(*aIter).second.GetQNamePrefixFromParam1(),
+								::xmloff::token::GetXMLToken(
 								(*aIter).second.GetQNameTokenFromParam1()) ) );
-						XMLTransformerContext *pContext = 
-							new XMLPersTextContentTContext( GetTransformer(), 
+						XMLTransformerContext *pContext =
+							new XMLPersTextContentTContext( GetTransformer(),
 													   aElemQName );
 						pContext->Characters( rAttrValue );
-						XMLTransformerContextVector::value_type aVal( 
+						XMLTransformerContextVector::value_type aVal(
 								pContext );
 						aChildContexts.push_back( aVal );
 						pMutableAttrList->RemoveAttributeByIndex( i );

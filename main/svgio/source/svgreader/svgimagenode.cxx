@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -169,7 +169,7 @@ namespace svgio
         }
 
         void extractFromGraphic(
-            const Graphic& rGraphic, 
+            const Graphic& rGraphic,
             drawinglayer::primitive2d::Primitive2DSequence& rEmbedded,
             basegfx::B2DRange& rViewBox,
             BitmapEx& rBitmapEx)
@@ -230,8 +230,8 @@ namespace svgio
                             Graphic aGraphic;
 
                             if(GRFILTER_OK == GraphicFilter::GetGraphicFilter()->ImportGraphic(
-                                aGraphic, 
-                                String(), 
+                                aGraphic,
+                                String(),
                                 aStream))
                             {
                                 extractFromGraphic(aGraphic, aNewTarget, aViewBox, aBitmapEx);
@@ -252,8 +252,8 @@ namespace svgio
                                 Graphic aGraphic;
 
                                 if(GRFILTER_OK == GraphicFilter::GetGraphicFilter()->ImportGraphic(
-                                    aGraphic, 
-                                    aAbsUrl, 
+                                    aGraphic,
+                                    aAbsUrl,
                                     aStream))
                                 {
                                     extractFromGraphic(aGraphic, aNewTarget, aViewBox, aBitmapEx);
@@ -279,7 +279,7 @@ namespace svgio
                             if(aNewTarget.hasElements())
                             {
                                 aViewBox = drawinglayer::primitive2d::getB2DRangeFromPrimitive2DSequence(
-                                    aNewTarget, 
+                                    aNewTarget,
                                     drawinglayer::geometry::ViewInformation2D());
                             }
                         }
@@ -332,7 +332,7 @@ namespace svgio
                                             basegfx::B2DPolyPolygon(
                                                 basegfx::tools::createPolygonFromRect(aTarget)),
                                             aNewTarget));
-                                    
+
                                     aNewTarget = drawinglayer::primitive2d::Primitive2DSequence(&xMask, 1);
                                 }
                             }
@@ -340,7 +340,7 @@ namespace svgio
                             {
                                 // choose default mapping
                                 const basegfx::B2DHomMatrix aEmbeddingTransform(rRatio.createLinearMapping(aTarget, aViewBox));
-                                
+
                                 if(!aEmbeddingTransform.isIdentity())
                                 {
                                     const drawinglayer::primitive2d::Primitive2DReference xRef(

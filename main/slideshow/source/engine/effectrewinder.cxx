@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -106,17 +106,17 @@ void EffectRewinder::initialize (void)
     // main sequence effect and if so, increase the respective counter),
     // b,c) a slide was started or ended (in which case the effect counter
     // is reset.
-    
+
     mpAnimationStartHandler.reset(
         new RewinderAnimationEventHandler(
             ::boost::bind(&EffectRewinder::notifyAnimationStart, this, _1)));
     mrEventMultiplexer.addAnimationStartHandler(mpAnimationStartHandler);
-    
+
     mpSlideStartHandler.reset(
         new RewinderEventHandler(
             ::boost::bind(&EffectRewinder::resetEffectCount, this)));
     mrEventMultiplexer.addSlideStartHandler(mpSlideStartHandler);
-    
+
     mpSlideEndHandler.reset(
         new RewinderEventHandler(
             ::boost::bind(&EffectRewinder::resetEffectCount, this)));
@@ -141,7 +141,7 @@ void EffectRewinder::dispose (void)
         mpAsynchronousRewindEvent->dispose();
         mpAsynchronousRewindEvent.reset();
     }
-    
+
     if (mpAnimationStartHandler)
     {
         mrEventMultiplexer.removeAnimationStartHandler(mpAnimationStartHandler);
@@ -190,7 +190,7 @@ bool EffectRewinder::rewind (
     // Abort (and skip over the rest of) any currently active animation.
     mrUserEventQueue.callSkipEffectEventHandler();
     mrEventQueue.forceEmpty();
-        
+
     const int nSkipCount (mnMainSequenceEffectCount - 1);
     if (nSkipCount < 0)
     {
@@ -294,7 +294,7 @@ sal_Int32 EffectRewinder::countMainSequenceEffects (void)
     }
 
     return nMainSequenceNodeCount;
-    
+
     //    // Skip all main sequence nodes.
     //    SkipSomeMainSequenceEffects(nMainSequenceNodeCount);
 }
@@ -348,7 +348,7 @@ bool EffectRewinder::notifyAnimationStart (const AnimationNodeSharedPtr& rpNode)
     // This notification is only relevant for us when the effect is user
     // triggered.
     bool bIsUserTriggered (false);
-    
+
     Reference<animations::XAnimationNode> xNode (rpNode->getXAnimationNode());
     if (xNode.is())
     {

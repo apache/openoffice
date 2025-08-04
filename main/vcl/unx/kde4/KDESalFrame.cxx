@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -65,7 +65,7 @@ void KDESalFrame::Show( sal_Bool bVisible, sal_Bool bNoActivate )
         KDEXLib* pXLib = static_cast<KDEXLib*>(GetDisplay()->GetXLib());
         pXLib->doStartup();
     }
-	
+
     X11SalFrame::Show( bVisible, bNoActivate );
 }
 
@@ -100,13 +100,13 @@ static Font toFont( const QFont &rQFont, const ::com::sun::star::lang::Locale& r
 {
     psp::FastPrintFontInfo aInfo;
     QFontInfo qFontInfo( rQFont );
-    
+
     // set family name
     aInfo.m_aFamilyName = String( (const char *) rQFont.family().toUtf8(), RTL_TEXTENCODING_UTF8 );
 
     // set italic
     aInfo.m_eItalic = ( qFontInfo.italic()? psp::italic::Italic: psp::italic::Upright );
-    
+
     // set weight
     int nWeight = qFontInfo.weight();
     if ( nWeight <= QFont::Light )
@@ -119,7 +119,7 @@ static Font toFont( const QFont &rQFont, const ::com::sun::star::lang::Locale& r
         aInfo.m_eWeight = psp::weight::Bold;
     else
         aInfo.m_eWeight = psp::weight::UltraBold;
-    
+
     // set width
     int nStretch = rQFont.stretch();
     if ( nStretch <= QFont::UltraCondensed )
@@ -140,7 +140,7 @@ static Font toFont( const QFont &rQFont, const ::com::sun::star::lang::Locale& r
         aInfo.m_eWidth = psp::width::ExtraExpanded;
     else
         aInfo.m_eWidth = psp::width::UltraExpanded;
-    
+
 #if OSL_DEBUG_LEVEL > 1
     fprintf( stderr, "font name BEFORE system match: \"%s\"\n", OUStringToOString( aInfo.m_aFamilyName, RTL_TEXTENCODING_ISO_8859_1 ).getStr() );
 #endif
@@ -158,7 +158,7 @@ static Font toFont( const QFont &rQFont, const ::com::sun::star::lang::Locale& r
     int nPointHeight = qFontInfo.pointSize();
     if ( nPointHeight <= 0 )
         nPointHeight = rQFont.pointSize();
-    
+
     // Create the font
     Font aFont( aInfo.m_aFamilyName, Size( 0, nPointHeight ) );
     if( aInfo.m_eWeight != psp::weight::Unknown )
@@ -179,26 +179,26 @@ void KDESalFrame::UpdateSettings( AllSettings& rSettings )
 {
     StyleSettings style( rSettings.GetStyleSettings() );
 	bool bSetTitleFont = false;
-	
+
 	// General settings
     QPalette pal = kapp->palette();
-	
+
 	style.SetActiveColor(toColor(pal.color(QPalette::Active, QPalette::Window)));
 	style.SetDeactiveColor(toColor(pal.color(QPalette::Inactive, QPalette::Window)));
-	
+
 	style.SetActiveColor2(toColor(pal.color(QPalette::Active, QPalette::Window)));
 	style.SetDeactiveColor2(toColor(pal.color(QPalette::Inactive, QPalette::Window)));
-	
+
 	style.SetActiveTextColor(toColor(pal.color(QPalette::Active, QPalette::WindowText)));
 	style.SetDeactiveTextColor(toColor(pal.color(QPalette::Inactive, QPalette::WindowText)));
-	
+
     // WM settings
     KConfig *pConfig = KGlobal::config().data();
     if ( pConfig )
     {
         KConfigGroup aGroup = pConfig->group( "WM" );
         const char *pKey;
-		
+
         pKey = "titleFont";
         if ( aGroup.hasKey( pKey ) )
         {
@@ -206,13 +206,13 @@ void KDESalFrame::UpdateSettings( AllSettings& rSettings )
             style.SetTitleFont( aFont );
 			bSetTitleFont = true;
         }
-		
+
         aGroup = pConfig->group( "Icons" );
 
         pKey = "Theme";
         if ( aGroup.hasKey( pKey ) )
             style.SetPreferredSymbolsStyleName( readEntryUntranslated( &aGroup, pKey ) );
-		
+
 		//toolbar
 		pKey = "toolbarFont";
 		if ( aGroup.hasKey( pKey ) )
@@ -221,7 +221,7 @@ void KDESalFrame::UpdateSettings( AllSettings& rSettings )
 			style.SetToolFont( aFont );
 		}
     }
-	
+
     Color aFore = toColor( pal.color( QPalette::Active, QPalette::WindowText ) );
     Color aBack = toColor( pal.color( QPalette::Active, QPalette::Window ) );
     Color aText = toColor( pal.color( QPalette::Active, QPalette::Text ) );
@@ -248,7 +248,7 @@ void KDESalFrame::UpdateSettings( AllSettings& rSettings )
     style.SetHelpColor( aBase );
     style.SetWindowColor( aBase );
     style.SetActiveTabColor( aBase );
-    
+
     // Buttons
     style.SetButtonTextColor( aButn );
     style.SetButtonRolloverTextColor( aButn );
@@ -264,7 +264,7 @@ void KDESalFrame::UpdateSettings( AllSettings& rSettings )
     style.SetFaceColor( aBack );
     style.SetInactiveTabColor( aBack );
     style.SetDialogColor( aBack );
-	
+
     if( aBack == COL_LIGHTGRAY )
         style.SetCheckedColor( Color( 0xCC, 0xCC, 0xCC ) );
     else
@@ -283,15 +283,15 @@ void KDESalFrame::UpdateSettings( AllSettings& rSettings )
 
     // Font
     Font aFont = toFont( kapp->font(), rSettings.GetUILocale() );
-	
+
     style.SetAppFont( aFont );
     style.SetHelpFont( aFont );
-	
+
 	if( !bSetTitleFont )
 	{
 		style.SetTitleFont( aFont );
 	}
-	
+
 	style.SetFloatTitleFont( aFont );
     style.SetMenuFont( aFont ); // will be changed according to pMenuBar
     //style.SetToolFont( aFont ); //already set above
@@ -302,7 +302,7 @@ void KDESalFrame::UpdateSettings( AllSettings& rSettings )
     style.SetFieldFont( aFont );
     style.SetIconFont( aFont );
     style.SetGroupFont( aFont );
-	
+
     int flash_time = QApplication::cursorFlashTime();
     style.SetCursorBlinkTime( flash_time != 0 ? flash_time/2 : STYLE_CURSOR_NOBLINKTIME );
 
@@ -313,14 +313,14 @@ void KDESalFrame::UpdateSettings( AllSettings& rSettings )
     {
         // Color
         QPalette qMenuCG = pMenuBar->palette();
-        
+
         // Menu text and background color, theme specific
         Color aMenuFore = toColor( qMenuCG.color( QPalette::WindowText ) );
         Color aMenuBack = toColor( qMenuCG.color( QPalette::Window ) );
-		
+
         aMenuFore = toColor( qMenuCG.color( QPalette::ButtonText ) );
         aMenuBack = toColor( qMenuCG.color( QPalette::Button ) );
-        
+
         style.SetMenuTextColor( aMenuFore );
         style.SetMenuBarTextColor( aMenuFore );
         style.SetMenuColor( aMenuBack );
@@ -329,7 +329,7 @@ void KDESalFrame::UpdateSettings( AllSettings& rSettings )
         style.SetMenuHighlightColor( toColor ( qMenuCG.color( QPalette::Highlight ) ) );
 
         style.SetMenuHighlightTextColor( aMenuFore );
-        
+
         // set special menubar higlight text color
         if ( kapp->style()->inherits( "HighContrastStyle" ) )
             ImplGetSVData()->maNWFData.maMenuBarHighlightTextColor = toColor( qMenuCG.color( QPalette::HighlightedText ) );
@@ -340,12 +340,12 @@ void KDESalFrame::UpdateSettings( AllSettings& rSettings )
         aFont = toFont( pMenuBar->font(), rSettings.GetUILocale() );
         style.SetMenuFont( aFont );
     }
-	
+
 	delete pMenuBar;
-	
+
     // Scroll bar size
     style.SetScrollBarSize( kapp->style()->pixelMetric( QStyle::PM_ScrollBarExtent ) );
-    
+
     rSettings.SetStyleSettings( style );
 }
 
@@ -399,6 +399,6 @@ SalGraphics* KDESalFrame::GetGraphics()
             }
         }
     }
-    
+
     return NULL;
 }

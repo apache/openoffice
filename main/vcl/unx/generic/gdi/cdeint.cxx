@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -72,9 +72,9 @@ void CDEIntegrator::GetSystemLook( AllSettings& rSettings )
 		XTextProperty aTextProperty;
 		aTextProperty.value = 0;
 		int i;
-		
+
 		static Atom nResMgrAtom = XInternAtom( mpDisplay, "RESOURCE_MANAGER", False );
-		
+
 		if( XGetTextProperty( mpDisplay,
 							  RootWindow( mpDisplay, 0 ),
 							  &aTextProperty,
@@ -122,7 +122,7 @@ void CDEIntegrator::GetSystemLook( AllSettings& rSettings )
 					for( ; nPos >= 0 && aLine.GetChar( nPos ) != '*'; nPos-- )
 						;
 					int nNumber = aLine.Copy( ++nPos ).ToInt32();
-					
+
 					DBG_TRACE2( "found palette %d in resource \"%s\"", nNumber, aLine.GetBuffer() );
 
 					// found no documentation what this number actually means;
@@ -132,7 +132,7 @@ void CDEIntegrator::GetSystemLook( AllSettings& rSettings )
 						continue;
 
 					DBG_TRACE1( "Palette file is \"%s\".\n", aPaletteFile.GetBuffer() );
-					
+
 					String aPath( aHomeDir );
 					aPath.AppendAscii( "/.dt/palettes/" );
 					aPath += String( aPaletteFile, gsl_getSystemTextEncoding() );
@@ -161,12 +161,12 @@ void CDEIntegrator::GetSystemLook( AllSettings& rSettings )
 							aColors[nIndex] = Color(
 								getHexDigit( pArr[1] )
 								| ( getHexDigit( pArr[0] ) << 4 ),
-								getHexDigit( pArr[5] ) 
+								getHexDigit( pArr[5] )
 								| ( getHexDigit( pArr[4] ) << 4 ),
 								getHexDigit( pArr[9] )
 								| ( getHexDigit( pArr[8] ) << 4 )
 								);
-							
+
 							DBG_TRACE1( "\t\t%lx\n", aColors[nIndex].GetColor() );
 						}
 					}
@@ -176,14 +176,14 @@ void CDEIntegrator::GetSystemLook( AllSettings& rSettings )
 				}
 			}
 		}
-		
+
 		if( ppStringList )
 			XFreeStringList( ppStringList );
 		if( aTextProperty.value )
 			XFree( aTextProperty.value );
 	}
 
-    
+
     StyleSettings aStyleSettings = rSettings.GetStyleSettings();
     // #i48001# set a default blink rate
     aStyleSettings.SetCursorBlinkTime( 500 );

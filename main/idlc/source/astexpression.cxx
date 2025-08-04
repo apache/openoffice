@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,8 +48,8 @@ AstExpression::AstExpression(ExprComb c, AstExpression *pExpr1, AstExpression *p
 	, m_pSymbolicName(NULL)
 {
 	fillDefinitionDetails();
-	
-}	
+
+}
 
 AstExpression::AstExpression(sal_Int32 l)
 	: m_combOperator(EC_none)
@@ -63,7 +63,7 @@ AstExpression::AstExpression(sal_Int32 l)
 	m_exprValue = new AstExprValue();
 	m_exprValue->et = ET_long;
 	m_exprValue->u.lval = l;
-}	
+}
 
 AstExpression::AstExpression(sal_Int32	l, ExprType et)
 	: m_combOperator(EC_none)
@@ -77,7 +77,7 @@ AstExpression::AstExpression(sal_Int32	l, ExprType et)
 	m_exprValue = new AstExprValue();
 	m_exprValue->et = et;
 	m_exprValue->u.lval = l;
-}	
+}
 
 AstExpression::AstExpression(sal_Int64	h)
 	: m_combOperator(EC_none)
@@ -91,7 +91,7 @@ AstExpression::AstExpression(sal_Int64	h)
 	m_exprValue = new AstExprValue();
 	m_exprValue->et = ET_hyper;
 	m_exprValue->u.hval = h;
-}	
+}
 
 AstExpression::AstExpression(sal_uInt64	uh)
 	: m_combOperator(EC_none)
@@ -105,7 +105,7 @@ AstExpression::AstExpression(sal_uInt64	uh)
 	m_exprValue = new AstExprValue();
 	m_exprValue->et = ET_uhyper;
 	m_exprValue->u.uhval = uh;
-}	
+}
 
 AstExpression::AstExpression(double	d)
 	: m_combOperator(EC_none)
@@ -119,7 +119,7 @@ AstExpression::AstExpression(double	d)
 	m_exprValue = new AstExprValue();
 	m_exprValue->et = ET_double;
 	m_exprValue->u.dval = d;
-}	
+}
 
 AstExpression::AstExpression(::rtl::OString* scopedName)
 	: m_combOperator(EC_symbol)
@@ -129,8 +129,8 @@ AstExpression::AstExpression(::rtl::OString* scopedName)
 	, m_pSymbolicName(scopedName)
 {
 	fillDefinitionDetails();
-}	
-	
+}
+
 AstExpression::~AstExpression()
 {
 	if ( m_exprValue )
@@ -141,7 +141,7 @@ AstExpression::~AstExpression()
 		delete m_subExpr2;
 	if ( m_pSymbolicName )
 		delete m_pSymbolicName;
-}	
+}
 
 /*
  * Perform the coercion from the given AstExprValue to the requested
@@ -154,10 +154,10 @@ coerce_value(AstExprValue *ev, ExprType t)
 	if (ev == NULL)
 		return NULL;
 
-	switch (t) 
+	switch (t)
 	{
 		case ET_short:
-			switch (ev->et) 
+			switch (ev->et)
 			{
 				case ET_short:
 					return ev;
@@ -216,7 +216,7 @@ coerce_value(AstExprValue *ev, ExprType t)
 					return NULL;
 			}
 		case ET_ushort:
-			switch (ev->et) 
+			switch (ev->et)
 			{
 				case ET_short:
 					if (ev->u.sval < 0)
@@ -275,7 +275,7 @@ coerce_value(AstExprValue *ev, ExprType t)
 					return NULL;
 			}
 		case ET_long:
-			switch (ev->et) 
+			switch (ev->et)
 			{
 				case ET_short:
 					ev->u.lval = (sal_Int32)ev->u.sval;
@@ -330,7 +330,7 @@ coerce_value(AstExprValue *ev, ExprType t)
 					return NULL;
 			}
 		case ET_ulong:
-			switch (ev->et) 
+			switch (ev->et)
 			{
 				case ET_short:
 					if (ev->u.sval < 0)
@@ -387,7 +387,7 @@ coerce_value(AstExprValue *ev, ExprType t)
 					return NULL;
 			}
 		case ET_hyper:
-			switch (ev->et) 
+			switch (ev->et)
 			{
 				case ET_short:
 					ev->u.hval = (sal_Int64)ev->u.sval;
@@ -438,7 +438,7 @@ coerce_value(AstExprValue *ev, ExprType t)
 					return NULL;
 			}
 		case ET_uhyper:
-			switch (ev->et) 
+			switch (ev->et)
 			{
 				case ET_short:
 					if (ev->u.sval < 0)
@@ -493,7 +493,7 @@ coerce_value(AstExprValue *ev, ExprType t)
 					return NULL;
 			}
 		case ET_boolean:
-			switch (ev->et) 
+			switch (ev->et)
 			{
 				case ET_short:
 					ev->u.bval = (ev->u.sval == 0) ? sal_False : sal_True;
@@ -538,7 +538,7 @@ coerce_value(AstExprValue *ev, ExprType t)
 					return NULL;
 			}
 		case ET_float:
-			switch (ev->et) 
+			switch (ev->et)
 			{
 				case ET_short:
 					ev->u.fval = (float)ev->u.sval;
@@ -587,7 +587,7 @@ coerce_value(AstExprValue *ev, ExprType t)
 					return NULL;
 			}
 		case ET_double:
-			switch (ev->et) 
+			switch (ev->et)
 			{
 				case ET_short:
 					ev->u.dval = (double)ev->u.sval;
@@ -634,7 +634,7 @@ coerce_value(AstExprValue *ev, ExprType t)
 					return NULL;
 			}
 		case ET_byte:
-			switch (ev->et) 
+			switch (ev->et)
 			{
 				case ET_short:
 					if (ev->u.sval < SAL_MIN_INT8 || ev->u.sval > SAL_MAX_UINT8)
@@ -743,7 +743,7 @@ AstExprValue* AstExpression::coerce(ExprType t, sal_Bool bAssign)
 	copy = new AstExprValue;
 
 	copy->et = m_exprValue->et;
-	switch (m_exprValue->et) 
+	switch (m_exprValue->et)
 	{
 		case ET_short:
 			copy->u.sval = m_exprValue->u.sval;
@@ -785,7 +785,7 @@ AstExprValue* AstExpression::coerce(ExprType t, sal_Bool bAssign)
 		m_exprValue = coerce_value(copy, t);
 		return m_exprValue;
 	}
-	
+
 	return coerce_value(copy, t);
 }
 
@@ -793,7 +793,7 @@ void AstExpression::evaluate(EvalKind ek)
 {
 	m_exprValue = eval_internal(ek);
 	m_exprValue = eval_kind(m_exprValue, ek);
-}	
+}
 
 sal_Bool AstExpression::operator==(AstExpression *pExpr)
 {
@@ -805,7 +805,7 @@ sal_Bool AstExpression::operator==(AstExpression *pExpr)
 		return sal_False;
 	if (m_exprValue->et != pExpr->getExprValue()->et)
 		return sal_False;
-	switch (m_exprValue->et) 
+	switch (m_exprValue->et)
 	{
 		case ET_short:
 			return (m_exprValue->u.sval == pExpr->getExprValue()->u.sval) ? sal_True : sal_False;
@@ -833,10 +833,10 @@ sal_Bool AstExpression::operator==(AstExpression *pExpr)
 	}
 
 	return sal_False;
-}	
+}
 
 sal_Bool AstExpression::compare(AstExpression *pExpr)
-{	
+{
 	if (m_combOperator != pExpr->getCombOperator())
 		return sal_False;
 	evaluate(EK_const);
@@ -845,7 +845,7 @@ sal_Bool AstExpression::compare(AstExpression *pExpr)
 		return sal_False;
 	if (m_exprValue->et != pExpr->getExprValue()->et)
 		return sal_False;
-	switch (m_exprValue->et) 
+	switch (m_exprValue->et)
 	{
 		case ET_short:
 			return (m_exprValue->u.sval == pExpr->getExprValue()->u.sval) ? sal_True : sal_False;
@@ -873,11 +873,11 @@ sal_Bool AstExpression::compare(AstExpression *pExpr)
 	}
 
 	return sal_False;
-}	
-	
+}
+
 void AstExpression::fillDefinitionDetails()
 {
-	m_pScope = idlc()->scopes()->depth() > 0 ? idlc()->scopes()->top() : NULL;		
+	m_pScope = idlc()->scopes()->depth() > 0 ? idlc()->scopes()->top() : NULL;
 	m_lineNo = idlc()->getLineNumber();
 	m_fileName = idlc()->getFileName();
 }
@@ -892,7 +892,7 @@ AstExprValue* AstExpression::eval_internal(EvalKind ek)
 	/*
 	 * OK, must evaluate operator
 	 */
-	switch (m_combOperator) 
+	switch (m_combOperator)
 	{
 		case EC_add:
 		case EC_minus:
@@ -921,7 +921,7 @@ AstExprValue* AstExpression::eval_internal(EvalKind ek)
 	}
 
 	return NULL;
-}	
+}
 
 AstExprValue* AstExpression::eval_bin_op(EvalKind ek)
 {
@@ -950,7 +950,7 @@ AstExprValue* AstExpression::eval_bin_op(EvalKind ek)
     std::auto_ptr< AstExprValue > retval(new AstExprValue());
 	retval->et = eType;
 
-	switch (m_combOperator) 
+	switch (m_combOperator)
 	{
 		case EC_mod:
 			if (m_subExpr2->getExprValue()->u.hval == 0)
@@ -974,10 +974,10 @@ AstExprValue* AstExpression::eval_bin_op(EvalKind ek)
 		default:
 			return NULL;
 	}
-	
+
 	return retval.release();
-}	
-	
+}
+
 AstExprValue* AstExpression::eval_bit_op(EvalKind ek)
 {
 	if (ek != EK_const && ek != EK_positive_int)
@@ -1000,7 +1000,7 @@ AstExprValue* AstExpression::eval_bit_op(EvalKind ek)
     std::auto_ptr< AstExprValue	> retval(new AstExprValue());
 	retval->et = ET_long;
 
-	switch (m_combOperator) 
+	switch (m_combOperator)
 	{
 		case EC_or:
 			retval->u.lval = m_subExpr1->getExprValue()->u.lval | m_subExpr2->getExprValue()->u.lval;
@@ -1020,10 +1020,10 @@ AstExprValue* AstExpression::eval_bit_op(EvalKind ek)
 		default:
 			return NULL;
 	}
-  
+
 	return retval.release();
-}	
-	
+}
+
 AstExprValue* AstExpression::eval_un_op(EvalKind ek)
 {
 	if (m_exprValue != NULL)
@@ -1043,7 +1043,7 @@ AstExprValue* AstExpression::eval_un_op(EvalKind ek)
     std::auto_ptr< AstExprValue	> retval(new AstExprValue());
 	retval->et = ET_double;
 
-	switch (m_combOperator) 
+	switch (m_combOperator)
 	{
 		case EC_u_plus:
 			retval->u.lval = m_subExpr1->getExprValue()->u.lval;
@@ -1060,9 +1060,9 @@ AstExprValue* AstExpression::eval_un_op(EvalKind ek)
 		default:
 			return NULL;
 	}
-	
+
 	return retval.release();
-}	
+}
 
 AstExprValue* AstExpression::eval_symbol(EvalKind ek)
 {
@@ -1073,7 +1073,7 @@ AstExprValue* AstExpression::eval_symbol(EvalKind ek)
 	/*
 	 * Is there a symbol stored?
 	 */
-	if (m_pSymbolicName == NULL) 
+	if (m_pSymbolicName == NULL)
 	{
 		idlc()->error()->evalError(this);
 		return NULL;
@@ -1083,7 +1083,7 @@ AstExprValue* AstExpression::eval_symbol(EvalKind ek)
 	 */
 	if (idlc()->scopes()->depth() > 0)
 		pScope = idlc()->scopes()->topNonNull();
-	if ( !pScope ) 
+	if ( !pScope )
 	{
 		idlc()->error()->lookupError(*m_pSymbolicName);
 		return NULL;
@@ -1092,7 +1092,7 @@ AstExprValue* AstExpression::eval_symbol(EvalKind ek)
 	 * Do lookup
 	 */
 	pDecl = pScope->lookupByName(*m_pSymbolicName);
-	if (pDecl == NULL) 
+	if (pDecl == NULL)
 	{
 		idlc()->error()->lookupError(*m_pSymbolicName);
 		return NULL;
@@ -1101,7 +1101,7 @@ AstExprValue* AstExpression::eval_symbol(EvalKind ek)
 	 * Is it a constant?
 	 */
 	if (pDecl->getNodeType() != NT_const &&
-		pDecl->getNodeType() != NT_enum_val) 
+		pDecl->getNodeType() != NT_enum_val)
 	{
 		idlc()->error()->constantExpected(pDecl, *m_pSymbolicName);
 		return NULL;
@@ -1118,7 +1118,7 @@ AstExprValue* AstExpression::eval_symbol(EvalKind ek)
 		return NULL;
 	return pConst->getConstValue()->eval_internal(ek);
 }
-	
+
 OString AstExpression::toString()
 {
 	OString exprStr;
@@ -1127,7 +1127,7 @@ OString AstExpression::toString()
 
 	if ( m_exprValue )
 	{
-		switch (m_exprValue->et) 
+		switch (m_exprValue->et)
 		{
 			case ET_short:
 				return OString::valueOf((sal_Int32)m_exprValue->u.sval);
@@ -1148,17 +1148,17 @@ OString AstExpression::toString()
 			case ET_byte:
 				return OString::valueOf((sal_Int32)m_exprValue->u.byval);
 			case ET_boolean:
-				if ( m_exprValue->u.lval == 0) 
+				if ( m_exprValue->u.lval == 0)
 					return OString("FALSE");
 				else
-					return OString("TRUE");					
+					return OString("TRUE");
             default:
                 OSL_ASSERT(false);
 				return OString();
 		}
-	}	
+	}
 
-	switch (m_combOperator) 
+	switch (m_combOperator)
 	{
 		case EC_u_plus:
 			exprStr += OString("+");
@@ -1174,7 +1174,7 @@ OString AstExpression::toString()
 	}
 	if ( m_subExpr1 )
 		exprStr += m_subExpr1->toString();
-	switch (m_combOperator) 
+	switch (m_combOperator)
 	{
 		case EC_add:
 			exprStr += OString(" + ");
@@ -1209,17 +1209,17 @@ OString AstExpression::toString()
         default:
             break;
 	}
-	
+
 	if ( m_subExpr2 )
 		exprStr += m_subExpr2->toString();
 
 	return exprStr;
-}	
+}
 
 // Convert the type of an AST_Expression to a char *
 const sal_Char* SAL_CALL exprTypeToString(ExprType t)
 {
-	switch (t) 
+	switch (t)
 	{
 		case ET_short:
 			return "short";

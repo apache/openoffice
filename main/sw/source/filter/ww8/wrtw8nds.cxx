@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -333,7 +333,7 @@ xub_StrLen WW8SwAttrIter::SearchNext( xub_StrLen nStartPos )
     xub_StrLen pos = lcl_getMinPos( fieldEndPos, fieldStartPos );
     pos = lcl_getMinPos( pos, formElementPos );
 
-	if (pos!=STRING_NOTFOUND)  
+	if (pos!=STRING_NOTFOUND)
         nMinPos=pos;
 
     // first the redline, then the attributes
@@ -661,7 +661,7 @@ const SfxPoolItem* WW8SwAttrIter::HasTextItem( sal_uInt16 nWhich ) const
     const SwpHints* pTxtAttrs = rNd.GetpSwpHints();
     if (pTxtAttrs)
     {
-        xub_StrLen nTmpSwPos = m_rExport.m_aCurrentCharPropStarts.size() ? 
+        xub_StrLen nTmpSwPos = m_rExport.m_aCurrentCharPropStarts.size() ?
             m_rExport.m_aCurrentCharPropStarts.top() : 0;
         for (sal_uInt16 i = 0; i < pTxtAttrs->Count(); ++i)
         {
@@ -892,7 +892,7 @@ bool WW8AttributeOutput::AnalyzeURL( const String& rUrl, const String& rTarget, 
 
     if ( sMark.Len() )
         ( ( sURL.APPEND_CONST_ASC( " \\l \"" ) ) += sMark ) += '\"';
-    
+
     if ( rTarget.Len() )
         ( sURL.APPEND_CONST_ASC( " \\n " ) ) += rTarget;
 
@@ -1342,10 +1342,10 @@ short MSWordExportBase::GetDefaultFrameDirection( ) const
         else if ( pOutFmtNode->ISA( SwTxtFmtColl ) )
             nDir = FRMDIR_HORI_LEFT_TOP;    //what else can we do :-(
     }
-    
+
     if ( nDir == FRMDIR_ENVIRONMENT )
         nDir = FRMDIR_HORI_LEFT_TOP;        //Set something
-    
+
     return nDir;
 }
 
@@ -1595,12 +1595,12 @@ void WW8AttributeOutput::FormatDrop( const SwTxtNode& rNode, const SwFmtDrop &rS
     m_rWW8Export.WriteCR( pTextNodeInfoInner );
 
     if ( pTextNodeInfo.get() != NULL )
-    { 
-#ifdef DEBUG            
+    {
+#ifdef DEBUG
         ::std::clog << pTextNodeInfo->toString() << ::std::endl;
 #endif
 
-        TableInfoCell( pTextNodeInfoInner );        
+        TableInfoCell( pTextNodeInfoInner );
     }
 
     m_rWW8Export.pPapPlc->AppendFkpEntry( m_rWW8Export.Strm().Tell(), m_rWW8Export.pO->Count(), m_rWW8Export.pO->GetData() );
@@ -1730,7 +1730,7 @@ bool MSWordExportBase::NearestBookmark( xub_StrLen& rNearest, const xub_StrLen n
             rNearest = nNext;
             bHasBookmark = true;
         }
-    }        
+    }
 
     if ( m_rSortedMarksEnd.size( ) > 0 )
     {
@@ -1752,7 +1752,7 @@ bool MSWordExportBase::NearestBookmark( xub_StrLen& rNearest, const xub_StrLen n
 void MSWordExportBase::GetSortedBookmarks( const SwTxtNode& rNode, xub_StrLen nAktPos, xub_StrLen nLen )
 {
     IMarkVector aMarksStart;
-    if ( GetBookmarks( rNode, nAktPos, nAktPos + nLen, aMarksStart ) ) 
+    if ( GetBookmarks( rNode, nAktPos, nAktPos + nLen, aMarksStart ) )
     {
         IMarkVector aSortedEnd;
         IMarkVector aSortedStart;
@@ -1774,7 +1774,7 @@ void MSWordExportBase::GetSortedBookmarks( const SwTxtNode& rNode, xub_StrLen nA
 
         // Sort the bookmarks by end position
         std::sort( aSortedEnd.begin(), aSortedEnd.end(), CompareMarksEnd() );
-    
+
         m_rSortedMarksStart.swap( aSortedStart );
         m_rSortedMarksEnd.swap( aSortedEnd );
     }
@@ -1795,7 +1795,7 @@ void MSWordExportBase::OutputTextNode( const SwTxtNode& rNode )
 
 	//For i120928,identify the last node
 	bool bLastCR = false;
-	bool bExported = false;	
+	bool bExported = false;
 	{
 		SwNodeIndex aNextIdx(rNode,1);
 		SwNodeIndex aLastIdx(rNode.GetNodes().GetEndOfContent());
@@ -2006,7 +2006,7 @@ void MSWordExportBase::OutputTextNode( const SwTxtNode& rNode )
 				ExportGrfBullet(rNode);
 				bExported = true;
 			}
-		
+
                     WriteCR( pTextNodeInfoInner );
                 }
             }
@@ -2074,7 +2074,7 @@ void MSWordExportBase::OutputTextNode( const SwTxtNode& rNode )
     while ( nAktPos < nEnd );
 
     AttrOutput().StartParagraphProperties( rNode );
-    
+
     AttrOutput().ParagraphStyle( nStyle );
 
     if ( mpParentFrame && IsInTable() )    // Fly-Attrs
@@ -2090,7 +2090,7 @@ void MSWordExportBase::OutputTextNode( const SwTxtNode& rNode )
         if (pTextNodeInfoInner->isFirstInTable())
         {
             const SwTable * pTable = pTextNodeInfoInner->getTable();
-            
+
             const SwTableFmt * pTabFmt = pTable->GetTableFmt();
             if (pTabFmt != NULL)
             {
@@ -2098,8 +2098,8 @@ void MSWordExportBase::OutputTextNode( const SwTxtNode& rNode )
                     AttrOutput().PageBreakBefore(true);
             }
         }
-    } 
-    
+    }
+
     if ( !bFlyInTable )
     {
         SfxItemSet* pTmpSet = 0;
@@ -2578,7 +2578,7 @@ void MSWordExportBase::OutputSectionNode( const SwSectionNode& rSectionNode )
 
     SwNodeIndex aIdx( rSectionNode, 1 );
     const SwNode& rNd = aIdx.GetNode();
-    if ( !rNd.IsSectionNode() && !IsInTable() 
+    if ( !rNd.IsSectionNode() && !IsInTable()
 		&& rSection.GetType() != TOX_CONTENT_SECTION && rSection.GetType() != TOX_HEADER_SECTION) //No sections in table
     {
         // Bug 74245 - if the first Node inside the section has an own

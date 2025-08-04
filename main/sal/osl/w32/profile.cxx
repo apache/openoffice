@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -188,7 +188,7 @@ oslProfile SAL_CALL osl_openProfile(rtl_uString *strProfileName, sal_uInt32 Flag
 	osl_TFile*        pFile = NULL;
 	osl_TProfileImpl* pProfile;
 	rtl_uString		  *FileName=NULL;
-    
+
 #ifdef TRACE_OSL_PROFILE
     OSL_TRACE("In  osl_openProfile\n");
 #endif
@@ -203,10 +203,10 @@ oslProfile SAL_CALL osl_openProfile(rtl_uString *strProfileName, sal_uInt32 Flag
 		rtl_uString_assign(&FileName, strProfileName);
 	}
 
-    
+
 	osl_getSystemPathFromFileURL(FileName, &FileName);
-    
-    
+
+
 #ifdef DEBUG_OSL_PROFILE
     Flags=osl_Profile_FLUSHWRITE;
 
@@ -251,7 +251,7 @@ oslProfile SAL_CALL osl_openProfile(rtl_uString *strProfileName, sal_uInt32 Flag
 
 	pProfile = (osl_TProfileImpl*)calloc(1, sizeof(osl_TProfileImpl));
 
-	
+
 	pProfile->m_Flags = Flags & FLG_USER;
 	osl_getSystemPathFromFileURL(strProfileName, &pProfile->m_strFileName);
 //	rtl_uString_assign(&pProfile->m_strFileName, strProfileName);
@@ -1978,7 +1978,7 @@ static sal_Bool storeProfile(osl_TProfileImpl* pProfile, sal_Bool bCleanup)
 			closeFileImpl(pTmpFile);
 
 			osl_ProfileSwapProfileNames(pProfile);
-			
+
 /*			free(pProfile->m_pFile);*/
 /*			free(pTmpFile);*/
 
@@ -2081,7 +2081,7 @@ static sal_Bool osl_ProfileSwapProfileNames(osl_TProfileImpl* pProfile)
 
 	/* rename ini bak */
 	MoveFileExW( reinterpret_cast<LPCWSTR>(rtl_uString_getStr( ustrIniFile )), reinterpret_cast<LPCWSTR>(rtl_uString_getStr( ustrBakFile )), MOVEFILE_COPY_ALLOWED | MOVEFILE_WRITE_THROUGH );
-	
+
 	/* rename tmp ini */
 	MoveFileExW( reinterpret_cast<LPCWSTR>(rtl_uString_getStr( ustrTmpFile )), reinterpret_cast<LPCWSTR>(rtl_uString_getStr( ustrIniFile )), MOVEFILE_COPY_ALLOWED | MOVEFILE_WRITE_THROUGH );
 
@@ -2097,7 +2097,7 @@ static rtl_uString* osl_ProfileGenerateExtension(rtl_uString* ustrFileName, rtl_
 	sal_Unicode* pFileNameBuf  = 0;
 	sal_Int32 nIndex = -1;
 
-	pFileNameBuf = rtl_uString_getStr(ustrFileName); 
+	pFileNameBuf = rtl_uString_getStr(ustrFileName);
 
 	rtl_uString_newFromAscii(&ustrOldExtension,".");
 

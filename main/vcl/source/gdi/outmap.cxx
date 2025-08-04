@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -807,12 +807,12 @@ Region OutputDevice::ImplPixelToDevicePixel( const Region& rRegion ) const
 
 // -----------------------------------------------------------------------
 
-void OutputDevice::EnableMapMode( sal_Bool bEnable ) 
-{ 
-    mbMap = (bEnable != 0); 
+void OutputDevice::EnableMapMode( sal_Bool bEnable )
+{
+    mbMap = (bEnable != 0);
 
     if( mpAlphaVDev )
-        mpAlphaVDev->EnableMapMode( bEnable );    
+        mpAlphaVDev->EnableMapMode( bEnable );
 }
 
 // -----------------------------------------------------------------------
@@ -847,7 +847,7 @@ void OutputDevice::SetMapMode()
 	}
 
     if( mpAlphaVDev )
-        mpAlphaVDev->SetMapMode();    
+        mpAlphaVDev->SetMapMode();
 }
 
 // -----------------------------------------------------------------------
@@ -890,7 +890,7 @@ void OutputDevice::SetMapMode( const MapMode& rNewMapMode )
 			maMapRes.mnMapOfsX = aOrigin.X();
 			maMapRes.mnMapOfsY = aOrigin.Y();
 			maMapMode = rNewMapMode;
-			
+
 			// #i75163#
 			ImplInvalidateViewTransform();
 
@@ -1099,19 +1099,19 @@ basegfx::B2DHomMatrix OutputDevice::GetViewTransformation( const MapMode& rMapMo
 	ImplMapRes			aMapRes;
 	ImplThresholdRes	aThresRes;
 	ImplCalcMapResolution( rMapMode, mnDPIX, mnDPIY, aMapRes, aThresRes );
-    
+
 	basegfx::B2DHomMatrix aTransform;
 
 	const double fScaleFactorX((double)mnDPIX * (double)aMapRes.mnMapScNumX / (double)aMapRes.mnMapScDenomX);
 	const double fScaleFactorY((double)mnDPIY * (double)aMapRes.mnMapScNumY / (double)aMapRes.mnMapScDenomY);
 	const double fZeroPointX(((double)aMapRes.mnMapOfsX * fScaleFactorX) + (double)mnOutOffOrigX);
 	const double fZeroPointY(((double)aMapRes.mnMapOfsY * fScaleFactorY) + (double)mnOutOffOrigY);
-	
+
 	aTransform.set(0, 0, fScaleFactorX);
 	aTransform.set(1, 1, fScaleFactorY);
 	aTransform.set(0, 2, fZeroPointX);
 	aTransform.set(1, 2, fZeroPointY);
-	
+
 	return aTransform;
 }
 
@@ -1430,7 +1430,7 @@ Polygon OutputDevice::LogicToPixel( const Polygon& rLogicPoly,
                                     aThresRes.mnThresLogToPixY )+mnOutOffOrigY;
         aPoly[i] = aPt;
     }
-    
+
 	return aPoly;
 }
 
@@ -1888,7 +1888,7 @@ Region OutputDevice::PixelToLogic( const Region& rDeviceRegion, const MapMode& r
     }
 
 	Region aRegion;
-    
+
     if(rDeviceRegion.getB2DPolyPolygon())
     {
         aRegion = Region(PixelToLogic(*rDeviceRegion.getB2DPolyPolygon(), rMapMode));

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -381,7 +381,7 @@ inline sal_Bool InRange(xub_StrLen nIdx, xub_StrLen nStart, xub_StrLen nEnd) {
 
 /* 5 cases:
  * 1) The attribute is completely in the deletion range:
- *    -> delete it 
+ *    -> delete it
  * 2) The end of the attribute is in the deletion range:
  *    -> delete it, then re-insert it with new end
  * 3) The start of the attribute is in the deletion range:
@@ -655,9 +655,9 @@ void SwTxtNode::RstTxtAttr(
         }
 
         //TxtFrm's reagieren auf aHint, andere auf aNew
-        SwUpdateAttr aHint( 
-            nMin, 
-            nMax, 
+        SwUpdateAttr aHint(
+            nMin,
+            nMax,
             0);
 
         NotifyClients( 0, &aHint );
@@ -1402,10 +1402,10 @@ SwRect SwTxtFrm::SmartTagScan( SwCntntNode* /*pActNode*/, xub_StrLen /*nActPos*/
 	SwPosition start(*pNode, nBegin);
 	SwPosition end  (*pNode, nEnd);
         Reference< ::com::sun::star::text::XTextRange > xRange = SwXTextRange::CreateXTextRange(*pNode->GetDoc(), start, &end);
-	
+
 	rSmartTagMgr.RecognizeTextRange(xRange, xTextMarkup, xController);
 
-        
+
 	xub_StrLen nLangBegin = nBegin;
         xub_StrLen nLangEnd = nEnd;
 
@@ -1657,25 +1657,25 @@ struct TransliterationChgData
 using sw::TransliterationChgData;
 
 // change text to Upper/Lower/Hiragana/Katagana/...
-void SwTxtNode::TransliterateText( 
+void SwTxtNode::TransliterateText(
     utl::TransliterationWrapper& rTrans,
-    xub_StrLen nStt, xub_StrLen nEnd, 
+    xub_StrLen nStt, xub_StrLen nEnd,
     SwUndoTransliterate* pUndo )
 {
     if (nStt < nEnd && pBreakIt->GetBreakIter().is())
 	{
         // since we don't use Hiragana/Katakana or half-width/full-width transliterations here
-        // it is fine to use ANYWORD_IGNOREWHITESPACES. (ANY_WORD btw is broken and will 
+        // it is fine to use ANYWORD_IGNOREWHITESPACES. (ANY_WORD btw is broken and will
         // occasionally miss words in consecutive sentences). Also with ANYWORD_IGNOREWHITESPACES
         // text like 'just-in-time' will be converted to 'Just-In-Time' which seems to be the
         // proper thing to do.
         const sal_Int16 nWordType = WordType::ANYWORD_IGNOREWHITESPACES;
 
         //! In order to have less trouble with changing text size, e.g. because
-        //! of ligatures or � (German small sz) being resolved, we need to process 
-        //! the text replacements from end to start. 
-        //! This way the offsets for the yet to be changed words will be 
-        //! left unchanged by the already replaced text. 
+        //! of ligatures or � (German small sz) being resolved, we need to process
+        //! the text replacements from end to start.
+        //! This way the offsets for the yet to be changed words will be
+        //! left unchanged by the already replaced text.
         //! For this we temporarily save the changes to be done in this vector
         std::vector< TransliterationChgData >   aChanges;
         TransliterationChgData                  aChgData;
@@ -1747,19 +1747,19 @@ void SwTxtNode::TransliterateText(
         {
             // for 'sentence case' we need to iterate sentence by sentence
 
-            sal_Int32 nLastStart = pBreakIt->GetBreakIter()->beginOfSentence( 
-                    GetTxt(), nEnd, 
+            sal_Int32 nLastStart = pBreakIt->GetBreakIter()->beginOfSentence(
+                    GetTxt(), nEnd,
                     pBreakIt->GetLocale( GetLang( nEnd ) ) );
-            sal_Int32 nLastEnd = pBreakIt->GetBreakIter()->endOfSentence( 
-                    GetTxt(), nLastStart, 
+            sal_Int32 nLastEnd = pBreakIt->GetBreakIter()->endOfSentence(
+                    GetTxt(), nLastStart,
                     pBreakIt->GetLocale( GetLang( nLastStart ) ) );
-            
+
             // extend nStt, nEnd to the current sentence boundaries
-            sal_Int32 nCurrentStart = pBreakIt->GetBreakIter()->beginOfSentence( 
-                    GetTxt(), nStt, 
+            sal_Int32 nCurrentStart = pBreakIt->GetBreakIter()->beginOfSentence(
+                    GetTxt(), nStt,
                     pBreakIt->GetLocale( GetLang( nStt ) ) );
-            sal_Int32 nCurrentEnd = pBreakIt->GetBreakIter()->endOfSentence( 
-                    GetTxt(), nCurrentStart, 
+            sal_Int32 nCurrentEnd = pBreakIt->GetBreakIter()->endOfSentence(
+                    GetTxt(), nCurrentStart,
                     pBreakIt->GetLocale( GetLang( nCurrentStart ) ) );
 
             // prevent backtracking to the previous sentence if selection starts at end of a sentence
@@ -1767,19 +1767,19 @@ void SwTxtNode::TransliterateText(
             {
                 // now nCurrentStart is probably located on a non-letter word. (unless we
                 // are in Asian text with no spaces...)
-                // Thus to get the real sentence start we should locate the next real word, 
+                // Thus to get the real sentence start we should locate the next real word,
                 // that is one found by DICTIONARY_WORD
-                i18n::Boundary aBndry = pBreakIt->GetBreakIter()->nextWord( 
+                i18n::Boundary aBndry = pBreakIt->GetBreakIter()->nextWord(
                         GetTxt(), nCurrentEnd,
                         pBreakIt->GetLocale( GetLang( nCurrentEnd ) ),
                         i18n::WordType::DICTIONARY_WORD);
 
                 // now get new current sentence boundaries
-                nCurrentStart = pBreakIt->GetBreakIter()->beginOfSentence( 
-                        GetTxt(), aBndry.startPos, 
+                nCurrentStart = pBreakIt->GetBreakIter()->beginOfSentence(
+                        GetTxt(), aBndry.startPos,
                         pBreakIt->GetLocale( GetLang( aBndry.startPos) ) );
-                nCurrentEnd = pBreakIt->GetBreakIter()->endOfSentence( 
-                        GetTxt(), nCurrentStart, 
+                nCurrentEnd = pBreakIt->GetBreakIter()->endOfSentence(
+                        GetTxt(), nCurrentStart,
                         pBreakIt->GetLocale( GetLang( nCurrentStart) ) );
             }
             // prevent advancing to the next sentence if selection ends at start of a sentence
@@ -1787,14 +1787,14 @@ void SwTxtNode::TransliterateText(
             {
                 // now nCurrentStart is probably located on a non-letter word. (unless we
                 // are in Asian text with no spaces...)
-                // Thus to get the real sentence start we should locate the previous real word, 
+                // Thus to get the real sentence start we should locate the previous real word,
                 // that is one found by DICTIONARY_WORD
-                i18n::Boundary aBndry = pBreakIt->GetBreakIter()->previousWord( 
-                        GetTxt(), nLastStart, 
+                i18n::Boundary aBndry = pBreakIt->GetBreakIter()->previousWord(
+                        GetTxt(), nLastStart,
                         pBreakIt->GetLocale( GetLang( nLastStart) ),
                         i18n::WordType::DICTIONARY_WORD);
-                nLastEnd = pBreakIt->GetBreakIter()->endOfSentence( 
-                        GetTxt(), aBndry.startPos, 
+                nLastEnd = pBreakIt->GetBreakIter()->endOfSentence(
+                        GetTxt(), aBndry.startPos,
                         pBreakIt->GetLocale( GetLang( aBndry.startPos) ) );
                 if (nCurrentEnd > nLastEnd)
                     nCurrentEnd = nLastEnd;
@@ -1809,7 +1809,7 @@ void SwTxtNode::TransliterateText(
 #endif
 
 		        Sequence <sal_Int32> aOffsets;
-                String sChgd( rTrans.transliterate( GetTxt(), 
+                String sChgd( rTrans.transliterate( GetTxt(),
                         GetLang( nCurrentStart ), nCurrentStart, nLen, &aOffsets ));
 
                 if (!m_Text.Equals( sChgd, nStt, nLen ))
@@ -1827,8 +1827,8 @@ void SwTxtNode::TransliterateText(
                         pBreakIt->GetLocale( GetLang( nCurrentEnd ) ),
                         nWordType);
                 nCurrentStart = aFirstWordBndry.startPos;
-                nCurrentEnd = pBreakIt->GetBreakIter()->endOfSentence( 
-                        GetTxt(), nCurrentStart, 
+                nCurrentEnd = pBreakIt->GetBreakIter()->endOfSentence(
+                        GetTxt(), nCurrentStart,
                         pBreakIt->GetLocale( GetLang( nCurrentStart ) ) );
             }
         }
@@ -1986,14 +1986,14 @@ void SwTxtNode::CountWords( SwDocStat& rStat,
                         const sal_Int16 nCurrScript = pBreakIt->GetBreakIter()->getScriptType( aExpandText, nScriptBegin );
                         const sal_Int32 nScriptEnd = pBreakIt->GetBreakIter()->endOfScript( aExpandText, nScriptBegin, nCurrScript );
                         rtl::OUString aScriptText = aExpandText.copy( nScriptBegin, nScriptEnd - nScriptBegin );
-                        
+
                         // Asian languages count words as characters
                         if ( nCurrScript == ::com::sun::star::i18n::ScriptType::ASIAN )
                         {
                             // subtract white spaces
                             sal_Int32 nSpaceCount = 0;
                             sal_Int32 nSpacePos = 0;
-                            
+
                             // subtract normal white spaces
                             nSpacePos = -1;
                             while ( ( nSpacePos = aScriptText.indexOf( ' ', nSpacePos + 1 ) ) != -1 )
@@ -2267,7 +2267,7 @@ bool SwTxtNode::IsAutoCompleteWordDirty() const
 //
 
 //Bug 120881:Modify here for Directly Page Numbering
-sal_Bool SwTxtFrm::HasPageNumberField() 
+sal_Bool SwTxtFrm::HasPageNumberField()
 {
 	return GetRegisteredIn()?((SwTxtNode*)GetRegisteredIn())->HasPageNumberField():false;
 }

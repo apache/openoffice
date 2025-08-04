@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -79,7 +79,7 @@ void appendValue( rtl::OUStringBuffer & buf,
         buf.append( rtl::OUString::unacquired( &typeRef->pTypeName ) );
         buf.appendAscii( RTL_CONSTASCII_STRINGPARAM(") ") );
     }
-    
+
     switch (typeRef->eTypeClass) {
     case typelib_TypeClass_INTERFACE: {
         buf.append( static_cast<sal_Unicode>('@') );
@@ -109,7 +109,7 @@ void appendValue( rtl::OUStringBuffer & buf,
                 reinterpret_cast< typelib_CompoundTypeDescription * >(
                     typeDescr );
             sal_Int32 nDescr = compType->nMembers;
-            
+
             if (compType->pBaseTypeDescription) {
                 appendValue(
                     buf, val, reinterpret_cast<
@@ -118,12 +118,12 @@ void appendValue( rtl::OUStringBuffer & buf,
                 if (nDescr > 0)
                     buf.appendAscii( RTL_CONSTASCII_STRINGPARAM(", ") );
             }
-            
+
             typelib_TypeDescriptionReference ** ppTypeRefs =
                 compType->ppTypeRefs;
             sal_Int32 * memberOffsets = compType->pMemberOffsets;
             rtl_uString ** ppMemberNames = compType->ppMemberNames;
-            
+
             for ( sal_Int32 nPos = 0; nPos < nDescr; ++nPos )
             {
                 buf.append( ppMemberNames[ nPos ] );
@@ -171,7 +171,7 @@ void appendValue( rtl::OUStringBuffer & buf,
                 uno_Sequence * seq =
                     *static_cast< uno_Sequence * const * >(val);
                 sal_Int32 nElements = seq->nElements;
-                
+
                 if (nElements > 0)
                 {
                     buf.appendAscii( RTL_CONSTASCII_STRINGPARAM("{ ") );

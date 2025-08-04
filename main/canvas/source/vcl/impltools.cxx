@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -91,7 +91,7 @@ namespace vclcanvas
                 }
 
                 // TODO(F2): add support for floating point bitmap formats
-                uno::Reference< rendering::XIntegerReadOnlyBitmap > xIntBmp( 
+                uno::Reference< rendering::XIntegerReadOnlyBitmap > xIntBmp(
                     xBitmap, uno::UNO_QUERY_THROW );
 
                 ::BitmapEx aBmpEx = ::vcl::unotools::bitmapExFromXBitmap( xIntBmp );
@@ -99,21 +99,21 @@ namespace vclcanvas
                     return aBmpEx;
 
                 // TODO(F1): extract pixel from XBitmap interface
-                ENSURE_OR_THROW( false, 
+                ENSURE_OR_THROW( false,
                                   "bitmapExFromXBitmap(): could not extract bitmap" );
             }
- 
+
             return ::BitmapEx();
         }
 
         bool setupFontTransform( ::Point&						o_rPoint,
-                                 ::Font& 						io_rVCLFont, 
+                                 ::Font& 						io_rVCLFont,
                                  const rendering::ViewState& 	rViewState,
                                  const rendering::RenderState& 	rRenderState,
                                  ::OutputDevice&				rOutDev )
         {
             ::basegfx::B2DHomMatrix aMatrix;
-            
+
             ::canvas::tools::mergeViewAndRenderTransform(aMatrix,
                                                          rViewState,
                                                          rRenderState);
@@ -121,12 +121,12 @@ namespace vclcanvas
             ::basegfx::B2DTuple aScale;
             ::basegfx::B2DTuple aTranslate;
             double nRotate, nShearX;
-            
+
             aMatrix.decompose( aScale, aTranslate, nRotate, nShearX );
 
             // #i72417# detecting the 180 degree rotation case manually here.
-            if( aScale.getX() < 0.0 && 
-                aScale.getY() < 0.0 && 
+            if( aScale.getX() < 0.0 &&
+                aScale.getY() < 0.0 &&
                 basegfx::fTools::equalZero(nRotate) )
             {
                 aScale *= -1.0;
@@ -223,21 +223,21 @@ namespace vclcanvas
         {
             RTL_LOGFILE_CONTEXT( aLog, "::vclcanvas::tools::transformBitmap()" );
             RTL_LOGFILE_CONTEXT_TRACE1( aLog, "::vclcanvas::tools::transformBitmap: 0x%X", &rBitmap );
-            
+
             // calc transformation and size of bitmap to be
             // generated. Note, that the translational components are
             // deleted from the transformation; this can be handled by
             // an offset when painting the bitmap
             const Size 					aBmpSize( rBitmap.GetSizePixel() );
             ::basegfx::B2DRectangle		aDestRect;
-            
+
             bool bCopyBack( false );
 
             // calc effective transformation for bitmap
             const ::basegfx::B2DRectangle aSrcRect( 0, 0,
                                                     aBmpSize.Width(),
                                                     aBmpSize.Height() );
-            ::canvas::tools::calcTransformedRectBounds( aDestRect, 
+            ::canvas::tools::calcTransformedRectBounds( aDestRect,
                                                         aSrcRect,
                                                         rTransform );
 
@@ -255,7 +255,7 @@ namespace vclcanvas
             const double nRedModulation( bModulateColors ? rDeviceColor[0] : 1.0 );
             const double nGreenModulation( bModulateColors ? rDeviceColor[1] : 1.0 );
             const double nBlueModulation( bModulateColors ? rDeviceColor[2] : 1.0 );
-            const double nAlphaModulation( bModulateColors && rDeviceColor.getLength() > 3 ? 
+            const double nAlphaModulation( bModulateColors && rDeviceColor.getLength() > 3 ?
                                            rDeviceColor[3] : 1.0 );
 
             Bitmap aSrcBitmap( rBitmap.GetBitmap() );
@@ -273,8 +273,8 @@ namespace vclcanvas
 
             ScopedBitmapReadAccess pReadAccess( aSrcBitmap.AcquireReadAccess(),
                                                 aSrcBitmap );
-            ScopedBitmapReadAccess pAlphaReadAccess( rBitmap.IsTransparent() ? 
-                                                     aSrcAlpha.AcquireReadAccess() : 
+            ScopedBitmapReadAccess pAlphaReadAccess( rBitmap.IsTransparent() ?
+                                                     aSrcAlpha.AcquireReadAccess() :
                                                      (BitmapReadAccess*)NULL,
                                                      aSrcAlpha );
 
@@ -282,7 +282,7 @@ namespace vclcanvas
                 (pAlphaReadAccess.get() == NULL && rBitmap.IsTransparent()) )
             {
                 // TODO(E2): Error handling!
-                ENSURE_OR_THROW( false, 
+                ENSURE_OR_THROW( false,
                                   "transformBitmap(): could not access source bitmap" );
             }
 
@@ -314,7 +314,7 @@ namespace vclcanvas
             }
             // else: mapping table is not used
 
-            const Size aDestBmpSize( ::basegfx::fround( aDestRect.getWidth() ), 
+            const Size aDestBmpSize( ::basegfx::fround( aDestRect.getWidth() ),
                                      ::basegfx::fround( aDestRect.getHeight() ) );
 
             if( aDestBmpSize.Width() == 0 || aDestBmpSize.Height() == 0 )
@@ -334,7 +334,7 @@ namespace vclcanvas
                 ScopedBitmapWriteAccess pAlphaWriteAccess( aDstAlpha.AcquireWriteAccess(),
                                                            aDstAlpha );
 
-                
+
                 if( pWriteAccess.get() != NULL &&
                     pAlphaWriteAccess.get() != NULL &&
                     rTransform.isInvertible() )
@@ -344,8 +344,8 @@ namespace vclcanvas
                     // source
                     ::basegfx::B2DHomMatrix aTransform( aLocalTransform );
                     aTransform.invert();
-                
-                    // for the time being, always read as ARGB 
+
+                    // for the time being, always read as ARGB
                     for( int y=0; y<aDestBmpSize.Height(); ++y )
                     {
                         if( bModulateColors )
@@ -380,28 +380,28 @@ namespace vclcanvas
                                         // nAlphaModulation. This is a
                                         // little bit verbose, formula
                                         // is 255 - (255-pixAlpha)*nAlphaModulation
-                                        // (invert 'alpha' pixel value, 
-                                        // to get the standard alpha 
+                                        // (invert 'alpha' pixel value,
+                                        // to get the standard alpha
                                         // channel behaviour)
                                         const sal_uInt8 cMappedAlphaIdx = aAlphaMap[ pAlphaReadAccess->GetPixelIndex( nSrcY, nSrcX ) ];
                                         const sal_uInt8 cModulatedAlphaIdx = 255U - static_cast<sal_uInt8>( nAlphaModulation* (255U - cMappedAlphaIdx) + .5 );
                                         pAlphaWriteAccess->SetPixelIndex( y, x, cModulatedAlphaIdx );
                                         BitmapColor aColor( pReadAccess->GetPixel( nSrcY, nSrcX ) );
 
-                                        aColor.SetRed( 
+                                        aColor.SetRed(
                                             static_cast<sal_uInt8>(
                                                 nRedModulation *
                                                 aColor.GetRed() + .5 ));
-                                        aColor.SetGreen( 
+                                        aColor.SetGreen(
                                             static_cast<sal_uInt8>(
                                                 nGreenModulation *
                                                 aColor.GetGreen() + .5 ));
-                                        aColor.SetBlue( 
+                                        aColor.SetBlue(
                                             static_cast<sal_uInt8>(
                                                 nBlueModulation *
                                                 aColor.GetBlue() + .5 ));
 
-                                        pWriteAccess->SetPixel( y, x, 
+                                        pWriteAccess->SetPixel( y, x,
                                                                 aColor );
                                     }
                                 }
@@ -426,12 +426,12 @@ namespace vclcanvas
                                         // nAlphaModulation. This is a
                                         // little bit verbose, formula
                                         // is 255 - 255*nAlphaModulation
-                                        // (invert 'alpha' pixel value, 
-                                        // to get the standard alpha 
+                                        // (invert 'alpha' pixel value,
+                                        // to get the standard alpha
                                         // channel behaviour)
-                                        pAlphaWriteAccess->SetPixel( y, x, 
-                                                                     BitmapColor( 
-                                                                         255U - 
+                                        pAlphaWriteAccess->SetPixel( y, x,
+                                                                     BitmapColor(
+                                                                         255U -
                                                                          static_cast<sal_uInt8>(
                                                                              nAlphaModulation*255.0
                                                                              + .5 ) ) );
@@ -439,20 +439,20 @@ namespace vclcanvas
                                         BitmapColor aColor( pReadAccess->GetPixel( nSrcY,
                                                                                    nSrcX ) );
 
-                                        aColor.SetRed( 
+                                        aColor.SetRed(
                                             static_cast<sal_uInt8>(
                                                 nRedModulation *
                                                 aColor.GetRed() + .5 ));
-                                        aColor.SetGreen( 
+                                        aColor.SetGreen(
                                             static_cast<sal_uInt8>(
                                                 nGreenModulation *
                                                 aColor.GetGreen() + .5 ));
-                                        aColor.SetBlue( 
+                                        aColor.SetBlue(
                                             static_cast<sal_uInt8>(
                                                 nBlueModulation *
                                                 aColor.GetBlue() + .5 ));
 
-                                        pWriteAccess->SetPixel( y, x, 
+                                        pWriteAccess->SetPixel( y, x,
                                                                 aColor );
                                     }
                                 }
@@ -515,7 +515,7 @@ namespace vclcanvas
                 else
                 {
                     // TODO(E2): Error handling!
-                    ENSURE_OR_THROW( false, 
+                    ENSURE_OR_THROW( false,
                                       "transformBitmap(): could not access bitmap" );
                 }
             }

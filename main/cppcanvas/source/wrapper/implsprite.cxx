@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -109,11 +109,11 @@ namespace cppcanvas
             {
                 rendering::ViewState	aViewState;
                 rendering::RenderState	aRenderState;
-                
+
                 ::canvas::tools::initViewState( aViewState );
                 ::canvas::tools::initRenderState( aRenderState );
-                
-                mxSprite->move( ::basegfx::unotools::point2DFromB2DPoint( rNewPos ), 
+
+                mxSprite->move( ::basegfx::unotools::point2DFromB2DPoint( rNewPos ),
                                 aViewState,
                                 aRenderState );
             }
@@ -133,8 +133,8 @@ namespace cppcanvas
 
                 ::canvas::tools::setViewStateTransform( aViewState,
                                                         mpTransformArbiter->getTransformation() );
-                
-                mxSprite->move( ::basegfx::unotools::point2DFromB2DPoint( rNewPos ), 
+
+                mxSprite->move( ::basegfx::unotools::point2DFromB2DPoint( rNewPos ),
                                 aViewState,
                                 aRenderState );
             }
@@ -157,7 +157,7 @@ namespace cppcanvas
         {
             OSL_ENSURE( mxGraphicDevice.is(), "ImplSprite::setClip(): Invalid canvas");
             OSL_ENSURE( mxSprite.is(), "ImplSprite::transform(): Invalid sprite");
-            
+
             if( mxSprite.is() && mxGraphicDevice.is() )
                 mxSprite->clip( ::basegfx::unotools::xPolyPolygonFromB2DPolyPolygon( mxGraphicDevice,
                                                                                          rClipPoly ) );
@@ -167,20 +167,20 @@ namespace cppcanvas
         {
             OSL_ENSURE( mxGraphicDevice.is(), "ImplSprite::setClip(): Invalid canvas");
             OSL_ENSURE( mxSprite.is(), "ImplSprite::transform(): Invalid sprite");
-            
+
             if( mxSprite.is() && mxGraphicDevice.is() )
             {
                 ::basegfx::B2DPolyPolygon 	aTransformedClipPoly( rClipPoly );
-                
-                // extract linear part of canvas view transformation (linear means:     
-                // without translational components)    
+
+                // extract linear part of canvas view transformation (linear means:
+                // without translational components)
                 ::basegfx::B2DHomMatrix		aViewTransform( mpTransformArbiter->getTransformation() );
                 aViewTransform.set( 0, 2, 0.0 );
                 aViewTransform.set( 1, 2, 0.0 );
-                
-                // transform polygon from view to device coordinate space   
+
+                // transform polygon from view to device coordinate space
                 aTransformedClipPoly.transform( aViewTransform );
-                
+
                 mxSprite->clip( ::basegfx::unotools::xPolyPolygonFromB2DPolyPolygon( mxGraphicDevice,
                                                                                      aTransformedClipPoly ) );
             }
@@ -190,11 +190,11 @@ namespace cppcanvas
         {
             OSL_ENSURE( mxGraphicDevice.is(), "ImplSprite::setClip(): Invalid canvas");
             OSL_ENSURE( mxSprite.is(), "ImplSprite::setClip(): Invalid sprite");
-            
+
             if( mxSprite.is() && mxGraphicDevice.is() )
                 mxSprite->clip( uno::Reference< rendering::XPolyPolygon2D >() );
         }
-        
+
         void ImplSprite::show()
         {
             OSL_ENSURE( mxSprite.is(), "ImplSprite::show(): Invalid sprite");

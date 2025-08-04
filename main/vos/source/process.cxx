@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -44,7 +44,7 @@ OArgumentList::OArgumentList() :
 	n_Args(0),
 	m_aVec(0)
 {
-	// empty 
+	// empty
 }
 
 OArgumentList::OArgumentList( sal_uInt32 nArgs, const ::rtl::OUString* aArgument1, ... ) :
@@ -54,7 +54,7 @@ OArgumentList::OArgumentList( sal_uInt32 nArgs, const ::rtl::OUString* aArgument
 	std::va_list pArgs;
 	sal_uInt32 i = 0;
 	const rtl::OUString* aArgument;
-	
+
 	va_start ( pArgs, aArgument1 );
 	aArgument = aArgument1;
 
@@ -83,10 +83,10 @@ OArgumentList::OArgumentList( const rtl::OUString aArgumentList[], sal_uInt32 nA
 OArgumentList::OArgumentList( const OArgumentList& rOther ) : n_Args( rOther.n_Args )
 {
 	m_aVec = new rtl_uString* [n_Args];
-	
+
 	sal_uInt32 i;
 	for ( i = 0; i < n_Args; ++i )
-	{		
+	{
 		m_aVec[i] = rOther.m_aVec[i];
 		rtl_uString_acquire( m_aVec[i] );
 	}
@@ -140,7 +140,7 @@ OEnvironment::OEnvironment( sal_Int32 nVars, const ::rtl::OUString* aArgument1, 
 	std::va_list pArgs;
 	sal_Int32 i = 0;
 	const rtl::OUString* aArgument;
-	
+
 	va_start ( pArgs, aArgument1 );
 	aArgument = aArgument1;
 
@@ -163,13 +163,13 @@ OEnvironment::OEnvironment( const ::rtl::OUString aVariableList[], sal_Int32 nVa
 	for( sal_Int32 i = 0; i < n_Vars; ++ i )  {
 		m_aVec[i] = aVariableList[i].pData;
 		rtl_uString_acquire( m_aVec[i] );
-	}	
+	}
 }
 
 OEnvironment::OEnvironment( const OEnvironment& rOther ) : n_Vars( rOther.n_Vars )
 {
 	m_aVec = new rtl_uString* [n_Vars];
-	
+
 	sal_Int32 i;
 	for ( i = 0; i < n_Vars; ++i )
 	{
@@ -190,7 +190,7 @@ OEnvironment& OEnvironment::operator=( const OEnvironment& rOther )
 
 		n_Vars = rOther.n_Vars;
 		m_aVec = new rtl_uString* [n_Vars];
-		for ( i = 0; i < n_Vars; ++i ) 
+		for ( i = 0; i < n_Vars; ++i )
 		{
 			m_aVec[i] = rOther.m_aVec[i];
 			rtl_uString_acquire( m_aVec[i] );
@@ -268,10 +268,10 @@ OProcess::TProcessError OProcess::execute(TProcessOption Options,
 										  const OArgumentList& aArgumentList,
 										  const OEnvironment&  aEnvironment )
 {
-	return ((TProcessError)osl_executeProcess(m_strImageName.pData, 
+	return ((TProcessError)osl_executeProcess(m_strImageName.pData,
 								              aArgumentList.m_aVec,
 											  aArgumentList.n_Args,
-											  Options, 
+											  Options,
 								              0,
 								              m_strDirectory.pData,
 								              aEnvironment.m_aVec,
@@ -285,10 +285,10 @@ OProcess::TProcessError OProcess::execute( TProcessOption Options,
 										   const OArgumentList& aArgumentList,
 										   const OEnvironment&  aEnvironment )
 {
-	return ((TProcessError)osl_executeProcess(m_strImageName.pData, 
+	return ((TProcessError)osl_executeProcess(m_strImageName.pData,
 								              aArgumentList.m_aVec,
 											  aArgumentList.n_Args,
-											  Options, 
+											  Options,
 								              Security,
 								              m_strDirectory.pData,
 								              aEnvironment.m_aVec,
@@ -319,7 +319,7 @@ OProcess::TProcessError OProcess::join()
 
 
 /*
-OProcess::TProcessError OProcess::searchPath(const sal_Char* Name, sal_Char *Buffer, sal_uInt32 Max, 
+OProcess::TProcessError OProcess::searchPath(const sal_Char* Name, sal_Char *Buffer, sal_uInt32 Max,
                                              const sal_Char* Path, sal_Char Separator)
 {
 	return (TProcessError)osl_searchPath(Name, Path, Separator, Buffer, Max);
@@ -331,7 +331,7 @@ OProcess::TProcessError OProcess::searchPath(const sal_Char* Name, sal_Char *Buf
 
 VOS_IMPLEMENT_CLASSINFO(
 	VOS_CLASSNAME(OStartupInfo, vos),
-	VOS_NAMESPACE(OStartupInfo, vos), 
+	VOS_NAMESPACE(OStartupInfo, vos),
 	VOS_NAMESPACE(OObject, vos), 0);
 
 OStartupInfo::OStartupInfo()
@@ -373,28 +373,28 @@ OStartupInfo::TStartupError OStartupInfo::getEnvironment(const rtl::OUString& st
 //
 
 namespace vos
-{  
+{
 
 class OExtCommandLineImpl
 {
     void init();
-    
+
     ::std::vector< ::rtl::OUString > aExtArgVector;
     sal_uInt32 m_nArgCount;
-    
+
 public:
-    
+
     OExtCommandLineImpl();
     ~OExtCommandLineImpl();
 
     sal_uInt32 SAL_CALL getCommandArgCount();
-    
+
     sal_Bool SAL_CALL getCommandArg(sal_uInt32 nArg, ::rtl::OUString& strCommandArg);
 };
- 
+
 }
 
-OExtCommandLineImpl::OExtCommandLineImpl() 
+OExtCommandLineImpl::OExtCommandLineImpl()
     : m_nArgCount(0)
 {
     init();
@@ -402,7 +402,7 @@ OExtCommandLineImpl::OExtCommandLineImpl()
 
 OExtCommandLineImpl::~OExtCommandLineImpl()
 {
-    
+
 }
 
 
@@ -412,7 +412,7 @@ sal_uInt32 SAL_CALL OExtCommandLineImpl::getCommandArgCount()
 }
 
 
-sal_Bool SAL_CALL OExtCommandLineImpl::getCommandArg(sal_uInt32 nArg, ::rtl::OUString& strCommandArg) 
+sal_Bool SAL_CALL OExtCommandLineImpl::getCommandArg(sal_uInt32 nArg, ::rtl::OUString& strCommandArg)
 {
     if ( nArg >= m_nArgCount )
     {
@@ -435,7 +435,7 @@ void OExtCommandLineImpl::init()
     {
         ::rtl::OUString aString;
         aStartInfo.getCommandArg(nIndex,aString);
-        
+
         if ( aString[0] == (sal_Unicode) '@' )
         {
             ::rtl::OUString aFileName = aString.copy(1);
@@ -479,9 +479,9 @@ void OExtCommandLineImpl::init()
 // OExtCommandLine
 //
 
-namespace 
-{ 
-    struct lclMutex : public rtl::Static< vos::OMutex, lclMutex > {}; 
+namespace
+{
+    struct lclMutex : public rtl::Static< vos::OMutex, lclMutex > {};
 }
 
 OExtCommandLineImpl* OExtCommandLine::pExtImpl=0;
@@ -497,7 +497,7 @@ OExtCommandLine::OExtCommandLine()
     OGuard Guard(lclMutex::get());
 
     if ( pExtImpl == NULL )
-    {    
+    {
         pExtImpl = new OExtCommandLineImpl;
     }
 }
@@ -505,7 +505,7 @@ OExtCommandLine::OExtCommandLine()
 OExtCommandLine::~OExtCommandLine()
 {
 
-    
+
 }
 
 sal_uInt32 SAL_CALL OExtCommandLine::getCommandArgCount()
@@ -514,7 +514,7 @@ sal_uInt32 SAL_CALL OExtCommandLine::getCommandArgCount()
 }
 
 
-sal_Bool SAL_CALL OExtCommandLine::getCommandArg(sal_uInt32 nArg, ::rtl::OUString& strCommandArg) 
+sal_Bool SAL_CALL OExtCommandLine::getCommandArg(sal_uInt32 nArg, ::rtl::OUString& strCommandArg)
 {
     return pExtImpl->getCommandArg(nArg,strCommandArg);
 }

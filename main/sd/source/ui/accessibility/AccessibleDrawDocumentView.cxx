@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -78,12 +78,12 @@ namespace accessibility {
 
 struct XShapePosCompareHelper
 {
-	bool operator() ( const uno::Reference<drawing::XShape>& xshape1, 
+	bool operator() ( const uno::Reference<drawing::XShape>& xshape1,
 		const uno::Reference<drawing::XShape>& xshape2 ) const
 	{
 		// modify the compare method to return the Z-Order, not layout order
 		SdrObject* pObj1 = GetSdrObjectFromXShape(xshape1);
-		SdrObject* pObj2 = GetSdrObjectFromXShape(xshape2);		
+		SdrObject* pObj2 = GetSdrObjectFromXShape(xshape2);
 		if(pObj1 && pObj2)
 			return pObj1->GetOrdNum() < pObj2->GetOrdNum();
 		else
@@ -154,7 +154,7 @@ void AccessibleDrawDocumentView::Init (void)
 
 
 
-void AccessibleDrawDocumentView::ViewForwarderChanged (ChangeType aChangeType, 
+void AccessibleDrawDocumentView::ViewForwarderChanged (ChangeType aChangeType,
     const IAccessibleViewForwarder* pViewForwarder)
 {
     AccessibleDocumentViewBase::ViewForwarderChanged (aChangeType, pViewForwarder);
@@ -264,7 +264,7 @@ uno::Reference<XAccessible> SAL_CALL
             nIndex -= nCount;
     }
 
-    // Create a copy of the pointer to the children manager and release the 
+    // Create a copy of the pointer to the children manager and release the
     // mutex before calling any of its methods.
     ChildrenManager* pChildrenManager = mpChildrenManager;
     aGuard.clear();
@@ -299,19 +299,19 @@ OUString SAL_CALL
 				if ( pDocSh )
 				{
 					sFileName = pDocSh->GetTitle( SFX_TITLE_APINAME );
-				}			
+				}
 			}
 
 			OUString sReadOnly;
 			if(pDoc->getDocReadOnly())
-			{				
-				sReadOnly = String(SdResId(SID_SD_A11Y_D_PRESENTATION_READONLY));				
+			{
+				sReadOnly = String(SdResId(SID_SD_A11Y_D_PRESENTATION_READONLY));
 			}
 
 			if ( sFileName.getLength() )
 			{
 				sName = sFileName + sReadOnly + OUString(RTL_CONSTASCII_USTRINGPARAM(" - ")) + sName;
-			}			
+			}
 		}
 	}
 
@@ -357,7 +357,7 @@ void SAL_CALL
 
         // Update the accessible name to reflect the current slide.
         UpdateAccessibleName();
-        
+
         // The current page changed.  Update the children manager accordingly.
         uno::Reference<drawing::XDrawView> xView (mxController, uno::UNO_QUERY);
         if (xView.is() && mpChildrenManager!=NULL)
@@ -392,7 +392,7 @@ void SAL_CALL
         OSL_TRACE ("    visible area changed");
         if (mpChildrenManager != NULL)
             mpChildrenManager->ViewForwarderChanged (
-                IAccessibleViewForwarderListener::VISIBLE_AREA, 
+                IAccessibleViewForwarderListener::VISIBLE_AREA,
                 &maViewForwarder);
     }
 	else if (rEventObject.PropertyName == OUString (RTL_CONSTASCII_USTRINGPARAM("ActiveLayer")))
@@ -429,7 +429,7 @@ void SAL_CALL
 				                xSlide, uno::UNO_QUERY));
 				}
 			}
-	    }			
+	    }
             // Create the page shape and initialize it.  The shape is
             // acquired before initialization and released after
             // transferring ownership to the children manager to prevent
@@ -456,8 +456,8 @@ void SAL_CALL
 
 
 //=====  XServiceInfo  ========================================================
-    
-::rtl::OUString SAL_CALL 
+
+::rtl::OUString SAL_CALL
     AccessibleDrawDocumentView::getImplementationName (void)
     throw (::com::sun::star::uno::RuntimeException)
 {
@@ -474,7 +474,7 @@ void SAL_CALL
 {
     ThrowIfDisposed();
     // Get list of supported service names from base class...
-    uno::Sequence<OUString> aServiceNames = 
+    uno::Sequence<OUString> aServiceNames =
         AccessibleDocumentViewBase::getSupportedServiceNames();
     sal_Int32 nCount (aServiceNames.getLength());
 
@@ -488,7 +488,7 @@ void SAL_CALL
 }
 
 //=====  XInterface  ==========================================================
-    
+
 uno::Any SAL_CALL
     AccessibleDrawDocumentView::queryInterface (const uno::Type & rType)
     throw (uno::RuntimeException)
@@ -502,7 +502,7 @@ uno::Any SAL_CALL
 }
 
 void SAL_CALL
-    AccessibleDrawDocumentView::acquire (void) 
+    AccessibleDrawDocumentView::acquire (void)
     throw ()
 {
     AccessibleDocumentViewBase::acquire ();
@@ -640,7 +640,7 @@ uno::Sequence< sal_Int32 > SAL_CALL
             else
             {
                 ::vos::OGuard aGuard( Application::GetSolarMutex() );
-                
+
                 sName = String( SdResId(SID_SD_A11Y_D_DRAWVIEW_N) );
             }
         }
@@ -656,7 +656,7 @@ uno::Sequence< sal_Int32 > SAL_CALL
 
             sName = String( SdResId(SID_SD_A11Y_I_HANDOUTVIEW_N) );
         }
-        else 
+        else
         {
             sName = sFirstService;
         }
@@ -697,7 +697,7 @@ uno::Sequence< sal_Int32 > SAL_CALL
             else
             {
                 ::vos::OGuard aGuard( Application::GetSolarMutex() );
-                
+
                 sDescription = String( SdResId(SID_SD_A11Y_D_DRAWVIEW_D) );
             }
         }
@@ -713,7 +713,7 @@ uno::Sequence< sal_Int32 > SAL_CALL
 
             sDescription = String( SdResId(SID_SD_A11Y_I_HANDOUTVIEW_D) );
         }
-        else 
+        else
         {
             sDescription = sFirstService;
         }
@@ -730,8 +730,8 @@ uno::Sequence< sal_Int32 > SAL_CALL
 
 /** Return selection state of specified child
 */
-sal_Bool 
-    AccessibleDrawDocumentView::implIsSelected( sal_Int32 nAccessibleChildIndex ) 
+sal_Bool
+    AccessibleDrawDocumentView::implIsSelected( sal_Int32 nAccessibleChildIndex )
     throw (uno::RuntimeException)
 {
     const vos::OGuard                           aSolarGuard( Application::GetSolarMutex() );
@@ -776,7 +776,7 @@ sal_Bool
     the XSelectionSupplier of the controller.
 */
 void
-    AccessibleDrawDocumentView::implSelect( sal_Int32 nAccessibleChildIndex, sal_Bool bSelect ) 
+    AccessibleDrawDocumentView::implSelect( sal_Int32 nAccessibleChildIndex, sal_Bool bSelect )
     throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
 {
     const vos::OGuard                           aSolarGuard( Application::GetSolarMutex() );
@@ -823,7 +823,7 @@ void
             AccessibleShape* pAcc = AccessibleShape::getImplementation(
                 getAccessibleChild( nAccessibleChildIndex ));
             pAccessibleChild = pAcc;
-            
+
             // Add or remove the shape that is made accessible from the
             // selection of the controller.
             if( pAcc )
@@ -834,7 +834,7 @@ void
                 {
                     uno::Reference< drawing::XShapes >  xShapes;
                     sal_Bool                            bFound = sal_False;
-                    
+
                     aAny = xSel->getSelection();
                     aAny >>= xShapes;
 
@@ -947,7 +947,7 @@ void SAL_CALL AccessibleDrawDocumentView::disposing (void)
 			uno::Reference < XAccessibleSelection > xAccSelection( xAcc, uno::UNO_QUERY );
 			if ( xAccSelection.is() )
 			{
-				if ( xAccSelection->getSelectedAccessibleChildCount() ) 
+				if ( xAccSelection->getSelectedAccessibleChildCount() )
 				{
 					uno::Reference < XAccessible > xSel = xAccSelection->getSelectedAccessibleChild( 0 );
 					if ( xSel.is() )
@@ -960,7 +960,7 @@ void SAL_CALL AccessibleDrawDocumentView::disposing (void)
 							{
 								uno::Sequence<uno::Any> aRet( 1 );
 								aRet[0] = uno::makeAny( xSel );
-								return aRet;							
+								return aRet;
 							}
 						}
 					}
@@ -972,7 +972,7 @@ void SAL_CALL AccessibleDrawDocumentView::disposing (void)
 				uno::Sequence<uno::Any> aRet( 1 );
 				aRet[0] = uno::makeAny( xPara );
 				return aRet;
-			}			
+			}
 		}
 		else
 		{
@@ -1019,7 +1019,7 @@ void SAL_CALL AccessibleDrawDocumentView::disposing (void)
 			}
 		}
 	}
-	
+
 Rt:
 	::com::sun::star::uno::Sequence< uno::Any> aRet;
 	return aRet;
@@ -1117,7 +1117,7 @@ void AccessibleDrawDocumentView::UpdateAccessibleName (void)
             sNewName += OUString::valueOf(xPages->getCount());
         }
     }
-    
+
     SetAccessibleName (sNewName, AutomaticallyCreated);
 }
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -230,7 +230,7 @@ PNGReaderImpl::PNGReaderImpl( SvStream& rPNGStream )
     maChunkSeq.reserve( 16 );
     maChunkIter = maChunkSeq.begin();
 
-    // estimate PNG file size (to allow sanity checks) 
+    // estimate PNG file size (to allow sanity checks)
     const sal_Size nStreamPos = mrPNGStream.Tell();
     mrPNGStream.Seek( STREAM_SEEK_TO_END );
     mnStreamSize = mrPNGStream.Tell();
@@ -873,10 +873,10 @@ void PNGReaderImpl::ImplGetGamma()
 	if ( fInvGamma != 1.0 )
 	{
 		mbGamma = sal_True;
-		
+
 		if ( mpColorTable == mpDefaultColorTable )
 			mpColorTable = new sal_uInt8[ 256 ];
-		
+
 		for ( sal_Int32 i = 0; i < 256; i++ )
 			mpColorTable[ i ] = (sal_uInt8)(pow((double)i/255.0, fInvGamma) * 255.0 + 0.5);
 
@@ -917,7 +917,7 @@ void PNGReaderImpl::ImplGetBackground()
 			}
 		}
 		break;
-	
+
 		case 2 :
 		case 6 :
 		{
@@ -941,12 +941,12 @@ sal_uInt8 PNGReaderImpl::ImplScaleColor()
 {
     sal_uInt32 nMask = ( ( 1 << mnPngDepth ) - 1 );
 	sal_uInt16 nCol = ( *maDataIter++ << 8 );
-	
+
 	nCol += *maDataIter++ & (sal_uInt16)nMask;
-	
+
 	if ( mnPngDepth > 8 )	// convert 16bit graphics to 8
 		nCol >>= 8;
-	
+
 	return (sal_uInt8) nCol;
 }
 
@@ -1389,7 +1389,7 @@ void PNGReaderImpl::ImplDrawScanline( sal_uInt32 nXStart, sal_uInt32 nXAdd )
         // #122985# Added fast-lane implementations using CopyScanline with direct supported mem formats
         static bool bCkeckDirectScanline(true);
 
-        if( mbAlphaChannel ) 
+        if( mbAlphaChannel )
         {
             // has RGB + alpha
             if ( mnPngDepth == 8 )  // maybe the source has 16 bit per sample
@@ -1465,21 +1465,21 @@ void PNGReaderImpl::ImplDrawScanline( sal_uInt32 nXStart, sal_uInt32 nXAdd )
                             ImplSetAlphaPixel(
                                 nY,
                                 nX,
-                                BitmapColor( 
+                                BitmapColor(
                                     mpColorTable[ pTmp[ 0 ] ],
                                     mpColorTable[ pTmp[ 1 ] ],
-                                    mpColorTable[ pTmp[ 2 ] ]), 
+                                    mpColorTable[ pTmp[ 2 ] ]),
                                 pTmp[ 3 ]);
                         }
                         else
                         {
-                            ImplSetAlphaPixel( 
-                                nY, 
-                                nX, 
-                                BitmapColor( 
-                                    pTmp[0], 
-                                    pTmp[1], 
-                                    pTmp[2]), 
+                            ImplSetAlphaPixel(
+                                nY,
+                                nX,
+                                BitmapColor(
+                                    pTmp[0],
+                                    pTmp[1],
+                                    pTmp[2]),
                                 pTmp[3]);
                         }
                     }
@@ -1490,13 +1490,13 @@ void PNGReaderImpl::ImplDrawScanline( sal_uInt32 nXStart, sal_uInt32 nXAdd )
                 // BMP_FORMAT_64BIT_TC_RGBA
                 for ( sal_Int32 nX = nXStart; nX < maOrigSize.Width(); nX += nXAdd, pTmp += 8 )
                 {
-                    ImplSetAlphaPixel( 
-                        nY, 
-                        nX, 
-                        BitmapColor( 
+                    ImplSetAlphaPixel(
+                        nY,
+                        nX,
+                        BitmapColor(
                             mpColorTable[ pTmp[ 0 ] ],
                             mpColorTable[ pTmp[ 2 ] ],
-                            mpColorTable[ pTmp[ 4 ] ]), 
+                            mpColorTable[ pTmp[ 4 ] ]),
                         pTmp[6]);
                 }
             }
@@ -1583,7 +1583,7 @@ void PNGReaderImpl::ImplDrawScanline( sal_uInt32 nXStart, sal_uInt32 nXAdd )
                         }
                     }
 
-                    // copy scanline directly to bitmap for content; use the format which is able to 
+                    // copy scanline directly to bitmap for content; use the format which is able to
                     // copy directly to BitmapBuffer
                     mpAcc->CopyScanline(nY, mpScanline, BMP_FORMAT_24BIT_TC_BGR, maOrigSize.Width() * 3);
                 }
@@ -1593,22 +1593,22 @@ void PNGReaderImpl::ImplDrawScanline( sal_uInt32 nXStart, sal_uInt32 nXAdd )
                     {
                         if(bCustomColorTable)
                         {
-                            ImplSetPixel( 
-                                nY, 
-                                nX, 
-                                BitmapColor( 
+                            ImplSetPixel(
+                                nY,
+                                nX,
+                                BitmapColor(
                                     mpColorTable[ pTmp[ 0 ] ],
                                     mpColorTable[ pTmp[ 1 ] ],
                                     mpColorTable[ pTmp[ 2 ] ]));
                         }
                         else
                         {
-                            ImplSetPixel( 
-                                nY, 
-                                nX, 
-                                BitmapColor( 
-                                    pTmp[0], 
-                                    pTmp[1], 
+                            ImplSetPixel(
+                                nY,
+                                nX,
+                                BitmapColor(
+                                    pTmp[0],
+                                    pTmp[1],
                                     pTmp[2]));
                         }
                     }
@@ -1620,10 +1620,10 @@ void PNGReaderImpl::ImplDrawScanline( sal_uInt32 nXStart, sal_uInt32 nXAdd )
                 // no support currently for DirectScanline, found no real usages in current PNGs, may be added on demand
                 for ( sal_Int32 nX = nXStart; nX < maOrigSize.Width(); nX += nXAdd, pTmp += 6 )
                 {
-                    ImplSetPixel( 
-                        nY, 
-                        nX, 
-                        BitmapColor( 
+                    ImplSetPixel(
+                        nY,
+                        nX,
+                        BitmapColor(
                             mpColorTable[ pTmp[ 0 ] ],
                             mpColorTable[ pTmp[ 2 ] ],
                             mpColorTable[ pTmp[ 4 ] ]));

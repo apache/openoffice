@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -194,7 +194,7 @@ struct ImplPostEventData
 	sal_uLong			mnEventId;
     KeyEvent    	maKeyEvent;
 	MouseEvent		maMouseEvent;
-	
+
 
    	ImplPostEventData( sal_uLong nEvent, const Window* pWin, const KeyEvent& rKeyEvent ) :
     	mnEvent( nEvent ), mpWin( pWin ), mnEventId( 0 ), maKeyEvent( rKeyEvent ) {}
@@ -462,7 +462,7 @@ void Application::Execute()
 inline void ImplYield( bool i_bWait, bool i_bAllEvents )
 {
     ImplSVData* pSVData = ImplGetSVData();
-    
+
     // run timers that have timed out
     if ( !pSVData->mbNoCallTimer )
         while ( pSVData->mbNotAllTimerCalled )
@@ -479,7 +479,7 @@ inline void ImplYield( bool i_bWait, bool i_bAllEvents )
     // flush lazy deleted objects
     if( pSVData->maAppData.mnDispatchLevel == 0 )
         vcl::LazyDelete::flush();
-    
+
     // the system timer events will not necesseraly come in in non waiting mode
     // e.g. on aqua; need to trigger timer checks manually
     if( pSVData->maAppData.mbNoYield && !pSVData->mbNoCallTimer )
@@ -712,7 +712,7 @@ void Application::SetSettings( const AllSettings& rSettings )
     {
 		GetSettings();
         *pSVData->maAppData.mpSettings = rSettings;
-        ResMgr::SetDefaultLocale( rSettings.GetUILocale() ); 
+        ResMgr::SetDefaultLocale( rSettings.GetUILocale() );
     }
     else
     {
@@ -722,7 +722,7 @@ void Application::SetSettings( const AllSettings& rSettings )
             delete pSVData->mpResMgr;
             pSVData->mpResMgr = NULL;
         }
-        ResMgr::SetDefaultLocale( rSettings.GetUILocale() ); 
+        ResMgr::SetDefaultLocale( rSettings.GetUILocale() );
         *pSVData->maAppData.mpSettings = rSettings;
         sal_uLong nChangeFlags = aOldSettings.GetChangeFlags( *pSVData->maAppData.mpSettings );
         if ( nChangeFlags )
@@ -925,20 +925,20 @@ sal_uLong Application::PostKeyEvent( sal_uLong nEvent, Window *pWin, KeyEvent* p
 {
 	const ::vos::OGuard	aGuard( GetSolarMutex() );
 	sal_uLong 				nEventId = 0;
-	
+
     if( pWin && pKeyEvent )
     {
 		ImplPostEventData* pPostEventData = new ImplPostEventData( nEvent, pWin, *pKeyEvent );
-	
+
         PostUserEvent( nEventId,
 					   STATIC_LINK( NULL, Application, PostEventHandler ),
                        pPostEventData );
-	
+
 		if( nEventId )
 		{
 			pPostEventData->mnEventId = nEventId;
 			aPostedEventList.push_back( ImplPostEventPair( pWin, pPostEventData ) );
-		}			
+		}
 		else
 			delete pPostEventData;
     }
@@ -952,28 +952,28 @@ sal_uLong Application::PostMouseEvent( sal_uLong nEvent, Window *pWin, MouseEven
 {
 	const ::vos::OGuard	aGuard( GetSolarMutex() );
 	sal_uLong 				nEventId = 0;
-	
+
     if( pWin && pMouseEvent )
     {
 		Point aTransformedPos( pMouseEvent->GetPosPixel() );
-		
+
 		aTransformedPos.X() += pWin->mnOutOffX;
 		aTransformedPos.Y() += pWin->mnOutOffY;
-		
+
 		const MouseEvent aTransformedEvent( aTransformedPos, pMouseEvent->GetClicks(), pMouseEvent->GetMode(),
 											pMouseEvent->GetButtons(), pMouseEvent->GetModifier() );
 
 		ImplPostEventData* pPostEventData = new ImplPostEventData( nEvent, pWin, aTransformedEvent );
-											
+
         PostUserEvent( nEventId,
 					   STATIC_LINK( NULL, Application, PostEventHandler ),
                        pPostEventData );
-	
+
 		if( nEventId )
 		{
 			pPostEventData->mnEventId = nEventId;
 			aPostedEventList.push_back( ImplPostEventPair( pWin, pPostEventData ) );
-		}	
+		}
 		else
 			delete pPostEventData;
     }
@@ -990,31 +990,31 @@ IMPL_STATIC_LINK_NOINSTANCE( Application, PostEventHandler, void*, pCallData )
 	const void*			pEventData;
     sal_uLong               nEvent;
 	const sal_uLong			nEventId = pData->mnEventId;
-	
+
     switch( pData->mnEvent )
     {
-        case VCLEVENT_WINDOW_MOUSEMOVE: 
+        case VCLEVENT_WINDOW_MOUSEMOVE:
 			nEvent = SALEVENT_EXTERNALMOUSEMOVE;
-			pEventData = &pData->maMouseEvent; 
-		break;
-        
-		case VCLEVENT_WINDOW_MOUSEBUTTONDOWN: 
-			nEvent = SALEVENT_EXTERNALMOUSEBUTTONDOWN;
-			pEventData = &pData->maMouseEvent;
-		break;
-        
-		case VCLEVENT_WINDOW_MOUSEBUTTONUP: 
-			nEvent = SALEVENT_EXTERNALMOUSEBUTTONUP; 
 			pEventData = &pData->maMouseEvent;
 		break;
 
-        case VCLEVENT_WINDOW_KEYINPUT: 
-			nEvent = SALEVENT_EXTERNALKEYINPUT; 
+		case VCLEVENT_WINDOW_MOUSEBUTTONDOWN:
+			nEvent = SALEVENT_EXTERNALMOUSEBUTTONDOWN;
+			pEventData = &pData->maMouseEvent;
+		break;
+
+		case VCLEVENT_WINDOW_MOUSEBUTTONUP:
+			nEvent = SALEVENT_EXTERNALMOUSEBUTTONUP;
+			pEventData = &pData->maMouseEvent;
+		break;
+
+        case VCLEVENT_WINDOW_KEYINPUT:
+			nEvent = SALEVENT_EXTERNALKEYINPUT;
 			pEventData = &pData->maKeyEvent;
 		break;
-        
-		case VCLEVENT_WINDOW_KEYUP: 
-			nEvent = SALEVENT_EXTERNALKEYUP; 
+
+		case VCLEVENT_WINDOW_KEYUP:
+			nEvent = SALEVENT_EXTERNALKEYUP;
 			pEventData = &pData->maKeyEvent;
 		break;
 
@@ -1026,10 +1026,10 @@ IMPL_STATIC_LINK_NOINSTANCE( Application, PostEventHandler, void*, pCallData )
 
     if( pData->mpWin && pData->mpWin->mpWindowImpl->mpFrameWindow && pEventData )
 		ImplWindowFrameProc( pData->mpWin->mpWindowImpl->mpFrameWindow, NULL, (sal_uInt16) nEvent, pEventData );
-		
+
 	// remove this event from list of posted events, watch for destruction of internal data
 	::std::list< ImplPostEventPair >::iterator aIter( aPostedEventList.begin() );
-	
+
 	while( aIter != aPostedEventList.end() )
 	{
 		if( nEventId == (*aIter).second->mnEventId )
@@ -1040,7 +1040,7 @@ IMPL_STATIC_LINK_NOINSTANCE( Application, PostEventHandler, void*, pCallData )
 		else
 			++aIter;
 	}
-	
+
     return 0;
 }
 
@@ -1049,17 +1049,17 @@ IMPL_STATIC_LINK_NOINSTANCE( Application, PostEventHandler, void*, pCallData )
 void Application::RemoveMouseAndKeyEvents( Window* pWin )
 {
 	const ::vos::OGuard	aGuard( GetSolarMutex() );
-	
+
 	// remove all events for specific window, watch for destruction of internal data
 	::std::list< ImplPostEventPair >::iterator aIter( aPostedEventList.begin() );
-	
+
 	while( aIter != aPostedEventList.end() )
 	{
 		if( pWin == (*aIter).first )
 		{
 			if( (*aIter).second->mnEventId )
 				RemoveUserEvent( (*aIter).second->mnEventId );
-			
+
 			delete (*aIter).second;
 			aIter = aPostedEventList.erase( aIter );
 		}
@@ -1073,15 +1073,15 @@ void Application::RemoveMouseAndKeyEvents( Window* pWin )
 sal_Bool Application::IsProcessedMouseOrKeyEvent( sal_uLong nEventId )
 {
     const ::vos::OGuard aGuard( GetSolarMutex() );
-    
+
     // find event
     ::std::list< ImplPostEventPair >::iterator aIter( aPostedEventList.begin() );
-    
+
     while( aIter != aPostedEventList.end() )
     {
         if( (*aIter).second->mnEventId == nEventId )
             return sal_False;
-            
+
         else
             ++aIter;
     }
@@ -1414,8 +1414,8 @@ unsigned int Application::GetBestScreen( const Rectangle& i_rRect )
 {
     if( IsMultiDisplay() )
         return GetDefaultDisplayNumber();
-    
-    const unsigned int nScreens = GetScreenCount();    
+
+    const unsigned int nScreens = GetScreenCount();
     unsigned int nBestMatchScreen = 0;
     unsigned long nOverlap = 0;
     for( unsigned int i = 0; i < nScreens; i++ )
@@ -1438,7 +1438,7 @@ unsigned int Application::GetBestScreen( const Rectangle& i_rRect )
     }
     if( nOverlap > 0 )
         return nBestMatchScreen;
-    
+
     // finally the screen which center is nearest to the rect is the best
     const Point aCenter( (i_rRect.Left() + i_rRect.Right())/2,
                          (i_rRect.Top() + i_rRect.Bottom())/2 );
@@ -1603,12 +1603,12 @@ Window* Application::GetDefDialogParent()
                 {
                     DBG_ERROR( "Window hierarchy corrupted!" );
                     pSVData->maWinData.mpFocusWin = NULL;   // avoid further access
-                    return NULL;       
+                    return NULL;
                 }
-    
+
                 // MAV: before the implementation has used only decorated windows,
                 //      but it is not true in case of ActiveX or plugin scenario,
-                //      so this check is commented out 
+                //      so this check is commented out
                 // if( pWin->mpWindowImpl->mpFrameWindow->GetStyle() & (WB_MOVEABLE | WB_SIZEABLE) )
                     return pWin->mpWindowImpl->mpFrameWindow->ImplGetWindow();
                 // else
@@ -2051,9 +2051,9 @@ sal_Bool Application::IsAccessibilityEnabled()
 {
 #ifdef WNT
 	return IsWNTInitAccessBridge();
-#else 
+#else
     return sal_False;
-#endif 
+#endif
 }
 
 sal_Bool InitAccessBridge( sal_Bool bShowCancel, sal_Bool &rCancelled )
@@ -2070,7 +2070,7 @@ sal_Bool InitAccessBridge( sal_Bool bShowCancel, sal_Bool &rCancelled )
 	if( HasAtHook() )
 	{
 	    bRet = ImplInitAccessBridge( bShowCancel, rCancelled );
-	    
+
 	    if( !bRet && bShowCancel && !rCancelled )
 	    {
 	        // disable accessibility if the user chooses to continue
@@ -2135,10 +2135,10 @@ bool Application::EnableAccessInterface(bool bEnable)
 {
 #ifdef WNT
 	return WNTEnableAccessInterface(bEnable);
-#else 
+#else
     bEnable = true; // avoid compiler warning
     return true;
-#endif 
+#endif
 }
 bool Application::IsEnableAccessInterface()
 {

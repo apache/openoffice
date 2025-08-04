@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -72,11 +72,11 @@ using namespace ::com::sun::star::container;
 using namespace ::com::sun::star::lang;
 
 
-namespace 
+namespace
 {
 	sal_Bool isGrabVclControlFocusAllowed(const UnoDataBrowserView* _pView)
 	{
-		sal_Bool bGrabFocus = sal_False; 
+		sal_Bool bGrabFocus = sal_False;
 		SbaGridControl* pVclControl = _pView->getVclControl();
 		Reference< ::com::sun::star::awt::XControl > xGrid = _pView->getGridControl();
 		if (pVclControl && xGrid.is())
@@ -100,7 +100,7 @@ namespace
 
 DBG_NAME(UnoDataBrowserView)
 // -------------------------------------------------------------------------
-UnoDataBrowserView::UnoDataBrowserView(	Window* pParent, 
+UnoDataBrowserView::UnoDataBrowserView(	Window* pParent,
 										IController& _rController,
 										const Reference< ::com::sun::star::lang::XMultiServiceFactory >& _rFactory)
 	:ODataView(pParent,_rController,_rFactory)
@@ -140,7 +140,7 @@ void UnoDataBrowserView::Construct(const Reference< ::com::sun::star::awt::XCont
 
 		// get the VCL-control
 		m_pVclControl = NULL;
-		getVclControl();		
+		getVclControl();
 
 		DBG_ASSERT(m_pVclControl != NULL, "UnoDataBrowserView::Construct : no real grid control !");
 	}
@@ -158,7 +158,7 @@ UnoDataBrowserView::~UnoDataBrowserView()
 		m_pSplitter = NULL;
 	}
 	setTreeView(NULL);
-	
+
 	if ( m_pStatus )
 	{
 		delete m_pStatus;
@@ -268,7 +268,7 @@ void UnoDataBrowserView::resizeDocumentView(Rectangle& _rPlayground)
 			m_pStatus->SetPosSizePixel( aStatusPos, aStatusSize );
 			aTreeViewSize.Height() -= aStatusSize.Height();
 		}
-		
+
 		// set the size of treelistbox
 		m_pTreeView->SetPosSizePixel( aTreeViewPos, aTreeViewSize );
 
@@ -295,8 +295,8 @@ sal_uInt16 UnoDataBrowserView::View2ModelPos(sal_uInt16 nPos) const
 }
 
 // -----------------------------------------------------------------------------
-SbaGridControl*	UnoDataBrowserView::getVclControl() const	
-{ 
+SbaGridControl*	UnoDataBrowserView::getVclControl() const
+{
 	if ( !m_pVclControl )
 	{
 		OSL_ENSURE(m_xGrid.is(),"Grid not set!");
@@ -315,7 +315,7 @@ SbaGridControl*	UnoDataBrowserView::getVclControl() const
 			}
 		}
 	}
-	return m_pVclControl; 
+	return m_pVclControl;
 }
 // -----------------------------------------------------------------------------
 void UnoDataBrowserView::GetFocus()

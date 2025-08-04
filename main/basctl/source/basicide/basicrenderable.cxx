@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -77,7 +77,7 @@ BasicRenderable::BasicRenderable( IDEBaseWindow* pWin )
                                                   rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "PageRange" ) ),
                                                   rtl::OUString(),
                                                   aPageRangeOpt
-                                                  ); 
+                                                  );
 }
 
 BasicRenderable::~BasicRenderable()
@@ -125,10 +125,10 @@ sal_Int32 SAL_CALL BasicRenderable::getRendererCount (
         else
             throw lang::IllegalArgumentException();
     }
-    
+
     return nCount;
 }
-    
+
 Sequence<beans::PropertyValue> SAL_CALL BasicRenderable::getRenderer (
         sal_Int32, const Any&, const Sequence<beans::PropertyValue>& i_xOptions
         ) throw (lang::IllegalArgumentException, RuntimeException)
@@ -142,7 +142,7 @@ Sequence<beans::PropertyValue> SAL_CALL BasicRenderable::getRenderer (
     if( pPrinter )
     {
         Size aPageSize( pPrinter->PixelToLogic( pPrinter->GetPaperSizePixel(), MapMode( MAP_100TH_MM ) ) );
-        
+
         aVals.realloc( 1 );
         aVals[0].Name = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "PageSize" ) );
         awt::Size aSize;
@@ -150,12 +150,12 @@ Sequence<beans::PropertyValue> SAL_CALL BasicRenderable::getRenderer (
         aSize.Height = aPageSize.Height();
         aVals[0].Value <<= aSize;
     }
-        
+
     appendPrintUIOptions( aVals );
 
     return aVals;
 }
-    
+
 void SAL_CALL BasicRenderable::render (
         sal_Int32 nRenderer, const Any&,
         const Sequence<beans::PropertyValue>& i_xOptions

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -114,7 +114,7 @@ ScaleTabPage::ScaleTabPage(Window* pWindow,const SfxItemSet& rInAttrs) :
 
     aCbxReverse(this, SchResId(CBX_REVERSE)),
     aCbxLogarithm(this, SchResId(CBX_LOGARITHM)),
-    
+
     m_aTxt_AxisType(this, SchResId (TXT_AXIS_TYPE)),
     m_aLB_AxisType(this, SchResId(LB_AXIS_TYPE)),
 
@@ -141,11 +141,11 @@ ScaleTabPage::ScaleTabPage(Window* pWindow,const SfxItemSet& rInAttrs) :
     aMtStepHelp (this, SchResId (MT_STEPHELP)),
 	m_aLB_HelpTimeUnit(this, SchResId(LB_HELP_TIME_UNIT)),
     aCbxAutoStepHelp(this, SchResId(CBX_AUTO_STEP_HELP)),
-    
+
     aTxtOrigin (this, SchResId (TXT_ORIGIN)),
 	aFmtFldOrigin(this, SchResId(EDT_ORIGIN)),
 	aCbxAutoOrigin(this, SchResId(CBX_AUTO_ORIGIN)),
-        
+
 	fMin(0.0),
 	fMax(0.0),
 	fStepMain(0.0),
@@ -170,7 +170,7 @@ ScaleTabPage::ScaleTabPage(Window* pWindow,const SfxItemSet& rInAttrs) :
     m_aCbx_AutoTimeResolution.SetClickHdl(LINK(this, ScaleTabPage, EnableValueHdl));
 
     m_aLB_AxisType.SetDropDownLineCount(3);
-    m_aLB_AxisType.SetSelectHdl(LINK(this, ScaleTabPage, SelectAxisTypeHdl));    
+    m_aLB_AxisType.SetSelectHdl(LINK(this, ScaleTabPage, SelectAxisTypeHdl));
 
     m_aLB_TimeResolution.SetDropDownLineCount(3);
     m_aLB_MainTimeUnit.SetDropDownLineCount(3);
@@ -193,7 +193,7 @@ void ScaleTabPage::StateChanged( StateChangedType nType )
 {
     TabPage::StateChanged( nType );
 
-    if( nType == STATE_CHANGE_INITSHOW )  
+    if( nType == STATE_CHANGE_INITSHOW )
         AdjustControlPositions();
 }
 
@@ -219,7 +219,7 @@ void ScaleTabPage::AdjustControlPositions()
     aCbxAutoStepHelp.SetSizePixel( aCbxAutoStepHelp.CalcMinimumSize() );
     aCbxAutoOrigin.SetSizePixel( aCbxAutoOrigin.CalcMinimumSize() );
     m_aCbx_AutoTimeResolution.SetSizePixel( m_aCbx_AutoTimeResolution.CalcMinimumSize() );
-    
+
     //ensure new pos is ok
     long nWidthOfOtherControls = m_aLB_MainTimeUnit.GetPosPixel().X() + m_aLB_MainTimeUnit.GetSizePixel().Width() - aFmtFldMin.GetPosPixel().X();
     long nDialogWidth = GetSizePixel().Width();
@@ -237,7 +237,7 @@ void ScaleTabPage::AdjustControlPositions()
         aTxtOrigin.SetSizePixel(aSize);
         m_aTxt_TimeResolution.SetSizePixel(aSize);
         m_aTxt_AxisType.SetSizePixel(aSize);
-        
+
         long nOrgAutoCheckX = aCbxAutoMin.GetPosPixel().X();
         lcl_placeControlAtX( aCbxAutoStepMain, nOrgAutoCheckX );
         lcl_placeControlAtX( aCbxAutoStepHelp, nOrgAutoCheckX );
@@ -263,7 +263,7 @@ void ScaleTabPage::PlaceIntervalControlsAccordingToAxisType()
     long nMinX = std::min( aCbxAutoStepMain.GetPosPixel().X(), m_aLB_MainTimeUnit.GetPosPixel().X() );
     long nLabelDistance = lcl_getLabelDistance(aTxtMin);
     long nListWidth = m_aLB_MainTimeUnit.GetSizePixel().Width();
-    
+
     if( chart2::AxisType::DATE == m_nAxisType )
     {
         lcl_placeControlAtX( m_aLB_MainTimeUnit, nMinX );
@@ -299,10 +299,10 @@ void ScaleTabPage::EnableControls()
 {
     bool bValueAxis = chart2::AxisType::REALNUMBER == m_nAxisType || chart2::AxisType::PERCENT == m_nAxisType || chart2::AxisType::DATE == m_nAxisType;
     bool bDateAxis = chart2::AxisType::DATE == m_nAxisType;
-        
+
     m_aTxt_AxisType.Show(m_bAllowDateAxis);
     m_aLB_AxisType.Show(m_bAllowDateAxis);
-    
+
     aCbxLogarithm.Show( bValueAxis && !bDateAxis );
     aTxtMin.Show( bValueAxis );
     aFmtFldMin.Show( bValueAxis );
@@ -317,7 +317,7 @@ void ScaleTabPage::EnableControls()
     aTxtHelpCount.Show( bValueAxis );
     aMtStepHelp.Show( bValueAxis );
     aCbxAutoStepHelp.Show( bValueAxis );
-    
+
     aTxtOrigin.Show( m_bShowAxisOrigin && bValueAxis );
     aFmtFldOrigin.Show( m_bShowAxisOrigin && bValueAxis );
     aCbxAutoOrigin.Show( m_bShowAxisOrigin && bValueAxis );
@@ -481,7 +481,7 @@ void ScaleTabPage::Reset(const SfxItemSet& rInAttrs)
         aCbxReverse.SetHelpId("chart2:CheckBox:TP_SCALE:CBX_REVERSE:MayBeDateAxis");
     else if( m_nAxisType==chart2::AxisType::CATEGORY || m_nAxisType==chart2::AxisType::SERIES )
         aCbxReverse.SetHelpId("chart2:CheckBox:TP_SCALE:CBX_REVERSE:Category");
-        
+
     PlaceIntervalControlsAccordingToAxisType();
 
     aCbxAutoMin.Check( true );
@@ -676,7 +676,7 @@ int ScaleTabPage::DeactivatePage(SfxItemSet* pItemSet)
             }
         }
     }
-    
+
     if( ShowWarning( nErrStrId, pControl ) )
 		return KEEP_PAGE;
 
@@ -693,7 +693,7 @@ void ScaleTabPage::SetNumFormatter( SvNumberFormatter* pFormatter )
 	aFmtFldMin.SetFormatter( pNumFormatter );
 	aFmtFldStepMain.SetFormatter( pNumFormatter );
 	aFmtFldOrigin.SetFormatter( pNumFormatter );
-    
+
     // #101318#, #i6278# allow more decimal places than the output format.  As
     // the numbers shown in the edit fields are used for input, it makes more
     // sense to display the values in the input format rather than the output
@@ -702,7 +702,7 @@ void ScaleTabPage::SetNumFormatter( SvNumberFormatter* pFormatter )
     aFmtFldMin.UseInputStringForFormatting();
     aFmtFldStepMain.UseInputStringForFormatting();
     aFmtFldOrigin.UseInputStringForFormatting();
-    
+
 	SetNumFormat();
 }
 

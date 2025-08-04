@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -898,8 +898,8 @@ MethodList::~MethodList()
 
 sal_uInt16 MethodList::calcMethodParamIndex( const sal_uInt16 index )
 {
-	return (METHOD_OFFSET_PARAM_COUNT + sizeof(sal_uInt16) + (index * m_PARAM_ENTRY_SIZE));	
-}	
+	return (METHOD_OFFSET_PARAM_COUNT + sizeof(sal_uInt16) + (index * m_PARAM_ENTRY_SIZE));
+}
 
 sal_uInt32 MethodList::parseIndex()
 {
@@ -955,8 +955,8 @@ const sal_Char* MethodList::getMethodParamType(sal_uInt16 index, sal_uInt16 para
 {
     const sal_Char* aName = NULL;
 
-    if ((m_numOfEntries > 0) && 
-		(index <= m_numOfEntries) && 
+    if ((m_numOfEntries > 0) &&
+		(index <= m_numOfEntries) &&
 		(paramIndex <= readUINT16(m_pIndex[index] + METHOD_OFFSET_PARAM_COUNT)))
     {
         aName = m_pCP->readUTF8NameConstant(
@@ -974,7 +974,7 @@ const sal_Char* MethodList::getMethodParamName(sal_uInt16 index, sal_uInt16 para
     const sal_Char* aName = NULL;
 
     if ((m_numOfEntries > 0) &&
-		(index <= m_numOfEntries) && 
+		(index <= m_numOfEntries) &&
 		(paramIndex <= readUINT16(m_pIndex[index] + METHOD_OFFSET_PARAM_COUNT)))
     {
         aName = m_pCP->readUTF8NameConstant(
@@ -992,7 +992,7 @@ RTParamMode MethodList::getMethodParamMode(sal_uInt16 index, sal_uInt16 paramInd
     RTParamMode aMode = RT_PARAM_INVALID;
 
     if ((m_numOfEntries > 0) &&
-    	(index <= m_numOfEntries) && 
+    	(index <= m_numOfEntries) &&
 		(paramIndex <= readUINT16(m_pIndex[index] + METHOD_OFFSET_PARAM_COUNT)))
     {
         aMode = (RTParamMode) readUINT16(
@@ -1109,7 +1109,7 @@ TypeRegistryEntry::TypeRegistryEntry(
 	sal_uInt16 offset_N_SUPERTYPES = OFFSET_N_ENTRIES + entrySize + (nHeaderEntries * entrySize);
 	m_offset_SUPERTYPES = offset_N_SUPERTYPES + entrySize;
 	m_nSuperTypes = readUINT16(offset_N_SUPERTYPES);
-	
+
 	sal_uInt16 offset_CP_SIZE = m_offset_SUPERTYPES + (m_nSuperTypes * entrySize);
 	sal_uInt16 offset_CP = offset_CP_SIZE + entrySize;
 
@@ -1274,13 +1274,13 @@ static void TYPEREG_CALLTYPE getSuperTypeName(TypeReaderImpl hEntry, rtl_uString
 {
     TypeRegistryEntry* pEntry = (TypeRegistryEntry*) hEntry;
 
-    if (pEntry == NULL)	
+    if (pEntry == NULL)
 	{
 		rtl_uString_new(pSuperTypeName);
 		return;
 	}
 
-    if (pEntry->m_nSuperTypes == 0)	
+    if (pEntry->m_nSuperTypes == 0)
 	{
 		rtl_uString_new(pSuperTypeName);
 		return;

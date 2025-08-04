@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -981,7 +981,7 @@ Window * AbstractSvxPostItDialog_Impl::GetWindow()
 String AbstractPasswordToOpenModifyDialog_Impl::GetPasswordToOpen() const
 {
     return pDlg->GetPasswordToOpen();
-}    
+}
 String AbstractPasswordToOpenModifyDialog_Impl::GetPasswordToModify() const
 {
     return pDlg->GetPasswordToModify();
@@ -998,7 +998,7 @@ VclAbstractDialog* AbstractDialogFactory_Impl::CreateVclDialog( Window* pParent,
     switch ( nResId )
 	{
         case RID_DEFAULTABOUT:
-        {   
+        {
             pDlg = new AboutDialog( pParent, CUI_RES( (sal_uInt16) nResId ) );
             break;
         }
@@ -1151,7 +1151,7 @@ AbstractHangulHanjaConversionDialog* AbstractDialogFactory_Impl::CreateHangulHan
 	return new AbstractHangulHanjaConversionDialog_Impl( pDlg );
 }
 
-AbstractThesaurusDialog* AbstractDialogFactory_Impl::CreateThesaurusDialog( Window* pParent, 
+AbstractThesaurusDialog* AbstractDialogFactory_Impl::CreateThesaurusDialog( Window* pParent,
 								::com::sun::star::uno::Reference< ::com::sun::star::linguistic2::XThesaurus >  xThesaurus,
 								const String &rWord, sal_Int16 nLanguage )
 {
@@ -1952,7 +1952,7 @@ SvxAbstractSplittTableDialog* AbstractDialogFactory_Impl::CreateSvxSplittTableDi
 	return new SvxSplitTableDlg( pParent, bIsTableVertical, nMaxVertical, nMaxHorizontal );
 }
 
-SvxAbstractNewTableDialog* AbstractDialogFactory_Impl::CreateSvxNewTableDialog( Window* pParent ) 
+SvxAbstractNewTableDialog* AbstractDialogFactory_Impl::CreateSvxNewTableDialog( Window* pParent )
 {
 	return new SvxNewTableDialog( pParent );
 }
@@ -1968,10 +1968,10 @@ SvxAbstractInsRowColDlg* AbstractDialogFactory_Impl::CreateSvxInsRowColDlg( Wind
     return new SvxInsRowColDlg( pParent, bCol, sHelpId );
 }
 
-AbstractPasswordToOpenModifyDialog * AbstractDialogFactory_Impl::CreatePasswordToOpenModifyDialog( 
+AbstractPasswordToOpenModifyDialog * AbstractDialogFactory_Impl::CreatePasswordToOpenModifyDialog(
     Window * pParent,
     sal_uInt16 nMinPasswdLen, sal_uInt16 nMaxPasswdLen, bool bIsPasswordToModify )
 {
     PasswordToOpenModifyDialog * pDlg = new PasswordToOpenModifyDialog( pParent, nMinPasswdLen, nMaxPasswdLen, bIsPasswordToModify );
     return new AbstractPasswordToOpenModifyDialog_Impl( pDlg );
-}    
+}

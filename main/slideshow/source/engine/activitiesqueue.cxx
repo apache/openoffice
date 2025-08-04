@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,7 +45,7 @@ namespace slideshow
 {
     namespace internal
     {
-        ActivitiesQueue::ActivitiesQueue( 
+        ActivitiesQueue::ActivitiesQueue(
           const ::boost::shared_ptr< ::canvas::tools::ElapsedTime >& pPresTimer ) :
             mpTimer( pPresTimer ),
             maCurrentActivitiesWaiting(),
@@ -57,7 +57,7 @@ namespace slideshow
         ActivitiesQueue::~ActivitiesQueue()
         {
             // dispose all queue entries
-            try 
+            try
             {
                 std::for_each( maCurrentActivitiesWaiting.begin(),
                                maCurrentActivitiesWaiting.end(),
@@ -66,7 +66,7 @@ namespace slideshow
                                maCurrentActivitiesReinsert.end(),
                                boost::mem_fn( &Disposable::dispose ) );
             }
-            catch (uno::Exception &) 
+            catch (uno::Exception &)
             {
                 OSL_ENSURE( false, rtl::OUStringToOString(
                                 comphelper::anyToString(
@@ -101,18 +101,18 @@ namespace slideshow
             double fLag = 0.0;
             for ( ; iPos != iEnd; ++iPos )
                 fLag = std::max<double>( fLag, (*iPos)->calcTimeLag() );
-            if (fLag > 0.0) 
+            if (fLag > 0.0)
             {
                 mpTimer->adjustTimer( -fLag );
             }
-            
+
             // process list of activities
             while( !maCurrentActivitiesWaiting.empty() )
             {
                 // process topmost activity
                 ActivitySharedPtr pActivity( maCurrentActivitiesWaiting.front() );
                 maCurrentActivitiesWaiting.pop_front();
-                
+
                 bool bReinsert( false );
 
                 try
@@ -131,7 +131,7 @@ namespace slideshow
                     // circumstance. Although, do _not_
                     // reinsert an activity that threw
                     // once.
-                    
+
                     // NOTE: we explicitly don't catch(...) here,
                     // since this will also capture segmentation
                     // violations and the like. In such a case, we
@@ -148,7 +148,7 @@ namespace slideshow
                     // circumstance. Although, do _not_
                     // reinsert an activity that threw
                     // once.
-                    
+
                     // NOTE: we explicitly don't catch(...) here,
                     // since this will also capture segmentation
                     // violations and the like. In such a case, we
@@ -196,7 +196,7 @@ namespace slideshow
                            maCurrentActivitiesWaiting.end(),
                            boost::mem_fn( &Activity::dequeued ) );
             ActivityQueue().swap( maCurrentActivitiesWaiting );
-            
+
             std::for_each( maCurrentActivitiesReinsert.begin(),
                            maCurrentActivitiesReinsert.end(),
                            boost::mem_fn( &Activity::dequeued ) );

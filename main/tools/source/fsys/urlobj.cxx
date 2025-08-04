@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1221,7 +1221,7 @@ bool INetURLObject::setAbsURIRef(rtl::OUString const & rTheAbsURIRef,
 						pUserInfoBegin = pAuthority;
 						pUserInfoEnd = pPos;
 					}
-				else if (getSchemeInfo().m_bHost) 
+				else if (getSchemeInfo().m_bHost)
 				{
 					pHostPortBegin = pAuthority;
 					pHostPortEnd = pPos;
@@ -1277,7 +1277,7 @@ bool INetURLObject::setAbsURIRef(rtl::OUString const & rTheAbsURIRef,
 				appendUCS4(aSynUser, nUTF32, eEscapeType, bOctets, ePart,
 						   cEscapePrefix, eCharset, false);
 			}
-			m_aUser.set(aSynAbsURIRef, aSynUser.makeStringAndClear(), 
+			m_aUser.set(aSynAbsURIRef, aSynUser.makeStringAndClear(),
 				aSynAbsURIRef.getLength());
 			if (bHasAuth)
             {
@@ -1295,7 +1295,7 @@ bool INetURLObject::setAbsURIRef(rtl::OUString const & rTheAbsURIRef,
 						appendUCS4(aSynAuth, nUTF32, eEscapeType, bOctets,
 								   ePart, cEscapePrefix, eCharset, false);
 					}
-					m_aAuth.set(aSynAbsURIRef, aSynAuth.makeStringAndClear(), 
+					m_aAuth.set(aSynAbsURIRef, aSynAuth.makeStringAndClear(),
 						aSynAbsURIRef.getLength());
 				}
 				else
@@ -1318,7 +1318,7 @@ bool INetURLObject::setAbsURIRef(rtl::OUString const & rTheAbsURIRef,
 						appendUCS4(aSynAuth, nUTF32, eEscapeType, bOctets,
 								   ePart, cEscapePrefix, eCharset, false);
 					}
-					m_aAuth.set(aSynAbsURIRef, aSynAuth.makeStringAndClear(), 
+					m_aAuth.set(aSynAbsURIRef, aSynAuth.makeStringAndClear(),
 						aSynAbsURIRef.getLength());
 				}
             }
@@ -1373,12 +1373,12 @@ bool INetURLObject::setAbsURIRef(rtl::OUString const & rTheAbsURIRef,
 				setInvalid();
 				return false;
 			}
-			m_aHost.set(aSynAbsURIRef, aSynHost.makeStringAndClear(), 
+			m_aHost.set(aSynAbsURIRef, aSynHost.makeStringAndClear(),
 				aSynAbsURIRef.getLength());
 			if (pPort != pHostPortEnd)
 			{
 				aSynAbsURIRef.append(sal_Unicode(':'));
-				m_aPort.set(aSynAbsURIRef, 
+				m_aPort.set(aSynAbsURIRef,
 					rtl::OUString(pPort + 1, pHostPortEnd - (pPort + 1)),
 					aSynAbsURIRef.getLength());
 			}
@@ -1396,7 +1396,7 @@ bool INetURLObject::setAbsURIRef(rtl::OUString const & rTheAbsURIRef,
 		setInvalid();
 		return false;
 	}
-	m_aPath.set(aSynAbsURIRef, aSynPath.makeStringAndClear(), 
+	m_aPath.set(aSynAbsURIRef, aSynPath.makeStringAndClear(),
 		aSynAbsURIRef.getLength());
 
 	// Parse ?<query>
@@ -1412,7 +1412,7 @@ bool INetURLObject::setAbsURIRef(rtl::OUString const & rTheAbsURIRef,
 			appendUCS4(aSynQuery, nUTF32, eEscapeType, bOctets,
 					   PART_URIC, cEscapePrefix, eCharset, true);
 		}
-		m_aQuery.set(aSynAbsURIRef, aSynQuery.makeStringAndClear(), 
+		m_aQuery.set(aSynAbsURIRef, aSynQuery.makeStringAndClear(),
 			aSynAbsURIRef.getLength());
 	}
 
@@ -1429,7 +1429,7 @@ bool INetURLObject::setAbsURIRef(rtl::OUString const & rTheAbsURIRef,
 			appendUCS4(aSynFragment, nUTF32, eEscapeType, bOctets, PART_URIC,
 					   cEscapePrefix, eCharset, true);
 		}
-		m_aFragment.set(aSynAbsURIRef, aSynFragment.makeStringAndClear(), 
+		m_aFragment.set(aSynAbsURIRef, aSynFragment.makeStringAndClear(),
 			aSynAbsURIRef.getLength());
 	}
 
@@ -2010,7 +2010,7 @@ bool INetURLObject::convertAbsToRel(rtl::OUString const & rTheAbsURIRef,
 	if (aSubject.m_aFragment.isPresent())
 	{
 		aSynRelURIRef.append(sal_Unicode('#'));
-		aSynRelURIRef.append(aSubject.decode(aSubject.m_aFragment, 
+		aSynRelURIRef.append(aSubject.decode(aSubject.m_aFragment,
 			cEscapePrefix, eDecodeMechanism, eCharset));
 	}
 
@@ -2037,7 +2037,7 @@ bool INetURLObject::convertIntToExt(rtl::OUString const & rTheIntURIRef,
 	bool bConvert = pPrefix && pPrefix->m_eKind == PrefixInfo::INTERNAL;
 	if (bConvert)
 	{
-		aSynExtURIRef = 
+		aSynExtURIRef =
 			aSynExtURIRef.replaceAt(0, p - pBegin,
 				rtl::OUString::createFromAscii(pPrefix->m_pTranslatedPrefix));
 	}
@@ -2065,7 +2065,7 @@ bool INetURLObject::convertExtToInt(rtl::OUString const & rTheExtURIRef,
 	bool bConvert = pPrefix && pPrefix->m_eKind == PrefixInfo::EXTERNAL;
 	if (bConvert)
 	{
-		aSynIntURIRef = 
+		aSynIntURIRef =
 			aSynIntURIRef.replaceAt(0, p - pBegin,
 				rtl::OUString::createFromAscii(pPrefix->m_pTranslatedPrefix));
 	}
@@ -2249,7 +2249,7 @@ bool INetURLObject::setUser(rtl::OUString const & rTheUser,
 							rtl_TextEncoding eCharset)
 {
 	if (
-         !getSchemeInfo().m_bUser || 
+         !getSchemeInfo().m_bUser ||
          (m_eScheme == INET_PROT_IMAP && rTheUser.getLength() == 0)
        )
     {
@@ -2301,7 +2301,7 @@ bool INetURLObject::clearPassword()
 		return false;
 	if (m_aAuth.isPresent())
 	{
-		lcl_Erase(m_aAbsURIRef, m_aAuth.getBegin() - 1, 
+		lcl_Erase(m_aAbsURIRef, m_aAuth.getBegin() - 1,
 			m_aAuth.getLength() + 1);
 		sal_Int32 nDelta = m_aAuth.clear() - 1;
 		m_aHost += nDelta;
@@ -2314,7 +2314,7 @@ bool INetURLObject::clearPassword()
 }
 
 //============================================================================
-bool INetURLObject::setPassword(rtl::OUString const & rThePassword, 
+bool INetURLObject::setPassword(rtl::OUString const & rThePassword,
 								bool bOctets, EncodeMechanism eMechanism,
 								rtl_TextEncoding eCharset)
 {
@@ -3442,7 +3442,7 @@ bool INetURLObject::checkHierarchical() const {
 }
 
 //============================================================================
-bool INetURLObject::appendSegment(rtl::OUString const & rTheSegment, 
+bool INetURLObject::appendSegment(rtl::OUString const & rTheSegment,
 								  bool bOctets, EncodeMechanism eMechanism,
 								  rtl_TextEncoding eCharset)
 {
@@ -3581,7 +3581,7 @@ bool INetURLObject::insertName(rtl::OUString const & rTheName, bool bOctets,
     }
     aNewPath.append(pSuffixBegin, pPathEnd - pSuffixBegin);
 
-	return setPath(aNewPath.makeStringAndClear(), false, NOT_CANONIC, 
+	return setPath(aNewPath.makeStringAndClear(), false, NOT_CANONIC,
 		RTL_TEXTENCODING_UTF8);
 }
 
@@ -3592,7 +3592,7 @@ bool INetURLObject::clearQuery()
 		return false;
 	if (m_aQuery.isPresent())
 	{
-		lcl_Erase(m_aAbsURIRef, m_aQuery.getBegin() - 1, 
+		lcl_Erase(m_aAbsURIRef, m_aQuery.getBegin() - 1,
 			m_aQuery.getLength() + 1);
 		m_aFragment += m_aQuery.clear() - 1;
 	}
@@ -3636,7 +3636,7 @@ bool INetURLObject::clearFragment()
 }
 
 //============================================================================
-bool INetURLObject::setFragment(rtl::OUString const & rTheFragment, 
+bool INetURLObject::setFragment(rtl::OUString const & rTheFragment,
 								bool bOctets, EncodeMechanism eMechanism,
 								rtl_TextEncoding eCharset)
 {
@@ -3778,7 +3778,7 @@ rtl::OUString INetURLObject::decode(sal_Unicode const * pBegin,
 
 			case ESCAPE_UTF32:
 				if (
-                     INetMIME::isUSASCII(nUTF32) && 
+                     INetMIME::isUSASCII(nUTF32) &&
                      (
                        eMechanism == DECODE_TO_IURI ||
                        (
@@ -4218,7 +4218,7 @@ bool INetURLObject::ConcatData(INetProtocol eTheScheme,
                 setInvalid();
                 return false;
             }
-			m_aHost.set(m_aAbsURIRef, aSynHost.makeStringAndClear(), 
+			m_aHost.set(m_aAbsURIRef, aSynHost.makeStringAndClear(),
 				m_aAbsURIRef.getLength());
 			if (nThePort != 0)
 			{
@@ -4252,7 +4252,7 @@ bool INetURLObject::ConcatData(INetProtocol eTheScheme,
         setInvalid();
 		return false;
     }
-	m_aPath.set(m_aAbsURIRef, aSynPath.makeStringAndClear(), 
+	m_aPath.set(m_aAbsURIRef, aSynPath.makeStringAndClear(),
 		m_aAbsURIRef.getLength());
 	return true;
 }
@@ -4342,12 +4342,12 @@ rtl::OUString INetURLObject::GetHostPort(DecodeMechanism eMechanism,
     // PROT_VND_SUN_STAR_PKG misuse m_aHost:
 	if (!getSchemeInfo().m_bHost)
 		return rtl::OUString();
-	rtl::OUStringBuffer aHostPort(decode(m_aHost, getEscapePrefix(), 
+	rtl::OUStringBuffer aHostPort(decode(m_aHost, getEscapePrefix(),
 		eMechanism, eCharset));
 	if (m_aPort.isPresent())
 	{
 		aHostPort.append(sal_Unicode(':'));
-		aHostPort.append(decode(m_aPort, getEscapePrefix(), 
+		aHostPort.append(decode(m_aPort, getEscapePrefix(),
 			eMechanism, eCharset));
 	}
 	return aHostPort.makeStringAndClear();
@@ -4455,7 +4455,7 @@ bool INetURLObject::removeSegment(sal_Int32 nIndex, bool bIgnoreFinalSlash)
 		aNewPath.append(sal_Unicode('/'));
     }
 
-	return setPath(aNewPath.makeStringAndClear(), false, NOT_CANONIC, 
+	return setPath(aNewPath.makeStringAndClear(), false, NOT_CANONIC,
 		RTL_TEXTENCODING_UTF8);
 }
 
@@ -4510,7 +4510,7 @@ bool INetURLObject::setName(rtl::OUString const & rTheName, sal_Int32 nIndex,
 		eMechanism, eCharset, true));
 	aNewPath.append(p, pPathEnd - p);
 
-	return setPath(aNewPath.makeStringAndClear(), false, NOT_CANONIC, 
+	return setPath(aNewPath.makeStringAndClear(), false, NOT_CANONIC,
 		RTL_TEXTENCODING_UTF8);
 }
 
@@ -4594,7 +4594,7 @@ bool INetURLObject::setBase(rtl::OUString const & rTheBase, sal_Int32 nIndex,
 		eMechanism, eCharset, true));
 	aNewPath.append(pExtension, pPathEnd - pExtension);
 
-	return setPath(aNewPath.makeStringAndClear(), false, NOT_CANONIC, 
+	return setPath(aNewPath.makeStringAndClear(), false, NOT_CANONIC,
 		RTL_TEXTENCODING_UTF8);
 }
 
@@ -4660,7 +4660,7 @@ bool INetURLObject::setExtension(rtl::OUString const & rTheExtension,
 		getEscapePrefix(), eMechanism, eCharset, true));
 	aNewPath.append(p, pPathEnd - p);
 
-	return setPath(aNewPath.makeStringAndClear(), false, NOT_CANONIC, 
+	return setPath(aNewPath.makeStringAndClear(), false, NOT_CANONIC,
 		RTL_TEXTENCODING_UTF8);
 }
 
@@ -4692,7 +4692,7 @@ bool INetURLObject::removeExtension(sal_Int32 nIndex, bool bIgnoreFinalSlash)
 	aNewPath.append(pPathBegin, pExtension - pPathBegin);
 	aNewPath.append(p, pPathEnd - p);
 
-	return setPath(aNewPath.makeStringAndClear(), false, NOT_CANONIC, 
+	return setPath(aNewPath.makeStringAndClear(), false, NOT_CANONIC,
 		RTL_TEXTENCODING_UTF8);
 }
 
@@ -4724,7 +4724,7 @@ bool INetURLObject::setFinalSlash()
 	aNewPath.append(pPathBegin, pPathEnd - pPathBegin);
 	aNewPath.append(sal_Unicode('/'));
 
-	return setPath(aNewPath.makeStringAndClear(), false, NOT_CANONIC, 
+	return setPath(aNewPath.makeStringAndClear(), false, NOT_CANONIC,
 		RTL_TEXTENCODING_UTF8);
 }
 
@@ -4765,7 +4765,7 @@ rtl::OUString INetURLObject::createFragment(rtl::OUString const & rText)
 }
 
 //============================================================================
-bool INetURLObject::setFSysPath(rtl::OUString const & rFSysPath, 
+bool INetURLObject::setFSysPath(rtl::OUString const & rFSysPath,
 	FSysStyle eStyle)
 {
 	sal_Unicode const * pFSysBegin = rFSysPath.getStr();
@@ -4951,7 +4951,7 @@ bool INetURLObject::setFSysPath(rtl::OUString const & rFSysPath,
             break;
 	}
 
-	INetURLObject aTemp(aSynAbsURIRef.makeStringAndClear(), WAS_ENCODED, 
+	INetURLObject aTemp(aSynAbsURIRef.makeStringAndClear(), WAS_ENCODED,
 		RTL_TEXTENCODING_UTF8);
 	if (aTemp.HasError())
 		return false;
@@ -5564,7 +5564,7 @@ rtl::OUString INetURLObject::CutExtension(DecodeMechanism eMechanism,
 {
 	rtl::OUString aTheExtension(getExtension(LAST_SEGMENT, false, eMechanism,
 										 eCharset));
-	return removeExtension(LAST_SEGMENT, false) 
+	return removeExtension(LAST_SEGMENT, false)
 		? aTheExtension : rtl::OUString();
 }
 

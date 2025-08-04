@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -81,13 +81,13 @@ namespace ooevtdescgen
     {
         {
             ::evtlstner::create, ::evtlstner::getImplementationName,
-            ::evtlstner::getSupportedServiceNames, 
+            ::evtlstner::getSupportedServiceNames,
             ::cppu::createSingleComponentFactory,
             0, 0
         },
         {
             ::ooevtdescgen::create, ::ooevtdescgen::getImplementationName,
-            ::ooevtdescgen::getSupportedServiceNames, 
+            ::ooevtdescgen::getSupportedServiceNames,
             ::cppu::createSingleComponentFactory,
             0, 0
         },
@@ -96,19 +96,19 @@ namespace ooevtdescgen
 
 extern "C"
 {
-    SAL_DLLPUBLIC_EXPORT  void SAL_CALL component_getImplementationEnvironment( 
+    SAL_DLLPUBLIC_EXPORT  void SAL_CALL component_getImplementationEnvironment(
         const sal_Char ** ppEnvTypeName, uno_Environment ** )
     {
         OSL_TRACE("In component_getImplementationEnv");
         *ppEnvTypeName = CPPU_CURRENT_LANGUAGE_BINDING_NAME;
     }
 
-    SAL_DLLPUBLIC_EXPORT  void * SAL_CALL component_getFactory( 
+    SAL_DLLPUBLIC_EXPORT  void * SAL_CALL component_getFactory(
         const sal_Char * pImplName, lang::XMultiServiceFactory * pServiceManager,
         registry::XRegistryKey * pRegistryKey )
     {
         OSL_TRACE("In component_getFactory");
-        return ::cppu::component_getFactoryHelper( 
+        return ::cppu::component_getFactoryHelper(
             pImplName, pServiceManager, pRegistryKey, s_component_entries );
     }
 }

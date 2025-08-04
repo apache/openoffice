@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -43,7 +43,7 @@ class CacheDescriptor
 public:
     ::sd::slidesorter::cache::PageCacheManager::DocumentKey mpDocument;
     Size maPreviewSize;
-    
+
     CacheDescriptor(
         ::sd::slidesorter::cache::PageCacheManager::DocumentKey pDocument,
         const Size& rPreviewSize)
@@ -115,7 +115,7 @@ public:
             return (rElement1.first.Width()*rElement1.first.Height()
                 > rElement2.first.Width()*rElement2.first.Height());
     }
-    
+
 private:
     Size maPreferredSize;
 };
@@ -177,7 +177,7 @@ public:
 ::boost::shared_ptr<PageCacheManager> PageCacheManager::Instance (void)
 {
     ::boost::shared_ptr<PageCacheManager> pInstance;
-    
+
     ::osl::MutexGuard aGuard (::osl::Mutex::getGlobalMutex());
 
     pInstance = mpInstance.lock();
@@ -188,7 +188,7 @@ public:
             PageCacheManager::Deleter());
         mpInstance = pInstance;
     }
-        
+
     return pInstance;
 }
 
@@ -236,7 +236,7 @@ PageCacheManager::~PageCacheManager (void)
     // contain previews that are not up-to-date.  Recycle previews from
     // other caches to fill in the holes.
     Recycle(pResult, pDocument,rPreviewSize);
-    
+
     // Put the new (or old) cache into the container.
     if (pResult.get() != NULL)
         mpPageCaches->insert(PageCacheContainer::value_type(aKey, pResult));
@@ -291,13 +291,13 @@ void PageCacheManager::ReleaseCache (const ::boost::shared_ptr<Cache>& rpCache)
         mpPageCaches->begin(),
         mpPageCaches->end(),
         PageCacheContainer::CompareWithCache(rpCache)));
-    
+
     if (iCache != mpPageCaches->end())
     {
         OSL_ASSERT(iCache->second == rpCache);
 
         PutRecentlyUsedCache(iCache->first.mpDocument,iCache->first.maPreviewSize,rpCache);
-            
+
         mpPageCaches->erase(iCache);
     }
 }
@@ -311,7 +311,7 @@ void PageCacheManager::ReleaseCache (const ::boost::shared_ptr<Cache>& rpCache)
     const Size& rNewPreviewSize)
 {
     (void)rOldPreviewSize;
-    
+
     ::boost::shared_ptr<Cache> pResult;
 
     if (rpCache.get() != NULL)
@@ -385,7 +385,7 @@ void PageCacheManager::InvalidateAllPreviewBitmaps (DocumentKey pDocument)
 {
     if (pDocument == NULL)
         return;
-    
+
     // Iterate over all caches that are currently in use and invalidate the
     // previews in those that belong to the document.
     PageCacheContainer::iterator iCache;
@@ -438,7 +438,7 @@ void PageCacheManager::ReleasePreviewBitmap (const SdrPage* pPage)
     const Size& rPreviewSize)
 {
     ::boost::shared_ptr<Cache> pCache;
-    
+
     // Look for the cache in the list of recently used caches.
     RecentlyUsedPageCaches::iterator iQueue (mpRecentlyUsedPageCaches->find(pDocument));
     if (iQueue != mpRecentlyUsedPageCaches->end())

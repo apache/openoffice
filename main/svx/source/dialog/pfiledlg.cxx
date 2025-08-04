@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -36,7 +36,7 @@
 
 #include <svx/dialmgr.hxx>
 #include <list>
- 
+
 using namespace ::rtl;
 using namespace ::com::sun::star;
 
@@ -59,7 +59,7 @@ String SvxPluginFileDlg::GetPath() const
 	return maFileDlg.GetPath();
 }
 
-SvxPluginFileDlg::SvxPluginFileDlg (Window *, sal_uInt16 nKind ) : 
+SvxPluginFileDlg::SvxPluginFileDlg (Window *, sal_uInt16 nKind ) :
 	maFileDlg(SFXWB_INSERT)
 {
 	// set title of the dialogwindow
@@ -119,10 +119,10 @@ SvxPluginFileDlg::SvxPluginFileDlg (Window *, sal_uInt16 nKind ) :
 					{
 						// filterdescription already there?
 						// (then append the new extension to the existing filter)
-						int nfound = -1;						
+						int nfound = -1;
  						for ( j = aPlugNames.begin(),
 								  k = aPlugExtensions.begin(),
-								  end = aPlugNames.end(); 
+								  end = aPlugNames.end();
 							  j != end && nfound != 0;  )
 						{
 							if ( ( nfound = j->Search( aStrPlugName ) ) == 0 )
@@ -133,9 +133,9 @@ SvxPluginFileDlg::SvxPluginFileDlg (Window *, sal_uInt16 nKind ) :
 
 								// remove old entry, increment (iterators are invalid thereafter, thus the postincrement)
 								aPlugNames.erase(j++); aPlugExtensions.erase(k++);
-								
+
 								// update end iterator (which may be invalid, too!)
-								end = aPlugNames.end(); 
+								end = aPlugNames.end();
 							}
 							else
 							{
@@ -172,10 +172,10 @@ SvxPluginFileDlg::SvxPluginFileDlg (Window *, sal_uInt16 nKind ) :
 				}
 			}
 
-			// add filter to dialog			
-			for ( j = aPlugNames.begin(), 
+			// add filter to dialog
+			for ( j = aPlugNames.begin(),
 					  k = aPlugExtensions.begin(),
-					  end = aPlugNames.end(); 
+					  end = aPlugNames.end();
 				  j != end; ++j, ++k )
 			{
 				maFileDlg.AddFilter( *j, *k );

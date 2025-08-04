@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -164,7 +164,7 @@ inline sal_Int32 impl_GetPointComponent( const sal_uInt8* &pVal, sal_uInt16 nPoi
 
         nRet = nUnsigned;
     }
-    
+
     return nRet;
 }
 
@@ -342,7 +342,7 @@ void RtfSdrExport::Commit( EscherPropertyContainer& rProps, const Rectangle& rRe
                                     break;
                             }
                         }
-                        
+
                         if (aVerticies.getLength() )
                         {
                             // We know the number of vertices at the end only, so we have to prepend them here.
@@ -470,7 +470,7 @@ sal_Int32 RtfSdrExport::StartShape()
 
     for(std::map<OString,OString>::reverse_iterator i = m_aShapeProps.rbegin(); i != m_aShapeProps.rend(); i++)
         lcl_AppendSP(m_rAttrOutput.RunText(), (*i).first.getStr(), (*i).second );
-    
+
     lcl_AppendSP(m_rAttrOutput.RunText(), "wzDescription", RtfExport::OutString( m_pSdrObject->GetDescription(), m_rExport.eCurrentEncoding));
     lcl_AppendSP(m_rAttrOutput.RunText(), "wzName", RtfExport::OutString( m_pSdrObject->GetTitle(), m_rExport.eCurrentEncoding));
 
@@ -528,7 +528,7 @@ void RtfSdrExport::WriteOutliner(const OutlinerParaObject& rParaObj)
         String aStr( rEditObj.GetText( n ));
         xub_StrLen nAktPos = 0;
         xub_StrLen nEnd = aStr.Len();
-        
+
         aAttrIter.OutParaAttr(false);
         m_rAttrOutput.RunText().append(m_rAttrOutput.Styles().makeStringAndClear());
 

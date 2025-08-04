@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1369,7 +1369,7 @@ sal_Bool ScDocument::GetFilterEntries(
 			SCCOL nEndCol;
 			SCROW nEndRow;
 			pDBData->GetArea( nAreaTab, nStartCol, nStartRow, nEndCol, nEndRow );
-			
+
 		//Add for i85305
 			SCCOL nTmpStartCol = nCol;
             SCROW nTmpStartRow = nRow;
@@ -1598,7 +1598,7 @@ void ScDocument::ResetEmbedded()
 }
 
 
-/** Similar to ScViewData::AddPixelsWhile(), but add height twips and only 
+/** Similar to ScViewData::AddPixelsWhile(), but add height twips and only
     while result is less than nStopTwips.
     @return sal_True if advanced at least one row.
  */
@@ -1755,7 +1755,7 @@ void lcl_SnapVer( ScTable* pTable, long& rVal, SCROW& rStartRow )
         SCROW nLastRow;
         if (pTable->RowHidden(i, NULL, &nLastRow))
         {
-            i = nLastRow;    
+            i = nLastRow;
             continue;
         }
 
@@ -1768,7 +1768,7 @@ void lcl_SnapVer( ScTable* pTable, long& rVal, SCROW& rStartRow )
 		}
 		else
         {
-            bFound = true;    
+            bFound = true;
 			break;
         }
 	}
@@ -2037,7 +2037,7 @@ void ScDocument::DecSizeRecalcLevel( SCTAB nTab, bool bUpdateNoteCaptionPos )
 
 // Wang Xu Ming -- 2009-8-17
 // DataPilot Migration - Cache&&Performance
-ScDPTableDataCache* ScDocument::GetDPObjectCache( long nID ) 
+ScDPTableDataCache* ScDocument::GetDPObjectCache( long nID )
 {
     for ( std::list<ScDPTableDataCache*>::iterator iter = m_listDPObjectsCaches.begin(); iter!=m_listDPObjectsCaches.end(); iter++ )
     { //
@@ -2047,7 +2047,7 @@ ScDPTableDataCache* ScDocument::GetDPObjectCache( long nID )
     return NULL;
 }
 
-ScDPTableDataCache* ScDocument::GetUsedDPObjectCache ( ScRange rRange ) 
+ScDPTableDataCache* ScDocument::GetUsedDPObjectCache ( ScRange rRange )
 {
     ScDPTableDataCache* pCache = NULL;
     sal_uInt16 nCount = GetDPCollection()->GetCount();
@@ -2067,7 +2067,7 @@ ScDPTableDataCache* ScDocument::GetUsedDPObjectCache ( ScRange rRange )
 }
 
 long ScDocument::AddDPObjectCache( ScDPTableDataCache* pData )
-{ 
+{
     if ( pData->GetId() < 0 )
     { //create a id for it
         pData->SetId( GetNewDPObjectCacheId() );
@@ -2102,10 +2102,10 @@ long ScDocument::GetNewDPObjectCacheId()
 void ScDocument::RemoveDPObjectCache( long nID )
 {
     for ( std::list<ScDPTableDataCache*>::iterator iter = m_listDPObjectsCaches.begin(); iter!=m_listDPObjectsCaches.end(); iter++ )
-    { 
+    {
         if ( nID == (*iter)->GetId() )
         {
-            ScDPTableDataCache* pCache = *iter; 
+            ScDPTableDataCache* pCache = *iter;
             m_listDPObjectsCaches.erase( iter );
             delete pCache;
             break;
@@ -2115,9 +2115,9 @@ void ScDocument::RemoveDPObjectCache( long nID )
 }
 
 void ScDocument::RemoveUnusedDPObjectCaches()
-{ 
+{
     for ( std::list<ScDPTableDataCache*>::iterator iter = m_listDPObjectsCaches.begin(); iter!=m_listDPObjectsCaches.end(); )
-    { 
+    {
         long  nID = (*iter)->GetId();
         sal_uInt16 nCount = GetDPCollection()->GetCount();
         sal_uInt16 i ;
@@ -2128,7 +2128,7 @@ void ScDocument::RemoveUnusedDPObjectCaches()
         }
         if ( i == nCount )
         {
-            ScDPTableDataCache* pCache = *iter; 
+            ScDPTableDataCache* pCache = *iter;
             iter = m_listDPObjectsCaches.erase( iter );
             delete pCache;
             continue;
@@ -2140,10 +2140,10 @@ void ScDocument::RemoveUnusedDPObjectCaches()
 void ScDocument::GetUsedDPObjectCache( std::list<ScDPTableDataCache*>& usedlist )
 {
     for ( std::list<ScDPTableDataCache*>::iterator iter = m_listDPObjectsCaches.begin(); iter!=m_listDPObjectsCaches.end(); iter++ )
-    { 
+    {
         long  nID = (*iter)->GetId();
         sal_uInt16 nCount = GetDPCollection()->GetCount();
-        sal_uInt16 i=0; 
+        sal_uInt16 i=0;
         for ( i=0; i<nCount; i++)
             if ( nID ==  (*pDPCollection)[i]->GetCacheId() )
                 break;

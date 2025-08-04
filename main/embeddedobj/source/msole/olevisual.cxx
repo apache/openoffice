@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -118,10 +118,10 @@ void SAL_CALL OleEmbeddedObject::setVisualAreaSize( sal_Int64 nAspect, const awt
 	// SetExtent() is called only for objects that require it,
 	// it should not be called for MSWord documents to workaround problem i49369
 	// If cached size is not set, that means that this is the size initialization, so there is no need to set the real size
-	sal_Bool bAllowToSetExtent = 
+	sal_Bool bAllowToSetExtent =
 	  ( ( getStatus( nAspect ) & embed::EmbedMisc::MS_EMBED_RECOMPOSEONRESIZE )
 	  && !MimeConfigurationHelper::ClassIDsEqual( m_aClassID, MimeConfigurationHelper::GetSequenceClassID( 0x00020906L, 0x0000, 0x0000,
-	  													 0xc0,0x00,0x00,0x00,0x00,0x00,0x00,0x46 ) ) 
+	  													 0xc0,0x00,0x00,0x00,0x00,0x00,0x00,0x46 ) )
 	  && m_bHasCachedSize );
 
 	if ( m_nObjectState == embed::EmbedStates::LOADED && bAllowToSetExtent )
@@ -211,7 +211,7 @@ awt::Size SAL_CALL OleEmbeddedObject::getVisualAreaSize( sal_Int64 nAspect )
 				// there is no internal cache
 				awt::Size aSize;
 				aGuard.clear();
-	
+
 				sal_Bool bSuccess = sal_False;
 				if ( getCurrentState() == embed::EmbedStates::LOADED )
 				{
@@ -271,7 +271,7 @@ awt::Size SAL_CALL OleEmbeddedObject::getVisualAreaSize( sal_Int64 nAspect )
 									uno::Reference< uno::XInterface >( static_cast< ::cppu::OWeakObject* >(this) ) );
 
 				aGuard.reset();
-				
+
 				m_aCachedSize = aSize;
 				m_nCachedAspect = nAspect;
 				m_bHasCachedSize = sal_True;
@@ -378,7 +378,7 @@ embed::VisualRepresentation SAL_CALL OleEmbeddedObject::getPreferredVisualRepres
 			aVisualRepr.Data >>= aVisReplSeq;
 			if ( aVisReplSeq.getLength() )
 			{
-				m_xCachedVisualRepresentation = GetNewFilledTempStream_Impl( 
+				m_xCachedVisualRepresentation = GetNewFilledTempStream_Impl(
 						uno::Reference< io::XInputStream > ( static_cast< io::XInputStream* > (
 							new ::comphelper::SequenceInputStream( aVisReplSeq ) ) ) );
 			}

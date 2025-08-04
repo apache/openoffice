@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -196,7 +196,7 @@ public:
 	// XElementAccess
 	virtual uno::Type SAL_CALL getElementType(  ) throw (uno::RuntimeException) { return  style::XStyle::static_type(0); }
 	virtual ::sal_Bool SAL_CALL hasElements(  ) throw (uno::RuntimeException) { return getCount() > 0; }
-	// XNameAcess 
+	// XNameAcess
 	virtual uno::Any SAL_CALL getByName( const ::rtl::OUString& aName ) throw (container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException)
 	{
 		if ( !hasByName(aName) )
@@ -238,7 +238,7 @@ public:
 
 	// XIndexAccess
 	virtual ::sal_Int32 SAL_CALL getCount(  ) throw (uno::RuntimeException)
-    { 
+    {
         uno::Sequence< rtl::OUString > aStyleTypes = getStyleTypes();
         sal_Int32 nCount = 0;
         for( sal_Int32 i = 0; i < aStyleTypes.getLength(); i++ )
@@ -247,12 +247,12 @@ public:
             nCount += xIndexAccess->getCount();
         }
         return nCount;
-    }	
+    }
 	virtual uno::Any SAL_CALL getByIndex( ::sal_Int32 Index ) throw (lang::IndexOutOfBoundsException, lang::WrappedTargetException, uno::RuntimeException )
 	{
 		if ( Index < 0 || Index >= getCount() )
 			throw lang::IndexOutOfBoundsException();
-	
+
         // FIXME: need to make a alphabetically sorted list of style names
         uno::Sequence< rtl::OUString > aStyleTypes = getStyleTypes();
         for( sal_Int32 i = 0; i < aStyleTypes.getLength(); i++ )
@@ -282,20 +282,20 @@ SwVbaStyles::SwVbaStyles( const uno::Reference< XHelperInterface >& xParent, con
     mxMSF.set( mxModel, uno::UNO_QUERY_THROW );
 }
 
-uno::Any 
+uno::Any
 SwVbaStyles::createCollectionObject(const uno::Any& aObject)
 {
     uno::Reference< beans::XPropertySet > xStyleProp( aObject, uno::UNO_QUERY_THROW );
     return uno::makeAny( uno::Reference< word::XStyle >( new SwVbaStyle( this, mxContext, xStyleProp ) ) );
 }
 
-uno::Type SAL_CALL 
+uno::Type SAL_CALL
 SwVbaStyles::getElementType() throw (uno::RuntimeException)
 {
 	return word::XStyle::static_type(0);
 }
 
-uno::Reference< container::XEnumeration > SAL_CALL 
+uno::Reference< container::XEnumeration > SAL_CALL
 SwVbaStyles::createEnumeration() throw (uno::RuntimeException)
 {
     throw uno::RuntimeException( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Not implemented") ), uno::Reference< uno::XInterface >() );

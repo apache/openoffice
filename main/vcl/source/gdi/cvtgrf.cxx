@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -71,7 +71,7 @@ sal_uLong GraphicConverter::ImplConvert( sal_uLong nInFormat, void* pInBuffer, s
 				SvMemoryStream aOStm( 64535, 64535 );
 
 				mpConvertData = new ConvertData( aGraphic, aOStm, nOutFormat );
-				
+
 				if( maFilterHdl.IsSet() && maFilterHdl.Call( mpConvertData ) )
 				{
 					nRetBufSize = aOStm.Seek( STREAM_SEEK_TO_END );
@@ -89,7 +89,7 @@ sal_uLong GraphicConverter::ImplConvert( sal_uLong nInFormat, void* pInBuffer, s
 
 			aIStm.SetBuffer( (char*) pInBuffer, nInBufSize, sal_False, nInBufSize );
 			mpConvertData = new ConvertData( Graphic(), aIStm, nInFormat );
-				
+
 			if( maFilterHdl.IsSet() && maFilterHdl.Call( mpConvertData ) )
 			{
 				SvMemoryStream	aOStm( 645535, 64535 );
@@ -135,7 +135,7 @@ sal_uLong GraphicConverter::Import( SvStream& rIStm, Graphic& rGraphic, sal_uLon
 	if( pCvt && pCvt->GetFilterHdl().IsSet() )
 	{
 		ConvertData	aData( rGraphic, rIStm, nFormat );
-		
+
 		if( pCvt->GetFilterHdl().Call( &aData ) )
 		{
 			rGraphic = aData.maGraphic;
@@ -144,7 +144,7 @@ sal_uLong GraphicConverter::Import( SvStream& rIStm, Graphic& rGraphic, sal_uLon
 		else if( rIStm.GetError() )
 			nRet = rIStm.GetError();
 	}
-	
+
 	return nRet;
 }
 
@@ -158,12 +158,12 @@ sal_uLong GraphicConverter::Export( SvStream& rOStm, const Graphic& rGraphic, sa
 	if( pCvt && pCvt->GetFilterHdl().IsSet() )
 	{
 		ConvertData	aData( rGraphic, rOStm, nFormat );
-		
+
 		if( pCvt->GetFilterHdl().Call( &aData ) )
 			nRet = ERRCODE_NONE;
 		else if( rOStm.GetError() )
 			nRet = rOStm.GetError();
 	}
-	
+
 	return nRet;
 }

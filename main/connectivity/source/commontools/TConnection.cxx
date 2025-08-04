@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -37,8 +37,8 @@ using namespace com::sun::star::beans;
 using namespace ::osl;
 
 //------------------------------------------------------------------------------
-OMetaConnection::OMetaConnection() 
-    : OMetaConnection_BASE(m_aMutex) 
+OMetaConnection::OMetaConnection()
+    : OMetaConnection_BASE(m_aMutex)
     , m_nTextEncoding(RTL_TEXTENCODING_MS_1252)
 {
 }
@@ -49,7 +49,7 @@ void OMetaConnection::disposing()
     m_xMetaData = WeakReference< XDatabaseMetaData>();
     for (OWeakRefArray::iterator i = m_aStatements.begin(); m_aStatements.end() != i; ++i)
     {
-        try 
+        try
         {
             Reference< XInterface > xStatement( i->get() );
             ::comphelper::disposeComponent( xStatement );

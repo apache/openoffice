@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -35,11 +35,11 @@ using namespace ::com::sun::star;
 extern "C" {
 
 /*
- *  Instances of this dummy object class are returned whenever we have to 
+ *  Instances of this dummy object class are returned whenever we have to
  *  create an AtkObject, but can't touch the OOo object anymore since it
  *  is already disposed.
  */
- 
+
 static AtkStateSet *
 noop_wrapper_ref_state_set( AtkObject * )
 {
@@ -75,12 +75,12 @@ atk_noop_object_wrapper_get_type(void)
             (GInstanceInitFunc) NULL,
             NULL
         } ;
-        
+
         type = g_type_register_static (ATK_TYPE_OBJECT, "OOoAtkNoOpObj", &typeInfo, (GTypeFlags)0) ;
   }
   return type;
 }
-    
+
 AtkObject*
 atk_noop_object_wrapper_new()
 {
@@ -109,22 +109,22 @@ static AtkObject*
 wrapper_factory_create_accessible( GObject *obj )
 {
     GtkWidget* parent_widget = gtk_widget_get_parent( GTK_WIDGET( obj ) );
-    
+
     // gail_container_real_remove_gtk tries to re-instantiate an accessible
     // for a widget that is about to vanish ..
     if( ! parent_widget )
         return atk_noop_object_wrapper_new();
-    
+
     GtkSalFrame* pFrame = GtkSalFrame::getFromWindow( GTK_WINDOW( parent_widget ) );
     g_return_val_if_fail( pFrame != NULL, NULL );
-       
+
     Window* pFrameWindow = pFrame->GetWindow();
     if( pFrameWindow )
     {
         Window* pWindow = pFrameWindow;
 
         // skip accessible objects already exposed by the frame objects
-        if( WINDOW_BORDERWINDOW == pWindow->GetType() ) 
+        if( WINDOW_BORDERWINDOW == pWindow->GetType() )
             pWindow = pFrameWindow->GetAccessibleChildWindow(0);
 
         if( pWindow )
@@ -143,7 +143,7 @@ wrapper_factory_create_accessible( GObject *obj )
             }
         }
     }
-    
+
     return NULL;
 }
 
@@ -170,9 +170,9 @@ wrapper_factory_get_type (void)
     t = g_type_register_static (
         ATK_TYPE_OBJECT_FACTORY, "OOoAtkObjectWrapperFactory",
         &tinfo, (GTypeFlags) 0);
-  }                                     
-                                        
-  return t;                                 
+  }
+
+  return t;
 }
 
 } // extern C

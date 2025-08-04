@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -482,7 +482,7 @@ void SdrTableObjImpl::DragEdge( bool mbHorizontal, int nEdge, sal_Int32 nOffset 
 				sal_Int32 nHeigth = mpLayouter->getRowHeight( nEdge );
 				nHeigth += nOffset;
 				Reference< XIndexAccess > xRows( mxTable->getRows(), UNO_QUERY_THROW );
-				Reference< XPropertySet > xRowSet( xRows->getByIndex( nEdge ), UNO_QUERY_THROW );			
+				Reference< XPropertySet > xRowSet( xRows->getByIndex( nEdge ), UNO_QUERY_THROW );
 				xRowSet->setPropertyValue( sSize, Any( nHeigth ) );
 			}
 		}
@@ -505,7 +505,7 @@ void SdrTableObjImpl::DragEdge( bool mbHorizontal, int nEdge, sal_Int32 nOffset 
 						nEdge--;
 					else
 						nEdge++;
-					
+
 					if( (bRTL && (nEdge >= 0)) || (!bRTL && (nEdge < mxTable->getColumnCount())) )
 					{
 						nWidth = mpLayouter->getColumnWidth( nEdge );
@@ -546,7 +546,7 @@ void SdrTableObjImpl::update()
 
 			if(maEditPos.mnCol >= getColumnCount())
 				maEditPos.mnCol = getColumnCount()-1;
-			
+
 			mpTableObj->setActiveCell( maEditPos );
 		}
 
@@ -554,7 +554,7 @@ void SdrTableObjImpl::update()
 
 		mpTableObj->aRect = mpTableObj->maLogicRect;
 		LayoutTable( mpTableObj->aRect, false, false );
-		
+
 		mpTableObj->SetRectsDirty();
 		mpTableObj->ActionChanged();
 		mpTableObj->BroadcastObjectChange();
@@ -1276,7 +1276,7 @@ SdrText* SdrTableObj::getText( sal_Int32 nIndex ) const
 /** returns the number of texts available for this object. */
 sal_Int32 SdrTableObj::getTextCount() const
 {
-	if( mpImpl->mxTable.is() ) 
+	if( mpImpl->mxTable.is() )
 	{
 		const sal_Int32 nColCount = mpImpl->getColumnCount();
 		const sal_Int32 nRowCount = mpImpl->getRowCount();
@@ -1440,7 +1440,7 @@ void SdrTableObj::SetModel(SdrModel* pNewModel)
 {
 	SdrModel* pOldModel = GetModel();
 	if( pNewModel != pOldModel )
-	{	
+	{
 		SdrTextObj::SetModel(pNewModel);
 
 		if( mpImpl )
@@ -2202,8 +2202,8 @@ void SdrTableObj::NbcResize(const Point& rRef, const Fraction& xFact, const Frac
 {
 	Rectangle aOldRect( maLogicRect );
 	ResizeRect(maLogicRect,rRef,xFact,yFact);
-	
-	aRect = maLogicRect; 
+
+	aRect = maLogicRect;
 	NbcAdjustTextFrameWidthAndHeight( maLogicRect.GetHeight() == aOldRect.GetHeight(), maLogicRect.GetWidth() == aOldRect.GetWidth() );
 	SetRectsDirty();
 }
@@ -2401,7 +2401,7 @@ void SdrTableObj::AddToHdlList(SdrHdlList& rHdlList) const
 		{
 			const sal_Int32 nRowHeight = (nRow == nRowCount) ? 0 : rLayouter.getRowHeight(nRow);
 			sal_Int32 nX = 0;
-			
+
 			for( sal_Int32 nCol = 0; nCol <= nColCount; ++nCol )
 			{
 				const sal_Int32 nColWidth = (nCol == nColCount) ? 0 : rLayouter.getColumnWidth(nCol);
@@ -2528,7 +2528,7 @@ bool SdrTableObj::applySpecialDrag(SdrDragStat& rDrag)
 	    case HDL_LWRGT:
         {
     		const Rectangle aNewRectangle(ImpDragCalcRect(rDrag));
-		    
+
             if(aNewRectangle != aRect)
             {
    			    NbcSetLogicRect(aNewRectangle);

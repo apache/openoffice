@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -503,7 +503,7 @@ uno::Reference< beans::XPropertySetInfo >  SwXFieldMaster::getPropertySetInfo(vo
 											throw( uno::RuntimeException )
 {
 	vos::OGuard  aGuard(Application::GetSolarMutex());
-    uno::Reference< beans::XPropertySetInfo >  aRef = 
+    uno::Reference< beans::XPropertySetInfo >  aRef =
                         aSwMapProvider.GetPropertySet(
                                 lcl_GetPropMapIdForFieldType( nResTypeId ) )->getPropertySetInfo();
 	return aRef;
@@ -616,7 +616,7 @@ void SwXFieldMaster::setPropertyValue( const OUString& rPropertyName,
 				}
 				break;
                 case RES_DBFLD :
-                {    
+                {
                     ::GetString( rValue, sParam3 );
                     pType = GetFldType();
                 }
@@ -1182,9 +1182,9 @@ uno::Reference< beans::XPropertySet >  SwXTextField::getTextFieldMaster(void) th
     if( m_bIsDescriptor && m_aFieldTypeClient.GetRegisteredIn() )
     {
         pType = (SwFieldType*)m_aFieldTypeClient.GetRegisteredIn();
-    }            
+    }
     else
-    {        
+    {
         if(!GetRegisteredIn())
             throw uno::RuntimeException();
         pType = m_pFmtFld->GetField()->GetTyp();
@@ -1626,8 +1626,8 @@ void SwXTextField::attachToRange(
                         static_cast< SwSetExpFieldType* >(pSetExpFld)->GetType() == nsSwGetSetExpType::GSE_STRING )
                     nSubType = nsSwGetSetExpType::GSE_STRING;
 				}
-				else 
-                    bSetGetExpFieldUninitialized = true; // #i82544# 
+				else
+                    bSetGetExpFieldUninitialized = true; // #i82544#
 
 				if(m_pProps->bBool2)
 					nSubType |= nsSwExtendedSubType::SUB_CMD;
@@ -1639,7 +1639,7 @@ void SwXTextField::attachToRange(
 				//TODO: SubType auswerten!
 				if(m_pProps->sPar4.Len())
 					((SwGetExpField*)pFld)->ChgExpStr(m_pProps->sPar4);
-				// #i82544# 
+				// #i82544#
                 if( bSetGetExpFieldUninitialized )
                     ((SwGetExpField*)pFld)->SetLateInitialization();
 			}
@@ -2240,7 +2240,7 @@ uno::Any SwXTextField::getPropertyValue(const OUString& rPropertyName)
 						m_pTextObject = new SwTextAPIObject( pObj );
 						m_pTextObject->acquire();
 					}
-					
+
 					uno::Reference < text::XText > xText( m_pTextObject );
 					aRet <<= xText;
 					break;

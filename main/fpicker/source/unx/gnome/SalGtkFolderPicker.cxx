@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -202,14 +202,14 @@ void SAL_CALL SalGtkFolderPicker::cancel() throw( uno::RuntimeException )
 {
 	OSL_ASSERT( m_pDialog != NULL );
 
-	// TODO m_pImpl->cancel();  
+	// TODO m_pImpl->cancel();
 }
 
 // -------------------------------------------------
 // XServiceInfo
 // -------------------------------------------------
 
-rtl::OUString SAL_CALL SalGtkFolderPicker::getImplementationName() 
+rtl::OUString SAL_CALL SalGtkFolderPicker::getImplementationName()
 	throw( uno::RuntimeException )
 {
 	return rtl::OUString::createFromAscii( FOLDER_PICKER_IMPL_NAME );
@@ -219,7 +219,7 @@ rtl::OUString SAL_CALL SalGtkFolderPicker::getImplementationName()
 //	XServiceInfo
 // -------------------------------------------------
 
-sal_Bool SAL_CALL SalGtkFolderPicker::supportsService( const rtl::OUString& ServiceName ) 
+sal_Bool SAL_CALL SalGtkFolderPicker::supportsService( const rtl::OUString& ServiceName )
 	throw( uno::RuntimeException )
 {
 	uno::Sequence <rtl::OUString> SupportedServicesNames = FolderPicker_getSupportedServiceNames();
@@ -235,7 +235,7 @@ sal_Bool SAL_CALL SalGtkFolderPicker::supportsService( const rtl::OUString& Serv
 //	XServiceInfo
 // -------------------------------------------------
 
-uno::Sequence<rtl::OUString> SAL_CALL SalGtkFolderPicker::getSupportedServiceNames() 
+uno::Sequence<rtl::OUString> SAL_CALL SalGtkFolderPicker::getSupportedServiceNames()
 	throw( uno::RuntimeException )
 {
 	return FolderPicker_getSupportedServiceNames();

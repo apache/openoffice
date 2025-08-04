@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -289,8 +289,8 @@ struct SerializerTest : public ::testing::Test
             {
                 ::rtl::OUString aIniUrl;
                 ASSERT_TRUE(
-                    osl_getFileURLFromSystemPath( 
-                        (sBaseDir+rtl::OUString::createFromAscii("unoxml_unittest_test.ini")).pData, 
+                    osl_getFileURLFromSystemPath(
+                        (sBaseDir+rtl::OUString::createFromAscii("unoxml_unittest_test.ini")).pData,
                         &aIniUrl.pData ) == osl_File_E_None ) << "Converting ini file to URL";
 
                 mxCtx = ::cppu::defaultBootstrap_InitialComponentContext(aIniUrl);
@@ -306,8 +306,8 @@ struct SerializerTest : public ::testing::Test
 
         mxErrHandler.set( new ErrorHandler() );
         mxDomBuilder.set( new CDocumentBuilder(
-                              uno::Reference< lang::XMultiServiceFactory >(  
-                                  mxCtx->getServiceManager(), 
+                              uno::Reference< lang::XMultiServiceFactory >(
+                                  mxCtx->getServiceManager(),
                                   uno::UNO_QUERY )));
         mxInStream.set( new SequenceInputStream(ByteSequence((sal_Int8*)validTestFile,
                                                              sizeof(validTestFile)/sizeof(*validTestFile))) );
@@ -318,12 +318,12 @@ struct SerializerTest : public ::testing::Test
 
         maRegisteredNamespaces.realloc(2);
         maRegisteredNamespaces[0] = beans::make_Pair(
-            rtl::OUString( 
+            rtl::OUString(
                 RTL_CONSTASCII_USTRINGPARAM(
                     "urn:oasis:names:tc:opendocument:xmlns:office:1.0") ),
             xml::sax::FastToken::NAMESPACE);
         maRegisteredNamespaces[1] = beans::make_Pair(
-            rtl::OUString( 
+            rtl::OUString(
                 RTL_CONSTASCII_USTRINGPARAM(
                     "http://www.w3.org/1999/xlink") ),
             2*xml::sax::FastToken::NAMESPACE);

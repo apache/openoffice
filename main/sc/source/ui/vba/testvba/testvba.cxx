@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "cppuhelper/bootstrap.hxx"
@@ -65,7 +65,7 @@ using ::rtl::OUString;
 
 using ::std::auto_ptr;
 
-const OUString EXTN = rtl::OUString::createFromAscii(".xls"); 
+const OUString EXTN = rtl::OUString::createFromAscii(".xls");
 
 OUString convertToURL( const OUString& rPath )
 {
@@ -112,16 +112,16 @@ private:
 	rtl::OUString msOutDirPath;
 protected:
 public:
-	TestVBA( const Reference< XComponentContext >&  _xContext, 
-		const Reference< XMultiComponentFactory >& _xMCF, 
-		const Reference< XComponentLoader >& _xCompLoader, 
-		const rtl::OUString& _outDirPath ) : mxContext( _xContext ), mxMCF( _xMCF ), 
-mxCompLoader( _xCompLoader ), msOutDirPath( convertToURL( _outDirPath  ) ) 
+	TestVBA( const Reference< XComponentContext >&  _xContext,
+		const Reference< XMultiComponentFactory >& _xMCF,
+		const Reference< XComponentLoader >& _xCompLoader,
+		const rtl::OUString& _outDirPath ) : mxContext( _xContext ), mxMCF( _xMCF ),
+mxCompLoader( _xCompLoader ), msOutDirPath( convertToURL( _outDirPath  ) )
 	{
 		mxSFA.set( mxMCF->createInstanceWithContext( rtl::OUString::createFromAscii( "com.sun.star.ucb.SimpleFileAccess" ), mxContext), uno::UNO_QUERY_THROW );
-	} 
+	}
 
-	rtl::OUString getLogLocation() throw (  beans::UnknownPropertyException,  lang::IllegalArgumentException, lang::WrappedTargetException,  uno::Exception ) 
+	rtl::OUString getLogLocation() throw (  beans::UnknownPropertyException,  lang::IllegalArgumentException, lang::WrappedTargetException,  uno::Exception )
 	{
 		rtl::OUString sLogLocation;
 		Reference< XPropertySet > pathSettings( mxMCF->createInstanceWithContext( rtl::OUString::createFromAscii( "com.sun.star.comp.framework.PathSettings" ), mxContext), uno::UNO_QUERY_THROW );
@@ -129,7 +129,7 @@ mxCompLoader( _xCompLoader ), msOutDirPath( convertToURL( _outDirPath  ) )
 		sLogLocation = sLogLocation.concat( rtl::OUString::createFromAscii( "/" ) ).concat( rtl::OUString::createFromAscii( "HelperAPI-test.log" ) );
 		return sLogLocation;
 	}
-	rtl::OUString getLogLocationWithName( OUString fileName ) throw (  beans::UnknownPropertyException,  lang::IllegalArgumentException, lang::WrappedTargetException,  uno::Exception ) 
+	rtl::OUString getLogLocationWithName( OUString fileName ) throw (  beans::UnknownPropertyException,  lang::IllegalArgumentException, lang::WrappedTargetException,  uno::Exception )
     {
         printf("%s\n", getenv("HOME") );
     	printf("file name %s\n", rtl::OUStringToOString( fileName, RTL_TEXTENCODING_UTF8 ).getStr() );
@@ -141,17 +141,17 @@ mxCompLoader( _xCompLoader ), msOutDirPath( convertToURL( _outDirPath  ) )
 		return sLogLocation;
     }
 
-	void init() 
+	void init()
 	{
 		// blow away previous logs?
 	}
 
-	void proccessDocument( const rtl::OUString& sUrl ) 
+	void proccessDocument( const rtl::OUString& sUrl )
 	{
-			if ( !mxSFA->isFolder( sUrl ) && sUrl.endsWithIgnoreAsciiCaseAsciiL( ".xls", 4 ) ) 
-				
+			if ( !mxSFA->isFolder( sUrl ) && sUrl.endsWithIgnoreAsciiCaseAsciiL( ".xls", 4 ) )
+
 			{
-				try 
+				try
 				{
 					OSL_TRACE( "processing %s",  rtl::OUStringToOString( sUrl, RTL_TEXTENCODING_UTF8 ).getStr() );
 					printf( "processing %s\n",  rtl::OUStringToOString( sUrl, RTL_TEXTENCODING_UTF8 ).getStr() );
@@ -162,17 +162,17 @@ mxCompLoader( _xCompLoader ), msOutDirPath( convertToURL( _outDirPath  ) )
 
                     rtl::OUString sfileUrl = convertToURL( sUrl );
 					printf( "try to get xDoc %s\n", rtl::OUStringToOString( sfileUrl, RTL_TEXTENCODING_UTF8 ).getStr() );
-					Reference< uno::XInterface > xDoc =	
+					Reference< uno::XInterface > xDoc =
 						mxCompLoader->loadComponentFromURL( sfileUrl, rtl::OUString::createFromAscii( "_blank" ), 0, propertyValues);
 					printf( "got xDoc\n" );
 
 					OUString logFileURL = convertToURL( getLogLocation() );
 					try
 					{
-						Reference< script::provider::XScriptProviderSupplier > xSupplier( xDoc, uno::UNO_QUERY_THROW ) ; 
-						if ( mxSFA->exists( logFileURL ) )	
+						Reference< script::provider::XScriptProviderSupplier > xSupplier( xDoc, uno::UNO_QUERY_THROW ) ;
+						if ( mxSFA->exists( logFileURL ) )
 							mxSFA->kill( logFileURL );
-					
+
 						printf("try to get the ScriptProvider\n");
 						Reference< script::provider::XScriptProvider > xProv = xSupplier->getScriptProvider();
 						printf("get the ScriptProvider\n");
@@ -196,9 +196,9 @@ mxCompLoader( _xCompLoader ), msOutDirPath( convertToURL( _outDirPath  ) )
 						Sequence< uno::Any > aArgs;
 						Sequence< sal_Int16 > aOutArgsIndex;
 						Sequence< uno::Any > aOutArgs;
-						
-						xScript->invoke(aArgs, aOutArgsIndex, aOutArgs); 
-		
+
+						xScript->invoke(aArgs, aOutArgsIndex, aOutArgs);
+
 						OUString fileName = sUrl.copy ( sUrl.lastIndexOf( '/' ) );
 						OUString newLocation = msOutDirPath + fileName.copy ( 0, fileName.lastIndexOf( EXTN )  ) + rtl::OUString::createFromAscii( ".log" );
                         try
@@ -216,7 +216,7 @@ mxCompLoader( _xCompLoader ), msOutDirPath( convertToURL( _outDirPath  ) )
 		    				OSL_TRACE("new logfile location is %s ", rtl::OUStringToOString( newLocation, RTL_TEXTENCODING_UTF8 ).getStr() );
 			    			printf("moved to new location\n");
                         }
-						
+
 					}
 					catch ( uno::Exception& e )
 					{
@@ -225,8 +225,8 @@ mxCompLoader( _xCompLoader ), msOutDirPath( convertToURL( _outDirPath  ) )
 
 					// interface is supported, otherwise use XComponent.dispose
 					Reference< util::XCloseable > xCloseable ( xDoc, uno::UNO_QUERY );
-		
-					if ( xCloseable.is() ) 
+
+					if ( xCloseable.is() )
 					{
 			    		printf("try to close\n");
                         // will close application. and only run a test case for 3.0
@@ -236,8 +236,8 @@ mxCompLoader( _xCompLoader ), msOutDirPath( convertToURL( _outDirPath  ) )
                         // so, for run all test cases, it should not close the document at this moment.
 						xCloseable->close(sal_False);
 			    		printf("closed\n");
-					} 
-					else 
+					}
+					else
 					{
 			    		printf("try to dispose\n");
 						Reference< XComponent > xComp( xDoc, uno::UNO_QUERY_THROW );
@@ -246,32 +246,32 @@ mxCompLoader( _xCompLoader ), msOutDirPath( convertToURL( _outDirPath  ) )
 			    		printf("disposed\n");
 					}
 				}
-				catch( uno::Exception& e ) 
+				catch( uno::Exception& e )
 				{
 					std::cerr << "Caught exception " << rtl::OUStringToOString( e.Message, RTL_TEXTENCODING_UTF8 ).getStr() << std::endl;
 				}
-		                
+
 			}
 		printf("complete processing %s\n", rtl::OUStringToOString( sUrl, RTL_TEXTENCODING_UTF8 ).getStr() );
 	}
 
-	void traverse( const rtl::OUString& sFileDirectory ) 
+	void traverse( const rtl::OUString& sFileDirectory )
 	{
-		rtl::OUString sFileDirectoryURL = convertToURL( sFileDirectory );	
-		if ( !mxSFA->isFolder( sFileDirectoryURL) ) 
+		rtl::OUString sFileDirectoryURL = convertToURL( sFileDirectory );
+		if ( !mxSFA->isFolder( sFileDirectoryURL) )
 		{
 			throw lang::IllegalArgumentException( rtl::OUString::createFromAscii( "not a directory: ").concat( sFileDirectoryURL ), Reference<uno::XInterface>(), 1 );
-		}	
+		}
 		// Getting all files and directories in the current directory
 		Sequence<OUString> entries = mxSFA->getFolderContents( sFileDirectoryURL, sal_False );
-	   	 
+
 		// Iterating for each file and directory
         printf( "Entries %d\n", (int)entries.getLength() );
-		for ( sal_Int32 i = 0; i < entries.getLength(); ++i ) 
+		for ( sal_Int32 i = 0; i < entries.getLength(); ++i )
 		{
             proccessDocument( entries[ i ] );
 		}
-	}	
+	}
 };
 
 void tryDispose( Reference< uno::XInterface > xIF, const char* sComp )
@@ -282,7 +282,7 @@ void tryDispose( Reference< uno::XInterface > xIF, const char* sComp )
 		try
 		{
 			xComponent->dispose();
-		}	
+		}
 		catch( uno::Exception& e )
 		{
 			std::cerr << "tryDispose caught exception " <<rtl::OUStringToOString( e.Message, RTL_TEXTENCODING_UTF8 ).getStr() << " while disposing " <<  sComp << std::endl;

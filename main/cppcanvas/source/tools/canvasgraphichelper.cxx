@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,7 +53,7 @@ namespace cppcanvas
             mxGraphicDevice()
         {
             OSL_ENSURE( mpCanvas.get() != NULL &&
-                        mpCanvas->getUNOCanvas().is(), 
+                        mpCanvas->getUNOCanvas().is(),
                         "CanvasGraphicHelper::CanvasGraphicHelper: no valid canvas" );
 
             if( mpCanvas.get() != NULL &&
@@ -69,11 +69,11 @@ namespace cppcanvas
         {
             ::canvas::tools::setRenderStateTransform( maRenderState, rMatrix );
         }
-        
+
         ::basegfx::B2DHomMatrix CanvasGraphicHelper::getTransformation() const
         {
             ::basegfx::B2DHomMatrix aMatrix;
-            return ::canvas::tools::getRenderStateTransform( aMatrix, 
+            return ::canvas::tools::getRenderStateTransform( aMatrix,
                                                              maRenderState );
         }
 
@@ -113,13 +113,13 @@ namespace cppcanvas
 
         void CanvasGraphicHelper::setRGBAColor( Color::IntSRGBA aColor )
         {
-            maRenderState.DeviceColor = tools::intSRGBAToDoubleSequence( mxGraphicDevice, 
+            maRenderState.DeviceColor = tools::intSRGBAToDoubleSequence( mxGraphicDevice,
                                                                          aColor );
         }
 
         Color::IntSRGBA CanvasGraphicHelper::getRGBAColor() const
         {
-            return tools::doubleSequenceToIntSRGBA( mxGraphicDevice, 
+            return tools::doubleSequenceToIntSRGBA( mxGraphicDevice,
                                                     maRenderState.DeviceColor );
         }
 
@@ -142,6 +142,6 @@ namespace cppcanvas
         {
             return mxGraphicDevice;
         }
-        
+
     }
 }

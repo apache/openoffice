@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -75,7 +75,7 @@ namespace oox { namespace ppt {
 		{ "slide(fromTop)", ::com::sun::star::animations::TransitionType::SLIDEWIPE, ::com::sun::star::animations::TransitionSubType::FROMTOP, sal_True },
 		{ "slide(fromRight)", ::com::sun::star::animations::TransitionType::SLIDEWIPE, ::com::sun::star::animations::TransitionSubType::FROMRIGHT, sal_True },
 		{ "slide(fromLeft)", ::com::sun::star::animations::TransitionType::SLIDEWIPE, ::com::sun::star::animations::TransitionSubType::FROMLEFT, sal_True },
-		{ "slide(fromBottom)", ::com::sun::star::animations::TransitionType::SLIDEWIPE, ::com::sun::star::animations::TransitionSubType::FROMBOTTOM, sal_True }, 
+		{ "slide(fromBottom)", ::com::sun::star::animations::TransitionType::SLIDEWIPE, ::com::sun::star::animations::TransitionSubType::FROMBOTTOM, sal_True },
 		{ "dissolve", ::com::sun::star::animations::TransitionType::DISSOLVE, ::com::sun::star::animations::TransitionSubType::DEFAULT, sal_True },
 		{ "image", ::com::sun::star::animations::TransitionType::DISSOLVE, ::com::sun::star::animations::TransitionSubType::DEFAULT, sal_True }, // TODO
 		{ NULL, 0, 0, sal_False }
@@ -84,15 +84,15 @@ namespace oox { namespace ppt {
 	const transition* transition::find( const OUString& rName )
 	{
 		const transition* p = gTransitions;
-		
+
 		while( p->mpName )
 		{
 			if( rName.compareToAscii( p->mpName ) == 0 )
 				return p;
-			
+
 			p++;
 		}
-		
+
 		return NULL;
 	}
 
@@ -100,14 +100,14 @@ namespace oox { namespace ppt {
 	bool convertMeasure( OUString& rString )
 	{
 		bool bRet = false;
-		
+
 		const sal_Char* pSource[] = { "ppt_x", "ppt_y", "ppt_w", "ppt_h", NULL };
 		const sal_Char* pDest[] = { "x", "y", "width", "height", NULL };
 		sal_Int32 nIndex = 0;
-		
+
 		const sal_Char** ps = pSource;
 		const sal_Char** pd = pDest;
-		
+
 		while( *ps )
 		{
 			const OUString aSearch( OUString::createFromAscii( *ps ) );
@@ -119,7 +119,7 @@ namespace oox { namespace ppt {
 					nIndex--;
 					nLength++;
 				}
-				
+
 				const OUString aNew( OUString::createFromAscii( *pd ) );
 				rString = rString.replaceAt( nIndex, nLength, aNew );
 				nIndex += aNew.getLength();
@@ -128,9 +128,9 @@ namespace oox { namespace ppt {
 			ps++;
 			pd++;
 		}
-		
+
 		return bRet;
 	}
 
-	
+
 } }

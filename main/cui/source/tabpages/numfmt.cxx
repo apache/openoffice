@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -268,7 +268,7 @@ SvxNumberFormatTabPage::SvxNumberFormatTabPage( Window*				pParent,
         aFtLeadZeroes   ( this, CUI_RES( FT_LEADZEROES ) ),
         aEdLeadZeroes   ( this, CUI_RES( ED_LEADZEROES ) ),
         aBtnThousand    ( this, CUI_RES( BTN_THOUSAND ) ),
-        
+
         aFtEdFormat     ( this, CUI_RES( FT_EDFORMAT ) ),
 		aEdFormat		( this, CUI_RES( ED_FORMAT ) ),
         aIbAdd          ( this, CUI_RES( IB_ADD       ) ),
@@ -276,11 +276,11 @@ SvxNumberFormatTabPage::SvxNumberFormatTabPage( Window*				pParent,
         aIbRemove       ( this, CUI_RES( IB_REMOVE    ) ),
         aFtComment      ( this, CUI_RES( FT_COMMENT ) ),
         aEdComment      ( this, CUI_RES( ED_COMMENT ) ),
-        
+
         pNumItem        ( NULL ),
         pNumFmtShell    ( NULL ),
         nInitFormat     ( ULONG_MAX ),
-        
+
         sAutomaticEntry ( THIS_CUI_RES( STR_AUTO_ENTRY)),
         pLastActivWindow( NULL )
 {

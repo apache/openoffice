@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -73,7 +73,7 @@ namespace rptui
         }
         return m_nTextColor;
     }
-    
+
 	//--------------------------------------------------------------------
     FormattedFieldBeautifier::~FormattedFieldBeautifier()
     {
@@ -122,7 +122,7 @@ namespace rptui
     	    DBG_UNHANDLED_EXCEPTION();
         }
     }
-    
+
     // -----------------------------------------------------------------------------
     void FormattedFieldBeautifier::setPlaceholderText( const uno::Reference< awt::XVclWindowPeer >& _xVclWindowPeer, const ::rtl::OUString& _rText )
     {
@@ -141,7 +141,7 @@ namespace rptui
         aFontDescriptorStructure.Slant = ::com::sun::star::awt::FontSlant_ITALIC;
         _xVclWindowPeer->setProperty(PROPERTY_FONTDESCRIPTOR, uno::makeAny(aFontDescriptorStructure));
     }
-    
+
     // -----------------------------------------------------------------------------
     void FormattedFieldBeautifier::notifyPropertyChange( const beans::PropertyChangeEvent& _rEvent )
     {
@@ -151,7 +151,7 @@ namespace rptui
 
         setPlaceholderText( _rEvent.Source );
     }
-    
+
     // -----------------------------------------------------------------------------
     void FormattedFieldBeautifier::handle( const uno::Reference< uno::XInterface >& _rxElement )
     {
@@ -163,17 +163,17 @@ namespace rptui
     {
         handle( _rxElement );
     }
-    
+
     // -----------------------------------------------------------------------------
     uno::Reference<awt::XVclWindowPeer> FormattedFieldBeautifier::getVclWindowPeer(const uno::Reference< report::XReportComponent >& _xComponent) throw(uno::RuntimeException)
-    {        
+    {
         uno::Reference<awt::XVclWindowPeer> xVclWindowPeer;
 
         ::boost::shared_ptr<OReportModel> pModel = const_cast< OReportController& >( m_rReportController ).getSdrModel();
-            
+
         uno::Reference<report::XSection> xSection(_xComponent->getSection());
         if ( xSection.is() )
-        {            
+        {
             OReportPage *pPage = pModel->getPage(xSection);
             sal_uLong nIndex = pPage->getIndexOf(_xComponent);
             if (nIndex < pPage->GetObjCount() )

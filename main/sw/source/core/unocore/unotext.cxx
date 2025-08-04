@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1885,26 +1885,26 @@ void SwXText::Impl::ConvertCell(
     {
         throw lang::IllegalArgumentException();
     }
-    
-    SwNodeRange aTmpRange(aStartCellPam.Start()->nNode, 
+
+    SwNodeRange aTmpRange(aStartCellPam.Start()->nNode,
                           aEndCellPam.End()->nNode);
-    SwNodeRange * pCorrectedRange = 
+    SwNodeRange * pCorrectedRange =
         m_pDoc->GetNodes().ExpandRangeForTableBox(aTmpRange);
-    
+
     if (pCorrectedRange != NULL)
     {
         SwPaM aNewStartPaM(pCorrectedRange->aStart, 0);
         aStartCellPam = aNewStartPaM;
-        
-        xub_StrLen nEndLen = 0;                
+
+        xub_StrLen nEndLen = 0;
         SwTxtNode * pTxtNode = pCorrectedRange->aEnd.GetNode().GetTxtNode();
         if (pTxtNode != NULL)
             nEndLen = pTxtNode->Len();
-        
+
         SwPaM aNewEndPaM(pCorrectedRange->aEnd, nEndLen);
         aEndCellPam = aNewEndPaM;
     }
-    
+
     /** check the nodes between start and end
         it is allowed to have pairs of StartNode/EndNodes
      */
@@ -2187,12 +2187,12 @@ lcl_ApplyCellProperties(
                     xCellText->createTextCursor();
                 xCellCurs->gotoStart( sal_False );
                 xCellCurs->gotoEnd( sal_True );
-                const uno::Reference< beans::XPropertyState > 
+                const uno::Reference< beans::XPropertyState >
                     xCellTextPropState(xCellCurs, uno::UNO_QUERY);
                 const beans::PropertyState state = xCellTextPropState->getPropertyState(rName);
                 if (state == beans::PropertyState_DEFAULT_VALUE)
                 {
-                    const uno::Reference< beans::XPropertySet > 
+                    const uno::Reference< beans::XPropertySet >
                         xCellTextProps(xCellCurs, uno::UNO_QUERY);
                     xCellTextProps->setPropertyValue(rName, rValue);
                 }

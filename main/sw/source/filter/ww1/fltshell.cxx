@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -461,7 +461,7 @@ static sal_Bool IterateNumrulePiece( const SwNodeIndex& rEnd,
 //***This function will check whether there is existing individual attribute positon for 0x0D***/
 //The check will happen only once for a paragraph during loading
 bool SwFltControlStack::HasSdOD()
-{	
+{
 	sal_uInt16 nCnt = static_cast< sal_uInt16 >(Count());
 
 	SwFltStackEntry* pEntry = 0;
@@ -567,12 +567,12 @@ void SwFltControlStack::SetAttrInDoc(const SwPosition& rTmpPos, SwFltStackEntry*
                 pDoc->InsertPoolItem(aRegion, SwFmtFld(aFld), 0);
                 MoveAttrs( *(aRegion.GetPoint()) );
             }
-            if ( ( !IsFlagSet(HYPO) || IsFlagSet(BOOK_AND_REF) ) && 
+            if ( ( !IsFlagSet(HYPO) || IsFlagSet(BOOK_AND_REF) ) &&
                  !pEntry->bConsumedByField )
             {
                 MakeBookRegionOrPoint(pEntry, pDoc, aRegion, sal_True);
                 // #120879# - create a cross reference heading bookmark if appropriate.
-                const IDocumentMarkAccess::MarkType eBookmarkType = 
+                const IDocumentMarkAccess::MarkType eBookmarkType =
                     ( pB->IsTOCBookmark() &&
                       IDocumentMarkAccess::IsLegalPaMForCrossRefHeadingBookmark( aRegion ) )
                     ? IDocumentMarkAccess::CROSSREF_HEADING_BOOKMARK
@@ -675,14 +675,14 @@ void SwFltControlStack::SetAttrInDoc(const SwPosition& rTmpPos, SwFltStackEntry*
 			}
 				sal_Int32 nStart = pEntry->GetStartCP();
 				sal_Int32 nEnd = pEntry->GetEndCP();
-				if (nStart != -1 && nEnd != -1 && nEnd >= nStart )					
+				if (nStart != -1 && nEnd != -1 && nEnd >= nStart )
 				{
 					pEntry->SetIsParaEnd( IsParaEndInCPs(nStart,nEnd,bHasSdOD) );
 				}
 			//End
 			if (pEntry->MakeRegion(pDoc, aRegion, sal_False))
 	        {
-				//Modify here for #119405, by easyfan, 2012-05-24			
+				//Modify here for #119405, by easyfan, 2012-05-24
 				//Refined 2012-08-16
 				if (pEntry->IsParaEnd())
 				{
@@ -692,7 +692,7 @@ void SwFltControlStack::SetAttrInDoc(const SwPosition& rTmpPos, SwFltStackEntry*
 					pDoc->InsertPoolItem(aRegion, *pEntry->pAttr, 0);
 				}
 				//End
-	        }	
+	        }
 		}
 		break;
 	}

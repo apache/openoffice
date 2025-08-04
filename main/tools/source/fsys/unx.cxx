@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -38,7 +38,7 @@
 #include <sys/mntctl.h>
 #include <sys/vmount.h>
 extern "C" int mntctl( int cmd, size_t size, char* buf );
-#elif defined(NETBSD) 
+#elif defined(NETBSD)
 #include <sys/mount.h>
 #elif defined(FREEBSD) || defined(MACOSX)
 #elif defined DECUNIX
@@ -209,7 +209,7 @@ static sal_Bool GetMountEntry(dev_t dev, struct mymnttab *mytab)
 |*
 |*    DirEntry::IsCaseSensitive()
 |*
-|*    Beschreibung      
+|*    Beschreibung
 |*    Ersterstellung    TPF 25.02.1999
 |*    Letzte Aenderung  TPF 25.02.1999
 |*
@@ -339,8 +339,8 @@ String DirEntry::GetVolume() const
 	}
 	mymnttab &rMnt = mymnt::get();
 	return ((buf.st_dev == rMnt.mountdevice ||
-				GetMountEntry(buf.st_dev, &rMnt)) ? 
-				    String(rMnt.mountspecial, osl_getThreadTextEncoding()) : 
+				GetMountEntry(buf.st_dev, &rMnt)) ?
+				    String(rMnt.mountspecial, osl_getThreadTextEncoding()) :
 					String());
 }
 
@@ -360,8 +360,8 @@ DirEntry DirEntry::GetDevice() const
 	}
 	mymnttab &rMnt = mymnt::get();
 	return ((buf.st_dev == rMnt.mountdevice ||
-				GetMountEntry(buf.st_dev, &rMnt)) ? 
-				    String( rMnt.mountpoint, osl_getThreadTextEncoding()) : 
+				GetMountEntry(buf.st_dev, &rMnt)) ?
+				    String( rMnt.mountpoint, osl_getThreadTextEncoding()) :
 					String());
 }
 

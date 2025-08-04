@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -66,7 +66,7 @@ namespace
 // ctor
 //------------------------------------------------------------------------
 
-CMimeContentTypeFactory::CMimeContentTypeFactory( const Reference< XMultiServiceFactory >& rSrvMgr ) :	
+CMimeContentTypeFactory::CMimeContentTypeFactory( const Reference< XMultiServiceFactory >& rSrvMgr ) :
 	m_SrvMgr( rSrvMgr )
 {
 }
@@ -86,7 +86,7 @@ Reference< XMimeContentType > CMimeContentTypeFactory::createMimeContentType( co
 // XServiceInfo
 // -------------------------------------------------
 
-OUString SAL_CALL CMimeContentTypeFactory::getImplementationName(  ) 
+OUString SAL_CALL CMimeContentTypeFactory::getImplementationName(  )
 	throw( RuntimeException )
 {
 	return OUString::createFromAscii( MIMECONTENTTYPEFACTORY_IMPL_NAME );
@@ -96,7 +96,7 @@ OUString SAL_CALL CMimeContentTypeFactory::getImplementationName(  )
 //	XServiceInfo
 // -------------------------------------------------
 
-sal_Bool SAL_CALL CMimeContentTypeFactory::supportsService( const OUString& ServiceName ) 
+sal_Bool SAL_CALL CMimeContentTypeFactory::supportsService( const OUString& ServiceName )
 	throw( RuntimeException )
 {
 	Sequence < OUString > SupportedServicesNames = MimeContentTypeFactory_getSupportedServiceNames();
@@ -112,7 +112,7 @@ sal_Bool SAL_CALL CMimeContentTypeFactory::supportsService( const OUString& Serv
 //	XServiceInfo
 // -------------------------------------------------
 
-Sequence< OUString > SAL_CALL CMimeContentTypeFactory::getSupportedServiceNames( ) 
+Sequence< OUString > SAL_CALL CMimeContentTypeFactory::getSupportedServiceNames( )
 	throw( RuntimeException )
 {
 	return MimeContentTypeFactory_getSupportedServiceNames( );

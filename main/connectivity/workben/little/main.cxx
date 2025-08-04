@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -60,7 +60,7 @@ void _cdecl main( int argc, char * argv[] )
 	::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XDriver>		m_xDriver;
 
 	try{
-		Reference< ::com::sun::star::lang::XMultiServiceFactory > xFac = 
+		Reference< ::com::sun::star::lang::XMultiServiceFactory > xFac =
 				createRegistryServiceFactory(OUString::createFromAscii("g:\\office50\\program\\applicat.rdb"),OUString());
 		if(!xFac.is())
 			return;
@@ -68,7 +68,7 @@ void _cdecl main( int argc, char * argv[] )
 		m_xDriver = Reference<XDriver>(xFac->createInstance(OUString::createFromAscii("com.sun.star.sdbc.driver.dbase.Driver")),UNO_QUERY);
 		if(m_xDriver.is())
 		{
-			
+
 			Sequence<PropertyValue> aValue;
 	//		aValue.getArray()[0] = PropertyValue( OUString::createFromAscii("user"),0,makeAny(OUString::createFromAscii("TEST1")),PropertyState_DIRECT_VALUE);
 	//		aValue.getArray()[1] = PropertyValue( OUString::createFromAscii("password"),0,makeAny(OUString::createFromAscii("TEST1")),PropertyState_DIRECT_VALUE);

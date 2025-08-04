@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -133,17 +133,17 @@ public:
 
     struct AsyncExecuteInfo
     {
-        AsyncExecuteInfo( AsyncExecuteCmd eCmd, uno::Reference< datatransfer::clipboard::XClipboardListener > xThis, SfxClipboardChangeListener* pListener ) : 
+        AsyncExecuteInfo( AsyncExecuteCmd eCmd, uno::Reference< datatransfer::clipboard::XClipboardListener > xThis, SfxClipboardChangeListener* pListener ) :
             m_eCmd( eCmd ), m_xThis( xThis ), m_pListener( pListener ) {}
 
         AsyncExecuteCmd m_eCmd;
         uno::Reference< datatransfer::clipboard::XClipboardListener > m_xThis;
         SfxClipboardChangeListener* m_pListener;
     };
-    
+
 private:
     SfxViewShell* m_pViewShell;
-    uno::Reference< datatransfer::clipboard::XClipboardNotifier > m_xClpbrdNtfr; 
+    uno::Reference< datatransfer::clipboard::XClipboardNotifier > m_xClpbrdNtfr;
     uno::Reference< lang::XComponent > m_xCtrl;
 
     DECL_STATIC_LINK( SfxClipboardChangeListener, AsyncExecuteHdl_Impl, AsyncExecuteInfo* );
@@ -195,7 +195,7 @@ IMPL_STATIC_LINK_NOINSTANCE( SfxClipboardChangeListener, AsyncExecuteHdl_Impl, A
         }
     }
     delete pAsyncExecuteInfo;
-    
+
     return 0;
 }
 
@@ -205,7 +205,7 @@ throw ( uno::RuntimeException )
     // Either clipboard or ViewShell is going to be destroyed -> no interest in listening anymore
     uno::Reference< lang::XComponent > xCtrl( m_xCtrl );
     uno::Reference< datatransfer::clipboard::XClipboardNotifier > xNotify( m_xClpbrdNtfr );
-    
+
     uno::Reference< datatransfer::clipboard::XClipboardListener > xThis( static_cast< datatransfer::clipboard::XClipboardListener* >( this ));
     if ( xCtrl.is() )
         xCtrl->removeEventListener( uno::Reference < lang::XEventListener > ( static_cast < lang::XEventListener* >( this )));

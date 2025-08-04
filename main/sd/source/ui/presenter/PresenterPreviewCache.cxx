@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -368,7 +368,7 @@ void PresenterPreviewCache::PresenterCacheContext::NotifyPreviewCreation (
     const Bitmap& rPreview)
 {
     (void)rPreview;
-    
+
     if ( ! mxSlides.is())
         return;
     const sal_Int32 nCount(mxSlides->getCount());
@@ -423,10 +423,10 @@ const SdrPage* PresenterPreviewCache::PresenterCacheContext::GetPage (CacheKey a
     PresenterPreviewCache::PresenterCacheContext::GetEntryList (bool bVisible)
 {
     ::boost::shared_ptr<std::vector<CacheKey> > pKeys (new std::vector<CacheKey>());
-    
+
     if ( ! mxSlides.is())
         return pKeys;
-    
+
     const sal_Int32 nFirstIndex (bVisible ? mnFirstVisibleSlideIndex : 0);
     const sal_Int32 nLastIndex (bVisible ? mnLastVisibleSlideIndex : mxSlides->getCount()-1);
 
@@ -450,11 +450,11 @@ sal_Int32 PresenterPreviewCache::PresenterCacheContext::GetPriority (CacheKey aK
         return 0;
 
     const sal_Int32 nCount (mxSlides->getCount());
-    
+
     for (sal_Int32 nIndex=mnFirstVisibleSlideIndex; nIndex<=mnLastVisibleSlideIndex; ++nIndex)
         if (aKey == GetPage(nIndex))
             return -nCount-1+nIndex;
-    
+
     for (sal_Int32 nIndex=0; nIndex<=nCount; ++nIndex)
         if (aKey == GetPage(nIndex))
             return nIndex;

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -278,7 +278,7 @@ ElementConfigPtr ConfigHandler::importCaseConfig( const Reference< XAttributeLis
 {
 	ElementConfigPtr pElementConfig( new CaseElementConfig( getAttribute( xAttribs, "value" ) ) );
 	addElement( pElementConfig );
-	return pElementConfig;	
+	return pElementConfig;
 }
 
 void SAL_CALL ConfigHandler::endElement(const OUString& aName) throw( SAXException, RuntimeException )
@@ -388,7 +388,7 @@ rtl::OUString ElementConfig::dump_hex( SvStream& rStream, sal_Size& nLength )
 		unsigned int i = c;
 		i &= 0xff;
 		sprintf( buffer, "%02x ", i );
-		aHex += OUString::createFromAscii( buffer ); 
+		aHex += OUString::createFromAscii( buffer );
 
 		if( !isprint( c ) )
 			c = '.';

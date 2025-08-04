@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -114,7 +114,7 @@ const SfxItemPropertyMapEntry* ImplGetSvxUnoOutlinerTextCursorPropertyMap()
 const SfxItemPropertySet* ImplGetSvxUnoOutlinerTextCursorSfxPropertySet()
 {
     static SfxItemPropertySet aTextCursorSfxPropertySet( ImplGetSvxUnoOutlinerTextCursorPropertyMap() );
-    return &aTextCursorSfxPropertySet; 
+    return &aTextCursorSfxPropertySet;
 }
 
 // ====================================================================
@@ -1347,7 +1347,7 @@ void SAL_CALL SvxUnoTextRangeBase::setAllPropertiesToDefault(  ) throw (uno::Run
         PropertyEntryVector_t::const_iterator aIt = aEntries.begin();
         while( aIt != aEntries.end() )
         {
-            _setPropertyToDefault( pForwarder, &(*aIt), -1 ); 
+            _setPropertyToDefault( pForwarder, &(*aIt), -1 );
             ++aIt;
         }
     }
@@ -2204,9 +2204,9 @@ uno::Reference< text::XTextRange > SAL_CALL SvxUnoTextBase::appendParagraph(
         // set properties for new appended (now last) paragraph
         ESelection aSel( nParaCount, 0, nParaCount, 0 );
         SfxItemSet aItemSet( *pTextForwarder->GetEmptyItemSetPtr() );
-        SvxPropertyValuesToItemSet( aItemSet, rCharAndParaProps, 
-                            ImplGetSvxUnoOutlinerTextCursorSfxPropertySet(), 
-                            pTextForwarder, 
+        SvxPropertyValuesToItemSet( aItemSet, rCharAndParaProps,
+                            ImplGetSvxUnoOutlinerTextCursorSfxPropertySet(),
+                            pTextForwarder,
                             nParaCount );
         pTextForwarder->QuickSetAttribs( aItemSet, aSel );
         pEditSource->UpdateData();
@@ -2236,7 +2236,7 @@ uno::Reference< text::XTextRange > SAL_CALL SvxUnoTextBase::finishParagraph(
         sal_uInt32 nPara = nParaCount - 1;
         ESelection aSel( nPara, 0, nPara, 0 );
         SfxItemSet aItemSet( *pTextForwarder->GetEmptyItemSetPtr() );
-        SvxPropertyValuesToItemSet( aItemSet, rCharAndParaProps, 
+        SvxPropertyValuesToItemSet( aItemSet, rCharAndParaProps,
                 ImplGetSvxUnoOutlinerTextCursorSfxPropertySet(), pTextForwarder, nPara );
 		pTextForwarder->QuickSetAttribs( aItemSet, aSel );
         pEditSource->UpdateData();
@@ -2274,7 +2274,7 @@ uno::Reference< text::XTextRange > SAL_CALL SvxUnoTextBase::appendTextPortion(
         pEditSource->UpdateData();
 
         SfxItemSet aItemSet( *pTextForwarder->GetEmptyItemSetPtr() );
-        SvxPropertyValuesToItemSet( aItemSet, rCharAndParaProps, 
+        SvxPropertyValuesToItemSet( aItemSet, rCharAndParaProps,
                 ImplGetSvxTextPortionSfxPropertySet(), pTextForwarder, nPara );
 		pTextForwarder->QuickSetAttribs( aItemSet, aSel );
 		SvxUnoTextRange* pRange = new SvxUnoTextRange( *this );
@@ -2669,11 +2669,11 @@ void SvxDummyTextSource::GetLineBoundaries( /*out*/sal_uInt16 &rStart, /*out*/sa
 {
     rStart = rEnd = 0;
 }
-    
+
 sal_uInt16 SvxDummyTextSource::GetLineNumberAtIndex( sal_uInt32 /*nPara*/, sal_uInt16 /*nIndex*/ ) const
 {
     return 0;
-}    
+}
 
 sal_Bool SvxDummyTextSource::QuickFormatDoc( sal_Bool )
 {

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -109,7 +109,7 @@ SdNavigatorWin::SdNavigatorWin(
     maToolbox.SetItemBits(
         TBI_SHAPE_FILTER,
         maToolbox.GetItemBits(TBI_SHAPE_FILTER) | TIB_DROPDOWNONLY);
-        
+
     // TreeListBox
     // set position below toolbox
     long nListboxYPos = maToolbox.GetPosPixel().Y() + maToolbox.GetSizePixel().Height() + 4;
@@ -218,7 +218,7 @@ void SdNavigatorWin::InitTreeLB( const SdDrawDocument* pDoc )
         maToolbox.EnableItem(TBI_SHAPE_FILTER, sal_False);
     else
         maToolbox.EnableItem(TBI_SHAPE_FILTER);
-    
+
 	if( !maTlbObjects.IsEqualToDoc( pDoc ) )
 	{
 		String aDocName = pDocShell->GetMedium()->GetName();
@@ -266,7 +266,7 @@ NavigatorDragType SdNavigatorWin::GetNavigatorDragType()
 }
 
 // -----------------------------------------------------------------------
-//Solution: Get  SdDrawDocShell 
+//Solution: Get  SdDrawDocShell
 sd::DrawDocShell* SdNavigatorWin::GetDrawDocShell( const SdDrawDocument* pDoc )
 {
 	if( !pDoc )
@@ -385,7 +385,7 @@ IMPL_LINK( SdNavigatorWin, DropdownClickToolBoxHdl, ToolBox*, pBox )
 			delete pMenu;
 		}
 		break;
-        
+
 		case TBI_SHAPE_FILTER:
 		{
 			PopupMenu *pMenu = new PopupMenu;
@@ -581,7 +581,7 @@ IMPL_LINK( SdNavigatorWin, ShapeFilterCallback, Menu *, pMenu )
             }
         }
 	}
-    
+
 	return 0;
 }
 

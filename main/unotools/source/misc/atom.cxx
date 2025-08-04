@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -71,7 +71,7 @@ void AtomProvider::getAll( ::std::list< ::utl::AtomDescription >& atoms )
 void AtomProvider::getRecent( int atom, ::std::list< ::utl::AtomDescription >& atoms )
 {
 	atoms.clear();
-	
+
 	::std::hash_map< ::rtl::OUString, int, ::rtl::OUStringHash >::const_iterator it = m_aAtomMap.begin();
 
 	::utl::AtomDescription aDesc;
@@ -91,7 +91,7 @@ const ::rtl::OUString& AtomProvider::getString( int nAtom ) const
 {
 	static ::rtl::OUString aEmpty;
 	::std::hash_map< int, ::rtl::OUString, ::std::hash< int > >::const_iterator it = m_aStringMap.find( nAtom );
-	
+
 	return it == m_aStringMap.end() ? aEmpty : it->second;
 }
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "precompiled_sfx2.hxx"
@@ -86,7 +86,7 @@ public:
              iCellEnd((CellData).end());                        \
          I!=iCellEnd;                                           \
          ++I)
-    
+
 
 //===== GridLayouter ==========================================================
 
@@ -138,7 +138,7 @@ void GridLayouter::Layout (void)
 void GridLayouter::Paint (const Rectangle& rBox)
 {
     (void)rBox;
-    
+
     mpImplementation->Paint();
 }
 
@@ -213,7 +213,7 @@ CellDescriptor& CellDescriptor::SetFixedWidth (void)
     }
     mnMinimumWidth = nMaxControlWidth;
     mnMaximumWidth = nMaxControlWidth;
-    
+
     return *this;
 }
 
@@ -315,7 +315,7 @@ CellDescriptor& GridLayouter::Implementation::GetCell (
     CellData& rCellData (rColumn[nRow]);
     if (rCellData.size() <= static_cast<size_t>(nVariant))
         rCellData.resize(nVariant+1);
-    
+
     return rCellData[nVariant];
 }
 
@@ -332,7 +332,7 @@ void GridLayouter::Implementation::Layout (void)
     }
 
     const Size aParentSize (mrParent.GetSizePixel());
-    
+
     // Determine the total column weight.
     sal_Int32 nTotalColumnWeight (0);
     ForAllColumnDescriptors(iDescriptor)
@@ -354,7 +354,7 @@ void GridLayouter::Implementation::Layout (void)
             *iColumn,
             nX,
             nColumnIndex);
-            
+
         nX += maColumnDescriptors[nColumnIndex].GetWidth();
     }
 }
@@ -406,7 +406,7 @@ void GridLayouter::Implementation::LayoutColumn(
             if (iCellDescriptor->GetMaximumWidth() > 0)
                 if (nCellWidth > iCellDescriptor->GetMaximumWidth())
                     nCellWidth = iCellDescriptor->GetMaximumWidth();
-            
+
             pControl->SetPosSizePixel(
                 nLeft + iCellDescriptor->GetOffset(),
                 0,
@@ -442,7 +442,7 @@ void GridLayouter::Implementation::DistributeWidth (const sal_Int32 nTotalWidth)
         else
             nTotalColumnWeight += rDescriptor.GetWeight();
     }
-        
+
     sal_Int32 nRemainingWidth (nTotalWidth - nZeroWeightWidth);
     if (nRemainingWidth < 0)
         nRemainingWidth = 0;
@@ -470,7 +470,7 @@ void GridLayouter::Implementation::DistributeWidth (const sal_Int32 nTotalWidth)
             nRemainingWidth -= nWidth;
         }
     }
-    
+
     // If there are some pixels left (due to rounding errors), then
     // give them to the first column that has non-zero weight.
     if (nRemainingWidth > 0)
@@ -512,7 +512,7 @@ sal_Int32 GridLayouter::Implementation::GetMinimumColumnWidth (
         nMinimumWidth = rDescriptor.GetMaximumWidth();
 
     // Add the horizontal padding.
-    return  nMinimumWidth 
+    return  nMinimumWidth
         + rDescriptor.GetLeftPadding()
         + rDescriptor.GetRightPadding();
 }
@@ -528,7 +528,7 @@ void GridLayouter::Implementation::Paint (void)
     static const Color aLeftPaddingColor (0x98fb98);
     static const Color aRightPaddingColor (0xff69b4);
     static const Color aControlOverlayColor (0xffff00);
-    
+
     sal_Int32 nX (0);
     mrParent.SetLineColor();
     mrParent.SetFillColor(aLeftPaddingColor);

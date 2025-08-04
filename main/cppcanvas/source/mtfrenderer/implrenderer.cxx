@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -726,7 +726,7 @@ namespace cppcanvas
                             // map odf axial gradient to 3-stop linear
                             // gradient - shift left by 0.5
                             basegfx::B2DHomMatrix aShift;
-                            
+
                             aShift.translate(-0.5,0);
                             aGradInfo.setTextureTransform(aGradInfo.getTextureTransform() * aShift);
                             aGradientService = rtl::OUString::createFromAscii("LinearGradient");
@@ -787,7 +787,7 @@ namespace cppcanvas
                     // miles away from the origin).
                     aGradInfo.setTextureTransform(
                         basegfx::tools::createTranslateB2DHomMatrix(
-                            aBounds.getMinX(), 
+                            aBounds.getMinX(),
                             aBounds.getMinY()) * aGradInfo.getTextureTransform());
                     ::basegfx::unotools::affineMatrixFromHomMatrix( aTexture.AffineTransform,
                                                                     aGradInfo.getTextureTransform() );
@@ -884,7 +884,7 @@ namespace cppcanvas
                 rParms.mrParms.maFontLetterForm.is_initialized() ?
                 *rParms.mrParms.maFontLetterForm :
                 (rFont.GetItalic() == ITALIC_NONE) ? 0 : 9;
-            aFontRequest.FontDescription.FontDescription.Proportion = 
+            aFontRequest.FontDescription.FontDescription.Proportion =
                 rParms.mrParms.maFontProportion.is_initialized() ?
                 *rParms.mrParms.maFontProportion :
                 (rFont.GetPitch() == PITCH_FIXED)
@@ -2567,9 +2567,9 @@ namespace cppcanvas
                         createTextAction(
                             pAct->GetPoint(),
                             sText,
-                            pAct->GetIndex(), 
+                            pAct->GetIndex(),
                             pAct->GetLen() == (sal_uInt16)STRING_LEN ? pAct->GetText().Len() - pAct->GetIndex() : pAct->GetLen(),
-                            NULL, 
+                            NULL,
                             rFactoryParms,
                             bSubsettableActions );
                     }
@@ -2586,9 +2586,9 @@ namespace cppcanvas
                         createTextAction(
                             pAct->GetPoint(),
                             sText,
-                            pAct->GetIndex(), 
+                            pAct->GetIndex(),
                             pAct->GetLen() == (sal_uInt16)STRING_LEN ? pAct->GetText().Len() - pAct->GetIndex() : pAct->GetLen(),
-                            pAct->GetDXArray(), 
+                            pAct->GetDXArray(),
                             rFactoryParms,
                             bSubsettableActions );
                     }
@@ -2662,7 +2662,7 @@ namespace cppcanvas
                         if( rVDev.GetDigitLanguage())
                             convertToLocalizedNumerals ( sText,rVDev.GetDigitLanguage() );
 
-                        const sal_uInt16 nLen( pAct->GetLen() == (sal_uInt16)STRING_LEN ? 
+                        const sal_uInt16 nLen( pAct->GetLen() == (sal_uInt16)STRING_LEN ?
                                            pAct->GetText().Len() - pAct->GetIndex() : pAct->GetLen() );
 
                         // #i70897# Nothing to do, actually...
@@ -2697,7 +2697,7 @@ namespace cppcanvas
                         createTextAction(
                             pAct->GetPoint(),
                             sText,
-                            pAct->GetIndex(), 
+                            pAct->GetIndex(),
                             pAct->GetLen() == (sal_uInt16)STRING_LEN ? pAct->GetText().Len() - pAct->GetIndex() : pAct->GetLen(),
                             pDXArray.get(),
                             rFactoryParms,

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -68,7 +68,7 @@ void XclExpWindow1::SaveXml( XclExpXmlStream& rStrm )
             XML_tabRatio,               OString::valueOf( (sal_Int32)mnTabBarSize ).getStr(),
             XML_firstSheet,             OString::valueOf( (sal_Int32)rTabInfo.GetFirstVisXclTab() ).getStr(),
             XML_activeTab,              OString::valueOf( (sal_Int32)rTabInfo.GetDisplayedXclTab() ).getStr(),
-            // OOXTODO: XML_autoFilterDateGrouping,     // bool; AUTOFILTER12? 87Eh 
+            // OOXTODO: XML_autoFilterDateGrouping,     // bool; AUTOFILTER12? 87Eh
             FSEND );
 }
 

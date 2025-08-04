@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,7 +45,7 @@ XMLBasicImportContext::XMLBasicImportContext( SvXMLImport& rImport, sal_uInt16 n
     if ( xMSF.is() )
     {
         m_xHandler.set( xMSF->createInstance(
-            ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.document.XMLOasisBasicImporter" ) ) ), 
+            ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.document.XMLOasisBasicImporter" ) ) ),
             UNO_QUERY );
     }
 
@@ -68,7 +68,7 @@ XMLBasicImportContext::~XMLBasicImportContext()
 
 // -----------------------------------------------------------------------------
 
-SvXMLImportContext* XMLBasicImportContext::CreateChildContext( 
+SvXMLImportContext* XMLBasicImportContext::CreateChildContext(
     sal_uInt16 nPrefix, const ::rtl::OUString& rLocalName,
     const Reference< xml::sax::XAttributeList >& )
 {
@@ -105,7 +105,7 @@ void XMLBasicImportContext::StartElement(
             nPos = rNamespaceMap.GetNextKey( nPos );
         }
 
-        m_xHandler->startElement( 
+        m_xHandler->startElement(
             GetImport().GetNamespaceMap().GetQNameByKey( GetPrefix(), GetLocalName() ),
             xAttrList );
     }
@@ -117,7 +117,7 @@ void XMLBasicImportContext::EndElement()
 {
     if ( m_xHandler.is() )
     {
-        m_xHandler->endElement( 
+        m_xHandler->endElement(
             GetImport().GetNamespaceMap().GetQNameByKey( GetPrefix(), GetLocalName() ) );
         m_xHandler->endDocument();
     }
@@ -130,7 +130,7 @@ void XMLBasicImportContext::Characters( const ::rtl::OUString& rChars )
     if ( m_xHandler.is() )
         m_xHandler->characters( rChars );
 }
-	
+
 
 // =============================================================================
 // XMLBasicImportChildContext
@@ -151,10 +151,10 @@ XMLBasicImportChildContext::~XMLBasicImportChildContext()
 
 // -----------------------------------------------------------------------------
 
-SvXMLImportContext* XMLBasicImportChildContext::CreateChildContext( 
+SvXMLImportContext* XMLBasicImportChildContext::CreateChildContext(
     sal_uInt16 nPrefix, const ::rtl::OUString& rLocalName,
     const Reference< xml::sax::XAttributeList >& )
-{    
+{
     return new XMLBasicImportChildContext( GetImport(), nPrefix, rLocalName, m_xHandler );
 }
 
@@ -165,7 +165,7 @@ void XMLBasicImportChildContext::StartElement(
 {
     if ( m_xHandler.is() )
     {
-        m_xHandler->startElement( 
+        m_xHandler->startElement(
             GetImport().GetNamespaceMap().GetQNameByKey( GetPrefix(), GetLocalName() ),
             xAttrList );
     }
@@ -177,7 +177,7 @@ void XMLBasicImportChildContext::EndElement()
 {
     if ( m_xHandler.is() )
     {
-        m_xHandler->endElement( 
+        m_xHandler->endElement(
             GetImport().GetNamespaceMap().GetQNameByKey( GetPrefix(), GetLocalName() ) );
     }
 }

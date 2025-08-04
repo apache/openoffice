@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -65,7 +65,7 @@ SvtSysLocale_Impl::SvtSysLocale_Impl() : pCharClass(NULL)
     pLocaleData = new LocaleDataWrapper( ::comphelper::getProcessServiceFactory(), aSysLocaleOptions.GetRealLocale() );
 
 	// listen for further changes
-    aSysLocaleOptions.AddListener( this );  
+    aSysLocaleOptions.AddListener( this );
 }
 
 
@@ -191,7 +191,7 @@ rtl_TextEncoding SvtSysLocale::GetBestMimeEncoding()
     const sal_Char* pCharSet = rtl_getBestMimeCharsetFromTextEncoding(
             gsl_getSystemTextEncoding() );
     if ( !pCharSet )
-    {   
+    {
         // If the system locale is unknown to us, e.g. LC_ALL=xx, match the UI
         // language if possible.
         ::com::sun::star::lang::Locale aLocale( SvtSysLocale().GetUILocale() );

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -334,35 +334,35 @@ namespace sfx2
         UndoManagerGuard aGuard( *this );
         return m_pImpl->aUndoHelper.isUndoPossible();
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     ::sal_Bool SAL_CALL DocumentUndoManager::isRedoPossible(  ) throw (RuntimeException)
     {
         UndoManagerGuard aGuard( *this );
         return m_pImpl->aUndoHelper.isRedoPossible();
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     ::rtl::OUString SAL_CALL DocumentUndoManager::getCurrentUndoActionTitle(  ) throw (EmptyUndoStackException, RuntimeException)
     {
         UndoManagerGuard aGuard( *this );
         return m_pImpl->aUndoHelper.getCurrentUndoActionTitle();
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     ::rtl::OUString SAL_CALL DocumentUndoManager::getCurrentRedoActionTitle(  ) throw (EmptyUndoStackException, RuntimeException)
     {
         UndoManagerGuard aGuard( *this );
         return m_pImpl->aUndoHelper.getCurrentRedoActionTitle();
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     Sequence< ::rtl::OUString > SAL_CALL DocumentUndoManager::getAllUndoActionTitles(  ) throw (RuntimeException)
     {
         UndoManagerGuard aGuard( *this );
         return m_pImpl->aUndoHelper.getAllUndoActionTitles();
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     Sequence< ::rtl::OUString > SAL_CALL DocumentUndoManager::getAllRedoActionTitles(  ) throw (RuntimeException)
     {

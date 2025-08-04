@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -131,7 +131,7 @@ void DrawViewShell::ArrangeGUIElements (void)
     // Retrieve the current size (thickness) of the scroll bars.  That is
     // the width of the vertical and the height of the horizontal scroll
     // bar.
-    int nScrollBarSize = 
+    int nScrollBarSize =
         GetParentWindow()->GetSettings().GetStyleSettings().GetScrollBarSize();
 	maScrBarWH = Size (nScrollBarSize, nScrollBarSize);
 
@@ -694,7 +694,7 @@ void DrawViewShell::VisAreaChanged(const Rectangle& rRect)
 
 int DrawViewShell::GetActiveTabLayerIndex (void) const
 {
-    const LayerTabBar* pBar 
+    const LayerTabBar* pBar
         = const_cast<DrawViewShell*>(this)->GetLayerTabControl ();
     if (pBar != NULL)
         return pBar->GetPagePos (pBar->GetCurPageId());
@@ -748,7 +748,7 @@ LayerTabBar* DrawViewShell::GetLayerTabControl (void)
 
 int DrawViewShell::GetTabLayerCount (void) const
 {
-    const LayerTabBar* pBar 
+    const LayerTabBar* pBar
         = const_cast<DrawViewShell*>(this)->GetLayerTabControl ();
     if (pBar != NULL)
         return pBar->GetPageCount();

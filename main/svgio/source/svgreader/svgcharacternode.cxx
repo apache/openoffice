@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -177,7 +177,7 @@ namespace svgio
 
         public:
             localTextBreakupHelper(
-                const drawinglayer::primitive2d::TextSimplePortionPrimitive2D& rSource, 
+                const drawinglayer::primitive2d::TextSimplePortionPrimitive2D& rSource,
                 SvgTextPosition& rSvgTextPosition)
             :   drawinglayer::primitive2d::TextBreakupHelper(rSource),
                 mrSvgTextPosition(rSvgTextPosition)
@@ -269,7 +269,7 @@ namespace svgio
                 bool bOutline(false);
                 bool bRTL(false);
                 bool bBiDiStrong(false);
-                
+
                 const drawinglayer::attribute::FontAttribute aFontAttribute(
                     aFontFamily,
                     rtl::OUString(),
@@ -328,7 +328,7 @@ namespace svgio
                 double fTextWidth(aTextLayouterDevice.getTextWidth(getText(), nIndex, nLength));
 
                 // check for user-given TextLength
-                if(0.0 != rSvgTextPosition.getTextLength() 
+                if(0.0 != rSvgTextPosition.getTextLength()
                     && !basegfx::fTools::equal(fTextWidth, rSvgTextPosition.getTextLength()))
                 {
                     const double fFactor(rSvgTextPosition.getTextLength() / fTextWidth);
@@ -441,8 +441,8 @@ namespace svgio
                 }
 
                 // get fill color
-                const basegfx::BColor aFill(rSvgStyleAttributes.getFill() 
-                    ? *rSvgStyleAttributes.getFill() 
+                const basegfx::BColor aFill(rSvgStyleAttributes.getFill()
+                    ? *rSvgStyleAttributes.getFill()
                     : basegfx::BColor(0.0, 0.0, 0.0));
 
                 // prepare TextTransformation
@@ -454,8 +454,8 @@ namespace svgio
                 // check TextDecoration and if TextDecoratedPortionPrimitive2D is needed
                 const TextDecoration aDeco(rSvgStyleAttributes.getTextDecoration());
 
-                if(TextDecoration_underline == aDeco 
-                    || TextDecoration_overline == aDeco 
+                if(TextDecoration_underline == aDeco
+                    || TextDecoration_overline == aDeco
                     || TextDecoration_line_through == aDeco)
                 {
                     // get the fill for decroation as described by SVG. We cannot
@@ -510,13 +510,13 @@ namespace svgio
         }
 
         void SvgCharacterNode::decomposeTextWithStyle(
-            drawinglayer::primitive2d::Primitive2DSequence& rTarget, 
+            drawinglayer::primitive2d::Primitive2DSequence& rTarget,
             SvgTextPosition& rSvgTextPosition,
             const SvgStyleAttributes& rSvgStyleAttributes) const
         {
             const drawinglayer::primitive2d::Primitive2DReference xRef(
                 createSimpleTextPrimitive(
-                    rSvgTextPosition, 
+                    rSvgTextPosition,
                     rSvgStyleAttributes));
 
             if(xRef.is())
@@ -528,7 +528,7 @@ namespace svgio
                 else
                 {
                     // need to apply rotations to each character as given
-                    const drawinglayer::primitive2d::TextSimplePortionPrimitive2D* pCandidate = 
+                    const drawinglayer::primitive2d::TextSimplePortionPrimitive2D* pCandidate =
                         dynamic_cast< const drawinglayer::primitive2d::TextSimplePortionPrimitive2D* >(xRef.get());
 
                     if(pCandidate)

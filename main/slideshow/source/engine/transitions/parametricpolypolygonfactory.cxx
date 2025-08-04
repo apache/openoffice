@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -64,7 +64,7 @@ namespace slideshow
         {
             using namespace ::com::sun::star::animations::TransitionType;
             using namespace ::com::sun::star::animations::TransitionSubType;
-            
+
             switch (nType)
             {
             case BARWIPE:
@@ -282,7 +282,7 @@ namespace slideshow
                 return ParametricPolyPolygonSharedPtr( new ZigZagWipe(5) );
             case BARNZIGZAGWIPE:
                 return ParametricPolyPolygonSharedPtr( new BarnZigZagWipe(5) );
-                
+
             case BOWTIEWIPE:
             case BARNVEEWIPE:
             case EYEWIPE:
@@ -293,15 +293,15 @@ namespace slideshow
                 // for now, map to barwipe transition
                 return ParametricPolyPolygonSharedPtr(
                     new BarWipePolyPolygon );
-                
+
             default:
             case PUSHWIPE:
             case SLIDEWIPE:
             case FADE:
-                ENSURE_OR_THROW( false, 
+                ENSURE_OR_THROW( false,
                                   "createShapeClipPolyPolygonAnimation(): Transition type mismatch" );
             }
-            
+
             return ParametricPolyPolygonSharedPtr();
         }
     }

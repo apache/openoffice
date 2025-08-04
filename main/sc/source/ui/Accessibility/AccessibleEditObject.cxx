@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -223,7 +223,7 @@ Rectangle ScAccessibleEditObject::GetBoundingBox(void) const
                 uno::Reference< XAccessible > xParent( xContext->getAccessibleParent() );
                 if ( xParent.is() )
                 {
-                    uno::Reference< XAccessibleComponent > xParentComponent( xParent->getAccessibleContext(), uno::UNO_QUERY );				
+                    uno::Reference< XAccessibleComponent > xParentComponent( xParent->getAccessibleContext(), uno::UNO_QUERY );
 		            if ( xParentComponent.is() )
 		            {
                         Point aScreenLoc = aBounds.TopLeft();
@@ -402,13 +402,13 @@ void ScAccessibleEditObject::CreateTextHelper()
         }
     }
 }
-sal_Int32 SAL_CALL ScAccessibleEditObject::getForeground(  ) 
+sal_Int32 SAL_CALL ScAccessibleEditObject::getForeground(  )
         throw (::com::sun::star::uno::RuntimeException)
 {
 	return GetFgBgColor(rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(SC_UNONAME_CCOLOR)));
 }
 
-sal_Int32 SAL_CALL ScAccessibleEditObject::getBackground(  ) 
+sal_Int32 SAL_CALL ScAccessibleEditObject::getBackground(  )
         throw (::com::sun::star::uno::RuntimeException)
 {
 	return GetFgBgColor(rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(SC_UNONAME_CELLBACK)));
@@ -452,15 +452,15 @@ sal_Int32 ScAccessibleEditObject::GetFgBgColor( const rtl::OUString &strPropColo
 }
 //=====  XAccessibleSelection  ============================================
 //--------------------------------------------------------------------------------
-void SAL_CALL ScAccessibleEditObject::selectAccessibleChild( sal_Int32 ) 
+void SAL_CALL ScAccessibleEditObject::selectAccessibleChild( sal_Int32 )
 throw ( IndexOutOfBoundsException, RuntimeException )
 {
 }
 //----------------------------------------------------------------------------------
-sal_Bool SAL_CALL ScAccessibleEditObject::isAccessibleChildSelected( sal_Int32 nChildIndex ) 
-throw ( IndexOutOfBoundsException, 
+sal_Bool SAL_CALL ScAccessibleEditObject::isAccessibleChildSelected( sal_Int32 nChildIndex )
+throw ( IndexOutOfBoundsException,
 	   RuntimeException )
-{	
+{
 	uno::Reference<XAccessible> xAcc = getAccessibleChild( nChildIndex );
 	uno::Reference<XAccessibleContext> xContext;
 	if( xAcc.is() )
@@ -472,27 +472,27 @@ throw ( IndexOutOfBoundsException,
 			uno::Reference< ::com::sun::star::accessibility::XAccessibleText >
 				xText(xAcc, uno::UNO_QUERY);
 			if( xText.is() )
-			{				
+			{
 				if( xText->getSelectionStart() >= 0 ) return sal_True;
-			}		
+			}
 		}
-	}	
-	return sal_False;	
+	}
+	return sal_False;
 }
 //---------------------------------------------------------------------
-void SAL_CALL ScAccessibleEditObject::clearAccessibleSelection(  ) 
+void SAL_CALL ScAccessibleEditObject::clearAccessibleSelection(  )
 throw ( RuntimeException )
 {
 }
 //-------------------------------------------------------------------------
-void SAL_CALL ScAccessibleEditObject::selectAllAccessibleChildren(  ) 
+void SAL_CALL ScAccessibleEditObject::selectAllAccessibleChildren(  )
 throw ( RuntimeException )
 {
 }
 //----------------------------------------------------------------------------
-sal_Int32 SAL_CALL ScAccessibleEditObject::getSelectedAccessibleChildCount() 
+sal_Int32 SAL_CALL ScAccessibleEditObject::getSelectedAccessibleChildCount()
 throw ( RuntimeException )
-{	
+{
 	sal_Int32 nCount = 0;
 	sal_Int32 TotalCount = getAccessibleChildCount();
 	for( sal_Int32 i = 0; i < TotalCount; i++ )
@@ -500,7 +500,7 @@ throw ( RuntimeException )
 	return nCount;
 }
 //--------------------------------------------------------------------------------------
-uno::Reference<XAccessible> SAL_CALL ScAccessibleEditObject::getSelectedAccessibleChild( sal_Int32 nSelectedChildIndex ) 
+uno::Reference<XAccessible> SAL_CALL ScAccessibleEditObject::getSelectedAccessibleChild( sal_Int32 nSelectedChildIndex )
 throw ( IndexOutOfBoundsException, RuntimeException)
 {
 	if ( nSelectedChildIndex > getSelectedAccessibleChildCount() )
@@ -516,11 +516,11 @@ throw ( IndexOutOfBoundsException, RuntimeException)
 	return uno::Reference<XAccessible>();
 }
 //----------------------------------------------------------------------------------
-void SAL_CALL ScAccessibleEditObject::deselectAccessibleChild( 
-															sal_Int32 ) 
-															throw ( IndexOutOfBoundsException, 
+void SAL_CALL ScAccessibleEditObject::deselectAccessibleChild(
+															sal_Int32 )
+															throw ( IndexOutOfBoundsException,
 															RuntimeException )
-{    
+{
 }
 uno::Reference< XAccessibleRelationSet > ScAccessibleEditObject::getAccessibleRelationSet(  )
     throw (uno::RuntimeException)

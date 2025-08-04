@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -94,7 +94,7 @@ namespace rptui
     //========================================================================
     // class ConditionalFormattingDialog
     //========================================================================
-    DBG_NAME(rpt_ConditionalFormattingDialog)    
+    DBG_NAME(rpt_ConditionalFormattingDialog)
     ConditionalFormattingDialog::ConditionalFormattingDialog(
             Window* _pParent, const Reference< XReportControlModel >& _rxFormatConditions, ::rptui::OReportController& _rController )
         :ModalDialog( _pParent, ModuleRes(RID_CONDFORMAT) )
@@ -105,10 +105,10 @@ namespace rptui
         ,m_aPB_Help(this,       ModuleRes(PB_HELP))
         ,m_aCondScroll( this,   ModuleRes( SB_ALL_CONDITIONS ) )
         ,m_rController( _rController )
-        ,m_xFormatConditions( _rxFormatConditions )  
+        ,m_xFormatConditions( _rxFormatConditions )
         ,m_bDeletingCondition( false )
     {
-        DBG_CTOR(rpt_ConditionalFormattingDialog,NULL);        
+        DBG_CTOR(rpt_ConditionalFormattingDialog,NULL);
         OSL_ENSURE( m_xFormatConditions.is(), "ConditionalFormattingDialog::ConditionalFormattingDialog: ReportControlModel is NULL -> Prepare for GPF!" );
 
         m_xCopy.set( m_xFormatConditions->createClone(), UNO_QUERY_THROW );
@@ -124,7 +124,7 @@ namespace rptui
     ConditionalFormattingDialog::~ConditionalFormattingDialog()
     {
         m_aConditions.clear();
-        DBG_DTOR(rpt_ConditionalFormattingDialog,NULL);        
+        DBG_DTOR(rpt_ConditionalFormattingDialog,NULL);
     }
 
     // -----------------------------------------------------------------------------
@@ -183,7 +183,7 @@ namespace rptui
             m_aConditions.insert( m_aConditions.begin() + _nNewCondIndex, pCon );
 
             pCon->SetPosSizePixel( 0, 0, impl_getConditionWidth(), 0, WINDOW_POSSIZE_WIDTH );
-        } 
+        }
         catch( const Exception& )
         {
             DBG_UNHANDLED_EXCEPTION();
@@ -241,7 +241,7 @@ namespace rptui
                 if ( nNewFocusIndex >= impl_getConditionCount() )
                     nNewFocusIndex = impl_getConditionCount() - 1;
             }
-        } 
+        }
         catch( const Exception& )
         {
             DBG_UNHANDLED_EXCEPTION();
@@ -386,7 +386,7 @@ namespace rptui
                 pCon->updateToolbar( xCond.get() );
                 m_aConditions.push_back( pCon );
             }
-        } 
+        }
         catch(Exception&)
         {
             OSL_ENSURE(0,"Can not access format condition!");
@@ -413,11 +413,11 @@ namespace rptui
 
             aArgs[2].Name = PROPERTY_FONTCOLOR;
             aArgs[2].Value <<= (sal_uInt32)_aColor.GetColor();
-            
+
             // we use this way to create undo actions
             m_rController.executeUnChecked(_nCommandId,aArgs);
             m_aConditions[ _nCondIndex ]->updateToolbar(xReportControlFormat);
-        } 
+        }
         catch( Exception& )
         {
             DBG_UNHANDLED_EXCEPTION();
@@ -495,7 +495,7 @@ namespace rptui
                     m_xFormatConditions->removeByIndex(k);
 
                 ::comphelper::copyProperties( m_xCopy.get(), m_xFormatConditions.get() );
-            } 
+            }
             catch ( const Exception& )
             {
                 DBG_UNHANDLED_EXCEPTION();

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -294,7 +294,7 @@ String NameOrIndex::CheckNamedItem( const NameOrIndex* pCheckItem, const sal_uIn
                     {
                         const GraphicObject& rGraphicObjectA(((XFillBitmapItem*)pCheckItem)->GetGraphicObject());
                         const GraphicObject& rGraphicObjectB(((XBitmapEntry*)pEntry)->GetGraphicObject());
-						
+
                         bFound = (rGraphicObjectA == rGraphicObjectB);
 						break;
                     }
@@ -697,8 +697,8 @@ bool XDash::operator==(const XDash& rDash) const
 			 nDistance	== rDash.nDistance );
 }
 
-// XDash is translated into an array of doubles which describe the lengths of the 
-// dashes, dots and empty passages. It returns the complete length of the full DashDot 
+// XDash is translated into an array of doubles which describe the lengths of the
+// dashes, dots and empty passages. It returns the complete length of the full DashDot
 // sequence and fills the given vetor of doubles accordingly (also resizing, so deleting it).
 static double SMALLEST_DASH_WIDTH(26.95);
 double XDash::CreateDotDashArray(::std::vector< double >& rDotDashArray, double fLineWidth) const
@@ -1127,7 +1127,7 @@ sal_Bool XLineDashItem::QueryValue( ::com::sun::star::uno::Any& rVal, sal_uInt8 
         case 0:
         {
             uno::Sequence< beans::PropertyValue > aPropSeq( 2 );
-			
+
             ::com::sun::star::drawing::LineDash aLineDash;
 
 			const XDash& rXD = GetDashValue();
@@ -1147,7 +1147,7 @@ sal_Bool XLineDashItem::QueryValue( ::com::sun::star::uno::Any& rVal, sal_uInt8 
             rVal = uno::makeAny( aPropSeq );
             break;
         }
-    
+
         case MID_NAME:
 		{
 			rtl::OUString aApiName;
@@ -1215,9 +1215,9 @@ sal_Bool XLineDashItem::QueryValue( ::com::sun::star::uno::Any& rVal, sal_uInt8 
 			break;
 		}
 
-		default: DBG_ERROR("Wrong MemberId!"); return sal_False;	
+		default: DBG_ERROR("Wrong MemberId!"); return sal_False;
 	}
-	
+
 	return sal_True;
 }
 
@@ -1247,7 +1247,7 @@ sal_Bool XLineDashItem::PutValue( const ::com::sun::star::uno::Any& rVal, sal_uI
                             bLineDash = sal_True;
                     }
                 }
-                
+
                 SetName( aName );
                 if ( bLineDash )
                 {
@@ -1265,13 +1265,13 @@ sal_Bool XLineDashItem::PutValue( const ::com::sun::star::uno::Any& rVal, sal_uI
 
 			        SetDashValue( aXDash );
                 }
-                
+
                 return sal_True;
             }
 
             return sal_False;
         }
-    
+
         case MID_NAME:
 		{
 			rtl::OUString aName;
@@ -1326,7 +1326,7 @@ sal_Bool XLineDashItem::PutValue( const ::com::sun::star::uno::Any& rVal, sal_uI
 			sal_Int16 nVal = sal_Int16();
 			if(!(rVal >>= nVal))
 				return sal_False;
-			
+
 			XDash aXDash = GetDashValue();
 			if ( nMemberId == MID_LINEDASH_DOTS )
 				aXDash.SetDots( nVal );
@@ -1347,7 +1347,7 @@ sal_Bool XLineDashItem::PutValue( const ::com::sun::star::uno::Any& rVal, sal_uI
 			sal_Int32 nVal = 0;
 			if(!(rVal >>= nVal))
 				return sal_False;
-			
+
 			XDash aXDash = GetDashValue();
 			if ( nMemberId == MID_LINEDASH_DOTLEN )
 				aXDash.SetDotLen( nVal );
@@ -1361,9 +1361,9 @@ sal_Bool XLineDashItem::PutValue( const ::com::sun::star::uno::Any& rVal, sal_uI
 
 			SetDashValue( aXDash );
 			break;
-		}		
+		}
 	}
-	
+
 	return sal_True;
 }
 
@@ -1491,7 +1491,7 @@ sal_Bool XLineWidthItem::QueryValue( ::com::sun::star::uno::Any& rVal, sal_uInt8
     sal_Int32 nValue = GetValue();
     if( 0 != (nMemberId&CONVERT_TWIPS) )
         nValue = TWIP_TO_MM100(nValue);
-    
+
     rVal <<= nValue;
 	return sal_True;
 }
@@ -1663,7 +1663,7 @@ namespace
 						const basegfx::B2DVector aControlVectorA(aCandidate.getPrevControlPoint(b));
 						rOut << aControlVectorA.getX();
 						rOut << aControlVectorA.getY();
-						
+
 						const basegfx::B2DVector aControlVectorB(aCandidate.getNextControlPoint(b));
 						rOut << aControlVectorB.getX();
 						rOut << aControlVectorB.getY();
@@ -1709,7 +1709,7 @@ namespace
 						rIn >> fX;
 						rIn >> fY;
 						aCandidate.setPrevControlPoint(b, basegfx::B2DVector(fX, fY));
-						
+
 						rIn >> fX;
 						rIn >> fY;
 						aCandidate.setNextControlPoint(b, basegfx::B2DVector(fX, fY));
@@ -1741,7 +1741,7 @@ TYPEINIT1_AUTOFACTORY(XLineStartItem, NameOrIndex);
 |*
 *************************************************************************/
 
-XLineStartItem::XLineStartItem(sal_Int32 nIndex) 
+XLineStartItem::XLineStartItem(sal_Int32 nIndex)
 :	NameOrIndex(XATTR_LINESTART, nIndex)
 {
 }
@@ -1773,7 +1773,7 @@ XLineStartItem::XLineStartItem(const XubString& rName, const basegfx::B2DPolyPol
 |*
 *************************************************************************/
 
-XLineStartItem::XLineStartItem(const XLineStartItem& rItem) 
+XLineStartItem::XLineStartItem(const XLineStartItem& rItem)
 :	NameOrIndex(rItem),
 	maPolyPolygon(rItem.maPolyPolygon)
 {
@@ -2213,7 +2213,7 @@ TYPEINIT1_AUTOFACTORY(XLineEndItem, NameOrIndex);
 |*
 *************************************************************************/
 
-XLineEndItem::XLineEndItem(sal_Int32 nIndex) 
+XLineEndItem::XLineEndItem(sal_Int32 nIndex)
 :	NameOrIndex(XATTR_LINEEND, nIndex)
 {
 }
@@ -2229,7 +2229,7 @@ XLineEndItem::XLineEndItem(sal_Int32 nIndex)
 |*
 *************************************************************************/
 
-XLineEndItem::XLineEndItem(const XubString& rName, const basegfx::B2DPolyPolygon& rPolyPolygon) 
+XLineEndItem::XLineEndItem(const XubString& rName, const basegfx::B2DPolyPolygon& rPolyPolygon)
 :	NameOrIndex(XATTR_LINEEND, rName),
 	maPolyPolygon(rPolyPolygon)
 {
@@ -2245,7 +2245,7 @@ XLineEndItem::XLineEndItem(const XubString& rName, const basegfx::B2DPolyPolygon
 |*
 *************************************************************************/
 
-XLineEndItem::XLineEndItem(const XLineEndItem& rItem) 
+XLineEndItem::XLineEndItem(const XLineEndItem& rItem)
 :	NameOrIndex(rItem),
 	maPolyPolygon(rItem.maPolyPolygon)
 {
@@ -3843,7 +3843,7 @@ sal_Bool XFillGradientItem::QueryValue( ::com::sun::star::uno::Any& rVal, sal_uI
 			rVal <<= aGradient2;
 			break;
 		}
-	
+
 		case MID_NAME:
 		{
 			rtl::OUString aApiName;
@@ -3851,7 +3851,7 @@ sal_Bool XFillGradientItem::QueryValue( ::com::sun::star::uno::Any& rVal, sal_uI
 			rVal <<= aApiName;
 			break;
 		}
-		
+
 		case MID_GRADIENT_STYLE: rVal <<= (sal_Int16)GetGradientValue().GetGradientStyle(); break;
 		case MID_GRADIENT_STARTCOLOR: rVal <<= (sal_Int32)GetGradientValue().GetStartColor().GetColor(); break;
 		case MID_GRADIENT_ENDCOLOR: rVal <<= (sal_Int32)GetGradientValue().GetEndColor().GetColor(); break;
@@ -3862,7 +3862,7 @@ sal_Bool XFillGradientItem::QueryValue( ::com::sun::star::uno::Any& rVal, sal_uI
 		case MID_GRADIENT_STARTINTENSITY: rVal <<= GetGradientValue().GetStartIntens(); break;
 		case MID_GRADIENT_ENDINTENSITY: rVal <<= GetGradientValue().GetEndIntens(); break;
 		case MID_GRADIENT_STEPCOUNT: rVal <<= GetGradientValue().GetSteps(); break;
-		
+
 		default: DBG_ERROR("Wrong MemberId!"); return sal_False;
 	}
 
@@ -3960,9 +3960,9 @@ sal_Bool XFillGradientItem::PutValue( const ::com::sun::star::uno::Any& rVal, sa
 			sal_Int32 nVal = 0;
 			if(!(rVal >>= nVal ))
 				return sal_False;
-			
+
 			XGradient aXGradient = GetGradientValue();
-			
+
 			if ( nMemberId == MID_GRADIENT_STARTCOLOR )
 				aXGradient.SetStartColor( nVal );
 			else
@@ -3985,7 +3985,7 @@ sal_Bool XFillGradientItem::PutValue( const ::com::sun::star::uno::Any& rVal, sa
 				return sal_False;
 
 			XGradient aXGradient = GetGradientValue();
-			
+
 			switch ( nMemberId )
 			{
 				case MID_GRADIENT_STYLE:
@@ -4005,12 +4005,12 @@ sal_Bool XFillGradientItem::PutValue( const ::com::sun::star::uno::Any& rVal, sa
 				case MID_GRADIENT_YOFFSET:
 					aXGradient.SetYOffset( nVal ); break;
 			}
-			
+
 			SetGradientValue( aXGradient );
 			break;
 		}
 	}
-	
+
 	return sal_True;
 }
 
@@ -4648,7 +4648,7 @@ sal_Bool XFillHatchItem::PutValue( const ::com::sun::star::uno::Any& rVal, sal_u
 				aHatch.SetAngle( nVal );
 			break;
 		}
-		
+
 		default: DBG_ERROR("Wrong MemberId!"); return sal_False;
 	}
 

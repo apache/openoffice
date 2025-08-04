@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -291,41 +291,41 @@ namespace accessibility
     {
         return 0;
     }
-    
+
     //--------------------------------------------------------------------
     Reference< XAccessible > SAL_CALL AccessibleToolPanelDeckTabBarItem::getAccessibleChild( sal_Int32 i ) throw (IndexOutOfBoundsException, RuntimeException)
     {
         (void)i;
         throw IndexOutOfBoundsException( ::rtl::OUString(), *this );
     }
-    
+
     //--------------------------------------------------------------------
     Reference< XAccessible > SAL_CALL AccessibleToolPanelDeckTabBarItem::getAccessibleParent(  ) throw (RuntimeException)
     {
         ItemMethodGuard aGuard( *m_pImpl );
         return m_pImpl->getAccessibleParent();
     }
-    
+
     //--------------------------------------------------------------------
     sal_Int16 SAL_CALL AccessibleToolPanelDeckTabBarItem::getAccessibleRole(  ) throw (RuntimeException)
     {
         return AccessibleRole::PAGE_TAB;
     }
-    
+
     //--------------------------------------------------------------------
     ::rtl::OUString SAL_CALL AccessibleToolPanelDeckTabBarItem::getAccessibleDescription(  ) throw (RuntimeException)
     {
         ItemMethodGuard aGuard( *m_pImpl );
         return m_pImpl->getPanelDisplayName();
     }
-    
+
     //--------------------------------------------------------------------
     ::rtl::OUString SAL_CALL AccessibleToolPanelDeckTabBarItem::getAccessibleName(  ) throw (RuntimeException)
     {
         ItemMethodGuard aGuard( *m_pImpl );
         return m_pImpl->getPanelDisplayName();
     }
-    
+
     //--------------------------------------------------------------------
     Reference< XAccessibleRelationSet > SAL_CALL AccessibleToolPanelDeckTabBarItem::getAccessibleRelationSet(  ) throw (RuntimeException)
     {
@@ -333,7 +333,7 @@ namespace accessibility
         ::utl::AccessibleRelationSetHelper* pRelationSet = new utl::AccessibleRelationSetHelper;
         return pRelationSet;
     }
-    
+
     //--------------------------------------------------------------------
     Reference< XAccessibleStateSet > SAL_CALL AccessibleToolPanelDeckTabBarItem::getAccessibleStateSet(  ) throw (RuntimeException)
     {
@@ -374,14 +374,14 @@ namespace accessibility
         (void)i_rLocation;
         return NULL;
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL AccessibleToolPanelDeckTabBarItem::grabFocus(  ) throw (RuntimeException)
     {
         ItemMethodGuard aGuard( *m_pImpl );
         m_pImpl->getTabBar()->FocusPanelItem( m_pImpl->getItemPos() );
     }
-    
+
     //--------------------------------------------------------------------
     ::sal_Int32 SAL_CALL AccessibleToolPanelDeckTabBarItem::getForeground(  ) throw (RuntimeException)
     {
@@ -389,7 +389,7 @@ namespace accessibility
         Reference< XAccessibleComponent > xParentComponent( m_pImpl->getParentAccessibleComponent(), UNO_SET_THROW );
         return xParentComponent->getForeground();
     }
-    
+
     //--------------------------------------------------------------------
     ::sal_Int32 SAL_CALL AccessibleToolPanelDeckTabBarItem::getBackground(  ) throw (RuntimeException)
     {
@@ -397,7 +397,7 @@ namespace accessibility
         Reference< XAccessibleComponent > xParentComponent( m_pImpl->getParentAccessibleComponent(), UNO_SET_THROW );
         return xParentComponent->getBackground();
     }
-    
+
     //--------------------------------------------------------------------
     Reference< XFont > SAL_CALL AccessibleToolPanelDeckTabBarItem::getFont(  ) throw (RuntimeException)
     {
@@ -407,7 +407,7 @@ namespace accessibility
         // a different font ...
         return xParentComponent->getFont();
     }
-    
+
     //--------------------------------------------------------------------
     ::rtl::OUString SAL_CALL AccessibleToolPanelDeckTabBarItem::getTitledBorderText(  ) throw (RuntimeException)
     {
@@ -415,7 +415,7 @@ namespace accessibility
         // no support
         return ::rtl::OUString();
     }
-    
+
     //--------------------------------------------------------------------
     ::rtl::OUString SAL_CALL AccessibleToolPanelDeckTabBarItem::getToolTipText(  ) throw (RuntimeException)
     {
@@ -439,7 +439,7 @@ namespace accessibility
             aItemScreenRect.GetHeight()
         );
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL AccessibleToolPanelDeckTabBarItem::disposing()
     {

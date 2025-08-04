@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -57,18 +57,18 @@ sal_Bool XMLCodeNameProvider::_getCodeName( const uno::Any& aAny, String& rCodeN
 }
 
 
-XMLCodeNameProvider::XMLCodeNameProvider( ScDocument* pDoc ) : 
-	mpDoc( pDoc ), 
+XMLCodeNameProvider::XMLCodeNameProvider( ScDocument* pDoc ) :
+	mpDoc( pDoc ),
 	msDocName( RTL_CONSTASCII_USTRINGPARAM("*doc*") ),
 	msCodeNameProp( RTL_CONSTASCII_USTRINGPARAM("CodeName") )
 {
 }
 
-XMLCodeNameProvider::~XMLCodeNameProvider() 
+XMLCodeNameProvider::~XMLCodeNameProvider()
 {
 }
 
-::sal_Bool SAL_CALL XMLCodeNameProvider::hasByName( const OUString& aName ) 
+::sal_Bool SAL_CALL XMLCodeNameProvider::hasByName( const OUString& aName )
 	throw (uno::RuntimeException )
 {
 	if( aName == msDocName )
@@ -90,7 +90,7 @@ XMLCodeNameProvider::~XMLCodeNameProvider()
 }
 
 uno::Any SAL_CALL XMLCodeNameProvider::getByName( const OUString& aName )
-	throw (container::NoSuchElementException, 
+	throw (container::NoSuchElementException,
 		   lang::WrappedTargetException, uno::RuntimeException)
 {
 	uno::Any aRet;
@@ -126,7 +126,7 @@ uno::Sequence< OUString > SAL_CALL XMLCodeNameProvider::getElementNames(  )
 	throw (uno::RuntimeException)
 {
 	SCTAB nCount = mpDoc->GetTableCount() + 1;
-	uno::Sequence< rtl::OUString > aNames( nCount ); 
+	uno::Sequence< rtl::OUString > aNames( nCount );
 	sal_Int32 nRealCount = 0;
 
 	if( mpDoc->GetCodeName().Len() )
@@ -189,7 +189,7 @@ void XMLCodeNameProvider::set( const uno::Reference< container::XNameAccess>& xN
 	String sSheetName;
 	for( SCTAB i = 0; i < nCount; i++ )
 	{
-		if( pDoc->GetName( i, sSheetName ) && 
+		if( pDoc->GetName( i, sSheetName ) &&
 			xNameAccess->hasByName( sSheetName ) )
 		{
 			aAny = xNameAccess->getByName( sSheetName );

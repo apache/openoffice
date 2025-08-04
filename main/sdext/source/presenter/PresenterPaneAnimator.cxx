@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -77,7 +77,7 @@ namespace {
             const css::uno::Reference<css::drawing::framework::XResourceId>& rxPaneId);
         void RestoreFrozenWindows (void);
         void FreezePanes (const Reference<rendering::XSpriteCanvas>& rxCanvas);
-        
+
     protected:
         ::rtl::Reference<PresenterController> mpPresenterController;
         ::rtl::Reference<PresenterPaneContainer> mpPaneContainer;
@@ -87,7 +87,7 @@ namespace {
         bool mbDoAnimation;
         EndActions maShowEndActions;
         EndActions maHideEndActions;
-    
+
         void DeactivatePanes (void);
         void ResizePane (
             const css::uno::Reference<css::drawing::framework::XResourceId>& rxPaneId,
@@ -106,9 +106,9 @@ namespace {
             const bool bAnimate,
             const EndActions& rShowEndActions,
             const EndActions& rEndEndActions);
-        
+
         virtual ~UnfoldInCenterAnimator (void);
-        
+
         virtual void ShowPane (void);
 
         virtual void HidePane (void);
@@ -132,10 +132,10 @@ namespace {
             const EndActions& rShowEndActions,
             const EndActions& rEndEndActions);
         virtual ~MoveInFromBottomAnimator (void);
-        
+
         virtual void ShowPane (void);
         virtual void HidePane (void);
-        
+
     private:
         ::boost::shared_ptr<PresenterSprite> maNewPaneSprite;
         geometry::RealRectangle2D maCenterPaneBox;
@@ -160,10 +160,10 @@ namespace {
             const EndActions& rShowEndActions,
             const EndActions& rEndEndActions);
         virtual ~TransparentOverlayAnimator (void);
-        
+
         virtual void ShowPane (void);
         virtual void HidePane (void);
-        
+
     private:
         PresenterSprite maBackgroundSprite;
         void CreateBackgroundSprite (void);
@@ -222,7 +222,7 @@ namespace {
         awt::Rectangle maOriginalBoundingBox;
         css::geometry::RealRectangle2D maCurrentBoundingBox;
         ::boost::shared_ptr<PresenterSprite> mpSubstitution;
-        
+
     };
     typedef ::boost::shared_ptr<PaneGroup> SharedPaneGroup;
 
@@ -383,7 +383,7 @@ void PresenterPaneAnimatorBase::DeactivatePanes (void)
         (*iGroup)->DeactivatePanes();
         (*iGroup)->HidePanes();
     }
-    
+
     mpWindowManager->Update();
 }
 
@@ -507,9 +507,9 @@ void UnfoldInCenterAnimator::ShowPane (void)
     // Create two pane groups that will be moved together.  One contains the
     // notes view, the other group contains all other panes.
     SetupPaneGroups();
-    
+
     // Setup the places where the two pane groups are moved to.
-    maCenterPaneBox 
+    maCenterPaneBox
         = MovePanesAway(geometry::RealRectangle2D(0,200,aWindowBox.Width, aWindowBox.Height-200));
 
     // Setup the final size of the new pane so that it fits into the space
@@ -578,7 +578,7 @@ void UnfoldInCenterAnimator::ShowPane (void)
             nY0,
             maCenterPaneBox.Y1,
             _1));
-    
+
     // Call updateScreen after each animation step.
     if (xCanvas.is())
         pMultiAnimation->AddAnimation(
@@ -605,14 +605,14 @@ void UnfoldInCenterAnimator::ShowPane (void)
 void UnfoldInCenterAnimator::HidePane (void)
 {
     OSL_ASSERT(mpWindowManager.get()!=NULL);
-    
+
     Reference<awt::XWindow> xParentWindow (mpWindowManager->GetParentWindow(), UNO_QUERY);
     if ( ! xParentWindow.is())
         return;
 
     DeactivatePanes();
     DeactivatePane(mxCenterPaneId);
-    
+
     ::boost::shared_ptr<PresenterAnimator> pAnimator (mpPresenterController->GetAnimator());
     const awt::Rectangle aWindowBox (xParentWindow->getPosSize());
     const rendering::ViewState aViewState (
@@ -623,7 +623,7 @@ void UnfoldInCenterAnimator::HidePane (void)
         NULL,
         Sequence<double>(4),
         rendering::CompositeOperation::SOURCE);
-    
+
     // Animate the upper and lower window bitmaps.
     Reference<rendering::XSpriteCanvas> xSpriteCanvas (mpWindowManager->GetParentCanvas(), UNO_QUERY);
     ::boost::shared_ptr<MultiAnimation> pMultiAnimation (new MultiAnimation(mbDoAnimation ? 500 : 1));
@@ -640,7 +640,7 @@ void UnfoldInCenterAnimator::HidePane (void)
                 GetLocation((*iGroup)->GetCurrentBoundingBox()),
                 GetLocation((*iGroup)->GetOriginalBoundingBox())));
     }
-    
+
     // Animate the new center pane to collapse.
     const double nY0 ((maPaneGroups[0]->GetOriginalBoundingBox().Y2
             + maPaneGroups[1]->GetOriginalBoundingBox().Y1) / 2);
@@ -667,7 +667,7 @@ void UnfoldInCenterAnimator::HidePane (void)
     EndActions::const_iterator iAction;
     for (iAction=maHideEndActions.begin(); iAction!=maHideEndActions.end(); ++iAction)
         pMultiAnimation->AddEndCallback(*iAction);
-    
+
     pAnimator->AddAnimation(SharedPresenterAnimation(pMultiAnimation));
 }
 
@@ -705,7 +705,7 @@ geometry::RealRectangle2D UnfoldInCenterAnimator::MovePanesAway (
 {
     SharedPaneGroup aUpperPanes = maPaneGroups[0];
     SharedPaneGroup aLowerPanes = maPaneGroups[1];
-    
+
     // Move upper pane group out of the way.
     const double nTop (rFreeCenterArea.Y1);
     const double nUpperVerticalOffset (nTop - aUpperPanes->GetOriginalBoundingBox().Y2);
@@ -792,7 +792,7 @@ void MoveInFromBottomAnimator::ShowPane (void)
 
     geometry::RealPoint2D aStartLocation (maCenterPaneBox.X1, aWindowBox.Height);
     geometry::RealPoint2D aEndLocation (maCenterPaneBox.X1, maCenterPaneBox.Y1);
-        
+
     // Get the sprite of the new pane, make it visible and move it to the
     // start location.
     PresenterPaneContainer::SharedPaneDescriptor pDescriptor (
@@ -801,7 +801,7 @@ void MoveInFromBottomAnimator::ShowPane (void)
     {
         if (pDescriptor->mxBorderWindow.is())
             pDescriptor->mxBorderWindow->setVisible(sal_True);
-        
+
         maNewPaneSprite = pDescriptor->maSpriteProvider();
         if (maNewPaneSprite.get() != NULL)
         {
@@ -828,7 +828,7 @@ void MoveInFromBottomAnimator::ShowPane (void)
 void MoveInFromBottomAnimator::HidePane (void)
 {
     OSL_ASSERT(mpWindowManager.get()!=NULL);
-    
+
     Reference<awt::XWindow> xParentWindow (mpWindowManager->GetParentWindow(), UNO_QUERY);
     if ( ! xParentWindow.is())
         return;
@@ -841,13 +841,13 @@ void MoveInFromBottomAnimator::HidePane (void)
     DeactivatePane(mxCenterPaneId);
 
     SharedPaneGroup aPanes (maPaneGroups[0]);
-    
+
     aPanes->ShowPanes();
 
     ::boost::shared_ptr<MultiAnimation> pMultiAnimation (
         new MultiAnimation(mbDoAnimation ? 500 : 0));
     awt::Rectangle aWindowBox (xParentWindow->getPosSize());
-    
+
     // Animate the new center pane to collapse.
     pMultiAnimation->AddAnimation(
         ::boost::bind(
@@ -867,7 +867,7 @@ void MoveInFromBottomAnimator::HidePane (void)
     EndActions::const_iterator iAction;
     for (iAction=maHideEndActions.begin(); iAction!=maHideEndActions.end(); ++iAction)
         pMultiAnimation->AddEndCallback(*iAction);
-    
+
     ::boost::shared_ptr<PresenterAnimator> pAnimator (mpPresenterController->GetAnimator());
     pAnimator->AddAnimation(SharedPresenterAnimation(pMultiAnimation));
 }
@@ -974,7 +974,7 @@ void TransparentOverlayAnimator::ShowPane (void)
         pAllPanes->DeactivatePanes();
         mpWindowManager->Update();
     }
-        
+
     PresenterPaneContainer::SharedPaneDescriptor pDescriptor (
         mpPaneContainer->FindPaneId(mxCenterPaneId));
     if (pDescriptor.get() != NULL)
@@ -1034,7 +1034,7 @@ void TransparentOverlayAnimator::CreateBackgroundSprite (void)
                 Sequence<double>(4),
                 rendering::CompositeOperation::SOURCE);
             PresenterCanvasHelper::SetDeviceColor(aRenderState, util::Color(0x80808080));
-    
+
             Reference<rendering::XPolyPolygon2D> xPolygon (
                 PresenterGeometryHelper::CreatePolygon(aWindowBox, xCanvas->getDevice()));
             if (xPolygon.is())
@@ -1108,7 +1108,7 @@ void PaneGroup::CreateSubstitution (const Reference<rendering::XSpriteCanvas>& r
         NULL,
         Sequence<double>(4),
         rendering::CompositeOperation::SOURCE);
-    
+
     Reference<rendering::XCanvas> xSpriteCanvas (mpSubstitution->GetCanvas());
     if (xSpriteCanvas.is())
         xSpriteCanvas->drawBitmap(xBackgroundBitmap, aViewState, aRenderState);
@@ -1319,7 +1319,7 @@ template<typename T>
         const T aFinalValue)
 {
     const double nQ (1 - nP);
-    
+
     rSetter(T(nQ * aInitialValue + nP * aFinalValue));
 }
 
@@ -1338,7 +1338,7 @@ void SpriteTransform(
     const double nP)
 {
     OSL_ASSERT(rpPaintManager.get()!=NULL);
-    
+
     PresenterPaneContainer::SharedPaneDescriptor pDescriptor (
         rpPaneContainer->FindPaneId(rxPaneId));
     if (pDescriptor.get() != NULL
@@ -1359,7 +1359,7 @@ void SpriteTransform(
                     sal::static_int_cast<sal_Int32>(pSprite->GetLocation().Y),
                     sal::static_int_cast<sal_Int32>(pSprite->GetSize().Width),
                     sal::static_int_cast<sal_Int32>(pSprite->GetSize().Height)));
-            
+
             const double nYScale (bAppear ? nP : 1-nP);
             pSprite->Transform(geometry::AffineMatrix2D(
                 1, 0, 0,

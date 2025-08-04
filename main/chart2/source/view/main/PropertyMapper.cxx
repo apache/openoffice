@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -202,7 +202,7 @@ const tMakePropertyNameMap& PropertyMapper::getPropertyNameMapForCharacterProper
 //        ( C2U( "CharEscapement" ),          C2U("CharEscapement") ) //#i98344# @future: add these to properties again, if the user interface offers the possibility to change them; then make sure that older wrong files are corrected on import
 //        ( C2U( "CharEscapementHeight" ),    C2U("CharEscapementHeight") ) //#i98344# @future: add these to properties again, if the user interface offers the possibility to change them; then make sure that older wrong files are corrected on import
 //      ( C2U( "CharFlash" ),               C2U("Flashing") )
-        
+
         ( C2U( "CharFontFamily" ),          C2U("CharFontFamily") )
         ( C2U( "CharFontFamilyAsian" ),     C2U("CharFontFamilyAsian") )
         ( C2U( "CharFontFamilyComplex" ),   C2U("CharFontFamilyComplex") )
@@ -218,7 +218,7 @@ const tMakePropertyNameMap& PropertyMapper::getPropertyNameMapForCharacterProper
         ( C2U( "CharFontStyleName" ),       C2U("CharFontStyleName") )
         ( C2U( "CharFontStyleNameAsian" ),  C2U("CharFontStyleNameAsian") )
         ( C2U( "CharFontStyleNameComplex" ),C2U("CharFontStyleNameComplex") )
-        
+
         ( C2U( "CharHeight" ),              C2U("CharHeight") )
         ( C2U( "CharHeightAsian" ),         C2U("CharHeightAsian") )
         ( C2U( "CharHeightComplex" ),       C2U("CharHeightComplex") )
@@ -247,7 +247,7 @@ const tMakePropertyNameMap& PropertyMapper::getPropertyNameMapForCharacterProper
         ( C2U( "CharWordMode" ),            C2U("CharWordMode") )
 
         ( C2U( "WritingMode" ),             C2U("WritingMode") )
-        
+
 //      ( C2U( "RubyText" ),                C2U("RubyText") )
 //      ( C2U( "RubyAdjust" ),              C2U("RubyAdjust") )
 //      ( C2U( "RubyCharStyleName" ),       C2U("RubyStyleName") )
@@ -431,7 +431,7 @@ void PropertyMapper::setMultiProperties(
         {
             aPropName = rNames[nN];
             aValue = rValues[nN];
-            
+
             try
 	        {
                 xTarget->setPropertyValue( aPropName, aValue );

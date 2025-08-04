@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,35 +41,35 @@ class CoordinateData3D
 	basegfx::B3DPoint								maPoint;
 
 public:
-	CoordinateData3D() 
-	:	maPoint() 
+	CoordinateData3D()
+	:	maPoint()
 	{
 	}
 
 	explicit CoordinateData3D(const basegfx::B3DPoint& rData)
-	:	maPoint(rData) 
+	:	maPoint(rData)
 	{
 	}
 
-	const basegfx::B3DPoint& getCoordinate() const 
-	{ 
-		return maPoint; 
+	const basegfx::B3DPoint& getCoordinate() const
+	{
+		return maPoint;
 	}
 
-	void setCoordinate(const basegfx::B3DPoint& rValue) 
-	{ 
-		if(rValue != maPoint) 
-			maPoint = rValue; 
+	void setCoordinate(const basegfx::B3DPoint& rValue)
+	{
+		if(rValue != maPoint)
+			maPoint = rValue;
 	}
 
-	bool operator==(const CoordinateData3D& rData) const 
-	{	
-		return (maPoint == rData.getCoordinate()); 
+	bool operator==(const CoordinateData3D& rData) const
+	{
+		return (maPoint == rData.getCoordinate());
 	}
 
-	void transform(const basegfx::B3DHomMatrix& rMatrix) 
-	{ 
-		maPoint *= rMatrix; 
+	void transform(const basegfx::B3DHomMatrix& rMatrix)
+	{
+		maPoint *= rMatrix;
 	}
 };
 
@@ -119,7 +119,7 @@ public:
             for(a = 1; a < nPointCount; a++)
             {
             	const basegfx::B3DPoint& rCandidate = maVector[a].getCoordinate();
-                
+
                 if((rCandidate.getX() < pSmallest->getX())
                     || (rCandidate.getX() == pSmallest->getX() && rCandidate.getY() < pSmallest->getY())
                     || (rCandidate.getX() == pSmallest->getX() && rCandidate.getY() == pSmallest->getY() && rCandidate.getZ() < pSmallest->getZ()))
@@ -233,7 +233,7 @@ public:
 			const sal_uInt32 nHalfSize(maVector.size() >> 1L);
 			CoordinateData3DVector::iterator aStart(maVector.begin());
 			CoordinateData3DVector::iterator aEnd(maVector.end() - 1L);
-			
+
 			for(sal_uInt32 a(0); a < nHalfSize; a++)
 			{
 				::std::swap(*aStart, *aEnd);
@@ -310,8 +310,8 @@ public:
 		return (maVector == rCandidate.maVector);
 	}
 
-	bool isUsed() const 
-	{ 
+	bool isUsed() const
+	{
 		return (0L != mnUsedEntries);
 	}
 
@@ -408,7 +408,7 @@ public:
 			const sal_uInt32 nHalfSize(maVector.size() >> 1L);
 			BColorDataVector::iterator aStart(maVector.begin());
 			BColorDataVector::iterator aEnd(maVector.end() - 1L);
-			
+
 			for(sal_uInt32 a(0); a < nHalfSize; a++)
 			{
 				::std::swap(*aStart, *aEnd);
@@ -474,8 +474,8 @@ public:
 		return (maVector == rCandidate.maVector);
 	}
 
-	bool isUsed() const 
-	{ 
+	bool isUsed() const
+	{
 		return (0L != mnUsedEntries);
 	}
 
@@ -572,7 +572,7 @@ public:
 			const sal_uInt32 nHalfSize(maVector.size() >> 1L);
 			NormalsData3DVector::iterator aStart(maVector.begin());
 			NormalsData3DVector::iterator aEnd(maVector.end() - 1L);
-			
+
 			for(sal_uInt32 a(0); a < nHalfSize; a++)
 			{
 				::std::swap(*aStart, *aEnd);
@@ -649,8 +649,8 @@ public:
 		return (maVector == rCandidate.maVector);
 	}
 
-	bool isUsed() const 
-	{ 
+	bool isUsed() const
+	{
 		return (0L != mnUsedEntries);
 	}
 
@@ -747,7 +747,7 @@ public:
 			const sal_uInt32 nHalfSize(maVector.size() >> 1L);
 			TextureData2DVector::iterator aStart(maVector.begin());
 			TextureData2DVector::iterator aEnd(maVector.end() - 1L);
-			
+
 			for(sal_uInt32 a(0); a < nHalfSize; a++)
 			{
 				::std::swap(*aStart, *aEnd);
@@ -1531,7 +1531,7 @@ public:
 
 namespace basegfx
 {
-    namespace { struct DefaultPolygon : public rtl::Static< B3DPolygon::ImplType, 
+    namespace { struct DefaultPolygon : public rtl::Static< B3DPolygon::ImplType,
                                                             DefaultPolygon > {}; }
 
 	B3DPolygon::B3DPolygon() :
@@ -1588,7 +1588,7 @@ namespace basegfx
 	basegfx::B3DPoint B3DPolygon::getB3DPoint(sal_uInt32 nIndex) const
 	{
 		OSL_ENSURE(nIndex < mpPolygon->count(), "B3DPolygon access outside range (!)");
-		
+
 		return mpPolygon->getPoint(nIndex);
 	}
 
@@ -1603,7 +1603,7 @@ namespace basegfx
 	BColor B3DPolygon::getBColor(sal_uInt32 nIndex) const
 	{
 		OSL_ENSURE(nIndex < mpPolygon->count(), "B3DPolygon access outside range (!)");
-		
+
 		return mpPolygon->getBColor(nIndex);
 	}
 
@@ -1634,7 +1634,7 @@ namespace basegfx
 	B3DVector B3DPolygon::getNormal(sal_uInt32 nIndex) const
 	{
 		OSL_ENSURE(nIndex < mpPolygon->count(), "B3DPolygon access outside range (!)");
-		
+
 		return mpPolygon->getNormal(nIndex);
 	}
 
@@ -1666,7 +1666,7 @@ namespace basegfx
 	B2DPoint B3DPolygon::getTextureCoordinate(sal_uInt32 nIndex) const
 	{
 		OSL_ENSURE(nIndex < mpPolygon->count(), "B3DPolygon access outside range (!)");
-		
+
 		return mpPolygon->getTextureCoordinate(nIndex);
 	}
 
@@ -1698,7 +1698,7 @@ namespace basegfx
 	void B3DPolygon::insert(sal_uInt32 nIndex, const ::basegfx::B3DPoint& rPoint, sal_uInt32 nCount)
 	{
 		OSL_ENSURE(nIndex <= mpPolygon->count(), "B3DPolygon Insert outside range (!)");
-		
+
 		if(nCount)
 			mpPolygon->insert(nIndex, rPoint, nCount);
 	}
@@ -1758,11 +1758,11 @@ namespace basegfx
 	void B3DPolygon::remove(sal_uInt32 nIndex, sal_uInt32 nCount)
 	{
 		OSL_ENSURE(nIndex + nCount <= mpPolygon->count(), "B3DPolygon Remove outside range (!)");
-		
+
 		if(nCount)
 			mpPolygon->remove(nIndex, nCount);
 	}
-	
+
 	void B3DPolygon::clear()
 	{
 		mpPolygon = DefaultPolygon::get();

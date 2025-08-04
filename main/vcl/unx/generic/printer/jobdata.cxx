@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -86,10 +86,10 @@ bool JobData::setPaper( int i_nWidth, int i_nHeight )
     if( m_pParser )
     {
         rtl::OUString aPaper( m_pParser->matchPaper( i_nWidth, i_nHeight ) );
-    
+
         const PPDKey*   pKey = m_pParser->getKey( String( RTL_CONSTASCII_USTRINGPARAM( "PageSize" ) ) );
         const PPDValue* pValue = pKey ? pKey->getValueCaseInsensitive( aPaper ) : NULL;
-        
+
         bSuccess = pKey && pValue && m_aContext.setValue( pKey, pValue, false );
     }
     return bSuccess;
@@ -102,7 +102,7 @@ bool JobData::setPaperBin( int i_nPaperBin )
     {
         const PPDKey*   pKey = m_pParser->getKey( String( RTL_CONSTASCII_USTRINGPARAM( "InputSlot" ) ) );
         const PPDValue* pValue = pKey ? pKey->getValue( i_nPaperBin ) : NULL;
-        
+
         bSuccess = pKey && pValue && m_aContext.setValue( pKey, pValue, false );
     }
     return bSuccess;
@@ -152,7 +152,7 @@ bool JobData::getStreamBuffer( void*& pData, int& bytes )
     aLine = "pslevel=";
     aLine += ByteString::CreateFromInt32( m_nPSLevel );
     aStream.WriteLine( aLine );
-    
+
     aLine = "pdfdevice=";
     aLine += ByteString::CreateFromInt32( m_nPDFDevice );
     aStream.WriteLine( aLine );

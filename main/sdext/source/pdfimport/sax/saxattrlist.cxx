@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -60,7 +60,7 @@ namespace {
         return aStr;
     }
 }
-    
+
 sal_Int16 SAL_CALL SaxAttrList::getLength() throw()
 {
     return sal_Int16(m_aAttributes.size());
@@ -90,7 +90,7 @@ rtl::OUString SAL_CALL SaxAttrList::getValueByName(const ::rtl::OUString& i_rNam
     std::hash_map< rtl::OUString, size_t, rtl::OUStringHash >::const_iterator it = m_aIndexMap.find( i_rName );
     return (it != m_aIndexMap.end()) ? m_aAttributes[it->second].m_aValue : rtl::OUString();
 }
-    
+
 com::sun::star::uno::Reference< ::com::sun::star::util::XCloneable > SAL_CALL SaxAttrList::createClone() throw()
 {
     return new SaxAttrList( *this );

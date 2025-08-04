@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -278,10 +278,10 @@ const SfxItemSet* FuPage::ExecuteDialog( Window* pParent )
             }
             else
             {
-				if(pStyleSheet 
+				if(pStyleSheet
                     && XFILL_NONE != ((const XFillStyleItem&)pStyleSheet->GetItemSet().Get(XATTR_FILLSTYLE)).GetValue())
                 {
-    				// if the page has no fill style, use the settings from the 
+    				// if the page has no fill style, use the settings from the
 					// background stylesheet (if used)
 					mergeItemSetsImpl(aMergedAttr, pStyleSheet->GetItemSet());
                 }
@@ -309,7 +309,7 @@ const SfxItemSet* FuPage::ExecuteDialog( Window* pParent )
 				pTempSet.reset( new SfxItemSet( mpDoc->GetPool(), XATTR_FILL_FIRST, XATTR_FILL_LAST, 0) );
 
 				pTempSet->Put( XFillStyleItem( XFILL_BITMAP ) );
-				
+
 				// MigrateItemSet makes sure the XFillBitmapItem will have a unique name
 				SfxItemSet aMigrateSet( mpDoc->GetPool(), XATTR_FILLBITMAP, XATTR_FILLBITMAP );
 				aMigrateSet.Put(XFillBitmapItem(String(RTL_CONSTASCII_USTRINGPARAM("background")), aGraphic));
@@ -480,7 +480,7 @@ const SfxItemSet* FuPage::ExecuteDialog( Window* pParent )
             SdrPage& rUsedMasterPage = mpPage->IsMasterPage() ? *mpPage : mpPage->TRG_GetMasterPage();
             OSL_ENSURE(rUsedMasterPage.IsMasterPage(), "No MasterPage (!)");
             rUsedMasterPage.getSdrPageProperties().ClearItem();
-            OSL_ENSURE(0 != rUsedMasterPage.getSdrPageProperties().GetStyleSheet(), 
+            OSL_ENSURE(0 != rUsedMasterPage.getSdrPageProperties().GetStyleSheet(),
                 "MasterPage without StyleSheet detected (!)");
 		}
 

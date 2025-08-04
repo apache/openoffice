@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -304,7 +304,7 @@ Verhalten von Delete-Redline:
 bool SwDoc::AppendRedline( SwRedline* pNewRedl, bool bCallDelete )
 {
 #if 0
-// #i93179# disabled: ASSERT in ~SwIndexReg     #ifdef DBG_UTIL 
+// #i93179# disabled: ASSERT in ~SwIndexReg     #ifdef DBG_UTIL
     SwRedline aCopy( *pNewRedl );
 #endif
     bool bError = true;
@@ -3284,9 +3284,9 @@ void SwRedline::InvalidateRange()		// das Layout anstossen
         if(pNode && ND_TEXTNODE == pNode->GetNodeType())
         {
             SwTxtNode* pNd = static_cast< SwTxtNode* >(pNode);
-            SwUpdateAttr aHt( 
-                n == nSttNd ? nSttCnt : 0, 
-                n == nEndNd ? nEndCnt : pNd->GetTxt().Len(), 
+            SwUpdateAttr aHt(
+                n == nSttNd ? nSttCnt : 0,
+                n == nEndNd ? nEndCnt : pNd->GetTxt().Len(),
                 RES_FMT_CHG);
 
             pNd->ModifyNotification(&aHt, &aHt);

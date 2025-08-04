@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,7 +41,7 @@ SwWrongArea::SwWrongArea( const rtl::OUString& rType, WrongListType listType,
         com::sun::star::uno::Reference< com::sun::star::container::XStringKeyMap > xPropertyBag,
         xub_StrLen nPos,
         xub_StrLen nLen)
-: maType(rType), mxPropertyBag(xPropertyBag), mnPos(nPos), mnLen(nLen), mpSubList(0) 
+: maType(rType), mxPropertyBag(xPropertyBag), mnPos(nPos), mnLen(nLen), mpSubList(0)
 {
     mColor =  getWrongAreaColor(listType, xPropertyBag);
     mLineType = getWrongAreaLineType(listType, xPropertyBag);
@@ -52,7 +52,7 @@ SwWrongArea::SwWrongArea( const rtl::OUString& rType,
         xub_StrLen nPos,
         xub_StrLen nLen,
         SwWrongList* pSubList)
-: maType(rType), mxPropertyBag(xPropertyBag), mnPos(nPos), mnLen(nLen), mpSubList(pSubList), mLineType(WRONGAREA_NONE) 
+: maType(rType), mxPropertyBag(xPropertyBag), mnPos(nPos), mnLen(nLen), mpSubList(pSubList), mLineType(WRONGAREA_NONE)
 {
     if (pSubList != 0)
     {
@@ -64,7 +64,7 @@ SwWrongArea::SwWrongArea( const rtl::OUString& rType,
 /*************************************************************************
  * SwWrongList::SwWrongList()
  *************************************************************************/
-SwWrongList::SwWrongList( WrongListType eType ) : 
+SwWrongList::SwWrongList( WrongListType eType ) :
     meType       (eType),
     nBeginInvalid(STRING_LEN),  // everything correct... (the invalid area starts beyond the string)
     nEndInvalid  (STRING_LEN)
@@ -281,7 +281,7 @@ void SwWrongList::_Invalidate( xub_StrLen nBegin, xub_StrLen nEnd )
 }
 
 void SwWrongList::SetInvalid( xub_StrLen nBegin, xub_StrLen nEnd )
-{ 
+{
     nBeginInvalid = nBegin;
     nEndInvalid = nEnd;
 }
@@ -425,7 +425,7 @@ void SwWrongList::Invalidate( xub_StrLen nBegin, xub_StrLen nEnd )
 {
     if (STRING_LEN == GetBeginInv())
         SetInvalid( nBegin, nEnd );
-    else 
+    else
         _Invalidate( nBegin, nEnd );
 }
 

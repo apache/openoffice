@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -87,7 +87,7 @@
 namespace framework
 {
 
-//-----------------------------------------------    
+//-----------------------------------------------
 // XInterface, XTypeProvider, XServiceInfo
 DEFINE_XINTERFACE_2(DocumentAcceleratorConfiguration                   ,
                     XMLBasedAcceleratorConfiguration                           ,
@@ -100,7 +100,7 @@ DEFINE_XTYPEPROVIDER_2_WITH_BASECLASS(DocumentAcceleratorConfiguration ,
                                       css::lang::XServiceInfo          ,
                                       css::lang::XInitialization)
 //                                      css::ui::XUIConfigurationStorage)
-                       
+
 DEFINE_XSERVICEINFO_MULTISERVICE(DocumentAcceleratorConfiguration                   ,
                                  ::cppu::OWeakObject                                ,
                                  SERVICENAME_DOCUMENTACCELERATORCONFIGURATION       ,
@@ -115,39 +115,39 @@ DEFINE_INIT_SERVICE(DocumentAcceleratorConfiguration,
                         */
                     }
                    )
-                                    
-//-----------------------------------------------    
+
+//-----------------------------------------------
 DocumentAcceleratorConfiguration::DocumentAcceleratorConfiguration(const css::uno::Reference< css::lang::XMultiServiceFactory > xSMGR)
     : XMLBasedAcceleratorConfiguration(xSMGR)
 {
 }
 
-//-----------------------------------------------    
+//-----------------------------------------------
 DocumentAcceleratorConfiguration::~DocumentAcceleratorConfiguration()
 {
     m_aPresetHandler.removeStorageListener(this);
 }
 
-//-----------------------------------------------    
+//-----------------------------------------------
 void SAL_CALL DocumentAcceleratorConfiguration::initialize(const css::uno::Sequence< css::uno::Any >& lArguments)
     throw(css::uno::Exception       ,
           css::uno::RuntimeException)
 {
     // SAFE -> ----------------------------------
     WriteGuard aWriteLock(m_aLock);
-    
+
     ::comphelper::SequenceAsHashMap lArgs(lArguments);
     m_xDocumentRoot = lArgs.getUnpackedValueOrDefault(
                         ::rtl::OUString::createFromAscii("DocumentRoot"),
                         css::uno::Reference< css::embed::XStorage >());
-    
+
     aWriteLock.unlock();
     // <- SAFE ----------------------------------
-    
+
     impl_ts_fillCache();
 }
 
-//-----------------------------------------------    
+//-----------------------------------------------
 void SAL_CALL DocumentAcceleratorConfiguration::setStorage(const css::uno::Reference< css::embed::XStorage >& xStorage)
 	throw(css::uno::RuntimeException)
 {
@@ -167,7 +167,7 @@ void SAL_CALL DocumentAcceleratorConfiguration::setStorage(const css::uno::Refer
 		impl_ts_fillCache();
 }
 
-//-----------------------------------------------    
+//-----------------------------------------------
 sal_Bool SAL_CALL DocumentAcceleratorConfiguration::hasStorage()
 	throw(css::uno::RuntimeException)
 {
@@ -177,7 +177,7 @@ sal_Bool SAL_CALL DocumentAcceleratorConfiguration::hasStorage()
 	// <- SAFE ----------------------------------
 }
 
-//-----------------------------------------------    
+//-----------------------------------------------
 void DocumentAcceleratorConfiguration::impl_ts_fillCache()
 {
 	// SAFE -> ----------------------------------
@@ -227,7 +227,7 @@ void DocumentAcceleratorConfiguration::impl_ts_fillCache()
 	{}
 }
 
-//-----------------------------------------------    
+//-----------------------------------------------
 void DocumentAcceleratorConfiguration::impl_ts_clearCache()
 {
     m_aPresetHandler.forgetCachedStorages();

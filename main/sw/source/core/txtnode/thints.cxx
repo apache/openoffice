@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1680,8 +1680,8 @@ void SwTxtNode::DeleteAttribute( SwTxtAttr * const pAttr )
     {
         // create MsgHint before start/end become invalid
         SwUpdateAttr aHint(
-            *pAttr->GetStart(), 
-            *pAttr->GetEnd(), 
+            *pAttr->GetStart(),
+            *pAttr->GetEnd(),
             pAttr->Which());
 
         m_pSwpHints->Delete( pAttr );
@@ -1759,8 +1759,8 @@ void SwTxtNode::DeleteAttributes(
                 // Das CalcVisibleFlag bei HiddenParaFields entfaellt,
                 // da dies das Feld im Dtor selbst erledigt.
                 SwUpdateAttr aHint(
-                    nStart, 
-                    *pEndIdx, 
+                    nStart,
+                    *pEndIdx,
                     nWhich);
 
                 m_pSwpHints->DeleteAtPos( nPos );    // gefunden, loeschen,
@@ -1803,7 +1803,7 @@ bool lcl_IsIgnoredCharFmtForNumbering(const sal_uInt16 nWhich)
 bool lcl_IsIgnoredCharFmtForBullets(const sal_uInt16 nWhich)
 {
 	return (nWhich == RES_CHRATR_UNDERLINE || nWhich == RES_CHRATR_POSTURE || nWhich == RES_CHRATR_WEIGHT
-		|| nWhich == RES_CHRATR_CJK_POSTURE || nWhich == RES_CHRATR_CJK_WEIGHT 
+		|| nWhich == RES_CHRATR_CJK_POSTURE || nWhich == RES_CHRATR_CJK_WEIGHT
 		|| nWhich == RES_CHRATR_CTL_POSTURE || nWhich == RES_CHRATR_CTL_WEIGHT);
 }
 
@@ -1814,8 +1814,8 @@ bool lcl_IsIgnoredCharFmtForBullets(const sal_uInt16 nWhich)
 //The item should not conflict to any exist and non-default item inside the character of specified number rule level;
 //The item should not be ignored depend on the exact number rule type;
 bool SwTxtNode::TryCharSetExpandToNum(const SfxItemSet& aCharSet)
-{	
-	bool bRet = false;	
+{
+	bool bRet = false;
 	SfxItemIter aIter( aCharSet );
         const SfxPoolItem* pItem = aIter.FirstItem();
         const sal_uInt16 nWhich = pItem->Which();
@@ -1856,7 +1856,7 @@ bool SwTxtNode::TryCharSetExpandToNum(const SfxItemSet& aCharSet)
 		}
 	}
 
-	
+
 	return bRet;
 }
 //End of modification, by easyfan
@@ -3144,8 +3144,8 @@ bool SwpHints::TryInsertHint(
     {
         SwUpdateAttr aHint(
             // rNode.GetDoc()->GetAttrPool(),
-            nHtStart, 
-            nHtStart == nHintEnd ? nHintEnd + 1 : nHintEnd, 
+            nHtStart,
+            nHtStart == nHintEnd ? nHintEnd + 1 : nHintEnd,
             nWhich);
 
         rNode.ModifyNotification( 0, &aHint );

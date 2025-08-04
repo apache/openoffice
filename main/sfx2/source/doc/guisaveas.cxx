@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -189,7 +189,7 @@ public:
         try
         {
             uno::Reference< lang::XMultiServiceFactory > xDocSettingsSupplier( xModel, uno::UNO_QUERY_THROW );
-            m_xDocumentSettings.set( 
+            m_xDocumentSettings.set(
                 xDocSettingsSupplier->createInstance(
                     ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.document.Settings" ) ) ),
                 uno::UNO_QUERY_THROW );
@@ -994,7 +994,7 @@ sal_Bool ModelData_Impl::OutputFileDialog( sal_Int8 nStoreMode,
 	}
 
     ::rtl::OUString aFilterName = aStringTypeFN;
-    
+
     // the following two arguments can not be converted in MediaDescriptor,
     // so they should be removed from the ItemSet after retrieving
     SFX_ITEMSET_ARG( pDialogParams, pRecommendReadOnly, SfxBoolItem, SID_RECOMMENDREADONLY, sal_False );

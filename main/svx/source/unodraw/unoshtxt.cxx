@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -70,7 +70,7 @@ namespace css = ::com::sun::star;
 // SvxTextEditSourceImpl
 //------------------------------------------------------------------------
 
-/** @descr 
+/** @descr
     <p>This class essentially provides the text and view forwarders. If
     no SdrView is given, this class handles the UNO objects, which are
     currently not concerned with view issues. In this case,
@@ -124,8 +124,8 @@ private:
     void 							SetupOutliner();
 
     sal_Bool						HasView() const { return mpView ? sal_True : sal_False; }
-    sal_Bool						IsEditMode() const 
-    								{ 
+    sal_Bool						IsEditMode() const
+    								{
                                         SdrTextObj* pTextObj = PTR_CAST( SdrTextObj, mpObject );
                                         return mbShapeIsEditMode && pTextObj && pTextObj->IsTextEditActive() ? sal_True : sal_False;
                                     }
@@ -206,7 +206,7 @@ SvxTextEditSourceImpl::SvxTextEditSourceImpl( SdrObject* pObject, SdrText* pText
 		StartListening( *mpModel );
 
 	if( mpObject )
-		mpObject->AddObjectUser( *this ); 
+		mpObject->AddObjectUser( *this );
 }
 
 //------------------------------------------------------------------------
@@ -243,7 +243,7 @@ SvxTextEditSourceImpl::SvxTextEditSourceImpl( SdrObject& rObject, SdrText* pText
 	if( mpView )
 		StartListening( *mpView );
 	if( mpObject )
-		mpObject->AddObjectUser( *this ); 
+		mpObject->AddObjectUser( *this );
 
     // #104157# Init edit mode state from shape info (IsTextEditActive())
     mbShapeIsEditMode = IsEditMode();
@@ -289,7 +289,7 @@ const SvxUnoTextRangeBaseList& SvxTextEditSourceImpl::getRanges() const
 void SAL_CALL SvxTextEditSourceImpl::acquire()
 {
 	osl_incrementInterlockedCount( &maRefCount );
-}	
+}
 
 //------------------------------------------------------------------------
 
@@ -297,7 +297,7 @@ void SAL_CALL SvxTextEditSourceImpl::release()
 {
 	if( ! osl_decrementInterlockedCount( &maRefCount ) )
 		delete this;
-}	
+}
 
 void SvxTextEditSourceImpl::ChangeModel( SdrModel* pNewModel )
 {
@@ -373,10 +373,10 @@ void SvxTextEditSourceImpl::Notify( SfxBroadcaster&, const SfxHint& rHint )
 
                 if( HasView() )
                 {
-                    // #104157# Update maTextOffset, object has changed 
+                    // #104157# Update maTextOffset, object has changed
 					// #105196#, #105203#: Cannot call that // here,
 					// since TakeTextRect() (called from there) //
-					// changes outliner content.  
+					// changes outliner content.
 					// UpdateOutliner();
 
                     // #101029# Broadcast object changes, as they might change visible attributes
@@ -389,10 +389,10 @@ void SvxTextEditSourceImpl::Notify( SfxBroadcaster&, const SfxHint& rHint )
             case HINT_BEGEDIT:
                 if( mpObject == pSdrHint->GetObject() )
                 {
-					//IAccessibility2 Implementation 2009-----, one EditSource object is created for each AccessibleCell, and it will monitor the hint. 
+					//IAccessibility2 Implementation 2009-----, one EditSource object is created for each AccessibleCell, and it will monitor the hint.
 					// Once HINT_BEGEDIT is broadcast, each EditSource of AccessibleCell will handle it here and
-					// call below: mpView->GetTextEditOutliner()->SetNotifyHdl(), which will replace the Notifer for current 
-					// editable cell. It is totally wrong. So add check here to avoid the incorrect replacement of notifer. 
+					// call below: mpView->GetTextEditOutliner()->SetNotifyHdl(), which will replace the Notifer for current
+					// editable cell. It is totally wrong. So add check here to avoid the incorrect replacement of notifer.
 					// To be safe, add accessibility check here because currently it only happen on the editsource of AccessibleCell
 					if (Application::IsAccessibilityEnabled())
 					{
@@ -404,7 +404,7 @@ void SvxTextEditSourceImpl::Notify( SfxBroadcaster&, const SfxHint& rHint )
 								sdr::table::CellRef xCell = pTableObj->getActiveCell();
 								if (xCell.is())
 								{
-									sdr::table::Cell* pCellObj = dynamic_cast< sdr::table::Cell* >( mpText );								
+									sdr::table::Cell* pCellObj = dynamic_cast< sdr::table::Cell* >( mpText );
 									if (pCellObj && xCell.get() != pCellObj)
 											break;
 								}
@@ -652,7 +652,7 @@ SvxTextForwarder* SvxTextEditSourceImpl::GetBackgroundTextForwarder()
 			bOwnParaObj = true;	// text edit active
 		else
 			pOutlinerParaObject = mpText->GetOutlinerParaObject();
-        
+
 		if( pOutlinerParaObject && ( bOwnParaObj || !mpObject->IsEmptyPresObj() || mpObject->GetPage()->IsMasterPage() ) )
 		{
 			mpOutliner->SetText( *pOutlinerParaObject );
@@ -730,7 +730,7 @@ SvxTextForwarder* SvxTextEditSourceImpl::GetEditModeTextForwarder()
 
         if( pEditOutliner )
         {
-			mpTextForwarder = new SvxOutlinerForwarder( *pEditOutliner, (mpObject->GetObjInventor() == SdrInventor) && (mpObject->GetObjIdentifier() == OBJ_OUTLINETEXT) );            
+			mpTextForwarder = new SvxOutlinerForwarder( *pEditOutliner, (mpObject->GetObjInventor() == SdrInventor) && (mpObject->GetObjIdentifier() == OBJ_OUTLINETEXT) );
             mbForwarderIsEditMode = sal_True;
         }
     }
@@ -751,7 +751,7 @@ SvxTextForwarder* SvxTextEditSourceImpl::GetTextForwarder()
 	if( mpModel == NULL )
 		return NULL;
 
-    // distinguish the cases 
+    // distinguish the cases
     // a) connected to view, maybe edit mode is active, can work directly on the EditOutliner
     // b) background Outliner, reflect changes into ParaOutlinerObject (this is exactly the old UNO code)
     if( HasView() )
@@ -828,18 +828,18 @@ SvxEditViewForwarder* SvxTextEditSourceImpl::GetEditViewForwarder( sal_Bool bCre
         {
             // dispose old text forwarder
             UpdateData();
-        
+
             delete mpTextForwarder;
             mpTextForwarder = NULL;
 
             // enter edit mode
             mpView->SdrEndTextEdit();
-            
+
 			if(mpView->SdrBeginTextEdit(mpObject, 0L, 0L, sal_False, (SdrOutliner*)0L, 0L, sal_False, sal_False))
             {
                 SdrTextObj* pTextObj = PTR_CAST( SdrTextObj, mpObject );
                 if( pTextObj->IsTextEditActive() )
-                {                
+                {
                     // create new view forwarder
                     mpViewForwarder = CreateViewForwarder();
                 }
@@ -890,7 +890,7 @@ void SvxTextEditSourceImpl::UpdateData()
 							    }
 						    }
 					    }
-    						
+
                         pTextObj->NbcSetOutlinerParaObjectForText( mpOutliner->CreateParaObject(), mpText );
 				    }
                     else
@@ -898,7 +898,7 @@ void SvxTextEditSourceImpl::UpdateData()
                         pTextObj->NbcSetOutlinerParaObjectForText( NULL,mpText );
                     }
                 }
-                
+
                 if( mpObject->IsEmptyPresObj() )
                     mpObject->SetEmptyPresObj(sal_False);
             }
@@ -962,7 +962,7 @@ Rectangle SvxTextEditSourceImpl::GetVisArea()
             MapMode aMapMode(mpWindow->GetMapMode());
             aMapMode.SetOrigin(Point());
             return mpWindow->LogicToPixel( aVisArea, aMapMode );
-        }        
+        }
     }
 
     return Rectangle();
@@ -982,7 +982,7 @@ Point SvxTextEditSourceImpl::LogicToPixel( const Point& rPoint, const MapMode& r
 
         if( pForwarder )
             return pForwarder->LogicToPixel( rPoint, rMapMode );
-    }    
+    }
     else if( IsValid() && mpModel )
     {
         // #101029#
@@ -990,13 +990,13 @@ Point SvxTextEditSourceImpl::LogicToPixel( const Point& rPoint, const MapMode& r
         aPoint1.X() += maTextOffset.X();
         aPoint1.Y() += maTextOffset.Y();
 
-        Point aPoint2( OutputDevice::LogicToLogic( aPoint1, rMapMode, 
+        Point aPoint2( OutputDevice::LogicToLogic( aPoint1, rMapMode,
                                                    MapMode(mpModel->GetScaleUnit()) ) );
         MapMode aMapMode(mpWindow->GetMapMode());
         aMapMode.SetOrigin(Point());
         return mpWindow->LogicToPixel( aPoint2, aMapMode );
     }
-    
+
     return Point();
 }
 
@@ -1014,14 +1014,14 @@ Point SvxTextEditSourceImpl::PixelToLogic( const Point& rPoint, const MapMode& r
 
         if( pForwarder )
             return pForwarder->PixelToLogic( rPoint, rMapMode );
-    }    
+    }
     else if( IsValid() && mpModel )
     {
         MapMode aMapMode(mpWindow->GetMapMode());
         aMapMode.SetOrigin(Point());
         Point aPoint1( mpWindow->PixelToLogic( rPoint, aMapMode ) );
-        Point aPoint2( OutputDevice::LogicToLogic( aPoint1, 
-                                                   MapMode(mpModel->GetScaleUnit()), 
+        Point aPoint2( OutputDevice::LogicToLogic( aPoint1,
+                                                   MapMode(mpModel->GetScaleUnit()),
                                                    rMapMode ) );
         // #101029#
         aPoint2.X() -= maTextOffset.X();
@@ -1029,7 +1029,7 @@ Point SvxTextEditSourceImpl::PixelToLogic( const Point& rPoint, const MapMode& r
 
         return aPoint2;
     }
-    
+
     return Point();
 }
 

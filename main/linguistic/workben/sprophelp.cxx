@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,7 +51,7 @@ using namespace linguistic;
 
 ///////////////////////////////////////////////////////////////////////////
 
-	
+
 PropertyChgHelper::PropertyChgHelper(
 		const Reference< XInterface > & rxSource,
 		Reference< XPropertySet > &rxPropSet,
@@ -75,13 +75,13 @@ PropertyChgHelper::PropertyChgHelper( const PropertyChgHelper &rHelper ) :
 	xPropSet	= rHelper.xPropSet;
 	aPropNames	= rHelper.aPropNames;
 	AddAsPropListener();
-	
+
 	xMyEvtObj	= rHelper.xMyEvtObj;
 }
 
 
 PropertyChgHelper::~PropertyChgHelper()
-{	
+{
 }
 
 
@@ -112,7 +112,7 @@ void PropertyChgHelper::RemoveAsPropListener()
 		}
 	}
 }
-		 
+
 
 void PropertyChgHelper::LaunchEvent( const LinguServiceEvent &rEvt )
 {
@@ -126,7 +126,7 @@ void PropertyChgHelper::LaunchEvent( const LinguServiceEvent &rEvt )
 }
 
 
-void SAL_CALL PropertyChgHelper::disposing( const EventObject& rSource ) 
+void SAL_CALL PropertyChgHelper::disposing( const EventObject& rSource )
 		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
@@ -137,15 +137,15 @@ void SAL_CALL PropertyChgHelper::disposing( const EventObject& rSource )
 		aPropNames.realloc( 0 );
 	}
 }
-    
-	
-sal_Bool SAL_CALL 
-	PropertyChgHelper::addLinguServiceEventListener( 
-			const Reference< XLinguServiceEventListener >& rxListener ) 
+
+
+sal_Bool SAL_CALL
+	PropertyChgHelper::addLinguServiceEventListener(
+			const Reference< XLinguServiceEventListener >& rxListener )
 		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
-	
+
 	BOOL bRes = FALSE;
 	if (rxListener.is())
 	{
@@ -156,13 +156,13 @@ sal_Bool SAL_CALL
 }
 
 
-sal_Bool SAL_CALL 
-	PropertyChgHelper::removeLinguServiceEventListener( 
-			const Reference< XLinguServiceEventListener >& rxListener ) 
+sal_Bool SAL_CALL
+	PropertyChgHelper::removeLinguServiceEventListener(
+			const Reference< XLinguServiceEventListener >& rxListener )
 		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
-	
+
 	BOOL bRes = FALSE;
 	if (rxListener.is())
 	{
@@ -230,7 +230,7 @@ PropertyHelper_Spell::PropertyHelper_Spell(
 				pbVal	 = &bIsSpellCapitalization;
 				pbResVal = &bResIsSpellCapitalization;
 			}
-			
+
 			if (pbVal && pbResVal)
 			{
 				rxPropSet->getPropertyValue( pPropName[i] ) >>= *pbVal;
@@ -257,8 +257,8 @@ void PropertyHelper_Spell::SetDefault()
 }
 
 
-void SAL_CALL 
-	PropertyHelper_Spell::propertyChange( const PropertyChangeEvent& rEvt ) 
+void SAL_CALL
+	PropertyHelper_Spell::propertyChange( const PropertyChangeEvent& rEvt )
 		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
@@ -274,18 +274,18 @@ void SAL_CALL
 		{
 			case UPH_IS_IGNORE_CONTROL_CHARACTERS :
 			{
-				pbVal = &bIsIgnoreControlCharacters; 
+				pbVal = &bIsIgnoreControlCharacters;
 				break;
 			}
 			case UPH_IS_GERMAN_PRE_REFORM		  :
 			{
-				pbVal = &bIsGermanPreReform; 
+				pbVal = &bIsGermanPreReform;
 				bSCWA = bSWWA = TRUE;
 				break;
 			}
 			case UPH_IS_USE_DICTIONARY_LIST		  :
 			{
-				pbVal = &bIsUseDictionaryList; 
+				pbVal = &bIsUseDictionaryList;
 				bSCWA = bSWWA = TRUE;
 				break;
 			}
@@ -298,14 +298,14 @@ void SAL_CALL
 			}
 			case UPH_IS_SPELL_WITH_DIGITS		  :
 			{
-				pbVal = &bIsSpellWithDigits; 
+				pbVal = &bIsSpellWithDigits;
 				bSCWA = FALSE == *pbVal;	// FALSE->TRUE change?
 				bSWWA = !bSCWA;				// TRUE->FALSE change?
 				break;
 			}
 			case UPH_IS_SPELL_CAPITALIZATION	  :
 			{
-				pbVal = &bIsSpellCapitalization; 
+				pbVal = &bIsSpellCapitalization;
 				bSCWA = FALSE == *pbVal;	// FALSE->TRUE change?
 				bSWWA = !bSCWA;				// TRUE->FALSE change?
 				break;
@@ -328,10 +328,10 @@ void SAL_CALL
 	}
 }
 
-		  
+
 void PropertyHelper_Spell::SetTmpPropVals( const PropertyValues &rPropVals )
 {
-	// set return value to default value unless there is an 
+	// set return value to default value unless there is an
 	// explicitly supplied temporary value
 	bResIsGermanPreReform			= bIsGermanPreReform;
 	bResIsIgnoreControlCharacters	= bIsIgnoreControlCharacters;

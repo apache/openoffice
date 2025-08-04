@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -71,14 +71,14 @@ void doWrite( const Reference < XConnection > &r )
 	{
 		seq.getArray()[i] = i;
 	}
-	
+
 	r->write( seq );
 }
 
 void doRead( const Reference < XConnection > &r )
 {
 	Sequence < sal_Int8 > seq(10);
-	
+
 	OSL_ASSERT( 10 == r->read( seq , 10 ) );
 
 	for( sal_Int32 i = 0 ; i < 10 ; i ++ )
@@ -148,12 +148,12 @@ void testConnection( const OUString &sConnectionDescription  ,
 			catch( ... )
 			{
 				printf( "Couldn't connect, retrying ...\n" );
-				
+
 			}
 		}
 
 		r->close();
-		
+
 		try
 		{
 			Sequence < sal_Int8 > seq(10);
@@ -166,10 +166,10 @@ void testConnection( const OUString &sConnectionDescription  ,
 		}
 		catch ( ... )
 		{
-			OSL_ENSURE( 0 , "wrong exception was thrown" );			
+			OSL_ENSURE( 0 , "wrong exception was thrown" );
 		}
 
-		thread.join();	
+		thread.join();
 	}
 }
 
@@ -179,7 +179,7 @@ int main( int argc, char * argv[] )
 #else
 int __cdecl main( int argc, char * argv[] )
 #endif
-{	
+{
 	Reference< XMultiServiceFactory > xMgr(
 		createRegistryServiceFactory( OUString( RTL_CONSTASCII_USTRINGPARAM("applicat.rdb")) ) );
 
@@ -212,7 +212,7 @@ int __cdecl main( int argc, char * argv[] )
 	fflush( stdout );
 	testConnection( OUString::createFromAscii("socket,host=localhost,port=2001"), rAcceptor , rConnector );
 	printf( " Done\n" );
-	
+
 	printf( "Testing pipe" );
 	fflush( stdout );
 	testConnection( OUString::createFromAscii("pipe,name=bla") , rAcceptorPipe , rConnector );
@@ -251,7 +251,7 @@ int __cdecl main( int argc, char * argv[] )
 		OSL_ENSURE( 0, "unexpected exception with empty connection string" );
 	}
 
-	
+
 	MyThread thread( rAcceptor , OUString::createFromAscii("socket,host=localhost,port=2001") );
 	thread.create();
 
@@ -273,7 +273,7 @@ int __cdecl main( int argc, char * argv[] )
 
 	rAcceptor->stopAccepting();
 	thread.join();
-	
+
 	Reference < XComponent > rComp( xMgr , UNO_QUERY );
 	if( rComp.is() )
 	{

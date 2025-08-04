@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -47,7 +47,7 @@ uno::Reference< uno::XInterface > OFormatCondition::create(uno::Reference< uno::
 DBG_NAME( rpt_OFormatCondition )
 // -----------------------------------------------------------------------------
 OFormatCondition::OFormatCondition(uno::Reference< uno::XComponentContext > const & _xContext)
-:FormatConditionBase(m_aMutex) 
+:FormatConditionBase(m_aMutex)
 ,FormatConditionPropertySet(_xContext,static_cast< Implements >(IMPLEMENTS_PROPERTY_SET),uno::Sequence< ::rtl::OUString >())
 ,m_bEnabled(sal_True)
 {
@@ -61,10 +61,10 @@ OFormatCondition::~OFormatCondition()
 // -----------------------------------------------------------------------------
 IMPLEMENT_FORWARD_XINTERFACE2(OFormatCondition,FormatConditionBase,FormatConditionPropertySet)
 // -----------------------------------------------------------------------------
-void SAL_CALL OFormatCondition::dispose() throw(uno::RuntimeException) 
+void SAL_CALL OFormatCondition::dispose() throw(uno::RuntimeException)
 {
 	FormatConditionPropertySet::dispose();
-	cppu::WeakComponentImplHelperBase::dispose(); 
+	cppu::WeakComponentImplHelperBase::dispose();
 }
 // -----------------------------------------------------------------------------
 ::rtl::OUString OFormatCondition::getImplementationName_Static(  ) throw(uno::RuntimeException)
@@ -82,7 +82,7 @@ uno::Sequence< ::rtl::OUString > OFormatCondition::getSupportedServiceNames_Stat
 {
 	uno::Sequence< ::rtl::OUString > aServices(1);
 	aServices.getArray()[0] = SERVICE_FORMATCONDITION;
-	
+
 	return aServices;
 }
 //--------------------------------------------------------------------------

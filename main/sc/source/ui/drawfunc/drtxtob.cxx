@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -250,7 +250,7 @@ void __EXPORT ScDrawTextObjectBar::Execute( SfxRequest &rReq )
 					else
 						aNewItem = rItem;
 				}
-				else 
+				else
 					ScViewUtil::ExecuteCharMap( rItem, *pViewData->GetViewShell()->GetViewFrame(), aNewItem, aString );
 
 				if ( aString.Len() )
@@ -373,7 +373,7 @@ void __EXPORT ScDrawTextObjectBar::Execute( SfxRequest &rReq )
 			ExecuteGlobal( rReq );
 			break;
 #endif
-    
+
         case SID_THES:
             {
                 String aReplaceText;
@@ -383,14 +383,14 @@ void __EXPORT ScDrawTextObjectBar::Execute( SfxRequest &rReq )
                 if (aReplaceText.Len() > 0)
                     ReplaceTextWithSynonym( pOutView->GetEditView(), aReplaceText );
             }
-            break;        
-    
+            break;
+
         case SID_THESAURUS:
             {
                 pOutView->StartThesaurus();
             }
-            break;        
-    
+            break;
+
     }
 }
 
@@ -483,12 +483,12 @@ void __EXPORT ScDrawTextObjectBar::GetState( SfxItemSet& rSet )
 		}
 	}
 
-    if ( rSet.GetItemState( SID_THES ) != SFX_ITEM_UNKNOWN  || 
+    if ( rSet.GetItemState( SID_THES ) != SFX_ITEM_UNKNOWN  ||
          rSet.GetItemState( SID_THESAURUS ) != SFX_ITEM_UNKNOWN )
     {
         SdrView * pView = pViewData->GetScDrawView();
         OutlinerView* pOutView = pView->GetTextEditOutlinerView();
-        
+
         String          aStatusVal;
         LanguageType    nLang = LANGUAGE_NONE;
         bool bIsLookUpWord = false;
@@ -505,7 +505,7 @@ void __EXPORT ScDrawTextObjectBar::GetState( SfxItemSet& rSet )
             rSet.DisableItem( SID_THES );
         if (!bCanDoThesaurus)
             rSet.DisableItem( SID_THESAURUS );
-    }    
+    }
 }
 
 IMPL_LINK( ScDrawTextObjectBar, ClipboardChanged, TransferableDataHelper*, pDataHelper )
@@ -736,7 +736,7 @@ void __EXPORT ScDrawTextObjectBar::ExecuteAttr( SfxRequest &rReq )
 			}
 			break;
 
-			case SID_CHAR_DLG_EFFECT: 
+			case SID_CHAR_DLG_EFFECT:
 			case SID_CHAR_DLG:						// Dialog-Button
 			case SID_ATTR_CHAR_FONT:				// Controller nicht angezeigt
 			case SID_ATTR_CHAR_FONTHEIGHT:
@@ -938,7 +938,7 @@ void __EXPORT ScDrawTextObjectBar::ExecuteAttr( SfxRequest &rReq )
 		else if(nSlot ==  SID_SET_SUPER_SCRIPT )
 		{
 			SfxItemSet aEditAttr(pView->GetModel()->GetItemPool());
-			pView->GetAttributes(aEditAttr);	
+			pView->GetAttributes(aEditAttr);
 			SfxItemSet	aNewAttr( *aEditAttr.GetPool(), aEditAttr.GetRanges() );
 
 			SvxEscapementItem aItem(EE_CHAR_ESCAPEMENT);
@@ -955,7 +955,7 @@ void __EXPORT ScDrawTextObjectBar::ExecuteAttr( SfxRequest &rReq )
 		else if( nSlot ==  SID_SET_SUB_SCRIPT )
 		{
 			SfxItemSet aEditAttr(pView->GetModel()->GetItemPool());
-			pView->GetAttributes(aEditAttr);	
+			pView->GetAttributes(aEditAttr);
 			SfxItemSet	aNewAttr( *aEditAttr.GetPool(), aEditAttr.GetRanges() );
 
 			SvxEscapementItem aItem(EE_CHAR_ESCAPEMENT);
@@ -973,7 +973,7 @@ void __EXPORT ScDrawTextObjectBar::ExecuteAttr( SfxRequest &rReq )
 		else if (bArgsInReq &&
 			( nSlot == SID_TABLE_VERT_NONE || nSlot == SID_TABLE_VERT_CENTER ||
 			  nSlot == SID_TABLE_VERT_BOTTOM ) )
-		{		
+		{
 			SdrTextVertAdjust eTVA = SDRTEXTVERTADJUST_TOP;
 			if (nSlot == SID_TABLE_VERT_CENTER)
 				eTVA = SDRTEXTVERTADJUST_CENTER;
@@ -988,7 +988,7 @@ void __EXPORT ScDrawTextObjectBar::ExecuteAttr( SfxRequest &rReq )
 		else if (bArgsInReq &&
 			(nSlot == SID_ATTR_PARA_ADJUST_LEFT || nSlot == SID_ATTR_PARA_ADJUST_CENTER || nSlot == SID_ATTR_PARA_ADJUST_RIGHT || nSlot == SID_ATTR_PARA_ADJUST_BLOCK ))
 		{
-			SfxItemSet aEditAttr(pView->GetModel()->GetItemPool());			
+			SfxItemSet aEditAttr(pView->GetModel()->GetItemPool());
 			SfxItemSet	aNewAttr( *aEditAttr.GetPool(), aEditAttr.GetRanges() );
 			switch ( nSlot )
 			{
@@ -1255,18 +1255,18 @@ void ScDrawTextObjectBar::GetStatePropPanelAttr(SfxItemSet &rSet)
 {
 	SfxWhichIter	aIter( rSet );
 	sal_uInt16			nWhich = aIter.FirstWhich();
-	
+
 	SdrView*			pView = pViewData->GetScDrawView();
 
 	SfxItemSet aEditAttr(pView->GetModel()->GetItemPool());
 	pView->GetAttributes(aEditAttr);
 	//SfxItemSet	aAttrs( *aEditAttr.GetPool(), aEditAttr.GetRanges() );
-	
+
 	while ( nWhich )
 	{
 		sal_uInt16 nSlotId = SfxItemPool::IsWhich(nWhich)
 			? GetPool().GetSlotId(nWhich)
-			: nWhich; 
+			: nWhich;
 		switch ( nSlotId )
 		{
 			case SID_TABLE_VERT_NONE:
@@ -1285,19 +1285,19 @@ void ScDrawTextObjectBar::GetStatePropPanelAttr(SfxItemSet &rSet)
 
 				//if(SFX_ITEM_DONTCARE != eVState && SFX_ITEM_DONTCARE != eHState)
 				if(SFX_ITEM_DONTCARE != eVState)
-				{					
+				{
 					SdrTextVertAdjust eTVA = (SdrTextVertAdjust)((const SdrTextVertAdjustItem&)aEditAttr.Get(SDRATTR_TEXT_VERTADJUST)).GetValue();
 					sal_Bool bSet = nSlotId == SID_TABLE_VERT_NONE && eTVA == SDRTEXTVERTADJUST_TOP||
                             nSlotId == SID_TABLE_VERT_CENTER && eTVA == SDRTEXTVERTADJUST_CENTER ||
                             nSlotId == SID_TABLE_VERT_BOTTOM && eTVA == SDRTEXTVERTADJUST_BOTTOM;
 					rSet.Put(SfxBoolItem(nSlotId, bSet));
 				}
-				else 
+				else
 				{
 					rSet.Put(SfxBoolItem(nSlotId, sal_False));
 				}
-				break;	
+				break;
 		}
 		nWhich = aIter.NextWhich();
-	}	
+	}
 }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -131,10 +131,10 @@ namespace sdr
                         {
                             // #i76395#	preview mechanism is only active if
                             // swapin is called from inside paint preparation, so mbInsidePaint
-                            // has to be false to be able to print with high resolution 
-							rGrafObj.ForceSwapIn();				
+                            // has to be false to be able to print with high resolution
+							rGrafObj.ForceSwapIn();
                         }
-						else									
+						else
 						{
 							// SwapIn direct
 							rGrafObj.mbInsidePaint = sal_True;
@@ -161,7 +161,7 @@ namespace sdr
 			return bRetval;
 		}
 
-		// Test graphics state and eventually trigger a SwapIn event. Return value 
+		// Test graphics state and eventually trigger a SwapIn event. Return value
 		// gives info if SwapIn was triggered or not
 		bool ViewObjectContactOfGraphic::impPrepareGraphicWithSynchroniousLoading()
 		{
@@ -183,10 +183,10 @@ namespace sdr
                     {
                         // #i76395#	preview mechanism is only active if
                         // swapin is called from inside paint preparation, so mbInsidePaint
-                        // has to be false to be able to print with high resolution 
-						rGrafObj.ForceSwapIn();				
+                        // has to be false to be able to print with high resolution
+						rGrafObj.ForceSwapIn();
                     }
-					else									
+					else
 					{
 						// SwapIn direct
 						rGrafObj.mbInsidePaint = sal_True;
@@ -213,7 +213,7 @@ namespace sdr
 			rGrafObj.ForceSwapIn();
 
 			// #i103720# forget event to avoid possible deletion by the following ActionChanged call
-            // which may use createPrimitive2DSequence/impPrepareGraphicWithAsynchroniousLoading again. 
+            // which may use createPrimitive2DSequence/impPrepareGraphicWithAsynchroniousLoading again.
             // Deletion is actually done by the scheduler who leaded to coming here
 			mpAsynchLoadEvent = 0;
 
@@ -230,7 +230,7 @@ namespace sdr
 
             if(mpAsynchLoadEvent)
             {
-    			OSL_ENSURE(!pEvent || mpAsynchLoadEvent == pEvent, 
+    			OSL_ENSURE(!pEvent || mpAsynchLoadEvent == pEvent,
                     "ViewObjectContactOfGraphic::forgetAsynchGraphicLoadingEvent: Forced to forget another event then i have scheduled (?)");
 
                 // forget event

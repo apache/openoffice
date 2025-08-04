@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -38,24 +38,24 @@ ModuleSizeExceeded::ModuleSizeExceeded( const uno::Sequence< ::rtl::OUString >& 
 	script::ModuleSizeExceededRequest aReq;
 	aReq.Names = sModules;
 
-	m_aRequest <<= aReq;	
+	m_aRequest <<= aReq;
 
-    m_xAbort.set( uno::Reference< task::XInteractionAbort >(new comphelper::OInteractionAbort), uno::UNO_QUERY );    
-    m_xApprove.set( uno::Reference< task::XInteractionApprove >(new comphelper::OInteractionApprove ), uno::UNO_QUERY ); 
+    m_xAbort.set( uno::Reference< task::XInteractionAbort >(new comphelper::OInteractionAbort), uno::UNO_QUERY );
+    m_xApprove.set( uno::Reference< task::XInteractionApprove >(new comphelper::OInteractionApprove ), uno::UNO_QUERY );
 	m_lContinuations.realloc( 2 );
 	m_lContinuations[0] =  m_xApprove;
 	m_lContinuations[1] = m_xAbort;
 }
 
-sal_Bool 
-ModuleSizeExceeded::isAbort() const 
-{ 
+sal_Bool
+ModuleSizeExceeded::isAbort() const
+{
     comphelper::OInteractionAbort* pBase = static_cast< comphelper::OInteractionAbort* >( m_xAbort.get() );
     return pBase->wasSelected();
 }
 
-sal_Bool 
-ModuleSizeExceeded::isApprove() const 
+sal_Bool
+ModuleSizeExceeded::isApprove() const
 {
     comphelper::OInteractionApprove* pBase = static_cast< comphelper::OInteractionApprove* >( m_xApprove.get() );
     return pBase->wasSelected();

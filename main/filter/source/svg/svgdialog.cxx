@@ -1,5 +1,5 @@
  /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,23 +7,23 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_filter.hxx"
 
-#include "svgdialog.hxx" 
-#include "impsvgdialog.hxx" 
+#include "svgdialog.hxx"
+#include "impsvgdialog.hxx"
 
 #include <vcl/svapp.hxx>
 #include <vcl/dialog.hxx>
@@ -64,23 +64,23 @@ OUString SVGDialog_getImplementationName ()
 
 // -----------------------------------------------------------------------------
 
-Sequence< sal_Int8 > SAL_CALL SVGDialog_getImplementationId() 
+Sequence< sal_Int8 > SAL_CALL SVGDialog_getImplementationId()
     throw(RuntimeException)
 {
     static const ::cppu::OImplementationId aId;
-    
+
     return( aId.getImplementationId() );
 }
 
 // -----------------------------------------------------------------------------
 
-Sequence< OUString > SAL_CALL SVGDialog_getSupportedServiceNames() 
+Sequence< OUString > SAL_CALL SVGDialog_getSupportedServiceNames()
     throw (RuntimeException)
 {
 	Sequence< OUString > aRet( 1 );
-    
+
     aRet.getArray()[ 0 ] = OUString ( RTL_CONSTASCII_USTRINGPARAM ( SVG_DIALOG_SERVICE_NAME ) );
-    
+
     return aRet;
 }
 
@@ -102,7 +102,7 @@ SVGDialog::SVGDialog( const Reference< XMultiServiceFactory > &rxMSF ) :
 	ByteString aResMgrName( "svgfilter" );
 
 	aResMgrName.Append( ByteString::CreateFromInt32( 0/*SOLARUPD*/ ) );
-	
+
     // !!! KA: enable ResMgr
     // mapResMgr.reset( ResMgr::CreateResMgr( aResMgrName.GetBuffer(), Application::GetSettings().GetUILocale() ) );
 }
@@ -115,13 +115,13 @@ SVGDialog::~SVGDialog()
 
 // -----------------------------------------------------------------------------
 
-Any SAL_CALL SVGDialog::queryInterface( const Type& rType ) 
+Any SAL_CALL SVGDialog::queryInterface( const Type& rType )
     throw (RuntimeException)
 {
     Any aReturn( OGenericUnoDialog::queryInterface( rType ) );
 
 	if( !aReturn.hasValue() )
-    {   
+    {
         aReturn = ::cppu::queryInterface( rType, static_cast< XPropertyAccess* >( this ),
                                                  static_cast< XExporter* >( this ) );
     }
@@ -131,7 +131,7 @@ Any SAL_CALL SVGDialog::queryInterface( const Type& rType )
 
 // -----------------------------------------------------------------------------
 
-void SAL_CALL SVGDialog::acquire() 
+void SAL_CALL SVGDialog::acquire()
     throw ()
 {
     OWeakObject::acquire();
@@ -139,7 +139,7 @@ void SAL_CALL SVGDialog::acquire()
 
 // -----------------------------------------------------------------------------
 
-void SAL_CALL SVGDialog::release() 
+void SAL_CALL SVGDialog::release()
     throw ()
 {
     OWeakObject::release();
@@ -147,7 +147,7 @@ void SAL_CALL SVGDialog::release()
 
 // -----------------------------------------------------------------------------
 
-Sequence< sal_Int8 > SAL_CALL SVGDialog::getImplementationId() 
+Sequence< sal_Int8 > SAL_CALL SVGDialog::getImplementationId()
     throw(RuntimeException)
 {
     return SVGDialog_getImplementationId();
@@ -155,7 +155,7 @@ Sequence< sal_Int8 > SAL_CALL SVGDialog::getImplementationId()
 
 // -----------------------------------------------------------------------------
 
-OUString SAL_CALL SVGDialog::getImplementationName() 
+OUString SAL_CALL SVGDialog::getImplementationName()
 	throw (RuntimeException)
 {
 	return SVGDialog_getImplementationName();
@@ -173,8 +173,8 @@ Sequence< OUString > SAL_CALL SVGDialog::getSupportedServiceNames()
 
 Dialog*	SVGDialog::createDialog( Window* pParent )
 {
-    return( ( /*KA: *mapResMgr.get() &&*/ mxSrcDoc.is() ) ? 
-            new ImpSVGDialog( pParent/*KA: , *mapResMgr*/, maFilterData ) : 
+    return( ( /*KA: *mapResMgr.get() &&*/ mxSrcDoc.is() ) ?
+            new ImpSVGDialog( pParent/*KA: , *mapResMgr*/, maFilterData ) :
             NULL );
 }
 
@@ -190,7 +190,7 @@ void SVGDialog::executedDialog( sal_Int16 nExecutionResult )
 
 // -----------------------------------------------------------------------------
 
-Reference< XPropertySetInfo > SAL_CALL SVGDialog::getPropertySetInfo() 
+Reference< XPropertySetInfo > SAL_CALL SVGDialog::getPropertySetInfo()
     throw(RuntimeException)
 {
     return( Reference< XPropertySetInfo >( createPropertySetInfo( getInfoHelper() ) ) );
@@ -206,9 +206,9 @@ Reference< XPropertySetInfo > SAL_CALL SVGDialog::getPropertySetInfo()
 ::cppu::IPropertyArrayHelper* SVGDialog::createArrayHelper() const
 {
 	Sequence< Property > aProps;
-	
+
     describeProperties(aProps);
-	
+
     return new ::cppu::OPropertyArrayHelper( aProps );
 }
 
@@ -221,31 +221,31 @@ Sequence< PropertyValue > SAL_CALL SVGDialog::getPropertyValues()
 
     for( i = 0, nCount = maMediaDescriptor.getLength(); i < nCount; ++i )
 	{
-        if( maMediaDescriptor[ i ].Name.equalsAscii( SVG_FILTER_DATA_NAME ) ) 
+        if( maMediaDescriptor[ i ].Name.equalsAscii( SVG_FILTER_DATA_NAME ) )
             break;
 	}
 
     if( i == nCount )
-    {        
+    {
 		maMediaDescriptor.realloc( ++nCount );
         maMediaDescriptor[ i ].Name = String( RTL_CONSTASCII_USTRINGPARAM( SVG_FILTER_DATA_NAME ) );
     }
-    
+
 	maMediaDescriptor[ i ].Value <<= maFilterData;
-    
+
     return( maMediaDescriptor );
 }
 
 // -----------------------------------------------------------------------------
 
-void SAL_CALL SVGDialog::setPropertyValues( const Sequence< PropertyValue >& rProps ) 
+void SAL_CALL SVGDialog::setPropertyValues( const Sequence< PropertyValue >& rProps )
     throw ( UnknownPropertyException, PropertyVetoException, IllegalArgumentException, WrappedTargetException, RuntimeException )
 {
     maMediaDescriptor = rProps;
 
 	for( sal_Int32 i = 0, nCount = maMediaDescriptor.getLength(); i < nCount; i++ )
 	{
-        if( maMediaDescriptor[ i ].Name.equalsAscii( SVG_FILTER_DATA_NAME ) ) 
+        if( maMediaDescriptor[ i ].Name.equalsAscii( SVG_FILTER_DATA_NAME ) )
 		{
 			maMediaDescriptor[ i ].Value >>= maFilterData;
 			break;
@@ -255,7 +255,7 @@ void SAL_CALL SVGDialog::setPropertyValues( const Sequence< PropertyValue >& rPr
 
 // -----------------------------------------------------------------------------
 
-void SAL_CALL SVGDialog::setSourceDocument( const Reference< XComponent >& xDoc ) 
+void SAL_CALL SVGDialog::setSourceDocument( const Reference< XComponent >& xDoc )
     throw(IllegalArgumentException, RuntimeException)
 {
     mxSrcDoc = xDoc;

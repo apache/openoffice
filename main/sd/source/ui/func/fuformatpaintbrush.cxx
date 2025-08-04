@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -57,7 +57,7 @@ namespace sd {
 
 TYPEINIT1( FuFormatPaintBrush, FuText );
 
-FuFormatPaintBrush::FuFormatPaintBrush( ViewShell* pViewSh, ::sd::Window* pWin, ::sd::View* pView, SdDrawDocument* pDoc, SfxRequest& rReq ) 
+FuFormatPaintBrush::FuFormatPaintBrush( ViewShell* pViewSh, ::sd::Window* pWin, ::sd::View* pView, SdDrawDocument* pDoc, SfxRequest& rReq )
 : FuText(pViewSh, pWin, pView, pDoc, rReq)
 , mbPermanent( false )
 , mbOldIsQuickTextEditMode( true )
@@ -88,7 +88,7 @@ void FuFormatPaintBrush::DoExecute( SfxRequest& rReq )
 void FuFormatPaintBrush::implcancel()
 {
 	if( mpViewShell && mpViewShell->GetViewFrame() )
-	{			
+	{
 		SfxViewFrame* pViewFrame = mpViewShell->GetViewFrame();
 		pViewFrame->GetBindings().Invalidate(SID_FORMATPAINTBRUSH);
 		pViewFrame->GetDispatcher()->Execute(SID_OBJECT_SELECT, SFX_CALLMODE_ASYNCHRON);
@@ -147,7 +147,7 @@ sal_Bool FuFormatPaintBrush::MouseButtonDown(const MouseEvent& rMEvt)
 		unmarkimpl( mpView );
 
 		if( aVEvt.pObj )
-		{	
+		{
 			sal_uInt16 nHitLog = sal_uInt16 ( mpWindow->PixelToLogic(Size(HITPIX,0)).Width() );
 			sal_Bool bToggle = sal_False;
 			mpView->MarkObj(mpWindow->PixelToLogic( rMEvt.GetPosPixel() ), nHitLog, bToggle, sal_False);
@@ -256,7 +256,7 @@ void FuFormatPaintBrush::Paste( bool bNoCharacterFormats, bool bNoParagraphForma
     if(mpItemSet.get() && (rMarkList.GetMarkCount() == 1) )
     {
         SdrObject* pObj = rMarkList.GetMark(0)->GetMarkedSdrObj();
-    
+
 		if( mpDoc->IsUndoEnabled() )
 		{
 			String sLabel( mpViewShell->GetViewShellBase().RetrieveLabelFromCommand( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ".uno:FormatPaintbrush" ) ) ) );
@@ -265,7 +265,7 @@ void FuFormatPaintBrush::Paste( bool bNoCharacterFormats, bool bNoParagraphForma
 		}
 
         mpView->ApplyFormatPaintBrush( *mpItemSet.get(), bNoCharacterFormats, bNoParagraphFormats );
-        
+
 		if( mpDoc->IsUndoEnabled() )
 		{
 			mpDoc->EndUndo();
@@ -277,7 +277,7 @@ void FuFormatPaintBrush::Paste( bool bNoCharacterFormats, bool bNoParagraphForma
 {
 	const SdrMarkList& rMarkList = rDrawViewShell.GetDrawView()->GetMarkedObjectList();
 	const sal_uLong nMarkCount = rMarkList.GetMarkCount();
-    
+
     if( nMarkCount == 1 )
     {
         SdrObject* pObj = rMarkList.GetMark(0)->GetMarkedSdrObj();

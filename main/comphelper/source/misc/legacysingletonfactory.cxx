@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -123,7 +123,7 @@ namespace comphelper
     {
         return m_sImplementationName;
     }
-    
+
     //--------------------------------------------------------------------
     ::sal_Bool SAL_CALL LegacySingletonFactory::supportsService( const ::rtl::OUString& _rServiceName ) throw (RuntimeException)
     {
@@ -132,7 +132,7 @@ namespace comphelper
         const ::rtl::OUString* pEnd = aServices.getConstArray() + aServices.getLength();
         return ::std::find( pStart, pEnd, _rServiceName ) != pEnd;
     }
-    
+
     //--------------------------------------------------------------------
     Sequence< ::rtl::OUString > SAL_CALL LegacySingletonFactory::getSupportedServiceNames(  ) throw (RuntimeException)
     {
@@ -160,7 +160,7 @@ namespace comphelper
 
         return m_xTheInstance;
     }
-    
+
     //--------------------------------------------------------------------
     Reference< XInterface > SAL_CALL LegacySingletonFactory::createInstanceWithArgumentsAndContext( const Sequence< Any >& _rArguments, const Reference< XComponentContext >& _rxContext ) throw (Exception, RuntimeException)
     {

@@ -130,7 +130,7 @@ SwChangeDBDlg::SwChangeDBDlg(SwView& rVw) :
 }
 
 /*--------------------------------------------------------------------
-	Description: initialize database listboxes 
+	Description: initialize database listboxes
  --------------------------------------------------------------------*/
 
 

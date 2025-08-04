@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -42,8 +42,8 @@ namespace drawinglayer
 			const basegfx::B2DPolygon aUnitOutline(basegfx::tools::createUnitPolygon());
 
             return createHiddenGeometryPrimitives2D(
-                bFilled, 
-                basegfx::B2DPolyPolygon(aUnitOutline), 
+                bFilled,
+                basegfx::B2DPolyPolygon(aUnitOutline),
                 rMatrix);
         }
 
@@ -52,8 +52,8 @@ namespace drawinglayer
             const basegfx::B2DPolyPolygon& rPolyPolygon)
         {
             return createHiddenGeometryPrimitives2D(
-                bFilled, 
-                rPolyPolygon, 
+                bFilled,
+                rPolyPolygon,
                 basegfx::B2DHomMatrix());
         }
 
@@ -62,8 +62,8 @@ namespace drawinglayer
             const basegfx::B2DRange& rRange)
 		{
 			return createHiddenGeometryPrimitives2D(
-                bFilled, 
-                rRange, 
+                bFilled,
+                rRange,
                 basegfx::B2DHomMatrix());
 		}
 
@@ -75,8 +75,8 @@ namespace drawinglayer
 			const basegfx::B2DPolyPolygon aOutline(basegfx::tools::createPolygonFromRect(rRange));
 
 			return createHiddenGeometryPrimitives2D(
-                bFilled, 
-                aOutline, 
+                bFilled,
+                aOutline,
                 rMatrix);
 		}
 
@@ -93,7 +93,7 @@ namespace drawinglayer
             if(bFilled)
             {
                 xReference = new PolyPolygonColorPrimitive2D(
-                    basegfx::B2DPolyPolygon(aScaledOutline), 
+                    basegfx::B2DPolyPolygon(aScaledOutline),
                     basegfx::BColor(0.0, 0.0, 0.0));
             }
             else
@@ -101,7 +101,7 @@ namespace drawinglayer
 				const basegfx::BColor aGrayTone(0xc0 / 255.0, 0xc0 / 255.0, 0xc0 / 255.0);
 
                 xReference = new PolyPolygonHairlinePrimitive2D(
-                    aScaledOutline, 
+                    aScaledOutline,
                     aGrayTone);
             }
 

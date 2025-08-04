@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -394,7 +394,7 @@ void ShutdownIcon::StartFileDialog()
     ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
     bool bDirty = ( m_bSystemDialogs != static_cast<bool>(SvtMiscOptions().UseSystemFileDialog()) );
-    
+
     if ( m_pFileDlg && bDirty )
     {
         // Destroy instance as changing the system file dialog setting
@@ -402,7 +402,7 @@ void ShutdownIcon::StartFileDialog()
         delete m_pFileDlg;
         m_pFileDlg = NULL;
     }
-    
+
     if ( !m_pFileDlg )
         m_pFileDlg = new FileDialogHelper( WB_OPEN | SFXWB_MULTISELECTION, String() );
     m_pFileDlg->StartExecuteModal( STATIC_LINK( this, ShutdownIcon, DialogClosedHdl_Impl ) );
@@ -560,14 +560,14 @@ void ShutdownIcon::addTerminateListener()
     ShutdownIcon* pInst = getInstance();
     if ( ! pInst)
         return;
-        
+
     if (pInst->m_bListenForTermination)
         return;
 
     Reference< XDesktop > xDesktop = pInst->m_xDesktop;
     if ( ! xDesktop.is())
         return;
-        
+
 	xDesktop->addTerminateListener( pInst );
     pInst->m_bListenForTermination = true;
 }
@@ -583,7 +583,7 @@ void ShutdownIcon::terminateDesktop()
     Reference< XDesktop > xDesktop = pInst->m_xDesktop;
     if ( ! xDesktop.is())
         return;
-        
+
     // always remove ourselves as listener
     pInst->m_bListenForTermination = true;
     xDesktop->removeTerminateListener( pInst );
@@ -735,8 +735,8 @@ void SAL_CALL ShutdownIcon::initialize( const ::com::sun::star::uno::Sequence< :
 #ifdef OS2
 				// above win32 starts the quickstart thread, but we have
 				// quickstart running only when -quickstart is specified
-				// on command line (next boot). 
-				// so if -quickstart was not specified, we cannot issue	
+				// on command line (next boot).
+				// so if -quickstart was not specified, we cannot issue
 				// quickstart veto on shutdown.
 				if (bQuickstart)
 				{
@@ -904,10 +904,10 @@ void ShutdownIcon::SetAutostart( bool bActivate )
 													 osl_getThreadTextEncoding() );
 		OString aShortcutUnx = OUStringToOString( aShortcut,
 												  osl_getThreadTextEncoding() );
-		if ((0 != symlink( aDesktopFileUnx.getStr(), aShortcutUnx.getStr())) && (errno == EEXIST)) 
-		{ 
-		unlink( aShortcutUnx.getStr()); 
-		symlink( aDesktopFileUnx.getStr(), aShortcutUnx.getStr()); 
+		if ((0 != symlink( aDesktopFileUnx.getStr(), aShortcutUnx.getStr())) && (errno == EEXIST))
+		{
+		unlink( aShortcutUnx.getStr());
+		symlink( aDesktopFileUnx.getStr(), aShortcutUnx.getStr());
 		}
 
 		ShutdownIcon *pIcon = ShutdownIcon::createInstance();
@@ -954,18 +954,18 @@ void SAL_CALL ShutdownIcon::setFastPropertyValue(       ::sal_Int32             
                 ::sal_Bool bState( sal_False );
                 if (! (aValue >>= bState))
                     return;
-                    
+
                 m_bVeto = bState;
                 if (m_bVeto && ! m_bListenForTermination)
                     addTerminateListener();
              }
              break;
-             
+
         default :
             throw ::com::sun::star::beans::UnknownPropertyException();
     }
 }
-            
+
 // XFastPropertySet
 ::com::sun::star::uno::Any SAL_CALL ShutdownIcon::getFastPropertyValue( ::sal_Int32 nHandle )
     throw (::com::sun::star::beans::UnknownPropertyException,
@@ -981,10 +981,10 @@ void SAL_CALL ShutdownIcon::setFastPropertyValue(       ::sal_Int32             
                      aValue <<= bState;
              }
              break;
-             
+
         default :
             throw ::com::sun::star::beans::UnknownPropertyException();
     }
-    
+
     return aValue;
 }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -113,7 +113,7 @@ public:
     int                     GetCachedGlyphWidth( int nCharCode ) const;
     void                    CacheGlyphWidth( int nCharCode, int nCharWidth );
 
-	bool					InitKashidaHandling( HDC ); 
+	bool					InitKashidaHandling( HDC );
 	int						GetMinKashidaWidth() const { return mnMinKashidaWidth; }
 	int						GetMinKashidaGlyph() const { return mnMinKashidaGlyph; }
 
@@ -1880,7 +1880,7 @@ int UniscribeLayout::GetNextGlyphs( int nLen, sal_GlyphId* pGlyphs, Point& rPos,
 			for( int i = rVI.mnMinGlyphPos; i < rVI.mnEndGlyphPos; ++i ) {
 				if( mpGlyphs2Chars[i] == CHARPOS_NONE )
 					mpGlyphs2Chars[i] = c;
-				else 
+				else
 					c = mpGlyphs2Chars[i];
 			}
 		}
@@ -2153,7 +2153,7 @@ void UniscribeLayout::Simplify( bool /*bIsBase*/ )
         }
 		// If there are still glyphs in the cluster and mnMinGlyphPos
 		// has changed then we need to remove the dropped glyphs at start
-		// to correct logClusters, which is unsigned and relative to the 
+		// to correct logClusters, which is unsigned and relative to the
 		// item start.
 		if (rVI.mnMinGlyphPos != nOrigMinGlyphPos)
 		{
@@ -2463,9 +2463,9 @@ void UniscribeLayout::ApplyDXArray( const ImplLayoutArgs& rArgs )
 		if( rVisualItem.IsRTL() )
         {
 			for( i = rVisualItem.mnMinGlyphPos; i < rVisualItem.mnEndGlyphPos; ++i )
-                if ( (1U << mpVisualAttrs[i].uJustification) & 0xFF82 )  //  any Arabic justification 
+                if ( (1U << mpVisualAttrs[i].uJustification) & 0xFF82 )  //  any Arabic justification
                 {                                                        //  excluding SCRIPT_JUSTIFY_NONE
-                    // yes                                               
+                    // yes
                     rVisualItem.mbHasKashidas = true;
                     // so prepare for kashida handling
                     InitKashidaHandling();
@@ -2518,7 +2518,7 @@ void UniscribeLayout::ApplyDXArray( const ImplLayoutArgs& rArgs )
         {
             for( i = nMinGlyphPos; i < nEndGlyphPos; ++i )
                 nXOffset += mpJustifications[ i ];
-           
+
             if( rVisualItem.mbHasKashidas )
 				KashidaItemFix( nMinGlyphPos, nEndGlyphPos );
         }
@@ -2617,7 +2617,7 @@ bool UniscribeLayout::KashidaWordFix ( int nMinGlyphPos, int nEndGlyphPos, int* 
 	if ( nMaxAdded <= 0 )
 		return false;
 	// return early if there is not enough space for an extra kashida
-	if( 2*nMaxAdded < mnMinKashidaWidth ) 
+	if( 2*nMaxAdded < mnMinKashidaWidth )
 		return false;
 
 	// redistribute the extra spacing to the kashida position
@@ -2641,7 +2641,7 @@ bool UniscribeLayout::KashidaWordFix ( int nMinGlyphPos, int nEndGlyphPos, int* 
 		// ugly: steal some pixels
 		long nSteal = 1;
 		if ( nMaxPos - nMinPos > 0 && ((mnMinKashidaWidth - nSpaceAdded) > (nMaxPos - nMinPos)))
-			nSteal = (mnMinKashidaWidth - nSpaceAdded) / (nMaxPos - nMinPos); 
+			nSteal = (mnMinKashidaWidth - nSpaceAdded) / (nMaxPos - nMinPos);
 		for( int i = nMinPos; i <= nMaxPos; ++i )
 		{
 			if( i == nKashPos )
@@ -2760,11 +2760,11 @@ bool UniscribeLayout::IsKashidaPosValid ( int nCharPos ) const
 		}
     }
 	// Invalid char pos or leftmost glyph in visual item
-    if ( nMinGlyphIndex == -1 || !mpLogClusters[ nCharPos ] ) 
+    if ( nMinGlyphIndex == -1 || !mpLogClusters[ nCharPos ] )
 		return false;
 
 //	This test didn't give the expected results
-/*	if( mpLogClusters[ nCharPos+1 ] == mpLogClusters[ nCharPos ]) 
+/*	if( mpLogClusters[ nCharPos+1 ] == mpLogClusters[ nCharPos ])
 	// two chars, one glyph
 		return false;*/
 
@@ -2774,9 +2774,9 @@ bool UniscribeLayout::IsKashidaPosValid ( int nCharPos ) const
 	// justification is only allowed if the glyph to the left has not SCRIPT_JUSTIFY_NONE
 	// and not SCRIPT_JUSTIFY_ARABIC_BLANK
 	// special case: glyph to the left is vowel (no advance width)
-	if ( mpVisualAttrs[ nGlyphPos-1 ].uJustification == SCRIPT_JUSTIFY_ARABIC_BLANK 
-		|| ( mpVisualAttrs[ nGlyphPos-1 ].uJustification == SCRIPT_JUSTIFY_NONE 
-			&& mpGlyphAdvances [ nGlyphPos-1 ] ))	
+	if ( mpVisualAttrs[ nGlyphPos-1 ].uJustification == SCRIPT_JUSTIFY_ARABIC_BLANK
+		|| ( mpVisualAttrs[ nGlyphPos-1 ].uJustification == SCRIPT_JUSTIFY_NONE
+			&& mpGlyphAdvances [ nGlyphPos-1 ] ))
 		return false;
 	return true;
 }
@@ -3159,10 +3159,10 @@ bool ImplWinFontEntry::InitKashidaHandling( HDC hDC )
 	mnMinKashidaWidth = 0;
 	mnMinKashidaGlyph = 0;
 #ifdef USE_UNISCRIBE
-	if (aUspModule || (bUspEnabled && InitUSP())) 
+	if (aUspModule || (bUspEnabled && InitUSP()))
 	{
 		SCRIPT_FONTPROPERTIES aFontProperties;
-		aFontProperties.cBytes = sizeof (aFontProperties); 
+		aFontProperties.cBytes = sizeof (aFontProperties);
 		SCRIPT_CACHE& rScriptCache = GetScriptCache();
 		HRESULT nRC = (*pScriptGetFontProperties)( hDC, &rScriptCache, &aFontProperties );
 		if( nRC != 0 )

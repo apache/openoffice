@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -195,7 +195,7 @@ public:
 
 namespace basegfx
 {
-    namespace { struct DefaultPolyPolygon: public rtl::Static<B2DPolyPolygon::ImplType, 
+    namespace { struct DefaultPolyPolygon: public rtl::Static<B2DPolyPolygon::ImplType,
                                                               DefaultPolyPolygon> {}; }
 
 	B2DPolyPolygon::B2DPolyPolygon() :
@@ -250,7 +250,7 @@ namespace basegfx
 	B2DPolygon B2DPolyPolygon::getB2DPolygon(sal_uInt32 nIndex) const
 	{
 		OSL_ENSURE(nIndex < mpPolyPolygon->count(), "B2DPolyPolygon access outside range (!)");
-		
+
 		return mpPolyPolygon->getB2DPolygon(nIndex);
 	}
 
@@ -280,7 +280,7 @@ namespace basegfx
 	void B2DPolyPolygon::insert(sal_uInt32 nIndex, const B2DPolygon& rPolygon, sal_uInt32 nCount)
 	{
 		OSL_ENSURE(nIndex <= mpPolyPolygon->count(), "B2DPolyPolygon Insert outside range (!)");
-		
+
 		if(nCount)
 			mpPolyPolygon->insert(nIndex, rPolygon, nCount);
 	}
@@ -318,7 +318,7 @@ namespace basegfx
 	void B2DPolyPolygon::insert(sal_uInt32 nIndex, const B2DPolyPolygon& rPolyPolygon)
 	{
 		OSL_ENSURE(nIndex <= mpPolyPolygon->count(), "B2DPolyPolygon Insert outside range (!)");
-		
+
 		if(rPolyPolygon.count())
 			mpPolyPolygon->insert(nIndex, rPolyPolygon);
 	}
@@ -332,11 +332,11 @@ namespace basegfx
 	void B2DPolyPolygon::remove(sal_uInt32 nIndex, sal_uInt32 nCount)
 	{
 		OSL_ENSURE(nIndex + nCount <= mpPolyPolygon->count(), "B2DPolyPolygon Remove outside range (!)");
-		
+
 		if(nCount)
 			mpPolyPolygon->remove(nIndex, nCount);
 	}
-	
+
 	void B2DPolyPolygon::clear()
 	{
 		mpPolyPolygon = DefaultPolyPolygon::get();

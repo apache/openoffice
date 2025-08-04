@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // RegistryValueImpl.cpp: Implementierung der Klasse RegistryValueImpl.
@@ -68,7 +68,7 @@ RegistryValueImpl::RegistryValueImpl(const std::wstring& Name, const std::wstrin
 */
 RegistryValueImpl::RegistryValueImpl(const std::wstring& Name, const std::string& Value) :
 	m_Name(Name),
-	m_Type(REG_SZ),	
+	m_Type(REG_SZ),
 	m_IntData(0)
 {
 	m_StringData = AnsiToUnicodeString(Value);
@@ -138,7 +138,7 @@ const void* RegistryValueImpl::GetDataBuffer() const
 */
 std::wstring RegistryValueImpl::GetDataAsUniString() const
 {
-	assert(REG_SZ == m_Type);    
+	assert(REG_SZ == m_Type);
 	return m_StringData;
 }
 
@@ -150,13 +150,13 @@ std::string RegistryValueImpl::GetDataAsAnsiString() const
 	assert(REG_SZ == m_Type);
 	return UnicodeToAnsiString(m_StringData);
 }
-	
+
 //--------------------------------------------
-/** Returns the data as number 		
+/** Returns the data as number
 */
 int RegistryValueImpl::GetDataAsInt() const
 {
-	assert(REG_DWORD == m_Type);    
+	assert(REG_DWORD == m_Type);
 	return m_IntData;
 }
 
@@ -175,7 +175,7 @@ int RegistryValueImpl::GetType() const
 
 
 //--------------------------------------------
-/** Set a new name 
+/** Set a new name
 */
 void RegistryValueImpl::SetName(const std::wstring& NewName)
 {
@@ -183,7 +183,7 @@ void RegistryValueImpl::SetName(const std::wstring& NewName)
 }
 
 //--------------------------------------------
-/** 
+/**
 */
 void RegistryValueImpl::SetValue(const std::wstring& NewValue)
 {
@@ -192,7 +192,7 @@ void RegistryValueImpl::SetValue(const std::wstring& NewValue)
 }
 
 //--------------------------------------------
-/** 
+/**
 */
 void RegistryValueImpl::SetValue(const std::string& NewValue)
 {

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -221,13 +221,13 @@ static sal_Bool ImplNumericGetValue( const XubString& rStr, double& rValue,
     return sal_True;
 }
 
-static void ImplUpdateSeparatorString( String& io_rText, 
+static void ImplUpdateSeparatorString( String& io_rText,
                                        const String& rOldDecSep, const String& rNewDecSep,
                                        const String& rOldThSep, const String& rNewThSep )
 {
     rtl::OUStringBuffer aBuf( io_rText.Len() );
     xub_StrLen nIndexDec = 0, nIndexTh = 0, nIndex = 0;
-    
+
     const sal_Unicode* pBuffer = io_rText.GetBuffer();
     while( nIndex != STRING_NOTFOUND )
     {
@@ -253,8 +253,8 @@ static void ImplUpdateSeparatorString( String& io_rText,
             nIndex = STRING_NOTFOUND;
         }
     }
-    
-    io_rText = aBuf.makeStringAndClear();    
+
+    io_rText = aBuf.makeStringAndClear();
 }
 
 static void ImplUpdateSeparators( const String& rOldDecSep, const String& rNewDecSep,
@@ -263,7 +263,7 @@ static void ImplUpdateSeparators( const String& rOldDecSep, const String& rNewDe
 {
     bool bChangeDec = (rOldDecSep != rNewDecSep);
     bool bChangeTh = (rOldThSep != rNewThSep );
-    
+
     if( bChangeDec || bChangeTh )
     {
         sal_Bool bUpdateMode = pEdit->IsUpdateMode();
@@ -271,7 +271,7 @@ static void ImplUpdateSeparators( const String& rOldDecSep, const String& rNewDe
         String aText = pEdit->GetText();
         ImplUpdateSeparatorString( aText, rOldDecSep, rNewDecSep, rOldThSep, rNewThSep );
         pEdit->SetText( aText );
-        
+
         ComboBox* pCombo = dynamic_cast<ComboBox*>(pEdit);
         if( pCombo )
         {
@@ -510,19 +510,19 @@ void NumericFormatter::ImplLoadRes( const ResId& rResId )
     if( pMgr )
     {
         sal_uLong nMask = pMgr->ReadLong();
-    
+
         if ( NUMERICFORMATTER_MIN & nMask )
             mnMin = pMgr->ReadLong();
-    
+
         if ( NUMERICFORMATTER_MAX & nMask )
             mnMax = pMgr->ReadLong();
-    
+
         if ( NUMERICFORMATTER_STRICTFORMAT & nMask )
             SetStrictFormat( (sal_Bool)pMgr->ReadShort() );
-    
+
         if ( NUMERICFORMATTER_DECIMALDIGITS & nMask )
             SetDecimalDigits( pMgr->ReadShort() );
-    
+
         if ( NUMERICFORMATTER_VALUE & nMask )
         {
             mnFieldValue = pMgr->ReadLong();
@@ -697,7 +697,7 @@ sal_Int64 NumericFormatter::Normalize( sal_Int64 nValue ) const
 sal_Int64 NumericFormatter::Denormalize( sal_Int64 nValue ) const
 {
     sal_Int64 nFactor = ImplPower10( GetDecimalDigits() );
-    
+
     if((nValue < ( SAL_MIN_INT64 + nFactor )) ||
        (nValue > ( SAL_MAX_INT64 - nFactor )))
 	return ( nValue / nFactor );
@@ -1109,7 +1109,7 @@ static XubString ImplMetricGetUnitText( const XubString& rStr )
         }
     }
     return aStr;
-    
+
 /*
     // MT: #90545# Preparation for translated strings...
     String aMetricText;
@@ -1128,7 +1128,7 @@ static XubString ImplMetricGetUnitText( const XubString& rStr )
                 break;
         }
     }
-*/    
+*/
 }
 
 // -----------------------------------------------------------------------
@@ -1531,10 +1531,10 @@ void MetricFormatter::ImplLoadRes( const ResId& rResId )
     if( pMgr )
     {
         sal_uLong       nMask = pMgr->ReadLong();
-    
+
         if ( METRICFORMATTER_UNIT & nMask )
             meUnit = (FieldUnit)pMgr->ReadLong();
-    
+
         if ( METRICFORMATTER_CUSTOMUNITTEXT & nMask )
             maCustomUnitText = pMgr->ReadString();
     }

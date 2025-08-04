@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include <TblStylePrHandler.hxx>
@@ -34,7 +34,7 @@ namespace dmapper {
 
 TblStylePrHandler::TblStylePrHandler( DomainMapper & rDMapper ) :
 LoggedProperties(dmapper_logger, "TblStylePrHandler"),
-m_rDMapper( rDMapper ), 
+m_rDMapper( rDMapper ),
 m_pTablePropsHandler( new TablePropertiesHandler( true ) ),
 m_nType( TBL_STYLE_UNKNOWN ),
 m_pProperties( new PropertyMap )
@@ -80,7 +80,7 @@ void TblStylePrHandler::lcl_sprm(Sprm & rSprm)
         case NS_ooxml::LN_CT_PPrBase:
         case NS_ooxml::LN_EG_RPrBase:
         case NS_ooxml::LN_CT_TblPrBase:
-        case NS_ooxml::LN_CT_TrPrBase: 
+        case NS_ooxml::LN_CT_TrPrBase:
         case NS_ooxml::LN_CT_TcPrBase:
             resolveSprmProps( rSprm );
             break;
@@ -97,7 +97,7 @@ void TblStylePrHandler::lcl_sprm(Sprm & rSprm)
                 m_rDMapper.PopStyleSheetProperties( true );
             }
     }
-    
+
 #ifdef DEBUG_DMAPPER_TBL_STYLE_HANDLER
     dmapper_logger->endElement("TblStylePrHandler.sprm");
 #endif

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -59,20 +59,20 @@ int xmlStreamMatch( const char* uri )
 		( enableXmlStreamIO & XMLSTREAMIO_REGISTERED ) ) {
 		if( uri == NULL || !m_xUriBinding.is() )
 			return 0 ;
-        //XMLSec first unescapes the uri and  calls this function. For example, we pass the Uri 
-        //ObjectReplacements/Object%201 then XMLSec passes ObjectReplacements/Object 1  
-        //first. If this failed it would try this 
+        //XMLSec first unescapes the uri and  calls this function. For example, we pass the Uri
+        //ObjectReplacements/Object%201 then XMLSec passes ObjectReplacements/Object 1
+        //first. If this failed it would try this
         //again with the original escaped string. However, it does not get this far, because there
         //is another callback registered by libxml which claims to be able to handle this uri.
         ::rtl::OUString sUri =
-            ::rtl::Uri::encode( ::rtl::OUString::createFromAscii( uri ), 
-            rtl_UriCharClassUric, rtl_UriEncodeKeepEscapes, RTL_TEXTENCODING_UTF8); 
+            ::rtl::Uri::encode( ::rtl::OUString::createFromAscii( uri ),
+            rtl_UriCharClassUric, rtl_UriEncodeKeepEscapes, RTL_TEXTENCODING_UTF8);
 		xInputStream = m_xUriBinding->getUriBinding( sUri ) ;
         if (!xInputStream.is())
         {
             //Try the passed in uri directly.
-            //For old documents prior OOo 3.0. We did not use URIs then.   
-            xInputStream = m_xUriBinding->getUriBinding( 
+            //For old documents prior OOo 3.0. We did not use URIs then.
+            xInputStream = m_xUriBinding->getUriBinding(
                 ::rtl::OUString::createFromAscii(uri));
         }
 	}
@@ -95,17 +95,17 @@ void* xmlStreamOpen( const char* uri )
 
         //see xmlStreamMatch
         ::rtl::OUString sUri =
-            ::rtl::Uri::encode( ::rtl::OUString::createFromAscii( uri ), 
-            rtl_UriCharClassUric, rtl_UriEncodeKeepEscapes, RTL_TEXTENCODING_UTF8); 
+            ::rtl::Uri::encode( ::rtl::OUString::createFromAscii( uri ),
+            rtl_UriCharClassUric, rtl_UriEncodeKeepEscapes, RTL_TEXTENCODING_UTF8);
         xInputStream = m_xUriBinding->getUriBinding( sUri ) ;
         if (!xInputStream.is())
         {
             //For old documents.
             //try the passed in uri directly.
-            xInputStream = m_xUriBinding->getUriBinding( 
+            xInputStream = m_xUriBinding->getUriBinding(
                 ::rtl::OUString::createFromAscii(uri));
         }
-	
+
 		if( xInputStream.is() ) {
 			pInputStream = xInputStream.get() ;
 			pInputStream->acquire() ;

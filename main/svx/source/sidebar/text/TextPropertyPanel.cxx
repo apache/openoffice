@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "precompiled_svx.hxx"
@@ -92,7 +92,7 @@ PopupControl* TextPropertyPanel::CreateUnderlinePopupControl (PopupContainer* pP
 	return new TextUnderlineControl(pParent, *this, mpBindings);
 }
 
-namespace 
+namespace
 {
     Color GetAutomaticColor(void)
     {
@@ -107,7 +107,7 @@ long TextPropertyPanel::GetSelFontSize()
     if (mpHeightItem)
         nH = LogicToLogic(  mpHeightItem->GetHeight(), (MapUnit)eUnit, MAP_TWIP );
     return nH;
-} 
+}
 
 
 TextPropertyPanel* TextPropertyPanel::Create (
@@ -122,7 +122,7 @@ TextPropertyPanel* TextPropertyPanel::Create (
         throw lang::IllegalArgumentException(A2S("no XFrame given to TextPropertyPanel::Create"), NULL, 1);
     if (pBindings == NULL)
         throw lang::IllegalArgumentException(A2S("no SfxBindings given to TextPropertyPanel::Create"), NULL, 2);
-    
+
     return new TextPropertyPanel(
         pParent,
         rxFrame,
@@ -360,7 +360,7 @@ void TextPropertyPanel::UpdateFontColorToolbox (
 void TextPropertyPanel::DataChanged (const DataChangedEvent& rEvent)
 {
     (void)rEvent;
-    
+
     SetupToolboxItems();
 }
 
@@ -372,7 +372,7 @@ void TextPropertyPanel::Initialize (void)
     //<<modify fill font list
     SfxObjectShell* pDocSh = SfxObjectShell::Current();
     const SfxPoolItem* pItem = NULL;
-    
+
     if (pDocSh != NULL)
         pItem = pDocSh->GetItem( SID_ATTR_CHAR_FONTLIST );
     if (pItem != NULL)
@@ -425,7 +425,7 @@ void TextPropertyPanel::Initialize (void)
     mbKernAvailable = true;
     mbKernLBAvailable = true;
     mlKerning = 0;
-    
+
     //set handler
     mpFontNameBox->SetBindings(mpBindings);
     Link aLink = LINK(this, TextPropertyPanel, FontSelHdl);
@@ -482,7 +482,7 @@ void TextPropertyPanel::InitToolBoxScript()
 {
 	Size aTbxSize( mpToolBoxScriptSw->CalcWindowSizePixel() );
 	mpToolBoxScriptSw->SetOutputSizePixel( aTbxSize );
-	
+
 	Link aLink = LINK(this, TextPropertyPanel, ToolBoxSwScriptSelectHdl);
     mpToolBoxScriptSw->SetSelectHdl ( aLink );
 
@@ -547,7 +547,7 @@ IMPL_LINK( TextPropertyPanel, FontSelHdl, FontNameBox*, pBox )
 IMPL_LINK( TextPropertyPanel, FontSizeModifyHdl, FontSizeBox*, pSizeBox )
 {
 	if (pSizeBox == &maFontSizeBox)
-	{	
+	{
 		long nSize = pSizeBox->GetValue();
 		mbFocusOnFontSizeCtrl = true;
 
@@ -573,7 +573,7 @@ IMPL_LINK( TextPropertyPanel, FontSizeSelHdl, FontSizeBox*, pSizeBox )
 				pShellWnd->GrabFocus();
 		}
 	}
-	
+
 	return 0;
 }
 
@@ -615,7 +615,7 @@ IMPL_LINK(TextPropertyPanel, ToolboxFontSelectHandler, ToolBox*, pToolBox)
             mpBindings->GetDispatcher()->Execute(SID_ATTR_CHAR_POSTURE, SFX_CALLMODE_RECORD, &aPostureItem, 0L);
             UpdateItem(SID_ATTR_CHAR_POSTURE);
             break;
-        }   
+        }
         case TBI_UNDERLINE:
         {
             EndTracking();
@@ -706,7 +706,7 @@ IMPL_LINK(TextPropertyPanel, ToolboxIncDecSelectHdl, ToolBox*, pToolBox)
                 else if(iValue >= 105 && iValue < 110)
                     nSize = 110;
                 else if(iValue < 960)
-                {	
+                {
                     nSize = (nSize / 10) * 10 + 10;
                     while(maFontSizeBox.GetValuePos(nSize, FUNIT_NONE) == LISTBOX_ENTRY_NOTFOUND)
                         nSize += 10;
@@ -743,7 +743,7 @@ IMPL_LINK(TextPropertyPanel, ToolboxIncDecSelectHdl, ToolBox*, pToolBox)
                     nSize = 960;
                 }
                 else if(iValue > 60)
-                {	
+                {
                     nSize = (nSize / 10) * 10 ;
                     while(maFontSizeBox.GetValuePos(nSize, FUNIT_NONE) == LISTBOX_ENTRY_NOTFOUND)
                         nSize -= 10;
@@ -799,7 +799,7 @@ IMPL_LINK(TextPropertyPanel, ToolBoxSwScriptSelectHdl, ToolBox*, pToolBox)
 			mpBindings->GetDispatcher()->Execute( SID_ATTR_CHAR_ESCAPEMENT, SFX_CALLMODE_RECORD, &aSupItem, 0L );
 		}
 		else
-		{			
+		{
 			meEscape = SVX_ESCAPEMENT_OFF;
 			SvxEscapementItem aNoneItem(0, 100, SID_ATTR_CHAR_ESCAPEMENT);
 			mpBindings->GetDispatcher()->Execute( SID_ATTR_CHAR_ESCAPEMENT, SFX_CALLMODE_RECORD, &aNoneItem, 0L );
@@ -899,7 +899,7 @@ void TextPropertyPanel::NotifyItemUpdate (
             bool bIsControlEnabled (bIsEnabled);
             if (  eState >= SFX_ITEM_DEFAULT && pState->ISA(SvxFontHeightItem) )
             {
-                mpHeightItem = (SvxFontHeightItem*)pState;//const SvxFontHeightItem* 
+                mpHeightItem = (SvxFontHeightItem*)pState;//const SvxFontHeightItem*
                 SfxMapUnit eUnit = maFontSizeControl.GetCoreMetric();
                 const sal_Int64 nValue (CalcToPoint(mpHeightItem->GetHeight(), eUnit, 10 ));
                 mpToolBoxIncDec->Enable();
@@ -928,11 +928,11 @@ void TextPropertyPanel::NotifyItemUpdate (
                         break;
                     }
                 }
-                
+
                 if( mbFocusOnFontSizeCtrl )
                     return;
 
-                maFontSizeBox.SetValue(nValue);	
+                maFontSizeBox.SetValue(nValue);
                 maFontSizeBox.LoseFocus();
 
                 UpdateItem(SID_SHRINK_FONT_SIZE);
@@ -965,7 +965,7 @@ void TextPropertyPanel::NotifyItemUpdate (
             maFontSizeBox.Enable(bIsControlEnabled);
             break;
         }
-            
+
         case SID_ATTR_CHAR_WEIGHT:
             mbWeightAvailable = (eState >= SFX_ITEM_DONTCARE);
             if( eState >= SFX_ITEM_DEFAULT && pState->ISA(SvxWeightItem))
@@ -980,7 +980,7 @@ void TextPropertyPanel::NotifyItemUpdate (
             mpToolBoxFont->EnableItem(TBI_BOLD, mbWeightAvailable && bIsEnabled);
             mpToolBoxFont->SetItemState(TBI_BOLD, meWeight==WEIGHT_BOLD ? STATE_CHECK : STATE_NOCHECK);
             break;
-            
+
         case SID_ATTR_CHAR_POSTURE:
             mbPostureAvailable = (eState >= SFX_ITEM_DONTCARE);
             if( eState >= SFX_ITEM_DEFAULT && pState->ISA(SvxPostureItem))
@@ -995,7 +995,7 @@ void TextPropertyPanel::NotifyItemUpdate (
             mpToolBoxFont->EnableItem(TBI_ITALIC, mbPostureAvailable && bIsEnabled);
             mpToolBoxFont->SetItemState(TBI_ITALIC,	meItalic==ITALIC_NORMAL ? STATE_CHECK : STATE_NOCHECK);
             break;
-            
+
         case SID_ATTR_CHAR_UNDERLINE:
             if( eState >= SFX_ITEM_DEFAULT)
             {
@@ -1003,7 +1003,7 @@ void TextPropertyPanel::NotifyItemUpdate (
                 {
                     const SvxUnderlineItem* pItem = (const SvxUnderlineItem*)pState;
                     meUnderline = (FontUnderline)pItem->GetValue();
-                    meUnderlineColor = pItem->GetColor(); 
+                    meUnderlineColor = pItem->GetColor();
                 }
             }
             else
@@ -1013,7 +1013,7 @@ void TextPropertyPanel::NotifyItemUpdate (
             mpToolBoxFont->EnableItem(TBI_UNDERLINE, bIsEnabled);
             mpToolBoxFont->SetItemState(TBI_UNDERLINE, meUnderline==UNDERLINE_NONE ? STATE_NOCHECK : STATE_CHECK);
             break;
-            
+
         case SID_ATTR_CHAR_SHADOWED:
             if( eState >= SFX_ITEM_DEFAULT && pState->ISA(SvxShadowedItem))
             {
@@ -1027,7 +1027,7 @@ void TextPropertyPanel::NotifyItemUpdate (
             mpToolBoxFont->EnableItem(TBI_SHADOWED, bIsEnabled);
             mpToolBoxFont->SetItemState(TBI_SHADOWED, mbShadow ? STATE_CHECK : STATE_NOCHECK);
             break;
-            
+
         case SID_ATTR_CHAR_STRIKEOUT:
             if( eState >= SFX_ITEM_DEFAULT && pState->ISA(SvxCrossedOutItem))
             {
@@ -1087,12 +1087,12 @@ void TextPropertyPanel::NotifyItemUpdate (
             else
             {
                 meEscape = SVX_ESCAPEMENT_OFF;
-            }	
+            }
             mpToolBoxScriptSw->EnableItem(TBI_SUPER_SW, bIsItemEnabled && bIsEnabled);
             mpToolBoxScriptSw->EnableItem(TBI_SUB_SW, bIsItemEnabled && bIsEnabled);
             break;
         }
-        
+
         case SID_SET_SUB_SCRIPT:
             if( eState >= SFX_ITEM_DEFAULT && pState->ISA(SfxBoolItem))
             {
@@ -1106,7 +1106,7 @@ void TextPropertyPanel::NotifyItemUpdate (
             mpToolBoxScript->EnableItem(TBI_SUB, bIsEnabled);
             mpToolBoxScript->SetItemState(TBI_SUB, mbSub ? STATE_CHECK : STATE_NOCHECK);
             break;
-            
+
         case SID_SET_SUPER_SCRIPT:
             if( eState >= SFX_ITEM_DEFAULT && pState->ISA(SfxBoolItem))
             {
@@ -1120,16 +1120,16 @@ void TextPropertyPanel::NotifyItemUpdate (
             mpToolBoxScript->EnableItem(TBI_SUPER, bIsEnabled);
             mpToolBoxScript->SetItemState(TBI_SUPER, mbSuper ? STATE_CHECK : STATE_NOCHECK);
             break;
-            
-        case SID_ATTR_CHAR_KERNING:     
+
+        case SID_ATTR_CHAR_KERNING:
             if ( SFX_ITEM_AVAILABLE == eState )
             {
                 mbKernLBAvailable = true;
-            
+
                 if(pState->ISA(SvxKerningItem))
                 {
-                    const SvxKerningItem* pKerningItem  = (const SvxKerningItem*)pState;      
-                    mlKerning = (long)pKerningItem->GetValue();			
+                    const SvxKerningItem* pKerningItem  = (const SvxKerningItem*)pState;
+                    mlKerning = (long)pKerningItem->GetValue();
                     mbKernAvailable = true;
                 }
                 else
@@ -1147,7 +1147,7 @@ void TextPropertyPanel::NotifyItemUpdate (
             else
             {
                 mbKernLBAvailable = true;
-                mbKernAvailable = false;	
+                mbKernAvailable = false;
                 mlKerning = 0;
             }
             mpToolBoxSpacing->EnableItem(TBI_SPACING, bIsEnabled);
@@ -1251,7 +1251,7 @@ void TextPropertyPanel::UpdateItem (const sal_uInt16 nSlotId)
 
 
 
-Color& TextPropertyPanel::GetUnderlineColor() 
+Color& TextPropertyPanel::GetUnderlineColor()
 {
 	return meUnderlineColor;
 }

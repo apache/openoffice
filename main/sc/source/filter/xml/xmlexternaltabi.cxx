@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -93,12 +93,12 @@ SvXMLImportContext* ScXMLExternalRefTabSourceContext::CreateChildContext(
     return new SvXMLImportContext(GetImport(), nPrefix, rLocalName);
 }
 
-/** 
- * Make sure the URL is a valid relative URL, mainly to avoid storing 
- * absolute URL as relative URL by accident.  For now, we only check the first 
- * three characters which are assumed to be always '../', because the relative 
- * URL for an external document is always in reference to the content.xml 
- * fragment of the original document. 
+/**
+ * Make sure the URL is a valid relative URL, mainly to avoid storing
+ * absolute URL as relative URL by accident.  For now, we only check the first
+ * three characters which are assumed to be always '../', because the relative
+ * URL for an external document is always in reference to the content.xml
+ * fragment of the original document.
  */
 static bool lcl_isValidRelativeURL(const OUString& rUrl)
 {
@@ -227,7 +227,7 @@ void ScXMLExternalRefRowContext::EndElement()
 
     for (sal_Int32 i = 1; i < mnRepeatRowCount; ++i)
     {
-        // Performance: duplicates of a non-existent row will still not exist. 
+        // Performance: duplicates of a non-existent row will still not exist.
         // Don't find that out for every cell.
         // External references often are a sparse matrix.
         if (i == 1 && !pTab->hasRow( mrExternalRefInfo.mnRow))

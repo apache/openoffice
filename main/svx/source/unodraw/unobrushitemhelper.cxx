@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -62,7 +62,7 @@ void setSvxBrushItemAsFillAttributesToTargetSet(const SvxBrushItem& rBrush, SfxI
         rToSet.Put(XFillStyleItem(XFILL_SOLID));
         rToSet.Put(XFillColorItem(String(), aColor));
 
-        // #125189# nTransparency is in range [0..254], convert to [0..100] which is used in 
+        // #125189# nTransparency is in range [0..254], convert to [0..100] which is used in
         // XFillTransparenceItem (caution with the range which is in an *item-specific* range)
         rToSet.Put(XFillTransparenceItem((((sal_Int32)nTransparency * 100) + 127) / 254));
     }
@@ -135,11 +135,11 @@ void setSvxBrushItemAsFillAttributesToTargetSet(const SvxBrushItem& rBrush, SfxI
             rToSet.Put(XFillTransparenceItem(nGraphicTransparency));
         }
     }
-    else 
+    else
     {
         // GPOS_NONE == rBrush.GetGraphicPos() && 0xff == rBrush.GetColor().GetTransparency(),
         // still need to rescue the color used. There are sequences used on the UNO API at
-        // import time (OLE. e.g. chart) which first set RGB color (MID_BACK_COLOR_R_G_B, 
+        // import time (OLE. e.g. chart) which first set RGB color (MID_BACK_COLOR_R_G_B,
         // color stays transparent) and then set transparency (MID_BACK_COLOR_TRANSPARENCY)
         // to zero later. When not saving the color, it will be lost.
         // Also need to set the FillStyle to NONE to express the 0xff transparency flag; this
@@ -159,7 +159,7 @@ sal_uInt16 getTransparenceForSvxBrushItem(const SfxItemSet& rSourceSet, sal_Bool
     sal_uInt16 nFillTransparence(static_cast< const XFillTransparenceItem& >(rSourceSet.Get(XATTR_FILLTRANSPARENCE, bSearchInParents)).GetValue());
     const SfxPoolItem* pGradientItem = 0;
 
-    if(SFX_ITEM_SET == rSourceSet.GetItemState(XATTR_FILLFLOATTRANSPARENCE, bSearchInParents, &pGradientItem) 
+    if(SFX_ITEM_SET == rSourceSet.GetItemState(XATTR_FILLFLOATTRANSPARENCE, bSearchInParents, &pGradientItem)
         && static_cast< const XFillFloatTransparenceItem* >(pGradientItem)->IsEnabled())
     {
         const XGradient& rGradient = static_cast< const XFillFloatTransparenceItem* >(pGradientItem)->GetGradientValue();

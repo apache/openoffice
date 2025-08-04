@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 package convwatch;
 
 import com.sun.star.lang.XMultiServiceFactory;
@@ -33,8 +31,8 @@ import com.sun.star.uno.UnoRuntime;
 /**
  * This class object is more a Helper or Controller.
  * It stores information like:
- * - How to create a document (with a OpenOffice.org method, or with MS Word, or with OpenOffice.org as pdf)
- * - some more infos for OpenOffice.org method
+ * - How to create a document (with a OpenOffice method, or with MS Word, or with OpenOffice as pdf)
+ * - some more info for OpenOffice method
  *   - a service factory pointer
  *   - if hidden mode should use
  *   - target name
@@ -44,7 +42,7 @@ import com.sun.star.uno.UnoRuntime;
  * - how to handle .xml files, which in Microsoft could be Excel or Word documents
  *
  * HOWTO USE:
- * For OOo,
+ * For AOO,
  *   create an GraphicalTestArguments with a set of TestParameters
  *    GraphicalTestArguments a = new GraphicalTestArguments(params);
  *
@@ -78,7 +76,7 @@ public class GraphicalTestArguments
 
     String m_sPrinterName = null;
 
-    // Hidden = true hiddes a used OpenOffice.org, all code is executed in the background
+    // Hidden = true hides a used OpenOffice, all code is executed in the background
     // This parameter is not used for RefType: msoffice
     boolean m_bHidden = true;
 
@@ -148,7 +146,7 @@ public class GraphicalTestArguments
             String sRECURSIVE = (String)param.get( PropertyName.DOC_COMPARATOR_INCLUDE_SUBDIRS );
 // TODO: I need to get the boolean value with get("name") because, if it is not given getBool() returns
 //       with a default of 'false' which is not very helpful if the default should be 'true'
-//       maybe a getBoolean("name", true) could be a better choise.
+//       maybe a getBoolean("name", true) could be a better choice.
             if (sRECURSIVE == null)
             {
                 sRECURSIVE = "true";
@@ -526,7 +524,7 @@ public class GraphicalTestArguments
         }
 
     /**
-     * Helper function to get the buildid of the current used OpenOffice.org
+     * Helper function to get the buildid of the current used OpenOffice
      * out of the AppExecutionCommand the build ID
      */
     public String getBuildID()
@@ -654,7 +652,7 @@ public class GraphicalTestArguments
         }
 
     /*
-      helper class for performance analyser features
+      helper class for performance analyzer features
      */
     PerformanceContainer m_aPerformanceContainer = null;
     public PerformanceContainer getPerformance()

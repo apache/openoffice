@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -68,18 +68,18 @@ ZipOutputStream::~ZipOutputStream( void )
 		delete aZipList[i];
 }
 
-void SAL_CALL ZipOutputStream::setMethod( sal_Int32 nNewMethod ) 
+void SAL_CALL ZipOutputStream::setMethod( sal_Int32 nNewMethod )
 	throw(RuntimeException)
 {
 	nMethod = static_cast < sal_Int16 > (nNewMethod);
 }
-void SAL_CALL ZipOutputStream::setLevel( sal_Int32 nNewLevel ) 
+void SAL_CALL ZipOutputStream::setLevel( sal_Int32 nNewLevel )
 	throw(RuntimeException)
 {
 	aDeflater.setLevel( nNewLevel);
 }
 
-void SAL_CALL ZipOutputStream::putNextEntry( ZipEntry& rEntry, 
+void SAL_CALL ZipOutputStream::putNextEntry( ZipEntry& rEntry,
                         ZipPackageStream* pStream,
 						sal_Bool bEncrypt)
 	throw(IOException, RuntimeException)
@@ -115,7 +115,7 @@ void SAL_CALL ZipOutputStream::putNextEntry( ZipEntry& rEntry,
 	pCurrentEntry = &rEntry;
 }
 
-void SAL_CALL ZipOutputStream::closeEntry(  ) 
+void SAL_CALL ZipOutputStream::closeEntry(  )
 	throw(IOException, RuntimeException)
 {
 	ZipEntry *pEntry = pCurrentEntry;
@@ -188,7 +188,7 @@ void SAL_CALL ZipOutputStream::closeEntry(  )
 	}
 }
 
-void SAL_CALL ZipOutputStream::write( const Sequence< sal_Int8 >& rBuffer, sal_Int32 nNewOffset, sal_Int32 nNewLength ) 
+void SAL_CALL ZipOutputStream::write( const Sequence< sal_Int8 >& rBuffer, sal_Int32 nNewOffset, sal_Int32 nNewLength )
 	throw(IOException, RuntimeException)
 {
 	switch (pCurrentEntry->nMethod)
@@ -212,14 +212,14 @@ void SAL_CALL ZipOutputStream::write( const Sequence< sal_Int8 >& rBuffer, sal_I
 	}
 }
 
-void SAL_CALL ZipOutputStream::rawWrite( Sequence< sal_Int8 >& rBuffer, sal_Int32 /*nNewOffset*/, sal_Int32 nNewLength ) 
+void SAL_CALL ZipOutputStream::rawWrite( Sequence< sal_Int8 >& rBuffer, sal_Int32 /*nNewOffset*/, sal_Int32 nNewLength )
 	throw(IOException, RuntimeException)
 {
 	Sequence < sal_Int8 > aTmpBuffer ( rBuffer.getConstArray(), nNewLength );
 	aChucker.WriteBytes( aTmpBuffer );
 }
 
-void SAL_CALL ZipOutputStream::rawCloseEntry(  ) 
+void SAL_CALL ZipOutputStream::rawCloseEntry(  )
 	throw(IOException, RuntimeException)
 {
 	if ( pCurrentEntry->nMethod == DEFLATED && ( pCurrentEntry->nFlag & 8 ) )
@@ -227,7 +227,7 @@ void SAL_CALL ZipOutputStream::rawCloseEntry(  )
 	pCurrentEntry = NULL;
 }
 
-void SAL_CALL ZipOutputStream::finish(  ) 
+void SAL_CALL ZipOutputStream::finish(  )
 	throw(IOException, RuntimeException)
 {
 	if (bFinished)
@@ -260,7 +260,7 @@ void ZipOutputStream::doDeflate()
             sal_Int32 nDiff = n_ConstDigestLength - mnDigested;
             if ( nDiff )
             {
-                sal_Int32 nEat = ::std::min( nLength, nDiff ); 
+                sal_Int32 nEat = ::std::min( nLength, nDiff );
                 uno::Sequence< sal_Int8 > aTmpSeq( aTmpBuffer.getConstArray(), nEat );
                 m_xDigestContext->updateDigest( aTmpSeq );
                 mnDigested = mnDigested + static_cast< sal_Int16 >( nEat );
@@ -417,7 +417,7 @@ sal_uInt32 ZipOutputStream::getCurrentDosTime( )
 		nYear-=1980;
 	else if (nYear>80)
 		nYear-=80;
-	sal_uInt32 nResult = static_cast < sal_uInt32>( ( ( ( aDateTime.Day) + 
+	sal_uInt32 nResult = static_cast < sal_uInt32>( ( ( ( aDateTime.Day) +
 									      ( 32 * (aDateTime.Month)) +
 									      ( 512 * nYear ) ) << 16) |
 									    ( ( aDateTime.Seconds/2) +
@@ -427,7 +427,7 @@ sal_uInt32 ZipOutputStream::getCurrentDosTime( )
 }
 /*
 
-   This is actually never used, so I removed it, but thought that the 
+   This is actually never used, so I removed it, but thought that the
    implementation details may be useful in the future...mtg 20010307
 
    I stopped using the time library and used the OSL version instead, but

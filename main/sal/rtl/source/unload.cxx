@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,7 +41,7 @@ static void rtl_notifyUnloadingListeners();
 
 static sal_Bool isEqualTimeValue ( const TimeValue* time1,  const TimeValue* time2)
 {
-	if( time1->Seconds == time2->Seconds && 
+	if( time1->Seconds == time2->Seconds &&
 		time1->Nanosec == time2->Nanosec)
 		return sal_True;
 	else
@@ -99,7 +99,7 @@ static sal_Bool hasEnoughTimePassed( const TimeValue* unusedSince, const TimeVal
 		if( isGreaterEqualTimeValue( &currentTime, &addedTime))
 			retval= sal_True;
 	}
-	
+
 	return retval;
 }
 
@@ -132,7 +132,7 @@ extern "C" void rtl_moduleCount_release( rtl_ModuleCount * that )
 	if( pMod->counter == 0)
 	{
 		MutexGuard guard( getUnloadingMutex());
-		
+
 		if( sal_False == osl_getSystemTime( &pMod->unusedSince) )
 		{
 			// set the time to 0 if we could not get the time
@@ -184,7 +184,7 @@ extern "C" sal_Bool rtl_moduleCount_canUnload( rtl_StandardModuleCount * that, T
 		{
 			rtl_copyMemory(libUnused, &that->unusedSince, sizeof(TimeValue));
 		}
-	}	
+	}
 	return (that->counter == 0);
 }
 
@@ -246,7 +246,7 @@ extern "C" void SAL_CALL rtl_unloadUnusedModules( TimeValue* libUnused)
 
 	ModuleMap& moduleMap= getModuleMap();
 	Mod_IT it_e= moduleMap.end();
-	
+
 	// notify all listeners
 	rtl_notifyUnloadingListeners();
 
@@ -276,7 +276,7 @@ extern "C" void SAL_CALL rtl_unloadUnusedModules( TimeValue* libUnused)
 				// mark the module for later removal
 				unloadedModulesList.push_front( it->first);
 			}
-		}	
+		}
 	}
 
 	// remove all entries containing invalid (unloaded) modules
@@ -324,9 +324,9 @@ static ListenerMap& getListenerMap()
 }
 
 
-// This queue contains cookies which have been passed out by rtl_addUnloadingListener and 
+// This queue contains cookies which have been passed out by rtl_addUnloadingListener and
 // which have been regainded by rtl_removeUnloadingListener. When rtl_addUnloadingListener
-// is called then a cookie has to be returned. First we look into the set if there is one 
+// is called then a cookie has to be returned. First we look into the set if there is one
 // available. Otherwise a new cookie will be provided.
 // not a new value is returned.
 
@@ -370,9 +370,9 @@ static inline void recycleCookie( sal_Int32 i)
 
 
 // calling the function twice with the same arguments will return tow different cookies.
-// The listener will then notified twice. 
+// The listener will then notified twice.
 
-extern "C" 
+extern "C"
 sal_Int32 SAL_CALL rtl_addUnloadingListener( rtl_unloadingListenerFunc callback, void* _this)
 {
 	MutexGuard guard( getUnloadingMutex());
@@ -384,7 +384,7 @@ sal_Int32 SAL_CALL rtl_addUnloadingListener( rtl_unloadingListenerFunc callback,
 }
 
 
-extern "C" 
+extern "C"
 void SAL_CALL rtl_removeUnloadingListener( sal_Int32 cookie )
 {
 	MutexGuard guard( getUnloadingMutex());
@@ -400,7 +400,7 @@ static void rtl_notifyUnloadingListeners()
 {
 	ListenerMap& listenerMap= getListenerMap();
 	for( Lis_IT it= listenerMap.begin(); it != listenerMap.end(); ++it)
-	{	
+	{
 		rtl_unloadingListenerFunc callbackFunc= it->second.first;
 		callbackFunc( it->second.second);
 	}

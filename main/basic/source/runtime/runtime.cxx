@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,7 +51,7 @@ bool SbiRuntime::isVBAEnabled()
 	SbiInstance* pInst = pINST;
 	if ( pInst && pINST->pRun )
 		result = pInst->pRun->bVBAEnabled;
-	return result; 
+	return result;
 }
 
 // #91147 Global reschedule flag
@@ -72,7 +72,7 @@ void StarBASIC::SetVBAEnabled( sal_Bool bEnabled )
 sal_Bool StarBASIC::isVBAEnabled()
 {
     if ( bDocBasic )
-    { 
+    {
         if( SbiRuntime::isVBAEnabled() )
             return sal_True;
         return bVBAEnabled;
@@ -206,7 +206,7 @@ SbiRuntime::pStep2 SbiRuntime::aStep2[] = {// Alle Opcodes mit zwei Operanden
 	&SbiRuntime::StepSTATIC,     // Statische Variable (+StringId+StringId)
 	&SbiRuntime::StepTCREATE,    // User Defined Objekte (+StringId+StringId)
 	&SbiRuntime::StepDCREATE,    // Objekt-Array kreieren (+StringID+StringID)
-	&SbiRuntime::StepGLOBAL_P,   // Globale Variable definieren, die beim Neustart 
+	&SbiRuntime::StepGLOBAL_P,   // Globale Variable definieren, die beim Neustart
                                         // von Basic nicht ueberschrieben wird (+StringID+Typ)
 	&SbiRuntime::StepFIND_G,    	// Sucht globale Variable mit Spezialbehandlung wegen _GLOBAL_P
 	&SbiRuntime::StepDCREATE_REDIMP, // Objekt-Array redimensionieren (+StringID+StringID)
@@ -360,7 +360,7 @@ void SbiInstance::PrepareNumberFormatter( SvNumberFormatter*& rpNumberFormatter,
 	sal_uInt32 &rnStdDateIdx, sal_uInt32 &rnStdTimeIdx, sal_uInt32 &rnStdDateTimeIdx,
     LanguageType* peFormatterLangType, DateFormat* peFormatterDateFormat )
 {
-	com::sun::star::uno::Reference< com::sun::star::lang::XMultiServiceFactory > 
+	com::sun::star::uno::Reference< com::sun::star::lang::XMultiServiceFactory >
 		xFactory = comphelper::getProcessServiceFactory();
 
     LanguageType eLangType;
@@ -540,7 +540,7 @@ SbxArray* SbiInstance::GetLocals( SbMethod* pMeth )
 // Achtung: pMeth kann auch NULL sein (beim Aufruf des Init-Codes)
 
 SbiRuntime::SbiRuntime( SbModule* pm, SbMethod* pe, sal_uInt32 nStart )
-		 : rBasic( *(StarBASIC*)pm->pParent ), pInst( pINST ), 
+		 : rBasic( *(StarBASIC*)pm->pParent ), pInst( pINST ),
 		   pMod( pm ), pMeth( pe ), pImg( pMod->pImage ), m_nLastTime(0)
 {
 	nFlags	  = pe ? pe->GetDebugFlags() : 0;
@@ -597,7 +597,7 @@ SbiRuntime::~SbiRuntime()
 
 void SbiRuntime::SetVBAEnabled(bool bEnabled )
 {
-	bVBAEnabled = bEnabled; 
+	bVBAEnabled = bEnabled;
 }
 
 // Aufbau der Parameterliste. Alle ByRef-Parameter werden direkt
@@ -650,7 +650,7 @@ void SbiRuntime::SetParameters( SbxArray* pParams )
 				bByVal |= sal_Bool( ( p->eType & SbxBYREF ) == 0 );
 				t = (SbxDataType) ( p->eType & 0x0FFF );
 
-				if( !bByVal && t != SbxVARIANT && 
+				if( !bByVal && t != SbxVARIANT &&
 					(!v->IsFixed() || (SbxDataType)(v->GetType() & 0x0FFF ) != t) )
 						bByVal = sal_True;
 
@@ -738,7 +738,7 @@ sal_Bool SbiRuntime::Step()
         else if (eOp >= SbOP1_START && eOp < SbOP1_END)
 		{
 			nOp1 = *pCode++; nOp1 |= *pCode++ << 8; nOp1 |= *pCode++ << 16; nOp1 |= *pCode++ << 24;
-			
+
 			(this->*( aStep1[ eOp - SbOP1_START ] ) )( nOp1 );
 		}
         else if (eOp >= SbOP2_START && eOp < SbOP2_END)
@@ -777,7 +777,7 @@ sal_Bool SbiRuntime::Step()
 			pInst->nErl = nLine;
 			pErrCode    = pCode;
 			pErrStmnt   = pStmnt;
-			// An error occurred in an error handler 
+			// An error occurred in an error handler
 			// force parent handler ( if there is one )
 			// to handle the error
 			bool bLetParentHandleThis = false;
@@ -791,14 +791,14 @@ sal_Bool SbiRuntime::Step()
 					StepRESUME( 1 );
 				else if( pError )		// On Error Goto ...
 					pCode = pError;
-				else 
+				else
 					bLetParentHandleThis = true;
             }
 			else
 			{
 				bLetParentHandleThis = true;
 				pError = NULL; //terminate the handler
-			}		
+			}
 			if ( bLetParentHandleThis )
 			{
 				// AB 13.2.1997, neues Error-Handling:
@@ -933,7 +933,7 @@ sal_Int32 SbiRuntime::translateErrorToVba( SbError nError, String& rMsg )
 		DBG_ASSERT( nTmp, "No VB error!" );
 #endif
 
-		StarBASIC::MakeErrorText( nError, rMsg );	
+		StarBASIC::MakeErrorText( nError, rMsg );
 		rMsg = StarBASIC::GetErrorText();
 		if ( !rMsg.Len() ) // no message for err no, need localized resource here
 			rMsg = String( RTL_CONSTASCII_USTRINGPARAM("Internal Object Error:") );
@@ -1298,11 +1298,11 @@ void SbiRuntime::DllCall
 }
 
 sal_uInt16 SbiRuntime::GetImageFlag( sal_uInt16 n ) const
-{ 
-	return pImg->GetFlag( n ); 
-} 
+{
+	return pImg->GetFlag( n );
+}
 
 sal_uInt16 SbiRuntime::GetBase()
-{ 
+{
 	return pImg->GetBase();
 }

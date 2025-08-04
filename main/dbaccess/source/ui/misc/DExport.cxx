@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -120,7 +120,7 @@ ODatabaseExport::ODatabaseExport(sal_Int32 nRows,
     ,m_bAppendFirstLine(false)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "misc", "Ocke.Janssen@sun.com", "ODatabaseExport::ODatabaseExport" );
-	DBG_CTOR(ODatabaseExport,NULL); 
+	DBG_CTOR(ODatabaseExport,NULL);
 
 	m_nRows += nRows;
 	sal_Int32 nCount = 0;
@@ -177,7 +177,7 @@ ODatabaseExport::ODatabaseExport(const SharedConnection& _rxConnection,
     ,m_bAppendFirstLine(false)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "misc", "Ocke.Janssen@sun.com", "ODatabaseExport::ODatabaseExport" );
-	DBG_CTOR(ODatabaseExport,NULL); 
+	DBG_CTOR(ODatabaseExport,NULL);
 	try
 	{
 		SvtSysLocale aSysLocale;
@@ -227,14 +227,14 @@ ODatabaseExport::ODatabaseExport(const SharedConnection& _rxConnection,
 			aValue.fill(nPos,aTypes[nPos],aNullable[nPos],xRow);
 			sal_Int32 nType = aValue;
 			++nPos;
-			
+
 			if( nType == DataType::VARCHAR )
 			{
 				m_pTypeInfo					= TOTypeInfoSP(new OTypeInfo());
-				
+
 				m_pTypeInfo->aTypeName		= sTypeName;
 				m_pTypeInfo->nType			= nType;
-				
+
                 OSL_ENSURE((nPos) < static_cast<sal_Int32>(aTypes.size()),"aTypes: Illegal index for vector");
 				aValue.fill(nPos,aTypes[nPos],aNullable[nPos],xRow);
 				m_pTypeInfo->nPrecision		= aValue;
@@ -293,7 +293,7 @@ ODatabaseExport::ODatabaseExport(const SharedConnection& _rxConnection,
 //---------------------------------------------------------------------------
 ODatabaseExport::~ODatabaseExport()
 {
-	DBG_DTOR(ODatabaseExport,NULL); 
+	DBG_DTOR(ODatabaseExport,NULL);
     m_pFormatter = NULL;
 	ODatabaseExport::TColumns::iterator aIter = m_aDestColumns.begin();
 	ODatabaseExport::TColumns::iterator aEnd  = m_aDestColumns.end();
@@ -301,7 +301,7 @@ ODatabaseExport::~ODatabaseExport()
 	for(;aIter != aEnd;++aIter)
 		delete aIter->second;
 	m_vDestVector.clear();
-	m_aDestColumns.clear();	
+	m_aDestColumns.clear();
 }
 // -----------------------------------------------------------------------------
 void ODatabaseExport::insertValueIntoColumn()
@@ -352,7 +352,7 @@ void ODatabaseExport::insertValueIntoColumn()
                             {
                                 Reference< XNumberFormatsSupplier >  xSupplier = m_xFormatter->getNumberFormatsSupplier();
                                 Reference<XNumberFormatTypes> xNumType(xSupplier->getNumberFormats(),UNO_QUERY);
-                                sal_Int16 nFormats[] = { 
+                                sal_Int16 nFormats[] = {
                                     NumberFormat::DATETIME
                                     ,NumberFormat::DATE
                                     ,NumberFormat::TIME
@@ -450,7 +450,7 @@ sal_Int16 ODatabaseExport::CheckString(const String& aCheckToken, sal_Int16 _nOl
             xProp->getPropertyValue(PROPERTY_TYPE) >>= nNumberFormat;
         }
         else
-        {           
+        {
             Reference<XNumberFormatTypes> xNumType(xFormats,UNO_QUERY);
             sal_Int32 nFormatKey = m_xFormatter->detectNumberFormat(xNumType->getStandardFormat(NumberFormat::ALL,m_aLocale),aCheckToken);
             fOutNumber = m_xFormatter->convertStringToNumber(nFormatKey,aCheckToken);
@@ -458,7 +458,7 @@ sal_Int16 ODatabaseExport::CheckString(const String& aCheckToken, sal_Int16 _nOl
             Reference<XPropertySet> xProp = xFormats->getByKey(nFormatKey);
             sal_Int16 nType = 0;
             xProp->getPropertyValue(PROPERTY_TYPE) >>= nType;
-            
+
             switch(nType)
             {
                 case NumberFormat::ALL:
@@ -586,7 +586,7 @@ void ODatabaseExport::SetColumnTypes(const TColumnVector* _pList,const OTypeInfo
 			sal_Int32 nDataType;
 			sal_Int32 nLength(0),nScale(0);
 		    sal_Int16 nType = m_vNumberFormat[i] & ~NumberFormat::DEFINED;
-		    
+
 			switch ( nType )
 			{
 				case NumberFormat::ALL:
@@ -647,7 +647,7 @@ void ODatabaseExport::CreateDefaultColumn(const ::rtl::OUString& _rColumnName)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "misc", "Ocke.Janssen@sun.com", "ODatabaseExport::CreateDefaultColumn" );
 	DBG_CHKTHIS(ODatabaseExport,NULL);
-	Reference< XDatabaseMetaData>  xDestMetaData(m_xConnection->getMetaData());	
+	Reference< XDatabaseMetaData>  xDestMetaData(m_xConnection->getMetaData());
 	sal_Int32 nMaxNameLen(xDestMetaData->getMaxColumnNameLength());
 	::rtl::OUString aAlias = _rColumnName;
 	if ( isSQL92CheckEnabled(m_xConnection) )
@@ -655,7 +655,7 @@ void ODatabaseExport::CreateDefaultColumn(const ::rtl::OUString& _rColumnName)
 
 	if(nMaxNameLen && aAlias.getLength() > nMaxNameLen)
 		aAlias = aAlias.copy(0, ::std::min<sal_Int32>( nMaxNameLen-1, aAlias.getLength() ) );
-	
+
 	::rtl::OUString sName(aAlias);
 	if(m_aDestColumns.find(sName) != m_aDestColumns.end())
 	{
@@ -759,9 +759,9 @@ sal_Bool ODatabaseExport::executeWizard(const ::rtl::OUString& _rTableName,const
 		if(!bError)
 			bError = !createRowSet();
 	}
-	catch( const SQLException&) 
+	catch( const SQLException&)
 	{
-        ::dbaui::showError( ::dbtools::SQLExceptionInfo( ::cppu::getCaughtException() ), &aWizard, m_xFactory ); 
+        ::dbaui::showError( ::dbtools::SQLExceptionInfo( ::cppu::getCaughtException() ), &aWizard, m_xFactory );
 		bError = sal_True;
 	}
     catch( const Exception& )

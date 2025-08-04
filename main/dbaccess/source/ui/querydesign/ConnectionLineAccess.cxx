@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -31,11 +31,11 @@
 #endif
 #ifndef _COM_SUN_STAR_ACCESSIBILITY_ACCESSIBLEROLE_HPP_
 #include <com/sun/star/accessibility/AccessibleRole.hpp>
-#endif												 
+#endif
 #ifndef _COM_SUN_STAR_ACCESSIBILITY_ACCESSIBLERELATIONTYPE_HPP_
 #include <com/sun/star/accessibility/AccessibleRelationType.hpp>
 #endif
-#ifndef _TOOLKIT_AWT_VCLXWINDOW_HXX_ 
+#ifndef _TOOLKIT_AWT_VCLXWINDOW_HXX_
 #include <toolkit/awt/vclxwindow.hxx>
 #endif
 #ifndef DBAUI_TABLECONNECTION_HXX
@@ -67,7 +67,7 @@ namespace dbaui
 	using namespace ::com::sun::star;
 
 	OConnectionLineAccess::OConnectionLineAccess(OTableConnection* _pLine)
-		: VCLXAccessibleComponent(_pLine->GetComponentInterface().is() ? _pLine->GetWindowPeer() : NULL) 
+		: VCLXAccessibleComponent(_pLine->GetComponentInterface().is() ? _pLine->GetWindowPeer() : NULL)
 		,m_pLine(_pLine)
 	{
 	}
@@ -223,7 +223,7 @@ namespace dbaui
 			aSeq[0] = m_pLine->GetSourceWin()->GetAccessible();
 			aSeq[1] = m_pLine->GetDestWin()->GetAccessible();
 		}
-		
+
 		return AccessibleRelation(AccessibleRelationType::CONTROLLED_BY,aSeq);
 	}
 	// -----------------------------------------------------------------------------
@@ -249,7 +249,7 @@ namespace dbaui
 		DBG_DTOR(OTableConnection,NULL);
 		//////////////////////////////////////////////////////////////////////
 		// clear vector
-		clearLineData();		
+		clearLineData();
 	}
 	// -----------------------------------------------------------------------------
 	sal_Bool OConnectionLineAccess::isEditable() const

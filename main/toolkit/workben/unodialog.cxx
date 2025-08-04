@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -66,7 +66,7 @@ using namespace ::com::sun::star::lang;
 	{
         ::rtl::OUString localRegistry = ::comphelper::getPathToUserRegistry();
         ::rtl::OUString systemRegistry = ::comphelper::getPathToSystemRegistry();
-        
+
         Reference< XSimpleRegistry > xLocalRegistry( ::cppu::createSimpleRegistry() );
         Reference< XSimpleRegistry > xSystemRegistry( ::cppu::createSimpleRegistry() );
         if ( xLocalRegistry.is() && (localRegistry.getLength() > 0) )
@@ -78,14 +78,14 @@ using namespace ::com::sun::star::lang;
             catch ( InvalidRegistryException& )
             {
             }
-            
+
             if ( !xLocalRegistry->isValid() )
                 xLocalRegistry->open(localRegistry, sal_True, sal_True);
         }
-        
+
         if ( xSystemRegistry.is() && (systemRegistry.getLength() > 0) )
             xSystemRegistry->open( systemRegistry, sal_True, sal_False);
-        
+
         if ( (xLocalRegistry.is() && xLocalRegistry->isValid()) &&
              (xSystemRegistry.is() && xSystemRegistry->isValid()) )
         {
@@ -95,7 +95,7 @@ using namespace ::com::sun::star::lang;
             seqAnys[1] <<= xSystemRegistry ;
             Reference< XInitialization > xInit( xReg, UNO_QUERY );
             xInit->initialize( seqAnys );
-            
+
             Reference< XComponentContext > xContext( ::cppu::bootstrap_InitialComponentContext( xReg ) );
             return Reference< XMultiServiceFactory >( xContext->getServiceManager(), UNO_QUERY );
         }
@@ -103,7 +103,7 @@ using namespace ::com::sun::star::lang;
 	catch( ::com::sun::star::uno::Exception& )
 	{
 	}
-    
+
 	return ::cppu::createServiceFactory();
 }
 
@@ -152,7 +152,7 @@ public:
 void Main( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > & xMSF )
 {
 	::comphelper::setProcessServiceFactory( xMSF );
-	
+
 	//uno::Reference< awt::XToolkit> xToolkit( xMSF->createInstance( ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.awt.ExtToolkit" ) ) ), uno::UNO_QUERY );
 	uno::Reference< awt::XToolkit> xToolkit( xMSF->createInstance( ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.awt.Toolkit" ) ) ), uno::UNO_QUERY );
 
@@ -214,7 +214,7 @@ void Main( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMult
 	MyWin * pWindow;
 	::osl::Guard< vos::IMutex > aVclGuard( Application::GetSolarMutex() );
 	pWindow = new MyWin();
-	pWindow->Show();	
+	pWindow->Show();
 
 	xDlg->setDesignMode( sal_True );
 
@@ -238,7 +238,7 @@ void Main( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMult
 
 	Reference< XComponent > xT( xToolkit, uno::UNO_QUERY );
 	xT->dispose();
-    
+
     Reference< beans::XPropertySet > xProps( ::comphelper::getProcessServiceFactory(), UNO_QUERY );
     if (xProps.is())
     {

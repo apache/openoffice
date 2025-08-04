@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -134,7 +134,7 @@ static BOOL IsValidFilePathComponent(
 		    cLast = *lpCurrent++;
 	    }
 
-	    /*	If we don't reached the end of the component the length of the component was to long 
+	    /*	If we don't reached the end of the component the length of the component was to long
 		    ( See condition of while loop ) */
 	    if ( !lpComponentEnd )
 	    {
@@ -143,8 +143,8 @@ static BOOL IsValidFilePathComponent(
 	    }
 
 		/* Test whether the component specifies a device name what is not allowed */
-		
-		// MT: PERFORMANCE: 
+
+		// MT: PERFORMANCE:
 		// This is very expensive. A lot of calls to _tcsicmp.
 		// in SRC6870m71 67.000 calls of this method while empty office start result into more than 1.500.00 calls of _tcsicmp!
 		// Possible optimizations
@@ -182,7 +182,7 @@ static BOOL IsValidFilePathComponent(
 			    TEXT("COM8"),
 			    TEXT("COM9")
 		    };
-    		
+
 		    TCHAR	szComponent[MAX_PATH];
 		    int		nComponentLength;
 		    LPCTSTR	lpDot;
@@ -229,7 +229,7 @@ static BOOL IsValidFilePathComponent(
 	    return fValid;
 }
 
-//##################################################### 
+//#####################################################
 #define	CHARSET_SEPARATOR TEXT("\\/")
 
 DWORD IsValidFilePath(rtl_uString *path, LPCTSTR *lppError, DWORD dwFlags, rtl_uString **corrected)
@@ -290,7 +290,7 @@ DWORD IsValidFilePath(rtl_uString *path, LPCTSTR *lppError, DWORD dwFlags, rtl_u
 		    {
 			    if ( lpComponent &&	 !*++lpComponent )
 				    lpComponent = NULL;
-    			
+
 			    if ( !lpComponent )
 			    {
     #if 0
@@ -383,7 +383,7 @@ DWORD IsValidFilePath(rtl_uString *path, LPCTSTR *lppError, DWORD dwFlags, rtl_u
 				    lpComponent = NULL;
 		    }
 	    }
-	    
+
         /* The path can be longer than MAX_PATH only in case it has the longpath prefix */
 	    if ( fValid && !( dwPathType &  PATHTYPE_IS_LONGPATH ) && _tcslen( lpszPath ) >= MAX_PATH )
 	    {
@@ -432,9 +432,9 @@ static sal_Int32 PathRemoveFileSpec(LPTSTR lpPath, LPTSTR lpFileName, sal_Int32 
 
     return nRemoved;
 }
-        
+
 //#####################################################
-// Undocumented in SHELL32.DLL ordinal 32 
+// Undocumented in SHELL32.DLL ordinal 32
 static LPTSTR PathAddBackslash(LPTSTR lpPath, sal_Int32 nBufLen)
 {
     LPTSTR	lpEndPath = NULL;
@@ -454,10 +454,10 @@ static LPTSTR PathAddBackslash(LPTSTR lpPath, sal_Int32 nBufLen)
 }
 
 //#####################################################
-// Same as GetLongPathName but also 95/NT4 
+// Same as GetLongPathName but also 95/NT4
 static DWORD GetCaseCorrectPathNameEx(
     LPTSTR	lpszPath,	// path buffer to convert
-    DWORD	cchBuffer,		// size of path buffer 
+    DWORD	cchBuffer,		// size of path buffer
     DWORD	nSkipLevels,
     BOOL bCheckExistence )
 {
@@ -527,7 +527,7 @@ static DWORD GetCaseCorrectPathNameEx(
 	    else
 	    {
 		    /* File specification can't be removed therefore the short path is either a drive
-			   or a network share. If still levels to skip are left, the path specification 
+			   or a network share. If still levels to skip are left, the path specification
 			   tries to travel below the file system root */
 		    if ( nSkipLevels )
                     lpszPath[0] = 0;
@@ -538,13 +538,13 @@ static DWORD GetCaseCorrectPathNameEx(
 	    return _tcslen( lpszPath );
 }
 
-//##################################################### 
+//#####################################################
 #define WSTR_SYSTEM_ROOT_PATH				L"\\\\.\\"
 
 DWORD GetCaseCorrectPathName(
     LPCTSTR	lpszShortPath,	// file name
     LPTSTR	lpszLongPath,	// path buffer
-    DWORD	cchBuffer,		// size of path buffer 
+    DWORD	cchBuffer,		// size of path buffer
     BOOL bCheckExistence
 )
 {
@@ -574,7 +574,7 @@ DWORD GetCaseCorrectPathName(
 }
 
 
-//############################################# 
+//#############################################
 static sal_Bool _osl_decodeURL( rtl_String* strUTF8, rtl_uString** pstrDecodedURL )
 {
     sal_Char		*pBuffer;
@@ -625,19 +625,19 @@ static sal_Bool _osl_decodeURL( rtl_String* strUTF8, rtl_uString** pstrDecodedUR
     }
 
     *pDest++ = 0;
-	    
+
     if ( bValidEncoded )
     {
         rtl_string2UString( pstrDecodedURL, pBuffer, rtl_str_getLength(pBuffer), RTL_TEXTENCODING_UTF8, OUSTRING_TO_OSTRING_CVTFLAGS );
         OSL_ASSERT(*pstrDecodedURL != 0);
     }
-	    
+
     rtl_freeMemory( pBuffer );
 
     return bValidEncoded;
 }
 
-//############################################# 
+//#############################################
 static void _osl_encodeURL( rtl_uString *strURL, rtl_String **pstrEncodedURL )
 {
     /* Encode non ascii characters within the URL */
@@ -648,7 +648,7 @@ static void _osl_encodeURL( rtl_uString *strURL, rtl_String **pstrEncodedURL )
     sal_Char		*pURLDest;
     sal_Int32		nURLScanLen;
     sal_Int32		nURLScanCount;
-	    
+
     rtl_uString2String( &strUTF8, rtl_uString_getStr( strURL ), rtl_uString_getLength( strURL ), RTL_TEXTENCODING_UTF8, OUSTRING_TO_OSTRING_CVTFLAGS );
 
     pszEncodedURL = (sal_Char*) rtl_allocateMemory( (rtl_string_getLength( strUTF8 ) * 3 + 1)  * sizeof(sal_Char) );
@@ -706,7 +706,7 @@ static void _osl_encodeURL( rtl_uString *strURL, rtl_String **pstrEncodedURL )
     rtl_freeMemory( pszEncodedURL );
 }
 
-//#############################################      
+//#############################################
 
 oslFileError _osl_getSystemPathFromFileURL( rtl_uString *strURL, rtl_uString **pustrPath, sal_Bool bAllowRelative )
 {
@@ -725,8 +725,8 @@ oslFileError _osl_getSystemPathFromFileURL( rtl_uString *strURL, rtl_uString **p
 
     /* If the length of strUTF8 and strURL differs it indicates that the URL was not correct encoded */
 
-    OSL_ENSURE_FILE( 
-        strUTF8->length == strURL->length || 
+    OSL_ENSURE_FILE(
+        strUTF8->length == strURL->length ||
         0 != rtl_ustr_ascii_shortenedCompareIgnoreAsciiCase_WithLength( strURL->buffer, strURL->length, "file:\\\\", 7 )
         ,"osl_getSystemPathFromFileURL: \"%s\" is not encoded !!!", strURL );
 
@@ -752,12 +752,12 @@ oslFileError _osl_getSystemPathFromFileURL( rtl_uString *strURL, rtl_uString **p
 
             if ( 0 == rtl_ustr_ascii_shortenedCompareIgnoreAsciiCase_WithLength( pDecodedURL, nDecodedLen, "file:\\\\\\", 8 ) )
                 nSkip = 8;
-            else if ( 
+            else if (
                 0 == rtl_ustr_ascii_shortenedCompareIgnoreAsciiCase_WithLength( pDecodedURL, nDecodedLen, "file:\\\\localhost\\", 17 ) ||
-                0 == rtl_ustr_ascii_shortenedCompareIgnoreAsciiCase_WithLength( pDecodedURL, nDecodedLen, "file:\\\\127.0.0.1\\", 17 ) 
+                0 == rtl_ustr_ascii_shortenedCompareIgnoreAsciiCase_WithLength( pDecodedURL, nDecodedLen, "file:\\\\127.0.0.1\\", 17 )
                       )
                 nSkip = 17;
-            else 
+            else
                 nSkip = 5;
 
             /* Indicates local root */
@@ -777,7 +777,7 @@ oslFileError _osl_getSystemPathFromFileURL( rtl_uString *strURL, rtl_uString **p
                                                                  ::osl::mingw_reinterpret_cast<LPTSTR>(aBuf),
                                                                  aBuf.getBufSizeInSymbols(),
                                                                  sal_False );
-                    
+
                     if ( nNewLen <= MAX_PATH - 12
                       || 0 == rtl_ustr_shortenedCompareIgnoreAsciiCase_WithLength( pDecodedURL + nSkip, nDecodedLen - nSkip, reinterpret_cast<const sal_Unicode*>(WSTR_SYSTEM_ROOT_PATH), ELEMENTS_OF_ARRAY(WSTR_SYSTEM_ROOT_PATH) - 1, ELEMENTS_OF_ARRAY(WSTR_SYSTEM_ROOT_PATH) - 1 )
                       || 0 == rtl_ustr_shortenedCompareIgnoreAsciiCase_WithLength( pDecodedURL + nSkip, nDecodedLen - nSkip, reinterpret_cast<const sal_Unicode*>(WSTR_LONG_PATH_PREFIX), ELEMENTS_OF_ARRAY(WSTR_LONG_PATH_PREFIX) - 1, ELEMENTS_OF_ARRAY(WSTR_LONG_PATH_PREFIX) - 1 ) )
@@ -829,13 +829,13 @@ oslFileError _osl_getSystemPathFromFileURL( rtl_uString *strURL, rtl_uString **p
         */
 
     }
-	    
+
     if ( strDecodedURL )
         rtl_uString_release( strDecodedURL );
-		    
+
     if ( osl_File_E_None == nError )
         rtl_uString_assign( pustrPath, strTempPath );
-	  
+
     if ( strTempPath )
         rtl_uString_release( strTempPath );
 
@@ -846,7 +846,7 @@ oslFileError _osl_getSystemPathFromFileURL( rtl_uString *strURL, rtl_uString **p
     return nError;
 }
 
-//#############################################      
+//#############################################
 oslFileError _osl_getFileURLFromSystemPath( rtl_uString* strPath, rtl_uString** pstrURL )
 {
     oslFileError nError = osl_File_E_INVAL; /* Assume failure */
@@ -855,7 +855,7 @@ oslFileError _osl_getFileURLFromSystemPath( rtl_uString* strPath, rtl_uString** 
 
     if (strPath)
         dwPathType = IsValidFilePath(strPath, NULL, VALIDATEPATH_ALLOW_RELATIVE, NULL);
-            	
+
     if (dwPathType)
     {
         rtl_uString	*strTempPath = NULL;
@@ -901,7 +901,7 @@ oslFileError _osl_getFileURLFromSystemPath( rtl_uString* strPath, rtl_uString** 
             }
         }
         else
-        { 
+        {
             /* Replace backslashes */
             rtl_uString_newReplace( &strTempPath, strPath, '\\', '/' );
         }
@@ -954,23 +954,23 @@ oslFileError _osl_getFileURLFromSystemPath( rtl_uString* strPath, rtl_uString** 
 }
 
 //#####################################################
-oslFileError SAL_CALL osl_getFileURLFromSystemPath( 
+oslFileError SAL_CALL osl_getFileURLFromSystemPath(
     rtl_uString* ustrPath, rtl_uString** pustrURL )
 {
 	return _osl_getFileURLFromSystemPath( ustrPath, pustrURL );
 }
 
 //#####################################################
-oslFileError SAL_CALL osl_getSystemPathFromFileURL( 
+oslFileError SAL_CALL osl_getSystemPathFromFileURL(
     rtl_uString *ustrURL, rtl_uString **pustrPath)
 {
 	return _osl_getSystemPathFromFileURL( ustrURL, pustrPath, sal_True );
 }
 
 //#####################################################
-oslFileError SAL_CALL osl_searchFileURL( 
-    rtl_uString *ustrFileName, 
-    rtl_uString *ustrSystemSearchPath, 
+oslFileError SAL_CALL osl_searchFileURL(
+    rtl_uString *ustrFileName,
+    rtl_uString *ustrSystemSearchPath,
     rtl_uString **pustrPath)
 {
 	rtl_uString		*ustrUNCPath = NULL;
@@ -980,7 +980,7 @@ oslFileError SAL_CALL osl_searchFileURL(
 	/* First try to interpret the file name as an URL even a relative one */
 	error = _osl_getSystemPathFromFileURL( ustrFileName, &ustrUNCPath, sal_True );
 
-	/* So far we either have an UNC path or something invalid 
+	/* So far we either have an UNC path or something invalid
 	   Now create a system path */
 	if ( osl_File_E_None == error )
 		error = _osl_getSystemPathFromFileURL( ustrUNCPath, &ustrSysPath, sal_True );
@@ -988,12 +988,12 @@ oslFileError SAL_CALL osl_searchFileURL(
 	if ( osl_File_E_None == error )
 	{
 		DWORD	nBufferLength;
-		DWORD	dwResult;		
+		DWORD	dwResult;
 		LPTSTR	lpBuffer = NULL;
 		LPTSTR	lpszFilePart;
 
-		/* Repeat calling SearchPath ... 
-		   Start with MAX_PATH for the buffer. In most cases this 
+		/* Repeat calling SearchPath ...
+		   Start with MAX_PATH for the buffer. In most cases this
 		   will be enough and does not force the loop to runtwice */
 		dwResult = MAX_PATH;
 
@@ -1006,14 +1006,14 @@ oslFileError SAL_CALL osl_searchFileURL(
 			/* Allocate space for buffer according to previous returned count of required chars */
 			/* +1 is not necessary if we follow MSDN documentation but for robustness we do so */
 			nBufferLength = dwResult + 1;
-			lpBuffer = lpBuffer ? 
-			    reinterpret_cast<LPTSTR>(rtl_reallocateMemory(lpBuffer, nBufferLength * sizeof(TCHAR))) : 
+			lpBuffer = lpBuffer ?
+			    reinterpret_cast<LPTSTR>(rtl_reallocateMemory(lpBuffer, nBufferLength * sizeof(TCHAR))) :
 			    reinterpret_cast<LPTSTR>(rtl_allocateMemory(nBufferLength * sizeof(TCHAR)));
 
-			dwResult = SearchPath( lpszSearchPath, lpszSearchFile, NULL, nBufferLength, lpBuffer, &lpszFilePart ); 
+			dwResult = SearchPath( lpszSearchPath, lpszSearchFile, NULL, nBufferLength, lpBuffer, &lpszFilePart );
 		} while ( dwResult && dwResult >= nBufferLength );
 
-		/*	... until an error occurs or buffer is large enough. 
+		/*	... until an error occurs or buffer is large enough.
 			dwResult == nBufferLength can not happen according to documentation but lets be robust ;-) */
 
 		if ( dwResult )
@@ -1040,7 +1040,7 @@ oslFileError SAL_CALL osl_searchFileURL(
 
 		rtl_freeMemory( lpBuffer );
 	}
-	
+
 	if ( ustrSysPath )
 		rtl_uString_release( ustrSysPath );
 
@@ -1082,7 +1082,7 @@ oslFileError SAL_CALL osl_getAbsoluteFileURL( rtl_uString* ustrBaseURL, rtl_uStr
   Bad, bad hack, this only works if the base path
   really exists which is not necessary according
   to RFC2396
-  The whole FileURL implementation should be merged 
+  The whole FileURL implementation should be merged
   with the rtl/uri class.
 */
 		if ( ustrBaseSysPath )

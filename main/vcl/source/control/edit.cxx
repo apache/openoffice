@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1614,7 +1614,7 @@ sal_Bool Edit::ImplHandleKeyEvent( const KeyEvent& rKEvt )
                 bDone = sal_True;
             }
             break;
-            
+
 			case KEY_LEFT:
 			case KEY_RIGHT:
 			case KEY_HOME:
@@ -1648,7 +1648,7 @@ sal_Bool Edit::ImplHandleKeyEvent( const KeyEvent& rKEvt )
                     bool bGoRight = (nCode == KEY_RIGHT);
                     bool bGoHome = (nCode == KEY_HOME);
                     bool bGoEnd = (nCode == KEY_END);
-                    
+
                     switch( nCode )
                     {
                     case com::sun::star::awt::Key::MOVE_WORD_FORWARD:
@@ -1680,7 +1680,7 @@ sal_Bool Edit::ImplHandleKeyEvent( const KeyEvent& rKEvt )
                     default:
                         break;
                     };
-                    
+
 					// Range wird in ImplSetSelection geprueft...
 					if ( bGoLeft && aSel.Max() )
 					{
@@ -2864,7 +2864,7 @@ Size Edit::CalcMinimumSize() const
         aSize.Width() = aMinSize.Width();
     // add some space between text entry and border
     aSize.Height() += 4;
-    
+
 	aSize = CalcWindowSize( aSize );
 
     // ask NWF what if it has an opinion, too
@@ -2886,7 +2886,7 @@ Size Edit::GetMinimumEditSize()
     Window* pDefWin = ImplGetDefaultWindow();
     Edit aEdit( pDefWin, WB_BORDER );
     Size aSize( aEdit.CalcMinimumSize() );
-    return aSize;    
+    return aSize;
 }
 
 // -----------------------------------------------------------------------

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -420,7 +420,7 @@ namespace toolkitform
                 OSL_VERIFY( xModelProps->getPropertyValue( FM_PROP_FONT ) >>= aUNOFont );
                 _rpDescriptor->TextFont = VCLUnoHelper::CreateFont( aUNOFont, Font() );
             }
-            
+
             // tab order
             rtl::OUString aTabIndexString( RTL_CONSTASCII_USTRINGPARAM( "TabIndex" ) );
             if ( xPSI->hasPropertyByName( aTabIndexString ) )
@@ -576,7 +576,7 @@ namespace toolkitform
                 // since we explicitly list the entries in the order in which they appear, they should not be
                 // resorted by the PDF viewer
                 pListWidget->Sort = false;
-                
+
                 // get selected items
                 Sequence< sal_Int16 > aSelectIndices;
                 OSL_VERIFY( xModelProps->getPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "SelectedItems" ) ) ) >>= aSelectIndices );

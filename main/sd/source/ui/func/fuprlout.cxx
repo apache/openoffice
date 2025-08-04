@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -145,7 +145,7 @@ void FuPresentationLayout::DoExecute( SfxRequest& rReq )
 	// Dialog aufrufen
 	sal_Bool   bLoad = sal_False;			// tauchen neue Masterpages auf?
 	String aFile;
-		
+
 	SfxItemSet aSet(mpDoc->GetPool(), ATTR_PRESLAYOUT_START, ATTR_PRESLAYOUT_END);
 
 	aSet.Put( SfxBoolItem( ATTR_PRESLAYOUT_LOAD, bLoad));
@@ -153,8 +153,8 @@ void FuPresentationLayout::DoExecute( SfxRequest& rReq )
 	aSet.Put( SfxBoolItem( ATTR_PRESLAYOUT_CHECK_MASTERS, bCheckMasters ) );
 	aSet.Put( SfxStringItem( ATTR_PRESLAYOUT_NAME, aOldLayoutName));
 
-	
-	
+
+
 	const SfxItemSet *pArgs = rReq.GetArgs ();
 
 	if (pArgs)
@@ -245,7 +245,7 @@ void FuPresentationLayout::DoExecute( SfxRequest& rReq )
 			{
 				if (mpViewShell->ISA(DrawViewShell))
 				{
-					::sd::View* pView = 
+					::sd::View* pView =
                           static_cast<DrawViewShell*>(mpViewShell)->GetView();
 					sal_uInt16 nPgNum = pSelectedPage->TRG_GetMasterPage().GetPageNum();
 
@@ -268,7 +268,7 @@ void FuPresentationLayout::DoExecute( SfxRequest& rReq )
 		// fake a mode change to repaint the page tab bar
 		if( mpViewShell && mpViewShell->ISA( DrawViewShell ) )
 		{
-			DrawViewShell* pDrawViewSh = 
+			DrawViewShell* pDrawViewSh =
                 static_cast<DrawViewShell*>(mpViewShell);
 			EditMode eMode = pDrawViewSh->GetEditMode();
 			sal_Bool bLayer = pDrawViewSh->IsLayerModeActive();

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -111,20 +111,20 @@ ScDBData* ScDBFunc::GetDBData( sal_Bool bMark, ScGetDBMode eMode, ScGetDBSelecti
         bool bShrinkColumnsOnly = false;
         if (eSel == SC_DBSEL_ROW_DOWN)
         {
-            // Don't alter row range, additional rows may have been selected on 
+            // Don't alter row range, additional rows may have been selected on
             // purpose to append data, or to have a fake header row.
             bShrinkColumnsOnly = true;
-            // Select further rows only if only one row or a portion thereof is 
+            // Select further rows only if only one row or a portion thereof is
             // selected.
             if (aRange.aStart.Row() != aRange.aEnd.Row())
             {
-                // If an area is selected shrink that to the actual used 
+                // If an area is selected shrink that to the actual used
                 // columns, don't draw filter buttons for empty columns.
                 eSel = SC_DBSEL_SHRINK_TO_USED_DATA;
             }
             else if (aRange.aStart.Col() == aRange.aEnd.Col())
             {
-                // One cell only, if it is not marked obtain entire used data 
+                // One cell only, if it is not marked obtain entire used data
                 // area.
                 const ScMarkData& rMarkData = GetViewData()->GetMarkData();
                 if (!(rMarkData.IsMarked() || rMarkData.IsMultiMarked()))
@@ -156,7 +156,7 @@ ScDBData* ScDBFunc::GetDBData( sal_Bool bMark, ScGetDBMode eMode, ScGetDBSelecti
                     SCCOL nCol1 = aRange.aStart.Col(), nCol2 = aRange.aEnd.Col();
                     SCROW nRow1 = aRange.aStart.Row(), nRow2 = aRange.aEnd.Row();
                     bool bShrunk;
-                    pDoc->ShrinkToUsedDataArea( bShrunk, aRange.aStart.Tab(), 
+                    pDoc->ShrinkToUsedDataArea( bShrunk, aRange.aStart.Tab(),
                             nCol1, nRow1, nCol2, nRow2, bShrinkColumnsOnly);
                     if (bShrunk)
                     {

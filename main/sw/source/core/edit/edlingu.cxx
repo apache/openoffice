@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -133,12 +133,12 @@ class SwSpellIter : public SwLinguIter
     void    CreatePortion(uno::Reference< XSpellAlternatives > xAlt,
                 linguistic2::ProofreadingResult* pGrammarResult,
                 bool bIsField, bool bIsHidden);
-    
+
     void    AddPortion(uno::Reference< XSpellAlternatives > xAlt,
-                       linguistic2::ProofreadingResult* pGrammarResult, 
+                       linguistic2::ProofreadingResult* pGrammarResult,
                        const SpellContentPositions& rDeletedRedlines);
 public:
-    SwSpellIter() : 
+    SwSpellIter() :
         bBackToStartOfSentence(false), bMoveToEndOfSentence(false) {}
 
 	void Start( SwEditShell *pSh, SwDocPositions eStart, SwDocPositions eEnd );
@@ -694,7 +694,7 @@ bool SwEditShell::HasLastSentenceGotGrammarChecked() const
         ::svx::SpellPortions aLastPortions( pSpellIter->GetLastPortions() );
         for (size_t i = 0;  i < aLastPortions.size() && !bTextWasGrammarChecked;  ++i)
         {
-            // bIsGrammarError is also true if the text was only checked but no 
+            // bIsGrammarError is also true if the text was only checked but no
             // grammar error was found. (That is if a ProofreadingResult was obtained in
             // SwDoc::Spell and in turn bIsGrammarError was set in SwSpellIter::CreatePortion)
             if (aLastPortions[i].bIsGrammarError)
@@ -1108,8 +1108,8 @@ uno::Reference< XSpellAlternatives >
 /*-------------------------------------------------------------------------
 
   -----------------------------------------------------------------------*/
-    
-bool SwEditShell::GetGrammarCorrection( 
+
+bool SwEditShell::GetGrammarCorrection(
     linguistic2::ProofreadingResult /*out*/ &rResult,    // the complete result
     sal_Int32 /*out*/ &rErrorPosInText,                     // offset of error position in string that was grammar checked...
     sal_Int32 /*out*/ &rErrorIndexInResult,                 // index of error in rResult.aGrammarErrors
@@ -1145,17 +1145,17 @@ bool SwEditShell::GetGrammarCorrection(
             {
 //                LanguageType eActLang = (LanguageType)pNode->GetLang( nBegin, nLen );
                 uno::Reference< lang::XComponent > xDoc( pDoc->GetDocShell()->GetBaseModel(), uno::UNO_QUERY );
-                
+
                 // Expand the string:
                 rtl::OUString aExpandText;
                 const ModelToViewHelper::ConversionMap* pConversionMap =
                         pNode->BuildConversionMap( aExpandText );
                 // get XFlatParagraph to use...
                 uno::Reference< text::XFlatParagraph > xFlatPara = new SwXFlatParagraph( *pNode, aExpandText, pConversionMap );
-                
+
                 // get error position of cursor in XFlatParagraph
                 rErrorPosInText = ModelToViewHelper::ConvertToViewPosition( pConversionMap, nBegin );
-                
+
                 sal_Int32 nStartOfSentence = ModelToViewHelper::ConvertToViewPosition( pConversionMap, pWrong->getSentenceStart( nBegin ) );
                 sal_Int32 nEndOfSentence = ModelToViewHelper::ConvertToViewPosition( pConversionMap, pWrong->getSentenceEnd( nBegin ) );
                 if( nEndOfSentence == STRING_LEN )
@@ -1168,11 +1168,11 @@ bool SwEditShell::GetGrammarCorrection(
                     else */
                         nEndOfSentence = aExpandText.getLength();
                 }
-                
-                rResult = xGCIterator->checkSentenceAtPosition( 
+
+                rResult = xGCIterator->checkSentenceAtPosition(
                         xDoc, xFlatPara, aExpandText, lang::Locale(), nStartOfSentence, nEndOfSentence, rErrorPosInText );
                 bRes = true;
-                
+
                 // get suggestions to use for the specific error position
                 sal_Int32 nErrors = rResult.aErrors.getLength();
                 rSuggestions.realloc( 0 );
@@ -1187,7 +1187,7 @@ bool SwEditShell::GetGrammarCorrection(
                         rErrorIndexInResult = i;
                         break;
                     }
-                }    
+                }
             }
 
             if (rResult.aErrors.getLength() > 0)    // error found?
@@ -1248,7 +1248,7 @@ bool SwEditShell::GetGrammarCorrection(
     }
 
     return bRes;
-}    
+}
 
 /*-- 18.09.2003 15:08:18---------------------------------------------------
 
@@ -1297,7 +1297,7 @@ sal_uInt32 lcl_CountRedlines(
 
 void SwEditShell::MoveContinuationPosToEndOfCheckedSentence()
 {
-    // give hint that continuation position for spell/grammar checking is 
+    // give hint that continuation position for spell/grammar checking is
     // at the end of this sentence
     if (pSpellIter)
     {
@@ -1395,7 +1395,7 @@ void SwEditShell::ApplyChangedSentence(const ::svx::SpellPortions& rNewPortions,
                     //add the 'ignore' markup to the TextNode's grammar ignore markup list
                     IgnoreGrammarErrorAt( *pCrsr );
                     DBG_ERROR("TODO: add ignore mark to text node");
-                }    
+                }
                 if(aCurrentNewPortion == rNewPortions.begin())
                     break;
             }
@@ -1439,8 +1439,8 @@ void SwEditShell::ApplyChangedSentence(const ::svx::SpellPortions& rNewPortions,
             }
         }
 
-        // restore cursor to the end of the sentence 
-        // (will work also if the sentence length has changed, 
+        // restore cursor to the end of the sentence
+        // (will work also if the sentence length has changed,
         // since cursors get updated automatically!)
         Pop( sal_False );
 
@@ -1569,7 +1569,7 @@ bool SwSpellIter::SpellSentence(::svx::SpellPortions& rPortions, bool bIsGrammar
             pMySh->GoStartSentence();
             bBackToStartOfSentence = false;
         }
-        uno::Any aSpellRet = 
+        uno::Any aSpellRet =
         pMySh->GetDoc()->Spell(*pCrsr,
                     xSpeller, 0, 0, bIsGrammarCheck );
         aSpellRet >>= xSpellRet;
@@ -1648,9 +1648,9 @@ bool SwSpellIter::SpellSentence(::svx::SpellPortions& rPortions, bool bIsGrammar
                 --nSentenceEnd;
             if( pCrsr->End()->nContent.GetIndex() < nSentenceEnd )
             {
-                pCrsr->End()->nContent.Assign( 
+                pCrsr->End()->nContent.Assign(
                     pCrsr->End()->nNode.GetNode().GetCntntNode(), nSentenceEnd);
-            }   
+            }
         }
 
         lcl_CutRedlines( aDeletedRedlines, pMySh );
@@ -1709,7 +1709,7 @@ bool SwSpellIter::SpellSentence(::svx::SpellPortions& rPortions, bool bIsGrammar
         {
             //go to the end of sentence as the grammar check returned it
             // at this time the Point is behind the grammar error
-            // and the mark points to the sentence end as 
+            // and the mark points to the sentence end as
             if ( *pCrsr->GetPoint() < *pCrsr->GetMark() )
                 pCrsr->Exchange();
         }
@@ -1801,7 +1801,7 @@ void SwSpellIter::CreatePortion(uno::Reference< XSpellAlternatives > xAlt,
                     }
                 }
             }
-        }    
+        }
         else
             aPortion.sText = sText;
 		aPortion.eLanguage = lcl_GetLanguage(*GetSh());
@@ -1820,7 +1820,7 @@ void SwSpellIter::CreatePortion(uno::Reference< XSpellAlternatives > xAlt,
 
   -----------------------------------------------------------------------*/
 void    SwSpellIter::AddPortion(uno::Reference< XSpellAlternatives > xAlt,
-                                linguistic2::ProofreadingResult* pGrammarResult, 
+                                linguistic2::ProofreadingResult* pGrammarResult,
                                 const SpellContentPositions& rDeletedRedlines)
 {
     SwEditShell *pMySh = GetSh();
@@ -1966,4 +1966,4 @@ void SwEditShell::IgnoreGrammarErrorAt( SwPaM& rErrorPosition )
         ++aIdx;
         nStart = 0;
     }
-}    
+}

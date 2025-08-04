@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -145,7 +145,7 @@ sal_Bool isDerivedFrom( Reference<XIdlClass> xToTestClass, Reference<XIdlClass> 
 //**************************************
 //*** IntrospectionAccessStatic_Impl ***
 //**************************************
-// Entspricht dem alten IntrospectionAccessImpl, bildet jetzt den statischen 
+// Entspricht dem alten IntrospectionAccessImpl, bildet jetzt den statischen
 // Anteil des neuen Instanz-bezogenen ImplIntrospectionAccess
 
 // ACHTUNG !!! Von Hand refcounten !!!
@@ -217,7 +217,7 @@ class IntrospectionAccessStatic_Impl
 
 	// Klassifizierung der gefundenen Methoden
 	Sequence<sal_Int32> maPropertyConceptSeq;
-	
+
 	// Anzahl der Properties
 	sal_Int32 mnPropCount;
 
@@ -238,7 +238,7 @@ class IntrospectionAccessStatic_Impl
 
 	// Klassifizierung der gefundenen Methoden
 	Sequence<sal_Int32> maMethodConceptSeq;
-	
+
 	// Anzahl der Methoden
 	sal_Int32 mnMethCount;
 
@@ -250,13 +250,13 @@ class IntrospectionAccessStatic_Impl
 
 	// Hilfs-Methoden zur Groessen-Anpassung der Sequences
 	void checkPropertyArraysSize
-	( 
-		Property*& rpAllPropArray, 
+	(
+		Property*& rpAllPropArray,
 		sal_Int16*& rpMapTypeArray,
 		sal_Int32*& rpPropertyConceptArray,
 		sal_Int32 iNextIndex
 	);
-	void checkInterfaceArraySize( Sequence< Reference<XInterface> >& rSeq, Reference<XInterface>*& rpInterfaceArray, 
+	void checkInterfaceArraySize( Sequence< Reference<XInterface> >& rSeq, Reference<XInterface>*& rpInterfaceArray,
 		sal_Int32 iNextIndex );
 
 	// RefCount
@@ -274,8 +274,8 @@ public:
 
 	void acquire() { nRefCount++; }
 	void release()
-	{ 
-		nRefCount--; 
+	{
+		nRefCount--;
 		if( nRefCount <= 0 )
 			delete this;
 	}
@@ -495,7 +495,7 @@ void IntrospectionAccessStatic_Impl::setPropertyValueByIndex(const Any& obj, sal
 			if( mbFastPropSet && ( nOrgHandle = mpOrgPropertyHandleArray[ nSequenceIndex ] ) != -1 )
 			{
 				// PropertySet-Interface holen
-				Reference<XFastPropertySet> xFastPropSet = 
+				Reference<XFastPropertySet> xFastPropSet =
 					Reference<XFastPropertySet>::query( xInterface );
 				if( xFastPropSet.is() )
 				{
@@ -510,7 +510,7 @@ void IntrospectionAccessStatic_Impl::setPropertyValueByIndex(const Any& obj, sal
 			else
 			{
 				// PropertySet-Interface holen
-				Reference<XPropertySet> xPropSet = 
+				Reference<XPropertySet> xPropSet =
 					Reference<XPropertySet>::query( xInterface );
 				if( xPropSet.is() )
 				{
@@ -609,7 +609,7 @@ Any IntrospectionAccessStatic_Impl::getPropertyValueByIndex(const Any& obj, sal_
 			if( mbFastPropSet && ( nOrgHandle = mpOrgPropertyHandleArray[ nSequenceIndex ] ) != -1 )
 			{
 				// PropertySet-Interface holen
-				Reference<XFastPropertySet> xFastPropSet = 
+				Reference<XFastPropertySet> xFastPropSet =
 					Reference<XFastPropertySet>::query( xInterface );
 				if( xFastPropSet.is() )
 				{
@@ -625,7 +625,7 @@ Any IntrospectionAccessStatic_Impl::getPropertyValueByIndex(const Any& obj, sal_
 			else
 			{
 				// PropertySet-Interface holen
-				Reference<XPropertySet> xPropSet = 
+				Reference<XPropertySet> xPropSet =
 					Reference<XPropertySet>::query( xInterface );
 				if( xPropSet.is() )
 				{
@@ -685,8 +685,8 @@ Any IntrospectionAccessStatic_Impl::getPropertyValueByIndex(const Any& obj, sal_
 
 // Hilfs-Methoden zur Groessen-Anpassung der Sequences
 void IntrospectionAccessStatic_Impl::checkPropertyArraysSize
-( 
-	Property*& rpAllPropArray, 
+(
+	Property*& rpAllPropArray,
 	sal_Int16*& rpMapTypeArray,
 	sal_Int32*& rpPropertyConceptArray,
 	sal_Int32 iNextIndex
@@ -816,8 +816,8 @@ ImplIntrospectionAccess::~ImplIntrospectionAccess()
 // Neue Impl-Klasse im Rahmen der Introspection-Umstellung auf Instanz-gebundene
 // Introspection mit Property-Zugriff ueber XPropertySet. Die alte Klasse
 // ImplIntrospectionAccess lebt als IntrospectionAccessStatic_Impl
-class ImplIntrospectionAdapter : 
-	public XPropertySet, public XFastPropertySet, public XPropertySetInfo, 
+class ImplIntrospectionAdapter :
+	public XPropertySet, public XFastPropertySet, public XPropertySetInfo,
 	public XNameContainer, public XIndexContainer,
 	public XEnumerationAccess, public  XIdlArray,
 	public OWeakObject
@@ -827,7 +827,7 @@ class ImplIntrospectionAdapter :
 
 	// Untersuchtes Objekt
 	const Any& mrInspectedObject;
-    
+
 	// Statische Daten der Introspection
 	IntrospectionAccessStatic_Impl* mpStaticImpl;
 
@@ -844,7 +844,7 @@ class ImplIntrospectionAdapter :
 	Reference<XIdlArray>			mxObjIdlArray;
 
 public:
-	ImplIntrospectionAdapter( ImplIntrospectionAccess* pAccess_, 
+	ImplIntrospectionAdapter( ImplIntrospectionAccess* pAccess_,
 		const Any& obj, IntrospectionAccessStatic_Impl* pStaticImpl_ );
 	~ImplIntrospectionAdapter();
 
@@ -859,13 +859,13 @@ public:
 		throw( UnknownPropertyException, PropertyVetoException, IllegalArgumentException, WrappedTargetException, RuntimeException );
     virtual Any SAL_CALL getPropertyValue(const ::rtl::OUString& aPropertyName)
 		throw( UnknownPropertyException, WrappedTargetException, RuntimeException );
-    virtual void SAL_CALL addPropertyChangeListener(const ::rtl::OUString& aPropertyName, const Reference<XPropertyChangeListener>& aListener) 
+    virtual void SAL_CALL addPropertyChangeListener(const ::rtl::OUString& aPropertyName, const Reference<XPropertyChangeListener>& aListener)
 		throw( UnknownPropertyException, WrappedTargetException, RuntimeException );
-    virtual void SAL_CALL removePropertyChangeListener(const ::rtl::OUString& aPropertyName, const Reference<XPropertyChangeListener>& aListener) 
+    virtual void SAL_CALL removePropertyChangeListener(const ::rtl::OUString& aPropertyName, const Reference<XPropertyChangeListener>& aListener)
 		throw( UnknownPropertyException, WrappedTargetException, RuntimeException );
-    virtual void SAL_CALL addVetoableChangeListener(const ::rtl::OUString& aPropertyName, const Reference<XVetoableChangeListener>& aListener) 
+    virtual void SAL_CALL addVetoableChangeListener(const ::rtl::OUString& aPropertyName, const Reference<XVetoableChangeListener>& aListener)
 		throw( UnknownPropertyException, WrappedTargetException, RuntimeException );
-    virtual void SAL_CALL removeVetoableChangeListener(const ::rtl::OUString& aPropertyName, const Reference<XVetoableChangeListener>& aListener) 
+    virtual void SAL_CALL removeVetoableChangeListener(const ::rtl::OUString& aPropertyName, const Reference<XVetoableChangeListener>& aListener)
 		throw( UnknownPropertyException, WrappedTargetException, RuntimeException );
 
 	// Methoden von XFastPropertySet
@@ -903,7 +903,7 @@ public:
 		throw( IndexOutOfBoundsException, WrappedTargetException, RuntimeException );
 
 	// Methoden von XIndexContainer
-	virtual void SAL_CALL insertByIndex(sal_Int32 Index, const Any& Element) 
+	virtual void SAL_CALL insertByIndex(sal_Int32 Index, const Any& Element)
 		throw( IllegalArgumentException, IndexOutOfBoundsException, WrappedTargetException, RuntimeException );
 	virtual void SAL_CALL replaceByIndex(sal_Int32 Index, const Any& Element)
 		throw( IllegalArgumentException, IndexOutOfBoundsException, WrappedTargetException, RuntimeException );
@@ -923,7 +923,7 @@ public:
 		throw( IllegalArgumentException, ArrayIndexOutOfBoundsException, RuntimeException );
 };
 
-ImplIntrospectionAdapter::ImplIntrospectionAdapter( ImplIntrospectionAccess* pAccess_, 
+ImplIntrospectionAdapter::ImplIntrospectionAdapter( ImplIntrospectionAccess* pAccess_,
 	const Any& obj, IntrospectionAccessStatic_Impl* pStaticImpl_ )
 		: mpAccess( pAccess_), mrInspectedObject( obj ), mpStaticImpl( pStaticImpl_ )
 {
@@ -951,7 +951,7 @@ ImplIntrospectionAdapter::~ImplIntrospectionAdapter()
 }
 
 // Methoden von XInterface
-Any SAL_CALL ImplIntrospectionAdapter::queryInterface( const Type& rType ) 
+Any SAL_CALL ImplIntrospectionAdapter::queryInterface( const Type& rType )
 	throw( RuntimeException )
 {
 	Any aRet( ::cppu::queryInterface(
@@ -972,7 +972,7 @@ Any SAL_CALL ImplIntrospectionAdapter::queryInterface( const Type& rType )
 			|| ( mxObjIndexAccess.is() && (aRet = ::cppu::queryInterface( rType, static_cast< XIndexAccess* >( this ) ) ).hasValue() )
 			|| ( mxObjIndexContainer.is() && (aRet = ::cppu::queryInterface( rType, static_cast< XIndexContainer* >( this ) ) ).hasValue() )
 			|| ( mxObjEnumerationAccess	.is() && (aRet = ::cppu::queryInterface( rType, static_cast< XEnumerationAccess* >( this ) ) ).hasValue() )
-			|| ( mxObjIdlArray.is() && (aRet = ::cppu::queryInterface( rType, static_cast< XIdlArray* >( this ) ) ).hasValue() ) 
+			|| ( mxObjIdlArray.is() && (aRet = ::cppu::queryInterface( rType, static_cast< XIdlArray* >( this ) ) ).hasValue() )
 		  )
 		{
 		}
@@ -1009,7 +1009,7 @@ void ImplIntrospectionAdapter::addPropertyChangeListener(const ::rtl::OUString& 
 {
 	if( mxIface.is() )
 	{
-		Reference<XPropertySet> xPropSet = 
+		Reference<XPropertySet> xPropSet =
 			Reference<XPropertySet>::query( mxIface );
 		//Reference<XPropertySet> xPropSet( mxIface, USR_QUERY );
 		if( xPropSet.is() )
@@ -1022,7 +1022,7 @@ void ImplIntrospectionAdapter::removePropertyChangeListener(const ::rtl::OUStrin
 {
 	if( mxIface.is() )
 	{
-		Reference<XPropertySet> xPropSet = 
+		Reference<XPropertySet> xPropSet =
 			Reference<XPropertySet>::query( mxIface );
 		//Reference<XPropertySet> xPropSet( mxIface, USR_QUERY );
 		if( xPropSet.is() )
@@ -1035,7 +1035,7 @@ void ImplIntrospectionAdapter::addVetoableChangeListener(const ::rtl::OUString& 
 {
 	if( mxIface.is() )
 	{
-		Reference<XPropertySet> xPropSet = 
+		Reference<XPropertySet> xPropSet =
 			Reference<XPropertySet>::query( mxIface );
 		//Reference<XPropertySet> xPropSet( mxIface, USR_QUERY );
 		if( xPropSet.is() )
@@ -1048,7 +1048,7 @@ void ImplIntrospectionAdapter::removeVetoableChangeListener(const ::rtl::OUStrin
 {
 	if( mxIface.is() )
 	{
-		Reference<XPropertySet> xPropSet = 
+		Reference<XPropertySet> xPropSet =
 			Reference<XPropertySet>::query( mxIface );
 		if( xPropSet.is() )
 			xPropSet->removeVetoableChangeListener(aPropertyName, aListener);
@@ -1264,8 +1264,8 @@ Sequence< Property > ImplIntrospectionAccess::getProperties(sal_Int32 PropertyCo
 	throw( RuntimeException )
 {
 	// Wenn alle unterstuetzten Konzepte gefordert werden, Sequence einfach durchreichen
-	sal_Int32 nAllSupportedMask =	PROPERTYSET | 
-									ATTRIBUTES | 
+	sal_Int32 nAllSupportedMask =	PROPERTYSET |
+									ATTRIBUTES |
 									METHODS;
 	if( ( PropertyConcepts & nAllSupportedMask ) == nAllSupportedMask )
 	{
@@ -1397,7 +1397,7 @@ Sequence< Reference<XIdlMethod> > ImplIntrospectionAccess::getMethods(sal_Int32 
 
 	// Sequence entsprechend der geforderten Anzahl reallocieren
 	// Anders als bei den Properties kann die Anzahl nicht durch
-	// Zaehler in inspect() vorher ermittelt werden, da Methoden 
+	// Zaehler in inspect() vorher ermittelt werden, da Methoden
 	// mehreren Konzepten angehoeren koennen
 	pThis->maLastMethodSeq.realloc( nLen );
 	Reference<XIdlMethod>* pDestMethods = pThis->maLastMethodSeq.getArray();
@@ -1487,7 +1487,7 @@ Any ImplIntrospectionAccess::getMaterial(void) throw(RuntimeException)
 ::rtl::OUString ImplIntrospectionAccess::getExactName( const ::rtl::OUString& rApproximateName ) throw( RuntimeException )
 {
     ::rtl::OUString aRetStr;
-	LowerToExactNameMap::iterator aIt = 
+	LowerToExactNameMap::iterator aIt =
 		mpStaticImpl->maLowerToExactNameMap.find( toLower( rApproximateName ) );
 	if( !( aIt == mpStaticImpl->maLowerToExactNameMap.end() ) )
 		aRetStr = (*aIt).second;
@@ -1508,16 +1508,16 @@ struct hashIntrospectionKey_Impl
 
 	void	IncHitCount() const { ((hashIntrospectionKey_Impl*)this)->nHitCount++; }
 	hashIntrospectionKey_Impl() : nHitCount( 0 ) {}
-	hashIntrospectionKey_Impl( const Sequence< Reference<XIdlClass> > & rIdlClasses, 
+	hashIntrospectionKey_Impl( const Sequence< Reference<XIdlClass> > & rIdlClasses,
 										const Reference<XPropertySetInfo> & rxPropInfo,
 										const Reference<XIdlClass> & rxImplClass );
 };
 
 hashIntrospectionKey_Impl::hashIntrospectionKey_Impl
 (
-	const Sequence< Reference<XIdlClass> > & rIdlClasses, 
+	const Sequence< Reference<XIdlClass> > & rIdlClasses,
 	const Reference<XPropertySetInfo> & rxPropInfo,
-	const Reference<XIdlClass> & rxImplClass 
+	const Reference<XIdlClass> & rxImplClass
 )
 		: aIdlClasses( rIdlClasses )
 		, xPropInfo( rxPropInfo )
@@ -1570,7 +1570,7 @@ public:
  		IntrospectionAccessCacheMap::iterator stop = this->end();
  		while( iter != stop )
  		{
-	
+
 			(*iter).second->release();
 			(*iter).second = NULL;
 			iter++;
@@ -1592,8 +1592,8 @@ struct hashTypeProviderKey_Impl
 };
 
 hashTypeProviderKey_Impl::hashTypeProviderKey_Impl
-( 
-	const Reference<XPropertySetInfo> & rxPropInfo, 
+(
+	const Reference<XPropertySetInfo> & rxPropInfo,
 	const Sequence< sal_Int8 > & aImpIdSeq_
 )
 	: xPropInfo( rxPropInfo )
@@ -1692,7 +1692,7 @@ class ImplIntrospection : public XIntrospection
 						, public XServiceInfo
 						, public OIntrospectionMutex
 						, public OComponentHelper
-{	
+{
 	friend class ImplMergeIntrospection;
 	friend class ImplMVCIntrospection;
 
@@ -1798,7 +1798,7 @@ ImplIntrospection::ImplIntrospection( const Reference<XMultiServiceFactory> & rX
             ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("/singletons/com.sun.star.reflection.theCoreReflection singleton not accessible") ),
             Reference< XInterface >() );
     }
-    
+
 	mxElementAccessClass = mxCoreReflection->forName( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.container.XElementAccess")) );
 	mxNameContainerClass = mxCoreReflection->forName( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.container.XNameContainer")) );
 	mxNameAccessClass = mxCoreReflection->forName( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.container.XNameAccess")) );
@@ -1845,7 +1845,7 @@ Any ImplIntrospection::queryInterface( const Type & rType )
 		rType,
 		static_cast< XIntrospection * >( this ),
 		static_cast< XServiceInfo * >( this ) ) );
-	
+
 	return (aRet.hasValue() ? aRet : OComponentHelper::queryInterface( rType ));
 }
 
@@ -1889,7 +1889,7 @@ Sequence< sal_Int8 > ImplIntrospection::getImplementationId()
 // XServiceInfo
 ::rtl::OUString ImplIntrospection::getImplementationName() throw()
 {
-	return getImplementationName_Static();	
+	return getImplementationName_Static();
 }
 
 // XServiceInfo
@@ -1911,7 +1911,7 @@ Sequence< ::rtl::OUString > ImplIntrospection::getSupportedServiceNames(void) th
 
 //*************************************************************************
 // Helper XServiceInfo
-::rtl::OUString ImplIntrospection::getImplementationName_Static(  ) 
+::rtl::OUString ImplIntrospection::getImplementationName_Static(  )
 {
 	return ::rtl::OUString::createFromAscii( IMPLEMENTATION_NAME );
 }
@@ -1938,16 +1938,16 @@ Reference<XIntrospectionAccess> ImplIntrospection::inspect(const Any& aToInspect
 		aToInspectObj >>= aType;
 
 		Reference< XIdlClass > xIdlClass = mxCoreReflection->forName(((Type*)(aToInspectObj.getValue()))->getTypeName());
-		
+
 		if ( xIdlClass.is() )
-		{ 
+		{
 			Any aRealInspectObj;
 			aRealInspectObj <<= xIdlClass;
 
 			IntrospectionAccessStatic_Impl* pStaticImpl = implInspect( aRealInspectObj );
 			if( pStaticImpl )
 				xAccess = new ImplIntrospectionAccess( aRealInspectObj, pStaticImpl );
-		} 
+		}
 	}
 	else
 	{
@@ -1955,7 +1955,7 @@ Reference<XIntrospectionAccess> ImplIntrospection::inspect(const Any& aToInspect
 		if( pStaticImpl )
 			xAccess = new ImplIntrospectionAccess( aToInspectObj, pStaticImpl );
 	}
-		
+
 	return xAccess;
 }
 
@@ -2036,9 +2036,9 @@ IntrospectionAccessStatic_Impl* ImplIntrospection::implInspect(const Any& aToIns
 
 #ifdef USE_INTROSPECTION_CACHE
 	// Haben wir schon eine Cache-Instanz
-	if( !mpCache ) 
+	if( !mpCache )
 		mpCache = new IntrospectionAccessCacheMap;
-	if( !mpTypeProviderCache ) 
+	if( !mpTypeProviderCache )
 		mpTypeProviderCache = new TypeProviderAccessCacheMap;
 	IntrospectionAccessCacheMap& aCache = *mpCache;
 	TypeProviderAccessCacheMap& aTPCache = *mpTypeProviderCache;
@@ -2092,7 +2092,7 @@ IntrospectionAccessStatic_Impl* ImplIntrospection::implInspect(const Any& aToIns
 					xImplClass = SupportedClassSeq.getConstArray()[0];
 			}
 		}
-		// #70197, fuer InvocationAdapter: Interface-Typ im Any auch ohne 
+		// #70197, fuer InvocationAdapter: Interface-Typ im Any auch ohne
 		// ClassProvider unterstuetzen
 		if( !xClassProvider.is() && !xTypeProvider.is() )
 		{
@@ -2303,8 +2303,8 @@ IntrospectionAccessStatic_Impl* ImplIntrospection::implInspect(const Any& aToIns
 				}
 				else
 				{
-					OSL_ENSURE( sal_False, 
-						::rtl::OString( "Introspection: Property \"" ) + 
+					OSL_ENSURE( sal_False,
+						::rtl::OString( "Introspection: Property \"" ) +
 					    ::rtl::OUStringToOString( aPropName, RTL_TEXTENCODING_ASCII_US ) +
                         ::rtl::OString( "\" found more than once in PropertySet" ) );
 				}
@@ -2317,7 +2317,7 @@ IntrospectionAccessStatic_Impl* ImplIntrospection::implInspect(const Any& aToIns
 
 		// Jetzt alle weiteren implementierten Interfaces durchgehen
 		// Diese muessen durch das XIdlClassProvider-Interface geliefert werden.
-		// #70197, fuer InvocationAdapter: Interface-Typ im Any auch ohne 
+		// #70197, fuer InvocationAdapter: Interface-Typ im Any auch ohne
 		// ClassProvider unterstuetzen
 		//if( xClassProvider.is() )
 		{
@@ -2332,8 +2332,8 @@ IntrospectionAccessStatic_Impl* ImplIntrospection::implInspect(const Any& aToIns
 			// (das darf nur einmal erfolgen, initial zulassen)
 			sal_Bool bXInterfaceIsInvalid = sal_False;
 
-			// Flag, ob die XInterface-Methoden schon erfasst wurden. Wenn sal_True, 
-			// wird bXInterfaceIsInvalid am Ende der Iface-Schleife aktiviert und 
+			// Flag, ob die XInterface-Methoden schon erfasst wurden. Wenn sal_True,
+			// wird bXInterfaceIsInvalid am Ende der Iface-Schleife aktiviert und
 			// XInterface-Methoden werden danach abgeklemmt.
 			sal_Bool bFoundXInterface = sal_False;
 
@@ -2358,7 +2358,7 @@ IntrospectionAccessStatic_Impl* ImplIntrospection::implInspect(const Any& aToIns
 					{
 						const Reference<XIdlClass>& rxIfaceClass = pParamArray[j];
 
-						// Pruefen, ob das Interface schon beruecksichtigt wurde. 
+						// Pruefen, ob das Interface schon beruecksichtigt wurde.
 						XInterface* pIface = SAL_STATIC_CAST( XInterface*, rxIfaceClass.get() );
 						if( aCheckedInterfacesMap.count( pIface ) > 0 )
 						{
@@ -2397,8 +2397,8 @@ IntrospectionAccessStatic_Impl* ImplIntrospection::implInspect(const Any& aToIns
 							Type aFieldType( xPropType->getTypeClass(), xPropType->getName() );
 							rProp.Type = aFieldType;
 							FieldAccessMode eAccessMode = xField->getAccessMode();
-							rProp.Attributes = (eAccessMode == FieldAccessMode_READONLY || 
-												eAccessMode == FieldAccessMode_CONST) 
+							rProp.Attributes = (eAccessMode == FieldAccessMode_READONLY ||
+												eAccessMode == FieldAccessMode_CONST)
 												? READONLY : 0;
 
 							// Namen in Hashtable eintragen
@@ -2409,8 +2409,8 @@ IntrospectionAccessStatic_Impl* ImplIntrospection::implInspect(const Any& aToIns
 							if( !( aIt == rPropNameMap.end() ) )
 							{
 								/* TODO
-								OSL_TRACE( 
-									String( "Introspection: Property \"" ) + 
+								OSL_TRACE(
+									String( "Introspection: Property \"" ) +
 									OOUStringToString( aPropName, CHARSET_SYSTEM ) +
 									String( "\" found more than once" ) );
 									*/
@@ -2424,10 +2424,10 @@ IntrospectionAccessStatic_Impl* ImplIntrospection::implInspect(const Any& aToIns
 							rLowerToExactNameMap[ toLower( aPropName ) ] = aPropName;
 
 							// Field merken
-							pAccess->checkInterfaceArraySize( pAccess->aInterfaceSeq1, 
+							pAccess->checkInterfaceArraySize( pAccess->aInterfaceSeq1,
 								pInterfaces1, rPropCount );
 							pInterfaces1[ rPropCount ] = xField;
-						
+
 							// Art der Property merken
 							pMapTypeArray[ rPropCount ] = MAP_FIELD;
 							pPropertyConceptArray[ rPropCount ] = ATTRIBUTES;
@@ -2451,8 +2451,8 @@ IntrospectionAccessStatic_Impl* ImplIntrospection::implInspect(const Any& aToIns
 
 						// 3. a) get/set- und Listener-Methoden suchen
 
-						// Feld fuer Infos ueber die Methoden anlegen, damit spaeter leicht die Methoden 
-						// gefunden werden koennen, die nicht im Zusammenhang mit Properties oder Listenern 
+						// Feld fuer Infos ueber die Methoden anlegen, damit spaeter leicht die Methoden
+						// gefunden werden koennen, die nicht im Zusammenhang mit Properties oder Listenern
 						// stehen. NEU: auch MethodConceptArray initialisieren
 						MethodType* pMethodTypes = new MethodType[ nSourceMethodCount ];
 						sal_Int32* pLocalMethodConcepts = new sal_Int32[ nSourceMethodCount ];
@@ -2475,7 +2475,7 @@ IntrospectionAccessStatic_Impl* ImplIntrospection::implInspect(const Any& aToIns
 							aMethName = rxMethod_i->getName();
 
 							// Methoden katalogisieren
-							// Alle (?) Methoden von XInterface filtern, damit z.B. nicht 
+							// Alle (?) Methoden von XInterface filtern, damit z.B. nicht
 							// vom Scripting aus aquire oder release gerufen werden kann
 							if( rxMethod_i->getDeclaringClass()->equals( mxInterfaceClass ) )
 							{
@@ -2548,8 +2548,8 @@ IntrospectionAccessStatic_Impl* ImplIntrospection::implInspect(const Any& aToIns
 								if( !( aIt == rPropNameMap.end() ) )
 								{
 									/* TODO
-									OSL_TRACE( 
-										String( "Introspection: Property \"" ) + 
+									OSL_TRACE(
+										String( "Introspection: Property \"" ) +
 										OOUStringToString( aPropName, CHARSET_SYSTEM ) +
 										String( "\" found more than once" ) );
 										*/
@@ -2580,10 +2580,10 @@ IntrospectionAccessStatic_Impl* ImplIntrospection::implInspect(const Any& aToIns
 								rLowerToExactNameMap[ toLower( aPropName ) ] = aPropName;
 
 								// get-Methode merken
-								pAccess->checkInterfaceArraySize( pAccess->aInterfaceSeq1, 
+								pAccess->checkInterfaceArraySize( pAccess->aInterfaceSeq1,
 									pInterfaces1, rPropCount );
 								pInterfaces1[ rPropCount ] = rxMethod_i;
-							
+
 								// Art der Property merken
 								pMapTypeArray[ rPropCount ] = MAP_GETSET;
 								pPropertyConceptArray[ rPropCount ] = METHODS;
@@ -2641,7 +2641,7 @@ IntrospectionAccessStatic_Impl* ImplIntrospection::implInspect(const Any& aToIns
 										rProp.Attributes &= ~READONLY;
 
 										// set-Methode merken
-										pAccess->checkInterfaceArraySize( pAccess->aInterfaceSeq2, 
+										pAccess->checkInterfaceArraySize( pAccess->aInterfaceSeq2,
 											pInterfaces2, rPropCount );
 										pInterfaces2[ rPropCount ] = rxMethod_k;
 									}
@@ -2734,7 +2734,7 @@ IntrospectionAccessStatic_Impl* ImplIntrospection::implInspect(const Any& aToIns
 
 							// Namen besorgen
 							aMethName = rxMethod_i->getName();
-							
+
 							// Wenn der Name zu kurz ist, wird's sowieso nichts
 							if( aMethName.getLength() <= 3 )
 								continue;
@@ -2766,8 +2766,8 @@ IntrospectionAccessStatic_Impl* ImplIntrospection::implInspect(const Any& aToIns
 								if( !( aIt == rPropNameMap.end() ) )
 								{
 									/* TODO:
-									OSL_TRACE( 
-										String( "Introspection: Property \"" ) + 
+									OSL_TRACE(
+										String( "Introspection: Property \"" ) +
 										OOUStringToString( aPropName, CHARSET_SYSTEM ) +
 										String( "\" found more than once" ) );
 										*/
@@ -2798,7 +2798,7 @@ IntrospectionAccessStatic_Impl* ImplIntrospection::implInspect(const Any& aToIns
 								rLowerToExactNameMap[ toLower( aPropName ) ] = aPropName;
 
 								// set-Methode merken
-								pAccess->checkInterfaceArraySize( pAccess->aInterfaceSeq2, 
+								pAccess->checkInterfaceArraySize( pAccess->aInterfaceSeq2,
 									pInterfaces2, rPropCount );
 								pInterfaces2[ rPropCount ] = rxMethod_i;
 
@@ -2830,7 +2830,7 @@ IntrospectionAccessStatic_Impl* ImplIntrospection::implInspect(const Any& aToIns
 							{
 								nSupportedListenerCount++;
 							}
-						}				
+						}
 
 						// Sequences im Access-Objekt entsprechend aufbohren
 						pAccess->maAllMethodSeq.realloc( nExportedMethodCount + iAllExportedMethod );
@@ -2865,7 +2865,7 @@ IntrospectionAccessStatic_Impl* ImplIntrospection::implInspect(const Any& aToIns
 
                                 	Reference<XIdlMethod> xExistingMethod = pDestMethods[ iHashResult ];
 
-					                Reference< XIdlClass > xExistingMethClass = 
+					                Reference< XIdlClass > xExistingMethClass =
                                         xExistingMethod->getDeclaringClass();
 					                Reference< XIdlClass > xNewMethClass = rxMethod->getDeclaringClass();
 					                if( xExistingMethClass->equals( xNewMethClass ) )
@@ -2904,7 +2904,7 @@ IntrospectionAccessStatic_Impl* ImplIntrospection::implInspect(const Any& aToIns
 									const Reference<XIdlClass>& rxClass = pParamArray2[k];
 
 									// Sind wir von einem Listener abgeleitet?
-									if( rxClass->equals( xEventListenerClass ) || 
+									if( rxClass->equals( xEventListenerClass ) ||
 										isDerivedFrom( rxClass, xEventListenerClass ) )
 									{
 										xListenerClass = rxClass;
@@ -2923,7 +2923,7 @@ IntrospectionAccessStatic_Impl* ImplIntrospection::implInspect(const Any& aToIns
 							}
 						}
 
-						// Wenn in diesem Durchlauf XInterface-Methoden 
+						// Wenn in diesem Durchlauf XInterface-Methoden
 						// dabei waren, diese zukuenftig ignorieren
 						if( bFoundXInterface )
 							bXInterfaceIsInvalid = sal_True;
@@ -2997,12 +2997,12 @@ IntrospectionAccessStatic_Impl* ImplIntrospection::implInspect(const Any& aToIns
 			rProp.Handle = rPropCount;
 			rProp.Type = Type( xPropType->getTypeClass(), xPropType->getName() );
 			FieldAccessMode eAccessMode = xField->getAccessMode();
-			rProp.Attributes = (eAccessMode == FieldAccessMode_READONLY || 
-								eAccessMode == FieldAccessMode_CONST) 
+			rProp.Attributes = (eAccessMode == FieldAccessMode_READONLY ||
+								eAccessMode == FieldAccessMode_CONST)
 								? READONLY : 0;
 
 			//FieldAccessMode eAccessMode = xField->getAccessMode();
-			//rProp.Attributes = (eAccessMode == FieldAccessMode::READONLY || eAccessMode == CONST) 
+			//rProp.Attributes = (eAccessMode == FieldAccessMode::READONLY || eAccessMode == CONST)
 				//? PropertyAttribute::READONLY : 0;
 
 			// Namen in Hashtable eintragen
@@ -3012,10 +3012,10 @@ IntrospectionAccessStatic_Impl* ImplIntrospection::implInspect(const Any& aToIns
 			rLowerToExactNameMap[ toLower( aPropName ) ] = aPropName;
 
 			// Field merken
-			pAccess->checkInterfaceArraySize( pAccess->aInterfaceSeq1, 
+			pAccess->checkInterfaceArraySize( pAccess->aInterfaceSeq1,
 				pInterfaces1, rPropCount );
 			pInterfaces1[ rPropCount ] = xField;
-		
+
 			// Art der Property merken
 			pMapTypeArray[ rPropCount ] = MAP_FIELD;
 			pPropertyConceptArray[ rPropCount ] = ATTRIBUTES;
@@ -3033,7 +3033,7 @@ IntrospectionAccessStatic_Impl* ImplIntrospection::implInspect(const Any& aToIns
 }
 
 //*************************************************************************
-Reference< XInterface > SAL_CALL ImplIntrospection_CreateInstance( const Reference< XMultiServiceFactory > & rSMgr ) 
+Reference< XInterface > SAL_CALL ImplIntrospection_CreateInstance( const Reference< XMultiServiceFactory > & rSMgr )
 	throw( RuntimeException )
 {
 	Reference< XInterface > xService = (OWeakObject*)(OComponentHelper*)new ImplIntrospection( rSMgr );
@@ -3055,7 +3055,7 @@ void * SAL_CALL component_getFactory(
 	const sal_Char * pImplName, void * pServiceManager, void * )
 {
 	void * pRet = 0;
-	
+
 	if (pServiceManager && rtl_str_compare( pImplName, IMPLEMENTATION_NAME ) == 0)
 	{
 		Reference< XSingleServiceFactory > xFactory( createOneInstanceFactory(
@@ -3063,14 +3063,14 @@ void * SAL_CALL component_getFactory(
 		    ::rtl::OUString::createFromAscii( pImplName ),
 			stoc_inspect::ImplIntrospection_CreateInstance,
 			stoc_inspect::ImplIntrospection::getSupportedServiceNames_Static() ) );
-		
+
 		if (xFactory.is())
 		{
 			xFactory->acquire();
 			pRet = xFactory.get();
 		}
 	}
-	
+
 	return pRet;
 }
 }

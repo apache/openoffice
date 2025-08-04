@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -52,7 +52,7 @@ namespace framework{
 //_________________________________________________________________________________________________________________
 //	declarations
 //_________________________________________________________________________________________________________________
-    
+
 class Impl_ModelWinService
 {
     public:
@@ -60,19 +60,19 @@ class Impl_ModelWinService
 
         static Impl_ModelWinService* getSingleInstance( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& rServiceManager );
 
-        uno::Any getByName( const ::rtl::OUString& sName ) 
+        uno::Any getByName( const ::rtl::OUString& sName )
             throw( container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException );
 
-        uno::Sequence< ::rtl::OUString > getElementNames() 
+        uno::Sequence< ::rtl::OUString > getElementNames()
             throw( uno::RuntimeException );
 
-        sal_Bool hasByName( const ::rtl::OUString& sName ) 
+        sal_Bool hasByName( const ::rtl::OUString& sName )
             throw( uno::RuntimeException );
 
-        uno::Type getElementType() 
+        uno::Type getElementType()
             throw( css::uno::RuntimeException );
 
-        sal_Bool hasElements() 
+        sal_Bool hasElements()
             throw( css::uno::RuntimeException );
 
         void registerModelForXWindow( const uno::Reference< awt::XWindow >& rWindow, const uno::Reference< awt::XControlModel >& rModel );
@@ -81,12 +81,12 @@ class Impl_ModelWinService
 
     private:
         typedef BaseHash< uno::WeakReference< awt::XControlModel > > ModelWinMap;
-        
+
         Impl_ModelWinService();
         Impl_ModelWinService( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& rServiceManager );
 
         static Impl_ModelWinService* m_pModelWinService;
-        
+
         ::com::sun::star::uno::WeakReference< ::com::sun::star::lang::XMultiServiceFactory > m_xServiceManager;
         ModelWinMap m_aModelMap;
 };
@@ -117,7 +117,7 @@ Impl_ModelWinService::~Impl_ModelWinService()
 void Impl_ModelWinService::registerModelForXWindow( const uno::Reference< awt::XWindow >& rWindow, const uno::Reference< awt::XControlModel >& rModel )
 {
     osl::MutexGuard aGuard( osl::Mutex::getGlobalMutex() ) ;
-    
+
     ::rtl::OUString sName = rtl::OUString::valueOf( reinterpret_cast< sal_Int64 >((void*)rWindow.get()));
     ModelWinMap::iterator pIter = m_aModelMap.find( sName );
     if ( pIter != m_aModelMap.end() )
@@ -130,7 +130,7 @@ void Impl_ModelWinService::deregisterModelForXWindow( const uno::Reference< awt:
 {
 }
 
-uno::Any Impl_ModelWinService::getByName( const ::rtl::OUString& sName ) 
+uno::Any Impl_ModelWinService::getByName( const ::rtl::OUString& sName )
 throw( container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException )
 {
     uno::Any aAny;
@@ -151,7 +151,7 @@ throw( uno::RuntimeException )
 {
     osl::MutexGuard aGuard( osl::Mutex::getGlobalMutex() ) ;
     uno::Sequence< ::rtl::OUString > aResult( m_aModelMap.size() );
-    
+
     sal_Int32 i = 0;
     ModelWinMap::const_iterator pIter = m_aModelMap.begin();
     while ( pIter != m_aModelMap.end())
@@ -160,7 +160,7 @@ throw( uno::RuntimeException )
     return aResult;
 }
 
-sal_Bool Impl_ModelWinService::hasByName( const ::rtl::OUString& sName ) 
+sal_Bool Impl_ModelWinService::hasByName( const ::rtl::OUString& sName )
 throw( uno::RuntimeException )
 {
     osl::MutexGuard aGuard( osl::Mutex::getGlobalMutex() ) ;
@@ -171,13 +171,13 @@ throw( uno::RuntimeException )
         return false;
 }
 
-uno::Type Impl_ModelWinService::getElementType() 
+uno::Type Impl_ModelWinService::getElementType()
 throw( css::uno::RuntimeException )
 {
     return ::getCppuType(( const uno::Reference< awt::XControlModel >*)NULL );
 }
 
-sal_Bool Impl_ModelWinService::hasElements() 
+sal_Bool Impl_ModelWinService::hasElements()
 throw( css::uno::RuntimeException )
 {
     osl::MutexGuard aGuard( osl::Mutex::getGlobalMutex() ) ;
@@ -213,7 +213,7 @@ DEFINE_INIT_SERVICE                 (   ModelWinService,
                                         {
                                         }
                                     )
-                                    
+
 //*****************************************************************************************************************
 //	constructor
 //*****************************************************************************************************************
@@ -235,20 +235,20 @@ void ModelWinService::deregisterModelForXWindow( const uno::Reference< awt::XWin
 {
     Impl_ModelWinService::getSingleInstance(m_xServiceManager)->deregisterModelForXWindow( rWindow );
 }
-		
-uno::Any SAL_CALL ModelWinService::getByName( const ::rtl::OUString& sName ) 
+
+uno::Any SAL_CALL ModelWinService::getByName( const ::rtl::OUString& sName )
 throw(	container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException )
 {
     return Impl_ModelWinService::getSingleInstance(m_xServiceManager)->getByName( sName );
 }
 
-uno::Sequence< ::rtl::OUString > SAL_CALL ModelWinService::getElementNames() 
+uno::Sequence< ::rtl::OUString > SAL_CALL ModelWinService::getElementNames()
 throw( uno::RuntimeException )
 {
     return Impl_ModelWinService::getSingleInstance(m_xServiceManager)->getElementNames( );
 }
 
-sal_Bool SAL_CALL ModelWinService::hasByName( const ::rtl::OUString& sName ) 
+sal_Bool SAL_CALL ModelWinService::hasByName( const ::rtl::OUString& sName )
 throw( uno::RuntimeException )
 {
     return Impl_ModelWinService::getSingleInstance(m_xServiceManager)->hasByName( sName );
@@ -257,13 +257,13 @@ throw( uno::RuntimeException )
 //---------------------------------------------------------------------------------------------------------
 //	XElementAccess
 //---------------------------------------------------------------------------------------------------------
-uno::Type SAL_CALL ModelWinService::getElementType() 
+uno::Type SAL_CALL ModelWinService::getElementType()
 throw( uno::RuntimeException )
 {
     return ::getCppuType( (const uno::Reference< awt::XControlModel > *)NULL );
 }
 
-sal_Bool SAL_CALL ModelWinService::hasElements() 
+sal_Bool SAL_CALL ModelWinService::hasElements()
 throw( uno::RuntimeException )
 {
     return Impl_ModelWinService::getSingleInstance(m_xServiceManager)->hasElements();

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,7 +48,7 @@ void lcl_setScrollBar(sal_Int32 _nNewValue,const Point& _aPos,const Size& _aSize
 
 // -----------------------------------------------------------------------------
 DBG_NAME( rpt_OScrollWindowHelper );
-OScrollWindowHelper::OScrollWindowHelper( ODesignView* _pDesignView) 
+OScrollWindowHelper::OScrollWindowHelper( ODesignView* _pDesignView)
 	: OScrollWindowHelper_BASE( _pDesignView,WB_DIALOGCONTROL)
     ,OPropertyChangeListener(m_aMutex)
 	,m_aHScroll( this, WB_HSCROLL|WB_REPEAT|WB_DRAG )
@@ -60,7 +60,7 @@ OScrollWindowHelper::OScrollWindowHelper( ODesignView* _pDesignView)
 {
 	DBG_CTOR( rpt_OScrollWindowHelper,NULL);
 	SetMapMode( MapMode( MAP_100TH_MM ) );
-    
+
     impl_initScrollBar( m_aHScroll );
     impl_initScrollBar( m_aVScroll );
 
@@ -91,7 +91,7 @@ void OScrollWindowHelper::impl_initScrollBar( ScrollBar& _rScrollBar ) const
     //_rScrollBar.SetMapMode( MapMode( MAP_100TH_MM ) );
 
 	_rScrollBar.SetScrollHdl( LINK( this, OScrollWindowHelper, ScrollHdl ) );
-    _rScrollBar.SetLineSize( SCR_LINE_SIZE ); 
+    _rScrollBar.SetLineSize( SCR_LINE_SIZE );
 }
 
 // -----------------------------------------------------------------------------
@@ -99,7 +99,7 @@ void OScrollWindowHelper::initialize()
 {
     uno::Reference<report::XReportDefinition> xReportDefinition = m_pParent->getController().getReportDefinition();
     m_pReportDefintionMultiPlexer = addStyleListener(xReportDefinition,this);
-	
+
 	m_aReportWindow.initialize();
 }
 //------------------------------------------------------------------------------
@@ -113,7 +113,7 @@ void OScrollWindowHelper::setTotalSize(sal_Int32 _nWidth ,sal_Int32 _nHeight)
     long nWidth = long(_nWidth - (double)aStartWidth);
     m_aHScroll.SetRangeMax( nWidth );
     m_aVScroll.SetRangeMax( m_aTotalPixelSize.Height() );
-    
+
     Resize();
 }
 //------------------------------------------------------------------------------
@@ -136,7 +136,7 @@ Size OScrollWindowHelper::ResizeScrollBars()
 
 		// does we need a vertical ScrollBar
 		if ( aOutPixSz.Width() < m_aTotalPixelSize.Width() && !bHVisible )
-		{	
+		{
 			bHVisible = true;
 			aOutPixSz.Height() -= nScrSize;
 			bChanged = true;
@@ -144,7 +144,7 @@ Size OScrollWindowHelper::ResizeScrollBars()
 
 		// does we need a horizontal ScrollBar
 		if ( aOutPixSz.Height() < m_aTotalPixelSize.Height() && !bVVisible )
-		{	
+		{
 			bVVisible = true;
 			aOutPixSz.Width() -= nScrSize;
 			bChanged = true;
@@ -170,7 +170,7 @@ Size OScrollWindowHelper::ResizeScrollBars()
 
 	const Point aOffset = LogicToPixel( Point( SECTION_OFFSET, SECTION_OFFSET ), MAP_APPFONT );
 	// resize scrollbars and set their ranges
-	{	
+	{
         Fraction aStartWidth(long(REPORT_STARTMARKER_WIDTH*m_pParent->getController().getZoomValue()),100);
 		const sal_Int32 nNewWidth = aOutPixSz.Width() - aOffset.X() - (long)aStartWidth;
         lcl_setScrollBar(nNewWidth,Point( (long)aStartWidth + aOffset.X(), aOutPixSz.Height() ),Size( nNewWidth, nScrSize ),m_aHScroll);
@@ -245,7 +245,7 @@ void OScrollWindowHelper::Delete()
 }
 //----------------------------------------------------------------------------
 void OScrollWindowHelper::Copy()
-{	
+{
     m_aReportWindow.Copy();
 }
 //----------------------------------------------------------------------------
@@ -309,7 +309,7 @@ void OScrollWindowHelper::setMarked(const uno::Sequence< uno::Reference< report:
 	return  m_aReportWindow.getSectionWindow(_xSection);
 }
 // -------------------------------------------------------------------------
-void OScrollWindowHelper::markSection(const sal_uInt16 _nPos) 
+void OScrollWindowHelper::markSection(const sal_uInt16 _nPos)
 {
 	m_aReportWindow.markSection(_nPos);
 }
@@ -327,19 +327,19 @@ void OScrollWindowHelper::collapseSections(const uno::Sequence< ::com::sun::star
 long OScrollWindowHelper::Notify( NotifyEvent& rNEvt )
 {
     const CommandEvent* pCommandEvent = rNEvt.GetCommandEvent();
-    if ( pCommandEvent && 
+    if ( pCommandEvent &&
         ( ((pCommandEvent->GetCommand() == COMMAND_WHEEL) ||
 		 (pCommandEvent->GetCommand() == COMMAND_STARTAUTOSCROLL) ||
 		 (pCommandEvent->GetCommand() == COMMAND_AUTOSCROLL))) )
-	{   
+	{
 		ScrollBar* pHScrBar = NULL;
 		ScrollBar* pVScrBar = NULL;
 		if ( m_aHScroll.IsVisible() )
 			pHScrBar = &m_aHScroll;
-		
+
 		if ( m_aVScroll.IsVisible() )
 			pVScrBar = &m_aVScroll;
-		
+
 		if ( HandleScrollCommand( *pCommandEvent, pHScrBar, pVScrBar ) )
 			return 1L;
 	}

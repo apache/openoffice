@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -71,8 +71,8 @@ static struct SvXMLTokenMapEntry aAttributeMap[] =
 void lcl_fillNamespaceContainer( const SvXMLNamespaceMap&,
                                  Reference<XNameContainer>& );
 
-XFormsBindContext::XFormsBindContext( 
-    SvXMLImport& rImport, 
+XFormsBindContext::XFormsBindContext(
+    SvXMLImport& rImport,
     sal_uInt16 nPrefix,
     const OUString& rLocalName,
     const Reference<XPropertySet>& xModel ) :
@@ -90,7 +90,7 @@ XFormsBindContext::~XFormsBindContext()
 {
 }
 
-void XFormsBindContext::HandleAttribute( sal_uInt16 nToken, 
+void XFormsBindContext::HandleAttribute( sal_uInt16 nToken,
                                          const OUString& rValue )
 {
     switch( nToken )
@@ -128,11 +128,11 @@ void XFormsBindContext::HandleAttribute( sal_uInt16 nToken,
     }
 }
 
-void XFormsBindContext::StartElement( 
+void XFormsBindContext::StartElement(
     const Reference<XAttributeList>& xAttributeList )
 {
     // we need to register the namespaces
-    Reference<XNameContainer> xContainer( 
+    Reference<XNameContainer> xContainer(
         mxBinding->getPropertyValue( OUSTRING("BindingNamespaces") ),
         UNO_QUERY );
 
@@ -145,7 +145,7 @@ void XFormsBindContext::StartElement(
 }
 
 /** will be called for each child element */
-SvXMLImportContext* XFormsBindContext::HandleChild( 
+SvXMLImportContext* XFormsBindContext::HandleChild(
     sal_uInt16,
     sal_uInt16,
     const OUString&,
@@ -156,7 +156,7 @@ SvXMLImportContext* XFormsBindContext::HandleChild(
 }
 
 
-void lcl_fillNamespaceContainer( 
+void lcl_fillNamespaceContainer(
     const SvXMLNamespaceMap& aMap,
     Reference<XNameContainer>& xContainer )
 {

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -128,7 +128,7 @@ Sequence< sal_Int16 > Adapter::getOutIndexes( const OUString & functionName )
             // reference, which is never broken (as it is up to OOo1.1.0).
             Reference< XIntrospectionAccess > introspection =
                 runtime.getImpl()->cargo->xIntrospection->inspect( makeAny( unoAdapterObject ) );
-            
+
             if( !introspection.is() )
             {
                 throw RuntimeException(
@@ -201,7 +201,7 @@ Any Adapter::invoke( const OUString &aFunctionName,
         Sequence< sal_Int8 > id;
         if( aParams[0] >>= id )
             return com::sun::star::uno::makeAny( getSomething( id ) );
-        
+
     }
 
     RuntimeCargo *cargo = 0;
@@ -218,7 +218,7 @@ Any Adapter::invoke( const OUString &aFunctionName,
             logCall( cargo, "try     uno->py[0x",
                      mWrappedObject.get(), aFunctionName, aParams );
         }
-       
+
         sal_Int32 size = aParams.getLength();
         PyRef argsTuple(PyTuple_New( size ), SAL_NO_ACQUIRE );
         int i;
@@ -282,7 +282,7 @@ Any Adapter::invoke( const OUString &aFunctionName,
                              + aFunctionName),
                             Reference< XInterface > () );
                     }
-                    
+
                     if( aOutParamIndex.getLength() +1 != seq.getLength() )
                     {
                         OUStringBuffer buf;
@@ -295,7 +295,7 @@ Any Adapter::invoke( const OUString &aFunctionName,
                         buf.appendAscii( " elements as return value." );
                         throw RuntimeException(buf.makeStringAndClear(), *this );
                     }
-                    
+
                     aOutParam.realloc( aOutParamIndex.getLength() );
                     ret = seq[0];
                     for( i = 0 ; i < aOutParamIndex.getLength() ; i ++ )
@@ -306,7 +306,7 @@ Any Adapter::invoke( const OUString &aFunctionName,
                 // else { sequence is a return value !}
             }
         }
-        
+
         // log the reply, if desired
         if( isLog( cargo, LogLevel::CALL ) )
         {
@@ -314,7 +314,7 @@ Any Adapter::invoke( const OUString &aFunctionName,
                       mWrappedObject.get(), aFunctionName, ret, aOutParam );
         }
     }
-    
+
     }
     catch(InvocationTargetException & e )
     {
@@ -429,5 +429,5 @@ sal_Bool Adapter::hasProperty( const OUString & aPropertyName )
     }
     return bRet;
 }
-                     
+
 }

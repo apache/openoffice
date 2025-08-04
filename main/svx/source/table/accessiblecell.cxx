@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -237,14 +237,14 @@ Reference<XAccessibleStateSet> SAL_CALL AccessibleCell::getAccessibleStateSet (v
         if(pStateSet)
         {
             // Merge current FOCUSED state from edit engine.
-            if (mpText != NULL) 
+            if (mpText != NULL)
 			{
 				if (mpText->HaveFocus())
                     pStateSet->AddState (AccessibleStateType::FOCUSED);
                 else
                     pStateSet->RemoveState (AccessibleStateType::FOCUSED);
 			}
-			// Set the invisible state for merged cell 
+			// Set the invisible state for merged cell
 			if (mxCell.is() && mxCell->isMerged())
 				pStateSet->RemoveState(AccessibleStateType::VISIBLE);
 			else
@@ -255,11 +255,11 @@ Reference<XAccessibleStateSet> SAL_CALL AccessibleCell::getAccessibleStateSet (v
 		    ::com::sun::star::uno::Reference<XAccessible> xTempAcc = getAccessibleParent();
 		    if( xTempAcc.is() )
 		    {
-		    	::com::sun::star::uno::Reference<XAccessibleContext> 
+		    	::com::sun::star::uno::Reference<XAccessibleContext>
 		    							xTempAccContext = xTempAcc->getAccessibleContext();
 		    	if( xTempAccContext.is() )
 		    	{
-		    		::com::sun::star::uno::Reference<XAccessibleStateSet> rState = 
+		    		::com::sun::star::uno::Reference<XAccessibleStateSet> rState =
 		    			xTempAccContext->getAccessibleStateSet();
 		    		if( rState.is() )    		{
 						com::sun::star::uno::Sequence<short> pStates = rState->getStates();
@@ -271,7 +271,7 @@ Reference<XAccessibleStateSet> SAL_CALL AccessibleCell::getAccessibleStateSet (v
 								pStateSet->AddState (AccessibleStateType::EDITABLE);
 							    pStateSet->AddState (AccessibleStateType::RESIZABLE);
 							    pStateSet->AddState (AccessibleStateType::MOVEABLE);
-								break;	
+								break;
 							}
 						}
 					}
@@ -409,7 +409,7 @@ Reference<XAccessible > SAL_CALL  AccessibleCell::getAccessibleAtPoint ( const :
 	{
         OSL_TRACE ("getLocation: parent does not support XAccessibleComponent");
 	}
-    
+
 	return aLocation;
 }
 
@@ -645,7 +645,7 @@ sdr::table::CellRef AccessibleCell::getCellRef()
     ThrowIfDisposed ();
     ::vos::OGuard aSolarGuard (::Application::GetSolarMutex());
 
-    if( pAccTable ) 
+    if( pAccTable )
 	try
     {
         sal_Int32 nRow = 0, nCol = 0;
@@ -660,7 +660,7 @@ sdr::table::CellRef AccessibleCell::getCellRef()
 }
 void AccessibleCell::UpdateChildren()
 {
-	if (mpText)						
+	if (mpText)
 		mpText->UpdateChildren();
 }
 

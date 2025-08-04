@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -106,7 +106,7 @@ sal_Bool XMLTextImportPropertyMapper::handleSpecialItem(
 		}
 		break;
 
-    // If we want to do StarMath/StarSymbol font conversion, then we'll 
+    // If we want to do StarMath/StarSymbol font conversion, then we'll
     // want these special items to be treated just like regular ones...
     // For the Writer, we'll catch and convert them in _FillPropertySet;
     // the other apps probably don't care. For the other apps, we just
@@ -115,12 +115,12 @@ sal_Bool XMLTextImportPropertyMapper::handleSpecialItem(
 	case CTF_FONTFAMILYNAME_CJK:
 	case CTF_FONTFAMILYNAME_CTL:
 		bRet = getPropertySetMapper()->importXML( rValue, rProperty,
-												  rUnitConverter );			
+												  rUnitConverter );
         break;
 
     case CTF_TEXT_DISPLAY:
 		bRet = getPropertySetMapper()->importXML( rValue, rProperty,
-												  rUnitConverter );			
+												  rUnitConverter );
         if( SvXMLImport::OOo_2x == GetImport().getGeneratorVersion() )
         {
             sal_Bool bHidden;
@@ -336,7 +336,7 @@ void XMLTextImportPropertyMapper::finished(
 		case CTF_FONTFAMILY:	pFontFamily = property;	break;
 		case CTF_FONTPITCH:	pFontPitch = property;	break;
 		case CTF_FONTCHARSET:	pFontCharSet = property;	break;
-								
+
 		case CTF_FONTFAMILYNAME_CJK:	pFontFamilyNameCJK = property;	break;
 		case CTF_FONTSTYLENAME_CJK:	pFontStyleNameCJK = property;	break;
 		case CTF_FONTFAMILY_CJK:	pFontFamilyCJK = property;	break;
@@ -661,7 +661,7 @@ void XMLTextImportPropertyMapper::finished(
 
 
 	// insert newly created properties. This invalidates all iterators!
-    // Most of the pXXX variables in this method are iterators and will be 
+    // Most of the pXXX variables in this method are iterators and will be
     // invalidated!!!
 
 	if( pNewFontStyleName )
@@ -816,6 +816,6 @@ void XMLTextImportPropertyMapper::finished(
 
     // DO NOT USE ITERATORS/POINTERS INTO THE rProperties-VECTOR AFTER
     // THIS LINE.  All iterators into the rProperties-vector, especially all
-    // pXXX-type variables set in the first switch statement of this method, 
+    // pXXX-type variables set in the first switch statement of this method,
     // may have been invalidated by the above push_back() calls!
 }

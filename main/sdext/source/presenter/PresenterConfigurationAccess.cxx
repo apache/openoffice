@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -57,20 +57,20 @@ PresenterConfigurationAccess::PresenterConfigurationAccess (
             Sequence<Any> aCreationArguments(3);
             aCreationArguments[0] = makeAny(beans::PropertyValue(
                 A2S("nodepath"),
-                0, 
-                makeAny(rsRootName), 
+                0,
+                makeAny(rsRootName),
                 beans::PropertyState_DIRECT_VALUE));
             aCreationArguments[1] = makeAny(beans::PropertyValue(
                 A2S("depth"),
-                0, 
+                0,
                 makeAny((sal_Int32)-1),
                 beans::PropertyState_DIRECT_VALUE));
             aCreationArguments[2] = makeAny(beans::PropertyValue(
                 A2S("lazywrite"),
-                0, 
+                0,
                 makeAny(true),
                 beans::PropertyState_DIRECT_VALUE));
-            
+
             OUString sAccessService;
             if (eMode == READ_ONLY)
                 sAccessService = A2S("com.sun.star.configuration.ConfigurationAccess");
@@ -160,11 +160,11 @@ bool PresenterConfigurationAccess::GoToChild (const Predicate& rPredicate)
 {
     if ( ! IsValid())
         return false;
-    
+
     maNode = Find(Reference<container::XNameAccess>(maNode,UNO_QUERY), rPredicate);
     if (Reference<XInterface>(maNode, UNO_QUERY).is())
         return true;
-    
+
     mxRoot = NULL;
     return false;
 }
@@ -209,7 +209,7 @@ Any PresenterConfigurationAccess::GetConfigurationNode (
             ::rtl::OUStringToOString(sPathToNode, RTL_TEXTENCODING_UTF8).getStr(),
             ::rtl::OUStringToOString(rException.Message, RTL_TEXTENCODING_UTF8).getStr());
     }
-    
+
     return Any();
 }
 

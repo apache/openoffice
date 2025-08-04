@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -63,7 +63,7 @@ namespace svt
 		sal_Bool isHiContrast(Window* _pWindow)
 		{
 			OSL_ENSURE(_pWindow,"Window must be not null!");
-            return _pWindow && _pWindow->GetSettings().GetStyleSettings().GetHighContrastMode(); 
+            return _pWindow && _pWindow->GetSettings().GetStyleSettings().GetHighContrastMode();
 		}
 
 		//..............................................................
@@ -170,7 +170,7 @@ namespace svt
 	{
 		DBG_CTOR(EditBrowseBox,NULL);
 
-		impl_construct();		
+		impl_construct();
 	}
 
 	//==================================================================
@@ -265,7 +265,7 @@ namespace svt
 		nPaintRow = nRow;
 		return sal_True;
 	}
-	
+
 	//------------------------------------------------------------------------------
 	IMPL_LINK(EditBrowseBox, StartEditHdl, void*, EMPTYARG)
 	{
@@ -833,7 +833,7 @@ namespace svt
 		{
 			ImplInitSettings( sal_True, sal_True, sal_True );
 			Invalidate();
-		}		
+		}
 	}
 
 	//------------------------------------------------------------------------------
@@ -943,9 +943,9 @@ namespace svt
 		{
 			Window& rWindow = GetDataWindow();
 			// don't paint too much
-			// update the status immediately if possible				
+			// update the status immediately if possible
 			if ((nEditRow >= 0) && (GetBrowserFlags() & EBBF_NO_HANDLE_COLUMN_CONTENT) == 0)
-			{				
+			{
 				Rectangle aRect = GetFieldRectPixel(nEditRow, 0, sal_False );
                 // status cell should be painted if and only if text is displayed
                 // note: bPaintStatus is mutable, but Solaris has problems with assigning
@@ -953,16 +953,16 @@ namespace svt
                 pTHIS->bPaintStatus = static_cast< sal_Bool >
                     (( GetBrowserFlags() & EBBF_HANDLE_COLUMN_TEXT ) == EBBF_HANDLE_COLUMN_TEXT );
 				rWindow.Paint(aRect);
-				pTHIS->bPaintStatus = sal_True;			
-			}		
-			
+				pTHIS->bPaintStatus = sal_True;
+			}
+
 			// don't paint during row change
-			rWindow.EnablePaint(sal_False);		
+			rWindow.EnablePaint(sal_False);
 
 			// the last veto chance for derived classes
 			if (!pTHIS->CursorMoving(nNewRow, nNewColId))
 			{
-				pTHIS->InvalidateStatusCell(nEditRow);									
+				pTHIS->InvalidateStatusCell(nEditRow);
 				rWindow.EnablePaint(sal_True);
 				return sal_False;
 			}
@@ -971,7 +971,7 @@ namespace svt
 				rWindow.EnablePaint(sal_True);
 				return sal_True;
 			}
-		}			
+		}
 		else
 			return pTHIS->CursorMoving(nNewRow, nNewColId);
 	}
@@ -1009,7 +1009,7 @@ namespace svt
 		if (nEditRow != nNewRow)
 		{
 			if ((GetBrowserFlags() & EBBF_NO_HANDLE_COLUMN_CONTENT) == 0)
-				InvalidateStatusCell(nNewRow);		
+				InvalidateStatusCell(nNewRow);
 			nEditRow = nNewRow;
 		}
 		ActivateCell();

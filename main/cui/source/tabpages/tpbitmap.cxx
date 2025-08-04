@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -145,15 +145,15 @@ SvxBitmapTabPage::SvxBitmapTabPage
 	aLbBackgroundColor.SetSelectHdl(
 		LINK( this, SvxBitmapTabPage, ChangeBackgrndColorHdl_Impl ) );
 
-	String accName = String(CUI_RES(STR_EXAMPLE)); 
-	aCtlPreview.SetAccessibleName(accName); 
+	String accName = String(CUI_RES(STR_EXAMPLE));
+	aCtlPreview.SetAccessibleName(accName);
 	aCtlPixel.SetAccessibleRelationMemberOf( &aFlProp );
 	aCtlPixel.SetAccessibleRelationLabeledBy( &aFtPixelEdit );
 	aLbBitmaps.SetAccessibleRelationLabeledBy(&aLbBitmaps);
 	aBtnAdd.SetAccessibleRelationMemberOf( &aFlProp );
 	aBtnModify.SetAccessibleRelationMemberOf( &aFlProp );
 	aBtnImport.SetAccessibleRelationMemberOf( &aFlProp );
-	aBtnDelete.SetAccessibleRelationMemberOf( &aFlProp );	
+	aBtnDelete.SetAccessibleRelationMemberOf( &aFlProp );
 
 }
 
@@ -268,14 +268,14 @@ sal_Bool SvxBitmapTabPage::FillItemSet( SfxItemSet& _rOutAttrs )
 		if(PT_BITMAP == *pPageType)
 		{
 			const sal_uInt16 nPos(aLbBitmaps.GetSelectEntryPos());
-            
+
             _rOutAttrs.Put(XFillStyleItem(XFILL_BITMAP));
-            
+
             if(LISTBOX_ENTRY_NOTFOUND != nPos)
 			{
                 const XBitmapEntry* pXBitmapEntry = maBitmapList->GetBitmap(nPos);
 				const String aString(aLbBitmaps.GetSelectEntry());
-                
+
                 _rOutAttrs.Put(XFillBitmapItem(aString, pXBitmapEntry->GetGraphicObject()));
 			}
 			else
@@ -362,7 +362,7 @@ IMPL_LINK( SvxBitmapTabPage, ChangeBitmapHdl_Impl, void *, EMPTYARG )
 		{
 			aLbBitmaps.SelectEntryPos(0);
 			nPos = aLbBitmaps.GetSelectEntryPos();
-			
+
             if(LISTBOX_ENTRY_NOTFOUND != nPos)
             {
                 pGraphicObject = new GraphicObject(maBitmapList->GetBitmap(nPos)->GetGraphicObject());
@@ -458,7 +458,7 @@ IMPL_LINK( SvxBitmapTabPage, ChangeBitmapHdl_Impl, void *, EMPTYARG )
 		bBmpChanged = sal_False;
 		delete pGraphicObject;
 	}
-	
+
     return 0;
 }
 

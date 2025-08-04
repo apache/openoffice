@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -96,8 +96,8 @@ namespace svgio
         }
 
         void SvgTextNode::addTextPrimitives(
-            const SvgNode& rCandidate, 
-            drawinglayer::primitive2d::Primitive2DSequence& rTarget, 
+            const SvgNode& rCandidate,
+            drawinglayer::primitive2d::Primitive2DSequence& rTarget,
             drawinglayer::primitive2d::Primitive2DSequence& rSource) const
         {
             if(rSource.hasElements())
@@ -183,7 +183,7 @@ namespace svgio
                         }
 
                         rSvgTextPosition.setPosition(aSvgTextPosition.getPosition());
-                        
+
                         if(aNewTarget.hasElements())
                         {
                             addTextPrimitives(rCandidate, rTarget, aNewTarget);
@@ -208,11 +208,11 @@ namespace svgio
                             {
                                 const SvgNode& rChildCandidate = *rChildren[a];
                                 const_cast< SvgNode& >(rChildCandidate).setAlternativeParent(this);
-    
+
                                 DecomposeChild(rChildCandidate, aNewTarget, rSvgTextPosition);
                                 const_cast< SvgNode& >(rChildCandidate).setAlternativeParent(0);
                             }
-                            
+
                             if(aNewTarget.hasElements())
                             {
                                 addTextPrimitives(rCandidate, rTarget, aNewTarget);
@@ -250,10 +250,10 @@ namespace svgio
                     for(sal_uInt32 a(0); a < nCount; a++)
                     {
                         const SvgNode& rCandidate = *rChildren[a];
-    
+
                         DecomposeChild(rCandidate, aNewTarget, aSvgTextPosition);
                     }
-                
+
                     if(aNewTarget.hasElements())
                     {
                         drawinglayer::primitive2d::Primitive2DSequence aNewTarget2;

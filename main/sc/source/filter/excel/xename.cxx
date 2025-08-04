@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -87,7 +87,7 @@ public:
     inline bool         IsGlobal() const { return mnXclTab == EXC_NAME_GLOBAL; }
     /** Returns the Calc sheet of a local defined name. */
     inline SCTAB        GetScTab() const { return mnScTab; }
-	// 
+	//
 	/** Set name range flag value */
 	void				SetScTab( sal_uInt16 nXclTab ) { mnXclTab = nXclTab; }
 
@@ -551,7 +551,7 @@ sal_uInt16 XclExpNameManagerImpl::CreateName( const ScRangeData& rRangeData )
     size_t nOldListSize = maNameList.GetSize();
     XclExpNameRef xName( new XclExpName( GetRoot(), rName ) );
     sal_uInt16 nNameIdx = Append( xName );
-	// 
+	//
     xName->SetScTab( rRangeData.GetRangeScope() == MAXTABCOUNT ? EXC_NAME_GLOBAL : rRangeData.GetRangeScope()+1 );
     // store the index of the NAME record in the lookup map
     maNameMap[ rRangeData.GetIndex() ] = nNameIdx;

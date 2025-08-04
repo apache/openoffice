@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -191,7 +191,7 @@ void SAL_CALL OOXMLFastContextHandler::startFastElement
     mpParserState->getXPathLogger().startElement(sToken);
     debug_logger->attribute("token", sToken);
     debug_logger->attribute("type", getType());
-    debug_logger->attribute("xpath", mpParserState->getXPathLogger().getXPath()); 
+    debug_logger->attribute("xpath", mpParserState->getXPathLogger().getXPath());
     debug_logger->startElement("at-start");
     debug_logger->addTag(toTag());
     debug_logger->endElement("at-start");
@@ -907,9 +907,9 @@ void OOXMLFastContextHandler::sendCellProperties()
 #ifdef DEBUG_CONTEXT_HANDLER
     debug_logger->startElement("contexthandler.sendCellProperties");
 #endif
-    
+
     mpParserState->resolveCellProperties(*mpStream);
-    
+
 #ifdef DEBUG_CONTEXT_HANDLER
     debug_logger->endElement("contexthandler.sendCellProperties");
 #endif
@@ -920,9 +920,9 @@ void OOXMLFastContextHandler::sendRowProperties()
 #ifdef DEBUG_CONTEXT_HANDLER
     debug_logger->startElement("contexthandler.sendRowProperties");
 #endif
-    
+
     mpParserState->resolveRowProperties(*mpStream);
-    
+
 #ifdef DEBUG_CONTEXT_HANDLER
     debug_logger->endElement("contexthandler.sendRowProperties");
 #endif
@@ -933,9 +933,9 @@ void OOXMLFastContextHandler::sendTableProperties()
 #ifdef DEBUG_CONTEXT_HANDLER
     debug_logger->startElement("contexthandler.sendTableProperties");
 #endif
-    
+
     mpParserState->resolveTableProperties(*mpStream);
-    
+
 #ifdef DEBUG_CONTEXT_HANDLER
     debug_logger->endElement("contexthandler.sendTableProperties");
 #endif
@@ -946,7 +946,7 @@ void OOXMLFastContextHandler::clearTableProps()
 #ifdef DEBUG_CONTEXT_HANDLER
     debug_logger->element("contexthandler.clearTableProps");
 #endif
-    
+
     mpParserState->setTableProperties(OOXMLPropertySet::Pointer_t
                                      (new OOXMLPropertySetImpl()));
 }
@@ -1109,7 +1109,7 @@ void OOXMLFastContextHandler::sendPropertyToParent()
                 pProp(new OOXMLPropertyImpl(mId, getValue(),
                                             OOXMLPropertyImpl::SPRM));
             pProps->add(pProp);
-            
+
 #ifdef DEBUG_CONTEXT_HANDLER
             debug_logger->addTag(toPropertiesTag(pProps));
 #endif
@@ -1129,19 +1129,19 @@ void OOXMLFastContextHandler::sendPropertiesToParent()
     if (mpParent != NULL)
     {
         OOXMLPropertySet::Pointer_t pParentProps(mpParent->getPropertySet());
-        
+
         if (pParentProps.get() != NULL)
         {
             OOXMLPropertySet::Pointer_t pProps(getPropertySet());
-            
+
             if (pProps.get() != NULL)
-            {            
+            {
                 OOXMLValue::Pointer_t pValue
                 (new OOXMLPropertySetValue(getPropertySet()));
-                
+
                 OOXMLProperty::Pointer_t pProp
                 (new OOXMLPropertyImpl(getId(), pValue, OOXMLPropertyImpl::SPRM));
-                
+
                 pParentProps->add(pProp);
             }
         }
@@ -1476,7 +1476,7 @@ void OOXMLFastContextHandlerValue::lcl_endFastElement
 throw (uno::RuntimeException, xml::sax::SAXException)
 {
     sendPropertyToParent();
-    
+
     endAction(Element);
 }
 
@@ -1498,7 +1498,7 @@ void OOXMLFastContextHandlerValue::setDefaultIntegerValue()
 #ifdef DEBUG_CONTEXT_HANDLER
     debug_logger->element("setDefaultIntegerValue");
 #endif
-    
+
     if (mpValue.get() == NULL)
     {
         OOXMLValue::Pointer_t pValue(new OOXMLIntegerValue(0));
@@ -1511,7 +1511,7 @@ void OOXMLFastContextHandlerValue::setDefaultHexValue()
 #ifdef DEBUG_CONTEXT_HANDLER
     debug_logger->element("setDefaultHexValue");
 #endif
-    
+
     if (mpValue.get() == NULL)
     {
         OOXMLValue::Pointer_t pValue(new OOXMLHexValue(0));
@@ -1524,7 +1524,7 @@ void OOXMLFastContextHandlerValue::setDefaultStringValue()
 #ifdef DEBUG_CONTEXT_HANDLER
     debug_logger->element("setDefaultStringValue");
 #endif
-    
+
     if (mpValue.get() == NULL)
     {
         OOXMLValue::Pointer_t pValue(new OOXMLStringValue(::rtl::OUString()));
@@ -1704,7 +1704,7 @@ void OOXMLFastContextHandlerTextTableCell::endCell()
                              (OOXMLPropertySet::Pointer_t(pProps->clone())));
         debug_logger->endElement("endcell");
 #endif
-        mpStream->props(writerfilter::Reference<Properties>::Pointer_t(pProps));        
+        mpStream->props(writerfilter::Reference<Properties>::Pointer_t(pProps));
     }
 }
 
@@ -1796,7 +1796,7 @@ void OOXMLFastContextHandlerTextTable::lcl_startFastElement
 {
     mpParserState->startTable();
     mnTableDepth++;
-        
+
     boost::shared_ptr<OOXMLPropertySet> pProps( new OOXMLPropertySetImpl );
     {
         OOXMLValue::Pointer_t pVal
@@ -1826,7 +1826,7 @@ void OOXMLFastContextHandlerTextTable::lcl_endFastElement
 
 OOXMLFastContextHandlerShape::OOXMLFastContextHandlerShape
 (OOXMLFastContextHandler * pContext)
-: OOXMLFastContextHandlerProperties(pContext), m_bShapeSent( false ), 
+: OOXMLFastContextHandlerProperties(pContext), m_bShapeSent( false ),
     m_bShapeStarted(false)
 {
     uno::Reference<uno::XComponentContext> xContext(getComponentContext());
@@ -1898,7 +1898,7 @@ void SAL_CALL OOXMLFastContextHandlerShape::startUnknownElement
 void OOXMLFastContextHandlerShape::setToken(Token_t nToken)
 {
     OOXMLFastContextHandler::setToken(nToken);
-    
+
     if (mrShapeContext.is())
         mrShapeContext->setStartToken(nToken);
 }
@@ -1914,9 +1914,9 @@ void OOXMLFastContextHandlerShape::sendShape( Token_t Element )
                 pValue(new OOXMLShapeValue(xShape));
             newProperty(NS_ooxml::LN_shape, pValue);
             m_bShapeSent = true;
-    
+
             bool bIsPicture = Element == ( NS_picture | OOXML_pic );
-      
+
             // Notify the dmapper that the shape is ready to use
             if ( !bIsPicture )
             {
@@ -1938,7 +1938,7 @@ void OOXMLFastContextHandlerShape::lcl_endFastElement
     }
 
     OOXMLFastContextHandlerProperties::lcl_endFastElement(Element);
-    
+
     // Ending the shape should be the last thing to do
     bool bIsPicture = Element == ( NS_picture | OOXML_pic );
     if ( !bIsPicture && m_bShapeStarted)
@@ -1991,7 +1991,7 @@ OOXMLFastContextHandlerShape::lcl_createFastChildContext
                 xContextHandler.set(this);
             break;
     }
-   
+
 
     return xContextHandler;
 }
@@ -2165,7 +2165,7 @@ OOXMLFastContextHandlerWrapper::lcl_createFastChildContext
     }
     else
         xResult.set(this);
-    
+
     if ( bInTokens )
     {
         OOXMLFastContextHandlerShape* pShapeCtx = (OOXMLFastContextHandlerShape*)mpParent;

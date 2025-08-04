@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -126,7 +126,7 @@ ODbTypeWizDialog::ODbTypeWizDialog(Window* _pParent
 	,m_bApplied(sal_False)
 	,m_bUIEnabled( sal_True )
 {
-	DBG_CTOR(ODbTypeWizDialog,NULL);	
+	DBG_CTOR(ODbTypeWizDialog,NULL);
 	m_pImpl = ::std::auto_ptr<ODbDataSourceAdministrationHelper>(new ODbDataSourceAdministrationHelper(_rxORB,this,this));
 	m_pImpl->setDataSourceOrName(_aDataSourceName);
 	Reference< XPropertySet > xDatasource = m_pImpl->getCurrentDataSource();
@@ -158,8 +158,8 @@ ODbTypeWizDialog::ODbTypeWizDialog(Window* _pParent
 //-------------------------------------------------------------------------
 ODbTypeWizDialog::~ODbTypeWizDialog()
 {
-	DBG_DTOR(ODbTypeWizDialog,NULL);	
-	delete m_pOutSet;	
+	DBG_DTOR(ODbTypeWizDialog,NULL);
+	delete m_pOutSet;
 }
 //-------------------------------------------------------------------------
 IMPL_LINK(ODbTypeWizDialog, OnTypeSelected, OGeneralPage*, _pTabPage)
@@ -349,7 +349,7 @@ TabPage* ODbTypeWizDialog::createPage(WizardState _nState)
 
 	// register ourself as modified listener
 	if ( pPage )
-	{		
+	{
 		static_cast<OGenericAdministrationPage*>(pPage)->SetServiceFactory(m_pImpl->getORB());
 		static_cast<OGenericAdministrationPage*>(pPage)->SetAdminDialog(this,this);
 		// open our own resource block, as the page titles are strings local to this block

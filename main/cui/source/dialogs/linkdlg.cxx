@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -113,7 +113,7 @@ SvBaseLinksDlg::SvBaseLinksDlg( Window * pParent, LinkManager* pMgr, sal_Bool bH
     //JP 24.02.99: UpdateTimer fuer DDE-/Grf-Links, auf die gewarted wird
     aUpdateTimer.SetTimeoutHdl( LINK( this, SvBaseLinksDlg, UpdateWaitingHdl ) );
     aUpdateTimer.SetTimeout( 1000 );
-	// Set the ZOrder, and accessible name to the dialog's title	
+	// Set the ZOrder, and accessible name to the dialog's title
 	aTbLinks.SetZOrder(0, WINDOW_ZORDER_FIRST);
 	aTbLinks.SetAccessibleName(this->GetText());
 	aTbLinks.SetAccessibleRelationLabeledBy(&aFtFiles);
@@ -634,7 +634,7 @@ void SvBaseLinksDlg::InsertEntry( const SvBaseLink& rLink, sal_uInt16 nPos, sal_
 	INetURLObject aPath( sFileNm, INET_PROT_FILE );
 	String aFileName = aPath.getName();
     aFileName = INetURLObject::decode(aFileName, INET_HEX_ESCAPE, INetURLObject::DECODE_UNAMBIGUOUS);
-    
+
     if( aFileName.Len() > aTxt.Len() )
 		aTxt = aFileName;
 	else if( aTxt.Search( aFileName, aTxt.Len() - aFileName.Len() ) == STRING_NOTFOUND )

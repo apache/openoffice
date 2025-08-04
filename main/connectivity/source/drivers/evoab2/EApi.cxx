@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
- 
+
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_connectivity.hxx"
@@ -68,7 +68,7 @@ typedef void (*SymbolFunc) (void);
 	SYM_MAP( e_book_query_to_string ),
 	SYM_MAP( e_book_query_field_exists ),
 	SYM_MAP( e_source_group_peek_base_uri)
-    }; 
+    };
 #undef SYM_MAP
 
 static bool
@@ -114,13 +114,13 @@ bool EApiInit()
 // hjs: SOLARDEF does no longer exist please lookup the required
 // defines in a regular compile line
 /*
- * Test code - enable & 
+ * Test code - enable &
  *
  * Compile with ( after source LinuxIntelEnv.Set.sh )
    gcc $SOLARDEF -I $SOLARVER/$UPD/$INPATH/inc \
      -I. `pkg-config --cflags --libs gobject-2.0` \
      -L $SOLARVER/$UPD/$INPATH/lib -luno_sal -lstdc++ EApi.cxx
- */ 
+ */
 
 int main( int argc, char **argv)
 {

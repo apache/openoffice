@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -240,7 +240,7 @@ const short HITPIX=2; //hit-tolerance in pixel
 {
     ::vos::OGuard aGuard( Application::GetSolarMutex() );
 	uno::Reference<awt::XWindow> xWindow = m_xViewWindow;
-    
+
 	if(xWindow.is() && m_pChartWindow)
     {
         Size aLogicSize = m_pChartWindow->PixelToLogic( Size( Width, Height ), MapMode( MAP_100TH_MM )  );
@@ -650,7 +650,7 @@ void ChartController::execute_MouseButtonDown( const MouseEvent& rMEvt )
 
     if( isDoubleClick(rMEvt) ) //do not change selection if double click
         return;//double click is handled further in mousebutton up
-    
+
     SdrHdl* pHitSelectionHdl = 0;
     //switch from move to resize if handle is hit on a resizeable object
     if( m_aSelection.isResizeableObjectSelected() )
@@ -693,7 +693,7 @@ void ChartController::execute_MouseButtonDown( const MouseEvent& rMEvt )
 
         m_aSelection.adaptSelectionToNewPos( aMPos, pDrawViewWrapper
             , rMEvt.IsRight(), m_bWaitingForDoubleClick );
-            
+
         if( !m_aSelection.isRotateableObjectSelected( getModel() ) )
         {
                 m_eDragMode = SDRDRAG_MOVE;
@@ -762,7 +762,7 @@ void ChartController::execute_MouseMove( const MouseEvent& rMEvt )
     }
 
     //??	pDrawViewWrapper->GetPageView()->DragPoly();
-    
+
     impl_SetMousePointer( rMEvt );
 }
 void ChartController::execute_Tracking( const TrackingEvent& /* rTEvt */ )
@@ -865,17 +865,17 @@ void ChartController::execute_MouseButtonUp( const MouseEvent& rMEvt )
                         ActionDescriptionProvider::ActionType eActionType(ActionDescriptionProvider::MOVE);
                         if( !bIsMoveOnly && m_aSelection.isResizeableObjectSelected() )
                             eActionType = ActionDescriptionProvider::RESIZE;
-                        
+
                         ObjectType eObjectType = ObjectIdentifier::getObjectType( m_aSelection.getSelectedCID() );
-                        
+
                         UndoGuard aUndoGuard(
                             ActionDescriptionProvider::createDescription( eActionType, ObjectNameProvider::getName( eObjectType)),
                             m_xUndoManager );
 
-                        bool bChanged = false;    
+                        bool bChanged = false;
                         if ( eObjectType == OBJECTTYPE_LEGEND )
                             bChanged = DiagramHelper::switchDiagramPositioningToExcludingPositioning( getModel(), false , true );
-                        
+
                         bool bMoved = PositionAndSizeHelper::moveObject( m_aSelection.getSelectedCID()
                                         , getModel()
                                         , awt::Rectangle(aObjectRect.getX(),aObjectRect.getY(),aObjectRect.getWidth(),aObjectRect.getHeight())
@@ -900,13 +900,13 @@ void ChartController::execute_MouseButtonUp( const MouseEvent& rMEvt )
 		    {
 			    bool bClickedTwiceOnDragableObject = SelectionHelper::isDragableObjectHitTwice( aMPos, m_aSelection.getSelectedCID(), *pDrawViewWrapper );
                 bool bIsRotateable = m_aSelection.isRotateableObjectSelected( getModel() );
-                
+
 			    //toggel between move and rotate
 			    if( bIsRotateable && bClickedTwiceOnDragableObject && SDRDRAG_MOVE==m_eDragMode )
 				    m_eDragMode=SDRDRAG_ROTATE;
 			    else
 				    m_eDragMode=SDRDRAG_MOVE;
-                    			
+
                 pDrawViewWrapper->SetDragMode(m_eDragMode);
 
                 if( !m_bWaitingForDoubleClick && m_aSelection.maybeSwitchSelectionAfterSingleClickWasEnsured() )
@@ -1037,7 +1037,7 @@ void ChartController::execute_Command( const CommandEvent& rCEvt )
         else
         {
             // todo: the context menu should be specified by an xml file in uiconfig
-            uno::Reference< awt::XPopupMenu > xPopupMenu( 
+            uno::Reference< awt::XPopupMenu > xPopupMenu(
                 m_xCC->getServiceManager()->createInstanceWithContext(
                     C2U("com.sun.star.awt.PopupMenu"), m_xCC ), uno::UNO_QUERY );
             if( xPopupMenu.is())
@@ -1057,7 +1057,7 @@ void ChartController::execute_Command( const CommandEvent& rCEvt )
                     uno::Reference< XDataSeries > xSeries = ObjectIdentifier::getDataSeriesForCID( m_aSelection.getSelectedCID(), getModel() );
                     uno::Reference< chart2::XRegressionCurveContainer > xCurveCnt( xSeries, uno::UNO_QUERY );
                     Reference< chart2::XRegressionCurve > xTrendline( RegressionCurveHelper::getFirstCurveNotMeanValueLine( xCurveCnt ) );
-                    bool bHasEquation = RegressionCurveHelper::hasEquation( xTrendline ); 
+                    bool bHasEquation = RegressionCurveHelper::hasEquation( xTrendline );
                     Reference< chart2::XRegressionCurve > xMeanValue( RegressionCurveHelper::getMeanValueLine( xCurveCnt ) );
                     bool bHasYErrorBars = StatisticsHelper::hasErrorBars( xSeries, true );
                     bool bHasDataLabelsAtSeries = DataSeriesHelper::hasDataLabelsAtSeries( xSeries );
@@ -1135,7 +1135,7 @@ void ChartController::execute_Command( const CommandEvent& rCEvt )
                             ASSERT_EXCEPTION( ex );
                         }
                     }
-                    
+
                     if( bHasDataLabelsAtSeries )
                         lcl_insertMenuCommand( xPopupMenu, nUniqueId++, C2U(".uno:FormatDataLabels") );
                     if( xTrendline.is() )
@@ -1184,9 +1184,9 @@ void ChartController::execute_Command( const CommandEvent& rCEvt )
 
                     //if( nIdBeforeDelete != nUniqueId )
                         xPopupMenu->insertSeparator( -1 );
-                    
+
                     lcl_insertMenuCommand( xPopupMenu, nUniqueId, C2U(".uno:ArrangeRow"));
-                    uno::Reference< awt::XPopupMenu > xArrangePopupMenu( 
+                    uno::Reference< awt::XPopupMenu > xArrangePopupMenu(
                         m_xCC->getServiceManager()->createInstanceWithContext(
                             C2U("com.sun.star.awt.PopupMenu"), m_xCC ), uno::UNO_QUERY );
                     if( xArrangePopupMenu.is() )
@@ -1233,7 +1233,7 @@ void ChartController::execute_Command( const CommandEvent& rCEvt )
                         uno::Reference< XTitled > xTitled( xAxis, uno::UNO_QUERY );
                         if( xTitled.is())
                             bHasTitle = ( TitleHelper::getCompleteString( xTitled->getTitleObject() ).isEmpty() == false );
-                        
+
                         if( OBJECTTYPE_AXIS  != eObjectType && bIsAxisVisible )
                             lcl_insertMenuCommand( xPopupMenu, nUniqueId++, C2U(".uno:FormatAxis") );
                         if( OBJECTTYPE_GRID != eObjectType && bIsMajorGridVisible && !bIsSecondaryAxis )
@@ -1284,7 +1284,7 @@ void ChartController::execute_Command( const CommandEvent& rCEvt )
                         lcl_insertMenuCommand( xPopupMenu, nUniqueId++, C2U(".uno:DeleteLegend") );
                 }
                 //-----
-                
+
                 xPopupMenu->insertSeparator( -1 );
                 lcl_insertMenuCommand( xPopupMenu, nUniqueId++, C2U(".uno:DiagramType"));
                 lcl_insertMenuCommand( xPopupMenu, nUniqueId++, C2U(".uno:DataRanges"));
@@ -1533,7 +1533,7 @@ bool ChartController::execute_KeyInput( const KeyEvent& rKEvt )
                                 aPos.Y = aPageSize.Height - aSize.Height;
                             if( aPos.Y < 0 )
                                 aPos.Y = 0;
-                            
+
                             xShape->setPosition( aPos );
                         }
                     }
@@ -1924,7 +1924,7 @@ void ChartController::impl_SetMousePointer( const MouseEvent & rEvent )
 
         if( pHitSelectionHdl )
         {
-            
+
             Pointer aPointer = m_pDrawViewWrapper->GetPreferedPointer(
                 aMousePos, m_pChartWindow, nModifier, bLeftDown );
             bool bForceArrowPointer = false;
@@ -1969,7 +1969,7 @@ void ChartController::impl_SetMousePointer( const MouseEvent & rEvent )
             if ( m_eDrawMode == CHARTDRAW_INSERT &&
                  ( !m_pDrawViewWrapper->IsMarkedHit( aMousePos ) || !m_aSelection.isDragableObjectSelected() ) )
             {
-                PointerStyle ePointerStyle = POINTER_DRAW_RECT;  
+                PointerStyle ePointerStyle = POINTER_DRAW_RECT;
                 SdrObjKind eKind = static_cast< SdrObjKind >( m_pDrawViewWrapper->GetCurrentObjIdentifier() );
                 switch ( eKind )
                 {

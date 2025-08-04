@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -113,9 +113,9 @@ RtfSdrExport& RtfExport::SdrExporter() const
     return *m_pSdrExport;
 }
 
-bool RtfExport::HackIsWW8OrHigher() const 
-{ 
-    return true; 
+bool RtfExport::HackIsWW8OrHigher() const
+{
+    return true;
 }
 
 bool RtfExport::CollapseScriptsforWordOk( sal_uInt16 nScript, sal_uInt16 nWhich )
@@ -198,7 +198,7 @@ void RtfExport::ExportGrfBullet(const SwTxtNode& /* rNd */)
 {
 	//This is for RTF filter on the graphic bullets
 }
-	
+
 void RtfExport::WriteChar( sal_Unicode )
 {
     OSL_TRACE("%s", OSL_THIS_FUNC);
@@ -369,7 +369,7 @@ void RtfExport::DoFormText(const SwInputField* pFld )
     if( sStatus.getLength() )
         m_pAttrOutput->RunText().append( OOO_STRING_SVTOOLS_RTF_FFOWNSTAT );
     m_pAttrOutput->RunText().append( OOO_STRING_SVTOOLS_RTF_FFTYPETXT  "0" );
-    
+
     if( sName.getLength() )
         m_pAttrOutput->RunText().append( "{" OOO_STRING_SVTOOLS_RTF_IGNORE OOO_STRING_SVTOOLS_RTF_FFNAME " ").append( OutString( sName, eDefaultEncoding )).append( "}" );
     if( sHelp.getLength() )
@@ -385,7 +385,7 @@ sal_uLong RtfExport::ReplaceCr( sal_uInt8 )
 {
     OSL_TRACE("%s", OSL_THIS_FUNC);
 
-    // Completely unused for Rtf export... only here for code sharing 
+    // Completely unused for Rtf export... only here for code sharing
     // purpose with binary export
 
     return 0;
@@ -911,7 +911,7 @@ OString RtfExport::OutChar(sal_Unicode c, int *pUCMode, rtl_TextEncoding eDestEn
                     RTL_UNICODETOTEXT_FLAGS_UNDEFINED_ERROR |
                     RTL_UNICODETOTEXT_FLAGS_INVALID_ERROR;
                 bool bWriteAsUnicode = !(sBuf.convertToString(&sConverted,
-                            eDestEnc, nFlags)) 
+                            eDestEnc, nFlags))
                     || (RTL_TEXTENCODING_UTF8==eDestEnc); // #i43933# do not export UTF-8 chars in RTF;
                 if (bWriteAsUnicode)
                     sBuf.convertToString(&sConverted,
@@ -995,7 +995,7 @@ void RtfExport::InsColor( const Color& rCol )
         else if ((*it).second == COL_AUTO)
             bAutoColorInTable = true;
     }
-            
+
     if (rCol.GetColor() == COL_AUTO)
 		// COL_AUTO gets value 0
         n = 0;

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -101,7 +101,7 @@ static const SvxItemPropertySet* ImplGetSvxCellPropertySet()
 		{0,0,0,0,0,0}
 	};
 
-	static SvxItemPropertySet aSvxCellPropertySet( aSvxCellPropertyMap, SdrObject::GetGlobalDrawObjectItemPool() ); 
+	static SvxItemPropertySet aSvxCellPropertySet( aSvxCellPropertyMap, SdrObject::GetGlobalDrawObjectItemPool() );
 	return &aSvxCellPropertySet;
 }
 
@@ -174,7 +174,7 @@ namespace sdr
 		CellProperties::~CellProperties()
 		{
 		}
-		
+
 		BaseProperties& CellProperties::Clone(SdrObject& rObj) const
 		{
 			DBG_ERROR("CellProperties::Clone(), does not work yet!");
@@ -192,12 +192,12 @@ namespace sdr
 			if( mxCell.is() )
 			{
 				OutlinerParaObject* pParaObj = mxCell->GetEditOutlinerParaObject();
-				
+
                 bool bOwnParaObj = pParaObj != 0;
 
 				if( pParaObj == 0 )
 					pParaObj = mxCell->GetOutlinerParaObject();
-				
+
 				if(pParaObj)
 				{
 					// handle outliner attributes
@@ -275,7 +275,7 @@ namespace sdr
 			// call parent
 			AttributeProperties::ItemChange( nWhich, pNewItem );
 		}
-        
+
         void CellProperties::SetStyleSheet(SfxStyleSheet* pNewStyleSheet, sal_Bool bDontRemoveHardAttr)
         {
             TextProperties::SetStyleSheet( pNewStyleSheet, bDontRemoveHardAttr );
@@ -315,7 +315,7 @@ Cell::Cell( SdrTableObj& rTableObj, OutlinerParaObject* pOutlinerParaObject ) th
 , mnColSpan( 1 )
 , mxTable( rTableObj.getTable() )
 {
-	if( rTableObj.GetModel() ) 
+	if( rTableObj.GetModel() )
 		SetModel( rTableObj.GetModel() );
 }
 
@@ -442,7 +442,7 @@ void Cell::cloneFrom( const CellRef& xCell )
         mbMerged = xCell->mbMerged;
         mnRowSpan = xCell->mnRowSpan;
         mnColSpan = xCell->mnColSpan;
-    
+
     }
 	notifyModified();
 }
@@ -1029,7 +1029,7 @@ void SAL_CALL Cell::setPropertyValue( const OUString& rPropertyName, const Any& 
 			const TableBorder* pBorder = (const TableBorder* )rValue.getValue();
 			if( pBorder == NULL )
 				break;
-			
+
             SvxBoxItem aBox( SDRATTR_TABLE_BORDER );
             SvxBoxInfoItem aBoxInfo( SDRATTR_TABLE_BORDER_INNER );
 			SvxBorderLine aLine;
@@ -1080,7 +1080,7 @@ void SAL_CALL Cell::setPropertyValue( const OUString& rPropertyName, const Any& 
 			mpProperties->SetObjectItem( XFillBmpStretchItem( eMode == BitmapMode_STRETCH ) );
 			mpProperties->SetObjectItem( XFillBmpTileItem( eMode == BitmapMode_REPEAT ) );
 			return;
-		}	
+		}
 		default:
 		{
 			SfxItemSet aSet( GetModel()->GetItemPool(), pMap->nWID, pMap->nWID);
@@ -1183,7 +1183,7 @@ Any SAL_CALL Cell::getPropertyValue( const OUString& PropertyName ) throw(Unknow
 			aTableBorder.IsVerticalLineValid	= rBoxInfoItem.IsValid(VALID_VERT);
 			aTableBorder.Distance 				= rBox.GetDistance();
 			aTableBorder.IsDistanceValid 		= rBoxInfoItem.IsValid(VALID_DISTANCE);
-			
+
 			return Any( aTableBorder );
 		}
 		case OWN_ATTR_FILLBMP_MODE:
@@ -1265,7 +1265,7 @@ void SAL_CALL Cell::setPropertyValues( const Sequence< OUString >& aPropertyName
 		throw DisposedException();
 
 	const sal_Int32 nCount = aPropertyNames.getLength();
-	
+
 	const OUString* pNames = aPropertyNames.getConstArray();
 	const Any* pValues = aValues.getConstArray();
 
@@ -1558,7 +1558,7 @@ Any SAL_CALL Cell::getPropertyDefault( const OUString& aPropertyName ) throw(Unk
 			TableBorder aBorder;
 			return Any( aBorder );
 		}
-		
+
 		default:
 		{
 			if(  GetModel()->GetItemPool().IsWhich(pMap->nWID) )

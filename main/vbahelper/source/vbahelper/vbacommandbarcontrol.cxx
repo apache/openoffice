@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,7 +53,7 @@ ScVbaCommandBarControl::getCaption() throw ( uno::RuntimeException )
     return sCaption;
 }
 
-void SAL_CALL 
+void SAL_CALL
 ScVbaCommandBarControl::setCaption( const ::rtl::OUString& _caption ) throw (uno::RuntimeException)
 {
     rtl::OUString sCaption = _caption.replace('&','~');
@@ -61,7 +61,7 @@ ScVbaCommandBarControl::setCaption( const ::rtl::OUString& _caption ) throw (uno
     ApplyChange();
 }
 
-::rtl::OUString SAL_CALL 
+::rtl::OUString SAL_CALL
 ScVbaCommandBarControl::getOnAction() throw (uno::RuntimeException)
 {
     rtl::OUString sCommandURL;
@@ -69,11 +69,11 @@ ScVbaCommandBarControl::getOnAction() throw (uno::RuntimeException)
     return sCommandURL;
 }
 
-void SAL_CALL 
+void SAL_CALL
 ScVbaCommandBarControl::setOnAction( const ::rtl::OUString& _onaction ) throw (uno::RuntimeException)
 {
     // get the current model
-    uno::Reference< frame::XModel > xModel( pCBarHelper->getModel() ); 
+    uno::Reference< frame::XModel > xModel( pCBarHelper->getModel() );
     MacroResolvedInfo aResolvedMacro = ooo::vba::resolveVBAMacro( getSfxObjShell( xModel ), _onaction, true );
     if ( aResolvedMacro.mbFound )
     {
@@ -84,7 +84,7 @@ ScVbaCommandBarControl::setOnAction( const ::rtl::OUString& _onaction ) throw (u
     }
 }
 
-::sal_Bool SAL_CALL 
+::sal_Bool SAL_CALL
 ScVbaCommandBarControl::getVisible() throw (uno::RuntimeException)
 {
     sal_Bool bVisible = sal_True;
@@ -93,7 +93,7 @@ ScVbaCommandBarControl::getVisible() throw (uno::RuntimeException)
         aValue >>= bVisible;
     return bVisible;
 }
-void SAL_CALL 
+void SAL_CALL
 ScVbaCommandBarControl::setVisible( ::sal_Bool _visible ) throw (uno::RuntimeException)
 {
     uno::Any aValue = getPropertyValue( m_aPropertyValues, rtl::OUString::createFromAscii( ITEM_DESCRIPTOR_ISVISIBLE ) );
@@ -104,7 +104,7 @@ ScVbaCommandBarControl::setVisible( ::sal_Bool _visible ) throw (uno::RuntimeExc
     }
 }
 
-::sal_Bool SAL_CALL 
+::sal_Bool SAL_CALL
 ScVbaCommandBarControl::getEnabled() throw (uno::RuntimeException)
 {
     sal_Bool bEnabled = sal_True;
@@ -154,7 +154,7 @@ ScVbaCommandBarControl::setBeginGroup( ::sal_Bool _begin ) throw (css::uno::Runt
     }
 }
 
-void SAL_CALL 
+void SAL_CALL
 ScVbaCommandBarControl::Delete(  ) throw (script::BasicErrorException, uno::RuntimeException)
 {
     if( m_xCurrentSettings.is() )
@@ -166,7 +166,7 @@ ScVbaCommandBarControl::Delete(  ) throw (script::BasicErrorException, uno::Runt
     }
 }
 
-uno::Any SAL_CALL 
+uno::Any SAL_CALL
 ScVbaCommandBarControl::Controls( const uno::Any& aIndex ) throw (script::BasicErrorException, uno::RuntimeException)
 {
     // only Popup Menu has controls
@@ -174,7 +174,7 @@ ScVbaCommandBarControl::Controls( const uno::Any& aIndex ) throw (script::BasicE
     getPropertyValue( m_aPropertyValues, rtl::OUString::createFromAscii( ITEM_DESCRIPTOR_CONTAINER ) ) >>= xSubMenu;
     if( !xSubMenu.is() )
         throw uno::RuntimeException();
-    
+
     uno::Reference< XCommandBarControls > xCommandBarControls( new ScVbaCommandBarControls( this, mxContext, xSubMenu, pCBarHelper, m_xBarSettings, m_sResourceUrl ) );
     if( aIndex.hasValue() )
     {
@@ -183,14 +183,14 @@ ScVbaCommandBarControl::Controls( const uno::Any& aIndex ) throw (script::BasicE
     return uno::makeAny( xCommandBarControls );
 }
 
-rtl::OUString& 
+rtl::OUString&
 ScVbaCommandBarControl::getServiceImplName()
 {
 	static rtl::OUString sImplName( RTL_CONSTASCII_USTRINGPARAM("ScVbaCommandBarControl") );
 	return sImplName;
 }
 
-uno::Sequence<rtl::OUString> 
+uno::Sequence<rtl::OUString>
 ScVbaCommandBarControl::getServiceNames()
 {
 	static uno::Sequence< rtl::OUString > aServiceNames;
@@ -210,13 +210,13 @@ ScVbaCommandBarPopup::ScVbaCommandBarPopup( const css::uno::Reference< ov::XHelp
     m_xCurrentSettings->getByIndex( m_nPosition ) >>= m_aPropertyValues;
 }
 
-rtl::OUString& 
+rtl::OUString&
 ScVbaCommandBarPopup::getServiceImplName()
 {
 	static rtl::OUString sImplName( RTL_CONSTASCII_USTRINGPARAM("ScVbaCommandBarPopup") );
 	return sImplName;
 }
-uno::Sequence<rtl::OUString> 
+uno::Sequence<rtl::OUString>
 ScVbaCommandBarPopup::getServiceNames()
 {
 	static uno::Sequence< rtl::OUString > aServiceNames;
@@ -236,13 +236,13 @@ ScVbaCommandBarButton::ScVbaCommandBarButton( const css::uno::Reference< ov::XHe
     m_xCurrentSettings->getByIndex( m_nPosition ) >>= m_aPropertyValues;
 }
 
-rtl::OUString& 
+rtl::OUString&
 ScVbaCommandBarButton::getServiceImplName()
 {
 	static rtl::OUString sImplName( RTL_CONSTASCII_USTRINGPARAM("ScVbaCommandBarButton") );
 	return sImplName;
 }
-uno::Sequence<rtl::OUString> 
+uno::Sequence<rtl::OUString>
 ScVbaCommandBarButton::getServiceNames()
 {
 	static uno::Sequence< rtl::OUString > aServiceNames;

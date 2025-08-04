@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -73,7 +73,7 @@ public:
             ,m_bReadOnly(sal_False)
     {
     }
-    
+
     OXReportControllerObserverImpl::~OXReportControllerObserverImpl()
     {
     }
@@ -114,7 +114,7 @@ public:
                 nEvent == VCLEVENT_WINDOW_RESIZE ||
                 nEvent == VCLEVENT_WINDOW_SHOW ||
                 nEvent == VCLEVENT_WINDOW_MOUSEMOVE ||
-                nEvent == VCLEVENT_WINDOW_FRAMETITLECHANGED || 
+                nEvent == VCLEVENT_WINDOW_FRAMETITLECHANGED ||
                 nEvent == VCLEVENT_WINDOW_HIDE ||
                 nEvent == VCLEVENT_EDIT_MODIFY ||
                 nEvent == VCLEVENT_SCROLLBAR_ENDSCROLL ||
@@ -131,7 +131,7 @@ public:
                 return 0L;
             }
             */
-            
+
             if (nEvent == VCLEVENT_APPLICATION_DATACHANGED )
             {
                 DataChangedEvent* pData = reinterpret_cast<DataChangedEvent*>(_pEvt->GetData());
@@ -140,9 +140,9 @@ public:
                                ( pData->GetFlags() & SETTINGS_STYLE		)))
                 {
                     OEnvLock aLock(*this);
-                    
+
                     // sal_uInt32 nCount = m_pImpl->m_aSections.size();
-                    
+
                     // send all Section Objects a 'tingle'
                     // maybe they need a change in format, color, etc
                     ::std::vector< uno::Reference< container::XChild > >::const_iterator aIter = m_pImpl->m_aSections.begin();
@@ -154,7 +154,7 @@ public:
                         {
                             uno::Reference<report::XSection> xSection(xChild, uno::UNO_QUERY);
                             if (xSection.is())
-                            {    
+                            {
                                 const sal_Int32 nCount = xSection->getCount();
                                 for (sal_Int32 i = 0; i < nCount; ++i)
                                 {
@@ -172,7 +172,7 @@ public:
                 }
             }
         }
-        
+
         return 0L;
     }
 
@@ -191,14 +191,14 @@ public:
                 RemoveElement(xSourceSet);
 	    }
     }
-    
+
     void OXReportControllerObserver::Clear()
     {
         OEnvLock aLock(*this);
         // sal_uInt32 nDebugValue = m_pImpl->m_aSections.size();
         m_pImpl->m_aSections.clear();
     }
-    
+
     // XPropertyChangeListener
     void SAL_CALL OXReportControllerObserver::propertyChange(const beans::PropertyChangeEvent& _rEvent) throw(uno::RuntimeException)
     {
@@ -209,20 +209,20 @@ public:
             return;
 
         m_aFormattedFieldBeautifier.notifyPropertyChange(_rEvent);
-        m_aFixedTextColor.notifyPropertyChange(_rEvent);        
+        m_aFixedTextColor.notifyPropertyChange(_rEvent);
     }
-    
+
 // -----------------------------------------------------------------------------
-void OXReportControllerObserver::Lock() 
-{ 
+void OXReportControllerObserver::Lock()
+{
     OSL_ENSURE(m_refCount,"Illegal call to dead object!");
-    osl_incrementInterlockedCount( &m_pImpl->m_nLocks ); 
+    osl_incrementInterlockedCount( &m_pImpl->m_nLocks );
 }
-void OXReportControllerObserver::UnLock() 
-{ 
+void OXReportControllerObserver::UnLock()
+{
     OSL_ENSURE(m_refCount,"Illegal call to dead object!");
 
-    osl_decrementInterlockedCount( &m_pImpl->m_nLocks ); 
+    osl_decrementInterlockedCount( &m_pImpl->m_nLocks );
 }
 sal_Bool OXReportControllerObserver::IsLocked() const { return m_pImpl->m_nLocks != 0; }
 
@@ -374,7 +374,7 @@ void OXReportControllerObserver::AddElement(const uno::Reference< uno::XInterfac
     m_aFormattedFieldBeautifier.notifyElementInserted(_rxElement);
     m_aFixedTextColor.notifyElementInserted(_rxElement);
     // }
-    
+
     // if it's a container, start listening at all elements
     uno::Reference< container::XIndexAccess > xContainer( _rxElement, uno::UNO_QUERY );
 	if ( xContainer.is() )
@@ -400,7 +400,7 @@ void OXReportControllerObserver::RemoveElement(const uno::Reference< uno::XInter
     if ( _xContainer.is() )
     {
         aFind = ::std::find(m_pImpl->m_aSections.begin(),m_pImpl->m_aSections.end(),_xContainer);
-    		
+
 	    if ( aFind == m_pImpl->m_aSections.end() )
 	    {
             uno::Reference<container::XChild> xParent(_xContainer->getParent(),uno::UNO_QUERY);

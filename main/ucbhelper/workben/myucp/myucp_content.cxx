@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -178,7 +178,7 @@ uno::Sequence< uno::Type > SAL_CALL Content::getTypes()
 rtl::OUString SAL_CALL Content::getImplementationName()
     throw( uno::RuntimeException )
 {
-    // @@@ Adjust implementation name. 
+    // @@@ Adjust implementation name.
     // Prefix with reversed company domain name.
     return rtl::OUString::createFromAscii( "com.sun.star.comp.myucp.Content" );
 }
@@ -487,7 +487,7 @@ uno::Reference< sdbc::XRow > Content::getPropertyValues(
             const uno::Reference< lang::XMultiServiceFactory >& rSMgr,
             const uno::Sequence< beans::Property >& rProperties,
             const ContentProperties& rData,
-            const rtl::Reference< 
+            const rtl::Reference<
                 ::ucbhelper::ContentProviderImplHelper >& rProvider,
             const rtl::OUString& rContentId )
 {
@@ -847,7 +847,7 @@ void Content::queryChildren( ContentRefList& rChildren )
 	while ( it != end )
 	{
 		::ucbhelper::ContentImplHelperRef xChild = (*it);
-		::rtl::OUString aChildURL 
+		::rtl::OUString aChildURL
               = xChild->getIdentifier()->getContentIdentifier();
 
 		// Is aURL a prefix of aChildURL?
@@ -881,7 +881,7 @@ void Content::insert(
 	// Check, if all required properties were set.
 
 #if 0
-    // @@@ add checks for property presence 
+    // @@@ add checks for property presence
 	if ( m_aProps.xxxx == yyyyy )
 	{
         OSL_ENSURE( sal_False, "Content::insert - property value missing!" );

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -44,10 +44,10 @@ namespace PictReaderInternal {
       penStyle=PEN_SOLID; brushStyle = BRUSH_SOLID;
       nBitCount = 64;
     }
-    
+
     //! reads black/white pattern from SvStream
     sal_uLong read(SvStream &stream);
-    //! sets the color 
+    //! sets the color
     void setColor(Color &col) { isColor = true; color = col; }
     /** returns a color which can be "used" to replace the pattern,
      *     created from ForeColor and BackColor, ...
@@ -73,7 +73,7 @@ namespace PictReaderInternal {
 		      BRUSH_25, BRUSH_50, BRUSH_75,
 		      BRUSH_BITMAP };
     // Data
-    enum PenStyle penStyle; 
+    enum PenStyle penStyle;
     enum BrushStyle brushStyle;
     short nBitCount;
 
@@ -109,7 +109,7 @@ namespace PictReaderInternal {
 		 (sal_uLong)nbyte[5])<<8)|
 	       (sal_uLong)nbyte[6])<<8)|
       (sal_uLong)nbyte[7];
-    
+
     // Einen PenStyle machen:
     if      (nBitCount<=0)  penStyle=PEN_NULL;
     else if (nBitCount<=16) penStyle=PEN_DOT;
@@ -219,7 +219,7 @@ private:
 	sal_uLong ReadAndDrawSameRgn(PictDrawingMethod eMethod);
 
         // returns true, if we do not need to print the shape/text/frame
-        bool IsInvisible(PictDrawingMethod eMethod) const { 
+        bool IsInvisible(PictDrawingMethod eMethod) const {
 	  if (eActROP == ROP_1) return true;
 	  if (eMethod==PDM_FRAME && (nActPenSize.Width() == 0 || nActPenSize.Height() == 0)) return true;
 	  return false;
@@ -351,7 +351,7 @@ void PictReader::SetLineColor( const Color& rColor )
 
 void PictReader::SetFillColor( const Color& rColor )
 {
-	pVirDev->SetFillColor( rColor ); 
+	pVirDev->SetFillColor( rColor );
 }
 
 sal_Bool PictReader::Callback(sal_uInt16 /*nPercent*/)
@@ -428,7 +428,7 @@ Color PictReader::ReadColor()
 	Color aCol;
 
 	*pPict >> nCol;
-	switch (nCol) 
+	switch (nCol)
 	{
 		case  33: aCol=Color( COL_BLACK );        break;
 		case  30: aCol=Color( COL_WHITE );        break;
@@ -610,7 +610,7 @@ sal_uLong PictReader::ReadAndDrawRgn(PictDrawingMethod eMethod)
 	// - 0x7fff
 	// where y_i is the increasing sequences of line coordinates
 	// and on each line: a0 < b0 < a1 < b1 < ... < a_{n_i} < b_{n_i}
-	
+
 	// it can be probably decoded as :
 	// M=an empty mask: ie. (0, 0, ... ) with (left_box-right_box+1) zeroes
 	// then for each line (y_i):
@@ -1152,7 +1152,7 @@ void PictReader::ReadHeader()
 	    if (sBuf[0] != 0x00) continue; // unrecovable error
 	    int numZero = 0;
 	    do
-	      { 
+	      {
 		numZero++;
 		pPict->SeekRel(-1);
 		pPict->Read( sBuf, 2 );
@@ -1175,7 +1175,7 @@ void PictReader::ReadHeader()
 	    pPict->SeekRel( 3 );
 	    *pPict >> nExtVer >> nReserved;
 	    if (pPict->IsEof() || pPict->GetError()) continue;
-	      
+
 	    if ( nExtVer == -2 ) // extended version 2 picture
 	      {
 		sal_Int32 nHResFixed, nVResFixed;

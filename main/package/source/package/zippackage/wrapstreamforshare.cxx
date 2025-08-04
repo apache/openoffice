@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,7 +49,7 @@ WrapStreamForShare::~WrapStreamForShare()
 }
 
 // XInputStream
-sal_Int32 SAL_CALL WrapStreamForShare::readBytes( uno::Sequence< sal_Int8 >& aData, sal_Int32 nBytesToRead ) 
+sal_Int32 SAL_CALL WrapStreamForShare::readBytes( uno::Sequence< sal_Int8 >& aData, sal_Int32 nBytesToRead )
 		throw ( io::NotConnectedException,
 				io::BufferSizeExceededException,
 				io::IOException,
@@ -87,7 +87,7 @@ sal_Int32 SAL_CALL WrapStreamForShare::readSomeBytes( uno::Sequence< sal_Int8 >&
 	return nRead;
 }
 
-void SAL_CALL WrapStreamForShare::skipBytes( sal_Int32 nBytesToSkip ) 
+void SAL_CALL WrapStreamForShare::skipBytes( sal_Int32 nBytesToSkip )
 		throw ( io::NotConnectedException,
 				io::BufferSizeExceededException,
 				io::IOException,
@@ -117,7 +117,7 @@ sal_Int32 SAL_CALL WrapStreamForShare::available()
 	return m_xInStream->available();
 }
 
-void SAL_CALL WrapStreamForShare::closeInput() 
+void SAL_CALL WrapStreamForShare::closeInput()
 		throw ( io::NotConnectedException,
 				io::IOException,
 				uno::RuntimeException )
@@ -151,7 +151,7 @@ void SAL_CALL WrapStreamForShare::seek( sal_Int64 location )
 }
 
 sal_Int64 SAL_CALL WrapStreamForShare::getPosition()
-		throw ( io::IOException, 
+		throw ( io::IOException,
 				uno::RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_rMutexRef->GetMutex() );

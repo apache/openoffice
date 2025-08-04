@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -160,7 +160,7 @@ static PyObject* getComponentContext (PyObject*, PyObject*)
                     "file for bootstrapping python uno bridge\n" );
                 return NULL;
             }
-            
+
             OUStringBuffer iniFileName;
             iniFileName.append( path );
             iniFileName.appendAscii( "/" );
@@ -175,11 +175,11 @@ static PyObject* getComponentContext (PyObject*, PyObject*)
             }
             else
             {
-                // defaulting to the standard bootstrapping 
+                // defaulting to the standard bootstrapping
                 PyThreadDetach antiguard;
                 ctx = cppu::defaultBootstrap_InitialComponentContext ();
             }
-            
+
         }
 
         if( ! Runtime::isInitialized() )
@@ -251,7 +251,7 @@ static PyObject *createUnoStructHelper(PyObject *, PyObject* args )
         {
             PyObject *structName = PyTuple_GetItem( args,0 );
             PyObject *initializer = PyTuple_GetItem( args ,1 );
-            
+
             if( PYSTR_CHECK( structName ) )
             {
                 if( PyTuple_Check( initializer ) )
@@ -367,7 +367,7 @@ static PyObject *getConstantByName( PyObject *, PyObject *args )
     try
     {
         char *name;
-        
+
         if (PyArg_ParseTuple (args, const_cast< char * >("s"), &name))
         {
             OUString typeName ( OUString::createFromAscii( name ) );
@@ -390,7 +390,7 @@ static PyObject *getConstantByName( PyObject *, PyObject *args )
     catch( NoSuchElementException & e )
     {
         // to the python programmer, this is a runtime exception,
-        // do not support tweakings with the type system 
+        // do not support tweakings with the type system
         RuntimeException runExc( e.Message, Reference< XInterface > () );
         raisePyExceptionWithAny( makeAny( runExc ) );
     }
@@ -419,7 +419,7 @@ static PyObject *checkType( PyObject *, PyObject *args )
         return NULL;
     }
     PyObject *obj = PyTuple_GetItem( args, 0 );
-    
+
     try
     {
         PyType2Type( obj );
@@ -443,7 +443,7 @@ static PyObject *checkEnum( PyObject *, PyObject *args )
         return NULL;
     }
     PyObject *obj = PyTuple_GetItem( args, 0 );
-    
+
     try
     {
         PyEnum2Enum( obj );
@@ -455,7 +455,7 @@ static PyObject *checkEnum( PyObject *, PyObject *args )
     }
     Py_INCREF( Py_None );
     return Py_None;
-}    
+}
 
 static PyObject *getClass( PyObject *, PyObject *args )
 {
@@ -587,7 +587,7 @@ static PyObject * absolutize( PyObject *, PyObject * args )
             buf.appendAscii( " for reason (" );
             buf.append( (sal_Int32) e );
             buf.appendAscii( ")" );
-                
+
             PyErr_SetString(
                 PyExc_OSError,
                 OUStringToOString(buf.makeStringAndClear(),osl_getThreadTextEncoding()));
@@ -675,17 +675,17 @@ static PyObject *setCurrentContext( PyObject *, PyObject * args )
     {
         if( PyTuple_Check( args ) && PyTuple_Size( args ) == 1 )
         {
-            
+
             Runtime runtime;
             Any a = runtime.pyObject2Any( PyTuple_GetItem( args, 0 ) );
-            
+
             Reference< com::sun::star::uno::XCurrentContext > context;
-            
+
             if( (a.hasValue() && (a >>= context)) || ! a.hasValue() )
             {
                 ret = com::sun::star::uno::setCurrentContext( context ) ? Py_True : Py_False;
             }
-            else 
+            else
             {
                 OStringBuffer buf;
                 buf.append( "uno.setCurrentContext expects an XComponentContext implementation, got " );
@@ -715,7 +715,7 @@ static PyObject *setCurrentContext( PyObject *, PyObject * args )
 
 struct PyMethodDef PyUNOModule_methods [] =
 {
-    {const_cast< char * >("getComponentContext"), getComponentContext, METH_NOARGS, NULL}, 
+    {const_cast< char * >("getComponentContext"), getComponentContext, METH_NOARGS, NULL},
     {const_cast< char * >("_createUnoStructHelper"), createUnoStructHelper, METH_VARARGS, NULL},
     {const_cast< char * >("getTypeByName"), getTypeByName, METH_VARARGS, NULL},
     {const_cast< char * >("getConstantByName"), getConstantByName, METH_VARARGS, NULL},
@@ -749,13 +749,13 @@ static struct PyModuleDef PyUNOModule =
 PY_DLLEXPORT PyMODINIT_FUNC PyInit_pyuno()
 {
     PyObject *m;
-    
+
     PyEval_InitThreads();
-    
+
     m = PyModule_Create(&PyUNOModule);
     if (m == NULL)
         return NULL;
-    
+
     if (PyType_Ready((PyTypeObject *)getPyUnoClass().get()))
         return NULL;
     return m;

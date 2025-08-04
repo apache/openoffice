@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,7 +50,7 @@ SpiralWipe::SpiralWipe( sal_Int32 nElements, bool flipOnYAxis )
     const double area = (t * m_elements);
     const double e = (sqrt(area) / 2.0);
     const sal_Int32 edge = (static_cast<sal_Int32>(e) * 2);
-    
+
     basegfx::B2DHomMatrix aTransform(basegfx::tools::createTranslateB2DHomMatrix(-0.5, -0.5));
     const double edge_ = ::basegfx::pruneScaleValue(
         static_cast<double>(edge) / m_sqrtElements );
@@ -59,7 +59,7 @@ SpiralWipe::SpiralWipe( sal_Int32 nElements, bool flipOnYAxis )
     ::basegfx::B2DPolygon poly( createUnitRect() );
     poly.transform( aTransform );
     ::basegfx::B2DPolyPolygon res(poly);
-    
+
     if (! ::basegfx::fTools::equalZero( 1.0 - t )) {
         const sal_Int32 edge1 = (edge + 1);
         sal_Int32 len = static_cast<sal_Int32>( (e - (edge /2)) * edge1 * 4 );
@@ -83,7 +83,7 @@ SpiralWipe::SpiralWipe( sal_Int32 nElements, bool flipOnYAxis )
             res.append(poly);
         }
     }
-    
+
     return res;
 }
 
@@ -101,7 +101,7 @@ SpiralWipe::SpiralWipe( sal_Int32 nElements, bool flipOnYAxis )
     ::basegfx::B2DPolyPolygon res( createUnitRect() );
     ::basegfx::B2DPolyPolygon innerSpiral( calcNegSpiral( 1.0 - t ) );
     innerSpiral.flip();
-    
+
     if (m_fourBox) {
         ::basegfx::B2DHomMatrix aTransform;
         aTransform.scale( 0.5, 0.5 );
@@ -119,7 +119,7 @@ SpiralWipe::SpiralWipe( sal_Int32 nElements, bool flipOnYAxis )
         res.append(innerSpiral);
         res.append( flipOnXAxis(innerSpiral) );
     }
-    
+
     return m_flipOnYAxis ? flipOnYAxis(res) : res;
 }
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -25,7 +25,7 @@
 #include "precompiled_xmloff.hxx"
 #include "xmloff/dllapi.h"
 
-#include "sal/config.h" 
+#include "sal/config.h"
 #include <osl/diagnose.h>
 
 #include <rtl/ustring.hxx>
@@ -177,10 +177,10 @@ XMLTableExport::XMLTableExport(SvXMLExport& rExp, const rtl::Reference< SvXMLExp
 		OUString(RTL_CONSTASCII_USTRINGPARAM(XML_STYLE_FAMILY_TABLE_COLUMN_STYLES_NAME)),
 		mxColumnExportPropertySetMapper.get(),
 		OUString(RTL_CONSTASCII_USTRINGPARAM(XML_STYLE_FAMILY_TABLE_COLUMN_STYLES_PREFIX)));
-	mrExport.GetAutoStylePool()->AddFamily(XML_STYLE_FAMILY_TABLE_ROW, 
+	mrExport.GetAutoStylePool()->AddFamily(XML_STYLE_FAMILY_TABLE_ROW,
 		OUString(RTL_CONSTASCII_USTRINGPARAM(XML_STYLE_FAMILY_TABLE_ROW_STYLES_NAME)),
 		mxRowExportPropertySetMapper.get(),
-		OUString(RTL_CONSTASCII_USTRINGPARAM(XML_STYLE_FAMILY_TABLE_ROW_STYLES_PREFIX)));	
+		OUString(RTL_CONSTASCII_USTRINGPARAM(XML_STYLE_FAMILY_TABLE_ROW_STYLES_PREFIX)));
 //	mrExport.GetAutoStylePool()->AddFamily(XML_STYLE_FAMILY_TABLE_TABLE
 //		OUString(RTL_CONSTASCII_USTRINGPARAM(XML_STYLE_FAMILY_TABLE_TABLE_STYLES_NAME)),
 //		xTableStylesExportPropertySetMapper,
@@ -190,16 +190,16 @@ XMLTableExport::XMLTableExport(SvXMLExport& rExp, const rtl::Reference< SvXMLExp
 		mxCellExportPropertySetMapper.get(),
 		OUString(RTL_CONSTASCII_USTRINGPARAM(XML_STYLE_FAMILY_TABLE_CELL_STYLES_PREFIX)));
 }
- 
+
 // --------------------------------------------------------------------
 
 XMLTableExport::~XMLTableExport ()
-{	
+{
 }
 
 // --------------------------------------------------------------------
 
-static bool has_states( const std::vector< XMLPropertyState >& xPropStates )		
+static bool has_states( const std::vector< XMLPropertyState >& xPropStates )
 {
 	if( !xPropStates.empty() )
 	{
@@ -228,7 +228,7 @@ static bool has_states( const std::vector< XMLPropertyState >& xPropStates )
 	try
 	{
 		Reference< XIndexAccess > xIndexAccessCols( xColumnRowRange->getColumns(), UNO_QUERY_THROW );
-		const sal_Int32 nColumnCount = xIndexAccessCols->getCount();		
+		const sal_Int32 nColumnCount = xIndexAccessCols->getCount();
  		for( sal_Int32 nColumn = 0; nColumn < nColumnCount; ++nColumn ) try
 		{
  			Reference< XPropertySet > xPropSet( xIndexAccessCols->getByIndex(nColumn) , UNO_QUERY_THROW );
@@ -265,7 +265,7 @@ static bool has_states( const std::vector< XMLPropertyState >& xPropStates )
 			}
 
 			// get the current row
-			Reference< XCellRange > xCellRange( xPropSet, UNO_QUERY_THROW );	
+			Reference< XCellRange > xCellRange( xPropSet, UNO_QUERY_THROW );
 			for ( sal_Int32 nColumn = 0; nColumn < nColumnCount; ++nColumn )
 			{
 				// get current cell, remarks row index is 0, because we get the range for each row separate
@@ -319,7 +319,7 @@ static bool has_states( const std::vector< XMLPropertyState >& xPropStates )
 		DBG_ERROR("xmloff::XMLTableExport::collectTableAutoStyles(), exception caught!");
 	}
  }
- 
+
  // --------------------------------------------------------------------
 
  void XMLTableExport::exportTable( const Reference < XColumnRowRange >& xColumnRowRange )
@@ -336,18 +336,18 @@ static bool has_states( const std::vector< XMLPropertyState >& xPropStates )
 		Reference< XIndexAccess > xIndexAccessCols( xColumnRowRange->getColumns(), UNO_QUERY_THROW );
 
 		const sal_Int32 rowCount = xIndexAccess->getCount();
-		const sal_Int32 columnCount = xIndexAccessCols->getCount();		
-		
+		const sal_Int32 columnCount = xIndexAccessCols->getCount();
+
 		SvXMLElementExport tableElement( mrExport, XML_NAMESPACE_TABLE, XML_TABLE, sal_True, sal_True );
 
 		// export table columns
-		ExportTableColumns( xIndexAccessCols, pTableInfo );	
+		ExportTableColumns( xIndexAccessCols, pTableInfo );
 
 		// start iterating rows and columns
 		for ( sal_Int32 rowIndex = 0; rowIndex < rowCount; rowIndex++ )
 		{
 			// get the current row
-			Reference< XCellRange > xCellRange( xIndexAccess->getByIndex(rowIndex), UNO_QUERY_THROW );	
+			Reference< XCellRange > xCellRange( xIndexAccess->getByIndex(rowIndex), UNO_QUERY_THROW );
 
 			OUString sDefaultCellStyle;
 
@@ -365,16 +365,16 @@ static bool has_states( const std::vector< XMLPropertyState >& xPropStates )
 			}
 
 			// write row element
-			SvXMLElementExport tableRowElement( mrExport, XML_NAMESPACE_TABLE, XML_TABLE_ROW, sal_True, sal_True );			
+			SvXMLElementExport tableRowElement( mrExport, XML_NAMESPACE_TABLE, XML_TABLE_ROW, sal_True, sal_True );
 
 			for ( sal_Int32 columnIndex = 0; columnIndex < columnCount; columnIndex++ )
 			{
 				// get current cell, remarks row index is 0, because we get the range for each row separate
 				Reference< XCell > xCell( xCellRange->getCellByPosition(columnIndex, 0), UNO_QUERY_THROW );
-				
+
 				// use XMergeableCell interface from offapi
 				Reference< XMergeableCell > xMergeableCell( xCell, UNO_QUERY_THROW );
-				
+
 				// export cell
 				ExportCell( xCell, pTableInfo, sDefaultCellStyle );
 			}
@@ -383,9 +383,9 @@ static bool has_states( const std::vector< XMLPropertyState >& xPropStates )
  	catch( Exception )
 	{
  		DBG_ERROR( "XMLTableExport::exportTable(), exception caught!" );
- 	} 	 	
+ 	}
  }
- 
+
 // --------------------------------------------------------------------
 // Export the table columns
 // --------------------------------------------------------------------
@@ -414,7 +414,7 @@ static bool has_states( const std::vector< XMLPropertyState >& xPropStates )
  		}
  	}
  }
- 
+
 // --------------------------------------------------------------------
 // ODF export for a table cell.
 // --------------------------------------------------------------------
@@ -462,16 +462,16 @@ static bool has_states( const std::vector< XMLPropertyState >& xPropStates )
 		mrExport.AddAttribute(XML_NAMESPACE_TABLE, XML_NUMBER_ROWS_SPANNED, OUString::valueOf( nRowSpan ) );
 
  	// <table:table-cell> or <table:covered-table-cell>
-	SvXMLElementExport tableCellElement( mrExport, XML_NAMESPACE_TABLE, bIsMerged ? XML_COVERED_TABLE_CELL : XML_TABLE_CELL, sal_True, sal_True ); 
+	SvXMLElementExport tableCellElement( mrExport, XML_NAMESPACE_TABLE, bIsMerged ? XML_COVERED_TABLE_CELL : XML_TABLE_CELL, sal_True, sal_True );
 
 	// export cells text content
 	ImpExportText( xCell );
  }
- 
+
 // --------------------------------------------------------------------
 // ODF export of the text contents of a table cell.
 // Remarks: Up to now we only export text contents!
-// TODO: Check against nested tables .... 
+// TODO: Check against nested tables ....
 // --------------------------------------------------------------------
 
  void XMLTableExport::ImpExportText( const Reference< XCell >& xCell )
@@ -552,7 +552,7 @@ void XMLTableExport::exportTableTemplates()
 				continue;
 
 			Reference< XNameAccess > xStyleNames( xTableStyle, UNO_QUERY_THROW );
-			
+
 			mrExport.AddAttribute(XML_NAMESPACE_TEXT, XML_STYLE_NAME, GetExport().EncodeStyleName( xTableStyle->getName() ) );
  			SvXMLElementExport tableTemplate( mrExport, XML_NAMESPACE_TABLE, XML_TABLE_TEMPLATE, sal_True, sal_True );
 

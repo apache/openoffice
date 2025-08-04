@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -55,10 +55,10 @@ SFX_IMPL_TOOLBOX_CONTROL( SvxFillToolBoxControl, XFillStyleItem );
 |*
 \************************************************************************/
 
-SvxFillToolBoxControl::SvxFillToolBoxControl( 
-    sal_uInt16 nSlotId, 
-    sal_uInt16 nId, 
-    ToolBox& rTbx ) 
+SvxFillToolBoxControl::SvxFillToolBoxControl(
+    sal_uInt16 nSlotId,
+    sal_uInt16 nId,
+    ToolBox& rTbx )
 :   SfxToolBoxControl( nSlotId, nId, rTbx ),
     mpStyleItem(0),
     mpColorItem(0),
@@ -205,7 +205,7 @@ void SvxFillToolBoxControl::StateChanged(
             mpFillTypeLB->SetNoSelection();
             mpFillAttrLB->Disable();
             mpFillAttrLB->SetNoSelection();
-            delete mpStyleItem; 
+            delete mpStyleItem;
             mpStyleItem = 0;
             mbUpdate = false;
         }
@@ -540,7 +540,7 @@ Window* SvxFillToolBoxControl::CreateItemWindow(Window *pParent)
             // for Writer and Calc it's not the same instance of
             // SvxFillToolBoxControl which gets used after deselecting
             // and selecting a DrawObject, thhus a useful initialization is
-            // needed to get the FillType and the FillStyle List inited 
+            // needed to get the FillType and the FillStyle List inited
             // correctly. This in combination with meLastXFS inited to
             // XFILL_NONE do the trick
             mpStyleItem = new XFillStyleItem(XFILL_SOLID);
@@ -557,7 +557,7 @@ Window* SvxFillToolBoxControl::CreateItemWindow(Window *pParent)
 |*
 \************************************************************************/
 
-FillControl::FillControl(Window* pParent,WinBits nStyle) 
+FillControl::FillControl(Window* pParent,WinBits nStyle)
 :   Window(pParent,nStyle | WB_DIALOGCONTROL),
     mpLbFillType(new SvxFillTypeBox(this)),
     mpLbFillAttr(new SvxFillAttrBox(this)),
@@ -859,8 +859,8 @@ IMPL_LINK(FillControl, SelectFillAttrHdl, ListBox *, pBox)
         // and the fill attribute change. The sidebar already handles both separately, so
         // changing the fill style already changes the object and adds a default fill attribute for
         // the newly choosen fill style.
-        // This control uses the older user's two-step action to select a fill style and a fill attribute. In 
-        // this case a lot of things may go wrong (e.g. the user stops that action and does something 
+        // This control uses the older user's two-step action to select a fill style and a fill attribute. In
+        // this case a lot of things may go wrong (e.g. the user stops that action and does something
         // different), thus the solution of the sidebar should be preferred from my POV in the future
 
         // first set the fill style if changed
@@ -886,7 +886,7 @@ IMPL_LINK(FillControl, SelectFillAttrHdl, ListBox *, pBox)
         if(mpLbFillAttr->IsRelease() && pBox)
         {
             SfxViewShell* pViewShell = SfxViewShell::Current();
-        
+
             if(pViewShell && pViewShell->GetWindow())
             {
                 pViewShell->GetWindow()->GrabFocus();

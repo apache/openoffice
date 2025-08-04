@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -54,13 +54,13 @@ static const char * desktop_strings[] = { "none", "unknown", "GNOME", "KDE", "KD
 static bool is_gnome_desktop( Display* pDisplay )
 {
     bool ret = false;
-    
+
     // warning: these checks are coincidental, GNOME does not
     // explicitly advertise itself
-    
+
     if ( NULL != getenv( "GNOME_DESKTOP_SESSION_ID" ) )
         ret = true;
-    
+
     if( ! ret )
     {
         Atom nAtom1 = XInternAtom( pDisplay, "GNOME_SM_PROXY", True );
@@ -81,7 +81,7 @@ static bool is_gnome_desktop( Display* pDisplay )
             }
         }
     }
-    
+
     if( ! ret )
     {
         Atom nUTFAtom		= XInternAtom( pDisplay, "UTF8_STRING", True );
@@ -145,7 +145,7 @@ extern "C"
         bWasXError = true;
         return 0;
     }
-    
+
     typedef int(* XErrorHandler)(Display*,XErrorEvent*);
 }
 
@@ -179,7 +179,7 @@ static int KDEVersion( Display* pDisplay )
                             &pProperty );
         if( !WasXError() && nItems != 0 && pProperty )
         {
-            nRet = *reinterpret_cast< sal_Int32* >( pProperty );                        
+            nRet = *reinterpret_cast< sal_Int32* >( pProperty );
         }
         if( pProperty )
         {
@@ -240,23 +240,23 @@ static bool is_cde_desktop( Display* pDisplay )
         osl_unloadModule( (oslModule)pLibrary );
         return true;
     }
-    
+
     return false;
 }
 
 
 extern "C"
 {
-    
+
 DESKTOP_DETECTOR_PUBLIC rtl::OUString get_desktop_environment()
 {
     rtl::OUStringBuffer aRet( 8 );
     static const char *pOverride = getenv( "OOO_FORCE_DESKTOP" );
-     
+
     if ( pOverride && *pOverride )
     {
         OString aOver( pOverride );
-        
+
         if ( aOver.equalsIgnoreAsciiCase( "cde" ) )
             aRet.appendAscii( desktop_strings[DESKTOP_CDE] );
         if ( aOver.equalsIgnoreAsciiCase( "kde4" ) )
@@ -292,7 +292,7 @@ DESKTOP_DETECTOR_PUBLIC rtl::OUString get_desktop_environment()
                 break;
             }
         }
-    
+
         // no server at all
         if( ! pDisplayStr || !*pDisplayStr )
             aRet.appendAscii( desktop_strings[DESKTOP_NONE] );
@@ -307,12 +307,12 @@ DESKTOP_DETECTOR_PUBLIC rtl::OUString get_desktop_environment()
             */
             if( ! ( pNoXInitThreads && *pNoXInitThreads ) )
                 XInitThreads();
-            
+
             Display* pDisplay = XOpenDisplay( pDisplayStr );
             if( pDisplay )
             {
                 XErrorHandler pOldHdl = XSetErrorHandler( autodect_error_handler );
-            
+
                 if ( is_kde4_desktop( pDisplay ) )
                     aRet.appendAscii( desktop_strings[DESKTOP_KDE4] );
                 else if ( is_gnome_desktop( pDisplay ) )
@@ -323,10 +323,10 @@ DESKTOP_DETECTOR_PUBLIC rtl::OUString get_desktop_environment()
                     aRet.appendAscii( desktop_strings[DESKTOP_KDE] );
                 else
                     aRet.appendAscii( desktop_strings[DESKTOP_UNKNOWN] );
-                    
+
                 // set the default handler again
                 XSetErrorHandler( pOldHdl );
-                
+
                 XCloseDisplay( pDisplay );
             }
         }

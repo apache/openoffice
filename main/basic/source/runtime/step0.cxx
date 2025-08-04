@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -73,11 +73,11 @@ void SbiRuntime::StepArith( SbxOperator eOp )
 		if ( pDflt )
 		{
 			pDflt->Broadcast( SBX_HINT_DATAWANTED );
-			// replacing new p2 on stack causes object pointed by 
+			// replacing new p2 on stack causes object pointed by
 			// pDft->pParent to be deleted, when p2->Compute() is
 			// called below pParent is accessed ( but its deleted )
 			// so set it to NULL now
-			pDflt->SetParent( NULL );  
+			pDflt->SetParent( NULL );
 			p2 = new SbxVariable( *pDflt );
 			p2->SetFlag( SBX_READWRITE );
 			refExprStk->Put( p2, nExprLvl - 1 );
@@ -102,10 +102,10 @@ void SbiRuntime::StepCompare( SbxOperator eOp )
 	SbxVariableRef p1 = PopVar();
 	SbxVariableRef p2 = PopVar();
 
-	// Make sure objects with default params have 
+	// Make sure objects with default params have
 	// values ( and type ) set as appropriate
-	SbxDataType p1Type = p1->GetType(); 
-	SbxDataType p2Type = p2->GetType(); 
+	SbxDataType p1Type = p1->GetType();
+	SbxDataType p2Type = p2->GetType();
 	if ( p1Type == p2Type )
 	{
 		if ( p1Type == SbxEMPTY )
@@ -115,8 +115,8 @@ void SbiRuntime::StepCompare( SbxOperator eOp )
 		}
 		// if both sides are an object and have default props
 		// then we need to use the default props
-		// we don't need to worry if only one side ( lhs, rhs ) is an 
-		// object ( object side will get coerced to correct type in 
+		// we don't need to worry if only one side ( lhs, rhs ) is an
+		// object ( object side will get coerced to correct type in
 		// Compare )
 		else if ( p1Type ==  SbxOBJECT )
 		{
@@ -202,7 +202,7 @@ namespace
 
 		sResult.Append('^');
 
-		while (start < end) 
+		while (start < end)
 		{
 			switch (*start)
 			{
@@ -384,20 +384,20 @@ void SbiRuntime::StepPUT()
 		refVar->SetFlag( SBX_WRITE );
 	}
 
-	// if left side arg is an object or variant and right handside isn't 
-	// either an object or a variant then try and see if a default 
+	// if left side arg is an object or variant and right handside isn't
+	// either an object or a variant then try and see if a default
 	// property exists.
 	// to use e.g. Range{"A1") = 34
-	// could equate to Range("A1").Value = 34 
+	// could equate to Range("A1").Value = 34
 	if ( bVBAEnabled )
 	{
-		if ( refVar->GetType() == SbxOBJECT  ) 
+		if ( refVar->GetType() == SbxOBJECT  )
 		{
 			SbxVariable* pDflt = getDefaultProp( refVar );
 			if ( pDflt )
 				refVar = pDflt;
 		}
-		if (  refVal->GetType() == SbxOBJECT  ) 
+		if (  refVal->GetType() == SbxOBJECT  )
 		{
 			SbxVariable* pDflt = getDefaultProp( refVal );
 			if ( pDflt )
@@ -545,7 +545,7 @@ void SbiRuntime::StepSET_Impl( SbxVariableRef& refVal, SbxVariableRef& refVar, b
 				// if it is then use the object not the default property
 				SbxObject* pObj = NULL;
 
-				
+
 				pObj = PTR_CAST(SbxObject,(SbxVariable*)refVar);
 
 				// calling GetObject on a SbxEMPTY variable raises
@@ -554,7 +554,7 @@ void SbiRuntime::StepSET_Impl( SbxVariableRef& refVal, SbxVariableRef& refVar, b
 				{
 					SbxBase* pObjVarObj = refVar->GetObject();
 					pObj = PTR_CAST(SbxObject,pObjVarObj);
-				}	
+				}
 				SbxVariable* pDflt = NULL;
 				if ( pObj || bLHSHasDefaultProp )
 					// lhs is either a valid object || or has a defaultProp
@@ -562,8 +562,8 @@ void SbiRuntime::StepSET_Impl( SbxVariableRef& refVal, SbxVariableRef& refVar, b
 				if ( pDflt )
 					refVal = pDflt;
 			}
-		}	
-		
+		}
+
 		// Handle Dim As New
 		sal_Bool bDimAsNew = bVBAEnabled && refVar->IsSet( SBX_DIM_AS_NEW );
 		SbxBaseRef xPrevVarObj;
@@ -661,7 +661,7 @@ void SbiRuntime::StepSET_Impl( SbxVariableRef& refVal, SbxVariableRef& refVar, b
 
 
 		// lhs is a property who's value is currently (Empty e.g. no broadcast yet)
-		// in this case if there is a default prop involved the value of the 
+		// in this case if there is a default prop involved the value of the
 		// default property may infact be void so the type will also be SbxEMPTY
 		// in this case we do not want to call checkUnoStructCopy 'cause that will
 		// cause an error also
@@ -841,7 +841,7 @@ void implCopyDimArray( SbxDimArray* pNewArray, SbxDimArray* pOldArray, short nMa
 	{
 		if( nActualDim < nMaxDimIndex )
 		{
-			implCopyDimArray( pNewArray, pOldArray, nMaxDimIndex, nActualDim + 1, 
+			implCopyDimArray( pNewArray, pOldArray, nMaxDimIndex, nActualDim + 1,
 				pActualIndices, pLowerBounds, pUpperBounds );
 		}
 		else
@@ -1007,7 +1007,7 @@ void lcl_eraseImpl( SbxVariableRef& refVar, bool bVBAEnabled )
 				SbxArray* pArray = PTR_CAST(SbxArray,pElemObj);
 				if ( pArray )
 					pArray->Clear();
-			}				
+			}
 		}
 		else
 		// AB 2.4.1996
@@ -1187,7 +1187,7 @@ void SbiRuntime::StepINPUT()
 			// ErrorBox( NULL, WB_OK, aMsg ).Execute();
             //****** DON'T CHECK IN, TEST ONLY *******
             //****** DON'T CHECK IN, TEST ONLY *******
-            
+
 			pCode = pRestart;
 		}
 		else
@@ -1428,7 +1428,7 @@ void SbiRuntime::StepERROR()
 	SbxVariableRef refCode = PopVar();
 	sal_uInt16 n = refCode->GetUShort();
 	SbError error = StarBASIC::GetSfxFromVBError( n );
-	if ( bVBAEnabled ) 
+	if ( bVBAEnabled )
 		pInst->Error( error );
 	else
 		Error( error );

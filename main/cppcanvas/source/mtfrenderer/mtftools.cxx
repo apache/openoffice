@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -58,7 +58,7 @@ namespace cppcanvas
                               const ::cppcanvas::internal::OutDevState&	outdevState )
         {
             ::canvas::tools::initRenderState( renderState );
-            ::canvas::tools::setRenderStateTransform( renderState, 
+            ::canvas::tools::setRenderStateTransform( renderState,
                                                       outdevState.transform );
             renderState.Clip = outdevState.xClipPoly;
         }
@@ -116,7 +116,7 @@ namespace cppcanvas
 
             // translate according to curr map mode/pref map mode offset
             const ::Point  aEmptyPoint;
-            const ::Point& rTranslatedPoint( 
+            const ::Point& rTranslatedPoint(
                 rVDev.LogicToPixel( aEmptyPoint ));
 
             o_rMatrix.translate(rTranslatedPoint.X(),
@@ -135,22 +135,22 @@ namespace cppcanvas
             const ::Point aEmptyPoint;
 
             const bool bOffsetting( !rOffset.equalZero() );
-            const bool bScaling( pScaling && 
-                                 pScaling->getX() != 1.0 && 
+            const bool bScaling( pScaling &&
+                                 pScaling->getX() != 1.0 &&
                                  pScaling->getY() != 1.0 );
             const bool bRotation( pRotation &&
                                   *pRotation != 0.0 );
 
             if( !bOffsetting && !bScaling && !bRotation )
                 return false; // nothing to do
-            
+
             if( rOutdevState.clip.count() )
             {
                 // general polygon case
 
                 ::basegfx::B2DPolyPolygon aLocalClip( rOutdevState.clip );
                 ::basegfx::B2DHomMatrix	  aTransform;
-                    
+
                 if( bOffsetting )
                     aTransform.translate( -rOffset.getX(),
                                           -rOffset.getY() );
@@ -161,7 +161,7 @@ namespace cppcanvas
                     aTransform.rotate( - *pRotation );
 
                 aLocalClip.transform( aTransform );
-                
+
                 o_rRenderState.Clip = ::basegfx::unotools::xPolyPolygonFromB2DPolyPolygon(
                     rCanvas->getUNOCanvas()->getDevice(),
                     aLocalClip );
@@ -173,20 +173,20 @@ namespace cppcanvas
                 // simple rect case
 
                 const ::Rectangle aLocalClipRect( rOutdevState.clipRect );
-                
+
                 if( bRotation )
                 {
                     // rotation involved - convert to polygon first,
                     // then transform that
-                    ::basegfx::B2DPolygon aLocalClip( 
-                        ::basegfx::tools::createPolygonFromRect( 
-                                ::basegfx::B2DRectangle( 
+                    ::basegfx::B2DPolygon aLocalClip(
+                        ::basegfx::tools::createPolygonFromRect(
+                                ::basegfx::B2DRectangle(
                                     (double)(aLocalClipRect.Left()),
                                     (double)(aLocalClipRect.Top()),
                                     (double)(aLocalClipRect.Right()),
                                     (double)(aLocalClipRect.Bottom()) ) ) );
                     ::basegfx::B2DHomMatrix aTransform;
-                    
+
                     if( bOffsetting )
                         aTransform.translate( -rOffset.getX(),
                                               -rOffset.getY() );
@@ -208,8 +208,8 @@ namespace cppcanvas
                     o_rRenderState.Clip = ::basegfx::unotools::xPolyPolygonFromB2DPolyPolygon(
                         rCanvas->getUNOCanvas()->getDevice(),
                         ::basegfx::B2DPolyPolygon(
-                            ::basegfx::tools::createPolygonFromRect( 
-                                ::basegfx::B2DRectangle( 
+                            ::basegfx::tools::createPolygonFromRect(
+                                ::basegfx::B2DRectangle(
                                     (double)(aLocalClipRect.Left() - rOffset.getX())/pScaling->getX(),
                                     (double)(aLocalClipRect.Top() - rOffset.getY())/pScaling->getY(),
                                     (double)(aLocalClipRect.Right() - rOffset.getX())/pScaling->getX(),
@@ -222,7 +222,7 @@ namespace cppcanvas
                     o_rRenderState.Clip = ::basegfx::unotools::xPolyPolygonFromB2DPolyPolygon(
                         rCanvas->getUNOCanvas()->getDevice(),
                         ::basegfx::B2DPolyPolygon(
-                            ::basegfx::tools::createPolygonFromRect( 
+                            ::basegfx::tools::createPolygonFromRect(
                                 ::basegfx::B2DRectangle( aLocalClipRect.Left() - rOffset.getX(),
                                                          aLocalClipRect.Top() - rOffset.getY(),
                                                          aLocalClipRect.Right() - rOffset.getX(),
@@ -243,11 +243,11 @@ namespace cppcanvas
                          const ::basegfx::B2DVector*						pScaling,
                          const double*                                      pRotation )
         {
-            return modifyClip( o_rRenderState, 
-                               rOutdevState, 
-                               rCanvas, 
-                               ::basegfx::B2DPoint( rOffset.X(), 
-                                                    rOffset.Y() ), 
+            return modifyClip( o_rRenderState,
+                               rOutdevState,
+                               rCanvas,
+                               ::basegfx::B2DPoint( rOffset.X(),
+                                                    rOffset.Y() ),
                                pScaling,
                                pRotation );
         }
@@ -260,7 +260,7 @@ namespace cppcanvas
             if( !rTransform.isIdentity() ||
                 !rTransform.isInvertible() )
                 return false; // nothing to do
-            
+
             ::basegfx::B2DPolyPolygon aLocalClip;
 
             if( rOutdevState.clip.count() )
@@ -272,8 +272,8 @@ namespace cppcanvas
                 const ::Rectangle aLocalClipRect( rOutdevState.clipRect );
 
                 aLocalClip = ::basegfx::B2DPolyPolygon(
-                    ::basegfx::tools::createPolygonFromRect( 
-                        ::basegfx::B2DRectangle( 
+                    ::basegfx::tools::createPolygonFromRect(
+                        ::basegfx::B2DRectangle(
                             aLocalClipRect.Left(),
                             aLocalClipRect.Top(),
                             aLocalClipRect.Right(),
@@ -307,7 +307,7 @@ namespace cppcanvas
             // #i68512# Force metric regeneration with mapmode enabled
             // (prolly OutDev bug)
             rVDev.GetFontMetric();
-                
+
             // will restore map mode below
             const_cast< ::VirtualDevice& >(rVDev).EnableMapMode( sal_False );
 
@@ -341,7 +341,7 @@ namespace cppcanvas
                 const double y( rStartPos.getY() );
 
                 o_rPoly.append(
-                    ::basegfx::tools::createPolygonFromRect( 
+                    ::basegfx::tools::createPolygonFromRect(
                         ::basegfx::B2DRectangle( x + nX1, y + nY1, x + nX2, y + nY2 ) ) );
             }
 
@@ -352,7 +352,7 @@ namespace cppcanvas
                              const double 				nY2 )
             {
                 o_rPoly.append(
-                    ::basegfx::tools::createPolygonFromRect( 
+                    ::basegfx::tools::createPolygonFromRect(
                         ::basegfx::B2DRectangle( nX1, nY1, nX2, nY2 ) ) );
             }
 
@@ -364,7 +364,7 @@ namespace cppcanvas
                                const double 				nDashWidth,
                                const double 				nDashSkip )
             {
-                const sal_Int32 nNumLoops( 
+                const sal_Int32 nNumLoops(
                     static_cast< sal_Int32 >(
                         ::std::max( 1.0,
                                     nLineWidth / nDashSkip ) + .5) );
@@ -507,11 +507,11 @@ namespace cppcanvas
                 case UNDERLINE_WAVE:          // TODO(F3): NYI
                     // FALLTHROUGH intended
                 case UNDERLINE_SINGLE:
-                    appendRect( 
+                    appendRect(
                         aTextLinesPolyPoly,
                         rStartPos,
                         0,
-                        rTextLineInfo.mnUnderlineOffset, 
+                        rTextLineInfo.mnUnderlineOffset,
                         rLineWidth,
                         rTextLineInfo.mnUnderlineOffset + rTextLineInfo.mnLineHeight );
                     break;
@@ -529,11 +529,11 @@ namespace cppcanvas
                 case UNDERLINE_BOLDWAVE:      // TODO(F3): NYI
                     // FALLTHROUGH intended
                 case UNDERLINE_BOLD:
-                    appendRect( 
+                    appendRect(
                         aTextLinesPolyPoly,
                         rStartPos,
                         0,
-                        rTextLineInfo.mnUnderlineOffset, 
+                        rTextLineInfo.mnUnderlineOffset,
                         rLineWidth,
                         rTextLineInfo.mnUnderlineOffset + 2*rTextLineInfo.mnLineHeight );
                     break;
@@ -541,19 +541,19 @@ namespace cppcanvas
                 case UNDERLINE_DOUBLEWAVE:    // TODO(F3): NYI
                     // FALLTHROUGH intended
                 case UNDERLINE_DOUBLE:
-                    appendRect( 
+                    appendRect(
                         aTextLinesPolyPoly,
                         rStartPos,
                         0,
-                        rTextLineInfo.mnUnderlineOffset - rTextLineInfo.mnLineHeight, 
+                        rTextLineInfo.mnUnderlineOffset - rTextLineInfo.mnLineHeight,
                         rLineWidth,
                         rTextLineInfo.mnUnderlineOffset );
 
-                    appendRect( 
+                    appendRect(
                         aTextLinesPolyPoly,
                         rStartPos,
                         0,
-                        rTextLineInfo.mnUnderlineOffset + 2*rTextLineInfo.mnLineHeight, 
+                        rTextLineInfo.mnUnderlineOffset + 2*rTextLineInfo.mnLineHeight,
                         rLineWidth,
                         rTextLineInfo.mnUnderlineOffset + 3*rTextLineInfo.mnLineHeight );
                     break;
@@ -561,37 +561,37 @@ namespace cppcanvas
                 case UNDERLINE_DASHDOTDOT:    // TODO(F3): NYI
                     // FALLTHROUGH intended
                 case UNDERLINE_DOTTED:
-                    appendDashes( 
+                    appendDashes(
                         aTextLinesPolyPoly,
                         rStartPos.getX(),
                         rStartPos.getY() + rTextLineInfo.mnUnderlineOffset,
                         rLineWidth,
                         rTextLineInfo.mnLineHeight,
-                        rTextLineInfo.mnLineHeight, 
+                        rTextLineInfo.mnLineHeight,
                         2*rTextLineInfo.mnLineHeight );
                     break;
 
                 case UNDERLINE_DASHDOT:       // TODO(F3): NYI
                     // FALLTHROUGH intended
                 case UNDERLINE_DASH:
-                    appendDashes( 
+                    appendDashes(
                         aTextLinesPolyPoly,
                         rStartPos.getX(),
                         rStartPos.getY() + rTextLineInfo.mnUnderlineOffset,
                         rLineWidth,
                         rTextLineInfo.mnLineHeight,
-                        3*rTextLineInfo.mnLineHeight, 
+                        3*rTextLineInfo.mnLineHeight,
                         6*rTextLineInfo.mnLineHeight );
                     break;
 
                 case UNDERLINE_LONGDASH:
-                    appendDashes( 
+                    appendDashes(
                         aTextLinesPolyPoly,
                         rStartPos.getX(),
                         rStartPos.getY() + rTextLineInfo.mnUnderlineOffset,
                         rLineWidth,
                         rTextLineInfo.mnLineHeight,
-                        6*rTextLineInfo.mnLineHeight, 
+                        6*rTextLineInfo.mnLineHeight,
                         12*rTextLineInfo.mnLineHeight );
                     break;
 
@@ -613,39 +613,39 @@ namespace cppcanvas
                     break;
 
                 case STRIKEOUT_SINGLE:
-                    appendRect( 
+                    appendRect(
                         aTextLinesPolyPoly,
                         rStartPos,
                         0,
-                        rTextLineInfo.mnStrikeoutOffset, 
+                        rTextLineInfo.mnStrikeoutOffset,
                         rLineWidth,
                         rTextLineInfo.mnStrikeoutOffset + rTextLineInfo.mnLineHeight );
                     break;
 
                 case STRIKEOUT_BOLD:
-                    appendRect( 
+                    appendRect(
                         aTextLinesPolyPoly,
                         rStartPos,
                         0,
-                        rTextLineInfo.mnStrikeoutOffset, 
+                        rTextLineInfo.mnStrikeoutOffset,
                         rLineWidth,
                         rTextLineInfo.mnStrikeoutOffset + 2*rTextLineInfo.mnLineHeight );
                     break;
 
                 case STRIKEOUT_DOUBLE:
-                    appendRect( 
+                    appendRect(
                         aTextLinesPolyPoly,
                         rStartPos,
                         0,
-                        rTextLineInfo.mnStrikeoutOffset - rTextLineInfo.mnLineHeight, 
+                        rTextLineInfo.mnStrikeoutOffset - rTextLineInfo.mnLineHeight,
                         rLineWidth,
                         rTextLineInfo.mnStrikeoutOffset );
 
-                    appendRect( 
+                    appendRect(
                         aTextLinesPolyPoly,
                         rStartPos,
                         0,
-                        rTextLineInfo.mnStrikeoutOffset + 2*rTextLineInfo.mnLineHeight, 
+                        rTextLineInfo.mnStrikeoutOffset + 2*rTextLineInfo.mnLineHeight,
                         rLineWidth,
                         rTextLineInfo.mnStrikeoutOffset + 3*rTextLineInfo.mnLineHeight );
                     break;
@@ -666,10 +666,10 @@ namespace cppcanvas
             ::canvas::tools::mergeViewAndRenderTransform( aTransform,
                                                           viewState,
                                                           renderState );
- 
+
             ::basegfx::B2DRange aTransformedBounds;
             return ::canvas::tools::calcTransformedRectBounds( aTransformedBounds,
-                                                               rBounds, 
+                                                               rBounds,
                                                                aTransform );
         }
 
@@ -679,7 +679,7 @@ namespace cppcanvas
                                                               const double&			rLineWidth,
                                                               const TextLineInfo&	rTextLineInfo )
         {
-            return createTextLinesPolyPolygon( 
+            return createTextLinesPolyPolygon(
                 ::basegfx::B2DPoint( rStartOffset,
                                      0.0 ),
                 rLineWidth,

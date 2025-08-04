@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -38,8 +38,8 @@ SvpSalBitmap::~SvpSalBitmap()
 {
 }
 
-bool SvpSalBitmap::Create( const Size& rSize, 
-                           sal_uInt16 nBitCount, 
+bool SvpSalBitmap::Create( const Size& rSize,
+                           sal_uInt16 nBitCount,
                            const BitmapPalette& rPalette )
 {
     sal_uInt32 nFormat = SVP_DEFAULT_BITMAP_FORMAT;
@@ -125,7 +125,7 @@ Size SvpSalBitmap::GetSize() const
         B2IVector aVec( m_aBitmap->getSize() );
         aSize = Size( aVec.getX(), aVec.getY() );
     }
-    
+
     return aSize;
 }
 
@@ -136,7 +136,7 @@ sal_uInt16 SvpSalBitmap::GetBitCount() const
         nDepth = getBitCountFromScanlineFormat( m_aBitmap->getScanlineFormat() );
     return nDepth;
 }
-						
+
 BitmapBuffer* SvpSalBitmap::AcquireBuffer( bool )
 {
     BitmapBuffer* pBuf = NULL;
@@ -289,7 +289,7 @@ void SvpSalBitmap::ReleaseBuffer( BitmapBuffer* pBuffer, bool bReadOnly )
             sal_uInt32 nEntries = 1U << nBitCount;
 
             boost::shared_ptr< std::vector<basebmp::Color> > pPal(
-                new std::vector<basebmp::Color>( nEntries, 
+                new std::vector<basebmp::Color>( nEntries,
                                                  basebmp::Color(COL_WHITE)));
             const sal_uInt32 nColors = std::min(
                 (sal_uInt32)pBuffer->maPalette.GetEntryCount(),
@@ -299,9 +299,9 @@ void SvpSalBitmap::ReleaseBuffer( BitmapBuffer* pBuffer, bool bReadOnly )
                 const BitmapColor& rCol = pBuffer->maPalette[i];
                 (*pPal)[i] = basebmp::Color( rCol.GetRed(), rCol.GetGreen(), rCol.GetBlue() );
             }
-            
-            m_aBitmap = basebmp::createBitmapDevice( m_aBitmap->getSize(), 
-                                                     m_aBitmap->isTopDown(), 
+
+            m_aBitmap = basebmp::createBitmapDevice( m_aBitmap->getSize(),
+                                                     m_aBitmap->isTopDown(),
                                                      m_aBitmap->getScanlineFormat(),
                                                      m_aBitmap->getBuffer(),
                                                      pPal );

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -491,7 +491,7 @@ sal_Unicode SAL_CALL SmGraphicAccessible::getCharacter( sal_Int32 nIndex )
 }
 
 Sequence< beans::PropertyValue > SAL_CALL SmGraphicAccessible::getCharacterAttributes(
-        sal_Int32 nIndex, 
+        sal_Int32 nIndex,
         const uno::Sequence< ::rtl::OUString > & /*rRequestedAttributes*/ )
     throw (IndexOutOfBoundsException, RuntimeException)
 {
@@ -1100,7 +1100,7 @@ void SmTextForwarder::RemoveAttribs( const ESelection& rSelection, sal_Bool bRem
     EditEngine *pEditEngine = rEditAcc.GetEditEngine();
     if (pEditEngine)
         pEditEngine->RemoveAttribs( rSelection, bRemoveParaAttribs, nWhich );
-}    
+}
 
 void SmTextForwarder::GetPortions( sal_uInt32 nPara, SvUShorts& rList ) const
 {
@@ -1338,7 +1338,7 @@ Rectangle SmTextForwarder::GetCharBounds( sal_uInt32 nPara, sal_uInt16 nIndex ) 
 {
 	Rectangle aRect(0,0,0,0);
 	EditEngine *pEditEngine = rEditAcc.GetEditEngine();
-    
+
 	if (pEditEngine)
 	{
 		// #108900# Handle virtual position one-past-the end of the string
@@ -1362,7 +1362,7 @@ Rectangle SmTextForwarder::GetParaBounds( sal_uInt32 nPara ) const
 {
 	Rectangle aRect(0,0,0,0);
 	EditEngine *pEditEngine = rEditAcc.GetEditEngine();
-	
+
 	if (pEditEngine)
 	{
 		const Point aPnt = pEditEngine->GetDocPosTopLeft( nPara );
@@ -1424,7 +1424,7 @@ sal_Bool SmTextForwarder::GetWordIndices( sal_uInt32 nPara, sal_uInt16 nIndex, s
 sal_Bool SmTextForwarder::GetAttributeRun( sal_uInt16& nStartIndex, sal_uInt16& nEndIndex, sal_uInt32 nPara, sal_uInt16 nIndex, sal_Bool bInCell ) const
 {
 	EditEngine *pEditEngine = rEditAcc.GetEditEngine();
-    return pEditEngine ? 
+    return pEditEngine ?
 		SvxEditSourceHelper::GetAttributeRun( nStartIndex, nEndIndex, *pEditEngine, nPara, nIndex, bInCell )
 		: sal_False;
 }
@@ -1440,18 +1440,18 @@ sal_uInt16 SmTextForwarder::GetLineLen( sal_uInt32 nPara, sal_uInt16 nLine ) con
 	EditEngine *pEditEngine = rEditAcc.GetEditEngine();
 	return pEditEngine ? pEditEngine->GetLineLen(nPara, nLine) : 0;
 }
-    
+
 void SmTextForwarder::GetLineBoundaries( /*out*/sal_uInt16 &rStart, /*out*/sal_uInt16 &rEnd, sal_uInt32 nPara, sal_uInt16 nLine ) const
 {
     EditEngine *pEditEngine = rEditAcc.GetEditEngine();
     pEditEngine->GetLineBoundaries(rStart, rEnd, nPara, nLine);
-}    
+}
 
 sal_uInt16 SmTextForwarder::GetLineNumberAtIndex( sal_uInt32 nPara, sal_uInt16 nIndex ) const
 {
     EditEngine *pEditEngine = rEditAcc.GetEditEngine();
     return pEditEngine ? pEditEngine->GetLineNumberAtIndex(nPara, nIndex) : 0;
-}    
+}
 
 sal_Bool SmTextForwarder::QuickFormatDoc( sal_Bool /*bFull*/ )
 {
@@ -1534,7 +1534,7 @@ xub_StrLen SmTextForwarder::AppendTextPortion( sal_uInt32 nPara, const String &r
         // append text
         ESelection aSel( nPara, pEditEngine->GetTextLen( nPara ) );
         pEditEngine->QuickInsertText( rText, aSel );
-        
+
         // set attributes for new appended text
         nRes = aSel.nEndPos = pEditEngine->GetTextLen( nPara );
         pEditEngine->QuickSetAttribs( rSet, aSel );
@@ -1544,7 +1544,7 @@ xub_StrLen SmTextForwarder::AppendTextPortion( sal_uInt32 nPara, const String &r
 
 void SmTextForwarder::CopyText(const SvxTextForwarder& rSource)
 {
-    
+
     const SmTextForwarder* pSourceForwarder = dynamic_cast< const SmTextForwarder* >( &rSource );
     if( !pSourceForwarder )
         return;
@@ -1556,7 +1556,7 @@ void SmTextForwarder::CopyText(const SvxTextForwarder& rSource)
         pEditEngine->SetText( *pNewTextObject );
         delete pNewTextObject;
     }
-}    
+}
 
 //------------------------------------------------------------------------
 

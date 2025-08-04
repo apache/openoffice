@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -71,7 +71,7 @@ static __FAR_DATA SvXMLTokenMapEntry aColAttrTokenMap[] =
 	{ XML_NAMESPACE_STYLE,	XML_REL_WIDTH,		XML_TOK_COLUMN_WIDTH },
 	{ XML_NAMESPACE_FO, 	XML_START_INDENT,	XML_TOK_COLUMN_MARGIN_LEFT },
 	{ XML_NAMESPACE_FO,		XML_END_INDENT,		XML_TOK_COLUMN_MARGIN_RIGHT },
-	XML_TOKEN_MAP_END 
+	XML_TOKEN_MAP_END
 };
 
 static __FAR_DATA SvXMLTokenMapEntry aColSepAttrTokenMap[] =
@@ -80,7 +80,7 @@ static __FAR_DATA SvXMLTokenMapEntry aColSepAttrTokenMap[] =
 	{ XML_NAMESPACE_STYLE, 	XML_COLOR,			XML_TOK_COLUMN_SEP_COLOR },
 	{ XML_NAMESPACE_STYLE, 	XML_HEIGHT,		    XML_TOK_COLUMN_SEP_HEIGHT },
 	{ XML_NAMESPACE_STYLE, 	XML_VERTICAL_ALIGN, XML_TOK_COLUMN_SEP_ALIGN },
-	XML_TOKEN_MAP_END 
+	XML_TOKEN_MAP_END
 };
 
 SvXMLEnumMapEntry __READONLY_DATA pXML_Sep_Align_Enum[] =
@@ -144,20 +144,20 @@ XMLTextColumnContext_Impl::XMLTextColumnContext_Impl(
 					OUString sTmp( rValue.copy( 0, nPos ) );
 					if( GetImport().GetMM100UnitConverter().
 										convertNumber( nVal, sTmp, 0, USHRT_MAX ) )
-					aColumn.Width = nVal;		
+					aColumn.Width = nVal;
 				}
 			}
 			break;
 		case XML_TOK_COLUMN_MARGIN_LEFT:
 			if( GetImport().GetMM100UnitConverter().
 										convertMeasure( nVal, rValue ) )
-				aColumn.LeftMargin = nVal;		
+				aColumn.LeftMargin = nVal;
 			break;
 		case XML_TOK_COLUMN_MARGIN_RIGHT:
 
 			if( GetImport().GetMM100UnitConverter().
 										convertMeasure( nVal, rValue ) )
-				aColumn.RightMargin = nVal;		
+				aColumn.RightMargin = nVal;
 			break;
 		default:
 			break;
@@ -177,7 +177,7 @@ class XMLTextColumnSepContext_Impl: public SvXMLImportContext
 	sal_Int32 nColor;
 	sal_Int8 nHeight;
 	VerticalAlignment eVertAlign;
-	
+
 
 public:
 	TYPEINFO();
@@ -227,20 +227,20 @@ XMLTextColumnSepContext_Impl::XMLTextColumnSepContext_Impl(
 		case XML_TOK_COLUMN_SEP_WIDTH:
 			if( GetImport().GetMM100UnitConverter().
 								convertMeasure( nVal, rValue ) )
-				nWidth = nVal;		
+				nWidth = nVal;
 			break;
 		case XML_TOK_COLUMN_SEP_HEIGHT:
 			if( GetImport().GetMM100UnitConverter().
 										convertPercent( nVal, rValue ) &&
 			 	nVal >=1 && nVal <= 100 )
-				nHeight = (sal_Int8)nVal;		
+				nHeight = (sal_Int8)nVal;
 			break;
 		case XML_TOK_COLUMN_SEP_COLOR:
 			{
 				Color aColor;
 				if( GetImport().GetMM100UnitConverter().
 											convertColor( aColor, rValue ) )
-					nColor = (sal_Int32)aColor.GetColor();		
+					nColor = (sal_Int32)aColor.GetColor();
 			}
 			break;
 		case XML_TOK_COLUMN_SEP_ALIGN:
@@ -358,7 +358,7 @@ SvXMLImportContext *XMLTextColumnsContext::CreateChildContext(
 
 		pColumns->Insert( pColumn, pColumns->Count() );
 		pColumn->AddRef();
-		
+
 		pContext = pColumn;
 	}
 	else if( XML_NAMESPACE_STYLE == nPrefix &&
@@ -368,21 +368,21 @@ SvXMLImportContext *XMLTextColumnsContext::CreateChildContext(
 			new XMLTextColumnSepContext_Impl( GetImport(), nPrefix, rLocalName,
 										   xAttrList, *pColumnSepAttrTokenMap );
 		pColumnSep->AddRef();
-		
+
 		pContext = pColumnSep;
 	}
 	else
 	{
 		pContext = new SvXMLImportContext( GetImport(), nPrefix, rLocalName );
 	}
-	
+
 	return pContext;
 }
 
 void XMLTextColumnsContext::EndElement( )
 {
 	Reference<XMultiServiceFactory> xFactory(GetImport().GetModel(),UNO_QUERY);
-	if( !xFactory.is() )	
+	if( !xFactory.is() )
 		return;
 
 	Reference<XInterface> xIfc = xFactory->createInstance(
@@ -396,7 +396,7 @@ void XMLTextColumnsContext::EndElement( )
 		// zero columns = no columns -> 1 column
 		xColumns->setColumnCount( 1 );
 	}
-	else if( !bAutomatic && pColumns && 
+	else if( !bAutomatic && pColumns &&
              pColumns->Count() == (sal_uInt16)nCount )
 	{
         // if we have column descriptions, one per column, and we don't use
@@ -490,7 +490,7 @@ void XMLTextColumnsContext::EndElement( )
             xPropSet->setPropertyValue( sAutomaticDistance, aAny );
         }
 	}
-	
+
 	aProp.maValue <<= xColumns;
 
 	SetInsert( sal_True );

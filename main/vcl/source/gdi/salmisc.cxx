@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -80,7 +80,7 @@ static long ImplIndexFromColor( const BitmapColor& rCol )
 }
 
 
-#define COLOR_TO_INDEX( _def_rCol ) 
+#define COLOR_TO_INDEX( _def_rCol )
 
 // ------------------------
 // - conversion functions -
@@ -142,7 +142,7 @@ static void	ImplPALToTC( const BitmapBuffer& rSrcBuffer, BitmapBuffer& rDstBuffe
 			for( long nX = 0L; nX < nWidth; )
 			{
 				nMapX = pMapX[ nX ];
-				pFncSetPixel( pDstScan, nX++, 
+				pFncSetPixel( pDstScan, nX++,
 							  pSrcScan[ nMapX >> 3 ] & ( 1 << ( 7 - ( nMapX & 7 ) ) ) ? aCol1 : aCol0,
 							  rDstMask );
 			}
@@ -161,7 +161,7 @@ static void	ImplPALToTC( const BitmapBuffer& rSrcBuffer, BitmapBuffer& rDstBuffe
 			for( long nX = 0L; nX < nWidth; )
 			{
 				nMapX = pMapX[ nX ];
-				pFncSetPixel( pDstScan, nX++, 
+				pFncSetPixel( pDstScan, nX++,
 							  pColBuf[ ( pSrcScan[ nMapX >> 1 ] >> ( nMapX & 1 ? 0 : 4 ) ) & 0x0f ],
 							  rDstMask );
 			}
@@ -288,8 +288,8 @@ static void	ImplTCToPAL( const BitmapBuffer& rSrcBuffer, BitmapBuffer& rDstBuffe
 // - StretchAndConvert -
 // ---------------------
 
-BitmapBuffer* StretchAndConvert( 
-    const BitmapBuffer& rSrcBuffer, const SalTwoRect& rTwoRect, 
+BitmapBuffer* StretchAndConvert(
+    const BitmapBuffer& rSrcBuffer, const SalTwoRect& rTwoRect,
 	sal_uLong nDstBitmapFormat, const BitmapPalette* pDstPal, const ColorMask* pDstMask )
 {
     FncGetPixel		pFncGetPixel;
@@ -398,7 +398,7 @@ BitmapBuffer* StretchAndConvert(
     bool bFastConvert = ImplFastBitmapConversion( *pDstBuffer, rSrcBuffer, rTwoRect );
     if( bFastConvert )
         return pDstBuffer;
-    
+
     const long      nSrcX = rTwoRect.mnSrcX, nSrcY = rTwoRect.mnSrcY;
     const long      nSrcDX = rTwoRect.mnSrcWidth, nSrcDY = rTwoRect.mnSrcHeight;
     const long      nDstDX = rTwoRect.mnDestWidth, nDstDY = rTwoRect.mnDestHeight;
@@ -427,7 +427,7 @@ BitmapBuffer* StretchAndConvert(
         delete pDstBuffer;
         return NULL;
     }
-    
+
 	// horizontal mapping table
 	if( (nDstDX != nSrcDX) && (nDstDX != 0) )
 	{
@@ -484,7 +484,7 @@ BitmapBuffer* StretchAndConvert(
 	// do buffer scaling and conversion
 	if( rSrcBuffer.mnBitCount <= 8 && pDstBuffer->mnBitCount <= 8 )
 	{
-		ImplPALToPAL( rSrcBuffer, *pDstBuffer, pFncGetPixel, pFncSetPixel, 
+		ImplPALToPAL( rSrcBuffer, *pDstBuffer, pFncGetPixel, pFncSetPixel,
 					  pSrcScan, pDstScan, pMapX, pMapY );
 	}
 	else if( rSrcBuffer.mnBitCount <= 8 && pDstBuffer->mnBitCount > 8 )

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -69,12 +69,12 @@ X11SalObject* X11SalObject::CreateObject( SalFrame* pParent, SystemWindowData* p
 	}
 
     pObject->mpParent = pParent;
-    
+
 	SalDisplay* pSalDisp		= GetX11SalData()->GetDisplay();
     const SystemEnvData* pEnv	= pParent->GetSystemData();
     Display* pDisp				= pSalDisp->GetDisplay();
 	XLIB_Window aObjectParent	= (XLIB_Window)pEnv->aWindow;
-    
+
     // find out on which screen that window is
     XWindowAttributes aParentAttr;
     XGetWindowAttributes( pDisp, aObjectParent, &aParentAttr );
@@ -132,7 +132,7 @@ X11SalObject* X11SalObject::CreateObject( SalFrame* pParent, SystemWindowData* p
         pSalDisp->GetXLib()->PushXErrorLevel( true );
 
         // create colormap for visual - there might not be one
-        pObject->maColormap = aAttribs.colormap = XCreateColormap( 
+        pObject->maColormap = aAttribs.colormap = XCreateColormap(
             pDisp,
             pSalDisp->GetRootWindow( nScreen ),
             pVisual,
@@ -274,7 +274,7 @@ X11SalObject::~X11SalObject()
     rObjects.remove( this );
     SalDisplay* pSalDisp = GetX11SalData()->GetDisplay();
     pSalDisp->GetXLib()->PushXErrorLevel( true );
-	if ( maSecondary ) 
+	if ( maSecondary )
 		XDestroyWindow( (Display*)maSystemChildData.pDisplay, maSecondary );
 	if ( maPrimary )
 		XDestroyWindow( (Display*)maSystemChildData.pDisplay, maPrimary );
@@ -359,7 +359,7 @@ X11SalObject::EndSetClipRegion()
 	}
 
 	XLIB_Window aShapeWindow = maPrimary;
-	
+
 	XShapeCombineRectangles ( (Display*)maSystemChildData.pDisplay,
 							  aShapeWindow,
 							  dest_kind,

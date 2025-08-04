@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -110,10 +110,10 @@ SvxEditEngineSourceImpl::~SvxEditEngineSourceImpl()
 
 //------------------------------------------------------------------------
 
-void SAL_CALL SvxEditEngineSourceImpl::acquire() 
+void SAL_CALL SvxEditEngineSourceImpl::acquire()
 {
 	osl_incrementInterlockedCount( &maRefCount );
-}	
+}
 
 //------------------------------------------------------------------------
 
@@ -121,7 +121,7 @@ void SAL_CALL SvxEditEngineSourceImpl::release()
 {
 	if( ! osl_decrementInterlockedCount( &maRefCount ) )
 		delete this;
-}	
+}
 
 //------------------------------------------------------------------------
 
@@ -354,7 +354,7 @@ class SvxXMLTextExportComponent : public SvXMLExport
 {
 public:
 	// #110680#
-	SvxXMLTextExportComponent( 
+	SvxXMLTextExportComponent(
 		const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > xServiceFactory,
 		EditEngine* pEditEngine,
 		const ESelection& rSel,
@@ -377,7 +377,7 @@ private:
 ///////////////////////////////////////////////////////////////////////
 
 // #110680#
-SvxXMLTextExportComponent::SvxXMLTextExportComponent( 
+SvxXMLTextExportComponent::SvxXMLTextExportComponent(
 	const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > xServiceFactory,
 	EditEngine* pEditEngine,
 	const ESelection& rSel,
@@ -419,10 +419,10 @@ void SvxWriteXML( EditEngine& rEditEngine, SvStream& rStream, const ESelection& 
 	{
 		do
 		{
-			// create service factory	
+			// create service factory
 
 			uno::Reference< lang::XMultiServiceFactory> xServiceFactory( ::comphelper::getProcessServiceFactory() );
-			
+
 			if( !xServiceFactory.is() )
 			{
 				DBG_ERROR( "got no service manager" );
@@ -432,7 +432,7 @@ void SvxWriteXML( EditEngine& rEditEngine, SvStream& rStream, const ESelection& 
 			// create document handler
 
 			uno::Reference< uno::XInterface > xWriter( xServiceFactory->createInstance( OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.xml.sax.Writer" ) ) ) );
-			
+
 			if( !xWriter.is() )
 			{
 				DBG_ERROR( "com.sun.star.xml.sax.Writer service missing" );

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -179,7 +179,7 @@ sal_uLong SwXMLTextBlocks::Delete( sal_uInt16 n )
 {
 	String aPckName (aNames[ n ]->aPackageName);
     uno::Reference < container::XNameAccess > xAccess( xBlkRoot, uno::UNO_QUERY );
-    if ( xAccess.is() && 
+    if ( xAccess.is() &&
             xAccess->hasByName( aPckName ) && xBlkRoot->isStreamElement( aPckName ) )
 	{
         try
@@ -370,7 +370,7 @@ sal_uLong SwXMLTextBlocks::PutBlock( SwPaM& , const String& )
     sal_Bool bHasChildren = pDocSh && pDocSh->GetEmbeddedObjectContainer().HasEmbeddedObjects();
     if( !nRes && bHasChildren )
 	{
-		// we have to write to the temporary storage first, since the used below functions are optimized 
+		// we have to write to the temporary storage first, since the used below functions are optimized
 		// TODO/LATER: it is only a temporary solution, that should be changed soon, the used methods should be
 		// called without optimization
 
@@ -381,7 +381,7 @@ sal_uLong SwXMLTextBlocks::PutBlock( SwPaM& , const String& )
             SfxMedium* pTmpMedium = NULL;
 		    try
 		    {
-		        uno::Reference< embed::XStorage > xTempStorage = 
+		        uno::Reference< embed::XStorage > xTempStorage =
 				    ::comphelper::OStorageHelper::GetTemporaryStorage();
 
 			    xRoot->copyToStorage( xTempStorage );

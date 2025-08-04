@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -54,7 +54,7 @@ uno::Reference< uno::XInterface > SAL_CALL GraphicRendererVCL_CreateInstance( co
 	return SAL_STATIC_CAST( ::cppu::OWeakObject*, new GraphicRendererVCL );
 }
 
-	
+
 GraphicRendererVCL::GraphicRendererVCL() :
 	::comphelper::PropertySetHelper( createPropertySetInfo() ),
 	mpOutDev( NULL )
@@ -70,7 +70,7 @@ GraphicRendererVCL::~GraphicRendererVCL()
 
 // ------------------------------------------------------------------------------
 
-::rtl::OUString GraphicRendererVCL::getImplementationName_Static() 
+::rtl::OUString GraphicRendererVCL::getImplementationName_Static()
 	throw()
 {
 	return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.comp.graphic.GraphicRendererVCL" ) );
@@ -78,19 +78,19 @@ GraphicRendererVCL::~GraphicRendererVCL()
 
 // ------------------------------------------------------------------------------
 
-uno::Sequence< ::rtl::OUString > GraphicRendererVCL::getSupportedServiceNames_Static() 
+uno::Sequence< ::rtl::OUString > GraphicRendererVCL::getSupportedServiceNames_Static()
 	throw(	)
 {
 	uno::Sequence< ::rtl::OUString > aSeq( 1 );
-	
+
 	aSeq.getArray()[ 0 ] = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.graphic.GraphicRendererVCL" ) );
-	
+
 	return aSeq;
 }
 
 // ------------------------------------------------------------------------------
 
-uno::Any SAL_CALL GraphicRendererVCL::queryAggregation( const uno::Type & rType ) 
+uno::Any SAL_CALL GraphicRendererVCL::queryAggregation( const uno::Type & rType )
 	throw( uno::RuntimeException )
 {
 	uno::Any aAny;
@@ -115,7 +115,7 @@ uno::Any SAL_CALL GraphicRendererVCL::queryAggregation( const uno::Type & rType 
 
 // ------------------------------------------------------------------------------
 
-uno::Any SAL_CALL GraphicRendererVCL::queryInterface( const uno::Type & rType ) 
+uno::Any SAL_CALL GraphicRendererVCL::queryInterface( const uno::Type & rType )
 	throw( uno::RuntimeException )
 {
 	return OWeakAggObject::queryInterface( rType );
@@ -123,7 +123,7 @@ uno::Any SAL_CALL GraphicRendererVCL::queryInterface( const uno::Type & rType )
 
 // ------------------------------------------------------------------------------
 
-void SAL_CALL GraphicRendererVCL::acquire() 
+void SAL_CALL GraphicRendererVCL::acquire()
 	throw()
 {
 	OWeakAggObject::acquire();
@@ -139,7 +139,7 @@ void SAL_CALL GraphicRendererVCL::release()
 
 // ------------------------------------------------------------------------------
 
-::rtl::OUString SAL_CALL GraphicRendererVCL::getImplementationName() 
+::rtl::OUString SAL_CALL GraphicRendererVCL::getImplementationName()
 	throw( uno::RuntimeException )
 {
 	return getImplementationName_Static();
@@ -186,7 +186,7 @@ uno::Sequence< uno::Type > SAL_CALL GraphicRendererVCL::getTypes()
 
 	return aTypes;
 }
-   
+
 // ------------------------------------------------------------------------------
 
 uno::Sequence< sal_Int8 > SAL_CALL GraphicRendererVCL::getImplementationId()
@@ -194,13 +194,13 @@ uno::Sequence< sal_Int8 > SAL_CALL GraphicRendererVCL::getImplementationId()
 {
 	vos::OGuard 						aGuard( Application::GetSolarMutex() );
 	static uno::Sequence< sal_Int8 >	aId;
-	
+
 	if( aId.getLength() == 0 )
 	{
 		aId.realloc( 16 );
 		rtl_createUuid( reinterpret_cast< sal_uInt8* >( aId.getArray() ), 0, sal_True );
 	}
-	
+
 	return aId;
 }
 
@@ -216,7 +216,7 @@ uno::Sequence< sal_Int8 > SAL_CALL GraphicRendererVCL::getImplementationId()
 		{ MAP_CHAR_LEN( "Device" ), UNOGRAPHIC_DEVICE, &::getCppuType( (const uno::Any*)(0)), 0, 0 },
 		{ MAP_CHAR_LEN( "DestinationRect" ), UNOGRAPHIC_DESTINATIONRECT, &::getCppuType( (const awt::Rectangle*)(0)), 0, 0 },
 		{ MAP_CHAR_LEN( "RenderData" ), UNOGRAPHIC_RENDERDATA,	&::getCppuType( (const uno::Any*)(0)), 0, 0 },
-		
+
 		{ 0,0,0,0,0,0 }
 	};
 
@@ -229,8 +229,8 @@ uno::Sequence< sal_Int8 > SAL_CALL GraphicRendererVCL::getImplementationId()
 // ------------------------------------------------------------------------------
 
 void GraphicRendererVCL::_setPropertyValues( const comphelper::PropertyMapEntry** ppEntries, const uno::Any* pValues )
-	throw( beans::UnknownPropertyException, 
-		   beans::PropertyVetoException, 
+	throw( beans::UnknownPropertyException,
+		   beans::PropertyVetoException,
 		   lang::IllegalArgumentException,
 	   	   lang::WrappedTargetException )
 {
@@ -242,8 +242,8 @@ void GraphicRendererVCL::_setPropertyValues( const comphelper::PropertyMapEntry*
 		{
 			case( UNOGRAPHIC_DEVICE ):
 			{
-				uno::Reference< awt::XDevice > xDevice; 
-			
+				uno::Reference< awt::XDevice > xDevice;
+
 				if( ( *pValues >>= xDevice ) && xDevice.is() )
 				{
 					mxDevice = xDevice;
@@ -260,27 +260,27 @@ void GraphicRendererVCL::_setPropertyValues( const comphelper::PropertyMapEntry*
 			case( UNOGRAPHIC_DESTINATIONRECT ):
 			{
 				awt::Rectangle aAWTRect;
-			
+
 				if( *pValues >>= aAWTRect )
 				{
-					maDestRect = Rectangle( Point( aAWTRect.X, aAWTRect.Y ), 
+					maDestRect = Rectangle( Point( aAWTRect.X, aAWTRect.Y ),
 											Size( aAWTRect.Width, aAWTRect.Height ) );
 				}
 			}
 			break;
-			
+
 			case( UNOGRAPHIC_RENDERDATA ):
 			{
 				*pValues >>= maRenderData;
 			}
 			break;
 		}
-		
+
 		++ppEntries;
 		++pValues;
 	}
 }
-	
+
 // ------------------------------------------------------------------------------
 
 void GraphicRendererVCL::_getPropertyValues( const comphelper::PropertyMapEntry** ppEntries, uno::Any* pValues )
@@ -301,27 +301,27 @@ void GraphicRendererVCL::_getPropertyValues( const comphelper::PropertyMapEntry*
 
 			case( UNOGRAPHIC_DESTINATIONRECT ):
 			{
-				const awt::Rectangle aAWTRect( maDestRect.Left(), maDestRect.Top(), 
+				const awt::Rectangle aAWTRect( maDestRect.Left(), maDestRect.Top(),
 											   maDestRect.GetWidth(), maDestRect.GetHeight() );
-				
+
 				*pValues <<= aAWTRect;
 			}
 			break;
-			
+
 			case( UNOGRAPHIC_RENDERDATA ):
 			{
 				*pValues <<= maRenderData;
 			}
 			break;
 		}
-		
+
 		++ppEntries;
 		++pValues;
 	}
 }
 
 // ------------------------------------------------------------------------------
-	
+
 void SAL_CALL GraphicRendererVCL::render( const uno::Reference< graphic::XGraphic >& rxGraphic )
 	throw (uno::RuntimeException)
 {
@@ -329,7 +329,7 @@ void SAL_CALL GraphicRendererVCL::render( const uno::Reference< graphic::XGraphi
 	{
 		const uno::Reference< XInterface > 	xIFace( rxGraphic, uno::UNO_QUERY );
 		const ::Graphic* 					pGraphic = ::unographic::Graphic::getImplementation( xIFace );
-		
+
 		if( pGraphic )
 		{
 			GraphicObject aGraphicObject( *pGraphic );

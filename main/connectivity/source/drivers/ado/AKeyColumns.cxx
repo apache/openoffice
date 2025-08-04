@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -38,7 +38,7 @@ using namespace connectivity::adabas;
 sdbcx::ObjectType OKeyColumns::createObject(const ::rtl::OUString& _rName)
 {
 
-	Reference< starsdbc::XResultSet > 
+	Reference< starsdbc::XResultSet >
 		xResult = m_pTable->getConnection()->getMetaData()->getImportedKeys(Any(),
 					m_pTable->getSchema(),m_pTable->getName());
 
@@ -46,7 +46,7 @@ sdbcx::ObjectType OKeyColumns::createObject(const ::rtl::OUString& _rName)
 	if(xResult.is())
 	{
 		Reference< starsdbc::XRow > xRow(xResult,UNO_QUERY);
-		while(xResult->next()) 
+		while(xResult->next())
 		{
 			if(xRow->getString(8) == _rName)
 			{
@@ -55,7 +55,7 @@ sdbcx::ObjectType OKeyColumns::createObject(const ::rtl::OUString& _rName)
 			}
 		}
 	}
-	
+
 	 xResult = m_pTable->getConnection()->getMetaData()->getColumns(Any(),
 		m_pTable->getSchema(),m_pTable->getName(),_rName);
 
@@ -63,7 +63,7 @@ sdbcx::ObjectType OKeyColumns::createObject(const ::rtl::OUString& _rName)
 	if(xResult.is())
 	{
 		Reference< starsdbc::XRow > xRow(xResult,UNO_QUERY);
-		if(xResult->next()) 
+		if(xResult->next())
 		{
 			if(xRow->getString(4) == _rName)
 			{

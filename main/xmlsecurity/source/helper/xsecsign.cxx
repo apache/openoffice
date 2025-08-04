@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,14 +51,14 @@ rtl::OUString XSecController::createId()
 {
 	cssu::Sequence< sal_Int8 > aSeq( 16 );
 	rtl_createUuid ((sal_uInt8 *)aSeq.getArray(), 0, sal_True);
-	
+
 	char str[68]="ID_";
 	int length = 3;
 	for (int i=0; i<16; ++i)
 	{
 		length += sprintf(str+length, "%04x", (unsigned char)aSeq[i]);
 	}
-	
+
 	return rtl::OUString::createFromAscii(str);
 }
 
@@ -67,11 +67,11 @@ cssu::Reference< cssxc::sax::XReferenceResolvedListener > XSecController::prepar
 {
 	sal_Int32 nSecurityId = internalSignatureInfor.signatureInfor.nSecurityId;
 	SignatureReferenceInformations& vReferenceInfors = internalSignatureInfor.signatureInfor.vSignatureReferenceInfors;
-	
+
 	sal_Int32 nIdOfSignatureElementCollector;
 	cssu::Reference< cssxc::sax::XReferenceResolvedListener > xReferenceResolvedListener;
 
-	nIdOfSignatureElementCollector = 
+	nIdOfSignatureElementCollector =
 		m_xSAXEventKeeper->addSecurityElementCollector( cssxc::sax::ElementMarkPriority_AFTERMODIFY, sal_True );
 
 	m_xSAXEventKeeper->setSecurityId(nIdOfSignatureElementCollector, nSecurityId);
@@ -84,14 +84,14 @@ cssu::Reference< cssxc::sax::XReferenceResolvedListener > XSecController::prepar
 		xMCF->createInstanceWithContext(
 			rtl::OUString::createFromAscii(SIGNATURECREATOR_COMPONENT), mxCtx),
 		cssu::UNO_QUERY);
-	
+
 	cssu::Reference<cssl::XInitialization> xInitialization(xReferenceResolvedListener, cssu::UNO_QUERY);
 
 	cssu::Sequence<cssu::Any> args(5);
 	args[0] = cssu::makeAny(rtl::OUString::valueOf(nSecurityId));
 	args[1] = cssu::makeAny(m_xSAXEventKeeper);
 	args[2] = cssu::makeAny(rtl::OUString::valueOf(nIdOfSignatureElementCollector));
-	
+
 	//i39448 : for nss, the internal module is used for signing, which needs to be improved later
 	sal_Int32 nEnvIndex = internalSignatureInfor.signatureInfor.nSecurityEnvironmentIndex;
 	if( nEnvIndex < 0 || nEnvIndex >= m_xSecurityContext->getSecurityEnvironmentNumber())
@@ -102,41 +102,41 @@ cssu::Reference< cssxc::sax::XReferenceResolvedListener > XSecController::prepar
 	{
 		args[3] = cssu::makeAny(m_xSecurityContext->getSecurityEnvironmentByIndex(nEnvIndex));
 	}
-	
+
 	args[4] = cssu::makeAny(m_xXMLSignature);
 	xInitialization->initialize(args);
-			
+
 	sal_Int32 nBlockerId = m_xSAXEventKeeper->addBlocker();
 	m_xSAXEventKeeper->setSecurityId(nBlockerId, nSecurityId);
-		
+
 	cssu::Reference<cssxc::sax::XBlockerMonitor> xBlockerMonitor(xReferenceResolvedListener, cssu::UNO_QUERY);
 	xBlockerMonitor->setBlockerId(nBlockerId);
 
 	cssu::Reference< cssxc::sax::XSignatureCreationResultBroadcaster >
 		xSignatureCreationResultBroadcaster(xReferenceResolvedListener, cssu::UNO_QUERY);
-	
+
 	xSignatureCreationResultBroadcaster->addSignatureCreationResultListener( this );
-	
-	cssu::Reference<cssxc::sax::XReferenceResolvedBroadcaster> 
-		xReferenceResolvedBroadcaster  
+
+	cssu::Reference<cssxc::sax::XReferenceResolvedBroadcaster>
+		xReferenceResolvedBroadcaster
 		(m_xSAXEventKeeper,
 		cssu::UNO_QUERY);
-		
+
 	xReferenceResolvedBroadcaster->addReferenceResolvedListener(
 		nIdOfSignatureElementCollector,
 		xReferenceResolvedListener);
-		
+
 	cssu::Reference<cssxc::sax::XReferenceCollector> xReferenceCollector
 		(xReferenceResolvedListener, cssu::UNO_QUERY);
-	
+
 	int i;
 	int size = vReferenceInfors.size();
 	sal_Int32 nReferenceCount = 0;
-	
+
 	for(i=0; i<size; ++i)
 	{
 		sal_Int32 keeperId = internalSignatureInfor.vKeeperIds[i];
-		
+
 		if ( keeperId != -1)
 		{
 			m_xSAXEventKeeper->setSecurityId(keeperId, nSecurityId);
@@ -145,19 +145,19 @@ cssu::Reference< cssxc::sax::XReferenceResolvedListener > XSecController::prepar
 			nReferenceCount++;
 		}
 	}
-	
+
 	xReferenceCollector->setReferenceCount( nReferenceCount );
-	
+
 	/*
 	 * adds all URI binding
 	 */
 	cssu::Reference<cssxc::XUriBinding> xUriBinding
 		(xReferenceResolvedListener, cssu::UNO_QUERY);
-		
+
 	for(i=0; i<size; ++i)
 	{
 		const SignatureReferenceInformation& refInfor = vReferenceInfors[i];
-		
+
 		cssu::Reference< com::sun::star::io::XInputStream > xInputStream
 			= getObjectInputStream( refInfor.ouURI );
 
@@ -166,15 +166,15 @@ cssu::Reference< cssxc::sax::XReferenceResolvedListener > XSecController::prepar
 			xUriBinding->setUriBinding(refInfor.ouURI,xInputStream);
 		}
 	}
-	
+
 	cssu::Reference<cssxc::sax::XKeyCollector> keyCollector (xReferenceResolvedListener, cssu::UNO_QUERY);
 	keyCollector->setKeyId(0);
-	
+
 	internalSignatureInfor.signatureInfor.ouSignatureId = createId();
 	internalSignatureInfor.signatureInfor.ouPropertyId = createId();
 	internalSignatureInfor.addReference(TYPE_SAMEDOCUMENT_REFERENCE, internalSignatureInfor.signatureInfor.ouPropertyId, -1 );
 	size++;
-	
+
 	/*
 	 * replace both digestValues and signatueValue to " "
 	 */
@@ -185,7 +185,7 @@ cssu::Reference< cssxc::sax::XReferenceResolvedListener > XSecController::prepar
 	}
 
 	internalSignatureInfor.signatureInfor.ouSignatureValue = rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(CHAR_BLANK));
-	
+
 	return xReferenceResolvedListener;
 }
 
@@ -193,9 +193,9 @@ cssu::Reference< cssxc::sax::XReferenceResolvedListener > XSecController::prepar
 void XSecController::collectToSign( sal_Int32 securityId, const rtl::OUString& referenceId )
 {
 	/* DBG_ASSERT( m_xSAXEventKeeper.is(), "the SAXEventKeeper is NULL" ); */
-	
+
 	chainOn(true);
-	
+
 	if ( m_nStatusOfSecurityComponents == INITIALIZED )
 	/*
 	 * if all security components are ready, add a signature.
@@ -203,9 +203,9 @@ void XSecController::collectToSign( sal_Int32 securityId, const rtl::OUString& r
 	{
 		sal_Int32 nKeeperId = m_xSAXEventKeeper->addSecurityElementCollector(
 			cssxc::sax::ElementMarkPriority_AFTERMODIFY, sal_False);
-			
+
 		int index = findSignatureInfor( securityId );
-		
+
 		if ( index == -1 )
 		{
 			InternalSignatureInformation isi(securityId, NULL);
@@ -222,9 +222,9 @@ void XSecController::collectToSign( sal_Int32 securityId, const rtl::OUString& r
 void XSecController::signAStream( sal_Int32 securityId, const rtl::OUString& uri, const rtl::OUString& /*objectURL*/, sal_Bool isBinary)
 {
         sal_Int32 type = ((isBinary==sal_True)?TYPE_BINARYSTREAM_REFERENCE:TYPE_XMLSTREAM_REFERENCE);
-        
+
 	int index = findSignatureInfor( securityId );
-        
+
 	if (index == -1)
 	{
 		InternalSignatureInformation isi(securityId, NULL);
@@ -299,14 +299,14 @@ bool XSecController::WriteSignature(
 	const cssu::Reference<cssxs::XDocumentHandler>& xDocumentHandler )
 {
 	bool rc = false;
-	
+
 	DBG_ASSERT( xDocumentHandler.is(), "I really need a document handler!" );
-	
+
 	/*
-	 * chain the SAXEventKeeper to the SAX chain 
+	 * chain the SAXEventKeeper to the SAX chain
 	 */
 	chainOn(true);
-	
+
 	if ( m_nStatusOfSecurityComponents == INITIALIZED )
 	/*
 	 * if all security components are ready, add the signature
@@ -315,33 +315,33 @@ bool XSecController::WriteSignature(
 	{
 		m_bIsSAXEventKeeperSticky = true;
 		m_xSAXEventKeeper->setNextHandler(xDocumentHandler);
-		
+
 		try
 		{
 			/*
-			 * export the signature template 
+			 * export the signature template
 			 */
 			cssu::Reference<cssxs::XDocumentHandler> xSEKHandler( m_xSAXEventKeeper,cssu::UNO_QUERY);
-		
+
 			int i;
 			int sigNum = m_vInternalSignatureInformations.size();
-			
+
 			for (i=0; i<sigNum; ++i)
 			{
 				InternalSignatureInformation &isi = m_vInternalSignatureInformations[i];
-				
+
 				/*
 				 * prepare the signature creator
 				 */
-				isi.xReferenceResolvedListener 
+				isi.xReferenceResolvedListener
 					= prepareSignatureToWrite( isi );
-						
+
 				exportSignature( xSEKHandler, isi.signatureInfor );
 			}
-		
+
 			m_bIsSAXEventKeeperSticky = false;
 			chainOff();
-			
+
 			rc = true;
 		}
 		catch( cssxs::SAXException& )
@@ -356,7 +356,7 @@ bool XSecController::WriteSignature(
 		{
 			m_pErrorMessage = ERROR_EXCEPTIONDURINGCREATION;
 		}
-	
+
 		m_xSAXEventKeeper->setNextHandler( NULL );
 		m_bIsSAXEventKeeperSticky = false;
 	}
@@ -364,6 +364,6 @@ bool XSecController::WriteSignature(
 	{
 		m_pErrorMessage = ERROR_CANNOTCREATEXMLSECURITYCOMPONENT;
 	}
-	
+
 	return rc;
 }

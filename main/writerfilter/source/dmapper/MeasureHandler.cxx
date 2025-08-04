@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -40,7 +40,7 @@ MeasureHandler::MeasureHandler() :
 LoggedProperties(dmapper_logger, "MeasureHandler"),
 m_nMeasureValue( 0 ),
 m_nUnit( -1 ),
-m_nRowHeightSizeType( text::SizeType::MIN ) 
+m_nRowHeightSizeType( text::SizeType::MIN )
 {
 }
 /*-- 24.04.2007 09:06:35---------------------------------------------------
@@ -63,20 +63,20 @@ void MeasureHandler::lcl_attribute(Id rName, Value & rVal)
         case NS_rtf::LN_unit:
         /* WRITERFILTERSTATUS: done: 1, planned: 0, spent: 0 */
         case NS_ooxml::LN_CT_TblWidth_type:// = 90668;
-            //can be: NS_ooxml::LN_Value_ST_TblWidth_nil, NS_ooxml::LN_Value_ST_TblWidth_pct, 
-            //        NS_ooxml::LN_Value_ST_TblWidth_dxa, NS_ooxml::LN_Value_ST_TblWidth_auto; 
+            //can be: NS_ooxml::LN_Value_ST_TblWidth_nil, NS_ooxml::LN_Value_ST_TblWidth_pct,
+            //        NS_ooxml::LN_Value_ST_TblWidth_dxa, NS_ooxml::LN_Value_ST_TblWidth_auto;
             m_nUnit = nIntValue;
         break;
         /* WRITERFILTERSTATUS: done: 1, planned: 0, spent: 0 */
         case NS_ooxml::LN_CT_Height_hRule: // 90666;
-        {    
+        {
             ::rtl::OUString sHeightType = rVal.getString();
             if( sHeightType.equalsAscii( "exact" ) )
                 m_nRowHeightSizeType = text::SizeType::FIX;
         }
         break;
         /* WRITERFILTERSTATUS: done: 1, planned: 0, spent: 0 */
-        case NS_rtf::LN_trleft: 
+        case NS_rtf::LN_trleft:
         /* WRITERFILTERSTATUS: done: 1, planned: 0, spent: 0 */
         case NS_rtf::LN_preferredWidth:
         case NS_ooxml::LN_CT_TblWidth_w:// = 90667;
@@ -88,7 +88,7 @@ void MeasureHandler::lcl_attribute(Id rName, Value & rVal)
             m_nUnit = NS_ooxml::LN_Value_ST_TblWidth_dxa;
             ::rtl::OUString sHeight = rVal.getString();
             m_nMeasureValue = sHeight.toInt32();
-        }        
+        }
         break;
         default:
             OSL_ENSURE( false, "unknown attribute");
@@ -112,16 +112,16 @@ sal_Int32 MeasureHandler::getMeasureValue() const
         // TODO m_nUnit 3 - twip, other values unknown :-(
         if( m_nUnit == 3 || sal::static_int_cast<Id>(m_nUnit) == NS_ooxml::LN_Value_ST_TblWidth_dxa)
             nRet = ConversionHelper::convertTwipToMM100( m_nMeasureValue );
-        //todo: handle additional width types:    
-        //NS_ooxml::LN_Value_ST_TblWidth_nil, NS_ooxml::LN_Value_ST_TblWidth_pct, 
-        //NS_ooxml::LN_Value_ST_TblWidth_dxa, NS_ooxml::LN_Value_ST_TblWidth_auto; 
+        //todo: handle additional width types:
+        //NS_ooxml::LN_Value_ST_TblWidth_nil, NS_ooxml::LN_Value_ST_TblWidth_pct,
+        //NS_ooxml::LN_Value_ST_TblWidth_dxa, NS_ooxml::LN_Value_ST_TblWidth_auto;
     }
     return nRet;
 }
 /*-- 18.06.2007 10:24:26---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-bool MeasureHandler::isAutoWidth() const 
+bool MeasureHandler::isAutoWidth() const
 {
     return sal::static_int_cast<Id>(m_nUnit) == NS_ooxml::LN_Value_ST_TblWidth_auto;
 }

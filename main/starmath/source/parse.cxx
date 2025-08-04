@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -480,7 +480,7 @@ void SmParser::NextToken()
             ParseResult aTmpRes;
             lang::Locale aOldLoc( aCC.getLocale() );
             aCC.setLocale( aDotLoc );
-            aTmpRes = aCC.parsePredefinedToken( 
+            aTmpRes = aCC.parsePredefinedToken(
                             KParseType::ASC_NUMBER,
                             m_aBufferString, m_nBufferIndex,
                             KParseTokens::ASC_DIGIT, aEmptyStr,
@@ -606,7 +606,7 @@ void SmParser::NextToken()
 	else if (aRes.TokenType & KParseType::BOOLEAN)
 	{
 		sal_Int32   &rnEndPos = aRes.EndPos;
-        String  aName( m_aBufferString.Copy( nRealStart, 
+        String  aName( m_aBufferString.Copy( nRealStart,
                         sal::static_int_cast< xub_StrLen >(rnEndPos - nRealStart) ));
 		if (2 >= aName.Len())
 		{
@@ -711,7 +711,7 @@ void SmParser::NextToken()
 	else if (aRes.TokenType & KParseType::ONE_SINGLE_CHAR)
 	{
 		sal_Int32   &rnEndPos = aRes.EndPos;
-        String  aName( m_aBufferString.Copy( nRealStart, 
+        String  aName( m_aBufferString.Copy( nRealStart,
                             sal::static_int_cast< xub_StrLen >(rnEndPos - nRealStart) ) );
 
 		if (1 == aName.Len())
@@ -973,7 +973,7 @@ void SmParser::NextToken()
                         }
                         while ( cChar == '.' || IsDigit( cChar ) );
 
-                        m_aCurToken.aText = m_aBufferString.Copy( sal::static_int_cast< xub_StrLen >(nTxtStart), 
+                        m_aCurToken.aText = m_aBufferString.Copy( sal::static_int_cast< xub_StrLen >(nTxtStart),
                                                             sal::static_int_cast< xub_StrLen >(m_nBufferIndex - nTxtStart) );
                         aRes.EndPos = m_nBufferIndex;
 					}
@@ -1070,9 +1070,9 @@ void SmParser::Align()
 			// (the dominant one in 4.0) and erase all others (especially old
 			// discarded tokens) from command string.
 			while (TokenInGroup(TGALIGN))
-            {   
+            {
                 if (TokenInGroup(TGDISCARDED) || pSNode)
-                {   
+                {
                     m_nBufferIndex = GetTokenIndex();
                     m_aBufferString.Erase(m_nBufferIndex, m_aCurToken.aText.Len());
 				}
@@ -1394,7 +1394,7 @@ void SmParser::Blank()
 void SmParser::Term()
 {
     switch (m_aCurToken.eType)
-	{	
+	{
         case TESCAPE :
 			Escape();
 			break;
@@ -1419,7 +1419,7 @@ void SmParser::Term()
 
                 // allow for empty group
                 if (m_aCurToken.eType == TRGROUP)
-                {   
+                {
                     if (bNoSpace)   // get rid of the 'no space' node pushed above
                         m_aNodeStack.Pop();
                     SmStructureNode *pSNode = new SmExpressionNode(m_aCurToken);
@@ -1429,7 +1429,7 @@ void SmParser::Term()
                     NextToken();
                 }
                 else    // go as usual
-                {   
+                {
                     Align();
                     if (m_aCurToken.eType != TRGROUP)
                         Error(PE_RGROUP_EXPECTED);

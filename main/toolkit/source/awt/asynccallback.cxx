@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -75,13 +75,13 @@ private:
     {
         CallbackData( const css::uno::Reference< css::awt::XCallback >& rCallback, const css::uno::Any& rAny ) :
             xCallback( rCallback ), aData( rAny ) {}
-        
+
         css::uno::Reference< css::awt::XCallback > xCallback;
         css::uno::Any                              aData;
     };
-  
+
     DECL_STATIC_LINK( AsyncCallback, Notify_Impl, CallbackData* );
-    
+
     AsyncCallback(AsyncCallback &); // not defined
     void operator =(AsyncCallback &); // not defined
 
@@ -139,7 +139,7 @@ IMPL_STATIC_LINK_NOINSTANCE( AsyncCallback, Notify_Impl, CallbackData*, pCallbac
     catch ( css::uno::Exception& )
     {
     }
-    
+
     delete pCallbackData;
     return 0;
 }

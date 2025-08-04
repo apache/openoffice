@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -85,7 +85,7 @@ namespace drawinglayer
                 {
                     Primitive2DReference xRef(
                         new PolyPolygonColorPrimitive2D(
-                            getPolyPolygon(), 
+                            getPolyPolygon(),
                             rSingleEntry.getColor()));
 
                     if(fOpacity < 1.0)
@@ -94,7 +94,7 @@ namespace drawinglayer
 
                         xRef = Primitive2DReference(
                             new UnifiedTransparencePrimitive2D(
-                                aContent, 
+                                aContent,
                                 1.0 - fOpacity));
                     }
 
@@ -131,7 +131,7 @@ namespace drawinglayer
                 {
                     // sort maGradientEntries when more than one
                     std::sort(maGradientEntries.begin(), maGradientEntries.end());
-                    
+
                     // gradient with at least two colors
                     bool bAllInvisible(true);
 
@@ -190,7 +190,7 @@ namespace drawinglayer
 
         double SvgGradientHelper::createRun(
             Primitive2DVector& rTargetColor,
-            Primitive2DVector& rTargetOpacity, 
+            Primitive2DVector& rTargetOpacity,
             double fPos,
             double fMax,
             const SvgGradientEntryVector& rEntries,
@@ -208,7 +208,7 @@ namespace drawinglayer
                 if(bCreateStartPad || bCreateStartFill)
                 {
                     const SvgGradientEntry aTemp(bCreateStartPad ? fPos : 0.0, rStart.getColor(), rStart.getOpacity());
-                
+
                     createAtom(rTargetColor, rTargetOpacity, aTemp, rStart, nOffset);
                     fPos = rStart.getOffset();
                 }
@@ -217,7 +217,7 @@ namespace drawinglayer
                 {
                     const SvgGradientEntry& rCandidateA = rEntries[nIndex++];
                     const SvgGradientEntry& rCandidateB = rEntries[nIndex];
-                        
+
                     createAtom(rTargetColor, rTargetOpacity, rCandidateA, rCandidateB, nOffset);
                     fPos = rCandidateB.getOffset();
                 }
@@ -230,7 +230,7 @@ namespace drawinglayer
                 {
                     fPos = bCreateEndPad ? fMax : 1.0;
                     const SvgGradientEntry aTemp(fPos, rEnd.getColor(), rEnd.getOpacity());
-                
+
                     createAtom(rTargetColor, rTargetOpacity, rEnd, aTemp, nOffset);
                 }
             }
@@ -256,26 +256,26 @@ namespace drawinglayer
             if(aTargetColorEntries.hasElements())
             {
                 Primitive2DReference xRefContent;
-                    
+
                 if(aTargetOpacityEntries.hasElements())
                 {
                     const Primitive2DReference xRefOpacity = new TransparencePrimitive2D(
-                        aTargetColorEntries, 
+                        aTargetColorEntries,
                         aTargetOpacityEntries);
-                        
+
                     xRefContent = new TransformPrimitive2D(
-                        rUnitGradientToObject, 
+                        rUnitGradientToObject,
                         Primitive2DSequence(&xRefOpacity, 1));
                 }
                 else
                 {
                     xRefContent = new TransformPrimitive2D(
-                        rUnitGradientToObject, 
+                        rUnitGradientToObject,
                         aTargetColorEntries);
                 }
 
                 xRefContent = new MaskPrimitive2D(
-                    getPolyPolygon(), 
+                    getPolyPolygon(),
                     Primitive2DSequence(&xRefContent, 1));
 
                 xRetval = Primitive2DSequence(&xRefContent, 1);
@@ -349,8 +349,8 @@ namespace drawinglayer
 
         void SvgLinearGradientPrimitive2D::createAtom(
             Primitive2DVector& rTargetColor,
-            Primitive2DVector& rTargetOpacity, 
-            const SvgGradientEntry& rFrom, 
+            Primitive2DVector& rTargetOpacity,
+            const SvgGradientEntry& rFrom,
             const SvgGradientEntry& rTo,
             sal_Int32 nOffset) const
         {
@@ -406,14 +406,14 @@ namespace drawinglayer
                 // create ObjectTransform based on polygon range
                 const basegfx::B2DHomMatrix aObjectTransform(
                     basegfx::tools::createScaleTranslateB2DHomMatrix(
-                        fPolyWidth, fPolyHeight, 
+                        fPolyWidth, fPolyHeight,
                         aPolyRange.getMinX(), aPolyRange.getMinY()));
                 basegfx::B2DHomMatrix aUnitGradientToObject;
 
                 if(getUseUnitCoordinates())
                 {
                     // interpret in unit coordinate system -> object aspect ratio will scale result
-                    // create unit transform from unit vector [0.0 .. 1.0] along the X-Axis to given 
+                    // create unit transform from unit vector [0.0 .. 1.0] along the X-Axis to given
                     // gradient vector defined by Start,End
                     const basegfx::B2DVector aVector(getEnd() - getStart());
                     const double fVectorLength(aVector.getLength());
@@ -490,7 +490,7 @@ namespace drawinglayer
                         {
                             // add original central run as group primitive
                             aTargetColor.push_back(new GroupPrimitive2D(aTargetColorEntries));
-                                
+
                             if(aTargetOpacityEntries.hasElements())
                             {
                                 aTargetOpacity.push_back(new GroupPrimitive2D(aTargetOpacityEntries));
@@ -519,7 +519,7 @@ namespace drawinglayer
                                 }
 
                                 aTargetColor.push_back(new TransformPrimitive2D(aTransform, aTargetColorEntries));
-                                
+
                                 if(aTargetOpacityEntries.hasElements())
                                 {
                                     aTargetOpacity.push_back(new TransformPrimitive2D(aTransform, aTargetOpacityEntries));
@@ -546,7 +546,7 @@ namespace drawinglayer
                                 }
 
                                 aTargetColor.push_back(new TransformPrimitive2D(aTransform, aTargetColorEntries));
-                                
+
                                 if(aTargetOpacityEntries.hasElements())
                                 {
                                     aTargetOpacity.push_back(new TransformPrimitive2D(aTransform, aTargetOpacityEntries));
@@ -633,8 +633,8 @@ namespace drawinglayer
 
         void SvgRadialGradientPrimitive2D::createAtom(
             Primitive2DVector& rTargetColor,
-            Primitive2DVector& rTargetOpacity, 
-            const SvgGradientEntry& rFrom, 
+            Primitive2DVector& rTargetOpacity,
+            const SvgGradientEntry& rFrom,
             const SvgGradientEntry& rTo,
             sal_Int32 nOffset) const
         {
@@ -652,7 +652,7 @@ namespace drawinglayer
                 {
                     const basegfx::B2DVector aTranslateFrom(maFocalVector * (maFocalLength - fScaleFrom));
                     const basegfx::B2DVector aTranslateTo(maFocalVector * (maFocalLength - fScaleTo));
-                        
+
                     rTargetColor.push_back(
                         new SvgRadialAtomPrimitive2D(
                             rFrom.getColor(), fScaleFrom, aTranslateFrom,
@@ -677,7 +677,7 @@ namespace drawinglayer
                     {
                         const basegfx::B2DVector aTranslateFrom(maFocalVector * (maFocalLength - fScaleFrom));
                         const basegfx::B2DVector aTranslateTo(maFocalVector * (maFocalLength - fScaleTo));
-                        
+
                         rTargetOpacity.push_back(
                             new SvgRadialAtomPrimitive2D(
                                 aColorFrom, fScaleFrom, aTranslateFrom,
@@ -703,7 +703,7 @@ namespace drawinglayer
 
             return maMirroredGradientEntries;
         }
-            
+
         void SvgRadialGradientPrimitive2D::createMirroredGradientEntries()
         {
             if(maMirroredGradientEntries.empty() && !getGradientEntries().empty())
@@ -750,7 +750,7 @@ namespace drawinglayer
                 // create ObjectTransform based on polygon range
                 const basegfx::B2DHomMatrix aObjectTransform(
                     basegfx::tools::createScaleTranslateB2DHomMatrix(
-                        fPolyWidth, fPolyHeight, 
+                        fPolyWidth, fPolyHeight,
                         aPolyRange.getMinX(), aPolyRange.getMinY()));
                 basegfx::B2DHomMatrix aUnitGradientToObject;
 
@@ -946,15 +946,15 @@ namespace drawinglayer
                 const basegfx::B2DPolygon aPolygon(
                     basegfx::tools::createPolygonFromRect(
                         basegfx::B2DRange(
-                            getOffsetA() - fDiscreteUnit, 
-                            0.0, 
-                            getOffsetA() + (fDelta / nSteps) + fDiscreteUnit, 
+                            getOffsetA() - fDiscreteUnit,
+                            0.0,
+                            getOffsetA() + (fDelta / nSteps) + fDiscreteUnit,
                             1.0)));
 
                 // prepare loop (inside to outside, [0.0 .. 1.0[)
                 double fUnitScale(0.0);
                 const double fUnitStep(1.0 / nSteps);
-                
+
                 // prepare result set (known size)
                 xRetval.realloc(nSteps);
 
@@ -964,7 +964,7 @@ namespace drawinglayer
 
                     aNew.transform(basegfx::tools::createTranslateB2DHomMatrix(fDelta * fUnitScale, 0.0));
                     xRetval[a] = new PolyPolygonColorPrimitive2D(
-                        basegfx::B2DPolyPolygon(aNew), 
+                        basegfx::B2DPolyPolygon(aNew),
                         basegfx::interpolate(getColorA(), getColorB(), fUnitScale));
                 }
             }
@@ -1045,8 +1045,8 @@ namespace drawinglayer
                     {
                         const basegfx::B2DVector aTranslate(
                             basegfx::interpolate(
-                                getTranslateB(), 
-                                getTranslateA(), 
+                                getTranslateB(),
+                                getTranslateA(),
                                 fUnitScale));
 
                         aTransform = basegfx::tools::createScaleTranslateB2DHomMatrix(
@@ -1066,7 +1066,7 @@ namespace drawinglayer
 
                     aNew.transform(aTransform);
                     xRetval[a] = new PolyPolygonColorPrimitive2D(
-                        basegfx::B2DPolyPolygon(aNew), 
+                        basegfx::B2DPolyPolygon(aNew),
                         basegfx::interpolate(getColorB(), getColorA(), fUnitScale));
                 }
             }

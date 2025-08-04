@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -106,7 +106,7 @@ enum WID_PAGE
 	WID_PAGE_BACK, WID_PAGE_PREVIEW, WID_PAGE_PREVIEWBITMAP, WID_PAGE_VISIBLE, WID_PAGE_SOUNDFILE, WID_PAGE_BACKFULL,
 	WID_PAGE_BACKVIS, WID_PAGE_BACKOBJVIS, WID_PAGE_USERATTRIBS, WID_PAGE_BOOKMARK, WID_PAGE_ISDARK,
 	WID_PAGE_HEADERVISIBLE, WID_PAGE_HEADERTEXT, WID_PAGE_FOOTERVISIBLE, WID_PAGE_FOOTERTEXT,
-	WID_PAGE_PAGENUMBERVISIBLE, WID_PAGE_DATETIMEVISIBLE, WID_PAGE_DATETIMEFIXED, 
+	WID_PAGE_PAGENUMBERVISIBLE, WID_PAGE_DATETIMEVISIBLE, WID_PAGE_DATETIMEFIXED,
 	WID_PAGE_DATETIMETEXT, WID_PAGE_DATETIMEFORMAT, WID_TRANSITION_TYPE, WID_TRANSITION_SUBTYPE,
 	WID_TRANSITION_DIRECTION, WID_TRANSITION_FADE_COLOR, WID_TRANSITION_DURATION, WID_LOOP_SOUND,
     WID_NAVORDER
@@ -205,7 +205,7 @@ const SvxItemPropertySet* ImplGetDrawPagePropertySet( sal_Bool bImpress, PageKin
 	{
 		DRAW_PAGE_NOTES_PROPERTIES
 	};
-	
+
 #define GRAPHIC_PAGE_PROPERTIES \
 		{ MAP_CHAR_LEN(UNO_NAME_PAGE_BOTTOM),			WID_PAGE_BOTTOM,	&::getCppuType((const sal_Int32*)0),			0,	0},                                                                             \
 		{ MAP_CHAR_LEN(UNO_NAME_PAGE_LEFT),				WID_PAGE_LEFT,		&::getCppuType((const sal_Int32*)0),			0,	0},                                                                             \
@@ -223,41 +223,41 @@ const SvxItemPropertySet* ImplGetDrawPagePropertySet( sal_Bool bImpress, PageKin
 		{ MAP_CHAR_LEN(sUNO_Prop_BookmarkURL),			WID_PAGE_BOOKMARK,	&::getCppuType((const OUString*)0),				0,	0},                                                                             \
 		{ MAP_CHAR_LEN("IsBackgroundDark" ),			WID_PAGE_ISDARK,	&::getBooleanCppuType(),						beans::PropertyAttribute::READONLY, 0},                                             \
 		{ MAP_CHAR_LEN("NavigationOrder"),				WID_NAVORDER, &::com::sun::star::container::XIndexAccess::static_type(),0,	0},                                                                         \
-		{0,0,0,0,0,0}                                                                                                                                                                                           
+		{0,0,0,0,0,0}
 
 	static const SfxItemPropertyMapEntry aGraphicPagePropertyMap_Impl[] =
 	{
 		{ MAP_CHAR_LEN(UNO_NAME_PAGE_BACKGROUND),		WID_PAGE_BACK,		&ITYPE( beans::XPropertySet),					beans::PropertyAttribute::MAYBEVOID,0},
 		GRAPHIC_PAGE_PROPERTIES
 	};
-	static const SfxItemPropertyMapEntry aGraphicPagePropertyNoBackMap_Impl[] = 
+	static const SfxItemPropertyMapEntry aGraphicPagePropertyNoBackMap_Impl[] =
 	{
 	    GRAPHIC_PAGE_PROPERTIES
 	};
 
 	//
 	bool bWithoutBackground = ePageKind != PK_STANDARD && ePageKind != PK_HANDOUT;
-	const SvxItemPropertySet* pRet = 0; 
+	const SvxItemPropertySet* pRet = 0;
 	if( bImpress )
 	{
 		if( ePageKind == PK_STANDARD )
 		{
 			//PK_STANDARD always has a background property
 			static SvxItemPropertySet aDrawPagePropertySet_Impl( aDrawPagePropertyMap_Impl, SdrObject::GetGlobalDrawObjectItemPool() );
-			pRet = &aDrawPagePropertySet_Impl; 
+			pRet = &aDrawPagePropertySet_Impl;
 		}
 		else
 		{
 			if(bWithoutBackground)
 			{
 			    static SvxItemPropertySet aDrawPageNotesHandoutPropertyNoBackSet_Impl( aDrawPageNotesHandoutPropertyNoBackMap_Impl, SdrObject::GetGlobalDrawObjectItemPool() );
-			    pRet = &aDrawPageNotesHandoutPropertyNoBackSet_Impl; 
-		    } 
+			    pRet = &aDrawPageNotesHandoutPropertyNoBackSet_Impl;
+		    }
 			else
 			{
 			    static SvxItemPropertySet aDrawPageNotesHandoutPropertySet_Impl( aDrawPageNotesHandoutPropertyMap_Impl, SdrObject::GetGlobalDrawObjectItemPool() );
-			    pRet = &aDrawPageNotesHandoutPropertySet_Impl; 
-		    } 
+			    pRet = &aDrawPageNotesHandoutPropertySet_Impl;
+		    }
 		}
 	}
 	else
@@ -265,13 +265,13 @@ const SvxItemPropertySet* ImplGetDrawPagePropertySet( sal_Bool bImpress, PageKin
 			if(bWithoutBackground)
 			{
 			    static SvxItemPropertySet aGraphicPagePropertyNoBackSet_Impl( aGraphicPagePropertyNoBackMap_Impl, SdrObject::GetGlobalDrawObjectItemPool() );
-			    pRet = &aGraphicPagePropertyNoBackSet_Impl; 
-		    } 
+			    pRet = &aGraphicPagePropertyNoBackSet_Impl;
+		    }
 			else
 			{
 			    static SvxItemPropertySet aGraphicPagePropertySet_Impl( aGraphicPagePropertyMap_Impl, SdrObject::GetGlobalDrawObjectItemPool() );
-			    pRet = &aGraphicPagePropertySet_Impl; 
-		    } 
+			    pRet = &aGraphicPagePropertySet_Impl;
+		    }
     }
     return pRet;
 }
@@ -327,12 +327,12 @@ const SvxItemPropertySet* ImplGetMasterPagePropertySet( PageKind ePageKind )
 	if( ePageKind == PK_HANDOUT )
 	{
 		static SvxItemPropertySet aHandoutMasterPagePropertySet_Impl( aHandoutMasterPagePropertyMap_Impl, SdrObject::GetGlobalDrawObjectItemPool() );
-		pRet = &aHandoutMasterPagePropertySet_Impl; 
+		pRet = &aHandoutMasterPagePropertySet_Impl;
 	}
 	else
 	{
 		static SvxItemPropertySet aMasterPagePropertySet_Impl( aMasterPagePropertyMap_Impl, SdrObject::GetGlobalDrawObjectItemPool() );
-		pRet = &aMasterPagePropertySet_Impl; 
+		pRet = &aMasterPagePropertySet_Impl;
 	}
 	return pRet;
 }
@@ -751,7 +751,7 @@ void SAL_CALL SdGenericDrawPage::setPropertyValue( const OUString& aPropertyName
 					break;
 				}
 			}
-				
+
 
 			throw lang::IllegalArgumentException();
 		}
@@ -2083,7 +2083,7 @@ Any SAL_CALL SdDrawPage::queryInterface( const uno::Type & rType )
 		if( mbIsImpressDocument )
 		{
 			const PageKind ePageKind = GetPage() ? GetPage()->GetPageKind() : PK_STANDARD;
-	
+
 			if( ePageKind != PK_HANDOUT && rType == ITYPE( presentation::XPresentationPage ) )
 			{
 				return makeAny( Reference< presentation::XPresentationPage >( this ) );
@@ -2356,7 +2356,7 @@ void SAL_CALL SdDrawPage::setName( const OUString& rName )
 		::sd::ViewShell* pViewSh = pDocSh ? pDocSh->GetViewShell() : NULL;
 		if( pViewSh && pViewSh->ISA(::sd::DrawViewShell))
 		{
-			::sd::DrawViewShell* pDrawViewSh = static_cast< 
+			::sd::DrawViewShell* pDrawViewSh = static_cast<
                   ::sd::DrawViewShell*>(pViewSh);
 
 			EditMode eMode = pDrawViewSh->GetEditMode();
@@ -2590,7 +2590,7 @@ Reference< XAnnotation > SAL_CALL SdGenericDrawPage::createAndInsertAnnotation()
 {
     if( !GetPage() )
         throw DisposedException();
-        
+
 	Reference< XAnnotation > xRet;
 	GetPage()->createAnnotation(xRet);
 	return xRet;
@@ -2619,7 +2619,7 @@ void SdDrawPage::getBackground( Any& rValue ) throw()
     {
 		// there is a fill set, export to rValue
 		Reference< beans::XPropertySet > xSet(new SdUnoPageBackground(
-            GetModel()->GetDoc(), 
+            GetModel()->GetDoc(),
             &GetPage()->getSdrPageProperties().GetItemSet()));
 		rValue <<= xSet;
     }
@@ -2791,7 +2791,7 @@ Sequence< uno::Type > SAL_CALL SdMasterPage::getTypes() throw(uno::RuntimeExcept
         aTypes.push_back(ITYPE(document::XLinkTargetSupplier));
         aTypes.push_back(ITYPE( drawing::XShapeCombiner ));
         aTypes.push_back(ITYPE( drawing::XShapeBinder ));
-		aTypes.push_back(ITYPE( office::XAnnotationAccess ));        
+		aTypes.push_back(ITYPE( office::XAnnotationAccess ));
 		aTypes.push_back(ITYPE( beans::XMultiPropertySet ));
         if( bPresPage )
             aTypes.push_back(ITYPE(presentation::XPresentationPage));
@@ -2923,7 +2923,7 @@ void SdMasterPage::setBackground( const Any& rValue )
 				Reference< beans::XPropertyState > xSetStates( xInputSet, UNO_QUERY );
 
                 PropertyEntryVector_t aBackgroundProperties = ImplGetPageBackgroundPropertySet()->getPropertyMap()->getPropertyEntries();
-                PropertyEntryVector_t::const_iterator aIt = aBackgroundProperties.begin(); 
+                PropertyEntryVector_t::const_iterator aIt = aBackgroundProperties.begin();
 				while( aIt != aBackgroundProperties.end() )
 				{
 					if( xSetInfo->hasPropertyByName( aIt->sName ) )
@@ -3082,7 +3082,7 @@ void SAL_CALL SdMasterPage::setName( const OUString& aName )
 		::sd::ViewShell* pViewSh = pDocSh ? pDocSh->GetViewShell() : NULL;
 		if( pViewSh && pViewSh->ISA(::sd::DrawViewShell ) )
 		{
-			::sd::DrawViewShell* pDrawViewSh = 
+			::sd::DrawViewShell* pDrawViewSh =
                   static_cast< ::sd::DrawViewShell*>(pViewSh);
 
 			EditMode eMode = pDrawViewSh->GetEditMode();

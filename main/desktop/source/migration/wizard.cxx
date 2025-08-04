@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -139,7 +139,7 @@ FirstStartWizard::FirstStartWizard( Window* pParent, sal_Bool bLicenseNeedsAccep
     m_pFinish->SetHelpId(HID_FIRSTSTART_FINISH);
     m_pHelp->Hide();
     m_pHelp->Disable();
-    
+
     // save button labels
     m_sNext = m_pNextPage->GetText();
     m_sCancel = m_pCancel->GetText();
@@ -187,7 +187,7 @@ void FirstStartWizard::DisableButtonsWhileMigration()
         aPath.push_back(STATE_UPDATE_CHECK);
         m_lastState = STATE_UPDATE_CHECK;
     }
-    
+
     declarePath(aDefaultPath, aPath);
 
 	// a) If license must be accepted by the user, all direct links
@@ -215,7 +215,7 @@ long FirstStartWizard::PreNotify( NotifyEvent& rNEvt )
         if( rKey.GetCode() == KEY_F1 && ! rKey.GetModifier() )
             return sal_True;
     }
-    return RoadmapWizard::PreNotify(rNEvt);        
+    return RoadmapWizard::PreNotify(rNEvt);
 }
 
 
@@ -237,7 +237,7 @@ void FirstStartWizard::enterState(WizardState _nState)
 
     // specialized state
     switch (_nState)
-    {     
+    {
     case STATE_WELCOME:
         enableButtons(WZB_PREVIOUS, sal_False);
         break;
@@ -245,13 +245,13 @@ void FirstStartWizard::enterState(WizardState _nState)
         m_pCancel->SetText(String(WizardResId(STR_LICENSE_DECLINE)));
         m_pNextPage->SetText(String(WizardResId(STR_LICENSE_ACCEPT)));
         enableButtons(WZB_NEXT, sal_False);
-        // attach warning dialog to cancel/decline button        
+        // attach warning dialog to cancel/decline button
         m_pCancel->SetClickHdl( LINK(this, FirstStartWizard, DeclineHdl) );
         break;
     }
     if ( _nState == m_lastState )
     {
-        enableButtons(WZB_NEXT, sal_False); 
+        enableButtons(WZB_NEXT, sal_False);
         enableButtons(WZB_FINISH, sal_True);
         defaultButton(WZB_FINISH);
     }
@@ -333,17 +333,17 @@ sal_Bool FirstStartWizard::prepareLeaveCurrentState( CommitPageReason _eReason )
         enableState(FirstStartWizard::STATE_REGISTRATION, sal_True);
 
         storeAcceptDate();
-        m_bLicenseWasAccepted = sal_True;        
+        m_bLicenseWasAccepted = sal_True;
     }
 
     return svt::RoadmapWizard::prepareLeaveCurrentState(_eReason);
 }
 
 sal_Bool FirstStartWizard::leaveState(WizardState)
-{    
+{
     if (( getCurrentState() == STATE_MIGRATION ) && m_bLicenseWasAccepted )
     {
-        // Store accept date and patch level now as it has been 
+        // Store accept date and patch level now as it has been
         // overwritten by the migration process!
         storeAcceptDate();
         setPatchLevel();
@@ -389,7 +389,7 @@ static OUString _makeDateTimeString (const DateTime& aDateTime, sal_Bool bUTC = 
 static OUString _getCurrentDateString()
 {
     OUString aString;
-    return _makeDateTimeString(DateTime());   
+    return _makeDateTimeString(DateTime());
 }
 
 
@@ -406,7 +406,7 @@ void FirstStartWizard::storeAcceptDate()
         Reference< XMultiServiceFactory > theConfigProvider = Reference< XMultiServiceFactory >(
         xFactory->createInstance(sConfigSrvc), UNO_QUERY_THROW);
         Sequence< Any > theArgs(1);
-        NamedValue v(OUString::createFromAscii("NodePath"), 
+        NamedValue v(OUString::createFromAscii("NodePath"),
             makeAny(OUString::createFromAscii("org.openoffice.Setup/Office")));
         theArgs[0] <<= v;
         Reference< XPropertySet > pset = Reference< XPropertySet >(
@@ -433,7 +433,7 @@ void FirstStartWizard::setPatchLevel()
         Reference< XMultiServiceFactory > theConfigProvider = Reference< XMultiServiceFactory >(
         xFactory->createInstance(sConfigSrvc), UNO_QUERY_THROW);
         Sequence< Any > theArgs(1);
-        NamedValue v(OUString::createFromAscii("NodePath"), 
+        NamedValue v(OUString::createFromAscii("NodePath"),
             makeAny(OUString::createFromAscii("org.openoffice.Office.Common/Help/Registration")));
         theArgs[0] <<= v;
         Reference< XPropertySet > pset = Reference< XPropertySet >(
@@ -463,9 +463,9 @@ void FirstStartWizard::cleanOldOfficeRegKeys()
     OUString aSharedLocationPath;
 	OUString aInstallMode;
 
-	::utl::Bootstrap::PathStatus aBaseLocateResult = 
+	::utl::Bootstrap::PathStatus aBaseLocateResult =
         ::utl::Bootstrap::locateBaseInstallation( aBaseLocationPath );
-    ::utl::Bootstrap::PathStatus aSharedLocateResult = 
+    ::utl::Bootstrap::PathStatus aSharedLocateResult =
         ::utl::Bootstrap::locateSharedData( aSharedLocationPath );
     aInstallMode = ::utl::Bootstrap::getAllUsersValue( ::rtl::OUString() );
 
@@ -503,7 +503,7 @@ sal_Bool FirstStartWizard::showOnlineUpdatePage()
         Reference < XMultiServiceFactory > xFactory( ::comphelper::getProcessServiceFactory() );
 
         xUpdateAccess = Reference < XNameReplace >(
-            xFactory->createInstance( UNISTRING( "com.sun.star.setup.UpdateCheckConfig" ) ), UNO_QUERY_THROW );   
+            xFactory->createInstance( UNISTRING( "com.sun.star.setup.UpdateCheckConfig" ) ), UNO_QUERY_THROW );
 
         if ( xUpdateAccess.is() )
         {

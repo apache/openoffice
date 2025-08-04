@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -38,7 +38,7 @@ struct PropertyNameSupplier_Impl
     PropertyBackwardNameMap_t aNameBackwardMap;
 
     void add(PropertyIds aId, const rtl::OUString & aStr);
-    
+
     PropertyNameSupplier_Impl();
 };
 
@@ -349,7 +349,7 @@ PropertySequence::PropertySequence()
 
 PropertySequence::PropertySequence(const uno::Sequence<beans::PropertyValue> & rSeq)
     : m_sequence(rSeq), m_rPropNameSupplier(PropertyNameSupplier::GetPropertyNameSupplier())
-{   
+{
     sal_Int32 nLength = rSeq.getLength();
 
     for (sal_Int32 n = 0; n < nLength; n++)
@@ -406,7 +406,7 @@ void PropertySequence::set(PropertyIds aPropId, const uno::Any & rValue)
 void PropertySequence::set(PropertyIds aPropId, sal_uInt32 nValue)
 {
     uno::Any aAny;
-    
+
     aAny <<= nValue;
     set(aPropId, aAny);
 }
@@ -414,7 +414,7 @@ void PropertySequence::set(PropertyIds aPropId, sal_uInt32 nValue)
 void PropertySequence::set(PropertyIds aPropId, sal_Int32 nValue)
 {
     uno::Any aAny;
-    
+
     aAny <<= nValue;
     set(aPropId, aAny);
 }
@@ -422,7 +422,7 @@ void PropertySequence::set(PropertyIds aPropId, sal_Int32 nValue)
 void PropertySequence::set(PropertyIds aPropId, sal_uInt16 nValue)
 {
     uno::Any aAny;
-    
+
     aAny <<= nValue;
     set(aPropId, aAny);
 }
@@ -430,7 +430,7 @@ void PropertySequence::set(PropertyIds aPropId, sal_uInt16 nValue)
 void PropertySequence::set(PropertyIds aPropId, sal_Int16 nValue)
 {
     uno::Any aAny;
-    
+
     aAny <<= nValue;
     set(aPropId, aAny);
 }
@@ -445,7 +445,7 @@ uno::Sequence<beans::PropertyValue> & PropertySequence::getSequence()
     ::std::string sResult = "";
 
     sal_Int32 nCount = m_sequence.getLength();
-    
+
     for (sal_Int32 n = 0; n < nCount; n++)
     {
         if (n > 0)

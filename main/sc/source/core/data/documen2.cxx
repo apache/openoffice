@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -268,13 +268,13 @@ ScDocument::ScDocument( ScDocumentMode	eMode,
 }
 
 sfx2::LinkManager*	ScDocument::GetLinkManager()  const
-{ 
+{
     if ( bAutoCalc && !pLinkManager && pShell)
 	{
 		pLinkManager = new sfx2::LinkManager( pShell );
 		pLinkManager->SetAutoAskUpdateAllLinks();
     }
-    return pLinkManager; 
+    return pLinkManager;
 }
 
 
@@ -637,12 +637,12 @@ void ScDocument::PutCell( SCCOL nCol, SCROW nRow, SCTAB nTab,
 //UNUSED2009-05     if ( bForceTab && !pTab[nTab] )
 //UNUSED2009-05     {
 //UNUSED2009-05         sal_Bool bExtras = !bIsUndo;        // Spaltenbreiten, Zeilenhoehen, Flags
-//UNUSED2009-05 
+//UNUSED2009-05
 //UNUSED2009-05         pTab[nTab] = new ScTable(this, nTab,
 //UNUSED2009-05                             String::CreateFromAscii(RTL_CONSTASCII_STRINGPARAM("temp")),
 //UNUSED2009-05                             bExtras, bExtras);
 //UNUSED2009-05     }
-//UNUSED2009-05 
+//UNUSED2009-05
 //UNUSED2009-05     if (pTab[nTab])
 //UNUSED2009-05         pTab[nTab]->PutCell( rPos, nFormatIndex, pCell );
 //UNUSED2009-05 }
@@ -842,7 +842,7 @@ sal_Bool ScDocument::CopyTab( SCTAB nOldPos, SCTAB nNewPos, const ScMarkData* pO
 		if (nNewPos == nMaxTableNumber)
 		{
 			pTab[nMaxTableNumber] = new ScTable(this, nMaxTableNumber, aName);
-			pRangeName->UpdateTabRef(nNewPos, 4, nOldPos);//. 4 - copy table 
+			pRangeName->UpdateTabRef(nNewPos, 4, nOldPos);//. 4 - copy table
 			++nMaxTableNumber;
 		}
 		else
@@ -1122,7 +1122,7 @@ sal_uLong ScDocument::TransferTab( ScDocument* pSrcDoc, SCTAB nSrcPos,
                 aLibName = pSrcShell->GetBasicManager()->GetName();
                 pStarBASIC = pSrcShell->GetBasicManager()->GetLib( aLibName );
             }
-    
+
             String sCodeName;
             String sSource;
             uno::Reference< script::XLibraryContainer > xLibContainer = pSrcShell->GetBasicContainer();
@@ -1140,7 +1140,7 @@ sal_uLong ScDocument::TransferTab( ScDocument* pSrcDoc, SCTAB nSrcPos,
                 rtl::OUString sRTLSource;
                 xLib->getByName( sSrcCodeName ) >>= sRTLSource;
                 sSource = sRTLSource;
-            } 
+            }
             VBA_InsertModule( *this, nDestPos, sCodeName, sSource );
         }
     }

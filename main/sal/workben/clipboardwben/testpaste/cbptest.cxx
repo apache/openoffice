@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -66,7 +66,7 @@ DWORD				lData     = 0;
 //----------------------------------------------------
 
 unsigned int _stdcall ThreadProc(LPVOID pParam)
-{	
+{
 	IDataObject* pIDataObj = NULL;
 	FORMATETC    formatETC;
 	STGMEDIUM	 stgMedium;
@@ -82,8 +82,8 @@ unsigned int _stdcall ThreadProc(LPVOID pParam)
 	hr = OleGetClipboard( &pIDataObj );
 
 	hr = CoGetInterfaceAndReleaseStream(
-		g_pStm, 
-		__uuidof(IDataObject), 
+		g_pStm,
+		__uuidof(IDataObject),
 		reinterpret_cast<LPVOID*>(&pIDataObj));
 
 	formatETC.cfFormat = CF_TEXT;
@@ -151,7 +151,7 @@ int APIENTRY WinMain(HINSTANCE hInstance,
 	MyRegisterClass(hInstance);
 
 	// Initialisierung der Anwendung durchführen:
-	if( !InitInstance( hInstance, nCmdShow ) ) 
+	if( !InitInstance( hInstance, nCmdShow ) )
 	{
 		return FALSE;
 	}
@@ -159,9 +159,9 @@ int APIENTRY WinMain(HINSTANCE hInstance,
 	hAccelTable = LoadAccelerators(hInstance, (LPCTSTR)IDC_TESTWIN32);
 
 	// Hauptnachrichtenschleife:
-	while( GetMessage(&msg, NULL, 0, 0) ) 
+	while( GetMessage(&msg, NULL, 0, 0) )
 	{
-		if( !TranslateAccelerator (msg.hwnd, hAccelTable, &msg) ) 
+		if( !TranslateAccelerator (msg.hwnd, hAccelTable, &msg) )
 		{
 			TranslateMessage( &msg );
 			DispatchMessage( &msg );
@@ -194,7 +194,7 @@ ATOM MyRegisterClass( HINSTANCE hInstance )
 {
 	WNDCLASSEXW wcex;
 
-	wcex.cbSize = sizeof(WNDCLASSEX); 
+	wcex.cbSize = sizeof(WNDCLASSEX);
 
 	wcex.style			= CS_HREDRAW | CS_VREDRAW;
 	wcex.lpfnWndProc	= (WNDPROC)WndProc;
@@ -230,7 +230,7 @@ BOOL InitInstance( HINSTANCE hInstance, int nCmdShow )
    hWnd = CreateWindowExW(0, szWindowClass, szTitle, WS_OVERLAPPEDWINDOW,
       CW_USEDEFAULT, 0, CW_USEDEFAULT, 0, NULL, NULL, hInstance, NULL);
 
-   if( !hWnd ) 
+   if( !hWnd )
    {
       return FALSE;
    }
@@ -258,17 +258,17 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 	PAINTSTRUCT ps;
 	HDC         hdc;
 	TCHAR       szHello[MAX_LOADSTRING];
-	
-	
+
+
 	LoadString(hInst, IDS_HELLO, szHello, MAX_LOADSTRING);
 
-	switch( message ) 
+	switch( message )
 	{
 		case WM_COMMAND:
-			wmId    = LOWORD(wParam); 
-			wmEvent = HIWORD(wParam); 
+			wmId    = LOWORD(wParam);
+			wmEvent = HIWORD(wParam);
 			// Menüauswahlen analysieren:
-			switch( wmId ) 
+			switch( wmId )
 			{
 				case IDD_PASTE:
 					//PasteClipboardData(hWnd);
@@ -289,7 +289,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 			// ZU ERLEDIGEN: Hier beliebigen Code zum Zeichnen hinzufügen...
 			RECT rt;
 			GetClientRect( hWnd, &rt );
-			
+
 			if ( NULL != pTextBuff )
 			{
 				DrawText( hdc, pTextBuff, lData, &rt, DT_CENTER );
@@ -323,8 +323,8 @@ void PasteClipboardData2(HWND hwndParent)
 	DWORD		 sizeGlobBuff;
 
 	hr = MTAGetClipboard( &pIDataObject );
-	if ( SUCCEEDED( hr ) ) 
-	{		
+	if ( SUCCEEDED( hr ) )
+	{
 		formatETC.cfFormat = CF_TEXT;
 		formatETC.ptd      = NULL;
 		formatETC.dwAspect = DVASPECT_CONTENT;
@@ -376,16 +376,16 @@ void PasteClipboardData(HWND hwndParent)
 		HRESULT hr = CoMarshalInterThreadInterfaceInStream(
 			__uuidof(IDataObject), //The IID of inteface to be marshaled
 			pIDataObj,       //The interface pointer
-			&g_pStm          //IStream pointer 
+			&g_pStm          //IStream pointer
 			);
 
-		HANDLE hThread = (HANDLE)_beginthreadex( 
+		HANDLE hThread = (HANDLE)_beginthreadex(
 				NULL,		//Security
 				0,			//Stack Size
 				ThreadProc,	//Start Address
 				NULL,	    //Parmeter
 				(unsigned int)hwndParent,	//Creation Flag
-				&dwId		//Thread Id 
+				&dwId		//Thread Id
 				);
 
 		//Wait for the thread to finish execution
@@ -400,7 +400,7 @@ void PasteClipboardData(HWND hwndParent)
 									INFINITE,	//Wait How Long?
 									QS_ALLINPUT //Wait for all messges
 									);
-		
+
 			//This means that the object is signaled
 			if ( dwRet != WAIT_OBJECT_0 + 1 )
 				break;

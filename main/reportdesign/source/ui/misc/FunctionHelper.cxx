@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -212,36 +212,36 @@ void FunctionDescription::initArgumentInfo()  const
 {
 }
 // -----------------------------------------------------------------------------
-::rtl::OUString FunctionDescription::getSignature() const 
+::rtl::OUString FunctionDescription::getSignature() const
 {
     return m_xFunctionDescription->getSignature();
 }
 // -----------------------------------------------------------------------------
-rtl::OString FunctionDescription::getHelpId() const 
+rtl::OString FunctionDescription::getHelpId() const
 {
     return rtl::OString();
 }
 // -----------------------------------------------------------------------------
-sal_uInt32 FunctionDescription::getParameterCount() const 
+sal_uInt32 FunctionDescription::getParameterCount() const
 {
     return m_aParameter.getLength();
 }
 // -----------------------------------------------------------------------------
-::rtl::OUString FunctionDescription::getParameterName(sal_uInt32 _nPos) const 
+::rtl::OUString FunctionDescription::getParameterName(sal_uInt32 _nPos) const
 {
     if ( _nPos < static_cast<sal_uInt32>(m_aParameter.getLength()) )
         return m_aParameter[_nPos].Name;
     return ::rtl::OUString();
 }
 // -----------------------------------------------------------------------------
-::rtl::OUString FunctionDescription::getParameterDescription(sal_uInt32 _nPos) const 
+::rtl::OUString FunctionDescription::getParameterDescription(sal_uInt32 _nPos) const
 {
     if ( _nPos < static_cast<sal_uInt32>(m_aParameter.getLength()) )
         return m_aParameter[_nPos].Description;
     return ::rtl::OUString();
 }
 // -----------------------------------------------------------------------------
-bool FunctionDescription::isParameterOptional(sal_uInt32 _nPos) const 
+bool FunctionDescription::isParameterOptional(sal_uInt32 _nPos) const
 {
     if ( _nPos < static_cast<sal_uInt32>(m_aParameter.getLength()) )
         return m_aParameter[_nPos].IsOptional;

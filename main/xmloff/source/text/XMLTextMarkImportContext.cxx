@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -62,7 +62,7 @@ using namespace ::xmloff::token;
 
 
 XMLFieldParamImportContext::XMLFieldParamImportContext(
-	SvXMLImport& rImport, 
+	SvXMLImport& rImport,
 	XMLTextImportHelper& rHlp,
 	sal_uInt16 nPrefix,
 	const OUString& rLocalName ) :
@@ -83,7 +83,7 @@ void XMLFieldParamImportContext::StartElement(const ::com::sun::star::uno::Refer
 	{
 		OUString sLocalName;
 		sal_uInt16 nPrefix = rImport.GetNamespaceMap().
-			GetKeyByAttrName( xAttrList->getNameByIndex(nAttr), 
+			GetKeyByAttrName( xAttrList->getNameByIndex(nAttr),
 							  &sLocalName );
 
 		if ( (XML_NAMESPACE_FIELD == nPrefix) &&
@@ -106,7 +106,7 @@ void XMLFieldParamImportContext::StartElement(const ::com::sun::star::uno::Refer
 TYPEINIT1( XMLTextMarkImportContext, SvXMLImportContext);
 
 XMLTextMarkImportContext::XMLTextMarkImportContext(
-	SvXMLImport& rImport, 
+	SvXMLImport& rImport,
 	XMLTextImportHelper& rHlp,
 	sal_uInt16 nPrefix,
     const OUString& rLocalName )
@@ -177,7 +177,7 @@ void XMLTextMarkImportContext::StartElement(
 
     if (IsXMLToken(GetLocalName(), XML_FIELDMARK_START) || IsXMLToken(GetLocalName(), XML_FIELDMARK))
     {
-        if (m_sBookmarkName.getLength() == 0) 
+        if (m_sBookmarkName.getLength() == 0)
         {
             m_sBookmarkName = ::rtl::OUString::createFromAscii("Unknown");
         }
@@ -201,7 +201,7 @@ void XMLTextMarkImportContext::EndElement()
     if (m_sBookmarkName.getLength() > 0)
 	{
 		sal_uInt16 nTmp;
-		if (SvXMLUnitConverter::convertEnum(nTmp, GetLocalName(), 
+		if (SvXMLUnitConverter::convertEnum(nTmp, GetLocalName(),
 											lcl_aMarkTypeMap))
 		{
 			switch ((lcl_MarkType)nTmp)
@@ -290,7 +290,7 @@ void XMLTextMarkImportContext::EndElement()
                                     "cannot go to end position of bookmark");
                             }
 
-							//DBG_ASSERT(! xInsertionCursor->isCollapsed(), 
+							//DBG_ASSERT(! xInsertionCursor->isCollapsed(),
 							// 				"we want no point mark");
 							// can't assert, because someone could
 							// create a file with subsequence
@@ -338,7 +338,7 @@ void XMLTextMarkImportContext::EndElement()
 				}
 
 				case TypeReferenceStart:
-				case TypeReferenceEnd:	
+				case TypeReferenceEnd:
 					DBG_ERROR("reference start/end are handled in txtparai !");
 					break;
 
@@ -434,7 +434,7 @@ sal_Bool XMLTextMarkImportContext::FindName(
 	{
 		OUString sLocalName;
         const sal_uInt16 nPrefix = rImport.GetNamespaceMap().
-			GetKeyByAttrName( xAttrList->getNameByIndex(nAttr), 
+			GetKeyByAttrName( xAttrList->getNameByIndex(nAttr),
 							  &sLocalName );
 
 		if ( (XML_NAMESPACE_TEXT == nPrefix) &&

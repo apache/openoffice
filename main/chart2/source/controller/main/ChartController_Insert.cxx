@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -293,7 +293,7 @@ void ChartController::executeDispatch_InsertMenu_DataLabels()
             ObjectIdentifier::getSeriesParticleFromCID(m_aSelection.getSelectedCID()), aChildParticle );
 
         bool bSuccess = ChartController::executeDlg_ObjectProperties_withoutUndoGuard( aObjectCID, true );
-        if( bSuccess ) 
+        if( bSuccess )
             aUndoGuard.commit();
         return;
     }
@@ -702,7 +702,7 @@ void ChartController::executeDispatch_InsertDataLabels()
 
 void ChartController::executeDispatch_InsertDataLabel()
 {
-    UndoGuard aUndoGuard = UndoGuard( ActionDescriptionProvider::createDescription( ActionDescriptionProvider::INSERT, 
+    UndoGuard aUndoGuard = UndoGuard( ActionDescriptionProvider::createDescription( ActionDescriptionProvider::INSERT,
         String( SchResId( STR_OBJECT_LABEL ))),
         m_xUndoManager );
     DataSeriesHelper::insertDataLabelToPoint( ObjectIdentifier::getObjectPropertySet( m_aSelection.getSelectedCID(), getModel() ) );
@@ -752,7 +752,7 @@ void ChartController::executeDispatch_ResetDataPoint()
     {
         sal_Int32 nPointIndex = ObjectIdentifier::getIndexFromParticleOrCID( m_aSelection.getSelectedCID() );
         xSeries->resetDataPoint( nPointIndex );
-    }    
+    }
     aUndoGuard.commit();
 }
 

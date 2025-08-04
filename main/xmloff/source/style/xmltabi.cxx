@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -64,7 +64,7 @@ static __FAR_DATA SvXMLTokenMapEntry aTabsAttributesAttrTokenMap[] =
 	{ XML_NAMESPACE_STYLE, XML_CHAR,	  	 XML_TOK_TABSTOP_CHAR },
 	{ XML_NAMESPACE_STYLE, XML_LEADER_TEXT,  XML_TOK_TABSTOP_LEADER_TEXT },
 	{ XML_NAMESPACE_STYLE, XML_LEADER_STYLE,  XML_TOK_TABSTOP_LEADER_STYLE },
-	XML_TOKEN_MAP_END 
+	XML_TOKEN_MAP_END
 };
 
 // ---
@@ -239,22 +239,22 @@ SvXMLImportContext *SvxXMLTabStopImportContext::CreateChildContext(
 
 		mpTabStops->Insert( pTabStopContext, mpTabStops->Count() );
 		pTabStopContext->AddRef();
-		
+
 		pContext = pTabStopContext;
 	}
 	else
 	{
 		pContext = new SvXMLImportContext( GetImport(), nPrefix, rLocalName );
 	}
-	
+
 	return pContext;
 }
 
 void SvxXMLTabStopImportContext::EndElement( )
-{	
+{
 	sal_uInt16 nCount = mpTabStops ? mpTabStops->Count() : 0;
 	uno::Sequence< style::TabStop> aSeq( nCount );
-		
+
 	if( mpTabStops )
 	{
 		sal_uInt16 nNewCount = 0;

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -77,29 +77,29 @@ css::uno::Reference< XInterface > X11SalInstance::CreateClipboard( const Sequenc
 
 	OUString aDisplayName;
     Atom nSelection;
-    
+
     // extract display name from connection argument. An exception is thrown
-    // by SelectionManager.initialize() if no display connection is given. 
+    // by SelectionManager.initialize() if no display connection is given.
     if( arguments.getLength() > 0 )
 	{
 		css::uno::Reference< XDisplayConnection > xConn;
 		arguments.getConstArray()[0] >>= xConn;
-        
+
 		if( xConn.is() )
 		{
 			Any aIdentifier = xConn->getIdentifier();
 			aIdentifier >>= aDisplayName;
 		}
 	}
-    
+
 	SelectionManager& rManager = SelectionManager::get( aDisplayName );
 	rManager.initialize( arguments );
-    
+
     // check if any other selection than clipboard selection is specified
     if( arguments.getLength() > 1 )
     {
         OUString aSelectionName;
-        
+
         arguments.getConstArray()[1] >>= aSelectionName;
         nSelection = rManager.getAtom( aSelectionName );
     }
@@ -108,7 +108,7 @@ css::uno::Reference< XInterface > X11SalInstance::CreateClipboard( const Sequenc
         // default atom is clipboard selection
         nSelection = rManager.getAtom( OUString::createFromAscii( "CLIPBOARD" ) );
     }
-    
+
 	::std::hash_map< Atom, css::uno::Reference< XClipboard > >& rMap( m_aInstances[ aDisplayName ] );
 	::std::hash_map< Atom, css::uno::Reference< XClipboard > >::iterator it = rMap.find( nSelection );
 	if( it != rMap.end() )

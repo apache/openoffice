@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -109,7 +109,7 @@ extern "C"
         */
         if( ! ( pNoXInitThreads && *pNoXInitThreads ) )
             XInitThreads();
-        
+
         X11SalInstance* pInstance = new X11SalInstance( new SalYieldMutex() );
 
         // initialize SalData
@@ -268,7 +268,7 @@ bool X11SalInstance::CheckYieldMutex()
 	{
 	    bRet = false;
 	}
-    
+
     return bRet;
 }
 
@@ -357,14 +357,14 @@ static void getServerDirectories( std::list< rtl::OString >& o_rFontPaths )
 void X11SalInstance::FillFontPathList( std::list< rtl::OString >& o_rFontPaths )
 {
     Display *pDisplay = GetX11SalData()->GetDisplay()->GetDisplay();
-    
+
     DBG_ASSERT( pDisplay, "No Display !" );
     if( pDisplay )
     {
         // get font paths to look for fonts
         int nPaths = 0, i;
         char** pPaths = XGetFontPath( pDisplay, &nPaths );
-        
+
         bool bServerDirs = false;
         for( i = 0; i < nPaths; i++ )
         {
@@ -383,33 +383,33 @@ void X11SalInstance::FillFontPathList( std::list< rtl::OString >& o_rFontPaths )
                 o_rFontPaths.push_back( aPath );
             }
         }
-        
+
         if( nPaths )
             XFreeFontPath( pPaths );
     }
-    
+
     // insert some standard directories
     o_rFontPaths.push_back( "/usr/openwin/lib/X11/fonts/TrueType" );
     o_rFontPaths.push_back( "/usr/openwin/lib/X11/fonts/Type1" );
     o_rFontPaths.push_back( "/usr/openwin/lib/X11/fonts/Type1/sun" );
     o_rFontPaths.push_back( "/usr/X11R6/lib/X11/fonts/truetype" );
     o_rFontPaths.push_back( "/usr/X11R6/lib/X11/fonts/Type1" );
-    
+
     #ifdef SOLARIS
     /* cde specials, from /usr/dt/bin/Xsession: here are the good fonts,
     the OWfontpath file may contain as well multiple lines as a comma
     separated list of fonts in each line. to make it even more weird
     environment variables are allowed as well */
-    
+
     const char* lang = getenv("LANG");
     if ( lang != NULL )
     {
         String aOpenWinDir( String::CreateFromAscii( "/usr/openwin/lib/locale/" ) );
         aOpenWinDir.AppendAscii( lang );
         aOpenWinDir.AppendAscii( "/OWfontpath" );
-        
+
         SvFileStream aStream( aOpenWinDir, STREAM_READ );
-        
+
         // TODO: replace environment variables
         while( aStream.IsOpen() && ! aStream.IsEof() )
         {

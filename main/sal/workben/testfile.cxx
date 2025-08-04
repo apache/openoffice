@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,8 +45,8 @@
 #include <windows.h>
 #endif
 
-using namespace	osl; 
-using namespace	rtl; 
+using namespace	osl;
+using namespace	rtl;
 
 #define MAXIMPATH	256
 
@@ -94,10 +94,10 @@ sal_Bool testLineBreak( sal_Char *pCount , sal_uInt64 nLen , sal_uInt32 *cLineBr
 {
 	sal_Bool fSuccess=sal_False;
 	*cLineBreak=0;
-	
+
 	if (nLen==0)
 		return fSuccess;
-	
+
 	if ( *pCount==13 )
 	{
 		if (nLen>=1 && *(pCount+1)==10)
@@ -115,7 +115,7 @@ sal_Bool testLineBreak( sal_Char *pCount , sal_uInt64 nLen , sal_uInt32 *cLineBr
 		*cLineBreak=1;
 		fSuccess=sal_True;
 	}
-	
+
 	return fSuccess;
 }
 
@@ -133,7 +133,7 @@ sal_Bool Initialize( void )
 	sal_Unicode		*pExeFileCount;
 
 	FileBase::RC	rc;
-	
+
 	sal_uInt64		uBytesRequested;
 	sal_uInt64		uBytesRead;
     sal_Char		*pBuffer;
@@ -162,7 +162,7 @@ sal_Bool Initialize( void )
 
 		// Open the ini-File
 		pFile=new File( iniFileURL );
-		rc=pFile->open( OpenFlag_Read | OpenFlag_Write );	
+		rc=pFile->open( OpenFlag_Read | OpenFlag_Write );
 		if ( rc!=FileBase::E_None )
 		{
 			rtl_uString_release(strExeFileURL);
@@ -191,7 +191,7 @@ sal_Bool Initialize( void )
 	rc=pFile->setPos( Pos_Absolut, 0 );
 	pBuffer=(sal_Char*) rtl_allocateMemory( (sal_uInt32) (uBytesRequested+1)*sizeof(sal_Char) );
 	rtl_zeroMemory( pBuffer, (sal_uInt32)(uBytesRequested+1)*sizeof(sal_Char) );
-	
+
 	rc=pFile->read( pBuffer , uBytesRequested , uBytesRead );
 	if ( rc!=FileBase::E_None )
 		return sal_False;
@@ -205,7 +205,7 @@ sal_Bool Initialize( void )
 		sal_uInt32		cLineBrake=0;
 		while ( (pCount-pBuffer < uBytesRead) && *pCount!='=')
 			pCount++;
-		
+
 		pCount++;
 		pBegin=pCount;
 
@@ -217,7 +217,7 @@ sal_Bool Initialize( void )
 		pCount+=cLineBrake;
 		pBegin=pCount;
 	}
-	
+
 	root=rtl::OUString(dir[0]);
 	dir1=rtl::OUString(dir[1]);
 	dir2=rtl::OUString(dir[2]);
@@ -230,7 +230,7 @@ sal_Bool Initialize( void )
 	file2=rtl::OUString(dir[8]);
 	file3=rtl::OUString(dir[9]);
 	file_on_server=rtl::OUString(dir[10]);
-	file_not_exist=rtl::OUString(dir[11]);	
+	file_not_exist=rtl::OUString(dir[11]);
 
 	// close the ini-file
 	rc=pFile->close();
@@ -241,32 +241,32 @@ sal_Bool Initialize( void )
 	// Create directories
 	rc=Directory::create( dir1 );
 	if ( rc!=FileBase::E_None )
-		return sal_False;	
+		return sal_False;
 
 	rc=Directory::create( dir2 );
 	if ( rc!=FileBase::E_None )
-		return sal_False;	
+		return sal_False;
 
 	rc=Directory::create( dir_on_server );
 	if ( rc!=FileBase::E_None )
 		return sal_False;
 
 	pFile=new File( file1 );
-	rc=pFile->open( OpenFlag_Write | OpenFlag_Create );	
+	rc=pFile->open( OpenFlag_Write | OpenFlag_Create );
 	if ( rc!=FileBase::E_None )
 		return sal_False;
 	rc=pFile->close();
 	delete pFile;
-	
+
 	pFile=new File( file2 );
-	rc=pFile->open( OpenFlag_Write | OpenFlag_Create );	
+	rc=pFile->open( OpenFlag_Write | OpenFlag_Create );
 	if ( rc!=FileBase::E_None )
-		return sal_False;	
+		return sal_False;
 	rc=pFile->close();
 	delete pFile;
 
 	pFile=new File( file_on_server );
-	rc=pFile->open( OpenFlag_Write | OpenFlag_Create );	
+	rc=pFile->open( OpenFlag_Write | OpenFlag_Create );
 	if ( rc!=FileBase::E_None )
 		return sal_False;
 	rc=pFile->close();
@@ -284,8 +284,8 @@ sal_Bool Shutdown( void )
 	sal_Bool		fSuccess=sal_True;
 	FileBase::RC	rc;
 	File			*pFile;
-	
-	// remove created files 
+
+	// remove created files
 
 	pFile=new File( file1 );
 	rc=pFile->remove( file1 );
@@ -299,7 +299,7 @@ sal_Bool Shutdown( void )
 		fSuccess=sal_False;
 	delete pFile;
 
-	// remove created directories 
+	// remove created directories
 
 	rc=Directory::remove( dir1 );
 	if ( rc!=FileBase::E_None )
@@ -318,11 +318,11 @@ sal_Bool Shutdown( void )
 	delete pFile;
 
 	// remove created directory on the server
-	
+
 	rc=Directory::remove( dir_on_server );
 	if ( rc!=FileBase::E_None )
 		fSuccess=sal_False;
-	
+
 	return fSuccess;
 }
 
@@ -349,19 +349,19 @@ void showAttributes( sal_uInt64 uAttributes )
 {
 	if ( uAttributes==0 )
 		printf( "No Attributes \n" );
-	if ( uAttributes & Attribute_ReadOnly ) 
+	if ( uAttributes & Attribute_ReadOnly )
 		printf( "Attribute: ReadOnly \n" );
 	if ( uAttributes & Attribute_Hidden )
 		printf( "Attribute: Hidden \n" );
-	if ( uAttributes & Attribute_Executable ) 
+	if ( uAttributes & Attribute_Executable )
 		printf( "Attribute: Executable \n");
 	if ( uAttributes & Attribute_GrpWrite )
 		printf( "Attribute: GrpWrite \n");
-	if ( uAttributes & Attribute_GrpRead ) 
+	if ( uAttributes & Attribute_GrpRead )
 		printf( "Attribute: GrpRead \n" );
 	if ( uAttributes & Attribute_GrpExe )
 		printf( "Attribute: GrpExe \n" );
-	if ( uAttributes & Attribute_OwnWrite ) 
+	if ( uAttributes & Attribute_OwnWrite )
 		printf( "Attribute: OwnWrite \n");
 	if ( uAttributes & Attribute_OwnRead )
 		printf( "Attribute: OwnRead \n" );
@@ -389,15 +389,15 @@ void showTime( TimeValue aTime )
 		{
 			printf("\t%02i.%02i.%4i , %02i.%02i.%02i Uhr\n", aDateTime.Day, aDateTime.Month, aDateTime.Year, aDateTime.Hours, aDateTime.Minutes, aDateTime.Seconds);
 		}
-		else 
+		else
 			printf("Error !\n");
 	}
-	
+
 	if ( osl_getDateTimeFromTimeValue( &aTime, &aSystemTime ) )
 	{
 		printf("SystemTime: \t\t%02i.%02i.%4i , %02i.%02i.%02i Uhr\n", aSystemTime.Day, aSystemTime.Month, aSystemTime.Year, aSystemTime.Hours, aSystemTime.Minutes, aSystemTime.Seconds);
 	}
-	else 
+	else
 		printf("Error !\n");
 
 	//Verify
@@ -423,7 +423,7 @@ void showTime( TimeValue aTime )
 			printf ("Verify : SystemTime : ok! \n");
 		else
 		{
-			printf ("Verify : SystemTime : Error! \n");			
+			printf ("Verify : SystemTime : Error! \n");
 			printf ("aTime : %u\n", aTime.Seconds);
 			printf ("aSystemTimeVal : %u\n", aSysTimeVal.Seconds);
 		}
@@ -438,9 +438,9 @@ TimeValue getSystemTime()
 {
 	TimeValue	aTime;
 	time_t ltime;
-    
+
 	time( &ltime );
-    
+
 	aTime.Seconds = ltime;
 	aTime.Nanosec = 0;
 
@@ -466,11 +466,11 @@ void DirectoryOpenAndCloseTest( void )
 	// open an existing directory
 	//--------------------------------------------------
 
-	pDir=new Directory( dir1 );	
+	pDir=new Directory( dir1 );
 	printf( "Open an existing directory: ");
 	printFileName( dir1 );
 	printf( "\n" );
-    
+
 	rc= pDir->open();
 	print_error( rtl::OString( "Open Directory" ), rc );
 
@@ -490,7 +490,7 @@ void DirectoryOpenAndCloseTest( void )
 	// open a not existing directory
 	//--------------------------------------------------
 
-	pDir=new Directory( dir_not_exist );	
+	pDir=new Directory( dir_not_exist );
 
 	printf( "Open a not existing directory: ");
 	printFileName( dir_not_exist );
@@ -502,12 +502,12 @@ void DirectoryOpenAndCloseTest( void )
 
 	delete pDir;
 
-	printf( "\n" );				
+	printf( "\n" );
 
 	//--------------------------------------------------
 	// open a directory with a wrong semantic
 	//--------------------------------------------------
-	pDir=new Directory( dir_wrong_semantic );	
+	pDir=new Directory( dir_wrong_semantic );
 
 	printf( "Open a directory with a wrong semantic: ");
 	printFileName( dir_wrong_semantic );
@@ -518,13 +518,13 @@ void DirectoryOpenAndCloseTest( void )
 
 	delete pDir;
 
-	printf( "\n" );				
+	printf( "\n" );
 
 	//--------------------------------------------------
 	// open an existing directory on a server
 	//--------------------------------------------------
-	
-	pDir=new Directory( dir_on_server );	
+
+	pDir=new Directory( dir_on_server );
 
 	printf( "Open an existing directory on a server: ");
 	printFileName( dir_on_server );
@@ -544,7 +544,7 @@ void DirectoryOpenAndCloseTest( void )
 	// open a not existing directory on a server
 	//--------------------------------------------------
 
-	pDir=new Directory( dir_not_exist_on_server );	
+	pDir=new Directory( dir_not_exist_on_server );
 
 	printf( "Open a not existing directory on a server: ");
 	printFileName( dir_not_exist_on_server );
@@ -560,7 +560,7 @@ void DirectoryOpenAndCloseTest( void )
 	// Close a not existing directory
 	//--------------------------------------------------
 
-	pDir=new Directory( dir_not_exist );	
+	pDir=new Directory( dir_not_exist );
 	printf( "Close a not existing directory: ");
 	printFileName( dir_not_exist );
 	printf( "\n" );
@@ -571,7 +571,7 @@ void DirectoryOpenAndCloseTest( void )
 	PressKey();
 	return;
 
-} 
+}
 
 //--------------------------------------------------
 // DirectoryCreateAndRemoveTest
@@ -599,12 +599,12 @@ void DirectoryCreateAndRemoveTest( void )
 
 	// Verify
 	pDir=new Directory( dir_not_exist );
-	
+
 	rc= pDir->open();
 	print_error( rtl::OString( "Verify" ), rc );
 	pDir->close();
 	delete pDir;
-	
+
 	printf( "\n" );
 
 	//--------------------------------------------------
@@ -619,7 +619,7 @@ void DirectoryCreateAndRemoveTest( void )
 	print_error( rtl::OString( "Create Directory" ), rc );
 
 	// Verify
-	pDir=new Directory( dir_not_exist_on_server );	
+	pDir=new Directory( dir_not_exist_on_server );
 	rc= pDir->open();
 	print_error( rtl::OString( "Verify" ), rc );
 	pDir->close();
@@ -634,10 +634,10 @@ void DirectoryCreateAndRemoveTest( void )
 	printf( "Remove the created directories: \n" );
 
 	rc=Directory::remove( dir_not_exist );
-	
+
 	rc1=Directory::remove( dir_not_exist_on_server );
-	
-	if ( rc==FileBase::E_None && rc1==FileBase::E_None ) 
+
+	if ( rc==FileBase::E_None && rc1==FileBase::E_None )
 		print_error( rtl::OString( "Remove Directories" ), FileBase::E_None );
 	else if ( rc!=FileBase::E_None )
 		print_error( rtl::OString( "Remove local Directory" ),rc );
@@ -673,15 +673,15 @@ static void FileOpenAndCloseTest( void )
 	printf( "--------------------------------------------\n" );
 	printf( "File-Open-And-Close-Test\n" );
 	printf( "--------------------------------------------\n\n" );
-	
+
 	File	*pFile;
-	
+
 	pFile=new File( file1 );
 
 	printf( "Open an existing file: ");
 	printFileName( file1 );
 	printf( "\n" );
-	
+
 	//--------------------------------------------------
 	// open an existing file (Read)
 	//--------------------------------------------------
@@ -703,7 +703,7 @@ static void FileOpenAndCloseTest( void )
 	//--------------------------------------------------
 
 	rc=pFile->open( OpenFlag_Write );
-	print_error( rtl::OString( "Open File (Write)" ), rc ); 
+	print_error( rtl::OString( "Open File (Write)" ), rc );
 
 	//--------------------------------------------------
 	// close the file
@@ -750,7 +750,7 @@ void FileCreateAndRemoveTest()
 
 	rc = pFile->open( OpenFlag_Read | OpenFlag_Write | osl_File_OpenFlag_Create );
 
-	print_error( rtl::OString( "Create and Open File (Read & Write)" ), rc ); 
+	print_error( rtl::OString( "Create and Open File (Read & Write)" ), rc );
 
 	//----------------------------------------------------
 	// close the file
@@ -777,7 +777,7 @@ void FileCreateAndRemoveTest()
 	//----------------------------------------------------
 	// remove an open file
 	//----------------------------------------------------
-	
+
 	pFile->open( OpenFlag_Read | OpenFlag_Write | osl_File_OpenFlag_Create );
 
 	rc=pFile->remove( file_not_exist );
@@ -785,7 +785,7 @@ void FileCreateAndRemoveTest()
 
 	pFile->close();
 	pFile->remove( file_not_exist );
-	
+
 	PressKey();
 
 	return;
@@ -815,7 +815,7 @@ void FileWriteAndReadTest( void )
 
 	printf( "Create File: ");
 	printFileName( file_not_exist );
-	printf("\n"); 
+	printf("\n");
 
 	//----------------------------------------------------
 	// open (create) a not existing file (Read and write)
@@ -823,7 +823,7 @@ void FileWriteAndReadTest( void )
 
 	rc = pFile->open( OpenFlag_Read | OpenFlag_Write | osl_File_OpenFlag_Create );
 
-	print_error( rtl::OString( "Create and Open File (Read & Write)" ), rc ); 
+	print_error( rtl::OString( "Create and Open File (Read & Write)" ), rc );
 
 	printf( "\n" );
 
@@ -926,7 +926,7 @@ void FileCopyAndMoveTest( void )
 		pFile->close();
 		File::remove( destPath );
 	}
-	else 
+	else
 		printf( "Verify: Error!\n" );
 
 	delete pFile;
@@ -940,7 +940,7 @@ void FileCopyAndMoveTest( void )
 	destPath=rtl::OUString( dir_not_exist );
 	destPath+=rtl::OUString::createFromAscii("/");
 	destPath+=file3;
-	
+
 	printf( "Copy a file to a not existing directory \n");
 	printf( "Copy the file  %s to %s\n", file1.getStr(), destPath.getStr() );
 
@@ -952,7 +952,7 @@ void FileCopyAndMoveTest( void )
 	//--------------------------------------------------
 	// Copy a directory
 	//--------------------------------------------------
-	
+
 	printf( "Copy the directory: ");
 	printFileName( dir1 );
 	printf( " to ");
@@ -971,7 +971,7 @@ void FileCopyAndMoveTest( void )
 	destPath=rtl::OUString( dir2 );
 	destPath+=rtl::OUString::createFromAscii("/");
 	destPath+=file3;
-	
+
 	printf( "Move the file ");
 	printFileName( file1 );
 	printf( " to ");
@@ -998,25 +998,25 @@ void FileCopyAndMoveTest( void )
 			printf( "Verify: OK!\n" );
 			File::move( destPath, file1 );
 		}
-		else 
+		else
 		{
 			printf( "Verify: Error!\n" );
 			pFile->close();
 			File::remove( destPath );
 		}
 	}
-	else 
+	else
 		printf( "Verify: Error!\n" );
 
 	delete pFile;
 
 	printf( "\n" );
 
-	
+
 	//--------------------------------------------------
 	// Move a file to a not existing directory
 	//--------------------------------------------------
-	
+
 	destPath=rtl::OUString( dir_not_exist );
 	destPath+=rtl::OUString::createFromAscii("/");
 	destPath+=file3;
@@ -1081,7 +1081,7 @@ void FileSizeTest( void )
 	printf( "\n\n");
 
 	rc = aFile.open( OpenFlag_Read | OpenFlag_Write | osl_File_OpenFlag_Create );
-	print_error( rtl::OString( "Create and Open File (Read & Write)" ), rc ); 
+	print_error( rtl::OString( "Create and Open File (Read & Write)" ), rc );
 	printf( "\n" );
 
 	if ( rc == FileBase::E_None )
@@ -1141,13 +1141,13 @@ void FileSizeTest( void )
 		rc=File::remove( file_not_exist );
 		print_error( rtl::OString( "Remove File" ), rc );
 	}
-	
+
 	PressKey();
 
 	return;
 }
 
- 
+
 //----------------------------------------------------
 // FilePointerTest
 //----------------------------------------------------
@@ -1169,14 +1169,14 @@ void FilePointerTest( void )
 	printf( "\n\n");
 
 	rc = rFile.open( OpenFlag_Read | OpenFlag_Write | osl_File_OpenFlag_Create );
-	print_error( rtl::OString( "Create and Open File (Read & Write) "), rc ); 
+	print_error( rtl::OString( "Create and Open File (Read & Write) "), rc );
 	printf( "\n" );
 
 	if ( rc==FileBase::E_None )
 	{
 
 		//----------------------------------------------------
-		// get the position of the filepointer 
+		// get the position of the filepointer
 		//----------------------------------------------------
 
 		rc =rFile.getPos( filepointer );
@@ -1204,13 +1204,13 @@ void FilePointerTest( void )
 			printf( "\nVerify: OK !\n" );
 			printf( "Filepointer-Position: %llu\n",filepointer );
 		}
-		else 
+		else
 		{
 			print_error( rtl::OString( "GetPos" ), rc );
 			printf( "\nFilePointer-Test: Error\n" );
 			printf( "Filepointer-Position: %i != 5000 \n",filepointer );
 		}
-			
+
 		printf( "\n" );
 
 		// close the file
@@ -1251,10 +1251,10 @@ void verifyFileAttributes( void )
 			showAttributes(uAttributes);
 			printf( "\n" );
 		}
-		else 
+		else
 			print_error( rtl::OString( "Get FileStatus" ), rc );
 	}
-	else 
+	else
 		print_error( rtl::OString( "Get DirectoryItem" ), rc );
 
 	return;
@@ -1272,11 +1272,11 @@ void FileAttributesTest( void )
 	printf( "File: ");
 	printFileName( file1 );
 	printf( "\n\n" );
-	
+
 
 	rc=File::setAttributes( file1, Attribute_GrpWrite );
 	print_error( rtl::OString( "Set Attribute: GrpWrite" ), rc );
-	
+
 	verifyFileAttributes();
 
 	rc=File::setAttributes( file1, 0 );
@@ -1285,7 +1285,7 @@ void FileAttributesTest( void )
 
 	rc=File::setAttributes( file1, Attribute_GrpRead );
 	print_error( rtl::OString( "Set Attribute: GrpRead" ), rc );
-	
+
 	verifyFileAttributes();
 
 	rc=File::setAttributes( file1, 0 );
@@ -1294,7 +1294,7 @@ void FileAttributesTest( void )
 
 	rc=File::setAttributes( file1, Attribute_GrpExe );
 	print_error( rtl::OString( "Set Attribute: GrpExe" ), rc );
-	
+
 	verifyFileAttributes();
 
 	rc=File::setAttributes( file1, 0 );
@@ -1303,7 +1303,7 @@ void FileAttributesTest( void )
 
 	rc=File::setAttributes( file1, Attribute_OwnWrite );
 	print_error( rtl::OString( "Set Attribute: OwnWrite" ), rc );
-	
+
 	verifyFileAttributes();
 
 	rc=File::setAttributes( file1, 0 );
@@ -1312,7 +1312,7 @@ void FileAttributesTest( void )
 
 	rc=File::setAttributes( file1, Attribute_OwnRead );
 	print_error( rtl::OString( "Set Attribute: OwnRead" ), rc );
-	
+
 	verifyFileAttributes();
 
 	rc=File::setAttributes( file1, 0 );
@@ -1321,7 +1321,7 @@ void FileAttributesTest( void )
 
 	rc=File::setAttributes( file1, Attribute_OwnExe );
 	print_error( rtl::OString( "Set Attribute: OwnExe" ), rc );
-	
+
 	verifyFileAttributes();
 
 	rc=File::setAttributes( file1, 0 );
@@ -1330,7 +1330,7 @@ void FileAttributesTest( void )
 
 	rc=File::setAttributes( file1, Attribute_OthWrite );
 	print_error( rtl::OString( "Set Attribute: OthWrite" ), rc );
-	
+
 	verifyFileAttributes();
 
 	rc=File::setAttributes( file1, 0 );
@@ -1339,7 +1339,7 @@ void FileAttributesTest( void )
 
 	rc=File::setAttributes( file1, Attribute_OthRead );
 	print_error( rtl::OString( "Set Attribute: OthRead" ), rc );
-	
+
 	verifyFileAttributes();
 
 	rc=File::setAttributes( file1, 0 );
@@ -1348,7 +1348,7 @@ void FileAttributesTest( void )
 
 	rc=File::setAttributes( file1, Attribute_OthExe );
 	print_error( rtl::OString( "Set Attribute: OthExe" ), rc );
-	
+
 	verifyFileAttributes();
 
 	rc=File::setAttributes( file1, 0 );
@@ -1360,7 +1360,7 @@ void FileAttributesTest( void )
 	print_error( rtl::OString( "Set all Attributes" ), rc );
 
 	verifyFileAttributes();
-	
+
 	PressKey();
 
 	return;
@@ -1379,11 +1379,11 @@ void FileAttributesTest( void )
 	printf( "File: ");
 	printFileName( file1 );
 	printf( "\n\n" );
-	
+
 
 	rc=File::setAttributes( file1, Attribute_ReadOnly );
 	print_error( rtl::OString( "Set Attribute: ReadOnly" ), rc );
-	
+
 	verifyFileAttributes();
 
 	rc=File::setAttributes( file1, 0 );
@@ -1405,9 +1405,9 @@ void FileAttributesTest( void )
 	print_error( rtl::OString( "Set Attribute: Hidden & ReadOnly" ), rc );
 
 	verifyFileAttributes();
-	
+
 	rc=File::setAttributes( file1, 0 );
-	print_error( rtl::OString( "Reset Attributes") , rc );	
+	print_error( rtl::OString( "Reset Attributes") , rc );
 
 	verifyFileAttributes();
 
@@ -1426,7 +1426,7 @@ void FileTimeTest( void )
 	FileBase::RC	rc;
 
 	DirectoryItem	aItem;
-	
+
 	struct tm sSysCreationTime = { 0, 20, 12, 4, 9, 100 };
 	struct tm sSysAccessTime = { 0, 40, 1, 6, 5, 98 };
 	struct tm sSysModifyTime = { 0, 1, 24, 13, 11, 95 };
@@ -1472,7 +1472,7 @@ void FileTimeTest( void )
 	//--------------------------------------------------
 	// Verify
 	//--------------------------------------------------
-	
+
 	FileStatus rStatus( FileStatusMask_CreationTime | FileStatusMask_AccessTime | FileStatusMask_ModifyTime);
 
 	printf( "\nVerify:\n" );
@@ -1495,8 +1495,8 @@ void FileTimeTest( void )
 			aCreationTimeRead=rStatus.getCreationTime();
 #ifdef WNT
 			if ( aCreationTime.Seconds == aCreationTimeRead.Seconds && aCreationTime.Nanosec == aCreationTimeRead.Nanosec )
-				printf( "GetCreationTime: ok : " );	
-			else 
+				printf( "GetCreationTime: ok : " );
+			else
 				printf( "GetCreationTime: Error : " );
 
 			showTime( aCreationTimeRead );
@@ -1505,26 +1505,26 @@ void FileTimeTest( void )
 			//--------------------------------------------------
 			// GetAccessTime
 			//--------------------------------------------------
-			
+
 			aAccessTimeRead=rStatus.getAccessTime();
-			
+
 			if ( aAccessTime.Seconds == aAccessTimeRead.Seconds && aAccessTime.Nanosec == aAccessTimeRead.Nanosec )
-				printf( "GetAccessTime: ok : " );	
-			else 
+				printf( "GetAccessTime: ok : " );
+			else
 				printf( "GetAccessTime: Error : " );
-			
+
 			showTime( aAccessTimeRead );
 			printf( "\n" );
-			
+
 			//--------------------------------------------------
 			// GetModifyTime
 			//--------------------------------------------------
-			
+
 			aModifyTimeRead=rStatus.getModifyTime();
-			
+
 			if ( aModifyTime.Seconds == aModifyTimeRead.Seconds && aModifyTime.Nanosec == aModifyTimeRead.Nanosec )
-				printf( "GetModifyTime: ok : " );	
-			else 
+				printf( "GetModifyTime: ok : " );
+			else
 				printf( "GetModifyTime: Error : " );
 
 			showTime( aModifyTimeRead );
@@ -1566,7 +1566,7 @@ void DirectoryItemTest( void )
 
 	pStatus=new FileStatus( FileStatusMask_All );
 	rc=aItem.getFileStatus( *pStatus );
-	
+
 	if ( rc==FileBase::E_None )
 	{
 		printf( "GetFileStatus: FileURL: ");
@@ -1577,7 +1577,7 @@ void DirectoryItemTest( void )
 	delete pStatus;
 
 	printf( "\n" );
-	
+
 	//--------------------------------------------------
 	// get DirectoryItem from a not existing directory
 	//--------------------------------------------------
@@ -1604,14 +1604,14 @@ void DirectoryItemTest( void )
 
 	pStatus=new FileStatus( FileStatusMask_All );
 	rc=aItem.getFileStatus( *pStatus );
-	
+
 	if ( rc==FileBase::E_None )
 	{
 		printf( "GetFileStatus: FileURL: ");
 		printFileName( pStatus->getFileURL() );
 		printf( "\n" );
 	}
-	
+
 	delete pStatus;
 
 	printf( "\n" );
@@ -1660,7 +1660,7 @@ void DirectoryItemTest( void )
 
 		pStatus=new FileStatus( FileStatusMask_All );
 		rc=aItem.getFileStatus( *pStatus );
-	
+
 		if ( rc==FileBase::E_None )
 		{
 			printf( "GetFileStatus: FileURL:  ");
@@ -1699,7 +1699,7 @@ void DirectoryItemTest( void )
 	printf( "Get next DirectoryItem from a directory: ");
 	printFileName( dir1);
 	printf( "\n" );
-	
+
 	rc= pDir->open();
 	print_error( rtl::OString( "Open Directory" ), rc );
 
@@ -1713,14 +1713,14 @@ void DirectoryItemTest( void )
 
 		rtl::OUString	str;
 		rtl::OUString	str1[2];
-		
+
 		aItem=DirectoryItem();
 		rc=pDir->getNextItem( aItem );
 		print_error( rtl::OString( "GetNextItem" ),rc );
-				
+
 		while( rc==FileBase::E_None )
 		{
-			
+
 			FileStatus rStatus( FileStatusMask_All );
 			aItem.getFileStatus( rStatus );
 
@@ -1745,21 +1745,21 @@ void DirectoryItemTest( void )
 			aItem=DirectoryItem();
 			rc=pDir->reset();
 			rc=pDir->getNextItem( aItem );
-		
+
 			FileStatus rStatus( FileStatusMask_All );
 			aItem.getFileStatus( rStatus );
 
 			str1[i]=rStatus.getFileName();
-		}		
+		}
 
 
 		if ( str1[0].compareTo(str1[1]) == 0 )
 			print_error( rtl::OString( "Reset" ),FileBase::E_None );
 		else
 			print_error( rtl::OString( "Reset" ),FileBase::E_invalidError );
-	
+
 		printf( "\n" );
-		
+
 		// Close Directory
 		rc=pDir->close();
 		print_error( rtl::OString( "Close Directory" ), rc );
@@ -1774,7 +1774,7 @@ void DirectoryItemTest( void )
 	printf( "Get next DirectoryItem from a closed directory: ");
 	printFileName( dir1 );
 	printf( "\n" );
-	
+
 	aItem=DirectoryItem();
 	rc=pDir->getNextItem( aItem );
 	print_error( rtl::OString( "GetNextItem" ),rc );
@@ -1810,13 +1810,13 @@ void FileStatusTest( FileStatus *pStatus )
 	printf( "\ngetAttributes:\n" );
 	uAttributes=pStatus->getAttributes();
 	showAttributes( uAttributes );
-	
+
 	//--------------------------------------------------
 	// GetCreationTime
 	//--------------------------------------------------
 
 	TimeValue	aCreationTime;
-		
+
 	printf( "\ngetCreationTime:\n" );
 	aCreationTime=pStatus->getCreationTime();
 
@@ -1828,7 +1828,7 @@ void FileStatusTest( FileStatus *pStatus )
 	//--------------------------------------------------
 
 	TimeValue	aAccessTime;
-	
+
 	printf( "\ngetAccessTime:\n" );
 	aAccessTime=pStatus->getAccessTime();
 
@@ -1840,7 +1840,7 @@ void FileStatusTest( FileStatus *pStatus )
 	//--------------------------------------------------
 
 	TimeValue	aModifyTime;
-	
+
 	printf( "\ngetModifyTime:\n" );
 	aModifyTime=pStatus->getModifyTime();
 
@@ -1854,7 +1854,7 @@ void FileStatusTest( FileStatus *pStatus )
 	sal_uInt64			FileSize;
 
 	printf( "\ngetFileSize:\n" );
-	
+
 	FileSize=pStatus->getFileSize();
 	printf( "FileSize: %i\n", FileSize);
 
@@ -1863,7 +1863,7 @@ void FileStatusTest( FileStatus *pStatus )
 	//--------------------------------------------------
 
 	rtl::OUString			FileName;
-	
+
 	printf( "\ngetFileName:\n" );
 
 	FileName=pStatus->getFileName();
@@ -1876,11 +1876,11 @@ void FileStatusTest( FileStatus *pStatus )
 	//--------------------------------------------------
 
 	rtl::OUString			FileURL;
-	
+
 	printf( "\ngetFileURL:\n" );
-	
+
 	FileURL=pStatus->getFileURL();
-	printf( "FileURL: "); 
+	printf( "FileURL: ");
 	printFileName( FileURL );
 	printf( "\n" );
 
@@ -1891,12 +1891,12 @@ void FileStatusTest( FileStatus *pStatus )
 	rtl::OUString			LinkTargetURL;
 
 	printf( "\ngetLinkTargetURL:\n");
-	
+
 	LinkTargetURL=pStatus->getLinkTargetURL();
 	printf( "LinkTargetURL: ");
 	printFileName( LinkTargetURL );
 	printf( "\n" );
-	
+
 	return;
 }
 
@@ -1915,7 +1915,7 @@ void DirectoryFileStatusTest( void )
 	printf( "--------------------------------------------\n\n" );
 
 	printf( "FileStatus of the directory: ");
-	printFileName( dir1 );    
+	printFileName( dir1 );
 	printf( "\n" );
 
 	aItem=DirectoryItem();
@@ -1924,7 +1924,7 @@ void DirectoryFileStatusTest( void )
 	print_error( rtl::OString( "Get DirectoryItem" ), rc );
 
 	if ( rc==FileBase::E_None )
-	{	
+	{
 		pStatus=new FileStatus( FileStatusMask_All );
 		rc=aItem.getFileStatus( *pStatus );
 
@@ -1956,7 +1956,7 @@ void FileFileStatusTest( void )
 	printf( "FileStatus of the file: ");
 	printFileName( file1 );
 	printf( "\n" );
-    
+
 	aItem=DirectoryItem();
 
 	rc=DirectoryItem::get( file1 , aItem );
@@ -1995,7 +1995,7 @@ void VolumeFileStatusTest( void )
 	printf( "FileStatus of the Volume: ");
 	printFileName( root );
 	printf( "\n" );
-    
+
 	aItem=DirectoryItem();
 
 	rc=DirectoryItem::get( root , aItem );
@@ -2032,12 +2032,12 @@ void VolumeInfoTest( void )
 
 	printf( "VolumeInfo of the volume ");
 	printFileName( root );
-    
+
 	printf( "\n" );
 
 	VolumeInfo rInfo( VolumeInfoMask_FreeSpace );
 	rc=Directory::getVolumeInfo( root , rInfo );
-	print_error( rtl::OString( "GetVolumeInfo" ),rc );	
+	print_error( rtl::OString( "GetVolumeInfo" ),rc );
 
 	printf( "\n" );
 
@@ -2138,7 +2138,7 @@ void ConvertPathTest(rtl::OUString& strPath)
 		printFileName( strNormPath );
 		printf( "\n" );
 	}
-	else 
+	else
 		printf( "normalizePath: Error \n" );
 
 	//--------------------------------------------------
@@ -2155,10 +2155,10 @@ void ConvertPathTest(rtl::OUString& strPath)
 			printFileName( strFileURL );
 			printf( "\n" );
 		}
-		else 
+		else
 			printf( "getFileURLFromSystemPath: Error \n" );
 	}
-	else 
+	else
 		printf( "getFileURLFromSystemPath: not tested \n" );
 
 	//--------------------------------------------------
@@ -2175,13 +2175,13 @@ void ConvertPathTest(rtl::OUString& strPath)
 			printFileName( strNormPathFromFileURL );
 			printf( "\n" );
 		}
-		else 
+		else
 			printf( "getNormalizedPathFromFileURL: Error \n" );
 	}
-	else 
+	else
 		printf( "getNormalizedPathFromFileURL: not tested \n" );
 
-	
+
 	//--------------------------------------------------
 	// getSystemPathFromFileURL
 	//--------------------------------------------------
@@ -2196,16 +2196,16 @@ void ConvertPathTest(rtl::OUString& strPath)
 			printFileName( strSystemPath );
 			printf( "\n");
 		}
-		else 
+		else
 			printf( "getSystemPathFromFileURL: Error \n" );
 	}
-	else 
+	else
 		printf( "getSystemPathFromFileURL: not tested \n" );
 
 	//--------------------------------------------------
 	// Verify
 	//--------------------------------------------------
-	
+
 	if ( strNormPathFromFileURL == strNormPath )
 		printf( "\nVerify: OK ! ( Normalized-Path == Normalized-Path-From-File-URL )\n" );
 	else
@@ -2239,7 +2239,7 @@ void FileBaseTest()
 	printf( "\n\n" );
 	ConvertPathTest(file_on_server);
 
-	PressKey(); 
+	PressKey();
 
 	return;
 }
@@ -2251,22 +2251,22 @@ void FileBaseTest()
 void DoAbsolutePathTest(rtl::OUString strDirBase, rtl::OUString	strRelative)
 {
 	FileBase::RC	rc;
-	
+
 	rtl::OUString		strAbsolute;
-		
+
 	printf( "Base-Directory: \t");
 	printFileName( strDirBase );
 	printf( "\n" );
 	printf( "Relative-Path: \t\t");
 	printFileName ( strRelative );
 	printf( "\n" );
-	
+
 	rc=FileBase::getAbsoluteFileURL( strDirBase, strRelative, strAbsolute );
 
 	if ( rc == FileBase::E_None )
 	{
 		printf( "Absolute-Path: \t\t");
-		printFileName ( strAbsolute );	
+		printFileName ( strAbsolute );
 		printf( "\n" );
 	}
 	else
@@ -2313,13 +2313,13 @@ void SearchPathTest(void)
 	printf( "--------------------------------------------\n" );
 	printf( "SearchPath-Test\n" );
 	printf( "--------------------------------------------\n\n" );
-	
+
 
 	rc=FileBase::getFileURLFromSystemPath( strNormPath, strFileURL );
 	print_error( rtl::OString( "getFileURLFromSystemPath" ), rc );
 	rc=FileBase::getSystemPathFromFileURL( strNormPath, strSystemPath );
 	print_error( rtl::OString( "getSystemPathFromFileURL" ), rc );
-	
+
 	//--------------------------------------------------
 	// searchFileURL (with a normalized path)
 	//--------------------------------------------------
@@ -2338,10 +2338,10 @@ void SearchPathTest(void)
 			printFileName ( strResultPath );
 			printf( "\n" );
 		}
-		else 
+		else
 			printf( "searchFileURL (with a normalized path): Error\n" );
 	}
-	else 
+	else
 		printf( "searchFileURL (with a normalized path): not tested\n" );
 
 	//--------------------------------------------------
@@ -2362,12 +2362,12 @@ void SearchPathTest(void)
 			printFileName ( strResultPath );
 			printf( "\n" );
 		}
-		else 
+		else
 			printf( "searchFileURL (with a FileURL path): Error\n" );
 	}
-	else 
+	else
 		printf( "searchFileURL (with a FileURL path): not tested\n" );
-	
+
 	//--------------------------------------------------
 	// searchFileURL (with a systempath)
 	//--------------------------------------------------
@@ -2386,10 +2386,10 @@ void SearchPathTest(void)
 			printFileName( strResultPath );
 			printf( "\n" );
 		}
-		else 
+		else
 			printf( "searchFileURL (with a systempath): Error\n" );
 	}
-	else 
+	else
 		printf( "searchFileURL (with a systempath): not tested\n" );
 
 	//--------------------------------------------------
@@ -2408,7 +2408,7 @@ void SearchPathTest(void)
 		printFileName( strResultPath );
 		printf( "\n" );
 	}
-	else 
+	else
 		printf( "searchFileURL:  File not found: OK ! \n" );
 
 	//--------------------------------------------------
@@ -2429,9 +2429,9 @@ void SearchPathTest(void)
 		printFileName( strResultPath );
 		printf( "\n");
 	}
-	else 
+	else
 		printf( "searchFileURL:  File not found: Error\n" );
-	
+
 	//------------------------------------------------------------
 	// searchFileURL (File and searchpath with two entries)
 	//------------------------------------------------------------
@@ -2454,7 +2454,7 @@ void SearchPathTest(void)
 		printFileName( strResultPath );
 		printf( "\n" );
 	}
-	else 
+	else
 		printf( "searchFileURL:  File not found: Error\n" );
 
 	//-------------------------------------------------------------------
@@ -2468,12 +2468,12 @@ void SearchPathTest(void)
 	printf( "SearchPath ");
 	printFileName( strSearchPath );
 	printf( "\n");
-	
+
 	rc=FileBase::searchFileURL( file3 , strSearchPath , strResultPath );
 
 	if ( rc == FileBase::E_None )
 		printf( "Error: Wrong Semantich but no error occurs !\n" );
-	else 
+	else
 		printf( "searchFileURL:  File not found: OK !\n" );
 
 	return;
@@ -2487,7 +2487,7 @@ void getCanonicalNameTest(rtl::OUString strPath)
 {
 	FileBase::RC	rc;
 
-	rtl::OUString	strValid;	
+	rtl::OUString	strValid;
 
 	printf( "Original-Name: \t\t");
 	printFileName( strPath );
@@ -2502,7 +2502,7 @@ void getCanonicalNameTest(rtl::OUString strPath)
 		printf( "\n");
 
 	}
-	else 
+	else
 		printf( "Canonical-Name: Error \n" );
 
 	printf( "\n" );
@@ -2533,7 +2533,7 @@ void print_error( ::rtl::OString& str, FileBase::RC rc )
 
 	printf( "%s : ",str.getStr() );
 	switch(rc)
-	{	
+	{
 	case FileBase::E_None:
 		printf("OK !\n");
 		break;
@@ -2670,7 +2670,7 @@ void print_error( ::rtl::OString& str, FileBase::RC rc )
 		printf("E_Unknown\n");
 		break;
 	}
-	return;	
+	return;
 }
 
 //--------------------------------------------------
@@ -2685,7 +2685,7 @@ void print_error( ::rtl::OString& str, FileBase::RC rc )
 int MAIN( int argc, char* argv[] )
 {
 	sal_Bool fSuccess=sal_False;
-	
+
 	//Initialization
 	fSuccess=Initialize();
 	if ( !fSuccess )
@@ -2693,8 +2693,8 @@ int MAIN( int argc, char* argv[] )
 		printf("Error during Initialization");
 		return -1;
 	}
-	
-	
+
+
 	if (argc==1)
 	{
 		DirectoryOpenAndCloseTest();

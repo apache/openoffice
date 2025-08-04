@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -42,7 +42,7 @@ namespace drawinglayer
     namespace tools
     {
         BitmapEx convertToBitmapEx(
-            const drawinglayer::primitive2d::Primitive2DSequence& rSeq, 
+            const drawinglayer::primitive2d::Primitive2DSequence& rSeq,
             const geometry::ViewInformation2D& rViewInformation2D,
             sal_uInt32 nDiscreteWidth,
             sal_uInt32 nDiscreteHeight,
@@ -80,7 +80,7 @@ namespace drawinglayer
                 const Size aSizePixel(nDiscreteWidth, nDiscreteHeight);
                 geometry::ViewInformation2D aViewInformation2D(rViewInformation2D);
                 VirtualDevice maContent;
-                    
+
                 // prepare vdev
                 maContent.SetOutputSizePixel(aSizePixel, false);
                 maContent.SetMapMode(aMapModePixel);
@@ -103,7 +103,7 @@ namespace drawinglayer
 
                     // get content
                     maContent.EnableMapMode(false);
-                    const Bitmap aContent(maContent.GetBitmap(aEmptyPoint, aSizePixel)); 
+                    const Bitmap aContent(maContent.GetBitmap(aEmptyPoint, aSizePixel));
 
 #ifdef DBG_UTIL
                     if(bDoSaveForVisualControl)

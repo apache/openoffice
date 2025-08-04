@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -94,14 +94,14 @@ void SwDoc::initXForms( bool bCreateDefaultModel )
         if( bCreateDefaultModel && xXForms.is() )
         {
             OUString sName(RTL_CONSTASCII_USTRINGPARAM("Model 1"));
-            Reference<XModel> xModel( 
+            Reference<XModel> xModel(
                 lcl_createInstance( "com.sun.star.xforms.Model" ),
                 UNO_QUERY );
             DBG_ASSERT( xModel.is(), "no model?" );
             if( xModel.is() )
             {
                 xModel->setID( sName );
-                Reference<XFormsUIHelper1>( xModel, UNO_QUERY )->newInstance( 
+                Reference<XFormsUIHelper1>( xModel, UNO_QUERY )->newInstance(
                     OUString(RTL_CONSTASCII_USTRINGPARAM("Instance 1")),
                     OUString(), sal_True );
                 xModel->initialize();
@@ -132,7 +132,7 @@ void SwDoc::disposeXForms( )
         sal_Int32 nNames = aNames.getLength();
         for( sal_Int32 n = 0; (n < nNames); n++ )
         {
-            Reference< xforms::XModel > xModel( 
+            Reference< xforms::XModel > xModel(
                 xXForms->getByName( pNames[n] ), UNO_QUERY );
 
             if( xModel.is() )
@@ -149,11 +149,11 @@ void SwDoc::disposeXForms( )
                 {
                     xModel->getBindings()->remove(xBindings->getByIndex( i ));
                 }
-                    
+
                 // ask model for Submissions
                 Reference< XIndexAccess > xSubmissions(
                          xModel->getSubmissions(), UNO_QUERY );
-                         
+
                 //
                 // Then release them one by one
                 //

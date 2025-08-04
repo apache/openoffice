@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -291,7 +291,7 @@ MyWin::MyWin( Window* pParent, WinBits nWinStyle ) :
     maTest2Line.SetPosSizePixel( TEXTFIELDSTARTX, nY, aOutputSize.Width()-2*TEXTFIELDSTARTX, FIXEDLINEHEIGHT );
 	maTest2Line.SetText( String( RTL_CONSTASCII_USTRINGPARAM( "Test Office Document" ) ) );
 	maTest2Line.Show();
-	
+
 	nY += EDITHEIGHT*3/2;
 
 
@@ -337,13 +337,13 @@ MyWin::MyWin( Window* pParent, WinBits nWinStyle ) :
     maEditDOCFileName.SetText( aNSSFolder + String( RTL_CONSTASCII_USTRINGPARAM( "demo-sample.sxw" ) ) );
     maEditSIGFileName.SetText( aNSSFolder + String( RTL_CONSTASCII_USTRINGPARAM( "demo-result.xml" ) ) );
     maEditTokenName.SetText( aNSSFolder );
-    
+
 #ifdef WNT
 	maEditTokenName.SetText( String() );
 	maEditTokenName.Disable();
 	maCryptoCheckBox.Disable();
-#endif 	
-    
+#endif
+
 }
 
 IMPL_LINK( MyWin, CryptoCheckBoxHdl, CheckBox*, EMPTYARG )
@@ -364,25 +364,25 @@ IMPL_LINK( MyWin, CryptoCheckBoxHdl, CheckBox*, EMPTYARG )
 IMPL_LINK( MyWin, DigitalSignaturesWithServiceHdl, Button*, EMPTYARG )
 {
     rtl::OUString aDocFileName = maEditDOCFileName.GetText();
-    uno::Reference < embed::XStorage > xStore = ::comphelper::OStorageHelper::GetStorageFromURL( 
+    uno::Reference < embed::XStorage > xStore = ::comphelper::OStorageHelper::GetStorageFromURL(
             aDocFileName, embed::ElementModes::READWRITE, comphelper::getProcessServiceFactory() );
 
-    uno::Reference< security::XDocumentDigitalSignatures > xD( 
+    uno::Reference< security::XDocumentDigitalSignatures > xD(
         comphelper::getProcessServiceFactory()->createInstance( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM ( "com.sun.star.security.DocumentDigitalSignatures" ) ) ), uno::UNO_QUERY );
     if ( xD.is() )
         xD->signDocumentContent( xStore, NULL );
 
-    
+
     return 0;
 }
 
 IMPL_LINK( MyWin, VerifyDigitalSignaturesHdl, Button*, EMPTYARG )
 {
     rtl::OUString aDocFileName = maEditDOCFileName.GetText();
-    uno::Reference < embed::XStorage > xStore = ::comphelper::OStorageHelper::GetStorageFromURL( 
+    uno::Reference < embed::XStorage > xStore = ::comphelper::OStorageHelper::GetStorageFromURL(
             aDocFileName, embed::ElementModes::READWRITE, comphelper::getProcessServiceFactory() );
 
-    uno::Reference< security::XDocumentDigitalSignatures > xD( 
+    uno::Reference< security::XDocumentDigitalSignatures > xD(
         comphelper::getProcessServiceFactory()->createInstance( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM ( "com.sun.star.security.DocumentDigitalSignatures" ) ) ), uno::UNO_QUERY );
     if ( xD.is() )
     {
@@ -399,10 +399,10 @@ IMPL_LINK( MyWin, VerifyDigitalSignaturesHdl, Button*, EMPTYARG )
             aText += String( RTL_CONSTASCII_USTRINGPARAM( "valid" ) );
             InfoBox( this, aText ).Execute();
         }
-        
+
     }
 
-    
+
     return 0;
 }
 
@@ -423,13 +423,13 @@ IMPL_LINK( MyWin, DigitalSignaturesWithTokenHdl, Button*, EMPTYARG )
         return 0;
     }
 
-    uno::Reference < embed::XStorage > xStore = ::comphelper::OStorageHelper::GetStorageFromURL( 
+    uno::Reference < embed::XStorage > xStore = ::comphelper::OStorageHelper::GetStorageFromURL(
             aDocFileName, embed::ElementModes::READWRITE, comphelper::getProcessServiceFactory() );
 
     aSignaturesDialog.SetStorage( xStore );
 
     aSignaturesDialog.Execute();
-    
+
     return 0;
 }
 
@@ -466,15 +466,15 @@ IMPL_LINK( MyWin, SignButtonHdl, Button*, EMPTYARG )
     sal_Int32 nSecurityId = aSignatureHelper.GetNewSecurityId();
 
     aSignatureHelper.SetX509Certificate( nSecurityId, xCertToUse->getIssuerName(), bigIntegerToNumericString( xCertToUse->getSerialNumber() ) );
-	
+
     aSignatureHelper.AddForSigning( nSecurityId, aXMLFileName, aXMLFileName, sal_False );
 	aSignatureHelper.AddForSigning( nSecurityId, aBINFileName, aBINFileName, sal_True );
-	
+
     SvFileStream* pStream = new SvFileStream( aSIGFileName, STREAM_WRITE );
     SvLockBytesRef xLockBytes = new SvLockBytes( pStream, sal_True );
  	uno::Reference< io::XOutputStream > xOutputStream = new utl::OOutputStreamHelper( xLockBytes );
 	bool bDone = aSignatureHelper.CreateAndWriteSignature( xOutputStream );
-	
+
 	aSignatureHelper.EndMission();
 
     if ( !bDone )
@@ -486,7 +486,7 @@ IMPL_LINK( MyWin, SignButtonHdl, Button*, EMPTYARG )
         rtl::OUString aInfo( String( RTL_CONSTASCII_USTRINGPARAM( "Signature successfully created!\n\n" ) ) );
         // aInfo += getSignatureInformationmations( aSignatureHelper.getAllSignatureInformation(), aSignatureHelper.GetSecurityEnvironment() );
 
-        			
+
         InfoBox( this, aInfo ).Execute();
     }
 
@@ -526,7 +526,7 @@ IMPL_LINK( MyWin, VerifyButtonHdl, Button*, EMPTYARG )
  	uno::Reference< io::XInputStream > xInputStream = new utl::OInputStreamHelper( xLockBytes, nBytes );
 	bool bDone = aSignatureHelper.ReadAndVerifySignature( xInputStream );
 	xInputStream->closeInput();
-	
+
 	aSignatureHelper.EndMission();
 
     if ( !bDone )

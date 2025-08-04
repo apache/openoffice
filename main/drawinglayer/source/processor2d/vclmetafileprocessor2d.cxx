@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -94,8 +94,8 @@ namespace
 {
     // #112245# helper to split line polygon in half
     void splitLinePolygon(
-        const basegfx::B2DPolygon& rBasePolygon, 
-        basegfx::B2DPolygon& o_aLeft, 
+        const basegfx::B2DPolygon& rBasePolygon,
+        basegfx::B2DPolygon& o_aLeft,
         basegfx::B2DPolygon& o_aRight)
     {
         const sal_uInt32 nCount(rBasePolygon.count());
@@ -103,7 +103,7 @@ namespace
         if(nCount)
         {
             const sal_uInt32 nHalfCount((nCount - 1) >> 1);
-            
+
             o_aLeft = basegfx::B2DPolygon(rBasePolygon, 0, nHalfCount + 1);
             o_aLeft.setClosed(false);
 
@@ -117,7 +117,7 @@ namespace
                 if(rBasePolygon.areControlPointsUsed())
                 {
                     o_aRight.setControlPoints(
-                        o_aRight.count() - 1, 
+                        o_aRight.count() - 1,
                         rBasePolygon.getPrevControlPoint(0),
                         rBasePolygon.getNextControlPoint(0));
                 }
@@ -168,16 +168,16 @@ namespace
                         // clip in left and right
                         const basegfx::B2DPolyPolygon aLeft(
                             basegfx::tools::clipPolygonOnParallelAxis(
-                                aCandidate, 
-                                false, 
-                                true, 
+                                aCandidate,
+                                false,
+                                true,
                                 aCenter.getX(),
                                 false));
                         const basegfx::B2DPolyPolygon aRight(
                             basegfx::tools::clipPolygonOnParallelAxis(
-                                aCandidate, 
-                                false, 
-                                false, 
+                                aCandidate,
+                                false,
+                                false,
                                 aCenter.getX(),
                                 false));
 
@@ -189,19 +189,19 @@ namespace
                         // clip in top and bottom
                         const basegfx::B2DPolyPolygon aTop(
                             basegfx::tools::clipPolygonOnParallelAxis(
-                                aCandidate, 
-                                true, 
-                                true, 
+                                aCandidate,
+                                true,
+                                true,
                                 aCenter.getY(),
                                 false));
                         const basegfx::B2DPolyPolygon aBottom(
                             basegfx::tools::clipPolygonOnParallelAxis(
-                                aCandidate, 
-                                true, 
-                                false, 
+                                aCandidate,
+                                true,
+                                false,
                                 aCenter.getY(),
                                 false));
-                        
+
                         aSplitted.append(aTop);
                         aSplitted.append(aBottom);
                     }
@@ -229,23 +229,23 @@ namespace drawinglayer
 	namespace processor2d
 	{
         Rectangle VclMetafileProcessor2D::impDumpToMetaFile(
-			const primitive2d::Primitive2DSequence& rContent, 
+			const primitive2d::Primitive2DSequence& rContent,
 			GDIMetaFile& o_rContentMetafile)
         {
             // Prepare VDev, MetaFile and connections
 			OutputDevice* pLastOutputDevice = mpOutputDevice;
             GDIMetaFile* pLastMetafile = mpMetaFile;
 			basegfx::B2DRange aPrimitiveRange(primitive2d::getB2DRangeFromPrimitive2DSequence(rContent, getViewInformation2D()));
-			
+
 			// transform primitive range with current transformation (e.g shadow offset)
 			aPrimitiveRange.transform(maCurrentTransformation);
-	
+
 			const Rectangle aPrimitiveRectangle(
 				basegfx::fround(aPrimitiveRange.getMinX()), basegfx::fround(aPrimitiveRange.getMinY()),
 				basegfx::fround(aPrimitiveRange.getMaxX()), basegfx::fround(aPrimitiveRange.getMaxY()));
 			VirtualDevice aContentVDev;
 			MapMode aNewMapMode(pLastOutputDevice->GetMapMode());
-			
+
 			mpOutputDevice = &aContentVDev;
             mpMetaFile = &o_rContentMetafile;
 			aContentVDev.EnableOutput(false);
@@ -274,7 +274,7 @@ namespace drawinglayer
         }
 
 		void VclMetafileProcessor2D::impConvertFillGradientAttributeToVCLGradient(
-			Gradient& o_rVCLGradient, 
+			Gradient& o_rVCLGradient,
 			const attribute::FillGradientAttribute& rFiGrAtt,
 			bool bIsTransparenceGradient)
         {
@@ -341,7 +341,7 @@ namespace drawinglayer
 			if(pSvtGraphicFill && !mnSvtGraphicFillCount)
 			{
 				SvMemoryStream aMemStm;
-				
+
 				aMemStm << *pSvtGraphicFill;
 				mpMetaFile->AddAction(new MetaCommentAction("XPATHFILL_SEQ_BEGIN", 0, static_cast< const sal_uInt8* >(aMemStm.GetData()), aMemStm.Seek(STREAM_SEEK_TO_END)));
 				mnSvtGraphicFillCount++;
@@ -359,10 +359,10 @@ namespace drawinglayer
 		}
 
 		SvtGraphicStroke* VclMetafileProcessor2D::impTryToCreateSvtGraphicStroke(
-			const basegfx::B2DPolygon& rB2DPolygon, 
-			const basegfx::BColor* pColor, 
-			const attribute::LineAttribute* pLineAttribute, 
-			const attribute::StrokeAttribute* pStrokeAttribute, 
+			const basegfx::B2DPolygon& rB2DPolygon,
+			const basegfx::BColor* pColor,
+			const attribute::LineAttribute* pLineAttribute,
+			const attribute::StrokeAttribute* pStrokeAttribute,
 			const attribute::LineStartEndAttribute* pStart,
 			const attribute::LineStartEndAttribute* pEnd)
 		{
@@ -374,7 +374,7 @@ namespace drawinglayer
 				basegfx::BColor aStrokeColor;
 				basegfx::B2DPolyPolygon aStartArrow;
 				basegfx::B2DPolyPolygon aEndArrow;
-				
+
 				if(pColor)
 				{
 					aStrokeColor = *pColor;
@@ -397,9 +397,9 @@ namespace drawinglayer
 					if(pStart && pStart->isActive())
 					{
 						fPolyLength = basegfx::tools::getLength(aLocalPolygon);
-						
+
 						aStartArrow = basegfx::tools::createAreaGeometryForLineStartEnd(
-							aLocalPolygon, pStart->getB2DPolyPolygon(), true, pStart->getWidth(), 
+							aLocalPolygon, pStart->getB2DPolyPolygon(), true, pStart->getWidth(),
 							fPolyLength, pStart->isCentered() ? 0.5 : 0.0, &fStart);
 					}
 
@@ -411,7 +411,7 @@ namespace drawinglayer
 						}
 
 						aEndArrow = basegfx::tools::createAreaGeometryForLineStartEnd(
-							aLocalPolygon, pEnd->getB2DPolyPolygon(), false, pEnd->getWidth(), 
+							aLocalPolygon, pEnd->getB2DPolyPolygon(), false, pEnd->getWidth(),
 							fPolyLength, pEnd->isCentered() ? 0.5 : 0.0, &fEnd);
 					}
 
@@ -496,7 +496,7 @@ namespace drawinglayer
 				// This is a partial fix. When a object transformation is used which
 				// e.g. contains a scaleX != scaleY, an unproportional scaling would
 				// have to be applied to the evtl. existing fat line. The current
-				// concept of PDF export and SvtGraphicStroke usage does simply not 
+				// concept of PDF export and SvtGraphicStroke usage does simply not
 				// allow handling such definitions. The only clean way would be to
 				// add the transformation to SvtGraphicStroke and to handle it there
 				aLocalPolygon.transform(maCurrentTransformation);
@@ -523,7 +523,7 @@ namespace drawinglayer
 			if(pSvtGraphicStroke && !mnSvtGraphicStrokeCount)
 			{
 				SvMemoryStream aMemStm;
-				
+
 				aMemStm << *pSvtGraphicStroke;
 				mpMetaFile->AddAction(new MetaCommentAction("XPATHSTROKE_SEQ_BEGIN", 0, static_cast< const sal_uInt8* >(aMemStm.GetData()), aMemStm.Seek(STREAM_SEEK_TO_END)));
 				mnSvtGraphicStrokeCount++;
@@ -606,7 +606,7 @@ namespace drawinglayer
 			Similar to pathfill, but using SvtGraphicStroke instead. It also has two producers where one
 			is also the GDIMetaFile::Rotate. Another user is MetaCommentAction::Move which modifies the
 			contained path accordingly.
-			The other one is SdrObject::Imp_DrawLineGeometry. It's done when MetaFile is set at OutDev and 
+			The other one is SdrObject::Imp_DrawLineGeometry. It's done when MetaFile is set at OutDev and
 			only when geometry is a single polygon (!). I see no reason for that; in the PS exporter this
 			would hinder to make use of PolyPolygon strokes. I will need to add support at:
 				PRIMITIVE2D_ID_POLYGONHAIRLINEPRIMITIVE2D
@@ -616,12 +616,12 @@ namespace drawinglayer
 			Okay, base implementation done based on those three primitives.
 
             FIELD_SEQ_BEGIN, FIELD_SEQ_END
-            
+
             Used from slideshow for URLs, created from diverse SvxField implementations inside
             createBeginComment()/createEndComment(). createBeginComment() is used from editeng\impedit3.cxx
             inside ImpEditEngine::Paint.
             Created TextHierarchyFieldPrimitive2D and added needed infos there; it is an group primitive and wraps
-            text primitives (but is not limited to that). It contains the field type if special actions for the 
+            text primitives (but is not limited to that). It contains the field type if special actions for the
 			support of FIELD_SEQ_BEGIN/END are needed; this is the case for Page and URL fields. If more is
 			needed, it may be supported there.
             FIELD_SEQ_BEGIN;PageField
@@ -633,7 +633,7 @@ namespace drawinglayer
             XTEXT_EOC(i) end of character
             XTEXT_EOW(i) end of word
             XTEXT_EOS(i) end of sentence
-            
+
             this three are with index and are created with the help of a i18n::XBreakIterator in
             ImplDrawWithComments. Simplifying, moving out text painting, reworking to create some
             data structure for holding those TEXT infos.
@@ -646,7 +646,7 @@ namespace drawinglayer
 
             XTEXT_EOL() end of line
             XTEXT_EOP() end of paragraph
-			
+
             First try with boolean marks at TextDecoratedPortionPrimitive2D did not work too well,
 			i decided to solve it with structure. I added the TextHierarchyPrimitives for this,
 			namely:
@@ -663,13 +663,13 @@ namespace drawinglayer
 
             XTEXT_PAINTSHAPE_BEGIN, XTEXT_PAINTSHAPE_END
 			Supported now by the TextHierarchyBlockPrimitive2D.
-			
+
             EPSReplacementGraphic:
 			Only used in goodies\source\filter.vcl\ieps\ieps.cxx and svx\source\xml\xmlgrhlp.cxx to
 			hold the original EPS which was imported in the same MetaFile as first 2 entries. Only
 			used to export the original again (if exists).
 			Not necessary to support with MetaFuleRenderer.
-			
+
             XTEXT_SCROLLRECT, XTEXT_PAINTRECT
 			Currently used to get extra MetaFile infos using GraphicExporter which again uses
 			SdrTextObj::GetTextScrollMetaFileAndRectangle(). ATM works with primitives since
@@ -684,7 +684,7 @@ namespace drawinglayer
 			was explicitly created for the printer already again to some default maximum
 			bitmap sizes.
 			Nothing to do here for the primitive renderer.
-			
+
 			Support for vcl::PDFExtOutDevData:
 			PL knows that SJ did that stuff, it's used to hold a pointer to PDFExtOutDevData at
 			the OutDev. When set, some extra data is written there. Trying simple PDF export and
@@ -693,7 +693,7 @@ namespace drawinglayer
 			the SdXImpressDocument::render and thus uses the VclMetafileProcessor2D. I will check
 			if i get a PDFExtOutDevData at the target output device.
 			Indeed, i get one. Checking what all may be done when that extra-device-info is there.
-			
+
 		    All in all i have to talk to SJ. I will need to emulate some of those actions, but
 			i need to discuss which ones.
 			In the future, all those infos would be taken from the primitive sequence anyways,
@@ -730,8 +730,8 @@ namespace drawinglayer
               as intended, the original file is exported. Works, Done.
 
 
-              
-              
+
+
             To be done:
 
             - Maybe there are more places to take care of for vcl::PDFExtOutDevData!
@@ -756,10 +756,10 @@ namespace drawinglayer
 					bool bUsingPDFExtOutDevData(false);
 					basegfx::B2DVector aTranslate, aScale;
 					static bool bSuppressPDFExtOutDevDataSupport(false);
-                    
+
 					if(mpPDFExtOutDevData && !bSuppressPDFExtOutDevDataSupport)
 					{
-						// emulate data handling from UnoControlPDFExportContact, original see 
+						// emulate data handling from UnoControlPDFExportContact, original see
 						// svtools/source/graphic/grfmgr.cxx
 						const Graphic& rGraphic = rGraphicPrimitive.getGraphicObject().GetGraphic();
 
@@ -787,10 +787,10 @@ namespace drawinglayer
 
 					if(bUsingPDFExtOutDevData)
 					{
-						// emulate data handling from UnoControlPDFExportContact, original see 
+						// emulate data handling from UnoControlPDFExportContact, original see
 						// svtools/source/graphic/grfmgr.cxx
 						const basegfx::B2DRange aCurrentRange(
-							aTranslate.getX(), aTranslate.getY(), 
+							aTranslate.getX(), aTranslate.getY(),
 							aTranslate.getX() + aScale.getX(), aTranslate.getY() + aScale.getY());
 						const Rectangle aCurrentRect(
 							sal_Int32(floor(aCurrentRange.getMinX())), sal_Int32(floor(aCurrentRange.getMinY())),
@@ -800,7 +800,7 @@ namespace drawinglayer
                         // #123295# As described below this is the expanded, uncropped region
                         // and needs to be given in any case, especially when no cropping it is
                         // equal to the current rect. To make clear: normally the uncropped region
-                        // (aka the aCropRect) is bigger than the CurrentRect. Or in other words: 
+                        // (aka the aCropRect) is bigger than the CurrentRect. Or in other words:
                         // The current rect is the object area. This internal crop definition is
                         // somewhat crude, but used (and defined in graphic-dependent units what
                         // leads to even more problems, percentages would have been better). All
@@ -820,7 +820,7 @@ namespace drawinglayer
 							{
 								const MapMode aMapMode100thmm(MAP_100TH_MM);
 								const Size aBitmapSize(Application::GetDefaultDevice()->LogicToLogic(
-									rGraphicPrimitive.getGraphicObject().GetPrefSize(), 
+									rGraphicPrimitive.getGraphicObject().GetPrefSize(),
 									rGraphicPrimitive.getGraphicObject().GetPrefMapMode(), aMapMode100thmm));
 								const double fDivX(aBitmapSize.Width() - rAttr.GetLeftCrop() - rAttr.GetRightCrop());
 								const double fDivY(aBitmapSize.Height() - rAttr.GetTopCrop() - rAttr.GetBottomCrop());
@@ -854,7 +854,7 @@ namespace drawinglayer
                             aCropRect,
                             aCurrentRect);
                     }
-				
+
 					break;
 				}
 				case PRIMITIVE2D_ID_CONTROLPRIMITIVE2D :
@@ -869,8 +869,8 @@ namespace drawinglayer
 						try
 						{
 							uno::Reference< beans::XPropertySet > xModelProperties(rXControl->getModel(), uno::UNO_QUERY);
-							uno::Reference< beans::XPropertySetInfo > xPropertyInfo(xModelProperties.is() 
-								? xModelProperties->getPropertySetInfo() 
+							uno::Reference< beans::XPropertySetInfo > xPropertyInfo(xModelProperties.is()
+								? xModelProperties->getPropertySetInfo()
 								: uno::Reference< beans::XPropertySetInfo >());
 							const ::rtl::OUString sPrintablePropertyName(RTL_CONSTASCII_USTRINGPARAM("Printable"));
 
@@ -898,25 +898,25 @@ namespace drawinglayer
                             // form control support now as follows
                             ::std::auto_ptr< ::vcl::PDFWriter::AnyWidget > pPDFControl;
                             ::toolkitform::describePDFControl( rXControl, pPDFControl, *mpPDFExtOutDevData );
-                            
+
                             if(pPDFControl.get())
                             {
                                 // still need to fill in the location (is a class Rectangle)
 			                    const basegfx::B2DRange aRangeLogic(rControlPrimitive.getB2DRange(getViewInformation2D()));
 	                            const Rectangle aRectLogic(
-		                            (sal_Int32)floor(aRangeLogic.getMinX()), (sal_Int32)floor(aRangeLogic.getMinY()), 
+		                            (sal_Int32)floor(aRangeLogic.getMinX()), (sal_Int32)floor(aRangeLogic.getMinY()),
 		                            (sal_Int32)ceil(aRangeLogic.getMaxX()), (sal_Int32)ceil(aRangeLogic.getMaxY()));
                                 pPDFControl->Location = aRectLogic;
-                                
+
                                 Size aFontSize(pPDFControl->TextFont.GetSize());
                                 aFontSize = mpOutputDevice->LogicToLogic(aFontSize, MapMode(MAP_POINT), mpOutputDevice->GetMapMode());
                                 pPDFControl->TextFont.SetSize(aFontSize);
-                                
+
                                 mpPDFExtOutDevData->BeginStructureElement(vcl::PDFWriter::Form);
                                 mpPDFExtOutDevData->CreateControl(*pPDFControl.get());
                                 mpPDFExtOutDevData->EndStructureElement();
 
-                                // no normal paint needed (see original UnoControlPDFExportContact::do_PaintObject); 
+                                // no normal paint needed (see original UnoControlPDFExportContact::do_PaintObject);
                                 // do not process recursively
                                 bDoProcessRecursively = false;
                             }
@@ -927,7 +927,7 @@ namespace drawinglayer
                                 // to false.
                             }
 					    }
-                        
+
                         // #i93169# used flag the wrong way; true means that nothing was done yet
                         if(bDoProcessRecursively)
 					    {
@@ -947,11 +947,11 @@ namespace drawinglayer
                                     // get position
                                     const basegfx::B2DHomMatrix aObjectToDiscrete(getViewInformation2D().getObjectToViewTransformation() * rControlPrimitive.getTransform());
                                     const basegfx::B2DPoint aTopLeftDiscrete(aObjectToDiscrete * basegfx::B2DPoint(0.0, 0.0));
-                                    
+
                                     // draw it
                                     xControlView->draw(basegfx::fround(aTopLeftDiscrete.getX()), basegfx::fround(aTopLeftDiscrete.getY()));
                                     bDoProcessRecursively = false;
-                                    
+
                                     // restore original graphics
 				                    xControlView->setGraphics(xOriginalGraphics);
                                 }
@@ -968,7 +968,7 @@ namespace drawinglayer
     					    process(rControlPrimitive.get2DDecomposition(getViewInformation2D()));
                         }
                     }
-					
+
 					break;
 				}
                 case PRIMITIVE2D_ID_TEXTHIERARCHYFIELDPRIMITIVE2D :
@@ -1013,7 +1013,7 @@ namespace drawinglayer
 						// emulate data handling from ImpEditEngine::Paint
 			            const basegfx::B2DRange aViewRange(primitive2d::getB2DRangeFromPrimitive2DSequence(rContent, getViewInformation2D()));
 	                    const Rectangle aRectLogic(
-		                    (sal_Int32)floor(aViewRange.getMinX()), (sal_Int32)floor(aViewRange.getMinY()), 
+		                    (sal_Int32)floor(aViewRange.getMinX()), (sal_Int32)floor(aViewRange.getMinY()),
 		                    (sal_Int32)ceil(aViewRange.getMaxX()), (sal_Int32)ceil(aViewRange.getMaxY()));
 						vcl::PDFExtOutDevBookmarkEntry aBookmark;
 						aBookmark.nLinkId = mpPDFExtOutDevData->CreateLink(aRectLogic);
@@ -1028,7 +1028,7 @@ namespace drawinglayer
                 {
                     const primitive2d::TextHierarchyLinePrimitive2D& rLinePrimitive = static_cast< const primitive2d::TextHierarchyLinePrimitive2D& >(rCandidate);
                     static const ByteString aCommentString("XTEXT_EOL");
-					
+
                     // process recursively and add MetaFile comment
 					process(rLinePrimitive.get2DDecomposition(getViewInformation2D()));
                     mpMetaFile->AddAction(new MetaCommentAction(aCommentString));
@@ -1041,7 +1041,7 @@ namespace drawinglayer
                     // "XTEXT_EOC" is used, use here, too.
 					const primitive2d::TextHierarchyBulletPrimitive2D& rBulletPrimitive = static_cast< const primitive2d::TextHierarchyBulletPrimitive2D& >(rCandidate);
                     static const ByteString aCommentString("XTEXT_EOC");
-					
+
                     // process recursively and add MetaFile comment
 					process(rBulletPrimitive.get2DDecomposition(getViewInformation2D()));
                     mpMetaFile->AddAction(new MetaCommentAction(aCommentString));
@@ -1166,7 +1166,7 @@ namespace drawinglayer
                         splitLinePolygon(rBasePolygon, aLeft, aRight);
                         const primitive2d::PolygonHairlinePrimitive2D aPLeft(aLeft, rHairlinePrimitive.getBColor());
                         const primitive2d::PolygonHairlinePrimitive2D aPRight(aRight, rHairlinePrimitive.getBColor());
-                   
+
                         processBasePrimitive2D(aPLeft);
                         processBasePrimitive2D(aPRight);
                     }
@@ -1185,15 +1185,15 @@ namespace drawinglayer
                         if(bSupportSvtGraphicStroke)
                         {
                             pSvtGraphicStroke = impTryToCreateSvtGraphicStroke(
-                                rHairlinePrimitive.getB2DPolygon(), 
-                                &aLineColor, 
+                                rHairlinePrimitive.getB2DPolygon(),
+                                &aLineColor,
                                 0, 0, 0, 0);
 
     					    impStartSvtGraphicStroke(pSvtGraphicStroke);
                         }
 
 					    RenderPolygonHairlinePrimitive2D(static_cast< const primitive2d::PolygonHairlinePrimitive2D& >(rCandidate), false);
-					    
+
                         if(bSupportSvtGraphicStroke)
                         {
                             impEndSvtGraphicStroke(pSvtGraphicStroke);
@@ -1216,7 +1216,7 @@ namespace drawinglayer
                             aLeft, rStrokePrimitive.getLineAttribute(), rStrokePrimitive.getStrokeAttribute());
                         const primitive2d::PolygonStrokePrimitive2D aPRight(
                             aRight, rStrokePrimitive.getLineAttribute(), rStrokePrimitive.getStrokeAttribute());
-                   
+
                         processBasePrimitive2D(aPLeft);
                         processBasePrimitive2D(aPRight);
                     }
@@ -1224,9 +1224,9 @@ namespace drawinglayer
                     {
     					// support SvtGraphicStroke MetaCommentAction
 					    SvtGraphicStroke* pSvtGraphicStroke = impTryToCreateSvtGraphicStroke(
-                            rBasePolygon, 0, 
-                            &rStrokePrimitive.getLineAttribute(), 
-                            &rStrokePrimitive.getStrokeAttribute(), 
+                            rBasePolygon, 0,
+                            &rStrokePrimitive.getLineAttribute(),
+                            &rStrokePrimitive.getStrokeAttribute(),
                             0, 0);
 
 					    impStartSvtGraphicStroke(pSvtGraphicStroke);
@@ -1245,7 +1245,7 @@ namespace drawinglayer
 						    else
 						    {
 							    basegfx::tools::applyLineDashing(
-								    rBasePolygon, rStroke.getDotDashArray(), 
+								    rBasePolygon, rStroke.getDotDashArray(),
 								    &aHairLinePolyPolygon, 0, rStroke.getFullDotDashLen());
 						    }
 
@@ -1253,7 +1253,7 @@ namespace drawinglayer
 						    mpOutputDevice->SetLineColor(Color(aHairlineColor));
 						    mpOutputDevice->SetFillColor();
 						    aHairLinePolyPolygon.transform(maCurrentTransformation);
-							
+
 							// #i113922# LineWidth needs to be transformed, too
 							const basegfx::B2DVector aDiscreteUnit(maCurrentTransformation * basegfx::B2DVector(rLine.getWidth(), 0.0));
 							const double fDiscreteLineWidth(aDiscreteUnit.getLength());
@@ -1281,7 +1281,7 @@ namespace drawinglayer
 
 					    impEndSvtGraphicStroke(pSvtGraphicStroke);
                     }
-					
+
 					break;
 				}
 				case PRIMITIVE2D_ID_POLYGONSTROKEARROWPRIMITIVE2D :
@@ -1297,18 +1297,18 @@ namespace drawinglayer
                         splitLinePolygon(rBasePolygon, aLeft, aRight);
                         const attribute::LineStartEndAttribute aEmpty;
                         const primitive2d::PolygonStrokeArrowPrimitive2D aPLeft(
-                            aLeft, 
-                            rStrokeArrowPrimitive.getLineAttribute(), 
+                            aLeft,
+                            rStrokeArrowPrimitive.getLineAttribute(),
                             rStrokeArrowPrimitive.getStrokeAttribute(),
                             rStrokeArrowPrimitive.getStart(),
                             aEmpty);
                         const primitive2d::PolygonStrokeArrowPrimitive2D aPRight(
-                            aRight, 
-                            rStrokeArrowPrimitive.getLineAttribute(), 
+                            aRight,
+                            rStrokeArrowPrimitive.getLineAttribute(),
                             rStrokeArrowPrimitive.getStrokeAttribute(),
                             aEmpty,
                             rStrokeArrowPrimitive.getEnd());
-                   
+
                         processBasePrimitive2D(aPLeft);
                         processBasePrimitive2D(aPRight);
                     }
@@ -1316,10 +1316,10 @@ namespace drawinglayer
                     {
     					// support SvtGraphicStroke MetaCommentAction
 	    				SvtGraphicStroke* pSvtGraphicStroke = impTryToCreateSvtGraphicStroke(
-                            rBasePolygon, 0, 
-                            &rStrokeArrowPrimitive.getLineAttribute(), 
-                            &rStrokeArrowPrimitive.getStrokeAttribute(), 
-                            &rStrokeArrowPrimitive.getStart(), 
+                            rBasePolygon, 0,
+                            &rStrokeArrowPrimitive.getLineAttribute(),
+                            &rStrokeArrowPrimitive.getStrokeAttribute(),
+                            &rStrokeArrowPrimitive.getStart(),
                             &rStrokeArrowPrimitive.getEnd());
 
                         // write LineGeometry start marker
@@ -1377,7 +1377,7 @@ namespace drawinglayer
                         const primitive2d::PolyPolygonGraphicPrimitive2D aSplitted(
                             aLocalPolyPolygon,
                             rBitmapCandidate.getFillGraphic());
-                        
+
                         processBasePrimitive2D(aSplitted);
                     }
                     else
@@ -1403,10 +1403,10 @@ namespace drawinglayer
                             // to object coordinates with object's top left being at (0,0). Divide
                             // by pixel size so that scale from pixel to logic will work in SvtGraphicFill.
                             const basegfx::B2DVector aTransformScale(
-                                rFillGraphicAttribute.getGraphicRange().getRange() / 
+                                rFillGraphicAttribute.getGraphicRange().getRange() /
                                 basegfx::B2DVector(
-                                    std::max(1.0, double(aBmpSizePixel.Width())), 
-                                    std::max(1.0, double(aBmpSizePixel.Height()))) * 
+                                    std::max(1.0, double(aBmpSizePixel.Width())),
+                                    std::max(1.0, double(aBmpSizePixel.Height()))) *
                                 aOutlineSize);
                             const basegfx::B2DPoint aTransformPosition(
                                 rFillGraphicAttribute.getGraphicRange().getMinimum() * aOutlineSize);
@@ -1417,7 +1417,7 @@ namespace drawinglayer
 						    // scale values are divided by bitmap pixel sizes
 						    aTransform.matrix[0] = aTransformScale.getX();
 						    aTransform.matrix[4] = aTransformScale.getY();
-    						
+
                             // translates are absolute
                             aTransform.matrix[2] = aTransformPosition.getX();
 						    aTransform.matrix[5] = aTransformPosition.getY();
@@ -1457,7 +1457,7 @@ namespace drawinglayer
                     if(aLocalPolyPolygon.getB2DRange() != rHatchCandidate.getDefinitionRange())
                     {
                         // the range which defines the hatch is different from the range of the
-                        // geometry (used for writer frames). This cannot be done calling vcl, thus use 
+                        // geometry (used for writer frames). This cannot be done calling vcl, thus use
                         // decomposition here
                         process(rCandidate.get2DDecomposition(getViewInformation2D()));
                         break;
@@ -1471,13 +1471,13 @@ namespace drawinglayer
                     if(rFillHatchAttribute.isFillBackground())
                     {
                         // with fixing #i111954# (see below) the possible background
-                        // fill of a hatched object was lost.Generate a background fill 
+                        // fill of a hatched object was lost.Generate a background fill
                         // primitive and render it
                         const primitive2d::Primitive2DReference xBackground(
                             new primitive2d::PolyPolygonColorPrimitive2D(
-                                aLocalPolyPolygon, 
+                                aLocalPolyPolygon,
                                 rHatchCandidate.getBackgroundColor()));
-                        
+
                         process(primitive2d::Primitive2DSequence(&xBackground, 1));
                     }
 
@@ -1491,7 +1491,7 @@ namespace drawinglayer
 
                         switch(rFillHatchAttribute.getStyle())
                         {
-                            default: // attribute::HATCHSTYLE_SINGLE : 
+                            default: // attribute::HATCHSTYLE_SINGLE :
                             {
                                 eHatch = SvtGraphicFill::hatchSingle;
                                 break;
@@ -1509,7 +1509,7 @@ namespace drawinglayer
                         }
 
                         SvtGraphicFill::Transform aTransform;
-                        
+
                         // scale
                         aTransform.matrix[0] *= rFillHatchAttribute.getDistance();
                         aTransform.matrix[4] *= rFillHatchAttribute.getDistance();
@@ -1519,7 +1519,7 @@ namespace drawinglayer
                         aTransform.matrix[1] *= -sin(rFillHatchAttribute.getAngle());
                         aTransform.matrix[3] *= sin(rFillHatchAttribute.getAngle());
                         aTransform.matrix[4] *= cos(rFillHatchAttribute.getAngle());
-                        
+
                         pSvtGraphicFill = new SvtGraphicFill(
                             PolyPolygon(aLocalPolyPolygon),
                             Color(),
@@ -1548,8 +1548,8 @@ namespace drawinglayer
                         attribute::HATCHSTYLE_DOUBLE == rFillHatchAttribute.getStyle() ? HATCH_DOUBLE :
                         HATCH_TRIPLE);
 
-                    mpOutputDevice->DrawHatch(aToolsPolyPolygon, 
-                        Hatch(aHatchStyle, 
+                    mpOutputDevice->DrawHatch(aToolsPolyPolygon,
+                        Hatch(aHatchStyle,
                             Color(rFillHatchAttribute.getColor()),
                             basegfx::fround(rFillHatchAttribute.getDistance()),
                             basegfx::fround(rFillHatchAttribute.getAngle() / F_PI1800)));
@@ -1572,15 +1572,15 @@ namespace drawinglayer
                         // with objects and this case is not expressable in a Metafile (and cannot be added
                         // since the FileFormats used, e.g. *.wmf, do not support it either).
                         // Such cases happen when a graphic object uses a Metafile as graphic information or
-                        // a fill style definition uses a Metafile. In this cases the graphic content is 
-                        // rotated with the graphic or filled object; this is not supported by the target 
+                        // a fill style definition uses a Metafile. In this cases the graphic content is
+                        // rotated with the graphic or filled object; this is not supported by the target
                         // format of this conversion renderer - Metafiles.
                         // To solve this, not a Gradient is written, but the decomposition of this object
                         // is written to the Metafile. This is the PolyPolygons building the gradient fill.
                         // These will need more space and time, but the result will be as if the Gradient
                         // was rotated with the object.
                         // This mechanism is used by all exporters still not using Primtives (e.g. Print,
-                        // Slideshow, Export rto PDF, export to Picture, ...) but relying on Metafile 
+                        // Slideshow, Export rto PDF, export to Picture, ...) but relying on Metafile
                         // transfers. One more reason to *change* these to primitives.
                         // BTW: One more example how useful the principles of primitives are; the decomposition
                         // is by definition a simpler, maybe more expensive representation of the same content.
@@ -1594,7 +1594,7 @@ namespace drawinglayer
                     if(aLocalPolyPolygon.getB2DRange() != rGradientCandidate.getDefinitionRange())
                     {
                         // the range which defines the gradient is different from the range of the
-                        // geometry (used for writer frames). This cannot be done calling vcl, thus use 
+                        // geometry (used for writer frames). This cannot be done calling vcl, thus use
                         // decomposition here
                         process(rCandidate.get2DDecomposition(getViewInformation2D()));
                         break;
@@ -1611,7 +1611,7 @@ namespace drawinglayer
                     Gradient aVCLGradient;
                     impConvertFillGradientAttributeToVCLGradient(aVCLGradient, rGradientCandidate.getFillGradient(), false);
                     aLocalPolyPolygon.transform(maCurrentTransformation);
-                    
+
                     // #i82145# ATM VCL printing of gradients using curved shapes does not work,
                     // i submitted the bug with the given ID to THB. When that task is fixed it is
                     // necessary to again remove this subdivision since it decreases possible
@@ -1642,7 +1642,7 @@ namespace drawinglayer
                                 eGrad = SvtGraphicFill::gradientRectangular;
                                 break;
                         }
-                        
+
                         pSvtGraphicFill = new SvtGraphicFill(
                             aToolsPolyPolygon,
                             Color(),
@@ -1717,9 +1717,9 @@ namespace drawinglayer
                     {
                             impStartSvtGraphicFill(pSvtGraphicFill);
                     }
-				    
+
                     mpOutputDevice->DrawPolyPolygon(aLocalPolyPolygon);
-				    
+
                     if(bSupportSvtGraphicFill)
                     {
                         impEndSvtGraphicFill(pSvtGraphicFill);
@@ -1741,14 +1741,14 @@ namespace drawinglayer
 							// prepare new mask polygon and rescue current one
 					        aMask.transform(maCurrentTransformation);
                             const basegfx::B2DPolyPolygon aLastClipPolyPolygon(maClipPolyPolygon);
-					        
+
                             if(maClipPolyPolygon.count())
                             {
-								// there is already a clip polygon set; build clipped union of 
+								// there is already a clip polygon set; build clipped union of
 								// current mask polygon and new one
 								maClipPolyPolygon = basegfx::tools::clipPolyPolygonOnPolyPolygon(
-                                    aMask, 
-                                    maClipPolyPolygon, 
+                                    aMask,
+                                    maClipPolyPolygon,
                                     true, // #i106516# we want the inside of aMask, not the outside
                                     false);
                             }
@@ -1803,7 +1803,7 @@ namespace drawinglayer
                     {
 		                aInvisibleRange.transform(maCurrentTransformation);
                         const Rectangle aRectLogic(
-	                        (sal_Int32)floor(aInvisibleRange.getMinX()), (sal_Int32)floor(aInvisibleRange.getMinY()), 
+	                        (sal_Int32)floor(aInvisibleRange.getMinX()), (sal_Int32)floor(aInvisibleRange.getMinY()),
 	                        (sal_Int32)ceil(aInvisibleRange.getMaxX()), (sal_Int32)ceil(aInvisibleRange.getMaxY()));
 
                         mpOutputDevice->SetFillColor();
@@ -1850,7 +1850,7 @@ namespace drawinglayer
 							    // single transparent PolyPolygon identified, use directly
 							    const basegfx::BColor aPolygonColor(maBColorModifierStack.getModifiedColor(pPoPoColor->getBColor()));
 							    basegfx::B2DPolyPolygon aLocalPolyPolygon(pPoPoColor->getB2DPolyPolygon());
-                                
+
                                 // #i112245# Metafiles use tools Polygon and are not able to have more than 65535 points
                                 // per polygon. Split polygon until there are less than that
                                 while(fillPolyPolygonNeededToBeSplit(aLocalPolyPolygon))
@@ -1861,7 +1861,7 @@ namespace drawinglayer
 
 							    // XPATHFILL_SEQ_BEGIN/XPATHFILL_SEQ_END support
 							    SvtGraphicFill* pSvtGraphicFill = 0;
-                                
+
                                 // #121267# Not needed, does not give better quality compared with
                                 // the META_POLYPOLYGON_ACTION written by the DrawPolyPolygon command
                                 // below
@@ -1899,9 +1899,9 @@ namespace drawinglayer
                                 }
 
 							    mpOutputDevice->DrawTransparent(
-								    PolyPolygon(aLocalPolyPolygon), 
+								    PolyPolygon(aLocalPolyPolygon),
 								    nTransPercentVcl);
-							    
+
                                 if(bSupportSvtGraphicFill)
                                 {
                                     impEndSvtGraphicFill(pSvtGraphicFill);
@@ -1940,10 +1940,10 @@ namespace drawinglayer
 							    aVCLGradient.SetStartIntensity(100);
 							    aVCLGradient.SetEndIntensity(100);
 							    aVCLGradient.SetSteps(2);
-    							
+
 							    // render it to VCL
 							    mpOutputDevice->DrawTransparent(
-								    aContentMetafile, aPrimitiveRectangle.TopLeft(), 
+								    aContentMetafile, aPrimitiveRectangle.TopLeft(),
 								    aPrimitiveRectangle.GetSize(), aVCLGradient);
 						    }
 					    }
@@ -1986,10 +1986,10 @@ namespace drawinglayer
 							// re-create a VCL-gradient from FillGradientPrimitive2D
 							Gradient aVCLGradient;
                             impConvertFillGradientAttributeToVCLGradient(aVCLGradient, pFiGradient->getFillGradient(), true);
-							
+
 							// render it to VCL
 							mpOutputDevice->DrawTransparent(
-								aContentMetafile, aPrimitiveRectangle.TopLeft(), 
+								aContentMetafile, aPrimitiveRectangle.TopLeft(),
 								aPrimitiveRectangle.GetSize(), aVCLGradient);
                         }
                         else
@@ -2010,7 +2010,7 @@ namespace drawinglayer
 				            basegfx::B2DRange aViewRange(primitive2d::getB2DRangeFromPrimitive2DSequence(rContent, getViewInformation2D()));
 				            aViewRange.transform(maCurrentTransformation);
 		                    const Rectangle aRectLogic(
-			                    (sal_Int32)floor(aViewRange.getMinX()), (sal_Int32)floor(aViewRange.getMinY()), 
+			                    (sal_Int32)floor(aViewRange.getMinX()), (sal_Int32)floor(aViewRange.getMinY()),
 			                    (sal_Int32)ceil(aViewRange.getMaxX()), (sal_Int32)ceil(aViewRange.getMaxY()));
 		                    const Rectangle aRectPixel(mpOutputDevice->LogicToPixel(aRectLogic));
                             Size aSizePixel(aRectPixel.GetSize());
@@ -2060,12 +2060,12 @@ namespace drawinglayer
 								// except new transformation and range
                                 const geometry::ViewInformation2D aViewInfo(
 									getViewInformation2D().getObjectTransformation(),
-									aViewTransform, 
-									aViewRange, 
+									aViewTransform,
+									aViewRange,
 									getViewInformation2D().getVisualizedPage(),
-									getViewInformation2D().getViewTime(), 
+									getViewInformation2D().getViewTime(),
 									getViewInformation2D().getExtendedInformationSequence());
-                                
+
 								VclPixelProcessor2D aBufferProcessor(aViewInfo, aBufferDevice);
 
                                 // draw content using pixel renderer
@@ -2137,7 +2137,7 @@ namespace drawinglayer
 
 					// process childs normally
 					process(rStructureTagCandidate.getChildren());
-					
+
 					if(mpPDFExtOutDevData &&  bTagUsed)
 					{
 						// write end tag
