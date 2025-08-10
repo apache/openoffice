@@ -19,12 +19,30 @@ default_stages: [pre-commit, pre-push]
 default_language_version:
   # force all unspecified Python hooks to run python3
   python: python3
-minimum_pre_commit_version: "2.17.0"
+minimum_pre_commit_version: "3.2.0"
 repos:
   - repo: meta
     hooks:
       - id: identity
       - id: check-hooks-apply
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.27.2
+    hooks:
+      - id: gitleaks
+        name: run gitleaks
+        description: check for secrets with gitleaks
+  - repo: https://github.com/Lucas-C/pre-commit-hooks
+    rev: v1.5.5
+    hooks:
+      - id: insert-license
+        name: add license for all Markdown files
+        files: \.md$
+        args:
+          - --comment-style
+          - '<!--||-->'
+          - --license-filepath
+          - .github/workflows/license-templates/LICENSE.txt
+          - --fuzzy-match-generates-todo
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
     hooks:
@@ -47,3 +65,12 @@ repos:
         description: check spelling with codespell
         args: [--ignore-words=.github/linters/codespell.txt]
         exclude: ^extras/
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.45.0
+    hooks:
+      - id: markdownlint
+        name: run markdownlint
+        description: check Markdown files with markdownlint
+        args: [--config=.github/linters/.markdown-lint.yml]
+        types: [markdown]
+        files: \.md$
