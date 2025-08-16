@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
 
@@ -170,7 +168,7 @@ void SwWrtShell::Edit()
 
 sal_Bool SwWrtShell::IsEndWrd()
 {
-	MV_KONTEXT(this);
+	MV_CONTEXT(this);
 	if(IsEndPara() && !IsSttPara())
 		return sal_True;
 
@@ -179,7 +177,7 @@ sal_Bool SwWrtShell::IsEndWrd()
 
 
 /*------------------------------------------------------------------------
- Beschreibung:	Abfrage, ob Einfuegen moeglich ist; gfs. Beep
+ Beschreibung:	Abfrage, ob Einfügen moeglich ist; ggfs. Beep
 ------------------------------------------------------------------------*/
 
 bool SwWrtShell::_CanInsert()
@@ -194,7 +192,7 @@ bool SwWrtShell::_CanInsert()
 }
 
 /*------------------------------------------------------------------------
- Beschreibung:	String einfuegen
+ Beschreibung:	String einfügen
 ------------------------------------------------------------------------*/
 
 void SwWrtShell::InsertByWord( const String & rStr)
@@ -912,8 +910,8 @@ void SwWrtShell::ConnectObj( svt::EmbeddedObjectRef& xObj, const SwRect &rPrt,
 }
 
 /*------------------------------------------------------------------------
- Beschreibung:	Einfuegen harter Seitenumbruch;
-				Selektionen werden ueberschrieben
+ Beschreibung:	Einfügen harter Seitenumbruch;
+				Selektionen werden überschrieben
 ------------------------------------------------------------------------*/
 
 
@@ -923,7 +921,7 @@ void SwWrtShell::InsertPageBreak(const String *pPageDesc, sal_uInt16 nPgNum )
 	ResetCursorStack();
 	if( _CanInsert() )
 	{
-		ACT_KONTEXT(this);
+		ACT_CONTEXT(this);
 		StartUndo(UNDO_UI_INSERT_PAGE_BREAK);
 
 		if ( !IsCrsrInTbl() )
@@ -947,8 +945,8 @@ void SwWrtShell::InsertPageBreak(const String *pPageDesc, sal_uInt16 nPgNum )
 	}
 }
 /*------------------------------------------------------------------------
- Beschreibung:	Einfuegen harter Zeilenumbruch;
-				Selektionen werden ueberschrieben
+ Beschreibung:	Einfügen harter Zeilenumbruch;
+				Selektionen werden überschrieben
 ------------------------------------------------------------------------*/
 
 
@@ -969,14 +967,14 @@ void SwWrtShell::InsertLineBreak()
 	}
 }
 /*------------------------------------------------------------------------
- Beschreibung:	Einfuegen harter Spaltenumbruch;
-				Selektionen werden ueberschrieben
+ Beschreibung:	Einfügen harter Spaltenumbruch;
+				Selektionen werden überschrieben
 ------------------------------------------------------------------------*/
 
 
 void SwWrtShell::InsertColumnBreak()
 {
-	ACT_KONTEXT(this);
+	ACT_CONTEXT(this);
 	ResetCursorStack();
 	if( _CanInsert() )
 	{
@@ -995,7 +993,7 @@ void SwWrtShell::InsertColumnBreak()
 }
 
 /*------------------------------------------------------------------------
- Beschreibung:	Einfuegen Fussnote
+ Beschreibung:	Einfügen Fussnote
  Parameter: 	rStr -- optionales Fussnotenzeichen
 ------------------------------------------------------------------------*/
 
@@ -1039,7 +1037,7 @@ void SwWrtShell::SplitNode( sal_Bool bAutoFmt, sal_Bool bCheckTableStart )
 	ResetCursorStack();
 	if( _CanInsert() )
 	{
-		ACT_KONTEXT(this);
+		ACT_CONTEXT(this);
 
 		rView.GetEditWin().FlushInBuffer();
 		sal_Bool bHasSel = HasSelection();
@@ -1057,7 +1055,7 @@ void SwWrtShell::SplitNode( sal_Bool bAutoFmt, sal_Bool bCheckTableStart )
 
 /*------------------------------------------------------------------------
  Beschreibung:	Numerierung anschalten
- Parameter: 	Optionale Angabe eines Namens fuer die benannte Liste;
+ Parameter: 	Optionale Angabe eines Namens für die benannte Liste;
 				dieser bezeichnet eine Position, wenn er in eine
 				Zahl konvertierbar ist und kleiner ist als nMaxRules.
 -------------------------------------------------------------------------*/
@@ -1488,7 +1486,7 @@ SelectionType SwWrtShell::GetSelectionType() const
 {
     // ContentType kann nicht ermittelt werden innerhalb einer
     // Start-/Endactionklammerung.
-    // Da es keinen ungueltigen Wert gibt, wird TEXT geliefert.
+    // Da es keinen ungültigen Wert gibt, wird TEXT geliefert.
     // Der Wert ist egal, da in EndAction ohnehin aktualisiert wird.
 
     if ( BasicActionPend() )
@@ -1539,7 +1537,7 @@ SelectionType SwWrtShell::GetSelectionType() const
     if ( IsFrmSelected() )
     {
         if (_rView.IsDrawMode())
-            _rView.LeaveDrawCreate();   // Aufraeumen (Bug #45639)
+            _rView.LeaveDrawCreate();   // Aufräumen (Bug #45639)
         if ( !(nCnt & (CNT_GRF | CNT_OLE)) )
             return nsSelectionType::SEL_FRM;
     }
@@ -1656,7 +1654,7 @@ String SwWrtShell::GetCurPageStyle( const sal_Bool bCalcFrm ) const
 }
 
 /*------------------------------------------------------------------------
- Beschreibung:	Aktuelle Vorlage anhand der geltenden Attribute aendern
+ Beschreibung:	Aktuelle Vorlage anhand der geltenden Attribute ändern
 ------------------------------------------------------------------------*/
 
 
@@ -1664,7 +1662,7 @@ void SwWrtShell::QuickUpdateStyle()
 {
 	SwTxtFmtColl *pColl = GetCurTxtFmtColl();
 
-	// Standard kann nicht geaendert werden
+	// Standard kann nicht geändert werden
 	if(pColl && !pColl->IsDefault())
 	{
 		FillByEx(pColl);

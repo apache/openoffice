@@ -116,7 +116,7 @@
 
 FlyMode SwBaseShell::eFrameMode = FLY_DRAG_END;
 
-//Fuer die Erkennung der Id, die variable von Gallery mit SID_GALLERY_BG_BRUSH
+//Für die Erkennung der Id, die variable von Gallery mit SID_GALLERY_BG_BRUSH
 //ankommt.
 static sal_uInt8 nParagraphPos;
 static sal_uInt8 nGraphicPos;
@@ -695,7 +695,7 @@ void SwBaseShell::Execute(SfxRequest &rReq)
 
 				if (rSh.HasMark())
 				{
-					MV_KONTEXT(&rSh);
+					MV_CONTEXT(&rSh);
 					if (rSh.IsCrsrPtAtEnd())
 						rSh.SwapPam();
 					rSh.ClearMark();
@@ -757,7 +757,7 @@ void SwBaseShell::Execute(SfxRequest &rReq)
 
                 if( pGalleryItem->IsLink() )
                 {
-                    // Verknuepft
+                    // Verknüpft
                     aGrfName = pGalleryItem->GetURL();
                     aFltName = pGalleryItem->GetFilterName();
                 }
@@ -769,8 +769,8 @@ void SwBaseShell::Execute(SfxRequest &rReq)
 
                 GetView().GetEditWin().GrabFocus();
             }
-            else if(!rSh.IsSelFrmMode() &&
-                nGalleryItemType == com::sun::star::gallery::GalleryItemType::MEDIA  )
+            else if ( !rSh.IsSelFrmMode() &&
+                nGalleryItemType == com::sun::star::gallery::GalleryItemType::MEDIA )
             {
                 const SfxStringItem aMediaURLItem( SID_INSERT_AVMEDIA, pGalleryItem->GetURL() );
                 GetView().GetViewFrame()->GetDispatcher()->Execute( SID_INSERT_AVMEDIA, SFX_CALLMODE_SYNCHRON, &aMediaURLItem, 0L );
@@ -797,7 +797,7 @@ void SwBaseShell::Execute(SfxRequest &rReq)
 		{
 			if (pArgs)
 			{
-				// aktuellen PageDescriptor ermitteln und damit den Set fuellen
+				// aktuellen PageDescriptor ermitteln und damit den Set füllen
 				const sal_uInt16 nCurIdx = rSh.GetCurPageDesc();
 				SwPageDesc aPageDesc(rSh.GetPageDesc(nCurIdx));
 
@@ -824,9 +824,9 @@ void SwBaseShell::Execute(SfxRequest &rReq)
 				GetView().GetViewFrame()->GetDispatcher()->Execute(FN_FORMAT_PAGE_COLUMN_DLG, sal_False);
 		}
 		break;
-        case FN_CONVERT_TABLE_TO_TEXT:
-        case FN_CONVERT_TEXT_TO_TABLE:
-        case FN_CONVERT_TEXT_TABLE:
+		case FN_CONVERT_TABLE_TO_TEXT:
+		case FN_CONVERT_TEXT_TO_TABLE:
+		case FN_CONVERT_TEXT_TABLE:
 		{
             sal_Unicode cDelim = 0;
             bool bToTable = false;
@@ -1016,7 +1016,7 @@ void SwBaseShell::Execute(SfxRequest &rReq)
 		{
 			SvxContourDlg *pDlg = SWCONTOURDLG(GetView());
 
-			// Kontrolle, ob Zuweisung ueberhaupt sinnvoll/erlaubt
+			// Kontrolle, ob Zuweisung überhaupt sinnvoll/erlaubt
 			int nSel = rSh.GetSelectionType();
 			if ( nSel & (nsSelectionType::SEL_GRF|nsSelectionType::SEL_OLE) )
 			{
@@ -1074,7 +1074,7 @@ void SwBaseShell::Execute(SfxRequest &rReq)
 			{
 				// Der Set beinhaltet auch VERT/HORI_ORIENT, da in FEShell::
 				// SetFlyFrmAttr/SetFlyFrmAnchor ggf. als Folge des Umankerns
-				// die Ausrichtungen veraendert werden sollen.
+				// die Ausrichtungen verändert werden sollen.
 				SfxItemSet aSet( GetPool(), RES_VERT_ORIENT, RES_ANCHOR );
 				SwFmtAnchor aAnc( eSet, rSh.GetPhyPageNum() );
 				aSet.Put( aAnc );
@@ -1231,7 +1231,7 @@ void SwBaseShell::Execute(SfxRequest &rReq)
 			}
 			else if ( rSh.IsFrmSelected() )
 			{
-				// Umrandungsattribute ueber Frame-Manager setzen
+				// Umrandungsattribute über Frame-Manager setzen
 				SwFlyFrmAttrMgr aMgr( sal_False, &rSh, FRMMGR_TYPE_NONE );
 				aMgr.SetAttrSet( *pArgs );
 				aMgr.UpdateFlyFrm();
@@ -1263,14 +1263,14 @@ void SwBaseShell::Execute(SfxRequest &rReq)
 			}
 			else if ( rSh.IsFrmSelected() )
 			{
-				// Umrandungsattribute ueber Frame-Manager setzen
+				// Umrandungsattribute über Frame-Manager setzen
 				SwFlyFrmAttrMgr aMgr( sal_False, &rSh, FRMMGR_TYPE_NONE );
 				aMgr.SetAttrSet(*pArgs);
 				aMgr.UpdateFlyFrm();
 			}
 			else
 			{
-				// Umrandungsattribute ganz normal ueber Shell setzen
+				// Umrandungsattribute ganz normal über Shell setzen
 				rSh.SetAttrItem( *pItem );
 			}
 		}
@@ -1283,7 +1283,7 @@ void SwBaseShell::Execute(SfxRequest &rReq)
 }
 
 /* -----------------14.04.99 15:10-------------------
- * Hier wird der State fuer SID_IMAP / SID_CONTOUR behandelt,
+ * Hier wird der State für SID_IMAP / SID_CONTOUR behandelt,
  * wenn die Grafik ausgeswappt ist
  * --------------------------------------------------*/
 IMPL_LINK(SwBaseShell, GraphicArrivedHdl, SwCrsrShell* , EMPTYARG )
@@ -2967,3 +2967,5 @@ void SwBaseShell::ExecField( SfxRequest& rReq )
 			ASSERT(sal_False, falscher Dispatcher);
 	}
 }
+
+/* vim: set noet sw=4 ts=4: */
