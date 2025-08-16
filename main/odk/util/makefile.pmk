@@ -84,7 +84,7 @@ MY_COPY_RECURSIVE=$(GNUCOPY) -urf
 .ENDIF
 
 MY_DELETE_RECURSIVE=rm -rf
-MY_TEXTCOPY=@cp 
+MY_TEXTCOPY=@cp
 
 .IF "$(GUI)"=="WNT"
 #--------------------
