@@ -19,7 +19,6 @@
  *
  *************************************************************/
 
-
 #ifndef _SWWTABSH_HXX
 #define _SWWTABSH_HXX
 
@@ -31,8 +30,10 @@ public:
 	SFX_DECL_INTERFACE(SW_WEBTABSHELL)
 	TYPEINFO();
 
-	virtual     ~SwWebTableShell();
+	virtual		~SwWebTableShell();
 				SwWebTableShell(SwView &rView);
 };
 
 #endif
+
+/* vim: set noet sw=4 ts=4: */
