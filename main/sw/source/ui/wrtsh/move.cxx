@@ -19,11 +19,8 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
-
 
 #include <sfx2/bindings.hxx>
 #include <wrtsh.hxx>
@@ -34,7 +31,7 @@
 #include <crsskip.hxx>
 
 /*	Immer:
-	-	Zuruecksetzen des Cursorstacks
+	-	Zurücksetzen des Cursorstacks
 	-	Timer nachtriggern
 	-	gfs. GCAttr
 
@@ -62,8 +59,8 @@ public:
 	{
 		if( bAct )
 		{
-			//Die Action wird fuer das Scrollen in "einabsaetzigen" Rahmen mit
-			//fester Hoehe gebraucht.
+			//Die Action wird für das Scrollen in "einabsaetzigen" Rahmen mit
+			//fester Höhe gebraucht.
 			pSh->StartAllAction();
 			pSh->EndAllAction();
 		}
@@ -546,8 +543,8 @@ sal_Bool SwWrtShell::PopCrsr(sal_Bool bUpdate, sal_Bool bSelect)
 	const sal_Bool bValidPos = pCrsrStack->bValidCurPos;
 	if( bUpdate && bValidPos )
 	{
-			// falls ein Vorgaenger auf dem Stack steht, dessen Flag fuer eine
-			// gueltige Position verwenden.
+			// falls ein Vorgänger auf dem Stack steht, dessen Flag für eine
+			// gültige Position verwenden.
 		SwRect aTmpArea(VisArea());
 		aTmpArea.Pos().Y() -= pCrsrStack->lOffset;
 		if( aTmpArea.IsInside( pCrsrStack->aDocPos ) )
@@ -675,10 +672,12 @@ sal_Bool SwWrtShell::SelectTxtAttr( sal_uInt16 nWhich, const SwTxtAttr* pAttr )
 {
     sal_Bool bRet;
     {
-        MV_KONTEXT(this);
+        MV_CONTEXT(this);
         SttSelect();
         bRet = SwCrsrShell::SelectTxtAttr( nWhich, sal_False, pAttr );
     }
     EndSelect();
     return bRet;
 }
+
+/* vim: set noet sw=4 ts=4: */

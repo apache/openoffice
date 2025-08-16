@@ -19,7 +19,6 @@
  *
  *************************************************************/
 
-
 #ifndef _EDITSH_HXX
 #define _EDITSH_HXX
 
@@ -104,7 +103,6 @@ class SwAuthEntry;
 class SwRewriter;
 struct SwConversionArgs;
 
-
 namespace com { namespace sun { namespace star { namespace uno {
 	template < class > class Sequence;
 }}}}
@@ -127,7 +125,7 @@ namespace sw {
 #define GETSELTXT_PARABRK_TO_ONLYCR 	2
 
 /****************************************************************
- *	zum Abfragen der INet-Attribute fuer den Navigator
+ *	zum Abfragen der INet-Attribute für den Navigator
  ****************************************************************/
 struct SwGetINetAttr
 {
@@ -155,11 +153,11 @@ class SW_DLLPUBLIC SwEditShell: public SwCrsrShell
 {
 	static SvxSwAutoFmtFlags* pAutoFmtFlags;
 
-	// fuer die privaten Methoden DelRange und die vom AutoCorrect
+	// für die privaten Methoden DelRange und die vom AutoCorrect
 	friend class SwAutoFormat;
 	friend void _InitCore();
 	friend void _FinitCore();
-	// fuer die PamCorrAbs/-Rel Methoden
+	// für die PamCorrAbs/-Rel Methoden
 	friend class SwUndo;
 
 	SW_DLLPRIVATE SfxPoolItem& _GetChrFmt( SfxPoolItem& ) const;
@@ -184,15 +182,15 @@ public:
 	void Overwrite( const String & );
 
 	// Ersetz einen selektierten Bereich in einem TextNode mit dem
-	// String. Ist fuers Suchen&Ersetzen gedacht.
+	// String. Ist fürs Suchen&Ersetzen gedacht.
 	// bRegExpRplc - ersetze Tabs (\\t) und setze den gefundenen String
 	//				 ein ( nicht \& )
 	// 				z.B.: Fnd: "zzz", Repl: "xx\t\\t..&..\&"
 	//						--> "xx\t<Tab>..zzz..&"
 	sal_Bool Replace( const String& rNewStr, sal_Bool bRegExpRplc = sal_False );
 
-	// loescht den Inhalt aller Bereiche;
-	// werden ganze Nodes selektiert, werden die Nodes geloescht
+	// löscht den Inhalt aller Bereiche;
+	// werden ganze Nodes selektiert, werden die Nodes gelöscht
 	long Delete();
 
 	// remove a complete paragraph
@@ -204,8 +202,8 @@ public:
     // count words in current selection
     void CountWords( SwDocStat& rStat ) const;
 
-	// loesche den nicht sichtbaren Content aus dem Document, wie z.B.:
-	// versteckte Bereiche, versteckte Absaetze
+	// lösche den nicht sichtbaren Content aus dem Document, wie z.B.:
+	// versteckte Bereiche, versteckte Absätze
 	sal_Bool RemoveInvisibleContent();
 
     // replace fields by text - mailmerge support
@@ -221,12 +219,12 @@ public:
 	// in die angegebene Shell
 	long Copy( SwEditShell* pDestShell = 0 );
 
-	// fuers Kopieren uebers ClipBoard:
+	// fürs Kopieren übers ClipBoard:
 	// 	wird Tabelle in Tabelle kopiert, verschiebe aus dieser dann
 	//	alle Cursor. Copy und Paste muss aufgrund der FlyFrames in
 	// 	der FEShell stehen!
 	// kopiere alle Selectionen und das Doc
-	//JP 21.10.96: und fuer die SVX-Autokorrektur
+	//JP 21.10.96: und für die SVX-Autokorrektur
 	sal_Bool _CopySelToDoc( SwDoc* pInsDoc, SwNodeIndex* pNdInsPos = 0 );
 
 	long SplitNode( sal_Bool bAutoFormat = sal_False, sal_Bool bCheckTableStart = sal_True );
@@ -234,7 +232,7 @@ public:
     void AutoFmtBySplitNode();
 
 	// ist der Cursor in einem INetAttribut, dann wird das komplett
-	// geloescht; inclusive des Hinweistextes (wird beim Drag&Drop gebraucht)
+	// gelöscht; inclusive des Hinweistextes (wird beim Drag&Drop gebraucht)
 	sal_Bool DelINetAttrWithText();
 
 	// ist der Cursor am Ende einer Zeichenvorlage, an der das DontExpand-Flag
@@ -290,8 +288,8 @@ public:
 
 	/* Formatcollections, neu */
 	/* GetXXXCount() liefert die Anzahl der im Dokument vorhandenen XXX
-	 * GetXXX(i)	 liefert das i-te XXX (ERR_RAISE bei Ueberindizierung!)
-	 * DelXXX(i)	 loescht das i-te XXX (ERR_RAISE bei Ueberindizierung!)
+	 * GetXXX(i)	 liefert das i-te XXX (ERR_RAISE bei Überindizierung!)
+	 * DelXXX(i)	 loescht das i-te XXX (ERR_RAISE bei Überindizierung!)
 	 * GetCurXXX()	 liefert das am Cursor oder in den Bereichen
 	 *				 geltende XXX (0, wenn nicht eindeutig!)
 	 * SetXXX() 	 setzt am Cursor oder in den Bereichen das XXX
@@ -313,8 +311,8 @@ public:
 	void FillByEx(SwTxtFmtColl*, sal_Bool bReset = sal_False);
 	SwTxtFmtColl* FindTxtFmtCollByName( const String& rName ) const;
 
-		// Gebe die "Auto-Collection" mit der Id zurueck. Existiert
-		// sie noch nicht, dann erzuege sie
+		// Gebe die "Auto-Collection" mit der Id zurück. Existiert
+		// sie noch nicht, dann erzeuge sie
 	SwTxtFmtColl* GetTxtCollFromPool( sal_uInt16 nId );
 		// return das geforderte automatische  Format - Basis-Klasse !
 	SwFmt* GetFmtFromPool( sal_uInt16 nId );
@@ -367,7 +365,7 @@ public:
     SwFldUpdateFlags GetFldUpdateFlags(sal_Bool bDocSettings = sal_False) const;
     void SetFldUpdateFlags( SwFldUpdateFlags eFlags );
 
-	// fuer die Evaluierung der DBFelder (neuer DB-Manager)
+	// für die Evaluierung der DBFelder (neuer DB-Manager)
 	SwNewDBMgr* GetNewDBMgr() const;
 
 	SwFieldType* InsertFldType(const SwFieldType &);
@@ -381,7 +379,7 @@ public:
 	// Dokument - Statistics
 	void UpdateDocStat( SwDocStat& rStat );
 
-	// Verzeichnismarke einfuegen loeschen
+	// Verzeichnismarke einfuegen löschen
 	void 	Insert(const SwTOXMark& rMark);
 	void	DeleteTOXMark(SwTOXMark* pMark);
 
@@ -418,7 +416,7 @@ public:
 	void			SetTOIAutoMarkURL(const String& rSet);
 	void 			ApplyAutoMark();
 
-	// Schluessel fuer die Indexverwaltung
+	// Schlüssel fuer die Indexverwaltung
 	sal_uInt16 GetTOIKeys( SwTOIKeyType eTyp, SvStringsSort& rArr ) const;
 
 	void SetOutlineNumRule(const SwNumRule&);
@@ -450,16 +448,16 @@ public:
                         const String sContinuedListId = String(),
                         const bool bResetIndentAttrs = false );
 
-    // Absaetze ohne Numerierung, aber mit Einzuegen
+    // Absätze ohne Numerierung, aber mit Einzügen
     sal_Bool NoNum();
-    // Loeschen, Splitten der Aufzaehlungsliste
+    // Löschen, Splitten der Aufzählungsliste
     void DelNumRules();
     // Hoch-/Runterstufen
     sal_Bool NumUpDown( sal_Bool bDown = sal_True );
     // Hoch-/Runtermoven sowohl innerhalb als auch ausserhalb von Numerierungen
     sal_Bool MoveParagraph( long nOffset = 1 );
     sal_Bool MoveNumParas( sal_Bool bUpperLower, sal_Bool bUpperLeft );
-    // No-/Numerierung ueber Delete/Backspace ein/abschalten #115901#
+    // No-/Numerierung über Delete/Backspace ein/abschalten #115901#
     sal_Bool NumOrNoNum( sal_Bool bDelete = sal_False, sal_Bool bChkStart = sal_True );
     // -> #i23726#
 
@@ -512,14 +510,14 @@ public:
 
 	// Undo
 	// UndoHistory am Dokument pflegen
-	// bei Save, SaveAs, Create wird UndoHistory zurueckgesetzt ???
+	// bei Save, SaveAs, Create wird UndoHistory zurückgesetzt ???
 	void DoUndo( sal_Bool bOn = sal_True );
 	sal_Bool DoesUndo() const;
 	void DoGroupUndo( sal_Bool bUn = sal_True );
 	sal_Bool DoesGroupUndo() const;
 	void DelAllUndoObj();
 
-	// macht rueckgaengig:
+	// macht rückgängig:
 	// setzt Undoklammerung auf, liefert nUndoId der Klammerung
     SwUndoId StartUndo( SwUndoId eUndoId = UNDO_EMPTY, const SwRewriter * pRewriter = 0 );
 	// schliesst Klammerung der nUndoId, nicht vom UI benutzt
@@ -540,11 +538,11 @@ public:
     bool Redo(sal_uInt16 const nCount = 1);
     bool Repeat(sal_uInt16 const nCount);
 
-	// fuer alle Sichten auf dieses Dokument
+	// für alle Sichten auf dieses Dokument
 	void StartAllAction();
 	void EndAllAction();
 
-	//Damit Start-/EndActions aufgesetzt werden koennen.
+	//Damit Start-/EndActions aufgesetzt werden können.
 	void CalcLayout();
 
 	// Inhaltsform bestimmen, holen, liefert Type am CurCrsr->SPoint
@@ -581,7 +579,7 @@ public:
     void ClearAutomaticContour();
 
 	/*
-	 * liefert die Groesse einer Graphic in Twips, wenn der Cursor
+	 * liefert die Grösse einer Graphic in Twips, wenn der Cursor
 	 * auf einer Graphic steht; sal_Bool liefert sal_False, wenn s.o.
 	 */
 	sal_Bool GetGrfSize(Size&) const;
@@ -634,7 +632,7 @@ public:
 	// das aktuelle Dokument, Vorlagen nur wenn es nicht schon gibt
 	void InsertGlossary( SwTextBlocks& rGlossary, const String& );
 	// aktuelle Selektion zum Textbaustein machen und ins
-	// Textbausteindokument einfuegen, einschliesslich Vorlagen
+	// Textbausteindokument einfügen, einschliesslich Vorlagen
 	sal_uInt16 MakeGlossary( SwTextBlocks& rToFill, const String& rName,
 						 const String& rShortName, sal_Bool bSaveRelFile = sal_False,
                          const String* pOnlyTxt=0 );
@@ -654,7 +652,7 @@ public:
 	// zu trennendes Wort ignorieren
 	void HyphIgnore();
 
-	// zum Einfuegen des SoftHyphens, Position ist der Offset
+	// zum Einfügen des SoftHyphens, Position ist der Offset
 	// innerhalb des getrennten Wortes.
 	void InsertSoftHyph( const xub_StrLen nHyphPos );
 
@@ -693,9 +691,9 @@ public:
 	// Tabelle an der Cursor Position aufsplitten
 	sal_Bool SplitTable( sal_uInt16 eMode );
 	// Tabellen verbinden
-	// CanMerge kann feststellen, ob Prev oder Next moeglich ist. Wird
-	// der Pointer pChkNxtPrv uebergeben, wird festgestellt in welche
-	// Richtung es moeglich ist.
+	// CanMerge kann feststellen, ob Prev oder Next möglich ist. Wird
+	// der Pointer pChkNxtPrv übergeben, wird festgestellt in welche
+	// Richtung es möglich ist.
 	sal_Bool CanMergeTable( sal_Bool bWithPrev = sal_True, sal_Bool* pChkNxtPrv = 0 ) const;
 	sal_Bool MergeTable( sal_Bool bWithPrev = sal_True, sal_uInt16 nMode = 0 );
 		// setze das InsertDB als Tabelle Undo auf:
@@ -771,7 +769,7 @@ public:
 					sal_Bool bKeepSelection = sal_False );
 	sal_uInt16 GetINetAttrs( SwGetINetAttrs& rArr );
 
-	//SS Fuer holen/ersetzen DropCap-Inhalt
+	//SS Für holen/ersetzen DropCap-Inhalt
 	String GetDropTxt( const sal_uInt16 nChars ) const;
 	void   ReplaceDropTxt( const String &rStr );
 
@@ -786,7 +784,7 @@ public:
 	sal_Bool GetCurFtn( SwFmtFtn* pToFillFtn = 0 );
     bool SetCurFtn( const SwFmtFtn& rFillFtn );
     bool HasFtns( bool bEndNotes = false ) const;
-//z.Zt nicht benoetigt	sal_uInt16 GetFtnCnt( sal_Bool bEndNotes = sal_False ) const;
+//z.Zt nicht benötigt	sal_uInt16 GetFtnCnt( sal_Bool bEndNotes = sal_False ) const;
 		// gebe Liste aller Fussnoten und deren Anfangstexte
     sal_uInt16 GetSeqFtnList( SwSeqFldList& rList, bool bEndNotes = false );
 
@@ -795,7 +793,7 @@ public:
 	sal_Bool IsInsRegionAvailable() const;
 	const SwSection* GetCurrSection() const;
 	// liefert wie GetCurrSection() den aktuellen Bereich, allerdings geht diese Funktion
-	// ueber die Frames und erwischt dabei auch den Bereich, wenn der Cursor in einer
+	// über die Frames und erwischt dabei auch den Bereich, wenn der Cursor in einer
 	// Fussnote steht, deren Referenz in einem spaltigen Bereich steckt.
 	// Wenn man bOutOfTab setzt, wird der Bereich gesucht,
 	// der die Tabelle umfasst, nicht etwa ein innerer.
@@ -813,7 +811,7 @@ public:
 
 	String GetUniqueSectionName( const String* pChkStr = 0 ) const;
 
-	//Attribute setzen
+	// Attribute setzen
 	void SetSectionAttr(const SfxItemSet& rSet, SwSectionFmt* pSectFmt = 0);
 
 	// search inside the cursor selection for full selected sections.
@@ -835,7 +833,7 @@ public:
     sfx2::LinkManager& GetLinkManager();
 	inline const sfx2::LinkManager& GetLinkManager() const;
 
-	// linken Rand ueber Objectleiste einstellen (aenhlich dem Stufen von
+	// linken Rand über Objectleiste einstellen (ähnlich dem Stufen von
 	// Numerierungen), optional kann man "um" den Offset stufen oder "auf"
 	// die Position gestuft werden (bModulus = sal_True)
 	sal_Bool IsMoveLeftMargin( sal_Bool bRight = sal_True, sal_Bool bModulus = sal_True ) const;
@@ -846,7 +844,7 @@ public:
 	const SvNumberFormatter* GetNumberFormatter() const
 	{	return ((SwEditShell*)this)->GetNumberFormatter(); 	}
 
-	// Schnitstellen fuers GlobalDokument
+	// Schnitstellen fürs GlobalDokument
 	sal_Bool IsGlobalDoc() const;
 	void SetGlblDocSaveLinks( sal_Bool bFlag = sal_True );
 	sal_Bool IsGlblDocSaveLinks() const;
@@ -863,7 +861,7 @@ public:
 								sal_uInt16 nNewPos );
 	sal_Bool GotoGlobalDocContent( const SwGlblDocContent& rPos );
 
-	// alles fuers Redlining
+	// alles fürs Redlining
 	sal_uInt16 GetRedlineMode() const;
 	void SetRedlineMode( sal_uInt16 eMode );
 	sal_Bool IsRedlineOn() const;
@@ -879,10 +877,10 @@ public:
 	sal_Bool SetRedlineComment( const String& rS );
 	const SwRedline* GetCurrRedline() const;
 
-	// Redline Anzeigeattribute wurden geaendert, Views updaten
+	// Redline Anzeigeattribute wurden geändert, Views updaten
 	void UpdateRedlineAttr();
 
-	//  vergleiche zwei Dokument mit einander
+	//  vergleiche zwei Dokument miteinander
 	long CompareDoc( const SwDoc& rDoc );
 	// merge zweier Dokumente
 	long MergeDoc( const SwDoc& rDoc );
@@ -893,7 +891,7 @@ public:
 	const SwEndNoteInfo& GetEndNoteInfo() const;
 	void  SetEndNoteInfo(const SwEndNoteInfo& rInfo);
 
-	//Einstellungen fuer Zeilennummierung
+	//Einstellungen für Zeilennummierung
 	const SwLineNumberInfo &GetLineNumberInfo() const;
 	void  SetLineNumberInfo( const SwLineNumberInfo& rInfo);
 
@@ -901,14 +899,14 @@ public:
 	void SetLabelDoc( sal_Bool bFlag = sal_True );
 	sal_Bool IsLabelDoc() const;
 
-	// Schnittstelle fuer die TextInputDaten - ( fuer die Texteingabe
+	// Schnittstelle für die TextInputDaten - (für die Texteingabe
 	// von japanischen/chinesischen Zeichen)
     SwExtTextInput* CreateExtTextInput(LanguageType eInputLanguage);
     String DeleteExtTextInput( SwExtTextInput* pDel = 0, sal_Bool bInsText = sal_True);
 //	SwExtTextInput* GetExtTextInput() const;
 	void SetExtTextInputData( const CommandExtTextInputData& );
 
-	// Schnistelle fuer den Zugriff auf die AutoComplete-Liste
+	// Schnistelle für den Zugriff auf die AutoComplete-Liste
 	static SwAutoCompleteWord& GetAutoCompleteWords();
 
 	// returns a scaling factor of selected text. Used for the rotated
@@ -922,7 +920,7 @@ public:
 	virtual ~SwEditShell();
 
 private:
-	// fuer METWARE:
+	// für METWARE:
 	// es wird nicht kopiert und nicht zugewiesen
 	SwEditShell(const SwEditShell &);
 	const SwEditShell &operator=(const SwEditShell &);
@@ -932,31 +930,31 @@ inline const sfx2::LinkManager& SwEditShell::GetLinkManager() const
 {	return ((SwEditShell*)this)->GetLinkManager();	}
 
 /*
- * Klasse fuer den automatisierten Aufruf von Start- und
+ * Klasse für den automatisierten Aufruf von Start- und
  * EndAction();
  */
-class SwActKontext {
+class SwActContext {
 	SwEditShell *pSh;
 public:
-	SwActKontext(SwEditShell *pShell);
-	~SwActKontext();
+	SwActContext(SwEditShell *pShell);
+	~SwActContext();
 };
 
-#define ACT_KONTEXT(x)	SwActKontext _aActKontext_(x)
+#define ACT_CONTEXT(x)	SwActContext _aActContext_(x)
 
 /*
- * Klasse fuer den automatisierten Aufruf von Start- und
+ * Klasse für den automatisierten Aufruf von Start- und
  * EndCrsrMove();
  */
-class SwMvKontext {
+class SwMvContext {
 	SwEditShell *pSh;
 public:
-	SwMvKontext(SwEditShell *pShell );
-	~SwMvKontext();
+	SwMvContext(SwEditShell *pShell );
+	~SwMvContext();
 };
 
-#define MV_KONTEXT(x)	SwMvKontext _aMvKontext_(x)
-
-
+#define MV_CONTEXT(x)	SwMvContext _aMvContext_(x)
 
 #endif
+
+/* vim: set noet sw=4 ts=4: */

@@ -96,7 +96,7 @@ void SwView::_SetZoom( const Size &rEditSize, SvxZoomType eZoomType,
 	pWrtShell->LockPaint();
 
     {
-	ACT_KONTEXT(pWrtShell);
+	ACT_CONTEXT(pWrtShell);
 
 	long nFac = nFactor;
 
@@ -209,7 +209,7 @@ void SwView::_SetZoom( const Size &rEditSize, SvxZoomType eZoomType,
             }
 			SetVisArea( aPos );
 		}
-		// OS: Notloesung - in CalcVisArea wird u.U. wieder SetZoom gerufen und
+		// OS: Notlösung - in CalcVisArea wird u.U. wieder SetZoom gerufen und
 		// dann werden falsche Werte eingestellt
         ((SwViewOption*)pWrtShell->GetViewOptions())->SetZoomType( eZoomType );
 		CalcVisArea( rEditSize );	// für das Neuberechnen des sichtbaren Bereiches
@@ -249,7 +249,7 @@ void SwView::SetViewLayout( sal_uInt16 nColumns, bool bBookMode, sal_Bool bViewO
 
     {
 
-    ACT_KONTEXT(pWrtShell);
+    ACT_CONTEXT(pWrtShell);
 
     if ( !GetViewFrame()->GetFrame().IsInPlace() && !bViewOnly )
     {
@@ -323,7 +323,7 @@ int SwView::_CreateScrollbar( sal_Bool bHori )
 		InvalidateBorder();
 
 	// Scrollbar muss nochmals getestet werden, da im InvalidateBorder u.U. der
-	// Scrollbar wieder geloescht wurde
+	// Scrollbar wieder gelöscht wurde
 	if ( !bShowAtResize && (*ppScrollbar))
 		(*ppScrollbar)->ExtendedShow();
 
