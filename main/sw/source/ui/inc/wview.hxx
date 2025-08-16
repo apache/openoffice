@@ -19,7 +19,6 @@
  *
  *************************************************************/
 
-
 #ifndef _SWWVIEW_HXX
 #define _SWWVIEW_HXX
 
@@ -45,3 +44,5 @@ public:
 };
 
 #endif
+
+/* vim: set noet sw=4 ts=4: */

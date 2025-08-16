@@ -19,13 +19,10 @@
  *
  *************************************************************/
 
-
-
 #ifndef _SWWTEXTSH_HXX
 #define _SWWTEXTSH_HXX
 
 #include "textsh.hxx"
-
 
 class SwWebTextShell: public SwTextShell
 {
@@ -39,3 +36,5 @@ public:
 };
 
 #endif
+
+/* vim: set noet sw=4 ts=4: */

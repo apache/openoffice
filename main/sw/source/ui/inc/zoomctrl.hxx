@@ -19,7 +19,6 @@
  *
  *************************************************************/
 
-
 #ifndef _ZOOMCTRL_HXX
 #define _ZOOMCTRL_HXX
 
@@ -28,12 +27,12 @@
 class SwZoomControl : public SvxZoomStatusBarControl
 {
 private:
-	String  sPreviewZoom;
+	String	sPreviewZoom;
 public:
-	virtual void    Command( const CommandEvent& rCEvt );
-	virtual void	StateChanged( sal_uInt16 nSID, SfxItemState eState,
+	virtual	void	Command( const CommandEvent& rCEvt );
+	virtual	void	StateChanged( sal_uInt16 nSID, SfxItemState eState,
 								  const SfxPoolItem* pState );
-	virtual void    Paint( const UserDrawEvent& rEvt );
+	virtual void	Paint( const UserDrawEvent& rEvt );
 
 	SFX_DECL_STATUSBAR_CONTROL();
 
@@ -42,5 +41,6 @@ public:
 
 };
 
-
 #endif
+
+/* vim: set noet sw=4 ts=4: */
