@@ -117,7 +117,7 @@ public class AdvanceFilter {
 		SCUtil.closeFile(scDocument);
 		scDocument = SCUtil.openFile(sample, unoApp);
 
-		// Verify the result agains
+		// Verify the result again
 		xdataRange = (XCellRange) UnoRuntime.queryInterface(XCellRange.class, SCUtil.getCurrentSheet(scDocument));
 		ColRowRange = (XColumnRowRange) UnoRuntime.queryInterface(XColumnRowRange.class, xdataRange.getCellRangeByName("A1:F6"));
 		Rows = ColRowRange.getRows();

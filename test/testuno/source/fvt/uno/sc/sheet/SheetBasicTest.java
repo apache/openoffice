@@ -26,6 +26,7 @@ import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openoffice.test.common.Testspace;
 import org.openoffice.test.uno.UnoApp;
@@ -315,7 +316,7 @@ public class SheetBasicTest {
 	/**
 	 * test insert sheet from other file
 	 */
-	// FIXME: locks up on update link confirmation dialog.
+    @Ignore("Bug #128536 locks up on update link confirmation dialog. replaced by InsertExcelSheetTest class.")
 	@Test(timeout = 15000)
 	public void insertSheetFromfile() throws Exception {
 		// New a document source.xls, add value to 3 sheet

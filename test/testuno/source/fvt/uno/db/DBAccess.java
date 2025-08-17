@@ -42,7 +42,9 @@ import java.io.IOException;
 
 // ---------- junit imports -----------------
 import org.junit.After;
+import org.junit.AfterClass;
 import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openoffice.test.common.FileUtil;
 import org.openoffice.test.common.Testspace;
@@ -54,7 +56,7 @@ import static org.junit.Assert.*;
  * test case for Base's application UI
  */
 public class DBAccess {
-	UnoApp app = new UnoApp();
+	static final UnoApp app = new UnoApp();
 	private XOfficeDatabaseDocument m_databaseDocument;
 	private XDatabaseDocumentUI m_documentUI;
 
@@ -62,10 +64,18 @@ public class DBAccess {
 //		super();
 //	}
 
+	@BeforeClass
+	public static void setUpConnection() throws Exception {
+		app.start();
+	}
+
+	@AfterClass
+	public static void tearDownConnection() throws InterruptedException, Exception {
+		app.close();
+	}
 
 	@Before
 	public void before() throws java.lang.Exception {
-		app.start();
 		String a = null;
 		switchToDocument(a);
 	}
@@ -73,7 +83,6 @@ public class DBAccess {
 	@After
 	public void after() throws java.lang.Exception {
 		closeDocument();
-		app.close();
 	}
 
 	private void closeDocument() {
