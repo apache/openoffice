@@ -19,14 +19,13 @@
  *
  *************************************************************/
 
-
 #ifndef SW_BARCFG_HXX
 #define SW_BARCFG_HXX
 #include <unotools/configitem.hxx>
 
 class SwToolbarConfigItem : public utl::ConfigItem
 {
-    sal_Int32            aTbxIdArray[5];
+	sal_Int32			aTbxIdArray[5];
 
 	com::sun::star::uno::Sequence<rtl::OUString> GetPropertyNames();
 
@@ -37,7 +36,9 @@ public:
 	virtual void Commit();
 	virtual void Notify( const ::com::sun::star::uno::Sequence< rtl::OUString >& aPropertyNames );
 
-    void        SetTopToolbar( sal_Int32 nSelType, sal_Int32 nBarId );
+	void		SetTopToolbar( sal_Int32 nSelType, sal_Int32 nBarId );
 };
 
 #endif
+
+/* vim: set noet sw=4 ts=4: */

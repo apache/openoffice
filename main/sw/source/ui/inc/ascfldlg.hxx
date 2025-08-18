@@ -19,7 +19,6 @@
  *
  *************************************************************/
 
-
 #ifndef _ASCFLDLG_HXX
 #define _ASCFLDLG_HXX
 #include <vcl/fixed.hxx>
@@ -38,7 +37,7 @@ class SwDocShell;
 
 class SwAsciiFilterDlg : public SfxModalDialog
 {
-    FixedLine           aFL;
+	FixedLine			aFL;
 	FixedText			aCharSetFT;
 	SvxTextEncodingBox	aCharSetLB;
 	FixedText			aFontFT;
@@ -68,6 +67,6 @@ public:
 	void FillOptions( SwAsciiOptions& rOptions );
 };
 
-
-
 #endif
+
+/* vim: set noet sw=4 ts=4: */
