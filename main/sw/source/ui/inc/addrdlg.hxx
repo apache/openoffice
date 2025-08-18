@@ -19,7 +19,6 @@
  *
  *************************************************************/
 
-
 #ifndef _ADDRDLG_HXX
 #define _ADDRDLG_HXX
 
@@ -34,3 +33,5 @@ public:
 };
 
 #endif
+
+/* vim: set noet sw=4 ts=4: */

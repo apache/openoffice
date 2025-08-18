@@ -19,7 +19,6 @@
  *
  *************************************************************/
 
-
 #ifndef _ACTCTRL_HXX
 #define _ACTCTRL_HXX
 
@@ -76,19 +75,21 @@ public:
 								{SetForbiddenChars(String::CreateFromAscii(" .<>"));}
 };
 /* -----------------25.06.2003 15:55-----------------
-    call a link when KEY_RETURN is pressed
+ call a link when KEY_RETURN is pressed
  --------------------------------------------------*/
 class SW_DLLPUBLIC ReturnActionEdit : public Edit
 {
-    Link    aReturnActionLink;
+	Link	aReturnActionLink;
 public:
-    ReturnActionEdit( Window* pParent, const ResId& rResId)
-        : Edit(pParent, rResId){}
-    ~ReturnActionEdit();
-    virtual void KeyInput( const KeyEvent& );
+	ReturnActionEdit( Window* pParent, const ResId& rResId)
+		: Edit(pParent, rResId){}
+	~ReturnActionEdit();
+	virtual void KeyInput( const KeyEvent& );
 
-    void SetReturnActionLink(const Link& rLink)
-            { aReturnActionLink = rLink;}
+	void SetReturnActionLink(const Link& rLink)
+			{ aReturnActionLink = rLink;}
 };
 
 #endif
+
+/* vim: set noet sw=4 ts=4: */

@@ -19,7 +19,6 @@
  *
  *************************************************************/
 
-
 #ifndef _BOOKCTRL_HXX
 #define _BOOKCTRL_HXX
 
@@ -32,12 +31,12 @@
 
 class SwBookmarkControl : public SfxStatusBarControl
 {
-	virtual void    Command( const CommandEvent& rCEvt );
+	virtual void	Command( const CommandEvent& rCEvt );
 
 public:
 	virtual void	StateChanged( sal_uInt16 nSID, SfxItemState eState,
 								  const SfxPoolItem* pState );
-	virtual void    Paint( const UserDrawEvent& rEvt );
+	virtual void	Paint( const UserDrawEvent& rEvt );
 
 	SFX_DECL_STATUSBAR_CONTROL();
 
@@ -45,8 +44,9 @@ public:
 	~SwBookmarkControl();
 
 private:
-	String  sPageNumber;
+	String sPageNumber;
 };
 
-
 #endif
+
+/* vim: set noet sw=4 ts=4: */

@@ -19,7 +19,6 @@
  *
  *************************************************************/
 
-
 #ifndef _SWBEZIERSH_HXX
 #define _SWBEZIERSH_HXX
 
@@ -38,3 +37,5 @@ public:
 };
 
 #endif
+
+/* vim: set noet sw=4 ts=4: */
