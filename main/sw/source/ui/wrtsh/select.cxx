@@ -19,11 +19,8 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
-
 
 #include <limits.h>
 #include <hintids.hxx>
@@ -59,7 +56,6 @@ namespace com { namespace sun { namespace star { namespace util {
 
 using namespace ::com::sun::star::util;
 
-
 static long nStartDragX = 0, nStartDragY = 0;
 static sal_Bool  bStartDrag = sal_False;
 
@@ -72,7 +68,7 @@ void SwWrtShell::Invalidate()
 
 sal_Bool SwWrtShell::SelNearestWrd()
 {
-	MV_KONTEXT(this);
+	MV_CONTEXT(this);
 	if( !IsInWrd() && !IsEndWrd() && !IsSttWrd() )
 		PrvWrd();
 	if( IsEndWrd() )
@@ -86,7 +82,7 @@ sal_Bool SwWrtShell::SelWrd(const Point *pPt, sal_Bool )
 {
 	sal_Bool bRet;
 	{
-		MV_KONTEXT(this);
+		MV_CONTEXT(this);
 		SttSelect();
 		bRet = SwCrsrShell::SelectWord( pPt );
 	}
@@ -103,7 +99,7 @@ sal_Bool SwWrtShell::SelWrd(const Point *pPt, sal_Bool )
 void SwWrtShell::SelSentence(const Point *pPt, sal_Bool )
 {
 	{
-		MV_KONTEXT(this);
+		MV_CONTEXT(this);
 		ClearMark();
         SwCrsrShell::GoStartSentence();
 		SttSelect();
@@ -119,7 +115,7 @@ void SwWrtShell::SelSentence(const Point *pPt, sal_Bool )
 void SwWrtShell::SelPara(const Point *pPt, sal_Bool )
 {
     {
-        MV_KONTEXT(this);
+        MV_CONTEXT(this);
         ClearMark();
         SwCrsrShell::MovePara( fnParaCurr, fnParaStart );
         SttSelect();
@@ -140,7 +136,7 @@ long SwWrtShell::SelAll()
     {
         if(bBlockMode)
             LeaveBlockMode();
-        MV_KONTEXT(this);
+        MV_CONTEXT(this);
         sal_Bool bMoveTable = sal_False;
         SwPosition *pStartPos = 0;
         SwPosition *pEndPos = 0;
@@ -304,7 +300,7 @@ void SwWrtShell::PopMode()
 }
 
 /*
- * Zwei Methoden fuer das Cursorsetzen; die erste mappt auf die
+ * Zwei Methoden für das Cursorsetzen; die erste mappt auf die
  * gleichnamige Methoden an der CursorShell, die zweite hebt
  * zuerst alle Selektionen auf.
  */
@@ -314,7 +310,7 @@ void SwWrtShell::PopMode()
 long SwWrtShell::SetCrsr(const Point *pPt, sal_Bool bTextOnly)
 {
 		/*
-		* eine gfs.  bestehende Selektion an der Position des
+		* eine ggfs. bestehende Selektion an der Position des
 		* Mausklicks aufheben
 		*/
 	if(!IsInSelect() && ChgCurrPam(*pPt)) {
@@ -327,7 +323,7 @@ long SwWrtShell::SetCrsr(const Point *pPt, sal_Bool bTextOnly)
 
 long SwWrtShell::SetCrsrKillSel(const Point *pPt, sal_Bool bTextOnly )
 {
-	ACT_KONTEXT(this);
+	ACT_CONTEXT(this);
 	ResetSelect(pPt,sal_False);
     return SwCrsrShell::SetCrsr(*pPt, bTextOnly);
 }
@@ -336,7 +332,7 @@ long SwWrtShell::SetCrsrKillSel(const Point *pPt, sal_Bool bTextOnly )
 
 void SwWrtShell::UnSelectFrm()
 {
-    // Rahmenselektion aufheben mit garantiert ungueltiger Position
+    // Rahmenselektion aufheben mit garantiert ungültiger Position
 	Point aPt(LONG_MIN, LONG_MIN);
     SelectObj(aPt, 0);
 	SwTransferable::ClearSelection( *this );
@@ -357,14 +353,14 @@ long SwWrtShell::ResetSelect(const Point *,sal_Bool)
 	}
 	else
 	{
-		/* 	ACT_KONTEXT() macht eine Action auf -
+		/* 	ACT_CONTEXT() macht eine Action auf -
 			um im Basicablauf keine Probleme mit der
 			Shellumschaltung zu bekommen, darf
 			GetChgLnk().Call() erst nach
 			EndAction() gerufen werden.
 		*/
 		{
-			ACT_KONTEXT(this);
+			ACT_CONTEXT(this);
 			bSelWrd = bSelLn = sal_False;
 			KillPams();
 			ClearMark();
@@ -372,7 +368,7 @@ long SwWrtShell::ResetSelect(const Point *,sal_Bool)
 			fnSetCrsr = &SwWrtShell::SetCrsr;
 		}
 		/*
-			* nach dem Aufheben aller Selektionen koennte ein Update der
+			* nach dem Aufheben aller Selektionen könnte ein Update der
 			* Attr-Controls notwendig sein.
 		*/
 		GetChgLnk().Call(this);
@@ -445,7 +441,7 @@ inline sal_Bool operator<(const Point &rP1,const Point &rP2)
 
 long SwWrtShell::ExtSelWrd(const Point *pPt, sal_Bool )
 {
-	MV_KONTEXT(this);
+	MV_CONTEXT(this);
 	if( IsTableMode() )
 		return 1;
 
@@ -507,7 +503,7 @@ long SwWrtShell::ExtSelWrd(const Point *pPt, sal_Bool )
 
 long SwWrtShell::ExtSelLn(const Point *pPt, sal_Bool )
 {
-	MV_KONTEXT(this);
+	MV_CONTEXT(this);
 	SwCrsrShell::SetCrsr(*pPt);
 	if( IsTableMode() )
 		return 1;
@@ -548,7 +544,7 @@ long SwWrtShell::ExtSelLn(const Point *pPt, sal_Bool )
 
 
 /*
- * zurueck in den Standard Mode: kein Mode, keine Selektionen.
+ * zurück in den Standard Mode: kein Mode, keine Selektionen.
  */
 
 void SwWrtShell::EnterStdMode()
@@ -567,12 +563,12 @@ void SwWrtShell::EnterStdMode()
     }
     else
     {
-        /*  ACT_KONTEXT() opens and action which has to be
+        /*  ACT_CONTEXT() opens and action which has to be
             closed prior to the call of
             GetChgLnk().Call()
         */
         {
-            ACT_KONTEXT(this);
+            ACT_CONTEXT(this);
             bSelWrd = bSelLn = sal_False;
             if( !IsRetainSelection() )
                 KillPams();
@@ -889,7 +885,7 @@ long SwWrtShell::EndDrag(const Point * /*pPt*/, sal_Bool )
 // --> FME 2004-07-30 #i32329# Enhanced table selection
 sal_Bool SwWrtShell::SelectTableRowCol( const Point& rPt, const Point* pEnd, bool bRowDrag )
 {
-    MV_KONTEXT(this);
+    MV_CONTEXT(this);
     SttSelect();
     if(SelTblRowCol( rPt, pEnd, bRowDrag ))
     {
@@ -1064,10 +1060,11 @@ sal_Bool SwWrtShell::SelectNextPrevHyperlink( sal_Bool bNext )
 	return bRet;
 }
 
-
-/* fuer den Erhalt der Selektion wird nach SetMark() der Cursor
- * nach links bewegt, damit er durch das Einfuegen von Text nicht
- * verschoben wird.  Da auf der CORE-Seite am aktuellen Cursor
+/* für den Erhalt der Selektion wird nach SetMark() der Cursor
+ * nach links bewegt, damit er durch das Einfügen von Text nicht
+ * verschoben wird. Da auf der CORE-Seite am aktuellen Cursor
  * eine bestehende Selektion aufgehoben wird, wird der Cursor auf
  * den Stack gepushed. Nach dem Verschieben werden sie wieder
  * zusammengefasst. */
+
+/* vim: set noet sw=4 ts=4: */

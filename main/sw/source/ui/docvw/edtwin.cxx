@@ -22,7 +22,6 @@
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
 
-
 #include <tools/list.hxx>
 #include <swtypes.hxx>
 #include <hintids.hxx>
@@ -147,7 +146,7 @@ extern sal_Bool bNoInterrupt;       // in mainwn.cxx
 //Selektion nicht gerade aufgezogen wird. Leider wird im MouseButtonDown
 //bei doppel-/dreifach-Klick Selektiert, diese Selektion wird in dem Handler
 //komplett abgeschlossen und kann deshalb im Up nicht mehr unterschieden
-//werden. Um dies Aufzuloese wird bHoldSelection im Down gesetzt und im
+//werden. Um dies aufzulösen wird bHoldSelection im Down gesetzt und im
 //Up ausgewertet.
 static sal_Bool bHoldSelection      = sal_False;
 
@@ -266,10 +265,10 @@ inline sal_Bool IsMinMove(const Point &rStartPos, const Point &rLPt)
 }
 
 /*--------------------------------------------------------------------
-    JP 30.07.98: fuer MouseButtonDown - feststellen, ob ein DrawObject
+    JP 30.07.98: für MouseButtonDown - feststellen, ob ein DrawObject
                 und KEIN SwgFrame getroffen wurde! Shift/Ctrl sollen
-                nur bei DrawObjecte zum Selektieren fuehren, bei SwgFlys
-                ggfs zum ausloesen von Hyperlinks (DownLoad/NewWindow!)
+                nur bei DrawObjecte zum Selektieren führen, bei SwgFlys
+                ggfs. zum auslösen von Hyperlinks (DownLoad/NewWindow!)
  --------------------------------------------------------------------*/
 inline sal_Bool IsDrawObjSelectable( const SwWrtShell& rSh, const Point& rPt )
 {
@@ -3375,9 +3374,9 @@ void SwEditWin::MouseButtonDown(const MouseEvent& _rMEvt)
 
                     int nTmpSetCrsr = 0;
 
-                    {   // nur temp. Move-Kontext aufspannen, da sonst die
+                    {   // nur temp. Move-Context aufspannen, da sonst die
                         // Abfrage auf die Inhaltsform nicht funktioniert!!!
-                        MV_KONTEXT( &rSh );
+                        MV_CONTEXT( &rSh );
                         nTmpSetCrsr = (rSh.*rSh.fnSetCrsr)(&aDocPos,bOnlyText);
                         bValidCrsrPos = !(CRSR_POSCHG & nTmpSetCrsr);
                         bCallBase = sal_False;
@@ -3401,7 +3400,7 @@ void SwEditWin::MouseButtonDown(const MouseEvent& _rMEvt)
                          || ( nSelType & nsSelectionType::SEL_GRF )
                          || rSh.IsObjSelectable( aDocPos ) )
                     {
-                        MV_KONTEXT( &rSh );
+                        MV_CONTEXT( &rSh );
                         if( !rSh.IsFrmSelected() )
                             rSh.GotoNextFly();
                         rSh.EnterSelFrmMode();
@@ -4149,9 +4148,9 @@ void SwEditWin::MouseButtonUp(const MouseEvent& rMEvt)
                 {
                     const sal_Bool bTmpNoInterrupt = bNoInterrupt;
                     bNoInterrupt = sal_False;
-                    {   // nur temp. Move-Kontext aufspannen, da sonst die
+                    {   // nur temp. Move-Context aufspannen, da sonst die
                         // Abfrage auf die Inhaltsform nicht funktioniert!!!
-                        MV_KONTEXT( &rSh );
+                        MV_CONTEXT( &rSh );
                         const Point aDocPos( PixelToLogic( aStartPos ) );
                         bValidCrsrPos = !(CRSR_POSCHG & (rSh.*rSh.fnSetCrsr)(&aDocPos,sal_False));
                     }
@@ -5424,9 +5423,9 @@ sal_Bool SwEditWin::SelectMenuPosition(SwWrtShell& rSh, const Point& rMousePos )
 
     if ( !bOverSelect )
     {
-        {   // nur temp. Move-Kontext aufspannen, da sonst die
+        {   // nur temp. Move-Context aufspannen, da sonst die
             // Abfrage auf die Inhaltsform nicht funktioniert!!!
-            MV_KONTEXT( &rSh );
+            MV_CONTEXT( &rSh );
             (rSh.*rSh.fnSetCrsr)(&aDocPos, sal_False);
             bRet = sal_True;
         }
@@ -5437,7 +5436,7 @@ sal_Bool SwEditWin::SelectMenuPosition(SwWrtShell& rSh, const Point& rMousePos )
         if( nSelType == nsSelectionType::SEL_OLE ||
             nSelType == nsSelectionType::SEL_GRF )
         {
-            MV_KONTEXT( &rSh );
+            MV_CONTEXT( &rSh );
             if( !rSh.IsFrmSelected() )
                 rSh.GotoNextFly();
             rSh.EnterSelFrmMode();

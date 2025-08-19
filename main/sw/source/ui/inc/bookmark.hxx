@@ -19,25 +19,20 @@
  *
  *************************************************************/
 
-
 #ifndef _BOOKMARK_HXX
 #define _BOOKMARK_HXX
 
 #include <svx/stddlg.hxx>
 #include <vcl/fixed.hxx>
 
-#ifndef _BUTTON_HXX //autogen
+#ifndef _BUTTON_HXX // autogen
 #include <vcl/button.hxx>
 #endif
 
-#include "swlbox.hxx"		// SwComboBox
+#include "swlbox.hxx" // SwComboBox
 
 class SwWrtShell;
 class SfxRequest;
-
-/*--------------------------------------------------------------------
-	Beschreibung:
- --------------------------------------------------------------------*/
 
 class BookmarkCombo : public SwComboBox
 {
@@ -55,21 +50,18 @@ public:
 	static const String aForbiddenChars;
 };
 
-/*--------------------------------------------------------------------
-	Beschreibung:
- --------------------------------------------------------------------*/
 
 class SwInsertBookmarkDlg: public SvxStandardDialog
 {
-	FixedLine       aBookmarkFl;
+	FixedLine		aBookmarkFl;
 	BookmarkCombo	aBookmarkBox;
 	OKButton		aOkBtn;
 	CancelButton	aCancelBtn;
 	PushButton		aDeleteBtn;
 
 	String 			sRemoveWarning;
-	SwWrtShell	   	&rSh;
-    SfxRequest&     rReq;
+	SwWrtShell		&rSh;
+	SfxRequest&		rReq;
 
 	DECL_LINK( ModifyHdl, BookmarkCombo * );
 	DECL_LINK( DeleteHdl, Button * );
@@ -77,8 +69,10 @@ class SwInsertBookmarkDlg: public SvxStandardDialog
 	virtual void Apply();
 
 public:
-    SwInsertBookmarkDlg( Window *pParent, SwWrtShell &rSh, SfxRequest& rReq );
+	SwInsertBookmarkDlg( Window *pParent, SwWrtShell &rSh, SfxRequest& rReq );
 	~SwInsertBookmarkDlg();
 };
 
 #endif
+
+/* vim: set noet sw=4 ts=4: */

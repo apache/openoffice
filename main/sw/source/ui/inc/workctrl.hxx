@@ -19,7 +19,6 @@
  *
  *************************************************************/
 
-
 #ifndef _WORKCTRL_HXX
 #define _WORKCTRL_HXX
 
@@ -59,7 +58,6 @@ class SwView;
 #define NID_COUNT  20
 
 
-
 //----------------------------------------------------------------------------
 //
 //----------------------------------------------------------------------------
@@ -68,7 +66,7 @@ class SwTbxInsertCtrl : public SfxToolBoxControl
 {
 	sal_uInt16 					nLastSlotId;
 
-    using SfxToolBoxControl::Select;
+	using SfxToolBoxControl::Select;
 	virtual void			Select( sal_Bool bMod1 = sal_False );
 
 public:
@@ -83,7 +81,7 @@ public:
 											  SfxItemState eState,
 											  const SfxPoolItem* pState );
 
-    virtual void SAL_CALL update() throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL update() throw (::com::sun::star::uno::RuntimeException);
 };
 
 //----------------------------------------------------------------------------
@@ -129,33 +127,33 @@ class SwScrollNaviToolBox : public ToolBox
 
 class SwScrollNaviPopup : public SfxPopupWindow
 {
-    SwScrollNaviToolBox    aToolBox;
-    FixedLine       aSeparator;
-    FixedInfo       aInfoField;
+	SwScrollNaviToolBox    aToolBox;
+	FixedLine       aSeparator;
+	FixedInfo       aInfoField;
 	ImageList		aIList;
-    ImageList       aIListH;
+	ImageList       aIListH;
 
 	String			sQuickHelp[2 * NID_COUNT];
 
 	sal_uInt16			nFwdId;
 	sal_uInt16			nBackId;
 
-    void            ApplyImageList();
+	void            ApplyImageList();
 
-    using Window::GetQuickHelpText;
+	using Window::GetQuickHelpText;
 
 protected:
-        DECL_LINK(SelectHdl, ToolBox*);
-        virtual void        DataChanged( const DataChangedEvent& rDCEvt );
+		DECL_LINK(SelectHdl, ToolBox*);
+		virtual void        DataChanged( const DataChangedEvent& rDCEvt );
 
 public:
-        SwScrollNaviPopup( sal_uInt16 nId, const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XFrame >& rFrame );
+		SwScrollNaviPopup( sal_uInt16 nId, const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XFrame >& rFrame );
 		~SwScrollNaviPopup();
 
 	static String			GetQuickHelpText(sal_Bool bNext);
 
 	virtual SfxPopupWindow* Clone() const;
-    void                GrabFocus(){aToolBox.GrabFocus();}
+	void                GrabFocus(){aToolBox.GrabFocus();}
 };
 
 //----------------------------------------------------------------------------
@@ -166,26 +164,26 @@ class SwNaviImageButton : public ImageButton
 {
 		SwScrollNaviPopup* 	pPopup;
 		Image				aImage;
-        Image               aImageH;
-        String              sQuickText;
-        SfxPopupWindow*     pPopupWindow;
-        SfxPopupWindow*     pFloatingWindow;
-        ::com::sun::star::uno::Reference< ::com::sun::star::frame::XFrame > m_xFrame;
+		Image               aImageH;
+		String              sQuickText;
+		SfxPopupWindow*     pPopupWindow;
+		SfxPopupWindow*     pFloatingWindow;
+		::com::sun::star::uno::Reference< ::com::sun::star::frame::XFrame > m_xFrame;
 
 	protected:
-	    DECL_LINK( PopupModeEndHdl, void * );
-	    DECL_LINK( ClosePopupWindow, SfxPopupWindow * );
+		DECL_LINK( PopupModeEndHdl, void * );
+		DECL_LINK( ClosePopupWindow, SfxPopupWindow * );
 
-        virtual void    Click();
-        virtual void    DataChanged( const DataChangedEvent& rDCEvt );
-        void            SetPopupWindow( SfxPopupWindow* pWindow );
+		virtual void    Click();
+		virtual void    DataChanged( const DataChangedEvent& rDCEvt );
+		void            SetPopupWindow( SfxPopupWindow* pWindow );
 
-    public:
+	public:
 		SwNaviImageButton(Window* pParent, const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XFrame >& rFrame );
 };
 
 //----------------------------------------------------------------------------
-//	Die ImageButtons muessen sich bei Bedarf den HelpText selbst setzen
+//	Die ImageButtons müssen sich bei Bedarf den HelpText selbst setzen
 //----------------------------------------------------------------------------
 
 class SwHlpImageButton : public ImageButton
@@ -204,15 +202,17 @@ class SwHlpImageButton : public ImageButton
 class SwPreviewZoomControl : public SfxToolBoxControl
 {
 public:
-    SFX_DECL_TOOLBOX_CONTROL();
+	SFX_DECL_TOOLBOX_CONTROL();
 
-    SwPreviewZoomControl( sal_uInt16 nSlotId, sal_uInt16 nId, ToolBox& rTbx );
-    ~SwPreviewZoomControl();
+	SwPreviewZoomControl( sal_uInt16 nSlotId, sal_uInt16 nId, ToolBox& rTbx );
+	~SwPreviewZoomControl();
 
-    virtual void            StateChanged( sal_uInt16 nSID,
+	virtual void            StateChanged( sal_uInt16 nSID,
                                               SfxItemState eState,
                                               const SfxPoolItem* pState );
 
-    virtual Window*         CreateItemWindow( Window *pParent );
+	virtual Window*         CreateItemWindow( Window *pParent );
 };
 #endif
+
+/* vim: set noet sw=4 ts=4: */

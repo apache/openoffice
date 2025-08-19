@@ -19,14 +19,12 @@
  *
  *************************************************************/
 
-
 #ifndef _AUTOEDIT_HXX
 #define _AUTOEDIT_HXX
 
 #ifndef _EDIT_HXX //autogen
 #include <vcl/edit.hxx>
 #endif
-
 
 class AutoEdit : public Edit
 {
@@ -39,6 +37,6 @@ protected:
 
 // Implementieriung im autocorr.cxx
 
-
-
 #endif
+
+/* vim: set noet sw=4 ts=4: */

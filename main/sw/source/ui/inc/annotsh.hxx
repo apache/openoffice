@@ -19,7 +19,6 @@
  *
  *************************************************************/
 
-
 #ifndef _SWANNOTSH_HXX
 #define _SWANNOTSH_HXX
 
@@ -39,7 +38,7 @@ public:
 				SwAnnotationShell(SwView&);
 	virtual		~SwAnnotationShell();
 
-    void        StateDisableItems(SfxItemSet &);
+	void		StateDisableItems(SfxItemSet &);
 	void		Exec(SfxRequest &);
 
 	void		GetState(SfxItemSet &);
@@ -64,11 +63,13 @@ public:
 	void		InsertSymbol(SfxRequest& rReq);
 
 	void		ExecSearch(SfxRequest&, sal_Bool bNoMessage = sal_False);
-	void            StateSearch(SfxItemSet &);
+	void			StateSearch(SfxItemSet &);
 
 
 	virtual ::svl::IUndoManager*
-                GetUndoManager();
+				GetUndoManager();
 };
 
 #endif
+
+/* vim: set noet sw=4 ts=4: */
