@@ -19,7 +19,6 @@
  *
  *************************************************************/
 
-
 #ifndef _ABSTRACT_HXX
 #define _ABSTRACT_HXX
 
@@ -37,13 +36,9 @@
 #include <vcl/button.hxx>
 #endif
 
-
-/*-----------------22.02.97 15.06-------------------
-
---------------------------------------------------*/
-class SwInsertAbstractDlg  : public SfxModalDialog
+class SwInsertAbstractDlg : public SfxModalDialog
 {
-    FixedLine       aFL;
+	FixedLine		aFL;
 	FixedText		aLevelFT;
 	NumericField	aLevelNF;
 	FixedText		aParaFT;
@@ -64,3 +59,5 @@ public:
 };
 
 #endif
+
+/* vim: set noet sw=4 ts=4: */

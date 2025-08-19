@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #ifndef _BMPWIN_HXX
 #define _BMPWIN_HXX
 
@@ -33,33 +31,35 @@
 #include <vcl/window.hxx>
 
 /*--------------------------------------------------------------------
-	Beschreibung:	Extended Page fuer Grafiken
+ Description:	Extended page for graphics
  --------------------------------------------------------------------*/
 
 class BmpWindow : public Window
 {
 private:
-    Graphic     aGraphic;
-    BitmapEx    aBmp;
-    BitmapEx    aBmpHC;
+	Graphic		aGraphic;
+	BitmapEx	aBmp;
+	BitmapEx	aBmpHC;
 
-    sal_Bool        bHorz : 1;
-    sal_Bool        bVert : 1;
-    sal_Bool        bGraphic : 1;
-    sal_Bool        bLeftAlign : 1;
+	sal_Bool		bHorz : 1;
+	sal_Bool		bVert : 1;
+	sal_Bool		bGraphic : 1;
+	sal_Bool		bLeftAlign : 1;
 
-    void Paint(const Rectangle& rRect);
+	void Paint(const Rectangle& rRect);
 
 public:
 	BmpWindow(Window* pPar, sal_uInt16 nId,
-                const Graphic& rGraphic, const BitmapEx& rBmp, const BitmapEx& rBmpHC);
+				const Graphic& rGraphic, const BitmapEx& rBmp, const BitmapEx& rBmpHC);
 	BmpWindow(Window* pParent, const ResId rResId) :
-        Window(pParent, rResId),
-        bHorz(sal_False), bVert(sal_False),bGraphic(sal_False), bLeftAlign(sal_True) {}
+		Window(pParent, rResId),
+		bHorz(sal_False), bVert(sal_False),bGraphic(sal_False), bLeftAlign(sal_True) {}
 	~BmpWindow();
 	void MirrorVert(sal_Bool bMirror) { bVert = bMirror; Invalidate(); }
 	void MirrorHorz(sal_Bool bMirror) { bHorz = bMirror; Invalidate(); }
-    void SetGraphic(const Graphic& rGrf);
+	void SetGraphic(const Graphic& rGrf);
 };
 
 #endif
+
+/* vim: set noet sw=4 ts=4: */
