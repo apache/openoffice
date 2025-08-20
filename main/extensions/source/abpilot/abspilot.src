@@ -26,7 +26,7 @@
 //........................................................................
 ModalDialog RID_DLG_ADDRESSBOOKSOURCEPILOT
 {
-	Text [ en-US ] = "Address Book Data Source Wizard" ;
+	Text [ en-US ] = "Address Data Source Wizard" ;
 
 	HelpId = HID_ABSPILOT ;
 
@@ -120,7 +120,7 @@ TabPage RID_PAGE_SELECTABTYPE
 	{
 		HelpID = "extensions:RadioButton:RID_PAGE_SELECTABTYPE:RB_MACAB" ;
 		Size = MAP_APPFONT ( WINDOW_SIZE_X - 30, 8 ) ;
-		Text [ en-US ] = "Mac OS X address book" ;
+		Text [ en-US ] = "macOS address book" ;
 	};
 	RadioButton RB_LDAP
 	{
@@ -138,7 +138,7 @@ TabPage RID_PAGE_SELECTABTYPE
 	{
 		HelpID = "extensions:RadioButton:RID_PAGE_SELECTABTYPE:RB_OUTLOOKEXPRESS" ;
 		Size = MAP_APPFONT ( WINDOW_SIZE_X - 30, 8 ) ;
-		Text [ en-US ] = "Windows system address book" ;
+		Text [ en-US ] = "Windows address book" ;
 	};
 	RadioButton RB_OTHER
 	{
