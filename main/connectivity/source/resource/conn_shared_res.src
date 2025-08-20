@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #include "resource/mozab_res.hrc"
 #include "resource/macab_res.hrc"
 #include "resource/calc_res.hrc"
@@ -32,14 +30,7 @@
 #include "resource/adabas_res.hrc"
 #include "resource/hsqldb_res.hrc"
 
-// ============================================================================
-// = the mozab driver's resource strings
-// ============================================================================
-
-String STR_MOZILLA_ADDRESSBOOKS
-{
-	Text [ en-US ] = "Mozilla/Seamonkey Addressbook Directory" ;
-};
+// mozab driver resource strings
 
 String STR_THUNDERBIRD_ADDRESSBOOKS
 {
@@ -196,9 +187,8 @@ String STR_COULD_NOT_CONNECT_LDAP
 	Text [ en-US ] = "The connection to the LDAP server could not be established." ;
 };
 
-// ============================================================================
-// = common strings
-// ============================================================================
+// common strings
+
 String STR_NO_CONNECTION_GIVEN
 {
 	Text [ en-US ] = "It doesn't exist a connection to the database." ;
@@ -322,9 +312,8 @@ String STR_LOAD_FILE_ERROR_MESSAGE
 	Text [ en-US ] = "The attempt to load the file resulted in the following error message ($exception_type$):\n\n$error_message$" ;
 };
 
-// ============================================================================
-// = the ado driver's resource strings
-// ============================================================================
+// ado driver resource strings
+
 String STR_TYPE_NOT_CONVERT
 {
 	Text [ en-US ] = "The type could not be converted." ;
@@ -373,6 +362,7 @@ String STR_NO_CONNECTION
 };
 
 // dBASE
+
 String STR_COULD_NOT_DELETE_INDEX
 {
 	Text [ en-US ] = "The index could not be deleted. An unknown error while accessing the file system occurred." ;
@@ -480,6 +470,7 @@ String STR_SORT_BY_COL_ONLY
 };
 
 // File
+
 String STR_QUERY_COMPLEX_COUNT
 {
 	Text [ en-US ] = "The query can not be executed. It is too complex. Only \"COUNT(*)\" is supported." ;
@@ -581,6 +572,7 @@ String STR_PARA_ONLY_PREPARED
 };
 
 // MACAB
+
 String STR_NO_TABLE
 {
 	Text [ en-US ] = "No such table!" ;
@@ -592,6 +584,7 @@ String STR_NO_MAC_OS_FOUND
 };
 
 // ADABAS D
+
 String STR_NO_DISK_SPACE
 {
 	Text [ en-US ] = "The database file '$filename$' could not be created. Please check your disk space." ;
@@ -609,7 +602,9 @@ String STR_USER_NO_DELETE
 {
 	Text [ en-US ] = "This user couldn't be deleted. Otherwise the database stays in a inconsistent state." ;
 };
+
 // hsqldb
+
 String STR_NO_STROAGE
 {
 	Text [ en-US ] = "The connection can not be established. No storage or URL was given." ;

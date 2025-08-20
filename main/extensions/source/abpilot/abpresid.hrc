@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #ifndef EXTENSIONS_ABPRESID_HRC
 #define EXTENSIONS_ABPRESID_HRC
 
@@ -150,8 +148,8 @@
 #define FT_LOCATION				11
 
 //........................................................................
-#define RB_MORK					1
-#define RB_THUNDERBIRD          2
+//#define RB_MORK					1
+#define RB_THUNDERBIRD			2
 #define RB_EVOLUTION			3
 #define RB_KAB					4
 #define RB_MACAB				5
@@ -159,7 +157,7 @@
 #define RB_OUTLOOK				7
 #define RB_OUTLOOKEXPRESS		8
 #define RB_OTHER				9
-#define RB_EVOLUTION_GROUPWISE  10
+#define RB_EVOLUTION_GROUPWISE	10
 #define RB_EVOLUTION_LDAP		11
 
 //........................................................................

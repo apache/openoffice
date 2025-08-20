@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #ifndef EXTENSIONS_ABPRESID_HRC
 #include "abpresid.hrc"
 #endif
@@ -77,7 +75,7 @@ TabPage RID_PAGE_SELECTABTYPE
 		Size = MAP_APPFONT ( WINDOW_SIZE_X - 2 * BORDER_X, 40 ) ;
 		WordBreak = TRUE ;
 
-		Text [ en-US ] = "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source." ;
+		Text [ en-US ] = "%PRODUCTNAME lets you access address data already present in your system. To do this, a data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source." ;
 	};
 
 	FixedLine FL_TYPE
@@ -105,12 +103,6 @@ TabPage RID_PAGE_SELECTABTYPE
 		HelpID = "extensions:RadioButton:RID_PAGE_SELECTABTYPE:RB_EVOLUTION_LDAP" ;
 		Size = MAP_APPFONT ( WINDOW_SIZE_X - 30, 8 ) ;
 		Text [ en-US ] = "Evolution LDAP" ;
-	};
-	RadioButton RB_MORK
-	{
-		HelpID = "extensions:RadioButton:RID_PAGE_SELECTABTYPE:RB_MORK" ;
-		Size = MAP_APPFONT ( WINDOW_SIZE_X - 30, 8 ) ;
-		Text [ en-US ] = "Mozilla / Netscape" ;
 	};
 	RadioButton RB_THUNDERBIRD
 	{
