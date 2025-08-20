@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_extensions.hxx"
 #include "typeselectionpage.hxx"
@@ -48,7 +46,6 @@ namespace abp
         ,m_aEvolution		    (this,	ModuleRes(RB_EVOLUTION))
         ,m_aEvolutionGroupwise  (this,	ModuleRes(RB_EVOLUTION_GROUPWISE))
         ,m_aEvolutionLdap	    (this,	ModuleRes(RB_EVOLUTION_LDAP))
-        ,m_aMORK			    (this,	ModuleRes(RB_MORK))
         ,m_aThunderbird         (this,  ModuleRes(RB_THUNDERBIRD))
         ,m_aKab				    (this,	ModuleRes(RB_KAB))
         ,m_aMacab			    (this,	ModuleRes(RB_MACAB))
@@ -98,7 +95,6 @@ namespace abp
 		m_aAllTypes.push_back( ButtonItem( &m_aEvolution, AST_EVOLUTION, bHaveEvolution ) );
 		m_aAllTypes.push_back( ButtonItem( &m_aEvolutionGroupwise, AST_EVOLUTION_GROUPWISE, bHaveEvolution ) );
 		m_aAllTypes.push_back( ButtonItem( &m_aEvolutionLdap, AST_EVOLUTION_LDAP, bHaveEvolution ) );
-		m_aAllTypes.push_back( ButtonItem( &m_aMORK, AST_MORK, bWithMozilla ) );
 		m_aAllTypes.push_back( ButtonItem( &m_aThunderbird, AST_THUNDERBIRD, bWithMozilla ) );
 		m_aAllTypes.push_back( ButtonItem( &m_aKab, AST_KAB, bHaveKab ) );
 		m_aAllTypes.push_back( ButtonItem( &m_aMacab, AST_MACAB, bHaveMacab ) );

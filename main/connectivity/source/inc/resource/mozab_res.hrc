@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #ifndef CONNECTIVITY_RESOURCE_MOZAB_HRC
 #define CONNECTIVITY_RESOURCE_MOZAB_HRC
 
@@ -28,15 +26,13 @@
 #include "resource/conn_shared_res.hrc"
 #endif
 
-// ============================================================================
-// = the mozab driver's resource strings
-// ============================================================================
+// mozab driver resource strings
 
-#define STR_MOZILLA_ADDRESSBOOKS            ( STR_MOZAB_BASE +    0 )
+//#define STR_MOZILLA_ADDRESSBOOKS            ( STR_MOZAB_BASE +    0 )
 #define STR_THUNDERBIRD_ADDRESSBOOKS        ( STR_MOZAB_BASE +    1 )
 #define STR_OE_ADDRESSBOOK                  ( STR_MOZAB_BASE +    2 )
 #define STR_OUTLOOK_MAPI_ADDRESSBOOK        ( STR_MOZAB_BASE +    3 )
-    // FREE
+// FREE
 #define STR_NO_TABLE_CREATION_SUPPORT       ( STR_MOZAB_BASE +    5 )
 #define STR_MOZILLA_IS_RUNNING              ( STR_MOZAB_BASE +    6 )
 #define STR_COULD_NOT_RETRIEVE_AB_ENTRY     ( STR_MOZAB_BASE +    7 )
