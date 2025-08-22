@@ -112,6 +112,8 @@ namespace abp
 		m_aSettings.eType = AST_MACAB;
 #elif WITH_MOZILLA
 #ifdef UNX
+		m_aSettings.eType = AST_THUNDERBIRD;
+#else
 		m_aSettings.eType = AST_OE;
 #endif
 #else
