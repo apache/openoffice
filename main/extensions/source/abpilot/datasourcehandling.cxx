@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_extensions.hxx"
 
@@ -52,7 +50,6 @@
 #include <unotools/sharedunocomponent.hxx>
 #include <vcl/stdtext.hxx>
 
-//.........................................................................
 namespace abp
 {
 //.........................................................................
@@ -73,7 +70,7 @@ namespace abp
 	struct PackageAccessControl { };
 
 	//=====================================================================
-    //---------------------------------------------------------------------
+	//---------------------------------------------------------------------
 	static Reference< XNameAccess > lcl_getDataSourceContext( const Reference< XMultiServiceFactory >& _rxORB ) SAL_THROW (( Exception ))
 	{
 		Reference< XNameAccess > xContext( _rxORB->createInstance( ::rtl::OUString::createFromAscii( "com.sun.star.sdb.DatabaseContext" ) ), UNO_QUERY );
@@ -82,7 +79,7 @@ namespace abp
 	}
 
 	//---------------------------------------------------------------------
-	/// creates a new data source and inserts it into the context
+	// creates a new data source and inserts it into the context
 	static void lcl_implCreateAndInsert(
 		const Reference< XMultiServiceFactory >& _rxORB, const ::rtl::OUString& _rName,
 		Reference< XPropertySet >& /* [out] */ _rxNewDataSource ) SAL_THROW (( ::com::sun::star::uno::Exception ))
@@ -92,7 +89,7 @@ namespace abp
 		Reference< XNameAccess > xContext = lcl_getDataSourceContext( _rxORB );
 
 		DBG_ASSERT( !xContext->hasByName( _rName ), "lcl_implCreateAndInsert: name already used!" );
-        (void)_rName;
+		(void)_rName;
 
 		//.............................................................
 		// create a new data source
@@ -114,7 +111,7 @@ namespace abp
 	}
 
 	//---------------------------------------------------------------------
-	/// creates and inserts a data source, and sets it's URL property to the string given
+	// creates and inserts a data source, and sets its URL property to the string given
 	static ODataSource lcl_implCreateAndSetURL(
 		const Reference< XMultiServiceFactory >& _rxORB, const ::rtl::OUString& _rName,
 		const sal_Char* _pInitialAsciiURL ) SAL_THROW (( ))
@@ -150,24 +147,24 @@ namespace abp
 		const Reference< XMultiServiceFactory >& _rxORB, const ::rtl::OUString& _sName,
 		const ::rtl::OUString& _sURL ) SAL_THROW (( ::com::sun::star::uno::Exception ))
 	{
-        OSL_ENSURE( _sName.getLength(), "lcl_registerDataSource: invalid name!" );
-        OSL_ENSURE( _sURL.getLength(), "lcl_registerDataSource: invalid URL!" );
-        try
-        {
+		OSL_ENSURE( _sName.getLength(), "lcl_registerDataSource: invalid name!" );
+		OSL_ENSURE( _sURL.getLength(), "lcl_registerDataSource: invalid URL!" );
+		try
+		{
 
-            ::comphelper::ComponentContext aContext( _rxORB );
-            Reference< XDatabaseRegistrations > xRegistrations(
-                aContext.createComponent( "com.sun.star.sdb.DatabaseContext" ), UNO_QUERY_THROW );
+			::comphelper::ComponentContext aContext( _rxORB );
+			Reference< XDatabaseRegistrations > xRegistrations(
+				aContext.createComponent( "com.sun.star.sdb.DatabaseContext" ), UNO_QUERY_THROW );
 
-		    if ( xRegistrations->hasRegisteredDatabase( _sName ) )
-                xRegistrations->changeDatabaseLocation( _sName, _sURL );
-            else
-                xRegistrations->registerDatabaseLocation( _sName, _sURL );
-        }
-        catch( const Exception& )
-        {
-        	DBG_UNHANDLED_EXCEPTION();
-        }
+			if ( xRegistrations->hasRegisteredDatabase( _sName ) )
+				xRegistrations->changeDatabaseLocation( _sName, _sURL );
+			else
+				xRegistrations->registerDatabaseLocation( _sName, _sURL );
+		}
+		catch( const Exception& )
+		{
+			DBG_UNHANDLED_EXCEPTION();
+		}
 	}
 
 	//=====================================================================
@@ -176,8 +173,8 @@ namespace abp
 	struct ODataSourceContextImpl
 	{
 		Reference< XMultiServiceFactory >	xORB;
-		Reference< XNameAccess >			xContext;			/// the UNO data source context
-		StringBag							aDataSourceNames;	/// for quicker name checks (without the UNO overhead)
+		Reference< XNameAccess >			xContext;			// the UNO data source context
+		StringBag							aDataSourceNames;	// for quicker name checks (without the UNO overhead)
 
 		ODataSourceContextImpl( const Reference< XMultiServiceFactory >& _rxORB ) : xORB( _rxORB ) { }
 		ODataSourceContextImpl( const ODataSourceContextImpl& _rSource )
@@ -248,12 +245,6 @@ namespace abp
 	}
 
 	//---------------------------------------------------------------------
-	ODataSource	ODataSourceContext::createNewMORK( const ::rtl::OUString& _rName) SAL_THROW (( ))
-	{
-		return lcl_implCreateAndSetURL( m_pImpl->xORB, _rName, "sdbc:address:mozilla" );
-	}
-
-	//---------------------------------------------------------------------
 	ODataSource	ODataSourceContext::createNewThunderbird( const ::rtl::OUString& _rName ) SAL_THROW (( ))
 	{
 		return lcl_implCreateAndSetURL( m_pImpl->xORB, _rName, "sdbc:address:thunderbird" );
@@ -311,10 +302,10 @@ namespace abp
 	struct ODataSourceImpl
 	{
 	public:
-		Reference< XMultiServiceFactory >		xORB;				/// the service factory
-		Reference< XPropertySet >				xDataSource;		/// the UNO data source
-        ::utl::SharedUNOComponent< XConnection >
-                                                xConnection;
+		Reference< XMultiServiceFactory >		xORB;				// the service factory
+		Reference< XPropertySet >				xDataSource;		// the UNO data source
+		::utl::SharedUNOComponent< XConnection >
+												xConnection;
 		StringBag								aTables;			// the cached table names
 		::rtl::OUString							sName;
 		sal_Bool								bTablesUpToDate;	// table name cache up-to-date?
@@ -379,9 +370,9 @@ namespace abp
 		try
 		{
 			Reference< XDocumentDataSource > xDocAccess( m_pImpl->xDataSource, UNO_QUERY );
-            Reference< XStorable > xStorable;
-            if ( xDocAccess.is() )
-                xStorable = xStorable.query( xDocAccess->getDatabaseDocument() );
+			Reference< XStorable > xStorable;
+			if ( xDocAccess.is() )
+				xStorable = xStorable.query( xDocAccess->getDatabaseDocument() );
 			OSL_ENSURE( xStorable.is(),"DataSource is no XStorable!" );
 			if ( xStorable.is() )
 				xStorable->storeAsURL(m_pImpl->sName,Sequence<PropertyValue>());
@@ -461,14 +452,14 @@ namespace abp
 	}
 
 	//---------------------------------------------------------------------
-    bool ODataSource::hasTable( const ::rtl::OUString& _rTableName ) const
-    {
-        if ( !isConnected() )
-            return false;
+	bool ODataSource::hasTable( const ::rtl::OUString& _rTableName ) const
+	{
+		if ( !isConnected() )
+			return false;
 
-        const StringBag& aTables( getTableNames() );
-        return aTables.find( _rTableName ) != aTables.end();
-    }
+		const StringBag& aTables( getTableNames() );
+		return aTables.find( _rTableName ) != aTables.end();
+	}
 
 	//---------------------------------------------------------------------
 	const StringBag& ODataSource::getTableNames() const SAL_THROW (( ))
@@ -567,20 +558,20 @@ namespace abp
 			try
 			{
 				SQLException aException;
-  				aError >>= aException;
-  				if ( !aException.Message.getLength() )
-  				{
-	    			// prepend some context info
+				aError >>= aException;
+				if ( !aException.Message.getLength() )
+				{
+					// prepend some context info
 					SQLContext aDetailedError;
 					aDetailedError.Message = String( ModuleRes( RID_STR_NOCONNECTION ) );
 					aDetailedError.Details = String( ModuleRes( RID_STR_PLEASECHECKSETTINGS ) );
 					aDetailedError.NextException = aError;
 					// handle (aka display) the new context info
 					xInteractions->handle( new OInteractionRequest( makeAny( aDetailedError ) ) );
-  				}
-  				else
-  				{
-  					// handle (aka display) the original error
+				}
+				else
+				{
+					// handle (aka display) the original error
 					xInteractions->handle( new OInteractionRequest( makeAny( aException ) ) );
 				}
 			}
@@ -629,4 +620,5 @@ namespace abp
 
 //.........................................................................
 }	// namespace abp
-//.........................................................................
+
+/* vim: set noet sw=4 ts=4: */

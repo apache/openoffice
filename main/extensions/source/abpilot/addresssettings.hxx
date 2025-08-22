@@ -19,15 +19,12 @@
  *
  *************************************************************/
 
-
-
 #ifndef EXTENSIONS_ABP_ADDRESSSETTINGS_HXX
 #define EXTENSIONS_ABP_ADDRESSSETTINGS_HXX
 
 #include <rtl/ustring.hxx>
 #include "abptypes.hxx"
 
-//.........................................................................
 namespace abp
 {
 //.........................................................................
@@ -37,8 +34,7 @@ namespace abp
 	//=====================================================================
 	enum AddressSourceType
 	{
-		AST_MORK,
-        AST_THUNDERBIRD,
+		AST_THUNDERBIRD,
 		AST_EVOLUTION,
 		AST_EVOLUTION_GROUPWISE,
 		AST_EVOLUTION_LDAP,
@@ -62,9 +58,9 @@ namespace abp
 		::rtl::OUString		sDataSourceName;
 		::rtl::OUString		sRegisteredDataSourceName;
 		::rtl::OUString		sSelectedTable;
-        bool                bIgnoreNoTable;
+		bool				bIgnoreNoTable;
 		MapString2String	aFieldMapping;
-		bool                bRegisterDataSource;
+		bool				bRegisterDataSource;
 	};
 
 //.........................................................................
@@ -72,3 +68,5 @@ namespace abp
 //.........................................................................
 
 #endif // EXTENSIONS_ABP_ADDRESSSETTINGS_HXX
+
+/* vim: set noet sw=4 ts=4: */

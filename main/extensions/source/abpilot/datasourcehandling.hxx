@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #ifndef EXTENSIONS_ABP_DATASOURCEHANDLING_HXX
 #define EXTENSIONS_ABP_DATASOURCEHANDLING_HXX
 
@@ -39,7 +37,6 @@ namespace com { namespace sun { namespace star {
 
 class Window;
 
-
 //.........................................................................
 namespace abp
 {
@@ -50,7 +47,7 @@ namespace abp
 	//=====================================================================
 	struct ODataSourceContextImpl;
 	class ODataSource;
-	/// a non-UNO wrapper for the data source context
+	// an non-UNO wrapper for the data source context
 	class ODataSourceContext
 	{
 	private:
@@ -61,43 +58,40 @@ namespace abp
 			const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& _rxORB
 		);
 
-		/// retrieves the names of all data sources
+		// retrieves the names of all data sources
 		void	getDataSourceNames( StringBag& _rNames ) const SAL_THROW (( ));
 
-		/// disambiguates the given name by appending auccessive numbers
+		// disambiguate the given name by appending successive numbers
 		::rtl::OUString& disambiguate(::rtl::OUString& _rDataSourceName);
 
-		/// creates a new MORK data source
-		ODataSource createNewMORK( const ::rtl::OUString& _rName ) SAL_THROW (( ));
-
-		/// creates a new Thunderbird data source
+		// creates a new Thunderbird data source
 		ODataSource createNewThunderbird( const ::rtl::OUString& _rName ) SAL_THROW (( ));
 
-		/// creates a new Evolution local data source
+		// creates a new Evolution local data source
 		ODataSource createNewEvolution( const ::rtl::OUString& _rName ) SAL_THROW (( ));
 
-		/// creates a new Evolution LDAP data source
+		// creates a new Evolution LDAP data source
 		ODataSource createNewEvolutionLdap( const ::rtl::OUString& _rName ) SAL_THROW (( ));
 
-		/// creates a new Evolution GROUPWISE data source
+		// creates a new Evolution GROUPWISE data source
 		ODataSource createNewEvolutionGroupwise( const ::rtl::OUString& _rName ) SAL_THROW (( ));
 
-		/// creates a new KDE address book data source
+		// creates a new KDE address book data source
 		ODataSource createNewKab( const ::rtl::OUString& _rName ) SAL_THROW (( ));
 
-		/// creates a new Mac OS X address book data source
+		// creates a new macOS address book data source
 		ODataSource createNewMacab( const ::rtl::OUString& _rName ) SAL_THROW (( ));
 
-		/// creates a new LDAP data source
+		// creates a new LDAP data source
 		ODataSource	createNewLDAP( const ::rtl::OUString& _rName ) SAL_THROW (( ));
 
-		/// creates a new Outlook data source
+		// creates a new Outlook data source
 		ODataSource	createNewOutlook( const ::rtl::OUString& _rName ) SAL_THROW (( ));
 
-		/// creates a new Outlook express data source
+		// creates a new Outlook express data source
 		ODataSource	createNewOE( const ::rtl::OUString& _rName ) SAL_THROW (( ));
 
-		/// creates a new dBase data source
+		// creates a new dBASE data source
 		ODataSource	createNewDBase( const ::rtl::OUString& _rName ) SAL_THROW (( ));
 	};
 
@@ -121,34 +115,34 @@ namespace abp
 		// ----------------------------------------------------------------
 		// - ctor/dtor/assignment
 		// ----------------------------------------------------------------
-		/// constructs an object which is initially invalid
+		// constructs an object which is initially invalid
 		ODataSource(
 			const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& _rxORB
 		);
 
-		/// copy ctor
+		// copy ctor
 		ODataSource( const ODataSource& _rSource );
 
-		/// dtor
+		// dtor
 		~ODataSource( );
 
-		/// assignment
+		// assignment
 		ODataSource& operator=( const ODataSource& _rSource );
 
 		// ----------------------------------------------------------------
-		/// checks whether or not the object represents a valid data source
+		// checks whether or not the object represents a valid data source
 		sal_Bool	isValid() const SAL_THROW (( ));
 
 		// ----------------------------------------------------------------
-		/// removes the data source represented by the object from the data source context
+		// removes the data source represented by the object from the data source context
 		void		remove() SAL_THROW (( ));
 			// TODO: put this into the context class
 
-		/// returns the name of the data source
+		// returns the name of the data source
 		::rtl::OUString
 					getName() const SAL_THROW (( ));
 
-		/// renames the data source
+		// renames the data source
 		sal_Bool	rename( const ::rtl::OUString& _rName ) SAL_THROW (( ));
 			// TODO: put this into the context class
 
@@ -163,17 +157,17 @@ namespace abp
 		*/
 		sal_Bool	connect( Window* _pMessageParent ) SAL_THROW (( ));
 
-		/// returns <TRUE/> if the object has a valid connection, obtained from it's data source
+		// returns <TRUE/> if the object has a valid connection, obtained from its data source
 		sal_Bool	isConnected( ) const SAL_THROW (( ));
 
-		/// disconnects from the data source (i.e. disposes the UNO connection hold internally)
+		// disconnects from the data source (i.e. disposes the UNO connection hold internally)
 		void		disconnect( ) SAL_THROW (( ));
 
-		/// stores the database file
+		// stores the database file
 		void		store() SAL_THROW (( ));
 
-		/// register the data source under the given name in the configuration
-		void		registerDataSource( const ::rtl::OUString& _sRegisteredDataSourceName )  SAL_THROW (( ));
+		// register the data source under the given name in the configuration
+		void		registerDataSource( const ::rtl::OUString& _sRegisteredDataSourceName ) SAL_THROW (( ));
 
 		// ----------------------------------------------------------------
 		/** retrieves the tables names from the connection
@@ -181,11 +175,11 @@ namespace abp
 		*/
 		const StringBag&	getTableNames() const SAL_THROW (( ));
 
-        /** determines whether a given table exists
-        */
-        bool    hasTable( const ::rtl::OUString& _rTableName ) const;
+		/** determines whether a given table exists
+		*/
+		bool	hasTable( const ::rtl::OUString& _rTableName ) const;
 
-		/// return the intern data source object
+		// return the intern data source object
 		::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > getDataSource() const SAL_THROW (( ));
 
 
@@ -208,3 +202,5 @@ namespace abp
 //.........................................................................
 
 #endif // EXTENSIONS_ABP_DATASOURCEHANDLING_HXX
+
+/* vim: set noet sw=4 ts=4: */
