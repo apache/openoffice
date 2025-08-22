@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_extensions.hxx"
 #include "abspilot.hxx"
@@ -38,21 +36,20 @@
 #include "fieldmappingpage.hxx"
 #include "fieldmappingimpl.hxx"
 
-//.........................................................................
 namespace abp
 {
 //.........................................................................
 
-#define STATE_SELECT_ABTYPE         0
-#define STATE_INVOKE_ADMIN_DIALOG   1
-#define STATE_TABLE_SELECTION       2
-#define STATE_MANUAL_FIELD_MAPPING  3
-#define STATE_FINAL_CONFIRM         4
+#define STATE_SELECT_ABTYPE			0
+#define STATE_INVOKE_ADMIN_DIALOG	1
+#define STATE_TABLE_SELECTION		2
+#define STATE_MANUAL_FIELD_MAPPING	3
+#define STATE_FINAL_CONFIRM			4
 
-#define PATH_COMPLETE               1
-#define PATH_NO_SETTINGS            2
-#define PATH_NO_FIELDS              3
-#define PATH_NO_SETTINGS_NO_FIELDS  4
+#define PATH_COMPLETE				1
+#define PATH_NO_SETTINGS			2
+#define PATH_NO_FIELDS				3
+#define PATH_NO_SETTINGS_NO_FIELDS	4
 
 	using namespace ::svt;
 	using namespace ::com::sun::star::uno;
@@ -64,7 +61,7 @@ namespace abp
 	//---------------------------------------------------------------------
 	OAddessBookSourcePilot::OAddessBookSourcePilot(Window* _pParent, const Reference< XMultiServiceFactory >& _rxORB)
 		:OAddessBookSourcePilot_Base( _pParent, ModuleRes( RID_DLG_ADDRESSBOOKSOURCEPILOT ),
-            WZB_HELP | WZB_FINISH | WZB_CANCEL | WZB_NEXT | WZB_PREVIOUS )
+			WZB_HELP | WZB_FINISH | WZB_CANCEL | WZB_NEXT | WZB_PREVIOUS )
 		,m_xORB(_rxORB)
 		,m_aNewDataSource(_rxORB)
 		,m_eNewDataSourceType( AST_INVALID )
@@ -73,34 +70,34 @@ namespace abp
 
 		ShowButtonFixedLine(sal_True);
 
-        declarePath( PATH_COMPLETE,
-            STATE_SELECT_ABTYPE,
-            STATE_INVOKE_ADMIN_DIALOG,
-            STATE_TABLE_SELECTION,
-            STATE_MANUAL_FIELD_MAPPING,
-            STATE_FINAL_CONFIRM,
-            WZS_INVALID_STATE
-        );
-        declarePath( PATH_NO_SETTINGS,
-            STATE_SELECT_ABTYPE,
-            STATE_TABLE_SELECTION,
-            STATE_MANUAL_FIELD_MAPPING,
-            STATE_FINAL_CONFIRM,
-            WZS_INVALID_STATE
-        );
-        declarePath( PATH_NO_FIELDS,
-            STATE_SELECT_ABTYPE,
-            STATE_INVOKE_ADMIN_DIALOG,
-            STATE_TABLE_SELECTION,
-            STATE_FINAL_CONFIRM,
-            WZS_INVALID_STATE
-        );
-        declarePath( PATH_NO_SETTINGS_NO_FIELDS,
-            STATE_SELECT_ABTYPE,
-            STATE_TABLE_SELECTION,
-            STATE_FINAL_CONFIRM,
-            WZS_INVALID_STATE
-        );
+		declarePath( PATH_COMPLETE,
+			STATE_SELECT_ABTYPE,
+			STATE_INVOKE_ADMIN_DIALOG,
+			STATE_TABLE_SELECTION,
+			STATE_MANUAL_FIELD_MAPPING,
+			STATE_FINAL_CONFIRM,
+			WZS_INVALID_STATE
+		);
+		declarePath( PATH_NO_SETTINGS,
+			STATE_SELECT_ABTYPE,
+			STATE_TABLE_SELECTION,
+			STATE_MANUAL_FIELD_MAPPING,
+			STATE_FINAL_CONFIRM,
+			WZS_INVALID_STATE
+		);
+		declarePath( PATH_NO_FIELDS,
+			STATE_SELECT_ABTYPE,
+			STATE_INVOKE_ADMIN_DIALOG,
+			STATE_TABLE_SELECTION,
+			STATE_FINAL_CONFIRM,
+			WZS_INVALID_STATE
+		);
+		declarePath( PATH_NO_SETTINGS_NO_FIELDS,
+			STATE_SELECT_ABTYPE,
+			STATE_TABLE_SELECTION,
+			STATE_FINAL_CONFIRM,
+			WZS_INVALID_STATE
+		);
 
 		m_pPrevPage->SetHelpId(HID_ABSPILOT_PREVIOUS);
 		m_pNextPage->SetHelpId(HID_ABSPILOT_NEXT);
@@ -112,11 +109,9 @@ namespace abp
 
 		// some initial settings
 #ifdef MACOSX
-        m_aSettings.eType = AST_MACAB;
+		m_aSettings.eType = AST_MACAB;
 #elif WITH_MOZILLA
 #ifdef UNX
-		m_aSettings.eType = AST_MORK;
-#else
 		m_aSettings.eType = AST_OE;
 #endif
 #else
@@ -130,32 +125,32 @@ namespace abp
 		enableButtons(WZB_FINISH, sal_False);
 		ActivatePage();
 
-        typeSelectionChanged( m_aSettings.eType );
+		typeSelectionChanged( m_aSettings.eType );
 	}
 
 	//---------------------------------------------------------------------
 	String OAddessBookSourcePilot::getStateDisplayName( WizardState _nState ) const
-    {
-        sal_uInt16 nResId = 0;
-        switch ( _nState )
-        {
-            case STATE_SELECT_ABTYPE:        nResId = STR_SELECT_ABTYPE; break;
-            case STATE_INVOKE_ADMIN_DIALOG:  nResId = STR_INVOKE_ADMIN_DIALOG; break;
-            case STATE_TABLE_SELECTION:      nResId = STR_TABLE_SELECTION; break;
-            case STATE_MANUAL_FIELD_MAPPING: nResId = STR_MANUAL_FIELD_MAPPING; break;
-            case STATE_FINAL_CONFIRM:        nResId = STR_FINAL_CONFIRM; break;
-        }
-        DBG_ASSERT( nResId, "OAddessBookSourcePilot::getStateDisplayName: don't know this state!" );
+	{
+		sal_uInt16 nResId = 0;
+		switch ( _nState )
+		{
+			case STATE_SELECT_ABTYPE:        nResId = STR_SELECT_ABTYPE; break;
+			case STATE_INVOKE_ADMIN_DIALOG:  nResId = STR_INVOKE_ADMIN_DIALOG; break;
+			case STATE_TABLE_SELECTION:      nResId = STR_TABLE_SELECTION; break;
+			case STATE_MANUAL_FIELD_MAPPING: nResId = STR_MANUAL_FIELD_MAPPING; break;
+			case STATE_FINAL_CONFIRM:        nResId = STR_FINAL_CONFIRM; break;
+		}
+		DBG_ASSERT( nResId, "OAddessBookSourcePilot::getStateDisplayName: don't know this state!" );
 
-        String sDisplayName;
-        if ( nResId )
-        {
-            svt::OLocalResourceAccess aAccess( ModuleRes( RID_DLG_ADDRESSBOOKSOURCEPILOT ), RSC_MODALDIALOG );
-            sDisplayName = String( ModuleRes( nResId ) );
-        }
+		String sDisplayName;
+		if ( nResId )
+		{
+			svt::OLocalResourceAccess aAccess( ModuleRes( RID_DLG_ADDRESSBOOKSOURCEPILOT ), RSC_MODALDIALOG );
+			sDisplayName = String( ModuleRes( nResId ) );
+		}
 
-        return sDisplayName;
-    }
+		return sDisplayName;
+	}
 
 	//---------------------------------------------------------------------
 	void OAddessBookSourcePilot::implCommitAll()
@@ -194,7 +189,7 @@ namespace abp
 
 		// reset the click hdl
 		m_pCancel->SetClickHdl( Link() );
-		// simulate the click again - this time, the default handling of the button will strike ....
+		// simulate the click again - this time, the default handling of the button will strike...
 		m_pCancel->Click();
 
 		return 0L;
@@ -227,8 +222,8 @@ namespace abp
 		switch ( _nState )
 		{
 			case STATE_SELECT_ABTYPE:
-                impl_updateRoadmap( static_cast< TypeSelectionPage* >( GetPage( STATE_SELECT_ABTYPE ) )->getSelectedType() );
-                break;
+				impl_updateRoadmap( static_cast< TypeSelectionPage* >( GetPage( STATE_SELECT_ABTYPE ) )->getSelectedType() );
+				break;
 
 			case STATE_FINAL_CONFIRM:
 				if ( !needManualFieldMapping( ) )
@@ -243,59 +238,59 @@ namespace abp
 		OAddessBookSourcePilot_Base::enterState(_nState);
 	}
 
-    //---------------------------------------------------------------------
-    sal_Bool OAddessBookSourcePilot::prepareLeaveCurrentState( CommitPageReason _eReason )
-    {
-        if ( !OAddessBookSourcePilot_Base::prepareLeaveCurrentState( _eReason ) )
-            return sal_False;
+	//---------------------------------------------------------------------
+	sal_Bool OAddessBookSourcePilot::prepareLeaveCurrentState( CommitPageReason _eReason )
+	{
+		if ( !OAddessBookSourcePilot_Base::prepareLeaveCurrentState( _eReason ) )
+			return sal_False;
 
-        if ( _eReason == eTravelBackward )
-            return sal_True;
+		if ( _eReason == eTravelBackward )
+			return sal_True;
 
-        sal_Bool bAllow = sal_True;
+		sal_Bool bAllow = sal_True;
 
-        switch ( getCurrentState() )
-        {
-        case STATE_SELECT_ABTYPE:
-            implCreateDataSource();
-            if ( needAdminInvokationPage() )
-                break;
-            // no break here
+		switch ( getCurrentState() )
+		{
+		case STATE_SELECT_ABTYPE:
+			implCreateDataSource();
+			if ( needAdminInvokationPage() )
+				break;
+			// no break here
 
-        case STATE_INVOKE_ADMIN_DIALOG:
-    		if ( !connectToDataSource( sal_False ) )
-            {
-	    		// connecting did not succeed -> do not allow proceeding
-                bAllow = sal_False;
-		    	break;
-            }
-
-            // ........................................................
-            // now that we connected to the data source, check whether we need the "table selection" page
-            const StringBag& aTables = m_aNewDataSource.getTableNames();
-
-			if ( aTables.empty() )
-            {
-                if ( RET_YES != QueryBox( this, ModuleRes( RID_QRY_NOTABLES ) ).Execute() )
-                {
-                    // cannot ask the user, or the user chose to use this data source, though there are no tables
-                    bAllow = sal_False;
-                    break;
-                }
-
-		        m_aSettings.bIgnoreNoTable = true;
+		case STATE_INVOKE_ADMIN_DIALOG:
+			if ( !connectToDataSource( sal_False ) )
+			{
+				// connecting did not succeed -> do not allow proceeding
+				bAllow = sal_False;
+				break;
 			}
 
-            if ( aTables.size() == 1 )
-			    // remember the one and only table we have
-			    m_aSettings.sSelectedTable = *aTables.begin();
+			// ........................................................
+			// now that we connected to the data source, check whether we need the "table selection" page
+			const StringBag& aTables = m_aNewDataSource.getTableNames();
 
-            break;
-        }
+			if ( aTables.empty() )
+			{
+				if ( RET_YES != QueryBox( this, ModuleRes( RID_QRY_NOTABLES ) ).Execute() )
+				{
+					// cannot ask the user, or the user chose to use this data source, though there are no tables
+					bAllow = sal_False;
+					break;
+				}
 
-        impl_updateRoadmap( m_aSettings.eType );
-        return bAllow;
-    }
+				m_aSettings.bIgnoreNoTable = true;
+			}
+
+			if ( aTables.size() == 1 )
+				// remember the one and only table we have
+				m_aSettings.sSelectedTable = *aTables.begin();
+
+			break;
+		}
+
+		impl_updateRoadmap( m_aSettings.eType );
+		return bAllow;
+	}
 
 	//---------------------------------------------------------------------
 	void OAddessBookSourcePilot::implDefaultTableName()
@@ -308,15 +303,14 @@ namespace abp
 		const sal_Char* pGuess = NULL;
 		switch ( getSettings().eType )
 		{
-			case AST_MORK		        :
 			case AST_THUNDERBIRD        : pGuess = "Personal Address book"; break;
 			case AST_LDAP		        : pGuess = "LDAP Directory"; break;
 			case AST_EVOLUTION          :
 			case AST_EVOLUTION_GROUPWISE:
 			case AST_EVOLUTION_LDAP     : pGuess = "Personal"; break;
-            default:
-                DBG_ERROR( "OAddessBookSourcePilot::implDefaultTableName: unhandled case!" );
-                return;
+			default:
+				DBG_ERROR( "OAddessBookSourcePilot::implDefaultTableName: unhandled case!" );
+				return;
 		}
 		const ::rtl::OUString sGuess = ::rtl::OUString::createFromAscii( pGuess );
 		if ( rTableNames.end() != rTableNames.find( sGuess ) )
@@ -349,10 +343,6 @@ namespace abp
 
 		switch (m_aSettings.eType)
 		{
-			case AST_MORK:
-				m_aNewDataSource = aContext.createNewMORK( m_aSettings.sDataSourceName );
-				break;
-
 			case AST_THUNDERBIRD:
 				m_aNewDataSource = aContext.createNewThunderbird( m_aSettings.sDataSourceName );
 				break;
@@ -393,9 +383,9 @@ namespace abp
 				m_aNewDataSource = aContext.createNewDBase( m_aSettings.sDataSourceName );
 				break;
 
-            case AST_INVALID:
-                DBG_ERROR( "OAddessBookSourcePilot::implCreateDataSource: illegal data source type!" );
-                break;
+			case AST_INVALID:
+				DBG_ERROR( "OAddessBookSourcePilot::implCreateDataSource: illegal data source type!" );
+				break;
 		}
 		m_eNewDataSourceType = m_aSettings.eType;
 	}
@@ -438,58 +428,59 @@ namespace abp
 		}
 	}
 
-    //---------------------------------------------------------------------
-    void OAddessBookSourcePilot::impl_updateRoadmap( AddressSourceType _eType )
-    {
-        bool bSettingsPage = needAdminInvokationPage( _eType );
-        bool bTablesPage   = needTableSelection( _eType );
-        bool bFieldsPage   = needManualFieldMapping( _eType );
+	//---------------------------------------------------------------------
+	void OAddessBookSourcePilot::impl_updateRoadmap( AddressSourceType _eType )
+	{
+		bool bSettingsPage = needAdminInvokationPage( _eType );
+		bool bTablesPage   = needTableSelection( _eType );
+		bool bFieldsPage   = needManualFieldMapping( _eType );
 
-        bool bConnected = m_aNewDataSource.isConnected();
-        bool bCanSkipTables =
-                (   m_aNewDataSource.hasTable( m_aSettings.sSelectedTable )
-                ||  m_aSettings.bIgnoreNoTable
-                );
+		bool bConnected = m_aNewDataSource.isConnected();
+		bool bCanSkipTables =
+				(  m_aNewDataSource.hasTable( m_aSettings.sSelectedTable )
+				|| m_aSettings.bIgnoreNoTable
+				);
 
-        enableState( STATE_INVOKE_ADMIN_DIALOG, bSettingsPage );
+		enableState( STATE_INVOKE_ADMIN_DIALOG, bSettingsPage );
 
-        enableState( STATE_TABLE_SELECTION,
-            bTablesPage &&  ( bConnected ? !bCanSkipTables : !bSettingsPage )
-            // if we do not need a settings page, we connect upon "Next" on the first page
-        );
+		enableState( STATE_TABLE_SELECTION,
+			bTablesPage && ( bConnected ? !bCanSkipTables : !bSettingsPage )
+			// if we do not need a settings page, we connect upon "Next" on the first page
+		);
 
-        enableState( STATE_MANUAL_FIELD_MAPPING,
-                bFieldsPage && bConnected && m_aNewDataSource.hasTable( m_aSettings.sSelectedTable )
-        );
+		enableState( STATE_MANUAL_FIELD_MAPPING,
+				bFieldsPage && bConnected && m_aNewDataSource.hasTable( m_aSettings.sSelectedTable )
+		);
 
-        enableState( STATE_FINAL_CONFIRM,
-            bConnected && bCanSkipTables
-        );
-    }
+		enableState( STATE_FINAL_CONFIRM,
+			bConnected && bCanSkipTables
+		);
+	}
 
-    //---------------------------------------------------------------------
-    void OAddessBookSourcePilot::typeSelectionChanged( AddressSourceType _eType )
-    {
-        PathId nCurrentPathID( PATH_COMPLETE );
-        bool bSettingsPage = needAdminInvokationPage( _eType );
-        bool bFieldsPage = needManualFieldMapping( _eType );
-        if ( !bSettingsPage )
-            if ( !bFieldsPage )
-                nCurrentPathID = PATH_NO_SETTINGS_NO_FIELDS;
-            else
-                nCurrentPathID = PATH_NO_SETTINGS;
-        else
-            if ( !bFieldsPage )
-                nCurrentPathID = PATH_NO_FIELDS;
-            else
-                nCurrentPathID = PATH_COMPLETE;
-        activatePath( nCurrentPathID, true );
+	//---------------------------------------------------------------------
+	void OAddessBookSourcePilot::typeSelectionChanged( AddressSourceType _eType )
+	{
+		PathId nCurrentPathID( PATH_COMPLETE );
+		bool bSettingsPage = needAdminInvokationPage( _eType );
+		bool bFieldsPage = needManualFieldMapping( _eType );
+		if ( !bSettingsPage )
+			if ( !bFieldsPage )
+				nCurrentPathID = PATH_NO_SETTINGS_NO_FIELDS;
+			else
+				nCurrentPathID = PATH_NO_SETTINGS;
+		else
+			if ( !bFieldsPage )
+				nCurrentPathID = PATH_NO_FIELDS;
+			else
+				nCurrentPathID = PATH_COMPLETE;
+		activatePath( nCurrentPathID, true );
 
-        m_aNewDataSource.disconnect();
-        m_aSettings.bIgnoreNoTable = false;
-        impl_updateRoadmap( _eType );
-    }
+		m_aNewDataSource.disconnect();
+		m_aSettings.bIgnoreNoTable = false;
+		impl_updateRoadmap( _eType );
+	}
 
 //.........................................................................
 }	// namespace abp
-//.........................................................................
+
+/* vim: set noet sw=4 ts=4: */
