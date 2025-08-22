@@ -47,7 +47,7 @@ namespace abp
 	//=====================================================================
 	struct ODataSourceContextImpl;
 	class ODataSource;
-	// a non-UNO wrapper for the data source context
+	// an non-UNO wrapper for the data source context
 	class ODataSourceContext
 	{
 	private:
