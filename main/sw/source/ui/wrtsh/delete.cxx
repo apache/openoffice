@@ -259,6 +259,8 @@ long SwWrtShell::DelRight()
 		nSelection = nsSelectionType::SEL_TBL;
 	if(nSelection & nsSelectionType::SEL_TXT)
 		nSelection = nsSelectionType::SEL_TXT;
+	if(nSelection & nsSelectionType::SEL_FONTWORK)
+		nSelection = nsSelectionType::SEL_DRW;
 
 	const SwTableNode * pWasInTblNd = NULL;
 
