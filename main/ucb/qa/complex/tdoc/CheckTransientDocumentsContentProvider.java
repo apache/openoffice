@@ -134,8 +134,13 @@ public class CheckTransientDocumentsContentProvider {
                 String identifier = xContentAccess.queryContentIdentifierString();
                 System.out.println("Identifier of row " + xResultSet.getRow() + ": " + identifier);
             }
+<<<<<<< HEAD
             // some feeble test: if the amount >2, we're ok. 
             // 2do: check better
+=======
+            // some feeble test: if the amount >2, we're ok.
+            // TODO: check better
+>>>>>>> 5cd1c82638 (Replace 2do -> TODO, minor cleanup)
             assertTrue("Did only find " + countContentIdentifiers + " open documents." +
                         " Should have been at least 3.", countContentIdentifiers>2);
         }

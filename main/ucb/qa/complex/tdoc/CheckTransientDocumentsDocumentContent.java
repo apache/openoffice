@@ -154,7 +154,7 @@ public class CheckTransientDocumentsDocumentContent {
             titleSetCommand.Argument = titleProp;
             xFolderCommandProcessor.execute(titleSetCommand, 0, null);
 
-            // 2do: check all this stuff!
+            // TODO: check all this stuff!
             // commit changes
 /*            InsertCommandArgument insertArgs = new InsertCommandArgument();
             insertArgs.Data = null;

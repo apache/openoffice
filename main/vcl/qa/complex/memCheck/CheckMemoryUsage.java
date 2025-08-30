@@ -179,7 +179,7 @@ public class CheckMemoryUsage /* extends ComplexTestCase */
         sDocTypeExportFilter = new String[v.size()][2];
         for (int i = 0; i < v.size(); i++)
         {
-            // 2do: error routine for wrong given params
+            // TODO: error routine for wrong given params
             final String sVContent = v.get(i);
             StringTokenizer t = new StringTokenizer(sVContent, ",");
             final String sExt = t.nextToken();

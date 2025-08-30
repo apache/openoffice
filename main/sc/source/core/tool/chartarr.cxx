@@ -476,7 +476,7 @@ ScMemChart* ScChartArray::CreateMemChartMulti()
 			}
 		}
 
-//2do: Beschriftung bei Luecken
+// TODO: Beschriftung bei Lücken
 
 		//
 		//	Spalten-Header

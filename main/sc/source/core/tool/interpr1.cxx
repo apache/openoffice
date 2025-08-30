@@ -2815,7 +2815,7 @@ void ScInterpreter::ScUpper()
 void ScInterpreter::ScPropper()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScPropper" );
-//2do: what to do with I18N-CJK ?!?
+// TODO: what to do with I18N-CJK ?!?
     String aStr( GetString() );
     const xub_StrLen nLen = aStr.Len();
     // #i82487# don't try to write to empty string's BufferAccess
@@ -2993,7 +2993,7 @@ void ScInterpreter::ScValue()
 }
 
 
-//2do: this should be a proper unicode string method
+// TODO: this should be a proper unicode string method
 inline sal_Bool lcl_ScInterpreter_IsPrintable( sal_Unicode c )
 {
     return 0x20 <= c && c != 0x7f;
@@ -3015,7 +3015,7 @@ void ScInterpreter::ScClean()
 void ScInterpreter::ScCode()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScCode" );
-//2do: make it full range unicode?
+// TODO: make it full range unicode?
     const String& rStr = GetString();
     PushInt( (sal_uChar) ByteString::ConvertFromUnicode( rStr.GetChar(0), gsl_getSystemTextEncoding() ) );
 }
@@ -3024,7 +3024,7 @@ void ScInterpreter::ScCode()
 void ScInterpreter::ScChar()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScChar" );
-//2do: make it full range unicode?
+// TODO: make it full range unicode?
     double fVal = GetDouble();
     if (fVal < 0.0 || fVal >= 256.0)
         PushIllegalArgument();

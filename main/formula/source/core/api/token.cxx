@@ -112,7 +112,7 @@ sal_uInt8 FormulaToken::GetParamCount() const
             eOp != ocIf && eOp != ocChose && eOp != ocPercentSign )
         return 0;       // parameters and specials
                         // ocIf and ocChose not for FAP, have cByte then
-//2do: sal_Bool parameter whether FAP or not?
+// TODO: sal_Bool parameter whether FAP or not?
     else if ( GetByte() )
         return GetByte();   // all functions, also ocExternal and ocMacro
     else if (SC_OPCODE_START_BIN_OP <= eOp && eOp < SC_OPCODE_STOP_BIN_OP)

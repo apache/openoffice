@@ -1144,7 +1144,7 @@ sal_Bool ScChangeActionDel::Reject( ScDocument* pDoc )
 				break;
 				case SC_CAT_DELETE_TABS :
 				{
-//2do: Tabellennamen merken?
+// TODO: Tabellennamen merken?
 					String aName;
 					pDoc->CreateValidTabName( aName );
                     if ( ( bOk = pDoc->ValidNewTabName( aName ) ) != sal_False )
@@ -2160,7 +2160,7 @@ void ScChangeActionContent::UpdateReference( const ScChangeTrack* pTrack,
 		{	//! HACK!
 			//! UpdateReference kann nicht mit Positionen ausserhalb des
 			//! Dokuments umgehen, deswegen alles auf #REF! setzen
-//2do: make it possible! das bedeutet grossen Umbau von ScAddress etc.!
+// TODO: make it possible! das bedeutet grossen Umbau von ScAddress etc.!
 			const ScBigAddress& rPos = aBigRange.aStart;
 			if ( bOldFormula )
 			{
@@ -2592,7 +2592,7 @@ void ScChangeTrack::AppendDeleteRange( const ScRange& rRange,
 			{	// ganze Zeilen und/oder Tabellen
 				if ( nRow1 == 0 && nRow2 == MAXROW )
 				{	// ganze Tabellen
-//2do: geht nicht auch komplette Tabelle als ganzes?
+// TODO: geht nicht auch komplette Tabelle als ganzes?
 					ScRange aRange( 0, 0, nTab, 0, MAXROW, nTab );
 					for ( SCCOL nCol = nCol1; nCol <= nCol2; nCol++ )
 					{	// spaltenweise ist weniger als zeilenweise
