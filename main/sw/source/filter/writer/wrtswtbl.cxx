@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
 #include <hintids.hxx>
@@ -46,16 +44,16 @@ SV_IMPL_OP_PTRARR_SORT( SwWriteTableCols, SwWriteTableColPtr )
 
 sal_Int16 SwWriteTableCell::GetVertOri() const
 {
-    sal_Int16 eCellVertOri = text::VertOrientation::TOP;
+	sal_Int16 eCellVertOri = text::VertOrientation::TOP;
 	if( pBox->GetSttNd() )
 	{
 		const SfxItemSet& rItemSet = pBox->GetFrmFmt()->GetAttrSet();
 		const SfxPoolItem *pItem;
 		if(	SFX_ITEM_SET == rItemSet.GetItemState( RES_VERT_ORIENT, sal_False, &pItem ) )
 		{
-            sal_Int16 eBoxVertOri =
+			sal_Int16 eBoxVertOri =
 				((const SwFmtVertOrient *)pItem)->GetVertOrient();
-            if( text::VertOrientation::CENTER==eBoxVertOri || text::VertOrientation::BOTTOM==eBoxVertOri)
+			if( text::VertOrientation::CENTER==eBoxVertOri || text::VertOrientation::BOTTOM==eBoxVertOri)
 				eCellVertOri = eBoxVertOri;
 		}
 	}
@@ -100,7 +98,7 @@ sal_uInt32 SwWriteTable::GetBoxWidth( const SwTableBox *pBox )
 {
 	const SwFrmFmt *pFmt = pBox->GetFrmFmt();
 	const SwFmtFrmSize& aFrmSize=
-        (const SwFmtFrmSize&)pFmt->GetFmtAttr( RES_FRM_SIZE );
+		(const SwFmtFrmSize&)pFmt->GetFmtAttr( RES_FRM_SIZE );
 
 	return sal::static_int_cast<sal_uInt32>(aFrmSize.GetSize().Width());
 }
@@ -115,21 +113,21 @@ long SwWriteTable::GetLineHeight( const SwTableLine *pLine )
 	long nHeight = 0;
 	if( bUseLayoutHeights )
 	{
-		// Erstmal versuchen wir die Hoehe ueber das Layout zu bekommen
-        bool bLayoutAvailable = false;
-        nHeight = pLine->GetTableLineHeight(bLayoutAvailable);
+		// Erstmal versuchen wir die Höhe über das Layout zu bekommen
+		bool bLayoutAvailable = false;
+		nHeight = pLine->GetTableLineHeight(bLayoutAvailable);
 		if( nHeight > 0 )
 			return nHeight;
 
-		// Wenn kein Layout gefunden wurde, gehen wir von festen Hoehen aus.
-        // --> FME 2007-3-26 #i60390# in some cases we still want to continue
-        // to use the layout heights even if one of the rows has a height of 0
-        // ('hidden' rows)
-        // <--
+		// Wenn kein Layout gefunden wurde, gehen wir von festen Höhen aus.
+		// --> FME 2007-3-26 #i60390# in some cases we still want to continue
+		// to use the layout heights even if one of the rows has a height of 0
+		// ('hidden' rows)
+		// <--
 		bUseLayoutHeights = bLayoutAvailable; /*sal_False;*/
 
 #ifdef DBG_UTIL
-		ASSERT( bLayoutAvailable || !bOldGetLineHeightCalled, "Layout ungueltig?" );
+		ASSERT( bLayoutAvailable || !bOldGetLineHeightCalled, "Layout ungültig?" );
 #endif
 	}
 
@@ -251,7 +249,7 @@ sal_uInt16 SwWriteTable::MergeBoxBorders( const SwTableBox *pBox,
 	sal_uInt16 nBorderMask = 0;
 
 	const SwFrmFmt *pFrmFmt = pBox->GetFrmFmt();
-    const SvxBoxItem& rBoxItem = (const SvxBoxItem&)pFrmFmt->GetFmtAttr( RES_BOX );
+	const SvxBoxItem& rBoxItem = (const SvxBoxItem&)pFrmFmt->GetFmtAttr( RES_BOX );
 
 	if( rBoxItem.GetTop() )
 	{
@@ -302,11 +300,11 @@ sal_uInt16 SwWriteTable::MergeBoxBorders( const SwTableBox *pBox,
 }
 
 
-sal_uInt32  SwWriteTable::GetRawWidth( sal_uInt16 nCol, sal_uInt16 nColSpan ) const
+sal_uInt32 SwWriteTable::GetRawWidth( sal_uInt16 nCol, sal_uInt16 nColSpan ) const
 {
-    sal_uInt32 nWidth = aCols[nCol+nColSpan-1]->GetPos();
+	sal_uInt32 nWidth = aCols[nCol+nColSpan-1]->GetPos();
 	if( nCol > 0 )
-        nWidth = nWidth - aCols[nCol-1]->GetPos();
+		nWidth = nWidth - aCols[nCol-1]->GetPos();
 
 	return nWidth;
 }
@@ -318,11 +316,11 @@ sal_uInt16 SwWriteTable::GetLeftSpace( sal_uInt16 nCol ) const
 	// In der ersten Spalte auch noch die Liniendicke abziehen
 	if( nCol==0 )
 	{
-        nSpace = nSpace + nLeftSub;
+		nSpace = nSpace + nLeftSub;
 
 		const SwWriteTableCol *pCol = aCols[nCol];
 		if( pCol->HasLeftBorder() )
-            nSpace = nSpace + nBorder;
+			nSpace = nSpace + nBorder;
 	}
 
 	return nSpace;
@@ -332,7 +330,7 @@ sal_uInt16 SwWriteTable::GetRightSpace( sal_uInt16 nCol, sal_uInt16 nColSpan ) c
 {
 	sal_uInt16 nSpace = nCellPadding;
 
-	// In der letzten Spalte noch einmal zusaetzlich CELLSPACING und
+	// In der letzten Spalte noch einmal zusätzlich CELLSPACING und
 	// und die Liniendicke abziehen
 	if( nCol+nColSpan==aCols.Count() )
 	{
@@ -340,7 +338,7 @@ sal_uInt16 SwWriteTable::GetRightSpace( sal_uInt16 nCol, sal_uInt16 nColSpan ) c
 
 		const SwWriteTableCol *pCol = aCols[nCol+nColSpan-1];
 		if( pCol->HasRightBorder() )
-            nSpace = nSpace + nBorder;
+			nSpace = nSpace + nBorder;
 	}
 
 	return nSpace;
@@ -348,7 +346,7 @@ sal_uInt16 SwWriteTable::GetRightSpace( sal_uInt16 nCol, sal_uInt16 nColSpan ) c
 
 sal_uInt16 SwWriteTable::GetAbsWidth( sal_uInt16 nCol, sal_uInt16 nColSpan ) const
 {
-    sal_uInt32 nWidth = GetRawWidth( nCol, nColSpan );
+	sal_uInt32 nWidth = GetRawWidth( nCol, nColSpan );
 	if( nBaseWidth != nTabWidth )
 	{
 		nWidth *= nTabWidth;
@@ -374,7 +372,7 @@ sal_uInt16 SwWriteTable::GetPrcWidth( sal_uInt16 nCol, sal_uInt16 nColSpan ) con
 	long nWidth = GetRawWidth( nCol, nColSpan );
 
 	// sieht komisch aus, ist aber nichts anderes als
-	//  [(100 * nWidth) + .5] ohne Rundungsfehler
+	// [(100 * nWidth) + .5] ohne Rundungsfehler
 	return (sal_uInt16)(long)Fraction( nWidth*100 + GetBaseWidth()/2,
 								   GetBaseWidth() );
 }
@@ -384,7 +382,7 @@ long SwWriteTable::GetAbsHeight( long nRawHeight, sal_uInt16 nRow,
 {
 	nRawHeight -= (2*nCellPadding + nCellSpacing);
 
-	// In der ersten Zeile noch einmal zusaetzlich CELLSPACING und
+	// In der ersten Zeile noch einmal zusätzlich CELLSPACING und
 	// und die Liniendicke abziehen
 	const SwWriteTableRow *pRow = 0;
 	if( nRow==0 )
@@ -425,7 +423,7 @@ void SwWriteTable::CollectTableRowsCols( long nStartRPos,
 	sal_uInt16 nLines = rLines.Count();
 
 #ifdef DBG_UTIL
-    sal_uInt32 nEndCPos = 0;
+	sal_uInt32 nEndCPos = 0;
 #endif
 
 	long nRPos = nStartRPos;
@@ -435,22 +433,22 @@ void SwWriteTable::CollectTableRowsCols( long nStartRPos,
 
 		long nOldRPos = nRPos;
 
-		if( nLine < nLines-1 || nParentLineHeight==0  )
+		if( nLine < nLines-1 || nParentLineHeight==0 )
 		{
-            long nLineHeight = GetLineHeight( pLine );
+			long nLineHeight = GetLineHeight( pLine );
 			nRPos += nLineHeight;
-            if( nParentLineHeight && nStartRPos + nParentLineHeight <= nRPos )
-            {
-                /* If you have corrupt line height information, e.g. breaking rows in complex table
-                layout, you may run into this robust code.
-                It's not allowed that subrows leaves their parentrow. If this would happen the line
-                height of subrow is reduced to a part of the remaining height */
-                ASSERT( sal_False, "Corrupt line height I" );
-                nRPos -= nLineHeight;
-                nLineHeight = nStartRPos + nParentLineHeight - nRPos; // remaining parent height
-                nLineHeight /= nLines - nLine; // divided through the number of remaining sub rows
-                nRPos += nLineHeight;
-            }
+			if( nParentLineHeight && nStartRPos + nParentLineHeight <= nRPos )
+			{
+				/* If you have corrupt line height information, e.g. breaking rows in complex table
+				layout, you may run into this robust code.
+				It's not allowed that subrows leaves their parentrow. If this would happen the line
+				height of subrow is reduced to a part of the remaining height */
+				ASSERT( sal_False, "Corrupt line height I" );
+				nRPos -= nLineHeight;
+				nLineHeight = nStartRPos + nParentLineHeight - nRPos; // remaining parent height
+				nLineHeight /= nLines - nLine; // divided through the number of remaining sub rows
+				nRPos += nLineHeight;
+			}
 			SwWriteTableRow *pRow = new SwWriteTableRow( nRPos, bUseLayoutHeights);
 			sal_uInt16 nRow;
 			if( aRows.Seek_Entry( pRow, &nRow ) )
@@ -468,15 +466,15 @@ void SwWriteTable::CollectTableRowsCols( long nStartRPos,
 			SwWriteTableRow aRow( nStartRPos + nParentLineHeight, bUseLayoutHeights );
 			ASSERT( aRows.Seek_Entry(&aRow),
 					"Parent-Zeile nicht gefunden" );
-            SwWriteTableRow aRowCheckPos(nCheckPos,bUseLayoutHeights);
-            SwWriteTableRow aRowRPos(nRPos,bUseLayoutHeights);
+			SwWriteTableRow aRowCheckPos(nCheckPos,bUseLayoutHeights);
+			SwWriteTableRow aRowRPos(nRPos,bUseLayoutHeights);
 			ASSERT( !bUseLayoutHeights ||
-                    aRowCheckPos == aRowRPos,
-					"Hoehe der Zeilen stimmt nicht mit Parent ueberein" );
+					aRowCheckPos == aRowRPos,
+					"Höhe der Zeilen stimmt nicht mit Parent überein" );
 #endif
 		}
 
-		// Fuer alle Boxen der Zeile ggf. eine Spalte einfuegen
+		// Für alle Boxen der Zeile ggf. eine Spalte einfügen
 		const SwTableBoxes& rBoxes = pLine->GetTabBoxes();
 		sal_uInt16 nBoxes = rBoxes.Count();
 
@@ -487,9 +485,9 @@ void SwWriteTable::CollectTableRowsCols( long nStartRPos,
 
 			sal_uInt32 nOldCPos = nCPos;
 
-			if( nBox < nBoxes-1 || (nParentLineWidth==0 && nLine==0)  )
+			if( nBox < nBoxes-1 || (nParentLineWidth==0 && nLine==0) )
 			{
-                nCPos = nCPos + GetBoxWidth( pBox );
+				nCPos = nCPos + GetBoxWidth( pBox );
 				SwWriteTableCol *pCol = new SwWriteTableCol( nCPos );
 
 				sal_uInt16 nCol;
@@ -508,7 +506,7 @@ void SwWriteTable::CollectTableRowsCols( long nStartRPos,
 			else
 			{
 #ifdef DBG_UTIL
-                sal_uInt32 nCheckPos = nCPos + GetBoxWidth( pBox );
+				sal_uInt32 nCheckPos = nCPos + GetBoxWidth( pBox );
 				if( !nEndCPos )
 				{
 					nEndCPos = nCheckPos;
@@ -517,7 +515,7 @@ void SwWriteTable::CollectTableRowsCols( long nStartRPos,
 				{
 					ASSERT( SwWriteTableCol(nCheckPos) ==
 												SwWriteTableCol(nEndCPos),
-					"Zelle enthaelt unterschiedlich breite Zeilen" );
+					"Zelle enthält unterschiedlich breite Zeilen" );
 				}
 #endif
 				nCPos = nStartCPos + nParentLineWidth;
@@ -527,7 +525,7 @@ void SwWriteTable::CollectTableRowsCols( long nStartRPos,
 						"Parent-Zelle nicht gefunden" );
 				ASSERT( SwWriteTableCol(nCheckPos) ==
 											SwWriteTableCol(nCPos),
-						"Breite der Zellen stimmt nicht mit Parent ueberein" );
+						"Breite der Zellen stimmt nicht mit Parent überein" );
 #endif
 			}
 
@@ -565,22 +563,22 @@ void SwWriteTable::FillTableRowsCols( long nStartRPos, sal_uInt16 nStartRow,
 	{
 		const SwTableLine *pLine = rLines[nLine];
 
-		// Position der letzten ueberdeckten Zeile ermitteln
+		// Position der letzten überdeckten Zeile ermitteln
 		long nOldRPos = nRPos;
 		if( nLine < nLines-1 || nParentLineHeight==0 )
-        {
-            long nLineHeight = GetLineHeight( pLine );
+		{
+			long nLineHeight = GetLineHeight( pLine );
 			nRPos += nLineHeight;
-            if( nParentLineHeight && nStartRPos + nParentLineHeight <= nRPos )
-            {
-                /* See comment in CollectTableRowCols */
-                ASSERT( sal_False, "Corrupt line height II" );
-                nRPos -= nLineHeight;
-                nLineHeight = nStartRPos + nParentLineHeight - nRPos; // remaining parent height
-                nLineHeight /= nLines - nLine; // divided through the number of remaining sub rows
-                nRPos += nLineHeight;
-            }
-        }
+			if( nParentLineHeight && nStartRPos + nParentLineHeight <= nRPos )
+			{
+				/* See comment in CollectTableRowCols */
+				ASSERT( sal_False, "Corrupt line height II" );
+				nRPos -= nLineHeight;
+				nLineHeight = nStartRPos + nParentLineHeight - nRPos; // remaining parent height
+				nLineHeight /= nLines - nLine; // divided through the number of remaining sub rows
+				nRPos += nLineHeight;
+			}
+		}
 		else
 			nRPos = nStartRPos + nParentLineHeight;
 
@@ -593,13 +591,13 @@ void SwWriteTable::FillTableRowsCols( long nStartRPos, sal_uInt16 nStartRow,
 			aRows.Seek_Entry( &aRow, &nRow );
 		ASSERT( bFound, "Wo ist die Zeile geblieben?" );
 
-        ASSERT( nOldRow <= nRow, "Don't look back!" );
-        if( nOldRow > nRow )
-        {
-            nOldRow = nRow;
-            if( nOldRow )
-                --nOldRow;
-        }
+		ASSERT( nOldRow <= nRow, "Don't look back!" );
+		if( nOldRow > nRow )
+		{
+			nOldRow = nRow;
+			if( nOldRow )
+				--nOldRow;
+		}
 
 
 		SwWriteTableRow *pRow = aRows[nOldRow];
@@ -625,8 +623,8 @@ void SwWriteTable::FillTableRowsCols( long nStartRPos, sal_uInt16 nStartRow,
 		{
 			pLineBrush = (const SvxBrushItem *)pItem;
 
-			// Wenn die Zeile die gesamte Tabelle umspannt, koennen
-			// Wir den Hintergrund an der Zeile ausgeben. Sonst muessen
+			// Wenn die Zeile die gesamte Tabelle umspannt, können
+			// Wir den Hintergrund an der Zeile ausgeben. Sonst müssen
 			// wir in an den Zelle ausgeben.
 			sal_Bool bOutAtRow = !nParentLineWidth;
 			if( !bOutAtRow && nStartCPos==0 )
@@ -658,11 +656,11 @@ void SwWriteTable::FillTableRowsCols( long nStartRPos, sal_uInt16 nStartRow,
 		{
 			const SwTableBox *pBox = rBoxes[nBox];
 
-			// Position der letzten ueberdeckten Spalte ermitteln
+			// Position der letzten überdeckten Spalte ermitteln
 			sal_uInt32 nOldCPos = nCPos;
 			if( nBox < nBoxes-1 || (nParentLineWidth==0 && nLine==0) )
 			{
-                nCPos = nCPos + GetBoxWidth( pBox );
+				nCPos = nCPos + GetBoxWidth( pBox );
 				if( nBox==nBoxes-1 )
 					nParentLineWidth = nCPos - nStartCPos;
 			}
@@ -682,18 +680,18 @@ void SwWriteTable::FillTableRowsCols( long nStartRPos, sal_uInt16 nStartRow,
 			{
 				sal_uInt16 nRowSpan = nRow - nOldRow + 1;
 
-                // The new table model may have true row span attributes
-                const long nAttrRowSpan = pBox->getRowSpan();
-                if ( 1 < nAttrRowSpan )
-                    nRowSpan = (sal_uInt16)nAttrRowSpan;
-                else if ( nAttrRowSpan < 1 )
-                    nRowSpan = 0;
+				// The new table model may have true row span attributes
+				const long nAttrRowSpan = pBox->getRowSpan();
+				if ( 1 < nAttrRowSpan )
+					nRowSpan = (sal_uInt16)nAttrRowSpan;
+				else if ( nAttrRowSpan < 1 )
+					nRowSpan = 0;
 
 				sal_uInt16 nColSpan = nCol - nOldCol + 1;
 				pRow->AddCell( pBox, nOldRow, nOldCol,
 							   nRowSpan, nColSpan, nHeight,
 							   pBrushItem );
-				nHeight = 0; // Die Hoehe braucht nur einmal geschieben werden
+				nHeight = 0; // Die Höhe braucht nur einmal geschieben werden
 
 				if( pBox->GetSttNd() )
 				{
@@ -756,7 +754,7 @@ void SwWriteTable::FillTableRowsCols( long nStartRPos, sal_uInt16 nStartRow,
 				bSubExpanded = sal_True;
 			}
 
-			nCol++; // Die naechste Zelle faengt in der nachten Spalte an
+			nCol++; // Die nächste Zelle fängt in der nächsten Spalte an
 		}
 
 		nRow++;
@@ -764,7 +762,7 @@ void SwWriteTable::FillTableRowsCols( long nStartRPos, sal_uInt16 nStartRow,
 }
 
 SwWriteTable::SwWriteTable(const SwTableLines& rLines, long nWidth,
-    sal_uInt32 nBWidth, sal_Bool bRel, sal_uInt16 nMaxDepth, sal_uInt16 nLSub, sal_uInt16 nRSub, sal_uInt32 nNumOfRowsToRepeat)
+	sal_uInt32 nBWidth, sal_Bool bRel, sal_uInt16 nMaxDepth, sal_uInt16 nLSub, sal_uInt16 nRSub, sal_uInt32 nNumOfRowsToRepeat)
 	: nBorderColor((sal_uInt32)-1), nCellSpacing(0), nCellPadding(0), nBorder(0),
 	nInnerBorder(0), nBaseWidth(nBWidth), nHeadEndRow(USHRT_MAX),
 	 nLeftSub(nLSub), nRightSub(nRSub), nTabWidth(nWidth), bRelWidths(bRel),
@@ -775,7 +773,7 @@ SwWriteTable::SwWriteTable(const SwTableLines& rLines, long nWidth,
 	bColsOption(false), bColTags(true), bLayoutExport(false),
 	bCollectBorderWidth(true)
 {
-    sal_uInt32 nParentWidth = nBaseWidth + nLeftSub + nRightSub;
+	sal_uInt32 nParentWidth = nBaseWidth + nLeftSub + nRightSub;
 
 	// Erstmal die Tabellen-Struktur festlegen. Hinter der Tabelle ist in
 	// jedem Fall eine Spalte zu Ende
@@ -783,8 +781,8 @@ SwWriteTable::SwWriteTable(const SwTableLines& rLines, long nWidth,
 	aCols.Insert( pCol );
 	CollectTableRowsCols( 0, 0, 0, nParentWidth, rLines, nMaxDepth - 1 );
 
-	// Und jetzt mit leben fuellen
-    FillTableRowsCols( 0, 0, 0, 0, 0, nParentWidth, rLines, 0, nMaxDepth - 1, static_cast< sal_uInt16 >(nNumOfRowsToRepeat) );
+	// Und jetzt mit leben füllen
+	FillTableRowsCols( 0, 0, 0, 0, 0, nParentWidth, rLines, 0, nMaxDepth - 1, static_cast< sal_uInt16 >(nNumOfRowsToRepeat) );
 
 	// Einige Twip-Werte an Pixel-Grenzen anpassen
 	if( !nBorder )
@@ -840,7 +838,7 @@ SwWriteTable::SwWriteTable( const SwHTMLTableLayout *pLayoutInfo )
 		aRows.Insert( pRow );
 	}
 
-	// Und jetzt mit leben fuellen
+	// Und jetzt mit Leben füllen
 	for( nRow=0; nRow<nRows; nRow++ )
 	{
 		SwWriteTableRow *pRow = aRows[nRow];
@@ -868,7 +866,7 @@ SwWriteTable::SwWriteTable( const SwHTMLTableLayout *pLayoutInfo )
 			sal_uInt16 nColSpan = pLayoutCell->GetColSpan();
 			const SwTableBox *pBox = pLayoutCnts->GetTableBox();
 			ASSERT( pBox,
-					"Tabelle in Tabelle kann nicht ueber Layout exportiert werden" );
+					"Tabelle in Tabelle kann nicht über Layout exportiert werden" );
 
 			long nHeight = bHeightExported ? 0 : GetLineHeight( pBox );
 			const SvxBrushItem *pBrushItem = GetLineBrush( pBox, pRow );
@@ -899,7 +897,7 @@ SwWriteTable::SwWriteTable( const SwHTMLTableLayout *pLayoutInfo )
 			if( !(nBorderMask & 2) )
 				pEndRow->bBottomBorder = sal_False;
 
-			// Die Hoehe braucht nur einmal geschieben werden
+			// Die Höhe braucht nur einmal geschrieben werden
 			if( nHeight )
 				bHeightExported = sal_True;
 		}
@@ -913,3 +911,5 @@ SwWriteTable::SwWriteTable( const SwHTMLTableLayout *pLayoutInfo )
 SwWriteTable::~SwWriteTable()
 {
 }
+
+/* vim: set noet sw=4 ts=4: */
