@@ -428,7 +428,7 @@ public class utils {
             sysDir += "/";
         }
 
-        // remove leading '/' and replace others with '\' on windows machines
+        // remove leading '/' and replace others with '\' on Windows machines
         if (sysDir.indexOf(":") != -1) {
             sysDir = sysDir.substring(1);
             sysDir = sysDir.replace('/', '\\');
@@ -453,7 +453,7 @@ public class utils {
             sysDir = fileURL.substring("file://".length());
         }
 
-        // remove leading '/' and replace others with '\' on windows machines
+        // remove leading '/' and replace others with '\' on Windows machines
         if (sysDir.indexOf(":") != -1) {
             sysDir = sysDir.substring(1);
             sysDir = sysDir.replace('/', '\\');
@@ -779,7 +779,7 @@ public class utils {
         StringTokenizer commandTokens = new StringTokenizer(appExecCommand, " \t");
         String officeExecutable = "";
         String officeExecCommand = "soffice";
-        // is there a 'soffice' in the command? 2do: eliminate case sensitivity on windows
+        // is there a 'soffice' in the command? TODO: eliminate case sensitivity on Windows
         int index = -1;
         while (commandTokens.hasMoreTokens() && index == -1) {
             officeExecutable += commandTokens.nextToken() + " ";
@@ -799,7 +799,7 @@ public class utils {
             } else {
                 // is it an office installation?
                 f = new File(officeExecutable);
-                // one try for windows platform can't be wrong...
+                // one try for Windows platform can't be wrong...
                 if (!f.exists() || !f.isFile()) {
                     f = new File(officeExecutable + ".exe");
                 }

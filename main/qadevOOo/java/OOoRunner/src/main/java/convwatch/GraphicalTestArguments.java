@@ -64,7 +64,7 @@ import com.sun.star.uno.UnoRuntime;
 public class GraphicalTestArguments
 {
     /**
-    2DO:
+    TODO:
     Possible reference types are currently
     // ooo
     // pdf

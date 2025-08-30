@@ -188,7 +188,7 @@ void XclObj::ImplWriteAnchor( const XclExpRoot& /*rRoot*/, const SdrObject* pSdr
 
 void XclObj::SetEscherShapeType( sal_uInt16 nType )
 {
-//2do: what about the other defined ot... types?
+// TODO: what about the other defined ot... types?
 	switch ( nType )
 	{
 		case ESCHER_ShpInst_Line :

@@ -141,7 +141,7 @@ ScSortInfoArray* ScTable::CreateSortInfoArray( SCCOLROW nInd1, SCCOLROW nInd2 )
 			ScColumn* pCol = &aCol[nCol];
 			for ( SCROW nRow = nInd1; nRow <= nInd2; nRow++ )
 			{
-//2do: FillSortInfo an ScColumn und Array abklappern statt Search in GetCell
+// TODO: FillSortInfo an ScColumn und Array abklappern statt Search in GetCell
 				ScSortInfo* pInfo = pArray->Get( nSort, nRow );
 				pInfo->pCell = pCol->GetCell( nRow );
 				pInfo->nOrg = nRow;

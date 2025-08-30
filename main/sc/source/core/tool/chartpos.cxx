@@ -174,13 +174,13 @@ void ScChartPositioner::GlueState()
 		return;
 	}
 	sal_uLong nCR = (sal_uLong)nC * nR;
-//2do:
+// TODO:
 /*
-	Erstmal simpel ohne Bitmaskiererei, maximal koennten so 8MB alloziert
+	Erstmal simpel ohne Bitmaskiererei, maximal könnten so 8MB alloziert
 	werden (256 Cols mal 32000 Rows), das liesse sich mit 2 Bit je Eintrag
 	auf 2MB reduzieren, andererseits ist es so schneller.
-	Weitere Platz-Optimierung waere, in dem Array nur die wirklich benutzten
-	Zeilen/Spalten abzulegen, wuerde aber ein weiteres durchlaufen der
+	Weitere Platz-Optimierung wäre, in dem Array nur die wirklich benutzten
+	Zeilen/Spalten abzulegen, würde aber ein weiteres durchlaufen der
 	RangeList und indirekten Zugriff auf das Array bedeuten.
  */
 	const sal_uInt8 nHole = 0;

@@ -118,7 +118,7 @@ public class PathSubstitutionTest
                 System.out.println("Substitute '" + substString + "'");
                 String newValue = oObj.substituteVariables(substString, true);
                 System.out.println("Return value '" + newValue + "'");
-                // 2do: better check for correct substitution
+                // TODO: better check for correct substitution
                 assertTrue("Did not substitute '"
                         + substString + "' to '" + newValue
                         + "' correctly:", newValue.startsWith(substVal));
@@ -132,7 +132,7 @@ public class PathSubstitutionTest
                     System.out.println("Substitute backwards '" + substString + "'");
                     newValue = oObj.reSubstituteVariables(substString);
                     System.out.println("Return value '" + newValue + "'");
-                    // 2do: better check for correct substitution
+                    // TODO: better check for correct substitution
                     assertTrue("Did not reSubstitute '"
                             + substString + "' to '" + newValue
                             + "' correctly:", checkResubstitute(newValue, var));

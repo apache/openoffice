@@ -130,7 +130,7 @@ public class CheckTransientDocumentsContentProvider {
                 System.out.println("Identifier of row " + xResultSet.getRow() + ": " + identifier);
             }
             // some feeble test: if the amount >2, we're ok.
-            // 2do: check better
+            // TODO: check better
             assertTrue("Did only find " + countContentIdentifiers + " open documents." +
                         " Should have been at least 3.", countContentIdentifiers>2);
         }

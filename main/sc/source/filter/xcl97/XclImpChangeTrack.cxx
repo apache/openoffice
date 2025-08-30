@@ -190,7 +190,7 @@ void XclImpChangeTrack::ReadFormula( ScTokenArray*& rpTokenArray, const ScAddres
 	// create a memory stream and copy the formula to be able to read simultaneously
 	// the formula and the additional 3D tab ref data following the formula
 	// here we have to simulate an Excel record to be able to use an XclImpStream...
-	// 2do: remove the stream member from formula converter and add it as a parameter
+	// TODO: remove the stream member from formula converter and add it as a parameter
 	// to the Convert() routine (to prevent the construction/destruction of the
 	// converter in each formula)
 	SvMemoryStream aMemStrm;
