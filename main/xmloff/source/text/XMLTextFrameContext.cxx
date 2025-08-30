@@ -1477,17 +1477,17 @@ void XMLTextFrameContext::EndElement()
 {
     /// solve if multiple image child contexts were imported
     /// the winner is returned, if something has yet to be done with it
-    const SvXMLImportContext* pWinner = solveMultipleImages();
+    SvXMLImportContext* pWinner = const_cast< SvXMLImportContext* >( solveMultipleImages() );
 
     // #123261# see if the winner is a XMLTextFrameContext_Impl
-    const XMLTextFrameContext_Impl* pImplWinner = dynamic_cast< const XMLTextFrameContext_Impl* >(pWinner);
+    XMLTextFrameContext_Impl* pImplWinner = dynamic_cast< XMLTextFrameContext_Impl* >(pWinner);
 
     if(pImplWinner)
     {
         // #123261# if yes, set name now, after the winner is identified (setting at each
         // candidate may run into problems due to colliding with efforts in the target to
         // avoid double names, so only set one name at one image and not at each)
-        const_cast< XMLTextFrameContext_Impl* >(pImplWinner)->SetNameForFrameFromPropSet();
+        pImplWinner->SetNameForFrameFromPropSet();
     }
 
     SvXMLImportContext *pContext = &m_xImplContext;
@@ -1496,11 +1496,17 @@ void XMLTextFrameContext::EndElement()
     if( pImpl )
     {
         pImpl->CreateIfNotThere();
-
+    }
         // --> OD 2009-07-22 #i73249#
 //        // alternative text
 //        if( m_sDesc.getLength() )
 //            pImpl->SetDesc( m_sDesc );
+
+    // Bug #126768: set all properties to the winner
+    if ( pImplWinner ) {
+        pImpl = pImplWinner;
+    }
+    if ( pImpl ) {
         // svg:title
         if( m_sTitle.getLength() )
         {
