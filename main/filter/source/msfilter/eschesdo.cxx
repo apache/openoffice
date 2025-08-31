@@ -664,7 +664,7 @@ sal_uInt32 ImplEESdrWriter::ImplWriteShape( ImplEESdrObject& rObj,
 			}
 			else
 			{
-				//2do: could be made an option in HostAppData whether OLE object should be written or not
+				// TODO: could be made an option in HostAppData whether OLE object should be written or not
 				sal_Bool bAppOLE = sal_True;
 				ADD_SHAPE( ESCHER_ShpInst_PictureFrame,
 					0xa00 | (bAppOLE ? SHAPEFLAG_OLESHAPE : 0) );
@@ -779,7 +779,7 @@ void ImplEESdrWriter::ImplWriteAdditionalText( ImplEESdrObject& rObj,
 		sal_Int32 nAngle = rObj.GetAngle();
 		if( rObj.GetType().EqualsAscii( "drawing.Line" ))
 		{
-//2do: this does not work right
+// TODO: this does not work right
 			double fDist = hypot( rObj.GetRect().GetWidth(),
 									rObj.GetRect().GetHeight() );
 			rObj.SetRect( Rectangle( rTextRefPoint,

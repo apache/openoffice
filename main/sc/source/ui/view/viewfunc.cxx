@@ -462,7 +462,7 @@ void ScViewFunc::EnterData( SCCOL nCol, SCROW nRow, SCTAB nTab, const String& rS
 			ScAddress aPos( nCol, nRow, i );
 			ScCompiler aComp( pDoc, aPos);
             aComp.SetGrammar(pDoc->GetGrammar());
-//2do: AutoCorrection via CalcOptions abschaltbar machen
+// TODO: AutoCorrection via CalcOptions abschaltbar machen
 			aComp.SetAutoCorrection( sal_True );
             if ( rString.GetChar(0) == '+' || rString.GetChar(0) == '-' )
             {

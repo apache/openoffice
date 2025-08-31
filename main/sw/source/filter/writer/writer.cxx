@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
 #include <hintids.hxx>
@@ -45,8 +43,7 @@
 
 using namespace ::com::sun::star;
 
-
-// Stringbuffer fuer die umgewandelten Zahlen
+// Stringbuffer für die umgewandelten Zahlen
 static sal_Char aNToABuf[] = "0000000000000000000000000";
 #define NTOABUFLEN (sizeof(aNToABuf))
 
@@ -54,13 +51,13 @@ DECLARE_TABLE( SwBookmarkNodeTable, SvPtrarr* )
 
 struct Writer_Impl
 {
-    SvStream * m_pStream;
+	SvStream * m_pStream;
 
 	SvStringsSortDtor *pSrcArr, *pDestArr;
 	SvPtrarr* pFontRemoveLst, *pBkmkArr;
 	SwBookmarkNodeTable* pBkmkNodePos;
 
-    Writer_Impl();
+	Writer_Impl();
 	~Writer_Impl();
 
 	void RemoveFontList( SwDoc& rDoc );
@@ -68,8 +65,8 @@ struct Writer_Impl
 };
 
 Writer_Impl::Writer_Impl()
-    : m_pStream(0)
-    , pSrcArr( 0 ), pDestArr( 0 ), pFontRemoveLst( 0 ), pBkmkNodePos( 0 )
+	: m_pStream(0)
+	, pSrcArr( 0 ), pDestArr( 0 ), pFontRemoveLst( 0 ), pBkmkNodePos( 0 )
 {
 }
 
@@ -99,55 +96,55 @@ void Writer_Impl::RemoveFontList( SwDoc& rDoc )
 
 void Writer_Impl::InsertBkmk(const ::sw::mark::IMark& rBkmk)
 {
-    if( !pBkmkNodePos )
-        pBkmkNodePos = new SwBookmarkNodeTable;
+	if( !pBkmkNodePos )
+		pBkmkNodePos = new SwBookmarkNodeTable;
 
-    sal_uLong nNd = rBkmk.GetMarkPos().nNode.GetIndex();
-    SvPtrarr* pArr = pBkmkNodePos->Get( nNd );
-    if( !pArr )
-    {
-        pArr = new SvPtrarr( 1, 4 );
-        pBkmkNodePos->Insert( nNd, pArr );
-    }
+	sal_uLong nNd = rBkmk.GetMarkPos().nNode.GetIndex();
+	SvPtrarr* pArr = pBkmkNodePos->Get( nNd );
+	if( !pArr )
+	{
+		pArr = new SvPtrarr( 1, 4 );
+		pBkmkNodePos->Insert( nNd, pArr );
+	}
 
-    void* p = (void*)&rBkmk;
-    pArr->Insert( p, pArr->Count() );
+	void* p = (void*)&rBkmk;
+	pArr->Insert( p, pArr->Count() );
 
-    if(rBkmk.IsExpanded() && rBkmk.GetOtherMarkPos().nNode != nNd)
-    {
-        nNd = rBkmk.GetOtherMarkPos().nNode.GetIndex();
-        pArr = pBkmkNodePos->Get( nNd );
-        if( !pArr )
-        {
-            pArr = new SvPtrarr( 1, 4 );
-            pBkmkNodePos->Insert( nNd, pArr );
-        }
-        pArr->Insert( p, pArr->Count() );
-    }
+	if(rBkmk.IsExpanded() && rBkmk.GetOtherMarkPos().nNode != nNd)
+	{
+		nNd = rBkmk.GetOtherMarkPos().nNode.GetIndex();
+		pArr = pBkmkNodePos->Get( nNd );
+		if( !pArr )
+		{
+			pArr = new SvPtrarr( 1, 4 );
+			pBkmkNodePos->Insert( nNd, pArr );
+		}
+		pArr->Insert( p, pArr->Count() );
+	}
 }
 
 /*
- * Dieses Modul ist die Zentrale-Sammelstelle fuer alle Write-Filter
+ * Dieses Modul ist die Zentrale-Sammelstelle für alle Write-Filter
  * und ist eine DLL !
  *
  * Damit der Writer mit den unterschiedlichen Writern arbeiten kann,
- * muessen fuer diese die Ausgabe-Funktionen der Inhalts tragenden
+ * müssen für diese die Ausgabe-Funktionen der Inhalts tragenden
  * Objecte auf die verschiedenen Ausgabe-Funktionen gemappt werden.
  *
- * Dazu kann fuer jedes Object ueber den Which-Wert in einen Tabelle ge-
+ * Dazu kann für jedes Object über den Which-Wert in einen Tabelle ge-
  * griffen werden, um seine Ausgabe-Funktion zu erfragen.
  * Diese Funktionen stehen in den entsprechenden Writer-DLL's.
  */
 
 Writer::Writer()
-    : m_pImpl(new Writer_Impl)
-    , pOrigPam(0), pOrigFileName(0), pDoc(0), pCurPam(0)
+	: m_pImpl(new Writer_Impl)
+	, pOrigPam(0), pOrigFileName(0), pDoc(0), pCurPam(0)
 {
 	bWriteAll = bShowProgress = bUCS2_WithStartChar = true;
 	bASCII_NoLastLineEnd = bASCII_ParaAsBlanc = bASCII_ParaAsCR =
 		bWriteClipboardDoc = bWriteOnlyFirstTable = bBlock =
 		bOrganizerMode = false;
-    bExportPargraphNumbering = sal_True;
+	bExportPargraphNumbering = sal_True;
 }
 
 Writer::~Writer()
@@ -164,11 +161,11 @@ const IDocumentStylePoolAccess* Writer::getIDocumentStylePoolAccess() const { re
 
 void Writer::ResetWriter()
 {
-    if (m_pImpl->pFontRemoveLst)
-    {
-        m_pImpl->RemoveFontList( *pDoc );
-    }
-    m_pImpl.reset(new Writer_Impl);
+	if (m_pImpl->pFontRemoveLst)
+	{
+		m_pImpl->RemoveFontList( *pDoc );
+	}
+	m_pImpl.reset(new Writer_Impl);
 
 	if( pCurPam )
 	{
@@ -194,7 +191,7 @@ sal_Bool Writer::CopyNextPam( SwPaM ** ppPam )
 		return sal_False;				// Ende vom Ring
 	}
 
-	// ansonsten kopiere den die Werte aus dem naechsten Pam
+	// ansonsten kopiere den die Werte aus dem nächsten Pam
 	*ppPam = ((SwPaM*)(*ppPam)->GetNext() );
 
 	*pCurPam->GetPoint() = *(*ppPam)->Start();
@@ -203,42 +200,42 @@ sal_Bool Writer::CopyNextPam( SwPaM ** ppPam )
 	return sal_True;
 }
 
-// suche die naechste Bookmark-Position aus der Bookmark-Tabelle
+// suche die nächste Bookmark-Position aus der Bookmark-Tabelle
 
 sal_Int32 Writer::FindPos_Bkmk(const SwPosition& rPos) const
 {
-    const IDocumentMarkAccess* const pMarkAccess = pDoc->getIDocumentMarkAccess();
-    const IDocumentMarkAccess::const_iterator_t ppBkmk = ::std::lower_bound(
-        pMarkAccess->getAllMarksBegin(),
-        pMarkAccess->getAllMarksEnd(),
-        rPos,
-        ::boost::bind(&::sw::mark::IMark::StartsBefore, _1, _2)); // find the first Mark that does not start before
-    if(ppBkmk != pMarkAccess->getAllMarksEnd())
-        return ppBkmk - pMarkAccess->getAllMarksBegin();
-    return -1;
+	const IDocumentMarkAccess* const pMarkAccess = pDoc->getIDocumentMarkAccess();
+	const IDocumentMarkAccess::const_iterator_t ppBkmk = ::std::lower_bound(
+		pMarkAccess->getAllMarksBegin(),
+		pMarkAccess->getAllMarksEnd(),
+		rPos,
+		::boost::bind(&::sw::mark::IMark::StartsBefore, _1, _2)); // find the first Mark that does not start before
+	if(ppBkmk != pMarkAccess->getAllMarksEnd())
+		return ppBkmk - pMarkAccess->getAllMarksBegin();
+	return -1;
 }
 
 
 SwPaM *
 Writer::NewSwPaM(SwDoc & rDoc, sal_uLong const nStartIdx, sal_uLong const nEndIdx)
 {
-    SwNodes *const pNds = &rDoc.GetNodes();
+	SwNodes *const pNds = &rDoc.GetNodes();
 
 	SwNodeIndex aStt( *pNds, nStartIdx );
 	SwCntntNode* pCNode = aStt.GetNode().GetCntntNode();
 	if( !pCNode && 0 == ( pCNode = pNds->GoNext( &aStt )) )
-    {
+	{
 		ASSERT( false, "An StartPos kein ContentNode mehr" );
-    }
+	}
 
 	SwPaM* pNew = new SwPaM( aStt );
 	pNew->SetMark();
 	aStt = nEndIdx;
 	if( 0 == (pCNode = aStt.GetNode().GetCntntNode()) &&
 		0 == (pCNode = pNds->GoPrevious( &aStt )) )
-    {
+	{
 		ASSERT( false, "An StartPos kein ContentNode mehr" );
-    }
+	}
 	pCNode->MakeEndIndex( &pNew->GetPoint()->nContent );
 	pNew->GetPoint()->nNode = aStt;
 	return pNew;
@@ -249,8 +246,8 @@ Writer::NewSwPaM(SwDoc & rDoc, sal_uLong const nStartIdx, sal_uLong const nEndId
 // Stream-spezifisches
 SvStream& Writer::Strm()
 {
-    ASSERT( m_pImpl->m_pStream, "Oh-oh. Writer with no Stream!" );
-    return *m_pImpl->m_pStream;
+	ASSERT( m_pImpl->m_pStream, "Oh-oh. Writer with no Stream!" );
+	return *m_pImpl->m_pStream;
 }
 
 void Writer::SetStream(SvStream *const pStream)
@@ -258,7 +255,7 @@ void Writer::SetStream(SvStream *const pStream)
 
 
 SvStream& Writer::OutHex( SvStream& rStrm, sal_uLong nHex, sal_uInt8 nLen )
-{												   // in einen Stream aus
+{												// in einen Stream aus
 	// Pointer an das Bufferende setzen
 	sal_Char* pStr = aNToABuf + (NTOABUFLEN-1);
 	for( sal_uInt8 n = 0; n < nLen; ++n )
@@ -307,20 +304,20 @@ SvStream& Writer::OutULong( SvStream& rStrm, sal_uLong nVal )
 
 sal_uLong Writer::Write( SwPaM& rPaM, SvStream& rStrm, const String* pFName )
 {
-    if ( IsStgWriter() )
-    {
-        SotStorageRef aRef = new SotStorage( rStrm );
-        sal_uLong nResult = Write( rPaM, *aRef, pFName );
+	if ( IsStgWriter() )
+	{
+		SotStorageRef aRef = new SotStorage( rStrm );
+		sal_uLong nResult = Write( rPaM, *aRef, pFName );
 		if ( nResult == ERRCODE_NONE )
 			aRef->Commit();
 		return nResult;
-    }
+	}
 
 	pDoc = rPaM.GetDoc();
 	pOrigFileName = pFName;
-    m_pImpl->m_pStream = &rStrm;
+	m_pImpl->m_pStream = &rStrm;
 
-	// PaM kopieren, damit er veraendert werden kann
+	// PaM kopieren, damit er verändert werden kann
 	pCurPam = new SwPaM( *rPaM.End(), *rPaM.Start() );
 	// zum Vergleich auf den akt. Pam sichern
 	pOrigPam = &rPaM;
@@ -335,7 +332,7 @@ sal_uLong Writer::Write( SwPaM& rPaM, SvStream& rStrm, const String* pFName )
 sal_uLong Writer::Write( SwPaM& rPam, SfxMedium& rMed, const String* pFileName )
 {
 	// This method must be overloaded in SwXMLWriter a storage from medium will be used there.
-	// The microsoft format can write to storage but the storage will be based on the stream.
+	// The Microsoft format can write to storage but the storage will be based on the stream.
 	return Write( rPam, *rMed.GetOutStream(), pFileName );
 }
 
@@ -353,8 +350,8 @@ sal_uLong Writer::Write( SwPaM&, const uno::Reference < embed::XStorage >&, cons
 
 sal_Bool Writer::CopyLocalFileToINet( String& rFileNm )
 {
-	if( !pOrigFileName )		        // can be happen, by example if we
-		return sal_False;                   // write into the clipboard
+	if( !pOrigFileName )		// can be happen, by example if we
+		return sal_False;		// write into the clipboard
 
 	sal_Bool bRet = sal_False;
 	INetURLObject aFileUrl( rFileNm ), aTargetUrl( *pOrigFileName );
@@ -363,27 +360,27 @@ sal_Bool Writer::CopyLocalFileToINet( String& rFileNm )
 //	if( aFileUrl.GetProtocol() == aFileUrl.GetProtocol() )
 //		return bRet;
 // this is our old without the Mail-Export
-    if( ! ( INET_PROT_FILE == aFileUrl.GetProtocol() &&
+	if( ! ( INET_PROT_FILE == aFileUrl.GetProtocol() &&
 			INET_PROT_FILE != aTargetUrl.GetProtocol() &&
-        	INET_PROT_FTP <= aTargetUrl.GetProtocol() &&
-        	INET_PROT_NEWS >= aTargetUrl.GetProtocol() ) )
+			INET_PROT_FTP <= aTargetUrl.GetProtocol() &&
+			INET_PROT_NEWS >= aTargetUrl.GetProtocol() ) )
 		return bRet;
 
-    if (m_pImpl->pSrcArr)
+	if (m_pImpl->pSrcArr)
 	{
 		// wurde die Datei schon verschoben
 		sal_uInt16 nPos;
-        if (m_pImpl->pSrcArr->Seek_Entry( &rFileNm, &nPos ))
-        {
-            rFileNm = *(*m_pImpl->pDestArr)[ nPos ];
+		if (m_pImpl->pSrcArr->Seek_Entry( &rFileNm, &nPos ))
+		{
+			rFileNm = *(*m_pImpl->pDestArr)[ nPos ];
 			return sal_True;
 		}
 	}
 	else
-    {
-        m_pImpl->pSrcArr = new SvStringsSortDtor( 4, 4 );
-        m_pImpl->pDestArr = new SvStringsSortDtor( 4, 4 );
-    }
+	{
+		m_pImpl->pSrcArr = new SvStringsSortDtor( 4, 4 );
+		m_pImpl->pDestArr = new SvStringsSortDtor( 4, 4 );
+	}
 
 	String *pSrc = new String( rFileNm );
 	String *pDest = new String( aTargetUrl.GetPartBeforeLastName() );
@@ -400,9 +397,9 @@ sal_Bool Writer::CopyLocalFileToINet( String& rFileNm )
 	bRet = 0 == aDstFile.GetError();
 
 	if( bRet )
-    {
-        m_pImpl->pSrcArr->Insert( pSrc );
-        m_pImpl->pDestArr->Insert( pDest );
+	{
+		m_pImpl->pSrcArr->Insert( pSrc );
+		m_pImpl->pDestArr->Insert( pDest );
 		rFileNm = *pDest;
 	}
 	else
@@ -423,11 +420,11 @@ void Writer::PutNumFmtFontsInAttrPool()
 	const SwNumRuleTbl& rListTbl = pDoc->GetNumRuleTbl();
 	const SwNumRule* pRule;
 	const SwNumFmt* pFmt;
-    // --> OD 2006-06-27 #b644095#
-//    const Font *pFont, *pDefFont = &SwNumRule::GetDefBulletFont();
-    const Font* pFont;
-    const Font* pDefFont = &numfunc::GetDefBulletFont();
-    // <--
+	// --> OD 2006-06-27 #b644095#
+//	const Font *pFont, *pDefFont = &SwNumRule::GetDefBulletFont();
+	const Font* pFont;
+	const Font* pDefFont = &numfunc::GetDefBulletFont();
+	// <--
 	sal_Bool bCheck = sal_False;
 
 	for( sal_uInt16 nGet = rListTbl.Count(); nGet; )
@@ -449,7 +446,7 @@ void Writer::PutNumFmtFontsInAttrPool()
 
 					_AddFontItem( rPool, SvxFontItem( pFont->GetFamily(),
 								pFont->GetName(), pFont->GetStyleName(),
-                                pFont->GetPitch(), pFont->GetCharSet(), RES_CHRATR_FONT ));
+								pFont->GetPitch(), pFont->GetCharSet(), RES_CHRATR_FONT ));
 				}
 }
 
@@ -504,14 +501,14 @@ void Writer::_AddFontItem( SfxItemPool& rPool, const SvxFontItem& rFont )
 	if( 1 < pItem->GetRefCount() )
 		rPool.Remove( *pItem );
 	else
-    {
-        if (!m_pImpl->pFontRemoveLst)
-        {
-            m_pImpl->pFontRemoveLst = new SvPtrarr( 0, 10 );
-        }
+	{
+		if (!m_pImpl->pFontRemoveLst)
+		{
+			m_pImpl->pFontRemoveLst = new SvPtrarr( 0, 10 );
+		}
 
 		void* p = (void*)pItem;
-        m_pImpl->pFontRemoveLst->Insert( p, m_pImpl->pFontRemoveLst->Count() );
+		m_pImpl->pFontRemoveLst->Insert( p, m_pImpl->pFontRemoveLst->Count() );
 	}
 }
 
@@ -519,56 +516,56 @@ void Writer::_AddFontItem( SfxItemPool& rPool, const SvxFontItem& rFont )
 // OtherPos of the bookmarks also inserted.
 void Writer::CreateBookmarkTbl()
 {
-    const IDocumentMarkAccess* const pMarkAccess = pDoc->getIDocumentMarkAccess();
-    for(IDocumentMarkAccess::const_iterator_t ppBkmk = pMarkAccess->getBookmarksBegin();
-        ppBkmk != pMarkAccess->getBookmarksEnd();
-        ++ppBkmk)
-    {
-        m_pImpl->InsertBkmk(**ppBkmk);
-    }
+	const IDocumentMarkAccess* const pMarkAccess = pDoc->getIDocumentMarkAccess();
+	for(IDocumentMarkAccess::const_iterator_t ppBkmk = pMarkAccess->getBookmarksBegin();
+		ppBkmk != pMarkAccess->getBookmarksEnd();
+		++ppBkmk)
+	{
+		m_pImpl->InsertBkmk(**ppBkmk);
+	}
 }
 
 
-// search alle Bookmarks in the range and return it in the Array
+// search all Bookmarks in the range and return it in the Array
 sal_uInt16 Writer::GetBookmarks(const SwCntntNode& rNd, xub_StrLen nStt,
-    xub_StrLen nEnd, SvPtrarr& rArr)
+	xub_StrLen nEnd, SvPtrarr& rArr)
 {
-    ASSERT( !rArr.Count(), "es sind noch Eintraege vorhanden" );
+	ASSERT( !rArr.Count(), "es sind noch Einträge vorhanden" );
 
-    sal_uLong nNd = rNd.GetIndex();
-    SvPtrarr* pArr = (m_pImpl->pBkmkNodePos) ?
-        m_pImpl->pBkmkNodePos->Get( nNd ) : 0;
-    if( pArr )
-    {
-        // there exist some bookmarks, search now all which is in the range
-        if( !nStt && nEnd == rNd.Len() )
-            // all
-            rArr.Insert( pArr, 0 );
-        else
-        {
-            sal_uInt16 n;
-            xub_StrLen nCntnt;
-            for( n = 0; n < pArr->Count(); ++n )
-            {
-                void* p = (*pArr)[ n ];
-                const ::sw::mark::IMark& rBkmk = *(::sw::mark::IMark *)p;
-                if( rBkmk.GetMarkPos().nNode == nNd &&
-                    (nCntnt = rBkmk.GetMarkPos().nContent.GetIndex() ) >= nStt &&
-                    nCntnt < nEnd )
-                {
-                    rArr.Insert( p, rArr.Count() );
-                }
-                else if( rBkmk.IsExpanded() && nNd ==
-                        rBkmk.GetOtherMarkPos().nNode.GetIndex() && (nCntnt =
-                        rBkmk.GetOtherMarkPos().nContent.GetIndex() ) >= nStt &&
-                        nCntnt < nEnd )
-                {
-                    rArr.Insert( p, rArr.Count() );
-                }
-            }
-        }
-    }
-    return rArr.Count();
+	sal_uLong nNd = rNd.GetIndex();
+	SvPtrarr* pArr = (m_pImpl->pBkmkNodePos) ?
+		m_pImpl->pBkmkNodePos->Get( nNd ) : 0;
+	if( pArr )
+	{
+		// there exist some bookmarks, search now all which is in the range
+		if( !nStt && nEnd == rNd.Len() )
+			// all
+			rArr.Insert( pArr, 0 );
+		else
+		{
+			sal_uInt16 n;
+			xub_StrLen nCntnt;
+			for( n = 0; n < pArr->Count(); ++n )
+			{
+				void* p = (*pArr)[ n ];
+				const ::sw::mark::IMark& rBkmk = *(::sw::mark::IMark *)p;
+				if( rBkmk.GetMarkPos().nNode == nNd &&
+					(nCntnt = rBkmk.GetMarkPos().nContent.GetIndex() ) >= nStt &&
+					nCntnt < nEnd )
+				{
+					rArr.Insert( p, rArr.Count() );
+				}
+				else if( rBkmk.IsExpanded() && nNd ==
+						rBkmk.GetOtherMarkPos().nNode.GetIndex() && (nCntnt =
+						rBkmk.GetOtherMarkPos().nContent.GetIndex() ) >= nStt &&
+						nCntnt < nEnd )
+				{
+					rArr.Insert( p, rArr.Count() );
+				}
+			}
+		}
+	}
+	return rArr.Count();
 }
 
 ////////////////////////////////////////////////////////////////////////////
@@ -583,12 +580,12 @@ sal_uLong StgWriter::WriteStream()
 
 sal_uLong StgWriter::Write( SwPaM& rPaM, SvStorage& rStg, const String* pFName )
 {
-    SetStream(0);
+	SetStream(0);
 	pStg = &rStg;
 	pDoc = rPaM.GetDoc();
 	pOrigFileName = pFName;
 
-	// PaM kopieren, damit er veraendert werden kann
+	// PaM kopieren, damit er verändert werden kann
 	pCurPam = new SwPaM( *rPaM.End(), *rPaM.Start() );
 	// zum Vergleich auf den akt. Pam sichern
 	pOrigPam = &rPaM;
@@ -603,13 +600,13 @@ sal_uLong StgWriter::Write( SwPaM& rPaM, SvStorage& rStg, const String* pFName )
 
 sal_uLong StgWriter::Write( SwPaM& rPaM, const uno::Reference < embed::XStorage >& rStg, const String* pFName, SfxMedium* pMedium )
 {
-    SetStream(0);
-    pStg = 0;
-    xStg = rStg;
+	SetStream(0);
+	pStg = 0;
+	xStg = rStg;
 	pDoc = rPaM.GetDoc();
 	pOrigFileName = pFName;
 
-	// PaM kopieren, damit er veraendert werden kann
+	// PaM kopieren, damit er verändert werden kann
 	pCurPam = new SwPaM( *rPaM.End(), *rPaM.Start() );
 	// zum Vergleich auf den akt. Pam sichern
 	pOrigPam = &rPaM;
@@ -621,3 +618,5 @@ sal_uLong StgWriter::Write( SwPaM& rPaM, const uno::Reference < embed::XStorage 
 
 	return nRet;
 }
+
+/* vim: set noet sw=4 ts=4: */

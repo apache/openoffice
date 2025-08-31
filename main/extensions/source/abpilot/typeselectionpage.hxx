@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #ifndef EXTENSIONS_ABP_TYPESELECTIONPAGE_HXX
 #define EXTENSIONS_ABP_TYPESELECTIONPAGE_HXX
 
@@ -44,7 +42,6 @@ namespace abp
 		RadioButton		m_aEvolution;
 		RadioButton		m_aEvolutionGroupwise;
 		RadioButton		m_aEvolutionLdap;
-		RadioButton		m_aMORK;
 		RadioButton		m_aThunderbird;
 		RadioButton		m_aKab;
 		RadioButton		m_aMacab;

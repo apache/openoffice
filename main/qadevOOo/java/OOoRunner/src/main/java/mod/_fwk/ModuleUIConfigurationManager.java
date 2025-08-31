@@ -141,7 +141,7 @@ public class ModuleUIConfigurationManager extends TestCase {
             tEnv.addObjRelation("XInitialization.args", initProps);
 
             // the short cut manager service name
-            // 2do: correct the service name when it's no longer in
+            // TODO: correct the service name when it's no longer in
             tEnv.addObjRelation("XConfigurationManager.ShortCutManager",
                 "com.sun.star.ui.ModuleAcceleratorConfiguration");
 

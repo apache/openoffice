@@ -19,13 +19,10 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
 #include <svl/itemiter.hxx>
 #include <svl/whiter.hxx>
-
 
 #include "shellio.hxx"
 #include "wrt_fn.hxx"
@@ -33,17 +30,14 @@
 #include "node.hxx"
 #include "format.hxx"
 
-
-
 Writer& Out( const SwAttrFnTab pTab, const SfxPoolItem& rHt, Writer & rWrt )
 {
 	sal_uInt16 nId = rHt.Which();
-	ASSERT(  nId < POOLATTR_END && nId >= POOLATTR_BEGIN, "SwAttrFnTab::Out()" );
+	ASSERT( nId < POOLATTR_END && nId >= POOLATTR_BEGIN, "SwAttrFnTab::Out()" );
 	FnAttrOut pOut;
 	if( 0 != ( pOut = pTab[ nId - RES_CHRATR_BEGIN] ))
 		(*pOut)( rWrt, rHt );
 	return rWrt;
-
 }
 
 Writer& Out_SfxItemSet( const SwAttrFnTab pTab, Writer& rWrt,
@@ -53,7 +47,7 @@ Writer& Out_SfxItemSet( const SwAttrFnTab pTab, Writer& rWrt,
 	// erst die eigenen Attribute ausgeben
 	const SfxItemPool& rPool = *rSet.GetPool();
 	const SfxItemSet* pSet = &rSet;
-	if( !pSet->Count() )        // Optimierung - leere Sets
+	if( !pSet->Count() ) // Optimierung - leere Sets
 	{
 		if( !bDeep )
 			return rWrt;
@@ -97,7 +91,7 @@ Writer& Out_SfxItemSet( const SwAttrFnTab pTab, Writer& rWrt,
 
 Writer& Out( const SwNodeFnTab pTab, SwNode& rNode, Writer & rWrt )
 {
-	// es muss ein CntntNode sein !!
+	// es muss ein CntntNode sein!
 	SwCntntNode * pCNd = rNode.GetCntntNode();
 	if( !pCNd )
 		return rWrt;
@@ -115,7 +109,7 @@ Writer& Out( const SwNodeFnTab pTab, SwNode& rNode, Writer & rWrt )
 			nId = RES_OLENODE;
 			break;
 		default:
-			ASSERT(false, "was fuer ein Node ist es denn nun?");
+			ASSERT(false, "was für ein Node ist es denn nun?");
 			break;
 	}
 	FnNodeOut pOut;
@@ -123,3 +117,5 @@ Writer& Out( const SwNodeFnTab pTab, SwNode& rNode, Writer & rWrt )
 		(*pOut)( rWrt, *pCNd );
 	return rWrt;
 }
+
+/* vim: set noet sw=4 ts=4: */

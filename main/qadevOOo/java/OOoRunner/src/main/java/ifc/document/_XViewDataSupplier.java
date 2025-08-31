@@ -58,7 +58,7 @@ public class _XViewDataSupplier extends MultiMethodTest {
             tRes.tested("setViewData()", Status.skipped(true));
         }
         else {
-            // 2do: provide an own implementation of the XIndexAccess to set.
+            // TODO: provide an own implementation of the XIndexAccess to set.
             // this will work without "setViewData()", it just checks that a
             // setViewData can be done.
             oObj.setViewData(xAccess);

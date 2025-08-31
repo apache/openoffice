@@ -108,7 +108,7 @@ public class UIConfigurationManager extends TestCase {
             new ConfigurationListener(log, xManager, xMSF));
 
         // the short cut manager service name
-        // 2do: correct the service name when it's no longer in
+        // TODO: correct the service name when it's no longer in
         tEnv.addObjRelation("XConfigurationManager.ShortCutManager",
             "com.sun.star.ui.DocumentAcceleratorConfiguration");
         return tEnv;

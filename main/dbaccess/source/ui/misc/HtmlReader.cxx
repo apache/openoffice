@@ -441,7 +441,7 @@ sal_Int16 OHTMLReader::GetWidthPixel( const HTMLOption* pOption )
 	{
 		if ( rOptVal.Search('*') != STRING_NOTFOUND )
 		{	// relativ zu was?!?
-//2do: ColArray aller relativen Werte sammeln und dann MakeCol
+// TODO: ColArray aller relativen Werte sammeln und dann MakeCol
 			return 0;
 		}
 		else

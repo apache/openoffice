@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_extensions.hxx"
 #include "typeselectionpage.hxx"
@@ -29,7 +27,6 @@
 #include <vcl/msgbox.hxx>
 #include <com/sun/star/sdbc/XDriverAccess.hpp>
 
-//.........................................................................
 namespace abp
 {
 //.........................................................................
@@ -43,25 +40,24 @@ namespace abp
 	//---------------------------------------------------------------------
 	TypeSelectionPage::TypeSelectionPage( OAddessBookSourcePilot* _pParent )
 		:AddressBookSourcePage(_pParent, ModuleRes(RID_PAGE_SELECTABTYPE))
-        ,m_aHint			    (this,	ModuleRes(FT_TYPE_HINTS))
-        ,m_aTypeSep			    (this,	ModuleRes(FL_TYPE))
-        ,m_aEvolution		    (this,	ModuleRes(RB_EVOLUTION))
-        ,m_aEvolutionGroupwise  (this,	ModuleRes(RB_EVOLUTION_GROUPWISE))
-        ,m_aEvolutionLdap	    (this,	ModuleRes(RB_EVOLUTION_LDAP))
-        ,m_aMORK			    (this,	ModuleRes(RB_MORK))
-        ,m_aThunderbird         (this,  ModuleRes(RB_THUNDERBIRD))
-        ,m_aKab				    (this,	ModuleRes(RB_KAB))
-        ,m_aMacab			    (this,	ModuleRes(RB_MACAB))
-        ,m_aLDAP			    (this,	ModuleRes(RB_LDAP))
-        ,m_aOutlook			    (this,	ModuleRes(RB_OUTLOOK))
-        ,m_aOE				    (this,	ModuleRes(RB_OUTLOOKEXPRESS))
-        ,m_aOther			    (this,	ModuleRes(RB_OTHER))
-    {
+		,m_aHint				(this,	ModuleRes(FT_TYPE_HINTS))
+		,m_aTypeSep				(this,	ModuleRes(FL_TYPE))
+		,m_aEvolution			(this,	ModuleRes(RB_EVOLUTION))
+		,m_aEvolutionGroupwise	(this,	ModuleRes(RB_EVOLUTION_GROUPWISE))
+		,m_aEvolutionLdap		(this,	ModuleRes(RB_EVOLUTION_LDAP))
+		,m_aThunderbird			(this,	ModuleRes(RB_THUNDERBIRD))
+		,m_aKab					(this,	ModuleRes(RB_KAB))
+		,m_aMacab				(this,	ModuleRes(RB_MACAB))
+		,m_aLDAP				(this,	ModuleRes(RB_LDAP))
+		,m_aOutlook				(this,	ModuleRes(RB_OUTLOOK))
+		,m_aOE					(this,	ModuleRes(RB_OUTLOOKEXPRESS))
+		,m_aOther				(this,	ModuleRes(RB_OTHER))
+	{
 		FreeResource();
 
 		Point aTopLeft( LogicToPixel( Point( 15, 68 ), MAP_APPFONT ) );
-		Size  aItemSize( LogicToPixel( Size( 0, 8 ), MAP_APPFONT ) );
-        aItemSize.Width() = GetOutputSizePixel().Width() - 30;
+		Size aItemSize( LogicToPixel( Size( 0, 8 ), MAP_APPFONT ) );
+		aItemSize.Width() = GetOutputSizePixel().Width() - 30;
 
 		bool bWithMozilla = true, bUnx = true;
 		bool bHaveEvolution = true, bHaveKab = true;
@@ -88,7 +84,7 @@ namespace abp
 		if ( !xDriver.is() )
 			bHaveKab = false;
 
-		// check whether Mac OS X address book is available
+		// check whether macOS address book is available
 		xDriver = xManager->getDriverByURL(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("sdbc:address:macab")));
 		if ( !xDriver.is() )
 			bHaveMacab = false;
@@ -98,7 +94,6 @@ namespace abp
 		m_aAllTypes.push_back( ButtonItem( &m_aEvolution, AST_EVOLUTION, bHaveEvolution ) );
 		m_aAllTypes.push_back( ButtonItem( &m_aEvolutionGroupwise, AST_EVOLUTION_GROUPWISE, bHaveEvolution ) );
 		m_aAllTypes.push_back( ButtonItem( &m_aEvolutionLdap, AST_EVOLUTION_LDAP, bHaveEvolution ) );
-		m_aAllTypes.push_back( ButtonItem( &m_aMORK, AST_MORK, bWithMozilla ) );
 		m_aAllTypes.push_back( ButtonItem( &m_aThunderbird, AST_THUNDERBIRD, bWithMozilla ) );
 		m_aAllTypes.push_back( ButtonItem( &m_aKab, AST_KAB, bHaveKab ) );
 		m_aAllTypes.push_back( ButtonItem( &m_aMacab, AST_MACAB, bHaveMacab ) );
@@ -107,9 +102,9 @@ namespace abp
 		m_aAllTypes.push_back( ButtonItem( &m_aOE, AST_OE, bWithMozilla && !bUnx ) );
 		m_aAllTypes.push_back( ButtonItem( &m_aOther, AST_OTHER, true ) );
 
-        bool bFirstVisible = true;
+		bool bFirstVisible = true;
 		Link aTypeSelectionHandler = LINK(this, TypeSelectionPage, OnTypeSelected );
-        const Size aSpacing( LogicToPixel( Size( 0, 3 ), MAP_APPFONT ) );
+		const Size aSpacing( LogicToPixel( Size( 0, 3 ), MAP_APPFONT ) );
 		for ( ::std::vector< ButtonItem >::const_iterator loop = m_aAllTypes.begin();
 			  loop != m_aAllTypes.end(); ++loop )
 		{
@@ -123,24 +118,24 @@ namespace abp
 				aItem.m_pItem->SetClickHdl( aTypeSelectionHandler );
 				aItem.m_pItem->Show();
 
-                if ( bFirstVisible )
-                {
-                    aItem.m_pItem->SetStyle( aItem.m_pItem->GetStyle() | WB_GROUP );
-                    bFirstVisible = false;
-                }
+				if ( bFirstVisible )
+				{
+					aItem.m_pItem->SetStyle( aItem.m_pItem->GetStyle() | WB_GROUP );
+					bFirstVisible = false;
+				}
 			}
 		}
 	}
 
 	//---------------------------------------------------------------------
-    TypeSelectionPage::~TypeSelectionPage()
-    {
+	TypeSelectionPage::~TypeSelectionPage()
+	{
 		for ( ::std::vector< ButtonItem >::iterator loop = m_aAllTypes.begin();
 			  loop != m_aAllTypes.end(); ++loop )
 		{
 			loop->m_bVisible = false;
-        }
-    }
+		}
+	}
 
 	//---------------------------------------------------------------------
 	void TypeSelectionPage::ActivatePage()
@@ -154,11 +149,11 @@ namespace abp
 			if( rItem.m_pItem->IsChecked() && rItem.m_bVisible )
 			{
 				rItem.m_pItem->GrabFocus();
-                break;
-            }
+				break;
+			}
 		}
 
-        getDialog()->enableButtons(WZB_PREVIOUS, sal_False);
+		getDialog()->enableButtons(WZB_PREVIOUS, sal_False);
 	}
 
 	//---------------------------------------------------------------------
@@ -231,11 +226,12 @@ namespace abp
 	//---------------------------------------------------------------------
 	IMPL_LINK( TypeSelectionPage, OnTypeSelected, void*, /*NOTINTERESTEDIN*/ )
 	{
-        getDialog()->typeSelectionChanged( getSelectedType() );
+		getDialog()->typeSelectionChanged( getSelectedType() );
 		updateDialogTravelUI();
 		return 0L;
 	}
 
 //.........................................................................
 }	// namespace abp
-//.........................................................................
+
+/* vim: set noet sw=4 ts=4: */
