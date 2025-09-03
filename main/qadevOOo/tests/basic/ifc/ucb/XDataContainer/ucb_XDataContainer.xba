@@ -134,7 +134,7 @@ On Error Goto ErrHndl
     Out.Log("Change data URL back to original...")
     oObj.setDataURL(aDataURL)
 
-    Out.Log("Methods getDataURL() and setDataURL() are DEPRICATED. The result of test is ALWAYS true!")
+    Out.Log("Methods getDataURL() and setDataURL() are DEPRECATED. The result of test is ALWAYS true!")
 
     bOK = true
 
