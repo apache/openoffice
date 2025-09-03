@@ -306,7 +306,7 @@ const _pair _nl_language_list[] = {
     { "BALTIC",                     RTL_TEXTENCODING_DONTKNOW },    /* ISO-IR-179 */
     { "BIG5",                       RTL_TEXTENCODING_BIG5 },        /* locale: zh_TW */
     { "BIG5-HKSCS",                 RTL_TEXTENCODING_BIG5_HKSCS },  /* locale: zh_CN.BIG5HK */
-    { "BIG5HKSCS",                  RTL_TEXTENCODING_BIG5_HKSCS },  /* depricated */
+    { "BIG5HKSCS",                  RTL_TEXTENCODING_BIG5_HKSCS },  /* deprecated */
     { "BS_4730",                    RTL_TEXTENCODING_DONTKNOW },    /* ISO-IR-4 ISO646-GB */
     { "BS_VIEWDATA",                RTL_TEXTENCODING_DONTKNOW },    /* ISO-IR-47 */
     { "CP1250",                     RTL_TEXTENCODING_MS_1250 },     /* MS-EE */

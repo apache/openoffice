@@ -149,7 +149,7 @@ public:
     ~ResMgr();
 
 						// Sprachabhaengige Ressource Library
-	static const sal_Char*	GetLang( LanguageType& eLanguage, sal_uInt16 nPrio = 0 ); //depricated! see "tools/source/rc/resmgr.cxx"
+	static const sal_Char*	GetLang( LanguageType& eLanguage, sal_uInt16 nPrio = 0 ); //deprecated! see "tools/source/rc/resmgr.cxx"
     static ResMgr*      SearchCreateResMgr( const sal_Char* pPrefixName,
                                             com::sun::star::lang::Locale& rLocale );
  	static ResMgr*		CreateResMgr( const sal_Char* pPrefixName,
