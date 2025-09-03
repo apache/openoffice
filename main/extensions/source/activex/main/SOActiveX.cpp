@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // SOActiveX.cpp : Implementation of CSOActiveX
@@ -280,7 +280,7 @@ HRESULT CSOActiveX::TerminateOffice()
 	hr = ExecuteFunc( pdispChildren, L"queryFrames", &nFlag, 1, &aFrames );
     if ( SUCCEEDED( hr ) )
     {
-		if ( ( aFrames.vt == ( VT_ARRAY | VT_DISPATCH ) || aFrames.vt == ( VT_ARRAY | VT_VARIANT ) ) 
+		if ( ( aFrames.vt == ( VT_ARRAY | VT_DISPATCH ) || aFrames.vt == ( VT_ARRAY | VT_VARIANT ) )
           && ( !aFrames.parray || aFrames.parray->cDims == 1 && aFrames.parray->rgsabound[0].cElements == 0 ) )
         {
             // there is no frames open
@@ -289,7 +289,7 @@ HRESULT CSOActiveX::TerminateOffice()
 	        hr = ExecuteFunc( pdispDesktop, L"terminate", NULL, 0, &dummyResult );
         }
     }
-    
+
     return hr;
 }
 
@@ -392,7 +392,7 @@ STDMETHODIMP CSOActiveX::Load( LPPROPERTYBAG pPropBag, LPERRORLOG /*pErrorLog*/ 
 	hr = CBindStatusCallback<CSOActiveX>::Download( this, &CSOActiveX::CallbackCreateXInputStream, mCurFileUrl, m_spClientSite, FALSE );
 	if ( hr == MK_S_ASYNCHRONOUS )
 		hr = S_OK;
-	
+
 	if ( !SUCCEEDED( hr ) )
 	{
 		// trigger initialization without stream
@@ -594,7 +594,7 @@ HRESULT CSOActiveX::CreateFrameOldWay( HWND hwnd, int width, int height )
 		long nInitInd = 0;
 		CComVariant pFrameVariant( mpDispFrame );
 		SafeArrayPutElement( pInitVals, &nInitInd, &pFrameVariant );
-		
+
 		// the second sequence element
 		nInitInd = 1;
 		CComVariant pStrArr( 1L );
@@ -739,7 +739,7 @@ void CSOActiveX::CallbackCreateXInputStream( CBindStatusCallback<CSOActiveX>* /*
 		if( SUCCEEDED( hr ) && mpDispTempFile )
 		{
 			SAFEARRAY FAR* pDataArray = SafeArrayCreateVector( VT_I1, 0, dwSize );
-	
+
 			if ( pDataArray )
 			{
 				hr = SafeArrayLock( pDataArray );
@@ -971,7 +971,7 @@ HRESULT CSOActiveX::OnDrawAdvanced( ATL_DRAWINFO& di )
 	if ( mbDrawLocked )
 		return S_OK;
 	LockingGuard aGuard( mbDrawLocked );
-	
+
     if( m_spInPlaceSite && mCurFileUrl && mbReadyForActivation )
     {
     	HWND hwnd;
@@ -1169,4 +1169,3 @@ HRESULT CSOActiveX::GetURL( const OLECHAR* url,
 
 
 // ---------------------------------------------------------------------------
-

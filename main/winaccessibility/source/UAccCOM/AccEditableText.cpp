@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 /**
@@ -49,7 +49,7 @@ using namespace std;
  */
 STDMETHODIMP CAccEditableText::copyText(long startOffset, long endOffset)
 {
-    
+
 	CHECK_ENABLE_INF
 
     ENTER_PROTECTED_BLOCK
@@ -77,7 +77,7 @@ STDMETHODIMP CAccEditableText::copyText(long startOffset, long endOffset)
  */
 STDMETHODIMP CAccEditableText::deleteText(long startOffset, long endOffset)
 {
-    
+
 	CHECK_ENABLE_INF
 
     ENTER_PROTECTED_BLOCK
@@ -102,7 +102,7 @@ STDMETHODIMP CAccEditableText::deleteText(long startOffset, long endOffset)
  */
 STDMETHODIMP CAccEditableText::insertText(long offset, BSTR * text)
 {
-    
+
 	CHECK_ENABLE_INF
 
     ENTER_PROTECTED_BLOCK
@@ -132,7 +132,7 @@ STDMETHODIMP CAccEditableText::insertText(long offset, BSTR * text)
  */
 STDMETHODIMP CAccEditableText::cutText(long startOffset, long endOffset)
 {
-    
+
 	CHECK_ENABLE_INF
 
     ENTER_PROTECTED_BLOCK
@@ -156,7 +156,7 @@ STDMETHODIMP CAccEditableText::cutText(long startOffset, long endOffset)
  */
 STDMETHODIMP CAccEditableText::pasteText(long offset)
 {
-    
+
 	CHECK_ENABLE_INF
 
     ENTER_PROTECTED_BLOCK
@@ -182,7 +182,7 @@ STDMETHODIMP CAccEditableText::pasteText(long offset)
  */
 STDMETHODIMP CAccEditableText::replaceText(long startOffset, long endOffset, BSTR * text)
 {
-    
+
 	CHECK_ENABLE_INF
 
     ENTER_PROTECTED_BLOCK
@@ -212,7 +212,7 @@ STDMETHODIMP CAccEditableText::replaceText(long startOffset, long endOffset, BST
  */
 STDMETHODIMP CAccEditableText::setAttributes(long startOffset, long endOffset, BSTR * attributes)
 {
-    
+
 	CHECK_ENABLE_INF
 
     ENTER_PROTECTED_BLOCK
@@ -484,7 +484,7 @@ void CAccEditableText::get_AnyFromOLECHAR(const ::rtl::OUString &ouName, const :
  */
 STDMETHODIMP CAccEditableText::put_XInterface(long pXInterface)
 {
-    
+
 
     ENTER_PROTECTED_BLOCK
 

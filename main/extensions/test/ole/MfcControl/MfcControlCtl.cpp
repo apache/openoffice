@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MfcControlCtl.cpp : Implementation of the CMfcControlCtrl ActiveX Control class.
@@ -216,7 +216,7 @@ void CMfcControlCtrl::OnResetState()
 // CMfcControlCtrl message handlers
 
 
-short CMfcControlCtrl::inShort(short val) 
+short CMfcControlCtrl::inShort(short val)
 {
 	char buf[256];
 	sprintf( buf, "inByte: value= %d", val);
@@ -224,7 +224,7 @@ short CMfcControlCtrl::inShort(short val)
 	return val+1;
 }
 
-long CMfcControlCtrl::inLong(long val) 
+long CMfcControlCtrl::inLong(long val)
 {
 	char buf[256];
 	sprintf( buf, "inLong: value= %d", val);
@@ -232,7 +232,7 @@ long CMfcControlCtrl::inLong(long val)
 	return val+1;
 }
 
-BSTR CMfcControlCtrl::inString(BSTR* val) 
+BSTR CMfcControlCtrl::inString(BSTR* val)
 {
 	CString strResult;
 	strResult= *val;
@@ -243,7 +243,7 @@ BSTR CMfcControlCtrl::inString(BSTR* val)
 	return strResult.AllocSysString();
 }
 
-float CMfcControlCtrl::inFloat(float val) 
+float CMfcControlCtrl::inFloat(float val)
 {
 	char buf[256];
 	sprintf( buf, "inFloat: value= %f", val);
@@ -251,7 +251,7 @@ float CMfcControlCtrl::inFloat(float val)
 	return val+1;
 }
 
-double CMfcControlCtrl::inDouble(double val) 
+double CMfcControlCtrl::inDouble(double val)
 {
 	char buf[256];
 	sprintf( buf, "inDouble: value= %g", val);
@@ -259,7 +259,7 @@ double CMfcControlCtrl::inDouble(double val)
 	return val+1;
 }
 
-VARIANT CMfcControlCtrl::inVariant(const VARIANT FAR& val) 
+VARIANT CMfcControlCtrl::inVariant(const VARIANT FAR& val)
 {
 	VARIANT vaResult;
 	VariantInit(&vaResult);
@@ -274,7 +274,7 @@ VARIANT CMfcControlCtrl::inVariant(const VARIANT FAR& val)
 	return _variant_t( L" a string from CMfcControlCtrl::inVariant");
 }
 
-LPDISPATCH CMfcControlCtrl::inObject(LPDISPATCH val) 
+LPDISPATCH CMfcControlCtrl::inObject(LPDISPATCH val)
 {
 	char buf[256];
 	_bstr_t bstr;
@@ -298,44 +298,44 @@ LPDISPATCH CMfcControlCtrl::inObject(LPDISPATCH val)
 }
 
 
-void CMfcControlCtrl::outShort(short* val) 
+void CMfcControlCtrl::outShort(short* val)
 {
 	*val= 123;
 }
 
-void CMfcControlCtrl::outLong(long* val) 
+void CMfcControlCtrl::outLong(long* val)
 {
 	*val= 1234;
 }
 
-void CMfcControlCtrl::outString(BSTR FAR* val) 
+void CMfcControlCtrl::outString(BSTR FAR* val)
 {
-	*val= SysAllocString(L"A string from CMfcControlCtrl::outString ");             
+	*val= SysAllocString(L"A string from CMfcControlCtrl::outString ");
 }
 
-void CMfcControlCtrl::outFloat(float* val) 
+void CMfcControlCtrl::outFloat(float* val)
 {
 	*val= 3.14f;
 }
 
-void CMfcControlCtrl::outDouble(double* val) 
+void CMfcControlCtrl::outDouble(double* val)
 {
 	*val= 3.145;
 }
 
-void CMfcControlCtrl::outVariant(VARIANT FAR* val) 
+void CMfcControlCtrl::outVariant(VARIANT FAR* val)
 {
 	VariantInit( val);
 	val->vt= VT_BSTR;
 	val->bstrVal= SysAllocString( L"a string in a VARIANT");
 }
 
-void CMfcControlCtrl::outObject(LPDISPATCH FAR* val) 
+void CMfcControlCtrl::outObject(LPDISPATCH FAR* val)
 {
 	//{BFE10EBE-8584-11D4-005004526AB4}
 	HRESULT hr= S_OK;
 	CLSID clsTestControl;
-	hr= CLSIDFromProgID( L"AxTestComponents.Basic", &clsTestControl); 
+	hr= CLSIDFromProgID( L"AxTestComponents.Basic", &clsTestControl);
 
 	IDispatch* pDisp= NULL;
 	hr=	CoCreateInstance( clsTestControl, NULL, CLSCTX_ALL, __uuidof(IDispatch), (void**)&pDisp);

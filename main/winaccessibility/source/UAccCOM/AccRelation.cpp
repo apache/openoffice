@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "stdafx.h"
@@ -36,7 +36,7 @@ using namespace com::sun::star::uno;
 */
 STDMETHODIMP CAccRelation::get_relationType(BSTR * relationType)
 {
-    
+
 	CHECK_ENABLE_INF
 
     ENTER_PROTECTED_BLOCK
@@ -56,7 +56,7 @@ STDMETHODIMP CAccRelation::get_relationType(BSTR * relationType)
 // Gets what the type of localized relation is.
 STDMETHODIMP CAccRelation::get_localizedRelationType(BSTR *)
 {
-    
+
 
     ENTER_PROTECTED_BLOCK
 
@@ -72,7 +72,7 @@ STDMETHODIMP CAccRelation::get_localizedRelationType(BSTR *)
 */
 STDMETHODIMP CAccRelation::get_nTargets(long * nTargets)
 {
-    
+
 
     ENTER_PROTECTED_BLOCK
 
@@ -95,7 +95,7 @@ STDMETHODIMP CAccRelation::get_nTargets(long * nTargets)
 */
 STDMETHODIMP CAccRelation::get_target(long targetIndex, IUnknown * * target)
 {
-    
+
 	CHECK_ENABLE_INF
 
     ENTER_PROTECTED_BLOCK
@@ -133,7 +133,7 @@ STDMETHODIMP CAccRelation::get_target(long targetIndex, IUnknown * * target)
 */
 STDMETHODIMP CAccRelation::get_targets(long, IUnknown * * target, long * nTargets)
 {
-    
+
 	CHECK_ENABLE_INF
 
     ENTER_PROTECTED_BLOCK
@@ -176,7 +176,7 @@ STDMETHODIMP CAccRelation::get_targets(long, IUnknown * * target, long * nTarget
 */
 STDMETHODIMP CAccRelation::put_XSubInterface(long pXSubInterface)
 {
-    
+
     relation = *((AccessibleRelation*)pXSubInterface);
     return S_OK;
 }
