@@ -35,7 +35,7 @@ namespace chart
 {
 
 
-// @depreated !!
+// @deprecated !!
 class NamedLineProperties
 {
 public:
