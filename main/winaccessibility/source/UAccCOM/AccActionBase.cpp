@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 //////////////////////////////////////////////////////////////////////
@@ -109,7 +109,7 @@ void GetDfActionByUNORole(XAccessibleContext* pRContext, BSTR* pRet)
  */
 STDMETHODIMP CAccActionBase::nActions(/*[out,retval]*/long* nActions)
 {
-    
+
 	CHECK_ENABLE_INF
 
     ENTER_PROTECTED_BLOCK
@@ -134,7 +134,7 @@ STDMETHODIMP CAccActionBase::nActions(/*[out,retval]*/long* nActions)
  */
 STDMETHODIMP CAccActionBase::doAction(/* [in] */ long actionIndex)
 {
-    
+
 	CHECK_ENABLE_INF
 
     ENTER_PROTECTED_BLOCK
@@ -156,7 +156,7 @@ STDMETHODIMP CAccActionBase::doAction(/* [in] */ long actionIndex)
  */
 STDMETHODIMP CAccActionBase::get_description(long actionIndex,BSTR __RPC_FAR *description)
 {
-    
+
 	CHECK_ENABLE_INF
 
     ENTER_PROTECTED_BLOCK
@@ -191,7 +191,7 @@ STDMETHODIMP CAccActionBase::get_localizedName( long, BSTR __RPC_FAR *)
 }
 
 /**
- * Returns key binding object (if any) associated with specified action 
+ * Returns key binding object (if any) associated with specified action
  * key binding is string.
  * e.g. "alt+d" (like IAccessible::get_accKeyboardShortcut).
  *
@@ -206,7 +206,7 @@ STDMETHODIMP CAccActionBase::get_keyBinding(
     /* [length_is][length_is][size_is][size_is][out] */ BSTR __RPC_FAR *__RPC_FAR *keyBinding,
     /* [retval][out] */ long __RPC_FAR *nBinding)
 {
-    
+
 	CHECK_ENABLE_INF
 
     ENTER_PROTECTED_BLOCK
@@ -252,7 +252,7 @@ STDMETHODIMP CAccActionBase::get_keyBinding(
  */
 STDMETHODIMP CAccActionBase::put_XInterface(long pXInterface)
 {
-    
+
 
     ENTER_PROTECTED_BLOCK
 
@@ -413,4 +413,3 @@ OLECHAR* CAccActionBase::getOLECHARFromKeyCode(long key)
         return NULL;
     }
 }
-

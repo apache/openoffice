@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,7 +42,7 @@ int main(int argc, char* argv[])
 		return -1;
 	}
 
-	
+
 	_Module.Init( ObjectMap, GetModuleHandle( NULL));
 
 	if( FAILED(hr=doTest()))
@@ -56,7 +56,7 @@ int main(int argc, char* argv[])
 	_Module.Term();
 	CoUninitialize();
 
-	
+
 	return 0;
 }
 
@@ -144,11 +144,11 @@ HRESULT doTest()
 	hr= oletest.Invoke2(L"testInterface", &param1, &param2);
 
 	// XCallback::outSeqByte
-	// Does not work currently because Sequences are always converted to 
+	// Does not work currently because Sequences are always converted to
 	// SAFEARRAY( VARIANT)
 	//	param2= 32;
 	//	hr= oletest.Invoke2(L"testInterface", &param1, &param2);
-	
+
 	//######################################################################
 	//	in / out parameters
 	//######################################################################
@@ -239,4 +239,3 @@ HRESULT doTest()
 	return hr;
 }
 // VARIANT CComVariant VT_UNKNOWN VT_DISPATCH V_UI1 CComDispatchDriver WINAPI
- 
