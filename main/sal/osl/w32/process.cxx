@@ -618,7 +618,7 @@ oslSocket SAL_CALL osl_receiveResourcePipe(oslPipe hPipe)
 		}
 		else
 		{
-			OSL_TRACE("osl_receiveResourcePipe: UKNOWN\n");
+			OSL_TRACE("osl_receiveResourcePipe: UNKNOWN\n");
 			bRet = sal_False;
 		}
         }
