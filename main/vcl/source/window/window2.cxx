@@ -1307,7 +1307,7 @@ void Window::ImplHandleScroll( ScrollBar* pHScrl, long nX,
 /*
 void Window::ImplSetFloatingMode( sal_Bool bFloatMode )
 {
-    // if the window is docked, put it into a flaoting window
+    // if the window is docked, put it into a floating window
     // if it is floating put it back in the old frame
 
     ImplDockingWindowWrapper *pWrapper = pDockingMgr->GetDockingWindowWrapper( this );

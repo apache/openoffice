@@ -3676,7 +3676,7 @@ Color SvxMSDffManager::MSO_CLR_ToColor( sal_uInt32 nColorCode, sal_uInt16 nConte
 }
 
 // sj: I just want to set a string for a text object that may contain multiple
-// paragraphs. If I now take a look at the follwing code I get the impression that
+// paragraphs. If I now take a look at the following code I get the impression that
 // our outliner is too complicate to be used properly,
 void SvxMSDffManager::ReadObjText( const String& rText, SdrObject* pObj ) const
 {
