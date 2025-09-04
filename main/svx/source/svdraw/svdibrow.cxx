@@ -335,7 +335,7 @@ String _SdrItemBrowserControl::GetCellText(long _nRow, sal_uInt16 _nColId) const
 					{
 						switch (pEntry->eState)
 						{
-							case SFX_ITEM_UNKNOWN : sRet=String("Unknown", aTextEncoding);   break;
+							case SFX_ITEM_UNKNOWN : sRet=String("Unknown", aTextEncoding);  break;
 							case SFX_ITEM_DISABLED: sRet=String("Disabled", aTextEncoding); break;
 							case SFX_ITEM_DONTCARE: sRet=String("DontCare", aTextEncoding); break;
 							case SFX_ITEM_SET     : sRet=String("Set", aTextEncoding);      break;
