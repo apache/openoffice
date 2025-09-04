@@ -270,7 +270,7 @@ public abstract class WWD_Events extends WWD_Startup
     /**
      * A method used by the UnoDataAware attached
      * to the Documents listbox.
-     * See the concept of the DataAware objects to undestand
+     * See the concept of the DataAware objects to understand
      * why it is there...
      */
     public short[] getSelectedDoc()
