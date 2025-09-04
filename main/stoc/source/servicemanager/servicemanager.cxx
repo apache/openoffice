@@ -569,7 +569,7 @@ public:
     virtual Reference<XInterface > SAL_CALL createInstance(const OUString &) throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
     virtual Reference<XInterface > SAL_CALL createInstanceWithArguments(const OUString &, const Sequence<Any >& Arguments) throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
 
-	// The same as the getAvailableServiceNames, but only uique names
+	// The same as the getAvailableServiceNames, but only unique names
 	Sequence< OUString > getUniqueAvailableServiceNames(
         HashSet_OWString & aNameSet );
 
