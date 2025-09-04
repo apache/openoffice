@@ -159,7 +159,7 @@ public abstract class DescGetter
         {
             if (debug)
             {
-                System.out.println("Exception while closeing scenario");
+                System.out.println("Exception while closing scenario");
             }
         }
 
