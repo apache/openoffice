@@ -19,13 +19,10 @@
  *
  *************************************************************/
 
-
-
 #ifndef _XMLOFF_XMLTEXTPROPERTYSETCONTEXT_HXX
 #define _XMLOFF_XMLTEXTPROPERTYSETCONTEXT_HXX
 
 #include <xmloff/xmlprcon.hxx>
-
 
 class XMLTextPropertySetContext : public SvXMLPropertySetContext
 {
@@ -46,7 +43,7 @@ public:
 
 	virtual ~XMLTextPropertySetContext();
 
-    using SvXMLPropertySetContext::CreateChildContext;
+	using SvXMLPropertySetContext::CreateChildContext;
 	virtual SvXMLImportContext *CreateChildContext( sal_uInt16 nPrefix,
 								   const ::rtl::OUString& rLocalName,
 								   const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XAttributeList >& xAttrList,
@@ -54,5 +51,6 @@ public:
 								   const XMLPropertyState& rProp);
 };
 
+#endif // _XMLOFF_XMLTEXTPROPERTYSETCONTEXT_HXX
 
-#endif	//  _XMLOFF_XMLTEXTPROPERTYSETCONTEXT_HXX
+/* vim: set noet sw=4 ts=4: */

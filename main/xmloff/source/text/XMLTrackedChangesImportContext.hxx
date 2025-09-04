@@ -19,15 +19,11 @@
  *
  *************************************************************/
 
-
-
-
 #ifndef _XMLOFF_XMLTRACKEDCHANGESIMPORTCONTEXT_HXX
 #define _XMLOFF_XMLTRACKEDCHANGESIMPORTCONTEXT_HXX
 
 #include <xmloff/xmlictxt.hxx>
 #include <com/sun/star/uno/Reference.h>
-
 
 namespace com { namespace sun { namespace star {
 	namespace text {
@@ -69,3 +65,5 @@ public:
 };
 
 #endif
+
+/* vim: set noet sw=4 ts=4: */

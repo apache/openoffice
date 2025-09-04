@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_xmloff.hxx"
 #include <tools/debug.hxx>
@@ -91,7 +89,7 @@ SvXMLImportContext *XMLTextPropertySetContext::CreateChildContext(
 	case CTF_DROPCAPFORMAT:
 		{
 			DBG_ASSERT( rProp.mnIndex >= 2 &&
-						CTF_DROPCAPWHOLEWORD  == mxMapper->getPropertySetMapper()
+						CTF_DROPCAPWHOLEWORD == mxMapper->getPropertySetMapper()
 							->GetEntryContextId( rProp.mnIndex-2 ),
 						"invalid property map!");
 			XMLTextDropCapImportContext *pDCContext =
@@ -106,22 +104,22 @@ SvXMLImportContext *XMLTextPropertySetContext::CreateChildContext(
 		break;
 
 	case CTF_BACKGROUND_URL:
-    {
+	{
 		DBG_ASSERT( rProp.mnIndex >= 2 &&
-					CTF_BACKGROUND_POS  == mxMapper->getPropertySetMapper()
+					CTF_BACKGROUND_POS == mxMapper->getPropertySetMapper()
 						->GetEntryContextId( rProp.mnIndex-2 ) &&
-					CTF_BACKGROUND_FILTER  == mxMapper->getPropertySetMapper()
+					CTF_BACKGROUND_FILTER == mxMapper->getPropertySetMapper()
 						->GetEntryContextId( rProp.mnIndex-1 ),
 					"invalid property map!");
 
-        // #99657# Transparency might be there as well... but doesn't have
-        // to. Thus, this is checked with an if, rather than with an assertion.
-        sal_Int32 nTranspIndex = -1;
-        if( (rProp.mnIndex >= 3) &&
-            ( CTF_BACKGROUND_TRANSPARENCY ==
-              mxMapper->getPropertySetMapper()->GetEntryContextId(
-                  rProp.mnIndex-3 ) ) )
-            nTranspIndex = rProp.mnIndex-3;
+		// #99657# Transparency might be there as well... but doesn't have
+		// to. Thus, this is checked with an if, rather than with an assertion.
+		sal_Int32 nTranspIndex = -1;
+		if( (rProp.mnIndex >= 3) &&
+			( CTF_BACKGROUND_TRANSPARENCY ==
+			  mxMapper->getPropertySetMapper()->GetEntryContextId(
+				rProp.mnIndex-3 ) ) )
+			nTranspIndex = rProp.mnIndex-3;
 
 		pContext =
 			new XMLBackgroundImageContext( GetImport(), nPrefix,
@@ -131,8 +129,8 @@ SvXMLImportContext *XMLTextPropertySetContext::CreateChildContext(
 										   rProp.mnIndex-1,
 										   nTranspIndex,
 										   rProperties );
-    }
-    break;
+	}
+	break;
 #ifndef SVX_LIGHT
 	case CTF_SECTION_FOOTNOTE_END:
 	case CTF_SECTION_ENDNOTE_END:
@@ -150,3 +148,5 @@ SvXMLImportContext *XMLTextPropertySetContext::CreateChildContext(
 
 	return pContext;
 }
+
+/* vim: set noet sw=4 ts=4: */

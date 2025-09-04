@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_xmloff.hxx"
 #include <xmloff/XMLTextTableContext.hxx>
@@ -29,7 +27,6 @@ using ::rtl::OUString;
 
 using namespace ::com::sun::star::uno;
 using namespace ::com::sun::star::text;
-
 
 TYPEINIT1( XMLTextTableContext, SvXMLImportContext );
 
@@ -43,3 +40,5 @@ XMLTextTableContext::XMLTextTableContext(
 XMLTextTableContext::~XMLTextTableContext()
 {
 }
+
+/* vim: set noet sw=4 ts=4: */

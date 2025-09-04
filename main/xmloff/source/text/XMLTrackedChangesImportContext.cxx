@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_xmloff.hxx"
 #include "XMLTrackedChangesImportContext.hxx"
@@ -33,14 +31,11 @@
 #include <xmloff/xmluconv.hxx>
 #include <xmloff/xmltoken.hxx>
 
-
 using ::rtl::OUString;
 using ::com::sun::star::uno::Reference;
 using ::com::sun::star::uno::Sequence;
 using ::com::sun::star::xml::sax::XAttributeList;
 using namespace ::xmloff::token;
-
-
 
 TYPEINIT1( XMLTrackedChangesImportContext, SvXMLImportContext );
 
@@ -110,3 +105,5 @@ SvXMLImportContext* XMLTrackedChangesImportContext::CreateChildContext(
 
 	return pContext;
 }
+
+/* vim: set noet sw=4 ts=4: */
