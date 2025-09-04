@@ -1,5 +1,5 @@
 // *************************************************************
-//  
+//
 //  Licensed to the Apache Software Foundation (ASF) under one
 //  or more contributor license agreements.  See the NOTICE file
 //  distributed with this work for additional information
@@ -7,16 +7,16 @@
 //  to you under the Apache License, Version 2.0 (the
 //  "License"); you may not use this file except in compliance
 //  with the License.  You may obtain a copy of the License at
-//  
+//
 //    http://www.apache.org/licenses/LICENSE-2.0
-//  
+//
 //  Unless required by applicable law or agreed to in writing,
 //  software distributed under the License is distributed on an
 //  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 //  KIND, either express or implied.  See the License for the
 //  specific language governing permissions and limitations
 //  under the License.
-//  
+//
 // *************************************************************
 // Hello World in JavaScript
 // Import standard OpenOffice.org API classes. For more information on
@@ -34,9 +34,9 @@ importClass(Packages.com.sun.star.frame.XModel);
 // to all JavaScript scripts in the global variable "XSCRIPTCONTEXT". This
 // variable can be used to access the document for which this script
 // was invoked.
-// 
-// Methods available are: 
-// 
+//
+// Methods available are:
+//
 //   XSCRIPTCONTEXT.getDocument() returns XModel
 //   XSCRIPTCONTEXT.getInvocationContext() returns XScriptInvocationContext or NULL
 //   XSCRIPTCONTEXT.getDesktop() returns XDesktop
@@ -44,7 +44,7 @@ importClass(Packages.com.sun.star.frame.XModel);
 //
 // For more information on using this class see the scripting
 // developer guides at:
-// 
+//
 //   http://api.openoffice.org/docs/DevelopersGuide/ScriptingFramework/ScriptingFramework.xhtml
 //
 

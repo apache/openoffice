@@ -1007,7 +1007,7 @@ public:
 	void			SetForbiddenCharsTable( vos::ORef<SvxForbiddenCharactersTable> xForbiddenChars );
 	vos::ORef<SvxForbiddenCharactersTable>	GetForbiddenCharsTable() const;
 
-	// Depricated
+	// Deprecated
 	void 			SetDefaultLanguage( LanguageType eLang );
 	LanguageType	GetDefaultLanguage() const;
 
