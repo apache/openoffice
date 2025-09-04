@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_xmloff.hxx"
 #include <tools/debug.hxx>
@@ -65,12 +63,12 @@ public:
 
 	virtual ~XMLTextShapePropertySetContext_Impl();
 
-    using SvXMLPropertySetContext::CreateChildContext;
+	using SvXMLPropertySetContext::CreateChildContext;
 	virtual SvXMLImportContext *CreateChildContext( sal_uInt16 nPrefix,
 		const OUString& rLocalName,
 		const Reference< XAttributeList >& xAttrList,
-	    ::std::vector< XMLPropertyState > &rProperties,
-	    const XMLPropertyState& rProp);
+		::std::vector< XMLPropertyState > &rProperties,
+		const XMLPropertyState& rProp);
 };
 
 XMLTextShapePropertySetContext_Impl::XMLTextShapePropertySetContext_Impl(
@@ -110,11 +108,11 @@ SvXMLImportContext *XMLTextShapePropertySetContext_Impl::CreateChildContext(
 	case CTF_BACKGROUND_URL:
 		DBG_ASSERT( rProp.mnIndex >= 3 &&
 					CTF_BACKGROUND_TRANSPARENCY ==
-                        mxMapper->getPropertySetMapper()
+						mxMapper->getPropertySetMapper()
 						->GetEntryContextId( rProp.mnIndex-3 ) &&
-					CTF_BACKGROUND_POS  == mxMapper->getPropertySetMapper()
+					CTF_BACKGROUND_POS == mxMapper->getPropertySetMapper()
 						->GetEntryContextId( rProp.mnIndex-2 ) &&
-					CTF_BACKGROUND_FILTER  == mxMapper->getPropertySetMapper()
+					CTF_BACKGROUND_FILTER == mxMapper->getPropertySetMapper()
 						->GetEntryContextId( rProp.mnIndex-1 ),
 					"invalid property map!");
 		pContext =
@@ -123,7 +121,7 @@ SvXMLImportContext *XMLTextShapePropertySetContext_Impl::CreateChildContext(
 										   rProp,
 										   rProp.mnIndex-2,
 										   rProp.mnIndex-1,
-                                           rProp.mnIndex-3,
+										   rProp.mnIndex-3,
 										   rProperties );
 		break;
 	}
@@ -144,7 +142,7 @@ void XMLTextShapeStyleContext::SetAttribute( sal_uInt16 nPrefixKey,
 	if( XML_NAMESPACE_STYLE == nPrefixKey &&
 		IsXMLToken( rLocalName, XML_AUTO_UPDATE ) )
 	{
-	  	if( IsXMLToken( rValue, XML_TRUE ) )
+		if( IsXMLToken( rValue, XML_TRUE ) )
 			bAutoUpdate = sal_True;
 	}
 	else
@@ -161,7 +159,7 @@ XMLTextShapeStyleContext::XMLTextShapeStyleContext( SvXMLImport& rImport,
 		SvXMLStylesContext& rStyles, sal_uInt16 nFamily,
 		sal_Bool /*bDefaultStyle*/ ) :
 	XMLShapeStyleContext( rImport, nPrfx, rLName, xAttrList, rStyles,
-					      nFamily ),
+						  nFamily ),
 	sIsAutoUpdate( RTL_CONSTASCII_USTRINGPARAM( "IsAutoUpdate" ) ),
 	bAutoUpdate( sal_False )
 {
@@ -247,5 +245,7 @@ void XMLTextShapeStyleContext::CreateAndInsert( sal_Bool bOverwrite )
 
 void XMLTextShapeStyleContext::Finish( sal_Bool bOverwrite )
 {
-    XMLPropStyleContext::Finish( bOverwrite );
+	XMLPropStyleContext::Finish( bOverwrite );
 }
+
+/* vim: set noet sw=4 ts=4: */

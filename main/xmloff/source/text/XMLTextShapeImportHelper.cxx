@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_xmloff.hxx"
 #include <com/sun/star/text/XTextContent.hpp>
@@ -109,17 +107,17 @@ void XMLTextShapeImportHelper::addShape(
 		case XML_TOK_TEXT_FRAME_ANCHOR_TYPE:
 			{
 				TextContentAnchorType eNew;
-                // OD 2004-06-01 #i26791# - allow all anchor types
-                if ( XMLAnchorTypePropHdl::convert( rValue, eNew ) )
-                {
+				// OD 2004-06-01 #i26791# - allow all anchor types
+				if ( XMLAnchorTypePropHdl::convert( rValue, eNew ) )
+				{
 					eAnchorType = eNew;
-                }
+				}
 			}
 			break;
 		case XML_TOK_TEXT_FRAME_ANCHOR_PAGE_NUMBER:
 			{
 				sal_Int32 nTmp;
-			   	if( rImport.GetMM100UnitConverter().
+				if( rImport.GetMM100UnitConverter().
 								convertNumber( nTmp, rValue, 1, SHRT_MAX ) )
 					nPage = (sal_Int16)nTmp;
 			}
@@ -160,3 +158,5 @@ void XMLTextShapeImportHelper::addShape(
 		break;
 	}
 }
+
+/* vim: set noet sw=4 ts=4: */
