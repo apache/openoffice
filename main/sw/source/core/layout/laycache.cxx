@@ -19,11 +19,8 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
-
 
 #include <hintids.hxx>
 #include <editeng/brkitem.hxx>
@@ -63,7 +60,6 @@
 #include <com/sun/star/beans/XPropertySet.hpp>
 
 #include <set>
-
 
 using namespace ::com::sun::star;
 // <--
@@ -499,7 +495,7 @@ SwActualSection::SwActualSection( SwActualSection *pUp,
 /*-----------------28.5.2001 11:09------------------
  * SwLayHelper
  *  is the helper class, which utilizes the layout cache information
- *  to distribute the document content to the rigth pages.
+ *  to distribute the document content to the right pages.
  * It's used by the _InsertCnt(..)-function.
  * If there's no layout cache, the distribution to the pages is more
  * a guess, but a guess with statistical background.
@@ -1392,3 +1388,5 @@ void SwLayCacheIoImpl::CloseFlagRec()
 			pStream->Seek( nFlagRecEnd );
 	}
 }
+
+/* vim: set noet sw=4 ts=4: */

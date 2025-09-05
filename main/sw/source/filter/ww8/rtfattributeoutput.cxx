@@ -412,8 +412,8 @@ void RtfAttributeOutput::RTLAndCJKState( bool bIsRTL, sal_uInt16 nScript )
        You would have thought that
        m_rExport.Strm() << (bIsRTL ? OOO_STRING_SVTOOLS_RTF_RTLCH : OOO_STRING_SVTOOLS_RTF_LTRCH); would be sufficient here ,
        but looks like word needs to see the other directional token to be
-       satisified that all is kosher, otherwise it seems in ver 2003 to go and
-       semi-randomlyly stick strike through about the place. Perhaps
+       satisfied that all is kosher, otherwise it seems in ver 2003 to go and
+       semi-randomly stick strike through about the place. Perhaps
        strikethrough is some ms developers "something is wrong signal" debugging
        code that we're triggering ?
        */
@@ -467,7 +467,7 @@ void RtfAttributeOutput::StartParagraph( ww8::WW8TableNodeInfo::Pointer_t pTextN
         if ( nRow == 0 && nCell == 0 )
         {
             // Do we have to start the table?
-            // [If we are at the rigth depth already, it means that we
+            // [If we are at the right depth already, it means that we
             // continue the table cell]
             sal_uInt32 nCurrentDepth = pTextNodeInfo->getDepth();
 
@@ -872,7 +872,7 @@ void RtfAttributeOutput::TableDefaultBorders( ww8::WW8TableNodeInfoInner::Pointe
         {
             OOO_STRING_SVTOOLS_RTF_CLBRDRT, OOO_STRING_SVTOOLS_RTF_CLBRDRL, OOO_STRING_SVTOOLS_RTF_CLBRDRB, OOO_STRING_SVTOOLS_RTF_CLBRDRR
         };
-        //Yes left and top are swapped with eachother for cell padding! Because
+        //Yes left and top are swapped with each other for cell padding! Because
         //that's what the thunderingly annoying rtf export/import word xp does.
         static const char* aCellPadNames[] =
         {
@@ -1013,7 +1013,7 @@ void RtfAttributeOutput::TableNodeInfoInner( ww8::WW8TableNodeInfoInner::Pointer
     OSL_TRACE("%s", OSL_THIS_FUNC);
 
     // This is called when the nested table ends in a cell, and there's no
-    // paragraph benhind that; so we must check for the ends of cell, rows,
+    // paragraph behind that; so we must check for the ends of cell, rows,
     // and tables
     // ['true' to write an empty paragraph, MS Word insists on that]
     FinishTableRowCell( pNodeInfoInner, true );
@@ -1626,7 +1626,7 @@ void RtfAttributeOutput::WriteField_Impl( const SwField* pFld, ww::eField /*eTyp
 {
     OSL_TRACE("%s", OSL_THIS_FUNC);
 
-    // NEEDSWORK this has beeen tested only with page numbers
+    // NEEDSWORK this has been tested only with page numbers
     m_aRunText.getOStringBuffer().append("{" OOO_STRING_SVTOOLS_RTF_FIELD);
     m_aRunText.getOStringBuffer().append("{" OOO_STRING_SVTOOLS_RTF_IGNORE OOO_STRING_SVTOOLS_RTF_FLDINST " ");
     m_aRunText.getOStringBuffer().append(m_rExport.OutString(rFldCmd, m_rExport.eCurrentEncoding));
@@ -3530,7 +3530,7 @@ void ExportPICT(
         rBuffer.append(RtfExport::sNewLine);
 
         // append binary data for later streaming
-        // anotation: it is okay to append further to the remembered rBuffer since
+        // annotation: it is okay to append further to the remembered rBuffer since
         // the address of this basic buffer at MultiBuffer does not change; it will
         // be reset to length zero, though, after this call
         rTarget.appendHexData(pGraphicAry, nSize);
@@ -3705,7 +3705,7 @@ void RtfAttributeOutput::FlyFrameGraphic( const SwFlyFrmFmt* pFlyFrmFmt, const S
     /*
        If the graphic is not of type WMF then we will have to store two
        graphics, one in the native format wrapped in shppict, and the other in
-       the wmf format wrapped in nonshppict, so as to keep wordpad happy. If its
+       the wmf format wrapped in nonshppict, so as to keep wordpad happy. If it's
        a wmf already then we don't need any such wrapping
        */
     bool bIsWMF = (const sal_Char*)pBLIPType == (const sal_Char*)OOO_STRING_SVTOOLS_RTF_WMETAFILE ? true : false;
@@ -3747,4 +3747,4 @@ void RtfAttributeOutput::FlyFrameGraphic( const SwFlyFrmFmt* pFlyFrmFmt, const S
     m_aRunText.getOStringBuffer().append(m_rExport.sNewLine);
 }
 
-/* vi:set shiftwidth=4 expandtab: */
+/* vim: set noet sw=4 ts=4: */
