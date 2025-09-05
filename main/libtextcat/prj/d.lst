@@ -9,4 +9,3 @@ mkdir: %_DEST%\inc%_EXT%\libtextcat
 # data for language guessing
 ..\data\new_fingerprints\fpdb.conf %COMMON_DEST%\pck%_EXT%\fpdb.conf
 ..\data\new_fingerprints\lm\*.lm   %COMMON_DEST%\pck%_EXT%\*.lm
-
