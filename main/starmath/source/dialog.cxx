@@ -2058,8 +2058,8 @@ SmSymDefineDialog::SmSymDefineDialog(Window * pParent,
     aChangeBtn          (this, SmResId(2)),
     aDeleteBtn          (this, SmResId(3)),
     aRightArrow         (this, SmResId(1)),
-    aRigthArrow_Im      (SmResId(1)),
-    aRigthArrow_Im_HC   (SmResId(2)),   // hi-contrast version
+    aRightArrow_Im      (SmResId(1)),
+    aRightArrow_Im_HC   (SmResId(2)),   // hi-contrast version
     rSymbolMgr          (rMgr),
     pSubsetMap          (NULL),
     pFontList           (NULL)
@@ -2136,7 +2136,7 @@ void SmSymDefineDialog::InitColor_Impl()
     aSymbolDisplay   .SetBackground( aWall );
     aSymbolDisplay   .SetTextColor( aTxtColor );
 
-    const Image &rArrowRight = bHighContrast ? aRigthArrow_Im_HC : aRigthArrow_Im;
+    const Image &rArrowRight = bHighContrast ? aRightArrow_Im_HC : aRightArrow_Im;
     aRightArrow.SetImage( rArrowRight );
 }
 
