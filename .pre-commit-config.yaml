@@ -74,3 +74,11 @@ repos:
         args: [--config=.github/linters/.markdown-lint.yml]
         types: [markdown]
         files: \.md$
+  - repo: https://github.com/shssoichiro/oxipng
+    rev: v9.1.5
+    hooks:
+      - id: oxipng
+        name: run oxipng
+        description: check PNG files with oxipng
+        args: ['--fix', '-o', '4', '--strip', 'safe', '--alpha']
+        stages: [manual]
