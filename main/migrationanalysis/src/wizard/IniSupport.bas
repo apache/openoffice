@@ -193,7 +193,7 @@ Public Function ProfileLoadList(lst As ComboBox, _
             KeyData = ProfileGetItem( _
                 lpSectionName, lpKeyName, "", inifile)
 
-           'add the item retruned to the listbox
+           'add the item returned to the listbox
             lst.AddItem KeyData
          Loop
 
