@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sdext.hxx"
 
@@ -70,7 +68,6 @@ public:
                 && rpTask1->maDueTime.Nanosec < rpTask2->maDueTime.Nanosec);
     }
 };
-
 
 
 
@@ -125,7 +122,6 @@ private:
 
 
 
-
 bool GetDateTime (oslDateTime& rDateTime);
 } // end of anonymous namespace
 
@@ -141,7 +137,6 @@ sal_Int32 PresenterTimer::ScheduleSingleTaskRelative (
 
 
 
-
 sal_Int32 PresenterTimer::ScheduleSingleTaskAbsolute (
     const Task& rTask,
     const TimeValue& rDueTime)
@@ -150,7 +145,6 @@ sal_Int32 PresenterTimer::ScheduleSingleTaskAbsolute (
     TimerScheduler::Instance()->ScheduleTask(pTask);
     return pTask->mnTaskId;
 }
-
 
 
 
@@ -176,12 +170,10 @@ sal_Int32 PresenterTimer::ScheduleRepeatedTask (
 
 
 
-
 void PresenterTimer::CancelTask (const sal_Int32 nTaskId)
 {
     return TimerScheduler::Instance()->CancelTask(nTaskId);
 }
-
 
 
 
@@ -214,13 +206,11 @@ sal_Int32 TimerScheduler::mnTaskId = PresenterTimer::NotAValidTaskId;
 
 
 
-
 void TimerScheduler::Release (void)
 {
     ::osl::MutexGuard aGuard (maInstanceMutex);
     mpInstance.reset();
 }
-
 
 
 
@@ -232,7 +222,6 @@ TimerScheduler::TimerScheduler (void)
       mpCurrentTask()
 {
 }
-
 
 
 
@@ -252,7 +241,6 @@ SharedTimerTask TimerScheduler::CreateTimerTask (
 
 
 
-
 void TimerScheduler::ScheduleTask (const SharedTimerTask& rpTask)
 {
     if (rpTask.get() == NULL)
@@ -269,7 +257,6 @@ void TimerScheduler::ScheduleTask (const SharedTimerTask& rpTask)
         create();
     }
 }
-
 
 
 
@@ -313,7 +300,6 @@ void TimerScheduler::CancelTask (const sal_Int32 nTaskId)
 
 
 
-
 void SAL_CALL TimerScheduler::run (void)
 {
     while (mbIsRunning)
@@ -326,7 +312,7 @@ void SAL_CALL TimerScheduler::run (void)
             break;
         }
 
-        // Restrict access to the maScheduledTasks member to one, mutext
+        // Restrict access to the maScheduledTasks member to one, mutex
         // guarded, block.
         SharedTimerTask pTask;
         sal_Int64 nDifference = 0;
@@ -392,12 +378,10 @@ void SAL_CALL TimerScheduler::run (void)
 
 
 
-
 void SAL_CALL TimerScheduler::onTerminated (void)
 {
     Release();
 }
-
 
 
 
@@ -411,14 +395,12 @@ bool TimerScheduler::GetCurrentTime (TimeValue& rCurrentTime)
 
 
 
-
 sal_Int64 TimerScheduler::GetTimeDifference (
     const TimeValue& rTargetTime,
     const TimeValue& rCurrentTime)
 {
     return ConvertFromTimeValue(rTargetTime) - ConvertFromTimeValue(rCurrentTime);
 }
-
 
 
 
@@ -432,13 +414,11 @@ void TimerScheduler::ConvertToTimeValue (
 
 
 
-
 sal_Int64 TimerScheduler::ConvertFromTimeValue (
     const TimeValue& rTimeValue)
 {
     return sal_Int64(rTimeValue.Seconds) * 1000000000L + rTimeValue.Nanosec;
 }
-
 
 
 
@@ -460,7 +440,6 @@ TimerTask::TimerTask (
 }
 
 } // end of anonymous namespace
-
 
 
 
@@ -489,7 +468,6 @@ TimerTask::TimerTask (
 
 
 
-
 PresenterClockTimer::PresenterClockTimer (const Reference<XComponentContext>& rxContext)
     : PresenterClockTimerInterfaceBase(m_aMutex),
       maListeners(),
@@ -510,7 +488,6 @@ PresenterClockTimer::PresenterClockTimer (const Reference<XComponentContext>& rx
 
 
 
-
 PresenterClockTimer::~PresenterClockTimer (void)
 {
     if (mnTimerTaskId != PresenterTimer::NotAValidTaskId)
@@ -524,7 +501,6 @@ PresenterClockTimer::~PresenterClockTimer (void)
         xComponent->dispose();
     mxRequestCallback = NULL;
 }
-
 
 
 
@@ -543,7 +519,6 @@ void PresenterClockTimer::AddListener (const SharedListener& rListener)
             250000000 /*ns*/);
     }
 }
-
 
 
 
@@ -571,7 +546,6 @@ void PresenterClockTimer::RemoveListener (const SharedListener& rListener)
 
 
 
-
 oslDateTime PresenterClockTimer::GetCurrentTime (void)
 {
     TimeValue aCurrentTime;
@@ -580,7 +554,6 @@ oslDateTime PresenterClockTimer::GetCurrentTime (void)
     osl_getDateTimeFromTimeValue(&aCurrentTime, &aDateTime);
     return aDateTime;
 }
-
 
 
 
@@ -598,7 +571,6 @@ sal_Int64 PresenterClockTimer::GetTimeDifference (
     else
         return -1;
 }
-
 
 
 
@@ -637,7 +609,6 @@ void PresenterClockTimer::CheckCurrentTime (const TimeValue& rCurrentTime)
 
 
 
-
 //----- XCallback -------------------------------------------------------------
 
 void SAL_CALL PresenterClockTimer::notify (const css::uno::Any& rUserData)
@@ -669,6 +640,6 @@ void SAL_CALL PresenterClockTimer::notify (const css::uno::Any& rUserData)
     }
 }
 
-
-
 } } // end of namespace ::sdext::presenter
+
+/* vim: set noet sw=4 ts=4: */

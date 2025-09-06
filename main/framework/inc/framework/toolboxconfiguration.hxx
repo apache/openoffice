@@ -19,7 +19,6 @@
  *
  *************************************************************/
 
-
 #ifndef __FRAMEWORK_XML_TOOLBOXCONFIGURATION_HXX_
 #define __FRAMEWORK_XML_TOOLBOXCONFIGURATION_HXX_
 
@@ -42,20 +41,22 @@ namespace framework
 
 class FWE_DLLPUBLIC ToolBoxConfiguration
 {
-    public:
-        // #110897#
-        static sal_Bool LoadToolBox(
-            const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& xServiceFactory,
-            const ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream >& rInputStream,
-            const ::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexContainer >& rToolbarConfiguration );
+	public:
+		// #110897#
+		static sal_Bool LoadToolBox(
+			const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& xServiceFactory,
+			const ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream >& rInputStream,
+			const ::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexContainer >& rToolbarConfiguration );
 
-        // #110897#
-        static sal_Bool StoreToolBox(
-            const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& xServiceFactory,
-            const ::com::sun::star::uno::Reference< ::com::sun::star::io::XOutputStream >& rOutputStream,
-            const ::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexAccess >& rToolbarConfiguration );
+		// #110897#
+		static sal_Bool StoreToolBox(
+			const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& xServiceFactory,
+			const ::com::sun::star::uno::Reference< ::com::sun::star::io::XOutputStream >& rOutputStream,
+			const ::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexAccess >& rToolbarConfiguration );
 };
 
 } // namespace framework
 
 #endif // __FRAMEWORK_XML_TOOLBOXCONFIGURATION_HXX_
+
+/* vim: set noet sw=4 ts=4: */
