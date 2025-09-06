@@ -8,9 +8,9 @@ Attribute VB_Name = "BrowseDirectorysOnly"
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -108,27 +108,27 @@ Public Function BrowseForFolder(owner As Form, Title As String, StartDir As Stri
   Else
     BrowseForFolder = ""
   End If
-  
+
 End Function
- 
+
 Private Function BrowseCallbackProc(ByVal hWnd As Long, ByVal uMsg As Long, ByVal lp As Long, ByVal pData As Long) As Long
-  
+
   Dim lpIDList As Long
   Dim ret As Long
   Dim sBuffer As String
-  
+
   On Error Resume Next  'Suggested by MS to prevent an error from
                         'propagating back into the calling process.
-     
+
   Select Case uMsg
-  
+
     Case BFFM_INITIALIZED
       Call SendMessage(hWnd, BFFM_SETSELECTION, 1, m_CurrentDirectory)
-            
+
   End Select
-  
+
   BrowseCallbackProc = 0
-  
+
 End Function
 
 ' This function allows you to assign a function pointer to a variable.

@@ -8,9 +8,9 @@ Attribute VB_Name = "AnalysisDriver"
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -314,7 +314,7 @@ Sub AnalyseDirectory()
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "AnalyseDirectory"
-    
+
     Dim iniFilePath As String
     Dim startDir As String
     Dim fileList As String
@@ -344,7 +344,7 @@ Sub AnalyseDirectory()
     SetupWizardVariables fileList, storeToDir, resultsFile, _
         mLogFilePath, resultsTemplate, bOverwriteResultsFile, bNewResultsFile, _
         statFileName, mDebugLevel, outputType, singleFile
-        
+
     startDir = ProfileGetItem("Analysis", CINPUT_DIR, "", mIniFilePath)
 
     nIncrementFileCounter = CLng(ProfileGetItem("Analysis", _
@@ -413,12 +413,12 @@ Sub AnalyseDirectory()
         mIssuesClassificationDict.CompareMode = TextCompare
         Set mIssuesCostDict = New Scripting.Dictionary
         'mIssuesCostDict.CompareMode = TextCompare
-        
+
         Set mUserFormTypesDict = New Scripting.Dictionary
         Set mIssuesDict = New Scripting.Dictionary
         Set mMacroDict = New Scripting.Dictionary
         Set mPreparedIssuesDict = New Scripting.Dictionary
-        
+
         'Write to Application log
         Dim myAnalyser As MigrationAnalyser
         Set myAnalyser = New MigrationAnalyser
@@ -430,10 +430,10 @@ Sub AnalyseDirectory()
         WriteToLog "Analyzing", myFiles.item(index)
         WriteToIni C_NEXT_FILE, myFiles.item(index)
         mDocIndex = index
-        
+
         'Do Analysis
         myAnalyser.DoAnalyse myFiles.item(index), mUserFormTypesDict, startDir, storeToDir, fso
-        
+
         AnalysedDocs.Add myAnalyser.Results
         bResultsWaiting = True
 
@@ -488,11 +488,11 @@ FinalExit:
     Set mIssuesDict = Nothing
     Set mMacroDict = Nothing
     Set mPreparedIssuesDict = Nothing
-    
+
     Set AnalysedDocs = Nothing
-    
+
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -506,19 +506,19 @@ Function WriteResults(storeToDir As String, resultsFile As String, resultsTempla
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "WriteResults"
-    
+
     If InDocPreparation Then
         If outputType = COUTPUT_TYPE_XML Or outputType = COUTPUT_TYPE_BOTH Then
             WriteXMLOutput storeToDir, resultsFile, _
                 bOverwriteResultsFile, bNewResultsFile, AnalysedDocs, fso
         End If
     End If
-    
+
     If outputType = COUTPUT_TYPE_XLS Or outputType = COUTPUT_TYPE_BOTH Then
         WriteXLSOutput storeToDir, resultsFile, fso.GetAbsolutePathName(resultsTemplate), _
                        bOverwriteResultsFile, bNewResultsFile, AnalysedDocs, fso
     End If
-    
+
     WriteResults = True
     bNewResultsFile = False
 
@@ -539,7 +539,7 @@ Function GetFilesToAnalyze_old(startDir As String, bIncludeSubdirs As Boolean, _
     Dim fso As New FileSystemObject
     Dim theResultsFile As String
     theResultsFile = ProfileGetItem("Analysis", CINPUT_DIR, "c:\", mIniFilePath) & "\" & ProfileGetItem("Analysis", CRESULTS_FILE, "", mIniFilePath)
-    
+
     GetFilesToAnalyze = False
 
     Dim searchTypes As Collection
@@ -548,7 +548,7 @@ Function GetFilesToAnalyze_old(startDir As String, bIncludeSubdirs As Boolean, _
     If searchTypes.count = 0 Then
         GoTo FinalExit
     End If
-    
+
     Dim myDocFiles As CollectedFiles
     Set myDocFiles = New CollectedFiles
     With myDocFiles
@@ -562,7 +562,7 @@ Function GetFilesToAnalyze_old(startDir As String, bIncludeSubdirs As Boolean, _
     End With
     myDocFiles.Search rootDir:=startDir, FileSpecs:=searchTypes, _
         IncludeSubdirs:=bIncludeSubdirs
-    
+
     If getAppSpecificApplicationName = CAPPNAME_WORD Then
         Set myFiles = myDocFiles.WordFiles
     ElseIf getAppSpecificApplicationName = CAPPNAME_EXCEL Then
@@ -573,33 +573,33 @@ Function GetFilesToAnalyze_old(startDir As String, bIncludeSubdirs As Boolean, _
         WriteDebug currentFunctionName & " : invalid application " & getAppSpecificApplicationName
         GoTo FinalExit
     End If
-    
+
     GetFilesToAnalyze = True
 
 FinalExit:
     Set searchTypes = Nothing
     Set myDocFiles = Nothing
-    
+
     Exit Function
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
 End Function
-    
+
 Function GetFilesToAnalyze(fileList As String, startFile As String, _
                            myFiles As Collection) As Boolean
 
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "GetFilesToAnalyze"
-    
+
     Dim fso As New FileSystemObject
     Dim fileContent As TextStream
     Dim fileName As String
 
     GetFilesToAnalyze = False
-    
+
     If (startFile = "") Then
         If (fso.FileExists(fileList)) Then
             Set fileContent = fso.OpenTextFile(fileList, ForReading, False, TristateTrue)
@@ -622,7 +622,7 @@ FinalExit:
     Set fileContent = Nothing
     Set fso = Nothing
     Exit Function
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -635,12 +635,12 @@ Function GetPrepareFilesToAnalyze(resultsFilePath As String, myFiles As Collecti
     currentFunctionName = "GetPrepareFilesToAnalyze"
 
     GetPrepareFilesToAnalyze = False
-    
+
     If Not fso.FileExists(resultsFilePath) Then
         WriteDebug currentFunctionName & ": results file does not exist : " & resultsFilePath
         GoTo FinalExit
     End If
-    
+
     'Open results spreadsheet
     Dim xl As Excel.Application
     If getAppSpecificApplicationName = CAPPNAME_EXCEL Then
@@ -652,7 +652,7 @@ Function GetPrepareFilesToAnalyze(resultsFilePath As String, myFiles As Collecti
     End If
     Dim logWb As WorkBook
     Set logWb = xl.Workbooks.Open(resultsFilePath)
-        
+
     Dim wsDocProp As Worksheet
     Set wsDocProp = logWb.Sheets(RID_STR_COMMON_RESULTS_SHEET_NAME_DOCPROP)
 
@@ -660,16 +660,16 @@ Function GetPrepareFilesToAnalyze(resultsFilePath As String, myFiles As Collecti
     Dim endRow As Long
     startRow = mDocPropRowOffset + 1
     endRow = GetWorkbookNameValueAsLong(logWb, CTOTAL_DOCS_ANALYZED) + mDocPropRowOffset
-    
+
     GetPreparableFilesFromDocProps wsDocProp, startRow, endRow, fso, myFiles
-    
+
     GetPrepareFilesToAnalyze = (myFiles.count > 0)
 
 FinalExit:
     Set wsDocProp = Nothing
     If Not logWb Is Nothing Then logWb.Close
     Set logWb = Nothing
-    
+
     If getAppSpecificApplicationName <> CAPPNAME_EXCEL Then
         If Not xl Is Nothing Then
             If xl.Workbooks.count = 0 Then
@@ -678,9 +678,9 @@ FinalExit:
         End If
     End If
     Set xl = Nothing
-    
+
     Exit Function
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -692,16 +692,16 @@ Function GetPreparableFilesFromDocProps(wsDocProp As Worksheet, startRow As Long
     Dim currentFunctionName As String
     currentFunctionName = "GetPreparableFilesFromDocProps"
     GetPreparableFilesFromDocProps = False
-    
+
     Dim index As Long
     Dim fileName As String
     Dim fileExt As String
     Dim docExt As String
     Dim templateExt As String
-    
+
     docExt = getAppSpecificDocExt
     templateExt = getAppSpecificTemplateExt
-        
+
     For index = startRow To endRow
         If GetWorksheetCellValueAsLong(wsDocProp, index, CDOCINFOPREPAREDISSUES) > 0 Then
             fileName = GetWorksheetCellValueAsString(wsDocProp, index, CDOCINFONAME)
@@ -713,11 +713,11 @@ Function GetPreparableFilesFromDocProps(wsDocProp As Worksheet, startRow As Long
             End If
         End If
     Next index
-    
+
     GetPreparableFilesFromDocProps = myFiles.count > 0
 FinalExit:
     Exit Function
-    
+
 HandleErrors:
     GetPreparableFilesFromDocProps = False
     WriteDebug currentFunctionName & " : " & Err.Number & " " & Err.Description & " " & Err.Source
@@ -907,12 +907,12 @@ Sub WriteXLSOutput(storeToDir As String, resultsFile As String, resultsTemplate 
             ProcessIssuesForDAW logWb, aAnalysis, fileName
             WriteDocProperties wsPgStats, row + offsetDocPropRow, aAnalysis, fileName
         End If
-        
+
         UpdateAllCounts aAnalysis, docCounts, templateCounts, macroClasses, issueClasses, fso
-        
+
         Set aAnalysis = Nothing
     Next row
-    
+
     ' We change the font used for text box shapes here for the japanese
     ' version, because office 2000 sometimes displays squares instead of
     ' chars
@@ -951,13 +951,13 @@ Sub WriteXLSOutput(storeToDir As String, resultsFile As String, resultsTemplate 
     End If
 
     SetupPrintRanges logWb, row, issuesRow, issueDetailsRow, refDetailsRow
-    
+
     If resultsFile <> "" Then
        'Overwrite existing results file without prompting
        If bOverwriteResultsFile Or (Not bNewResultsFile) Then
            xl.DisplayAlerts = False
        End If
-         
+
        logWb.SaveAs fileName:=storeToDir & "\" & resultsFile
        xl.DisplayAlerts = True
     End If
@@ -966,7 +966,7 @@ FinalExit:
     If Not xl Is Nothing Then
         xl.Visible = True
     End If
-    
+
     Set wsOverview = Nothing
     Set wsPgStats = Nothing
 
@@ -976,10 +976,10 @@ FinalExit:
         Set wsIssueDetails = Nothing
         Set wsRefDetails = Nothing
     End If
-    
+
     If Not logWb Is Nothing Then logWb.Close
     Set logWb = Nothing
-    
+
     If getAppSpecificApplicationName <> CAPPNAME_EXCEL Then
         If Not xl Is Nothing Then
             If xl.Workbooks.count = 0 Then
@@ -988,9 +988,9 @@ FinalExit:
         End If
     End If
     Set xl = Nothing
-    
+
     Exit Sub
-    
+
 HandleErrors:
     xl.DisplayAlerts = False
 
@@ -1013,7 +1013,7 @@ Sub WriteIssueCounts(logWb As WorkBook)
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "WriteIssueCounts"
-    
+
     Dim Str As String
     Dim str1 As String
     Dim val1 As Long
@@ -1022,13 +1022,13 @@ Sub WriteIssueCounts(logWb As WorkBook)
     Dim vItemArray As Variant
     Dim vPrepKeyArray As Variant
     Dim vPrepItemArray As Variant
-    
+
     vKeyArray = mIssuesDict.Keys
     vItemArray = mIssuesDict.Items
-    
+
     vPrepKeyArray = mPreparedIssuesDict.Keys
     vPrepItemArray = mPreparedIssuesDict.Items
-    
+
     'Write Issue Counts across all Documents
     For count = 0 To mIssuesDict.count - 1
         str1 = vKeyArray(count)
@@ -1037,7 +1037,7 @@ Sub WriteIssueCounts(logWb As WorkBook)
             logWb.Names(str1).RefersToRange.Cells(1, 1).value + vItemArray(count)
         'DEBUG: str = str & "Key: " & str1 & " Value: " & val1 & vbLf
     Next count
-    
+
     'Write Prepared Issues Counts across all Documents
     For count = 0 To mPreparedIssuesDict.count - 1
         str1 = vPrepKeyArray(count)
@@ -1045,7 +1045,7 @@ Sub WriteIssueCounts(logWb As WorkBook)
         AddVariantToWorkbookNameValue logWb, str1, vPrepItemArray(count)
         'DEBUG: str = str & "Key: " & str1 & " Value: " & val1 & vbLf
     Next count
-    
+
     'User Form control type count across all analyzed documents of this type
     str1 = getAppSpecificApplicationName & "_" & _
         CSTR_ISSUE_VBA_MACROS & "_" & _
@@ -1057,7 +1057,7 @@ Sub WriteIssueCounts(logWb As WorkBook)
     If mUserFormTypesDict.count > 0 Then
         vKeyArray = mUserFormTypesDict.Keys
         vItemArray = mUserFormTypesDict.Items
-        
+
         Str = RID_STR_COMMON_ATTRIBUTE_CONTROLS & ": "
         For count = 0 To mUserFormTypesDict.count - 1
             Str = Str & vbLf & vKeyArray(count) & " " & vItemArray(count)
@@ -1070,7 +1070,7 @@ Sub WriteIssueCounts(logWb As WorkBook)
 
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & _
     " : logging costs : " & _
@@ -1081,23 +1081,23 @@ Sub WriteUniqueModuleCount(logWb As WorkBook)
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "WriteUniqueModuleCount"
-    
+
     Dim strLabel As String
     Dim uniqueLineCount As Long
     Dim uniqueModuleCount As Long
     Dim count As Long
     Dim vItemArray As Variant
-    
+
     vItemArray = mMacroDict.Items
-    
+
     'Write Issues Costs
     uniqueLineCount = 0
     For count = 0 To mMacroDict.count - 1
         uniqueLineCount = uniqueLineCount + CInt(vItemArray(count))
     Next count
     uniqueModuleCount = mMacroDict.count
-    
-    
+
+
     strLabel = getAppSpecificApplicationName & "_" & _
         CSTR_ISSUE_VBA_MACROS & "_" & _
         CSTR_SUBISSUE_PROPERTIES & "_" & _
@@ -1112,7 +1112,7 @@ Sub WriteUniqueModuleCount(logWb As WorkBook)
 
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & _
     " : logging Unique Module/ Line Counts : " & _
@@ -1127,7 +1127,7 @@ Sub WriteUserFromControlTypesComment(logWb As WorkBook, name As String, comment 
 
     On Error Resume Next 'Ignore error if trying to add comment again - would happen on append to results
     logWb.Names(name).RefersToRange.Cells(1, 1).AddComment
-    
+
     On Error GoTo HandleErrors
     logWb.Names(name).RefersToRange.Cells(1, 1).comment.Text Text:=comment
     'Autosize not supported - Office 2000
@@ -1136,7 +1136,7 @@ Sub WriteUserFromControlTypesComment(logWb As WorkBook, name As String, comment 
 
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & _
     " : name : " & name & _
@@ -1151,7 +1151,7 @@ Sub UpdateAllCounts(aAnalysis As DocumentAnalysis, counts As DocumentCount, temp
     Const CMODDATE_LESS3MONTHS = 91
     Const CMODDATE_LESS6MONTHS = 182
     Const CMODDATE_LESS12MONTHS = 365
-    
+
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "UpdateAllCounts"
@@ -1159,7 +1159,7 @@ Sub UpdateAllCounts(aAnalysis As DocumentAnalysis, counts As DocumentCount, temp
     '   ProcessIssuesAndWriteDocIssueDetails when all DocIssues are being traversed.
     'MacroClass for the Doc is setup at the end of the Analyze_Macros in DoAnalysis
     'Mod Dates are determined in SetDocProperties in DoAnalysis
-    
+
     'DocMacroClassifications
     Select Case aAnalysis.MacroOverallClass
     Case enMacroComplex
@@ -1171,7 +1171,7 @@ Sub UpdateAllCounts(aAnalysis As DocumentAnalysis, counts As DocumentCount, temp
     Case Else
         macroClasses.None = macroClasses.None + 1
     End Select
-    
+
     'DocIssueClassifications
     aAnalysis.BelowIssuesLimit = True
     Select Case aAnalysis.DocOverallIssueClass
@@ -1182,7 +1182,7 @@ Sub UpdateAllCounts(aAnalysis As DocumentAnalysis, counts As DocumentCount, temp
     Case Else
         issueClasses.None = issueClasses.None + 1
     End Select
-    
+
     'DocumentCounts
     Dim extStr As String
     extStr = "." & LCase(fso.GetExtensionName(aAnalysis.name))
@@ -1194,10 +1194,10 @@ Sub UpdateAllCounts(aAnalysis As DocumentAnalysis, counts As DocumentCount, temp
         WriteDebug currentFunctionName & " : path " & aAnalysis.name & _
             ": unhandled file extesnion " & extStr & " : " & Err.Number & " " & Err.Description & " " & Err.Source
     End If
-    
+
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : path " & aAnalysis.name & ": " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -1210,7 +1210,7 @@ Sub UpdateDocCounts(counts As DocumentCount, aAnalysis As DocumentAnalysis)
     counts.numDocsAnalyzed = counts.numDocsAnalyzed + 1
     If aAnalysis.IssuesCount > 0 Then 'During Analysis incremented
         counts.numDocsAnalyzedWithIssues = counts.numDocsAnalyzedWithIssues + 1
-        
+
         If aAnalysis.BelowIssuesLimit Then
             counts.numMinorIssues = _
                 counts.numMinorIssues + aAnalysis.MinorIssuesCount
@@ -1221,14 +1221,14 @@ Sub UpdateDocCounts(counts As DocumentCount, aAnalysis As DocumentAnalysis)
             counts.totalPreparableIssuesCosts = counts.totalPreparableIssuesCosts + _
                 aAnalysis.PreparableIssuesCosts
         End If
-        
+
         counts.numMacroIssues = counts.numMacroIssues + aAnalysis.MacroIssuesCount 'During Analysis incremented
         counts.totalMacroCosts = counts.totalMacroCosts + aAnalysis.MacroCosts
     End If
 
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : path " & aAnalysis.name & ": " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -1240,43 +1240,43 @@ Sub WriteDocProperties(wsPgStats As Worksheet, row As Long, aAnalysis As Documen
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "WriteDocProperties"
-    
+
     Dim rowIndex As Long
     rowIndex = row + mDocPropRowOffset
-    
+
     If aAnalysis.Application = RID_STR_COMMON_CANNOT_OPEN Then
         SetWorksheetCellValueToString wsPgStats, rowIndex, CDOCINFONAME, fileName
         SetWorksheetCellValueToString wsPgStats, rowIndex, CDOCINFOAPPLICATION, aAnalysis.Application
         SetWorksheetCellValueToString wsPgStats, rowIndex, CDOCINFONAMEANDPATH, aAnalysis.name
-            
+
         GoTo FinalExit
     End If
-    
+
     If InDocPreparation Then
         SetWorksheetCellValueToString wsPgStats, rowIndex, CDOCINFONAME, fileName
         SetWorksheetCellValueToString wsPgStats, rowIndex, CDOCINFOAPPLICATION, aAnalysis.Application
-            
+
         SetWorksheetCellValueToLong wsPgStats, rowIndex, CDOCINFODOCISSUECOSTS, aAnalysis.DocIssuesCosts
         SetWorksheetCellValueToLong wsPgStats, rowIndex, CDOCINFOPREPARABLEISSUECOSTS, aAnalysis.PreparableIssuesCosts
         SetWorksheetCellValueToLong wsPgStats, rowIndex, CDOCINFOMACROISSUECOSTS, aAnalysis.MacroCosts
-        
+
         SetWorksheetCellValueToString wsPgStats, rowIndex, CDOCINFOISSUE_CLASS, _
             getDocOverallIssueClassificationAsString(aAnalysis.DocOverallIssueClass)
         SetWorksheetCellValueToLong wsPgStats, rowIndex, CDOCINFOCOMPLEXISSUES, aAnalysis.ComplexIssuesCount
         SetWorksheetCellValueToLong wsPgStats, rowIndex, CDOCINFOMINORISSUES, aAnalysis.MinorIssuesCount
         SetWorksheetCellValueToLong wsPgStats, rowIndex, CDOCINFOPREPAREDISSUES, aAnalysis.PreparableIssuesCount
-            
+
         SetWorksheetCellValueToString wsPgStats, rowIndex, CDOCINFOMACRO_CLASS, _
             getDocOverallMacroClassAsString(aAnalysis.MacroOverallClass)
         SetWorksheetCellValueToLong wsPgStats, rowIndex, CDOCINFOMACRO_USERFORMS, aAnalysis.MacroNumUserForms
         SetWorksheetCellValueToLong wsPgStats, rowIndex, CDOCINFOMACRO_LINESOFCODE, aAnalysis.MacroTotalNumLines
-        
+
         SetWorksheetCellValueToLong wsPgStats, rowIndex, CDOCINFONUMBERPAGES, aAnalysis.PageCount
         SetWorksheetCellValueToVariant wsPgStats, rowIndex, CDOCINFOCREATED, CheckDate(aAnalysis.Created)
         SetWorksheetCellValueToVariant wsPgStats, rowIndex, CDOCINFOLASTMODIFIED, CheckDate(aAnalysis.Modified)
         SetWorksheetCellValueToVariant wsPgStats, rowIndex, CDOCINFOLASTACCESSED, CheckDate(aAnalysis.Accessed)
         SetWorksheetCellValueToVariant wsPgStats, rowIndex, CDOCINFOLASTPRINTED, CheckDate(aAnalysis.Printed)
-            
+
         SetWorksheetCellValueToString wsPgStats, rowIndex, CDOCINFOLASTSAVEDBY, aAnalysis.SavedBy
         SetWorksheetCellValueToString wsPgStats, rowIndex, CDOCINFOREVISION, aAnalysis.Revision
         SetWorksheetCellValueToString wsPgStats, rowIndex, CDOCINFOTEMPLATE, aAnalysis.Template
@@ -1291,10 +1291,10 @@ Sub WriteDocProperties(wsPgStats As Worksheet, row As Long, aAnalysis As Documen
         SetWorksheetCellValueToVariant wsPgStats, rowIndex, CDOCINFOLASTMODIFIED, CheckDate(aAnalysis.Modified)
         SetWorksheetCellValueToString wsPgStats, rowIndex, CDOCINFONAMEANDPATH, aAnalysis.name
     End If
-    
+
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : path " & aAnalysis.name & " : " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -1303,18 +1303,18 @@ Function CheckDate(myDate As Date) As Variant
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "CheckDate"
-    
+
     Dim lowerNTDateLimit As Date
     If Not IsDate(myDate) Then
         CheckDate = RID_STR_COMMON_NA
         Exit Function
     End If
-    
+
     lowerNTDateLimit = DateSerial(1980, 1, 1)
     CheckDate = IIf(myDate < lowerNTDateLimit, RID_STR_COMMON_NA, myDate)
 FinalExit:
     Exit Function
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : date " & myDate & " : " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -1336,7 +1336,7 @@ Function WriteDocIssues(wsIssues As Worksheet, row As Long, _
     End If
     SetWorksheetCellValueToString wsIssues, row, CNAME, fileName
     SetWorksheetCellValueToString wsIssues, row, CAPPLICATION, aAnalysis.Application
-  
+
     Dim index As Integer
     For index = 1 To aAnalysis.TotalIssueTypes
         If aAnalysis.IssuesCountArray(index) > 0 Then
@@ -1344,11 +1344,11 @@ Function WriteDocIssues(wsIssues As Worksheet, row As Long, _
         End If
     Next index
     SetWorksheetCellValueToString wsIssues, row, CISSUE_COLUMNOFFSET + aAnalysis.TotalIssueTypes + 1, aAnalysis.name
-    
+
     WriteDocIssues = row + 1
 FinalExit:
     Exit Function
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : path " & aAnalysis.name & " : " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -1357,26 +1357,26 @@ Sub ProcessIssuesForDAW(logWb As WorkBook, aAnalysis As DocumentAnalysis, fileNa
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "ProcessIssuesForDAW"
-    
+
     Dim myIssue As IssueInfo
     Dim issueClass As EnumDocOverallIssueClass
-            
+
     Dim index As Integer
     For index = 1 To aAnalysis.Issues.count
         Set myIssue = aAnalysis.Issues(index)
-                
+
         If Not isMacroIssue(myIssue) Then
             issueClass = getDocIssueClassification(logWb, myIssue)
             CountDocIssuesForDoc issueClass, aAnalysis
             SetOverallDocIssueClassification issueClass, aAnalysis
         End If
-                
+
         Set myIssue = Nothing
     Next index
-        
+
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : path " & aAnalysis.name & ": " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -1387,18 +1387,18 @@ Function ProcessIssuesAndWriteDocIssueDetails(logWb As WorkBook, wsIssueDetails 
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "ProcessIssueAndWriteDocIssueDetails"
-    
+
     Dim myIssue As IssueInfo
     Dim rowIndex As Long
     Dim issueClass As EnumDocOverallIssueClass
     Dim issueCost As Long
-    
+
     rowIndex = DetailsRow
-        
+
     Dim index As Integer
     For index = 1 To aAnalysis.Issues.count
         Set myIssue = aAnalysis.Issues(index)
-                
+
         ' Process Document Issues and Costs for the Document
         ' Will be output to List of Documents sheet by WriteDocProperties( )
         If Not isMacroIssue(myIssue) Then
@@ -1411,22 +1411,22 @@ Function ProcessIssuesAndWriteDocIssueDetails(logWb As WorkBook, wsIssueDetails 
                 aAnalysis.PreparableIssuesCosts = aAnalysis.PreparableIssuesCosts + issueCost
             End If
         End If
-                
+
         'Collate Issue and Factor counts across all Documents
         'Will be output to the Issues Analyzed sheet by WriteIssueCounts( )
         CollateIssueAndFactorCountsAcrossAllDocs aAnalysis, myIssue, fileName
-        
+
         OutputCommonIssueDetails wsIssueDetails, rowIndex, aAnalysis, myIssue, fileName
         OutputCommonIssueAttributes wsIssueDetails, rowIndex, myIssue
         rowIndex = rowIndex + 1
         Set myIssue = Nothing
     Next index
-        
+
     ProcessIssuesAndWriteDocIssueDetails = rowIndex
-    
+
 FinalExit:
     Exit Function
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : path " & aAnalysis.name & ": " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -1436,19 +1436,19 @@ Function getDocIssueCost(logWb As WorkBook, aAnalysis As DocumentAnalysis, myIss
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "getDocIssueCost"
-    
+
     Dim issueKey As String
     Dim ret As Long
     ret = 0
-    
+
     issueKey = getAppSpecificApplicationName & "_" & myIssue.IssueTypeXML & "_" & myIssue.SubTypeXML
-    
+
     ret = getIssueValueFromXLSorDict(logWb, aAnalysis, mIssuesCostDict, issueKey, 1, CCOST_COL_OFFSET)
-    
+
 FinalExit:
     getDocIssueCost = ret
     Exit Function
-    
+
 HandleErrors:
     ret = 0
     WriteDebug currentFunctionName & " : path " & aAnalysis.name & ": " & Err.Number & " " & Err.Description & " " & Err.Source
@@ -1459,7 +1459,7 @@ Function getMacroIssueCosts(logWb As WorkBook, aAnalysis As DocumentAnalysis) As
     getMacroIssueCosts = getVBAMacroIssueCost(logWb, aAnalysis) '+ getMacroExtRefIssueCost(logWb, aAnalysis)
     'NOTE: Currently not counting External Refs as Macro Cost
     'could be added if porting off Windows
-    
+
 End Function
 
 Function getVBAMacroIssueCost(logWb As WorkBook, aAnalysis As DocumentAnalysis) As Long
@@ -1467,25 +1467,25 @@ Function getVBAMacroIssueCost(logWb As WorkBook, aAnalysis As DocumentAnalysis) 
     Const CMACRO_ROW_OFFSET_USER_FORMS_COUNT_COST = 5
     Const CMACRO_ROW_OFFSET_USER_FORMS_CONTROL_COUNT_COST = 6
     Const CMACRO_ROW_OFFSET_USER_FORMS_CONTROL_TYPE_COUNT_COST = 7
-    
+
     Const CMACRO_NUM_OF_LINES_FACTOR_KEY = "_UniqueLineCount"
     Const CMACRO_USER_FORMS_COUNT_FACTOR_KEY = "_UserFormsCount"
     Const CMACRO_USER_FORMS_CONTROL_COUNT_FACTOR_KEY = "_UserFormsControlCount"
     Const CMACRO_USER_FORMS_CONTROL_TYPE_COUNT_FACTOR_KEY = "_UserFormsControlTypeCount"
-    
+
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "getVBAMacroIssueCost"
-    
+
     Dim baseIssueKey As String
     Dim ret As Long
     ret = 0
-    
+
     If Not aAnalysis.HasMacros Then GoTo FinalExit
-        
+
     'Fetch VBA Macro Cost Factors - if required
     baseIssueKey = getAppSpecificApplicationName & "_" & CSTR_ISSUE_VBA_MACROS & "_" & CSTR_SUBISSUE_PROPERTIES
-    
+
     'Num Lines - Costing taken from "Lines in Unique Modules"
     If aAnalysis.MacroTotalNumLines > 0 Then
         ret = ret + aAnalysis.MacroTotalNumLines * _
@@ -1512,12 +1512,12 @@ Function getVBAMacroIssueCost(logWb As WorkBook, aAnalysis As DocumentAnalysis) 
         ret = ret + aAnalysis.MacroNumUserFormControlTypes * getValueFromXLSorDict(logWb, aAnalysis, mIssuesCostDict, _
         baseIssueKey & CMACRO_USER_FORMS_CONTROL_TYPE_COUNT_FACTOR_KEY, baseIssueKey, CMACRO_ROW_OFFSET_USER_FORMS_CONTROL_TYPE_COUNT_COST, CCOST_COL_OFFSET)
     End If
-    
+
 
 FinalExit:
     getVBAMacroIssueCost = ret
     Exit Function
-    
+
 HandleErrors:
     ret = 0
     WriteDebug currentFunctionName & " : path " & aAnalysis.name & ": " & Err.Number & " " & Err.Description & " " & Err.Source
@@ -1526,16 +1526,16 @@ End Function
 Function getMacroExtRefIssueCost(logWb As WorkBook, aAnalysis As DocumentAnalysis) As Long
     Const CMACRO_ROW_OFFSET_NUM_EXTERNAL_REFS_COST = 2
     Const CMACRO_NUM_EXTERNAL_REFS_FACTOR_KEY = "_ExternalRefs"
-    
+
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "getMacroExtRefIssueCost"
     Dim baseIssueKey As String
     Dim ret As Long
     ret = 0
-    
+
     If aAnalysis.MacroNumExternalRefs <= 0 Then GoTo FinalExit
-        
+
     'Fetch External Ref Cost Factors
     baseIssueKey = getAppSpecificApplicationName & "_" & CSTR_ISSUE_PORTABILITY & "_" & _
         CSTR_SUBISSUE_EXTERNAL_REFERENCES_IN_MACRO
@@ -1547,7 +1547,7 @@ Function getMacroExtRefIssueCost(logWb As WorkBook, aAnalysis As DocumentAnalysi
 FinalExit:
     getMacroExtRefIssueCost = ret
     Exit Function
-    
+
 HandleErrors:
     ret = 0
     WriteDebug currentFunctionName & " : path " & aAnalysis.name & ": " & Err.Number & " " & Err.Description & " " & Err.Source
@@ -1564,10 +1564,10 @@ Function getValueFromXLSorDict(logWb As WorkBook, aAnalysis As DocumentAnalysis,
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "getValueFromXLSorDict"
-    
+
     Dim ret As Long
     ret = 0
-    
+
     If dict.Exists(dictKey) Then
         ret = dict.item(dictKey)
     Else
@@ -1587,7 +1587,7 @@ Function getValueFromXLSorDict(logWb As WorkBook, aAnalysis As DocumentAnalysis,
 FinalExit:
     getValueFromXLSorDict = ret
     Exit Function
-    
+
 HandleErrors:
     ret = 0
     WriteDebug currentFunctionName & " : path " & aAnalysis.name & ": " & Err.Number & " " & Err.Description & " " & Err.Source
@@ -1596,7 +1596,7 @@ End Function
 Function isMacroIssue(myIssue As IssueInfo)
     'Error handling not required
     isMacroIssue = False
-    
+
     If myIssue.IssueTypeXML = CSTR_ISSUE_VBA_MACROS Or _
         (myIssue.IssueTypeXML = CSTR_ISSUE_PORTABILITY And _
             myIssue.SubTypeXML = CSTR_SUBISSUE_EXTERNAL_REFERENCES_IN_MACRO) Then
@@ -1605,7 +1605,7 @@ Function isMacroIssue(myIssue As IssueInfo)
 End Function
 Sub CountDocIssuesForDoc(issueClass As EnumDocOverallIssueClass, aAnalysis As DocumentAnalysis)
     'Error handling not required
-    
+
     If issueClass = enMinor Then
         aAnalysis.MinorIssuesCount = aAnalysis.MinorIssuesCount + 1
     End If
@@ -1614,9 +1614,9 @@ Sub CountDocIssuesForDoc(issueClass As EnumDocOverallIssueClass, aAnalysis As Do
 End Sub
 Sub SetOverallDocIssueClassification(issueClass As EnumDocOverallIssueClass, aAnalysis As DocumentAnalysis)
     'Error handling not required
-    
+
     If aAnalysis.DocOverallIssueClass = enComplex Then Exit Sub
-    
+
     If issueClass = enComplex Then
         aAnalysis.DocOverallIssueClass = enComplex
     Else
@@ -1631,7 +1631,7 @@ Function getDocIssueClassification(logWb As WorkBook, myIssue As IssueInfo) As E
     Dim bRet As Boolean
     bRet = False
     getDocIssueClassification = enMinor
-    
+
     issueKey = getAppSpecificApplicationName & "_" & myIssue.IssueTypeXML & "_" & myIssue.SubTypeXML
     If mIssuesClassificationDict.Exists(issueKey) Then
         bRet = mIssuesClassificationDict.item(issueKey)
@@ -1654,7 +1654,7 @@ FinalExit:
         getDocIssueClassification = enComplex
     End If
     Exit Function
-    
+
 HandleErrors:
     bRet = False
     WriteDebug currentFunctionName & " : issueKey " & issueKey & ": " & Err.Number & " " & Err.Description & " " & Err.Source
@@ -1664,7 +1664,7 @@ End Function
 Function getDocOverallIssueClassificationAsString(docIssueClass As EnumDocOverallIssueClass) As String
     Dim Str As String
     'Error handling not required
-    
+
     Select Case docIssueClass
     Case enComplex
         Str = RID_STR_COMMON_ISSUE_CLASS_COMPLEX
@@ -1673,14 +1673,14 @@ Function getDocOverallIssueClassificationAsString(docIssueClass As EnumDocOveral
     Case Else
         Str = RID_STR_COMMON_ISSUE_CLASS_NONE
     End Select
-    
+
     getDocOverallIssueClassificationAsString = Str
 End Function
 
 Public Function getDocOverallMacroClassAsString(docMacroClass As EnumDocOverallMacroClass) As String
     Dim Str As String
     'Error handling not required
-    
+
     Select Case docMacroClass
     Case enMacroComplex
         Str = RID_STR_COMMON_MACRO_CLASS_COMPLEX
@@ -1691,7 +1691,7 @@ Public Function getDocOverallMacroClassAsString(docMacroClass As EnumDocOverallM
     Case Else
         Str = RID_STR_COMMON_MACRO_CLASS_NONE
     End Select
-    
+
     getDocOverallMacroClassAsString = Str
 End Function
 
@@ -1700,13 +1700,13 @@ Function WriteDocRefDetails(wsRefDetails As Worksheet, DetailsRow As Long, _
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "WriteDocRefDetails"
-    
+
     Dim myIssue As IssueInfo
     Dim rowIndex As Long
     rowIndex = DetailsRow
-        
+
     Dim index As Integer
-    
+
     'Output References for Docs with Macros
     If aAnalysis.HasMacros And (aAnalysis.References.count > 0) Then
         For index = 1 To aAnalysis.References.count
@@ -1716,12 +1716,12 @@ Function WriteDocRefDetails(wsRefDetails As Worksheet, DetailsRow As Long, _
             Set myIssue = Nothing
         Next index
     End If
-    
+
     WriteDocRefDetails = rowIndex
 
 FinalExit:
     Exit Function
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & _
     " : path " & aAnalysis.name & ": " & _
@@ -1734,27 +1734,27 @@ Sub OutputReferenceAttributes(wsIssueDetails As Worksheet, rowIndex As Long, _
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "OutputReferenceAttributes"
-    
+
     Dim strAttributes As String
-    
+
     With myIssue
         SetWorksheetCellValueToString wsIssueDetails, rowIndex, CREF_DETDOCNAME, fileName
         SetWorksheetCellValueToString wsIssueDetails, rowIndex, CREF_DETDOCAPPLICATION, aAnalysis.Application
-                
+
         strAttributes = .Values(RID_STR_COMMON_ATTRIBUTE_MAJOR) & "." & .Values(RID_STR_COMMON_ATTRIBUTE_MINOR)
         strAttributes = IIf(strAttributes = "0.0" Or strAttributes = ".", .Values(RID_STR_COMMON_ATTRIBUTE_NAME), _
             .Values(RID_STR_COMMON_ATTRIBUTE_NAME) & " " & .Values(RID_STR_COMMON_ATTRIBUTE_MAJOR) & _
             "." & .Values(RID_STR_COMMON_ATTRIBUTE_MINOR))
         SetWorksheetCellValueToString wsIssueDetails, rowIndex, CREF_DETREFERENCE, strAttributes
-        
+
         If .Values(RID_STR_COMMON_ATTRIBUTE_TYPE) = RID_STR_COMMON_ATTRIBUTE_PROJECT Then
             SetWorksheetCellValueToString wsIssueDetails, rowIndex, CREF_DETDESCRIPTION, RID_STR_COMMON_ATTRIBUTE_PROJECT
         Else
             SetWorksheetCellValueToString wsIssueDetails, rowIndex, CREF_DETDESCRIPTION, _
                 IIf(.Values(RID_STR_COMMON_ATTRIBUTE_DESCRIPTION) <> "", .Values(RID_STR_COMMON_ATTRIBUTE_DESCRIPTION), RID_STR_COMMON_NA)
         End If
-        
-        
+
+
         If .Values(RID_STR_COMMON_ATTRIBUTE_ISBROKEN) <> RID_STR_COMMON_ATTRIBUTE_BROKEN Then
             SetWorksheetCellValueToString wsIssueDetails, rowIndex, CREF_DETLOCATION, _
                 .Values(RID_STR_COMMON_ATTRIBUTE_FILE)
@@ -1762,7 +1762,7 @@ Sub OutputReferenceAttributes(wsIssueDetails As Worksheet, rowIndex As Long, _
             SetWorksheetCellValueToString wsIssueDetails, rowIndex, CREF_DETLOCATION, _
                 RID_STR_COMMON_NA
         End If
-         
+
         'Reference Details
         strAttributes = RID_STR_COMMON_ATTRIBUTE_TYPE & ": " & .Values(RID_STR_COMMON_ATTRIBUTE_TYPE) & vbLf
         strAttributes = strAttributes & RID_STR_COMMON_ATTRIBUTE_PROPERTIES & ": " & _
@@ -1771,12 +1771,12 @@ Sub OutputReferenceAttributes(wsIssueDetails As Worksheet, rowIndex As Long, _
             strAttributes & vbLf & RID_STR_COMMON_ATTRIBUTE_GUID & ": " & .Values(RID_STR_COMMON_ATTRIBUTE_GUID), _
             strAttributes)
         SetWorksheetCellValueToString wsIssueDetails, rowIndex, CREF_DETATTRIBUTES, strAttributes
-        
+
         SetWorksheetCellValueToString wsIssueDetails, rowIndex, CREF_DETNAMEANDPATH, aAnalysis.name
     End With
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & _
     " : path " & aAnalysis.name & ": " & _
@@ -1790,22 +1790,22 @@ Sub OutputCommonIssueAttributes(wsIssueDetails As Worksheet, rowIndex As Long, _
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "OutputCommonIssueAttributes"
-    
+
     Dim index As Integer
     Dim strAttributes As String
-        
+
     strAttributes = ""
     For index = 1 To myIssue.Attributes.count
         strAttributes = strAttributes & myIssue.Attributes(index) & " - " & _
                             myIssue.Values(index)
         strAttributes = strAttributes & IIf(index <> myIssue.Attributes.count, vbLf, "")
-    
+
     Next index
     SetWorksheetCellValueToString wsIssueDetails, rowIndex, CISSUE_DETATTRIBUTES, strAttributes
 
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & _
     " : rowIndex " & rowIndex & ": " & _
@@ -1819,16 +1819,16 @@ Sub CollateIssueAndFactorCountsAcrossAllDocs(aAnalysis As DocumentAnalysis, myIs
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "CollateIssueAndFactorCountsAcrossAllDocs"
-    
+
     'Don't want to cost ISSUE_INFORMATION issues
     If myIssue.IssueTypeXML = CSTR_ISSUE_INFORMATION Then Exit Sub
-    
+
     Dim issueKey As String
     issueKey = getAppSpecificApplicationName & "_" & myIssue.IssueTypeXML & "_" & myIssue.SubTypeXML
-    
+
     'Store costing metrics for Issue
     AddIssueAndOneToDict issueKey
-    
+
     'Store prepeared issue for costing metrics
     If myIssue.Preparable Then
         AddPreparedIssueAndOneToDict issueKey & "_Prepared"
@@ -1837,32 +1837,32 @@ Sub CollateIssueAndFactorCountsAcrossAllDocs(aAnalysis As DocumentAnalysis, myIs
     'Additional costing Factors output for VB macros
     If (myIssue.IssueTypeXML = CSTR_ISSUE_VBA_MACROS) And _
         (myIssue.SubTypeXML <> CSTR_SUBISSUE_MACRO_PASSWORD_PROTECTION) Then
-        
+
         'Unique Macro Module and Line count
         AddMacroModuleHashToMacroDict myIssue
-        
+
         'Line count
         AddIssueAndValToDict issueKey & "_" & CSTR_SUBISSUE_VBA_MACROS_NUMLINES, myIssue, _
             RID_STR_COMMON_ATTRIBUTE_NUMBER_OF_LINES
-        
+
         'User From info
         If myIssue.SubLocation = CSTR_USER_FORM Then
             AddIssueAndOneToDict issueKey & "_" & CSTR_SUBISSUE_VBA_MACROS_USERFORMS_COUNT
-            
+
             AddIssueAndValToDict issueKey & "_" & CSTR_SUBISSUE_VBA_MACROS_USERFORMS_CONTROL_COUNT, myIssue, _
                RID_STR_COMMON_ATTRIBUTE_CONTROLS
         End If
     'Additional costing Factors output for External References
     ElseIf (myIssue.IssueTypeXML = CSTR_ISSUE_PORTABILITY And _
             myIssue.SubTypeXML = CSTR_SUBISSUE_EXTERNAL_REFERENCES_IN_MACRO) Then
-    
+
         AddIssueAndValToDict issueKey & "_" & CSTR_SUBISSUE_EXTERNAL_REFERENCES_IN_MACRO_COUNT, myIssue, _
             RID_STR_COMMON_ATTRIBUTE_NON_PORTABLE_EXTERNAL_REFERENCES_COUNT
     End If
-    
+
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & _
     " : path " & aAnalysis.name & ": " & _
@@ -1877,7 +1877,7 @@ Sub OutputCommonIssueDetails(wsIssueDetails As Worksheet, rowIndex As Long, _
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "OutputCommonIssueDetails"
-    
+
     SetWorksheetCellValueToString wsIssueDetails, rowIndex, CISSUE_DETDOCNAME, fileName
     SetWorksheetCellValueToString wsIssueDetails, rowIndex, CISSUE_DETDOCAPPLICATION, aAnalysis.Application
     SetWorksheetCellValueToString wsIssueDetails, rowIndex, CISSUE_DETTYPE, myIssue.IssueType
@@ -1894,7 +1894,7 @@ Sub OutputCommonIssueDetails(wsIssueDetails As Worksheet, rowIndex As Long, _
 
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & _
     " : path " & aAnalysis.name & ": " & _
@@ -1908,7 +1908,7 @@ Sub AddIssueAndBoolValToDict(issueKey As String, issue As IssueInfo, valKey As S
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "AddIssueAndBoolValToDict"
-        
+
     If mIssuesDict.Exists(issueKey) Then
         mIssuesDict.item(issueKey) = mIssuesDict.item(issueKey) + _
             IIf(issue.Values(valKey) > 0, 1, 0)
@@ -1917,7 +1917,7 @@ Sub AddIssueAndBoolValToDict(issueKey As String, issue As IssueInfo, valKey As S
     End If
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & _
     " : issueKey " & issueKey & ": " & _
@@ -1929,7 +1929,7 @@ Sub AddIssueAndValToDict(issueKey As String, issue As IssueInfo, valKey As Strin
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "AddIssueAndValToDict"
-        
+
     If mIssuesDict.Exists(issueKey) Then
         mIssuesDict.item(issueKey) = mIssuesDict.item(issueKey) + issue.Values(valKey)
     Else
@@ -1937,7 +1937,7 @@ Sub AddIssueAndValToDict(issueKey As String, issue As IssueInfo, valKey As Strin
     End If
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & _
     " : issueKey " & issueKey & ": " & _
@@ -1952,16 +1952,16 @@ Sub AddMacroModuleHashToMacroDict(issue As IssueInfo)
     Dim issueKey As String
     Dim issueVal As String
     currentFunctionName = "AddMacroModuleHashToMacroDict"
-        
+
     issueKey = issue.Values(RID_STR_COMMON_ATTRIBUTE_SIGNATURE)
     If issueKey = RID_STR_COMMON_NA Then Exit Sub
-    
+
     If Not mMacroDict.Exists(issueKey) Then
         mMacroDict.Add issueKey, issue.Values(RID_STR_COMMON_ATTRIBUTE_NUMBER_OF_LINES)
     End If
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & _
     " : issueKey " & issueKey & ": " & _
@@ -1981,7 +1981,7 @@ Sub AddIssueAndOneToDict(key As String)
     End If
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : key " & key & ": " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -1999,7 +1999,7 @@ Sub AddPreparedIssueAndOneToDict(key As String)
     End If
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : key " & key & ": " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -2009,7 +2009,7 @@ Function GetExcelInstance() As Excel.Application
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "GetExcelInstance"
-    
+
     Dim xl As Excel.Application
     On Error Resume Next
     'Try and get an existing instance
@@ -2025,7 +2025,7 @@ Function GetExcelInstance() As Excel.Application
     Set xl = Nothing
 FinalExit:
     Exit Function
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & ": " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -2036,52 +2036,52 @@ Sub WriteOverview(logWb As WorkBook, DocCount As DocumentCount, templateCount As
     Const COV_ISSUECLASS_COMPLEX = "MAW_ISSUECLASS_COMPLEX"
     Const COV_ISSUECLASS_MINOR = "MAW_ISSUECLASS_MINOR"
     Const COV_ISSUECLASS_NONE = "MAW_ISSUECLASS_NONE"
-    
+
     Const COV_MACROCLASS_COMPLEX = "MAW_MACROCLASS_COMPLEX"
     Const COV_MACROCLASS_MEDIUM = "MAW_MACROCLASS_MEDIUM"
     Const COV_MACROCLASS_SIMPLE = "MAW_MACROCLASS_SIMPLE"
     Const COV_MACROCLASS_NONE = "MAW_MACROCLASS_NONE"
-    
+
     Const COV_ISSUECOUNT_COMPLEX = "MAW_ISSUECOUNT_COMPLEX"
     Const COV_ISSUECOUNT_MINOR = "MAW_ISSUECOUNT_MINOR"
-    
+
     Const COV_MODDATES_LESS3MONTHS = "MAW_MODDATES_LESS3MONTHS"
     Const COV_MODDATES_3TO6MONTHS = "MAW_MODDATES_3TO6MONTHS"
     Const COV_MODDATES_6TO12MONTHS = "MAW_MODDATES_6TO12MONTHS"
     Const COV_MODDATES_MORE12MONTHS = "MAW_MODDATES_MORE12MONTHS"
-    
+
     Const COV_DOC_MIGRATION_COSTS = "Document_Migration_Costs"
     Const COV_DOC_PREPARABLE_COSTS = "Document_Migration_Preparable_Costs"
     Const COV_MACRO_MIGRATION_COSTS = "Macro_Migration_Costs"
- 
+
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "WriteOverview"
-    
+
     Dim appName As String
     appName = getAppSpecificApplicationName
-  
+
     'OV - Title
     SetWorkbookNameValueToString logWb, COVERVIEW_TITLE_LABEL, GetTitle
     SetWorkbookNameValueToVariant logWb, "AnalysisDate", Now
     SetWorkbookNameValueToString logWb, "AnalysisVersion", _
         RID_STR_COMMON_OV_VERSION_STR & ": " & GetTitle & " " & GetVersion
-              
+
     'OV - Number of Documents Analyzed
     AddLongToWorkbookNameValue logWb, CNUMBERDOC_ALL & getAppSpecificDocExt, DocCount.numDocsAnalyzed
     AddLongToWorkbookNameValue logWb, CNUMBERDOC_ALL & getAppSpecificTemplateExt, templateCount.numDocsAnalyzed
-    
+
     'OV - Documents with Document Migration Issues (excludes macro issues)
     AddLongToWorkbookNameValue logWb, appName & "_" & COV_ISSUECLASS_COMPLEX, issueClasses.complex
     AddLongToWorkbookNameValue logWb, appName & "_" & COV_ISSUECLASS_MINOR, issueClasses.Minor
     AddLongToWorkbookNameValue logWb, appName & "_" & COV_ISSUECLASS_NONE, issueClasses.None
-    
+
     'OV - Documents with Macro Migration Issues
     AddLongToWorkbookNameValue logWb, appName & "_" & COV_MACROCLASS_COMPLEX, macroClasses.complex
     AddLongToWorkbookNameValue logWb, appName & "_" & COV_MACROCLASS_MEDIUM, macroClasses.Medium
     AddLongToWorkbookNameValue logWb, appName & "_" & COV_MACROCLASS_SIMPLE, macroClasses.Simple
     AddLongToWorkbookNameValue logWb, appName & "_" & COV_MACROCLASS_NONE, macroClasses.None
-    
+
     'OV - Document Modification Dates
     Dim modDates As DocModificationDates
     Call GetDocModificationDates(modDates)
@@ -2098,27 +2098,27 @@ Sub WriteOverview(logWb As WorkBook, DocCount As DocumentCount, templateCount As
             DocCount.numComplexIssues + templateCount.numComplexIssues
         AddLongToWorkbookNameValue logWb, appName & "_" & COV_ISSUECOUNT_MINOR, _
             DocCount.numMinorIssues + templateCount.numMinorIssues
-    
+
         'OV - Document Migration Costs
         AddLongToWorkbookNameValue logWb, appName & "_" & COV_DOC_MIGRATION_COSTS, _
             DocCount.totalDocIssuesCosts + templateCount.totalDocIssuesCosts
-        
+
         'OV - Document Migration Preparable Costs
         AddLongToWorkbookNameValue logWb, COV_DOC_PREPARABLE_COSTS, _
             DocCount.totalPreparableIssuesCosts + templateCount.totalPreparableIssuesCosts
-        
+
         'OV - Macro Migration Costs
         AddLongToWorkbookNameValue logWb, appName & "_" & COV_MACRO_MIGRATION_COSTS, _
             DocCount.totalMacroCosts + templateCount.totalMacroCosts
     End If
-    
+
     'OV - Internal Attributes
     AddLongToWorkbookNameValue logWb, appName & "_" & "TotalDocsAnalysedWithIssues", _
         DocCount.numDocsAnalyzedWithIssues + templateCount.numDocsAnalyzedWithIssues
 
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : Problem writing overview: " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -2130,9 +2130,9 @@ Sub SetupDAWResultsSpreadsheet(logWb As WorkBook, fontName As String, fontSize A
     currentFunctionName = "SetupDAWResultsSpreadsheet"
     Dim bSetupRun As Boolean
     bSetupRun = CBool(GetWorkbookNameValueAsLong(logWb, COV_DAW_SETUP_SHEETS_RUN_LBL))
-    
+
     If bSetupRun Then Exit Sub
-    
+
     'Setup Text Boxes
     SetupSheetTextBox logWb, RID_STR_COMMON_RESULTS_SHEET_NAME_OVERVIEW, COV_DOC_MOD_DATES_COMMENT_TXB, _
         RID_STR_COMMON_OV_DOC_MOD_DATES_COMMENT_TITLE, RID_STR_COMMON_OV_DOC_MOD_DATES_COMMENT_BODY, _
@@ -2150,7 +2150,7 @@ Sub SetupDAWResultsSpreadsheet(logWb As WorkBook, fontName As String, fontSize A
         IIf(monthLimit <> CMAX_LIMIT, _
             ReplaceTopicTokens(RID_STR_COMMON_OV_HIGH_LEVEL_ANALYSIS_DAW, CR_TOPIC, CStr(monthLimit)), _
             RID_STR_COMMON_OV_HIGH_LEVEL_ANALYSIS_PAW_NO_LIMIT)
-            
+
     SetupSheetTextBox logWb, RID_STR_COMMON_RESULTS_SHEET_NAME_OVERVIEW, COV_DOC_ANALYSIS_COMMENT_TXB, _
         RID_STR_COMMON_OV_DOC_ANALYSIS_COMMENT_TITLE, RID_STR_COMMON_OV_DOC_ANALYSIS_COMMENT_BODY, _
         CCOMMENTS_FONT_SIZE, fontName
@@ -2164,15 +2164,15 @@ Sub SetupDAWResultsSpreadsheet(logWb As WorkBook, fontName As String, fontSize A
         RID_STR_COMMON_OV_DOC_MACRO_CHART_TITLE
     SetupSheetChartTitles logWb, RID_STR_COMMON_RESULTS_SHEET_NAME_OVERVIEW, COV_DOC_ANALYSIS_CHART, _
         RID_STR_COMMON_OV_DOC_ANALYSIS_CHART_TITLE
-        
+
     'Set selection to top cell of Overview
     logWb.Sheets(RID_STR_COMMON_RESULTS_SHEET_NAME_OVERVIEW).Range("A1").Select
-    
+
     bSetupRun = True
     SetWorkbookNameValueToBoolean logWb, COV_DAW_SETUP_SHEETS_RUN_LBL, bSetupRun
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : Problem setting up spreadsheet for DAW: " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -2184,12 +2184,12 @@ Sub SetupPAWResultsSpreadsheet(logWb As WorkBook, fontName As String, fontSize A
     currentFunctionName = "SetupPAWResultsSpreadsheet"
     Dim bSetupRun As Boolean
     bSetupRun = CBool(GetWorkbookNameValueAsLong(logWb, COV_PAW_SETUP_SHEETS_RUN_LBL))
-    
+
     If bSetupRun Then Exit Sub
-    
+
     'Costs
     logWb.Names(COV_COSTS_PREPISSUE_COUNT_COL_LBL).RefersToRange.EntireColumn.Hidden = False
-    
+
     'Setup Text Boxes
     SetupSheetTextBox logWb, RID_STR_COMMON_RESULTS_SHEET_NAME_OVERVIEW, COV_DOC_MOD_DATES_LEGEND_TXB, _
         RID_STR_COMMON_OV_LEGEND_TITLE, RID_STR_COMMON_OV_DOC_MOD_DATES_LEGEND_BODY, fontSize, fontName
@@ -2199,7 +2199,7 @@ Sub SetupPAWResultsSpreadsheet(logWb As WorkBook, fontName As String, fontSize A
         RID_STR_COMMON_OV_HIGH_LEVEL_ANALYSIS_PAW_NO_LIMIT
     SetupSheetTextBox logWb, RID_STR_COMMON_RESULTS_SHEET_NAME_OVERVIEW, COV_DOC_ANALYSIS_LEGEND_PAW_TXB, _
         RID_STR_COMMON_OV_LEGEND_TITLE, RID_STR_COMMON_OV_DOC_ANALYSIS_PAW_LEGEND_BODY, fontSize, fontName
-    
+
     'Setup Chart Titles
     SetupSheetChartTitles logWb, RID_STR_COMMON_RESULTS_SHEET_NAME_OVERVIEW, COV_DOC_MOD_DATES_CHART, _
         RID_STR_COMMON_OV_DOC_MOD_DATES_CHART_TITLE
@@ -2207,16 +2207,16 @@ Sub SetupPAWResultsSpreadsheet(logWb As WorkBook, fontName As String, fontSize A
         RID_STR_COMMON_OV_DOC_MACRO_CHART_TITLE
     SetupSheetChartTitles logWb, RID_STR_COMMON_RESULTS_SHEET_NAME_OVERVIEW, COV_DOC_ANALYSIS_CHART, _
         RID_STR_COMMON_OV_DOC_ANALYSIS_CHART_TITLE
-        
+
     'Set selection to top cell of Overview
     logWb.Sheets(RID_STR_COMMON_RESULTS_SHEET_NAME_OVERVIEW).Range("A1").Select
 
     bSetupRun = True
     SetWorkbookNameValueToBoolean logWb, COV_PAW_SETUP_SHEETS_RUN_LBL, bSetupRun
-        
+
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : Problem setting up spreadsheet for PAW: " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -2227,10 +2227,10 @@ Sub SetupPrintRanges(logWb As WorkBook, docPropRow As Long, appIssuesRow As Long
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "SetupPrintRanges"
-    
+
     'Set Print Ranges
     If InDocPreparation Then
-    
+
         logWb.Worksheets(RID_STR_COMMON_RESULTS_SHEET_NAME_DOCPROP).PageSetup.PrintArea = "$A1:$U" & (docPropRow + mDocPropRowOffset)
         logWb.Worksheets(RID_STR_COMMON_RESULTS_SHEET_NAME_DOCISSUE_DETAILS).PageSetup.PrintArea = "$A1:$J" & issueDetailsRow
         logWb.Worksheets(RID_STR_COMMON_RESULTS_SHEET_NAME_DOCREF_DETAILS).PageSetup.PrintArea = "$A1:$G" & refDetailsRow
@@ -2247,10 +2247,10 @@ Sub SetupPrintRanges(logWb As WorkBook, docPropRow As Long, appIssuesRow As Long
     Else
         logWb.Worksheets(RID_STR_COMMON_RESULTS_SHEET_NAME_DOCPROP).PageSetup.PrintArea = "$A1:$U" & (docPropRow + mDocPropRowOffset)
     End If
-    
+
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : Problem setting print ranges: " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -2262,7 +2262,7 @@ Sub SetupSheetChartTitles(logWb As WorkBook, namedWorksheet As String, namedChar
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "SetupSheetChartTitles"
-    
+
     With logWb.Sheets(namedWorksheet).ChartObjects(namedChart).Chart
         .HasTitle = True
         .chartTitle.Characters.Text = chartTitle
@@ -2271,7 +2271,7 @@ Sub SetupSheetChartTitles(logWb As WorkBook, namedWorksheet As String, namedChar
 
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & _
         " namedWorkSheet: " & namedWorksheet & _
@@ -2289,21 +2289,21 @@ Sub SetupSheetTextBox(logWb As WorkBook, namedWorksheet As String, _
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "SetupSheetTextBox"
-    
+
     Dim strTextBody As String
     Dim allText As String
     strTextBody = ReplaceTopic2Tokens(textBoxBody, CR_STR, Chr(10), CR_PRODUCT, RID_STR_COMMON_OV_PRODUCT_STR)
-    
+
     'Setup Text Boxes
     logWb.Sheets(namedWorksheet).Activate
     logWb.Sheets(namedWorksheet).Shapes(textBoxName).Select
-    
+
     '*** Workaround Excel bug:  213841 XL: Passed Strings Longer Than 255 Characters Are Truncated
     Dim I As Long
     logWb.Application.Selection.Text = ""
-        
+
     logWb.Application.Selection.Characters.Text = textBoxTitle & Chr(10)
-         
+
     With logWb.Application.Selection
       For I = 0 To Int(Len(strTextBody) / CMAX_INSERTABLE_STRING_LEN)
         .Characters(.Characters.count + 1).Text = Mid(strTextBody, _
@@ -2346,7 +2346,7 @@ Function GetWorkbookNameValueAsLong(logWb As WorkBook, name As String) As Long
 
 FinalExit:
     Exit Function
-    
+
 HandleErrors:
     GetWorkbookNameValueAsLong = 0
     WriteDebug currentFunctionName & " : name " & name & ": " & Err.Number & " " & Err.Description & " " & Err.Source
@@ -2362,7 +2362,7 @@ Function GetWorksheetCellValueAsLong(logWs As Worksheet, row As Long, col As Lon
 
 FinalExit:
     Exit Function
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & _
     " : row " & row & _
@@ -2370,7 +2370,7 @@ HandleErrors:
     Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
 End Function
-        
+
 Function GetWorksheetCellValueAsString(logWs As Worksheet, row As Long, col As Long) As String
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
@@ -2380,17 +2380,17 @@ Function GetWorksheetCellValueAsString(logWs As Worksheet, row As Long, col As L
 
 FinalExit:
     Exit Function
-    
+
 HandleErrors:
     GetWorksheetCellValueAsString = ""
-    
+
     WriteDebug currentFunctionName & _
     " : row " & row & _
     " : col " & col & _
     Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
 End Function
-        
+
 Sub SetWorksheetCellValueToLong(logWs As Worksheet, row As Long, col As Long, val As Long)
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
@@ -2400,7 +2400,7 @@ Sub SetWorksheetCellValueToLong(logWs As Worksheet, row As Long, col As Long, va
 
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & _
     " : row " & row & _
@@ -2418,7 +2418,7 @@ Sub SetWorksheetCellValueToInteger(logWs As Worksheet, row As Long, col As Long,
 
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & _
     " : row " & row & _
@@ -2437,7 +2437,7 @@ Sub SetWorksheetCellValueToVariant(logWs As Worksheet, row As Long, col As Long,
 
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & _
     " : row " & row & _
@@ -2456,7 +2456,7 @@ Sub SetWorksheetCellValueToString(logWs As Worksheet, row As Long, col As Long, 
 
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & _
     " : row " & row & _
@@ -2475,7 +2475,7 @@ Sub SetWorkbookNameValueToBoolean(logWb As WorkBook, name As String, bVal As Boo
 
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : name " & name & " : boolean value " & bVal & ": " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -2490,7 +2490,7 @@ Sub SetWorkbookNameValueToString(logWb As WorkBook, name As String, val As Strin
 
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : name " & name & " : value " & val & ": " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -2505,7 +2505,7 @@ Sub SetWorkbookNameValueToLong(logWb As WorkBook, name As String, val As Long)
 
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : name " & name & " : value " & val & ": " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -2520,7 +2520,7 @@ Sub SetWorkbookNameValueToVariant(logWb As WorkBook, name As String, val As Vari
 
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : name " & name & " : value " & val & ": " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -2535,7 +2535,7 @@ Sub AddLongToWorkbookNameValue(logWb As WorkBook, name As String, val As Long)
 
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : name " & name & " : value " & val & ": " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -2549,7 +2549,7 @@ Sub AddVariantToWorkbookNameValue(logWb As WorkBook, name As String, varVal As V
 
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : name " & name & " : value " & varVal & ": " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -2560,13 +2560,13 @@ Sub SaveAnalysisResultsVariables(logWb As WorkBook, offsetDocIssueDetailsRow As 
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "SaveAnalysisResultsVariables"
-    
+
     'OV - Internal Attributes
     SetWorkbookNameValueToLong logWb, "TotalIssuesAnalysed", offsetDocIssueDetailsRow
     SetWorkbookNameValueToLong logWb, "TotalRefsAnalysed", offsetDocRefDetailsRow
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : offsetDocIssueDetailsRow " & offsetDocIssueDetailsRow & _
     " : offsetDocRefDetailsRow " & offsetDocRefDetailsRow & ": " & Err.Number & " " & Err.Description & " " & Err.Source
@@ -2579,14 +2579,14 @@ Sub SetupAnalysisResultsVariables(logWb As WorkBook, _
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "SetupAnalysisResultsVariables"
-    
+
     offsetDocPropRow = GetWorkbookNameValueAsLong(logWb, CTOTAL_DOCS_ANALYZED)
     offsetDocIssueDetailsRow = GetWorkbookNameValueAsLong(logWb, "TotalIssuesAnalysed")
     offsetDocRefDetailsRow = GetWorkbookNameValueAsLong(logWb, "TotalRefsAnalysed")
     offsetDocIssuesRow = GetWorkbookNameValueAsLong(logWb, getAppSpecificApplicationName & "_" & "TotalDocsAnalysedWithIssues")
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & _
     " : offsetDocPropRow " & offsetDocPropRow & _
@@ -2601,13 +2601,13 @@ Sub WriteToIni(key As String, value As String)
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "WriteToIni"
-    
+
     If mIniFilePath = "" Then Exit Sub
 
     Call WritePrivateProfileString("Analysis", key, value, mIniFilePath)
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : key " & key & " : value " & value & ": " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -2617,16 +2617,16 @@ Sub WriteToLog(key As String, value As String)
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "WriteToLog"
-    
+
     If mLogFilePath = "" Then Exit Sub
-    
+
     Dim sSection As String
     sSection = getAppSpecificApplicationName
-        
+
     Call WritePrivateProfileString(sSection, key, value, mLogFilePath)
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : key " & key & " : value " & value & ": " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -2634,12 +2634,12 @@ End Sub
 Sub WriteDebug(value As String)
     On Error Resume Next 'Ignore errors in our error writing routines - could get circular dependency otherwise
     Static ErrCount As Long
-    
+
     If mLogFilePath = "" Then Exit Sub
-    
+
     Dim sSection As String
     sSection = getAppSpecificApplicationName & "Debug"
-       
+
     If mDebugLevel > 0 Then
         Call WritePrivateProfileString(sSection, "Doc" & mDocIndex & "_debug" & ErrCount, value, mLogFilePath)
         ErrCount = ErrCount + 1
@@ -2650,12 +2650,12 @@ End Sub
 Sub WriteDebugLevelTwo(value As String)
     On Error Resume Next 'Ignore errors in our error writing routines - could get circular dependency otherwise
     Static ErrCountTwo As Long
-    
+
     If mLogFilePath = "" Then Exit Sub
-    
+
     Dim sSection As String
     sSection = getAppSpecificApplicationName & "Debug"
-       
+
     If mDebugLevel > 1 Then
         Call WritePrivateProfileString(sSection, "Doc" & mDocIndex & "_debug" & ErrCountTwo, "Level2: " & value, mLogFilePath)
         ErrCountTwo = ErrCountTwo + 1
@@ -2676,15 +2676,15 @@ Public Function ProfileLoadDict(dict As Scripting.Dictionary, _
     Dim KeyData As String
     Dim lpKeyName As String
     Dim ret As String
-    
+
     ret = Space$(2048)
     nSize = Len(ret)
     success = GetPrivateProfileString( _
      lpSectionName, vbNullString, "", ret, nSize, inifile)
-    
+
     If success Then
          ret = Left$(ret, success)
-       
+
           Do Until ret = ""
              lpKeyName = StripNulls(ret)
              KeyData = ProfileGetItem( _
@@ -2695,7 +2695,7 @@ Public Function ProfileLoadDict(dict As Scripting.Dictionary, _
     ProfileLoadDict = dict.count
 FinalExit:
     Exit Function
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & _
     " : dict.Count " & dict.count & _
@@ -2710,20 +2710,20 @@ Private Function StripNulls(startStrg As String) As String
     currentFunctionName = "StripNulls"
     Dim pos As Long
     Dim item As String
-    
+
     pos = InStr(1, startStrg, Chr$(0))
-    
+
     If pos Then
-    
+
        item = Mid$(startStrg, 1, pos - 1)
        startStrg = Mid$(startStrg, pos + 1, Len(startStrg))
        StripNulls = item
-     
+
     End If
 
 FinalExit:
     Exit Function
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : startStrg " & startStrg & " : " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -2736,7 +2736,7 @@ Public Function ProfileGetItem(lpSectionName As String, _
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "ProfileGetItem"
-    
+
     Dim success As Long
     Dim nSize As Long
     Dim ret As String
@@ -2753,10 +2753,10 @@ Public Function ProfileGetItem(lpSectionName As String, _
     Else
        ProfileGetItem = defaultValue
     End If
-    
+
 FinalExit:
     Exit Function
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & _
     " : lpSectionName " & lpSectionName & _
@@ -2771,9 +2771,9 @@ Public Function GetDefaultPassword() As String
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "GetDefaultPassword"
-    
+
     Static myPassword As String
-    
+
     If myPassword = "" Then
         myPassword = ProfileGetItem("Analysis", CDEFAULT_PASSWORD, "", mIniFilePath)
     End If
@@ -2781,7 +2781,7 @@ Public Function GetDefaultPassword() As String
     GetDefaultPassword = myPassword
 FinalExit:
     Exit Function
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -2791,7 +2791,7 @@ Public Function GetVersion() As String
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "GetVersion"
-    
+
     Static myVersion As String
 
     If myVersion = "" Then
@@ -2801,7 +2801,7 @@ Public Function GetVersion() As String
     GetVersion = myVersion
 FinalExit:
     Exit Function
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -2810,7 +2810,7 @@ Public Function GetTitle() As String
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "GetTitle"
-    
+
     Static myTitle As String
 
     If myTitle = "" Then
@@ -2820,7 +2820,7 @@ Public Function GetTitle() As String
     GetTitle = myTitle
 FinalExit:
     Exit Function
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -2851,7 +2851,7 @@ Function CheckForAbort() As Boolean
     On Error GoTo HandleErrors
 
     bAbort = CBool(ProfileGetItem("Analysis", C_ABORT_ANALYSIS, "false", mIniFilePath))
-    
+
     'reset the flag
     If (bAbort) Then Call WriteToIni(C_ABORT_ANALYSIS, "false")
 
@@ -2868,7 +2868,7 @@ Function CheckDoPrepare() As Boolean
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "CheckDoPrepare"
-    
+
     Static bDoPrepare As Boolean
     Static myDoPrepare As String
 
@@ -2881,7 +2881,7 @@ Function CheckDoPrepare() As Boolean
     CheckDoPrepare = bDoPrepare
 FinalExit:
     Exit Function
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -2890,9 +2890,9 @@ End Function
 Function GetIssuesLimitInDays() As Long
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
-    
+
     currentFunctionName = "GetIssuesLimitInDays"
-    
+
     Static issuesLimit As Long
     Static myDoPrepare As String
 
@@ -2904,7 +2904,7 @@ Function GetIssuesLimitInDays() As Long
     GetIssuesLimitInDays = issuesLimit
 FinalExit:
     Exit Function
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -2915,7 +2915,7 @@ Public Sub AddIssueDetailsNote(myIssue As IssueInfo, noteNum As Long, noteStr As
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "AddIssueDetailsNote"
-    
+
     If IsMissing(preStr) Then
         preStr = RID_STR_COMMON_NOTE_PRE
     End If
@@ -2924,7 +2924,7 @@ Public Sub AddIssueDetailsNote(myIssue As IssueInfo, noteNum As Long, noteStr As
 
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : noteNum " & noteNum & " : noteStr " & noteStr & ": " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -2938,11 +2938,11 @@ Public Sub SetupWizardVariables( _
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "SetupWizardVariables"
-    
+
     If mIniFilePath = "" Then
         mIniFilePath = GetAppDataFolder & "\Sun\AnalysisWizard\" & CWIZARD & ".ini"
     End If
-    
+
     statFileName = ProfileGetItem("Analysis", CSTAT_FILE, "", mIniFilePath)
     fileList = ProfileGetItem("Analysis", CFILE_LIST, "", mIniFilePath)
     storeToDir = ProfileGetItem("Analysis", COUTPUT_DIR, "", mIniFilePath)
@@ -2957,7 +2957,7 @@ Public Sub SetupWizardVariables( _
     singleFile = ProfileGetItem("Analysis", CSINGLE_FILE, "", mIniFilePath)
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & _
         ": mIniFilePath " & mIniFilePath & ": " & _
@@ -2969,7 +2969,7 @@ Public Sub SetupSearchTypes(searchTypes As Collection)
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "SetupSearchTypes"
-    
+
     Dim bDocument As Boolean
     Dim bTemplate As Boolean
 
@@ -2979,7 +2979,7 @@ Public Sub SetupSearchTypes(searchTypes As Collection)
     If bTemplate = True Then searchTypes.Add "*" & getAppSpecificTemplateExt
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & ": searchTypes.Count " & searchTypes.count & ": " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -2989,13 +2989,13 @@ Sub WriteXMLHeader(out As TextStream)
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "WriteXMLHeader"
-    
+
     out.WriteLine "<?xml version=""1.0"" encoding=""ISO-8859-1""?>"
     out.WriteLine "<!DOCTYPE results SYSTEM 'analysis.dtd'>"
 
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & ": " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -3004,14 +3004,14 @@ Sub WriteXMLResultsStartTag(out As TextStream)
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "WriteXMLResultsStartTag"
-    
+
     out.WriteLine "<results generated-by=""" & IIf(InDocPreparation, "documentanalysis_preparation", "documentanalysis") & """"
     out.WriteLine " version=""" & GetVersion & """ timestamp=""" & Now & """"
     out.WriteLine " type=""" & getAppSpecificApplicationName & """ >"
 
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & ": " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -3020,12 +3020,12 @@ Sub WriteXMLResultsEndTag(out As TextStream)
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "WriteXMLResultsEndTag"
-    
+
     out.WriteLine "</results>"
 
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & ": " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -3035,7 +3035,7 @@ Sub WriteXMLDocProperties(out As TextStream, aAnalysis As DocumentAnalysis)
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "WriteXMLDocProperties"
-    
+
     out.WriteLine "<document location=""" & EncodeXML(aAnalysis.name) & """"
     out.WriteLine " application=""" & aAnalysis.Application & """"
     out.WriteLine " issues-count=""" & (aAnalysis.IssuesCount) & """"
@@ -3051,7 +3051,7 @@ Sub WriteXMLDocProperties(out As TextStream, aAnalysis As DocumentAnalysis)
 
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : path " & aAnalysis.name & ": " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -3061,12 +3061,12 @@ Sub WriteXMLDocPropertiesEndTag(out As TextStream)
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "WriteXMLDocPropertiesEndTag"
-    
+
     out.WriteLine "</document>"
 
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & ": " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -3077,7 +3077,7 @@ Sub WriteXMLDocRefDetails(out As TextStream, aAnalysis As DocumentAnalysis)
     Dim currentFunctionName As String
     currentFunctionName = "WriteXMLDocRefDetails"
     Dim myIssue As IssueInfo
-    
+
     'Output References for Docs with Macros
     If aAnalysis.HasMacros And (aAnalysis.References.count > 0) Then
         out.WriteLine "<references>"
@@ -3086,10 +3086,10 @@ Sub WriteXMLDocRefDetails(out As TextStream, aAnalysis As DocumentAnalysis)
         Next myIssue
         out.WriteLine "</references>"
     End If
-    
+
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : path " & aAnalysis.name & ": " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -3100,15 +3100,15 @@ Sub OutputXMLReferenceAttributes(out As TextStream, aAnalysis As DocumentAnalysi
     Dim currentFunctionName As String
     currentFunctionName = "OutputXMLReferenceAttributes"
     Dim strAttributes As String
-    
+
     With myIssue
         out.WriteLine "<reference"
-        
+
         strAttributes = .Values("Major") & "." & .Values("Minor")
         strAttributes = IIf(strAttributes = "0.0" Or strAttributes = ".", .Values("Name"), _
             .Values("Name") & " " & .Values("Major") & "." & .Values("Minor"))
         out.WriteLine " name=""" & EncodeXML(strAttributes) & """"
-        
+
         If .Values("Type") = "Project" Then
             strAttributes = "Project reference"
         Else
@@ -3123,13 +3123,13 @@ Sub OutputXMLReferenceAttributes(out As TextStream, aAnalysis As DocumentAnalysi
         out.WriteLine " GUID=""" & strAttributes & """"
         out.WriteLine " is-broken=""" & .Values("IsBroken") & """"
         out.WriteLine " builtin=""" & .Values("BuiltIn") & """"
-        
+
         out.WriteLine " />"
     End With
 
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : path " & aAnalysis.name & " : myIssue " & myIssue.IssueTypeXML & "_" & myIssue.SubTypeXML & ": " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -3139,11 +3139,11 @@ Sub WriteXMLDocIssueDetails(out As TextStream, aAnalysis As DocumentAnalysis)
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "WriteXMLDocIssueDetails"
-    
+
     Dim myIssue As IssueInfo
-        
+
     If aAnalysis.Issues.count = 0 Then Exit Sub
-    
+
     out.WriteLine "<issues>"
     For Each myIssue In aAnalysis.Issues
         OutputXMLCommonIssueDetails out, aAnalysis, myIssue
@@ -3151,10 +3151,10 @@ Sub WriteXMLDocIssueDetails(out As TextStream, aAnalysis As DocumentAnalysis)
         out.WriteLine "</issue>"
     Next myIssue
     out.WriteLine "</issues>"
-        
+
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : path " & aAnalysis.name & ": " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -3164,16 +3164,16 @@ Sub OutputXMLCommonIssueDetails(out As TextStream, aAnalysis As DocumentAnalysis
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "OutputXMLCommonIssueDetails"
-    
+
     out.WriteLine "<issue category=""" & myIssue.IssueTypeXML & """"
     out.WriteLine " type=""" & myIssue.SubTypeXML & """"
-    
+
     'NOTE: Dropping severity - now stored in results.xlt, do not want to open it to fetch this data
     'out.WriteLine " severity=""" & IIf(CheckForMinorIssue(aAnalysis, myIssue), "Minor", "Major") & """"
     out.WriteLine " prepared=""" & IIf((myIssue.Preparable), "True", "False") & """ >"
-    
+
     out.WriteLine "<location type=""" & myIssue.locationXML & """ >"
-    
+
     If myIssue.SubLocation <> "" Then
         out.WriteLine "<property name=""sublocation"" value=""" & myIssue.SubLocation & """ />"
     End If
@@ -3184,10 +3184,10 @@ Sub OutputXMLCommonIssueDetails(out As TextStream, aAnalysis As DocumentAnalysis
         out.WriteLine "<property name=""column"" value=""" & myIssue.column & """ />"
     End If
     out.WriteLine "</location>"
-    
+
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : path " & aAnalysis.name & " : myIssue " & myIssue.IssueTypeXML & "_" & myIssue.SubTypeXML & ": " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -3197,13 +3197,13 @@ Sub OutputXMLCommonIssueAttributes(out As TextStream, myIssue As IssueInfo)
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "OutputXMLCommonIssueAttributes"
-    
+
     Dim index As Integer
     Dim valStr As String
     Dim attStr As String
-    
+
     If myIssue.Attributes.count = 0 Then Exit Sub
-    
+
     out.WriteLine "<details>"
     For index = 1 To myIssue.Attributes.count
         attStr = myIssue.Attributes(index)
@@ -3215,12 +3215,12 @@ Sub OutputXMLCommonIssueAttributes(out As TextStream, myIssue As IssueInfo)
             out.WriteLine "<property name=""" & EncodeXML(myIssue.Attributes(index)) & """ value=""" & EncodeXML(myIssue.Values(index)) & """ />"
         End If
     Next index
-        
+
     out.WriteLine "</details>"
-    
+
 FinalExit:
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : myIssue " & myIssue.IssueTypeXML & "_" & myIssue.SubTypeXML & ": " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -3230,26 +3230,26 @@ End Sub
 Sub WriteXMLOutput(storeToDir As String, resultsFile As String, _
     bOverwriteResultsFile As Boolean, bNewResultsFile As Boolean, AnalysedDocs As Collection, _
     fso As Scripting.FileSystemObject)
-    
+
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "WriteXMLOutput"
-    
+
     Dim xmlOutput As TextStream
     Dim xmlOrigOutput As TextStream
     Dim origOutput As String
     Dim analysis As DocumentAnalysis
     Dim outFilePath As String
-    
+
     outFilePath = storeToDir & "\" & fso.GetBaseName(resultsFile) & "_" & _
         getAppSpecificApplicationName & ".xml"
 
     Set xmlOutput = fso.CreateTextFile(outFilePath, True)
     WriteXMLHeader xmlOutput
-        
+
     'Set xmlOrigOutput = fso.OpenTextFile(outFilePath, ForReading)
     'Set xmlOutput = fso.OpenTextFile(outFilePath, ForWriting)
-    
+
     WriteXMLResultsStartTag xmlOutput
     For Each analysis In AnalysedDocs
         WriteXMLDocProperties xmlOutput, analysis
@@ -3258,12 +3258,12 @@ Sub WriteXMLOutput(storeToDir As String, resultsFile As String, _
         WriteXMLDocPropertiesEndTag xmlOutput
     Next analysis
     WriteXMLResultsEndTag xmlOutput
-    
+
 FinalExit:
     xmlOutput.Close
     Set xmlOutput = Nothing
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : path " & outFilePath & ": " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -3276,30 +3276,30 @@ Private Function EncodeUrl(ByVal sUrl As String) As String
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "EncodeUrl"
-    
+
     Dim sUrlEsc As String
     Dim dwSize As Long
     Dim dwFlags As Long
-    
+
     If Len(sUrl) > 0 Then
-       
+
        sUrlEsc = Space$(MAX_PATH)
        dwSize = Len(sUrlEsc)
        dwFlags = URL_DONT_SIMPLIFY
-       
+
        If UrlEscape(sUrl, _
                     sUrlEsc, _
                     dwSize, _
                     dwFlags) = ERROR_SUCCESS Then
-                    
+
           EncodeUrl = Left$(sUrlEsc, dwSize)
-       
+
        End If  'If UrlEscape
     End If 'If Len(sUrl) > 0
 
 FinalExit:
     Exit Function
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : sUrl " & sUrl & ": " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -3309,7 +3309,7 @@ Private Function EncodeXML(Str As String) As String
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "EncodeXML"
-    
+
     Str = Replace(Str, "^", "&#x5E;")
     Str = Replace(Str, "&", "&amp;")
     Str = Replace(Str, "`", "&apos;")
@@ -3321,17 +3321,17 @@ Private Function EncodeXML(Str As String) As String
     Str = Replace(Str, """", "&quot;")
     Str = Replace(Str, "<", "&lt;")
     Str = Replace(Str, ">", "&gt;")
-    
+
     'str = Replace(str, "\", "&#x5C;")
     'str = Replace(str, "#", "&#x23;")
     'str = Replace(str, "?", "&#x3F;")
     'str = Replace(str, "/", "&#x2F;")
 
     EncodeXML = Str
-    
+
 FinalExit:
     Exit Function
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : string " & Str & ": " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -3342,10 +3342,10 @@ Function ReplaceTopicTokens(sString As String, _
                             sToken As String, _
                             sReplacement As String) As String
     On Error Resume Next
-    
+
     Dim p As Integer
     Dim sTmp As String
-        
+
     sTmp = sString
     Do
         p = InStr(sTmp, sToken)
@@ -3353,10 +3353,10 @@ Function ReplaceTopicTokens(sString As String, _
             sTmp = Left(sTmp, p - 1) + sReplacement + Mid(sTmp, p + Len(sToken))
         End If
     Loop While p > 0
-    
-    
+
+
     ReplaceTopicTokens = sTmp
-  
+
 End Function
 
 Function ReplaceTopic2Tokens(sString As String, _
@@ -3365,7 +3365,7 @@ Function ReplaceTopic2Tokens(sString As String, _
                             sToken2 As String, _
                             sReplacement2 As String) As String
     On Error Resume Next
-    
+
     ReplaceTopic2Tokens = _
         ReplaceTopicTokens(ReplaceTopicTokens(sString, sToken1, sReplacement1), _
         sToken2, sReplacement2)
@@ -3376,7 +3376,7 @@ Function GetResourceDataFileName(thisDir As String) As String
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "GetResourceDataFileName"
-    
+
     Dim fso As FileSystemObject
     Set fso = New FileSystemObject
 
@@ -3389,9 +3389,9 @@ Function GetResourceDataFileName(thisDir As String) As String
     Dim isoLangStr As String
     Dim isoCountryStr As String
     Dim langDir As String
-            
+
     langDir = thisDir & "\" & "lang"
-    
+
     Dim userLCID As Long
     userLCID = GetUserDefaultLangID()
     Dim sysLCID As Long
@@ -3399,7 +3399,7 @@ Function GetResourceDataFileName(thisDir As String) As String
 
     isoLangStr = GetUserLocaleInfo(userLCID, LOCALE_SISO639LANGNAME)
     isoCountryStr = GetUserLocaleInfo(userLCID, LOCALE_SISO3166CTRYNAME)
-    
+
     'check for locale data in following order:
     '  user language
     '   isoLangStr & "_" & isoCountryStr & ".dat"
@@ -3408,7 +3408,7 @@ Function GetResourceDataFileName(thisDir As String) As String
     '   isoLangStr & "_" & isoCountryStr & ".dat"
     '   isoLangStr & ".dat"
     '   "en_US" & ".dat"
-    
+
     If fso.FileExists(fso.GetAbsolutePathName(langDir & "\" & isoLangStr & "-" & isoCountryStr & ".dat")) Then
         GetResourceDataFileName = fso.GetAbsolutePathName(langDir & "\" & isoLangStr & "-" & isoCountryStr & ".dat")
     ElseIf fso.FileExists(fso.GetAbsolutePathName(langDir & "\" & isoLangStr & ".dat")) Then
@@ -3416,7 +3416,7 @@ Function GetResourceDataFileName(thisDir As String) As String
     Else
         isoLangStr = GetUserLocaleInfo(sysLCID, LOCALE_SISO639LANGNAME)
         isoCountryStr = GetUserLocaleInfo(sysLCID, LOCALE_SISO3166CTRYNAME)
-    
+
         If fso.FileExists(fso.GetAbsolutePathName(langDir & "\" & isoLangStr & "-" & isoCountryStr & ".dat")) Then
             GetResourceDataFileName = fso.GetAbsolutePathName(langDir & "\" & isoLangStr & "-" & isoCountryStr & ".dat")
         ElseIf fso.FileExists(fso.GetAbsolutePathName(langDir & "\" & isoLangStr & ".dat")) Then
@@ -3428,7 +3428,7 @@ Function GetResourceDataFileName(thisDir As String) As String
 FinalExit:
     Set fso = Nothing
     Exit Function
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -3440,20 +3440,20 @@ Public Function GetUserLocaleInfo(ByVal dwLocaleID As Long, ByVal dwLCType As Lo
     currentFunctionName = "GetUserLocaleInfo"
     Dim sReturn As String
     Dim r As Long
-    
+
     'call the function passing the Locale type
     'variable to retrieve the required size of
     'the string buffer needed
     r = GetLocaleInfo(dwLocaleID, dwLCType, sReturn, Len(sReturn))
-    
+
     'if successful..
     If r Then
         'pad the buffer with spaces
         sReturn = Space$(r)
-          
+
         'and call again passing the buffer
         r = GetLocaleInfo(dwLocaleID, dwLCType, sReturn, Len(sReturn))
-     
+
         'if successful (r > 0)
         If r Then
             'r holds the size of the string
@@ -3461,10 +3461,10 @@ Public Function GetUserLocaleInfo(ByVal dwLocaleID As Long, ByVal dwLCType As Lo
             GetUserLocaleInfo = Left$(sReturn, r - 1)
         End If
     End If
-    
+
 FinalExit:
     Exit Function
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & ": " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -3508,9 +3508,9 @@ Sub WriteToStatFile(statFileName As String, statValue As Integer, _
                     currDocument As String, fso As Scripting.FileSystemObject)
 
     On Error Resume Next
-    
+
     Dim fileCont As TextStream
-    
+
     Set fileCont = fso.OpenTextFile(statFileName, ForWriting, True, TristateTrue)
     If (statValue = C_STAT_STARTING) Then
         fileCont.WriteLine ("analysing=" & currDocument)
@@ -3535,12 +3535,12 @@ Function FindIndex(myDocument As String, _
     Dim curIndex As Long
     Dim curEntry As String
     Dim entryFound As Boolean
-    
+
     entryFound = False
     lastEntry = myDocList.count
-        
+
     If (lastIndex > lastEntry) Then lastIndex = lastEntry
-    
+
     If (lastIndex > 1) Then
         curIndex = lastIndex
     Else
@@ -3567,7 +3567,7 @@ Function FindIndex(myDocument As String, _
             End If
         Wend
     End If
-    
+
     If entryFound Then
         FindIndex = curIndex
     Else
@@ -3602,7 +3602,7 @@ Function GetIndexValues(startIndex As Long, nextCheck As Long, _
         End If
 
         nextCheck = FindIndex(nextFile, myFiles, startIndex - 1)
-        
+
         If (nextCheck = 0) Then   ' Next file not in file list, restarting
             startIndex = 1
             nextCheck = C_MAX_CHECK
