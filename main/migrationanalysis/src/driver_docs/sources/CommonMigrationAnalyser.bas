@@ -8,9 +8,9 @@ Attribute VB_Name = "CommonMigrationAnalyser"
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -90,7 +90,7 @@ Sub EmptyCollection(docAnalysis As DocumentAnalysis, coll As Collection)
         coll.Remove 1    ' Default collection numeric indexes
     Next    ' begin at 1.
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : " & docAnalysis.name & ": " & Err.Number & " " & Err.Description & " " & Err.Source
 End Sub
@@ -109,7 +109,7 @@ Public Function Analyze_Macros(docAnalysis As DocumentAnalysis, _
     Dim myIssue As IssueInfo
     Dim wrd As Object
     Dim bUserFormWithEmptyCodeModule As Boolean
-     
+
     On Error Resume Next
     Set myProject = getAppSpecificVBProject(currDoc)
     If Err.Number <> 0 Then
@@ -117,10 +117,10 @@ Public Function Analyze_Macros(docAnalysis As DocumentAnalysis, _
         WriteDebug currentFunctionName & " : " & docAnalysis.name & ": " & _
             RID_STR_COMMON_ATTRIBUTE_UNABLE_TO_ACCESS_VBPROJECT & ":" & _
             RID_STR_COMMON_ATTRIBUTE_FURTHER_MACRO_ANALYSIS_NOT_POSSIBLE
-        
+
         GoTo FinalExit
     End If
-    
+
     On Error GoTo HandleErrors
     If myProject.Protection = vbext_pp_locked Then
         Set myIssue = New IssueInfo
@@ -129,11 +129,11 @@ Public Function Analyze_Macros(docAnalysis As DocumentAnalysis, _
             .IssueType = RID_STR_COMMON_ISSUE_VBA_MACROS
             .SubType = RID_STR_COMMON_SUBISSUE_MACRO_PASSWORD_PROTECTION
             .Location = .CLocationDocument
-            
+
             .IssueTypeXML = CSTR_ISSUE_VBA_MACROS
             .SubTypeXML = CSTR_SUBISSUE_MACRO_PASSWORD_PROTECTION
             .locationXML = .CXMLLocationDocument
-            
+
             .Attributes.Add RID_STR_COMMON_ATTRIBUTE_VBPROJECT_PASSWORD
             .Values.Add RID_STR_COMMON_ATTRIBUTE_FURTHER_MACRO_ANALYSIS_NOT_POSSIBLE
         End With
@@ -141,14 +141,14 @@ Public Function Analyze_Macros(docAnalysis As DocumentAnalysis, _
             docAnalysis.IssuesCountArray(CID_VBA_MACROS) + 1
         docAnalysis.Issues.Add myIssue
         docAnalysis.MacroIssuesCount = docAnalysis.MacroIssuesCount + 1
-        
+
         docAnalysis.HasMacros = True
         GoTo FinalExit
     End If
 
     Dim myContolDict As Scripting.Dictionary
     For Each myComponent In myProject.VBComponents
-    
+
         bUserFormWithEmptyCodeModule = False
         If CheckEmptyProject(docAnalysis, myProject, myComponent) Then
             If myComponent.Type <> vbext_ct_MSForm Then
@@ -157,20 +157,20 @@ Public Function Analyze_Macros(docAnalysis As DocumentAnalysis, _
                 bUserFormWithEmptyCodeModule = True
             End If
         End If
-        
+
         Analyze_MacrosForPortabilityIssues docAnalysis, myProject, myComponent
-        
+
         Set myIssue = New IssueInfo
         With myIssue
             .IssueID = CID_VBA_MACROS
             .IssueType = RID_STR_COMMON_ISSUE_VBA_MACROS
             .SubType = RID_STR_COMMON_SUBISSUE_PROPERTIES
             .Location = .CLocationDocument
-            
+
             .IssueTypeXML = CSTR_ISSUE_VBA_MACROS
             .SubTypeXML = CSTR_SUBISSUE_PROPERTIES
             .locationXML = .CXMLLocationDocument
-            
+
             .SubLocation = VBComponentType(myComponent)
             .Attributes.Add RID_STR_COMMON_ATTRIBUTE_PROJECT
             .Values.Add myProject.name
@@ -181,7 +181,7 @@ Public Function Analyze_Macros(docAnalysis As DocumentAnalysis, _
             .Attributes.Add RID_STR_COMMON_ATTRIBUTE_NUMBER_OF_LINES
             numLines = VBNumLines(docAnalysis, myComponent.CodeModule)
             .Values.Add numLines, RID_STR_COMMON_ATTRIBUTE_NUMBER_OF_LINES
-            
+
             If bUserFormWithEmptyCodeModule Then
                 .Attributes.Add RID_STR_COMMON_ATTRIBUTE_SIGNATURE
                 .Values.Add RID_STR_COMMON_NA, RID_STR_COMMON_ATTRIBUTE_SIGNATURE
@@ -191,23 +191,23 @@ Public Function Analyze_Macros(docAnalysis As DocumentAnalysis, _
                     myComponent.CodeModule.Lines(1, myComponent.CodeModule.CountOfLines)), _
                     RID_STR_COMMON_ATTRIBUTE_SIGNATURE
             End If
-            
+
             docAnalysis.MacroTotalNumLines = numLines + docAnalysis.MacroTotalNumLines
         End With
-        
+
         ' User Forms - control details
         If (myComponent.Type = vbext_ct_MSForm) And Not bUserFormWithEmptyCodeModule Then
             myIssue.Attributes.Add RID_STR_COMMON_ATTRIBUTE_CONTROLS
             myIssue.Values.Add myComponent.Designer.Controls.count, RID_STR_COMMON_ATTRIBUTE_CONTROLS
             docAnalysis.MacroNumUserForms = 1 + docAnalysis.MacroNumUserForms
             docAnalysis.MacroNumUserFormControls = myComponent.Designer.Controls.count + docAnalysis.MacroNumUserFormControls
-            
+
             Dim myControl As Control
             Dim controlTypes As String
             Dim myType As String
-            
+
             Set myContolDict = New Scripting.Dictionary
-            
+
             For Each myControl In myComponent.Designer.Controls
                 myType = TypeName(myControl)
                 If myContolDict.Exists(myType) Then
@@ -221,34 +221,34 @@ Public Function Analyze_Macros(docAnalysis As DocumentAnalysis, _
                    userFormTypesDict.Add myType, 1
                 End If
             Next
-            
+
             If myComponent.Designer.Controls.count > 0 Then
                 Dim count As Long
                 Dim vKeyArray As Variant
                 Dim vItemArray As Variant
-                
+
                 vKeyArray = myContolDict.Keys
                 vItemArray = myContolDict.Items
-                
+
                 controlTypes = ""
                 For count = 0 To myContolDict.count - 1
                     controlTypes = controlTypes & vKeyArray(count) & " " & CInt(vItemArray(count)) & " "
                 Next count
                 myIssue.Attributes.Add RID_STR_COMMON_ATTRIBUTE_USERFORM_TYPE
                 myIssue.Values.Add controlTypes, RID_STR_COMMON_ATTRIBUTE_USERFORM_TYPE
-                
+
                 myIssue.Attributes.Add RID_STR_COMMON_ATTRIBUTE_USERFORM_TYPES_COUNT
                 myIssue.Values.Add myContolDict.count, RID_STR_COMMON_ATTRIBUTE_USERFORM_TYPES_COUNT
-            
+
                 docAnalysis.MacroNumUserFormControlTypes = myContolDict.count + docAnalysis.MacroNumUserFormControlTypes
             End If
             Set myContolDict = Nothing
         End If
-        
+
         'Check for occurrence of " Me " in Form and Class Modules
         If myComponent.Type = vbext_ct_MSForm Or _
             myComponent.Type = vbext_ct_ClassModule Then
-         
+
             Dim strFind As String
             strFind = ""
             count = 0
@@ -260,31 +260,31 @@ Public Function Analyze_Macros(docAnalysis As DocumentAnalysis, _
                 myIssue.Values.Add count, RID_STR_COMMON_ATTRIBUTE_CLASS_ME_COUNT
             End If
         End If
-        
+
         docAnalysis.IssuesCountArray(CID_VBA_MACROS) = _
             docAnalysis.IssuesCountArray(CID_VBA_MACROS) + 1
         docAnalysis.Issues.Add myIssue
         docAnalysis.MacroIssuesCount = docAnalysis.MacroIssuesCount + 1
-        
+
         Set myIssue = Nothing
-        
+
 FOREACH_CONTINUE:
         'No equiv to C continue in VB
     Next myComponent 'End - For Each myComponent
-    
+
     If docAnalysis.IssuesCountArray(CID_VBA_MACROS) > 0 Then
         Analyze_VBEReferences docAnalysis, currDoc
         docAnalysis.HasMacros = True
     End If
-    
+
 FinalExit:
     docAnalysis.MacroOverallClass = ClassifyDocOverallMacroClass(docAnalysis)
-    
+
     Set myProject = Nothing
     Set myIssue = Nothing
     Set myContolDict = Nothing
     Exit Function
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : " & docAnalysis.name & ": " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -304,13 +304,13 @@ Function CheckOnlyEmptyProject(docAnalysis As DocumentAnalysis, currDoc As Objec
             GoTo FinalExit
         End If
     Next myVBComponent
-    
+
     CheckOnlyEmptyProject = True
 
 FinalExit:
     Set myProject = Nothing
     Exit Function
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : " & docAnalysis.name & ": " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -325,23 +325,23 @@ Sub Analyze_VBEReferences(docAnalysis As DocumentAnalysis, currDoc As Object)
     Dim fso As Scripting.FileSystemObject
     Dim myVBProject As VBProject
     Dim myVBComponent As VBComponent
-    
+
     Set fso = New Scripting.FileSystemObject
-    
+
     If CheckOnlyEmptyProject(docAnalysis, currDoc) Then
         Exit Sub
     End If
     Set myVBProject = getAppSpecificVBProject(currDoc)
-    
+
     For Each Ref In myVBProject.References
         Analyze_VBEReferenceSingle docAnalysis, Ref, fso
     Next Ref
-    
+
 FinalExit:
     Set myVBProject = Nothing
     Set fso = Nothing
     Exit Sub
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : " & docAnalysis.name & ": " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -354,18 +354,18 @@ Sub Analyze_VBEReferenceSingle(docAnalysis As DocumentAnalysis, Ref As Reference
     'References
     Dim myIssue As IssueInfo
     Dim bBadRef As Boolean
-    
+
     Set myIssue = New IssueInfo
     With myIssue
         .IssueID = CID_INFORMATION_REFS
         .IssueType = RID_STR_COMMON_ISSUE_INFORMATION
         .SubType = RID_STR_COMMON_SUBISSUE_REFERENCES
         .Location = .CLocationDocument
-            
+
         .IssueTypeXML = CSTR_ISSUE_INFORMATION
         .SubTypeXML = CSTR_SUBISSUE_REFERENCES
         .locationXML = .CXMLLocationDocument
-            
+
         If Ref.GUID = "" Then
             bBadRef = True
         Else
@@ -393,10 +393,10 @@ Sub Analyze_VBEReferenceSingle(docAnalysis As DocumentAnalysis, Ref As Reference
         .Values.Add IIf(Not bBadRef, Ref.Major, ""), RID_STR_COMMON_ATTRIBUTE_MAJOR
         .Attributes.Add RID_STR_COMMON_ATTRIBUTE_MINOR
         .Values.Add IIf(Not bBadRef, Ref.Minor, ""), RID_STR_COMMON_ATTRIBUTE_MINOR
-        
+
         .Attributes.Add RID_STR_COMMON_ATTRIBUTE_TYPE
         .Values.Add IIf(Ref.Type = vbext_rk_Project, RID_STR_COMMON_ATTRIBUTE_PROJECT, RID_STR_COMMON_ATTRIBUTE_TYPELIB), RID_STR_COMMON_ATTRIBUTE_TYPE
-    
+
         .Attributes.Add RID_STR_COMMON_ATTRIBUTE_BUILTIN
         .Values.Add IIf(Ref.BuiltIn, RID_STR_COMMON_ATTRIBUTE_BUILTIN, RID_STR_COMMON_ATTRIBUTE_CUSTOM), RID_STR_COMMON_ATTRIBUTE_BUILTIN
         .Attributes.Add RID_STR_COMMON_ATTRIBUTE_ISBROKEN
@@ -404,13 +404,13 @@ Sub Analyze_VBEReferenceSingle(docAnalysis As DocumentAnalysis, Ref As Reference
         .Attributes.Add RID_STR_COMMON_ATTRIBUTE_GUID
         .Values.Add IIf(Ref.Type = vbext_rk_TypeLib, Ref.GUID, ""), RID_STR_COMMON_ATTRIBUTE_GUID
     End With
-    
+
     docAnalysis.References.Add myIssue
-     
+
 FinalExit:
     Set myIssue = Nothing
     Exit Sub
-    
+
 HandleErrors:
     WriteDebugLevelTwo currentFunctionName & " : " & docAnalysis.name & ": " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -422,7 +422,7 @@ Sub Analyze_MacrosForPortabilityIssues(docAnalysis As DocumentAnalysis, myProjec
     currentFunctionName = "Analyze_MacrosForPortabilityIssues"
     Dim myIssue As IssueInfo
     Dim count As Long
-    
+
     ' Code Modules
     Dim strFind As String
     strFind = VBFindLines(docAnalysis, myComponent.CodeModule, "CreateObject", count, bWholeWord:=True) & _
@@ -435,7 +435,7 @@ Sub Analyze_MacrosForPortabilityIssues(docAnalysis As DocumentAnalysis, myProjec
         VBFindLines(docAnalysis, myComponent.CodeModule, "Declare Function ", count, False) & _
         VBFindLines(docAnalysis, myComponent.CodeModule, "Declare Sub ", count, False)
 
-    
+
     If (strFind <> "") And (myComponent.Type <> vbext_ct_Document) Then
         Set myIssue = New IssueInfo
         With myIssue
@@ -465,12 +465,12 @@ Sub Analyze_MacrosForPortabilityIssues(docAnalysis As DocumentAnalysis, myProjec
         docAnalysis.MacroNumExternalRefs = count + docAnalysis.MacroNumExternalRefs
         docAnalysis.MacroIssuesCount = docAnalysis.MacroIssuesCount + 1
     End If
-    
+
 FinalExit:
     Set myIssue = Nothing
     Exit Sub
-    
-    
+
+
 HandleErrors:
     WriteDebug currentFunctionName & " : " & docAnalysis.name & ": " & Err.Number & " " & Err.Description & " " & Err.Source
 Resume FinalExit
@@ -503,16 +503,16 @@ Function VBFindLines(docAnalysis As DocumentAnalysis, vbcm As CodeModule, strFin
     Dim lngType As Long
     Dim strProc As String
     Dim retStr As String
-        
+
     ' Search
     Do While vbcm.Find(strFind, lngStartLine, _
         lngStartCol, lngEndLine, lngEndCol, bWholeWord, bMatchCase)
-        
+
         'Ignore any lines using this func
         If InStr(1, vbcm.Lines(lngStartLine, 1), "VBFindLines") <> 0 Then
             GoTo CONTINUE_LOOP
         End If
-        
+
         If bInProcedure Then
             If bUsingNew Then
                 If InStr(1, vbcm.Lines(lngStartLine, 1), "New") <> 0 Then
@@ -524,13 +524,13 @@ Function VBFindLines(docAnalysis As DocumentAnalysis, vbcm As CodeModule, strFin
                 strProc = vbcm.ProcOfLine(lngStartLine, lngType)
             End If
             If strProc = "" Then GoTo CONTINUE_LOOP
-            
+
             VBFindLines = VBFindLines & "[" & strProc & " ( ) - " & lngStartLine & " ]" & _
                 vbLf & vbcm.Lines(lngStartLine, 1) & vbLf
         Else
             strProc = vbcm.Lines(lngStartLine, 1)
             If strProc = "" Then GoTo CONTINUE_LOOP
-            
+
             'Can be External refs, Const, Type or variable declarations
             If InStr(1, vbcm.Lines(lngStartLine, 1), "Declare Function") <> 0 Then
             VBFindLines = VBFindLines & "[" & RID_STR_COMMON_DEC_TO_EXTERNAL_LIBRARY & " - " & lngStartLine & " ]" & _
@@ -541,20 +541,20 @@ Function VBFindLines(docAnalysis As DocumentAnalysis, vbcm As CodeModule, strFin
             End If
         End If
         count = count + 1
-        
+
 CONTINUE_LOOP:
         'Reset Params to search for next hit
         lngStartLine = lngEndLine + 1
         lngStartCol = 1
         lngEndLine = vbcm.CountOfLines
         lngEndCol = Len(vbcm.Lines(vbcm.CountOfLines, 1))
-        
+
         If lngStartLine >= lngEndLine Then Exit Function
-        
+
     Loop 'End - Do While vbcm.Find
     VBFindLines = VBFindLines
     Exit Function
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : " & docAnalysis.name & ": " & Err.Number & " " & Err.Description & " " & Err.Source
 End Function
@@ -565,10 +565,10 @@ Function VBNumLines(docAnalysis As DocumentAnalysis, vbcm As CodeModule) As Long
     Dim cLines As Long
     Dim lngType As Long
     Dim strProc As String
-    
+
     'Issue: Just give line count in module to be in sync with Macro Analysis and Migration Wizard
     VBNumLines = vbcm.CountOfLines
-    
+
     'For cLines = 1 To vbcm.CountOfLines
     '    strProc = vbcm.ProcOfLine(cLines, lngType)
     '    If strProc <> "" Then
@@ -578,7 +578,7 @@ Function VBNumLines(docAnalysis As DocumentAnalysis, vbcm As CodeModule) As Long
     '    End If
     'Next
     Exit Function
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : " & docAnalysis.name & ": " & Err.Number & " " & Err.Description & " " & Err.Source
 End Function
@@ -589,7 +589,7 @@ Function VBNumFuncs(docAnalysis As DocumentAnalysis, vbcm As CodeModule) As Long
     Dim cLines As Long
     Dim lngType As Long
     Dim strProc As String
-    
+
     For cLines = 1 To vbcm.CountOfLines
         strProc = vbcm.ProcOfLine(cLines, lngType)
         If strProc <> "" Then
@@ -624,14 +624,14 @@ Function CheckEmptyProject(docAnalysis As DocumentAnalysis, myProject As VBProje
     Dim currentFunctionName As String
     currentFunctionName = "CheckEmptyProject"
     Dim bEmptyProject As Boolean
-    
+
     'Bug: Can have empty project with different name from default, would be picked up
     ' as not empty.
     'bEmptyProject = _
     '        (StrComp(myProject.name, CTOPLEVEL_PROJECT) = 0) And _
     '        (VBNumFuncs(docAnalysis, myComponent.CodeModule) = 0) And _
     '        (VBNumLines(docAnalysis, myComponent.CodeModule) < 3)
-    
+
     ' Code Modules
     Dim strFind As String
     Dim count As Long
@@ -641,12 +641,12 @@ Function CheckEmptyProject(docAnalysis As DocumentAnalysis, myProject As VBProje
     'Public myVar As ...
     strFind = VBFindLines(docAnalysis, myComponent.CodeModule, "Public", _
         count, bInProcedure:=False, bWholeWord:=True, bMatchCase:=True)
-        
+
     bEmptyProject = _
             (VBNumFuncs(docAnalysis, myComponent.CodeModule) = 0) And _
             (VBNumLines(docAnalysis, myComponent.CodeModule) < 3) And _
             (strFind = "")
-            
+
     CheckEmptyProject = IIf(bEmptyProject, True, False)
     Exit Function
 
@@ -672,7 +672,7 @@ Function getCustomDocPropTypeAsString(propType As MsoDocProperties)
     Case Else
         Str = "Unknown"
     End Select
-    
+
     getCustomDocPropTypeAsString = Str
 End Function
 
@@ -738,13 +738,13 @@ Sub Analyze_OLEEmbeddedSingleShape(docAnalysis As DocumentAnalysis, aShape As Sh
     Dim TypeAsString As String
     Dim XMLTypeAsString As String
     Dim objName As String
-    
+
     bOleObject = (aShape.Type = msoEmbeddedOLEObject) Or _
                     (aShape.Type = msoLinkedOLEObject) Or _
                     (aShape.Type = msoOLEControlObject)
-                    
+
     If Not bOleObject Then Exit Sub
-            
+
     aShape.Select
     Select Case aShape.Type
         Case msoEmbeddedOLEObject
@@ -760,10 +760,10 @@ Sub Analyze_OLEEmbeddedSingleShape(docAnalysis As DocumentAnalysis, aShape As Sh
             TypeAsString = RID_STR_COMMON_OLE_UNKNOWN
             XMLTypeAsString = CSTR_SUBISSUE_OLE_UNKNOWN
     End Select
-    
+
     Dim appStr As String
     appStr = getAppSpecificApplicationName
-        
+
     Set myIssue = New IssueInfo
     With myIssue
         .IssueID = CID_PORTABILITY
@@ -771,11 +771,11 @@ Sub Analyze_OLEEmbeddedSingleShape(docAnalysis As DocumentAnalysis, aShape As Sh
         .SubType = TypeAsString
         .Location = .CLocationPage
         .SubLocation = mySubLocation
-        
+
         .IssueTypeXML = CSTR_ISSUE_PORTABILITY
         .SubTypeXML = XMLTypeAsString
         .locationXML = .CXMLLocationPage
-        
+
         .Line = aShape.top
         .column = aShape.Left
 
@@ -783,22 +783,22 @@ Sub Analyze_OLEEmbeddedSingleShape(docAnalysis As DocumentAnalysis, aShape As Sh
             .Attributes.Add RID_STR_COMMON_ATTRIBUTE_NAME
             .Values.Add aShape.name
         End If
-        
+
         If aShape.Type = msoEmbeddedOLEObject Or _
            aShape.Type = msoOLEControlObject Then
             Dim objType As String
             On Error Resume Next
-            
+
             objType = getAppSpecificOLEClassType(aShape)
-            
+
             If objType = "" Then GoTo FinalExit
             .Attributes.Add RID_STR_COMMON_ATTRIBUTE_OBJECT_TYPE
             .Values.Add objType
-                        
+
             If aShape.Type = msoOLEControlObject Then
                 docAnalysis.MacroNumOLEControls = 1 + docAnalysis.MacroNumOLEControls
             End If
-            
+
             If appStr = CAPPNAME_POWERPOINT Then
             '#114127: Too many open windows
             'Checking for OLEFormat.Object is Nothing or IsEmpty still causes problem
@@ -822,10 +822,10 @@ Sub Analyze_OLEEmbeddedSingleShape(docAnalysis As DocumentAnalysis, aShape As Sh
                     End If
                 End If
             End If
-            
+
             On Error GoTo HandleErrors
         End If
-        
+
         If aShape.Type = msoLinkedOLEObject Then
             If appStr <> CAPPNAME_WORD Then
                 On Error Resume Next
@@ -841,16 +841,16 @@ Sub Analyze_OLEEmbeddedSingleShape(docAnalysis As DocumentAnalysis, aShape As Sh
                 .Values.Add aShape.LinkFormat.SourceFullName
             End If
         End If
-        
+
         docAnalysis.IssuesCountArray(CID_PORTABILITY) = _
             docAnalysis.IssuesCountArray(CID_PORTABILITY) + 1
     End With
     docAnalysis.Issues.Add myIssue
-            
+
 FinalExit:
     Set myIssue = Nothing
     Exit Sub
-     
+
 HandleErrors:
     WriteDebugLevelTwo currentFunctionName & " : " & docAnalysis.name & ": " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -873,11 +873,11 @@ Sub Analyze_Lines(docAnalysis As DocumentAnalysis, myShape As Shape, mySubLocati
         .SubType = RID_RESXLS_COST_LineStyle
         .Location = .CLocationPage
         .SubLocation = mySubLocation
-        
+
         .IssueTypeXML = CSTR_ISSUE_CONTENT_DOCUMENT_PROPERTIES
         .SubTypeXML = CSTR_SUBISSUE_LINE
         .locationXML = .CXMLLocationPage
-        
+
         .Line = myShape.top
         .column = myShape.Left
 
@@ -891,9 +891,9 @@ Sub Analyze_Lines(docAnalysis As DocumentAnalysis, myShape As Shape, mySubLocati
         docAnalysis.IssuesCountArray(CID_CONTENT_AND_DOCUMENT_PROPERTIES) = _
                 docAnalysis.IssuesCountArray(CID_CONTENT_AND_DOCUMENT_PROPERTIES) + 1
     End With
-       
+
     docAnalysis.Issues.Add myIssue
-    
+
 FinalExit:
     Set myIssue = Nothing
     Exit Sub
@@ -919,24 +919,24 @@ Sub Analyze_Transparency(docAnalysis As DocumentAnalysis, myShape As Shape, mySu
             bHasTransparentBkg = True
         End If
     End If
-    
+
     On Error GoTo HandleErrors
     If Not bHasTransparentBkg Then Exit Sub
 
     Dim myIssue As IssueInfo
     Set myIssue = New IssueInfo
-    
+
     With myIssue
         .IssueID = CID_CONTENT_AND_DOCUMENT_PROPERTIES
         .IssueType = RID_STR_COMMON_ISSUE_CONTENT_AND_DOCUMENT_PROPERTIES
         .SubType = RID_RESXLS_COST_Transparent
         .Location = .CLocationSlide
         .SubLocation = mySubLocation
-        
+
         .IssueTypeXML = CSTR_ISSUE_CONTENT_DOCUMENT_PROPERTIES
         .SubTypeXML = CSTR_SUBISSUE_TRANSPARENCY
         .locationXML = .CXMLLocationPage
-        
+
         .Line = myShape.top
         .column = myShape.Left
 
@@ -950,9 +950,9 @@ Sub Analyze_Transparency(docAnalysis As DocumentAnalysis, myShape As Shape, mySu
         docAnalysis.IssuesCountArray(CID_CONTENT_AND_DOCUMENT_PROPERTIES) = _
                 docAnalysis.IssuesCountArray(CID_CONTENT_AND_DOCUMENT_PROPERTIES) + 1
     End With
-       
+
     docAnalysis.Issues.Add myIssue
-    
+
 FinalExit:
     Set myIssue = Nothing
     Exit Sub
@@ -968,7 +968,7 @@ Sub Analyze_Gradients(docAnalysis As DocumentAnalysis, myShape As Shape, mySubLo
     currentFunctionName = "Analyze_Gradients"
 
     If myShape.Fill.Type <> msoFillGradient Then Exit Sub
-    
+
     Dim bUsesPresetGradient, bUsesFromCorner, bUsesFromCenter
     bUsesPresetGradient = False
     bUsesFromCorner = False
@@ -990,25 +990,25 @@ Sub Analyze_Gradients(docAnalysis As DocumentAnalysis, myShape As Shape, mySubLo
             bUsesFromCenter = True
         End If
     End If
-    
+
     On Error GoTo HandleErrors
     If Not bUsesPresetGradient And Not bUsesFromCorner _
        And Not bUsesFromCenter Then Exit Sub
 
     Dim myIssue As IssueInfo
     Set myIssue = New IssueInfo
-    
+
     With myIssue
         .IssueID = CID_CONTENT_AND_DOCUMENT_PROPERTIES
         .IssueType = RID_STR_COMMON_ISSUE_CONTENT_AND_DOCUMENT_PROPERTIES
         .SubType = RID_RESXLS_COST_GradientStyle
         .Location = .CLocationSlide
         .SubLocation = mySubLocation
-        
+
         .IssueTypeXML = CSTR_ISSUE_CONTENT_DOCUMENT_PROPERTIES
         .SubTypeXML = CSTR_SUBISSUE_GRADIENT
         .locationXML = .CXMLLocationSlide
-        
+
         .Line = myShape.top
         .column = myShape.Left
 
@@ -1028,9 +1028,9 @@ Sub Analyze_Gradients(docAnalysis As DocumentAnalysis, myShape As Shape, mySubLo
         docAnalysis.IssuesCountArray(CID_CONTENT_AND_DOCUMENT_PROPERTIES) = _
                 docAnalysis.IssuesCountArray(CID_CONTENT_AND_DOCUMENT_PROPERTIES) + 1
     End With
-       
+
     docAnalysis.Issues.Add myIssue
-    
+
 FinalExit:
     Set myIssue = Nothing
     Exit Sub
@@ -1064,28 +1064,28 @@ Function GetPreparedFullPath(sourceDocPath As String, startDir As String, storeT
     GetPreparedFullPath = ""
 
     Dim preparedPath As String
-        
+
     preparedPath = Right(sourceDocPath, Len(sourceDocPath) - Len(startDir))
     If Left(preparedPath, 1) = "\" Then
         preparedPath = Right(preparedPath, Len(preparedPath) - 1)
     End If
-    
+
     'Allow for root folder C:\
     If Right(storeToDir, 1) <> "\" Then
         preparedPath = storeToDir & "\" & CSTR_COMMON_PREPARATION_FOLDER & "\" & preparedPath
     Else
         preparedPath = storeToDir & CSTR_COMMON_PREPARATION_FOLDER & "\" & preparedPath
     End If
-    
+
     'Debug: MsgBox "Preppath: " & preparedPath
     CreateFullPath fso.GetParentFolderName(preparedPath), fso
 
     'Only set if folder to save to exists or has been created, otherwise return ""
     GetPreparedFullPath = preparedPath
-    
+
 FinalExit:
     Exit Function
-     
+
 HandleErrors:
     WriteDebugLevelTwo currentFunctionName & " : " & sourceDocPath & ": " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -1093,9 +1093,9 @@ End Function
 
 Function ClassifyDocOverallMacroClass(docAnalysis As DocumentAnalysis) As EnumDocOverallMacroClass
     ClassifyDocOverallMacroClass = enMacroNone
-    
+
     If Not docAnalysis.HasMacros Then Exit Function
-    
+
     If (docAnalysis.MacroTotalNumLines >= CMACRO_LINECOUNT_MEDIUM_LBOUND) Then
         If (docAnalysis.MacroNumExternalRefs > 0) Or _
             (docAnalysis.MacroNumOLEControls > 0 Or docAnalysis.MacroNumFieldsUsingMacros > 0) Or _
@@ -1107,6 +1107,5 @@ Function ClassifyDocOverallMacroClass(docAnalysis As DocumentAnalysis) As EnumDo
     Else
         ClassifyDocOverallMacroClass = enMacroSimple
     End If
-    
-End Function
 
+End Function
