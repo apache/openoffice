@@ -8,9 +8,9 @@ Attribute VB_Name = "common_res"
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -275,4 +275,3 @@ Public Sub LoadCommonStrings(sdm As StringDataManager)
     sdm.InitString RID_STR_COMMON_SUBISSUE_GRADIENT_CORNER_NOTE, "RID_STR_COMMON_SUBISSUE_GRADIENT_CORNER_NOTE"
     sdm.InitString RID_STR_COMMON_SUBISSUE_GRADIENT_CENTER_NOTE, "RID_STR_COMMON_SUBISSUE_GRADIENT_CENTER_NOTE"
 End Sub
-

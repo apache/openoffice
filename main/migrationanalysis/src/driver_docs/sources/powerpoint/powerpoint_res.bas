@@ -8,9 +8,9 @@ Attribute VB_Name = "powerpoint_res"
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -89,7 +89,7 @@ Public Sub LoadPPStrings(sdm As StringDataManager)
     sdm.InitString RID_STR_PP_ENUMERATION_VIEW_SLIDE_SORTER, "RID_STR_PP_ENUMERATION_VIEW_SLIDE_SORTER"
     sdm.InitString RID_STR_PP_ENUMERATION_VIEW_TITLE_MASTER, "RID_STR_PP_ENUMERATION_VIEW_TITLE_MASTER"
     sdm.InitString RID_STR_PP_ENUMERATION_UNKNOWN, "RID_STR_PP_ENUMERATION_UNKNOWN"
-    
+
     'Driver strings
     sdm.InitString RID_STR_DVR_PP_TXT2, "RID_STR_DVR_PP_TXT2"
     sdm.InitString RID_STR_DVR_PP_TXT3, "RID_STR_DVR_PP_TXT3"

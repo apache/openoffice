@@ -1,5 +1,5 @@
 rem *************************************************************
-rem  
+rem
 rem  Licensed to the Apache Software Foundation (ASF) under one
 rem  or more contributor license agreements.  See the NOTICE file
 rem  distributed with this work for additional information
@@ -7,16 +7,16 @@ rem  regarding copyright ownership.  The ASF licenses this file
 rem  to you under the Apache License, Version 2.0 (the
 rem  "License"); you may not use this file except in compliance
 rem  with the License.  You may obtain a copy of the License at
-rem  
+rem
 rem    http://www.apache.org/licenses/LICENSE-2.0
-rem  
+rem
 rem  Unless required by applicable law or agreed to in writing,
 rem  software distributed under the License is distributed on an
 rem  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 rem  KIND, either express or implied.  See the License for the
 rem  specific language governing permissions and limitations
 rem  under the License.
-rem  
+rem
 rem *************************************************************
 REM  *****  BASIC  *****
 
@@ -25,22 +25,22 @@ OPTION EXPLICIT
 OPTION COMPATIBLE
 
 Sub Main
-COMPATIBILITYMODE(true) 
+COMPATIBILITYMODE(true)
 
 If runtest = -1 Then
   MsgBox "Test Failed!!!"
-Else 
+Else
   MsgBox "Test Succeeded"
 End If
 
 End Sub
 
 Function runtest() As Integer
-Dim inBool As Boolean, inBool2 As Boolean, outBool As Boolean 
+Dim inBool As Boolean, inBool2 As Boolean, outBool As Boolean
 Dim inByte As Integer, inByte2 As Integer
 Dim inShort As Integer, inShort2 As Integer
 Dim inLong As Long, inLong2 As Long, inLong3 As Long, inLong4 As Long
-Dim inString As String, inString2 As String 
+Dim inString As String, inString2 As String
 Dim inFloat As Single, inFloat2 As Single
 Dim inDouble As Double, inDouble2 As Double
 Dim inVariant, inVariant2
@@ -143,7 +143,7 @@ If inBool <> outBool Or inByte <> outByte Or inShort <> outShort Or inLong <> ou
    inVariant <> outVariant Or NOT equalUnoObjects(obj, outObject) Or NOT _
    equalArrays(arString(), outArray()) Or inDate <> outDate Or inCurrency <> outCurrency Or _
    inSCode.Value <> outSCode.Value Or Not equalUnoObjects(objFoo, outUnknown) Or _
-   inDecimal <> outDecimal Then 
+   inDecimal <> outDecimal Then
    runtest = -1
    exit Function
 End If
@@ -239,7 +239,7 @@ End If
 
 'properties -------------------------------------------------------------------------
 inBool = false
-outBool = true 
+outBool = true
 obj.prpBool = inBool
 outBool = obj.prpBool
 inByte = 11
@@ -307,7 +307,7 @@ If inBool <> outBool Or inByte <> outByte Or inShort <> outShort Or inLong <> ou
    inDecimal <> outDecimal Then
   runtest = -1
   Exit Function
-End If   
+End If
 
 ' ref parameter ------------------------------------------------------------------------
 obj.inLong(0)
@@ -323,7 +323,7 @@ obj.inrefVariant(inVariant)
 obj.outVariant(outVariant)
 If inLong <> outLong Or inVariant <> outVariant Then
   runtest = -1
-  Exit Function		
+  Exit Function
 End If
 
 outLong = 0
@@ -334,7 +334,7 @@ obj.prprefVariant = inVariant
 outVariant = obj.prprefVariant
 If inLong <> outLong Or  inVariant <> outVariant Then
   runtest = -1
-  Exit Function		
+  Exit Function
 End If
 
 
@@ -463,8 +463,8 @@ If inLong2 <> outLong Then
 End If
 
 'named arguments-------------------------------------------------------------------------
-'all args As named args, different order 
-obj.optional6(0, 0, 0, 0) 
+'all args As named args, different order
+obj.optional6(0, 0, 0, 0)
 inLong = 1
 inLong2 = 2
 inLong3 = 3
@@ -481,22 +481,22 @@ If inLong <> outLong Or inLong2 <> outLong2 _
 	Or inLong3 <> outLong3 Or inLong4 <> outLong4 Then
 	runtest = -1
 	Exit Function
-End If	
+End If
 
 'mixed positional and named args with omitted args
 Dim scode_paramNotFound As New com.sun.star.bridge.oleautomation.SCode
 scode_paramNotFound.Value = &h80020004
 
 obj.optional6(0, 0, 0, 0)
-'val1 and val3 will be DISP_E_PARAMNOTFOUND 
+'val1 and val3 will be DISP_E_PARAMNOTFOUND
 obj.optional6(, inLong2, val4:=inLong4)
-Dim outSCode1, outSCode2 
+Dim outSCode1, outSCode2
 obj.optional7(outSCode, outLong2, outSCode2, outLong4)
 If outSCode.Value <> scode_paramNotFound.Value Or inLong2 <> outLong2 _
 	Or outSCode2.Value <> scode_paramNotFound.Value Or inLong4 <> outLong4 Then
 	runtest = -1
 	Exit Function
-End If	
+End If
 
 'mixed positional and named args with omitted args as out -args
 inLong = 1
@@ -599,7 +599,7 @@ If Not IsNull(oExplorer) Then
 	oExplorer.visible = true
 	oExplorer.Navigate2("http://www.openoffice.org")
 Else
-	MsgBox("Could not perform test with Internet Explorer!")	
+	MsgBox("Could not perform test with Internet Explorer!")
 End If
 
 
@@ -622,8 +622,6 @@ FOr counter = 0 To len1 - 1
     equalArrays = false
     Exit Function
   End If
-Next 
+Next
 equalArrays = true
 End Function
-
-				
