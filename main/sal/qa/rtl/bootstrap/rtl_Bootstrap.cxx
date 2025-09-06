@@ -318,7 +318,7 @@ namespace rtl_Bootstrap
         ASSERT_TRUE(suGetname.getLength() != 0) << "get the value of a variable in ini file.";
     }
 
-    //use defaut value
+    //use default value
     TEST_F(getFrom, getFrom_003)
     {
         rtl::OUString suIniname = t_getSourcePath(TESTSHL2_INI);
