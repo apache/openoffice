@@ -1,5 +1,5 @@
 ###############################################################
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 ###############################################################
 UDK_3_0_0 {
 	global:
@@ -408,7 +408,7 @@ UDK_3.1 {
 
 UDK_3.2 {
     global:
-       _ZN4cppu20PropertySetMixinImpl10prepareSetERKN3rtl8OUStringERKN3com3sun4star3uno3AnyESB_PNS0_14BoundListenersE; 
+       _ZN4cppu20PropertySetMixinImpl10prepareSetERKN3rtl8OUStringERKN3com3sun4star3uno3AnyESB_PNS0_14BoundListenersE;
         _ZN4cppu20PropertySetMixinImpl14BoundListenersC1Ev;
         _ZN4cppu20PropertySetMixinImpl14BoundListenersC2Ev;
         _ZN4cppu20PropertySetMixinImpl14BoundListenersD1Ev;
@@ -468,4 +468,3 @@ UDK_3.7 { # OOo 3.4
     global:
         _ZN4cppu18OPropertySetHelper29setDependentFastPropertyValueE?RKN3com3sun4star3uno3AnyE;
 } UDK_3.6;
-
