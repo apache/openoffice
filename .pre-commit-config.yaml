@@ -51,12 +51,12 @@ repos:
       - id: check-merge-conflict
       - id: check-vcs-permalinks
       - id: end-of-file-fixer
-        files: (m|M)akefile$|\.(asp|bat|c|cl|cmd|common|component|cpp|cxx|dxp|el|h|hrc|hxx|idl|in|ini|java|js|lst|m|m4|md|mk|mm|mod|pas|php|pl|pm|pmk|py|rc|rdf|rng|sh|ulf|vbs|xba|xcs|xcu|xdl|xhp|xlb|xmi|xml|xsd|xslt?|ya?ml)$|^ext_libraries/.*$|^test/.*$
+        files: (m|M)akefile$|\.(asp|bat|c|cl|cmd|common|component|cpp|cxx|dxp|el|h|hrc|hxx|idl|in|ini|java|js|lst|m|m4|map|md|mk|mm|mod|pas|php|pl|pm|pmk|py|rc|rdf|rng|sh|ulf|vbs|xba|xcs|xcu|xdl|xhp|xlb|xmi|xml|xsd|xslt?|ya?ml)$|^ext_libraries/.*$|^test/.*$
       - id: fix-byte-order-marker
       - id: mixed-line-ending
-        files: \.(asp|c|cl|cmd|common|component|cpp|cxx|dxp|el|h|hrc|hxx|idl|in|ini|java|js|lst|m|m4|md|mk|mm|mod|pas|php|pl|pm|pmk|py|rc|rdf|rng|sh|ulf|xba|xcs|xcu|xdl|xhp|xlb|xmi|xsd|xslt?|ya?ml)$|^main/accessibility/.*$|^main/afms/.*$|^main/animations/.*$|^main/apache-commons/.*$|^test/testgui/.*$
+        files: \.(asp|c|cl|cmd|common|component|cpp|cxx|dxp|el|h|hrc|hxx|idl|in|ini|java|js|lst|m|m4|map|md|mk|mm|mod|pas|php|pl|pm|pmk|py|rc|rdf|rng|sh|ulf|xba|xcs|xcu|xdl|xhp|xlb|xmi|xsd|xslt?|ya?ml)$|^main/accessibility/.*$|^main/afms/.*$|^main/animations/.*$|^main/apache-commons/.*$|^test/testgui/.*$
       - id: trailing-whitespace
-        files: (m|M)akefile$|\.(asp|bat|c|cl|cmd|common|component|cpp|cxx|dxp|el|h|hrc|hxx|idl|in|ini|java|js|lst|m|m4|mk|mm|mod|pas|php|pl|pm|pmk|py|rc|rdf|rng|sh|ulf|vbs|xba|xcs|xcu|xdl|xhp|xlb|xmi|xml|xsd|ya?ml)$
+        files: (m|M)akefile$|\.(asp|bat|c|cl|cmd|common|component|cpp|cxx|dxp|el|h|hrc|hxx|idl|in|ini|java|js|lst|m|m4|map|mk|mm|mod|pas|php|pl|pm|pmk|py|rc|rdf|rng|sh|ulf|vbs|xba|xcs|xcu|xdl|xhp|xlb|xmi|xml|xsd|ya?ml)$
   - repo: https://github.com/codespell-project/codespell
     rev: v2.4.1
     hooks:
