@@ -28,7 +28,7 @@ package com.sun.star.tooling.converter;
 
 
 /**
- * This Exeption is thrown if a DataReader finds an error in a read Line
+ * This Exception is thrown if a DataReader finds an error in a read Line
  * f. e. wrong column number
  *
  * @author Christian Schmidt 2005

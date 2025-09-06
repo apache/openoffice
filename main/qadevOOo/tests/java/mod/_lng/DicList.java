@@ -68,7 +68,7 @@ public class DicList extends TestCase {
      * <code>com.sun.star.lingu2.DicList</code>. Then two dictionaries
      * are created (positive and negative) and added to the list, one
      * entry is added to each of dictionaries and they both are activated.
-     * The distionary list is retruned as a component for testing.
+     * The dictionary list is returned as a component for testing.
      */
     public synchronized TestEnvironment createTestEnvironment( TestParameters Param, PrintWriter log )
            throws StatusException {
