@@ -3680,7 +3680,7 @@ throw( beans::UnknownPropertyException, beans::PropertyVetoException, lang::Ille
 
                             if(bVal)
                             {
-                                // Header/footer gets switched on, create defauts and the needed SfxSetItem
+                                // Header/footer gets switched on, create defaults and the needed SfxSetItem
                                 SfxItemSet aTempSet(*aBaseImpl.GetItemSet().GetPool(),
                                     RES_FRMATR_BEGIN,RES_FRMATR_END - 1,            // [82
 

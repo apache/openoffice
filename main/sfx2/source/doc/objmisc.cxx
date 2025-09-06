@@ -1149,7 +1149,7 @@ void SfxObjectShell::SetProgress_Impl
 {
 	DBG_ASSERT( ( !pImp->pProgress && pProgress ) ||
 				( pImp->pProgress && !pProgress ),
-				"Progress activation/deacitivation mismatch" );
+				"Progress activation/deactivation mismatch" );
 	pImp->pProgress = pProgress;
 }
 

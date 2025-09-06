@@ -1487,7 +1487,7 @@ void DbGridControl::setDataSource(const Reference< XRowSet >& _xCursor, sal_uInt
 		{
 			m_xFormatter->attachNumberFormatsSupplier(xSupplier);
 
-			// retrieve the datebase of the Numberformatter
+			// retrieve the database of the Numberformatter
 			try
 			{
 				xSupplier->getNumberFormatSettings()->getPropertyValue(rtl::OUString::createFromAscii("NullDate")) >>= m_aNullDate;
