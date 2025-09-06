@@ -793,7 +793,7 @@ void SfxShell::Deactivate
 	zu reagieren.
 
 	[Querverweise]
-	StarView SystemWindow::Dectivate(sal_Bool)
+	StarView SystemWindow::Deactivate(sal_Bool)
 */
 
 {
