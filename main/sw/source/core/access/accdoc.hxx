@@ -19,7 +19,6 @@
  *
  *************************************************************/
 
-
 #ifndef _ACCDOC_HXX
 #define _ACCDOC_HXX
 #ifndef _ACCCONTEXT_HXX
@@ -48,7 +47,7 @@ class SwAccessibleDocumentBase : public	SwAccessibleContext
 	::com::sun::star::uno::Reference<
         ::com::sun::star::accessibility::XAccessible> mxParent;
 
-    Window* mpChildWin; // protected by solar mutext
+    Window* mpChildWin; // protected by solar mutex
 
     using SwAccessibleFrame::SetVisArea;
 
@@ -116,7 +115,6 @@ public:
 };
 
 
-
 /**
  * access to an accessible Writer document
  */
@@ -132,7 +130,7 @@ class SwAccessibleDocument : public	SwAccessibleDocumentBase,
 protected:
 
 	// Set states for getAccessibleStateSet.
-	// This drived class additinaly sets MULTISELECTABLE(1)
+	// This derived class additionally sets MULTISELECTABLE(1)
 	virtual void GetStates( ::utl::AccessibleStateSetHelper& rStateSet );
 
 	virtual ~SwAccessibleDocument();
@@ -235,3 +233,5 @@ public:
 };
 
 #endif
+
+/* vim: set noet sw=4 ts=4: */

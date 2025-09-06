@@ -19,7 +19,6 @@
  *
  *************************************************************/
 
-
 #ifndef DBACCESS_CORE_API_ROWSETBASE_HXX
 #define DBACCESS_CORE_API_ROWSETBASE_HXX
 
@@ -125,7 +124,7 @@ namespace dbaccess
 		typedef ::std::vector<ORowSetDataColumn*>	TDataColumns;
 		::osl::Mutex*							m_pMutex;			// this the mutex form the rowset itself
 		::osl::Mutex							m_aRowCountMutex, // mutex for rowcount changes
-												// we need a extra mutex for columns to prevend deadlock when setting new values
+												// we need an extra mutex for columns to prevent deadlock when setting new values
 												// for a row
 												m_aColumnsMutex;
 
@@ -265,7 +264,7 @@ namespace dbaccess
             count.
 
             @precond
-                Our mutext is locked.
+                Our mutex is locked.
         */
         sal_Int32   impl_getRowCount() const;
 
@@ -447,7 +446,7 @@ namespace dbaccess
         */
         void    firePropertyChange();
 
-        /** use this one to store the inde of the changed column values
+        /** use this one to store the index of the changed column values
         */
         ::std::vector<sal_Int32>& getChangedColumns() const;
         ::std::vector<com::sun::star::uno::Any>& getChangedBookmarks() const;
@@ -457,3 +456,5 @@ namespace dbaccess
 } // end of namespace
 
 #endif // DBACCESS_CORE_API_ROWSETBASE_HXX
+
+/* vim: set noet sw=4 ts=4: */

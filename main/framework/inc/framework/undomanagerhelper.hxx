@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #ifndef FRAMEWORK_UNDOMANAGERHELPER_HXX
 #define FRAMEWORK_UNDOMANAGERHELPER_HXX
 
@@ -87,7 +85,7 @@ namespace framework
     /** helper class for implementing an XUndoManager
 
         Several of the methods of the class take an IMutexGuard instance. It is assumed that this guard has a lock on
-        its mutext at the moment the method is entered. The lock will be released before any notifications to the
+        its mutex at the moment the method is entered. The lock will be released before any notifications to the
         registered XUndoManagerListeners happen.
 
         The following locking strategy is used for this mutex:
@@ -155,3 +153,5 @@ namespace framework
 //......................................................................................................................
 
 #endif // FRAMEWORK_UNDOMANAGERHELPER_HXX
+
+/* vim: set noet sw=4 ts=4: */
