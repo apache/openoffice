@@ -103,7 +103,7 @@ inline ::rtl::OUString String_to_ustring( ::System::String * str )
 }
 
 /* If the argument type is a typedef for an interface then the interface
-   type description is returned, otherwise an exeption is thrown.
+   type description is returned, otherwise an exception is thrown.
 */
 css::uno::Reference< css::reflection::XInterfaceTypeDescription2 >
 resolveInterfaceTypedef(const css::uno::Reference<css::reflection::XTypeDescription>& type);

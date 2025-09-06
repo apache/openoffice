@@ -376,7 +376,7 @@ public class _XDataPilotDescriptor extends MultiMethodTest {
         String name = null;
 
         if (IA == null) {
-            log.println("Null retruned.") ;
+            log.println("Null returned.") ;
             return false ;
         }
 
