@@ -205,7 +205,7 @@ int SAL_CALL main( int argc, char **argv )
 	if ( !bDone )
 		fprintf( stderr, "\nSTATUS MISSION 4: Error verifying Signatures!\n" );
 	else
-		fprintf( stdout, "\nSTATUS MISSION 4: All choosen Signatures veryfied successfully!\n" );
+		fprintf( stdout, "\nSTATUS MISSION 4: All chosen Signatures verified successfully!\n" );
 
 	aSignatureHelper.EndMission();
 
@@ -222,7 +222,7 @@ int SAL_CALL main( int argc, char **argv )
 	if ( !bDone )
 		fprintf( stderr, "\nSTATUS MISSION 5: Error verifying Signatures!\n" );
 	else
-		fprintf( stdout, "\nSTATUS MISSION 5: All choosen Signatures veryfied successfully!\n" );
+		fprintf( stdout, "\nSTATUS MISSION 5: All chosen Signatures verified successfully!\n" );
 
 	aSignatureHelper.EndMission();
 

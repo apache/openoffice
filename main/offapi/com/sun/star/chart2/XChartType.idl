@@ -59,7 +59,7 @@ interface XChartType : com::sun::star::uno::XInterface
     XCoordinateSystem createCoordinateSystem( [in] long DimensionCount )
         raises( com::sun::star::lang::IllegalArgumentException );
 
-    /** Returns a sequence of roles that are undestood by this chart
+    /** Returns a sequence of roles that are understood by this chart
         type.
 
         <p>All roles must be listed in the order in which they are
