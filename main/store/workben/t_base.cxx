@@ -178,7 +178,7 @@ static void __store_string_newFromUnicode_WithLength (
 		OUSTRING_TO_OSTRING_CVTFLAGS);
 }
 
-#if 0  /* UNSUSED */
+#if 0  /* UNUSED */
 static void __store_string_newFromUnicode (
 	rtl_String **newString, const rtl_uString *value)
 {

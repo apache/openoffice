@@ -887,7 +887,7 @@ public class PathSettingsTest
 //            {
 //                System.out.println(e.getClass().getName());
 //                System.out.println("Message: " + e.getMessage());
-//                fail("Unexpcted exception on property " + name);
+//                fail("Unexpected exception on property " + name);
 //            }
 //            System.out.println("Finish testing property '" + aPathSettingNames[i] + "'\n");
 //        }
