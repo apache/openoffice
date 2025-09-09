@@ -93,7 +93,7 @@ int SAL_CALL main( int argc, char **argv )
 	}
 	else
 	{
-		fprintf( stdout, "\nSTATUS: All choosen Signatures veryfied successfully!\n" );
+		fprintf( stdout, "\nSTATUS: All chosen Signatures verified successfully!\n" );
 	}
 
 	aSignatureHelper.EndMission();
