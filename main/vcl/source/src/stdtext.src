@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #define _SV_STDTEXT_SRC
 
 #include <svids.hrc>
@@ -77,22 +75,22 @@ String SV_ACCESSERROR_JAVA_MSG
 
 String SV_ACCESSERROR_MISSING_JAVA
 {
-	Text [ en-US ] = "No Java Installation";
+	Text [ en-US ] = "No Java Installation" ;
 };
 
 String SV_ACCESSERROR_JAVA_NOT_CONFIGURED
 {
-	Text [ en-US ] = "Missing Java Configuration";
+	Text [ en-US ] = "Missing Java Configuration" ;
 };
 
 String SV_ACCESSERROR_JAVA_DISABLED
 {
-	Text [ en-US ] = "Java Disabled";
+	Text [ en-US ] = "Java Disabled" ;
 };
 
 String SV_ACCESSERROR_TURNAROUND_MSG
 {
-	Text [ en-US ] = "The Java Access Bridge could not be started.";
+	Text [ en-US ] = "The Java Access Bridge could not be started." ;
 };
 
 String SV_ACCESSERROR_NO_FONTS
