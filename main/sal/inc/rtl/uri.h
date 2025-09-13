@@ -303,7 +303,7 @@ void SAL_CALL rtl_uriDecode(rtl_uString * pText,
     the following clarifications:  (1) Backwards-compatible relative URIs
     starting with a scheme component (see RFC 2396, section 5.2, step 3) are not
     supported.  (2) Segments "." and ".." within the path of the base URI are
-    not considered special, RFC 2396 seems a bit unlcear about that point.
+    not considered special, RFC 2396 seems a bit unclear about that point.
     (3) Erroneous excess segments ".." within the path of the relative URI (if
     it is indeed relative) are left intact, as the examples in RFC 2396,
     section C.2, suggest.  (4) If the relative URI is a reference to the

@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #ifndef INCLUDED_CANVAS_BITMAPCANVASBASE_HXX
 #define INCLUDED_CANVAS_BITMAPCANVASBASE_HXX
 
@@ -128,3 +126,5 @@ namespace canvas
 }
 
 #endif /* INCLUDED_CANVAS_BITMAPCANVASBASE_HXX */
+
+/* vim: set noet sw=4 ts=4: */

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -38,7 +38,7 @@ STDMETHODIMP CCallback::func1()
 STDMETHODIMP CCallback::returnInterface(IDispatch **ppdisp)
 {
 	if( ! ppdisp)
-		return E_POINTER;	
+		return E_POINTER;
 	CComPtr<IDispatch> spDisp;
 	spDisp.CoCreateInstance( L"XCallback_Impl.Simple");
 	*ppdisp= spDisp;
@@ -50,7 +50,7 @@ STDMETHODIMP CCallback::outInterface(IDispatch **ppdisp)
 {
 //	return S_OK;
 	if( ! ppdisp)
-		return E_POINTER;	
+		return E_POINTER;
 	CComPtr<IDispatch> spDisp;
 	spDisp.CoCreateInstance( L"XCallback_Impl.Simple");
 	*ppdisp= spDisp;
@@ -71,7 +71,7 @@ STDMETHODIMP CCallback::outValuesMixed(long val, long *pval, BSTR string)
 }
 
 
-STDMETHODIMP CCallback::outValuesAll( 
+STDMETHODIMP CCallback::outValuesAll(
             /* [out] */ IDispatch __RPC_FAR *__RPC_FAR *ppdisp,
             /* [out] */ IDispatch __RPC_FAR *__RPC_FAR *ppSimpleStruct,
             /* [out] */ long __RPC_FAR *aSimpleEnum,
@@ -112,7 +112,7 @@ STDMETHODIMP CCallback::outValuesAll(
 
 STDMETHODIMP CCallback::outStruct(IDispatch **outStruct)
 {
-//	return S_OK;	
+//	return S_OK;
 	if( !outStruct)
 		return E_POINTER;
 	HRESULT hr= E_FAIL;
@@ -125,14 +125,14 @@ STDMETHODIMP CCallback::outStruct(IDispatch **outStruct)
 		CComVariant param1(L"com.sun.star.reflection.CoreReflection");
 		CComVariant varRet;
 		hr= manager.Invoke1( L"createInstance", &param1, &varRet);
-		
+
 		CComDispatchDriver reflection( varRet.pdispVal);
 		param1= L"oletest.SimpleStruct";
 		varRet.Clear();
 		hr= reflection.Invoke1( L"forName", &param1, &varRet);
 
 		CComDispatchDriver classSimpleStruct( varRet.pdispVal);
-		
+
 		CComPtr<IDispatch> dispStruct;
 		param1.vt= VT_DISPATCH | VT_BYREF;
 		param1.ppdispVal= &dispStruct;
@@ -167,7 +167,7 @@ STDMETHODIMP CCallback::outSeqAny(LPSAFEARRAY* outSeq)
 	var[1]=L" variant 1";
 	var[2]=L"variant 2";
 	for( long i=0; i<3; i++)
-	{	
+	{
 		SafeArrayPutElement( pArr, &i, (void*)&var[i]);
 	}
 
@@ -327,7 +327,7 @@ STDMETHODIMP CCallback::inoutSeqAny(LPSAFEARRAY *pArray)
 		var.Clear();
 		hr= SafeArrayGetElement( *pArray, &i, (void*)&var);
 	}
-	
+
 	SafeArrayDestroy( *pArray);
 
 	outSeqAny( pArray);
@@ -363,7 +363,7 @@ STDMETHODIMP CCallback::inoutChar(short *inoutVal)
 		return E_POINTER;
 	USES_CONVERSION;
 	char buff[256];
-	sprintf( buff, "character value: %C", *inoutVal); 
+	sprintf( buff, "character value: %C", *inoutVal);
 	MessageBox( NULL, A2T(buff), _T("XCallback_Impl.Callback"), MB_OK);
 	*inoutVal= L'B';
 	return S_OK;
@@ -421,7 +421,7 @@ STDMETHODIMP CCallback::inoutLong(long* inoutVal)
 	return S_OK;
 }
 
-STDMETHODIMP CCallback::inoutValuesAll( 
+STDMETHODIMP CCallback::inoutValuesAll(
             /* [out][in] */ IDispatch __RPC_FAR *__RPC_FAR *aXSimple,
             /* [out][in] */ IDispatch __RPC_FAR *__RPC_FAR *aStruct,
             /* [out][in] */ long __RPC_FAR *aEnum,
@@ -452,7 +452,7 @@ STDMETHODIMP CCallback::inoutValuesAll(
 
 	return S_OK;
 }
- 
+
 
 STDMETHODIMP CCallback::inValues(short aChar, long aLong, BSTR aString)
 {
@@ -499,10 +499,8 @@ STDMETHODIMP CCallback::inSeqXEventListener( LPSAFEARRAY listeners, LPSAFEARRAY 
 			CComDispatchDriver disp( varListener.pdispVal);
 			hr= disp.Invoke1(L"disposing", &varEvent);
 		}
-		
+
 	}
 
 	return S_OK;
 }
-
-

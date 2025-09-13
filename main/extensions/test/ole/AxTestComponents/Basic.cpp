@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -28,7 +28,7 @@
 
 /////////////////////////////////////////////////////////////////////////////
 // CBasic
-CBasic::CBasic():	m_cPrpByte(0),m_nPrpShort(0),m_lPrpLong(0),m_fPrpFloat(0), m_dPrpDouble(0),m_PrpArray(0), 
+CBasic::CBasic():	m_cPrpByte(0),m_nPrpShort(0),m_lPrpLong(0),m_fPrpFloat(0), m_dPrpDouble(0),m_PrpArray(0),
 m_safearray(NULL), m_bool(VARIANT_FALSE),
 m_arByte(0), m_arShort(0), m_arLong(0), m_arString(0), m_arVariant(0), m_arFloat(0),
 m_arDouble(0), m_arObject(0), m_arByteDim2(0), m_date(0.), m_scode(0)
@@ -99,7 +99,7 @@ STDMETHODIMP CBasic::inDouble(double val)
 
 STDMETHODIMP CBasic::inVariant(VARIANT val)
 {
-	m_var1 = val;	
+	m_var1 = val;
 	return S_OK;
 }
 
@@ -206,7 +206,7 @@ STDMETHODIMP CBasic::inoutArray(LPSAFEARRAY *val)
 
 STDMETHODIMP CBasic::inoutObject(IDispatch **val)
 {
-	CComPtr<IDispatch> disp = *val;	
+	CComPtr<IDispatch> disp = *val;
 	if (*val)
 		(*val)->Release();
 	*val = m_obj;
@@ -280,7 +280,7 @@ STDMETHODIMP CBasic::outObject(IDispatch* *val)
 	*val = m_obj;
 	if (m_obj)
 		(*val)->AddRef();
-	
+
 	return S_OK;
 }
 
@@ -435,7 +435,7 @@ STDMETHODIMP CBasic::put_prpObject(IDispatch *newVal)
 	return S_OK;
 }
 
-STDMETHODIMP CBasic::mixed1( 
+STDMETHODIMP CBasic::mixed1(
             /* [out][in] */ unsigned char *aChar,
 			/* [out][in] */ float *aFloat,
             /* [out][in] */ VARIANT *aVar)
@@ -533,13 +533,13 @@ void CBasic::printArray( LPSAFEARRAY val, BSTR message, VARTYPE type)
 	hr= SafeArrayGetLBound( val, 1, &lbound);
 	hr= SafeArrayGetUBound( val, 1, &ubound);
 	long length= ubound - lbound +1;
-	
+
 	CComVariant varElement;
 	char buf[1024];
 	sprintf( buf,"%s", W2A(message));
 
 	for( long i= 0; i < length ; i++)
-	{	
+	{
 		char tmp[1024];
 		long data=0;
 		CComVariant var;
@@ -569,7 +569,7 @@ void CBasic::printArray( LPSAFEARRAY val, BSTR message, VARTYPE type)
 			sprintf( tmp, "%f \n", *(double*) &data);
 			break;
 		case VT_DISPATCH:
-			// we assume the objects are instances of this component and have the 
+			// we assume the objects are instances of this component and have the
 			// property prpString set.
 			hr= SafeArrayGetElement( val, &i, (void*)&data);
 			IDispatch* pdisp= ( IDispatch*) data;
@@ -586,8 +586,8 @@ void CBasic::printArray( LPSAFEARRAY val, BSTR message, VARTYPE type)
 
 		strcat( buf, tmp);
 	}
-	MessageBox( NULL, _T(A2T(buf)), _T("AxTestComponents.Basic"), MB_OK);	
-	
+	MessageBox( NULL, _T(A2T(buf)), _T("AxTestComponents.Basic"), MB_OK);
+
 }
 // V_ERROR OLECHAR VARIANT VT_UI1
 
@@ -761,7 +761,7 @@ STDMETHODIMP CBasic::inMulDimArrayByte(LPSAFEARRAY val)
 // 3-dimensionales array
 STDMETHODIMP CBasic::inMulDimArrayByte2(LPSAFEARRAY val)
 {
-	
+
 	// TODO: Add your implementation code here
 	//printMulArray( val, VT_UI1);
 	return S_OK;
@@ -825,7 +825,7 @@ void CBasic::printMulArray( SAFEARRAY* val, VARTYPE type)
 
 		}
 
-		
+
 	}
 	else if( dims == 3 )
 	{
@@ -917,12 +917,12 @@ STDMETHODIMP CBasic::optional3(/*[in, optional]*/ VARIANT* val1,/*[in, optional]
 {
 	//if (val1->vt != VT_ERROR)
 		m_var1 = *val1;
-		
+
 	//if (val2->vt != VT_ERROR)
 		m_var2 = *val2;
 	return S_OK;
 }
-	
+
 STDMETHODIMP CBasic::optional4(/*[in, out, optional]*/ VARIANT* val1,
 							   /*[in, out, optional]*/ VARIANT* val2)
 {
@@ -1002,7 +1002,7 @@ STDMETHODIMP CBasic::varargfunc1(/*[in]*/ long val1,/*[in]*/ LPSAFEARRAY val2)
 	if (FAILED(hr = SafeArrayCopy(val2, & m_safearray)))
 	{
 		if (hr != E_INVALIDARG)
-			return hr;	
+			return hr;
 	}
 	return S_OK;
 }
@@ -1183,7 +1183,7 @@ STDMETHODIMP CBasic::get_prpRefLong(long* pVal)
 
 STDMETHODIMP CBasic::putref_prpRefLong(long* newVal)
 {
-	m_long = * newVal;	
+	m_long = * newVal;
 	return S_OK;
 }
 
@@ -1238,7 +1238,7 @@ STDMETHODIMP CBasic::optional7(VARIANT* val1, VARIANT* val2, VARIANT* val3, VARI
 		return hr;
 	if (FAILED(hr = VariantCopy(val4, & m_var4)))
 		return hr;
-	
+
 	return S_OK;
 }
 

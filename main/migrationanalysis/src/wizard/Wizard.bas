@@ -8,9 +8,9 @@ Attribute VB_Name = "modWizard"
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -245,7 +245,7 @@ Function getLocaleLangBaseIDandSetLocaleDir() As Integer
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "getLocaleLangBaseIDandSetLocaleDir"
-    
+
     Dim baseID As Long
     Dim bUseLocale As Boolean
     Dim fso As FileSystemObject
@@ -254,19 +254,19 @@ Function getLocaleLangBaseIDandSetLocaleDir() As Integer
     Dim isoLangStr As String
     Dim isoCountryStr As String
     Dim langStr As String
-        
+
     Dim userLCID As Long
     userLCID = GetUserDefaultLCID()
     Dim sysLCID As Long
     sysLCID = GetSystemDefaultLCID()
-  
+
     isoLangStr = GetUserLocaleInfo(sysLCID, LOCALE_SISO639LANGNAME)
     isoCountryStr = GetUserLocaleInfo(sysLCID, LOCALE_SISO3166CTRYNAME)
     langStr = GetUserLocaleInfo(sysLCID, LOCALE_SENGLANGUAGE)
-    
+
     baseID = 0
     mLocaleDir = ""
-    
+
     If fso.FileExists(fso.GetAbsolutePathName("debug.ini")) Then
         Dim overrideLangStr As String
         overrideLangStr = ProfileGetItem("debug", "langoverride", "", fso.GetAbsolutePathName("debug.ini"))
@@ -275,7 +275,7 @@ Function getLocaleLangBaseIDandSetLocaleDir() As Integer
             isoLangStr = overrideLangStr
         End If
     End If
-    
+
     'check for locale dirs in following order:
     '   CBASE_RESOURCE_DIR & "\" & isoLangStr
     '   CBASE_RESOURCE_DIR & "\" & isoLangStr & "-" & isoCountryStr
@@ -290,14 +290,14 @@ Function getLocaleLangBaseIDandSetLocaleDir() As Integer
         mLocaleDir = CBASE_RESOURCE_DIR
         baseID = 1000
     'End If
-    
+
     getLocaleLangBaseIDandSetLocaleDir = CInt(baseID)
-    
+
 FinalExit:
     Set fso = Nothing
 
     Exit Function
-    
+
 HandleErrors:
     Debug.Print currentFunctionName & " : " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -316,12 +316,12 @@ Function GetResString(nRes As Integer) As String
     Dim sRes As String * 1024
     Dim sRetStr As String
     Dim nRet As Long
-  
+
     Do
         'sTmp = LoadResString(nRes)
         nRet = LoadString(ghInst, nRes, sRes, 1024)
         sTmp = Left$(sRes, nRet)
-        
+
         If Right(sTmp, 1) = "_" Then
             sRetStr = sRetStr + VBA.Left(sTmp, Len(sTmp) - 1)
         Else
@@ -330,16 +330,16 @@ Function GetResString(nRes As Integer) As String
         nRes = nRes + 1
     Loop Until Right(sTmp, 1) <> "_"
     GetResString = sRetStr
-  
+
 End Function
 
 Function GetField(sBuffer As String, sSep As String) As String
     Dim p As Integer
-    
+
     p = InStr(sBuffer & sSep, sSep)
     GetField = VBA.Left(sBuffer, p - 1)
     sBuffer = Mid(sBuffer, p + Len(sSep))
-  
+
 End Function
 ' Parts of the following code are from:
 ' http://support.microsoft.com/default.aspx?scid=kb;en-us;232625&Product=vb6
@@ -385,19 +385,19 @@ Private Function GetResourceDataFileName() As String
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "GetResourceDataFileName"
-    
+
     Dim fileName As String
     Dim fso As FileSystemObject
     Set fso = New FileSystemObject
 
     GetResourceDataFileName = fso.GetAbsolutePathName(RES_PREFIX)
-    
+
     GoTo FinalExit
 
     ' use the following code when we have one resource file for each language
     Dim isoLangStr As String
     Dim isoCountryStr As String
-    
+
     Dim userLCID As Long
     userLCID = GetUserDefaultLangID()
     Dim sysLCID As Long
@@ -405,7 +405,7 @@ Private Function GetResourceDataFileName() As String
 
     isoLangStr = GetUserLocaleInfo(userLCID, LOCALE_SISO639LANGNAME)
     isoCountryStr = GetUserLocaleInfo(userLCID, LOCALE_SISO3166CTRYNAME)
-    
+
     'check for locale data in following order:
     '  user language
     '   isoLangStr & "_" & isoCountryStr & ".dll"
@@ -414,7 +414,7 @@ Private Function GetResourceDataFileName() As String
     '   isoLangStr & "_" & isoCountryStr & ".dll"
     '   isoLangStr & ".dll"
     '   "en_US" & ".dll"
-    
+
     fileName = fso.GetAbsolutePathName(RES_PREFIX & isoLangStr & "-" & isoCountryStr & ".dll")
     If fso.FileExists(fileName) Then
         GetResourceDataFileName = fileName
@@ -442,7 +442,7 @@ Private Function GetResourceDataFileName() As String
 FinalExit:
     Set fso = Nothing
     Exit Function
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
@@ -462,10 +462,10 @@ Sub LoadResStrings(frm As Form)
     ghInst = LoadLibrary(GetResourceDataFileName())
 
     On Error Resume Next
-    
+
     sCodePage = String$(16, " ")
     LCID = GetThreadLocale() 'Get Current locale
-    
+
     X = GetLocaleInfo(LCID, LOCALE_IDEFAULTANSICODEPAGE, _
         sCodePage, Len(sCodePage))  'Get code page
     sCodePage = StripNullTerminator(sCodePage)
@@ -475,7 +475,7 @@ Sub LoadResStrings(frm As Form)
     If IsNumeric(frm.Tag) Then
         frm.Caption = LoadResString(CInt(frm.Tag))
     End If
-    
+
     'set the controls' captions using the caption
     'property for menu items and the Tag property
     'for all other controls
@@ -535,7 +535,7 @@ FinalExit:
 HandleErrors:
     WriteDebug currentFunctionName & " : " & Err.Number & " " & Err.Description & " " & Err.Source
     Resume FinalExit
-    
+
 End Sub
 
 '==================================================
@@ -553,10 +553,10 @@ Function ReplaceTopicTokens(sString As String, _
                             sToken As String, _
                             sReplacement As String) As String
     On Error Resume Next
-    
+
     Dim p As Integer
     Dim sTmp As String
-        
+
     sTmp = sString
     Do
         p = InStr(sTmp, sToken)
@@ -564,10 +564,10 @@ Function ReplaceTopicTokens(sString As String, _
             sTmp = VBA.Left(sTmp, p - 1) + sReplacement + Mid(sTmp, p + Len(sToken))
         End If
     Loop While p
-    
-    
+
+
     ReplaceTopicTokens = sTmp
-  
+
 End Function
 '==================================================
 'Purpose: Replace the sToken1 and sToken2 strings in
@@ -588,7 +588,7 @@ Function ReplaceTopic2Tokens(sString As String, _
                             sToken2 As String, _
                             sReplacement2 As String) As String
     On Error Resume Next
-    
+
     ReplaceTopic2Tokens = _
         ReplaceTopicTokens(ReplaceTopicTokens(sString, sToken1, sReplacement1), _
         sToken2, sReplacement2)
@@ -598,7 +598,7 @@ End Function
 Public Function GetResData(sResName As String, sResType As String) As String
     Dim sTemp As String
     Dim p As Integer
-  
+
     sTemp = StrConv(LoadResData(sResName, sResType), vbUnicode)
     p = InStr(sTemp, vbNullChar)
     If p Then sTemp = VBA.Left$(sTemp, p - 1)
@@ -607,18 +607,18 @@ End Function
 
 Function AddToAddInCommandBar(VBInst As Object, sCaption As String, oBitmap As Object) As Object   'Office.CommandBarControl
     On Error GoTo AddToAddInCommandBarErr
-    
+
     Dim c As Integer
     Dim cbMenuCommandBar As Object   'Office.CommandBarControl  'command bar object
     Dim cbMenu As Object
-    
+
     'see if we can find the Add-Ins menu
     Set cbMenu = VBInst.CommandBars("Add-Ins")
     If cbMenu Is Nothing Then
         'not available so we fail
         Exit Function
     End If
-    
+
     'add it to the command bar
     Set cbMenuCommandBar = cbMenu.Controls.add(1)
     c = cbMenu.Controls.count - 1
@@ -635,11 +635,10 @@ Function AddToAddInCommandBar(VBInst As Object, sCaption As String, oBitmap As O
     Clipboard.SetData oBitmap
     'set the icon for the button
     cbMenuCommandBar.PasteFace
-  
+
     Set AddToAddInCommandBar = cbMenuCommandBar
-    
+
     Exit Function
 AddToAddInCommandBarErr:
-  
-End Function
 
+End Function

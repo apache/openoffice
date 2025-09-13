@@ -23,7 +23,7 @@ function LoadData ()
             case "complex-type":
                 ComplexTypeNames.push(sName);
                 break;
-                
+
             case "simple-type":
                 SimpleTypeNames.push(sName);
                 break;
@@ -81,7 +81,7 @@ function GetMatches (sPattern)
     var aMatches = [];
     for (index=0; index<nTypeCount; ++index)
     {
-        var sTypeName = gTypeNames[index]; 
+        var sTypeName = gTypeNames[index];
         var aParts = new Array(sTypeName);
         var sLcTypeName = sTypeName.toLowerCase();
         var bIsMatch = true;
@@ -125,21 +125,21 @@ function GetMatches (sPattern)
 function ShowMatches (aMatches, nSelectionIndex)
 {
     var sText = "";
-    
+
     var nHalfRange = 10;
     var nMatchesPerLine = 5;
     var nLineCount = Math.floor((aMatches.length+nMatchesPerLine-1) / nMatchesPerLine);
     var nLineOfSelection = Math.floor(nSelectionIndex / nMatchesPerLine);
     var nFirstDisplayedLine = nLineOfSelection>0 ? nLineOfSelection-1 : 0;
     var nLastDisplayedLine = nLineOfSelection<nLineCount-1 ? nLineOfSelection+1 : nLineCount-1;
-    
+
     for (nLineIndex=nFirstDisplayedLine; nLineIndex<=nLastDisplayedLine; ++nLineIndex)
     {
         var nLineStartIndex = nLineIndex * nMatchesPerLine;
         var nLineEndIndex = nLineStartIndex + nMatchesPerLine - 1;
         if (nLineEndIndex >= aMatches.length)
             nLineEndIndex = aMatches.length-1;
-        
+
         sText += "<tr>"
         for (nIndex=nLineStartIndex; nIndex<=nLineEndIndex; ++nIndex)
         {
@@ -164,7 +164,7 @@ function ShowMatches (aMatches, nSelectionIndex)
             }
             sText += "</td>"
         }
-        
+
         sText += "</tr>";
     }
     if (nFirstDisplayedLine > 0)
@@ -230,7 +230,7 @@ function ShowType (sTypeName, nHistoryIndex)
 
     // Create the new content.
     var list = CreateDomTreeForType(GetTopLevelNodeForTypeName(sTypeName), "ul");
-    
+
     // Show the new content.
     aElement.appendChild(list);
 }
@@ -262,70 +262,70 @@ function CreateDomTreeForType (aNode, sType)
 	    				"type:", GetTypeLink(aNode["value-type"], aNode["value-type"], -1),
 	    				"use:", aNode.use]);
 	        	break;
-	    			
+
             case "attribute-reference":
                 aEntry.innerHTML = CreateReference(aNode["referenced-attribute"]);
                 break;
-    
+
 	    	case "builtin":
 	    		aEntry.innerHTML = CreateValueTable(
 	    		        ["builtin",
 	    		         "name:", aNode['builtin-type']
 	    		        ]);
 	    		break;
-	    		
+
             case "complex-type":
                 aEntry.innerHTML = aNode.type + " " + aNode.name;
                 break;
-    
+
             case "complex-type-reference":
                 aEntry.innerHTML = CreateReference(aNode["referenced-complex-type"]);
                 break;
-    
+
 	        case "group":
 	        	aEntry.innerHTML = aNode.type + " " + aNode.name;
 	        	break;
-	
+
             case "group-reference":
                 aEntry.innerHTML = CreateReference("group", aNode["referenced-group"]);
                 break;
-    
+
 	        case "element":
 	        	aEntry.innerHTML = "element <b>" + aNode["tag"] + "</b> -> " + GetTypeLink(aNode["result-type"], aNode["result-type"], -1);
 	        	break;
-	
+
             case "occurrence":
                 aEntry.innerHTML = aNode.minimum +" -> " + aNode.maximum;
                 break;
-    
+
             case "restriction":
                 aEntry.innerHTML = CreateRestrictionRepresentation(aNode);
                 break;
-    
+
             case "sequence":
                 aEntry.innerHTML = "sequence";
                 break;
-    
+
             case "simple-type":
                 aEntry.innerHTML = aNode.type + " " + aNode.name;
                 break;
-    
+
             case "simple-type-reference":
                 aEntry.innerHTML = CreateReference("simple-type", aNode["referenced-simple-type"]);
                 break;
-    
+
 	        default:
 	        	aEntry.innerHTML = aNode.type;
 		    	break;
 	    }
-	
+
 	    // Add nodes for attributes.
 	    var aAttributes= aNode["attributes"];
 	    if ( ! (typeof aAttributes==='undefined' || aAttributes.length == 0))
 	    {
 			var aAttributeList = document.createElement("ul");
 			aEntry.appendChild(aAttributeList);
-		
+
 			for (var nIndex=0; nIndex<aAttributes.length; ++nIndex)
 			{
 			    var aAttributeEntry = CreateDomTreeForType(aAttributes[nIndex], "li");
@@ -339,7 +339,7 @@ function CreateDomTreeForType (aNode, sType)
 	    {
 			var aChildrenList = document.createElement("ul");
 			aEntry.appendChild(aChildrenList);
-		
+
 			for (var nIndex=0; nIndex<aChildren.length; ++nIndex)
 			{
 			    var aChildrenEntry = CreateDomTreeForType(aChildren[nIndex], "li");
@@ -377,7 +377,7 @@ function CreateValueTable (aValues)
 
 function CreateReference (sWhat, sTypeName)
 {
-    return "reference to "+sWhat+" "+GetTypeLink(sTypeName, sTypeName, -1) + " " 
+    return "reference to "+sWhat+" "+GetTypeLink(sTypeName, sTypeName, -1) + " "
         +CreateButton(
             sTypeName,
             "show",

@@ -70,7 +70,7 @@ private:
 	SVT_DLLPRIVATE static String	GetDescription_Impl( const INetURLObject& rObject, sal_Bool bDetectFolder );
 
 public:
-	// depricated, because no high contrast mode
+	// deprecated, because no high contrast mode
     SVT_DLLPUBLIC static Image	GetImage( const INetURLObject& rURL, sal_Bool bBig = sal_False );
     static Image	GetFileImage( const INetURLObject& rURL, sal_Bool bBig = sal_False );
     static Image	GetImageNoDefault( const INetURLObject& rURL, sal_Bool bBig = sal_False );

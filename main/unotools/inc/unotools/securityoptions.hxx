@@ -85,10 +85,10 @@ class UNOTOOLS_DLLPUBLIC SvtSecurityOptions: public utl::detail::Options
 		enum EOption
 		{
             E_SECUREURLS,
-            E_BASICMODE,					// xmlsec05 depricated
-            E_EXECUTEPLUGINS,				// xmlsec05 depricated
-            E_WARNING,						// xmlsec05 depricated
-            E_CONFIRMATION,					// xmlsec05 depricated
+            E_BASICMODE,					// xmlsec05 deprecated
+            E_EXECUTEPLUGINS,				// xmlsec05 deprecated
+            E_WARNING,						// xmlsec05 deprecated
+            E_CONFIRMATION,					// xmlsec05 deprecated
 			E_DOCWARN_SAVEORSEND,
 			E_DOCWARN_SIGNING,
 			E_DOCWARN_PRINT,
@@ -238,7 +238,7 @@ class UNOTOOLS_DLLPUBLIC SvtSecurityOptions: public utl::detail::Options
 		bool		SetOption		( EOption eOption, bool bValue		)		;
 		bool		IsOptionEnabled	( EOption eOption					) const	;
 
-		// xmlsec05 depricated methods
+		// xmlsec05 deprecated methods
         sal_Bool    IsExecutePlugins() const;
         void        SetExecutePlugins( sal_Bool bSet );
 		EBasicSecurityMode	GetBasicMode(							) const	;

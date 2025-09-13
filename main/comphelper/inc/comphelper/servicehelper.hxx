@@ -33,7 +33,7 @@
 
 	Usage:
 		Put a UNO3_GETIMPLEMENTATION_DECL( classname ) inside your class
-		definitian and UNO3_GETIMPLEMENTATION_IMPL( classname ) inside
+		definition and UNO3_GETIMPLEMENTATION_IMPL( classname ) inside
 		your cxx file. Your class must inherit ::com::sun::star::uno::XUnoTunnel
 		and export it with queryInterface. Implementation of XUnoTunnel is
 		done by this macro.

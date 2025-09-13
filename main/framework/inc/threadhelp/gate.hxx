@@ -218,7 +218,7 @@ class Gate : public  IGate
                 }
                 // Then we must release used access lock -
                 // because next call will block ...
-                // and if we hold the access lock nobody else can use this object without a dadlock!
+                // and if we hold the access lock nobody else can use this object without a deadlock!
                 aLock.clear();
                 // Wait for opening gate ...
                 bSuccessful = ( m_aPassage.wait( pTimeOut ) == ::osl::Condition::result_ok );

@@ -39,7 +39,7 @@ enum SecurityOperationStatus
 	OPERATION_SUCCEEDED,
 	RUNTIMEERROR_FAILED,
 /**
- * The following constants are derived from xmlsec error definations, as following:
+ * The following constants are derived from xmlsec error definitions, as following:
  *
  * XMLSEC_ERRORS_R_XMLSEC_FAILED
  * XMLSEC_ERRORS_R_MALLOC_FAILED

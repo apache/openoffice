@@ -8,9 +8,9 @@ Attribute VB_Name = "word_res"
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -269,7 +269,7 @@ Public Sub LoadWordStrings(sdm As StringDataManager)
     sdm.InitString RID_STR_WORD_SUBISSUE_TABLE_OF_AUTHORITIES, "RID_STR_WORD_SUBISSUE_TABLE_OF_AUTHORITIES"
     sdm.InitString RID_STR_WORD_SUBISSUE_TABLE_OF_AUTHORITIES_FIELD, "RID_STR_WORD_SUBISSUE_TABLE_OF_AUTHORITIES_FIELD"
     sdm.InitString RID_STR_WORD_ATTRIBUTE_COUNT, "RID_STR_WORD_ATTRIBUTE_COUNT"
-    
+
     'Word driver strings
     sdm.InitString RID_STR_WDVR_SOANA, "RID_STR_WDVR_SOANA"
     sdm.InitString RID_STR_WDVR_INTRO, "RID_STR_WDVR_INTRO"
@@ -279,4 +279,3 @@ Public Sub LoadWordStrings(sdm As StringDataManager)
     sdm.InitString RID_STR_WDVR_ISSUE, "RID_STR_WDVR_ISSUE"
     sdm.InitString RID_STR_WDVR_PARA2, "RID_STR_WDVR_PARA2"
 End Sub
-

@@ -602,7 +602,7 @@ public class ModuleCtrl {
         boolean setToTrue = false;
 
         // At least one language module should not be uninstalled. Then this function returns true.
-        // An exeption is the complete uninstallation or the masked complete uninstallation.
+        // An exception is the complete uninstallation or the masked complete uninstallation.
 
         if (( packageData.isApplicationPackage() ) &&
             ( ! packageData.isHidden() ) &&
@@ -624,7 +624,7 @@ public class ModuleCtrl {
         boolean setToTrue = false;
 
         // At least one language module should not be uninstalled. Then this function returns true.
-        // An exeption is the complete uninstallation or the masked complete uninstallation.
+        // An exception is the complete uninstallation or the masked complete uninstallation.
 
         if (( packageData.showMultiLingualOnly() ) &&
             ( ! packageData.isHidden() ) &&

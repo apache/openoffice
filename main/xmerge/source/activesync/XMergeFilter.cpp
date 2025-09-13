@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // XMergeFilter.cpp: implementation of the CXMergeFilter class.
@@ -35,7 +35,7 @@
 #define ERR_BADCLASSPATH 2
 #define ERR_INITJAVA     3
 
-                      
+
 const LPTSTR CXMergeFilter::m_pszPSWExportCLSID		= _T("{BDD611C3-7BAB-460F-8711-5B9AC9EF6020}");
 const LPTSTR CXMergeFilter::m_pszPSWExportExt		= _T("sxw");
 const LPTSTR CXMergeFilter::m_pszPSWExportDesc		= _T("OpenOffice.org XML Writer Document");
@@ -107,7 +107,7 @@ STDMETHODIMP CXMergeFilter::QueryInterface(REFIID riid, void **ppvObject)
 		*ppvObject = NULL;
 		return E_NOINTERFACE;
 	}
-	
+
 	reinterpret_cast<IUnknown *>(*ppvObject)->AddRef();
 	return S_OK;
 }
@@ -140,12 +140,12 @@ STDMETHODIMP CXMergeFilter::FilterOptions(HWND hwndParent)
 	return HRESULT_FROM_WIN32(NOERROR);
 }
 
-STDMETHODIMP CXMergeFilter::FormatMessage(DWORD dwFlags, DWORD dwMessageId, 
-						DWORD dwLanguageId, LPTSTR lpBuffer, DWORD nSize, 
+STDMETHODIMP CXMergeFilter::FormatMessage(DWORD dwFlags, DWORD dwMessageId,
+						DWORD dwLanguageId, LPTSTR lpBuffer, DWORD nSize,
 						va_list *Arguments, DWORD *pcb)
 {
 	TCHAR errMsg[1024];
-	
+
 	HKEY  hKey   = NULL;
 	DWORD dwSize = 1024;
 
@@ -155,12 +155,12 @@ STDMETHODIMP CXMergeFilter::FormatMessage(DWORD dwFlags, DWORD dwMessageId,
 	// Attempt to find the messages in the registry
 	lRet = ::RegOpenKeyEx(HKEY_LOCAL_MACHINE, _T("SOFTWARE\\Sun Microsystems\\StarOffice\\XMergeSync\\Messages\\Error"),
 							0, KEY_READ, &hKey);
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 	{
 		// Try the user's portion of the registry
 		lRet = ::RegOpenKeyEx(HKEY_CURRENT_USER, _T("Software\\Sun Microsystems\\StarOffice\\XMergeSync\\Messages\\Error"),
 							0, KEY_READ, &hKey);
-		if (lRet != ERROR_SUCCESS) 
+		if (lRet != ERROR_SUCCESS)
 		{
 			hKey = NULL;
 		}
@@ -204,24 +204,24 @@ STDMETHODIMP CXMergeFilter::FormatMessage(DWORD dwFlags, DWORD dwMessageId,
 }
 
 
-STDMETHODIMP CXMergeFilter::NextConvertFile(int nConversion, CFF_CONVERTINFO *pci, 
-							 CFF_SOURCEFILE *psf, CFF_DESTINATIONFILE *pdf, 
+STDMETHODIMP CXMergeFilter::NextConvertFile(int nConversion, CFF_CONVERTINFO *pci,
+							 CFF_SOURCEFILE *psf, CFF_DESTINATIONFILE *pdf,
 							 volatile BOOL *pbCancel, CF_ERROR *perr)
 {
 	std::string appArgs;
-	std::string appName; 
+	std::string appName;
 
 	STARTUPINFO si;
     PROCESS_INFORMATION pi;
 
     ZeroMemory( &si, sizeof(si) );
 	ZeroMemory( &pi, sizeof(pi) );
-    
+
 	si.cb = sizeof(si);
 
 
 	/*
-	 * First step: Locate Java and establish the classpath.  If these can't 
+	 * First step: Locate Java and establish the classpath.  If these can't
 	 *             be done successfully, then avoid all further processing.
 	 */
 
@@ -232,7 +232,7 @@ STDMETHODIMP CXMergeFilter::NextConvertFile(int nConversion, CFF_CONVERTINFO *pc
 
 		if (m_szJavaBaseDir == NULL)
 		{
-			*perr = ERR_NOJAVA;		
+			*perr = ERR_NOJAVA;
 			return HRESULT_FROM_WIN32(E_FAIL);
 		}
 	}
@@ -241,7 +241,7 @@ STDMETHODIMP CXMergeFilter::NextConvertFile(int nConversion, CFF_CONVERTINFO *pc
 	if (m_szClasspath == NULL)
 	{
 		m_szClasspath = GetXMergeClassPath();
-		
+
 		if (m_szClasspath == NULL)
 		{
 			*perr = ERR_BADCLASSPATH;
@@ -251,7 +251,7 @@ STDMETHODIMP CXMergeFilter::NextConvertFile(int nConversion, CFF_CONVERTINFO *pc
 
 
 	/*
-	 * Second step:  Check the files we're going to process.  If we don't have 
+	 * Second step:  Check the files we're going to process.  If we don't have
 	 *				 an XMerge plugin for the file then we can't convert.
 	 */
 	if ((!lstrcmp(psf->szExtension, "sxw")  || !lstrcmp(psf->szExtension, "psw"))
@@ -266,7 +266,7 @@ STDMETHODIMP CXMergeFilter::NextConvertFile(int nConversion, CFF_CONVERTINFO *pc
 		*perr = ERR_BADCLASSPATH;
 		return HRESULT_FROM_WIN32(E_FAIL);
 	}
-	
+
 
 	/*
 	 * Third step:  Locate the Java executable and build and execute the command
@@ -288,8 +288,8 @@ STDMETHODIMP CXMergeFilter::NextConvertFile(int nConversion, CFF_CONVERTINFO *pc
 	appName.append("\"");
 
 
-	
-	// Need to build the entire command line for calling out to Java	
+
+	// Need to build the entire command line for calling out to Java
 	appArgs = appName;
         if (*m_szClasspath) {
             appArgs += " -Djava.class.path=";
@@ -334,7 +334,7 @@ STDMETHODIMP CXMergeFilter::NextConvertFile(int nConversion, CFF_CONVERTINFO *pc
 				  CREATE_NO_WINDOW,	// No console
 				  NULL,				// No special environment
 				  NULL,				// Current Working Directory is okay
-				  &si,			
+				  &si,
 				  &pi))
 	{
 		*perr = ERR_INITJAVA;
@@ -360,7 +360,7 @@ TCHAR* CXMergeFilter::GetJavaBaseDir()
 
 	HKEY hKey = NULL;
 	HKEY hDataKey = NULL;
-	
+
 	TCHAR szClassName[_MAX_PATH] = "\0";
 	TCHAR szKeyName[_MAX_PATH]   = "\0";
     TCHAR szCurrentJava[_MAX_PATH] = "\0";
@@ -382,7 +382,7 @@ TCHAR* CXMergeFilter::GetJavaBaseDir()
 
     /* use current version */
     lRet = ::RegQueryValueEx(hKey, _T("CurrentVersion"), 0, NULL, (LPBYTE)szCurrentJava, &dwSize);
-    
+
     /*
 	for (DWORD i = 0; lRet != ERROR_NO_MORE_ITEMS; i++)
 	{
@@ -393,8 +393,8 @@ TCHAR* CXMergeFilter::GetJavaBaseDir()
 	}
     // Found a Java 1.4 installation.  Can now read its home directory.
     */
-	
-    
+
+
 	lRet = ::RegOpenKeyEx(hKey, _T(szCurrentJava), 0, KEY_READ, &hDataKey);
 	if (lRet != ERROR_SUCCESS)
 	{
@@ -418,7 +418,7 @@ TCHAR* CXMergeFilter::GetJavaBaseDir()
 	RegCloseKey(hDataKey);
 	RegCloseKey(hKey);
 
-	
+
 	// Check that the directory exists before returning it
 	DWORD dwAttrs = GetFileAttributes(szJavaHome);
 
@@ -437,7 +437,7 @@ TCHAR* CXMergeFilter::GetXMergeClassPath()
 {
 	/*
 	 * The DLL will be installed by setup in the program directory of
-	 * the installation.  The XMerge Jar files, if present, will be 
+	 * the installation.  The XMerge Jar files, if present, will be
 	 * located in the classes directory below program.
 	 */
 
@@ -472,7 +472,7 @@ TCHAR* CXMergeFilter::GetXMergeClassPath()
 	{
 		return NULL;
 	}
-	else 
+	else
 	{
 		clsPath += szTmpPath;
 		clsPath += ";";

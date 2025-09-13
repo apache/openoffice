@@ -8,9 +8,9 @@ Attribute VB_Name = "Utilities"
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -106,7 +106,7 @@ Private Declare Function ShellExecute Lib "shell32" _
     ByVal lpParameters As String, _
     ByVal lpDirectory As String, _
     ByVal nShowCmd As Long) As Long
-    
+
 Public Const SW_SHOWNORMAL As Long = 1
 Public Const SW_SHOWMAXIMIZED As Long = 3
 Public Const SW_SHOWDEFAULT As Long = 10
@@ -135,7 +135,7 @@ Private Const KEY_READ As Long = ((STANDARD_RIGHTS_READ Or _
                                    KEY_ENUMERATE_SUB_KEYS Or _
                                    KEY_NOTIFY) And _
                                    (Not SYNCHRONIZE))
-                                   
+
 Private Declare Function RegOpenKeyEx Lib "advapi32.dll" _
    Alias "RegOpenKeyExA" _
   (ByVal hKey As Long, _
@@ -155,7 +155,7 @@ Private Declare Function RegQueryValueEx Lib "advapi32.dll" _
 
 Private Declare Function RegCloseKey Lib "advapi32.dll" _
   (ByVal hKey As Long) As Long
-  
+
 Private Declare Function lstrlenW Lib "kernel32" _
   (ByVal lpString As Long) As Long
 
@@ -179,11 +179,11 @@ Private Declare Function SHGetSpecialFolderLocation Lib _
 Public Function IsWin98Plus() As Boolean
     'returns True if running Windows 2000 or later
     Dim osv As OSVERSIONINFO
-    
+
     osv.OSVSize = Len(osv)
-    
+
     If GetVersionEx(osv) = 1 Then
-    
+
        Select Case osv.PlatformID 'win 32
             Case VER_PLATFORM_WIN32s:
                 IsWin98Plus = False
@@ -212,7 +212,7 @@ Public Function IsWin98Plus() As Boolean
                 IsWin98Plus = False
                 Exit Function
       End Select
-    
+
     End If
 
 End Function
@@ -223,23 +223,23 @@ Public Function GetWinVersion(WIN As RGB_WINVER) As String
 'filled with OS information
 
   #If Win32 Then
-  
+
    Dim osv As OSVERSIONINFO
    Dim pos As Integer
    Dim sVer As String
    Dim sBuild As String
-   
+
    osv.OSVSize = Len(osv)
-   
+
    If GetVersionEx(osv) = 1 Then
-   
+
      'PlatformId contains a value representing the OS
       WIN.PlatformID = osv.PlatformID
-     
+
       Select Case osv.PlatformID
          Case VER_PLATFORM_WIN32s:   WIN.VersionName = "Win32s"
          Case VER_PLATFORM_WIN32_NT: WIN.VersionName = "Windows NT"
-         
+
          Select Case osv.dwVerMajor
             Case 4:  WIN.VersionName = "Windows NT"
             Case 5:
@@ -248,25 +248,25 @@ Public Function GetWinVersion(WIN As RGB_WINVER) As String
                Case 1:  WIN.VersionName = "Windows XP"
             End Select
         End Select
-                  
+
          Case VER_PLATFORM_WIN32_WINDOWS:
-         
+
           'The dwVerMinor bit tells if its 95 or 98.
             Select Case osv.dwVerMinor
                Case 0:    WIN.VersionName = "Windows 95"
                Case 90:   WIN.VersionName = "Windows ME"
                Case Else: WIN.VersionName = "Windows 98"
             End Select
-         
+
       End Select
-   
-   
+
+
      'Get the version number
       WIN.VersionNo = osv.dwVerMajor & "." & osv.dwVerMinor
-  
+
      'Get the build
       WIN.BuildNo = (osv.dwBuildNumber And &HFFFF&)
-       
+
      'Any additional info. In Win9x, this can be
      '"any arbitrary string" provided by the
      'manufacturer. In NT, this is the service pack.
@@ -276,15 +276,15 @@ Public Function GetWinVersion(WIN As RGB_WINVER) As String
       End If
 
    End If
-   
+
   #Else
-  
+
     'can only return that this does not
     'support the 32 bit call, so must be Win3x
      WIN.VersionName = "Windows 3.x"
   #End If
   GetWinVersion = WIN.VersionName
-  
+
 End Function
 
 Public Sub RunShellExecute(sTopic As String, _
@@ -295,11 +295,11 @@ Public Sub RunShellExecute(sTopic As String, _
 
    Dim hWndDesk As Long
    Dim success As Long
-  
+
   'the desktop will be the
   'default for error messages
    hWndDesk = GetDesktopWindow()
-  
+
   'execute the passed operation
    success = ShellExecute(hWndDesk, sTopic, sFile, sParams, sDirectory, nShowCmd)
 
@@ -309,7 +309,7 @@ Public Sub RunShellExecute(sTopic As String, _
   If success = SE_ERR_NOASSOC Then
      Call Shell("rundll32.exe shell32.dll,OpenAs_RunDLL " & sFile, vbNormalFocus)
   End If
-   
+
 End Sub
 
 Public Sub WriteToLog(key As String, value As String, _
@@ -336,14 +336,14 @@ Public Sub WriteDebug(value As String)
     Static ErrCount As Long
     Static logFile As String
     Static debugLevel As Long
-    
+
     If logFile = "" Then
         logFile = GetLogFilePath
     End If
-    
+
     Dim sSection As String
     sSection = WIZARD_NAME & "Debug"
-        
+
     Call WritePrivateProfileString(sSection, "Analysis" & "_debug" & ErrCount, _
         value, logFile)
     ErrCount = ErrCount + 1
@@ -351,11 +351,11 @@ End Sub
 
 Public Function GetDebug(section As String, key As String) As String
     Static logFile As String
-    
+
     If logFile = "" Then
         logFile = GetLogFilePath
     End If
-    
+
     GetDebug = ProfileGetItem(section, key, "", logFile)
 End Function
 
@@ -368,38 +368,38 @@ Public Function GetUserLocaleInfo(ByVal dwLocaleID As Long, ByVal dwLCType As Lo
   'variable to retrieve the required size of
   'the string buffer needed
    r = GetLocaleInfo(dwLocaleID, dwLCType, sReturn, Len(sReturn))
-    
+
   'if successful..
    If r Then
-    
+
      'pad the buffer with spaces
       sReturn = Space$(r)
-       
+
      'and call again passing the buffer
       r = GetLocaleInfo(dwLocaleID, dwLCType, sReturn, Len(sReturn))
-     
+
      'if successful (r > 0)
       If r Then
-      
+
         'r holds the size of the string
         'including the terminating null
          GetUserLocaleInfo = Left$(sReturn, r - 1)
-      
+
       End If
-   
+
    End If
-    
+
 End Function
 
 Public Function GetRegistryInfo(sHive As String, sSubKey As String, sKey As String) As String
     GetRegistryInfo = ""
     Dim hKey As Long
-    
+
     hKey = OpenRegKey(sHive, sSubKey)
-    
+
     If hKey <> 0 Then
        GetRegistryInfo = GetRegValue(hKey, sKey)
-    
+
       'the opened key must be closed
        Call RegCloseKey(hKey)
     End If
@@ -413,7 +413,7 @@ Private Function GetRegValue(hSubKey As Long, sKeyName As String) As String
 
   'if valid
    If hSubKey <> 0 Then
-   
+
      'Pass an zero-length string to
      'obtain the required buffer size
      'required to return the result.
@@ -432,7 +432,7 @@ Private Function GetRegValue(hSubKey As Long, sKeyName As String) As String
                          lpcbData) = ERROR_MORE_DATA Then
 
          lpValue = Space$(lpcbData)
-      
+
         'retrieve the desired value
          If RegQueryValueEx(hSubKey, _
                             sKeyName, _
@@ -440,9 +440,9 @@ Private Function GetRegValue(hSubKey As Long, sKeyName As String) As String
                             0&, _
                             ByVal lpValue, _
                             lpcbData) = ERROR_SUCCESS Then
-                        
+
             GetRegValue = TrimNull(lpValue)
-         
+
          End If  'If RegQueryValueEx (second call)
       End If  'If RegQueryValueEx (first call)
    End If  'If hSubKey
@@ -466,28 +466,28 @@ End Function
 Private Function TrimNull(startstr As String) As String
 
    TrimNull = Left$(startstr, lstrlenW(StrPtr(startstr)))
-   
+
 End Function
 
 Function GetLogFilePath() As String
 
     Dim fso As New FileSystemObject
     Dim TempPath As String
-    
+
     TempPath = fso.GetSpecialFolder(TemporaryFolder).path
-    
+
     If (TempPath = "") Then
         TempPath = "."
     End If
 
     GetLogFilePath = fso.GetAbsolutePathName(TempPath & "\" & CSTR_LOG_FILE_NAME)
 End Function
-    
+
 Function GetIniFilePath() As String
 
     Dim fso As New FileSystemObject
     Dim AppDataDir As String
-    
+
     AppDataDir = GetAppDataFolder
     If (AppDataDir = "") Then
         AppDataDir = CBASE_RESOURCE_DIR
@@ -541,6 +541,3 @@ Err_GetFolder:
    Resume Exit_GetFolder
 
 End Function
-
-
-

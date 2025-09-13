@@ -1,5 +1,5 @@
 // *************************************************************
-//  
+//
 //  Licensed to the Apache Software Foundation (ASF) under one
 //  or more contributor license agreements.  See the NOTICE file
 //  distributed with this work for additional information
@@ -7,16 +7,16 @@
 //  to you under the Apache License, Version 2.0 (the
 //  "License"); you may not use this file except in compliance
 //  with the License.  You may obtain a copy of the License at
-//  
+//
 //    http://www.apache.org/licenses/LICENSE-2.0
-//  
+//
 //  Unless required by applicable law or agreed to in writing,
 //  software distributed under the License is distributed on an
 //  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 //  KIND, either express or implied.  See the License for the
 //  specific language governing permissions and limitations
 //  under the License.
-//  
+//
 // *************************************************************
 importClass(Packages.com.sun.star.uno.UnoRuntime);
 importClass(Packages.com.sun.star.lang.XMultiComponentFactory);
@@ -30,7 +30,7 @@ importClass(java.lang.System);
 
 function tryLoadingLibrary( xmcf, context, name )
 {
-    try 
+    try
     {
         obj = xmcf.createInstanceWithContext(
                "com.sun.star.script.Application" + name + "LibraryContainer",
@@ -46,7 +46,7 @@ function tryLoadingLibrary( xmcf, context, name )
         xme = AnyConverter.toObject(new Type(XMacroExpander), serviceObj);
 
         bootstrapName = "bootstraprc";
-        if (System.getProperty("os.name").startsWith("Windows")) 
+        if (System.getProperty("os.name").startsWith("Windows"))
         {
             bootstrapName = "bootstrap.ini";
         }
@@ -63,8 +63,8 @@ function tryLoadingLibrary( xmcf, context, name )
 
         System.err.println("liblink created");
 
-    } 
-    catch (e) 
+    }
+    catch (e)
     {
         System.err.println("Got an exception loading lib: " + e.getMessage());
         return false;
@@ -102,7 +102,7 @@ xDialogProvider = getDialogProvider();
 if (xDialogProvider != null)
 {
     //try to create the Highlight dialog (found in the ScriptBinding library)
-    try 
+    try
     {
         findDialog = xDialogProvider.createDialog("vnd.sun.star.script:" +
             "ScriptBindingLibrary.Highlight?location=application");
@@ -115,7 +115,7 @@ if (xDialogProvider != null)
             }
             else
             {
-                // try to create the Highlight dialog (found in the 
+                // try to create the Highlight dialog (found in the
                 // ScriptBindingLibrary)
                 findDialog = xDialogProvider.createDialog("vnd.sun.star.script:" +
                     "ScriptBindingLibrary.Highlight?location=application");

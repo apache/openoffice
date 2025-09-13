@@ -8,9 +8,9 @@ Attribute VB_Name = "Analyse"
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -122,7 +122,7 @@ Public Type PROCESSENTRY32
     dwFlags As Long
     szExeFile As String * MAX_PATH
 End Type
-    
+
 Public Declare Function CreateToolhelp32Snapshot Lib "kernel32" _
    (ByVal lFlags As Long, ByVal lProcessID As Long) As Long
 
@@ -179,7 +179,7 @@ Public Function IsOfficeAppRunning(curApplication As String) As Boolean
         End If
     Wend
     bRet = bAppFound
-    
+
     Call CloseHandle(hSnapShot)
 
 FinalExit:
@@ -209,7 +209,7 @@ Private Sub CalculateProgress(statusFileName As String, fso As FileSystemObject,
             curFile = Mid(statLine, Len(C_STAT_ANALYSING) + 1)
         End If
     End If
-    
+
     ' when we don't have a file, we will show the name of the last used file in
     ' the progress window
     If (curFile = "") Then curFile = myDocList.item(lastIndex)
@@ -293,7 +293,7 @@ Public Function launchDriver(statFileName As String, cmdLine As String, _
 
     ' Initialize the STARTUPINFO structure:
     start.cb = Len(start)
-            
+
     ' Start the shelled application:
     ret = CreateProcessA(vbNullString, cmdLine$, 0&, 0&, 1&, _
                          NORMAL_PRIORITY_CLASS, 0&, vbNullString, start, proc)
@@ -326,7 +326,7 @@ Public Function launchDriver(statFileName As String, cmdLine As String, _
         Call CalculateProgress(statFileName, fso, lastIndex, myOffset, myDocList)
         DoEvents                                'allow other processes
     Loop While True
-    
+
     If (ret <> WAIT_TIMEOUT) And (ret <> ABORTED) Then
         Call GetExitCodeProcess(proc.hProcess, ret&)
     End If
@@ -385,17 +385,17 @@ Function WriteDocsToAnalyze(myDocList As Collection, myApp As String, _
     Dim vFileName As Variant
     Dim Index As Long
     Dim limit As Long
-    
+
     limit = myDocList.count
     If (limit > 0) Then
         fileName = fso.GetAbsolutePathName(TempPath & "\FileList" & myApp & ".txt")
         Set fileContent = fso.OpenTextFile(fileName, ForWriting, True, TristateTrue)
-    
+
         For Index = 1 To limit
             vFileName = myDocList(Index)
             fileContent.WriteLine (vFileName)
         Next
-        
+
         fileContent.Close
     End If
 
@@ -418,14 +418,14 @@ Function GetDocumentIndex(myDocument As String, _
 
     Dim currentFunctionName As String
     currentFunctionName = "GetDocumentIndex"
-    
+
     On Error GoTo HandleErrors
-    
+
     Dim lastEntry As Long
     Dim curIndex As Long
     Dim curEntry As String
     Dim entryFound As Boolean
-    
+
     entryFound = False
     lastEntry = myDocList.count
     curIndex = lastIndex
@@ -528,7 +528,7 @@ Function AnalyseList(myDocList As Collection, _
             nRetries = nRetries + 1
         End If
     Wend
-    
+
     If (analyseStatus = C_STAT_DONE) Then
         AnalyseList = True
     Else
@@ -577,6 +577,6 @@ Sub HandleAbort(hProcess As Long, curApplication As String)
         ShowProgress.g_SP_AllowOtherDLG = True
         TerminateMSO.Show vbModal, ShowProgress
     End If
-    
+
     ret = TerminateProcess(hProcess, "0")
 End Sub

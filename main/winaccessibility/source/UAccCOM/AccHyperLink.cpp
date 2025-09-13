@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "stdafx.h"
@@ -37,7 +37,7 @@ using namespace com::sun::star::awt;
  */
 STDMETHODIMP CAccHyperLink::nActions(/*[out,retval]*/long* nActions)
 {
-    
+
     return CAccActionBase::nActions(nActions);
 }
 
@@ -48,7 +48,7 @@ STDMETHODIMP CAccHyperLink::nActions(/*[out,retval]*/long* nActions)
  */
 STDMETHODIMP CAccHyperLink::doAction(/* [in] */ long actionIndex)
 {
-    
+
     return CAccActionBase::doAction(actionIndex);
 }
 
@@ -60,24 +60,24 @@ STDMETHODIMP CAccHyperLink::doAction(/* [in] */ long actionIndex)
  */
 STDMETHODIMP CAccHyperLink::get_description(long actionIndex,BSTR __RPC_FAR *description)
 {
-    
+
     return CAccActionBase::get_description(actionIndex, description);
 }
 
 STDMETHODIMP CAccHyperLink::get_name( long actionIndex, BSTR __RPC_FAR *name)
 {
-    
+
     return CAccActionBase::get_name(actionIndex, name);
 }
 
 STDMETHODIMP CAccHyperLink::get_localizedName( long actionIndex, BSTR __RPC_FAR *localizedName)
 {
-    
+
     return CAccActionBase::get_name(actionIndex, localizedName);
 }
 
 /**
- * Returns key binding object (if any) associated with specified action 
+ * Returns key binding object (if any) associated with specified action
  * key binding is string.
  * e.g. "alt+d" (like IAccessible::get_accKeyboardShortcut).
  *
@@ -92,19 +92,19 @@ STDMETHODIMP CAccHyperLink::get_keyBinding(
     /* [length_is][length_is][size_is][size_is][out] */ BSTR __RPC_FAR *__RPC_FAR *keyBinding,
     /* [retval][out] */ long __RPC_FAR *nBinding)
 {
-    
+
     return CAccActionBase::get_keyBinding(actionIndex, nMaxBinding,	keyBinding, nBinding);
 }
 
 /**
    * get an object
-   * @param 
+   * @param
    * @return Result.
 */
 STDMETHODIMP CAccHyperLink::get_anchor(/* [in] */ long index,
         /* [retval][out] */ VARIANT __RPC_FAR *anchor)
 {
-    
+
 	CHECK_ENABLE_INF
 
     ENTER_PROTECTED_BLOCK
@@ -131,13 +131,13 @@ STDMETHODIMP CAccHyperLink::get_anchor(/* [in] */ long index,
 
 /**
    * get an object
-   * @param 
+   * @param
    * @return Result.
 */
 STDMETHODIMP CAccHyperLink::get_anchorTarget(/* [in] */ long index,
         /* [retval][out] */ VARIANT __RPC_FAR *anchorTarget)
 {
-    
+
 
 	CHECK_ENABLE_INF
     ENTER_PROTECTED_BLOCK
@@ -170,7 +170,7 @@ STDMETHODIMP CAccHyperLink::get_anchorTarget(/* [in] */ long index,
 */
 STDMETHODIMP CAccHyperLink::get_startIndex(/* [retval][out] */ long __RPC_FAR *index)
 {
-    
+
 	CHECK_ENABLE_INF
 
     ENTER_PROTECTED_BLOCK
@@ -194,7 +194,7 @@ STDMETHODIMP CAccHyperLink::get_startIndex(/* [retval][out] */ long __RPC_FAR *i
 */
 STDMETHODIMP CAccHyperLink::get_endIndex(/* [retval][out] */ long __RPC_FAR *index)
 {
-    
+
 	CHECK_ENABLE_INF
 
     ENTER_PROTECTED_BLOCK
@@ -223,7 +223,7 @@ STDMETHODIMP CAccHyperLink::get_endIndex(/* [retval][out] */ long __RPC_FAR *ind
 */
 STDMETHODIMP CAccHyperLink::get_valid(/* [retval][out] */ boolean __RPC_FAR *valid)
 {
-    
+
 	CHECK_ENABLE_INF
 
     ENTER_PROTECTED_BLOCK
@@ -252,7 +252,7 @@ STDMETHODIMP CAccHyperLink::get_valid(/* [retval][out] */ boolean __RPC_FAR *val
 */
 STDMETHODIMP CAccHyperLink::put_XInterface(long pXInterface)
 {
-    
+
 	CHECK_ENABLE_INF
 
     ENTER_PROTECTED_BLOCK
@@ -286,7 +286,7 @@ STDMETHODIMP CAccHyperLink::put_XInterface(long pXInterface)
 */
 STDMETHODIMP CAccHyperLink::put_XSubInterface(long pXSubInterface)
 {
-    
+
 	CHECK_ENABLE_INF
 
     pRXLink = (XAccessibleHyperlink*)pXSubInterface;

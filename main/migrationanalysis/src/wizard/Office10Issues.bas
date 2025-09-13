@@ -8,9 +8,9 @@ Attribute VB_Name = "Office10Issues"
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -86,7 +86,7 @@ Public Function CreateRegKey(hKey As RegHive, strPath As String)
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "CreateRegKey"
-    
+
     Dim heKey As Long
     Dim secattr As SECURITY_ATTRIBUTES  ' security settings for the key
     Dim subkey As String        ' name of the subkey to create or open
@@ -98,14 +98,14 @@ Public Function CreateRegKey(hKey As RegHive, strPath As String)
     secattr.nLength = Len(secattr)
     secattr.lpSecurityDescriptor = 0
     secattr.bInheritHandle = 1
-    
+
      retval = RegCreateKeyEx(hKey, strPath, 0, "", 0, KEY_WRITE, _
         secattr, heKey, neworused)
     If retval = 0 Then
         retval = RegCloseKey(hKey)
         Exit Function
     End If
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : " & Err.Number & " " & Err.Description & " " & Err.Source
 End Function
@@ -115,7 +115,7 @@ Public Function CreateRegKey2(hKey As RegHive, strPath As String) As Long
     Dim currentFunctionName As String
     currentFunctionName = "CreateRegKey"
     CreateRegKey2 = 0
-    
+
     Dim heKey As Long
     Dim secattr As SECURITY_ATTRIBUTES  ' security settings for the key
     Dim subkey As String        ' name of the subkey to create or open
@@ -127,7 +127,7 @@ Public Function CreateRegKey2(hKey As RegHive, strPath As String) As Long
     secattr.nLength = Len(secattr)
     secattr.lpSecurityDescriptor = 0
     secattr.bInheritHandle = 1
-    
+
     retval = RegCreateKeyEx(hKey, strPath, 0, "", 0, KEY_WRITE, _
         secattr, heKey, neworused)
     If retval = ERROR_SUCCESS Then
@@ -137,7 +137,7 @@ Public Function CreateRegKey2(hKey As RegHive, strPath As String) As Long
 
 FinalExit:
     Exit Function
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : " & Err.Number & " " & Err.Description & " " & Err.Source
     CreateRegKey2 = 0
@@ -149,7 +149,7 @@ Public Function GetRegLong(ByVal hKey As RegHive, ByVal strPath As String, ByVal
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "GetRegLong"
-    
+
     Dim lRegResult As Long
     Dim lValueType As Long
     Dim lBuffer As Long
@@ -159,14 +159,14 @@ Public Function GetRegLong(ByVal hKey As RegHive, ByVal strPath As String, ByVal
     GetRegLong = 0
     lRegResult = RegOpenKey(hKey, strPath, hCurKey)
     lDataBufferSize = 4 '4 bytes = 32 bits = long
-    
+
     lRegResult = RegQueryValueEx(hCurKey, strValue, 0, REG_DWORD, lBuffer, lDataBufferSize)
     If lRegResult = ERROR_SUCCESS Then
         GetRegLong = lBuffer
     End If
         lRegResult = RegCloseKey(hCurKey)
         Exit Function
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : " & Err.Number & " " & Err.Description & " " & Err.Source
 End Function
@@ -175,18 +175,18 @@ Public Function SaveRegLong(ByVal hKey As RegHive, ByVal strPath As String, ByVa
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "SaveRegLong"
-    
+
     Const NumofByte = 4
     Dim hCurKey As Long
     Dim lRegResult As Long
-    
+
     lRegResult = RegCreateKey(hKey, strPath, hCurKey)
     lRegResult = RegSetValueEx(hCurKey, strValue, 0&, REG_DWORD, lData, NumofByte)
     If lRegResult = ERROR_SUCCESS Then
         lRegResult = RegCloseKey(hCurKey)
         Exit Function
     End If
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : " & Err.Number & " " & Err.Description & " " & Err.Source
 End Function
@@ -197,7 +197,7 @@ Public Function GiveAccessToMacroProject(application As String, sVersion As Stri
     Dim currentFunctionName As String
     currentFunctionName = "SaveRegLong"
     GiveAccessToMacroProject = False
-    
+
     Const OfficePath = "Software\Policies\Microsoft\Office\"
     Const security = "\Security"
     Const AccessVBOM = "AccessVBOM"
@@ -212,7 +212,7 @@ Public Function GiveAccessToMacroProject(application As String, sVersion As Stri
     SaveRegLong HKEY_CURRENT_USER, subpath, AccessVBOM, AccessVBOMValue
     GiveAccessToMacroProject = True
     Exit Function
-    
+
 HandleErrors:
     GiveAccessToMacroProject = False
     WriteDebug currentFunctionName & " : " & Err.Number & " " & Err.Description & " " & Err.Source
@@ -222,16 +222,16 @@ Public Function SetDefaultRegValue(application As String, sVersion As String, sV
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "SaveRegLong"
-    
+
     Const OfficePath = "Software\Policies\Microsoft\Office\"
     Const security = "\Security"
     Const AccessVBOM = "AccessVBOM"
     Dim subpath As String
-    
+
     subpath = OfficePath & sVersion & "\" & application & security
     SaveRegLong HKEY_CURRENT_USER, subpath, AccessVBOM, sValue
     Exit Function
-    
+
 HandleErrors:
     WriteDebug currentFunctionName & " : " & Err.Number & " " & Err.Description & " " & Err.Source
 End Function
@@ -239,14 +239,14 @@ Public Function DeleteRegValue(application As String, sVersion As String)
     On Error GoTo HandleErrors
     Dim currentFunctionName As String
     currentFunctionName = "SaveRegLong"
-    
+
     Const OfficePath = "Software\Policies\Microsoft\Office\"
     Const security = "\Security"
     Const AccessVBOM = "AccessVBOM"
     Dim subpath As String
     Dim retval As Long
     Dim hKey As Long
-    
+
     subpath = OfficePath & sVersion & "\" & application & security
     retval = RegOpenKeyEx(HKEY_CURRENT_USER, subpath, 0, KEY_WRITE, hKey)
     If retval = ERROR_SUCCESS Then
@@ -254,7 +254,7 @@ Public Function DeleteRegValue(application As String, sVersion As String)
         retval = RegCloseKey(hKey)
         Exit Function
     End If
- 
+
 HandleErrors:
     WriteDebug currentFunctionName & " : " & Err.Number & " " & Err.Description & " " & Err.Source
 End Function
@@ -264,7 +264,7 @@ Public Function CheckForAccesToWordVBProject1(wrd As Word.application, RestoreVa
     CheckForAccesToWordVBProject1 = True
     RestoreValue = -1
     If val(wrd.Version) < 10# Then Exit Function
-    
+
     Set myProject = wrd.ActiveDocument.VBProject
     If Err.Number <> 0 Then
         Dim RegValue As Long
@@ -275,25 +275,25 @@ Public Function CheckForAccesToWordVBProject1(wrd As Word.application, RestoreVa
             CheckForAccesToWordVBProject1 = False
         End If
     End If
-    
+
 End Function
 Public Function CheckForAccesToWordVBProject(wrd As Word.application) As Boolean
     On Error Resume Next
     CheckForAccesToWordVBProject = True
     If val(wrd.Version) < 10# Then Exit Function
-    
+
     Set myProject = wrd.ActiveDocument.VBProject
     If Err.Number <> 0 Then
         CheckForAccesToWordVBProject = False
     End If
-    
+
 End Function
 Public Function CheckForAccesToExcelVBProject1(xl As Excel.application, RestoreValue As Long) As Boolean
     On Error Resume Next
     CheckForAccesToExcelVBProject1 = True
     RestoreValue = -1
     If val(xl.Version) < 10# Then Exit Function
-    
+
     Dim displayAlerts As Boolean
     displayAlerts = xl.displayAlerts
     xl.displayAlerts = False
@@ -314,7 +314,7 @@ Public Function CheckForAccesToExcelVBProject(xl As Excel.application) As Boolea
     On Error Resume Next
     CheckForAccesToExcelVBProject = True
     If val(xl.Version) < 10# Then Exit Function
-    
+
     Dim displayAlerts As Boolean
     displayAlerts = xl.displayAlerts
     xl.displayAlerts = False

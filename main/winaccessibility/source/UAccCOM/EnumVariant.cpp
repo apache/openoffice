@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "stdafx.h"
@@ -33,7 +33,7 @@
 
 /**
    * enumarate method,get next element
-   * @param  cElements The number of elements to be returned. 
+   * @param  cElements The number of elements to be returned.
    * @param  pvar      An array of at least size celt in which the elements are to be returned.
    * @param  pcElementFetched Pointer to the number of elements returned in rgVar, or Null¡£
    * @return Result.
@@ -84,7 +84,7 @@ HRESULT STDMETHODCALLTYPE CEnumVariant::Next(ULONG cElements,VARIANT __RPC_FAR *
 
 /**
    * skip the elements in the given range when enumarate elements
-   * @param  cElements The number of elements to skip. 
+   * @param  cElements The number of elements to skip.
    * @return Result.
    */
 HRESULT STDMETHODCALLTYPE CEnumVariant::Skip(ULONG cElements)
@@ -103,7 +103,7 @@ HRESULT STDMETHODCALLTYPE CEnumVariant::Skip(ULONG cElements)
 
 /**
    * reset the enumaration position to initial value
-   * @param 
+   * @param
    * @return Result.
    */
 HRESULT STDMETHODCALLTYPE CEnumVariant::Reset( void)
@@ -115,7 +115,7 @@ HRESULT STDMETHODCALLTYPE CEnumVariant::Reset( void)
 
 /**
    *create a new IEnumVariant object,
-   *copy current enumaration container and its state to 
+   *copy current enumaration container and its state to
    *the new object
    *AT will use the copy object to get elements
    * @param ppenum On return, pointer to the location of the clone enumerator¡£

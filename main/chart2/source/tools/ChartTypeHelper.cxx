@@ -525,7 +525,7 @@ drawing::Direction3D ChartTypeHelper::getDefaultRealisticLightDirection( const u
 sal_Int32 ChartTypeHelper::getAxisType( const uno::Reference<
             XChartType >& xChartType, sal_Int32 nDimensionIndex )
 {
-    //retruned is a constant from constant group ::com::sun::star::chart2::AxisType
+    //returned is a constant from constant group ::com::sun::star::chart2::AxisType
 
     //@todo ask charttype itself --> need model change first
 	if(!xChartType.is())

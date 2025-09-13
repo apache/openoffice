@@ -8,9 +8,9 @@ Attribute VB_Name = "ApplicationSpecific"
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -106,13 +106,13 @@ End Function
 
 Public Function getAppSpecificOLEClassType(aShape As Shape) As String
     Dim objType As String
-    
+
     If aShape.OLEFormat.ProgID = "" Then
         objType = aShape.OLEFormat.ClassType
     Else
         objType = aShape.OLEFormat.ProgID
     End If
-        
+
     getAppSpecificOLEClassType = objType
 End Function
 
@@ -146,4 +146,3 @@ Private Sub SetWordDriverText()
     ThisDocument.FormFields.item("RID_STR_WDVR_ISSUE").Result = RID_STR_WDVR_ISSUE
     ThisDocument.FormFields.item("RID_STR_WDVR_PARA2").Result = RID_STR_WDVR_PARA2
 End Sub
-

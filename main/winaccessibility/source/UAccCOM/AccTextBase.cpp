@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 //////////////////////////////////////////////////////////////////////
@@ -60,7 +60,7 @@ CAccTextBase::~CAccTextBase()
 */
 STDMETHODIMP CAccTextBase::get_addSelection(long startOffset, long endOffset)
 {
-    
+
 	CHECK_ENABLE_INF
 
     ENTER_PROTECTED_BLOCK
@@ -99,7 +99,7 @@ STDMETHODIMP CAccTextBase::get_addSelection(long startOffset, long endOffset)
 */
 STDMETHODIMP CAccTextBase::get_attributes(long offset, long * startOffset, long * endOffset, BSTR * textAttributes)
 {
-    
+
 	CHECK_ENABLE_INF
 
     ENTER_PROTECTED_BLOCK
@@ -115,7 +115,7 @@ STDMETHODIMP CAccTextBase::get_attributes(long offset, long * startOffset, long 
     if( offset < 0 || offset > GetXInterface()->getCharacterCount() )
         return E_FAIL;
 
-	std::wstring strAttrs;  
+	std::wstring strAttrs;
 
     strAttrs += L"Version:1;";
 
@@ -222,7 +222,7 @@ STDMETHODIMP CAccTextBase::get_attributes(long offset, long * startOffset, long 
 */
 STDMETHODIMP CAccTextBase::get_caretOffset(long * offset)
 {
-    
+
 	CHECK_ENABLE_INF
 
     ENTER_PROTECTED_BLOCK
@@ -249,7 +249,7 @@ STDMETHODIMP CAccTextBase::get_caretOffset(long * offset)
 */
 STDMETHODIMP CAccTextBase::get_characterCount(long * nCharacters)
 {
-    
+
 	CHECK_ENABLE_INF
 
     ENTER_PROTECTED_BLOCK
@@ -280,7 +280,7 @@ STDMETHODIMP CAccTextBase::get_characterCount(long * nCharacters)
 */
 STDMETHODIMP CAccTextBase::get_characterExtents(long offset, IA2CoordinateType coordType, long * x, long * y, long * width, long * height)
 {
-    
+
 	CHECK_ENABLE_INF
 
     ENTER_PROTECTED_BLOCK
@@ -353,7 +353,7 @@ STDMETHODIMP CAccTextBase::get_characterExtents(long offset, IA2CoordinateType c
 */
 STDMETHODIMP CAccTextBase::get_nSelections(long * nSelections)
 {
-    
+
 	CHECK_ENABLE_INF
 
     ENTER_PROTECTED_BLOCK
@@ -428,7 +428,7 @@ STDMETHODIMP CAccTextBase::get_offsetAtPoint(long x, long y, IA2CoordinateType, 
 
 STDMETHODIMP CAccTextBase::get_selection(long selectionIndex, long * startOffset, long * endOffset)
 {
-    
+
 	CHECK_ENABLE_INF
 
     ENTER_PROTECTED_BLOCK
@@ -478,7 +478,7 @@ STDMETHODIMP CAccTextBase::get_selection(long selectionIndex, long * startOffset
 */
 STDMETHODIMP CAccTextBase::get_text(long startOffset, long endOffset, BSTR * text)
 {
-    
+
 	CHECK_ENABLE_INF
 
     ENTER_PROTECTED_BLOCK
@@ -526,7 +526,7 @@ STDMETHODIMP CAccTextBase::get_text(long startOffset, long endOffset, BSTR * tex
 */
 STDMETHODIMP CAccTextBase::get_textBeforeOffset(long offset, IA2TextBoundaryType boundaryType, long * startOffset, long * endOffset, BSTR * text)
 {
-    
+
 	CHECK_ENABLE_INF
 
     ENTER_PROTECTED_BLOCK
@@ -615,7 +615,7 @@ STDMETHODIMP CAccTextBase::get_textBeforeOffset(long offset, IA2TextBoundaryType
 */
 STDMETHODIMP CAccTextBase::get_textAfterOffset(long offset, IA2TextBoundaryType boundaryType, long * startOffset, long * endOffset, BSTR * text)
 {
-    
+
 	CHECK_ENABLE_INF
 
     ENTER_PROTECTED_BLOCK
@@ -702,7 +702,7 @@ STDMETHODIMP CAccTextBase::get_textAfterOffset(long offset, IA2TextBoundaryType 
 */
 STDMETHODIMP CAccTextBase::get_textAtOffset(long offset, IA2TextBoundaryType boundaryType, long * startOffset, long * endOffset, BSTR * text)
 {
-    
+
 
 	CHECK_ENABLE_INF
 
@@ -788,7 +788,7 @@ STDMETHODIMP CAccTextBase::get_textAtOffset(long offset, IA2TextBoundaryType bou
 */
 STDMETHODIMP CAccTextBase::removeSelection(long selectionIndex)
 {
-    
+
 	CHECK_ENABLE_INF
 
     ENTER_PROTECTED_BLOCK
@@ -827,7 +827,7 @@ STDMETHODIMP CAccTextBase::removeSelection(long selectionIndex)
 */
 STDMETHODIMP CAccTextBase::setCaretOffset(long offset)
 {
-    
+
 	CHECK_ENABLE_INF
 
     ENTER_PROTECTED_BLOCK
@@ -853,7 +853,7 @@ STDMETHODIMP CAccTextBase::setCaretOffset(long offset)
 */
 STDMETHODIMP CAccTextBase::setSelection(long, long startOffset, long endOffset)
 {
-    
+
 	CHECK_ENABLE_INF
 
     ENTER_PROTECTED_BLOCK
@@ -878,7 +878,7 @@ STDMETHODIMP CAccTextBase::setSelection(long, long startOffset, long endOffset)
 */
 STDMETHODIMP CAccTextBase::get_nCharacters(long * nCharacters)
 {
-    
+
 	CHECK_ENABLE_INF
 
     ENTER_PROTECTED_BLOCK
@@ -918,7 +918,7 @@ STDMETHODIMP CAccTextBase::get_oldText( IA2TextSegment *)
 */
 STDMETHODIMP CAccTextBase::scrollSubstringToPoint(long, long, IA2CoordinateType, long, long )
 {
-    
+
 
     ENTER_PROTECTED_BLOCK
 
@@ -929,7 +929,7 @@ STDMETHODIMP CAccTextBase::scrollSubstringToPoint(long, long, IA2CoordinateType,
 
 STDMETHODIMP CAccTextBase::scrollSubstringTo(long, long, IA2ScrollType)
 {
-    
+
 
     ENTER_PROTECTED_BLOCK
 
@@ -945,7 +945,7 @@ STDMETHODIMP CAccTextBase::scrollSubstringTo(long, long, IA2ScrollType)
 */
 STDMETHODIMP CAccTextBase::put_XInterface(long pXInterface)
 {
-    
+
 	CHECK_ENABLE_INF
 
     ENTER_PROTECTED_BLOCK

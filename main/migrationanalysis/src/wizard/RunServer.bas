@@ -8,9 +8,9 @@ Attribute VB_Name = "RunServer"
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -50,7 +50,7 @@ Sub Main()
 
     Dim fso As New FileSystemObject
     Dim driverName As String
-    
+
     If (serverType = CWORD_APP) Then
         driverName = fso.GetAbsolutePathName(".\" & CWORD_DRIVER)
     ElseIf (serverType = CEXCEL_APP) Then
@@ -96,12 +96,12 @@ Sub OpenWordDriverDoc(fso As FileSystemObject, driverName As String)
 
     Set wrdApp = New Word.Application
     Set wrdDriverDoc = wrdApp.Documents.Open(driverName)
-    
+
     wrdApp.Run ("AnalysisTool.AnalysisDriver.AnalyseDirectory")
     If Err.Number <> 0 Then
         WriteToLog fso, CWORD_APP, "OpenWordDriverDoc: " & Err.Number & " " & Err.Description & " " & Err.Source
     End If
-    
+
     wrdDriverDoc.Close wdDoNotSaveChanges
     wrdApp.Quit False
 
@@ -189,4 +189,3 @@ Sub WriteToLog(fso As FileSystemObject, currApp As String, errMsg As String)
     Call WritePrivateProfileString("ERRORS", currApp & "_log" & ErrCount, _
                                    errMsg, logFileName)
 End Sub
-

@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #ifndef _FRAMEWORK_TITLEHELPER_HXX_
 #define _FRAMEWORK_TITLEHELPER_HXX_
 
@@ -92,9 +90,9 @@ class FWE_DLLPUBLIC TitleHelper : private ::cppu::BaseMutex
         /** set an outside component which uses this container and must be set
             as source of all broadcasted messages, exceptions.
 
-            It's holded weak only so we do not need any complex dispose sessions.
+            It's held weak only so we do not need any complex dispose sessions.
 
-            Note: Passing NULL as parameter will be alloed. It will reset the internal
+            Note: Passing NULL as parameter will be allowed. It will reset the internal
             member reference only.
 
             @param  xOwner
@@ -103,12 +101,12 @@ class FWE_DLLPUBLIC TitleHelper : private ::cppu::BaseMutex
         void setOwner (const css::uno::Reference< css::uno::XInterface >& xOwner);
 
         //---------------------------------------
-        /** set an outside component which provides the righht string and number for
+        /** set an outside component which provides the right string and number for
             an untitled component.
 
-            It's holded weak only so we do not need any complex dispose sessions.
+            It's held weak only so we do not need any complex dispose sessions.
 
-            Note: Passing NULL as parameter will be alloed. It will reset the internal
+            Note: Passing NULL as parameter will be allowed. It will reset the internal
             member reference only.
 
             @param  xNumbers
@@ -222,3 +220,5 @@ class FWE_DLLPUBLIC TitleHelper : private ::cppu::BaseMutex
 } // namespace framework
 
 #endif // _FRAMEWORK_TITLEHELPER_HXX_
+
+/* vim: set noet sw=4 ts=4: */

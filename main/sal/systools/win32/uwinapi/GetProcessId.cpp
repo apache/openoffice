@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -57,7 +57,7 @@ static FARPROC WINAPI GetRealProcAddress( HMODULE hModule, LPCSTR lpProcName )
 			BFF956C6 58                   pop         eax
 			BFF956C7 9D                   popfd
 			BFF956C8 C3                   ret
-			*/		
+			*/
 		}
 	}
 
@@ -78,7 +78,7 @@ static DWORD WINAPI Obfuscate( DWORD dwPTID )
 
 		if ( lpCode )
 		{
-			/* 
+			/*
 			GetCurrentThreadId:
 			lpCode + 00 BFF84936 A1 DC 9C FC BF       mov         eax,[BFFC9CDC]	; This is the real thread id
 			lpcode + 05 BFF8493B FF 30                push        dword ptr [eax]
@@ -100,7 +100,7 @@ static DWORD WINAPI Obfuscate( DWORD dwPTID )
 			BFF80E6A C2 04 00             ret         4
 			*/
 		}
-		
+
 	}
 
 	return lpfnObfuscate ? lpfnObfuscate( dwPTID ) : 0;
@@ -121,16 +121,16 @@ EXTERN_C DWORD WINAPI GetProcessId_WINDOWS( HANDLE hProcess )
 
 		if ( 0 == ((DWORD)hProcess & 0x03) && dwHandleNumber < pPDB->pHandleTable->cEntries )
 		{
-			if ( 
-				pPDB->pHandleTable->array[dwHandleNumber].pObject && 
-				K32OBJ_PROCESS == pPDB->pHandleTable->array[dwHandleNumber].pObject->Type 
+			if (
+				pPDB->pHandleTable->array[dwHandleNumber].pObject &&
+				K32OBJ_PROCESS == pPDB->pHandleTable->array[dwHandleNumber].pObject->Type
 				)
 			dwProcessId = Obfuscate( (DWORD)pPDB->pHandleTable->array[dwHandleNumber].pObject );
 		}
 
 		SetLastError( ERROR_INVALID_HANDLE );
 	}
-	
+
 	return dwProcessId;
 }
 

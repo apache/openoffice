@@ -241,7 +241,7 @@ namespace basegfx
                 // the four implied half-planes, but the outer part is not.
                 // It is possible for strokes, but with creating unnecessary extra
                 // cuts, so using clipPolygonOnPolyPolygon is better there, too.
-                // This needs to be done with the topology knowlegde and is unfurtunately
+                // This needs to be done with the topology knowledge and is unfortunately
                 // more expensive, too.
         		const B2DPolygon aClip(createPolygonFromRect(rRange));
 
@@ -657,7 +657,7 @@ namespace basegfx
 		* inside	|inside		|next
 		* inside	|outside	|intersect with clip plane
 		* outside	|outside	|nothing
-		* outside	|inside		|intersect with clip plane follwed by next
+		* outside	|inside		|intersect with clip plane followed by next
 		*
 		*/
 		sal_uInt32 scissorLineSegment( ::basegfx::B2DPoint			 *in_vertex,	// input buffer

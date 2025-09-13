@@ -26,7 +26,7 @@ repos:
       - id: identity
       - id: check-hooks-apply
   - repo: https://github.com/gitleaks/gitleaks
-    rev: v8.27.2
+    rev: v8.28.0
     hooks:
       - id: gitleaks
         name: run gitleaks
@@ -44,19 +44,20 @@ repos:
           - .github/workflows/license-templates/LICENSE.txt
           - --fuzzy-match-generates-todo
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
+    rev: v6.0.0
     hooks:
       - id: check-case-conflict
       - id: check-illegal-windows-names
       - id: check-merge-conflict
       - id: check-vcs-permalinks
       - id: end-of-file-fixer
-        files: (m|M)akefile$|\.(asp|bat|c|cl|common|component|cxx|dxp|el|h|hrc|hxx|idl|in|ini|java|m|m4|md|mk|mm|mod|pas|php|pl|pm|pmk|py|rc|rdf|rng|sh|vbs|xba|xcs|xcu|xdl|xhp|xlb|xmi|xml|xsd|xslt?|ya?ml)$|^ext_libraries/.*$|^test/.*$
+        files: (m|M)akefile$|\.(asp|bas|bat|c|cl|cmd|common|component|cpp|cxx|dxp|el|h|hrc|hxx|idl|in|ini|java|js|lst|m|m4|map|md|mk|mm|mod|pas|php|pl|pm|pmk|py|rc|rdf|rng|sh|ulf|vbs|xba|xcs|xcu|xdl|xhp|xlb|xmi|xml|xsd|xslt?|ya?ml)$|^ext_libraries/.*$|^test/.*$
       - id: fix-byte-order-marker
       - id: mixed-line-ending
-        files: \.(asp|c|cl|common|component|cxx|dxp|el|h|hrc|hxx|idl|in|ini|java|m|m4|md|mk|mm|mod|pas|php|pl|pm|pmk|py|rc|rdf|rng|sh|xba|xcs|xcu|xdl|xhp|xlb|xmi|xsd|xslt?|ya?ml)$|^main/accessibility/.*$|^main/afms/.*$|^main/animations/.*$|^main/apache-commons/.*$|^test/testgui/.*$
+        files: \.(asp|bas|c|cl|cmd|common|component|cpp|cxx|dxp|el|h|hrc|hxx|idl|in|ini|java|js|lst|m|m4|map|md|mk|mm|mod|pas|php|pl|pm|pmk|py|rc|rdf|rng|sh|ulf|vbs|xba|xcs|xcu|xdl|xhp|xlb|xmi|xsd|xslt?|ya?ml)$|^main/accessibility/.*$|^main/afms/.*$|^main/animations/.*$|^main/apache-commons/.*$|^test/testgui/.*$
       - id: trailing-whitespace
-        files: (m|M)akefile$|\.(asp|bat|c|cl|common|component|cxx|dxp|el|h|hrc|hxx|idl|in|ini|java|m|m4|mk|mm|mod|pas|php|pl|pm|pmk|py|rc|rdf|rng|sh|vbs|xba|xcs|xcu|xdl|xhp|xlb|xmi|xml|xsd|ya?ml)$
+        files: (m|M)akefile$|\.(asp|bas|bat|c|cl|cmd|common|component|cpp|cxx|dxp|el|h|hrc|hxx|idl|in|ini|java|js|lst|m|m4|map|md|mk|mm|mod|pas|php|pl|pm|pmk|py|rc|rdf|rng|sh|ulf|vbs|xba|xcs|xcu|xdl|xhp|xlb|xmi|xml|xsd|ya?ml)$
+        args: [--markdown-linebreak-ext=md]
   - repo: https://github.com/codespell-project/codespell
     rev: v2.4.1
     hooks:

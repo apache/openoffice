@@ -8,9 +8,9 @@ Attribute VB_Name = "ApplicationSpecific"
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -116,13 +116,13 @@ End Function
 
 Public Function getAppSpecificOLEClassType(aShape As Shape) As String
     Dim objType As String
-    
+
     If aShape.OLEFormat.ProgID = "" Then
         objType = aShape.OLEFormat.ClassType
     Else
         objType = aShape.OLEFormat.ProgID
     End If
-        
+
     getAppSpecificOLEClassType = objType
 End Function
 
@@ -134,13 +134,13 @@ End Sub
 Public Sub LocalizeResources()
     Dim xlStrings As StringDataManager
     Set xlStrings = New StringDataManager
-   
+
     xlStrings.InitStringData (GetResourceDataFileName(ThisWorkbook.path))
     LoadCommonStrings xlStrings
     LoadExcelStrings xlStrings
     LoadResultsStrings xlStrings
     Set xlStrings = Nothing
-    
+
     SetWBDriverText
 End Sub
 
@@ -155,4 +155,3 @@ Public Sub SetWBDriverText()
     ThisWorkbook.Names("RID_STR_DVR_XL_THIS_DOC").RefersToRange.Cells(1, 1) = RID_STR_DVR_XL_THIS_DOC
     ThisWorkbook.Names("RID_STR_DVR_XL_TITLE").RefersToRange.Cells(1, 1) = RID_STR_DVR_XL_TITLE
 End Sub
-

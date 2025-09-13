@@ -19,7 +19,6 @@
  *
  *************************************************************/
 
-
 #ifndef __FRAMEWORK_CLASSES_STATUSBARCONFIGURATION_HXX_
 #define __FRAMEWORK_CLASSES_STATUSBARCONFIGURATION_HXX_
 
@@ -41,7 +40,7 @@ struct FWE_DLLPUBLIC StatusBarItemDescriptor
 {
 	String	aURL;						// URL command to dispatch
 	long	nItemBits;					// properties for this statusbar item (WinBits)
-	long 	nWidth;						// width of a statusbar item
+	long	nWidth;						// width of a statusbar item
 	long	nOffset;					// offset
 
 	public:
@@ -65,17 +64,19 @@ class FWE_DLLPUBLIC StatusBarConfiguration
 			const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& xServiceFactory,
 			SvStream& rOutStream, const StatusBarDescriptor& aItems );
 
-        static sal_Bool LoadStatusBar(
+		static sal_Bool LoadStatusBar(
 			const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& xServiceFactory,
-            const ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream >& xInputStream,
-            const ::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexContainer >& rStatusbarConfiguration );
+			const ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream >& xInputStream,
+			const ::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexContainer >& rStatusbarConfiguration );
 
-        static sal_Bool StoreStatusBar(
+		static sal_Bool StoreStatusBar(
 			const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& xServiceFactory,
-            const ::com::sun::star::uno::Reference< ::com::sun::star::io::XOutputStream >& xOutputStream,
-            const ::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexAccess >& rStatusbarConfiguration );
+			const ::com::sun::star::uno::Reference< ::com::sun::star::io::XOutputStream >& xOutputStream,
+			const ::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexAccess >& rStatusbarConfiguration );
 };
 
 } // namespace framework
 
 #endif // __FRAMEWORK_CLASSES_STATUSBARCONFIGURATION_HXX_
+
+/* vim: set noet sw=4 ts=4: */

@@ -511,7 +511,7 @@ class ImplUCBPrintWatcher : public ::osl::Thread
             /* } SAFE */
 
             // lock for further using of our member isn't necessary - because
-            // we truns alone by defenition. Nobody join for us nor use us ...
+            // we truns alone by definition. Nobody join for us nor use us ...
             ImplUCBPrintWatcher::moveAndDeleteTemp(&m_pTempFile,m_sTargetURL);
 
             // finishing of this run() method will call onTerminate() automatically

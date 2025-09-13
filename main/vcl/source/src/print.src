@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #include "svids.hrc"
 
 ModalDialog SV_DLG_PRINT
@@ -160,13 +158,13 @@ ModalDialog SV_DLG_PRINT
 			CurPos = 0 ;
 			StringList [en-US] =
 			{
-				< "1" ; 1; > ;
-				< "2" ; 2; > ;
-				< "4" ; 4; > ;
-				< "6" ; 6; > ;
-				< "9" ; 9; > ;
-				< "16" ; 16; > ;
-				< "Custom" ; 0xffff; > ;
+				< "1" ; 1;				> ;
+				< "2" ; 2;				> ;
+				< "4" ; 4;				> ;
+				< "6" ; 6;				> ;
+				< "9" ; 9;				> ;
+				< "16" ; 16;			> ;
+				< "Custom" ; 0xffff;	> ;
 			};
 		};
 		FixedText SV_PRINT_PRT_NUP_NUM_PAGES_TXT
@@ -265,9 +263,9 @@ ModalDialog SV_DLG_PRINT
 			CurPos = 0 ;
 			StringList [en-US] =
 			{
-				< "Automatic" ; SV_PRINT_PRT_NUP_ORIENTATION_AUTOMATIC; > ;
-				< "Portrait" ; SV_PRINT_PRT_NUP_ORIENTATION_PORTRAIT; > ;
-				< "Landscape" ; SV_PRINT_PRT_NUP_ORIENTATION_LANDSCAPE; > ;
+				< "Automatic" ; SV_PRINT_PRT_NUP_ORIENTATION_AUTOMATIC;	> ;
+				< "Portrait" ; SV_PRINT_PRT_NUP_ORIENTATION_PORTRAIT;	> ;
+				< "Landscape" ; SV_PRINT_PRT_NUP_ORIENTATION_LANDSCAPE;	> ;
 			};
 		};
 		FixedText SV_PRINT_PRT_NUP_ORDER_TXT
@@ -286,10 +284,10 @@ ModalDialog SV_DLG_PRINT
 			CurPos = 0 ;
 			StringList [en-US] =
 			{
-				< "left to right, then down" ; SV_PRINT_PRT_NUP_ORDER_LRTB; > ;
-				< "top to bottom, then right" ; SV_PRINT_PRT_NUP_ORDER_TBLR; > ;
-				< "top to bottom, then left" ; SV_PRINT_PRT_NUP_ORDER_TBRL; > ;
-				< "right to left, then down" ; SV_PRINT_PRT_NUP_ORDER_RLTB; > ;
+				< "left to right, then down" ; SV_PRINT_PRT_NUP_ORDER_LRTB;		> ;
+				< "top to bottom, then right" ; SV_PRINT_PRT_NUP_ORDER_TBLR;	> ;
+				< "top to bottom, then left" ; SV_PRINT_PRT_NUP_ORDER_TBRL;		> ;
+				< "right to left, then down" ; SV_PRINT_PRT_NUP_ORDER_RLTB;		> ;
 			};
 		};
 		CheckBox SV_PRINT_PRT_NUP_BORDER_CB
@@ -488,11 +486,11 @@ StringArray SV_PRINT_NATIVE_STRINGS
 {
 	ItemList [en-US] =
 	{
-		< "Preview" ; > ;
-		< "Page number" ; > ;
-		< "Number of pages" ; > ;
-		< "More" ; >;
-		< "Print selection only" ; > ;
+		< "Preview" ;				> ;
+		< "Page number" ;			> ;
+		< "Number of pages" ;		> ;
+		< "More" ;					> ;
+		< "Print selection only" ;	> ;
 	};
 };
 

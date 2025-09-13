@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -59,7 +59,7 @@ STDAPI DllGetClassObject(REFCLSID rclsid, REFIID riid, LPVOID *ppv)
 {
 	// Create the factory object
 	CXMergeFactory *pFactory = new CXMergeFactory();
-	if (pFactory == NULL) 
+	if (pFactory == NULL)
 	{
 		*ppv = NULL;
 		return E_OUTOFMEMORY;
@@ -72,7 +72,7 @@ STDAPI DllGetClassObject(REFCLSID rclsid, REFIID riid, LPVOID *ppv)
 }
 
 
-STDAPI DllCanUnloadNow() 
+STDAPI DllCanUnloadNow()
 {
 	if (_Module.GetLockCount() == 0)
 		return S_OK;
@@ -87,10 +87,10 @@ static _signalRegError(long lRet, HKEY hKey, HKEY hDataKey)
 	if (hKey)
 		::RegCloseKey(hKey);
 
-	
+
 	if (hDataKey)
 		::RegCloseKey(hDataKey);
-	
+
 	return HRESULT_FROM_WIN32(lRet);
 }
 
@@ -99,7 +99,7 @@ STDAPI DllRegisterServer()
 {
 	HKEY hKey = NULL;
 	HKEY hDataKey = NULL;
-	
+
 	long lRet = 0;
 	TCHAR sTemp[_MAX_PATH + 1] = "\0";
 
@@ -107,23 +107,23 @@ STDAPI DllRegisterServer()
 	/*
 	 * Following calls create the HKEY_CLASSES_ROOT\CLSID entry for the Writer export filter.
 	 *
-	 * Note that import are export are relative to the WinCE device, so files are 
+	 * Note that import are export are relative to the WinCE device, so files are
 	 * exported to the desktop format.
 	 */
 
 	// Get a handle to the CLSID key
 	lRet = ::RegOpenKeyEx(HKEY_CLASSES_ROOT, _T("CLSID"), 0, KEY_ALL_ACCESS, &hKey);
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 	// Create the CLSID key for the XMergeFilter
 	lRet = ::RegCreateKeyEx(hKey, CXMergeFilter::m_pszPSWExportCLSID, 0, _T(""), 0, KEY_ALL_ACCESS, NULL, &hKey, NULL);
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 	lRet = ::RegSetValueEx(hKey, _T(""), 0, REG_SZ, (LPBYTE)CXMergeFilter::m_pszPSWExportShortDesc,
 				(::_tcslen(CXMergeFilter::m_pszPSWExportShortDesc) * sizeof(TCHAR) + (1 * sizeof(TCHAR))));
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 
@@ -133,7 +133,7 @@ STDAPI DllRegisterServer()
 		return _signalRegError(lRet, hKey, hDataKey);
 
 	lRet = ::RegSetValueEx(hDataKey, NULL, 0, REG_SZ, (LPBYTE)_T("C:\\Program Files\\Microsoft ActiveSync\\pwdcnv.dll,0"),
-							(::_tcslen(_T("C:\\Program Files\\Microsoft ActiveSync\\pwdcnv.dll,0")) 
+							(::_tcslen(_T("C:\\Program Files\\Microsoft ActiveSync\\pwdcnv.dll,0"))
 							   * sizeof(TCHAR) + (1 * sizeof(TCHAR))));
 	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
@@ -141,48 +141,48 @@ STDAPI DllRegisterServer()
 
 	// Create the InprocServer32 key
 	lRet = ::RegCreateKeyEx(hKey, _T("InProcServer32"), 0, _T(""), 0, KEY_ALL_ACCESS, NULL, &hDataKey, NULL);
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 	lRet = ::RegSetValueEx(hDataKey, _T("ThreadingModel"), 0, REG_SZ, (LPBYTE)_T("Apartment"), 10);
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
-	
+
 	// Create the key for the DLL file.  First find the filename of the dll
 	if (!::GetModuleFileName((HMODULE)_Module.m_hInst, sTemp, (_MAX_PATH + 1)))
 	{
 		lRet = ::GetLastError();
-		if (lRet != ERROR_SUCCESS) 
-			return _signalRegError(lRet, hKey, hDataKey);	
+		if (lRet != ERROR_SUCCESS)
+			return _signalRegError(lRet, hKey, hDataKey);
 	}
-	
-	
-	lRet = ::RegSetValueEx(hDataKey, NULL, 0, REG_SZ, (LPBYTE)sTemp, 
+
+
+	lRet = ::RegSetValueEx(hDataKey, NULL, 0, REG_SZ, (LPBYTE)sTemp,
 				(::_tcslen(sTemp) * sizeof(TCHAR) + (1 * sizeof(TCHAR))));
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 	::RegCloseKey(hDataKey);	hDataKey = NULL;
 
 
 	// Setup the PegasusFilter key values
 	lRet = ::RegCreateKeyEx(hKey, _T("PegasusFilter"), 0, _T(""), 0, KEY_ALL_ACCESS, NULL, &hDataKey, NULL);
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 	lRet = ::RegSetValueEx(hDataKey, _T("Description"), 0, REG_SZ, (LPBYTE)CXMergeFilter::m_pszPSWExportDesc,
 				(::_tcslen(CXMergeFilter::m_pszPSWExportDesc) * sizeof(TCHAR) + (1 * sizeof(TCHAR))));
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 
 	lRet = ::RegSetValueEx(hDataKey, _T("Export"), 0, REG_SZ, (LPBYTE)_T(""), (1 * sizeof(TCHAR)));
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 
 	lRet = ::RegSetValueEx(hDataKey, _T("NewExtension"), 0, REG_SZ, (LPBYTE)CXMergeFilter::m_pszPSWExportExt,
 				(::_tcslen(CXMergeFilter::m_pszPSWExportExt) * sizeof(TCHAR) + (1 * sizeof(TCHAR))));
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 
@@ -193,23 +193,23 @@ STDAPI DllRegisterServer()
 
 
 	/*
-	 * Following calls create the entries for the filter in 
+	 * Following calls create the entries for the filter in
 	 * HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows CE Services\Filters
 	 */
 
-	lRet = ::RegOpenKeyEx(HKEY_LOCAL_MACHINE, _T("SOFTWARE\\Microsoft\\Windows CE Services\\Filters"), 
+	lRet = ::RegOpenKeyEx(HKEY_LOCAL_MACHINE, _T("SOFTWARE\\Microsoft\\Windows CE Services\\Filters"),
 				0, KEY_ALL_ACCESS, &hKey);
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 	_snprintf(sTemp, _MAX_PATH + 1, "%c%s\\InstalledFilters\0", '.', CXMergeFilter::m_pszPSWImportExt);
-	lRet = ::RegCreateKeyEx(hKey, _T(sTemp), 
+	lRet = ::RegCreateKeyEx(hKey, _T(sTemp),
 				0, _T(""), 0, KEY_ALL_ACCESS, NULL, &hDataKey, NULL);
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 	lRet = ::RegSetValueEx(hDataKey, CXMergeFilter::m_pszPSWExportCLSID, 0, REG_SZ, (LPBYTE)_T(""), (1 * sizeof(TCHAR)));
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 	::RegCloseKey(hKey);		hKey = NULL;
@@ -220,22 +220,22 @@ STDAPI DllRegisterServer()
 	/*
 	 * Following calls create the HKEY_CLASSES_ROOT\CLSID entry for the Writer import filter.
 	 *
-	 * Note that import are export are relative to the WinCE device, so files are 
+	 * Note that import are export are relative to the WinCE device, so files are
 	 * exported to the desktop format.
 	 */
 	// Get a handle to the CLSID key
 	lRet = ::RegOpenKeyEx(HKEY_CLASSES_ROOT, _T("CLSID"), 0, KEY_ALL_ACCESS, &hKey);
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 	// Create the CLSID key for the XMergeFilter
 	lRet = ::RegCreateKeyEx(hKey, CXMergeFilter::m_pszPSWImportCLSID, 0, _T(""), 0, KEY_ALL_ACCESS, NULL, &hKey, NULL);
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 	lRet = ::RegSetValueEx(hKey, _T(""), 0, REG_SZ, (LPBYTE)CXMergeFilter::m_pszPSWImportShortDesc,
 				(::_tcslen(CXMergeFilter::m_pszPSWImportShortDesc) * sizeof(TCHAR) + (1 * sizeof(TCHAR))));
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 
@@ -245,20 +245,20 @@ STDAPI DllRegisterServer()
 		return _signalRegError(lRet, hKey, hDataKey);
 
 	lRet = ::RegSetValueEx(hDataKey, NULL, 0, REG_SZ, (LPBYTE)_T("C:\\Program Files\\Microsoft ActiveSync\\pwdcnv.dll,0"),
-							(::_tcslen(_T("C:\\Program Files\\Microsoft ActiveSync\\pwdcnv.dll,0")) 
+							(::_tcslen(_T("C:\\Program Files\\Microsoft ActiveSync\\pwdcnv.dll,0"))
 							   * sizeof(TCHAR) + (1 * sizeof(TCHAR))));
 	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 	::RegCloseKey(hDataKey);  hDataKey = NULL;
 
-	
+
 	// Create the InprocServer32 key
 	lRet = ::RegCreateKeyEx(hKey, _T("InProcServer32"), 0, _T(""), 0, KEY_ALL_ACCESS, NULL, &hDataKey, NULL);
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 	lRet = ::RegSetValueEx(hDataKey, _T("ThreadingModel"), 0, REG_SZ, (LPBYTE)_T("Apartment"), 10);
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 
@@ -266,37 +266,37 @@ STDAPI DllRegisterServer()
 	if (!::GetModuleFileName((HMODULE)_Module.m_hInst, sTemp, (_MAX_PATH + 1)))
 	{
 		lRet = ::GetLastError();
-		if (lRet != ERROR_SUCCESS) 
-			return _signalRegError(lRet, hKey, hDataKey);	
+		if (lRet != ERROR_SUCCESS)
+			return _signalRegError(lRet, hKey, hDataKey);
 	}
-	
-	
-	lRet = ::RegSetValueEx(hDataKey, NULL, 0, REG_SZ, (LPBYTE)sTemp, 
+
+
+	lRet = ::RegSetValueEx(hDataKey, NULL, 0, REG_SZ, (LPBYTE)sTemp,
 				(::_tcslen(sTemp) * sizeof(TCHAR) + (1 * sizeof(TCHAR))));
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 	::RegCloseKey(hDataKey);	hDataKey = NULL;
 
 
 	// Setup the PegasusFilter key values
 	lRet = ::RegCreateKeyEx(hKey, _T("PegasusFilter"), 0, _T(""), 0, KEY_ALL_ACCESS, NULL, &hDataKey, NULL);
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 		lRet = ::RegSetValueEx(hDataKey, _T("Description"), 0, REG_SZ, (LPBYTE)CXMergeFilter::m_pszPSWImportDesc,
 				(::_tcslen(CXMergeFilter::m_pszPSWImportDesc) * sizeof(TCHAR) + (1 * sizeof(TCHAR))));
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 
 	lRet = ::RegSetValueEx(hDataKey, _T("Import"), 0, REG_SZ, (LPBYTE)_T(""), (1 * sizeof(TCHAR)));
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 
 	lRet = ::RegSetValueEx(hDataKey, _T("NewExtension"), 0, REG_SZ, (LPBYTE)CXMergeFilter::m_pszPSWImportExt,
 				(::_tcslen(CXMergeFilter::m_pszPSWImportExt) * sizeof(TCHAR) + (1 * sizeof(TCHAR))));
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 
@@ -305,44 +305,44 @@ STDAPI DllRegisterServer()
 
 
 	/*
-	 * Following calls create the entries for the filter in 
+	 * Following calls create the entries for the filter in
 	 * HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows CE Services\Filters
 	 */
-	lRet = ::RegOpenKeyEx(HKEY_LOCAL_MACHINE, _T("SOFTWARE\\Microsoft\\Windows CE Services\\Filters"), 
+	lRet = ::RegOpenKeyEx(HKEY_LOCAL_MACHINE, _T("SOFTWARE\\Microsoft\\Windows CE Services\\Filters"),
 				0, KEY_ALL_ACCESS, &hKey);
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 	// Add in defaults for import and export
 	_snprintf(sTemp, _MAX_PATH +1, "%c%s\0", '.', CXMergeFilter::m_pszPSWExportExt);
 	lRet = ::RegCreateKeyEx(hKey, _T(sTemp), 0, _T(""), 0, KEY_ALL_ACCESS, NULL, &hDataKey, NULL);
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
-	lRet = ::RegSetValueEx(hDataKey, _T("DefaultImport"), 0, REG_SZ, 
-							(LPBYTE)CXMergeFilter::m_pszPSWImportCLSID, 
+	lRet = ::RegSetValueEx(hDataKey, _T("DefaultImport"), 0, REG_SZ,
+							(LPBYTE)CXMergeFilter::m_pszPSWImportCLSID,
 							(::_tcslen(CXMergeFilter::m_pszPSWImportDesc) * sizeof(TCHAR) + (1 * sizeof(TCHAR))));
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 
 	lRet = ::RegSetValueEx(hDataKey, _T("DefaultExport"), 0, REG_SZ, (LPBYTE)_T("Binary Copy"),
 							(::_tcslen(_T("Binary Copy")) * sizeof(TCHAR) + (1 * sizeof(TCHAR))));
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 	::RegCloseKey(hDataKey);
-							
+
 	// Update registered filters
 	_snprintf(sTemp, _MAX_PATH + 1, "%c%s\\InstalledFilters\0", '.', CXMergeFilter::m_pszPSWExportExt);
-	lRet = ::RegCreateKeyEx(hKey, _T(sTemp), 
+	lRet = ::RegCreateKeyEx(hKey, _T(sTemp),
 				0, _T(""), 0, KEY_ALL_ACCESS, NULL, &hDataKey, NULL);
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
-	
+
 	lRet = ::RegSetValueEx(hDataKey, CXMergeFilter::m_pszPSWImportCLSID, 0, REG_SZ, (LPBYTE)_T(""), (1 * sizeof(TCHAR)));
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 	::RegCloseKey(hKey);		hKey = NULL;
@@ -353,24 +353,24 @@ STDAPI DllRegisterServer()
 	/*
 	 * Following calls create the HKEY_CLASSES_ROOT\CLSID entry for the Calc export filter.
 	 *
-	 * Note that import are export are relative to the WinCE device, so files are 
+	 * Note that import are export are relative to the WinCE device, so files are
 	 * exported to the desktop format.
 	 */
 
 	// Get a handle to the CLSID key
 	lRet = ::RegOpenKeyEx(HKEY_CLASSES_ROOT, _T("CLSID"), 0, KEY_ALL_ACCESS, &hKey);
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 	// Create the CLSID key for the XMerge Filter
-	lRet = ::RegCreateKeyEx(hKey, CXMergeFilter::m_pszPXLExportCLSID, 0, _T(""), 
+	lRet = ::RegCreateKeyEx(hKey, CXMergeFilter::m_pszPXLExportCLSID, 0, _T(""),
 								0, KEY_ALL_ACCESS, NULL, &hKey, NULL);
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 	lRet = ::RegSetValueEx(hKey, _T(""), 0, REG_SZ, (LPBYTE)CXMergeFilter::m_pszPXLExportShortDesc,
 				(::_tcslen(CXMergeFilter::m_pszPXLExportShortDesc) * sizeof(TCHAR) + (1 * sizeof(TCHAR))));
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 
@@ -380,7 +380,7 @@ STDAPI DllRegisterServer()
 		return _signalRegError(lRet, hKey, hDataKey);
 
 	lRet = ::RegSetValueEx(hDataKey, NULL, 0, REG_SZ, (LPBYTE)_T("C:\\Program Files\\Microsoft ActiveSync\\pwdcnv.dll,0"),
-							(::_tcslen(_T("C:\\Program Files\\Microsoft ActiveSync\\pwdcnv.dll,0")) 
+							(::_tcslen(_T("C:\\Program Files\\Microsoft ActiveSync\\pwdcnv.dll,0"))
 							   * sizeof(TCHAR) + (1 * sizeof(TCHAR))));
 	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
@@ -389,49 +389,49 @@ STDAPI DllRegisterServer()
 
 	// Create the InprocServer32 key
 	lRet = ::RegCreateKeyEx(hKey, _T("InProcServer32"), 0, _T(""), 0, KEY_ALL_ACCESS, NULL, &hDataKey, NULL);
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 	lRet = ::RegSetValueEx(hDataKey, _T("ThreadingModel"), 0, REG_SZ, (LPBYTE)_T("Apartment"), 10);
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
-	
+
 	// Create the key for the DLL file.  First find the filename of the dll
 	if (!::GetModuleFileName((HMODULE)_Module.m_hInst, sTemp, (_MAX_PATH + 1)))
 	{
 		lRet = ::GetLastError();
-		if (lRet != ERROR_SUCCESS) 
-			return _signalRegError(lRet, hKey, hDataKey);	
+		if (lRet != ERROR_SUCCESS)
+			return _signalRegError(lRet, hKey, hDataKey);
 	}
-	
-	
-	lRet = ::RegSetValueEx(hDataKey, NULL, 0, REG_SZ, (LPBYTE)sTemp, 
+
+
+	lRet = ::RegSetValueEx(hDataKey, NULL, 0, REG_SZ, (LPBYTE)sTemp,
 				(::_tcslen(sTemp) * sizeof(TCHAR) + (1 * sizeof(TCHAR))));
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 	::RegCloseKey(hDataKey);	hDataKey = NULL;
 
 
 	// Setup the PegasusFilter key values
 	lRet = ::RegCreateKeyEx(hKey, _T("PegasusFilter"), 0, _T(""), 0, KEY_ALL_ACCESS, NULL, &hDataKey, NULL);
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 		lRet = ::RegSetValueEx(hDataKey, _T("Description"), 0, REG_SZ, (LPBYTE)CXMergeFilter::m_pszPXLExportDesc,
 				(::_tcslen(CXMergeFilter::m_pszPXLExportDesc) * sizeof(TCHAR) + (1 * sizeof(TCHAR))));
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 
 	lRet = ::RegSetValueEx(hDataKey, _T("Export"), 0, REG_SZ, (LPBYTE)_T(""), (1 * sizeof(TCHAR)));
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 
 	lRet = ::RegSetValueEx(hDataKey, _T("NewExtension"), 0, REG_SZ, (LPBYTE)CXMergeFilter::m_pszPXLExportExt,
 				(::_tcslen(CXMergeFilter::m_pszPXLExportExt) * sizeof(TCHAR) + (1 * sizeof(TCHAR))));
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 
@@ -442,23 +442,23 @@ STDAPI DllRegisterServer()
 
 
 	/*
-	 * Following calls create the entries for the filter in 
+	 * Following calls create the entries for the filter in
 	 * HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows CE Services\Filters
 	 */
 
-	lRet = ::RegOpenKeyEx(HKEY_LOCAL_MACHINE, _T("SOFTWARE\\Microsoft\\Windows CE Services\\Filters"), 
+	lRet = ::RegOpenKeyEx(HKEY_LOCAL_MACHINE, _T("SOFTWARE\\Microsoft\\Windows CE Services\\Filters"),
 				0, KEY_ALL_ACCESS, &hKey);
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 	_snprintf(sTemp, _MAX_PATH + 1, "%c%s\\InstalledFilters\0", '.', CXMergeFilter::m_pszPXLImportExt);
-	lRet = ::RegCreateKeyEx(hKey, _T(sTemp), 
+	lRet = ::RegCreateKeyEx(hKey, _T(sTemp),
 				0, _T(""), 0, KEY_ALL_ACCESS, NULL, &hDataKey, NULL);
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 	lRet = ::RegSetValueEx(hDataKey, CXMergeFilter::m_pszPXLExportCLSID, 0, REG_SZ, (LPBYTE)_T(""), (1 * sizeof(TCHAR)));
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 	::RegCloseKey(hKey);		hKey = NULL;
@@ -469,23 +469,23 @@ STDAPI DllRegisterServer()
 	/*
 	 * Following calls create the HKEY_CLASSES_ROOT\CLSID entry for the Calc import filter.
 	 *
-	 * Note that import are export are relative to the WinCE device, so files are 
+	 * Note that import are export are relative to the WinCE device, so files are
 	 * exported to the desktop format.
 	 */
 	// Get a handle to the CLSID key
 	lRet = ::RegOpenKeyEx(HKEY_CLASSES_ROOT, _T("CLSID"), 0, KEY_ALL_ACCESS, &hKey);
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 
 	// Create the CLSID key for the XMergeFilter
 	lRet = ::RegCreateKeyEx(hKey, CXMergeFilter::m_pszPXLImportCLSID, 0, _T(""), 0, KEY_ALL_ACCESS, NULL, &hKey, NULL);
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 	lRet = ::RegSetValueEx(hKey, _T(""), 0, REG_SZ, (LPBYTE)CXMergeFilter::m_pszPXLImportShortDesc,
 				(::_tcslen(CXMergeFilter::m_pszPXLImportShortDesc) * sizeof(TCHAR) + (1 * sizeof(TCHAR))));
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 	// Create the DefaultIcon key.  For the moment, use one of the Async supplied ones
@@ -494,20 +494,20 @@ STDAPI DllRegisterServer()
 		return _signalRegError(lRet, hKey, hDataKey);
 
 	lRet = ::RegSetValueEx(hDataKey, NULL, 0, REG_SZ, (LPBYTE)_T("C:\\Program Files\\Microsoft ActiveSync\\pwdcnv.dll,0"),
-							(::_tcslen(_T("C:\\Program Files\\Microsoft ActiveSync\\pwdcnv.dll,0")) 
+							(::_tcslen(_T("C:\\Program Files\\Microsoft ActiveSync\\pwdcnv.dll,0"))
 							   * sizeof(TCHAR) + (1 * sizeof(TCHAR))));
 	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 	::RegCloseKey(hDataKey);  hDataKey = NULL;
 
-	
+
 	// Create the InprocServer32 key
 	lRet = ::RegCreateKeyEx(hKey, _T("InProcServer32"), 0, _T(""), 0, KEY_ALL_ACCESS, NULL, &hDataKey, NULL);
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 	lRet = ::RegSetValueEx(hDataKey, _T("ThreadingModel"), 0, REG_SZ, (LPBYTE)_T("Apartment"), 10);
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 
@@ -515,37 +515,37 @@ STDAPI DllRegisterServer()
 	if (!::GetModuleFileName((HMODULE)_Module.m_hInst, sTemp, (_MAX_PATH + 1)))
 	{
 		lRet = ::GetLastError();
-		if (lRet != ERROR_SUCCESS) 
-			return _signalRegError(lRet, hKey, hDataKey);	
+		if (lRet != ERROR_SUCCESS)
+			return _signalRegError(lRet, hKey, hDataKey);
 	}
-	
-	
-	lRet = ::RegSetValueEx(hDataKey, NULL, 0, REG_SZ, (LPBYTE)sTemp, 
+
+
+	lRet = ::RegSetValueEx(hDataKey, NULL, 0, REG_SZ, (LPBYTE)sTemp,
 				(::_tcslen(sTemp) * sizeof(TCHAR) + (1 * sizeof(TCHAR))));
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 	::RegCloseKey(hDataKey);	hDataKey = NULL;
 
 
 	// Setup the PegasusFilter key values
 	lRet = ::RegCreateKeyEx(hKey, _T("PegasusFilter"), 0, _T(""), 0, KEY_ALL_ACCESS, NULL, &hDataKey, NULL);
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 		lRet = ::RegSetValueEx(hDataKey, _T("Description"), 0, REG_SZ, (LPBYTE)CXMergeFilter::m_pszPXLImportDesc,
 				(::_tcslen(CXMergeFilter::m_pszPXLImportDesc) * sizeof(TCHAR) + (1 * sizeof(TCHAR))));
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 
 	lRet = ::RegSetValueEx(hDataKey, _T("Import"), 0, REG_SZ, (LPBYTE)_T(""), (1 * sizeof(TCHAR)));
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 
 	lRet = ::RegSetValueEx(hDataKey, _T("NewExtension"), 0, REG_SZ, (LPBYTE)CXMergeFilter::m_pszPXLImportExt,
 				(::_tcslen(CXMergeFilter::m_pszPXLImportExt) * sizeof(TCHAR) + (1 * sizeof(TCHAR))));
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 
@@ -555,45 +555,45 @@ STDAPI DllRegisterServer()
 
 
 	/*
-	 * Following calls create the entries for the filter in 
+	 * Following calls create the entries for the filter in
 	 * HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows CE Services\Filters
 	 */
-	lRet = ::RegOpenKeyEx(HKEY_LOCAL_MACHINE, _T("SOFTWARE\\Microsoft\\Windows CE Services\\Filters"), 
+	lRet = ::RegOpenKeyEx(HKEY_LOCAL_MACHINE, _T("SOFTWARE\\Microsoft\\Windows CE Services\\Filters"),
 				0, KEY_ALL_ACCESS, &hKey);
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 	// Add in defaults for import and export
 	_snprintf(sTemp, _MAX_PATH +1, "%c%s\0", '.', CXMergeFilter::m_pszPXLExportExt);
 	lRet = ::RegCreateKeyEx(hKey, _T(sTemp), 0, _T(""), 0, KEY_ALL_ACCESS, NULL, &hDataKey, NULL);
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
-	lRet = ::RegSetValueEx(hDataKey, _T("DefaultImport"), 0, REG_SZ, 
-							(LPBYTE)CXMergeFilter::m_pszPXLImportCLSID, 
+	lRet = ::RegSetValueEx(hDataKey, _T("DefaultImport"), 0, REG_SZ,
+							(LPBYTE)CXMergeFilter::m_pszPXLImportCLSID,
 							(::_tcslen(CXMergeFilter::m_pszPSWImportDesc) * sizeof(TCHAR) + (1 * sizeof(TCHAR))));
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 
 	lRet = ::RegSetValueEx(hDataKey, _T("DefaultExport"), 0, REG_SZ, (LPBYTE)_T("Binary Copy"),
 							(::_tcslen(_T("Binary Copy")) * sizeof(TCHAR) + (1 * sizeof(TCHAR))));
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 	::RegCloseKey(hDataKey);
-							
+
 	// Update registered filters
 
 
 	_snprintf(sTemp, _MAX_PATH + 1, "%c%s\\InstalledFilters\0", '.', CXMergeFilter::m_pszPXLExportExt);
-	lRet = ::RegCreateKeyEx(hKey, _T(sTemp), 
+	lRet = ::RegCreateKeyEx(hKey, _T(sTemp),
 				0, _T(""), 0, KEY_ALL_ACCESS, NULL, &hDataKey, NULL);
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 	lRet = ::RegSetValueEx(hDataKey, CXMergeFilter::m_pszPXLImportCLSID, 0, REG_SZ, (LPBYTE)_T(""), (1 * sizeof(TCHAR)));
-	if (lRet != ERROR_SUCCESS) 
+	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
 
 	::RegCloseKey(hKey);		hKey = NULL;
@@ -610,7 +610,7 @@ STDAPI DllUnregisterServer()
 	long lRet = 0;
 	HKEY hKey = NULL;
 	HKEY hDataKey = NULL;
-	
+
 	TCHAR szClassName[_MAX_PATH] = "\0";
 	TCHAR szKeyName[_MAX_PATH]   = "\0";
 	DWORD dwClassName            = _MAX_PATH;
@@ -728,13 +728,13 @@ STDAPI DllUnregisterServer()
 		return _signalRegError(lRet, hKey, hDataKey);
 
 	::RegCloseKey(hKey);  hKey = NULL;
-		
+
 
 
 	/*
 	 * Remove the HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows CE Services\Filters
 	 */
-	lRet = ::RegOpenKeyEx(HKEY_LOCAL_MACHINE, _T("SOFTWARE\\Microsoft\\Windows CE Services\\Filters"), 
+	lRet = ::RegOpenKeyEx(HKEY_LOCAL_MACHINE, _T("SOFTWARE\\Microsoft\\Windows CE Services\\Filters"),
 							0, KEY_ALL_ACCESS, &hKey);
 	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
@@ -749,7 +749,7 @@ STDAPI DllUnregisterServer()
 	lRet = ::RegDeleteValue(hDataKey, CXMergeFilter::m_pszPSWExportCLSID);
 	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
-	
+
 	::lstrcpyn(szKeyName, "\0", _MAX_PATH);
 	::RegCloseKey(hDataKey);	hDataKey = NULL;
 
@@ -792,7 +792,7 @@ STDAPI DllUnregisterServer()
 	lRet = ::RegDeleteValue(hDataKey, CXMergeFilter::m_pszPXLExportCLSID);
 	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
-	
+
 	::lstrcpyn(szKeyName, "\0", _MAX_PATH);
 	::RegCloseKey(hDataKey);	hDataKey = NULL;
 
@@ -805,7 +805,7 @@ STDAPI DllUnregisterServer()
 	lRet = ::RegDeleteValue(hDataKey, CXMergeFilter::m_pszPXLImportCLSID);
 	if (lRet != ERROR_SUCCESS)
 		return _signalRegError(lRet, hKey, hDataKey);
-	
+
 	::lstrcpyn(szKeyName, "\0", _MAX_PATH);
 	::RegCloseKey(hDataKey);	hDataKey = NULL;
 
@@ -824,22 +824,22 @@ STDAPI DllUnregisterServer()
 	::lstrcpyn(szKeyName, "\0", _MAX_PATH);
 	::RegCloseKey(hDataKey);	hDataKey = NULL;
 
-	
+
 
 	::RegCloseKey(hKey);		hKey	 = NULL;
-	
+
 	return HRESULT_FROM_WIN32(lRet);
-} 
+}
 
 
 //////////////////////////////////////////////////////////////////////
 // CXMergeSyncModule methods
 //////////////////////////////////////////////////////////////////////
-CXMergeSyncModule::CXMergeSyncModule () 
+CXMergeSyncModule::CXMergeSyncModule ()
 {
 }
 
-CXMergeSyncModule::~CXMergeSyncModule () 
+CXMergeSyncModule::~CXMergeSyncModule ()
 {
 }
 
@@ -855,4 +855,3 @@ long CXMergeSyncModule::GetLockCount()
 {
 	return m_lLocks + m_lObjs;
 }
-

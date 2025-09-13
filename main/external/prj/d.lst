@@ -40,4 +40,3 @@ mkdir: %_DEST%\inc%_EXT%\external\mingw\include\sys
 ..\%__SRC%\lib\lib*static*.dylib %_DEST%\lib%_EXT%\lib*static*.dylib
 
 linklib: libgcc_s.*.*
-

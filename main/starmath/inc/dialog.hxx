@@ -19,7 +19,6 @@
  *
  *************************************************************/
 
-
 #ifndef DIALOG_HXX
 #define DIALOG_HXX
 
@@ -433,8 +432,8 @@ class SmSymDefineDialog : public ModalDialog
     PushButton      aChangeBtn;
     PushButton      aDeleteBtn;
     FixedImage      aRightArrow;
-    Image           aRigthArrow_Im;
-    Image           aRigthArrow_Im_HC;     // hi-contrast version
+    Image           aRightArrow_Im;
+    Image           aRightArrow_Im_HC;     // hi-contrast version
 
     SmSymbolManager     aSymbolMgrCopy,
                        &rSymbolMgr;
@@ -515,6 +514,6 @@ public:
 	void		SelectChar(xub_Unicode cChar);
 };
 
-
-
 #endif
+
+/* vim: set noet sw=4 ts=4: */

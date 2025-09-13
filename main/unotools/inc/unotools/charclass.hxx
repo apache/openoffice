@@ -90,7 +90,7 @@ public:
 									const ::com::sun::star::lang::Locale& rLocale
 									);
 
-	/// Depricated ctor, tries to get a process service manager or to load the
+	/// Deprecated ctor, tries to get a process service manager or to load the
 	/// library directly.
 								CharClass(
 									const ::com::sun::star::lang::Locale& rLocale

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // SODispatchInterceptor.cpp : Implementation of CHelpApp and DLL registration.
@@ -33,7 +33,7 @@
 
 STDMETHODIMP SODispatchInterceptor::InterfaceSupportsErrorInfo(REFIID riid)
 {
-    static const IID* arr[] = 
+    static const IID* arr[] =
     {
         &IID_ISODispatchInterceptor,
     };
@@ -91,7 +91,7 @@ STDMETHODIMP SODispatchInterceptor::queryDispatch( IDispatch FAR* aURL,
         aArgs[0] = CComVariant( nSearchFlags );
         aArgs[1] = CComVariant( aTargetFrameName );
         aArgs[2] = CComVariant( aURL );
-        
+
         hr = ExecuteFunc( m_xSlave, L"queryDispatch", aArgs, 3, &aResult );
         if( !SUCCEEDED( hr ) || aResult.vt != VT_DISPATCH || aResult.pdispVal == NULL )
         {
@@ -111,9 +111,9 @@ STDMETHODIMP SODispatchInterceptor::queryDispatch( IDispatch FAR* aURL,
 
 STDMETHODIMP SODispatchInterceptor::queryDispatches( SAFEARRAY FAR* aDescripts, SAFEARRAY FAR* FAR* retVal)
 {
-    if ( !aDescripts || !retVal || SafeArrayGetDim( aDescripts ) != 1 ) 
+    if ( !aDescripts || !retVal || SafeArrayGetDim( aDescripts ) != 1 )
         return E_FAIL;
-    
+
     long nLB, nUB;
 
     HRESULT hr = SafeArrayGetLBound( aDescripts, 1, &nLB );
@@ -148,7 +148,7 @@ STDMETHODIMP SODispatchInterceptor::queryDispatches( SAFEARRAY FAR* aDescripts, 
     return S_OK;
 }
 
-        
+
 STDMETHODIMP SODispatchInterceptor::dispatch( IDispatch FAR* aURL, SAFEARRAY FAR* aArgs)
 {
     // get url from aURL
@@ -205,19 +205,19 @@ STDMETHODIMP SODispatchInterceptor::dispatch( IDispatch FAR* aURL, SAFEARRAY FAR
 
     return S_OK;
 }
-        
+
 STDMETHODIMP SODispatchInterceptor::addStatusListener( IDispatch FAR* /*xControl*/, IDispatch FAR* /*aURL*/)
 {
     // not implemented
     return S_OK;
 }
-       
+
 STDMETHODIMP SODispatchInterceptor::removeStatusListener( IDispatch FAR* /*xControl*/, IDispatch FAR* /*aURL*/)
 {
     // not implemented
     return S_OK;
 }
-       
+
 STDMETHODIMP SODispatchInterceptor::getInterceptedURLs( SAFEARRAY FAR* FAR* pVal )
 {
     *pVal = SafeArrayCreateVector( VT_BSTR, 0, 3 );
@@ -239,5 +239,3 @@ STDMETHODIMP SODispatchInterceptor::getInterceptedURLs( SAFEARRAY FAR* FAR* pVal
 
     return S_OK;
 }
-
-

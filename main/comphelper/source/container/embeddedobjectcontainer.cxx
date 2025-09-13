@@ -728,7 +728,7 @@ sal_Bool EmbeddedObjectContainer::CopyEmbeddedObject( EmbeddedObjectContainer& r
 	RTL_LOGFILE_CONTEXT( aLog, "comphelper (mv76033) comphelper::EmbeddedObjectContainer::CopyEmbeddedObject" );
 
 	OSL_ENSURE( sal_False,
-				"This method is depricated! Use EmbeddedObjectContainer::CopyAndGetEmbeddedObject() to copy object!\n" );
+				"This method is deprecated! Use EmbeddedObjectContainer::CopyAndGetEmbeddedObject() to copy object!\n" );
 
 	// get the object name before(!) it is assigned to a new storage
 	::rtl::OUString aOrigName;

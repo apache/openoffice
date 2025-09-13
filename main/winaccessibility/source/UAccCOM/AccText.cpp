@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "stdafx.h"
@@ -35,7 +35,7 @@ using namespace com::sun::star::uno;
 */
 STDMETHODIMP CAccText::addSelection(long startOffset, long endOffset)//, unsigned char * success)
 {
-    
+
     return CAccTextBase::get_addSelection(startOffset, endOffset);//, success);
 }
 
@@ -49,7 +49,7 @@ STDMETHODIMP CAccText::addSelection(long startOffset, long endOffset)//, unsigne
 */
 STDMETHODIMP CAccText::get_attributes(long offset, long * startOffset, long * endOffset, BSTR * textAttributes)
 {
-    
+
     return CAccTextBase::get_attributes(offset, startOffset, endOffset, textAttributes);
 }
 
@@ -60,7 +60,7 @@ STDMETHODIMP CAccText::get_attributes(long offset, long * startOffset, long * en
 */
 STDMETHODIMP CAccText::get_caretOffset(long * offset)
 {
-    
+
     return CAccTextBase::get_caretOffset(offset);
 }
 
@@ -71,7 +71,7 @@ STDMETHODIMP CAccText::get_caretOffset(long * offset)
 */
 STDMETHODIMP CAccText::get_characterCount(long * nCharacters)
 {
-    
+
     return CAccTextBase::get_characterCount(nCharacters);
 }
 
@@ -86,7 +86,7 @@ STDMETHODIMP CAccText::get_characterCount(long * nCharacters)
 */
 STDMETHODIMP CAccText::get_characterExtents(long offset, IA2CoordinateType coordType, long * x, long * y, long * width, long * height)
 {
-    
+
     return CAccTextBase::get_characterExtents(offset, coordType, x, y, width, height);
 }
 
@@ -97,7 +97,7 @@ STDMETHODIMP CAccText::get_characterExtents(long offset, IA2CoordinateType coord
 */
 STDMETHODIMP CAccText::get_nSelections(long * nSelections)
 {
-    
+
     return CAccTextBase::get_nSelections(nSelections);
 }
 
@@ -112,7 +112,7 @@ STDMETHODIMP CAccText::get_nSelections(long * nSelections)
 
 STDMETHODIMP CAccText::get_offsetAtPoint(long x, long y, IA2CoordinateType coordType, long * offset)
 {
-    
+
     return CAccTextBase::get_offsetAtPoint(x, y, coordType, offset);
 }
 
@@ -125,7 +125,7 @@ STDMETHODIMP CAccText::get_offsetAtPoint(long x, long y, IA2CoordinateType coord
 */
 STDMETHODIMP CAccText::get_selection(long selection, long * startOffset, long * endOffset)
 {
-    
+
     return CAccTextBase::get_selection(selection, startOffset, endOffset);
 }
 
@@ -138,7 +138,7 @@ STDMETHODIMP CAccText::get_selection(long selection, long * startOffset, long * 
 */
 STDMETHODIMP CAccText::get_text(long startOffset, long endOffset, BSTR * text)
 {
-    
+
     return CAccTextBase::get_text(startOffset, endOffset, text);
 }
 
@@ -153,7 +153,7 @@ STDMETHODIMP CAccText::get_text(long startOffset, long endOffset, BSTR * text)
 */
 STDMETHODIMP CAccText::get_textBeforeOffset(long offset, IA2TextBoundaryType boundaryType, long * startOffset, long * endOffset, BSTR * text)
 {
-    
+
     return CAccTextBase::get_textBeforeOffset(offset, boundaryType,
             startOffset, endOffset, text);
 }
@@ -169,7 +169,7 @@ STDMETHODIMP CAccText::get_textBeforeOffset(long offset, IA2TextBoundaryType bou
 */
 STDMETHODIMP CAccText::get_textAfterOffset(long offset, IA2TextBoundaryType boundaryType, long * startOffset, long * endOffset, BSTR * text)
 {
-    
+
     return CAccTextBase::get_textAfterOffset(offset, boundaryType,
             startOffset, endOffset, text);
 }
@@ -185,7 +185,7 @@ STDMETHODIMP CAccText::get_textAfterOffset(long offset, IA2TextBoundaryType boun
 */
 STDMETHODIMP CAccText::get_textAtOffset(long offset, IA2TextBoundaryType boundaryType, long * startOffset, long * endOffset, BSTR * text)
 {
-    
+
     return CAccTextBase::get_textAtOffset(offset, boundaryType,
                                           startOffset, endOffset, text);
 }
@@ -198,7 +198,7 @@ STDMETHODIMP CAccText::get_textAtOffset(long offset, IA2TextBoundaryType boundar
 */
 STDMETHODIMP CAccText::removeSelection(long selectionIndex)//, unsigned char * success)
 {
-    
+
     return CAccTextBase::removeSelection(selectionIndex);//, success);
 }
 
@@ -210,7 +210,7 @@ STDMETHODIMP CAccText::removeSelection(long selectionIndex)//, unsigned char * s
 */
 STDMETHODIMP CAccText::setCaretOffset(long offset)
 {
-    
+
     return CAccTextBase::setCaretOffset(offset);
 }
 
@@ -225,7 +225,7 @@ STDMETHODIMP CAccText::setCaretOffset(long offset)
 
 STDMETHODIMP CAccText::setSelection(long selectionIndex, long startOffset, long endOffset)
 {
-    
+
     return CAccTextBase::setSelection(selectionIndex, startOffset,
                                       endOffset);
 }
@@ -237,7 +237,7 @@ STDMETHODIMP CAccText::setSelection(long selectionIndex, long startOffset, long 
 */
 STDMETHODIMP CAccText::get_nCharacters(long * nCharacters)
 {
-    
+
     return CAccTextBase::get_nCharacters(nCharacters);
 }
 
@@ -259,13 +259,13 @@ STDMETHODIMP CAccText::get_oldText( IA2TextSegment *oldText)
 */
 STDMETHODIMP CAccText::scrollSubstringToPoint(long startIndex, long endIndex,enum IA2CoordinateType coordinateType, long x, long y )
 {
-    
+
     return CAccTextBase::scrollSubstringToPoint(startIndex, endIndex, coordinateType, x, y);
 }
 
 STDMETHODIMP CAccText::scrollSubstringTo(long startIndex, long endIndex,enum IA2ScrollType scrollType)
 {
-    
+
     return CAccTextBase::scrollSubstringTo(startIndex, endIndex,scrollType);
 }
 
@@ -276,7 +276,6 @@ STDMETHODIMP CAccText::scrollSubstringTo(long startIndex, long endIndex,enum IA2
 */
 STDMETHODIMP CAccText::put_XInterface(long pXInterface)
 {
-    
+
     return CAccTextBase::put_XInterface(pXInterface);
 }
-

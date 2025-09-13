@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 package ifc.connection;
 
 import java.io.PrintWriter;
@@ -250,7 +248,7 @@ public class _XAcceptor extends MultiMethodTest {
                             acception.ex instanceof
                             com.sun.star.connection.ConnectionSetupException) {
 
-                            log.println("Rigth exception was thrown when trying"+
+                            log.println("Right exception was thrown when trying"+
                             " to listen on the same port") ;
                         } else {
                             result = false ;
