@@ -19,9 +19,6 @@
 #  under the License.
 #
 # *************************************************************
-#
-# $Id$
-#
 
 # GCOV_RESULTINTERPRETER
 #
@@ -58,7 +55,7 @@ if (!GetOptions(
                 "percent=s" => \$nPercent,
                 "complete" => \$complete,
                 "incomplete" => \$incomplete,
-                "help"   => \$help,
+                "help" => \$help,
                 "version" => \$version
                 ))
 {

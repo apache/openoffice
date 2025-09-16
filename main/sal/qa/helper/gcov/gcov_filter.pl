@@ -1,7 +1,5 @@
 #!/usr/bin/perl -w
 #
-# $Id$
-#
 # *************************************************************
 #
 #  Licensed to the Apache Software Foundation (ASF) under one
@@ -31,7 +29,6 @@
 # Q: Why perl?
 # A: regexp ;-)
 #
-
 
 use strict;
 use File::Basename;
@@ -350,9 +347,9 @@ sub read_gcov_function_file($)
 }
 
 # gcov format since gcc 3.3.6
-# 100.00% von 3 Zeilen in function helloworld ausgeführt
-# 100.00% von 5 Zeilen in function main ausgeführt
-# 100.00% von 8 Zeilen in file tmp.c ausgeführt
+# 100.00% von 3 Zeilen in function helloworld ausgefÃ¼hrt
+# 100.00% von 5 Zeilen in function main ausgefÃ¼hrt
+# 100.00% von 8 Zeilen in file tmp.c ausgefÃ¼hrt
 sub read_gcov_function_file_old_gcc_3($)
 {
     local *INPUT_HANDLE;
