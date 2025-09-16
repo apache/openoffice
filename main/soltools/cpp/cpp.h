@@ -18,12 +18,11 @@
  * under the License.
  *
  *************************************************************/
-/* $Id$ */
 
 #define	INS			32768	/* input buffer								*/
-#define	OBS			8092    /* outbut buffer							*/
-#define	NARG		32      /* Max number arguments to a macro			*/
-#define	NINCLUDE	48      /* Max number of include directories (-I)	*/
+#define	OBS			8092	/* outbut buffer							*/
+#define	NARG		32		/* Max number arguments to a macro			*/
+#define	NINCLUDE	48		/* Max number of include directories (-I)	*/
 #define	NIF			64		/* depth of nesting of #if					*/
 #define	NINC		32		/* depth of nesting of #include				*/
 
@@ -39,21 +38,21 @@ typedef unsigned char uchar;
 
 enum toktype
 {
-    END, UNCLASS, NAME, NUMBER, STRING, CCON, NL, WS, DSHARP,
-    EQ, NEQ, LEQ, GEQ, LSH, RSH, LAND, LOR, PPLUS, MMINUS,
-    ARROW, SBRA, SKET, LP, RP, DOT, AND, STAR, PLUS, MINUS,
-    TILDE, NOT, SLASH, PCT, LT, GT, CIRC, OR, QUEST,
-    COLON, ASGN, COMMA, SHARP, SEMIC, CBRA, CKET,
-    ASPLUS, ASMINUS, ASSTAR, ASSLASH, ASPCT, ASCIRC, ASLSH,
-    ASRSH, ASOR, ASAND, ELLIPS,
-    DSHARP1, NAME1, NAME2, DEFINED, UMINUS, ARCHITECTURE, IDENT,
+	END, UNCLASS, NAME, NUMBER, STRING, CCON, NL, WS, DSHARP,
+	EQ, NEQ, LEQ, GEQ, LSH, RSH, LAND, LOR, PPLUS, MMINUS,
+	ARROW, SBRA, SKET, LP, RP, DOT, AND, STAR, PLUS, MINUS,
+	TILDE, NOT, SLASH, PCT, LT, GT, CIRC, OR, QUEST,
+	COLON, ASGN, COMMA, SHARP, SEMIC, CBRA, CKET,
+	ASPLUS, ASMINUS, ASSTAR, ASSLASH, ASPCT, ASCIRC, ASLSH,
+	ASRSH, ASOR, ASAND, ELLIPS,
+	DSHARP1, NAME1, NAME2, DEFINED, UMINUS, ARCHITECTURE, IDENT,
 	COMMENT
 };
 
 enum kwtype
 {
-    KIF, KIFDEF, KIFNDEF, KELIF, KELSE, KENDIF, KINCLUDE, KINCLUDENEXT,
-    KIMPORT, KDEFINE, KUNDEF, KLINE, KERROR, KPRAGMA, KIDENT, KDEFINED,
+	KIF, KIFDEF, KIFNDEF, KELIF, KELSE, KENDIF, KINCLUDE, KINCLUDENEXT,
+	KIMPORT, KDEFINE, KUNDEF, KLINE, KERROR, KPRAGMA, KIDENT, KDEFINED,
 	KMACHINE, KLINENO, KFILE, KDATE, KTIME, KSTDC, KEVAL
 };
 
@@ -62,7 +61,7 @@ enum kwtype
 #define	ISUNCHANGE		0x04            /* can't be #defined in PP */
 #define	ISMAC			0x08            /* builtin macro, e.g. __LINE__ */
 #define	ISARCHITECTURE	0x10            /* architecture */
-#define ISACTIVE        0x80            /* is macro currently expanded */
+#define ISACTIVE		0x80            /* is macro currently expanded */
 
 #define	EOB		0xFE                    /* sentinel for end of input buffer */
 #define	EOFC	0xFD                    /* sentinel for end of input file */
@@ -71,13 +70,13 @@ enum kwtype
 
 typedef struct token
 {
-    unsigned char type;
-    unsigned char flag;
-    unsigned int wslen;
-    unsigned int len;
+	unsigned char type;
+	unsigned char flag;
+	unsigned int wslen;
+	unsigned int len;
 	uchar *t;
 	unsigned int identifier;			/* used from macro processor to identify where a macro becomes valid again. */
-}   Token;
+}	Token;
 
 typedef struct tokenrow
 {
@@ -85,7 +84,7 @@ typedef struct tokenrow
 	Token *bp;                          /* base (allocated value) */
 	Token *lp;                          /* last+1 token used */
 	int max;                            /* number allocated */
-}   Tokenrow;
+}	Tokenrow;
 
 typedef struct source
 {
@@ -100,7 +99,7 @@ typedef struct source
 	int pathdepth;
 	int wrap;
 	struct source *next;                /* stack for #include */
-}   Source;
+}	Source;
 
 typedef struct nlist
 {
@@ -112,19 +111,19 @@ typedef struct nlist
 	char val;                           /* value as preprocessor name */
 	char flag;                          /* is defined, is pp name */
 	uchar *loc;							/* location of definition */
-}   Nlist;
+}	Nlist;
 
 typedef struct includelist
 {
 	char deleted;
 	char always;
 	char *file;
-}   Includelist;
+}	Includelist;
 
 typedef struct wraplist
 {
 	char *file;
-}   Wraplist;
+}	Wraplist;
 
 #define	new(t)	(t *)domalloc(sizeof(t))
 #define	quicklook(a,b)	(namebit[(a)&077] & (1<<((b)&037)))
@@ -147,7 +146,7 @@ typedef struct macroValidator
 typedef struct mvl
 {
 	MacroValidator * pFirst;
-    unsigned int	 nextFreeIdentifier;
+	unsigned int	 nextFreeIdentifier;
 } MacroValidatorList;
 
 void		mvl_init(
@@ -161,7 +160,7 @@ void		mvl_destruct(
 void 		mvl_add(
 				MacroValidatorList *
 								inout_pValidators,
-				Nlist *         in_pMacro,
+				Nlist *			in_pMacro,
 				Token *			in_pTokenWhereMacroBecomesValid);
 /* 	Updates all token pointers within the list, when the tokens have
 	moved, by

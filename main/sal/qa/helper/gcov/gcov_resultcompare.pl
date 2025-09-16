@@ -19,9 +19,6 @@
 #  under the License.
 #
 # *************************************************************
-#
-# $Id$
-#
 
 # GCOV_RESULTCOMPARE
 #
@@ -52,7 +49,7 @@ sub read_gcov_function_file($);
 if (!GetOptions(
                 "o=s" => \$orig,
                 "c=s" => \$compare,
-                 "help"   => \$help,
+                 "help" => \$help,
                  "version" => \$version
                  ))
 {

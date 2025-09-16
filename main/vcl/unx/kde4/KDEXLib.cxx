@@ -18,7 +18,6 @@
  * under the License.
  *
  *************************************************************/
-/* $Id$ */
 
 #include <vos/process.hxx>
 
@@ -57,14 +56,14 @@ KDEXLib::~KDEXLib()
 {
 	delete (VCLKDEApplication*)m_pApplication;
 
-    // free the faked cmdline arguments no longer needed by KApplication
-    for( int i = 0; i < m_nFakeCmdLineArgs; i++ )
+	// free the faked cmdline arguments no longer needed by KApplication
+	for( int i = 0; i < m_nFakeCmdLineArgs; i++ )
 	{
-        free( m_pFreeCmdLineArgs[i] );
+		free( m_pFreeCmdLineArgs[i] );
 	}
 
-    delete [] m_pFreeCmdLineArgs;
-    delete [] m_pAppCmdLineArgs;
+	delete [] m_pFreeCmdLineArgs;
+	delete [] m_pAppCmdLineArgs;
 }
 
 void KDEXLib::Init()
@@ -121,17 +120,17 @@ void KDEXLib::Init()
 	if ( !m_pFreeCmdLineArgs )
 		m_pFreeCmdLineArgs = new char*[ m_nFakeCmdLineArgs ];
 
-    osl_getExecutableFile( &aParam.pData );
-    osl_getSystemPathFromFileURL( aParam.pData, &aBin.pData );
-    rtl::OString aExec = rtl::OUStringToOString( aBin, osl_getThreadTextEncoding() );
+	osl_getExecutableFile( &aParam.pData );
+	osl_getSystemPathFromFileURL( aParam.pData, &aBin.pData );
+	rtl::OString aExec = rtl::OUStringToOString( aBin, osl_getThreadTextEncoding() );
 	m_pFreeCmdLineArgs[0] = strdup( aExec.getStr() );
 
-    // make a copy of the string list for freeing it since
-    // KApplication manipulates the pointers inside the argument vector
-    // note: KApplication bad !
-    m_pAppCmdLineArgs = new char*[ m_nFakeCmdLineArgs ];
-    for( int i = 0; i < m_nFakeCmdLineArgs; i++ )
-        m_pAppCmdLineArgs[i] = m_pFreeCmdLineArgs[i];
+	// make a copy of the string list for freeing it since
+	// KApplication manipulates the pointers inside the argument vector
+	// note: KApplication bad !
+	m_pAppCmdLineArgs = new char*[ m_nFakeCmdLineArgs ];
+	for( int i = 0; i < m_nFakeCmdLineArgs; i++ )
+		m_pAppCmdLineArgs[i] = m_pFreeCmdLineArgs[i];
 
 	KCmdLineArgs::init( m_nFakeCmdLineArgs, m_pAppCmdLineArgs, kAboutData );
 
@@ -148,7 +147,7 @@ void KDEXLib::Init()
 	pInputMethod->AddConnectionWatch( pDisp, (void*)this );
 	pSalDisplay->SetInputMethod( pInputMethod );
 
-    PushXErrorLevel( true );
+	PushXErrorLevel( true );
 	SalI18N_KeyboardExtension *pKbdExtension = new SalI18N_KeyboardExtension( pDisp );
 	XSync( pDisp, False );
 
@@ -160,12 +159,14 @@ void KDEXLib::Init()
 
 void KDEXLib::doStartup()
 {
-    if( ! m_bStartupDone )
-    {
-        KStartupInfo::appStarted();
-        m_bStartupDone = true;
-        #if OSL_DEBUG_LEVEL > 1
-        fprintf( stderr, "called KStartupInfo::appStarted()\n" );
-        #endif
-    }
+	if( ! m_bStartupDone )
+	{
+		KStartupInfo::appStarted();
+		m_bStartupDone = true;
+		#if OSL_DEBUG_LEVEL > 1
+		fprintf( stderr, "called KStartupInfo::appStarted()\n" );
+		#endif
+	}
 }
+
+/* vim: set noet sw=4 ts=4: */
