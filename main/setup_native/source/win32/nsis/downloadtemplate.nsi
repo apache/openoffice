@@ -9,7 +9,7 @@ VIAddVersionKey CompanyName "Apache Software Foundation"
 VIAddVersionKey LegalCopyright "(c) 2012-2025 The Apache Software Foundation"
 VIAddVersionKey FileDescription "Apache PRODUCTNAMEPLACEHOLDER Installer"
 VIAddVersionKey ProductVersion "PRODUCTVERSIONPLACEHOLDER"
-VIProductVersion "4.1.9814.500"
+VIProductVersion "4.1.9815.500"
 
 ; Enable Unicode
 Unicode true
@@ -252,7 +252,7 @@ FunctionEnd
     !endif
     !define MUI_LANGDLL_LANGUAGES_TEMP "${MUI_LANGDLL_LANGUAGES}"
     !undef MUI_LANGDLL_LANGUAGES
-	!ifdef MUI_LANGDLL_LANGUAGES_CP_TEMP
+    !ifdef MUI_LANGDLL_LANGUAGES_CP_TEMP
       !undef MUI_LANGDLL_LANGUAGES_CP_TEMP
     !endif
     !define MUI_LANGDLL_LANGUAGES_CP_TEMP "${MUI_LANGDLL_LANGUAGES_CP}"
