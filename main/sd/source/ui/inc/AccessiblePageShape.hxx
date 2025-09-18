@@ -51,7 +51,7 @@ public:
             The accessible parent object.  It will be used, for example when
             the <member>getIndexInParent</member> method is called.
         @param rShapeTreeInfo
-            Bundel of information passed to this shape and all of its desendants.
+            Bundle of information passed to this shape and all of its descendants.
         @param nIndex
             Index used to disambiguate between objects that have the same
             name.  Passing a value of -1 leads to the use of the object's

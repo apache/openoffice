@@ -113,7 +113,7 @@ inline sal_Bool closeIt(const css::uno::Reference< css::uno::XInterface >& xReso
     catch(const css::uno::RuntimeException&)
         { throw; } // shouldn't be suppressed!
     catch(const css::uno::Exception&)
-        { return sal_False;  } // ??? We defined to return a boolen value instead of throwing exceptions...
+        { return sal_False;  } // ??? We defined to return a boolean value instead of throwing exceptions...
                                // (OK: RuntimeExceptions shouldn't be caught inside the core...)
 
     return sal_True;

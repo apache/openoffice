@@ -1333,7 +1333,7 @@ short MSWordExportBase::GetDefaultFrameDirection( ) const
         {
             nDir = TrueFrameDirection( *( const SwFrmFmt * ) pOutFmtNode );
         }
-        else if ( pOutFmtNode->ISA( SwCntntNode ) )    //pagagraph
+        else if ( pOutFmtNode->ISA( SwCntntNode ) )    //paragraph
         {
             const SwCntntNode *pNd = ( const SwCntntNode * ) pOutFmtNode;
             SwPosition aPos( *pNd );

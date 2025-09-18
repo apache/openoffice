@@ -239,7 +239,7 @@ sal_Bool SvxEditSourceHelper::GetAttributeRun( sal_uInt16& nStartIndex, sal_uInt
 				}
 			}
 		}
-		//need find closest index behind nIndex in the following paragrphs
+		//need find closest index behind nIndex in the following paragraphs
 		if ( aEndPos.nIndex == nCrrntParaLen )
 		{
 			SfxItemSet aCrrntSet = rEE.GetAttribs( nPara, sal_uInt16(nCrrntParaLen-1), sal_uInt16(nCrrntParaLen), GETATTRIBS_CHARATTRIBS );

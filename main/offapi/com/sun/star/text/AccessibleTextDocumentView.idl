@@ -98,7 +98,7 @@ published service AccessibleTextDocumentView
                         least partially visible. These objects are children
                         of the
 						<type>AccessibleTextDocumentView</type> regardless
-						whether they are bound to a page, a paragarph, a
+						whether they are bound to a page, a paragraph, a
 						frame, or a character. The only exception are text
 						frames that are bound as character. They are children
 						of the paragraph they are contained in.
@@ -117,7 +117,7 @@ published service AccessibleTextDocumentView
 						object that is at least partially visible.
 						These objects are children of the
 						<type>AccessibleTextDocumentView</type> regardless
-						whether they are bound to a page, a paragarph, a frame,
+						whether they are bound to a page, a paragraph, a frame,
 						or a character.  They are children of the paragraph they
 						are contained in.
 					<li><type scope="::com::sun::star::drawing"
