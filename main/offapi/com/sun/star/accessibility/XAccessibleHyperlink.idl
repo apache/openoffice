@@ -46,7 +46,7 @@ module com { module sun { module star { module accessibility {
     <member>XAccessibleHyperlink::getAccessibleActionObject</member>
     methods.</p>
 
-    <p>Furhtermore, the object that implements this interface has to be
+    <p>Furthermore, the object that implements this interface has to be
     connected implicitly or explicitly with an object that implements the
     the <type>XAccessibleText</type> interface.  The
     <member>XAccessibleHyperlink::getStartIndex</member> and
@@ -67,7 +67,7 @@ published interface XAccessibleHyperlink :
         @param nIndex
             This index identifies the anchor when, as in the case of an
             image map, there is more than one link represented by this
-            object.  The valid maximal index can be determinded by calling
+            object.  The valid maximal index can be determined by calling
             the <member>XAccessibleAction::getActionCount</member> method.
 
         @return
@@ -86,7 +86,7 @@ published interface XAccessibleHyperlink :
         @param nIndex
             This index identifies the action object when, as in the case of
             an image map, there is more than one link represented by this
-            object.  The valid maximal index can be determinded by calling
+            object.  The valid maximal index can be determined by calling
             the <member>XAccessibleAction::getActionCount</member> method.
 
         @return
@@ -100,7 +100,7 @@ published interface XAccessibleHyperlink :
         hyperlink (group) starts.
 
         <p>The returned value relates to the <type>XAccessibleText</type>
-        interface that ownes this hyperlink.</p>
+        interface that owns this hyperlink.</p>
 
         @return
             The index relates to the text exposed by the
@@ -108,11 +108,11 @@ published interface XAccessibleHyperlink :
     */
     long getStartIndex ();
 
-    /** Returns the index at which the textual rerpesentation of the
+    /** Returns the index at which the textual representation of the
         hyperlink (group) ends.
 
         <p>The returned value relates to the <type>XAccessibleText</type>
-        interface that ownes this hyperlink.</p>
+        interface that owns this hyperlink.</p>
 
         @return
             The index relates to the text exposed by the
