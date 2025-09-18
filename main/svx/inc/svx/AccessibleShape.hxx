@@ -114,7 +114,7 @@ public:
             and the accessible object that will become the parent of the new
             object.
         @param rShapeTreeInfo
-            Bundel of information passed to this shape and all of its desendants.
+            Bundle of information passed to this shape and all of its descendants.
         @attention
             Always call the <member>init</member> method after creating a
             new accessible shape.  This is one way to overcome the potential
