@@ -182,7 +182,7 @@ void SdrTextObj::NbcResize(const Point& rRef, const Fraction& xFact, const Fract
 	else
 	{
 		// #100663# aRect is NOT initialized for lines (polgon objects with two
-		// exceptionally handled points). Thus, after this call the text rotaion is
+		// exceptionally handled points). Thus, after this call the text rotation is
 		// gone. This error must be present since day one of this old drawing layer.
 		// It's astonishing that no one discovered it earlier.
 		// Polygon aPol(Rect2Poly(aRect,aGeo));

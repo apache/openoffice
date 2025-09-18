@@ -252,7 +252,7 @@ RegionBand* ImplCreateRegionBandFromPolyPolygon(const PolyPolygon& rPolyPolygon)
 
     if(rPolyPolygon.Count())
     {
-        // ensure to subdivide when bezier segemnts are used, it's going to
+        // ensure to subdivide when bezier segments are used, it's going to
         // be expanded to rectangles
         PolyPolygon aPolyPolygon;
 
