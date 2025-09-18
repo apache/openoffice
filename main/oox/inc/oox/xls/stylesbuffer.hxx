@@ -145,7 +145,7 @@ public:
     /** Imports a color palette from a UNO sequence in the passed any. */
     void                importPalette( const ::com::sun::star::uno::Any& rPalette );
 
-    /** Rturns the RGB value of the color with the passed index. */
+    /** Returns the RGB value of the color with the passed index. */
     sal_Int32           getColor( sal_Int32 nPaletteIdx ) const;
 
 private:

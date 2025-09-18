@@ -503,7 +503,7 @@ class LoginDialog	:	public XTYPEPROVIDER				,
         /*-****************************************************************************************************//**
 			@short		write changed values to configuration
 			@descr		Normally the dialog returns with an OK or ERROR value. If OK occur - we flush data
-						automaticly. But otherwise we do nothing. If user of this service wish to use property set
+						automatically. But otherwise we do nothing. If user of this service wish to use property set
 						only without any UI(!) - he must call "flush()" explicitly to write data!
 
 			@seealso	-
