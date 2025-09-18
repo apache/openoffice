@@ -32,7 +32,7 @@ import com.sun.star.wizards.common.SystemDialog;
  * uses a renderer method geMessageFor(Exception, Object, int, int)
  * (in this class still abstract...)
  * to render the errors, and displays
- * error messeges.
+ * error messages.
  */
 public abstract class AbstractErrorHandler implements ErrorHandler
 {

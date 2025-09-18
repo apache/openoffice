@@ -247,8 +247,8 @@ namespace xmloff
 			::rtl::OUString					sAttributeDefault;		// the default if the attribute is not present
 
 			// entries which are special to some value types
-			const SvXMLEnumMapEntry*		pEnumMap;				// the enum map, if appliable
-			sal_Bool						bInverseSemantics;		// for booleanss: attribute and property value have the same or an inverse semantics?
+			const SvXMLEnumMapEntry*		pEnumMap;				// the enum map, if applicable
+			sal_Bool						bInverseSemantics;		// for booleans: attribute and property value have the same or an inverse semantics?
 
 			AttributeAssignment() : pEnumMap(NULL), bInverseSemantics(sal_False) { }
 		};

@@ -349,7 +349,7 @@ protected:
     ::com::sun::star::uno::Reference<
         ::com::sun::star::accessibility::XAccessible> mxParent;
 
-    /** Bundel of information passed down the shape tree.
+    /** Bundle of information passed down the shape tree.
     */
     AccessibleShapeTreeInfo maShapeTreeInfo;
 
