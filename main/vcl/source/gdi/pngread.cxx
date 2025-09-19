@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_vcl.hxx"
 
@@ -149,7 +147,7 @@ private:
 	sal_Bool				mbStatus;
 	sal_Bool				mbIDAT;			// sal_True if finished with enough IDAT chunks
 	sal_Bool				mbGamma;		// sal_True if Gamma Correction available
-	sal_Bool				mbpHYs;			// sal_True if pysical size of pixel available
+	sal_Bool				mbpHYs;			// sal_True if physical size of pixel available
 	sal_Bool			mbIgnoreGammaChunk;
 
 #ifdef DBG_UTIL
@@ -1760,5 +1758,6 @@ void PNGReader::SetIgnoreGammaChunk( sal_Bool b )
 	mpImpl->SetIgnoreGammaChunk( b );
 }
 
-
 } // namespace vcl
+
+/* vim: set noet sw=4 ts=4: */

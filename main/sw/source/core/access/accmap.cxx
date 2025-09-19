@@ -3465,7 +3465,7 @@ sal_Bool SwAccessibleMap::ReplaceChild (
 
 		uno::Reference< XAccessibleContext > xAccContext = xAcc->getAccessibleContext();
 		if( xAccContext.is() )
-		{	//get the parent of caption frame, which is paragaph
+		{	//get the parent of caption frame, which is paragraph
 			uno::Reference< XAccessible > xAccParent = xAccContext->getAccessibleParent();
 			if(xAccParent.is())
 			{

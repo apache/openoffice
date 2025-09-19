@@ -64,7 +64,7 @@ namespace xmloff
     #define CCA_VISUAL_EFFECT           0x00800000
     #define CCA_ENABLEVISIBLE                 0x01000000
 
-	// flags for database control atttributes
+	// flags for database control attributes
 	#define DA_BOUND_COLUMN				0x00000001
 	#define DA_CONVERT_EMPTY			0x00000002
 	#define DA_DATA_FIELD				0x00000004
@@ -247,8 +247,8 @@ namespace xmloff
 			::rtl::OUString					sAttributeDefault;		// the default if the attribute is not present
 
 			// entries which are special to some value types
-			const SvXMLEnumMapEntry*		pEnumMap;				// the enum map, if appliable
-			sal_Bool						bInverseSemantics;		// for booleanss: attribute and property value have the same or an inverse semantics?
+			const SvXMLEnumMapEntry*		pEnumMap;				// the enum map, if applicable
+			sal_Bool						bInverseSemantics;		// for booleans: attribute and property value have the same or an inverse semantics?
 
 			AttributeAssignment() : pEnumMap(NULL), bInverseSemantics(sal_False) { }
 		};

@@ -1,6 +1,6 @@
 #!/usr/bin/env perl -w
 # *************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -8,21 +8,19 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 # *************************************************************
 #
 # langwrap - language wrapper for building resources
-#
-# $Id$
 
 use Getopt::Std;
 
@@ -66,14 +64,14 @@ foreach $cmd (@command) {
 }
 
 exit(0);
- 
+
 ###### routines ######
 
 ### parse_commandfile()
 sub parse_commandfile {
     my($file) = shift;
     my(@field);
-    
+
     open(COMMAND, "<$file") or die "can´t open $file";
 
     while (<COMMAND>) {
@@ -82,7 +80,7 @@ sub parse_commandfile {
 	if ( ($line =~ //) || ($line =~ /^\r/) || ($line =~ /^#/) ) {
 	    next;
 	}
-						   
+
 	@field = split " ", $line;
 	push @LoL, [@field];
 	if (!$nfield) {
@@ -95,7 +93,7 @@ sub parse_commandfile {
 	    }
 	}
     }
-    
+
     close(COMMAND);
 }
 
@@ -119,7 +117,7 @@ sub create_commands() {
 	push @command, $cmd . " " . $cmdline;
     }
 }
-    
+
 ### check_options()
 sub check_options {
 

@@ -39,7 +39,7 @@ namespace sdr
 		class SVX_DLLPUBLIC ViewContactOfVirtObj : public ViewContactOfSdrObj
 		{
 		protected:
-			// internal access to SdrObject. Iplementation in *.cxx to avoid
+			// internal access to SdrObject. Implementation in *.cxx to avoid
             // including SdrVirtObj here.
 			SdrVirtObj& GetVirtObj() const;
 

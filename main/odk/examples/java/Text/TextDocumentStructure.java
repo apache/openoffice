@@ -40,7 +40,7 @@ public class TextDocumentStructure {
             xContext = com.sun.star.comp.helper.Bootstrap.bootstrap();
             System.out.println("Connected to a running office ...");
 
-            // get the rmeote service manager
+            // get the remote service manager
             com.sun.star.lang.XMultiComponentFactory xMCF =
                 xContext.getServiceManager();
 
@@ -48,7 +48,7 @@ public class TextDocumentStructure {
             Object oDesktop = xMCF.createInstanceWithContext(
                                         "com.sun.star.frame.Desktop", xContext);
 
-            // get the component laoder from the desktop to create a new
+            // get the component loader from the desktop to create a new
             // text document
             com.sun.star.frame.XComponentLoader xCLoader =
                 (com.sun.star.frame.XComponentLoader)

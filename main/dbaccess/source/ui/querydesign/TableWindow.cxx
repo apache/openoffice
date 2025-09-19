@@ -537,7 +537,7 @@ void OTableWindow::SetBoldTitle( sal_Bool bBold )
 void OTableWindow::GetFocus()
 {
 	Window::GetFocus();
-	// we have to forward the focus to our listbox to enable keystokes
+	// we have to forward the focus to our listbox to enable keystrokes
 	if(m_pListBox)
 		m_pListBox->GrabFocus();
 }

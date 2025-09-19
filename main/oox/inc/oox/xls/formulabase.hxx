@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #ifndef OOX_XLS_FORMULABASE_HXX
 #define OOX_XLS_FORMULABASE_HXX
 
@@ -35,8 +33,8 @@
 #include "oox/xls/addressconverter.hxx"
 
 namespace com { namespace sun { namespace star {
-    namespace sheet { class XFormulaOpCodeMapper; }
-    namespace sheet { class XFormulaParser; }
+	namespace sheet { class XFormulaOpCodeMapper; }
+	namespace sheet { class XFormulaParser; }
 } } }
 
 namespace oox { template< typename Type > class Matrix; }
@@ -459,7 +457,7 @@ enum FuncParamConversion
         (unary and binary arithmetic operators, comparison operators, and range
         operators). It is not used for function parameters. On conversion, it
         will be replaced by the last conversion type that was not the RPO
-        conversion. This leads to a slightly different behaviour than the RPT
+        conversion. This leads to a slightly different behavior than the RPT
         conversion for operands in conjunction with a parent RPX conversion.
  */
 struct FunctionParamInfo
@@ -866,7 +864,7 @@ public:
         @param orTokens  (input/output parameter) Expects a single string token
             in this token sequence (whitespace tokens are allowed). The string
             is split into substrings. A list of string tokens separated with
-            parameter separator tokens is returned in this psrameter.
+            parameter separator tokens is returned in this parameter.
 
         @param cStringSep  The separator character used to split the input
             string.
@@ -886,3 +884,5 @@ public:
 } // namespace oox
 
 #endif
+
+/* vim: set noet sw=4 ts=4: */

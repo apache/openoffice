@@ -56,9 +56,9 @@ published interface XDatabaseDocumentUI
     */
     [attribute, readonly] com::sun::star::sdbc::XDataSource DataSource;
 
-    /** provides access to the applicatio's main window
+    /** provides access to the application's main window
 
-        <p>Note that reading this atttribute is equivalent to querying the component
+        <p>Note that reading this attribute is equivalent to querying the component
         for the <type scope="com::sun::star::frame">XController</type> interface,
         asking the controller for its frame, and asking this frame for its
         container window.</p>

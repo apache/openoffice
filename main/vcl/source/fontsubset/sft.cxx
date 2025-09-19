@@ -819,7 +819,7 @@ static int GetCompoundTTOutline(TrueTypeFont *ttf, sal_uInt32 glyphID, ControlPo
  * but Get{Simple|Compound}GlyphOutline returns 0 in such a case.
  *
  * NOTE: glyphlist is the stack of glyphs traversed while constructing
- * a composite glyph. This is a safequard against endless recursion
+ * a composite glyph. This is a safeguard against endless recursion
  * in corrupted fonts.
  */
 static int GetTTGlyphOutline(TrueTypeFont *ttf, sal_uInt32 glyphID, ControlPoint **pointArray, TTGlyphMetrics *metrics, std::vector< sal_uInt32 >* glyphlist)
