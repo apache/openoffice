@@ -101,7 +101,6 @@ TabPage RID_PAGE_DEFAULTFIELDSELECTION
 		Pos = MAP_APPFONT ( 7, 15 ) ;
 		Size = MAP_APPFONT ( WINDOW_SIZE_X - 14, 24 ) ;
 		WordBreak = TRUE ;
-
 		Text [ en-US ] = "Should one option field be selected as a default?" ;
 	};
 	RadioButton RB_DEFSELECTION_YES
