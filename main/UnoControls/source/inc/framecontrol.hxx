@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #ifndef _UNOCONTROLS_FRAMECONTROL_CTRL_HXX
 #define _UNOCONTROLS_FRAMECONTROL_CTRL_HXX
 
@@ -86,7 +84,7 @@ namespace unocontrols{
 #define	PROPERTYNAME_COMPONENTURL						"ComponentURL"
 #define	PROPERTYNAME_FRAME								"Frame"
 #define	ERRORTEXT_VOSENSHURE							"This is an invalid property handle."
-#define PROPERTY_COUNT									3                                       				// you must count the propertys
+#define PROPERTY_COUNT									3                                       				// you must count the properties
 #define PROPERTYHANDLE_COMPONENTURL						0														// Id must be the index into the array
 #define PROPERTYHANDLE_FRAME							1
 #define PROPERTYHANDLE_LOADERARGUMENTS					2
@@ -618,3 +616,5 @@ private:
 }	// namespace unocontrols
 
 #endif	// #ifndef _UNOCONTROLS_FRAMECONTROL_CTRL_HXX
+
+/* vim: set noet sw=4 ts=4: */

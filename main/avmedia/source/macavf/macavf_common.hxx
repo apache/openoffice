@@ -42,7 +42,6 @@
 #include <com/sun/star/uno/Reference.h>
 #include <com/sun/star/uno/RuntimeException.hpp>
 #include <com/sun/star/uno/XComponentContext.hpp>
-#include <com/sun/star/lang/XComponent.hpp>
 #include <com/sun/star/registry/XRegistryKey.hpp>
 #include <com/sun/star/lang/XComponent.hpp>
 #include <com/sun/star/lang/XServiceInfo.hpp>
@@ -50,7 +49,6 @@
 #include <com/sun/star/awt/KeyModifier.hpp>
 #include <com/sun/star/awt/MouseButton.hpp>
 #include <com/sun/star/media/XManager.hpp>
-
 
 #define AVMEDIA_MACAVF_MANAGER_IMPLEMENTATIONNAME "com.sun.star.comp.avmedia.Manager_MacAVF"
 #define AVMEDIA_MACAVF_MANAGER_SERVICENAME "com.sun.star.media.Manager_MacAVF"
@@ -77,12 +75,14 @@ namespace avmedia { namespace macavf {
 class MacAVObserverHandler
 {
 private:
-    static MacAVObserverObject* mpMacAVObserverObject;
+	static MacAVObserverObject* mpMacAVObserverObject;
 public:
-    MacAVObserverObject* getObserver( void ) const;
-    virtual bool handleObservation( NSString* pKeyPath ) = 0;
+	MacAVObserverObject* getObserver( void ) const;
+	virtual bool handleObservation( NSString* pKeyPath ) = 0;
 };
 
 }}
 
 #endif // MACAVF_COMMON_HXX
+
+/* vim: set noet sw=4 ts=4: */

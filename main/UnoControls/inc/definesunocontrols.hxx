@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #ifndef _UNOCONTROLS_DEFINES_CTRL_HXX
 #define _UNOCONTROLS_DEFINES_CTRL_HXX
 
@@ -33,7 +31,7 @@ namespace unocontrols{
 //-------------------------------------------------------------------------------------------------------------------
 // global defines for all UnoControls
 //-------------------------------------------------------------------------------------------------------------------
-#define UNOCONTROLS_TRGB_COLORDATA( t,r,g,b )	  			((INT32)(((UINT32)((UINT8)(b))))|(((UINT32)((UINT8)(g)))<<8)|(((UINT32)((UINT8)(r)))<<16)|(((UINT32)((UINT8)(t)))<<24))
+#define UNOCONTROLS_TRGB_COLORDATA( t,r,g,b )				((INT32)(((UINT32)((UINT8)(b))))|(((UINT32)((UINT8)(g)))<<8)|(((UINT32)((UINT8)(r)))<<16)|(((UINT32)((UINT8)(t)))<<24))
 //-------------------------------------------------------------------------------------------------------------------
 
 // defines for BaseControl
@@ -54,7 +52,7 @@ namespace unocontrols{
 //-------------------------------------------------------------------------------------------------------------------
 // defines for BaseContainerControl
 #ifdef _UNOCONTROLS_BASECONTAINERCONTROL_CTRL_HXX
-	#define	BASECONTAINERCONTROL_IDLCLASSNAME		   		"BaseContainerControl"
+	#define	BASECONTAINERCONTROL_IDLCLASSNAME				"BaseContainerControl"
 #endif
 //-------------------------------------------------------------------------------------------------------------------
 
@@ -69,7 +67,7 @@ namespace unocontrols{
 	#define PROGRESSBAR_DEFAULT_BLOCKDIMENSION				Size(1,1)
 	#define	PROGRESSBAR_DEFAULT_BACKGROUNDCOLOR				UNOCONTROLS_TRGB_COLORDATA( 0x00, 0xC0, 0xC0, 0xC0 )	// lightgray
 	#define	PROGRESSBAR_DEFAULT_FOREGROUNDCOLOR				UNOCONTROLS_TRGB_COLORDATA( 0x00, 0x00, 0x00, 0x80 )	// blue
-	#define PROGRESSBAR_DEFAULT_MINRANGE                    INT_MIN
+	#define PROGRESSBAR_DEFAULT_MINRANGE					INT_MIN
 	#define PROGRESSBAR_DEFAULT_MAXRANGE					INT_MAX
 	#define PROGRESSBAR_DEFAULT_BLOCKVALUE	 				1
 	#define PROGRESSBAR_DEFAULT_VALUE						PROGRESSBAR_DEFAULT_MINRANGE
@@ -90,11 +88,11 @@ namespace unocontrols{
 	#define	FRAMECONTROL_PROPERTYNAME_FRAME					"Frame"
 	#define	FRAMECONTROL_PROPERTYNAME_IDLCLASSES			"IDLClasses"
 	#define	FRAMECONTROL_ERRORTEXT_VOSENSHURE				"This is an invalid property handle."
-	#define FRAMECONTROL_PROPERTY_COUNT						4                                       				// you must count the propertys
+	#define FRAMECONTROL_PROPERTY_COUNT						4														// you must count the properties
 	#define FRAMECONTROL_PROPERTY_COMPONENTURL				0														// Id must be the index into the array
 	#define FRAMECONTROL_PROPERTY_FRAME						1
 	#define FRAMECONTROL_PROPERTY_IDLCLASSES				2
-	#define FRAMECONTROL_PROPERTY_LOADERARGUMENTS           3
+	#define FRAMECONTROL_PROPERTY_LOADERARGUMENTS			3
 #endif
 //-------------------------------------------------------------------------------------------------------------------
 
@@ -112,12 +110,12 @@ namespace unocontrols{
 	#define	PROGRESSMONITOR_FIXEDTEXT_MODELNAME				"com.sun.star.awt.UnoControlFixedTextModel"
 	#define	PROGRESSMONITOR_BUTTON_MODELNAME				"com.sun.star.awt.UnoControlButtonModel"
 	#define	PROGRESSMONITOR_CONTROLNAME_TEXT				"Text"													// identifier the control in container
-	#define	PROGRESSMONITOR_CONTROLNAME_BUTTON				"Button"												//  			-||-
-	#define	PROGRESSMONITOR_CONTROLNAME_PROGRESSBAR			"ProgressBar"											//  			-||-
+	#define	PROGRESSMONITOR_CONTROLNAME_BUTTON				"Button"												//				-||-
+	#define	PROGRESSMONITOR_CONTROLNAME_PROGRESSBAR			"ProgressBar"											//				-||-
 	#define	PROGRESSMONITOR_DEFAULT_BUTTONLABEL				"Abbrechen"
-	#define	PROGRESSMONITOR_DEFAULT_TOPIC		            "\0"
+	#define	PROGRESSMONITOR_DEFAULT_TOPIC					"\0"
 	#define	PROGRESSMONITOR_DEFAULT_TEXT					"\0"
-	#define	PROGRESSMONITOR_BACKGROUNDCOLOR					UNOCONTROLS_TRGB_COLORDATA( 0x00, 0xC0, 0xC0, 0xC0 )	// lighgray
+	#define	PROGRESSMONITOR_BACKGROUNDCOLOR					UNOCONTROLS_TRGB_COLORDATA( 0x00, 0xC0, 0xC0, 0xC0 )	// lightgray
 	#define	PROGRESSMONITOR_LINECOLOR_BRIGHT				UNOCONTROLS_TRGB_COLORDATA( 0x00, 0xFF, 0xFF, 0xFF )	// white
 	#define	PROGRESSMONITOR_LINECOLOR_SHADOW				UNOCONTROLS_TRGB_COLORDATA( 0x00, 0x00, 0x00, 0x00 )	// black
 	#define	PROGRESSMONITOR_HEIGHT_PROGRESSBAR				15
@@ -129,3 +127,5 @@ namespace unocontrols{
 }	// namespace unocontrols
 
 #endif	// #ifndef _UNOCONTROLS_DEFINES_CTRL_HXX
+
+/* vim: set noet sw=4 ts=4: */

@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_connectivity.hxx"
 #include "dbase/DTables.hxx"
@@ -97,7 +95,7 @@ sdbcx::ObjectType ODbaseTables::appendObject( const ::rtl::OUString& _rForName, 
 			}
 		}
 	}
-    return createObject( _rForName );
+	return createObject( _rForName );
 }
 // -------------------------------------------------------------------------
 // XDrop
@@ -121,13 +119,13 @@ void ODbaseTables::dropObject(sal_Int32 _nPos,const ::rtl::OUString _sElementNam
 			pTable->DropImpl();
 	}
 	else
-    {
-        const ::rtl::OUString sError( static_cast<OFileCatalog&>(m_rParent).getConnection()->getResources().getResourceStringWithSubstitution(
-                    STR_TABLE_NOT_DROP,
-                    "$tablename$", _sElementName
-                 ) );
-        ::dbtools::throwGenericSQLException( sError, NULL );
-    }
+	{
+		const ::rtl::OUString sError( static_cast<OFileCatalog&>(m_rParent).getConnection()->getResources().getResourceStringWithSubstitution(
+					STR_TABLE_NOT_DROP,
+					"$tablename$", _sElementName
+				) );
+		::dbtools::throwGenericSQLException( sError, NULL );
+	}
 }
 // -------------------------------------------------------------------------
 Any SAL_CALL ODbaseTables::queryInterface( const Type & rType ) throw(RuntimeException)
@@ -136,3 +134,5 @@ Any SAL_CALL ODbaseTables::queryInterface( const Type & rType ) throw(RuntimeExc
 	return OTables_BASE::queryInterface(rType);
 }
 // -----------------------------------------------------------------------------
+
+/* vim: set noet sw=4 ts=4: */
