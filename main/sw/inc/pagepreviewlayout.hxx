@@ -588,7 +588,7 @@ public:
         @author OD
 
         @param _nPageNum
-        input parameter - pysical page number of preview page, for which the
+        input parameter - physical page number of preview page, for which the
         page size has to be returned.
 
         @return an object of class <Size>
@@ -602,7 +602,7 @@ public:
         @author OD
 
         @param _nPageNum
-        input parameter - pysical page number of preview page, for which the
+        input parameter - physical page number of preview page, for which the
         virtual page number has to be determined.
 
         @return virtual page number of page given by its physical page number,
@@ -640,3 +640,5 @@ public:
 };
 
 #endif // _PAGEPREVIEWLAYOUT_HXX
+
+/* vim: set noet sw=4 ts=4: */

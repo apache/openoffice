@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sd.hxx"
 
@@ -400,7 +398,7 @@ sal_Bool ImplSdPPTImport::Import()
                                 {
                                     sal_uInt32 i;
 
-                                    nPropCount /= 6;    // 6 propertys a hyperlink
+                                    nPropCount /= 6;    // 6 properties a hyperlink
 
                                     SdHyperlinkEntry* pHyperlink = 0;
                                     for ( i = 0; i < nPropCount; i++ )
@@ -429,7 +427,7 @@ sal_Bool ImplSdPPTImport::Import()
                                             break;
                                         pHyperlink->nStartPos = pHyperlink->nEndPos = -1;
 
-                                        if ( pHyperlink->aSubAdress.Len() ) // get the converted subadress
+                                        if ( pHyperlink->aSubAdress.Len() ) // get the converted subaddress
                                         {
                                             sal_uInt32 nPageNumber = 0;
                                             String aString( pHyperlink->aSubAdress );
@@ -633,12 +631,12 @@ sal_Bool ImplSdPPTImport::Import()
                     if ( nMasterNum > 2 )
                     {
                         if ( ePgKind == PK_STANDARD )
-                        {   // Standardseite: Neues Praesentationslayout erzeugen
+                        {   // Standardseite: Neues Präsentationslayout erzeugen
                             aLayoutName = String( SdResId( STR_LAYOUT_DEFAULT_TITLE_NAME ) );
                             aLayoutName += String::CreateFromInt32( (sal_Int32)( ( nMasterNum + 1 ) / 2 - 1 ) );
                             ( (SdStyleSheetPool*)mpDoc->GetStyleSheetPool() )->CreateLayoutStyleSheets( aLayoutName );
                         }
-                        else    // Notizseite: Praesentationslayout von der Standardseite verwenden
+                        else    // Notizseite: Präsentationslayout von der Standardseite verwenden
                             aLayoutName = ( (SdPage*)mpDoc->GetMasterPage( nMasterNum - 1 ) )->GetName();
                     }
                     pPage->SetName( aLayoutName );
@@ -1097,7 +1095,7 @@ sal_Bool ImplSdPPTImport::Import()
             const PptSlideLayoutAtom* pSlideLayout = GetSlideLayoutAtom();
             if ( pSlideLayout )
             {
-                switch ( pSlideLayout->eLayout )            // Praesentationslayouts fuer Standard-Seiten
+                switch ( pSlideLayout->eLayout )            // Präsentationslayouts für Standard-Seiten
                 {
                     case PPT_LAYOUT_TITLEANDBODYSLIDE :
                     {
@@ -1198,8 +1196,8 @@ sal_Bool ImplSdPPTImport::Import()
                     case PPT_LAYOUT_MASTERSLIDE :            // Layout der Standard- und Titel-MasterPage
                     case PPT_LAYOUT_TITLEMASTERSLIDE :
                     case PPT_LAYOUT_MASTERNOTES :            // Layout der Notizen-MasterPage
-                    case PPT_LAYOUT_NOTESTITLEBODY :        // Praesentationslayout fuer Notiz-Seiten
-                    case PPT_LAYOUT_HANDOUTLAYOUT :         // Praesentationslayout fuer Handzettelseiten
+                    case PPT_LAYOUT_NOTESTITLEBODY :        // Präsentationslayout für Notiz-Seiten
+                    case PPT_LAYOUT_HANDOUTLAYOUT :         // Präsentationslayout für Handzettelseiten
                         eAutoLayout = AUTOLAYOUT_NONE;
                     break;
                 }
@@ -1628,7 +1626,7 @@ void ImplSdPPTImport::ImportPageEffect( SdPage* pPage, const sal_Bool bNewAnimat
                                             if ( nDirection == 0 )
                                                 pPage->SetFadeEffect( ::com::sun::star::presentation::FadeEffect_NONE );                // Direkt
                                             else if ( nDirection == 1 )
-                                                pPage->SetFadeEffect( ::com::sun::star::presentation::FadeEffect_NONE );                // Direkt ueber Schwarz
+                                                pPage->SetFadeEffect( ::com::sun::star::presentation::FadeEffect_NONE );                // Direkt über Schwarz
                                         }
                                         else
                                             pPage->setTransitionType( 0 );
@@ -1799,11 +1797,11 @@ void ImplSdPPTImport::ImportPageEffect( SdPage* pPage, const sal_Bool bNewAnimat
                                 }
 
                                 if ( nSpeed == 0 )
-                                    pPage->setTransitionDuration( 3.0 );         // langsam
+                                    pPage->setTransitionDuration( 3.0 ); // slow
                                 else if ( nSpeed == 1 )
-                                    pPage->setTransitionDuration( 2.0 );    // mittel
+                                    pPage->setTransitionDuration( 2.0 ); // medium
                                 else if ( nSpeed == 2 )
-                                    pPage->setTransitionDuration( 1.0 );     // schnell
+                                    pPage->setTransitionDuration( 1.0 ); // fast
 
                                 if ( nBuildFlags & 0x400 )                      // slidechange by time
                                 {   // Standzeit (in Ticks)
@@ -1901,7 +1899,7 @@ void ImplSdPPTImport::ImportPageEffect( SdPage* pPage, const sal_Bool bNewAnimat
 // Import von Sounds
 //
 // Die Sounds werden nicht nur als String importiert sondern auch
-// in die Gallery einefuegt, falls dort noch nicht vorhanden.
+// in die Gallery eingefügt, falls dort noch nicht vorhanden.
 //
 ///////////////////////////////////////////////////////////////////////////
 
@@ -1945,7 +1943,7 @@ String ImplSdPPTImport::ReadSound(sal_uInt32 nSoundRef) const
                 }
                 if ( bDone )
                 {
-                    // ueberpruefen, ob diese Sound-Datei schon
+                    // überprüfen, ob diese Sound-Datei schon
                     // existiert. Wenn nicht, exportiere diese
                     // in unser lokales Sound-Verzeichnis.
                     sal_Bool    bSoundExists = sal_False;
@@ -2097,7 +2095,7 @@ void ImplSdPPTImport::FillSdAnimationInfo( SdAnimationInfo* pInfo, PptInteractiv
         pInfo->SetBookmark( ReadSound( pIAtom->nSoundRef ) );    // Pfad zum Soundfile in MSDOS-Notation
         pInfo->meClickAction = ::com::sun::star::presentation::ClickAction_SOUND;            // RunProgramAction
     }
-//    if ( nFlags & 0x01 )    // koennen wir nicht ( beim Anklicken markieren )
+//    if ( nFlags & 0x01 )    // können wir nicht ( beim Anklicken markieren )
     switch ( pIAtom->nAction )
     {
 //        case 0x01 :                                         // MacroAction
@@ -2408,8 +2406,8 @@ SdrObject* ImplSdPPTImport::ApplyTextObj( PPTTextObj* pTextObj, SdrTextObj* pObj
                     sal_Bool    bVertical = sal_False;
                     if ( ( pTextObj->GetShapeType() == mso_sptRectangle ) || ( pTextObj->GetShapeType() == mso_sptTextBox ) )
                     {
-                        //if a placeholder with some custom attribute,the pTextObj will keep those attr,whose text size is zero,
-                        //so sdPage should renew a PresObj to process placeholder.
+                        // if a placeholder with some custom attribute,the pTextObj will keep those attr, whose text size is zero,
+                        // so sdPage should renew a PresObj to process placeholder.
                         if ( pTextObj->Count() > 1 ||
                             ( pTextObj->Count() == 1 &&(pTextObj->First()) && pTextObj->First()->GetTextSize()>0 ))
                             bEmptyPresObj = sal_False;
@@ -2786,19 +2784,21 @@ SdrObject* ImplSdPPTImport::ProcessObj( SvStream& rSt, DffObjData& rObjData, voi
 // ---------------------
 
 extern "C" SAL_DLLPUBLIC_EXPORT sal_Bool SAL_CALL ImportPPT( const ::rtl::OUString& rConfigPath,
-        uno::Sequence< beans::PropertyValue >* pConfigData,
-        SdDrawDocument* pDocument, SvStream& rDocStream, SvStorage& rStorage, SfxMedium& rMedium )
+		uno::Sequence< beans::PropertyValue >* pConfigData,
+		SdDrawDocument* pDocument, SvStream& rDocStream, SvStorage& rStorage, SfxMedium& rMedium )
 {
-    sal_Bool bRet = sal_False;
+	sal_Bool bRet = sal_False;
 
-    MSFilterTracer aTracer( rConfigPath, pConfigData );
-    aTracer.StartTracing();
+	MSFilterTracer aTracer( rConfigPath, pConfigData );
+	aTracer.StartTracing();
 
-    SdPPTImport* pImport = new SdPPTImport( pDocument, rDocStream, rStorage, rMedium, &aTracer );
-    bRet = pImport->Import();
+	SdPPTImport* pImport = new SdPPTImport( pDocument, rDocStream, rStorage, rMedium, &aTracer );
+	bRet = pImport->Import();
 
-    aTracer.EndTracing();
-    delete pImport;
+	aTracer.EndTracing();
+	delete pImport;
 
-    return bRet;
+	return bRet;
 }
+
+/* vim: set noet sw=4 ts=4: */

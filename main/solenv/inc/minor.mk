@@ -18,8 +18,6 @@
 #  under the License.
 #
 # *************************************************************
-# $Id$
-
 RSCVERSION=450
 RSCREVISION=450m1(Build:9900)
 BUILD=9900

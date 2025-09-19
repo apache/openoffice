@@ -84,7 +84,7 @@ typedef TFrameContainer::const_iterator								TConstFrameIterator	;
                     container-items.
 
     @base           ThreadHelpBase
-                        guarantee right initialized lock member during boostrap!
+                        guarantee right initialized lock member during bootstrap!
 
 	@devstatus		ready to use
 	@threadsafe		yes

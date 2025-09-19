@@ -490,7 +490,7 @@ LRESULT CALLBACK CHelpPopupWindow::WndProc(
 
                 pImpl->onCreate( hWnd );
 
-                // capture mouse and keybord events
+                // capture mouse and keyboard events
                 SetCapture( hWnd );
              }
         break;

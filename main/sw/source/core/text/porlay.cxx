@@ -1727,7 +1727,7 @@ sal_uInt8 SwScriptInfo::CompType( const xub_StrLen nPos ) const
 /*************************************************************************
  *                      SwScriptInfo::HasKana()
  * returns, if there are compressable kanas or specials
- * betwenn nStart and nEnd
+ * between nStart and nEnd
  *************************************************************************/
 
 sal_uInt16 SwScriptInfo::HasKana( xub_StrLen nStart, const xub_StrLen nLen ) const

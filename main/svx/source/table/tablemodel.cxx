@@ -1196,7 +1196,7 @@ void TableModel::merge( sal_Int32 nCol, sal_Int32 nRow, sal_Int32 nColSpan, sal_
 
     if( (nLastRow > getRowCount()) || (nLastCol > getRowCount() ) )
     {
-        DBG_ERROR("TableModel::merge(), merge beyound the table!");
+        DBG_ERROR("TableModel::merge(), merge beyond the table!");
     }
 
 	// merge first cell
