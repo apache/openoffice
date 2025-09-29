@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -124,7 +124,7 @@ class ExtBoxWithBtns_Impl : public ExtensionBox_Impl
 {
     Size            m_aOutputSize;
     bool            m_bInterfaceLocked;
-    
+
     PushButton     *m_pOptionsBtn;
     PushButton     *m_pEnableBtn;
     PushButton     *m_pRemoveBtn;
@@ -472,13 +472,13 @@ void ExtBoxWithBtns_Impl::enableButtons( bool bEnable )
 IMPL_LINK( ExtBoxWithBtns_Impl, ScrollHdl, ScrollBar*, pScrBar )
 {
     long nDelta = pScrBar->GetDelta();
-    
+
     Point aNewOptPt( m_pOptionsBtn->GetPosPixel() - Point( 0, nDelta ) );
     Point aNewRemPt( m_pRemoveBtn->GetPosPixel() - Point( 0, nDelta ) );
     Point aNewEnPt( m_pEnableBtn->GetPosPixel() - Point( 0, nDelta ) );
 
     DoScroll( nDelta );
-    
+
     m_pOptionsBtn->SetPosPixel( aNewOptPt );
     m_pRemoveBtn->SetPosPixel( aNewRemPt );
     m_pEnableBtn->SetPosPixel( aNewEnPt );
@@ -494,14 +494,14 @@ IMPL_LINK( ExtBoxWithBtns_Impl, HandleOptionsBtn, void*, EMPTYARG )
     if ( nActive != EXTENSION_LISTBOX_ENTRY_NOTFOUND )
     {
         SfxAbstractDialogFactory* pFact = SfxAbstractDialogFactory::Create();
-    
+
         if ( pFact )
         {
             OUString sExtensionId = GetEntryData( nActive )->m_xPackage->getIdentifier().Value;
             VclAbstractDialog* pDlg = pFact->CreateOptionsDialog( this, sExtensionId, rtl::OUString() );
-    
+
             pDlg->Execute();
-    
+
             delete pDlg;
         }
     }
@@ -607,7 +607,7 @@ bool DialogHelper::continueOnSharedExtension( const uno::Reference< deployment::
         aInfoBox.SetMessText( aMsgText );
 
         bHadWarning = true;
-        
+
         if ( RET_OK == aInfoBox.Execute() )
             return true;
         else
@@ -623,7 +623,7 @@ void DialogHelper::openWebBrowser( const OUString & sURL, const OUString &sTitle
     if ( ! sURL.getLength() ) // Nothing to do, when the URL is empty
         return;
 
-    try 
+    try
     {
         uno::Reference< XSystemShellExecute > xSystemShellExecute(
             com::sun::star::system::SystemShellExecute::create( m_xContext ) );
@@ -854,10 +854,10 @@ bool ExtMgrDialog::updatePackage( const uno::Reference< deployment::XPackage > &
         return false;
 
 	// get the extension with highest version
-	uno::Sequence<uno::Reference<deployment::XPackage> > seqExtensions = 
+	uno::Sequence<uno::Reference<deployment::XPackage> > seqExtensions =
 	m_pManager->getExtensionManager()->getExtensionsWithSameIdentifier(
 		dp_misc::getIdentifier(xPackage), xPackage->getName(), uno::Reference<ucb::XCommandEnvironment>());
-	uno::Reference<deployment::XPackage> extension = 
+	uno::Reference<deployment::XPackage> extension =
 		dp_misc::getExtensionWithHighestVersion(seqExtensions);
 	OSL_ASSERT(extension.is());
     std::vector< css::uno::Reference< css::deployment::XPackage > > vEntries;
@@ -910,7 +910,7 @@ uno::Sequence< OUString > ExtMgrDialog::raiseAddPicker()
             const OUString title( xPackageType->getShortDescription() );
             const ::std::pair< t_string2string::iterator, bool > insertion(
                 title2filter.insert( t_string2string::value_type( title, filter ) ) );
-            if ( ! insertion.second ) 
+            if ( ! insertion.second )
             { // already existing, append extensions:
                 ::rtl::OUStringBuffer buf;
                 buf.append( insertion.first->second );
@@ -1128,7 +1128,7 @@ void ExtMgrDialog::Resize()
 
     Point aPos( RSC_SP_DLG_INNERBORDER_LEFT,
                 aTotalSize.Height() - RSC_SP_DLG_INNERBORDER_BOTTOM - aBtnSize.Height() );
-    
+
     m_aHelpBtn.SetPosPixel( aPos );
 
     aPos.X() = aTotalSize.Width() - RSC_SP_DLG_INNERBORDER_RIGHT - aBtnSize.Width();
@@ -1146,12 +1146,12 @@ void ExtMgrDialog::Resize()
 
     Size aFTSize( m_aGetExtensions.CalcMinimumSize() );
     aPos = Point( RSC_SP_DLG_INNERBORDER_LEFT, aPos.Y() - RSC_CD_FIXEDTEXT_HEIGHT - 2*RSC_SP_DLG_INNERBORDER_BOTTOM );
-    
+
     m_aGetExtensions.SetPosSizePixel( aPos, aFTSize );
 
     aPos.X() = aTotalSize.Width() - RSC_SP_DLG_INNERBORDER_RIGHT - aBtnSize.Width();
     m_aCancelBtn.SetPosPixel( Point( aPos.X(), aPos.Y() - ((aBtnSize.Height()-aFTSize.Height())/2) ) );
-    
+
     // Calc progress height
     long nProgressHeight = aFTSize.Height();
 
@@ -1564,7 +1564,7 @@ void UpdateRequiredDialog::Resize()
 
     Point aPos( RSC_SP_DLG_INNERBORDER_LEFT,
                 aTotalSize.Height() - RSC_SP_DLG_INNERBORDER_BOTTOM - aBtnSize.Height() );
-    
+
     m_aHelpBtn.SetPosPixel( aPos );
 
     aPos.X() = aTotalSize.Width() - RSC_SP_DLG_INNERBORDER_RIGHT - m_aCloseBtn.GetSizePixel().Width();
@@ -1632,7 +1632,7 @@ short UpdateRequiredDialog::Execute()
     //ToDo
     //I believe m_bHasLockedEntries was used to prevent showing extensions which cannot
     //be disabled because they are in a read only repository. However, disabling extensions
-    //is now always possible because the registration data of all repositories 
+    //is now always possible because the registration data of all repositories
     //are in the user installation.
     //Therfore all extensions could be displayed and all the handling around m_bHasLockedEntries
     //could be removed.
@@ -1720,7 +1720,7 @@ bool UpdateRequiredDialog::hasActiveEntries()
     for ( long nIndex = 0; nIndex < nCount; nIndex++ )
     {
         TEntry_Impl pEntry = m_pExtensionBox->GetEntryData( nIndex );
-        
+
         if ( isEnabled(pEntry->m_xPackage) && !checkDependencies( pEntry->m_xPackage ) )
         {
             bRet = true;
@@ -1746,7 +1746,7 @@ void UpdateRequiredDialog::disableAllEntries()
     }
 
     setBusy( false );
-    
+
     if ( ! hasActiveEntries() )
         m_aCloseBtn.SetText( m_sCloseText );
 }
@@ -1822,4 +1822,3 @@ sal_Int16 UpdateRequiredDialogService::execute() throw ( uno::RuntimeException )
 SelectedPackage::~SelectedPackage() {}
 
 } //namespace dp_gui
-
