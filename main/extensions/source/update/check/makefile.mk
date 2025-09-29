@@ -86,7 +86,8 @@ SHL1STDLIBS=    \
         $(CURLLIB) \
         $(SALLIB) \
         $(SHELL32LIB) \
-        $(OLE32LIB)
+        $(OLE32LIB) \
+        $(VCLLIB)
 
 SHL1VERSIONMAP=$(SOLARENV)/src/component.map
 SHL1DEF=$(MISC)$/$(SHL1TARGET).def
