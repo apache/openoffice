@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_desktop.hxx"
 
@@ -85,7 +83,6 @@ using namespace ::com::sun::star;
 using namespace ::com::sun::star::system;
 
 using ::rtl::OUString;
-
 
 namespace dp_gui {
 
@@ -942,7 +939,7 @@ uno::Sequence< OUString > ExtMgrDialog::raiseAddPicker()
     xFilterManager->setCurrentFilter( sDefaultFilter );
 
     if ( xFilePicker->execute() != ui::dialogs::ExecutableDialogResults::OK )
-        return uno::Sequence<OUString>(); // cancelled
+        return uno::Sequence<OUString>(); // canceled
 
     m_sLastFolderURL = xFilePicker->getDisplayDirectory();
     uno::Sequence< OUString > files( xFilePicker->getFiles() );
@@ -1145,7 +1142,7 @@ void ExtMgrDialog::Resize()
     m_aDivider.SetPosSizePixel( aPos, aDivSize );
 
     Size aFTSize( m_aGetExtensions.CalcMinimumSize() );
-    aPos = Point( RSC_SP_DLG_INNERBORDER_LEFT, aPos.Y() - RSC_CD_FIXEDTEXT_HEIGHT - 2*RSC_SP_DLG_INNERBORDER_BOTTOM );
+    aPos = Point( RSC_SP_DLG_INNERBORDER_LEFT, aPos.Y() - RSC_CD_FIXEDTEXT_HEIGHT - 2 * RSC_SP_DLG_INNERBORDER_BOTTOM - 4 );
 
     m_aGetExtensions.SetPosSizePixel( aPos, aFTSize );
 
@@ -1822,3 +1819,5 @@ sal_Int16 UpdateRequiredDialogService::execute() throw ( uno::RuntimeException )
 SelectedPackage::~SelectedPackage() {}
 
 } //namespace dp_gui
+
+/* vim: set noet sw=4 ts=4: */
