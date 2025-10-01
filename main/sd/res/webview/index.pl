@@ -1,17 +1,17 @@
-<HTML>
+<html>
 
-<HEAD>
-  <TITLE>$$1</TITLE>
-</HEAD>
+<head>
+  <title>$$1</title>
+</head>
 
-<FRAMESET ROWS="*" BORDER=0 FRAMEBORDER=0 FRAMESPACING=0>
-    <FRAME SRC="$$3webcast.pl" NAME="frame1" SCROLLING=yes  RESIZE MARGINWIDTH=0 MARGINHEIGHT=0 FRAMEBORDER=0>
-</FRAMESET>
+<frameset rows="*" border="0" frameborder="0" framespacing="0">
+    <frame src="$$3webcast.pl" name="frame1" scrolling="yes" resize marginwidth="0" marginheight="0" frameborder="0">
+</frameset>
 
-<NOFRAMES>
+<noframes>
 
-<BODY BGCOLOR="white">
-    <META HTTP-EQUIV="-REFRESH" CONTENT="1;URL=$$3webcast.pl">
-</BODY>;
+<body bgcolor="white">
+    <meta http-equiv="refresh" content="1;URL=$$3webcast.pl">
+</body>
 
-</HTML>
+</html>
