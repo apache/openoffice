@@ -57,11 +57,6 @@
 		</node>
 	</node>
 	<node oor:name="Events">
-		<node oor:name="onFirstVisibleTask" oor:op="fuse">
-			<node oor:name="JobList">
-				<node oor:name="UpdateCheck" oor:op="replace"/>
-			</node>
-		</node>
 	</node>
 </oor:component-data>
 
