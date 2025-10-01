@@ -49,25 +49,6 @@ namespace uno = com::sun::star::uno ;
 namespace
 {
 
-class InitUpdateCheckJobThread : public osl::Thread
-{
-public:
-    InitUpdateCheckJobThread( const uno::Reference< uno::XComponentContext > &xContext,
-                              const uno::Sequence< beans::NamedValue > &xParameters,
-                              bool bShowDialog );
-
-    virtual void SAL_CALL run();
-
-    void    setTerminating();
-
-private:
-    osl::Condition m_aCondition;
-    uno::Reference<uno::XComponentContext> m_xContext;
-    uno::Sequence<beans::NamedValue> m_xParameters;
-    bool m_bShowDialog;
-    bool m_bTerminating;
-};
-
 class UpdateCheckJob :
     public ::cppu::WeakImplHelper3< task::XJob, lang::XServiceInfo, frame::XTerminateListener >
 {
@@ -109,50 +90,10 @@ public:
 private:
     uno::Reference<uno::XComponentContext>  m_xContext;
     uno::Reference< frame::XDesktop >       m_xDesktop;
-    std::auto_ptr< InitUpdateCheckJobThread > m_pInitThread;
 
     void handleExtensionUpdates( const uno::Sequence< beans::NamedValue > &rListProp );
 };
 
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-InitUpdateCheckJobThread::InitUpdateCheckJobThread(
-            const uno::Reference< uno::XComponentContext > &xContext,
-            const uno::Sequence< beans::NamedValue > &xParameters,
-            bool bShowDialog ) :
-    m_xContext( xContext ),
-    m_xParameters( xParameters ),
-    m_bShowDialog( bShowDialog ),
-    m_bTerminating( false )
-{
-    create();
-}
-
-//------------------------------------------------------------------------------
-void SAL_CALL InitUpdateCheckJobThread::run()
-{
-    if (!m_bShowDialog) {
-        TimeValue tv = { 25, 0 };
-        m_aCondition.wait( &tv );
-        if ( m_bTerminating )
-            return;
-    }
-
-    rtl::Reference< UpdateCheck > aController( UpdateCheck::get() );
-    aController->initialize( m_xParameters, m_xContext );
-
-    if ( m_bShowDialog )
-        aController->showDialog( true );
-}
-
-void InitUpdateCheckJobThread::setTerminating() {
-    m_bTerminating = true;
-    m_aCondition.set();
-}
-
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
 //------------------------------------------------------------------------------
 
 UpdateCheckJob::UpdateCheckJob( const uno::Reference<uno::XComponentContext>& xContext ) :
@@ -216,19 +157,9 @@ UpdateCheckJob::execute(const uno::Sequence<beans::NamedValue>& namedValues)
     uno::Sequence<beans::NamedValue> aConfig =
         getValue< uno::Sequence<beans::NamedValue> > (namedValues, "JobConfig");
 
-    /* Determine the way we got invoked here -
-     * see Developers Guide Chapter "4.7.2 Jobs" to understand the magic
-     */
-
-    uno::Sequence<beans::NamedValue> aEnvironment =
-        getValue< uno::Sequence<beans::NamedValue> > (namedValues, "Environment");
-
-    rtl::OUString aEventName = getValue< rtl::OUString > (aEnvironment, "EventName");
-
-    m_pInitThread.reset(
-        new InitUpdateCheckJobThread(
-            m_xContext, aConfig,
-            !aEventName.equalsAscii("onFirstVisibleTask")));
+    rtl::Reference< UpdateCheck > aController( UpdateCheck::get() );
+    aController->initialize( aConfig, m_xContext );
+    aController->showDialog( true );
 
     return uno::Any();
 }
@@ -326,11 +257,6 @@ void SAL_CALL UpdateCheckJob::queryTermination( lang::EventObject const & )
 void SAL_CALL UpdateCheckJob::notifyTermination( lang::EventObject const & )
     throw ( uno::RuntimeException )
 {
-    if ( m_pInitThread.get() != 0 )
-    {
-        m_pInitThread->setTerminating();
-        m_pInitThread->join();
-    }
 }
 
 } // anonymous namespace
