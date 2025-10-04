@@ -19,7 +19,6 @@
  * 
  *************************************************************/
 
-
 #ifndef _SVX_OPTDICT_HXX
 #define _SVX_OPTDICT_HXX
 
@@ -59,7 +58,7 @@ namespace linguistic2{
 class SvxNewDictionaryDialog : public ModalDialog
 {
 private:
-	FixedLine            aNewDictBox;
+	FixedLine			aNewDictBox;
 	FixedText			aNameText;
 	Edit				aNameEdit;
 	FixedText			aLanguageText;
@@ -126,7 +125,7 @@ private:
 	SvTabListBox 			aWordsLB;
 	PushButton 				aNewReplacePB;
 	PushButton 				aDeletePB;
-    FixedLine                aEditDictsBox;
+	GroupBox				aEditDictsBox;
 
 	HelpButton				aHelpBtn;
 	CancelButton			aCloseBtn;
@@ -179,6 +178,4 @@ public:
 	sal_uInt16 GetSelectedDict() {return aAllDictsLB.GetSelectEntryPos();}
 };
 
-
 #endif
-
