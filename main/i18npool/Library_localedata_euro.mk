@@ -19,8 +19,6 @@
 #
 #**************************************************************
 
-
-
 $(eval $(call gb_Library_Library,localedata_euro))
 
 $(eval $(call gb_Library_set_include,localedata_euro,\
@@ -90,6 +88,7 @@ $(eval $(call gb_Library_add_generated_exception_objects,localedata_euro,\
 	CustomTarget/i18npool/source/localedata/data/localedata_kl_GL \
 	CustomTarget/i18npool/source/localedata/data/localedata_la_VA \
 	CustomTarget/i18npool/source/localedata/data/localedata_lb_LU \
+	CustomTarget/i18npool/source/localedata/data/localedata_lij_IT \
 	CustomTarget/i18npool/source/localedata/data/localedata_lt_LT \
 	CustomTarget/i18npool/source/localedata/data/localedata_ltg_LV \
 	CustomTarget/i18npool/source/localedata/data/localedata_lv_LV \
@@ -124,6 +123,5 @@ $(eval $(call gb_Library_add_generated_exception_objects,localedata_euro,\
 	CustomTarget/i18npool/source/localedata/data/localedata_uk_UA \
 	CustomTarget/i18npool/source/localedata/data/localedata_wa_BE \
 ))
-
 
 # vim: set noet sw=4 ts=4:
