@@ -409,7 +409,7 @@ typedef unsigned short LanguageType;
  * 0xFA00 to 0xFBFF with sublanguage ID 0x3E
  * 0xFE00 to 0xFFFF with sublanguage ID 0x3F
  *
- * Obsolete OOo user defines now have other values assigned by MS, and
+ * Obsolete AOO user defines now have other values assigned by MS, and
  * different name. Mapping an obsolete value to ISO code should work provided
  * that such a mapping exists in i18npool/source/isolang/isolang.cxx, but
  * mapping ISO back to LANGID will return the new value.
@@ -519,6 +519,6 @@ typedef unsigned short LanguageType;
 #define LANGUAGE_USER_KABYLE                0x0659
 #define LANGUAGE_USER_HAITIAN               0x065A
 #define LANGUAGE_USER_VENETAN               0x065B
-
+#define LANGUAGE_USER_LIGURIAN              0x065C
 
 #endif /* INCLUDED_I18NPOOL_LANG_H */
