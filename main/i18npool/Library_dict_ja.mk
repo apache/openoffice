@@ -19,8 +19,6 @@
 #
 #**************************************************************
 
-
-
 $(eval $(call gb_Library_Library,dict_ja))
 
 $(eval $(call gb_Library_set_include,dict_ja,\
@@ -31,7 +29,7 @@ $(eval $(call gb_Library_set_include,dict_ja,\
 ))
 
 #$(eval $(call gb_Library_add_api,dict_ja, \
-#        udkapi \
+#	udkapi \
 #	offapi \
 #))
 

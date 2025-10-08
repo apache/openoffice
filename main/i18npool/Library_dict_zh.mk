@@ -19,8 +19,6 @@
 #
 #**************************************************************
 
-
-
 $(eval $(call gb_Library_Library,dict_zh))
 
 $(eval $(call gb_Library_set_include,dict_zh,\
@@ -31,7 +29,7 @@ $(eval $(call gb_Library_set_include,dict_zh,\
 ))
 
 #$(eval $(call gb_Library_add_api,dict_zh, \
-#        udkapi \
+#	udkapi \
 #	offapi \
 #))
 

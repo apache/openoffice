@@ -19,8 +19,6 @@
 #
 #**************************************************************
 
-
-
 $(eval $(call gb_Executable_Executable,saxparser))
 
 $(eval $(call gb_Executable_add_precompiled_header,saxparser,$(SRCDIR)/i18npool/inc/pch/precompiled_i18npool))
@@ -39,7 +37,7 @@ $(eval $(call gb_Executable_add_api,saxparser,\
 
 # the xmlparser build breaks in this header file
 #
-#      /opt/SUNWspro/WS6U1/include/CC/Cstd/./limits
+#		/opt/SUNWspro/WS6U1/include/CC/Cstd/./limits
 #
 # which defines a class with member functions called min() and max().
 # the build breaks because in solar.h, there is something like this
@@ -61,7 +59,7 @@ $(eval $(call gb_Executable_add_linked_libs,saxparser,\
 	cppuhelper \
 	sal \
 	stl \
-    $(gb_STDLIBS) \
+	$(gb_STDLIBS) \
 ))
 
 $(eval $(call gb_Executable_add_exception_objects,saxparser,\

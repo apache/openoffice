@@ -19,8 +19,6 @@
 #
 #**************************************************************
 
-
-
 $(eval $(call gb_Module_Module,i18npool))
 
 $(eval $(call gb_Module_add_targets,i18npool,\
@@ -46,7 +44,6 @@ $(eval $(call gb_Module_add_targets,i18npool,\
 	Package_version \
 	Package_xml \
 ))
-
 
 # What's left to do:
 #
@@ -75,7 +72,5 @@ $(eval $(call gb_Module_add_targets,i18npool,\
 # DONE inp  i18npool\source\ordinalsuffix              nmake   -   all inp_ordinalsuffix NULL
 # inp  i18npool\util                              nmake   -   all inp_util inp_brkit inp_dict inp_chclass inp_translit inp_cal inp_dnum inp_natnum inp_localedata inp_locdata_data inp_numformat inp_rserv inp_index inp_index_data
 #                                                                          inp_collator inp_collator_data inp_inputchecker inp_textconversion inp_textconv_dict inp_search inp_isolang inp_paper inp_ordinalsuffix NULL
-
-
 
 # vim: set noet sw=4 ts=4:

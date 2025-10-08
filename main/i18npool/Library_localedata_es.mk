@@ -19,8 +19,6 @@
 #
 #**************************************************************
 
-
-
 $(eval $(call gb_Library_Library,localedata_es))
 
 $(eval $(call gb_Library_set_include,localedata_es,\
@@ -70,6 +68,5 @@ $(eval $(call gb_Library_add_generated_exception_objects,localedata_es,\
 	CustomTarget/i18npool/source/localedata/data/localedata_es_VE \
 	CustomTarget/i18npool/source/localedata/data/localedata_gl_ES \
 ))
-
 
 # vim: set noet sw=4 ts=4:
