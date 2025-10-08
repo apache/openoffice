@@ -19,8 +19,6 @@
 #
 #**************************************************************
 
-
-
 $(eval $(call gb_Library_Library,i18npool))
 
 $(eval $(call gb_Library_add_package_headers,i18npool,i18npool_inc))

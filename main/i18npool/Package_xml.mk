@@ -19,8 +19,6 @@
 #
 ###############################################################
 
-
-
 $(eval $(call gb_Package_Package,i18npool_xml,$(SRCDIR)/i18npool/xml))
 
 $(eval $(call gb_Package_add_file,i18npool_xml,xml/BreakIterator.xml,BreakIterator.xml))

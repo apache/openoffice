@@ -19,8 +19,6 @@
 #
 #**************************************************************
 
-
-
 $(eval $(call gb_Executable_Executable,gendict))
 
 $(eval $(call gb_Executable_add_precompiled_header,gendict,$(SRCDIR)/i18npool/inc/pch/precompiled_i18npool))
@@ -35,7 +33,7 @@ $(eval $(call gb_Executable_set_include,gendict,\
 $(eval $(call gb_Executable_add_linked_libs,gendict,\
 	sal \
 	stl \
-    $(gb_STDLIBS) \
+	$(gb_STDLIBS) \
 ))
 
 $(eval $(call gb_Executable_add_exception_objects,gendict,\

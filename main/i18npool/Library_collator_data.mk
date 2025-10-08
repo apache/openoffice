@@ -19,8 +19,6 @@
 #
 #**************************************************************
 
-
-
 $(eval $(call gb_Library_Library,collator_data))
 
 $(eval $(call gb_Library_set_include,collator_data,\
@@ -56,6 +54,5 @@ $(WORKDIR)/CustomTarget/i18npool/source/collator/data/collator_%.cxx : $(SRCDIR)
 		$(call gb_Helper_convert_native,$<) \
 		$(call gb_Helper_convert_native,$@) \
 		$*
-
 
 # vim: set noet sw=4 ts=4:

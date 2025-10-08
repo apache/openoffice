@@ -19,8 +19,6 @@
 #
 ###############################################################
 
-
-
 $(eval $(call gb_Package_Package,i18npool_version,$(SRCDIR)/i18npool))
 
 $(eval $(call gb_Package_add_file,i18npool_version,inc/i18npool/version.mk,version.mk))

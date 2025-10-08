@@ -19,8 +19,6 @@
 #
 #**************************************************************
 
-
-
 $(eval $(call gb_Library_Library,index_data))
 
 $(eval $(call gb_Library_set_include,index_data,\
