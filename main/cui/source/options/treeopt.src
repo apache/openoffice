@@ -300,6 +300,7 @@ String RID_RIDER_SLL_PERSONAL
 	Text [ en-US ] = "Personal certificates" ;
 };
 
+#define MASK_COL    MaskColor = Color { Red = 0xFF00; Green = 0x0000; Blue = 0xFF00; } ;
 #define IMGLST_IDLST \
 	IdList = {					\
 		SID_GENERAL_OPTIONS;	\
