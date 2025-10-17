@@ -698,37 +698,6 @@ long BigMulDiv(long nVal, long nMul, long nDiv)
 	return 0x7fffffff;
 }
 
-void Kuerzen(Fraction& rF, unsigned nDigits)
-{
-	sal_Int32 nMul=rF.GetNumerator();
-	sal_Int32 nDiv=rF.GetDenominator();
-	FASTBOOL bNeg=sal_False;
-	if (nMul<0) { nMul=-nMul; bNeg=!bNeg; }
-	if (nDiv<0) { nDiv=-nDiv; bNeg=!bNeg; }
-	if (nMul==0 || nDiv==0) return;
-	sal_uInt32 a;
-	a=sal_uInt32(nMul); unsigned nMulZ=0; // Führende Nullen zählen
-	while (a<0x00800000) { nMulZ+=8; a<<=8; }
-	while (a<0x80000000) { nMulZ++; a<<=1; }
-	a=sal_uInt32(nDiv); unsigned nDivZ=0; // Führende Nullen zählen
-	while (a<0x00800000) { nDivZ+=8; a<<=8; }
-	while (a<0x80000000) { nDivZ++; a<<=1; }
-	// Anzahl der verwendeten Digits bestimmen
-	int nMulDigits=32-nMulZ;
-	int nDivDigits=32-nDivZ;
-	// Nun bestimmen, wieviele Stellen hinten weg können
-	int nMulWeg=nMulDigits-nDigits; if (nMulWeg<0) nMulWeg=0;
-	int nDivWeg=nDivDigits-nDigits; if (nDivWeg<0) nDivWeg=0;
-	int nWeg=Min(nMulWeg,nDivWeg);
-	nMul>>=nWeg;
-	nDiv>>=nWeg;
-	if (nMul==0 || nDiv==0) {
-		DBG_WARNING("Oups, beim kürzen einer Fraction hat sich Joe verrechnet.");
-		return;
-	}
-	if (bNeg) nMul=-nMul;
-	rF=Fraction(nMul,nDiv);
-}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // Wieviele eU-Einheiten passen in einen mm bzw. Inch?
