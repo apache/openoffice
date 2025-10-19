@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -40,14 +40,14 @@ ModalDialog RID_PAGENUMBERS
 	HelpId = HID_RPT_PAGENUMBERS_DLG;
 	Moveable = TRUE ;
 	Closeable = TRUE ;
-	
+
 	FixedLine FL_FORMAT
 	{
 		Pos = MAP_APPFONT ( RELATED_CONTROLS , RELATED_CONTROLS ) ;
 		Size = MAP_APPFONT ( PAGE_WIDTH - 2*RELATED_CONTROLS, FIXEDTEXT_HEIGHT ) ;
 		Text [ en-US ] = "Format";
 	};
-	
+
 	RadioButton RB_PAGE_N
 	{
 	    HelpID = "reportdesign:RadioButton:RID_PAGENUMBERS:RB_PAGE_N";
@@ -64,14 +64,14 @@ ModalDialog RID_PAGENUMBERS
 		Size = MAP_APPFONT ( PAGE_WIDTH - 2*RELATED_CONTROLS , FIXEDTEXT_HEIGHT ) ;
         Text [ en-US ]  = "Page N of M";
 	};
-	
+
 	FixedLine FL_POSITION
 	{
 		Pos = MAP_APPFONT ( RELATED_CONTROLS , 3*RELATED_CONTROLS + UNRELATED_CONTROLS + 3*FIXEDTEXT_HEIGHT) ;
 		Size = MAP_APPFONT ( PAGE_WIDTH - 2*RELATED_CONTROLS , FIXEDTEXT_HEIGHT ) ;
 		Text [ en-US ] = "Position";
 	};
-	
+
 	RadioButton RB_PAGE_TOPPAGE
 	{
 	    HelpID = "reportdesign:RadioButton:RID_PAGENUMBERS:RB_PAGE_TOPPAGE";
@@ -85,17 +85,17 @@ ModalDialog RID_PAGENUMBERS
 	{
 	    HelpID = "reportdesign:RadioButton:RID_PAGENUMBERS:RB_PAGE_BOTTOMPAGE";
 		Pos = MAP_APPFONT ( UNRELATED_CONTROLS + RELATED_CONTROLS, 5*RELATED_CONTROLS + UNRELATED_CONTROLS + 5*FIXEDTEXT_HEIGHT) ;
-		Size = MAP_APPFONT ( PAGE_WIDTH - 2*RELATED_CONTROLS , FIXEDTEXT_HEIGHT ) ;		
+		Size = MAP_APPFONT ( PAGE_WIDTH - 2*RELATED_CONTROLS , FIXEDTEXT_HEIGHT ) ;
         Text [ en-US ]  = "Bottom of Page (Footer)";
 	};
-	
+
 	FixedLine FL_MISC
 	{
 		Pos = MAP_APPFONT ( RELATED_CONTROLS , 5*RELATED_CONTROLS + 2*UNRELATED_CONTROLS + 6*FIXEDTEXT_HEIGHT) ;
 		Size = MAP_APPFONT ( PAGE_WIDTH - 2*RELATED_CONTROLS , FIXEDTEXT_HEIGHT ) ;
 		Text [ en-US ] = "General";
 	};
-	
+
 	FixedText FL_ALIGNMENT
 	{
 		Pos = MAP_APPFONT ( UNRELATED_CONTROLS , 6*RELATED_CONTROLS + 2*UNRELATED_CONTROLS + 7*FIXEDTEXT_HEIGHT) ;
