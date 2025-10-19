@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -120,14 +120,14 @@ hidspecial HID_RPT_PROP_CONTROLBACKGROUNDTRANSPARENT    { HelpId = HID_RPT_PROP_
 /*
 hidspecial SID_ARRANGEMENU    { HelpId = SID_ARRANGEMENU; };
 hidspecial SID_SELECTALL_IN_SECTION    { HelpId = SID_SELECTALL_IN_SECTION; };
-hidspecial SID_SECTION_ALIGN { HelpId = SID_SECTION_ALIGN; };         
-hidspecial SID_SECTION_ALIGN_LEFT { HelpId = SID_SECTION_ALIGN_LEFT; };    
-hidspecial SID_SECTION_ALIGN_CENTER { HelpId = SID_SECTION_ALIGN_CENTER; };  
-hidspecial SID_SECTION_ALIGN_RIGHT { HelpId = SID_SECTION_ALIGN_RIGHT; };   
-hidspecial SID_SECTION_ALIGN_UP { HelpId = SID_SECTION_ALIGN_UP; };      
-hidspecial SID_SECTION_ALIGN_MIDDLE { HelpId = SID_SECTION_ALIGN_MIDDLE; };  
-hidspecial SID_SECTION_ALIGN_DOWN { HelpId = SID_SECTION_ALIGN_DOWN; };    
-hidspecial SID_NEXT_MARK { HelpId = SID_NEXT_MARK; };    
+hidspecial SID_SECTION_ALIGN { HelpId = SID_SECTION_ALIGN; };
+hidspecial SID_SECTION_ALIGN_LEFT { HelpId = SID_SECTION_ALIGN_LEFT; };
+hidspecial SID_SECTION_ALIGN_CENTER { HelpId = SID_SECTION_ALIGN_CENTER; };
+hidspecial SID_SECTION_ALIGN_RIGHT { HelpId = SID_SECTION_ALIGN_RIGHT; };
+hidspecial SID_SECTION_ALIGN_UP { HelpId = SID_SECTION_ALIGN_UP; };
+hidspecial SID_SECTION_ALIGN_MIDDLE { HelpId = SID_SECTION_ALIGN_MIDDLE; };
+hidspecial SID_SECTION_ALIGN_DOWN { HelpId = SID_SECTION_ALIGN_DOWN; };
+hidspecial SID_NEXT_MARK { HelpId = SID_NEXT_MARK; };
 hidspecial SID_PREV_MARK { HelpId = SID_PREV_MARK; };
 hidspecial SID_SECTION_SHRINK { HelpId = SID_SECTION_SHRINK; };
 hidspecial SID_SECTION_SHRINK_TOP { HelpId = SID_SECTION_SHRINK_TOP; };
@@ -168,4 +168,3 @@ hidspecial HID_RPT_GROUPSORT_DELETE	    { HelpId = HID_RPT_GROUPSORT_DELETE; };
 hidspecial HID_RPT_PROP_MIMETYPE        { HelpId = HID_RPT_PROP_MIMETYPE; };
 hidspecial HID_RPT_PROP_VERTICALALIGN   { HelpId = HID_RPT_PROP_VERTICALALIGN; };
 hidspecial HID_RPT_PROP_PARAADJUST      { HelpId = HID_RPT_PROP_PARAADJUST; };
-
