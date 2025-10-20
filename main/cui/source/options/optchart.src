@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #include "optchart.hrc"
 #include <cuires.hrc>
 #include "helpid.hrc"
@@ -35,7 +33,7 @@ TabPage RID_OPTPAGE_CHART_DEFCOLORS
 	Text [ en-US ] = "Default Colors" ;
 	FixedLine FL_CHART_COLOR_LIST
 	{
-		Pos = MAP_APPFONT ( 6, 3  ) ;
+		Pos = MAP_APPFONT ( 6, 3 ) ;
 		Size = MAP_APPFONT ( 80, 8 ) ;
 		Text [ en-US ] = "Chart colors" ;
 	};
