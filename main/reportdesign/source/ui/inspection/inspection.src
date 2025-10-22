@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -260,37 +260,37 @@ String RID_STR_ILLEGAL_POSITION
 	Text [ en-US ] = "This position can not be set. It is invalid.";
 };
 String RID_STR_SCOPE_GROUP
-{	
+{
     Text [ en-US ] = "Group: %1";
 };
 String RID_STR_FORMULALIST
-{	
+{
     Text [ en-US ] = "Function";
 };
 String RID_STR_SCOPE
-{	
+{
     Text [ en-US ] = "Scope";
 };
 String RID_STR_TYPE
-{	
+{
     Text [ en-US ] = "Data Field Type";
 };
 Resource RID_STR_TYPE_CONST
 {
     String 1
-    {	
+    {
         Text [ en-US ] = "Field or Formula";
     };
     String 2
-    {	
+    {
         Text [ en-US ] = "Function";
     };
     String 3
-    {	
+    {
         Text [ en-US ] = "Counter";
     };
     String 4
-    {	
+    {
         Text [ en-US ] = "User defined Function";
     };
 };
@@ -385,4 +385,3 @@ String RID_STR_F_MAXIMUM
 {
 	Text [ en-US ] = "Maximum" ;
 };
-
