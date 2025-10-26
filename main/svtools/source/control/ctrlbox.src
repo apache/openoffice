@@ -19,10 +19,7 @@
  *
  *************************************************************/
 
-
-
 #include <svtools/svtools.hrc>
-
 
 IMAGE RID_IMG_SCALABLEFONT
 {
@@ -148,7 +145,7 @@ String STR_SVT_INDEXENTRY_DICTIONARY
 String STR_SVT_INDEXENTRY_PINYIN
 {
 	/* Chinese sorting algorithm */
-    Text [ en-US ] = "Pinyin" ;
+	Text [ en-US ] = "Pinyin" ;
 };
 
 String STR_SVT_INDEXENTRY_RADICAL
