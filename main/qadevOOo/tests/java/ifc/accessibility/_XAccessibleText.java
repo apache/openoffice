@@ -662,7 +662,7 @@ public class _XAccessibleText extends MultiMethodTest {
         try {
             log.print("setSelection(-1, chCount-1):");
             locRes = oObj.setSelection(-1, chCount - 1);
-            log.println(locRes + " excepion was expected");
+            log.println(locRes + " exception was expected");
             res &= !locRes;
         } catch (com.sun.star.lang.IndexOutOfBoundsException e) {
             log.println("Expected exception");
@@ -672,7 +672,7 @@ public class _XAccessibleText extends MultiMethodTest {
         try {
             log.print("setSelection(0, chCount+1):");
             locRes = oObj.setSelection(0, chCount + 1);
-            log.println(locRes + " excepion was expected");
+            log.println(locRes + " exception was expected");
             res &= !locRes;
         } catch (com.sun.star.lang.IndexOutOfBoundsException e) {
             log.println("Expected exception");
