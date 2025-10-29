@@ -182,13 +182,13 @@ interface _Annotation
 		ExecMethod = Exec;
 		StateMethod = GetState ;
 	]
-	
+
 	SID_ATTR_PARA_LINESPACE
 	[
 		ExecMethod = Exec;
 		StateMethod = GetState ;
 	]
-	
+
 	SID_ATTR_PARA_ULSPACE
 	[
 		ExecMethod = Exec;
@@ -215,7 +215,7 @@ interface _Annotation
 		StateMethod = GetState ;
 		DisableFlags="SW_DISABLE_ON_PROTECTED_CURSOR" ;
 	]
- 
+
 	SID_ATTR_CHAR_COLOR // api:
 	[
 		ExecMethod = Exec;
@@ -229,7 +229,7 @@ interface _Annotation
 		StateMethod = GetState ;
 		DisableFlags="SW_DISABLE_ON_PROTECTED_CURSOR" ;
 	]
-	
+
 	SID_ATTR_CHAR_WEIGHT // api:
 	[
 		ExecMethod = Exec ;
@@ -278,7 +278,7 @@ interface _Annotation
 		StateMethod = GetState ;
 		DisableFlags="SW_DISABLE_ON_PROTECTED_CURSOR" ;
 	]
-	
+
 	SID_ATTR_CHAR_LANGUAGE // status(final|play)
 	[
 		ExecMethod = Execute ;
@@ -401,4 +401,4 @@ interface _Annotation
 		ExecMethod = ExecSearch ;
 		Export = FALSE ;
 	]
-} 
+}

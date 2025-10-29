@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -215,13 +215,13 @@ interface TextDrawText
 		ExecMethod = Execute ;
 		StateMethod = GetState ;
 	]
-	
+
 	SID_ATTR_PARA_LINESPACE // api:
 	[
 		ExecMethod = Execute ;
 		StateMethod = GetState ;
 	]
-	
+
 	SID_ATTR_PARA_ULSPACE
 	[
 		ExecMethod = Execute ;
@@ -546,7 +546,7 @@ interface TextDrawText
         StateMethod = GetState ;
 		DisableFlags="SW_DISABLE_ON_PROTECTED_CURSOR";
 	]
-    
+
     SID_LANGUAGE_STATUS
     [
         ExecMethod = Execute;
@@ -565,7 +565,7 @@ interface TextDrawText
 	[
 		ExecMethod = Execute ;
 	]
-	
+
 	SID_OPEN_XML_FILTERSETTINGS // ole : no, status : ?
     [
         ExecMethod = Execute ;
@@ -589,7 +589,7 @@ interface TextDrawText
 	[
 		StateMethod = StateDisableItems ;
 	]
-	
+
 	SID_TWAIN_TRANSFER
 	[
 		StateMethod = StateDisableItems ;
@@ -689,4 +689,3 @@ shell SwDrawTextShell
 		import TextDrawText[Automation];
 		import TextDrawFont ".DrawFont";
 }
-
