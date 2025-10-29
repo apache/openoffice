@@ -59,7 +59,7 @@ WCHAR * filename(WCHAR * path);
 // x\y\.. and x might denote different directories).
 //
 // @param path
-// An output paremeter taking the resulting path; must point at a valid range of
+// An output parameter taking the resulting path; must point at a valid range of
 // memory of size at least MAX_PATH.  If NULL is returned, the content is
 // unspecified.
 //
@@ -67,7 +67,7 @@ WCHAR * filename(WCHAR * path);
 // Forms a valid range [frontBegin .. frontEnd) of less than MAX_PATH size.
 //
 // @param backBegin, backLength
-// Forms a valid range [backBeghin .. backBegin + backLength) of less than
+// Forms a valid range [backBegin .. backBegin + backLength) of less than
 // MAX_PATH size.
 //
 // @return
