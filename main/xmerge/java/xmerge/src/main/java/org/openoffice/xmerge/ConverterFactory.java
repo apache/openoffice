@@ -54,7 +54,7 @@ public class ConverterFactory {
 
 		ConverterInfo foundInfo = null;
 
-        // findConverterInfo expects the second paramenter to be the
+        // findConverterInfo expects the second parameter to be the
 		// destination MimeType
         if (foundInfo.isValidOfficeType(mimeTypeOut))
             foundInfo = ConverterInfoMgr.findConverterInfo(mimeTypeIn, mimeTypeOut);
@@ -87,7 +87,7 @@ public class ConverterFactory {
 
 		toOffice = foundInfo.isValidOfficeType(mimeTypeOut);
 
-        // findConverterInfo expects the second paramenter to be the
+        // findConverterInfo expects the second parameter to be the
 		// destination MimeType
         if (toOffice)
             foundInfo = ConverterInfoMgr.findConverterInfo(mimeTypeIn, mimeTypeOut);

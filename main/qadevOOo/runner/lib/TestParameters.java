@@ -338,4 +338,4 @@ public class TestParameters extends Hashtable {
         return operatingSystem;
     }
 
-}// finish class TestParamenters
+}// finish class TestParameters
