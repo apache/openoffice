@@ -59,7 +59,7 @@ class INIreader
             delete section_match;
             delete parameter_match;
         }
-        // open "filename", fill hash_map with sections / paramaters
+        // open "filename", fill hash_map with sections / parameters
         bool read( INImap& myMap , string& filename );
 
     private:

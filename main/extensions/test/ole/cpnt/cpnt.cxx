@@ -1252,7 +1252,7 @@ void SAL_CALL OComponent::testinout_methodXInterface2( Reference< XInterface > &
 // 		Any any= xTest->getAttrAny2();
 // 		OUString _s;
 // 		any >>= _s;
-// 		OUString string= _s + OUString((L" this string was written in the UNO component to the inout pararmeter"));
+// 		OUString string= _s + OUString((L" this string was written in the UNO component to the inout parameter"));
 // 		any <<= string;
 // 		xTest->setAttrAny2( any);
 // 	}
