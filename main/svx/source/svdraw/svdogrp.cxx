@@ -305,7 +305,7 @@ void SdrObjGroup::operator=(const SdrObject& rObj)
 		pSub->SetModel(rSourceSubList.GetModel());
 		pSub->CopyObjects(*rObj.GetSubList());
 
-		// copy local paremeters
+		// copy local parameters
 		aRefPoint  =((SdrObjGroup&)rObj).aRefPoint;
 		bRefPoint  =((SdrObjGroup&)rObj).bRefPoint;
 	}

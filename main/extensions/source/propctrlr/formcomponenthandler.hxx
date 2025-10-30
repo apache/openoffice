@@ -172,12 +172,12 @@ namespace pcr
         */
         void impl_initFieldList_nothrow( ::std::vector< ::rtl::OUString >& rFieldNames ) const;
 
-        /** obtaines the RowSet to which our component belongs
+        /** obtains the RowSet to which our component belongs
 
             If the component is a RowSet itself, it's returned directly. Else, the parent
             is examined for the XRowSet interface. If the parent is no XRowSet, then
             a check is made whether our component is a grid control column, and if so,
-            the parent of the grid control is examied for the XRowSet interace.
+            the parent of the grid control is examined for the XRowSet interface.
 
             Normally, at least one of those methods should succeed.
         */

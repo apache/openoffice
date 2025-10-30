@@ -338,7 +338,7 @@ namespace frm
 
         // the EditEngine of the model
         RichTextEngine* pEngine = ORichTextModel::getEditEngine( _rxModel );
-        OSL_ENSURE( pEngine, "ORichTextPeer::Create: could not obtaine the edit engine from the model!" );
+        OSL_ENSURE( pEngine, "ORichTextPeer::Create: could not obtain the edit engine from the model!" );
         if ( !pEngine )
             return NULL;
 

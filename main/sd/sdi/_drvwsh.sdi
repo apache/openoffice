@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -237,22 +237,22 @@ interface DrawView
         ExecMethod = FuTemporary ;
         StateMethod = GetDrawAttrState ;
     ]
-	SID_ATTR_TRANSFORM_ROT_X	
+	SID_ATTR_TRANSFORM_ROT_X
 	[
         ExecMethod = FuTemporary ;
         StateMethod = GetDrawAttrState ;
     ]
-	SID_ATTR_TRANSFORM_ROT_Y	
+	SID_ATTR_TRANSFORM_ROT_Y
 	[
         ExecMethod = FuTemporary ;
         StateMethod = GetDrawAttrState ;
     ]
-    SID_ATTR_TRANSFORM_PROTECT_POS	
+    SID_ATTR_TRANSFORM_PROTECT_POS
     [
         ExecMethod = FuTemporary ;
         StateMethod = GetDrawAttrState ;
     ]
-	SID_ATTR_TRANSFORM_PROTECT_SIZE	
+	SID_ATTR_TRANSFORM_PROTECT_SIZE
 	[
         ExecMethod = FuTemporary ;
         StateMethod = GetDrawAttrState ;
@@ -803,7 +803,7 @@ interface DrawView
         ExecMethod = FuPermanent ;
         StateMethod = GetMenuState ;
     ]
-    
+
     SID_OBJECT_CROP // ole : no, status : play rec
     [
         ExecMethod = FuPermanent ;
@@ -2386,13 +2386,13 @@ interface DrawView
         ExecMethod = FuSupport ;
         StateMethod = GetMenuState ;
     ]
-    
+
     SID_FORMATPAINTBRUSH //
     [
         ExecMethod = FuPermanent ;
         StateMethod = GetMenuState ;
     ]
- 
+
     SID_HEADER_AND_FOOTER // ole : no, status : ?
     [
         ExecMethod = ExecCtrl ;
@@ -2410,13 +2410,13 @@ interface DrawView
         ExecMethod = ExecCtrl ;
         StateMethod = GetMenuState ;
 	]
-	
+
 	SID_MASTER_LAYOUTS
 	[
 		ExecMethod = ExecCtrl ;
 		StateMethod = GetMenuState ;
 	]
-	
+
     SID_OPT_LOCALE_CHANGED // ole : no, status : ?
     [
         ExecMethod = ExecCtrl ;
@@ -2467,7 +2467,7 @@ interface DrawView
     [
         ExecMethod = FuTemporary ;
         StateMethod = GetMenuState ;
-    ]   
+    ]
     SID_EXTRUSION_DIRECTION_FLOATER
     [
         ExecMethod = FuTemporary ;
@@ -2567,17 +2567,17 @@ interface DrawView
     [
         ExecMethod = FuTemporary ;
         StateMethod = GetMenuState ;
-    ]   
+    ]
     SID_DRAW_FONTWORK
     [
         ExecMethod = FuTemporary ;
         StateMethod = GetMenuState ;
-    ]    
+    ]
     SID_DRAW_FONTWORK_VERTICAL
     [
         ExecMethod = FuTemporary ;
         StateMethod = GetMenuState ;
-    ]    
+    ]
     SID_DRAWTBX_CS_BASIC
     [
         ExecMethod = FuPermanent ;
@@ -2612,7 +2612,7 @@ interface DrawView
     [
         ExecMethod = FuPermanent ;
         StateMethod = GetMenuState ;
-    ]   
+    ]
     SID_AVMEDIA_PLAYER // ole : yes, status : ?
     [
         ExecMethod = FuTemporary ;
@@ -2737,16 +2737,16 @@ interface DrawView
     SID_TABLE_VERT_NONE
     [
         ExecMethod = ExecutePropPanelAttr ;
-        StateMethod = GetStatePropPanelAttr ;		
+        StateMethod = GetStatePropPanelAttr ;
     ]
     SID_TABLE_VERT_CENTER
     [
         ExecMethod = ExecutePropPanelAttr ;
-        StateMethod = GetStatePropPanelAttr ;	
+        StateMethod = GetStatePropPanelAttr ;
     ]
     SID_TABLE_VERT_BOTTOM
     [
         ExecMethod = ExecutePropPanelAttr ;
-        StateMethod = GetStatePropPanelAttr ;	
+        StateMethod = GetStatePropPanelAttr ;
     ]
 }

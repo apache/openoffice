@@ -193,7 +193,7 @@ namespace param
     };
 
     //====================================================================
-    //= ParamatersContainer
+    //= ParametersContainer
     //====================================================================
     typedef ::rtl::Reference< ParameterWrapperContainer >   ParametersContainerRef;
 
