@@ -34,8 +34,6 @@
 
 #include <vcl/field.hxx>
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
-
 // Winkelangaben der DrawingEngine sind 1/100 Degree
 // #i19054# nowhere used, removed // const int nWinkDiv=100;
 // Um Winkel der DrawingEngine mit den Trigonometrischen Funktionen
@@ -238,11 +236,6 @@ SVX_DLLPUBLIC void OrthoDistance4(const Point& rPt0, Point& rPt, FASTBOOL bBigOr
 // Rechnung und Zwischenergebnis sind BigInt.
 SVX_DLLPUBLIC long BigMulDiv(long nVal, long nMul, long nDiv);
 
-// Fehlerbehaftetes Kürzen einer Fraction.
-// nDigits gibt an, wie viele signifikante Stellen in
-// Zähler/Nenner mindestens erhalten bleiben sollen.
-void Kuerzen(Fraction& rF, unsigned nDigits);
-
 
 class FrPair {
 	Fraction aX;
@@ -313,8 +306,6 @@ public:
 	static XubString GetUnitStr(MapUnit eUnit)   { XubString aStr; TakeUnitStr(eUnit,aStr); return aStr; }
 	static XubString GetUnitStr(FieldUnit eUnit) { XubString aStr; TakeUnitStr(eUnit,aStr); return aStr; }
 };
-
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 #endif //_SVDTRANS_HXX
 
