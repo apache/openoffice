@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 interface MediaSelection
 {
 	SID_AVMEDIA_TOOLBOX
@@ -30,7 +28,7 @@ interface MediaSelection
 	]
 }
 
- // ===========================================================================
+// ===========================================================================
 shell ScMediaShell : ScDrawShell
 {
 	import MediaSelection;

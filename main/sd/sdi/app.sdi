@@ -34,8 +34,8 @@ interface StarImpress
 
 	SID_ATTR_METRIC
 	[
-		ExecMethod = Execute;
-		StateMethod = GetState;
+		ExecMethod = Execute ;
+		StateMethod = GetState ;
 	]
 
 	SID_SD_AUTOPILOT // ole : ?, status : ?
