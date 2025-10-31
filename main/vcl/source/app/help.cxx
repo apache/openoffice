@@ -42,6 +42,7 @@
 
 #define HELPTEXTMARGIN_QUICK	4
 #define HELPTEXTMARGIN_BALLOON	4 // same margin as quickhelp
+#define HELPTEXTMAXLEN 100
 
 #define HELPDELAY_NORMAL		1
 #define HELPDELAY_SHORT 		2
@@ -398,7 +399,7 @@ HelpTextWindow::~HelpTextWindow()
 void HelpTextWindow::SetHelpText( const String& rHelpText )
 {
 	maHelpText = rHelpText;
-	if ( mnHelpWinStyle == HELPWINSTYLE_QUICK && maHelpText.Len() < 100 )
+	if ( mnHelpWinStyle == HELPWINSTYLE_QUICK && maHelpText.Len() < HELPTEXTMAXLEN )
 	{
 		Size aSize;
 		aSize.Height() = GetTextHeight();
@@ -465,7 +466,7 @@ void HelpTextWindow::Paint( const Rectangle& )
 	}
 
 	// paint text
-	if ( mnHelpWinStyle == HELPWINSTYLE_QUICK && maHelpText.Len() < 100 )
+	if ( mnHelpWinStyle == HELPWINSTYLE_QUICK && maHelpText.Len() < HELPTEXTMAXLEN )
 	{
 		if ( mnStyle & QUICKHELP_CTRLTEXT )
 			DrawCtrlText( maTextRect.TopLeft(), maHelpText );
