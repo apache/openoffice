@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_desktop.hxx"
 
@@ -38,58 +36,60 @@ using dp_gui::DescriptionEdit;
 
 DescriptionEdit::DescriptionEdit( Window* pParent, const ResId& rResId ) :
 
-    ExtMultiLineEdit( pParent, rResId ),
+	ExtMultiLineEdit( pParent, rResId ),
 
-    m_bIsVerticalScrollBarHidden( true )
+	m_bIsVerticalScrollBarHidden( true )
 
 {
-    Init();
+	Init();
 }
 
 // -----------------------------------------------------------------------
 
 void DescriptionEdit::Init()
 {
-    Clear();
-    // no tabstop
-    SetStyle( ( GetStyle() & ~WB_TABSTOP ) | WB_NOTABSTOP );
-    // read-only
-    SetReadOnly();
-    // no cursor
-    EnableCursor( sal_False );
+	Clear();
+	// no tabstop
+	SetStyle( ( GetStyle() & ~WB_TABSTOP ) | WB_NOTABSTOP );
+	// read-only
+	SetReadOnly();
+	// no cursor
+	EnableCursor( sal_False );
 }
 
 // -----------------------------------------------------------------------
 
 void DescriptionEdit::UpdateScrollBar()
 {
-    if ( m_bIsVerticalScrollBarHidden )
-    {
-        ScrollBar*  pVScrBar = GetVScrollBar();
-        if ( pVScrBar && pVScrBar->GetVisibleSize() < pVScrBar->GetRangeMax() )
-        {
-            pVScrBar->Show();
-            m_bIsVerticalScrollBarHidden = false;
-        }
-    }
+	if ( m_bIsVerticalScrollBarHidden )
+	{
+		ScrollBar*  pVScrBar = GetVScrollBar();
+		if ( pVScrBar && pVScrBar->GetVisibleSize() < pVScrBar->GetRangeMax() )
+		{
+			pVScrBar->Show();
+			m_bIsVerticalScrollBarHidden = false;
+		}
+	}
 }
 
 // -----------------------------------------------------------------------
 
 void DescriptionEdit::Clear()
 {
-    SetText( String() );
+	SetText( String() );
 
-    m_bIsVerticalScrollBarHidden = true;
-    ScrollBar*  pVScrBar = GetVScrollBar();
-    if ( pVScrBar )
-        pVScrBar->Hide();
+	m_bIsVerticalScrollBarHidden = true;
+	ScrollBar*  pVScrBar = GetVScrollBar();
+	if ( pVScrBar )
+		pVScrBar->Hide();
 }
 
 // -----------------------------------------------------------------------
 
 void DescriptionEdit::SetDescription( const String& rDescription )
 {
-    SetText( rDescription );
-    UpdateScrollBar();
+	SetText( rDescription );
+	UpdateScrollBar();
 }
+
+/* vim: set noet sw=4 ts=4: */
