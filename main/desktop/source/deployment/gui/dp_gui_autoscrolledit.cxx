@@ -19,11 +19,8 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_desktop.hxx"
-
 
 #include "svtools/svmedit2.hxx"
 #include "svl/lstner.hxx"
@@ -32,38 +29,37 @@
 
 #include "dp_gui_autoscrolledit.hxx"
 
-
 namespace dp_gui {
 
-
 AutoScrollEdit::AutoScrollEdit( Window* pParent, const ResId& rResId )
-    : ExtMultiLineEdit( pParent, rResId )
+	: ExtMultiLineEdit( pParent, rResId )
 {
-    ScrollBar*  pScroll = GetVScrollBar();
-    if (pScroll)
-        pScroll->Hide();
-//    SetLeftMargin( 0 );
-    StartListening( *GetTextEngine() );
+	ScrollBar*  pScroll = GetVScrollBar();
+	if (pScroll)
+		pScroll->Hide();
+//	SetLeftMargin( 0 );
+	StartListening( *GetTextEngine() );
 }
 
 AutoScrollEdit::~AutoScrollEdit()
 {
-    EndListeningAll();
+	EndListeningAll();
 }
 
 void AutoScrollEdit::Notify( SfxBroadcaster&, const SfxHint& rHint )
 {
-    if ( rHint.IsA( TYPE(TextHint) ) )
-    {
-        sal_uLong   nId = ((const TextHint&)rHint).GetId();
-        if ( nId == TEXT_HINT_VIEWSCROLLED )
-        {
-            ScrollBar*  pScroll = GetVScrollBar();
-            if ( pScroll )
-                pScroll->Show();
-        }
-    }
+	if ( rHint.IsA( TYPE(TextHint) ) )
+	{
+		sal_uLong   nId = ((const TextHint&)rHint).GetId();
+		if ( nId == TEXT_HINT_VIEWSCROLLED )
+		{
+			ScrollBar*  pScroll = GetVScrollBar();
+			if ( pScroll )
+				pScroll->Show();
+		}
+	}
 }
 
-
 } // namespace dp_gui
+
+/* vim: set noet sw=4 ts=4: */
