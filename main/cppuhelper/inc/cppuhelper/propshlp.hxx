@@ -561,7 +561,7 @@ protected:
 		const ::com::sun::star::uno::Any& rValue )
 		throw (::com::sun::star::lang::IllegalArgumentException) = 0;
 
-	/** The same as setFastProperyValue; nHandle is always valid.
+	/** The same as setFastPropertyValue; nHandle is always valid.
         The changes must not be broadcasted in this method.
         The method is implemented in a derived class.
 
@@ -584,7 +584,7 @@ protected:
 		const ::com::sun::star::uno::Any& rValue )
 		throw (::com::sun::star::uno::Exception) = 0;
 	/**
-	   The same as getFastProperyValue, but return the value through rValue and nHandle
+	   The same as getFastPropertyValue, but return the value through rValue and nHandle
 	   is always valid.
 	   The method is not implemented in this class.
 	 */
@@ -618,7 +618,7 @@ protected:
 	/** The common data of a broadcaster. Use the mutex, disposing state and the listener container. */
 	OBroadcastHelper	&rBHelper;
 	/**
-	   Container for the XProperyChangedListener. The listeners are inserted by handle.
+	   Container for the XPropertyChangedListener. The listeners are inserted by handle.
 	 */
 	OMultiTypeInterfaceContainerHelperInt32 aBoundLC;
 	/**

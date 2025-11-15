@@ -2293,7 +2293,7 @@ void DomainMapper::sprmWithProps( Sprm& rSprm, PropertyMapPtr rContext, SprmType
         /* WRITERFILTERSTATUS: done: 50, planned: 0, spent: 1 */
         /* WRITERFILTERSTATUS: comment:  */
         {
-            //convert the ListTable entry to a NumberingRules propery and apply it
+            //convert the ListTable entry to a NumberingRules property and apply it
             StyleSheetPropertyMap* pStyleSheetPropertyMap = NULL;
             if ( m_pImpl->IsStyleSheetImport() )
             {

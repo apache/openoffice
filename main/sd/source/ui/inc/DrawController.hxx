@@ -258,7 +258,7 @@ protected:
         ::std::vector< ::com::sun::star::beans::Property>& rProperties);
 
 	/**
-	 * The same as getFastProperyValue, but return the value through
+	 * The same as getFastPropertyValue, but return the value through
 	 * rValue and nHandle is always valid.
 	 */
 	virtual void SAL_CALL getFastPropertyValue(
@@ -286,7 +286,7 @@ protected:
 		const ::com::sun::star::uno::Any& rValue )
 		throw (::com::sun::star::lang::IllegalArgumentException);
 
-	/** The same as setFastProperyValue, but no exception is thrown and nHandle
+	/** The same as setFastPropertyValue, but no exception is thrown and nHandle
         is always valid. You must not broadcast the changes in this method.
 	 */
 	virtual void SAL_CALL setFastPropertyValue_NoBroadcast(

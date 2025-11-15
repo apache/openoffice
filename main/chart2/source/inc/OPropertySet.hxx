@@ -124,7 +124,7 @@ protected:
           const ::com::sun::star::uno::Any& rValue )
 		throw (::com::sun::star::lang::IllegalArgumentException);
 
-	/** The same as setFastProperyValue; nHandle is always valid.
+	/** The same as setFastPropertyValue; nHandle is always valid.
         The changes must not be broadcasted in this method.
 
         @attention
@@ -147,7 +147,7 @@ protected:
 		throw (::com::sun::star::uno::Exception);
 
 	/**
-	   The same as getFastProperyValue, but return the value through rValue and
+	   The same as getFastPropertyValue, but return the value through rValue and
 	   nHandle is always valid.
 
         @see ::cppu::OPropertySetHelper

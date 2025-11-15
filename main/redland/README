@@ -29,7 +29,7 @@ of general interest:
   redland destructor functions don't check if argument is NULL
 - redland-1.0.8.patch.storage_hashes_context_serialize_get_statement:
   hashes storage: the function to create statements during serialization does
-                  not fill in the context propery (i.e. context is NULL)
+                  not fill in the context property (i.e. context is NULL)
 - redland-1.0.8.patch.storage_hashes_list_duplicates:
   hashes, list storage: if contexts are enabled, then it is possible to add
                         duplicate statements
