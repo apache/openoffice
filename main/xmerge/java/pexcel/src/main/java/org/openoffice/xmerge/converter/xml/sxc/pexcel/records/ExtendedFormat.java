@@ -35,7 +35,7 @@ import org.openoffice.xmerge.converter.xml.sxc.Format;
 import org.openoffice.xmerge.converter.xml.sxc.pexcel.PocketExcelConstants;
 
 /**
- * Represents a BIFF Record descibing extended formatting information
+ * Represents a BIFF Record describing extended formatting information
  *
  */
 public class ExtendedFormat implements BIFFRecord,

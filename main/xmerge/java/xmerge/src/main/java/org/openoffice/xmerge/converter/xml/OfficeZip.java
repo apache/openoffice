@@ -226,7 +226,7 @@ class OfficeZip {
      * matching entry in the LinkedList.  If no entry is found, a new one is
      * created.
      *
-     * Writing of data is defferred to setEntryBytes().
+     * Writing of data is deferred to setEntryBytes().
      *
      * @param   name    The name of the entry to search for.
      * @param   bytes   The new data to write.

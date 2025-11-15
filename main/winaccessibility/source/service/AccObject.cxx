@@ -651,7 +651,7 @@ AccObject* AccObject::NextChild()
     return NULL;
 }
 /**
-   * update action desciption desc
+   * update action description desc
    * @param
    * @return
    */
