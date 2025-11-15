@@ -127,7 +127,7 @@ DGColorNameLookUp::DGColorNameLookUp (void)
             }
             catch (uno::RuntimeException e)
             {
-                // Ignore the exception: the color who lead to the excpetion
+                // Ignore the exception: the color who lead to the exception
                 // is not included into the map.
             }
         }

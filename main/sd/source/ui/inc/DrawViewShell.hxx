@@ -339,7 +339,7 @@ public:
             The id is expected to be a number between zero (inclusive) and
             the number of layers as returned by the
             <member>GetTabLayerCount</member> method (exclusive).  Note that
-            Invalid values are ignored.  No excpetion is thrown in that case.
+            Invalid values are ignored.  No exception is thrown in that case.
     */
     virtual void SetActiveTabLayerIndex (int nId);
 

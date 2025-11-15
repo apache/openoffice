@@ -199,7 +199,7 @@ enum PreDefVariable
 struct PredefinedPathVariables
 {
     // Predefined variables supported by substitute variables
-    LanguageType    m_eLanguageType;                    // Lanuage type of Office
+    LanguageType    m_eLanguageType;                    // Language type of Office
     rtl::OUString   m_FixedVar[ PREDEFVAR_COUNT ];      // Variable value access by PreDefVariable
     rtl::OUString   m_FixedVarNames[ PREDEFVAR_COUNT ]; // Variable name access by PreDefVariable
 };

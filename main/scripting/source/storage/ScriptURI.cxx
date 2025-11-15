@@ -133,11 +133,11 @@ void ScriptURI::set_values( scripting_impl::Uri values )
     m_valid = values.valid;
     m_location = values.location;
     m_language = values.language;
-// format is vnd.sun.star.script://[function_name]?language=[languge]&location=[location]
+// format is vnd.sun.star.script://[function_name]?language=[language]&location=[location]
 // LogicalName is now not used anymore, further more the ScriptURI class
 // will be retired also and a new UNO service will be used. Additionally the
 // parcel-description will also need to be modified to remove logical name
-// In order to temporarly support the existing code functionname is
+// In order to temporarily support the existing code functionname is
 // set to the logica name parsed by this class. So getLogicalName() and
 // getFunctionName() return identical string.
 //

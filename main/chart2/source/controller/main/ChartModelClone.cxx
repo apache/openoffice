@@ -214,7 +214,7 @@ namespace chart
         ENSURE_OR_RETURN_VOID( i_modelToCopyFrom.is(), "ChartModelElement::applyModelContentToModel: invalid source model!" );
         try
         {
-            // /-- loccked controllers of destination
+            // /-- locked controllers of destination
             ControllerLockGuard aLockedControllers( i_model );
             Reference< XChartDocument > xSource( i_modelToCopyFrom, UNO_QUERY_THROW );
             Reference< XChartDocument > xDestination( i_model, UNO_QUERY_THROW );
@@ -263,7 +263,7 @@ namespace chart
             {
                 xDestMod->setModified( sal_False );
             }
-            // \-- loccked controllers of destination
+            // \-- locked controllers of destination
         }
         catch( const Exception& )
         {
