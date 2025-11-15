@@ -506,7 +506,7 @@ void SAL_CALL AccessibleControlShape::notifyEvent( const AccessibleEventObject& 
 		_rEvent.OldValue >>= nLostState;
 		_rEvent.NewValue >>= nGainedState;
 
-		// don't multiplex states which the inner context is not resposible for
+		// don't multiplex states which the inner context is not responsible for
 		if	( isComposedState( nLostState ) )
 			AccessibleShape::ResetState( nLostState );
 

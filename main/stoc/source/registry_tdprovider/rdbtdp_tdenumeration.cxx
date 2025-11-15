@@ -351,7 +351,7 @@ bool TypeDescriptionEnumerationImpl::queryMore()
         }
 
         // Note: m_aCurrentModuleSubKeys is always empty AND m_aModuleKeys is
-        //       never empty when ariving here.
+        //       never empty when arriving here.
         //       ==> select new module key, fill m_aCurrentModuleSubKeys
 
         uno::Sequence< uno::Reference< registry::XRegistryKey > > aKeys;

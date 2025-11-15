@@ -78,7 +78,7 @@ public:
         PROP_DATAPOINT_SHOW_ERROR_BOX,
         PROP_DATAPOINT_PERCENT_DIAGONAL
 
-        // additionally some properites from ::chart::LineProperties
+        // additionally some properties from ::chart::LineProperties
     };
 
     static void AddPropertiesToVector(

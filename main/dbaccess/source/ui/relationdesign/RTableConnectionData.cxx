@@ -450,7 +450,7 @@ xKey.clear();
 			}
 		}
 	} // if ( xColSup.is() )
-	// NOTE : the caller is resposible for updating any other objects referencing the old LineDatas (for instance a ConnLine)
+	// NOTE : the caller is responsible for updating any other objects referencing the old LineDatas (for instance a ConnLine)
 
 	////////////////////////////////////////////////////////////
 	// Kardinalitaet bestimmen

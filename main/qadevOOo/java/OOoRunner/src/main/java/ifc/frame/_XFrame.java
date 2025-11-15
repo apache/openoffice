@@ -178,7 +178,7 @@ public class _XFrame extends MultiMethodTest {
     /**
     * Test calls the method. Then frame status (activated/deactivated) is
     * changed, and the listener is checked.<p>
-    * Has <b> OK </b> status if isDesktop() method returnes true, or if the
+    * Has <b> OK </b> status if isDesktop() method returns true, or if the
     * listener was called and frame was activated.
     */
     public void _addFrameActionListener() {
@@ -407,7 +407,7 @@ public class _XFrame extends MultiMethodTest {
     /**
     * At first new listener is added, then test calls the method and result
     * is checked. <p>
-    * Has <b> OK </b> status if isDesktop() method returnes true or if the
+    * Has <b> OK </b> status if isDesktop() method returns true or if the
     * listener was called and proper event past to listener.
     */
     public void _contextChanged() {

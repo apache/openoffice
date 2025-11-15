@@ -227,7 +227,7 @@ public class ScTabViewObj extends TestCase {
             String kindOfControl="CommandButton";
             XShape aShape = null;
             try{
-                log.println("adding contol shape '" + kindOfControl + "'");
+                log.println("adding control shape '" + kindOfControl + "'");
                 XComponent oComp = (XComponent) UnoRuntime.queryInterface(XComponent.class, xSpreadsheetDoc) ;
 
                 aShape = FormTools.createControlShape(oComp, 3000, 4500, 15000, 10000, kindOfControl);

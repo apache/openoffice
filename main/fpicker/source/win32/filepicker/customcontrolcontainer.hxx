@@ -30,7 +30,7 @@
 
 //-----------------------------------
 // A container for custom controls
-// the container is resposible for
+// the container is responsible for
 // the destruction of the custom
 // controls
 //-----------------------------------
