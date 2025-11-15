@@ -183,7 +183,7 @@ typedef struct _typelib_UnionTypeDescription
 	*/
 	typelib_TypeDescriptionReference *	pDiscriminantTypeRef;
 
-	/** union default descriminant
+	/** union default discriminant
 	*/
 	sal_Int64							nDefaultDiscriminant;
 	/** union default member type (may be 0)

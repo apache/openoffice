@@ -33,7 +33,7 @@ import org.openoffice.xmerge.converter.xml.sxc.pexcel.PocketExcelConstants;
 
 
 /**
- * Reperesent a BIFF Record descibing a cell containing a string
+ * Represents a BIFF Record describing a cell containing a string
  */
 public class LabelCell extends CellValue {
 

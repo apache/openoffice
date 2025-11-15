@@ -183,7 +183,7 @@ namespace slideshow
 				// therefor destroy all the polygons stored
 				if(mbIsEraseAllModeActivated)
                 {
-					// The Erase Mode should be desactivated
+					// The Erase Mode should be deactivated
                     mbIsEraseModeActivated = false;
 					repaintWithoutPolygons();
 					maPolygons.clear();
