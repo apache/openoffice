@@ -206,7 +206,7 @@ void ImplReleaseSALIMEData();
 
 #define SAL_FRAME_WNDEXTRA		(sizeof(ULONG)*3)
 #define SAL_FRAME_THIS			0
-// these offsets are hardcoded in dnd/globals.hxx too to avoid vcl dependancies
+// these offsets are hardcoded in dnd/globals.hxx too to avoid vcl dependencies
 #define SAL_FRAME_DROPTARGET		sizeof(ULONG)
 #define SAL_FRAME_DRAGSOURCE		(sizeof(ULONG)*2)
 
