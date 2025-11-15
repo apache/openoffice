@@ -412,7 +412,7 @@ SvxMacro* SfxEvents_Impl::ConvertToMacro( const ANY& rElement, SfxObjectShell* p
 			else if ( aProperties[ nIndex ].Name.compareToAscii( PROP_MACRO_NAME ) == 0 )
 				aProperties[ nIndex ].Value >>= aMacroName;
 			else {
-				DBG_ERROR("Unknown propery value!");
+				DBG_ERROR("Unknown property value!");
             }
 			nIndex += 1;
 		}
