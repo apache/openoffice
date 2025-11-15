@@ -55,7 +55,7 @@ interface XIntegerBitmapColorSpace : XColorSpace
 
     /** Query the number of bits used for each component.<p>
 
-        This method returnes a sequence of integers, each denoting the
+        This method returns a sequence of integers, each denoting the
         number of bits occupied by the respective component. The sum
         of all component bits must be less or equal than the value
         returned from <member>getBitsPerPixel()</member>. If the sum is

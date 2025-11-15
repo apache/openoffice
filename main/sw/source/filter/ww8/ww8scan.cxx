@@ -2772,7 +2772,7 @@ WW8PLCFx_Fc_FKP::WW8Fkp::WW8Fkp(ww::WordVersion eVersion, SvStream* pSt,
     maEntries.push_back(Entry(Get_Long(pStart)));
 
     //#104773#, we expect them sorted, but it appears possible
-    //for them to arive unsorted
+    //for them to arrive unsorted
     std::sort(maEntries.begin(), maEntries.end());
 
     mnIdx = 0;

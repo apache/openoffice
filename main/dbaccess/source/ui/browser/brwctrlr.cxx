@@ -567,7 +567,7 @@ void SAL_CALL SbaXDataBrowserController::FormControllerImpl::frameAction(const :
 void SAL_CALL SbaXDataBrowserController::FormControllerImpl::disposing(const ::com::sun::star::lang::EventObject& /*Source*/) throw( RuntimeException )
 {
 	// nothing to do
-	// we don't add ourself as listener to any broadcasters, so we are not resposible for removing us
+	// we don't add ourself as listener to any broadcasters, so we are not responsible for removing us
 }
 
 //==================================================================
