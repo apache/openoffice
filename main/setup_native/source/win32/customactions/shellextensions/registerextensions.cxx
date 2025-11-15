@@ -373,7 +373,7 @@ extern "C" UINT __stdcall RemoveExtensions(MSIHANDLE handle)
 {
     std::_tstring mystr;
 
-    // Finding the product with the help of the propery FINDPRODUCT,
+    // Finding the product with the help of the property FINDPRODUCT,
     // that contains a Windows Registry key, that points to the install location.
 
     TCHAR szValue[8192];
