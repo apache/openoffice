@@ -32,7 +32,7 @@ import util.PropertyName;
 import util.utils;
 
 /**
- * Implementaion of the interface CwsDataExchange
+ * Implementation of the interface CwsDataExchange
  * @see share.CwsDataExchange
  */
 public class CwsDataExchangeImpl implements CwsDataExchange
