@@ -19,32 +19,31 @@
  *
  *************************************************************/
 
-
 #define CB_TAB			1
 #define CB_SEMI			3
 #define CB_PARA			4
-#define FL_DELIM                5
+#define FL_DELIM		5
 #define RB_OTHER		6
 #define ED_OTHER		7
 #define CB_KEEPCOLUMN	8
-#define STR_CONVERT_TEXT_TABLE		9
+#define STR_CONVERT_TEXT_TABLE	9
 #define CB_HEADER			13
 #define CB_REPEAT_HEADER	14
-#define CB_DONT_SPLIT       15
+#define CB_DONT_SPLIT		15
 #define CB_BORDER			16
-#define FL_OPTIONS                      17
+#define FL_OPTIONS			17
 #define FT_REPEAT_HEADER	18
 #define NF_REPEAT_HEADER	19
-//Table Row Header for ACC Supporting 2010.02.22
-#define FT_EXPLAIN_REPEAT_HEADER		20
-#define CB_LABEL		21
+// Table Row Header for ACC Supporting 2010.02.22
+#define FT_EXPLAIN_REPEAT_HEADER	20
+#define CB_LABEL			21
 #define NF_REPEAT_LABEL		22
 #define FT_REPEAT_LABEL		23
-//End table_row_header
+// End table_row_header
 
-#define BT_OK 			100
-#define BT_CANCEL 		101
+#define BT_OK			100
+#define BT_CANCEL		101
 #define BT_AUTOFORMAT	102
-#define BT_HELP 		103
-#define WIN_REPEAT_HEADER   104
+#define BT_HELP			103
+#define WIN_REPEAT_HEADER	104
 #define	STR_SYMBOL		105

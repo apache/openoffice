@@ -19,15 +19,12 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
 
 #ifdef SW_DLLIMPLEMENTATION
 #undef SW_DLLIMPLEMENTATION
 #endif
-
 
 #include <sfx2/dispatch.hxx>
 #include <svx/dlgutil.hxx>
@@ -56,7 +53,6 @@
 #include <table.hrc>
 #endif
 
-
 IMPL_LINK_INLINE_START( SwTableWidthDlg, LoseFocusHdl, Edit *, EMPTYARG )
 {
 	sal_uInt16 nId = (sal_uInt16)aColEdit.GetValue()-1;
@@ -68,15 +64,14 @@ IMPL_LINK_INLINE_START( SwTableWidthDlg, LoseFocusHdl, Edit *, EMPTYARG )
 IMPL_LINK_INLINE_END( SwTableWidthDlg, LoseFocusHdl, Edit *, EMPTYARG )
 
 
-
 SwTableWidthDlg::SwTableWidthDlg(Window *pParent, SwTableFUNC &rTableFnc ) :
 
 	SvxStandardDialog( pParent, SW_RES(DLG_COL_WIDTH) ),
-    aWidthFL(this,     SW_RES(FL_WIDTH)),
+	aWidthFL(this,		SW_RES(FL_WIDTH)),
 
 	aColFT(this, 		SW_RES(FT_COL)),
 	aColEdit(this, 		SW_RES(ED_COL)),
-    aWidthFT(this, 		SW_RES(FT_WIDTH)),
+	aWidthFT(this, 		SW_RES(FT_WIDTH)),
 	aWidthEdit(this, 	SW_RES(ED_WIDTH)),
 	aOKBtn(this, 		SW_RES(BT_OK)),
 	aCancelBtn(this, 	SW_RES(BT_CANCEL)),
@@ -86,8 +81,8 @@ SwTableWidthDlg::SwTableWidthDlg(Window *pParent, SwTableFUNC &rTableFnc ) :
 	FreeResource();
 
 	sal_Bool bIsWeb = rTableFnc.GetShell()
-                    ? static_cast< sal_Bool >(0 != PTR_CAST( SwWebDocShell,
-                            rTableFnc.GetShell()->GetView().GetDocShell()) )
+					? static_cast< sal_Bool >(0 != PTR_CAST( SwWebDocShell,
+							rTableFnc.GetShell()->GetView().GetDocShell()) )
 					: sal_False;
 	FieldUnit eFieldUnit = SW_MOD()->GetUsrPref( bIsWeb )->GetMetric();
 	::SetFieldUnit(aWidthEdit, eFieldUnit );
@@ -105,11 +100,12 @@ SwTableWidthDlg::SwTableWidthDlg(Window *pParent, SwTableFUNC &rTableFnc ) :
 }
 
 
-
 void SwTableWidthDlg::Apply()
 {
 	rFnc.InitTabCols();
-    rFnc.SetColWidth(
-            static_cast< sal_uInt16 >(aColEdit.GetValue() - 1),
-            static_cast< sal_uInt16 >(aWidthEdit.Denormalize(aWidthEdit.GetValue(FUNIT_TWIP))));
+	rFnc.SetColWidth(
+			static_cast< sal_uInt16 >(aColEdit.GetValue() - 1),
+			static_cast< sal_uInt16 >(aWidthEdit.Denormalize(aWidthEdit.GetValue(FUNIT_TWIP))));
 }
+
+/* vim: set noet sw=4 ts=4: */
