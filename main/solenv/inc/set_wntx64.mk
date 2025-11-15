@@ -82,7 +82,7 @@ CDEFSOBJMT_X64+=-D_MT
 LINKFLAGS_X64=/MAP /OPT:NOREF
 .ENDIF
 
-# excetion handling protection
+# exception handling protection
 LINKFLAGS+=-safeseh
 
 # enable DEP
