@@ -85,7 +85,7 @@ public:
 };
 
 //
-// class Dependecy
+// class Dependency
 //
 
 class Dependency : public ByteString

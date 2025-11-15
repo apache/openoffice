@@ -1407,7 +1407,7 @@ void SfxAcceleratorConfigPage::Reset( const SfxItemSet& rSet )
     // e.g. m_sModuleUIName!
     InitAccCfg();
 
-    // change te description of the radio button, which switch to the module
+    // change the description of the radio button, which switch to the module
     // dependend accelerator configuration
     String sButtonText = aModuleButton.GetText();
     sButtonText.SearchAndReplace(String::CreateFromAscii("$(MODULE)"), m_sModuleUIName);
