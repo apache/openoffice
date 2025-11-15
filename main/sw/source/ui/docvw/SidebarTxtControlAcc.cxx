@@ -285,7 +285,7 @@ void SidebarTxtControlAccessibleContext::ProcessWindowEvent( const VclWindowEven
 }
 
 // =============================================================================
-// implementaion of accessible for <SidebarTxtControl> instance
+// implementation of accessible for <SidebarTxtControl> instance
 // =============================================================================
 SidebarTxtControlAccessible::SidebarTxtControlAccessible( SidebarTxtControl& rSidebarTxtControl )
     : VCLXWindow()

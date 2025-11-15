@@ -721,7 +721,7 @@ void ODbaseTable::refreshIndexes()
 						aVector.push_back(aURL.getBase());
 					}
 				}
-				catch(Exception&) // a execption is thrown when no file exists
+				catch(Exception&) // an exception is thrown when no file exists
 				{
 				}
 			}
@@ -1094,7 +1094,7 @@ sal_Bool ODbaseTable::CreateImpl()
 			delete pFileStream;
 		}
 	}
-	catch(Exception&) // a execption is thrown when no file exists
+	catch(Exception&) // an exception is thrown when no file exists
 	{
 	}
 
@@ -1111,7 +1111,7 @@ sal_Bool ODbaseTable::CreateImpl()
 			Content aContent(aURL.GetMainURL(INetURLObject::NO_DECODE),Reference<XCommandEnvironment>());
 			aContent.executeCommand( rtl::OUString::createFromAscii( "delete" ),bool2any( sal_True ) );
 		}
-		catch(Exception&) // a execption is thrown when no file exists
+		catch(Exception&) // an exception is thrown when no file exists
 		{
 		}
 		return sal_False;
@@ -1128,7 +1128,7 @@ sal_Bool ODbaseTable::CreateImpl()
 		{
 			bMemoAlreadyExists = aMemo1Content.isDocument();
 		}
-		catch(Exception&) // a execption is thrown when no file exists
+		catch(Exception&) // an exception is thrown when no file exists
 		{
 		}
 		if (bMemoAlreadyExists)

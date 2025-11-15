@@ -66,7 +66,7 @@ interface XMailClient
 
         @throws com::sun::star::uno::Exception
             if an error occurs while sending the mail.
-            <p>The <member scope="com::sun::star::uno">Execption::Message</member>
+            <p>The <member scope="com::sun::star::uno">Exception::Message</member>
             may contain an error description.</p>
     */
     void sendMailMessage( [in] XMailMessage xMailMessage,

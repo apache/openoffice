@@ -104,7 +104,7 @@ class SidebarWinAccessibleContext : public VCLXAccessibleComponent
 };
 
 // =============================================================================
-// implementaion of accessible for <SwSidebarWin> instance
+// implementation of accessible for <SwSidebarWin> instance
 // =============================================================================
 SidebarWinAccessible::SidebarWinAccessible( SwSidebarWin& rSidebarWin,
                                             ViewShell& rViewShell,
