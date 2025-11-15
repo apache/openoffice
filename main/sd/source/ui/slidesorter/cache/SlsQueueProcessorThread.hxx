@@ -71,7 +71,7 @@ public:
 
     /** Terminate the execution of the thread.  When the thread is detached
         it deletes itself.  Otherwise the caller of this method may call
-        delete after this method returnes.
+        delete after this method returns.
     */
 	void SAL_CALL Terminate (void);
 

@@ -528,7 +528,7 @@ sub print_usage
 	print "Usage : test_driver.pl\n";
 	print "\t-test=<file> \t\t: individual test case file to run\n";
 	print "\t-list=<file> \t\t: list of test case files\n";
-	print "\t-env=<file> \t\t: Properites like file defining env\n";
+	print "\t-env=<file> \t\t: Properties like file defining env\n";
 	print "\t-pose-exe=<fullpath> \t: path to pose executable\n";
 	print "\t-pose-prc=<path> \t: path to directory holding prc files\n";
 	print "\t-pdb-orig=<path> \t: directory to hold original pdb files\n";

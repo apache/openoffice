@@ -1303,7 +1303,7 @@ void SbaGridControl::StartDrag( sal_Int8 _nAction, const Point& _rPosPixel )
 			// 'the handle column' and 'no valid column' will both result in a view position of -1 !
 
 		sal_Bool bCurrentRowVirtual = IsCurrentAppending() && IsModified();
-		// the current row doesn't really exist : the user's appendign a new one and already has entered some data,
+		// the current row doesn't really exist : the user's appending a new one and already has entered some data,
 		// so the row contains data which has no counter part within the data source
 
 		long nCorrectRowCount = GetRowCount();

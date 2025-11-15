@@ -126,7 +126,7 @@ published interface XStorageRawAccess
 		use this method outside of storage implementation since different
 		storages implementation could have different encryption format. If the
 		method is used outside of storage implementation the user code is
-		resposible to get sure that the raw format of source and target
+		responsible to get sure that the raw format of source and target
 		storages is the same.
 		</p>
 

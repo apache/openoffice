@@ -61,7 +61,7 @@ while(<INFILE>) {
 }
 close(INFILE);
 
-# create the properites file
+# create the properties file
 
 print OUTFILE "# location of the component schema \n";
 print OUTFILE "component-schema=schema\n\n";

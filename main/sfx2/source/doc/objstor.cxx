@@ -2035,7 +2035,7 @@ sal_Bool SfxObjectShell::DoSaveObjectAs( SfxMedium& rMedium, sal_Bool bCommit )
 }
 
 //-------------------------------------------------------------------------
-// TODO/LATER: may be the call must be removed completelly
+// TODO/LATER: may be the call must be removed completely
 sal_Bool SfxObjectShell::DoSaveAs( SfxMedium& rMedium )
 {
     // hier kommen nur Root-Storages rein, die via Temp-File gespeichert werden

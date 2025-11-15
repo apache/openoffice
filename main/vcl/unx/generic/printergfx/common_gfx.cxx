@@ -550,7 +550,7 @@ PrinterGfx::DrawPolyLineBezier (sal_uInt32 nPoints, const Point* pPath, const sa
             else //Otherwise we're drawing a spline
             {
                 if (i+2 >= nPoints)
-                    return; //Error: wrong sequence of contol/normal points somehow
+                    return; //Error: wrong sequence of control/normal points somehow
                 if ((pFlgAry[i] == POLY_CONTROL) && (pFlgAry[i+1] == POLY_CONTROL) &&
                     (pFlgAry[i+2] != POLY_CONTROL))
                 {
@@ -660,7 +660,7 @@ PrinterGfx::DrawPolyPolygonBezier (sal_uInt32 nPoly, const sal_uInt32 * pPoints,
             else
             {
                 if (j+2 >= nPoints)
-                    break; //Error: wrong sequence of contol/normal points somehow
+                    break; //Error: wrong sequence of control/normal points somehow
                 if ((pFlgAry[i][j] == POLY_CONTROL) && (pFlgAry[i][j+1] == POLY_CONTROL) && (pFlgAry[i][j+2] != POLY_CONTROL))
                 {
                     snprintf(pString, nBezString, "%li %li %li %li %li %li curveto\n",
