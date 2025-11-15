@@ -106,7 +106,7 @@ FontProperties::FontProperties(const FreetypeServerFont &font) throw()
     szFaceName[name_sz] = '\0';
 }
 
-// class GraphiteFontAdaptor implementaion.
+// class GraphiteFontAdaptor implementation.
 //
 GraphiteFontAdaptor::GraphiteFontAdaptor(ServerFont & sfont, const sal_Int32 dpiX, const sal_Int32 dpiY)
   :    mrFont(static_cast<FreetypeServerFont &>(sfont)),

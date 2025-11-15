@@ -157,7 +157,7 @@ published service Content
                             <li><type scope="com::sun::star::lang">IllegalArgumentException</type>
                             indicates, that the property value is not acceptable. For instance,
                             setting an empty title may be illegal.</li>
-                            <li>Any other execption derived from <type scope="com::sun::star::uno">Exception</type>
+                            <li>Any other exception derived from <type scope="com::sun::star::uno">Exception</type>
                             indicates, that the value was not set successfully. For example,
                             this can be a <type>InteractiveAugmentedIOException</type>
                             transporting the error code <member>IOErrorCode::ACCESS_DENIED</member>.</li>
