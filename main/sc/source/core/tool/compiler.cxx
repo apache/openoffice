@@ -5290,7 +5290,7 @@ sal_Bool ScCompiler::HandleSingleRef()
         if ( !bString && !pDoc->GetCell( aLook ) )
             bString = sal_True;     // empty cell is ok
         if ( bString )
-        {   //! coresponds with ScInterpreter::ScColRowNameAuto()
+        {   //! corresponds with ScInterpreter::ScColRowNameAuto()
             bValidName = sal_True;
             if ( bColName )
             {   // ColName

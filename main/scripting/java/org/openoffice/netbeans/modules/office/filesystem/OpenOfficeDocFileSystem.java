@@ -59,7 +59,7 @@ public class OpenOfficeDocFileSystem
     private static final int    OS_MACOS     = 2;
     private static final int    OS_WINDOWS   = 3;
 
-    private static final int    REFRESH_OFF   = -1;          // -1 is desabled
+    private static final int    REFRESH_OFF   = -1;          // -1 is disabled
     private static final int    REFRESH_TIME  = REFRESH_OFF; // (mS)
     private static final String TMP_FILE_PREF = "sx_";
     private static final String TMP_FILE_SUFX = ".sxx";

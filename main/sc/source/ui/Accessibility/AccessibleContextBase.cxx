@@ -335,7 +335,7 @@ sal_Int16 SAL_CALL
 	if (!msDescription.getLength())
 	{
 		OUString sDescription(createAccessibleDescription());
-//		DBG_ASSERT(sDescription.getLength(), "We should give always a descripition.");
+//		DBG_ASSERT(sDescription.getLength(), "We should give always a description.");
 
         if (msDescription != sDescription)
         {

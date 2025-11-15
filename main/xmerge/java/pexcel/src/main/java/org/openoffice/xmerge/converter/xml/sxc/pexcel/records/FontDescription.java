@@ -37,7 +37,7 @@ import org.openoffice.xmerge.converter.xml.sxc.pexcel.PocketExcelConstants;
 
 
 /**
- * Represents a BIFF Record descibing a font used
+ * Represents a BIFF Record describing a font used
  */
 public class FontDescription implements BIFFRecord {
 
