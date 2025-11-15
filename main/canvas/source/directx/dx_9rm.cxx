@@ -137,7 +137,7 @@ namespace dxcanvas
 		// DXSurface
 		//////////////////////////////////////////////////////////////////////////////////
 
-		/** ISurface implemenation.
+		/** ISurface implementation.
 
 			@attention holds the DXRenderModule via non-refcounted
 			reference! This is safe with current state of affairs, since

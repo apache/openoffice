@@ -193,7 +193,7 @@ rtl_memory_fini (void)
 
 /* ================================================================= *
  *
- * custom allocator implemenation.
+ * custom allocator implementation.
  *
  * ================================================================= */
 
@@ -297,7 +297,7 @@ void * SAL_CALL rtl_reallocateMemory (void * p, sal_Size n) SAL_THROW_EXTERN_C()
 
 /* ================================================================= *
  *
- * system allocator implemenation.
+ * system allocator implementation.
  *
  * ================================================================= */
 
@@ -332,7 +332,7 @@ rtl_memory_fini (void)
 
 /* ================================================================= *
  *
- * rtl_(allocate|free)ZeroMemory() implemenation.
+ * rtl_(allocate|free)ZeroMemory() implementation.
  *
  * ================================================================= */
 
