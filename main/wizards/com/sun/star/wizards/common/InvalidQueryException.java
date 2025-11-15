@@ -26,7 +26,7 @@ import com.sun.star.lang.XMultiServiceFactory;
 
 public class InvalidQueryException extends java.lang.Throwable
 {
-// TODO don't show messages in Excetions
+// TODO don't show messages in Exceptions
     public InvalidQueryException(XMultiServiceFactory xMSF, String sCommand)
     {
         final int RID_REPORT = 2400;

@@ -75,7 +75,7 @@ namespace formula
             @param  _pPlaceholderAscii
                 the ASCII representation of the placeholder string
             @param  _rReplace
-                the string which should substutite the placeholder
+                the string which should substitute the placeholder
         */
         static ::rtl::OUString  loadString(
                 sal_uInt16              _nResId,

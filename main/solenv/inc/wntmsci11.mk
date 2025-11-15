@@ -233,7 +233,7 @@ LINK=link /MACHINE:IX86 /IGNORE:4102 /IGNORE:4197
 LINKFLAGS=/MAP /OPT:NOREF
 .ENDIF
 
-# excetion handling protection
+# exception handling protection
 LINKFLAGS+=-safeseh
 
 # enable DEP

@@ -47,7 +47,7 @@ module com { module sun { module star { module linguistic2 {
 	<P> Only active dictionaries of a suitable language will be searched
 	for the entry.
 	The language is suitable if it is the same as the dictionary's language or
-	the dictionary may hold entries of all langauges.
+	the dictionary may hold entries of all languages.
 	<P>
 
     @see <type scope="com::sun::star::linguistic2">XDictionaryList</type>

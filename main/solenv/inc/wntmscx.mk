@@ -237,7 +237,7 @@ LINK=link /MACHINE:X64 /IGNORE:4102 /IGNORE:4197
 LINKFLAGS=/MAP /OPT:NOREF
 .ENDIF
 
-# excetion handling protection isn't used on Win64
+# exception handling protection isn't used on Win64
 
 # enable DEP
 LINKFLAGS+=-nxcompat
