@@ -8218,30 +8218,35 @@
 		<xsl:variable name="zero-based-column-number">
 			<xsl:value-of select="$column-number - 1"/>
 		</xsl:variable>
-		<xsl:variable name="column-number1">
-			<xsl:value-of select="floor( $zero-based-column-number div 676 )"/>
+		<xsl:variable name="column-div26-minus1">
+			<xsl:value-of select="floor( $zero-based-column-number div 26 ) - 1"/>
 		</xsl:variable>
-		<xsl:variable name="column-remainder1">
-			<xsl:value-of select="floor( $zero-based-column-number mod 676 )"/>
+		<xsl:variable name="column-number1">
+			<xsl:value-of select="floor ( $column-div26-minus1 div 26 )"/>
 		</xsl:variable>
 		<xsl:variable name="column-number2">
-			<xsl:value-of select="floor( $column-remainder1 div 26 )"/>
-		</xsl:variable>
-		<xsl:variable name="column-remainder2">
-			<xsl:value-of select="floor( $column-remainder1 mod 26 )"/>
+			<xsl:value-of select="$column-div26-minus1 mod 26 + 1"/>
 		</xsl:variable>
 		<xsl:variable name="column-number3">
-			<xsl:value-of select="( $column-remainder2 mod 26 ) + 1"/>
+			<xsl:value-of select="( $zero-based-column-number mod 26 ) + 1"/>
 		</xsl:variable>
 		<xsl:variable name="column-character1">
-			<xsl:call-template name="number-to-character">
-				<xsl:with-param name="number" select="$column-number1"/>
-			</xsl:call-template>
+			<xsl:choose>
+				<xsl:when test="($zero-based-column-number &gt; 701)">
+					<xsl:call-template name="number-to-character">
+						<xsl:with-param name="number" select="$column-number1"/>
+					</xsl:call-template>
+				</xsl:when>
+			</xsl:choose>
 		</xsl:variable>
 		<xsl:variable name="column-character2">
-			<xsl:call-template name="number-to-character">
-				<xsl:with-param name="number" select="$column-number2"/>
-			</xsl:call-template>
+			<xsl:choose>
+				<xsl:when test="($zero-based-column-number &gt; 25)">
+					<xsl:call-template name="number-to-character">
+						<xsl:with-param name="number" select="$column-number2"/>
+					</xsl:call-template>
+				</xsl:when>
+			</xsl:choose>
 		</xsl:variable>
 		<xsl:variable name="column-character3">
 			<xsl:call-template name="number-to-character">
