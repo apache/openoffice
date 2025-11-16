@@ -53,7 +53,7 @@ namespace cppu
     will not be created if not exist.
     @param rBootstrapPath
     specifies a path where the bootstrap components could be find. If this
-    parameter is an empty string the compoents will be searched in the system
+    parameter is an empty string the components will be searched in the system
     path.
     @deprecated
 */
@@ -80,7 +80,7 @@ createRegistryServiceFactory(
     will not be created if not exist.
     @param rBootstrapPath
     specifies a path where the bootstrap components could be find. If this
-    parameter is an empty string the compoents will be searched in the system
+    parameter is an empty string the components will be searched in the system
     path.
     @deprecated
 */
@@ -101,7 +101,7 @@ createRegistryServiceFactory(
 
     @param rBootstrapPath
     specifies a path where the bootstrap components could be find. If this
-    parameter is an empty string the compoents will be searched in the system
+    parameter is an empty string the components will be searched in the system
     path.
     @deprecated
 */

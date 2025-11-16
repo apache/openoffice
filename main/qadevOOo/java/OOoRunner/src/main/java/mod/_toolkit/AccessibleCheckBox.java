@@ -53,7 +53,7 @@ import util.utils;
 
 
 /**
- * Test for object which is represented by accessible compoent of
+ * Test for object which is represented by accessible component of
  * check box in 'InsertTable' dialog. <p>
  *
  * Object implements the following interfaces :

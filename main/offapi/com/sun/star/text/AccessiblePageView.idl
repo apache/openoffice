@@ -74,15 +74,15 @@ published service AccessiblePageView
 					<li><type scope="::com::sun::star::text"
                         >AccessibleHeaderFooterView</type>:
 						A child of this kind is returned for every header
-						and footer that is conatined in the page.
+						and footer that is contained in the page.
 					<li><type scope="::com::sun::star::text"
                         >AccessibleFootnoteView</type>:
 						A child of this kind is returned for every footnote
-						that is conatined in the page.
+						that is contained in the page.
 					<li><type scope="::com::sun::star::text"
                         >AccessibleEndnoteView</type>:
 						A child of this kind is returned for every endnote
-						that is conatined in the page.
+						that is contained in the page.
 					<li><type scope="::com::sun::star::text"
                         >AccessibleParagraphView</type>:
 						A child of this kind is returned for every paragraph

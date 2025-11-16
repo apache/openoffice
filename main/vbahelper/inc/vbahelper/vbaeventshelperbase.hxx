@@ -117,7 +117,7 @@ protected:
     };
     typedef ::std::deque< EventQueueEntry > EventQueue;
 
-    /** Derived classes do additional prpeparations and return whether the
+    /** Derived classes do additional preparations and return whether the
         event handler has to be called. */
     virtual bool implPrepareEvent(
         EventQueue& rEventQueue,

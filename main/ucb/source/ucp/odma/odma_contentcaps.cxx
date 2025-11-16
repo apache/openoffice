@@ -67,8 +67,8 @@ uno::Sequence< beans::Property > Content::getProperties(
 	//           by yourself and supply your own logic here. The base class
 	//           uses the service "com.sun.star.ucb.Store" to maintain
 	//           Additional Core properties. But using server functionality
-	//           is preferred! In fact you should return a table conatining
-	//           even that dynamicly added properties.
+	//           is preferred! In fact you should return a table containing
+	//           even that dynamically added properties.
 
 //	osl::Guard< osl::Mutex > aGuard( m_aMutex );
 
