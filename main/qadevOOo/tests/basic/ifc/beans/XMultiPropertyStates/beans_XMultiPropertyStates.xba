@@ -76,7 +76,7 @@ On Error Goto ErrHndl
     Dim aStates As Variant
 
     if NOT hasUnoInterfaces(oObj, "com.sun.star.beans.XPropertySet") then
-        Out.Log("The compoent doesn't support XPropertySet this test must be reviewed !!!")
+        Out.Log("The component doesn't support XPropertySet this test must be reviewed !!!")
         exit sub
     end if
 

@@ -355,7 +355,7 @@ sal_Bool GraphicDescriptor::ImpDetectJPG( SvStream& rStm,  sal_Bool bExtendedInf
 						bScanFinished = sal_True;
 					break;
 
-					// per default we assume marker segments conaining a length parameter
+					// per default we assume marker segments containing a length parameter
 					default :
 					{
 						sal_uInt16 nLength;
