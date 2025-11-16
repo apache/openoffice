@@ -3696,7 +3696,7 @@ void DomainMapper::sprmWithProps( Sprm& rSprm, PropertyMapPtr rContext, SprmType
     case NS_sprm::LN_TTableHeader:
     case NS_sprm::LN_TTableBorders: // sprmTTableBorders
     {
-        OSL_ENSURE( false, "table propeties should be handled by the table manager");
+        OSL_ENSURE( false, "table properties should be handled by the table manager");
     }
     break;
     case NS_sprm::LN_TDefTable10:

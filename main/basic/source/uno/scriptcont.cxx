@@ -193,7 +193,7 @@ void SAL_CALL SfxScriptLibraryContainer::writeLibraryElement
 			OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.xml.sax.Writer") ) ), UNO_QUERY );
 	if( !xHandler.is() )
 	{
-		OSL_ENSURE( 0, "### couln't create sax-writer component\n" );
+		OSL_ENSURE( 0, "### couldn't create sax-writer component\n" );
 		return;
 	}
 
@@ -250,7 +250,7 @@ Any SAL_CALL SfxScriptLibraryContainer::importLibraryElement
 		OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.xml.sax.Parser") ) ), UNO_QUERY );
 	if( !xParser.is() )
 	{
-		OSL_ENSURE( 0, "### couln't create sax parser component\n" );
+		OSL_ENSURE( 0, "### couldn't create sax parser component\n" );
 		return aRetAny;
 	}
 

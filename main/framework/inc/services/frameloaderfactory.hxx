@@ -291,7 +291,7 @@ class FrameLoaderFactory	:	public ThreadHelpBase							,		// Struct for right in
 
 		/*-****************************************************************************************************//**
 			@short		return state if informations about frame loader available
-			@descr		If these method return false - no information could'nt read from configuration ...
+			@descr		If these method return false - no information couldn't read from configuration ...
 						I think nothing will work then. Normally we return sal_True!
 
 			@seealso	class FilterCache!
