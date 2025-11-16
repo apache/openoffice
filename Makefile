@@ -18,7 +18,7 @@
 PYTHON := $(shell command -v python || command -v python3 || echo python)
 PIP := $(PYTHON) -m pip
 
-.PHONY: check checkinstall checkupdate install
+.PHONY: check checkinstall checkupdate createwordlist install
 
 check: checkinstall
 	@echo "Running pre-commit checks..."
@@ -31,6 +31,10 @@ checkinstall: install
 checkupdate:
 	@echo "Updating pre-commit hooks..."
 	pre-commit autoupdate
+
+createwordlist: install
+	@echo "Regenerating the ignored words list codespell.txt"
+	codespell --skip='./extras' | cut -f2 -d' ' | tr A-Z a-z | sort | uniq > .github/linters/codespell.txt
 
 install:
 	@echo "Installing dependencies..."
