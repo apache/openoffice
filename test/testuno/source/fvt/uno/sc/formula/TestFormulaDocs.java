@@ -29,8 +29,8 @@ import org.junit.Rule;
 import org.junit.Test;
 
 import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
-import org.junit.runners.Parameterized.Parameters;
+import org.openoffice.test.common.FileProvider;
+import org.openoffice.test.common.FileProvider.FileRepos;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -42,6 +42,7 @@ import org.openoffice.test.uno.UnoApp;
 
 import testlib.uno.SCUtil;
 import static testlib.uno.TestUtil.*;
+import static org.openoffice.test.common.Testspace.*;
 
 import com.sun.star.beans.PropertyValue;
 import com.sun.star.document.MacroExecMode;
@@ -57,28 +58,13 @@ import com.sun.star.util.XModifiable;
 
 import java.util.logging.Level;
 
-@RunWith(Parameterized.class)
+@RunWith(FileProvider.class)
 public class TestFormulaDocs {
 
 	private String filename;
-	private String type;
 
-	@Parameters
-	public static Collection<Object[]> data() {
-		return Arrays.asList(new Object[][]{
-				// test documents
-				{"uno/sc/fvt/FormulaTest1.ods", "FormulaTest1.ods"},
-				{"uno/sc/fvt/StarBasicYearMonthDateHourMinuteSecondTests.ods", "Basic Year Month Date Hour Minute Second Test"},
-				{"uno/sc/fvt/StarBasicCLng.ods", "Basic Convert to Long Function Test"},
-				{"uno/sc/fvt/StarBasicTab.ods", "Basic Tab Function Test"},
-				{"uno/sc/fvt/DGET on formulas.ods", "DGET on formulas Test"},
-				{"uno/sc/fvt/Basic Line as variable and Line Input.ods", "Basic Line as variable and Line Input Test"},
-				{"uno/sc/fvt/comment-in-single-line-if-then-else.ods", "Basic comment after single line if statement Test"},
-				{"uno/sc/fvt/Bug81233ColumnZReference.xml", "Bug 81233 column Z reference wrongly converts to column A"},
-				{"uno/sc/fvt/Bug100989MergeAcross0AddsExtraEmptyCell.xml", "Bug 100989 ss:MergeCross=\"0\" adds an extra empty cell to the right"},
-				{"uno/sc/fvt/Bug128554FractionalSecondsIgnored.xml", "Bug 100989 fractional seconds are silently ignored during import"}
-		});
-	}
+	@FileRepos
+	public static String repos = getDataPath("uno/sc/fvt");
 
 	@Rule
 	public Logger log = Logger.getLogger(this);
@@ -102,9 +88,8 @@ public class TestFormulaDocs {
 		unoApp.start();
 	}
 
-	public TestFormulaDocs(String filename, String type) {
+	public TestFormulaDocs(String filename) {
 		this.filename = filename;
-		this.type = type;
 	}
 
 	// FIXME: only needs a timeout for running tests against AOO41X due to fixes for i112383 and i117960 present in trunk
@@ -172,7 +157,7 @@ public class TestFormulaDocs {
 			}
 		}
 
-		assertTrue( (nFailCount+" of "+nTestCount+" tests failed for " + type), nFailCount==0);
+		assertTrue( (nFailCount+" of "+nTestCount+" tests failed for " + filename), nFailCount==0);
 
 		XModifiable modified = (XModifiable)UnoRuntime.queryInterface( XModifiable.class, scDoc);
 		modified.setModified( false);
