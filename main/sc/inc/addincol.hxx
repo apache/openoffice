@@ -160,7 +160,7 @@ public:
 				ScUnoAddInCollection();
 				~ScUnoAddInCollection();
 
-                        /// User enetered name. rUpperName MUST already be upper case!
+                        /// User entered name. rUpperName MUST already be upper case!
 	String				FindFunction( const String& rUpperName, sal_Bool bLocalFirst );
 
                         // rName is the exact Name.
