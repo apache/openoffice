@@ -642,20 +642,20 @@ void SwAccessibleParagraph::ExecuteAtViewShell( sal_uInt16 nSlot )
     DBG_ASSERT( GetMap() != NULL, "no map?" );
     ViewShell* pViewShell = GetMap()->GetShell();
 
-    DBG_ASSERT( pViewShell != NULL, "View shell exptected!" );
+    DBG_ASSERT( pViewShell != NULL, "View shell expected!" );
     SfxViewShell* pSfxShell = pViewShell->GetSfxViewShell();
 
-    DBG_ASSERT( pSfxShell != NULL, "SfxViewShell shell exptected!" );
+    DBG_ASSERT( pSfxShell != NULL, "SfxViewShell shell expected!" );
     if( !pSfxShell )
 		return;
 
 	SfxViewFrame *pFrame = pSfxShell->GetViewFrame();
-    DBG_ASSERT( pFrame != NULL, "View frame exptected!" );
+    DBG_ASSERT( pFrame != NULL, "View frame expected!" );
 	if( !pFrame )
 		return;
 
 	SfxDispatcher *pDispatcher = pFrame->GetDispatcher();
-    DBG_ASSERT( pDispatcher != NULL, "Dispatcher exptected!" );
+    DBG_ASSERT( pDispatcher != NULL, "Dispatcher expected!" );
 	if( !pDispatcher )
 		return;
 

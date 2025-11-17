@@ -67,8 +67,8 @@ public class ModuleManager extends TestCase {
     /** Creating a Testenvironment for the interfaces to be tested.
      * @param Param test parameters
      * @param log simple logger
-     * @throws StatusException was thrwon on error
-     * @return the test environement
+     * @throws StatusException was thrown on error
+     * @return the test environment
      */
     public TestEnvironment createTestEnvironment( TestParameters Param,
         PrintWriter log ) throws StatusException {

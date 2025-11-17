@@ -1192,7 +1192,7 @@ Sub UpdateAllCounts(aAnalysis As DocumentAnalysis, counts As DocumentCount, temp
         UpdateDocCounts templateCounts, aAnalysis
     Else
         WriteDebug currentFunctionName & " : path " & aAnalysis.name & _
-            ": unhandled file extesnion " & extStr & " : " & Err.Number & " " & Err.Description & " " & Err.Source
+            ": unhandled file extension " & extStr & " : " & Err.Number & " " & Err.Description & " " & Err.Source
     End If
 
 FinalExit:
