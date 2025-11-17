@@ -429,7 +429,7 @@ build the syntax tree.
         self.headerDict[headerPath] = True
         SrcLexer.headerCache[headerPath] = hdrData
 
-        # Update the list of headers that have already been expaneded.
+        # Update the list of headers that have already been expanded.
         for key in list(mclexer.headerDict.keys()):
             self.headerDict[key] = True
 

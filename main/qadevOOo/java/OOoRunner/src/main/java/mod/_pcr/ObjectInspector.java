@@ -96,7 +96,7 @@ public class ObjectInspector extends TestCase {
      * <CODE>com.sun.star.inspection.XPropertyHandler</CODE> was used.
      * @param tParam the tests parameter
      * @param log the logger
-     * @return the test environement
+     * @return the test environment
      * @see util.DesktopTools
      * @see helper.PropertyHandlerImpl
      */

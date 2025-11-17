@@ -135,7 +135,7 @@ class ChildList_Display : public ary::Display,
     /** i_rData is shown only, if it passes two filters:
         it must have the right protection, checked with pFilter,
         and the right class key (class,struct,union), checked with
-        pClassFilter. A not exsting filter allows i_rData to be
+        pClassFilter. A not existing filter allows i_rData to be
         displayed.
     */
 	virtual void	  	do_Process(

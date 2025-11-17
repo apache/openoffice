@@ -40,7 +40,7 @@ struct CommandEnvironmentProxy_Impl;
 
 /**
   * This class implements the interface
-  * com::sun::star::ucb::XCommandEnvironement.
+  * com::sun::star::ucb::XCommandEnvironment.
   *
   * Instances of this class can be used to create a (local) proxy for (remote)
   * command environment implementations. This implementation caches the

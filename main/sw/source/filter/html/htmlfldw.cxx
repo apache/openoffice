@@ -439,7 +439,7 @@ Writer& OutHTML_SwFmtFld( Writer& rWrt, const SfxPoolItem& rHt )
 		rWrt.Strm() << '<';
 		if( !bOn )
 			rWrt.Strm() << '/';
-		// TODO: HTML-Tags are written without entitities, that for, characters
+		// TODO: HTML-Tags are written without entities, that for, characters
 		// not contained in the destination encoding are lost!
 		ByteString sTmp( rTxt, ((SwHTMLWriter&)rWrt).eDestEnc );
 		rWrt.Strm() << sTmp.GetBuffer() << '>';
@@ -461,7 +461,7 @@ Writer& OutHTML_SwFmtFld( Writer& rWrt, const SfxPoolItem& rHt )
 			// META-Tags direkt ausgeben
 			String sComment( rComment );
 			sComment.ConvertLineEnd( GetSystemLineEnd() );
-			// TODO: HTML-Tags are written without entitities, that for,
+			// TODO: HTML-Tags are written without entities, that for,
 			// characters not contained in the destination encoding are lost!
 			ByteString sTmp( sComment, ((SwHTMLWriter&)rWrt).eDestEnc );
 			rWrt.Strm() << sTmp.GetBuffer();
@@ -476,7 +476,7 @@ Writer& OutHTML_SwFmtFld( Writer& rWrt, const SfxPoolItem& rHt )
 			if( '<' == sComment.GetChar(0) )
 			{
 				sComment.ConvertLineEnd( GetSystemLineEnd() );
-				// TODO: HTML-Tags are written without entitities, that for,
+				// TODO: HTML-Tags are written without entities, that for,
 				// characters not contained in the destination encoding are
 				// lost!
 				ByteString sTmp( sComment, ((SwHTMLWriter&)rWrt).eDestEnc );

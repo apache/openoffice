@@ -103,7 +103,7 @@ service TabularDataProviderArguments
         ignore the '5' and continue to place the sequence from
         old index '1' to the next new position and so on.</p>
 
-        <p>If the given SequenceMapping does not cover all exsisting
+        <p>If the given SequenceMapping does not cover all existing
         labeled sequences just put the remaining sequences in old order
         behind the others. For example you have 4 sequences and a
         SequenceMapping [3,1]. The result should be a as if [3,1,0,2]

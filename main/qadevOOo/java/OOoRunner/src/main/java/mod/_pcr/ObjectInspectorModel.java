@@ -82,11 +82,11 @@ public class ObjectInspectorModel extends TestCase {
      * Creating a Testenvironment for the interfaces to be tested.
      * Creates an instance of the service
      * <code>com.sun.star.inspection.ObjectInspectorModel</code> with a <code>DefaultContext</code> and
-     * <code>PropertyHandlerFactroy[]</code> as parameter
+     * <code>PropertyHandlerFactory[]</code> as parameter
      *
      * @param tParam the tests parameter
      * @param log the logger
-     * @return the test environement
+     * @return the test environment
      * @see util.DesktopTools
      * @see helper.PropertyHandlerImpl
      */
