@@ -171,7 +171,7 @@ namespace dbaui
 		void enableCheckOnly() { m_bCheckOnly = sal_True; }
 		sal_Bool isCheckEnabled() const { return m_bCheckOnly; }
 
-        static ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XPreparedStatement > createPreparedStatment( const ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XDatabaseMetaData>& _xMetaData
+        static ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XPreparedStatement > createPreparedStatement( const ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XDatabaseMetaData>& _xMetaData
                                                        ,const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet>& _xDestTable
                                                        ,const TPositions& _rvColumns);
 	};

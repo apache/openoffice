@@ -661,7 +661,7 @@ SfxMailModel::SaveResult SfxMailModel::SaveDocumentAsFormat(
                         }
                     }
 
-                    //check if this is the pdf otput filter (i#64555)
+                    //check if this is the pdf output filter (i#64555)
                     if( bSendAsPDF )
                     {
                         SaveResult eShowPDFFilterDialog = ShowFilterOptionsDialog(

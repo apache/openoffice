@@ -1146,7 +1146,7 @@ void test_PropertySetHelper()
 			OSL_ENSURE( pPS_L->nCount == pPS_L->nCurrent, "not all listeners called" );
 
 
-			//vetoable exception with multible
+			//vetoable exception with multiple
 			szPN.getArray()[0] = OUString( RTL_CONSTASCII_USTRINGPARAM("INT16") );
 			szPN.getArray()[1] = OUString( RTL_CONSTASCII_USTRINGPARAM("INT16") );
 			pPS->nINT32 = 0;

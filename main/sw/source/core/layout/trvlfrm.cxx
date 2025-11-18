@@ -1585,7 +1585,7 @@ Point SwRootFrm::GetPagePos( sal_uInt16 nPageNum ) const
 	return pPage->Frm().Pos();
 }
 
-/** get page frame by phyiscal page number
+/** get page frame by physical page number
 
     OD 14.01.2003 #103492#
 

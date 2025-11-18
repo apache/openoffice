@@ -655,8 +655,8 @@ void WriterXmlOptimizer::visit( PageElement& elem, const std::list< Element* >::
 void WriterXmlOptimizer::checkHeaderAndFooter( PageElement& rElem )
 {
     /* indicators for a header:
-     *  - single line paragrah at top of page (  inside 15% page height)
-     *  - at least linheight above the next paragr   aph
+     *  - single line paragraph at top of page (  inside 15% page height)
+     *  - at least lineheight above the next paragraph
      *
      *  indicators for a footer likewise:
      *  - single line paragraph at bottom of page (inside 15% page height)
