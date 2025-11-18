@@ -59,7 +59,7 @@ public:
 
     // clients of this method should use the returned
     // pointer only temporary because it's not ref-counted
-    // and the ownerhsip belongs to this instance
+    // and the ownership belongs to this instance
     CControlCommand* SAL_CALL getNextCommand( ) const;
 
     // transfers the ownership to this class

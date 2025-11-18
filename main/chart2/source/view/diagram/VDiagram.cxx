@@ -613,8 +613,8 @@ void VDiagram::createShapes_3d()
 
         //perspective
         {
-            //ignore distance and focal length from file format and model comcpletely
-            //use vrp only to indicate the distance of the camera and thus influence the perspecitve
+            //ignore distance and focal length from file format and model completely
+            //use vrp only to indicate the distance of the camera and thus influence the perspective
             xDestProp->setPropertyValue( C2U( UNO_NAME_3D_SCENE_DISTANCE ), uno::makeAny(
                                         static_cast<sal_Int32>(ThreeDHelper::getCameraDistance( xSourceProp ))));
             xDestProp->setPropertyValue( C2U( UNO_NAME_3D_SCENE_PERSPECTIVE ),

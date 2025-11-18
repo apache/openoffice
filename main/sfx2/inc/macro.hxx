@@ -66,7 +66,7 @@ public:
 										   sal_Bool bRequestDone,
                                            ::com::sun::star::uno::Sequence < ::com::sun::star::beans::PropertyValue >& aArgs );
 
-						SfxMacroStatement( const String &rStatment );
+						SfxMacroStatement( const String &rStatement );
 						~SfxMacroStatement();
 
 	sal_uInt16				GetSlotId() const;

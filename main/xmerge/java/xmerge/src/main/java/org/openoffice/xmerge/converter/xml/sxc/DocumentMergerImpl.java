@@ -96,14 +96,14 @@ public class DocumentMergerImpl implements DocumentMerger {
             if (matchingWorkSheet != null) {
 
                 // need to put it into a row Iterator
-                // use a straight comparsion algorithm then do a merge on it
+                // use a straight comparison algorithm then do a merge on it
                 Iterator i1 = new RowIterator(cc_, workSheet);
                 Iterator i2 = new RowIterator(cc_, matchingWorkSheet);
 
                 // find out the diff
                 DiffAlgorithm diffAlgo = new IteratorRowCompare();
 
-                // find out the paragrah level diffs
+                // find out the paragraph level diffs
                 Difference[] diffResult = diffAlgo.computeDiffs(i1, i2);
 
                 if (Debug.isFlagSet(Debug.INFO)) {
