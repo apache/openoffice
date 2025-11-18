@@ -336,12 +336,11 @@ ImageList 31000
 	prefix = "sc" ;
 	IdList = {05500;} ;
 	IdCount = 1 ;
-
 };
 
 ToolBox RID_TB_SORTING
 {
-	Pos = MAP_APPFONT ( 0,0 ) ;
+	Pos = MAP_APPFONT ( 0, 0 ) ;
 	ButtonType = BUTTON_SYMBOL ;
 	Align = BOXALIGN_TOP ;
 	Customize = FALSE ;
