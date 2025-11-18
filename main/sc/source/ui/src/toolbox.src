@@ -19,17 +19,14 @@
  *
  *************************************************************/
 
-
-
 #include "sc.hrc" // -> #include <sfx.hrc>
 #include <svx/globlmn.hrc>
 #include "tbinsert.hrc" // Sub-IDs
 
-
 // ToolBoxen: ----------------------------------------------------------------
 
 /*
- * ToolBox mit Eingabezeile: HelpStrings fuer Knoepfe und Fenster:
+ * ToolBox mit Eingabezeile: HelpStrings für Knöpfe und Fenster:
  */
 
 #define ITEM_TOOLBAR_SORT_ASCENDING \
@@ -123,16 +120,16 @@ String SCSTR_QHELP_BTNEQUAL
 // used in floating windows.
 
 #define DEFAULT_IDLIST \
-	IdList = {                                          \
-		/* Eingabezeile */								\
-		SID_INPUT_FUNCTION;				/* 20047 */		\
-		SID_INPUT_SUM;					/* 20048 */		\
-		SID_INPUT_EQUAL;				/* 20049 */		\
-		SID_INPUT_CANCEL;                               \
-		SID_INPUT_OK;                                   \
-	};                                                  \
-	IdCount = {                                         \
-		5;                                              \
+	IdList = {										\
+		/* Eingabezeile */							\
+		SID_INPUT_FUNCTION;			/* 20047 */		\
+		SID_INPUT_SUM;				/* 20048 */		\
+		SID_INPUT_EQUAL;			/* 20049 */		\
+		SID_INPUT_CANCEL;							\
+		SID_INPUT_OK;								\
+	};												\
+	IdCount = {										\
+		5;											\
 	};
 
 ImageList RID_DEFAULTIMAGELIST_SC
