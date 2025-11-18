@@ -68,34 +68,59 @@ public class TestFormulaRoundTrip {
 		unoApp.close();
 	}
 
-	@Test
-	public void testMSExcel2003XMLFormulaRoundTrip() throws Exception {
+	private XSpreadsheet generateTestDocument(XSpreadsheetDocument scDocument) throws Exception {
 		XSpreadsheet sheet = SCUtil.getCurrentSheet(scDocument);
 		SCUtil.setTextToCell(sheet, 0, 0, "Hello world");
 		SCUtil.setFormulaToCell(sheet, 0, 1, "=A1");
+		return sheet;
+	}
+
+	@Test
+	public void testMSExcel2003XMLFormulaRoundTrip() throws Exception {
+		XSpreadsheet sheet = generateTestDocument(scDocument);
 		String formulaValue = SCUtil.getTextFromCell(sheet, 0, 1);
 		assertEquals("Hello world", formulaValue);
+		String path = "output/sc/temp.xml";
+		saveFormatTo("MS Excel 2003 XML", Testspace.getUrl(path));
+		unoApp.closeDocument(scComponent);
 
-		String storeUrl = Testspace.getUrl("output/sc/temp.xml");
+		scDocument = (XSpreadsheetDocument) UnoRuntime.queryInterface(
+			XSpreadsheetDocument.class, unoApp.loadDocument(Testspace.getPath(path)));
+		sheet = SCUtil.getCurrentSheet(scDocument);
+		String formulaValue2 = SCUtil.getTextFromCell(sheet, 0, 1);
+		assertEquals("Hello world", formulaValue2);
+		String formula2 = SCUtil.getFormulaFromCell(sheet, 0, 1);
+		assertEquals("=A1", formula2);
+	}
+
+	@Test
+	public void testStarOfficeXMLFormulaRoundTrip() throws Exception {
+		XSpreadsheet sheet = generateTestDocument(scDocument);
+		String formulaValue = SCUtil.getTextFromCell(sheet, 0, 1);
+		assertEquals("Hello world", formulaValue);
+		String path = "output/sc/temp.sxc";
+		saveFormatTo("StarOffice XML (Calc)", Testspace.getUrl(path));
+		unoApp.closeDocument(scComponent);
+
+		scDocument = (XSpreadsheetDocument) UnoRuntime.queryInterface(
+			XSpreadsheetDocument.class, unoApp.loadDocument(Testspace.getPath(path)));
+		sheet = SCUtil.getCurrentSheet(scDocument);
+		String formulaValue2 = SCUtil.getTextFromCell(sheet, 0, 1);
+		assertEquals("Hello world", formulaValue2);
+		String formula2 = SCUtil.getFormulaFromCell(sheet, 0, 1);
+		assertEquals("=A1", formula2);
+	}
+
+	private void saveFormatTo(String filterName, String storeUrl) throws Exception {
 		PropertyValue[] storeProps = new PropertyValue[2];
 		storeProps[0] = new PropertyValue();
 		storeProps[0].Name = "FilterName";
-		storeProps[0].Value = "MS Excel 2003 XML";
+		storeProps[0].Value = filterName;
 		storeProps[1] = new PropertyValue();
 		storeProps[1].Name = "Overwrite";
 		storeProps[1].Value = new Boolean(true);
 		XStorable scStorable =
 			(XStorable) UnoRuntime.queryInterface(XStorable.class, scComponent);
 		scStorable.storeAsURL(storeUrl, storeProps);
-
-		unoApp.closeDocument(scComponent);
-
-		scDocument = (XSpreadsheetDocument) UnoRuntime.queryInterface(
-			XSpreadsheetDocument.class, unoApp.loadDocument(Testspace.getPath("output/sc/temp.xml")));
-		sheet = SCUtil.getCurrentSheet(scDocument);
-		String formulaValue2 = SCUtil.getTextFromCell(sheet, 0, 1);
-		assertEquals("Hello world", formulaValue2);
-		String formula2 = SCUtil.getFormulaFromCell(sheet, 0, 1);
-		assertEquals("=A1", formula2);
 	}
 }
