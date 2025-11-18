@@ -260,7 +260,7 @@ namespace dbaui
 
             Effectively, this method extracts m_xSourceResultSet, m_aSourceSelection, and m_bSourceSelectionBookmarks.
 
-            If an inconsistent/insufficent sub set of those properties is present in the descriptor, and exception
+            If an inconsistent/insufficient sub set of those properties is present in the descriptor, and exception
             is thrown.
         */
         void    impl_extractSourceResultSet_throw(
@@ -630,7 +630,7 @@ namespace
     /** tries to obtain the InteractionHandler associated with a given data source
 
         If the data source is a sdb-level data source, it will have a DatabaseDocument associated
-        with it. This doocument may have an InteractionHandler used while loading it.
+        with it. This document may have an InteractionHandler used while loading it.
 
         @throws RuntimeException
             if it occurs during invoking any of the data source's methods, or if any of the involved
@@ -1187,7 +1187,7 @@ void CopyTableWizard::impl_copyRows_throw( const Reference< XResultSet >& _rxSou
     }
 
     // now create, fill and execute the prepared statement
-    Reference< XPreparedStatement > xStatement( ODatabaseExport::createPreparedStatment( xDestMetaData, _rxDestTable, aColumnMapping ), UNO_SET_THROW );
+    Reference< XPreparedStatement > xStatement( ODatabaseExport::createPreparedStatement( xDestMetaData, _rxDestTable, aColumnMapping ), UNO_SET_THROW );
     Reference< XParameters > xStatementParams( xStatement, UNO_QUERY_THROW );
 
     const bool bSelectedRecordsOnly = m_aSourceSelection.getLength() != 0;

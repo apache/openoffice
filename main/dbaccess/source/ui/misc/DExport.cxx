@@ -700,7 +700,7 @@ sal_Bool ODatabaseExport::createRowSet()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "misc", "Ocke.Janssen@sun.com", "ODatabaseExport::createRowSet" );
 	DBG_CHKTHIS(ODatabaseExport,NULL);
-    m_pUpdateHelper.reset(new OParameterUpdateHelper(createPreparedStatment(m_xConnection->getMetaData(),m_xTable,m_vColumns)));
+    m_pUpdateHelper.reset(new OParameterUpdateHelper(createPreparedStatement(m_xConnection->getMetaData(),m_xTable,m_vColumns)));
 
 	return m_pUpdateHelper.get() != NULL;
 }
@@ -834,11 +834,11 @@ void ODatabaseExport::ensureFormatter()
     }
 }
 // -----------------------------------------------------------------------------
-Reference< XPreparedStatement > ODatabaseExport::createPreparedStatment( const Reference<XDatabaseMetaData>& _xMetaData
+Reference< XPreparedStatement > ODatabaseExport::createPreparedStatement( const Reference<XDatabaseMetaData>& _xMetaData
                                                        ,const Reference<XPropertySet>& _xDestTable
                                                        ,const TPositions& _rvColumns)
 {
-    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "misc", "Ocke.Janssen@sun.com", "ODatabaseExport::createPreparedStatment" );
+    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "misc", "Ocke.Janssen@sun.com", "ODatabaseExport::createPreparedStatement" );
     ::rtl::OUString aSql(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("INSERT INTO ")));
 	::rtl::OUString sComposedTableName = ::dbtools::composeTableName( _xMetaData, _xDestTable, ::dbtools::eInDataManipulation, false, false, true );
 

@@ -110,8 +110,8 @@ public:
       *        a previous try).
       * @param rAccount contains an account, if applicable.
 	  * @param bAllowPersistentStoring specifies if the credentials should
-	  *        be stored in the passowrd container persistently
-	  * @param bAllowUseSystemCredntials specifies if requesting client is
+	  *        be stored in the password container persistently
+	  * @param bAllowUseSystemCredentials specifies if requesting client is
       *        able to obtain and use system credentials for authentication
 	  */
     SimpleAuthenticationRequest( const rtl::OUString & rURL,
@@ -175,8 +175,8 @@ public:
                modifiable.
       * @param rAccount contains an account, if applicable.
 	  * @param bAllowPersistentStoring specifies if the credentials should
-      *        be stored in the passowrd container persistently
-	  * @param bAllowUseSystemCredntials specifies if requesting client is
+      *        be stored in the password container persistently
+	  * @param bAllowUseSystemCredentials specifies if requesting client is
       *        able to obtain and use system credentials for authentication
 	  */
     SimpleAuthenticationRequest( const rtl::OUString & rURL,
