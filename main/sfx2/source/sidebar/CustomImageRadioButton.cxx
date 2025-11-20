@@ -30,53 +30,50 @@
 using namespace ::com::sun::star;
 using namespace ::com::sun::star::uno;
 
-
 namespace sfx2 { namespace sidebar {
 
-
 CustomImageRadioButton::CustomImageRadioButton (
-    Window* pParentWindow,
-    const ResId& rResId )
-    : ImageRadioButton( pParentWindow, rResId )
+	Window* pParentWindow,
+	const ResId& rResId )
+	: ImageRadioButton( pParentWindow, rResId )
 {
-    SetStyle( GetStyle() | WB_NOPOINTERFOCUS );
+	SetStyle( GetStyle() | WB_NOPOINTERFOCUS );
 }
-
 
 CustomImageRadioButton::~CustomImageRadioButton (void)
 {
 }
 
-
 void CustomImageRadioButton::Paint (const Rectangle& /* rUpdateArea */)
 {
-    Rectangle aPaintRect( Rectangle(Point(0,0), GetSizePixel() ) );
-    SetMouseRect( aPaintRect );
-    SetStateRect( aPaintRect );
+	Rectangle aPaintRect( Rectangle(Point(0,0), GetSizePixel() ) );
+	SetMouseRect( aPaintRect );
+	SetStateRect( aPaintRect );
 
-    const Theme::ThemeItem eBackground =
-        IsMouseOver()
-          ? Theme::Paint_TabItemBackgroundHighlight
-          : Theme::Paint_PanelBackground;
-    DrawHelper::DrawRoundedRectangle(
-        *this,
-        aPaintRect,
-        Theme::GetInteger(Theme::Int_ButtonCornerRadius),
-        IsChecked() || IsMouseOver() ? Theme::GetColor(Theme::Color_TabItemBorder) : Color(0xffffffff),
-        Theme::GetPaint( eBackground ) );
+	const Theme::ThemeItem eBackground =
+		IsMouseOver()
+			? Theme::Paint_TabItemBackgroundHighlight
+			: Theme::Paint_PanelBackground;
+	DrawHelper::DrawRoundedRectangle(
+		*this,
+		aPaintRect,
+		Theme::GetInteger(Theme::Int_ButtonCornerRadius),
+		IsChecked() || IsMouseOver() ? Theme::GetColor(Theme::Color_TabItemBorder) : Color(0xffffffff),
+		Theme::GetPaint( eBackground ) );
 
-    const Image aIcon (GetModeRadioImage(Theme::IsHighContrastMode()
-            ? BMP_COLOR_HIGHCONTRAST
-            : BMP_COLOR_NORMAL));
-    const Size aIconSize (aIcon.GetSizePixel());
-    const Point aIconLocation(
-        (GetSizePixel().Width() - aIconSize.Width())/2,
-        (GetSizePixel().Height() - aIconSize.Height())/2 );
-    DrawImage(
-        aIconLocation,
-        aIcon,
-        IsEnabled() ? 0 : IMAGE_DRAW_DISABLE );
+	const Image aIcon (GetModeRadioImage(Theme::IsHighContrastMode()
+			? BMP_COLOR_HIGHCONTRAST
+			: BMP_COLOR_NORMAL));
+	const Size aIconSize (aIcon.GetSizePixel());
+	const Point aIconLocation(
+		(GetSizePixel().Width() - aIconSize.Width())/2,
+		(GetSizePixel().Height() - aIconSize.Height())/2 );
+	DrawImage(
+		aIconLocation,
+		aIcon,
+		IsEnabled() ? 0 : IMAGE_DRAW_DISABLE );
 }
 
-
 } } // end of namespace sfx2::sidebar
+
+/* vim: set noet sw=4 ts=4: */

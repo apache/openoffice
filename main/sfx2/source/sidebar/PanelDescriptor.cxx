@@ -23,49 +23,44 @@
 
 #include "PanelDescriptor.hxx"
 
-
 namespace sfx2 { namespace sidebar {
 
 PanelDescriptor::PanelDescriptor (void)
-    : msTitle(),
-      mbIsTitleBarOptional(false),
-      msId(),
-      msDeckId(),
-      msTitleBarIconURL(),
-      msHighContrastTitleBarIconURL(),
-      msHelpURL(),
-      maContextList(),
-      msImplementationURL(),
-      mnOrderIndex(10000), // Default value as defined in Sidebar.xcs
-      mbShowForReadOnlyDocuments(false),
-      mbWantsCanvas(false)
+	: msTitle(),
+	  mbIsTitleBarOptional(false),
+	  msId(),
+	  msDeckId(),
+	  msTitleBarIconURL(),
+	  msHighContrastTitleBarIconURL(),
+	  msHelpURL(),
+	  maContextList(),
+	  msImplementationURL(),
+	  mnOrderIndex(10000), // Default value as defined in Sidebar.xcs
+	  mbShowForReadOnlyDocuments(false),
+	  mbWantsCanvas(false)
 {
 }
-
-
-
 
 PanelDescriptor::PanelDescriptor (const PanelDescriptor& rOther)
-    : msTitle(rOther.msTitle),
-      mbIsTitleBarOptional(rOther.mbIsTitleBarOptional),
-      msId(rOther.msId),
-      msDeckId(rOther.msDeckId),
-      msTitleBarIconURL(rOther.msTitleBarIconURL),
-      msHighContrastTitleBarIconURL(rOther.msHighContrastTitleBarIconURL),
-      msHelpURL(rOther.msHelpURL),
-      maContextList(rOther.maContextList),
-      msImplementationURL(rOther.msImplementationURL),
-      mnOrderIndex(rOther.mnOrderIndex),
-      mbShowForReadOnlyDocuments(rOther.mbShowForReadOnlyDocuments),
-      mbWantsCanvas(rOther.mbWantsCanvas)
+	: msTitle(rOther.msTitle),
+	  mbIsTitleBarOptional(rOther.mbIsTitleBarOptional),
+	  msId(rOther.msId),
+	  msDeckId(rOther.msDeckId),
+	  msTitleBarIconURL(rOther.msTitleBarIconURL),
+	  msHighContrastTitleBarIconURL(rOther.msHighContrastTitleBarIconURL),
+	  msHelpURL(rOther.msHelpURL),
+	  maContextList(rOther.maContextList),
+	  msImplementationURL(rOther.msImplementationURL),
+	  mnOrderIndex(rOther.mnOrderIndex),
+	  mbShowForReadOnlyDocuments(rOther.mbShowForReadOnlyDocuments),
+	  mbWantsCanvas(rOther.mbWantsCanvas)
 {
 }
-
-
 
 PanelDescriptor::~PanelDescriptor (void)
 {
 }
 
-
 } } // end of namespace sfx2::sidebar
+
+/* vim: set noet sw=4 ts=4: */

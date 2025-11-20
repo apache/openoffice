@@ -32,217 +32,178 @@
 
 #include <com/sun/star/accessibility/AccessibleRole.hpp>
 
-
 ToolbarValue::~ToolbarValue (void) {}
 
 namespace
 {
-    const static sal_Int32 gnLeftIconSpace (3);
-    const static sal_Int32 gnRightIconSpace (3);
+	const static sal_Int32 gnLeftIconSpace (3);
+	const static sal_Int32 gnRightIconSpace (3);
 }
 
 namespace sfx2 { namespace sidebar {
 
 TitleBar::TitleBar (
-    const ::rtl::OUString& rsTitle,
-    Window* pParentWindow,
-    const sidebar::Paint& rInitialBackgroundPaint)
-    : Window(pParentWindow),
-      maToolBox(this),
-      msTitle(rsTitle),
-      maIcon()
+	const ::rtl::OUString& rsTitle,
+	Window* pParentWindow,
+	const sidebar::Paint& rInitialBackgroundPaint)
+	: Window(pParentWindow),
+	  maToolBox(this),
+	  msTitle(rsTitle),
+	  maIcon()
 {
-    SetBackground(rInitialBackgroundPaint.GetWallpaper());
+	SetBackground(rInitialBackgroundPaint.GetWallpaper());
 
-    maToolBox.SetSelectHdl(LINK(this, TitleBar, SelectionHandler));
+	maToolBox.SetSelectHdl(LINK(this, TitleBar, SelectionHandler));
 }
-
-
-
 
 TitleBar::~TitleBar (void)
 {
 }
 
-
-
-
 void TitleBar::SetTitle (const ::rtl::OUString& rsTitle)
 {
-    msTitle = rsTitle;
-    Invalidate();
+	msTitle = rsTitle;
+	Invalidate();
 }
-
-
-
 
 void TitleBar::SetIcon (const Image& rIcon)
 {
-    maIcon = rIcon;
-    Invalidate();
+	maIcon = rIcon;
+	Invalidate();
 }
-
-
-
 
 void TitleBar::Paint (const Rectangle& rUpdateArea)
 {
-    (void)rUpdateArea;
+	(void)rUpdateArea;
 
-    // Paint title bar background.
-    Size aWindowSize (GetOutputSizePixel());
-    Rectangle aTitleBarBox(
-        0,
-        0,
-        aWindowSize.Width(),
-        aWindowSize.Height()
-        );
+	// Paint title bar background.
+	Size aWindowSize (GetOutputSizePixel());
+	Rectangle aTitleBarBox(
+		0,
+		0,
+		aWindowSize.Width(),
+		aWindowSize.Height()
+		);
 
-    PaintDecoration(aTitleBarBox);
-    const Rectangle aTitleBox (GetTitleArea(aTitleBarBox));
-    PaintTitle(aTitleBox);
-    PaintFocus(aTitleBox);
+	PaintDecoration(aTitleBarBox);
+	const Rectangle aTitleBox (GetTitleArea(aTitleBarBox));
+	PaintTitle(aTitleBox);
+	PaintFocus(aTitleBox);
 }
-
-
-
 
 void TitleBar::DataChanged (const DataChangedEvent& rEvent)
 {
-    (void)rEvent;
+	(void)rEvent;
 
-    SetBackground(GetBackgroundPaint().GetWallpaper());
+	SetBackground(GetBackgroundPaint().GetWallpaper());
 }
-
-
-
 
 void TitleBar::SetPosSizePixel (
-    long nX,
-    long nY,
-    long nWidth,
-    long nHeight,
-    sal_uInt16 nFlags)
+	long nX,
+	long nY,
+	long nWidth,
+	long nHeight,
+	sal_uInt16 nFlags)
 {
-    Window::SetPosSizePixel(nX,nY,nWidth,nHeight,nFlags);
+	Window::SetPosSizePixel(nX,nY,nWidth,nHeight,nFlags);
 
-    // Place the toolbox.
-    const sal_Int32 nToolBoxWidth (maToolBox.GetItemPosRect(0).GetWidth());
-    maToolBox.SetPosSizePixel(nWidth-nToolBoxWidth,0, nToolBoxWidth,nHeight, WINDOW_POSSIZE_POSSIZE);
-    maToolBox.Show();
+	// Place the toolbox.
+	const sal_Int32 nToolBoxWidth (maToolBox.GetItemPosRect(0).GetWidth());
+	maToolBox.SetPosSizePixel(nWidth-nToolBoxWidth,0, nToolBoxWidth,nHeight, WINDOW_POSSIZE_POSSIZE);
+	maToolBox.Show();
 }
-
-
-
 
 ToolBox& TitleBar::GetToolBox (void)
 {
-    return maToolBox;
+	return maToolBox;
 }
-
-
-
 
 const ToolBox& TitleBar::GetToolBox (void) const
 {
-    return maToolBox;
+	return maToolBox;
 }
-
-
-
 
 void TitleBar::HandleToolBoxItemClick (const sal_uInt16 nItemIndex)
 {
-    (void)nItemIndex;
-    // Any real processing has to be done in derived class.
+	(void)nItemIndex;
+	// Any real processing has to be done in derived class.
 }
-
-
-
 
 cssu::Reference<css::accessibility::XAccessible> TitleBar::CreateAccessible (void)
 {
-    SetAccessibleRole(css::accessibility::AccessibleRole::PANEL);
-    return AccessibleTitleBar::Create(*this);
+	SetAccessibleRole(css::accessibility::AccessibleRole::PANEL);
+	return AccessibleTitleBar::Create(*this);
 }
-
-
-
 
 void TitleBar::PaintTitle (const Rectangle& rTitleBox)
 {
-    Push(PUSH_FONT | PUSH_TEXTCOLOR);
+	Push(PUSH_FONT | PUSH_TEXTCOLOR);
 
-    Rectangle aTitleBox (rTitleBox);
+	Rectangle aTitleBox (rTitleBox);
 
-    // When there is an icon then paint it at the left of the given
-    // box.
-    if ( !! maIcon)
-    {
-        DrawImage(
-            Point(
-                aTitleBox.Left() + gnLeftIconSpace,
-                aTitleBox.Top() + (aTitleBox.GetHeight()-maIcon.GetSizePixel().Height())/2),
-            maIcon);
-        aTitleBox.Left() += gnLeftIconSpace + maIcon.GetSizePixel().Width() + gnRightIconSpace;
-    }
+	// When there is an icon then paint it at the left of the given box.
+	if ( !! maIcon)
+	{
+		DrawImage(
+			Point(
+				aTitleBox.Left() + gnLeftIconSpace,
+				aTitleBox.Top() + (aTitleBox.GetHeight()-maIcon.GetSizePixel().Height())/2),
+			maIcon);
+		aTitleBox.Left() += gnLeftIconSpace + maIcon.GetSizePixel().Width() + gnRightIconSpace;
+	}
 
-    Font aFont(GetFont());
-    aFont.SetWeight(WEIGHT_BOLD);
-    SetFont(aFont);
+	Font aFont(GetFont());
+	aFont.SetWeight(WEIGHT_BOLD);
+	SetFont(aFont);
 
-    // Paint title bar text.
-    SetTextColor(GetTextColor());
-    DrawText(
-        aTitleBox,
-        msTitle,
-        TEXT_DRAW_LEFT | TEXT_DRAW_VCENTER);
+	// Paint title bar text.
+	SetTextColor(GetTextColor());
+	DrawText(
+		aTitleBox,
+		msTitle,
+		TEXT_DRAW_LEFT | TEXT_DRAW_VCENTER);
 
-    Pop();
+	Pop();
 }
-
-
-
 
 void TitleBar::PaintFocus (const Rectangle& rFocusBox)
 {
-    Push(PUSH_FONT | PUSH_TEXTCOLOR);
+	Push(PUSH_FONT | PUSH_TEXTCOLOR);
 
-    Font aFont(GetFont());
-    aFont.SetWeight(WEIGHT_BOLD);
-    SetFont(aFont);
+	Font aFont(GetFont());
+	aFont.SetWeight(WEIGHT_BOLD);
+	SetFont(aFont);
 
-    const Rectangle aTextBox (
-        GetTextRect(
-            rFocusBox,
-            msTitle,
-            TEXT_DRAW_LEFT | TEXT_DRAW_VCENTER));
-    const Rectangle aLargerTextBox (
-        aTextBox.Left() - 2,
-        aTextBox.Top() - 2,
-        aTextBox.Right() + 2,
-        aTextBox.Bottom() + 2);
+	const Rectangle aTextBox (
+		GetTextRect(
+			rFocusBox,
+			msTitle,
+			TEXT_DRAW_LEFT | TEXT_DRAW_VCENTER));
+	const Rectangle aLargerTextBox (
+		aTextBox.Left() - 2,
+		aTextBox.Top() - 2,
+		aTextBox.Right() + 2,
+		aTextBox.Bottom() + 2);
 
-    if (HasFocus())
-        Window::ShowFocus(aLargerTextBox);
-    else
-        Window::HideFocus();
+	if (HasFocus())
+		Window::ShowFocus(aLargerTextBox);
+	else
+		Window::HideFocus();
 
-    Pop();
+	Pop();
 }
-
-
-
 
 IMPL_LINK(TitleBar, SelectionHandler, ToolBox*, pToolBox)
 {
-    (void)pToolBox;
-    OSL_ASSERT(&maToolBox==pToolBox);
-    const sal_uInt16 nItemId (maToolBox.GetHighlightItemId());
+	(void)pToolBox;
+	OSL_ASSERT(&maToolBox==pToolBox);
+	const sal_uInt16 nItemId (maToolBox.GetHighlightItemId());
 
-    HandleToolBoxItemClick(nItemId);
+	HandleToolBoxItemClick(nItemId);
 
-    return sal_True;
+	return sal_True;
 }
 
 } } // end of namespace sfx2::sidebar
+
+/* vim: set noet sw=4 ts=4: */

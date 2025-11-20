@@ -26,43 +26,39 @@
 namespace sfx2 { namespace sidebar {
 
 DeckDescriptor::DeckDescriptor (void)
-    : msTitle(),
-      msId(),
-      msIconURL(),
-      msHighContrastIconURL(),
-      msTitleBarIconURL(),
-      msHighContrastTitleBarIconURL(),
-      msHelpURL(),
-      msHelpText(),
-      maContextList(),
-      mbIsEnabled(true),
-      mnOrderIndex(10000) // Default value as defined in Sidebar.xcs
+	: msTitle(),
+	  msId(),
+	  msIconURL(),
+	  msHighContrastIconURL(),
+	  msTitleBarIconURL(),
+	  msHighContrastTitleBarIconURL(),
+	  msHelpURL(),
+	  msHelpText(),
+	  maContextList(),
+	  mbIsEnabled(true),
+	  mnOrderIndex(10000) // Default value as defined in Sidebar.xcs
 {
 }
-
-
-
 
 DeckDescriptor::DeckDescriptor (const DeckDescriptor& rOther)
-    : msTitle(rOther.msTitle),
-      msId(rOther.msId),
-      msIconURL(rOther.msIconURL),
-      msHighContrastIconURL(rOther.msHighContrastIconURL),
-      msTitleBarIconURL(rOther.msTitleBarIconURL),
-      msHighContrastTitleBarIconURL(rOther.msHighContrastTitleBarIconURL),
-      msHelpURL(rOther.msHelpURL),
-      msHelpText(rOther.msHelpText),
-      maContextList(rOther.maContextList),
-          mbIsEnabled(rOther.mbIsEnabled),
-      mnOrderIndex(rOther.mnOrderIndex)
+	: msTitle(rOther.msTitle),
+	  msId(rOther.msId),
+	  msIconURL(rOther.msIconURL),
+	  msHighContrastIconURL(rOther.msHighContrastIconURL),
+	  msTitleBarIconURL(rOther.msTitleBarIconURL),
+	  msHighContrastTitleBarIconURL(rOther.msHighContrastTitleBarIconURL),
+	  msHelpURL(rOther.msHelpURL),
+	  msHelpText(rOther.msHelpText),
+	  maContextList(rOther.maContextList),
+		  mbIsEnabled(rOther.mbIsEnabled),
+	  mnOrderIndex(rOther.mnOrderIndex)
 {
 }
-
-
-
 
 DeckDescriptor::~DeckDescriptor (void)
 {
 }
 
 } } // end of namespace sfx2::sidebar
+
+/* vim: set noet sw=4 ts=4: */
