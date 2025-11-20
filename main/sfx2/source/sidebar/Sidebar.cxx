@@ -30,37 +30,35 @@ using namespace cssu;
 
 namespace sfx2 { namespace sidebar {
 
-
 void Sidebar::ShowPanel (
-    const ::rtl::OUString& rsPanelId,
-    const Reference<frame::XFrame>& rxFrame)
+	const ::rtl::OUString& rsPanelId,
+	const Reference<frame::XFrame>& rxFrame)
 {
-    SidebarController* pController = SidebarController::GetSidebarControllerForFrame(rxFrame);
-    const PanelDescriptor* pPanelDescriptor = ResourceManager::Instance().GetPanelDescriptor(rsPanelId);
-    if (pController!=NULL && pPanelDescriptor != NULL)
-    {
-        // This should be a lot more sophisticated:
-        // - Make the deck switching asynchronous
-        // - Make sure that the panel is visible and expanded after
-        // the switch.
-        // - Make sure to use a context that really shows the panel
-        //
-        // All that is not necessary for the current use cases so lets
-        // keep it simple for the time being.
-        pController->RequestSwitchToDeck(pPanelDescriptor->msDeckId);
-    }
+	SidebarController* pController = SidebarController::GetSidebarControllerForFrame(rxFrame);
+	const PanelDescriptor* pPanelDescriptor = ResourceManager::Instance().GetPanelDescriptor(rsPanelId);
+	if (pController!=NULL && pPanelDescriptor != NULL)
+	{
+		// This should be a lot more sophisticated:
+		// - Make the deck switching asynchronous
+		// - Make sure that the panel is visible and expanded after
+		//   the switch.
+		// - Make sure to use a context that really shows the panel
+		//
+		// All that is not necessary for the current use cases so let's
+		// keep it simple for the time being.
+		pController->RequestSwitchToDeck(pPanelDescriptor->msDeckId);
+	}
 }
 
-
-
-
 void Sidebar::ShowDeck (
-    const ::rtl::OUString& rsDeckId,
-    const Reference<frame::XFrame>& rxFrame)
+	const ::rtl::OUString& rsDeckId,
+	const Reference<frame::XFrame>& rxFrame)
 {
-    SidebarController* pController = SidebarController::GetSidebarControllerForFrame(rxFrame);
-    if (pController != NULL)
-        pController->RequestSwitchToDeck(rsDeckId);
+	SidebarController* pController = SidebarController::GetSidebarControllerForFrame(rxFrame);
+	if (pController != NULL)
+		pController->RequestSwitchToDeck(rsDeckId);
 }
 
 } } // end of namespace sfx2::sidebar
+
+/* vim: set noet sw=4 ts=4: */

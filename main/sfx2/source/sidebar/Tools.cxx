@@ -41,173 +41,152 @@
 using namespace css;
 using namespace cssu;
 
-
 namespace sfx2 { namespace sidebar {
 
 Image Tools::GetImage (
-    const ::rtl::OUString& rsImageURL,
-    const ::rtl::OUString& rsHighContrastImageURL,
-    const Reference<frame::XFrame>& rxFrame)
+	const ::rtl::OUString& rsImageURL,
+	const ::rtl::OUString& rsHighContrastImageURL,
+	const Reference<frame::XFrame>& rxFrame)
 {
-    if (Theme::IsHighContrastMode())
-        return GetImage(rsHighContrastImageURL, rxFrame);
-    else
-        return GetImage(rsImageURL, rxFrame);
+	if (Theme::IsHighContrastMode())
+		return GetImage(rsHighContrastImageURL, rxFrame);
+	else
+		return GetImage(rsImageURL, rxFrame);
 }
-
-
-
 
 Image Tools::GetImage (
-    const ::rtl::OUString& rsURL,
-    const Reference<frame::XFrame>& rxFrame)
+	const ::rtl::OUString& rsURL,
+	const Reference<frame::XFrame>& rxFrame)
 {
-    if (rsURL.getLength() > 0)
-    {
-        static const sal_Char* sUnoCommandPrefix = ".uno:";
-        static const sal_Int32 nUnoCommandPrefixLength = strlen(sUnoCommandPrefix);
-        static const sal_Char* sCommandImagePrefix = "private:commandimage/";
-        static const sal_Int32 nCommandImagePrefixLength = strlen(sCommandImagePrefix);
+	if (rsURL.getLength() > 0)
+	{
+		static const sal_Char* sUnoCommandPrefix = ".uno:";
+		static const sal_Int32 nUnoCommandPrefixLength = strlen(sUnoCommandPrefix);
+		static const sal_Char* sCommandImagePrefix = "private:commandimage/";
+		static const sal_Int32 nCommandImagePrefixLength = strlen(sCommandImagePrefix);
 
-        if (rsURL.compareToAscii(sUnoCommandPrefix, nUnoCommandPrefixLength) == 0)
-        {
-            const Image aPanelImage (::GetImage(rxFrame, rsURL, sal_False, Theme::IsHighContrastMode()));
-            return aPanelImage;
-        }
-        else if (rsURL.compareToAscii(sCommandImagePrefix, nCommandImagePrefixLength) == 0)
-        {
-            ::rtl::OUStringBuffer aCommandName;
-            aCommandName.appendAscii(sUnoCommandPrefix);
-            aCommandName.append(rsURL.copy(nCommandImagePrefixLength));
-            const ::rtl::OUString sCommandName (aCommandName.makeStringAndClear());
+		if (rsURL.compareToAscii(sUnoCommandPrefix, nUnoCommandPrefixLength) == 0)
+		{
+			const Image aPanelImage (::GetImage(rxFrame, rsURL, sal_False, Theme::IsHighContrastMode()));
+			return aPanelImage;
+		}
+		else if (rsURL.compareToAscii(sCommandImagePrefix, nCommandImagePrefixLength) == 0)
+		{
+			::rtl::OUStringBuffer aCommandName;
+			aCommandName.appendAscii(sUnoCommandPrefix);
+			aCommandName.append(rsURL.copy(nCommandImagePrefixLength));
+			const ::rtl::OUString sCommandName (aCommandName.makeStringAndClear());
 
-            const Image aPanelImage (::GetImage(rxFrame, sCommandName, sal_False, Theme::IsHighContrastMode()));
-            return aPanelImage;
-        }
-        else
-        {
-            const ::comphelper::ComponentContext aContext (::comphelper::getProcessServiceFactory());
-            const Reference<graphic::XGraphicProvider> xGraphicProvider (
-                aContext.createComponent("com.sun.star.graphic.GraphicProvider"),
-                UNO_QUERY);
-            if ( xGraphicProvider.is())
-            {
-                ::comphelper::NamedValueCollection aMediaProperties;
-                aMediaProperties.put("URL", rsURL);
-                const Reference<graphic::XGraphic> xGraphic (
-                    xGraphicProvider->queryGraphic(aMediaProperties.getPropertyValues()),
-                    UNO_QUERY);
-                if (xGraphic.is())
-                    return Image(xGraphic);
-            }
-        }
-    }
-    return Image();
+			const Image aPanelImage (::GetImage(rxFrame, sCommandName, sal_False, Theme::IsHighContrastMode()));
+			return aPanelImage;
+		}
+		else
+		{
+			const ::comphelper::ComponentContext aContext (::comphelper::getProcessServiceFactory());
+			const Reference<graphic::XGraphicProvider> xGraphicProvider (
+				aContext.createComponent("com.sun.star.graphic.GraphicProvider"),
+				UNO_QUERY);
+			if ( xGraphicProvider.is())
+			{
+				::comphelper::NamedValueCollection aMediaProperties;
+				aMediaProperties.put("URL", rsURL);
+				const Reference<graphic::XGraphic> xGraphic (
+					xGraphicProvider->queryGraphic(aMediaProperties.getPropertyValues()),
+					UNO_QUERY);
+				if (xGraphic.is())
+					return Image(xGraphic);
+			}
+		}
+	}
+	return Image();
 }
-
-
-
 
 css::awt::Gradient Tools::VclToAwtGradient (const Gradient aVclGradient)
 {
-    css::awt::Gradient aAwtGradient (
-        awt::GradientStyle(aVclGradient.GetStyle()),
-        aVclGradient.GetStartColor().GetRGBColor(),
-        aVclGradient.GetEndColor().GetRGBColor(),
-        aVclGradient.GetAngle(),
-        aVclGradient.GetBorder(),
-        aVclGradient.GetOfsX(),
-        aVclGradient.GetOfsY(),
-        aVclGradient.GetStartIntensity(),
-        aVclGradient.GetEndIntensity(),
-        aVclGradient.GetSteps());
-    return aAwtGradient;
+	css::awt::Gradient aAwtGradient (
+		awt::GradientStyle(aVclGradient.GetStyle()),
+		aVclGradient.GetStartColor().GetRGBColor(),
+		aVclGradient.GetEndColor().GetRGBColor(),
+		aVclGradient.GetAngle(),
+		aVclGradient.GetBorder(),
+		aVclGradient.GetOfsX(),
+		aVclGradient.GetOfsY(),
+		aVclGradient.GetStartIntensity(),
+		aVclGradient.GetEndIntensity(),
+		aVclGradient.GetSteps());
+	return aAwtGradient;
 }
-
-
-
 
 Gradient Tools::AwtToVclGradient (const css::awt::Gradient aAwtGradient)
 {
-    Gradient aVclGradient (
-        GradientStyle(aAwtGradient.Style),
-        aAwtGradient.StartColor,
-        aAwtGradient.EndColor);
-    aVclGradient.SetAngle(aAwtGradient.Angle);
-    aVclGradient.SetBorder(aAwtGradient.Border);
-    aVclGradient.SetOfsX(aAwtGradient.XOffset);
-    aVclGradient.SetOfsY(aAwtGradient.YOffset);
-    aVclGradient.SetStartIntensity(aAwtGradient.StartIntensity);
-    aVclGradient.SetEndIntensity(aAwtGradient.EndIntensity);
-    aVclGradient.SetSteps(aAwtGradient.StepCount);
+	Gradient aVclGradient (
+		GradientStyle(aAwtGradient.Style),
+		aAwtGradient.StartColor,
+		aAwtGradient.EndColor);
+	aVclGradient.SetAngle(aAwtGradient.Angle);
+	aVclGradient.SetBorder(aAwtGradient.Border);
+	aVclGradient.SetOfsX(aAwtGradient.XOffset);
+	aVclGradient.SetOfsY(aAwtGradient.YOffset);
+	aVclGradient.SetStartIntensity(aAwtGradient.StartIntensity);
+	aVclGradient.SetEndIntensity(aAwtGradient.EndIntensity);
+	aVclGradient.SetSteps(aAwtGradient.StepCount);
 
-    return aVclGradient;
+	return aVclGradient;
 }
-
-
-
 
 SvBorder Tools::RectangleToSvBorder (const Rectangle aBox)
 {
-    return SvBorder(
-        aBox.Left(),
-        aBox.Top(),
-        aBox.Right(),
-        aBox.Bottom());
+	return SvBorder(
+		aBox.Left(),
+		aBox.Top(),
+		aBox.Right(),
+		aBox.Bottom());
 }
-
-
-
 
 util::URL Tools::GetURL (const ::rtl::OUString& rsCommand)
 {
-    util::URL aURL;
-    aURL.Complete = rsCommand;
+	util::URL aURL;
+	aURL.Complete = rsCommand;
 
-    const ::comphelper::ComponentContext aComponentContext (::comphelper::getProcessServiceFactory());
-    const Reference<util::XURLTransformer> xParser (
-        aComponentContext.createComponent("com.sun.star.util.URLTransformer"),
-            UNO_QUERY_THROW);
-    xParser->parseStrict(aURL);
+	const ::comphelper::ComponentContext aComponentContext (::comphelper::getProcessServiceFactory());
+	const Reference<util::XURLTransformer> xParser (
+		aComponentContext.createComponent("com.sun.star.util.URLTransformer"),
+			UNO_QUERY_THROW);
+	xParser->parseStrict(aURL);
 
-    return aURL;
+	return aURL;
 }
-
-
-
 
 Reference<frame::XDispatch> Tools::GetDispatch (
-    const cssu::Reference<css::frame::XFrame>& rxFrame,
-    const util::URL& rURL)
+	const cssu::Reference<css::frame::XFrame>& rxFrame,
+	const util::URL& rURL)
 {
-    Reference<frame::XDispatchProvider> xProvider (rxFrame, UNO_QUERY_THROW);
-    Reference<frame::XDispatch> xDispatch (xProvider->queryDispatch(rURL, ::rtl::OUString(), 0));
-    return xDispatch;
+	Reference<frame::XDispatchProvider> xProvider (rxFrame, UNO_QUERY_THROW);
+	Reference<frame::XDispatch> xDispatch (xProvider->queryDispatch(rURL, ::rtl::OUString(), 0));
+	return xDispatch;
 }
-
-
-
 
 ::rtl::OUString Tools::GetModuleName (
-    const cssu::Reference<css::frame::XFrame>& rxFrame)
+	const cssu::Reference<css::frame::XFrame>& rxFrame)
 {
-    if ( ! rxFrame.is() || ! rxFrame->getController().is())
-        return ::rtl::OUString();
+	if ( ! rxFrame.is() || ! rxFrame->getController().is())
+		return ::rtl::OUString();
 
-    try
-    {
-        const ::comphelper::ComponentContext aContext (::comphelper::getProcessServiceFactory());
-        const Reference<frame::XModuleManager> xModuleManager (
-            aContext.createComponent("com.sun.star.frame.ModuleManager"),
-            UNO_QUERY_THROW);
-        return xModuleManager->identify(rxFrame);
-    }
-    catch (const Exception&)
-    {
-        // Ignored.
-    }
-    return ::rtl::OUString();
+	try
+	{
+		const ::comphelper::ComponentContext aContext (::comphelper::getProcessServiceFactory());
+		const Reference<frame::XModuleManager> xModuleManager (
+			aContext.createComponent("com.sun.star.frame.ModuleManager"),
+			UNO_QUERY_THROW);
+		return xModuleManager->identify(rxFrame);
+	}
+	catch (const Exception&)
+	{
+		// Ignored.
+	}
+	return ::rtl::OUString();
 }
 
-
 } } // end of namespace sfx2::sidebar
+
+/* vim: set noet sw=4 ts=4: */
