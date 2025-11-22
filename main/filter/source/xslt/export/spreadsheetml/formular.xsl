@@ -87,13 +87,23 @@
 				<xsl:choose>
 					<!-- OASIS Open Document XML formular expressions  -->
 					<xsl:when test="starts-with($expression,'of:')">
-						<!-- giving out the '=', which will be removed with 'of:=' to enable recursive string parsing  -->
+						<!-- ODF >= 1.2: giving out the '=', which will be removed with 'of:=' to enable recursive string parsing  -->
 						<xsl:text>=</xsl:text>
 						<xsl:call-template name="function-parameter-mapping">
 							<xsl:with-param name="rowPos" select="$rowPos" />
 							<xsl:with-param name="columnPos" select="$columnPos" />
 							<!-- 1) remove 'of:=' prefix and exchange ';' with ',' -->
 							<xsl:with-param name="expression" select="translate(substring($expression,5),';',',')"/>
+						</xsl:call-template>
+					</xsl:when>
+					<xsl:when test="starts-with($expression,'oooc:')">
+						<!-- ODF < 1.2: giving out the '=', which will be removed with 'oooc:=' to enable recursive string parsing  -->
+						<xsl:text>=</xsl:text>
+						<xsl:call-template name="function-parameter-mapping">
+							<xsl:with-param name="rowPos" select="$rowPos" />
+							<xsl:with-param name="columnPos" select="$columnPos" />
+							<!-- 1) remove 'oooc:=' prefix and exchange ';' with ',' -->
+							<xsl:with-param name="expression" select="translate(substring($expression,7),';',',')"/>
 						</xsl:call-template>
 					</xsl:when>
 					<xsl:otherwise>
