@@ -44,20 +44,20 @@ Control RID_SIDEBAR_GRAPHIC_PANEL
 	DialogControl = TRUE ;
 	Border = FALSE ;
 
-	Size = MAP_APPFONT( PROPERTYPAGE_WIDTH, PAGE_HEIGHT ) ;
+	Size = MAP_APPFONT ( PROPERTYPAGE_WIDTH, PAGE_HEIGHT ) ;
 	HelpID = HID_PROPERTYPANEL_GRAPHIC_SECTION ;
 	Text = "Graphic" ;
 
 	FixedText FT_BRIGHTNESS
 	{
-		Pos = MAP_APPFONT (X0, Y0) ;
+		Pos = MAP_APPFONT ( X0, Y0 ) ;
 		Size = MAP_APPFONT ( MBOX_WIDTH, TEXT_HEIGHT ) ;
 		Text [ en-US ] = "~Brightness:" ;
 	};
 	MetricField MTR_BRIGHTNESS
 	{
 		Border = TRUE ;
-		Pos = MAP_APPFONT (X0, Y1) ;
+		Pos = MAP_APPFONT ( X0, Y1 ) ;
 		Size = MAP_APPFONT ( MBOX_WIDTH, MBOX_HEIGHT ) ;
 		HelpID = HID_PROPERTY_PANEL_GRAPHIC_MTR_BRIGHT ;
 		QuickHelpText [ en-US ] = "Specify the luminance of the graphic." ;
@@ -72,14 +72,14 @@ Control RID_SIDEBAR_GRAPHIC_PANEL
 	};
 	FixedText FT_CONTRAST
 	{
-		Pos = MAP_APPFONT (X2, Y0) ;
+		Pos = MAP_APPFONT ( X2, Y0 ) ;
 		Size = MAP_APPFONT ( MBOX_WIDTH, TEXT_HEIGHT ) ;
 		Text [ en-US ] = "~Contrast:" ;
 	};
 	MetricField MTR_CONTRAST
 	{
 		Border = TRUE ;
-		Pos = MAP_APPFONT (X2, Y1) ;
+		Pos = MAP_APPFONT ( X2, Y1 ) ;
 		Size = MAP_APPFONT ( MBOX_WIDTH, MBOX_HEIGHT ) ;
 		HelpID = HID_PROPERTY_PANEL_GRAPHIC_MTR_CONTRAST ;
 		QuickHelpText [ en-US ] = "Specify the degree of difference between the lightest and darkest parts of the graphic." ;
@@ -94,14 +94,14 @@ Control RID_SIDEBAR_GRAPHIC_PANEL
 	};
 	FixedText FT_COLOR_MODE
 	{
-		Pos = MAP_APPFONT (X0, Y2) ;
+		Pos = MAP_APPFONT ( X0, Y2 ) ;
 		Size = MAP_APPFONT ( MBOX_WIDTH, TEXT_HEIGHT ) ;
 		Text [ en-US ] = "Color ~mode:" ;
 	};
 	ListBox LB_COLOR_MODE
 	{
 		Border = TRUE ;
-		Pos = MAP_APPFONT (X0, Y3) ;
+		Pos = MAP_APPFONT ( X0, Y3 ) ;
 		Size = MAP_APPFONT ( MBOX_WIDTH, 100 ) ;
 		HelpID = HID_PROPERTY_PANEL_GRAPHIC_LB_COLORMODE ;
 		QuickHelpText [ en-US ] = "Select the color mode of the graphic." ;
@@ -110,14 +110,14 @@ Control RID_SIDEBAR_GRAPHIC_PANEL
 	};
 	FixedText FT_TRANSPARENT
 	{
-		Pos = MAP_APPFONT (X2, Y2) ;
+		Pos = MAP_APPFONT ( X2, Y2 ) ;
 		Size = MAP_APPFONT ( MBOX_WIDTH, TEXT_HEIGHT ) ;
 		Text [ en-US ] = "~Transparency:" ;
 	};
 	MetricField MTR_TRANSPARENT
 	{
 		Border = TRUE ;
-		Pos = MAP_APPFONT (X2, Y3) ;
+		Pos = MAP_APPFONT ( X2, Y3 ) ;
 		Size = MAP_APPFONT ( MBOX_WIDTH ,MBOX_HEIGHT ) ;
 		HelpID = HID_PROPERTY_PANEL_GRAPHIC_MTR_TRANSP ;
 		QuickHelpText [ en-US ] = "Specify the percentage of transparency; 0% is fully opaque and 100% is fully transparent." ;
@@ -132,7 +132,7 @@ Control RID_SIDEBAR_GRAPHIC_PANEL
 	MetricField MF_RED
 	{
 		Border = TRUE ;
-		Pos = MAP_APPFONT (X1, Y4) ;
+		Pos = MAP_APPFONT ( X1, Y4 ) ;
 		Size = MAP_APPFONT ( MBOX_WIDTH - 10,MBOX_HEIGHT ) ;
 		HelpID = HID_PROPERTY_PANEL_GRAPHIC_MTR_RED ;
 		QuickHelpText [ en-US ] = "Red" ;
@@ -148,7 +148,7 @@ Control RID_SIDEBAR_GRAPHIC_PANEL
 	MetricField MF_GREEN
 	{
 		Border = TRUE ;
-		Pos = MAP_APPFONT (X3, Y4) ;
+		Pos = MAP_APPFONT ( X3, Y4 ) ;
 		Size = MAP_APPFONT ( MBOX_WIDTH - 10 ,MBOX_HEIGHT ) ;
 		HelpID = HID_PROPERTY_PANEL_GRAPHIC_MTR_GREEN ;
 		QuickHelpText [ en-US ] = "Green" ;
@@ -164,7 +164,7 @@ Control RID_SIDEBAR_GRAPHIC_PANEL
 	MetricField MF_BLUE
 	{
 		Border = TRUE ;
-		Pos = MAP_APPFONT (X1, Y5) ;
+		Pos = MAP_APPFONT ( X1, Y5 ) ;
 		Size = MAP_APPFONT ( MBOX_WIDTH - 10 ,MBOX_HEIGHT ) ;
 		HelpID = HID_PROPERTY_PANEL_GRAPHIC_MTR_BLUE ;
 		QuickHelpText [ en-US ] = "Blue" ;
@@ -180,7 +180,7 @@ Control RID_SIDEBAR_GRAPHIC_PANEL
 	MetricField MF_GAMMA
 	{
 		Border = TRUE ;
-		Pos = MAP_APPFONT (X3, Y5) ;
+		Pos = MAP_APPFONT ( X3, Y5 ) ;
 		Size = MAP_APPFONT ( MBOX_WIDTH - 10 ,MBOX_HEIGHT ) ;
 		HelpID = HID_PROPERTY_PANEL_GRAPHIC_MTR_GAMMA ;
 		QuickHelpText [ en-US ] = "Specify the gamma value that affects the brightness of the midtone values." ;
@@ -194,38 +194,38 @@ Control RID_SIDEBAR_GRAPHIC_PANEL
 	};
 	FixedImage IMG_RED
 	{
-		Pos = MAP_APPFONT(X0, Y4) ;
-		Size = MAP_APPFONT( 10, 12 ) ;
+		Pos = MAP_APPFONT ( X0, Y4 ) ;
+		Size = MAP_APPFONT ( 10, 12 ) ;
 		Fixed = Image
 		{
-			ImageBitmap = Bitmap { File = "symphony/AdjustColorRed_16x16.png" ; };
+			ImageBitmap = Bitmap { File = "sidebar/AdjustColorRed_16x16.png" ; };
 		};
 	};
 	FixedImage IMG_GREEN
 	{
-		Pos = MAP_APPFONT(X2, Y4) ;
-		Size = MAP_APPFONT( 10, 12 ) ;
+		Pos = MAP_APPFONT ( X2, Y4 ) ;
+		Size = MAP_APPFONT ( 10, 12 ) ;
 		Fixed = Image
 		{
-			ImageBitmap = Bitmap { File = "symphony/AdjustColorGreen_16x16.png" ; };
+			ImageBitmap = Bitmap { File = "sidebar/AdjustColorGreen_16x16.png" ; };
 		};
 	};
 	FixedImage IMG_BLUE
 	{
-		Pos = MAP_APPFONT(X0, Y5) ;
-		Size = MAP_APPFONT( 10, 12 ) ;
+		Pos = MAP_APPFONT ( X0, Y5 ) ;
+		Size = MAP_APPFONT ( 10, 12 ) ;
 		Fixed = Image
 		{
-			ImageBitmap = Bitmap { File = "symphony/AdjustColorBlue_16x16.png" ; };
+			ImageBitmap = Bitmap { File = "sidebar/AdjustColorBlue_16x16.png" ; };
 		};
 	};
 	FixedImage IMG_GAMMA
 	{
-		Pos = MAP_APPFONT(X2, Y5) ;
-		Size = MAP_APPFONT( 10, 12 ) ;
+		Pos = MAP_APPFONT ( X2, Y5 ) ;
+		Size = MAP_APPFONT ( 10, 12 ) ;
 		Fixed = Image
 		{
-			ImageBitmap = Bitmap { File = "symphony/AdjustColorGamma_16x16.png" ; };
+			ImageBitmap = Bitmap { File = "sidebar/AdjustColorGamma_16x16.png" ; };
 		};
 	};
 };
