@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #include "ParaPropertyPanel.hrc"
 #include <sfx2/sidebar/ResourceDefinitions.hrc>
 #include "helpid.hrc"
@@ -284,7 +282,7 @@ Control RID_SIDEBAR_PARA_PANEL
 				HelpID = HID_PPROPERTYPANEL_PARA_TBI_INDENT_HANG ;
 				ItemBitmap = Bitmap
 				{
-					File = "symphony/Indent_Hanging.png" ;
+					File = "sidebar/Indent_Hanging.png" ;
 				};
 			};
 		};
@@ -318,7 +316,7 @@ Control RID_SIDEBAR_PARA_PANEL
 				HelpID = HID_PPROPERTYPANEL_PARA_TBI_INDENTP_HANG ;
 				ItemBitmap = Bitmap
 				{
-					File = "symphony/Indent_Hanging.png" ;
+					File = "sidebar/Indent_Hanging.png" ;
 				};
 			};
 		};
@@ -387,7 +385,7 @@ Control RID_SIDEBAR_PARA_PANEL
 				Text [ en-US ] = "Line Spacing" ;
 				ItemBitmap = Bitmap
 				{
-					File = "symphony/lpsmall-spacing-1.png" ;
+					File = "sidebar/lpsmall-spacing-1.png" ;
 				};
 				DropDown = TRUE ;
 			};
@@ -421,59 +419,59 @@ Control RID_SIDEBAR_PARA_PANEL
 
 	ImageList IL_NUM_BULLET
 	{
-		Prefix = "symphony/para_numbullet" ;
+		Prefix = "sidebar/para_numbullet" ;
 		MaskColor = STD_MASKCOLOR ;
 		SVX_PROPERTYPANEL_PARA_NUMBULLET_IDLIST
 	};
 	ImageList ILH_NUM_BULLET
 	{
-		Prefix = "symphony/para_numbulleth" ;
+		Prefix = "sidebar/para_numbulleth" ;
 		MaskColor = STD_MASKCOLOR ;
 		SVX_PROPERTYPANEL_PARA_NUMBULLET_IDLIST
 	};
 	// for sym2_7380
 	ImageList IL_NUM_BULLET_RTL
 	{
-		Prefix = "symphony/para_numbullet_rtl" ;
+		Prefix = "sidebar/para_numbullet_rtl" ;
 		MaskColor = STD_MASKCOLOR ;
 		SVX_PROPERTYPANEL_PARA_NUMBULLET_IDLIST_RTL
 	};
 	// end
 	Image IMG_BACK_COLOR
 	{
-		ImageBitmap = Bitmap {File = "symphony/sc_backgroundcolor.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/sc_backgroundcolor.png" ;} ;
 	};
 	Image IMG_BACK_COLOR_H
 	{
-		ImageBitmap = Bitmap {File = "symphony/sch_backgroundcolor.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/sch_backgroundcolor.png" ;} ;
 	};
 	Image IMG_SPACE1
 	{
-		ImageBitmap = Bitmap {File = "symphony/spacing1.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/spacing1.png" ;} ;
 	};
 	Image IMG_SPACE2
 	{
-		ImageBitmap = Bitmap {File = "symphony/spacing2.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/spacing2.png" ;} ;
 	};
 	Image IMG_SPACE3
 	{
-		ImageBitmap = Bitmap {File = "symphony/spacing3.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/spacing3.png" ;} ;
 	};
 	Image IMG_INDENT1
 	{
-		ImageBitmap = Bitmap {File = "symphony/Indent2.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/Indent2.png" ;} ;
 	};
 	Image IMG_INDENT2
 	{
-		ImageBitmap = Bitmap {File = "symphony/Indent3.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/Indent3.png" ;} ;
 	};
 	Image IMG_INDENT3
 	{
-		ImageBitmap = Bitmap {File = "symphony/Indent4.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/Indent4.png" ;} ;
 	};
 	Image IMG_INDENT_HANG
 	{
-		ImageBitmap = Bitmap {File = "symphony/Indent_Hanging.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/Indent_Hanging.png" ;} ;
 	};
 };
 
@@ -670,43 +668,43 @@ Control RID_POPUPPANEL_PARAPAGE_LINESPACING
 	};
 	Image IMG_SPACING1
 	{
-		ImageBitmap = Bitmap {File = "symphony/lpspacing-1.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/lpspacing-1.png" ;} ;
 	};
 	Image IMG_SPACING115
 	{
-		ImageBitmap = Bitmap {File = "symphony/lpspacing-1_15.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/lpspacing-1_15.png" ;} ;
 	};
 	Image IMG_SPACING15
 	{
-		ImageBitmap = Bitmap {File = "symphony/lpspacing-1_5.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/lpspacing-1_5.png" ;} ;
 	};
 	Image IMG_SPACING2
 	{
-		ImageBitmap = Bitmap {File = "symphony/lpspacing-2.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/lpspacing-2.png" ;} ;
 	};
 	Image IMG_SEL_SPACING1
 	{
-		ImageBitmap = Bitmap {File = "symphony/lpselected-spacing-1.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/lpselected-spacing-1.png" ;} ;
 	};
 	Image IMG_SEL_SPACING115
 	{
-		ImageBitmap = Bitmap {File = "symphony/lpselected-spacing-1_15.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/lpselected-spacing-1_15.png" ;} ;
 	};
 	Image IMG_SEL_SPACING15
 	{
-		ImageBitmap = Bitmap {File = "symphony/lpselected-spacing-1_5.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/lpselected-spacing-1_5.png" ;} ;
 	};
 	Image IMG_SEL_SPACING2
 	{
-		ImageBitmap = Bitmap {File = "symphony/lpselected-spacing-2.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/lpselected-spacing-2.png" ;} ;
 	};
 	Image IMG_CUSTOM
 	{
-		ImageBitmap = Bitmap {File = "symphony/last_custom_common.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/last_custom_common.png" ;} ;
 	};
 	Image IMG_CUSTOM_GRAY
 	{
-		ImageBitmap = Bitmap {File = "symphony/last_custom_common_grey.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/last_custom_common_grey.png" ;} ;
 	};
 	String STR_LS_SINGLE
 	{

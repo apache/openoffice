@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #include "TextPropertyPanel.hrc"
 #include <sfx2/sidebar/ResourceDefinitions.hrc>
 #include "helpid.hrc"
@@ -282,127 +280,127 @@ Control RID_POPUPPANEL_TEXTPAGE_UNDERLINE
 
 	Image IMG_SINGLE
 	{
-		ImageBitmap = Bitmap {File = "symphony/line1.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/line1.png" ;} ;
 	};
 	Image IMG_DOUBLE
 	{
-		ImageBitmap = Bitmap {File = "symphony/line2.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/line2.png" ;} ;
 	};
 	Image IMG_BOLD2
 	{
-		ImageBitmap = Bitmap {File = "symphony/line3.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/line3.png" ;} ;
 	};
 	Image IMG_DOT
 	{
-		ImageBitmap = Bitmap {File = "symphony/line4.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/line4.png" ;} ;
 	};
 	Image IMG_DOT_BOLD
 	{
-		ImageBitmap = Bitmap {File = "symphony/line5.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/line5.png" ;} ;
 	};
 	Image IMG_DASH
 	{
-		ImageBitmap = Bitmap {File = "symphony/line6.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/line6.png" ;} ;
 	};
 	Image IMG_DASH_LONG
 	{
-		ImageBitmap = Bitmap {File = "symphony/line7.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/line7.png" ;} ;
 	};
 	Image IMG_DASH_DOT
 	{
-		ImageBitmap = Bitmap {File = "symphony/line8.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/line8.png" ;} ;
 	};
 	Image IMG_DASH_DOT_DOT
 	{
-		ImageBitmap = Bitmap {File = "symphony/line9.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/line9.png" ;} ;
 	};
 	Image IMG_WAVE
 	{
-		ImageBitmap = Bitmap {File = "symphony/line10.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/line10.png" ;} ;
 	};
 
 	// high contract
 	Image IMG_SINGLE_H
 	{
-		ImageBitmap = Bitmap {File = "symphony/line1_h.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/line1_h.png" ;} ;
 	};
 	Image IMG_DOUBLE_H
 	{
-		ImageBitmap = Bitmap {File = "symphony/line2_h.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/line2_h.png" ;} ;
 	};
 	Image IMG_BOLD2_H
 	{
-		ImageBitmap = Bitmap {File = "symphony/line3_h.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/line3_h.png" ;} ;
 	};
 	Image IMG_DOT_H
 	{
-		ImageBitmap = Bitmap {File = "symphony/line4_h.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/line4_h.png" ;} ;
 	};
 	Image IMG_DOT_BOLD_H
 	{
-		ImageBitmap = Bitmap {File = "symphony/line5_h.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/line5_h.png" ;} ;
 	};
 	Image IMG_DASH_H
 	{
-		ImageBitmap = Bitmap {File = "symphony/line6_h.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/line6_h.png" ;} ;
 	};
 	Image IMG_DASH_LONG_H
 	{
-		ImageBitmap = Bitmap {File = "symphony/line7_h.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/line7_h.png" ;} ;
 	};
 	Image IMG_DASH_DOT_H
 	{
-		ImageBitmap = Bitmap {File = "symphony/line8_h.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/line8_h.png" ;} ;
 	};
 	Image IMG_DASH_DOT_DOT_H
 	{
-		ImageBitmap = Bitmap {File = "symphony/line9_h.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/line9_h.png" ;} ;
 	};
 	Image IMG_WAVE_H
 	{
-		ImageBitmap = Bitmap {File = "symphony/line10_h.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/line10_h.png" ;} ;
 	};
 
 	// image when selected
 	Image IMG_SINGLE_SEL
 	{
-		ImageBitmap = Bitmap {File = "symphony/selected-line1.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/selected-line1.png" ;} ;
 	};
 	Image IMG_DOUBLE_SEL
 	{
-		ImageBitmap = Bitmap {File = "symphony/selected-line2.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/selected-line2.png" ;} ;
 	};
 	Image IMG_BOLD2_SEL
 	{
-		ImageBitmap = Bitmap {File = "symphony/selected-line3.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/selected-line3.png" ;} ;
 	};
 	Image IMG_DOT_SEL
 	{
-		ImageBitmap = Bitmap {File = "symphony/selected-line4.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/selected-line4.png" ;} ;
 	};
 	Image IMG_DOT_BOLD_SEL
 	{
-		ImageBitmap = Bitmap {File = "symphony/selected-line5.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/selected-line5.png" ;} ;
 	};
 	Image IMG_DASH_SEL
 	{
-		ImageBitmap = Bitmap {File = "symphony/selected-line6.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/selected-line6.png" ;} ;
 	};
 	Image IMG_DASH_LONG_SEL
 	{
-		ImageBitmap = Bitmap {File = "symphony/selected-line7.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/selected-line7.png" ;} ;
 	};
 	Image IMG_DASH_DOT_SEL
 	{
-		ImageBitmap = Bitmap {File = "symphony/selected-line8.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/selected-line8.png" ;} ;
 	};
 	Image IMG_DASH_DOT_DOT_SEL
 	{
-		ImageBitmap = Bitmap {File = "symphony/selected-line9.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/selected-line9.png" ;} ;
 	};
 	Image IMG_WAVE_SEL
 	{
-		ImageBitmap = Bitmap {File = "symphony/selected-line10.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/selected-line10.png" ;} ;
 	};
 
 	String STR_WITHOUT
@@ -549,53 +547,53 @@ Control RID_POPUPPANEL_TEXTPAGE_SPACING
 
 	Image IMG_NORMAL
 	{
-		ImageBitmap = Bitmap {File = "symphony/spacing_normal.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/spacing_normal.png" ;} ;
 	};
 	Image IMG_VERY_TIGHT
 	{
-		ImageBitmap = Bitmap {File = "symphony/spacing_very_tight.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/spacing_very_tight.png" ;} ;
 	};
 	Image IMG_TIGHT
 	{
-		ImageBitmap = Bitmap {File = "symphony/spacing_tight.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/spacing_tight.png" ;} ;
 	};
 	Image IMG_LOOSE
 	{
-		ImageBitmap = Bitmap {File = "symphony/spacing_loose.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/spacing_loose.png" ;} ;
 	};
 	Image IMG_VERY_LOOSE
 	{
-		ImageBitmap = Bitmap {File = "symphony/spacing_very_loose.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/spacing_very_loose.png" ;} ;
 	};
 
 	Image IMG_NORMAL_S
 	{
-		ImageBitmap = Bitmap {File = "symphony/spacing_normal_s.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/spacing_normal_s.png" ;} ;
 	};
 	Image IMG_VERY_TIGHT_S
 	{
-		ImageBitmap = Bitmap {File = "symphony/spacing_very_tight_s.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/spacing_very_tight_s.png" ;} ;
 	};
 	Image IMG_TIGHT_S
 	{
-		ImageBitmap = Bitmap {File = "symphony/spacing_tight_s.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/spacing_tight_s.png" ;} ;
 	};
 	Image IMG_LOOSE_S
 	{
-		ImageBitmap = Bitmap {File = "symphony/spacing_loose_s.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/spacing_loose_s.png" ;} ;
 	};
 	Image IMG_VERY_LOOSE_S
 	{
-		ImageBitmap = Bitmap {File = "symphony/spacing_very_loose_s.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/spacing_very_loose_s.png" ;} ;
 	};
 
 	Image IMG_CUSTOM
 	{
-		ImageBitmap = Bitmap {File = "symphony/last_custom_common.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/last_custom_common.png" ;} ;
 	};
 	Image IMG_CUSTOM_GRAY
 	{
-		ImageBitmap = Bitmap {File = "symphony/last_custom_common_grey.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/last_custom_common_grey.png" ;} ;
 	};
 
 	String STR_VERY_TIGHT

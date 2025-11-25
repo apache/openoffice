@@ -330,14 +330,14 @@ void Theme::UpdateTheme (void)
 			maPropertyIdToNameMap[Image_TabBarMenu],
 			Any(
 				mbIsHighContrastMode
-					? A2S("private:graphicrepository/sfx2/res/symphony/open_more_hc.png")
-					: A2S("private:graphicrepository/sfx2/res/symphony/open_more.png")));
+					? A2S("private:graphicrepository/sfx2/res/sidebar/open_more_hc.png")
+					: A2S("private:graphicrepository/sfx2/res/sidebar/open_more.png")));
 		setPropertyValue(
 			maPropertyIdToNameMap[Image_PanelMenu],
 			Any(
 				mbIsHighContrastMode
-					? A2S("private:graphicrepository/sfx2/res/symphony/morebutton_h.png")
-					: A2S("private:graphicrepository/sfx2/res/symphony/morebutton.png")));
+					? A2S("private:graphicrepository/sfx2/res/sidebar/morebutton_h.png")
+					: A2S("private:graphicrepository/sfx2/res/sidebar/morebutton.png")));
 		setPropertyValue(
 			maPropertyIdToNameMap[Image_Closer],
 			Any(
