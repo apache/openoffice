@@ -81,61 +81,61 @@ Control RID_SIDEBAR_AREA_PANEL
 	};
 	Image IMG_AXIAL
 	{
-		ImageBitmap = Bitmap {File = "symphony/axial.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/axial.png" ;} ;
 	};
 	Image IMG_ELLI
 	{
-		ImageBitmap = Bitmap {File = "symphony/ellipsoid.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/ellipsoid.png" ;} ;
 	};
 	Image IMG_QUAD
 	{
-		ImageBitmap = Bitmap {File = "symphony/Quadratic.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/Quadratic.png" ;} ;
 	};
 	Image IMG_RADIAL
 	{
-		ImageBitmap = Bitmap {File = "symphony/radial.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/radial.png" ;} ;
 	};
 	Image IMG_SQUARE
 	{
-		ImageBitmap = Bitmap {File = "symphony/Square.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/Square.png" ;} ;
 	};
 	Image IMG_LINEAR
 	{
-		ImageBitmap = Bitmap {File = "symphony/linear.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/linear.png" ;} ;
 	};
 	Image IMG_COLOR
 	{
-		ImageBitmap = Bitmap {File = "symphony/fill_color.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/fill_color.png" ;} ;
 	};
 
 	// high contract
 	Image IMG_AXIAL_H
 	{
-		ImageBitmap = Bitmap {File = "symphony/axial_h.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/axial_h.png" ;} ;
 	};
 	Image IMG_ELLI_H
 	{
-		ImageBitmap = Bitmap {File = "symphony/ellipsoid_h.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/ellipsoid_h.png" ;} ;
 	};
 	Image IMG_QUAD_H
 	{
-		ImageBitmap = Bitmap {File = "symphony/Quadratic_h.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/Quadratic_h.png" ;} ;
 	};
 	Image IMG_RADIAL_H
 	{
-		ImageBitmap = Bitmap {File = "symphony/radial_h.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/radial_h.png" ;} ;
 	};
 	Image IMG_SQUARE_H
 	{
-		ImageBitmap = Bitmap {File = "symphony/Square_h.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/Square_h.png" ;} ;
 	};
 	Image IMG_LINEAR_H
 	{
-		ImageBitmap = Bitmap {File = "symphony/linear_h.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/linear_h.png" ;} ;
 	};
 	Image IMG_COLOR_H
 	{
-		ImageBitmap = Bitmap {File = "symphony/fill_color_h.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/fill_color_h.png" ;} ;
 	};
 
 	//=====================================================================================================================================
@@ -194,7 +194,7 @@ Control RID_SIDEBAR_AREA_PANEL
 				HelpID = HID_PPROPERTYPANEL_AREA_TBI_GRADIENT ;
 				ItemBitmap = Bitmap
 				{
-					File = "symphony/linear.png" ;
+					File = "sidebar/linear.png" ;
 				};
 				DropDown = TRUE ;
 				Text = "Gradient" ;
@@ -353,7 +353,7 @@ Control RID_POPUPPANEL_AREAPAGE_TRGR
 				Text = "Rotate Left" ;
 				ItemBitmap = Bitmap
 				{
-		//			File = "symphony/rotate_left.png" ;
+		//			File = "sidebar/rotate_left.png" ;
 				};
 			};
 		};
@@ -374,7 +374,7 @@ Control RID_POPUPPANEL_AREAPAGE_TRGR
 				Text = "Rotate Right" ;
 				ItemBitmap = Bitmap
 				{
-		//			File = "symphony/rotate_right.png" ;
+		//			File = "sidebar/rotate_right.png" ;
 				};
 			};
 		};
@@ -389,11 +389,11 @@ Control RID_POPUPPANEL_AREAPAGE_TRGR
 	};
 	Image IMG_ROT_LEFT
 	{
-		ImageBitmap = Bitmap {File = "symphony/rotate_left.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/rotate_left.png" ;} ;
 	};
 	Image IMG_ROT_RIGHT
 	{
-		ImageBitmap = Bitmap {File = "symphony/rotate_right.png" ;} ;
+		ImageBitmap = Bitmap {File = "sidebar/rotate_right.png" ;} ;
 	};
 };
 Control RID_POPUPPANEL_AERAPAGE_COLOR
