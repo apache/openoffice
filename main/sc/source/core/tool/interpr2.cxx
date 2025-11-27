@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sc.hxx"
 
@@ -62,7 +60,7 @@ using namespace formula;
 #define SCdEpsilon                1.0E-7
 
 //-----------------------------------------------------------------------------
-// Datum und Zeit
+// Date and Time
 //-----------------------------------------------------------------------------
 
 double ScInterpreter::GetDateSerial( sal_Int16 nYear, sal_Int16 nMonth, sal_Int16 nDay, bool bStrict )
@@ -102,7 +100,7 @@ double ScInterpreter::GetDateSerial( sal_Int16 nYear, sal_Int16 nMonth, sal_Int1
 }
 
 //-----------------------------------------------------------------------------
-// Funktionen
+// Functions
 //-----------------------------------------------------------------------------
 
 void ScInterpreter::ScGetActDate()
@@ -183,7 +181,7 @@ void ScInterpreter::ScGetDateValue()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScGetDateValue" );
     String aInputString = GetString();
-    sal_uInt32 nFIndex = 0;                 // damit default Land/Spr.
+    sal_uInt32 nFIndex = 0;                 // damit default Land/Sprache
     double fVal;
     if (pFormatter->IsNumberFormat(aInputString, nFIndex, fVal))
     {
@@ -336,7 +334,7 @@ void ScInterpreter::ScGetDiffDate360()
      * 30-Jan-96  31-Mar-96   61 instead of  60
      * 31-Jan-96  31-Mar-96   61 instead of  60
      *
-     * Still, there is a difference between OOoCalc and Excel:
+     * Still, there is a difference between Calc and Excel:
      * In Excel:
      * 02-Feb-99 31-Mar-00 results in  419
      * 31-Mar-00 02-Feb-99 results in -418
@@ -414,7 +412,7 @@ void ScInterpreter::ScGetTimeValue()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScGetTimeValue" );
     String aInputString = GetString();
-    sal_uInt32 nFIndex = 0;                 // damit default Land/Spr.
+    sal_uInt32 nFIndex = 0;                 // damit default Land/Sprache
     double fVal;
     if (pFormatter->IsNumberFormat(aInputString, nFIndex, fVal))
     {
@@ -722,7 +720,7 @@ void ScInterpreter::ScIRR()
     ScRange aRange;
     while (fEps > SCdEpsilon && nItCount < nIterationsMax)
     {                                       // Newton-Verfahren:
-        sp = sPos;                          // Stack zuruecksetzen
+        sp = sPos;                          // Stack zurücksetzen
         nCount = 0.0;
         fZaehler = 0.0;
         fNenner = 0.0;
@@ -1615,7 +1613,7 @@ void ScInterpreter::ScBackSolver()
             if ( ((pVCell && pVCell->GetCellType() == CELLTYPE_VALUE) || bTempCell)
                 && pFCell && pFCell->GetCellType() == CELLTYPE_FORMULA )
             {
-                ScRange aVRange( aValueAdr, aValueAdr );    // fuer SetDirty
+                ScRange aVRange( aValueAdr, aValueAdr );    // for SetDirty
                 double fSaveVal; // Original value to be restored later if necessary
                 ScPostIt* pNote = 0;
 
@@ -2068,13 +2066,13 @@ void ScInterpreter::ScStyle()
         long nTimeOut = 0;                          // Timeout
         if (nParamCount >= 2)
             nTimeOut = (long)(GetDouble()*1000.0);
-        String aStyle1 = GetString();               // Vorlage fuer sofort
+        String aStyle1 = GetString();               // Vorlage für sofort
 
         if (nTimeOut < 0)
             nTimeOut = 0;
 
         //
-        //  Request ausfuehren, um Vorlage anzuwenden
+        //  Request ausführen, um Vorlage anzuwenden
         //
 
         if ( !pDok->IsClipOrUndo() )
@@ -2146,13 +2144,13 @@ void ScInterpreter::ScDde()
             return;
         }
 
-            //  Nach dem Laden muss neu interpretiert werden (Verknuepfungen aufbauen)
+            //  Nach dem Laden muss neu interpretiert werden (Verknüpfungen aufbauen)
 
         if ( pMyFormulaCell->GetCode()->IsRecalcModeNormal() )
             pMyFormulaCell->GetCode()->SetRecalcModeOnLoad();
 
             //  solange der Link nicht ausgewertet ist, Idle abklemmen
-            //  (um zirkulaere Referenzen zu vermeiden)
+            //  (um zirkuläre Referenzen zu vermeiden)
 
         sal_Bool bOldDis = pDok->IsIdleDisabled();
         pDok->DisableIdle( sal_True );
@@ -2188,9 +2186,9 @@ void ScInterpreter::ScDde()
             pMyFormulaCell->StartListening( *pLink );
         }
 
-        //  Wenn aus dem Reschedule beim Ausfuehren des Links ein Fehler
-        //  (z.B. zirkulaere Referenz) entstanden ist, der vorher nicht da war,
-        //  das Fehler-Flag zuruecksetzen:
+        //  Wenn aus dem Reschedule beim Ausführen des Links ein Fehler
+        //  (z.B. zirkuläre Referenz) entstanden ist, der vorher nicht da war,
+        //  das Fehler-Flag zurücksetzen:
 
         if ( pMyFormulaCell->GetRawError() && !bWasError )
             pMyFormulaCell->SetErrCode(0);
@@ -2287,7 +2285,7 @@ void ScInterpreter::ScBase()
 #if OSL_DEBUG_LEVEL > 1
                     // #53943# =BASIS(1e308;36) => GPF mit
                     // nDig = (size_t) ::rtl::math::approxFloor( fVal - fMult );
-                    // trotz vorheriger Pruefung ob fVal >= fMult
+                    // trotz vorheriger Prüfung ob fVal >= fMult
                     double fDebug1 = fVal - fMult;
                     // fVal    := 7,5975311883090e+290
                     // fMult   := 7,5975311883090e+290
@@ -2298,7 +2296,7 @@ void ScInterpreter::ScBase()
                     double fDebug3 = ( fInt ? fVal / fInt : 0.0 );
                     // Nach dem strange fDebug1 und fVal < fMult  ist eigentlich
                     // fDebug2 == fBase, trotzdem wird das mit einem Vergleich
-                    // nicht erkannt, dann schlaegt bDirt zu und alles wird wieder gut..
+                    // nicht erkannt, dann schlägt bDirt zu und alles wird wieder gut..
 
                     // prevent compiler warnings
                     (void)fDebug1; (void)fDebug2; (void)fDebug3;
@@ -2672,7 +2670,8 @@ sal_Bool lclConvertMoney( const String& aSearchUnit, double& rfRate, int& rnDec 
         { "EEK", 15.6466,  2 },
         { "LVL", 0.702804, 2 },
         { "LTL", 3.45280,  2 },
-        { "HRK", 7.53450,  2 }
+        { "HRK", 7.53450,  2 },
+        { "BGN", 1.95583,  2 }
     };
 
     const size_t nConversionCount = sizeof( aConvertTable ) / sizeof( aConvertTable[0] );
@@ -3030,3 +3029,5 @@ void ScInterpreter::ScGetPivotData()
 failed :
     PushError( errNoRef );
 }
+
+/* vim: set noet sw=4 ts=4: */
