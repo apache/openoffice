@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <!--***********************************************************
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -19,7 +20,6 @@
  * under the License.
  *
  ***********************************************************-->
-
 
 <!DOCTYPE oor:component-data SYSTEM "../../../../component-update.dtd">
 <oor:component-data oor:name="Calc" oor:package="org.openoffice.Office" xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -242,6 +242,17 @@
 			</prop>
 			<prop oor:name="Factor">
 				<value>7.53450</value>
+			</prop>
+		</node>
+		<node oor:name="CR21" oor:op="replace">
+			<prop oor:name="FromUnit">
+				<value>EUR</value>
+			</prop>
+			<prop oor:name="ToUnit">
+				<value>BGN</value>
+			</prop>
+			<prop oor:name="Factor">
+				<value>1.95583</value>
 			</prop>
 		</node>
 	</node>
