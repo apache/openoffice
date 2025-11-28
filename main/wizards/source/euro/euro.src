@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #define STEP_ZERO 1000
 #define STEP_CONVERTER 1100
 #define STEP_AUTOPILOT 1200
@@ -432,10 +430,15 @@ Text [ en-US ] = "Croatian Kuna" ;
 
 String CURRENCIES + 20
 {
-Text [ en-US ] = "The currency set for the document is not a European currency!" ;
+Text [ en-US ] = "Bulgarian Lev" ;
 };
 
 String CURRENCIES + 21
+{
+Text [ en-US ] = "The currency set for the document is not a European currency!" ;
+};
+
+String CURRENCIES + 22
 {
 Text [ en-US ] = "The language set for your operating system is not a language of the European Monetary Union." ;
 };
