@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sd.hxx"
 
@@ -35,7 +33,6 @@
 #include <sfx2/viewsh.hxx>
 #endif
 
-
 #include "ViewShell.hxx"
 
 namespace sd {
@@ -43,9 +40,7 @@ namespace sd {
 #define MAX_ENTRYS	10
 
 /*************************************************************************
-|*
 |* Konstruktor
-|*
 \************************************************************************/
 
 ZoomList::ZoomList(ViewShell* pViewShell)
@@ -55,11 +50,8 @@ ZoomList::ZoomList(ViewShell* pViewShell)
 {
 }
 
-
 /*************************************************************************
-|*
 |* Destruktor
-|*
 \************************************************************************/
 
 ZoomList::~ZoomList()
@@ -70,16 +62,13 @@ ZoomList::~ZoomList()
 	for (sal_uLong nObject=0; nObject<Count(); nObject++)
 #endif
 	{
-		// Ggf. ZoomRects loeschen
+		// Ggf. ZoomRects löschen
 		delete ((Rectangle*) GetObject(nObject));
 	}
 }
 
-
 /*************************************************************************
-|*
 |* Neues ZoomRect aufnehmen
-|*
 \************************************************************************/
 
 void ZoomList::InsertZoomRect(const Rectangle& rRect)
@@ -109,9 +98,7 @@ void ZoomList::InsertZoomRect(const Rectangle& rRect)
 }
 
 /*************************************************************************
-|*
-|* Naechstes ZoomRect herausgeben
-|*
+|* Nächstes ZoomRect herausgeben
 \************************************************************************/
 
 Rectangle ZoomList::GetNextZoomRect()
@@ -133,9 +120,7 @@ Rectangle ZoomList::GetNextZoomRect()
 }
 
 /*************************************************************************
-|*
 |* Letztes ZoomRect herausgeben
-|*
 \************************************************************************/
 
 Rectangle ZoomList::GetPreviousZoomRect()
@@ -154,9 +139,7 @@ Rectangle ZoomList::GetPreviousZoomRect()
 }
 
 /*************************************************************************
-|*
-|* Gibt es ein naechstes ZoomRect?
-|*
+|* Gibt es ein nächstes ZoomRect?
 \************************************************************************/
 
 sal_Bool ZoomList::IsNextPossible() const
@@ -173,9 +156,7 @@ sal_Bool ZoomList::IsNextPossible() const
 }
 
 /*************************************************************************
-|*
 |* Gibt es ein vorheriges ZoomRect?
-|*
 \************************************************************************/
 
 sal_Bool ZoomList::IsPreviousPossible() const
@@ -191,3 +172,5 @@ sal_Bool ZoomList::IsPreviousPossible() const
 }
 
 } // end of namespace sd
+
+/* vim: set noet sw=4 ts=4: */

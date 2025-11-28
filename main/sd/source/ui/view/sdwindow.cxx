@@ -47,36 +47,33 @@
 
 namespace sd {
 
-#define SCROLL_LINE_FACT   0.05     // Faktor fuer Zeilenscrolling
-#define SCROLL_PAGE_FACT   0.5      // Faktor fuer Seitenscrolling
-#define SCROLL_SENSITIVE   20       // Sensitiver Bereich (Pixel)
-#define ZOOM_MULTIPLICATOR 10000    // Multiplikator um Rundungsfehler zu vermeiden
-#define MIN_ZOOM	       5        // Minimaler Zoomfaktor
-#define MAX_ZOOM	       3000	    // Maximaler Zoomfaktor
-
+#define SCROLL_LINE_FACT	0.05	// Faktor für Zeilenscrolling
+#define SCROLL_PAGE_FACT	0.5		// Faktor für Seitenscrolling
+#define SCROLL_SENSITIVE	20		// Sensitiver Bereich (Pixel)
+#define ZOOM_MULTIPLICATOR	10000	// Multiplikator um Rundungsfehler zu vermeiden
+#define MIN_ZOOM			5		// Minimaler Zoomfaktor
+#define MAX_ZOOM			3000	// Maximaler Zoomfaktor
 
 /*************************************************************************
-|*
 |* Konstruktor
-|*
 \************************************************************************/
 
 Window::Window(::Window* pParent)
-    : ::Window(pParent, WinBits(WB_CLIPCHILDREN | WB_DIALOGCONTROL)),
+	: ::Window(pParent, WinBits(WB_CLIPCHILDREN | WB_DIALOGCONTROL)),
 	  DropTargetHelper( this ),
-      mpShareWin(NULL),
-      maWinPos(0, 0),			// vorsichtshalber; die Werte sollten aber
-      maViewOrigin(0, 0),		// vom Besitzer des Fensters neu gesetzt
-      maViewSize(1000, 1000),	// werden
-      mnMinZoom(MIN_ZOOM),
-      mnMaxZoom(MAX_ZOOM),
+	  mpShareWin(NULL),
+	  maWinPos(0, 0),			// vorsichtshalber; die Werte sollten aber
+	  maViewOrigin(0, 0),		// vom Besitzer des Fensters neu gesetzt
+	  maViewSize(1000, 1000),	// werden
+	  mnMinZoom(MIN_ZOOM),
+	  mnMaxZoom(MAX_ZOOM),
 	  mbMinZoomAutoCalc(false),
-      mbCalcMinZoomByMinSide(true),
-      mbCenterAllowed(true),
-      mnTicks (0),
-      mbDraggedFrom(false),
-      mpViewShell(NULL),
-      mbUseDropScroll (true)
+	  mbCalcMinZoomByMinSide(true),
+	  mbCenterAllowed(true),
+	  mnTicks (0),
+	  mbDraggedFrom(false),
+	  mpViewShell(NULL),
+	  mbUseDropScroll (true)
 {
 	SetDialogControlFlags( WINDOW_DLGCTRL_RETURN | WINDOW_DLGCTRL_WANTFOCUS );
 
@@ -89,9 +86,9 @@ Window::Window(::Window* pParent)
 
 	// adjust contrast mode initially
 	bool bUseContrast = GetSettings().GetStyleSettings().GetHighContrastMode();
-    SetDrawMode( bUseContrast
-        ? ViewShell::OUTPUT_DRAWMODE_CONTRAST
-        : ViewShell::OUTPUT_DRAWMODE_COLOR );
+	SetDrawMode( bUseContrast
+		? ViewShell::OUTPUT_DRAWMODE_CONTRAST
+		: ViewShell::OUTPUT_DRAWMODE_COLOR );
 
 	// Hilfe-ID setzen
 	// SetHelpId(HID_SD_WIN_DOCUMENT);
@@ -102,52 +99,47 @@ Window::Window(::Window* pParent)
 }
 
 /*************************************************************************
-|*
 |* Destruktor
-|*
 \************************************************************************/
 
 Window::~Window (void)
 {
-    if (mpViewShell != NULL)
-    {
-        WindowUpdater* pWindowUpdater = mpViewShell->GetWindowUpdater();
-        if (pWindowUpdater != NULL)
-            pWindowUpdater->UnregisterWindow (this);
-    }
+	if (mpViewShell != NULL)
+	{
+		WindowUpdater* pWindowUpdater = mpViewShell->GetWindowUpdater();
+		if (pWindowUpdater != NULL)
+			pWindowUpdater->UnregisterWindow (this);
+	}
 }
-
-
-
 
 void Window::SetViewShell (ViewShell* pViewSh)
 {
-    WindowUpdater* pWindowUpdater = NULL;
-    // Unregister at device updater of old view shell.
-    if (mpViewShell != NULL)
-    {
-        pWindowUpdater = mpViewShell->GetWindowUpdater();
-        if (pWindowUpdater != NULL)
-            pWindowUpdater->UnregisterWindow (this);
-    }
+	WindowUpdater* pWindowUpdater = NULL;
+	// Unregister at device updater of old view shell.
+	if (mpViewShell != NULL)
+	{
+		pWindowUpdater = mpViewShell->GetWindowUpdater();
+		if (pWindowUpdater != NULL)
+			pWindowUpdater->UnregisterWindow (this);
+	}
 
-    mpViewShell = pViewSh;
+	mpViewShell = pViewSh;
 
-    // Register at device updater of new view shell
-    if (mpViewShell != NULL)
-    {
-        pWindowUpdater = mpViewShell->GetWindowUpdater();
-        if (pWindowUpdater != NULL)
-            pWindowUpdater->RegisterWindow (this);
-    }
+	// Register at device updater of new view shell
+	if (mpViewShell != NULL)
+	{
+		pWindowUpdater = mpViewShell->GetWindowUpdater();
+		if (pWindowUpdater != NULL)
+			pWindowUpdater->RegisterWindow (this);
+	}
 }
 
 void Window::CalcMinZoom()
 {
-    // Are we entitled to change the minimal zoom factor?
+	// Are we entitled to change the minimal zoom factor?
 	if ( mbMinZoomAutoCalc )
 	{
-        // Get current zoom factor.
+		// Get current zoom factor.
 		long nZoom = GetZoom();
 
 		if ( mpShareWin )
@@ -157,69 +149,54 @@ void Window::CalcMinZoom()
 		}
 		else
 		{
-            // Get the rectangle of the output area in logical coordinates
-            // and calculate the scaling factors that would lead to the view
-            // area (also called application area) to completely fill the
-            // window.
+			// Get the rectangle of the output area in logical coordinates
+			// and calculate the scaling factors that would lead to the view
+			// area (also called application area) to completely fill the
+			// window.
 			Size aWinSize = PixelToLogic(GetOutputSizePixel());
 			sal_uLong nX = (sal_uLong) ((double) aWinSize.Width()
-                * (double) ZOOM_MULTIPLICATOR / (double) maViewSize.Width());
+				* (double) ZOOM_MULTIPLICATOR / (double) maViewSize.Width());
 			sal_uLong nY = (sal_uLong) ((double) aWinSize.Height()
-                * (double) ZOOM_MULTIPLICATOR / (double) maViewSize.Height());
+				* (double) ZOOM_MULTIPLICATOR / (double) maViewSize.Height());
 
-            // Decide whether to take the larger or the smaller factor.
+			// Decide whether to take the larger or the smaller factor.
 			sal_uLong nFact;
 			if (mbCalcMinZoomByMinSide)
-                nFact = Min(nX, nY);
+				nFact = Min(nX, nY);
 			else
-                nFact = Max(nX, nY);
+				nFact = Max(nX, nY);
 
-            // The factor is transformed according to the current zoom factor.
+			// The factor is transformed according to the current zoom factor.
 			nFact = nFact * nZoom / ZOOM_MULTIPLICATOR;
 			mnMinZoom = Max((sal_uInt16) MIN_ZOOM, (sal_uInt16) nFact);
 		}
-        // If the current zoom factor is smaller than the calculated minimal
-        // zoom factor then set the new minimal factor as the current zoom
-        // factor.
+		// If the current zoom factor is smaller than the calculated minimal
+		// zoom factor then set the new minimal factor as the current zoom
+		// factor.
 		if ( nZoom < (long) mnMinZoom )
 			SetZoomFactor(mnMinZoom);
 	}
 }
 
-
-
-
 void Window::SetMinZoom (long int nMin)
 {
-    mnMinZoom = (sal_uInt16) nMin;
+	mnMinZoom = (sal_uInt16) nMin;
 }
-
-
-
 
 long Window::GetMinZoom (void) const
 {
-    return mnMinZoom;
+	return mnMinZoom;
 }
-
-
-
 
 void Window::SetMaxZoom (long int nMax)
 {
-    mnMaxZoom = (sal_uInt16) nMax;
+	mnMaxZoom = (sal_uInt16) nMax;
 }
-
-
-
 
 long Window::GetMaxZoom (void) const
 {
-    return mnMaxZoom;
+	return mnMaxZoom;
 }
-
-
-
 
 long Window::GetZoom (void) const
 {
@@ -234,13 +211,8 @@ long Window::GetZoom (void) const
 	}
 }
 
-
-
-
 /*************************************************************************
-|*
 |* Resize event
-|*
 \************************************************************************/
 
 void Window::Resize()
@@ -248,14 +220,12 @@ void Window::Resize()
 	::Window::Resize();
 	CalcMinZoom();
 
-    if( mpViewShell && mpViewShell->GetViewFrame() )
-        mpViewShell->GetViewFrame()->GetBindings().Invalidate( SID_ATTR_ZOOMSLIDER );
+	if( mpViewShell && mpViewShell->GetViewFrame() )
+		mpViewShell->GetViewFrame()->GetBindings().Invalidate( SID_ATTR_ZOOMSLIDER );
 }
 
 /*************************************************************************
-|*
 |* PrePaint event
-|*
 \************************************************************************/
 
 void Window::PrePaint()
@@ -265,9 +235,7 @@ void Window::PrePaint()
 }
 
 /*************************************************************************
-|*
 |* Paint event
-|*
 \************************************************************************/
 
 void Window::Paint(const Rectangle& rRect)
@@ -277,9 +245,7 @@ void Window::Paint(const Rectangle& rRect)
 }
 
 /*************************************************************************
-|*
 |* Keyboard event
-|*
 \************************************************************************/
 
 void Window::KeyInput(const KeyEvent& rKEvt)
@@ -288,7 +254,7 @@ void Window::KeyInput(const KeyEvent& rKEvt)
 	{
 		if (mpViewShell && rKEvt.GetKeyCode().GetCode() == KEY_ESCAPE)
 		{
-            mpViewShell->GetViewShell()->Escape();
+			mpViewShell->GetViewShell()->Escape();
 		}
 		else
 		{
@@ -298,9 +264,7 @@ void Window::KeyInput(const KeyEvent& rKEvt)
 }
 
 /*************************************************************************
-|*
 |* MouseButtonDown event
-|*
 \************************************************************************/
 
 void Window::MouseButtonDown(const MouseEvent& rMEvt)
@@ -310,9 +274,7 @@ void Window::MouseButtonDown(const MouseEvent& rMEvt)
 }
 
 /*************************************************************************
-|*
 |* MouseMove event
-|*
 \************************************************************************/
 
 void Window::MouseMove(const MouseEvent& rMEvt)
@@ -322,9 +284,7 @@ void Window::MouseMove(const MouseEvent& rMEvt)
 }
 
 /*************************************************************************
-|*
 |* MouseButtonUp event
-|*
 \************************************************************************/
 
 void Window::MouseButtonUp(const MouseEvent& rMEvt)
@@ -336,9 +296,7 @@ void Window::MouseButtonUp(const MouseEvent& rMEvt)
 }
 
 /*************************************************************************
-|*
 |* Command event
-|*
 \************************************************************************/
 
 void Window::Command(const CommandEvent& rCEvt)
@@ -349,22 +307,19 @@ void Window::Command(const CommandEvent& rCEvt)
 
 long Window::Notify( NotifyEvent& rNEvt )
 {
-    long nResult = sal_False;
-    if ( mpViewShell )
-    {
-        nResult = mpViewShell->Notify(rNEvt, this);
-    }
-    if( !nResult )
-        nResult = ::Window::Notify( rNEvt );
+	long nResult = sal_False;
+	if ( mpViewShell )
+	{
+		nResult = mpViewShell->Notify(rNEvt, this);
+	}
+	if( !nResult )
+		nResult = ::Window::Notify( rNEvt );
 
-    return nResult;
+	return nResult;
 }
 
-
 /*************************************************************************
-|*
 |* RequestHelp event
-|*
 \************************************************************************/
 
 void Window::RequestHelp(const HelpEvent& rEvt)
@@ -378,38 +333,24 @@ void Window::RequestHelp(const HelpEvent& rEvt)
 		::Window::RequestHelp( rEvt );
 }
 
-
-
-
 Point Window::GetWinViewPos (void) const
 {
-    return maWinPos;
+	return maWinPos;
 }
-
-
-
 
 Point Window::GetViewOrigin (void) const
 {
-    return maViewOrigin;
+	return maViewOrigin;
 }
-
-
-
 
 Size Window::GetViewSize (void) const
 {
-    return maViewSize;
+	return maViewSize;
 }
 
-
-
-
 /*************************************************************************
-|*
 |* Position der linken oberen Ecke des im Fenster sichtbaren Bereichs
 |* setzen
-|*
 \************************************************************************/
 
 void Window::SetWinViewPos(const Point& rPnt)
@@ -418,9 +359,7 @@ void Window::SetWinViewPos(const Point& rPnt)
 }
 
 /*************************************************************************
-|*
-|* Ursprung der Darstellung in Bezug zur gesamten Arbeitsflaeche setzen
-|*
+|* Ursprung der Darstellung in Bezug zur gesamten Arbeitsfläche setzen
 \************************************************************************/
 
 void Window::SetViewOrigin(const Point& rPnt)
@@ -429,10 +368,8 @@ void Window::SetViewOrigin(const Point& rPnt)
 }
 
 /*************************************************************************
-|*
-|* Groesse der gesamten Arbeitsflaeche, die mit dem Fenster betrachtet
+|* Größe der gesamten Arbeitsfläche, die mit dem Fenster betrachtet
 |* werden kann, setzen
-|*
 \************************************************************************/
 
 void Window::SetViewSize(const Size& rSize)
@@ -441,56 +378,50 @@ void Window::SetViewSize(const Size& rSize)
 	CalcMinZoom();
 }
 
-
-
-
 void Window::SetCenterAllowed (bool bIsAllowed)
 {
-    mbCenterAllowed = bIsAllowed;
+	mbCenterAllowed = bIsAllowed;
 }
-
-
-
 
 long Window::SetZoomFactor(long nZoom)
 {
-    // Clip the zoom factor to the valid range marked by nMinZoom as
-    // calculated by CalcMinZoom() and the constant MAX_ZOOM.
+	// Clip the zoom factor to the valid range marked by nMinZoom as
+	// calculated by CalcMinZoom() and the constant MAX_ZOOM.
 	if ( nZoom > MAX_ZOOM )
-        nZoom = MAX_ZOOM;
+		nZoom = MAX_ZOOM;
 	if ( nZoom < (long) mnMinZoom )
-        nZoom = mnMinZoom;
+		nZoom = mnMinZoom;
 
-    // Set the zoom factor at the window's map mode.
+	// Set the zoom factor at the window's map mode.
 	MapMode aMap(GetMapMode());
 	aMap.SetScaleX(Fraction(nZoom, 100));
 	aMap.SetScaleY(Fraction(nZoom, 100));
 	SetMapMode(aMap);
 
-    // Update the map mode's origin (to what effect?).
+	// Update the map mode's origin (to what effect?).
 	UpdateMapOrigin();
 
-    // Update the view's snapping to the new zoom factor.
+	// Update the view's snapping to the new zoom factor.
 	if ( mpViewShell && mpViewShell->ISA(DrawViewShell) )
 		((DrawViewShell*) mpViewShell)->GetView()->
 										RecalcLogicSnapMagnetic(*this);
 
-    // Return the zoom factor just in case it has been changed above to lie
-    // inside the valid range.
+	// Return the zoom factor just in case it has been changed above to lie
+	// inside the valid range.
 	return nZoom;
 }
 
 void Window::SetZoomIntegral(long nZoom)
 {
-    // Clip the zoom factor to the valid range marked by nMinZoom as
-    // previously calculated by <member>CalcMinZoom()</member> and the
-    // MAX_ZOOM constant.
+	// Clip the zoom factor to the valid range marked by nMinZoom as
+	// previously calculated by <member>CalcMinZoom()</member> and the
+	// MAX_ZOOM constant.
 	if ( nZoom > MAX_ZOOM )
-        nZoom = MAX_ZOOM;
+		nZoom = MAX_ZOOM;
 	if ( nZoom < (long) mnMinZoom )
-        nZoom = mnMinZoom;
+		nZoom = mnMinZoom;
 
-    // Calculate the window's new origin.
+	// Calculate the window's new origin.
 	Size aSize = PixelToLogic(GetOutputSizePixel());
 	long nW = aSize.Width()  * GetZoom() / nZoom;
 	long nH = aSize.Height() * GetZoom() / nZoom;
@@ -499,8 +430,8 @@ void Window::SetZoomIntegral(long nZoom)
 	if ( maWinPos.X() < 0 ) maWinPos.X() = 0;
 	if ( maWinPos.Y() < 0 ) maWinPos.Y() = 0;
 
-    // Finally update this window's map mode to the given zoom factor that
-    // has been clipped to the valid range.
+	// Finally update this window's map mode to the given zoom factor that
+	// has been clipped to the valid range.
 	SetZoomFactor(nZoom);
 }
 
@@ -508,16 +439,16 @@ long Window::GetZoomForRect( const Rectangle& rZoomRect )
 {
 	long nRetZoom = 100;
 
-    if( (rZoomRect.GetWidth() != 0) && (rZoomRect.GetHeight() != 0))
-    {
-        // Calculate the scale factors which will lead to the given
-        // rectangle being fully visible (when translated accordingly) as
-        // large as possible in the output area independently in both
-        // coordinate directions .
+	if( (rZoomRect.GetWidth() != 0) && (rZoomRect.GetHeight() != 0))
+	{
+		// Calculate the scale factors which will lead to the given
+		// rectangle being fully visible (when translated accordingly) as
+		// large as possible in the output area independently in both
+		// coordinate directions .
 		sal_uLong nX(0L);
 		sal_uLong nY(0L);
 
-        const Size aWinSize( PixelToLogic(GetOutputSizePixel()) );
+		const Size aWinSize( PixelToLogic(GetOutputSizePixel()) );
 		if(rZoomRect.GetHeight())
 		{
 			nX = (sal_uLong) ((double) aWinSize.Height()
@@ -530,38 +461,38 @@ long Window::GetZoomForRect( const Rectangle& rZoomRect )
 				* (double) ZOOM_MULTIPLICATOR / (double) rZoomRect.GetWidth());
 		}
 
-        // Use the smaller one of both so that the zoom rectangle will be
-        // fully visible with respect to both coordinate directions.
+		// Use the smaller one of both so that the zoom rectangle will be
+		// fully visible with respect to both coordinate directions.
 		sal_uLong nFact = Min(nX, nY);
 
-        // Transform the current zoom factor so that it leads to the desired
-        // scaling.
+		// Transform the current zoom factor so that it leads to the desired
+		// scaling.
 		nRetZoom = nFact * GetZoom() / ZOOM_MULTIPLICATOR;
 
-        // Calculate the new origin.
+		// Calculate the new origin.
 		if ( nFact == 0 )
 		{
-            // Don't change anything if the scale factor is degenrate.
+			// Don't change anything if the scale factor is degenrate.
 			nRetZoom = GetZoom();
 		}
 		else
 		{
-            // Clip the zoom factor to the valid range marked by nMinZoom as
-            // previously calculated by <member>CalcMinZoom()</member> and the
-            // MAX_ZOOM constant.
-	        if ( nRetZoom > MAX_ZOOM )
-                nRetZoom = MAX_ZOOM;
-	        if ( nRetZoom < (long) mnMinZoom )
-                nRetZoom = mnMinZoom;
-       }
-    }
+			// Clip the zoom factor to the valid range marked by nMinZoom as
+			// previously calculated by <member>CalcMinZoom()</member> and the
+			// MAX_ZOOM constant.
+			if ( nRetZoom > MAX_ZOOM )
+				nRetZoom = MAX_ZOOM;
+			if ( nRetZoom < (long) mnMinZoom )
+				nRetZoom = mnMinZoom;
+		}
+	}
 
-    return nRetZoom;
+	return nRetZoom;
 }
 
 /** Recalculate the zoom factor and translation so that the given rectangle
-    is displayed centered and as large as possible while still being fully
-    visible in the window.
+	is displayed centered and as large as possible while still being fully
+	visible in the window.
 */
 long Window::SetZoomRect (const Rectangle& rZoomRect)
 {
@@ -569,25 +500,25 @@ long Window::SetZoomRect (const Rectangle& rZoomRect)
 
 	if (rZoomRect.GetWidth() == 0 || rZoomRect.GetHeight() == 0)
 	{
-        // The given rectangle is degenerate.  Use the default zoom factor
-        // (above) of 100%.
+		// The given rectangle is degenerate. Use the default zoom factor
+		// (above) of 100%.
 		SetZoomIntegral(nNewZoom);
 	}
 	else
 	{
 		Point aPos = rZoomRect.TopLeft();
-        // Transform the output area from pixel coordinates into logical
-        // coordinates.
+		// Transform the output area from pixel coordinates into logical
+		// coordinates.
 		Size aWinSize = PixelToLogic(GetOutputSizePixel());
-        // Paranoia!  The degenerate case of zero width or height has been
-        // taken care of above.
+		// Paranoia! The degenerate case of zero width or height has been
+		// taken care of above.
 		DBG_ASSERT(rZoomRect.GetWidth(), "ZoomRect-Breite = 0!");
 		DBG_ASSERT(rZoomRect.GetHeight(), "ZoomRect-Hoehe = 0!");
 
-        // Calculate the scale factors which will lead to the given
-        // rectangle being fully visible (when translated accordingly) as
-        // large as possible in the output area independently in both
-        // coordinate directions .
+		// Calculate the scale factors which will lead to the given
+		// rectangle being fully visible (when translated accordingly) as
+		// large as possible in the output area independently in both
+		// coordinate directions .
 		sal_uLong nX(0L);
 		sal_uLong nY(0L);
 
@@ -603,24 +534,24 @@ long Window::SetZoomRect (const Rectangle& rZoomRect)
 				* (double) ZOOM_MULTIPLICATOR / (double) rZoomRect.GetWidth());
 		}
 
-        // Use the smaller one of both so that the zoom rectangle will be
-        // fully visible with respect to both coordinate directions.
+		// Use the smaller one of both so that the zoom rectangle will be
+		// fully visible with respect to both coordinate directions.
 		sal_uLong nFact = Min(nX, nY);
 
-        // Transform the current zoom factor so that it leads to the desired
-        // scaling.
+		// Transform the current zoom factor so that it leads to the desired
+		// scaling.
 		long nZoom = nFact * GetZoom() / ZOOM_MULTIPLICATOR;
 
-        // Calculate the new origin.
+		// Calculate the new origin.
 		if ( nFact == 0 )
 		{
-            // Don't change anything if the scale factor is degenrate.
+			// Don't change anything if the scale factor is degenrate.
 			nNewZoom = GetZoom();
 		}
 		else
 		{
-            // Calculate the new window position that centers the given
-            // rectangle on the screen.
+			// Calculate the new window position that centers the given
+			// rectangle on the screen.
 			if ( nZoom > MAX_ZOOM )
 				nFact = nFact * MAX_ZOOM / nZoom;
 
@@ -634,7 +565,7 @@ long Window::SetZoomRect (const Rectangle& rZoomRect)
 			if ( maWinPos.X() < 0 )	maWinPos.X() = 0;
 			if ( maWinPos.Y() < 0 )	maWinPos.Y() = 0;
 
-            // Adapt the window's map mode to the new zoom factor.
+			// Adapt the window's map mode to the new zoom factor.
 			nNewZoom = SetZoomFactor(nZoom);
 		}
 	}
@@ -642,23 +573,15 @@ long Window::SetZoomRect (const Rectangle& rZoomRect)
 	return(nNewZoom);
 }
 
-
-
-
 void Window::SetMinZoomAutoCalc (bool bAuto)
 {
-    mbMinZoomAutoCalc = bAuto;
+	mbMinZoomAutoCalc = bAuto;
 }
 
-
-
-
 /*************************************************************************
-|*
 |* Neuen MapMode-Origin berechnen und setzen; wenn aWinPos.X()/Y()
 |* gleich -1 ist, wird die entsprechende Position zentriert
-|* (z.B. fuer Initialisierung)
-|*
+|* (z.B. für Initialisierung)
 \************************************************************************/
 
 void Window::UpdateMapOrigin(sal_Bool bInvalidate)
@@ -680,7 +603,7 @@ void Window::UpdateMapOrigin(sal_Bool bInvalidate)
 		}
 		if ( aWinSize.Width() > maViewSize.Width() || maWinPos.X() < 0 )
 		{
-			maWinPos.X() = maViewSize.Width()  / 2 - aWinSize.Width()  / 2;
+			maWinPos.X() = maViewSize.Width() / 2 - aWinSize.Width() / 2;
 			bChanged = sal_True;
 		}
 		if ( aWinSize.Height() > maViewSize.Height() || maWinPos.Y() < 0 )
@@ -688,70 +611,62 @@ void Window::UpdateMapOrigin(sal_Bool bInvalidate)
 			maWinPos.Y() = maViewSize.Height() / 2 - aWinSize.Height() / 2;
 			bChanged = sal_True;
 		}
-    }
+	}
 
-    UpdateMapMode ();
+	UpdateMapMode ();
 
-    if (bChanged && bInvalidate)
-        Invalidate();
+	if (bChanged && bInvalidate)
+		Invalidate();
 }
-
-
-
 
 void Window::UpdateMapMode (void)
 {
 	Size aWinSize = PixelToLogic(GetOutputSizePixel());
-    maWinPos -= maViewOrigin;
-    Size aPix(maWinPos.X(), maWinPos.Y());
-    aPix = LogicToPixel(aPix);
-    // Groesse muss vielfaches von BRUSH_SIZE sein, damit Muster
-    // richtig dargestellt werden
-    // #i2237#
-    // removed old stuff here which still forced zoom to be
-    // %BRUSH_SIZE which is outdated now
+	maWinPos -= maViewOrigin;
+	Size aPix(maWinPos.X(), maWinPos.Y());
+	aPix = LogicToPixel(aPix);
+	// Größe muss vielfaches von BRUSH_SIZE sein, damit Muster
+	// richtig dargestellt werden
+	// #i2237#
+	// removed old stuff here which still forced zoom to be
+	// %BRUSH_SIZE which is outdated now
 
-    if (mpViewShell && mpViewShell->ISA(DrawViewShell))
-    {
-        Size aViewSizePixel = LogicToPixel(maViewSize);
-        Size aWinSizePixel = LogicToPixel(aWinSize);
+	if (mpViewShell && mpViewShell->ISA(DrawViewShell))
+	{
+		Size aViewSizePixel = LogicToPixel(maViewSize);
+		Size aWinSizePixel = LogicToPixel(aWinSize);
 
-        // Seite soll nicht am Fensterrand "kleben"
-        if (aPix.Width() == 0)
-        {
-            // #i2237#
-            // Since BRUSH_SIZE alignment is outdated now, i use the
-            // former constant here directly
-            aPix.Width() -= 8;
-        }
-        if (aPix.Height() == 0)
-        {
-            // #i2237#
-            // Since BRUSH_SIZE alignment is outdated now, i use the
-            // former constant here directly
-            aPix.Height() -= 8;
-        }
-    }
+		// Seite soll nicht am Fensterrand "kleben"
+		if (aPix.Width() == 0)
+		{
+			// #i2237#
+			// Since BRUSH_SIZE alignment is outdated now, i use the
+			// former constant here directly
+			aPix.Width() -= 8;
+		}
+		if (aPix.Height() == 0)
+		{
+			// #i2237#
+			// Since BRUSH_SIZE alignment is outdated now, i use the
+			// former constant here directly
+			aPix.Height() -= 8;
+		}
+	}
 
-    aPix = PixelToLogic(aPix);
-    maWinPos.X() = aPix.Width();
-    maWinPos.Y() = aPix.Height();
+	aPix = PixelToLogic(aPix);
+	maWinPos.X() = aPix.Width();
+	maWinPos.Y() = aPix.Height();
 	Point aNewOrigin (-maWinPos.X(), -maWinPos.Y());
-    maWinPos += maViewOrigin;
+	maWinPos += maViewOrigin;
 
 	MapMode aMap(GetMapMode());
-    aMap.SetOrigin(aNewOrigin);
-    SetMapMode(aMap);
+	aMap.SetOrigin(aNewOrigin);
+	SetMapMode(aMap);
 }
 
-
-
-
 /*************************************************************************
-|*
 |* X-Position des sichtbaren Bereichs als Bruchteil (< 1)
-|* der gesamten Arbeitsbereichbreite zuruegeben
-|*
+|* der gesamten Arbeitsbereichbreite zurückgeben
 \************************************************************************/
 
 double Window::GetVisibleX()
@@ -760,10 +675,8 @@ double Window::GetVisibleX()
 }
 
 /*************************************************************************
-|*
 |* Y-Position des sichtbaren Bereichs als Bruchteil (< 1)
-|* der gesamten Arbeitsbereichhoehe zuruegeben
-|*
+|* der gesamten Arbeitsbereichhöhe zurückgeben
 \************************************************************************/
 
 double Window::GetVisibleY()
@@ -772,11 +685,9 @@ double Window::GetVisibleY()
 }
 
 /*************************************************************************
-|*
 |* X- und Y-Position des sichtbaren Bereichs als Bruchteile (< 1)
-|* der gesamten Arbeitsbereichgroesse setzen
+|* der gesamten Arbeitsbereichgröße setzen
 |* negative Werte werden ignoriert
-|*
 \************************************************************************/
 
 void Window::SetVisibleXY(double fX, double fY)
@@ -789,17 +700,15 @@ void Window::SetVisibleXY(double fX, double fY)
 	if ( fY >= 0 )
 		maWinPos.Y() = (long) (fY * maViewSize.Height());
 	UpdateMapOrigin(sal_False);
-    //	Size sz(nOldX - aWinPos.X(), nOldY - aWinPos.Y());
-    //	sz = LogicToPixel(sz);
+	//Size sz(nOldX - aWinPos.X(), nOldY - aWinPos.Y());
+	//sz = LogicToPixel(sz);
 	Scroll(nOldX - maWinPos.X(), nOldY - maWinPos.Y(), SCROLL_CHILDREN);
 	Update();
 }
 
 /*************************************************************************
-|*
-|* Breite des sichtbaren Bereichs im Verhaeltnis zur
-|* gesamten Arbeitsbereichbreite zuruegeben
-|*
+|* Breite des sichtbaren Bereichs im Verhältnis zur
+|* gesamten Arbeitsbereichbreite zurückgeben
 \************************************************************************/
 
 double Window::GetVisibleWidth()
@@ -811,10 +720,8 @@ double Window::GetVisibleWidth()
 }
 
 /*************************************************************************
-|*
-|* Hoehe des sichtbaren Bereichs im Verhaeltnis zur
-|* gesamten Arbeitsbereichhoehe zuruegeben
-|*
+|* Höhe des sichtbaren Bereichs im Verhältnis zur
+|* gesamten Arbeitsbereichhöhe zurückgeben
 \************************************************************************/
 
 double Window::GetVisibleHeight()
@@ -826,10 +733,8 @@ double Window::GetVisibleHeight()
 }
 
 /*************************************************************************
-|*
-|* Breite einer Scrollspalte im Verhaeltnis zur gesamten
-|* Arbeitsbereichbreite zuruegeben
-|*
+|* Breite einer Scrollspalte im Verhältnis zur gesamten
+|* Arbeitsbereichbreite zurückgeben
 \************************************************************************/
 
 double Window::GetScrlLineWidth()
@@ -838,10 +743,8 @@ double Window::GetScrlLineWidth()
 }
 
 /*************************************************************************
-|*
-|* Breite einer Scrollspalte im Verhaeltnis zur gesamten
-|* Arbeitsbereichhoehe zuruegeben
-|*
+|* Breite einer Scrollspalte im Verhältnis zur gesamten
+|* Arbeitsbereichhöhe zurückgeben
 \************************************************************************/
 
 double Window::GetScrlLineHeight()
@@ -850,10 +753,8 @@ double Window::GetScrlLineHeight()
 }
 
 /*************************************************************************
-|*
-|* Breite einer Scrollpage im Verhaeltnis zur gesamten
-|* Arbeitsbereichbreite zuruegeben
-|*
+|* Breite einer Scrollpage im Verhältnis zur gesamten
+|* Arbeitsbereichbreite zurückgeben
 \************************************************************************/
 
 double Window::GetScrlPageWidth()
@@ -862,10 +763,8 @@ double Window::GetScrlPageWidth()
 }
 
 /*************************************************************************
-|*
-|* Breite einer Scrollpage im Verhaeltnis zur gesamten
-|* Arbeitsbereichhoehe zuruegeben
-|*
+|* Breite einer Scrollpage im Verhältnis zur gesamten
+|* Arbeitsbereichhöhe zurückgeben
 \************************************************************************/
 
 double Window::GetScrlPageHeight()
@@ -874,34 +773,27 @@ double Window::GetScrlPageHeight()
 }
 
 /*************************************************************************
-|*
 |* Fenster deaktivieren
-|*
 \************************************************************************/
 
 void Window::LoseFocus()
 {
 	mnTicks = 0;
-    ::Window::LoseFocus ();
+	::Window::LoseFocus ();
 }
 
 /*************************************************************************
-|*
 |* Fenster aktivieren
-|*
 \************************************************************************/
 
 void Window::GrabFocus()
 {
 	mnTicks		 = 0;
-    ::Window::GrabFocus ();
+	::Window::GrabFocus ();
 }
 
-
 /*************************************************************************
-|*
 |* DataChanged
-|*
 \************************************************************************/
 
 void Window::DataChanged( const DataChangedEvent& rDCEvt )
@@ -910,7 +802,7 @@ void Window::DataChanged( const DataChangedEvent& rDCEvt )
 
 	// PRINTER bei allen Dokumenten weglassen, die keinen Printer benutzen.
 	// FONTS und FONTSUBSTITUTION weglassen, wenn keine Textausgaben
-	// vorhanden sind, bzw. wenn das Dokument keinen Text zulaesst.
+	// vorhanden sind, bzw. wenn das Dokument keinen Text zulässt.
 
 	if ( (rDCEvt.GetType() == DATACHANGED_PRINTER) ||
 		 (rDCEvt.GetType() == DATACHANGED_DISPLAY) ||
@@ -922,15 +814,15 @@ void Window::DataChanged( const DataChangedEvent& rDCEvt )
 		if ( (rDCEvt.GetType() == DATACHANGED_SETTINGS) &&
 			 (rDCEvt.GetFlags() & SETTINGS_STYLE) )
 		{
-            // When the screen zoom factor has changed then reset the zoom
-            // factor of the frame to always display the whole page.
-            const AllSettings* pOldSettings = rDCEvt.GetOldSettings ();
-            const AllSettings& rNewSettings = GetSettings ();
-            if (pOldSettings)
-                if (pOldSettings->GetStyleSettings().GetScreenZoom()
-                    != rNewSettings.GetStyleSettings().GetScreenZoom())
-                    mpViewShell->GetViewFrame()->GetDispatcher()->
-                        Execute(SID_SIZE_PAGE, SFX_CALLMODE_ASYNCHRON | SFX_CALLMODE_RECORD);
+			// When the screen zoom factor has changed then reset the zoom
+			// factor of the frame to always display the whole page.
+			const AllSettings* pOldSettings = rDCEvt.GetOldSettings ();
+			const AllSettings& rNewSettings = GetSettings ();
+			if (pOldSettings)
+				if (pOldSettings->GetStyleSettings().GetScreenZoom()
+					!= rNewSettings.GetStyleSettings().GetScreenZoom())
+					mpViewShell->GetViewFrame()->GetDispatcher()->
+						Execute(SID_SIZE_PAGE, SFX_CALLMODE_ASYNCHRON | SFX_CALLMODE_RECORD);
 
 			// ScrollBars neu anordnen bzw. Resize ausloesen, da sich
 			// ScrollBar-Groesse geaendert haben kann. Dazu muss dann im
@@ -942,12 +834,12 @@ void Window::DataChanged( const DataChangedEvent& rDCEvt )
 			// den Settings uebernommen werden. Evtl. weitere Daten neu
 			// berechnen, da sich auch die Aufloesung hierdurch geaendert
 			// haben kann.
-            if( mpViewShell )
-            {
-				const StyleSettings&    rStyleSettings = GetSettings().GetStyleSettings();
-				SvtAccessibilityOptions aAccOptions;
-		        sal_uLong                   nOutputMode;
-			    sal_uInt16                  nPreviewSlot;
+			if( mpViewShell )
+			{
+				const StyleSettings&	rStyleSettings = GetSettings().GetStyleSettings();
+				SvtAccessibilityOptions	aAccOptions;
+				sal_uLong					nOutputMode;
+				sal_uInt16					nPreviewSlot;
 
 				if( rStyleSettings.GetHighContrastMode() )
 					nOutputMode = ViewShell::OUTPUT_DRAWMODE_CONTRAST;
@@ -959,56 +851,56 @@ void Window::DataChanged( const DataChangedEvent& rDCEvt )
 				else
 					nPreviewSlot = SID_PREVIEW_QUALITY_COLOR;
 
-                if( mpViewShell->ISA( DrawViewShell ) )
-                {
-			        SetDrawMode( nOutputMode );
-                    mpViewShell->GetFrameView()->SetDrawMode( nOutputMode );
+				if( mpViewShell->ISA( DrawViewShell ) )
+				{
+					SetDrawMode( nOutputMode );
+					mpViewShell->GetFrameView()->SetDrawMode( nOutputMode );
 // #110094#-7
-//			        mpViewShell->GetView()->ReleaseMasterPagePaintCache();
-			        Invalidate();
-                }
+//					mpViewShell->GetView()->ReleaseMasterPagePaintCache();
+					Invalidate();
+				}
 
-                // #103100# Overwrite window color for OutlineView
-                if( mpViewShell->ISA(OutlineViewShell ) )
-                {
-                    svtools::ColorConfig aColorConfig;
-                    const Color aDocColor( aColorConfig.GetColorValue( svtools::DOCCOLOR ).nColor );
+				// #103100# Overwrite window color for OutlineView
+				if( mpViewShell->ISA(OutlineViewShell ) )
+				{
+					svtools::ColorConfig aColorConfig;
+					const Color aDocColor( aColorConfig.GetColorValue( svtools::DOCCOLOR ).nColor );
 					SetBackground( Wallpaper( aDocColor ) );
-                }
+				}
 
-                SfxRequest aReq( nPreviewSlot, 0, mpViewShell->GetDocSh()->GetDoc()->GetItemPool() );
-                mpViewShell->ExecReq( aReq );
+				SfxRequest aReq( nPreviewSlot, 0, mpViewShell->GetDocSh()->GetDoc()->GetItemPool() );
+				mpViewShell->ExecReq( aReq );
 				mpViewShell->Invalidate();
-                mpViewShell->ArrangeGUIElements();
+				mpViewShell->ArrangeGUIElements();
 
 				// #101928# re-create handles to show new outfit
 				if(mpViewShell->ISA(DrawViewShell))
 				{
 					mpViewShell->GetView()->AdjustMarkHdl();
 				}
-            }
-        }
+			}
+		}
 
 		if ( (rDCEvt.GetType() == DATACHANGED_DISPLAY) ||
 			 ((rDCEvt.GetType() == DATACHANGED_SETTINGS) &&
 			  (rDCEvt.GetFlags() & SETTINGS_STYLE)) )
 		{
-			// Virtuelle Device die auch von der Aufloesung oder von
-			// Systemeinstellungen abhaengen, sollten geupdatet werden.
+			// Virtuelle Device die auch von der Auflösung oder von
+			// Systemeinstellungen abhängen, sollten geupdatet werden.
 			// Ansonsten sollte zumindest bei DATACHANGED_DISPLAY
 			// die virtuellen Devices geupdatet werden, da es einige
-			// Systeme erlauben die Aufloesung und Farbtiefe waehrend
-			// der Laufzeit zu aendern oder eben bei Palettenaenderungen
-			// die virtuellen Device geupdatet werden muessen, da bei
+			// Systeme erlauben die Auflösung und Farbtiefe während
+			// der Laufzeit zu ändern oder eben bei Palettenaenderungen
+			// die virtuellen Device geupdatet werden müssen, da bei
 			// Ausgaben ein anderes Farbmatching stattfinden kann.
 		}
 
 		if ( rDCEvt.GetType() == DATACHANGED_FONTS )
 		{
-			// Wenn das Dokument Font-AuswahlBoxen anbietet, muessen
+			// Wenn das Dokument Font-AuswahlBoxen anbietet, müssen
 			// diese geupdatet werden. Wie dies genau aussehen muss,
 			// weiss ich leider auch nicht. Aber evtl. kann man das
-			// ja global handeln. Dies muessten wir evtl. mal
+			// ja global handeln. Dies müssten wir evtl. mal
 			// mit PB absprechen, aber der ist derzeit leider Krank.
 			// Also bevor dies hier gehandelt wird, vorher mit
 			// PB und mir absprechen.
@@ -1051,13 +943,8 @@ void Window::DataChanged( const DataChangedEvent& rDCEvt )
 	}
 }
 
-
-
-
 /*************************************************************************
-|*
 |* DropTargetHelper::AcceptDrop
-|*
 \************************************************************************/
 
 sal_Int8 Window::AcceptDrop( const AcceptDropEvent& rEvt )
@@ -1077,9 +964,7 @@ sal_Int8 Window::AcceptDrop( const AcceptDropEvent& rEvt )
 }
 
 /*************************************************************************
-|*
 |* DropTargetHelper::ExecuteDrop
-|*
 \************************************************************************/
 
 sal_Int8 Window::ExecuteDrop( const ExecuteDropEvent& rEvt )
@@ -1094,21 +979,13 @@ sal_Int8 Window::ExecuteDrop( const ExecuteDropEvent& rEvt )
 	return nRet;
 }
 
-
-
-
 void Window::SetUseDropScroll (bool bUseDropScroll)
 {
-    mbUseDropScroll = bUseDropScroll;
+	mbUseDropScroll = bUseDropScroll;
 }
 
-
-
-
 /*************************************************************************
-|*
 |* Scrolling bei AcceptDrop-Events
-|*
 \************************************************************************/
 
 void Window::DropScroll(const Point& rMousePos)
@@ -1146,19 +1023,16 @@ void Window::DropScroll(const Point& rMousePos)
 
 	if ( (nDx || nDy) && (rMousePos.X()!=0 || rMousePos.Y()!=0 ) )
 	{
-        if (mnTicks > 20)
-            mpViewShell->ScrollLines(nDx, nDy);
+		if (mnTicks > 20)
+			mpViewShell->ScrollLines(nDx, nDy);
 		else
-            mnTicks ++;
+			mnTicks ++;
 	}
 }
 
-
-
-
 ::com::sun::star::uno::Reference<
-    ::com::sun::star::accessibility::XAccessible>
-    Window::CreateAccessible (void)
+	::com::sun::star::accessibility::XAccessible>
+	Window::CreateAccessible (void)
 {
 	// If current viewshell is PresentationViewShell, just return empty because the correct ShowWin will be created later.
 	if (mpViewShell && mpViewShell->ISA(PresentationViewShell))
@@ -1170,17 +1044,17 @@ void Window::DropScroll(const Point& rMousePos)
 	{
 		return xAcc;
 	}
-    if (mpViewShell != NULL)
+	if (mpViewShell != NULL)
 	{
 		xAcc = mpViewShell->CreateAccessibleDocumentView (this);
 		SetAccessible(xAcc);
 		return xAcc;
 	}
-    else
-    {
-        OSL_TRACE ("::sd::Window::CreateAccessible: no view shell");
-        return ::Window::CreateAccessible ();
-    }
+	else
+	{
+		OSL_TRACE ("::sd::Window::CreateAccessible: no view shell");
+		return ::Window::CreateAccessible ();
+	}
 }
 
 // MT: Removed Windows::SwitchView() introduced with IA2 CWS.
@@ -1199,36 +1073,36 @@ void Window::SwitchView()
 
 XubString Window::GetSurroundingText() const
 {
-    if ( mpViewShell->GetShellType() == ViewShell::ST_OUTLINE )
-    {
-    	return XubString();
-    }
-    else if ( mpViewShell->GetView()->IsTextEdit() )
-    {
-	    OutlinerView *pOLV = mpViewShell->GetView()->GetTextEditOutlinerView();
-	    return pOLV->GetEditView().GetSurroundingText();
-    }
-    else
-    {
-    	return XubString();
-    }
+	if ( mpViewShell->GetShellType() == ViewShell::ST_OUTLINE )
+	{
+		return XubString();
+	}
+	else if ( mpViewShell->GetView()->IsTextEdit() )
+	{
+		OutlinerView *pOLV = mpViewShell->GetView()->GetTextEditOutlinerView();
+		return pOLV->GetEditView().GetSurroundingText();
+	}
+	else
+	{
+		return XubString();
+	}
 }
 
 Selection Window::GetSurroundingTextSelection() const
 {
-    if ( mpViewShell->GetShellType() == ViewShell::ST_OUTLINE )
-    {
-	    return Selection( 0, 0 );
-    }
-    else if ( mpViewShell->GetView()->IsTextEdit() )
-    {
-	    OutlinerView *pOLV = mpViewShell->GetView()->GetTextEditOutlinerView();
-	    return pOLV->GetEditView().GetSurroundingTextSelection();
-    }
-    else
-    {
-        return Selection( 0, 0 );
-    }
+	if ( mpViewShell->GetShellType() == ViewShell::ST_OUTLINE )
+	{
+		return Selection( 0, 0 );
+	}
+	else if ( mpViewShell->GetView()->IsTextEdit() )
+	{
+		OutlinerView *pOLV = mpViewShell->GetView()->GetTextEditOutlinerView();
+		return pOLV->GetEditView().GetSurroundingTextSelection();
+	}
+	else
+	{
+		return Selection( 0, 0 );
+	}
 }
 
 } // end of namespace sd

@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sd.hxx"
 
@@ -65,25 +63,24 @@ using namespace com::sun::star;
 class SdPageObjsTLB::IconProvider
 {
 public:
-    IconProvider (void);
+	IconProvider (void);
 
-    // Regular icons.
-    Image maImgPage;
-    Image maImgPageExcl;
-    Image maImgPageObjsExcl;
-    Image maImgPageObjs;
-    Image maImgObjects;
-    Image maImgGroup;
+	// Regular icons.
+	Image maImgPage;
+	Image maImgPageExcl;
+	Image maImgPageObjsExcl;
+	Image maImgPageObjs;
+	Image maImgObjects;
+	Image maImgGroup;
 
-    // High contrast icons.
-    Image maImgPageH;
-    Image maImgPageExclH;
-    Image maImgPageObjsExclH;
-    Image maImgPageObjsH;
-    Image maImgObjectsH;
-    Image maImgGroupH;
+	// High contrast icons.
+	Image maImgPageH;
+	Image maImgPageExclH;
+	Image maImgPageObjsExclH;
+	Image maImgPageObjsH;
+	Image maImgObjectsH;
+	Image maImgGroupH;
 };
-
 
 sal_Bool SD_DLLPRIVATE SdPageObjsTLB::bIsInDrag = sal_False;
 
@@ -99,22 +96,19 @@ sal_uInt32 SdPageObjsTLB::SdPageObjsTransferable::mnListBoxDropFormatId = SAL_MA
 // -----------------------------------------
 
 SdPageObjsTLB::SdPageObjsTransferable::SdPageObjsTransferable(
-    SdPageObjsTLB& rParent,
-        const INetBookmark& rBookmark,
-    ::sd::DrawDocShell& rDocShell,
-    NavigatorDragType eDragType,
-    const ::com::sun::star::uno::Any& rTreeListBoxData )
-    : SdTransferable(rDocShell.GetDoc(), NULL, sal_True),
-      mrParent( rParent ),
-      maBookmark( rBookmark ),
-      mrDocShell( rDocShell ),
-      meDragType( eDragType ),
-      maTreeListBoxData( rTreeListBoxData )
+	SdPageObjsTLB& rParent,
+		const INetBookmark& rBookmark,
+	::sd::DrawDocShell& rDocShell,
+	NavigatorDragType eDragType,
+	const ::com::sun::star::uno::Any& rTreeListBoxData )
+	: SdTransferable(rDocShell.GetDoc(), NULL, sal_True),
+	  mrParent( rParent ),
+	  maBookmark( rBookmark ),
+	  mrDocShell( rDocShell ),
+	  meDragType( eDragType ),
+	  maTreeListBoxData( rTreeListBoxData )
 {
 }
-
-
-
 
 SdPageObjsTLB::SdPageObjsTransferable::~SdPageObjsTransferable()
 {
@@ -124,9 +118,9 @@ SdPageObjsTLB::SdPageObjsTransferable::~SdPageObjsTransferable()
 
 void SdPageObjsTLB::SdPageObjsTransferable::AddSupportedFormats()
 {
-    AddFormat(SOT_FORMATSTR_ID_NETSCAPE_BOOKMARK);
-    AddFormat(SOT_FORMATSTR_ID_TREELISTBOX);
-    AddFormat(GetListBoxDropFormatId());
+	AddFormat(SOT_FORMATSTR_ID_NETSCAPE_BOOKMARK);
+	AddFormat(SOT_FORMATSTR_ID_TREELISTBOX);
+	AddFormat(GetListBoxDropFormatId());
 }
 
 // -----------------------------------------------------------------------------
@@ -134,19 +128,19 @@ void SdPageObjsTLB::SdPageObjsTransferable::AddSupportedFormats()
 sal_Bool SdPageObjsTLB::SdPageObjsTransferable::GetData( const ::com::sun::star::datatransfer::DataFlavor& rFlavor )
 {
 	sal_uLong nFormatId = SotExchange::GetFormat( rFlavor );
-    switch (nFormatId)
-    {
-        case SOT_FORMATSTR_ID_NETSCAPE_BOOKMARK:
-            SetINetBookmark( maBookmark, rFlavor );
-            return sal_True;
+	switch (nFormatId)
+	{
+		case SOT_FORMATSTR_ID_NETSCAPE_BOOKMARK:
+			SetINetBookmark( maBookmark, rFlavor );
+			return sal_True;
 
-        case SOT_FORMATSTR_ID_TREELISTBOX:
-            SetAny(maTreeListBoxData, rFlavor);
-            return sal_True;
+		case SOT_FORMATSTR_ID_TREELISTBOX:
+			SetAny(maTreeListBoxData, rFlavor);
+			return sal_True;
 
-        default:
-            return sal_False;
-    }
+		default:
+			return sal_False;
+	}
 }
 
 // -----------------------------------------------------------------------------
@@ -154,36 +148,36 @@ sal_Bool SdPageObjsTLB::SdPageObjsTransferable::GetData( const ::com::sun::star:
 void SdPageObjsTLB::SdPageObjsTransferable::DragFinished( sal_Int8 nDropAction )
 {
 	mrParent.OnDragFinished( nDropAction );
-    SdTransferable::DragFinished(nDropAction);
+	SdTransferable::DragFinished(nDropAction);
 }
 
 // -----------------------------------------------------------------------------
 
 ::sd::DrawDocShell& SdPageObjsTLB::SdPageObjsTransferable::GetDocShell() const
 {
-    return mrDocShell;
+	return mrDocShell;
 }
 
 // -----------------------------------------------------------------------------
 
 NavigatorDragType SdPageObjsTLB::SdPageObjsTransferable::GetDragType() const
 {
-    return meDragType;
+	return meDragType;
 }
 
 // -----------------------------------------------------------------------------
 
 sal_Int64 SAL_CALL SdPageObjsTLB::SdPageObjsTransferable::getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& rId ) throw( ::com::sun::star::uno::RuntimeException )
 {
-    sal_Int64 nRet;
+	sal_Int64 nRet;
 
-    if( ( rId.getLength() == 16 ) &&
-        ( 0 == rtl_compareMemory( getUnoTunnelId().getConstArray(), rId.getConstArray(), 16 ) ) )
-    {
-        nRet = (sal_Int64)(sal_IntPtr)this;
-    }
-    else
-        nRet = SdTransferable::getSomething(rId);
+	if( ( rId.getLength() == 16 ) &&
+		( 0 == rtl_compareMemory( getUnoTunnelId().getConstArray(), rId.getConstArray(), 16 ) ) )
+	{
+		nRet = (sal_Int64)(sal_IntPtr)this;
+	}
+	else
+		nRet = SdTransferable::getSomething(rId);
 
 	return nRet;
 }
@@ -192,82 +186,76 @@ sal_Int64 SAL_CALL SdPageObjsTLB::SdPageObjsTransferable::getSomething( const ::
 
 const ::com::sun::star::uno::Sequence< sal_Int8 >& SdPageObjsTLB::SdPageObjsTransferable::getUnoTunnelId()
 {
-    static ::com::sun::star::uno::Sequence< sal_Int8 > aSeq;
+	static ::com::sun::star::uno::Sequence< sal_Int8 > aSeq;
 
 	if( !aSeq.getLength() )
 	{
-		static osl::Mutex   aCreateMutex;
-    	osl::MutexGuard     aGuard( aCreateMutex );
+		static osl::Mutex	aCreateMutex;
+		osl::MutexGuard		aGuard( aCreateMutex );
 
 		aSeq.realloc( 16 );
-    	rtl_createUuid( reinterpret_cast< sal_uInt8* >( aSeq.getArray() ), 0, sal_True );
+		rtl_createUuid( reinterpret_cast< sal_uInt8* >( aSeq.getArray() ), 0, sal_True );
 	}
 
-    return aSeq;
+	return aSeq;
 }
 
 // -----------------------------------------------------------------------------
 
 SdPageObjsTLB::SdPageObjsTransferable* SdPageObjsTLB::SdPageObjsTransferable::getImplementation( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& rxData )
-    throw()
+	throw()
 {
-    try
-    {
-	    ::com::sun::star::uno::Reference< ::com::sun::star::lang::XUnoTunnel > xUnoTunnel( rxData, ::com::sun::star::uno::UNO_QUERY_THROW );
+	try
+	{
+		::com::sun::star::uno::Reference< ::com::sun::star::lang::XUnoTunnel > xUnoTunnel( rxData, ::com::sun::star::uno::UNO_QUERY_THROW );
 
 		return reinterpret_cast<SdPageObjsTLB::SdPageObjsTransferable*>(
 				sal::static_int_cast<sal_uIntPtr>(
 					xUnoTunnel->getSomething( SdPageObjsTLB::SdPageObjsTransferable::getUnoTunnelId()) ) );
-    }
-    catch( const ::com::sun::star::uno::Exception& )
+	}
+	catch( const ::com::sun::star::uno::Exception& )
 	{
 	}
 	return 0;
 }
 
-
 sal_uInt32 SdPageObjsTLB::SdPageObjsTransferable::GetListBoxDropFormatId (void)
 {
-    if (mnListBoxDropFormatId == SAL_MAX_UINT32)
-        mnListBoxDropFormatId = SotExchange::RegisterFormatMimeType(
-            ::rtl::OUString::createFromAscii(
-                "application/x-openoffice-treelistbox-moveonly;"
-                    "windows_formatname=\"SV_LBOX_DD_FORMAT_MOVE\""));
-    return mnListBoxDropFormatId;
+	if (mnListBoxDropFormatId == SAL_MAX_UINT32)
+		mnListBoxDropFormatId = SotExchange::RegisterFormatMimeType(
+			::rtl::OUString::createFromAscii(
+				"application/x-openoffice-treelistbox-moveonly;"
+					"windows_formatname=\"SV_LBOX_DD_FORMAT_MOVE\""));
+	return mnListBoxDropFormatId;
 }
 
-
-
-
 /*************************************************************************
-|*
 |* Ctor1 SdPageObjsTLB
-|*
 \************************************************************************/
 
 SdPageObjsTLB::SdPageObjsTLB( Window* pParentWin, const SdResId& rSdResId )
-:	SvTreeListBox       ( pParentWin, rSdResId )
-,   bisInSdNavigatorWin  ( sal_False )
-,	mpParent 		    ( pParentWin )
-,	mpDoc			    ( NULL )
-,	mpBookmarkDoc	    ( NULL )
-,	mpMedium 	    	( NULL )
-,	mpOwnMedium		    ( NULL )
-,	maImgOle             ( BitmapEx( SdResId( BMP_OLE ) ) )
-,	maImgGraphic         ( BitmapEx( SdResId( BMP_GRAPHIC ) ) )
-,	maImgOleH            ( BitmapEx( SdResId( BMP_OLE_H ) ) )
-,	maImgGraphicH        ( BitmapEx( SdResId( BMP_GRAPHIC_H ) ) )
-,	mbLinkableSelected  ( sal_False )
+:	SvTreeListBox		( pParentWin, rSdResId )
+,	bisInSdNavigatorWin	( sal_False )
+,	mpParent 			( pParentWin )
+,	mpDoc				( NULL )
+,	mpBookmarkDoc		( NULL )
+,	mpMedium 			( NULL )
+,	mpOwnMedium			( NULL )
+,	maImgOle			( BitmapEx( SdResId( BMP_OLE ) ) )
+,	maImgGraphic		( BitmapEx( SdResId( BMP_GRAPHIC ) ) )
+,	maImgOleH			( BitmapEx( SdResId( BMP_OLE_H ) ) )
+,	maImgGraphicH		( BitmapEx( SdResId( BMP_GRAPHIC_H ) ) )
+,	mbLinkableSelected	( sal_False )
 ,	mpDropNavWin		( NULL )
-,   mbShowAllShapes     ( false )
-,   mbShowAllPages      ( false )
+,	mbShowAllShapes		( false )
+,	mbShowAllPages		( false )
 {
 	// Tree-ListBox mit Linien versehen
 	SetStyle( GetStyle() | WB_TABSTOP | WB_BORDER | WB_HASLINES |
 						   WB_HASBUTTONS | // WB_HASLINESATROOT |
 						   WB_HSCROLL | // #31562#
 						   WB_HASBUTTONSATROOT |
-                           WB_QUICK_SEARCH /* i31275 */ );
+						   WB_QUICK_SEARCH /* i31275 */ );
 	SetNodeBitmaps( Bitmap( SdResId( BMP_EXPAND ) ),
 					Bitmap( SdResId( BMP_COLLAPSE ) ) );
 
@@ -275,24 +263,22 @@ SdPageObjsTLB::SdPageObjsTLB( Window* pParentWin, const SdResId& rSdResId )
 					Bitmap( SdResId( BMP_COLLAPSE_H ) ),
 					BMP_COLOR_HIGHCONTRAST );
 
-    SetDragDropMode(
+	SetDragDropMode(
  		SV_DRAGDROP_CTRL_MOVE | SV_DRAGDROP_CTRL_COPY |
-            SV_DRAGDROP_APP_MOVE  | SV_DRAGDROP_APP_COPY  | SV_DRAGDROP_APP_DROP );
+			SV_DRAGDROP_APP_MOVE | SV_DRAGDROP_APP_COPY | SV_DRAGDROP_APP_DROP );
 }
 
 /*************************************************************************
-|*
 |* Dtor SdPageObjsTLB
-|*
 \************************************************************************/
 
 SdPageObjsTLB::~SdPageObjsTLB()
 {
-    if ( mpBookmarkDoc )
-        CloseBookmarkDoc();
-    else
-        // no document was created from mpMedium, so this object is still the owner of it
-        delete mpMedium;
+	if ( mpBookmarkDoc )
+		CloseBookmarkDoc();
+	else
+		// no document was created from mpMedium, so this object is still the owner of it
+		delete mpMedium;
 }
 
 // helper function for 	GetEntryAltText and GetEntryLongDescription
@@ -303,19 +289,18 @@ String SdPageObjsTLB::getAltLongDescText( SvLBoxEntry* pEntry , sal_Bool isAltTe
 	SdrObject*	 pObj = NULL;
 	SdPage* pPage = NULL;
 
-
 	String ParentName = GetEntryText( GetRootLevelParent( pEntry ) );
 
-	for( pageNo = 0;  pageNo < maxPages; pageNo++ )
+	for( pageNo = 0; pageNo < maxPages; pageNo++ )
 	{
 		pPage = (SdPage*) mpDoc->GetPage( pageNo );
 		if( pPage->GetPageKind() != PK_STANDARD ) continue;
-		if( pPage->GetName() !=  ParentName ) continue;
+		if( pPage->GetName() != ParentName ) continue;
 		SdrObjListIter aIter( *pPage, IM_FLAT );
 		while( aIter.IsMore() )
 		{
 			pObj = aIter.Next();
-			if( GetEntryText(pEntry) ==  GetObjectName( pObj )  )
+			if( GetEntryText(pEntry) == GetObjectName( pObj ) )
 			{
 				if( isAltText )
 					return pObj->GetTitle();
@@ -338,7 +323,7 @@ String SdPageObjsTLB::GetEntryLongDescription( SvLBoxEntry* pEntry ) const
 	return getAltLongDescText( pEntry, sal_False);
 }
 
-void  SdPageObjsTLB::MarkCurEntry( const String& rName )
+void SdPageObjsTLB::MarkCurEntry( const String& rName )
 {
 
 	if( rName.Len() )
@@ -348,13 +333,13 @@ void  SdPageObjsTLB::MarkCurEntry( const String& rName )
 		String aTmp1;
 		String aTmp2;
 
-	       if( GetParent(pCurEntry)==NULL )
-	       {
-	              aTmp1 = GetEntryText( pCurEntry );
-		       for( pEntry = First(); pEntry ; pEntry = Next( pEntry ) )
+		   if( GetParent(pCurEntry)==NULL )
+		   {
+				  aTmp1 = GetEntryText( pCurEntry );
+			   for( pEntry = First(); pEntry ; pEntry = Next( pEntry ) )
 			{
-			       if(GetParent( pEntry )==NULL)
-				   	     continue;
+				   if(GetParent( pEntry )==NULL)
+						 continue;
 				aTmp2 = GetEntryText( GetParent( pEntry ));
 				if( aTmp1 != aTmp2)
 				{
@@ -363,10 +348,10 @@ void  SdPageObjsTLB::MarkCurEntry( const String& rName )
 				}
 			}
 
-	       }
-              else
-              {
-	              for( pEntry = First(); pEntry ; pEntry = Next( pEntry ) )
+		   }
+			  else
+			  {
+				  for( pEntry = First(); pEntry ; pEntry = Next( pEntry ) )
 			{
 				aTmp2 = GetEntryText( pEntry );
 				if( aTmp2 == rName)
@@ -375,20 +360,20 @@ void  SdPageObjsTLB::MarkCurEntry( const String& rName )
 				}
 				else
 				{
-				        pEntry->SetMarked(sal_False);
+						pEntry->SetMarked(sal_False);
 				}
 			}
-              }
+			  }
 	}
 	Invalidate();
 }
 
-void  SdPageObjsTLB:: FreshCurEntry()
+void SdPageObjsTLB:: FreshCurEntry()
 {
-       SvLBoxEntry* pEntry =NULL;
-       for( pEntry = First(); pEntry ; pEntry = Next( pEntry ) )
+		SvLBoxEntry* pEntry =NULL;
+		for( pEntry = First(); pEntry ; pEntry = Next( pEntry ) )
 	{
-		        pEntry->SetMarked(sal_False);
+				pEntry->SetMarked(sal_False);
 	}
 	Invalidate();
 }
@@ -459,7 +444,7 @@ void SdPageObjsTLB::SaveExpandedTreeItemState(SvLBoxEntry* pEntry, vector<String
 }
 void SdPageObjsTLB::Clear()
 {
-	//Save the expanded tree item
+	// Save the expanded tree item
 	if (mbSaveTreeItemState)
 	{
 		maSelectionEntryText = String();
@@ -472,41 +457,37 @@ void SdPageObjsTLB::Clear()
 	return SvTreeListBox::Clear();
 }
 /*************************************************************************
-|*
 |* return name of object
-|*
 \************************************************************************/
 
 String SdPageObjsTLB::GetObjectName(
-    const SdrObject* pObject,
-    const bool bCreate) const
+	const SdrObject* pObject,
+	const bool bCreate) const
 {
-    String aRet;
+	String aRet;
 
-    if ( pObject )
-    {
-        aRet = pObject->GetName();
+	if ( pObject )
+	{
+		aRet = pObject->GetName();
 
-        if( !aRet.Len() && pObject->ISA( SdrOle2Obj ) )
-            aRet = static_cast< const SdrOle2Obj* >( pObject )->GetPersistName();
-    }
+		if( !aRet.Len() && pObject->ISA( SdrOle2Obj ) )
+			aRet = static_cast< const SdrOle2Obj* >( pObject )->GetPersistName();
+	}
 
-    if (bCreate
-        && mbShowAllShapes
-        && aRet.Len() == 0
-        && pObject!=NULL)
-    {
-        aRet = SdResId(STR_NAVIGATOR_SHAPE_BASE_NAME);
-        aRet.SearchAndReplaceAscii("%1", String::CreateFromInt32(pObject->GetOrdNum() + 1));
-    }
+	if (bCreate
+		&& mbShowAllShapes
+		&& aRet.Len() == 0
+		&& pObject!=NULL)
+	{
+		aRet = SdResId(STR_NAVIGATOR_SHAPE_BASE_NAME);
+		aRet.SearchAndReplaceAscii("%1", String::CreateFromInt32(pObject->GetOrdNum() + 1));
+	}
 
-    return aRet;
+	return aRet;
 }
 
 /*************************************************************************
-|*
 |* In TreeLB Eintrag selektieren
-|*
 \************************************************************************/
 
 sal_Bool SdPageObjsTLB::SelectEntry( const String& rName )
@@ -532,9 +513,7 @@ sal_Bool SdPageObjsTLB::SelectEntry( const String& rName )
 }
 
 /*************************************************************************
-|*
-|* Gibt zurueck, ob Childs des uebergebenen Strings selektiert sind
-|*
+|* Gibt zurück, ob Childs des übergebenen Strings selektiert sind
 \************************************************************************/
 
 sal_Bool SdPageObjsTLB::HasSelectedChilds( const String& rName )
@@ -563,11 +542,8 @@ sal_Bool SdPageObjsTLB::HasSelectedChilds( const String& rName )
 	return( bChilds );
 }
 
-
 /*************************************************************************
-|*
-|* TreeLB mit Seiten und Objekten fuellen
-|*
+|* TreeLB mit Seiten und Objekten füllen
 \************************************************************************/
 
 void SdPageObjsTLB::Fill( const SdDrawDocument* pInDoc, sal_Bool bAllPages,
@@ -582,12 +558,12 @@ void SdPageObjsTLB::Fill( const SdDrawDocument* pInDoc, sal_Bool bAllPages,
 
 	mpDoc = pInDoc;
 	maDocName = rDocName;
-    mbShowAllPages = (bAllPages == sal_True);
+	mbShowAllPages = (bAllPages == sal_True);
 	mpMedium = NULL;
 
 	SdPage* 	 pPage = NULL;
 
-    IconProvider aIconProvider;
+	IconProvider aIconProvider;
 
 	// first insert all pages including objects
 	sal_uInt16 nPage = 0;
@@ -596,20 +572,20 @@ void SdPageObjsTLB::Fill( const SdDrawDocument* pInDoc, sal_Bool bAllPages,
 	while( nPage < nMaxPages )
 	{
 		pPage = (SdPage*) mpDoc->GetPage( nPage );
-		if(  (mbShowAllPages || pPage->GetPageKind() == PK_STANDARD)
-		     && !(pPage->GetPageKind()==PK_HANDOUT)   ) //#94954# never list the normal handout page ( handout-masterpage is used instead )
+		if( (mbShowAllPages || pPage->GetPageKind() == PK_STANDARD)
+			 && !(pPage->GetPageKind()==PK_HANDOUT) ) //#94954# never list the normal handout page ( handout-masterpage is used instead )
 		{
 			sal_Bool bPageExluded = pPage->IsExcluded();
 
-            bool bPageBelongsToShow = PageBelongsToCurrentShow (pPage);
-            bPageExluded |= !bPageBelongsToShow;
+			bool bPageBelongsToShow = PageBelongsToCurrentShow (pPage);
+			bPageExluded |= !bPageBelongsToShow;
 
-            AddShapeList(*pPage, NULL, pPage->GetName(), bPageExluded, NULL, aIconProvider);
+			AddShapeList(*pPage, NULL, pPage->GetName(), bPageExluded, NULL, aIconProvider);
 		}
 		nPage++;
 	}
 
-	// dann alle MasterPages incl. Objekte einfuegen
+	// dann alle MasterPages incl. Objekte einfügen
 	if( mbShowAllPages )
 	{
 		nPage = 0;
@@ -618,7 +594,7 @@ void SdPageObjsTLB::Fill( const SdDrawDocument* pInDoc, sal_Bool bAllPages,
 		while( nPage < nMaxMasterPages )
 		{
 			pPage = (SdPage*) mpDoc->GetMasterPage( nPage );
-            AddShapeList(*pPage, NULL, pPage->GetName(), false, NULL, aIconProvider);
+			AddShapeList(*pPage, NULL, pPage->GetName(), false, NULL, aIconProvider);
 			nPage++;
 		}
 	}
@@ -631,9 +607,7 @@ void SdPageObjsTLB::Fill( const SdDrawDocument* pInDoc, sal_Bool bAllPages,
 }
 
 /*************************************************************************
-|*
-|* Es wird nur der erste Eintrag eingefuegt. Childs werden OnDemand erzeugt
-|*
+|* Es wird nur der erste Eintrag eingefügt. Childs werden OnDemand erzeugt
 \************************************************************************/
 
 void SdPageObjsTLB::Fill( const SdDrawDocument* pInDoc, SfxMedium* pInMedium,
@@ -641,7 +615,7 @@ void SdPageObjsTLB::Fill( const SdDrawDocument* pInDoc, SfxMedium* pInMedium,
 {
 	mpDoc = pInDoc;
 
-    // this object now owns the Medium
+	// this object now owns the Medium
 	mpMedium = pInMedium;
 	maDocName = rDocName;
 
@@ -650,12 +624,12 @@ void SdPageObjsTLB::Fill( const SdDrawDocument* pInDoc, SfxMedium* pInMedium,
 	Image aImgDocOpenH=Image( BitmapEx( SdResId( BMP_DOC_OPEN_H ) ) );
 	Image aImgDocClosedH=Image( BitmapEx( SdResId( BMP_DOC_CLOSED_H ) ) );
 
-	// Dokumentnamen einfuegen
+	// Dokumentnamen einfügen
 	SvLBoxEntry* pFileEntry = InsertEntry( maDocName,
-	                          aImgDocOpen,
-	                          aImgDocClosed,
-	                          NULL,
-	                          sal_True,
+							  aImgDocOpen,
+							  aImgDocClosed,
+							  NULL,
+							  sal_True,
 							  LIST_APPEND,
 							  reinterpret_cast< void* >( 1 ) );
 
@@ -663,52 +637,49 @@ void SdPageObjsTLB::Fill( const SdDrawDocument* pInDoc, SfxMedium* pInMedium,
 	SetCollapsedEntryBmp( pFileEntry, aImgDocClosedH, BMP_COLOR_HIGHCONTRAST );
 }
 
-
-
-
 void SdPageObjsTLB::AddShapeList (
-    const SdrObjList& rList,
-    SdrObject* pShape,
-    const ::rtl::OUString& rsName,
-    const bool bIsExcluded,
-    SvLBoxEntry* pParentEntry,
-    const IconProvider& rIconProvider)
+	const SdrObjList& rList,
+	SdrObject* pShape,
+	const ::rtl::OUString& rsName,
+	const bool bIsExcluded,
+	SvLBoxEntry* pParentEntry,
+	const IconProvider& rIconProvider)
 {
-    Image aIcon (rIconProvider.maImgPage);
-    if (bIsExcluded)
-        aIcon = rIconProvider.maImgPageExcl;
-    else if (pShape != NULL)
-        aIcon = rIconProvider.maImgGroup;
+	Image aIcon (rIconProvider.maImgPage);
+	if (bIsExcluded)
+		aIcon = rIconProvider.maImgPageExcl;
+	else if (pShape != NULL)
+		aIcon = rIconProvider.maImgGroup;
 
-    void* pUserData (reinterpret_cast<void*>(1));
-    if (pShape != NULL)
-        pUserData = pShape;
+	void* pUserData (reinterpret_cast<void*>(1));
+	if (pShape != NULL)
+		pUserData = pShape;
 
 	SvLBoxEntry* pEntry = InsertEntry(
-        rsName,
-        aIcon,
-        aIcon,
-        pParentEntry,
-        sal_False,
-        LIST_APPEND,
-        pUserData);
+		rsName,
+		aIcon,
+		aIcon,
+		pParentEntry,
+		sal_False,
+		LIST_APPEND,
+		pUserData);
 
-    SetExpandedEntryBmp(
-        pEntry,
-        bIsExcluded ? rIconProvider.maImgPageExclH : rIconProvider.maImgPageH,
-        BMP_COLOR_HIGHCONTRAST );
-    SetCollapsedEntryBmp(
-        pEntry,
-        bIsExcluded ? rIconProvider.maImgPageExclH : rIconProvider.maImgPageH,
-        BMP_COLOR_HIGHCONTRAST );
+	SetExpandedEntryBmp(
+		pEntry,
+		bIsExcluded ? rIconProvider.maImgPageExclH : rIconProvider.maImgPageH,
+		BMP_COLOR_HIGHCONTRAST );
+	SetCollapsedEntryBmp(
+		pEntry,
+		bIsExcluded ? rIconProvider.maImgPageExclH : rIconProvider.maImgPageH,
+		BMP_COLOR_HIGHCONTRAST );
 
-    SdrObjListIter aIter(
-        rList,
-        !rList.HasObjectNavigationOrder() /* use navigation order, if available */,
-        IM_FLAT,
-        sal_False /*not reverse*/);
+	SdrObjListIter aIter(
+		rList,
+		!rList.HasObjectNavigationOrder() /* use navigation order, if available */,
+		IM_FLAT,
+		sal_False /*not reverse*/);
 
-	sal_Bool  bMarked=sal_False;
+	sal_Bool bMarked=sal_False;
 	if(bisInSdNavigatorWin)
 	{
 		Window* pWindow=NULL;
@@ -730,20 +701,20 @@ void SdPageObjsTLB::AddShapeList (
 				pEntry->SetMarked( sal_False );
 		}
 	}
-    while( aIter.IsMore() )
-    {
-        SdrObject* pObj = aIter.Next();
-        OSL_ASSERT(pObj!=NULL);
+	while( aIter.IsMore() )
+	{
+		SdrObject* pObj = aIter.Next();
+		OSL_ASSERT(pObj!=NULL);
 
-        // Get the shape name.
-        String aStr (GetObjectName( pObj ) );
+		// Get the shape name.
+		String aStr (GetObjectName( pObj ) );
 
-        if( aStr.Len() )
-        {
-            if( pObj->GetObjInventor() == SdrInventor && pObj->GetObjIdentifier() == OBJ_OLE2 )
-            {
-                SvLBoxEntry* pNewEntry = InsertEntry( aStr, maImgOle, maImgOle, pEntry,
-                    sal_False, LIST_APPEND, pObj);
+		if( aStr.Len() )
+		{
+			if( pObj->GetObjInventor() == SdrInventor && pObj->GetObjIdentifier() == OBJ_OLE2 )
+			{
+				SvLBoxEntry* pNewEntry = InsertEntry( aStr, maImgOle, maImgOle, pEntry,
+					sal_False, LIST_APPEND, pObj);
 				if(bisInSdNavigatorWin)
 				{
 					Window* pWindow=NULL;
@@ -765,55 +736,13 @@ void SdPageObjsTLB::AddShapeList (
 							pNewEntry->SetMarked( sal_False );
 					}
 				}
-                SetExpandedEntryBmp( pNewEntry, maImgOleH, BMP_COLOR_HIGHCONTRAST );
-                SetCollapsedEntryBmp( pNewEntry, maImgOleH, BMP_COLOR_HIGHCONTRAST );
-            }
-            else if( pObj->GetObjInventor() == SdrInventor && pObj->GetObjIdentifier() == OBJ_GRAF )
-            {
-                SvLBoxEntry* pNewEntry = InsertEntry( aStr, maImgGraphic, maImgGraphic, pEntry,
-                    sal_False, LIST_APPEND, pObj );
-				if(bisInSdNavigatorWin)
-				{
-					Window* pWindow=NULL;
-					SdNavigatorWin* pSdNavigatorWin=NULL;
-					sd::DrawDocShell* pSdDrawDocShell = NULL;
-					if(pNewEntry)
-						pWindow=(Window*)GetParent(pNewEntry);
-					if(pWindow)
-						pSdNavigatorWin = (SdNavigatorWin*)pWindow;
-					if( pSdNavigatorWin )
-						pSdDrawDocShell = pSdNavigatorWin->GetDrawDocShell(mpDoc);
-					if(pSdDrawDocShell)
-						bMarked=pSdDrawDocShell->IsMarked((SdrObject*)pObj);
-					if(pNewEntry)
-					{
-						if(bMarked)
-						{
-							pNewEntry->SetMarked(sal_True);
-						}
-						else
-						{
-							pNewEntry->SetMarked( sal_False );
-						}
-					}
-				}
-                SetExpandedEntryBmp( pNewEntry, maImgGraphicH, BMP_COLOR_HIGHCONTRAST );
-                SetCollapsedEntryBmp( pNewEntry, maImgGraphicH, BMP_COLOR_HIGHCONTRAST );
-            }
-            else if (pObj->IsGroupObject())
-            {
-                AddShapeList(
-                    *pObj->GetSubList(),
-                    pObj,
-                    aStr,
-                    false,
-                    pEntry,
-                    rIconProvider);
-            }
-            else
-            {
-                SvLBoxEntry* pNewEntry = InsertEntry( aStr, rIconProvider.maImgObjects, rIconProvider.maImgObjects, pEntry,
-                    sal_False, LIST_APPEND, pObj );
+				SetExpandedEntryBmp( pNewEntry, maImgOleH, BMP_COLOR_HIGHCONTRAST );
+				SetCollapsedEntryBmp( pNewEntry, maImgOleH, BMP_COLOR_HIGHCONTRAST );
+			}
+			else if( pObj->GetObjInventor() == SdrInventor && pObj->GetObjIdentifier() == OBJ_GRAF )
+			{
+				SvLBoxEntry* pNewEntry = InsertEntry( aStr, maImgGraphic, maImgGraphic, pEntry,
+					sal_False, LIST_APPEND, pObj );
 				if(bisInSdNavigatorWin)
 				{
 					Window* pWindow=NULL;
@@ -839,28 +768,70 @@ void SdPageObjsTLB::AddShapeList (
 						}
 					}
 				}
-                SetExpandedEntryBmp( pNewEntry, rIconProvider.maImgObjectsH, BMP_COLOR_HIGHCONTRAST );
-                SetCollapsedEntryBmp( pNewEntry, rIconProvider.maImgObjectsH, BMP_COLOR_HIGHCONTRAST );
-            }
-        }
-    }
+				SetExpandedEntryBmp( pNewEntry, maImgGraphicH, BMP_COLOR_HIGHCONTRAST );
+				SetCollapsedEntryBmp( pNewEntry, maImgGraphicH, BMP_COLOR_HIGHCONTRAST );
+			}
+			else if (pObj->IsGroupObject())
+			{
+				AddShapeList(
+					*pObj->GetSubList(),
+					pObj,
+					aStr,
+					false,
+					pEntry,
+					rIconProvider);
+			}
+			else
+			{
+				SvLBoxEntry* pNewEntry = InsertEntry( aStr, rIconProvider.maImgObjects, rIconProvider.maImgObjects, pEntry,
+					sal_False, LIST_APPEND, pObj );
+				if(bisInSdNavigatorWin)
+				{
+					Window* pWindow=NULL;
+					SdNavigatorWin* pSdNavigatorWin=NULL;
+					sd::DrawDocShell* pSdDrawDocShell = NULL;
+					if(pNewEntry)
+						pWindow=(Window*)GetParent(pNewEntry);
+					if(pWindow)
+						pSdNavigatorWin = (SdNavigatorWin*)pWindow;
+					if( pSdNavigatorWin )
+						pSdDrawDocShell = pSdNavigatorWin->GetDrawDocShell(mpDoc);
+					if(pSdDrawDocShell)
+						bMarked=pSdDrawDocShell->IsMarked((SdrObject*)pObj);
+					if(pNewEntry)
+					{
+						if(bMarked)
+						{
+							pNewEntry->SetMarked(sal_True);
+						}
+						else
+						{
+							pNewEntry->SetMarked( sal_False );
+						}
+					}
+				}
+				SetExpandedEntryBmp( pNewEntry, rIconProvider.maImgObjectsH, BMP_COLOR_HIGHCONTRAST );
+				SetCollapsedEntryBmp( pNewEntry, rIconProvider.maImgObjectsH, BMP_COLOR_HIGHCONTRAST );
+			}
+		}
+	}
 
-    if( pEntry->HasChilds() )
-    {
-        SetExpandedEntryBmp(
-            pEntry,
-            bIsExcluded ? rIconProvider.maImgPageObjsExcl : rIconProvider.maImgPageObjs);
-        SetCollapsedEntryBmp(
-            pEntry,
-            bIsExcluded ? rIconProvider.maImgPageObjsExcl : rIconProvider.maImgPageObjs);
-        SetExpandedEntryBmp(
-            pEntry,
-            bIsExcluded ? rIconProvider.maImgPageObjsExclH : rIconProvider.maImgPageObjsH,
-            BMP_COLOR_HIGHCONTRAST);
-        SetCollapsedEntryBmp(
-            pEntry,
-            bIsExcluded ? rIconProvider.maImgPageObjsExclH : rIconProvider.maImgPageObjsH,
-            BMP_COLOR_HIGHCONTRAST);
+	if( pEntry->HasChilds() )
+	{
+		SetExpandedEntryBmp(
+			pEntry,
+			bIsExcluded ? rIconProvider.maImgPageObjsExcl : rIconProvider.maImgPageObjs);
+		SetCollapsedEntryBmp(
+			pEntry,
+			bIsExcluded ? rIconProvider.maImgPageObjsExcl : rIconProvider.maImgPageObjs);
+		SetExpandedEntryBmp(
+			pEntry,
+			bIsExcluded ? rIconProvider.maImgPageObjsExclH : rIconProvider.maImgPageObjsH,
+			BMP_COLOR_HIGHCONTRAST);
+		SetCollapsedEntryBmp(
+			pEntry,
+			bIsExcluded ? rIconProvider.maImgPageObjsExclH : rIconProvider.maImgPageObjsH,
+			BMP_COLOR_HIGHCONTRAST);
 		if (mbSaveTreeItemState)
 		{
 			vector<String>:: iterator iteStart = maTreeItem.begin();
@@ -877,44 +848,33 @@ void SdPageObjsTLB::AddShapeList (
 		}
 		else
 			Expand( pEntry );
-    }
+	}
 }
-
-
-
 
 void SdPageObjsTLB::SetShowAllShapes (
-    const bool bShowAllShapes,
-    const bool bFillList)
+	const bool bShowAllShapes,
+	const bool bFillList)
 {
-    mbShowAllShapes = bShowAllShapes;
-    if (bFillList)
-    {
-        if (mpMedium == NULL)
-            Fill(mpDoc, mbShowAllPages, maDocName);
-        else
-            Fill(mpDoc, mpMedium, maDocName);
-    }
+	mbShowAllShapes = bShowAllShapes;
+	if (bFillList)
+	{
+		if (mpMedium == NULL)
+			Fill(mpDoc, mbShowAllPages, maDocName);
+		else
+			Fill(mpDoc, mpMedium, maDocName);
+	}
 }
-
-
-
 
 bool SdPageObjsTLB::GetShowAllShapes (void) const
 {
-    return mbShowAllShapes;
+	return mbShowAllShapes;
 }
 
-
-
-
 /*************************************************************************
-|*
-|* Prueft, ob die Seiten (PK_STANDARD) und die darauf befindlichen Objekte
+|* Prüft, ob die Seiten (PK_STANDARD) und die darauf befindlichen Objekte
 |* des Docs und der TreeLB identisch sind.
-|* Wird ein Doc uebergeben, wird dieses zum aktuellem Doc (Wichtig bei
-|* mehreren Documenten).
-|*
+|* Wird ein Doc übergeben, wird dieses zum aktuellem Doc (Wichtig bei
+|* mehreren Dokumenten).
 \************************************************************************/
 
 sal_Bool SdPageObjsTLB::IsEqualToDoc( const SdDrawDocument* pInDoc )
@@ -949,22 +909,22 @@ sal_Bool SdPageObjsTLB::IsEqualToDoc( const SdDrawDocument* pInDoc )
 			pEntry = Next( pEntry );
 
 			SdrObjListIter aIter(
-                *pPage,
-                !pPage->HasObjectNavigationOrder() /* use navigation order, if available */,
-                IM_DEEPWITHGROUPS );
+				*pPage,
+				!pPage->HasObjectNavigationOrder() /* use navigation order, if available */,
+				IM_DEEPWITHGROUPS );
 
 			while( aIter.IsMore() )
 			{
 				pObj = aIter.Next();
 
-                const String aObjectName( GetObjectName( pObj ) );
+				const String aObjectName( GetObjectName( pObj ) );
 
 				if( aObjectName.Len() )
 				{
 					if( !pEntry )
 						return( sal_False );
 
-                	aName = GetEntryText( pEntry );
+					aName = GetEntryText( pEntry );
 
 					if( aObjectName != aName )
 						return( sal_False );
@@ -975,15 +935,13 @@ sal_Bool SdPageObjsTLB::IsEqualToDoc( const SdDrawDocument* pInDoc )
 		}
 		nPage++;
 	}
-	// Wenn noch Eintraege in der Listbox vorhanden sind, wurden
-	// Objekte (mit Namen) oder Seiten geloescht
+	// Wenn noch Einträge in der Listbox vorhanden sind, wurden
+	// Objekte (mit Namen) oder Seiten gelöscht
 	return( !pEntry );
 }
 
 /*************************************************************************
-|*
-|* Selectierten String zurueckgeben
-|*
+|* Selectierten String zurückgeben
 \************************************************************************/
 
 String SdPageObjsTLB::GetSelectEntry()
@@ -992,11 +950,9 @@ String SdPageObjsTLB::GetSelectEntry()
 }
 
 /*************************************************************************
-|*
-|* Selektierte Eintrage zurueckgeben
+|* Selektierte Eintrage zurückgeben
 |* nDepth == 0 -> Seiten
 |* nDepth == 1 -> Objekte
-|*
 \************************************************************************/
 
 List* SdPageObjsTLB::GetSelectEntryList( sal_uInt16 nDepth )
@@ -1022,9 +978,7 @@ List* SdPageObjsTLB::GetSelectEntryList( sal_uInt16 nDepth )
 }
 
 /*************************************************************************
-|*
-|* Eintraege werden erst auf Anforderung (Doppelklick) eingefuegt
-|*
+|* Einträge werden erst auf Anforderung (Doppelklick) eingefügt
 \************************************************************************/
 
 void SdPageObjsTLB::RequestingChilds( SvLBoxEntry* pFileEntry )
@@ -1056,12 +1010,12 @@ void SdPageObjsTLB::RequestingChilds( SvLBoxEntry* pFileEntry )
 				if( pPage->GetPageKind() == PK_STANDARD )
 				{
 					pPageEntry = InsertEntry( pPage->GetName(),
-					                          aImgPage,
-					                          aImgPage,
-					                          pFileEntry,
-							                  sal_False,
-								              LIST_APPEND,
-								              reinterpret_cast< void* >( 1 ) );
+											  aImgPage,
+											  aImgPage,
+											  pFileEntry,
+											  sal_False,
+											  LIST_APPEND,
+											  reinterpret_cast< void* >( 1 ) );
 
 					SetExpandedEntryBmp( pPageEntry, aImgPageH, BMP_COLOR_HIGHCONTRAST );
 					SetCollapsedEntryBmp( pPageEntry, aImgPageH, BMP_COLOR_HIGHCONTRAST );
@@ -1077,7 +1031,6 @@ void SdPageObjsTLB::RequestingChilds( SvLBoxEntry* pFileEntry )
 							if( pObj->GetObjInventor() == SdrInventor && pObj->GetObjIdentifier() == OBJ_OLE2 )
 							{
 								SvLBoxEntry* pNewEntry = InsertEntry(aStr, maImgOle, maImgOle, pPageEntry);
-
 
 								SetExpandedEntryBmp( pNewEntry, maImgOleH, BMP_COLOR_HIGHCONTRAST );
 								SetCollapsedEntryBmp( pNewEntry, maImgOleH, BMP_COLOR_HIGHCONTRAST );
@@ -1115,58 +1068,56 @@ void SdPageObjsTLB::RequestingChilds( SvLBoxEntry* pFileEntry )
 }
 
 /*************************************************************************
-|*
-|*	Prueft, ob es sich um eine Draw-Datei handelt und oeffnet anhand des
-|*	uebergebenen Docs das BookmarkDoc
-|*
+|*	Prüft, ob es sich um eine Draw-Datei handelt und öffnet anhand des
+|*	übergebenen Docs das BookmarkDoc
 \************************************************************************/
 
 SdDrawDocument* SdPageObjsTLB::GetBookmarkDoc(SfxMedium* pMed)
 {
 	if (
-       !mpBookmarkDoc ||
+	   !mpBookmarkDoc ||
 		 (pMed && (!mpOwnMedium || mpOwnMedium->GetName() != pMed->GetName()))
-      )
+	  )
 	{
-        // create a new BookmarkDoc if now one exists or if a new Medium is provided
-        if (mpOwnMedium != pMed)
+		// create a new BookmarkDoc if now one exists or if a new Medium is provided
+		if (mpOwnMedium != pMed)
 		{
 			CloseBookmarkDoc();
 		}
 
 		if (pMed)
 		{
-            // it looks that it is undefined if a Medium was set by Fill() already
-            DBG_ASSERT( !mpMedium, "SfxMedium confusion!" );
-            delete mpMedium;
-            mpMedium = NULL;
+			// it looks like it is undefined if a Medium was set by Fill() already
+			DBG_ASSERT( !mpMedium, "SfxMedium confusion!" );
+			delete mpMedium;
+			mpMedium = NULL;
 
-            // take over this Medium (currently used only be Navigator)
+			// take over this Medium (currently used only be Navigator)
 			mpOwnMedium = pMed;
-        }
+		}
 
-        DBG_ASSERT( mpMedium || pMed, "No SfxMedium provided!" );
+		DBG_ASSERT( mpMedium || pMed, "No SfxMedium provided!" );
 
-        if( pMed )
-        {
-            // in this mode the document is also owned and controlled by this instance
-            mxBookmarkDocShRef = new ::sd::DrawDocShell(SFX_CREATE_MODE_STANDARD, sal_True);
-            if (mxBookmarkDocShRef->DoLoad(pMed))
-                mpBookmarkDoc = mxBookmarkDocShRef->GetDoc();
-            else
-                mpBookmarkDoc = NULL;
-        }
-        else if ( mpMedium )
-            // in this mode the document is owned and controlled by the SdDrawDocument
-            // it can be released by calling the corresponding CloseBookmarkDoc method
-            // successful creation of a document makes this the owner of the medium
-            mpBookmarkDoc = ((SdDrawDocument*) mpDoc)->OpenBookmarkDoc(*mpMedium);
+		if( pMed )
+		{
+			// in this mode the document is also owned and controlled by this instance
+			mxBookmarkDocShRef = new ::sd::DrawDocShell(SFX_CREATE_MODE_STANDARD, sal_True);
+			if (mxBookmarkDocShRef->DoLoad(pMed))
+				mpBookmarkDoc = mxBookmarkDocShRef->GetDoc();
+			else
+				mpBookmarkDoc = NULL;
+		}
+		else if ( mpMedium )
+			// in this mode the document is owned and controlled by the SdDrawDocument
+			// it can be released by calling the corresponding CloseBookmarkDoc method
+			// successful creation of a document makes this the owner of the medium
+			mpBookmarkDoc = ((SdDrawDocument*) mpDoc)->OpenBookmarkDoc(*mpMedium);
 
-        if ( !mpBookmarkDoc )
+		if ( !mpBookmarkDoc )
 		{
 			ErrorBox aErrorBox( this, WB_OK, String( SdResId( STR_READ_DATA_ERROR ) ) );
 			aErrorBox.Execute();
-            mpMedium = 0; //On failure the SfxMedium is invalid
+			mpMedium = 0; //On failure the SfxMedium is invalid
 		}
 	}
 
@@ -1174,9 +1125,7 @@ SdDrawDocument* SdPageObjsTLB::GetBookmarkDoc(SfxMedium* pMed)
 }
 
 /*************************************************************************
-|*
-|* Bookmark-Dokument schlie�en und loeschen
-|*
+|* Bookmark-Dokument schließen und löschen
 \************************************************************************/
 
 void SdPageObjsTLB::CloseBookmarkDoc()
@@ -1184,34 +1133,32 @@ void SdPageObjsTLB::CloseBookmarkDoc()
 	if (mxBookmarkDocShRef.Is())
 	{
 		mxBookmarkDocShRef->DoClose();
-        mxBookmarkDocShRef.Clear();
+		mxBookmarkDocShRef.Clear();
 
-        // Medium is owned by document, so it's destroyed already
-        mpOwnMedium = 0;
+		// Medium is owned by document, so it's destroyed already
+		mpOwnMedium = 0;
 	}
-    else if ( mpBookmarkDoc )
+	else if ( mpBookmarkDoc )
 	{
-        DBG_ASSERT( !mpOwnMedium, "SfxMedium confusion!" );
-        if ( mpDoc )
-        {
-            // The document owns the Medium, so the Medium will be invalid after closing the document
+		DBG_ASSERT( !mpOwnMedium, "SfxMedium confusion!" );
+		if ( mpDoc )
+		{
+			// The document owns the Medium, so the Medium will be invalid after closing the document
 			((SdDrawDocument*) mpDoc)->CloseBookmarkDoc();
-            mpMedium = 0;
-        }
+			mpMedium = 0;
+		}
 	}
-    else
-    {
-        // perhaps mpOwnMedium provided, but no successful creation of BookmarkDoc
-        delete mpOwnMedium;
-        mpOwnMedium = NULL;
-    }
+	else
+	{
+		// perhaps mpOwnMedium provided, but no successful creation of BookmarkDoc
+		delete mpOwnMedium;
+		mpOwnMedium = NULL;
+	}
 
 	mpBookmarkDoc = NULL;
 }
 
 /*************************************************************************
-|*
-|*
 |*
 \************************************************************************/
 
@@ -1223,8 +1170,8 @@ void SdPageObjsTLB::SelectHdl()
 
 	while( pEntry && mbLinkableSelected )
 	{
-	    if( NULL == pEntry->GetUserData() )
-	        mbLinkableSelected = sal_False;
+		if( NULL == pEntry->GetUserData() )
+			mbLinkableSelected = sal_False;
 
 		pEntry = NextSelected( pEntry );
 	}
@@ -1233,9 +1180,7 @@ void SdPageObjsTLB::SelectHdl()
 }
 
 /*************************************************************************
-|*
-|* Ueberlaedt RETURN mit der Funktionsweise von DoubleClick
-|*
+|* Überlädt RETURN mit der Funktionsweise von DoubleClick
 \************************************************************************/
 
 void SdPageObjsTLB::KeyInput( const KeyEvent& rKEvt )
@@ -1277,8 +1222,8 @@ void SdPageObjsTLB::KeyInput( const KeyEvent& rKEvt )
 			   pSdDrawDocShell->GotoTreeBookmark(aStr);
 			   bMarked=pSdDrawDocShell->GetObjectIsmarked(aStr);
 		   }
-		   //Removed by yanjun for sym2_6385
-		   //The symphony2.0 can support morn than one level tree list, also support to select tow or more items in different level.
+		   // Removed by yanjun for sym2_6385
+		   // The symphony2.0 can support more than one level tree list, also support to select tow or more items in different level.
 		   /*
 		   SvLBoxEntry* pBeginEntry = First();
 		   if( pBeginEntry )
@@ -1313,65 +1258,61 @@ void SdPageObjsTLB::KeyInput( const KeyEvent& rKEvt )
 }
 
 /*************************************************************************
-|*
 |* StartDrag-Request
-|*
 \************************************************************************/
 
 void SdPageObjsTLB::StartDrag( sal_Int8 nAction, const Point& rPosPixel)
 {
-    (void)nAction;
-    (void)rPosPixel;
+	(void)nAction;
+	(void)rPosPixel;
 
 	SdNavigatorWin* pNavWin = NULL;
-    SvLBoxEntry* pEntry = GetEntry(rPosPixel);
+	SvLBoxEntry* pEntry = GetEntry(rPosPixel);
 
 	if( mpFrame->HasChildWindow( SID_NAVIGATOR ) )
 		pNavWin = (SdNavigatorWin*) ( mpFrame->GetChildWindow( SID_NAVIGATOR )->GetContextWindow( SD_MOD() ) );
 
 	if (pEntry != NULL
-        && pNavWin !=NULL
-        && pNavWin == mpParent
-        && pNavWin->GetNavigatorDragType() != NAVIGATOR_DRAGTYPE_NONE )
+		&& pNavWin !=NULL
+		&& pNavWin == mpParent
+		&& pNavWin->GetNavigatorDragType() != NAVIGATOR_DRAGTYPE_NONE )
 	{
-        // Mark only the children of the page under the mouse as drop
-        // targets.  This prevents moving shapes from one page to another.
+		// Mark only the children of the page under the mouse as drop
+		// targets. This prevents moving shapes from one page to another.
 
-        // Select all entries and disable them as drop targets.
-        SetSelectionMode(MULTIPLE_SELECTION);
-        SetCursor(NULL, sal_False);
-        SelectAll(sal_True, sal_False);
-        EnableSelectionAsDropTarget(sal_False, sal_True);
+		// Select all entries and disable them as drop targets.
+		SetSelectionMode(MULTIPLE_SELECTION);
+		SetCursor(NULL, sal_False);
+		SelectAll(sal_True, sal_False);
+		EnableSelectionAsDropTarget(sal_False, sal_True);
 
-        // Enable only the entries as drop targets that are children of the
-        // page under the mouse.
-        SvLBoxEntry* pParent = GetRootLevelParent(pEntry);
-        if (pParent != NULL)
-        {
-            SelectAll(sal_False, sal_False);
-            Select(pParent, sal_True);
-            //            for (SvLBoxEntry*pChild=FirstChild(pParent); pChild!=NULL; pChild=NextSibling(pChild))
-            //                Select(pChild, sal_True);
-            EnableSelectionAsDropTarget(sal_True, sal_True);//sal_False);
-        }
+		// Enable only the entries as drop targets that are children of the
+		// page under the mouse.
+		SvLBoxEntry* pParent = GetRootLevelParent(pEntry);
+		if (pParent != NULL)
+		{
+			SelectAll(sal_False, sal_False);
+			Select(pParent, sal_True);
+			//for (SvLBoxEntry*pChild=FirstChild(pParent); pChild!=NULL; pChild=NextSibling(pChild))
+			//Select(pChild, sal_True);
+			EnableSelectionAsDropTarget(sal_True, sal_True);//sal_False);
+		}
 
-        // Set selection back to the entry under the mouse.
-        SelectAll(sal_False,sal_False);
-        SetSelectionMode(SINGLE_SELECTION);
-        Select(pEntry, sal_True);
+		// Set selection back to the entry under the mouse.
+		SelectAll(sal_False,sal_False);
+		SetSelectionMode(SINGLE_SELECTION);
+		Select(pEntry, sal_True);
 
-		//  Aus dem ExecuteDrag heraus kann der Navigator geloescht werden
-		//  (beim Umschalten auf einen anderen Dokument-Typ), das wuerde aber
-		//  den StarView MouseMove-Handler, der Command() aufruft, umbringen.
-		//  Deshalb Drag&Drop asynchron:
-        Application::PostUserEvent( STATIC_LINK( this, SdPageObjsTLB, ExecDragHdl ) );
+		// Aus dem ExecuteDrag heraus kann der Navigator gelöscht werden
+		// (beim Umschalten auf einen anderen Dokument-Typ), das würde aber
+		// den StarView MouseMove-Handler, der Command() aufruft, umbringen.
+		// Deshalb Drag&Drop asynchron:
+		Application::PostUserEvent( STATIC_LINK( this, SdPageObjsTLB, ExecDragHdl ) );
 	}
 }
 
 /*************************************************************************
-|*
 |* Begin drag
-|*
 \************************************************************************/
 
 void SdPageObjsTLB::DoDrag()
@@ -1383,7 +1324,7 @@ void SdPageObjsTLB::DoDrag()
 	if( mpDropNavWin )
 	{
 		::sd::DrawDocShell* pDocShell = mpDoc->GetDocSh();
-        String aURL = INetURLObject( pDocShell->GetMedium()->GetPhysicalName(), INET_PROT_FILE ).GetMainURL( INetURLObject::NO_DECODE );
+		String aURL = INetURLObject( pDocShell->GetMedium()->GetPhysicalName(), INET_PROT_FILE ).GetMainURL( INetURLObject::NO_DECODE );
 		NavigatorDragType	eDragType = mpDropNavWin->GetNavigatorDragType();
 
 		aURL.Append( '#' );
@@ -1394,81 +1335,79 @@ void SdPageObjsTLB::DoDrag()
 
 		if( eDragType == NAVIGATOR_DRAGTYPE_LINK )
 			nDNDActions = DND_ACTION_LINK;	// #93240# Either COPY *or* LINK, never both!
-        else if (mpDoc->GetSdPageCount(PK_STANDARD) == 1)
-        {
-            // Can not move away the last slide in a document.
-            nDNDActions = DND_ACTION_COPY;
-        }
+		else if (mpDoc->GetSdPageCount(PK_STANDARD) == 1)
+		{
+			// Can not move away the last slide in a document.
+			nDNDActions = DND_ACTION_COPY;
+		}
 
 		SvTreeListBox::ReleaseMouse();
 
 		bIsInDrag = sal_True;
 
-        SvLBoxDDInfo aDDInfo;
-        memset(&aDDInfo,0,sizeof(SvLBoxDDInfo));
-        aDDInfo.pApp = GetpApp();
-        aDDInfo.pSource = this;
-        //            aDDInfo.pDDStartEntry = pEntry;
+		SvLBoxDDInfo aDDInfo;
+		memset(&aDDInfo,0,sizeof(SvLBoxDDInfo));
+		aDDInfo.pApp = GetpApp();
+		aDDInfo.pSource = this;
+		// aDDInfo.pDDStartEntry = pEntry;
 		::com::sun::star::uno::Sequence<sal_Int8> aSequence (sizeof(SvLBoxDDInfo));
 		memcpy(aSequence.getArray(), (sal_Char*)&aDDInfo, sizeof(SvLBoxDDInfo));
 		::com::sun::star::uno::Any aTreeListBoxData (aSequence);
 
 		// object is destroyed by internal reference mechanism
 		SdTransferable* pTransferable = new SdPageObjsTLB::SdPageObjsTransferable(
-            *this, aBookmark, *pDocShell, eDragType, aTreeListBoxData);
+			*this, aBookmark, *pDocShell, eDragType, aTreeListBoxData);
 
-        // Get the view.
-        ::sd::ViewShell* pViewShell = GetViewShellForDocShell(*pDocShell);
-        if (pViewShell == NULL)
-        {
-            OSL_ASSERT(pViewShell!=NULL);
-            return;
-        }
-        sd::View* pView = pViewShell->GetView();
-        if (pView == NULL)
-        {
-            OSL_ASSERT(pView!=NULL);
-            return;
-        }
+		// Get the view.
+		::sd::ViewShell* pViewShell = GetViewShellForDocShell(*pDocShell);
+		if (pViewShell == NULL)
+		{
+			OSL_ASSERT(pViewShell!=NULL);
+			return;
+		}
+		sd::View* pView = pViewShell->GetView();
+		if (pView == NULL)
+		{
+			OSL_ASSERT(pView!=NULL);
+			return;
+		}
 
-        SdrObject* pObject = NULL;
-        void* pUserData = GetCurEntry()->GetUserData();
-        if (pUserData != NULL && pUserData != (void*)1)
-            pObject = reinterpret_cast<SdrObject*>(pUserData);
-        if (pObject != NULL)
-        {
-            // For shapes without a user supplied name (the automatically
-            // created name does not count), a different drag and drop technique
-            // is used.
-            if (GetObjectName(pObject, false).Len() == 0)
-            {
-                AddShapeToTransferable(*pTransferable, *pObject);
-                pTransferable->SetView(pView);
-                SD_MOD()->pTransferDrag = pTransferable;
-            }
+		SdrObject* pObject = NULL;
+		void* pUserData = GetCurEntry()->GetUserData();
+		if (pUserData != NULL && pUserData != (void*)1)
+			pObject = reinterpret_cast<SdrObject*>(pUserData);
+		if (pObject != NULL)
+		{
+			// For shapes without a user supplied name (the automatically
+			// created name does not count), a different drag and drop technique
+			// is used.
+			if (GetObjectName(pObject, false).Len() == 0)
+			{
+				AddShapeToTransferable(*pTransferable, *pObject);
+				pTransferable->SetView(pView);
+				SD_MOD()->pTransferDrag = pTransferable;
+			}
 
-            // Unnamed shapes have to be selected to be recognized by the
-            // current drop implementation.  In order to have a consistent
-            // behaviour for all shapes, every shape that is to be dragged is
-            // selected first.
-            SdrPageView* pPageView = pView->GetSdrPageView();
-            pView->UnmarkAllObj(pPageView);
-            pView->MarkObj(pObject, pPageView);
-        }
-        else
-        {
-            pTransferable->SetView(pView);
-            SD_MOD()->pTransferDrag = pTransferable;
-        }
+			// Unnamed shapes have to be selected to be recognized by the
+			// current drop implementation. In order to have a consistent
+			// behavior for all shapes, every shape that is to be dragged is
+			// selected first.
+			SdrPageView* pPageView = pView->GetSdrPageView();
+			pView->UnmarkAllObj(pPageView);
+			pView->MarkObj(pObject, pPageView);
+		}
+		else
+		{
+			pTransferable->SetView(pView);
+			SD_MOD()->pTransferDrag = pTransferable;
+		}
 
-        pTransferable->StartDrag( this, nDNDActions );
+		pTransferable->StartDrag( this, nDNDActions );
 	}
 }
 
 /*************************************************************************
-|*
 |* Drag finished
-|*
 \************************************************************************/
 
 void SdPageObjsTLB::OnDragFinished( sal_uInt8 )
@@ -1489,383 +1428,359 @@ void SdPageObjsTLB::OnDragFinished( sal_uInt8 )
 }
 
 /*************************************************************************
-|*
 |* AcceptDrop-Event
-|*
 \************************************************************************/
 
 sal_Int8 SdPageObjsTLB::AcceptDrop (const AcceptDropEvent& rEvent)
 {
-    sal_Int8 nResult (DND_ACTION_NONE);
+	sal_Int8 nResult (DND_ACTION_NONE);
 
 	if ( !bIsInDrag && IsDropFormatSupported( FORMAT_FILE ) )
-    {
-        nResult = rEvent.mnAction;
-    }
-    else
-    {
-        SvLBoxEntry* pEntry = GetDropTarget(rEvent.maPosPixel);
-        if (rEvent.mbLeaving || !CheckDragAndDropMode( this, rEvent.mnAction ))
-        {
-            ImplShowTargetEmphasis( pTargetEntry, sal_False );
-        }
-        else if( !nDragDropMode )
-        {
-            DBG_ERRORFILE( "SdPageObjsTLB::AcceptDrop(): no target" );
-        }
-        else if (IsDropAllowed(pEntry))
-        {
-            nResult = DND_ACTION_MOVE;
+	{
+		nResult = rEvent.mnAction;
+	}
+	else
+	{
+		SvLBoxEntry* pEntry = GetDropTarget(rEvent.maPosPixel);
+		if (rEvent.mbLeaving || !CheckDragAndDropMode( this, rEvent.mnAction ))
+		{
+			ImplShowTargetEmphasis( pTargetEntry, sal_False );
+		}
+		else if( !nDragDropMode )
+		{
+			DBG_ERRORFILE( "SdPageObjsTLB::AcceptDrop(): no target" );
+		}
+		else if (IsDropAllowed(pEntry))
+		{
+			nResult = DND_ACTION_MOVE;
 
-            // Draw emphasis.
-            if (pEntry != pTargetEntry || !(nImpFlags & SVLBOX_TARGEMPH_VIS))
-            {
-                ImplShowTargetEmphasis( pTargetEntry, sal_False );
-                pTargetEntry = pEntry;
-                ImplShowTargetEmphasis( pTargetEntry, sal_True );
-            }
-        }
-    }
+			// Draw emphasis.
+			if (pEntry != pTargetEntry || !(nImpFlags & SVLBOX_TARGEMPH_VIS))
+			{
+				ImplShowTargetEmphasis( pTargetEntry, sal_False );
+				pTargetEntry = pEntry;
+				ImplShowTargetEmphasis( pTargetEntry, sal_True );
+			}
+		}
+	}
 
-    // Hide emphasis when there is no valid drop action.
-    if (nResult == DND_ACTION_NONE)
-        ImplShowTargetEmphasis(pTargetEntry, sal_False);
+	// Hide emphasis when there is no valid drop action.
+	if (nResult == DND_ACTION_NONE)
+		ImplShowTargetEmphasis(pTargetEntry, sal_False);
 
-    return nResult;
+	return nResult;
 }
 
 /*************************************************************************
-|*
 |* ExecuteDrop-Event
-|*
 \************************************************************************/
 
 sal_Int8 SdPageObjsTLB::ExecuteDrop( const ExecuteDropEvent& rEvt )
 {
 	sal_Int8 nRet = DND_ACTION_NONE;
 
-    try
-    {
-        if( !bIsInDrag )
-        {
-            SdNavigatorWin* pNavWin = NULL;
-            sal_uInt16			nId = SID_NAVIGATOR;
+	try
+	{
+		if( !bIsInDrag )
+		{
+			SdNavigatorWin* pNavWin = NULL;
+			sal_uInt16			nId = SID_NAVIGATOR;
 
-            if( mpFrame->HasChildWindow( nId ) )
-                pNavWin = (SdNavigatorWin*)( mpFrame->GetChildWindow( nId )->GetContextWindow( SD_MOD() ) );
+			if( mpFrame->HasChildWindow( nId ) )
+				pNavWin = (SdNavigatorWin*)( mpFrame->GetChildWindow( nId )->GetContextWindow( SD_MOD() ) );
 
-            if( pNavWin && ( pNavWin == mpParent ) )
-            {
-                TransferableDataHelper	aDataHelper( rEvt.maDropEvent.Transferable );
-                String					aFile;
+			if( pNavWin && ( pNavWin == mpParent ) )
+			{
+				TransferableDataHelper	aDataHelper( rEvt.maDropEvent.Transferable );
+				String					aFile;
 
-                if( aDataHelper.GetString( FORMAT_FILE, aFile ) &&
-                    ( (SdNavigatorWin*) mpParent)->InsertFile( aFile ) )
-                {
-                    nRet = rEvt.mnAction;
-                }
-            }
-        }
-    }
-    catch (com::sun::star::uno::Exception&)
-    {
-        DBG_UNHANDLED_EXCEPTION();
-    }
+				if( aDataHelper.GetString( FORMAT_FILE, aFile ) &&
+					( (SdNavigatorWin*) mpParent)->InsertFile( aFile ) )
+				{
+					nRet = rEvt.mnAction;
+				}
+			}
+		}
+	}
+	catch (com::sun::star::uno::Exception&)
+	{
+		DBG_UNHANDLED_EXCEPTION();
+	}
 
-    if (nRet == DND_ACTION_NONE)
-        SvTreeListBox::ExecuteDrop(rEvt, this);
-
+	if (nRet == DND_ACTION_NONE)
+		SvTreeListBox::ExecuteDrop(rEvt, this);
 
 	return nRet;
 }
 
 /*************************************************************************
-|*
-|* Handler fuers Dragging
-|*
+|* Handler for dragging
 \************************************************************************/
 
 IMPL_STATIC_LINK(SdPageObjsTLB, ExecDragHdl, void*, EMPTYARG)
 {
 	//	als Link, damit asynchron ohne ImpMouseMoveMsg auf dem Stack auch der
-	//	Navigator geloescht werden darf
+	//	Navigator gelöscht werden darf
 	pThis->DoDrag();
 	return 0;
 }
 
-
 bool SdPageObjsTLB::PageBelongsToCurrentShow (const SdPage* pPage) const
 {
-    // Return <TRUE/> as default when there is no custom show or when none
-    // is used.  The page does then belong to the standard show.
-    bool bBelongsToShow = true;
+	// Return <TRUE/> as default when there is no custom show or when none
+	// is used. The page does then belong to the standard show.
+	bool bBelongsToShow = true;
 
-    if (mpDoc->getPresentationSettings().mbCustomShow)
-    {
-        // Get the current custom show.
-        SdCustomShow* pCustomShow = NULL;
-        List* pShowList = const_cast<SdDrawDocument*>(mpDoc)->GetCustomShowList();
-        if (pShowList != NULL)
-        {
-            sal_uLong nCurrentShowIndex = pShowList->GetCurPos();
-            void* pObject = pShowList->GetObject(nCurrentShowIndex);
-            pCustomShow = static_cast<SdCustomShow*>(pObject);
-        }
+	if (mpDoc->getPresentationSettings().mbCustomShow)
+	{
+		// Get the current custom show.
+		SdCustomShow* pCustomShow = NULL;
+		List* pShowList = const_cast<SdDrawDocument*>(mpDoc)->GetCustomShowList();
+		if (pShowList != NULL)
+		{
+			sal_uLong nCurrentShowIndex = pShowList->GetCurPos();
+			void* pObject = pShowList->GetObject(nCurrentShowIndex);
+			pCustomShow = static_cast<SdCustomShow*>(pObject);
+		}
 
-        // Check whether the given page is part of that custom show.
-        if (pCustomShow != NULL)
-        {
-            bBelongsToShow = false;
-            sal_uLong nPageCount = pCustomShow->Count();
-            for (sal_uInt16 i=0; i<nPageCount && !bBelongsToShow; i++)
-                if (pPage == static_cast<SdPage*>(pCustomShow->GetObject (i)))
-                    bBelongsToShow = true;
-        }
-    }
+		// Check whether the given page is part of that custom show.
+		if (pCustomShow != NULL)
+		{
+			bBelongsToShow = false;
+			sal_uLong nPageCount = pCustomShow->Count();
+			for (sal_uInt16 i=0; i<nPageCount && !bBelongsToShow; i++)
+				if (pPage == static_cast<SdPage*>(pCustomShow->GetObject (i)))
+					bBelongsToShow = true;
+		}
+	}
 
-    return bBelongsToShow;
+	return bBelongsToShow;
 }
-
-
-
 
 sal_Bool SdPageObjsTLB::NotifyMoving(
-    SvLBoxEntry* pTarget,
-    SvLBoxEntry* pEntry,
-    SvLBoxEntry*& rpNewParent,
-    sal_uLong& rNewChildPos)
+	SvLBoxEntry* pTarget,
+	SvLBoxEntry* pEntry,
+	SvLBoxEntry*& rpNewParent,
+	sal_uLong& rNewChildPos)
 {
-    SvLBoxEntry* pDestination = pTarget;
-    while (GetParent(pDestination) != NULL && GetParent(GetParent(pDestination)) != NULL)
-        pDestination = GetParent(pDestination);
+	SvLBoxEntry* pDestination = pTarget;
+	while (GetParent(pDestination) != NULL && GetParent(GetParent(pDestination)) != NULL)
+		pDestination = GetParent(pDestination);
 
-    SdrObject* pTargetObject = reinterpret_cast<SdrObject*>(pDestination->GetUserData());
-    SdrObject* pSourceObject = reinterpret_cast<SdrObject*>(pEntry->GetUserData());
-    if (pSourceObject == reinterpret_cast<SdrObject*>(1))
-        pSourceObject = NULL;
+	SdrObject* pTargetObject = reinterpret_cast<SdrObject*>(pDestination->GetUserData());
+	SdrObject* pSourceObject = reinterpret_cast<SdrObject*>(pEntry->GetUserData());
+	if (pSourceObject == reinterpret_cast<SdrObject*>(1))
+		pSourceObject = NULL;
 
-    if (pTargetObject != NULL && pSourceObject != NULL)
-    {
-        SdrPage* pObjectList = pSourceObject->GetPage();
-        if (pObjectList != NULL)
-        {
-            sal_uInt32 nNewPosition;
-            if (pTargetObject == reinterpret_cast<SdrObject*>(1))
-                nNewPosition = 0;
-            else
-                nNewPosition = pTargetObject->GetNavigationPosition() + 1;
-            pObjectList->SetObjectNavigationPosition(*pSourceObject, nNewPosition);
-        }
+	if (pTargetObject != NULL && pSourceObject != NULL)
+	{
+		SdrPage* pObjectList = pSourceObject->GetPage();
+		if (pObjectList != NULL)
+		{
+			sal_uInt32 nNewPosition;
+			if (pTargetObject == reinterpret_cast<SdrObject*>(1))
+				nNewPosition = 0;
+			else
+				nNewPosition = pTargetObject->GetNavigationPosition() + 1;
+			pObjectList->SetObjectNavigationPosition(*pSourceObject, nNewPosition);
+		}
 
-        // Update the tree list.
-        if (pTarget == NULL)
-        {
-            rpNewParent = 0;
-            rNewChildPos = 0;
-            return sal_True;
-        }
-        else if (GetParent(pDestination) == NULL)
-        {
-            rpNewParent = pDestination;
-            rNewChildPos = 0;
-        }
-        else
-        {
-            rpNewParent = GetParent(pDestination);
-            rNewChildPos = pModel->GetRelPos(pDestination) + 1;
-            rNewChildPos += nCurEntrySelPos;
-            nCurEntrySelPos++;
-        }
-        return sal_True;
-    }
-    else
-        return sal_False;
+		// Update the tree list.
+		if (pTarget == NULL)
+		{
+			rpNewParent = 0;
+			rNewChildPos = 0;
+			return sal_True;
+		}
+		else if (GetParent(pDestination) == NULL)
+		{
+			rpNewParent = pDestination;
+			rNewChildPos = 0;
+		}
+		else
+		{
+			rpNewParent = GetParent(pDestination);
+			rNewChildPos = pModel->GetRelPos(pDestination) + 1;
+			rNewChildPos += nCurEntrySelPos;
+			nCurEntrySelPos++;
+		}
+		return sal_True;
+	}
+	else
+		return sal_False;
 }
-
-
-
 
 SvLBoxEntry* SdPageObjsTLB::GetDropTarget (const Point& rLocation)
 {
-    SvLBoxEntry* pEntry = SvTreeListBox::GetDropTarget(rLocation);
-    if (pEntry == NULL)
-        return NULL;
+	SvLBoxEntry* pEntry = SvTreeListBox::GetDropTarget(rLocation);
+	if (pEntry == NULL)
+		return NULL;
 
-    if (GetParent(pEntry) == NULL)
-    {
-        // Use page entry as insertion position.
-    }
-    else
-    {
-        // Go to second hierarchy level, i.e. top level shapes,
-        // i.e. children of pages.
-        while (GetParent(pEntry) != NULL && GetParent(GetParent(pEntry)) != NULL)
-            pEntry = GetParent(pEntry);
+	if (GetParent(pEntry) == NULL)
+	{
+		// Use page entry as insertion position.
+	}
+	else
+	{
+		// Go to second hierarchy level, i.e. top level shapes,
+		// i.e. children of pages.
+		while (GetParent(pEntry) != NULL && GetParent(GetParent(pEntry)) != NULL)
+			pEntry = GetParent(pEntry);
 
-        // Advance to next sibling.
-        SvLBoxEntry* pNext;
-        sal_uInt16 nDepth (0);
-        while (pEntry != NULL)
-        {
-            pNext = dynamic_cast<SvLBoxEntry*>(NextVisible(pEntry, &nDepth));
-            if (pNext != NULL && nDepth > 0 && nDepth!=0xffff)
-                pEntry = pNext;
-            else
-                break;
-        }
-    }
+		// Advance to next sibling.
+		SvLBoxEntry* pNext;
+		sal_uInt16 nDepth (0);
+		while (pEntry != NULL)
+		{
+			pNext = dynamic_cast<SvLBoxEntry*>(NextVisible(pEntry, &nDepth));
+			if (pNext != NULL && nDepth > 0 && nDepth!=0xffff)
+				pEntry = pNext;
+			else
+				break;
+		}
+	}
 
-    return pEntry;
+	return pEntry;
 }
-
-
-
 
 bool SdPageObjsTLB::IsDropAllowed (SvLBoxEntry* pEntry)
 {
-    if (pEntry == NULL)
-        return false;
+	if (pEntry == NULL)
+		return false;
 
-    if ( ! IsDropFormatSupported(SdPageObjsTransferable::GetListBoxDropFormatId()))
-        return false;
+	if ( ! IsDropFormatSupported(SdPageObjsTransferable::GetListBoxDropFormatId()))
+		return false;
 
-    if ((pEntry->GetFlags() & SV_ENTRYFLAG_DISABLE_DROP) != 0)
-        return false;
+	if ((pEntry->GetFlags() & SV_ENTRYFLAG_DISABLE_DROP) != 0)
+		return false;
 
-    return true;
+	return true;
 }
 
-
-
-
 void SdPageObjsTLB::AddShapeToTransferable (
-    SdTransferable& rTransferable,
-    SdrObject& rObject) const
+	SdTransferable& rTransferable,
+	SdrObject& rObject) const
 {
 	TransferableObjectDescriptor aObjectDescriptor;
-    bool bIsDescriptorFillingPending (true);
+	bool bIsDescriptorFillingPending (true);
 
-    const SdrOle2Obj* pOleObject = dynamic_cast<const SdrOle2Obj*>(&rObject);
-    if (pOleObject != NULL && pOleObject->GetObjRef().is())
-    {
-        // If object has no persistence it must be copied as part of the document
-        try
-        {
-            uno::Reference< embed::XEmbedPersist > xPersObj (pOleObject->GetObjRef(), uno::UNO_QUERY );
-            if (xPersObj.is() && xPersObj->hasEntry())
-            {
-                SvEmbedTransferHelper::FillTransferableObjectDescriptor(
-                    aObjectDescriptor,
-                    pOleObject->GetObjRef(),
-                    pOleObject->GetGraphic(),
-                    pOleObject->GetAspect());
-                bIsDescriptorFillingPending = false;
-            }
-        }
-        catch( uno::Exception& )
-        {
-        }
+	const SdrOle2Obj* pOleObject = dynamic_cast<const SdrOle2Obj*>(&rObject);
+	if (pOleObject != NULL && pOleObject->GetObjRef().is())
+	{
+		// If object has no persistence it must be copied as part of the document
+		try
+		{
+			uno::Reference< embed::XEmbedPersist > xPersObj (pOleObject->GetObjRef(), uno::UNO_QUERY );
+			if (xPersObj.is() && xPersObj->hasEntry())
+			{
+				SvEmbedTransferHelper::FillTransferableObjectDescriptor(
+					aObjectDescriptor,
+					pOleObject->GetObjRef(),
+					pOleObject->GetGraphic(),
+					pOleObject->GetAspect());
+				bIsDescriptorFillingPending = false;
+			}
+		}
+		catch( uno::Exception& )
+		{
+		}
 	}
 
-    ::sd::DrawDocShell* pDocShell = mpDoc->GetDocSh();
+	::sd::DrawDocShell* pDocShell = mpDoc->GetDocSh();
 	if (bIsDescriptorFillingPending && pDocShell!=NULL)
-    {
-        bIsDescriptorFillingPending = false;
-        pDocShell->FillTransferableObjectDescriptor(aObjectDescriptor);
-    }
+	{
+		bIsDescriptorFillingPending = false;
+		pDocShell->FillTransferableObjectDescriptor(aObjectDescriptor);
+	}
 
-    Point aDragPos (rObject.GetCurrentBoundRect().Center());
-    //Point aDragPos (0,0);
+	Point aDragPos (rObject.GetCurrentBoundRect().Center());
+	//Point aDragPos (0,0);
 	aObjectDescriptor.maDragStartPos = aDragPos;
-    //	aObjectDescriptor.maSize = GetAllMarkedRect().GetSize();
-    if (pDocShell != NULL)
-        aObjectDescriptor.maDisplayName = pDocShell->GetMedium()->GetURLObject().GetURLNoPass();
-    else
-        aObjectDescriptor.maDisplayName = String();
+	//	aObjectDescriptor.maSize = GetAllMarkedRect().GetSize();
+	if (pDocShell != NULL)
+		aObjectDescriptor.maDisplayName = pDocShell->GetMedium()->GetURLObject().GetURLNoPass();
+	else
+		aObjectDescriptor.maDisplayName = String();
 	aObjectDescriptor.mbCanLink = sal_False;
 
 	rTransferable.SetStartPos(aDragPos);
 	rTransferable.SetObjectDescriptor( aObjectDescriptor );
 }
 
-
-
-
 ::sd::ViewShell* SdPageObjsTLB::GetViewShellForDocShell (::sd::DrawDocShell& rDocShell)
 {
-    {
-        ::sd::ViewShell* pViewShell = rDocShell.GetViewShell();
-        if (pViewShell != NULL)
-            return pViewShell;
-    }
+	{
+		::sd::ViewShell* pViewShell = rDocShell.GetViewShell();
+		if (pViewShell != NULL)
+			return pViewShell;
+	}
 
-    try
-    {
-        // Get a component enumeration from the desktop and search it for documents.
-        uno::Reference<lang::XMultiServiceFactory> xFactory (
-            ::comphelper::getProcessServiceFactory ());
-        if ( ! xFactory.is())
-            return NULL;
+	try
+	{
+		// Get a component enumeration from the desktop and search it for documents.
+		uno::Reference<lang::XMultiServiceFactory> xFactory (
+			::comphelper::getProcessServiceFactory ());
+		if ( ! xFactory.is())
+			return NULL;
 
-        uno::Reference<frame::XDesktop> xDesktop (xFactory->createInstance (
-                ::rtl::OUString::createFromAscii("com.sun.star.frame.Desktop")), uno::UNO_QUERY);
-        if ( ! xDesktop.is())
-            return NULL;
+		uno::Reference<frame::XDesktop> xDesktop (xFactory->createInstance (
+				::rtl::OUString::createFromAscii("com.sun.star.frame.Desktop")), uno::UNO_QUERY);
+		if ( ! xDesktop.is())
+			return NULL;
 
-        uno::Reference<frame::XFramesSupplier> xFrameSupplier (xDesktop, uno::UNO_QUERY);
-        if ( ! xFrameSupplier.is())
-            return NULL;
+		uno::Reference<frame::XFramesSupplier> xFrameSupplier (xDesktop, uno::UNO_QUERY);
+		if ( ! xFrameSupplier.is())
+			return NULL;
 
-        uno::Reference<container::XIndexAccess> xFrameAccess (xFrameSupplier->getFrames(), uno::UNO_QUERY);
-        if ( ! xFrameAccess.is())
-            return NULL;
+		uno::Reference<container::XIndexAccess> xFrameAccess (xFrameSupplier->getFrames(), uno::UNO_QUERY);
+		if ( ! xFrameAccess.is())
+			return NULL;
 
-        for (sal_Int32 nIndex=0,nCount=xFrameAccess->getCount(); nIndex<nCount; ++nIndex)
-        {
-            uno::Reference<frame::XFrame> xFrame;
-            if ( ! (xFrameAccess->getByIndex(nIndex) >>= xFrame))
-                continue;
+		for (sal_Int32 nIndex=0,nCount=xFrameAccess->getCount(); nIndex<nCount; ++nIndex)
+		{
+			uno::Reference<frame::XFrame> xFrame;
+			if ( ! (xFrameAccess->getByIndex(nIndex) >>= xFrame))
+				continue;
 
-            ::sd::DrawController* pController = dynamic_cast<sd::DrawController*>(xFrame->getController().get());
-            if (pController == NULL)
-                continue;
-            ::sd::ViewShellBase* pBase = pController->GetViewShellBase();
-            if (pBase == NULL)
-                continue;
-            if (pBase->GetDocShell() != &rDocShell)
-                continue;
+			::sd::DrawController* pController = dynamic_cast<sd::DrawController*>(xFrame->getController().get());
+			if (pController == NULL)
+				continue;
+			::sd::ViewShellBase* pBase = pController->GetViewShellBase();
+			if (pBase == NULL)
+				continue;
+			if (pBase->GetDocShell() != &rDocShell)
+				continue;
 
-            const ::boost::shared_ptr<sd::ViewShell> pViewShell (pBase->GetMainViewShell());
-            if (pViewShell)
-                return pViewShell.get();
-        }
-    }
-    catch (uno::Exception e)
-    {
-        // When there is an exception then simply use the default value of
-        // bIsEnabled and disable the controls.
-    }
-    return NULL;
+			const ::boost::shared_ptr<sd::ViewShell> pViewShell (pBase->GetMainViewShell());
+			if (pViewShell)
+				return pViewShell.get();
+		}
+	}
+	catch (uno::Exception e)
+	{
+		// When there is an exception then simply use the default value of
+		// bIsEnabled and disable the controls.
+	}
+	return NULL;
 }
-
-
-
 
 //===== IconProvider ==========================================================
 
 SdPageObjsTLB::IconProvider::IconProvider (void)
-    : maImgPage( BitmapEx( SdResId( BMP_PAGE ) ) ),
-      maImgPageExcl( BitmapEx( SdResId( BMP_PAGE_EXCLUDED ) ) ),
-      maImgPageObjsExcl( BitmapEx( SdResId( BMP_PAGEOBJS_EXCLUDED ) ) ),
-      maImgPageObjs( BitmapEx( SdResId( BMP_PAGEOBJS ) ) ),
-      maImgObjects( BitmapEx( SdResId( BMP_OBJECTS ) ) ),
-      maImgGroup( BitmapEx( SdResId( BMP_GROUP ) ) ),
+	: maImgPage( BitmapEx( SdResId( BMP_PAGE ) ) ),
+	  maImgPageExcl( BitmapEx( SdResId( BMP_PAGE_EXCLUDED ) ) ),
+	  maImgPageObjsExcl( BitmapEx( SdResId( BMP_PAGEOBJS_EXCLUDED ) ) ),
+	  maImgPageObjs( BitmapEx( SdResId( BMP_PAGEOBJS ) ) ),
+	  maImgObjects( BitmapEx( SdResId( BMP_OBJECTS ) ) ),
+	  maImgGroup( BitmapEx( SdResId( BMP_GROUP ) ) ),
 
-      maImgPageH( BitmapEx( SdResId( BMP_PAGE_H ) ) ),
-      maImgPageExclH( BitmapEx( SdResId( BMP_PAGE_EXCLUDED_H ) ) ),
-      maImgPageObjsExclH( BitmapEx( SdResId( BMP_PAGEOBJS_EXCLUDED_H ) ) ),
-      maImgPageObjsH( BitmapEx( SdResId( BMP_PAGEOBJS_H ) ) ),
-      maImgObjectsH( BitmapEx( SdResId( BMP_OBJECTS_H ) ) ),
-      maImgGroupH( BitmapEx( SdResId( BMP_GROUP_H ) ) )
+	  maImgPageH( BitmapEx( SdResId( BMP_PAGE_H ) ) ),
+	  maImgPageExclH( BitmapEx( SdResId( BMP_PAGE_EXCLUDED_H ) ) ),
+	  maImgPageObjsExclH( BitmapEx( SdResId( BMP_PAGEOBJS_EXCLUDED_H ) ) ),
+	  maImgPageObjsH( BitmapEx( SdResId( BMP_PAGEOBJS_H ) ) ),
+	  maImgObjectsH( BitmapEx( SdResId( BMP_OBJECTS_H ) ) ),
+	  maImgGroupH( BitmapEx( SdResId( BMP_GROUP_H ) ) )
 {
 }
+
+/* vim: set noet sw=4 ts=4: */
