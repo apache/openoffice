@@ -80,6 +80,7 @@ mkdir: %_DEST%\inc%_EXT%\boost\config\stdlib
 mkdir: %_DEST%\inc%_EXT%\boost\container
 mkdir: %_DEST%\inc%_EXT%\boost\container\detail
 mkdir: %_DEST%\inc%_EXT%\boost\coroutine
+mkdir: %_DEST%\inc%_EXT%\boost\coroutine\detail
 mkdir: %_DEST%\inc%_EXT%\boost\coroutine\v1
 mkdir: %_DEST%\inc%_EXT%\boost\coroutine\v1\detail
 mkdir: %_DEST%\inc%_EXT%\boost\coroutine\v2
@@ -843,7 +844,7 @@ mkdir: %_DEST%\inc%_EXT%\boost\xpressive\traits\detail
 ..\%__SRC%\inc\boost\config\platform\* %_DEST%\inc%_EXT%\boost\config\platform
 ..\%__SRC%\inc\boost\config\stdlib\* %_DEST%\inc%_EXT%\boost\config\stdlib
 ..\%__SRC%\inc\boost\container\* %_DEST%\inc%_EXT%\boost\container
-..\%__SRC%\inc\boost\coroutine\detail\* %_DEST%\inc%_EXT%\boost\container\detail
+..\%__SRC%\inc\boost\coroutine\detail\* %_DEST%\inc%_EXT%\boost\coroutine\detail
 ..\%__SRC%\inc\boost\coroutine\* %_DEST%\inc%_EXT%\boost\coroutine
 ..\%__SRC%\inc\boost\coroutine\v1\* %_DEST%\inc%_EXT%\boost\coroutine\v1
 ..\%__SRC%\inc\boost\coroutine\v1\detail\* %_DEST%\inc%_EXT%\boost\coroutine\v1\detail
