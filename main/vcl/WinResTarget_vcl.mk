@@ -19,8 +19,6 @@
 #
 #**************************************************************
 
-
-
 $(eval $(call gb_WinResTarget_WinResTarget,vcl/src))
 
 $(eval $(call gb_WinResTarget_set_include,vcl/src,\
@@ -67,7 +65,6 @@ $(eval $(call gb_WinResTarget_add_dependency,vcl/src,\
 	vcl/win/source/src/tblselse.cur \
 	vcl/win/source/src/asns.cur \
 	vcl/win/source/src/crop.cur \
-	vcl/win/source/src/help.cur \
 	vcl/win/source/src/neswsize.cur \
 	vcl/win/source/src/tblselsw.cur \
 	vcl/win/source/src/asnswe.cur \
