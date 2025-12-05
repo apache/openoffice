@@ -38,7 +38,6 @@ $(eval $(call gb_WinResTarget_add_dependency,vcl/src,\
 	vcl/win/source/src/dpie.cur \
 	vcl/win/source/src/movedata.cur \
 	vcl/win/source/src/rotate.cur \
-	vcl/win/source/src/50.png \
 	vcl/win/source/src/copydlnk.cur \
 	vcl/win/source/src/dpolygon.cur \
 	vcl/win/source/src/movedlnk.cur \
@@ -65,7 +64,6 @@ $(eval $(call gb_WinResTarget_add_dependency,vcl/src,\
 	vcl/win/source/src/tblselse.cur \
 	vcl/win/source/src/asns.cur \
 	vcl/win/source/src/crop.cur \
-	vcl/win/source/src/neswsize.cur \
 	vcl/win/source/src/tblselsw.cur \
 	vcl/win/source/src/asnswe.cur \
 	vcl/win/source/src/cross.cur \
@@ -74,13 +72,11 @@ $(eval $(call gb_WinResTarget_add_dependency,vcl/src,\
 	vcl/win/source/src/tblselw.cur \
 	vcl/win/source/src/asnw.cur \
 	vcl/win/source/src/darc.cur \
-	vcl/win/source/src/hsize.cur \
 	vcl/win/source/src/nullptr.cur \
 	vcl/win/source/src/timemove.cur \
 	vcl/win/source/src/ass.cur \
 	vcl/win/source/src/dbezier.cur \
 	vcl/win/source/src/hsizebar.cur \
-	vcl/win/source/src/nwsesize.cur \
 	vcl/win/source/src/timesize.cur \
 	vcl/win/source/src/asse.cur \
 	vcl/win/source/src/dcapt.cur \
@@ -91,7 +87,6 @@ $(eval $(call gb_WinResTarget_add_dependency,vcl/src,\
 	vcl/win/source/src/dcirccut.cur \
 	vcl/win/source/src/linkdata.cur \
 	vcl/win/source/src/pivotcol.cur \
-	vcl/win/source/src/vsize.cur \
 	vcl/win/source/src/asw.cur \
 	vcl/win/source/src/dconnect.cur \
 	vcl/win/source/src/linkf.cur \
@@ -109,7 +104,6 @@ $(eval $(call gb_WinResTarget_add_dependency,vcl/src,\
 	vcl/win/source/src/vtext.cur \
 	vcl/win/source/src/chainnot.cur \
 	vcl/win/source/src/dfree.cur \
-	vcl/win/source/src/move.cur \
 	vcl/win/source/src/pntbrsh.cur \
 	vcl/win/source/src/chart.cur \
 	vcl/win/source/src/dline.cur \
