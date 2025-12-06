@@ -59,7 +59,6 @@ $(eval $(call gb_WinResTarget_add_dependency,vcl/src,\
 	vcl/win/source/src/tblsels.cur \
 	vcl/win/source/src/asne.cur \
 	vcl/win/source/src/crook.cur \
-	vcl/win/source/src/hand.cur \
 	vcl/win/source/src/movept.cur \
 	vcl/win/source/src/tblselse.cur \
 	vcl/win/source/src/asns.cur \
@@ -108,7 +107,6 @@ $(eval $(call gb_WinResTarget_add_dependency,vcl/src,\
 	vcl/win/source/src/chart.cur \
 	vcl/win/source/src/dline.cur \
 	vcl/win/source/src/movebw.cur \
-	vcl/win/source/src/refhand.cur \
 ))
 
 else
