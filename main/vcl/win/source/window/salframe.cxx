@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_vcl.hxx"
 
@@ -122,8 +120,6 @@ using namespace ::com::sun::star::beans;
 # define SPI_SETWHEELSCROLLCHARS   0x006D
 #endif
 
-
-
 #if OSL_DEBUG_LEVEL > 1
 void MyOutputDebugString( char *s) { OutputDebugString( s ); }
 #endif
@@ -170,7 +166,7 @@ static void SetMaximizedFrameGeometry( HWND hWnd, WinSalFrame* pFrame, RECT* pPa
 
 static void ImplSaveFrameState( WinSalFrame* pFrame )
 {
-    // Position, Groesse und Status fuer GetWindowState() merken
+    // Position, Größe und Status für GetWindowState() merken
     if ( !pFrame->mbFullScreen )
     {
         sal_Bool bVisible = (GetWindowStyle( pFrame->mhWnd ) & WS_VISIBLE) != 0;
@@ -195,7 +191,7 @@ static void ImplSaveFrameState( WinSalFrame* pFrame )
                 RECT aRect = aPlacement.rcNormalPosition;
                 RECT aRect2 = aRect;
                 AdjustWindowRectEx( &aRect2, GetWindowStyle( pFrame->mhWnd ),
-                                    FALSE,  GetWindowExStyle( pFrame->mhWnd ) );
+                                    FALSE, GetWindowExStyle( pFrame->mhWnd ) );
                 long nTopDeco = abs( aRect.top - aRect2.top );
                 long nLeftDeco = abs( aRect.left - aRect2.left );
                 long nBottomDeco = abs( aRect.bottom - aRect2.bottom );
@@ -261,7 +257,7 @@ void ImplSalGetWorkArea( HWND hWnd, RECT *pRect, const RECT *pParentRect )
         }
     }
 
-    if( !winVerChecked )
+	if( !winVerChecked )
 	{
 		winVerChecked = 1;
 		winVerOk = 1;
@@ -365,7 +361,7 @@ SalFrame* ImplSalCreateFrame( WinSalInstance* pInst,
     DWORD       nExSysStyle = 0;
     sal_Bool        bSubFrame = FALSE;
 
-    if( getenv( "SAL_SYNCHRONIZE" ) )   // no buffering of drawing commands
+    if( getenv( "SAL_SYNCHRONIZE" ) ) // no buffering of drawing commands
         GdiSetBatchLimit( 1 );
 
     static int bLayeredAPI = -1;
@@ -418,7 +414,7 @@ SalFrame* ImplSalCreateFrame( WinSalInstance* pInst,
             {
                 nSysStyle |= WS_POPUP;
                 if ( !(nSalFrameStyle & SAL_FRAME_STYLE_MOVEABLE) )
-                    nExSysStyle |= WS_EX_TOOLWINDOW;    // avoid taskbar appearance, for e.g. splash screen
+                    nExSysStyle |= WS_EX_TOOLWINDOW; // avoid taskbar appearance, for e.g. splash screen
             }
         }
 
@@ -464,7 +460,7 @@ SalFrame* ImplSalCreateFrame( WinSalInstance* pInst,
         nExSysStyle |= WS_EX_TOOLWINDOW;
         pFrame->mbFloatWin = TRUE;
 
-        if ( (bLayeredAPI == 1) && (pEnvTransparentFloats /* does not work remote! || (nSalFrameStyle & SAL_FRAME_STYLE_FLOAT_FOCUSABLE) */ )  )
+        if ( (bLayeredAPI == 1) && (pEnvTransparentFloats /* does not work remote! || (nSalFrameStyle & SAL_FRAME_STYLE_FLOAT_FOCUSABLE) */ ) )
             nExSysStyle |= WS_EX_LAYERED;
 
     }
@@ -520,7 +516,7 @@ SalFrame* ImplSalCreateFrame( WinSalInstance* pInst,
             if ( nSalFrameStyle & (SAL_FRAME_STYLE_MOVEABLE|SAL_FRAME_STYLE_NOSHADOW) ) // check if shadow not wanted
                 pClassName = SAL_SUBFRAME_CLASSNAMEW;
             else
-                pClassName = SAL_TMPSUBFRAME_CLASSNAMEW;    // undecorated floaters will get shadow on XP
+                pClassName = SAL_TMPSUBFRAME_CLASSNAMEW; // undecorated floaters will get shadow on XP
         }
         else
         {
@@ -585,15 +581,15 @@ SalFrame* ImplSalCreateFrame( WinSalInstance* pInst,
 
 	UpdateFrameGeometry( hWnd, pFrame );
 
-    if( pFrame->mnShowState == SW_SHOWMAXIMIZED )
+	if( pFrame->mnShowState == SW_SHOWMAXIMIZED )
 	{
 		// #96084 set a useful internal window size because
 		// the window will not be maximized (and the size updated) before show()
 
-        SetMaximizedFrameGeometry( hWnd, pFrame );
+		SetMaximizedFrameGeometry( hWnd, pFrame );
 	}
 
-    return pFrame;
+	return pFrame;
 }
 
 // helper that only creates the HWND
@@ -879,12 +875,12 @@ static void ImplSalCalcFullScreenSize( const WinSalFrame* pFrame,
 
 	try
 	{
-	    uno::Reference< XMultiServiceFactory > xFactory( ::comphelper::getProcessServiceFactory(), UNO_QUERY_THROW );
-	    uno::Reference< XIndexAccess > xMultiMon( xFactory->createInstance(OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.awt.DisplayAccess" ) ) ), UNO_QUERY_THROW );
-        sal_Int32 nMonitors = xMultiMon->getCount();
+		uno::Reference< XMultiServiceFactory > xFactory( ::comphelper::getProcessServiceFactory(), UNO_QUERY_THROW );
+		uno::Reference< XIndexAccess > xMultiMon( xFactory->createInstance(OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.awt.DisplayAccess" ) ) ), UNO_QUERY_THROW );
+		sal_Int32 nMonitors = xMultiMon->getCount();
 		if( (pFrame->mnDisplay >= 0) && (pFrame->mnDisplay < nMonitors) )
 		{
-		    uno::Reference< XPropertySet > xMonitor( xMultiMon->getByIndex( pFrame->mnDisplay ), UNO_QUERY_THROW );
+			uno::Reference< XPropertySet > xMonitor( xMultiMon->getByIndex( pFrame->mnDisplay ), UNO_QUERY_THROW );
 			com::sun::star::awt::Rectangle aRect;
 			if( xMonitor->getPropertyValue( OUString( RTL_CONSTASCII_USTRINGPARAM( "ScreenArea" ) ) ) >>= aRect )
 			{
@@ -896,8 +892,8 @@ static void ImplSalCalcFullScreenSize( const WinSalFrame* pFrame,
 		}
 		else
 		{
-            Rectangle aCombined;
-            uno::Reference< XPropertySet > xMonitor( xMultiMon->getByIndex( 0 ), UNO_QUERY_THROW );
+			Rectangle aCombined;
+			uno::Reference< XPropertySet > xMonitor( xMultiMon->getByIndex( 0 ), UNO_QUERY_THROW );
 			com::sun::star::awt::Rectangle aRect;
 			if( xMonitor->getPropertyValue( OUString( RTL_CONSTASCII_USTRINGPARAM( "ScreenArea" ) ) ) >>= aRect )
 			{
@@ -926,14 +922,14 @@ static void ImplSalCalcFullScreenSize( const WinSalFrame* pFrame,
 
 	if( !nScreenDX || !nScreenDY )
 	{
-	    nScreenDX   = GetSystemMetrics( SM_CXSCREEN );
+		nScreenDX   = GetSystemMetrics( SM_CXSCREEN );
 		nScreenDY   = GetSystemMetrics( SM_CYSCREEN );
 	}
 
-    rX  = nScreenX -nFrameX;
-    rY  = nScreenY -(nFrameY+nCaptionY);
-    rDX = nScreenDX+(nFrameX*2);
-    rDY = nScreenDY+(nFrameY*2)+nCaptionY;
+	rX  = nScreenX -nFrameX;
+	rY  = nScreenY -(nFrameY+nCaptionY);
+	rDX = nScreenDX+(nFrameX*2);
+	rDY = nScreenDY+(nFrameY*2)+nCaptionY;
 }
 
 // -----------------------------------------------------------------------
@@ -1255,13 +1251,13 @@ void WinSalFrame::SetMenu( SalMenu* pSalMenu )
 
 void WinSalFrame::DrawMenuBar()
 {
-    ::DrawMenuBar( mhWnd );
+	::DrawMenuBar( mhWnd );
 }
 
 // -----------------------------------------------------------------------
 HWND ImplGetParentHwnd( HWND hWnd )
 {
-    WinSalFrame* pFrame = GetWindowPtr( hWnd );
+	WinSalFrame* pFrame = GetWindowPtr( hWnd );
 	if( !pFrame || !pFrame->GetWindow())
 		return ::GetParent( hWnd );
 	Window *pRealParent = pFrame->GetWindow()->ImplGetWindowImpl()->mpRealParent;
@@ -1276,7 +1272,7 @@ HWND ImplGetParentHwnd( HWND hWnd )
 
 SalFrame* WinSalFrame::GetParent() const
 {
-    return GetWindowPtr( ImplGetParentHwnd( mhWnd ) );
+	return GetWindowPtr( ImplGetParentHwnd( mhWnd ) );
 }
 
 // -----------------------------------------------------------------------
@@ -1323,7 +1319,7 @@ static void ImplSalShow( HWND hWnd, sal_Bool bVisible, sal_Bool bNoActivate )
         if( (GetWindowStyle( hWnd ) & WS_POPUP) &&
             !pFrame->mbCaption &&
             (aRectPreMatrox.left != aRectPostMatrox.left || aRectPreMatrox.top != aRectPostMatrox.top) )
-            SetWindowPos( hWnd, 0, aRectPreMatrox.left, aRectPreMatrox.top, 0, 0, SWP_NOZORDER | SWP_NOACTIVATE | SWP_NOSIZE  );
+            SetWindowPos( hWnd, 0, aRectPreMatrox.left, aRectPreMatrox.top, 0, 0, SWP_NOZORDER | SWP_NOACTIVATE | SWP_NOSIZE );
 
         if( aDogTag.isDeleted() )
             return;
@@ -1361,10 +1357,10 @@ static void ImplSalShow( HWND hWnd, sal_Bool bVisible, sal_Bool bNoActivate )
         {
             // Damit im Impress-Player in der Taskleiste nicht durch
             // einen Windows-Fehler hin- und wieder mal ein leerer
-            // Button stehen bleibt, muessen wir hier die Taskleiste
+            // Button stehen bleibt, müssen wir hier die Taskleiste
             // etwas austricksen. Denn wenn wir im FullScreenMode sind
             // und das Fenster hiden kommt Windows anscheinend etwas aus
-            // dem tritt und somit minimieren wir das Fenster damit es
+            // dem Tritt und somit minimieren wir das Fenster damit es
             // nicht flackert
             ANIMATIONINFO aInfo;
             aInfo.cbSize = sizeof( aInfo );
@@ -1632,13 +1628,13 @@ void WinSalFrame::SetPosSize( long nX, long nY, long nWidth, long nHeight,
     if( !(mnStyle & SAL_FRAME_STYLE_FLOAT) )
         nPosFlags |= SWP_NOZORDER; // do not change z-order
 
-    SetWindowPos( mhWnd, HWND_TOP, nX, nY, (int)nWidth, (int)nHeight, nPosFlags  );
+	SetWindowPos( mhWnd, HWND_TOP, nX, nY, (int)nWidth, (int)nHeight, nPosFlags );
 
 	UpdateFrameGeometry( mhWnd, this );
 
-    // Notification -- really ???
-    if( nEvent )
-        CallCallback( nEvent, NULL );
+	// Notification -- really ???
+	if( nEvent )
+		CallCallback( nEvent, NULL );
 }
 
 // -----------------------------------------------------------------------
@@ -1839,8 +1835,8 @@ void WinSalFrame::GetClientSize( long& rWidth, long& rHeight )
 
 void WinSalFrame::SetWindowState( const SalFrameState* pState )
 {
-    // Wir testen, ob das Fenster ueberhaupt auf den Bildschirm passt, damit
-    // nicht wenn die Bildschirm-Aufloesung geaendert wurde, das Fenster aus
+    // Wir testen, ob das Fenster überhaupt auf den Bildschirm passt, damit
+    // nicht wenn die Bildschirm-Auflösung geändert wurde, das Fenster aus
     // diesem herausragt
     int     nX;
     int     nY;
@@ -1873,7 +1869,7 @@ void WinSalFrame::SetWindowState( const SalFrameState* pState )
     long nBottomDeco = abs( aWinRect.bottom - aRect2.bottom );
     long nRightDeco = abs( aWinRect.right - aRect2.right );
 
-    // Fenster-Position/Groesse in den Bildschirm einpassen
+    // Fenster-Position/Größe in den Bildschirm einpassen
     if ( !(pState->mnMask & (SAL_FRAMESTATE_MASK_X | SAL_FRAMESTATE_MASK_Y)) )
         nPosSize |= SWP_NOMOVE;
     if ( !(pState->mnMask & (SAL_FRAMESTATE_MASK_WIDTH | SAL_FRAMESTATE_MASK_HEIGHT)) )
@@ -2148,7 +2144,7 @@ void WinSalFrame::StartPresentation( sal_Bool bStart )
                 pSalData->mpSageEnableProc( DISABLE_AGENT );
         }
 
-        // Bildschirmschoner ausschalten, wenn Praesentation laueft
+        // Bildschirmschoner ausschalten, wenn Präsentation läuft
         SystemParametersInfo( SPI_GETSCREENSAVEACTIVE, 0,
                               &(pSalData->mbScrSvrEnabled), 0 );
         if ( pSalData->mbScrSvrEnabled )
@@ -2226,7 +2222,7 @@ static void ImplSalToTop( HWND hWnd, sal_uInt16 nFlags )
     {
         SetFocus( hWnd );
 
-        // Windows behauptet oefters mal, das man den Focus hat, obwohl
+        // Windows behauptet öfters mal, das man den Focus hat, obwohl
         // man diesen nicht hat. Wenn dies der Fall ist, dann versuchen
         // wir diesen auch ganz richtig zu bekommen.
         if ( ::GetFocus() == hWnd )
@@ -2267,7 +2263,7 @@ void WinSalFrame::SetPointer( PointerStyle ePointerStyle )
     { 0, IDC_IBEAM, 0 },                            // POINTER_TEXT
     { 0, IDC_HELP, 0 },                             // POINTER_HELP
     { 0, 0, SAL_RESID_POINTER_CROSS },              // POINTER_CROSS
-    { 0, 0, SAL_RESID_POINTER_MOVE },               // POINTER_MOVE
+    { 0, IDC_SIZEALL, 0 },                          // POINTER_MOVE
     { 0, IDC_SIZENS, 0 },                           // POINTER_NSIZE
     { 0, IDC_SIZENS, 0 },                           // POINTER_SSIZE
     { 0, IDC_SIZEWE, 0 },                           // POINTER_WSIZE
@@ -2288,8 +2284,8 @@ void WinSalFrame::SetPointer( PointerStyle ePointerStyle )
     { 0, 0, SAL_RESID_POINTER_VSPLIT },             // POINTER_VSPLIT
     { 0, 0, SAL_RESID_POINTER_HSIZEBAR },           // POINTER_HSIZEBAR
     { 0, 0, SAL_RESID_POINTER_VSIZEBAR },           // POINTER_VSIZEBAR
-    { 0, 0, SAL_RESID_POINTER_HAND },               // POINTER_HAND
-    { 0, 0, SAL_RESID_POINTER_REFHAND },            // POINTER_REFHAND
+    { 0, IDC_HAND, 0 },                             // POINTER_HAND
+    { 0, IDC_HAND, 0 },                             // POINTER_REFHAND
     { 0, 0, SAL_RESID_POINTER_PEN },                // POINTER_PEN
     { 0, 0, SAL_RESID_POINTER_MAGNIFY },            // POINTER_MAGNIFY
     { 0, 0, SAL_RESID_POINTER_FILL },               // POINTER_FILL
@@ -3359,9 +3355,9 @@ static long ImplHandleMouseMsg( HWND hWnd, UINT nMsg,
     aMouseEvt.mnCode    = 0;
     aMouseEvt.mnTime    = GetMessageTime();
 
-    // Wegen (Logitech-)MouseTreiber ueber GetKeyState() gehen, die auf
+    // Wegen (Logitech-)MouseTreiber über GetKeyState() gehen, die auf
     // mittlerer Maustaste Doppelklick simulieren und den KeyStatus nicht
-    // beruecksichtigen
+    // berücksichtigen
 
     if ( GetKeyState( VK_LBUTTON ) & 0x8000 )
         aMouseEvt.mnCode |= MOUSE_LEFT;
@@ -3380,7 +3376,7 @@ static long ImplHandleMouseMsg( HWND hWnd, UINT nMsg,
     {
         case WM_MOUSEMOVE:
             {
-            // Da bei Druecken von Modifier-Tasten die MouseEvents
+            // Da bei Drücken von Modifier-Tasten die MouseEvents
             // nicht zusammengefast werden (da diese durch KeyEvents
             // unterbrochen werden), machen wir dieses hier selber
             if ( aMouseEvt.mnCode & (KEY_SHIFT | KEY_MOD1 | KEY_MOD2) )
@@ -3768,7 +3764,7 @@ static long ImplHandleKeyMsg( HWND hWnd, UINT nMsg,
                 return 1;
         }
 
-        // Backspace ignorieren wir als eigenstaendige Taste,
+        // Backspace ignorieren wir als eigenständige Taste,
         // damit wir keine Probleme in Kombination mit einem
         // DeadKey bekommen
         if ( wParam == 0x08 )    // BACKSPACE
@@ -3900,7 +3896,7 @@ static long ImplHandleKeyMsg( HWND hWnd, UINT nMsg,
             {
                 // check for charcode
                 // Mit Hilfe von PeekMessage holen wir uns jetzt die
-                // zugehoerige WM_CHAR Message, wenn vorhanden.
+                // zugehörige WM_CHAR Message, wenn vorhanden.
                 // Diese WM_CHAR Message steht immer am Anfang der
                 // Messagequeue. Ausserdem ist sichergestellt, dass immer
                 // nur eine WM_CHAR Message in der Queue steht.
@@ -4099,12 +4095,12 @@ static bool ImplHandlePaintMsg( HWND hWnd )
     WinSalFrame* pFrame = GetWindowPtr( hWnd );
     if ( pFrame )
     {
-        // Clip-Region muss zurueckgesetzt werden, da wir sonst kein
+        // Clip-Region muss zurückgesetzt werden, da wir sonst kein
         // ordentliches Bounding-Rectangle bekommen
         if ( pFrame->mpGraphics && pFrame->mpGraphics->mhRegion )
             SelectClipRgn( pFrame->mpGraphics->getHDC(), 0 );
 
-        // Laut Window-Doku soll man erst abfragen, ob ueberhaupt eine
+        // Laut Window-Doku soll man erst abfragen, ob überhaupt eine
         // Paint-Region anliegt
         if ( GetUpdateRect( hWnd, NULL, FALSE ) )
         {
@@ -4298,7 +4294,7 @@ static void ImplHandleMoveMsg( HWND hWnd )
             if ( GetWindowStyle( hWnd ) & WS_VISIBLE )
                 pFrame->mbDefPos = FALSE;
 
-            // Gegen moegliche Rekursionen sichern
+            // Gegen mögliche Rekursionen sichern
             if ( !pFrame->mbInMoveMsg )
             {
                 // Fenster im FullScreenModus wieder einpassen
@@ -4328,7 +4324,7 @@ static void ImplHandleMoveMsg( HWND hWnd )
 static void ImplCallSizeHdl( HWND hWnd )
 {
     // Da Windows diese Messages auch senden kann, muss hier auch die
-    // Solar-Semaphore beruecksichtigt werden
+    // Solar-Semaphore berücksichtigt werden
     if ( ImplSalYieldMutexTryToAcquire() )
     {
         WinSalFrame* pFrame = GetWindowPtr( hWnd );
@@ -4382,7 +4378,7 @@ static void ImplHandleFocusMsg( HWND hWnd )
                 if ( IsWindowVisible( hWnd ) && !pFrame->mbInShow )
                     UpdateWindow( hWnd );
 
-                // Feststellen, ob wir IME unterstuetzen
+                // Feststellen, ob wir IME unterstützen
                 if ( pFrame->mbIME && pFrame->mhDefIMEContext )
                 {
                     UINT nImeProps = ImmGetProperty( GetKeyboardLayout( 0 ), IGP_PROPERTY );
@@ -4562,7 +4558,7 @@ static LRESULT ImplHandlePalette( sal_Bool bFrame, HWND hWnd, UINT nMsg,
     if ( (nMsg == WM_QUERYNEWPALETTE) || (nMsg == WM_PALETTECHANGED) )
     {
         // Da Windows diese Messages auch sendet, muss hier auch die
-        // Solar-Semaphore beruecksichtigt werden
+        // Solar-Semaphore berücksichtigt werden
         if ( ImplSalYieldMutexTryToAcquire() )
             bReleaseMutex = TRUE;
         else if ( nMsg == WM_QUERYNEWPALETTE )
@@ -4582,7 +4578,7 @@ static LRESULT ImplHandlePalette( sal_Bool bFrame, HWND hWnd, UINT nMsg,
 
     pSalData->mbInPalChange = TRUE;
 
-    // Alle Paletten in VirDevs und Frames zuruecksetzen
+    // Alle Paletten in VirDevs und Frames zurücksetzen
     pTempVD = pSalData->mpFirstVD;
     while ( pTempVD )
     {
@@ -4660,7 +4656,7 @@ static LRESULT ImplHandlePalette( sal_Bool bFrame, HWND hWnd, UINT nMsg,
         pTempFrame = pTempFrame->mpNextFrame;
     }
 
-    // Wenn sich Farben geaendert haben, dann die Fenster updaten
+    // Wenn sich Farben geändert haben, dann die Fenster updaten
     if ( bUpdate )
     {
         pTempFrame = pSalData->mpFirstFrame;
@@ -5226,16 +5222,16 @@ static int ImplHandleSysCommand( HWND hWnd, WPARAM wParam, LPARAM lParam )
         if( GetMenu( hWnd ) )
             return FALSE;
 
-        // Hier verarbeiten wir nur KeyMenu-Events fuer Alt um
+        // Hier verarbeiten wir nur KeyMenu-Events für Alt um
         // den MenuBar zu aktivieren, oder wenn ein SysChild-Fenster
         // den Focus hat, da diese Alt+Tasten-Kombinationen nur
-        // ueber diesen Event verarbeitet werden
+        // über diesen Event verarbeitet werden
         if ( !LOWORD( lParam ) )
         {
-            // Nur ausloesen, wenn keine weitere Taste gedrueckt ist. Im
+            // Nur auslösen, wenn keine weitere Taste gedrückt ist. Im
             // Gegensatz zur Doku wird in der X-Koordinaate der CharCode
-            // geliefert, der zusaetzlich gedrueckt ist
-            // Also 32 fuer Space, 99 fuer c, 100 fuer d, ...
+            // geliefert, der zusätzlich gedrückt ist
+            // Also 32 für Space, 99 für c, 100 für d, ...
             // Da dies nicht dokumentiert ist, fragen wir vorsichtshalber
             // auch den Status der Space-Taste ab
             if ( GetKeyState( VK_SPACE ) & 0x8000 )
@@ -5267,7 +5263,7 @@ static int ImplHandleSysCommand( HWND hWnd, WPARAM wParam, LPARAM lParam )
                 // LowerCase
                 if ( (cKeyCode >= 65) && (cKeyCode <= 90) )
                     cKeyCode += 32;
-                // Wir nehmen nur 0-9 und A-Z, alle anderen Tasten muessen durch
+                // Wir nehmen nur 0-9 und A-Z, alle anderen Tasten müssen durch
                 // den Hook vom SalObj verarbeitet werden
                 if ( ((cKeyCode >= 48) && (cKeyCode <= 57)) ||
                      ((cKeyCode >= 97) && (cKeyCode <= 122)) )
@@ -5305,7 +5301,7 @@ static void ImplHandleInputLangChange( HWND hWnd, WPARAM, LPARAM lParam )
 {
     ImplSalYieldMutexAcquireWithWait();
 
-    // Feststellen, ob wir IME unterstuetzen
+    // Feststellen, ob wir IME unterstützen
     WinSalFrame* pFrame = GetWindowPtr( hWnd );
     if ( pFrame && pFrame->mbIME && pFrame->mhDefIMEContext )
     {
@@ -5335,7 +5331,7 @@ static void ImplUpdateIMECursorPos( WinSalFrame* pFrame, HIMC hIMC )
     COMPOSITIONFORM aForm;
     memset( &aForm, 0, sizeof( aForm ) );
 
-    // Cursor-Position ermitteln und aus der die Default-Position fuer
+    // Cursor-Position ermitteln und aus der die Default-Position für
     // das Composition-Fenster berechnen
     SalExtTextInputPosEvent aPosEvt;
     pFrame->CallCallback( SALEVENT_EXTTEXTINPUTPOS, (void*)&aPosEvt );
@@ -5842,7 +5838,7 @@ LRESULT CALLBACK SalFrameWndProc( HWND hWnd, UINT nMsg, WPARAM wParam, LPARAM lP
 		{
 			SetWindowPtr( hWnd, pFrame );
 			// HWND schon hier setzen, da schon auf den Instanzdaten
-			// gearbeitet werden kann, wenn Messages waehrend
+			// gearbeitet werden kann, wenn Messages während
 			// CreateWindow() gesendet werden
 			pFrame->mhWnd = hWnd;
 			pFrame->maSysData.hWnd = hWnd;
@@ -5921,7 +5917,7 @@ LRESULT CALLBACK SalFrameWndProc( HWND hWnd, UINT nMsg, WPARAM wParam, LPARAM lP
             // FALLTHROUGH intended
         case WM_MOUSEHWHEEL:
             // Gegen Rekursion absichern, falls wir vom IE oder dem externen
-            // Fenster die Message wieder zurueckbekommen
+            // Fenster die Message wieder zurückbekommen
             if ( !bInWheelMsg )
             {
                 bInWheelMsg++;
@@ -6026,7 +6022,7 @@ LRESULT CALLBACK SalFrameWndProc( HWND hWnd, UINT nMsg, WPARAM wParam, LPARAM lP
             // Wenn wir aktiviert werden, dann wollen wir auch unsere
             // Palette setzen. Wir machen dieses in Activate,
             // damit andere externe Child-Fenster auch unsere Palette
-            // ueberschreiben koennen. So wird unsere jedenfalls nur einmal
+            // überschreiben können. So wird unsere jedenfalls nur einmal
             // gesetzt und nicht immer rekursiv, da an allen anderen Stellen
             // diese nur als Background-Palette gesetzt wird
             if ( LOWORD( wParam ) != WA_INACTIVE )
@@ -6273,7 +6269,7 @@ LRESULT CALLBACK SalFrameWndProc( HWND hWnd, UINT nMsg, WPARAM wParam, LPARAM lP
     if ( rDef && (nMsg == aSalShlData.mnWheelMsgId) && aSalShlData.mnWheelMsgId )
     {
         // Gegen Rekursion absichern, falls wir vom IE oder dem externen
-        // Fenster die Message wieder zurueckbekommen
+        // Fenster die Message wieder zurückbekommen
         if ( !bInWheelMsg )
         {
             bInWheelMsg++;
