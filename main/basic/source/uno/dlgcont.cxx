@@ -263,7 +263,7 @@ Any SAL_CALL SfxDialogLibraryContainer::importLibraryElement
 	//Reference< XMultiServiceFactory > xMSF( comphelper::getProcessServiceFactory() );
 	//if( !xMSF.is() )
 	//{
-	//	OSL_ENSURE( 0, "### couln't get ProcessServiceFactory\n" );
+	//	OSL_ENSURE( 0, "### couldn't get ProcessServiceFactory\n" );
 	//	return aRetAny;
 	//}
 
@@ -271,7 +271,7 @@ Any SAL_CALL SfxDialogLibraryContainer::importLibraryElement
 		OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.xml.sax.Parser") ) ), UNO_QUERY );
 	if( !xParser.is() )
 	{
-		OSL_ENSURE( 0, "### couln't create sax parser component\n" );
+		OSL_ENSURE( 0, "### couldn't create sax parser component\n" );
 		return aRetAny;
 	}
 
@@ -279,7 +279,7 @@ Any SAL_CALL SfxDialogLibraryContainer::importLibraryElement
 		( OUString(RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.awt.UnoControlDialogModel" ) ) ), UNO_QUERY );
 	if( !xDialogModel.is() )
 	{
-		OSL_ENSURE( 0, "### couln't create com.sun.star.awt.UnoControlDialogModel component\n" );
+		OSL_ENSURE( 0, "### couldn't create com.sun.star.awt.UnoControlDialogModel component\n" );
 		return aRetAny;
 	}
 

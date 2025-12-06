@@ -139,7 +139,7 @@ void SAL_CALL DropTarget::setDefaultActions(sal_Int8 actions) throw(RuntimeExcep
 //
 // Non - interface functions ============================================================
 // DropTarget fires events to XDropTargetListeners. The event object can contains an
-// XDropTargetDragContext implementaion. When the listener calls on that interface
+// XDropTargetDragContext implementation. When the listener calls on that interface
 // then the calls are delegated from DragContext (XDropTargetDragContext) to these
 // functions.
 // Only one listener which visible area is affected is allowed to call on
@@ -162,7 +162,7 @@ void SAL_CALL DropTarget::rejectDrag() throw (RuntimeException)
 //
 // Non - interface functions ============================================================
 // DropTarget fires events to XDropTargetListeners. The event object contains an
-// XDropTargetDropContext implementaion. When the listener calls on that interface
+// XDropTargetDropContext implementation. When the listener calls on that interface
 // then the calls are delegated from DropContext (XDropTargetDropContext) to these
 // functions.
 // Only one listener which visible area is affected is allowed to call on

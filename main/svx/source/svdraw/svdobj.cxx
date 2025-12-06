@@ -1416,7 +1416,7 @@ FASTBOOL SdrObject::MovCreate(SdrDragStat& rStat)
 	// #i101648# for naked (non-derived) SdrObjects, do not invalidate aOutRect
 	// by calling SetBoundRectDirty(); aOutRect IS the geometry for such objects.
 	// No derivation implementation calls the parent implementation, so this will
-	// cause no further prolems
+	// cause no further problems
 	//
 	// SetBoundRectDirty();
 	// bSnapRectDirty=sal_True;

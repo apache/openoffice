@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,28 +7,27 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
 
 interface TableDrawText
 {
-	//	Drawing geht von Basic aus gar nicht, darum alles mit Export = FALSE
+	// Drawing geht von Basic aus gar nicht, darum alles mit Export = FALSE
 
 	// alle Referenz-Eingabe-Dialoge:
 	FID_DEFINE_NAME				[ StateMethod = StateDisableItems; Export = FALSE; ]
 	SID_DEFINE_COLROWNAMERANGES	[ StateMethod = StateDisableItems; Export = FALSE; ]
 	SID_OPENDLG_SOLVE			[ StateMethod = StateDisableItems; Export = FALSE; ]
-    SID_OPENDLG_OPTSOLVER       [ StateMethod = StateDisableItems; Export = FALSE; ]
+	SID_OPENDLG_OPTSOLVER		[ StateMethod = StateDisableItems; Export = FALSE; ]
 	SID_OPENDLG_PIVOTTABLE		[ StateMethod = StateDisableItems; Export = FALSE; ]
 	SID_OPENDLG_TABOP			[ StateMethod = StateDisableItems; Export = FALSE; ]
 	SID_FILTER					[ StateMethod = StateDisableItems; Export = FALSE; ]
@@ -36,31 +35,31 @@ interface TableDrawText
 	SID_DEFINE_DBNAME			[ StateMethod = StateDisableItems; Export = FALSE; ]
 	SID_OPENDLG_CONSOLIDATE		[ StateMethod = StateDisableItems; Export = FALSE; ]
 	SID_OPENDLG_EDIT_PRINTAREA	[ StateMethod = StateDisableItems; Export = FALSE; ]
-	 //	andere:
+	// andere:
 	SID_DRAW_CHART				[ StateMethod = StateDisableItems; Export = FALSE; ]
 	SID_STYLE_CATALOG			[ StateMethod = StateDisableItems; Export = FALSE; ]
 	SID_OPENDLG_FUNCTION		[ StateMethod = StateDisableItems; Export = FALSE; ]
 	SID_STYLE_FAMILY2			[ StateMethod = StateDisableItems; Export = FALSE; ]
 	SID_STYLE_FAMILY4			[ StateMethod = StateDisableItems; Export = FALSE; ]
-	SID_STYLE_APPLY 			[ StateMethod = StateDisableItems; Export = FALSE; ]
-	SID_STYLE_WATERCAN 			[ StateMethod = StateDisableItems; Export = FALSE; ]
+	SID_STYLE_APPLY				[ StateMethod = StateDisableItems; Export = FALSE; ]
+	SID_STYLE_WATERCAN			[ StateMethod = StateDisableItems; Export = FALSE; ]
 	SID_STYLE_NEW_BY_EXAMPLE	[ StateMethod = StateDisableItems; Export = FALSE; ]
-	SID_STYLE_UPDATE_BY_EXAMPLE [ StateMethod = StateDisableItems; Export = FALSE; ]
+	SID_STYLE_UPDATE_BY_EXAMPLE	[ StateMethod = StateDisableItems; Export = FALSE; ]
 	SID_STYLE_NEW				[ StateMethod = StateDisableItems; Export = FALSE; ]
-	SID_STYLE_EDIT  			[ StateMethod = StateDisableItems; Export = FALSE; ]
+	SID_STYLE_EDIT				[ StateMethod = StateDisableItems; Export = FALSE; ]
 	SID_STYLE_DELETE			[ StateMethod = StateDisableItems; Export = FALSE; ]
 
-	 //----------------------------------------------------------------------------
+	//----------------------------------------------------------------------------
 	SID_CUT				[ ExecMethod = Execute; StateMethod = GetState; Export = FALSE; ]
 	SID_COPY			[ ExecMethod = Execute; StateMethod = GetState; Export = FALSE; ]
 	SID_PASTE			[ ExecMethod = Execute; StateMethod = GetClipState; Export = FALSE; ]
-    SID_PASTE_SPECIAL   [ ExecMethod = Execute; StateMethod = GetClipState; Export = FALSE; ]
-	SID_CLIPBOARD_FORMAT_ITEMS [ ExecMethod = Execute; StateMethod = GetClipState; Export = FALSE; ]
+	SID_PASTE_SPECIAL	[ ExecMethod = Execute; StateMethod = GetClipState; Export = FALSE; ]
+	SID_CLIPBOARD_FORMAT_ITEMS	[ ExecMethod = Execute; StateMethod = GetClipState; Export = FALSE; ]
 	SID_SELECTALL		[ ExecMethod = Execute; StateMethod = GetState; Export = FALSE; ]
 	SID_CHARMAP			[ ExecMethod = Execute; StateMethod = GetState; Export = FALSE; ]
-    SID_THES            [ ExecMethod = Execute; StateMethod = GetState; Export = FALSE; ]
-    SID_THESAURUS       [ ExecMethod = Execute; StateMethod = GetState; Export = FALSE; ]
-	 // Attribute: --------------------------------------------------
+	SID_THES			[ ExecMethod = Execute; StateMethod = GetState; Export = FALSE; ]
+	SID_THESAURUS		[ ExecMethod = Execute; StateMethod = GetState; Export = FALSE; ]
+	// Attribute: --------------------------------------------------
 	SID_TEXT_STANDARD			[ ExecMethod = ExecuteAttr; StateMethod = GetState; Export = FALSE; ]
 	SID_DRAWTEXT_ATTR_DLG		[ ExecMethod = ExecuteAttr; StateMethod = GetState; Export = FALSE; ]
 	SID_ATTR_CHAR_FONT			[ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
@@ -83,15 +82,15 @@ interface TableDrawText
 	SID_ALIGNCENTERHOR			[ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
 	SID_ALIGNRIGHT				[ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
 	SID_ALIGNBLOCK				[ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
-	
-	SID_ATTR_PARA_ADJUST_LEFT				[ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
-	SID_ATTR_PARA_ADJUST_CENTER			    [ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
-	SID_ATTR_PARA_ADJUST_RIGHT				[ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
-	SID_ATTR_PARA_ADJUST_BLOCK				[ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
-	SID_ATTR_PARA_LRSPACE                   [ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
-	SID_ATTR_PARA_LINESPACE                 [ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
-	SID_ATTR_PARA_ULSPACE                   [ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
-	
+
+	SID_ATTR_PARA_ADJUST_LEFT	[ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
+	SID_ATTR_PARA_ADJUST_CENTER	[ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
+	SID_ATTR_PARA_ADJUST_RIGHT	[ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
+	SID_ATTR_PARA_ADJUST_BLOCK	[ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
+	SID_ATTR_PARA_LRSPACE		[ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
+	SID_ATTR_PARA_LINESPACE		[ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
+	SID_ATTR_PARA_ULSPACE		[ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
+
 	SID_ATTR_PARA_LINESPACE_10	[ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
 	SID_ATTR_PARA_LINESPACE_15	[ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
 	SID_ATTR_PARA_LINESPACE_20	[ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
@@ -101,14 +100,14 @@ interface TableDrawText
 	SID_CHAR_DLG				[ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
 	SID_CHAR_DLG_EFFECT			[ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
 	SID_PARA_DLG				[ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
-	 // ---- FontWork:
+	// ---- FontWork:
 	SID_FONTWORK	[ ExecMethod = ExecuteExtra; StateMethod = GetState; Export = FALSE; ]
 
 	// pseudo slots from Format menu
-	SID_ALIGN_ANY_LEFT      [ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
-    SID_ALIGN_ANY_HCENTER	[ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
-    SID_ALIGN_ANY_RIGHT		[ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
-    SID_ALIGN_ANY_JUSTIFIED [ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
+	SID_ALIGN_ANY_LEFT		[ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
+	SID_ALIGN_ANY_HCENTER	[ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
+	SID_ALIGN_ANY_RIGHT		[ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
+	SID_ALIGN_ANY_JUSTIFIED	[ ExecMethod = ExecuteAttr; StateMethod = GetAttrState; Export = FALSE; ]
 
 	SID_FORMTEXT_STYLE		[ ExecMethod = ExecFormText; StateMethod = GetFormTextState; Export = FALSE; ]
 	SID_FORMTEXT_ADJUST		[ ExecMethod = ExecFormText; StateMethod = GetFormTextState; Export = FALSE; ]
@@ -124,19 +123,19 @@ interface TableDrawText
 
 	SID_HYPERLINK_SETLINK	[ ExecMethod = Execute; Export = FALSE; ]
 	SID_HYPERLINK_GETLINK	[ StateMethod = GetState; Export = FALSE; ]
-        SID_OPEN_HYPERLINK      [ ExecMethod = Execute; StateMethod = GetState; Export = FALSE; ]
+	SID_OPEN_HYPERLINK		[ ExecMethod = Execute; StateMethod = GetState; Export = FALSE; ]
 	SID_ENABLE_HYPHENATION	[ ExecMethod = Execute; StateMethod = GetState; Export = FALSE; ]
 
 	SID_TEXTDIRECTION_LEFT_TO_RIGHT		[ ExecMethod = Execute; StateMethod = GetAttrState; Export = FALSE; ]
 	SID_TEXTDIRECTION_TOP_TO_BOTTOM		[ ExecMethod = Execute; StateMethod = GetAttrState; Export = FALSE; ]
 	SID_ATTR_PARA_LEFT_TO_RIGHT			[ ExecMethod = ExecuteExtra; StateMethod = GetAttrState; Export = FALSE; ]
 	SID_ATTR_PARA_RIGHT_TO_LEFT			[ ExecMethod = ExecuteExtra; StateMethod = GetAttrState; Export = FALSE; ]
-	SID_VERTICALTEXT_STATE              [ StateMethod = GetAttrState ; Export = FALSE; ]
-    SID_CTLFONT_STATE                   [ StateMethod = GetAttrState ; Export = FALSE; ]
+	SID_VERTICALTEXT_STATE				[ StateMethod = GetAttrState ; Export = FALSE; ]
+	SID_CTLFONT_STATE					[ StateMethod = GetAttrState ; Export = FALSE; ]
 
-    SID_TRANSLITERATE_SENTENCE_CASE [ ExecMethod = ExecuteTrans; StateMethod = GetState;  Export = FALSE; ]
-    SID_TRANSLITERATE_TITLE_CASE    [ ExecMethod = ExecuteTrans; StateMethod = GetState;  Export = FALSE; ]
-    SID_TRANSLITERATE_TOGGLE_CASE   [ ExecMethod = ExecuteTrans; StateMethod = GetState;  Export = FALSE; ]
+	SID_TRANSLITERATE_SENTENCE_CASE	[ ExecMethod = ExecuteTrans; StateMethod = GetState;  Export = FALSE; ]
+	SID_TRANSLITERATE_TITLE_CASE	[ ExecMethod = ExecuteTrans; StateMethod = GetState;  Export = FALSE; ]
+	SID_TRANSLITERATE_TOGGLE_CASE	[ ExecMethod = ExecuteTrans; StateMethod = GetState;  Export = FALSE; ]
 	SID_TRANSLITERATE_UPPER		[ ExecMethod = ExecuteTrans; StateMethod = GetState; Export = FALSE; ]
 	SID_TRANSLITERATE_LOWER		[ ExecMethod = ExecuteTrans; StateMethod = GetState; Export = FALSE; ]
 	SID_TRANSLITERATE_HALFWIDTH	[ ExecMethod = ExecuteTrans; StateMethod = GetState; Export = FALSE; ]
@@ -149,10 +148,8 @@ interface TableDrawText
 	SID_TABLE_VERT_BOTTOM [ExecMethod = ExecuteAttr ;StateMethod = GetStatePropPanelAttr ;]
 }
 
-
-
- // ===========================================================================
+// ===========================================================================
 shell ScDrawTextObjectBar
 {
-	import TableDrawText;
+	import TableDrawText ;
 }

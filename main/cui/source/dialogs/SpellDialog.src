@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // include ---------------------------------------------------------------
 #include <cuires.hrc>
 #include "helpid.hrc"
@@ -167,8 +165,8 @@ ModelessDialog RID_SVXDLG_SPELLCHECK
 	};
 	GroupBox GB_BACKGROUND
 	{
-		Pos = MAP_APPFONT ( 1, 21 ) ;
-		Size = MAP_APPFONT ( 268, 146 ) ;
+		Pos = MAP_APPFONT ( 2, 21 ) ;
+		Size = MAP_APPFONT ( 267, 146 ) ;
 		Hide = FALSE ;
 	};
 

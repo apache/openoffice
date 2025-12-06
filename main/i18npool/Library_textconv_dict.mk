@@ -19,8 +19,6 @@
 #
 #**************************************************************
 
-
-
 $(eval $(call gb_Library_Library,textconv_dict))
 
 $(eval $(call gb_Library_set_include,textconv_dict,\

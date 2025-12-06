@@ -13910,7 +13910,7 @@ iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAKElEQVR4nGNRZrhz57+yCuNdBjCAs1kg
 												<xsl:choose>
 													<xsl:when test="string(@分隔符_E71A) = '1'">, </xsl:when>
 													<xsl:when test="string(@分隔符_E71A) = '2'">; </xsl:when>
-													<!-- Absent Function , '3' correnspond with '0' space>
+													<!-- Absent Function , '3' correspond with '0' space>
 													<xsl:when test="string(@分隔符_E71A) = '3'">. </xsl:when-->
 												</xsl:choose>
 											</text:p>

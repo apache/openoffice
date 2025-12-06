@@ -2445,7 +2445,7 @@ void SdrDragShear::MoveSdrDrag(const Point& rPnt)
 			bResize=true;
 			double nCos=cos(nTmpWink*nPi180);
 			aNeuFact=nCos;
-			Kuerzen(aFact,10); // 3 Dezimalstellen sollten reichen
+			aFact.ReduceInaccurate(10); // 3 Dezimalstellen sollten reichen
 		}
 
 		if (nNeuWink>8900)

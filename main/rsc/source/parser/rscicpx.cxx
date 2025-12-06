@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_rsc.hxx"
 
@@ -42,14 +40,14 @@
 #include <yyrscyacc.hxx>
 
 /*************************************************************************
-|*	  RscTypCont::InsWinBit()
+|* RscTypCont::InsWinBit()
 *************************************************************************/
 void RscTypCont::InsWinBit( RscTop * pClass, const ByteString & rName,
 							Atom nVal )
 {
 	RscClient * pClient;
 
-	// Clientvariablen einfuegen
+	// Clientvariablen einfügen
 	aBaseLst.Insert(
 		pClient = new RscClient( pHS->getID( "sal_Bool" ), RSC_NOTYPE,
 								 &aWinBits, nVal ),
@@ -63,7 +61,7 @@ void RscTypCont::InsWinBit( RscTop * pClass, const ByteString & rName,
 	InsWinBit( pClass, #WinBit, n##WinBit##Id );
 
 /*************************************************************************
-|*	  RscTypCont::InitClassMgr()
+|* RscTypCont::InitClassMgr()
 *************************************************************************/
 RscTop * RscTypCont::InitClassMgr()
 {
@@ -102,7 +100,7 @@ RscTop * RscTypCont::InitClassMgr()
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassString()
+|* RscTypCont::InitClassString()
 *************************************************************************/
 RscTop * RscTypCont::InitClassString( RscTop * pSuper ){
 	Atom		nId;
@@ -120,7 +118,7 @@ RscTop * RscTypCont::InitClassString( RscTop * pSuper ){
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassBitmap()
+|* RscTypCont::InitClassBitmap()
 *************************************************************************/
 RscTop * RscTypCont::InitClassBitmap( RscTop * pSuper ){
 	Atom		nId;
@@ -140,7 +138,7 @@ RscTop * RscTypCont::InitClassBitmap( RscTop * pSuper ){
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassColor()
+|* RscTypCont::InitClassColor()
 *************************************************************************/
 RscTop * RscTypCont::InitClassColor( RscTop * pSuper, RscEnum * pColor ){
 	Atom		nId;
@@ -166,7 +164,7 @@ RscTop * RscTypCont::InitClassColor( RscTop * pSuper, RscEnum * pColor ){
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassImage()
+|* RscTypCont::InitClassImage()
 *************************************************************************/
 RscTop * RscTypCont::InitClassImage( RscTop * pSuper, RscTop * pClassBitmap,
 									 RscTop * pClassColor )
@@ -186,14 +184,13 @@ RscTop * RscTypCont::InitClassImage( RscTop * pSuper, RscTop * pClassBitmap,
 	nId = aNmTb.Put( "MaskBitmap", VARNAME );
 	pClassImage->SetVariable( nId, pClassBitmap, NULL, 0, RSC_IMAGE_MASKBITMAP );
 	nId = aNmTb.Put( "MaskColor", VARNAME );
-	pClassImage->SetVariable( nId, pClassColor, NULL,
-							  VAR_SVDYNAMIC, RSC_IMAGE_MASKCOLOR );
+	pClassImage->SetVariable( nId, pClassColor, NULL, VAR_SVDYNAMIC, RSC_IMAGE_MASKCOLOR );
 
 	return( pClassImage );
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassImageList()
+|* RscTypCont::InitClassImageList()
 *************************************************************************/
 RscTop * RscTypCont::InitClassImageList( RscTop * pSuper, RscTop * /*pClassBitmap*/,
 										 RscTop * pClassColor, RscCont * pStrLst )
@@ -207,31 +204,29 @@ RscTop * RscTypCont::InitClassImageList( RscTop * pSuper, RscTop * /*pClassBitma
 	pClassImageList->SetCallPar( *pStdPar1, *pStdPar2, *pStdParType );
 	aNmTb.Put( nId, CLASSNAME, pClassImageList );
 
+	// Variablen anlegen
 	nId = aNmTb.Put( "Prefix", VARNAME );
 	pClassImageList->SetVariable( nId, &aString );
 
 	nId = aNmTb.Put( "MaskColor", VARNAME );
-	pClassImageList->SetVariable( nId, pClassColor, NULL,
-								  VAR_SVDYNAMIC, RSC_IMAGELIST_MASKCOLOR );
+	pClassImageList->SetVariable( nId, pClassColor, NULL, VAR_SVDYNAMIC, RSC_IMAGELIST_MASKCOLOR );
 
 	RscCont * pCont = new RscCont( pHS->getID( "sal_uInt16 *" ), RSC_NOTYPE );
 	pCont->SetTypeClass( &aIdUShort );
 	aBaseLst.Insert( pCont, LIST_APPEND );
 	nId = aNmTb.Put( "IdList", VARNAME );
-	pClassImageList->SetVariable( nId, pCont, NULL, 0,
-									  RSC_IMAGELIST_IDLIST );
+	pClassImageList->SetVariable( nId, pCont, NULL, 0, RSC_IMAGELIST_IDLIST );
 
 	nId = aNmTb.Put( "FileList", VARNAME );
 	pClassImageList->SetVariable( nId, pStrLst );
 
 	nId = aNmTb.Put( "IdCount", VARNAME );
-	pClassImageList->SetVariable( nId, &aUShort, NULL, 0,
-								  RSC_IMAGELIST_IDCOUNT );
+	pClassImageList->SetVariable( nId, &aUShort, NULL, 0, RSC_IMAGELIST_IDCOUNT );
 	return( pClassImageList );
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassWindow()
+|* RscTypCont::InitClassWindow()
 *************************************************************************/
 RscTop * RscTypCont::InitClassWindow( RscTop * pSuper, RscEnum * pMapUnit,
 								 RscArray * pLangGeo )
@@ -261,7 +256,7 @@ RscTop * RscTypCont::InitClassWindow( RscTop * pSuper, RscEnum * pMapUnit,
 		nOutputSizeId = pHS->getID( "RSWND_OUTPUTSIZE" );
 		SETCONST( pFlag, nOutputSizeId, RSWND_CLIENTSIZE );
 
-		// Variable einfuegen
+		// Insert variable
 		nVarId = aNmTb.Put( "_RscExtraFlags", VARNAME );
 		pClassWindow->SetVariable( nVarId, pFlag, NULL,
 																		VAR_HIDDEN | VAR_NOENUM );
@@ -335,7 +330,7 @@ RscTop * RscTypCont::InitClassWindow( RscTop * pSuper, RscEnum * pMapUnit,
 	SETCONST( pBorderStyleEnum, pHS->getID( "WINDOW_BORDER_MENU" ),      WINDOW_BORDER_MENU );
 	SETCONST( pBorderStyleEnum, pHS->getID( "WINDOW_BORDER_NOBORDER" ),  WINDOW_BORDER_NOBORDER );
 
-	// Variable einfuegen
+	// Insert variable
 	nId = aNmTb.Put( "BorderStyle", VARNAME );
 	pClassWindow->SetVariable( nId, pBorderStyleEnum, NULL,
 									0,
@@ -345,7 +340,7 @@ RscTop * RscTypCont::InitClassWindow( RscTop * pSuper, RscEnum * pMapUnit,
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassSystemWindow()
+|* RscTypCont::InitClassSystemWindow()
 *************************************************************************/
 RscTop * RscTypCont::InitClassSystemWindow( RscTop * pSuper )
 {
@@ -370,7 +365,7 @@ RscTop * RscTypCont::InitClassSystemWindow( RscTop * pSuper )
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassWorkWindow()
+|* RscTypCont::InitClassWorkWindow()
 *************************************************************************/
 RscTop * RscTypCont::InitClassWorkWindow( RscTop * pSuper )
 {
@@ -398,7 +393,7 @@ RscTop * RscTypCont::InitClassWorkWindow( RscTop * pSuper )
 		SETCONST( pShow, "SHOW_MAXIMIZED",     WORKWIN_SHOWMAXIMIZED );
 
 
-		// Variable einfuegen
+		// Insert variable
 		nVarId = aNmTb.Put( "Show", VARNAME );
 		pClassWorkWindow->SetVariable( nVarId, pShow, NULL );
 	}
@@ -407,7 +402,7 @@ RscTop * RscTypCont::InitClassWorkWindow( RscTop * pSuper )
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassDialogBox()
+|* RscTypCont::InitClassDialogBox()
 *************************************************************************/
 RscTop * RscTypCont::InitClassModalDialog( RscTop * pSuper )
 {
@@ -426,7 +421,7 @@ RscTop * RscTypCont::InitClassModalDialog( RscTop * pSuper )
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassModelessDialog()
+|* RscTypCont::InitClassModelessDialog()
 *************************************************************************/
 RscTop * RscTypCont::InitClassModelessDialog( RscTop * pSuper )
 {
@@ -443,7 +438,7 @@ RscTop * RscTypCont::InitClassModelessDialog( RscTop * pSuper )
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassControl()
+|* RscTypCont::InitClassControl()
 *************************************************************************/
 RscTop * RscTypCont::InitClassControl( RscTop * pSuper )
 {
@@ -463,7 +458,7 @@ RscTop * RscTypCont::InitClassControl( RscTop * pSuper )
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassCheckBox()
+|* RscTypCont::InitClassCheckBox()
 *************************************************************************/
 RscTop * RscTypCont::InitClassCheckBox( RscTop * pSuper )
 {
@@ -489,7 +484,7 @@ RscTop * RscTypCont::InitClassCheckBox( RscTop * pSuper )
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassPushButton()
+|* RscTypCont::InitClassPushButton()
 *************************************************************************/
 RscTop * RscTypCont::InitClassPushButton( RscTop * pSuper )
 {
@@ -511,7 +506,7 @@ RscTop * RscTypCont::InitClassPushButton( RscTop * pSuper )
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassTriStateBox()
+|* RscTypCont::InitClassTriStateBox()
 *************************************************************************/
 RscTop * RscTypCont::InitClassTriStateBox( RscTop * pSuper,
 										   RscEnum * pTriState )
@@ -534,7 +529,7 @@ RscTop * RscTypCont::InitClassTriStateBox( RscTop * pSuper,
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassMenuButton()
+|* RscTypCont::InitClassMenuButton()
 *************************************************************************/
 RscTop * RscTypCont::InitClassMenuButton( RscTop * pSuper,
 										   RscTop * pClassMenu )
@@ -557,7 +552,7 @@ RscTop * RscTypCont::InitClassMenuButton( RscTop * pSuper,
 
 
 /*************************************************************************
-|*	  RscTypCont::InitClassImageButton()
+|* RscTypCont::InitClassImageButton()
 *************************************************************************/
 RscTop * RscTypCont::InitClassImageButton( RscTop * pSuper,
 										   RscTop * pClassImage,
@@ -611,7 +606,7 @@ RscTop * RscTypCont::InitClassImageButton( RscTop * pSuper,
 		SETCONST( pSymbol, "IMAGEBUTTON_WINDBACKWARD",  SYMBOL_WINDBACKWARD );
 		SETCONST( pSymbol, "IMAGEBUTTON_WINDFORWARD",   SYMBOL_WINDFORWARD );
 
-		// Variable einfuegen
+		// Insert variable
 		nVarId = aNmTb.Put( "Symbol", VARNAME );
 		pClassImageButton->SetVariable( nVarId, pSymbol, NULL, 0,
 										RSC_IMAGEBUTTON_SYMBOL );
@@ -628,7 +623,7 @@ RscTop * RscTypCont::InitClassImageButton( RscTop * pSuper,
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassEdit()
+|* RscTypCont::InitClassEdit()
 *************************************************************************/
 RscTop * RscTypCont::InitClassEdit( RscTop * pSuper )
 {
@@ -654,7 +649,7 @@ RscTop * RscTypCont::InitClassEdit( RscTop * pSuper )
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassMultiLineedit()
+|* RscTypCont::InitClassMultiLineedit()
 *************************************************************************/
 RscTop * RscTypCont::InitClassMultiLineEdit( RscTop * pSuper )
 {
@@ -677,7 +672,7 @@ RscTop * RscTypCont::InitClassMultiLineEdit( RscTop * pSuper )
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassScrollBar()
+|* RscTypCont::InitClassScrollBar()
 *************************************************************************/
 RscTop * RscTypCont::InitClassScrollBar( RscTop * pSuper )
 {
@@ -735,7 +730,7 @@ RscTop * RscTypCont::InitClassScrollBar( RscTop * pSuper )
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassListBox()
+|* RscTypCont::InitClassListBox()
 *************************************************************************/
 RscTop * RscTypCont::InitClassListBox( RscTop * pSuper, RscArray * pStrLst )
 {
@@ -770,7 +765,7 @@ RscTop * RscTypCont::InitClassListBox( RscTop * pSuper, RscArray * pStrLst )
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassMultiListBox()
+|* RscTypCont::InitClassMultiListBox()
 *************************************************************************/
 RscTop * RscTypCont::InitClassMultiListBox( RscTop * pSuper )
 {
@@ -789,7 +784,7 @@ RscTop * RscTypCont::InitClassMultiListBox( RscTop * pSuper )
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassComboBox()
+|* RscTypCont::InitClassComboBox()
 *************************************************************************/
 RscTop * RscTypCont::InitClassComboBox( RscTop * pSuper, RscArray * pStrLst )
 {
@@ -818,7 +813,7 @@ RscTop * RscTypCont::InitClassComboBox( RscTop * pSuper, RscArray * pStrLst )
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassFixedText()
+|* RscTypCont::InitClassFixedText()
 *************************************************************************/
 RscTop * RscTypCont::InitClassFixedText( RscTop * pSuper )
 {
@@ -846,7 +841,7 @@ RscTop * RscTypCont::InitClassFixedText( RscTop * pSuper )
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassFixedBitmap()
+|* RscTypCont::InitClassFixedBitmap()
 *************************************************************************/
 RscTop * RscTypCont::InitClassFixedBitmap( RscTop * pSuper, RscTop * pClassBitmap )
 {
@@ -869,7 +864,7 @@ RscTop * RscTypCont::InitClassFixedBitmap( RscTop * pSuper, RscTop * pClassBitma
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassFixedImage()
+|* RscTypCont::InitClassFixedImage()
 *************************************************************************/
 RscTop * RscTypCont::InitClassFixedImage( RscTop * pSuper, RscTop * pClassImage )
 {
@@ -890,7 +885,7 @@ RscTop * RscTypCont::InitClassFixedImage( RscTop * pSuper, RscTop * pClassImage 
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassImageRadioButton()
+|* RscTypCont::InitClassImageRadioButton()
 *************************************************************************/
 RscTop * RscTypCont::InitClassRadioButton( RscTop * pSuper )
 {
@@ -916,7 +911,7 @@ RscTop * RscTypCont::InitClassRadioButton( RscTop * pSuper )
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassImageRadioButton()
+|* RscTypCont::InitClassImageRadioButton()
 *************************************************************************/
 RscTop * RscTypCont::InitClassImageRadioButton( RscTop * pSuper, RscTop * pClassImage )
 {
@@ -938,7 +933,7 @@ RscTop * RscTypCont::InitClassImageRadioButton( RscTop * pSuper, RscTop * pClass
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassKeyCode()
+|* RscTypCont::InitClassKeyCode()
 *************************************************************************/
 RscTop * RscTypCont::InitClassKeyCode( RscTop * pSuper, RscEnum * pKey )
 {
@@ -971,12 +966,12 @@ RscTop * RscTypCont::InitClassKeyCode( RscTop * pSuper, RscEnum * pKey )
 		nMod2Id = pHS->getID( "KEY_MOD2" );
 		SETCONST( pFlag, nMod2Id, KEY_MOD2 );
 
-		// Variable einfuegen
+		// Insert variable
 		nVarId = aNmTb.Put( "_ModifierFlags", VARNAME );
 		pClassKeyCode->SetVariable( nVarId, pFlag, NULL,
 																		VAR_HIDDEN | VAR_NOENUM );
 
-		// Clientvariablen einfuegen
+		// Clientvariablen einfügen
 		aBaseLst.Insert(
 			pClient = new RscClient( pHS->getID( "sal_Bool" ), RSC_NOTYPE,
 									 pFlag, nShiftId ),
@@ -1029,7 +1024,7 @@ RscTop * RscTypCont::InitClassKeyCode( RscTop * pSuper, RscEnum * pKey )
 		SETCONST( pKeyFunc, "KEYFUNC_PROPERTIES",       KEYFUNC_PROPERTIES      );
 		SETCONST( pKeyFunc, "KEYFUNC_FRONT",            KEYFUNC_FRONT           );
 		SETCONST( pKeyFunc, "KEYFUNC_FINDBACKWARD",     KEYFUNC_FINDBACKWARD );
-		// Variable einfuegen
+		// Insert variable
 		nVarId = aNmTb.Put( "Function", VARNAME );
 		pClassKeyCode->SetVariable( nVarId, pKeyFunc, NULL );
 	}
@@ -1038,7 +1033,7 @@ RscTop * RscTypCont::InitClassKeyCode( RscTop * pSuper, RscEnum * pKey )
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassAccelItem()
+|* RscTypCont::InitClassAccelItem()
 *************************************************************************/
 RscTop * RscTypCont::InitClassAccelItem( RscTop * pSuper,
 																				RscTop * pClassKeyCode )
@@ -1064,7 +1059,7 @@ RscTop * RscTypCont::InitClassAccelItem( RscTop * pSuper,
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassAccelm()
+|* RscTypCont::InitClassAccelm()
 *************************************************************************/
 RscTop * RscTypCont::InitClassAccel( RscTop * pSuper, RscTop * pClassAccelItem )
 {
@@ -1096,7 +1091,7 @@ RscTop * RscTypCont::InitClassAccel( RscTop * pSuper, RscTop * pClassAccelItem )
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassMenuItem()
+|* RscTypCont::InitClassMenuItem()
 *************************************************************************/
 RscTop * RscTypCont::InitClassMenuItem( RscTop * pSuper,
 										RscTop * pClassBitmap,
@@ -1139,13 +1134,13 @@ RscTop * RscTypCont::InitClassMenuItem( RscTop * pSuper,
 		nHelpId = pHS->getID( "MIB_HELP" );
 		SETCONST( pFlag, nHelpId, MIB_HELP );
 
-		// Variable einfuegen
+		// Insert variable
 		nVarId = aNmTb.Put( "_MenuItemFlags", VARNAME );
 		pClassMenuItem->SetVariable( nVarId, pFlag, NULL,
 									 VAR_HIDDEN | VAR_NOENUM,
 									 RSC_MENUITEM_STATUS );
 
-		// Clientvariablen einfuegen
+		// Clientvariablen einfügen
 		aBaseLst.Insert(
 			pClient = new RscClient( pHS->getID( "sal_Bool" ), RSC_NOTYPE,
 									 pFlag, nCheckableId ),
@@ -1216,7 +1211,7 @@ RscTop * RscTypCont::InitClassMenuItem( RscTop * pSuper,
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassMenu()
+|* RscTypCont::InitClassMenu()
 *************************************************************************/
 RscTop * RscTypCont::InitClassMenu( RscTop * pSuper,
 									RscTop * pClassMenuItem )
@@ -1251,7 +1246,7 @@ RscTop * RscTypCont::InitClassMenu( RscTop * pSuper,
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassMessageBox()
+|* RscTypCont::InitClassMessageBox()
 *************************************************************************/
 RscTop * RscTypCont::InitClassMessBox( RscTop * pSuper,
 									   RscEnum * pMessButtons,
@@ -1286,7 +1281,7 @@ RscTop * RscTypCont::InitClassMessBox( RscTop * pSuper,
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassSplitter()
+|* RscTypCont::InitClassSplitter()
 *************************************************************************/
 RscTop * RscTypCont::InitClassSplitter( RscTop * pSuper )
 {
@@ -1307,7 +1302,7 @@ RscTop * RscTypCont::InitClassSplitter( RscTop * pSuper )
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassSplitWindow()
+|* RscTypCont::InitClassSplitWindow()
 *************************************************************************/
 RscTop * RscTypCont::InitClassSplitWindow( RscTop * pSuper )
 {
@@ -1328,7 +1323,7 @@ RscTop * RscTypCont::InitClassSplitWindow( RscTop * pSuper )
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassTime()
+|* RscTypCont::InitClassTime()
 *************************************************************************/
 RscTop * RscTypCont::InitClassTime( RscTop * pSuper )
 {
@@ -1359,7 +1354,7 @@ RscTop * RscTypCont::InitClassTime( RscTop * pSuper )
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassDate()
+|* RscTypCont::InitClassDate()
 *************************************************************************/
 RscTop * RscTypCont::InitClassDate( RscTop * pSuper )
 {
@@ -1387,7 +1382,7 @@ RscTop * RscTypCont::InitClassDate( RscTop * pSuper )
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassPatternFormatter()
+|* RscTypCont::InitClassPatternFormatter()
 *************************************************************************/
 RscTop * RscTypCont::InitClassPatternFormatter( RscTop * pSuper )
 {
@@ -1414,7 +1409,7 @@ RscTop * RscTypCont::InitClassPatternFormatter( RscTop * pSuper )
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassNumericFormatter()
+|* RscTypCont::InitClassNumericFormatter()
 *************************************************************************/
 RscTop * RscTypCont::InitClassNumericFormatter( RscTop * pSuper )
 {
@@ -1450,7 +1445,7 @@ RscTop * RscTypCont::InitClassNumericFormatter( RscTop * pSuper )
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassMetricFormatter()
+|* RscTypCont::InitClassMetricFormatter()
 *************************************************************************/
 RscTop * RscTypCont::InitClassMetricFormatter( RscTop * pSuper,
 																						RscEnum * pFieldUnits )
@@ -1475,7 +1470,7 @@ RscTop * RscTypCont::InitClassMetricFormatter( RscTop * pSuper,
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassCurrencyFormatter()
+|* RscTypCont::InitClassCurrencyFormatter()
 *************************************************************************/
 RscTop * RscTypCont::InitClassCurrencyFormatter
 (
@@ -1494,7 +1489,7 @@ RscTop * RscTypCont::InitClassCurrencyFormatter
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassDateFormatter()
+|* RscTypCont::InitClassDateFormatter()
 *************************************************************************/
 RscTop * RscTypCont::InitClassDateFormatter( RscTop * pSuper,
 						RscTop * pClassDate )
@@ -1528,7 +1523,7 @@ RscTop * RscTypCont::InitClassDateFormatter( RscTop * pSuper,
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassTimeFormatter()
+|* RscTypCont::InitClassTimeFormatter()
 *************************************************************************/
 RscTop * RscTypCont::InitClassTimeFormatter( RscTop * pSuper,
 						RscTop * pClassTime,
@@ -1566,7 +1561,7 @@ RscTop * RscTypCont::InitClassTimeFormatter( RscTop * pSuper,
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassSpinField()
+|* RscTypCont::InitClassSpinField()
 *************************************************************************/
 RscTop * RscTypCont::InitClassSpinField( RscTop * pSuper )
 {
@@ -1587,7 +1582,7 @@ RscTop * RscTypCont::InitClassSpinField( RscTop * pSuper )
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassPatternField()
+|* RscTypCont::InitClassPatternField()
 *************************************************************************/
 RscTop * RscTypCont::InitClassPatternField( RscTop * pSuper )
 {
@@ -1605,7 +1600,7 @@ RscTop * RscTypCont::InitClassPatternField( RscTop * pSuper )
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassNumericField()
+|* RscTypCont::InitClassNumericField()
 *************************************************************************/
 RscTop * RscTypCont::InitClassNumericField( RscTop * pSuper )
 {
@@ -1633,7 +1628,7 @@ RscTop * RscTypCont::InitClassNumericField( RscTop * pSuper )
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassMetricField()
+|* RscTypCont::InitClassMetricField()
 *************************************************************************/
 RscTop * RscTypCont::InitClassMetricField( RscTop * pSuper )
 {
@@ -1662,7 +1657,7 @@ RscTop * RscTypCont::InitClassMetricField( RscTop * pSuper )
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassCurrencyField()
+|* RscTypCont::InitClassCurrencyField()
 *************************************************************************/
 RscTop * RscTypCont::InitClassCurrencyField
 (
@@ -1696,7 +1691,7 @@ RscTop * RscTypCont::InitClassCurrencyField
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassDateField()
+|* RscTypCont::InitClassDateField()
 *************************************************************************/
 RscTop * RscTypCont::InitClassDateField( RscTop * pSuper, RscTop * pClassDate )
 {
@@ -1720,7 +1715,7 @@ RscTop * RscTypCont::InitClassDateField( RscTop * pSuper, RscTop * pClassDate )
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassTimeField()
+|* RscTypCont::InitClassTimeField()
 *************************************************************************/
 RscTop * RscTypCont::InitClassTimeField( RscTop * pSuper, RscTop * pClassTime )
 {
@@ -1744,7 +1739,7 @@ RscTop * RscTypCont::InitClassTimeField( RscTop * pSuper, RscTop * pClassTime )
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassPatternBox()
+|* RscTypCont::InitClassPatternBox()
 *************************************************************************/
 RscTop * RscTypCont::InitClassPatternBox( RscTop * pSuper )
 {
@@ -1762,7 +1757,7 @@ RscTop * RscTypCont::InitClassPatternBox( RscTop * pSuper )
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassNumericBox()
+|* RscTypCont::InitClassNumericBox()
 *************************************************************************/
 RscTop * RscTypCont::InitClassNumericBox( RscTop * pSuper )
 {
@@ -1782,7 +1777,7 @@ RscTop * RscTypCont::InitClassNumericBox( RscTop * pSuper )
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassMetricBox()
+|* RscTypCont::InitClassMetricBox()
 *************************************************************************/
 RscTop * RscTypCont::InitClassMetricBox( RscTop * pSuper )
 {
@@ -1802,7 +1797,7 @@ RscTop * RscTypCont::InitClassMetricBox( RscTop * pSuper )
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassCurrencyBox()
+|* RscTypCont::InitClassCurrencyBox()
 *************************************************************************/
 RscTop * RscTypCont::InitClassCurrencyBox
 (
@@ -1827,7 +1822,7 @@ RscTop * RscTypCont::InitClassCurrencyBox
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassDateBox()
+|* RscTypCont::InitClassDateBox()
 *************************************************************************/
 RscTop * RscTypCont::InitClassDateBox( RscTop * pSuper,
 									   RscTop * /*pClassDate*/ )
@@ -1848,7 +1843,7 @@ RscTop * RscTypCont::InitClassDateBox( RscTop * pSuper,
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassTimeBox()
+|* RscTypCont::InitClassTimeBox()
 *************************************************************************/
 RscTop * RscTypCont::InitClassTimeBox( RscTop * pSuper,
 									   RscTop * /*pClassTime*/ )
@@ -1869,7 +1864,7 @@ RscTop * RscTypCont::InitClassTimeBox( RscTop * pSuper,
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassDockWindow()
+|* RscTypCont::InitClassDockWindow()
 *************************************************************************/
 RscTop * RscTypCont::InitClassDockingWindow( RscTop * pSuper,
 											 RscEnum * pMapUnit )
@@ -1909,7 +1904,7 @@ RscTop * RscTypCont::InitClassDockingWindow( RscTop * pSuper,
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassToolBoxItem()
+|* RscTypCont::InitClassToolBoxItem()
 *************************************************************************/
 RscTop * RscTypCont::InitClassToolBoxItem( RscTop * pSuper,
 										   RscTop * pClassBitmap,
@@ -1939,7 +1934,7 @@ RscTop * RscTypCont::InitClassToolBoxItem( RscTop * pSuper,
 		SETCONST( pEnum, "TOOLBOXITEM_SEPARATOR", TOOLBOXITEM_SEPARATOR );
 		SETCONST( pEnum, "TOOLBOXITEM_BREAK", TOOLBOXITEM_BREAK );
 
-		// Variable einfuegen
+		// Insert variable
 		nId = aNmTb.Put( "Type", VARNAME );
 		pClassToolBoxItem->SetVariable( nId, pEnum, NULL, 0,
 								  RSC_TOOLBOXITEM_TYPE	);
@@ -1967,7 +1962,7 @@ RscTop * RscTypCont::InitClassToolBoxItem( RscTop * pSuper,
 		l_nDropDownId = pHS->getID( "TIB_DROPDOWN" );
 		SETCONST( pFlag, l_nDropDownId, TIB_DROPDOWN );
 
-		// Variable einfuegen
+		// Insert variable
 		l_nVarId = aNmTb.Put( "_ToolBoxItemFlags", VARNAME );
 		pClassToolBoxItem->SetVariable( l_nVarId, pFlag, NULL,
 									 VAR_HIDDEN | VAR_NOENUM,
@@ -2046,7 +2041,7 @@ RscTop * RscTypCont::InitClassToolBoxItem( RscTop * pSuper,
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassToolBox()
+|* RscTypCont::InitClassToolBox()
 *************************************************************************/
 RscTop * RscTypCont::InitClassToolBox( RscTop * pSuper,
 									   RscTop * pClassToolBoxItem,
@@ -2072,7 +2067,7 @@ RscTop * RscTypCont::InitClassToolBox( RscTop * pSuper,
 		SETCONST( pEnum, "BUTTON_TEXT",                 BUTTON_TEXT );
 		SETCONST( pEnum, "BUTTON_SYMBOLTEXT",   BUTTON_SYMBOLTEXT );
 
-		// Variable einfuegen
+		// Insert variable
 		nId = aNmTb.Put( "ButtonType", VARNAME );
 		pClassToolBox->SetVariable( nId, pEnum, NULL, 0,
 								  RSC_TOOLBOX_BUTTONTYPE  );
@@ -2088,7 +2083,7 @@ RscTop * RscTypCont::InitClassToolBox( RscTop * pSuper,
 		SETCONST( pEnum, "BOXALIGN_RIGHT",              WINDOWALIGN_RIGHT );
 		SETCONST( pEnum, "BOXALIGN_BOTTOM",             WINDOWALIGN_BOTTOM );
 
-		// Variable einfuegen
+		// Insert variable
 		nId = aNmTb.Put( "Align", VARNAME );
 		pClassToolBox->SetVariable( nId, pEnum, NULL, 0,
 								  RSC_TOOLBOX_ALIGN  );
@@ -2109,18 +2104,18 @@ RscTop * RscTypCont::InitClassToolBox( RscTop * pSuper,
 	pClassToolBox->SetVariable( nId, pClassImageList, NULL, 0,
 								RSC_TOOLBOX_ITEMIMAGELIST );
 	{
-        RscLangArray* pLA;
+		RscLangArray* pLA;
 		RscCont * pCont;
 
 		aBaseLst.Insert( pCont = new RscCont( pHS->getID( "ContToolBoxItem" ),
 											  RSC_NOTYPE ),
 						 LIST_APPEND );
 		pCont->SetTypeClass( pClassToolBoxItem );
-        aBaseLst.Insert( pLA = new RscLangArray( pHS->getID( "LangContToolBoxItem" ),
-                                                 RSC_NOTYPE,
-                                                 pCont,
-                                                 &aLangType ),
-                         LIST_APPEND );
+		aBaseLst.Insert( pLA = new RscLangArray( pHS->getID( "LangContToolBoxItem" ),
+												 RSC_NOTYPE,
+												 pCont,
+												 &aLangType ),
+						 LIST_APPEND );
 		nId = aNmTb.Put( "ItemList", VARNAME );
 		pClassToolBox->SetVariable( nId, pLA, NULL, 0,
 									RSC_TOOLBOX_ITEMLIST );
@@ -2134,7 +2129,7 @@ RscTop * RscTypCont::InitClassToolBox( RscTop * pSuper,
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassStatusBar()
+|* RscTypCont::InitClassStatusBar()
 *************************************************************************/
 RscTop * RscTypCont::InitClassStatusBar( RscTop * pSuper )
 {
@@ -2155,7 +2150,7 @@ RscTop * RscTypCont::InitClassStatusBar( RscTop * pSuper )
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassMoreButton()
+|* RscTypCont::InitClassMoreButton()
 *************************************************************************/
 RscTop * RscTypCont::InitClassMoreButton( RscTop * pSuper, RscEnum * pMapUnit )
 {
@@ -2183,7 +2178,7 @@ RscTop * RscTypCont::InitClassMoreButton( RscTop * pSuper, RscEnum * pMapUnit )
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassFloatingWindow()
+|* RscTypCont::InitClassFloatingWindow()
 *************************************************************************/
 RscTop * RscTypCont::InitClassFloatingWindow( RscTop * pSuper,
 											  RscEnum * pMapUnit )
@@ -2219,7 +2214,7 @@ RscTop * RscTypCont::InitClassFloatingWindow( RscTop * pSuper,
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassTabControlItem()
+|* RscTypCont::InitClassTabControlItem()
 *************************************************************************/
 RscTop * RscTypCont::InitClassTabControlItem( RscTop * pSuper,
 											  RscTop * /*pClassTabPage*/ )
@@ -2247,7 +2242,7 @@ RscTop * RscTypCont::InitClassTabControlItem( RscTop * pSuper,
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassTabControl()
+|* RscTypCont::InitClassTabControl()
 *************************************************************************/
 RscTop * RscTypCont::InitClassTabControl( RscTop * pSuper,
 										  RscTop * pClassTabControlItem )
@@ -2273,14 +2268,14 @@ RscTop * RscTypCont::InitClassTabControl( RscTop * pSuper,
 		pClassTabControl->SetVariable( nId, pCont, NULL, 0,
 									   RSC_TABCONTROL_ITEMLIST );
 
-        INS_WINBIT( pClassTabControl, DropDown );
+		INS_WINBIT( pClassTabControl, DropDown );
 	}
 
 	return pClassTabControl;
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassSfxFamilyStyleItem()
+|* RscTypCont::InitClassSfxFamilyStyleItem()
 *************************************************************************/
 RscTop * RscTypCont::InitClassSfxStyleFamilyItem( RscTop * pSuper,
 												  RscTop * pClassBitmap,
@@ -2330,7 +2325,7 @@ RscTop * RscTypCont::InitClassSfxStyleFamilyItem( RscTop * pSuper,
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassSfxTemplateDialogm()
+|* RscTypCont::InitClassSfxTemplateDialogm()
 *************************************************************************/
 RscTop * RscTypCont::InitClassSfxTemplateDialog( RscTop * pSuper,
 												 RscTop * pClassFamilyStyleItem )
@@ -2360,7 +2355,7 @@ RscTop * RscTypCont::InitClassSfxTemplateDialog( RscTop * pSuper,
 }
 
 /*************************************************************************
-|*	  RscTypCont::InitClassSfxSlotInfo()
+|* RscTypCont::InitClassSfxSlotInfo()
 *************************************************************************/
 RscTop * RscTypCont::InitClassSfxSlotInfo( RscTop * pSuper )
 {
@@ -2380,3 +2375,5 @@ RscTop * RscTypCont::InitClassSfxSlotInfo( RscTop * pSuper )
 									RSC_SFX_SLOT_INFO_HELPTEXT );
 	return pClassSfxSlotInfo;
 }
+
+/* vim: set noet sw=4 ts=4: */

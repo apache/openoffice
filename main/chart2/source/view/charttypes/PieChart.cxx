@@ -89,7 +89,7 @@ bool PiePositionHelper::getInnerAndOuterRadius( double fCategoryX
 
     if( !isMathematicalOrientationRadius() )
     {
-        //in this case the given getMaximumX() was not corrcect instead the minimum should have been smaller by fMaxOffset
+        //in this case the given getMaximumX() was not correct instead the minimum should have been smaller by fMaxOffset
         //but during getMaximumX and getMimumX we do not know the axis orientation
         fLogicInner += fMaxOffset;
         fLogicOuter += fMaxOffset;

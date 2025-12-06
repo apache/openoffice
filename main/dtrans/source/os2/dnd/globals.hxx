@@ -33,7 +33,7 @@
 #define OS2_DNDTARGET_SERVICE_NAME  "com.sun.star.datatransfer.dnd.OleDropTarget"
 #define OS2_DNDTARGET_IMPL_NAME  "com.sun.star.comp.datatransfer.dnd.OleDropTarget_V1"
 
-// from saldata.hxx: these offsets are hardcoded in dnd/globals.hxx too to avoid vcl dependancies
+// from saldata.hxx: these offsets are hardcoded in dnd/globals.hxx too to avoid vcl dependencies
 #define SAL_FRAME_DROPTARGET			sizeof(ULONG)
 #define SAL_FRAME_DRAGSOURCE			(sizeof(ULONG)*2)
 // from saldata.hxx: drag&drop internal messages (see dnd/globals.hxx)

@@ -236,7 +236,7 @@ public class JavaLoader implements XImplementationLoader,
 
 	/**
 	 * Provides a components factory.
-	 * The <code>JavaLoader</code> tries to load the class first. If a loacation URL is given the
+	 * The <code>JavaLoader</code> tries to load the class first. If a location URL is given the
 	 * RegistrationClassFinder is used to load the class. Otherwise the class is loaded thru the Class.forName
 	 * method.
 	 * To get the factory the inspects the class for the optional static member functions __getServiceFactory resp.

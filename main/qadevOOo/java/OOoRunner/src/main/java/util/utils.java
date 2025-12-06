@@ -309,7 +309,7 @@ public class utils {
             settingPath = (String) pthSettings.getPropertyValue(setting);
 
         } catch (Exception e) {
-            System.out.println("Couldn't get stting value for " + setting);
+            System.out.println("Couldn't get setting value for " + setting);
             e.printStackTrace();
         }
         return settingPath;

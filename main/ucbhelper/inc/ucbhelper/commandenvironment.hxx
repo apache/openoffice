@@ -41,7 +41,7 @@ struct CommandEnvironment_Impl;
 
 /**
   * This class implements the interface
-  * com::sun::star::ucb::XCommandEnvironement. Instances of this class can
+  * com::sun::star::ucb::XCommandEnvironment. Instances of this class can
   * be used to supply environments to commands executed by UCB contents.
   */
 class UCBHELPER_DLLPUBLIC CommandEnvironment : public cppu::OWeakObject,

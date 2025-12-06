@@ -45,7 +45,7 @@ namespace frm
 //.........................................................................
 
 //==================================================================
-//= assigment property handle <-> property name
+//= assignment property handle <-> property name
 //= used by the PropertySetAggregationHelper
 //==================================================================
 

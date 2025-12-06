@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,18 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
 
 interface TablePrintPreview
 {
@@ -34,9 +33,9 @@ interface TablePrintPreview
 	SID_PREVIEW_PREVIOUS	[ ExecMethod = Execute; StateMethod = GetState; Export = FALSE; ]
 	SID_PREVIEW_FIRST		[ ExecMethod = Execute; StateMethod = GetState; Export = FALSE; ]
 	SID_PREVIEW_LAST		[ ExecMethod = Execute; StateMethod = GetState; Export = FALSE; ]
-	SID_PREVIEW_MARGIN      [ ExecMethod = Execute; StateMethod = GetState; Export = FALSE; ]
-	SID_PREVIEW_SCALINGFACTOR   [ ExecMethod = Execute; StateMethod = GetState; Export = FALSE; ]
-	SID_ATTR_ZOOMSLIDER     [ ExecMethod = Execute; StateMethod = GetState; Export = FALSE; ]
+	SID_PREVIEW_MARGIN		[ ExecMethod = Execute; StateMethod = GetState; Export = FALSE; ]
+	SID_PREVIEW_SCALINGFACTOR	[ ExecMethod = Execute; StateMethod = GetState; Export = FALSE; ]
+	SID_ATTR_ZOOMSLIDER		[ ExecMethod = Execute; StateMethod = GetState; Export = FALSE; ]
 
 	SfxVoidItem GoUpBlock SID_CURSORPAGEUP
 	(
@@ -45,7 +44,7 @@ interface TablePrintPreview
 	[
 		ExecMethod = Execute ;
 		StateMethod = GetState ;
-		Export = FALSE;
+		Export = FALSE ;
 		GroupId = GID_INTERN ;
 		Cachable ;
 	]
@@ -57,7 +56,7 @@ interface TablePrintPreview
 	[
 		ExecMethod = Execute ;
 		StateMethod = GetState ;
-		Export = FALSE;
+		Export = FALSE ;
 		GroupId = GID_INTERN ;
 		Cachable ;
 	]
@@ -72,7 +71,7 @@ interface TablePrintPreview
 	[
 		ExecMethod = Execute ;
 		StateMethod = GetState ;
-		Export = FALSE;
+		Export = FALSE ;
 		GroupId = GID_INTERN ;
 		Cachable ;
 	]
@@ -83,7 +82,7 @@ interface TablePrintPreview
 	[
 		ExecMethod = Execute ;
 		StateMethod = GetState ;
-		Export = FALSE;
+		Export = FALSE ;
 		GroupId = GID_INTERN ;
 		Cachable ;
 	]
@@ -94,7 +93,7 @@ interface TablePrintPreview
 	[
 		ExecMethod = Execute ;
 		StateMethod = GetState ;
-		Export = FALSE;
+		Export = FALSE ;
 		GroupId = GID_INTERN ;
 		Cachable ;
 	]
@@ -106,7 +105,7 @@ interface TablePrintPreview
 	[
 		ExecMethod = Execute ;
 		StateMethod = GetState ;
-		Export = FALSE;
+		Export = FALSE ;
 		GroupId = GID_INTERN ;
 		Cachable ;
 	]
@@ -115,7 +114,7 @@ interface TablePrintPreview
 	[
 		ExecMethod = Execute ;
 		StateMethod = GetState ;
-		Export = FALSE;
+		Export = FALSE ;
 		GroupId = GID_INTERN ;
 		Cachable ;
 	]
@@ -124,7 +123,7 @@ interface TablePrintPreview
 	[
 		ExecMethod = Execute ;
 		StateMethod = GetState ;
-		Export = FALSE;
+		Export = FALSE ;
 		GroupId = GID_INTERN ;
 		Cachable ;
 	]
@@ -133,7 +132,7 @@ interface TablePrintPreview
 	[
 		ExecMethod = Execute ;
 		StateMethod = GetState ;
-		Export = FALSE;
+		Export = FALSE ;
 		GroupId = GID_INTERN ;
 		Cachable ;
 	]
@@ -142,7 +141,7 @@ interface TablePrintPreview
 	[
 		ExecMethod = Execute ;
 		StateMethod = GetState ;
-		Export = FALSE;
+		Export = FALSE ;
 		GroupId = GID_INTERN ;
 		Cachable ;
 	]
@@ -154,12 +153,12 @@ interface TablePrintPreview
 	SID_REPEAT			[ ExecMethod = Execute; StateMethod = GetState; Export = FALSE; ]
 	SID_PRINTPREVIEW	[ ExecMethod = Execute; StateMethod = GetState; Export = FALSE; ] // ole() api()
 	SID_PREVIEW_CLOSE	[ ExecMethod = Execute; StateMethod = GetState; Export = FALSE; ]
-    SID_CANCEL          [ ExecMethod = Execute; StateMethod = GetState; Export = FALSE; ]
+	SID_CANCEL			[ ExecMethod = Execute; StateMethod = GetState; Export = FALSE; ]
 }
 
 
- // ===========================================================================
+// ===========================================================================
 shell ScPreviewShell
 {
-	import TablePrintPreview;
+	import TablePrintPreview ;
 }

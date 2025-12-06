@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_i18npool.hxx"
 
@@ -170,6 +168,7 @@ static const struct {
     { "hsb_DE", lcl_DATA_EURO },
     { "dsb_DE", lcl_DATA_EURO },
     { "rue_SK", lcl_DATA_EURO },
+    { "lij_IT", lcl_DATA_EURO },
 
     { "ja_JP",  lcl_DATA_OTHERS },
     { "ko_KR",  lcl_DATA_OTHERS },
@@ -1478,3 +1477,5 @@ LocaleData::getSupportedServiceNames() throw( RuntimeException )
         aRet[0] = OUString::createFromAscii(clocaledata);
         return aRet;
 }
+
+/* vim: set noet sw=4 ts=4: */

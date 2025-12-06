@@ -179,7 +179,7 @@ public class LinuxInstaller extends Installer {
                 }
 
                 // Some packages have to be installed with parameter "--force", if the link "/usr/bin/soffice"
-                // already exists. These pacakges return true with methode "useForce()".
+                // already exists. These packages return true with methode "useForce()".
                 boolean useForce = false;
                 if ( packageData.useForce() ) {
                     File sofficeLink = new File("/usr/bin/soffice");

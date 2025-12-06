@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #ifndef _VCL_PTRSTYLE_HXX
 #define _VCL_PTRSTYLE_HXX
 
@@ -60,9 +58,9 @@ typedef sal_uInt16 PointerStyle;
 #define POINTER_HSIZEBAR				((PointerStyle)25)
 #define POINTER_VSIZEBAR				((PointerStyle)26)
 #define POINTER_HAND					((PointerStyle)27)
-#define POINTER_REFHAND 				((PointerStyle)28)
-#define POINTER_PEN 					((PointerStyle)29)
-#define POINTER_MAGNIFY 				((PointerStyle)30)
+#define POINTER_REFHAND					((PointerStyle)28)
+#define POINTER_PEN						((PointerStyle)29)
+#define POINTER_MAGNIFY					((PointerStyle)30)
 #define POINTER_FILL					((PointerStyle)31)
 #define POINTER_ROTATE					((PointerStyle)32)
 #define POINTER_HSHEAR					((PointerStyle)33)
@@ -88,7 +86,7 @@ typedef sal_uInt16 PointerStyle;
 #define POINTER_DRAW_LINE				((PointerStyle)53)
 #define POINTER_DRAW_RECT				((PointerStyle)54)
 #define POINTER_DRAW_POLYGON			((PointerStyle)55)
-#define POINTER_DRAW_BEZIER 			((PointerStyle)56)
+#define POINTER_DRAW_BEZIER				((PointerStyle)56)
 #define POINTER_DRAW_ARC				((PointerStyle)57)
 #define POINTER_DRAW_PIE				((PointerStyle)58)
 #define POINTER_DRAW_CIRCLECUT			((PointerStyle)59)
@@ -101,7 +99,7 @@ typedef sal_uInt16 PointerStyle;
 #define POINTER_DETECTIVE				((PointerStyle)66)
 #define POINTER_PIVOT_COL				((PointerStyle)67)
 #define POINTER_PIVOT_ROW				((PointerStyle)68)
-#define POINTER_PIVOT_FIELD 			((PointerStyle)69)
+#define POINTER_PIVOT_FIELD				((PointerStyle)69)
 #define POINTER_CHAIN					((PointerStyle)70)
 #define POINTER_CHAIN_NOTALLOWED		((PointerStyle)71)
 #define POINTER_TIMEEVENT_MOVE			((PointerStyle)72)
@@ -116,23 +114,25 @@ typedef sal_uInt16 PointerStyle;
 #define POINTER_AUTOSCROLL_SE			((PointerStyle)81)
 #define POINTER_AUTOSCROLL_NS			((PointerStyle)82)
 #define POINTER_AUTOSCROLL_WE			((PointerStyle)83)
-#define POINTER_AUTOSCROLL_NSWE 		((PointerStyle)84)
+#define POINTER_AUTOSCROLL_NSWE			((PointerStyle)84)
 #define POINTER_AIRBRUSH				((PointerStyle)85)
 #define POINTER_TEXT_VERTICAL			((PointerStyle)86)
-#define POINTER_PIVOT_DELETE 			((PointerStyle)87)
+#define POINTER_PIVOT_DELETE			((PointerStyle)87)
 
 // --> FME 2004-07-30 #i32329# Enhanced table selection
-#define POINTER_TAB_SELECT_S            ((PointerStyle)88)
-#define POINTER_TAB_SELECT_E            ((PointerStyle)89)
-#define POINTER_TAB_SELECT_SE           ((PointerStyle)90)
-#define POINTER_TAB_SELECT_W            ((PointerStyle)91)
-#define POINTER_TAB_SELECT_SW           ((PointerStyle)92)
+#define POINTER_TAB_SELECT_S			((PointerStyle)88)
+#define POINTER_TAB_SELECT_E			((PointerStyle)89)
+#define POINTER_TAB_SELECT_SE			((PointerStyle)90)
+#define POINTER_TAB_SELECT_W			((PointerStyle)91)
+#define POINTER_TAB_SELECT_SW			((PointerStyle)92)
 // <--
 
 // --> FME 2004-08-16 #i20119# Paintbrush tool
-#define POINTER_PAINTBRUSH              ((PointerStyle)93)
+#define POINTER_PAINTBRUSH				((PointerStyle)93)
 // <--
 
-#define POINTER_COUNT                   94
+#define POINTER_COUNT					94
 
 #endif // _VCL_PTRSTYLE_HXX
+
+/* vim: set noet sw=4 ts=4: */

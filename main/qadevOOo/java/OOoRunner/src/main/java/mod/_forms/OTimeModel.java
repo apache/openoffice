@@ -158,7 +158,7 @@ public class OTimeModel extends GenericModelTest {
 
     /**
      * calls <CODE>createTestEnvironment()</CODE> from it's super class
-     * This test uses not the generic implementaion of <CODE>cecker()</CODE> of its
+     * This test uses not the generic implementation of <CODE>checker()</CODE> of its
      * super class. This tests uses its own implementation of <CODE>checker()</CODE>
      * to test <CODE>com::sun::star::form::XUpdateBroadcaster</CODE>
      * @param Param the test parameter

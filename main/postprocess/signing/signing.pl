@@ -178,7 +178,7 @@ sub sign_files		#09.07.2007 10:36
 	$commandline_base = $signtool . " " . "-f $opt_pfxfile -p $opt_pass -t $opt_timestamp_url";
 
 	# Here switch between:
-	# one command line for muliple files (all doesn't work, too much) / for each file one command line
+	# one command line for multiple files (all doesn't work, too much) / for each file one command line
 	if ( $max_files > 1 ) {
 		exec_multi_sign($files_to_sign, $commandline_base);
 	} else

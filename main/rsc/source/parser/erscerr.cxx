@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_rsc.hxx"
 #include <stdlib.h>
@@ -64,13 +62,13 @@ ERRTYPE& ERRTYPE::operator = ( const ERRTYPE & rError )
 *************************************************************************/
 void RscError::StdOut( const char * pStr, const RscVerbosity _verbosityLevel )
 {
-    if ( m_verbosity >= _verbosityLevel )
-    {
-	    if( pStr ){
-		    printf( "%s", pStr );
-		    fflush( stdout );
-	    }
-    }
+	if ( m_verbosity >= _verbosityLevel )
+	{
+		if( pStr ){
+			printf( "%s", pStr );
+			fflush( stdout );
+		}
+	}
 }
 
 /*************************************************************************
@@ -216,29 +214,29 @@ void RscError::WriteError( const ERRTYPE& rError, const char * pMessage )
 			StdLstOut( "-i  Include directives for the Preprocessor.\n" );
 			StdLstOut( "-presponse     Use response file for Preprocessor.\n" );
 			StdLstOut( "-lg<language>  Use a different language.\n" );
-            StdLstOut( "-pp=<filename> Use a different Preprocessor.\n" );
-            StdLstOut( "-rsc2=<filename> Specify the location for rsc2.\n" );
-            StdLstOut( "No longer existent: -rc<filename>  Use a different system resource compiler.\n" );
-            StdLstOut( "-fs=<filename> Name of the .res file.\n" );
-            StdLstOut( "-lip=<path>    additional search path for system dependent files\n" );
-            StdLstOut( "-fp=<filename> Renaming of the .srs file.\n" );
-            StdLstOut( "-fl=<filename> Listing file.\n" );
-            StdLstOut( "-fh=<filename> Header file.\n" );
-            StdLstOut( "-fc=<filename> Code file.\n" );
-            StdLstOut( "-ft=<filename> Touch a file when done in rsc2 (for dependencies)\n" );
-            StdLstOut( "-fr=<filename> Ressource constructor .cxx-file.\n" );
-            StdLstOut( "-fx=<filename> Name of .src-file.\n" );
-            StdLstOut( "-oil=<dir>     Output directory for image list files\n" );
-            StdLstOut( "-r<ENV>=<path> replace <path> by <ENV> in image list files\n" );
+			StdLstOut( "-pp=<filename> Use a different Preprocessor.\n" );
+			StdLstOut( "-rsc2=<filename> Specify the location for rsc2.\n" );
+			StdLstOut( "No longer existent: -rc<filename>  Use a different system resource compiler.\n" );
+			StdLstOut( "-fs=<filename> Name of the .res file.\n" );
+			StdLstOut( "-lip=<path>    additional search path for system dependent files\n" );
+			StdLstOut( "-fp=<filename> Renaming of the .srs file.\n" );
+			StdLstOut( "-fl=<filename> Listing file.\n" );
+			StdLstOut( "-fh=<filename> Header file.\n" );
+			StdLstOut( "-fc=<filename> Code file.\n" );
+			StdLstOut( "-ft=<filename> Touch a file when done in rsc2 (for dependencies)\n" );
+			StdLstOut( "-fr=<filename> Resource constructor .cxx-file.\n" );
+			StdLstOut( "-fx=<filename> Name of .src-file.\n" );
+			StdLstOut( "-oil=<dir>     Output directory for image list files\n" );
+			StdLstOut( "-r<ENV>=<path> replace <path> by <ENV> in image list files\n" );
 			StdLstOut( "-CHARSET_...  Convert to this character set.\n" );
 			StdLstOut( "-BIGENDIAN    Format of number values.\n" );
 			StdLstOut( "-LITTLEENDIAN Format of number values.\n" );
 			StdLstOut( "-SMART        Generate smart names (cxx, hxx).\n" );
 			StdLstOut( "-SrsDefault   Only write one language to srs file.\n" );
-            StdLstOut( "\nwhen creating multiple .res files in one pass, please give these\n" );
-            StdLstOut( "options in consecutive blocks:\n" );
-            StdLstOut( "-lg<language> -fs<filename> [-lip<path> [-lip<path>] ]\n" );
-            StdLstOut( "a new block begins when either -lg or -fs is used again.\n" );
+			StdLstOut( "\nwhen creating multiple .res files in one pass, please give these\n" );
+			StdLstOut( "options in consecutive blocks:\n" );
+			StdLstOut( "-lg<language> -fs<filename> [-lip<path> [-lip<path>] ]\n" );
+			StdLstOut( "a new block begins when either -lg or -fs is used again.\n" );
 			break;
 
 		case ERR_UNKNOWNSW:
@@ -422,7 +420,7 @@ void RscError::ErrorFormat( const ERRTYPE& rError, RscTop * pClass,
 		// Fehlerposition anzeigen
 		for( i = 0; (i +1) < pFI->GetScanPos(); i++ )
 			StdLstErr( " " );
-		LstOut( "     ^" ); //Zeilennummern beachten
+		LstOut( "     ^" ); // Zeilennummern beachten
 		StdErr( "^" );
 		StdLstErr( "\n" );
 	}
@@ -507,3 +505,5 @@ void RscError::FatalError( const ERRTYPE& rError, const RscId &aId,
 
 	exit( 1 );
 }
+
+/* vim: set noet sw=4 ts=4: */

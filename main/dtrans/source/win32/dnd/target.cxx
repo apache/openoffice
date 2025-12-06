@@ -582,7 +582,7 @@ void DropTarget::fire_dropActionChanged( const DropTargetDragEvent& dtde )
 
 // Non - interface functions ============================================================
 // DropTarget fires events to XDropTargetListeners. The event object contains an
-// XDropTargetDropContext implementaion. When the listener calls on that interface
+// XDropTargetDropContext implementation. When the listener calls on that interface
 // then the calls are delegated from DropContext (XDropTargetDropContext) to these
 // functions.
 // Only one listener which visible area is affected is allowed to call on

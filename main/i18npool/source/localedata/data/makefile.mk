@@ -183,6 +183,7 @@ SHL3OBJS=	\
 	$(SLO)$/localedata_kl_GL.obj	\
 	$(SLO)$/localedata_la_VA.obj	\
 	$(SLO)$/localedata_lb_LU.obj	\
+	$(SLO)$/localedata_lij_IT.obj	\
 	$(SLO)$/localedata_lt_LT.obj	\
 	$(SLO)$/localedata_ltg_LV.obj	\
 	$(SLO)$/localedata_lv_LV.obj	\

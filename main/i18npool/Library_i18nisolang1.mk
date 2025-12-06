@@ -19,8 +19,6 @@
 #
 #**************************************************************
 
-
-
 $(eval $(call gb_Library_Library,i18nisolang1))
 
 $(eval $(call gb_Library_add_package_headers,i18nisolang1,i18npool_inc))

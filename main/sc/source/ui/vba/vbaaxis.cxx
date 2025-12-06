@@ -576,7 +576,7 @@ ScVbaAxis::setScaleType( ::sal_Int32 _nScaleType ) throw (script::BasicErrorExce
 					mxPropertySet->setPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Logarithmic" ) ), uno::makeAny( sal_True ) );
 					break;
 				default:
-					// According to MS the paramenter is ignored and no Error is thrown
+					// According to MS the parameter is ignored and no Error is thrown
 					break;
 			}
 		}

@@ -150,7 +150,7 @@ Sequence< ::rtl::OUString > OPreparedStatement::getSupportedServiceNames(  ) thr
 {
 	Sequence< ::rtl::OUString > aSNS( 2 );
 	aSNS.getArray()[0] = SERVICE_SDBC_PREPAREDSTATEMENT;
-	aSNS.getArray()[1] = SERVICE_SDB_PREPAREDSTATMENT;
+	aSNS.getArray()[1] = SERVICE_SDB_PREPAREDSTATEMENT;
 	return aSNS;
 }
 

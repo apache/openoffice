@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,33 +7,31 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 #include "navipi.hrc"
 
-#define SC_NAVI_CMD_IDLIST \
-	IdList =			   \
-	{					   \
-		IID_DATA ;		   \
-		IID_UP ;		   \
-		IID_DOWN ;		   \
-		IID_SCENARIOS ;	   \
-		IID_DROPMODE ;	   \
-		IID_CHANGEROOT ;   \
-		IID_ZOOMOUT ;	   \
-	};					   \
+#define SC_NAVI_CMD_IDLIST	\
+	IdList =				\
+	{						\
+		IID_DATA ;			\
+		IID_UP ;			\
+		IID_DOWN ;			\
+		IID_SCENARIOS ;		\
+		IID_DROPMODE ;		\
+		IID_CHANGEROOT ;	\
+		IID_ZOOMOUT ;		\
+	};						\
 	IdCount = { 8 ; };
 
 // SC_CONTENT_...
@@ -55,36 +53,36 @@ Window RID_SCDLG_NAVIGATOR
 {
 	SVLook = TRUE ;
 	HelpId = HID_SC_NAVIGATOR ;
-	 //?	Pos = MAP_APPFONT( 0, 0 );
-	Size = MAP_APPFONT ( 115 , 116 ) ;
+	//Pos = MAP_APPFONT( 0, 0 ) ;
+	Size = MAP_APPFONT ( 115, 116 ) ;
 	OutputSize = TRUE ;
 	DialogControl = TRUE ;
 	Hide = TRUE ;
 	Text [ en-US ] = "Navigator" ;
-	 //    Closeable = TRUE ;
-	 //    Moveable = TRUE ;
-	 //    Zoomable = TRUE ;
-	 //    Sizeable = TRUE ;
-	 //    EnableResizing = TRUE ;
-	 //    HideWhenDeactivate = TRUE ;
-	 //    Border = TRUE ;
-	 //    Dockable = TRUE ;
+	//Closeable = TRUE ;
+	//Moveable = TRUE ;
+	//Zoomable = TRUE ;
+	//Sizeable = TRUE ;
+	//EnableResizing = TRUE ;
+	//HideWhenDeactivate = TRUE ;
+	//Border = TRUE ;
+	//Dockable = TRUE ;
 	FixedText FT_ROW
 	{
-		 //			Pos = MAP_APPFONT( 2, 20 );
-		Pos = MAP_APPFONT ( 2 , 19 ) ;
-		 // an kleinere Toolbox-Bitmaps angepasst
-		Size = MAP_APPFONT ( 19 , 10 ) ;
+		//Pos = MAP_APPFONT( 2, 20 ) ;
+		Pos = MAP_APPFONT ( 2, 19 ) ;
+		// an kleinere Toolbox-Bitmaps angepasst
+		Size = MAP_APPFONT ( 19, 10 ) ;
 		Text [ en-US ] = "Row" ;
 	};
 	NumericField ED_ROW
 	{
 		HelpId = HID_SC_NAVIPI_ROW ;
 		Border = TRUE ;
-		 //			Pos = MAP_APPFONT( 31, 19 );
-		Pos = MAP_APPFONT ( 31 , 18 ) ;
-		 // an kleinere Toolbox-Bitmaps angepasst
-		Size = MAP_APPFONT ( 30 , 12 ) ;
+		//Pos = MAP_APPFONT( 31, 19 ) ;
+		Pos = MAP_APPFONT ( 31, 18 ) ;
+		// an kleinere Toolbox-Bitmaps angepasst
+		Size = MAP_APPFONT ( 30, 12 ) ;
 		Right = TRUE ;
 		Repeat = TRUE ;
 		Spin = TRUE ;
@@ -95,16 +93,16 @@ Window RID_SCDLG_NAVIGATOR
 	};
 	FixedText FT_COL
 	{
-		Pos = MAP_APPFONT ( 2 , 5 ) ;
-		Size = MAP_APPFONT ( 23 , 10 ) ;
+		Pos = MAP_APPFONT ( 2, 5 ) ;
+		Size = MAP_APPFONT ( 23, 10 ) ;
 		Text [ en-US ] = "Column" ;
 	};
 	SpinField ED_COL
 	{
 		HelpId = HID_SC_NAVIPI_COL ;
 		Border = TRUE ;
-		Pos = MAP_APPFONT ( 31 , 4 ) ;
-		Size = MAP_APPFONT ( 30 , 12 ) ;
+		Pos = MAP_APPFONT ( 31, 4 ) ;
+		Size = MAP_APPFONT ( 30, 12 ) ;
 		Right = TRUE ;
 		Repeat = TRUE ;
 		Spin = TRUE ;
@@ -112,40 +110,40 @@ Window RID_SCDLG_NAVIGATOR
 	};
 	Control LB_ENTRIES
 	{
-		 // "Control" braucht immer eigene HelpId
+		// "Control" braucht immer eigene HelpId
 		HelpId = HID_SC_NAVIPI_ENTRIES ;
 		Border = TRUE ;
-		 //			Pos = MAP_APPFONT( 2, 52 );
-		Pos = MAP_APPFONT ( 2 , 35 ) ;
-		Size = MAP_APPFONT ( 110 , 100 ) ;
+		//Pos = MAP_APPFONT( 2, 52 ) ;
+		Pos = MAP_APPFONT ( 2, 35 ) ;
+		Size = MAP_APPFONT ( 110, 100 ) ;
 		TabStop = TRUE ;
 	};
 	ListBox LB_DOCUMENTS
 	{
 		HelpId = HID_SC_NAVIPI_DOC ;
 		Border = TRUE ;
-		 //			Pos = MAP_APPFONT( 2, 35 );
-		Pos = MAP_APPFONT ( 2 , 89 ) ;
-		Size = MAP_APPFONT ( 82 , 50 ) ;
+		//Pos = MAP_APPFONT( 2, 35 ) ;
+		Pos = MAP_APPFONT ( 2, 89 ) ;
+		Size = MAP_APPFONT ( 82, 50 ) ;
 		TabStop = TRUE ;
 		DropDown = TRUE ;
 		QuickHelpText [ en-US ] = "Document" ;
 	};
-    ImageList IL_CMD
+	ImageList IL_CMD
 	{
-        Prefix = "na";
+		Prefix = "na" ;
 		MaskColor = STD_MASKCOLOR ;
-        SC_NAVI_CMD_IDLIST
-    };
-    ImageList ILH_CMD
+		SC_NAVI_CMD_IDLIST
+	};
+	ImageList ILH_CMD
 	{
-        Prefix = "nah";
+		Prefix = "nah";
 		MaskColor = SC_HC_MASKCOLOR ;
-        SC_NAVI_CMD_IDLIST
-    };
+		SC_NAVI_CMD_IDLIST
+	};
 	ToolBox TBX_CMD
 	{
-		Pos = MAP_APPFONT ( 66 , 3 ) ;
+		Pos = MAP_APPFONT ( 66, 3 ) ;
 		HelpId = HID_SC_NAVIPI_TOOLBOX ;
 		SVLook = TRUE ;
 		Border = FALSE ;
@@ -170,12 +168,12 @@ Window RID_SCDLG_NAVIGATOR
 				HelpId = HID_SC_NAVIPI_DOWN ;
 				Text [ en-US ] = "End" ;
 			};
-			 //--------------------------------------------
-			 //			ToolBoxItem { Type = TOOLBOXITEM_SEPARATOR; };
-			 //--------------------------------------------
-			 //----------------------------------------
+			//--------------------------------------------
+			// ToolBoxItem { Type = TOOLBOXITEM_SEPARATOR ; };
+			//--------------------------------------------
+			//----------------------------------------
 			ToolBoxItem { Type = TOOLBOXITEM_BREAK ; };
-			 //----------------------------------------
+			//----------------------------------------
 			ToolBoxItem
 			{
 				Identifier = IID_ZOOMOUT ;
@@ -230,62 +228,55 @@ Window RID_SCDLG_NAVIGATOR
 
 	String STR_QHLP_SCEN_LISTBOX
 	{
-		Text [ en-US ] = "Scenario Name";
+		Text [ en-US ] = "Scenario Name" ;
 	};
 
 	String STR_QHLP_SCEN_COMMENT
 	{
-		Text [ en-US ] = "Comment";
+		Text [ en-US ] = "Comment" ;
 	};
-
 };
 
 
 ImageList RID_IMAGELIST_NAVCONT
 {
-    Prefix = "nc";
+	Prefix = "nc" ;
 	MaskColor = STD_MASKCOLOR ;
-    SC_NAVI_CONT_IDLIST
+	SC_NAVI_CONT_IDLIST
 };
 ImageList RID_IMAGELIST_H_NAVCONT
 {
-    Prefix = "nch";
+	Prefix = "nch" ;
 	MaskColor = SC_HC_MASKCOLOR ;
-    SC_NAVI_CONT_IDLIST
+	SC_NAVI_CONT_IDLIST
 };
 
 Image RID_IMG_DROP_URL
 {
 	ImageBitmap = Bitmap { File = "dropurl.png" ; };
-	MaskColor = STD_MASKCOLOR ;
 };
 Image RID_IMG_DROP_LINK
 {
 	ImageBitmap = Bitmap { File = "droplink.png" ; };
-	MaskColor = STD_MASKCOLOR ;
 };
 Image RID_IMG_DROP_COPY
 {
 	ImageBitmap = Bitmap { File = "dropcopy.png" ; };
-	MaskColor = STD_MASKCOLOR ;
 };
 Image RID_IMG_H_DROP_URL
 {
 	ImageBitmap = Bitmap { File = "dropurl_h.png" ; };
-	MaskColor = SC_HC_MASKCOLOR ;
 };
 Image RID_IMG_H_DROP_LINK
 {
 	ImageBitmap = Bitmap { File = "droplink_h.png" ; };
-	MaskColor = SC_HC_MASKCOLOR ;
 };
 Image RID_IMG_H_DROP_COPY
 {
 	ImageBitmap = Bitmap { File = "dropcopy_h.png" ; };
-	MaskColor = SC_HC_MASKCOLOR ;
 };
 
-//	content description strings are also used in ScLinkTargetsObj
+// content description strings are also used in ScLinkTargetsObj
 
 String SCSTR_CONTENT_ROOT
 {
@@ -323,7 +314,7 @@ String SCSTR_CONTENT_DRAWING
 {
 	Text [ en-US ] = "Drawing objects" ;
 };
- // PopupMenu -------------------------------------------------------------
+// PopupMenu -------------------------------------------------------------
 Menu RID_POPUP_DROPMODE
 {
 	ItemList =
@@ -367,44 +358,4 @@ Menu RID_POPUP_NAVIPI_SCENARIO
 	};
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// ********************************************************************** EOF

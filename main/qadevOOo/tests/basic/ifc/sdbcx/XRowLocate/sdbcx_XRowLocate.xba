@@ -81,7 +81,7 @@ On Error Goto ErrHndl
     ' if database driver supports ordered marks then
     ' compareBookmarks should return values CompareBookmark::LESS or
     ' CompareBookmark::GREATER in case when bookmarks are not equal
-    ' otherwise this method returnes only CompareBookmark::NOT_EQUAL
+    ' otherwise this method returns only CompareBookmark::NOT_EQUAL
 
     if (oObj.hasOrderedBookmarks()) then
         bOK = bOK AND oObj.compareBookmarks(oBM1, oBM1) = com.sun.star.sdbcx.CompareBookmark.EQUAL

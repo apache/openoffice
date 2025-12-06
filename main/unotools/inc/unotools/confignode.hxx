@@ -84,7 +84,7 @@ namespace utl
 		/// copy ctor
 		OConfigurationNode(const OConfigurationNode& _rSource);
 
-		/// assigment
+		/// assignment
 		const OConfigurationNode& operator=(const OConfigurationNode& _rSource);
 
 		/// dtor

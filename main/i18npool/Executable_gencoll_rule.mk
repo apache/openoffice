@@ -19,8 +19,6 @@
 #
 #**************************************************************
 
-
-
 $(eval $(call gb_Executable_Executable,gencoll_rule))
 
 $(eval $(call gb_Executable_add_precompiled_header,gencoll_rule,$(SRCDIR)/i18npool/inc/pch/precompiled_i18npool))
@@ -40,7 +38,7 @@ $(eval $(call gb_Executable_add_api,gencoll_rule,\
 $(eval $(call gb_Executable_add_linked_libs,gencoll_rule,\
 	sal \
 	stl \
-    $(gb_STDLIBS) \
+	$(gb_STDLIBS) \
 ))
 
 $(call gb_Executable_use_external,gencoll_rule,icui18n)

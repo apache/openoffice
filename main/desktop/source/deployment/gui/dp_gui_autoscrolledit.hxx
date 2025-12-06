@@ -19,7 +19,6 @@
  *
  *************************************************************/
 
-
 #ifndef INCLUDED_DESKTOP_SOURCE_DEPLOYMENT_GUI_DP_GUI_AUTOSCROLLEDIT_HXX
 #define INCLUDED_DESKTOP_SOURCE_DEPLOYMENT_GUI_DP_GUI_AUTOSCROLLEDIT_HXX
 
@@ -35,13 +34,15 @@ namespace dp_gui {
 class AutoScrollEdit : public ExtMultiLineEdit, public SfxListener
 {
 public:
-    AutoScrollEdit( Window* pParent, const ResId& rResId );
-    ~AutoScrollEdit();
+	AutoScrollEdit( Window* pParent, const ResId& rResId );
+	~AutoScrollEdit();
 
-    using ExtMultiLineEdit::Notify;
-    virtual void Notify( SfxBroadcaster& rBC, const SfxHint& rHint );
+	using ExtMultiLineEdit::Notify;
+	virtual void Notify( SfxBroadcaster& rBC, const SfxHint& rHint );
 };
 
 } // namespace dp_gui
 
 #endif
+
+/* vim: set noet sw=4 ts=4: */

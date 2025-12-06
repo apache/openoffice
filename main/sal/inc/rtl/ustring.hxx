@@ -46,7 +46,7 @@ namespace rtl
 /**
   This String class provide base functionality for C++ like Unicode
   character array handling. The advantage of this class is, that it
-  handle all the memory managament for you - and it do it
+  handle all the memory management for you - and it do it
   more efficient. If you assign a string to another string, the
   data of both strings are shared (without any copy operation or
   memory allocation) as long as you do not change the string. This class
@@ -412,7 +412,7 @@ public:
       This function can't be used for language specific comparison.
 
       @param    str         the object (substring) to be compared.
-      @param    fromIndex   the index to start the comparion from.
+      @param    fromIndex   the index to start the comparison from.
                             The index must be greater or equal than 0
                             and less or equal as the string length.
       @return   sal_True if str match with the characters in the string
@@ -436,7 +436,7 @@ public:
       This function can't be used for language specific comparison.
 
       @param    str         the object (substring) to be compared.
-      @param    fromIndex   the index to start the comparion from.
+      @param    fromIndex   the index to start the comparison from.
                             The index must be greater or equal than 0
                             and less or equal as the string length.
       @return   sal_True if str match with the characters in the string
@@ -630,7 +630,7 @@ public:
       This function can't be used for language specific comparison.
 
       @param    str         the object (substring) to be compared.
-      @param    fromIndex   the index to start the comparion from.
+      @param    fromIndex   the index to start the comparison from.
                             The index must be greater or equal than 0
                             and less or equal as the string length.
       @return   sal_True if str match with the characters in the string
@@ -660,7 +660,7 @@ public:
 
       @param    asciiStr        the 8-Bit ASCII character string to be compared.
       @param    asciiStrLength  the length of the ascii string
-      @param    fromIndex       the index to start the comparion from.
+      @param    fromIndex       the index to start the comparison from.
                                 The index must be greater or equal than 0
                                 and less or equal as the string length.
       @return   sal_True if str match with the characters in the string
@@ -1129,7 +1129,7 @@ public:
       Returns the first character from this string.
 
       @return   the first character from this string or 0, if this string
-                is emptry.
+                is empty.
     */
     sal_Unicode toChar() const SAL_THROW(())
     {

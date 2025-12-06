@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 #include "chinese_dictionarydialog.hrc"
 #include "chinese_translationdialog.hrc"
@@ -29,15 +27,15 @@
 #define DIRECTION_RADIOBUTTONS( D_XPOS, D_YPOS, D_FULLWIDTH ) \
 RadioButton RB_TO_SIMPLIFIED \
 { \
-	Pos = MAP_APPFONT( D_XPOS, D_YPOS ); \
+	Pos = MAP_APPFONT ( D_XPOS, D_YPOS ); \
 	Size = MAP_APPFONT ( D_FULLWIDTH, RSC_CD_RADIOBUTTON_HEIGHT ) ; \
-	Text [ en-US ] = "~Traditional Chinese to simplified Chinese"; \
+	Text [ en-US ] = "~Traditional Chinese to simplified Chinese" ; \
 }; \
 RadioButton RB_TO_TRADITIONAL \
 { \
-	Pos = MAP_APPFONT( D_XPOS, D_YPOS + RSC_CD_RADIOBUTTON_HEIGHT+RSC_SP_CTRL_GROUP_Y ); \
+	Pos = MAP_APPFONT ( D_XPOS, D_YPOS + RSC_CD_RADIOBUTTON_HEIGHT+RSC_SP_CTRL_GROUP_Y ) ; \
 	Size = MAP_APPFONT ( D_FULLWIDTH, RSC_CD_RADIOBUTTON_HEIGHT ) ; \
-	Text [ en-US ] = "~Simplified Chinese to traditional Chinese"; \
+	Text [ en-US ] = "~Simplified Chinese to traditional Chinese" ; \
 };
 
 //-----------------------------------------------------------------------------
@@ -74,128 +72,128 @@ RadioButton RB_TO_TRADITIONAL \
 
 ModalDialog DLG_CHINESEDICTIONARY
 {
-    HelpID = "svx:ModalDialog:DLG_CHINESEDICTIONARY";
+	HelpID = "svx:ModalDialog:DLG_CHINESEDICTIONARY" ;
 	//HelpId = ;
-	Size = MAP_APPFONT( FULL_WIDTH, FULL_HEIGHT );
-	OutputSize = TRUE;
+	Size = MAP_APPFONT ( FULL_WIDTH, FULL_HEIGHT ) ;
+	OutputSize = TRUE ;
 	Closeable = TRUE ;
 	Moveable = TRUE ;
-	SVLook = TRUE;
+	SVLook = TRUE ;
 
-	Text [ en-US ] = "Edit Dictionary";
+	Text [ en-US ] = "Edit Dictionary" ;
 
-    DIRECTION_RADIOBUTTONS( COL_1, ROW_1, FULL_WIDTH - COL_1 - RSC_SP_DLG_INNERBORDER_RIGHT )
+	DIRECTION_RADIOBUTTONS( COL_1, ROW_1, FULL_WIDTH - COL_1 - RSC_SP_DLG_INNERBORDER_RIGHT )
 
-    CheckBox CB_REVERSE
+	CheckBox CB_REVERSE
 	{
-        HelpID = "svx:CheckBox:DLG_CHINESEDICTIONARY:CB_REVERSE";
+		HelpID = "svx:CheckBox:DLG_CHINESEDICTIONARY:CB_REVERSE" ;
 		Pos = MAP_APPFONT ( COL_1, ROW_3 ) ;
-		Size = MAP_APPFONT ( FULL_WIDTH - COL_1 - RSC_SP_DLG_INNERBORDER_RIGHT , RSC_CD_CHECKBOX_HEIGHT ) ;
-		
-		Text [ en-US ] = "Reverse mapping";
+		Size = MAP_APPFONT ( FULL_WIDTH - COL_1 - RSC_SP_DLG_INNERBORDER_RIGHT, RSC_CD_CHECKBOX_HEIGHT ) ;
+
+		Text [ en-US ] = "Reverse mapping" ;
 	};
-	
+
 	FixedText FT_TERM
 	{
-        Pos = MAP_APPFONT ( COL_1 , ROW_4 ) ;
-        Size = MAP_APPFONT ( COL_WIDTH, RSC_CD_FIXEDTEXT_HEIGHT ) ;
-		Text [ en-US ] = "Term";
+		Pos = MAP_APPFONT ( COL_1, ROW_4 ) ;
+		Size = MAP_APPFONT ( COL_WIDTH, RSC_CD_FIXEDTEXT_HEIGHT ) ;
+		Text [ en-US ] = "Term" ;
 	};
 	Edit ED_TERM
 	{
-	    HelpID = "svx:Edit:DLG_CHINESEDICTIONARY:ED_TERM";
+		HelpID = "svx:Edit:DLG_CHINESEDICTIONARY:ED_TERM" ;
 		Border = TRUE ;
-		Pos = MAP_APPFONT ( COL_1 , ROW_5 ) ;
-		Size = MAP_APPFONT ( COL_WIDTH , RSC_CD_TEXTBOX_HEIGHT ) ;
+		Pos = MAP_APPFONT ( COL_1, ROW_5 ) ;
+		Size = MAP_APPFONT ( COL_WIDTH, RSC_CD_TEXTBOX_HEIGHT ) ;
 	};
-	
-	
+
+
 	FixedText FT_MAPPING
 	{
-        Pos = MAP_APPFONT ( COL_2 , ROW_4 ) ;
-        Size = MAP_APPFONT ( COL_WIDTH, RSC_CD_FIXEDTEXT_HEIGHT ) ;
-		Text [ en-US ] = "Mapping";
+		Pos = MAP_APPFONT ( COL_2, ROW_4 ) ;
+		Size = MAP_APPFONT ( COL_WIDTH, RSC_CD_FIXEDTEXT_HEIGHT ) ;
+		Text [ en-US ] = "Mapping" ;
 	};
 	Edit ED_MAPPING
 	{
-	    HelpID = "svx:Edit:DLG_CHINESEDICTIONARY:ED_MAPPING";
+		HelpID = "svx:Edit:DLG_CHINESEDICTIONARY:ED_MAPPING" ;
 		Border = TRUE ;
-		Pos = MAP_APPFONT ( COL_2 , ROW_5 ) ;
-		Size = MAP_APPFONT ( COL_WIDTH , RSC_CD_TEXTBOX_HEIGHT ) ;
+		Pos = MAP_APPFONT ( COL_2, ROW_5 ) ;
+		Size = MAP_APPFONT ( COL_WIDTH, RSC_CD_TEXTBOX_HEIGHT ) ;
 	};
-	
+
 	FixedText FT_PROPERTY
 	{
-        Pos = MAP_APPFONT ( COL_3 , ROW_4 ) ;
-        Size = MAP_APPFONT ( REST_COL_WIDTH, RSC_CD_FIXEDTEXT_HEIGHT ) ;
-		Text [ en-US ] = "Property";
+		Pos = MAP_APPFONT ( COL_3, ROW_4 ) ;
+		Size = MAP_APPFONT ( REST_COL_WIDTH, RSC_CD_FIXEDTEXT_HEIGHT ) ;
+		Text [ en-US ] = "Property" ;
 	};
-    ListBox LB_PROPERTY
+	ListBox LB_PROPERTY
 	{
-        HelpID = "svx:ListBox:DLG_CHINESEDICTIONARY:LB_PROPERTY";
+		HelpID = "svx:ListBox:DLG_CHINESEDICTIONARY:LB_PROPERTY" ;
 		Border = TRUE ;
-		Pos = MAP_APPFONT ( COL_3 , ROW_5 ) ;
-		Size = MAP_APPFONT ( REST_COL_WIDTH , RSC_CD_TEXTBOX_HEIGHT ) ;
+		Pos = MAP_APPFONT ( COL_3, ROW_5 ) ;
+		Size = MAP_APPFONT ( REST_COL_WIDTH, RSC_CD_TEXTBOX_HEIGHT ) ;
 		DropDown = TRUE ;
-		
-        stringlist [ en-US ] =
+
+		stringlist [ en-US ] =
 		{
-		    < "Other" ; Default ; > ;
-			< "Foreign" ; > ;
-			< "First name" ; > ;
-			< "Last name" ; > ;
-			< "Title" ; > ;
-			< "Status" ; > ;
-			< "Place name" ; > ;
-			< "Business" ; > ;
-			< "Adjective" ; > ;
-			< "Idiom" ; > ;
-			< "Abbreviation" ; > ;
-			< "Numerical" ; > ;
-			< "Noun" ; > ;
-			< "Verb" ; > ;
-			< "Brand name" ; > ;
+			< "Other" ; Default ;	> ;
+			< "Foreign" ;			> ;
+			< "First name" ;		> ;
+			< "Last name" ;			> ;
+			< "Title" ;				> ;
+			< "Status" ;			> ;
+			< "Place name" ;		> ;
+			< "Business" ;			> ;
+			< "Adjective" ;			> ;
+			< "Idiom" ;				> ;
+			< "Abbreviation" ;		> ;
+			< "Numerical" ;			> ;
+			< "Noun" ;				> ;
+			< "Verb" ;				> ;
+			< "Brand name" ;		> ;
 		};
 	};
-	
+
 	Control CT_MAPPINGLIST
 	{
-	    Pos = MAP_APPFONT ( COL_1, ROW_6 ) ;
-        Size = MAP_APPFONT ( COL_4 - COL_1 - RSC_SP_CTRL_GROUP_X, LIST_HEIGHT ) ;
-        TabStop = TRUE ;
+		Pos = MAP_APPFONT ( COL_1, ROW_6 ) ;
+		Size = MAP_APPFONT ( COL_4 - COL_1 - RSC_SP_CTRL_GROUP_X, LIST_HEIGHT ) ;
+		TabStop = TRUE ;
 	};
-	
+
 	PushButton PB_ADD
 	{
-	    HelpID = "svx:PushButton:DLG_CHINESEDICTIONARY:PB_ADD";
-		Pos = MAP_APPFONT( COL_4, ROW_5 );
-		Size = MAP_APPFONT( BUTTONCOL_WIDTH , RSC_CD_PUSHBUTTON_HEIGHT );
+		HelpID = "svx:PushButton:DLG_CHINESEDICTIONARY:PB_ADD" ;
+		Pos = MAP_APPFONT ( COL_4, ROW_5 ) ;
+		Size = MAP_APPFONT ( BUTTONCOL_WIDTH, RSC_CD_PUSHBUTTON_HEIGHT ) ;
 
-		Text [ en-US ] = "~Add";
+		Text [ en-US ] = "~Add" ;
 	};
 	PushButton PB_MODIFY
 	{
-	    HelpID = "svx:PushButton:DLG_CHINESEDICTIONARY:PB_MODIFY";
-		Pos = MAP_APPFONT( COL_4, ROW_5a );
-		Size = MAP_APPFONT( BUTTONCOL_WIDTH , RSC_CD_PUSHBUTTON_HEIGHT );
+		HelpID = "svx:PushButton:DLG_CHINESEDICTIONARY:PB_MODIFY" ;
+		Pos = MAP_APPFONT ( COL_4, ROW_5a ) ;
+		Size = MAP_APPFONT ( BUTTONCOL_WIDTH, RSC_CD_PUSHBUTTON_HEIGHT ) ;
 
-		Text [ en-US ] = "~Modify";
+		Text [ en-US ] = "~Modify" ;
 	};
 	PushButton PB_DELETE
 	{
-	    HelpID = "svx:PushButton:DLG_CHINESEDICTIONARY:PB_DELETE";
-		Pos = MAP_APPFONT( COL_4, ROW_5b );
-		Size = MAP_APPFONT( BUTTONCOL_WIDTH , RSC_CD_PUSHBUTTON_HEIGHT );
+		HelpID = "svx:PushButton:DLG_CHINESEDICTIONARY:PB_DELETE" ;
+		Pos = MAP_APPFONT ( COL_4, ROW_5b ) ;
+		Size = MAP_APPFONT ( BUTTONCOL_WIDTH, RSC_CD_PUSHBUTTON_HEIGHT ) ;
 
-		Text [ en-US ] = "~Delete";
+		Text [ en-US ] = "~Delete" ;
 	};
-		
-    FixedLine FL_BOTTOMLINE
+
+	FixedLine FL_BOTTOMLINE
 	{
-        Pos = MAP_APPFONT ( 0 , ROW_7 ) ;
-        Size = MAP_APPFONT ( FULL_WIDTH, RSC_CD_FIXEDLINE_HEIGHT ) ;
+		Pos = MAP_APPFONT ( 0, ROW_7 ) ;
+		Size = MAP_APPFONT ( FULL_WIDTH, RSC_CD_FIXEDLINE_HEIGHT ) ;
 	};
-	
+
 	BUTTONS_OK_CANCEL_HELP_ABREAST( FULL_WIDTH - RSC_SP_DLG_INNERBORDER_RIGHT, ROW_8 )
 };
 
@@ -225,65 +223,66 @@ ModalDialog DLG_CHINESEDICTIONARY
 
 ModalDialog DLG_CHINESETRANSLATION
 {
-    HelpID = "svx:ModalDialog:DLG_CHINESETRANSLATION";
+	HelpID = "svx:ModalDialog:DLG_CHINESETRANSLATION" ;
 	//HelpId = ;
-	Size = MAP_APPFONT( T_FULL_WIDTH, T_FULL_HEIGHT );
-	OutputSize = TRUE;
+	Size = MAP_APPFONT ( T_FULL_WIDTH, T_FULL_HEIGHT ) ;
+	OutputSize = TRUE ;
 	Closeable = TRUE ;
 	Moveable = TRUE ;
-	SVLook = TRUE;
+	SVLook = TRUE ;
 
-    Text [ en-US ] = "Chinese Conversion";
+	Text [ en-US ] = "Chinese Conversion" ;
 
-    FixedLine FL_DIRECTION
+	FixedLine FL_DIRECTION
 	{
-        Pos = MAP_APPFONT ( T_COL_1 , T_ROW_1 ) ;
-        Size = MAP_APPFONT ( T_FULL_WIDTH - T_COL_1 - RSC_SP_DLG_INNERBORDER_RIGHT, RSC_CD_FIXEDLINE_HEIGHT ) ;
-		Text [ en-US ] = "Conversion direction";
+		Pos = MAP_APPFONT ( T_COL_1, T_ROW_1 ) ;
+		Size = MAP_APPFONT ( T_FULL_WIDTH - T_COL_1 - RSC_SP_DLG_INNERBORDER_RIGHT, RSC_CD_FIXEDLINE_HEIGHT ) ;
+		Text [ en-US ] = "Conversion direction" ;
 	};
 
 	DIRECTION_RADIOBUTTONS( T_COL_2, T_ROW_2, (T_FULL_WIDTH - T_COL_2 - RSC_SP_DLG_INNERBORDER_RIGHT) )
 
 	CheckBox CB_USE_VARIANTS
 	{
-	    HelpID = "svx:CheckBox:DLG_CHINESETRANSLATION:CB_USE_VARIANTS";
-		Pos = MAP_APPFONT( T_COL_3, T_ROW_4 );
+		HelpID = "svx:CheckBox:DLG_CHINESETRANSLATION:CB_USE_VARIANTS" ;
+		Pos = MAP_APPFONT ( T_COL_3, T_ROW_4 ) ;
 		Size = MAP_APPFONT ( T_FULL_WIDTH - T_COL_3 - RSC_SP_DLG_INNERBORDER_RIGHT, RSC_CD_CHECKBOX_HEIGHT ) ;
 
-		Text [ en-US ] = "~Use Taiwan, Hong Kong SAR, and Macao SAR character variants";
+		Text [ en-US ] = "~Use Taiwan, Hong Kong SAR, and Macao SAR character variants" ;
 	};
 
 	FixedLine FL_COMMONTERMS
 	{
-        Pos = MAP_APPFONT ( T_COL_1 , T_ROW_5 ) ;
-        Size = MAP_APPFONT ( T_FULL_WIDTH - T_COL_1 - RSC_SP_DLG_INNERBORDER_RIGHT, RSC_CD_FIXEDLINE_HEIGHT ) ;
-		Text [ en-US ] = "Common terms";
+		Pos = MAP_APPFONT ( T_COL_1, T_ROW_5 ) ;
+		Size = MAP_APPFONT ( T_FULL_WIDTH - T_COL_1 - RSC_SP_DLG_INNERBORDER_RIGHT, RSC_CD_FIXEDLINE_HEIGHT ) ;
+		Text [ en-US ] = "Common terms" ;
 	};
 
 	CheckBox CB_TRANSLATE_COMMONTERMS
 	{
-	    HelpID = "svx:CheckBox:DLG_CHINESETRANSLATION:CB_TRANSLATE_COMMONTERMS";
-		Pos = MAP_APPFONT( T_COL_2, T_ROW_6 );
+		HelpID = "svx:CheckBox:DLG_CHINESETRANSLATION:CB_TRANSLATE_COMMONTERMS" ;
+		Pos = MAP_APPFONT ( T_COL_2, T_ROW_6 ) ;
 		Size = MAP_APPFONT ( T_COL_4 - T_COL_2, RSC_CD_CHECKBOX_HEIGHT ) ;
 
-		Text [ en-US ] = "Translate ~common terms";
+		Text [ en-US ] = "Translate ~common terms" ;
 	};
 
 	PushButton PB_EDITTERMS
 	{
-	    HelpID = "svx:PushButton:DLG_CHINESETRANSLATION:PB_EDITTERMS";
-		Pos = MAP_APPFONT( T_COL_4, T_ROW_6-(RSC_CD_PUSHBUTTON_HEIGHT-RSC_CD_CHECKBOX_HEIGHT)/2 );
-		Size = MAP_APPFONT( T_EDITBUTTON_WIDTH, RSC_CD_PUSHBUTTON_HEIGHT );
+		HelpID = "svx:PushButton:DLG_CHINESETRANSLATION:PB_EDITTERMS" ;
+		Pos = MAP_APPFONT ( T_COL_4, T_ROW_6-(RSC_CD_PUSHBUTTON_HEIGHT-RSC_CD_CHECKBOX_HEIGHT)/2 ) ;
+		Size = MAP_APPFONT ( T_EDITBUTTON_WIDTH, RSC_CD_PUSHBUTTON_HEIGHT ) ;
 
-		Text [ en-US ] = "~Edit Terms...";
+		Text [ en-US ] = "~Edit Terms..." ;
 	};
 
 	FixedLine T_FL_BOTTOMLINE
 	{
-        Pos = MAP_APPFONT ( 0 , T_ROW_7 ) ;
-        Size = MAP_APPFONT ( T_FULL_WIDTH, RSC_CD_FIXEDLINE_HEIGHT ) ;
+		Pos = MAP_APPFONT ( 0, T_ROW_7 ) ;
+		Size = MAP_APPFONT ( T_FULL_WIDTH, RSC_CD_FIXEDLINE_HEIGHT ) ;
 	};
 
 	BUTTONS_OK_CANCEL_HELP_ABREAST( T_FULL_WIDTH - RSC_SP_DLG_INNERBORDER_RIGHT, T_ROW_8 )
 };
 
+// ********************************************************************** EOF

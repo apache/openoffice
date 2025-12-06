@@ -427,7 +427,7 @@ Reference< XAccessibleContext > SAL_CALL AccessibleGridControlAccess::getAccessi
 	DBG_ASSERT( ( m_pContext && m_xContext.is() ) || ( !m_pContext && !m_xContext.is() ),
         "accessibility/extended/AccessibleGridControlAccess::getAccessibleContext: inconsistency!" );
 
-	// if the context died meanwhile (we're no listener, so it won't tell us explicitily when this happens),
+	// if the context died meanwhile (we're no listener, so it won't tell us explicitly when this happens),
 	// then reset an re-create.
 	if ( m_pContext && !m_pContext->isAlive() )
 		m_xContext = m_pContext = NULL;

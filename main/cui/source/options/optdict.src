@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // include ---------------------------------------------------------------
 #include <sfx2/sfx.hrc>
 #include "helpid.hrc"
@@ -138,11 +136,11 @@ ModalDialog RID_SFXDLG_EDITDICT
 		DropDown = TRUE ;
 	};
 
-	FixedLine GB_EDITDICTS
+	GroupBox GB_EDITDICTS
 	{
-		Pos = MAP_APPFONT ( 1, 1 ) ;
-		Size = MAP_APPFONT ( 268, 138 ) ;
-		Hide = TRUE ;
+		Pos = MAP_APPFONT ( 2, 2 ) ;
+		Size = MAP_APPFONT ( 267, 137 ) ;
+		Hide = FALSE ;
 	};
 
 	FixedText FT_WORD

@@ -55,7 +55,7 @@ public:
         ::com::sun::star::frame::XModel >& xChartModel
         , const ::com::sun::star::uno::Reference<
         ::com::sun::star::uno::XComponentContext >& xContext
-        , sal_Int32 nOnePageOnlyIndex=-1 );//if nOnePageOnlyIndex is an index of an exsisting  page starting with 0, then only this page is displayed without next/previous and roadmap
+        , sal_Int32 nOnePageOnlyIndex=-1 );//if nOnePageOnlyIndex is an index of an existing  page starting with 0, then only this page is displayed without next/previous and roadmap
     virtual ~CreationWizard();
 
     bool isClosable();
@@ -82,7 +82,7 @@ private:
     ::com::sun::star::uno::Reference<
                        ::com::sun::star::uno::XComponentContext>    m_xCC;
     bool m_bIsClosable;
-    sal_Int32 m_nOnePageOnlyIndex;//if nOnePageOnlyIndex is an index of an exsisting page starting with 0, then only this page is displayed without next/previous and roadmap
+    sal_Int32 m_nOnePageOnlyIndex;//if nOnePageOnlyIndex is an index of an existing page starting with 0, then only this page is displayed without next/previous and roadmap
     ChartTypeTemplateProvider*   m_pTemplateProvider;
     ::std::auto_ptr< DialogModel > m_apDialogModel;
 

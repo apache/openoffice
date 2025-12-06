@@ -31,19 +31,20 @@ namespace sfx2 { namespace sidebar {
 /** A custom image radion button with more control over used colors for sidebar
 */
 class CustomImageRadioButton
-    : public ImageRadioButton
+	: public ImageRadioButton
 {
 public:
-    CustomImageRadioButton(
-        Window* pParentWindow,
-        const ResId& rResId );
+	CustomImageRadioButton(
+		Window* pParentWindow,
+		const ResId& rResId );
 
-    virtual ~CustomImageRadioButton(void);
+	virtual ~CustomImageRadioButton(void);
 
-    virtual void Paint( const Rectangle& rUpdateArea );
+	virtual void Paint( const Rectangle& rUpdateArea );
 };
-
 
 } } // end of namespace sfx2::sidebar
 
 #endif
+
+/* vim: set noet sw=4 ts=4: */

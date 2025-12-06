@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 interface Application
 [
@@ -38,7 +36,7 @@ interface Application
 	SID_PICKLIST // ole(no) api(no)
 	[
 	]
-    SID_MDIWINDOWLIST // ole(no) api(no)
+	SID_MDIWINDOWLIST // ole(no) api(no)
 	[
 	]
 	SID_ABOUT // ole(no) api(final/play/rec)
@@ -54,7 +52,7 @@ interface Application
 		ExecMethod = MiscExec_Impl ;
 		StateMethod = MiscState_Impl ;
 	]
-    SID_LOGOUT // ole(req) api(final/play)
+	SID_LOGOUT // ole(req) api(final/play)
 	[
 	]
 	SID_HELPINDEX // ole(no) api(final/todo)
@@ -130,7 +128,7 @@ interface Application
 	SID_TEMPLATE_ADDRESSBOKSOURCE // ole(no) api(final/play/rec)
 	[
 		ExecMethod = MiscExec_Impl ;
-        StateMethod = MiscState_Impl ;
+		StateMethod = MiscState_Impl ;
 	]
 	SID_ATTR_UNDO_COUNT // ole(no) api(final/play)
 	[
@@ -147,17 +145,17 @@ interface Application
 		ExecMethod = MiscExec_Impl ;
 		StateMethod = MiscState_Impl ;
 	]
-    SID_CRASH
-    [
+	SID_CRASH
+	[
 		ExecMethod = MiscExec_Impl ;
-    ]
-    SID_UPDATE_CONFIG
-    [
+	]
+	SID_UPDATE_CONFIG
+	[
 		ExecMethod = MiscExec_Impl ;
-    ]
-    SID_ADDONS
-    [
-    ]
+	]
+	SID_ADDONS
+	[
+	]
 	SID_SHOW_IME_STATUS_WINDOW
 	[
 		ExecMethod = MiscExec_Impl ;
@@ -184,8 +182,8 @@ interface Application
 
 shell SfxApplication
 {
-    import Application [Automation];
-    import Documents "Documents";
+	import Application [Automation] ;
+	import Documents "Documents" ;
 
 	SID_NEWDOCDIRECT // ole(no) api(no)
 	[
@@ -198,68 +196,68 @@ shell SfxApplication
 	]
 	SID_BASICIDE_APPEAR // status(final|play)
 	[
-		ExecMethod = OfaExec_Impl;
+		ExecMethod = OfaExec_Impl ;
 	]
-	SID_SCRIPTORGANIZER  // status(final|play)
+	SID_SCRIPTORGANIZER // status(final|play)
 	[
-		ExecMethod = OfaExec_Impl;
+		ExecMethod = OfaExec_Impl ;
 	]
-	SID_MACROORGANIZER  // status(final|play)
+	SID_MACROORGANIZER // status(final|play)
 	[
-		ExecMethod = OfaExec_Impl;
+		ExecMethod = OfaExec_Impl ;
 	]
-	SID_RUNMACRO  // status(final|play)
+	SID_RUNMACRO // status(final|play)
 	[
-		ExecMethod = OfaExec_Impl;
+		ExecMethod = OfaExec_Impl ;
 	]
-	SID_BASICCHOOSER  // status(final|play)
+	SID_BASICCHOOSER // status(final|play)
 	[
-		ExecMethod = OfaExec_Impl;
+		ExecMethod = OfaExec_Impl ;
 	]
-	SID_INET_DLG  // status(final)
+	SID_INET_DLG // status(final)
 	[
-		ExecMethod = OfaExec_Impl;
+		ExecMethod = OfaExec_Impl ;
 	]
 
 	//----------------------------------------------------------------------
 
 	SID_OFFICE_CHECK_PLZ
 	[
-		ExecMethod = OfaExec_Impl;
+		ExecMethod = OfaExec_Impl ;
 	]
 	SID_SD_AUTOPILOT // status(final|play)
 	[
-		ExecMethod = OfaExec_Impl;
-		StateMethod = OfaState_Impl;
+		ExecMethod = OfaExec_Impl ;
+		StateMethod = OfaState_Impl ;
 	]
 	SID_NEWSD // status(final|play)
 	[
-		ExecMethod = OfaExec_Impl;
-		StateMethod = OfaState_Impl;
+		ExecMethod = OfaExec_Impl ;
+		StateMethod = OfaState_Impl ;
 	]
-	FN_LABEL  // status(final|play)
+	FN_LABEL // status(final|play)
 	[
-		ExecMethod = OfaExec_Impl;
-		StateMethod = OfaState_Impl;
+		ExecMethod = OfaExec_Impl ;
+		StateMethod = OfaState_Impl ;
 	]
-	FN_BUSINESS_CARD  // status(final|play)
+	FN_BUSINESS_CARD // status(final|play)
 
 	[
-		ExecMethod = OfaExec_Impl;
-		StateMethod = OfaState_Impl;
+		ExecMethod = OfaExec_Impl ;
+		StateMethod = OfaState_Impl ;
 	]
-	FN_XFORMS_INIT  // #i31958# - new XForms document
+	FN_XFORMS_INIT // #i31958# - new XForms document
 	[
-		ExecMethod = OfaExec_Impl;
-		StateMethod = OfaState_Impl;
+		ExecMethod = OfaExec_Impl ;
+		StateMethod = OfaState_Impl ;
 	]
 	SID_COMP_BIBLIOGRAPHY
 	[
-		ExecMethod = OfaExec_Impl;
+		ExecMethod = OfaExec_Impl ;
 	]
 	SID_ADDRESS_DATA_SOURCE
 	[
-		ExecMethod = OfaExec_Impl;
+		ExecMethod = OfaExec_Impl ;
 	]
 	SID_AUTO_CORRECT_DLG
 	[
@@ -269,15 +267,12 @@ shell SfxApplication
 	[
 		ExecMethod = OfaExec_Impl ;
 	]
-        SID_MORE_DICTIONARIES
-        [
-                ExecMethod = OfaExec_Impl ;
-        ]
+	SID_MORE_DICTIONARIES
+	[
+		ExecMethod = OfaExec_Impl ;
+	]
 }
 
 shell SfxModule
 {
 }
-
-// eof ------------------------------------------------------------------------
-

@@ -172,7 +172,7 @@ void ORelationTableConnectionData::SetCardinality()
 // -----------------------------------------------------------------------------
 sal_Bool ORelationTableConnectionData::checkPrimaryKey(const Reference< XPropertySet>& i_xTable,EConnectionSide _eEConnectionSide) const
 {
-	// check if Table has the primary key column dependig on _eEConnectionSide
+	// check if Table has the primary key column depending on _eEConnectionSide
 	sal_uInt16	nPrimKeysCount		= 0,
 			nValidLinesCount	= 0;
     const Reference< XNameAccess> xKeyColumns = dbtools::getPrimaryKeyColumns_throw(i_xTable);
@@ -450,7 +450,7 @@ xKey.clear();
 			}
 		}
 	} // if ( xColSup.is() )
-	// NOTE : the caller is resposible for updating any other objects referencing the old LineDatas (for instance a ConnLine)
+	// NOTE : the caller is responsible for updating any other objects referencing the old LineDatas (for instance a ConnLine)
 
 	////////////////////////////////////////////////////////////
 	// Kardinalitaet bestimmen

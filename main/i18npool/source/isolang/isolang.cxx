@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_i18nisolang.hxx"
 #include <rtl/ustring.hxx>
@@ -464,6 +462,7 @@ static MsLangId::IsoLangEntry const aImplIsoLangEntries[] =
     { LANGUAGE_USER_KABYLE,                "kab", "DZ" },
     { LANGUAGE_USER_HAITIAN,                "ht", "HT" },
     { LANGUAGE_USER_VENETAN,               "vec", "IT" },
+    { LANGUAGE_USER_LIGURIAN,              "lij", "IT" },
     { LANGUAGE_FRENCH_HAITI,                "fr", "HT" },
     { LANGUAGE_NONE,                       "zxx", ""   },   // added to ISO 639-2 on 2006-01-11: Used to declare the absence of linguistic information
     { LANGUAGE_DONTKNOW,                    "",   ""   }    // marks end of table
@@ -1109,3 +1108,5 @@ const MsLangId::IsoLangEntry* MsLangId::getIsoLangEntry( size_t nIndex )
         return &aImplIsoLangEntries[ nIndex];
     return 0;
 }
+
+/* vim: set noet sw=4 ts=4: */

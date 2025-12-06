@@ -710,12 +710,12 @@ throw ( lang::IllegalArgumentException,
         RuntimeException )
 {
     ::osl::Guard< osl::Mutex > aGuard( m_mutex );
-// format is script:://[function_name]?language=[languge]&location=[location]
+// format is script:://[function_name]?language=[language]&location=[location]
 // LogicalName is now not used anymore, further more the ScriptURI class
 // will be retired also and a new UNO service will be used. Additionally the
 // parcel-description will also need to be modified to remove logical name
-// ScriprtMetaDataImporter has been modified to ignore the Logical name
-// definined in the parcel-desc.xml. As an interim temp solution the  Datas_vec
+// ScriptMetaDataImporter has been modified to ignore the Logical name
+// defined in the parcel-desc.xml. As an interim temp solution the  Datas_vec
 // structure that is returned from ScriptMetDataImporter sets the logicalname
 // to the function name. ScriptURI class has been changed in the same way.
 //

@@ -24,32 +24,28 @@
 #include "DeckConfiguration.hxx"
 #include "Deck.hxx"
 
-
 namespace sfx2 { namespace sidebar {
 
 DeckConfiguration::DeckConfiguration (void)
-    : mpDeck(NULL),
-      maPanels()
+	: mpDeck(NULL),
+	  maPanels()
 {
 }
-
-
-
 
 void DeckConfiguration::Dispose (void)
 {
-    if (mpDeck != NULL)
-    {
-        mpDeck->Dispose();
+	if (mpDeck != NULL)
+	{
+		mpDeck->Dispose();
 
-        Deck* pDeck = mpDeck;
-        mpDeck = NULL;
-        OSL_TRACE("deleting deck window subtree");
-        pDeck->PrintWindowTree();
-        delete pDeck;
-    }
+		Deck* pDeck = mpDeck;
+		mpDeck = NULL;
+		OSL_TRACE("deleting deck window subtree");
+		pDeck->PrintWindowTree();
+		delete pDeck;
+	}
 }
 
-
-
 } } // end of namespace sfx2::sidebar
+
+/* vim: set noet sw=4 ts=4: */

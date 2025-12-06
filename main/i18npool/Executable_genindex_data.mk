@@ -19,8 +19,6 @@
 #
 #**************************************************************
 
-
-
 $(eval $(call gb_Executable_Executable,genindex_data))
 
 $(eval $(call gb_Executable_add_precompiled_header,genindex_data,$(SRCDIR)/i18npool/inc/pch/precompiled_i18npool))
@@ -40,7 +38,7 @@ $(eval $(call gb_Executable_set_include,genindex_data,\
 $(eval $(call gb_Executable_add_linked_libs,genindex_data,\
 	sal \
 	stl \
-    $(gb_STDLIBS) \
+	$(gb_STDLIBS) \
 ))
 
 $(call gb_Executable_use_external,genindex_data,icudata)

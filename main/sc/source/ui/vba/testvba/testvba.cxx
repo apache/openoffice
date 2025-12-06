@@ -79,7 +79,7 @@ OUString convertToURL( const OUString& rPath )
 		{
                 osl::FileBase::getFileURLFromSystemPath( rPath, aURL );
 				if ( aURL.equals( rPath ) )
-					throw uno::RuntimeException( rtl::OUString::createFromAscii( "could'nt convert " ).concat( rPath ).concat( rtl::OUString::createFromAscii( " to a URL, is it a fully qualified path name? " ) ), Reference< uno::XInterface >() );
+					throw uno::RuntimeException( rtl::OUString::createFromAscii( "couldn't convert " ).concat( rPath ).concat( rtl::OUString::createFromAscii( " to a URL, is it a fully qualified path name? " ) ), Reference< uno::XInterface >() );
 		}
 		return aURL;
 }

@@ -534,7 +534,7 @@ typedef sal_uIntPtr SbError;
 #define	SbERR_UNDEF_PROC			962	// Procedure xxx undefined
 #define	SbERR_UNDEF_LABEL			963 // Label xxx undefined
 #define	SbERR_UNDEF_TYPE			964	// Unknown user defined type xxx
-#define	SbERR_BAD_EXIT				965	// Exit XXX expexted
+#define	SbERR_BAD_EXIT				965	// Exit XXX expected
 #define	SbERR_BAD_BLOCK				966	// Unterminated statement block: missing XX
 #define	SbERR_BAD_BRACKETS			967	// Parentheses do not match
 #define	SbERR_BAD_DECLARATION		968	// Symbol xx defined differently

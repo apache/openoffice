@@ -224,85 +224,85 @@ Control RID_SIDEBAR_LINE_PANEL
 
 	Image IMG_COLOR
 	{
-		ImageBitmap = Bitmap{File = "symphony/Line_color.png" ;};
+		ImageBitmap = Bitmap{File = "sidebar/Line_color.png" ;};
 	};
 	Image IMG_COLOR_NO
 	{
-		ImageBitmap = Bitmap{File = "symphony/no color.png" ;};
+		ImageBitmap = Bitmap{File = "sidebar/no color.png" ;};
 	};
 
 	Image IMG_NONE_ICON
 	{
-		ImageBitmap = Bitmap{File = "symphony/blank.png" ;};
+		ImageBitmap = Bitmap{File = "sidebar/blank.png" ;};
 	};
 
 	//WIDTH ICON
 	Image IMG_WIDTH1_ICON
 	{
-		ImageBitmap = Bitmap{File = "symphony/width1.png" ;};
+		ImageBitmap = Bitmap{File = "sidebar/width1.png" ;};
 	};
 	Image IMG_WIDTH2_ICON
 	{
-		ImageBitmap = Bitmap{File = "symphony/width2.png" ;};
+		ImageBitmap = Bitmap{File = "sidebar/width2.png" ;};
 	};
 	Image IMG_WIDTH3_ICON
 	{
-		ImageBitmap = Bitmap{File = "symphony/width3.png" ;};
+		ImageBitmap = Bitmap{File = "sidebar/width3.png" ;};
 	};
 	Image IMG_WIDTH4_ICON
 	{
-		ImageBitmap = Bitmap{File = "symphony/width4.png" ;};
+		ImageBitmap = Bitmap{File = "sidebar/width4.png" ;};
 	};
 	Image IMG_WIDTH5_ICON
 	{
-		ImageBitmap = Bitmap{File = "symphony/width5.png" ;};
+		ImageBitmap = Bitmap{File = "sidebar/width5.png" ;};
 	};
 	Image IMG_WIDTH6_ICON
 	{
-		ImageBitmap = Bitmap{File = "symphony/width6.png" ;};
+		ImageBitmap = Bitmap{File = "sidebar/width6.png" ;};
 	};
 	Image IMG_WIDTH7_ICON
 	{
-		ImageBitmap = Bitmap{File = "symphony/width7.png" ;};
+		ImageBitmap = Bitmap{File = "sidebar/width7.png" ;};
 	};
 	Image IMG_WIDTH8_ICON
 	{
-		ImageBitmap = Bitmap{File = "symphony/width8.png" ;};
+		ImageBitmap = Bitmap{File = "sidebar/width8.png" ;};
 	};
 
 	//high contrast for line width
 	//WIDTH ICON
 	Image IMG_WIDTH1_ICON_H
 	{
-		ImageBitmap = Bitmap{File = "symphony/width1_h.png" ;};
+		ImageBitmap = Bitmap{File = "sidebar/width1_h.png" ;};
 	};
 	Image IMG_WIDTH2_ICON_H
 	{
-		ImageBitmap = Bitmap{File = "symphony/width2_h.png" ;};
+		ImageBitmap = Bitmap{File = "sidebar/width2_h.png" ;};
 	};
 	Image IMG_WIDTH3_ICON_H
 	{
-		ImageBitmap = Bitmap{File = "symphony/width3_h.png" ;};
+		ImageBitmap = Bitmap{File = "sidebar/width3_h.png" ;};
 	};
 	Image IMG_WIDTH4_ICON_H
 	{
-		ImageBitmap = Bitmap{File = "symphony/width4_h.png" ;};
+		ImageBitmap = Bitmap{File = "sidebar/width4_h.png" ;};
 	};
 	Image IMG_WIDTH5_ICON_H
 	{
-		ImageBitmap = Bitmap{File = "symphony/width5_h.png" ;};
+		ImageBitmap = Bitmap{File = "sidebar/width5_h.png" ;};
 	};
 	Image IMG_WIDTH6_ICON_H
 	{
-		ImageBitmap = Bitmap{File = "symphony/width6_h.png" ;};
+		ImageBitmap = Bitmap{File = "sidebar/width6_h.png" ;};
 	};
 	Image IMG_WIDTH7_ICON_H
 	{
-		ImageBitmap = Bitmap{File = "symphony/width7_h.png" ;};
+		ImageBitmap = Bitmap{File = "sidebar/width7_h.png" ;};
 	};
 	Image IMG_WIDTH8_ICON_H
 	{
-		ImageBitmap = Bitmap{File = "symphony/width8_h.png" ;};
+		ImageBitmap = Bitmap{File = "sidebar/width8_h.png" ;};
 	};
 };
 Control RID_POPUPPANEL_LINEPAGE_COLOR
@@ -402,11 +402,11 @@ Control RID_POPUPPANEL_LINEPAGE_WIDTH
 
 	Image IMG_WIDTH_CUSTOM
 	{
-		ImageBitmap = Bitmap{File = "symphony/last_custom_common.png" ;};
+		ImageBitmap = Bitmap{File = "sidebar/last_custom_common.png" ;};
 	};
 	Image IMG_WIDTH_CUSTOM_GRAY
 	{
-		ImageBitmap = Bitmap{File = "symphony/last_custom_common_grey.png" ;};
+		ImageBitmap = Bitmap{File = "sidebar/last_custom_common_grey.png" ;};
 	};
 	String STR_WIDTH_LAST_CUSTOM
 	{

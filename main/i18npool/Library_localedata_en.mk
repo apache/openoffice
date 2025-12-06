@@ -19,8 +19,6 @@
 #
 #**************************************************************
 
-
-
 $(eval $(call gb_Library_Library,localedata_en))
 
 $(eval $(call gb_Library_set_include,localedata_en,\

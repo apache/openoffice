@@ -89,9 +89,9 @@ On Error Goto ErrHndl
         End If
     next n
 
-    Out.Log("Amount of testable properites (without readonly and MAYBEVOID) is " + m)
+    Out.Log("Amount of testable properties (without readonly and MAYBEVOID) is " + m)
 
-    'now store the names in sProperites
+    'now store the names in sProperties
     Dim searchProperties(0 to m-1) As String
     m = 0
     for n = 0 to (nCount)
@@ -130,7 +130,7 @@ On Error Goto ErrHndl
     While (NOT bFound) AND ((nCount &gt;= nIndex))
         'get the property-type
         cType = oObj.getPropertySetInfo.getPropertyByName(sProperties(nIndex)).Type.Name
-        If cType = "boolean" Then ' it is a Boolean Proerty
+        If cType = "boolean" Then ' it is a Boolean Property
             bFound = true
             nMem = nIndex
         else

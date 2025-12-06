@@ -64,6 +64,12 @@
         <Cell>
           <Data ss:Type="String">AA test</Data>
         </Cell>
+        <Cell ss:Index="702">
+          <Data ss:Type="String">ZZ test</Data>
+        </Cell>
+        <Cell ss:Index="703">
+          <Data ss:Type="String">AAA test</Data>
+        </Cell>
         <Cell ss:Index="1024">
           <Data ss:Type="String">AMJ test</Data>
         </Cell>
@@ -83,6 +89,12 @@
         </Cell>
         <Cell ss:Formula="=R[-1]C">
           <Data ss:Type="String">AA test</Data>
+        </Cell>
+        <Cell ss:Index="702" ss:Formula="=R[-1]C">
+          <Data ss:Type="String">ZZ test</Data>
+        </Cell>
+        <Cell ss:Index="703" ss:Formula="=R[-1]C">
+          <Data ss:Type="String">AAA test</Data>
         </Cell>
         <Cell ss:Index="1024" ss:Formula="=R[-1]C">
           <Data ss:Type="String">AMJ test</Data>
@@ -105,6 +117,24 @@
           <Data ss:Type="Boolean">1</Data>
         </Cell>
         <Cell ss:Index="1024"/>
+      </Row>
+      <Row ss:Height="12.1032">
+        <Cell>
+          <Data ss:Type="String">ZZ2=ZZ1? (702nd column.)</Data>
+        </Cell>
+        <Cell ss:Formula="=R2C702=R1C702">
+          <Data ss:Type="Boolean">1</Data>
+        </Cell>
+        <Cell ss:Index="702"/>
+      </Row>
+      <Row ss:Height="13.4064">
+        <Cell>
+          <ss:Data xmlns="http://www.w3.org/TR/REC-html40" ss:Type="String">AAA2=AAA1? (703rd column.)</ss:Data>
+        </Cell>
+        <Cell ss:Formula="=R2C703=R1C703">
+          <Data ss:Type="Boolean">1</Data>
+        </Cell>
+        <Cell ss:Index="703"/>
       </Row>
       <Row ss:Height="13.4064">
         <Cell>

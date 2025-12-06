@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // include ---------------------------------------------------------------
 #include <cuires.hrc>
 #include "cfg.hrc"
@@ -660,7 +658,7 @@ ModalDialog MD_ICONCHANGE
 	HelpID = "cui:ModalDialog:MD_ICONCHANGE" ;
 	OutputSize = TRUE ;
 	SVLook = TRUE ;
-	Size = MAP_APPFONT ( 200, 150 ) ;
+	Size = MAP_APPFONT ( 240, 150 ) ;
 	Text [ en-US ] = "%PRODUCTNAME %PRODUCTVERSION" ;
 	Moveable = TRUE ;
 	FixedImage FI_INFO
@@ -674,7 +672,7 @@ ModalDialog MD_ICONCHANGE
 	};
 	FixedText FTCHGE_DESCRIPTION
 	{
-		Pos = MAP_APPFONT ( 30 ,15 ) ;
+		Pos = MAP_APPFONT ( 30, 15 ) ;
 		Size = MAP_APPFONT ( 200, 50 ) ;
 		Text [ en-US ] = "The files listed below could not be imported.\nThe file format could not be interpreted." ;
 	};
@@ -683,7 +681,7 @@ ModalDialog MD_ICONCHANGE
 	{
 		HelpID = "cui:MultiLineEdit:MD_ICONCHANGE:EDT_ADDR" ;
 		Pos = MAP_APPFONT ( 30, 38) ;
-		Size = MAP_APPFONT ( 140, 83 ) ;
+		Size = MAP_APPFONT ( 180, 86 ) ;
 		Border = TRUE ;
 		//VScroll = TRUE ;
 		IgnoreTab = TRUE ;
@@ -691,7 +689,7 @@ ModalDialog MD_ICONCHANGE
 	};
 	OKButton MD_BTN_OK
 	{
-		Pos = MAP_APPFONT ( 68, 131 ) ;
+		Pos = MAP_APPFONT ( 95, 130 ) ;
 		Size = MAP_APPFONT ( 50, 14 ) ;
 		TabStop = TRUE ;
 		DefButton = TRUE ;
@@ -780,9 +778,8 @@ QueryBox QBX_CONFIRM_RESET
 	DEFBUTTON = WB_DEF_NO ;
 };
 
-/* Translators: Do not translate %SAVE IN SELECTION%. It is a placeholder
-   and will be replaced at runtime by the name of the selected application
-   or document.
+/* Translators: Do not translate %SAVE IN SELECTION%. It is a placeholder and will be
+   replaced at runtime by the name of the selected application or document.
 */
 String RID_SVXSTR_CONFIRM_MENU_RESET
 {

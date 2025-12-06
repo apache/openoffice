@@ -77,7 +77,7 @@ class AccessibleUNOHandler
         XServiceInfo xServiceInfo;
         switch (nIndex)
         {
-            case 0 : // Implemenation name.
+            case 0 : // Implementation name.
                 xServiceInfo = GetServiceInfo (aParent);
                 aChild = new StringNode ("Implementation name: " +
                     (xServiceInfo!=null ? xServiceInfo.getImplementationName()

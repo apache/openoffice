@@ -64,7 +64,7 @@ enum ErrorCode
 	EIDL_INTERFACEMEMBER_LOOKUP,	// interface is not defined or a fwd declaration not exists
 	EIDL_SERVICEMEMBER_LOOKUP,
 	EIDL_TYPE_IDENT_CONFLICT,	// type and identifier has equal names
-	EIDL_ONEWAY_RAISE_CONFLICT,	// oneway function raised excpetion conflict
+	EIDL_ONEWAY_RAISE_CONFLICT,	// oneway function raised exception conflict
 	EIDL_WRONGATTRIBUTEFLAG,
 	EIDL_DEFINED_ATTRIBUTEFLAG,
 	EIDL_WRONGATTRIBUTEKEYWORD,

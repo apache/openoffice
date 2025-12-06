@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #include "precompiled_sfx2.hxx"
 
 #include "sfx2/sidebar/Theme.hxx"
@@ -35,11 +33,9 @@
 using namespace css;
 using namespace cssu;
 
-
 namespace sfx2 { namespace sidebar {
 
 ::rtl::Reference<Theme> Theme::mpInstance;
-
 
 Theme& Theme::GetCurrentTheme (void)
 {
@@ -50,7 +46,6 @@ Theme& Theme::GetCurrentTheme (void)
 	}
 	return *mpInstance;
 }
-
 
 Theme::Theme (void)
 	: ThemeInterfaceBase(m_aMutex),
@@ -71,11 +66,9 @@ Theme::Theme (void)
 	SetupPropertyMaps();
 }
 
-
 Theme::~Theme (void)
 {
 }
-
 
 Image Theme::GetImage (const ThemeItem eItem)
 {
@@ -85,7 +78,6 @@ Image Theme::GetImage (const ThemeItem eItem)
 	const Theme& rTheme (GetCurrentTheme());
 	return rTheme.maImages[nIndex];
 }
-
 
 Color Theme::GetColor (const ThemeItem eItem)
 {
@@ -101,7 +93,6 @@ Color Theme::GetColor (const ThemeItem eItem)
 		return COL_WHITE;
 }
 
-
 const Paint& Theme::GetPaint (const ThemeItem eItem)
 {
 	const PropertyType eType (GetPropertyType(eItem));
@@ -111,12 +102,10 @@ const Paint& Theme::GetPaint (const ThemeItem eItem)
 	return rTheme.maPaints[nIndex];
 }
 
-
 const Wallpaper Theme::GetWallpaper (const ThemeItem eItem)
 {
 	return GetPaint(eItem).GetWallpaper();
 }
-
 
 sal_Int32 Theme::GetInteger (const ThemeItem eItem)
 {
@@ -127,7 +116,6 @@ sal_Int32 Theme::GetInteger (const ThemeItem eItem)
 	return rTheme.maIntegers[nIndex];
 }
 
-
 bool Theme::GetBoolean (const ThemeItem eItem)
 {
 	const PropertyType eType (GetPropertyType(eItem));
@@ -136,7 +124,6 @@ bool Theme::GetBoolean (const ThemeItem eItem)
 	const Theme& rTheme (GetCurrentTheme());
 	return rTheme.maBooleans[nIndex];
 }
-
 
 Rectangle Theme::GetRectangle (const ThemeItem eItem)
 {
@@ -147,13 +134,11 @@ Rectangle Theme::GetRectangle (const ThemeItem eItem)
 	return rTheme.maRectangles[nIndex];
 }
 
-
 bool Theme::IsHighContrastMode (void)
 {
 	const Theme& rTheme (GetCurrentTheme());
 	return rTheme.mbIsHighContrastMode;
 }
-
 
 void Theme::HandleDataChange (void)
 {
@@ -169,7 +154,6 @@ void Theme::HandleDataChange (void)
 	GetCurrentTheme().UpdateTheme();
 }
 
-
 void Theme::InitializeTheme (void)
 {
 	setPropertyValue(
@@ -179,7 +163,6 @@ void Theme::InitializeTheme (void)
 		maPropertyIdToNameMap[Bool_UseSystemColors],
 		Any(false));
 }
-
 
 void Theme::UpdateTheme (void)
 {
@@ -347,14 +330,14 @@ void Theme::UpdateTheme (void)
 			maPropertyIdToNameMap[Image_TabBarMenu],
 			Any(
 				mbIsHighContrastMode
-					? A2S("private:graphicrepository/sfx2/res/symphony/open_more_hc.png")
-					: A2S("private:graphicrepository/sfx2/res/symphony/open_more.png")));
+					? A2S("private:graphicrepository/sfx2/res/sidebar/open_more_hc.png")
+					: A2S("private:graphicrepository/sfx2/res/sidebar/open_more.png")));
 		setPropertyValue(
 			maPropertyIdToNameMap[Image_PanelMenu],
 			Any(
 				mbIsHighContrastMode
-					? A2S("private:graphicrepository/sfx2/res/symphony/morebutton_h.png")
-					: A2S("private:graphicrepository/sfx2/res/symphony/morebutton.png")));
+					? A2S("private:graphicrepository/sfx2/res/sidebar/morebutton_h.png")
+					: A2S("private:graphicrepository/sfx2/res/sidebar/morebutton.png")));
 		setPropertyValue(
 			maPropertyIdToNameMap[Image_Closer],
 			Any(
@@ -447,7 +430,6 @@ void Theme::UpdateTheme (void)
 	}
 }
 
-
 void SAL_CALL Theme::disposing (void)
 {
 	ChangeListeners aListeners;
@@ -478,19 +460,16 @@ void SAL_CALL Theme::disposing (void)
 	}
 }
 
-
 Reference<beans::XPropertySet> Theme::GetPropertySet (void)
 {
 	return Reference<beans::XPropertySet>(static_cast<XWeak*>(&GetCurrentTheme()), UNO_QUERY);
 }
-
 
 Reference<beans::XPropertySetInfo> SAL_CALL Theme::getPropertySetInfo (void)
 	throw(cssu::RuntimeException)
 {
 	return Reference<beans::XPropertySetInfo>(this);
 }
-
 
 void SAL_CALL Theme::setPropertyValue (
 	const ::rtl::OUString& rsPropertyName,
@@ -536,7 +515,6 @@ void SAL_CALL Theme::setPropertyValue (
 	BroadcastPropertyChange(GetChangeListeners(eItem, false), aEvent);
 }
 
-
 Any SAL_CALL Theme::getPropertyValue (
 	const ::rtl::OUString& rsPropertyName)
 	throw(css::beans::UnknownPropertyException,
@@ -555,7 +533,6 @@ Any SAL_CALL Theme::getPropertyValue (
 
 	return maRawValues[eItem];
 }
-
 
 void SAL_CALL Theme::addPropertyChangeListener(
 	const ::rtl::OUString& rsPropertyName,
@@ -581,7 +558,6 @@ void SAL_CALL Theme::addPropertyChangeListener(
 	if (pListeners != NULL)
 		pListeners->push_back(rxListener);
 }
-
 
 void SAL_CALL Theme::removePropertyChangeListener(
 	const ::rtl::OUString& rsPropertyName,
@@ -618,7 +594,6 @@ void SAL_CALL Theme::removePropertyChangeListener(
 	}
 }
 
-
 void SAL_CALL Theme::addVetoableChangeListener(
 	const ::rtl::OUString& rsPropertyName,
 	const cssu::Reference<css::beans::XVetoableChangeListener>& rxListener)
@@ -643,7 +618,6 @@ void SAL_CALL Theme::addVetoableChangeListener(
 	if (pListeners != NULL)
 		pListeners->push_back(rxListener);
 }
-
 
 void SAL_CALL Theme::removeVetoableChangeListener(
 	const ::rtl::OUString& rsPropertyName,
@@ -679,7 +653,6 @@ void SAL_CALL Theme::removeVetoableChangeListener(
 	}
 }
 
-
 cssu::Sequence<css::beans::Property> SAL_CALL Theme::getProperties (void)
 	throw(cssu::RuntimeException)
 {
@@ -705,7 +678,6 @@ cssu::Sequence<css::beans::Property> SAL_CALL Theme::getProperties (void)
 		aProperties.size());
 }
 
-
 beans::Property SAL_CALL Theme::getPropertyByName (const ::rtl::OUString& rsPropertyName)
 	throw(css::beans::UnknownPropertyException,
 		cssu::RuntimeException)
@@ -727,7 +699,6 @@ beans::Property SAL_CALL Theme::getPropertyByName (const ::rtl::OUString& rsProp
 		0);
 }
 
-
 sal_Bool SAL_CALL Theme::hasPropertyByName (const ::rtl::OUString& rsPropertyName)
 	throw(cssu::RuntimeException)
 {
@@ -741,7 +712,6 @@ sal_Bool SAL_CALL Theme::hasPropertyByName (const ::rtl::OUString& rsPropertyNam
 
 	return sal_True;
 }
-
 
 void Theme::SetupPropertyMaps (void)
 {
@@ -818,7 +788,6 @@ void Theme::SetupPropertyMaps (void)
 	maRawValues.resize(maPropertyIdToNameMap.size());
 }
 
-
 Theme::PropertyType Theme::GetPropertyType (const ThemeItem eItem)
 {
 	switch(eItem)
@@ -892,7 +861,6 @@ Theme::PropertyType Theme::GetPropertyType (const ThemeItem eItem)
 	}
 }
 
-
 cssu::Type Theme::GetCppuType (const PropertyType eType)
 {
 	switch(eType)
@@ -921,7 +889,6 @@ cssu::Type Theme::GetCppuType (const PropertyType eType)
 	}
 }
 
-
 sal_Int32 Theme::GetIndex (const ThemeItem eItem, const PropertyType eType)
 {
 	switch(eType)
@@ -945,7 +912,6 @@ sal_Int32 Theme::GetIndex (const ThemeItem eItem, const PropertyType eType)
 	}
 }
 
-
 Theme::VetoableListenerContainer* Theme::GetVetoableListeners (
 	const ThemeItem eItem,
 	const bool bCreate)
@@ -962,7 +928,6 @@ Theme::VetoableListenerContainer* Theme::GetVetoableListeners (
 		return NULL;
 }
 
-
 Theme::ChangeListenerContainer* Theme::GetChangeListeners (
 	const ThemeItem eItem,
 	const bool bCreate)
@@ -978,7 +943,6 @@ Theme::ChangeListenerContainer* Theme::GetChangeListeners (
 	else
 		return NULL;
 }
-
 
 bool Theme::DoVetoableListenersVeto (
 	const VetoableListenerContainer* pListeners,
@@ -1010,7 +974,6 @@ bool Theme::DoVetoableListenersVeto (
 	return false;
 }
 
-
 void Theme::BroadcastPropertyChange (
 	const ChangeListenerContainer* pListeners,
 	const beans::PropertyChangeEvent& rEvent) const
@@ -1035,7 +998,6 @@ void Theme::BroadcastPropertyChange (
 		// Ignore any errors (such as disposed listeners).
 	}
 }
-
 
 void Theme::ProcessNewValue (
 	const Any& rValue,

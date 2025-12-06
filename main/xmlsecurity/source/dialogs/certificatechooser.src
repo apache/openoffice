@@ -19,14 +19,12 @@
  *
  *************************************************************/
 
-
-
 #include "dialogs.hrc"
 #include "helpids.hrc"
 
 ModalDialog RID_XMLSECDLG_CERTCHOOSER
 {
-	HelpId = HID_XMLSEC_DLG_CERTCHOOSER;
+	HelpId = HID_XMLSEC_DLG_CERTCHOOSER ;
 	Size = MAP_APPFONT ( CS_WIDTH, CS_HEIGHT ) ;
 	OutputSize = TRUE ;
 	Closeable = TRUE ;

@@ -319,7 +319,7 @@ throw ( provider::ScriptFrameworkErrorException,
     // for languages other than basic,  scripts located in uno packages
     // are merged into the user/share location context.
     // For other languages the location attribute in script url has the form
-    // location = [user|share]:uno_packages or location :uno_pacakges/xxxx.uno.pkg
+    // location = [user|share]:uno_packages or location :uno_packages/xxxx.uno.pkg
     // we need to extract the value of location part from the
     // location attribute of the script, if the script is located in an
     // uno package then that is the location part up to and including
@@ -554,7 +554,7 @@ MasterScriptProvider::insertByName( const ::rtl::OUString& aName, const Any& aEl
             throw lang::IllegalArgumentException( OUSTR("Name not set!!"),
                                                       Reference < XInterface > (), 1 );
         }
-        // TODO for library pacakge parse the language, for the moment will try
+        // TODO for library package parse the language, for the moment will try
         // to get each provider to process the new Package, the first one the succeeds
         // will terminate processing
         if ( !providerCache() )
@@ -628,7 +628,7 @@ MasterScriptProvider::removeByName( const ::rtl::OUString& Name ) throw ( contai
             throw lang::IllegalArgumentException( OUSTR("Name not set!!"),
                                                       Reference < XInterface > (), 1 );
         }
-        // TODO for Script library pacakge url parse the language,
+        // TODO for Script library package url parse the language,
         // for the moment will just try to get each provider to process remove/revoke
         // request, the first one the succeeds will terminate processing
 
@@ -733,7 +733,7 @@ MasterScriptProvider::hasByName( const ::rtl::OUString& aName ) throw (RuntimeEx
             throw lang::IllegalArgumentException( OUSTR("Name not set!!"),
                                                       Reference < XInterface > (), 1 );
         }
-        // TODO for Script library pacakge url parse the language,
+        // TODO for Script library package url parse the language,
         // for the moment will just try to get each provider to see if the
         // package exists in any provider, first one that succeed will
         // terminate the loop

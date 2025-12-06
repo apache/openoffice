@@ -156,7 +156,7 @@ On Error Goto ErrHndl
    		if (pRes.TokenType = 0) then
           nStart = nStart + 1
    		else
-          Out.Log("Type is as expexted - " + ((pRes.TokenType AND tTypes(idx)) &gt; 0))
+          Out.Log("Type is as expected - " + ((pRes.TokenType AND tTypes(idx)) &gt; 0))
           bOK = bOK AND (pRes.TokenType AND tTypes(idx))
           cActStr = mid(cString1, (nStart + pRes.LeadingWhiteSpace), pRes.EndPos - (nStart + pRes.LeadingWhiteSpace) + 1)
           Out.Log("Expected: '" + tVals(idx) + "'; actual is: '" + cActStr + "'")
