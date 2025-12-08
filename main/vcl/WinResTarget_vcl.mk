@@ -65,7 +65,6 @@ $(eval $(call gb_WinResTarget_add_dependency,vcl/src,\
 	vcl/win/source/src/crop.cur \
 	vcl/win/source/src/tblselsw.cur \
 	vcl/win/source/src/asnswe.cur \
-	vcl/win/source/src/cross.cur \
 	vcl/win/source/src/hshear.cur \
 	vcl/win/source/src/notallow.cur \
 	vcl/win/source/src/tblselw.cur \
