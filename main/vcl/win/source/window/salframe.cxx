@@ -2262,7 +2262,7 @@ void WinSalFrame::SetPointer( PointerStyle ePointerStyle )
     { 0, IDC_WAIT, 0 },                             // POINTER_WAIT
     { 0, IDC_IBEAM, 0 },                            // POINTER_TEXT
     { 0, IDC_HELP, 0 },                             // POINTER_HELP
-    { 0, 0, SAL_RESID_POINTER_CROSS },              // POINTER_CROSS
+    { 0, IDC_CROSS, 0 },                            // POINTER_CROSS
     { 0, IDC_SIZEALL, 0 },                          // POINTER_MOVE
     { 0, IDC_SIZENS, 0 },                           // POINTER_NSIZE
     { 0, IDC_SIZENS, 0 },                           // POINTER_SSIZE
