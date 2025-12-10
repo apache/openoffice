@@ -19,8 +19,6 @@
 #
 #**************************************************************
 
-
-
 PRJ=..$/..$/..
 
 PRJNAME=vcl
@@ -28,80 +26,80 @@ TARGET=salsrc
 
 # --- Settings -----------------------------------------------------
 
-.INCLUDE :	settings.mk
-.INCLUDE :  $(PRJ)$/util$/makefile2.pmk
+.INCLUDE : settings.mk
+.INCLUDE : $(PRJ)$/util$/makefile2.pmk
 
 # --- Files --------------------------------------------------------
 
-RCDEPN= 	nullptr.ptr 		\
-			help.ptr			\
-			cross.ptr			\
-			move.ptr			\
-			hsplit.ptr			\
-			vsplit.ptr			\
-			hsizebar.ptr		\
-			vsizebar.ptr		\
-			hand.ptr			\
-			refhand.ptr 		\
-			pen.ptr 			\
-			magnify.ptr 		\
-			fill.ptr			\
-			rotate.ptr			\
-			hshear.ptr			\
-			vshear.ptr			\
-			mirror.ptr			\
-			crook.ptr			\
-			crop.ptr			\
-			movept.ptr			\
-			movebw.ptr			\
-			movedata.ptr		\
-			copydata.ptr		\
-			linkdata.ptr		\
-			movedlnk.ptr		\
-			copydlnk.ptr		\
-			movef.ptr			\
-			copyf.ptr			\
-			linkf.ptr			\
-			moveflnk.ptr		\
-			copyflnk.ptr		\
-			movef2.ptr			\
-			copyf2.ptr			\
-			dline.ptr			\
-			drect.ptr			\
-			dpolygon.ptr		\
-			dbezier.ptr 		\
-			darc.ptr			\
-			dpie.ptr			\
-			dcirccut.ptr		\
-			dellipse.ptr		\
-			dfree.ptr			\
-			dconnect.ptr		\
-			dtext.ptr			\
-			dcapt.ptr			\
-			chart.ptr			\
-			detectiv.ptr		\
-			pivotcol.ptr		\
-			pivotrow.ptr		\
-			pivotfld.ptr		\
-			chain.ptr			\
-			chainnot.ptr		\
-			timemove.ptr		\
-			timesize.ptr		\
-			asn.ptr 			\
-			ass.ptr 			\
-			asw.ptr 			\
-			ase.ptr 			\
-			asnw.ptr			\
-			asne.ptr			\
-			assw.ptr			\
-			asse.ptr			\
-			asns.ptr			\
-			aswe.ptr			\
-			asnswe.ptr			\
+RCDEPN=		nullptr.ptr		\
+			help.ptr		\
+			cross.ptr		\
+			move.ptr		\
+			hsplit.ptr		\
+			vsplit.ptr		\
+			hsizebar.ptr	\
+			vsizebar.ptr	\
+			hand.ptr		\
+			refhand.ptr		\
+			pen.ptr			\
+			magnify.ptr		\
+			fill.ptr		\
+			rotate.ptr		\
+			hshear.ptr		\
+			vshear.ptr		\
+			mirror.ptr		\
+			crook.ptr		\
+			crop.ptr		\
+			movept.ptr		\
+			movebw.ptr		\
+			movedata.ptr	\
+			copydata.ptr	\
+			linkdata.ptr	\
+			movedlnk.ptr	\
+			copydlnk.ptr	\
+			movef.ptr		\
+			copyf.ptr		\
+			linkf.ptr		\
+			moveflnk.ptr	\
+			copyflnk.ptr	\
+			movef2.ptr		\
+			copyf2.ptr		\
+			dline.ptr		\
+			drect.ptr		\
+			dpolygon.ptr	\
+			dbezier.ptr		\
+			darc.ptr		\
+			dpie.ptr		\
+			dcirccut.ptr	\
+			dellipse.ptr	\
+			dfree.ptr		\
+			dconnect.ptr	\
+			dtext.ptr		\
+			dcapt.ptr		\
+			chart.ptr		\
+			detectiv.ptr	\
+			pivotcol.ptr	\
+			pivotrow.ptr	\
+			pivotfld.ptr	\
+			chain.ptr		\
+			chainnot.ptr	\
+			timemove.ptr	\
+			timesize.ptr	\
+			asn.ptr			\
+			ass.ptr			\
+			asw.ptr			\
+			ase.ptr			\
+			asnw.ptr		\
+			asne.ptr		\
+			assw.ptr		\
+			asse.ptr		\
+			asns.ptr		\
+			aswe.ptr		\
+			asnswe.ptr		\
 			sd.ico
 
 RCFILES=	salsrc.rc
 
 # --- Targets ------------------------------------------------------
 
-.INCLUDE :	target.mk
+.INCLUDE : target.mk

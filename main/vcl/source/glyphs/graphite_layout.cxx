@@ -1048,7 +1048,11 @@ void GraphiteLayout::expandOrCondense(ImplLayoutArgs &rArgs)
                     size_t nCharIndex = mvGlyph2Char[i];
                     mvCharDxs[nCharIndex] += nOffset;
                     // adjust char dxs for rest of characters in cluster
-                    while (++nCharIndex < mvGlyph2Char.size())
+                    // Bug #126768: vectors mvGlyph2Char and mvChar2BaseGlyph may have different sizes
+                    size_t nMaxCharIndex = mvGlyph2Char.size();
+                    if ( nMaxCharIndex > mvChar2BaseGlyph.size() )
+                        nMaxCharIndex = mvChar2BaseGlyph.size();
+                    while ( ++nCharIndex < nMaxCharIndex )
                     {
                         int nChar2Base = (mvChar2BaseGlyph[nCharIndex] == -1)? -1 : (int)(mvChar2BaseGlyph[nCharIndex] & GLYPH_INDEX_MASK);
                         if (nChar2Base == -1 || nChar2Base == static_cast<int>(i))

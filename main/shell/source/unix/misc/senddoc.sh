@@ -375,8 +375,49 @@ case `basename "$MAILER" | sed 's/-.*$//'` in
 
 	"")
 
+		XDG_EMAIL=`which xdg-email`
+		if [ -n "$XDG_EMAIL" ]; then
+			while [ "$1" != "" ]; do
+				case $1 in
+					--to)
+						if [ "${TO}" != "" ]; then
+							MAILTO="${MAILTO:-}${MAILTO:+&}cc=$2"
+						else
+							TO="$2"
+						fi
+						shift
+						;;
+					--cc)
+						MAILTO="${MAILTO:-}${MAILTO:+&}cc="`echo "$2" | "${URI_ENCODE}"`
+						shift
+						;;
+					--bcc)
+						MAILTO="${MAILTO:-}${MAILTO:+&}bcc="`echo "$2" | "${URI_ENCODE}"`
+						shift
+						;;
+					--subject)
+						MAILTO="${MAILTO:-}${MAILTO:+&}subject="`echo "$2" | "${URI_ENCODE}"`
+						shift
+						;;
+					--body)
+						MAILTO="${MAILTO:-}${MAILTO:+&}body="`echo "$2" | "${URI_ENCODE}"`
+						shift
+						;;
+					--attach)
+						MAILTO="${MAILTO:-}${MAILTO:+&}attach="`echo "$2" | "${URI_ENCODE}"`
+						shift
+						;;
+					*)
+						;;
+				esac
+				shift;
+			done
+
+			MAILTO="mailto:${TO}?${MAILTO}"
+			${XDG_EMAIL} "${MAILTO}" &
+
 		# DESKTOP_LAUNCH, see http://freedesktop.org/pipermail/xdg/2004-August/004489.html
-		if [ -n "$DESKTOP_LAUNCH" ]; then
+		elif [ -n "$DESKTOP_LAUNCH" ]; then
 			while [ "$1" != "" ]; do
 				case $1 in
 					--to)
