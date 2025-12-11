@@ -101,7 +101,6 @@ static void lcl_GetRedlineHelp( const SwRedline& rRedl, String& rTxt, sal_Bool b
 	}
 }
 
-
 void SwEditWin::RequestHelp(const HelpEvent &rEvt)
 {
 	SwWrtShell &rSh = rView.GetWrtShell();
@@ -156,7 +155,7 @@ void SwEditWin::RequestHelp(const HelpEvent &rEvt)
 				{
 					sTxt = UniString(
 						ByteString::CreateFromDouble(
-						((SwTblBoxValue*)aCntntAtPos.aFnd.pAttr)->GetValue()  )
+						((SwTblBoxValue*)aCntntAtPos.aFnd.pAttr)->GetValue() )
 						, gsl_getSystemTextEncoding());
 				}
 				break;
@@ -336,7 +335,7 @@ void SwEditWin::RequestHelp(const HelpEvent &rEvt)
 										pRefFld->IsRefToNumItemCrossRefBookmark() )
 									{
 										sTxt = pRefFld->GetExpandedTxtOfReferencedTxtNode();
-										if ( sTxt.Len() > 80  )
+										if ( sTxt.Len() > 80 )
 										{
 											sTxt.Erase( 80 );
 											sTxt += '.';
@@ -382,6 +381,8 @@ void SwEditWin::RequestHelp(const HelpEvent &rEvt)
 
 			bWeiter = sal_False;
 		}
+// Removed tooltips for table selection
+/*
 		if( bWeiter )
 		{
 			sal_uInt8 nTabCols = rSh.WhichMouseTabCol(aPos);
@@ -420,6 +421,7 @@ void SwEditWin::RequestHelp(const HelpEvent &rEvt)
 			}
 			bWeiter = sal_False;
 		}
+*/
 	}
 
 /*
@@ -427,7 +429,6 @@ aktuelle Zeichenvorlage anzeigen?
 	if( bWeiter && rEvt.GetMode() & ( HELPMODE_QUICK | HELPMODE_BALLOON ))
 	{
 		SwCharFmt* pChrFmt = rSh.GetCurCharFmt();
-
 	}
 */
 	if( bWeiter && pSdrView && bQuickBalloon)
@@ -477,7 +478,7 @@ aktuelle Zeichenvorlage anzeigen?
 		if (sTxt.Len() && pObj)
 		{
 			sTxt = URIHelper::removePassword( sTxt, INetURLObject::WAS_ENCODED,
-			   							INetURLObject::DECODE_UNAMBIGUOUS);
+										INetURLObject::DECODE_UNAMBIGUOUS);
 
 			Rectangle aLogicPix = LogicToPixel(pObj->GetLogicRect());
 			Rectangle aScreenRect(OutputToScreenPixel(aLogicPix.TopLeft()),
@@ -504,7 +505,7 @@ void SwEditWin::PrePaint()
 	}
 }
 
-void  SwEditWin::Paint(const Rectangle& rRect)
+void SwEditWin::Paint(const Rectangle& rRect)
 {
 #if defined(MYDEBUG)
 	// StartUp-Statistik
@@ -539,14 +540,14 @@ void  SwEditWin::Paint(const Rectangle& rRect)
 	// TODO/LATER: What's the replacement for this? Do we need it?
 	SwDocShell* pDocShell = GetView().GetDocShell();
 
-  SvInPlaceEnvironment *pIpEnv =  pDocShell ?
-								  pDocShell->GetIPEnv() : 0;
+	SvInPlaceEnvironment *pIpEnv = pDocShell ?
+								   pDocShell->GetIPEnv() : 0;
 	if ( pIpEnv && pIpEnv->GetRectsChangedLockCount() )
-		//Wir stehen in Groessenverhandlungen (MM), Paint verzögern
+		// Wir stehen in Größenverhandlungen (MM), Paint verzögern
 		Invalidate( rRect );
 	else */
-	if ( GetView().GetVisArea().GetWidth()  <= 0 ||
-			  GetView().GetVisArea().GetHeight() <= 0 )
+	if ( GetView().GetVisArea().GetWidth() <= 0 ||
+			GetView().GetVisArea().GetHeight() <= 0 )
 		Invalidate( rRect );
 	else
 		pWrtShell->Paint( rRect );
