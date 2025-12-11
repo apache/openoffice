@@ -31,8 +31,8 @@
 //#define SAL_RESID_POINTER_NWSESIZE			10005 // "Diagonal resize NWSE" cursor only needed for older Windows versions was removed in December 2025
 //#define SAL_RESID_POINTER_CROSS				10006 // "Cross" cursor for older Windows versions was replaced in December 2025
 //#define SAL_RESID_POINTER_MOVE				10007 // "Move" cursor for older Windows versions was replaced in December 2025
-#define SAL_RESID_POINTER_HSPLIT				10008
-#define SAL_RESID_POINTER_VSPLIT				10009
+//#define SAL_RESID_POINTER_HSPLIT				10008 // "Horizontal split" cursor for older Windows versions was replaced in December 2025
+//#define SAL_RESID_POINTER_VSPLIT				10009 // "Vertical split" cursor for older Windows versions was replaced in December 2025
 #define SAL_RESID_POINTER_HSIZEBAR				10010
 #define SAL_RESID_POINTER_VSIZEBAR				10011
 //#define SAL_RESID_POINTER_HAND				10012 // "Hand" cursor for older Windows versions was replaced in December 2025

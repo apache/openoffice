@@ -259,26 +259,27 @@ InfoBox MSG_READONLY_CONTENT
 	Message [ en-US ] = "Readonly content cannot be changed.\nNo modifications will be accepted." ;
 };
 
-String STR_TABLE_COL_ADJUST
-{
-	Text [ en-US ] = "Adjust table column" ;
-};
-String STR_TABLE_ROW_ADJUST
-{
-	Text [ en-US ] = "Adjust table row" ;
-};
-String STR_TABLE_SELECT_ALL
-{
-	Text [ en-US ] = "Select whole table" ;
-};
-String STR_TABLE_SELECT_ROW
-{
-	Text [ en-US ] = "Select table row" ;
-};
-String STR_TABLE_SELECT_COL
-{
-	Text [ en-US ] = "Select table column" ;
-};
+// Removed tooltips for table selection
+//String STR_TABLE_COL_ADJUST
+//{
+//	Text [ en-US ] = "Adjust table column" ;
+//};
+//String STR_TABLE_ROW_ADJUST
+//{
+//	Text [ en-US ] = "Adjust table row" ;
+//};
+//String STR_TABLE_SELECT_ALL
+//{
+//	Text [ en-US ] = "Select whole table" ;
+//};
+//String STR_TABLE_SELECT_ROW
+//{
+//	Text [ en-US ] = "Select table row" ;
+//};
+//String STR_TABLE_SELECT_COL
+//{
+//	Text [ en-US ] = "Select table column" ;
+//};
 
 String STR_SMARTTAG_CLICK
 {
