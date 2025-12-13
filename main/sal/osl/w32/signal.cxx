@@ -51,6 +51,14 @@ static oslSignalHandlerImpl*  SignalList;
 
 static long WINAPI SignalHandlerFunction(LPEXCEPTION_POINTERS lpEP);
 
+static _invalid_parameter_handler pPreviousInvalidParameterHandler = NULL;
+static void InvalidParameterHandlerFunction(
+	const wchar_t* expression,
+	const wchar_t* function,
+	const wchar_t* file,
+	unsigned int line,
+	uintptr_t pReserved );
+
 static sal_Bool InitSignal(void)
 {
 	HMODULE	hFaultRep;
@@ -58,6 +66,10 @@ static sal_Bool InitSignal(void)
 	SignalListMutex = osl_createMutex();
 
 	SetUnhandledExceptionFilter(SignalHandlerFunction);
+	if ( pPreviousInvalidParameterHandler == NULL )
+	{
+		pPreviousInvalidParameterHandler = _set_invalid_parameter_handler( InvalidParameterHandlerFunction );
+	}
 
 	hFaultRep = LoadLibrary( "faultrep.dll" );
 	if ( hFaultRep )
@@ -78,6 +90,11 @@ static sal_Bool DeInitSignal(void)
 {
 	SetUnhandledExceptionFilter(NULL);
 
+	if ( pPreviousInvalidParameterHandler )
+	{
+		_set_invalid_parameter_handler( pPreviousInvalidParameterHandler );
+		pPreviousInvalidParameterHandler = NULL;
+	}
 	osl_destroyMutex(SignalListMutex);
 
 	return sal_False;
@@ -318,6 +335,36 @@ static long WINAPI SignalHandlerFunction(LPEXCEPTION_POINTERS lpEP)
 	}
 
 	return (EXCEPTION_CONTINUE_EXECUTION);
+}
+
+static void InvalidParameterHandlerFunction(
+	const wchar_t* expression,
+	const wchar_t* function,
+	const wchar_t* file,
+	unsigned int line,
+	uintptr_t pReserved )
+{
+	oslSignalInfo	Info;
+
+	fwprintf(stderr, L"Invalid parameter detected in function %s.\n"
+			 L"File: %s\n"
+			 L"Line: %u\n"
+			 L"Expression: %s\n"
+			 L"pReserved: %p\n", function, file, line, expression, pReserved);
+
+	Info.Signal = osl_Signal_AccessViolation;
+	Info.UserSignal = 0;
+	Info.UserData = NULL;
+	if ( ReportCrash( NULL ) || IsWin95A() )
+	{
+		CallSignalHandler(&Info);
+		abort(); // Equivalent of osl_Signal_ActAbortApp
+	} else {
+		// Equivalent of osl_Signal_ActKillApp
+		SetErrorMode(SEM_NOGPFAULTERRORBOX);
+		exit(255);
+	}
+	// We will never reach this point
 }
 
 /*****************************************************************************/
