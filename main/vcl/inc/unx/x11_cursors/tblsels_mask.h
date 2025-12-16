@@ -21,8 +21,8 @@
 
 #define tblsels_mask_width 24
 #define tblsels_mask_height 24
-#define tblsels_curs_x_hot 11
-#define tblsels_curs_y_hot 22
+#define tblsels_mask_x_hot 11
+#define tblsels_mask_y_hot 22
 
 static const unsigned char tblsels_mask_bits[] = {
 	0x00,0x00,0x00,		// 0000 0000 0000 0000 0000 0000
