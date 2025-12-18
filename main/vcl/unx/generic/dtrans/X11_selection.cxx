@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_vcl.hxx"
 
@@ -94,20 +92,19 @@ using namespace rtl;
 
 using namespace x11;
 
-// stubs to satisfy solaris compiler's rather rigid linking warning
+// stubs to satisfy Solaris compiler's rather rigid linking warning
 extern "C"
 {
-    static void call_SelectionManager_run( void * pMgr )
-    {
-        SelectionManager::run( pMgr );
-    }
+	static void call_SelectionManager_run( void * pMgr )
+	{
+		SelectionManager::run( pMgr );
+	}
 
-    static void call_SelectionManager_runDragExecute( void * pMgr )
-    {
-        SelectionManager::runDragExecute( pMgr );
-    }
+	static void call_SelectionManager_runDragExecute( void * pMgr )
+	{
+		SelectionManager::runDragExecute( pMgr );
+	}
 }
-
 
 static const long nXdndProtocolRevision = 5;
 
@@ -128,7 +125,7 @@ struct NativeTypeEntry
 static NativeTypeEntry aXdndConversionTab[] =
 {
 	{ 0, "text/plain;charset=iso8859-1", "text/plain", 8 },
-    { 0, "text/plain;charset=utf-8", "UTF8_STRING", 8 }
+	{ 0, "text/plain;charset=utf-8", "UTF8_STRING", 8 }
 };
 
 // for clipboard and primary selections there is only a convention for text
@@ -152,40 +149,40 @@ static NativeTypeEntry aNativeConversionTab[] =
 	{ 0, "text/plain;charset=iso8859-13", "ISO8859-13", 8 },
 	{ 0, "text/plain;charset=iso8859-14", "ISO8859-14", 8 },
 	{ 0, "text/plain;charset=iso8859-15", "ISO8859-15", 8 },
-	// asian encodings
+	// Asian encodings
 	{ 0, "text/plain;charset=jisx0201.1976-0", "JISX0201.1976-0", 8 },
 	{ 0, "text/plain;charset=jisx0208.1983-0", "JISX0208.1983-0", 8 },
 	{ 0, "text/plain;charset=jisx0208.1990-0", "JISX0208.1990-0", 8 },
 	{ 0, "text/plain;charset=jisx0212.1990-0", "JISX0212.1990-0", 8 },
 	{ 0, "text/plain;charset=gb2312.1980-0", "GB2312.1980-0", 8 },
 	{ 0, "text/plain;charset=ksc5601.1992-0", "KSC5601.1992-0", 8 },
-	// eastern european encodings
+	// eastern European encodings
 	{ 0, "text/plain;charset=koi8-r", "KOI8-R", 8 },
 	{ 0, "text/plain;charset=koi8-u", "KOI8-U", 8 },
 	// String (== iso8859-1)
 	{ XA_STRING, "text/plain;charset=iso8859-1", "STRING", 8 },
-    // special for compound text
-    { 0, "text/plain;charset=compound_text", "COMPOUND_TEXT", 8 },
+	// special for compound text
+	{ 0, "text/plain;charset=compound_text", "COMPOUND_TEXT", 8 },
 
-    // PIXMAP
-    { XA_PIXMAP, "image/bmp", "PIXMAP", 32 }
+	// PIXMAP
+	{ XA_PIXMAP, "image/bmp", "PIXMAP", 32 }
 };
 
 rtl_TextEncoding x11::getTextPlainEncoding( const OUString& rMimeType )
 {
 	rtl_TextEncoding aEncoding = RTL_TEXTENCODING_DONTKNOW;
 	OUString aMimeType( rMimeType.toAsciiLowerCase() );
-    sal_Int32 nIndex = 0;
+	sal_Int32 nIndex = 0;
 	if( aMimeType.getToken( 0, ';', nIndex ).equalsAsciiL( "text/plain" , 10 ) )
 	{
 		if( aMimeType.getLength() == 10 ) // only "text/plain"
 			aEncoding = RTL_TEXTENCODING_ISO_8859_1;
 		else
 		{
-            while( nIndex != -1 )
+			while( nIndex != -1 )
 			{
 				OUString aToken = aMimeType.getToken( 0, ';', nIndex );
-                sal_Int32 nPos = 0;
+				sal_Int32 nPos = 0;
 				if( aToken.getToken( 0, '=', nPos ).equalsAsciiL( "charset", 7 ) )
 				{
 					OString aEncToken = OUStringToOString( aToken.getToken( 0, '=', nPos ), RTL_TEXTENCODING_ISO_8859_1 );
@@ -202,8 +199,8 @@ rtl_TextEncoding x11::getTextPlainEncoding( const OUString& rMimeType )
 		}
 	}
 #if OSL_DEBUG_LEVEL > 1
-    if( aEncoding == RTL_TEXTENCODING_DONTKNOW )
-        fprintf( stderr, "getTextPlainEncoding( %s ) failed\n", OUStringToOString( rMimeType, RTL_TEXTENCODING_ISO_8859_1 ).getStr() );
+	if( aEncoding == RTL_TEXTENCODING_DONTKNOW )
+		fprintf( stderr, "getTextPlainEncoding( %s ) failed\n", OUStringToOString( rMimeType, RTL_TEXTENCODING_ISO_8859_1 ).getStr() );
 #endif
 	return aEncoding;
 }
@@ -212,80 +209,80 @@ rtl_TextEncoding x11::getTextPlainEncoding( const OUString& rMimeType )
 
 ::std::hash_map< OUString, SelectionManager*, OUStringHash >& SelectionManager::getInstances()
 {
-    static ::std::hash_map< OUString, SelectionManager*, OUStringHash > aInstances;
-    return aInstances;
+	static ::std::hash_map< OUString, SelectionManager*, OUStringHash > aInstances;
+	return aInstances;
 }
 
 // ------------------------------------------------------------------------
 
 SelectionManager::SelectionManager() :
-        m_nIncrementalThreshold( 15*1024 ),
-        m_pDisplay( NULL ),
-        m_aThread( NULL ),
-        m_aDragExecuteThread( NULL ),
-        m_aWindow( None ),
-        m_nSelectionTimeout( 0 ),
-        m_nSelectionTimestamp( CurrentTime ),
-        m_bDropEnterSent( true ),
-        m_aCurrentDropWindow( None ),
-        m_nDropTime( None ),
-        m_nLastDropAction( 0 ),
-        m_nLastX( 0 ),
-        m_nLastY( 0 ),
-        m_nDropTimestamp( 0 ),
-        m_bDropWaitingForCompletion( false ),
-        m_aDropWindow( None ),
-        m_aDropProxy( None ),
-        m_aDragSourceWindow( None ),
-        m_nLastDragX( 0 ),
-        m_nLastDragY( 0 ),
-        m_nNoPosX( 0 ),
-        m_nNoPosY( 0 ),
-        m_nNoPosWidth( 0 ),
-        m_nNoPosHeight( 0 ),
-        m_nDragButton( 0 ),
-        m_nUserDragAction( 0 ),
-        m_nTargetAcceptAction( 0 ),
-        m_nSourceActions( 0 ),
-        m_bLastDropAccepted( false ),
-        m_bDropSuccess( false ),
-        m_bDropSent( false ),
-        m_bWaitingForPrimaryConversion( false ),
-        m_nDragTimestamp( None ),
-        m_aMoveCursor( None ),
-        m_aCopyCursor( None ),
-        m_aLinkCursor( None ),
-        m_aNoneCursor( None ),
-        m_aCurrentCursor( None ),
-        m_nCurrentProtocolVersion( nXdndProtocolRevision ),
-        m_nCLIPBOARDAtom( None ),
-        m_nTARGETSAtom( None ),
-        m_nTIMESTAMPAtom( None ),
-        m_nTEXTAtom( None ),
-        m_nINCRAtom( None ),
-        m_nCOMPOUNDAtom( None ),
-        m_nMULTIPLEAtom( None ),
-        m_nUTF16Atom( None ),
-        m_nImageBmpAtom( None ),
-        m_nXdndAware( None ),
-        m_nXdndEnter( None ),
-        m_nXdndLeave( None ),
-        m_nXdndPosition( None ),
-        m_nXdndStatus( None ),
-        m_nXdndDrop( None ),
-        m_nXdndFinished( None ),
-        m_nXdndSelection( None ),
-        m_nXdndTypeList( None ),
-        m_nXdndProxy( None ),
-        m_nXdndActionCopy( None ),
-        m_nXdndActionMove( None ),
-        m_nXdndActionLink( None ),
-        m_nXdndActionAsk( None ),
-        m_nXdndActionPrivate( None ),
-        m_bShutDown( false )
+		m_nIncrementalThreshold( 15*1024 ),
+		m_pDisplay( NULL ),
+		m_aThread( NULL ),
+		m_aDragExecuteThread( NULL ),
+		m_aWindow( None ),
+		m_nSelectionTimeout( 0 ),
+		m_nSelectionTimestamp( CurrentTime ),
+		m_bDropEnterSent( true ),
+		m_aCurrentDropWindow( None ),
+		m_nDropTime( None ),
+		m_nLastDropAction( 0 ),
+		m_nLastX( 0 ),
+		m_nLastY( 0 ),
+		m_nDropTimestamp( 0 ),
+		m_bDropWaitingForCompletion( false ),
+		m_aDropWindow( None ),
+		m_aDropProxy( None ),
+		m_aDragSourceWindow( None ),
+		m_nLastDragX( 0 ),
+		m_nLastDragY( 0 ),
+		m_nNoPosX( 0 ),
+		m_nNoPosY( 0 ),
+		m_nNoPosWidth( 0 ),
+		m_nNoPosHeight( 0 ),
+		m_nDragButton( 0 ),
+		m_nUserDragAction( 0 ),
+		m_nTargetAcceptAction( 0 ),
+		m_nSourceActions( 0 ),
+		m_bLastDropAccepted( false ),
+		m_bDropSuccess( false ),
+		m_bDropSent( false ),
+		m_bWaitingForPrimaryConversion( false ),
+		m_nDragTimestamp( None ),
+		m_aMoveCursor( None ),
+		m_aCopyCursor( None ),
+		m_aLinkCursor( None ),
+		m_aNoneCursor( None ),
+		m_aCurrentCursor( None ),
+		m_nCurrentProtocolVersion( nXdndProtocolRevision ),
+		m_nCLIPBOARDAtom( None ),
+		m_nTARGETSAtom( None ),
+		m_nTIMESTAMPAtom( None ),
+		m_nTEXTAtom( None ),
+		m_nINCRAtom( None ),
+		m_nCOMPOUNDAtom( None ),
+		m_nMULTIPLEAtom( None ),
+		m_nUTF16Atom( None ),
+		m_nImageBmpAtom( None ),
+		m_nXdndAware( None ),
+		m_nXdndEnter( None ),
+		m_nXdndLeave( None ),
+		m_nXdndPosition( None ),
+		m_nXdndStatus( None ),
+		m_nXdndDrop( None ),
+		m_nXdndFinished( None ),
+		m_nXdndSelection( None ),
+		m_nXdndTypeList( None ),
+		m_nXdndProxy( None ),
+		m_nXdndActionCopy( None ),
+		m_nXdndActionMove( None ),
+		m_nXdndActionLink( None ),
+		m_nXdndActionAsk( None ),
+		m_nXdndActionPrivate( None ),
+		m_bShutDown( false )
 {
 	m_aDropEnterEvent.data.l[0]	= None;
-    m_aDragRunning.reset();
+	m_aDragRunning.reset();
 }
 
 XLIB_Cursor SelectionManager::createCursor( const char* pPointerData, const char* pMaskData, int width, int height, int hotX, int hotY )
@@ -337,11 +334,11 @@ void SelectionManager::initialize( const Sequence< Any >& arguments ) throw (::c
 		 *	registering us as XEventHandler on it.
 		 *
 		 *	implementor's note:
-         *  FIXME:
-         *  finally the clipboard and XDND service is back in the module it belongs
-         *  now cleanup and sharing of resources with the normal vcl event loop
-         *  needs to be added. The display used would be that of the normal event loop
-         *  and synchronization should be done via the SolarMutex.
+		 *  FIXME:
+		 *  finally the clipboard and XDND service is back in the module it belongs
+		 *  now cleanup and sharing of resources with the normal vcl event loop
+		 *  needs to be added. The display used would be that of the normal event loop
+		 *  and synchronization should be done via the SolarMutex.
 		 */
 		if( arguments.getLength() > 0 )
 			arguments.getConstArray()[0] >>= m_xDisplayConnection;
@@ -362,13 +359,13 @@ void SelectionManager::initialize( const Sequence< Any >& arguments ) throw (::c
 			m_xDisplayConnection->addEventHandler( Any(), this, ~0 );
 	}
 
-    if( !m_xBitmapConverter.is() )
-    {
-        if( arguments.getLength() > 2 )
-            arguments.getConstArray()[2] >>= m_xBitmapConverter;
-    }
+	if( !m_xBitmapConverter.is() )
+	{
+		if( arguments.getLength() > 2 )
+			arguments.getConstArray()[2] >>= m_xBitmapConverter;
+	}
 
-    OUString aParam;
+	OUString aParam;
 	if( ! m_pDisplay )
 	{
 		OUString aUDisplay;
@@ -393,14 +390,14 @@ void SelectionManager::initialize( const Sequence< Any >& arguments ) throw (::c
 
 			// special targets
 			m_nTARGETSAtom		= getAtom( OUString::createFromAscii( "TARGETS" ) );
-            m_nTIMESTAMPAtom    = getAtom( OUString::createFromAscii( "TIMESTAMP" ) );
+			m_nTIMESTAMPAtom	= getAtom( OUString::createFromAscii( "TIMESTAMP" ) );
 			m_nTEXTAtom			= getAtom( OUString::createFromAscii( "TEXT" ) );
 			m_nINCRAtom			= getAtom( OUString::createFromAscii( "INCR" ) );
-            m_nCOMPOUNDAtom		= getAtom( OUString::createFromAscii( "COMPOUND_TEXT" ) );
-            m_nMULTIPLEAtom		= getAtom( OUString::createFromAscii( "MULTIPLE" ) );
-            m_nUTF16Atom		= getAtom( OUString::createFromAscii( "ISO10646-1" ) );
-//            m_nUTF16Atom		= getAtom( OUString::createFromAscii( "text/plain;charset=ISO-10646-UCS-2" ) );
-            m_nImageBmpAtom     = getAtom( OUString::createFromAscii( "image/bmp" ) );
+			m_nCOMPOUNDAtom		= getAtom( OUString::createFromAscii( "COMPOUND_TEXT" ) );
+			m_nMULTIPLEAtom		= getAtom( OUString::createFromAscii( "MULTIPLE" ) );
+			m_nUTF16Atom		= getAtom( OUString::createFromAscii( "ISO10646-1" ) );
+//			m_nUTF16Atom		= getAtom( OUString::createFromAscii( "text/plain;charset=ISO-10646-UCS-2" ) );
+			m_nImageBmpAtom		= getAtom( OUString::createFromAscii( "image/bmp" ) );
 
 			// Atoms for Xdnd protocol
 			m_nXdndAware		= getAtom( OUString::createFromAscii( "XdndAware" ) );
@@ -421,16 +418,16 @@ void SelectionManager::initialize( const Sequence< Any >& arguments ) throw (::c
 
 			// initialize map with member none
 			m_aAtomToString[ 0 ]= OUString::createFromAscii( "None" );
-            m_aAtomToString[ XA_PRIMARY ] = OUString::createFromAscii( "PRIMARY" );
+			m_aAtomToString[ XA_PRIMARY ] = OUString::createFromAscii( "PRIMARY" );
 
 			// create a (invisible) message window
 			m_aWindow = XCreateSimpleWindow( m_pDisplay, DefaultRootWindow( m_pDisplay ),
 											 10, 10, 10, 10, 0, 0, 1 );
 
-            // initialize threshold for incremetal transfers
-            // ICCCM says it should be smaller that the max request size
-            // which in turn is guaranteed to be at least 16k bytes
-            m_nIncrementalThreshold = XMaxRequestSize( m_pDisplay ) - 1024;
+			// initialize threshold for incremental transfers
+			// ICCCM says it should be smaller that the max request size
+			// which in turn is guaranteed to be at least 16k bytes
+			m_nIncrementalThreshold = XMaxRequestSize( m_pDisplay ) - 1024;
 
 			if( m_aWindow )
 			{
@@ -448,8 +445,8 @@ void SelectionManager::initialize( const Sequence< Any >& arguments ) throw (::c
 				registerHandler( m_nXdndSelection, *this );
 
 				m_aThread = osl_createSuspendedThread( call_SelectionManager_run, this );
-    			if( m_aThread )
-        			osl_resumeThread( m_aThread );
+				if( m_aThread )
+					osl_resumeThread( m_aThread );
 #if OSL_DEBUG_LEVEL > 1
 				else
 					fprintf( stderr, "SelectionManager::initialize: creation of dispatch thread failed !\n" );
@@ -489,7 +486,7 @@ SelectionManager::~SelectionManager()
 	{
 		osl_terminateThread( m_aDragExecuteThread );
 		osl_joinWithThread( m_aDragExecuteThread );
-        m_aDragExecuteThread = NULL;
+		m_aDragExecuteThread = NULL;
 		// thread handle is freed in dragDoDispatch()
 	}
 
@@ -499,11 +496,11 @@ SelectionManager::~SelectionManager()
 	fprintf( stderr, "shutting down SelectionManager\n" );
 #endif
 
-    if( m_xDisplayConnection.is() )
-    {
-        m_xDisplayConnection->removeEventHandler( Any(), this );
-        m_xDisplayConnection.clear();
-    }
+	if( m_xDisplayConnection.is() )
+	{
+		m_xDisplayConnection->removeEventHandler( Any(), this );
+		m_xDisplayConnection.clear();
+	}
 
 	if( m_pDisplay )
 	{
@@ -521,8 +518,8 @@ SelectionManager::~SelectionManager()
 		if (m_aNoneCursor != None)
 			XFreeCursor(m_pDisplay, m_aNoneCursor);
 
-        // paranoia setting, the drag thread should have
-        // done that already
+		// paranoia setting, the drag thread should have
+		// done that already
 		XUngrabPointer( m_pDisplay, CurrentTime );
 		XUngrabKeyboard( m_pDisplay, CurrentTime );
 
@@ -543,58 +540,58 @@ SelectionAdaptor* SelectionManager::getAdaptor( Atom selection )
 
 OUString SelectionManager::convertFromCompound( const char* pText, int nLen )
 {
-    MutexGuard aGuard( m_aMutex );
-    OUString aRet;
-    if( nLen < 0 )
-        nLen = strlen( pText );
+	MutexGuard aGuard( m_aMutex );
+	OUString aRet;
+	if( nLen < 0 )
+		nLen = strlen( pText );
 
-    char** pTextList = NULL;
-    int nTexts = 0;
+	char** pTextList = NULL;
+	int nTexts = 0;
 
-    XTextProperty aProp;
-    aProp.value		= (unsigned char*)pText;
-    aProp.encoding	= m_nCOMPOUNDAtom;
-    aProp.format	= 8;
-    aProp.nitems	= nLen;
-    XmbTextPropertyToTextList( m_pDisplay,
+	XTextProperty aProp;
+	aProp.value		= (unsigned char*)pText;
+	aProp.encoding	= m_nCOMPOUNDAtom;
+	aProp.format	= 8;
+	aProp.nitems	= nLen;
+	XmbTextPropertyToTextList( m_pDisplay,
                                &aProp,
                                &pTextList,
                                &nTexts );
-    rtl_TextEncoding aEncoding = osl_getThreadTextEncoding();
-    for( int i = 0; i < nTexts; i++ )
-        aRet += OStringToOUString( pTextList[i], aEncoding );
+	rtl_TextEncoding aEncoding = osl_getThreadTextEncoding();
+	for( int i = 0; i < nTexts; i++ )
+		aRet += OStringToOUString( pTextList[i], aEncoding );
 
-    if( pTextList )
-        XFreeStringList( pTextList );
+	if( pTextList )
+		XFreeStringList( pTextList );
 
-    return aRet;
+	return aRet;
 }
 
 // ------------------------------------------------------------------------
 
 OString SelectionManager::convertToCompound( const OUString& rText )
 {
-    MutexGuard aGuard( m_aMutex );
-    XTextProperty aProp;
-    aProp.value = NULL;
-    aProp.encoding = XA_STRING;
-    aProp.format = 8;
-    aProp.nitems = 0;
+	MutexGuard aGuard( m_aMutex );
+	XTextProperty aProp;
+	aProp.value = NULL;
+	aProp.encoding = XA_STRING;
+	aProp.format = 8;
+	aProp.nitems = 0;
 
-    OString aRet( rText.getStr(), rText.getLength(), osl_getThreadTextEncoding() );
-    char* pT = const_cast<char*>(aRet.getStr());
+	OString aRet( rText.getStr(), rText.getLength(), osl_getThreadTextEncoding() );
+	char* pT = const_cast<char*>(aRet.getStr());
 
-    XmbTextListToTextProperty( m_pDisplay,
+	XmbTextListToTextProperty( m_pDisplay,
                                &pT,
                                1,
                                XCompoundTextStyle,
                                &aProp );
-    if( aProp.value )
-    {
-        aRet = (char*)aProp.value;
-        XFree( aProp.value );
+	if( aProp.value )
+	{
+		aRet = (char*)aProp.value;
+		XFree( aProp.value );
 #ifdef SOLARIS
-        /*  #97070#
+		/*  #97070#
          *  for currently unknown reasons XmbTextListToTextProperty on Solaris returns
          *  no data in ISO8859-n encodings (at least for n = 1, 15)
          *  in these encodings the directly converted text does the
@@ -603,11 +600,11 @@ OString SelectionManager::convertToCompound( const OUString& rText )
         if( ! aRet.getLength() && rText.getLength() )
             aRet = OUStringToOString( rText, osl_getThreadTextEncoding() );
 #endif
-    }
-    else
-        aRet = OString();
+	}
+	else
+		aRet = OString();
 
-    return aRet;
+	return aRet;
 }
 
 // ------------------------------------------------------------------------
@@ -624,11 +621,11 @@ bool SelectionManager::convertData(
 	if( ! xTransferable.is() )
 		return bSuccess;
 
-    try
-    {
+	try
+	{
 
-        DataFlavor aFlavor;
-        aFlavor.MimeType = convertTypeFromNative( nType, nSelection, rFormat );
+		DataFlavor aFlavor;
+		aFlavor.MimeType = convertTypeFromNative( nType, nSelection, rFormat );
 
         sal_Int32 nIndex = 0;
         if( aFlavor.MimeType.getToken( 0, ';', nIndex ).compareToAscii( "text/plain" ) == 0 )
@@ -679,13 +676,13 @@ bool SelectionManager::convertData(
                     bSuccess = true;
                 }
             }
-        }
-    }
-    // various exceptions possible ... which all lead to a failed conversion
-    // so simplify here to a catch all
-    catch(...)
-    {
-    }
+		}
+	}
+	// various exceptions possible ... which all lead to a failed conversion
+	// so simplify here to a catch all
+	catch(...)
+	{
+	}
 
 	return bSuccess;
 }
@@ -696,9 +693,9 @@ SelectionManager& SelectionManager::get( const OUString& rDisplayName )
 {
 	MutexGuard aGuard( *Mutex::getGlobalMutex() );
 
-    OUString aDisplayName( rDisplayName );
-    if( ! aDisplayName.getLength() )
-        aDisplayName = OStringToOUString( getenv( "DISPLAY" ), RTL_TEXTENCODING_ISO_8859_1 );
+	OUString aDisplayName( rDisplayName );
+	if( ! aDisplayName.getLength() )
+		aDisplayName = OStringToOUString( getenv( "DISPLAY" ), RTL_TEXTENCODING_ISO_8859_1 );
 	SelectionManager* pInstance = NULL;
 
 	::std::hash_map< OUString, SelectionManager*, OUStringHash >::iterator it = getInstances().find( aDisplayName );
@@ -767,25 +764,25 @@ bool SelectionManager::requestOwnership( Atom selection )
 					 bSuccess ? "acquired" : "failed to acquire",
 					 OUStringToOString( getString( selection ), RTL_TEXTENCODING_ISO_8859_1 ).getStr() );
 #endif
-            Selection* pSel = m_aSelections[ selection ];
-            pSel->m_bOwner = bSuccess;
-            delete pSel->m_pPixmap;
-            pSel->m_pPixmap = NULL;
-            pSel->m_nOrigTimestamp = m_nSelectionTimestamp;
+			Selection* pSel = m_aSelections[ selection ];
+			pSel->m_bOwner = bSuccess;
+			delete pSel->m_pPixmap;
+			pSel->m_pPixmap = NULL;
+			pSel->m_nOrigTimestamp = m_nSelectionTimestamp;
 		}
 #if OSL_DEBUG_LEVEL > 1
 		else
 			fprintf( stderr, "no adaptor for selection %s\n",
 					 OUStringToOString( getString( selection ), RTL_TEXTENCODING_ISO_8859_1 ).getStr() );
 
-        if( pAdaptor->getTransferable().is() )
-        {
-            Sequence< DataFlavor > aTypes = pAdaptor->getTransferable()->getTransferDataFlavors();
-            for( int i = 0; i < aTypes.getLength(); i++ )
-            {
-                fprintf( stderr, "   %s\n", OUStringToOString( aTypes.getConstArray()[i].MimeType, RTL_TEXTENCODING_ISO_8859_1 ).getStr() );
-            }
-        }
+		if( pAdaptor->getTransferable().is() )
+		{
+			Sequence< DataFlavor > aTypes = pAdaptor->getTransferable()->getTransferDataFlavors();
+			for( int i = 0; i < aTypes.getLength(); i++ )
+			{
+				fprintf( stderr, "   %s\n", OUStringToOString( aTypes.getConstArray()[i].MimeType, RTL_TEXTENCODING_ISO_8859_1 ).getStr() );
+			}
+		}
 #endif
 	}
 	return bSuccess;
@@ -801,7 +798,7 @@ void SelectionManager::convertTypeToNative( const OUString& rType, Atom selectio
 		sizeof(aNativeConversionTab)/sizeof(aNativeConversionTab[0]);
 
 	OString aType( OUStringToOString( rType, RTL_TEXTENCODING_ISO_8859_1 ) );
-    rFormat = 0;
+	rFormat = 0;
 	for( int i = 0; i < nTabEntries; i++ )
 	{
 		if( aType.equalsIgnoreAsciiCase( pTab[i].pType ) )
@@ -828,43 +825,43 @@ void SelectionManager::convertTypeToNative( const OUString& rType, Atom selectio
             }
 		}
 	}
-    if( ! rFormat )
-        rFormat = 8; // byte buffer
-    if( bPushFront )
-        rConversions.push_front( getAtom( rType ) );
-    else
-        rConversions.push_back( getAtom( rType ) );
+	if( ! rFormat )
+		rFormat = 8; // byte buffer
+	if( bPushFront )
+		rConversions.push_front( getAtom( rType ) );
+	else
+		rConversions.push_back( getAtom( rType ) );
 };
 
 // ------------------------------------------------------------------------
 
 void SelectionManager::getNativeTypeList( const Sequence< DataFlavor >& rTypes, std::list< Atom >& rOutTypeList, Atom targetselection )
 {
-    rOutTypeList.clear();
+	rOutTypeList.clear();
 
-    int nFormat;
-    int nFlavors = rTypes.getLength();
-    const DataFlavor* pFlavors = rTypes.getConstArray();
-    bool bHaveText = false;
-    for( int i = 0; i < nFlavors; i++ )
-    {
-        if( pFlavors[i].MimeType.compareToAscii( "text/plain", 10 ) == 0)
-            bHaveText = true;
-        else
-            convertTypeToNative( pFlavors[i].MimeType, targetselection, nFormat, rOutTypeList );
-    }
-    if( bHaveText )
-    {
-        if( targetselection != m_nXdndSelection )
-        {
-            // only mimetypes should go into Xdnd type list
-            rOutTypeList.push_front( XA_STRING );
-            rOutTypeList.push_front( m_nCOMPOUNDAtom );
-        }
-        convertTypeToNative( OUString::createFromAscii( "text/plain;charset=utf-8" ), targetselection, nFormat, rOutTypeList, true );
-    }
-    if( targetselection != m_nXdndSelection )
-        rOutTypeList.push_back( m_nMULTIPLEAtom );
+	int nFormat;
+	int nFlavors = rTypes.getLength();
+	const DataFlavor* pFlavors = rTypes.getConstArray();
+	bool bHaveText = false;
+	for( int i = 0; i < nFlavors; i++ )
+	{
+		if( pFlavors[i].MimeType.compareToAscii( "text/plain", 10 ) == 0)
+			bHaveText = true;
+		else
+			convertTypeToNative( pFlavors[i].MimeType, targetselection, nFormat, rOutTypeList );
+	}
+	if( bHaveText )
+	{
+		if( targetselection != m_nXdndSelection )
+		{
+			// only mimetypes should go into Xdnd type list
+			rOutTypeList.push_front( XA_STRING );
+			rOutTypeList.push_front( m_nCOMPOUNDAtom );
+		}
+		convertTypeToNative( OUString::createFromAscii( "text/plain;charset=utf-8" ), targetselection, nFormat, rOutTypeList, true );
+	}
+	if( targetselection != m_nXdndSelection )
+		rOutTypeList.push_back( m_nMULTIPLEAtom );
 }
 
 // ------------------------------------------------------------------------
@@ -881,12 +878,12 @@ OUString SelectionManager::convertTypeFromNative( Atom nType, Atom selection, in
 		if( ! pTab[i].nAtom )
 			pTab[i].nAtom = getAtom( OStringToOUString( pTab[i].pNativeType, RTL_TEXTENCODING_ISO_8859_1 ) );
 		if( nType == pTab[i].nAtom )
-        {
-            rFormat = pTab[i].nFormat;
+		{
+			rFormat = pTab[i].nFormat;
 			return OStringToOUString( pTab[i].pType, RTL_TEXTENCODING_ISO_8859_1 );
-        }
+		}
 	}
-    rFormat = 8;
+	rFormat = 8;
 	return getString( nType );
 }
 
@@ -894,67 +891,67 @@ OUString SelectionManager::convertTypeFromNative( Atom nType, Atom selection, in
 
 bool SelectionManager::getPasteData( Atom selection, Atom type, Sequence< sal_Int8 >& rData )
 {
-    ResettableMutexGuard aGuard(m_aMutex);
+	ResettableMutexGuard aGuard(m_aMutex);
 	::std::hash_map< Atom, Selection* >::iterator it;
 	bool bSuccess = false;
 
 #if OSL_DEBUG_LEVEL > 1
-    OUString aSelection( getString( selection ) );
-    OUString aType( getString( type ) );
-    fprintf( stderr, "getPasteData( %s, native: %s )\n",
+	OUString aSelection( getString( selection ) );
+	OUString aType( getString( type ) );
+	fprintf( stderr, "getPasteData( %s, native: %s )\n",
              OUStringToOString( aSelection, RTL_TEXTENCODING_ISO_8859_1 ).getStr(),
              OUStringToOString( aType, RTL_TEXTENCODING_ISO_8859_1 ).getStr()
              );
 #endif
 
-    if( ! m_pDisplay )
-        return false;
+	if( ! m_pDisplay )
+		return false;
 
-    it = m_aSelections.find( selection );
-    if( it == m_aSelections.end() )
-        return false;
+	it = m_aSelections.find( selection );
+	if( it == m_aSelections.end() )
+		return false;
 
-    XLIB_Window aSelectionOwner = XGetSelectionOwner( m_pDisplay, selection );
-    if( aSelectionOwner == None )
-        return false;
-    if( aSelectionOwner == m_aWindow )
-    {
-        // probably bad timing led us here
+	XLIB_Window aSelectionOwner = XGetSelectionOwner( m_pDisplay, selection );
+	if( aSelectionOwner == None )
+		return false;
+	if( aSelectionOwner == m_aWindow )
+	{
+		// probably bad timing led us here
 #if OSL_DEBUG_LEVEL > 1
-        fprintf( stderr, "Innere Nabelschau\n" );
+		fprintf( stderr, "Innere Nabelschau\n" );
 #endif
-        return false;
-    }
+		return false;
+	}
 
-    // ICCCM recommends to destroy property before convert request unless
-    // parameters are transported; we do only in case of MULTIPLE,
-    // so destroy property unless target is MULTIPLE
-    if( type != m_nMULTIPLEAtom )
-        XDeleteProperty( m_pDisplay, m_aWindow, selection );
+	// ICCCM recommends to destroy property before convert request unless
+	// parameters are transported; we do only in case of MULTIPLE,
+	// so destroy property unless target is MULTIPLE
+	if( type != m_nMULTIPLEAtom )
+		XDeleteProperty( m_pDisplay, m_aWindow, selection );
 
-    XConvertSelection( m_pDisplay, selection, type, selection, m_aWindow, selection == m_nXdndSelection ? m_nDropTime : CurrentTime );
-    it->second->m_eState			= Selection::WaitingForResponse;
-    it->second->m_aRequestedType	= type;
-    it->second->m_aData				= Sequence< sal_Int8 >();
-    it->second->m_aDataArrived.reset();
-    // really start the request; if we don't flush the
-    // queue the request won't leave it because there are no more
-    // X calls after this until the data arrived or timeout
-    XFlush( m_pDisplay );
+	XConvertSelection( m_pDisplay, selection, type, selection, m_aWindow, selection == m_nXdndSelection ? m_nDropTime : CurrentTime );
+	it->second->m_eState			= Selection::WaitingForResponse;
+	it->second->m_aRequestedType	= type;
+	it->second->m_aData				= Sequence< sal_Int8 >();
+	it->second->m_aDataArrived.reset();
+	// really start the request; if we don't flush the
+	// queue the request won't leave it because there are no more
+	// X calls after this until the data arrived or timeout
+	XFlush( m_pDisplay );
 
 	// do a reschedule
-    struct timeval tv_last, tv_current;
-    gettimeofday( &tv_last, NULL );
-    tv_current = tv_last;
+	struct timeval tv_last, tv_current;
+	gettimeofday( &tv_last, NULL );
+	tv_current = tv_last;
 
-    XEvent aEvent;
+	XEvent aEvent;
 	do
 	{
-        bool bAdjustTime = false;
-        {
-            bool bHandle = false;
+		bool bAdjustTime = false;
+		{
+			bool bHandle = false;
 
-            if( XCheckTypedEvent( m_pDisplay,
+			if( XCheckTypedEvent( m_pDisplay,
                                   PropertyNotify,
                                   &aEvent
                                   ) )
@@ -1013,8 +1010,8 @@ bool SelectionManager::getPasteData( Atom selection, Atom type, Sequence< sal_In
 	} while( ! it->second->m_aDataArrived.check() && (tv_current.tv_sec - tv_last.tv_sec) < getSelectionTimeout() );
 
 #if OSL_DEBUG_LEVEL > 1
-    if( (tv_current.tv_sec - tv_last.tv_sec) > getSelectionTimeout() )
-        fprintf( stderr, "timed out\n" );
+	if( (tv_current.tv_sec - tv_last.tv_sec) > getSelectionTimeout() )
+		fprintf( stderr, "timed out\n" );
 #endif
 	if( it->second->m_aDataArrived.check() &&
 		it->second->m_aData.getLength() )
@@ -1023,8 +1020,8 @@ bool SelectionManager::getPasteData( Atom selection, Atom type, Sequence< sal_In
 		bSuccess = true;
 	}
 #if OSL_DEBUG_LEVEL > 1
-    else
-        fprintf( stderr, "conversion unsuccessful\n" );
+	else
+		fprintf( stderr, "conversion unsuccessful\n" );
 #endif
 	return bSuccess;
 }
@@ -1036,34 +1033,34 @@ bool SelectionManager::getPasteData( Atom selection, const ::rtl::OUString& rTyp
 	int nFormat;
 	bool bSuccess = false;
 
-    ::std::hash_map< Atom, Selection* >::iterator it;
-    {
-        MutexGuard aGuard(m_aMutex);
+	::std::hash_map< Atom, Selection* >::iterator it;
+	{
+		MutexGuard aGuard(m_aMutex);
 
-        it = m_aSelections.find( selection );
-        if( it == m_aSelections.end() )
-            return false;
-    }
+		it = m_aSelections.find( selection );
+		if( it == m_aSelections.end() )
+			return false;
+	}
 
-    if( it->second->m_aTypes.getLength() == 0 )
-    {
-        Sequence< DataFlavor > aFlavors;
-        getPasteDataTypes( selection, aFlavors );
-        if( it->second->m_aTypes.getLength() == 0 )
-            return false;
-    }
+	if( it->second->m_aTypes.getLength() == 0 )
+	{
+		Sequence< DataFlavor > aFlavors;
+		getPasteDataTypes( selection, aFlavors );
+		if( it->second->m_aTypes.getLength() == 0 )
+			return false;
+	}
 
-    const Sequence< DataFlavor >& rTypes( it->second->m_aTypes );
-    const std::vector< Atom >& rNativeTypes( it->second->m_aNativeTypes );
+	const Sequence< DataFlavor >& rTypes( it->second->m_aTypes );
+	const std::vector< Atom >& rNativeTypes( it->second->m_aNativeTypes );
 #if OSL_DEBUG_LEVEL > 1
-    fprintf( stderr, "getPasteData( \"%s\", \"%s\" )\n",
+	fprintf( stderr, "getPasteData( \"%s\", \"%s\" )\n",
              OUStringToOString( getString( selection ), RTL_TEXTENCODING_ISO_8859_1 ).getStr(),
              OUStringToOString( rType, RTL_TEXTENCODING_ISO_8859_1 ).getStr() );
 #endif
 
 	if( rType.equalsAsciiL( "text/plain;charset=utf-16", 25 ) )
 	{
-		// lets see if we have UTF16 else try to find something convertible
+		// let's see if we have UTF16 else try to find something convertible
 		if( it->second->m_aTypes.getLength() && ! it->second->m_bHaveUTF16 )
 		{
 			Sequence< sal_Int8 > aData;
@@ -1212,24 +1209,24 @@ bool SelectionManager::getPasteData( Atom selection, const ::rtl::OUString& rTyp
                     bSuccess = true;
                 }
             }
-        }
-    }
+		}
+	}
 
 	if( ! bSuccess )
-    {
-        ::std::list< Atom > aTypes;
-        convertTypeToNative( rType, selection, nFormat, aTypes );
-        ::std::list< Atom >::const_iterator type_it;
-        Atom nSelectedType = None;
-        for( type_it = aTypes.begin(); type_it != aTypes.end() && nSelectedType == None; ++type_it )
-        {
-            for( unsigned int i = 0; i < rNativeTypes.size() && nSelectedType == None; i++ )
-                if( rNativeTypes[i] == *type_it )
-                    nSelectedType = *type_it;
-        }
-        if( nSelectedType != None )
-            bSuccess = getPasteData( selection, nSelectedType, rData );
-    }
+	{
+		::std::list< Atom > aTypes;
+		convertTypeToNative( rType, selection, nFormat, aTypes );
+		::std::list< Atom >::const_iterator type_it;
+		Atom nSelectedType = None;
+		for( type_it = aTypes.begin(); type_it != aTypes.end() && nSelectedType == None; ++type_it )
+		{
+			for( unsigned int i = 0; i < rNativeTypes.size() && nSelectedType == None; i++ )
+				if( rNativeTypes[i] == *type_it )
+					nSelectedType = *type_it;
+		}
+		if( nSelectedType != None )
+			bSuccess = getPasteData( selection, nSelectedType, rData );
+	}
 #if OSL_DEBUG_LEVEL > 1
 	fprintf( stderr, "getPasteData for selection %s and data type %s returns %s, returned sequence has length %ld\n",
 			 OUStringToOString( getString( selection ), RTL_TEXTENCODING_ISO_8859_1 ).getStr(),
@@ -1263,7 +1260,7 @@ bool SelectionManager::getPasteDataTypes( Atom selection, Sequence< DataFlavor >
 	bool bSuccess = false;
 	bool bHaveUTF16 = false;
 	Atom aUTF8Type = None;
-    bool bHaveCompound = false;
+	bool bHaveCompound = false;
 	bool bHaveText = false;
 	Sequence< sal_Int8 > aAtoms;
 
@@ -1376,21 +1373,21 @@ bool SelectionManager::getPasteDataTypes( Atom selection, Sequence< DataFlavor >
 					}
 					else if( aToken.compareToAscii( "charset=utf-8" ) == 0 )
 					{
-					    aUTF8Type = *pAtoms;
+						aUTF8Type = *pAtoms;
 					}
 				}
-                pFlavors++;
-                aNativeTypes[ nNativeTypesIndex ] = *pAtoms;
-                nNativeTypesIndex++;
+				pFlavors++;
+				aNativeTypes[ nNativeTypesIndex ] = *pAtoms;
+				nNativeTypesIndex++;
 			}
 			pAtoms++;
 		}
-        if( (pFlavors - rTypes.getArray()) < rTypes.getLength() )
-            rTypes.realloc(pFlavors - rTypes.getArray());
+		if( (pFlavors - rTypes.getArray()) < rTypes.getLength() )
+			rTypes.realloc(pFlavors - rTypes.getArray());
 		bSuccess = rTypes.getLength() ? true : false;
 		if( bHaveText && ! bHaveUTF16 )
 		{
-               int i = 0;
+			int i = 0;
 
 			int nNewFlavors = rTypes.getLength()+1;
 			Sequence< DataFlavor > aTemp( nNewFlavors );
@@ -1417,11 +1414,11 @@ bool SelectionManager::getPasteDataTypes( Atom selection, Sequence< DataFlavor >
 			if( bSuccess )
 			{
 				it->second->m_aTypes			= rTypes;
-                it->second->m_aNativeTypes		= aNativeTypes;
+				it->second->m_aNativeTypes		= aNativeTypes;
 				it->second->m_nLastTimestamp	= time( NULL );
 				it->second->m_bHaveUTF16		= bHaveUTF16;
-				it->second->m_aUTF8Type         = aUTF8Type;
-                it->second->m_bHaveCompound		= bHaveCompound;
+				it->second->m_aUTF8Type			= aUTF8Type;
+				it->second->m_bHaveCompound		= bHaveCompound;
 			}
 			else
 			{
@@ -1429,19 +1426,19 @@ bool SelectionManager::getPasteDataTypes( Atom selection, Sequence< DataFlavor >
 				it->second->m_aNativeTypes		= std::vector< Atom >();
 				it->second->m_nLastTimestamp	= 0;
 				it->second->m_bHaveUTF16		= false;
-				it->second->m_aUTF8Type         = None;
-                it->second->m_bHaveCompound		= false;
+				it->second->m_aUTF8Type			= None;
+				it->second->m_bHaveCompound		= false;
 			}
 		}
 	}
 
 #if OSL_DEBUG_LEVEL > 1
-//    if( selection != m_nCLIPBOARDAtom )
-    {
-        fprintf( stderr, "SelectionManager::getPasteDataTypes( %s ) = %s\n", OUStringToOString( getString( selection ), RTL_TEXTENCODING_ISO_8859_1 ).getStr(), bSuccess ? "true" : "false" );
-        for( int i = 0; i < rTypes.getLength(); i++ )
-            fprintf( stderr, "type: %s\n", OUStringToOString( rTypes.getConstArray()[i].MimeType, RTL_TEXTENCODING_ISO_8859_1 ).getStr() );
-    }
+//	if( selection != m_nCLIPBOARDAtom )
+	{
+		fprintf( stderr, "SelectionManager::getPasteDataTypes( %s ) = %s\n", OUStringToOString( getString( selection ), RTL_TEXTENCODING_ISO_8859_1 ).getStr(), bSuccess ? "true" : "false" );
+		for( int i = 0; i < rTypes.getLength(); i++ )
+			fprintf( stderr, "type: %s\n", OUStringToOString( rTypes.getConstArray()[i].MimeType, RTL_TEXTENCODING_ISO_8859_1 ).getStr() );
+	}
 #endif
 
 	return bSuccess;
@@ -1451,12 +1448,12 @@ bool SelectionManager::getPasteDataTypes( Atom selection, Sequence< DataFlavor >
 
 PixmapHolder* SelectionManager::getPixmapHolder( Atom selection )
 {
-    std::hash_map< Atom, Selection* >::const_iterator it = m_aSelections.find( selection );
-    if( it == m_aSelections.end() )
-        return NULL;
-    if( ! it->second->m_pPixmap )
-        it->second->m_pPixmap = new PixmapHolder( m_pDisplay );
-    return it->second->m_pPixmap;
+	std::hash_map< Atom, Selection* >::const_iterator it = m_aSelections.find( selection );
+	if( it == m_aSelections.end() )
+		return NULL;
+	if( ! it->second->m_pPixmap )
+		it->second->m_pPixmap = new PixmapHolder( m_pDisplay );
+	return it->second->m_pPixmap;
 }
 
 static sal_Size GetTrueFormatSize(int nFormat)
@@ -1471,22 +1468,22 @@ bool SelectionManager::sendData( SelectionAdaptor* pAdaptor,
                                  Atom property,
                                  Atom selection )
 {
-    ResettableMutexGuard aGuard( m_aMutex );
+	ResettableMutexGuard aGuard( m_aMutex );
 
-    // handle targets related to image/bmp
-    if( target == XA_COLORMAP || target == XA_PIXMAP || target == XA_BITMAP || target == XA_VISUALID )
-    {
-        PixmapHolder* pPixmap = getPixmapHolder( selection );
-        if( ! pPixmap ) return false;
-        XID nValue = None;
+	// handle targets related to image/bmp
+	if( target == XA_COLORMAP || target == XA_PIXMAP || target == XA_BITMAP || target == XA_VISUALID )
+	{
+		PixmapHolder* pPixmap = getPixmapHolder( selection );
+		if( ! pPixmap ) return false;
+		XID nValue = None;
 
-        // handle colormap request
-        if( target == XA_COLORMAP )
-            nValue = (XID)pPixmap->getColormap();
-        else if( target == XA_VISUALID )
-            nValue = (XID)pPixmap->getVisualID();
-        else if( target == XA_PIXMAP || target == XA_BITMAP )
-        {
+		// handle colormap request
+		if( target == XA_COLORMAP )
+			nValue = (XID)pPixmap->getColormap();
+		else if( target == XA_VISUALID )
+			nValue = (XID)pPixmap->getVisualID();
+		else if( target == XA_PIXMAP || target == XA_BITMAP )
+		{
             nValue = (XID)pPixmap->getPixmap();
             if( nValue == None )
             {
@@ -1498,7 +1495,7 @@ bool SelectionManager::sendData( SelectionAdaptor* pAdaptor,
                 aGuard.reset();
                 if( bConverted )
                 {
-				    // get pixmap again since clearing the guard could have invalidated
+					// get pixmap again since clearing the guard could have invalidated
 					// the pixmap in another thread
         			pPixmap = getPixmapHolder( selection );
                     // conversion succeeded, so aData contains image/bmp now
@@ -1530,9 +1527,9 @@ bool SelectionManager::sendData( SelectionAdaptor* pAdaptor,
                         }
                         aGuard.reset();
                     }
-				    // get pixmap again since clearing the guard could have invalidated
+					// get pixmap again since clearing the guard could have invalidated
 					// the pixmap in another thread
-        			pPixmap = getPixmapHolder( selection );
+					pPixmap = getPixmapHolder( selection );
                     nValue = (XID)pPixmap->setBitmapData( (const sal_uInt8*)aData.getConstArray() );
                 }
                 if( nValue == None )
@@ -1540,9 +1537,9 @@ bool SelectionManager::sendData( SelectionAdaptor* pAdaptor,
             }
             if( target == XA_BITMAP )
                 nValue = (XID)pPixmap->getBitmap();
-        }
+		}
 
-        XChangeProperty( m_pDisplay,
+		XChangeProperty( m_pDisplay,
                          requestor,
                          property,
                          target,
@@ -1553,24 +1550,24 @@ bool SelectionManager::sendData( SelectionAdaptor* pAdaptor,
         return true;
     }
 
-    /*
-     *  special target TEXT allows us to transfer
-     *  the data in an encoding of our choice
-     *  COMPOUND_TEXT will work with most applications
-     */
-    if( target == m_nTEXTAtom )
-        target = m_nCOMPOUNDAtom;
+	/*
+	 * special target TEXT allows us to transfer
+	 * the data in an encoding of our choice
+	 * COMPOUND_TEXT will work with most applications
+	 */
+	if( target == m_nTEXTAtom )
+		target = m_nCOMPOUNDAtom;
 
-    Sequence< sal_Int8 > aData;
-    int nFormat;
-    aGuard.clear();
-    bool bConverted = convertData( pAdaptor->getTransferable(), target, selection, nFormat, aData );
-    aGuard.reset();
-    if( bConverted )
-    {
-        // conversion succeeded
-        if( aData.getLength() > m_nIncrementalThreshold )
-        {
+	Sequence< sal_Int8 > aData;
+	int nFormat;
+	aGuard.clear();
+	bool bConverted = convertData( pAdaptor->getTransferable(), target, selection, nFormat, aData );
+	aGuard.reset();
+	if( bConverted )
+	{
+		// conversion succeeded
+		if( aData.getLength() > m_nIncrementalThreshold )
+		{
 #if OSL_DEBUG_LEVEL > 1
             fprintf( stderr, "using INCR protocol\n" );
             std::hash_map< XLIB_Window, std::hash_map< Atom, IncrementalTransfer > >::const_iterator win_it = m_aIncrementals.find( requestor );
@@ -1603,7 +1600,7 @@ bool SelectionManager::sendData( SelectionAdaptor* pAdaptor,
             long nMinSize = m_nIncrementalThreshold;
             XSelectInput( m_pDisplay, requestor, PropertyChangeMask );
             XChangeProperty( m_pDisplay, requestor, property,
-                             m_nINCRAtom, 32,  PropModeReplace, (unsigned char*)&nMinSize, 1 );
+                             m_nINCRAtom, 32, PropModeReplace, (unsigned char*)&nMinSize, 1 );
             XFlush( m_pDisplay );
         }
         else
@@ -1618,20 +1615,20 @@ bool SelectionManager::sendData( SelectionAdaptor* pAdaptor,
                              (const unsigned char*)aData.getConstArray(),
                              aData.getLength()/nUnitSize );
             }
-    }
+	}
 #if OSL_DEBUG_LEVEL > 1
-    else
-        fprintf( stderr, "convertData failed for type: %s \n",
+	else
+		fprintf( stderr, "convertData failed for type: %s \n",
                  OUStringToOString( convertTypeFromNative( target, selection, nFormat ), RTL_TEXTENCODING_ISO_8859_1 ).getStr() );
 #endif
-    return bConverted;
+	return bConverted;
 }
 
 // ------------------------------------------------------------------------
 
 bool SelectionManager::handleSelectionRequest( XSelectionRequestEvent& rRequest )
 {
-    ResettableMutexGuard aGuard( m_aMutex );
+	ResettableMutexGuard aGuard( m_aMutex );
 #if OSL_DEBUG_LEVEL > 1
 	fprintf( stderr, "handleSelectionRequest for selection %s and target %s\n",
 			 OUStringToOString( getString( rRequest.selection ), RTL_TEXTENCODING_ISO_8859_1 ).getStr(),
@@ -1655,22 +1652,22 @@ bool SelectionManager::handleSelectionRequest( XSelectionRequestEvent& rRequest 
 	if( pAdaptor &&
 		XGetSelectionOwner( m_pDisplay, rRequest.selection ) == m_aWindow )
 	{
-        css::uno::Reference< XTransferable > xTrans( pAdaptor->getTransferable() );
+		css::uno::Reference< XTransferable > xTrans( pAdaptor->getTransferable() );
 		if( rRequest.target == m_nTARGETSAtom )
 		{
 			// someone requests our types
 			if( xTrans.is() )
 			{
-                aGuard.clear();
+				aGuard.clear();
 				Sequence< DataFlavor > aFlavors = xTrans->getTransferDataFlavors();
-                aGuard.reset();
+				aGuard.reset();
 
-                ::std::list< Atom > aConversions;
-                getNativeTypeList( aFlavors, aConversions, rRequest.selection );
+				::std::list< Atom > aConversions;
+				getNativeTypeList( aFlavors, aConversions, rRequest.selection );
 
-                int i, nTypes = aConversions.size();
+				int i, nTypes = aConversions.size();
 				Atom* pTypes = (Atom*)alloca( nTypes * sizeof( Atom ) );
-                std::list< Atom >::const_iterator it;
+				std::list< Atom >::const_iterator it;
 				for( i = 0, it = aConversions.begin(); i < nTypes; i++, ++it )
 					pTypes[i] = *it;
 				XChangeProperty( m_pDisplay, rRequest.requestor, rRequest.property,
@@ -1683,8 +1680,8 @@ bool SelectionManager::handleSelectionRequest( XSelectionRequestEvent& rRequest 
 #endif
 			}
 		}
-        else if( rRequest.target == m_nTIMESTAMPAtom )
-        {
+		else if( rRequest.target == m_nTIMESTAMPAtom )
+		{
             long nTimeStamp = (long)m_aSelections[rRequest.selection]->m_nOrigTimestamp;
             XChangeProperty( m_pDisplay, rRequest.requestor, rRequest.property,
                              XA_INTEGER, 32, PropModeReplace, (const unsigned char*)&nTimeStamp, 1 );
@@ -1692,12 +1689,12 @@ bool SelectionManager::handleSelectionRequest( XSelectionRequestEvent& rRequest 
 #if OSL_DEBUG_LEVEL > 1
                 fprintf( stderr, "sending timestamp: %d\n", (int)nTimeStamp );
 #endif
-        }
+		}
 		else
 		{
-            bool bEventSuccess = false;
-            if( rRequest.target == m_nMULTIPLEAtom )
-            {
+			bool bEventSuccess = false;
+			if( rRequest.target == m_nMULTIPLEAtom )
+			{
                 // get all targets
                 Atom nType = None;
                 int nFormat = 0;
@@ -1800,9 +1797,9 @@ bool SelectionManager::handleSelectionRequest( XSelectionRequestEvent& rRequest 
                 aNotify.xselection.property = rRequest.property;
             }
 		}
-        aGuard.clear();
-        xTrans.clear();
-        aGuard.reset();
+		aGuard.clear();
+		xTrans.clear();
+		aGuard.reset();
 	}
 	XSendEvent( m_pDisplay, rRequest.requestor, False, 0, &aNotify );
 
@@ -1824,28 +1821,28 @@ bool SelectionManager::handleSelectionRequest( XSelectionRequestEvent& rRequest 
 			dsde.DropAction			= DNDConstants::ACTION_NONE;
 			dsde.DropSuccess		= sal_False;
 		}
-        css::uno::Reference< XDragSourceListener > xListener( m_xDragSourceListener );
+		css::uno::Reference< XDragSourceListener > xListener( m_xDragSourceListener );
 		m_xDragSourceListener.clear();
-        aGuard.clear();
-        if( xListener.is() )
-            xListener->dragDropEnd( dsde );
+		aGuard.clear();
+		if( xListener.is() )
+			xListener->dragDropEnd( dsde );
 	}
 
-    // we handled the event in any case by answering
-    return true;
+	// we handled the event in any case by answering
+	return true;
 }
 
 // ------------------------------------------------------------------------
 
 bool SelectionManager::handleReceivePropertyNotify( XPropertyEvent& rNotify )
 {
-    MutexGuard aGuard( m_aMutex );
+	MutexGuard aGuard( m_aMutex );
 	// data we requested arrived
 #if OSL_DEBUG_LEVEL > 1
 	fprintf( stderr, "handleReceivePropertyNotify for property %s\n",
 			 OUStringToOString( getString( rNotify.atom ), RTL_TEXTENCODING_ISO_8859_1 ).getStr() );
 #endif
-    bool bHandled = false;
+	bool bHandled = false;
 
 	::std::hash_map< Atom, Selection* >::iterator it =
 		  m_aSelections.find( rNotify.atom );
@@ -1857,13 +1854,13 @@ bool SelectionManager::handleReceivePropertyNotify( XPropertyEvent& rNotify )
 		  )
 		)
 	{
-        // MULTIPLE requests are only complete after selection notify
-        if( it->second->m_aRequestedType == m_nMULTIPLEAtom &&
-            ( it->second->m_eState == Selection::WaitingForResponse ||
-              it->second->m_eState == Selection::WaitingForData ) )
-            return false;
+		// MULTIPLE requests are only complete after selection notify
+		if( it->second->m_aRequestedType == m_nMULTIPLEAtom &&
+			( it->second->m_eState == Selection::WaitingForResponse ||
+			  it->second->m_eState == Selection::WaitingForData ) )
+			return false;
 
-        bHandled = true;
+		bHandled = true;
 
 		Atom nType = None;
 		int nFormat = 0;
@@ -1951,16 +1948,16 @@ bool SelectionManager::handleReceivePropertyNotify( XPropertyEvent& rNotify )
 			it->second->m_aDataArrived.set();
 		}
 	}
-    return bHandled;
+	return bHandled;
 }
 
 // ------------------------------------------------------------------------
 
 bool SelectionManager::handleSendPropertyNotify( XPropertyEvent& rNotify )
 {
-    MutexGuard aGuard( m_aMutex );
+	MutexGuard aGuard( m_aMutex );
 
-	// ready for next part of a IncrementalTransfer
+	// ready for next part of an IncrementalTransfer
 #if OSL_DEBUG_LEVEL > 1
 	fprintf( stderr, "handleSendPropertyNotify for property %s (%s)\n",
 			 OUStringToOString( getString( rNotify.atom ), RTL_TEXTENCODING_ISO_8859_1 ).getStr(),
@@ -1968,14 +1965,14 @@ bool SelectionManager::handleSendPropertyNotify( XPropertyEvent& rNotify )
              );
 #endif
 
-    bool bHandled = false;
-    // feed incrementals
-    if( rNotify.state == PropertyDelete )
-    {
-        std::hash_map< XLIB_Window, std::hash_map< Atom, IncrementalTransfer > >::iterator it;
-        it = m_aIncrementals.find( rNotify.window );
-        if( it != m_aIncrementals.end() )
-        {
+	bool bHandled = false;
+	// feed incrementals
+	if( rNotify.state == PropertyDelete )
+	{
+		std::hash_map< XLIB_Window, std::hash_map< Atom, IncrementalTransfer > >::iterator it;
+		it = m_aIncrementals.find( rNotify.window );
+		if( it != m_aIncrementals.end() )
+		{
             bHandled = true;
             int nCurrentTime = time( NULL );
             std::hash_map< Atom, IncrementalTransfer >::iterator inc_it;
@@ -1994,8 +1991,8 @@ bool SelectionManager::handleSendPropertyNotify( XPropertyEvent& rNotify )
                              OUStringToOString( getString( rInc.m_aTarget ), RTL_TEXTENCODING_ISO_8859_1 ).getStr()
                              );
 #endif
-                }
-            }
+				}
+			}
 
             while( aTimeouts.begin() != aTimeouts.end() )
             {
@@ -2049,54 +2046,54 @@ bool SelectionManager::handleSendPropertyNotify( XPropertyEvent& rNotify )
             // eventually clean up the hash map
             if( it->second.begin() == it->second.end() )
                 m_aIncrementals.erase( it );
-        }
-    }
-    return bHandled;
+		}
+	}
+	return bHandled;
 }
 
 // ------------------------------------------------------------------------
 
 bool SelectionManager::handleSelectionNotify( XSelectionEvent& rNotify )
 {
-    MutexGuard aGuard( m_aMutex );
+	MutexGuard aGuard( m_aMutex );
 
-    bool bHandled = false;
+	bool bHandled = false;
 
 	// notification about success/failure of one of our conversion requests
 #if OSL_DEBUG_LEVEL > 1
-    OUString aSelection( getString( rNotify.selection ) );
-    OUString aProperty( OUString::createFromAscii( "None" ) );
-    if( rNotify.property )
-        aProperty = getString( rNotify.property );
+	OUString aSelection( getString( rNotify.selection ) );
+	OUString aProperty( OUString::createFromAscii( "None" ) );
+	if( rNotify.property )
+		aProperty = getString( rNotify.property );
 	fprintf( stderr, "handleSelectionNotify for selection %s and property %s (0x%lx)\n",
 			 OUStringToOString( aSelection, RTL_TEXTENCODING_ISO_8859_1 ).getStr(),
 			 OUStringToOString( aProperty, RTL_TEXTENCODING_ISO_8859_1 ).getStr(),
-             rNotify.property
+			 rNotify.property
 			 );
-    if( rNotify.requestor != m_aWindow && rNotify.requestor != m_aCurrentDropWindow )
-        fprintf( stderr, "Warning: selection notify for unknown window 0x%lx\n", rNotify.requestor );
+	if( rNotify.requestor != m_aWindow && rNotify.requestor != m_aCurrentDropWindow )
+		fprintf( stderr, "Warning: selection notify for unknown window 0x%lx\n", rNotify.requestor );
 #endif
 	::std::hash_map< Atom, Selection* >::iterator it =
 		  m_aSelections.find( rNotify.selection );
-    if (
-        (rNotify.requestor == m_aWindow || rNotify.requestor == m_aCurrentDropWindow) &&
-        it != m_aSelections.end() &&
-        (
-         (it->second->m_eState == Selection::WaitingForResponse) ||
-         (it->second->m_eState == Selection::WaitingForData)
-        )
-       )
+	if (
+		(rNotify.requestor == m_aWindow || rNotify.requestor == m_aCurrentDropWindow) &&
+		it != m_aSelections.end() &&
+		(
+		(it->second->m_eState == Selection::WaitingForResponse) ||
+		(it->second->m_eState == Selection::WaitingForData)
+		)
+	   )
 	{
-        bHandled = true;
-        if( it->second->m_aRequestedType == m_nMULTIPLEAtom )
-        {
-            Atom nType = None;
-            int nFormat = 0;
-            unsigned long nItems = 0, nBytes = 0;
-            unsigned char* pData = NULL;
+		bHandled = true;
+		if( it->second->m_aRequestedType == m_nMULTIPLEAtom )
+		{
+			Atom nType = None;
+			int nFormat = 0;
+			unsigned long nItems = 0, nBytes = 0;
+			unsigned char* pData = NULL;
 
-            // get type and length
-            XGetWindowProperty( m_pDisplay,
+			// get type and length
+			XGetWindowProperty( m_pDisplay,
                                 rNotify.requestor,
                                 rNotify.property,
                                 0, 256,
@@ -2131,7 +2128,7 @@ bool SelectionManager::handleSelectionNotify( XSelectionEvent& rNotify )
         // a success and then cancel it. Weird !
 		else if( rNotify.property == None )
 		{
-            // conversion failed, stop transfer
+			// conversion failed, stop transfer
 			it->second->m_eState		= Selection::Inactive;
 			it->second->m_aData			= Sequence< sal_Int8 >();
 			it->second->m_aDataArrived.set();
@@ -2141,23 +2138,23 @@ bool SelectionManager::handleSelectionNotify( XSelectionEvent& rNotify )
 			it->second->m_eState = Selection::WaitingForData;
 	}
 #if OSL_DEBUG_LEVEL > 1
-    else if( it != m_aSelections.end() )
-        fprintf( stderr, "Warning: selection in state %d\n", it->second->m_eState );
+	else if( it != m_aSelections.end() )
+		fprintf( stderr, "Warning: selection in state %d\n", it->second->m_eState );
 #endif
-    return bHandled;
+	return bHandled;
 }
 
 // ------------------------------------------------------------------------
 
 bool SelectionManager::handleDropEvent( XClientMessageEvent& rMessage )
 {
-    ResettableMutexGuard aGuard(m_aMutex);
+	ResettableMutexGuard aGuard(m_aMutex);
 
 	// handle drop related events
 	XLIB_Window aSource = rMessage.data.l[0];
 	XLIB_Window aTarget = rMessage.window;
 
-    bool bHandled = false;
+	bool bHandled = false;
 
 	::std::hash_map< XLIB_Window, DropTargetEntry >::iterator it =
 		  m_aDropTargets.find( aTarget );
@@ -2180,9 +2177,9 @@ bool SelectionManager::handleDropEvent( XClientMessageEvent& rMessage )
 	}
 #endif
 
-    if( it != m_aDropTargets.end() && it->second.m_pTarget->m_bActive &&
-        m_bDropWaitingForCompletion && m_aDropEnterEvent.data.l[0] )
-    {
+	if( it != m_aDropTargets.end() && it->second.m_pTarget->m_bActive &&
+		m_bDropWaitingForCompletion && m_aDropEnterEvent.data.l[0] )
+	{
         bHandled = true;
         OSL_ENSURE( 0, "someone forgot to call dropComplete ?" );
         // some listener forgot to call dropComplete in the last operation
@@ -2190,16 +2187,16 @@ bool SelectionManager::handleDropEvent( XClientMessageEvent& rMessage )
         aGuard.clear();
         dropComplete( sal_False, m_aCurrentDropWindow, m_nDropTime );
         aGuard.reset();
-    }
+	}
 
 	if( it != m_aDropTargets.end() &&
 		it->second.m_pTarget->m_bActive &&
-       ( m_aDropEnterEvent.data.l[0] == None || XLIB_Window(m_aDropEnterEvent.data.l[0]) == aSource )
-		)
+		( m_aDropEnterEvent.data.l[0] == None || XLIB_Window(m_aDropEnterEvent.data.l[0]) == aSource )
+	  )
 	{
 		if( rMessage.message_type == m_nXdndEnter )
 		{
-            bHandled = true;
+			bHandled = true;
 			m_aDropEnterEvent			= rMessage;
 			m_bDropEnterSent			= false;
 			m_aCurrentDropWindow		= aTarget;
@@ -2209,11 +2206,11 @@ bool SelectionManager::handleDropEvent( XClientMessageEvent& rMessage )
 #endif
 		}
 		else if(
-                rMessage.message_type == m_nXdndPosition &&
-                aSource == XLIB_Window(m_aDropEnterEvent.data.l[0])
-                )
+				rMessage.message_type == m_nXdndPosition &&
+				aSource == XLIB_Window(m_aDropEnterEvent.data.l[0])
+				)
 		{
-            bHandled = true;
+			bHandled = true;
 			m_nDropTime = m_nCurrentProtocolVersion > 0 ? rMessage.data.l[3] : CurrentTime;
 			if( ! m_bDropEnterSent )
 				m_nDropTimestamp = m_nDropTime;
@@ -2235,7 +2232,7 @@ bool SelectionManager::handleDropEvent( XClientMessageEvent& rMessage )
 			aEvent.Context		= new DropTargetDragContext( m_aCurrentDropWindow, m_nDropTimestamp, *this );
 			aEvent.LocationX	= m_nLastX;
 			aEvent.LocationY	= m_nLastY;
-            aEvent.SourceActions = m_nSourceActions;
+			aEvent.SourceActions = m_nSourceActions;
 			if( m_nCurrentProtocolVersion < 2 )
 				aEvent.DropAction = DNDConstants::ACTION_COPY;
 			else if( Atom(rMessage.data.l[4]) == m_nXdndActionCopy )
@@ -2255,21 +2252,21 @@ bool SelectionManager::handleDropEvent( XClientMessageEvent& rMessage )
 			{
 				m_bDropEnterSent = true;
 				aEvent.SupportedDataFlavors = m_xDropTransferable->getTransferDataFlavors();
-                aGuard.clear();
+				aGuard.clear();
 				it->second->dragEnter( aEvent );
 			}
 			else
-            {
-                aGuard.clear();
+			{
+				aGuard.clear();
 				it->second->dragOver( aEvent );
-            }
+			}
 		}
 		else if(
-                rMessage.message_type == m_nXdndLeave  &&
-                aSource == XLIB_Window(m_aDropEnterEvent.data.l[0])
-                )
+				rMessage.message_type == m_nXdndLeave  &&
+				aSource == XLIB_Window(m_aDropEnterEvent.data.l[0])
+				)
 		{
-            bHandled = true;
+			bHandled = true;
 #if OSL_DEBUG_LEVEL > 1
 			fprintf( stderr, "received XdndLeave on 0x%lx\n", aTarget );
 #endif
@@ -2279,7 +2276,7 @@ bool SelectionManager::handleDropEvent( XClientMessageEvent& rMessage )
 			if( m_aCurrentDropWindow == aTarget )
 				m_aCurrentDropWindow = None;
 			m_nCurrentProtocolVersion = nXdndProtocolRevision;
-            aGuard.clear();
+			aGuard.clear();
 			it->second->dragExit( aEvent );
 		}
 		else if(
@@ -2287,7 +2284,7 @@ bool SelectionManager::handleDropEvent( XClientMessageEvent& rMessage )
                 aSource == XLIB_Window(m_aDropEnterEvent.data.l[0])
                 )
 		{
-            bHandled = true;
+			bHandled = true;
 			m_nDropTime = m_nCurrentProtocolVersion > 0 ? rMessage.data.l[2] : CurrentTime;
 
 #if OSL_DEBUG_LEVEL > 1
@@ -2324,7 +2321,7 @@ bool SelectionManager::handleDropEvent( XClientMessageEvent& rMessage )
             }
         }
 	}
-    return bHandled;
+	return bHandled;
 }
 
 /*
@@ -2387,7 +2384,7 @@ void SelectionManager::dropComplete( sal_Bool bSuccess, XLIB_Window aDropWindow,
 			m_aCurrentDropWindow		= None;
 			m_nCurrentProtocolVersion	= nXdndProtocolRevision;
 		}
-        m_bDropWaitingForCompletion = false;
+		m_bDropWaitingForCompletion = false;
 	}
 	else
 		OSL_ASSERT( "dropComplete from invalid DropTargetDropContext" );
@@ -2414,13 +2411,13 @@ void SelectionManager::sendDragStatus( Atom nDropAction )
 			nNewDragAction = DNDConstants::ACTION_LINK;
 		else
 			nNewDragAction = DNDConstants::ACTION_NONE;
-        nNewDragAction &= m_nSourceActions;
+		nNewDragAction &= m_nSourceActions;
 
-        if( nNewDragAction != m_nTargetAcceptAction )
-        {
-            setCursor( getDefaultCursor( nNewDragAction ), m_aDropWindow, m_nDragTimestamp );
-            m_nTargetAcceptAction = nNewDragAction;
-        }
+		if( nNewDragAction != m_nTargetAcceptAction )
+		{
+			setCursor( getDefaultCursor( nNewDragAction ), m_aDropWindow, m_nDragTimestamp );
+			m_nTargetAcceptAction = nNewDragAction;
+		}
 
 		DragSourceDragEvent dsde;
 		dsde.Source				= static_cast< OWeakObject* >(this);
@@ -2429,11 +2426,11 @@ void SelectionManager::sendDragStatus( Atom nDropAction )
 		dsde.DropAction			= m_nSourceActions;
 		dsde.UserAction			= getUserDragAction();
 
-        css::uno::Reference< XDragSourceListener > xListener( m_xDragSourceListener );
-        // caution: do not change anything after this
-        aGuard.clear();
-        if( xListener.is() )
-            xListener->dragOver( dsde );
+		css::uno::Reference< XDragSourceListener > xListener( m_xDragSourceListener );
+		// caution: do not change anything after this
+		aGuard.clear();
+		if( xListener.is() )
+			xListener->dragOver( dsde );
 	}
 	else if( m_aDropEnterEvent.data.l[0] && m_aCurrentDropWindow )
 	{
@@ -2470,7 +2467,7 @@ void SelectionManager::sendDragStatus( Atom nDropAction )
 
 sal_Int8 SelectionManager::getUserDragAction() const
 {
-    return (m_nTargetAcceptAction != DNDConstants::ACTION_DEFAULT) ? m_nTargetAcceptAction : m_nUserDragAction;
+	return (m_nTargetAcceptAction != DNDConstants::ACTION_DEFAULT) ? m_nTargetAcceptAction : m_nUserDragAction;
 }
 
 // ------------------------------------------------------------------------
@@ -3092,7 +3089,6 @@ void SelectionManager::updateDragWindow( int nX, int nY, XLIB_Window aRoot )
 		}
 	}
 
-
 	DragSourceDragEvent dsde;
 	dsde.Source				= static_cast< OWeakObject* >(this);
 	dsde.DragSourceContext	= new DragSourceContext( m_aDropWindow, m_nDragTimestamp, *this );
@@ -3301,7 +3297,6 @@ void SelectionManager::startDrag(
             aParent = aChild;
         } while( aChild != None );
 
-
 #if OSL_DEBUG_LEVEL > 1
 		fprintf( stderr, "try to grab pointer ... " );
 #endif
@@ -3314,10 +3309,10 @@ void SelectionManager::startDrag(
 						  CurrentTime );
         /* if we could not grab the pointer here, there is a chance
            that the pointer is grabbed by the other vcl display (the main loop)
-           so let's break that grab an reset it later
+           so let's break that grab and reset it later
 
            remark: this whole code should really be molten into normal vcl so only
-           one display is used ....
+           one display is used...
         */
         if( nPointerGrabSuccess != GrabSuccess )
         {
@@ -3841,7 +3836,7 @@ void SelectionManager::shutdown() throw()
          *
          * Otherwise the thread may be left still waiting on a GlobalMutex
          * when that gets destroyed, letting the thread blow up and die
-         * when enters the section in a now dead OOo instance.
+         * when enters the section in a now dead AOO instance.
          */
         aGuard.clear();
         while (osl_isThreadRunning(m_aThread))
@@ -3862,46 +3857,46 @@ void SelectionManager::shutdown() throw()
 
 sal_Bool SelectionManager::handleEvent( const Any& event ) throw()
 {
-    Sequence< sal_Int8 > aSeq;
-    if( (event >>= aSeq) )
-    {
-        XEvent* pEvent = (XEvent*)aSeq.getArray();
-        XLIB_Time nTimestamp = CurrentTime;
-        if( pEvent->type == ButtonPress || pEvent->type == ButtonRelease )
-            nTimestamp = pEvent->xbutton.time;
-        else if( pEvent->type == XLIB_KeyPress || pEvent->type == KeyRelease )
-            nTimestamp = pEvent->xkey.time;
-        else if( pEvent->type == MotionNotify )
-            nTimestamp = pEvent->xmotion.time;
-        else if( pEvent->type == PropertyNotify )
-            nTimestamp = pEvent->xproperty.time;
+	Sequence< sal_Int8 > aSeq;
+	if( (event >>= aSeq) )
+	{
+		XEvent* pEvent = (XEvent*)aSeq.getArray();
+		XLIB_Time nTimestamp = CurrentTime;
+		if( pEvent->type == ButtonPress || pEvent->type == ButtonRelease )
+			nTimestamp = pEvent->xbutton.time;
+		else if( pEvent->type == XLIB_KeyPress || pEvent->type == KeyRelease )
+			nTimestamp = pEvent->xkey.time;
+		else if( pEvent->type == MotionNotify )
+			nTimestamp = pEvent->xmotion.time;
+		else if( pEvent->type == PropertyNotify )
+			nTimestamp = pEvent->xproperty.time;
 
-        if( nTimestamp != CurrentTime )
-        {
-            MutexGuard aGuard(m_aMutex);
+		if( nTimestamp != CurrentTime )
+		{
+			MutexGuard aGuard(m_aMutex);
 
-            m_nSelectionTimestamp = nTimestamp;
-        }
+			m_nSelectionTimestamp = nTimestamp;
+		}
 
-        return sal_Bool( handleXEvent( *pEvent ) );
-    }
-    else
-    {
-        #if OSL_DEBUG_LEVEL > 1
-        fprintf( stderr, "SelectionManager got downing event\n" );
-        #endif
-        shutdown();
-    }
-    return sal_True;
+		return sal_Bool( handleXEvent( *pEvent ) );
+	}
+	else
+	{
+		#if OSL_DEBUG_LEVEL > 1
+		fprintf( stderr, "SelectionManager got downing event\n" );
+		#endif
+		shutdown();
+	}
+	return sal_True;
 }
 
 void SAL_CALL SelectionManager::disposing( const ::com::sun::star::lang::EventObject& )
-    throw( ::com::sun::star::uno::RuntimeException )
+	throw( ::com::sun::star::uno::RuntimeException )
 {
 }
 
 void SAL_CALL SelectionManager::queryTermination( const ::com::sun::star::lang::EventObject& )
-    throw( ::com::sun::star::frame::TerminationVetoException, ::com::sun::star::uno::RuntimeException )
+	throw( ::com::sun::star::frame::TerminationVetoException, ::com::sun::star::uno::RuntimeException )
 {
 }
 
@@ -3911,15 +3906,15 @@ void SAL_CALL SelectionManager::queryTermination( const ::com::sun::star::lang::
  * has been called before vcl is shutdown
  */
 void SAL_CALL SelectionManager::notifyTermination( const ::com::sun::star::lang::EventObject& rEvent )
-    throw( ::com::sun::star::uno::RuntimeException )
+	throw( ::com::sun::star::uno::RuntimeException )
 {
-    css::uno::Reference< XDesktop > xDesktop( rEvent.Source, UNO_QUERY );
-    if( xDesktop.is() == sal_True )
-        xDesktop->removeTerminateListener( this );
-    #if OSL_DEBUG_LEVEL > 1
-    fprintf( stderr, "SelectionManager got app termination event\n" );
-    #endif
-    shutdown();
+	css::uno::Reference< XDesktop > xDesktop( rEvent.Source, UNO_QUERY );
+	if( xDesktop.is() == sal_True )
+		xDesktop->removeTerminateListener( this );
+	#if OSL_DEBUG_LEVEL > 1
+	fprintf( stderr, "SelectionManager got app termination event\n" );
+	#endif
+	shutdown();
 }
 
 // ------------------------------------------------------------------------
@@ -3944,7 +3939,7 @@ void SelectionManager::deregisterHandler( Atom selection )
 		  m_aSelections.find( selection );
 	if( it != m_aSelections.end() )
 	{
-        delete it->second->m_pPixmap;
+		delete it->second->m_pPixmap;
 		delete it->second;
 		m_aSelections.erase( it );
 	}
@@ -3956,12 +3951,12 @@ static bool bWasError = false;
 
 extern "C"
 {
-    int local_xerror_handler(Display* , XErrorEvent*)
-    {
-        bWasError = true;
-        return 0;
-    }
-    typedef int(*xerror_hdl_t)(Display*,XErrorEvent*);
+	int local_xerror_handler(Display* , XErrorEvent*)
+	{
+		bWasError = true;
+		return 0;
+	}
+	typedef int(*xerror_hdl_t)(Display*,XErrorEvent*);
 }
 
 void SelectionManager::registerDropTarget( XLIB_Window aWindow, DropTarget* pTarget )
@@ -3976,15 +3971,15 @@ void SelectionManager::registerDropTarget( XLIB_Window aWindow, DropTarget* pTar
 	else if( aWindow && m_pDisplay )
 	{
 		DropTargetEntry aEntry( pTarget );
-        bWasError=false;
-        /* #i100000# ugly workaround: gtk sets its own XErrorHandler which is not suitable for us
+		bWasError=false;
+		/* #i100000# ugly workaround: gtk sets its own XErrorHandler which is not suitable for us
            unfortunately XErrorHandler is not per display, so this is just and ugly hack
            Need to remove separate display and integrate clipboard/dnd into vcl's unx code ASAP
-        */
+		*/
 		xerror_hdl_t pOldHandler = XSetErrorHandler( local_xerror_handler );
 		XSelectInput( m_pDisplay, aWindow, PropertyChangeMask );
-        if( ! bWasError )
-        {
+		if( ! bWasError )
+		{
 		    // set XdndAware
 		    XChangeProperty( m_pDisplay, aWindow, m_nXdndAware, XA_ATOM, 32, PropModeReplace, (unsigned char*)&nXdndProtocolRevision, 1 );
             if( ! bWasError )
@@ -3995,11 +3990,11 @@ void SelectionManager::registerDropTarget( XLIB_Window aWindow, DropTarget* pTar
 		        unsigned int w, h, bw, d;
 		        XGetGeometry( m_pDisplay, aWindow, &aEntry.m_aRootWindow,
 			                  &x, &y, &w, &h, &bw, &d );
-            }
-        }
-        XSetErrorHandler( pOldHandler );
-        if(bWasError)
-            return;
+			}
+		}
+		XSetErrorHandler( pOldHandler );
+		if(bWasError)
+			return;
 		m_aDropTargets[ aWindow ] = aEntry;
 	}
 	else
@@ -4013,20 +4008,20 @@ void SelectionManager::deregisterDropTarget( XLIB_Window aWindow )
 	ClearableMutexGuard aGuard(m_aMutex);
 
 	m_aDropTargets.erase( aWindow );
-    if( aWindow == m_aDragSourceWindow && m_aDragRunning.check() )
-    {
-        // abort drag
-        std::hash_map< XLIB_Window, DropTargetEntry >::const_iterator it =
-            m_aDropTargets.find( m_aDropWindow );
-        if( it != m_aDropTargets.end() )
-        {
-            DropTargetEvent dte;
-            dte.Source = static_cast< OWeakObject* >( it->second.m_pTarget );
-            aGuard.clear();
-            it->second.m_pTarget->dragExit( dte );
-        }
-        else if( m_aDropProxy != None && m_nCurrentProtocolVersion >= 0 )
-        {
+	if( aWindow == m_aDragSourceWindow && m_aDragRunning.check() )
+	{
+		// abort drag
+		std::hash_map< XLIB_Window, DropTargetEntry >::const_iterator it =
+			m_aDropTargets.find( m_aDropWindow );
+		if( it != m_aDropTargets.end() )
+		{
+			DropTargetEvent dte;
+			dte.Source = static_cast< OWeakObject* >( it->second.m_pTarget );
+			aGuard.clear();
+			it->second.m_pTarget->dragExit( dte );
+		}
+		else if( m_aDropProxy != None && m_nCurrentProtocolVersion >= 0 )
+		{
             // send XdndLeave
             XEvent aEvent;
             aEvent.type = ClientMessage;
@@ -4038,19 +4033,19 @@ void SelectionManager::deregisterDropTarget( XLIB_Window aWindow )
             memset( aEvent.xclient.data.l+1, 0, sizeof(long)*4);
             m_aDropWindow = m_aDropProxy = None;
             XSendEvent( m_pDisplay, m_aDropProxy, False, NoEventMask, &aEvent );
-        }
-        // notify the listener
-        DragSourceDropEvent dsde;
-        dsde.Source				= static_cast< OWeakObject* >(this);
-        dsde.DragSourceContext	= new DragSourceContext( m_aDropWindow, m_nDragTimestamp, *this );
-        dsde.DragSource			= static_cast< XDragSource* >(this);
-        dsde.DropAction			= DNDConstants::ACTION_NONE;
-        dsde.DropSuccess		= sal_False;
-        css::uno::Reference< XDragSourceListener > xListener( m_xDragSourceListener );
-        m_xDragSourceListener.clear();
-        aGuard.clear();
-        xListener->dragDropEnd( dsde );
-    }
+		}
+		// notify the listener
+		DragSourceDropEvent dsde;
+		dsde.Source				= static_cast< OWeakObject* >(this);
+		dsde.DragSourceContext	= new DragSourceContext( m_aDropWindow, m_nDragTimestamp, *this );
+		dsde.DragSource			= static_cast< XDragSource* >(this);
+		dsde.DropAction			= DNDConstants::ACTION_NONE;
+		dsde.DropSuccess		= sal_False;
+		css::uno::Reference< XDragSourceListener > xListener( m_xDragSourceListener );
+		m_xDragSourceListener.clear();
+		aGuard.clear();
+		xListener->dragDropEnd( dsde );
+	}
 }
 
 /*
@@ -4079,7 +4074,7 @@ void SelectionManager::fireContentsChanged() throw()
 
 css::uno::Reference< XInterface > SelectionManager::getReference() throw()
 {
-    return css::uno::Reference< XInterface >( static_cast<OWeakObject*>(this) );
+	return css::uno::Reference< XInterface >( static_cast<OWeakObject*>(this) );
 }
 
 // ------------------------------------------------------------------------
@@ -4090,9 +4085,9 @@ css::uno::Reference< XInterface > SelectionManager::getReference() throw()
 
 SelectionManagerHolder::SelectionManagerHolder() :
 		::cppu::WeakComponentImplHelper3<
-    XDragSource,
-    XInitialization,
-    XServiceInfo > (m_aMutex)
+	XDragSource,
+	XInitialization,
+	XServiceInfo > (m_aMutex)
 {
 }
 
@@ -4186,5 +4181,4 @@ Sequence< OUString > SelectionManagerHolder::getSupportedServiceNames() throw()
 	return Xdnd_getSupportedServiceNames();
 }
 
-
-// ------------------------------------------------------------------------
+/* vim: set noet sw=4 ts=4: */
