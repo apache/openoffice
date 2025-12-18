@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_vcl.hxx"
 
@@ -71,14 +69,14 @@ void DropTarget::initialize( const Sequence< Any >& arguments ) throw( ::com::su
 		m_xSelectionManager = static_cast< XDragSource* >(m_pSelectionManager);
 		m_pSelectionManager->initialize( arguments );
 
-        if( m_pSelectionManager->getDisplay() ) // #136582# sanity check
-        {
-            sal_Size aWindow = None;
-            arguments.getConstArray()[1] >>= aWindow;
-            m_pSelectionManager->registerDropTarget( aWindow, this );
-            m_aTargetWindow = aWindow;
-            m_bActive = true;
-        }
+		if( m_pSelectionManager->getDisplay() ) // #136582# sanity check
+		{
+			sal_Size aWindow = None;
+			arguments.getConstArray()[1] >>= aWindow;
+			m_pSelectionManager->registerDropTarget( aWindow, this );
+			m_aTargetWindow = aWindow;
+			m_bActive = true;
+		}
 	}
 }
 
@@ -220,3 +218,5 @@ Sequence< OUString > DropTarget::getSupportedServiceNames() throw()
 {
 	return Xdnd_dropTarget_getSupportedServiceNames();
 }
+
+/* vim: set noet sw=4 ts=4: */
