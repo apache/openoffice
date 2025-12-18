@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #ifndef _DTRANS_X11_TRANSFERABLE_HXX_
 #define _DTRANS_X11_TRANSFERABLE_HXX_
 
@@ -43,7 +41,7 @@ namespace x11 {
 		com::sun::star::uno::Reference< XInterface >			m_xCreator;
 		Atom				m_aSelection;
 	public:
-        X11Transferable( SelectionManager& rManager, const com::sun::star::uno::Reference< XInterface >& xCreator, Atom selection = None );
+		X11Transferable( SelectionManager& rManager, const com::sun::star::uno::Reference< XInterface >& xCreator, Atom selection = None );
 		virtual ~X11Transferable();
 
 		/*
@@ -66,3 +64,5 @@ namespace x11 {
 } // namespace
 
 #endif
+
+/* vim: set noet sw=4 ts=4: */
