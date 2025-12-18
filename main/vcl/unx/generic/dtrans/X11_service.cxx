@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_vcl.hxx"
 
@@ -73,14 +71,14 @@ Sequence< OUString > SAL_CALL x11::Xdnd_dropTarget_getSupportedServiceNames()
 
 css::uno::Reference< XInterface > X11SalInstance::CreateClipboard( const Sequence< Any >& arguments )
 {
-    static std::hash_map< OUString, ::std::hash_map< Atom, css::uno::Reference< XClipboard > >, ::rtl::OUStringHash > m_aInstances;
+	static std::hash_map< OUString, ::std::hash_map< Atom, css::uno::Reference< XClipboard > >, ::rtl::OUStringHash > m_aInstances;
 
 	OUString aDisplayName;
-    Atom nSelection;
+	Atom nSelection;
 
-    // extract display name from connection argument. An exception is thrown
-    // by SelectionManager.initialize() if no display connection is given.
-    if( arguments.getLength() > 0 )
+	// extract display name from connection argument. An exception is thrown
+	// by SelectionManager.initialize() if no display connection is given.
+	if( arguments.getLength() > 0 )
 	{
 		css::uno::Reference< XDisplayConnection > xConn;
 		arguments.getConstArray()[0] >>= xConn;
@@ -95,19 +93,19 @@ css::uno::Reference< XInterface > X11SalInstance::CreateClipboard( const Sequenc
 	SelectionManager& rManager = SelectionManager::get( aDisplayName );
 	rManager.initialize( arguments );
 
-    // check if any other selection than clipboard selection is specified
-    if( arguments.getLength() > 1 )
-    {
-        OUString aSelectionName;
+	// check if any other selection than clipboard selection is specified
+	if( arguments.getLength() > 1 )
+	{
+		OUString aSelectionName;
 
-        arguments.getConstArray()[1] >>= aSelectionName;
-        nSelection = rManager.getAtom( aSelectionName );
-    }
-    else
-    {
-        // default atom is clipboard selection
-        nSelection = rManager.getAtom( OUString::createFromAscii( "CLIPBOARD" ) );
-    }
+		arguments.getConstArray()[1] >>= aSelectionName;
+		nSelection = rManager.getAtom( aSelectionName );
+	}
+	else
+	{
+		// default atom is clipboard selection
+		nSelection = rManager.getAtom( OUString::createFromAscii( "CLIPBOARD" ) );
+	}
 
 	::std::hash_map< Atom, css::uno::Reference< XClipboard > >& rMap( m_aInstances[ aDisplayName ] );
 	::std::hash_map< Atom, css::uno::Reference< XClipboard > >::iterator it = rMap.find( nSelection );
@@ -133,3 +131,5 @@ css::uno::Reference< XInterface > X11SalInstance::CreateDropTarget()
 {
 	return css::uno::Reference < XInterface >( ( OWeakObject * ) new DropTarget() );
 }
+
+/* vim: set noet sw=4 ts=4: */

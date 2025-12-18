@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_vcl.hxx"
 
@@ -71,7 +69,7 @@ void DropTargetDropContext::dropComplete( sal_Bool success ) throw()
 
 DropTargetDragContext::DropTargetDragContext(
 	XLIB_Window aDropWindow,
-    XLIB_Time aTimestamp,
+	XLIB_Time aTimestamp,
 	SelectionManager& rManager ) :
 		m_aDropWindow( aDropWindow ),
 		m_nTimestamp( aTimestamp ),
@@ -132,3 +130,5 @@ void DragSourceContext::transferablesFlavorsChanged() throw()
 {
 	m_rManager.transferablesFlavorsChanged();
 }
+
+/* vim: set noet sw=4 ts=4: */

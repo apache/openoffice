@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #ifndef _DTRANS_X11_DNDCONTEXT_HXX
 #define _DTRANS_X11_DNDCONTEXT_HXX
 
@@ -44,10 +42,10 @@ namespace x11 {
 	::com::sun::star::datatransfer::dnd::XDropTargetDropContext
 	>
 	{
-		XLIB_Window                 m_aDropWindow;
-		XLIB_Time                   m_nTimestamp;
-		SelectionManager&           m_rManager;
-		com::sun::star::uno::Reference< XInterface >     m_xManagerRef;
+		XLIB_Window					m_aDropWindow;
+		XLIB_Time					m_nTimestamp;
+		SelectionManager&			m_rManager;
+		com::sun::star::uno::Reference< XInterface >	m_xManagerRef;
 	public:
 		DropTargetDropContext( XLIB_Window, XLIB_Time, SelectionManager& );
 		virtual ~DropTargetDropContext();
@@ -63,10 +61,10 @@ namespace x11 {
 	::com::sun::star::datatransfer::dnd::XDropTargetDragContext
 	>
 	{
-		XLIB_Window                 m_aDropWindow;
-		XLIB_Time                   m_nTimestamp;
-		SelectionManager&           m_rManager;
-		com::sun::star::uno::Reference< XInterface >     m_xManagerRef;
+		XLIB_Window					m_aDropWindow;
+		XLIB_Time					m_nTimestamp;
+		SelectionManager&			m_rManager;
+		com::sun::star::uno::Reference< XInterface >	m_xManagerRef;
 	public:
 		DropTargetDragContext( XLIB_Window, XLIB_Time, SelectionManager& );
 		virtual ~DropTargetDragContext();
@@ -81,10 +79,10 @@ namespace x11 {
 	::com::sun::star::datatransfer::dnd::XDragSourceContext
 	>
 	{
-		XLIB_Window                 m_aDropWindow;
-		XLIB_Time                   m_nTimestamp;
-		SelectionManager&           m_rManager;
-		com::sun::star::uno::Reference< XInterface >     m_xManagerRef;
+		XLIB_Window					m_aDropWindow;
+		XLIB_Time					m_nTimestamp;
+		SelectionManager&			m_rManager;
+		com::sun::star::uno::Reference< XInterface >	m_xManagerRef;
 	public:
 		DragSourceContext( XLIB_Window, XLIB_Time, SelectionManager& );
 		virtual ~DragSourceContext();
@@ -98,3 +96,5 @@ namespace x11 {
 } // namespace
 
 #endif // _DTRANS_X11_DNDCONTEXT_HXX
+
+/* vim: set noet sw=4 ts=4: */
