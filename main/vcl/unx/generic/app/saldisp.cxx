@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_vcl.hxx"
 
@@ -115,12 +113,12 @@ using namespace vcl_sal;
 // -=-= static variables -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 static const char* const VisualClassName[] = {
-    "StaticGray",
-    "GrayScale",
-    "StaticColor",
-    "PseudoColor",
-    "TrueColor",
-    "DirectColor"
+	"StaticGray",
+	"GrayScale",
+	"StaticColor",
+	"PseudoColor",
+	"TrueColor",
+	"DirectColor"
 };
 
 static const char* const EventNames[] =
@@ -186,13 +184,13 @@ inline int ColorDiff( SalColor c1, int r, int g, int b )
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 static int sal_Shift( Pixel nMask )
 {
-    int i = 24;
-    if( nMask < 0x00010000 ) { nMask <<= 16; i -= 16; }
-    if( nMask < 0x01000000 ) { nMask <<=  8; i -=  8; }
-    if( nMask < 0x10000000 ) { nMask <<=  4; i -=  4; }
-    if( nMask < 0x40000000 ) { nMask <<=  2; i -=  2; }
-    if( nMask < 0x80000000 ) { nMask <<=  1; i -=  1; }
-    return i;
+	int i = 24;
+	if( nMask < 0x00010000 ) { nMask <<= 16; i -= 16; }
+	if( nMask < 0x01000000 ) { nMask <<=  8; i -=  8; }
+	if( nMask < 0x10000000 ) { nMask <<=  4; i -=  4; }
+	if( nMask < 0x40000000 ) { nMask <<=  2; i -=  2; }
+	if( nMask < 0x80000000 ) { nMask <<=  1; i -=  1; }
+	return i;
 }
 
 static int sal_significantBits( Pixel nMask )
@@ -268,13 +266,13 @@ sal_EqualHosts( const OUString& Host1, const OUString& Host2)
 	else
 		pHostAddr2 = osl_resolveHostname( Host2.pData );
 
-    if( pHostAddr1 && pHostAddr2 )
-        bEqualAddress = osl_isEqualSocketAddr( pHostAddr1, pHostAddr2 ) ? sal_True : sal_False;
+	if( pHostAddr1 && pHostAddr2 )
+		bEqualAddress = osl_isEqualSocketAddr( pHostAddr1, pHostAddr2 ) ? sal_True : sal_False;
 
-    if( pHostAddr1 )
-        osl_destroySocketAddr( pHostAddr1 );
-    if( pHostAddr2 )
-        osl_destroySocketAddr( pHostAddr2 );
+	if( pHostAddr1 )
+		osl_destroySocketAddr( pHostAddr1 );
+	if( pHostAddr2 )
+		osl_destroySocketAddr( pHostAddr2 );
 
 	return bEqualAddress;
 }
@@ -317,13 +315,13 @@ sal_IsLocalDisplay( Display *pDisplay )
 	if( pPtr != NULL )
 	{
 		const OUString& rLocalHostname( GetX11SalData()->GetLocalHostName() );
-        if( rLocalHostname.getLength() )
-        {
+		if( rLocalHostname.getLength() )
+		{
 			*pPtr = '\0';
 			OUString aDisplayHostname( pDisplayHost, strlen( pDisplayHost ), osl_getThreadTextEncoding() );
 			bEqual = sal_EqualHosts( rLocalHostname, aDisplayHostname );
 			bEqual = bEqual && sal_IsDisplayNumber( pPtr + 1 );
-        }
+		}
 	}
 	free( pDisplayHost );
 
@@ -373,7 +371,7 @@ sal_GetServerVendor( Display *p_display )
 
 	// handle regular server vendors
 	char     *p_name   = ServerVendor( p_display );
-    vendor_t *p_vendor;
+	vendor_t *p_vendor;
 	for (p_vendor = const_cast<vendor_t*>(p_vendorlist); p_vendor->e_vendor != vendor_none; p_vendor++)
 	{
 		if ( strncmp (p_name, p_vendor->p_name, p_vendor->n_len) == 0 )
@@ -386,18 +384,18 @@ sal_GetServerVendor( Display *p_display )
 
 static sal_Bool sal_IsTrustedSolaris (Display *p_display)
 {
-    int      n_numextensions = 0;
-    char   **p_extensions    = XListExtensions (p_display, &n_numextensions);
-    sal_Bool b_is            = sal_False;
+	int      n_numextensions = 0;
+	char   **p_extensions    = XListExtensions (p_display, &n_numextensions);
+	sal_Bool b_is            = sal_False;
 
-    if (p_extensions != NULL)
-    {
-	    for (int i = 0; !b_is && i < n_numextensions; i++)
-            b_is = (strcmp (p_extensions[i], "SUN_TSOL") == 0);
-	    XFreeExtensionList (p_extensions);
-    }
+	if (p_extensions != NULL)
+	{
+		for (int i = 0; !b_is && i < n_numextensions; i++)
+			b_is = (strcmp (p_extensions[i], "SUN_TSOL") == 0);
+		XFreeExtensionList (p_extensions);
+	}
 
-    return b_is;
+	return b_is;
 }
 
 // -=-= SalDisplay -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -412,11 +410,11 @@ sal_Bool SalDisplay::BestVisual( Display     *pDisplay,
     if( pVID )
         sscanf( pVID, "%li", &nVID );
 
-    if( nVID && sal_GetVisualInfo( pDisplay, nVID, rVI ) )
-        return rVI.visualid == nDefVID;
+	if( nVID && sal_GetVisualInfo( pDisplay, nVID, rVI ) )
+		return rVI.visualid == nDefVID;
 
 	XVisualInfo aVI;
-    aVI.screen = nScreen;
+	aVI.screen = nScreen;
 	// get all visuals
 	int nVisuals;
 	XVisualInfo* pVInfos = XGetVisualInfo( pDisplay, VisualScreenMask,
@@ -498,23 +496,23 @@ sal_Bool SalDisplay::BestVisual( Display     *pDisplay,
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 SalDisplay::SalDisplay( Display *display ) :
-        mpInputMethod( NULL ),
+		mpInputMethod( NULL ),
 		pDisp_( display ),
-        m_pWMAdaptor( NULL ),
-        m_pDtIntegrator( NULL ),
-        m_bUseRandRWrapper( true ),
-        m_nLastUserEventTime( CurrentTime )
+		m_pWMAdaptor( NULL ),
+		m_pDtIntegrator( NULL ),
+		m_bUseRandRWrapper( true ),
+		m_nLastUserEventTime( CurrentTime )
 {
 #if OSL_DEBUG_LEVEL > 1
-    fprintf( stderr, "SalDisplay::SalDisplay()\n" );
+	fprintf( stderr, "SalDisplay::SalDisplay()\n" );
 #endif
-    X11SalData *pSalData  = GetX11SalData();
+	X11SalData *pSalData  = GetX11SalData();
 
-    DBG_ASSERT( ! pSalData->GetDisplay(), "Second SalDisplay created !!!\n" );
-    pSalData->SetSalDisplay( this );
+	DBG_ASSERT( ! pSalData->GetDisplay(), "Second SalDisplay created !!!\n" );
+	pSalData->SetSalDisplay( this );
 
 	pXLib_    = pSalData->GetLib();
-    m_nDefaultScreen = DefaultScreen( pDisp_ );
+	m_nDefaultScreen = DefaultScreen( pDisp_ );
 
 }
 
@@ -522,40 +520,40 @@ SalDisplay::SalDisplay( Display *display ) :
 SalDisplay::~SalDisplay( )
 {
 #if OSL_DEBUG_LEVEL > 1
-    fprintf( stderr, "SalDisplay::~SalDisplay()\n" );
+	fprintf( stderr, "SalDisplay::~SalDisplay()\n" );
 #endif
-    if( pDisp_ )
-    {
-        doDestruct();
+	if( pDisp_ )
+	{
+		doDestruct();
 #if OSL_DEBUG_LEVEL > 1
-        fprintf( stderr, "display %p closed\n", pDisp_ );
+		fprintf( stderr, "display %p closed\n", pDisp_ );
 #endif
-        pDisp_ = NULL;
-    }
-    // don't do this in doDestruct since RandR extension adds hooks into Display
-    // that is XCloseDisplay still needs the RandR library if it was used
-    DeInitRandR();
+		pDisp_ = NULL;
+	}
+	// don't do this in doDestruct since RandR extension adds hooks into Display
+	// that is XCloseDisplay still needs the RandR library if it was used
+	DeInitRandR();
 }
 
 void SalDisplay::doDestruct()
 {
-    X11SalData *pSalData = GetX11SalData();
+	X11SalData *pSalData = GetX11SalData();
 
-    delete m_pWMAdaptor;
-    m_pWMAdaptor = NULL;
-    delete m_pDtIntegrator;
-    m_pDtIntegrator = NULL;
+	delete m_pWMAdaptor;
+	m_pWMAdaptor = NULL;
+	delete m_pDtIntegrator;
+	m_pDtIntegrator = NULL;
 	X11SalBitmap::ImplDestroyCache();
-    X11SalGraphics::releaseGlyphPeer();
+	X11SalGraphics::releaseGlyphPeer();
 
-    if( IsDisplay() )
-    {
+	if( IsDisplay() )
+	{
 		delete mpInputMethod, mpInputMethod = (SalI18N_InputMethod*)ILLEGAL_POINTER;
 		delete mpKbdExtension, mpKbdExtension = (SalI18N_KeyboardExtension*)ILLEGAL_POINTER;
 
-        // do not call anything that could implicitly call back into
-        // this object after this point
-        osl_destroyMutex( hEventGuard_ );
+		// do not call anything that could implicitly call back into
+		// this object after this point
+		osl_destroyMutex( hEventGuard_ );
 
         for( unsigned int i = 0; i < m_aScreens.size(); i++ )
         {
@@ -640,7 +638,7 @@ fd
 SalX11Display::SalX11Display( Display *display )
 		: SalDisplay( display )
 {
-    Init();
+	Init();
 
 	pXLib_->Insert( ConnectionNumber( pDisp_ ),
 					this,
@@ -652,7 +650,7 @@ SalX11Display::SalX11Display( Display *display )
 SalX11Display::~SalX11Display()
 {
 #if OSL_DEBUG_LEVEL > 1
-    fprintf( stderr, "SalX11Display::~SalX11Display()\n" );
+	fprintf( stderr, "SalX11Display::~SalX11Display()\n" );
 #endif
 	if( pDisp_ )
 	{
@@ -929,7 +927,7 @@ void SalDisplay::Init()
             // nicht alle! (bekannt: nur Sparc II CG3, CG6?)
             nProperties_ &= ~PROPERTY_SUPPORT_XSetClipMask;
 
-            // trusted solaris doesn't allow to change properties on the
+            // trusted Solaris doesn't allow to change properties on the
             // wm decoration window
             if (sal_IsTrustedSolaris (pDisp_))
                 nProperties_ |= PROPERTY_FEATURE_TrustedSolaris;
@@ -1005,13 +1003,13 @@ void SalDisplay::Init()
         }
     }
 
-    InitXinerama();
+	InitXinerama();
 
-    // initialize system settings update
-    m_pDtIntegrator = DtIntegrator::CreateDtIntegrator();
+	// initialize system settings update
+	m_pDtIntegrator = DtIntegrator::CreateDtIntegrator();
 
 #ifdef DBG_UTIL
-    PrintInfo();
+	PrintInfo();
 #endif
 }
 
@@ -1019,7 +1017,7 @@ void SalDisplay::Init()
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 void SalDisplay::Beep() const
 {
-    XBell( pDisp_, 0 );
+	XBell( pDisp_, 0 );
 }
 
 // Keyboard
@@ -1069,7 +1067,7 @@ void SalDisplay::ModifierMapping()
     nShiftKeySym_   = sal_XModifier2Keysym( pDisp_, pXModMap, ShiftMapIndex );
     nCtrlKeySym_    = sal_XModifier2Keysym( pDisp_, pXModMap, ControlMapIndex );
     nMod1KeySym_    = sal_XModifier2Keysym( pDisp_, pXModMap, Mod1MapIndex );
-    // Auf Sun-Servern und SCO-Severn beruecksichtigt XLookupString
+    // Auf Sun-Servern und SCO-Severn berücksichtigt XLookupString
     // nicht den NumLock Modifier.
     if( 	(GetServerVendor() == vendor_sun)
 		||  (GetServerVendor() == vendor_sco) )
@@ -1088,33 +1086,33 @@ void SalDisplay::ModifierMapping()
         }
     }
 
-    XFreeModifiermap( pXModMap );
+	XFreeModifiermap( pXModMap );
 }
 
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 XubString SalDisplay::GetKeyName( sal_uInt16 nKeyCode ) const
 {
-    String aStrMap;
+	String aStrMap;
 
 	if( nKeyCode & KEY_MOD1 )
-        aStrMap += GetKeyNameFromKeySym( nCtrlKeySym_ );
+		aStrMap += GetKeyNameFromKeySym( nCtrlKeySym_ );
 
-    if( nKeyCode & KEY_MOD2 )
-    {
-        if( aStrMap.Len() )
-            aStrMap += '+';
-        aStrMap += GetKeyNameFromKeySym( nMod1KeySym_ );
-    }
+	if( nKeyCode & KEY_MOD2 )
+	{
+		if( aStrMap.Len() )
+			aStrMap += '+';
+		aStrMap += GetKeyNameFromKeySym( nMod1KeySym_ );
+	}
 
-    if( nKeyCode & KEY_SHIFT )
-    {
-        if( aStrMap.Len() )
-            aStrMap += '+';
-        aStrMap += GetKeyNameFromKeySym( nShiftKeySym_ );
-    }
-    nKeyCode &= 0x0FFF;
+	if( nKeyCode & KEY_SHIFT )
+	{
+		if( aStrMap.Len() )
+			aStrMap += '+';
+		aStrMap += GetKeyNameFromKeySym( nShiftKeySym_ );
+	}
+	nKeyCode &= 0x0FFF;
 
-    KeySym nKeySym = 0;
+	KeySym nKeySym = 0;
 
     if( KEY_0 <= nKeyCode && nKeyCode <= KEY_9 )
         nKeySym = XK_0 + (nKeyCode - KEY_0);
@@ -1903,7 +1901,7 @@ XLIB_Cursor SalDisplay::GetPointer( int ePointerStyle )
             MAKE_CURSOR( copyfiles_ );
             break;
         case POINTER_NOTALLOWED:
-            MAKE_CURSOR( nodrop_ );
+            MAKE_CURSOR( notallow_ );
             break;
         case POINTER_ROTATE:
             MAKE_CURSOR( rotate_ );
@@ -3420,7 +3418,7 @@ Pixel SalColormap::GetPixel( SalColor nSalColor ) const
         ((SalColormap*)this)->GetLookupTable();
     }
 
-    // Colormatching ueber Palette
+    // Colormatching über Palette
     sal_uInt16 r = SALCOLOR_RED  ( nSalColor );
     sal_uInt16 g = SALCOLOR_GREEN( nSalColor );
     sal_uInt16 b = SALCOLOR_BLUE ( nSalColor );
@@ -3428,3 +3426,5 @@ Pixel SalColormap::GetPixel( SalColor nSalColor ) const
                          + (((g+8)/17) << 4)
                          +  ((b+8)/17) ];
 }
+
+/* vim: set noet sw=4 ts=4: */
