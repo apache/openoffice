@@ -57,8 +57,8 @@
 #include <movedata_mask.h>
 #include <linkdata_curs.h>
 #include <linkdata_mask.h>
-#include <nodrop_curs.h>
-#include <nodrop_mask.h>
+#include <notallow_curs.h>
+#include <notallow_mask.h>
 #include <com/sun/star/datatransfer/dnd/DNDConstants.hpp>
 #include <com/sun/star/awt/MouseEvent.hpp>
 #include <com/sun/star/awt/MouseButton.hpp>
@@ -436,7 +436,7 @@ void SelectionManager::initialize( const Sequence< Any >& arguments ) throw (::c
 				m_aMoveCursor = createCursorFromXPM( movedata_);
 				m_aCopyCursor = createCursorFromXPM( copydata_);
 				m_aLinkCursor = createCursorFromXPM( linkdata_);
-				m_aNoneCursor = createCursorFromXPM( nodrop_);
+				m_aNoneCursor = createCursorFromXPM( notallow_);
 
 				// just interested in SelectionClear/Notify/Request and PropertyChange
 				XSelectInput( m_pDisplay, m_aWindow, PropertyChangeMask );
