@@ -108,11 +108,6 @@
 #include "unx/x11_cursors/chainnot_curs.h"
 #include "unx/x11_cursors/chainnot_mask.h"
 
-#include "unx/x11_cursors/timemove_curs.h"
-#include "unx/x11_cursors/timemove_mask.h"
-#include "unx/x11_cursors/timesize_curs.h"
-#include "unx/x11_cursors/timesize_mask.h"
-
 #include "unx/x11_cursors/ase_curs.h"
 #include "unx/x11_cursors/ase_mask.h"
 #include "unx/x11_cursors/asn_curs.h"
