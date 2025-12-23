@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_vcl.hxx"
 #include <com/sun/star/datatransfer/dnd/DNDConstants.hpp>
@@ -229,7 +227,7 @@ NSDragOperation DropTarget::draggingEntered(id sender)
   // a modifier key will be pressed
   mDragSourceSupportedActions = SystemToOfficeDragActions([sender draggingSourceOperationMask]);
 
-  // Only if the drop target is really interessted in the drag actions
+  // Only if the drop target is really interested in the drag actions
   // supported by the source
   if (mDragSourceSupportedActions & mDefaultActions)
 	{
@@ -606,3 +604,5 @@ void DropTarget::concludeDragOperation(id /*sender*/)
   {
 	return dropTarget_getSupportedServiceNames();
   }
+
+/* vim: set noet sw=4 ts=4: */
