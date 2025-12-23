@@ -19,10 +19,8 @@
  *
  *************************************************************/
 
-
-
-#include "unx/x11_cursors/nodrop_curs.h"
-#include "unx/x11_cursors/nodrop_mask.h"
+#include "unx/x11_cursors/notallow_curs.h"
+#include "unx/x11_cursors/notallow_mask.h"
 #include "unx/x11_cursors/magnify_curs.h"
 #include "unx/x11_cursors/magnify_mask.h"
 #include "unx/x11_cursors/rotate_curs.h"
