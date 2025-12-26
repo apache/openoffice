@@ -51,14 +51,14 @@
 #include "vcl/svapp.hxx"
 
 // pointer bitmaps
-#include <copydata_curs.h>
-#include <copydata_mask.h>
-#include <movedata_curs.h>
-#include <movedata_mask.h>
-#include <linkdata_curs.h>
-#include <linkdata_mask.h>
-#include <nodrop_curs.h>
-#include <nodrop_mask.h>
+#include <unx/x11_cursors/copydata_curs.h>
+#include <unx/x11_cursors/copydata_mask.h>
+#include <unx/x11_cursors/movedata_curs.h>
+#include <unx/x11_cursors/movedata_mask.h>
+#include <unx/x11_cursors/linkdata_curs.h>
+#include <unx/x11_cursors/linkdata_mask.h>
+#include <unx/x11_cursors/notallow_curs.h>
+#include <unx/x11_cursors/notallow_mask.h>
 #include <com/sun/star/datatransfer/dnd/DNDConstants.hpp>
 #include <com/sun/star/awt/MouseEvent.hpp>
 #include <com/sun/star/awt/MouseButton.hpp>
@@ -436,7 +436,7 @@ void SelectionManager::initialize( const Sequence< Any >& arguments ) throw (::c
 				m_aMoveCursor = createCursorFromXPM( movedata_);
 				m_aCopyCursor = createCursorFromXPM( copydata_);
 				m_aLinkCursor = createCursorFromXPM( linkdata_);
-				m_aNoneCursor = createCursorFromXPM( nodrop_);
+				m_aNoneCursor = createCursorFromXPM( notallow_);
 
 				// just interested in SelectionClear/Notify/Request and PropertyChange
 				XSelectInput( m_pDisplay, m_aWindow, PropertyChangeMask );

@@ -19,7 +19,6 @@
 *
 *************************************************************/
 
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_dtrans.hxx"
 #include <com/sun/star/datatransfer/dnd/DNDConstants.hpp>
@@ -397,7 +396,7 @@ MRESULT DropTarget::dragOver( PDRAGINFO dragInfo)
     sal_Int8 currentDragSourceActions =
             SystemToOfficeDragActions( dragInfo->usOperation);
 
-    // Only if the drop target is really interessted in the drag actions
+    // Only if the drop target is really interested in the drag actions
     // supported by the source
     if (currentDragSourceActions & mDefaultActions) {
         //sal_Int8 currentAction = determineDropAction(mDragSourceSupportedActions, sender);
@@ -509,3 +508,5 @@ MRESULT DropTarget::renderComplete( PDRAGTRANSFER dragTransfer)
     // Reserved value, should be 0
     return 0;
 }
+
+/* vim: set noet sw=4 ts=4: */
