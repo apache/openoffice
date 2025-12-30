@@ -83,8 +83,6 @@ RCDEPN=		nullptr.ptr		\
 			pivotfld.ptr	\
 			chain.ptr		\
 			chainnot.ptr	\
-			timemove.ptr	\
-			timesize.ptr	\
 			asn.ptr			\
 			ass.ptr			\
 			asw.ptr			\

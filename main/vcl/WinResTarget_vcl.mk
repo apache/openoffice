@@ -71,10 +71,8 @@ $(eval $(call gb_WinResTarget_add_dependency,vcl/src,\
 	vcl/win/source/src/asnw.cur \
 	vcl/win/source/src/darc.cur \
 	vcl/win/source/src/nullptr.cur \
-	vcl/win/source/src/timemove.cur \
 	vcl/win/source/src/ass.cur \
 	vcl/win/source/src/dbezier.cur \
-	vcl/win/source/src/timesize.cur \
 	vcl/win/source/src/asse.cur \
 	vcl/win/source/src/dcapt.cur \
 	vcl/win/source/src/pen.cur \
@@ -181,8 +179,6 @@ $(eval $(call gb_WinResTarget_add_dependency,vcl/src,\
 	vcl/os2/source/src/tblselse.ptr \
 	vcl/os2/source/src/tblselsw.ptr \
 	vcl/os2/source/src/tblselw.ptr \
-	vcl/os2/source/src/timemove.ptr \
-	vcl/os2/source/src/timesize.ptr \
 	vcl/os2/source/src/vshear.ptr \
 	vcl/os2/source/src/vsizebar.ptr \
 	vcl/os2/source/src/vsplit.ptr \

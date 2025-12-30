@@ -2009,12 +2009,6 @@ XLIB_Cursor SalDisplay::GetPointer( int ePointerStyle )
         case POINTER_CHAIN_NOTALLOWED:
             MAKE_CURSOR( chainnot_ );
             break;
-        case POINTER_TIMEEVENT_MOVE:
-            MAKE_CURSOR( timemove_ );
-            break;
-        case POINTER_TIMEEVENT_SIZE:
-            MAKE_CURSOR( timesize_ );
-            break;
 		case POINTER_AUTOSCROLL_N:
             MAKE_CURSOR(asn_ );
             break;
