@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #define INCL_DOS
 #define INCL_PM
 #define INCL_WIN
@@ -159,7 +157,7 @@ sal_Bool APIENTRY _WinQueryWindowPos( Os2SalFrame* pFrame, PSWP pswp)
 }
 
 sal_Bool APIENTRY _WinSetWindowPos( Os2SalFrame* pFrame, HWND hwndInsertBehind, LONG x, LONG y,
-    LONG cx, LONG cy, ULONG fl)
+	LONG cx, LONG cy, ULONG fl)
 {
 	SWP 	swpOwner = {0};
 	POINTL 	ptlOwner = {0};
@@ -344,20 +342,20 @@ static SalIMEData* GetSalIMEData()
         }
     }
 
-    return pSalData->mpIMEData;
+	return pSalData->mpIMEData;
 }
 
 // -----------------------------------------------------------------------
 
 void ImplReleaseSALIMEData()
 {
-    SalData* pSalData = GetSalData();
+	SalData* pSalData = GetSalData();
 
-    if ( pSalData->mpIMEData )
-    {
-        DosFreeModule( pSalData->mpIMEData->mhModIME );
-        delete pSalData->mpIMEData;
-    }
+	if ( pSalData->mpIMEData )
+	{
+		DosFreeModule( pSalData->mpIMEData->mhModIME );
+		delete pSalData->mpIMEData;
+	}
 }
 
 #endif
@@ -366,11 +364,11 @@ void ImplReleaseSALIMEData()
 
 static void ImplSaveFrameState( Os2SalFrame* pFrame )
 {
-    // Position, Groesse und Status fuer GetWindowState() merken
-    if ( !pFrame->mbFullScreen )
-    {
-        SWP aSWP;
-        sal_Bool bVisible = WinIsWindowVisible( pFrame->mhWndFrame);
+	// Position, Groesse und Status fuer GetWindowState() merken
+	if ( !pFrame->mbFullScreen )
+	{
+		SWP aSWP;
+		sal_Bool bVisible = WinIsWindowVisible( pFrame->mhWndFrame);
 
         // Query actual state (maState uses screen coords)
         WinQueryWindowPos( pFrame->mhWndFrame, &aSWP );
@@ -521,7 +519,7 @@ static void ImplSalFrameFullScreenPos( Os2SalFrame* pFrame, sal_Bool bAlways = F
 
 // -----------------------------------------------------------------------
 
-// Uebersetzungstabelle von System-Keycodes in StarView-Keycodes
+// Übersetzungstabelle von System-Keycodes in StarView-Keycodes
 #define KEY_TAB_SIZE     (VK_ENDDRAG+1)
 
 static USHORT aImplTranslateKeyTab[KEY_TAB_SIZE] =
@@ -600,7 +598,7 @@ SalFrame* ImplSalCreateFrame( Os2SalInstance* pInst, HWND hWndParent, ULONG nSal
     sal_Bool        	bSubFrame = FALSE;
 
 #if OSL_DEBUG_LEVEL>0
-    debug_printf(">ImplSalCreateFrame hWndParent 0x%x, nSalFrameStyle 0x%x\n", hWndParent, nSalFrameStyle);
+	debug_printf(">ImplSalCreateFrame hWndParent 0x%x, nSalFrameStyle 0x%x\n", hWndParent, nSalFrameStyle);
 #endif
 
 	if ( hWndParent )
@@ -609,10 +607,10 @@ SalFrame* ImplSalCreateFrame( Os2SalInstance* pInst, HWND hWndParent, ULONG nSal
 		pFrame->mbNoIcon = TRUE;
 	}
 
-    // determine creation data (bei Moveable nehmen wir DLG-Border, damit
-    // es besser aussieht)
-    if ( nSalFrameStyle & SAL_FRAME_STYLE_CLOSEABLE )
-        nFrameFlags |= FCF_CLOSEBUTTON;
+	// determine creation data (bei Moveable nehmen wir DLG-Border, damit
+	// es besser aussieht)
+	if ( nSalFrameStyle & SAL_FRAME_STYLE_CLOSEABLE )
+		nFrameFlags |= FCF_CLOSEBUTTON;
 
 	if ( nSalFrameStyle & SAL_FRAME_STYLE_MOVEABLE ) {
 		pFrame->mbCaption = TRUE;
@@ -1613,8 +1611,6 @@ void Os2SalFrame::SetPointer( PointerStyle ePointerStyle )
     { 0, 0, SAL_RESID_POINTER_PIVOT_FIELD },        // POINTER_PIVOT_FIELD
     { 0, 0, SAL_RESID_POINTER_CHAIN },              // POINTER_CHAIN
     { 0, 0, SAL_RESID_POINTER_CHAIN_NOTALLOWED },   // POINTER_CHAIN_NOTALLOWED
-    { 0, 0, SAL_RESID_POINTER_TIMEEVENT_MOVE },     // POINTER_TIMEEVENT_MOVE
-    { 0, 0, SAL_RESID_POINTER_TIMEEVENT_SIZE },     // POINTER_TIMEEVENT_SIZE
     { 0, 0, SAL_RESID_POINTER_AUTOSCROLL_N },       // POINTER_AUTOSCROLL_N
     { 0, 0, SAL_RESID_POINTER_AUTOSCROLL_S },       // POINTER_AUTOSCROLL_S
     { 0, 0, SAL_RESID_POINTER_AUTOSCROLL_W },       // POINTER_AUTOSCROLL_W
@@ -3715,10 +3711,10 @@ MRESULT EXPENTRY SalFrameWndProc( HWND hWnd, ULONG nMsg,
 		}
 	}
 
-    if ( bDef )
-        nRet = WinDefWindowProc( hWnd, nMsg, nMP1, nMP2 );
+	if ( bDef )
+		nRet = WinDefWindowProc( hWnd, nMsg, nMP1, nMP2 );
 
-    return nRet;
+	return nRet;
 }
 
 // -----------------------------------------------------------------------
@@ -3744,10 +3740,10 @@ void Os2SalFrame::EndSetClipRegion()
 MRESULT EXPENTRY SalFrameSubClassWndProc( HWND hWnd, ULONG nMsg,
                                   MPARAM nMP1, MPARAM nMP2 )
 {
-    MRESULT mReturn = 0L;
+	MRESULT mReturn = 0L;
 
-    // ticket#124 min size of 132 px is too much
-    if (nMsg == WM_QUERYTRACKINFO) {
+	// ticket#124 min size of 132 px is too much
+	if (nMsg == WM_QUERYTRACKINFO) {
 	PTRACKINFO pti;
 	// first, let PM initialize TRACKINFO
 	mReturn = aSalShlData.mpFrameProc( hWnd, nMsg, nMP1, nMP2 );
@@ -3756,9 +3752,9 @@ MRESULT EXPENTRY SalFrameSubClassWndProc( HWND hWnd, ULONG nMsg,
 	pti->ptlMinTrackSize.x = 64L;
 	// now return to PM
 	return mReturn;
-    }
+	}
 
-    return aSalShlData.mpFrameProc( hWnd, nMsg, nMP1, nMP2 );
+	return aSalShlData.mpFrameProc( hWnd, nMsg, nMP1, nMP2 );
 }
 
-// -----------------------------------------------------------------------
+/* vim: set noet sw=4 ts=4: */
