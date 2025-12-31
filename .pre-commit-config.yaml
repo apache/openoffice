@@ -26,7 +26,7 @@ repos:
       - id: identity
       - id: check-hooks-apply
   - repo: https://github.com/gitleaks/gitleaks
-    rev: v8.28.0
+    rev: v8.30.0
     hooks:
       - id: gitleaks
         name: run gitleaks
@@ -47,15 +47,23 @@ repos:
     rev: v6.0.0
     hooks:
       - id: check-case-conflict
+        description: check for files with names that would conflict on a case-insensitive filesystem like MacOS HFS+ or Windows FAT
       - id: check-illegal-windows-names
+        description: check for files that cannot be created on Windows
       - id: check-merge-conflict
+        description: check for files that contain merge conflict strings
       - id: check-vcs-permalinks
+        description: ensures that links to vcs websites are permalinks
       - id: end-of-file-fixer
+        description: makes sure files end in a newline and only a newline
         files: (m|M)akefile$|\.(asp|bas|bat|c|cl|cmd|common|component|cpp|cxx|dxp|el|h|hrc|hxx|idl|in|ini|java|js|lst|m|m4|map|md|mk|mm|mod|pas|php|pl|pm|pmk|py|rc|rdf|rng|sdi|sh|src|ulf|vbs|xba|xcs|xcu|xdl|xhp|xlb|xmi|xml|xsd|xslt?|ya?ml)$|^ext_libraries/.*$|^test/.*$
       - id: fix-byte-order-marker
+        description: removes UTF-8 byte order marker
       - id: mixed-line-ending
+        description: replaces or checks mixed line ending
         files: \.(asp|bas|c|cl|cmd|common|component|cpp|cxx|dxp|el|h|hrc|hxx|idl|in|ini|java|js|lst|m|m4|map|md|mk|mm|mod|pas|php|pl|pm|pmk|py|rc|rdf|rng|sdi|sh|src|ulf|vbs|xba|xcs|xcu|xdl|xhp|xlb|xmi|xsd|xslt?|ya?ml)$|^main/accessibility/.*$|^main/afms/.*$|^main/animations/.*$|^main/apache-commons/.*$|^test/testgui/.*$
       - id: trailing-whitespace
+        description: trims trailing whitespace
         files: (m|M)akefile$|\.(asp|bas|bat|c|cl|cmd|common|component|cpp|cxx|dxp|el|h|hrc|hxx|idl|in|ini|java|js|lst|m|m4|map|md|mk|mm|mod|pas|php|pl|pm|pmk|py|rc|rdf|rng|sdi|sh|src|ulf|vbs|xba|xcs|xcu|xdl|xhp|xlb|xmi|xml|xsd|ya?ml)$
         args: [--markdown-linebreak-ext=md]
   - repo: https://github.com/codespell-project/codespell
@@ -67,7 +75,7 @@ repos:
         args: [--ignore-words=.github/linters/codespell.txt]
         exclude: ^extras/
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.45.0
+    rev: v0.47.0
     hooks:
       - id: markdownlint
         name: run markdownlint
