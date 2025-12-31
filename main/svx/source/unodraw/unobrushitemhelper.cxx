@@ -289,7 +289,7 @@ SvxBrushItem getSvxBrushItemFromSourceSet(const SfxItemSet& rSourceSet, sal_uInt
             const XFillBitmapItem& rBmpItm = static_cast< const XFillBitmapItem& >(rSourceSet.Get(XATTR_FILLBITMAP, bSearchInParents));
             const Graphic aGraphic(rBmpItm.GetGraphicObject().GetGraphic());
 
-            // continue idependent of evtl. GRAPHIC_NONE as aGraphic.GetType(), we still need to rescue positions
+            // continue independent of evtl. GRAPHIC_NONE as aGraphic.GetType(), we still need to rescue positions
             SvxGraphicPosition aSvxGraphicPosition(GPOS_NONE);
             const XFillBmpStretchItem& rStretchItem = static_cast< const XFillBmpStretchItem& >(rSourceSet.Get(XATTR_FILLBMP_STRETCH, bSearchInParents));
             const XFillBmpTileItem& rTileItem = static_cast< const XFillBmpTileItem& >(rSourceSet.Get(XATTR_FILLBMP_TILE, bSearchInParents));

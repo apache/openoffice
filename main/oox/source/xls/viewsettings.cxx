@@ -124,7 +124,7 @@ const sal_Int16 API_SPLITMODE_NONE                  = 0;        /// No splits in
 const sal_Int16 API_SPLITMODE_SPLIT                 = 1;        /// Window is split.
 const sal_Int16 API_SPLITMODE_FREEZE                = 2;        /// Window has frozen panes.
 
-// no predefined constants for pane idetifiers
+// no predefined constants for pane identifiers
 const sal_Int16 API_SPLITPANE_TOPLEFT               = 0;        /// Top-left, or top pane.
 const sal_Int16 API_SPLITPANE_TOPRIGHT              = 1;        /// Top-right pane.
 const sal_Int16 API_SPLITPANE_BOTTOMLEFT            = 2;        /// Bottom-left, bottom, left, or single pane.
@@ -512,7 +512,7 @@ void SheetViewSettings::finalizeImport()
     {
         /*  Frozen panes: handle split position as row/column positions.
             #i35812# Excel uses number of visible rows/columns in the
-                frozen area (rows/columns scolled outside are not incuded),
+                frozen area (rows/columns scrolled outside are not included),
                 Calc uses absolute position of first unfrozen row/column. */
         const CellAddress& rMaxApiPos = getAddressConverter().getMaxApiAddress();
         if( (xModel->mfSplitX >= 1.0) && (xModel->maFirstPos.Column + xModel->mfSplitX <= rMaxApiPos.Column) )
@@ -668,7 +668,7 @@ void ViewSettings::importWindow1( BiffInputStream& rStrm )
     sal_uInt16 nWinX, nWinY, nWinWidth, nWinHeight;
     rStrm >> nWinX >> nWinY >> nWinWidth >> nWinHeight;
 
-    // WINDOW1 record occures in every sheet in BIFF4W
+    // WINDOW1 record occurs in every sheet in BIFF4W
     OSL_ENSURE( maBookViews.empty() || ((getBiff() == BIFF4) && isWorkbookFile()),
         "ViewSettings::importWindow1 - multiple WINDOW1 records" );
     WorkbookViewModel& rModel = createWorkbookView();

@@ -137,7 +137,7 @@ class CFileOpenDialog
 {
 public:
 	// ctor
-	// bFileOpenDialog idicates if we want a FileOpen or FileSave
+	// bFileOpenDialog indicates if we want a FileOpen or FileSave
 	// dialog
 	// dwFlags see OPENFILENAME
 	// dwTemplateId - an ID for custom templates
