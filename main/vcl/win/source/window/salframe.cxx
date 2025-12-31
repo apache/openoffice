@@ -2358,7 +2358,7 @@ void WinSalFrame::SetPointer( PointerStyle ePointerStyle )
 
     };
 
-#if POINTER_COUNT != 94
+#if POINTER_COUNT != 92
 #error New Pointer must be defined!
 #endif
 

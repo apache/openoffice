@@ -102,36 +102,34 @@ typedef sal_uInt16 PointerStyle;
 #define POINTER_PIVOT_FIELD				((PointerStyle)69)
 #define POINTER_CHAIN					((PointerStyle)70)
 #define POINTER_CHAIN_NOTALLOWED		((PointerStyle)71)
-#define POINTER_TIMEEVENT_MOVE			((PointerStyle)72)
-#define POINTER_TIMEEVENT_SIZE			((PointerStyle)73)
-#define POINTER_AUTOSCROLL_N			((PointerStyle)74)
-#define POINTER_AUTOSCROLL_S			((PointerStyle)75)
-#define POINTER_AUTOSCROLL_W			((PointerStyle)76)
-#define POINTER_AUTOSCROLL_E			((PointerStyle)77)
-#define POINTER_AUTOSCROLL_NW			((PointerStyle)78)
-#define POINTER_AUTOSCROLL_NE			((PointerStyle)79)
-#define POINTER_AUTOSCROLL_SW			((PointerStyle)80)
-#define POINTER_AUTOSCROLL_SE			((PointerStyle)81)
-#define POINTER_AUTOSCROLL_NS			((PointerStyle)82)
-#define POINTER_AUTOSCROLL_WE			((PointerStyle)83)
-#define POINTER_AUTOSCROLL_NSWE			((PointerStyle)84)
-#define POINTER_AIRBRUSH				((PointerStyle)85)
-#define POINTER_TEXT_VERTICAL			((PointerStyle)86)
-#define POINTER_PIVOT_DELETE			((PointerStyle)87)
+#define POINTER_AUTOSCROLL_N			((PointerStyle)72)
+#define POINTER_AUTOSCROLL_S			((PointerStyle)73)
+#define POINTER_AUTOSCROLL_W			((PointerStyle)74)
+#define POINTER_AUTOSCROLL_E			((PointerStyle)75)
+#define POINTER_AUTOSCROLL_NW			((PointerStyle)76)
+#define POINTER_AUTOSCROLL_NE			((PointerStyle)77)
+#define POINTER_AUTOSCROLL_SW			((PointerStyle)78)
+#define POINTER_AUTOSCROLL_SE			((PointerStyle)79)
+#define POINTER_AUTOSCROLL_NS			((PointerStyle)80)
+#define POINTER_AUTOSCROLL_WE			((PointerStyle)81)
+#define POINTER_AUTOSCROLL_NSWE			((PointerStyle)82)
+#define POINTER_AIRBRUSH				((PointerStyle)83)
+#define POINTER_TEXT_VERTICAL			((PointerStyle)84)
+#define POINTER_PIVOT_DELETE			((PointerStyle)85)
 
 // --> FME 2004-07-30 #i32329# Enhanced table selection
-#define POINTER_TAB_SELECT_S			((PointerStyle)88)
-#define POINTER_TAB_SELECT_E			((PointerStyle)89)
-#define POINTER_TAB_SELECT_SE			((PointerStyle)90)
-#define POINTER_TAB_SELECT_W			((PointerStyle)91)
-#define POINTER_TAB_SELECT_SW			((PointerStyle)92)
+#define POINTER_TAB_SELECT_S			((PointerStyle)86)
+#define POINTER_TAB_SELECT_E			((PointerStyle)87)
+#define POINTER_TAB_SELECT_SE			((PointerStyle)88)
+#define POINTER_TAB_SELECT_W			((PointerStyle)89)
+#define POINTER_TAB_SELECT_SW			((PointerStyle)90)
 // <--
 
 // --> FME 2004-08-16 #i20119# Paintbrush tool
-#define POINTER_PAINTBRUSH				((PointerStyle)93)
+#define POINTER_PAINTBRUSH				((PointerStyle)91)
 // <--
 
-#define POINTER_COUNT					94
+#define POINTER_COUNT					92
 
 #endif // _VCL_PTRSTYLE_HXX
 
