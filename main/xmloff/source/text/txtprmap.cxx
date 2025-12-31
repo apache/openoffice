@@ -900,7 +900,7 @@ XMLPropertyMapEntry *lcl_txtprmap_getMap( sal_uInt16 nType )
 		pMap = aXMLTextPropMap;
 		break;
 	case TEXT_PROP_MAP_SHAPE_PARA:
-        // #125045# use [21] instead of [1] for text props for Shapes, idices
+        // #125045# use [21] instead of [1] for text props for Shapes, indices
         // [1..20] contain the DrawingLayer FillStyle attributes corresponding to
         // [XATTR_FILL_FIRST .. XATTR_FILL_LAST] and would be double since Shapes
         // already contain these (usually in aXMLSDProperties)

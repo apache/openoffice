@@ -960,7 +960,7 @@ void Writer::Impl_writeImage( const BitmapEx& rBmpEx, const Point& rPt, const Si
 
 			Rectangle cropRect(destRect);
 
-			// AS: The bmp origion is always 0,0 so we have to adjust before we crop.
+			// AS: The bmp origin is always 0,0 so we have to adjust before we crop.
 			cropRect.Move(-srcPt.X(), -srcPt.Y());
 			// AS: Rectangle has no scale function (?!) so I do it manually...
 			Rectangle cropPixelRect(static_cast<long>(cropRect.Left()*XScale),
@@ -1043,9 +1043,9 @@ void Writer::Impl_writeBmp( sal_uInt16 nBitmapId, sal_uInt32 width, sal_uInt32 h
 
 void Writer::Impl_writeJPEG(sal_uInt16 nBitmapId, const sal_uInt8* pJpgData, sal_uInt32 nJpgDataLength, sal_uInt8 *pAlphaCompressed, sal_uInt32 alpha_compressed_size )
 {
-	// AS: Go through the actuall JPEG bits, separating out the
+	// AS: Go through the actual JPEG bits, separating out the
 	//  header fields from the actual image fields.  Fields are
-	//  identifed by 0xFFXX where XX is the field type.  Both
+	//  identified by 0xFFXX where XX is the field type.  Both
 	//  the header and the image need start and stop (D8 and D9),
 	//  so that's why you see those written to both.  I don't
 	//  really know what the rest of these are, I got it to work

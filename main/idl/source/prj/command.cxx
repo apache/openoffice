@@ -62,7 +62,7 @@ char const * SyntaxStrings[] = {
 "\ttype definition:",
 "\tstruct | union identifier",
 "\t'{'",
-"\t\t{ type idetifier }",
+"\t\t{ type identifier }",
 "\t'}'",
 "\t|",
 "\tenum identifier",

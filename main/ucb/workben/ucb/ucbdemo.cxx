@@ -843,7 +843,7 @@ UcbContent* UcbContent::create(
 
 	//////////////////////////////////////////////////////////////////////
 	// Get XContentIdentifier interface from UCB and let it create an
-	// identifer for the given URL.
+	// identifier for the given URL.
 	//////////////////////////////////////////////////////////////////////
 
     uno::Reference< ucb::XContentIdentifierFactory > xIdFac =
