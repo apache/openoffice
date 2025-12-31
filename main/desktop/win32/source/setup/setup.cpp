@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #define WIN // scope W32 API
 
 #if defined _MSC_VER
@@ -1052,7 +1050,7 @@ void SetupAppX::DisplayError( UINT nErr ) const
         case ERROR_OUTOFMEMORY: WIN::LoadString( m_hInst, IDS_OUTOFMEM, sError, MAX_TEXT_LENGTH );
                                 break;
         case ERROR_INSTALL_USEREXIT:
-                                WIN::LoadString( m_hInst, IDS_USER_CANCELLED, sError, MAX_TEXT_LENGTH );
+                                WIN::LoadString( m_hInst, IDS_USER_CANCELED, sError, MAX_TEXT_LENGTH );
                                 break;
         case ERROR_INSTALL_ALREADY_RUNNING: // 1618
                                 WIN::LoadString( m_hInst, IDS_ALREADY_RUNNING, sError, MAX_TEXT_LENGTH );
@@ -1893,8 +1891,6 @@ boolean SetupAppX::IsPatchInstalled( TCHAR* pBaseDir, TCHAR* pFileName )
     else if ( nRet == ERROR_UNKNOWN_PROPERTY )
         return false;
     else return false;
-
-	return false;
 }
 
 //--------------------------------------------------------------------------
