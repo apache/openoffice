@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #ifndef _RESOURCE_H
 #define _RESOURCE_H
 
@@ -28,7 +26,7 @@
 #define IDS_APP_PROD_TITLE	11
 #define IDS_OUTOFMEM	12
 #define IDS_NOMSI	13
-#define IDS_USER_CANCELLED	14
+#define IDS_USER_CANCELED	14
 #define IDS_REQUIRES_ADMIN_PRIV	15
 #define IDS_FILE_NOT_FOUND	16
 #define IDS_INVALID_PARAM	17

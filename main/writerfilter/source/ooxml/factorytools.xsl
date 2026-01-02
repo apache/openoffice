@@ -91,7 +91,7 @@ IDENTIFIERs
 
 <!--
 
-generates token identifer for a namespace
+generates token identifier for a namespace
 
 NN_<namespace/@name>
 
@@ -141,7 +141,7 @@ NN_<namespace/@name>
     <xsl:value-of select="translate(@name, '-', '_')"/>
 </xsl:template>
 
-<!-- generates local part of identier for rng:define 
+<!-- generates local part of identifier for rng:define
 
 DEFINE_<rng:define/@name>
 
