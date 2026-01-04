@@ -34,11 +34,6 @@ TARGET=salsrc
 RCDEPN=		nullptr.ptr		\
 			help.ptr		\
 			cross.ptr		\
-			move.ptr		\
-			hsplit.ptr		\
-			vsplit.ptr		\
-			hsizebar.ptr	\
-			vsizebar.ptr	\
 			hand.ptr		\
 			refhand.ptr		\
 			pen.ptr			\
@@ -101,3 +96,5 @@ RCFILES=	salsrc.rc
 # --- Targets ------------------------------------------------------
 
 .INCLUDE : target.mk
+
+# vim: set noet sw=4 ts=4:
