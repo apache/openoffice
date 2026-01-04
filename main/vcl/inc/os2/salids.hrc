@@ -26,11 +26,11 @@
 #define SAL_RESID_POINTER_NULL					10000
 #define SAL_RESID_POINTER_HELP					10001
 #define SAL_RESID_POINTER_CROSS					10002
-#define SAL_RESID_POINTER_MOVE					10003
-#define SAL_RESID_POINTER_HSPLIT				10004
-#define SAL_RESID_POINTER_VSPLIT				10005
-#define SAL_RESID_POINTER_HSIZEBAR				10006
-#define SAL_RESID_POINTER_VSIZEBAR				10007
+//#define SAL_RESID_POINTER_MOVE				10003 // Replaced with System Pointer in January 2026
+//#define SAL_RESID_POINTER_HSPLIT				10004 // Replaced with System Pointer in January 2026
+//#define SAL_RESID_POINTER_VSPLIT				10005 // Replaced with System Pointer in January 2026
+//#define SAL_RESID_POINTER_HSIZEBAR			10006 // Replaced with System Pointer in January 2026
+//#define SAL_RESID_POINTER_VSIZEBAR			10007 // Replaced with System Pointer in January 2026
 #define SAL_RESID_POINTER_HAND					10008
 #define SAL_RESID_POINTER_REFHAND				10009
 #define SAL_RESID_POINTER_PEN					10010
