@@ -19,8 +19,6 @@
 #
 #**************************************************************
 
-
-
 PRJ=..$/..$/..
 
 PRJNAME=SV
@@ -28,11 +26,11 @@ TARGET=salwin
 
 # --- Settings -----------------------------------------------------
 
-.INCLUDE :  settings.mk
+.INCLUDE : settings.mk
 
 # --- Files --------------------------------------------------------
 
-CXXFILES__YD=	salframe.cxx			\
+CXXFILES__YD=	salframe.cxx		\
 			salobj.cxx
 
 SLOFILES=	$(SLO)$/salframe.obj 	\
@@ -40,4 +38,6 @@ SLOFILES=	$(SLO)$/salframe.obj 	\
 
 # --- Targets ------------------------------------------------------
 
-.INCLUDE :  target.mk
+.INCLUDE : target.mk
+
+# vim: set noet sw=4 ts=4:

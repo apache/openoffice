@@ -19,8 +19,6 @@
 #
 #**************************************************************
 
-
-
 PRJ=..$/..$/..
 
 PRJNAME=SV
@@ -28,11 +26,10 @@ TARGET=salapp
 
 # --- Settings -----------------------------------------------------
 
-#.INCLUDE :  svpre.mk
-.INCLUDE :  settings.mk
-#.INCLUDE :  sv.mk
-.INCLUDE :  $(PRJ)$/util$/makefile2.pmk
-
+#.INCLUDE : svpre.mk
+.INCLUDE : settings.mk
+#.INCLUDE : sv.mk
+.INCLUDE : $(PRJ)$/util$/makefile2.pmk
 
 # --- Files --------------------------------------------------------
 
@@ -52,4 +49,6 @@ SLOFILES=	$(SLO)$/salshl.obj	\
 
 # --- Targets ------------------------------------------------------
 
-.INCLUDE :  target.mk
+.INCLUDE : target.mk
+
+# vim: set noet sw=4 ts=4:
