@@ -150,13 +150,10 @@ $(eval $(call gb_WinResTarget_add_dependency,vcl/src,\
 	vcl/os2/source/src/hand.ptr \
 	vcl/os2/source/src/help.ptr \
 	vcl/os2/source/src/hshear.ptr \
-	vcl/os2/source/src/hsizebar.ptr \
-	vcl/os2/source/src/hsplit.ptr \
 	vcl/os2/source/src/linkdata.ptr \
 	vcl/os2/source/src/linkf.ptr \
 	vcl/os2/source/src/magnify.ptr \
 	vcl/os2/source/src/mirror.ptr \
-	vcl/os2/source/src/move.ptr \
 	vcl/os2/source/src/movebw.ptr \
 	vcl/os2/source/src/movedata.ptr \
 	vcl/os2/source/src/movedlnk.ptr \
@@ -180,8 +177,6 @@ $(eval $(call gb_WinResTarget_add_dependency,vcl/src,\
 	vcl/os2/source/src/tblselsw.ptr \
 	vcl/os2/source/src/tblselw.ptr \
 	vcl/os2/source/src/vshear.ptr \
-	vcl/os2/source/src/vsizebar.ptr \
-	vcl/os2/source/src/vsplit.ptr \
 	vcl/os2/source/src/vtext.ptr \
 ))
 
