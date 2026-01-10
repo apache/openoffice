@@ -223,7 +223,7 @@ const aCursorTab[ POINTER_COUNT ] =
 { "ase", { 19, 16 } }, //POINTER_AUTOSCROLL_E
 { "asnw", { 10, 10 } }, //POINTER_AUTOSCROLL_NW
 { "asne", { 21, 10 } }, //POINTER_AUTOSCROLL_NE
-{ "assw", { 21, 21 } }, //POINTER_AUTOSCROLL_SW
+{ "assw", { 10, 21 } }, //POINTER_AUTOSCROLL_SW
 { "asse", { 21, 21 } }, //POINTER_AUTOSCROLL_SE
 { "asns", { 15, 15 } }, //POINTER_AUTOSCROLL_NS
 { "aswe", { 15, 15 } }, //POINTER_AUTOSCROLL_WE
