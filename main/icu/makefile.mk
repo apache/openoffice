@@ -44,6 +44,7 @@ TARFILE_ROOTDIR=icu
 
 # TODO file icu-mp.patch does not seem to be required
 PATCH_FILES=${TARFILE_NAME}.patch icu-win-layout.patch \
+	icu-parallel-build.patch \
 	icu-format-security.patch icu-win-icutu-dll-version.patch \
 	icu-vcproj-outputdirectory.patch
 
