@@ -1,0 +1,20 @@
+diff -ur misc/icu/source/extra/uconv/Makefile.in misc/build/icu/source/extra/uconv/Makefile.in
+--- misc/icu/source/extra/uconv/Makefile.in	2009-07-01 11:50:32.000000000 -0700
++++ misc/build/icu/source/extra/uconv/Makefile.in
+@@ -140,14 +140,14 @@
+ 	$(LINK.cc) $(OUTOPT)$@ $(OBJECTS) $(LIBS)
+ 	$(POST_BUILD_STEP)
+ 
+-resfiles: $(RESFILES) package-resfiles
++resfiles: package-resfiles
+ 
+ ifeq ($(UCONVMSG_STATIC),YES)
+ $(UCONVMSG_LIB): resfiles
+ endif
+ 
+ 
+-package-resfiles: $(RESDIR)/$(RESDIR).lst pkgdata.inc
++package-resfiles: $(RESFILES) $(RESDIR)/$(RESDIR).lst pkgdata.inc $(RESFILES)
+ 	$(INVOKE) $(PKGDATA_INVOKE_OPTS) $(TOOLBINDIR)/pkgdata -p $(MSGNAME) $(PKGDATA_OPTS) -m $(PKGMODE) -s $(RESDIR) -d $(RESDIR) -T $(RESDIR) $(RESDIR)/$(RESDIR).lst
+ 
+ $(RESDIR)/$(RESDIR).lst: Makefile $(srcdir)/resfiles.mk
