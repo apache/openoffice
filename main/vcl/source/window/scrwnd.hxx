@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #include <vcl/floatwin.hxx>
 #include <vcl/bitmap.hxx>
 #include <vcl/image.hxx>
@@ -64,7 +62,7 @@ private:
 
 	void				ImplCreateImageList();
 	void				ImplSetRegion( const Bitmap& rRegionBmp );
-    using Window::ImplGetMousePointer;
+	using Window::ImplGetMousePointer;
 	PointerStyle		ImplGetMousePointer( long nDistX, long nDistY );
 	void				ImplDrawWheel();
 	void				ImplRecalcScrollValues();
@@ -82,7 +80,9 @@ public:
 						ImplWheelWindow( Window* pParent );
 						~ImplWheelWindow();
 
-    void                ImplStop();
+	void				ImplStop();
 	void				ImplSetWheelMode( sal_uLong nWheelMode );
 	sal_uLong				ImplGetWheelMode() const { return mnWheelMode; }
 };
+
+/* vim: set noet sw=4 ts=4: */
