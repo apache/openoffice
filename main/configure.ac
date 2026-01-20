@@ -4002,7 +4002,7 @@ elif test -n "$with_system_python" -o -n "$with_system_libs" && \
    AC_MSG_RESULT([external])
    AM_PATH_PYTHON([2.7])
 
-   if ! $_python -c "import distutils.sysconfig;"; then
+   if ! $PYTHON -c "import distutils.sysconfig;"; then
        AC_MSG_ERROR([python setuptools module is required to provide distutils for python >= 3.12])
    fi
    python_include=`$PYTHON -c "import distutils.sysconfig; print(distutils.sysconfig.get_config_var('INCLUDEPY'));"`
