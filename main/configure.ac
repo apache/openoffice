@@ -3958,6 +3958,9 @@ if test "$_os" = "Darwin" && test "$with_system_python" != "no"; then
    	  _python_version=`$_python -c "import sys; print sys.version;" | head -c 3`
       AC_MSG_RESULT([compiling against system python (version $_python_version)])
 
+	  if ! $_python -c "import distutils.sysconfig;"; then
+	      AC_MSG_ERROR([python setuptools module is required to provide distutils for python >= 3.12])
+	  fi
 	  _python_ver=`$_python -c "import distutils.sysconfig; print(distutils.sysconfig.get_config_var('VERSION'));"`
 	  
 	  if test -d "/Library/Frameworks/Python.framework/Versions/$_python_ver/include/python$_python_ver"; then
@@ -3978,6 +3981,9 @@ elif test -n "$with_system_python" -o -n "$with_system_libs" && \
    AC_MSG_RESULT([external])
    AM_PATH_PYTHON([2.7])
 
+   if ! $_python -c "import distutils.sysconfig;"; then
+       AC_MSG_ERROR([python setuptools module is required to provide distutils for python >= 3.12])
+   fi
    python_include=`$PYTHON -c "import distutils.sysconfig; print(distutils.sysconfig.get_config_var('INCLUDEPY'));"`
    python_version=`$PYTHON -c "import distutils.sysconfig; print(distutils.sysconfig.get_config_var('VERSION'));"`
    PYTHON_CFLAGS="-I$python_include"
