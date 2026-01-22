@@ -563,7 +563,7 @@ SalI18N_InputContext::SupportInputMethodStyle( XIMStyles *pIMStyles )
     {
         // check whether the XIM supports one of the desired styles
         // only a single preedit and a single status style must occur
-        // in a inpuut method style. Hideki said so, so i trust him
+        // in a input method style. Hideki said so, so i trust him
         for ( int nStyle = 0; nStyle < pIMStyles->count_styles; nStyle++ )
         {
             XIMStyle nProvidedStyle = pIMStyles->supported_styles[ nStyle ];

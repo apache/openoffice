@@ -238,7 +238,7 @@ static sal_Bool CallRsc2( ByteString aRsc2Name,
 			  || !rsc_stricmp( (char *)pCmdLine->GetEntry( i ), "-br" )
 			  || !rsc_stricmp( (char *)pCmdLine->GetEntry( i ), "-bz" )
 			  || !rsc_stricmp( (char *)pCmdLine->GetEntry( i ), "-r" )
-              // Am I the only one that thinks the following line inludes all the tests before?
+              // Am I the only one that thinks the following line includes all the tests before?
 			  || ( '-' != *(char *)pCmdLine->GetEntry( i ) ) )
 			{
 			}

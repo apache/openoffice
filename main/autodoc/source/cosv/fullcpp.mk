@@ -24,7 +24,7 @@
 
 
 # --- Settings -----------------------------------------------------
-# Has to be inlcuded AFTER settings.mk !
+# Has to be included AFTER settings.mk !
 
 
 .IF "$(GUI)"=="WNT"

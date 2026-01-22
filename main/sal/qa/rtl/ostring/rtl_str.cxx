@@ -111,7 +111,7 @@ namespace rtl_str
         rtl::OString aStr2 = "LINE MUST BE EQUAL.";
 
         sal_Int32 nValue = rtl_str_compareIgnoreAsciiCase( aStr1.getStr(), aStr2.getStr());
-        ASSERT_TRUE(nValue == 0) << "compare failed, strings are equal (if case insensitve).";
+        ASSERT_TRUE(nValue == 0) << "compare failed, strings are equal (if case insensitive).";
     }
 
     TEST_F(compareIgnoreAsciiCase, compare_003)
@@ -167,7 +167,7 @@ namespace rtl_str
         sal_Int32 nValue = rtl_str_shortenedCompareIgnoreAsciiCase_WithLength( aStr1.getStr(), aStr1.getLength(),
                                                                                aStr2.getStr(), aStr2.getLength(),
                                                                                aStr1.getLength());
-        ASSERT_TRUE(nValue == 0) << "compare failed, strings are equal (if case insensitve).";
+        ASSERT_TRUE(nValue == 0) << "compare failed, strings are equal (if case insensitive).";
     }
 
     TEST_F(shortenedCompareIgnoreAsciiCase_WithLength, compare_003)
