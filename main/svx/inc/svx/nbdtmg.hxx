@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #ifndef _NBDTMG_HXX
 #define _NBDTMG_HXX
 #include "svx/svxdllapi.h"
@@ -43,7 +41,7 @@ namespace svx { namespace sidebar {
 #define DEFAULT_BULLET_TYPES							8
 #define DEFAULT_NONE									10
 #define DEFAULT_NUM_TYPE_MEMBER							5
-#define DEFAULT_NUM_VALUSET_COUNT						8
+#define DEFAULT_NUM_VALUESET_COUNT						8
 #define DEFAULT_NUMBERING_CACHE_FORMAT_VERSION			0x10
 
 typedef sal_uInt16 NBOType;
@@ -63,7 +61,7 @@ namespace eNBType
 	const NBOType GRAPHICBULLETS = 0x02;
 }
 
-class  SVX_DLLPUBLIC NumSettings_Impl
+class SVX_DLLPUBLIC NumSettings_Impl
 {
 	public:
 		short		nNumberType;
@@ -77,7 +75,7 @@ class  SVX_DLLPUBLIC NumSettings_Impl
 		rtl::OUString	sSuffix;
 		rtl::OUString	sBulletChar;
 		rtl::OUString	sBulletFont;
-		SvxBrushItem   *pBrushItem;
+		SvxBrushItem	*pBrushItem;
 		Size			aSize;
 
 	public:
@@ -96,7 +94,7 @@ SV_IMPL_PTRARR( NumSettingsArr_Impl, NumSettings_ImplPtr )*/
 
 class NumSettingsArr_Impl;
 
-class  SVX_DLLPUBLIC BulletsSettings
+class SVX_DLLPUBLIC BulletsSettings
 {
 	public:
 		sal_Bool 		bIsCustomized;
@@ -110,7 +108,7 @@ class  SVX_DLLPUBLIC BulletsSettings
 		virtual ~BulletsSettings(){}
 };
 
-class  SVX_DLLPUBLIC BulletsSettings_Impl:public BulletsSettings
+class SVX_DLLPUBLIC BulletsSettings_Impl:public BulletsSettings
 {
 	public:
 		sal_Unicode	cBulletChar;
@@ -124,7 +122,7 @@ class  SVX_DLLPUBLIC BulletsSettings_Impl:public BulletsSettings
 		virtual ~BulletsSettings_Impl(){}
 };
 
-class  SVX_DLLPUBLIC GrfBulDataRelation: public BulletsSettings
+class SVX_DLLPUBLIC GrfBulDataRelation: public BulletsSettings
 {
 	public:
 		String 	sGrfName;
@@ -142,7 +140,7 @@ class  SVX_DLLPUBLIC GrfBulDataRelation: public BulletsSettings
 	virtual ~GrfBulDataRelation(){}
 };
 
-class  SVX_DLLPUBLIC MixBulletsSettings_Impl
+class SVX_DLLPUBLIC MixBulletsSettings_Impl
 {
 	public:
 		NBType			eType;
@@ -159,7 +157,7 @@ class  SVX_DLLPUBLIC MixBulletsSettings_Impl
 		~MixBulletsSettings_Impl(){}
 };
 
-class  SVX_DLLPUBLIC NumberSettings_Impl
+class SVX_DLLPUBLIC NumberSettings_Impl
 {
 	public:
 		sal_Bool 		bIsCustomized;
@@ -179,7 +177,7 @@ class  SVX_DLLPUBLIC NumberSettings_Impl
 
 class NumberSettingsArr_Impl;
 
-class  SVX_DLLPUBLIC OutlineSettings_Impl
+class SVX_DLLPUBLIC OutlineSettings_Impl
 {
 	public:
 		sal_Bool 		bIsCustomized;
@@ -231,7 +229,6 @@ class SVX_DLLPUBLIC NBOTypeMgrBase
 
 };
 
-
 class SVX_DLLPUBLIC BulletsTypeMgr: public NBOTypeMgrBase
 {
 	friend class OutlineTypeMgr;
@@ -257,11 +254,11 @@ class SVX_DLLPUBLIC BulletsTypeMgr: public NBOTypeMgrBase
 		static BulletsTypeMgr* GetInstance()
 		{
 			 if ( _instance == 0 )
-	                {
-	                    _instance = new BulletsTypeMgr(eNBOType::BULLETS);
-	                }
+					{
+						_instance = new BulletsTypeMgr(eNBOType::BULLETS);
+					}
 
-	                return _instance;
+					return _instance;
 		}
 
 };
@@ -288,11 +285,11 @@ class SVX_DLLPUBLIC GraphicBulletsTypeMgr: public NBOTypeMgrBase
 		static GraphicBulletsTypeMgr* GetInstance()
 		{
 			 if ( _instance == 0 )
-	                {
-	                    _instance = new GraphicBulletsTypeMgr(eNBOType::BULLETS);
-	                }
+					{
+						_instance = new GraphicBulletsTypeMgr(eNBOType::BULLETS);
+					}
 
-	                return _instance;
+					return _instance;
 		}
 
 };
@@ -319,11 +316,11 @@ class SVX_DLLPUBLIC MixBulletsTypeMgr: public NBOTypeMgrBase
 		static MixBulletsTypeMgr* GetInstance()
 		{
 			 if ( _instance == 0 )
-	                {
-	                    _instance = new MixBulletsTypeMgr(eNBOType::MIXBULLETS);
-	                }
+					{
+						_instance = new MixBulletsTypeMgr(eNBOType::MIXBULLETS);
+					}
 
-	                return _instance;
+					return _instance;
 		}
 
 };
@@ -351,20 +348,20 @@ class SVX_DLLPUBLIC NumberingTypeMgr: public NBOTypeMgrBase
 		static NumberingTypeMgr* GetInstance()
 		{
 			 if ( _instance == 0 )
-	                {
-	                    _instance = new NumberingTypeMgr(eNBOType::NUMBERING);
-	                }
+					{
+						_instance = new NumberingTypeMgr(eNBOType::NUMBERING);
+					}
 
-	                return _instance;
+					return _instance;
 		}
 };
 
 class SVX_DLLPUBLIC OutlineTypeMgr: public NBOTypeMgrBase
 {
 	public:
-		//NumSettingsArr_Impl*		pNumSettingsArrs[DEFAULT_NUM_VALUSET_COUNT];
-		OutlineSettings_Impl*		pOutlineSettingsArrs[DEFAULT_NUM_VALUSET_COUNT];
-		OutlineSettings_Impl*		pDefaultOutlineSettingsArrs[DEFAULT_NUM_VALUSET_COUNT];
+		//NumSettingsArr_Impl*		pNumSettingsArrs[DEFAULT_NUM_VALUESET_COUNT];
+		OutlineSettings_Impl*		pOutlineSettingsArrs[DEFAULT_NUM_VALUESET_COUNT];
+		OutlineSettings_Impl*		pDefaultOutlineSettingsArrs[DEFAULT_NUM_VALUESET_COUNT];
 		static OutlineTypeMgr* 	_instance;
 	public:
 		OutlineTypeMgr(const NBOType aType);
@@ -380,12 +377,14 @@ class SVX_DLLPUBLIC OutlineTypeMgr: public NBOTypeMgrBase
 		static OutlineTypeMgr* GetInstance()
 		{
 			 if ( _instance == 0 )
-	                {
-	                    _instance = new OutlineTypeMgr(eNBOType::OUTLINE);
-	                }
+					{
+						_instance = new OutlineTypeMgr(eNBOType::OUTLINE);
+					}
 
-	                return _instance;
+					return _instance;
 		}
 };
 }}
 #endif
+
+/* vim: set noet sw=4 ts=4: */
