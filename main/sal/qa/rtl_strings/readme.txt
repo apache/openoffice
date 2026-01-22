@@ -1,4 +1,4 @@
-This is the old test implemantation of rtl::XString.
+This is the old test implementation of rtl::XString.
 If you want to write new or better tests:
 Identify the test function in the source and remark it.
 

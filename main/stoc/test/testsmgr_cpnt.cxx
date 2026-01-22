@@ -258,7 +258,7 @@ extern "C" void SAL_CALL test_ServiceManager()
 
 		// getImplementations() check
  		Sequence<OUString> seqImpl = xInst->getImplementations(OUString::createFromAscii("com.sun.star.loader.SharedLibrary"), atUModule2);
-		TEST_ENSHURE( seqImpl.getLength() == 1, "count of implementantions is wrong" );
+		TEST_ENSHURE( seqImpl.getLength() == 1, "count of implementations is wrong" );
 		TEST_ENSHURE( seqImpl.getConstArray()[0] == OUString::createFromAscii("com.sun.star.DummyService.V10"), "implementation name is not equal" );
 
 

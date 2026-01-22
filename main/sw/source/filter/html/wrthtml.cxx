@@ -723,7 +723,7 @@ static Writer& OutHTML_Section( Writer& rWrt, const SwSectionNode& rSectNd )
 		lcl_html_OutSectionEndTag( rHTMLWrt, pCol );
 
 	// The surrounding section must be started again, except that it ends
-	// immeditaly behind the current one.
+	// immediately behind the current one.
 	if( pSurrCol &&
 		pSurrSectNd->EndOfSectionIndex() - nSectEndIdx > 1 &&
 		!lcl_html_IsMultiColStart( rHTMLWrt, nSectEndIdx+1 ) )
