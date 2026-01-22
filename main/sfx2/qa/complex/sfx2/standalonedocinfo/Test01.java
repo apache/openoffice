@@ -59,7 +59,7 @@ public class Test01 implements StandaloneDocumentInfoTest {
                 Object oTempFile = m_xMSF.createInstance ( "com.sun.star.io.TempFile" );
                 XTempFile xTempFile = UnoRuntime.queryInterface(XTempFile.class, oTempFile);
 
-                //create a text document and initiallize it
+                //create a text document and initialize it
                 Object oTextDocument = m_xMSF.createInstance ( "com.sun.star.text.TextDocument" );
                 XLoadable xLoadable = UnoRuntime.queryInterface(XLoadable.class, oTextDocument);
                 xLoadable.initNew();

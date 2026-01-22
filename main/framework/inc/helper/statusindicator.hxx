@@ -70,7 +70,7 @@ namespace framework{
 */
 class StatusIndicator : public  css::lang::XTypeProvider
                       , public  css::task::XStatusIndicator
-                      , private ThreadHelpBase                  // Order of baseclasses is necessary for right initializaton!
+                      , private ThreadHelpBase                  // Order of baseclasses is necessary for right initialization!
                       , public  ::cppu::OWeakObject             // => XInterface
 {
     //-------------------------------------------
