@@ -2274,7 +2274,7 @@ uno::Any Content::open(
                             new DAVResourceAccess( *m_xResAccess.get() ) );
                     }
 
-                    // fill inputsream sync; return if all data present
+                    // fill inputstream sync; return if all data present
                     DAVResource aResource;
                     std::vector< rtl::OUString > aHeaders;
 

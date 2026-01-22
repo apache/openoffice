@@ -2521,7 +2521,7 @@ sal_Bool CompareSortingData_Impl( SortingData_Impl* const aOne, SortingData_Impl
         switch ( gnColumn )
         {
             case COLUMN_TITLE:
-                // compare case insensitiv first
+                // compare case insensitive first
                 nComp = pCollatorWrapper->compareString( aOne->GetLowerTitle(), aTwo->GetLowerTitle() );
 
                 if ( nComp == 0 )
