@@ -124,7 +124,7 @@ rtlCipher SAL_CALL rtl_cipher_create (
 ) SAL_THROW_EXTERN_C();
 
 
-/** Inititialize a cipher for the given direction.
+/** Initialize a cipher for the given direction.
     @see rtlCipherDirection
 
 	@param  Cipher    [in] cipher handle.
@@ -204,7 +204,7 @@ rtlCipher SAL_CALL rtl_cipher_createBF (
 ) SAL_THROW_EXTERN_C();
 
 
-/** Inititialize a Blowfish cipher for the given direction.
+/** Initialize a Blowfish cipher for the given direction.
 	@see rtl_cipher_init()
  */
 rtlCipherError SAL_CALL rtl_cipher_initBF (
@@ -262,7 +262,7 @@ rtlCipher SAL_CALL rtl_cipher_createARCFOUR (
 ) SAL_THROW_EXTERN_C();
 
 
-/** Inititialize a RC4 cipher for the given direction.
+/** Initialize a RC4 cipher for the given direction.
 	@see rtl_cipher_init()
  */
 rtlCipherError SAL_CALL rtl_cipher_initARCFOUR (

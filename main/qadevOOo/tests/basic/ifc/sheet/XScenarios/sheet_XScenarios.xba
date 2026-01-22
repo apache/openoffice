@@ -53,7 +53,7 @@ On Error Goto ErrHndl
     Test.StartMethod("addNewByName()")
     bOK = true
     nCount = oObj.getCount()
-    Out.Log("Initialy there are " &amp; nCount &amp; " scenarios.")
+    Out.Log("Initially there are " &amp; nCount &amp; " scenarios.")
     oObj.addNewByName("NewScenario", aCRA(), "New comment")
     Out.Log("After inserting there are " &amp; oObj.getCount() &amp; " scenarios.")
     bOK = bOK AND oObj.getCount() = nCount + 1

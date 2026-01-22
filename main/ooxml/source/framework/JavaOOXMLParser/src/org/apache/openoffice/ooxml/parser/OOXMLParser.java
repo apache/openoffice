@@ -89,7 +89,7 @@ public class OOXMLParser
         final ActionContext aActionContext = new ActionContext();
         AddSomeActions(aMachine.GetActionManager(), aActionContext);
 
-        System.out.printf("initialzed parser in %fs\n", (nEndTime-nStartTime)/1000.0);
+        System.out.printf("initialized parser in %fs\n", (nEndTime-nStartTime)/1000.0);
 
         try
         {

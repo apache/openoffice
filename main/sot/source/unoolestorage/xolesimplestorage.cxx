@@ -220,7 +220,7 @@ void SAL_CALL OLESimpleStorage::initialize( const uno::Sequence< uno::Any >& aAr
 				uno::RuntimeException)
 {
 	if ( m_pStream || m_pStorage )
-		throw io::IOException(); // TODO: already initilized
+		throw io::IOException(); // TODO: already initialized
 
 	sal_Int32 nArgNum = aArguments.getLength();
 	OSL_ENSURE( nArgNum >= 1 && nArgNum <= 2, "Wrong parameter number" );
