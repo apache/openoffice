@@ -526,7 +526,7 @@ public class AccessibleObjectFactory {
             w.setFocusTraversalPolicy(focusTraversalPolicy);
             w.setVisible(true);
 
-            // Make the new window the focused one if it has an initialy focused object set.
+            // Make the new window the focused one if it has an initially focused object set.
             java.awt.Component c = ((NativeFrame) w).getInitialComponent();
             if (c != null) {
                 postWindowGainedFocus(w);

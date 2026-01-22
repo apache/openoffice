@@ -125,7 +125,7 @@ class GrammarCheckingIterator:
     osl::Condition  m_aWakeUpThread;
     osl::Condition  m_aRequestEndThread;
 
-    //! beware of initilization order !
+    //! beware of initialization order !
     struct MyMutex : public rtl::Static< osl::Mutex, MyMutex > {};
 	//
     cppu::OInterfaceContainerHelper     m_aEventListeners;

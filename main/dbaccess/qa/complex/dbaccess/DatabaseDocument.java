@@ -417,7 +417,7 @@ public class DatabaseDocument extends TestCase implements com.sun.star.document.
         assertEquals("wrong URL after loading the document", documentURL, databaseDoc.getURL());
         impl_checkDocumentInitState(databaseDoc, true);
 
-        // and while we are here ... initilizing the same document again should not be possible
+        // and while we are here ... initializing the same document again should not be possible
         assureException( databaseDoc, XLoadable.class, "initNew", new Object[0],
             DoubleInitializationException.class );
         assureException( databaseDoc, XLoadable.class, "load", new Object[] { new PropertyValue[0] },

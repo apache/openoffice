@@ -682,7 +682,7 @@ namespace osl_ClearableGuard
 		/// it will return sal_False if the aMutex has not been Guarded.
 		sal_Bool bRes = aMutex.release( );
 
-		ASSERT_TRUE(bRes == sal_True) << "ClearableMutexGuard constructor, test the acquire operation when initilized.";
+		ASSERT_TRUE(bRes == sal_True) << "ClearableMutexGuard constructor, test the acquire operation when initialized.";
 	}
 
 	TEST_F(ClearableGuardConstructor, ctor_002 )
@@ -695,7 +695,7 @@ namespace osl_ClearableGuard
 		/// it will return sal_False if the aMutex has not been Guarded.
 		sal_Bool bRes = aMutex.release( );
 
-		ASSERT_TRUE(bRes == sal_True) << "ClearableMutexGuard constructor, test the acquire operation when initilized, we use reference constructor this time.";
+		ASSERT_TRUE(bRes == sal_True) << "ClearableMutexGuard constructor, test the acquire operation when initialized, we use reference constructor this time.";
 	}
 
 	class clear : public ::testing::Test
@@ -806,7 +806,7 @@ namespace osl_ResettableGuard
 		/// it will return sal_False if the aMutex has not been Guarded.
 		sal_Bool bRes = aMutex.release( );
 
-		ASSERT_TRUE(bRes == sal_True) << "ResettableMutexGuard constructor, test the acquire operation when initilized.";
+		ASSERT_TRUE(bRes == sal_True) << "ResettableMutexGuard constructor, test the acquire operation when initialized.";
 	}
 
 	TEST_F(ctor, ctor_002 )
@@ -819,7 +819,7 @@ namespace osl_ResettableGuard
 		/// it will return sal_False if the aMutex has not been Guarded.
 		sal_Bool bRes = aMutex.release( );
 
-		ASSERT_TRUE(bRes == sal_True) << "ResettableMutexGuard constructor, test the acquire operation when initilized, we use reference constructor this time.";
+		ASSERT_TRUE(bRes == sal_True) << "ResettableMutexGuard constructor, test the acquire operation when initialized, we use reference constructor this time.";
 	}
 
 

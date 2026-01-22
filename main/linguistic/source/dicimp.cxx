@@ -384,7 +384,7 @@ sal_uLong DictionaryNeo::loadEntries(const OUString &rMainURL)
 
 	DBG_ASSERT(isSorted(), "lng : dictionary is not sorted");
 
-	// since this routine should be called only initialy (prior to any
+	// since this routine should be called only initially (prior to any
 	// modification to be saved) we reset the bIsModified flag here that
 	// was implicitly set by addEntry_Impl
 	bIsModified = sal_False;
