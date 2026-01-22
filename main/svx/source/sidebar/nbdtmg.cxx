@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #include "precompiled_svx.hxx"
 #ifndef _NBDTMG_HXX
 #include <svx/nbdtmg.hxx>
@@ -100,7 +98,7 @@ using rtl::OUString;
 
 namespace svx { namespace sidebar {
 #define NUM_TYPE_MEMBER			4
-#define NUM_VALUSET_COUNT		16
+#define NUM_VALUESET_COUNT		16
 #define MAX_VALUESET_GRAPHIC	30
 
 typedef NumSettings_Impl* NumSettings_ImplPtr;
@@ -241,7 +239,7 @@ void NBOTypeMgrBase::ImplLoad(String filename)
 		{
 			*pIStm >> nNumIndex;
 			sal_uInt16 mLevel = 0x1;
-			while (nNumIndex>=0 && nNumIndex<DEFAULT_NUM_VALUSET_COUNT) {
+			while (nNumIndex>=0 && nNumIndex<DEFAULT_NUM_VALUESET_COUNT) {
 				SvxNumRule aNum(*pIStm);
 				// bullet color in font properties is not stored correctly. Need set transparency bits manually
 				for(sal_uInt16 i = 0; i < aNum.GetLevelCount(); i++)
@@ -278,7 +276,7 @@ void NBOTypeMgrBase::ImplStore(String filename)
 		sal_Int32	nNumIndex;
 		nVersion = DEFAULT_NUMBERING_CACHE_FORMAT_VERSION;
 		*pOStm << nVersion;
-		for(sal_Int32 nItem = 0; nItem < DEFAULT_NUM_VALUSET_COUNT; nItem++ ) {
+		for(sal_Int32 nItem = 0; nItem < DEFAULT_NUM_VALUESET_COUNT; nItem++ ) {
 			if (IsCustomized(nItem)) {
 				SvxNumRule aDefNumRule( NUM_BULLET_REL_SIZE|NUM_CONTINUOUS|NUM_BULLET_COLOR|NUM_CHAR_TEXT_DISTANCE|NUM_SYMBOL_ALIGNMENT,10, sal_False ,
 					SVX_RULETYPE_NUMBERING,SvxNumberFormat::LABEL_ALIGNMENT);
@@ -318,7 +316,7 @@ SfxMapUnit NBOTypeMgrBase::GetMapUnit()
 	return eCoreUnit;
 }
 /***************************************************************************************************
-**********************Character Bullet Type lib**********************************************************
+**********************Character Bullet Type lib*****************************************************
 ****************************************************************************************************/
 BulletsTypeMgr* BulletsTypeMgr::_instance = 0;
 BulletsSettings_Impl* BulletsTypeMgr::pActualBullets[] ={0,0,0,0,0,0,0,0};
@@ -601,7 +599,7 @@ Font BulletsTypeMgr::GetBulCharFont(sal_uInt16 nIndex)
 	return aRet;
 }
 /***************************************************************************************************
-**********************Graphic Bullet Type lib***********************************************************
+**********************Graphic Bullet Type lib*******************************************************
 ****************************************************************************************************/
 GraphicBulletsTypeMgr* GraphicBulletsTypeMgr::_instance = 0;
 GraphicBulletsTypeMgr::GraphicBulletsTypeMgr(const NBOType aType):
@@ -844,7 +842,7 @@ String GraphicBulletsTypeMgr::GetGrfName(sal_uInt16 nIndex)
 	return sRet;
 }
 /***************************************************************************************************
-**********************Mix Bullets Type lib**************************************************************
+**********************Mix Bullets Type lib**********************************************************
 ****************************************************************************************************/
 MixBulletsTypeMgr* MixBulletsTypeMgr::_instance = 0;
 MixBulletsSettings_Impl* MixBulletsTypeMgr::pActualBullets[] ={0,0,0,0,0,0,0,0};
@@ -1389,7 +1387,7 @@ sal_Bool MixBulletsTypeMgr::IsCustomized(sal_uInt16 nIndex)
 	return bRet;
 }
 /***************************************************************************************************
-**********************Numbering Type lib**************************************************************
+**********************Numbering Type lib************************************************************
 ****************************************************************************************************/
 NumberingTypeMgr* NumberingTypeMgr::_instance = 0;
 
@@ -1471,7 +1469,7 @@ void NumberingTypeMgr::Init()
 		{
 			aNumberings = xDefNum->getDefaultContinuousNumberingLevels( aLocale );
 
-				sal_Int32 nLength = aNumberings.getLength() > DEFAULT_NUM_VALUSET_COUNT ? DEFAULT_NUM_VALUSET_COUNT :aNumberings.getLength();
+				sal_Int32 nLength = aNumberings.getLength() > DEFAULT_NUM_VALUESET_COUNT ? DEFAULT_NUM_VALUESET_COUNT :aNumberings.getLength();
 
 			const Sequence<PropertyValue>* pValuesArr = aNumberings.getConstArray();
 			for(sal_Int32 i = 0; i < nLength; i++)
@@ -1557,7 +1555,6 @@ sal_uInt16 NumberingTypeMgr::GetNBOIndexForNumRule(SvxNumRule& aNum,sal_uInt16 m
 			return i+1;
 		}
 	}
-
 
 	return (sal_uInt16)0xFFFF;
 }
@@ -1689,16 +1686,16 @@ NumberSettings_Impl* NumberingTypeMgr::GetNumSettingByIndex(sal_uInt16 nIndex) c
 	return pRet;
 }
 /***************************************************************************************************
-**********************Multi-level /Outline Type lib*******************************************************
+**********************Multi-level /Outline Type lib*************************************************
 ****************************************************************************************************/
 OutlineTypeMgr* OutlineTypeMgr::_instance = 0;
 
 OutlineTypeMgr::OutlineTypeMgr(const NBOType aType):
 	NBOTypeMgrBase(aType)//,
-	//pNumSettingsArrs( new NumSettingsArr_Impl[DEFAULT_NUM_VALUSET_COUNT] )
+	//pNumSettingsArrs( new NumSettingsArr_Impl[DEFAULT_NUM_VALUESET_COUNT] )
 {
 	Init();
-	for(sal_Int32 nItem = 0; nItem < DEFAULT_NUM_VALUSET_COUNT; nItem++ )
+	for(sal_Int32 nItem = 0; nItem < DEFAULT_NUM_VALUESET_COUNT; nItem++ )
 	{
 		pDefaultOutlineSettingsArrs[nItem] = pOutlineSettingsArrs[nItem];
 	}
@@ -1709,10 +1706,10 @@ OutlineTypeMgr::OutlineTypeMgr(const NBOType aType):
 
 OutlineTypeMgr::OutlineTypeMgr(const NBOType aType,const SfxItemSet* pArg):
 	NBOTypeMgrBase(aType,pArg)//,
-	//pNumSettingsArrs( new NumSettingsArr_Impl[DEFAULT_NUM_VALUSET_COUNT])
+	//pNumSettingsArrs( new NumSettingsArr_Impl[DEFAULT_NUM_VALUESET_COUNT])
 {
 	Init();
-	for(sal_Int32 nItem = 0; nItem < DEFAULT_NUM_VALUSET_COUNT; nItem++ )
+	for(sal_Int32 nItem = 0; nItem < DEFAULT_NUM_VALUESET_COUNT; nItem++ )
 	{
 		pDefaultOutlineSettingsArrs[nItem] = pOutlineSettingsArrs[nItem];
 	}
@@ -1723,10 +1720,10 @@ OutlineTypeMgr::OutlineTypeMgr(const NBOType aType,const SfxItemSet* pArg):
 
 OutlineTypeMgr::OutlineTypeMgr(const OutlineTypeMgr& aTypeMgr):
 	NBOTypeMgrBase(aTypeMgr)//,
-	//pNumSettingsArrs( new NumSettingsArr_Impl[DEFAULT_NUM_VALUSET_COUNT])
+	//pNumSettingsArrs( new NumSettingsArr_Impl[DEFAULT_NUM_VALUESET_COUNT])
 {
 	Init();
-	for(sal_Int32 nItem = 0; nItem < DEFAULT_NUM_VALUSET_COUNT; nItem++ )
+	for(sal_Int32 nItem = 0; nItem < DEFAULT_NUM_VALUESET_COUNT; nItem++ )
 	{
 		pDefaultOutlineSettingsArrs[nItem] = pOutlineSettingsArrs[nItem];
 	}
@@ -1755,7 +1752,7 @@ void OutlineTypeMgr::Init()
 				SVX_RULETYPE_NUMBERING,SvxNumberFormat::LABEL_ALIGNMENT);
 
 			for(sal_Int32 nItem = 0;
-				nItem < aOutlineAccess.getLength() && nItem < DEFAULT_NUM_VALUSET_COUNT;
+				nItem < aOutlineAccess.getLength() && nItem < DEFAULT_NUM_VALUESET_COUNT;
 				nItem++ )
 			{
 				pOutlineSettingsArrs[ nItem ] = new OutlineSettings_Impl;
@@ -1857,7 +1854,6 @@ sal_uInt16 OutlineTypeMgr::GetNBOIndexForNumRule(SvxNumRule& aNum,sal_uInt16 /* 
 			return iDex+1;
 	}
 
-
 	return (sal_uInt16)0xFFFF;
 }
 
@@ -1936,8 +1932,8 @@ sal_Bool OutlineTypeMgr::ApplyNumRule(SvxNumRule& aNum,sal_uInt16 nIndex,sal_uIn
 	//if ( mLevel == (sal_uInt16)0xFFFF )
 	//	return sal_False;
 
-	DBG_ASSERT(DEFAULT_NUM_VALUSET_COUNT > nIndex, "wrong index");
-	if(DEFAULT_NUM_VALUSET_COUNT <= nIndex)
+	DBG_ASSERT(DEFAULT_NUM_VALUESET_COUNT > nIndex, "wrong index");
+	if(DEFAULT_NUM_VALUESET_COUNT <= nIndex)
 		return sal_False;
 
 	const FontList* pList = 0;
@@ -2087,7 +2083,6 @@ sal_Bool OutlineTypeMgr::IsCustomized(sal_uInt16 nIndex)
 
 	return bRet;
 }
-
 
 }}
 
