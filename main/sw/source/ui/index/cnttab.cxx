@@ -2681,7 +2681,7 @@ long SwTOXEntryTabPage::Notify( NotifyEvent& rNEvt )
 }
 /*-- 16.06.99 10:47:35---------------------------------------------------
 
-This function inizializes the default value in the Token
+This function initializes the default value in the Token
 put here the UI dependent initializations
   -----------------------------------------------------------------------*/
 IMPL_LINK(SwTOXEntryTabPage, InsertTokenHdl, PushButton*, pBtn)

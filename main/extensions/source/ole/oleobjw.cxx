@@ -1248,7 +1248,7 @@ void SAL_CALL IUnknownWrapper_Impl::initialize( const Sequence< Any >& aArgument
         catch( Exception& e )
         {
             throw RuntimeException(
-                    OUSTR("[automation bridge] unexpected exception in IUnknownWrapper_Impl::initialiase() error message: \n") + e.Message,
+                    OUSTR("[automation bridge] unexpected exception in IUnknownWrapper_Impl::initialize() error message: \n") + e.Message,
                     Reference<XInterface>() );
         }
     }

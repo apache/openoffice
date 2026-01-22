@@ -102,7 +102,7 @@ static void oslWorkerWrapperFunction(void* pData)
 #if OSL_DEBUG_LEVEL>0
 printf("oslWorkerWrapperFunction pThreadImpl %x, pThreadImpl->m_ThreadId %d\n", pThreadImpl, pThreadImpl->m_ThreadId);
 #endif
-    /* Inizialize PM for this thread */
+    /* Initialize PM for this thread */
     pThreadImpl->m_hab = WinInitialize( 0 );
 #if OSL_DEBUG_LEVEL>0
 printf("pThreadImpl->m_ThreadId %d, pThreadImpl->m_hab %x\n", pThreadImpl->m_ThreadId,pThreadImpl->m_hab);
