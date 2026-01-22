@@ -195,7 +195,7 @@ struct CliProxy: public uno_Interface
 
         The array is completely initialized in the constructor of this object.
 
-        When the uno_DispatchMethod is called for this proxy it receives
+        When the uno_DispatchMethod is called for this proxy then it receives
         a typelib_TypeDescription of the member which is either an attribute
         (setter or getter) or method. After determining the position of the
         method within the UNO interface one can use the position to obtain the
@@ -208,7 +208,7 @@ struct CliProxy: public uno_Interface
 
     /** This array is similar to m_arMethodInfos but it contains the MethodInfo
         objects of the interface (not the object). When a call is made from uno
-        to cli the uno method name is compared to the cli method name. The
+        to cli then the uno method name is compared to the cli method name. The
         cli method name can be obtained from the MethodInfo object in this
         array. The name of the actual implemented method may not be the same as
         the interface method.
@@ -249,7 +249,7 @@ struct CliProxy: public uno_Interface
         interface and all inherited interfaces. At index null is the first
         method of the base interface and at the last position is the last method
         of the furthest derived interface.
-        If a UNO call is received one can determine the position of the
+        If a UNO call is received then one can determine the position of the
         method (or getter or setter for an attribute) from the passed type
         information. The position minus 3 (there is no XInterface in the cli
         mapping) corresponds to the index of the cli interface method in the
