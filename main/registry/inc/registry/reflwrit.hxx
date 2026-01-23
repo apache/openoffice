@@ -27,7 +27,7 @@
 #include "registry/registrydllapi.h"
 #include <rtl/ustring.hxx>
 
-// Implememetation handle
+// Implementation handle
 typedef void* TypeWriterImpl;
 
 /****************************************************************************

@@ -217,7 +217,7 @@ published service ContentResultSet
 	/** can be implemented to provide a complete JDBC conform result set
 		interface for the implementation of this service.
 
-		<p>The implememtation of this service is optional.
+		<p>The implementation of this service is optional.
 	 */
 	service com::sun::star::sdbc::ResultSet;
 };
