@@ -43,7 +43,7 @@ public:
     virtual ~multiImageImportHelper();
 
     /// solve multiple imported images. The most valuable one is chosen,
-    /// see imlementation for evtl. changing weights and/or adding filetypes.
+    /// see implementation for evtl. changing weights and/or adding filetypes.
     /// returns the winner of the contest (which can be 0 when no candidates)
     const SvXMLImportContext* solveMultipleImages();
 

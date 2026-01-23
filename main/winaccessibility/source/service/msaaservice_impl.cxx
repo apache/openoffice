@@ -168,9 +168,9 @@ void MSAAServiceImpl::handleWindowOpened( sal_Int32 pAcc)
 }
 
 /**
-   * Implemention of XServiceInfo.
+   * Implementation of XServiceInfo.
    * @param
-   * @return Implementataion name.
+   * @return Implementation name.
    */
 OUString MSAAServiceImpl::getImplementationName() throw (RuntimeException)
 {

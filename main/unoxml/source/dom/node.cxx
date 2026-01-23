@@ -966,7 +966,7 @@ namespace DOM
     void SAL_CALL CNode::setNodeValue(const OUString& /*nodeValue*/)
         throw (RuntimeException, DOMException)
     {
-        // use specific node implememntation
+        // use specific node implementation
         // if we end up down here, something went wrong
         DOMException e;
         e.Code = DOMExceptionType_NO_MODIFICATION_ALLOWED_ERR;
