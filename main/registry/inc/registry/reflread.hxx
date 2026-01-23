@@ -237,7 +237,7 @@ public:
     /** returns the name of a parameter.
 
         @param index indicates the method
-        @param paramIndex indiciates the parameter which name will be returned.
+        @param paramIndex indicates the parameter which name will be returned.
      */
 	inline ::rtl::OUString 	getMethodParamName( sal_uInt16 index, sal_uInt16 paramIndex ) const;
 
