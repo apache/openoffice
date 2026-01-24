@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -144,7 +144,7 @@ callVirtualMethod:
 	lfd 11, 80(9)
 	lfd 12, 88(9)
 	lfd 13, 96(9)
-	
+
  # 0 "" 2
 #NO_APP
 	ld 9,104(31)
@@ -183,7 +183,7 @@ callVirtualMethod:
 	mr     3,     3
 	mr     4,     4
 	fmr    0,     1
-	
+
  # 0 "" 2
 #NO_APP
 	stfd 0,152(31)
@@ -256,19 +256,19 @@ privateSnippetExecutor:
 	addi 9,31,144
 #APP
  # 173 "uno_ppc64_asm.cc" 1
-	stfd 1,   0(9)	
-stfd 2,   8(9)	
-stfd 3,  16(9)	
-stfd 4,  24(9)	
-stfd 5,  32(9)	
-stfd 6,  40(9)	
-stfd 7,  48(9)	
-stfd 8,  56(9)	
-stfd 9,  64(9)	
-stfd 10, 72(9)	
-stfd 11, 80(9)	
-stfd 12, 88(9)	
-stfd 13, 96(9)	
+	stfd 1,   0(9)
+stfd 2,   8(9)
+stfd 3,  16(9)
+stfd 4,  24(9)
+stfd 5,  32(9)
+stfd 6,  40(9)
+stfd 7,  48(9)
+stfd 8,  56(9)
+stfd 9,  64(9)
+stfd 10, 72(9)
+stfd 11, 80(9)
+stfd 12, 88(9)
+stfd 13, 96(9)
 
  # 0 "" 2
 #NO_APP
@@ -322,7 +322,7 @@ stfd 13, 96(9)
 #APP
  # 209 "uno_ppc64_asm.cc" 1
 	lbz 3,64(31)
-	
+
  # 0 "" 2
 #NO_APP
 	b .L17
@@ -330,7 +330,7 @@ stfd 13, 96(9)
 #APP
  # 214 "uno_ppc64_asm.cc" 1
 	lhz 3,64(31)
-	
+
  # 0 "" 2
 #NO_APP
 	b .L17
@@ -338,7 +338,7 @@ stfd 13, 96(9)
 #APP
  # 218 "uno_ppc64_asm.cc" 1
 	lha 3,64(31)
-	
+
  # 0 "" 2
 #NO_APP
 	b .L17
@@ -346,7 +346,7 @@ stfd 13, 96(9)
 #APP
  # 223 "uno_ppc64_asm.cc" 1
 	lwz 3,64(31)
-	
+
  # 0 "" 2
 #NO_APP
 	b .L17
@@ -354,7 +354,7 @@ stfd 13, 96(9)
 #APP
  # 227 "uno_ppc64_asm.cc" 1
 	lwa 3,64(31)
-	
+
  # 0 "" 2
 #NO_APP
 	b .L17
@@ -363,7 +363,7 @@ stfd 13, 96(9)
 #APP
  # 231 "uno_ppc64_asm.cc" 1
 	lfs 1,0(9)
-	
+
  # 0 "" 2
 #NO_APP
 	b .L17
@@ -372,7 +372,7 @@ stfd 13, 96(9)
 #APP
  # 235 "uno_ppc64_asm.cc" 1
 	lfd 1,0(9)
-	
+
  # 0 "" 2
 #NO_APP
 	b .L17
@@ -380,11 +380,11 @@ stfd 13, 96(9)
 #APP
  # 239 "uno_ppc64_asm.cc" 1
 	ld 3,64(31)
-	
+
  # 0 "" 2
  # 241 "uno_ppc64_asm.cc" 1
 	ld 4,72(31)
-	
+
  # 0 "" 2
 #NO_APP
 	b .L17
