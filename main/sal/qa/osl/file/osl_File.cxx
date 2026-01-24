@@ -4206,7 +4206,7 @@ namespace osl_File
         nError1 = ::osl::FileBase::E_ACCES;  /// for Windows, c:/ is writtenable any way.
         deleteTestFile( aTmpName7);
 #endif
-        ASSERT_TRUE(::osl::FileBase::E_ACCES == nError1) << "test for copy function: copy to an illigal place";
+        ASSERT_TRUE(::osl::FileBase::E_ACCES == nError1) << "test for copy function: copy to an illegal place";
     }
 
     TEST_F(copy, copy_004 )
@@ -4324,7 +4324,7 @@ namespace osl_File
         deleteTestFile( aTmpName7);
 #endif
 
-        ASSERT_TRUE(::osl::FileBase::E_ACCES == nError1) << "test for move function: move to an illigal place";
+        ASSERT_TRUE(::osl::FileBase::E_ACCES == nError1) << "test for move function: move to an illegal place";
     }
 
     TEST_F(move, move_004 )

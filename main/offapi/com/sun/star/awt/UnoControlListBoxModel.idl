@@ -161,7 +161,7 @@ published service UnoControlListBoxModel
 
 	//-------------------------------------------------------------------------
 
-	/** specifies the sequence of selected items, identfied by the position.
+	/** specifies the sequence of selected items, identified by the position.
 	 */
 	[property] sequence<short> SelectedItems;
 
