@@ -21,7 +21,7 @@
 
 Apache OpenOffice contains automated test suites that can be ran against the office. The test framework is written in **Java** and based on **JUnit 4**.
 
-This **trunk** branch is now the primary test suite for the **AOO41X** and **AOO42X** branches as well and those branches may not contain the latest tests or modifications.  
+This **trunk** branch is now the primary test suite for the **AOO41X** and **AOO42X** branches as well and those branches may not contain the latest tests or modifications.
 
 The test suite in main branches **AOO41X** and **AOO42X** can be ran against a normal installation of the office or a just built "installed" office.
 

@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 # *************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -8,16 +8,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 # *************************************************************
 
 use File::Copy;
@@ -62,7 +62,7 @@ sub reg_find_key($)
 sub print_syntax()
 {
     print "oowintool [option] ...\n";
-    print " encoding options\n";  
+    print " encoding options\n";
     print "   -w   - windows form\n";
     print "   -u   - unix form (default)\n";
     print " commands:\n";
@@ -90,7 +90,7 @@ sub cygpath($$$)
 	$path =~ s|\\*\s*$||;
     }
 
-    # 'Unterminated quoted string errors' from 'ash' when 
+    # 'Unterminated quoted string errors' from 'ash' when
     # forking cygpath  so - reimplement cygpath in perl [ gack ]
     if ($format eq 'u' && $input_format eq 'w') {
 	$path =~ s|\\|/|g;
@@ -109,7 +109,7 @@ sub print_path($$)
     my ($path, $unix) = @_;
 
     $path = cygpath ($path, $unix, $output_format);
-    
+
     print $path;
 }
 
@@ -275,7 +275,7 @@ sub print_csc_compiler_dir()
 
 sub print_dotnetsdk_dir()
 {
-    my $dir = 
+    my $dir =
           reg_get_value ("HKEY_LOCAL_MACHINE/SOFTWARE/Microsoft/.NETFramework/sdkInstallRootv1.1") ||
           reg_get_value ("HKEY_LOCAL_MACHINE/SOFTWARE/Microsoft/.NETFramework/sdkInstallRootv2.0");
     defined $dir || exit 1;
@@ -332,11 +332,11 @@ sub msvc_find_version($)
 {
     my $checkpath = shift;
     my $ver = find_msvc();
-    my $srcdir = (cygpath ($ver->{'product_dir'}, 'w', 'u') . '/' . 
+    my $srcdir = (cygpath ($ver->{'product_dir'}, 'w', 'u') . '/' .
 		  $ver->{$checkpath});
     -d $srcdir && return $ver;
     $ver = find_msvs();
-    $srcdir = (cygpath ($ver->{'product_dir'}, 'w', 'u') . '/' . 
+    $srcdir = (cygpath ($ver->{'product_dir'}, 'w', 'u') . '/' .
 		  $ver->{$checkpath});
     -d $srcdir && return $ver;
     return undef;
@@ -347,7 +347,7 @@ sub msvc_copy_dlls($)
     my $dest = shift;
     my $ver = msvc_find_version('dll_path');
     defined $ver || return;
-    my $srcdir = (cygpath ($ver->{'product_dir'}, 'w', 'u') . '/' . 
+    my $srcdir = (cygpath ($ver->{'product_dir'}, 'w', 'u') . '/' .
 		  $ver->{'dll_path'});
 
     copy_dll ($srcdir, "msvcp" . $ver->{'dll_suffix'} . ".dll",
@@ -370,7 +370,7 @@ my @commands = ();
 my $opt;
 while (@ARGV) {
     $opt = shift @ARGV;
-    
+
     if ($opt eq '-w' || $opt eq '-u') {
 	$output_format = substr($opt, 1, 1);
     } else {
