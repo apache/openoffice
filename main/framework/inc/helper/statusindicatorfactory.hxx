@@ -105,7 +105,7 @@ struct IndicatorInfo
         /** @short  initialize new instance of this class
 
             @param  xIndicator
-                    the new child indiactor of our factory.
+                    the new child indicator of our factory.
 
             @param  sText
                     its initial text.
