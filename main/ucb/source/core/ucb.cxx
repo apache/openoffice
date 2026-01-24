@@ -686,7 +686,7 @@ Any SAL_CALL UniversalContentBroker::execute(
 void SAL_CALL UniversalContentBroker::abort( sal_Int32 )
 	throw( RuntimeException )
 {
-	// @@@ Not implemeted ( yet).
+	// @@@ Not implemented ( yet).
 }
 
 //=========================================================================

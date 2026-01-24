@@ -452,7 +452,7 @@ int macxp_resolveAlias(char *path, int buflen)
 #endif /* NO_PTHREAD_RTL */
 
 #if (defined (LINUX) && (GLIBC >= 2))
-/* The linux kernel thread implemention, always return the pid of the
+/* The linux kernel thread implementation, always return the pid of the
    thread subprocess and not of the main process. So we save the main
    pid at startup
 */

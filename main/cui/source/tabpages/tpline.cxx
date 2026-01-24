@@ -1033,7 +1033,7 @@ void SvxLineTabPage::Reset( const SfxItemSet& rAttrs )
                     pPage->NbcInsertObject(pObj);
 
                     // Generate invisible square to give all symbol types a
-                    // bitmap size, which is indepedent from specific glyph
+                    // bitmap size, which is independent from specific glyph
                     SdrObject *pInvisibleSquare=pSymbolList->GetObj(0);
                     pInvisibleSquare=pInvisibleSquare->Clone();
                     pPage->NbcInsertObject(pInvisibleSquare);
@@ -1746,7 +1746,7 @@ IMPL_LINK( SvxLineTabPage, MenuCreateHdl_Impl, MenuButton *, pButton )
 		String aEmptyStr;
 
         // Generate invisible square to give all symbols a
-        // bitmap size, which is indepedent from specific glyph
+        // bitmap size, which is independent from specific glyph
         SdrObject *pInvisibleSquare=pSymbolList->GetObj(0);
         pInvisibleSquare=pInvisibleSquare->Clone();
         pPage->NbcInsertObject(pInvisibleSquare);

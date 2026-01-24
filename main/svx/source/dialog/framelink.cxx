@@ -979,7 +979,7 @@ void lclDrawVerFrameBorder(
 }
 
 // ============================================================================
-// Drawing of diagonal frame borders, incudes clipping functions.
+// Drawing of diagonal frame borders, includes clipping functions.
 
 /** Returns the drawing coordinates for a diagonal thin line.
 
@@ -1016,7 +1016,7 @@ LinePoints lclGetDiagLineEnds( const Rectangle& rRect, bool bTLBR, long nDiagOff
 // ----------------------------------------------------------------------------
 // Clipping functions for diagonal frame borders.
 
-/** Limits the clipping region to the inner area of a rectange.
+/** Limits the clipping region to the inner area of a rectangle.
 
     Takes the values from the passed DiagLineResult struct into account. They
     may specify to not clip one or more borders of a rectangle.

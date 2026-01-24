@@ -76,7 +76,7 @@ public final class SxcDocumentSerializerImpl extends SxcDocumentSerializer {
         // contain a path or the file extension.
         String docName = sxcDoc.getName();
 
-        // TODO - get real values for password when implemnted in XML
+        // TODO - get real values for password when implemented in XML
         // Passwords are not currently stored in StarCalc XML format.
         String password = null;
 
