@@ -19,11 +19,8 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sc.hxx"
-
 
 //------------------------------------------------------------------
 
@@ -61,7 +58,7 @@
 ///////////////////////////////////////////////////////////////////////////
 // NODRAW.HXX
 // Erweiterte Konstanten, um CLOKs mit SVDRAW.HXX zu vermeiden
-// Die u.a. Aenderungen nehmen vorgeschlagene Konstante vorweg
+// Die u.a. Änderungen nehmen vorgeschlagene Konstante vorweg
 ///////////////////////////////////////////////////////////////////////////
 
 #if 0
@@ -165,7 +162,6 @@
 
 ////////////////////// Ende der SVDRAW-Modifikationen /////////////////////
 
-
 // INCLUDE ---------------------------------------------------------------
 
 #include "scitems.hxx"
@@ -204,17 +200,16 @@
 #define SC_SCROLLBAR_MIN	30
 #define SC_TABBAR_MIN		6
 
-//	fuer Rad-Maus
+// für Rad-Maus
 #define SC_DELTA_ZOOM	10
 
 using namespace ::com::sun::star;
 
 // STATIC DATA -----------------------------------------------------------
 
-
 //==================================================================
 
-//	Corner-Button
+// Corner-Button
 
 ScCornerButton::ScCornerButton( Window* pParent, ScViewData* pData, sal_Bool bAdditional ) :
 	Window( pParent, WinBits( 0 ) ),
@@ -243,33 +238,33 @@ void __EXPORT ScCornerButton::Paint( const Rectangle& rRect )
 	sal_Bool bLayoutRTL = pViewData->GetDocument()->IsLayoutRTL( pViewData->GetTabNo() );
 	long nDarkX = bLayoutRTL ? 0 : nPosX;
 
-    if ( !bAdd && !rStyleSettings.GetHighContrastMode() )
-    {
-        // match the shaded look of column/row headers
+	if ( !bAdd && !rStyleSettings.GetHighContrastMode() )
+	{
+		// match the shaded look of column/row headers
 
-        Color aFace( rStyleSettings.GetFaceColor() );
-        Color aWhite( COL_WHITE );
-        Color aCenter( aFace );
-        aCenter.Merge( aWhite, 0xd0 );          // lighten up a bit
-        Color aOuter( aFace );
-        aOuter.Merge( aWhite, 0xa0 );           // lighten up more
+		Color aFace( rStyleSettings.GetFaceColor() );
+//		Color aWhite( COL_WHITE );
+		Color aCenter( aFace );
+//		aCenter.Merge( aWhite, 0xd0 ); // lighten up a bit
+		Color aOuter( aFace );
+//		aOuter.Merge( aWhite, 0xa0 ); // lighten up more
 
-        long nCenterX = (aSize.Width() / 2) - 1;
-        long nCenterY = (aSize.Height() / 2) - 1;
+		long nCenterX = (aSize.Width() / 2) - 1;
+		long nCenterY = (aSize.Height() / 2) - 1;
 
-        SetLineColor();
-        SetFillColor(aCenter);
-        DrawRect( Rectangle( nCenterX, nCenterY, nCenterX, nPosY ) );
-        DrawRect( Rectangle( nCenterX, nCenterY, nDarkX, nCenterY ) );
-        SetFillColor(aOuter);
-        DrawRect( Rectangle( 0, 0, nPosX, nCenterY-1 ) );
-        if ( bLayoutRTL )
-            DrawRect( Rectangle( nCenterX+1, nCenterY, nPosX, nPosY ) );
-        else
-            DrawRect( Rectangle( 0, nCenterY, nCenterX-1, nPosY ) );
-    }
+		SetLineColor();
+		SetFillColor(aCenter);
+		DrawRect( Rectangle( nCenterX, nCenterY, nCenterX, nPosY ) );
+		DrawRect( Rectangle( nCenterX, nCenterY, nDarkX, nCenterY ) );
+		SetFillColor(aOuter);
+		DrawRect( Rectangle( 0, 0, nPosX, nCenterY-1 ) );
+		if ( bLayoutRTL )
+			DrawRect( Rectangle( nCenterX+1, nCenterY, nPosX, nPosY ) );
+		else
+			DrawRect( Rectangle( 0, nCenterY, nCenterX-1, nPosY ) );
+	}
 
-	//	both buttons have the same look now - only dark right/bottom lines
+	// both buttons have the same look now - only dark right/bottom lines
 	SetLineColor( rStyleSettings.GetDarkShadowColor() );
 	DrawLine( Point(0,nPosY), Point(nPosX,nPosY) );
 	DrawLine( Point(nDarkX,0), Point(nDarkX,nPosY) );
@@ -294,7 +289,6 @@ void ScCornerButton::DataChanged( const DataChangedEvent& rDCEvt )
 	SetBackground( rStyleSettings.GetFaceColor() );
 	Invalidate();
 }
-
 
 void __EXPORT ScCornerButton::Resize()
 {
@@ -347,7 +341,6 @@ sal_Bool lcl_HasRowOutline( const ScViewData& rViewData )
 //	Init und Konstruktoren
 //	ScTabView::Init() in tabview5.cxx wegen out of keys
 
-
 #define TABVIEW_INIT	\
 			pSelEngine( NULL ),												\
 			aFunctionSet( &aViewData ),										\
@@ -365,24 +358,23 @@ sal_Bool lcl_HasRowOutline( const ScViewData& rViewData )
 			pInputHintWindow( NULL ),										\
 			pPageBreakData( NULL ),											\
 			pHighlightRanges( NULL ),										\
-            pBrushDocument( NULL ),                                         \
-            pDrawBrushSet( NULL ),                                          \
-            bLockPaintBrush( sal_False ),                                       \
+			pBrushDocument( NULL ),                                         \
+			pDrawBrushSet( NULL ),                                          \
+			bLockPaintBrush( sal_False ),                                       \
 			pTimerWindow( NULL ),											\
 			nTipVisible( 0 ),												\
-		    bDragging( sal_False ),												\
+			bDragging( sal_False ),												\
 			bIsBlockMode( sal_False ),											\
 			bBlockNeg( sal_False ),												\
 			bBlockCols( sal_False ),											\
 			bBlockRows( sal_False ),											\
-            mfPendingTabBarWidth( -1.0 ),                                   \
+			mfPendingTabBarWidth( -1.0 ),                                   \
 			bMinimized( sal_False ),											\
 			bInUpdateHeader( sal_False ),										\
 			bInActivatePart( sal_False ),										\
 			bInZoomUpdate( sal_False ),											\
 			bMoveIsShift( sal_False ),											\
-            bNewStartIfMarking( sal_False )
-
+			bNewStartIfMarking( sal_False )
 
 ScTabView::ScTabView( Window* pParent, ScDocShell& rDocSh, ScTabViewShell* pViewShell ) :
 			pFrameWin( pParent ),
@@ -498,8 +490,8 @@ void ScTabView::DoResize( const Point& rOffset, const Size& rSize, sal_Bool bInn
 
 	long nBarX = 0;
 	long nBarY = 0;
-    long nOutlineX = 0;
-    long nOutlineY = 0;
+	long nOutlineX = 0;
+	long nOutlineY = 0;
 	long nOutPosX;
 	long nOutPosY;
 
@@ -617,7 +609,7 @@ void ScTabView::DoResize( const Point& rOffset, const Size& rSize, sal_Bool bInn
 
 			lcl_SetPosSize( *pTabControl, Point(nPosX-nOverlap, nPosY+nSizeY),
 												Size(nTabSize+nOverlap, nBarY), nTotalWidth, bLayoutRTL );
-            pTabControl->SetSheetLayoutRTL( bLayoutRTL );
+			pTabControl->SetSheetLayoutRTL( bLayoutRTL );
 
 			lcl_SetPosSize( aHScrollLeft, Point(nPosX+nTabSize-nOverlap, nPosY+nSizeY),
 												Size(nSizeLt+2*nOverlap, nBarY), nTotalWidth, bLayoutRTL );
@@ -840,7 +832,6 @@ void ScTabView::DoResize( const Point& rOffset, const Size& rSize, sal_Bool bInn
 		pRowBar[SC_SPLIT_BOTTOM]->Hide();
 	}
 
-
 											// Grid-Windows
 
 	if (bInner)
@@ -863,9 +854,7 @@ void ScTabView::DoResize( const Point& rOffset, const Size& rSize, sal_Bool bInn
 				Point(nSplitPosX,nPosY), Size(nRightSize,nTopSize), nTotalWidth, bLayoutRTL );
 	}
 
-				//
 				//	Scrollbars updaten
-				//
 
 	if (!bInUpdateHeader)
 	{
@@ -1773,7 +1762,6 @@ void ScTabView::UpdateShow()
 	ShowHide( pColBar[SC_SPLIT_RIGHT], bShowH && bHeader );
 	ShowHide( pRowBar[SC_SPLIT_TOP], bShowV && bHeader );
 
-
 	//!	neue Gridwindows eintragen
 }
 
@@ -2466,30 +2454,30 @@ void ScTabView::SetNewVisArea()
 
 sal_Bool ScTabView::HasPageFieldDataAtCursor() const
 {
-    ScGridWindow* pWin = pGridWin[aViewData.GetActivePart()];
-    SCCOL nCol = aViewData.GetCurX();
-    SCROW nRow = aViewData.GetCurY();
-    if (pWin)
-        return pWin->GetDPFieldOrientation( nCol, nRow ) == sheet::DataPilotFieldOrientation_PAGE;
+	ScGridWindow* pWin = pGridWin[aViewData.GetActivePart()];
+	SCCOL nCol = aViewData.GetCurX();
+	SCROW nRow = aViewData.GetCurY();
+	if (pWin)
+		return pWin->GetDPFieldOrientation( nCol, nRow ) == sheet::DataPilotFieldOrientation_PAGE;
 
-    return sal_False;
+	return sal_False;
 }
 
 void ScTabView::StartDataSelect()
 {
-    ScGridWindow* pWin = pGridWin[aViewData.GetActivePart()];
-    SCCOL nCol = aViewData.GetCurX();
-    SCROW nRow = aViewData.GetCurY();
+	ScGridWindow* pWin = pGridWin[aViewData.GetActivePart()];
+	SCCOL nCol = aViewData.GetCurX();
+	SCROW nRow = aViewData.GetCurY();
 
-    if (!pWin)
-        return;
+	if (!pWin)
+		return;
 
     switch (pWin->GetDPFieldOrientation(nCol, nRow))
     {
         case sheet::DataPilotFieldOrientation_PAGE:
-            //  #i36598# If the cursor is on a page field's data cell,
-            //  no meaningful input is possible anyway, so this function
-            //  can be used to select a page field entry.
+            // #i36598# If the cursor is on a page field's data cell,
+            // no meaningful input is possible anyway, so this function
+            // can be used to select a page field entry.
             pWin->LaunchPageFieldMenu( nCol, nRow );
         break;
         case sheet::DataPilotFieldOrientation_COLUMN:
@@ -2526,3 +2514,5 @@ void ScTabView::EnableRefInput(sal_Bool bFlag)
 	if(pRowBar[SC_SPLIT_TOP]!=NULL)
 		pRowBar[SC_SPLIT_TOP]->EnableInput(bFlag,sal_False);
 }
+
+/* vim: set noet sw=4 ts=4: */

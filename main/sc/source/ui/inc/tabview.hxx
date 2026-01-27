@@ -19,7 +19,6 @@
  *
  *************************************************************/
 
-
 #ifndef SC_TABVIEW_HXX
 #define SC_TABVIEW_HXX
 
@@ -58,7 +57,7 @@ class SdrHdlList;
 
 namespace com { namespace sun { namespace star {
 namespace chart2 { namespace data {
-    struct HighlightedRange;
+	struct HighlightedRange;
 }}}}}
 
 #define	SPLIT_HANDLE_SIZE	3
@@ -85,7 +84,6 @@ public:
 	virtual	void	DataChanged( const DataChangedEvent& rDCEvt );
 };
 
-
 // ---------------------------------------------------------------------------
 
 class ScTabView
@@ -100,7 +98,7 @@ private:
 	ScHeaderSelectionEngine* pHdrSelEng;
 	ScHeaderFunctionSet		 aHdrFunc;
 
-    SfxInPlaceClient*   pIPClient;
+	SfxInPlaceClient*	pIPClient;
 
 	ScDrawView*			pDrawView;
 
@@ -133,9 +131,9 @@ private:
 	ScPageBreakData*	pPageBreakData;			// fuer Seitenumbruch-Modus
 	ScHighlightRanges*	pHighlightRanges;
 
-    ScDocument*         pBrushDocument;         // cell formats for format paint brush
-    SfxItemSet*         pDrawBrushSet;          // drawing object attributes for paint brush
-    sal_Bool                bLockPaintBrush;        // keep for more than one use?
+	ScDocument*         pBrushDocument;         // cell formats for format paint brush
+	SfxItemSet*         pDrawBrushSet;          // drawing object attributes for paint brush
+	sal_Bool                bLockPaintBrush;        // keep for more than one use?
 
 	Timer				aScrollTimer;
 	ScGridWindow*		pTimerWindow;
@@ -152,20 +150,20 @@ private:
 	sal_Bool				bBlockRows;				// werden ganze Zeilen markiert?
 
 	SCCOL				nBlockStartX;
-    SCCOL               nBlockStartXOrig;
+	SCCOL               nBlockStartXOrig;
 	SCCOL				nBlockEndX;
 
 	SCROW				nBlockStartY;
-    SCROW               nBlockStartYOrig;
+	SCROW               nBlockStartYOrig;
 	SCROW				nBlockEndY;
 
 	SCTAB				nBlockStartZ;
 	SCTAB				nBlockEndZ;
 
-    SCCOL               nOldCurX;
-    SCROW               nOldCurY;
+	SCCOL               nOldCurX;
+	SCROW               nOldCurY;
 
-    double              mfPendingTabBarWidth;       // Tab bar width relative to frame window width.
+	double              mfPendingTabBarWidth; // Tab bar width relative to frame window width.
 
 	sal_Bool				bMinimized;
 	sal_Bool				bInUpdateHeader;
@@ -190,7 +188,7 @@ private:
 
 	void			UpdateVarZoom();
 
-    void            UpdateVisibleRange();
+	void			UpdateVisibleRange();
 
 	static void		SetScrollBar( ScrollBar& rScroll, long nRangeMax, long nVisible, long nPos, sal_Bool bLayoutRTL );
 	static long		GetScrollBarPos( ScrollBar& rScroll, sal_Bool bLayoutRTL );
@@ -230,9 +228,8 @@ public:
 	void			RemoveHintWindow();
 	void			TestHintWindow();
 
-
 	DECL_LINK(		TabBarResize, void* );
-    /** Sets an absolute tab bar width (in pixels). */
+	/** Sets an absolute tab bar width (in pixels). */
 	void			SetTabBarWidth( long nNewWidth );
     /** Sets a relative tab bar width.
         @param fRelTabBarWidth  Tab bar width relative to frame window width (0.0 ... 1.0). */
@@ -285,7 +282,7 @@ public:
 
 	sal_Bool			IsMinimized() const		{ return bMinimized; }
 
-    // bSameTabButMoved = true if the same sheet as before is activated, used after moving/copying/inserting/deleting a sheet
+	// bSameTabButMoved = true if the same sheet as before is activated, used after moving/copying/inserting/deleting a sheet
 	void			TabChanged( bool bSameTabButMoved = false );
 	void			SetZoom( const Fraction& rNewX, const Fraction& rNewY, sal_Bool bAll );
 	SC_DLLPUBLIC void            RefreshZoom();
@@ -337,8 +334,8 @@ public:
 
 	Point			GetInsertPos();
 
-    Point           GetChartInsertPos( const Size& rSize, const ScRange& rCellRange );
-    Point           GetChartDialogPos( const Size& rDialogSize, const Rectangle& rLogicChart );
+	Point           GetChartInsertPos( const Size& rSize, const ScRange& rCellRange );
+	Point           GetChartDialogPos( const Size& rDialogSize, const Rectangle& rLogicChart );
 
 	void			UpdateAutoFillMark();
 
@@ -350,13 +347,13 @@ public:
 	void			AlignToCursor( SCsCOL nCurX, SCsROW nCurY, ScFollowMode eMode,
 									const ScSplitPos* pWhich = NULL );
 
-    SvxZoomType     GetZoomType() const;
-    void            SetZoomType( SvxZoomType eNew, sal_Bool bAll );
+	SvxZoomType     GetZoomType() const;
+	void            SetZoomType( SvxZoomType eNew, sal_Bool bAll );
 	sal_uInt16			CalcZoom( SvxZoomType eType, sal_uInt16 nOldZoom );
 
 //	void			CalcZoom( SvxZoomType eType, sal_uInt16& rZoom, SCCOL& rCol, SCROW& rRow );
 
-    sal_Bool        HasPageFieldDataAtCursor() const;
+	sal_Bool        HasPageFieldDataAtCursor() const;
 	void			StartDataSelect();
 
 					//	MoveCursorAbs		- absolut
@@ -380,15 +377,15 @@ public:
 
 	void			MoveCursorEnter( sal_Bool bShift );		// Shift fuer Richtung (kein Markieren)
 
-    sal_Bool            MoveCursorKeyInput( const KeyEvent& rKeyEvent );
+	sal_Bool            MoveCursorKeyInput( const KeyEvent& rKeyEvent );
 
 	void			FindNextUnprot( sal_Bool bShift, sal_Bool bInSelection = sal_True );
 
 	void			SetNewStartIfMarking();
 
-    // bSameTabButMoved = true if the same sheet as before is activated, used after moving/copying/inserting/deleting a sheet
-    SC_DLLPUBLIC void SetTabNo( SCTAB nTab, sal_Bool bNew = sal_False, sal_Bool bExtendSelection = sal_False, bool bSameTabButMoved = false );
-    void            SelectNextTab( short nDir, sal_Bool bExtendSelection = sal_False );
+	// bSameTabButMoved = true if the same sheet as before is activated, used after moving/copying/inserting/deleting a sheet
+	SC_DLLPUBLIC void SetTabNo( SCTAB nTab, sal_Bool bNew = sal_False, sal_Bool bExtendSelection = sal_False, bool bSameTabButMoved = false );
+	void            SelectNextTab( short nDir, sal_Bool bExtendSelection = sal_False );
 
 	void			ActivateView( sal_Bool bActivate, sal_Bool bFirst );
 	void			ActivatePart( ScSplitPos eWhich );
@@ -434,9 +431,9 @@ public:
 
 	void			CreateAnchorHandles(SdrHdlList& rHdl, const ScAddress& rAddress);
 
-    void            UpdateSelectionOverlay();
-    void            UpdateShrinkOverlay();
-    void            UpdateAllOverlays();
+	void            UpdateSelectionOverlay();
+	void            UpdateShrinkOverlay();
+	void            UpdateAllOverlays();
 
 	void			UpdateFormulas();
 	void			InterpretVisible();
@@ -461,12 +458,11 @@ public:
 	void			KillEditView( sal_Bool bNoPaint );
 	void			UpdateEditView();
 
-
 									//	Bloecke
 
 	void			SelectAll( sal_Bool bContinue = sal_False );
 	void			SelectAllTables();
-    void            DeselectAllTables();
+	void            DeselectAllTables();
 
 	void			MarkCursor( SCCOL nCurX, SCROW nCurY, SCTAB nCurZ,
                                 sal_Bool bCols = sal_False, sal_Bool bRows = sal_False, sal_Bool bCellSelection = sal_False );
@@ -484,15 +480,15 @@ public:
 	void			MarkMatrixFormula();
 	void			Unmark();
 
-    void            MarkRange( const ScRange& rRange, sal_Bool bSetCursor = sal_True, sal_Bool bContinue = sal_False );
+	void            MarkRange( const ScRange& rRange, sal_Bool bSetCursor = sal_True, sal_Bool bContinue = sal_False );
 
 	sal_Bool			IsMarking( SCCOL nCol, SCROW nRow, SCTAB nTab ) const;
 
 	void			PaintMarks( SCCOL nStartCol, SCROW nStartRow, SCCOL nEndCol, SCROW nEndRow );
 	void			PaintBlock( sal_Bool bReset = sal_False );
 
-    void            SetMarkData( const ScMarkData& rNew );
-    void            MarkDataChanged();
+	void            SetMarkData( const ScMarkData& rNew );
+	void            MarkDataChanged();
 
 	void			LockModifiers( sal_uInt16 nModifiers );
 	sal_uInt16			GetLockedModifiers() const;
@@ -515,15 +511,15 @@ public:
 
 	Window*			GetFrameWin() const	{ return pFrameWin; }
 
-    sal_Bool            HasPaintBrush() const           { return pBrushDocument || pDrawBrushSet; }
-    ScDocument*     GetBrushDocument() const        { return pBrushDocument; }
-    SfxItemSet*     GetDrawBrushSet() const         { return pDrawBrushSet; }
-    sal_Bool            IsPaintBrushLocked() const      { return bLockPaintBrush; }
-    void            SetBrushDocument( ScDocument* pNew, sal_Bool bLock );
-    void            SetDrawBrushSet( SfxItemSet* pNew, sal_Bool bLock );
-    void            ResetBrushDocument();
+	sal_Bool            HasPaintBrush() const           { return pBrushDocument || pDrawBrushSet; }
+	ScDocument*     GetBrushDocument() const        { return pBrushDocument; }
+	SfxItemSet*     GetDrawBrushSet() const         { return pDrawBrushSet; }
+	sal_Bool            IsPaintBrushLocked() const      { return bLockPaintBrush; }
+	void            SetBrushDocument( ScDocument* pNew, sal_Bool bLock );
+	void            SetDrawBrushSet( SfxItemSet* pNew, sal_Bool bLock );
+	void            ResetBrushDocument();
 };
 
-
-
 #endif
+
+/* vim: set noet sw=4 ts=4: */
