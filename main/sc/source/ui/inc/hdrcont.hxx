@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #ifndef SC_HDRCONT_HXX
 #define SC_HDRCONT_HXX
 
@@ -32,15 +30,12 @@
 
 // ---------------------------------------------------------------------------
 
-
 #define HDR_HORIZONTAL		0
 #define HDR_VERTICAL		1
 
 #define HDR_SIZE_OPTIMUM	0xFFFF
 
-
-									// Groesse des Sliders
-#define HDR_SLIDERSIZE		2
+#define HDR_SLIDERSIZE		2 // Groesse des Sliders
 
 class ScHeaderControl : public Window
 {
@@ -51,7 +46,7 @@ private:
 	sal_Bool				bBoldSet;
 
 	sal_uInt16			nFlags;
-	sal_Bool			bVertical;				// Vertikal = Zeilenheader
+	sal_Bool			bVertical; // Vertikal = Zeilenheader
 
 	long			nWidth;
 	long			nSmallWidth;
@@ -63,7 +58,7 @@ private:
 	SCCOLROW		nMarkEnd;
 	sal_Bool			bMarkRange;
 
-	sal_Bool			bDragging;				// Groessen aendern
+	sal_Bool			bDragging; // Groessen aendern
 	SCCOLROW		nDragNo;
 	long			nDragStart;
 	long			nDragPos;
@@ -73,15 +68,15 @@ private:
 
 	long			GetScrPos( SCCOLROW nEntryNo );
 	SCCOLROW		GetMousePos( const MouseEvent& rMEvt, sal_Bool& rBorder );
-    bool            IsSelectionAllowed(SCCOLROW nPos) const;
+	bool			IsSelectionAllowed(SCCOLROW nPos) const;
 	void			ShowDragHelp();
 
 	void			DoPaint( SCCOLROW nStart, SCCOLROW nEnd );
 
-    void            DrawShadedRect( long nStart, long nEnd, const Color& rBaseColor );
+	void			DrawShadedRect( long nStart, long nEnd, const Color& rBaseColor );
 
 protected:
-					//	von Window ueberladen
+//	von Window ueberladen
 
 	virtual void	Paint( const Rectangle& rRect );
 
@@ -92,10 +87,10 @@ protected:
 
 	virtual void	RequestHelp( const HelpEvent& rHEvt );
 
-					//	neue Methoden
+//	new methods
 
 	virtual SCCOLROW	GetPos() = 0;								// aktuelle Position (Scrolling)
-	virtual sal_uInt16	GetEntrySize( SCCOLROW nEntryNo ) = 0;		// Breite / Hoehe (Pixel)
+	virtual sal_uInt16	GetEntrySize( SCCOLROW nEntryNo ) = 0;		// Width / Height (pixel)
 	virtual String	GetEntryText( SCCOLROW nEntryNo ) = 0;
 
 	virtual SCCOLROW GetHiddenCount( SCCOLROW nEntryNo );
@@ -131,6 +126,6 @@ public:
 	void	SetWidth( long nNew );
 };
 
-
-
 #endif
+
+/* vim: set noet sw=4 ts=4: */
