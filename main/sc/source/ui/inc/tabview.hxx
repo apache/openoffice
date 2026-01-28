@@ -64,20 +64,19 @@ namespace chart2 { namespace data {
 #define SC_FORCEMODE_NONE	0xff
 
 // ---------------------------------------------------------------------------
-//		Hilfs - Fenster
+// Hilfs-Fenster
 
 class ScCornerButton : public Window
 {
 private:
 	ScViewData*		pViewData;
-	sal_Bool			bAdd;
 
 protected:
 	virtual void	Paint( const Rectangle& rRect );
 	virtual void	Resize();
 	virtual void	MouseButtonDown( const MouseEvent& rMEvt );
 public:
-					ScCornerButton( Window* pParent, ScViewData* pData, sal_Bool bAdditional );
+					ScCornerButton( Window* pParent, ScViewData* pData );
 					~ScCornerButton();
 
 	virtual	void	StateChanged( StateChangedType nType );
@@ -105,7 +104,7 @@ private:
 	Size				aFrameSize;				// wie bei DoResize uebergeben
 	Point				aBorderPos;
 
-	sal_Bool				bDrawSelMode;			// nur Zeichenobjekte selektieren ?
+	sal_Bool				bDrawSelMode;		// nur Zeichenobjekte selektieren ?
 
 	FuPoor* 			pDrawActual;
 	FuPoor*				pDrawOld;
@@ -131,9 +130,9 @@ private:
 	ScPageBreakData*	pPageBreakData;			// fuer Seitenumbruch-Modus
 	ScHighlightRanges*	pHighlightRanges;
 
-	ScDocument*         pBrushDocument;         // cell formats for format paint brush
-	SfxItemSet*         pDrawBrushSet;          // drawing object attributes for paint brush
-	sal_Bool                bLockPaintBrush;        // keep for more than one use?
+	ScDocument*			pBrushDocument;			// cell formats for format paint brush
+	SfxItemSet*			pDrawBrushSet;			// drawing object attributes for paintbrush
+	sal_Bool				bLockPaintBrush;	// keep for more than one use?
 
 	Timer				aScrollTimer;
 	ScGridWindow*		pTimerWindow;
@@ -144,26 +143,26 @@ private:
 	sal_Bool				bDragging;				// fuer Scrollbars
 	long				nPrevDragPos;
 
-	sal_Bool				bIsBlockMode;           // Block markieren
-	sal_Bool				bBlockNeg;				// wird Markierung aufgehoben?
-	sal_Bool				bBlockCols;				// werden ganze Spalten markiert?
-	sal_Bool				bBlockRows;				// werden ganze Zeilen markiert?
+	sal_Bool				bIsBlockMode;		// Block markieren
+	sal_Bool				bBlockNeg;			// wird Markierung aufgehoben?
+	sal_Bool				bBlockCols;			// werden ganze Spalten markiert?
+	sal_Bool				bBlockRows;			// werden ganze Zeilen markiert?
 
 	SCCOL				nBlockStartX;
-	SCCOL               nBlockStartXOrig;
+	SCCOL				nBlockStartXOrig;
 	SCCOL				nBlockEndX;
 
 	SCROW				nBlockStartY;
-	SCROW               nBlockStartYOrig;
+	SCROW				nBlockStartYOrig;
 	SCROW				nBlockEndY;
 
 	SCTAB				nBlockStartZ;
 	SCTAB				nBlockEndZ;
 
-	SCCOL               nOldCurX;
-	SCROW               nOldCurY;
+	SCCOL				nOldCurX;
+	SCROW				nOldCurY;
 
-	double              mfPendingTabBarWidth; // Tab bar width relative to frame window width.
+	double				mfPendingTabBarWidth; // Tab bar width relative to frame window width.
 
 	sal_Bool				bMinimized;
 	sal_Bool				bInUpdateHeader;
@@ -260,7 +259,7 @@ public:
 	void			DrawDeselectAll();
 	void			DrawMarkListHasChanged();
 	void			UpdateAnchorHandles();
-//UNUSED2008-05  String          GetSelectedChartName() const;
+//UNUSED2008-05 String          GetSelectedChartName() const;
 
 	ScPageBreakData* GetPageBreakData()		{ return pPageBreakData; }
 	ScHighlightRanges* GetHighlightRanges()	{ return pHighlightRanges; }
@@ -285,7 +284,7 @@ public:
 	// bSameTabButMoved = true if the same sheet as before is activated, used after moving/copying/inserting/deleting a sheet
 	void			TabChanged( bool bSameTabButMoved = false );
 	void			SetZoom( const Fraction& rNewX, const Fraction& rNewY, sal_Bool bAll );
-	SC_DLLPUBLIC void            RefreshZoom();
+	SC_DLLPUBLIC void	RefreshZoom();
 	void			SetPagebreakMode( sal_Bool bSet );
 
 	void			UpdateLayerLocks();
@@ -301,7 +300,7 @@ public:
 	void			UpdateRef( SCCOL nCurX, SCROW nCurY, SCTAB nCurZ );
 	void			StopRefMode();
 
-//UNUSED2008-05  void            EndSelection();
+//UNUSED2008-05 void			EndSelection();
 	void			StopMarking();
 	void			FakeButtonUp( ScSplitPos eWhich );
 
@@ -311,12 +310,12 @@ public:
 	ScSplitPos		FindWindow( Window* pWindow ) const;
 
 	void			SetActivePointer( const Pointer& rPointer );
-//UNUSED2008-05  void            SetActivePointer( const ResId& rId );
+//UNUSED2008-05 void			SetActivePointer( const ResId& rId );
 
 	void			ActiveGrabFocus();
-//UNUSED2008-05  void            ActiveCaptureMouse();
-//UNUSED2008-05  void			ActiveReleaseMouse();
-//UNUSED2008-05  Point           ActivePixelToLogic( const Point& rDevicePoint );
+//UNUSED2008-05 void			ActiveCaptureMouse();
+//UNUSED2008-05 void			ActiveReleaseMouse();
+//UNUSED2008-05 Point			ActivePixelToLogic( const Point& rDevicePoint );
 
 	void			ClickCursor( SCCOL nPosX, SCROW nPosY, sal_Bool bControl );
 
@@ -334,8 +333,8 @@ public:
 
 	Point			GetInsertPos();
 
-	Point           GetChartInsertPos( const Size& rSize, const ScRange& rCellRange );
-	Point           GetChartDialogPos( const Size& rDialogSize, const Rectangle& rLogicChart );
+	Point			GetChartInsertPos( const Size& rSize, const ScRange& rCellRange );
+	Point			GetChartDialogPos( const Size& rDialogSize, const Rectangle& rLogicChart );
 
 	void			UpdateAutoFillMark();
 
@@ -347,13 +346,13 @@ public:
 	void			AlignToCursor( SCsCOL nCurX, SCsROW nCurY, ScFollowMode eMode,
 									const ScSplitPos* pWhich = NULL );
 
-	SvxZoomType     GetZoomType() const;
-	void            SetZoomType( SvxZoomType eNew, sal_Bool bAll );
+	SvxZoomType		GetZoomType() const;
+	void			SetZoomType( SvxZoomType eNew, sal_Bool bAll );
 	sal_uInt16			CalcZoom( SvxZoomType eType, sal_uInt16 nOldZoom );
 
 //	void			CalcZoom( SvxZoomType eType, sal_uInt16& rZoom, SCCOL& rCol, SCROW& rRow );
 
-	sal_Bool        HasPageFieldDataAtCursor() const;
+	sal_Bool		HasPageFieldDataAtCursor() const;
 	void			StartDataSelect();
 
 					//	MoveCursorAbs		- absolut
@@ -377,7 +376,7 @@ public:
 
 	void			MoveCursorEnter( sal_Bool bShift );		// Shift fuer Richtung (kein Markieren)
 
-	sal_Bool            MoveCursorKeyInput( const KeyEvent& rKeyEvent );
+	sal_Bool		MoveCursorKeyInput( const KeyEvent& rKeyEvent );
 
 	void			FindNextUnprot( sal_Bool bShift, sal_Bool bInSelection = sal_True );
 
@@ -385,7 +384,7 @@ public:
 
 	// bSameTabButMoved = true if the same sheet as before is activated, used after moving/copying/inserting/deleting a sheet
 	SC_DLLPUBLIC void SetTabNo( SCTAB nTab, sal_Bool bNew = sal_False, sal_Bool bExtendSelection = sal_False, bool bSameTabButMoved = false );
-	void            SelectNextTab( short nDir, sal_Bool bExtendSelection = sal_False );
+	void			SelectNextTab( short nDir, sal_Bool bExtendSelection = sal_False );
 
 	void			ActivateView( sal_Bool bActivate, sal_Bool bFirst );
 	void			ActivatePart( ScSplitPos eWhich );
@@ -408,11 +407,11 @@ public:
 	void			InvertBlockMark(SCCOL nBlockStartX, SCROW nBlockStartY,
 								SCCOL nBlockEndX, SCROW nBlockEndY);
 
-//UNUSED2008-05  void            DrawDragRect( SCCOL nStartX, SCROW nStartY, SCCOL nEndX, SCROW nEndY,
-//UNUSED2008-05                                ScSplitPos ePos );
-//UNUSED2008-05  void			PaintCell( SCCOL nCol, SCROW nRow, SCTAB nTab );
-//UNUSED2008-05  void			PaintLeftRow( SCROW nRow );
-//UNUSED2008-05  void			PaintTopCol( SCCOL nCol );
+//UNUSED2008-05 void			DrawDragRect( SCCOL nStartX, SCROW nStartY, SCCOL nEndX, SCROW nEndY,
+//UNUSED2008-05								  ScSplitPos ePos );
+//UNUSED2008-05 void			PaintCell( SCCOL nCol, SCROW nRow, SCTAB nTab );
+//UNUSED2008-05 void			PaintLeftRow( SCROW nRow );
+//UNUSED2008-05 void			PaintTopCol( SCCOL nCol );
 
 	void			PaintArea( SCCOL nStartCol, SCROW nStartRow, SCCOL nEndCol, SCROW nEndRow,
 										ScUpdateMode eMode = SC_UPDATE_ALL );
@@ -431,9 +430,9 @@ public:
 
 	void			CreateAnchorHandles(SdrHdlList& rHdl, const ScAddress& rAddress);
 
-	void            UpdateSelectionOverlay();
-	void            UpdateShrinkOverlay();
-	void            UpdateAllOverlays();
+	void			UpdateSelectionOverlay();
+	void			UpdateShrinkOverlay();
+	void			UpdateAllOverlays();
 
 	void			UpdateFormulas();
 	void			InterpretVisible();
@@ -444,7 +443,7 @@ public:
 	void			ClearHighlightRanges();
 
 	void			DoChartSelection( const ::com::sun::star::uno::Sequence<
-                                      ::com::sun::star::chart2::data::HighlightedRange > & rHilightRanges );
+									  ::com::sun::star::chart2::data::HighlightedRange > & rHilightRanges );
 
 	long			GetGridWidth( ScHSplitPos eWhich );
 	long			GetGridHeight( ScVSplitPos eWhich );
@@ -462,10 +461,10 @@ public:
 
 	void			SelectAll( sal_Bool bContinue = sal_False );
 	void			SelectAllTables();
-	void            DeselectAllTables();
+	void			DeselectAllTables();
 
 	void			MarkCursor( SCCOL nCurX, SCROW nCurY, SCTAB nCurZ,
-                                sal_Bool bCols = sal_False, sal_Bool bRows = sal_False, sal_Bool bCellSelection = sal_False );
+								sal_Bool bCols = sal_False, sal_Bool bRows = sal_False, sal_Bool bCellSelection = sal_False );
 	void			InitBlockMode( SCCOL nCurX, SCROW nCurY, SCTAB nCurZ,
 									sal_Bool bTestNeg = sal_False,
 									sal_Bool bCols = sal_False, sal_Bool bRows = sal_False, sal_Bool bForceNeg = sal_False );
@@ -480,15 +479,15 @@ public:
 	void			MarkMatrixFormula();
 	void			Unmark();
 
-	void            MarkRange( const ScRange& rRange, sal_Bool bSetCursor = sal_True, sal_Bool bContinue = sal_False );
+	void			MarkRange( const ScRange& rRange, sal_Bool bSetCursor = sal_True, sal_Bool bContinue = sal_False );
 
 	sal_Bool			IsMarking( SCCOL nCol, SCROW nRow, SCTAB nTab ) const;
 
 	void			PaintMarks( SCCOL nStartCol, SCROW nStartRow, SCCOL nEndCol, SCROW nEndRow );
 	void			PaintBlock( sal_Bool bReset = sal_False );
 
-	void            SetMarkData( const ScMarkData& rNew );
-	void            MarkDataChanged();
+	void			SetMarkData( const ScMarkData& rNew );
+	void			MarkDataChanged();
 
 	void			LockModifiers( sal_uInt16 nModifiers );
 	sal_uInt16			GetLockedModifiers() const;
