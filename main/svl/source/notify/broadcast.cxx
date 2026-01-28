@@ -81,7 +81,7 @@ SvtBroadcaster::~SvtBroadcaster()
 
 //--------------------------------------------------------------------
 
-// broadcast immedeately
+// broadcast immediately
 
 void SvtBroadcaster::Broadcast( const SfxHint &rHint )
 {

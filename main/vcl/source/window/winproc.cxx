@@ -1579,7 +1579,7 @@ static void ImplHandlePaint( Window* pWindow, const Rectangle& rBoundRect, bool 
         // #i87663# trigger possible pending resize notifications
         // (GetSizePixel does that for us)
         pWindow->GetSizePixel();
-        // force drawing inmmediately
+        // force drawing immediately
         pWindow->Update();
     }
 }

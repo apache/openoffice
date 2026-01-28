@@ -456,7 +456,7 @@ OUString ObjectIdentifier::createParticleForDiagram(
         , const Reference< frame::XModel >& /*xChartModel*/ )
 {
     static OUString aRet(C2U("D=0"));
-    //todo: if more than one diagram is implemeted, add the correct diagram index here
+    //todo: if more than one diagram is implemented, add the correct diagram index here
     return aRet;
 }
 
@@ -559,7 +559,7 @@ OUString ObjectIdentifier::createParticleForLegend(
     OUStringBuffer aRet;
 
     Reference< XDiagram > xDiagram( ChartModelHelper::findDiagram( xChartModel ) );
-    //todo: if more than one diagram is implemeted, find the correct diagram which is owner of the given legend
+    //todo: if more than one diagram is implemented, find the correct diagram which is owner of the given legend
 
     aRet.append( ObjectIdentifier::createParticleForDiagram( xDiagram, xChartModel ) );
     aRet.appendAscii(":");

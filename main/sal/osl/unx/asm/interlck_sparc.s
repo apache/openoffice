@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -26,22 +26,22 @@
  * Implements osl_[increment|decrement]InterlockedCount in two ways:
  * sparcv8 architecture:                use the "swap" instruction
  * sparcv9/sparcv8plus architecture:    use the "cas"  instruction
- * 
+ *
  * 32 bit mode with v8 and v8plus support:
  * Initialize once with osl_InterlockedCountSetV9(int bv9) if you want to
  * use the "cas" instruction, which is faster (no spinlock needed)
  * Default is to use the "swap" instruction, which works on all supported
  * SPARC cpu's
- * 
+ *
  * osl_InterlockedCountSetV9(int bv9)
  *    bv9 = 0   use sparcv8 "swap" (spinlock)
  *    bv9 = 1   use sparcv9/sparcv8plus "cas" (no spinlock)
  *
  * 32 bit mode without v8 support (implies v8plus) or 64 bit mode:
- * No need (nor the possibility) to call osl_InterlockedCountSetV9(), 
+ * No need (nor the possibility) to call osl_InterlockedCountSetV9(),
  * sparcv9 mode is implied. Assemble with -xarch=v8plus (32 bit) or
  * -xarch=v9 (64 bit).
- * 
+ *
  */
 
 #if !defined(__sparcv8plus) && !defined(__sparcv9) && !defined(__sparc_v9__)
@@ -158,7 +158,7 @@ osl_InterlockedCountSetV9:
 
  .type  osl_InterlockedCountSetV9,#function
  .size  osl_InterlockedCountSetV9,.-osl_InterlockedCountSetV9
- 
+
 
 .section   ".text"
  .local   osl_incrementInterlockedCountV8
@@ -167,7 +167,7 @@ osl_InterlockedCountSetV9:
 ! Implements osl_[increment|decrement]InterlockedCount with sparcv8 "swap" instruction.
 ! Uses -4096 as lock value for spinlock to allow for small negative counts.
 
-osl_incrementInterlockedCountV8:             
+osl_incrementInterlockedCountV8:
 
 1:      ld      [%o0], %o1
         cmp     %o1, -4096          ! test spinlock
@@ -189,7 +189,7 @@ osl_incrementInterlockedCountV8:
  .local osl_decrementInterlockedCountV8
  .align   4
 
-osl_decrementInterlockedCountV8:             
+osl_decrementInterlockedCountV8:
 
 1:      ld      [%o0], %o1
         cmp     %o1, -4096          ! test spinlock
@@ -217,15 +217,15 @@ osl_decrementInterlockedCountV8:
 #endif
  .align   8
 
-!   Implements osl_[increment|decrement]InterlockedCount with sparcv9(sparcv8plus) "cas" 
+!   Implements osl_[increment|decrement]InterlockedCount with sparcv9(sparcv8plus) "cas"
 !   instruction.
 
-osl_incrementInterlockedCountV9:             
+osl_incrementInterlockedCountV9:
 
 1:      ld      [%o0], %o1
         add     %o1, 1, %o2
 !       allow linux to build for v8
-        .word 0xD5E21009 
+        .word 0xD5E21009
 !       cas     [%o0], %o1, %o2
         cmp     %o1, %o2
         bne     1b
@@ -246,12 +246,12 @@ osl_incrementInterlockedCountV9:
 #endif
  .align   8
 
-osl_decrementInterlockedCountV9:             
+osl_decrementInterlockedCountV9:
 
 1:      ld      [%o0], %o1
         sub     %o1, 1, %o2
 !       allow linux to build for v8
-        .word 0xD5E21009            
+        .word 0xD5E21009
 !       cas     [%o0], %o1, %o2
         cmp     %o1, %o2
         bne     1b

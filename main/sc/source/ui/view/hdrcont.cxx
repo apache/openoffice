@@ -19,12 +19,8 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sc.hxx"
-
-
 
 // INCLUDE ---------------------------------------------------------------
 
@@ -222,42 +218,40 @@ long ScHeaderControl::GetScrPos( SCCOLROW nEntryNo )
 
 void ScHeaderControl::DrawShadedRect( long nStart, long nEnd, const Color& rBaseColor )
 {
-    Color aWhite( COL_WHITE );
+//	Color aWhite( COL_WHITE );
 
-    Color aInner( rBaseColor );             // highlight color, unchanged
-    Color aCenter( rBaseColor );
-    aCenter.Merge( aWhite, 0xd0 );          // lighten up a bit
-    Color aOuter( rBaseColor );
-    aOuter.Merge( aWhite, 0xa0 );           // lighten up more
+	Color aInner( rBaseColor );             // highlight color, unchanged
+	Color aCenter( rBaseColor );
+//	aCenter.Merge( aWhite, 0xd0 );          // lighten up a bit
+	Color aOuter( rBaseColor );
+//	aOuter.Merge( aWhite, 0xa0 );           // lighten up more
 
-    if ( IsMirrored() )
-        std::swap( aInner, aOuter );        // just swap colors instead of positions
+//	if ( IsMirrored() )
+//		std::swap( aInner, aOuter );        // just swap colors instead of positions
 
-    Size aWinSize = GetSizePixel();
-    long nBarSize = bVertical ? aWinSize.Width() : aWinSize.Height();
-    long nCenterPos = (nBarSize / 2) - 1;
+	Size aWinSize = GetSizePixel();
+	long nBarSize = bVertical ? aWinSize.Width() : aWinSize.Height();
+	long nCenterPos = (nBarSize / 2) - 1;
 
-    SetLineColor();
-    SetFillColor( aOuter );
-    if (bVertical)
-        DrawRect( Rectangle( 0, nStart, nCenterPos-1, nEnd ) );
-    else
-        DrawRect( Rectangle( nStart, 0, nEnd, nCenterPos-1 ) );
-    SetFillColor( aCenter );
-    if (bVertical)
-        DrawRect( Rectangle( nCenterPos, nStart, nCenterPos, nEnd ) );
-    else
-        DrawRect( Rectangle( nStart, nCenterPos, nEnd, nCenterPos ) );
-    SetFillColor( aInner );
-    if (bVertical)
-        DrawRect( Rectangle( nCenterPos+1, nStart, nBarSize-1, nEnd ) );
-    else
-        DrawRect( Rectangle( nStart, nCenterPos+1, nEnd, nBarSize-1 ) );
+	SetLineColor();
+	SetFillColor( aOuter );
+	if (bVertical)
+		DrawRect( Rectangle( 0, nStart, nCenterPos-1, nEnd ) );
+	else
+		DrawRect( Rectangle( nStart, 0, nEnd, nCenterPos-1 ) );
+	SetFillColor( aCenter );
+	if (bVertical)
+		DrawRect( Rectangle( nCenterPos, nStart, nCenterPos, nEnd ) );
+	else
+		DrawRect( Rectangle( nStart, nCenterPos, nEnd, nCenterPos ) );
+	SetFillColor( aInner );
+	if (bVertical)
+		DrawRect( Rectangle( nCenterPos+1, nStart, nBarSize-1, nEnd ) );
+	else
+		DrawRect( Rectangle( nStart, nCenterPos+1, nEnd, nBarSize-1 ) );
 }
 
-//
 //		Paint
-//
 
 void ScHeaderControl::Paint( const Rectangle& rRect )
 {
@@ -449,10 +443,8 @@ void ScHeaderControl::Paint( const Rectangle& rRect )
         }
 	}
 
-	//
 	//	loop through entries several times to avoid changing the line color too often
 	//	and to allow merging of lines
-	//
 
 	ScGridMerger aGrid( this, 1, 1 );
 
@@ -1037,3 +1029,5 @@ String ScHeaderControl::GetDragHelp( long /* nVal */ )
 void ScHeaderControl::SetMarking( sal_Bool /* bSet */ )
 {
 }
+
+/* vim: set noet sw=4 ts=4: */

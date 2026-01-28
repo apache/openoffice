@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 	.text
@@ -39,7 +39,7 @@ privateSnippetExecutor:
 	movq	%rcx, -88(%rbp)
 	movq	%r8 , -80(%rbp)
 	movq	%r9 , -72(%rbp)
-	
+
 	movsd	%xmm0, -64(%rbp)		# Save FP registers
 	movsd	%xmm1, -56(%rbp)
 	movsd	%xmm2, -48(%rbp)
@@ -55,7 +55,7 @@ privateSnippetExecutor:
 	leaq	-112(%rbp), %rdx		# 3rd param: void ** gpreg
 	movl	-148(%rbp), %esi		# 2nd param: sal_int32 nVtableOffset
 	movl	-152(%rbp), %edi		# 1st param: sal_int32 nFunctionIndex
-	
+
 	call	cpp_vtable_call
 
 	cmp	$10, %rax					# typelib_TypeClass_FLOAT

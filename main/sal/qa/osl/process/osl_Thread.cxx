@@ -1674,7 +1674,7 @@ namespace osl_Thread
 // LLA:
 // LLA:         ALGORITHM:
 // LLA:         wait nWaitSec seconds, and terminate when the wait does not finish
-// LLA:         Windows & UNX: thread terminates immediatlly
+// LLA:         Windows & UNX: thread terminates immediately
 // LLA:     */
 // LLA:     TEST_F(wait, wait_002)
 // LLA:     {
@@ -1782,7 +1782,7 @@ namespace osl_Thread
             // but should be differ from nValue
 
             delete aThread;
-            //check if thread really terminate after call terminate, if join immediatlly return
+            //check if thread really terminate after call terminate, if join immediately return
             ASSERT_TRUE(nValue_join -  nValue_term <= 1 && nValue_join -  nValue_term >= 0) << "Schedule: Returns False if the thread should terminate.";
 
         }

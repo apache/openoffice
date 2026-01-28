@@ -4031,7 +4031,7 @@ css::uno::Reference< css::frame::XController2 > SAL_CALL SfxBaseModel::createDef
 //=============================================================================
 namespace sfx { namespace intern {
 
-    /** a class which, in its dtor, cleans up variuos objects (well, at the moment only the frame) collected during
+    /** a class which, in its dtor, cleans up various objects (well, at the moment only the frame) collected during
         the creation of a document view, unless the creation was successful.
     */
     class SAL_DLLPRIVATE ViewCreationGuard
@@ -4433,7 +4433,7 @@ throw (uno::RuntimeException, lang::IllegalArgumentException,
     } catch (lang::IllegalArgumentException &) {
         throw; // not initialized
     } catch (uno::Exception &) {
-        // UGLY: if it's a RuntimeException, we can't be sure DMA is initialzed
+        // UGLY: if it's a RuntimeException, we can't be sure DMA is initialized
         m_pData->m_xDocumentMetadata = xDMA;
         throw;
     }
@@ -4478,7 +4478,7 @@ throw (uno::RuntimeException, lang::IllegalArgumentException,
     } catch (lang::IllegalArgumentException &) {
         throw; // not initialized
     } catch (uno::Exception &) {
-        // UGLY: if it's a RuntimeException, we can't be sure DMA is initialzed
+        // UGLY: if it's a RuntimeException, we can't be sure DMA is initialized
         m_pData->m_xDocumentMetadata = xDMA;
         throw;
     }

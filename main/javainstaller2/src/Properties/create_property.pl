@@ -85,7 +85,7 @@ for ( my $i = 0; $i <= $#{$all_template_files}; $i++ )
 
     if ( $language eq $defaultlanguage )
     {
-      # Creating language indenpendent english file
+      # Creating language independent english file
       make_propertyfile_language_independent($template_file);
       $filename = generate_filename($template_file_name, "");
       save_file($outputpath, $filename, $template_file);

@@ -105,7 +105,7 @@ struct IndicatorInfo
         /** @short  initialize new instance of this class
 
             @param  xIndicator
-                    the new child indiactor of our factory.
+                    the new child indicator of our factory.
 
             @param  sText
                     its initial text.
@@ -292,7 +292,7 @@ class StatusIndicatorFactory : public  css::lang::XTypeProvider
             @descr  By default we show the parent window automatically
                     if this progress is used.
                     If that isn't a valid operation, the user of this
-                    progress can suppress this feature by initializaing
+                    progress can suppress this feature by initializing
                     us with a special parameter.
 
             @seealso    initialize()

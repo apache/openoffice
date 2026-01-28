@@ -254,7 +254,7 @@ ImpXMLAutoLayoutInfo::ImpXMLAutoLayoutInfo(sal_uInt16 nTyp, ImpXMLEXPPageMasterI
 :	mnType(nTyp),
 	mpPageMasterInfo(pInf)
 {
-	// create full info (initialze with typical values)
+	// create full info (initialize with typical values)
 	Point aPagePos(0,0);
 	Size aPageSize(28000, 21000);
 	Size aPageInnerSize(28000, 21000);

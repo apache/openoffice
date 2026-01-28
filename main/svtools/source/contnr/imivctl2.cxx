@@ -822,7 +822,7 @@ void IcnGridMap_Impl::OutputSizeChanged()
 	}
 }
 
-// Independendly of the views alignment (TOP or LEFT) the gridmap
+// Independently of the views alignment (TOP or LEFT) the gridmap
 // should contain the data in a continues region, to make it possible
 // to copy the whole block if the gridmap needs to be expanded.
 void IcnGridMap_Impl::GetGridCoord( GridId nId, sal_uInt16& rGridX, sal_uInt16& rGridY )

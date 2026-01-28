@@ -35,7 +35,7 @@ SET CFG_OPT=%CFG_OPT% --with-system-libxslt --disable-werror
 SET CFG_OPT=%CFG_OPT% --disable-odk --with-x=no --disable-fontconfig --disable-gnome-vfs
 SET CFG_OPT=%CFG_OPT% --disable-gtk --with-java=yes --disable-gcjaot --without-fonts
 SET CFG_OPT=%CFG_OPT% --with-ant-home=%MY_ANT_HOME% --without-junit
-SET CFG_OPT=%CFG_OPT% --with-system-apr --with-system-apr-util --with-system-serf
+SET CFG_OPT=%CFG_OPT% --with-system-curl
 SET CFG_OPT=%CFG_OPT% --enable-bundled-dictionaries --enable-category-b --with-system-nss
 SET CFG_OPT=%CFG_OPT% --disable-unit-tests
 SET CFG_OPT=%CFG_OPT% --disable-online-update

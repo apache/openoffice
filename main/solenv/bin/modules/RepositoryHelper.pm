@@ -186,7 +186,7 @@ Returns the repository root, retrieved by SCM methods or on educated guess...
 
 RepositoryHelper::get_initial_directory()
 
-Returns full path to the initialistion directory.
+Returns full path to the initialization directory.
 
 =head2 EXPORT
 

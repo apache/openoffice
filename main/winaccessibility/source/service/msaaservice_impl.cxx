@@ -124,7 +124,7 @@ public:
 };
 
 /**
-   * Implemention of XInitialization.
+   * Implementation of XInitialization.
    * @param
    * @return.
    */
@@ -147,7 +147,7 @@ void MSAAServiceImpl::initialize( Sequence< Any > const & args ) throw (Exceptio
 }
 
 /**
-   * Implemention of getAccObjectPtr.
+   * Implementation of getAccObjectPtr.
    * @param
    * @return Com interface.
    */
@@ -157,7 +157,7 @@ sal_Int32 MSAAServiceImpl::getAccObjectPtr ( long hWnd, long lParam, long wParam
 }
 
 /**
-   * Implemention of handleWindowOpened,the method will be invoked when a top window
+   * Implementation of handleWindowOpened,the method will be invoked when a top window
    * opened and AT starts up.
    * @param
    * @return
@@ -168,9 +168,9 @@ void MSAAServiceImpl::handleWindowOpened( sal_Int32 pAcc)
 }
 
 /**
-   * Implemention of XServiceInfo.
+   * Implementation of XServiceInfo.
    * @param
-   * @return Implementataion name.
+   * @return Implementation name.
    */
 OUString MSAAServiceImpl::getImplementationName() throw (RuntimeException)
 {
@@ -179,7 +179,7 @@ OUString MSAAServiceImpl::getImplementationName() throw (RuntimeException)
 }
 
 /**
-   * Implemention of XServiceInfo,return support service name.
+   * Implementation of XServiceInfo,return support service name.
    * @param Service name.
    * @return If the service name is supported.
    */
@@ -190,7 +190,7 @@ sal_Bool MSAAServiceImpl::supportsService( OUString const & serviceName ) throw 
 }
 
 /**
-   * Implemention of XServiceInfo,return all service names.
+   * Implementation of XServiceInfo,return all service names.
    * @param.
    * @return service name sequence.
    */
