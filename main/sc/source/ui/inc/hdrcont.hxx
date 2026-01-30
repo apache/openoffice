@@ -73,10 +73,8 @@ private:
 
 	void			DoPaint( SCCOLROW nStart, SCCOLROW nEnd );
 
-	void			DrawShadedRect( long nStart, long nEnd, const Color& rBaseColor );
-
 protected:
-//	von Window ueberladen
+// von Window ueberladen
 
 	virtual void	Paint( const Rectangle& rRect );
 
@@ -87,7 +85,7 @@ protected:
 
 	virtual void	RequestHelp( const HelpEvent& rHEvt );
 
-//	new methods
+// new methods
 
 	virtual SCCOLROW	GetPos() = 0;								// aktuelle Position (Scrolling)
 	virtual sal_uInt16	GetEntrySize( SCCOLROW nEntryNo ) = 0;		// Width / Height (pixel)

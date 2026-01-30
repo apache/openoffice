@@ -70,12 +70,12 @@ ScHeaderControl::ScHeaderControl( Window* pParent, SelectionEngine* pSelectionEn
 			bDragging	( sal_False ),
 			bIgnoreMove	( sal_False )
 {
-    // --- RTL --- no default mirroring for this window, the spreadsheet itself
-    // is also not mirrored
-    // #107811# mirror the vertical window for correct border drawing
-    // #106948# table layout depends on sheet format, not UI setting, so the
+	// --- RTL --- no default mirroring for this window, the spreadsheet itself
+	// is also not mirrored
+	// #107811# mirror the vertical window for correct border drawing
+	// #106948# table layout depends on sheet format, not UI setting, so the
 	// borders of the vertical window have to be handled manually, too.
-    EnableRTL( sal_False );
+	EnableRTL( sal_False );
 
 	aNormFont = GetFont();
 	aNormFont.SetTransparent( sal_True );		//! WEIGHT_NORMAL hart setzen ???
@@ -125,12 +125,12 @@ void ScHeaderControl::DoPaint( SCCOLROW nStart, SCCOLROW nEnd )
 	Rectangle aRect( Point(0,0), GetOutputSizePixel() );
 	if ( bVertical )
 	{
-        aRect.Top() = GetScrPos( nStart )-nLayoutSign;      // extra pixel for line at top of selection
+		aRect.Top() = GetScrPos( nStart )-nLayoutSign; // extra pixel for line at top of selection
 		aRect.Bottom() = GetScrPos( nEnd+1 )-nLayoutSign;
 	}
 	else
 	{
-        aRect.Left() = GetScrPos( nStart )-nLayoutSign;     // extra pixel for line left of selection
+		aRect.Left() = GetScrPos( nStart )-nLayoutSign; // extra pixel for line left of selection
 		aRect.Right() = GetScrPos( nEnd+1 )-nLayoutSign;
 	}
 	Invalidate(aRect);
@@ -214,43 +214,6 @@ long ScHeaderControl::GetScrPos( SCCOLROW nEntryNo )
 	return nScrPos;
 }
 
-// draw a rectangle across the window's width/height, with the outer part in a lighter color
-
-void ScHeaderControl::DrawShadedRect( long nStart, long nEnd, const Color& rBaseColor )
-{
-//	Color aWhite( COL_WHITE );
-
-	Color aInner( rBaseColor );             // highlight color, unchanged
-	Color aCenter( rBaseColor );
-//	aCenter.Merge( aWhite, 0xd0 );          // lighten up a bit
-	Color aOuter( rBaseColor );
-//	aOuter.Merge( aWhite, 0xa0 );           // lighten up more
-
-//	if ( IsMirrored() )
-//		std::swap( aInner, aOuter );        // just swap colors instead of positions
-
-	Size aWinSize = GetSizePixel();
-	long nBarSize = bVertical ? aWinSize.Width() : aWinSize.Height();
-	long nCenterPos = (nBarSize / 2) - 1;
-
-	SetLineColor();
-	SetFillColor( aOuter );
-	if (bVertical)
-		DrawRect( Rectangle( 0, nStart, nCenterPos-1, nEnd ) );
-	else
-		DrawRect( Rectangle( nStart, 0, nEnd, nCenterPos-1 ) );
-	SetFillColor( aCenter );
-	if (bVertical)
-		DrawRect( Rectangle( nCenterPos, nStart, nCenterPos, nEnd ) );
-	else
-		DrawRect( Rectangle( nStart, nCenterPos, nEnd, nCenterPos ) );
-	SetFillColor( aInner );
-	if (bVertical)
-		DrawRect( Rectangle( nCenterPos+1, nStart, nBarSize-1, nEnd ) );
-	else
-		DrawRect( Rectangle( nStart, nCenterPos+1, nEnd, nBarSize-1 ) );
-}
-
 //		Paint
 
 void ScHeaderControl::Paint( const Rectangle& rRect )
@@ -259,22 +222,22 @@ void ScHeaderControl::Paint( const Rectangle& rRect )
 	//	Linien zusammengefasst
 
 	const StyleSettings& rStyleSettings = GetSettings().GetStyleSettings();
-    sal_Bool bHighContrast = rStyleSettings.GetHighContrastMode();
+	sal_Bool bHighContrast = rStyleSettings.GetHighContrastMode();
 	sal_Bool bDark = rStyleSettings.GetFaceColor().IsDark();
 	// Use the same distinction for bDark as in Window::DrawSelectionBackground
 
 	Color aTextColor = rStyleSettings.GetButtonTextColor();
 	Color aSelTextColor = rStyleSettings.GetHighlightTextColor();
 	aNormFont.SetColor( aTextColor );
-    if ( bHighContrast )
-        aBoldFont.SetColor( aTextColor );
-    else
-        aBoldFont.SetColor( aSelTextColor );
+	if ( bHighContrast )
+		aBoldFont.SetColor( aTextColor );
+	else
+		aBoldFont.SetColor( aSelTextColor );
 	SetTextColor( ( bBoldSet && !bHighContrast ) ? aSelTextColor : aTextColor );
 
-    Color aBlack( COL_BLACK );
-    Color aSelLineColor = rStyleSettings.GetHighlightColor();
-    aSelLineColor.Merge( aBlack, 0xe0 );        // darken just a little bit
+	Color aBlack( COL_BLACK );
+	Color aSelLineColor = rStyleSettings.GetHighlightColor();
+	aSelLineColor.Merge( aBlack, 0xe0 ); // darken just a little bit
 
 	sal_Bool bLayoutRTL = IsLayoutRTL();
 	long nLayoutSign = bLayoutRTL ? -1 : 1;
@@ -351,33 +314,24 @@ void ScHeaderControl::Paint( const Rectangle& rRect )
 		}
 	}
 
-	//	background is different for entry area and behind the entries
+	// background is different for entry area and behind the entries
 
 	Rectangle aFillRect;
 	SetLineColor();
 
 	if ( nLineEnd * nLayoutSign >= nInitScrPos * nLayoutSign )
 	{
-        if ( bHighContrast )
-        {
-            // high contrast: single-color background
-            SetFillColor( rStyleSettings.GetFaceColor() );
-            if ( bVertical )
-                aFillRect = Rectangle( 0, nInitScrPos, nBarSize-1, nLineEnd );
-            else
-                aFillRect = Rectangle( nInitScrPos, 0, nLineEnd, nBarSize-1 );
-            DrawRect( aFillRect );
-        }
-        else
-        {
-            // normal: 3-part background
-            DrawShadedRect( nInitScrPos, nLineEnd, rStyleSettings.GetFaceColor() );
-        }
+		SetFillColor( rStyleSettings.GetFaceColor() );
+		if ( bVertical )
+			aFillRect = Rectangle( 0, nInitScrPos, nBarSize-1, nLineEnd );
+		else
+			aFillRect = Rectangle( nInitScrPos, 0, nLineEnd, nBarSize-1 );
+		DrawRect( aFillRect );
 	}
 
 	if ( nLineEnd * nLayoutSign < nPEnd * nLayoutSign )
 	{
-        SetFillColor( SC_MOD()->GetColorConfig().GetColorValue(svtools::APPBACKGROUND).nColor );
+		SetFillColor( SC_MOD()->GetColorConfig().GetColorValue(svtools::APPBACKGROUND).nColor );
 		if ( bVertical )
 			aFillRect = Rectangle( 0, nLineEnd+nLayoutSign, nBarSize-1, nPEnd );
 		else
@@ -387,14 +341,13 @@ void ScHeaderControl::Paint( const Rectangle& rRect )
 
 	if ( nLineEnd * nLayoutSign >= nPStart * nLayoutSign )
 	{
-        if ( nTransEnd * nLayoutSign >= nTransStart * nLayoutSign )
-        {
-            if ( bHighContrast )
-            {
-                if ( bDark )
-                {
-                    //	solid grey background for dark face color is drawn before lines
-
+		if ( nTransEnd * nLayoutSign >= nTransStart * nLayoutSign )
+		{
+			if ( bHighContrast )
+			{
+				if ( bDark )
+				{
+                    // solid gray background for dark face color is drawn before lines
                     SetLineColor();
                     SetFillColor( COL_LIGHTGRAY );
                     if (bVertical)
@@ -406,10 +359,14 @@ void ScHeaderControl::Paint( const Rectangle& rRect )
             else
             {
                 // background for selection
-
-                DrawShadedRect( nTransStart, nTransEnd, rStyleSettings.GetHighlightColor() );
+                SetLineColor();
+                SetFillColor( rStyleSettings.GetHighlightColor() );
+                if (bVertical)
+                    DrawRect( Rectangle( 0, nTransStart, nBarSize-1, nTransEnd ) );
+                else
+                    DrawRect( Rectangle( nTransStart, 0, nTransEnd, nBarSize-1 ) );
             }
-        }
+		}
 
 #if 0
 		// 3D border is no longer used
@@ -440,7 +397,7 @@ void ScHeaderControl::Paint( const Rectangle& rRect )
             }
             else
                 DrawLine( Point( nTransStart, nBarSize-1 ), Point( nTransEnd, nBarSize-1 ) );
-        }
+		}
 	}
 
 	//	loop through entries several times to avoid changing the line color too often
@@ -450,23 +407,23 @@ void ScHeaderControl::Paint( const Rectangle& rRect )
 
 	//	start at SC_HDRPAINT_BOTTOM instead of 0 - selection doesn't get different
 	//	borders, light border at top isn't used anymore
-    //  use SC_HDRPAINT_SEL_BOTTOM for different color
+	//  use SC_HDRPAINT_SEL_BOTTOM for different color
 
-    for (sal_uInt16 nPass = SC_HDRPAINT_SEL_BOTTOM; nPass < SC_HDRPAINT_COUNT; nPass++)
+	for (sal_uInt16 nPass = SC_HDRPAINT_SEL_BOTTOM; nPass < SC_HDRPAINT_COUNT; nPass++)
 	{
 		//	set line color etc. before entry loop
 		switch ( nPass )
 		{
-            case SC_HDRPAINT_SEL_BOTTOM:
-                // same as non-selected for high contrast
-                SetLineColor( bHighContrast ? rStyleSettings.GetDarkShadowColor() : aSelLineColor );
-                break;
+			case SC_HDRPAINT_SEL_BOTTOM:
+				// same as non-selected for high contrast
+				SetLineColor( bHighContrast ? rStyleSettings.GetDarkShadowColor() : aSelLineColor );
+				break;
 			case SC_HDRPAINT_BOTTOM:
 				SetLineColor( rStyleSettings.GetDarkShadowColor() );
 				break;
 			case SC_HDRPAINT_TEXT:
-                // DrawSelectionBackground is used only for high contrast on light background
-                if ( nTransEnd * nLayoutSign >= nTransStart * nLayoutSign && bHighContrast && !bDark )
+				// DrawSelectionBackground is used only for high contrast on light background
+				if ( nTransEnd * nLayoutSign >= nTransStart * nLayoutSign && bHighContrast && !bDark )
 				{
 					//	Transparent selection background is drawn after lines, before text.
 					//	#109814# Use DrawSelectionBackground to make sure there is a visible
@@ -519,7 +476,7 @@ void ScHeaderControl::Paint( const Rectangle& rRect )
 						aEndPos = Point( aScrPos.X()+(nSizePix-1)*nLayoutSign, aScrPos.Y()+nBarSize-1 );
 
 					sal_Bool bMark = bMarkRange && nEntryNo >= nMarkStart && nEntryNo <= nMarkEnd;
-                    sal_Bool bNextToMark = bMarkRange && nEntryNo + 1 >= nMarkStart && nEntryNo <= nMarkEnd;
+					sal_Bool bNextToMark = bMarkRange && nEntryNo + 1 >= nMarkStart && nEntryNo <= nMarkEnd;
 
 					switch ( nPass )
 					{
@@ -573,7 +530,7 @@ void ScHeaderControl::Paint( const Rectangle& rRect )
 								else
 								{
 									aTxtPos.X() += (nSizePix*nLayoutSign-aTextSize.Width()+1)/2;
-                                    aTxtPos.Y() += (nBarSize-aTextSize.Height())/2;
+									aTxtPos.Y() += (nBarSize-aTextSize.Height())/2;
 								}
 								DrawText( aTxtPos, aString );
 							}
@@ -620,8 +577,8 @@ SCCOLROW ScHeaderControl::GetMousePos( const MouseEvent& rMEvt, sal_Bool& rBorde
 
 //		nScrPos = GetScrPos( nEntryNo ) - 1;
 
-        if (nEntryNo > nSize)
-            nScrPos = nEndPos + nLayoutSign;
+		if (nEntryNo > nSize)
+			nScrPos = nEndPos + nLayoutSign;
 		else
 			nScrPos += GetEntrySize( nEntryNo - 1 ) * nLayoutSign;		//! GetHiddenCount() ??
 
@@ -631,7 +588,7 @@ SCCOLROW ScHeaderControl::GetMousePos( const MouseEvent& rMEvt, sal_Bool& rBorde
 			bFound=sal_True;
 			nHitNo=nEntryNo-1;
 		}
-        else if (nDif * nLayoutSign >= 0 && nEntryNo < nSize)
+		else if (nDif * nLayoutSign >= 0 && nEntryNo < nSize)
 			nHitNo = nEntryNo;
 		++nCount;
 	}
@@ -643,41 +600,41 @@ SCCOLROW ScHeaderControl::GetMousePos( const MouseEvent& rMEvt, sal_Bool& rBorde
 
 bool ScHeaderControl::IsSelectionAllowed(SCCOLROW nPos) const
 {
-    ScTabViewShell* pViewSh = dynamic_cast<ScTabViewShell*>(SfxViewShell::Current());
-    if (!pViewSh)
-        return false;
+	ScTabViewShell* pViewSh = dynamic_cast<ScTabViewShell*>(SfxViewShell::Current());
+	if (!pViewSh)
+		return false;
 
-    ScViewData* pViewData = pViewSh->GetViewData();
-    sal_uInt16 nTab = pViewData->GetTabNo();
-    ScDocument* pDoc = pViewData->GetDocument();
-    const ScTableProtection* pProtect = pDoc->GetTabProtection(nTab);
-    bool bSelectAllowed = true;
-    if ( pProtect && pProtect->isProtected() )
-    {
-        // This sheet is protected.  Check if a context menu is allowed on this cell.
-        bool bCellsProtected = false;
-        if (bVertical)
-        {
+	ScViewData* pViewData = pViewSh->GetViewData();
+	sal_uInt16 nTab = pViewData->GetTabNo();
+	ScDocument* pDoc = pViewData->GetDocument();
+	const ScTableProtection* pProtect = pDoc->GetTabProtection(nTab);
+	bool bSelectAllowed = true;
+	if ( pProtect && pProtect->isProtected() )
+	{
+		// This sheet is protected.  Check if a context menu is allowed on this cell.
+		bool bCellsProtected = false;
+		if (bVertical)
+		{
             // row header
             SCROW nRPos = static_cast<SCROW>(nPos);
             bCellsProtected = pDoc->HasAttrib(0, nRPos, nTab, MAXCOL, nRPos, nTab, HASATTR_PROTECTED);
-        }
-        else
-        {
+		}
+		else
+		{
             // column header
             SCCOL nCPos = static_cast<SCCOL>(nPos);
             bCellsProtected = pDoc->HasAttrib(nCPos, 0, nTab, nCPos, MAXROW, nTab, HASATTR_PROTECTED);
         }
 
-        bool bSelProtected   = pProtect->isOptionEnabled(ScTableProtection::SELECT_LOCKED_CELLS);
-        bool bSelUnprotected = pProtect->isOptionEnabled(ScTableProtection::SELECT_UNLOCKED_CELLS);
+		bool bSelProtected   = pProtect->isOptionEnabled(ScTableProtection::SELECT_LOCKED_CELLS);
+		bool bSelUnprotected = pProtect->isOptionEnabled(ScTableProtection::SELECT_UNLOCKED_CELLS);
 
         if (bCellsProtected)
             bSelectAllowed = bSelProtected;
         else
             bSelectAllowed = bSelUnprotected;
-    }
-    return bSelectAllowed;
+	}
+	return bSelectAllowed;
 }
 
 void ScHeaderControl::MouseButtonDown( const MouseEvent& rMEvt )
@@ -690,8 +647,8 @@ void ScHeaderControl::MouseButtonDown( const MouseEvent& rMEvt )
 
 	sal_Bool bFound;
 	SCCOLROW nHitNo = GetMousePos( rMEvt, bFound );
-    if (!IsSelectionAllowed(nHitNo))
-        return;
+	if (!IsSelectionAllowed(nHitNo))
+		return;
 
 	if ( bFound && rMEvt.IsLeft() && ResizeAllowed() )
 	{
@@ -754,8 +711,8 @@ void ScHeaderControl::MouseButtonUp( const MouseEvent& rMEvt )
 
 	SetMarking( sal_False );
 	bIgnoreMove = sal_False;
-//    sal_Bool bFound;
-//    SCCOLROW nHitNo = GetMousePos( rMEvt, bFound );
+//	sal_Bool bFound;
+//	SCCOLROW nHitNo = GetMousePos( rMEvt, bFound );
 
 	if ( bDragging )
 	{
@@ -771,7 +728,7 @@ void ScHeaderControl::MouseButtonUp( const MouseEvent& rMEvt )
 
 		if ( nNewWidth < 0 /* && !IsSelected(nDragNo) */ )
 		{
-            SCCOLROW nStart = 0;
+			SCCOLROW nStart = 0;
 			SCCOLROW nEnd = nDragNo;
 			while (nNewWidth < 0)
 			{
@@ -809,7 +766,7 @@ void ScHeaderControl::MouseMove( const MouseEvent& rMEvt )
 	}
 
 	sal_Bool bFound;
-    (void)GetMousePos( rMEvt, bFound );
+	(void)GetMousePos( rMEvt, bFound );
 
 	if ( bDragging )
 	{
