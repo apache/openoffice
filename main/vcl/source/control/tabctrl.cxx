@@ -90,7 +90,7 @@ struct ImplTabCtrlData
 #define TAB_BORDER_RIGHT	2
 #define TAB_BORDER_BOTTOM	2
 
-// Fuer die Ermittlung von den Tab-Positionen
+// Für die Ermittlung von den Tab-Positionen
 #define TAB_PAGERECT		0xFFFF
 
 // =======================================================================
@@ -119,7 +119,6 @@ void TabControl::ImplInit( Window* pParent, WinBits nStyle )
 	mbExtraSpace				= sal_False;
 	mpTabCtrlData				= new ImplTabCtrlData;
 	mpTabCtrlData->mpListBox	= NULL;
-
 
 	ImplInitSettings( sal_True, sal_True, sal_True );
 
@@ -255,7 +254,7 @@ TabControl::~TabControl()
 
 	ImplFreeLayoutData();
 
-	// TabCtrl-Daten loeschen
+	// TabCtrl-Daten löschen
 	if ( mpTabCtrlData )
 	{
 		if( mpTabCtrlData->mpListBox )
@@ -316,7 +315,7 @@ Size TabControl::ImplGetItemSize( ImplTabItem* pItem, long nMaxWidth )
 	else if ( pItem->maFormatText.Len() < TAB_EXTRASPACE_X )
 		aSize.Width() += TAB_EXTRASPACE_X-pItem->maFormatText.Len();
 
-	// Evtl. den Text kuerzen
+	// Evtl. den Text kürzen
 	if ( aSize.Width()+4 >= nMaxWidth )
 	{
 		XubString aAppendStr( RTL_CONSTASCII_USTRINGPARAM( "..." ) );
@@ -781,7 +780,7 @@ void TabControl::ImplDrawItem( ImplTabItem* pItem, const Rectangle& rCurRect, bo
 	else
 		nOff = 0;
 
-	// Wenn wir die aktuelle Page sind, muessen wir etwas mehr zeichnen
+	// Wenn wir die aktuelle Page sind, müssen wir etwas mehr zeichnen
 	if ( pItem->mnId == mnCurPageId )
 	{
 		nOff2 = 2;
@@ -982,7 +981,6 @@ long TabControl::ImplHandleKeyEvent( const KeyEvent& rKeyEvent )
 	return nRet;
 }
 
-
 // -----------------------------------------------------------------------
 
 IMPL_LINK( TabControl, ImplListBoxSelectHdl, ListBox*, EMPTYARG )
@@ -998,7 +996,7 @@ IMPL_LINK( TabControl, ImplWindowEventListener, VclSimpleEvent*, pEvent )
 	if ( pEvent && pEvent->ISA( VclWindowEvent ) && (pEvent->GetId() == VCLEVENT_WINDOW_KEYINPUT) )
 	{
 		VclWindowEvent* pWindowEvent = static_cast< VclWindowEvent* >(pEvent);
-		// Do not handle events from TabControl or it's children, which is done in Notify(), where the events can be consumed.
+		// Do not handle events from TabControl or its children, which is done in Notify(), where the events can be consumed.
 		if ( !IsWindowOrChild( pWindowEvent->GetWindow() ) )
 		{
 			KeyEvent* pKeyEvent = static_cast< KeyEvent* >(pWindowEvent->GetData());
@@ -1007,7 +1005,6 @@ IMPL_LINK( TabControl, ImplWindowEventListener, VclSimpleEvent*, pEvent )
 	}
 	return 0;
 }
-
 
 // -----------------------------------------------------------------------
 
@@ -1351,7 +1348,7 @@ void TabControl::RequestHelp( const HelpEvent& rHEvt )
 			rtl::OUString aHelpId( rtl::OStringToOUString( GetHelpId( nItemId ), RTL_TEXTENCODING_UTF8 ) );
 			if ( aHelpId.getLength() )
 			{
-				// Wenn eine Hilfe existiert, dann ausloesen
+				// Wenn eine Hilfe existiert, dann auslösen
 				Help* pHelp = Application::GetHelp();
 				if ( pHelp )
 					pHelp->Start( aHelpId, this );
