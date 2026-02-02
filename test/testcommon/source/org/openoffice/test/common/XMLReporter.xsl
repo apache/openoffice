@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,19 +8,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
- 
- 
+
+
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:output method="html" encoding="utf-8" doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN" doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" />
 <xsl:template match="/">
@@ -127,26 +127,26 @@ function refresh() {
 	var ignoredNo = testsuiteEl.getAttribute("ignored");
 	$('IgnoredNo').innerHTML = ignoredNo;
 	$('SuccessNo').innerHTML = parseInt(allNo) - parseInt(failureNo) - parseInt(errorNo) - parseInt(ignoredNo);
-	
+
 	var propEls = $$s(testsuiteEl, "property");
 	var props = {};
 	for (var i = 0; i < propEls.length; i++) {
 		var e = propEls[i];
 		props[e.getAttribute("name")] = e.getAttribute("value");
 	}
-	
+
 	$('info.test.date').innerHTML = props['info.test.date'] || 'Unknown';
 	$('info.app.buildid').innerHTML = props['info.app.buildid'] || 'Unknown';
 	$('info.app.AllLanguages').innerHTML = props['info.app.AllLanguages'] || '';
 	$('info.os.name').innerHTML = props['info.os.name'] || 'Unknown';
 	$('info.os.version').innerHTML = props['info.os.version'] || 'Unknown';
 	$('info.os.arch').innerHTML = props['info.os.arch'] || 'Unknown';
-	if (props['info.app.Revision']) 
+	if (props['info.app.Revision'])
 		$('info.app.Revision').innerHTML = '<a href="http://svn.apache.org/viewvc?view=revision&revision=' + props['info.app.Revision'] + '">'  + props['info.app.Revision'] + '</a>';
 	$('info.hostname').innerHTML = props['info.hostname'] || 'Unknown';
 	$('info.ip').innerHTML = props['info.ip'] || '0.0.0.0';
 	$('java.runtime.version').innerHTML = props['java.runtime.version'] || 'Unknown';
-	
+
 	var testcaseEls = $$s(data, 'testcase');
 	var html = '<table class="recordTable"><thead><tr><th>Class</th><th>Method</th><th>Status</th><th width="80%">Message</th><th>Time</th><th>Screenshot</th></tr></thead><tbody id="recordTable">';
 
@@ -171,17 +171,17 @@ function refresh() {
 				message = '<a href="https://issues.apache.org/ooo/show_bug.cgi?id=' + RegExp.$2 + '">' + RegExp.$1 + RegExp.$2 + '</a>' + RegExp.$3;
 			}
 		}
-		
-		html += '<tr class="' + status + '"><td>' 
-			+ e.getAttribute("classname") + '</td><td>' 
-			+ e.getAttribute("methodname") + '</td><td>' 
-			+ status + '</td><td>' 
-			+ message + '</td><td>' 
-			+ e.getAttribute("time") + '</td><td>' 
+
+		html += '<tr class="' + status + '"><td>'
+			+ e.getAttribute("classname") + '</td><td>'
+			+ e.getAttribute("methodname") + '</td><td>'
+			+ status + '</td><td>'
+			+ message + '</td><td>'
+			+ e.getAttribute("time") + '</td><td>'
 			+ screenshot + '</td></tr>';
-			
+
 	}
-	
+
 	$('recordTableContainer').innerHTML = html + '</tbody></table>';
 }
 
@@ -206,7 +206,7 @@ function toggleRecord(status) {
 		el.className = 'unchecked';
 		display = 'none';
 	}
-	
+
 	var trEls = $$s($('recordTable'), 'tr');
 	for (var i = 0; i < trEls.length; i++){
 		var e = trEls[i];
@@ -230,5 +230,4 @@ function onload() {
 </body>
 </html>
 </xsl:template>
-</xsl:stylesheet>    
-   
+</xsl:stylesheet>

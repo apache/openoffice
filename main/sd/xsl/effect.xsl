@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,16 +8,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 				xmlns:office="urn:oasis:names:tc:openoffice:xmlns:office:1.0"
@@ -42,7 +42,7 @@
 				xmlns:oooc="http://openoffice.org/2004/calc"
 				xmlns:dom="http://www.w3.org/2001/xml-events"
 				xmlns:smil="http://www.w3.org/2001/SMIL20"
-				xmlns:anim="urn:oasis:names:tc:openoffice:xmlns:animation:1.0"   
+				xmlns:anim="urn:oasis:names:tc:openoffice:xmlns:animation:1.0"
 
                 version="1.0">
 
@@ -122,14 +122,14 @@
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:par>
   </xsl:template>
- 
+
   <!-- box -->
   <xsl:template match="anim:par[@pres:preset-id = 'ooo-entrance-box']">
     <anim:par pres:preset-property="Direction">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:par>
   </xsl:template>
-  
+
   <!-- checkerboard -->
   <xsl:template match="anim:par[@pres:preset-id = 'ooo-entrance-checkerboard']">
     <anim:par pres:preset-property="Direction">
@@ -220,21 +220,21 @@
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:par>
   </xsl:template>
-   
+
   <!-- zoom -->
   <xsl:template match="anim:par[@pres:preset-id = 'ooo-entrance-zoom']">
     <anim:par pres:preset-property="Zoom">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:par>
-  </xsl:template>   
-   
+  </xsl:template>
+
   <!-- swivel -->
   <xsl:template match="anim:par[@pres:preset-id = 'ooo-entrance-swivel']">
     <anim:par pres:preset-property="Direction">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:par>
-  </xsl:template>   
-   
+  </xsl:template>
+
 <!-- emphasis -->
 
   <!-- change fill color -->
@@ -242,84 +242,84 @@
     <anim:par pres:preset-property="FillColor;ColorStyle;Accelerate;Decelerate;AutoReverse">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:par>
-  </xsl:template>   
-   
+  </xsl:template>
+
   <!-- change font -->
   <xsl:template match="anim:par[@pres:preset-id = 'ooo-emphasis-font']">
     <anim:par pres:preset-property="FontStyle" pres:text-only="true">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:par>
-  </xsl:template>   
-   
+  </xsl:template>
+
   <!-- change font color -->
   <xsl:template match="anim:par[@pres:preset-id = 'ooo-emphasis-font-color']">
     <anim:par pres:preset-property="CharColor;ColorStyle;Accelerate;Decelerate;AutoReverse" pres:text-only="true">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:par>
-  </xsl:template>   
-   
+  </xsl:template>
+
   <!-- change font size -->
   <xsl:template match="anim:par[@pres:preset-id = 'ooo-emphasis-font-size']">
     <anim:par pres:preset-property="CharHeight" pres:text-only="true">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:par>
-  </xsl:template>   
-   
+  </xsl:template>
+
   <!-- change font style -->
   <xsl:template match="anim:par[@pres:preset-id = 'ooo-emphasis-font-style']">
     <anim:par pres:preset-property="CharDecoration" pres:text-only="true">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:par>
-  </xsl:template>   
-   
+  </xsl:template>
+
   <!-- change line color -->
   <xsl:template match="anim:par[@pres:preset-id = 'ooo-emphasis-line-color']">
     <anim:par pres:preset-property="LineColor;ColorStyle;Accelerate;Decelerate;AutoReverse">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:par>
-  </xsl:template>   
-   
+  </xsl:template>
+
   <!-- grow/shrink -->
   <xsl:template match="anim:par[@pres:preset-id = 'ooo-emphasis-grow-and-shrink']">
     <anim:par pres:preset-property="Scale;Accelerate;Decelerate;AutoReverse">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:par>
-  </xsl:template>   
-   
+  </xsl:template>
+
   <!-- spin -->
   <xsl:template match="anim:par[@pres:preset-id = 'ooo-emphasis-spin']">
     <anim:par pres:preset-property="Rotate;Accelerate;Decelerate;AutoReverse">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:par>
-  </xsl:template>   
-   
+  </xsl:template>
+
   <!-- Transparency -->
   <xsl:template match="anim:par[@pres:preset-id = 'ooo-emphasis-transparency']">
     <anim:par pres:preset-property="Transparency">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:par>
-  </xsl:template>   
-   
+  </xsl:template>
+
   <!-- brush on color -->
   <xsl:template match="anim:iterate[@pres:preset-id = 'ooo-emphasis-color-over-by-word']">
     <anim:iterate pres:preset-property="Color" pres:text-only="true">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:iterate>
-  </xsl:template>   
-   
+  </xsl:template>
+
   <!-- color blend -->
   <xsl:template match="anim:par[@pres:preset-id = 'ooo-emphasis-color-blend']">
     <anim:par pres:preset-property="Color">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:par>
-  </xsl:template>   
-   
+  </xsl:template>
+
   <!-- color wave -->
   <xsl:template match="anim:iterate[@pres:preset-id = 'ooo-emphasis-color-over-by-letter']">
     <anim:iterate pres:preset-property="Color" pres:text-only="true">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:iterate>
-  </xsl:template>   
+  </xsl:template>
 
   <!-- bold flash -->
   <xsl:template match="anim:par[@pres:preset-id = 'ooo-emphasis-bold-flash']">
@@ -327,13 +327,13 @@
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:par>
   </xsl:template>
-     
+
   <!-- reveal underline -->
   <xsl:template match="anim:iterate[@pres:preset-id = 'ooo-emphasis-reveal-underline']">
     <anim:iterate pres:text-only="true">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:iterate>
-  </xsl:template>  
+  </xsl:template>
 
   <!-- shimmer -->
   <xsl:template match="anim:iterate[@pres:preset-id = 'ooo-emphasis-shimmer']">
@@ -347,57 +347,57 @@
     <anim:par pres:preset-property="Color">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:par>
-  </xsl:template>   
-   
+  </xsl:template>
+
   <!-- flicker -->
   <xsl:template match="anim:par[@pres:preset-id = 'ooo-emphasis-flicker']">
     <anim:par pres:preset-property="Color">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:par>
-  </xsl:template>   
-   
+  </xsl:template>
+
   <!-- grow with color -->
   <xsl:template match="anim:iterate[@pres:preset-id = 'ooo-emphasis-grow-with-color']">
     <anim:iterate pres:preset-property="Color" pres:text-only="true">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:iterate>
-  </xsl:template>   
-   
+  </xsl:template>
+
   <!-- teeter -->
   <xsl:template match="anim:par[@pres:preset-id = 'ooo-emphasis-teeter']">
     <anim:par pres:preset-property="Color">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:par>
-  </xsl:template>   
-   
+  </xsl:template>
+
   <!-- blast -->
   <xsl:template match="anim:par[@pres:preset-id = 'ooo-emphasis-blast']">
     <anim:par pres:preset-property="Color">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:par>
-  </xsl:template>   
-   
+  </xsl:template>
+
   <!-- style emphasis -->
   <xsl:template match="anim:par[@pres:preset-id = 'ooo-emphasis-style-emphasis']">
     <anim:par pres:preset-property="Color" pres:text-only="true">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:par>
-  </xsl:template>   
-   
+  </xsl:template>
+
   <!-- bold reveal -->
   <xsl:template match="anim:iterate[@pres:preset-id = 'ooo-emphasis-bold-reveal']">
     <anim:iterate pres:text-only="true">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:iterate>
   </xsl:template>
-  
+
     <!-- wave -->
   <xsl:template match="anim:iterate[@pres:preset-id = 'ooo-emphasis-wave']">
     <anim:iterate pres:text-only="true">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:iterate>
   </xsl:template>
-  
+
 <!-- exit -->
 
   <!-- blinds -->
@@ -405,126 +405,126 @@
     <anim:par pres:preset-property="Direction">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:par>
-  </xsl:template>   
-   
+  </xsl:template>
+
   <!-- box -->
   <xsl:template match="anim:par[@pres:preset-id = 'ooo-exit-box']">
     <anim:par pres:preset-property="Direction">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:par>
-  </xsl:template>   
-   
+  </xsl:template>
+
   <!-- checkerboard -->
   <xsl:template match="anim:par[@pres:preset-id = 'ooo-exit-checkerboard']">
     <anim:par pres:preset-property="Direction">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:par>
-  </xsl:template>   
-   
+  </xsl:template>
+
   <!-- circle -->
   <xsl:template match="anim:par[@pres:preset-id = 'ooo-exit-circle']">
     <anim:par pres:preset-property="Direction">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:par>
-  </xsl:template>   
-   
+  </xsl:template>
+
   <!-- crawl out -->
   <xsl:template match="anim:par[@pres:preset-id = 'ooo-exit-crawl-out']">
     <anim:par pres:preset-property="Direction">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:par>
-  </xsl:template>   
-   
+  </xsl:template>
+
   <!-- diamond -->
   <xsl:template match="anim:par[@pres:preset-id = 'ooo-exit-diamond']">
     <anim:par pres:preset-property="Direction">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:par>
-  </xsl:template>   
-   
+  </xsl:template>
+
   <!-- fly out -->
   <xsl:template match="anim:par[@pres:preset-id = 'ooo-exit-fly-out']">
     <anim:par pres:preset-property="Direction;Accelerate;Decelerate">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:par>
-  </xsl:template>   
-   
+  </xsl:template>
+
   <!-- peek out -->
   <xsl:template match="anim:par[@pres:preset-id = 'ooo-exit-peek-out']">
     <anim:par pres:preset-property="Direction">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:par>
-  </xsl:template>   
-   
+  </xsl:template>
+
   <!-- plus -->
   <xsl:template match="anim:par[@pres:preset-id = 'ooo-exit-plus']">
     <anim:par pres:preset-property="Direction">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:par>
-  </xsl:template>   
-   
+  </xsl:template>
+
   <!-- random bars -->
   <xsl:template match="anim:par[@pres:preset-id = 'ooo-exit-random-bars']">
     <anim:par pres:preset-property="Direction">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:par>
-  </xsl:template>   
-   
+  </xsl:template>
+
   <!-- split -->
   <xsl:template match="anim:par[@pres:preset-id = 'ooo-exit-split']">
     <anim:par pres:preset-property="Direction">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:par>
-  </xsl:template>   
-   
+  </xsl:template>
+
   <!-- strips -->
   <xsl:template match="anim:par[@pres:preset-id = 'ooo-exit-diagonal-squares']">
     <anim:par pres:preset-property="Direction">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:par>
-  </xsl:template>   
-   
+  </xsl:template>
+
   <!-- wheel -->
   <xsl:template match="anim:par[@pres:preset-id = 'ooo-exit-wheel']">
     <anim:par pres:preset-property="Spokes">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:par>
-  </xsl:template>   
-   
+  </xsl:template>
+
   <!-- wipe -->
   <xsl:template match="anim:par[@pres:preset-id = 'ooo-exit-wipe']">
     <anim:par pres:preset-property="Direction">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:par>
-  </xsl:template>   
-   
+  </xsl:template>
+
   <!-- collapse -->
   <xsl:template match="anim:par[@pres:preset-id = 'ooo-exit-collapse']">
     <anim:par pres:preset-property="Direction">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:par>
-  </xsl:template>   
-   
+  </xsl:template>
+
   <!-- color typewriter -->
   <xsl:template match="anim:iterate[@pres:preset-id = 'ooo-exit-colored-lettering']">
     <anim:iterate pres:preset-property="Color1;Color2" pres:text-only="true">
       <xsl:apply-templates select="*|@*|text()"/>
-    </anim:iterate>	
-  </xsl:template>   
-   
+    </anim:iterate>
+  </xsl:template>
+
   <!-- zoom -->
   <xsl:template match="anim:par[@pres:preset-id = 'ooo-exit-zoom']">
     <anim:par pres:preset-property="Zoom">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:par>
-  </xsl:template>   
-   
+  </xsl:template>
+
   <!-- swivel -->
   <xsl:template match="anim:par[@pres:preset-id = 'ooo-exit-swivel']">
     <anim:par pres:preset-property="Direction">
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:par>
-  </xsl:template>   
+  </xsl:template>
 
   <!-- fade in an swivel -->
   <xsl:template match="anim:iterate[@pres:preset-id = 'ooo-exit-fade-out-and-swivel']">
@@ -567,7 +567,7 @@
       <xsl:apply-templates select="*|@*|text()"/>
     </anim:iterate>
   </xsl:template>
-   
+
   <!-- remove pres:group-id -->
   <xsl:template match="@xlink:href" />
   <xsl:template match="@smil:targetElement" />

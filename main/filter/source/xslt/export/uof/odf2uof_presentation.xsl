@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,16 +8,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:smil="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" xmlns:uof="http://schemas.uof.org/cn/2003/uof" xmlns:表="http://schemas.uof.org/cn/2003/uof-spreadsheet" xmlns:演="http://schemas.uof.org/cn/2003/uof-slideshow" xmlns:字="http://schemas.uof.org/cn/2003/uof-wordproc" xmlns:数="http://www.w3.org/1998/Math/MathML" xmlns:图="http://schemas.uof.org/cn/2003/graph" exclude-result-prefixes="office style text table draw fo xlink dc meta number presentation svg chart dr3d math form script config ooo ooow oooc dom xforms smil anim">
 	<xsl:output method="xml" indent="no" encoding="UTF-8" version="1.0" standalone="no" omit-xml-declaration="no"/>
@@ -48,7 +48,7 @@
 		<xsl:apply-templates select="office:document"/>
 	</xsl:template>
 	<xsl:template match="office:document">
-		<uof:UOF xmlns:uof="http://schemas.uof.org/cn/2003/uof" xmlns:图="http://schemas.uof.org/cn/2003/graph" xmlns:数="http://www.w3.org/1998/Math/MathML" xmlns:字="http://schemas.uof.org/cn/2003/uof-wordproc" xmlns:演="http://schemas.uof.org/cn/2003/uof-slideshow" xmlns:表="http://schemas.uof.org/cn/2003/uof-spreadsheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uof:language="cn" uof:version="1.0" uof:locID="u0000" uof:mimetype="vnd.uof.presentation">	
+		<uof:UOF xmlns:uof="http://schemas.uof.org/cn/2003/uof" xmlns:图="http://schemas.uof.org/cn/2003/graph" xmlns:数="http://www.w3.org/1998/Math/MathML" xmlns:字="http://schemas.uof.org/cn/2003/uof-wordproc" xmlns:演="http://schemas.uof.org/cn/2003/uof-slideshow" xmlns:表="http://schemas.uof.org/cn/2003/uof-spreadsheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uof:language="cn" uof:version="1.0" uof:locID="u0000" uof:mimetype="vnd.uof.presentation">
 			<xsl:apply-templates select="office:meta"/>
 			<xsl:if test="//text:bookmark|//text:bookmark-start">
 			<uof:书签集 uof:locID="u0027">
@@ -246,7 +246,7 @@
 						<xsl:element name="uof:句式样">
 							<xsl:attribute name="uof:locID">u0043</xsl:attribute>
 							<xsl:attribute name="uof:attrList">标识符 名称 类型 别名 基式样引用</xsl:attribute>
-							<xsl:variable name="count"><xsl:value-of select="count(preceding::node())"/></xsl:variable> 
+							<xsl:variable name="count"><xsl:value-of select="count(preceding::node())"/></xsl:variable>
 							<xsl:attribute name="字:标识符"><xsl:value-of select="concat('ID',$count)"/></xsl:attribute>
 							<xsl:attribute name="字:名称"><xsl:value-of select="concat(ancestor::style:style/@style:name,@text:level)"/></xsl:attribute>
 							<xsl:attribute name="字:类型">auto</xsl:attribute>
@@ -316,7 +316,7 @@
 					</xsl:element>
 						</演:文本式样>
 						</xsl:if>
-					</xsl:for-each>							
+					</xsl:for-each>
 					</演:文本式样集>
 					</xsl:if>
 					<演:显示比例 uof:locID="p0020">
@@ -431,7 +431,7 @@
 												<xsl:when test="@draw:name"><xsl:value-of select="@draw:name"/></xsl:when>
 												<xsl:otherwise><xsl:value-of select="@draw:style-name"/></xsl:otherwise>
 											</xsl:choose>
-			                                
+
 								</xsl:attribute>
 								<xsl:for-each select="/office:document/office:automatic-styles/style:style[@style:name = $page-name]">
 								<xsl:attribute name="演:名称"><xsl:value-of select="@style:name"/></xsl:attribute>
@@ -778,7 +778,7 @@
 			</xsl:variable>
 			<xsl:for-each select="/office:document/*/style:style[@style:name=$stylename]/style:drawing-page-properties">
 				<xsl:if test="@draw:fill and not(@draw:fill='none')">
-					<演:背景 uof:locID="p0057"> 
+					<演:背景 uof:locID="p0057">
 						<xsl:call-template name="填充">
 							<xsl:with-param name="picname" select="$stylename"/>
 							<xsl:with-param name="nodename" select="$name"/>
@@ -2113,10 +2113,10 @@
 										<xsl:variable name="transparency">
 											<xsl:value-of select="substring-before(style:graphic-properties/@svg:stroke-opacity,'%')"/>
 										</xsl:variable>
-										<xsl:value-of select="(100 - $transparency) div 100"/>	
+										<xsl:value-of select="(100 - $transparency) div 100"/>
 										</xsl:when>
 										<xsl:when test="style:properties/@svg:stroke-opacity">
-											<xsl:value-of select="substring-before(style:properties/@svg:stroke-opacity,'%')"/>			
+											<xsl:value-of select="substring-before(style:properties/@svg:stroke-opacity,'%')"/>
 										</xsl:when>
 									</xsl:choose>
 									</图:透明度>
@@ -2171,7 +2171,7 @@
 						</图:属性>
 					</图:预定义图形>
 				</xsl:when>
-			</xsl:choose>			
+			</xsl:choose>
 			<xsl:if test="./text:p or ./draw:text-box">
 				<图:文本内容 uof:locID="g0002" uof:attrList="文本框 左边距 右边距 上边距 下边距 水平对齐 垂直对齐 文字排列方向 自动换行 大小适应文字 前一链接 后一链接">
 					<xsl:if test="$nodename='draw:text-box'">
@@ -2587,7 +2587,7 @@
 							<xsl:attribute name="uof:locID">t0123</xsl:attribute>
 						</xsl:element>
 					</xsl:when>
-					<xsl:when test="name(.)='text:bookmark-start' or name(.)='text:bookmark-end' or  name(.)='draw:image' or name(.)='office:binary-data'">						
+					<xsl:when test="name(.)='text:bookmark-start' or name(.)='text:bookmark-end' or  name(.)='draw:image' or name(.)='office:binary-data'">
 						</xsl:when>
 					<xsl:otherwise>
 						<字:文本串 uof:locID="t0109" uof:attrList="udsPath">
@@ -2708,7 +2708,7 @@
 		</xsl:for-each>
 		<xsl:if test="@style:name='Heading'">
 			<xsl:element name="字:大纲级别">
-				<xsl:attribute name="uof:locID">t0054</xsl:attribute>            
+				<xsl:attribute name="uof:locID">t0054</xsl:attribute>
 				<xsl:value-of select="substring-after(@style:name,'Heading')"/>
 			</xsl:element>
 		</xsl:if>
@@ -2898,7 +2898,7 @@
 		</xsl:if>
 		<xsl:if test=".//style:tab-stops">
 			<xsl:element name="字:制表位设置">
-				<xsl:attribute name="uof:locID">t0067</xsl:attribute>            
+				<xsl:attribute name="uof:locID">t0067</xsl:attribute>
 				<xsl:for-each select=".//style:tab-stops/style:tab-stop">
 					<xsl:element name="字:制表位">
 						<xsl:attribute name="uof:locID">t0068</xsl:attribute>

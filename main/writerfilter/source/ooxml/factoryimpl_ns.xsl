@@ -1,5 +1,5 @@
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,51 +7,51 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
-<xsl:stylesheet 
-    version="1.0" 
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
-    xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" 
-    xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" 
-    xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" 
-    xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" 
-    xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" 
-    xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" 
-    xmlns:xlink="http://www.w3.org/1999/xlink" 
-    xmlns:dc="http://purl.org/dc/elements/1.1/" 
-    xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" 
-    xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" 
-    xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" 
-    xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" 
-    xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" 
-    xmlns:math="http://www.w3.org/1998/Math/MathML" 
-    xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" 
-    xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" 
-    xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" 
-    xmlns:ooo="http://openoffice.org/2004/office" 
-    xmlns:ooow="http://openoffice.org/2004/writer" 
-    xmlns:oooc="http://openoffice.org/2004/calc" 
-    xmlns:dom="http://www.w3.org/2001/xml-events" 
-    xmlns:xforms="http://www.w3.org/2002/xforms" 
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"  
+<xsl:stylesheet
+    version="1.0"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0"
+    xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0"
+    xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0"
+    xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0"
+    xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"
+    xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0"
+    xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0"
+    xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0"
+    xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0"
+    xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0"
+    xmlns:math="http://www.w3.org/1998/Math/MathML"
+    xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0"
+    xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0"
+    xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0"
+    xmlns:ooo="http://openoffice.org/2004/office"
+    xmlns:ooow="http://openoffice.org/2004/writer"
+    xmlns:oooc="http://openoffice.org/2004/calc"
+    xmlns:dom="http://www.w3.org/2001/xml-events"
+    xmlns:xforms="http://www.w3.org/2002/xforms"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:rng="http://relaxng.org/ns/structure/1.0"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:UML = 'org.omg.xmi.namespace.UML' xml:space="default">
   <xsl:output method="text" />
   <xsl:param name="prefix"/>
-  
+
   <xsl:include href="factorytools.xsl"/>
 
 <xsl:template name="factorymutex">
@@ -84,7 +84,7 @@ typedef rtl::Static &lt; osl::Mutex, </xsl:text>
     <xsl:text>()
 {
     // multi-thread-safe mutex for all platforms
-    
+
     osl::MutexGuard aGuard(</xsl:text>
     <xsl:call-template name="factorymutex"/>
     <xsl:text>::get());
@@ -115,7 +115,7 @@ typedef rtl::Static &lt; osl::Mutex, </xsl:text>
 OOXMLFactory_ns::Pointer_t </xsl:text>
     <xsl:value-of select="$classname"/>
     <xsl:text>::m_pInstance;
-    
+
 OOXMLFactory_ns::Pointer_t </xsl:text>
     <xsl:value-of select="$classname"/>
     <xsl:text>::getInstance()
@@ -124,7 +124,7 @@ OOXMLFactory_ns::Pointer_t </xsl:text>
         m_pInstance.reset(new </xsl:text>
     <xsl:value-of select="$classname"/>
     <xsl:text>());
-    
+
     return m_pInstance;
 }
 </xsl:text>
@@ -171,9 +171,9 @@ OOXMLFactory_ns::Pointer_t </xsl:text>
   </xsl:for-each>
 </xsl:template>
 
-<!-- 
+<!--
 
-creates code block in OOXMLFactory_<namespace>::createAttributeToResourceMap 
+creates code block in OOXMLFactory_<namespace>::createAttributeToResourceMap
 for a rng:define
 
  -->
@@ -231,7 +231,7 @@ for a rng:define
       <xsl:call-template name="fasttoken"/>
       </xsl:otherwise>
     </xsl:choose>
-    
+
   </xsl:for-each>
 </xsl:template>
 
@@ -243,7 +243,7 @@ AttributeToResourceMapPointer </xsl:text>
     <xsl:text>::createAttributeToResourceMap(Id nId)
 {
     AttributeToResourceMapPointer pMap(new AttributeToResourceMap());
-    
+
     switch (nId)
     {</xsl:text>
     <xsl:for-each select="rng:grammar/rng:define">
@@ -262,7 +262,7 @@ AttributeToResourceMapPointer </xsl:text>
     default:
         break;
     }
-    
+
     return pMap;
 }
 </xsl:template>
@@ -275,7 +275,7 @@ ListValueMapPointer </xsl:text>
     <xsl:text>::createListValueMap(Id nId)
 {
     ListValueMapPointer pMap(new ListValueMap());
-    
+
     switch (nId)
     {</xsl:text>
     <xsl:for-each select="resource[@resource='List']">
@@ -301,7 +301,7 @@ ListValueMapPointer </xsl:text>
     default:
         break;
     }
-    
+
     return pMap;
 }</xsl:text>
 </xsl:template>
@@ -383,7 +383,7 @@ CreateElementMapPointer </xsl:text>
     <xsl:text>::createCreateElementMap(Id nId)
 {
     CreateElementMapPointer pMap(new CreateElementMap());
-    
+
     switch (nId)
     {</xsl:text>
     <xsl:for-each select="rng:grammar/rng:define">
@@ -394,7 +394,7 @@ CreateElementMapPointer </xsl:text>
             <xsl:text>
     </xsl:text>
             <xsl:call-template name="caselabeldefine"/>
-            <xsl:value-of select="$inner"/>             
+            <xsl:value-of select="$inner"/>
             <xsl:text>
         break;</xsl:text>
         </xsl:if>
@@ -405,7 +405,7 @@ CreateElementMapPointer </xsl:text>
         <xsl:text>
         break;
     }
-    
+
     return pMap;
 }</xsl:text>
 </xsl:template>
@@ -432,7 +432,7 @@ CreateElementMapPointer </xsl:text>
         </xsl:call-template>
         <xsl:text>);
         dynamic_cast&lt;OOXMLFastContextHandlerStream*&gt;(pHandler)-&gt;getPropertySetAttrs()-&gt;resolve(aHandler);
-        
+
         if (sal::static_int_cast&lt;Id&gt;(aHandler.getValue()) == </xsl:text>
         <xsl:call-template name="idtoqname">
           <xsl:with-param name="id" select="@value"/>
@@ -441,11 +441,11 @@ CreateElementMapPointer </xsl:text>
         {</xsl:text>
     </xsl:for-each>
     <xsl:choose>
-        <xsl:when test="@action='handleXNotes' or 
-            @action='handleHdrFtr' or 
-            @action='handleComment' or 
-            @action='handlePicture' or 
-            @action='handleBreak' or 
+        <xsl:when test="@action='handleXNotes' or
+            @action='handleHdrFtr' or
+            @action='handleComment' or
+            @action='handlePicture' or
+            @action='handleBreak' or
             @action='handleOLE'">
             <xsl:text>
     dynamic_cast&lt;OOXMLFastContextHandlerProperties*&gt;(pHandler)-&gt;</xsl:text>
@@ -676,11 +676,11 @@ string </xsl:text>
     <xsl:text>::getDefineName(Id nId) const
 {
     static IdToStringMapPointer pMap;
-    
+
     if (pMap.get() == NULL)
     {
         pMap = IdToStringMapPointer(new IdToStringMap());
-        
+
 </xsl:text>
         <xsl:for-each select="rng:grammar/rng:define">
             <xsl:text>
@@ -691,10 +691,10 @@ string </xsl:text>
             <xsl:text>";</xsl:text>
         </xsl:for-each>
     }
-    
+
     return (*pMap)[nId];
 }
-    
+
 </xsl:template>
 
 <xsl:template name="factorytokentoidmapinner">
@@ -702,7 +702,7 @@ string </xsl:text>
     <xsl:for-each select=".//rng:ref[not(ancestor::rng:element or ancestor::rng:attribute)]">
         <xsl:variable name="refname" select="@name"/>
 	<xsl:variable name="refblock1">
-	    <xsl:for-each 
+	    <xsl:for-each
 		select="ancestor::rng:grammar/rng:define[@name=$refname]">
 	      <xsl:call-template name="factorytokentoidmapinner"/>
 	    </xsl:for-each>
@@ -747,7 +747,7 @@ TokenToIdMapPointer </xsl:text>
     <xsl:text>::createTokenToIdMap(Id nId)
 {
     TokenToIdMapPointer pMap(new TokenToIdMap());
-    
+
     switch (nId)
     {</xsl:text>
     <xsl:for-each select="rng:grammar/rng:define">
@@ -777,7 +777,7 @@ TokenToIdMapPointer </xsl:text>
     <xsl:text>
         break;
     }
-    
+
     return pMap;
 }
 </xsl:text>
@@ -804,7 +804,7 @@ TokenToIdMapPointer </xsl:text>
       <xsl:text>OOXMLFastContextHandler</xsl:text>
         <xsl:for-each select="ancestor::namespace/resource[@name=$name]">
           <xsl:value-of select="@resource"/>
-        </xsl:for-each>      
+        </xsl:for-each>
     </xsl:variable>
     <xsl:text>
     {
@@ -901,7 +901,7 @@ string </xsl:text>
     <xsl:value-of select="$ns"/>
     <xsl:text>.hxx"
 #include "OOXMLFastHelper.hxx"
-    
+
 namespace writerfilter {
 namespace ooxml {
 

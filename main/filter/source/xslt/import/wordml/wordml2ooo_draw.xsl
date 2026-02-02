@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,16 +8,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
@@ -27,7 +27,7 @@
     <xsl:param name="oleExtractor" as="java:com.sun.star.comp.xsltfilter.XSLTFilterOLEExtracter" select="ole:new()"/>
     <xsl:param name="XMultiServiceFactory" as="java:com.sun.star.lang.XMultiServiceFactory" select="ole:init($oleExtractor,  'uno:socket,host=localhost,port=8100;urp;StarOffice.ServiceManager')"/>
 
-    
+
     <xsl:key name="imagedata" match="w:binData" use="@w:name"/>
     <xsl:key name="shapetype" match="v:shapetype" use="concat('#', @id)"/>
     <xsl:template match="v:fill" mode="get-xsl-number">
@@ -213,9 +213,9 @@
                         <xsl:with-param name="namenumber" select="concat('markerend',$stroke-num)"/>
                     </xsl:call-template>
                 </xsl:if>
-                <!--<v:stroke dashstyle="1 1" startarrow="diamond" startarrowwidth="wide" startarrowlength="long" endarrow="block" 
+                <!--<v:stroke dashstyle="1 1" startarrow="diamond" startarrowwidth="wide" startarrowlength="long" endarrow="block"
                                     endarrowwidth="wide" endarrowlength="long" endcap="round"/>
-                    <draw:stroke-dash draw:name="2 2dots 1 dash" draw:style="rect" draw:dots1="2" draw:dots2="1" draw:dots2-length="0.0795in" 
+                    <draw:stroke-dash draw:name="2 2dots 1 dash" draw:style="rect" draw:dots1="2" draw:dots2="1" draw:dots2-length="0.0795in"
                                                     draw:distance="0.102in"/>
                     Hehe,It need to be revised-->
             </xsl:if>
@@ -593,9 +593,9 @@
                                 </xsl:call-template>
                             </xsl:attribute>
                             <xsl:attribute name="draw:ole-draw-aspect">
-                                <!--   DVASPECT_CONTENT    = 1, 
-                                        DVASPECT_THUMBNAIL  = 2, 
-                                        DVASPECT_ICON       = 4, 
+                                <!--   DVASPECT_CONTENT    = 1,
+                                        DVASPECT_THUMBNAIL  = 2,
+                                        DVASPECT_ICON       = 4,
                                         DVASPECT_DOCPRINT   = 8 -->
                                 <xsl:variable name="ms-aspect" select="parent::w:pict/o:OLEObject/@DrawAspect"/>
                                 <xsl:choose>
@@ -1522,7 +1522,7 @@
                         </xsl:if>
                     </xsl:variable>
                     <!--the following choose statement code will process the revised modifier
-                        It happens that if a drawing elements has more than 2 modifier, the modifier (or say adj 
+                        It happens that if a drawing elements has more than 2 modifier, the modifier (or say adj
                         in wordml) can be adjusted and only the modified adj is recorded.
                         what makes it more complicated is that adj support both comma and blanks.
                         so you have to use kickblanks template to kick the blanks and change it to comma version.
@@ -1643,8 +1643,8 @@
                 <oleextracter:init UNOURL="uno:socket,host=localhost,port=8100;urp;StarOffice.ServiceManager"/>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:value-of select="ole:init($oleExtractor, 'uno:socket,host=localhost,port=8100;urp;StarOffice.ServiceManager')"/>                    
-            </xsl:otherwise>                
+                <xsl:value-of select="ole:init($oleExtractor, 'uno:socket,host=localhost,port=8100;urp;StarOffice.ServiceManager')"/>
+            </xsl:otherwise>
         </xsl:choose>
         <xsl:apply-templates select="w:binData[@w:name='oledata.mso']" mode="oledata.mso"/>
     </xsl:template>
@@ -1657,24 +1657,24 @@
                 <xsl:variable name="tmp" select="oleextracter:insertByName('oledata.mso', translate(text(),'&#10;&#13;&#32;','' )  )"/>
             </xsl:when>
             <xsl:otherwise>-->
-                <xsl:variable name="tmp" select="ole:insertByName($oleExtractor,'oledata.mso', translate(text(),'&#10;&#13;&#32;','' )  )"/>                
-       <!--      </xsl:otherwise>                
-        </xsl:choose>      -->  
+                <xsl:variable name="tmp" select="ole:insertByName($oleExtractor,'oledata.mso', translate(text(),'&#10;&#13;&#32;','' )  )"/>
+       <!--      </xsl:otherwise>
+        </xsl:choose>      -->
     </xsl:template>
     <xsl:template match="o:OLEObject " mode="output">
         <!-- depends on i43230,we can uncomment this code or find another way after i43230 got fixed -->
         <draw:object-ole>
             <xsl:element name="office:binary-data">
-            <!-- 
+            <!--
                 <xsl:choose>
                     <xsl:when test="element-available('oleextracter:getByName')">
                       <xsl:value-of select="translate(oleextracter:getByName(@ObjectID),'&#13;','')"/>
                     </xsl:when>
                     <xsl:otherwise> -->
-                       <xsl:value-of select="translate(ole:getByName($oleExtractor,@ObjectID),'&#13;','')"/>            
-                    <!-- 
-                    </xsl:otherwise>                
-                </xsl:choose> -->                         
+                       <xsl:value-of select="translate(ole:getByName($oleExtractor,@ObjectID),'&#13;','')"/>
+                    <!--
+                    </xsl:otherwise>
+                </xsl:choose> -->
             </xsl:element>
         </draw:object-ole>
     </xsl:template>
@@ -1774,7 +1774,7 @@
     </xsl:template>
     <xsl:template match="v:shapetype" mode="output">
         <xsl:param name="instance" select="''"/>
-        <!--#Dummy after version 1.63 The following test is for the adj attribute of the file. It is Dummy now. 
+        <!--#Dummy after version 1.63 The following test is for the adj attribute of the file. It is Dummy now.
 		<xsl:if test="not($instance/@adj)">
 			<xsl:if test="contains(@adj,',')">-->
         <!--Please Note that the modifier can be more than 2 , so use a translate can be more efficient.

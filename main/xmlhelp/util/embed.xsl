@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,16 +8,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:output indent="yes" method="xml"/>
@@ -68,10 +68,10 @@ All others
 </xsl:template>
 
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 EMBED
-###################################################### 
+######################################################
 -->
 <xsl:template match="embed">
 
@@ -84,10 +84,10 @@ EMBED
 		</xsl:if>
 </xsl:template>
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 EMBEDVAR
-###################################################### 
+######################################################
 -->
 <xsl:template match="embedvar">
 	<xsl:if test="not(@href='text/shared/00/00000004.xhp#wie')"> <!-- special treatment if howtoget links -->
@@ -96,8 +96,8 @@ EMBEDVAR
 		<xsl:variable name="doc" select="document($href)"/>
 		<xsl:apply-templates select="$doc//variable[@id=$anchor]" mode="embedded"/>
 	</xsl:if>
-	
+
 	<!-- FPE: embedvars, that point to "text/shared/00/00000004.xml#wie" will only be resolved in the main_transform -->
-	
+
 </xsl:template>
 </xsl:stylesheet>

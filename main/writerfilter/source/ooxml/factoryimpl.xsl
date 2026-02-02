@@ -1,5 +1,5 @@
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,53 +7,53 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
-<xsl:stylesheet 
-    version="1.0" 
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
-    xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" 
-    xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" 
-    xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" 
-    xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" 
-    xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" 
-    xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" 
-    xmlns:xlink="http://www.w3.org/1999/xlink" 
-    xmlns:dc="http://purl.org/dc/elements/1.1/" 
-    xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" 
-    xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" 
-    xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" 
-    xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" 
-    xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" 
-    xmlns:math="http://www.w3.org/1998/Math/MathML" 
-    xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" 
-    xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" 
-    xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" 
-    xmlns:ooo="http://openoffice.org/2004/office" 
-    xmlns:ooow="http://openoffice.org/2004/writer" 
-    xmlns:oooc="http://openoffice.org/2004/calc" 
-    xmlns:dom="http://www.w3.org/2001/xml-events" 
-    xmlns:xforms="http://www.w3.org/2002/xforms" 
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"  
+<xsl:stylesheet
+    version="1.0"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0"
+    xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0"
+    xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0"
+    xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0"
+    xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"
+    xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0"
+    xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0"
+    xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0"
+    xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0"
+    xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0"
+    xmlns:math="http://www.w3.org/1998/Math/MathML"
+    xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0"
+    xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0"
+    xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0"
+    xmlns:ooo="http://openoffice.org/2004/office"
+    xmlns:ooow="http://openoffice.org/2004/writer"
+    xmlns:oooc="http://openoffice.org/2004/calc"
+    xmlns:dom="http://www.w3.org/2001/xml-events"
+    xmlns:xforms="http://www.w3.org/2002/xforms"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:rng="http://relaxng.org/ns/structure/1.0"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:UML = 'org.omg.xmi.namespace.UML' xml:space="default">
   <xsl:output method="text" />
   <xsl:param name="prefix"/>
-  
+
   <xsl:include href="factorytools.xsl"/>
-  
+
   <xsl:key name="resources-with-kind" match="//resource[kind]" use="kind/@name"/>
   <xsl:key name="sprms-with-code" match="//resource/element[@tokenid]" use="@tokenid"/>
 
@@ -64,16 +64,16 @@ uno::Reference&lt; xml::sax::XFastContextHandler &gt; OOXMLFactory::createFastCh
 {
     uno::Reference &lt; xml::sax::XFastContextHandler &gt; aResult;
     Id nDefine = pHandler->getDefine();
-    
+
 #ifdef DEBUG_FACTORY
-    debug_logger->startElement("factory.createFastChildContextFromFactory");            
+    debug_logger->startElement("factory.createFastChildContextFromFactory");
 #endif
 
     if (pFactory.get() != NULL)
     {
         CreateElementMapPointer pMap = pFactory-&gt;getCreateElementMap(nDefine);
         TokenToIdMapPointer pTokenMap = pFactory-&gt;getTokenToIdMap(nDefine);
-        
+
         if (pMap.get() != NULL)
         {
             Id nId = (*pTokenMap)[Element];
@@ -82,12 +82,12 @@ uno::Reference&lt; xml::sax::XFastContextHandler &gt; OOXMLFactory::createFastCh
             string sDefine(pFactory->getDefineName(nDefine));
             string sElement(fastTokenToId(Element));
             string sQName((*QNameToString::Instance())(nId));
-            
+
             debug_logger->attribute("factory-name", sFactoryName);
             debug_logger->attribute("define", sDefine);
             debug_logger->attribute("element", sElement);
             debug_logger->attribute("qname", sQName);
-            
+
             static char buffer[16];
             snprintf(buffer, sizeof(buffer), "0x%08" SAL_PRIuUINT32, nId);
             debug_logger->attribute("idnum", buffer);
@@ -95,15 +95,15 @@ uno::Reference&lt; xml::sax::XFastContextHandler &gt; OOXMLFactory::createFastCh
             snprintf(buffer, sizeof(buffer), "0x%08" SAL_PRIuUINT32, nDefine);
             debug_logger->attribute("definenum", buffer);
 #endif
-        
+
             CreateElement aCreateElement = (*pMap)[Element];
-            
+
             switch (aCreateElement.m_nResource)
             {</xsl:text>
             <xsl:for-each select="/model/namespace/resource">
                 <xsl:if test="generate-id(key('resources', @resource)) = generate-id(.)">
-                    <xsl:if test="not(@resource = 'Hex' or 
-                                      @resource = 'Integer' or 
+                    <xsl:if test="not(@resource = 'Hex' or
+                                      @resource = 'Integer' or
                                       @resource = 'Boolean' or
                                       @resource = 'List' or
                                       @resource = 'String')">
@@ -128,9 +128,9 @@ uno::Reference&lt; xml::sax::XFastContextHandler &gt; OOXMLFactory::createFastCh
 
         }
     }
-    
+
 #ifdef DEBUG_FACTORY
-    debug_logger->endElement("factory.createFastChildContextFromFactory");        
+    debug_logger->endElement("factory.createFastChildContextFromFactory");
 #endif
 
     return aResult;
@@ -143,7 +143,7 @@ uno::Reference&lt; xml::sax::XFastContextHandler &gt; OOXMLFactory::createFastCh
 OOXMLFactory_ns::Pointer_t OOXMLFactory::getFactoryForNamespace(Id nId)
 {
     OOXMLFactory_ns::Pointer_t pResult;
-    
+
     switch (nId &amp; 0xffff0000)
     {</xsl:text>
     <xsl:for-each select="/model/namespace">
@@ -160,7 +160,7 @@ OOXMLFactory_ns::Pointer_t OOXMLFactory::getFactoryForNamespace(Id nId)
         default:
             break;
     }
-    
+
     return pResult;
 }
 </xsl:text>
@@ -176,8 +176,8 @@ uno::Reference&lt; xml::sax::XFastContextHandler &gt; OOXMLFactory::createFastCh
 #endif
 
     uno::Reference &lt; xml::sax::XFastContextHandler &gt; aResult;
-    OOXMLFactory_ns::Pointer_t pFactory;    
-    
+    OOXMLFactory_ns::Pointer_t pFactory;
+
 </xsl:text>
     <xsl:for-each select="/model/namespace">
         <xsl:text>
@@ -190,7 +190,7 @@ uno::Reference&lt; xml::sax::XFastContextHandler &gt; OOXMLFactory::createFastCh
     }</xsl:text>
     </xsl:for-each>
     <xsl:text>
-    
+
 #ifdef DEBUG_FACTORY
     debug_logger->endElement("factory.createFastChildContextFromStart");
 #endif
@@ -215,7 +215,7 @@ public:
 string fastTokenToId(sal_uInt32 nToken)
 {
   </xsl:text>
-  <xsl:text>    
+  <xsl:text>
     string sResult;
 
     switch (nToken &amp; 0xffff0000)
@@ -239,13 +239,13 @@ string fastTokenToId(sal_uInt32 nToken)
     <xsl:variable name="localname" select="@localname"/>
     <xsl:if test="generate-id(.) = generate-id(key('same-token-name', $localname)[1])">
       <xsl:text>
-    case </xsl:text>    
+    case </xsl:text>
     <xsl:call-template name="fastlocalname"/>
     <xsl:text>:
         sResult +=  "</xsl:text>
         <xsl:value-of select="$localname"/>
         <xsl:text>";
-        break;</xsl:text>        
+        break;</xsl:text>
     </xsl:if>
   </xsl:for-each>
 <xsl:text>
@@ -262,7 +262,7 @@ string fastTokenToId(sal_uInt32 nToken)
 
       @param kind     the sprm kind for which to generate the case labels
   -->
-  
+
   <xsl:template name="sprmkindcase">
     <xsl:param name="kind"/>
     <xsl:for-each select="key('resources-with-kind', $kind)/element">
@@ -324,13 +324,13 @@ uno::Reference &lt; xml::sax::XFastParser &gt; OOXMLStreamImpl::getFastParser()
 {
     if (! mxFastParser.is())
     {
-        uno::Reference &lt; lang::XMultiComponentFactory &gt; xFactory = 
+        uno::Reference &lt; lang::XMultiComponentFactory &gt; xFactory =
             uno::Reference &lt; lang::XMultiComponentFactory &gt;
             (mxContext->getServiceManager());
 
         mxFastParser.set(xFactory->createInstanceWithContext
             ( ::rtl::OUString::createFromAscii
-                ( "com.sun.star.xml.sax.FastParser" ), 
+                ( "com.sun.star.xml.sax.FastParser" ),
                     mxContext ), uno::UNO_QUERY_THROW);
 </xsl:text>
 <xsl:for-each select="//namespace-alias">
@@ -350,7 +350,7 @@ uno::Reference &lt; xml::sax::XFastParser &gt; OOXMLStreamImpl::getFastParser()
 </xsl:template>
 
   <xsl:template match="/">
-    <xsl:text>    
+    <xsl:text>
 #include "OOXMLFactory.hxx"
 #include "OOXMLFastHelper.hxx"
 #include "OOXMLStreamImpl.hxx"
