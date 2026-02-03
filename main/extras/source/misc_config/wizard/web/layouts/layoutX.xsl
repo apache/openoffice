@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,34 +8,34 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
 
-<xsl:stylesheet version="1.0" 
+<xsl:stylesheet version="1.0"
    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 	xmlns="http://www.w3.org/1999/xhtml">
-	
+
 	<xsl:output method               = "html"
                 media-type           = "text/html"
                 indent               = "yes"
                 doctype-public       = "-//W3C//DTD HTML 4.0 Transitional//EN"
                 omit-xml-declaration = "yes"
                 standalone           = "yes" />
-	
+
 	<xsl:include href="../layout.xsl"/>
-   
- 
+
+
 	 <!-- =============================
 	               ROOT
 	 ================================== -->
@@ -47,52 +47,52 @@
 			      <xsl:call-template name="body"/>
 		   </html>
 	 </xsl:template>
-	 
-	 
+
+
 	 <!-- =============================
 	               HTML BODY
 	 ================================== -->
-	 
+
 	 <xsl:template name="body">
 	 	<body>
 		 	<xsl:call-template name="title"/>
 		 	<xsl:call-template name="toc"/>
 		</body>
 	 </xsl:template>
-	 
-	 
+
+
 	 <xsl:template name="toc">
 		<!--
 		     @ pre toc HTML here
 		-->
-		
+
 		<!-- use this to group documents, it
 		is for example useful when generating tables -->
-		
+
 		<xsl:variable name="group" select="3"/>
-		
+
 		<xsl:for-each select="/session/content/document[ ( ( position() - 1 ) mod $group ) = 0 ]">
-			
-			<!-- 
+
+			<!--
 				@ pre group HTML here
 			-->
-			
+
 			<xsl:call-template name="document-group">
 			  <xsl:with-param name="group" select="$group"/>
-			</xsl:call-template>  
-			
+			</xsl:call-template>
+
 			<!--
 				@ post group HTML here
 			-->
-			
+
 		</xsl:for-each>
 
 
-		<!-- use this alternative if you do not need to use groups 
-		(uncomment to use - and do not forget to comment the group 
+		<!-- use this alternative if you do not need to use groups
+		(uncomment to use - and do not forget to comment the group
 		option above...)-->
 
-		<!-- 
+		<!--
 	  <xsl:apply-templates select="/session/content/document"/>
 		-->
 
@@ -101,8 +101,8 @@
 		-->
 
 	 </xsl:template>
-	 
-	<!-- also when using groups, in the end it comes 
+
+	<!-- also when using groups, in the end it comes
 	to this template, which is called for each document -->
 	<xsl:template match="document">
 	  <xsl:apply-templates select="@title"/>
@@ -115,56 +115,56 @@
 	  <xsl:apply-templates select="@format-icon"/>
 	  <xsl:apply-templates select="@format-icon"/>
 	</xsl:template>
-		
 
-	 
+
+
 	 <xsl:template name="document-group">
 	 	<xsl:param name="group"/>
-	 	
+
 	 	<!-- @ pre group code here -->
-	 	
+
 	 	<!-- - - -->
 
 		 	<xsl:variable name="count" select="(position() - 1) * $group + 1"/>
-		 	
+
 		 	<xsl:for-each select="/session/content/document[$count &lt;= position() and position() &lt; ($count + $group)]">
-		 	
+
 					<xsl:apply-templates select="."/>
-			 	  
+
 		 	</xsl:for-each>
-	 	
+
 	 	<!-- @ post group code here -->
-	 	
+
 	 	<!-- - - -->
-	 	
+
 	 </xsl:template>
 
-	 	 
+
 	 <xsl:template name="title">
 	    <!--
 	      @ Pre title HTML code here
 	    -->
-	    
+
 	    <xsl:value-of select="/session/general-info/@title"/>
-	    
+
 	    <!--
 	      @ Post title html code here
 	    -->
 	 </xsl:template>
-	 
+
 	 <!-- =============================
 	         Document properties
-	         
+
 	 This section contains templates which
 	 give the document properties...
-	               
+
 	 ================================== -->
-	 
+
 	 <!-- this templates gives the
 	 relative href of the document. To use
 	 with the <a href="..."> attribute-->
-	
-	
+
+
 	 <xsl:template match="document" mode="href">
 	   <xsl:value-of select="concat(../@directory,'/')"/>
 	   <xsl:if test="@dir">
@@ -172,21 +172,21 @@
 	   </xsl:if>
 	   <xsl:value-of select="@fn"/>
 	 </xsl:template>
-	 
-	 
+
+
 	 <xsl:template match="document/@title">
 	 	<span class="doctitle">
 	 		<a>
-	 		<xsl:attribute name="href"> 
+	 		<xsl:attribute name="href">
 				<xsl:apply-templates select=".." mode="href"/>
-			</xsl:attribute> 
-			
+			</xsl:attribute>
+
 			<xsl:value-of select="."/>
 			</a>
 	 	</span>
 	 	<br/>
 	 </xsl:template>
-	 
+
 
 	 <xsl:template match="document/@description">
 	 	<span class="docdescription">
@@ -194,7 +194,7 @@
 	 	</span>
 	 	<br/>
 	 </xsl:template>
-	 
+
 
 	 <xsl:template match="document/@author">
 	 	<span class="docauthor">
@@ -202,7 +202,7 @@
 	 	</span>
 	 	<br/>
 	 </xsl:template>
-	 
+
 
 	 <xsl:template match="document/@create-date">
 	 	<span class="doccreationdate">
@@ -210,7 +210,7 @@
 	 	</span>
 	 	<br/>
 	 </xsl:template>
-	 
+
 
 	 <xsl:template match="document/@update-date">
 	 	<span class="doclastchangeddate">
@@ -218,7 +218,7 @@
 	 	</span>
 	 	<br/>
 	 </xsl:template>
-	 
+
 
 	 <xsl:template match="document/@filename">
 	 	<span class="docfilename">
@@ -242,7 +242,7 @@
 	 	</span>
 	 	<br/>
 	 </xsl:template>
-	 
+
 
 	 <xsl:template match="document/@size">
 	 	<span class="docsizeinkb">
@@ -250,19 +250,19 @@
 	 	</span>
 	 	<br/>
 	 </xsl:template>
-	 
+
 	 <xsl:template match="document/@icon">
 	   <img src="images/{.}"/>
 	 	<br/>
 	 </xsl:template>
-	
+
 
 	 <!-- =============================
 	               HTML HEAD
-	               
+
     this section should not be changed
 	 ================================== -->
-	 
+
 	 <xsl:template name="head">
 	 	<head>
 				<title>
@@ -283,5 +283,5 @@
 
 		</head>
 	 </xsl:template>
-	     
+
 </xsl:stylesheet>

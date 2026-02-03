@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,16 +8,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
@@ -47,14 +47,14 @@
 <!-- ************************************** -->
 <!-- * oor:component-data							*** -->
 <!-- ************************************** -->
-	<xsl:template match="/oor:component-data">		
+	<xsl:template match="/oor:component-data">
         <xsl:variable name="component-schema" select="document($schemaURL)/oor:component-schema"/>
 		<xsl:for-each select="node|prop">
-			<xsl:apply-templates select=".">				
-				<xsl:with-param name="context" select="$component-schema/component/*[@oor:name = current()/@oor:name]"/>							
-				<xsl:with-param name="component-schema" select="$component-schema"/>							
+			<xsl:apply-templates select=".">
+				<xsl:with-param name="context" select="$component-schema/component/*[@oor:name = current()/@oor:name]"/>
+				<xsl:with-param name="component-schema" select="$component-schema"/>
 			</xsl:apply-templates>
-		</xsl:for-each>				
+		</xsl:for-each>
 	</xsl:template>
 
 <!-- ****************************************** -->
@@ -67,26 +67,26 @@
 		<xsl:variable name = "path">
 			<xsl:call-template name="collectPath"/>
 		</xsl:variable>
-		
+
 		<xsl:if test="not ($component-schema)">
-			<xsl:message terminate="yes">ERROR: Template '<xsl:value-of select="$node-type"/>', 
-                                         referenced from node '<xsl:value-of select="$path"/>' 
+			<xsl:message terminate="yes">ERROR: Template '<xsl:value-of select="$node-type"/>',
+                                         referenced from node '<xsl:value-of select="$path"/>'
                                          does not exist in schema!
             </xsl:message>
 		</xsl:if>
 
         <xsl:choose>
             <xsl:when test="$schema-type='node-ref'">
-                <xsl:apply-templates select=".">				
-                    <xsl:with-param name="context" select="$component-schema/templates/*[@oor:name = $node-type]"/>																					
-                    <xsl:with-param name="component-schema" select="$component-schema"/>							
+                <xsl:apply-templates select=".">
+                    <xsl:with-param name="context" select="$component-schema/templates/*[@oor:name = $node-type]"/>
+                    <xsl:with-param name="component-schema" select="$component-schema"/>
                 </xsl:apply-templates>
             </xsl:when>
             <xsl:when test="$schema-type='set'">
-                <xsl:for-each select="node|prop">						
-                    <xsl:apply-templates select=".">				
-                        <xsl:with-param name="context" select="$component-schema/templates/*[@oor:name = $node-type]"/>																					
-                        <xsl:with-param name="component-schema" select="$component-schema"/>							
+                <xsl:for-each select="node|prop">
+                    <xsl:apply-templates select=".">
+                        <xsl:with-param name="context" select="$component-schema/templates/*[@oor:name = $node-type]"/>
+                        <xsl:with-param name="component-schema" select="$component-schema"/>
                     </xsl:apply-templates>
                 </xsl:for-each>
             </xsl:when>
@@ -97,7 +97,7 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    
+
 <!-- ****************************************** -->
 <!-- * node									*** -->
 <!-- ****************************************** -->
@@ -107,7 +107,7 @@
 		<xsl:variable name = "path">
 			<xsl:call-template name="collectPath"/>
 		</xsl:variable>
-		
+
 		<xsl:if test="not ($context)">
 			<xsl:message terminate="yes">ERROR: Node '<xsl:value-of select="$path"/>' does not exist in schema!</xsl:message>
 		</xsl:if>
@@ -140,22 +140,22 @@
 			</xsl:when>
 			<!-- is the node extensible ? -->
 			<xsl:when test="$context/@oor:extensible='true'">
-				<xsl:for-each select="node|prop">						
-					<xsl:apply-templates select="." mode="extensible">				
-					    <xsl:with-param name="context" select="$context/*[@oor:name = current()/@oor:name]"/>																					
-                        <xsl:with-param name="component-schema" select="$component-schema"/>							
+				<xsl:for-each select="node|prop">
+					<xsl:apply-templates select="." mode="extensible">
+					    <xsl:with-param name="context" select="$context/*[@oor:name = current()/@oor:name]"/>
+                        <xsl:with-param name="component-schema" select="$component-schema"/>
 				    </xsl:apply-templates>
 				</xsl:for-each>
 			</xsl:when>
-			<xsl:otherwise>	
-				<xsl:for-each select="node|prop">						
-					<xsl:apply-templates select=".">				
-						<xsl:with-param name="context" select="$context/*[@oor:name = current()/@oor:name]"/>																					
-                        <xsl:with-param name="component-schema" select="$component-schema"/>							
+			<xsl:otherwise>
+				<xsl:for-each select="node|prop">
+					<xsl:apply-templates select=".">
+						<xsl:with-param name="context" select="$context/*[@oor:name = current()/@oor:name]"/>
+                        <xsl:with-param name="component-schema" select="$component-schema"/>
 					</xsl:apply-templates>
 				</xsl:for-each>
 			</xsl:otherwise>
-		</xsl:choose>	
+		</xsl:choose>
 	</xsl:template>
 
 <!-- ****************************************** -->
@@ -166,7 +166,7 @@
 		<xsl:variable name = "path">
 			<xsl:call-template name="collectPath"/>
 		</xsl:variable>
-		
+
 
 		<xsl:if test="not ($context)">
 			<xsl:message terminate="yes">ERROR: Property '<xsl:value-of select="$path"/>' does not exist in schema !</xsl:message>
@@ -178,8 +178,8 @@
 
         <xsl:call-template name="checkModule"/>
         <xsl:call-template name="checkDuplicates"/>
-		
-        <xsl:apply-templates />				
+
+        <xsl:apply-templates />
 	</xsl:template>
 
 <!-- ****************************************** -->
@@ -228,15 +228,15 @@
 		        <xsl:if test="not ($context)">
 			        <xsl:message terminate="yes">ERROR: Property '<xsl:value-of select="$path"/>' does not exist in schema!</xsl:message>
 		        </xsl:if>
-		    </xsl:when>		
+		    </xsl:when>
             <xsl:when test="@oor:op='replace'">
 		        <xsl:if test="not (@oor:type)">
 			        <xsl:message terminate="yes">ERROR: Property '<xsl:value-of select="$path"/>' does not have a type!</xsl:message>
-		        </xsl:if>		
-		    </xsl:when>		
-		    <xsl:otherwise>		
+		        </xsl:if>
+		    </xsl:when>
+		    <xsl:otherwise>
 			    <xsl:message terminate="yes">ERROR: Property '<xsl:value-of select="$path"/>' has unexpected operation '<xsl:value-of select="@oor:op"/>'!</xsl:message>
-		    </xsl:otherwise>		
+		    </xsl:otherwise>
         </xsl:choose>
 
         <xsl:call-template name="checkModule"/>
@@ -254,29 +254,29 @@
                 <xsl:call-template name="collectPath"/>
             </xsl:variable>
 			<xsl:message terminate="yes">ERROR: Duplicate node/prop '<xsl:value-of select="$path"/>'!</xsl:message>
-		</xsl:if>			
+		</xsl:if>
 	</xsl:template>
 
 
 <!-- ************************************* -->
 <!-- * checkModule					   *** -->
 <!-- ************************************* -->
-	<xsl:template name="checkModule">		
+	<xsl:template name="checkModule">
 		<xsl:if test="@install:module">
             <xsl:if test="ancestor::*[@install:module]">
                 <xsl:message terminate="yes">ERROR: Nested modules are not supported.  Found module '<xsl:value-of select="@install:module"/>' within module '<xsl:value-of select="ancestor::*/@install:module"/>'!
                 </xsl:message>
-            </xsl:if> 
-		</xsl:if> 
+            </xsl:if>
+		</xsl:if>
 	</xsl:template>
 
 <!-- ************************************* -->
 <!-- * collectPath					   *** -->
 <!-- ************************************* -->
-	<xsl:template name="collectPath">		
+	<xsl:template name="collectPath">
 		<xsl:for-each select="ancestor-or-self::node()[@oor:name]">
 			<xsl:text>/</xsl:text><xsl:value-of select="@oor:name"/>
-		</xsl:for-each> 
+		</xsl:for-each>
 	</xsl:template>
 
 
@@ -287,7 +287,7 @@
 		<xsl:param name="componentName"/>
 		<xsl:variable name="fileURL">
 			<xsl:value-of select="$schemaRootURL"/>/<xsl:value-of select="translate($componentName,'.','/')"/><xsl:text>.xcs</xsl:text>
-		</xsl:variable>		
+		</xsl:variable>
 		<xsl:value-of select="$fileURL"/>
 	</xsl:template>
 

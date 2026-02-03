@@ -1,5 +1,5 @@
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,22 +7,22 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
-<xsl:stylesheet 
-    version="1.0" 
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+<xsl:stylesheet
+    version="1.0"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:rng="http://relaxng.org/ns/structure/1.0"
     xmlns:xalan="http://xml.apache.org/xalan"
     exclude-result-prefixes = "xalan"
@@ -94,46 +94,46 @@
     <xsl:template name="typeofdefine">
         <xsl:for-each select="rng:data">
             <xsl:choose>
-                <xsl:when test="@type='base64Binary'"> 
+                <xsl:when test="@type='base64Binary'">
                     <xsl:text>String</xsl:text>
                 </xsl:when>
-                <xsl:when test="@type='boolean'"> 
+                <xsl:when test="@type='boolean'">
                     <xsl:text>Boolean</xsl:text>
                 </xsl:when>
-                <xsl:when test="@type='byte'"> 
+                <xsl:when test="@type='byte'">
                     <xsl:text>Integer</xsl:text>
                 </xsl:when>
-                <xsl:when test="@type='dateTime'"> 
+                <xsl:when test="@type='dateTime'">
                     <xsl:text>String</xsl:text>
                 </xsl:when>
-                <xsl:when test="@type='decimal'"> 
+                <xsl:when test="@type='decimal'">
                     <xsl:text>Integer</xsl:text>
                 </xsl:when>
-                <xsl:when test="@type='float'"> 
+                <xsl:when test="@type='float'">
                     <xsl:text>Float</xsl:text>
                 </xsl:when>
-                <xsl:when test="@type='hexBinary'"> 
+                <xsl:when test="@type='hexBinary'">
                     <xsl:text>Hex</xsl:text>
                 </xsl:when>
-                <xsl:when test="@type='int'"> 
+                <xsl:when test="@type='int'">
                     <xsl:text>Integer</xsl:text>
                 </xsl:when>
-                <xsl:when test="@type='integer'"> 
+                <xsl:when test="@type='integer'">
                     <xsl:text>Integer</xsl:text>
                 </xsl:when>
-                <xsl:when test="@type='positiveInteger'"> 
+                <xsl:when test="@type='positiveInteger'">
                     <xsl:text>Integer</xsl:text>
                 </xsl:when>
-                <xsl:when test="@type='string'"> 
+                <xsl:when test="@type='string'">
                     <xsl:text>String</xsl:text>
                 </xsl:when>
-                <xsl:when test="@type='token'"> 
+                <xsl:when test="@type='token'">
                     <xsl:text>Integer</xsl:text>
                 </xsl:when>
-                <xsl:when test="@type='unsignedInt'"> 
+                <xsl:when test="@type='unsignedInt'">
                     <xsl:text>Integer</xsl:text>
                 </xsl:when>
-                <xsl:when test="@type='unsignedLong'"> 
+                <xsl:when test="@type='unsignedLong'">
                     <xsl:text>Integer</xsl:text>
                 </xsl:when>
                 <xsl:otherwise>
@@ -142,16 +142,16 @@
             </xsl:choose>
         </xsl:for-each>
     </xsl:template>
-    
+
     <xsl:template name="typeofattribute">
         <xsl:for-each select="rng:ref">
             <xsl:variable name="name" select="@name"/>
             <xsl:for-each select="ancestor::namespace/rng:grammar/rng:define[@name=$name]">
                 <xsl:call-template name="typeofdefine"/>
             </xsl:for-each>
-        </xsl:for-each> 
+        </xsl:for-each>
     </xsl:template>
-        
+
     <xsl:template name="generatevalueresource">
         <xsl:variable name="name" select="@name"/>
         <xsl:variable name="ns_id" select="generate-id(ancestor::namespace)"/>
@@ -189,7 +189,7 @@
                         <xsl:value-of select="$name"/>
                         <xsl:text>_</xsl:text>
                         <xsl:value-of select="@name"/>
-                    </xsl:attribute>	  
+                    </xsl:attribute>
                     <xsl:attribute name="action">
                         <xsl:text>setValue</xsl:text>
                     </xsl:attribute>
@@ -206,7 +206,7 @@
             </xsl:for-each>
         </resource>
     </xsl:template>
-    
+
   <xsl:template match="namespace">
     <xsl:variable name="nsid" select="generate-id(.)"/>
     <xsl:element name="namespace">
@@ -282,7 +282,7 @@
       </xsl:for-each>
     </xsl:element>
   </xsl:template>
-  
+
   <xsl:template match="namespace-alias">
     <namespace-alias>
       <xsl:for-each select="@*">

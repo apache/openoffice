@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--/************************************************************** *  
-* Licensed to the Apache Software Foundation (ASF) under one 
-* or more contributor license agreements.  See the NOTICE file 
-* distributed with this work for additional information 
-* regarding copyright ownership.  The ASF licenses this file 
-* to you under the Apache License, Version 2.0 (the 
-* "License"); you may not use this file except in compliance 
-* with the License.  You may obtain a copy of the License at 
-*  
-*   http://www.apache.org/licenses/LICENSE-2.0 
-*  
-* Unless required by applicable law or agreed to in writing, 
-* software distributed under the License is distributed on an 
-* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY 
-* KIND, either express or implied.  See the License for the 
-* specific language governing permissions and limitations 
-* under the License. *  
+<!--/************************************************************** *
+* Licensed to the Apache Software Foundation (ASF) under one
+* or more contributor license agreements.  See the NOTICE file
+* distributed with this work for additional information
+* regarding copyright ownership.  The ASF licenses this file
+* to you under the Apache License, Version 2.0 (the
+* "License"); you may not use this file except in compliance
+* with the License.  You may obtain a copy of the License at
+*
+*   http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing,
+* software distributed under the License is distributed on an
+* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+* KIND, either express or implied.  See the License for the
+* specific language governing permissions and limitations
+* under the License. *
 *************************************************************/-->
  <!--MARKER(update_precomp.py): autogen include statement, do not remove-->
  <!--//This file is about the conversion of the UOF v2.0 and ODF document format-->
@@ -701,7 +701,7 @@
 		<xsl:param name="aType"/>
 		<xsl:param name="aSize"/>
 		<xsl:choose>
-			<!-- alert starting 
+			<!-- alert starting
 			<xsl:when test="$aType = 'double' or $aType = 'thick-between-thin'">
                 <xsl:variable name="widths" select="number($aSize) div 3"/>
 				<xsl:value-of select="concat(format-number($widths, '#.000'), $uofUnit, ' ', format-number($widths, '#.000'), $uofUnit, ' ', format-number($widths, '#.000'),  $uofUnit)"/>
@@ -733,7 +733,7 @@
 		<xsl:param name="pDiagon1"/>
 		<xsl:param name="pDiagon2"/>
 		<xsl:if test="$pUp">
-			<!-- 
+			<!--
 			<xsl:variable name="type" select="$pUp/@uof:线型"/>-->
 			<xsl:variable name="type">
 				<xsl:choose>
@@ -747,7 +747,7 @@
 			</xsl:variable>
 			<xsl:variable name="size" select="concat($pUp/@宽度_C60F,$uofUnit,' ')"/>
 			<xsl:variable name="clr" select="$pUp/@颜色_C611"/>
-			<!-- alert staring 
+			<!-- alert staring
 			<xsl:attribute name="fo:padding-top"><xsl:value-of select="concat(string($pUp/@边距_C610),$uofUnit)"/></xsl:attribute>-->
 			<xsl:if test="$pUp/@边距_C610">
 				<xsl:attribute name="fo:padding-top"><xsl:value-of select="concat(string($pUp/@边距_C610),$uofUnit)"/></xsl:attribute>
@@ -2748,7 +2748,7 @@
 		</xsl:element>
 	</xsl:template>
 	<xsl:template match="字:是否取消断字_4192" mode="paragraph">
-		<!-- alert staring 
+		<!-- alert staring
 		<xsl:attribute name="fo:hyphenation-ladder-count">no-limit</xsl:attribute>
 		<xsl:attribute name="fo:hyphenation-remain-char-count">2</xsl:attribute>
 		<xsl:attribute name="fo:hyphenation-push-char-count">2</xsl:attribute>
@@ -2769,7 +2769,7 @@
 		<xsl:attribute name="text:number-lines"><xsl:choose><xsl:when test="string(.)='1' or string(.)='true'">false</xsl:when><xsl:otherwise>true</xsl:otherwise></xsl:choose></xsl:attribute>
 	</xsl:template>
 	<xsl:template match="字:是否允许单词断字_4194" mode="paragraph">
-		<!-- alert staring 
+		<!-- alert staring
 		<xsl:attribute name="style:word-wrap">
 			<xsl:choose>
 				<xsl:when test="string(.) = 'true'">true</xsl:when>
@@ -3529,7 +3529,7 @@
 			<xsl:choose>
 				<xsl:when test="字:左/字:绝对">
 					<xsl:attribute name="fo:margin-left"><xsl:value-of select="concat(字:左/字:绝对/@字:值,$uofUnit)"/></xsl:attribute>
-				</xsl:when>			
+				</xsl:when>
 				<xsl:when test="字:左/字:相对">
 					<xsl:variable name="a1">
 						<xsl:value-of select="字:左/字:相对/@字:值"/>
@@ -3853,7 +3853,7 @@
 				<xsl:variable name="reltblw">
 					<xsl:value-of select="@相对宽度_41C0"/>
 				</xsl:variable>
-				<!-- alert staring 
+				<!-- alert staring
 				<xsl:variable name="pagew">
 					<xsl:for-each select="key('textTable',../@标识符_4100)">
 						<xsl:value-of select="preceding::字:分节_416A[1]/字:节属性_421B/字:纸张_41EC/@宽_C605"/>
@@ -4210,7 +4210,7 @@
 		<xsl:for-each select="*">
 			<xsl:choose>
 				<xsl:when test="name(.)='字:宽度_41A1'">
-					<!-- alert staring 
+					<!-- alert staring
 				   <xsl:apply-templates select="." mode="texttable"/>-->
 					<xsl:apply-templates select="." mode="texttable">
 						<xsl:with-param name="tableAlign" select="../字:对齐_41C3"/>
@@ -4740,19 +4740,19 @@
 
 										</xsl:when>
 										<xsl:when test="self::node()[name(.)='字:单元格边距']">
-											
+
 										</xsl:when>
 										<xsl:when test="self::node()[name(.)='字:边框']">
-											
+
 										</xsl:when>
 										<xsl:when test="self::node()[name(.)='字:填充']">
-											
+
 										</xsl:when>
 										<xsl:when test="self::node()[name(.)='字:垂直对齐方式']">
 											<xsl:attribute name="style:vertical-align"><xsl:choose><xsl:when test="self::node()='center' ">middle</xsl:when><xsl:when test="self::node()='bottom' ">bottom</xsl:when><xsl:otherwise>top</xsl:otherwise></xsl:choose></xsl:attribute>
 										</xsl:when>
 										<xsl:when test="self::node()[name(.)='字:跨行']">
-											
+
 										</xsl:when>
 										<xsl:when test="self::node()[name(.)='字:跨列']">
 
@@ -4761,7 +4761,7 @@
 											<xsl:apply-templates select="."/>
 										</xsl:when>
 										<xsl:when test="self::node()[name(.)='字:适应文字']">
-											
+
 										</xsl:when>
 										<xsl:when test="self::node()[name(.)='字:斜线表头']">
 
@@ -5069,16 +5069,16 @@ iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAKElEQVR4nGNRZrhz57+yCuNdBjCAs1kg
 
 									<xsl:if test="$textanchor/../演:背景/图:颜色">
 										<xsl:attribute name="draw:fill">solid</xsl:attribute>
-										<xsl:attribute name="draw:fill-color"><xsl:value-of select="$textanchor/../演:背景/图:颜色"/></xsl:attribute>								
+										<xsl:attribute name="draw:fill-color"><xsl:value-of select="$textanchor/../演:背景/图:颜色"/></xsl:attribute>
 									</xsl:if>
 								</xsl:when>
 								<xsl:otherwise>
-									<xsl:attribute name="draw:fill">none</xsl:attribute>						
+									<xsl:attribute name="draw:fill">none</xsl:attribute>
 								</xsl:otherwise>
 							</xsl:choose>
 						</xsl:when>
 						<xsl:otherwise>
-							<xsl:attribute name="draw:fill">none</xsl:attribute>			
+							<xsl:attribute name="draw:fill">none</xsl:attribute>
 						</xsl:otherwise>
 					</xsl:choose>-->
 				</xsl:if>
@@ -5511,7 +5511,7 @@ iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAKElEQVR4nGNRZrhz57+yCuNdBjCAs1kg
 					</xsl:choose>
 				</xsl:when>
 				<xsl:otherwise>
-					<!-- alert starting 
+					<!-- alert starting
                     <xsl:attribute name="style:family">graphic</xsl:attribute>
                      alert ending. -->
 					<!--<xsl:for-each select="$textanchor">-->
@@ -6199,7 +6199,7 @@ iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAKElEQVR4nGNRZrhz57+yCuNdBjCAs1kg
 				<xsl:variable name="graphid" select="ancestor::图:图形_8062/@标识符_804B"/>
 				<xsl:variable name="sd-placeholder" select="key('rel_graphic_name',$graphid)/uof:占位符_C626/@类型_C627"/>
 				<xsl:choose>
-					<!-- alert staring 
+					<!-- alert staring
 					<xsl:when test="$sd-placeholder = 'date' and contains(.,'&lt;日期/时间&gt;')">
                         <xsl:value-of select="replace(.,'&lt;日期/时间&gt;','')" disable-output-escaping="yes"/>
 					</xsl:when>
@@ -6354,7 +6354,7 @@ iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAKElEQVR4nGNRZrhz57+yCuNdBjCAs1kg
 		</xsl:choose>
 	</xsl:template>
 	<xsl:template match="字:引文符号_4164">
-		
+
 	</xsl:template>
 	<xsl:template name="TextHyperlinkStart">
 		<xsl:variable name="textastart">
@@ -6798,7 +6798,7 @@ iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAKElEQVR4nGNRZrhz57+yCuNdBjCAs1kg
 						<xsl:when test="count(字:句_419D) = 0">
 							<xsl:value-of select="'true'"/>
 						</xsl:when>
-						<!-- alert staring 
+						<!-- alert staring
                         <xsl:otherwise>
 							<xsl:apply-templates select="字:句_419D[1]" mode="IsEmpty"/>
 						</xsl:otherwise>
@@ -7033,7 +7033,7 @@ iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAKElEQVR4nGNRZrhz57+yCuNdBjCAs1kg
 						<xsl:apply-templates select="."/>
 					</xsl:when>
 					<xsl:otherwise>
-					
+
 					</xsl:otherwise>
 				</xsl:choose>
 			</xsl:for-each>
@@ -7230,7 +7230,7 @@ iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAKElEQVR4nGNRZrhz57+yCuNdBjCAs1kg
 					<!-- don't process this node here-->
 				</xsl:when>
 				<xsl:when test="name(.)='字:逻辑章节_421C'">
-					
+
 				</xsl:when>
 				<xsl:when test="name(.)='字:段落_416B'">
 					<xsl:apply-templates select="."/>
@@ -7542,7 +7542,7 @@ iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAKElEQVR4nGNRZrhz57+yCuNdBjCAs1kg
 	<!--<xsl:template name="TimeTransform">
 		<xsl:param name="str1"/>
 		<xsl:choose>
-			
+
 			<xsl:when test="substring($str1,1,5)='am/pm'">
 				<xsl:variable name="str1-before" select="substring($str1,1,5)"/>
 				<xsl:variable name="str1-after" select="substring($str1,6)"/>
@@ -7617,7 +7617,7 @@ iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAKElEQVR4nGNRZrhz57+yCuNdBjCAs1kg
 	<xsl:template name="DateTimeTransform">
 		<xsl:param name="str1"/>
 		<xsl:choose>
-			
+
 			<xsl:when test="substring($str1,1,5)='am/pm'">
 				<xsl:variable name="str1-before" select="substring($str1,1,5)"/>
 				<xsl:variable name="str1-after" select="substring($str1,6)"/>
@@ -7875,7 +7875,7 @@ iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAKElEQVR4nGNRZrhz57+yCuNdBjCAs1kg
 			<!--
 			<xsl:variable name="date0" select="substring-after(following-sibling::字:域代码_419F[1][@类型_416E = 'numpages']/字:段落_416B/字:句_419D/字:文本串_415B,' \* ')"/>
 			<xsl:variable name="datestr" select="substring-before(following-sibling::字:域代码_419F[1][@类型_416E = 'numpages']/字:段落_416B/字:句_419D/字:文本串_415B,'\* ')"/>
-			
+
 			<xsl:variable name="fmt">
 				<xsl:call-template name="NumFormat">
 					<xsl:with-param name="oo_format" select="substring-before($date0,' \*')"/>
@@ -8340,9 +8340,9 @@ iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAKElEQVR4nGNRZrhz57+yCuNdBjCAs1kg
 					<xsl:call-template name="AuthorField"/>
 				</text:span>
 			</xsl:when>
-			<xsl:when test="@类型_416E='username'">		
+			<xsl:when test="@类型_416E='username'">
 			</xsl:when>
-			<xsl:when test="@类型_416E='userinitials'">		
+			<xsl:when test="@类型_416E='userinitials'">
 			</xsl:when>
 			<xsl:when test="@类型_416E='title'">
 				<text:span>
@@ -8392,7 +8392,7 @@ iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAKElEQVR4nGNRZrhz57+yCuNdBjCAs1kg
 					<xsl:call-template name="PlaceholderField"/>
 				</text:span>
 			</xsl:when>
-			<xsl:when test="@类型_416E='dropdown'">		
+			<xsl:when test="@类型_416E='dropdown'">
 			</xsl:when>
 			<xsl:when test="@类型_416E='REF'">
 				<text:span>
@@ -8889,7 +8889,7 @@ iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAKElEQVR4nGNRZrhz57+yCuNdBjCAs1kg
 			<xsl:value-of select="@图形引用_C62E"/>
 		</xsl:variable>
 		<xsl:if test="../演:动画_6B1A/演:序列_6B1B[@对象引用_6C28 = $tuxing]">
-			
+
 			<xsl:attribute name="draw:id"><xsl:value-of select="$tuxing"/></xsl:attribute>
 		</xsl:if>
 	</xsl:template>
@@ -9541,7 +9541,7 @@ iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAKElEQVR4nGNRZrhz57+yCuNdBjCAs1kg
 		<xsl:param name="refobject"/>
 		<xsl:attribute name="xlink:href"><xsl:variable name="path"><xsl:value-of select="$refobject/对象:路径_D703"/></xsl:variable><xsl:choose><xsl:when test="starts-with( $path,'/data')"><xsl:value-of select="replace($refobject/对象:路径_D703,'/data','Pictures')"/></xsl:when><xsl:otherwise><xsl:choose><!--'/' is for maybe absolute path--><xsl:when test="starts-with($path,'.') or starts-with($path,'/')"><xsl:value-of select="$path"/></xsl:when><xsl:otherwise><xsl:choose><xsl:when test="substring($path,2,1)=':'"><xsl:value-of select="concat( '/',$path)"/></xsl:when><xsl:otherwise><xsl:value-of select="$path"/></xsl:otherwise></xsl:choose></xsl:otherwise></xsl:choose></xsl:otherwise></xsl:choose></xsl:attribute>
 	</xsl:template>
-	
+
 	<xsl:template name="DrawFrame">
 		<xsl:param name="picstyle"/>
 		<xsl:element name="draw:frame">
@@ -9628,9 +9628,9 @@ iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAKElEQVR4nGNRZrhz57+yCuNdBjCAs1kg
 							<xsl:attribute name="xlink:show">
 								<xsl:value-of select="$embed"/>
 							</xsl:attribute>
-						</xsl:otherwise>				
+						</xsl:otherwise>
 					</xsl:choose>
-				</xsl:element>		
+				</xsl:element>
 			</xsl:if>
 			<xsl:if test="($document_type = 'presentation') and (name() = 'uof:锚点_C644')">
 				<xsl:if test="not($picstyle/图:其他对象引用_8038)">
@@ -11797,9 +11797,9 @@ iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAKElEQVR4nGNRZrhz57+yCuNdBjCAs1kg
 											<xsl:attribute name="config:type">boolean</xsl:attribute>
 											<xsl:choose>
 												<xsl:when test="表:当前视图/@表:类型='normal'">false</xsl:when>
-												
+
 												<xsl:when test="表:当前视图/@表:类型='page'">true</xsl:when>
-												
+
 												<xsl:otherwise>true</xsl:otherwise>
 											</xsl:choose>
 										</xsl:element>
@@ -12271,7 +12271,7 @@ iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAKElEQVR4nGNRZrhz57+yCuNdBjCAs1kg
 								<xsl:element name="style:region-right">
 									<!--<xsl:element name="text:p">
 										<xsl:value-of select="字:段落_416B/字:句_419D/字:文本串_415B"/>
-										
+
 									</xsl:element>-->
 									<xsl:apply-templates select="./字:段落_416B"/>
 								</xsl:element>
@@ -12280,7 +12280,7 @@ iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAKElEQVR4nGNRZrhz57+yCuNdBjCAs1kg
 								<xsl:element name="style:region-left">
 									<!--<xsl:element name="text:p">
 										<xsl:value-of select="字:段落_416B/字:句_419D/字:文本串_415B"/>
-										
+
 									</xsl:element>-->
 									<xsl:apply-templates select="./字:段落_416B"/>
 								</xsl:element>
@@ -13689,7 +13689,7 @@ iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAKElEQVR4nGNRZrhz57+yCuNdBjCAs1kg
 				</xsl:for-each>
 			</xsl:when>
 			<xsl:otherwise>
-				<xsl:for-each select="../../表:坐标轴_E791[@子类型_E793!=(current()/../@子类型_E793)]/表:刻度_E71D">					
+				<xsl:for-each select="../../表:坐标轴_E791[@子类型_E793!=(current()/../@子类型_E793)]/表:刻度_E71D">
 					<xsl:if test="表:交叉点_E723 !=''">
 						<xsl:attribute name="chart:axis-position" select="表:交叉点_E723"/>
 					</xsl:if>
@@ -14052,7 +14052,7 @@ iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAKElEQVR4nGNRZrhz57+yCuNdBjCAs1kg
 			</xsl:for-each>
 			<xsl:for-each select="*">
 				<xsl:apply-templates select="." mode="chartstyle"/>
-				<!--表:图表区_E743|表:绘图区_E747|表:图例_E794|表:数据表_E79B|表:标题_E70A|表:背景墙_E7A1|表:基底_E7A4  
+				<!--表:图表区_E743|表:绘图区_E747|表:图例_E794|表:数据表_E79B|表:标题_E70A|表:背景墙_E7A1|表:基底_E7A4
 待转 空白单元格绘制方式 是否显示隐藏单元格-->
 			</xsl:for-each>
 		</office:automatic-styles>
@@ -14473,7 +14473,7 @@ iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAKElEQVR4nGNRZrhz57+yCuNdBjCAs1kg
 							<xsl:value-of select="concat((number($ChartSize/@长_C604) - number(../../表:图例_E794/表:大小_E748/@宽_C605)) * 0.8,$uofUnit)"/>
 						</xsl:when>
 						<xsl:otherwise>
-							
+
 							<xsl:value-of select="concat(number($ChartSize/@长_C604)*0.8,$uofUnit)"/>
 						</xsl:otherwise>
 					</xsl:choose>
@@ -14484,7 +14484,7 @@ iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAKElEQVR4nGNRZrhz57+yCuNdBjCAs1kg
 							<xsl:value-of select="concat(表:大小_E748/@长_C604,$uofUnit)"/>
 						</xsl:when>
 						<xsl:otherwise>
-							
+
 							<xsl:value-of select="concat(number($ChartSize/@宽_C605)*0.7,$uofUnit)"/>
 						</xsl:otherwise>
 					</xsl:choose>
@@ -17424,11 +17424,11 @@ iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAKElEQVR4nGNRZrhz57+yCuNdBjCAs1kg
 						<xsl:choose>
 							<xsl:when test="@uof:目标 = @uof:书签">
 								<xsl:if test="key('bookmark', @uof:书签)/uof:命名表达式/@uof:区域引用">
-									<xsl:value-of select="key('bookmark', @uof:书签)/uof:命名表达式/@uof:区域引用"/>											
-								</xsl:if>								
+									<xsl:value-of select="key('bookmark', @uof:书签)/uof:命名表达式/@uof:区域引用"/>
+								</xsl:if>
 							</xsl:when>
 							<xsl:otherwise>
-								<xsl:value-of select="@uof:目标"/>								
+								<xsl:value-of select="@uof:目标"/>
 							</xsl:otherwise>
 						</xsl:choose>
 					</xsl:variable>
@@ -17452,8 +17452,8 @@ iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAKElEQVR4nGNRZrhz57+yCuNdBjCAs1kg
 						</xsl:matching-substring>
 					</xsl:analyze-string>
 				</xsl:if>
-			</xsl:for-each>	
-		</table:named-expressions>	
+			</xsl:for-each>
+		</table:named-expressions>
 	</xsl:template>
 	-->
 	<xsl:template match="书签:书签集_9104" mode="table">

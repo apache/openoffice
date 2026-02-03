@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding="UTF-8"?>
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,33 +8,33 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 			      xmlns:office="http://openoffice.org/2000/office"
 			      xmlns:style="http://openoffice.org/2000/style"
-			      xmlns:text="http://openoffice.org/2000/text" 				   
-			      xmlns:table="http://openoffice.org/2000/table" 				 
+			      xmlns:text="http://openoffice.org/2000/text"
+			      xmlns:table="http://openoffice.org/2000/table"
 			      xmlns:draw="http://openoffice.org/2000/drawing"
-			      xmlns:fo="http://www.w3.org/1999/XSL/Format" 
-			      xmlns:xlink="http://www.w3.org/1999/xlink" 
-			      xmlns:number="http://openoffice.org/2000/datastyle" 			    
-			      xmlns:svg="http://www.w3.org/2000/svg" 
-			      xmlns:chart="http://openoffice.org/2000/chart" 
-			      xmlns:dr3d="http://openoffice.org/2000/dr3d" 
-			      xmlns:math="http://www.w3.org/1998/Math/MathML" 
-			      xmlns:form="http://openoffice.org/2000/form" 
+			      xmlns:fo="http://www.w3.org/1999/XSL/Format"
+			      xmlns:xlink="http://www.w3.org/1999/xlink"
+			      xmlns:number="http://openoffice.org/2000/datastyle"
+			      xmlns:svg="http://www.w3.org/2000/svg"
+			      xmlns:chart="http://openoffice.org/2000/chart"
+			      xmlns:dr3d="http://openoffice.org/2000/dr3d"
+			      xmlns:math="http://www.w3.org/1998/Math/MathML"
+			      xmlns:form="http://openoffice.org/2000/form"
 			      xmlns:script="http://openoffice.org/2000/script"
 			      >
 <xsl:output method="xml" />
@@ -44,22 +44,22 @@
 	<xsl:apply-templates />
 </xsl:template>
 
-<xsl:template match="html">	
-	
-	<office:document-content xmlns:office="http://openoffice.org/2000/office"				 
-				 xmlns:style="http://openoffice.org/2000/style" 				 
+<xsl:template match="html">
+
+	<office:document-content xmlns:office="http://openoffice.org/2000/office"
+				 xmlns:style="http://openoffice.org/2000/style"
 				 xmlns:text="http://openoffice.org/2000/text"
 				 xmlns:table="http://openoffice.org/2000/table"
 				 xmlns:draw="http://openoffice.org/2000/drawing"
-				 xmlns:fo="http://www.w3.org/1999/XSL/Format" 
-				 xmlns:xlink="http://www.w3.org/1999/xlink" 
-				 xmlns:number="http://openoffice.org/2000/datastyle" 
-				 xmlns:svg="http://www.w3.org/2000/svg" 
-				 xmlns:chart="http://openoffice.org/2000/chart" 
-				 xmlns:dr3d="http://openoffice.org/2000/dr3d" 
-				 xmlns:math="http://www.w3.org/1998/Math/MathML" 
-				 xmlns:form="http://openoffice.org/2000/form" 
-				 xmlns:script="http://openoffice.org/2000/script" 
+				 xmlns:fo="http://www.w3.org/1999/XSL/Format"
+				 xmlns:xlink="http://www.w3.org/1999/xlink"
+				 xmlns:number="http://openoffice.org/2000/datastyle"
+				 xmlns:svg="http://www.w3.org/2000/svg"
+				 xmlns:chart="http://openoffice.org/2000/chart"
+				 xmlns:dr3d="http://openoffice.org/2000/dr3d"
+				 xmlns:math="http://www.w3.org/1998/Math/MathML"
+				 xmlns:form="http://openoffice.org/2000/form"
+				 xmlns:script="http://openoffice.org/2000/script"
 				 office:class="text" office:version="1.0">
 
 <office:script/>
@@ -100,7 +100,7 @@
  </office:automatic-styles>
 
 
-	
+
 
 
  	<office:body>
@@ -109,8 +109,8 @@
    			<text:sequence-decl text:display-outline-level="0" text:name="Table"/>
    			<text:sequence-decl text:display-outline-level="0" text:name="Text"/>
    			<text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
-  		</text:sequence-decls>   		
-  		
+  		</text:sequence-decls>
+
   		<xsl:apply-templates/>
  	</office:body>
 	</office:document-content>
