@@ -1,7 +1,7 @@
 <xsl:transform xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
 
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -9,16 +9,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 <!-- This style sheet converts any rat-report.xml file.  -->
@@ -73,7 +73,7 @@ caption {color:blue;text-align:left;}
 	<h1>Rat Report</h1>
 	<p>This HTML version (yes, it is!) is generated from the RAT xml reports using Saxon9B. All the outputs required are displayed below, similar to the .txt version.
            This is obviously a work in progress; and a prettier, easier to read and manage version will be available soon</p>
-<div class="center">	
+<div class="center">
 <table id="rat-reports summary" cellspacing="0" summary="A snapshot summary of this rat report">
 <caption>
 Table 1: A snapshot summary of this rat report.
@@ -150,7 +150,7 @@ Table 1: A snapshot summary of this rat report.
  <hr/>
 
  <h3>Printing headers for files without AL header...</h3>
- 
+
  <xsl:for-each select="descendant::resource[header-type/@name=&quot;?????&quot;]">
 
 	 <h4><xsl:value-of select="@name"/></h4>
@@ -166,7 +166,7 @@ Table 1: A snapshot summary of this rat report.
     <xsl:apply-templates select="license-approval"/>
     <xsl:apply-templates select="type"/> -->
 
-</xsl:template>   
+</xsl:template>
 
 <xsl:template match="resource">
 	<div>

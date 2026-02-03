@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet 
-    version="1.0" 
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+<xsl:stylesheet
+    version="1.0"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:rng="http://relaxng.org/ns/structure/1.0"
     xmlns:xalan="http://xml.apache.org/xalan"
     exclude-result-prefixes = "xalan"
@@ -23,7 +23,7 @@
 
   <xsl:template name="license">
     <xsl:text>/**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -31,16 +31,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/&#xa;</xsl:text>
   </xsl:template>
 
@@ -75,7 +75,7 @@
       <xsl:with-param name="string" select="$member"/>
     </xsl:call-template>
   </xsl:template>
-  
+
   <xsl:template name="incfile">
     <xsl:call-template name="license"/>
     <xsl:for-each select="//class">
@@ -212,7 +212,7 @@
     <xsl:text>PushBack</xsl:text>
   </xsl:template>
 
-  <xsl:template name="settersig">    
+  <xsl:template name="settersig">
     <xsl:param name="classname"/>
     <xsl:variable name="impl">
       <xsl:if test="string-length($classname) > 0">
@@ -235,7 +235,7 @@
   </xsl:template>
 
   <xsl:template name="gettersig">
-    <xsl:param name="classname"/>    
+    <xsl:param name="classname"/>
     <xsl:variable name="impl">
       <xsl:if test="string-length($classname) > 0">
 	<xsl:text>true</xsl:text>
@@ -249,13 +249,13 @@
     <xsl:if test="string-length($classname) > 0">
       <xsl:value-of select="$classname"/>
       <xsl:text>::</xsl:text>
-    </xsl:if>    
+    </xsl:if>
     <xsl:call-template name="gettername"/>
     <xsl:text>() const</xsl:text>
   </xsl:template>
-  
+
   <xsl:template name="pushbacksig">
-    <xsl:param name="classname"/>    
+    <xsl:param name="classname"/>
     <xsl:variable name="pushback">
       <xsl:call-template name="pushbackname"/>
     </xsl:variable>
@@ -266,7 +266,7 @@
 	<xsl:if test="string-length($classname) > 0">
 	  <xsl:value-of select="$classname"/>
 	  <xsl:text>::</xsl:text>
-	</xsl:if>    
+	</xsl:if>
 	<xsl:value-of select="$pushback"/>
 	<xsl:text>(</xsl:text>
 	<xsl:call-template name="constcctyperef">
@@ -619,7 +619,7 @@
       <xsl:text>&#xa;}&#xa;&#xa;</xsl:text>
     </xsl:for-each>
   </xsl:template>
-  
+
   <xsl:template name="constructorimpl">
     <xsl:text>&#xa;</xsl:text>
     <xsl:value-of select="@name"/>
@@ -632,7 +632,7 @@
 	  <xsl:text>,</xsl:text>
 	  <xsl:text>&#xa;  </xsl:text>
 	</xsl:if>
-	<xsl:call-template name="memberid"/>	
+	<xsl:call-template name="memberid"/>
 	<xsl:choose>
 	  <xsl:when test="@type='sal_uInt32'">
 	    <xsl:text>(0)</xsl:text>
@@ -650,7 +650,7 @@
     <xsl:text>&#xa;{</xsl:text>
     <xsl:text>&#xa;}&#xa;&#xa;</xsl:text>
   </xsl:template>
-  
+
   <xsl:template name="destructorimpl">
     <xsl:text>&#xa;</xsl:text>
     <xsl:value-of select="@name"/>
@@ -660,7 +660,7 @@
     <xsl:text>&#xa;{</xsl:text>
     <xsl:text>&#xa;}&#xa;&#xa;</xsl:text>
   </xsl:template>
-  
+
   <xsl:template name="classimpl">
     <xsl:variable name="classname" select="@name"/>
     <xsl:variable name="comment">
@@ -668,7 +668,7 @@
       <xsl:value-of select="$classname"/>
     </xsl:variable>
     <xsl:variable name="commentfill">
-      <xsl:value-of select="translate($comment, 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ: ', 
+      <xsl:value-of select="translate($comment, 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ: ',
 			                        '******************************************************')"/>
     </xsl:variable>
     <xsl:text>&#xa;/***</xsl:text>

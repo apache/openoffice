@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,42 +8,42 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
 <!-- =================================================
 
-This template is a skeleton for single level TOC pages 
+This template is a skeleton for single level TOC pages
 Do not overwrite this ! copy it and complete the missing
 code.
 
-I use the @ character wherever there is a missing code, so 
+I use the @ character wherever there is a missing code, so
 you can use a simple find to navigate and find the
 places...
 
 ====================================================== -->
 
-<xsl:stylesheet version="1.0" 
+<xsl:stylesheet version="1.0"
    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 	xmlns="http://www.w3.org/1999/xhtml">
-	
+
 	<xsl:output method               = "html"
                 media-type           = "text/html"
                 indent               = "yes"
                 doctype-public       = "-//W3C//DTD HTML 4.0 Transitional//EN"
                 omit-xml-declaration = "yes"
-                standalone           = "yes" /> 
-  
+                standalone           = "yes" />
+
 	 <!-- =============================
 	               ROOT
 	 ================================== -->
@@ -55,21 +55,21 @@ places...
 			      <xsl:call-template name="body"/>
 		   </html>
 	 </xsl:template>
-	 
-	 
+
+
 	 <!-- =============================
 	         Document properties
-	         
+
 	 This section contains templates which
 	 give the document properties...
-	               
+
 	 ================================== -->
-	 
+
 	 <!-- this templates gives the
 	 relative href of the document. To use
 	 with the <a href="..."> attribute-->
-	
-	
+
+
 	 <xsl:template match="document" mode="href">
 	   <xsl:value-of select="concat(../@directory,'/')"/>
 	   <xsl:if test="@dir">
@@ -77,29 +77,29 @@ places...
 	   </xsl:if>
 	   <xsl:value-of select="@fn"/>
 	 </xsl:template>
-	 
-	 
+
+
 	<xsl:template match="document/@title">
 	 	<xsl:param name="target" select="''"/>
-		
+
 	 	<span class="doctitle">
 	 		<a>
-	 		<xsl:attribute name="href"> 
+	 		<xsl:attribute name="href">
 				<xsl:apply-templates select=".." mode="href"/>
 			</xsl:attribute>
-			
+
 			<xsl:if test=" $target != ''">
 				<xsl:attribute name="target">
 					<xsl:value-of select="$target"/>
 				</xsl:attribute>
 			</xsl:if>
-			
+
 			<xsl:value-of select="."/>
 			</a>
 	 	</span>
 	 	<br/>
 	 </xsl:template>
-	
+
 
 	 <xsl:template match="document/@description">
 	 	<span class="docdescription">
@@ -107,7 +107,7 @@ places...
 	 	</span>
 	 	<br/>
 	 </xsl:template>
-	 
+
 
 	 <xsl:template match="document/@author">
 	 	<span class="docauthor">
@@ -115,7 +115,7 @@ places...
 	 	</span>
 	 	<br/>
 	 </xsl:template>
-	 
+
 
 	 <xsl:template match="document/@create-date">
 	 	<span class="doccreationdate">
@@ -123,7 +123,7 @@ places...
 	 	</span>
 	 	<br/>
 	 </xsl:template>
-	 
+
 
 	 <xsl:template match="document/@update-date">
 	 	<span class="doclastchangeddate">
@@ -131,7 +131,7 @@ places...
 	 	</span>
 	 	<br/>
 	 </xsl:template>
-	 
+
 
 	 <xsl:template match="document/@filename">
 	 	<span class="docfilename">
@@ -155,7 +155,7 @@ places...
 	 	</span>
 	 	<br/>
 	 </xsl:template>
-	 
+
 
 	 <xsl:template match="document/@size">
 	 	<span class="docsizeinkb">
@@ -163,19 +163,19 @@ places...
 	 	</span>
 	 	<br/>
 	 </xsl:template>
-	 
+
 	 <xsl:template match="document/@icon">
 	   <img src="images/{.}"/>
 	 	<br/>
 	 </xsl:template>
-	
+
 
 	 <!-- =============================
 	               HTML HEAD
-	               
+
     this section should not be changed
 	 ================================== -->
-	 
+
 	 <xsl:template name="head">
 	 	<head>
 				<title>
@@ -196,5 +196,5 @@ places...
 
 		</head>
 	 </xsl:template>
-	     
+
 </xsl:stylesheet>

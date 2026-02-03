@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding="UTF-8"?>
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,16 +8,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
@@ -120,24 +120,24 @@
 		<xsl:element name="article">
 			<xsl:attribute name="lang">
 				<xsl:value-of select="/*/office:meta/dc:language"/>
-			</xsl:attribute>            
+			</xsl:attribute>
             <!-- page style header -->
             <xsl:call-template name="page-style">
                 <xsl:with-param name="area" select="'header'"/>
-            </xsl:call-template>            
-			<xsl:apply-templates select="office:body"/>            
+            </xsl:call-template>
+			<xsl:apply-templates select="office:body"/>
             <!-- page style footer -->
             <xsl:call-template name="page-style"/>
 		</xsl:element>
 	</xsl:template>
-    
-    
+
+
     <xsl:key match="style:master-page" name="styleMasterPage" use="@style:name" />
     <!-- using a simple heuristic for "standard" page-style heading/footer from page styles -->
     <xsl:template name="page-style">
         <xsl:param name="area"/>
-        
-        <xsl:variable name="defaultPageStyle" select="key('styleMasterPage', 'Standard')"/>     
+
+        <xsl:variable name="defaultPageStyle" select="key('styleMasterPage', 'Standard')"/>
         <xsl:choose>
             <xsl:when test="$area = 'header'">
                 <xsl:apply-templates select="$defaultPageStyle/style:header/*"/>
@@ -146,7 +146,7 @@
                 <xsl:apply-templates select="$defaultPageStyle/style:footer/*"/>
             </xsl:otherwise>
         </xsl:choose>
-    
+
     </xsl:template>
 
 	<xsl:template match="office:body">
@@ -235,8 +235,8 @@
 				<!-- ID have to be an NCName which have to start with a letter or '_'
 					in case of the frequent starting number a '_' will be added as prefix -->
 				<xsl:choose>
-					<xsl:when test="(starts-with(@text:name, '0') or 
-                                     starts-with(@text:name, '1') or 
+					<xsl:when test="(starts-with(@text:name, '0') or
+                                     starts-with(@text:name, '1') or
                                      starts-with(@text:name, '2') or
                                      starts-with(@text:name, '3') or
                                      starts-with(@text:name, '4') or

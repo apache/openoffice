@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,35 +8,35 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
 <!-- =================================================
 
-This template is a skeleton for single level TOC pages 
+This template is a skeleton for single level TOC pages
 with Frames : it generates the main index.html which contains
 the frameset.
 
 Do not overwrite this ! copy it and complete the missing
 code.
 
-I use the @ character wherever there is a missing code, so 
+I use the @ character wherever there is a missing code, so
 you can use a simple find to navigate and find the
 places...
 
 ====================================================== -->
 
-<xsl:stylesheet version="1.0" 
+<xsl:stylesheet version="1.0"
    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 	xmlns="http://www.w3.org/1999/xhtml">
 
@@ -46,9 +46,9 @@ places...
                 doctype-public       = "-//W3C//DTD HTML 4.0 Transitional//EN"
                 omit-xml-declaration = "yes"
                 standalone           = "yes" />
-	
+
 	<xsl:include href="../layout.xsl"/>
-    
+
 
 	 <!-- =============================
 	               ROOT
@@ -61,39 +61,39 @@ places...
 			      <xsl:call-template name="frameset"/>
 		   </html>
 	 </xsl:template>
-	 
-	 
+
+
 	 <!-- =============================
 	               HTML FRAMES
 	 ================================== -->
-	 
-	
+
+
 	<xsl:template name="frameset">
 
 		<!--
 			@ Add frameset here...
-			
+
 			  the following noframes tag is
 			  naturally optional.
 			-->
-		
+
 		<noframes/>
-		
+
 		<!-- the body tag has no influance here,
 			we add it for good style.
 			-->
-			
+
 		<body>
 		</body>
 	</xsl:template>
-	
+
 
 	 <!-- =============================
 	               HTML HEAD
-	               
+
     this section should not be changed
 	 ================================== -->
-	 
+
 	 <xsl:template name="head">
 	 	<head>
 				<title>
@@ -114,5 +114,5 @@ places...
 
 		</head>
 	 </xsl:template>
-	
+
 </xsl:stylesheet>

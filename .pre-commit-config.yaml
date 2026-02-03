@@ -64,7 +64,7 @@ repos:
         files: \.(asm|asp|bas|c|cl|cmd|common|component|cpp|cxx|dtd|dxp|el|h|hrc|hxx|idl|in|ini|java|js|lst|m|m4|map|md|mk|mm|mod|pas|php|pl|pm|pmk|py|rc|rdf|rng|s|sdi|sh|src|template|ulf|vbs|xba|xcs|xcu|xdl|xhp|xlb|xmi|xsd|xslt?|ya?ml)$|^main/accessibility/.*$|^main/afms/.*$|^main/animations/.*$|^main/apache-commons/.*$|^test/testgui/.*$
       - id: trailing-whitespace
         description: trims trailing whitespace
-        files: (m|M)akefile$|\.(asm|asp|bas|bat|c|cl|cmd|common|component|cpp|cxx|dtd|dxp|el|h|hrc|hxx|idl|in|ini|java|js|lst|m|m4|map|md|mk|mm|mod|pas|php|pl|pm|pmk|py|rc|rdf|rng|s|sdi|sh|src|template|ulf|vbs|xba|xcs|xcu|xdl|xhp|xlb|xmi|xml|xsd|ya?ml)$
+        files: (m|M)akefile$|\.(asm|asp|bas|bat|c|cl|cmd|common|component|cpp|cxx|dtd|dxp|el|h|hrc|hxx|idl|in|ini|java|js|lst|m|m4|map|md|mk|mm|mod|pas|php|pl|pm|pmk|py|rc|rdf|rng|s|sdi|sh|src|template|ulf|vbs|xba|xcs|xcu|xdl|xhp|xlb|xmi|xml|xsd|xslt?|ya?ml)$
         args: [--markdown-linebreak-ext=md]
   - repo: https://github.com/codespell-project/codespell
     rev: v2.4.1

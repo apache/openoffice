@@ -1,5 +1,5 @@
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,20 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"  
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:UML = 'org.omg.xmi.namespace.UML' xml:space="default">
 <xsl:output method="text" />
 
@@ -49,12 +49,12 @@ using namespace ::std;
   <xsl:apply-templates select='/XMI/XMI.content/UML:Model' mode="sprmkind"/>
   <xsl:apply-templates select='.//UML:Class' mode='class'/>
   <xsl:apply-templates select='//UML:Model' mode='createsprmprops'/>
-  <xsl:apply-templates select='/XMI/XMI.content/UML:Model' 
+  <xsl:apply-templates select='/XMI/XMI.content/UML:Model'
                        mode='createsprmbinary'/>
-  <xsl:apply-templates select='/XMI/XMI.content/UML:Model' 
+  <xsl:apply-templates select='/XMI/XMI.content/UML:Model'
                        mode='createdffrecord'/>
   <xsl:apply-templates select='/XMI/XMI.content/UML:Model' mode='ww8foptename'/>
-  <xsl:apply-templates select='/XMI/XMI.content/UML:Model' 
+  <xsl:apply-templates select='/XMI/XMI.content/UML:Model'
                        mode='isbooleandffopt'/>
   <xsl:text>
 }}
@@ -65,8 +65,8 @@ using namespace ::std;
     <xsl:choose>
       <xsl:when test='.//UML:Stereotype[@xmi.idref = "ww8resource"]'>
         <xsl:apply-templates select="." mode="ww8resource">
-          <xsl:with-param name="classprefix">WW8</xsl:with-param>          
-          <xsl:with-param name="needsinit">true</xsl:with-param>          
+          <xsl:with-param name="classprefix">WW8</xsl:with-param>
+          <xsl:with-param name="needsinit">true</xsl:with-param>
         </xsl:apply-templates>
       </xsl:when>
       <xsl:when test='.//UML:Stereotype[@xmi.idref = "dffrecord"]'>
@@ -123,7 +123,7 @@ using namespace ::std;
     <xsl:text>
 */
     </xsl:text>
-    
+
     <xsl:value-of select="$classname"/>
     <xsl:text>::~</xsl:text>
     <xsl:value-of select="$classname"/>
@@ -137,7 +137,7 @@ using namespace ::std;
       <xsl:value-of select="$classname"/>
       <xsl:text>::init()
     {
-      </xsl:text>    
+      </xsl:text>
       <xsl:if test='.//UML:Stereotype[@xmi.idref ="withmembers"]'>
         <xsl:for-each select='.//UML:Attribute[@name!="reserved"]'>
           <xsl:apply-templates select='.' mode='initmembers'/>
@@ -206,7 +206,7 @@ using namespace ::std;
         dump(output);</xsl:text>
     </xsl:if>
     <xsl:text>
-        try 
+        try
         {</xsl:text>
     <xsl:for-each select='.//UML:Attribute[@name!="reserved"]'>
       <xsl:choose>
@@ -225,8 +225,8 @@ using namespace ::std;
           <xsl:apply-templates select='.' mode='resolveOperation'/>
         </xsl:otherwise>
       </xsl:choose>
-    </xsl:for-each>    
-    
+    </xsl:for-each>
+
     <xsl:if test='.//UML:Stereotype[@xmi.idref = "resolvenoauto"]'>
       resolveNoAuto(rHandler);
     </xsl:if>
@@ -236,7 +236,7 @@ using namespace ::std;
       }
     }
 
-    void 
+    void
     </xsl:text>
     <xsl:value-of select="$classname"/>
     <xsl:text>::dump(OutputWithDepth &lt; string &gt; &amp; o) const
@@ -244,7 +244,7 @@ using namespace ::std;
         o.addItem("&lt;dump type='</xsl:text>
         <xsl:value-of select='@name'/>
         <xsl:text>'&gt;");
-        
+
         WW8StructBase::dump(o);</xsl:text>
         <xsl:for-each select='.//UML:Attribute[@name!="reserved"]'>
           <xsl:apply-templates select='.' mode='dumpAttribute'/>
@@ -295,7 +295,7 @@ using namespace ::std;
             {
                 sal_uInt32 nCount = get_</xsl:text>
               <xsl:value-of select="@name"/>
-              <xsl:text>_count();              
+              <xsl:text>_count();
                 for (sal_uInt32 n = 0; n &lt; nCount; ++n)
                 {
                     WW8Value::Pointer_t pVal = createValue(get_</xsl:text>
@@ -335,7 +335,7 @@ using namespace ::std;
       </xsl:call-template>
     </xsl:variable>
     <xsl:variable name="name" select="@name"/>
-    <xsl:for-each select=".//UML:Stereotype">      
+    <xsl:for-each select=".//UML:Stereotype">
       <xsl:choose>
         <xsl:when test='@xmi.idref = "attributeremainder"'/>
         <xsl:when test='@xmi.idref = "array"'>
@@ -344,7 +344,7 @@ using namespace ::std;
             sal_uInt32 nCount = get_</xsl:text>
             <xsl:value-of select='$name'/>
             <xsl:text>_count();
-            
+
             for (sal_uInt32 n = 0; n &lt; nCount; ++n)
             {
                 writerfilter::dump(o, "</xsl:text>
@@ -361,7 +361,7 @@ using namespace ::std;
             WW8StringValue aVal(get_</xsl:text>
             <xsl:value-of select='$name'/>
             <xsl:text>());
-            
+
             o.addItem("</xsl:text>
             <xsl:value-of select='$name'/>
             <xsl:text>" &lt;&lt; "=\"" + aVal.toString() + "\"");
@@ -417,7 +417,7 @@ using namespace ::std;
               sal_uInt32 nCount = get_</xsl:text>
               <xsl:value-of select="@name"/>
               <xsl:text>_count();
-              
+
               for (sal_uInt32 n = 0; n &lt; nCount; ++n)
               {
                   WW8Value::Pointer_t pVal = createValue(get_</xsl:text>
@@ -439,7 +439,7 @@ using namespace ::std;
               <xsl:value-of select="@name"/>
               <xsl:text>());
               WW8Sprm aSprm(pRef);
-              
+
               rHandler.sprm(aSprm);
           }&#xa;</xsl:text>
   </xsl:template>
@@ -469,15 +469,15 @@ using namespace ::std;
        for (sal_uInt32 n = 0; n &lt; nCount; ++n)
        {
            pEntry = getEntry(n);
-           
+
            if (pEntry.get() != 0x0)
            {
-               try 
+               try
                {
                    rHandler.entry(n, pEntry);
                }
                catch (ExceptionOutOfBounds e)
-               {    
+               {
                    (void) e;
                }
            }
@@ -525,10 +525,10 @@ writerfilter::Reference &lt; BinaryObj &gt; ::Pointer_t createSprmBinary
     case <xsl:value-of select='.//UML:TaggedValue[.//UML:TagDefinition/@xmi.idref="sprmcode"]//UML:TaggedValue.dataValue'/>:
         {
             WW8<xsl:value-of select='@name'/>::Pointer_t p(new WW8<xsl:value-of select='@name'/>(rProp, 0, rProp.getCount()));
-            
+
             pResult = p->getBinary();
         }
-        
+
         break;
 </xsl:for-each>
 <xsl:text>
@@ -672,7 +672,7 @@ rtl::OUString WW8FOPTE::get_name()
 WW8Value::Pointer_t WW8FOPTE::get_stringValue()
 {
     WW8Value::Pointer_t pResult;
-    DffOPT * pOpt = dynamic_cast &lt; DffOPT * &gt;(mpParent); 
+    DffOPT * pOpt = dynamic_cast &lt; DffOPT * &gt;(mpParent);
     sal_uInt32 nExtraOffset = pOpt->get_extraoffset(mnIndex);
     sal_uInt32 nExtraLength = pOpt->get_extraoffset(mnIndex + 1) - nExtraOffset;
     pResult = createValue(mpParent->getString(nExtraOffset, nExtraLength / 2));
@@ -704,7 +704,7 @@ DffRecord * createDffRecord
              pResult = new Dff</xsl:text>
                  <xsl:value-of select="@name"/>
                  <xsl:text>(pParent, nOffset, nSize);
-                 
+
              break;&#xa;</xsl:text>
     </xsl:for-each>
     <xsl:text>
@@ -736,7 +736,7 @@ DffRecord * createDffRecord
              pResult = new Dff</xsl:text>
                  <xsl:value-of select="@name"/>
                  <xsl:text>(rStream, nOffset, nSize);
-                 
+
              break;&#xa;</xsl:text>
     </xsl:for-each>
     <xsl:text>
@@ -839,7 +839,7 @@ bool isBooleanDffOpt(sal_uInt32 nId)
     default:
         break;
     }
-    
+
     return bResult;
 }
 </xsl:text>
