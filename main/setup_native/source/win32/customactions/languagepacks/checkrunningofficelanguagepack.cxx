@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #define _WIN32_WINDOWS 0x0410
 
 #ifdef _MSC_VER
@@ -210,3 +208,5 @@ extern "C" UINT __stdcall IsOfficeRunning( MSIHANDLE handle )
 
 	return ERROR_SUCCESS;
 }
+
+/* vim: set noet sw=4 ts=4: */
