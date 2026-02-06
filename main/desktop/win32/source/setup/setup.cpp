@@ -19,7 +19,11 @@
  *
  *************************************************************/
 
+// MARKER(update_precomp.py): autogen include statement, do not remove
+#include "precompiled_desktop.hxx"
 
+#define  UNICODE    1
+#define _UNICODE    1
 
 #define WIN // scope W32 API
 
@@ -119,8 +123,24 @@ const TCHAR sMsiQuiet[]      = TEXT( " /q" );
 const TCHAR sMemMapName[]    = TEXT( "Global\\MsiErrorObject" );
 
 //--------------------------------------------------------------------------
-SetupAppX::SetupAppX()
+SetupApp::SetupApp()
 {
+    m_uiRet         = ERROR_SUCCESS;
+
+    // Get OS version
+    OSVERSIONINFO sInfoOS;
+
+    ZeroMemory( &sInfoOS, sizeof(OSVERSIONINFO) );
+    sInfoOS.dwOSVersionInfoSize = sizeof( OSVERSIONINFO );
+
+    GetVersionEx( &sInfoOS );
+
+    m_nOSVersion    = sInfoOS.dwMajorVersion;
+    m_nMinorVersion = sInfoOS.dwMinorVersion;
+    m_bIsWin9x      = ( VER_PLATFORM_WIN32_NT != sInfoOS.dwPlatformId );
+    m_bNeedReboot   = false;
+    m_bAdministrative = false;
+
     m_hInst     = NULL;
     m_hMapFile  = NULL;
     m_pAppTitle = NULL;
@@ -155,7 +175,7 @@ SetupAppX::SetupAppX()
 }
 
 //--------------------------------------------------------------------------
-SetupAppX::~SetupAppX()
+SetupApp::~SetupApp()
 {
     if ( m_ppLanguageList )
     {
@@ -196,7 +216,7 @@ SetupAppX::~SetupAppX()
 }
 
 //--------------------------------------------------------------------------
-boolean SetupAppX::Initialize( HINSTANCE hInst )
+boolean SetupApp::Initialize( HINSTANCE hInst )
 {
     m_pCmdLine  = WIN::GetCommandLine();
     m_hInst     = hInst;
@@ -256,7 +276,7 @@ boolean SetupAppX::Initialize( HINSTANCE hInst )
 }
 
 //--------------------------------------------------------------------------
-boolean SetupAppX::GetProfileSection( LPCTSTR pFileName, LPCTSTR pSection,
+boolean SetupApp::GetProfileSection( LPCTSTR pFileName, LPCTSTR pSection,
                                       DWORD& rSize, LPTSTR *pRetBuf )
 {
     if ( !rSize || !*pRetBuf )
@@ -301,7 +321,7 @@ boolean SetupAppX::GetProfileSection( LPCTSTR pFileName, LPCTSTR pSection,
 }
 
 //--------------------------------------------------------------------------
-boolean SetupAppX::ReadProfile()
+boolean SetupApp::ReadProfile()
 {
     boolean bRet = false;
     TCHAR *sProfilePath = 0;
@@ -406,7 +426,7 @@ boolean SetupAppX::ReadProfile()
                 delete [] pValue;
             }
 
-            m_ppLanguageList = new LanguageDataX*[ m_nLanguageCount ];
+            m_ppLanguageList = new LanguageData*[ m_nLanguageCount ];
 
             for ( int i=0; i < m_nLanguageCount; i++ )
             {
@@ -417,7 +437,7 @@ boolean SetupAppX::ReadProfile()
                 }
 
                 pCurLine += GetNameValue( pCurLine, &pName, &pValue );
-                m_ppLanguageList[ i ] = new LanguageDataX( pValue );
+                m_ppLanguageList[ i ] = new LanguageData( pValue );
                 Log( TEXT( "    Language = %s\r\n" ), pValue );
 
                 if ( m_ppLanguageList[ i ]->m_pTransform )
@@ -438,7 +458,7 @@ boolean SetupAppX::ReadProfile()
 }
 
 //--------------------------------------------------------------------------
-void SetupAppX::AddFileToPatchList( TCHAR* pPath, TCHAR* pFile )
+void SetupApp::AddFileToPatchList( TCHAR* pPath, TCHAR* pFile )
 {
     if ( m_pPatchFiles == NULL )
     {
@@ -453,7 +473,7 @@ void SetupAppX::AddFileToPatchList( TCHAR* pPath, TCHAR* pFile )
 }
 
 //--------------------------------------------------------------------------
-boolean SetupAppX::GetPatches()
+boolean SetupApp::GetPatches()
 {
     boolean bRet = true;
 
@@ -504,7 +524,7 @@ boolean SetupAppX::GetPatches()
 }
 
 //--------------------------------------------------------------------------
-boolean SetupAppX::GetPathToFile( TCHAR* pFileName, TCHAR** pPath )
+boolean SetupApp::GetPathToFile( TCHAR* pFileName, TCHAR** pPath )
 {
     // generate the path to the file = szModuleFile + FileName
     // note: FileName is a relative path
@@ -569,7 +589,7 @@ boolean SetupAppX::GetPathToFile( TCHAR* pFileName, TCHAR** pPath )
 }
 
 //--------------------------------------------------------------------------
-int SetupAppX::GetNameValue( TCHAR* pLine, TCHAR** pName, TCHAR** pValue )
+int SetupApp::GetNameValue( TCHAR* pLine, TCHAR** pName, TCHAR** pValue )
 {
     int nRet = lstrlen( pLine ) + 1;
     *pValue = 0;
@@ -613,7 +633,7 @@ int SetupAppX::GetNameValue( TCHAR* pLine, TCHAR** pName, TCHAR** pValue )
 }
 
 //--------------------------------------------------------------------------
-boolean SetupAppX::ChooseLanguage( long& rLanguage )
+boolean SetupApp::ChooseLanguage( long& rLanguage )
 {
     rLanguage = 0;
 
@@ -699,7 +719,7 @@ boolean SetupAppX::ChooseLanguage( long& rLanguage )
 }
 
 //--------------------------------------------------------------------------
-HMODULE SetupAppX::LoadMsiLibrary()
+HMODULE SetupApp::LoadMsiLibrary()
 {
     HMODULE hMsi = NULL;
     HKEY    hInstKey = NULL;
@@ -746,7 +766,7 @@ HMODULE SetupAppX::LoadMsiLibrary()
 }
 
 //--------------------------------------------------------------------------
-LPCTSTR SetupAppX::GetPathToMSI()
+LPCTSTR SetupApp::GetPathToMSI()
 {
     LPTSTR  sMsiPath = NULL;
     HKEY    hInstKey = NULL;
@@ -817,7 +837,7 @@ LPCTSTR SetupAppX::GetPathToMSI()
 }
 
 //--------------------------------------------------------------------------
-boolean SetupAppX::LaunchInstaller( LPCTSTR pParam )
+boolean SetupApp::LaunchInstaller( LPCTSTR pParam )
 {
     LPCTSTR sMsiPath = GetPathToMSI();
 
@@ -898,7 +918,7 @@ boolean SetupAppX::LaunchInstaller( LPCTSTR pParam )
 }
 
 //--------------------------------------------------------------------------
-boolean SetupAppX::Install( long nLanguage )
+boolean SetupApp::Install( long nLanguage )
 {
     LPTSTR pTransform = NULL;
 
@@ -1015,7 +1035,7 @@ boolean SetupAppX::Install( long nLanguage )
 }
 
 //--------------------------------------------------------------------------
-UINT SetupAppX::GetError() const
+UINT SetupApp::GetError() const
 {
     UINT nErr = 0;
 
@@ -1031,7 +1051,7 @@ UINT SetupAppX::GetError() const
 }
 
 //--------------------------------------------------------------------------
-void SetupAppX::DisplayError( UINT nErr ) const
+void SetupApp::DisplayError( UINT nErr ) const
 {
     TCHAR sError[ MAX_TEXT_LENGTH ] = {0};
     TCHAR sTmp[ MAX_TEXT_LENGTH ] = {0};
@@ -1100,7 +1120,7 @@ void SetupAppX::DisplayError( UINT nErr ) const
 }
 
 //--------------------------------------------------------------------------
-long SetupAppX::GetLanguageID( long nIndex ) const
+long SetupApp::GetLanguageID( long nIndex ) const
 {
     if ( nIndex >=0 && nIndex < m_nLanguageCount )
         return m_ppLanguageList[ nIndex ]->m_nLanguageID;
@@ -1109,7 +1129,7 @@ long SetupAppX::GetLanguageID( long nIndex ) const
 }
 
 //--------------------------------------------------------------------------
-void SetupAppX::GetLanguageName( long nLanguage, LPTSTR sName ) const
+void SetupApp::GetLanguageName( long nLanguage, LPTSTR sName ) const
 {
     switch ( nLanguage )
     {
@@ -1151,7 +1171,7 @@ void SetupAppX::GetLanguageName( long nLanguage, LPTSTR sName ) const
 }
 
 //--------------------------------------------------------------------------
-boolean SetupAppX::CheckVersion()
+boolean SetupApp::CheckVersion()
 {
     boolean bRet = false;
     HMODULE hMsi = LoadMsiLibrary();
@@ -1204,7 +1224,7 @@ boolean SetupAppX::CheckVersion()
 }
 
 //--------------------------------------------------------------------------
-boolean SetupAppX::CheckForUpgrade()
+boolean SetupApp::CheckForUpgrade()
 {
     // When we have patch files we will never try an Minor upgrade
     if ( m_pPatchFiles ) return true;
@@ -1257,7 +1277,7 @@ boolean SetupAppX::CheckForUpgrade()
 }
 
 //--------------------------------------------------------------------------
-boolean SetupAppX::IsTerminalServerInstalled() const
+boolean SetupApp::IsTerminalServerInstalled() const
 {
     boolean bIsTerminalServer = false;
 
@@ -1306,7 +1326,7 @@ boolean SetupAppX::IsTerminalServerInstalled() const
 }
 
 //--------------------------------------------------------------------------
-boolean SetupAppX::AlreadyRunning() const
+boolean SetupApp::AlreadyRunning() const
 {
     if ( m_bIgnoreAlreadyRunning )
     {
@@ -1344,7 +1364,7 @@ boolean SetupAppX::AlreadyRunning() const
 }
 
 //--------------------------------------------------------------------------
-DWORD SetupAppX::WaitForProcess( HANDLE hHandle )
+DWORD SetupApp::WaitForProcess( HANDLE hHandle )
 {
     DWORD nResult = NOERROR;
     boolean bLoop = true;
@@ -1382,7 +1402,7 @@ DWORD SetupAppX::WaitForProcess( HANDLE hHandle )
 }
 
 //--------------------------------------------------------------------------
-void SetupAppX::Log( LPCTSTR pMessage, LPCTSTR pText ) const
+void SetupApp::Log( LPCTSTR pMessage, LPCTSTR pText ) const
 {
     if ( m_pLogFile )
     {
@@ -1414,7 +1434,7 @@ void SetupAppX::Log( LPCTSTR pMessage, LPCTSTR pText ) const
 }
 
 //--------------------------------------------------------------------------
-DWORD SetupAppX::GetNextArgument( LPCTSTR pStr, LPTSTR *pArg, LPTSTR *pNext,
+DWORD SetupApp::GetNextArgument( LPCTSTR pStr, LPTSTR *pArg, LPTSTR *pNext,
                                   boolean bStripQuotes )
 {
     boolean bInQuotes = false;
@@ -1473,7 +1493,7 @@ DWORD SetupAppX::GetNextArgument( LPCTSTR pStr, LPTSTR *pArg, LPTSTR *pNext,
 }
 
 //--------------------------------------------------------------------------
-boolean SetupAppX::GetCmdLineParameters( LPTSTR *pCmdLine )
+boolean SetupApp::GetCmdLineParameters( LPTSTR *pCmdLine )
 {
     int    nRet   = ERROR_SUCCESS;
     LPTSTR pStart = NULL;
@@ -1648,7 +1668,7 @@ boolean SetupAppX::GetCmdLineParameters( LPTSTR *pCmdLine )
 }
 
 //--------------------------------------------------------------------------
-boolean SetupAppX::IsAdmin()
+boolean SetupApp::IsAdmin()
 {
     if ( IsWin9x() )
         return true;
@@ -1728,7 +1748,7 @@ boolean SetupAppX::IsAdmin()
 }
 
 //--------------------------------------------------------------------------
-LPTSTR SetupAppX::CopyIniFile( LPCTSTR pIniFile )
+LPTSTR SetupApp::CopyIniFile( LPCTSTR pIniFile )
 {
     m_pTmpName = _ttempnam( TEXT( "C:\\" ), TEXT( "Setup" ) );
 
@@ -1766,7 +1786,7 @@ LPTSTR SetupAppX::CopyIniFile( LPCTSTR pIniFile )
 }
 
 //--------------------------------------------------------------------------
-void SetupAppX::ConvertNewline( LPTSTR pText ) const
+void SetupApp::ConvertNewline( LPTSTR pText ) const
 {
     int i=0;
 
@@ -1784,7 +1804,7 @@ void SetupAppX::ConvertNewline( LPTSTR pText ) const
 }
 
 //--------------------------------------------------------------------------
-LPTSTR SetupAppX::SetProdToAppTitle( LPCTSTR pProdName )
+LPTSTR SetupApp::SetProdToAppTitle( LPCTSTR pProdName )
 {
     if ( !pProdName ) return m_pAppTitle;
 
@@ -1839,7 +1859,7 @@ LPTSTR SetupAppX::SetProdToAppTitle( LPCTSTR pProdName )
 
 
 //--------------------------------------------------------------------------
-boolean SetupAppX::IsPatchInstalled( TCHAR* pBaseDir, TCHAR* pFileName )
+boolean SetupApp::IsPatchInstalled( TCHAR* pBaseDir, TCHAR* pFileName )
 {
     if ( !m_bSupportsPatch )
         return false;
@@ -1898,7 +1918,7 @@ boolean SetupAppX::IsPatchInstalled( TCHAR* pBaseDir, TCHAR* pFileName )
 }
 
 //--------------------------------------------------------------------------
-boolean SetupAppX::InstallRuntimes( TCHAR *sProductCode, TCHAR *sRuntimePath )
+boolean SetupApp::InstallRuntimes( TCHAR *sProductCode, TCHAR *sRuntimePath )
 {
     INSTALLSTATE  nRet = MsiQueryProductState( sProductCode );
     OutputDebugStringFormat( TEXT( "MsiQueryProductState returned <%d>\r\n" ), nRet );
@@ -1971,7 +1991,7 @@ boolean SetupAppX::InstallRuntimes( TCHAR *sProductCode, TCHAR *sRuntimePath )
 }
 
 //--------------------------------------------------------------------------
-boolean SetupAppX::InstallRuntimes()
+boolean SetupApp::InstallRuntimes()
 {
     TCHAR *sRuntimePath = 0;
     SYSTEM_INFO siSysInfo;
@@ -2030,7 +2050,7 @@ boolean SetupAppX::InstallRuntimes()
 
 //--------------------------------------------------------------------------
 //--------------------------------------------------------------------------
-LanguageDataX::LanguageDataX( LPTSTR pData )
+LanguageData::LanguageData( LPTSTR pData )
 {
     m_nLanguageID = 0;
     m_pTransform = NULL;
@@ -2049,16 +2069,9 @@ LanguageDataX::LanguageDataX( LPTSTR pData )
 }
 
 //--------------------------------------------------------------------------
-LanguageDataX::~LanguageDataX()
+LanguageData::~LanguageData()
 {
     if ( m_pTransform ) delete [] m_pTransform;
-}
-
-//--------------------------------------------------------------------------
-//--------------------------------------------------------------------------
-SetupApp* Create_SetupAppX()
-{
-    return new SetupAppX;
 }
 
 //--------------------------------------------------------------------------
