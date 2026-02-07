@@ -46,6 +46,7 @@
 #include "strsafe.h"
 
 #include "setup.hxx"
+#include "aoo_msi.hxx"
 
 #include "resource.h"
 
@@ -79,7 +80,6 @@
 #define CMDLN_REG_ALL_MSO_TYPES TEXT( "msoreg=1" )
 #define CMDLN_REG_NO_MSO_TYPES  TEXT( "msoreg=0" )
 
-#define MSI_DLL             TEXT( "msi.dll" )
 #define ADVAPI32_DLL        TEXT( "advapi32.dll" )
 #define PROFILE_NAME        TEXT( "setup.ini" )
 
@@ -90,10 +90,8 @@
 // Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.6161
 #define PRODUCTCODE_X64     TEXT( "{5FCE6D76-F5DC-37AB-B2B8-22AB8CEDB1D4}" )
 
-#define MSIAPI_DllGetVersion     "DllGetVersion"
 #define ADVAPI32API_CheckTokenMembership "CheckTokenMembership"
 
-typedef HRESULT (CALLBACK* PFnDllGetVersion)( DLLVERSIONINFO *pdvi);
 typedef BOOL (WINAPI* PFnCheckTokenMembership)(HANDLE TokenHandle, PSID SidToCheck, PBOOL IsMember);
 
 #ifdef DEBUG
@@ -114,9 +112,6 @@ static inline void OutputDebugStringFormat( LPCTSTR, ... )
 
 //--------------------------------------------------------------------------
 
-const TCHAR sInstKey[]       = TEXT( "Software\\Microsoft\\Windows\\CurrentVersion\\Installer" );
-const TCHAR sInstLocValue[]  = TEXT( "InstallerLocation" );
-const TCHAR sMsiDll[]        = TEXT( "\\msi.dll" );
 const TCHAR sMsiExe[]        = TEXT( "\\msiexec.exe" );
 const TCHAR sDelayReboot[]   = TEXT( " /c:\"msiinst /delayreboot\"" );
 const TCHAR sMsiQuiet[]      = TEXT( " /q" );
@@ -718,83 +713,14 @@ boolean SetupApp::ChooseLanguage( long& rLanguage )
     return true;
 }
 
-//--------------------------------------------------------------------------
-HMODULE SetupApp::LoadMsiLibrary()
-{
-    HMODULE hMsi = NULL;
-    HKEY    hInstKey = NULL;
-
-    // find registered location of Msi.dll
-    if ( ERROR_SUCCESS == RegOpenKeyEx( HKEY_LOCAL_MACHINE, sInstKey, 0, KEY_READ, &hInstKey ) )
-    {
-        long    nRet = ERROR_SUCCESS;
-        TCHAR  *sMsiFolder = new TCHAR[ MAX_PATH + 1 ];
-        DWORD   dwMsiFolderSize = MAX_PATH + 1;
-        DWORD   dwType = 0;
-
-        if ( ERROR_MORE_DATA == ( nRet = RegQueryValueEx( hInstKey, sInstLocValue, NULL,
-                                                          &dwType, (BYTE*)sMsiFolder, &dwMsiFolderSize ) ) )
-        {
-            // try again with larger buffer
-            delete [] sMsiFolder;
-            sMsiFolder = new TCHAR[ dwMsiFolderSize ];
-
-            nRet = RegQueryValueEx( hInstKey, sInstLocValue, NULL, &dwType,
-                                    (BYTE*)sMsiFolder, &dwMsiFolderSize );
-        }
-
-        if ( ERROR_SUCCESS == nRet && dwType == REG_SZ && dwMsiFolderSize > 0 )
-        {
-            // load Msi.dll from registered location
-            int nLength = lstrlen( sMsiDll ) + dwMsiFolderSize + 1; // use StringCchLength ?
-            TCHAR *pMsiLocation = new TCHAR[ nLength ];
-
-            if ( SUCCEEDED( StringCchCopy( pMsiLocation, nLength, sMsiFolder ) ) &&
-                 SUCCEEDED( StringCchCat( pMsiLocation, nLength, sMsiDll ) ) )
-            {
-                hMsi = LoadLibrary( pMsiLocation );
-            }
-        }
-    }
-
-    if ( !hMsi ) // use the default location
-    {
-        hMsi = LoadLibrary( sMsiDll );
-    }
-
-    return hMsi;
-}
 
 //--------------------------------------------------------------------------
 LPCTSTR SetupApp::GetPathToMSI()
 {
     LPTSTR  sMsiPath = NULL;
     HKEY    hInstKey = NULL;
-    TCHAR  *sMsiFolder = new TCHAR[ MAX_PATH + 1 ];
+    TCHAR  *sMsiFolder = getInstallerLocation();
     DWORD   nMsiFolderSize = MAX_PATH + 1;
-
-    sMsiFolder[0] = '\0';
-
-    // find registered location of Msi.dll
-    if ( ERROR_SUCCESS == RegOpenKeyEx( HKEY_LOCAL_MACHINE, sInstKey, 0, KEY_READ, &hInstKey ) )
-    {
-        LONG    nRet = ERROR_SUCCESS;
-        DWORD   dwType = 0;
-
-        if ( ERROR_MORE_DATA == ( nRet = RegQueryValueEx( hInstKey, sInstLocValue, NULL,
-                                                          &dwType, (BYTE*)sMsiFolder, &nMsiFolderSize ) ) )
-        {
-            // try again with larger buffer
-            delete [] sMsiFolder;
-            sMsiFolder = new TCHAR[ nMsiFolderSize ];
-
-            nRet = RegQueryValueEx( hInstKey, sInstLocValue, NULL, &dwType,
-                                    (BYTE*)sMsiFolder, &nMsiFolderSize );
-        }
-
-        if ( ERROR_SUCCESS != nRet || dwType != REG_SZ || nMsiFolderSize == 0 )
-            sMsiFolder[0] = '\0';
-    }
 
     if ( sMsiFolder[0] == '\0' ) // use the default location
     {
@@ -1174,50 +1100,34 @@ void SetupApp::GetLanguageName( long nLanguage, LPTSTR sName ) const
 boolean SetupApp::CheckVersion()
 {
     boolean bRet = false;
-    HMODULE hMsi = LoadMsiLibrary();
 
     Log( TEXT( " Looking for installed MSI with version >= %s\r\n" ), m_pReqVersion );
 
-    if ( !hMsi )
-    {
-        Log( TEXT( "Error: No MSI found!\r\n" ) );
-        SetError( (UINT) ERROR_SETUP_NOT_FOUND );
-    }
-    else
-    {
-        PFnDllGetVersion pDllGetVersion = (PFnDllGetVersion) GetProcAddress( hMsi, MSIAPI_DllGetVersion );
+    DLLVERSIONINFO aInfo;
 
-        if ( pDllGetVersion )
+    aInfo.cbSize = sizeof( DLLVERSIONINFO );
+    if ( NOERROR == aoo_MsiDllGetVersion( &aInfo ) )
+    {
+	TCHAR pMsiVersion[ VERSION_SIZE ];
+	StringCchPrintf( pMsiVersion, VERSION_SIZE, TEXT("%d.%d.%4d"),
+			 aInfo.dwMajorVersion,
+			 aInfo.dwMinorVersion,
+			 aInfo.dwBuildNumber );
+	if ( _tcsncmp( pMsiVersion, m_pReqVersion, _tcslen( pMsiVersion ) ) < 0 )
         {
-            DLLVERSIONINFO aInfo;
-
-            aInfo.cbSize = sizeof( DLLVERSIONINFO );
-            if ( NOERROR == pDllGetVersion( &aInfo ) )
-            {
-                TCHAR pMsiVersion[ VERSION_SIZE ];
-                StringCchPrintf( pMsiVersion, VERSION_SIZE, TEXT("%d.%d.%4d"),
-                                 aInfo.dwMajorVersion,
-                                 aInfo.dwMinorVersion,
-                                 aInfo.dwBuildNumber );
-                if ( _tcsncmp( pMsiVersion, m_pReqVersion, _tcslen( pMsiVersion ) ) < 0 )
-                {
-                    StringCchCopy( m_pErrorText, MAX_TEXT_LENGTH, pMsiVersion );
-                    SetError( (UINT) ERROR_SETUP_TO_OLD );
-                    Log( TEXT( "Warning: Old MSI version found <%s>, update needed!\r\n" ), pMsiVersion );
-                }
-                else
-                {
-                    Log( TEXT( " Found MSI version <%s>, no update needed\r\n" ), pMsiVersion );
-                    bRet = true;
-                }
-                if ( aInfo.dwMajorVersion >= 3 )
-                    m_bSupportsPatch = true;
-                else
-                    Log( TEXT("Warning: Patching not supported! MSI-Version <%s>\r\n"), pMsiVersion );
-            }
-        }
-
-        FreeLibrary( hMsi );
+	    StringCchCopy( m_pErrorText, MAX_TEXT_LENGTH, pMsiVersion );
+	    SetError( (UINT) ERROR_SETUP_TO_OLD );
+	    Log( TEXT( "Warning: Old MSI version found <%s>, update needed!\r\n" ), pMsiVersion );
+	}
+	else
+	{
+	    Log( TEXT( " Found MSI version <%s>, no update needed\r\n" ), pMsiVersion );
+	    bRet = true;
+	}
+	if ( aInfo.dwMajorVersion >= 3 )
+	    m_bSupportsPatch = true;
+	else
+	    Log( TEXT("Warning: Patching not supported! MSI-Version <%s>\r\n"), pMsiVersion );
     }
 
     return bRet;
@@ -1872,7 +1782,7 @@ boolean SetupApp::IsPatchInstalled( TCHAR* pBaseDir, TCHAR* pFileName )
     StringCchCopy( szDatabasePath, nLen, pBaseDir );
     StringCchCat( szDatabasePath, nLen, pFileName );
 
-    UINT nRet = MsiGetSummaryInformation( NULL, szDatabasePath, 0, &hSummaryInfo );
+    UINT nRet = aoo_MsiGetSummaryInformation( NULL, szDatabasePath, 0, &hSummaryInfo );
 
     if ( nRet != ERROR_SUCCESS )
     {
@@ -1884,7 +1794,7 @@ boolean SetupApp::IsPatchInstalled( TCHAR* pBaseDir, TCHAR* pFileName )
     UINT    uiDataType;
     LPTSTR  szPatchID = new TCHAR[ 64 ];
     DWORD   cchValueBuf = 64;
-    nRet = MsiSummaryInfoGetProperty( hSummaryInfo, PID_REVNUMBER, &uiDataType, NULL, NULL, szPatchID, &cchValueBuf );
+    nRet = aoo_MsiSummaryInfoGetProperty( hSummaryInfo, PID_REVNUMBER, &uiDataType, NULL, NULL, szPatchID, &cchValueBuf );
 
     if ( nRet != ERROR_SUCCESS )
     {
@@ -1893,7 +1803,7 @@ boolean SetupApp::IsPatchInstalled( TCHAR* pBaseDir, TCHAR* pFileName )
         return false;
     }
 
-	nRet = MsiGetPatchInfo( szPatchID, INSTALLPROPERTY_LOCALPACKAGE, NULL, NULL );
+	nRet = aoo_MsiGetPatchInfo( szPatchID, INSTALLPROPERTY_LOCALPACKAGE, NULL, NULL );
 
     StringCchPrintf( sBuf, 80, TEXT("  GetPatchInfo for (%s) returned (%u)\r\n"), szPatchID, nRet );
     Log( sBuf );
@@ -1920,7 +1830,7 @@ boolean SetupApp::IsPatchInstalled( TCHAR* pBaseDir, TCHAR* pFileName )
 //--------------------------------------------------------------------------
 boolean SetupApp::InstallRuntimes( TCHAR *sProductCode, TCHAR *sRuntimePath )
 {
-    INSTALLSTATE  nRet = MsiQueryProductState( sProductCode );
+    INSTALLSTATE  nRet = aoo_MsiQueryProductState( sProductCode );
     OutputDebugStringFormat( TEXT( "MsiQueryProductState returned <%d>\r\n" ), nRet );
     if ( nRet == INSTALLSTATE_DEFAULT )
         return true;
