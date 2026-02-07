@@ -54,7 +54,7 @@ ULFDIR:=.
 .ENDIF			# "$(WITH_LANG)"!=""
 
 OBJFILES= 	$(OBJ)$/setup_main.obj \
-			$(OBJ)$/setup.obj
+			$(OBJ)$/setup.obj $(OBJ)$/aoo_msi.obj
 
 # --- Targets ------------------------------------------------------
 # Generate the native Windows resource file
@@ -66,7 +66,7 @@ LIBSALCPPRT=	$(0)
 APP1NOSAL=		TRUE
 APP1TARGET=		loader2
 
-APP1STDLIBS=	$(GDI32LIB) $(ADVAPI32LIB) $(SHELL32LIB) $(MSILIB)
+APP1STDLIBS=	$(GDI32LIB) $(ADVAPI32LIB) $(SHELL32LIB)
 .IF "$(COM)"!="GCC"
 APP1STDLIBS+=	libcmt.lib
 .ENDIF
