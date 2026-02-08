@@ -70,12 +70,12 @@ bool x86_64::return_in_hidden_param( typelib_TypeDescriptionReference *pTypeRef 
                 if ( pTypeDescr->nSize > 8 )
                 {
                     TYPELIB_DANGER_RELEASE( pTypeDescr );
-                    return false;
+                    return true;
                 }
                 else
                 {
                     TYPELIB_DANGER_RELEASE( pTypeDescr );
-                    return true;
+                    return false;
                 }
             }
 
