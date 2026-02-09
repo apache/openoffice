@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- 
+<!--
  **************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,16 +10,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************
 
 
@@ -54,19 +54,19 @@ FILTER FOR OPENOFFICE.ORG 2+
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" office:version="1.0">
 
 	<xsl:param name="filename" select="/helpdocument/meta/topic/filename"/>
-		
+
 	<xsl:param name="imgmodule">
 		<xsl:if test="starts-with($filename,'/text/')">
 			<xsl:value-of select="'default_images/'"/>
 		</xsl:if>
 	</xsl:param>
-	
+
 	<xsl:param name="dirlevel">
 		<xsl:call-template name="getdepth">
 			<xsl:with-param name="filename" select="$filename"/>
 		</xsl:call-template>
 	</xsl:param>
-	
+
 	<xsl:variable name="imgreldir">
 		<xsl:if test="starts-with($filename,'/text/')">
 			<xsl:call-template name="getreldir">
@@ -74,12 +74,12 @@ FILTER FOR OPENOFFICE.ORG 2+
 			</xsl:call-template>
 		</xsl:if>
 	</xsl:variable>
-	
+
 	<xsl:variable name="imgroot" select="concat($imgreldir,$imgmodule)"/>
 
 <!--
 #############################################################################
- 
+
 	OOo 2 Help Format Input Filter Stylesheet
 	==================================================================
 
@@ -105,20 +105,20 @@ FILTER FOR OPENOFFICE.ORG 2+
 	</xsl:variable>
 
 	<xsl:template match="/">
-	
+
 		<office:document>
 			<office:meta>
 				<meta:generator>OpenOffice.org Import Filter</meta:generator>
-		
+
 				<dc:title>
 					<xsl:value-of select="/helpdocument/meta/topic/title"/>
 				</dc:title>
-				
+
 				<dc:subject>
 					<xsl:value-of select="/helpdocument/meta/topic/filename"/>
 				</dc:subject>
-				
-				<meta:creation-date>					
+
+				<meta:creation-date>
 				<!-- REMOVED DUE TO PROBLEMS WITH CVS MERGE CONFLICTS
 					<xsl:value-of select="/helpdocument/meta/history/created/@date"/>
 				//-->
@@ -129,33 +129,33 @@ FILTER FOR OPENOFFICE.ORG 2+
 					<xsl:value-of select="/helpdocument/meta/history/lastedited/@date"/>
 				//-->
 				</dc:date>
-		
+
 				<dc:language>
 					<xsl:value-of select="article/@lang"/>
 				</dc:language>
-		
+
 				<meta:keywords>
 					<meta:keyword>
 						<xsl:value-of select="/helpdocument/meta/topic/@status"/>
 					</meta:keyword>
 				</meta:keywords>
-		
+
 				<meta:editing-cycles>1</meta:editing-cycles>
 				<meta:editing-duration>P0DT0H0M1S</meta:editing-duration>
-		
+
 				<meta:user-defined meta:name="Indexer">
 					<xsl:value-of select="/helpdocument/meta/topic/@indexer"/>
 				</meta:user-defined>
-		
+
 				<meta:user-defined meta:name="ID">
 					<xsl:value-of select="/helpdocument/meta/topic/@id"/>
 				</meta:user-defined>
-		
-		
-		
+
+
+
 				<meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="1" meta:paragraph-count="0" meta:word-count="0" meta:character-count="0"/>
 			</office:meta>
-	
+
 			<office:scripts>
 			  <office:event-listeners>
 					<xsl:element name="script:event-listener">
@@ -175,7 +175,7 @@ FILTER FOR OPENOFFICE.ORG 2+
 					</xsl:element>
 				</office:event-listeners>
 			</office:scripts>
-	
+
 			<office:font-face-decls>
   <style:font-face style:name="Monospace" svg:font-family="Monospace" style:font-adornments="Regular"/>
   <style:font-face style:name="Sans-Serif" svg:font-family="Sans-Serif" style:font-adornments="Regular"/>
@@ -187,7 +187,7 @@ FILTER FOR OPENOFFICE.ORG 2+
   <style:font-face style:name="Thorndale" svg:font-family="Thorndale" style:font-family-generic="roman" style:font-pitch="variable"/>
  </office:font-face-decls>
 
- 
+
 			<office:styles>
 				<xsl:call-template name="createstyles"/>
 			</office:styles>
@@ -195,27 +195,27 @@ FILTER FOR OPENOFFICE.ORG 2+
 			<office:automatic-styles>
 				<xsl:call-template name="createautostyles"/>
 			</office:automatic-styles>
-			
+
 			<office:master-styles>
 			</office:master-styles>
-	
+
 			<office:body>
-				
+
 				<xsl:call-template name="createvariablesets"/>
 				<xsl:apply-templates select="helpdocument/body" />
-				
-	
+
+
 			</office:body>
-	
+
 		</office:document>
 	</xsl:template>
 
-<!-- 
-###################################################### 
-AHELP 
+<!--
+######################################################
+AHELP
 	+ hid CDATA #REQUIRED
   + visibility (hidden | visible) #IMPLIED
-###################################################### 
+######################################################
 -->
 
 	<xsl:template match="ahelp">
@@ -249,13 +249,13 @@ AHELP
 		</xsl:choose>
 	</xsl:template>
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 ALT
   o xml-lang CDATA #REQUIRED (is always en-US for the source)
   + id CDATA #REQUIRED (is the same as for theimage except for "alt_"
-  + localize CDATA #IMPLIED 
-###################################################### 
+  + localize CDATA #IMPLIED
+######################################################
 -->
 
 	<xsl:template match="alt">
@@ -271,11 +271,11 @@ ALT
 		</svg:title>
 	</xsl:template>
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 BODY, SEE HEADER
   # localize CDATA #IMPLIED
-###################################################### 
+######################################################
 -->
 <xsl:template match="body">
 	<office:text>
@@ -283,14 +283,14 @@ BODY, SEE HEADER
 	</office:text>
 </xsl:template>
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 BOOKMARK
   + branch CDATA #REQUIRED
   o xml-lang CDATA #REQUIRED (is always en-US for the source)
   + id CDATA #REQUIRED
-  + localize CDATA #IMPLIED 
-###################################################### 
+  + localize CDATA #IMPLIED
+######################################################
 -->
 	<xsl:template match="bookmark[starts-with(@branch,'hid')]">
 		<xsl:choose>
@@ -349,10 +349,10 @@ BOOKMARK
 		</xsl:choose>
 	</xsl:template>
 
-<!-- 
-###################################################### 
-BOOKMARK_VALUE 
-###################################################### 
+<!--
+######################################################
+BOOKMARK_VALUE
+######################################################
 -->
 	<xsl:template match="bookmark_value">
 		<text:line-break />
@@ -371,32 +371,32 @@ BOOKMARK_VALUE
 		</text:span>
 	</xsl:template>
 
-<!-- 
-###################################################### 
-BR 
-###################################################### 
+<!--
+######################################################
+BR
+######################################################
 -->
 	<xsl:template match="br">
 		<text:line-break/>
 	</xsl:template>
 
-<!-- 
-###################################################### 
-CAPTION 
+<!--
+######################################################
+CAPTION
   o xml-lang CDATA #REQUIRED (is always en-US for the source)
   + id CDATA #REQUIRED   (in parent elements)
   + localize CDATA #IMPLIED (in parent elements)
-###################################################### 
+######################################################
 -->
 	<xsl:template match="caption">
 		<xsl:apply-templates />
 	</xsl:template>
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 CASE
   + select CDATA #REQUIRED
-###################################################### 
+######################################################
 -->
 	<xsl:template match="case">
 		<text:p text:style-name="hlp_aux_switch">
@@ -418,11 +418,11 @@ CASE
 		</text:p>
 	</xsl:template>
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 CASEINLINE
-  + select CDATA #REQUIRED 
-###################################################### 
+  + select CDATA #REQUIRED
+######################################################
 -->
 	<xsl:template match="caseinline">
 		<text:span text:style-name="hlp_aux_tag">
@@ -438,10 +438,10 @@ CASEINLINE
 		</text:span>
 	</xsl:template>
 
-<!-- 
-###################################################### 
-COMMENT 
-###################################################### 
+<!--
+######################################################
+COMMENT
+######################################################
 -->
 	<xsl:template match="comment">
 		<xsl:choose>
@@ -485,18 +485,18 @@ COMMENT
 		</xsl:choose>
 	</xsl:template>
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 CREATED,  SEE HEADER
   + date CDATA #REQUIRED
-###################################################### 
+######################################################
 -->
 	<xsl:template match="created" />
 
-<!-- 
-###################################################### 
-DEFAULT 
-###################################################### 
+<!--
+######################################################
+DEFAULT
+######################################################
 -->
 	<xsl:template match="default">
 		<text:p text:style-name="hlp_aux_switch">
@@ -518,10 +518,10 @@ DEFAULT
 		</text:p>
 	</xsl:template>
 
-<!-- 
-###################################################### 
-DEFAULTINLINE 
-###################################################### 
+<!--
+######################################################
+DEFAULTINLINE
+######################################################
 -->
 	<xsl:template match="defaultinline">
 		<text:span text:style-name="hlp_aux_tag">
@@ -537,20 +537,20 @@ DEFAULTINLINE
 		</text:span>
 	</xsl:template>
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 EMBED
 	+ href CDATA #REQUIRED
   + role CDATA #IMPLIED
   + level CDATA #IMPLIED
-###################################################### 
+######################################################
 -->
 	<xsl:template match="embed">
 		<xsl:variable name="embed" select="concat('embed file=&quot;',@href,'&quot; role=&quot;',@role,'&quot; level=&quot;',@level,'&quot;')" />
 		<text:p text:style-name="hlp_aux_embed">
 			<xsl:variable name="href" select="substring-before(@href,'#')"/>
 			<text:span text:style-name="hlp_aux_tag">
-	
+
 				<text:variable-set text:name="EMBED" text:value-type="string">
 					<xsl:value-of select="concat('&lt;EMBED href=&quot;',@href,'&quot;')"/>
 					<xsl:if test="@role">
@@ -561,24 +561,24 @@ EMBED
 					</xsl:if>
 					<xsl:value-of select="'&gt;'"/>
 				</text:variable-set>
-	
-	
+
+
 			</text:span>
 		</text:p>
 	</xsl:template>
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 EMBEDVAR
  + href CDATA #REQUIRED
  + markup (keep | ignore) #IMPLIED
-###################################################### 
+######################################################
 -->
 	<xsl:template match="embedvar">
 		<xsl:variable name="embed" select="concat('embedvar var=&quot;',@href,'&quot; markup=&quot;',@markup,'&quot;')" />
 		<xsl:variable name="href" select="@href"/>
 		<text:span text:style-name="hlp_aux_tag">
-	
+
 			<text:variable-set text:name="EMBEDVAR" text:value-type="string">
 				<xsl:value-of select="concat('&lt;EMBEDVAR var=&quot;',@href,'&quot;')"/>
 				<xsl:if test="@markup">
@@ -589,10 +589,10 @@ EMBEDVAR
 		</text:span>
 	</xsl:template>
 
-<!-- 
-###################################################### 
-EMPH 
-###################################################### 
+<!--
+######################################################
+EMPH
+######################################################
 -->
 	<xsl:template match="emph">
 		<text:span text:style-name="hlp_emph">
@@ -600,40 +600,40 @@ EMPH
 		</text:span>
 	</xsl:template>
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 FILENAME,  SEE HEADER
-###################################################### 
+######################################################
 -->
 	<xsl:template match="filename" />
 
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 HELPDOCUMENT,  SEE HEADER
   + version CDATA #REQUIRED
-###################################################### 
+######################################################
 -->
 <!-- <xsl:template match="helpdocument" /> -->
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 HISTORY,  SEE HEADER
-###################################################### 
+######################################################
 -->
 <!-- REMOVED DUE TO PROBLEMS WITH CVS MERGE CONFLICTS
 	<xsl:template match="history" />
 //-->
 
 
-<!-- 
-###################################################### 
-IMAGE 
+<!--
+######################################################
+IMAGE
   + s rc CDATA #REQUIRED
   + width CDATA #IMPLIED
   + height CDATA #IMPLIED
   + id CDATA #REQUIRED
-###################################################### 
+######################################################
 -->
 	<xsl:template match="image">
 		<xsl:variable name="src" select="concat($imgroot,@src)" />
@@ -664,25 +664,25 @@ IMAGE
 						<draw:image xlink:href="{$src}" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" />
 						<xsl:apply-templates select="alt"/>
 					</draw:frame>
-								
+
 					<xsl:if test="caption">
 						<text:span text:style-name="hlp_aux_tag">
 							<text:variable-set text:name="IMGCAPTION_" text:value-type="string">
 								<xsl:value-of select="concat('&lt;IMGCAPTION ID=&quot;',caption/@id,'&quot; LOCALIZE=&quot;',caption/@localize,'&quot;&gt;')"/>
 							</text:variable-set>
 						</text:span>
-									
+
 						<text:span text:style-name="hlp_aux_imgcaption">
 							<xsl:apply-templates select="caption"/>
 						</text:span>
-									
+
 						<text:span text:style-name="hlp_aux_tag">
 							<text:variable-set text:name="_IMGCAPTION" text:value-type="string">
 								<xsl:value-of select="'&lt;/IMGCAPTION&gt;'"/>
 							</text:variable-set>
 						</text:span>
 					</xsl:if>
-								
+
 					<text:span text:style-name="hlp_aux_tag">
 						<text:variable-set text:name="_IMG" text:value-type="string">
 							<xsl:value-of select="'&lt;/IMG&gt;'"/>
@@ -696,7 +696,7 @@ IMAGE
 						<xsl:value-of select="concat('&lt;IMG ID=&quot;',@id,'&quot;&gt;')"/>
 					</text:variable-set>
 				</text:span>
-							
+
 				<xsl:variable name="localize_img">
 					<xsl:choose>
 						<xsl:when test="@localize">
@@ -707,7 +707,7 @@ IMAGE
 						</xsl:otherwise>
 					</xsl:choose>
 				</xsl:variable>
-							
+
 				<draw:frame draw:name="{@id}{$localize_img}" text:anchor-type="as-char" draw:filter-name="&lt;All formats&gt;">
 					<xsl:if test="@height">
 						<xsl:attribute name="svg:height">
@@ -727,25 +727,25 @@ IMAGE
 					<draw:image xlink:href="{$src}" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad"/>
 					<xsl:apply-templates select="alt"/>
 				</draw:frame>
-								
+
 				<xsl:if test="caption">
 					<text:span text:style-name="hlp_aux_tag">
 						<text:variable-set text:name="IMGCAPTION_" text:value-type="string">
 							<xsl:value-of select="concat('&lt;IMGCAPTION ID=&quot;',caption/@id,'&quot; LOCALIZE=&quot;',caption/@localize,'&quot;&gt;')"/>
 						</text:variable-set>
 					</text:span>
-									
+
 					<text:span text:style-name="hlp_aux_imgcaption">
 						<xsl:apply-templates select="caption"/>
 					</text:span>
-									
+
 					<text:span text:style-name="hlp_aux_tag">
 						<text:variable-set text:name="_IMGCAPTION" text:value-type="string">
 							<xsl:value-of select="'&lt;/IMGCAPTION&gt;'"/>
 						</text:variable-set>
 					</text:span>
 				</xsl:if>
-								
+
 				<text:span text:style-name="hlp_aux_tag">
 					<text:variable-set text:name="_IMG" text:value-type="string">
 						<xsl:value-of select="'&lt;/IMG&gt;'"/>
@@ -756,11 +756,11 @@ IMAGE
 
 	</xsl:template>
 
-<!-- 
-###################################################### 
-ITEM 
+<!--
+######################################################
+ITEM
   + type CDATA #REQUIRED
-###################################################### 
+######################################################
 -->
 	<xsl:template match="item">
 		<xsl:variable name="style">
@@ -771,22 +771,22 @@ ITEM
 		</text:span>
 	</xsl:template>
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 LASTEDITED,  SEE HEADER
   + date CDATA #REQUIRED
-###################################################### 
+######################################################
 -->
 	<xsl:template match="lastedited" />
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 LINK
   + href CDATA #REQUIRED
   + name CDATA #REQUIRED
   + type CDATA #IMPLIED
   + target CDATA #IMPLIED
-###################################################### 
+######################################################
 -->
 	<xsl:template match="link">
 		<xsl:variable name="href">
@@ -823,8 +823,8 @@ LINK
 
 	</xsl:template>
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 LIST
   + type CDATA #REQUIRED
   + startwith CDATA #IMPLIED
@@ -832,7 +832,7 @@ LIST
   # bullet (disc | circle | square) #IMPLIED
   # localize CDATA #IMPLIED
   # sorted (asc | desc) #IMPLIED
-###################################################### 
+######################################################
 -->
 	<xsl:template match="list">
 		<xsl:choose>
@@ -854,14 +854,14 @@ LIST
 		</xsl:choose>
 	</xsl:template>
 
-<!-- 
-###################################################### 
-LISTITEM 
+<!--
+######################################################
+LISTITEM
   # format (1 | i | I | a | A) #IMPLIED
   # bullet (disc | circle | square) #IMPLIED
   # localize CDATA #IMPLIED
   # class CDATA #IMPLIED
-###################################################### 
+######################################################
 -->
 	<xsl:template match="listitem">
 		<text:list-item>
@@ -874,22 +874,22 @@ LISTITEM
 		</text:list-item>
 	</xsl:template>
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 META, SEE HEADER
-###################################################### 
+######################################################
 -->
 	<xsl:template match="meta" />
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 OBJECT
   + type CDATA #REQUIRED
   + id CDATA #REQUIRED
   + data CDATA #REQUIRED
   + height CDATA #IMPLIED
   + width CDATA #IMPLIED
-###################################################### 
+######################################################
 -->
 	<xsl:template match="object">
 		<xsl:choose>
@@ -915,9 +915,9 @@ OBJECT
 		</xsl:choose>
 	</xsl:template>
 
-<!-- 
-###################################################### 
-PARAGRAPH 
+<!--
+######################################################
+PARAGRAPH
   + role CDATA #REQUIRED
   + level CDATA #IMPLIED
   + id CDATA #REQUIRED
@@ -925,17 +925,17 @@ PARAGRAPH
   o xml-lang CDATA #REQUIRED (is always en-US for the source)
   + oldref CDATA #IMPLIED
   + localize CDATA #IMPLIED
-###################################################### 
+######################################################
 -->
 	<xsl:template match="paragraph">
 		<xsl:choose>
 			<xsl:when test="@role='heading'">
 				<xsl:variable name="style" select="concat('hlp_head',@level)" />
 				<text:h text:style-name="{$style}" text:outline-level="{@level}"> <!-- fixed text:level bug, must be text:outline-level -->
-			
+
 					<xsl:variable name="tagstyle">
 						<xsl:choose>
-						
+
 							<xsl:when test="@l10n='NEW' or @l10n='CHG'">
 								<xsl:value-of select="'hlp_aux_parachanged'"/>
 							</xsl:when>
@@ -944,8 +944,8 @@ PARAGRAPH
 							</xsl:otherwise>
 						</xsl:choose>
 					</xsl:variable>
-			
-					
+
+
 					<text:span text:style-name="{$tagstyle}">
 						<text:variable-set text:name="ID" text:value-type="string" text:display="none">
 							<xsl:choose>
@@ -969,11 +969,11 @@ PARAGRAPH
 							//-->
 						</text:variable-set>
 					</text:span>
-					
+
 					<xsl:apply-templates />
 				</text:h>
 			</xsl:when>
-		
+
 			<xsl:otherwise>
 				<xsl:variable name="style" select="concat('hlp_',@role)" />
 				<text:p text:style-name="{$style}">
@@ -987,7 +987,7 @@ PARAGRAPH
 							</xsl:otherwise>
 						</xsl:choose>
 					</xsl:variable>
-					
+
 					<text:span text:style-name="{$tagstyle}">
 						<text:variable-set text:name="ID" text:value-type="string" text:display="none">
 						<xsl:choose>
@@ -1011,19 +1011,19 @@ PARAGRAPH
 							//-->
 						</text:variable-set>
 					</text:span>
-					
+
 					<xsl:apply-templates />
 				</text:p>
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 SECTION
   + id CDATA #REQUIRED
-  + localize CDATA #IMPLIED 
-###################################################### 
+  + localize CDATA #IMPLIED
+######################################################
 -->
 	<xsl:template match="section"> <!-- some files contain 2 equal sections cascaded (bug) -->
 		<xsl:variable name="id1" select="@id" />
@@ -1063,11 +1063,11 @@ SECTION
 		</xsl:choose>
 	</xsl:template>
 
-<!-- 
-###################################################### 
-SORT 
+<!--
+######################################################
+SORT
   + order (asc | desc) #IMPLIED
-###################################################### 
+######################################################
 -->
 	<xsl:template match="sort">
 		<text:p text:style-name="hlp_aux_sort">
@@ -1089,12 +1089,12 @@ SORT
 		</text:p>
 	</xsl:template>
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 SWITCH
   + select (sys | appl | distrib ) #REQUIRED
   + localize CDATA #IMPLIED
-###################################################### 
+######################################################
 -->
 	<xsl:template match="switch">
 		<text:p text:style-name="hlp_aux_switch">
@@ -1116,11 +1116,11 @@ SWITCH
 		</text:p>
 	</xsl:template>
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 SWITCHINLINE
   + select (sys | appl | distrib | target | ver | lang) #REQUIRED
-###################################################### 
+######################################################
 -->
 	<xsl:template match="switchinline">
 		<text:span text:style-name="hlp_aux_tag">
@@ -1136,8 +1136,8 @@ SWITCHINLINE
 		</text:span>
 	</xsl:template>
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 TABLE
   + name CDATA #IMPLIED
   + width CDATA #IMPLIED
@@ -1146,30 +1146,30 @@ TABLE
   + class CDATA #IMPLIED
   + id CDATA #REQUIRED
   + localize CDATA #IMPLIED
-###################################################### 
+######################################################
 -->
 	<xsl:template match="table">
 		<xsl:variable name="maxcols">
 			<xsl:value-of select="count(tablerow[1]/tablecell)" />	<!-- colspan for first row unsupported! -->
 		</xsl:variable>
-	
+
 		<xsl:variable name="id">
 			<xsl:value-of select="@id"/>
 		</xsl:variable>
-	
+
 		<table:table table:name="{$id}" table:style-name="hlp_table">
 			<table:table-column table:number-columns-repeated="{$maxcols}"/>
 			<xsl:apply-templates />
 		</table:table>
 		<xsl:if test="caption">
 			<text:p text:style-name="hlp_aux_tablecaption">
-			
+
 				<text:span text:style-name="hlp_aux_tag">
 					<text:variable-set text:name="CAPTION_" text:value-type="string">
 						<xsl:value-of select="concat('&lt;CAPTION ID=&quot;',caption/@id,'&quot; LOCALIZE=&quot;',caption/@localize,'&quot;&gt;')"/>
 					</text:variable-set>
 				</text:span>
-			
+
 				<xsl:apply-templates select="caption"/>
 				<text:span text:style-name="hlp_aux_tag">
 					<text:variable-set text:name="_CAPTION" text:value-type="string">
@@ -1181,8 +1181,8 @@ TABLE
 		</xsl:if>
 	</xsl:template>
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 TABLECELL
   + colspan CDATA #IMPLIED
   + rowspan CDATA #IMPLIED
@@ -1190,7 +1190,7 @@ TABLECELL
   # class CDATA #IMPLIED
   # unit CDATA #IMPLIED
   # localize CDATA #IMPLIED
-###################################################### 
+######################################################
 -->
 	<xsl:template match="tablecell">
 		<table:table-cell>
@@ -1208,14 +1208,14 @@ TABLECELL
 		</table:table-cell>
 	</xsl:template>
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 TABLEROW
   # height CDATA #IMPLIED
   # class CDATA #IMPLIED
   # unit CDATA #IMPLIED
   # localize CDATA #IMPLIED
-###################################################### 
+######################################################
 -->
 	<xsl:template match="tablerow">
 		<table:table-row>
@@ -1223,31 +1223,31 @@ TABLEROW
 		</table:table-row>
 	</xsl:template>
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 TITLE,  SEE HEADER
   o xml-lang CDATA #REQUIRED (is always en-US for the source)
   o id CDATA #REQUIRED (is always tit for the title)
   # localize CDATA #IMPLIED
-###################################################### 
+######################################################
 -->
 	<xsl:template match="title"/>
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 TOPIC,  SEE HEADER
   + id CDATA #REQUIRED
-  + indexer (exclude | include) #IMPLIED 
-###################################################### 
+  + indexer (exclude | include) #IMPLIED
+######################################################
 -->
 	<xsl:template match="topic"/>
 
-<!-- 
-###################################################### 
-VARIABLE 
+<!--
+######################################################
+VARIABLE
   + id CDATA #REQUIRED
   + visibility (hidden | visible) #IMPLIED
-###################################################### 
+######################################################
 -->
 	<xsl:template match="variable">
 		<text:span text:style-name="hlp_aux_tag">
@@ -1314,11 +1314,11 @@ VARIABLE
 		</text:variable-decls>
 	</xsl:template>
 
-<!-- 
-###################################################### 
+<!--
+######################################################
 -->
 
-<!-- 
+<!--
 CREATESTYLES
 -->
 	<xsl:template name="createstyles">
@@ -1326,7 +1326,7 @@ CREATESTYLES
 		<style:default-style style:family="paragraph">
 			<style:properties fo:language="en" fo:country="US"/>
 		</style:default-style>
-	
+
 		<xsl:for-each select="//list[@startwith &gt; '1']">
 			<xsl:variable name="style">
 				<xsl:value-of select="concat('hlp_List',@startwith)"/>
@@ -1335,7 +1335,7 @@ CREATESTYLES
 				<text:list-level-style-number text:level="1" text:style-name="Numbering Symbols" style:num-suffix="." style:num-format="1" text:start-value="{@startwith}" />
 			</text:list-style>
 		</xsl:for-each>
-	
+
 		<xsl:for-each select="//item">
 			<xsl:if test="not(contains($defaultcharstyles,@type))">
 				<xsl:variable name="style">
@@ -1351,7 +1351,7 @@ CREATESTYLES
 				</xsl:element>
 			</xsl:if>
 		</xsl:for-each>
-	
+
 		<xsl:for-each select="//paragraph">
 	<!--
 		<xsl:if test="not(contains($defaultpararoles,@role))">
@@ -1374,7 +1374,7 @@ CREATESTYLES
 		</xsl:if>
 		//-->
 		</xsl:for-each>
-	
+
 		<xsl:for-each select="//paragraph[@role='heading']">
 			<xsl:variable name="style">
 				<xsl:value-of select="concat('hlp_head',@level)"/>
@@ -1391,7 +1391,7 @@ CREATESTYLES
 				</xsl:attribute>
 			</xsl:element>
 		</xsl:for-each>
-	
+
 
 <!-- include all style definitions (template is not working) -->
 
@@ -1931,12 +1931,12 @@ CREATESTYLES
 		</xsl:otherwise>
 	</xsl:choose>
 </xsl:template>
-	
+
 <xsl:template name="getdepth">
 	<xsl:param name="filename" select="''"/>
 	<xsl:value-of select="string-length($filename)-string-length(translate($filename,'/',''))"/>
 </xsl:template>
 
-	
+
 
 </xsl:stylesheet>

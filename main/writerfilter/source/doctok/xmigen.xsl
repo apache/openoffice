@@ -1,5 +1,5 @@
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,20 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
-<xsl:stylesheet version="1.0" 
-		xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
-		xmlns:UML = 'org.omg.xmi.namespace.UML' 
+<xsl:stylesheet version="1.0"
+		xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+		xmlns:UML = 'org.omg.xmi.namespace.UML'
 		xml:space="default">
   <xsl:output method="xml"/>
 
@@ -52,7 +52,7 @@
       <xsl:when test="following-sibling::*">
 	<xsl:for-each select="following-sibling::*[1]">
 	  <xsl:call-template name="calcsizeinner">
-	    <xsl:with-param name="size" 
+	    <xsl:with-param name="size"
 			    select="number($size) + number($mysize)"/>
 	  </xsl:call-template>
 	</xsl:for-each>
@@ -257,7 +257,7 @@
 	  </UML:TagDefinition>
 	</UML:TaggedValue.type>
       </UML:TaggedValue>
-    </UML:ModelElement.taggedValue>    
+    </UML:ModelElement.taggedValue>
   </xsl:template>
 
   <xsl:template match="attribute">
@@ -289,7 +289,7 @@
 	  <xsl:with-param name="value"></xsl:with-param>
 	</xsl:call-template>
 	<xsl:call-template name="taggedvalue">
-	  <xsl:with-param name="type">attrid</xsl:with-param>	  
+	  <xsl:with-param name="type">attrid</xsl:with-param>
 	  <xsl:with-param name="value">
 	    <xsl:choose>
 	      <xsl:when test="@token">
@@ -522,7 +522,7 @@
 	      </xsl:when>
 	      <xsl:otherwise>
 		<xsl:text>rtf:</xsl:text>
-		<xsl:value-of select="@name"/>		
+		<xsl:value-of select="@name"/>
 	      </xsl:otherwise>
 	    </xsl:choose>
 	  </xsl:with-param>
@@ -533,7 +533,7 @@
 	    <xsl:with-param name="value">
 	      <xsl:value-of select="@array-count"/>
 	    </xsl:with-param>
-	  </xsl:call-template>	  
+	  </xsl:call-template>
 	</xsl:if>
 	<UML:BehavioralFeature.parameter>
 	  <UML:Parameter kind="return" name="return">

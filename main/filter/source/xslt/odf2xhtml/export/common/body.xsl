@@ -172,7 +172,7 @@
 			</xsl:choose>
 		</xsl:attribute>
 	</xsl:template>
-		
+
 	<xsl:template match="text:sequence">
 		<xsl:param name="globalData"/>
 

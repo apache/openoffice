@@ -1,5 +1,5 @@
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,20 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"  
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
                 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:UML = 'org.omg.xmi.namespace.UML' xml:space="default">
   <xsl:output method="text" />
 
@@ -28,7 +28,7 @@
     <out xml:space="preserve">
       <xsl:text>
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -36,18 +36,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-/*      
+/*
 
   THIS FILE IS GENERATED AUTOMATICALLY! DO NOT EDIT!
 
@@ -96,7 +96,7 @@ bool isBooleanDffOpt(sal_uInt32 nId);
 }}
 #endif // INCLUDED_RESOURCES_HXX&#xa;</xsl:text></out>
 </xsl:template>
-  
+
   <xsl:template match="UML:Class" mode="class">
     <xsl:choose>
       <xsl:when test='.//UML:Stereotype[@xmi.idref = "ww8resource"]'>
@@ -193,8 +193,8 @@ class </xsl:text>
     </xsl:text>
     <xsl:value-of select="$classname"/>
     <xsl:text>(
-        WW8Stream &amp; rStream, 
-        sal_uInt32 nOffset = 0, 
+        WW8Stream &amp; rStream,
+        sal_uInt32 nOffset = 0,
         sal_uInt32 nCount = </xsl:text>
     <xsl:value-of select='$size'/>
     <xsl:text>)
@@ -211,7 +211,7 @@ class </xsl:text>
     <xsl:value-of select="$classname"/>
     <xsl:text>(
         WW8StructBase * pParent,
-        sal_uInt32 nOffset = 0, 
+        sal_uInt32 nOffset = 0,
         sal_uInt32 nCount = </xsl:text>
         <xsl:value-of select='$size'/>
         <xsl:text>)
@@ -245,8 +245,8 @@ class </xsl:text>
     </xsl:text>
     <xsl:value-of select="$classname"/>
     <xsl:text>(
-        const Sequence &amp; 
-        rSequence, sal_uInt32 nOffset = 0, 
+        const Sequence &amp;
+        rSequence, sal_uInt32 nOffset = 0,
         sal_uInt32 nCount = </xsl:text>
         <xsl:value-of select='$size'/>
         <xsl:text>)
@@ -293,8 +293,8 @@ class </xsl:text>
       <xsl:text>
     /**
         Calculate actual size.
-    */  
-    sal_uInt32 calcSize(); 
+    */
+    sal_uInt32 calcSize();
       </xsl:text>
     </xsl:if>
     <xsl:if test='.//UML:Stereotype[@xmi.idref ="plcf"]'>
@@ -342,7 +342,7 @@ class </xsl:text>
     sal_uInt32 getPayloadSize(sal_uInt32 nIndex) const
     {
     return payloadOffsets[nIndex + 1] - payloadOffsets[nIndex];
-    }  
+    }
 
 
     /**
@@ -366,19 +366,19 @@ class </xsl:text>
       </xsl:text>
     </xsl:if>
     <xsl:if test='.//UML:Stereotype[@xmi.idref ="ww8sprm"]'>
-      <xsl:variable name='propsreftype'>writerfilter::Reference &lt; Properties &gt;::Pointer_t</xsl:variable>      
+      <xsl:variable name='propsreftype'>writerfilter::Reference &lt; Properties &gt;::Pointer_t</xsl:variable>
       <xsl:text>    /**
       Return reference to properties of Sprm.
     */
       </xsl:text>
       <xsl:value-of select='$propsreftype'/>
       <xsl:text> getProps()
-    { 
+    {
         return </xsl:text>
         <xsl:value-of select='$propsreftype'/>
         <xsl:text> (new </xsl:text>
         <xsl:value-of select='$classname'/>
-        <xsl:text>(*this)); 
+        <xsl:text>(*this));
     }
         </xsl:text>
     </xsl:if>
@@ -413,7 +413,7 @@ class </xsl:text>
   };
     </xsl:text>
   </xsl:template>
-  
+
 <xsl:template match='UML:Class' mode='declsProperties'>
   <xsl:choose>
     <xsl:when test='.//UML:Stereotype[@xmi.idref ="withmembers"]'>
@@ -493,10 +493,10 @@ class </xsl:text>
       <xsl:with-param name='type'><xsl:value-of select="$type"/></xsl:with-param>
     </xsl:call-template>
   </xsl:variable>
-  
+
     /**
         <xsl:value-of select='.//UML:TaggedValue[.//UML:TagDefinition/@xmi.idref="comment"]/UML:TaggedValue.dataValue'/>
-        
+
         &lt;table&gt;
         &lt;tr&gt;
         &lt;th&gt;
@@ -532,7 +532,7 @@ class </xsl:text>
         &lt;/tr&gt;
         &lt;/table&gt;
         */
-        
+
 <xsl:choose>
   <xsl:when test='$stereotype = "attribute"'>
     <xsl:if test='././/UML:Stereotype[@xmi.idref="virtual"]'>
@@ -544,7 +544,7 @@ class </xsl:text>
       <xsl:text>
         clog &lt;&lt; "&lt;called&gt;</xsl:text>
       <xsl:value-of select="@name"/>
-      <xsl:text>&lt;/called&gt;" 
+      <xsl:text>&lt;/called&gt;"
         &lt;&lt; endl;&#xa;
       </xsl:text>
     </xsl:if>
@@ -788,7 +788,7 @@ class </xsl:text>
   <xsl:text>Dff</xsl:text><xsl:value-of select="@name"/>
   </xsl:variable>
   <xsl:text>
-/** 
+/**
     Automaticallay generated class:
   </xsl:text>
   <xsl:value-of select="$classname"/>
@@ -828,7 +828,7 @@ public:
     virtual DffRecord * clone() const { return new </xsl:text>
     <xsl:value-of select="$classname"/>
     <xsl:text>(*this); }&#xa;
-    virtual string getType() const 
+    virtual string getType() const
     {
         return "</xsl:text>
         <xsl:value-of select="$classname"/>
@@ -850,7 +850,7 @@ public:
   <xsl:text>DffOpt</xsl:text><xsl:value-of select="@name"/>
   </xsl:variable>
   <xsl:text>
-/** 
+/**
     Automaticallay generated class:
   </xsl:text>
   <xsl:value-of select="$classname"/>
@@ -873,7 +873,7 @@ class </xsl:text>
 
      <xsl:text>
 };
-</xsl:text> 
+</xsl:text>
 -->
 </xsl:template>
 

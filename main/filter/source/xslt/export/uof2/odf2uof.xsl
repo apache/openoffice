@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!--/************************************************************** *  
-* Licensed to the Apache Software Foundation (ASF) under one 
-* or more contributor license agreements.  See the NOTICE file 
-* distributed with this work for additional information 
-* regarding copyright ownership.  The ASF licenses this file 
-* to you under the Apache License, Version 2.0 (the 
-* "License"); you may not use this file except in compliance 
-* with the License.  You may obtain a copy of the License at 
-*  
-*   http://www.apache.org/licenses/LICENSE-2.0 
-*  
-* Unless required by applicable law or agreed to in writing, 
-* software distributed under the License is distributed on an 
-* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY 
-* KIND, either express or implied.  See the License for the 
-* specific language governing permissions and limitations 
-* under the License.  *  
+<!--/************************************************************** *
+* Licensed to the Apache Software Foundation (ASF) under one
+* or more contributor license agreements.  See the NOTICE file
+* distributed with this work for additional information
+* regarding copyright ownership.  The ASF licenses this file
+* to you under the Apache License, Version 2.0 (the
+* "License"); you may not use this file except in compliance
+* with the License.  You may obtain a copy of the License at
+*
+*   http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing,
+* software distributed under the License is distributed on an
+* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+* KIND, either express or implied.  See the License for the
+* specific language governing permissions and limitations
+* under the License.  *
 *************************************************************/-->
  <!--MARKER(update_precomp.py): autogen include statement, do not remove-->
  <!--This file is about the conversion of the UOF v2.0 and ODF document format-->
@@ -100,7 +100,7 @@
 			<pzip:target pzip:path="uof.xml">
 				<uof:UOF_0000 language_0002="cn" version_0003="2.0">
 					<xsl:attribute name="mimetype_0001"><xsl:choose><xsl:when test="$documentType='presentation'">vnd.uof.presentation</xsl:when><xsl:when test="$documentType='spreadsheet'">vnd.uof.spreadsheet</xsl:when><xsl:otherwise>vnd.uof.text</xsl:otherwise></xsl:choose></xsl:attribute>
-					
+
 					<!--BEGIN "文档标识"、"基式样引用"属性暂时未使用-->
 					<!--
 				<xsl:attribute name="文档标识"/>
@@ -2288,7 +2288,7 @@
 				</xsl:call-template>
 			</xsl:otherwise>
 		</xsl:choose>
-		
+
 	</xsl:template>
 	<xsl:template name="字:编号格式表示-list">
 		<xsl:variable name="jibie">
@@ -5368,7 +5368,7 @@
 										<!-- default-style 转为默认式样 故此处可不添加
 												<xsl:for-each select="/office:document/office:styles/style:default-style[@style:family='graphic']/style:text-properties">
 													<xsl:copy-of select="."/>
-													
+
 												</xsl:for-each>
 -->
 									</xsl:element>
@@ -5866,7 +5866,7 @@
 			<xsl:variable name="rowStyleName" select="./@table:style-name"/>
 			<xsl:element name="字:表行属性_41BD">
 				<xsl:for-each select="key('RowStyle',$rowStyleName)/style:table-row-properties[@style:row-height or @style:min-row-height]">
-					
+
 					<xsl:variable name="style_name">
 						<xsl:variable name="bb">
 							<xsl:for-each select="../preceding-sibling::*[@style:family = 'table-row']">
@@ -6813,12 +6813,12 @@
 	</xsl:template>
 	<xsl:template match="text:tab">
 		<xsl:element name="字:制表符_415E">
-		
+
 		</xsl:element>
 	</xsl:template>
 	<xsl:template match="text:line-break">
 		<xsl:element name="字:换行符_415F">
-		
+
 		</xsl:element>
 	</xsl:template>
 	<xsl:template match="text:use-soft-page-breaks">
@@ -11237,7 +11237,7 @@
 					</xsl:variable>
 					<xsl:variable name="TableName" select="$tablelist[position() = $tableNumber]/@table:name"/>
 					<xsl:value-of select="concat($TableName,'.',$ColumnNum,' ',$RowNum)"/>
-					
+
 				</xsl:when>
 				<xsl:otherwise>
 					<xsl:call-template name="search-right-bottom-condition-format">
@@ -13528,7 +13528,7 @@
 					<xsl:attribute name="表:式样引用"><xsl:value-of select="$defaultCellStyle/uof:tempTree[((number(uof:columnNumber) + number(uof:repeated)) = $columnPos) or ((number(uof:columnNumber) + number(uof:repeated)) &gt; $columnPos)]/uof:defaultCellStyleName"/></xsl:attribute>
 				</xsl:when>
 			</xsl:choose>
-		
+
 			<表:合并_E7AF>
 				<xsl:if test="@table:number-columns-spanned &gt; 1">
 					<表:列数_E7B0>

@@ -19,50 +19,29 @@
  *
  *************************************************************/
 
-
-
-#include "setup_main.hxx"
+#include <stdio.h>
 
 //--------------------------------------------------------------------------
 
-#ifdef SetupAppX
- #undef SetupAppX
-#endif
-
-#ifdef Create_SetupAppX
- #undef Create_SetupAppX
-#endif
-
-#ifdef LanguageDataX
- #undef LanguageDataX
-#endif
-
-
-#ifdef UNICODE
- #define SetupAppX          SetupAppW
- #define Create_SetupAppX   Create_SetupAppW
- #define LanguageDataX      LanguageDataW
-#else
- #define SetupAppX          SetupAppA
- #define Create_SetupAppX   Create_SetupAppA
- #define LanguageDataX      LanguageDataA
-#endif
-
-//--------------------------------------------------------------------------
-
-struct LanguageDataX
+struct LanguageData
 {
     long    m_nLanguageID;
     LPTSTR  m_pTransform;
 
-     LanguageDataX( LPTSTR pData );
-    ~LanguageDataX();
+     LanguageData( LPTSTR pData );
+    ~LanguageData();
 };
 
 //--------------------------------------------------------------------------
 
-class SetupAppX : public SetupApp
+class SetupApp
 {
+    DWORD           m_nOSVersion;
+    DWORD           m_nMinorVersion;
+    boolean         m_bIsWin9x      : 1;
+    boolean         m_bNeedReboot   : 1;
+    boolean         m_bAdministrative : 1;
+
     HINSTANCE   m_hInst;
     HANDLE      m_hMapFile;
     LPTSTR      m_pAppTitle;
@@ -90,7 +69,7 @@ class SetupAppX : public SetupApp
 
     long            m_nLanguageID;
     long            m_nLanguageCount;
-    LanguageDataX** m_ppLanguageList;
+    LanguageData** m_ppLanguageList;
 
 private:
 
@@ -120,8 +99,9 @@ private:
     boolean     InstallRuntimes( TCHAR* pProductCode, TCHAR* pFileName );
 
 public:
-                    SetupAppX();
-                   ~SetupAppX();
+    UINT            m_uiRet;
+                    SetupApp();
+    virtual        ~SetupApp();
 
     virtual boolean Initialize( HINSTANCE hInst );
     virtual boolean AlreadyRunning() const;
@@ -135,6 +115,17 @@ public:
 
     virtual UINT    GetError() const;
     virtual void    DisplayError( UINT nErr ) const;
+
+    void            SetError( UINT nErr ) { m_uiRet = nErr; }
+    boolean         IsWin9x() const { return m_bIsWin9x; }
+    DWORD           GetOSVersion() const { return m_nOSVersion; }
+    DWORD           GetMinorVersion() const { return m_nMinorVersion; }
+
+    boolean         IsAdminInstall() { return m_bAdministrative; }
+    void            SetAdminInstall( boolean bValue ) { m_bAdministrative = bValue; }
+
+    void            SetRebootNeeded( boolean bNeedReboot ) { m_bNeedReboot = bNeedReboot; }
+    boolean         NeedReboot() const { return m_bNeedReboot; }
 
     void            Log( LPCTSTR pMessage, LPCTSTR pText = NULL ) const;
 

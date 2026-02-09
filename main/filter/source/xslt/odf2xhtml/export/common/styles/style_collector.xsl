@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,16 +8,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
@@ -663,7 +663,7 @@
     <xsl:template name="writeUsedStyles">
         <xsl:param name="globalData" />
         <xsl:param name="style"/>
-    
+
             <!-- for-each changes the key environment from the previously globalData back to the document root  -->
         <xsl:for-each select="$documentRoot">
                 <!-- only styles, which are used in the content are written as CSS styles -->
@@ -684,7 +684,7 @@
                                     <xsl:with-param name="globalData" select="$globalData" />
                                     <xsl:with-param name="style" select="$style" />
                                 </xsl:call-template>
-                            </xsl:if>    
+                            </xsl:if>
                         </xsl:when>
                         <xsl:otherwise>
                             <xsl:for-each select="document($stylesFileURL)">
@@ -702,8 +702,8 @@
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:for-each>
-    </xsl:template>     
-    
+    </xsl:template>
+
 	<xsl:template name="writeUsedStyles2">
 		<xsl:param name="globalData" />
 		<xsl:param name="style"/>
@@ -711,7 +711,7 @@
             <xsl:when test="
                 $style/@style:family='paragraph'
             and((
-                  ( 
+                  (
                         $style/*/@fo:border-top
                      or $style/*/@fo:border-bottom
                      or $style/*/@fo:border
@@ -724,14 +724,14 @@
                 )
                or
                 (
-                  ( 
+                  (
                         $style/*/@fo:margin-top
                      or $style/*/@fo:margin-bottom
                      or $style/*/@fo:margin
                   )
                     and
                   (     $style/*/@fo:background-color
-                    and 
+                    and
                         not($style/*/fo:background-color='transparent')
                   )
                 )
@@ -745,7 +745,7 @@
                         </xsl:apply-templates>
                         <xsl:apply-templates mode="paragraphMerge" select="$style/*/@*[name() = 'fo:margin-bottom' or name() = 'fo:margin']">
                             <xsl:with-param name="globalData" select="$globalData" />
-                        </xsl:apply-templates>                                
+                        </xsl:apply-templates>
                         <xsl:text> border-bottom-style:none; </xsl:text>
                     </xsl:element>
                 </xsl:element>
@@ -759,7 +759,7 @@
                         </xsl:apply-templates>
                         <xsl:apply-templates mode="paragraphMerge" select="$style/*/@*[name() = 'fo:margin-top' or name() = 'fo:margin-bottom' or name() = 'fo:margin']">
                             <xsl:with-param name="globalData" select="$globalData" />
-                        </xsl:apply-templates>                                
+                        </xsl:apply-templates>
                         <xsl:text> border-top-style:none; border-bottom-style:none; </xsl:text>
                     </xsl:element>
                 </xsl:element>
@@ -772,7 +772,7 @@
                         </xsl:apply-templates>
                         <xsl:apply-templates mode="paragraphMerge" select="$style/*/@*[name() = 'fo:margin-top' or name() = 'fo:margin']">
                             <xsl:with-param name="globalData" select="$globalData" />
-                        </xsl:apply-templates>                                
+                        </xsl:apply-templates>
                         <xsl:text> border-top-style:none;</xsl:text>
                     </xsl:element>
                 </xsl:element>
@@ -805,7 +805,7 @@
             </xsl:otherwise>
         </xsl:choose>
 	</xsl:template>
-    
+
 	<xsl:template mode="paragraphMerge" match="@fo:margin | @fo:margin-top | @fo:margin-bottom | @fo:margin-left | @fo:margin-right">
 		<xsl:text>padding</xsl:text>
         <xsl:value-of select="substring-after(name(), 'fo:margin')"/>
@@ -820,5 +820,5 @@
 			</xsl:otherwise>
 		</xsl:choose>
 		<xsl:text>; </xsl:text>
-	</xsl:template>    
+	</xsl:template>
 </xsl:stylesheet>
