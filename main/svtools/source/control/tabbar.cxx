@@ -431,7 +431,7 @@ TabBar::~TabBar()
 		delete mpLastBtn;
 	delete mpImpl;
 
-	// Alle Items löschen
+	// Delete all Items
 	ImplTabBarItem* pItem = mpItemList->First();
 	while ( pItem )
 	{
@@ -539,10 +539,10 @@ sal_Bool TabBar::ImplCalcWidth()
 	else if ( mbAutoMaxWidth )
 	{
 		mnCurMaxWidth = mnLastOffX-mnOffX-
-                        TABBAR_OFFSET_X-TABBAR_OFFSET_X-
-                        TABBAR_OFFSET_X2-TABBAR_OFFSET_X2-TABBAR_OFFSET_X2;
-        if ( mnCurMaxWidth < 1 )
-            mnCurMaxWidth = 1;
+						TABBAR_OFFSET_X-TABBAR_OFFSET_X-
+						TABBAR_OFFSET_X2-TABBAR_OFFSET_X2-TABBAR_OFFSET_X2;
+		if ( mnCurMaxWidth < 1 )
+			mnCurMaxWidth = 1;
 	}
 	else
 		mnCurMaxWidth = 0;
@@ -593,167 +593,167 @@ void TabBar::ImplFormat()
 			pItem->maRect.SetEmpty();
 		else
 		{
-            // Etwas von der Tab vor der ersten sichtbaren Page
-            // muss auch zu sehen sein
-            if ( n+1 == mnFirstPos )
-                pItem->maRect.Left() = x-pItem->mnWidth;
-            else
-            {
-                pItem->maRect.Left() = x;
-                x += pItem->mnWidth;
-            }
-            pItem->maRect.Right() = x+TABBAR_OFFSET_X+TABBAR_OFFSET_X2;
-            pItem->maRect.Bottom() = maWinSize.Height()-1;
+			// Etwas von der Tab vor der ersten sichtbaren Page
+			// muss auch zu sehen sein
+			if ( n+1 == mnFirstPos )
+				pItem->maRect.Left() = x-pItem->mnWidth;
+			else
+			{
+				pItem->maRect.Left() = x;
+				x += pItem->mnWidth;
+			}
+			pItem->maRect.Right() = x+TABBAR_OFFSET_X+TABBAR_OFFSET_X2;
+			pItem->maRect.Bottom() = maWinSize.Height()-1;
 
-            if( mbMirrored )
-            {
-                long nTmp = mnOffX + mnLastOffX - pItem->maRect.Right();
-                pItem->maRect.Right() = mnOffX + mnLastOffX - pItem->maRect.Left();
-                pItem->maRect.Left() = nTmp;
-            }
-        }
+			if( mbMirrored )
+			{
+				long nTmp = mnOffX + mnLastOffX - pItem->maRect.Right();
+				pItem->maRect.Right() = mnOffX + mnLastOffX - pItem->maRect.Left();
+				pItem->maRect.Left() = nTmp;
+			}
+		}
 
-        n++;
-        pItem = mpItemList->Next();
-    }
+		n++;
+		pItem = mpItemList->Next();
+	}
 
-    mbFormat = sal_False;
+	mbFormat = sal_False;
 
-    // Button enablen/disablen
-    ImplEnableControls();
+	// Button enablen/disablen
+	ImplEnableControls();
 }
 
 // -----------------------------------------------------------------------
 
 sal_uInt16 TabBar::ImplGetLastFirstPos()
 {
-    sal_uInt16  nCount = (sal_uInt16)(mpItemList->Count());
-    if ( !nCount || mbSizeFormat || mbFormat )
-        return 0;
+	sal_uInt16  nCount = (sal_uInt16)(mpItemList->Count());
+	if ( !nCount || mbSizeFormat || mbFormat )
+		return 0;
 
-    sal_uInt16  nLastFirstPos = nCount-1;
-    long    nWinWidth = mnLastOffX-mnOffX-TABBAR_OFFSET_X-ADDNEWPAGE_AREAWIDTH;
-    long    nWidth = mpItemList->GetObject( nLastFirstPos )->mnWidth;
-    while ( nLastFirstPos && (nWidth < nWinWidth) )
-    {
-        nLastFirstPos--;
-        nWidth += mpItemList->GetObject( nLastFirstPos )->mnWidth;
-    }
-    if ( (nLastFirstPos != (sal_uInt16)(mpItemList->Count()-1)) &&
-         (nWidth > nWinWidth) )
-        nLastFirstPos++;
-    return nLastFirstPos;
+	sal_uInt16  nLastFirstPos = nCount-1;
+	long    nWinWidth = mnLastOffX-mnOffX-TABBAR_OFFSET_X-ADDNEWPAGE_AREAWIDTH;
+	long    nWidth = mpItemList->GetObject( nLastFirstPos )->mnWidth;
+	while ( nLastFirstPos && (nWidth < nWinWidth) )
+	{
+		nLastFirstPos--;
+		nWidth += mpItemList->GetObject( nLastFirstPos )->mnWidth;
+	}
+	if ( (nLastFirstPos != (sal_uInt16)(mpItemList->Count()-1)) &&
+		 (nWidth > nWinWidth) )
+		nLastFirstPos++;
+	return nLastFirstPos;
 }
 
 // -----------------------------------------------------------------------
 
 void TabBar::ImplInitControls()
 {
-    if ( mnWinStyle & WB_SIZEABLE )
-    {
-        if ( !mpImpl->mpSizer )
-            mpImpl->mpSizer = new ImplTabSizer( this, mnWinStyle & (WB_DRAG | WB_3DLOOK) );
-        mpImpl->mpSizer->Show();
-    }
-    else
-    {
-        DELETEZ( mpImpl->mpSizer );
-    }
+	if ( mnWinStyle & WB_SIZEABLE )
+	{
+		if ( !mpImpl->mpSizer )
+			mpImpl->mpSizer = new ImplTabSizer( this, mnWinStyle & (WB_DRAG | WB_3DLOOK) );
+		mpImpl->mpSizer->Show();
+	}
+	else
+	{
+		DELETEZ( mpImpl->mpSizer );
+	}
 
-    Link aLink = LINK( this, TabBar, ImplClickHdl );
+	Link aLink = LINK( this, TabBar, ImplClickHdl );
 
-    if ( mnWinStyle & (WB_MINSCROLL | WB_SCROLL) )
-    {
-        if ( !mpPrevBtn )
-        {
-            mpPrevBtn = new ImplTabButton( this, WB_REPEAT );
-            mpPrevBtn->SetClickHdl( aLink );
-        }
-        mpPrevBtn->SetSymbol( mbMirrored ? SYMBOL_NEXT : SYMBOL_PREV );
-        mpPrevBtn->Show();
+	if ( mnWinStyle & (WB_MINSCROLL | WB_SCROLL) )
+	{
+		if ( !mpPrevBtn )
+		{
+			mpPrevBtn = new ImplTabButton( this, WB_REPEAT );
+			mpPrevBtn->SetClickHdl( aLink );
+		}
+		mpPrevBtn->SetSymbol( mbMirrored ? SYMBOL_NEXT : SYMBOL_PREV );
+		mpPrevBtn->Show();
 
-        if ( !mpNextBtn )
-        {
-            mpNextBtn = new ImplTabButton( this, WB_REPEAT );
-            mpNextBtn->SetClickHdl( aLink );
-        }
-        mpNextBtn->SetSymbol( mbMirrored ? SYMBOL_PREV : SYMBOL_NEXT );
-        mpNextBtn->Show();
-    }
-    else
-    {
-        DELETEZ( mpPrevBtn );
-        DELETEZ( mpNextBtn );
-    }
+		if ( !mpNextBtn )
+		{
+			mpNextBtn = new ImplTabButton( this, WB_REPEAT );
+			mpNextBtn->SetClickHdl( aLink );
+		}
+		mpNextBtn->SetSymbol( mbMirrored ? SYMBOL_PREV : SYMBOL_NEXT );
+		mpNextBtn->Show();
+	}
+	else
+	{
+		DELETEZ( mpPrevBtn );
+		DELETEZ( mpNextBtn );
+	}
 
-    if ( mnWinStyle & WB_SCROLL )
-    {
-        if ( !mpFirstBtn )
-        {
-            mpFirstBtn = new ImplTabButton( this );
-            mpFirstBtn->SetClickHdl( aLink );
-        }
-        mpFirstBtn->SetSymbol( mbMirrored ? SYMBOL_LAST : SYMBOL_FIRST );
-        mpFirstBtn->Show();
+	if ( mnWinStyle & WB_SCROLL )
+	{
+		if ( !mpFirstBtn )
+		{
+			mpFirstBtn = new ImplTabButton( this );
+			mpFirstBtn->SetClickHdl( aLink );
+		}
+		mpFirstBtn->SetSymbol( mbMirrored ? SYMBOL_LAST : SYMBOL_FIRST );
+		mpFirstBtn->Show();
 
-        if ( !mpLastBtn )
-        {
-            mpLastBtn = new ImplTabButton( this );
-            mpLastBtn->SetClickHdl( aLink );
-        }
-        mpLastBtn->SetSymbol( mbMirrored ? SYMBOL_FIRST : SYMBOL_LAST );
-        mpLastBtn->Show();
-    }
-    else
-    {
-        DELETEZ( mpFirstBtn );
-        DELETEZ( mpLastBtn );
-    }
+		if ( !mpLastBtn )
+		{
+			mpLastBtn = new ImplTabButton( this );
+			mpLastBtn->SetClickHdl( aLink );
+		}
+		mpLastBtn->SetSymbol( mbMirrored ? SYMBOL_FIRST : SYMBOL_LAST );
+		mpLastBtn->Show();
+	}
+	else
+	{
+		DELETEZ( mpFirstBtn );
+		DELETEZ( mpLastBtn );
+	}
 }
 
 // -----------------------------------------------------------------------
 
 void TabBar::ImplEnableControls()
 {
-    if ( mbSizeFormat || mbFormat )
-        return;
+	if ( mbSizeFormat || mbFormat )
+		return;
 
-    // Buttons enablen/disablen
-    sal_Bool bEnableBtn = mnFirstPos > 0;
-    if ( mpFirstBtn )
-        mpFirstBtn->Enable( bEnableBtn );
-    if ( mpPrevBtn )
-        mpPrevBtn->Enable( bEnableBtn );
+	// Buttons enablen/disablen
+	sal_Bool bEnableBtn = mnFirstPos > 0;
+	if ( mpFirstBtn )
+		mpFirstBtn->Enable( bEnableBtn );
+	if ( mpPrevBtn )
+		mpPrevBtn->Enable( bEnableBtn );
 
-    bEnableBtn = mnFirstPos < ImplGetLastFirstPos();
-    if ( mpNextBtn )
-        mpNextBtn->Enable( bEnableBtn );
-    if ( mpLastBtn )
-        mpLastBtn->Enable( bEnableBtn );
+	bEnableBtn = mnFirstPos < ImplGetLastFirstPos();
+	if ( mpNextBtn )
+		mpNextBtn->Enable( bEnableBtn );
+	if ( mpLastBtn )
+		mpLastBtn->Enable( bEnableBtn );
 }
 
 // -----------------------------------------------------------------------
 
 void TabBar::ImplShowPage( sal_uInt16 nPos )
 {
-    // Breite berechnen
-    long nWidth = GetOutputSizePixel().Width();
-    if ( nWidth >= TABBAR_OFFSET_X )
-        nWidth -= TABBAR_OFFSET_X;
-    ImplTabBarItem* pItem = mpItemList->GetObject( nPos );
-    if ( nPos < mnFirstPos )
-        SetFirstPageId( pItem->mnId );
-    else if ( pItem->maRect.Right() > nWidth )
-    {
-        while ( pItem->maRect.Right() > nWidth )
-        {
-            sal_uInt16 nNewPos = mnFirstPos+1;
-            SetFirstPageId( GetPageId( nNewPos ) );
-            ImplFormat();
-            if ( nNewPos != mnFirstPos )
-                break;
-        }
-    }
+	// Breite berechnen
+	long nWidth = GetOutputSizePixel().Width();
+	if ( nWidth >= TABBAR_OFFSET_X )
+		nWidth -= TABBAR_OFFSET_X;
+	ImplTabBarItem* pItem = mpItemList->GetObject( nPos );
+	if ( nPos < mnFirstPos )
+		SetFirstPageId( pItem->mnId );
+	else if ( pItem->maRect.Right() > nWidth )
+	{
+		while ( pItem->maRect.Right() > nWidth )
+		{
+			sal_uInt16 nNewPos = mnFirstPos+1;
+			SetFirstPageId( GetPageId( nNewPos ) );
+			ImplFormat();
+			if ( nNewPos != mnFirstPos )
+				break;
+		}
+	}
 }
 
 // -----------------------------------------------------------------------
@@ -765,24 +765,24 @@ IMPL_LINK( TabBar, ImplClickHdl, ImplTabButton*, pBtn )
 	sal_uInt16 nNewPos = mnFirstPos;
 
 	if ( pBtn == mpFirstBtn )
-        nNewPos = 0;
-    else if ( pBtn == mpPrevBtn )
-    {
-        if ( mnFirstPos )
-            nNewPos = mnFirstPos-1;
-    }
-    else if ( pBtn == mpNextBtn )
-    {
-        sal_uInt16 nCount = GetPageCount();
-        if ( mnFirstPos <  nCount )
-            nNewPos = mnFirstPos+1;
-    }
-    else
-    {
-        sal_uInt16 nCount = GetPageCount();
-        if ( nCount )
-            nNewPos = nCount-1;
-    }
+		nNewPos = 0;
+	else if ( pBtn == mpPrevBtn )
+	{
+		if ( mnFirstPos )
+			nNewPos = mnFirstPos-1;
+	}
+	else if ( pBtn == mpNextBtn )
+	{
+		sal_uInt16 nCount = GetPageCount();
+		if ( mnFirstPos <  nCount )
+			nNewPos = mnFirstPos+1;
+	}
+	else
+	{
+		sal_uInt16 nCount = GetPageCount();
+		if ( nCount )
+			nNewPos = nCount-1;
+	}
 
 	if ( nNewPos != mnFirstPos )
 		SetFirstPageId( GetPageId( nNewPos ) );
@@ -822,131 +822,131 @@ void TabBar::MouseButtonDown( const MouseEvent& rMEvt )
 			sal_uInt16 nPos = GetPagePos( nSelId );
 			pItem = mpItemList->GetObject( nPos );
 
-            if ( pItem->mbEnable )
-            {
-                if ( ImplDeactivatePage() )
-                {
-                    SetCurPageId( nSelId );
-                    Update();
-                    ImplActivatePage();
-                    ImplSelect();
-                }
-                mbInSelect = sal_True;
-            }
-        }
-        return;
-    }
+			if ( pItem->mbEnable )
+			{
+				if ( ImplDeactivatePage() )
+				{
+					SetCurPageId( nSelId );
+					Update();
+					ImplActivatePage();
+					ImplSelect();
+				}
+				mbInSelect = sal_True;
+			}
+		}
+		return;
+	}
 
-    if ( rMEvt.IsMod2() && mbAutoEditMode && nSelId )
-    {
-        if ( StartEditMode( nSelId ) )
-            return;
-    }
+	if ( rMEvt.IsMod2() && mbAutoEditMode && nSelId )
+	{
+		if ( StartEditMode( nSelId ) )
+			return;
+	}
 
-    if ( (rMEvt.GetMode() & (MOUSE_MULTISELECT | MOUSE_RANGESELECT)) && (rMEvt.GetClicks() == 1) )
-    {
-        if ( nSelId )
-        {
-            sal_uInt16      nPos = GetPagePos( nSelId );
-            sal_Bool        bSelectTab = sal_False;
-            pItem = mpItemList->GetObject( nPos );
+	if ( (rMEvt.GetMode() & (MOUSE_MULTISELECT | MOUSE_RANGESELECT)) && (rMEvt.GetClicks() == 1) )
+	{
+		if ( nSelId )
+		{
+			sal_uInt16      nPos = GetPagePos( nSelId );
+			sal_Bool        bSelectTab = sal_False;
+			pItem = mpItemList->GetObject( nPos );
 
-            if ( pItem->mbEnable )
-            {
-                if ( (rMEvt.GetMode() & MOUSE_MULTISELECT) && (mnWinStyle & WB_MULTISELECT) )
-                {
-                    if ( nSelId != mnCurPageId )
-                    {
-                        SelectPage( nSelId, !IsPageSelected( nSelId ) );
-                        bSelectTab = sal_True;
-                    }
-                }
-                else if ( mnWinStyle & (WB_MULTISELECT | WB_RANGESELECT) )
-                {
-                    bSelectTab = sal_True;
-                    sal_uInt16 n;
-                    sal_Bool   bSelect;
-                    sal_uInt16 nCurPos = GetPagePos( mnCurPageId );
-                    if ( nPos <= nCurPos )
-                    {
-                        // Alle Tabs bis zur angeklickten Tab deselektieren
-                        // und alle Tabs von der angeklickten Tab bis
-                        // zur aktuellen Position selektieren
-                        n = 0;
-                        while ( n < nCurPos )
-                        {
-                            pItem = mpItemList->GetObject( n );
-                            if ( n < nPos )
-                                bSelect = sal_False;
-                            else
-                                bSelect = sal_True;
+			if ( pItem->mbEnable )
+			{
+				if ( (rMEvt.GetMode() & MOUSE_MULTISELECT) && (mnWinStyle & WB_MULTISELECT) )
+				{
+					if ( nSelId != mnCurPageId )
+					{
+						SelectPage( nSelId, !IsPageSelected( nSelId ) );
+						bSelectTab = sal_True;
+					}
+				}
+				else if ( mnWinStyle & (WB_MULTISELECT | WB_RANGESELECT) )
+				{
+					bSelectTab = sal_True;
+					sal_uInt16 n;
+					sal_Bool   bSelect;
+					sal_uInt16 nCurPos = GetPagePos( mnCurPageId );
+					if ( nPos <= nCurPos )
+					{
+						// Alle Tabs bis zur angeklickten Tab deselektieren
+						// und alle Tabs von der angeklickten Tab bis
+						// zur aktuellen Position selektieren
+						n = 0;
+						while ( n < nCurPos )
+						{
+							pItem = mpItemList->GetObject( n );
+							if ( n < nPos )
+								bSelect = sal_False;
+							else
+								bSelect = sal_True;
 
-                            if ( pItem->mbSelect != bSelect )
-                            {
-                                pItem->mbSelect = bSelect;
-                                if ( !pItem->maRect.IsEmpty() )
-                                    Invalidate( pItem->maRect );
-                            }
+							if ( pItem->mbSelect != bSelect )
+							{
+								pItem->mbSelect = bSelect;
+								if ( !pItem->maRect.IsEmpty() )
+									Invalidate( pItem->maRect );
+							}
 
-                            n++;
-                        }
-                    }
+							n++;
+						}
+					}
 
-                    if ( nPos >= nCurPos )
-                    {
-                        // Alle Tabs von der aktuellen bis zur angeklickten
-                        // Tab selektieren und alle Tabs von der angeklickten
-                        // Tab bis zur letzten Tab deselektieren
-                        sal_uInt16 nCount = (sal_uInt16)mpItemList->Count();
-                        n = nCurPos;
-                        while ( n < nCount )
-                        {
-                            pItem = mpItemList->GetObject( n );
+					if ( nPos >= nCurPos )
+					{
+						// Alle Tabs von der aktuellen bis zur angeklickten
+						// Tab selektieren und alle Tabs von der angeklickten
+						// Tab bis zur letzten Tab deselektieren
+						sal_uInt16 nCount = (sal_uInt16)mpItemList->Count();
+						n = nCurPos;
+						while ( n < nCount )
+						{
+							pItem = mpItemList->GetObject( n );
 
-                            if ( n <= nPos )
-                                bSelect = sal_True;
-                            else
-                                bSelect = sal_False;
+							if ( n <= nPos )
+								bSelect = sal_True;
+							else
+								bSelect = sal_False;
 
-                            if ( pItem->mbSelect != bSelect )
-                            {
-                                pItem->mbSelect = bSelect;
-                                if ( !pItem->maRect.IsEmpty() )
-                                    Invalidate( pItem->maRect );
-                            }
+							if ( pItem->mbSelect != bSelect )
+							{
+								pItem->mbSelect = bSelect;
+								if ( !pItem->maRect.IsEmpty() )
+									Invalidate( pItem->maRect );
+							}
 
-                            n++;
-                        }
-                    }
-                }
+							n++;
+						}
+					}
+				}
 
-                // Gegebenenfalls muss die selektierte Tab gescrollt werden
-                if ( bSelectTab )
-                {
-                    ImplShowPage( nPos );
-                    Update();
-                    ImplSelect();
-                }
-            }
-            else
-                ImplShowPage( nPos );
-            mbInSelect = sal_True;
+				// Gegebenenfalls muss die selektierte Tab gescrollt werden
+				if ( bSelectTab )
+				{
+					ImplShowPage( nPos );
+					Update();
+					ImplSelect();
+				}
+			}
+			else
+				ImplShowPage( nPos );
+			mbInSelect = sal_True;
 
-            return;
-        }
-    }
-    else if ( rMEvt.GetClicks() == 2 )
-    {
-        // Gegebenenfalls den Double-Click-Handler rufen
-        if ( !rMEvt.GetModifier() && (!nSelId || (nSelId == mnCurPageId)) )
-        {
-            sal_uInt16 nOldCurId = mnCurPageId;
-            mnCurPageId = nSelId;
-            DoubleClick();
-            // Abfrage, da im DoubleClick-Handler die aktuelle Seite
-            // umgeschaltet werden konnte
-            if ( mnCurPageId == nSelId )
-                mnCurPageId = nOldCurId;
+			return;
+		}
+	}
+	else if ( rMEvt.GetClicks() == 2 )
+	{
+		// Gegebenenfalls den Double-Click-Handler rufen
+		if ( !rMEvt.GetModifier() && (!nSelId || (nSelId == mnCurPageId)) )
+		{
+			sal_uInt16 nOldCurId = mnCurPageId;
+			mnCurPageId = nSelId;
+			DoubleClick();
+			// Abfrage, da im DoubleClick-Handler die aktuelle Seite
+			// umgeschaltet werden konnte
+			if ( mnCurPageId == nSelId )
+				mnCurPageId = nOldCurId;
 		}
 
 		return;
@@ -955,11 +955,11 @@ void TabBar::MouseButtonDown( const MouseEvent& rMEvt )
 	{
 		if ( nSelId )
 		{
-            // Nur Select ausführen, wenn noch nicht aktuelle Page
-            if ( nSelId != mnCurPageId )
-            {
-                sal_uInt16 nPos = GetPagePos( nSelId );
-                pItem = mpItemList->GetObject( nPos );
+			// Nur Select ausführen, wenn noch nicht aktuelle Page
+			if ( nSelId != mnCurPageId )
+			{
+				sal_uInt16 nPos = GetPagePos( nSelId );
+				pItem = mpItemList->GetObject( nPos );
 
                 if ( pItem->mbEnable )
                 {
