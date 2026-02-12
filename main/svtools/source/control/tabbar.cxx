@@ -1205,36 +1205,36 @@ void TabBar::Paint( const Rectangle& )
 					}
 				}
 
-                // Da etwas übermalt werden könnte, müssen wir die Polygonumrandung noch einmal ausgeben
-                SetLineColor( rStyleSettings.GetDarkShadowColor() );
-                SetFillColor();
-                DrawPolygon( aPoly );
+				// Da etwas übermalt werden könnte, müssen wir die Polygonumrandung noch einmal ausgeben
+				SetLineColor( rStyleSettings.GetDarkShadowColor() );
+				SetFillColor();
+				DrawPolygon( aPoly );
 
-                // Beim aktuellen Tab die restlichen Ausgaben vornehmen und
-                // die Schleife abbrechen, da der aktuelle Tab als letztes
-                // ausgegeben wird
-                if ( pItem == pCurItem )
-                {
-                    // Beim aktuellen Item muss der oberstes Strich gelöscht werden
-                    SetLineColor();
-                    SetFillColor( aSelectColor );
-                    Rectangle aDelRect( aPos0, aPos3 );
-                    DrawRect( aDelRect );
-                    if ( mnWinStyle & WB_3DTAB )
-                    {
-                        aDelRect.Top()--;
-                        DrawRect( aDelRect );
-                    }
+				// Beim aktuellen Tab die restlichen Ausgaben vornehmen und
+				// die Schleife abbrechen, da der aktuelle Tab als letztes
+				// ausgegeben wird
+				if ( pItem == pCurItem )
+				{
+					// Beim aktuellen Item muss der oberste Strich gelöscht werden
+					SetLineColor();
+					SetFillColor( aSelectColor );
+					Rectangle aDelRect( Point(aPos0.X()+1, aPos0.Y()), Point(aPos3.X()-1, aPos3.Y()) );
+					DrawRect( aDelRect );
+					if ( mnWinStyle & WB_3DTAB )
+					{
+						aDelRect.Top()--;
+						DrawRect( aDelRect );
+					}
 
-                    break;
-                }
+					break;
+				}
 
-                pItem = mpItemList->Prev();
-            }
-            else
-            {
-                if ( pItem == pCurItem )
-                    break;
+				pItem = mpItemList->Prev();
+			}
+			else
+			{
+				if ( pItem == pCurItem )
+					break;
 
 				pItem = NULL;
 			}

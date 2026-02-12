@@ -589,11 +589,7 @@ void DecorationView::DrawSymbol( const Rectangle& rRect, SymbolType eType,
 	{
 		if ( nStyle & SYMBOL_DRAW_DISABLE )
 		{
-			// Als Embosed ausgeben
-			mpOutDev->SetFillColor( rStyleSettings.GetLightColor() );
-			Rectangle aTempRect = aRect;
-			aTempRect.Move( 0, 0 );
-			ImplDrawSymbol( mpOutDev, aTempRect, eType );
+			// Als Disabled ausgeben
 			mpOutDev->SetFillColor( rStyleSettings.GetShadowColor() );
 		}
 		else
