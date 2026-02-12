@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_vcl.hxx"
 #include <vcl/settings.hxx>
@@ -33,9 +31,9 @@
 
 // =======================================================================
 
-#define BUTTON_DRAW_FLATTEST	(BUTTON_DRAW_FLAT | 			\
-								 BUTTON_DRAW_PRESSED |			\
-								 BUTTON_DRAW_CHECKED |			\
+#define BUTTON_DRAW_FLATTEST	(BUTTON_DRAW_FLAT | 		\
+								 BUTTON_DRAW_PRESSED |		\
+								 BUTTON_DRAW_CHECKED |		\
 								 BUTTON_DRAW_HIGHLIGHT)
 
 // =======================================================================
@@ -43,7 +41,7 @@
 static void ImplDrawSymbol( OutputDevice* pDev, const Rectangle& rRect,
 							SymbolType eType  )
 {
-	// Groessen vorberechnen
+	// Größen vorberechnen
 	long	nMin	= Min( rRect.GetWidth(), rRect.GetHeight() );
 	long	nSize	= nMin;
 
@@ -162,7 +160,6 @@ static void ImplDrawSymbol( OutputDevice* pDev, const Rectangle& rRect,
 									   nLeft, nCenterY+n4 ) );
 			}
 			break;
-
 
 		case SYMBOL_SPIN_UP:
 			{
@@ -438,13 +435,13 @@ static void ImplDrawSymbol( OutputDevice* pDev, const Rectangle& rRect,
 			break;
 		case SYMBOL_CHECKMARK:
 			{
-                // #106953# never mirror checkmarks
-                sal_Bool bRTL = pDev->ImplHasMirroredGraphics() && pDev->IsRTLEnabled();
-                Point aPos1( bRTL ? rRect.Right() : rRect.Left(),
-                    rRect.Bottom() - rRect.GetHeight() / 3 );
-                Point aPos2( bRTL ? rRect.Right() - rRect.GetWidth()/3 : rRect.Left() + rRect.GetWidth()/3,
-                    rRect.Bottom() );
-                Point aPos3( bRTL ? rRect.TopLeft() : rRect.TopRight() );
+				// #106953# never mirror checkmarks
+				sal_Bool bRTL = pDev->ImplHasMirroredGraphics() && pDev->IsRTLEnabled();
+				Point aPos1( bRTL ? rRect.Right() : rRect.Left(),
+					rRect.Bottom() - rRect.GetHeight() / 3 );
+				Point aPos2( bRTL ? rRect.Right() - rRect.GetWidth()/3 : rRect.Left() + rRect.GetWidth()/3,
+					rRect.Bottom() );
+				Point aPos3( bRTL ? rRect.TopLeft() : rRect.TopRight() );
 				Size aRectSize( 1, 2 );
 				long nStepsY = aPos2.Y()-aPos1.Y();
 				long nX = aPos1.X();
@@ -452,24 +449,24 @@ static void ImplDrawSymbol( OutputDevice* pDev, const Rectangle& rRect,
 				long n;
 				for ( n = 0; n <= nStepsY; n++ )
 				{
-                    if( bRTL )
-                        nX--;
+					if( bRTL )
+						nX--;
 					pDev->DrawRect( Rectangle( Point( nX, nY++ ), aRectSize ) );
-                    if( !bRTL )
-					    nX++;
+					if( !bRTL )
+						nX++;
 				}
 				nStepsY = aPos2.Y()-aPos3.Y();
 				nX = aPos2.X();
 				nY = aPos2.Y();
 				for ( n = 0; n <= nStepsY; n++ )
 				{
-                    if( bRTL )
-					    if ( --nX < rRect.Left() )
-						    break;
+					if( bRTL )
+						if ( --nX < rRect.Left() )
+							break;
 					pDev->DrawRect( Rectangle( Point( nX, nY-- ), aRectSize ) );
-                    if( !bRTL )
-					    if ( ++nX > rRect.Right() )
-						    break;
+					if( !bRTL )
+						if ( ++nX > rRect.Right() )
+							break;
 				}
 			}
 			break;
@@ -504,7 +501,6 @@ static void ImplDrawSymbol( OutputDevice* pDev, const Rectangle& rRect,
 			}
 			}
 			break;
-
 
 		case SYMBOL_FLOAT:
 			{
@@ -593,11 +589,7 @@ void DecorationView::DrawSymbol( const Rectangle& rRect, SymbolType eType,
 	{
 		if ( nStyle & SYMBOL_DRAW_DISABLE )
 		{
-			// Als Embosed ausgeben
-			mpOutDev->SetFillColor( rStyleSettings.GetLightColor() );
-			Rectangle aTempRect = aRect;
-			aTempRect.Move( 1, 1 );
-			ImplDrawSymbol( mpOutDev, aTempRect, eType );
+			// Als Disabled ausgeben
 			mpOutDev->SetFillColor( rStyleSettings.GetShadowColor() );
 		}
 		else
@@ -697,15 +689,15 @@ static void ImplDrawDPILineRect( OutputDevice* pDev, Rectangle& rRect,
 		{
 			pDev->SetLineColor( *pColor );
 			pDev->SetFillColor();
-            if( bRound )
-            {
-			    pDev->DrawLine( Point( rRect.Left()+1, rRect.Top()), Point( rRect.Right()-1, rRect.Top()) );
-			    pDev->DrawLine( Point( rRect.Left()+1, rRect.Bottom()), Point( rRect.Right()-1, rRect.Bottom()) );
-			    pDev->DrawLine( Point( rRect.Left(), rRect.Top()+1), Point( rRect.Left(), rRect.Bottom()-1) );
-			    pDev->DrawLine( Point( rRect.Right(), rRect.Top()+1), Point( rRect.Right(), rRect.Bottom()-1) );
-            }
-            else
-			    pDev->DrawRect( rRect );
+			if( bRound )
+			{
+				pDev->DrawLine( Point( rRect.Left()+1, rRect.Top()), Point( rRect.Right()-1, rRect.Top()) );
+				pDev->DrawLine( Point( rRect.Left()+1, rRect.Bottom()), Point( rRect.Right()-1, rRect.Bottom()) );
+				pDev->DrawLine( Point( rRect.Left(), rRect.Top()+1), Point( rRect.Left(), rRect.Bottom()-1) );
+				pDev->DrawLine( Point( rRect.Right(), rRect.Top()+1), Point( rRect.Right(), rRect.Bottom()-1) );
+			}
+			else
+				pDev->DrawRect( rRect );
 		}
 		else
 		{
@@ -733,46 +725,46 @@ static void ImplDrawDPILineRect( OutputDevice* pDev, Rectangle& rRect,
 static void ImplDrawFrame( OutputDevice* pDev, Rectangle& rRect,
 						   const StyleSettings& rStyleSettings, sal_uInt16 nStyle )
 {
-    // mask menu style
-    sal_Bool bMenuStyle = (nStyle & FRAME_DRAW_MENU) ? sal_True : sal_False;
-    nStyle &= ~FRAME_DRAW_MENU;
+	// mask menu style
+	sal_Bool bMenuStyle = (nStyle & FRAME_DRAW_MENU) ? sal_True : sal_False;
+	nStyle &= ~FRAME_DRAW_MENU;
 
-    Window *pWin = NULL;
-    if( pDev->GetOutDevType() == OUTDEV_WINDOW )
-        pWin = (Window*) pDev;
+	Window *pWin = NULL;
+	if( pDev->GetOutDevType() == OUTDEV_WINDOW )
+		pWin = (Window*) pDev;
 
-    // UseFlatBorders disables 3D style for all frames except menus
-    // menus may use different border colors (e.g. on XP)
-    // normal frames will be drawn using the shadow color
-    // whereas window frame borders will use black
-    sal_Bool bFlatBorders = ( !bMenuStyle && rStyleSettings.GetUseFlatBorders() );
+	// UseFlatBorders disables 3D style for all frames except menus
+	// menus may use different border colors (e.g. on XP)
+	// normal frames will be drawn using the shadow color
+	// whereas window frame borders will use black
+	sal_Bool bFlatBorders = ( !bMenuStyle && rStyleSettings.GetUseFlatBorders() );
 
-    // no flat borders for standard VCL controls (i.e. formcontrols that keep their classic look)
-    // will not affect frame windows (like dropdowns)
-    if( bFlatBorders && pWin && pWin->GetType() == WINDOW_BORDERWINDOW && (pWin != pWin->ImplGetFrameWindow()) )
-    {
-        // check for formcontrol, i.e., a control without NWF enabled
-        Control *pControl = dynamic_cast< Control* >( pWin->GetWindow( WINDOW_CLIENT ) );
-        if( pControl && pControl->IsNativeWidgetEnabled() )
-            bFlatBorders = sal_True;
-        else
-            bFlatBorders = sal_False;
-    }
+	// no flat borders for standard VCL controls (i.e. formcontrols that keep their classic look)
+	// will not affect frame windows (like dropdowns)
+	if( bFlatBorders && pWin && pWin->GetType() == WINDOW_BORDERWINDOW && (pWin != pWin->ImplGetFrameWindow()) )
+	{
+		// check for formcontrol, i.e., a control without NWF enabled
+		Control *pControl = dynamic_cast< Control* >( pWin->GetWindow( WINDOW_CLIENT ) );
+		if( pControl && pControl->IsNativeWidgetEnabled() )
+			bFlatBorders = sal_True;
+		else
+			bFlatBorders = sal_False;
+	}
 
-    // no round corners for window frame borders
-    sal_Bool bRound = (bFlatBorders && !(nStyle & FRAME_DRAW_WINDOWBORDER));
+	// no round corners for window frame borders
+	sal_Bool bRound = (bFlatBorders && !(nStyle & FRAME_DRAW_WINDOWBORDER));
 
 	if ( (rStyleSettings.GetOptions() & STYLE_OPTION_MONO) ||
 		 (pDev->GetOutDevType() == OUTDEV_PRINTER) ||
-         bFlatBorders )
+		 bFlatBorders )
 		nStyle |= FRAME_DRAW_MONO;
 
 	if ( nStyle & FRAME_DRAW_NODRAW )
 	{
-        sal_uInt16 nValueStyle = bMenuStyle ? nStyle | FRAME_DRAW_MENU : nStyle;
-        if( pWin->GetType() == WINDOW_BORDERWINDOW )
-            nValueStyle |= FRAME_DRAW_BORDERWINDOWBORDER;
-        ImplControlValue aControlValue( nValueStyle );
+		sal_uInt16 nValueStyle = bMenuStyle ? nStyle | FRAME_DRAW_MENU : nStyle;
+		if( pWin->GetType() == WINDOW_BORDERWINDOW )
+			nValueStyle |= FRAME_DRAW_BORDERWINDOWBORDER;
+		ImplControlValue aControlValue( nValueStyle );
 		Rectangle aBound, aContent;
 		Rectangle aNatRgn( rRect );
 		if(pWin && pWin->GetNativeControlRegion(CTRL_FRAME, PART_BORDER,
@@ -813,42 +805,42 @@ static void ImplDrawFrame( OutputDevice* pDev, Rectangle& rRect,
 	else
 	{
 		if( pWin && pWin->IsNativeControlSupported(CTRL_FRAME, PART_BORDER) )
-        {
-            sal_uInt16 nValueStyle = bMenuStyle ? nStyle | FRAME_DRAW_MENU : nStyle;
-            if( pWin->GetType() == WINDOW_BORDERWINDOW )
-                nValueStyle |= FRAME_DRAW_BORDERWINDOWBORDER;
-            ImplControlValue aControlValue( nValueStyle );
-            Rectangle aBound, aContent;
-            Rectangle aNatRgn( rRect );
-            if(	pWin->GetNativeControlRegion(CTRL_FRAME, PART_BORDER,
+		{
+			sal_uInt16 nValueStyle = bMenuStyle ? nStyle | FRAME_DRAW_MENU : nStyle;
+			if( pWin->GetType() == WINDOW_BORDERWINDOW )
+				nValueStyle |= FRAME_DRAW_BORDERWINDOWBORDER;
+			ImplControlValue aControlValue( nValueStyle );
+			Rectangle aBound, aContent;
+			Rectangle aNatRgn( rRect );
+			if(	pWin->GetNativeControlRegion(CTRL_FRAME, PART_BORDER,
 				aNatRgn, 0, aControlValue, rtl::OUString(), aBound, aContent) )
-            {
-                if( pWin->DrawNativeControl( CTRL_FRAME, PART_BORDER, aContent, CTRL_STATE_ENABLED,
-                             aControlValue, rtl::OUString()) )
-                {
-                    rRect = aContent;
-                    return;
-                }
-            }
-        }
+			{
+				if( pWin->DrawNativeControl( CTRL_FRAME, PART_BORDER, aContent, CTRL_STATE_ENABLED,
+							aControlValue, rtl::OUString()) )
+				{
+					rRect = aContent;
+					return;
+				}
+			}
+		}
 
-        if ( nStyle & FRAME_DRAW_MONO )
-        {
-            Color aColor = bRound ? rStyleSettings.GetShadowColor()
-                                  : pDev->GetSettings().GetStyleSettings().GetMonoColor();
-            // when the MonoColor wasn't set, check face color
-            if (
-                (bRound && aColor.IsDark()) ||
-                (
-                  (aColor == Color(COL_BLACK)) &&
-                  (pDev->GetSettings().GetStyleSettings().GetFaceColor().IsDark())
-                )
-               )
-            {
-                aColor = Color( COL_WHITE );
-            }
-            ImplDrawDPILineRect( pDev, rRect, &aColor, bRound );
-        }
+		if ( nStyle & FRAME_DRAW_MONO )
+		{
+			Color aColor = bRound ? rStyleSettings.GetShadowColor()
+								  : pDev->GetSettings().GetStyleSettings().GetMonoColor();
+			// when the MonoColor wasn't set, check face color
+			if (
+				(bRound && aColor.IsDark()) ||
+				(
+					(aColor == Color(COL_BLACK)) &&
+					(pDev->GetSettings().GetStyleSettings().GetFaceColor().IsDark())
+				)
+			   )
+			{
+				aColor = Color( COL_WHITE );
+			}
+			ImplDrawDPILineRect( pDev, rRect, &aColor, bRound );
+		}
 		else
 		{
 			sal_uInt16 nFrameStyle = nStyle & FRAME_DRAW_STYLE;
@@ -897,27 +889,27 @@ static void ImplDrawFrame( OutputDevice* pDev, Rectangle& rRect,
 				{
 					if ( nFrameStyle == FRAME_DRAW_DOUBLEIN )
 					{
-                        if( bFlatBorders ) // no 3d effect
-                            pDev->ImplDraw2ColorFrame( rRect,
-												    rStyleSettings.GetShadowColor(),
-												    rStyleSettings.GetShadowColor() );
-                        else
-						    pDev->ImplDraw2ColorFrame( rRect,
-												    rStyleSettings.GetShadowColor(),
-												    rStyleSettings.GetLightColor() );
+						if( bFlatBorders ) // no 3d effect
+							pDev->ImplDraw2ColorFrame( rRect,
+													rStyleSettings.GetShadowColor(),
+													rStyleSettings.GetShadowColor() );
+						else
+							pDev->ImplDraw2ColorFrame( rRect,
+													rStyleSettings.GetShadowColor(),
+													rStyleSettings.GetLightColor() );
 					}
 					else
 					{
-                        if( bMenuStyle )
-						    pDev->ImplDraw2ColorFrame( rRect,
-                                                   rStyleSettings.GetMenuBorderColor(),
-												   rStyleSettings.GetDarkShadowColor() );
-                        else
-						    pDev->ImplDraw2ColorFrame( rRect,
-                                                   bFlatBorders ? // no 3d effect
-                                                   rStyleSettings.GetDarkShadowColor() :
-												   rStyleSettings.GetLightBorderColor(),
-												   rStyleSettings.GetDarkShadowColor() );
+						if( bMenuStyle )
+							pDev->ImplDraw2ColorFrame( rRect,
+													rStyleSettings.GetMenuBorderColor(),
+													rStyleSettings.GetDarkShadowColor() );
+						else
+							pDev->ImplDraw2ColorFrame( rRect,
+													bFlatBorders ? // no 3d effect
+													rStyleSettings.GetDarkShadowColor() :
+													rStyleSettings.GetLightBorderColor(),
+													rStyleSettings.GetDarkShadowColor() );
 
 					}
 
@@ -926,35 +918,35 @@ static void ImplDrawFrame( OutputDevice* pDev, Rectangle& rRect,
 					rRect.Right()--;
 					rRect.Bottom()--;
 
-                    sal_Bool bDrawn = sal_True;
+					sal_Bool bDrawn = sal_True;
 					if ( nFrameStyle == FRAME_DRAW_DOUBLEIN )
 					{
-                        if( bFlatBorders ) // no 3d effect
-						    pDev->ImplDraw2ColorFrame( rRect,
-												    rStyleSettings.GetFaceColor(),
-												    rStyleSettings.GetFaceColor() );
-                        else
-						    pDev->ImplDraw2ColorFrame( rRect,
-												    rStyleSettings.GetDarkShadowColor(),
-												    rStyleSettings.GetLightBorderColor() );
+						if( bFlatBorders ) // no 3d effect
+							pDev->ImplDraw2ColorFrame( rRect,
+													rStyleSettings.GetFaceColor(),
+													rStyleSettings.GetFaceColor() );
+						else
+							pDev->ImplDraw2ColorFrame( rRect,
+													rStyleSettings.GetDarkShadowColor(),
+													rStyleSettings.GetLightBorderColor() );
 					}
 					else
 					{
-                        // flat menus have no shadow border
-                        if( !bMenuStyle || !rStyleSettings.GetUseFlatMenues() )
-						    pDev->ImplDraw2ColorFrame( rRect,
-												    rStyleSettings.GetLightColor(),
-												    rStyleSettings.GetShadowColor() );
-                        else
-                            bDrawn = sal_False;
+						// flat menus have no shadow border
+						if( !bMenuStyle || !rStyleSettings.GetUseFlatMenues() )
+							pDev->ImplDraw2ColorFrame( rRect,
+													rStyleSettings.GetLightColor(),
+													rStyleSettings.GetShadowColor() );
+						else
+							bDrawn = sal_False;
 					}
-                    if( bDrawn )
-                    {
-					    rRect.Left()++;
-					    rRect.Top()++;
-					    rRect.Right()--;
-					    rRect.Bottom()--;
-                    }
+					if( bDrawn )
+					{
+						rRect.Left()++;
+						rRect.Top()++;
+						rRect.Right()--;
+						rRect.Bottom()--;
+					}
 				}
 			}
 		}
@@ -1145,7 +1137,7 @@ static void ImplDrawButton( OutputDevice* pDev, Rectangle& rRect,
 		pDev->SetLineColor();
 		if ( nStyle & BUTTON_DRAW_MONO )
 		{
-			// Hack: Auf Druckern wollen wir im MonoChrom-Modus trotzdem
+			// Hack: Auf Druckern wollen wir im Mon oChrom-Modus trotzdem
 			// erstmal graue Buttons haben
 			if ( pDev->GetOutDevType() == OUTDEV_PRINTER )
 				pDev->SetFillColor( Color( COL_LIGHTGRAY ) );
@@ -1254,30 +1246,32 @@ Rectangle DecorationView::DrawButton( const Rectangle& rRect, sal_uInt16 nStyle 
 
 void DecorationView::DrawSeparator( const Point& rStart, const Point& rStop, bool bVertical )
 {
-    Point aStart( rStart ), aStop( rStop );
-    const StyleSettings& rStyleSettings = mpOutDev->GetSettings().GetStyleSettings();
+	Point aStart( rStart ), aStop( rStop );
+	const StyleSettings& rStyleSettings = mpOutDev->GetSettings().GetStyleSettings();
 
-    mpOutDev->Push( PUSH_LINECOLOR );
-    if ( rStyleSettings.GetOptions() & STYLE_OPTION_MONO )
-        mpOutDev->SetLineColor( Color( COL_BLACK ) );
-    else
-        mpOutDev->SetLineColor( rStyleSettings.GetShadowColor() );
+	mpOutDev->Push( PUSH_LINECOLOR );
+	if ( rStyleSettings.GetOptions() & STYLE_OPTION_MONO )
+		mpOutDev->SetLineColor( Color( COL_BLACK ) );
+	else
+		mpOutDev->SetLineColor( rStyleSettings.GetShadowColor() );
 
-    mpOutDev->DrawLine( aStart, aStop );
-    if ( !(rStyleSettings.GetOptions() & STYLE_OPTION_MONO) )
-    {
-        mpOutDev->SetLineColor( rStyleSettings.GetLightColor() );
-        if( bVertical )
-        {
-            aStart.X()++;
-            aStop.X()++;
-        }
-        else
-        {
-            aStart.Y()++;
-            aStop.Y()++;
-        }
-        mpOutDev->DrawLine( aStart, aStop );
-    }
-    mpOutDev->Pop();
+	mpOutDev->DrawLine( aStart, aStop );
+	if ( !(rStyleSettings.GetOptions() & STYLE_OPTION_MONO) )
+	{
+		mpOutDev->SetLineColor( rStyleSettings.GetLightColor() );
+		if( bVertical )
+		{
+			aStart.X()++;
+			aStop.X()++;
+		}
+		else
+		{
+			aStart.Y()++;
+			aStop.Y()++;
+		}
+		mpOutDev->DrawLine( aStart, aStop );
+	}
+	mpOutDev->Pop();
 }
+
+/* vim: set noet sw=4 ts=4: */
