@@ -19,12 +19,8 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
-
-
 
 #include "swtypes.hxx"
 #include "swrect.hxx"
@@ -32,26 +28,24 @@
 
 #define SCROLL_LINE_SIZE 250
 
-
 SwScrollbar::SwScrollbar( Window *pWin, sal_Bool bHoriz ) :
 	ScrollBar( pWin,
-	WinBits( WB_3DLOOK | WB_HIDE | ( bHoriz ? WB_HSCROLL : WB_VSCROLL)  ) ),
+	WinBits( WB_3DLOOK | WB_HIDE | ( bHoriz ? WB_HSCROLL : WB_VSCROLL) ) ),
 	bHori( bHoriz ),
 	bAuto( sal_False ),
 	bThumbEnabled( sal_True ),
 	bVisible(sal_False),
 	bSizeSet(sal_False)
 {
-    // SSA: --- RTL --- no mirroring for horizontal scrollbars
-    if( bHoriz )
-        EnableRTL( sal_False );
+	// SSA: --- RTL --- no mirroring for horizontal scrollbars
+	if( bHoriz )
+		EnableRTL( sal_False );
 }
-
 
  SwScrollbar::~SwScrollbar() {}
 
 /*------------------------------------------------------------------------
- Beschreibung:	wird nach einer Aenderung der Dokumentgroesse gerufen, um den
+ Beschreibung:	wird nach einer Änderung der Dokumentgröße gerufen, um den
 				Range des Scrollbars neu einzustellen.
 ------------------------------------------------------------------------*/
 
@@ -60,20 +54,19 @@ void SwScrollbar::DocSzChgd( const Size &rSize )
 	aDocSz = rSize;
 	SetRange( Range( 0, bHori ? rSize.Width() : rSize.Height()) );
 	const sal_uLong nVisSize = GetVisibleSize();
-    SetLineSize( SCROLL_LINE_SIZE );
-//    SetLineSize( nVisSize * 10 / 100 );
+	SetLineSize( SCROLL_LINE_SIZE );
+//	SetLineSize( nVisSize * 10 / 100 );
 	SetPageSize( nVisSize * 77 / 100 );
 }
 
 /*------------------------------------------------------------------------
- Beschreibung:	wird nach einer Veraenderung des sichtbaren Ausschnittes
+ Beschreibung:	wird nach einer Veränderung des sichtbaren Ausschnitts
 				gerufen.
 ------------------------------------------------------------------------*/
 
-
 void SwScrollbar::ViewPortChgd( const Rectangle &rRect )
 {
-    long nThumb, nVisible;
+	long nThumb, nVisible;
 	if( bHori )
 	{
 		nThumb = rRect.Left();
@@ -111,25 +104,24 @@ void SwScrollbar::SetPosSizePixel( const Point& rNewPos, const Size& rNewSize )
 	ScrollBar::SetPosSizePixel(rNewPos, rNewSize);
 	bSizeSet = sal_True;
 	if(bVisible)
-        ExtendedShow();
+		ExtendedShow();
 
 }
-
 
 /*-----------------14.04.98 11:38-------------------
 
 --------------------------------------------------*/
 void SwScrollbar::SetAuto(sal_Bool bSet)
 {
-    if(bAuto != bSet)
+	if(bAuto != bSet)
 	{
 		bAuto = bSet;
 
 		// automatisch versteckt - dann anzeigen
 		if(!bAuto && bVisible && !ScrollBar::IsVisible())
-            ExtendedShow(sal_True);
+			ExtendedShow(sal_True);
 		else if(bAuto)
-			AutoShow();	// oder automatisch verstecken
+			AutoShow(); // oder automatisch verstecken
 	}
 }
 /*-----------------14.04.98 11:43-------------------
@@ -146,11 +138,12 @@ void SwScrollbar::AutoShow()
 				ScrollBar::Show(sal_False);
 		}
 		else if ( !ScrollBar::IsVisible() &&
-				  (!bHori || nVis) )		//Optimierung fuer Browser.
-											//Horizontaler Scrollbar per
-											//default aus.
+				  (!bHori || nVis) )		// Optimierung für Browser.
+											// Horizontaler Scrollbar per default aus.
 		{
 			ScrollBar::Show(sal_True);
 		}
 	}
 }
+
+/* vim: set noet sw=4 ts=4: */
