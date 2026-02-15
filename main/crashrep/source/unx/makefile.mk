@@ -53,7 +53,10 @@ APP1OBJS=$(OBJFILES)
 APP1RPATH=BRAND
 
 .IF "$(OS)" != "FREEBSD" && "$(OS)" != "MACOSX" && "$(OS)"!="NETBSD"
-APP1STDLIBS+=-ldl -lnsl
+APP1STDLIBS+=-ldl
+.IF "$(OS)" != "LINUX"
+APP1STDLIBS+=-lnsl
+.ENDIF
 .ENDIF
 .IF "$(OS)" == "SOLARIS"
 APP1STDLIBS+=-lsocket
