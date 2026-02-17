@@ -1428,7 +1428,7 @@ static HDC ImplCreateSalPrnIC( WinSalInfoPrinter* pPrinter, ImplJobSetup* pSetup
         // HDU: the crashes usually happen in a MBCS to unicode conversion,
         // so I suspect the MBCS string's end is not properly recognized.
         // The longest MBCS encoding I'm aware of has six bytes per code
-        // => add a couple of zeroes...
+        // => add a couple of zeros...
         memset( lpszDriverName+aDriver.Len(), 0, 16 );
         memset( lpszDeviceName+aDevice.Len(), 0, 16 );
         hDC = ImplCreateICA_WithCatch( lpszDriverName,

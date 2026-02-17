@@ -830,7 +830,7 @@ static int GetTTGlyphOutline(TrueTypeFont *ttf, sal_uInt32 glyphID, ControlPoint
     *pointArray = 0;
 
     if (metrics) {
-        memset(metrics, 0, sizeof(TTGlyphMetrics));         /*- metrics is initialized to all zeroes */
+        memset(metrics, 0, sizeof(TTGlyphMetrics));         /*- metrics is initialized to all zeros */
     }
 
     if (glyphID >= ttf->nglyphs) return -1;                 /**/
@@ -1546,7 +1546,7 @@ static void GetKern(TrueTypeFont *ttf)
 
 #ifdef TEST5
 /* KernGlyphsPrim?() functions expect the caller to ensure the validity of their arguments and
- * that x and y elements of the kern array are initialized to zeroes
+ * that x and y elements of the kern array are initialized to zeros
  */
 static void KernGlyphsPrim1(TrueTypeFont *ttf, sal_uInt16 *glyphs, int nglyphs, int wmode, KernData *kern)
 {
@@ -2340,7 +2340,7 @@ static void DumpSfnts(FILE *outf, sal_uInt8 *sfntP)
     HexFmt *h = HexFmtNew(outf);
     sal_uInt16 i, numTables = GetUInt16(sfntP, 4, 1);
     GlyphOffsets *go = GlyphOffsetsNew(sfntP);
-    sal_uInt8 pad[] = {0,0,0,0};                     /* zeroes                       */
+    sal_uInt8 pad[] = {0,0,0,0};                     /* zeros                       */
 
     assert(numTables <= 9);                                 /* Type42 has 9 required tables */
 

@@ -138,7 +138,7 @@ void NumberFormatPropertyPanel::Initialize()
 	mpEdDecimals->SetModifyHdl( aLink );
 	mpEdLeadZeroes->SetModifyHdl( aLink );
 	mpEdDecimals->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Decimal Places")));		//wj acc
-	mpEdLeadZeroes->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Leading Zeroes")));		//wj acc
+	mpEdLeadZeroes->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Leading Zeros")));		//wj acc
 	mpBtnNegRed->SetClickHdl( aLink );
 	mpBtnThousand->SetClickHdl( aLink );
 

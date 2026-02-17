@@ -1064,14 +1064,14 @@ void SdrModel::ImpSetUIUnit()
 	    nDiv *= aUIScale.GetNumerator();
     }
 
-    // shorten trailing zeroes for dividend
+    // shorten trailing zeros for dividend
     while(0 == (nMul % 10))
     {
 	    nUIUnitComma--;
 	    nMul /= 10;
     }
 
-    // shorten trailing zeroes for divisor
+    // shorten trailing zeros for divisor
     while(0 == (nDiv % 10))
     {
 	    nUIUnitComma++;

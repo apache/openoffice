@@ -402,7 +402,7 @@ void ImpCvtNum( double nNum, short nPrec, ::rtl::OUString& rRes, sal_Bool bCoreS
 	double dMaxNumWithoutExp = (nPrec == 6) ? 1E6 : 1E14;
 	myftoa( nNum, p, nPrec,( nNum &&( nNum < 1E-1 || nNum >= dMaxNumWithoutExp ) ) ? 4:0,
 		sal_False, sal_True, cDecimalSep );
-	// Trailing Zeroes weg:
+	// Trailing Zeros weg:
 	for( p = cBuf; *p &&( *p != 'E' ); p++ ) {}
 	q = p; p--;
 	while( nPrec && *p == '0' ) nPrec--, p--;

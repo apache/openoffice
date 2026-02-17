@@ -57,7 +57,7 @@
 </listitem>
 </list>
 <paragraph role="heading" id="hd_id3151262" xml-lang="en-US" level="2" l10n="U">Decimal Places and Significant Digits</paragraph>
-<paragraph role="paragraph" id="par_id3153624" xml-lang="en-US" l10n="U">Use zero (0) or the number sign (#) as placeholders in your number format code to represent numbers. The (#) only displays significant digits, while the (0) displays zeroes if there are fewer digits in the number than in the number format.</paragraph>
+<paragraph role="paragraph" id="par_id3153624" xml-lang="en-US" l10n="U">Use zero (0) or the number sign (#) as placeholders in your number format code to represent numbers. The (#) only displays significant digits, while the (0) displays zeros if there are fewer digits in the number than in the number format.</paragraph>
 <paragraph role="paragraph" id="par_id3153323" xml-lang="en-US" l10n="U">Use question marks (?) to represent the number of digits to include in the numerator and the denominator of a fraction. Fractions that do not fit the pattern that you define are displayed as floating point numbers.</paragraph>
 <paragraph role="paragraph" id="par_id3148440" xml-lang="en-US" l10n="U">If a number contains more digits to the right of the decimal delimiter than there are placeholders in the format, the number is rounded accordingly. If a number contains more digits to the left of the decimal delimiter than there are placeholders in the format, the entire number is displayed. Use the following list as a guide for using placeholders when you create a number format code:</paragraph>
 <table id="tbl_id3149760">

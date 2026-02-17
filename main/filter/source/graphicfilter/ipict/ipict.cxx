@@ -612,7 +612,7 @@ sal_uLong PictReader::ReadAndDrawRgn(PictDrawingMethod eMethod)
 	// and on each line: a0 < b0 < a1 < b1 < ... < a_{n_i} < b_{n_i}
 
 	// it can be probably decoded as :
-	// M=an empty mask: ie. (0, 0, ... ) with (left_box-right_box+1) zeroes
+	// M=an empty mask: i.e. (0, 0, ... ) with (left_box-right_box+1) zeros
 	// then for each line (y_i):
 	//   - takes M and inverts all values in [a_0,b_0-1], in [a_1,b_1-1] ...
 	//   - sets M = new y_i line mask
