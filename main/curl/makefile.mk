@@ -119,11 +119,25 @@ BUILD_ACTION=CC="cl.exe" nmake -f Makefile.vc mode=dll VC=9 DEBUG=yes EXCFLAGS=$
 .ENDIF
 
 .IF "$(CPUNAME)"=="INTEL"
+
+.IF "$(debug)"==""
 OUT2BIN=$(BUILD_DIR)$/../builds/libcurl-vc9-X86-release-dll-ssl-dll-zlib-dll-ipv6-sspi/bin/libcurl.dll
 OUT2LIB=$(BUILD_DIR)$/../builds/libcurl-vc9-X86-release-dll-ssl-dll-zlib-dll-ipv6-sspi/lib/libcurl.lib
+.ELSE
+OUT2BIN=$(BUILD_DIR)$/../builds/libcurl-vc9-X86-debug-dll-ssl-dll-zlib-dll-ipv6-sspi/bin/libcurl_debug.dll
+OUT2LIB=$(BUILD_DIR)$/../builds/libcurl-vc9-X86-debug-dll-ssl-dll-zlib-dll-ipv6-sspi/lib/libcurl_debug.lib
+.ENDIF
+
 .ELIF "$(CPUNAME)"=="X86_64"
+
+.IF "$(debug)"==""
 OUT2BIN=$(BUILD_DIR)$/../builds/libcurl-vc9-X64-release-dll-ssl-dll-zlib-dll-ipv6-sspi/bin/libcurl.dll
 OUT2LIB=$(BUILD_DIR)$/../builds/libcurl-vc9-X64-release-dll-ssl-dll-zlib-dll-ipv6-sspi/lib/libcurl.lib
+.ELSE
+OUT2BIN=$(BUILD_DIR)$/../builds/libcurl-vc9-X64-debug-dll-ssl-dll-zlib-dll-ipv6-sspi/bin/libcurl_debug.dll
+OUT2LIB=$(BUILD_DIR)$/../builds/libcurl-vc9-X64-debug-dll-ssl-dll-zlib-dll-ipv6-sspi/lib/libcurl_debug.lib
+.ENDIF
+
 .ENDIF
 
 .ENDIF
