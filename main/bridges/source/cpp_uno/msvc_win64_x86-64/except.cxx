@@ -399,7 +399,7 @@ RaiseInfo::RaiseInfo( typelib_TypeDescription * pTypeDescr ) throw ()
 	, _n2( 0 )
 {
 	// a must be
-	OSL_ENSURE( sizeof(sal_Int32) == sizeof(ExceptionType *), "### pointer size differs from sal_Int32!" );
+	OSL_ENSURE( sizeof(sal_Int64) == sizeof(ExceptionType *), "### pointer size differs from sal_Int64!" );
 
 	::typelib_typedescription_acquire( pTypeDescr );
 	this->pTypeDescr = pTypeDescr;
@@ -581,8 +581,8 @@ void mscx_raiseException( uno_Any * pUnoExc, uno_Mapping * pUno2Cpp )
 
 	// a must be
 	OSL_ENSURE(
-        sizeof(sal_Int32) == sizeof(void *),
-        "### pointer size differs from sal_Int32!" );
+        sizeof(sal_Int64) == sizeof(void *),
+        "### pointer size differs from sal_Int64!" );
 	RaiseInfo *raiseInfo = ExceptionInfos::getRaiseInfo( pTypeDescr );
 	ULONG_PTR arFilterArgs[4];
 	arFilterArgs[0] = MSVC_magic_number;
