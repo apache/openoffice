@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #include "NumberFormatPropertyPanel.hrc"
 #include <sfx2/sidebar/ResourceDefinitions.hrc>
 #include "sc.hrc"
@@ -131,7 +129,7 @@ Control RID_PROPERTYPANEL_SC_NUMBERFORMAT
 	{
 		Pos = MAP_APPFONT ( FT_LEADZEROES_X, FT_LEADZEROES_Y ) ;
 		Size = MAP_APPFONT (PROPERTYPAGE_WIDTH - MBOX_WIDTH * 2 - SECTIONPAGE_MARGIN_HORIZONTAL * 2, TEXT_HEIGHT ) ;
-		Text [ en-US ] = "Leading ~zeroes:" ;
+		Text [ en-US ] = "Leading ~zeros:" ;
 	};
 	NumericField ED_LEADZEROES
 	{
@@ -139,7 +137,7 @@ Control RID_PROPERTYPANEL_SC_NUMBERFORMAT
 		Pos = MAP_APPFONT ( LB_LEADZEROES_X, LB_LEADZEROES_Y ) ;
 		Size = MAP_APPFONT ( MBOX_WIDTH, MBOX_HEIGHT ) ;
 		HelpID = HID_PROPERTY_PANEL_NUMFMT_ED_LEADZEROES ;
-		QuickHelpText [ en-US ] = "Enter the maximum number of zeroes to display before the decimal point." ;
+		QuickHelpText [ en-US ] = "Enter the maximum number of zeros to display before the decimal point." ;
 		Spin = TRUE ;
 		Maximum = 20 ;
 		Last = 15 ;

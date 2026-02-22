@@ -64,7 +64,7 @@
 		<hbox spacing="5">
 		    <vbox spacing="5" cnt:fill="false" cnt:expand="false">
 			<fixedtext id="FT_DECIMALS" _label="~Decimal places"/>
-			<fixedtext id="FT_LEADZEROES" _label="Leading ~zeroes"/>
+			<fixedtext id="FT_LEADZEROES" _label="Leading ~zeros"/>
 		    </vbox>
 		    <vbox spacing="5" cnt:fill="false" cnt:expand="false">
 			<numericfield has_border="true" first="0" last="15" minimum="0" value="2" maximum="20" repeat="true" id="ED_DECIMALS" spin="true" spin-size="1" strict-format="true" cnt:expand="false"/>

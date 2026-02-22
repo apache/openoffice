@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #include "prnsetup.hrc"
 
 String STR_SVT_PRNDLG_READY
@@ -134,110 +132,112 @@ String STR_SVT_PRNDLG_JOBCOUNT
 
 ModalDialog DLG_SVT_PRNDLG_PRNSETUPDLG
 {
-    HelpID = "svtools:ModalDialog:DLG_SVT_PRNDLG_PRNSETUPDLG";
+	HelpID = "svtools:ModalDialog:DLG_SVT_PRNDLG_PRNSETUPDLG" ;
 	OutputSize = TRUE ;
 	SVLook = TRUE ;
 	Moveable = TRUE ;
-	Size = MAP_APPFONT ( 260 , 104 ) ;
+	Size = MAP_APPFONT ( 260, 104 ) ;
 	Text [ en-US ] = "Printer Setup" ;
 	FixedLine FL_PRINTER
 	{
-		Pos = MAP_APPFONT ( 6 , 3 ) ;
-		Size = MAP_APPFONT ( 248 , 8 ) ;
+		Pos = MAP_APPFONT ( 6, 3 ) ;
+		Size = MAP_APPFONT ( 248, 8 ) ;
 		Text [ en-US ] = "Printer" ;
 	};
 	FixedText FT_NAME
 	{
-		Pos = MAP_APPFONT ( 12 , 14 ) ;
-		Size = MAP_APPFONT ( 45 , 10 ) ;
+		Pos = MAP_APPFONT ( 12, 14 ) ;
+		Size = MAP_APPFONT ( 45, 10 ) ;
 		Text [ en-US ] = "~Name" ;
 	};
 	ListBox LB_NAMES
 	{
-	    HelpID = "svtools:ListBox:DLG_SVT_PRNDLG_PRNSETUPDLG:LB_NAMES";
+		HelpID = "svtools:ListBox:DLG_SVT_PRNDLG_PRNSETUPDLG:LB_NAMES" ;
 		Border = TRUE ;
-		Pos = MAP_APPFONT ( 60 , 12 ) ;
-		Size = MAP_APPFONT ( 125 , 80 ) ;
+		Pos = MAP_APPFONT ( 60, 12 ) ;
+		Size = MAP_APPFONT ( 125, 80 ) ;
 		DropDown = TRUE ;
 		Sort = TRUE ;
 	};
 	PushButton BTN_PROPERTIES
 	{
-	    HelpID = "svtools:PushButton:DLG_SVT_PRNDLG_PRNSETUPDLG:BTN_PROPERTIES";
-		Pos = MAP_APPFONT ( 188 , 12 ) ;
-		Size = MAP_APPFONT ( 60 , 14 ) ;
+		HelpID = "svtools:PushButton:DLG_SVT_PRNDLG_PRNSETUPDLG:BTN_PROPERTIES" ;
+		Pos = MAP_APPFONT ( 188, 12 ) ;
+		Size = MAP_APPFONT ( 60, 14 ) ;
 		Text [ en-US ] = "Propert~ies..." ;
 	};
 	FixedText FT_STATUS
 	{
-		Pos = MAP_APPFONT ( 12 , 29 ) ;
-		Size = MAP_APPFONT ( 45 , 10 ) ;
+		Pos = MAP_APPFONT ( 12, 29 ) ;
+		Size = MAP_APPFONT ( 45, 10 ) ;
 		Text [ en-US ] = "Status" ;
 	};
 	FixedText FI_STATUS
 	{
-		Pos = MAP_APPFONT ( 60 , 29 ) ;
-		Size = MAP_APPFONT ( 188 , 10 ) ;
+		Pos = MAP_APPFONT ( 60, 29 ) ;
+		Size = MAP_APPFONT ( 188, 10 ) ;
 	};
 	FixedText FT_TYPE
 	{
-		Pos = MAP_APPFONT ( 12 , 40 ) ;
-		Size = MAP_APPFONT ( 45 , 10 ) ;
+		Pos = MAP_APPFONT ( 12, 40 ) ;
+		Size = MAP_APPFONT ( 45, 10 ) ;
 		Text [ en-US ] = "Type" ;
 	};
 	FixedText FI_TYPE
 	{
-		Pos = MAP_APPFONT ( 60 , 40 ) ;
-		Size = MAP_APPFONT ( 188 , 10 ) ;
+		Pos = MAP_APPFONT ( 60, 40 ) ;
+		Size = MAP_APPFONT ( 188, 10 ) ;
 	};
 	FixedText FT_LOCATION
 	{
-		Pos = MAP_APPFONT ( 12 , 51 ) ;
-		Size = MAP_APPFONT ( 45 , 10 ) ;
+		Pos = MAP_APPFONT ( 12, 51 ) ;
+		Size = MAP_APPFONT ( 45, 10 ) ;
 		Text [ en-US ] = "Location" ;
 	};
 	FixedText FI_LOCATION
 	{
-		Pos = MAP_APPFONT ( 60 , 51 ) ;
-		Size = MAP_APPFONT ( 188 , 10 ) ;
+		Pos = MAP_APPFONT ( 60, 51 ) ;
+		Size = MAP_APPFONT ( 188, 10 ) ;
 	};
 	FixedText FT_COMMENT
 	{
-		Pos = MAP_APPFONT ( 12 , 62 ) ;
-		Size = MAP_APPFONT ( 45 , 10 ) ;
+		Pos = MAP_APPFONT ( 12, 62 ) ;
+		Size = MAP_APPFONT ( 45, 10 ) ;
 		Text [ en-US ] = "Comment" ;
 	};
 	FixedText FI_COMMENT
 	{
-		Pos = MAP_APPFONT ( 60 , 62 ) ;
-		Size = MAP_APPFONT ( 188 , 10 ) ;
+		Pos = MAP_APPFONT ( 60, 62 ) ;
+		Size = MAP_APPFONT ( 188, 10 ) ;
 	};
-    FixedLine FL_SEPBUTTON
-    {
-        Pos = MAP_APPFONT ( 0, 78 );
-        Size = MAP_APPFONT ( 260, 2 );
-    };
+	FixedLine FL_SEPBUTTON
+	{
+		Pos = MAP_APPFONT ( 0, 78 ) ;
+		Size = MAP_APPFONT ( 260, 2 ) ;
+	};
 	PushButton BTN_OPTIONS
 	{
-	    HelpID = "svtools:PushButton:DLG_SVT_PRNDLG_PRNSETUPDLG:BTN_OPTIONS";
-		Pos = MAP_APPFONT ( 5 , 84 ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
+		HelpID = "svtools:PushButton:DLG_SVT_PRNDLG_PRNSETUPDLG:BTN_OPTIONS" ;
+		Pos = MAP_APPFONT ( 5, 84 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 		Text [ en-US ] = "~Options..." ;
 	};
 	OKButton BTN_OK
 	{
-		Pos = MAP_APPFONT ( 95 , 84 ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
+		Pos = MAP_APPFONT ( 95, 84 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 		DefButton = TRUE ;
 	};
 	CancelButton BTN_CANCEL
 	{
-		Pos = MAP_APPFONT ( 148 , 84 ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
+		Pos = MAP_APPFONT ( 148, 84 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 	};
 	HelpButton BTN_HELP
 	{
-		Pos = MAP_APPFONT ( 204 , 84 ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
+		Pos = MAP_APPFONT ( 204, 84 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 	};
 };
+
+// ********************************************************************** EOF

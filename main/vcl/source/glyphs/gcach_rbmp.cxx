@@ -113,7 +113,7 @@ static void ImplRotate1_90( unsigned char* p1, const unsigned char* p2,
             for(; nTemp < 0x100U; nTemp += nTemp ) ;
             *(p1++) = (unsigned char)nTemp;
         }
-        // pad scanline with zeroes
+        // pad scanline with zeros
         for( int i = nPad; --i >= 0;)
             *(p1++) = 0;
 
