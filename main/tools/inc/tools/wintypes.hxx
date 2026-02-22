@@ -19,7 +19,6 @@
  *
  *************************************************************/
 
-
 #ifndef _TOOLS_WINTYPES_HXX
 #define _TOOLS_WINTYPES_HXX
 
@@ -41,7 +40,7 @@ typedef sal_uInt16 WindowType;
 #define WINDOW_WINDOW				(WINDOW_FIRST + 0x05)
 #define WINDOW_SYSWINDOW			(WINDOW_FIRST + 0x06)
 #define WINDOW_WORKWINDOW			(WINDOW_FIRST + 0x07)
-// #define WINDOW_MDIWINDOW 		   (WINDOW_FIRST + 0x08)
+//#define WINDOW_MDIWINDOW			(WINDOW_FIRST + 0x08)
 #define WINDOW_FLOATINGWINDOW		(WINDOW_FIRST + 0x09)
 #define WINDOW_DIALOG				(WINDOW_FIRST + 0x0a)
 #define WINDOW_MODELESSDIALOG		(WINDOW_FIRST + 0x0b)
@@ -107,15 +106,14 @@ typedef sal_uInt16 WindowType;
 #define WINDOW_SYSTEMCHILDWINDOW	(WINDOW_FIRST + 0x49)
 #define WINDOW_FIXEDBORDER			(WINDOW_FIRST + 0x4a)
 #define WINDOW_SLIDER				(WINDOW_FIRST + 0x4b)
-#define WINDOW_MENUBARWINDOW        (WINDOW_FIRST + 0x4c)
-#define WINDOW_TREELISTBOX	        (WINDOW_FIRST + 0x4d)
+#define WINDOW_MENUBARWINDOW		(WINDOW_FIRST + 0x4c)
+#define WINDOW_TREELISTBOX			(WINDOW_FIRST + 0x4d)
 #define WINDOW_HELPTEXTWINDOW		(WINDOW_FIRST + 0x4e)
-#define WINDOW_INTROWINDOW		    (WINDOW_FIRST + 0x4f)
-#define WINDOW_LISTBOXWINDOW        (WINDOW_FIRST + 0x50)
-#define WINDOW_DOCKINGAREA          (WINDOW_FIRST + 0x51)
+#define WINDOW_INTROWINDOW			(WINDOW_FIRST + 0x4f)
+#define WINDOW_LISTBOXWINDOW		(WINDOW_FIRST + 0x50)
+#define WINDOW_DOCKINGAREA			(WINDOW_FIRST + 0x51)
 #define WINDOW_RULER				(WINDOW_FIRST + 0x52)
 #define WINDOW_LAST 				(WINDOW_RULER)
-
 
 // ---------------
 // - Window-Bits -
@@ -123,7 +121,7 @@ typedef sal_uInt16 WindowType;
 
 typedef sal_Int64 WinBits;
 
-// Window-Bits fuer Window
+// Window-Bits for Window
 #define WB_CLIPCHILDREN 		((WinBits)0x00000001)
 #define WB_DIALOGCONTROL		((WinBits)0x00000002)
 #define WB_NODIALOGCONTROL		((WinBits)0x00000004)
@@ -133,7 +131,7 @@ typedef sal_Int64 WinBits;
 #define WB_3DLOOK				((WinBits)0x00000040)
 #define WB_AUTOSIZE 			((WinBits)0x00000080)
 
-// Window-Bits fuer SystemWindows
+// Window-Bits for SystemWindow
 #define WB_MOVEABLE 			((WinBits)0x00000100)
 #define WB_ROLLABLE 			((WinBits)0x00000200)
 #define WB_CLOSEABLE			((WinBits)0x00000400)
@@ -150,10 +148,10 @@ typedef sal_Int64 WinBits;
 // WB_SYSTEMCHILDWINDOW on the other hand is to be used on system windows
 // which should be created as system child windows with (more or less)
 // normal event handling
-#define WB_SYSTEMCHILDWINDOW    ((WinBits)SAL_CONST_INT64(0x8000000000))
+#define WB_SYSTEMCHILDWINDOW	((WinBits)SAL_CONST_INT64(0x8000000000))
 #define WB_SIZEMOVE 			(WB_SIZEABLE | WB_MOVEABLE)
 
-// Standard-Window-Bits fuer ChildWindows
+// Standard-Window-Bits for ChildWindow
 #define WB_TABSTOP				((WinBits)0x00000100)
 #define WB_NOTABSTOP			((WinBits)0x00000200)
 #define WB_GROUP				((WinBits)0x00000400)
@@ -177,31 +175,31 @@ typedef sal_Int64 WinBits;
 #define WB_HIDE 				((WinBits)SAL_CONST_INT64(0x80000000))
 #define WB_AUTOHSCROLL			((WinBits)SAL_CONST_INT64(0x10000000))
 #define WB_DOCKABLE 			((WinBits)SAL_CONST_INT64(0x20000000))
-#define WB_AUTOVSCROLL          ((WinBits)SAL_CONST_INT64(0x40000000))
-#define WB_HYPHENATION          (((WinBits)SAL_CONST_INT64(0x800000000)) | WB_WORDBREAK)
-#define WB_CHILDDLGCTRL		    ((WinBits)SAL_CONST_INT64(0x100000000000))
+#define WB_AUTOVSCROLL			((WinBits)SAL_CONST_INT64(0x40000000))
+#define WB_HYPHENATION			(((WinBits)SAL_CONST_INT64(0x800000000)) | WB_WORDBREAK)
+#define WB_CHILDDLGCTRL			((WinBits)SAL_CONST_INT64(0x100000000000))
 
-// system floating window
+// System floating window
 #define WB_SYSTEMFLOATWIN		((WinBits)SAL_CONST_INT64(0x100000000))
-#define WB_INTROWIN             ((WinBits)SAL_CONST_INT64(0x200000000))
-#define WB_NOSHADOW             ((WinBits)SAL_CONST_INT64(0x400000000))
-#define WB_TOOLTIPWIN           ((WinBits)SAL_CONST_INT64(0x800000000))
-#define WB_OWNERDRAWDECORATION  ((WinBits)SAL_CONST_INT64(0x2000000000))
-#define WB_DEFAULTWIN           ((WinBits)SAL_CONST_INT64(0x4000000000))
-#define WB_NEEDSFOCUS           ((WinBits)SAL_CONST_INT64(0x1000000000))
+#define WB_INTROWIN				((WinBits)SAL_CONST_INT64(0x200000000))
+#define WB_NOSHADOW				((WinBits)SAL_CONST_INT64(0x400000000))
+#define WB_TOOLTIPWIN			((WinBits)SAL_CONST_INT64(0x800000000))
+#define WB_OWNERDRAWDECORATION	((WinBits)SAL_CONST_INT64(0x2000000000))
+#define WB_DEFAULTWIN			((WinBits)SAL_CONST_INT64(0x4000000000))
+#define WB_NEEDSFOCUS			((WinBits)SAL_CONST_INT64(0x1000000000))
 
 #define WB_HSCROLL				WB_HORZ
 #define WB_VSCROLL				WB_VERT
 #define WB_TOPIMAGE 			WB_TOP
 
-// Window-Bits for PushButtons
+// Window-Bits for PushButton
 #define WB_DEFBUTTON			((WinBits)0x10000000)
 #define WB_NOLIGHTBORDER		((WinBits)0x20000000)
 #define WB_RECTSTYLE			((WinBits)0x08000000)
 #define WB_SMALLSTYLE			((WinBits)0x04000000)
-#define WB_TOGGLE               ((WinBits)SAL_CONST_INT64(0x1000000000))
-#define WB_BEVELBUTTON          ((WinBits)SAL_CONST_INT64(0x2000000000))
-#define WB_FLATBUTTON           ((WinBits)SAL_CONST_INT64(0x4000000000))
+#define WB_TOGGLE				((WinBits)SAL_CONST_INT64(0x1000000000))
+#define WB_BEVELBUTTON			((WinBits)SAL_CONST_INT64(0x2000000000))
+#define WB_FLATBUTTON			((WinBits)SAL_CONST_INT64(0x4000000000))
 
 // Window-Bits for FixedText
 #define WB_PATHELLIPSIS 		((WinBits)0x00100000)
@@ -210,14 +208,14 @@ typedef sal_Int64 WinBits;
 #define WB_INFO 				((WinBits)0x20000000)
 
 // Window-Bits for CheckBox
-#define WB_CBLINESTYLE          ((WinBits)SAL_CONST_INT64(0x2000000000))
-#define WB_EARLYTOGGLE          ((WinBits)SAL_CONST_INT64(0x4000000000))
+#define WB_CBLINESTYLE			((WinBits)SAL_CONST_INT64(0x2000000000))
+#define WB_EARLYTOGGLE			((WinBits)SAL_CONST_INT64(0x4000000000))
 
 // Window-Bits for Edit
 #define WB_PASSWORD 			((WinBits)0x01000000)
 #define WB_READONLY 			((WinBits)0x02000000)
 #define WB_NOHIDESELECTION		((WinBits)SAL_CONST_INT64(0x1000000000))
-#define WB_FORCECTRLBACKGROUND  ((WinBits)0x80000000)
+#define WB_FORCECTRLBACKGROUND	((WinBits)0x80000000)
 
 // Window-Bits for MultiLineEdit
 #define WB_IGNORETAB			((WinBits)0x20000000)
@@ -242,7 +240,7 @@ typedef sal_Int64 WinBits;
 #define WB_NOSPLITDRAW			((WinBits)0x01000000)
 #define WB_FLATSPLITDRAW		((WinBits)0x02000000)
 
-// Window-Bits for MessageBoxen
+// Window-Bits for MessageBox
 #define WB_OK					((WinBits)0x00100000)
 #define WB_OK_CANCEL			((WinBits)0x00200000)
 #define WB_YES_NO				((WinBits)0x00400000)
@@ -253,8 +251,8 @@ typedef sal_Int64 WinBits;
 #define WB_DEF_RETRY			((WinBits)0x08000000)
 #define WB_DEF_YES				((WinBits)SAL_CONST_INT64(0x10000000))
 #define WB_DEF_NO				((WinBits)SAL_CONST_INT64(0x20000000))
-#define WB_ABORT_RETRY_IGNORE  ((WinBits)SAL_CONST_INT64(0x1000000000))
-#define WB_DEF_IGNORE          ((WinBits)SAL_CONST_INT64(0x2000000000))
+#define WB_ABORT_RETRY_IGNORE	((WinBits)SAL_CONST_INT64(0x1000000000))
+#define WB_DEF_IGNORE			((WinBits)SAL_CONST_INT64(0x2000000000))
 
 // Standard-WinBits
 #define WB_STDWORK				(WB_SIZEMOVE | WB_CLOSEABLE)
@@ -267,16 +265,15 @@ typedef sal_Int64 WinBits;
 #define WB_STDTABCONTROL		0
 
 // For TreeListBox
-#define WB_HASBUTTONS           ((WinBits)SAL_CONST_INT64(0x000100000000))
-#define WB_HASLINES             ((WinBits)SAL_CONST_INT64(0x000200000000))
-#define WB_HASLINESATROOT       ((WinBits)SAL_CONST_INT64(0x000400000000))
-#define WB_HASBUTTONSATROOT     ((WinBits)SAL_CONST_INT64(0x000800000000))
-#define WB_NOINITIALSELECTION   ((WinBits)SAL_CONST_INT64(0x001000000000))
-#define WB_HIDESELECTION        ((WinBits)SAL_CONST_INT64(0x002000000000))
+#define WB_HASBUTTONS			((WinBits)SAL_CONST_INT64(0x000100000000))
+#define WB_HASLINES				((WinBits)SAL_CONST_INT64(0x000200000000))
+#define WB_HASLINESATROOT		((WinBits)SAL_CONST_INT64(0x000400000000))
+#define WB_HASBUTTONSATROOT		((WinBits)SAL_CONST_INT64(0x000800000000))
+#define WB_NOINITIALSELECTION	((WinBits)SAL_CONST_INT64(0x001000000000))
+#define WB_HIDESELECTION		((WinBits)SAL_CONST_INT64(0x002000000000))
 #define WB_FORCE_MAKEVISIBLE	((WinBits)SAL_CONST_INT64(0x004000000000))
 // DO NOT USE: 0x008000000000, that's WB_SYSTEMCHILDWINDOW
-#define WB_QUICK_SEARCH         ((WinBits)SAL_CONST_INT64(0x010000000000))
-
+#define WB_QUICK_SEARCH			((WinBits)SAL_CONST_INT64(0x010000000000))
 
 // For FileOpen Dialog
 #define WB_PATH 				((WinBits)0x00100000)
@@ -285,14 +282,13 @@ typedef sal_Int64 WinBits;
 
 // For Slider
 // Window-Bits for TabControl
-#define WB_SLIDERSET    		((WinBits)0x02000000)
-
+#define WB_SLIDERSET			((WinBits)0x02000000)
 
 // --------------------
 // - extended WinBits -
 // --------------------
-#define WB_EXT_DOCUMENT         ((WinBits)0x00000001)
-#define WB_EXT_DOCMODIFIED      ((WinBits)0x00000002)
+#define WB_EXT_DOCUMENT			((WinBits)0x00000001)
+#define WB_EXT_DOCMODIFIED		((WinBits)0x00000002)
 
 // ---------------
 // - WindowAlign -
@@ -300,9 +296,9 @@ typedef sal_Int64 WinBits;
 
 enum WindowAlign { WINDOWALIGN_LEFT, WINDOWALIGN_TOP, WINDOWALIGN_RIGHT, WINDOWALIGN_BOTTOM };
 enum ImageAlign { IMAGEALIGN_LEFT, IMAGEALIGN_TOP, IMAGEALIGN_RIGHT, IMAGEALIGN_BOTTOM,
-                  IMAGEALIGN_LEFT_TOP, IMAGEALIGN_LEFT_BOTTOM, IMAGEALIGN_TOP_LEFT,
-                  IMAGEALIGN_TOP_RIGHT, IMAGEALIGN_RIGHT_TOP, IMAGEALIGN_RIGHT_BOTTOM,
-                  IMAGEALIGN_BOTTOM_LEFT, IMAGEALIGN_BOTTOM_RIGHT, IMAGEALIGN_CENTER };
+				  IMAGEALIGN_LEFT_TOP, IMAGEALIGN_LEFT_BOTTOM, IMAGEALIGN_TOP_LEFT,
+				  IMAGEALIGN_TOP_RIGHT, IMAGEALIGN_RIGHT_TOP, IMAGEALIGN_RIGHT_BOTTOM,
+				  IMAGEALIGN_BOTTOM_LEFT, IMAGEALIGN_BOTTOM_RIGHT, IMAGEALIGN_CENTER };
 enum SymbolAlign { SYMBOLALIGN_LEFT, SYMBOLALIGN_RIGHT };
 
 // ------------
@@ -310,7 +306,6 @@ enum SymbolAlign { SYMBOLALIGN_LEFT, SYMBOLALIGN_RIGHT };
 // ------------
 
 enum TriState { STATE_NOCHECK, STATE_CHECK, STATE_DONTKNOW };
-
 
 // ----------------------
 // - ButtonDialog-Types -
@@ -337,3 +332,5 @@ typedef sal_uInt16 StandardButtonType;
 enum ProminentEntry { PROMINENT_TOP, PROMINENT_MIDDLE };
 
 #endif // _TOOLS_WINTYPES_HXX
+
+/* vim: set noet sw=4 ts=4: */
