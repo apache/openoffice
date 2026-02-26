@@ -48,17 +48,12 @@ WB_MINSCROLL    - Die Tabs können über 2 zusätzliche Buttons gescrollt werden
 WB_RANGESELECT  - Zusammenhängende Bereiche können selektiert werden
 WB_MULTISELECT  - Einzelne Tabs können selektiert werden
 WB_BORDER       - Oben und unten wird ein Strich gezeichnet
-WB_TOPBORDER    - Oben wird ein Border gezeichnet
-WB_3DTAB        - Die Tabs und der Border werden in 3D gezeichnet
 WB_DRAG         - Vom TabBar wird ein StartDrag-Handler gerufen, wenn
                   Drag and Drop gestartet werden soll. Es wird außerdem
                   im TabBar mit EnableDrop() Drag and Drop eingeschaltet.
 WB_SIZEABLE     - Vom TabBar wird ein Split-Handler gerufen, wenn der Anwender
                   den TabBar in der Breite ändern will
 WB_STDTABBAR    - WB_BORDER
-
-Wenn man den TabBar zum Beispiel als Property-Bar benutzen möchte, sollten
-die WinBits WB_TOPBORDER und WB_3DTAB anstatt WB_BORDER gesetzt werden.
 
 
 Erlaubte PageBits
@@ -96,7 +91,7 @@ werden. Dabei muss in den Handlern folgendes implementiert werden:
 Command         - Wenn in diesem Handler das Dragging gestartet werden
                   soll, muss StartDrag() gerufen werden. Diese Methode
                   selektiert dann den entsprechenden Eintrag oder gibt
-                  sal_False zurück, wenn das Dragging nicht durchgefuhert
+                  sal_False zurück, wenn das Dragging nicht durchgeführt
                   werden kann.
 
 QueryDrop       - Dieser Handler wird von StarView immer dann gerufen, wenn
@@ -291,8 +286,6 @@ Command-Handler überlagert werden. Mit GetPageId() und bei
 
 #define WB_RANGESELECT      ((WinBits)0x00200000)
 #define WB_MULTISELECT      ((WinBits)0x00400000)
-#define WB_TOPBORDER        ((WinBits)0x04000000)
-#define WB_3DTAB            ((WinBits)0x08000000)
 #define WB_MINSCROLL        ((WinBits)0x20000000)
 #define WB_STDTABBAR        WB_BORDER
 
@@ -392,8 +385,8 @@ public:
 	static const sal_uInt16 APPEND;
 	static const sal_uInt16 PAGE_NOT_FOUND;
 
-                    TabBar( Window* pParent, WinBits nWinStyle = WB_STDTABBAR );
-    virtual         ~TabBar();
+					TabBar( Window* pParent, WinBits nWinStyle = WB_STDTABBAR );
+	virtual			~TabBar();
 
 	virtual void    MouseMove( const MouseEvent& rMEvt );
 	virtual void    MouseButtonDown( const MouseEvent& rMEvt );
@@ -514,14 +507,14 @@ public:
 	long            GetSplitSize() const { return mnSplitSize; }
 	long            GetMinSize() const;
 
-    void            SetHelpText( const XubString& rText )
-                        { Window::SetHelpText( rText ); }
-    XubString       GetHelpText() const
-                        { return Window::GetHelpText(); };
-    void            SetHelpId( const rtl::OString& rId )
-                        { Window::SetHelpId( rId ); }
-    const rtl::OString& GetHelpId() const
-                        { return Window::GetHelpId(); }
+	void            SetHelpText( const XubString& rText )
+						{ Window::SetHelpText( rText ); }
+	XubString       GetHelpText() const
+					{ return Window::GetHelpText(); };
+	void            SetHelpId( const rtl::OString& rId )
+						{ Window::SetHelpId( rId ); }
+	const rtl::OString& GetHelpId() const
+						{ return Window::GetHelpId(); }
 
 	void            SetStyle( WinBits nStyle );
 	WinBits         GetStyle() const { return mnWinStyle; }
