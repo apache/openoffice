@@ -91,7 +91,7 @@ public:
         ::Window* pTarget);
 
     /** Let the focus manager transfer the focus from the specified source
-        window to a target window that is determined according the the
+        window to a target window that is determined according to the
         registered links and the given key code.
         When there is no rule for this combination of source window and key
         code then the focus stays where it is.
