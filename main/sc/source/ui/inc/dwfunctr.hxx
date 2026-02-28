@@ -104,7 +104,7 @@ private:
 	void			DoEnter(sal_Bool bOk); //@@ ???
 	void			SetDescription();
 	void			SetLeftRightSize();
-	void			SetTopBottonSize();
+	void			SetTopBottomSize();
 	void			SetMyWidthLeRi(Size &aNewSize);
 	void			SetMyHeightLeRi(Size &aNewSize);
 	void			SetMyWidthToBo(Size &aNewSize);

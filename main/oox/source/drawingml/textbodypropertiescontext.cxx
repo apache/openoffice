@@ -76,8 +76,8 @@ TextBodyPropertiesContext::TextBodyPropertiesContext( ContextHandler& rParent,
     }
 	sValue = xAttributes->getOptionalValue( XML_bIns );
     if( sValue.getLength() ) {
-	sal_Int32 nBottonInset = ( sValue.getLength() != 0 ? GetCoordinate(  sValue ) : 45720 / 360 );
-	mrTextBodyProp.maPropertyMap[ PROP_TextLowerDistance ] <<= static_cast< sal_Int32 >( nBottonInset );
+	sal_Int32 nBottomInset = ( sValue.getLength() != 0 ? GetCoordinate(  sValue ) : 45720 / 360 );
+	mrTextBodyProp.maPropertyMap[ PROP_TextLowerDistance ] <<= static_cast< sal_Int32 >( nBottomInset );
     }
 
 	// ST_TextAnchoringType

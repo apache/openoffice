@@ -322,7 +322,7 @@ void ScFunctionDockWin::SetSize()
 	}
 	else
 	{
-		SetTopBottonSize();
+		SetTopBottomSize();
 	}
 }
 /*************************************************************************
@@ -378,7 +378,7 @@ void ScFunctionDockWin::SetLeftRightSize()
 
 }
 /*************************************************************************
-#*	Member:		SetTopBottonSize							Datum:15.10.97
+#*	Member:		SetTopBottomSize							Datum:15.10.97
 #*------------------------------------------------------------------------
 #*
 #*  Klasse:		ScFunctionDockWin
@@ -392,7 +392,7 @@ void ScFunctionDockWin::SetLeftRightSize()
 #*
 #************************************************************************/
 
-void ScFunctionDockWin::SetTopBottonSize()
+void ScFunctionDockWin::SetTopBottomSize()
 {
 	if(bSizeFlag==sal_False)
 	{

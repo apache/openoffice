@@ -3535,7 +3535,7 @@ void SvxCharPositionPage::Reset( const SfxItemSet& rSet )
 					(SvxCharRotateItem&) rSet.Get( nWhich );
 			if (rItem.IsBottomToTop())
 				m_a90degRB.Check( sal_True );
-			else if (rItem.IsTopToBotton())
+			else if (rItem.IsTopToBottom())
 				m_a270degRB.Check( sal_True );
 			else
 			{
@@ -3702,7 +3702,7 @@ sal_Bool SvxCharPositionPage::FillItemSet( SfxItemSet& rSet )
 		if (m_a90degRB.IsChecked())
 			aItem.SetBottomToTop();
 		else if (m_a270degRB.IsChecked())
-			aItem.SetTopToBotton();
+			aItem.SetTopToBottom();
 		rSet.Put( aItem );
 		bModified |= sal_True;
 	}
