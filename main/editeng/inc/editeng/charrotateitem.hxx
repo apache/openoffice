@@ -75,9 +75,9 @@ public:
 	virtual int 			 operator==( const SfxPoolItem& ) const;
 
 	// our currently only degree values
-	void SetTopToBotton() 					{ SetValue( 2700 ); }
+	void SetTopToBottom() 					{ SetValue( 2700 ); }
 	void SetBottomToTop() 					{ SetValue(  900 ); }
-	sal_Bool IsTopToBotton() const			{ return 2700 == GetValue(); }
+	sal_Bool IsTopToBottom() const			{ return 2700 == GetValue(); }
 	sal_Bool IsBottomToTop() const			{ return  900 == GetValue(); }
 
 	sal_Bool IsFitToLine() const 			{ return bFitToLine; }

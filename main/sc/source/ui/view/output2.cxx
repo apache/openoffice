@@ -3583,7 +3583,7 @@ void ScOutputData::DrawRotated(sal_Bool bPixelToLogic)
 									}
 								}
 
-								// TOPBOTTON and BOTTOMTOP are handled in DrawStrings/DrawEdit
+								// TOPBOTTOM and BOTTOMTOP are handled in DrawStrings/DrawEdit
 								DBG_ASSERT( eOrient == SVX_ORIENTATION_STANDARD && nAttrRotate,
 											"DrawRotated: no rotation" );
 
