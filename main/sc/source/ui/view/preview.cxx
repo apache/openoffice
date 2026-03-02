@@ -27,7 +27,6 @@
 #include "scitems.hxx"
 #include <editeng/eeitem.hxx>
 
-
 #include <svtools/colorcfg.hxx>
 #include <svx/fmview.hxx>
 #include <editeng/sizeitem.hxx>
@@ -39,7 +38,6 @@
 #include <svl/itemset.hxx>
 #include <tools/multisel.hxx>
 #include <vcl/waitobj.hxx>
-#include <vcl/sound.hxx>
 
 #include "preview.hxx"
 #include "prevwsh.hxx"
@@ -69,8 +67,6 @@
 
 // STATIC DATA -----------------------------------------------------------
 
-//#define SC_PREVIEW_SHADOWSIZE	2
-
 long lcl_GetDisplayStart( SCTAB nTab, ScDocument* pDoc, long* pPages )
 {
 	long nDisplayStart = 0;
@@ -83,7 +79,6 @@ long lcl_GetDisplayStart( SCTAB nTab, ScDocument* pDoc, long* pPages )
 	}
 	return nDisplayStart;
 }
-
 
 ScPreview::ScPreview( Window* pParent, ScDocShell* pDocSh, ScPreviewShell* pViewSh ) :
 	Window( pParent ),
@@ -135,7 +130,6 @@ ScPreview::ScPreview( Window* pParent, ScDocShell* pDocSh, ScPreviewShell* pView
 		nRight[i] = 0; // initialized with actual positions when markers are drawn
 }
 
-
 __EXPORT ScPreview::~ScPreview()
 {
 	delete pDrawView;
@@ -182,7 +176,6 @@ void ScPreview::UpdateDrawView() // nTab muss richtig sein
 	}
 }
 
-
 void ScPreview::TestLastPage()
 {
 	if (nPageNo >= nTotalPages)
@@ -216,7 +209,6 @@ void ScPreview::TestLastPage()
 		}
 	}
 }
-
 
 void ScPreview::CalcPages( SCTAB /*nToWhichTab*/ )
 {
@@ -282,8 +274,7 @@ void ScPreview::CalcPages( SCTAB /*nToWhichTab*/ )
 	DoInvalidate();
 }
 
-
-void ScPreview::RecalcPages() // nur nPageNo geaendert
+void ScPreview::RecalcPages() // nur nPageNo geändert
 {
 	if (!bValid)
 		return; // dann wird CalcPages aufgerufen
@@ -327,14 +318,13 @@ void ScPreview::RecalcPages() // nur nPageNo geaendert
 	DoInvalidate();
 }
 
-
 void ScPreview::DoPrint( ScPreviewLocationData* pFillLocation )
 {
 	if (!bValid)
 	{
 		CalcPages(0);
 		RecalcPages();
-		UpdateDrawView(); // Tabelle evtl. geaendert
+		UpdateDrawView(); // Tabelle evtl. geändert
 	}
 
 	Fraction aPreviewZoom( nZoom, 100 );
@@ -443,7 +433,7 @@ void ScPreview::DoPrint( ScPreviewLocationData* pFillLocation )
 			}
 		}
 
-		if (nPrinted)	// wenn nichts, alles grau zeichnen
+		if (nPrinted) // wenn nichts, alles grau zeichnen
 		{
 			aLocalPageSize = pPrintFunc->GetPageSize();
 			aLocalPageSize.Width()  = (long) (aLocalPageSize.Width()  * HMM_PER_TWIPS );
@@ -539,25 +529,6 @@ void ScPreview::DoPrint( ScPreviewLocationData* pFillLocation )
 				--aPixel.Bottom();
 				DrawRect( PixelToLogic( aPixel ) );
 			}
-
-			//	draw shadow
-
-//			SetLineColor();
-//			SetFillColor( aBorderColor );
-
-//			Rectangle aPixel;
-
-//			aPixel = LogicToPixel( Rectangle( nPageEndX, -aOffset.Y(), nPageEndX, nPageEndY ) );
-//			aPixel.Top() += SC_PREVIEW_SHADOWSIZE;
-//			aPixel.Right() += SC_PREVIEW_SHADOWSIZE - 1;
-//			aPixel.Bottom() += SC_PREVIEW_SHADOWSIZE - 1;
-//			DrawRect( PixelToLogic( aPixel ) );
-
-//			aPixel = LogicToPixel( Rectangle( -aOffset.X(), nPageEndY, nPageEndX, nPageEndY ) );
-//			aPixel.Left() += SC_PREVIEW_SHADOWSIZE;
-//			aPixel.Right() += SC_PREVIEW_SHADOWSIZE - 1;
-//			aPixel.Bottom() += SC_PREVIEW_SHADOWSIZE - 1;
-//			DrawRect( PixelToLogic( aPixel ) );
 		}
 	}
 }
@@ -592,7 +563,6 @@ void __EXPORT ScPreview::Command( const CommandEvent& rCEvt )
 		Window::Command( rCEvt );
 }
 
-
 void __EXPORT ScPreview::KeyInput( const KeyEvent& rKEvt )
 {
 	// The + and - keys can't be configured as accelerator entries, so they must be handled directly
@@ -621,7 +591,6 @@ void __EXPORT ScPreview::KeyInput( const KeyEvent& rKEvt )
 		Window::KeyInput(rKEvt);
 }
 
-
 const ScPreviewLocationData& ScPreview::GetLocationData()
 {
 	if ( !pLocationData )
@@ -638,7 +607,6 @@ const ScPreviewLocationData& ScPreview::GetLocationData()
 	return *pLocationData;
 }
 
-
 void ScPreview::DataChanged(sal_Bool bNewTime)
 {
 	if (bNewTime)
@@ -651,7 +619,6 @@ void ScPreview::DataChanged(sal_Bool bNewTime)
 	InvalidateLocationData( SC_HINT_DATACHANGED );
 	Invalidate();
 }
-
 
 String ScPreview::GetPosString()
 {
@@ -673,7 +640,6 @@ String ScPreview::GetPosString()
 
 	return aString;
 }
-
 
 void ScPreview::SetZoom(sal_uInt16 nNewZoom)
 {
@@ -703,7 +669,6 @@ void ScPreview::SetZoom(sal_uInt16 nNewZoom)
 	}
 }
 
-
 void ScPreview::SetPageNo( long nPage )
 {
 	nPageNo = nPage;
@@ -712,7 +677,6 @@ void ScPreview::SetPageNo( long nPage )
 	InvalidateLocationData( SC_HINT_DATACHANGED );
 	Invalidate();
 }
-
 
 long ScPreview::GetFirstPage(SCTAB nTabP)
 {
@@ -738,7 +702,6 @@ long ScPreview::GetFirstPage(SCTAB nTabP)
 	return nPage;
 }
 
-
 Size lcl_GetDocPageSize( ScDocument* pDoc, SCTAB nTab )
 {
 	String aName = pDoc->GetPageStyle( nTab );
@@ -755,7 +718,6 @@ Size lcl_GetDocPageSize( ScDocument* pDoc, SCTAB nTab )
 		return Size();
 	}
 }
-
 
 sal_uInt16 ScPreview::GetOptimalZoom(sal_Bool bWidthOnly)
 {
@@ -791,7 +753,6 @@ sal_uInt16 ScPreview::GetOptimalZoom(sal_Bool bWidthOnly)
 		return nZoom;
 }
 
-
 void ScPreview::SetXOffset( long nX )
 {
 	if ( aOffset.X() == nX )
@@ -817,7 +778,6 @@ void ScPreview::SetXOffset( long nX )
 	InvalidateLocationData( SC_HINT_ACC_VISAREACHANGED );
 	Paint(Rectangle());
 }
-
 
 void ScPreview::SetYOffset( long nY )
 {
@@ -845,10 +805,9 @@ void ScPreview::SetYOffset( long nY )
 	Paint(Rectangle());
 }
 
-
 void ScPreview::DoInvalidate()
 {
-	// Wenn das ganze aus dem GetState der Shell gerufen wird,
+	// Wenn das Ganze aus dem GetState der Shell gerufen wird,
 	// muss das Invalidate hinterher asynchron kommen...
 
 	if (bInGetState)
@@ -1038,62 +997,62 @@ void __EXPORT ScPreview::MouseButtonUp( const MouseEvent& rMEvt )
 
 				if(( bLeftRulerChange || bRightRulerChange ) && ( aButtonUpPt.X() <= ( 0 - aOffset.X() ) || aButtonUpPt.X() > nWidth * HMM_PER_TWIPS - aOffset.X() ) )
 				{
-                    bMoveRulerAction = sal_False;
-                    Paint(Rectangle(0,0,10000,10000));
-                }
-                else if( bLeftRulerChange && ( aButtonUpPt.X() / HMM_PER_TWIPS > nWidth - aLRItem.GetRight() - aOffset.X() / HMM_PER_TWIPS ) )
-                {
-                    bMoveRulerAction = sal_False;
-                    Paint(Rectangle(0,0,10000,10000));
-                }
-                else if( bRightRulerChange && ( aButtonUpPt.X() / HMM_PER_TWIPS < aLRItem.GetLeft() - aOffset.X() / HMM_PER_TWIPS ) )
-                {
-                    bMoveRulerAction = sal_False;
-                    Paint(Rectangle(0,0,10000,10000));
-                }
-                else if( aButtonDownPt.X() == aButtonUpPt.X() )
-                {
-                    bMoveRulerAction = sal_False;
-                    DrawInvert( aButtonUpPt.X(), POINTER_HSIZEBAR );
-                }
-                if( bMoveRulerAction )
-                {
-                    ScDocShellModificator aModificator( *pDocShell );
-                    if( bLeftRulerChange && bLeftRulerMove )
-                    {
-                       aLRItem.SetLeft( (long)( aButtonUpPt.X() / HMM_PER_TWIPS + aOffset.X() / HMM_PER_TWIPS ));
-                       rStyleSet.Put( aLRItem );
-                    }
-                    else if( bRightRulerChange && bRightRulerMove )
-                    {
-                        aLRItem.SetRight( (long)( nWidth - aButtonUpPt.X() / HMM_PER_TWIPS - aOffset.X() / HMM_PER_TWIPS ));
-                        rStyleSet.Put( aLRItem );
-                    }
+					bMoveRulerAction = sal_False;
+					Paint(Rectangle(0,0,10000,10000));
+				}
+				else if( bLeftRulerChange && ( aButtonUpPt.X() / HMM_PER_TWIPS > nWidth - aLRItem.GetRight() - aOffset.X() / HMM_PER_TWIPS ) )
+				{
+					bMoveRulerAction = sal_False;
+					Paint(Rectangle(0,0,10000,10000));
+				}
+				else if( bRightRulerChange && ( aButtonUpPt.X() / HMM_PER_TWIPS < aLRItem.GetLeft() - aOffset.X() / HMM_PER_TWIPS ) )
+				{
+					bMoveRulerAction = sal_False;
+					Paint(Rectangle(0,0,10000,10000));
+				}
+				else if( aButtonDownPt.X() == aButtonUpPt.X() )
+				{
+					bMoveRulerAction = sal_False;
+					DrawInvert( aButtonUpPt.X(), POINTER_HSIZEBAR );
+				}
+				if( bMoveRulerAction )
+				{
+					ScDocShellModificator aModificator( *pDocShell );
+					if( bLeftRulerChange && bLeftRulerMove )
+					{
+						aLRItem.SetLeft( (long)( aButtonUpPt.X() / HMM_PER_TWIPS + aOffset.X() / HMM_PER_TWIPS ));
+						rStyleSet.Put( aLRItem );
+					}
+					else if( bRightRulerChange && bRightRulerMove )
+					{
+						aLRItem.SetRight( (long)( nWidth - aButtonUpPt.X() / HMM_PER_TWIPS - aOffset.X() / HMM_PER_TWIPS ));
+						rStyleSet.Put( aLRItem );
+					}
 
-                    ScStyleSaveData aNewData;
-                    aNewData.InitFromStyle( pStyleSheet );
-                    if( bUndo )
-                    {
-                        pDocShell->GetUndoManager()->AddUndoAction(
-                            new ScUndoModifyStyle( pDocShell, SFX_STYLE_FAMILY_PAGE,
-                            aOldData, aNewData ) );
-                    }
+					ScStyleSaveData aNewData;
+					aNewData.InitFromStyle( pStyleSheet );
+					if( bUndo )
+					{
+						pDocShell->GetUndoManager()->AddUndoAction(
+							new ScUndoModifyStyle( pDocShell, SFX_STYLE_FAMILY_PAGE,
+							aOldData, aNewData ) );
+					}
 
-                    if ( ValidTab( nTab ) )
-                    {
-                        ScPrintFunc aPrintFunc( this, pDocShell, nTab );
-                        aPrintFunc.UpdatePages();
-                    }
+					if ( ValidTab( nTab ) )
+					{
+						ScPrintFunc aPrintFunc( this, pDocShell, nTab );
+						aPrintFunc.UpdatePages();
+					}
 
-                    Rectangle aRect(0,0,10000,10000);
-                    Paint( aRect );
-                    aModificator.SetDocumentModified();
-                    bLeftRulerChange = sal_False;
-                    bRightRulerChange = sal_False;
-                }
-            }
-            bLeftRulerMove = sal_False;
-            bRightRulerMove = sal_False;
+					Rectangle aRect(0,0,10000,10000);
+					Paint( aRect );
+					aModificator.SetDocumentModified();
+					bLeftRulerChange = sal_False;
+					bRightRulerChange = sal_False;
+				}
+			}
+			bLeftRulerMove = sal_False;
+			bRightRulerMove = sal_False;
 		}
 
 		if( rMEvt.IsLeft() && GetPointer() == POINTER_VSIZEBAR )
@@ -1131,65 +1090,65 @@ void __EXPORT ScPreview::MouseButtonUp( const MouseEvent& rMEvt )
 
 					if( bTopRulerMove && bTopRulerChange )
 					{
-                        aULItem.SetUpperValue( (sal_uInt16)( aButtonUpPt.Y() / HMM_PER_TWIPS + aOffset.Y() / HMM_PER_TWIPS ) );
-                        rStyleSet.Put( aULItem );
-                    }
-                    else if( bBottomRulerMove && bBottomRulerChange )
-                    {
-                        aULItem.SetLowerValue( (sal_uInt16)( nHeight - aButtonUpPt.Y() / HMM_PER_TWIPS - aOffset.Y() / HMM_PER_TWIPS ) );
-                        rStyleSet.Put( aULItem );
-                    }
-                    else if( bHeaderRulerMove && bHeaderRulerChange )
-                    {
-                        const SfxPoolItem* pItem = NULL;
-                        if ( rStyleSet.GetItemState( ATTR_PAGE_HEADERSET, sal_False, &pItem ) == SFX_ITEM_SET )
-                        {
-                            SfxItemSet& pHeaderSet = ((SvxSetItem*)pItem)->GetItemSet();
-                            Size  aHeaderSize = ((const SvxSizeItem&)pHeaderSet.Get(ATTR_PAGE_SIZE)).GetSize();
-                            aHeaderSize.Height() = (long)( aButtonUpPt.Y() / HMM_PER_TWIPS + aOffset.Y() / HMM_PER_TWIPS - aULItem.GetUpper());
-                            aHeaderSize.Height() = aHeaderSize.Height() * 100 / mnScale;
-                            SvxSetItem  aNewHeader( (const SvxSetItem&)rStyleSet.Get(ATTR_PAGE_HEADERSET) );
-                            aNewHeader.GetItemSet().Put( SvxSizeItem( ATTR_PAGE_SIZE, aHeaderSize ) );
-                            rStyleSet.Put( aNewHeader );
-                        }
-                    }
-                    else if( bFooterRulerMove && bFooterRulerChange )
-                    {
-                        const SfxPoolItem* pItem = NULL;
-                        if( rStyleSet.GetItemState( ATTR_PAGE_FOOTERSET, sal_False, &pItem ) == SFX_ITEM_SET )
-                        {
-                            SfxItemSet& pFooterSet = ((SvxSetItem*)pItem)->GetItemSet();
-                            Size aFooterSize = ((const SvxSizeItem&)pFooterSet.Get(ATTR_PAGE_SIZE)).GetSize();
-                            aFooterSize.Height() = (long)( nHeight - aButtonUpPt.Y() / HMM_PER_TWIPS - aOffset.Y() / HMM_PER_TWIPS - aULItem.GetLower() );
-                            aFooterSize.Height() = aFooterSize.Height() * 100 / mnScale;
-                            SvxSetItem  aNewFooter( (const SvxSetItem&)rStyleSet.Get(ATTR_PAGE_FOOTERSET) );
-                            aNewFooter.GetItemSet().Put( SvxSizeItem( ATTR_PAGE_SIZE, aFooterSize ) );
-                            rStyleSet.Put( aNewFooter );
-                        }
-                    }
+						aULItem.SetUpperValue( (sal_uInt16)( aButtonUpPt.Y() / HMM_PER_TWIPS + aOffset.Y() / HMM_PER_TWIPS ) );
+						rStyleSet.Put( aULItem );
+					}
+					else if( bBottomRulerMove && bBottomRulerChange )
+					{
+						aULItem.SetLowerValue( (sal_uInt16)( nHeight - aButtonUpPt.Y() / HMM_PER_TWIPS - aOffset.Y() / HMM_PER_TWIPS ) );
+						rStyleSet.Put( aULItem );
+					}
+					else if( bHeaderRulerMove && bHeaderRulerChange )
+					{
+						const SfxPoolItem* pItem = NULL;
+						if ( rStyleSet.GetItemState( ATTR_PAGE_HEADERSET, sal_False, &pItem ) == SFX_ITEM_SET )
+						{
+							SfxItemSet& pHeaderSet = ((SvxSetItem*)pItem)->GetItemSet();
+							Size  aHeaderSize = ((const SvxSizeItem&)pHeaderSet.Get(ATTR_PAGE_SIZE)).GetSize();
+							aHeaderSize.Height() = (long)( aButtonUpPt.Y() / HMM_PER_TWIPS + aOffset.Y() / HMM_PER_TWIPS - aULItem.GetUpper());
+							aHeaderSize.Height() = aHeaderSize.Height() * 100 / mnScale;
+							SvxSetItem  aNewHeader( (const SvxSetItem&)rStyleSet.Get(ATTR_PAGE_HEADERSET) );
+							aNewHeader.GetItemSet().Put( SvxSizeItem( ATTR_PAGE_SIZE, aHeaderSize ) );
+							rStyleSet.Put( aNewHeader );
+						}
+					}
+					else if( bFooterRulerMove && bFooterRulerChange )
+					{
+						const SfxPoolItem* pItem = NULL;
+						if( rStyleSet.GetItemState( ATTR_PAGE_FOOTERSET, sal_False, &pItem ) == SFX_ITEM_SET )
+						{
+							SfxItemSet& pFooterSet = ((SvxSetItem*)pItem)->GetItemSet();
+							Size aFooterSize = ((const SvxSizeItem&)pFooterSet.Get(ATTR_PAGE_SIZE)).GetSize();
+							aFooterSize.Height() = (long)( nHeight - aButtonUpPt.Y() / HMM_PER_TWIPS - aOffset.Y() / HMM_PER_TWIPS - aULItem.GetLower() );
+							aFooterSize.Height() = aFooterSize.Height() * 100 / mnScale;
+							SvxSetItem  aNewFooter( (const SvxSetItem&)rStyleSet.Get(ATTR_PAGE_FOOTERSET) );
+							aNewFooter.GetItemSet().Put( SvxSizeItem( ATTR_PAGE_SIZE, aFooterSize ) );
+							rStyleSet.Put( aNewFooter );
+						}
+					}
 
-                    ScStyleSaveData aNewData;
-                    aNewData.InitFromStyle( pStyleSheet );
-                    if( bUndo )
-                    {
-                        pDocShell->GetUndoManager()->AddUndoAction(
-                            new ScUndoModifyStyle( pDocShell, SFX_STYLE_FAMILY_PAGE,
-                            aOldData, aNewData ) );
-                    }
+					ScStyleSaveData aNewData;
+					aNewData.InitFromStyle( pStyleSheet );
+					if( bUndo )
+					{
+						pDocShell->GetUndoManager()->AddUndoAction(
+							new ScUndoModifyStyle( pDocShell, SFX_STYLE_FAMILY_PAGE,
+							aOldData, aNewData ) );
+					}
 
-                    if ( ValidTab( nTab ) )
-                    {
-                        ScPrintFunc aPrintFunc( this, pDocShell, nTab );
-                        aPrintFunc.UpdatePages();
-                    }
+					if ( ValidTab( nTab ) )
+					{
+						ScPrintFunc aPrintFunc( this, pDocShell, nTab );
+						aPrintFunc.UpdatePages();
+					}
 
-                    Rectangle  aRect(0,0,10000,10000);
-                    Paint( aRect );
-                    aModificator.SetDocumentModified();
-                    bTopRulerChange = sal_False;
-                    bBottomRulerChange = sal_False;
-                    bHeaderRulerChange = sal_False;
-                    bFooterRulerChange = sal_False;
+					Rectangle  aRect(0,0,10000,10000);
+					Paint( aRect );
+					aModificator.SetDocumentModified();
+					bTopRulerChange = sal_False;
+					bBottomRulerChange = sal_False;
+					bHeaderRulerChange = sal_False;
+					bFooterRulerChange = sal_False;
 				}
 			}
 			bTopRulerMove = sal_False;
@@ -1226,18 +1185,18 @@ void __EXPORT ScPreview::MouseButtonUp( const MouseEvent& rMEvt )
 				else
 				{
 
-                    nNewColWidth = (long) ( PixelToLogic( Point( nRight[ nColNumberButttonDown ] - rMEvt.GetPosPixel().X(), 0), aMMMode ).X() / HMM_PER_TWIPS ) * 100 / mnScale;
-                    nNewColWidth += pDocShell->GetDocument()->GetColWidth( nColNumberButttonDown, nTab );
-                }
+					nNewColWidth = (long) ( PixelToLogic( Point( nRight[ nColNumberButttonDown ] - rMEvt.GetPosPixel().X(), 0), aMMMode ).X() / HMM_PER_TWIPS ) * 100 / mnScale;
+					nNewColWidth += pDocShell->GetDocument()->GetColWidth( nColNumberButttonDown, nTab );
+				}
 
-                if( nNewColWidth >= 0 )
-                {
-                    aFunc.SetWidthOrHeight( sal_True, 1,nCols, nTab, SC_SIZE_DIRECT, (sal_uInt16)nNewColWidth, sal_True, sal_True);
-                }
-                if ( ValidTab( nTab ) )
-                {
-                    ScPrintFunc aPrintFunc( this, pDocShell, nTab );
-                    aPrintFunc.UpdatePages();
+				if( nNewColWidth >= 0 )
+				{
+					aFunc.SetWidthOrHeight( sal_True, 1,nCols, nTab, SC_SIZE_DIRECT, (sal_uInt16)nNewColWidth, sal_True, sal_True);
+				}
+				if ( ValidTab( nTab ) )
+				{
+					ScPrintFunc aPrintFunc( this, pDocShell, nTab );
+					aPrintFunc.UpdatePages();
 				}
 				Rectangle  nRect(0,0,10000,10000);
 				Paint( nRect );
@@ -1254,14 +1213,14 @@ void __EXPORT ScPreview::MouseMove( const MouseEvent& rMEvt )
 	MapMode  aMMMode( MAP_100TH_MM, Point(), aHorPrevZoom, aPreviewZoom );
 	Point    aMouseMovePoint = PixelToLogic( rMEvt.GetPosPixel(), aMMMode );
 
-	long    nLeftMargin = 0;
-	long    nRightMargin = 0;
-	long    nTopMargin = 0;
-	long    nBottomMargin = 0;
-	Size    PageSize;
+	long	nLeftMargin = 0;
+	long	nRightMargin = 0;
+	long	nTopMargin = 0;
+	long	nBottomMargin = 0;
+	Size	PageSize;
 
-	long    nWidth = (long) lcl_GetDocPageSize(pDocShell->GetDocument(), nTab).Width();
-	long    nHeight = (long) lcl_GetDocPageSize(pDocShell->GetDocument(), nTab).Height();
+	long	nWidth = (long) lcl_GetDocPageSize(pDocShell->GetDocument(), nTab).Width();
+	long	nHeight = (long) lcl_GetDocPageSize(pDocShell->GetDocument(), nTab).Height();
 
 	if ( nPageNo < nTotalPages )
 	{
@@ -1378,21 +1337,21 @@ void __EXPORT ScPreview::MouseMove( const MouseEvent& rMEvt )
 			{
 				if( bLeftRulerChange && !bTopRulerMove && !bBottomRulerMove && !bHeaderRulerMove && !bFooterRulerMove )
 				{
-                    SetPointer( Pointer( POINTER_HSIZEBAR ) );
-                    if( bLeftRulerMove )
-                    {
-                       if( aMouseMovePoint.X() > -aOffset.X() && aMouseMovePoint.X() < nWidth * HMM_PER_TWIPS - aOffset.X() )
-                           DragMove( aMouseMovePoint.X(), POINTER_HSIZEBAR );
-                    }
+					SetPointer( Pointer( POINTER_HSIZEBAR ) );
+					if( bLeftRulerMove )
+					{
+						if( aMouseMovePoint.X() > -aOffset.X() && aMouseMovePoint.X() < nWidth * HMM_PER_TWIPS - aOffset.X() )
+							DragMove( aMouseMovePoint.X(), POINTER_HSIZEBAR );
+					}
 				}
 				else if( bRightRulerChange && !bTopRulerMove && !bBottomRulerMove && !bHeaderRulerMove && !bFooterRulerMove )
 				{
-                    SetPointer( Pointer( POINTER_HSIZEBAR ) );
-                    if( bRightRulerMove )
-                    {
-                       if( aMouseMovePoint.X() > -aOffset.X() && aMouseMovePoint.X() < nWidth * HMM_PER_TWIPS - aOffset.X() )
-                           DragMove( aMouseMovePoint.X(), POINTER_HSIZEBAR );
-                    }
+					SetPointer( Pointer( POINTER_HSIZEBAR ) );
+					if( bRightRulerMove )
+					{
+						if( aMouseMovePoint.X() > -aOffset.X() && aMouseMovePoint.X() < nWidth * HMM_PER_TWIPS - aOffset.X() )
+							DragMove( aMouseMovePoint.X(), POINTER_HSIZEBAR );
+					}
 				}
 			}
 		}
@@ -1406,33 +1365,33 @@ void __EXPORT ScPreview::MouseMove( const MouseEvent& rMEvt )
 			{
 				if( bTopRulerChange )
 				{
-                    SetPointer( Pointer( POINTER_VSIZEBAR ) );
-                    if( bTopRulerMove )
-                    {
-                        if( aMouseMovePoint.Y() > -aOffset.Y() && aMouseMovePoint.Y() < nHeight * HMM_PER_TWIPS - aOffset.Y() )
-                            DragMove( aMouseMovePoint.Y(), POINTER_VSIZEBAR );
-                    }
-                }
-                else if( bBottomRulerChange )
-                {
-                    SetPointer( Pointer( POINTER_VSIZEBAR ) );
-                    if( bBottomRulerMove )
-                    {
-                        if( aMouseMovePoint.Y() > -aOffset.Y() && aMouseMovePoint.Y() < nHeight * HMM_PER_TWIPS - aOffset.Y() )
-                            DragMove( aMouseMovePoint.Y(), POINTER_VSIZEBAR );
-                    }
-                }
-                else if( bHeaderRulerChange )
-                {
-                    SetPointer( Pointer( POINTER_VSIZEBAR ) );
-                    if( bHeaderRulerMove )
-                    {
-                        if( aMouseMovePoint.Y() > -aOffset.Y() && aMouseMovePoint.Y() < nHeight * HMM_PER_TWIPS - aOffset.Y() )
-                            DragMove( aMouseMovePoint.Y(), POINTER_VSIZEBAR );
-                    }
-                }
-                else if( bFooterRulerChange )
-                {
+					SetPointer( Pointer( POINTER_VSIZEBAR ) );
+					if( bTopRulerMove )
+					{
+						if( aMouseMovePoint.Y() > -aOffset.Y() && aMouseMovePoint.Y() < nHeight * HMM_PER_TWIPS - aOffset.Y() )
+							DragMove( aMouseMovePoint.Y(), POINTER_VSIZEBAR );
+					}
+				}
+				else if( bBottomRulerChange )
+				{
+					SetPointer( Pointer( POINTER_VSIZEBAR ) );
+					if( bBottomRulerMove )
+					{
+						if( aMouseMovePoint.Y() > -aOffset.Y() && aMouseMovePoint.Y() < nHeight * HMM_PER_TWIPS - aOffset.Y() )
+							DragMove( aMouseMovePoint.Y(), POINTER_VSIZEBAR );
+					}
+				}
+				else if( bHeaderRulerChange )
+				{
+					SetPointer( Pointer( POINTER_VSIZEBAR ) );
+					if( bHeaderRulerMove )
+					{
+						if( aMouseMovePoint.Y() > -aOffset.Y() && aMouseMovePoint.Y() < nHeight * HMM_PER_TWIPS - aOffset.Y() )
+							DragMove( aMouseMovePoint.Y(), POINTER_VSIZEBAR );
+					}
+				}
+				else if( bFooterRulerChange )
+				{
 					SetPointer( Pointer( POINTER_VSIZEBAR ) );
 					if( bFooterRulerMove )
 					{
