@@ -51,9 +51,9 @@
 #include <gloshdl.hxx>
 #include <glosdoc.hxx>
 #include <shellio.hxx>
-#include <swundo.hxx>               	// fuer Undo-Ids
+#include <swundo.hxx>               	// for Undo-Ids
 #include <expfld.hxx>
-#include <initui.hxx>					// fuer ::GetGlossaries()
+#include <initui.hxx>					// for ::GetGlossaries()
 #include <gloslst.hxx>
 #include <swdtflvr.hxx>
 #ifndef _DOCSH_HXX
@@ -82,7 +82,7 @@ using namespace ::com::sun::star;
 
 const short RET_EDIT = 100;
 
-// PUBLIC METHODES -------------------------------------------------------
+// PUBLIC METHODS -------------------------------------------------------
 struct TextBlockInfo_Impl
 {
 	String sTitle;
@@ -94,9 +94,8 @@ SV_DECL_PTRARR_DEL( TextBlockInfoArr, TextBlockInfo_ImplPtr, 0, 4 )
 SV_IMPL_PTRARR( TextBlockInfoArr, TextBlockInfo_ImplPtr )
 SV_IMPL_REF( SwDocShell )
 /*------------------------------------------------------------------------
-	Beschreibung:	Dialog fuer Bearbeiten Vorlagen
+ Beschreibung: Dialog für Bearbeiten Vorlagen
 ------------------------------------------------------------------------*/
-
 
 void SwGlossaryHdl::GlossaryDlg()
 {
@@ -125,11 +124,10 @@ void SwGlossaryHdl::GlossaryDlg()
 }
 
 /*------------------------------------------------------------------------
-	Beschreibung:	Setzen der aktuellen Gruppe; falls aus dem Dialog
-					gerufen, wird die Gruppe temp. erzeugt fuer einen
-					schnelleren Zugriff
+ Beschreibung: Setzen der aktuellen Gruppe; falls aus dem Dialog
+			   gerufen, wird die Gruppe temp. erzeugt für einen
+			   schnelleren Zugriff
 ------------------------------------------------------------------------*/
-
 
 void SwGlossaryHdl::SetCurGroup(const String &rGrp, sal_Bool bApi, sal_Bool bAlwaysCreateNew )
 {
@@ -188,7 +186,6 @@ void SwGlossaryHdl::SetCurGroup(const String &rGrp, sal_Bool bApi, sal_Bool bAlw
 	Beschreibung:
 ------------------------------------------------------------------------*/
 
-
 sal_uInt16 SwGlossaryHdl::GetGroupCnt() const
 {
 	return rStatGlossaries.GetGroupCnt();
@@ -197,7 +194,6 @@ sal_uInt16 SwGlossaryHdl::GetGroupCnt() const
 /*------------------------------------------------------------------------
 	Beschreibung:
 ------------------------------------------------------------------------*/
-
 
 String SwGlossaryHdl::GetGroupName( sal_uInt16 nId, String* pTitle )
 {
@@ -223,7 +219,6 @@ String SwGlossaryHdl::GetGroupName( sal_uInt16 nId, String* pTitle )
 /*------------------------------------------------------------------------
 	Beschreibung:
 ------------------------------------------------------------------------*/
-
 
 sal_Bool SwGlossaryHdl::NewGroup(String &rGrpName, const String& rTitle)
 {
@@ -279,7 +274,7 @@ sal_Bool SwGlossaryHdl::CopyOrMove( const String& rSourceGroupName,  String& rSo
 	if(bMove && pSourceGroup->IsOld() && 0 != pSourceGroup->ConvertToNew())
 		return sal_False;*/
 
-	//Der Index muss hier ermittelt werden, weil rSourceShortName in CopyBlock evtl veraendert wird
+	// Der Index muss hier ermittelt werden, weil rSourceShortName in CopyBlock evtl. verändert wird
 	sal_uInt16 nDeleteIdx = pSourceGroup->GetIndex( rSourceShortName );
 	DBG_ASSERT(USHRT_MAX != nDeleteIdx, "Eintrag nicht gefunden");
 	sal_uLong nRet = pSourceGroup->CopyBlock( *pDestGroup, rSourceShortName, rLongName );
@@ -294,9 +289,8 @@ sal_Bool SwGlossaryHdl::CopyOrMove( const String& rSourceGroupName,  String& rSo
 }
 
 /*------------------------------------------------------------------------
-	Beschreibung: Loeschen einer Textbausteindatei-Gruppe
+	Beschreibung: Löschen einer Textbausteindatei-Gruppe
 ------------------------------------------------------------------------*/
-
 
 sal_Bool SwGlossaryHdl::DelGroup(const String &rGrpName)
 {
@@ -317,9 +311,8 @@ sal_Bool SwGlossaryHdl::DelGroup(const String &rGrpName)
 }
 
 /*------------------------------------------------------------------------
-	Beschreibung:	Anzahl Textbausteine erfragen
+	Beschreibung: Anzahl Textbausteine erfragen
 ------------------------------------------------------------------------*/
-
 
 sal_uInt16 SwGlossaryHdl::GetGlossaryCnt()
 {
@@ -329,7 +322,6 @@ sal_uInt16 SwGlossaryHdl::GetGlossaryCnt()
 /*------------------------------------------------------------------------
 	Beschreibung:
 ------------------------------------------------------------------------*/
-
 
 String SwGlossaryHdl::GetGlossaryName( sal_uInt16 nId )
 {
@@ -345,11 +337,9 @@ String	SwGlossaryHdl::GetGlossaryShortName(sal_uInt16 nId)
 	return pCurGrp->GetShortName( nId );
 }
 
-
 /*------------------------------------------------------------------------
-	Beschreibung:	Kurzname erfragen
+ Beschreibung: Kurzname erfragen
 ------------------------------------------------------------------------*/
-
 
 String SwGlossaryHdl::GetGlossaryShortName(const String &rName)
 {
@@ -368,9 +358,8 @@ String SwGlossaryHdl::GetGlossaryShortName(const String &rName)
 }
 
 /*------------------------------------------------------------------------
- Beschreibung:	Kuerzel fuer Textbaustein bereits verwendet?
+ Beschreibung: Kürzel für Textbaustein bereits verwendet?
 ------------------------------------------------------------------------*/
-
 
 sal_Bool SwGlossaryHdl::HasShortName(const String& rShortName) const
 {
@@ -405,7 +394,7 @@ sal_Bool    SwGlossaryHdl::ConvertToNew(SwTextBlocks& /*rOld*/)
 }
 
 /*------------------------------------------------------------------------
-	Beschreibung:	Erzeugen eines Textbausteines
+	Beschreibung: Erzeugen eines Textbausteines
 ------------------------------------------------------------------------*/
 
 sal_Bool SwGlossaryHdl::NewGlossary(const String& rName, const String& rShortName,
@@ -431,7 +420,7 @@ sal_Bool SwGlossaryHdl::NewGlossary(const String& rName, const String& rShortNam
 	const SvxAutoCorrCfg* pCfg = SvxAutoCorrCfg::Get();
 
 	const sal_uInt16 nSuccess = pWrtShell->MakeGlossary( *pTmp, rName, rShortName,
-                            pCfg->IsSaveRelFile(), pOnlyTxt );
+							pCfg->IsSaveRelFile(), pOnlyTxt );
 	if(nSuccess == (sal_uInt16) -1 )
 	{
 		InfoBox(pWrtShell->GetView().GetWindow(), SW_RES(MSG_ERR_INSERT_GLOS)).Execute();
@@ -441,9 +430,8 @@ sal_Bool SwGlossaryHdl::NewGlossary(const String& rName, const String& rShortNam
 	return sal_Bool( nSuccess != (sal_uInt16) -1 );
 }
 /*------------------------------------------------------------------------
-	Beschreibung:	Loeschen eines Textbausteines
+ Beschreibung: Löschen eines Textbausteines
 ------------------------------------------------------------------------*/
-
 
 sal_Bool SwGlossaryHdl::DelGlossary(const String &rShortName)
 {
@@ -464,7 +452,6 @@ sal_Bool SwGlossaryHdl::DelGlossary(const String &rShortName)
 /*------------------------------------------------------------------------
 	Beschreibung: Kurzform expandieren
 ------------------------------------------------------------------------*/
-
 
 sal_Bool SwGlossaryHdl::ExpandGlossary()
 {
@@ -556,11 +543,11 @@ sal_Bool SwGlossaryHdl::Expand( const String& rShortName,
 			}
 			else
 			{
-                SwAbstractDialogFactory* pFact = SwAbstractDialogFactory::Create();
-                DBG_ASSERT(pFact, "SwAbstractDialogFactory fail!");
+				SwAbstractDialogFactory* pFact = SwAbstractDialogFactory::Create();
+				DBG_ASSERT(pFact, "SwAbstractDialogFactory fail!");
 
 				AbstractSwSelGlossaryDlg* pDlg = pFact->CreateSwSelGlossaryDlg( 0, aShortName, DLG_SEL_GLOS );
-                DBG_ASSERT(pDlg, "Dialogdiet fail!");
+				DBG_ASSERT(pDlg, "Dialogdiet fail!");
 				for(sal_uInt16 i = 0; i < aFoundArr.Count(); ++i)
 				{
 					TextBlockInfo_Impl* pData = aFoundArr.GetObject(i);
@@ -616,7 +603,7 @@ sal_Bool SwGlossaryHdl::Expand( const String& rShortName,
 	// StartAction darf nicht vor HasSelection und DelRight stehen,
 	// sonst wird der mögliche Shellwechsel verzögert und
 	// API-Programme würden dann hängenbleiben
-	// ausserdem darf das Ereignismacro ebenfalls nicht in einer Action gerufen werden
+	// außerdem darf das Ereignismacro ebenfalls nicht in einer Action gerufen werden
 		pWrtShell->StartUndo(UNDO_INSGLOSSARY);
 		if( aStartMacro.GetMacName().Len() )
 			pWrtShell->ExecMacro( aStartMacro );
@@ -644,9 +631,8 @@ sal_Bool SwGlossaryHdl::Expand( const String& rShortName,
 }
 
 /*------------------------------------------------------------------------
-	Beschreibung: Textbaustein einfuegen
+	Beschreibung: Textbaustein einfügen
 ------------------------------------------------------------------------*/
-
 
 sal_Bool SwGlossaryHdl::InsertGlossary(const String &rName)
 {
@@ -682,7 +668,7 @@ sal_Bool SwGlossaryHdl::InsertGlossary(const String &rName)
 		pWrtShell->ExecMacro( aEndMacro );
 	}
 
-	// fuer alle neuen InputFelder die Eingaben abfordern
+	// für alle neuen InputFelder die Eingaben abfordern
 	if( aFldLst.BuildSortLst() )
 		pWrtShell->UpdateInputFlds( &aFldLst );
 
@@ -692,9 +678,8 @@ sal_Bool SwGlossaryHdl::InsertGlossary(const String &rName)
 }
 
 /*------------------------------------------------------------------------
- Beschreibung:	Macro setzen / erfragen
+ Beschreibung: Macro setzen / erfragen
 ------------------------------------------------------------------------*/
-
 
 void SwGlossaryHdl::SetMacros(const String& rShortName,
 							  const SvxMacro* pStart,
@@ -745,11 +730,9 @@ void SwGlossaryHdl::GetMacros( const String &rShortName,
 		rStatGlossaries.PutGroupDoc( pGlos );
 }
 
-
 /*------------------------------------------------------------------------
-	Beschreibung:	ctor, dtor
+ Beschreibung: ctor, dtor
 ------------------------------------------------------------------------*/
-
 
 SwGlossaryHdl::SwGlossaryHdl(SfxViewFrame* pVwFrm, SwWrtShell *pSh)
 	: rStatGlossaries( *::GetGlossaries() ),
@@ -760,7 +743,6 @@ SwGlossaryHdl::SwGlossaryHdl(SfxViewFrame* pVwFrm, SwWrtShell *pSh)
 {
 }
 
-
 SwGlossaryHdl::~SwGlossaryHdl()
 {
 	if( pCurGrp )
@@ -768,9 +750,8 @@ SwGlossaryHdl::~SwGlossaryHdl()
 }
 
 /*------------------------------------------------------------------------
-	Beschreibung:	Umbenennen eines Textbausteines
+ Beschreibung: Umbenennen eines Textbausteines
 ------------------------------------------------------------------------*/
-
 
 sal_Bool SwGlossaryHdl::Rename(const String& rOldShort, const String& rNewShortName,
 						   const String& rNewName )
@@ -802,7 +783,6 @@ sal_Bool SwGlossaryHdl::Rename(const String& rOldShort, const String& rNewShortN
 	return bRet;
 }
 
-
 sal_Bool SwGlossaryHdl::IsReadOnly( const String* pGrpNm ) const
 {
 	SwTextBlocks *pGlossary = 0;
@@ -819,7 +799,6 @@ sal_Bool SwGlossaryHdl::IsReadOnly( const String* pGrpNm ) const
 		delete pGlossary;
 	return bRet;
 }
-
 
 sal_Bool SwGlossaryHdl::IsOld() const
 {

@@ -19,16 +19,12 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
 
 #ifdef SW_DLLIMPLEMENTATION
 #undef SW_DLLIMPLEMENTATION
 #endif
-
-
 
 #include "swtypes.hxx"
 
@@ -46,21 +42,21 @@
 SwSelGlossaryDlg::SwSelGlossaryDlg(Window * pParent, const String &rShortName)
 	: ModalDialog(pParent, SW_RES(DLG_SEL_GLOS)),
 	aGlosBox(this, SW_RES( LB_GLOS)),
-    aGlosFL(this, SW_RES( FL_GLOS)),
+	aGlosFL(this, SW_RES( FL_GLOS)),
 	aOKBtn(this, SW_RES( BT_OK)),
 	aCancelBtn(this, SW_RES( BT_CANCEL)),
 	aHelpBtn(this, SW_RES(BT_HELP))
 {
-    String sText(aGlosFL.GetText());
+	String sText(aGlosFL.GetText());
 	sText += rShortName;
-    aGlosFL.SetText(sText);
+	aGlosFL.SetText(sText);
 	FreeResource();
 
 	aGlosBox.SetDoubleClickHdl(LINK(this, SwSelGlossaryDlg, DoubleClickHdl));
 }
 
 /*-----------------25.02.94 20:50-------------------
- dtor ueberladen
+ dtor überladen
 --------------------------------------------------*/
 SwSelGlossaryDlg::~SwSelGlossaryDlg() {}
 /* -----------------25.10.99 08:33-------------------
@@ -71,3 +67,5 @@ IMPL_LINK(SwSelGlossaryDlg, DoubleClickHdl, ListBox*, /*pBox*/)
 	EndDialog(RET_OK);
 	return 0;
 }
+
+/* vim: set noet sw=4 ts=4: */
