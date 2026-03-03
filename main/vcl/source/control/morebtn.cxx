@@ -27,7 +27,6 @@
 #include <tools/rc.h>
 #endif
 
-
 // =======================================================================
 
 DECLARE_LIST( ImplMoreWindowList, Window* )
@@ -124,7 +123,7 @@ void MoreButton::ImplLoadRes( const ResId& rResId )
 	if ( nObjMask & RSC_MOREBUTTON_MAPUNIT )
 		meUnit = (MapUnit)ReadLongRes();
 	if ( nObjMask & RSC_MOREBUTTON_DELTA )
-		// Groesse fuer Erweitern des Dialogs
+		// Größe für Erweitern des Dialogs
 		mnDelta = ReadShortRes();
 }
 
@@ -146,7 +145,7 @@ void MoreButton::Click()
 	Window* 	pWindow = (mpMBData->mpItemList) ? mpMBData->mpItemList->First() : NULL;
 	long		nDeltaPixel = LogicToPixel( Size( 0, mnDelta ), meUnit ).Height();
 
-	// Status aendern
+	// Status ändern
 	mbState = !mbState;
 	ShowState();
 
