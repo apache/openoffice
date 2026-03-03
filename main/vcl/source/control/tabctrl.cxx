@@ -33,7 +33,6 @@
 #include "vcl/tabpage.hxx"
 #include "vcl/tabctrl.hxx"
 #include "vcl/controllayout.hxx"
-#include "vcl/sound.hxx"
 #include "vcl/lstbox.hxx"
 
 #include "controldata.hxx"
@@ -395,7 +394,7 @@ Rectangle TabControl::ImplGetTabRect( sal_uInt16 nItemPos, long nWidth, long nHe
 		aLightFont.SetWeight( WEIGHT_LIGHT );
 
 		// If Bold and none Bold strings have the same width, we
-		// add in the calculation extra space, so that the tabs
+		// add in the calculation extra space, so that the tab
 		// looks better. This could be the case on systems without
 		// an bold UI font and without synthetic bold support
 		XubString aTestStr( RTL_CONSTASCII_USTRINGPARAM( "Abc." ) );
@@ -434,7 +433,7 @@ Rectangle TabControl::ImplGetTabRect( sal_uInt16 nItemPos, long nWidth, long nHe
 				if ( nLines == 99 )
 					break;
 
-				nX  = nOffsetX;
+				nX = nOffsetX;
 				nY += aSize.Height();
 				nLines++;
 				nLineWidthAry[nLines] = 0;
@@ -1708,7 +1707,7 @@ void TabControl::RemovePage( sal_uInt16 nPageId )
 	// does the item exist?
 	if ( nPos != TAB_PAGE_NOTFOUND )
 	{
-		//remove page item
+		// remove page item
 		std::vector< ImplTabItem >::iterator it = mpTabCtrlData->maItemList.begin() + nPos;
 		bool bIsCurrentPage = (it->mnId == mnCurPageId);
 		mpTabCtrlData->maItemList.erase( it );
@@ -1718,7 +1717,7 @@ void TabControl::RemovePage( sal_uInt16 nPageId )
 			mpTabCtrlData->mpListBox->SetDropDownLineCount( mpTabCtrlData->mpListBox->GetEntryCount() );
 		}
 
-		// If current page is removed, than first page gets the current page
+		// If current page is removed, then first page gets the current page
 		if ( bIsCurrentPage )
 		{
 			mnCurPageId = 0;
@@ -1892,7 +1891,7 @@ void TabControl::SelectTabPage( sal_uInt16 nPageId )
 		{
 			mnActPageId = nPageId;
 			ActivatePage();
-			// Page könnte im Activate-Handler umgeschaltet wurden sein
+			// Page könnte im Activate-Handler umgeschaltet worden sein
 			nPageId = mnActPageId;
 			mnActPageId = 0;
 			SetCurPageId( nPageId );
