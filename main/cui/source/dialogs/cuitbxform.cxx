@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_cui.hxx"
 
@@ -33,7 +31,6 @@
 #include <sfx2/dispatch.hxx>
 #include <vcl/toolbox.hxx>
 #include <vcl/fixed.hxx>
-#include <vcl/sound.hxx>
 #include <dialmgr.hxx>
 #include <cuires.hrc>
 #include "cuitbxform.hxx"
@@ -52,10 +49,12 @@ FmInputRecordNoDialog::FmInputRecordNoDialog(Window * pParent)
 	,m_aOk(this, CUI_RES(1))
 	,m_aCancel(this, CUI_RES(1))
 {
-    m_aRecordNo.SetMin(1);
-    m_aRecordNo.SetMax(0x7FFFFFFF);
+	m_aRecordNo.SetMin(1);
+	m_aRecordNo.SetMax(0x7FFFFFFF);
 	m_aRecordNo.SetStrictFormat(sal_True);
 	m_aRecordNo.SetDecimalDigits(0);
 
 	FreeResource();
 }
+
+/* vim: set noet sw=4 ts=4: */
