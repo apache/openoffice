@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_cui.hxx"
 
@@ -161,9 +159,10 @@ SvxGeneralTabPage::SvxGeneralTabPage( Window* pParent, const SfxItemSet& rCoreSe
         aFatherName.SetZOrder( &aFirstName, WINDOW_ZORDER_BEHIND );
 	}
 	else if ( LANGUAGE_JAPANESE == eLang ||
-		  LANGUAGE_KOREAN == eLang ||
-		  LANGUAGE_CHINESE_TRADITIONAL == eLang ||
-		  LANGUAGE_CHINESE_SIMPLIFIED == eLang)
+			  LANGUAGE_KOREAN == eLang ||
+			  LANGUAGE_HUNGARIAN == eLang ||
+			  LANGUAGE_CHINESE_TRADITIONAL == eLang ||
+			  LANGUAGE_CHINESE_SIMPLIFIED == eLang)
 	{
 		aUsCityEdit.Hide();
 		aUsStateEdit.Hide();
@@ -241,7 +240,7 @@ SfxTabPage*	SvxGeneralTabPage::Create( Window* pParent, const SfxItemSet& rAttrS
 
 sal_Bool SvxGeneralTabPage::FillItemSet( SfxItemSet& )
 {
-	// Eingaben trimmen (f"uhrende und nachfolgende Leerzeichen entfernen)
+	// Eingaben trimmen (führende und nachfolgende Leerzeichen entfernen)
 	aCompanyEdit.SetText( TRIM(aCompanyEdit.GetText()) );
 	aFirstName.SetText( TRIM(aFirstName.GetText()) );
 	aName.SetText( TRIM(aName.GetText()) );
@@ -554,3 +553,5 @@ int SvxGeneralTabPage::DeactivatePage( SfxItemSet* _pSet )
         FillItemSet( *_pSet );
 	return LEAVE_PAGE;
 }
+
+/* vim: set noet sw=4 ts=4: */
