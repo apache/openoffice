@@ -19,7 +19,6 @@
  *
  *************************************************************/
 
-
 #ifndef _SVX_FMEXPL_HXX
 #define _SVX_FMEXPL_HXX
 
@@ -82,7 +81,7 @@ public:
 //========================================================================
 class FmNavModelReplacedHint : public SfxHint
 {
-	FmEntryData* pEntryData;	// die Daten des Eintrages, der ein neues Model bekommen hat
+	FmEntryData* pEntryData; // die Daten des Eintrages, der ein neues Model bekommen hat
 
 public:
 	TYPEINFO();
@@ -155,8 +154,8 @@ protected:
 	Image				m_aHCImage;
 	::rtl::OUString		aText;
 
-	FmEntryDataList*    pChildList;
-	FmEntryData*        pParent;
+	FmEntryDataList*	pChildList;
+	FmEntryData*		pParent;
 
 protected:
 	void	newObject( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _rxIFace );
@@ -168,9 +167,9 @@ public:
 	FmEntryData( const FmEntryData& rEntryData );
 	virtual ~FmEntryData();
 
-	void    Clear();
-	void    SetText( const ::rtl::OUString& rText ){ aText = rText; }
-	void    SetParent( FmEntryData* pParentData ){ pParent = pParentData; }
+	void	Clear();
+	void	SetText( const ::rtl::OUString& rText ){ aText = rText; }
+	void	SetParent( FmEntryData* pParentData ){ pParent = pParentData; }
 
 	const Image&	GetNormalImage() const { return m_aNormalImage; }
 	const Image&	GetHCImage() const { return m_aHCImage; }
@@ -211,7 +210,7 @@ public:
 };
 
 //========================================================================
-// FmNavRequestSelectHint - jemand teilt dem NavigatorTree mit, dass er bestimmte Eintraege selektieren soll
+// FmNavRequestSelectHint - jemand teilt dem NavigatorTree mit, dass er bestimmte Einträge selektieren soll
 
 typedef FmEntryData* FmEntryDataPtr;
 SV_DECL_PTRARR_SORT( FmEntryDataArray, FmEntryDataPtr, 16, 16 )
@@ -265,7 +264,6 @@ public:
 	virtual FmEntryData* Clone();
 };
 
-
 //========================================================================
 class FmControlData : public FmEntryData
 {
@@ -295,7 +293,6 @@ public:
 		const ImageList& _rHCImages
 	);
 };
-
 
 //========================================================================
 //............................................................................
@@ -350,10 +347,10 @@ namespace svxform
 		friend class NavigatorTree;
 		friend class OFormComponentObserver;
 
-		FmEntryDataList*            m_pRootList;
-		FmFormShell*                m_pFormShell;
-		FmFormPage*                 m_pFormPage;
-		FmFormModel*                m_pFormModel;
+		FmEntryDataList*			m_pRootList;
+		FmFormShell*				m_pFormShell;
+		FmFormPage*					m_pFormPage;
+		FmFormModel*				m_pFormModel;
 		OFormComponentObserver*		m_pPropChangeList;
 
 		ImageList					m_aNormalImages;
@@ -375,8 +372,8 @@ namespace svxform
 		void BroadcastMarkedObjects(const SdrMarkList& mlMarked);
 			// einen RequestSelectHint mit den aktuell markierten Objekten broadcasten
 		sal_Bool InsertFormComponent(FmNavRequestSelectHint& rHint, SdrObject* pObject);
-			// ist ein Helper fuer vorherige, managet das Abteigen in SdrObjGroups
-			// Rueckgabe sal_True, wenn das Objekt eine FormComponent ist (oder rekursiv nur aus solchen besteht)
+			// ist ein Helper für vorherige, managet das Absteigen in SdrObjGroups
+			// Rückgabe sal_True, wenn das Objekt eine FormComponent ist (oder rekursiv nur aus solchen besteht)
 
 	public:
 		NavigatorTreeModel( const ImageList& _rNormalImages, const ImageList& _rHCImages );
@@ -418,10 +415,10 @@ namespace svxform
 		enum DROP_ACTION        { DA_SCROLLUP, DA_SCROLLDOWN, DA_EXPANDNODE };
 		enum SELDATA_ITEMS      { SDI_DIRTY, SDI_ALL, SDI_NORMALIZED, SDI_NORMALIZED_FORMARK };
 
-		// beim Droppen will ich scrollen und Folder aufklappen koennen, dafuer :
+		// beim Droppen will ich scrollen und Folder aufklappen können, dafür :
 		AutoTimer           m_aDropActionTimer;
 		Timer               m_aSynchronizeTimer;
-		// die Meta-Daten ueber meine aktuelle Selektion
+		// die Meta-Daten über meine aktuelle Selektion
 		SvLBoxEntrySortedArray  m_arrCurrentSelection;
 		// the entries which, in the view, are currently marked as "cut" (painted semi-transparent)
 		ListBoxEntrySet         m_aCutEntries;
@@ -439,23 +436,22 @@ namespace svxform
 		sal_uLong               nEditEvent;
 
 		SELDATA_ITEMS       m_sdiState;
-		Point               m_aTimerTriggered;      // die Position, an der der DropTimer angeschaltet wurde
+		Point               m_aTimerTriggered; // die Position, an der der DropTimer angeschaltet wurde
 		DROP_ACTION         m_aDropActionType;
 
 		sal_uInt16          m_nSelectLock;
 		sal_uInt16          m_nFormsSelected;
 		sal_uInt16          m_nControlsSelected;
-		sal_uInt16          m_nHiddenControls;      // (die Zahl geht in m_nControlsSelected mit ein)
+		sal_uInt16          m_nHiddenControls; // (die Zahl geht in m_nControlsSelected mit ein)
 
 		unsigned short      m_aTimerCounter;
 
-		sal_Bool            m_bDragDataDirty		: 1;    // dito
+		sal_Bool            m_bDragDataDirty		: 1; // dito
 		sal_Bool            m_bPrevSelectionMixed	: 1;
-		sal_Bool            m_bMarkingObjects		: 1;    // wenn das sal_True ist, brauche ich auf die RequestSelectHints nicht reagieren
+		sal_Bool            m_bMarkingObjects		: 1; // wenn das sal_True ist, brauche ich auf die RequestSelectHints nicht reagieren
 		sal_Bool            m_bRootSelected			: 1;
-		sal_Bool            m_bInitialUpdate		: 1;   // bin ich das erste Mal im UpdateContent ?
+		sal_Bool            m_bInitialUpdate		: 1; // bin ich das erste Mal im UpdateContent ?
 		sal_Bool			m_bKeyboardCut			: 1;
-
 
 		void            UpdateContent();
 		sal_Bool        IsDeleteAllowed();
@@ -464,33 +460,32 @@ namespace svxform
 		SvLBoxEntry*    Insert( FmEntryData* pEntryData, sal_uLong nRelPos=LIST_APPEND );
 		void            Remove( FmEntryData* pEntryData );
 
-
 		void CollectSelectionData(SELDATA_ITEMS sdiHow);
-			// sammelt in m_arrCurrentSelection die aktuell selektierten Eintraege, normalisiert die Liste wenn verlangt
-			// SDI_NORMALIZED bedeutet einfach, dass alle Eintraege, die schon einen selektierten Vorfahren haben, nicht mit gesammelt
+			// sammelt in m_arrCurrentSelection die aktuell selektierten Einträge, normalisiert die Liste wenn verlangt
+			// SDI_NORMALIZED bedeutet einfach, dass alle Einträge, die schon einen selektierten Vorfahren haben, nicht mit gesammelt
 			// werden.
-			// SDI_NORMALIZED_FORMARK bedeutet, dass wie bei SDI_NORMALIZED verfahren wird, aber Eintraege, deren direktes Elter nicht
-			// selektiert ist, aufgenommen werden (unabhaengig vom Status weiterer Vorfahren), desgleichen Formulare, die selektiert sind,
-			// unabhaengig vom Status irgendwelcher Vorfahren
-			// Bei beiden Normalized-Modi enthalten die m_nFormsSelected, ... die richtige Anzahl, auch wenn nicht alle dieser Eintraege
+			// SDI_NORMALIZED_FORMARK bedeutet, dass wie bei SDI_NORMALIZED verfahren wird, aber Einträge, deren direktes Elter nicht
+			// selektiert ist, aufgenommen werden (unabhängig vom Status weiterer Vorfahren), desgleichen Formulare, die selektiert sind,
+			// unabhängig vom Status irgendwelcher Vorfahren
+			// Bei beiden Normalized-Modi enthalten die m_nFormsSelected, ... die richtige Anzahl, auch wenn nicht alle dieser Einträge
 			// in m_arrCurrentSelection landen.
-			// SDI_DIRTY ist natuerlich nicht erlaubt als Parameter
+			// SDI_DIRTY ist natürlich nicht erlaubt als Parameter
 
-		// ein einziges Interface fuer alle selektierten Eintraege zusammensetzen
+		// ein einziges Interface für alle selektierten Einträge zusammensetzen
 		void    ShowSelectionProperties(sal_Bool bForce = sal_False);
-		// alle selektierten Elemnte loeschen
+		// alle selektierten Elemente löschen
 		void    DeleteSelection();
 
 		void SynchronizeSelection(FmEntryDataArray& arredToSelect);
-			// nach dem Aufruf dieser Methode sind genau die Eintraege selektiert, die in dem Array bezeichnet sind
+			// nach dem Aufruf dieser Methode sind genau die Einträge selektiert, die in dem Array bezeichnet sind
 		void SynchronizeSelection();
 			// macht das selbe, nimmt die MarkList der ::com::sun::star::sdbcx::View
 		void SynchronizeMarkList();
 			// umgekehrte Richtung von SynchronizeMarkList : markiert in der ::com::sun::star::sdbcx::View alle der aktuellen Selektion entsprechenden Controls
 
-        void CollectObjects(FmFormData* pFormData, sal_Bool bDeep, ::std::set< ::com::sun::star::uno::Reference< ::com::sun::star::form::XFormComponent > >& _rObjects);
+		void CollectObjects(FmFormData* pFormData, sal_Bool bDeep, ::std::set< ::com::sun::star::uno::Reference< ::com::sun::star::form::XFormComponent > >& _rObjects);
 
-		// im Select aktualisiere ich normalerweise die Marklist der zugehoerigen ::com::sun::star::sdbcx::View, mit folgenden Funktionen
+		// im Select aktualisiere ich normalerweise die Marklist der zugehörigen ::com::sun::star::sdbcx::View, mit folgenden Funktionen
 		// kann ich das Locking dieses Verhaltens steuern
 		void LockSelectionHandling() { ++m_nSelectLock; }
 		void UnlockSelectionHandling() { --m_nSelectLock; }
@@ -510,7 +505,7 @@ namespace svxform
 		virtual void	Command( const CommandEvent& rEvt );
 
 		virtual sal_Int8	AcceptDrop( const AcceptDropEvent& rEvt );
-		virtual sal_Int8    ExecuteDrop( const ExecuteDropEvent& rEvt );
+		virtual sal_Int8	ExecuteDrop( const ExecuteDropEvent& rEvt );
 		virtual void		StartDrag( sal_Int8 nAction, const Point& rPosPixel );
 
 	public:
@@ -539,10 +534,10 @@ namespace svxform
 
 		virtual void ModelHasRemoved( SvListEntry* _pEntry );
 
-        using SvTreeListBox::Insert;
-        using SvTreeListBox::ExecuteDrop;
-        using SvTreeListBox::Select;
-        using SvTreeListBox::Notify;
+		using SvTreeListBox::Insert;
+		using SvTreeListBox::ExecuteDrop;
+		using SvTreeListBox::Select;
+		using SvTreeListBox::Notify;
 
 	private:
 		sal_Int8	implAcceptDataTransfer( const DataFlavorExVector& _rFlavors, sal_Int8 _nAction, const Point& _rDropPos, sal_Bool _bDnD );
@@ -579,7 +574,7 @@ namespace svxform
 		virtual Size CalcDockingSize( SfxChildAlignment );
 		virtual SfxChildAlignment CheckAlignment( SfxChildAlignment, SfxChildAlignment );
 
-        using SfxDockingWindow::StateChanged;
+		using SfxDockingWindow::StateChanged;
 
 	public:
 		NavigatorFrame( SfxBindings *pBindings, SfxChildWindow *pMgr,
@@ -605,3 +600,5 @@ namespace svxform
 //............................................................................
 
 #endif // _SVX_FMEXPL_HXX
+
+/* vim: set noet sw=4 ts=4: */
