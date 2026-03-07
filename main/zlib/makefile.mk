@@ -38,8 +38,8 @@ all:
 
 # --- Files --------------------------------------------------------
 
-TARFILE_NAME=zlib-1.3.1
-TARFILE_MD5=9855b6d802d7fe5b7bd5b196a2271655
+TARFILE_NAME=zlib-1.3.2
+TARFILE_MD5=a1e6c958597af3c67d162995a342138a
 
 PATCH_FILES=zlib-1.3.1.patch
 ADDITIONAL_FILES=makefile.mk
@@ -53,6 +53,7 @@ OUT2INC= \
 	zlib.h \
 	zconf.h \
 	contrib$/minizip$/unzip.h \
+	contrib$/minizip$/ints.h \
 	contrib$/minizip$/ioapi.h
 
 PATCHED_HEADERS=$(INCCOM)$/patched$/zlib.h
