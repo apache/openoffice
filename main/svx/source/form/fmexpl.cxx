@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_svx.hxx"
 
@@ -70,7 +68,6 @@
 #ifndef _WRKWIN_HXX //autogen
 #include <vcl/wrkwin.hxx>
 #endif
-#include <vcl/sound.hxx>
 #include <svx/fmshell.hxx>
 #include "fmshimp.hxx"
 #include <svx/fmpage.hxx>
@@ -104,19 +101,18 @@ TYPEINIT1( FmNavInsertedHint, SfxHint );
 DBG_NAME(FmNavInsertedHint);
 //------------------------------------------------------------------------
 FmNavInsertedHint::FmNavInsertedHint( FmEntryData* pInsertedEntryData, sal_uInt32 nRelPos )
-    :pEntryData( pInsertedEntryData )
-    ,nPos( nRelPos )
+	:pEntryData( pInsertedEntryData )
+	,nPos( nRelPos )
 
 {
-    DBG_CTOR(FmNavInsertedHint,NULL);
+	DBG_CTOR(FmNavInsertedHint,NULL);
 }
 
 //------------------------------------------------------------------------
 FmNavInsertedHint::~FmNavInsertedHint()
 {
-    DBG_DTOR(FmNavInsertedHint,NULL);
+	DBG_DTOR(FmNavInsertedHint,NULL);
 }
-
 
 //========================================================================
 // class FmNavInsertedHint
@@ -125,15 +121,15 @@ TYPEINIT1( FmNavModelReplacedHint, SfxHint );
 DBG_NAME(FmNavModelReplacedHint);
 //------------------------------------------------------------------------
 FmNavModelReplacedHint::FmNavModelReplacedHint( FmEntryData* pAffectedEntryData )
-    :pEntryData( pAffectedEntryData )
+	:pEntryData( pAffectedEntryData )
 {
-    DBG_CTOR(FmNavModelReplacedHint,NULL);
+	DBG_CTOR(FmNavModelReplacedHint,NULL);
 }
 
 //------------------------------------------------------------------------
 FmNavModelReplacedHint::~FmNavModelReplacedHint()
 {
-    DBG_DTOR(FmNavModelReplacedHint,NULL);
+	DBG_DTOR(FmNavModelReplacedHint,NULL);
 }
 
 //========================================================================
@@ -143,17 +139,16 @@ TYPEINIT1( FmNavRemovedHint, SfxHint );
 DBG_NAME(FmNavRemovedHint);
 //------------------------------------------------------------------------
 FmNavRemovedHint::FmNavRemovedHint( FmEntryData* pRemovedEntryData )
-    :pEntryData( pRemovedEntryData )
+	:pEntryData( pRemovedEntryData )
 {
-    DBG_CTOR(FmNavRemovedHint,NULL);
+	DBG_CTOR(FmNavRemovedHint,NULL);
 }
 
 //------------------------------------------------------------------------
 FmNavRemovedHint::~FmNavRemovedHint()
 {
-    DBG_DTOR(FmNavRemovedHint,NULL);
+	DBG_DTOR(FmNavRemovedHint,NULL);
 }
-
 
 //========================================================================
 // class FmNavNameChangedHint
@@ -162,16 +157,16 @@ TYPEINIT1( FmNavNameChangedHint, SfxHint );
 DBG_NAME(FmNavNameChangedHint);
 //------------------------------------------------------------------------
 FmNavNameChangedHint::FmNavNameChangedHint( FmEntryData* pData, const ::rtl::OUString& rNewName )
-    :pEntryData( pData )
-    ,aNewName( rNewName )
+	:pEntryData( pData )
+	,aNewName( rNewName )
 {
-    DBG_CTOR(FmNavNameChangedHint,NULL);
+	DBG_CTOR(FmNavNameChangedHint,NULL);
 }
 
 //------------------------------------------------------------------------
 FmNavNameChangedHint::~FmNavNameChangedHint()
 {
-    DBG_DTOR(FmNavNameChangedHint,NULL);
+	DBG_DTOR(FmNavNameChangedHint,NULL);
 }
 
 //========================================================================
@@ -182,13 +177,13 @@ DBG_NAME(FmNavClearedHint);
 //------------------------------------------------------------------------
 FmNavClearedHint::FmNavClearedHint()
 {
-    DBG_CTOR(FmNavClearedHint,NULL);
+	DBG_CTOR(FmNavClearedHint,NULL);
 }
 
 //------------------------------------------------------------------------
 FmNavClearedHint::~FmNavClearedHint()
 {
-    DBG_DTOR(FmNavClearedHint,NULL);
+	DBG_DTOR(FmNavClearedHint,NULL);
 }
 
 //========================================================================
@@ -208,15 +203,14 @@ DBG_NAME(FmEntryDataList);
 //------------------------------------------------------------------------
 FmEntryDataList::FmEntryDataList()
 {
-    DBG_CTOR(FmEntryDataList,NULL);
+	DBG_CTOR(FmEntryDataList,NULL);
 }
 
 //------------------------------------------------------------------------
 FmEntryDataList::~FmEntryDataList()
 {
-    DBG_DTOR(FmEntryDataList,NULL);
+	DBG_DTOR(FmEntryDataList,NULL);
 }
-
 
 //========================================================================
 // class FmEntryData
@@ -225,11 +219,11 @@ TYPEINIT0( FmEntryData );
 DBG_NAME(FmEntryData);
 //------------------------------------------------------------------------
 FmEntryData::FmEntryData( FmEntryData* pParentData, const Reference< XInterface >& _rxIFace )
-    :pParent( pParentData )
+	:pParent( pParentData )
 {
-    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "svx", "Ocke.Janssen@sun.com", "FmEntryData::FmEntryData" );
-    DBG_CTOR(FmEntryData,NULL);
-    pChildList = new FmEntryDataList();
+	RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "svx", "Ocke.Janssen@sun.com", "FmEntryData::FmEntryData" );
+	DBG_CTOR(FmEntryData,NULL);
+	pChildList = new FmEntryDataList();
 
 	newObject( _rxIFace );
 }
@@ -237,15 +231,15 @@ FmEntryData::FmEntryData( FmEntryData* pParentData, const Reference< XInterface 
 //------------------------------------------------------------------------
 FmEntryData::~FmEntryData()
 {
-    Clear();
-    delete pChildList;
-    DBG_DTOR(FmEntryData,NULL);
+	Clear();
+	delete pChildList;
+	DBG_DTOR(FmEntryData,NULL);
 }
 
 //------------------------------------------------------------------------
 void FmEntryData::newObject( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _rxIFace )
 {
-    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "svx", "Ocke.Janssen@sun.com", "FmEntryData::newObject" );
+	RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "svx", "Ocke.Janssen@sun.com", "FmEntryData::newObject" );
 	// do not just copy, normalize it
 	m_xNormalizedIFace = Reference< XInterface >( _rxIFace, UNO_QUERY );
 	m_xProperties = m_xProperties.query( m_xNormalizedIFace );
@@ -255,21 +249,21 @@ void FmEntryData::newObject( const ::com::sun::star::uno::Reference< ::com::sun:
 //------------------------------------------------------------------------
 FmEntryData::FmEntryData( const FmEntryData& rEntryData )
 {
-    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "svx", "Ocke.Janssen@sun.com", "FmEntryData::FmEntryData" );
-    pChildList = new FmEntryDataList();
-    aText = rEntryData.GetText();
-    m_aNormalImage = rEntryData.GetNormalImage();
-    m_aHCImage = rEntryData.GetHCImage();
-    pParent = rEntryData.GetParent();
+	RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "svx", "Ocke.Janssen@sun.com", "FmEntryData::FmEntryData" );
+	pChildList = new FmEntryDataList();
+	aText = rEntryData.GetText();
+	m_aNormalImage = rEntryData.GetNormalImage();
+	m_aHCImage = rEntryData.GetHCImage();
+	pParent = rEntryData.GetParent();
 
-    FmEntryData* pChildData;
-    sal_uInt32 nEntryCount = rEntryData.GetChildList()->Count();
-    for( sal_uInt32 i=0; i<nEntryCount; i++ )
-    {
-        pChildData = rEntryData.GetChildList()->GetObject(i);
-        FmEntryData* pNewChildData = pChildData->Clone();
-        pChildList->Insert( pNewChildData, LIST_APPEND );
-    }
+	FmEntryData* pChildData;
+	sal_uInt32 nEntryCount = rEntryData.GetChildList()->Count();
+	for( sal_uInt32 i=0; i<nEntryCount; i++ )
+	{
+		pChildData = rEntryData.GetChildList()->GetObject(i);
+		FmEntryData* pNewChildData = pChildData->Clone();
+		pChildList->Insert( pNewChildData, LIST_APPEND );
+	}
 
 	m_xNormalizedIFace = rEntryData.m_xNormalizedIFace;
 	m_xProperties = rEntryData.m_xProperties;
@@ -279,44 +273,43 @@ FmEntryData::FmEntryData( const FmEntryData& rEntryData )
 //------------------------------------------------------------------------
 void FmEntryData::Clear()
 {
-    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "svx", "Ocke.Janssen@sun.com", "FmEntryData::Clear" );
-    for (;;)
-    {
-        FmEntryData* pEntryData = GetChildList()->Remove(sal_uLong(0));
-        if (pEntryData == NULL)
-            break;
-        delete pEntryData;
-    }
+	RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "svx", "Ocke.Janssen@sun.com", "FmEntryData::Clear" );
+	for (;;)
+	{
+		FmEntryData* pEntryData = GetChildList()->Remove(sal_uLong(0));
+		if (pEntryData == NULL)
+			break;
+		delete pEntryData;
+	}
 }
 
 //------------------------------------------------------------------------
 sal_Bool FmEntryData::IsEqualWithoutChilds( FmEntryData* pEntryData )
 {
-    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "svx", "Ocke.Janssen@sun.com", "FmEntryData::IsEqualWithoutChilds" );
-    if(this == pEntryData)
-        return sal_True;
+	RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "svx", "Ocke.Janssen@sun.com", "FmEntryData::IsEqualWithoutChilds" );
+	if(this == pEntryData)
+		return sal_True;
 
-    if( !pEntryData )
-        return sal_False;
+	if( !pEntryData )
+		return sal_False;
 
-    if( !aText.equals(pEntryData->GetText()))
-        return sal_False;
+	if( !aText.equals(pEntryData->GetText()))
+		return sal_False;
 
-    if( !pEntryData->GetParent() && pParent )
-        return sal_False;
+	if( !pEntryData->GetParent() && pParent )
+		return sal_False;
 
-    if( pEntryData->GetParent() && !pParent )
-        return sal_False;
+	if( pEntryData->GetParent() && !pParent )
+		return sal_False;
 
-    if( !pEntryData->GetParent() && !pParent )
-        return sal_True;
+	if( !pEntryData->GetParent() && !pParent )
+		return sal_True;
 
-    if( !pParent->IsEqualWithoutChilds(pEntryData->GetParent()) )
-        return sal_False;
+	if( !pParent->IsEqualWithoutChilds(pEntryData->GetParent()) )
+		return sal_False;
 
-    return sal_True;
+	return sal_True;
 }
-
 
 //========================================================================
 // class FmFormData
@@ -325,65 +318,64 @@ TYPEINIT1( FmFormData, FmEntryData );
 DBG_NAME(FmFormData);
 //------------------------------------------------------------------------
 FmFormData::FmFormData( const Reference< XForm >& _rxForm, const ImageList& _rNormalImages, const ImageList& _rHCImages, FmFormData* _pParent )
-    :FmEntryData( _pParent, _rxForm )
-    ,m_xForm( _rxForm )
+	:FmEntryData( _pParent, _rxForm )
+	,m_xForm( _rxForm )
 {
-    DBG_CTOR(FmEntryData,NULL);
-    //////////////////////////////////////////////////////////////////////
-    // Images setzen
+	DBG_CTOR(FmEntryData,NULL);
+	//////////////////////////////////////////////////////////////////////
+	// Images setzen
 
-    m_aNormalImage = _rNormalImages.GetImage( RID_SVXIMG_FORM );
-    m_aHCImage = _rHCImages.GetImage( RID_SVXIMG_FORM );
+	m_aNormalImage = _rNormalImages.GetImage( RID_SVXIMG_FORM );
+	m_aHCImage = _rHCImages.GetImage( RID_SVXIMG_FORM );
 
-    //////////////////////////////////////////////////////////////////////
-    // Titel setzen
-    if (m_xForm.is())
-    {
-        Reference< XPropertySet >  xSet(m_xForm, UNO_QUERY);
-        if (xSet.is())
-        {
-            ::rtl::OUString aEntryName(::comphelper::getString(xSet->getPropertyValue( FM_PROP_NAME )));
-            SetText(aEntryName);
-        }
-    }
-    else
-        SetText( ::rtl::OUString() );
+	//////////////////////////////////////////////////////////////////////
+	// Titel setzen
+	if (m_xForm.is())
+	{
+		Reference< XPropertySet > xSet(m_xForm, UNO_QUERY);
+		if (xSet.is())
+		{
+			::rtl::OUString aEntryName(::comphelper::getString(xSet->getPropertyValue( FM_PROP_NAME )));
+			SetText(aEntryName);
+		}
+	}
+	else
+		SetText( ::rtl::OUString() );
 }
 
 //------------------------------------------------------------------------
 FmFormData::~FmFormData()
 {
-    DBG_DTOR(FmEntryData,NULL);
+	DBG_DTOR(FmEntryData,NULL);
 }
 
 //------------------------------------------------------------------------
 FmFormData::FmFormData( const FmFormData& rFormData )
-    :FmEntryData( rFormData )
+	:FmEntryData( rFormData )
 {
-    DBG_CTOR(FmEntryData,NULL);
-    m_xForm = rFormData.GetFormIface();
+	DBG_CTOR(FmEntryData,NULL);
+	m_xForm = rFormData.GetFormIface();
 }
 
 //------------------------------------------------------------------------
 FmEntryData* FmFormData::Clone()
 {
-    return new FmFormData( *this );
+	return new FmFormData( *this );
 }
 
 //------------------------------------------------------------------------
 sal_Bool FmFormData::IsEqualWithoutChilds( FmEntryData* pEntryData )
 {
-    if(this == pEntryData)
-        return sal_True;
-    if( !pEntryData->ISA(FmFormData) )
-        return sal_False;
-    FmFormData* pFormData = (FmFormData*)pEntryData;
-    if( (XForm*)m_xForm.get() != (XForm*)pFormData->GetFormIface().get() )
-        return sal_False;
+	if(this == pEntryData)
+		return sal_True;
+	if( !pEntryData->ISA(FmFormData) )
+		return sal_False;
+	FmFormData* pFormData = (FmFormData*)pEntryData;
+	if( (XForm*)m_xForm.get() != (XForm*)pFormData->GetFormIface().get() )
+		return sal_False;
 
-    return FmEntryData::IsEqualWithoutChilds( pFormData );
+	return FmEntryData::IsEqualWithoutChilds( pFormData );
 }
-
 
 //========================================================================
 // class FmControlData
@@ -392,183 +384,183 @@ TYPEINIT1( FmControlData, FmEntryData );
 DBG_NAME(FmControlData);
 //------------------------------------------------------------------------
 FmControlData::FmControlData( const Reference< XFormComponent >& _rxComponent, const ImageList& _rNormalImages, const ImageList& _rHCImages, FmFormData* _pParent )
-    :FmEntryData( _pParent, _rxComponent )
-    ,m_xFormComponent( _rxComponent )
+	:FmEntryData( _pParent, _rxComponent )
+	,m_xFormComponent( _rxComponent )
 {
-    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "svx", "Ocke.Janssen@sun.com", "FmControlData::FmControlData" );
-    DBG_CTOR(FmControlData,NULL);
-    //////////////////////////////////////////////////////////////////////
-    // Images setzen
-    m_aNormalImage = GetImage( _rNormalImages );
-    m_aHCImage = GetImage( _rHCImages );
+	RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "svx", "Ocke.Janssen@sun.com", "FmControlData::FmControlData" );
+	DBG_CTOR(FmControlData,NULL);
+	//////////////////////////////////////////////////////////////////////
+	// Images setzen
+	m_aNormalImage = GetImage( _rNormalImages );
+	m_aHCImage = GetImage( _rHCImages );
 
-    //////////////////////////////////////////////////////////////////////
-    // Titel setzen
-    Reference< XPropertySet >  xSet(m_xFormComponent, UNO_QUERY);
-    if( xSet.is() )
-    {
+	//////////////////////////////////////////////////////////////////////
+	// Titel setzen
+	Reference< XPropertySet > xSet(m_xFormComponent, UNO_QUERY);
+	if( xSet.is() )
+	{
 #ifdef DBG_UTIL
-        ::rtl::OUString aEntryName = ::comphelper::getString(xSet->getPropertyValue( FM_PROP_NAME ));
+		::rtl::OUString aEntryName = ::comphelper::getString(xSet->getPropertyValue( FM_PROP_NAME ));
 #endif
-        SetText( ::comphelper::getString(xSet->getPropertyValue( FM_PROP_NAME )));
-    }
+		SetText( ::comphelper::getString(xSet->getPropertyValue( FM_PROP_NAME )));
+	}
 }
 
 //------------------------------------------------------------------------
 FmControlData::~FmControlData()
 {
-    DBG_DTOR(FmControlData,NULL);
+	DBG_DTOR(FmControlData,NULL);
 }
 
 //------------------------------------------------------------------------
 FmControlData::FmControlData( const FmControlData& rControlData )
-    :FmEntryData( rControlData )
+	:FmEntryData( rControlData )
 {
-    DBG_CTOR(FmControlData,NULL);
-    m_xFormComponent = rControlData.GetFormComponent();
+	DBG_CTOR(FmControlData,NULL);
+	m_xFormComponent = rControlData.GetFormComponent();
 }
 
 //------------------------------------------------------------------------
 FmEntryData* FmControlData::Clone()
 {
-    return new FmControlData( *this );
+	return new FmControlData( *this );
 }
 
 //------------------------------------------------------------------------
 Image FmControlData::GetImage(const ImageList& ilNavigatorImages) const
 {
-    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "svx", "Ocke.Janssen@sun.com", "FmControlData::FmControlData" );
-    //////////////////////////////////////////////////////////////////////
-    // Default-Image
-    Image aImage = ilNavigatorImages.GetImage( RID_SVXIMG_CONTROL );
+	RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "svx", "Ocke.Janssen@sun.com", "FmControlData::FmControlData" );
+	//////////////////////////////////////////////////////////////////////
+	// Default-Image
+	Image aImage = ilNavigatorImages.GetImage( RID_SVXIMG_CONTROL );
 
-    Reference< XServiceInfo > xInfo( m_xFormComponent, UNO_QUERY );
-    if (!m_xFormComponent.is())
+	Reference< XServiceInfo > xInfo( m_xFormComponent, UNO_QUERY );
+	if (!m_xFormComponent.is())
 		return aImage;
 
-    //////////////////////////////////////////////////////////////////////
-    // Spezielle Control-Images
-    sal_Int16 nObjectType = getControlTypeByObject(xInfo);
-    switch (nObjectType)
-    {
-    case OBJ_FM_BUTTON:
-        aImage = ilNavigatorImages.GetImage( RID_SVXIMG_BUTTON );
-        break;
+	//////////////////////////////////////////////////////////////////////
+	// Spezielle Control-Images
+	sal_Int16 nObjectType = getControlTypeByObject(xInfo);
+	switch (nObjectType)
+	{
+	case OBJ_FM_BUTTON:
+		aImage = ilNavigatorImages.GetImage( RID_SVXIMG_BUTTON );
+		break;
 
-    case OBJ_FM_FIXEDTEXT:
-        aImage = ilNavigatorImages.GetImage( RID_SVXIMG_FIXEDTEXT );
-        break;
+	case OBJ_FM_FIXEDTEXT:
+		aImage = ilNavigatorImages.GetImage( RID_SVXIMG_FIXEDTEXT );
+		break;
 
-    case OBJ_FM_EDIT:
-        aImage = ilNavigatorImages.GetImage( RID_SVXIMG_EDIT );
-        break;
+	case OBJ_FM_EDIT:
+		aImage = ilNavigatorImages.GetImage( RID_SVXIMG_EDIT );
+		break;
 
-    case OBJ_FM_RADIOBUTTON:
-        aImage = ilNavigatorImages.GetImage( RID_SVXIMG_RADIOBUTTON );
-        break;
+	case OBJ_FM_RADIOBUTTON:
+		aImage = ilNavigatorImages.GetImage( RID_SVXIMG_RADIOBUTTON );
+		break;
 
-    case OBJ_FM_CHECKBOX:
-        aImage = ilNavigatorImages.GetImage( RID_SVXIMG_CHECKBOX );
-        break;
+	case OBJ_FM_CHECKBOX:
+		aImage = ilNavigatorImages.GetImage( RID_SVXIMG_CHECKBOX );
+		break;
 
-    case OBJ_FM_LISTBOX:
-        aImage = ilNavigatorImages.GetImage( RID_SVXIMG_LISTBOX );
-        break;
+	case OBJ_FM_LISTBOX:
+		aImage = ilNavigatorImages.GetImage( RID_SVXIMG_LISTBOX );
+		break;
 
-    case OBJ_FM_COMBOBOX:
-        aImage = ilNavigatorImages.GetImage( RID_SVXIMG_COMBOBOX );
-        break;
+	case OBJ_FM_COMBOBOX:
+		aImage = ilNavigatorImages.GetImage( RID_SVXIMG_COMBOBOX );
+		break;
 
-    case OBJ_FM_NAVIGATIONBAR:
-        aImage = ilNavigatorImages.GetImage( RID_SVXIMG_NAVIGATIONBAR );
-        break;
+	case OBJ_FM_NAVIGATIONBAR:
+		aImage = ilNavigatorImages.GetImage( RID_SVXIMG_NAVIGATIONBAR );
+		break;
 
-    case OBJ_FM_GROUPBOX:
-        aImage = ilNavigatorImages.GetImage( RID_SVXIMG_GROUPBOX );
-        break;
+	case OBJ_FM_GROUPBOX:
+		aImage = ilNavigatorImages.GetImage( RID_SVXIMG_GROUPBOX );
+		break;
 
-    case OBJ_FM_IMAGEBUTTON:
-        aImage = ilNavigatorImages.GetImage( RID_SVXIMG_IMAGEBUTTON );
-        break;
+	case OBJ_FM_IMAGEBUTTON:
+		aImage = ilNavigatorImages.GetImage( RID_SVXIMG_IMAGEBUTTON );
+		break;
 
-    case OBJ_FM_FILECONTROL:
-        aImage = ilNavigatorImages.GetImage( RID_SVXIMG_FILECONTROL );
-        break;
+	case OBJ_FM_FILECONTROL:
+		aImage = ilNavigatorImages.GetImage( RID_SVXIMG_FILECONTROL );
+		break;
 
-    case OBJ_FM_HIDDEN:
-        aImage = ilNavigatorImages.GetImage( RID_SVXIMG_HIDDEN );
-        break;
+	case OBJ_FM_HIDDEN:
+		aImage = ilNavigatorImages.GetImage( RID_SVXIMG_HIDDEN );
+		break;
 
-    case OBJ_FM_DATEFIELD:
-        aImage = ilNavigatorImages.GetImage( RID_SVXIMG_DATEFIELD );
-        break;
+	case OBJ_FM_DATEFIELD:
+		aImage = ilNavigatorImages.GetImage( RID_SVXIMG_DATEFIELD );
+		break;
 
-    case OBJ_FM_TIMEFIELD:
-        aImage = ilNavigatorImages.GetImage( RID_SVXIMG_TIMEFIELD );
-        break;
+	case OBJ_FM_TIMEFIELD:
+		aImage = ilNavigatorImages.GetImage( RID_SVXIMG_TIMEFIELD );
+		break;
 
-    case OBJ_FM_NUMERICFIELD:
-        aImage = ilNavigatorImages.GetImage( RID_SVXIMG_NUMERICFIELD );
-        break;
+	case OBJ_FM_NUMERICFIELD:
+		aImage = ilNavigatorImages.GetImage( RID_SVXIMG_NUMERICFIELD );
+		break;
 
-    case OBJ_FM_CURRENCYFIELD:
-        aImage = ilNavigatorImages.GetImage( RID_SVXIMG_CURRENCYFIELD );
-        break;
+	case OBJ_FM_CURRENCYFIELD:
+		aImage = ilNavigatorImages.GetImage( RID_SVXIMG_CURRENCYFIELD );
+		break;
 
-    case OBJ_FM_PATTERNFIELD:
-        aImage = ilNavigatorImages.GetImage( RID_SVXIMG_PATTERNFIELD );
-        break;
+	case OBJ_FM_PATTERNFIELD:
+		aImage = ilNavigatorImages.GetImage( RID_SVXIMG_PATTERNFIELD );
+		break;
 
-    case OBJ_FM_IMAGECONTROL:
-        aImage = ilNavigatorImages.GetImage( RID_SVXIMG_IMAGECONTROL );
-        break;
+	case OBJ_FM_IMAGECONTROL:
+		aImage = ilNavigatorImages.GetImage( RID_SVXIMG_IMAGECONTROL );
+		break;
 
-    case OBJ_FM_FORMATTEDFIELD:
-        aImage = ilNavigatorImages.GetImage( RID_SVXIMG_FORMATTEDFIELD );
-        break;
+	case OBJ_FM_FORMATTEDFIELD:
+		aImage = ilNavigatorImages.GetImage( RID_SVXIMG_FORMATTEDFIELD );
+		break;
 
-    case OBJ_FM_GRID:
-        aImage = ilNavigatorImages.GetImage( RID_SVXIMG_GRID );
-        break;
+	case OBJ_FM_GRID:
+		aImage = ilNavigatorImages.GetImage( RID_SVXIMG_GRID );
+		break;
 
-    case OBJ_FM_SCROLLBAR:
-        aImage = ilNavigatorImages.GetImage( RID_SVXIMG_SCROLLBAR );
-        break;
+	case OBJ_FM_SCROLLBAR:
+		aImage = ilNavigatorImages.GetImage( RID_SVXIMG_SCROLLBAR );
+		break;
 
-    case OBJ_FM_SPINBUTTON:
-        aImage = ilNavigatorImages.GetImage( RID_SVXIMG_SPINBUTTON);
-        break;
-    }
+	case OBJ_FM_SPINBUTTON:
+		aImage = ilNavigatorImages.GetImage( RID_SVXIMG_SPINBUTTON);
+		break;
+	}
 
-    return aImage;
+	return aImage;
 }
 
 //------------------------------------------------------------------------
 sal_Bool FmControlData::IsEqualWithoutChilds( FmEntryData* pEntryData )
 {
-    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "svx", "Ocke.Janssen@sun.com", "FmControlData::IsEqualWithoutChilds" );
-    if(this == pEntryData)
-        return sal_True;
+	RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "svx", "Ocke.Janssen@sun.com", "FmControlData::IsEqualWithoutChilds" );
+	if(this == pEntryData)
+		return sal_True;
 
-    if( !pEntryData->ISA(FmControlData) )
-        return sal_False;
-    FmControlData* pControlData = (FmControlData*)pEntryData;
+	if( !pEntryData->ISA(FmControlData) )
+		return sal_False;
+	FmControlData* pControlData = (FmControlData*)pEntryData;
 
-    if( (XFormComponent*)m_xFormComponent.get() != (XFormComponent*)pControlData->GetFormComponent().get() )
-        return sal_False;
+	if( (XFormComponent*)m_xFormComponent.get() != (XFormComponent*)pControlData->GetFormComponent().get() )
+		return sal_False;
 
-    return FmEntryData::IsEqualWithoutChilds( pControlData );
+	return FmEntryData::IsEqualWithoutChilds( pControlData );
 }
 
 //------------------------------------------------------------------------
 void FmControlData::ModelReplaced( const Reference< XFormComponent >& _rxNew, const ImageList& _rNormalImages, const ImageList& _rHCImages )
 {
-    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "svx", "Ocke.Janssen@sun.com", "FmControlData::ModelReplaced" );
-    m_xFormComponent = _rxNew;
+	RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "svx", "Ocke.Janssen@sun.com", "FmControlData::ModelReplaced" );
+	m_xFormComponent = _rxNew;
 	newObject( m_xFormComponent );
 
-    // Images neu setzen
-    m_aNormalImage = GetImage( _rNormalImages );
+	// Images neu setzen
+	m_aNormalImage = GetImage( _rNormalImages );
 	m_aHCImage = GetImage( _rHCImages );
 }
 
@@ -650,10 +642,10 @@ namespace svxform
 	//-----------------------------------------------------------------------
 	Size NavigatorFrame::CalcDockingSize( SfxChildAlignment eAlign )
 	{
-        if ( ( eAlign == SFX_ALIGN_TOP ) || ( eAlign == SFX_ALIGN_BOTTOM ) )
-            return Size();
+		if ( ( eAlign == SFX_ALIGN_TOP ) || ( eAlign == SFX_ALIGN_BOTTOM ) )
+			return Size();
 
-        return SfxDockingWindow::CalcDockingSize( eAlign );
+		return SfxDockingWindow::CalcDockingSize( eAlign );
 	}
 
 	//-----------------------------------------------------------------------
@@ -661,7 +653,7 @@ namespace svxform
 	{
 		if ( ( _eAlign == SFX_ALIGN_LEFT ) || ( _eAlign == SFX_ALIGN_RIGHT ) || ( _eAlign == SFX_ALIGN_NOALIGNMENT ) )
 			return _eAlign;
-        return _eActAlign;
+		return _eActAlign;
 	}
 
 	//------------------------------------------------------------------------
@@ -679,7 +671,6 @@ namespace svxform
 
 		m_pNavigatorTree->SetPosSizePixel( aExplPos, aExplSize );
 	}
-
 
 	//========================================================================
 	// class NavigatorFrameManager
@@ -700,4 +691,5 @@ namespace svxform
 
 //............................................................................
 }	// namespace svxform
-//............................................................................
+
+/* vim: set noet sw=4 ts=4: */
