@@ -41,7 +41,7 @@ all:
 TARFILE_NAME=zlib-1.3.2
 TARFILE_MD5=a1e6c958597af3c67d162995a342138a
 
-PATCH_FILES=zlib-1.3.1.patch
+PATCH_FILES=zlib-1.3.2.patch
 ADDITIONAL_FILES=makefile.mk
 
 #relative to CONFIGURE_DIR
