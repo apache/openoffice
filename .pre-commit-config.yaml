@@ -56,15 +56,15 @@ repos:
         description: ensures that links to vcs websites are permalinks
       - id: end-of-file-fixer
         description: makes sure files end in a newline and only a newline
-        files: (m|M)akefile$|\.(asm|asp|bas|bat|c|cl|cmd|common|component|cpp|cxx|dtd|dxp|el|h|hrc|hxx|idl|in|ini|java|js|lst|m|m4|map|md|mk|mm|mod|pas|php|pl|pm|pmk|properties|props|py|rc|rdf|rng|s|sdi|sh|src|template|ulf|vbs|xba|xcs|xcu|xdl|xhp|xlb|xmi|xml|xsd|xslt?|ya?ml)$|^ext_libraries/.*$|^test/.*$
+        files: (m|M)akefile$|\.(asm|asp|bas|bat|c|cl|cmd|common|component|cpp|cxx|dtd|dxp|el|h|hrc|hxx|idl|in|ini|java|js|lst|m|m4|map|md|mk|mm|mod|old|pas|php|pl|pm|pmk|properties|props|py|rc|rdf|rng|s|sdi|sh|src|template|ulf|vbs|xba|xcs|xcu|xdl|xhp|xlb|xmi|xml|xsd|xslt?|ya?ml)$|^ext_libraries/.*$|^test/.*$
       - id: fix-byte-order-marker
         description: removes UTF-8 byte order marker
       - id: mixed-line-ending
         description: replaces or checks mixed line ending
-        files: \.(asm|asp|bas|c|cl|cmd|common|component|cpp|cxx|dtd|dxp|el|h|hrc|hxx|idl|in|ini|java|js|lst|m|m4|map|md|mk|mm|mod|pas|php|pl|pm|pmk|properties|props|py|rc|rdf|rng|s|sdi|sh|src|template|ulf|vbs|xba|xcs|xcu|xdl|xhp|xlb|xmi|xsd|xslt?|ya?ml)$|^main/accessibility/.*$|^main/afms/.*$|^main/animations/.*$|^main/apache-commons/.*$|^test/testgui/.*$
+        files: \.(asm|asp|bas|c|cl|cmd|common|component|cpp|cxx|dtd|dxp|el|h|hrc|hxx|idl|in|ini|java|js|lst|m|m4|map|md|mk|mm|mod|old|pas|php|pl|pm|pmk|properties|props|py|rc|rdf|rng|s|sdi|sh|src|template|ulf|vbs|xba|xcs|xcu|xdl|xhp|xlb|xmi|xsd|xslt?|ya?ml)$|^main/accessibility/.*$|^main/afms/.*$|^main/animations/.*$|^main/apache-commons/.*$|^test/testgui/.*$
       - id: trailing-whitespace
         description: trims trailing whitespace
-        files: (m|M)akefile$|\.(asm|asp|bas|bat|c|cl|cmd|common|component|cpp|cxx|dtd|dxp|el|h|hrc|hxx|idl|in|ini|java|js|lst|m|m4|map|md|mk|mm|mod|pas|php|pl|pm|pmk|properties|props|py|rc|rdf|rng|s|sdi|sh|src|template|ulf|vbs|xba|xcs|xcu|xdl|xhp|xlb|xmi|xml|xsd|xslt?|ya?ml)$
+        files: (m|M)akefile$|\.(asm|asp|bas|bat|c|cl|cmd|common|component|cpp|cxx|dtd|dxp|el|h|hrc|hxx|idl|in|ini|java|js|lst|m|m4|map|md|mk|mm|mod|old|pas|php|pl|pm|pmk|properties|props|py|rc|rdf|rng|s|sdi|sh|src|template|ulf|vbs|xba|xcs|xcu|xdl|xhp|xlb|xmi|xml|xsd|xslt?|ya?ml)$
         args: [--markdown-linebreak-ext=md]
   - repo: https://github.com/codespell-project/codespell
     rev: v2.4.1
