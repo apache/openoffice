@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,27 +41,27 @@ namespace uno {
     as simple string when creating an instance of PolymorphicType. Usually one
     only needs a PolymorphicType when a polymporphic type is put into an
     uno.Any. For example, let's assume there is a idl type PolyStruct:
-    
+
     module test {
     struct PolyStruct< T >
     {
         T member;
     };
     };
-    
+
     Then one would use it in C# in this way:
 
     uno.Any myAny = new uno.Any( PolymorphicType.GetType(
         typeof(PolyStruct),  "unoidl.test.PolyStruct<System.Boolean>"),
         new PolyStruct(true));
 
-    or if one has a sequence of polymorphic structs:        
+    or if one has a sequence of polymorphic structs:
 
     uno.Any myAny = new uno.Any( PolymorphicType.GetType(
         typeof(PolyStruct),  "unoidl.test.PolyStruct<System.Boolean>[]"),
         new PolyStruct[] {new PolyStruct(true)} );
 
-        
+
     To get a new instance of PolymorphicType one uses the static method
     PolymorphicType.GetType. The method ensures that there is only one instance
     for each distinct name. For example, if GetType is called multiple times with
@@ -78,25 +78,25 @@ namespace uno {
     Here are a couple of possible strings:
 
     unoidl.test.PolyStruct<System.Int32>
-    unoidl.test.PolyStruct<System.Char[]> 
+    unoidl.test.PolyStruct<System.Char[]>
     unoidl.test.PolyStruct<System.Int64>[]
     unoidl.test.PolyStruct<unoidl.test.PolyStruct<System.Int64>>
     unoidl.test.PolyStruct<unoidl.test.PolyStruct<System.Int64[]>[]>[]
- 
+
     In the future, when the CLI supports templates, we will probably adapt the cli-uno
-    bridge accordingly to use real template types. Then this class will become obsolete.    
+    bridge accordingly to use real template types. Then this class will become obsolete.
  */
 public class PolymorphicType: Type
 {
     private Type m_base;
     private string m_type_name;
-    
+
     private static Hashtable m_ht_types = Hashtable.Synchronized(new Hashtable(256));
 
     /** provides a unique instance of this class.
-      
+
        This function returns null if the specified type is no polymorphic struct.
-       
+
        @param type
        the type of the polymorphic struct. For example, created by
        <code>typeof(unoidl.com.sun.star.beans.Defaulted)</code>
@@ -121,8 +121,8 @@ public class PolymorphicType: Type
 			//unfortunately we cannot check if it is a real polymorphic struct here.
 			if ( ! elementType.IsClass)
 				return null;
-                   
-            
+
+
         }
         else if (Attribute.GetCustomAttribute(type, typeof(uno.TypeParametersAttribute))
             == null)
@@ -163,8 +163,8 @@ public class PolymorphicType: Type
             return m_base;
         }
     }
-            
-    
+
+
     //implementations of abstract methods and properties from base class
     public override string Name
     {
@@ -173,7 +173,7 @@ public class PolymorphicType: Type
             return m_base.Name;
         }
     }
-    
+
     public override Assembly Assembly
     {
         get
@@ -197,7 +197,7 @@ public class PolymorphicType: Type
             return m_base.BaseType;
         }
     }
-    
+
     public override string FullName
     {
         get
@@ -264,7 +264,7 @@ public class PolymorphicType: Type
         Type attributeType,
         bool inherit)
     {
-        return m_base.GetCustomAttributes(attributeType, inherit);        
+        return m_base.GetCustomAttributes(attributeType, inherit);
     }
 
     public override bool IsDefined(

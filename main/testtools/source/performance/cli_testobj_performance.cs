@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -36,7 +36,7 @@ namespace testobj
 public class PerformanceTestObject : ServiceBase, XPerformanceTest
 {
     private XComponentContext m_xContext;
-    
+
     public PerformanceTestObject( XComponentContext xContext )
     {
         m_xContext = xContext;
@@ -44,9 +44,9 @@ public class PerformanceTestObject : ServiceBase, XPerformanceTest
     public PerformanceTestObject()
     {
     }
-    
-    private int      _long;   
-    private long     _hyper;    
+
+    private int      _long;
+    private long     _hyper;
     private float    _float;
     private double   _double;
     private String   _string = "";
@@ -54,7 +54,7 @@ public class PerformanceTestObject : ServiceBase, XPerformanceTest
     private Any   _any;
     private Object[]   _interface_sequence = new Object[0];
     private ComplexTypes _complexTypes = new ComplexTypes();
-    
+
     // Attributes
     public int getLong_attr() { return _long; }
     public void setLong_attr( int _long_attr ) { _long = _long_attr; }
@@ -74,7 +74,7 @@ public class PerformanceTestObject : ServiceBase, XPerformanceTest
     public void setSequence_attr(Object[] _sequence_attr ) { _interface_sequence = _sequence_attr; }
     public ComplexTypes getStruct_attr() { return _complexTypes; }
     public void setStruct_attr( ComplexTypes _struct_attr ) { _complexTypes = _struct_attr; }
-    
+
     // Methods
     public void async() {}
     public void sync(  ) {}
@@ -90,7 +90,7 @@ public class PerformanceTestObject : ServiceBase, XPerformanceTest
     public float getFloat() { return _float; }
     public void setFloat( /*IN*/float f ) { _float = f; }
     public double getDouble(  ) { return _double; }
-    public void setDouble( /*IN*/double f ) { _double = f; }    
+    public void setDouble( /*IN*/double f ) { _double = f; }
     public String getString(  ) { return _string; }
     public void setString( /*IN*/String s ) { _string = s; }
     public Object getInterface(  ) { return _xInterface; }
@@ -108,7 +108,7 @@ public class PerformanceTestObject : ServiceBase, XPerformanceTest
     }
     public ComplexTypes getStruct(  ) { return _complexTypes; }
     public void setStruct( /*IN*/ComplexTypes c ) { _complexTypes = c; }
-    public void raiseRuntimeException(  ) { throw new RuntimeException(); }    
+    public void raiseRuntimeException(  ) { throw new RuntimeException(); }
 }
 
 }
