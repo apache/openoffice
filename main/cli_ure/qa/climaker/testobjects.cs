@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,9 +50,9 @@ class Component:uno.util.WeakComponentBase, XTest
             m_args[i+1] = args[i];
         }
     }
-    
+
 	public Any[] Args {
-		get	
+		get
 		{
             return m_args;
 		}
@@ -171,7 +171,7 @@ class Component:uno.util.WeakComponentBase, XTest
         aXInterface = m_XInterface;
         aXComponent = m_XComponent;
         seqBool = m_seqBool;
-            
+
     }
 
     //returns the values which have been set in a previous call
@@ -195,7 +195,7 @@ class Component:uno.util.WeakComponentBase, XTest
         byte _byte = aByte;
         aByte = m_Byte;
         m_Byte = _byte;
-        
+
         short _short = aShort;
         aShort = m_Short;
         m_Short = _short;
@@ -211,7 +211,7 @@ class Component:uno.util.WeakComponentBase, XTest
         uint _uint = aUInt;
         aUInt = m_UInt;
         m_UInt = _uint;
-        
+
         long _long = aLong;
         aLong = m_Long;
         m_Long = _long;
@@ -219,7 +219,7 @@ class Component:uno.util.WeakComponentBase, XTest
         ulong _ulong = aULong;
         aULong = m_ULong;
         m_ULong = _ulong;
-        
+
         float _f = aFloat;
         aFloat = m_Float;
         m_Float = _f;
@@ -227,7 +227,7 @@ class Component:uno.util.WeakComponentBase, XTest
         double _d = aDouble;
         aDouble = m_Double;
         m_Double = _d;
-        
+
         char _char = aChar;
         aChar = m_Char;
         m_Char = _char;
@@ -251,7 +251,7 @@ class Component:uno.util.WeakComponentBase, XTest
         Struct1 _struct1 = aStruct;
         aStruct = m_Struct1;
         m_Struct1 = _struct1;
-        
+
         object _obj = aXInterface;
         aXInterface = m_XInterface;
         m_XInterface = _obj;
@@ -269,7 +269,7 @@ class Component:uno.util.WeakComponentBase, XTest
     {
         return m_Bool;
     }
-    
+
     public byte retByte()
     {
         return m_Byte;
@@ -279,22 +279,22 @@ class Component:uno.util.WeakComponentBase, XTest
     {
         return m_Short;
     }
-    
+
     public ushort retUShort()
     {
         return m_UShort;
     }
-    
+
     public int retLong()
     {
         return m_Int;
     }
-    
+
     public uint retULong()
     {
         return m_UInt;
     }
-    
+
     public long retHyper()
     {
         return m_Long;
@@ -309,27 +309,27 @@ class Component:uno.util.WeakComponentBase, XTest
     {
         return m_Float;
     }
-    
+
     public double retDouble()
     {
         return m_Double;
     }
-    
+
     public char retChar()
     {
         return m_Char;
     }
-    
+
     public string retString()
     {
         return m_String;
     }
-    
+
     public Type retType()
     {
         return m_Type;
     }
-    
+
     public uno.Any retAny()
     {
         return m_Any;
@@ -343,7 +343,7 @@ class Component:uno.util.WeakComponentBase, XTest
     {
         return m_Struct1;
     }
-    
+
     public object retXInterface()
     {
         return m_XInterface;
@@ -549,7 +549,7 @@ class Component:uno.util.WeakComponentBase, XTest
         }
     }
 
-    
+
 
 
 
@@ -578,7 +578,5 @@ class Component:uno.util.WeakComponentBase, XTest
     object m_XInterface;
     unoidl.com.sun.star.lang.XComponent m_XComponent;
     bool[] m_seqBool;
-    
+
 }
-
-

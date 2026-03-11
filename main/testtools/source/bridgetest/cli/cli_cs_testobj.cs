@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -152,7 +152,7 @@ public class BridgeTestObject : WeakBase, XRecursiveCall, XBridgeTest2
         /*INOUT*/ref TestDataElements io_testDataElements )
     {
         Debug.WriteLine( "##### " + GetType().FullName + ".setValues2:" + io_any );
-        
+
         _bool             = io_bool;
         _char             = io_char;
         _byte             = io_byte;
@@ -198,7 +198,7 @@ public class BridgeTestObject : WeakBase, XRecursiveCall, XBridgeTest2
         /*OUT*/out TestDataElements o_testDataElements )
     {
         Debug.WriteLine( "##### " + GetType().FullName + ".getValues" );
-        
+
         o_bool             = _bool;
         o_char             = _char;
         o_byte             = _byte;
@@ -608,8 +608,8 @@ public class BridgeTestObject : WeakBase, XRecursiveCall, XBridgeTest2
     /* Attention: Debugging this code (probably in mixed mode) may lead to exceptions
      * which do not occur when running normally (Visual Studio 2003)
      */
-    public void testConstructorsService(XComponentContext context) 
-	{ 
+    public void testConstructorsService(XComponentContext context)
+	{
 		Constructors.create1(context,
 			true,
 			0x80, // -128 in C++,
@@ -629,9 +629,9 @@ public class BridgeTestObject : WeakBase, XRecursiveCall, XBridgeTest2
 			new byte[] { 0x80}, // in C++ the value is compared with SAL_MIN_INT8 which is -128
 			new short[] { Int16.MinValue },
 			new UInt16[] { UInt16.MaxValue },
-			new Int32[] {Int32.MinValue},  
+			new Int32[] {Int32.MinValue},
 			new UInt32[] { UInt32.MaxValue },
-			new long[] { Int64.MinValue }, 
+			new long[] { Int64.MinValue },
 			new UInt64[] { UInt64.MaxValue },
 			new float[] { 0.123f },
 			new double[] { 0.456 },
@@ -711,7 +711,7 @@ public class BridgeTestObject : WeakBase, XRecursiveCall, XBridgeTest2
                      typeof(TestPolyStruct),
                      "unoidl.test.testtools.bridgetest.TestPolyStruct<uno.Any>"),
                  new TestPolyStruct(new Any(true))),
-             new Any(typeof(object), null) 
+             new Any(typeof(object), null)
 		);
 
 
@@ -767,8 +767,8 @@ public class BridgeTestObject : WeakBase, XRecursiveCall, XBridgeTest2
 
     //test the returned interface
     xMulti.fn11(1);
-    
-    
+
+
     }
 
     public XCurrentContextChecker getCurrentContextChecker()
@@ -780,7 +780,7 @@ public class BridgeTestObject : WeakBase, XRecursiveCall, XBridgeTest2
     {
         return arg;
     }
-  
+
     public  void  transportPolyHyper(/*[in][out]*/ ref TestPolyStruct arg)
     {
     }
@@ -795,7 +795,7 @@ public class BridgeTestObject : WeakBase, XRecursiveCall, XBridgeTest2
     {
         return new TestPolyStruct(unoidl.test.testtools.bridgetest.TestBadEnum.M);
     }
-    
+
     public TestPolyStruct getNullPolyLong()
     {
         return new TestPolyStruct();
@@ -886,7 +886,7 @@ public class BridgeTestObject : WeakBase, XRecursiveCall, XBridgeTest2
         }
         return "";
     }
-    
+
     public int RaiseAttr1
     {
         get { throw new RuntimeException(); }
