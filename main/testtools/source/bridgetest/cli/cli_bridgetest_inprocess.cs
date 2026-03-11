@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -37,7 +37,7 @@ internal class Factory :
     private String m_service;
     private Type m_type;
     private System.Reflection.ConstructorInfo m_ctor;
-    
+
     public Factory( Type type, String service )
     {
         m_service = service;
@@ -45,12 +45,12 @@ internal class Factory :
         m_ctor = type.GetConstructor(
             new Type [] { typeof (XComponentContext) } );
     }
-    
+
     public Object createInstanceWithContext( XComponentContext xContext )
     {
         return m_ctor.Invoke( new Object [] { xContext } );
     }
-    
+
     public Object createInstanceWithArgumentsAndContext(
         uno.Any [] args, XComponentContext xContext )
     {
@@ -93,8 +93,8 @@ public class BridgeTest
 						"\n\ncli_bridgetest_inprocess [bootstrap file] \n\n"
 						+ "bootstrap file \n"
 						+ "\t contains the entries UNO_TYPES and UNO_SERVICES.\n"
-						+ "\t If a file is not provided than it is assumed that a\n" 
-						+ "\t cli_bridgetest_inprocess.ini file can be found in the\n " 
+						+ "\t If a file is not provided than it is assumed that a\n"
+						+ "\t cli_bridgetest_inprocess.ini file can be found in the\n "
 						+ "\t current working directory.\n"
 						);
 					return 0;
@@ -109,7 +109,7 @@ public class BridgeTest
             XComponentContext xContext =
                 Bootstrap.defaultBootstrap_InitialComponentContext(
                     bootstrap_ini, null );
-        
+
             using (new uno.util.DisposeGuard( (XComponent) xContext ))
             {
                 XSet xSet = (XSet) xContext.getServiceManager();
@@ -143,7 +143,7 @@ public class BridgeTest
                         new Factory(
                             typeof (vb_bridetest.BridgeTest),
                             "com.sun.star.test.bridge.cli_uno.VbBridgeTest" ) ) );
-            
+
                 // I.
                 // direct unbridged test
                 // get client object via singleton entry
@@ -157,12 +157,12 @@ public class BridgeTest
                 xClient.run(
                     new String [] {
                     "com.sun.star.test.bridge.cli_uno.CsTestObject" } );
-                
+
                 // II:
                 // uno -ro uno_services.rdb -ro uno_types.rdb
                 //     -s com.sun.star.test.bridge.BridgeTest
                 //     -- com.sun.star.test.bridge.cli_uno.TestObject
-            
+
                 // get native client
                 test_client =
                     xContext.getServiceManager().createInstanceWithContext(
@@ -175,12 +175,12 @@ public class BridgeTest
                     new String [] {
                     "com.sun.star.test.bridge.cli_uno.CsTestObject",
 					"noCurrentContext"} );
-            
-                // III:        
+
+                // III:
                 // uno -ro uno_services.rdb -ro uno_types.rdb
                 //     -s com.sun.star.test.bridge.cli_uno.BridgeTest
                 //     -- com.sun.star.test.bridge.CppTestObject
-            
+
                 // get CLI client
                 test_client =
                     xContext.getServiceManager().createInstanceWithContext(
@@ -193,7 +193,7 @@ public class BridgeTest
                 xClient.run(
                     new String [] { "com.sun.star.test.bridge.CppTestObject" } );
 
-                // IV:        
+                // IV:
                 // uno -ro uno_services.rdb -ro uno_types.rdb
                 //     -s com.sun.star.test.bridge.cli_uno.VbBridgeTest
                 //     -- com.sun.star.test.bridge.CppTestObject
@@ -227,8 +227,8 @@ public class BridgeTest
 //                     "com.sun.star.test.bridge.cli_uno.VbTestObject" } );
 
                 // VI:
-                // uno -ro uno_services.rdb -ro uno_types.rdb 
-                // -s com.sun.star.test.bridge.cli_uno.CppBridgeTest 
+                // uno -ro uno_services.rdb -ro uno_types.rdb
+                // -s com.sun.star.test.bridge.cli_uno.CppBridgeTest
                 // -- com.sun.star.test.bridge.CppTestObject
                 test_client =
                     xContext.getServiceManager().createInstanceWithContext(
@@ -248,7 +248,7 @@ public class BridgeTest
             System.Console.WriteLine( exc );
             return -1;
         }
-        
+
         GC.WaitForPendingFinalizers();
         System.Console.WriteLine( "====> all tests ok." );
         return 0;

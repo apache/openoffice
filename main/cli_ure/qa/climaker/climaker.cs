@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,13 +42,13 @@ public class Context: ucss.uno.XComponentContext
         TEST_EXCEPTION,
         CREATION_FAILED
     }
-    
+
     public Context(test_kind k, params object[] args)
     {
         kind = k;
 		factory = new Factory(k, args);
     }
-        
+
     public ucss.lang.XMultiComponentFactory getServiceManager()
     {
         if (kind == test_kind.NO_FACTORY)
@@ -130,7 +130,7 @@ public class Logger
     int m_nErrors;
     public Logger() {
     }
-    
+
 	public String Function
 	{
 		set
@@ -142,7 +142,7 @@ public class Logger
 			return m_sFunction;
 		}
 	}
-    
+
     public void assure(bool b) {
         if (b == false)
         {
@@ -154,7 +154,7 @@ public class Logger
     public void printStatus() {
         Console.WriteLine("\n=====================================");
 
-        
+
         String msg;
         if (m_nErrors > 0)
             msg = "Test failed! " + m_nErrors.ToString() + " Errors.";
@@ -177,7 +177,7 @@ public sealed class Test
 {
     public static int Main(String[] args)
     {
-        
+
 //        System.Diagnostics.Debugger.Launch();
 		try
 		{
@@ -327,7 +327,7 @@ public sealed class Test
         l.assure(s.at17.Length == 0);
         l.assure(s.at18.Length == 0);
     }
- 
+
     public void testFullStruct2(Logger l) {
         //TODO:
         Struct2 s = new Struct2(
@@ -463,10 +463,10 @@ public sealed class Test
             new ucss.uno.DeploymentException("DeploymentException", obj);
         ucss.lang.InvalidListenerException excInvalidListener =
             new ucss.lang.InvalidListenerException("ListenerException", obj);
-        
+
         /* create1 does not specify exceptions. Therefore RuntimeExceptions
            fly through and other exceptions cause a DeploymentException.
-        */            
+        */
         try {
             S1.create1(new Context(Context.test_kind.TEST_EXCEPTION, excRuntime));
         } catch (ucss.uno.RuntimeException e) {
@@ -476,7 +476,7 @@ public sealed class Test
             l.assure(false);
         }
 
-        Context c = new Context(Context.test_kind.TEST_EXCEPTION, excException); 
+        Context c = new Context(Context.test_kind.TEST_EXCEPTION, excException);
         try {
             S1.create1(c);
         } catch (ucss.uno.DeploymentException e) {
@@ -808,7 +808,7 @@ public sealed class Test
         //test
         c = new Context(Context.test_kind.NORMAL);
         try {
-            
+
             PolyStruct2 arg1 = new PolyStruct2(typeof(PolyStruct2), 1);
             PolyStruct2 arg2 = new PolyStruct2(new Any(true), 1);
             PolyStruct2 arg3 = new PolyStruct2(true, 1);
@@ -1008,12 +1008,12 @@ public sealed class Test
 			l.assure( sType == "unoidl.test.cliure.climaker.PolyStruct<" +
 				"unoidl.test.cliure.climaker.PolyStruct<System.Char,uno.Any>," +
 				"unoidl.test.cliure.climaker.PolyStruct2<System.Char>>[][]");
-			
-			
-			
- 
-        } 
-		catch (Exception) 
+
+
+
+
+        }
+		catch (Exception)
 		{
             l.assure(false);
         }
@@ -1070,7 +1070,7 @@ public sealed class Test
         }
         else
             l.assure(false);
-        
+
         //function test must not have the oneway attribute and Exception attribute
         arAttr = typeXTest.GetMethod("test").GetCustomAttributes(false);
         l.assure(arAttr.Length == 0);
@@ -1169,8 +1169,8 @@ public sealed class Test
         else
             l.assure(false);
 
-        
-        //test instantiated polymorphic struct: return value        
+
+        //test instantiated polymorphic struct: return value
 //         Type typeXTest = typeof(XTest);
 //         arAttr = typeXTest.GetMethod("testPolyStruct").ReturnTypeCustomAttributes.GetCustomAttributes(false);
 //         if (arAttr.Length == 1)
@@ -1201,7 +1201,7 @@ public sealed class Test
             l.assure(t1 == t2);
             l.assure(t1.PolymorphicName == name);
             l.assure(t1.OriginalType == typeof(unoidl.test.cliure.climaker.PolyStruct));
-            
+
         }
 
     void testInterface(Logger l)
@@ -1229,7 +1229,7 @@ public sealed class Test
             object aXInterface = new object();
             ucss.lang.XComponent aXComponent = (ucss.lang.XComponent) obj;
             bool[] aSeqBool = {true, false, true};
-            
+
             obj.inParameters(aBool, aByte, aShort, aUShort,
                              aInt, aUInt, aLong, aULong,
                              aFloat, aDouble, aChar, aString,
@@ -1308,7 +1308,7 @@ public sealed class Test
                                 ref inoutFloat, ref inoutDouble, ref inoutChar, ref inoutString,
                                 ref inoutType, ref inoutAny, ref inoutEnum2, ref inoutStruct1,
                                 ref inoutXInterface, ref inoutXComponent, ref inoutSeqBool);
-				
+
             l.assure(aBool == inoutBool);
             l.assure(aByte == inoutByte);
             l.assure(aShort == inoutShort);
@@ -1425,7 +1425,7 @@ public sealed class Test
         {
             l.assure(e.Message.IndexOf("Any") != -1);
         }
-        
+
 
         try
         {

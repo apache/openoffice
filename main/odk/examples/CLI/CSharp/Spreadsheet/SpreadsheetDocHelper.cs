@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -77,14 +77,14 @@ public class SpreadsheetDocHelper : System.IDisposable
         // Collection of sheets
         unoidl.com.sun.star.sheet.XSpreadsheets xSheets =
             mxDocument.getSheets();
-        
+
         unoidl.com.sun.star.container.XIndexAccess xSheetsIA =
             (unoidl.com.sun.star.container.XIndexAccess) xSheets;
-        
+
         unoidl.com.sun.star.sheet.XSpreadsheet xSheet =
             (unoidl.com.sun.star.sheet.XSpreadsheet)
               xSheetsIA.getByIndex( nIndex ).Value;
-        
+
         return xSheet;
     }
 
@@ -98,12 +98,12 @@ public class SpreadsheetDocHelper : System.IDisposable
         // Collection of sheets
         unoidl.com.sun.star.sheet.XSpreadsheets xSheets =
             mxDocument.getSheets();
-        
+
         xSheets.insertNewByName( aName, nIndex );
         unoidl.com.sun.star.sheet.XSpreadsheet xSheet =
             (unoidl.com.sun.star.sheet.XSpreadsheet)
               xSheets.getByName( aName ).Value;
-        
+
         return xSheet;
     }
 
@@ -172,7 +172,7 @@ public class SpreadsheetDocHelper : System.IDisposable
 
     /** Draws a colored border around the range and writes the headline
         in the first cell.
-        
+
         @param xSheet  The XSpreadsheet interface of the spreadsheet.
         @param aRange  The address of the cell range (or a named range).
         @param aHeadline  The headline text. */
@@ -182,7 +182,7 @@ public class SpreadsheetDocHelper : System.IDisposable
     {
         unoidl.com.sun.star.beans.XPropertySet xPropSet = null;
         unoidl.com.sun.star.table.XCellRange xCellRange = null;
-        
+
         // draw border
         xCellRange = xSheet.getCellRangeByName( aRange );
         xPropSet = (unoidl.com.sun.star.beans.XPropertySet) xCellRange;
@@ -211,7 +211,7 @@ public class SpreadsheetDocHelper : System.IDisposable
         xCellRange = xSheet.getCellRangeByPosition(
             aAddr.StartColumn,
             aAddr.StartRow, aAddr.EndColumn, aAddr.StartRow );
-        
+
         xPropSet = (unoidl.com.sun.star.beans.XPropertySet) xCellRange;
         xPropSet.setPropertyValue(
             "CellBackColor", new uno.Any( (Int32) 0x99CCFF ) );
@@ -310,7 +310,7 @@ public class SpreadsheetDocHelper : System.IDisposable
 
     /** Returns a list of addresses of all cell ranges contained in the
         collection.
-        
+
         @param xRangesIA  The XIndexAccess interface of the collection.
         @return  A string containing the cell range address list. */
     public String getCellRangeListString(
@@ -336,9 +336,9 @@ public class SpreadsheetDocHelper : System.IDisposable
         @return  The ServiceManager to instantiate office components. */
     private XMultiServiceFactory connect( String [] args )
     {
-        
+
         m_xContext = uno.util.Bootstrap.bootstrap();
-        
+
         return (XMultiServiceFactory) m_xContext.getServiceManager();
     }
 
@@ -353,7 +353,7 @@ public class SpreadsheetDocHelper : System.IDisposable
     {
         XComponentLoader aLoader = (XComponentLoader)
             mxMSFactory.createInstance( "com.sun.star.frame.Desktop" );
-        
+
         XComponent xComponent = aLoader.loadComponentFromURL(
             "private:factory/scalc", "_blank", 0,
             new unoidl.com.sun.star.beans.PropertyValue[0] );
