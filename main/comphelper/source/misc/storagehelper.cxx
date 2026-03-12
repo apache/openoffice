@@ -506,7 +506,7 @@ sal_Bool OStorageHelper::IsValidZipEntryFileName(
             case ':':
                 return sal_False;
             case '/':
-                if ( !bSlashAllowed )
+                if ( ( i == 0 ) || !bSlashAllowed )
                     return sal_False;
                 break;
             default:
