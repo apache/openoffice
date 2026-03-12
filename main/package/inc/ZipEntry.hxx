@@ -25,18 +25,52 @@
 
 #include <rtl/ustring.hxx>
 
+/// Data from a central directory header.
 struct ZipEntry
 {
+    /// version needed to extract
     sal_Int16 nVersion;
+    /// general purpose bit flag
     sal_Int16 nFlag;
+    /// compression method
     sal_Int16 nMethod;
+    /// last mod file date & time
     sal_Int32 nTime;
+    /// crc-32
     sal_Int32 nCrc;
+    /// compressed size
     sal_Int32 nCompressedSize;
+    /// uncompressed size
     sal_Int32 nSize;
-    sal_Int32 nOffset;
+    /// (Absolute) offset to the local file header
+    sal_Int32 nFileHeaderOffset;
+    /// (Absolute) offset to the file data
+    sal_Int32 nFileDataOffset;
+    /// file name length
     sal_Int16 nPathLen;
-    sal_Int16 nExtraLen;
+    /// extra field length of local file header
+    sal_Int16 nLOCExtraLen;
+    /// extra field length of central directory header
+    sal_Int16 nCENExtraLen;
+    /// file name
     ::rtl::OUString sPath;
+    /// True if the entry has a data descriptor after the file data
+    sal_Bool bHasDataDescriptor;
+    /// Default constructor
+    ZipEntry():
+        nVersion(-1),
+        nFlag(0),
+        nMethod(0),
+        nTime(-1),
+        nCrc(0),
+        nCompressedSize(0),
+        nSize(0),
+        nFileHeaderOffset(-1),
+        nFileDataOffset(-1),
+        nPathLen(0),
+        nLOCExtraLen(0),
+        nCENExtraLen(0),
+        bHasDataDescriptor(sal_False) {
+    }
 };
 #endif 

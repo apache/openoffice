@@ -110,7 +110,7 @@ void SAL_CALL ZipOutputStream::putNextEntry( ZipEntry& rEntry,
 		m_pCurrentStream = pStream;
 	}
 	sal_Int32 nLOCLength = writeLOC(rEntry);
-	rEntry.nOffset = static_cast < sal_Int32 > (aChucker.GetPosition()) - nLOCLength;
+	rEntry.nFileHeaderOffset = static_cast < sal_Int32 > (aChucker.GetPosition()) - nLOCLength;
 	aZipList.push_back( &rEntry );
 	pCurrentEntry = &rEntry;
 }
@@ -239,10 +239,10 @@ void SAL_CALL ZipOutputStream::finish(  )
 	if (aZipList.size() < 1)
 		OSL_ENSURE(false,"Zip file must have at least one entry!\n");
 
-	sal_Int32 nOffset= static_cast < sal_Int32 > (aChucker.GetPosition());
+	sal_Int32 nCENOffset= static_cast < sal_Int32 > (aChucker.GetPosition());
 	for (sal_Int32 i =0, nEnd = aZipList.size(); i < nEnd; i++)
 		writeCEN( *aZipList[i] );
-	writeEND( nOffset, static_cast < sal_Int32 > (aChucker.GetPosition()) - nOffset);
+	writeEND( nCENOffset, static_cast < sal_Int32 > (aChucker.GetPosition()) - nCENOffset);
 	bFinished = sal_True;
 	xStream->flush();
 }
@@ -296,7 +296,7 @@ void ZipOutputStream::doDeflate()
     }
 }
 
-void ZipOutputStream::writeEND(sal_uInt32 nOffset, sal_uInt32 nLength)
+void ZipOutputStream::writeEND(sal_uInt32 nCENOffset, sal_uInt32 nLength)
 	throw(IOException, RuntimeException)
 {
 	aChucker << ENDSIG;
@@ -305,7 +305,7 @@ void ZipOutputStream::writeEND(sal_uInt32 nOffset, sal_uInt32 nLength)
 	aChucker << static_cast < sal_Int16 > ( aZipList.size() );
 	aChucker << static_cast < sal_Int16 > ( aZipList.size() );
 	aChucker << nLength;
-	aChucker << nOffset;
+	aChucker << nCENOffset;
 	aChucker << static_cast < sal_Int16 > ( 0 );
 }
 void ZipOutputStream::writeCEN( const ZipEntry &rEntry )
@@ -338,12 +338,12 @@ void ZipOutputStream::writeCEN( const ZipEntry &rEntry )
 	aChucker << rEntry.nCompressedSize;
 	aChucker << rEntry.nSize;
 	aChucker << nNameLength;
-	aChucker << static_cast < sal_Int16> (0);
-	aChucker << static_cast < sal_Int16> (0);
-	aChucker << static_cast < sal_Int16> (0);
-	aChucker << static_cast < sal_Int16> (0);
-	aChucker << static_cast < sal_Int32> (0);
-	aChucker << rEntry.nOffset;
+	aChucker << static_cast < sal_Int16> (0); // extra field length
+	aChucker << static_cast < sal_Int16> (0); // file comment length
+	aChucker << static_cast < sal_Int16> (0); // disk number start
+	aChucker << static_cast < sal_Int16> (0); // internal file attributes
+	aChucker << static_cast < sal_Int32> (0); // external file attributes
+	aChucker << rEntry.nFileHeaderOffset;
 
 	Sequence < sal_Int8 > aSequence( (sal_Int8*)sUTF8Name.getStr(), sUTF8Name.getLength() );
 	aChucker.WriteBytes( aSequence );
@@ -367,40 +367,40 @@ sal_Int32 ZipOutputStream::writeLOC( const ZipEntry &rEntry )
 	sal_Int16 nNameLength 		= static_cast < sal_Int16 > ( sUTF8Name.getLength() );
 
 	aChucker << LOCSIG;
-	aChucker << rEntry.nVersion;
+	aChucker << rEntry.nVersion; // version needed to extract
 
 	if (rEntry.nFlag & (1 << 4) )
 	{
 		// If it's an encrypted entry, we pretend its stored plain text
 		sal_Int16 nTmpFlag = rEntry.nFlag;
 		nTmpFlag &= ~(1 <<4 );
-		aChucker << nTmpFlag;
-		aChucker << static_cast < sal_Int16 > ( STORED );
+		aChucker << nTmpFlag;	// general purpose bit flag
+		aChucker << static_cast < sal_Int16 > ( STORED ); // compression method
 	}
 	else
 	{
-		aChucker << rEntry.nFlag;
-		aChucker << rEntry.nMethod;
+		aChucker << rEntry.nFlag; // general purpose bit flag
+		aChucker << rEntry.nMethod; // compression method
 	}
 
-	aChucker << static_cast < sal_uInt32 > (rEntry.nTime);
+	aChucker << static_cast < sal_uInt32 > (rEntry.nTime); // last mod file time & date
 	if ((rEntry.nFlag & 8) == 8 )
 	{
-		aChucker << static_cast < sal_Int32 > (0);
-		aChucker << static_cast < sal_Int32 > (0);
-		aChucker << static_cast < sal_Int32 > (0);
+		aChucker << static_cast < sal_Int32 > (0); // crc-32
+		aChucker << static_cast < sal_Int32 > (0); // compressed size
+		aChucker << static_cast < sal_Int32 > (0); // uncompressed size
 	}
 	else
 	{
-		aChucker << static_cast < sal_uInt32 > (rEntry.nCrc);
-		aChucker << rEntry.nCompressedSize;
-		aChucker << rEntry.nSize;
+		aChucker << static_cast < sal_uInt32 > (rEntry.nCrc); // crc-32
+		aChucker << rEntry.nCompressedSize; // compressed size
+		aChucker << rEntry.nSize; // uncompressed size
 	}
-	aChucker << nNameLength;
-	aChucker << static_cast < sal_Int16 > (0);
+	aChucker << nNameLength; // file name length
+	aChucker << static_cast < sal_Int16 > (0); // extra field length
 
 	Sequence < sal_Int8 > aSequence( (sal_Int8*)sUTF8Name.getStr(), sUTF8Name.getLength() );
-	aChucker.WriteBytes( aSequence );
+	aChucker.WriteBytes( aSequence ); // file name
 
 	return LOCHDR + nNameLength;
 }

@@ -194,10 +194,20 @@ public:
 
     ZipEnumeration * SAL_CALL entries(  );
 protected:
+	/** Decode a local file header of an entry and update a ZipEntry
+	 *
+	 * @param rEntry entry with the nFileHeaderOffset field populated. At return, the ZipEntry::nFileDataOffset and ZipEntry::nLOCExtraLen fields will be set.
+	 *
+	 * Also searches for a data descriptor after the file data and validates it.
+	 *
+	 * @return sal_True if successful, otherwise throws exceptions.
+	 */
 	sal_Bool		readLOC ( ZipEntry &rEntry)
 		throw(::com::sun::star::io::IOException, com::sun::star::packages::zip::ZipException, com::sun::star::uno::RuntimeException);
+	/// Decode the End of central directory record
 	sal_Int32		readCEN()
 		throw(::com::sun::star::io::IOException, com::sun::star::packages::zip::ZipException, com::sun::star::uno::RuntimeException);
+	/// Find the End of central directory record
 	sal_Int32		findEND()
 		throw(::com::sun::star::io::IOException, com::sun::star::packages::zip::ZipException, com::sun::star::uno::RuntimeException);
 	sal_Int32 		recover()

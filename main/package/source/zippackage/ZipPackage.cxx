@@ -536,6 +536,7 @@ void ZipPackage::getZipFileContents()
 	OUString sTemp, sDirName;
 	sal_Int32 nOldIndex, nIndex, nStreamIndex;
 	FolderHash::iterator aIter;
+	sal_Bool mustHaveEncryption = sal_False;
 
 	while ( pEnum->hasMoreElements() )
 	{
@@ -590,13 +591,17 @@ void ZipPackage::getZipFileContents()
 			pPkgStream->setZipEntryOnLoading( rEntry );
 			pPkgStream->setName( sTemp );
 			pPkgStream->doSetParent( pCurrent, sal_True );
-		} 
+		}
+		if ( ( rEntry.nMethod == STORED ) && rEntry.bHasDataDescriptor )
+			mustHaveEncryption = sal_True;
 	}
 
 	if ( m_nFormat == embed::StorageFormats::PACKAGE )
 		parseManifest();
 	else if ( m_nFormat == embed::StorageFormats::OFOPXML )
 		parseContentType();
+	if ( mustHaveEncryption && !m_bHasEncryptedEntries )
+		throw ZipException( OUString( RTL_CONSTASCII_USTRINGPARAM ( "inconsistent ZIP entries" ) ), uno::Reference < XInterface > () );
 }
 
 //--------------------------------------------------------

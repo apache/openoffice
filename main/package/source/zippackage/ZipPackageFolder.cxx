@@ -75,7 +75,9 @@ ZipPackageFolder::ZipPackageFolder ( const uno::Reference< XMultiServiceFactory 
 	aEntry.nCrc			= 0;
 	aEntry.nCompressedSize	= 0;
 	aEntry.nSize		= 0;
-	aEntry.nOffset		= -1;
+	aEntry.nFileHeaderOffset		= -1;
+	aEntry.nFileDataOffset		= -1;
+	aEntry.bHasDataDescriptor = sal_False;
 	uno::Sequence < sal_Int8 > &rCachedImplId = lcl_CachedImplId::get();
 	if ( !rCachedImplId.getLength() )
 	    rCachedImplId = getImplementationId();
@@ -176,10 +178,13 @@ void ZipPackageFolder::copyZipEntry( ZipEntry &rDest, const ZipEntry &rSource)
     rDest.nCrc				= rSource.nCrc;
     rDest.nCompressedSize	= rSource.nCompressedSize;
     rDest.nSize				= rSource.nSize;
-    rDest.nOffset			= rSource.nOffset;
+    rDest.nFileHeaderOffset	= rSource.nFileHeaderOffset;
+	rDest.nFileDataOffset	= rSource.nFileDataOffset;
     rDest.sPath				= rSource.sPath;
     rDest.nPathLen			= rSource.nPathLen;
-    rDest.nExtraLen			= rSource.nExtraLen;
+    rDest.nLOCExtraLen		= rSource.nLOCExtraLen;
+	rDest.nCENExtraLen		= rSource.nCENExtraLen;
+	rDest.bHasDataDescriptor= rSource.bHasDataDescriptor;
 }
 
 const ::com::sun::star::uno::Sequence < sal_Int8 >& ZipPackageFolder::static_getImplementationId()
@@ -669,7 +674,7 @@ bool ZipPackageFolder::saveChild( const ::rtl::OUString &rShortName, const Conte
             if ( rInfo.pStream->IsEncrypted() )
                 rInfo.pStream->setSize( nOwnStreamOrigSize );
 
-            rInfo.pStream->aEntry.nOffset *= -1;
+            rInfo.pStream->aEntry.nFileDataOffset = rInfo.pStream->aEntry.nFileHeaderOffset;
         }
     }
 
@@ -692,7 +697,7 @@ void ZipPackageFolder::saveContents( ::rtl::OUString &rPath, std::vector < uno::
 		ZipEntry* pTempEntry = new ZipEntry();
 		ZipPackageFolder::copyZipEntry ( *pTempEntry, aEntry );
 		pTempEntry->nPathLen = (sal_Int16)( ::rtl::OUStringToOString( rPath, RTL_TEXTENCODING_UTF8 ).getLength() );
-		pTempEntry->nExtraLen = -1;
+		pTempEntry->nLOCExtraLen = -1;
 		pTempEntry->sPath = rPath;
 
 		try

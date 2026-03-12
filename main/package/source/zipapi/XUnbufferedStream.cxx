@@ -80,16 +80,16 @@ XUnbufferedStream::XUnbufferedStream(
 , mnMyCurrent ( 0 )
 , mbCheckCRC( !bRecoveryMode )
 {
-	mnZipCurrent = maEntry.nOffset;
+	mnZipCurrent = maEntry.nFileDataOffset;
 	if ( mbRawStream )
 	{
 		mnZipSize = maEntry.nMethod == DEFLATED ? maEntry.nCompressedSize : maEntry.nSize;
-		mnZipEnd = maEntry.nOffset + mnZipSize;
+		mnZipEnd = maEntry.nFileDataOffset + mnZipSize;
 	}
 	else
 	{
 		mnZipSize = maEntry.nSize;
-		mnZipEnd = maEntry.nMethod == DEFLATED ? maEntry.nOffset + maEntry.nCompressedSize : maEntry.nOffset + maEntry.nSize;
+		mnZipEnd = maEntry.nMethod == DEFLATED ? maEntry.nFileDataOffset + maEntry.nCompressedSize : maEntry.nFileDataOffset + maEntry.nSize;
 	}
 	sal_Bool bHaveEncryptData = ( rData.is() && rData->m_aSalt.getLength() && rData->m_aInitVector.getLength() && rData->m_nIterationCount != 0 ) ? sal_True : sal_False;
 	sal_Bool bMustDecrypt = ( nStreamMode == UNBUFF_STREAM_DATA && bHaveEncryptData && bIsEncrypted ) ? sal_True : sal_False;
