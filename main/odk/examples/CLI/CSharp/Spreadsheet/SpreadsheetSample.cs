@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,7 +49,7 @@ public class SpreadsheetSample : SpreadsheetDocHelper
         : base( args )
     {
     }
-    
+
     /** This sample function performs all changes on the document. */
     public void doSampleFunctions()
     {
@@ -106,7 +106,7 @@ public class SpreadsheetSample : SpreadsheetDocHelper
         unoidl.com.sun.star.text.XTextContent xContent =
             (unoidl.com.sun.star.text.XTextContent) aHyperlinkObj;
         xText.insertTextContent( xTextCursor, xContent, false );
-        
+
         // --- Query the separate paragraphs. ---
         unoidl.com.sun.star.container.XEnumerationAccess xParaEA =
             (unoidl.com.sun.star.container.XEnumerationAccess) xCell;
@@ -132,8 +132,8 @@ public class SpreadsheetSample : SpreadsheetDocHelper
             }
             Console.WriteLine( "Paragraph text: " + aText );
         }
-        
-        
+
+
         // --- Change cell properties. ---
         xPropSet = (unoidl.com.sun.star.beans.XPropertySet) xCell;
         // from styles.CharacterProperties
@@ -149,8 +149,8 @@ public class SpreadsheetSample : SpreadsheetDocHelper
             "IsCellBackgroundTransparent", new uno.Any( false ) );
         xPropSet.setPropertyValue(
             "CellBackColor", new uno.Any( (Int32) 0x99CCFF ) );
-        
-        
+
+
         // --- Get cell address. ---
         unoidl.com.sun.star.sheet.XCellAddressable xCellAddr =
             (unoidl.com.sun.star.sheet.XCellAddressable) xCell;
@@ -160,8 +160,8 @@ public class SpreadsheetSample : SpreadsheetDocHelper
         aText += ";  Row=" + aAddress.Row;
         aText += ";  Sheet=" + aAddress.Sheet;
         Console.WriteLine( aText );
-    
-    
+
+
         // --- Insert an annotation ---
         unoidl.com.sun.star.sheet.XSheetAnnotationsSupplier xAnnotationsSupp =
         (unoidl.com.sun.star.sheet.XSheetAnnotationsSupplier) xSheet;
@@ -656,7 +656,7 @@ public class SpreadsheetSample : SpreadsheetDocHelper
         xCellRange = xSheet.getCellRangeByName( "D2:F2" );
         xPropSet = (unoidl.com.sun.star.beans.XPropertySet) xCellRange;
         xPropSet.setPropertyValue( "CellStyle", new uno.Any( aStyleName ) );
-        
+
         xCellRange = xSheet.getCellRangeByName( "A3:G3" );
         xPropSet = (unoidl.com.sun.star.beans.XPropertySet) xCellRange;
         xPropSet.setPropertyValue( "CellStyle", new uno.Any( aStyleName ) );
@@ -668,7 +668,7 @@ public class SpreadsheetSample : SpreadsheetDocHelper
             (unoidl.com.sun.star.sheet.XCellFormatRangesSupplier) xCellRange;
         xRangeIA = xFormatSupp.getCellFormatRanges();
         Console.WriteLine( getCellRangeListString( xRangeIA ) );
-        
+
         // Ranges sorted in SheetCellRanges containers
         Console.WriteLine( "\nService UniqueCellFormatRanges:" );
         unoidl.com.sun.star.sheet.XUniqueCellFormatRangesSupplier
@@ -687,7 +687,7 @@ public class SpreadsheetSample : SpreadsheetDocHelper
                 "Container " + (nIndex + 1) + ": " +
                 getCellRangeListString( xRangeIA ) );
         }
-        
+
 
         // --- Table auto formats ---
         // get the global collection of table auto formats,
@@ -697,7 +697,7 @@ public class SpreadsheetSample : SpreadsheetDocHelper
             "com.sun.star.sheet.TableAutoFormats" );
         unoidl.com.sun.star.container.XNameContainer xAutoFormatsNA =
             (unoidl.com.sun.star.container.XNameContainer) aAutoFormatsObj;
-        
+
         // create a new table auto format and insert into the container
         String aAutoFormatName =  "Temp_Example";
         bool bExistsAlready = xAutoFormatsNA.hasByName( aAutoFormatName );
@@ -772,7 +772,7 @@ public class SpreadsheetSample : SpreadsheetDocHelper
         unoidl.com.sun.star.sheet.XSheetConditionalEntries xEntries =
             (unoidl.com.sun.star.sheet.XSheetConditionalEntries)
               xPropSet.getPropertyValue( "ConditionalFormat" ).Value;
-        
+
         // create a condition and apply it to the range
         unoidl.com.sun.star.beans.PropertyValue[] aCondition =
             new unoidl.com.sun.star.beans.PropertyValue[3];
@@ -842,7 +842,7 @@ public class SpreadsheetSample : SpreadsheetDocHelper
         // --- Document properties ---
         unoidl.com.sun.star.beans.XPropertySet xPropSet =
             (unoidl.com.sun.star.beans.XPropertySet) getDocument();
-        
+
         String aText = "Value of property IsIterationEnabled: ";
         aText +=
             (Boolean) xPropSet.getPropertyValue( "IsIterationEnabled" ).Value;
@@ -896,14 +896,14 @@ public class SpreadsheetSample : SpreadsheetDocHelper
             new uno.Any(
                 typeof (unoidl.com.sun.star.beans.XPropertySet),
                 xValidPropSet ) );
-        
+
 
         // --- Scenarios ---
         uno.Any [][] aValues = {
             new uno.Any [] { uno.Any.VOID, uno.Any.VOID },
             new uno.Any [] { uno.Any.VOID, uno.Any.VOID }
         };
-        
+
         aValues[ 0 ][ 0 ] = new uno.Any( (Double) 11 );
         aValues[ 0 ][ 1 ] = new uno.Any( (Double) 12 );
         aValues[ 1 ][ 0 ] = new uno.Any( "Test13" );

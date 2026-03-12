@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -39,14 +39,14 @@ public struct Any
     private Type _type;
 
     public static Any VOID = new Any(typeof(void), null);
-    
+
     private static void checkArgs(Type type, Object value)
     {
         //value can only be null if type == void
-        if (type == null 
-			|| (value == null 
-                && type != typeof(void) 
-                && type != typeof(object) 
+        if (type == null
+			|| (value == null
+                && type != typeof(void)
+                && type != typeof(object)
                 && type.IsInterface == false))
             throw new System.Exception(
                 "uno.Any: Constructor called with illegal arguments!");
@@ -86,7 +86,7 @@ public struct Any
         _type = type;
         _value = value;
     }
-    
+
     public Type Type
     {
         get
@@ -104,7 +104,7 @@ public struct Any
             return _value;
         }
     }
-    
+
     public Any(char value): this(typeof(char), value)
     {
     }
@@ -116,7 +116,7 @@ public struct Any
     public Any(byte value): this(typeof(byte), value)
     {
     }
-    
+
     public Any(short value): this(typeof(short), value)
     {
     }
@@ -166,7 +166,7 @@ public struct Any
         msg.Append("}");
         return msg.ToString();
     }
-    
+
     public bool hasValue()
     {
         if (Type == null || Type == typeof(void))
@@ -200,8 +200,7 @@ public struct Any
     public override int GetHashCode()
     {
         return Type.GetHashCode() ^ (Value != null ? Value.GetHashCode() : 0);
-    }   
+    }
 }
 
 }
-

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -40,14 +40,14 @@ public class WeakBase : XWeak, XTypeProvider
     // Contains all WeakAdapter which have been created in this class
     // They have to be notified when this object dies
     private WeakAdapter m_adapter = null;
-    
+
     protected static Hashtable s_types = new Hashtable();
     protected static Hashtable s_impl_ids = new Hashtable();
-    
+
     // XWeak impl
     /** The returned XAdapter implementation can be used to keap a
         weak reference to this object.
-        
+
         @return a weak adapter
     */
     public XAdapter queryAdapter()
@@ -62,7 +62,7 @@ public class WeakBase : XWeak, XTypeProvider
         }
         return m_adapter;
     }
-    
+
     /** Overrides of Object.Finalize method.
         When there are no references to this object anymore, then the
         garbage collector calls this method, thereby causing the adapter
@@ -74,12 +74,12 @@ public class WeakBase : XWeak, XTypeProvider
         if (null != m_adapter)
             m_adapter.referentDying();
     }
-    
+
     // XTypeProvider impl
-    
+
     /** Returns an array of Type objects which represent all implemented
         UNO interfaces of this object.
-       
+
        @return Type objects of all implemented interfaces.
     */
     public Type [] getTypes()
@@ -113,11 +113,11 @@ public class WeakBase : XWeak, XTypeProvider
         }
         return types;
     }
-    
+
     /** Provides an identifier that represents the set of UNO interfaces
         implemented by this class.  All instances of this class which run
         in the same CLR return the same array.
-        
+
         @return identifier as array of bytes
     */
     public byte [] getImplementationId()
@@ -132,13 +132,13 @@ public class WeakBase : XWeak, XTypeProvider
                 Int32 hash = GetHashCode();
                 String name = type.FullName;
                 Int32 len= name.Length;
-                
+
                 id = new byte[ 4 + (2 * len) ];
                 id[ 0 ]= (byte) (hash & 0xff);
                 id[ 1 ]= (byte) ((hash >> 8) & 0xff);
                 id[ 2 ]= (byte) ((hash >> 16) & 0xff);
                 id[ 3 ]= (byte) ((hash >> 24) & 0xff);
-                
+
                 for ( Int32 pos = 0; pos < len; ++pos )
                 {
                     UInt16 c = Convert.ToUInt16( name[ pos ] );
@@ -150,7 +150,7 @@ public class WeakBase : XWeak, XTypeProvider
         }
         return id;
     }
-    
+
     // System.Object
     public override String ToString()
     {
@@ -171,4 +171,3 @@ public class WeakBase : XWeak, XTypeProvider
 }
 
 }
-
