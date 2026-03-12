@@ -96,9 +96,12 @@ ZipPackageStream::ZipPackageStream ( ZipPackage & rNewPackage,
 	aEntry.nCrc			= -1;
 	aEntry.nCompressedSize	= -1;
 	aEntry.nSize		= -1;
-	aEntry.nOffset		= -1;
+	aEntry.nFileHeaderOffset		= -1;
+	aEntry.nFileDataOffset		= -1;
 	aEntry.nPathLen		= -1;
-	aEntry.nExtraLen	= -1;
+	aEntry.nLOCExtraLen	= -1;
+	aEntry.nCENExtraLen	= -1;
+	aEntry.bHasDataDescriptor = sal_False;
 
 	Sequence < sal_Int8 > &rCachedImplId = lcl_CachedImplId::get();
 	if ( !rCachedImplId.getLength() )
@@ -118,10 +121,13 @@ void ZipPackageStream::setZipEntryOnLoading( const ZipEntry &rInEntry )
 	aEntry.nCrc = rInEntry.nCrc;
 	aEntry.nCompressedSize = rInEntry.nCompressedSize;
 	aEntry.nSize = rInEntry.nSize;
-	aEntry.nOffset = rInEntry.nOffset;
+	aEntry.nFileHeaderOffset = rInEntry.nFileHeaderOffset;
+	aEntry.nFileDataOffset = rInEntry.nFileDataOffset;
 	aEntry.sPath = rInEntry.sPath;
 	aEntry.nPathLen = rInEntry.nPathLen;
-	aEntry.nExtraLen = rInEntry.nExtraLen;
+	aEntry.nLOCExtraLen = rInEntry.nLOCExtraLen;
+	aEntry.nCENExtraLen = rInEntry.nCENExtraLen;
+	aEntry.bHasDataDescriptor = rInEntry.bHasDataDescriptor;
 
 	if ( aEntry.nMethod == STORED )
 		bToBeCompressed = sal_False;
