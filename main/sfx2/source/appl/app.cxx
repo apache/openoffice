@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sfx2.hxx"
 
@@ -41,7 +39,6 @@
 #include <basic/sbmod.hxx>
 #include <svtools/asynclink.hxx>
 #include <svl/stritem.hxx>
-#include <vcl/sound.hxx>
 #include <svl/eitem.hxx>
 #include <svl/urlbmk.hxx>
 #include <vcl/msgbox.hxx>
@@ -152,7 +149,7 @@ static BasicDLL*       pBasic   = NULL;
 
 class SfxPropertyHandler : public PropertyHandler
 {
-    virtual void Property( ApplicationProperty& );
+	virtual void Property( ApplicationProperty& );
 };
 
 static SfxPropertyHandler*	pPropertyHandler = 0;
@@ -192,9 +189,9 @@ void SfxPropertyHandler::Property( ApplicationProperty& rProp )
 			break;
 			case TT_PR_DISPATCHER:
 			{
-                // interface for TestTool
-                SfxViewFrame* pViewFrame=0;
-                SfxDispatcher* pDispatcher=0;
+				// interface for TestTool
+				SfxViewFrame* pViewFrame=0;
+				SfxDispatcher* pDispatcher=0;
 				pViewFrame = SfxViewFrame::Current();
 				if ( !pViewFrame )
 					pViewFrame = SfxViewFrame::GetFirst();
@@ -207,51 +204,51 @@ void SfxPropertyHandler::Property( ApplicationProperty& rProp )
 				else
 				{
 					pDispatcher->SetExecuteMode(EXECUTEMODE_DIALOGASYNCHRON);
-                    if ( pTTProperties->mnSID == SID_NEWDOCDIRECT
-                      || pTTProperties->mnSID == SID_OPENDOC )
-                    {
-                        SfxPoolItem** pArgs = pTTProperties->mppArgs;
-                        SfxAllItemSet aSet( SFX_APP()->GetPool() );
-                        if ( pArgs && *pArgs )
-                        {
-                            for ( SfxPoolItem **pArg = pArgs; *pArg; ++pArg )
-                                aSet.Put( **pArg );
-                        }
-                        if ( pTTProperties->mnSID == SID_NEWDOCDIRECT )
-                        {
-                            String aFactory = String::CreateFromAscii("private:factory/");
-                            if ( pArgs && *pArgs )
-                            {
-                                SFX_ITEMSET_ARG( &aSet, pFactoryName, SfxStringItem, SID_NEWDOCDIRECT, sal_False );
-                                if ( pFactoryName )
-                                    aFactory += pFactoryName->GetValue();
-                                else
-                                    aFactory += String::CreateFromAscii("swriter");
-                            }
-                            else
-                                aFactory += String::CreateFromAscii("swriter");
+					if ( pTTProperties->mnSID == SID_NEWDOCDIRECT
+					  || pTTProperties->mnSID == SID_OPENDOC )
+					{
+						SfxPoolItem** pArgs = pTTProperties->mppArgs;
+						SfxAllItemSet aSet( SFX_APP()->GetPool() );
+						if ( pArgs && *pArgs )
+						{
+							for ( SfxPoolItem **pArg = pArgs; *pArg; ++pArg )
+								aSet.Put( **pArg );
+						}
+						if ( pTTProperties->mnSID == SID_NEWDOCDIRECT )
+						{
+							String aFactory = String::CreateFromAscii("private:factory/");
+							if ( pArgs && *pArgs )
+							{
+								SFX_ITEMSET_ARG( &aSet, pFactoryName, SfxStringItem, SID_NEWDOCDIRECT, sal_False );
+								if ( pFactoryName )
+									aFactory += pFactoryName->GetValue();
+								else
+									aFactory += String::CreateFromAscii("swriter");
+							}
+							else
+								aFactory += String::CreateFromAscii("swriter");
 
-                            aSet.Put( SfxStringItem( SID_FILE_NAME, aFactory ) );
-                            aSet.ClearItem( SID_NEWDOCDIRECT );
-                            pTTProperties->mnSID = SID_OPENDOC;
-                        }
+							aSet.Put( SfxStringItem( SID_FILE_NAME, aFactory ) );
+							aSet.ClearItem( SID_NEWDOCDIRECT );
+							pTTProperties->mnSID = SID_OPENDOC;
+						}
 
-                        aSet.Put( SfxStringItem( SID_TARGETNAME, DEFINE_CONST_UNICODE("_blank") ) );
-                        if ( pDispatcher->ExecuteFunction( pTTProperties->mnSID, aSet, pTTProperties->mnMode )
-                                    == EXECUTE_NO )
-                            pTTProperties->nActualPR = TT_PR_ERR_NOEXECUTE;
-                        else
-                            pTTProperties->nActualPR = 0;
-                    }
-                    else
-                    {
-                        if ( pDispatcher->ExecuteFunction(
-                                pTTProperties->mnSID, pTTProperties->mppArgs, pTTProperties->mnMode )
-                            == EXECUTE_NO )
-                            pTTProperties->nActualPR = TT_PR_ERR_NOEXECUTE;
-                        else
-                            pTTProperties->nActualPR = 0;
-                    }
+						aSet.Put( SfxStringItem( SID_TARGETNAME, DEFINE_CONST_UNICODE("_blank") ) );
+						if ( pDispatcher->ExecuteFunction( pTTProperties->mnSID, aSet, pTTProperties->mnMode )
+									== EXECUTE_NO )
+							pTTProperties->nActualPR = TT_PR_ERR_NOEXECUTE;
+						else
+							pTTProperties->nActualPR = 0;
+					}
+					else
+					{
+						if ( pDispatcher->ExecuteFunction(
+								pTTProperties->mnSID, pTTProperties->mppArgs, pTTProperties->mnMode )
+							== EXECUTE_NO )
+							pTTProperties->nActualPR = TT_PR_ERR_NOEXECUTE;
+						else
+							pTTProperties->nActualPR = 0;
+					}
 				}
 			}
 			break;
@@ -287,30 +284,30 @@ void SfxPropertyHandler::Property( ApplicationProperty& rProp )
 SfxApplication* SfxApplication::GetOrCreate()
 {
 	// SFX on demand
-    ::osl::MutexGuard aGuard(SfxApplication::gMutex);
-    if ( !pApp )
-    {
-        SfxApplication *pNew = new SfxApplication;
+	::osl::MutexGuard aGuard(SfxApplication::gMutex);
+	if ( !pApp )
+	{
+		SfxApplication *pNew = new SfxApplication;
 
-        //TODO/CLEANUP
-        //ist das Mutex-Handling OK?
-        static ::osl::Mutex aProtector;
-        ::osl::MutexGuard aGuard2( aProtector );
+		// TODO/CLEANUP
+		// ist das Mutex-Handling OK?
+		static ::osl::Mutex aProtector;
+		::osl::MutexGuard aGuard2( aProtector );
 
-        RTL_LOGFILE_CONTEXT( aLog, "sfx2 (mb93783) ::SfxApplication::SetApp" );
-        pApp = pNew;
+		RTL_LOGFILE_CONTEXT( aLog, "sfx2 (mb93783) ::SfxApplication::SetApp" );
+		pApp = pNew;
 
-        // at the moment a bug may occur when Initialize_Impl returns sal_False, but this is only temporary because all code that may cause such a
-        // fault will be moved outside the SFX
-        pApp->Initialize_Impl();
+		// at the moment a bug may occur when Initialize_Impl returns sal_False, but this is only temporary because all code that may cause such a
+		// fault will be moved outside the SFX
+		pApp->Initialize_Impl();
 
 		::framework::SetImageProducer( GetImage );
-        ::framework::SetRefreshToolbars( RefreshToolbars );
-        ::framework::SetToolBoxControllerCreator( SfxToolBoxControllerFactory );
-        ::framework::SetStatusBarControllerCreator( SfxStatusBarControllerFactory );
+		::framework::SetRefreshToolbars( RefreshToolbars );
+		::framework::SetToolBoxControllerCreator( SfxToolBoxControllerFactory );
+		::framework::SetStatusBarControllerCreator( SfxStatusBarControllerFactory );
 		::framework::SetDockingWindowCreator( SfxDockingWindowFactory );
-        ::framework::SetIsDockingWindowVisible( IsDockingWindowVisible );
-        ::framework::SetActivateToolPanel( &SfxViewFrame::ActivateToolPanel );
+		::framework::SetIsDockingWindowVisible( IsDockingWindowVisible );
+		::framework::SetActivateToolPanel( &SfxViewFrame::ActivateToolPanel );
 
 		SfxHelp* pSfxHelp = new SfxHelp;
 		Application::SetHelp( pSfxHelp );
@@ -327,60 +324,60 @@ SfxApplication* SfxApplication::GetOrCreate()
 }
 
 SfxApplication::SfxApplication()
-    : pAppData_Impl( 0 )
+	: pAppData_Impl( 0 )
 {
 	RTL_LOGFILE_CONTEXT( aLog, "sfx2 (mb93783) ::SfxApplication::SfxApplication" );
 
-    SetName( DEFINE_CONST_UNICODE("StarOffice") );
+	SetName( DEFINE_CONST_UNICODE("StarOffice") );
 	GetpApp()->SetPropertyHandler( GetOrCreatePropertyHandler() );
 
-    SvtViewOptions::AcquireOptions();
+	SvtViewOptions::AcquireOptions();
 
 	pAppData_Impl = new SfxAppData_Impl( this );
 	pAppData_Impl->UpdateApplicationSettings( SvtMenuOptions().IsEntryHidingEnabled() );
-    pAppData_Impl->m_xImeStatusWindow->init();
-    pApp->PreInit();
+	pAppData_Impl->m_xImeStatusWindow->init();
+	pApp->PreInit();
 
 	RTL_LOGFILE_CONTEXT_TRACE( aLog, "{ initialize DDE" );
 
 #ifdef DDE_AVAILABLE
 #ifndef DBG_UTIL
-    InitializeDde();
+	InitializeDde();
 #else
-    if( !InitializeDde() )
-    {
-        ByteString aStr( "Kein DDE-Service moeglich. Fehler: " );
-        if( GetDdeService() )
-            aStr += ByteString::CreateFromInt32(GetDdeService()->GetError());
-        else
-            aStr += '?';
-        DBG_ASSERT( sal_False, aStr.GetBuffer() );
-    }
+	if( !InitializeDde() )
+	{
+		ByteString aStr( "Kein DDE-Service möglich. Fehler: " );
+		if( GetDdeService() )
+			aStr += ByteString::CreateFromInt32(GetDdeService()->GetError());
+		else
+			aStr += '?';
+		DBG_ASSERT( sal_False, aStr.GetBuffer() );
+	}
 #endif
 #endif
 
-    pBasic   = new BasicDLL;
+	pBasic = new BasicDLL;
 	StarBASIC::SetGlobalErrorHdl( LINK( this, SfxApplication, GlobalBasicErrorHdl_Impl ) );
 	RTL_LOGFILE_CONTEXT_TRACE( aLog, "} initialize DDE" );
 }
 
 SfxApplication::~SfxApplication()
 {
-    OSL_ENSURE( GetObjectShells_Impl().Count() == 0, "Memory leak: some object shells were not removed!" );
+	OSL_ENSURE( GetObjectShells_Impl().Count() == 0, "Memory leak: some object shells were not removed!" );
 
-    Broadcast( SfxSimpleHint(SFX_HINT_DYING) );
+	Broadcast( SfxSimpleHint(SFX_HINT_DYING) );
 
-    SfxModule::DestroyModules_Impl();
+	SfxModule::DestroyModules_Impl();
 
-    // delete global options
-    SvtViewOptions::ReleaseOptions();
+	// delete global options
+	SvtViewOptions::ReleaseOptions();
 	delete pBasic;
 
-    if ( !pAppData_Impl->bDowning )
-        Deinitialize();
+	if ( !pAppData_Impl->bDowning )
+		Deinitialize();
 
-    delete pAppData_Impl;
-    pApp = 0;
+	delete pAppData_Impl;
+	pApp = 0;
 }
 
 //====================================================================
@@ -389,171 +386,171 @@ const String& SfxApplication::GetLastDir_Impl() const
 
 /*  [Beschreibung]
 
-    Interne Methode, mit der im SFx das zuletzt mit der Methode
-    <SfxApplication::SetLastDir_Impl()> gesetzte Verzeichnis
-    zurueckgegeben wird.
+	Interne Methode, mit der im SFx das zuletzt mit der Methode
+	<SfxApplication::SetLastDir_Impl()> gesetzte Verzeichnis
+	zurückgegeben wird.
 
-    Dieses ist i.d.R. das zuletzt durch den SfxFileDialog
-    angesprochene Verzeichnis.
+	Dieses ist i.d.R. das zuletzt durch den SfxFileDialog
+	angesprochene Verzeichnis.
 
-    [Querverweis]
-    <SfxApplication::SetLastDir_Impl()>
+	[Querverweis]
+	<SfxApplication::SetLastDir_Impl()>
 */
 
 {
-    return pAppData_Impl->aLastDir;
+	return pAppData_Impl->aLastDir;
 }
 
 const String& SfxApplication::GetLastSaveDirectory() const
 
 /*  [Beschreibung]
 
-    Wie <SfxApplication::GetLastDir_Impl()>, nur extern
+	Wie <SfxApplication::GetLastDir_Impl()>, nur extern
 
-    [Querverweis]
-    <SfxApplication::GetLastDir_Impl()>
+	[Querverweis]
+	<SfxApplication::GetLastDir_Impl()>
 */
 
 {
-    return GetLastDir_Impl();
+	return GetLastDir_Impl();
 }
 
 //--------------------------------------------------------------------
 
 void SfxApplication::SetLastDir_Impl
 (
-    const String&   rNewDir     /*  kompletter Verzeichnis-Pfad als String */
-    )
+	const String&   rNewDir /* kompletter Verzeichnis-Pfad als String */
+	)
 
 /*  [Beschreibung]
 
-    Interne Methode, mit der ein Verzeichnis-Pfad gesetzt wird, der
-    zuletzt (z.B. durch den SfxFileDialog) angesprochen wurde.
+	Interne Methode, mit der ein Verzeichnis-Pfad gesetzt wird, der
+	zuletzt (z.B. durch den SfxFileDialog) angesprochen wurde.
 
-    [Querverweis]
-    <SfxApplication::GetLastDir_Impl()>
+	[Querverweis]
+	<SfxApplication::GetLastDir_Impl()>
 */
 
 {
-    pAppData_Impl->aLastDir = rNewDir;
+	pAppData_Impl->aLastDir = rNewDir;
 }
 
 //--------------------------------------------------------------------
 
 void SfxApplication::ResetLastDir()
 {
-    String aEmpty;
-    pAppData_Impl->aLastDir = aEmpty;
+	String aEmpty;
+	pAppData_Impl->aLastDir = aEmpty;
 }
 
 //--------------------------------------------------------------------
 
 SfxDispatcher* SfxApplication::GetDispatcher_Impl()
 {
-    return pAppData_Impl->pViewFrame? pAppData_Impl->pViewFrame->GetDispatcher(): pAppData_Impl->pAppDispat;
+	return pAppData_Impl->pViewFrame? pAppData_Impl->pViewFrame->GetDispatcher(): pAppData_Impl->pAppDispat;
 }
 
 //--------------------------------------------------------------------
 void SfxApplication::SetViewFrame_Impl( SfxViewFrame *pFrame )
 {
-    if ( pFrame != pAppData_Impl->pViewFrame )
-    {
+	if ( pFrame != pAppData_Impl->pViewFrame )
+	{
 		// get the containerframes ( if one of the frames is an InPlaceFrame )
-        SfxViewFrame *pOldContainerFrame = pAppData_Impl->pViewFrame;
-        while ( pOldContainerFrame && pOldContainerFrame->GetParentViewFrame_Impl() )
-            pOldContainerFrame = pOldContainerFrame->GetParentViewFrame_Impl();
-        SfxViewFrame *pNewContainerFrame = pFrame;
-        while ( pNewContainerFrame && pNewContainerFrame->GetParentViewFrame_Impl() )
-            pNewContainerFrame = pNewContainerFrame->GetParentViewFrame_Impl();
+		SfxViewFrame *pOldContainerFrame = pAppData_Impl->pViewFrame;
+		while ( pOldContainerFrame && pOldContainerFrame->GetParentViewFrame_Impl() )
+			pOldContainerFrame = pOldContainerFrame->GetParentViewFrame_Impl();
+		SfxViewFrame *pNewContainerFrame = pFrame;
+		while ( pNewContainerFrame && pNewContainerFrame->GetParentViewFrame_Impl() )
+			pNewContainerFrame = pNewContainerFrame->GetParentViewFrame_Impl();
 
 		// DocWinActivate : both frames belong to the same TopWindow
 		// TopWinActivate : both frames belong to different TopWindows
 // not used anymore!
 //		sal_Bool bDocWinActivate = pOldContainerFrame && pNewContainerFrame &&
-//        			pOldContainerFrame->GetTopViewFrame() == pNewContainerFrame->GetTopViewFrame();
+//					pOldContainerFrame->GetTopViewFrame() == pNewContainerFrame->GetTopViewFrame();
 		sal_Bool bTaskActivate = pOldContainerFrame != pNewContainerFrame;
 
 		if ( pOldContainerFrame )
 		{
 			if ( bTaskActivate )
-                NotifyEvent( SfxViewEventHint( SFX_EVENT_DEACTIVATEDOC, GlobalEventConfig::GetEventName(STR_EVENT_DEACTIVATEDOC), pOldContainerFrame->GetObjectShell(), pOldContainerFrame->GetFrame().GetController() ) );
-		    pOldContainerFrame->DoDeactivate( bTaskActivate, pFrame );
+				NotifyEvent( SfxViewEventHint( SFX_EVENT_DEACTIVATEDOC, GlobalEventConfig::GetEventName(STR_EVENT_DEACTIVATEDOC), pOldContainerFrame->GetObjectShell(), pOldContainerFrame->GetFrame().GetController() ) );
+			pOldContainerFrame->DoDeactivate( bTaskActivate, pFrame );
 
-	        if( pOldContainerFrame->GetProgress() )
-	            pOldContainerFrame->GetProgress()->Suspend();
+			if( pOldContainerFrame->GetProgress() )
+				pOldContainerFrame->GetProgress()->Suspend();
 		}
 
-        pAppData_Impl->pViewFrame = pFrame;
+		pAppData_Impl->pViewFrame = pFrame;
 
-        //const SfxObjectShell* pSh = pViewFrame ? pViewFrame->GetObjectShell() : 0;
-        //if ( !pSh )
-        //{
-        //    // otherwise BaseURL is set in activation of document
-        //    INetURLObject aObject( SvtPathOptions().GetWorkPath() );
-        //    aObject.setFinalSlash();
-        //    INetURLObject::SetBaseURL( aObject.GetMainURL( INetURLObject::NO_DECODE ) );
-        //}
+		//const SfxObjectShell* pSh = pViewFrame ? pViewFrame->GetObjectShell() : 0;
+		//if ( !pSh )
+		//{
+		//	// otherwise BaseURL is set in activation of document
+		//	INetURLObject aObject( SvtPathOptions().GetWorkPath() );
+		//	aObject.setFinalSlash();
+		//	INetURLObject::SetBaseURL( aObject.GetMainURL( INetURLObject::NO_DECODE ) );
+		//}
 
-        if( pNewContainerFrame )
+		if( pNewContainerFrame )
 		{
-            pNewContainerFrame->DoActivate( bTaskActivate );
-	        if ( bTaskActivate && pNewContainerFrame->GetObjectShell() )
-            {
-                pNewContainerFrame->GetObjectShell()->PostActivateEvent_Impl( pNewContainerFrame );
-                NotifyEvent(SfxViewEventHint(SFX_EVENT_ACTIVATEDOC, GlobalEventConfig::GetEventName(STR_EVENT_ACTIVATEDOC), pNewContainerFrame->GetObjectShell(), pNewContainerFrame->GetFrame().GetController() ) );
-            }
+			pNewContainerFrame->DoActivate( bTaskActivate );
+			if ( bTaskActivate && pNewContainerFrame->GetObjectShell() )
+			{
+				pNewContainerFrame->GetObjectShell()->PostActivateEvent_Impl( pNewContainerFrame );
+				NotifyEvent(SfxViewEventHint(SFX_EVENT_ACTIVATEDOC, GlobalEventConfig::GetEventName(STR_EVENT_ACTIVATEDOC), pNewContainerFrame->GetObjectShell(), pNewContainerFrame->GetFrame().GetController() ) );
+			}
 
-            SfxProgress *pProgress = pNewContainerFrame->GetProgress();
-            if ( pProgress )
-            {
-                if( pProgress->IsSuspended() )
-                    pProgress->Resume();
-                else
-                    pProgress->SetState( pProgress->GetState() );
-            }
+			SfxProgress *pProgress = pNewContainerFrame->GetProgress();
+			if ( pProgress )
+			{
+				if( pProgress->IsSuspended() )
+					pProgress->Resume();
+				else
+					pProgress->SetState( pProgress->GetState() );
+			}
 
-            if ( pAppData_Impl->pViewFrame->GetViewShell() )
-            {
-                SfxDispatcher* pDisp = pAppData_Impl->pViewFrame->GetDispatcher();
-                pDisp->Flush();
-                pDisp->Update_Impl(sal_True);
+			if ( pAppData_Impl->pViewFrame->GetViewShell() )
+			{
+				SfxDispatcher* pDisp = pAppData_Impl->pViewFrame->GetDispatcher();
+				pDisp->Flush();
+				pDisp->Update_Impl(sal_True);
 			}
 		}
-    }
+	}
 
-    // even if the frame actually didn't change, ensure its document is forwarded
-    // to SfxObjectShell::SetCurrentComponent.
-    // Otherwise, the CurrentComponent might not be correct, in case it has meanwhile
-    // been reset to some other document, by some non-SFX component.
-    // #i49133# / 2007-12-19 / frank.schoenheit@sun.com
-    if ( pFrame && pFrame->GetViewShell() )
-        pFrame->GetViewShell()->SetCurrentDocument();
+	// even if the frame actually didn't change, ensure its document is forwarded
+	// to SfxObjectShell::SetCurrentComponent.
+	// Otherwise, the CurrentComponent might not be correct, in case it has meanwhile
+	// been reset to some other document, by some non-SFX component.
+	// #i49133# / 2007-12-19 / frank.schoenheit@sun.com
+	if ( pFrame && pFrame->GetViewShell() )
+		pFrame->GetViewShell()->SetCurrentDocument();
 }
 
 //--------------------------------------------------------------------
 
 short SfxApplication::QuerySave_Impl( SfxObjectShell& rDoc, sal_Bool /*bAutoSave*/ )
 {
-    if ( !rDoc.IsModified() )
-        return RET_NO;
+	if ( !rDoc.IsModified() )
+		return RET_NO;
 
-    String aMsg( SfxResId( STR_ISMODIFIED ) );
-    aMsg.SearchAndReplaceAscii( "%1", rDoc.GetTitle() );
+	String aMsg( SfxResId( STR_ISMODIFIED ) );
+	aMsg.SearchAndReplaceAscii( "%1", rDoc.GetTitle() );
 
-    SfxFrame& rFrame = SfxViewFrame::GetFirst(&rDoc)->GetFrame();
-    rFrame.Appear();
+	SfxFrame& rFrame = SfxViewFrame::GetFirst(&rDoc)->GetFrame();
+	rFrame.Appear();
 
 	WinBits nBits = WB_YES_NO_CANCEL | WB_DEF_NO;
-    QueryBox aBox( &rFrame.GetWindow(), nBits, aMsg );
+	QueryBox aBox( &rFrame.GetWindow(), nBits, aMsg );
 
-    return aBox.Execute();
+	return aBox.Execute();
 }
 
 //---------------------------------------------------------------------
 
 ResMgr* SfxApplication::CreateResManager( const char *pPrefix )
 {
-    return ResMgr::CreateResMgr( pPrefix);
+	return ResMgr::CreateResMgr( pPrefix);
 }
 
 //---------------------------------------------------------------------
@@ -562,7 +559,7 @@ SimpleResMgr* SfxApplication::CreateSimpleResManager()
 {
 	SimpleResMgr	*pRet;
 	const AllSettings& rAllSettings	= Application::GetSettings();
-    ::com::sun::star::lang::Locale aLocale = rAllSettings.GetUILocale();
+	::com::sun::star::lang::Locale aLocale = rAllSettings.GetUILocale();
 	pRet = new SimpleResMgr( CREATEVERSIONRESMGR_NAME(sfx), aLocale );
 
 	return pRet;
@@ -579,128 +576,128 @@ ResMgr* SfxApplication::GetSfxResManager()
 
 SimpleResMgr* SfxApplication::GetSimpleResManager()
 {
-    if ( !pAppData_Impl->pSimpleResManager )
-        pAppData_Impl->pSimpleResManager = CreateSimpleResManager();
-    return pAppData_Impl->pSimpleResManager;
+	if ( !pAppData_Impl->pSimpleResManager )
+		pAppData_Impl->pSimpleResManager = CreateSimpleResManager();
+	return pAppData_Impl->pSimpleResManager;
 }
 
 //------------------------------------------------------------------------
 
 void SfxApplication::SetProgress_Impl
 (
-    SfxProgress *pProgress
+	SfxProgress *pProgress
 
 )
 {
-    DBG_ASSERT( ( !pAppData_Impl->pProgress && pProgress ) ||
-                ( pAppData_Impl->pProgress && !pProgress ),
-                "Progress activation/deactivation mismatch" );
+	DBG_ASSERT( ( !pAppData_Impl->pProgress && pProgress ) ||
+				( pAppData_Impl->pProgress && !pProgress ),
+				"Progress activation/deactivation mismatch" );
 
-    if ( pAppData_Impl->pProgress && pProgress )
-    {
-        pAppData_Impl->pProgress->Suspend();
-        pAppData_Impl->pProgress->UnLock();
-        delete pAppData_Impl->pProgress;
-    }
+	if ( pAppData_Impl->pProgress && pProgress )
+	{
+		pAppData_Impl->pProgress->Suspend();
+		pAppData_Impl->pProgress->UnLock();
+		delete pAppData_Impl->pProgress;
+	}
 
-    pAppData_Impl->pProgress = pProgress;
+	pAppData_Impl->pProgress = pProgress;
 }
 
 //------------------------------------------------------------------------
 
 sal_uInt16 SfxApplication::GetFreeIndex()
 {
-    return pAppData_Impl->aIndexBitSet.GetFreeIndex()+1;
+	return pAppData_Impl->aIndexBitSet.GetFreeIndex()+1;
 }
 
 //------------------------------------------------------------------------
 
 void SfxApplication::ReleaseIndex(sal_uInt16 i)
 {
-    pAppData_Impl->aIndexBitSet.ReleaseIndex(i-1);
+	pAppData_Impl->aIndexBitSet.ReleaseIndex(i-1);
 }
 
 //--------------------------------------------------------------------
 
 void SfxApplication::EnterAsynchronCall_Impl()
 {
-    ++pAppData_Impl->nAsynchronCalls;
+	++pAppData_Impl->nAsynchronCalls;
 }
 
 //--------------------------------------------------------------------
 
 void SfxApplication::LeaveAsynchronCall_Impl()
 {
-    --pAppData_Impl->nAsynchronCalls;
+	--pAppData_Impl->nAsynchronCalls;
 }
 
 //--------------------------------------------------------------------
 
 bool SfxApplication::IsInAsynchronCall_Impl() const
 {
-    return pAppData_Impl->nAsynchronCalls > 0;
+	return pAppData_Impl->nAsynchronCalls > 0;
 }
 
 //--------------------------------------------------------------------
 
 Window* SfxApplication::GetTopWindow() const
 {
-    SfxWorkWindow* pWork = GetWorkWindow_Impl( SfxViewFrame::Current() );
-    return pWork ? pWork->GetWindow() : NULL;
+	SfxWorkWindow* pWork = GetWorkWindow_Impl( SfxViewFrame::Current() );
+	return pWork ? pWork->GetWindow() : NULL;
 }
 
 //--------------------------------------------------------------------
 
 uno::Reference< task::XStatusIndicator > SfxApplication::GetStatusIndicator() const
 {
-    if ( !pAppData_Impl->pViewFrame )
-        return uno::Reference< task::XStatusIndicator >();
+	if ( !pAppData_Impl->pViewFrame )
+		return uno::Reference< task::XStatusIndicator >();
 
-    SfxViewFrame *pTop = pAppData_Impl->pViewFrame;
-    while ( pTop->GetParentViewFrame_Impl() )
-        pTop = pTop->GetParentViewFrame_Impl();
+	SfxViewFrame *pTop = pAppData_Impl->pViewFrame;
+	while ( pTop->GetParentViewFrame_Impl() )
+		pTop = pTop->GetParentViewFrame_Impl();
 
-    return pTop->GetFrame().GetWorkWindow_Impl()->GetStatusIndicator();
+	return pTop->GetFrame().GetWorkWindow_Impl()->GetStatusIndicator();
 }
 
 SfxTbxCtrlFactArr_Impl&     SfxApplication::GetTbxCtrlFactories_Impl() const
 {
-    return *pAppData_Impl->pTbxCtrlFac;
+	return *pAppData_Impl->pTbxCtrlFac;
 }
 
 SfxStbCtrlFactArr_Impl&     SfxApplication::GetStbCtrlFactories_Impl() const
 {
-    return *pAppData_Impl->pStbCtrlFac;
+	return *pAppData_Impl->pStbCtrlFac;
 }
 
 SfxMenuCtrlFactArr_Impl&    SfxApplication::GetMenuCtrlFactories_Impl() const
 {
-    return *pAppData_Impl->pMenuCtrlFac;
+	return *pAppData_Impl->pMenuCtrlFac;
 }
 
 SfxViewFrameArr_Impl&       SfxApplication::GetViewFrames_Impl() const
 {
-    return *pAppData_Impl->pViewFrames;
+	return *pAppData_Impl->pViewFrames;
 }
 
 SfxViewShellArr_Impl&       SfxApplication::GetViewShells_Impl() const
 {
-    return *pAppData_Impl->pViewShells;
+	return *pAppData_Impl->pViewShells;
 }
 
 SfxObjectShellArr_Impl&     SfxApplication::GetObjectShells_Impl() const
 {
-    return *pAppData_Impl->pObjShells;
+	return *pAppData_Impl->pObjShells;
 }
 
 void SfxApplication::Invalidate( sal_uInt16 nId )
 {
-    for( SfxViewFrame* pFrame = SfxViewFrame::GetFirst(); pFrame; pFrame = SfxViewFrame::GetNext( *pFrame ) )
-        Invalidate_Impl( pFrame->GetBindings(), nId );
+	for( SfxViewFrame* pFrame = SfxViewFrame::GetFirst(); pFrame; pFrame = SfxViewFrame::GetNext( *pFrame ) )
+		Invalidate_Impl( pFrame->GetBindings(), nId );
 }
 
-#define DOSTRING( x )			   			#x
-#define STRING( x )				   			DOSTRING( x )
+#define DOSTRING( x )						#x
+#define STRING( x )							DOSTRING( x )
 
 typedef	long (SAL_CALL *basicide_handle_basic_error)(void*);
 typedef	rtl_uString* (SAL_CALL *basicide_choose_macro)(void*, sal_Bool, rtl_uString*);
@@ -710,19 +707,19 @@ extern "C" { static void SAL_CALL thisModule() {} }
 
 IMPL_LINK( SfxApplication, GlobalBasicErrorHdl_Impl, StarBASIC*, pStarBasic )
 {
-    // get basctl dllname
-    static ::rtl::OUString aLibName( RTL_CONSTASCII_USTRINGPARAM( SVLIBRARY( "basctl" ) ) );
+	// get basctl dllname
+	static ::rtl::OUString aLibName( RTL_CONSTASCII_USTRINGPARAM( SVLIBRARY( "basctl" ) ) );
 
-    // load module
+	// load module
 	oslModule handleMod = osl_loadModuleRelative(
-        &thisModule, aLibName.pData, 0 );
+		&thisModule, aLibName.pData, 0 );
 
-    // get symbol
-    ::rtl::OUString aSymbol( RTL_CONSTASCII_USTRINGPARAM( "basicide_handle_basic_error" ) );
-    basicide_handle_basic_error pSymbol = (basicide_handle_basic_error) osl_getFunctionSymbol( handleMod, aSymbol.pData );
+	// get symbol
+	::rtl::OUString aSymbol( RTL_CONSTASCII_USTRINGPARAM( "basicide_handle_basic_error" ) );
+	basicide_handle_basic_error pSymbol = (basicide_handle_basic_error) osl_getFunctionSymbol( handleMod, aSymbol.pData );
 
-    // call basicide_handle_basic_error in basctl
-    long nRet = pSymbol( pStarBasic );
+	// call basicide_handle_basic_error in basctl
+	long nRet = pSymbol( pStarBasic );
 
 	return nRet;
 }
@@ -731,30 +728,30 @@ sal_Bool SfxApplication::IsXScriptURL( const String& rScriptURL )
 {
 	sal_Bool result = sal_False;
 
-    ::com::sun::star::uno::Reference
+	::com::sun::star::uno::Reference
 		< ::com::sun::star::lang::XMultiServiceFactory > xSMgr =
-        	::comphelper::getProcessServiceFactory();
+			::comphelper::getProcessServiceFactory();
 
-    ::com::sun::star::uno::Reference
+	::com::sun::star::uno::Reference
 		< ::com::sun::star::uri::XUriReferenceFactory >
-        	xFactory( xSMgr->createInstance(
-            	::rtl::OUString::createFromAscii(
-                	"com.sun.star.uri.UriReferenceFactory" ) ),
+			xFactory( xSMgr->createInstance(
+				::rtl::OUString::createFromAscii(
+					"com.sun.star.uri.UriReferenceFactory" ) ),
 				::com::sun::star::uno::UNO_QUERY );
 
-    if ( xFactory.is() )
-    {
+	if ( xFactory.is() )
+	{
 		try
 		{
-        	::com::sun::star::uno::Reference
+			::com::sun::star::uno::Reference
 				< ::com::sun::star::uri::XVndSunStarScriptUrl >
-            		xUrl( xFactory->parse( rScriptURL ),
+					xUrl( xFactory->parse( rScriptURL ),
 						::com::sun::star::uno::UNO_QUERY );
 
-        	if ( xUrl.is() )
-        	{
-            	result = sal_True;
-        	}
+			if ( xUrl.is() )
+			{
+				result = sal_True;
+			}
 		}
 		catch ( ::com::sun::star::uno::RuntimeException& )
 		{
@@ -774,16 +771,16 @@ SfxApplication::ChooseScript()
 	{
 		OSL_TRACE("create selector dialog");
 
-        const SfxViewFrame* pViewFrame = SfxViewFrame::Current();
-        const SfxFrame* pFrame = pViewFrame ? &pViewFrame->GetFrame() : NULL;
-        uno::Reference< frame::XFrame > xFrame( pFrame ? pFrame->GetFrameInterface() : uno::Reference< frame::XFrame >() );
+		const SfxViewFrame* pViewFrame = SfxViewFrame::Current();
+		const SfxFrame* pFrame = pViewFrame ? &pViewFrame->GetFrame() : NULL;
+		uno::Reference< frame::XFrame > xFrame( pFrame ? pFrame->GetFrameInterface() : uno::Reference< frame::XFrame >() );
 
-	  	AbstractScriptSelectorDialog* pDlg =
+		AbstractScriptSelectorDialog* pDlg =
 			pFact->CreateScriptSelectorDialog( NULL, sal_False, xFrame );
 
 		OSL_TRACE("done, now exec it");
 
-	  	sal_uInt16 nRet = pDlg->Execute();
+		sal_uInt16 nRet = pDlg->Execute();
 
 		OSL_TRACE("has returned");
 
@@ -792,29 +789,31 @@ SfxApplication::ChooseScript()
 			aScriptURL = pDlg->GetScriptURL();
 		}
 
-	  	delete pDlg;
+		delete pDlg;
 	}
-    return aScriptURL;
+	return aScriptURL;
 }
 
 void SfxApplication::MacroOrganizer( sal_Int16 nTabId )
 {
-    // get basctl dllname
-    static ::rtl::OUString aLibName( RTL_CONSTASCII_USTRINGPARAM( SVLIBRARY( "basctl" ) ) );
+	// get basctl dllname
+	static ::rtl::OUString aLibName( RTL_CONSTASCII_USTRINGPARAM( SVLIBRARY( "basctl" ) ) );
 
-    // load module
+	// load module
 	oslModule handleMod = osl_loadModuleRelative(
-        &thisModule, aLibName.pData, 0 );
+		&thisModule, aLibName.pData, 0 );
 
-    // get symbol
-    ::rtl::OUString aSymbol( RTL_CONSTASCII_USTRINGPARAM( "basicide_macro_organizer" ) );
-    basicide_macro_organizer pSymbol = (basicide_macro_organizer) osl_getFunctionSymbol( handleMod, aSymbol.pData );
+	// get symbol
+	::rtl::OUString aSymbol( RTL_CONSTASCII_USTRINGPARAM( "basicide_macro_organizer" ) );
+	basicide_macro_organizer pSymbol = (basicide_macro_organizer) osl_getFunctionSymbol( handleMod, aSymbol.pData );
 
-    // call basicide_choose_macro in basctl
-    pSymbol( nTabId );
+	// call basicide_choose_macro in basctl
+	pSymbol( nTabId );
 }
 
 ErrCode SfxApplication::CallBasic( const String& rCode, BasicManager* pMgr, SbxArray* pArgs, SbxValue* pRet )
 {
-    return pMgr->ExecuteMacro( rCode, pArgs, pRet);
+	return pMgr->ExecuteMacro( rCode, pArgs, pRet);
 }
+
+/* vim: set noet sw=4 ts=4: */
