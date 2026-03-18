@@ -1,0 +1,20 @@
+--- misc/build/curl-8.7.1/winbuild/MakefileBuild.vc	2024-03-06 23:16:03.000000000 +0200
++++ misc/build/curl-8.7.1/winbuild/MakefileBuild.vc	2024-04-21 19:13:08.380236000 +0200
+@@ -102,7 +102,7 @@
+ !IFNDEF WITH_DEVEL
+ WITH_DEVEL   = ../../deps
+ !ENDIF
+-DEVEL_INCLUDE= $(WITH_DEVEL)/include
++DEVEL_INCLUDE= $(WITH_DEVEL)/inc/external
+ DEVEL_LIB    = $(WITH_DEVEL)/lib
+ 
+ !IF EXISTS("$(DEVEL_INCLUDE)")
+@@ -241,7 +241,7 @@
+ ZLIB_LIB_DIR = $(ZLIB_PATH)\lib
+ ZLIB_LFLAGS  = $(ZLIB_LFLAGS) "/LIBPATH:$(ZLIB_LIB_DIR)"
+ !ELSE
+-ZLIB_INC_DIR = $(DEVEL_INCLUDE)
++ZLIB_INC_DIR = $(DEVEL_INCLUDE)\zlib
+ ZLIB_LIB_DIR = $(DEVEL_LIB)
+ !ENDIF
+ 
