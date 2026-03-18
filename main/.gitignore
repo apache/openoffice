@@ -71,3 +71,13 @@ TAGS
 /*/unxso???.pro
 /*/unxmac??
 /*/unxmac??.pro
+
+#build output
+config.out
+
+#bazel
+/bazel-*
+MODULE.bazel.lock
+
+# Visual Studio Code
+/.vscode/

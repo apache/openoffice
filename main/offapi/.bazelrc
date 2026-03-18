@@ -1,0 +1,27 @@
+# .bazelrc
+
+# ── Windows / MSVC via Cygwin ─────────────────────────────────────────────────
+build --compiler=msvc
+build --cpu=x64_windows
+
+# Mirrors configure: 32-bit target on 64-bit host
+build --define TARGET_BITS=32
+
+# Enable C++ exceptions (mirrors gb_CXXFLAGS exception handling)
+build --cxxopt=/EHsc
+
+# Warning level (mirrors configure: warnings-not-errors)
+build --cxxopt=/W3
+
+# Platform defines injected globally
+# (module-level defines are in each BUILD file)
+build --cxxopt=/DWIN32
+build --cxxopt=/DWNT
+build --cxxopt=/D_WINDOWS
+build --cxxopt=/DWINVER=0x0500
+
+# Output path clarity
+build --symlink_prefix=bazel-
+
+# ── Incremental migration: allow missing deps during stub phase ───────────────
+build --keep_going
