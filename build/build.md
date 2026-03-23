@@ -105,3 +105,81 @@ bazel query "deps(//main/sw/prj:sw)"
 
 # Build infrastructure
 bazel build //build/toolchains:all
+
+# dependency handling:
+
+Proposed Mapping to Existing Structure
+
+build/
+├── platforms/
+│   ├── linux-generic.bazel
+│   ├── linux-debian.bazel      # ← distro upstreams here
+│   ├── linux-fedora.bazel
+│   ├── freebsd.bazel
+│   ├── windows.bazel
+│   └── macos.bazel
+│
+├── third_party/                # ← becomes the dep definitions home
+│   ├── README.md               # "how to add a dependency"
+│   ├── mandatory/
+│   │   ├── ucpp.bzl
+│   │   └── mythes.bzl
+│   ├── optional/
+│   │   ├── graphite.bzl
+│   │   ├── nss.bzl
+│   │   └── cairo.bzl
+│   └── build_only/
+│       └── gtest.bzl
+
+ext_libraries/
+├── icu/                        # modified dependency
+│   ├── patches/                # ← "I know I was modified"
+│   │   └── aoo-icu-fix.patch
+│   ├── MODULE                  # existing format
+│   └── BUILD.bazel             # ← how to build the modified version
+│
+├── boost/
+│   ├── patches/
+│   ├── MODULE
+│   └── BUILD.bazel
+
+ext_sources/                    # phase out gradually
+│                               # replaced by Bazel cache
+└── (existing tarballs during migration)
+
+main/
+└── sc/
+    └── prj/
+        └── deps                # ← "I need icu, graphite(optional)"
+
+The Clean Ownership Model
+
+Question                              Owned By
+──────────────────────────────────    ─────────────────────
+What source/version of this dep?      build/third_party/<optional|mandatory|build_only>/
+Was this dep patched for AOO?         ext_libraries/<dep>/patches/
+How to build this dep?                ext_libraries/<dep>/BUILD.bazel
+What does module X need?              main/<module>/prj/deps
+On this OS/distro, system or bundle?  build/platforms/<distro>.bazel
+
+How Modified Dependency Knows It Was Modified
+
+ext_libraries/
+└── icu/
+    ├── MODULE                   # existing - keep format
+    ├── patches/
+    │   ├── 001-aoo-specific.patch
+    │   └── 002-windows-fix.patch
+    ├── BUILD.bazel              # build rules for patched version
+    └── source.bzl               # ← points back to third_party
+        # "I am a modified version of @icu from build/third_party"
+## example icu
+# ext_libraries/icu/source.bzl
+ICU_MODIFICATION = {
+    "base": "//build/third_party/mandatory:icu",  # original source
+    "patches": [
+        "//ext_libraries/icu/patches:001-aoo-specific.patch",
+        "//ext_libraries/icu/patches:002-windows-fix.patch",
+    ],
+    "reason": "AOO requires non-standard collation behavior, see MODULE",
+}
