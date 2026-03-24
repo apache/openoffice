@@ -38,7 +38,7 @@ register_windows_clang_toolchain()
 load("//bazel/platforms:detect.bzl", "detect_platform")
 detect_platform(name = "ooo_platform")
 
-# WORKSPACE.bazel (root)
-load("//ext_Libraries/zlib/prj:repository.bzl", "zlib_repository")
-zlib_repository()
+# custom Zlip Setup (root)
+# load("//ext_Libraries/zlib/prj:repository.bzl", "zlib_repository")
+# zlib_repository()
 
