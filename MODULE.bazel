@@ -5,4 +5,11 @@ module(
 )
 
 bazel_dep(name = "rules_cc", version = "0.2.17")
+# MODULE.bazel (root) - only orchestrates, no details
+bazel_dep(name = "zlib", version = "1.3.1")
+
+# OR for custom fetching:
+# WORKSPACE.bazel (root)
+load("//ext_Libraries/zlib/prj:repository.bzl", "zlib_repository")
+zlib_repository()
 
