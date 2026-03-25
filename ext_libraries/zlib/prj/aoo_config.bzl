@@ -1,5 +1,5 @@
 # All AOO specific zlib build parameters in one place
-AOO_ZLIB_CMAKE_OPTIONS = [
+AOO_ZLIB_CMAKE_ARGS = [
     "-DBUILD_SHARED_LIBS=OFF",
     "-DZLIB_BUILD_EXAMPLES=OFF",
     "-DCMAKE_POSITION_INDEPENDENT_CODE=ON",     # needed for AOO shared libs

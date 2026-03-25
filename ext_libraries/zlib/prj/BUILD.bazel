@@ -23,10 +23,10 @@ cmake(
     lib_source = "@ooo_zlib//:all_srcs",
 
     # AOO cmake options - platform aware
-    cmake_options = select({
+    cmake_args = select({
         ":windows_build": AOO_ZLIB_CMAKE_OPTIONS_WINDOWS,
         ":macos_build":   AOO_ZLIB_CMAKE_OPTIONS_MACOS,
-        "//conditions:default": AOO_ZLIB_CMAKE_OPTIONS,
+        "//conditions:default": AOO_ZLIB_CMAKE_ARGS,
     }),
 
     # AOO cache entries passed to CMake -D flags
