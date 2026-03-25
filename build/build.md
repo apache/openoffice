@@ -183,3 +183,11 @@ ICU_MODIFICATION = {
     ],
     "reason": "AOO requires non-standard collation behavior, see MODULE",
 }
+
+# workflow with lock file
+## After changing MODULE.bazel, update the lock:
+bazel mod deps --lockfile_mode=update
+
+## Commit both together:
+git add MODULE.bazel MODULE.bazel.lock
+git commit -m "build: add rules_foreign_cc dependency"

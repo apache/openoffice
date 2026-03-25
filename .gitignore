@@ -89,3 +89,12 @@ main/winaccessibility/source/UAccCOMIDL/dlldata.c
 
 # Python
 .venv
+
+# Build outputs
+/bazel-*
+/bazel-bin
+/bazel-out
+/bazel-testlogs
+
+# Bazel user cache (if inside repo)
+.bazel/
