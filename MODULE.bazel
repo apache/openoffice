@@ -3,7 +3,7 @@ module(
     name = "aoo",
     version = "4.2.0",
 )
-
+bazel_dep(name = "platforms", version = "1.0.0")
 bazel_dep(name = "rules_cc", version = "0.2.17")
 bazel_dep(name = "rules_foreign_cc", version = "0.15.1")
 # MODULE.bazel (root) - only orchestrates, no details

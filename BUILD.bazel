@@ -1,0 +1,8 @@
+# Leave empty or add platform definitions:
+platform(
+    name = "x86_windows-clang-cl",
+    constraint_values = [
+        "@platforms//os:windows",
+        "@platforms//cpu:x86_32",
+    ],
+)

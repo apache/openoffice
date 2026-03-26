@@ -1,44 +1,5 @@
-# ext_Libraries/zlib/prj/BUILD.bazel
-
-load("@rules_foreign_cc//foreign_cc:defs.bzl", "cmake")
-load(":aoo_config.bzl", 
-    "AOO_ZLIB_CMAKE_OPTIONS",
-    "AOO_ZLIB_CACHE_ENTRIES",
-    "AOO_ZLIB_CMAKE_OPTIONS_WINDOWS",
-    "AOO_ZLIB_CMAKE_OPTIONS_MACOS",
-)
-
-config_setting(
-    name = "windows_build",
-    constraint_values = ["@platforms//os:windows"],
-)
-
-config_setting(
-    name = "macos_build",
-    constraint_values = ["@platforms//os:macos"],
-)
-
-cmake(
+alias(
     name = "zlib",
-    lib_source = "@ooo_zlib//:all_srcs",
-
-    # AOO cmake options - platform aware
-    cmake_args = select({
-        ":windows_build": AOO_ZLIB_CMAKE_OPTIONS_WINDOWS,
-        ":macos_build":   AOO_ZLIB_CMAKE_OPTIONS_MACOS,
-        "//conditions:default": AOO_ZLIB_CMAKE_ARGS,
-    }),
-
-    # AOO cache entries passed to CMake -D flags
-    cache_entries = AOO_ZLIB_CACHE_ENTRIES,
-
-    out_static_libs = select({
-        ":windows_build": ["zlibstatic.lib"],
-        "//conditions:default": ["libz.a"],
-    }),
-
-    # expose headers for AOO modules that depend on zlib
-    out_include_dir = "include",
-
+    actual = "@zlib//:zlib",
     visibility = ["//visibility:public"],
 )

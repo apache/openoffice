@@ -4,36 +4,39 @@
 common --enable_bzlmod
 common --check_direct_dependencies=off
 # Windows Clang
-build --compiler=clang-cl
+# build --compiler=clang-cl
+# build --extra_toolchains=@local_config_cc//:all
 # Windows MSVC
-build --action_env=BAZEL_VC='C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\bin'
-build --action_env=BAZEL_LLVM='C:\\Program Files\\LLVM'
-build --action_env=BAZEL_WINSDK_FULL_VERSION='8.1'
-build --action_env=BAZEL_VS='C:\\Microsoft_SDKs\\Windows\\v7.0\\v7.0'
-build --action_env=DXSDK_DIR='C:\\Microsoft_DirectX_SDK_June_2010'
+build --action_env=BAZEL_VC='C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC'
+build --action_env=BAZEL_VS='C:\Program Files (x86)\Microsoft Visual Studio 9.0'
+#build --action_env=BAZEL_VC='C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\bin'
+#build --action_env=BAZEL_LLVM='C:\\Program Files\\LLVM'
+#build --action_env=BAZEL_WINSDK_FULL_VERSION='8.1'
+#build --action_env=BAZEL_VS='C:\\Microsoft_SDKs\\Windows\\v7.0\\v7.0'
+#build --action_env=DXSDK_DIR='C:\\Microsoft_DirectX_SDK_June_2010'
 
 # C++ standard
 #build --cpu=x64_x86_windows
-build --cxxopt=/EHsc
-build --cxxopt=/W3
-build --cxxopt=-std=c++98
-build --platforms=//:x86_windows-clang-cl
+#build --cxxopt=/EHsc
+#build --cxxopt=/W3
+#build --cxxopt=-std=c++98
+# build --platforms=//:x86_windows-clang-cl
 # For better error messages
-build --cxxopt=/Zc:preprocessor
+#build --cxxopt=/Zc:preprocessor
 # For better compatibility
-build --cxxopt=/D_CRT_NONSTDC_NO_DEPRECATE
-build --cxxopt=/D_CRT_SECURE_NO_WARNINGS
-build --cxxopt=/D_CRT_NON_CONFORMING_SWPRINTFS
+#build --cxxopt=/D_CRT_NONSTDC_NO_DEPRECATE
+#build --cxxopt=/D_CRT_SECURE_NO_WARNINGS
+#build --cxxopt=/D_CRT_NON_CONFORMING_SWPRINTFS
 # Global platform defines
-build --cxxopt=/DWIN32
-build --cxxopt=/DWNT
-build --cxxopt=/D_WINDOWS
-build --cxxopt=/DWINVER=0x0500
+#build --cxxopt=/DWIN32
+#build --cxxopt=/DWNT
+#build --cxxopt=/D_WINDOWS
+#build --cxxopt=/DWINVER=0x0500
 # For Windows 8.1 specific features
-build --cxxopt=/DWINVER=0x0603
-build --cxxopt=/D_WIN32_WINNT=0x0603
+#build --cxxopt=/DWINVER=0x0603
+#build --cxxopt=/D_WIN32_WINNT=0x0603
 
-build --symlink_prefix=bazel-
-build --keep_going
+#build --symlink_prefix=bazel-
+#build --keep_going
 
 
