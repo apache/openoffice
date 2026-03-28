@@ -1,5 +1,166 @@
-# ext_Libraries/raptor2/BUILD.bazel
+# ── Common substitutions for all platforms ──────────────────
+RAPTOR_CONFIG_COMMON_SUBSTITUTIONS = {
+    "#undef AC_APPLE_UNIVERSAL_BUILD":          "/* #undef AC_APPLE_UNIVERSAL_BUILD */",
+    "#undef CHECK_VSNPRINTF_RUNTIME":           "/* #undef CHECK_VSNPRINTF_RUNTIME */",
+    "#undef FLEX_VERSION_DECIMAL":              "/* #undef FLEX_VERSION_DECIMAL */",
+    "#undef HAVE_C99_VSNPRINTF":                "#define HAVE_C99_VSNPRINTF 1",
+    "#undef HAVE_CURL_CURL_H":                  "/* #undef HAVE_CURL_CURL_H */",
+    "#undef HAVE_DLFCN_H":                      "/* #undef HAVE_DLFCN_H */",
+    "#undef HAVE_ERRNO_H":                      "#define HAVE_ERRNO_H 1",
+    "#undef HAVE_FCNTL_H":                      "/* #undef HAVE_FCNTL_H */",
+    "#undef HAVE_FETCH_H":                      "/* #undef HAVE_FETCH_H */",
+    "#undef HAVE_GETOPT":                       "/* #undef HAVE_GETOPT */",
+    "#undef HAVE_GETOPT_H":                     "/* #undef HAVE_GETOPT_H */",
+    "#undef HAVE_GETOPT_LONG":                  "/* #undef HAVE_GETOPT_LONG */",
+    "#undef HAVE_GETTIMEOFDAY":                 "#define HAVE_GETTIMEOFDAY 1",
+    "#undef HAVE_INN_PARSEDATE":                "/* #undef HAVE_INN_PARSEDATE */",
+    "#undef HAVE_INTTYPES_H":                   "#define HAVE_INTTYPES_H 1",
+    "#undef HAVE_ISASCII":                      "#define HAVE_ISASCII 1",
+    "#undef HAVE_LIBXML_HASH_H":                "#define HAVE_LIBXML_HASH_H 1",
+    "#undef HAVE_LIBXML_HTMLPARSER_H":          "#define HAVE_LIBXML_HTMLPARSER_H 1",
+    "#undef HAVE_LIBXML_NANOHTTP_H":            "/* #undef HAVE_LIBXML_NANOHTTP_H */",
+    "#undef HAVE_LIBXML_PARSER_H":              "#define HAVE_LIBXML_PARSER_H 1",
+    "#undef HAVE_LIBXML_SAX2_H":                "#define HAVE_LIBXML_SAX2_H 1",
+    "#undef HAVE_LIBXSLT_XSLT_H":              "/* #undef HAVE_LIBXSLT_XSLT_H */",
+    "#undef HAVE_LIMITS_H":                     "#define HAVE_LIMITS_H 1",
+    "#undef HAVE_MATH_H":                       "#define HAVE_MATH_H 1",
+    "#undef HAVE_MEMORY_H":                     "#define HAVE_MEMORY_H 1",
+    "#undef HAVE_QSORT_R":                      "/* #undef HAVE_QSORT_R */",
+    "#undef HAVE_QSORT_S":                      "/* #undef HAVE_QSORT_S */",
+    "#undef HAVE_RAPTOR_PARSE_DATE":            "#define HAVE_RAPTOR_PARSE_DATE 1",
+    "#undef HAVE_SETJMP":                       "#define HAVE_SETJMP 1",
+    "#undef HAVE_SETJMP_H":                     "#define HAVE_SETJMP_H 1",
+    "#undef HAVE_STAT":                         "#define HAVE_STAT 1",
+    "#undef HAVE_STDDEF_H":                     "#define HAVE_STDDEF_H 1",
+    "#undef HAVE_STDINT_H":                     "#define HAVE_STDINT_H 1",
+    "#undef HAVE_STDLIB_H":                     "#define HAVE_STDLIB_H 1",
+    "#undef HAVE_STRICMP":                      "/* #undef HAVE_STRICMP */",
+    "#undef HAVE_STRINGS_H":                    "#define HAVE_STRINGS_H 1",
+    "#undef HAVE_STRING_H":                     "#define HAVE_STRING_H 1",
+    "#undef HAVE_STRTOK_R":                     "#define HAVE_STRTOK_R 1",
+    "#undef HAVE_SYS_PARAM_H":                  "#define HAVE_SYS_PARAM_H 1",
+    "#undef HAVE_SYS_STAT_H":                   "#define HAVE_SYS_STAT_H 1",
+    "#undef HAVE_UNISTD_H":                     "#define HAVE_UNISTD_H 1",
+    "#undef HAVE_VASPRINTF":                    "#define HAVE_VASPRINTF 1",
+    "#undef HAVE_VSNPRINTF":                    "#define HAVE_VSNPRINTF 1",
+    "#undef HAVE_XMLCTXTUSEOPTIONS":            "#define HAVE_XMLCTXTUSEOPTIONS 1",
+    "#undef HAVE_XMLSAX2INTERNALSUBSET":        "#define HAVE_XMLSAX2INTERNALSUBSET 1",
+    "#undef HAVE_YAJL2":                        "/* #undef HAVE_YAJL2 */",
+    "#undef HAVE_YAJL_YAJL_PARSE_H":           "/* #undef HAVE_YAJL_YAJL_PARSE_H */",
+    "#undef HAVE___FUNCTION__":                 "#define HAVE___FUNCTION__ 1",
+    "#undef LT_OBJDIR":                         "/* #undef LT_OBJDIR */",
+    "#undef MAINTAINER_MODE":                   "/* #undef MAINTAINER_MODE */",
+    "#undef NEED_OPTIND_DECLARATION":           "/* #undef NEED_OPTIND_DECLARATION */",
+    "#undef NO_MINUS_C_MINUS_O":                "/* #undef NO_MINUS_C_MINUS_O */",
+    "#undef PACKAGE":                           "#define PACKAGE \"raptor2\"",
+    "#undef PACKAGE_BUGREPORT":                 "#define PACKAGE_BUGREPORT \"\"",
+    "#undef PACKAGE_NAME":                      "#define PACKAGE_NAME \"raptor2\"",
+    "#undef PACKAGE_STRING":                    "#define PACKAGE_STRING \"raptor2 2.0.15\"",
+    "#undef PACKAGE_TARNAME":                   "#define PACKAGE_TARNAME \"raptor2\"",
+    "#undef PACKAGE_URL":                       "#define PACKAGE_URL \"\"",
+    "#undef PACKAGE_VERSION":                   "#define PACKAGE_VERSION \"2.0.15\"",
+    "#undef RAPTOR_DEBUG":                      "/* #undef RAPTOR_DEBUG */",
+    "#undef RAPTOR_ICU_NFC":                    "/* #undef RAPTOR_ICU_NFC */",
+    "#undef RAPTOR_LIBXML_ENTITY_ETYPE":        "#define RAPTOR_LIBXML_ENTITY_ETYPE 1",
+    "#undef RAPTOR_LIBXML_ENTITY_NAME_LENGTH":  "/* #undef RAPTOR_LIBXML_ENTITY_NAME_LENGTH */",
+    "#undef RAPTOR_LIBXML_HTML_PARSE_NONET":    "#define RAPTOR_LIBXML_HTML_PARSE_NONET 1",
+    "#undef RAPTOR_LIBXML_XMLSAXHANDLER_EXTERNALSUBSET": "#define RAPTOR_LIBXML_XMLSAXHANDLER_EXTERNALSUBSET 1",
+    "#undef RAPTOR_LIBXML_XMLSAXHANDLER_INITIALIZED":    "#define RAPTOR_LIBXML_XMLSAXHANDLER_INITIALIZED 1",
+    "#undef RAPTOR_LIBXML_XML_PARSE_NONET":     "#define RAPTOR_LIBXML_XML_PARSE_NONET 1",
+    "#undef RAPTOR_MIN_VERSION_DECIMAL":        "#define RAPTOR_MIN_VERSION_DECIMAL 20000",
+    "#undef RAPTOR_PARSER_GRDDL":               "/* #undef RAPTOR_PARSER_GRDDL */",
+    "#undef RAPTOR_PARSER_GUESS":               "#define RAPTOR_PARSER_GUESS 1",
+    "#undef RAPTOR_PARSER_JSON":                "/* #undef RAPTOR_PARSER_JSON */",
+    "#undef RAPTOR_PARSER_NQUADS":              "#define RAPTOR_PARSER_NQUADS 1",
+    "#undef RAPTOR_PARSER_NTRIPLES":            "#define RAPTOR_PARSER_NTRIPLES 1",
+    "#undef RAPTOR_PARSER_RDFA":                "/* #undef RAPTOR_PARSER_RDFA */",
+    "#undef RAPTOR_PARSER_RDFXML":              "#define RAPTOR_PARSER_RDFXML 1",
+    "#undef RAPTOR_PARSER_RSS":                 "#define RAPTOR_PARSER_RSS 1",
+    "#undef RAPTOR_PARSER_TRIG":                "#define RAPTOR_PARSER_TRIG 1",
+    "#undef RAPTOR_PARSER_TURTLE":              "#define RAPTOR_PARSER_TURTLE 1",
+    "#undef RAPTOR_SERIALIZER_ATOM":            "/* #undef RAPTOR_SERIALIZER_ATOM */",
+    "#undef RAPTOR_SERIALIZER_DOT":             "#define RAPTOR_SERIALIZER_DOT 1",
+    "#undef RAPTOR_SERIALIZER_HTML":            "#define RAPTOR_SERIALIZER_HTML 1",
+    "#undef RAPTOR_SERIALIZER_JSON":            "#define RAPTOR_SERIALIZER_JSON 1",
+    "#undef RAPTOR_SERIALIZER_NQUADS":          "#define RAPTOR_SERIALIZER_NQUADS 1",
+    "#undef RAPTOR_SERIALIZER_NTRIPLES":        "#define RAPTOR_SERIALIZER_NTRIPLES 1",
+    "#undef RAPTOR_SERIALIZER_RDFXML":          "#define RAPTOR_SERIALIZER_RDFXML 1",
+    "#undef RAPTOR_SERIALIZER_RDFXML_ABBREV":   "#define RAPTOR_SERIALIZER_RDFXML_ABBREV 1",
+    "#undef RAPTOR_SERIALIZER_RSS_1_0":         "#define RAPTOR_SERIALIZER_RSS_1_0 1",
+    "#undef RAPTOR_SERIALIZER_TURTLE":          "#define RAPTOR_SERIALIZER_TURTLE 1",
+    "#undef RAPTOR_VERSION_DECIMAL":            "#define RAPTOR_VERSION_DECIMAL 20015",
+    "#undef RAPTOR_VERSION_MAJOR":              "#define RAPTOR_VERSION_MAJOR 2",
+    "#undef RAPTOR_VERSION_MINOR":              "#define RAPTOR_VERSION_MINOR 0",
+    "#undef RAPTOR_VERSION_RELEASE":            "#define RAPTOR_VERSION_RELEASE 15",
+    "#undef RAPTOR_WWW_LIBCURL":                "/* #undef RAPTOR_WWW_LIBCURL */",
+    "#undef RAPTOR_WWW_LIBFETCH":               "/* #undef RAPTOR_WWW_LIBFETCH */",
+    "#undef RAPTOR_WWW_LIBXML":                 "#define RAPTOR_WWW_LIBXML 1",
+    "#undef RAPTOR_WWW_NONE":                   "/* #undef RAPTOR_WWW_NONE */",
+    "#undef RAPTOR_XML_1_1":                    "#define RAPTOR_XML_1_1 1",
+    "#undef RAPTOR_XML_LIBXML":                 "#define RAPTOR_XML_LIBXML 1",
+    "#undef STDC_HEADERS":                      "#define STDC_HEADERS 1",
+    "#undef TIME_WITH_SYS_TIME":                "#define TIME_WITH_SYS_TIME 1",
+    "#undef VERSION":                           "#define VERSION \"2.0.15\"",
+    "#undef WORDS_BIGENDIAN":                   "/* #undef WORDS_BIGENDIAN */",
+    "#undef YYTEXT_POINTER":                    "/* #undef YYTEXT_POINTER */",
+    "#undef _FILE_OFFSET_BITS":                 "#define _FILE_OFFSET_BITS 64",
+    "#undef _LARGE_FILES":                      "/* #undef _LARGE_FILES */",
+    "#undef const":                             "/* #undef const */",
+    "#undef inline":                            "/* #undef inline */",
+}
 
+# ── Windows-specific overrides ───────────────────────────────
+RAPTOR_CONFIG_WINDOWS_SUBSTITUTIONS = {
+    "#undef HAVE_GETTIMEOFDAY":     "/* #undef HAVE_GETTIMEOFDAY */",
+    "#undef HAVE_STRCASECMP":       "/* #undef HAVE_STRCASECMP */",
+    "#undef HAVE_STRICMP":          "#define HAVE_STRICMP 1",
+    "#undef HAVE_STRTOK_R":         "/* #undef HAVE_STRTOK_R */",
+    "#undef HAVE_VASPRINTF":        "/* #undef HAVE_VASPRINTF */",
+    "#undef HAVE_UNISTD_H":         "/* #undef HAVE_UNISTD_H */",
+    "#undef HAVE_SYS_PARAM_H":      "/* #undef HAVE_SYS_PARAM_H */",
+    "#undef HAVE_SYS_TIME_H":       "/* #undef HAVE_SYS_TIME_H */",
+    "#undef TIME_WITH_SYS_TIME":    "/* #undef TIME_WITH_SYS_TIME */",
+    "#undef _FILE_OFFSET_BITS":     "/* #undef _FILE_OFFSET_BITS */",
+    "#undef HAVE_STRINGS_H":        "/* #undef HAVE_STRINGS_H */",
+}
+
+# ── Unix-specific ─────────────────────────────────────────────
+RAPTOR_CONFIG_UNIX_SUBSTITUTIONS = {
+    "#undef HAVE_STRCASECMP":       "#define HAVE_STRCASECMP 1",
+    "#undef HAVE_SYS_TIME_H":       "#define HAVE_SYS_TIME_H 1",
+    "#undef HAVE_DLFCN_H":          "#define HAVE_DLFCN_H 1",
+    "#undef HAVE_FCNTL_H":          "#define HAVE_FCNTL_H 1",
+}
+
+# ── configure replacement ────────────────────────────────────
+load("@bazel_skylib//rules:expand_template.bzl", "expand_template")
+expand_template(
+    name = "raptor_config_h_unix",
+    template = "src/raptor_config.h.in",
+    out = "src/raptor_config_unix.h",
+    substitutions = RAPTOR_CONFIG_COMMON_SUBSTITUTIONS | RAPTOR_CONFIG_UNIX_SUBSTITUTIONS,
+)
+
+expand_template(
+    name = "raptor_config_h_windows",
+    template = "src/raptor_config.h.in",
+    out = "src/raptor_config_windows.h",
+    substitutions = RAPTOR_CONFIG_COMMON_SUBSTITUTIONS | RAPTOR_CONFIG_WINDOWS_SUBSTITUTIONS,
+)
+
+expand_template(
+    name = "raptor2_h",
+    template = "src/raptor2.h.in",
+    out = "src/raptor2.h",
+    substitutions = {
+        "@RAPTOR_VERSION_DECIMAL@": "20015",
+        "@VERSION@": "2.0.15",
+        "@RAPTOR_VERSION_MAJOR@": "2",
+        "@RAPTOR_VERSION_MINOR@": "0",
+        "@RAPTOR_VERSION_RELEASE@": "15",
+    },
+)
+# ── files ────────────────────────────────────────────────────
 RAPTOR2_CORE_SRCS = [
     "src/raptor_parse.c",
     "src/raptor_serialize.c",
@@ -141,7 +302,17 @@ RAPTOR2_UNIX_COPTS = [
     "-std=c99",
     "-fPIC",
 ]
-
+# ── prep build environment ────────────────────────────────────────
+genrule(
+    name = "raptor_config_h",
+    srcs = select({
+        "@platforms//os:windows": [":raptor_config_h_windows"],
+        "//conditions:default":   [":raptor_config_h_unix"],
+    }),
+    outs = ["src/raptor_config.h"],
+    cmd = "cp $< $@",
+    cmd_bat = "copy $< $@",  # Windows
+)
 # ── Main library target ────────────────────────────────────────
 
 cc_library(
@@ -151,7 +322,11 @@ cc_library(
         "@platforms//os:linux":   RAPTOR2_UNIX_SRCS,
         "@platforms//os:macos":   RAPTOR2_UNIX_SRCS,
     }),
-    hdrs = glob(["src/*.h"]) + [":raptor_config_h"],
+    hdrs = glob(["src/*.h"], exclude = [
+                "src/raptor2.h.in",
+                "src/raptor_config.h.in",
+            ]) +
+        [":raptor2_h", ":raptor_config_h"],
     includes = ["src"],
     defines = RAPTOR2_COMMON_DEFINES + select({
         "@platforms//os:windows": RAPTOR2_WINDOWS_DEFINES,
