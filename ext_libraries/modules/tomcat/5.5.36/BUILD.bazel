@@ -1,0 +1,5 @@
+java_library(
+    name = "servlet-api",
+    srcs = glob(["servletapi/jsr154/src/share/**/*.java"]),
+    visibility = ["//visibility:public"],
+)

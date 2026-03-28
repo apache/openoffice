@@ -1,0 +1,10 @@
+{
+    "url": "https://ftp.mozilla.org/pub/js/rhino1_7R3.zip",
+    "integrity": "sha256-iFtG4k/lryOtNxLF4I6Nl9bZKkuJ4b6GDo/ojko9rNE=",
+    "strip_prefix": "rhino1_7R3",
+    "patches": {
+        "rhino1_7R3.patch": "sha256-en889HFEQTv2KukR9tL9W2Eh/CBtMtAVlFQf5qFdQy0="
+    },
+    "patch_strip": 1,
+    "build_file": "BUILD.bazel"
+}
