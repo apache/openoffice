@@ -1,6 +1,6 @@
-diff -ur misc/raptor2-2.0.15/src/raptor_config.h.in misc/build/raptor2-2.0.15/src/raptor_config.h.in
---- misc/raptor2-2.0.15/src/raptor_config.h.in	2014-11-01 23:04:51.000000000 -0700
-+++ misc/build/raptor2-2.0.15/src/raptor_config.h.in	2016-08-22 19:14:14.557872000 -0700
+diff -ur src/raptor_config.h.in src/raptor_config.h.in
+--- src/raptor_config.h.in	2014-11-01 23:04:51.000000000 -0700
++++ src/raptor_config.h.in	2016-08-22 19:14:14.557872000 -0700
 @@ -1,317 +1,318 @@
 +/* src/raptor_config.h.  Generated from raptor_config.h.in by configure.  */
  /* src/raptor_config.h.in.  Generated from configure.ac by autoheader.  */
@@ -465,8 +465,8 @@ diff -ur misc/raptor2-2.0.15/src/raptor_config.h.in misc/build/raptor2-2.0.15/sr
 +#  define S_ISTYPE(mode, mask)	(((mode) & _S_IFMT) == (mask))
 +#  define S_ISDIR(mode)		S_ISTYPE((mode), _S_IFDIR)
 +#  define S_ISREG(mode)		S_ISTYPE((mode), _S_IFREG)
---- misc/raptor2-2.0.15/src/sort_r.c	2014-06-30 10:09:40.000000000 -0700
-+++ misc/build/raptor2-2.0.15/src/sort_r.c	2016-08-23 11:02:51.651428000 -0700
+--- src/sort_r.c	2014-06-30 10:09:40.000000000 -0700
++++ src/sort_r.c	2016-08-23 11:02:51.651428000 -0700
 @@ -60,6 +60,7 @@
   * data2, @user_data) and returns <0, 0, or >0 for object comparison.
   *
@@ -475,8 +475,8 @@ diff -ur misc/raptor2-2.0.15/src/raptor_config.h.in misc/build/raptor2-2.0.15/sr
  void
  raptor_sort_r(void *base, size_t nel, size_t width,
                raptor_data_compare_arg_handler compar, void *user_data)
---- misc/raptor2-2.0.15/src/raptor2.h.in	2014-11-01 21:44:04.000000000 -0700
-+++ misc/build/raptor2-2.0.15/src/raptor2.h.in	2016-08-23 11:46:20.581017000 -0700
+--- src/raptor2.h.in	2014-11-01 21:44:04.000000000 -0700
++++ src/raptor2.h.in	2016-08-23 11:46:20.581017000 -0700
 @@ -2176,6 +2176,7 @@
  void* raptor_avltree_iterator_get(raptor_avltree_iterator* iterator);
  

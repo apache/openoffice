@@ -11,18 +11,5 @@ bazel_dep(name = "rules_foreign_cc", version = "0.15.1")
 # MODULE.bazel (root) - only orchestrates, no details
 bazel_dep(name = "zlib", version = "1.3.1")
 bazel_dep(name = "vigra", version = "1.6.0")
-# --------------- bazel http archieves ------------
-http_archive = use_repo_rule("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
-
-http_archive(
-    name = "vigra",
-    urls = [
-        "https://src.fedoraproject.org/lookaside/extras/vigra/vigra1.6.0.tar.gz/d62650a6f908e85643e557a236ea989c/vigra1.6.0.tar.gz",
-        "https://sourceforge.net/projects/oooextras.mirror/files/d62650a6f908e85643e557a236ea989c-vigra1.6.0.tar.gz",
-    ],
-    md5 = "d62650a6f908e85643e557a236ea989c",  # note: Bazel prefers sha256
-    strip_prefix = "vigra1.6.0",
-    patches = ["//ext_libraries/vigra:vigra1.6.0.patch"],
-    patch_args = ["-p2"],
-    build_file = "//ext_libraries/vigra:BUILD.bazel",
-)
+bazel_dep(name = "raptor2",          version = "2.0.15")
+bazel_dep(name = "libxml2",          version = "2.9.14")

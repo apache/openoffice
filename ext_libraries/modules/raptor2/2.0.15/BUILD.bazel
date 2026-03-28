@@ -1,0 +1,172 @@
+# ext_Libraries/raptor2/BUILD.bazel
+
+RAPTOR2_CORE_SRCS = [
+    "src/raptor_parse.c",
+    "src/raptor_serialize.c",
+    "src/raptor_rfc2396.c",
+    "src/raptor_uri.c",
+    "src/raptor_log.c",
+    "src/raptor_locator.c",
+    "src/raptor_namespace.c",
+    "src/raptor_qname.c",
+    "src/raptor_option.c",
+    "src/raptor_general.c",
+    "src/raptor_unicode.c",
+    "src/raptor_www.c",
+    "src/raptor_statement.c",
+    "src/raptor_term.c",
+    "src/raptor_sequence.c",
+    "src/raptor_stringbuffer.c",
+    "src/raptor_iostream.c",
+    "src/raptor_xml.c",
+    "src/raptor_xml_writer.c",
+    "src/raptor_set.c",
+    "src/turtle_common.c",
+    "src/raptor_turtle_writer.c",
+    "src/raptor_avltree.c",
+    "src/snprintf.c",
+    "src/raptor_json_writer.c",
+    "src/raptor_memstr.c",
+    "src/raptor_concepts.c",
+    "src/raptor_syntax_description.c",
+    "src/raptor_sax2.c",
+    "src/raptor_escaped.c",
+    "src/raptor_ntriples.c",
+    "src/sort_r.c",
+    # XML + WWW backend: libxml2 (all platforms)
+    "src/raptor_libxml.c",
+    "src/raptor_www_libxml.c",
+    # Parsers
+    "src/raptor_rdfxml.c",
+    "src/ntriples_parse.c",
+    "src/turtle_lexer.c",
+    "src/turtle_parser.c",
+    "src/raptor_rss_common.c",
+    "src/raptor_rss.c",
+    "src/raptor_guess.c",
+    # Serializers
+    "src/raptor_serialize_rdfxml.c",
+    "src/raptor_serialize_ntriples.c",
+    "src/raptor_abbrev.c",
+    "src/raptor_serialize_rdfxmla.c",
+    "src/raptor_serialize_turtle.c",
+    "src/raptor_serialize_rss.c",
+    "src/raptor_serialize_dot.c",
+    "src/raptor_serialize_html.c",
+    "src/raptor_serialize_json.c",
+    "src/parsedate.c",
+]
+
+# Platform-specific sources
+RAPTOR2_WINDOWS_SRCS = [
+    "src/strcasecmp.c",           # MSVC lacks strcasecmp
+    "src/raptor_uri_win32.c",     # Windows URI handling
+]
+
+RAPTOR2_UNIX_SRCS = [
+    # strcasecmp exists natively on Linux/Mac
+]
+
+# ── Defines ────────────────────────────────────────────────────
+
+RAPTOR2_COMMON_DEFINES = [
+    "PACKAGE=\\\"raptor2\\\"",
+    "VERSION=\\\"2.0.15\\\"",
+    "RAPTOR_VERSION_MAJOR=2",
+    "RAPTOR_VERSION_MINOR=0",
+    "RAPTOR_VERSION_RELEASE=15",
+    "RAPTOR_VERSION_DECIMAL=20015",
+    "RAPTOR_XML_LIBXML=1",
+    "RAPTOR_WWW_LIBXML=1",
+    "RAPTOR_PARSER_RDFXML=1",
+    "RAPTOR_PARSER_NTRIPLES=1",
+    "RAPTOR_PARSER_TURTLE=1",
+    "RAPTOR_PARSER_TRIG=1",
+    "RAPTOR_PARSER_GUESS=1",
+    "RAPTOR_PARSER_RSS=1",
+    "RAPTOR_RSS_COMMON=1",
+    "RAPTOR_PARSER_NQUADS=1",
+    "RAPTOR_SERIALIZER_RDFXML=1",
+    "RAPTOR_SERIALIZER_NTRIPLES=1",
+    "RAPTOR_SERIALIZER_NQUADS=1",
+    "RAPTOR_SERIALIZER_RDFXML_ABBREV=1",
+    "RAPTOR_SERIALIZER_TURTLE=1",
+    "RAPTOR_SERIALIZER_RSS_1_0=1",
+    "RAPTOR_SERIALIZER_DOT=1",
+    "RAPTOR_SERIALIZER_HTML=1",
+    "RAPTOR_SERIALIZER_JSON=1",
+    "RAPTOR_XML_1_1=1",
+    "STDC_HEADERS=1",
+    "HAVE_STDINT_H=1",
+    "HAVE_STRING_H=1",
+]
+
+RAPTOR2_WINDOWS_DEFINES = [
+    "WIN32=1",
+    "_WINDOWS=1",
+    "_CRT_SECURE_NO_WARNINGS=1",
+    "HAVE_STRCASECMP=0",
+    "RAPTOR_STATIC=1",            # static lib on Windows
+]
+
+RAPTOR2_LINUX_DEFINES = [
+    "HAVE_STRCASECMP=1",
+    "HAVE_PTHREAD_H=1",
+    "HAVE_SYS_TIME_H=1",
+    "TIME_WITH_SYS_TIME=1",
+    "_FILE_OFFSET_BITS=64",
+]
+
+RAPTOR2_MACOS_DEFINES = [
+    "HAVE_STRCASECMP=1",
+    "HAVE_PTHREAD_H=1",
+    "HAVE_SYS_TIME_H=1",
+    "TIME_WITH_SYS_TIME=1",
+    "_DARWIN_USE_64_BIT_INODE=1",
+]
+
+# ── Compiler options ───────────────────────────────────────────
+
+RAPTOR2_WINDOWS_COPTS = [
+    "/W3",
+    "/wd4996",
+    "/wd4244",
+    "/wd4267",
+    "/wd4305",
+    "/wd4018",
+]
+
+RAPTOR2_UNIX_COPTS = [
+    "-w",
+    "-std=c99",
+    "-fPIC",
+]
+
+# ── Main library target ────────────────────────────────────────
+
+cc_library(
+    name = "raptor2",
+    srcs = RAPTOR2_CORE_SRCS + select({
+        "@platforms//os:windows": RAPTOR2_WINDOWS_SRCS,
+        "@platforms//os:linux":   RAPTOR2_UNIX_SRCS,
+        "@platforms//os:macos":   RAPTOR2_UNIX_SRCS,
+    }),
+    hdrs = glob(["src/*.h"]) + [":raptor_config_h"],
+    includes = ["src"],
+    defines = RAPTOR2_COMMON_DEFINES + select({
+        "@platforms//os:windows": RAPTOR2_WINDOWS_DEFINES,
+        "@platforms//os:linux":   RAPTOR2_LINUX_DEFINES,
+        "@platforms//os:macos":   RAPTOR2_MACOS_DEFINES,
+    }),
+    copts = select({
+        "@platforms//os:windows": RAPTOR2_WINDOWS_COPTS,
+        "//conditions:default":   RAPTOR2_UNIX_COPTS,
+    }),
+    linkopts = select({
+        "@platforms//os:windows": ["ws2_32.lib"],
+        "@platforms//os:linux":   ["-lpthread", "-lm"],
+        "@platforms//os:macos":   ["-lpthread", "-lm"],
+    }),
+    deps = ["@libxml2//:libxml2"],
+    visibility = ["//visibility:public"],
+)
