@@ -1,0 +1,26 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+load("@rules_foreign_cc//foreign_cc:defs.bzl", "configure_make")
+
+package(default_visibility = ["//visibility:public"])
+
+filegroup(
+    name = "all_srcs",
+    srcs = glob(["**"]),
+)
+
+configure_make(
+    name = "redland",
+    configure_in_place = True,
+    configure_options = [
+        "--disable-shared",
+        "--enable-static",
+        "--with-threads=no",
+        "--disable-modular",
+    ],
+    lib_source = ":all_srcs",
+    out_static_libs = ["librdf.a"],
+    deps = [
+        "@raptor2//:raptor2",
+        "@rasqal//:rasqal",
+    ],
+)
