@@ -1,0 +1,34 @@
+# BUILD.bazel for OpenSSL 3.0.13 — Bazel local registry overlay
+# This is a minimal build file. Adjust as needed for your platform.
+
+package(default_visibility = ["//visibility:public"])
+
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+# ---------------------------------------------------------
+# You need to run ./Configure and make on OpenSSL to generate
+# the necessary headers and libs for your platform.
+# This BUILD file is intended as a starting point.
+# ---------------------------------------------------------
+
+filegroup(
+    name = "all_srcs",
+    srcs = glob(["**"]),
+)
+
+cc_library(
+    name = "ssl",
+    srcs = glob([
+        "ssl/**/*.c",
+        "crypto/**/*.c",
+    ]),
+    hdrs = glob([
+        "include/openssl/*.h",
+        "include/internal/*.h",
+    ]),
+    includes = ["include"],
+    copts = [
+        "-DOPENSSL_NO_TESTS",
+    ],
+    visibility = ["//visibility:public"],
+)
