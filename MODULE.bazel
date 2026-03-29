@@ -1,14 +1,12 @@
 # MODULE.bazel
 module(
     name = "aoo",
-    version = "4.2.0",
+    version = "4.5.0",
 )
 
 # --------------- bazel dependencies ---------------
-bazel_dep(name = "platforms", version = "1.0.0")
-bazel_dep(name = "rules_cc", version = "0.2.17")
+bazel_dep(name = "platforms",        version = "1.0.0")
+bazel_dep(name = "rules_cc",         version = "0.2.17")
 bazel_dep(name = "rules_foreign_cc", version = "0.15.1")
 # MODULE.bazel (root) - only orchestrates, no details
-bazel_dep(name = "zlib", version = "1.3.1")
-bazel_dep(name = "vigra", version = "1.6.0")
-bazel_dep(name = "raptor2",          version = "2.0.15")
+bazel_dep(name = "redland",          version = "1.0.17")

@@ -2,5 +2,5 @@ module(
     name = "redland",
     version = "1.0.17",
 )
-build_dep(name = "raptor2", version = "2.0.15")
-build_dep(name = "rasqal", version = "0.9.33")
+bazel_dep(name = "raptor2", version = "2.0.15")
+bazel_dep(name = "rasqal", version = "0.9.33")
