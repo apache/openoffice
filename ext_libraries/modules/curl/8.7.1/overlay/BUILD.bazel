@@ -1,0 +1,60 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+package(default_visibility = ["//visibility:public"])
+
+cc_library(
+    name = "curl",
+    srcs = glob(
+        [
+            "lib/**/*.c",
+            "lib/**/*.h",
+        ],
+        exclude = [
+            "lib/vtls/openssl.c",  # only if not using openssl
+        ],
+    ) + glob([
+        "lib/vtls/openssl.c",
+    ]),
+    hdrs = glob([
+        "include/curl/*.h",
+    ]),
+    copts = select({
+        "@platforms//os:windows": [
+            "/DBUILDING_LIBCURL",
+            "/DCURL_STATICLIB",
+            "/DUSE_OPENSSL",
+            "/DHAVE_CONFIG_H",
+        ],
+        "//conditions:default": [
+            "-DBUILDING_LIBCURL",
+            "-DCURL_STATICLIB",
+            "-DUSE_OPENSSL",
+            "-DHAVE_CONFIG_H",
+            "-Wno-deprecated-declarations",
+        ],
+    }),
+    defines = [
+        "CURL_STATICLIB",
+    ],
+    includes = [
+        "include",
+        "lib",
+    ],
+    linkopts = select({
+        "@platforms//os:windows": [
+            "-DEFAULTLIB:ws2_32.lib",
+            "-DEFAULTLIB:advapi32.lib",
+            "-DEFAULTLIB:crypt32.lib",
+            "-DEFAULTLIB:wldap32.lib",
+        ],
+        "@platforms//os:macos": [
+            "-framework SystemConfiguration",
+        ],
+        "//conditions:default": [],
+    }),
+    deps = [
+        "@openssl//:ssl",
+        "@openssl//:crypto",
+        "@zlib//:zlib",
+    ],
+)
