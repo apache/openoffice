@@ -1,0 +1,7 @@
+module(
+    name = "rasqal",
+    version = "0.9.33",
+    compatibility_level = 1,
+)
+
+bazel_dep(name = "raptor", version = "2.0.15")
