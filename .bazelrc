@@ -3,6 +3,6 @@
 # Use bzlmod
 common --enable_bzlmod
 common --check_direct_dependencies=off
-# Windows MSVC
-build --action_env=BAZEL_VC='C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC'
-build --action_env=BAZEL_VS='C:\Program Files (x86)\Microsoft Visual Studio 9.0'
+
+common --registry="file:///%workspace%/ext_libraries"
+common --registry=https://bcr.bazel.build

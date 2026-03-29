@@ -1,0 +1,12 @@
+{
+  "integrity": "sha256-qv7hk/+4/gyC1K/vbvkZcsuvX+6hAO3C8mJ1BhG0vh8=",
+  "strip_prefix": "libxml2-2.9.10",
+  "url": "http://xmlsoft.org/sources/libxml2-2.9.10.tar.gz",
+  "patches": {
+    "libxml2-configure.patch": "sha256-kyEpZRJicq2s4WKNwh8YCc2dTj85wGVbjIhB/9XWHOs=",
+    "0e1a49c8907645d2e155f0d89d4d9895ac5112b5.patch": "sha256-DanurB4Ib0+Y5vLKA0DZjiskBP5pNDRv+fJ5k13lXuk=",
+    "50f06b3efb638efb0abd95dc62dca05ae67882c2.patch": "sha256-WfzrxS3QACQ+jocukCe4q92xe+8pPiQrUEl11mU/fhU=",
+    "7ffcd44d7e6c46704f8af0321d9314cd26e0e18a.patch": "sha256-pLoxlVp2Zc7R7aA2a8H2wQyCOfy+M1a1pNYvnARU/q4="
+  },
+  "patch_strip": 1
+}
