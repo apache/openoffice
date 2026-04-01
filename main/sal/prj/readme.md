@@ -1,0 +1,4 @@
+sa_oslp (OS/2) 	Omitted — OS/2 is not a Bazel-supported platform. Add it back if ever needed.
+Platform guards 	The select() blocks on sa_util are the minimum needed. The sa_uwinapi/sa_oslu targets will still be analysed on all platforms but will produce no output because nmake itself will no-op them on the wrong OS. If you want strict platform pruning, wrap those targets in select() inside their consumers' deps.
+ 	Symlinks from d.lst 	libuno_sal.so.3 → libuno_sal.so and libsalalloc_malloc.so.3 → libsalalloc_malloc.so — rules_foreign_cc copies outputs; symlinks need a small genrule wrapper or a post-build script.
+5 	//main/xml2cmp 	Only listed in the package-level dep line, not in individual sub-targets in build.lst. It may only be needed for the sa_mkout step (delivery). Confirm before adding it to sa_util.
