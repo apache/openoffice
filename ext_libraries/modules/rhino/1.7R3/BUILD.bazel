@@ -1,10 +1,10 @@
+load("@rules_java//java:java_library.bzl", "java_library")
+
 java_library(
     name = "js",
     srcs = glob([
         "src/**/*.java",
         "toolsrc/**/*.java",
-    ]) + [
-        "toolsrc/org/mozilla/javascript/tools/debugger/OfficeScriptInfo.java",
-    ],
+    ]),
     visibility = ["//visibility:public"],
 )
