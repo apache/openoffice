@@ -10,3 +10,5 @@ bazel_dep(name = "rules_cc",         version = "0.2.17")
 bazel_dep(name = "rules_foreign_cc", version = "0.15.1")
 # MODULE.bazel (root) - only orchestrates, no details
 bazel_dep(name = "redland",          version = "1.0.17")
+
+bazel_dep(name = "strawberry-perl", version = "5.32.1.1")
