@@ -1,0 +1,14 @@
+filegroup(
+    name = "external",
+    srcs = [
+        "//main/external/dbghelp:dbghelp",
+        "//main/external/mingwheaders:mingwheaders",
+        "//main/external/gdiplus:gdiplus_dll",
+        "//main/external/unowinreg:unowinreg",
+        "//main/external/msvcp90:msvcp90",
+        "//main/external/msvcp100:msvcp100",
+        "//main/external/vcredist:vcredist",
+        "//main/external/mingwm10:mingwm10",
+    ],
+    visibility = ["//visibility:public"],
+)

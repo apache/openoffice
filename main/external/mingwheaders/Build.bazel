@@ -1,0 +1,13 @@
+# Windows-only per build.lst ("w" flag)
+# Active only for MinGW toolchain (WNTGCC) - no-op for MSVC
+# No genrule needed until MinGW toolchain is wired into Bazel
+
+filegroup(
+    name = "mingwheaders",
+    srcs = [
+        "mingw_headers.patch",
+        "mingw_atl_headers.patch",
+        "makefile.mk",
+    ],
+    visibility = ["//visibility:public"],
+)
