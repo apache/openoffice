@@ -1,0 +1,119 @@
+# we need to load cc_binary and cc_library to be able to use them here
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+# Global defines for all cc_library rules in sal (Windows MSVC)
+_COPTS = [
+    "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs", "/Gz",
+    "/wd4061", "/wd4063", "/wd4127"  # ... rest of warning suppressions
+]
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32", "_MT",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK",
+]
+
+# For shared lib objects only:
+_SLO_DEFINES = _DEFINES + ["SHAREDLIB", "_DLL_"]
+
+# build rules for shared lib objects only:
+## include folder for other modules to use
+cc_library(
+    name = "sal_headers",
+    hdrs = glob(["inc/**/*.h", "inc/**/*.hxx"]),
+    strip_include_prefix = "inc",   # makes #include <sal/types.h> work
+    visibility = ["//visibility:public"],
+)
+
+cc_library(
+    name = "sal_pch",
+    hdrs = glob(["inc/pch/*.hxx"]),
+    strip_include_prefix = "inc/pch",  # makes #include "precompiled_sal.hxx" work
+    visibility = ["//visibility:public"],
+)
+## osl_all - all os-specific code, for both shared and static lib objects
+cc_library(
+    name = "osl_all",
+    srcs = glob([
+        "osl/all/*.c",
+        "osl/all/*.cxx",
+        ]),
+    copts = _COPTS,
+    defines = _SLO_DEFINES,
+    deps = [":sal_headers"],
+    visibility = ["//visibility:public"],
+)
+## systools for Windows, used by some shared lib objects and also by some static lib objects
+cc_library(
+    name = "osl_w32",
+    srcs = glob([
+        "osl/w32/*.c",
+        "osl/w32/*.cxx",
+        "osl/w32/*.h",
+        "osl/w32/*.hxx",
+        ]),
+    copts = _COPTS,
+    defines = _SLO_DEFINES,
+    deps = [":sal_headers"],
+    visibility = ["//visibility:public"],
+)
+## rtl - runtime library, for both shared and static lib objects
+cc_library(
+    name = "rtl",
+    srcs = glob([
+        "rtl/source/*.c",
+        "rtl/source/*.cxx",
+    ]),
+    copts = _COPTS,
+    defines = _SLO_DEFINES,
+    deps = [":sal_headers"],
+    visibility = ["//visibility:public"],
+)
+
+## text encoding library, used by some shared lib objects and also by some static lib objects
+cc_library(
+    name = "textenc",
+    srcs = glob([
+        "textenc/*.c",
+        "textenc/*.cxx",
+        "textenc/*.h",
+        "textenc/*.hxx",
+    ]),
+    textual_hdrs = glob(["textenc/*.tab"]),  # lookup tables #include'd directly by .c/.cxx files
+    copts = _COPTS,
+    defines = _SLO_DEFINES,
+    deps = [":sal_headers", ":sal_pch"],
+    visibility = ["//visibility:public"],
+)
+## a Windows API compatibility shim
+cc_binary(
+    name = "uwinapi",
+    srcs = glob([
+        "systools/win32/uwinapi/*.h",
+        "systools/win32/uwinapi/*.cpp",
+        "systools/win32/uwinapi/*.c",
+    ]),
+    linkshared = True,
+    copts = _COPTS,
+    defines = _DEFINES,
+    linkopts = [
+        "/DEF:main/sal/systools/win32/uwinapi/Uwinapi.def",
+        "kernel32.lib", "user32.lib", "advapi32.lib",
+        "version.lib", "shlwapi.lib",
+    ],
+    visibility = ["//visibility:public"],
+)
+## final shared dll
+cc_binary(
+    name = "sal",
+    srcs = [],   # Bazel automatically links all objects
+    deps = [":rtl", ":textenc", ":osl_all", ":osl_w32", ":uwinapi"],
+    linkshared = True,
+    linkopts = [
+        "/DEF:main/sal/util/sal.map",
+        "advapi32.lib", "wsock32.lib", "mpr.lib",
+        "shell32.lib", "comdlg32.lib", "user32.lib", "ole32.lib",
+    ],
+    visibility = ["//visibility:public"],
+)
