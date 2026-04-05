@@ -99,3 +99,5 @@ main/winaccessibility/source/UAccCOMIDL/dlldata.c
 # Bazel user cache (if inside repo)
 user.bazelrc
 .bazel/
+#AI related
+.claude/settings.local.json
