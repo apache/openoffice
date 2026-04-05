@@ -1,0 +1,11 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+# STLport system-STL compatibility shim.
+# Provides extensionless headers like <hash_set>, <hash_map> etc. that
+# map SGI/STLport extensions to C++11/TR1 equivalents for MSVC.
+cc_library(
+    name = "stlport",
+    hdrs = glob(["systemstl/*", "systemstlguards/*.h"]),
+    includes = ["systemstl"],
+    visibility = ["//visibility:public"],
+)
