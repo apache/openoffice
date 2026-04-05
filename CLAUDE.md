@@ -23,14 +23,27 @@ Source code is NOT being changed — only the build system.
 - Bootstrap/external deps via Bazel registry
     - modules seperated, only partial migration
 - autoconf/configure replaced by Bazel toolchain
+- Custom MSVC toolchain at //build/toolchain (VS2008, x86)
+    - windows_cc_toolchain_config.bzl copied and patched:
+      - default_cpp_std disabled (VS2008 has no /std: flag)
+      - remove_unreferenced_code disabled (VS2008 has no /Zc:inline)
+    - tool_bin_path = VC\bin (not msvc_env_path) sets PATH for actions
+    - BAZEL_DO_NOT_DETECT_CPP_TOOLCHAIN=1 disables auto-detection
+- main/sal/BUILD.bazel with native cc_library targets
+    - sal_headers: exported inc/ headers (strip_include_prefix = "inc")
+    - sal_pch: inc/pch/ headers (strip_include_prefix = "inc/pch")
+    - textenc: BUILT SUCCESSFULLY → textenc.lib
 
 ## Key conventions
-- BUILD.bazel files live at main/<package>/prj/BUILD.bazel
+- BUILD.bazel files live at main/<package>/BUILD.bazel (NOT prj/)
+  - prj/ convention only worked for nmake() wrappers; cc_library needs
+    glob() access to sources which requires the BUILD at module root
 - build.lst drives dep graph: parse it to determine deps = []
-- Wrapping nmake with rules_foreign_cc make() for now (MVP)
+- .tab files in textenc are #include'd data tables → use textual_hdrs
+- All sal targets need deps = [":sal_headers", ":sal_pch"]
 
 ## Current frontier
-- building sal module
+- building sal module: textenc done, rtl next
 
 ## Out of scope
 - Modifying source code

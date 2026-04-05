@@ -1,0 +1,100 @@
+load("@rules_cc//cc/toolchains:cc_toolchain.bzl", "cc_toolchain")
+load(":windows_cc_toolchain_config.bzl", "cc_toolchain_config")
+
+# VS2008 x86 toolchain for Apache OpenOffice on Windows
+# Paths derived from VC\bin\vcvars32.bat + Windows SDK v7.0
+
+_VS = "C:\\Program Files (x86)\\Microsoft Visual Studio 9.0"
+_VC = _VS + "\\VC"
+_SDK = "C:\\Program Files\\Microsoft SDKs\\Windows\\v7.0"
+
+filegroup(name = "empty", srcs = [])
+
+cc_toolchain_config(
+    name = "vs2008_x86_config",
+    cpu = "x64_windows",
+    compiler = "msvc-cl",
+    host_system_name = "local",
+    target_system_name = "local",
+    target_libc = "msvcrt",
+    abi_version = "local",
+    abi_libc_version = "local",
+    toolchain_identifier = "msvc_x86_vs2008",
+    msvc_env_tmp  = "C:\\Users\\legin\\AppData\\Local\\Temp",
+    msvc_env_path = (
+        _SDK + "\\bin;" +
+        _VS  + "\\Common7\\IDE;" +
+        _VC  + "\\BIN;" +
+        _VS  + "\\Common7\\Tools"
+    ),
+    msvc_env_include = (
+        _SDK + "\\include;" +
+        _VC  + "\\ATLMFC\\INCLUDE;" +
+        _VC  + "\\INCLUDE"
+    ),
+    msvc_env_lib = (
+        _SDK + "\\lib;" +
+        _VC  + "\\ATLMFC\\LIB;" +
+        _VC  + "\\LIB"
+    ),
+    tool_bin_path  = _VC + "\\bin",
+    msvc_cl_path   = _VC + "\\bin\\cl.exe",
+    msvc_ml_path   = _VC + "\\bin\\ml.exe",
+    msvc_link_path = _VC + "\\bin\\link.exe",
+    msvc_lib_path  = _VC + "\\bin\\lib.exe",
+    cxx_builtin_include_directories = [
+        _SDK + "\\include",
+        _VC  + "\\ATLMFC\\INCLUDE",
+        _VC  + "\\INCLUDE",
+    ],
+    tool_paths = {
+        "ar":      _VC + "\\bin\\lib.exe",
+        "cpp":     _VC + "\\bin\\cl.exe",
+        "gcc":     _VC + "\\bin\\cl.exe",
+        "gcov":    "wrapper/bin/msvc_nop.bat",
+        "ld":      _VC + "\\bin\\link.exe",
+        "ml":      _VC + "\\bin\\ml.exe",
+        "nm":      "wrapper/bin/msvc_nop.bat",
+        "objcopy": "wrapper/bin/msvc_nop.bat",
+        "objdump": "wrapper/bin/msvc_nop.bat",
+        "strip":   "wrapper/bin/msvc_nop.bat",
+    },
+    archiver_flags         = ["/MACHINE:X86"],
+    default_link_flags     = ["/MACHINE:X86"],
+    dbg_mode_debug_flag      = "/DEBUG",
+    fastbuild_mode_debug_flag = "/DEBUG",
+    supports_parse_showincludes = False,
+    all_compile_flags = [],
+    conly_flags       = [],
+    cxx_flags         = [],
+    link_flags        = [],
+)
+
+cc_toolchain(
+    name = "cc_toolchain_x86_vs2008",
+    toolchain_identifier = "msvc_x86_vs2008",
+    toolchain_config     = ":vs2008_x86_config",
+    all_files      = ":empty",
+    ar_files       = ":empty",
+    as_files       = ":empty",
+    compiler_files = ":empty",
+    dwp_files      = ":empty",
+    linker_files   = ":empty",
+    objcopy_files  = ":empty",
+    strip_files    = ":empty",
+    supports_param_files = 1,
+)
+
+toolchain(
+    name = "cc_toolchain_x86_vs2008_def",
+    exec_compatible_with = [
+        "@platforms//cpu:x86_64",
+        "@platforms//os:windows",
+    ],
+    target_compatible_with = [
+        "@platforms//cpu:x86_64",
+        "@platforms//os:windows",
+    ],
+    toolchain      = ":cc_toolchain_x86_vs2008",
+    toolchain_type = "@bazel_tools//tools/cpp:toolchain_type",
+)
