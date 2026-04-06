@@ -1,0 +1,189 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+# ── Compiler / preprocessor options (mirrors sal conventions) ────
+_COPTS = [
+    "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs",
+    "/EHsc",  # exception handling — ENABLE_EXCEPTIONS=TRUE for cppu
+    "/wd4061", "/wd4063", "/wd4127",
+]
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32", "_MT",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK",
+]
+
+_SLO_DEFINES = _DEFINES + ["SHAREDLIB", "_DLL_"]
+
+# ── Public headers ────────────────────────────────────────────────
+# Exports inc/ so consumers can write #include <typelib/typedescription.h>
+# etc.  inc/pch is added to -I so sources can #include "precompiled_cppu.hxx".
+cc_library(
+    name = "cppu_headers",
+    hdrs = glob(["inc/**/*.h", "inc/**/*.hxx"]),
+    strip_include_prefix = "inc",
+    includes = ["inc/pch"],
+    deps = ["//main/sal:sal_headers"],
+    visibility = ["//visibility:public"],
+)
+
+# ── source/uno ───────────────────────────────────────────────────
+# Private headers (constr.hxx, destr.hxx, …) live in source/uno/;
+# /Imain/cppu/source/uno puts them on the include path.
+cc_library(
+    name = "cppu_uno",
+    srcs = glob([
+        "source/uno/*.cxx",
+        "source/uno/*.c",
+        "source/uno/*.hxx",
+        "source/uno/*.h",
+    ]),
+    copts = _COPTS + ["/Imain/cppu/source/uno"],
+    defines = _SLO_DEFINES,
+    deps = [
+        ":cppu_headers",
+        "//main/sal:sal_headers",
+        "@boost.legacy//:boost.legacy",
+    ],
+)
+
+# ── source/threadpool ────────────────────────────────────────────
+cc_library(
+    name = "cppu_threadpool",
+    srcs = glob([
+        "source/threadpool/*.cxx",
+        "source/threadpool/*.hxx",
+        "source/threadpool/*.h",
+    ]),
+    copts = _COPTS + ["/Imain/cppu/source/threadpool"],
+    defines = _SLO_DEFINES,
+    deps = [
+        ":cppu_headers",
+        "//main/sal:sal_headers",
+        "//main/stlport:stlport",
+    ],
+)
+
+# ── source/typelib ────────────────────────────────────────────────
+cc_library(
+    name = "cppu_typelib",
+    srcs = glob(["source/typelib/*.cxx"]),
+    copts = _COPTS,
+    defines = _SLO_DEFINES,
+    deps = [
+        ":cppu_headers",
+        "//main/sal:sal_headers",
+        "//main/stlport:stlport",
+    ],
+)
+
+# ── source/cppu ───────────────────────────────────────────────────
+cc_library(
+    name = "cppu_cppu",
+    srcs = glob(["source/cppu/*.cxx"]),
+    copts = _COPTS,
+    defines = _SLO_DEFINES,
+    deps = [
+        ":cppu_headers",
+        "//main/sal:sal_headers",
+    ],
+)
+
+# ── cppu3.dll ─────────────────────────────────────────────────────
+# Main UNO runtime library.  The DEF file is hand-derived from cppu.map
+# (only 14 exported C symbols; everything else is local).
+cc_binary(
+    name = "cppu3",
+    srcs = [],
+    deps = [
+        ":cppu_uno",
+        ":cppu_threadpool",
+        ":cppu_typelib",
+        ":cppu_cppu",
+        "//main/sal:sal",
+    ],
+    linkshared = True,
+    linkopts = [
+        "/DEF:main/cppu/util/cppu.def",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── purpenvhelper3MSC.dll ─────────────────────────────────────────
+# Pure-environment helper: implements the Enterable/Mapping interfaces.
+# Depends on cppu3 for typelib symbols.
+cc_binary(
+    name = "purpenvhelper3MSC",
+    srcs = glob([
+        "source/helper/purpenv/*.cxx",
+        "source/helper/purpenv/*.hxx",
+    ]),
+    copts = _COPTS,
+    defines = _SLO_DEFINES,
+    deps = [
+        ":cppu_headers",
+        "//main/sal:sal_headers",
+        ":cppu3",
+        "//main/sal:sal",
+    ],
+    linkshared = True,
+    linkopts = [
+        "/DEF:main/cppu/util/purpenvhelper3MSC.def",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── Bridge DLLs ───────────────────────────────────────────────────
+# Each bridge exports uno_initEnvironment / uno_ext_getMapping via
+# SAL_DLLPUBLIC_EXPORT, so no explicit DEF symbols are needed.
+# empty.def keeps the linker happy without exporting anything extra.
+
+cc_binary(
+    name = "unsafe_uno_uno",
+    srcs = ["source/UnsafeBridge/UnsafeBridge.cxx"],
+    copts = _COPTS,
+    defines = _SLO_DEFINES,
+    deps = [
+        ":cppu_headers",
+        "//main/sal:sal_headers",
+        ":purpenvhelper3MSC",
+        "//main/sal:sal",
+    ],
+    linkshared = True,
+    linkopts = ["/DEF:main/cppu/util/empty.def"],
+    visibility = ["//visibility:public"],
+)
+
+cc_binary(
+    name = "affine_uno_uno",
+    srcs = ["source/AffineBridge/AffineBridge.cxx"],
+    copts = _COPTS,
+    defines = _SLO_DEFINES,
+    deps = [
+        ":cppu_headers",
+        "//main/sal:sal_headers",
+        ":purpenvhelper3MSC",
+        "//main/sal:sal",
+    ],
+    linkshared = True,
+    linkopts = ["/DEF:main/cppu/util/empty.def"],
+    visibility = ["//visibility:public"],
+)
+
+cc_binary(
+    name = "log_uno_uno",
+    srcs = ["source/LogBridge/LogBridge.cxx"],
+    copts = _COPTS,
+    defines = _SLO_DEFINES,
+    deps = [
+        ":cppu_headers",
+        "//main/sal:sal_headers",
+        ":purpenvhelper3MSC",
+        ":cppu3",
+        "//main/sal:sal",
+    ],
+    linkshared = True,
+    linkopts = ["/DEF:main/cppu/util/empty.def"],
+    visibility = ["//visibility:public"],
+)

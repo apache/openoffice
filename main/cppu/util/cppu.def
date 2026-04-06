@@ -1,0 +1,18 @@
+; Windows export file for cppu3.dll
+; Derived from cppu.map (UDK_3_0_0 global: section)
+LIBRARY cppu3
+EXPORTS
+    typelib_static_mi_interface_type_init
+    typelib_static_struct_type_init
+    typelib_typedescription_newExtendedInterfaceAttribute
+    typelib_typedescription_newMIInterface
+    typelib_typedescription_newStruct
+    cppu_Any_extraction_failure_msg
+    uno_EnvDcp_getTypeName
+    uno_EnvDcp_getPurpose
+    uno_getCurrentEnvironment
+    uno_Environment_invoke_v
+    uno_Environment_invoke
+    uno_Environment_enter
+    uno_Environment_isValid
+    cppu_unsatisfied_iset_msg
