@@ -1,3 +1,5 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
 # ── Common substitutions for all platforms ──────────────────
 RAPTOR_CONFIG_COMMON_SUBSTITUTIONS = {
     "#undef AC_APPLE_UNIVERSAL_BUILD":          "/* #undef AC_APPLE_UNIVERSAL_BUILD */",
