@@ -36,7 +36,7 @@ cc_library(
         ]),
     copts = _COPTS + ["/Imain/sal/osl/inc"],
     defines = _SLO_DEFINES,
-    deps = [":sal_headers", "//main/stlport:stlport", "@boost.legacy//:boost_headers"],
+    deps = [":sal_headers", "//main/stlport:stlport", "@boost.legacy//:boost.legacy"],
     visibility = ["//visibility:public"],
 )
 ## systools for Windows, used by some shared lib objects and also by some static lib objects
