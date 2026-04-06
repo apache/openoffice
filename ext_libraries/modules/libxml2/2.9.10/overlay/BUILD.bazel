@@ -1,0 +1,121 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+# ── config.h ──────────────────────────────────────────────────────
+# libxml2 sources use #include "config.h" (quote-style, root-relative).
+# On Windows the tarball ships win32/config.h; copy it to the package
+# root so that the sources can find it through includes = ["."].
+genrule(
+    name = "config_h",
+    srcs = ["win32/config.h"],
+    outs = ["config.h"],
+    cmd     = "cp $< $@",
+    cmd_bat = "copy $< $@",
+)
+
+# ── Source files ──────────────────────────────────────────────────
+# All C files that form the libxml2 library.
+# Excluded:
+#   xzlib.c       — requires liblzma (built with --without-lzma)
+#   trio*.c       — optional printf replacement (WITH_TRIO=0)
+#   DOCBparser.c  — DocBook SGML parser, deprecated; remove if linker
+#                   complains about undefined symbols with newer toolchains
+#   xmllint.c / xmlcatalog.c — command-line tools, not the library
+#   test*.c / run*.c         — test harnesses
+LIBXML2_SRCS = [
+    "buf.c",
+    "c14n.c",
+    "catalog.c",
+    "chvalid.c",
+    "debugXML.c",
+    "dict.c",
+    "DOCBparser.c",
+    "encoding.c",
+    "entities.c",
+    "error.c",
+    "globals.c",
+    "hash.c",
+    "HTMLparser.c",
+    "HTMLtree.c",
+    "legacy.c",
+    "list.c",
+    "nanoftp.c",
+    "nanohttp.c",
+    "parser.c",
+    "parserInternals.c",
+    "pattern.c",
+    "relaxng.c",
+    "SAX.c",
+    "SAX2.c",
+    "schematron.c",
+    "threads.c",
+    "tree.c",
+    "uri.c",
+    "valid.c",
+    "xinclude.c",
+    "xlink.c",
+    "xmlIO.c",
+    "xmlmemory.c",
+    "xmlreader.c",
+    "xmlregexp.c",
+    "xmlsave.c",
+    "xmlschemas.c",
+    "xmlschemastypes.c",
+    "xmlstring.c",
+    "xmlunicode.c",
+    "xmlwriter.c",
+    "xpath.c",
+    "xpointer.c",
+]
+
+# ── Compiler options ──────────────────────────────────────────────
+LIBXML2_WINDOWS_COPTS = [
+    "/W3",
+    "/wd4996",   # deprecated POSIX names (_stricmp etc.)
+    "/wd4244",   # possible loss of data
+    "/wd4267",   # size_t → int
+    "/wd4018",   # signed/unsigned mismatch
+    "/wd4101",   # unreferenced local variable (in generated parsers)
+]
+
+LIBXML2_UNIX_COPTS = [
+    "-w",
+    "-fPIC",
+]
+
+# ── Preprocessor defines ──────────────────────────────────────────
+# win32/config.h already defines most HAVE_* macros.
+# LIBXML_STATIC suppresses dllimport/dllexport annotations when
+# building as a static library (which Bazel cc_library does by default).
+LIBXML2_WINDOWS_DEFINES = [
+    "WIN32",
+    "_WINDOWS",
+    "_CRT_SECURE_NO_WARNINGS",
+    "LIBXML_STATIC",
+    "NOLIBTOOL",
+]
+
+LIBXML2_UNIX_DEFINES = []
+
+# ── Main library target ───────────────────────────────────────────
+cc_library(
+    name = "libxml2",
+    srcs = LIBXML2_SRCS,
+    hdrs = glob(["include/libxml/*.h"]) + [":config_h"],
+    # "."        → sources find config.h as #include "config.h"
+    # "include"  → consumers use #include <libxml/parser.h>
+    includes = [".", "include"],
+    defines = select({
+        "@platforms//os:windows": LIBXML2_WINDOWS_DEFINES,
+        "//conditions:default":   LIBXML2_UNIX_DEFINES,
+    }),
+    copts = select({
+        "@platforms//os:windows": LIBXML2_WINDOWS_COPTS,
+        "//conditions:default":   LIBXML2_UNIX_COPTS,
+    }),
+    linkopts = select({
+        "@platforms//os:windows": ["ws2_32.lib"],
+        "@platforms//os:linux":   ["-lpthread", "-lm"],
+        "@platforms//os:macos":   ["-lpthread", "-lm"],
+    }),
+    visibility = ["//visibility:public"],
+)
