@@ -39,7 +39,7 @@ cc_library(
         "source/uno/*.hxx",
         "source/uno/*.h",
     ]),
-    copts = _COPTS + ["/Imain/cppu/source/uno"],
+    copts = _COPTS,
     defines = _SLO_DEFINES,
     deps = [
         ":cppu_headers",
@@ -56,7 +56,7 @@ cc_library(
         "source/threadpool/*.hxx",
         "source/threadpool/*.h",
     ]),
-    copts = _COPTS + ["/Imain/cppu/source/threadpool"],
+    copts = _COPTS,
     defines = _SLO_DEFINES,
     deps = [
         ":cppu_headers",
