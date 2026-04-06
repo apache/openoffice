@@ -42,12 +42,15 @@ cc_library(
 ## systools for Windows, used by some shared lib objects and also by some static lib objects
 cc_library(
     name = "osl_w32",
-    srcs = glob([
-        "osl/w32/*.c",
-        "osl/w32/*.cxx",
-        "osl/w32/*.h",
-        "osl/w32/*.hxx",
-        ]),
+    srcs = glob(
+        [
+            "osl/w32/*.c",
+            "osl/w32/*.cxx",
+            "osl/w32/*.h",
+            "osl/w32/*.hxx",
+        ],
+        exclude = ["osl/w32/dllentry.c"],  # compiled directly into sal DLL — see below
+    ),
     copts = _COPTS + ["/Imain/sal/osl/inc"],
     defines = _SLO_DEFINES,
     deps = [":sal_headers"],
@@ -67,7 +70,9 @@ cc_library(
             "rtl/source/strtmpl.c",         # not in makefile SLOFILES
         ],
     ),
-    copts = _COPTS,
+    copts = _COPTS + [
+        "/Dsnprintf=_snprintf",  # VS2008 has no snprintf; map to _snprintf
+    ],
     defines = _SLO_DEFINES,
     deps = [":sal_headers", "//main/stlport:stlport"],
     visibility = ["//visibility:public"],
@@ -131,7 +136,13 @@ cc_binary(
 ## final shared dll
 cc_binary(
     name = "sal",
-    srcs = [],   # Bazel automatically links all objects
+    # dllentry.c is compiled directly here (not via osl_w32 lib) so that its
+    # DllMain lands as an explicit .obj in the link command.  Explicit objects
+    # take precedence over /DEFAULTLIB objects, preventing the LNK2005 conflict
+    # with msvcrt.lib(dllmain.obj).
+    srcs = ["osl/w32/dllentry.c"],
+    copts = _COPTS + ["/Imain/sal/osl/inc"],
+    defines = _SLO_DEFINES,
     deps = [":rtl", ":textenc", ":osl_all", ":osl_w32", ":uwinapi"],
     linkshared = True,
     linkopts = [
