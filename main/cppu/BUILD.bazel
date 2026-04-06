@@ -37,7 +37,6 @@ cc_library(
         "source/uno/*.cxx",
         "source/uno/*.c",
         "source/uno/*.hxx",
-        "source/uno/*.h",
     ]),
     copts = _COPTS,
     defines = _SLO_DEFINES,
@@ -54,7 +53,6 @@ cc_library(
     srcs = glob([
         "source/threadpool/*.cxx",
         "source/threadpool/*.hxx",
-        "source/threadpool/*.h",
     ]),
     copts = _COPTS,
     defines = _SLO_DEFINES,
