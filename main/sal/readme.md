@@ -20,3 +20,10 @@ For now: removing /Gz is correct and pragmatic. It makes the compiler default ma
 As technical debt: when source code changes become in scope, tres.c (and likely other .c files in sal) should be audited for missing SAL_CALL on function definitions. It's a mechanical fix — grep for exported functions in headers, verify definitions match.
 
 Not blocking the build migration. Move forward.
+## uwinapi
+### old Windows9x Code:
+"systools/win32/uwinapi/SHILCreateFromPathW.cpp",
+"systools/win32/uwinapi/MCIWndCreateW.cpp",
+not used anymore
+"systools/win32/uwinapi/sntprintf.c",
+seems outdated too.

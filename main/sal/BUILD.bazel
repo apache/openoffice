@@ -48,7 +48,7 @@ cc_library(
         "osl/w32/*.h",
         "osl/w32/*.hxx",
         ]),
-    copts = _COPTS,
+    copts = _COPTS + ["/Imain/sal/osl/inc"],
     defines = _SLO_DEFINES,
     deps = [":sal_headers"],
     visibility = ["//visibility:public"],
@@ -88,17 +88,39 @@ cc_library(
     deps = [":sal_headers"],
     visibility = ["//visibility:public"],
 )
+## function-body fragments #include'd by other .cpp files — not standalone TUs
+cc_library(
+    name = "uwinapi_fragments",
+    textual_hdrs = [
+        "systools/win32/uwinapi/GetLongPathName.cpp",
+        "systools/win32/uwinapi/GetUserDomain_NT.cpp",
+        "systools/win32/uwinapi/GetUserDomain_WINDOWS.cpp",
+    ],
+)
 ## a Windows API compatibility shim
 cc_binary(
     name = "uwinapi",
-    srcs = glob([
-        "systools/win32/uwinapi/*.h",
-        "systools/win32/uwinapi/*.cpp",
-        "systools/win32/uwinapi/*.c",
-    ]),
+    srcs = glob(
+        [
+            "systools/win32/uwinapi/*.h",
+            "systools/win32/uwinapi/*.cpp",
+            "systools/win32/uwinapi/*.c",
+        ],
+        exclude = [
+            # function-body fragments — #include'd by other .cpp files
+            "systools/win32/uwinapi/GetLongPathName.cpp",
+            "systools/win32/uwinapi/GetUserDomain_NT.cpp",
+            "systools/win32/uwinapi/GetUserDomain_WINDOWS.cpp",
+            # not in original makefile SLOFILES — incomplete/broken TUs 
+            "systools/win32/uwinapi/SHILCreateFromPathW.cpp",
+            "systools/win32/uwinapi/MCIWndCreateW.cpp",
+            "systools/win32/uwinapi/sntprintf.c",
+        ],
+    ),
     linkshared = True,
     copts = _COPTS,
     defines = _DEFINES,
+    deps = [":sal_headers", ":uwinapi_fragments"],
     linkopts = [
         "/DEF:main/sal/systools/win32/uwinapi/Uwinapi.def",
         "kernel32.lib", "user32.lib", "advapi32.lib",
