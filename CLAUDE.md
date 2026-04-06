@@ -29,10 +29,13 @@ Source code is NOT being changed — only the build system.
       - remove_unreferenced_code disabled (VS2008 has no /Zc:inline)
     - tool_bin_path = VC\bin (not msvc_env_path) sets PATH for actions
     - BAZEL_DO_NOT_DETECT_CPP_TOOLCHAIN=1 disables auto-detection
-- main/sal/BUILD.bazel with native cc_library targets
+- main/sal/BUILD.bazel with native cc_library targets -> done
     - sal_headers: exported inc/ headers (strip_include_prefix = "inc")
     - sal_pch: inc/pch/ headers (strip_include_prefix = "inc/pch")
     - textenc: BUILT SUCCESSFULLY → textenc.lib
+    - rtl: BUILT SUCCESSFULLY
+    - osl: BUILT SUCCESSFULLY
+    - uwinapi: BUILT SUCCESSFULLY
 
 ## Key conventions
 - BUILD.bazel files live at main/<package>/BUILD.bazel (NOT prj/)
@@ -43,7 +46,8 @@ Source code is NOT being changed — only the build system.
 - All sal targets need deps = [":sal_headers", ":sal_pch"]
 
 ## Current frontier
-- building sal module: textenc done, rtl next
+- cppu
+
 
 ## Out of scope
 - Modifying source code
