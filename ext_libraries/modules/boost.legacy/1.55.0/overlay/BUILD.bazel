@@ -1,0 +1,10 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+package(default_visibility = ["//visibility:public"])
+
+# Boost is header-only for the parts used in AOO (bind, unordered, etc.)
+cc_library(
+    name = "boost.legacy",
+    hdrs = glob(["boost/**/*.hpp"]),
+    includes = ["."],
+)

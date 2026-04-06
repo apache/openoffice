@@ -3,8 +3,9 @@ load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 
 # Global defines for all cc_library rules in sal (Windows MSVC)
 _COPTS = [
-    "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs", "/Gz",
-    "/wd4061", "/wd4063", "/wd4127"  # ... rest of warning suppressions
+    "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs",
+    # /Gz omitted: SAL_CALL is __cdecl, so default must be __cdecl too
+    "/wd4061", "/wd4063", "/wd4127",  # ... rest of warning suppressions
 ]
 
 _DEFINES = [
@@ -23,13 +24,7 @@ cc_library(
     name = "sal_headers",
     hdrs = glob(["inc/**/*.h", "inc/**/*.hxx"]),
     strip_include_prefix = "inc",   # makes #include <sal/types.h> work
-    visibility = ["//visibility:public"],
-)
-
-cc_library(
-    name = "sal_pch",
-    hdrs = glob(["inc/pch/*.hxx"]),
-    strip_include_prefix = "inc/pch",  # makes #include "precompiled_sal.hxx" work
+    includes = ["inc/pch"],         # makes #include "precompiled_sal.hxx" work
     visibility = ["//visibility:public"],
 )
 ## osl_all - all os-specific code, for both shared and static lib objects
@@ -39,9 +34,9 @@ cc_library(
         "osl/all/*.c",
         "osl/all/*.cxx",
         ]),
-    copts = _COPTS,
+    copts = _COPTS + ["/Imain/sal/osl/inc"],
     defines = _SLO_DEFINES,
-    deps = [":sal_headers"],
+    deps = [":sal_headers", "//main/stlport:stlport", "@boost.legacy//:boost_headers"],
     visibility = ["//visibility:public"],
 )
 ## systools for Windows, used by some shared lib objects and also by some static lib objects
@@ -61,13 +56,20 @@ cc_library(
 ## rtl - runtime library, for both shared and static lib objects
 cc_library(
     name = "rtl",
-    srcs = glob([
-        "rtl/source/*.c",
-        "rtl/source/*.cxx",
-    ]),
+    srcs = glob(
+        [
+            "rtl/source/*.c",
+            "rtl/source/*.cxx",
+        ],
+        exclude = [
+            "rtl/source/gen_makefile.cxx",  # standalone tool, not part of library
+            "rtl/source/alloc_fini.cxx",    # macOS only
+            "rtl/source/strtmpl.c",         # not in makefile SLOFILES
+        ],
+    ),
     copts = _COPTS,
     defines = _SLO_DEFINES,
-    deps = [":sal_headers"],
+    deps = [":sal_headers", "//main/stlport:stlport"],
     visibility = ["//visibility:public"],
 )
 
@@ -83,7 +85,7 @@ cc_library(
     textual_hdrs = glob(["textenc/*.tab"]),  # lookup tables #include'd directly by .c/.cxx files
     copts = _COPTS,
     defines = _SLO_DEFINES,
-    deps = [":sal_headers", ":sal_pch"],
+    deps = [":sal_headers"],
     visibility = ["//visibility:public"],
 )
 ## a Windows API compatibility shim
