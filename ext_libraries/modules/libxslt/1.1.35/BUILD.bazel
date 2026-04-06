@@ -1,2 +1,151 @@
-# Top-level BUILD.bazel for the libxslt registry entry.
-# The actual build rules live inside the source archive via patches or overlays.
+load("@rules_cc//cc:defs.bzl", "cc_library")
+load("@bazel_skylib//rules:expand_template.bzl", "expand_template")
+
+# ── xsltconfig.h substitutions ───────────────────────────────────
+# These values match a Windows/MSVC build of libxslt 1.1.35 without
+# optional features (no debug, no crypto, no dynamic modules).
+# XSLT_LOCALE_WINAPI is enabled so locale-aware XPath functions use
+# the Win32 locale API instead of POSIX xlocale.
+XSLT_CONFIG_SUBSTITUTIONS = {
+    "@LIBXSLT_DOTTED_VERSION@":  "1.1.35",
+    "@LIBXSLT_VERSION@":         "10135",
+    "@LIBXSLT_VERSION_STRING@":  "1.1.35",
+    "@LIBXSLT_VERSION_EXTRA@":   "",
+    "@WITH_XSLT_DEBUG@":         "0",
+    "@DEBUG_MEMORY@":            "0",
+    "@DEBUG_MEMORY_LOCATION@":   "0",
+    "@WITH_MEM_DEBUG@":          "0",
+    "@WITH_TRIO@":               "0",
+    "@WITH_DEBUGGER@":           "0",
+    "@WITH_MODULES@":            "0",
+    "@XSLT_LOCALE_XLOCALE@":    "0",
+    "@XSLT_LOCALE_WINAPI@":     "1",
+}
+
+expand_template(
+    name = "xsltconfig_h",
+    template = "libxslt/xsltconfig.h.in",
+    out = "libxslt/xsltconfig.h",
+    substitutions = XSLT_CONFIG_SUBSTITUTIONS,
+)
+
+# ── exsltconfig.h substitutions ──────────────────────────────────
+# EXSLT ships at version 0.8.17 in this release.
+# WITH_CRYPTO disabled: avoids libgcrypt dependency on Windows.
+EXSLT_CONFIG_SUBSTITUTIONS = {
+    "@LIBEXSLT_DOTTED_VERSION@": "0.8.17",
+    "@LIBEXSLT_VERSION@":        "817",
+    "@LIBEXSLT_VERSION_STRING@": "0.8.17",
+    "@LIBEXSLT_VERSION_EXTRA@":  "",
+    "@WITH_CRYPTO@":             "0",
+}
+
+expand_template(
+    name = "exsltconfig_h",
+    template = "libexslt/exsltconfig.h.in",
+    out = "libexslt/exsltconfig.h",
+    substitutions = EXSLT_CONFIG_SUBSTITUTIONS,
+)
+
+# ── libxslt sources ───────────────────────────────────────────────
+LIBXSLT_SRCS = [
+    "libxslt/attrvt.c",
+    "libxslt/documents.c",
+    "libxslt/extensions.c",
+    "libxslt/extra.c",
+    "libxslt/functions.c",
+    "libxslt/imports.c",
+    "libxslt/keys.c",
+    "libxslt/namespaces.c",
+    "libxslt/numbers.c",
+    "libxslt/pattern.c",
+    "libxslt/preproc.c",
+    "libxslt/security.c",
+    "libxslt/templates.c",
+    "libxslt/transform.c",
+    "libxslt/variables.c",
+    "libxslt/xslt.c",
+    "libxslt/xsltlocale.c",
+    "libxslt/xsltutils.c",
+]
+
+# ── libexslt sources ──────────────────────────────────────────────
+# crypto.c is excluded: it requires libgcrypt which we don't carry.
+LIBEXSLT_SRCS = [
+    "libexslt/common.c",
+    "libexslt/date.c",
+    "libexslt/dynamic.c",
+    "libexslt/exslt.c",
+    "libexslt/functions.c",
+    "libexslt/math.c",
+    "libexslt/saxon.c",
+    "libexslt/sets.c",
+    "libexslt/strings.c",
+]
+
+# ── Windows compiler options ──────────────────────────────────────
+LIBXSLT_WINDOWS_COPTS = [
+    "/W3",
+    "/wd4996",   # deprecated POSIX names
+    "/wd4244",   # possible loss of data (int conversions)
+    "/wd4267",   # size_t -> int
+    "/wd4018",   # signed/unsigned mismatch
+]
+
+LIBXSLT_UNIX_COPTS = [
+    "-w",
+    "-fPIC",
+]
+
+# ── Windows defines ───────────────────────────────────────────────
+LIBXSLT_WINDOWS_DEFINES = [
+    "WIN32",
+    "_WINDOWS",
+    "_CRT_SECURE_NO_WARNINGS",
+    "LIBXSLT_STATIC",
+    "LIBEXSLT_STATIC",
+    "NOLIBTOOL",
+]
+
+LIBXSLT_UNIX_DEFINES = []
+
+# ── libxslt library ───────────────────────────────────────────────
+cc_library(
+    name = "libxslt",
+    srcs = LIBXSLT_SRCS,
+    hdrs = glob(["libxslt/*.h"], exclude = ["libxslt/xsltconfig.h.in"]) +
+           [":xsltconfig_h"],
+    includes = ["."],   # so #include <libxslt/foo.h> resolves
+    defines = select({
+        "@platforms//os:windows": LIBXSLT_WINDOWS_DEFINES,
+        "//conditions:default":   LIBXSLT_UNIX_DEFINES,
+    }),
+    copts = select({
+        "@platforms//os:windows": LIBXSLT_WINDOWS_COPTS,
+        "//conditions:default":   LIBXSLT_UNIX_COPTS,
+    }),
+    deps = ["@libxml2//:libxml2"],
+    visibility = ["//visibility:public"],
+)
+
+# ── libexslt library ──────────────────────────────────────────────
+cc_library(
+    name = "libexslt",
+    srcs = LIBEXSLT_SRCS,
+    hdrs = glob(["libexslt/*.h"], exclude = ["libexslt/exsltconfig.h.in"]) +
+           [":exsltconfig_h"],
+    includes = ["."],
+    defines = select({
+        "@platforms//os:windows": LIBXSLT_WINDOWS_DEFINES,
+        "//conditions:default":   LIBXSLT_UNIX_DEFINES,
+    }),
+    copts = select({
+        "@platforms//os:windows": LIBXSLT_WINDOWS_COPTS,
+        "//conditions:default":   LIBXSLT_UNIX_COPTS,
+    }),
+    deps = [
+        ":libxslt",
+        "@libxml2//:libxml2",
+    ],
+    visibility = ["//visibility:public"],
+)
