@@ -1,0 +1,76 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_COPTS = [
+    "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs",
+    "/EHsc",
+    "/Dsnprintf=_snprintf",
+    "/wd4061", "/wd4063", "/wd4127",
+]
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32", "_MT",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK",
+]
+
+_SLO_DEFINES = _DEFINES + ["SHAREDLIB", "_DLL_", "STORE_DLLIMPLEMENTATION"]
+
+# ── Public headers ────────────────────────────────────────────────
+cc_library(
+    name = "store_headers",
+    hdrs = glob(["inc/**/*.h", "inc/**/*.hxx"]),
+    strip_include_prefix = "inc",
+    includes = ["inc/pch"],
+    deps = ["//main/sal:sal_headers"],
+    visibility = ["//visibility:public"],
+)
+
+# ── store.dll ─────────────────────────────────────────────────────
+cc_binary(
+    name = "store",
+    srcs = [
+        "source/lockbyte.cxx",
+        "source/lockbyte.hxx",
+        "source/object.cxx",
+        "source/object.hxx",
+        "source/storbase.cxx",
+        "source/storbase.hxx",
+        "source/storbios.cxx",
+        "source/storbios.hxx",
+        "source/storcach.cxx",
+        "source/storcach.hxx",
+        "source/stordata.cxx",
+        "source/stordata.hxx",
+        "source/stordir.cxx",
+        "source/stordir.hxx",
+        "source/store.cxx",
+        "source/storlckb.cxx",
+        "source/storlckb.hxx",
+        "source/storpage.cxx",
+        "source/storpage.hxx",
+        "source/stortree.cxx",
+        "source/stortree.hxx",
+    ],
+    copts = _COPTS,
+    defines = _SLO_DEFINES,
+    deps = [
+        ":store_headers",
+        "//main/sal:sal_headers",
+    ],
+    additional_linker_inputs = ["//main/sal:sal_implib"],
+    linkshared = True,
+    win_def_file = "util/store.def",
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# Expose store's import library so downstream DLLs (registry etc.) can link it.
+filegroup(
+    name = "store_implib",
+    srcs = [":store"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)

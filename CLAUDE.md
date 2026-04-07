@@ -53,7 +53,7 @@ ucpp  ✅ already done
 sal   ✅ already done
         │
 salhelper  ✅ already done
-store     11 .cxx, deps: sal only     ← easy
+store  ✅ already done
         │
 registry   6 .cxx, deps: salhelper + store  ← easy
         │
