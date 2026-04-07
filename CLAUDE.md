@@ -46,8 +46,50 @@ Source code is NOT being changed — only the build system.
 - All sal targets need deps = [":sal_headers", ":sal_pch"]
 
 ## Current frontier
-- cppu
+### migragion of the idl pipeline
+win_flex + win_bison  ← new ext dep (generate parser.cxx, scanner.cxx)
+        │
+ucpp  ✅ already done
+sal   ✅ already done
+        │
+salhelper  3 .cxx, deps: sal only     ← easy
+store     11 .cxx, deps: sal only     ← easy
+        │
+registry   6 .cxx, deps: salhelper + store  ← easy
+        │
+idlc      23 .cxx + flex/bison + ucpp + registry  ← medium
+regmerge   1 .cxx, deps: registry              ← trivial
+        │
+codemaker  27 .cxx, deps: registry   ← medium
+        │
+cppumaker   8 .cxx, deps: codemaker  ← easy
+        │
+genrule: .idl → .urd → .rdb → .hdl/.hpp
 
+### Current frontier: salhelper link step
+What works:
+
+All 3 .cxx files compile cleanly
+sal_implib filegroup correctly exposes sal.if.lib to salhelper's linker (it now appears in the params file)
+Blocker discovered:
+sal.if.lib is only 1484 bytes — a Bazel-generated empty stub, not a real import library. The cause: sal.map is a GNU ld version script format, not a Windows DEF file. MSVC link.exe ignores it and uses __declspec(dllexport) for the actual exports — but that means MSVC only builds a real import library when a proper /DEF: file is supplied in Windows format.
+
+What needs to happen:
+main/sal/ needs a proper Windows DEF file (listing all exported C symbols like osl_acquireMutex, rtl_uString_acquire, etc.) so that link.exe generates a usable sal.if.lib. The sal.map already has the full symbol list — it just needs to be converted from GNU map format to MSVC DEF format.
+
+Pattern already established in cppu: util/cppu.def is a proper Windows DEF file. The same approach is needed for sal.
+
+Then salhelper (and all future DLLs linking against sal) will just work.
+#### update:
+Created main/sal/util/sal.def — a proper Windows DEF file with 545 exports converted from the GNU ld version script sal.map (minus GetVersionInfo which requires a generated _version.h not yet available in the Bazel build).
+
+Switched to win_def_file = "util/sal.def" in main/sal/BUILD.bazel — using the win_def_file attribute instead of linkopts so Bazel uses our DEF file instead of generating an empty one that was overriding the linkopts-specified DEF.
+
+Moved /Dsnprintf=_snprintf to _COPTS — it was only on rtl before, but osl_w32 and osl_all also need it since VS2008 lacks snprintf.
+
+sal.if.lib went from 1484 bytes (empty stub) to 131 KB (real import library with all 545 exports), unblocking all downstream DLLs.
+
+Confirms what we already found: GetVersionInfo is a build-system artifact injected by tg_def.mk into every DLL's DEF file. The filter scripts (fix_def_file.cmd, fix_dxp_file.cmd, fix_exp_file.cmd) also strip _GetVersionInfo when processing export lists. Removing it from sal.def was the right call.
 
 ## Out of scope
 - Modifying source code

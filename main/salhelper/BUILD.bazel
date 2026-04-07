@@ -1,0 +1,48 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_COPTS = [
+    "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs",
+    "/EHsc",
+    "/wd4061", "/wd4063", "/wd4127",
+]
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32", "_MT",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK",
+]
+
+_SLO_DEFINES = _DEFINES + ["SHAREDLIB", "_DLL_", "SALHELPER_DLLIMPLEMENTATION"]
+
+# ── Public headers ────────────────────────────────────────────────
+cc_library(
+    name = "salhelper_headers",
+    hdrs = glob(["inc/**/*.hxx", "inc/**/*.h"]),
+    strip_include_prefix = "inc",
+    deps = ["//main/sal:sal_headers"],
+    visibility = ["//visibility:public"],
+)
+
+# ── salhelper3MSC.dll ─────────────────────────────────────────────
+cc_binary(
+    name = "salhelper3MSC",
+    srcs = [
+        "source/condition.cxx",
+        "source/dynload.cxx",
+        "source/simplereferenceobject.cxx",
+    ],
+    copts = _COPTS,
+    defines = _SLO_DEFINES,
+    deps = [
+        ":salhelper_headers",
+        "//main/sal:sal_headers",
+    ],
+    additional_linker_inputs = ["//main/sal:sal_implib"],
+    linkshared = True,
+    linkopts = [
+        "/DEF:main/salhelper/source/msci.map",
+        "$(execpath //main/sal:sal_implib)",
+    ],
+    visibility = ["//visibility:public"],
+)

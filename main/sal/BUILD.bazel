@@ -6,6 +6,7 @@ _COPTS = [
     "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs",
     # /Gz omitted: SAL_CALL is __cdecl, so default must be __cdecl too
     "/wd4061", "/wd4063", "/wd4127",  # ... rest of warning suppressions
+    "/Dsnprintf=_snprintf",  # VS2008 has no snprintf; map to _snprintf
 ]
 
 _DEFINES = [
@@ -70,9 +71,7 @@ cc_library(
             "rtl/source/strtmpl.c",         # not in makefile SLOFILES
         ],
     ),
-    copts = _COPTS + [
-        "/Dsnprintf=_snprintf",  # VS2008 has no snprintf; map to _snprintf
-    ],
+    copts = _COPTS,
     defines = _SLO_DEFINES,
     deps = [":sal_headers", "//main/stlport:stlport"],
     visibility = ["//visibility:public"],
@@ -145,10 +144,20 @@ cc_binary(
     defines = _SLO_DEFINES,
     deps = [":rtl", ":textenc", ":osl_all", ":osl_w32", ":uwinapi"],
     linkshared = True,
+    win_def_file = "util/sal.def",
     linkopts = [
-        "/DEF:main/sal/util/sal.map",
         "advapi32.lib", "wsock32.lib", "mpr.lib",
         "shell32.lib", "comdlg32.lib", "user32.lib", "ole32.lib",
     ],
+    visibility = ["//visibility:public"],
+)
+
+# Expose sal's import library (.if.lib) so DLLs that link against sal can
+# reference it via additional_linker_inputs + $(rootpath ...).
+# cc_binary does not propagate CcInfo, so this filegroup is the bridge.
+filegroup(
+    name = "sal_implib",
+    srcs = [":sal"],
+    output_group = "interface_library",
     visibility = ["//visibility:public"],
 )
