@@ -1,0 +1,105 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_COPTS = [
+    "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs",
+    "/EHsc",
+    "/Dsnprintf=_snprintf",
+    "/wd4061", "/wd4063", "/wd4127",
+    # generated flex scanner includes <unistd.h> unless suppressed
+    "/DYY_NO_UNISTD_H",
+    # PCH header lives in inc/pch/
+    "/Imain/idlc/inc/pch",
+    # parser.hxx and attributeexceptions.hxx live in source/
+    "/Imain/idlc/source",
+]
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32", "_MT",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK",
+]
+
+# ── Public headers ────────────────────────────────────────────────
+cc_library(
+    name = "idlc_headers",
+    hdrs = glob(["inc/**/*.hxx"]),
+    strip_include_prefix = "inc",
+    includes = ["inc/pch"],
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/registry:registry_headers",
+        "//main/stlport:stlport",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# cc_library is needed here because cc_binary lacks textual_hdrs.
+# wrap_parser.cxx / wrap_scanner.cxx each do a single #include of the
+# bison/flex output, so those outputs must be textual_hdrs, not srcs.
+cc_library(
+    name = "idlc_parser_scanner",
+    srcs = [
+        "source/wrap_parser.cxx",
+        "source/wrap_scanner.cxx",
+    ],
+    textual_hdrs = [
+        "source/attributeexceptions.hxx",
+        "source/parser.cxx",
+        "source/parser.hxx",
+        "source/scanner.cxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    deps = [
+        ":idlc_headers",
+        "//main/salhelper:salhelper_headers",
+        "//main/store:store_headers",
+    ],
+)
+
+cc_binary(
+    name = "idlc",
+    srcs = [
+        "source/astarray.cxx",
+        "source/astconstant.cxx",
+        "source/astdeclaration.cxx",
+        "source/astdump.cxx",
+        "source/astenum.cxx",
+        "source/astexpression.cxx",
+        "source/astinterface.cxx",
+        "source/astoperation.cxx",
+        "source/astscope.cxx",
+        "source/astservice.cxx",
+        "source/aststack.cxx",
+        "source/aststruct.cxx",
+        "source/aststructinstance.cxx",
+        "source/astunion.cxx",
+        "source/errorhandler.cxx",
+        "source/fehelper.cxx",
+        "source/idlc.cxx",
+        "source/idlccompile.cxx",
+        "source/idlcmain.cxx",
+        "source/idlcproduce.cxx",
+        "source/options.cxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    deps = [
+        ":idlc_headers",
+        ":idlc_parser_scanner",
+        "//main/salhelper:salhelper_headers",
+        "//main/store:store_headers",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/salhelper:salhelper_implib",
+        "//main/registry:reg_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/salhelper:salhelper_implib)",
+        "$(execpath //main/registry:reg_implib)",
+    ],
+    visibility = ["//visibility:public"],
+)

@@ -55,9 +55,9 @@ sal   ✅ already done
 salhelper  ✅ already done
 store  ✅ already done
         │
-registry   6 .cxx, deps: salhelper + store  ← easy
+registry  ✅ already done
         │
-idlc      23 .cxx + flex/bison + ucpp + registry  ← medium
+idlc  ✅ already done
 regmerge   1 .cxx, deps: registry              ← trivial
         │
 codemaker  27 .cxx, deps: registry   ← medium
@@ -90,6 +90,11 @@ Moved /Dsnprintf=_snprintf to _COPTS — it was only on rtl before, but osl_w32 
 sal.if.lib went from 1484 bytes (empty stub) to 131 KB (real import library with all 545 exports), unblocking all downstream DLLs.
 
 Confirms what we already found: GetVersionInfo is a build-system artifact injected by tg_def.mk into every DLL's DEF file. The filter scripts (fix_def_file.cmd, fix_dxp_file.cmd, fix_exp_file.cmd) also strip _GetVersionInfo when processing export lists. Removing it from sal.def was the right call.
-
+#### registry changes
+Fixed salhelper: converted GNU ld msci.map → proper Windows salhelper.def, switched to win_def_file, added salhelper_implib filegroup
+Created sal/udkversion.h — static file from the udkversion.mk constants (3.2.7)
+Created store_headers/store_implib were already working from the previous step
+Created main/registry/util/reg.def — 73 exports from both UDK_3_0_0 and UDK_3.1 sections
+Created main/registry/BUILD.bazel with stlport dep (needed for <hash_map>)
 ## Out of scope
 - Modifying source code

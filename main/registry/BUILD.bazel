@@ -1,0 +1,74 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_COPTS = [
+    "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs",
+    "/EHsc",
+    "/Dsnprintf=_snprintf",
+    "/wd4061", "/wd4063", "/wd4127",
+]
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32", "_MT",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK",
+]
+
+_SLO_DEFINES = _DEFINES + ["SHAREDLIB", "_DLL_", "REGISTRY_DLLIMPLEMENTATION"]
+
+# ── Public headers ────────────────────────────────────────────────
+cc_library(
+    name = "registry_headers",
+    hdrs = glob(["inc/**/*.h", "inc/**/*.hxx"]),
+    strip_include_prefix = "inc",
+    includes = ["inc/pch"],
+    deps = ["//main/sal:sal_headers"],
+    visibility = ["//visibility:public"],
+)
+
+# ── reg.dll ───────────────────────────────────────────────────────
+cc_binary(
+    name = "reg",
+    srcs = [
+        "source/keyimpl.cxx",
+        "source/keyimpl.hxx",
+        "source/reflcnst.hxx",
+        "source/reflread.cxx",
+        "source/reflwrit.cxx",
+        "source/regimpl.cxx",
+        "source/regimpl.hxx",
+        "source/registry.cxx",
+        "source/regkey.cxx",
+        "source/regkey.hxx",
+    ],
+    copts = _COPTS,
+    defines = _SLO_DEFINES,
+    deps = [
+        ":registry_headers",
+        "//main/sal:sal_headers",
+        "//main/salhelper:salhelper_headers",
+        "//main/store:store_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/salhelper:salhelper_implib",
+        "//main/store:store_implib",
+    ],
+    linkshared = True,
+    win_def_file = "util/reg.def",
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/salhelper:salhelper_implib)",
+        "$(execpath //main/store:store_implib)",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# Expose reg's import library for downstream (idlc, regmerge, codemaker etc.)
+filegroup(
+    name = "reg_implib",
+    srcs = [":reg"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)

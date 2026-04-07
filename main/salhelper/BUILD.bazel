@@ -40,9 +40,17 @@ cc_binary(
     ],
     additional_linker_inputs = ["//main/sal:sal_implib"],
     linkshared = True,
+    win_def_file = "util/salhelper.def",
     linkopts = [
-        "/DEF:main/salhelper/source/msci.map",
         "$(execpath //main/sal:sal_implib)",
     ],
+    visibility = ["//visibility:public"],
+)
+
+# Expose salhelper's import library for downstream DLLs (registry etc.)
+filegroup(
+    name = "salhelper_implib",
+    srcs = [":salhelper3MSC"],
+    output_group = "interface_library",
     visibility = ["//visibility:public"],
 )
