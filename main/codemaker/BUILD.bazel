@@ -1,0 +1,104 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_COPTS = [
+    "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs",
+    "/EHsc",
+    "/Dsnprintf=_snprintf",
+    "/wd4061", "/wd4063", "/wd4127",
+    "/Imain/codemaker/inc/pch",
+]
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32", "_MT",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK",
+]
+
+# ── Public headers ────────────────────────────────────────────────
+cc_library(
+    name = "codemaker_headers",
+    hdrs = glob(["inc/codemaker/*.hxx", "inc/pch/*.hxx"]),
+    strip_include_prefix = "inc",
+    includes = ["inc/pch"],
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/registry:registry_headers",
+        "//main/stlport:stlport",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── codemaker static lib ──────────────────────────────────────────
+cc_library(
+    name = "codemaker",
+    srcs = [
+        "source/codemaker/codemaker.cxx",
+        "source/codemaker/dependencies.cxx",
+        "source/codemaker/exceptiontree.cxx",
+        "source/codemaker/global.cxx",
+        "source/codemaker/options.cxx",
+        "source/codemaker/typemanager.cxx",
+        "source/codemaker/unotype.cxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    deps = [
+        ":codemaker_headers",
+        "//main/sal:sal_headers",
+        "//main/registry:registry_headers",
+        "//main/stlport:stlport",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── commoncpp static lib ──────────────────────────────────────────
+cc_library(
+    name = "commoncpp",
+    srcs = [
+        "source/commoncpp/commoncpp.cxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    deps = [
+        ":codemaker_headers",
+        "//main/sal:sal_headers",
+        "//main/registry:registry_headers",
+        "//main/stlport:stlport",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── cppumaker executable ──────────────────────────────────────────
+cc_binary(
+    name = "cppumaker",
+    srcs = [
+        "source/cppumaker/cppumaker.cxx",
+        "source/cppumaker/cppuoptions.cxx",
+        "source/cppumaker/cpputype.cxx",
+        "source/cppumaker/dumputils.cxx",
+        "source/cppumaker/includes.cxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    deps = [
+        ":codemaker",
+        ":codemaker_headers",
+        ":commoncpp",
+        "//main/sal:sal_headers",
+        "//main/salhelper:salhelper_headers",
+        "//main/registry:registry_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/salhelper:salhelper_implib",
+        "//main/registry:reg_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/salhelper:salhelper_implib)",
+        "$(execpath //main/registry:reg_implib)",
+    ],
+    visibility = ["//visibility:public"],
+)

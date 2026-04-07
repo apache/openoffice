@@ -58,11 +58,11 @@ store  ✅ already done
 registry  ✅ already done
         │
 idlc  ✅ already done
-regmerge   1 .cxx, deps: registry              ← trivial
+regmerge  ✅ already done
         │
-codemaker  27 .cxx, deps: registry   ← medium
+codemaker  ✅ already done
         │
-cppumaker   8 .cxx, deps: codemaker  ← easy
+cppumaker  ✅ already done
         │
 genrule: .idl → .urd → .rdb → .hdl/.hpp
 

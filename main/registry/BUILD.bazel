@@ -72,3 +72,31 @@ filegroup(
     output_group = "interface_library",
     visibility = ["//visibility:public"],
 )
+
+# ── regmerge executable ───────────────────────────────────────────
+cc_binary(
+    name = "regmerge",
+    srcs = [
+        "tools/regmerge.cxx",
+        "tools/fileurl.cxx",
+        "tools/fileurl.hxx",
+        "tools/options.cxx",
+        "tools/options.hxx",
+    ],
+    copts = _COPTS + ["/Imain/registry/tools"],
+    defines = _DEFINES,
+    deps = [
+        ":registry_headers",
+        "//main/sal:sal_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/registry:reg_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/registry:reg_implib)",
+    ],
+    visibility = ["//visibility:public"],
+)
