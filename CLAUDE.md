@@ -52,7 +52,7 @@ win_flex + win_bison  ← new ext dep (generate parser.cxx, scanner.cxx)
 ucpp  ✅ already done
 sal   ✅ already done
         │
-salhelper  3 .cxx, deps: sal only     ← easy
+salhelper  ✅ already done
 store     11 .cxx, deps: sal only     ← easy
         │
 registry   6 .cxx, deps: salhelper + store  ← easy
