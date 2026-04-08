@@ -1,0 +1,21 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary")
+
+cc_binary(
+    name = "ucpp",
+    srcs = [
+        "assert.c",
+        "cpp.c",
+        "eval.c",
+        "hash.c",
+        "lexer.c",
+        "macro.c",
+        "mem.c",
+        "nhash.c",
+    ],
+    copts = [
+        "-DNO_UCPP_BUF",
+        "-DUCPP_CONFIG",
+        "-DSTAND_ALONE",
+    ],
+    visibility = ["//visibility:public"],
+)

@@ -96,5 +96,38 @@ Created sal/udkversion.h — static file from the udkversion.mk constants (3.2.7
 Created store_headers/store_implib were already working from the previous step
 Created main/registry/util/reg.def — 73 exports from both UDK_3_0_0 and UDK_3.1 sections
 Created main/registry/BUILD.bazel with stlport dep (needed for <hash_map>)
+#### idl pipeline
+Compile IDL pipeline tools with /MT (static CRT)
+Add /MT to the copts of idlc, regmerge, and cppumaker. This links the CRT statically into the exe — no msvcr90.dll dependency, no staging needed, they run standalone anywhere.
+
+This is not a source code change — it's a build flag. It's also standard practice for build tools that need to run on arbitrary machines.
+
+After that, the Starlark rule simplifies to:
+
+Minimal staging: just copy ucpp.exe next to idlc.exe (idlc hardcodes finding ucpp by path substitution — unavoidable)
+ctx.actions.run() invokes idlc, regmerge, cppumaker directly — no PATH games, no DLL workarounds
+The _collect_runtime_dlls function, all four DLL attributes, and the entire DLL staging logic in idl_pipeline.bzl disappear.
+###### solution
+That's everything wired up. Summary of what was done:
+
+main/external/msvcp90/BUILD.bazel — filegroup exposing the 4 checked-in CRT files
+build/rules/idl_pipeline.bzl — cleaned up: _crt_dlls attr points to //main/external/msvcp90:crt_dlls, dead rename_map removed
+build/rules/BUILD.bazel — empty package marker so the .bzl load path resolves
+main/udkapi/BUILD — replaced both genrules with a single idl_library(name = "udkapi_idl", ...)
+#### error:
+idl compilation fails with windows error of wrong c call.
+
 ## Out of scope
 - Modifying source code
+on shell there is INFO: From Compiling main/idlc/source/idlc.cxx [for tool]:
+cl : Command line warning D9002 : ignoring unknown option '/Gw'
+idlc.cxx
+and:
+C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\INCLUDE\xtree(637) : warning C4800: 'sal_Bool' : forcing value to bool 'true' or 'false' (performance warning)
+        C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\INCLUDE\xtree(630) : while compiling class template member function 'std::pair<_Ty1,_Ty2> std::_Tree<_Traits>::insert(const rtl::OString &)'
+        with
+        [
+            _Ty1=std::_Tree<std::_Tset_traits<rtl::OString,LessString,std::allocator<rtl::OString>,false>>::iterator,
+            _Ty2=bool,
+            ...
+            
