@@ -1,0 +1,4 @@
+; Windows export file for cppuhelper3MSC.dll
+; Exports are via __declspec(dllexport) through CPPUHELPER_DLLPUBLIC macro.
+; This file only sets the LIBRARY name; actual exports come from the source.
+LIBRARY cppuhelper3MSC

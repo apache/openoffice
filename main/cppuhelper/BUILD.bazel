@@ -1,0 +1,119 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("//build/rules:idl_pipeline.bzl", "idl_library")
+
+_COPTS = [
+    "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs",
+    "/EHsc",
+    "/Dsnprintf=_snprintf",
+    "/wd4061", "/wd4063", "/wd4127",
+    "/Imain/cppuhelper/inc/pch",
+    "/Imain/cppuhelper/source",
+]
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK",
+]
+
+_SLO_DEFINES = _DEFINES + ["SHAREDLIB", "_DLL_", "CPPUHELPER_DLLIMPLEMENTATION"]
+
+# ── Private IDL → headers ─────────────────────────────────────────
+# XExceptionThrower.idl is a cppuhelper-private type.
+# include_dirs: idlc needs main/udkapi for the com/sun/star/uno imports,
+# and main/cppuhelper/unotypes as the root so the generated header path
+# becomes cppuhelper/detail/XExceptionThrower.hpp.
+idl_library(
+    name = "cppuhelper_unotypes_idl",
+    srcs = ["unotypes/cppuhelper/detail/XExceptionThrower.idl"],
+    include_dirs = [
+        "main/udkapi",
+        "main/cppuhelper/unotypes",
+    ],
+    extra_rdbs = ["//main/udkapi:udkapi_idl"],
+)
+
+cc_library(
+    name = "cppuhelper_unotypes_headers",
+    hdrs = [":cppuhelper_unotypes_idl"],
+    includes = ["cppuhelper_unotypes_idl_inc"],
+    visibility = ["//visibility:public"],
+)
+
+# ── Public headers ────────────────────────────────────────────────
+cc_library(
+    name = "cppuhelper_headers",
+    hdrs = glob(["inc/**/*.hxx", "inc/**/*.h"]),
+    strip_include_prefix = "inc",
+    includes = ["inc/pch"],
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/udkapi:udkapi_idl_headers",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── cppuhelper3MSC.dll ────────────────────────────────────────────
+cc_binary(
+    name = "cppuhelper3MSC",
+    srcs = [
+        "source/access_control.cxx",
+        "source/bootstrap.cxx",
+        "source/component.cxx",
+        "source/component_context.cxx",
+        "source/exc_thrower.cxx",
+        "source/factory.cxx",
+        "source/findsofficepath.c",
+        "source/implbase.cxx",
+        "source/implbase_ex.cxx",
+        "source/implementationentry.cxx",
+        "source/interfacecontainer.cxx",
+        "source/macro_expander.cxx",
+        "source/macro_expander.hxx",
+        "source/primeweak.cxx",
+        "source/propertysetmixin.cxx",
+        "source/propshlp.cxx",
+        "source/servicefactory.cxx",
+        "source/shlib.cxx",
+        "source/stdidlclass.cxx",
+        "source/tdmgr.cxx",
+        "source/typeprovider.cxx",
+        "source/unourl.cxx",
+        "source/weak.cxx",
+    ],
+    copts = _COPTS,
+    defines = _SLO_DEFINES,
+    deps = [
+        ":cppuhelper_headers",
+        ":cppuhelper_unotypes_headers",
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/salhelper:salhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/stlport:stlport",
+        "@boost.legacy//:boost.legacy",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/salhelper:salhelper_implib",
+        "//main/cppu:cppu3_implib",
+    ],
+    linkshared = True,
+    win_def_file = "util/cppuhelper3MSC.def",
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/salhelper:salhelper_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "advapi32.lib",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "cppuhelper_implib",
+    srcs = [":cppuhelper3MSC"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)

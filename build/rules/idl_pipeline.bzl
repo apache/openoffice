@@ -78,10 +78,10 @@ def _idl_library_impl(ctx):
         urd = ctx.actions.declare_file(urd_dir_name + "/" + idl.basename[:-4] + ".urd")
         urd_files.append(urd)
 
+        idl_include_flags = ["-I" + ctx.label.package] + ["-I" + d for d in ctx.attr.include_dirs]
         ctx.actions.run(
             executable = staged["idlc.exe"].path,
-            arguments  = [
-                "-I" + ctx.label.package,  # include root (e.g. main/udkapi)
+            arguments  = idl_include_flags + [
                 "-O" + urd.dirname,        # output dir
                 "-C",                      # keep comments
                 idl.path,
@@ -140,6 +140,8 @@ def _idl_library_impl(ctx):
     # (relative-to-workdir, works) vs getFileURLFromSystemPath (fails for
     # relative paths on Windows).  Without "./" cppumaker can't create files.
     hdr_dir = ctx.actions.declare_directory(ctx.label.name + "_inc")
+    # extra_rdbs labels may resolve to both .rdb and _inc dir — filter to .rdb only
+    extra_rdbs = [f for f in ctx.files.extra_rdbs if f.extension == "rdb"]
 
     ctx.actions.run(
         executable = staged["cppumaker.exe"].path,
@@ -149,8 +151,8 @@ def _idl_library_impl(ctx):
             "-BUCR",           # browse UCR section
             "-O./" + hdr_dir.path,
             rdb.path,
-        ],
-        inputs           = [rdb] + all_staged,
+        ] + [r.path for r in extra_rdbs],
+        inputs           = [rdb] + extra_rdbs + all_staged,
         outputs          = [hdr_dir],
         env              = {"PATH": tools_dir},
         mnemonic         = "CppuMaker",
@@ -172,6 +174,15 @@ idl_library = rule(
         "srcs": attr.label_list(
             allow_files = [".idl"],
             doc = "IDL source files to compile",
+        ),
+        "include_dirs": attr.string_list(
+            default = [],
+            doc = "Extra -I paths passed to idlc (relative to execroot)",
+        ),
+        "extra_rdbs": attr.label_list(
+            allow_files = [".rdb"],
+            default = [],
+            doc = "Extra .rdb files passed to cppumaker for type resolution",
         ),
         "_idlc": attr.label(
             default     = "//main/idlc:idlc",

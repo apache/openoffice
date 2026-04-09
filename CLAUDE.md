@@ -51,6 +51,9 @@ Source code is NOT being changed — only the build system.
     - cppu3.dll (full UDK_3_0_0 + UDK_3.1 + UDK_3.2 + UDK_3.3 exports in cppu.def)
     - purpenvhelper3MSC.dll
     - unsafe_uno_uno.dll, affine_uno_uno.dll, log_uno_uno.dll
+- cppuhelper ✅ — cppuhelper3MSC.dll
+    - private IDL compiled via idl_library with include_dirs + extra_rdbs
+    - idl_pipeline.bzl gained include_dirs (string_list) and extra_rdbs attrs
 
 ## Key conventions
 - BUILD.bazel files live at main/<package>/BUILD.bazel (NOT prj/)
@@ -63,31 +66,35 @@ Source code is NOT being changed — only the build system.
 ## Current frontier
 
 ```
-sal       ✅
-salhelper ✅
-store     ✅
-registry  ✅
-ucpp      ✅
-idlc      ✅  (+ regmerge, cppumaker)
-udkapi    ✅  (.idl → .urd → .rdb → .hdl/.hpp via idl_pipeline.bzl)
-cppu      ✅  (cppu3, purpenvhelper3MSC, affine/unsafe/log bridge DLLs)
-          │
-          ▼
-      cppuhelper   ← next target
-          │        deps: cppu, sal, salhelper, codemaker, boost, libxslt
-          │        produces: cppuhelper3MSC.dll
-          │
-          ▼
-        bridges    deps: cppuhelper, salhelper
+sal         ✅
+salhelper   ✅
+store       ✅
+registry    ✅
+ucpp        ✅
+idlc        ✅  (+ regmerge, cppumaker)
+udkapi      ✅  (.idl → .urd → .rdb → .hdl/.hpp via idl_pipeline.bzl)
+cppu        ✅  (cppu3, purpenvhelper3MSC, affine/unsafe/log bridge DLLs)
+cppuhelper  ✅  (cppuhelper3MSC.dll)
+            │
+            ▼
+          bridges    ← next target
+                     deps: cppuhelper, salhelper
 ```
 
-### Notes for cppuhelper
-- build.lst: `cppuhelper : BOOST:boost LIBXSLT:libxslt codemaker cppu offapi NULL`
-- `offapi` is the OOo API IDL layer — may need its own idl_library target first
-- libxslt is a third-party dep (rules_foreign_cc or pre-built)
-- Sources are flat in `source/` — no subdirectory split like cppu
-- Will need `cppuhelper.map` → `cppuhelper3MSC.def` conversion (same pattern as sal/registry)
-- Generated headers from `udkapi_idl` already available via `//main/udkapi:udkapi_idl_headers`
+### Notes for cppuhelper (done)
+- libxslt listed in build.lst but not actually used by any source — skipped
+- offapi listed in build.lst but all required headers come from udkapi — skipped
+- Private IDL: `unotypes/cppuhelper/detail/XExceptionThrower.idl`
+    - uses `include_dirs` + `extra_rdbs` attrs added to idl_pipeline.bzl
+    - `extra_rdbs = ["//main/udkapi:udkapi_idl"]` for cppumaker type resolution
+    - `.rdb` filter needed: `idl_library` DefaultInfo returns both .rdb and _inc dir
+- Export macro: `CPPUHELPER_DLLIMPLEMENTATION` (not `CPPUHELPER_DLL_IMPLEMENTATION`)
+
+### Next: bridges
+- build.lst: `bridges : cppuhelper jurt jvmaccess salhelper NULL`
+- jurt/jvmaccess are Java bridge deps — likely not needed for the C++ bridge
+- The C++ bridge (msci bridge) is in `source/cpp_uno/msvc_win32_intel/`
+- Will need its own DEF file
 
 ## Key conventions
 - BUILD.bazel files live at main/<package>/BUILD.bazel (NOT prj/)
