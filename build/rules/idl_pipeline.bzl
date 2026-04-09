@@ -4,18 +4,21 @@ IDL pipeline rules for Apache OpenOffice Bazel build.
 Pipeline:  .idl --(idlc)--> .urd --(regmerge)--> .rdb --(cppumaker)--> .hpp/.hdl
 
 All tools are MSVC-compiled Windows PEs.  ctx.actions.run() invokes them
-directly (no bash/cmd wrapper), which avoids the WinSxS / MSYS2 exec issues
-that affect genrule cmd/cmd_bat on this toolchain.
+directly — no bash/cmd wrapper required.
 
-The VS2008 CRT DLLs (msvcr90.dll, msvcp90.dll, msvcm90.dll) are checked in
-under //main/external/msvcp90.  We stage all executables + DLLs into a single
-directory and pass that directory in PATH so the Windows DLL loader finds them.
+All executables and their runtime DLLs are staged into a single flat directory
+using ctx.actions.symlink (pure Bazel, no shell).  PATH is set to that
+directory so the Windows DLL loader finds everything in one place.
 
 sal.if.lib records "LIBRARY sal3", so at runtime Windows looks for sal3.dll.
-We create a copy named sal3.dll alongside sal.dll in the staging directory.
+We create a symlink named sal3.dll alongside sal.dll in the staging directory.
 
 idlc finds ucpp.exe by replacing "idlc" in its own executable path with
 "ucpp.exe", so ucpp must be staged alongside idlc.
+
+The VS2008 CRT DLLs (msvcr90.dll, msvcp90.dll, msvcm90.dll) and their
+manifest are checked in under //main/external/msvcp90 and staged alongside
+the executables so the CRT assembly is found as a local deployment.
 """
 
 # DLL files that need to be staged alongside the executables, with the name
@@ -34,40 +37,35 @@ def _idl_library_impl(ctx):
     regmerge  = ctx.executable._regmerge
     cppumaker = ctx.executable._cppumaker
 
-    # Collect DLL files that need to be co-located with the tools
     dll_files = [getattr(ctx.file, attr) for attr, _ in _DLL_RENAME]
     crt_files = ctx.files._crt_dlls
+    app_manifest = ctx.file._app_manifest
 
-    # All files that go into the staging directory
-    all_staged = [idlc, ucpp, regmerge, cppumaker] + dll_files + crt_files
-
-    # ── Stage all tools + DLLs into one directory ────────────────────────
-    # run_shell (bash) is used only for file copying — bash cannot exec MSVC
-    # PEs but it can copy files.  The actual tool invocations use run() below.
-    tools_dir = ctx.actions.declare_directory(ctx.label.name + "_tools")
-
-    # Build rename map: File object -> runtime name
+    # Build rename map: source File -> runtime filename
     rename = {}
     for attr, runtime in _DLL_RENAME:
-        f = getattr(ctx.file, attr)
-        rename[f] = runtime
+        rename[getattr(ctx.file, attr)] = runtime
 
-    copy_cmds = []
-    for f in all_staged:
+    # ── Stage all tools + DLLs into one flat directory ───────────────────
+    # ctx.actions.symlink is a pure Bazel operation (hardlink on Windows) —
+    # no shell, bash, or cmd.exe involved.
+    all_to_stage = [idlc, ucpp, regmerge, cppumaker] + dll_files + crt_files
+    staged = {}
+    for f in all_to_stage:
         dst_name = rename.get(f, f.basename)
-        copy_cmds.append('cp -f "{src}" "{dst}/{name}"'.format(
-            src  = f.path,
-            dst  = tools_dir.path,
-            name = dst_name,
-        ))
+        out = ctx.actions.declare_file(ctx.label.name + "_tools/" + dst_name)
+        ctx.actions.symlink(output = out, target_file = f)
+        staged[dst_name] = out
 
-    ctx.actions.run_shell(
-        inputs   = all_staged,
-        outputs  = [tools_dir],
-        command  = " && ".join(copy_cmds),
-        mnemonic = "StageIdlTools",
-        progress_message = "Staging IDL pipeline tools",
-    )
+    # Stage an external application manifest for each EXE so Windows finds
+    # the VC90 CRT assembly without needing mt.exe to embed it.
+    for exe in ["idlc.exe", "ucpp.exe", "regmerge.exe", "cppumaker.exe"]:
+        out = ctx.actions.declare_file(ctx.label.name + "_tools/" + exe + ".manifest")
+        ctx.actions.symlink(output = out, target_file = app_manifest)
+        staged[exe + ".manifest"] = out
+
+    tools_dir    = staged["idlc.exe"].dirname
+    all_staged   = list(staged.values())
 
     # ── Compile each .idl → .urd ─────────────────────────────────────────
     # idlc writes <basename>.urd into the -O directory (it strips the path,
@@ -81,48 +79,80 @@ def _idl_library_impl(ctx):
         urd_files.append(urd)
 
         ctx.actions.run(
-            executable = tools_dir.path + "/idlc.exe",
+            executable = staged["idlc.exe"].path,
             arguments  = [
                 "-I" + ctx.label.package,  # include root (e.g. main/udkapi)
                 "-O" + urd.dirname,        # output dir
                 "-C",                      # keep comments
                 idl.path,
             ],
-            inputs           = [idl, tools_dir],
+            inputs           = [idl] + all_staged,
             outputs          = [urd],
-            env              = {"PATH": tools_dir.path},
+            env              = {"PATH": tools_dir},
             mnemonic         = "Idlc",
             progress_message = "Compiling %s" % idl.short_path,
             use_default_shell_env = False,
         )
 
     # ── Merge all .urd → single .rdb ─────────────────────────────────────
+    # Windows CreateProcessW limit is 32767 chars; 400+ .urd paths overflow it.
+    # Split into batches of 50 URDs → intermediate .rdb files, then merge those.
+    _BATCH = 50
+    batches = []
+    for i in range(0, len(urd_files), _BATCH):
+        chunk = urd_files[i:i + _BATCH]
+        batch_rdb = ctx.actions.declare_file(
+            "%s_urd_batch_%d.rdb" % (ctx.label.name, i // _BATCH),
+        )
+        ctx.actions.run(
+            executable = staged["regmerge.exe"].path,
+            arguments  = [batch_rdb.path, "UCR"] + [u.path for u in chunk],
+            inputs     = chunk + all_staged,
+            outputs    = [batch_rdb],
+            env        = {"PATH": tools_dir},
+            mnemonic         = "RegMergeBatch",
+            progress_message = "Merging URD batch %d for %s" % (i // _BATCH, ctx.label.name),
+            use_default_shell_env = False,
+        )
+        batches.append(batch_rdb)
+
     rdb = ctx.actions.declare_file(ctx.label.name + ".rdb")
     ctx.actions.run(
-        executable = tools_dir.path + "/regmerge.exe",
-        arguments  = [rdb.path, "UCR"] + [u.path for u in urd_files],
-        inputs     = urd_files + [tools_dir],
+        executable = staged["regmerge.exe"].path,
+        # Batch RDBs already have content under /UCR/...; merge at root "/"
+        # so the tree lands at /UCR/... in the final RDB, not /UCR/UCR/...
+        arguments  = [rdb.path, "/"] + [b.path for b in batches],
+        inputs     = batches + all_staged,
         outputs    = [rdb],
-        env        = {"PATH": tools_dir.path},
+        env        = {"PATH": tools_dir},
         mnemonic         = "RegMerge",
         progress_message = "Merging %s.rdb" % ctx.label.name,
         use_default_shell_env = False,
     )
 
     # ── Generate C++ headers from .rdb ───────────────────────────────────
+    # Use declare_directory so Bazel doesn't enforce a fixed file list —
+    # cppumaker only emits headers for interfaces/structs/exceptions/enums,
+    # not for services or modules, so we can't pre-declare every output.
+    #
+    # The "./" prefix on -O is critical: osl's convertToFileUrl checks
+    # fileName.indexOf('.') == 0 to decide whether to use getAbsoluteFileURL
+    # (relative-to-workdir, works) vs getFileURLFromSystemPath (fails for
+    # relative paths on Windows).  Without "./" cppumaker can't create files.
     hdr_dir = ctx.actions.declare_directory(ctx.label.name + "_inc")
+
     ctx.actions.run(
-        executable = tools_dir.path + "/cppumaker.exe",
+        executable = staged["cppumaker.exe"].path,
         arguments  = [
             "-Gc",             # generate include guards
             "-L",              # local (relative) includes
             "-BUCR",           # browse UCR section
-            "-O" + hdr_dir.path,
+            "-O./" + hdr_dir.path,
             rdb.path,
         ],
-        inputs           = [rdb, tools_dir],
+        inputs           = [rdb] + all_staged,
         outputs          = [hdr_dir],
-        env              = {"PATH": tools_dir.path},
+        env              = {"PATH": tools_dir},
         mnemonic         = "CppuMaker",
         progress_message = "Generating headers from %s.rdb" % ctx.label.name,
         use_default_shell_env = False,
@@ -191,6 +221,11 @@ idl_library = rule(
             default     = "//main/external/msvcp90:crt_dlls",
             allow_files = True,
             cfg         = "exec",
+        ),
+        "_app_manifest": attr.label(
+            default           = "//main/external/msvcp90:vc90_app_manifest",
+            allow_single_file = True,
+            cfg               = "exec",
         ),
     },
 )

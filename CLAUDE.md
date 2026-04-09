@@ -37,16 +37,7 @@ Source code is NOT being changed — only the build system.
     - osl: BUILT SUCCESSFULLY
     - uwinapi: BUILT SUCCESSFULLY
 
-## Key conventions
-- BUILD.bazel files live at main/<package>/BUILD.bazel (NOT prj/)
-  - prj/ convention only worked for nmake() wrappers; cc_library needs
-    glob() access to sources which requires the BUILD at module root
-- build.lst drives dep graph: parse it to determine deps = []
-- .tab files in textenc are #include'd data tables → use textual_hdrs
-- All sal targets need deps = [":sal_headers", ":sal_pch"]
-
-## Current frontier
-### migragion of the idl pipeline
+    ### migragion of the idl pipeline
 win_flex + win_bison  ← new ext dep (generate parser.cxx, scanner.cxx)
         │
 ucpp  ✅ already done
@@ -116,6 +107,23 @@ build/rules/BUILD.bazel — empty package marker so the .bzl load path resolves
 main/udkapi/BUILD — replaced both genrules with a single idl_library(name = "udkapi_idl", ...)
 #### error:
 idl compilation fails with windows error of wrong c call.
+The IDL pipeline is working end-to-end:
+
+.idl → .urd (idlc) ✅
+.urd → .rdb (regmerge, batched) ✅
+.rdb → .hdl/.hpp (cppumaker) ✅
+That's a significant milestone — the full udkapi type system compiled under Bazel with no Cygwin, no shell, pure native Windows execution.
+
+## Key conventions
+- BUILD.bazel files live at main/<package>/BUILD.bazel (NOT prj/)
+  - prj/ convention only worked for nmake() wrappers; cc_library needs
+    glob() access to sources which requires the BUILD at module root
+- build.lst drives dep graph: parse it to determine deps = []
+- .tab files in textenc are #include'd data tables → use textual_hdrs
+- All sal targets need deps = [":sal_headers", ":sal_pch"]
+
+## Current frontier
+
 
 ## Out of scope
 - Modifying source code

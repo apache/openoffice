@@ -9,7 +9,7 @@ _COPTS = [
 ]
 
 _DEFINES = [
-    "WNT", "GUI", "WIN32", "_MT",
+    "WNT", "GUI", "WIN32",
     "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
     "CPPU_ENV=msci", "INTEL", "_X86_=1",
     "FULL_DESK",
@@ -99,6 +99,7 @@ cc_binary(
         "$(execpath //main/sal:sal_implib)",
         "$(execpath //main/salhelper:salhelper_implib)",
         "$(execpath //main/registry:reg_implib)",
+        "/MANIFEST:NO",
     ],
     visibility = ["//visibility:public"],
 )

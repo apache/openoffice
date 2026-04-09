@@ -97,6 +97,7 @@ cc_binary(
     linkopts = [
         "$(execpath //main/sal:sal_implib)",
         "$(execpath //main/registry:reg_implib)",
+        "/MANIFEST:NO",
     ],
     visibility = ["//visibility:public"],
 )

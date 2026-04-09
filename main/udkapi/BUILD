@@ -13,3 +13,4 @@ idl_library(
     srcs = glob(["com/sun/star/**/*.idl"]),
     visibility = ["//visibility:public"],
 )
+
