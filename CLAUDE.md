@@ -113,6 +113,13 @@ The IDL pipeline is working end-to-end:
 .urd → .rdb (regmerge, batched) ✅
 .rdb → .hdl/.hpp (cppumaker) ✅
 That's a significant milestone — the full udkapi type system compiled under Bazel with no Cygwin, no shell, pure native Windows execution.
+### All cppu targets built successfully:
+
+cppu3.dll ✅
+purpenvhelper3MSC.dll ✅
+unsafe_uno_uno.dll ✅
+affine_uno_uno.dll ✅
+log_uno_uno.dll ✅
 
 ## Key conventions
 - BUILD.bazel files live at main/<package>/BUILD.bazel (NOT prj/)

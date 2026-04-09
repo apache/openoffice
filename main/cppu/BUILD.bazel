@@ -43,6 +43,8 @@ cc_library(
     deps = [
         ":cppu_headers",
         "//main/sal:sal_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/stlport:stlport",
         "@boost.legacy//:boost.legacy",
     ],
 )
@@ -60,6 +62,8 @@ cc_library(
         ":cppu_headers",
         "//main/sal:sal_headers",
         "//main/stlport:stlport",
+        "//main/udkapi:udkapi_idl_headers",
+        "@boost.legacy//:boost.legacy",
     ],
 )
 
@@ -73,6 +77,7 @@ cc_library(
         ":cppu_headers",
         "//main/sal:sal_headers",
         "//main/stlport:stlport",
+        "//main/udkapi:udkapi_idl_headers",
     ],
 )
 
@@ -85,6 +90,7 @@ cc_library(
     deps = [
         ":cppu_headers",
         "//main/sal:sal_headers",
+        "//main/udkapi:udkapi_idl_headers",
     ],
 )
 
@@ -99,12 +105,18 @@ cc_binary(
         ":cppu_threadpool",
         ":cppu_typelib",
         ":cppu_cppu",
-        "//main/sal:sal",
     ],
+    additional_linker_inputs = ["//main/sal:sal_implib"],
     linkshared = True,
-    linkopts = [
-        "/DEF:main/cppu/util/cppu.def",
-    ],
+    win_def_file = "util/cppu.def",
+    linkopts = ["$(execpath //main/sal:sal_implib)"],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "cppu3_implib",
+    srcs = [":cppu3"],
+    output_group = "interface_library",
     visibility = ["//visibility:public"],
 )
 
@@ -122,13 +134,25 @@ cc_binary(
     deps = [
         ":cppu_headers",
         "//main/sal:sal_headers",
-        ":cppu3",
-        "//main/sal:sal",
+        "//main/udkapi:udkapi_idl_headers",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        ":cppu3_implib",
     ],
     linkshared = True,
+    win_def_file = "util/purpenvhelper3MSC.def",
     linkopts = [
-        "/DEF:main/cppu/util/purpenvhelper3MSC.def",
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath :cppu3_implib)",
     ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "purpenvhelper_implib",
+    srcs = [":purpenvhelper3MSC"],
+    output_group = "interface_library",
     visibility = ["//visibility:public"],
 )
 
@@ -145,11 +169,18 @@ cc_binary(
     deps = [
         ":cppu_headers",
         "//main/sal:sal_headers",
-        ":purpenvhelper3MSC",
-        "//main/sal:sal",
+        "//main/udkapi:udkapi_idl_headers",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        ":purpenvhelper_implib",
     ],
     linkshared = True,
-    linkopts = ["/DEF:main/cppu/util/empty.def"],
+    linkopts = [
+        "/DEF:main/cppu/util/empty.def",
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath :purpenvhelper_implib)",
+    ],
     visibility = ["//visibility:public"],
 )
 
@@ -161,11 +192,18 @@ cc_binary(
     deps = [
         ":cppu_headers",
         "//main/sal:sal_headers",
-        ":purpenvhelper3MSC",
-        "//main/sal:sal",
+        "//main/udkapi:udkapi_idl_headers",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        ":purpenvhelper_implib",
     ],
     linkshared = True,
-    linkopts = ["/DEF:main/cppu/util/empty.def"],
+    linkopts = [
+        "/DEF:main/cppu/util/empty.def",
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath :purpenvhelper_implib)",
+    ],
     visibility = ["//visibility:public"],
 )
 
@@ -177,11 +215,19 @@ cc_binary(
     deps = [
         ":cppu_headers",
         "//main/sal:sal_headers",
-        ":purpenvhelper3MSC",
-        ":cppu3",
-        "//main/sal:sal",
+        "//main/udkapi:udkapi_idl_headers",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        ":purpenvhelper_implib",
+        ":cppu3_implib",
     ],
     linkshared = True,
-    linkopts = ["/DEF:main/cppu/util/empty.def"],
+    linkopts = [
+        "/DEF:main/cppu/util/empty.def",
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath :purpenvhelper_implib)",
+        "$(execpath :cppu3_implib)",
+    ],
     visibility = ["//visibility:public"],
 )
