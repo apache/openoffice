@@ -1,0 +1,63 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_COPTS = [
+    "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs",
+    "/EHsc",
+    "/Dsnprintf=_snprintf",
+    "/wd4061", "/wd4063", "/wd4127",
+]
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK",
+]
+
+# ── Public headers ────────────────────────────────────────────────
+cc_library(
+    name = "xmlreader_headers",
+    hdrs = glob(["inc/xmlreader/**/*.hxx"]),
+    strip_include_prefix = "inc",
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "@boost.legacy//:boost.legacy",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── xmlreader.dll ─────────────────────────────────────────────────
+cc_binary(
+    name = "xmlreader",
+    srcs = [
+        "source/pad.cxx",
+        "source/span.cxx",
+        "source/xmlreader.cxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES + ["OOO_DLLIMPLEMENTATION_XMLREADER", "SHAREDLIB", "_DLL_"],
+    deps = [
+        ":xmlreader_headers",
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/stlport:stlport",
+        "@boost.legacy//:boost.legacy",
+    ],
+    additional_linker_inputs = ["//main/sal:sal_implib"],
+    linkshared = True,
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "xmlreader_implib",
+    srcs = [":xmlreader"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)

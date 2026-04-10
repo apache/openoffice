@@ -1,0 +1,7 @@
+; Windows export file for stocservices.uno.dll
+; Standard UNO unloadable component exports (from unloadablecomponent.map)
+LIBRARY stocservices.uno
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory
+    component_canUnload

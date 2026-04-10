@@ -1,0 +1,154 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary")
+
+_COPTS = [
+    "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs",
+    "/EHsc",
+    "/Dsnprintf=_snprintf",
+    "/wd4061", "/wd4063", "/wd4127",
+    "/Imain/stoc/inc",
+    "/Imain/stoc/inc/pch",
+    # uriproc local headers
+    "/Imain/stoc/source/uriproc",
+    # dummy unistd.h stub for MSVC (implreg.cxx includes it unconditionally)
+    "/Imain/soltools/winunistd",
+]
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK",
+    "SHAREDLIB", "_DLL_",
+]
+
+_DEPS = [
+    "//main/sal:sal_headers",
+    "//main/cppu:cppu_headers",
+    "//main/cppuhelper:cppuhelper_headers",
+    "//main/salhelper:salhelper_headers",
+    "//main/registry:registry_headers",
+    "//main/udkapi:udkapi_idl_headers",
+    "//main/xmlreader:xmlreader_headers",
+    "//main/stlport:stlport",
+    "@boost.legacy//:boost.legacy",
+]
+
+# ── bootstrap.uno.dll ─────────────────────────────────────────────
+# Combines: bootstrap, security, servicemanager, simpleregistry,
+#           defaultregistry, implementationregistration, loader,
+#           registry_tdprovider, tdmanager
+cc_binary(
+    name = "bootstrap.uno",
+    srcs = [
+        # bootstrap
+        "source/bootstrap/services.cxx",
+        # security
+        "source/security/access_controller.cxx",
+        "source/security/file_policy.cxx",
+        "source/security/permissions.cxx",
+        # servicemanager
+        "source/servicemanager/servicemanager.cxx",
+        # simpleregistry (textualservices uses xmlreader)
+        "source/simpleregistry/simpleregistry.cxx",
+        "source/simpleregistry/textualservices.cxx",
+        # defaultregistry
+        "source/defaultregistry/defaultregistry.cxx",
+        # implementationregistration
+        "source/implementationregistration/implreg.cxx",
+        "source/implementationregistration/mergekeys.cxx",
+        # loader
+        "source/loader/dllcomponentloader.cxx",
+        # registry_tdprovider
+        "source/registry_tdprovider/functiondescription.cxx",
+        "source/registry_tdprovider/functiondescription.hxx",
+        "source/registry_tdprovider/methoddescription.cxx",
+        "source/registry_tdprovider/methoddescription.hxx",
+        "source/registry_tdprovider/rdbtdp_tdenumeration.cxx",
+        "source/registry_tdprovider/rdbtdp_tdenumeration.hxx",
+        "source/registry_tdprovider/structtypedescription.cxx",
+        "source/registry_tdprovider/structtypedescription.hxx",
+        "source/registry_tdprovider/base.hxx",
+        "source/registry_tdprovider/td.cxx",
+        "source/registry_tdprovider/tdcomp.cxx",
+        "source/registry_tdprovider/tdconsts.cxx",
+        "source/registry_tdprovider/tdef.cxx",
+        "source/registry_tdprovider/tdenum.cxx",
+        "source/registry_tdprovider/tdiface.cxx",
+        "source/registry_tdprovider/tdmodule.cxx",
+        "source/registry_tdprovider/tdprop.cxx",
+        "source/registry_tdprovider/tdprovider.cxx",
+        "source/registry_tdprovider/tdservice.cxx",
+        "source/registry_tdprovider/tdsingleton.cxx",
+        # tdmanager
+        "source/tdmanager/tdmgr.cxx",
+        "source/tdmanager/tdmgr_check.cxx",
+        "source/tdmanager/tdmgr_tdenumeration.cxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    deps = _DEPS,
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/salhelper:salhelper_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/registry:reg_implib",
+        "//main/xmlreader:xmlreader_implib",
+    ],
+    linkshared = True,
+    win_def_file = "util/bootstrap.uno.def",
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/salhelper:salhelper_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/registry:reg_implib)",
+        "$(execpath //main/xmlreader:xmlreader_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── stocservices.uno.dll ──────────────────────────────────────────
+# Combines: stocservices, typeconv, uriproc
+cc_binary(
+    name = "stocservices.uno",
+    srcs = [
+        # stocservices
+        "source/stocservices/stocservices.cxx",
+        # typeconv
+        "source/typeconv/convert.cxx",
+        # uriproc
+        "source/uriproc/ExternalUriReferenceTranslator.cxx",
+        "source/uriproc/ExternalUriReferenceTranslator.hxx",
+        "source/uriproc/UriReference.cxx",
+        "source/uriproc/UriReference.hxx",
+        "source/uriproc/UriReferenceFactory.cxx",
+        "source/uriproc/UriReferenceFactory.hxx",
+        "source/uriproc/UriSchemeParser_vndDOTsunDOTstarDOTexpand.cxx",
+        "source/uriproc/UriSchemeParser_vndDOTsunDOTstarDOTexpand.hxx",
+        "source/uriproc/UriSchemeParser_vndDOTsunDOTstarDOTscript.cxx",
+        "source/uriproc/UriSchemeParser_vndDOTsunDOTstarDOTscript.hxx",
+        "source/uriproc/VndSunStarPkgUrlReferenceFactory.cxx",
+        "source/uriproc/VndSunStarPkgUrlReferenceFactory.hxx",
+        "source/uriproc/supportsService.cxx",
+        "source/uriproc/supportsService.hxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    deps = _DEPS,
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+    ],
+    linkshared = True,
+    win_def_file = "util/stocservices.uno.def",
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)

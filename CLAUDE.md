@@ -88,10 +88,12 @@ cppu        ✅  (cppu3, purpenvhelper3MSC, affine/unsafe/log bridge DLLs)
 cppuhelper  ✅  (cppuhelper3MSC.dll)
 bridges     ✅  (msci_uno.dll)
 rdbmaker    ✅  (rdbmaker.exe)
+xmlreader   ✅  (xmlreader.dll)
+stoc        ✅  (bootstrap.uno.dll, stocservices.uno.dll)
             │
             ▼
-          stoc    ← next target (needs rdbmaker, cppuhelper, jvmfwk, xmlreader)
-          jvmfwk  ← parallel path (needs cppu, cppuhelper, sal, libxml2)
+          jvmfwk  ← next (needs cppu, cppuhelper, sal, libxml2)
+          io      ← next (needs stoc, LIBXSLT)
 ```
 
 ### Notes for bridges (done)
@@ -107,6 +109,20 @@ rdbmaker    ✅  (rdbmaker.exe)
 - rdbmaker has its own frozen copy of the codemaker API in `rdbmaker/inc/codemaker/`
   (older interface using TypeReader, not typereg::Reader — do NOT use //main/codemaker:codemaker_headers)
 - No pch dir; private source headers accessed via copts `/Imain/rdbmaker/source/rdbmaker`
+
+### Notes for xmlreader (done)
+- Exports via `OOO_DLLIMPLEMENTATION_XMLREADER` / `SAL_DLLPUBLIC_EXPORT` — no DEF file needed
+- Needs cppu_headers even though build.lst only lists `sal` (generated udkapi headers pull in cppu types)
+
+### Notes for stoc (done)
+- javavm/javaloader/jvmfwk/jvmaccess skipped — only C++ URE components needed
+- `bootstrap.uno.dll`: 9 sub-components merged (bootstrap, security, servicemanager,
+  simpleregistry, defaultregistry, implementationregistration, loader, registry_tdprovider, tdmanager)
+- `stocservices.uno.dll`: stocservices + typeconv + uriproc
+- `unistd.h` included unconditionally in implreg.cxx — satisfied by `main/soltools/winunistd/unistd.h` stub
+  (add `/Imain/soltools/winunistd` to copts wherever this pattern appears)
+- DEF exports: `component_getImplementationEnvironment`, `component_getFactory`, `component_canUnload`
+  (standard UNO unloadable component pattern — same for all future component DLLs)
 
 ## Key conventions
 - BUILD.bazel files live at main/<package>/BUILD.bazel (NOT prj/)

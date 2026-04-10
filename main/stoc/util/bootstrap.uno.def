@@ -1,0 +1,7 @@
+; Windows export file for bootstrap.uno.dll
+; Standard UNO unloadable component exports (from unloadablecomponent.map)
+LIBRARY bootstrap.uno
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory
+    component_canUnload
