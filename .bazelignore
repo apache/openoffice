@@ -1,0 +1,4 @@
+# ext_libraries contains module overlay BUILD files whose sources live in
+# Bazel's external repository cache, not in the workspace tree.
+# Exclude them so `bazel query //...` doesn't try to glob non-existent files.
+ext_libraries

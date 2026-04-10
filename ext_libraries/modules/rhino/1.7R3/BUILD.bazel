@@ -1,10 +1,8 @@
-load("@rules_java//java:java_library.bzl", "java_library")
-
-java_library(
+# Rhino (Mozilla JS engine) is a Java library used by the scripting bridge.
+# rules_java is not in MODULE.bazel — we only build the C++ side.
+# Stub target so Bazel can load this package without errors.
+filegroup(
     name = "js",
-    srcs = glob([
-        "src/**/*.java",
-        "toolsrc/**/*.java",
-    ]),
+    srcs = glob(["src/**/*.java", "toolsrc/**/*.java"]),
     visibility = ["//visibility:public"],
 )
