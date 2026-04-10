@@ -1,0 +1,7 @@
+; Windows export file for msci_uno.dll
+; Exports the three C-linkage entry points from source/cpp_uno/shared/component.cxx
+LIBRARY msci_uno
+EXPORTS
+    component_canUnload
+    uno_initEnvironment
+    uno_ext_getMapping

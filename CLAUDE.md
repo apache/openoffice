@@ -54,6 +54,17 @@ Source code is NOT being changed — only the build system.
 - cppuhelper ✅ — cppuhelper3MSC.dll
     - private IDL compiled via idl_library with include_dirs + extra_rdbs
     - idl_pipeline.bzl gained include_dirs (string_list) and extra_rdbs attrs
+    msci_uno.dll built successfully. Here's what was done:
+
+Sources — two layers compiled into one DLL:
+
+source/cpp_uno/shared/ — 7 platform-neutral .cxx files (bridge, component, vtablefactory, etc.)
+source/cpp_uno/msvc_win32_intel/ — 4 MSVC x86 files (cpp2uno, uno2cpp, except, dllinit)
+DEF file — util/msci_uno.def with 3 extern "C" exports; the RTTI symbols in bridge_exports.map are GCC-mangled and don't apply to MSVC.
+
+Links — cppu3.if.lib + sal.if.lib only, matching the original SHL1STDLIBS in makefile.mk.
+
+The only wrinkle was no <hash_map> stlport needed — VS2008's native STL provided it fine, just with a harmless warning.
 
 ## Key conventions
 - BUILD.bazel files live at main/<package>/BUILD.bazel (NOT prj/)
@@ -75,26 +86,20 @@ idlc        ✅  (+ regmerge, cppumaker)
 udkapi      ✅  (.idl → .urd → .rdb → .hdl/.hpp via idl_pipeline.bzl)
 cppu        ✅  (cppu3, purpenvhelper3MSC, affine/unsafe/log bridge DLLs)
 cppuhelper  ✅  (cppuhelper3MSC.dll)
+bridges     ✅  (msci_uno.dll)
             │
             ▼
-          bridges    ← next target
-                     deps: cppuhelper, salhelper
+          ???    ← next target
 ```
 
-### Notes for cppuhelper (done)
-- libxslt listed in build.lst but not actually used by any source — skipped
-- offapi listed in build.lst but all required headers come from udkapi — skipped
-- Private IDL: `unotypes/cppuhelper/detail/XExceptionThrower.idl`
-    - uses `include_dirs` + `extra_rdbs` attrs added to idl_pipeline.bzl
-    - `extra_rdbs = ["//main/udkapi:udkapi_idl"]` for cppumaker type resolution
-    - `.rdb` filter needed: `idl_library` DefaultInfo returns both .rdb and _inc dir
-- Export macro: `CPPUHELPER_DLLIMPLEMENTATION` (not `CPPUHELPER_DLL_IMPLEMENTATION`)
-
-### Next: bridges
-- build.lst: `bridges : cppuhelper jurt jvmaccess salhelper NULL`
-- jurt/jvmaccess are Java bridge deps — likely not needed for the C++ bridge
-- The C++ bridge (msci bridge) is in `source/cpp_uno/msvc_win32_intel/`
-- Will need its own DEF file
+### Notes for bridges (done)
+- jurt/jvmaccess are Java bridge deps — skipped (not needed for C++ bridge)
+- DLL name: `msci_uno` (from COMNAME=msci on WNT-INTEL-msci)
+- Sources: `source/cpp_uno/shared/*.cxx` + `source/cpp_uno/msvc_win32_intel/*.cxx`
+- Local private headers (component.hxx, guardedarray.hxx, msci.hxx) accessed via copts `/I`
+- Exports: 3 C-linkage functions (component_canUnload, uno_initEnvironment, uno_ext_getMapping)
+  in a simple DEF — no RTTI symbols (those are GCC-only in bridge_exports.map)
+- Links: cppu3 + sal only (matches SHL1STDLIBS in makefile.mk)
 
 ## Key conventions
 - BUILD.bazel files live at main/<package>/BUILD.bazel (NOT prj/)

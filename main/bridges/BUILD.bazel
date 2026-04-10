@@ -1,0 +1,90 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_COPTS = [
+    "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs",
+    "/EHsc",
+    "/Dsnprintf=_snprintf",
+    # Private source directories for local headers (component.hxx, guardedarray.hxx, msci.hxx)
+    "/Imain/bridges/source/cpp_uno/shared",
+    "/Imain/bridges/source/cpp_uno/msvc_win32_intel",
+    # PCH header directory
+    "/Imain/bridges/inc/pch",
+    "/wd4061", "/wd4127",
+]
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK",
+    # Needed by vtablefactory.cxx for the Windows code path
+    "LEAK_STATIC_DATA",
+]
+
+_SLO_DEFINES = _DEFINES + ["SHAREDLIB", "_DLL_"]
+
+# ── Public headers ────────────────────────────────────────────────
+cc_library(
+    name = "bridges_headers",
+    hdrs = glob(["inc/**/*.hxx"]),
+    strip_include_prefix = "inc",
+    includes = ["inc/pch"],
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/udkapi:udkapi_idl_headers",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── msci_uno.dll ─────────────────────────────────────────────────
+# Windows MSVC x86 C++/UNO bridge.
+# Sources: platform-neutral shared/ layer + msvc_win32_intel/ platform layer.
+cc_binary(
+    name = "msci_uno",
+    srcs = [
+        # Shared (platform-neutral) sources
+        "source/cpp_uno/shared/bridge.cxx",
+        "source/cpp_uno/shared/component.cxx",
+        "source/cpp_uno/shared/component.hxx",
+        "source/cpp_uno/shared/cppinterfaceproxy.cxx",
+        "source/cpp_uno/shared/guardedarray.hxx",
+        "source/cpp_uno/shared/types.cxx",
+        "source/cpp_uno/shared/unointerfaceproxy.cxx",
+        "source/cpp_uno/shared/vtablefactory.cxx",
+        "source/cpp_uno/shared/vtables.cxx",
+        # Windows MSVC x86 platform sources
+        "source/cpp_uno/msvc_win32_intel/cpp2uno.cxx",
+        "source/cpp_uno/msvc_win32_intel/dllinit.cxx",
+        "source/cpp_uno/msvc_win32_intel/except.cxx",
+        "source/cpp_uno/msvc_win32_intel/msci.hxx",
+        "source/cpp_uno/msvc_win32_intel/uno2cpp.cxx",
+    ],
+    copts = _COPTS,
+    defines = _SLO_DEFINES,
+    deps = [
+        ":bridges_headers",
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+    ],
+    linkshared = True,
+    win_def_file = "util/msci_uno.def",
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "msci_uno_implib",
+    srcs = [":msci_uno"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
