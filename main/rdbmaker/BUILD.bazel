@@ -1,0 +1,71 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary")
+
+_COPTS = [
+    "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs",
+    "/EHsc",
+    "/Dsnprintf=_snprintf",
+    "/wd4061", "/wd4063", "/wd4127",
+    # rdbmaker/inc holds its own <codemaker/*.hxx> (distinct from main/codemaker/inc)
+    "/Imain/rdbmaker/inc",
+    # private source headers (rdboptions.hxx, rdbtype.hxx, specialtypemanager.hxx)
+    "/Imain/rdbmaker/source/rdbmaker",
+]
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK",
+]
+
+cc_binary(
+    name = "rdbmaker",
+    srcs = [
+        # Internal codemaker layer (rdbmaker's own copies, not //main/codemaker)
+        "source/codemaker/dependency.cxx",
+        "source/codemaker/global.cxx",
+        "source/codemaker/options.cxx",
+        "source/codemaker/typemanager.cxx",
+        # rdbmaker-specific sources
+        "source/rdbmaker/rdbmaker.cxx",
+        "source/rdbmaker/rdboptions.cxx",
+        "source/rdbmaker/rdboptions.hxx",
+        "source/rdbmaker/rdbtype.cxx",
+        "source/rdbmaker/rdbtype.hxx",
+        "source/rdbmaker/specialtypemanager.cxx",
+        "source/rdbmaker/specialtypemanager.hxx",
+        "source/rdbmaker/typeblop.cxx",
+        # rdbmaker/inc headers exposed to srcs for Bazel header tracking
+        "inc/codemaker/dependency.hxx",
+        "inc/codemaker/global.hxx",
+        "inc/codemaker/options.hxx",
+        "inc/codemaker/registry.hxx",
+        "inc/codemaker/typemanager.hxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/registry:registry_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/salhelper:salhelper_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/registry:reg_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/salhelper:salhelper_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/registry:reg_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)

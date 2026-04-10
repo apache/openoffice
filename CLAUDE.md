@@ -87,9 +87,11 @@ udkapi      ✅  (.idl → .urd → .rdb → .hdl/.hpp via idl_pipeline.bzl)
 cppu        ✅  (cppu3, purpenvhelper3MSC, affine/unsafe/log bridge DLLs)
 cppuhelper  ✅  (cppuhelper3MSC.dll)
 bridges     ✅  (msci_uno.dll)
+rdbmaker    ✅  (rdbmaker.exe)
             │
             ▼
-          ???    ← next target
+          stoc    ← next target (needs rdbmaker, cppuhelper, jvmfwk, xmlreader)
+          jvmfwk  ← parallel path (needs cppu, cppuhelper, sal, libxml2)
 ```
 
 ### Notes for bridges (done)
@@ -100,6 +102,11 @@ bridges     ✅  (msci_uno.dll)
 - Exports: 3 C-linkage functions (component_canUnload, uno_initEnvironment, uno_ext_getMapping)
   in a simple DEF — no RTTI symbols (those are GCC-only in bridge_exports.map)
 - Links: cppu3 + sal only (matches SHL1STDLIBS in makefile.mk)
+
+### Notes for rdbmaker (done)
+- rdbmaker has its own frozen copy of the codemaker API in `rdbmaker/inc/codemaker/`
+  (older interface using TypeReader, not typereg::Reader — do NOT use //main/codemaker:codemaker_headers)
+- No pch dir; private source headers accessed via copts `/Imain/rdbmaker/source/rdbmaker`
 
 ## Key conventions
 - BUILD.bazel files live at main/<package>/BUILD.bazel (NOT prj/)

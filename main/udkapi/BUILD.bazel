@@ -1,0 +1,21 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+load("//build/rules:idl_pipeline.bzl", "idl_library")
+
+# ── IDL pipeline ──────────────────────────────────────────────────
+# Compiles all udkapi IDL → .urd → .rdb, then cppumaker → header tree
+idl_library(
+    name = "udkapi_idl",
+    srcs = glob(["com/sun/star/**/*.idl"]),
+    include_dirs = ["main/udkapi"],
+    visibility = ["//visibility:public"],
+)
+
+# ── Generated headers as a cc_library dep ─────────────────────────
+# Consumers get the cppumaker output tree on their include path via
+# includes = ["udkapi_idl_inc"]  (Bazel prepends both source and bin roots)
+cc_library(
+    name = "udkapi_idl_headers",
+    hdrs = [":udkapi_idl"],
+    includes = ["udkapi_idl_inc"],
+    visibility = ["//visibility:public"],
+)
