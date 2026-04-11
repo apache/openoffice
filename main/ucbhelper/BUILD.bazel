@@ -1,0 +1,99 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK",
+    "SHAREDLIB", "_DLL_",
+    "UCBHELPER_DLLIMPLEMENTATION",
+]
+
+# ── public headers ────────────────────────────────────────────────
+cc_library(
+    name = "ucbhelper_headers",
+    hdrs = glob(["inc/ucbhelper/**"]),
+    strip_include_prefix = "inc",
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+_SRCS = [
+    # provider
+    "source/provider/cancelcommandexecution.cxx",
+    "source/provider/commandenvironmentproxy.cxx",
+    "source/provider/contenthelper.cxx",
+    "source/provider/contentidentifier.cxx",
+    "source/provider/contentinfo.cxx",
+    "source/provider/handleinteractionrequest.cxx",
+    "source/provider/interactionrequest.cxx",
+    "source/provider/propertyvalueset.cxx",
+    "source/provider/providerhelper.cxx",
+    "source/provider/registerucb.cxx",
+    "source/provider/resultset.cxx",
+    "source/provider/resultsethelper.cxx",
+    "source/provider/resultsetmetadata.cxx",
+    "source/provider/simpleauthenticationrequest.cxx",
+    "source/provider/simplecertificatevalidationrequest.cxx",
+    "source/provider/simpleinteractionrequest.cxx",
+    "source/provider/simpleioerrorrequest.cxx",
+    "source/provider/simplenameclashresolverequest.cxx",
+    # client
+    "source/client/activedatasink.cxx",
+    "source/client/activedatastreamer.cxx",
+    "source/client/commandenvironment.cxx",
+    "source/client/content.cxx",
+    "source/client/contentbroker.cxx",
+    "source/client/fileidentifierconverter.cxx",
+    "source/client/interceptedinteraction.cxx",
+    "source/client/proxydecider.cxx",
+]
+
+# ── ucbhelper.dll ─────────────────────────────────────────────────
+# Universal Content Broker helper library.
+# Exports via UCBHELPER_DLLPUBLIC (SAL_DLLPUBLIC_EXPORT) — no DEF file.
+cc_binary(
+    name = "ucbhelper",
+    srcs = _SRCS,
+    copts = ["/Imain/ucbhelper/inc/pch"],
+    defines = _DEFINES,
+    linkshared = True,
+    deps = [
+        ":ucbhelper_headers",
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/salhelper:salhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/salhelper:salhelper_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/salhelper:salhelper_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── import library for downstream ─────────────────────────────────
+filegroup(
+    name = "ucbhelper_implib",
+    srcs = [":ucbhelper"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)

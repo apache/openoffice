@@ -98,9 +98,17 @@ o3tl       ✅  (header-only)
 vos        ✅  (vos3.dll)
 libxslt    ✅  (@libxslt//:libxslt + :libexslt)
 offapi     ✅  (offapi_idl.rdb + offapi_idl_inc/ — 3718 IDL files)
+binaryurp     ✅  (binaryurp.dll)
+remotebridges ✅  (uuresolver.dll)
+cpputools     ✅  (regcomp.exe, regsingleton.exe, sp2bv.exe, uno.exe)
+i18nutil      ✅  (i18nutil.dll)
+ucbhelper     ✅  (ucbhelper.dll)
+comphelper    ✅  (comphelp.dll)
+configmgr     ✅  (configmgr.uno.dll)
+sax           ✅  (sax.dll, expwrap.dll, fastsax.dll)
             │
             ▼
-          binaryurp / remotebridges / i18nutil / cpputools  ← next
+          ??? ← next
 ```
 
 ### Notes for io (done)

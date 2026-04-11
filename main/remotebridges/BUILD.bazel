@@ -1,0 +1,37 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK",
+    "SHAREDLIB", "_DLL_",
+]
+
+# ── uuresolver.dll ────────────────────────────────────────────────
+# UNO URL resolver component.  Exports via SAL_DLLPUBLIC_EXPORT —
+# no DEF file needed.
+cc_binary(
+    name = "uuresolver",
+    srcs = ["source/unourl_resolver/unourl_resolver.cxx"],
+    defines = _DEFINES,
+    linkshared = True,
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)

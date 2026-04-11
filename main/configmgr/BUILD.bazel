@@ -1,0 +1,85 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK",
+    "SHAREDLIB", "_DLL_",
+]
+
+_SRCS = [
+    "source/access.cxx",
+    "source/broadcaster.cxx",
+    "source/childaccess.cxx",
+    "source/components.cxx",
+    "source/configurationprovider.cxx",
+    "source/configurationregistry.cxx",
+    "source/data.cxx",
+    "source/defaultprovider.cxx",
+    "source/groupnode.cxx",
+    "source/localizedpropertynode.cxx",
+    "source/localizedvaluenode.cxx",
+    "source/lock.cxx",
+    "source/modifications.cxx",
+    "source/node.cxx",
+    "source/nodemap.cxx",
+    "source/parsemanager.cxx",
+    "source/partial.cxx",
+    "source/propertynode.cxx",
+    "source/rootaccess.cxx",
+    "source/services.cxx",
+    "source/setnode.cxx",
+    "source/type.cxx",
+    "source/update.cxx",
+    "source/valueparser.cxx",
+    "source/writemodfile.cxx",
+    "source/xcdparser.cxx",
+    "source/xcsparser.cxx",
+    "source/xcuparser.cxx",
+    "source/xmldata.cxx",
+] + glob(["source/*.hxx"])
+
+# ── configmgr.uno.dll ─────────────────────────────────────────────
+# Configuration manager UNO component.
+# Exports via SAL_DLLPUBLIC_EXPORT — no DEF file.
+cc_binary(
+    name = "configmgr.uno",
+    srcs = _SRCS,
+    copts = [
+        "/Imain/configmgr/inc/pch",
+        "/Zc:wchar_t-",
+    ],
+    defines = _DEFINES,
+    linkshared = True,
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/salhelper:salhelper_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/xmlreader:xmlreader_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "@boost.legacy//:boost.legacy",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/salhelper:salhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/xmlreader:xmlreader_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/salhelper:salhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/xmlreader:xmlreader_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)

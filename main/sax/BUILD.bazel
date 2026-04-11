@@ -1,0 +1,151 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK",
+    "SHAREDLIB", "_DLL_",
+]
+
+_COMMON_DEPS = [
+    "//main/sal:sal_headers",
+    "//main/cppu:cppu_headers",
+    "//main/cppuhelper:cppuhelper_headers",
+    "//main/udkapi:udkapi_idl_headers",
+    "//main/offapi:offapi_idl_headers",
+    "//main/stlport:stlport",
+]
+
+# ── public headers ────────────────────────────────────────────────
+cc_library(
+    name = "sax_headers",
+    hdrs = glob(["inc/sax/**"]),
+    strip_include_prefix = "inc",
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── sax.dll ───────────────────────────────────────────────────────
+# SAX utility tools (converter, fastattribs, fastserializer, fshelper).
+# Links: sal, cppu, cppuhelper, comphelper.
+# Exports via SAL_DLLPUBLIC_EXPORT — no DEF file.
+cc_binary(
+    name = "sax",
+    srcs = [
+        "source/tools/converter.cxx",
+        "source/tools/fastattribs.cxx",
+        "source/tools/fastserializer.cxx",
+        "source/tools/fshelper.cxx",
+    ],
+    copts = [
+        "/Imain/sax/inc",
+        "/Zc:wchar_t-",
+    ],
+    defines = _DEFINES + ["SAX_DLLIMPLEMENTATION"],
+    linkshared = True,
+    deps = _COMMON_DEPS + [
+        ":sax_headers",
+        "//main/comphelper:comphelper_headers",
+        "@boost.legacy//:boost.legacy",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── import library for downstream ─────────────────────────────────
+filegroup(
+    name = "sax_implib",
+    srcs = [":sax"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── expwrap.dll ───────────────────────────────────────────────────
+# Expat-based XML wrapper (UTF-16 expat).
+# Exports via SAL_DLLPUBLIC_EXPORT — no DEF file.
+cc_binary(
+    name = "expwrap",
+    srcs = [
+        "source/expatwrap/attrlistimpl.cxx",
+        "source/expatwrap/sax_expat.cxx",
+        "source/expatwrap/saxwriter.cxx",
+        "source/expatwrap/xml2utf.cxx",
+    ],
+    copts = [
+        "/Imain/sax/inc",
+        "/Zc:wchar_t-",
+    ],
+    defines = _DEFINES,
+    linkshared = True,
+    deps = _COMMON_DEPS + [
+        ":sax_headers",
+        "@expat//:expat_utf16",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── fastsax.dll ───────────────────────────────────────────────────
+# Fast SAX parser (UTF-8 expat).
+# Exports via SAL_DLLPUBLIC_EXPORT — no DEF file.
+cc_binary(
+    name = "fastsax",
+    srcs = [
+        "source/fastparser/facreg.cxx",
+        "source/fastparser/fastparser.cxx",
+        "source/expatwrap/xml2utf.cxx",
+    ],
+    copts = [
+        "/Imain/sax/inc",
+        "/Zc:wchar_t-",
+    ],
+    defines = _DEFINES,
+    linkshared = True,
+    deps = _COMMON_DEPS + [
+        ":sax_headers",
+        "@expat//:expat_utf8",
+        "@boost.legacy//:boost.legacy",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/sax:sax_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/sax:sax_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)

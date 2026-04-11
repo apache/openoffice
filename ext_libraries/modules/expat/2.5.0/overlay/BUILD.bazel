@@ -1,0 +1,62 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+# expat source files
+_SRCS = [
+    "lib/xmlparse.c",
+    "lib/xmlrole.c",
+    "lib/xmltok.c",
+]
+
+_HDRS = glob(["lib/*.h"])
+
+_WINDOWS_COPTS = [
+    "/W3",
+    "/wd4996",  # deprecated POSIX names
+    "/wd4244",  # possible loss of data
+    "/wd4267",  # size_t -> int
+    "/wd4101",  # unreferenced local variable
+    "/I.",      # allow overlay stubs from source root
+    "/Ilib",
+]
+
+_WINDOWS_DEFINES = [
+    "WIN32",
+    "COMPILED_FROM_DSP",
+    "XML_STATIC",
+]
+
+# ── expat_utf8 ────────────────────────────────────────────────────
+# Standard UTF-8 expat (used by fastsax / expwrap for XML parsing).
+cc_library(
+    name = "expat_utf8",
+    srcs = _SRCS,
+    hdrs = _HDRS,
+    includes = ["lib"],
+    copts = select({
+        "@platforms//os:windows": _WINDOWS_COPTS,
+        "//conditions:default": ["-w", "-Ilib"],
+    }),
+    defines = select({
+        "@platforms//os:windows": _WINDOWS_DEFINES,
+        "//conditions:default": ["XML_STATIC", "HAVE_EXPAT_CONFIG_H"],
+    }),
+    visibility = ["//visibility:public"],
+)
+
+# ── expat_utf16 ───────────────────────────────────────────────────
+# UTF-16 (wide char) expat (used by expwrap for XML_UNICODE mode).
+cc_library(
+    name = "expat_utf16",
+    srcs = _SRCS,
+    hdrs = _HDRS,
+    includes = ["lib"],
+    copts = select({
+        "@platforms//os:windows": _WINDOWS_COPTS,
+        "//conditions:default": ["-w", "-Ilib"],
+    }),
+    defines = select({
+        "@platforms//os:windows": _WINDOWS_DEFINES + ["XML_UNICODE"],
+        "//conditions:default": ["XML_STATIC", "HAVE_EXPAT_CONFIG_H", "XML_UNICODE"],
+    }),
+    visibility = ["//visibility:public"],
+)

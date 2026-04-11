@@ -1,0 +1,66 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK",
+    "SHAREDLIB", "_DLL_",
+]
+
+_COPTS = [
+    "/Imain/binaryurp/source",
+    "/wd4996",  # deprecated POSIX names
+    "/wd4244",  # conversion, possible loss of data
+    "/wd4267",  # size_t -> int
+    "/wd4800",  # int -> bool
+]
+
+_DEPS = [
+    "//main/sal:sal_headers",
+    "//main/salhelper:salhelper_headers",
+    "//main/cppu:cppu_headers",
+    "//main/cppuhelper:cppuhelper_headers",
+    "//main/udkapi:udkapi_idl_headers",
+    "@boost.legacy//:boost.legacy",
+]
+
+# ── binaryurp.dll ─────────────────────────────────────────────────
+# UNO bridge component.  Exports component_getFactory and
+# component_getImplementationEnvironment via SAL_DLLPUBLIC_EXPORT —
+# no DEF file needed.
+cc_binary(
+    name = "binaryurp",
+    srcs = [
+        "source/binaryany.cxx",
+        "source/bridge.cxx",
+        "source/bridgefactory.cxx",
+        "source/currentcontext.cxx",
+        "source/incomingrequest.cxx",
+        "source/lessoperators.cxx",
+        "source/marshal.cxx",
+        "source/outgoingrequests.cxx",
+        "source/proxy.cxx",
+        "source/reader.cxx",
+        "source/unmarshal.cxx",
+        "source/writer.cxx",
+    ] + glob(["source/*.hxx"]),
+    copts = _COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    deps = _DEPS,
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/salhelper:salhelper_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/salhelper:salhelper_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)

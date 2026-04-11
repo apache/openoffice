@@ -1,0 +1,81 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK",
+]
+
+_COMMON_DEPS = [
+    "//main/sal:sal_headers",
+    "//main/cppu:cppu_headers",
+    "//main/cppuhelper:cppuhelper_headers",
+    "//main/udkapi:udkapi_idl_headers",
+]
+
+_COMMON_LINKER_INPUTS = [
+    "//main/sal:sal_implib",
+    "//main/cppu:cppu3_implib",
+    "//main/cppuhelper:cppuhelper_implib",
+]
+
+_COMMON_LINKOPTS = [
+    "$(execpath //main/sal:sal_implib)",
+    "$(execpath //main/cppu:cppu3_implib)",
+    "$(execpath //main/cppuhelper:cppuhelper_implib)",
+    "/MANIFEST:NO",
+]
+
+# ── regcomp.exe ───────────────────────────────────────────────────
+cc_binary(
+    name = "regcomp",
+    srcs = ["source/registercomponent/registercomponent.cxx"],
+    defines = _DEFINES,
+    deps = _COMMON_DEPS,
+    additional_linker_inputs = _COMMON_LINKER_INPUTS,
+    linkopts = _COMMON_LINKOPTS,
+    visibility = ["//visibility:public"],
+)
+
+# ── regsingleton.exe ──────────────────────────────────────────────
+cc_binary(
+    name = "regsingleton",
+    srcs = ["source/regsingleton/regsingleton.cxx"],
+    defines = _DEFINES,
+    deps = _COMMON_DEPS,
+    additional_linker_inputs = _COMMON_LINKER_INPUTS,
+    linkopts = _COMMON_LINKOPTS,
+    visibility = ["//visibility:public"],
+)
+
+# ── sp2bv.exe ─────────────────────────────────────────────────────
+# Converts StarBasic property values; only needs sal.
+cc_binary(
+    name = "sp2bv",
+    srcs = ["source/sp2bv/sp2bv.cxx"],
+    defines = _DEFINES,
+    deps = ["//main/sal:sal_headers"],
+    additional_linker_inputs = ["//main/sal:sal_implib"],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── uno.exe ───────────────────────────────────────────────────────
+cc_binary(
+    name = "uno",
+    srcs = ["source/unoexe/unoexe.cxx"],
+    defines = _DEFINES,
+    deps = _COMMON_DEPS + ["//main/salhelper:salhelper_headers"],
+    additional_linker_inputs = _COMMON_LINKER_INPUTS + [
+        "//main/salhelper:salhelper_implib",
+    ],
+    linkopts = _COMMON_LINKOPTS[:-1] + [  # drop /MANIFEST:NO, add salhelper before it
+        "$(execpath //main/salhelper:salhelper_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)

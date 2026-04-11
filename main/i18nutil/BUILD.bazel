@@ -1,0 +1,56 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK",
+    "SHAREDLIB", "_DLL_",
+    "I18NUTIL_DLLIMPLEMENTATION",
+]
+
+# ── public headers ────────────────────────────────────────────────
+cc_library(
+    name = "i18nutil_headers",
+    hdrs = glob(["inc/i18nutil/**"]),
+    strip_include_prefix = "inc",
+    deps = ["//main/sal:sal_headers"],
+    visibility = ["//visibility:public"],
+)
+
+# ── i18nutil.dll ──────────────────────────────────────────────────
+cc_binary(
+    name = "i18nutil",
+    srcs = [
+        # exception-enabled
+        "source/utility/casefolding.cxx",
+        # no-exception objects
+        "source/utility/unicode.cxx",
+        "source/utility/widthfolding.cxx",
+        "source/utility/oneToOneMapping.cxx",
+        # private data tables (included by the .cxx files above)
+        "source/utility/casefolding_data.h",
+        "source/utility/unicode_data.h",
+        "source/utility/widthfolding_data.h",
+    ],
+    copts = ["/Imain/i18nutil/source/utility"],
+    defines = _DEFINES,
+    linkshared = True,
+    deps = [
+        ":i18nutil_headers",
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/udkapi:udkapi_idl_headers",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)

@@ -1,0 +1,13 @@
+{
+  "integrity": "sha256-a5AqsQOENZK+XplQT4RuwQnBq7aS6FNHWH8jek/6EDM=",
+  "strip_prefix": "expat-2.5.0",
+  "url": "https://github.com/libexpat/libexpat/releases/download/R_2_5_0/expat-2.5.0.tar.gz",
+  "overlay": {
+    "MODULE.bazel": "sha256-7JOctfghrCN4nawIAAMI64IUYKRjsbrhSuZGwa9A6M8=",
+    "BUILD.bazel": "sha256-FbvPbe2/s9clBUVK4/EgNZaCchkKDaQbr95qvtAUjMs="
+  },
+  "patches": {
+    "aoo-vs2008.patch": "sha256-tzNnJuJ5pYKxP+pGj/+liRvrmywJJMafGCAkFqlcuJU="
+  },
+  "patch_strip": 2
+}
