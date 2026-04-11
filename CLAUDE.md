@@ -94,7 +94,12 @@ jvmfwk      ✅  (jvmfwk.dll)
 io          ✅  (streams.dll, acceptor.dll, connector.dll, textinstream.dll, textoutstream.dll)
             │
             ▼
-          (next TBD)
+o3tl       ✅  (header-only)
+vos        ✅  (vos3.dll)
+libxslt    ✅  (@libxslt//:libxslt + :libexslt)
+            │
+            ▼
+          offapi  ← next (3718 IDL files, gates binaryurp/remotebridges/cpputools/i18nutil/...)
 ```
 
 ### Notes for io (done)

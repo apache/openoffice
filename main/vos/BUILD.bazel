@@ -1,0 +1,69 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_COPTS = [
+    "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs",
+    "/EHsc",
+    "/Dsnprintf=_snprintf",
+    "/Imain/vos/inc",
+]
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "INTEL", "_X86_=1",
+    "SHAREDLIB", "_DLL_",
+    "VOS_DLLIMPLEMENTATION",
+]
+
+# ── vos headers (for downstream consumers) ────────────────────────
+cc_library(
+    name = "vos_headers",
+    hdrs = glob(["inc/vos/*.hxx", "inc/vos/*.h", "inc/vos/*.inl"]),
+    strip_include_prefix = "inc",
+    deps = ["//main/sal:sal_headers"],
+    visibility = ["//visibility:public"],
+)
+
+# ── vos3.dll ──────────────────────────────────────────────────────
+cc_binary(
+    name = "vos3",
+    srcs = [
+        "source/conditn.cxx",
+        "source/module.cxx",
+        "source/mutex.cxx",
+        "source/object.cxx",
+        "source/pipe.cxx",
+        "source/process.cxx",
+        "source/refernce.cxx",
+        "source/security.cxx",
+        "source/signal.cxx",
+        "source/socket.cxx",
+        "source/stream.cxx",
+        "source/thread.cxx",
+        "source/timer.cxx",
+        "source/xception.cxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    deps = [
+        ":vos_headers",
+        "//main/sal:sal_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = ["//main/sal:sal_implib"],
+    linkshared = True,
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "ws2_32.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── import library for downstream ─────────────────────────────────
+filegroup(
+    name = "vos3_implib",
+    srcs = [":vos3"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)

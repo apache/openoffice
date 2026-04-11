@@ -1,0 +1,14 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+# ── o3tl — header-only template utilities ────────────────────────
+# cow_wrapper, heap_ptr, lazy_update, range, vector_pool
+cc_library(
+    name = "o3tl",
+    hdrs = glob(["inc/o3tl/*.hxx"]),
+    strip_include_prefix = "inc",
+    deps = [
+        "//main/sal:sal_headers",
+        "@boost.legacy//:boost.legacy",
+    ],
+    visibility = ["//visibility:public"],
+)
