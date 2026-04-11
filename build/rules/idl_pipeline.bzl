@@ -19,6 +19,23 @@ idlc finds ucpp.exe by replacing "idlc" in its own executable path with
 The VS2008 CRT DLLs (msvcr90.dll, msvcp90.dll, msvcm90.dll) and their
 manifest are checked in under //main/external/msvcp90 and staged alongside
 the executables so the CRT assembly is found as a local deployment.
+
+IDL compilation strategy — one action per file, mirrored subdirs:
+  idlc is called once per .idl file (matching the original dmake/gbuild
+  build which used one make rule per .urd target).  Each invocation gets a
+  fresh idlc instance with XInterface predefined, which is why files like
+  XLinkAuthorizer.idl can reference ::com::sun::star::uno::XInterface
+  without an explicit #include — it is always predefined by idlc.
+
+  To avoid basename collisions across directories (chart/ChartDocument.idl
+  vs chart2/ChartDocument.idl both producing ChartDocument.urd), we mirror
+  the source sub-directory path under the output directory name:
+      offapi_idl_urd/com/sun/star/chart/ChartDocument.urd
+      offapi_idl_urd/com/sun/star/chart2/ChartDocument.urd
+
+  Files that reference sibling types without #include AND without the
+  predefined XInterface workaround (e.g. service Scaling in PowerScaling.idl)
+  must be excluded from srcs to match the original UnoApi_offapi.mk list.
 """
 
 # DLL files that need to be staged alongside the executables, with the name
@@ -67,23 +84,45 @@ def _idl_library_impl(ctx):
     tools_dir    = staged["idlc.exe"].dirname
     all_staged   = list(staged.values())
 
-    # ── Compile each .idl → .urd ─────────────────────────────────────────
-    # idlc writes <basename>.urd into the -O directory (it strips the path,
-    # keeping only the basename per idlcmain.cxx).  We declare each .urd
-    # in a flat output directory.
+    # ── Compile each .idl → .urd (one action per file) ───────────────────
+    # idlc writes <basename>.urd into the -O directory (strips the path,
+    # keeping only the basename per idlcmain.cxx).
+    #
+    # We mirror the source sub-directory path under the output directory so
+    # basenames from different directories never collide:
+    #   chart/ChartDocument.idl  → urd/com/sun/star/chart/ChartDocument.urd
+    #   chart2/ChartDocument.idl → urd/com/sun/star/chart2/ChartDocument.urd
+    #
+    # Each file gets a fresh idlc invocation, so idlc's predefined types
+    # (including ::com::sun::star::uno::XInterface) are always in scope,
+    # matching the original build's per-file compilation model.
     urd_dir_name = ctx.label.name + "_urd"
     urd_files = []
 
+    package_prefix = ctx.label.package + "/"
+    idl_include_flags = ["-I" + ctx.label.package] + ["-I" + d for d in ctx.attr.include_dirs]
+
     for idl in ctx.files.srcs:
-        urd = ctx.actions.declare_file(urd_dir_name + "/" + idl.basename[:-4] + ".urd")
+        # Compute path relative to package root
+        # e.g. "com/sun/star/chart/ChartDocument.idl"
+        if idl.short_path.startswith(package_prefix):
+            rel_path = idl.short_path[len(package_prefix):]
+        else:
+            rel_path = idl.basename
+
+        slash_idx = rel_path.rfind("/")
+        if slash_idx >= 0:
+            rel_dir = rel_path[:slash_idx]   # e.g. "com/sun/star/chart"
+            urd = ctx.actions.declare_file(urd_dir_name + "/" + rel_dir + "/" + idl.basename[:-4] + ".urd")
+        else:
+            urd = ctx.actions.declare_file(urd_dir_name + "/" + idl.basename[:-4] + ".urd")
         urd_files.append(urd)
 
-        idl_include_flags = ["-I" + ctx.label.package] + ["-I" + d for d in ctx.attr.include_dirs]
         ctx.actions.run(
             executable = staged["idlc.exe"].path,
             arguments  = idl_include_flags + [
-                "-O" + urd.dirname,        # output dir
-                "-C",                      # keep comments
+                "-O" + urd.dirname,   # output dir; idlc writes basename.urd here
+                "-C",                 # keep comments
                 idl.path,
             ],
             inputs           = [idl] + all_staged,

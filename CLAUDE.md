@@ -97,9 +97,10 @@ io          ✅  (streams.dll, acceptor.dll, connector.dll, textinstream.dll, te
 o3tl       ✅  (header-only)
 vos        ✅  (vos3.dll)
 libxslt    ✅  (@libxslt//:libxslt + :libexslt)
+offapi     ✅  (offapi_idl.rdb + offapi_idl_inc/ — 3718 IDL files)
             │
             ▼
-          offapi  ← next (3718 IDL files, gates binaryurp/remotebridges/cpputools/i18nutil/...)
+          binaryurp / remotebridges / i18nutil / cpputools  ← next
 ```
 
 ### Notes for io (done)

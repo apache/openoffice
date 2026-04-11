@@ -1,0 +1,91 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+load("//build/rules:idl_pipeline.bzl", "idl_library")
+
+# Files present on disk but NOT listed in UnoApi_offapi.mk — excluded to match
+# the original build's explicit file list exactly.
+_OFFAPI_EXCLUDED = [
+    "com/sun/star/awt/MenuBar.idl",
+    "com/sun/star/awt/PopupMenu.idl",
+    "com/sun/star/awt/grid/DefaultGridColumnModel.idl",
+    "com/sun/star/awt/grid/GridColumn.idl",
+    "com/sun/star/chart2/Axis.idl",
+    "com/sun/star/chart2/CandleStickChartType.idl",
+    "com/sun/star/chart2/ChartDocument.idl",
+    "com/sun/star/chart2/ChartDocumentWrapper.idl",
+    "com/sun/star/chart2/ChartType.idl",
+    "com/sun/star/chart2/ChartTypeManager.idl",
+    "com/sun/star/chart2/ChartTypeTemplate.idl",
+    "com/sun/star/chart2/CoordinateSystem.idl",
+    "com/sun/star/chart2/CoordinateSystemType.idl",
+    "com/sun/star/chart2/DataPoint.idl",
+    "com/sun/star/chart2/DataPointProperties.idl",
+    "com/sun/star/chart2/DataSeries.idl",
+    "com/sun/star/chart2/Diagram.idl",
+    "com/sun/star/chart2/ErrorBar.idl",
+    "com/sun/star/chart2/ExponentialScaling.idl",
+    "com/sun/star/chart2/FormattedString.idl",
+    "com/sun/star/chart2/GridProperties.idl",
+    "com/sun/star/chart2/Legend.idl",
+    "com/sun/star/chart2/LinearScaling.idl",
+    "com/sun/star/chart2/LogarithmicScaling.idl",
+    "com/sun/star/chart2/LogicTargetModel.idl",
+    "com/sun/star/chart2/MutableDataSequence.idl",
+    "com/sun/star/chart2/PowerScaling.idl",
+    "com/sun/star/chart2/PropertyPool.idl",
+    "com/sun/star/chart2/RegressionCurve.idl",
+    "com/sun/star/chart2/RegressionCurveEquation.idl",
+    "com/sun/star/chart2/Scaling.idl",
+    "com/sun/star/chart2/StandardDiagramCreationParameters.idl",
+    "com/sun/star/chart2/TextAnchor.idl",
+    "com/sun/star/chart2/Title.idl",
+    "com/sun/star/chart2/data/DataFilter.idl",
+    "com/sun/star/chart2/data/DataProvider.idl",
+    "com/sun/star/chart2/data/DataSequence.idl",
+    "com/sun/star/chart2/data/DataSink.idl",
+    "com/sun/star/chart2/data/DataSource.idl",
+    "com/sun/star/chart2/data/LabeledDataSequence.idl",
+    "com/sun/star/chart2/data/RangeHighlightListener.idl",
+    "com/sun/star/chart2/data/RangeHighlighter.idl",
+    "com/sun/star/chart2/data/TabularDataProviderArguments.idl",
+    "com/sun/star/configuration/backend/DefaultBackend.idl",
+    "com/sun/star/document/OOXMLDocumentPropertiesImporter.idl",
+    "com/sun/star/document/XMLBasicExporter.idl",
+    "com/sun/star/document/XMLBasicImporter.idl",
+    "com/sun/star/document/XMLOasisBasicExporter.idl",
+    "com/sun/star/document/XMLOasisBasicImporter.idl",
+    "com/sun/star/drawing/AccessibleImageBullet.idl",
+    "com/sun/star/drawing/modules.idl",
+    "com/sun/star/frame/XToolbarControllerListener.idl",
+    "com/sun/star/linguistic2/LanguageGuessing.idl",
+    "com/sun/star/mail/MailServer.idl",
+    "com/sun/star/mail/NoMailTransportProviderException.idl",
+    "com/sun/star/mail/XMailServer.idl",
+    "com/sun/star/report/Calculation.idl",
+    "com/sun/star/report/SectionPageBreak.idl",
+    "com/sun/star/ui/XContextChangeListener.idl",
+    "com/sun/star/util/EventMultiplexer.idl",
+    "com/sun/star/xml/dom/DocumentBuilder.idl",
+]
+
+# ── IDL pipeline ──────────────────────────────────────────────────
+# Compiles all 3718 offapi IDL files (matching UnoApi_offapi.mk) →
+# .urd → .rdb, then cppumaker → header tree.
+# Depends on udkapi.rdb for type resolution (UNO base types).
+idl_library(
+    name = "offapi_idl",
+    srcs = glob(
+        ["com/sun/star/**/*.idl"],
+        exclude = _OFFAPI_EXCLUDED,
+    ),
+    include_dirs = ["main/offapi", "main/udkapi"],
+    extra_rdbs = ["//main/udkapi:udkapi_idl"],
+    visibility = ["//visibility:public"],
+)
+
+# ── Generated headers as a cc_library dep ─────────────────────────
+cc_library(
+    name = "offapi_idl_headers",
+    hdrs = [":offapi_idl"],
+    includes = ["offapi_idl_inc"],
+    visibility = ["//visibility:public"],
+)
