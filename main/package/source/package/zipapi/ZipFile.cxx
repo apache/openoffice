@@ -662,7 +662,7 @@ static void readExtraFields( MemoryByteGrabber &rMemGrabber, sal_Int16 nLength, 
 	while ( ( nLength - nReadBytes ) >= 2 ) {
 		rMemGrabber >> nHeaderID;
 		rMemGrabber >> nDataSize;
-		nReadBytes += 2;
+		nReadBytes += 4;
 		if (( nDataSize > ( nLength - nReadBytes ) ) ||
 			( nDataSize > rMemGrabber.available() ) )
 			throw ZipException( OUString( RTL_CONSTASCII_USTRINGPARAM ( "Invalid ZIP extra fields" ) ), uno::Reference < XInterface > () );
@@ -682,6 +682,7 @@ static void readExtraFields( MemoryByteGrabber &rMemGrabber, sal_Int16 nLength, 
 		default:  // We are not interested in this field
 			rMemGrabber.skipBytes( nDataSize );
 		}
+		nReadBytes += nDataSize;
 	}
 }
 
