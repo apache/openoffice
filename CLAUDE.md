@@ -90,11 +90,28 @@ bridges     ✅  (msci_uno.dll)
 rdbmaker    ✅  (rdbmaker.exe)
 xmlreader   ✅  (xmlreader.dll)
 stoc        ✅  (bootstrap.uno.dll, stocservices.uno.dll)
+jvmfwk      ✅  (jvmfwk.dll)
+io          ✅  (streams.dll, acceptor.dll, connector.dll, textinstream.dll, textoutstream.dll)
             │
             ▼
-          jvmfwk  ← next (needs cppu, cppuhelper, sal, libxml2)
-          io      ← next (needs stoc, LIBXSLT)
+          (next TBD)
 ```
+
+### Notes for io (done)
+- 5 DLLs: streams, acceptor, connector, textinstream, textoutstream
+- All use SAL_DLLPUBLIC_EXPORT — no DEF files needed
+- LIBXSLT in build.lst is a legacy entry — none of the source files use it
+- Requires `/Zc:wchar_t-` so sal_Unicode = unsigned short (not native wchar_t);
+  without it Sequence<sal_Unicode> fails to resolve cppu_detail_getUnoType overload
+
+### Notes for jvmfwk (done)
+- Deps: cppu, cppuhelper, sal, udkapi_idl_headers, stlport, boost.legacy, @libxml2//:libxml2, advapi32
+- Exports: 21 C-linkage `jfw_*` functions from `jfw_headers` (inc/jvmfwk/) via jvmfwk.def
+- libxml2 overlay fixes needed for VS2008:
+  - `config.h` overlay: win32/VC10/config.h base + HAVE_STDINT_H guarded to VS2010+, SEND_ARG2_CAST defined empty
+  - `libxml2-configure.patch` disables FTP, HTTP, iconv, debug, zlib, lzma in xmlversion.h
+  - nanoftp.c and nanohttp.c excluded from LIBXML2_SRCS (networking not needed)
+  - Use `bazel mod deps --lockfile_mode=refresh` after any overlay/patch hash change
 
 ### Notes for bridges (done)
 - jurt/jvmaccess are Java bridge deps — skipped (not needed for C++ bridge)

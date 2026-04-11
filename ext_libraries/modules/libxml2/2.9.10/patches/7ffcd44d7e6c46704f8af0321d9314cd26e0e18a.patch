@@ -16,10 +16,10 @@ Signed-off-by: Zhipeng Xie <xiezhipeng1@huawei.com>
  xmlschemas.c | 1 -
  1 file changed, 1 deletion(-)
 
-diff --git misc/libxml2-2.9.10/xmlschemas.c misc/build/libxml2-2.9.10/xmlschemas.c
+diff --git a/xmlschemas.c b/xmlschemas.c
 index 301c84499..39d92182f 100644
---- misc/libxml2-2.9.10/xmlschemas.c
-+++ misc/build/libxml2-2.9.10/xmlschemas.c
+--- a/xmlschemas.c
++++ b/xmlschemas.c
 @@ -28090,7 +28090,6 @@ xmlSchemaPreRun(xmlSchemaValidCtxtPtr vctxt) {
      vctxt->nberrors = 0;
      vctxt->depth = -1;
@@ -28,6 +28,5 @@ index 301c84499..39d92182f 100644
      vctxt->hasKeyrefs = 0;
  #ifdef ENABLE_IDC_NODE_TABLES_TEST
      vctxt->createIDCNodeTables = 1;
--- 
+--
 GitLab
-

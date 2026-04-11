@@ -1,0 +1,86 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_COPTS = [
+    "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs",
+    "/EHsc",
+    "/Dsnprintf=_snprintf",
+    # public jvmfwk headers
+    "/Imain/jvmfwk/inc",
+    # pch header
+    "/Imain/jvmfwk/inc/pch",
+    # private source headers (elements.hxx, framework.hxx, fwkbase.hxx, etc.)
+    "/Imain/jvmfwk/source",
+]
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK",
+    "SHAREDLIB", "_DLL_",
+    "JVMFWK_DLLIMPLEMENTATION",
+]
+
+_DEPS = [
+    "//main/sal:sal_headers",
+    "//main/cppu:cppu_headers",
+    "//main/cppuhelper:cppuhelper_headers",
+    "//main/udkapi:udkapi_idl_headers",
+    "//main/stlport:stlport",
+    "@boost.legacy//:boost.legacy",
+    "@libxml2//:libxml2",
+]
+
+# ── jvmfwk headers (for downstream consumers) ────────────────────
+cc_library(
+    name = "jvmfwk_headers",
+    hdrs = glob(["inc/jvmfwk/*.h"]),
+    strip_include_prefix = "inc",
+    deps = ["//main/sal:sal_headers"],
+    visibility = ["//visibility:public"],
+)
+
+# ── jvmfwk.dll ───────────────────────────────────────────────────
+cc_binary(
+    name = "jvmfwk",
+    srcs = [
+        "source/elements.cxx",
+        "source/elements.hxx",
+        "source/framework.cxx",
+        "source/framework.hxx",
+        "source/fwkbase.cxx",
+        "source/fwkbase.hxx",
+        "source/fwkutil.cxx",
+        "source/fwkutil.hxx",
+        "source/libxmlutil.cxx",
+        "source/libxmlutil.hxx",
+        # pch (included by all .cxx files as "precompiled_jvmfwk.hxx")
+        "inc/pch/precompiled_jvmfwk.hxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    deps = _DEPS,
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+    ],
+    linkshared = True,
+    win_def_file = "util/jvmfwk.def",
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "advapi32.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── import library for downstream DLLs ───────────────────────────
+filegroup(
+    name = "jvmfwk_implib",
+    srcs = [":jvmfwk"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)

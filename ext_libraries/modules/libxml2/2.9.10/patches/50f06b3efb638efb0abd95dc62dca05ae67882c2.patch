@@ -14,14 +14,14 @@ Fixes #178.
  xmllint.c | 6 ++++++
  1 file changed, 6 insertions(+)
 
-diff --git misc/libxml2-2.9.10/xmllint.c misc/build/libxml2-2.9.10/xmllint.c
+diff --git a/xmllint.c b/xmllint.c
 index f6a8e4636..c647486f3 100644
---- misc/libxml2-2.9.10/xmllint.c
-+++ misc/build/libxml2-2.9.10/xmllint.c
+--- a/xmllint.c
++++ b/xmllint.c
 @@ -528,6 +528,12 @@ static void
  xmlHTMLEncodeSend(void) {
      char *result;
- 
+
 +    /*
 +     * xmlEncodeEntitiesReentrant assumes valid UTF-8, but the buffer might
 +     * end with a truncated UTF-8 sequence. This is a hack to at least avoid
@@ -31,6 +31,5 @@ index f6a8e4636..c647486f3 100644
      result = (char *) xmlEncodeEntitiesReentrant(NULL, BAD_CAST buffer);
      if (result) {
  	xmlGenericError(xmlGenericErrorContext, "%s", result);
--- 
+--
 GitLab
-

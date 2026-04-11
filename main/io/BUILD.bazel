@@ -1,0 +1,138 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary")
+
+_COPTS = [
+    "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs",
+    "/EHsc",
+    "/Dsnprintf=_snprintf",
+    # wchar_t as typedef (not native type) so sal_Unicode = unsigned short
+    # matches UNO type-system specialisations in cppu/unotype.hxx
+    "/Zc:wchar_t-",
+    "/Imain/io/inc/pch",
+]
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK",
+    "SHAREDLIB", "_DLL_",
+]
+
+_DEPS = [
+    "//main/sal:sal_headers",
+    "//main/cppu:cppu_headers",
+    "//main/cppuhelper:cppuhelper_headers",
+    "//main/udkapi:udkapi_idl_headers",
+    "//main/stlport:stlport",
+]
+
+_LINK_DEPS = [
+    "//main/sal:sal_implib",
+    "//main/cppu:cppu3_implib",
+    "//main/cppuhelper:cppuhelper_implib",
+]
+
+_LINKOPTS = [
+    "$(execpath //main/sal:sal_implib)",
+    "$(execpath //main/cppu:cppu3_implib)",
+    "$(execpath //main/cppuhelper:cppuhelper_implib)",
+    "/MANIFEST:NO",
+]
+
+# ── streams.dll ───────────────────────────────────────────────────
+# UNO component: data streams, pipes, pump, mark streams
+cc_binary(
+    name = "streams",
+    srcs = [
+        "source/stm/factreg.cxx",
+        "source/stm/factreg.hxx",
+        "source/stm/odata.cxx",
+        "source/stm/omark.cxx",
+        "source/stm/opipe.cxx",
+        "source/stm/opump.cxx",
+        "source/stm/streamhelper.cxx",
+        "source/stm/streamhelper.hxx",
+        "inc/pch/precompiled_io.hxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    deps = _DEPS,
+    additional_linker_inputs = _LINK_DEPS,
+    linkshared = True,
+    linkopts = _LINKOPTS,
+    visibility = ["//visibility:public"],
+)
+
+# ── acceptor.dll ──────────────────────────────────────────────────
+# UNO component: pipe/socket acceptor
+cc_binary(
+    name = "acceptor",
+    srcs = [
+        "source/acceptor/acceptor.cxx",
+        "source/acceptor/acceptor.hxx",
+        "source/acceptor/acc_pipe.cxx",
+        "source/acceptor/acc_socket.cxx",
+        "inc/pch/precompiled_io.hxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    deps = _DEPS,
+    additional_linker_inputs = _LINK_DEPS,
+    linkshared = True,
+    linkopts = _LINKOPTS,
+    visibility = ["//visibility:public"],
+)
+
+# ── connector.dll ─────────────────────────────────────────────────
+# UNO component: pipe/socket connector
+cc_binary(
+    name = "connector",
+    srcs = [
+        "source/connector/connector.cxx",
+        "source/connector/connector.hxx",
+        "source/connector/ctr_pipe.cxx",
+        "source/connector/ctr_socket.cxx",
+        "inc/pch/precompiled_io.hxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    deps = _DEPS,
+    additional_linker_inputs = _LINK_DEPS,
+    linkshared = True,
+    linkopts = _LINKOPTS,
+    visibility = ["//visibility:public"],
+)
+
+# ── textinstream.dll ──────────────────────────────────────────────
+# UNO component: text input stream
+cc_binary(
+    name = "textinstream",
+    srcs = [
+        "source/TextInputStream/TextInputStream.cxx",
+        "inc/pch/precompiled_io.hxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    deps = _DEPS,
+    additional_linker_inputs = _LINK_DEPS,
+    linkshared = True,
+    linkopts = _LINKOPTS,
+    visibility = ["//visibility:public"],
+)
+
+# ── textoutstream.dll ─────────────────────────────────────────────
+# UNO component: text output stream
+cc_binary(
+    name = "textoutstream",
+    srcs = [
+        "source/TextOutputStream/TextOutputStream.cxx",
+        "inc/pch/precompiled_io.hxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    deps = _DEPS,
+    additional_linker_inputs = _LINK_DEPS,
+    linkshared = True,
+    linkopts = _LINKOPTS,
+    visibility = ["//visibility:public"],
+)

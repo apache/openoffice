@@ -1,17 +1,5 @@
 load("@rules_cc//cc:defs.bzl", "cc_library")
 
-# ── config.h ──────────────────────────────────────────────────────
-# libxml2 sources use #include "config.h" (quote-style, root-relative).
-# On Windows the tarball ships win32/config.h; copy it to the package
-# root so that the sources can find it through includes = ["."].
-genrule(
-    name = "config_h",
-    srcs = ["win32/config.h"],
-    outs = ["config.h"],
-    cmd     = "cp $< $@",
-    cmd_bat = "copy $< $@",
-)
-
 # ── Source files ──────────────────────────────────────────────────
 # All C files that form the libxml2 library.
 # Excluded:
@@ -21,6 +9,9 @@ genrule(
 #                   complains about undefined symbols with newer toolchains
 #   xmllint.c / xmlcatalog.c — command-line tools, not the library
 #   test*.c / run*.c         — test harnesses
+#   nanoftp.c     — FTP networking; needs SEND_ARG2_CAST/GETHOSTBYNAME_ARG_CAST
+#                   from configure; unused for XML-only consumers (jvmfwk etc.)
+#   nanohttp.c    — HTTP networking; same reason
 LIBXML2_SRCS = [
     "buf.c",
     "c14n.c",
@@ -38,8 +29,6 @@ LIBXML2_SRCS = [
     "HTMLtree.c",
     "legacy.c",
     "list.c",
-    "nanoftp.c",
-    "nanohttp.c",
     "parser.c",
     "parserInternals.c",
     "pattern.c",
@@ -100,7 +89,7 @@ LIBXML2_UNIX_DEFINES = []
 cc_library(
     name = "libxml2",
     srcs = LIBXML2_SRCS,
-    hdrs = glob(["include/libxml/*.h"]) + [":config_h"],
+    hdrs = glob(["include/libxml/*.h"]) + ["config.h"],
     # "."        → sources find config.h as #include "config.h"
     # "include"  → consumers use #include <libxml/parser.h>
     includes = [".", "include"],

@@ -3,14 +3,15 @@
   "strip_prefix": "libxml2-2.9.10",
   "url": "http://xmlsoft.org/sources/libxml2-2.9.10.tar.gz",
   "overlay": {
-    "MODULE.bazel": "sha256-wJcXipHT2ZtL5FKSS0t9tTkM55X57CoukgKEvSBPGLE=",
-    "BUILD.bazel": "sha256-XQ/4fRibe5OmyNx/xca1mWigbpSIydSzklzZzml/I4A="
+    "MODULE.bazel": "sha256-GKP9UdK6+wLbE2hwQLNqE5KwrsMwbgF2OkYO+3NzF44=",
+    "BUILD.bazel": "sha256-6cnLivmninUmuEIWfYM5tFSSzGcFgxtM8YJTNp0z+nU=",
+    "config.h": "sha256-0q1piPTKtJhp7wiJymXafeXN63Ixe5KOHLUsm5DkBiM="
   },
   "patches": {
-    "libxml2-configure.patch": "sha256-kyEpZRJicq2s4WKNwh8YCc2dTj85wGVbjIhB/9XWHOs=",
-    "0e1a49c8907645d2e155f0d89d4d9895ac5112b5.patch": "sha256-DanurB4Ib0+Y5vLKA0DZjiskBP5pNDRv+fJ5k13lXuk=",
-    "50f06b3efb638efb0abd95dc62dca05ae67882c2.patch": "sha256-WfzrxS3QACQ+jocukCe4q92xe+8pPiQrUEl11mU/fhU=",
-    "7ffcd44d7e6c46704f8af0321d9314cd26e0e18a.patch": "sha256-pLoxlVp2Zc7R7aA2a8H2wQyCOfy+M1a1pNYvnARU/q4="
+    "libxml2-configure.patch": "sha256-v6zF4d9QHqg0Zcf+9bHGfIQnUokvPdPU5fpspmPrlUg=",
+    "0e1a49c8907645d2e155f0d89d4d9895ac5112b5.patch": "sha256-bVlQDhiZkdqbJFmUOvpn2YKWtlz+cXApV49h3vkiNpg=",
+    "50f06b3efb638efb0abd95dc62dca05ae67882c2.patch": "sha256-Lbyak7hUkPUbIT4wE2OanySnNhBXfhu24+XJyUyhUwo=",
+    "7ffcd44d7e6c46704f8af0321d9314cd26e0e18a.patch": "sha256-JUxf0vAw7i+bGXavAJZPYCWRKYLijIvi9Eq1mhPT0Sg="
   },
   "patch_strip": 1
 }

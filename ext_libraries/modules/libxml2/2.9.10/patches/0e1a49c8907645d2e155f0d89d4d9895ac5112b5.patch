@@ -13,10 +13,10 @@ Signed-off-by: Zhipeng Xie <xiezhipeng1@huawei.com>
  parser.c | 3 ++-
  1 file changed, 2 insertions(+), 1 deletion(-)
 
-diff --git misc/libxml2-2.9.10/parser.c misc/build/libxml2-2.9.10/parser.c
+diff --git a/parser.c b/parser.c
 index d1c319631..a34bb6cdd 100644
---- misc/libxml2-2.9.10/parser.c
-+++ misc/build/libxml2-2.9.10/parser.c
+--- a/parser.c
++++ b/parser.c
 @@ -2646,7 +2646,8 @@ xmlStringLenDecodeEntities(xmlParserCtxtPtr ctxt, const xmlChar *str, int len,
      else
          c = 0;
@@ -24,9 +24,8 @@ index d1c319631..a34bb6cdd 100644
 -	   (c != end2) && (c != end3)) {
 +           (c != end2) && (c != end3) &&
 +           (ctxt->instate != XML_PARSER_EOF)) {
- 
+
  	if (c == 0) break;
          if ((c == '&') && (str[1] == '#')) {
--- 
+--
 GitLab
-
