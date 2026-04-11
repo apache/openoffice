@@ -1,0 +1,139 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK",
+    "SHAREDLIB", "_DLL_",
+    "PACKAGE_DLLIMPLEMENTATION",
+    "Z_PREFIX",     # match zlib Z_PREFIX build
+    "SYSTEM_ZLIB",  # use <zlib.h> directly (avoids external/zlib/zlib.h path)
+]
+
+_COMMON_DEPS = [
+    "//main/sal:sal_headers",
+    "//main/cppu:cppu_headers",
+    "//main/cppuhelper:cppuhelper_headers",
+    "//main/salhelper:salhelper_headers",
+    "//main/comphelper:comphelper_headers",
+    "//main/ucbhelper:ucbhelper_headers",
+    "//main/sax:sax_headers",
+    "//main/udkapi:udkapi_idl_headers",
+    "//main/offapi:offapi_idl_headers",
+    "//main/vos:vos_headers",
+    "//main/stlport:stlport",
+    "@boost.legacy//:boost.legacy",
+]
+
+_COMMON_COPTS = [
+    "/Imain/package/inc",
+    "/Imain/package/inc/pch",
+    "/Imain/package/source/package/zippackage",
+    "/Imain/package/source/package/zipapi",
+    "/Imain/package/source/package/manifest",
+    "/Imain/package/source/xstor",
+    "/Zc:wchar_t-",
+]
+
+_PACKAGE2_SRCS = [
+    # manifest
+    "source/package/manifest/ManifestExport.cxx",
+    "source/package/manifest/ManifestImport.cxx",
+    "source/package/manifest/ManifestReader.cxx",
+    "source/package/manifest/ManifestWriter.cxx",
+    "source/package/manifest/UnoRegister.cxx",
+    # zipapi
+    "source/package/zipapi/ByteChucker.cxx",
+    "source/package/zipapi/ByteGrabber.cxx",
+    "source/package/zipapi/CRC32.cxx",
+    "source/package/zipapi/Deflater.cxx",
+    "source/package/zipapi/Inflater.cxx",
+    "source/package/zipapi/XUnbufferedStream.cxx",
+    "source/package/zipapi/ZipEnumeration.cxx",
+    "source/package/zipapi/ZipFile.cxx",
+    "source/package/zipapi/ZipOutputStream.cxx",
+    "source/package/zipapi/blowfishcontext.cxx",
+    "source/package/zipapi/sha1context.cxx",
+    # zippackage
+    "source/package/zippackage/ZipPackage.cxx",
+    "source/package/zippackage/ZipPackageBuffer.cxx",
+    "source/package/zippackage/ZipPackageEntry.cxx",
+    "source/package/zippackage/ZipPackageFolder.cxx",
+    "source/package/zippackage/ZipPackageFolderEnumeration.cxx",
+    "source/package/zippackage/ZipPackageSink.cxx",
+    "source/package/zippackage/ZipPackageStream.cxx",
+    "source/package/zippackage/wrapstreamforshare.cxx",
+    "source/package/zippackage/zipfileaccess.cxx",
+]
+
+_XSTOR_SRCS = [
+    "source/xstor/disposelistener.cxx",
+    "source/xstor/ocompinstream.cxx",
+    "source/xstor/ohierarchyholder.cxx",
+    "source/xstor/oseekinstream.cxx",
+    "source/xstor/owriteablestream.cxx",
+    "source/xstor/register.cxx",
+    "source/xstor/selfterminatefilestream.cxx",
+    "source/xstor/switchpersistencestream.cxx",
+    "source/xstor/xfactory.cxx",
+    "source/xstor/xstorage.cxx",
+]
+
+# ── package2.dll ──────────────────────────────────────────────────
+# ZIP/ODF package handling component. Uses zlib for compression.
+# Exports via SAL_DLLPUBLIC_EXPORT — no DEF file.
+cc_binary(
+    name = "package2",
+    srcs = _PACKAGE2_SRCS,
+    copts = _COMMON_COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    deps = _COMMON_DEPS + [
+        "@zlib//:zlib",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/ucbhelper:ucbhelper_implib",
+        "//main/sax:sax_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/ucbhelper:ucbhelper_implib)",
+        "$(execpath //main/sax:sax_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── xstor.dll ─────────────────────────────────────────────────────
+# Compound document storage component.
+# Exports via SAL_DLLPUBLIC_EXPORT — no DEF file.
+cc_binary(
+    name = "xstor",
+    srcs = _XSTOR_SRCS,
+    copts = _COMMON_COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    deps = _COMMON_DEPS,
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)

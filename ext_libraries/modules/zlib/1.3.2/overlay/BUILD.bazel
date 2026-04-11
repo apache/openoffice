@@ -1,0 +1,52 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+# ── zlib ──────────────────────────────────────────────────────────
+# Standard zlib compression library, built as a static library.
+cc_library(
+    name = "zlib",
+    srcs = [
+        "adler32.c",
+        "compress.c",
+        "crc32.c",
+        "deflate.c",
+        "infback.c",
+        "inffast.c",
+        "inflate.c",
+        "inftrees.c",
+        "trees.c",
+        "uncompr.c",
+        "zutil.c",
+    ],
+    hdrs = [
+        "zlib.h",
+        "zconf.h",
+        "crc32.h",
+        "deflate.h",
+        "gzguts.h",
+        "inffast.h",
+        "inffixed.h",
+        "inflate.h",
+        "inftrees.h",
+        "trees.h",
+        "zutil.h",
+    ],
+    includes = ["."],
+    defines = select({
+        "@platforms//os:windows": [
+            "WIN32",
+            "_CRT_SECURE_NO_WARNINGS",
+            "Z_PREFIX",  # prefix all symbols with z_ to avoid name conflicts
+        ],
+        "//conditions:default": ["Z_PREFIX"],
+    }),
+    copts = select({
+        "@platforms//os:windows": [
+            "/W3",
+            "/wd4996",
+            "/wd4267",
+            "/wd4244",
+        ],
+        "//conditions:default": ["-w"],
+    }),
+    visibility = ["//visibility:public"],
+)

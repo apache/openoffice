@@ -106,6 +106,7 @@ ucbhelper     ✅  (ucbhelper.dll)
 comphelper    ✅  (comphelp.dll)
 configmgr     ✅  (configmgr.uno.dll)
 sax           ✅  (sax.dll, expwrap.dll, fastsax.dll)
+package       ✅  (package2.dll, xstor.dll)
             │
             ▼
           ??? ← next

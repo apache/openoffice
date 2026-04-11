@@ -1,7 +1,11 @@
 {
     "url": "https://www.zlib.net/fossils/zlib-1.3.2.tar.gz",
-    "integrity": "sha256-mpOyt9/ax3zrpaVYpYDnRmfdb+3kWFuR7vtg8Dty3yM=",
+    "integrity": "sha256-uzKaCizQJ00FUZ1hxmfAYuBpkNcuEl7i36jeZPARnRY=",
     "strip_prefix": "zlib-1.3.2",
-    "patch_files": [],
-    "patches": {}
+    "overlay": {
+        "MODULE.bazel": "sha256-QXY/uMLft3TwJzfxB+MjJfp9e7zgFlfziArQ2u5LpKs=",
+        "BUILD.bazel": "sha256-KQVLLK3gSlbN9jD2MiWfc+DsmSnbqAGQIBNTZVlIAbM="
+    },
+    "patches": {},
+    "patch_strip": 0
 }
