@@ -1,0 +1,127 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK",
+    "SHAREDLIB", "_DLL_",
+    "I18NPOOL_DLLIMPLEMENTATION",
+]
+
+_COMMON_DEPS = [
+    "//main/sal:sal_headers",
+    "//main/cppu:cppu_headers",
+    "//main/cppuhelper:cppuhelper_headers",
+    "//main/udkapi:udkapi_idl_headers",
+    "//main/offapi:offapi_idl_headers",
+    "//main/stlport:stlport",
+]
+
+_COMMON_COPTS = [
+    "/Imain/i18npool/inc",
+    "/Imain/i18npool/inc/pch",
+    "/Zc:wchar_t-",
+]
+
+# ── public headers ────────────────────────────────────────────────
+cc_library(
+    name = "i18npool_headers",
+    hdrs = glob(["inc/**"]),
+    strip_include_prefix = "inc",
+    deps = ["//main/sal:sal_headers"],
+    visibility = ["//visibility:public"],
+)
+
+# inwnt.cxx is #included by insys.cxx via platform guard — declare as
+# textual_hdrs so Bazel makes the file available without compiling it separately.
+cc_library(
+    name = "_isolang_impl",
+    textual_hdrs = [
+        "source/isolang/inwnt.cxx",
+        "source/isolang/inunx.cxx",
+    ],
+    copts = _COMMON_COPTS,
+    deps = _COMMON_DEPS,
+)
+
+# ── i18nisolang1.dll ──────────────────────────────────────────────
+# Language/locale identification; no ICU dependency.
+# Exports class MsLangId via I18NPOOL_DLLPUBLIC (SAL_DLLPUBLIC_EXPORT).
+cc_binary(
+    name = "i18nisolang1",
+    srcs = [
+        "source/isolang/insys.cxx",   # includes inwnt.cxx on WNT
+        "source/isolang/isolang.cxx",
+        "source/isolang/mslangid.cxx",
+    ],
+    copts = _COMMON_COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    deps = _COMMON_DEPS + [":_isolang_impl"],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "i18nisolang1_implib",
+    srcs = [":i18nisolang1"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── i18npaper.dll ─────────────────────────────────────────────────
+# Paper size information; no ICU dependency.
+cc_binary(
+    name = "i18npaper",
+    srcs = ["source/paper/paper.cxx"],
+    copts = _COMMON_COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    deps = _COMMON_DEPS + [
+        ":i18npool_headers",
+        "//main/comphelper:comphelper_headers",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/comphelper:comphelp_implib",
+        ":i18nisolang1_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath :i18nisolang1_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "i18npaper_implib",
+    srcs = [":i18npaper"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── Source exports for //main/i18npool/pool ───────────────────────
+# Expose .cxx sources and breakiterator .txt files to the pool package.
+exports_files(
+    glob([
+        "source/**/*.cxx",
+        "source/breakiterator/data/*.txt",
+    ]),
+    visibility = ["//main/i18npool/pool:__pkg__"],
+)
+
+# ── i18npool.uno.dll, i18nsearch.dll ─────────────────────────────
+# ICU-dependent targets — see main/i18npool/pool/BUILD.bazel.

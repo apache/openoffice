@@ -1,0 +1,306 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("//main/i18npool:breakiter_pipeline.bzl", "breakiter_data")
+
+# ── Compile-time defines ──────────────────────────────────────────
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK",
+    "SHAREDLIB", "_DLL_",
+    "I18NPOOL_DLLIMPLEMENTATION",
+]
+
+_COMMON_DEPS = [
+    "//main/sal:sal_headers",
+    "//main/cppu:cppu_headers",
+    "//main/cppuhelper:cppuhelper_headers",
+    "//main/udkapi:udkapi_idl_headers",
+    "//main/offapi:offapi_idl_headers",
+    "//main/stlport:stlport",
+]
+
+_COMMON_COPTS = [
+    "/Imain/i18npool/inc",
+    "/Imain/i18npool/inc/pch",
+    "/Zc:wchar_t-",
+]
+
+# ── lrl_include.hxx ──────────────────────────────────────────────
+# Defines LOCAL_RULE_LANGS for collator_unicode.cxx.
+# Language list derived from collator/data/ .txt file prefixes (unique, sorted):
+#   dz_* hu_* ja_* ko_* ku_* ln_* my_* ne_* zh_*
+genrule(
+    name = "lrl_include_hxx",
+    outs = ["lrl_include.hxx"],
+    cmd_bat = "@echo #define LOCAL_RULE_LANGS \"dz hu ja ko ku ln my ne zh\" > \"$@\"",
+)
+
+# Wrap the generated header in a cc_library so Bazel creates a _virtual_includes
+# symlink and propagates the correct -I path to dependents.
+# strip_include_prefix strips "main/i18npool/pool" from the repo-root path
+# so the header is includable as just "lrl_include.hxx".
+cc_library(
+    name = "lrl_include_lib",
+    hdrs = [":lrl_include_hxx"],
+    strip_include_prefix = "/main/i18npool/pool",
+)
+
+# ── Breakiterator data pipeline ───────────────────────────────────
+# char_in.txt defines $Prepend = [\p{Grapheme_Cluster_Break = Prepend}] which was
+# empty in Unicode 6.0 (ICU 49). ICU 4.6+ treats empty property sets as an error.
+# Patch char_in-icu49.patch removes the Prepend definition and its two rules (no-ops).
+# line.txt and sent.txt are dropped entirely: BreakIterator_Unicode::loadICUBreakIterator()
+# falls back to ICU's own built-in break rules when OpenOffice-specific files are absent.
+genrule(
+    name = "char_in_txt_patched",
+    srcs = ["//main/i18npool:source/breakiterator/data/char_in.txt"],
+    outs = ["char_in_patched.txt"],
+    # char_in-icu49.patch (sibling file) documents the change as a proper unified diff.
+    # findstr /v filters out every line that contains the literal string "$Prepend":
+    #   - the variable definition  ($Prepend = [...])
+    #   - the forward rule         ($Prepend [^...])
+    #   - the reverse rule         ([^...] $Prepend)
+    # $$Prepend → $Prepend after Bazel make-variable escaping.
+    cmd_bat = "findstr /v /c:\"$$Prepend\" \"$(execpath //main/i18npool:source/breakiterator/data/char_in.txt)\" > \"$@\"",
+)
+
+breakiter_data(
+    name = "breakiter_generated",
+    srcs = [
+        ":char_in_txt_patched",
+        "//main/i18npool:source/breakiterator/data/count_word.txt",
+        "//main/i18npool:source/breakiterator/data/count_word_fi.txt",
+        "//main/i18npool:source/breakiterator/data/dict_word.txt",
+        "//main/i18npool:source/breakiterator/data/dict_word_ca.txt",
+        "//main/i18npool:source/breakiterator/data/dict_word_fi.txt",
+        "//main/i18npool:source/breakiterator/data/dict_word_he.txt",
+        "//main/i18npool:source/breakiterator/data/dict_word_hu.txt",
+        "//main/i18npool:source/breakiterator/data/dict_word_nodash.txt",
+        "//main/i18npool:source/breakiterator/data/dict_word_prepostdash.txt",
+        "//main/i18npool:source/breakiterator/data/edit_word.txt",
+        "//main/i18npool:source/breakiterator/data/edit_word_he.txt",
+        "//main/i18npool:source/breakiterator/data/edit_word_hu.txt",
+        # line.txt and sent.txt omitted: per ext_libraries/modules/icu/Readme.md,
+        # BreakIterator_Unicode::loadICUBreakIterator() falls back to ICU's own
+        # built-in break rules when the custom files cannot be loaded.  The
+        # OpenOffice-specific rules do not compile cleanly against ICU 49 anyway.
+    ],
+    genbrk    = "@icu//:genbrk",
+    gencmn    = "@icu//:gencmn",
+    genccode  = "@icu//:genccode",
+    icudt_dat = "@icu//:icudt49l_dat",
+)
+
+# ── Per-subsystem object libraries ───────────────────────────────
+# indexentry, nativenumber, and transliteration each carry a local
+# data/ subdirectory with headers that must be found via their own
+# parent directory on the include path.  The two data/numberchar.h
+# files differ between nativenumber and transliteration, so they
+# cannot share a single -I path — each gets its own cc_library.
+
+_SUBSYSTEM_DEPS = _COMMON_DEPS + [
+    "//main/i18npool:i18npool_headers",
+    "//main/i18nutil:i18nutil_headers",
+    "//main/comphelper:comphelper_headers",
+    "@icu//:icuuc_headers",
+    "@icu//:icui18n_headers",
+    ":lrl_include_lib",
+]
+
+cc_library(
+    name = "_indexentry_srcs",
+    srcs = [
+        "//main/i18npool:source/indexentry/indexentrysupplier.cxx",
+        "//main/i18npool:source/indexentry/indexentrysupplier_asian.cxx",
+        "//main/i18npool:source/indexentry/indexentrysupplier_ja_phonetic.cxx",
+        "//main/i18npool:source/indexentry/indexentrysupplier_default.cxx",
+        "//main/i18npool:source/indexentry/indexentrysupplier_common.cxx",
+    ],
+    copts = _COMMON_COPTS + ["/Imain/i18npool/source/indexentry"],
+    local_defines = _DEFINES,
+    deps = _SUBSYSTEM_DEPS,
+)
+
+cc_library(
+    name = "_nativenumber_srcs",
+    srcs = [
+        "//main/i18npool:source/nativenumber/nativenumbersupplier.cxx",
+    ],
+    copts = _COMMON_COPTS + ["/Imain/i18npool/source/nativenumber"],
+    local_defines = _DEFINES,
+    deps = _SUBSYSTEM_DEPS,
+)
+
+cc_library(
+    name = "_transliteration_srcs",
+    srcs = [
+        "//main/i18npool:source/transliteration/transliteration_body.cxx",
+        "//main/i18npool:source/transliteration/transliteration_caseignore.cxx",
+        "//main/i18npool:source/transliteration/transliterationImpl.cxx",
+        "//main/i18npool:source/transliteration/transliteration_commonclass.cxx",
+        "//main/i18npool:source/transliteration/transliteration_OneToOne.cxx",
+        "//main/i18npool:source/transliteration/transliteration_Ignore.cxx",
+        "//main/i18npool:source/transliteration/transliteration_Numeric.cxx",
+        "//main/i18npool:source/transliteration/ignoreKiKuFollowedBySa_ja_JP.cxx",
+        "//main/i18npool:source/transliteration/ignoreSeparator_ja_JP.cxx",
+        "//main/i18npool:source/transliteration/ignoreSpace_ja_JP.cxx",
+        "//main/i18npool:source/transliteration/ignoreMiddleDot_ja_JP.cxx",
+        "//main/i18npool:source/transliteration/textToPronounce_zh.cxx",
+        "//main/i18npool:source/transliteration/numtochar.cxx",
+        "//main/i18npool:source/transliteration/numtotext_cjk.cxx",
+        "//main/i18npool:source/transliteration/chartonum.cxx",
+        "//main/i18npool:source/transliteration/texttonum.cxx",
+        # individual transliteration classes (each in their own file)
+        "//main/i18npool:source/transliteration/fullwidthToHalfwidth.cxx",
+        "//main/i18npool:source/transliteration/halfwidthToFullwidth.cxx",
+        "//main/i18npool:source/transliteration/hiraganaToKatakana.cxx",
+        "//main/i18npool:source/transliteration/katakanaToHiragana.cxx",
+        "//main/i18npool:source/transliteration/smallToLarge_ja_JP.cxx",
+        "//main/i18npool:source/transliteration/largeToSmall_ja_JP.cxx",
+        "//main/i18npool:source/transliteration/ignoreKana.cxx",
+        "//main/i18npool:source/transliteration/ignoreWidth.cxx",
+        "//main/i18npool:source/transliteration/ignoreBaFa_ja_JP.cxx",
+        "//main/i18npool:source/transliteration/ignoreHyuByu_ja_JP.cxx",
+        "//main/i18npool:source/transliteration/ignoreIandEfollowedByYa_ja_JP.cxx",
+        "//main/i18npool:source/transliteration/ignoreIterationMark_ja_JP.cxx",
+        "//main/i18npool:source/transliteration/ignoreMinusSign_ja_JP.cxx",
+        "//main/i18npool:source/transliteration/ignoreProlongedSoundMark_ja_JP.cxx",
+        "//main/i18npool:source/transliteration/ignoreSeZe_ja_JP.cxx",
+        "//main/i18npool:source/transliteration/ignoreSize_ja_JP.cxx",
+        "//main/i18npool:source/transliteration/ignoreTiJi_ja_JP.cxx",
+        "//main/i18npool:source/transliteration/ignoreTraditionalKana_ja_JP.cxx",
+        "//main/i18npool:source/transliteration/ignoreTraditionalKanji_ja_JP.cxx",
+        "//main/i18npool:source/transliteration/ignoreZiZu_ja_JP.cxx",
+    ],
+    copts = _COMMON_COPTS + ["/Imain/i18npool/source/transliteration"],
+    local_defines = _DEFINES,
+    deps = _SUBSYSTEM_DEPS,
+)
+
+# ── i18npool.uno.dll ─────────────────────────────────────────────
+cc_binary(
+    name = "i18npool",
+    srcs = [
+        # breakiterator
+        "//main/i18npool:source/breakiterator/breakiteratorImpl.cxx",
+        "//main/i18npool:source/breakiterator/breakiterator_cjk.cxx",
+        "//main/i18npool:source/breakiterator/breakiterator_ctl.cxx",
+        "//main/i18npool:source/breakiterator/breakiterator_th.cxx",
+        "//main/i18npool:source/breakiterator/breakiterator_unicode.cxx",
+        "//main/i18npool:source/breakiterator/xdictionary.cxx",
+        # calendar
+        "//main/i18npool:source/calendar/calendarImpl.cxx",
+        "//main/i18npool:source/calendar/calendar_gregorian.cxx",
+        "//main/i18npool:source/calendar/calendar_hijri.cxx",
+        "//main/i18npool:source/calendar/calendar_jewish.cxx",
+        # characterclassification
+        "//main/i18npool:source/characterclassification/characterclassificationImpl.cxx",
+        "//main/i18npool:source/characterclassification/cclass_unicode.cxx",
+        "//main/i18npool:source/characterclassification/cclass_unicode_parser.cxx",
+        "//main/i18npool:source/characterclassification/scripttypedetector.cxx",
+        # collator
+        "//main/i18npool:source/collator/collatorImpl.cxx",
+        "//main/i18npool:source/collator/chaptercollator.cxx",
+        "//main/i18npool:source/collator/collator_unicode.cxx",
+        # defaultnumberingprovider
+        "//main/i18npool:source/defaultnumberingprovider/defaultnumberingprovider.cxx",
+        # inputchecker
+        "//main/i18npool:source/inputchecker/inputsequencechecker.cxx",
+        "//main/i18npool:source/inputchecker/inputsequencechecker_th.cxx",
+        "//main/i18npool:source/inputchecker/inputsequencechecker_hi.cxx",
+        # localedata
+        "//main/i18npool:source/localedata/localedata.cxx",
+        # numberformatcode
+        "//main/i18npool:source/numberformatcode/numberformatcode.cxx",
+        # ordinalsuffix
+        "//main/i18npool:source/ordinalsuffix/ordinalsuffix.cxx",
+        # registerservices
+        "//main/i18npool:source/registerservices/registerservices.cxx",
+        # textconversion
+        "//main/i18npool:source/textconversion/textconversionImpl.cxx",
+        "//main/i18npool:source/textconversion/textconversion.cxx",
+        "//main/i18npool:source/textconversion/textconversion_ko.cxx",
+        "//main/i18npool:source/textconversion/textconversion_zh.cxx",
+        # generated breakiterator C files + dat file
+        ":breakiter_generated",
+    ],
+    copts = _COMMON_COPTS + [
+        "/Imain/i18npool/source/collator",
+        "/Imain/i18npool/source/breakiterator",
+    ],
+    defines = _DEFINES,
+    linkshared = True,
+    deps = _COMMON_DEPS + [
+        "//main/i18npool:i18npool_headers",
+        "//main/i18nutil:i18nutil_headers",
+        "//main/comphelper:comphelper_headers",
+        "@icu//:icuuc_headers",
+        "@icu//:icui18n_headers",
+        ":lrl_include_lib",
+        ":_indexentry_srcs",
+        ":_nativenumber_srcs",
+        ":_transliteration_srcs",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/i18npool:i18nisolang1_implib",
+        "//main/i18nutil:i18nutil_implib",
+        "@icu//:icuuc_implib",
+        "@icu//:icui18n_implib",
+        "@icu//:icudata_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/i18npool:i18nisolang1_implib)",
+        "$(execpath //main/i18nutil:i18nutil_implib)",
+        "$(execpath @icu//:icuuc_implib)",
+        "$(execpath @icu//:icui18n_implib)",
+        "$(execpath @icu//:icudata_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── i18nsearch.dll ───────────────────────────────────────────────
+cc_binary(
+    name = "i18nsearch",
+    srcs = [
+        "//main/i18npool:source/search/levdis.cxx",
+        "//main/i18npool:source/search/textsearch.cxx",
+    ],
+    copts = _COMMON_COPTS + [
+        "/Imain/i18npool/source/search",
+    ],
+    defines = _DEFINES,
+    linkshared = True,
+    deps = _COMMON_DEPS + [
+        "//main/i18npool:i18npool_headers",
+        "@icu//:icuuc_headers",
+        "@icu//:icui18n_headers",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/i18npool:i18nisolang1_implib",
+        "@icu//:icuuc_implib",
+        "@icu//:icui18n_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/i18npool:i18nisolang1_implib)",
+        "$(execpath @icu//:icuuc_implib)",
+        "$(execpath @icu//:icui18n_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)

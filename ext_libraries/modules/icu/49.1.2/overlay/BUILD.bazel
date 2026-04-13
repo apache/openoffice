@@ -1,0 +1,321 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+# ICU 49.1.2 — VS2008 (MSVC 9.0) compatible
+# Last major ICU release with official VS2008 project files (allinone.sln).
+# Sources unpack to icu/ so strip_prefix="icu" → BUILD paths use source/...
+
+_WIN_COPTS = [
+    "/Z7",      # embed debug info in .obj (avoids PDB server contention with parallel links)
+    "/MT",      # static CRT — tools must be self-contained (no msvcr90.dll at exec time)
+    "/W3",
+    # NOTE: _WIN_COPTS is for static build tools only.
+    # Shared DLLs (icuuc, icui18n, icudata) use _WIN_DLL_COPTS below.
+]
+
+# Copts for shared DLLs shipped with OpenOffice — use dynamic CRT (/MD)
+# so they don't drag in a second copy of the CRT alongside the OpenOffice runtime.
+_WIN_DLL_COPTS = [
+    "/Z7",
+    "/MD",      # dynamic CRT — matches the rest of OpenOffice
+    "/Zc:wchar_t-",  # wchar_t = unsigned short, matching sal_Unicode and i18npool consumers
+    "/W3",
+    "/wd4996",  # 'X': was declared deprecated
+    "/wd4244",  # conversion from 'X' to 'Y', possible loss of data
+    "/wd4267",  # 'argument': conversion from 'size_t' to 'int'
+    "/wd4305",  # 'argument': truncation from 'double' to 'float'
+    "/wd4312",  # 'type cast': conversion from 'int' to 'X *' of greater size
+    "/wd4800",  # forcing value to bool 'true' or 'false'
+    "/wd4018",  # '<': signed/unsigned mismatch
+    "/wd4146",  # unary minus operator applied to unsigned type
+    "/wd4100",  # unreferenced formal parameter
+    "/wd4706",  # assignment within conditional expression
+    "/wd4701",  # potentially uninitialized local variable
+    "/wd4702",  # unreachable code
+    "/wd4311",  # pointer truncation
+    "/wd4334",  # result of 32-bit shift implicitly converted to 64 bits
+]
+
+_WIN_DEFINES = [
+    "WIN32",
+    "_CRT_SECURE_NO_WARNINGS",
+    "_CRT_NONSTDC_NO_WARNINGS",
+    "WINVER=0x0500",
+    "_WIN32_WINNT=0x0500",
+    # LOCALE_SNAME (0x005c) is Vista+ but used in ICU locmap.c.
+    # Define it so the code compiles; XP fallback paths are also present.
+    "LOCALE_SNAME=0x005c",
+]
+
+# ── ICU static libraries (for build tools) ────────────────────────
+# Use U_STATIC_IMPLEMENTATION so there are no dllexport/dllimport
+# attributes — tools link these in as plain static code.
+# U_STATIC_IMPLEMENTATION propagates to all dependents, ensuring
+# downstream code also compiles without dllimport for ICU symbols.
+
+cc_library(
+    name = "icuuc_static",
+    srcs = glob(["source/common/*.c", "source/common/*.cpp"]),
+    hdrs = glob(["source/common/unicode/*.h", "source/common/*.h"]),
+    includes = ["source/common"],
+    defines = ["U_STATIC_IMPLEMENTATION"],
+    local_defines = select({
+        "@platforms//os:windows": _WIN_DEFINES + ["U_COMMON_IMPLEMENTATION"],
+        "//conditions:default": ["U_COMMON_IMPLEMENTATION"],
+    }),
+    copts = select({
+        "@platforms//os:windows": _WIN_COPTS,
+        "//conditions:default": ["-w"],
+    }),
+    visibility = ["//visibility:public"],
+)
+
+cc_library(
+    name = "icui18n_static",
+    srcs = glob(["source/i18n/*.c", "source/i18n/*.cpp"]),
+    hdrs = glob(["source/i18n/unicode/*.h", "source/i18n/*.h"]),
+    includes = ["source/i18n"],
+    # U_STATIC_IMPLEMENTATION comes transitively from icuuc_static
+    local_defines = select({
+        "@platforms//os:windows": _WIN_DEFINES + ["U_I18N_IMPLEMENTATION"],
+        "//conditions:default": ["U_I18N_IMPLEMENTATION"],
+    }),
+    copts = select({
+        "@platforms//os:windows": _WIN_COPTS,
+        "//conditions:default": ["-w"],
+    }),
+    deps = [":icuuc_static"],
+    visibility = ["//visibility:public"],
+)
+
+cc_library(
+    name = "icudata_static",
+    srcs = ["source/stubdata/stubdata.c"],
+    local_defines = select({
+        "@platforms//os:windows": _WIN_DEFINES,
+        "//conditions:default": [],
+    }),
+    copts = select({
+        "@platforms//os:windows": _WIN_COPTS + ["/Isource/common"],
+        "//conditions:default": ["-w", "-Isource/common"],
+    }),
+    deps = [":icuuc_static"],
+    visibility = ["//visibility:public"],
+)
+
+cc_library(
+    name = "icu_toolutil_static",
+    srcs = glob(["source/tools/toolutil/*.cpp", "source/tools/toolutil/*.c"]),
+    hdrs = glob(["source/tools/toolutil/*.h"]),
+    includes = ["source/tools/toolutil"],
+    # U_STATIC_IMPLEMENTATION comes transitively from icuuc_static
+    local_defines = select({
+        "@platforms//os:windows": _WIN_DEFINES + ["U_TOOLUTIL_IMPLEMENTATION"],
+        "//conditions:default": ["U_TOOLUTIL_IMPLEMENTATION"],
+    }),
+    copts = select({
+        "@platforms//os:windows": _WIN_COPTS + ["/Isource/common", "/Isource/i18n"],
+        "//conditions:default": ["-w", "-Isource/common", "-Isource/i18n"],
+    }),
+    deps = [":icuuc_static", ":icui18n_static", ":icudata_static"],
+    visibility = ["//visibility:public"],
+)
+
+# ── Build-time ICU tools (statically linked) ──────────────────────
+# These run as genrule tools. Static linking avoids DLL-at-runtime
+# complications. Provide -d <icudt49l.dat dir> at invocation time.
+
+cc_binary(
+    name = "genbrk",
+    srcs = ["source/tools/genbrk/genbrk.cpp"],
+    copts = select({
+        "@platforms//os:windows": _WIN_COPTS + ["/Isource/common", "/Isource/i18n"],
+        "//conditions:default": ["-w", "-Isource/common", "-Isource/i18n"],
+    }),
+    local_defines = select({
+        "@platforms//os:windows": _WIN_DEFINES,
+        "//conditions:default": [],
+    }),
+    linkopts = select({
+        "@platforms//os:windows": ["advapi32.lib", "/NODEFAULTLIB:msvcrt.lib", "libcmt.lib", "/MANIFEST:NO"],
+        "//conditions:default": [],
+    }),
+    deps = [
+        ":icuuc_static",
+        ":icui18n_static",
+        ":icudata_static",
+        ":icu_toolutil_static",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+cc_binary(
+    name = "gencmn",
+    srcs = ["source/tools/gencmn/gencmn.c"],
+    copts = select({
+        "@platforms//os:windows": _WIN_COPTS + ["/Isource/common"],
+        "//conditions:default": ["-w", "-Isource/common"],
+    }),
+    local_defines = select({
+        "@platforms//os:windows": _WIN_DEFINES,
+        "//conditions:default": [],
+    }),
+    linkopts = select({
+        "@platforms//os:windows": ["advapi32.lib", "/NODEFAULTLIB:msvcrt.lib", "libcmt.lib", "/MANIFEST:NO"],
+        "//conditions:default": [],
+    }),
+    deps = [
+        ":icuuc_static",
+        ":icudata_static",
+        ":icu_toolutil_static",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+cc_binary(
+    name = "genccode",
+    srcs = ["source/tools/genccode/genccode.c"],
+    copts = select({
+        "@platforms//os:windows": _WIN_COPTS + ["/Isource/common"],
+        "//conditions:default": ["-w", "-Isource/common"],
+    }),
+    local_defines = select({
+        "@platforms//os:windows": _WIN_DEFINES,
+        "//conditions:default": [],
+    }),
+    linkopts = select({
+        "@platforms//os:windows": ["advapi32.lib", "/NODEFAULTLIB:msvcrt.lib", "libcmt.lib", "/MANIFEST:NO"],
+        "//conditions:default": [],
+    }),
+    deps = [
+        ":icuuc_static",
+        ":icudata_static",
+        ":icu_toolutil_static",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── Precompiled data file ─────────────────────────────────────────
+# Provide the precompiled ICU data file as a target so genrules can
+# pass it to build tools via -d <directory>.
+filegroup(
+    name = "icudt49l_dat",
+    srcs = ["source/data/in/icudt49l.dat"],
+    visibility = ["//visibility:public"],
+)
+
+# ── ICU shared DLLs (for i18npool.dll / i18nsearch.dll) ──────────
+# These are the DLLs that ship with OpenOffice and are loaded at runtime.
+# Consumers get __declspec(dllimport) via ICU's own macros.
+
+cc_binary(
+    name = "icuuc",
+    srcs = glob(
+        ["source/common/*.c", "source/common/*.cpp",
+         "source/common/unicode/*.h", "source/common/*.h"],
+    ),
+    includes = ["source/common"],
+    local_defines = select({
+        "@platforms//os:windows": _WIN_DEFINES + ["U_COMMON_IMPLEMENTATION"],
+        "//conditions:default": ["U_COMMON_IMPLEMENTATION"],
+    }),
+    copts = select({
+        "@platforms//os:windows": _WIN_DLL_COPTS,
+        "//conditions:default": ["-w"],
+    }),
+    linkshared = True,
+    additional_linker_inputs = [":icudata_implib"],
+    linkopts = select({
+        "@platforms//os:windows": [
+            "$(execpath :icudata_implib)",
+            "advapi32.lib",
+            "/MANIFEST:NO",
+        ],
+        "//conditions:default": [],
+    }),
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "icuuc_implib",
+    srcs = [":icuuc"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+cc_binary(
+    name = "icui18n",
+    srcs = glob(
+        ["source/i18n/*.c", "source/i18n/*.cpp",
+         "source/i18n/unicode/*.h", "source/i18n/*.h"],
+    ),
+    includes = ["source/i18n", "source/common"],
+    local_defines = select({
+        "@platforms//os:windows": _WIN_DEFINES + ["U_I18N_IMPLEMENTATION"],
+        "//conditions:default": ["U_I18N_IMPLEMENTATION"],
+    }),
+    copts = select({
+        "@platforms//os:windows": _WIN_DLL_COPTS,
+        "//conditions:default": ["-w"],
+    }),
+    linkshared = True,
+    additional_linker_inputs = [":icuuc_implib"],
+    linkopts = select({
+        "@platforms//os:windows": ["$(execpath :icuuc_implib)", "/MANIFEST:NO"],
+        "//conditions:default": [],
+    }),
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "icui18n_implib",
+    srcs = [":icui18n"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+cc_binary(
+    name = "icudata",
+    srcs = ["source/stubdata/stubdata.c"],
+    local_defines = select({
+        "@platforms//os:windows": _WIN_DEFINES,
+        "//conditions:default": [],
+    }),
+    copts = select({
+        "@platforms//os:windows": _WIN_DLL_COPTS,
+        "//conditions:default": ["-w"],
+    }),
+    linkshared = True,
+    linkopts = select({
+        "@platforms//os:windows": ["/MANIFEST:NO"],
+        "//conditions:default": [],
+    }),
+    deps = [":icuuc_headers"],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "icudata_implib",
+    srcs = [":icudata"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── Header-only cc_library for downstream consumers ───────────────
+# i18npool.dll, i18nsearch.dll etc. include ICU headers but link
+# against the DLLs via the _implib filegroups above.
+# No U_STATIC_IMPLEMENTATION here so consumers get __declspec(dllimport).
+
+cc_library(
+    name = "icuuc_headers",
+    hdrs = glob(["source/common/unicode/*.h"]),
+    includes = ["source/common"],
+    visibility = ["//visibility:public"],
+)
+
+cc_library(
+    name = "icui18n_headers",
+    hdrs = glob(["source/i18n/unicode/*.h"]),
+    includes = ["source/i18n"],
+    deps = [":icuuc_headers"],
+    visibility = ["//visibility:public"],
+)

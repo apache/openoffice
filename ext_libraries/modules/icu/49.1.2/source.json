@@ -1,0 +1,11 @@
+{
+    "url": "https://master.dl.sourceforge.net/project/icu/ICU4C/49.1/icu4c-49_1-src.tgz?viasf=1",
+    "integrity": "sha256-tjmfAJQdmCxk/vlrAJTdL3wUIfigwRNobV8SPa+Oq8o=",
+    "strip_prefix": "icu",
+    "overlay": {
+        "MODULE.bazel": "sha256-LLybXX2yzVNPHe9nD9y9ZT6gci+qkaan2W7Z/5/b4Oo=",
+        "BUILD.bazel": "sha256-ZDNPhUDtD1Ilm2JHZ3U6rfKjHrGZ8LtJvgPDQ7rD4zQ="
+    },
+    "patches": {},
+    "patch_strip": 0
+}

@@ -33,7 +33,7 @@ cc_binary(
         "source/utility/unicode_data.h",
         "source/utility/widthfolding_data.h",
     ],
-    copts = ["/Imain/i18nutil/source/utility"],
+    copts = ["/Imain/i18nutil/source/utility", "/Zc:wchar_t-"],
     defines = _DEFINES,
     linkshared = True,
     deps = [
@@ -52,5 +52,12 @@ cc_binary(
         "$(execpath //main/cppu:cppu3_implib)",
         "/MANIFEST:NO",
     ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "i18nutil_implib",
+    srcs = [":i18nutil"],
+    output_group = "interface_library",
     visibility = ["//visibility:public"],
 )

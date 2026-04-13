@@ -561,7 +561,9 @@ def _impl(ctx):
                     ],
                 ),
             ],
-            implies = ["generate_pdb_file"],
+            # No implies = ["generate_pdb_file"]: /Z7 embeds debug info in objects,
+            # so no linker PDB is needed. This avoids mspdbsrv.exe crashes under
+            # parallel link.exe processes. (dbg_feature still implies generate_pdb_file.)
         )
 
         user_compile_flags_feature = feature(

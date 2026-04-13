@@ -107,10 +107,56 @@ comphelper    ✅  (comphelp.dll)
 configmgr     ✅  (configmgr.uno.dll)
 sax           ✅  (sax.dll, expwrap.dll, fastsax.dll)
 package       ✅  (package2.dll, xstor.dll)
+i18npool      partial:
+  i18nisolang1 ✅  (i18nisolang1.dll — no ICU, language/locale identification)
+  i18npaper    ✅  (i18npaper.dll — no ICU, paper size info)
+  i18npool.dll ⏳  (needs ICU 49.1.2 — see notes below)
+  i18nsearch   ⏳  (needs ICU — same)
             │
             ▼
           ??? ← next
 ```
+### current situation
+Problem: i18npool.dll is failing to link because OpenOffice_dat.obj has 13 unresolved external symbol errors like:
+
+
+LNK2001: unresolved external symbol _OpenOffice_bazel_out_x64_windows_fastbuild_bin_main_i18npool_pool_char_in_patched_brk
+Root cause: A naming inconsistency between genccode and gencmn:
+
+genccode is called with brk.path (full path like bazel-out/.../char_in_patched.brk) but internally it calls findBasename() — so it strips the directory and generates symbol OpenOffice_char_in_patched_brk (basename only)
+gencmn list file is written with b.path (full paths), so it derives symbol OpenOffice_bazel_out_x64_windows_fastbuild_bin_main_i18npool_pool_char_in_patched_brk (full path)
+The compiled _brk.c objects define one set of symbol names; OpenOffice_dat.c references a different set.
+
+Fix needed in main/i18npool/breakiter_pipeline.bzl: The gencmn list file at line 74 currently uses b.path (full exec-root paths). We need it to use basenames instead. But gencmn also needs to be able to open the .brk files — if the list only has basenames like char_in_patched.brk, gencmn needs to be run from the directory containing those files.
+
+Solution options:
+
+Use ctx.actions.run_shell to cd into the .brk output directory before running gencmn (with a basename-only list file)
+Look for a gencmn flag that strips paths from symbol names
+
+### Notes for i18nisolang1 and i18npaper (done)
+- inwnt.cxx is #included by insys.cxx via platform guard — add `cc_library(textual_hdrs = [...])` dep
+- i18npaper links against i18nisolang1 (for MsLangId class)
+
+### Notes for i18npool ICU setup (pending)
+ICU 72.1 is the only version in ext_sources but requires C++17 — won't compile with VS2008.
+ICU 49.1.2 is the newest VS2008-compatible ICU (official VS2008 project files included).
+
+To unblock i18npool.dll:
+1. Download `icu4c-49_1_2-src.tgz` from https://download.icu-project.org/files/icu4c/49.1.2/
+2. Place at `ext_sources/download.icu-project.org/files/icu4c/49.1.2/icu4c-49_1_2-src.tgz`
+3. Compute SHA256: `openssl dgst -sha256 -binary <file> | openssl base64`
+4. Update `ext_libraries/modules/icu/49.1.2/source.json` with the real integrity hash
+5. Uncomment `bazel_dep(name = "icu", version = "49.1.2")` in MODULE.bazel
+6. Run `bazel mod deps --lockfile_mode=refresh` then build `//main/i18npool/pool:i18npool`
+
+ICU module structure already set up:
+- `ext_libraries/modules/icu/49.1.2/overlay/BUILD.bazel` — cc_library targets for icuuc/icui18n/icudata
+  static builds for build tools (genbrk/gencmn/genccode), shared DLLs for i18npool/i18nsearch
+- `ext_libraries/modules/icu/49.1.2/overlay/MODULE.bazel` — module declaration
+- `main/i18npool/breakiter_pipeline.bzl` — Starlark rule: .txt → genbrk → .brk → genccode → _brk.c
+  + gencmn → OpenOffice_dat.c (no bash genrule — uses ctx.actions.run)
+- `main/i18npool/pool/BUILD.bazel` still TODO (i18npool.dll and i18nsearch.dll targets)
 
 ### Notes for io (done)
 - 5 DLLs: streams, acceptor, connector, textinstream, textoutstream
@@ -155,6 +201,47 @@ package       ✅  (package2.dll, xstor.dll)
   (add `/Imain/soltools/winunistd` to copts wherever this pattern appears)
 - DEF exports: `component_getImplementationEnvironment`, `component_getFactory`, `component_canUnload`
   (standard UNO unloadable component pattern — same for all future component DLLs)
+
+### Notes for comphelper (done)
+- Deps: sal, cppu, cppuhelper, salhelper, ucbhelper, vos, udkapi, offapi, stlport, boost.legacy
+- Requires `/Zc:wchar_t-` (sal_Unicode = unsigned short)
+- Requires `snprintf=_snprintf` define (VS2008 MSVCRT only exports `_snprintf`)
+- Private source headers: `/Imain/comphelper/source/inc`
+- ucbhelper_implib filegroup added to ucbhelper BUILD.bazel in this session
+
+### Notes for configmgr (done)
+- Single DLL: `configmgr.uno.dll`
+- Deps: sal, cppu, cppuhelper, salhelper, comphelper, xmlreader, udkapi, offapi, stlport, boost.legacy
+- Requires `/Zc:wchar_t-` and stlport (uses boost::unordered_map, hash_map)
+- Exports via SAL_DLLPUBLIC_EXPORT — no DEF file
+
+### Notes for expat (done)
+- @expat//:expat_utf8 (fastsax) and @expat//:expat_utf16 (expwrap)
+- Bazel module at ext_libraries/modules/expat/2.5.0/
+- Patch `aoo-vs2008.patch` (patch_strip=2): removes expat_config.h include on Windows,
+  adds C89 compat fixes (variable declarations before code), isnan=_isnan, stdbool/stdint workarounds
+- `expat_config.h` in tarball root is for Linux; the patch guards XML_DEV_URANDOM with `#if !_WIN32`
+- winconfig.h patched to add XML_NS, XML_DTD, XML_CONTEXT_BYTES, BYTEORDER for Windows
+
+### Notes for sax (done)
+- 3 DLLs: sax.dll (tools), expwrap.dll (expat utf16), fastsax.dll (expat utf8)
+- sax.dll: tools/converter, fastattribs, fastserializer, fshelper; links comphelper
+- expwrap.dll: expatwrap/ sources; uses @expat//:expat_utf16
+- fastsax.dll: fastparser/ + xml2utf.cxx; uses @expat//:expat_utf8; links sax.dll
+- All need `/Zc:wchar_t-` and stlport
+
+### Notes for zlib (done)
+- @zlib//:zlib at ext_libraries/modules/zlib/1.3.2/
+- gz*.c files excluded (gzread, gzwrite, gzclose use EWOULDBLOCK not in VS2008)
+- Built with Z_PREFIX define (all symbols prefixed with z_)
+- Consumers must also define Z_PREFIX and SYSTEM_ZLIB
+
+### Notes for package (done)
+- 2 DLLs: package2.dll (zip/ODF), xstor.dll (compound doc storage)
+- package2 uses zlib (with Z_PREFIX + SYSTEM_ZLIB defines)
+- Private headers in source/package/zippackage/, zipapi/, manifest/, xstor/ — all need /I copts
+- Requires vos_headers for HashMaps.hxx (vos/ref.hxx)
+- Requires /Zc:wchar_t- and stlport
 
 ## Key conventions
 - BUILD.bazel files live at main/<package>/BUILD.bazel (NOT prj/)
