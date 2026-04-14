@@ -1,3 +1,6 @@
-All 5 io DLLs built successfully on the first try (after the transient PDB race on streams).
-
-Key insight: /Zc:wchar_t- is needed for any module that uses Sequence<sal_Unicode> — without it VS2008 treats wchar_t as a native type, which breaks the UNO type-system overload resolution.
+# Notes for io (done)
+- 5 DLLs: streams, acceptor, connector, textinstream, textoutstream
+- All use SAL_DLLPUBLIC_EXPORT — no DEF files needed
+- LIBXSLT in build.lst is a legacy entry — none of the source files use it
+- Requires `/Zc:wchar_t-` so sal_Unicode = unsigned short (not native wchar_t);
+  without it Sequence<sal_Unicode> fails to resolve cppu_detail_getUnoType overload
