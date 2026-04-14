@@ -88,11 +88,7 @@ expat         ✅  — ext_libraries/modules/expat/readme.md
 sax           ✅  (sax.dll, expwrap.dll, fastsax.dll) — main/sax/readme.md
 zlib          ✅  — ext_libraries/modules/zlib/readme.md
 package       ✅  (package2.dll, xstor.dll) — main/package/readme.md
-i18npool      partial — main/i18npool/readme.md
-  i18nisolang1 ✅  (i18nisolang1.dll — no ICU)
-  i18npaper    ✅  (i18npaper.dll — no ICU)
-  i18npool.dll ⏳  (needs ICU 49.1.2)
-  i18nsearch   ⏳  (needs ICU)
+i18npool      ✅  (i18nisolang1.dll, i18npaper.dll, i18npool.dll, i18nsearch.dll) — main/i18npool/readme.md
             │
             ▼
           ??? ← next

@@ -64,14 +64,18 @@ def _breakiter_data_impl(ctx):
             progress_message = "Encoding break data: %s" % brk.basename,
         )
 
-    # ── Step 3: write gencmn response file with .brk paths ──────────
-    # gencmn opens each file by the path written in the response file.
-    # Using exec-root-relative paths (file.path) works because Bazel
-    # sets CWD to the execroot when running actions.
+    # ── Step 3: write gencmn response file with .brk basenames ──────
+    # gencmn derives the C symbol name from the filename by replacing
+    # '.', '-', '/' with '_' and prepending the package name.
+    # We use basenames so the symbol matches what genccode produces
+    # (genccode internally calls findBasename() before building its
+    # symbol, so it always uses just the filename stem).
+    # In -S (sourceTOC) mode gencmn never opens the .brk files, so no
+    # source-directory flag is needed — basenames alone are sufficient.
     list_file = ctx.actions.declare_file("brk_list.txt")
     ctx.actions.write(
         output = list_file,
-        content = "\n".join([b.path for b in brk_files]) + "\n",
+        content = "\n".join([b.basename for b in brk_files]) + "\n",
     )
 
     # ── Step 4: gencmn → OpenOffice_dat.c package index ─────────────
