@@ -1,0 +1,237 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+# ── Python 2.7.18 — Windows / MSVC 2008 ──────────────────────────────
+# Produces python27.dll + import lib (exposed via interface_library group).
+#
+# All Windows patches in the old dmake build touched only .vcproj/.sln
+# files — no C source patches are needed for a Bazel/MSVC build.
+#
+# PC/pyconfig.h is a pre-written header in the Python source tree; no
+# ./configure step is needed on Windows.
+
+_WIN_DLL_COPTS = [
+    "/MD",           # dynamic CRT — matches rest of OpenOffice
+    "/Zc:wchar_t-",  # wchar_t = unsigned short (matches sal_Unicode ABI)
+    "/W3",
+    "/wd4028",  # formal parameter differs from declaration
+    "/wd4090",  # different 'const' qualifiers
+    "/wd4101",  # unreferenced local variable
+    "/wd4115",  # named type definition in parentheses
+    "/wd4127",  # conditional expression is constant
+    "/wd4131",  # uses old-style declarator
+    "/wd4136",  # conversion between FP types
+    "/wd4152",  # non-standard function/data pointer conversion
+    "/wd4206",  # nonstandard extension: translation unit is empty
+    "/wd4244",  # possible loss of data
+    "/wd4267",  # size_t to int conversion
+    "/wd4305",  # truncation from double to float
+    "/wd4311",  # pointer truncation
+    "/wd4312",  # conversion to greater size
+    "/wd4456",  # declaration hides previous local declaration
+    "/wd4459",  # declaration hides global declaration
+    "/wd4701",  # potentially uninitialized variable
+    "/wd4702",  # unreachable code
+    "/wd4996",  # deprecated functions
+]
+
+_WIN_DLL_DEFINES = [
+    "WIN32",
+    "_WIN32",
+    # NOTE: MS_WINDOWS is omitted — PC/pyconfig.h defines it; redundant define
+    # causes C4005 warnings across every translation unit.
+    # Py_BUILD_CORE → PyAPI_FUNC → __declspec(dllexport)
+    "Py_BUILD_CORE",
+    "_CRT_SECURE_NO_WARNINGS",
+    "_CRT_NONSTDC_NO_WARNINGS",
+    # NOTE: snprintf=_snprintf is intentionally omitted — Python 2.7's own
+    # pyport.h already does this for MSVC, adding it again causes conflicts.
+    # NOTE: GITVERSION/GITTAG/GITBRANCH are intentionally omitted — Python
+    # 2.7.18's getbuildinfo.c guards them with #ifndef, so they default to "".
+    # NOTE: WITH_THREAD/NT_THREADS are omitted — PC/pyconfig.h already defines
+    # them; adding them again causes C4005 redefinition warnings.
+    #
+    # The toolchain injects _WIN32_WINNT=0x0601 (Vista). PC/pyconfig.h then
+    # tries to set NTDDI_VERSION=0x05010300 (XP SP3) via #ifndef, causing a
+    # conflict in sdkddkver.h. Pre-define NTDDI_VERSION to the Vista-compatible
+    # value so pyconfig.h's #ifndef is skipped.
+    "NTDDI_VERSION=0x06010000",  # Vista SP1, consistent with _WIN32_WINNT=0x0601
+]
+
+# ── Core interpreter (Python/, Objects/, Parser/) ─────────────────────
+# Exclude Unix-only files that won't compile on Windows.
+# dynload_win.c handles DLL loading; all other dynload_* are Unix-only.
+# dup2.c / strdup.c / getopt.c — POSIX shims not needed on Windows.
+# dynload_atheos.c — OS-specific, not in Windows build.
+# pyfpe.c — SIGFPE handling (Unix-only).
+_PYTHON_SRCS = glob(
+    ["Python/*.c"],
+    exclude = [
+        "Python/dynload_aix.c",
+        "Python/dynload_atheos.c",
+        "Python/dynload_beos.c",
+        "Python/dynload_dl.c",
+        "Python/dynload_hpux.c",
+        "Python/dynload_os2.c",
+        "Python/dynload_shlib.c",
+        "Python/dynload_stub.c",
+        "Python/dup2.c",
+        "Python/strdup.c",
+        # NOTE: getopt.c is Python's own option parser (NOT a POSIX shim) — keep it;
+        # it provides _PyOS_GetOpt/_PyOS_optind etc. required by Modules/main.c
+        "Python/pyfpe.c",
+        "Python/dynload_next.c",     # macOS/NeXTStep (mach-o/dyld.h)
+        "Python/getcwd.c",           # POSIX fallback; Windows uses _getcwd from CRT
+        "Python/mactoolboxglue.c",   # macOS Carbon/Carbon.h dependency
+        # Stubs superseded by Modules/signalmodule.c (duplicates PyErr_CheckSignals etc.)
+        "Python/sigcheck.c",
+        "Python/intrcheck.c",
+        # Frozen-executable launcher — has unresolved PyWinFreeze_*/PyInitFrozenExtensions
+        "Python/frozenmain.c",
+    ],
+)
+
+_OBJECTS_SRCS = glob(["Objects/*.c"])
+# Exclude pgen build-tool files — they duplicate symbols already in the runtime
+# parser and are only needed to regenerate Grammar/Grammar (build tool, not DLL).
+_PARSER_SRCS = glob(
+    ["Parser/*.c"],
+    exclude = [
+        "Parser/pgenmain.c",       # pgen main() — conflicts with pythonrun/errors/etc.
+        "Parser/tokenizer_pgen.c", # pgen tokenizer — duplicates tokenizer.c symbols
+        "Parser/pgen.c",           # parser generator — build tool only
+        "Parser/printgrammar.c",   # pgen utility — build tool only
+        "Parser/intrcheck.c",      # stub superseded by Modules/signalmodule.c
+    ],
+)
+
+# ── Windows platform shims (PC/) ──────────────────────────────────────
+_PC_SRCS = [
+    "PC/config.c",        # built-in module init table (Windows version)
+    "PC/dl_nt.c",         # Windows dynload (LoadLibrary/GetProcAddress)
+    "PC/getpathp.c",      # Windows sys.path setup
+    "PC/import_nt.c",     # NT import hooks
+    "PC/msvcrtmodule.c",  # 'msvcrt' built-in module
+    "PC/_winreg.c",       # '_winreg' built-in module (Python 2.x name)
+    "PC/_subprocess.c",   # Windows subprocess helper (lives in PC/, not Modules/)
+]
+
+# ── Built-in modules (those listed in PC/config.c _inittab) ───────────
+# Only the modules compiled directly into python27.dll, not extension DLLs.
+_MODULE_SRCS = [
+    # Entry points
+    "Modules/main.c",
+    "Modules/getbuildinfo.c",
+    # Interpreter support
+    "Modules/gcmodule.c",
+    "Modules/threadmodule.c",
+    "Modules/signalmodule.c",
+    # NOTE: _warnings.c lives in Python/, not Modules/ — already in _PYTHON_SRCS
+    # OS / errno
+    "Modules/posixmodule.c",    # provides 'nt' on Windows
+    "Modules/errnomodule.c",
+    # String / codec / pickle
+    "Modules/_codecsmodule.c",
+    "Modules/binascii.c",
+    "Modules/cPickle.c",
+    "Modules/cStringIO.c",
+    "Modules/stropmodule.c",
+    "Modules/_struct.c",        # 'struct' module (was structmodule.c pre-2.5)
+    # Math
+    "Modules/mathmodule.c",
+    "Modules/_math.c",
+    "Modules/cmathmodule.c",
+    # Hashing
+    "Modules/md5module.c",
+    "Modules/md5.c",
+    "Modules/shamodule.c",
+    "Modules/sha256module.c",
+    "Modules/sha512module.c",
+    # Data structures
+    "Modules/arraymodule.c",
+    "Modules/_bisectmodule.c",
+    "Modules/_collectionsmodule.c",
+    "Modules/_heapqmodule.c",
+    "Modules/itertoolsmodule.c",
+    # Time
+    "Modules/timemodule.c",
+    # Regex
+    "Modules/_sre.c",
+    # IO (subdirectory — pick up all .c files)
+] + glob(["Modules/_io/*.c"]) + [
+    # Remaining built-ins
+    "Modules/_csv.c",
+    "Modules/datetimemodule.c",
+    "Modules/_functoolsmodule.c",
+    "Modules/future_builtins.c",
+    "Modules/_json.c",
+    "Modules/_localemodule.c",
+    "Modules/operator.c",
+    "Modules/parsermodule.c",
+    "Modules/_randommodule.c",
+    "Modules/symtablemodule.c",
+    "Modules/_weakref.c",
+    "Modules/xxsubtype.c",
+    "Modules/zipimport.c",
+]
+
+_ALL_SRCS = _PYTHON_SRCS + _OBJECTS_SRCS + _PARSER_SRCS + _PC_SRCS + _MODULE_SRCS
+
+# ── python27.dll ───────────────────────────────────────────────────────
+cc_binary(
+    name = "python27",
+    srcs = _ALL_SRCS,
+    # Include/ — Python.h and all public headers
+    # PC/     — pyconfig.h (Windows pre-generated config, no ./configure needed)
+    includes = [
+        "Include",
+        "PC",
+        "Python",   # internal headers: importdl.h etc.
+    ],
+    local_defines = select({
+        "@platforms//os:windows": _WIN_DLL_DEFINES,
+        "//conditions:default": [],
+    }),
+    copts = select({
+        "@platforms//os:windows": _WIN_DLL_COPTS,
+        "//conditions:default": ["-w"],
+    }),
+    linkshared = True,
+    # No DEF file in the Python 2.7.18 tarball — exports come from
+    # __declspec(dllexport) via Py_BUILD_CORE → PyAPI_FUNC decoration.
+    linkopts = select({
+        "@platforms//os:windows": [
+            "advapi32.lib",
+            "shell32.lib",
+            "user32.lib",
+            "ws2_32.lib",
+            "mpr.lib",
+            "version.lib",
+            "/MANIFEST:NO",
+        ],
+        "//conditions:default": [],
+    }),
+    visibility = ["//visibility:public"],
+)
+
+# ── Import library ─────────────────────────────────────────────────────
+# Consumers (pyuno.dll etc.) add this to additional_linker_inputs and
+# reference it via $(execpath @python//:python27_implib) in linkopts.
+filegroup(
+    name = "python27_implib",
+    srcs = [":python27"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── Headers for consumers ──────────────────────────────────────────────
+# pyuno includes <Python.h> (from Include/) and <pyconfig.h> (from PC/).
+# Add @python//:python_headers to deps for compilation.
+cc_library(
+    name = "python_headers",
+    hdrs = glob(["Include/*.h"]) + ["PC/pyconfig.h"],
+    includes = [
+        "Include",
+        "PC",
+    ],
+    visibility = ["//visibility:public"],
+)

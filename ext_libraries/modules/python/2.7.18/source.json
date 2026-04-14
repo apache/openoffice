@@ -1,0 +1,12 @@
+{
+    "url": "https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tgz",
+    "integrity": "sha256-2jCA47SI9kij16RWDd7olShMM4CxHW3nXtuYZSa5qBQ=",
+    "strip_prefix": "Python-2.7.18",
+    "overlay": {
+        "MODULE.bazel": "sha256-xlj90p6/lw2wir7wVOfypN7VivhHqwkIfA3JXUVWGlQ=",
+        "BUILD.bazel":  "sha256-RDsvThz/Ft6QWadkEAFFEKrL6fkIUI8CoZiHfZH/eV8=",
+        "PC/config.c":  "sha256-Y+QGQKk2nk9HEbqn86YTbDscyrgwKuBQiekxJzAvrVI="
+    },
+    "patches": {},
+    "patch_strip": 0
+}

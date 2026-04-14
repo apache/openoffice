@@ -39,6 +39,7 @@ Source code is NOT being changed — only the build system.
   ctx.actions.symlink (pure Bazel, no shell) for staging
 - cppumaker output dir: prefix -O with "./" so osl's convertToFileUrl uses
   getAbsoluteFileURL (relative-to-workdir) instead of failing on relative paths
+- never manipulate the cache directly, if you have to reset it use: bazel mod deps --lockfile_mode=refresh 
 
 ## Cross-cutting compiler flags & defines
 These apply to many packages — check before building any new module:
@@ -89,9 +90,10 @@ sax           ✅  (sax.dll, expwrap.dll, fastsax.dll) — main/sax/readme.md
 zlib          ✅  — ext_libraries/modules/zlib/readme.md
 package       ✅  (package2.dll, xstor.dll) — main/package/readme.md
 i18npool      ✅  (i18nisolang1.dll, i18npaper.dll, i18npool.dll, i18nsearch.dll) — main/i18npool/readme.md
+python        ✅  (python27.dll) — ext_libraries/modules/python/readme.md
             │
             ▼
-          ??? ← next
+          pyuno ← next
 ```
 
 ## Out of scope
