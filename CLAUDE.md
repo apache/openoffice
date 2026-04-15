@@ -100,7 +100,7 @@ codemaker     ✅  (registry) — main/codemaker/BUILD.bazel
 oovbaapi      ✅  (offapi) — main/oovbaapi/BUILD.bazel
 external      ✅  (pre-built DLL/lib filegroups) — main/external/BUILD.bazel
 ── Layer 2 ──────────────────────────────────────────────────────────────
-tools         ⬜  (basegfx, cppu, comphelper, vos, zlib, expat, offapi, i18npool)
+tools         ✅  (tl.dll, ooopathutils.lib) — main/tools/BUILD.bazel
 basebmp       ⬜  (basegfx, sal + boost, vigra ext)
 ridljar       ⬜  (codemaker, udkapi — Java)
 ── Layer 3 ──────────────────────────────────────────────────────────────

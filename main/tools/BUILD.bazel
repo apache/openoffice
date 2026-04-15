@@ -1,0 +1,221 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK",
+    "SHAREDLIB", "_DLL_",
+    "TOOLS_DLLIMPLEMENTATION",
+    "VCFL",
+    "snprintf=_snprintf",
+    "Z_PREFIX",
+    "SYSTEM_ZLIB",
+]
+
+_COMMON_COPTS = [
+    "/Imain/tools/inc",
+    "/Imain/tools/inc/pch",
+    "/Imain/tools/win/inc",
+    # tstring.cxx/#include <strimp.cxx> uses angle brackets → explicit path needed
+    "/Imain/tools/source/string",
+    "/Imain/tools/source/fsys",
+    "/Zc:wchar_t-",
+    # dirent.cxx uses clock() without including <time.h> — force it
+    "/FItime.h",
+]
+
+# ── public headers ────────────────────────────────────────────────
+cc_library(
+    name = "tools_headers",
+    hdrs = glob(["inc/**"]),
+    strip_include_prefix = "inc",
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/vos:vos_headers",
+        "//main/i18npool:i18npool_headers",
+        "//main/basegfx:basegfx_headers",
+        "//main/comphelper:comphelper_headers",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── files that are #include'd verbatim (not compiled as separate TUs) ──
+# comdep.cxx  #includes wntmsc.cxx / unx.cxx / os2.cxx  (quoted)
+# strmsys.cxx #includes strmwnt.cxx / strmunx.cxx / strmos2.cxx (quoted)
+# tstring.cxx #includes strimp.cxx, strcvt.cxx         (angle-bracket)
+# tustring.cxx#includes strimp.cxx, strucvt.cxx, strascii.cxx (angle-bracket)
+cc_library(
+    name = "_tl_textual",
+    textual_hdrs = [
+        "source/fsys/comdep.hxx",
+        "source/fsys/wntmsc.hxx",
+        "source/fsys/wntmsc.cxx",
+        "source/fsys/unx.hxx",
+        "source/fsys/unx.cxx",
+        "source/fsys/os2.hxx",
+        "source/fsys/os2.cxx",
+        "source/stream/strmwnt.cxx",
+        "source/stream/strmunx.cxx",
+        "source/stream/strmos2.cxx",
+        "source/string/strimp.cxx",
+        "source/string/strcvt.cxx",
+        "source/string/strucvt.cxx",
+        "source/string/strascii.cxx",
+    ],
+)
+
+_SRCS = [
+    # communi
+    "source/communi/geninfo.cxx",
+    "source/communi/parser.cxx",
+    # datetime
+    "source/datetime/datetime.cxx",
+    "source/datetime/tdate.cxx",
+    "source/datetime/ttime.cxx",
+    # debug
+    "source/debug/debug.cxx",
+    "source/debug/stcktree.cxx",
+    # fsys (comdep.cxx #includes wntmsc.cxx on WNT)
+    "source/fsys/comdep.cxx",
+    "source/fsys/dirent.cxx",
+    "source/fsys/filecopy.cxx",
+    "source/fsys/fstat.cxx",
+    "source/fsys/tdir.cxx",
+    "source/fsys/tempfile.cxx",
+    "source/fsys/urlobj.cxx",
+    "source/fsys/wldcrd.cxx",
+    # generic
+    "source/generic/b3dtrans.cxx",
+    "source/generic/bigint.cxx",
+    "source/generic/color.cxx",
+    "source/generic/config.cxx",
+    "source/generic/fract.cxx",
+    "source/generic/gen.cxx",
+    "source/generic/line.cxx",
+    "source/generic/link.cxx",
+    "source/generic/poly.cxx",
+    "source/generic/poly2.cxx",
+    "source/generic/svborder.cxx",
+    "source/generic/toolsin.cxx",
+    "source/generic/svlibrary.cxx",
+    # inet
+    "source/inet/inetmime.cxx",
+    "source/inet/inetmsg.cxx",
+    "source/inet/inetstrm.cxx",
+    # memtools
+    "source/memtools/contnr.cxx",
+    "source/memtools/mempool.cxx",
+    "source/memtools/multisel.cxx",
+    "source/memtools/table.cxx",
+    "source/memtools/unqidx.cxx",
+    # misc
+    "source/misc/appendunixshellword.cxx",
+    "source/misc/extendapplicationenvironment.cxx",
+    "source/misc/getprocessworkingdir.cxx",
+    "source/misc/solarmutex.cxx",
+    # rc (resmgr.cxx uses hash_map → stlport; isofallback.cxx uses i18nisolang1)
+    "source/rc/isofallback.cxx",
+    "source/rc/rc.cxx",
+    "source/rc/resary.cxx",
+    "source/rc/resmgr.cxx",
+    # ref
+    "source/ref/errinf.cxx",
+    "source/ref/globname.cxx",
+    "source/ref/pstm.cxx",
+    "source/ref/ref.cxx",
+    # stream (strmsys.cxx #includes strmwnt.cxx on WNT)
+    "source/stream/cachestr.cxx",
+    "source/stream/stream.cxx",
+    "source/stream/strmsys.cxx",
+    "source/stream/vcompat.cxx",
+    # string (tstring.cxx #includes strimp.cxx, strcvt.cxx;
+    #         tustring.cxx #includes strimp.cxx, strucvt.cxx, strascii.cxx)
+    "source/string/debugprint.cxx",
+    "source/string/tenccvt.cxx",
+    "source/string/tstring.cxx",
+    "source/string/tustring.cxx",
+    # testtoolloader
+    "source/testtoolloader/testtoolloader.cxx",
+    # zcodec (uses Z_PREFIX + SYSTEM_ZLIB zlib)
+    "source/zcodec/zcodec.cxx",
+    # Windows DLL entry point
+    "win/source/dll/toolsdll.cxx",
+]
+
+# ── tl.dll ────────────────────────────────────────────────────────
+# Core OOo tools library: strings, streams, dates, URLs, resources, etc.
+# Uses hash_map in resmgr → stlport; uses zlib for zcodec/resmgr compression.
+# No DEF file — all exports via TOOLS_DLLPUBLIC (SAL_DLLPUBLIC_EXPORT).
+cc_binary(
+    name = "tl",
+    srcs = _SRCS,
+    copts = _COMMON_COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    deps = [
+        ":tools_headers",
+        ":_tl_textual",
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/vos:vos_headers",
+        "//main/i18npool:i18npool_headers",
+        "//main/basegfx:basegfx_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/stlport:stlport",
+        "@boost.legacy//:boost.legacy",
+        "@zlib//:zlib",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/i18npool:i18nisolang1_implib",
+        "//main/vos:vos3_implib",
+        "//main/basegfx:basegfx_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/i18npool:i18nisolang1_implib)",
+        "$(execpath //main/vos:vos3_implib)",
+        "$(execpath //main/basegfx:basegfx_implib)",
+        "mpr.lib",
+        "ole32.lib",
+        "shell32.lib",
+        "user32.lib",
+        "uuid.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── import library for downstream consumers ───────────────────────
+filegroup(
+    name = "tl_implib",
+    srcs = [":tl"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── ooopathutils (static lib, separate from tl.dll) ───────────────
+# Used by modules that need path utilities without linking the full tl.dll.
+cc_library(
+    name = "ooopathutils",
+    srcs = ["source/misc/pathutils.cxx"],
+    copts = _COMMON_COPTS,
+    defines = _DEFINES,
+    deps = [
+        ":tools_headers",
+        "//main/sal:sal_headers",
+    ],
+    visibility = ["//visibility:public"],
+)
