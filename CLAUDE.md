@@ -101,7 +101,7 @@ oovbaapi      ✅  (offapi) — main/oovbaapi/BUILD.bazel
 external      ✅  (pre-built DLL/lib filegroups) — main/external/BUILD.bazel
 ── Layer 2 ──────────────────────────────────────────────────────────────
 tools         ✅  (tl.dll, ooopathutils.lib) — main/tools/BUILD.bazel
-basebmp       ⬜  (basegfx, sal + boost, vigra ext)
+basebmp       ✅  (basegfx, sal + boost, vigra ext) — main/basebmp/BUILD.bazel
 ridljar       ⬜  (codemaker, udkapi — Java)
 ── Layer 3 ──────────────────────────────────────────────────────────────
 rsc           ⬜  (tools)

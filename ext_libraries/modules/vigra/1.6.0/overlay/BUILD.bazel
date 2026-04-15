@@ -1,0 +1,12 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+package(default_visibility = ["//visibility:public"])
+
+# Vigra 1.6.0 — header-only image-processing template library.
+# Headers live at include/vigra/ in the extracted tarball.
+# Exposes <vigra/...> include paths.
+cc_library(
+    name = "vigra",
+    hdrs = glob(["include/vigra/**"]),
+    includes = ["include"],
+)

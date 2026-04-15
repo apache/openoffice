@@ -1,0 +1,75 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK",
+    "SHAREDLIB", "_DLL_",
+    "BASEBMP_DLLIMPLEMENTATION",
+    "snprintf=_snprintf",
+]
+
+_COMMON_COPTS = [
+    "/Imain/basebmp/inc",
+    "/Imain/basebmp/inc/pch",
+    "/Zc:wchar_t-",
+]
+
+# ── public headers ────────────────────────────────────────────────
+cc_library(
+    name = "basebmp_headers",
+    hdrs = glob(["inc/basebmp/**"]),
+    strip_include_prefix = "inc",
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/basegfx:basegfx_headers",
+        "@boost.legacy//:boost.legacy",
+        "@vigra//:vigra",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── basebmp.dll ───────────────────────────────────────────────────
+# Bitmap device library: pixel-format-agnostic rendering onto in-memory
+# bitmaps. Template-heavy; uses Vigra iterators and Boost smart pointers.
+# sal_Unicode usage requires /Zc:wchar_t-.
+cc_binary(
+    name = "basebmp",
+    srcs = [
+        "source/bitmapdevice.cxx",
+        "source/debug.cxx",
+        "source/polypolygonrenderer.cxx",
+        # intconversion.hxx is #include'd directly by bitmapdevice.cxx
+        "source/intconversion.hxx",
+    ],
+    copts = _COMMON_COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    deps = [
+        ":basebmp_headers",
+        "//main/sal:sal_headers",
+        "//main/basegfx:basegfx_headers",
+        "//main/stlport:stlport",
+        "@boost.legacy//:boost.legacy",
+        "@vigra//:vigra",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/basegfx:basegfx_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/basegfx:basegfx_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── import library for downstream consumers ───────────────────────
+filegroup(
+    name = "basebmp_implib",
+    srcs = [":basebmp"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)

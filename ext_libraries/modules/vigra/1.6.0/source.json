@@ -3,5 +3,8 @@
     "integrity": "sha256-HxiKwDqKpGYyI+yoyC+RpVKT0GbWcScILimn26GpjJ8=",
     "strip_prefix": "vigra1.6.0",
     "patch_files": [],
-    "patches": {"vigra1.6.0.patch":"sha256-1+2cZG4EDlt/WF8e3IusnbrEo52G/ZJJJAoqZlgnMqA="}
+    "overlay": {
+        "MODULE.bazel": "sha256-TMlBA8vnyFOaqks67Tyysza5oDyviecUwfnTIad2FUg=",
+        "BUILD.bazel": "sha256-FKYLK2hnPCp+Rw0FaQYWQ15oQ0TYqkHTcEhdXLt5TrI="
+    }
 }
