@@ -103,3 +103,58 @@ cc_binary(
     ],
     visibility = ["//visibility:public"],
 )
+
+# ── commonjava static lib ─────────────────────────────────────────
+cc_library(
+    name = "commonjava",
+    srcs = [
+        "source/commonjava/commonjava.cxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    deps = [
+        ":codemaker_headers",
+        "//main/sal:sal_headers",
+        "//main/registry:registry_headers",
+        "//main/stlport:stlport",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── javamaker executable ──────────────────────────────────────────
+cc_binary(
+    name = "javamaker",
+    srcs = [
+        "source/javamaker/classfile.cxx",
+        "source/javamaker/classfile.hxx",
+        "source/javamaker/javamaker.cxx",
+        "source/javamaker/javaoptions.cxx",
+        "source/javamaker/javaoptions.hxx",
+        "source/javamaker/javatype.cxx",
+        "source/javamaker/javatype.hxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    deps = [
+        ":codemaker",
+        ":codemaker_headers",
+        ":commonjava",
+        "//main/sal:sal_headers",
+        "//main/salhelper:salhelper_headers",
+        "//main/registry:registry_headers",
+        "//main/stlport:stlport",
+        "@boost.legacy//:boost.legacy",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/salhelper:salhelper_implib",
+        "//main/registry:reg_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/salhelper:salhelper_implib)",
+        "$(execpath //main/registry:reg_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
