@@ -102,7 +102,7 @@ external      ✅  (pre-built DLL/lib filegroups) — main/external/BUILD.bazel
 ── Layer 2 ──────────────────────────────────────────────────────────────
 tools         ✅  (tl.dll, ooopathutils.lib) — main/tools/BUILD.bazel
 basebmp       ✅  (basegfx, sal + boost, vigra ext) — main/basebmp/BUILD.bazel
-ridljar       ⬜  (codemaker, udkapi — Java)
+ridljar       ✅  (codemaker, udkapi — Java) — main/ridljar/readme.md
 ── Layer 3 ──────────────────────────────────────────────────────────────
 rsc           ⬜  (tools)
 unotools      ⬜  (tools, comphelper, ucbhelper, offapi)

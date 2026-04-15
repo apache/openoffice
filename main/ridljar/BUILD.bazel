@@ -1,0 +1,48 @@
+load("//build/rules:java_pipeline.bzl", "jar_from_directory", "javamaker_classes")
+load("@rules_java//java:defs.bzl", "java_import", "java_library")
+
+# ── Step 1: Generate Java .class files from udkapi.rdb ───────────────────
+# javamaker reads the UNO type registry and emits one .class file per type
+# (including TypeClass, XInterface, etc.) directly as Java bytecode.
+# No javac is involved in this step.
+javamaker_classes(
+    name = "udkapi_java_classes",
+    rdb  = "//main/udkapi:udkapi_idl",
+)
+
+# ── Step 2: Jar the generated .class tree ────────────────────────────────
+# jar_from_directory calls jar.exe via ctx.actions.run (no shell) to avoid
+# PowerShell path-resolution failures with '+' chars in the JDK sandbox path.
+jar_from_directory(
+    name        = "udkapi_java_jar",
+    classes_dir = ":udkapi_java_classes",
+)
+
+# ── Step 3: Expose generated classes as a Java dependency ────────────────
+java_import(
+    name       = "udkapi_java",
+    jars       = [":udkapi_java_jar"],
+    visibility = ["//visibility:public"],
+)
+
+# ── Step 4: Compile the 27 hand-written ridl sources ─────────────────────
+# TypeDescription.java (and others) import com.sun.star.uno.TypeClass which
+# lives in :udkapi_java — that's the only external dependency needed here.
+# exports = ensures downstream consumers also see the generated UDK classes.
+java_library(
+    name       = "ridl",
+    srcs       = glob(["java/ridl/src/main/java/**/*.java"]),
+    deps       = [":udkapi_java"],
+    exports    = [":udkapi_java"],
+    visibility = ["//visibility:public"],
+)
+
+# ── unoloader ────────────────────────────────────────────────────────────
+# Two-class JAR (UnoClassLoader, UnoLoader) that is sealed at runtime.
+# The sealed manifest is a deployment detail; the build just compiles it.
+# No dependency on :ridl — UnoClassLoader/UnoLoader use only java.* APIs.
+java_library(
+    name       = "unoloader",
+    srcs       = glob(["java/unoloader/src/main/java/**/*.java"]),
+    visibility = ["//visibility:public"],
+)
