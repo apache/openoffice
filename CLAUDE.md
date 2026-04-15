@@ -95,7 +95,7 @@ pyuno         ✅  (pyuno.dll, pythonloader.dll) — main/pyuno/readme.md
             │
             ▼
 ── Layer 1 (all deps done) ──────────────────────────────────────────────
-basegfx       ⬜  (o3tl, sal, offapi, cppu, cppuhelper)
+basegfx       ✅  (o3tl, sal, offapi, cppu, cppuhelper) — main/basegfx/readme.md
 codemaker     ⬜  (registry)
 oovbaapi      ⬜  (offapi)
 external      ⬜  (soltools)

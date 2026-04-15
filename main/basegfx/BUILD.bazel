@@ -1,0 +1,154 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK",
+    "SHAREDLIB", "_DLL_",
+    "BASEGFX_DLLIMPLEMENTATION",
+    "snprintf=_snprintf",
+]
+
+_COMMON_COPTS = [
+    "/Imain/basegfx/inc",
+    "/Imain/basegfx/inc/pch",
+    "/Imain/basegfx/source/inc",
+    "/Zc:wchar_t-",
+]
+
+# ── public headers ────────────────────────────────────────────────
+cc_library(
+    name = "basegfx_headers",
+    hdrs = glob(["inc/basegfx/**"]),
+    strip_include_prefix = "inc",
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/o3tl:o3tl",
+        "@boost.legacy//:boost.legacy",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+_SRCS = [
+    # tools
+    "source/tools/liangbarsky.cxx",
+    "source/tools/debugplotter.cxx",
+    "source/tools/canvastools.cxx",
+    "source/tools/gradienttools.cxx",
+    "source/tools/keystoplerp.cxx",
+    "source/tools/unopolypolygon.cxx",
+    "source/tools/tools.cxx",
+    "source/tools/b2dclipstate.cxx",
+    "source/tools/stringconversiontools.cxx",
+    # numeric
+    "source/numeric/ftools.cxx",
+    # tuple
+    "source/tuple/b3ituple.cxx",
+    "source/tuple/b3dtuple.cxx",
+    "source/tuple/b2ituple.cxx",
+    "source/tuple/b2dtuple.cxx",
+    "source/tuple/b3i64tuple.cxx",
+    "source/tuple/b2i64tuple.cxx",
+    # range
+    "source/range/b1drange.cxx",
+    "source/range/b2dpolyrange.cxx",
+    "source/range/b2xrange.cxx",
+    "source/range/b3drange.cxx",
+    "source/range/b2drangeclipper.cxx",
+    "source/range/b2drange.cxx",
+    # vector
+    "source/vector/b3ivector.cxx",
+    "source/vector/b2ivector.cxx",
+    "source/vector/b2dvector.cxx",
+    "source/vector/b3dvector.cxx",
+    # polygon
+    "source/polygon/b3dpolygon.cxx",
+    "source/polygon/b2dtrapezoid.cxx",
+    "source/polygon/b3dpolygontools.cxx",
+    "source/polygon/b2dlinegeometry.cxx",
+    "source/polygon/b3dpolypolygontools.cxx",
+    "source/polygon/b3dpolygonclipper.cxx",
+    "source/polygon/b2dpolygonclipper.cxx",
+    "source/polygon/b2dpolypolygoncutter.cxx",
+    "source/polygon/b2dpolypolygonrasterconverter.cxx",
+    "source/polygon/b2dpolygon.cxx",
+    "source/polygon/b2dpolygontriangulator.cxx",
+    "source/polygon/b2dpolypolygon.cxx",
+    "source/polygon/b3dpolypolygon.cxx",
+    "source/polygon/b2dsvgpolypolygon.cxx",
+    "source/polygon/b2dpolygoncutandtouch.cxx",
+    "source/polygon/b2dpolypolygontools.cxx",
+    "source/polygon/b2dpolygontools.cxx",
+    # pixel
+    "source/pixel/bpixel.cxx",
+    # matrix
+    "source/matrix/b2dhommatrixtools.cxx",
+    "source/matrix/b3dhommatrix.cxx",
+    "source/matrix/b2dhommatrix.cxx",
+    # point
+    "source/point/b3ipoint.cxx",
+    "source/point/b3dhompoint.cxx",
+    "source/point/b2dpoint.cxx",
+    "source/point/b3dpoint.cxx",
+    "source/point/b2dhompoint.cxx",
+    "source/point/b2ipoint.cxx",
+    # curve
+    "source/curve/b2dbeziertools.cxx",
+    "source/curve/b2dcubicbezier.cxx",
+    "source/curve/b2dquadraticbezier.cxx",
+    # color
+    "source/color/bcolormodifier.cxx",
+    "source/color/bcolor.cxx",
+    "source/color/bcolortools.cxx",
+    # raster
+    "source/raster/bpixelraster.cxx",
+    "source/raster/bzpixelraster.cxx",
+    "source/raster/rasterconvert3d.cxx",
+]
+
+# ── basegfx.dll ───────────────────────────────────────────────────
+# Base graphics primitives: 2D/3D geometry, polygons, colour, matrix math.
+# Uses boost (shared_ptr, scoped_ptr, bind, tuple) — no hash_map, so no stlport.
+# sal_Unicode usage requires /Zc:wchar_t-.
+cc_binary(
+    name = "basegfx",
+    srcs = _SRCS + glob(["source/inc/**"]),
+    copts = _COMMON_COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    deps = [
+        ":basegfx_headers",
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/o3tl:o3tl",
+        "@boost.legacy//:boost.legacy",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── import library for downstream ─────────────────────────────────
+filegroup(
+    name = "basegfx_implib",
+    srcs = [":basegfx"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
