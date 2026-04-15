@@ -1,0 +1,38 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+load("//build/rules:idl_pipeline.bzl", "idl_library")
+
+# Files present on disk but NOT listed in UnoApi_oovbaapi.mk — excluded to
+# match the original build's explicit file list exactly.
+_OOVBAAPI_EXCLUDED = [
+    "ooo/vba/excel/SheetObject.idl",
+]
+
+# ── IDL pipeline ──────────────────────────────────────────────────────────────
+# Compiles all 992 oovbaapi IDL files (matching UnoApi_oovbaapi.mk) →
+# .urd → .rdb, then cppumaker → header tree.
+# Depends on udkapi.rdb + offapi.rdb for type resolution.
+# IDL files reference both ooo/vba/... (self) and com/sun/star/... (offapi/udkapi).
+idl_library(
+    name = "oovbaapi_idl",
+    srcs = glob(
+        ["ooo/vba/**/*.idl"],
+        exclude = _OOVBAAPI_EXCLUDED,
+    ),
+    include_dirs = [
+        "main/offapi",
+        "main/udkapi",
+    ],
+    extra_rdbs = [
+        "//main/udkapi:udkapi_idl",
+        "//main/offapi:offapi_idl",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── Generated headers as a cc_library dep ─────────────────────────────────────
+cc_library(
+    name = "oovbaapi_idl_headers",
+    hdrs = [":oovbaapi_idl"],
+    includes = ["oovbaapi_idl_inc"],
+    visibility = ["//visibility:public"],
+)

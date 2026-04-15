@@ -97,7 +97,7 @@ pyuno         ✅  (pyuno.dll, pythonloader.dll) — main/pyuno/readme.md
 ── Layer 1 (all deps done) ──────────────────────────────────────────────
 basegfx       ✅  (o3tl, sal, offapi, cppu, cppuhelper) — main/basegfx/readme.md
 codemaker     ✅  (registry) — main/codemaker/BUILD.bazel
-oovbaapi      ⬜  (offapi)
+oovbaapi      ✅  (offapi) — main/oovbaapi/BUILD.bazel
 external      ⬜  (soltools)
 ── Layer 2 ──────────────────────────────────────────────────────────────
 tools         ⬜  (basegfx, cppu, comphelper, vos, zlib, expat, offapi, i18npool)
