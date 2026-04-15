@@ -91,9 +91,67 @@ zlib          ✅  — ext_libraries/modules/zlib/readme.md
 package       ✅  (package2.dll, xstor.dll) — main/package/readme.md
 i18npool      ✅  (i18nisolang1.dll, i18npaper.dll, i18npool.dll, i18nsearch.dll) — main/i18npool/readme.md
 python        ✅  (python27.dll) — ext_libraries/modules/python/readme.md
+pyuno         ✅  (pyuno.dll, pythonloader.dll) — main/pyuno/readme.md
             │
             ▼
-          pyuno ← next
+── Layer 1 (all deps done) ──────────────────────────────────────────────
+basegfx       ⬜  (o3tl, sal, offapi, cppu, cppuhelper)
+codemaker     ⬜  (registry)
+oovbaapi      ⬜  (offapi)
+external      ⬜  (soltools)
+── Layer 2 ──────────────────────────────────────────────────────────────
+tools         ⬜  (basegfx, cppu, comphelper, vos, zlib, expat, offapi, i18npool)
+basebmp       ⬜  (basegfx, sal + boost, vigra ext)
+ridljar       ⬜  (codemaker, udkapi — Java)
+── Layer 3 ──────────────────────────────────────────────────────────────
+rsc           ⬜  (tools)
+unotools      ⬜  (tools, comphelper, ucbhelper, offapi)
+xmlscript     ⬜  (tools, comphelper, offapi)
+shell         ⬜  (tools, rdbmaker, sal, expat, offapi)
+l10ntools     ⬜  (tools, python)
+icc           ⬜  (external, sal + stlport)
+jurt          ⬜  (ridljar, offapi, sal — Java)
+jvmaccess     ⬜  (ridljar, cppu, sal, salhelper, offapi — Java)
+── Layer 4 ──────────────────────────────────────────────────────────────
+sot           ⬜  (tools, unotools, ucbhelper)
+unoil         ⬜  (codemaker, ridljar, offapi — Java)
+idl           ⬜  (tools)
+── Layer 5 ──────────────────────────────────────────────────────────────
+svl           ⬜  (rsc, sot, unotools, ucbhelper, comphelper, cppu, cppuhelper, sal)
+javaunohelper ⬜  (unoil, jurt, ridljar, bridges, cppuhelper — Java)
+── Layer 6 ──────────────────────────────────────────────────────────────
+vcl           ⬜  (rsc, sot, unotools, svl, basegfx, basebmp, tools, shell, l10ntools,
+                   icc + boost, icu, graphite ext)
+xmloff        ⬜  (svl, offapi, vos)
+── Layer 7 ──────────────────────────────────────────────────────────────
+linguistic    ⬜  (svl, xmloff, ucbhelper, vos, comphelper + icu ext)
+toolkit       ⬜  (vcl)
+svtools       ⬜  (svl, sot, unotools, toolkit, vcl, ucbhelper, comphelper, jvmfwk + jpeg ext)
+officecfg     ⬜  (soltools)
+── Layer 8 ──────────────────────────────────────────────────────────────
+framework     ⬜  (svtools)
+editeng       ⬜  (svtools, xmloff, linguistic)
+canvas        ⬜  (svtools, vcl, basegfx, unoil, javaunohelper, comphelper + cairo ext)
+basic         ⬜  (oovbaapi, svtools, xmlscript, framework, salhelper)
+connectivity  ⬜  (shell, svl, unoil, javaunohelper, officecfg, comphelper)
+── Layer 9 ──────────────────────────────────────────────────────────────
+sfx2          ⬜  (basic, xmlscript, framework, shell, sax + libxml2 ext)
+cppcanvas     ⬜  (canvas, vcl, basegfx, comphelper)
+── Layer 10 ─────────────────────────────────────────────────────────────
+avmedia       ⬜  (tools, sfx2)
+oox           ⬜  (basegfx, xmlscript, tools, vcl, sax + boost, openssl ext)
+── Layer 11 ─────────────────────────────────────────────────────────────
+drawinglayer  ⬜  (vcl, svtools, basegfx, avmedia, canvas, cppcanvas)
+── Layer 12 ─────────────────────────────────────────────────────────────
+svx           ⬜  (sfx2, oovbaapi, connectivity, xmloff, linguistic, editeng,
+                   avmedia, drawinglayer, jvmfwk)
+── Layer 13 ─────────────────────────────────────────────────────────────
+writerfilter  ⬜  (tools, svx, oox, cppu, cppuhelper, ucbhelper, sal)
+filter        ⬜  (svtools, unotools, xmloff, svx, canvas, javaunohelper,
+                   jvmaccess, basegfx, tools)
+vbahelper     ⬜  (oovbaapi, basic, sfx2, svx, filter, vcl, svtools, tools, unotools)
+── Layer 14 — TARGET ────────────────────────────────────────────────────
+sw            ⬜  (filter, connectivity, vbahelper, svx, writerfilter, stoc)
 ```
 
 ## Out of scope

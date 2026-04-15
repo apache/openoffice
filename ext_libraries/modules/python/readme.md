@@ -15,6 +15,7 @@ ext_libraries/modules/python/
       MODULE.bazel
       BUILD.bazel        ← cc_binary + filegroup + cc_library
       PC/config.c        ← minimal built-in module table (replaces stock PC/config.c)
+      PC/pyconfig.h      ← removes #pragma comment(lib,"python27.lib") auto-link
 ```
 
 ## Targets

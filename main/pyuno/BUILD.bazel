@@ -1,0 +1,113 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK",
+    "SHAREDLIB", "_DLL_",
+]
+
+_COPTS = [
+    "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs",
+    "/EHsc",
+    # wchar_t as typedef (unsigned short) — matches sal_Unicode ABI
+    "/Zc:wchar_t-",
+    "/Dsnprintf=_snprintf",
+    "/Imain/pyuno/inc",
+    "/Imain/pyuno/source/module",
+]
+
+_DEPS = [
+    "//main/sal:sal_headers",
+    "//main/cppu:cppu_headers",
+    "//main/cppuhelper:cppuhelper_headers",
+    "//main/udkapi:udkapi_idl_headers",
+    # hash_map / hash_set used as std:: — requires stlport
+    "//main/stlport:stlport",
+    "@python//:python_headers",
+]
+
+_LINK_DEPS = [
+    "//main/sal:sal_implib",
+    "//main/cppu:cppu3_implib",
+    "//main/cppuhelper:cppuhelper_implib",
+    "@python//:python27_implib",
+]
+
+_LINKOPTS = [
+    "$(execpath //main/sal:sal_implib)",
+    "$(execpath //main/cppu:cppu3_implib)",
+    "$(execpath //main/cppuhelper:cppuhelper_implib)",
+    "$(execpath @python//:python27_implib)",
+    "/MANIFEST:NO",
+]
+
+# ── public headers ────────────────────────────────────────────────
+# Provides <pyuno/pyuno.hxx> for consumers (e.g. pythonloader).
+cc_library(
+    name = "pyuno_headers",
+    hdrs = ["inc/pyuno/pyuno.hxx"],
+    strip_include_prefix = "inc",
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "@python//:python_headers",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── pyuno.dll ─────────────────────────────────────────────────────
+# Core Python-UNO bridge DLL.  On Windows Python extension modules
+# conventionally use the .pyd extension; Bazel produces .dll — rename
+# at install time if needed.
+# Exports: initpyuno (Python 2.x), Runtime, PyRef, PyThreadAttach,
+#          PyThreadDetach via PY_DLLEXPORT = SAL_DLLPUBLIC_EXPORT.
+# pyuno_dlopenwrapper.c is *nix-only (uses dlopen); omitted on Windows.
+cc_binary(
+    name = "pyuno",
+    srcs = [
+        "source/module/pyuno_runtime.cxx",
+        "source/module/pyuno.cxx",
+        "source/module/pyuno_callable.cxx",
+        "source/module/pyuno_module.cxx",
+        "source/module/pyuno_type.cxx",
+        "source/module/pyuno_util.cxx",
+        "source/module/pyuno_except.cxx",
+        "source/module/pyuno_adapter.cxx",
+        "source/module/pyuno_gc.cxx",
+        "source/module/pyuno_impl.hxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    deps = _DEPS,
+    additional_linker_inputs = _LINK_DEPS,
+    linkshared = True,
+    linkopts = _LINKOPTS,
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "pyuno_implib",
+    srcs = [":pyuno"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── pythonloader.dll ──────────────────────────────────────────────
+# UNO component: loads Python-based UNO components.
+# Exports: component_getImplementationEnvironment, component_getFactory
+#          via SAL_DLLPUBLIC_EXPORT — no DEF file required.
+cc_binary(
+    name = "pythonloader",
+    srcs = ["source/loader/pyuno_loader.cxx"],
+    copts = _COPTS,
+    defines = _DEFINES,
+    deps = _DEPS + [":pyuno_headers"],
+    additional_linker_inputs = _LINK_DEPS + [":pyuno_implib"],
+    linkshared = True,
+    linkopts = _LINKOPTS + [
+        "$(execpath :pyuno_implib)",
+    ],
+    visibility = ["//visibility:public"],
+)
