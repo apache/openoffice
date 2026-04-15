@@ -98,7 +98,7 @@ pyuno         ✅  (pyuno.dll, pythonloader.dll) — main/pyuno/readme.md
 basegfx       ✅  (o3tl, sal, offapi, cppu, cppuhelper) — main/basegfx/readme.md
 codemaker     ✅  (registry) — main/codemaker/BUILD.bazel
 oovbaapi      ✅  (offapi) — main/oovbaapi/BUILD.bazel
-external      ⬜  (soltools)
+external      ✅  (pre-built DLL/lib filegroups) — main/external/BUILD.bazel
 ── Layer 2 ──────────────────────────────────────────────────────────────
 tools         ⬜  (basegfx, cppu, comphelper, vos, zlib, expat, offapi, i18npool)
 basebmp       ⬜  (basegfx, sal + boost, vigra ext)

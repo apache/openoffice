@@ -268,7 +268,7 @@ idl_library = rule(
             cfg               = "exec",
         ),
         "_crt_dlls": attr.label(
-            default     = "//main/external/msvcp90:crt_dlls",
+            default     = "//main/external/msvcp90:msvcp90",
             allow_files = True,
             cfg         = "exec",
         ),

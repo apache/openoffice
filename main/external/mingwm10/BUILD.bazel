@@ -1,0 +1,7 @@
+# MinGW runtime DLL — only needed for MinGW (WNTGCC) toolchain builds.
+# The DLL is absent in this repo; this target is a no-op for MSVC builds.
+filegroup(
+    name = "mingwm10",
+    srcs = [],
+    visibility = ["//visibility:public"],
+)

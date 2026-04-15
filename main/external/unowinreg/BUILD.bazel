@@ -1,0 +1,5 @@
+filegroup(
+    name = "unowinreg",
+    srcs = ["unowinreg.dll"],
+    visibility = ["//visibility:public"],
+)
