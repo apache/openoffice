@@ -1,0 +1,360 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+# ── Common settings ───────────────────────────────────────────────
+# l10ntools: localisation extraction/merging tools.
+# Deps: tools, vos, sal; some tools also need expat, libxslt, ICU.
+# Three flex scanners (srclex.l, cfglex.l, xrmlex.l) are pre-generated
+# once from Cygwin and checked in as source/src_yy.c etc.
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK",
+    "snprintf=_snprintf",
+    "YY_NEVER_INTERACTIVE=1",   # suppress flex interactive-mode check
+    "YY_NO_UNISTD_H",           # flex-generated code: don't include <unistd.h>
+]
+
+_COPTS = [
+    "/Zc:wchar_t-",
+    "/EHsc", "/GR",
+    # public headers: inc/ (export.hxx, utf8conv.hxx, xmlparse.hxx, …)
+    "/Imain/l10ntools/inc",
+    # PCH header
+    "/Imain/l10ntools/inc/pch",
+    # source-local headers (tokens.h, …)
+    # also lets src_yy_wrapper.c find #include "src_yy.c" etc.
+    "/Imain/l10ntools/source",
+    # export.hxx / tagtest.hxx include <unistd.h> unconditionally
+    "/Imain/soltools/winunistd",
+]
+
+# Headers shared by all tool cc_binary targets
+_TOOL_DEPS = [
+    "//main/sal:sal_headers",
+    "//main/tools:tools_headers",
+    "//main/vos:vos_headers",
+    "@boost.legacy//:boost.legacy",    # export2.cxx uses boost::shared_ptr
+    "//main/stlport:stlport",          # export.hxx / tagtest.hxx use std::hash_map
+]
+
+# Implibs that every simple tool binary needs
+_TOOL_LINKER_INPUTS = [
+    "//main/sal:sal_implib",
+    "//main/tools:tl_implib",
+    "//main/vos:vos3_implib",
+]
+
+_TOOL_LINKOPTS = [
+    "$(execpath //main/sal:sal_implib)",
+    "$(execpath //main/tools:tl_implib)",
+    "$(execpath //main/vos:vos3_implib)",
+    "/MANIFEST:NO",
+    "kernel32.lib",
+    "user32.lib",
+    "advapi32.lib",
+    "msvcrt.lib",
+]
+
+# ── transex static lib ────────────────────────────────────────────
+# Shared code reused by transex3 (and formerly by other tools).
+cc_library(
+    name = "transex_lib",
+    srcs = [
+        "source/export.cxx",
+        "source/export2.cxx",
+        "source/merge.cxx",
+        "source/srciter.cxx",
+        "source/file.cxx",
+        "source/directory.cxx",
+        "source/utf8conv.cxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    deps = _TOOL_DEPS,
+    visibility = ["//visibility:private"],
+)
+
+# ── lex scanner wrappers ──────────────────────────────────────────
+# Each *_yy_wrapper.c does #include "<name>_yy.c".
+# The generated .c files are pre-generated (flex -l -w -8) and checked in.
+# They are exposed as textual_hdrs so Bazel includes them in the sandbox
+# without trying to compile them directly.
+
+cc_library(
+    name = "src_scanner",
+    srcs = ["source/src_yy_wrapper.c"],
+    textual_hdrs = ["source/src_yy.c"],
+    copts = _COPTS,
+    defines = _DEFINES,
+    deps = [":transex_lib"],
+    visibility = ["//visibility:private"],
+)
+
+cc_library(
+    name = "cfg_scanner",
+    srcs = ["source/cfg_yy_wrapper.c"],
+    textual_hdrs = ["source/cfg_yy.c"],
+    copts = _COPTS,
+    defines = _DEFINES,
+    deps = [":transex_lib"],
+    visibility = ["//visibility:private"],
+)
+
+cc_library(
+    name = "xrm_scanner",
+    srcs = ["source/xrm_yy_wrapper.c"],
+    textual_hdrs = ["source/xrm_yy.c"],
+    copts = _COPTS,
+    defines = _DEFINES,
+    deps = [":transex_lib"],
+    visibility = ["//visibility:private"],
+)
+
+# ── transex3.exe ──────────────────────────────────────────────────
+# Extractor/merger for *.src and *.hrc resource files.
+cc_binary(
+    name = "transex3",
+    srcs = [],
+    copts = _COPTS,
+    defines = _DEFINES,
+    additional_linker_inputs = _TOOL_LINKER_INPUTS,
+    linkopts = _TOOL_LINKOPTS,
+    deps = [
+        ":transex_lib",
+        ":src_scanner",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── helpex.exe ────────────────────────────────────────────────────
+# Extractor/merger for help files; uses expat via xmlparse.
+cc_binary(
+    name = "helpex",
+    srcs = [
+        "source/helpex.cxx",
+        "source/helpmerge.cxx",
+        "source/xmlparse.cxx",
+        "source/export2.cxx",
+        "source/utf8conv.cxx",
+        "source/merge.cxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    additional_linker_inputs = _TOOL_LINKER_INPUTS,
+    linkopts = _TOOL_LINKOPTS,
+    deps = _TOOL_DEPS + [
+        "@expat//:expat_utf8",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── ulfex.exe ─────────────────────────────────────────────────────
+# Extractor/merger for *.lng / *.ulf files.
+cc_binary(
+    name = "ulfex",
+    srcs = [
+        "source/lngmerge.cxx",
+        "source/merge.cxx",
+        "source/export2.cxx",
+        "source/lngex.cxx",
+        "source/utf8conv.cxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    additional_linker_inputs = _TOOL_LINKER_INPUTS,
+    linkopts = _TOOL_LINKOPTS,
+    deps = _TOOL_DEPS,
+    visibility = ["//visibility:public"],
+)
+
+# ── gsiconv.exe ───────────────────────────────────────────────────
+# Encoding converter for *.gsi files.
+cc_binary(
+    name = "gsiconv",
+    srcs = [
+        "source/utf8conv.cxx",
+        "source/gsiconv.cxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    additional_linker_inputs = _TOOL_LINKER_INPUTS,
+    linkopts = _TOOL_LINKOPTS,
+    deps = _TOOL_DEPS,
+    visibility = ["//visibility:public"],
+)
+
+# ── gsicheck.exe ──────────────────────────────────────────────────
+# Tag checker for *.gsi files.
+cc_binary(
+    name = "gsicheck",
+    srcs = [
+        "source/gsicheck.cxx",
+        "source/tagtest.cxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    additional_linker_inputs = _TOOL_LINKER_INPUTS,
+    linkopts = _TOOL_LINKOPTS,
+    deps = _TOOL_DEPS,
+    visibility = ["//visibility:public"],
+)
+
+# ── cfgex.exe ─────────────────────────────────────────────────────
+# Extractor/merger for *.xcd / *.xcu / *.xcs (config) files.
+cc_binary(
+    name = "cfgex",
+    srcs = [
+        "source/cfgmerge.cxx",
+        "source/merge.cxx",
+        "source/export2.cxx",
+        "source/utf8conv.cxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    additional_linker_inputs = _TOOL_LINKER_INPUTS,
+    linkopts = _TOOL_LINKOPTS,
+    deps = _TOOL_DEPS + [":cfg_scanner"],
+    visibility = ["//visibility:public"],
+)
+
+# ── xrmex.exe ─────────────────────────────────────────────────────
+# Extractor/merger for *.xrm / *.xml property files.
+cc_binary(
+    name = "xrmex",
+    srcs = [
+        "source/xrmmerge.cxx",
+        "source/merge.cxx",
+        "source/export2.cxx",
+        "source/utf8conv.cxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    additional_linker_inputs = _TOOL_LINKER_INPUTS,
+    linkopts = _TOOL_LINKOPTS,
+    deps = _TOOL_DEPS + [":xrm_scanner"],
+    visibility = ["//visibility:public"],
+)
+
+# ── localize_sl.exe ───────────────────────────────────────────────
+# Source-tree localiser; uses ICU for regex + Unicode, stlport for
+# hash containers.  treeconfig.cxx / localize.cxx include <unistd.h>
+# so winunistd is injected via /I.
+cc_binary(
+    name = "localize_sl",
+    srcs = [
+        "source/localize.cxx",
+        "source/utf8conv.cxx",
+        "source/srciter.cxx",
+        "source/export2.cxx",
+        "source/file.cxx",
+        "source/directory.cxx",
+        "source/treeconfig.cxx",
+        "source/inireader.cxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    additional_linker_inputs = _TOOL_LINKER_INPUTS + [
+        "@icu//:icuuc_implib",
+        "@icu//:icui18n_implib",
+        "@icu//:icudata_implib",
+    ],
+    linkopts = _TOOL_LINKOPTS + [
+        "$(execpath @icu//:icuuc_implib)",
+        "$(execpath @icu//:icui18n_implib)",
+        "$(execpath @icu//:icudata_implib)",
+    ],
+    deps = _TOOL_DEPS + [
+        "@icu//:icuuc_headers",
+        "@icu//:icui18n_headers",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── HelpLinker.exe + helplinker.dll ──────────────────────────────
+# Help compilation tool; uses libxslt + expat.
+# HelpCompiler.hxx uses std::hash_map → stlport is required.
+# Both the binary and DLL share the same two source files;
+# HELPLINKER_DLLIMPLEMENTATION switches between export/import.
+
+cc_binary(
+    name = "HelpLinker",
+    srcs = [
+        "source/help/HelpLinker.cxx",
+        "source/help/HelpCompiler.cxx",
+    ],
+    copts = [
+        "/Zc:wchar_t-",
+        "/EHsc", "/GR",
+        "/Imain/l10ntools/source/help",
+        "/Imain/l10ntools/inc",
+    ],
+    defines = _DEFINES + ["HELPLINKER_DLLIMPLEMENTATION"],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "/MANIFEST:NO",
+        "kernel32.lib",
+        "user32.lib",
+        "advapi32.lib",
+        "msvcrt.lib",
+    ],
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/tools:tools_headers",
+        "@boost.legacy//:boost.legacy",
+        "//main/stlport:stlport",
+        "@libxslt//:libxslt",
+        "@libxslt//:libexslt",
+        "@expat//:expat_utf8",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+cc_binary(
+    name = "helplinker",
+    srcs = [
+        "source/help/HelpLinker.cxx",
+        "source/help/HelpCompiler.cxx",
+    ],
+    copts = [
+        "/Zc:wchar_t-",
+        "/EHsc", "/GR",
+        "/Imain/l10ntools/source/help",
+        "/Imain/l10ntools/inc",
+    ],
+    defines = _DEFINES + ["HELPLINKER_DLLIMPLEMENTATION"],
+    win_def_file = "source/help/helplinker.def",
+    linkshared = True,
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "/MANIFEST:NO",
+        "kernel32.lib",
+        "user32.lib",
+        "advapi32.lib",
+        "msvcrt.lib",
+    ],
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/tools:tools_headers",
+        "@boost.legacy//:boost.legacy",
+        "//main/stlport:stlport",
+        "@libxslt//:libxslt",
+        "@libxslt//:libexslt",
+        "@expat//:expat_utf8",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "helplinker_implib",
+    srcs = [":helplinker"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)

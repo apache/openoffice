@@ -108,7 +108,7 @@ rsc           ✅  (rscpp, rsc, rsc2) — main/rsc/readme.md
 unotools      ✅  (utl.dll) — main/unotools/readme.md
 xmlscript     ✅  (xcr.dll) — main/xmlscript/BUILD.bazel
 shell         ✅  (syssh.uno, localebe1.uno, wininetbe1.uno, shlxthdl, ooofilt, propertyhdl, lngconvex, regsvrex) — main/shell/BUILD.bazel
-l10ntools     ⬜  (tools, python)
+l10ntools     ✅  (transex3, helpex, ulfex, gsiconv, gsicheck, cfgex, xrmex, localize_sl, HelpLinker, helplinker.dll) — main/l10ntools/BUILD.bazel
 icc           ⬜  (external, sal + stlport)
 jurt          ⬜  (ridljar, offapi, sal — Java)
 jvmaccess     ⬜  (ridljar, cppu, sal, salhelper, offapi — Java)

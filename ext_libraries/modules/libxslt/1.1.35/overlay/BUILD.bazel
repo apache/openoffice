@@ -50,6 +50,7 @@ expand_template(
 
 # ── libxslt sources ───────────────────────────────────────────────
 LIBXSLT_SRCS = [
+    "libxslt/attributes.c",
     "libxslt/attrvt.c",
     "libxslt/documents.c",
     "libxslt/extensions.c",

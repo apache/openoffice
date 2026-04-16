@@ -1,0 +1,4 @@
+; Windows export file for helplinker.dll
+LIBRARY helplinker
+EXPORTS
+    compileExtensionHelp @1
