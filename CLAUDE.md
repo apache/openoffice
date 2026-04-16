@@ -104,7 +104,7 @@ tools         ✅  (tl.dll, ooopathutils.lib) — main/tools/BUILD.bazel
 basebmp       ✅  (basegfx, sal + boost, vigra ext) — main/basebmp/BUILD.bazel
 ridljar       ✅  (codemaker, udkapi — Java) — main/ridljar/readme.md
 ── Layer 3 ──────────────────────────────────────────────────────────────
-rsc           ⬜  (tools)
+rsc           ✅  (rscpp, rsc, rsc2) — main/rsc/readme.md
 unotools      ⬜  (tools, comphelper, ucbhelper, offapi)
 xmlscript     ⬜  (tools, comphelper, offapi)
 shell         ⬜  (tools, rdbmaker, sal, expat, offapi)

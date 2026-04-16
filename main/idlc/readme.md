@@ -10,8 +10,6 @@ Probably not with flex/bison. Modern alternatives:
 | ANTLR4	| Better error recovery, IDE grammars, visitor/ listener pattern, widely supported | 
 |Hand-written recursive descent	| What clang/go/rustc do — better error messages, zero build deps, ~2000 lines for a grammar this simple| 
 | Skip idlc entirely	| If designing UNO today you'd use protobuf or Cap'n Proto — the entire IDL → RDB → generated headers stack would collapse to protoc| 
-# The key context for AOO
-Apache OpenOffice is in maintenance mode. The UNO type system is frozen — there have been essentially no new IDL types added in years. LibreOffice (the active fork) is gradually moving away from this architecture too.
 
 The idlc grammar will never be modified during this migration, and realistically never again in AOO's lifetime.
 
