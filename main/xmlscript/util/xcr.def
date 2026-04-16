@@ -1,0 +1,6 @@
+; Windows export file for xcr.dll
+; Standard UNO component exports
+LIBRARY xcr
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

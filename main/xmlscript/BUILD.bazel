@@ -1,0 +1,114 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK",
+    "SHAREDLIB", "_DLL_",
+    "XCR_DLLIMPLEMENTATION",
+    "snprintf=_snprintf",
+]
+
+_COPTS = [
+    "/Zc:wchar_t-",
+    "/Imain/xmlscript/inc",
+    "/Imain/xmlscript/inc/xmlscript",
+    "/Imain/xmlscript/inc/pch",
+    "/Imain/xmlscript/source/inc",
+]
+
+# ── public headers ────────────────────────────────────────────────
+cc_library(
+    name = "xmlscript_headers",
+    hdrs = glob(["inc/xmlscript/**"]),
+    strip_include_prefix = "inc",
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── xcr.dll ───────────────────────────────────────────────────────
+# xmlscript UNO component: XML dialog/library/module import+export
+# Deps: sal, cppu, cppuhelper, comphelper (processfactory),
+#       tools (diagnose_ex.h)
+cc_binary(
+    name = "xcr",
+    srcs = [
+        # xml_helper
+        "source/xml_helper/xml_byteseq.cxx",
+        "source/xml_helper/xml_element.cxx",
+        "source/xml_helper/xml_impctx.cxx",
+        # xmldlg_imexp
+        "source/xmldlg_imexp/xmldlg_addfunc.cxx",
+        "source/xmldlg_imexp/xmldlg_export.cxx",
+        "source/xmldlg_imexp/xmldlg_expmodels.cxx",
+        "source/xmldlg_imexp/xmldlg_impmodels.cxx",
+        "source/xmldlg_imexp/xmldlg_import.cxx",
+        # xmlflat_imexp
+        "source/xmlflat_imexp/xmlbas_export.cxx",
+        "source/xmlflat_imexp/xmlbas_import.cxx",
+        # xmllib_imexp
+        "source/xmllib_imexp/xmllib_export.cxx",
+        "source/xmllib_imexp/xmllib_import.cxx",
+        # xmlmod_imexp
+        "source/xmlmod_imexp/xmlmod_export.cxx",
+        "source/xmlmod_imexp/xmlmod_import.cxx",
+        # misc / services
+        "source/misc/unoservices.cxx",
+        # internal headers (srcs so Bazel tracks them)
+        "source/inc/misc.hxx",
+        "source/xmldlg_imexp/common.hxx",
+        "source/xmldlg_imexp/exp_share.hxx",
+        "source/xmldlg_imexp/imp_share.hxx",
+        "source/xmlflat_imexp/xmlbas_export.hxx",
+        "source/xmlflat_imexp/xmlbas_import.hxx",
+        "source/xmllib_imexp/imp_share.hxx",
+        "source/xmlmod_imexp/imp_share.hxx",
+        "inc/pch/precompiled_xmlscript.hxx",
+        "inc/pch/precompiled_xmlscript.cxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/xcr.def",
+    deps = [
+        ":xmlscript_headers",
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/tools:tools_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/tools:tl_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── import library for downstream ─────────────────────────────────
+filegroup(
+    name = "xcr_implib",
+    srcs = [":xcr"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)

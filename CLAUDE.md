@@ -106,7 +106,7 @@ ridljar       ✅  (codemaker, udkapi — Java) — main/ridljar/readme.md
 ── Layer 3 ──────────────────────────────────────────────────────────────
 rsc           ✅  (rscpp, rsc, rsc2) — main/rsc/readme.md
 unotools      ✅  (utl.dll) — main/unotools/readme.md
-xmlscript     ⬜  (tools, comphelper, offapi)
+xmlscript     ✅  (xcr.dll) — main/xmlscript/BUILD.bazel
 shell         ⬜  (tools, rdbmaker, sal, expat, offapi)
 l10ntools     ⬜  (tools, python)
 icc           ⬜  (external, sal + stlport)
