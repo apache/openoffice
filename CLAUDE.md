@@ -107,7 +107,7 @@ ridljar       ✅  (codemaker, udkapi — Java) — main/ridljar/readme.md
 rsc           ✅  (rscpp, rsc, rsc2) — main/rsc/readme.md
 unotools      ✅  (utl.dll) — main/unotools/readme.md
 xmlscript     ✅  (xcr.dll) — main/xmlscript/BUILD.bazel
-shell         ⬜  (tools, rdbmaker, sal, expat, offapi)
+shell         ✅  (syssh.uno, localebe1.uno, wininetbe1.uno, shlxthdl, ooofilt, propertyhdl, lngconvex, regsvrex) — main/shell/BUILD.bazel
 l10ntools     ⬜  (tools, python)
 icc           ⬜  (external, sal + stlport)
 jurt          ⬜  (ridljar, offapi, sal — Java)

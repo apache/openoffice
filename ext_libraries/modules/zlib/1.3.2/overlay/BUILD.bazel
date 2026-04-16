@@ -50,3 +50,56 @@ cc_library(
     }),
     visibility = ["//visibility:public"],
 )
+
+# ── zlib_compat_hdrs ──────────────────────────────────────────────
+# Re-exposes zlib.h/zconf.h under the <external/zlib/...> path used
+# by OOo's shell module (inc/internal/types.hxx, zipfile.hxx).
+# include_prefix with no strip_include_prefix strips the package root ("").
+cc_library(
+    name = "zlib_compat_hdrs",
+    hdrs = ["zlib.h", "zconf.h"],
+    include_prefix = "external/zlib",
+    deps = [":zlib"],
+    visibility = ["//visibility:public"],
+)
+
+# ── minizip ───────────────────────────────────────────────────────
+# Minizip: zlib's contrib/minizip unzip API.
+# Headers exposed as <external/zlib/unzip.h> and <external/zlib/ioapi.h>
+# to match the include path used by shell/inc/internal/zipfile.hxx.
+cc_library(
+    name = "minizip",
+    srcs = [
+        "contrib/minizip/unzip.c",
+        "contrib/minizip/ioapi.c",
+    ],
+    hdrs = [
+        "contrib/minizip/unzip.h",
+        "contrib/minizip/ioapi.h",
+        "contrib/minizip/crypt.h",
+        "contrib/minizip/ints.h",   # included by ioapi.h via "ints.h" (relative)
+    ],
+    strip_include_prefix = "contrib/minizip",
+    include_prefix = "external/zlib",
+    defines = select({
+        "@platforms//os:windows": [
+            "WIN32",
+            "_CRT_SECURE_NO_WARNINGS",
+            "Z_PREFIX",
+        ],
+        "//conditions:default": ["Z_PREFIX"],
+    }),
+    copts = select({
+        "@platforms//os:windows": [
+            "/W3",
+            "/wd4996",
+            "/wd4267",
+            "/wd4244",
+            "/wd4028",
+            "/wd4131",
+        ],
+        "//conditions:default": ["-w"],
+    }),
+    deps = [":zlib"],
+    visibility = ["//visibility:public"],
+)

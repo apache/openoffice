@@ -1,0 +1,411 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+# ── Common settings ───────────────────────────────────────────────
+# Defines shared by all shlxthandler targets (XML parser + ZIP reader
+# + COM shell extension DLLs).  They don't use UNO at all.
+_SHLXT_DEFINES = [
+    "WNT", "WIN32",
+    "ISOLATION_AWARE_ENABLED",
+    "WIN32_LEAN_AND_MEAN",
+    "XML_UNICODE",          # expat: Unicode (wchar_t) character type
+    "_NTSDK",
+    "UNICODE", "_UNICODE",
+    "_WIN32_WINNT=0x0501",
+    "_WIN32_IE=0x501",
+    "Z_PREFIX",             # zlib: all symbols prefixed with z_
+    "SYSTEM_ZLIB",          # consume <zlib.h> directly, not the OOo wrapper path
+    "snprintf=_snprintf",
+    # The toolchain sets NOMINMAX globally, so windows.h never defines the
+    # min/max macros.  Map them to MSVC intrinsics so GdiplusTypes.h and the
+    # shlxthandler sources that use bare `min(a,b)` / `max(a,b)` still work.
+    "min=__min",
+    "max=__max",
+]
+
+_SHLXT_COPTS = [
+    "/Zc:wchar_t-",
+    "/Imain/shell/inc",
+    "/Imain/shell/inc/pch",
+    # suppress noise warnings throughout the module
+    "/wd4710", "/wd4711", "/wd4514", "/wd4619", "/wd4217", "/wd4820",
+]
+
+# Defines for the UNO component DLLs (syssh, localebe, wininetbe).
+# These use the full sal/cppu/cppuhelper stack.
+_UNO_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK",
+    "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+]
+
+_UNO_COPTS = [
+    "/Zc:wchar_t-",
+    "/Imain/shell/inc",
+    "/Imain/shell/inc/pch",
+]
+
+# ── xmlparser (internal) ──────────────────────────────────────────
+# Wraps expat with a C++ event-handler interface.
+# Used by ooofilereader to parse ODF meta.xml / content.xml.
+cc_library(
+    name = "xmlparser",
+    srcs = ["source/all/xml_parser.cxx"],
+    hdrs = ["inc/pch/precompiled_shell.hxx"],
+    copts = _SHLXT_COPTS,
+    defines = _SHLXT_DEFINES,
+    deps = [
+        "@expat//:expat_utf16",         # XML_UNICODE build of expat
+        "@zlib//:minizip",              # ioapi.h used transitively via basereader.hxx
+        "@zlib//:zlib_compat_hdrs",     # <external/zlib/zlib.h>
+    ],
+)
+
+# ── zipfile (internal) ────────────────────────────────────────────
+# Thin C++ wrapper around minizip unzip API.
+# Reads ODF/ZIP archives for the shell integration.
+cc_library(
+    name = "zipfile",
+    srcs = [
+        "source/all/zipfile/zipfile.cxx",
+        "source/all/zipfile/zipexcptn.cxx",
+    ],
+    hdrs = ["inc/pch/precompiled_shell.hxx"],
+    copts = _SHLXT_COPTS,
+    defines = _SHLXT_DEFINES,
+    deps = [
+        "@zlib//:minizip",
+        "@zlib//:zlib",
+        "@zlib//:zlib_compat_hdrs",   # <external/zlib/zlib.h> path used by types.hxx
+    ],
+)
+
+# ── ooofilereader (internal) ──────────────────────────────────────
+# Reads ODF document metadata (title, author, keywords, …) by parsing
+# the meta.xml and content.xml streams inside the ODF ZIP archive.
+cc_library(
+    name = "ooofilereader",
+    srcs = [
+        "source/all/ooofilereader/basereader.cxx",
+        "source/all/ooofilereader/metainforeader.cxx",
+        "source/all/ooofilereader/contentreader.cxx",
+        "source/all/ooofilereader/simpletag.cxx",
+        "source/all/ooofilereader/keywordstag.cxx",
+        "source/all/ooofilereader/autostyletag.cxx",
+    ],
+    hdrs = ["inc/pch/precompiled_shell.hxx"],
+    copts = _SHLXT_COPTS,
+    defines = _SHLXT_DEFINES,
+    deps = [
+        ":xmlparser",
+        ":zipfile",
+    ],
+)
+
+# ── shlxt_util (internal) ─────────────────────────────────────────
+# Registry helpers, file-extension mapping, ISO 8601 date conversion,
+# and debug utilities shared by the three shlxthandler DLLs.
+cc_library(
+    name = "shlxt_util",
+    srcs = [
+        "source/win32/shlxthandler/util/dbgmacros.cxx",
+        "source/win32/shlxthandler/util/fileextensions.cxx",
+        "source/win32/shlxthandler/util/registry.cxx",
+        "source/win32/shlxthandler/util/utilities.cxx",
+        "source/win32/shlxthandler/util/iso8601_converter.cxx",
+    ],
+    hdrs = ["inc/pch/precompiled_shell.hxx"],
+    copts = _SHLXT_COPTS,
+    defines = _SHLXT_DEFINES,
+    deps = [
+        "@zlib//:minizip",            # ioapi.h (zlib_filefunc_def) used by types.hxx
+        "@zlib//:zlib_compat_hdrs",   # <external/zlib/zlib.h> used by types.hxx
+    ],
+)
+
+# ── syssh.uno.dll ─────────────────────────────────────────────────
+# UNO component: com.sun.star.system.SystemShellExecute
+# Opens URLs and documents using the Windows shell (ShellExecute).
+cc_binary(
+    name = "syssh.uno",
+    srcs = [
+        "source/win32/SysShExec.cxx",
+        "source/win32/SysShentry.cxx",
+        "source/win32/SysShExec.hxx",
+        "inc/pch/precompiled_shell.hxx",
+    ],
+    copts = _UNO_COPTS,
+    defines = _UNO_DEFINES,
+    linkshared = True,
+    win_def_file = "util/syssh.def",
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "advapi32.lib",
+        "ole32.lib",
+        "shell32.lib",
+        "/MANIFEST:NO",
+    ],
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── localebe1.uno.dll ─────────────────────────────────────────────
+# UNO component: com.sun.star.comp.configuration.backend.LocaleBackend
+# Provides the system locale (language, country, variant) to the
+# configuration layer.
+cc_binary(
+    name = "localebe1.uno",
+    srcs = [
+        "source/backends/localebe/localebackend.cxx",
+        "source/backends/localebe/localebackend.hxx",
+        "source/backends/localebe/localebecdef.cxx",
+        "inc/pch/precompiled_shell.hxx",
+    ],
+    copts = _UNO_COPTS + ["/Imain/shell/source/backends/localebe"],
+    defines = _UNO_DEFINES,
+    linkshared = True,
+    win_def_file = "util/localebe1.def",
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "/MANIFEST:NO",
+    ],
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── wininetbe1.uno.dll ────────────────────────────────────────────
+# UNO component: com.sun.star.comp.configuration.backend.WinInetBackend
+# Reads proxy settings from the Windows Internet Options / WinInet.
+cc_binary(
+    name = "wininetbe1.uno",
+    srcs = [
+        "source/backends/wininetbe/wininetbackend.cxx",
+        "source/backends/wininetbe/wininetbackend.hxx",
+        "source/backends/wininetbe/wininetbecdef.cxx",
+        "inc/pch/precompiled_shell.hxx",
+    ],
+    copts = _UNO_COPTS + ["/Imain/shell/source/backends/wininetbe"],
+    defines = _UNO_DEFINES,
+    linkshared = True,
+    win_def_file = "util/wininetbe1.def",
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "/MANIFEST:NO",
+    ],
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── shlxthdl.dll ──────────────────────────────────────────────────
+# Windows shell extension: COM in-process server for Windows Explorer.
+# Provides property sheets, info tips, column info, and thumbnail
+# previewer for ODF and OOo file types.
+cc_binary(
+    name = "shlxthdl",
+    srcs = [
+        "source/win32/shlxthandler/shlxthdl.cxx",
+        "source/win32/shlxthandler/classfactory.cxx",
+        "source/win32/shlxthandler/classfactory.hxx",
+        # propsheets
+        "source/win32/shlxthandler/propsheets/propsheets.cxx",
+        "source/win32/shlxthandler/propsheets/listviewbuilder.cxx",
+        "source/win32/shlxthandler/propsheets/listviewbuilder.hxx",
+        "source/win32/shlxthandler/propsheets/document_statistic.cxx",
+        "source/win32/shlxthandler/propsheets/document_statistic.hxx",
+        # infotips
+        "source/win32/shlxthandler/infotips/infotips.cxx",
+        # columninfo
+        "source/win32/shlxthandler/columninfo/columninfo.cxx",
+        # thumbviewer
+        "source/win32/shlxthandler/thumbviewer/thumbviewer.cxx",
+        "inc/pch/precompiled_shell.hxx",
+    ],
+    copts = _SHLXT_COPTS,
+    defines = _SHLXT_DEFINES,
+    linkshared = True,
+    win_def_file = "util/shlxthdl.def",
+    additional_linker_inputs = [],
+    linkopts = [
+        "oleaut32.lib",
+        "advapi32.lib",
+        "ole32.lib",
+        "uuid.lib",
+        "shell32.lib",
+        "kernel32.lib",
+        "user32.lib",
+        "gdi32.lib",
+        "gdiplus.lib",
+        "shlwapi.lib",
+        "comctl32.lib",
+        "/MANIFEST:NO",
+    ],
+    deps = [
+        ":ooofilereader",
+        ":shlxt_util",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── ooofilt.dll ───────────────────────────────────────────────────
+# Windows shell extension: IFilter implementation for Windows Search.
+# Allows Windows Desktop Search to index the content of ODF documents.
+cc_binary(
+    name = "ooofilt",
+    srcs = [
+        "source/win32/shlxthandler/ooofilt/ooofilt.cxx",
+        "source/win32/shlxthandler/ooofilt/ooofilt.hxx",
+        "source/win32/shlxthandler/ooofilt/propspec.cxx",
+        "source/win32/shlxthandler/ooofilt/propspec.hxx",
+        "source/win32/shlxthandler/ooofilt/stream_helper.cxx",
+        "inc/pch/precompiled_shell.hxx",
+    ],
+    copts = _SHLXT_COPTS,
+    defines = _SHLXT_DEFINES,
+    linkshared = True,
+    win_def_file = "util/ooofilt.def",
+    additional_linker_inputs = [],
+    linkopts = [
+        "ole32.lib",
+        "advapi32.lib",
+        "comctl32.lib",
+        "uuid.lib",
+        "shell32.lib",
+        "kernel32.lib",
+        "user32.lib",
+        "/MANIFEST:NO",
+    ],
+    deps = [
+        ":ooofilereader",
+        ":shlxt_util",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── propertyhdl.dll ───────────────────────────────────────────────
+# Windows shell extension: IPropertyStore handler for Windows Vista+.
+# Exposes ODF document properties (title, author, …) in Explorer's
+# Details pane and Details column via the Windows property system.
+cc_binary(
+    name = "propertyhdl",
+    srcs = [
+        "source/win32/shlxthandler/prophdl/propertyhdl.cxx",
+        # PrepareIStream is defined in ooofilt's stream_helper.cxx.
+        # In the original build, prophdl reused the shared $(SLO)/stream_helper.obj
+        # produced by ooofilt.  Bazel compiles from source, so include it directly.
+        "source/win32/shlxthandler/ooofilt/stream_helper.cxx",
+        "inc/pch/precompiled_shell.hxx",
+    ],
+    copts = _SHLXT_COPTS + ["/wd4100"],
+    defines = _SHLXT_DEFINES,
+    linkshared = True,
+    win_def_file = "util/propertyhdl.def",
+    additional_linker_inputs = [],
+    linkopts = [
+        "oleaut32.lib",
+        "advapi32.lib",
+        "ole32.lib",
+        "uuid.lib",
+        "shell32.lib",
+        "kernel32.lib",
+        "user32.lib",
+        "gdi32.lib",
+        "gdiplus.lib",
+        "shlwapi.lib",
+        "propsys.lib",
+        "/MANIFEST:NO",
+    ],
+    deps = [
+        ":ooofilereader",
+        ":shlxt_util",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── lngconvex.exe ─────────────────────────────────────────────────
+# Build tool: converts .ulf (Unicode Language Format) locale files into
+# Windows .rc resource files for the shlxthdl shell extension.
+cc_binary(
+    name = "lngconvex",
+    srcs = [
+        "source/tools/lngconvex/lngconvex.cxx",
+        "source/tools/lngconvex/cmdline.cxx",
+        "source/tools/lngconvex/cmdline.hxx",
+        "source/tools/lngconvex/defs.hxx",
+        "inc/pch/precompiled_shell.hxx",
+    ],
+    copts = _UNO_COPTS + ["/Ob0"],
+    defines = _UNO_DEFINES + ["_NTSDK"],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/tools:tl_implib",
+        "//main/i18npool:i18nisolang1_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/i18npool:i18nisolang1_implib)",
+    ],
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/tools:tools_headers",
+        "//main/i18npool:i18npool_headers",
+        "//main/udkapi:udkapi_idl_headers",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── regsvrex.exe ──────────────────────────────────────────────────
+# Tiny helper: registers / unregisters shell extension DLLs on the
+# build machine (calls DllRegisterServer / DllUnregisterServer).
+cc_binary(
+    name = "regsvrex",
+    srcs = [
+        "source/tools/regsvrex/regsvrex.cxx",
+        "inc/pch/precompiled_shell.hxx",
+    ],
+    copts = _UNO_COPTS,
+    defines = _UNO_DEFINES,
+    linkopts = ["kernel32.lib"],
+    visibility = ["//visibility:public"],
+)
