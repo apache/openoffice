@@ -105,7 +105,7 @@ basebmp       ✅  (basegfx, sal + boost, vigra ext) — main/basebmp/BUILD.baze
 ridljar       ✅  (codemaker, udkapi — Java) — main/ridljar/readme.md
 ── Layer 3 ──────────────────────────────────────────────────────────────
 rsc           ✅  (rscpp, rsc, rsc2) — main/rsc/readme.md
-unotools      ⬜  (tools, comphelper, ucbhelper, offapi)
+unotools      ✅  (utl.dll) — main/unotools/readme.md
 xmlscript     ⬜  (tools, comphelper, offapi)
 shell         ⬜  (tools, rdbmaker, sal, expat, offapi)
 l10ntools     ⬜  (tools, python)
