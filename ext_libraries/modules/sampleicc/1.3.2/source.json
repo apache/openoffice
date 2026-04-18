@@ -1,0 +1,28 @@
+{
+    "url": "https://downloads.sourceforge.net/project/sampleicc/sampleicc%20tar/1.3.2/SampleICC-1.3.2.tar.gz",
+    "integrity": "sha256-5ry/xSHSOJlRF5nJEs4h+8AD1Vw9VkCOPI2r8g/qglY=",
+    "strip_prefix": "SampleICC-1.3.2",
+    "overlay": {
+        "MODULE.bazel": "sha256-aaT/GzZy5lk2vV2v/k2RJ4qNK9Re4HKaIEJe+BgDC/w=",
+        "BUILD.bazel": "sha256-olEtzB0n01ZZJ1QjFPgdcMZW0PaiU9HgJ+nIcFO/Fe8=",
+        "Contrib/ICC_utils/Stubs.h": "sha256-838+eA9Lg2fQbAQAgMPWcPSoT/KzpAV1GaZLS8EfVnY=",
+        "Contrib/ICC_utils/Vetters.cpp": "sha256-/NjfBdhC5WbexQzxH5LnvAteYxRjLOKuVVRGW+6+s0M=",
+        "Contrib/ICC_utils/Vetters.h": "sha256-PHCYbaunIYF5R+5KlFX4wUKAFz7YXLoUlOjxBb4AKj4=",
+        "Contrib/ICC_utils/CLUT.cpp": "sha256-cLaFeNhTOQlZdIcTee7xouncfYQx/olHV3r6t4bXR1A=",
+        "Contrib/ICC_utils/ICC_tool_exception.h": "sha256-o6P187zUzU8/lfeaYVzqzYMgBvrB8DzrKH/pqxTTmfw=",
+        "IccProfLib/IccCmm.cpp": "sha256-NB6eUTHY3I7XzhnCsVsbtpqsj+G1R5nEmvz7st3PS+A=",
+        "IccProfLib/IccIO.cpp": "sha256-OL22QAjwk/NC+Zeo6OSRGP5pGsaLaytUOfUrb8KH8Aw=",
+        "IccProfLib/IccIO.h": "sha256-D40TxxuI9zqz4sXcqlyMUMg7mtzyzGK/2yBQeXqsyus=",
+        "IccProfLib/IccMpeACS.cpp": "sha256-iCrS8zRU3lt11QwyK23NnDEwE8IjYP61quOR4hM+szw=",
+        "IccProfLib/IccMpeBasic.cpp": "sha256-WArTr5eKHkiSsrWTxJZBBAatgB/z8p/FwbQL47tBzxI=",
+        "IccProfLib/IccProfLibConf.h": "sha256-hDHy3AMywadGwEj89eti9BKaUZjwGt2+MOhkX2ZZWDg=",
+        "IccProfLib/IccProfile.cpp": "sha256-73i0Mq8MnTUS3m4SdtiAQeoFmObjElQGcyoOksszF/A=",
+        "IccProfLib/IccTagBasic.cpp": "sha256-5QEsIB20jzr3LAi1d9DFfMElZofvH6lYjUtH44nNt7M=",
+        "IccProfLib/IccTagLut.cpp": "sha256-vcYS9zcoYBJGH7DvOgp6jVZTyKoc2PZCaI0eT1M2SfU=",
+        "IccProfLib/IccTagMPE.cpp": "sha256-tIw4Nz4JuT2Wx+Uqnoi4fHzQIl96QSXb+wQO/1U54yQ=",
+        "IccProfLib/IccTagProfSeqId.cpp": "sha256-tbxt8S61ntbxu6ItCTUdrdOFMfJ+ryXcHapsBkxclLo=",
+        "IccProfLib/IccTagProfSeqId.h": "sha256-wCfEu8Ifel0lL3yZ4b1c7grq3nC6wXDsialSV3uBbRc=",
+        "IccProfLib/icProfileHeader.h": "sha256-hJPe0XCOWkwXz4uYG/VYqDtP4LTCQ/0TzRrqKXnHn1s=",
+        "IccProfLib/IccUtil.cpp": "sha256-RkOFJY85i6Lt79QZOy78shl+/jaYoQ80hwO+msiTgW8="
+    }
+}
