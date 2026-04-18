@@ -1,0 +1,113 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary")
+load("@rules_java//java:defs.bzl", "java_library")
+
+_COPTS = [
+    "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs",
+    "/EHsc",
+    "/Zc:wchar_t-",
+    "/Dsnprintf=_snprintf",
+    "/Imain/javaunohelper/inc/pch",
+]
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "SHAREDLIB", "_DLL_",
+    "SOLAR_JAVA",
+]
+
+# ── juh.jar ────────────────────────────────────────────────────────────────────
+# UNO Java helper library: helpers, adapters, bootstrap, context utilities.
+# Classpath: ridl.jar (UDK types), jurt.jar (UNO bridge), unoil.jar (API types).
+java_library(
+    name = "juh_jar",
+    srcs = glob(["com/**/*.java"]),
+    javacopts = ["--release", "8", "-XepDisableAllChecks"],
+    deps = [
+        "//main/ridljar:ridl",
+        "//main/jurt:jurt",
+        "//main/unoil:unoil",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── juh.dll (preload) ──────────────────────────────────────────────────────────
+# Thin DLL loaded by Java via System.loadLibrary("juh"). On first JNI call it
+# lazily loads juhx.dll via osl_loadModuleRelative and forwards all 4 JNI
+# entry points to the real implementation. Only depends on sal.
+cc_binary(
+    name = "juh",
+    srcs = ["source/preload.cxx"],
+    copts = _COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/juh.def",
+    deps = [
+        "//main/sal:sal_headers",
+        "@rules_java//toolchains:jni",
+    ],
+    additional_linker_inputs = ["//main/sal:sal_implib"],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "juh_implib",
+    srcs = [":juh"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── juhx.dll (main JNI) ───────────────────────────────────────────────────────
+# Real JNI implementation: SharedLibraryLoader, RegistryServiceFactory,
+# Bootstrap bootstrap + VM singleton wiring into the component context.
+# Loaded at runtime by juh.dll via osl_loadModuleRelative.
+cc_binary(
+    name = "juhx",
+    srcs = [
+        "source/javaunohelper.cxx",
+        "source/bootstrap.cxx",
+        "source/vm.cxx",
+        "source/vm.hxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/juhx.def",
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/salhelper:salhelper_headers",
+        "//main/jvmaccess:jvmaccess_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "@rules_java//toolchains:jni",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/salhelper:salhelper_implib",
+        "//main/jvmaccess:jvmaccess_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/salhelper:salhelper_implib)",
+        "$(execpath //main/jvmaccess:jvmaccess_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "juhx_implib",
+    srcs = [":juhx"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)

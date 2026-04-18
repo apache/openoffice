@@ -42,6 +42,7 @@ Source code is NOT being changed — only the build system.
 - never manipulate the cache directly, if you have to reset it use: bazel mod deps --lockfile_mode=refresh or ask the user for cleanup.
 - add a migration summary to the module as readme.md
 - let the user build
+- update frontier after build is successfull.
 
 ## Cross-cutting compiler flags & defines
 These apply to many packages — check before building any new module:
@@ -121,10 +122,10 @@ unoil         ✅  (codemaker, ridljar, offapi — Java) — main/unoil/readme.m
 idl           ✅  (svidl.exe) — main/idl/readme.md
 ── Layer 5 ──────────────────────────────────────────────────────────────
 svl           ✅  (svl.dll, fsstorage.dll, passwordcontainer.dll) — main/svl/readme.md
-javaunohelper ⬜  (unoil, jurt, ridljar, bridges, cppuhelper — Java)
+javaunohelper ✅  (juh.jar, juh.dll, juhx.dll) — main/javaunohelper/readme.md
 ── Layer 6 ──────────────────────────────────────────────────────────────
-vcl           ⬜  (rsc, sot, unotools, svl, basegfx, basebmp, tools, shell, l10ntools,
-                   icc + boost, icu, graphite ext)
+vcl           ✅  (rsc, sot, unotools, svl, basegfx, basebmp, tools, shell, l10ntools,
+                   icc + boost, icu, graphite ext) — main/vcl/readme.md
 xmloff        ⬜  (svl, offapi, vos)
 ── Layer 7 ──────────────────────────────────────────────────────────────
 linguistic    ⬜  (svl, xmloff, ucbhelper, vos, comphelper + icu ext)

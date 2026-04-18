@@ -1,0 +1,146 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+]
+
+_COPTS = [
+    "/Imain/vcl/inc",
+    "/Imain/vcl/inc/pch",
+    "/Imain/vcl/source/window",
+    "/Imain/vcl/source/gdi",
+    "/Imain/vcl/source/fontsubset",
+    "/Zc:wchar_t-",
+    # Force-include XP-compat shim for APPCOMMAND constants guarded by SDK 7.0
+    "/FImain/vcl/win/wincompat.h",
+]
+
+# ── public headers ────────────────────────────────────────────────
+cc_library(
+    name = "vcl_headers",
+    hdrs = glob(["inc/vcl/**", "inc/pch/**", "inc/*.hrc", "inc/win/*.hrc"]),
+    strip_include_prefix = "inc",
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/tools:tools_headers",
+        "//main/unotools:unotools_headers",
+        "//main/ucbhelper:ucbhelper_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/sot:sot_headers",
+        "//main/basegfx:basegfx_headers",
+        "//main/vos:vos_headers",
+        "//main/i18nutil:i18nutil_headers",
+        "//main/svl:svl_headers",
+        "//main/rsc:rsc_headers",
+        "@icu//:icuuc_headers",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── vcl.dll ───────────────────────────────────────────────────────
+cc_binary(
+    name = "vcl",
+    srcs = [
+        "inc/pch/precompiled_vcl.cxx",
+        "source/salmain/salmain.cxx",
+        "win/wincompat.h",
+    ] + glob(
+        [
+            # private internal headers (inc/ root and platform-specific)
+            "inc/*.hxx",
+            "inc/*.h",
+            "inc/win/*.hxx",
+            "inc/win/*.h",
+            # private headers co-located with source subdirectories
+            "source/window/*.hxx",
+            "source/gdi/*.hxx",
+            "source/fontsubset/*.hxx",
+            "source/fontsubset/*.h",
+            # cross-platform sources
+            "source/app/*.cxx",
+            "source/components/*.cxx",
+            "source/control/*.cxx",
+            "source/fontsubset/*.cxx",
+            "source/gdi/*.cxx",
+            "source/helper/*.cxx",
+            "source/window/*.cxx",
+            # Windows platform sources
+            "win/source/app/*.cxx",
+            "win/source/gdi/*.cxx",
+            "win/source/window/*.cxx",
+        ],
+        # glyphs/ is unx-only (freetype + graphite); not compiled on Windows
+    ),
+    copts = _COPTS,
+    defines = _DEFINES + [
+        "VCL_DLLIMPLEMENTATION",
+        "CUI_DLL_NAME=\\\"cui.dll\\\"",
+    ],
+    linkshared = True,
+    deps = [
+        ":vcl_headers",
+        "//main/stlport:stlport",
+        "@boost.legacy//:boost.legacy",
+        "//main/i18npool:i18npool_headers",
+        "//main/salhelper:salhelper_headers",
+        "//main/jvmaccess:jvmaccess_headers",
+        "//main/icc:srgb_icc",
+        "@icu//:icuuc_headers",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/ucbhelper:ucbhelper_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/sot:sot_implib",
+        "//main/basegfx:basegfx_implib",
+        "//main/i18npool:i18nisolang1_implib",
+        "//main/i18npool:i18npaper_implib",
+        "//main/i18nutil:i18nutil_implib",
+        "//main/jvmaccess:jvmaccess_implib",
+        "//main/vos:vos3_implib",
+        "@icu//:icuuc_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/ucbhelper:ucbhelper_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/sot:sot_implib)",
+        "$(execpath //main/basegfx:basegfx_implib)",
+        "$(execpath //main/i18npool:i18nisolang1_implib)",
+        "$(execpath //main/i18npool:i18npaper_implib)",
+        "$(execpath //main/i18nutil:i18nutil_implib)",
+        "$(execpath //main/jvmaccess:jvmaccess_implib)",
+        "$(execpath //main/vos:vos3_implib)",
+        "$(execpath @icu//:icuuc_implib)",
+        "advapi32.lib", "gdi32.lib", "gdiplus.lib", "imm32.lib",
+        "mpr.lib", "msimg32.lib", "ole32.lib", "shell32.lib",
+        "user32.lib", "uuid.lib", "version.lib", "winspool.lib",
+        "/ENTRY:LibMain@12",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── import library for downstream consumers ───────────────────────
+filegroup(
+    name = "vcl_implib",
+    srcs = [":vcl"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
