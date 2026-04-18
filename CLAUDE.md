@@ -126,7 +126,7 @@ javaunohelper ✅  (juh.jar, juh.dll, juhx.dll) — main/javaunohelper/readme.md
 ── Layer 6 ──────────────────────────────────────────────────────────────
 vcl           ✅  (rsc, sot, unotools, svl, basegfx, basebmp, tools, shell, l10ntools,
                    icc + boost, icu, graphite ext) — main/vcl/readme.md
-xmloff        ⬜  (svl, offapi, vos)
+xmloff        ✅  (xo.dll, xof.dll) — main/xmloff/readme.md
 ── Layer 7 ──────────────────────────────────────────────────────────────
 linguistic    ⬜  (svl, xmloff, ucbhelper, vos, comphelper + icu ext)
 toolkit       ⬜  (vcl)

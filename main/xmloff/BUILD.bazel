@@ -1,0 +1,161 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+]
+
+_COPTS = [
+    "/Imain/xmloff/inc",
+    "/Imain/xmloff/inc/pch",
+    "/Zc:wchar_t-",
+]
+
+# Each source subdir has private headers included as <Foo.hxx> with no path prefix
+_COPTS_XO = _COPTS + [
+    "/Imain/xmloff/source/chart",
+    "/Imain/xmloff/source/core",
+    "/Imain/xmloff/source/draw",
+    "/Imain/xmloff/source/forms",
+    "/Imain/xmloff/source/forms/handler",
+    "/Imain/xmloff/source/meta",
+    "/Imain/xmloff/source/script",
+    "/Imain/xmloff/source/style",
+    "/Imain/xmloff/source/table",
+    "/Imain/xmloff/source/text",
+    "/Imain/xmloff/source/xforms",
+]
+
+_COPTS_XOF = _COPTS + [
+    "/Imain/xmloff/source/transform",
+]
+
+# ── public headers ─────────────────────────────────────────────────
+cc_library(
+    name = "xmloff_headers",
+    hdrs = glob(["inc/xmloff/**", "inc/pch/**"]),
+    strip_include_prefix = "inc",
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/tools:tools_headers",
+        "//main/unotools:unotools_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/basegfx:basegfx_headers",
+        "//main/svl:svl_headers",
+        "//main/i18nutil:i18nutil_headers",
+        "//main/vos:vos_headers",
+        "//main/salhelper:salhelper_headers",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── xo.dll ─────────────────────────────────────────────────────────
+cc_binary(
+    name = "xo",
+    srcs = ["inc/pch/precompiled_xmloff.cxx"] + glob([
+        "source/chart/*.cxx",
+        "source/core/*.cxx",
+        "source/draw/*.cxx",
+        "source/forms/*.cxx",
+        "source/forms/handler/*.cxx",
+        "source/meta/*.cxx",
+        "source/script/*.cxx",
+        "source/style/*.cxx",
+        "source/table/*.cxx",
+        "source/text/*.cxx",
+        "source/xforms/*.cxx",
+    ]) + glob([
+        # private headers co-located with sources (some dirs have none)
+        "source/**/*.hxx",
+    ], exclude = ["source/transform/*.hxx"], allow_empty = True),
+    copts = _COPTS_XO,
+    defines = _DEFINES + ["XMLOFF_DLLIMPLEMENTATION"],
+    linkshared = True,
+    win_def_file = "util/xo.def",
+    deps = [
+        ":xmloff_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/basegfx:basegfx_implib",
+        "//main/i18npool:i18nisolang1_implib",
+        "//main/svl:svl_implib",
+        "//main/vos:vos3_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/basegfx:basegfx_implib)",
+        "$(execpath //main/i18npool:i18nisolang1_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/vos:vos3_implib)",
+        "user32.lib", "uuid.lib", "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "xo_implib",
+    srcs = [":xo"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── xof.dll (OOo↔OASIS transform) ─────────────────────────────────
+cc_binary(
+    name = "xof",
+    srcs = glob([
+        "source/transform/*.cxx",
+        "source/transform/*.hxx",
+    ]),
+    copts = _COPTS_XOF,
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "source/transform/xof.def",
+    deps = [
+        ":xmloff_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/salhelper:salhelper_implib",
+        ":xo_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/salhelper:salhelper_implib)",
+        "$(execpath :xo_implib)",
+        "uuid.lib", "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "xof_implib",
+    srcs = [":xof"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
