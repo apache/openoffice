@@ -57,6 +57,7 @@ These apply to many packages — check before building any new module:
 icu - ext_libraries\modules\icu\Readme.md
 redland - ext_libraries\modules\redland\README
 rhino - ext_libraries\modules\rhino\README
+sal_pch - was merged with sal_headers
 ## Current frontier
 
 ```
