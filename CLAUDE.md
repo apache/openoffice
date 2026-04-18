@@ -117,7 +117,7 @@ jvmaccess     ✅  (jvmaccess.dll) — main/jvmaccess/readme.md
 ── Layer 4 ──────────────────────────────────────────────────────────────
 sot           ✅  (tools, unotools, ucbhelper) — main/sot/readme.md
 unoil         ✅  (codemaker, ridljar, offapi — Java) — main/unoil/readme.md
-idl           ⬜  (tools)
+idl           ✅  (svidl.exe) — main/idl/readme.md
 ── Layer 5 ──────────────────────────────────────────────────────────────
 svl           ⬜  (rsc, sot, unotools, ucbhelper, comphelper, cppu, cppuhelper, sal)
 javaunohelper ⬜  (unoil, jurt, ridljar, bridges, cppuhelper — Java)
