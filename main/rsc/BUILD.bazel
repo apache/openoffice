@@ -1,5 +1,14 @@
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 
+# ── public headers (rscsfx.hxx needed by svl and others) ─────────
+cc_library(
+    name = "rsc_headers",
+    hdrs = ["inc/rsc/rscsfx.hxx"],
+    strip_include_prefix = "inc",
+    deps = ["//main/sal:sal_headers"],
+    visibility = ["//visibility:public"],
+)
+
 # Common defines matching the rest of the first-party build
 _DEFINES = [
     "WNT", "GUI", "WIN32",

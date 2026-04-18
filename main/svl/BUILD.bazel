@@ -1,0 +1,193 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+]
+
+_COPTS = [
+    "/Imain/svl/source/inc",
+    "/Imain/svl/inc/pch",
+    "/Imain/svl/source/config",
+    "/Imain/svl/source/numbers",
+    "/Imain/svl/source/notify",
+    "/Imain/svl/source/items",
+    "/Zc:wchar_t-",
+]
+
+cc_library(
+    name = "svl_headers",
+    hdrs = glob(["inc/svl/**", "inc/pch/**"]),
+    strip_include_prefix = "inc",
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/tools:tools_headers",
+        "//main/unotools:unotools_headers",
+        "//main/ucbhelper:ucbhelper_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/sot:sot_headers",
+        "//main/i18npool:i18npool_headers",
+        "//main/i18nutil:i18nutil_headers",
+        "//main/basegfx:basegfx_headers",
+        "//main/vos:vos_headers",
+        "//main/jvmfwk:jvmfwk_headers",
+        "//main/rsc:rsc_headers",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# nranges.cxx and rngitem_inc.cxx are #include'd by other TUs, not standalone
+cc_library(
+    name = "_included_cxx_fragments",
+    textual_hdrs = [
+        "source/items/rngitem_inc.cxx",
+        "source/items/nranges.cxx",
+    ],
+)
+
+cc_binary(
+    name = "svl",
+    srcs = ["inc/pch/precompiled_svl.cxx"] + glob(
+        [
+            "source/config/*.cxx",
+            "source/filepicker/*.cxx",
+            "source/filerec/*.cxx",
+            "source/items/*.cxx",
+            "source/memtools/*.cxx",
+            "source/misc/*.cxx",
+            "source/notify/*.cxx",
+            "source/numbers/*.cxx",
+            "source/svsql/*.cxx",
+            "source/svdde/*.cxx",
+            "source/undo/*.cxx",
+            "source/uno/*.cxx",
+        ],
+        exclude = [
+            "source/items/nranges.cxx",
+            "source/items/rngitem_inc.cxx",
+        ],
+    ),
+    copts = _COPTS,
+    defines = _DEFINES + ["SVL_DLLIMPLEMENTATION"],
+    linkshared = True,
+    deps = [
+        ":svl_headers",
+        ":_included_cxx_fragments",
+        "//main/stlport:stlport",
+        "@boost.legacy//:boost.legacy",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/ucbhelper:ucbhelper_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/sot:sot_implib",
+        "//main/basegfx:basegfx_implib",
+        "//main/i18npool:i18nisolang1_implib",
+        "//main/i18nutil:i18nutil_implib",
+        "//main/jvmfwk:jvmfwk_implib",
+        "//main/vos:vos3_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/ucbhelper:ucbhelper_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/sot:sot_implib)",
+        "$(execpath //main/basegfx:basegfx_implib)",
+        "$(execpath //main/i18npool:i18nisolang1_implib)",
+        "$(execpath //main/i18nutil:i18nutil_implib)",
+        "$(execpath //main/jvmfwk:jvmfwk_implib)",
+        "$(execpath //main/vos:vos3_implib)",
+        "user32.lib", "uuid.lib", "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "svl_implib",
+    srcs = [":svl"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+cc_binary(
+    name = "fsstorage",
+    srcs = glob(["source/fsstor/*.cxx", "source/fsstor/*.hxx"]),
+    copts = _COPTS,
+    defines = _DEFINES + ["FSSTORAGE_DLLIMPLEMENTATION"],
+    linkshared = True,
+    deps = [":svl_headers", "//main/stlport:stlport"],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/ucbhelper:ucbhelper_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/ucbhelper:ucbhelper_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "uuid.lib", "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "fsstorage_implib",
+    srcs = [":fsstorage"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+cc_binary(
+    name = "passwordcontainer",
+    srcs = glob(["source/passwordcontainer/*.cxx", "source/passwordcontainer/*.hxx"]),
+    copts = _COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    deps = [":svl_headers", "//main/stlport:stlport"],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/ucbhelper:ucbhelper_implib",
+        "//main/unotools:utl_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/ucbhelper:ucbhelper_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "uuid.lib", "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "passwordcontainer_implib",
+    srcs = [":passwordcontainer"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)

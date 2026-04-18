@@ -41,6 +41,7 @@ Source code is NOT being changed — only the build system.
   getAbsoluteFileURL (relative-to-workdir) instead of failing on relative paths
 - never manipulate the cache directly, if you have to reset it use: bazel mod deps --lockfile_mode=refresh or ask the user for cleanup.
 - add a migration summary to the module as readme.md
+- let the user build
 
 ## Cross-cutting compiler flags & defines
 These apply to many packages — check before building any new module:
@@ -119,7 +120,7 @@ sot           ✅  (tools, unotools, ucbhelper) — main/sot/readme.md
 unoil         ✅  (codemaker, ridljar, offapi — Java) — main/unoil/readme.md
 idl           ✅  (svidl.exe) — main/idl/readme.md
 ── Layer 5 ──────────────────────────────────────────────────────────────
-svl           ⬜  (rsc, sot, unotools, ucbhelper, comphelper, cppu, cppuhelper, sal)
+svl           ✅  (svl.dll, fsstorage.dll, passwordcontainer.dll) — main/svl/readme.md
 javaunohelper ⬜  (unoil, jurt, ridljar, bridges, cppuhelper — Java)
 ── Layer 6 ──────────────────────────────────────────────────────────────
 vcl           ⬜  (rsc, sot, unotools, svl, basegfx, basebmp, tools, shell, l10ntools,
