@@ -111,7 +111,7 @@ xmlscript     ✅  (xcr.dll) — main/xmlscript/BUILD.bazel
 shell         ✅  (syssh.uno, localebe1.uno, wininetbe1.uno, shlxthdl, ooofilt, propertyhdl, lngconvex, regsvrex) — main/shell/BUILD.bazel
 l10ntools     ✅  (transex3, helpex, ulfex, gsiconv, gsicheck, cfgex, xrmex, localize_sl, HelpLinker, helplinker.dll) — main/l10ntools/BUILD.bazel
 icc           ✅  (create_sRGB_profile.exe → sRGB-IEC61966-2.1.hxx, srgb_icc) — main\icc\readme.md
-jurt          ⬜  (ridljar, offapi, sal — Java)
+jurt          ✅  (ridljar, sal — Java; jpipe.dll + jpipx.dll native pipe JNI) — main/jurt/readme.md
 jvmaccess     ⬜  (ridljar, cppu, sal, salhelper, offapi — Java)
 ── Layer 4 ──────────────────────────────────────────────────────────────
 sot           ⬜  (tools, unotools, ucbhelper)

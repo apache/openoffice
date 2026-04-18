@@ -1,0 +1,75 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary")
+load("@rules_java//java:defs.bzl", "java_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "INTEL", "_X86_=1",
+    "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+]
+
+# ── jurt.jar ──────────────────────────────────────────────────────────────────
+# UNO Java bridge: URP protocol, connection (pipe/socket), bridge factory,
+# service manager, URL resolver, thread pool, and Java environment.
+# Classpath: ridl.jar (UDK types + TypeDescription etc.) + unoloader.jar.
+java_library(
+    name = "jurt",
+    srcs = glob(["java/jurt/src/main/java/**/*.java"]),
+    # Thread.suspend()/resume() were removed in Java 21 but exist in Java 8 API.
+    # Compile against Java 8 so javac resolves them from ct.sym rather than
+    # the live JDK bootstrap API.
+    # --release 8: Thread.suspend/resume exist in Java 8 API (removed in Java 21).
+    # -XepDisableAllChecks: legacy code triggers Error Prone warnings-as-errors.
+    javacopts = ["--release", "8", "-XepDisableAllChecks"],
+    deps = [
+        "//main/ridljar:ridl",
+        "//main/ridljar:unoloader",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── jpipx.dll ─────────────────────────────────────────────────────────────────
+# Real JNI pipe implementation.  On Windows, functions are exported with
+# truncated names (PipeConnection_create etc., __cdecl) so wrapper.c can call
+# GetProcAddress without worrying about @N stdcall decoration.
+# Does NOT have a DllMain — MSVC provides the default from msvcrt.lib.
+cc_binary(
+    name = "jpipx",
+    srcs = ["source/pipe/com_sun_star_lib_connections_pipe_PipeConnection.c"],
+    copts = ["/TC"],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/jpipx.def",
+    deps = [
+        "//main/sal:sal_headers",
+        "@rules_java//toolchains:jni",
+    ],
+    additional_linker_inputs = ["//main/sal:sal_implib"],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── jpipe.dll ─────────────────────────────────────────────────────────────────
+# Thin DLL loaded by Java via System.loadLibrary("jpipe").  Its DllMain loads
+# jpipx.dll (same directory, LOAD_WITH_ALTERED_SEARCH_PATH) and each exported
+# JNI function forwards to jpipx via GetProcAddress.
+# DEF file needed: JNICALL is __stdcall on Win32 and MSVC would otherwise
+# decorate exports as _Java_...@N, which the JVM cannot find.
+cc_binary(
+    name = "jpipe",
+    srcs = ["source/pipe/wrapper/wrapper.c"],
+    copts = ["/TC"],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/jpipe.def",
+    deps = [
+        "//main/sal:sal_headers",
+        "@rules_java//toolchains:jni",
+    ],
+    linkopts = ["/MANIFEST:NO"],
+    visibility = ["//visibility:public"],
+)

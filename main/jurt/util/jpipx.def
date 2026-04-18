@@ -1,0 +1,7 @@
+LIBRARY jpipx
+EXPORTS
+    PipeConnection_create
+    PipeConnection_close
+    PipeConnection_read
+    PipeConnection_write
+    PipeConnection_flush
