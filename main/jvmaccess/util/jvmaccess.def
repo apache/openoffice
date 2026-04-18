@@ -1,0 +1,21 @@
+; jvmaccess.dll exports — derived from util/msvc_win32_intel.map
+; UDK_3.1: VirtualMachine and AttachGuard
+EXPORTS
+    ??0CreationException@AttachGuard@VirtualMachine@jvmaccess@@QAE@XZ
+    ??0CreationException@AttachGuard@VirtualMachine@jvmaccess@@QAE@ABV0123@@Z
+    ??1CreationException@AttachGuard@VirtualMachine@jvmaccess@@UAE@XZ
+    ??4CreationException@AttachGuard@VirtualMachine@jvmaccess@@QAEAAV0123@ABV0123@@Z
+    ??0AttachGuard@VirtualMachine@jvmaccess@@QAE@ABV?$Reference@VVirtualMachine@jvmaccess@@@rtl@@@Z
+    ??1AttachGuard@VirtualMachine@jvmaccess@@QAE@XZ
+    ??0VirtualMachine@jvmaccess@@QAE@PAUJavaVM_@@H_NPAUJNIEnv_@@@Z
+    ; UDK_3.3: UnoVirtualMachine
+    ??0CreationException@UnoVirtualMachine@jvmaccess@@QAE@ABV012@@Z
+    ??0CreationException@UnoVirtualMachine@jvmaccess@@QAE@XZ
+    ??1CreationException@UnoVirtualMachine@jvmaccess@@UAE@XZ
+    ??4CreationException@UnoVirtualMachine@jvmaccess@@QAEAAV012@ABV012@@Z
+    ??0UnoVirtualMachine@jvmaccess@@QAE@ABV?$Reference@VVirtualMachine@jvmaccess@@@rtl@@PAX@Z
+    ?getVirtualMachine@UnoVirtualMachine@jvmaccess@@QBE?AV?$Reference@VVirtualMachine@jvmaccess@@@rtl@@XZ
+    ?getClassLoader@UnoVirtualMachine@jvmaccess@@QBEPAXXZ
+    ; UDK_3.4: ClassPath helpers
+    ?doLoadClass@ClassPath@jvmaccess@@CAPAXABV?$Reference@VXComponentContext@uno@star@sun@com@@@uno@star@sun@com@@PAXABVOUString@rtl@@2@Z
+    ?doTranslateToUrls@ClassPath@jvmaccess@@CAPAXABV?$Reference@VXComponentContext@uno@star@sun@com@@@uno@star@sun@com@@PAXABVOUString@rtl@@@Z

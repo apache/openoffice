@@ -1,0 +1,73 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_COPTS = [
+    "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs",
+    "/EHsc",
+    "/Zc:wchar_t-",
+    "/Dsnprintf=_snprintf",
+    "/Imain/jvmaccess/inc",
+]
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK",
+    "SHAREDLIB", "_DLL_",
+    "SOLAR_JAVA",
+    "JVMACCESS_DLLIMPLEMENTATION",
+]
+
+# ── jvmaccess public headers (for downstream consumers) ──────────────
+cc_library(
+    name = "jvmaccess_headers",
+    hdrs = glob(["inc/jvmaccess/*.hxx", "inc/jvmaccess/*.h"]),
+    strip_include_prefix = "inc",
+    deps = [
+        "//main/sal:sal_headers",
+        "@rules_java//toolchains:jni",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── jvmaccess.dll ────────────────────────────────────────────────────
+cc_binary(
+    name = "jvmaccess",
+    srcs = [
+        "source/classpath.cxx",
+        "source/unovirtualmachine.cxx",
+        "source/virtualmachine.cxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/jvmaccess.def",
+    deps = [
+        ":jvmaccess_headers",
+        "//main/sal:sal_headers",
+        "//main/salhelper:salhelper_headers",
+        "//main/cppu:cppu_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "@rules_java//toolchains:jni",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/salhelper:salhelper_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/salhelper:salhelper_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── import library for downstream consumers ──────────────────────────
+filegroup(
+    name = "jvmaccess_implib",
+    srcs = [":jvmaccess"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
