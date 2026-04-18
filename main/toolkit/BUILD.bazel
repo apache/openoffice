@@ -1,0 +1,106 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+]
+
+_COPTS = [
+    "/Imain/toolkit/inc",
+    "/Imain/toolkit/inc/pch",
+    "/Imain/toolkit/source",
+    "/Imain/toolkit/source/awt",
+    "/Imain/toolkit/source/controls",
+    "/Imain/toolkit/source/controls/grid",
+    "/Imain/toolkit/source/controls/tree",
+    "/Imain/toolkit/source/helper",
+    "/Imain/toolkit/source/layout/core",
+    "/Imain/toolkit/source/layout/vcl",
+    "/Zc:wchar_t-",
+    # MSVC encodes throw() specs into function pointer types; GCC (original AOO
+    # build compiler) doesn't.  Force-include a shim that adds throw(RuntimeException)
+    # overloads to boost::bind so SAL_CALL listener methods compile cleanly.
+    "/FImain/toolkit/inc/pch/boost_bind_msvc_fix.hpp",
+]
+
+# ── public headers ─────────────────────────────────────────────────
+cc_library(
+    name = "toolkit_headers",
+    hdrs = glob(["inc/toolkit/**", "inc/pch/**", "inc/*.h"], allow_empty = True),
+    strip_include_prefix = "inc",
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/tools:tools_headers",
+        "//main/unotools:unotools_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/vcl:vcl_headers",
+        "//main/svl:svl_headers",
+        "//main/basegfx:basegfx_headers",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── ootk.dll ───────────────────────────────────────────────────────
+cc_binary(
+    name = "ootk",
+    srcs = [
+        "inc/pch/precompiled_toolkit.cxx",
+    ] + glob([
+        "source/awt/*.cxx",
+        "source/controls/*.cxx",
+        "source/controls/grid/*.cxx",
+        "source/controls/tree/*.cxx",
+        "source/helper/*.cxx",
+        "source/layout/core/*.cxx",
+        "source/layout/vcl/*.cxx",
+        # private headers co-located with sources
+        "source/**/*.hxx",
+    ], exclude = [
+        # dead file not listed in Library_tk.mk; calls VCLXWindow methods not in its hierarchy
+        "source/awt/vclxtabpagemodel.cxx",
+    ]),
+    copts = _COPTS,
+    defines = _DEFINES + ["TOOLKIT_DLLIMPLEMENTATION"],
+    linkshared = True,
+    win_def_file = "util/ootk.def",
+    deps = [
+        ":toolkit_headers",
+        "//main/stlport:stlport",
+        "@boost.legacy//:boost.legacy",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/vcl:vcl_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "user32.lib", "uuid.lib", "ole32.lib", "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── import library for downstream consumers ───────────────────────
+filegroup(
+    name = "ootk_implib",
+    srcs = [":ootk"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)

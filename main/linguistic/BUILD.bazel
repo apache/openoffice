@@ -1,0 +1,94 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+]
+
+_COPTS = [
+    "/Imain/linguistic/inc",
+    "/Imain/linguistic/inc/pch",
+    "/Imain/linguistic/source",
+    "/Zc:wchar_t-",
+]
+
+# ── public headers ─────────────────────────────────────────────────
+cc_library(
+    name = "linguistic_headers",
+    hdrs = glob(["inc/linguistic/**", "inc/*.hxx"]),
+    strip_include_prefix = "inc",
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/tools:tools_headers",
+        "//main/unotools:unotools_headers",
+        "//main/i18npool:i18npool_headers",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── lng.dll ────────────────────────────────────────────────────────
+# Core linguistic services: spell, hyphenation, thesaurus, text conversion.
+cc_binary(
+    name = "lng",
+    srcs = glob(["source/*.cxx", "source/*.hxx"]),
+    copts = _COPTS,
+    defines = _DEFINES + ["LNG_DLLIMPLEMENTATION"],
+    linkshared = True,
+    win_def_file = "source/lng.def",
+    deps = [
+        ":linguistic_headers",
+        "//main/stlport:stlport",
+        "@boost.legacy//:boost.legacy",
+        "//main/comphelper:comphelper_headers",
+        "//main/svl:svl_headers",
+        "//main/xmloff:xmloff_headers",
+        "//main/ucbhelper:ucbhelper_headers",
+        "//main/vos:vos_headers",
+        "//main/i18nutil:i18nutil_headers",
+        "@icu//:icuuc_headers",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/svl:svl_implib",
+        "//main/xmloff:xo_implib",
+        "//main/ucbhelper:ucbhelper_implib",
+        "//main/vos:vos3_implib",
+        "//main/i18npool:i18nisolang1_implib",
+        "@icu//:icuuc_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/xmloff:xo_implib)",
+        "$(execpath //main/ucbhelper:ucbhelper_implib)",
+        "$(execpath //main/vos:vos3_implib)",
+        "$(execpath //main/i18npool:i18nisolang1_implib)",
+        "$(execpath @icu//:icuuc_implib)",
+        "user32.lib", "uuid.lib", "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "lng_implib",
+    srcs = [":lng"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)

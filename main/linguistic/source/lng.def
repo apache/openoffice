@@ -1,0 +1,6 @@
+; Windows export file for lng.dll
+; Standard UNO component exports
+LIBRARY lng
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

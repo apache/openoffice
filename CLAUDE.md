@@ -128,8 +128,8 @@ vcl           ✅  (rsc, sot, unotools, svl, basegfx, basebmp, tools, shell, l10
                    icc + boost, icu, graphite ext) — main/vcl/readme.md
 xmloff        ✅  (xo.dll, xof.dll) — main/xmloff/readme.md
 ── Layer 7 ──────────────────────────────────────────────────────────────
-linguistic    ⬜  (svl, xmloff, ucbhelper, vos, comphelper + icu ext)
-toolkit       ⬜  (vcl)
+linguistic    ✅  (svl, xmloff, ucbhelper, vos, comphelper + icu ext) — main/linguistic/readme.md
+toolkit       ✅  (ootk.dll) — main/toolkit/readme.md
 svtools       ⬜  (svl, sot, unotools, toolkit, vcl, ucbhelper, comphelper, jvmfwk + jpeg ext)
 officecfg     ⬜  (soltools)
 ── Layer 8 ──────────────────────────────────────────────────────────────

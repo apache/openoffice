@@ -1,0 +1,6 @@
+; Windows export file for ootk.dll
+; Standard UNO component exports
+LIBRARY ootk
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory
