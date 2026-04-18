@@ -116,7 +116,7 @@ jurt          ✅  (ridljar, sal — Java; jpipe.dll + jpipx.dll native pipe JNI
 jvmaccess     ✅  (jvmaccess.dll) — main/jvmaccess/readme.md
 ── Layer 4 ──────────────────────────────────────────────────────────────
 sot           ✅  (tools, unotools, ucbhelper) — main/sot/readme.md
-unoil         ⬜  (codemaker, ridljar, offapi — Java)
+unoil         ✅  (codemaker, ridljar, offapi — Java) — main/unoil/readme.md
 idl           ⬜  (tools)
 ── Layer 5 ──────────────────────────────────────────────────────────────
 svl           ⬜  (rsc, sot, unotools, ucbhelper, comphelper, cppu, cppuhelper, sal)
@@ -154,6 +154,12 @@ filter        ⬜  (svtools, unotools, xmloff, svx, canvas, javaunohelper,
 vbahelper     ⬜  (oovbaapi, basic, sfx2, svx, filter, vcl, svtools, tools, unotools)
 ── Layer 14 — TARGET ────────────────────────────────────────────────────
 sw            ⬜  (filter, connectivity, vbahelper, svx, writerfilter, stoc)
+── Layer 15 — .NET interop (deferred) ───────────────────────────────────
+cli_ure       ⬜  (cppu, cppuhelper, sal, codemaker, stoc, udkapi, bridges)
+                   Blockers: C# rules (csc.exe), C++/CLI (/clr toolchain),
+                   AL.exe policy assemblies, sn.exe strong-name signing.
+                   Not on critical path to sw — do after Layer 14.
+unoil         ⬜  update climaker 
 ```
 
 ## Out of scope

@@ -60,6 +60,17 @@ def _javamaker_impl(ctx):
              str([f.path for f in rdb_files]))
     rdb = rdb_files[0]
 
+    # ── Optionally resolve exclusion RDB (-X flag) ───────────────────────
+    extra_inputs = []
+    extra_args   = []
+    if ctx.files.extra_rdb:
+        xrdb_files = [f for f in ctx.files.extra_rdb if f.extension == "rdb"]
+        if len(xrdb_files) != 1:
+            fail("javamaker_classes: expected exactly one .rdb file from extra_rdb=, got: " +
+                 str([f.path for f in xrdb_files]))
+        extra_inputs = xrdb_files
+        extra_args   = ["-X" + xrdb_files[0].path]
+
     # ── Run javamaker → tree of .class files ────────────────────────────
     # declare_directory: Bazel doesn't need to enumerate every output file —
     # javamaker creates one .class per UNO type in nested package dirs.
@@ -68,12 +79,8 @@ def _javamaker_impl(ctx):
 
     ctx.actions.run(
         executable = staged["javamaker.exe"].path,
-        arguments  = [
-            "-BUCR",
-            "-O./" + classes_dir.path,
-            rdb.path,
-        ],
-        inputs           = [rdb] + all_staged,
+        arguments  = ["-BUCR", "-O./" + classes_dir.path, rdb.path] + extra_args,
+        inputs           = [rdb] + extra_inputs + all_staged,
         outputs          = [classes_dir],
         env              = {"PATH": tools_dir},
         mnemonic         = "JavaMaker",
@@ -92,6 +99,11 @@ javamaker_classes = rule(
             allow_files = True,
             mandatory   = True,
             doc         = "Label that provides the .rdb file (may also emit other files).",
+        ),
+        "extra_rdb": attr.label(
+            allow_files = True,
+            mandatory   = False,
+            doc         = "Optional exclusion registry: types already in this .rdb are skipped (-X flag).",
         ),
         "_javamaker": attr.label(
             default     = "//main/codemaker:javamaker",

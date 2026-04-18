@@ -1,0 +1,28 @@
+load("//build/rules:java_pipeline.bzl", "jar_from_directory", "javamaker_classes")
+load("@rules_java//java:defs.bzl", "java_import")
+
+# ── Step 1: Generate Java .class files from offapi.rdb ───────────────────────
+# javamaker reads offapi.rdb and emits one .class per API type.
+# -X udkapi.rdb excludes UDK types already provided by ridljar:udkapi_java.
+javamaker_classes(
+    name      = "offapi_java_classes",
+    rdb       = "//main/offapi:offapi_idl",
+    extra_rdb = "//main/udkapi:udkapi_idl",
+)
+
+# ── Step 2: Jar the generated .class tree ────────────────────────────────────
+jar_from_directory(
+    name        = "offapi_java_jar",
+    classes_dir = ":offapi_java_classes",
+)
+
+# ── Step 3: Expose generated classes as a Java dependency ────────────────────
+# Downstream consumers (javaunohelper, unoil-based modules) depend on :unoil.
+# ridljar:ridl is re-exported so callers get UDK types without a separate dep.
+java_import(
+    name       = "unoil",
+    jars       = [":offapi_java_jar"],
+    deps       = ["//main/ridljar:ridl"],
+    exports    = ["//main/ridljar:ridl"],
+    visibility = ["//visibility:public"],
+)
