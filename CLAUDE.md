@@ -114,7 +114,7 @@ icc           ✅  (create_sRGB_profile.exe → sRGB-IEC61966-2.1.hxx, srgb_icc)
 jurt          ✅  (ridljar, sal — Java; jpipe.dll + jpipx.dll native pipe JNI) — main/jurt/readme.md
 jvmaccess     ✅  (jvmaccess.dll) — main/jvmaccess/readme.md
 ── Layer 4 ──────────────────────────────────────────────────────────────
-sot           ⬜  (tools, unotools, ucbhelper)
+sot           ✅  (tools, unotools, ucbhelper) — main/sot/readme.md
 unoil         ⬜  (codemaker, ridljar, offapi — Java)
 idl           ⬜  (tools)
 ── Layer 5 ──────────────────────────────────────────────────────────────

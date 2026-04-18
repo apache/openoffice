@@ -1,0 +1,126 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK",
+    "SHAREDLIB", "_DLL_",
+    "SOT_DLLIMPLEMENTATION",
+    "snprintf=_snprintf",
+]
+
+_COPTS = [
+    "/Imain/sot/inc",
+    "/Imain/sot/inc/pch",
+    "/Imain/sot/source/sdstor",
+    "/Imain/sot/source/unoolestorage",
+    "/Zc:wchar_t-",
+]
+
+# ── public headers ────────────────────────────────────────────────
+cc_library(
+    name = "sot_headers",
+    hdrs = glob(["inc/sot/**"]),
+    strip_include_prefix = "inc",
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/tools:tools_headers",
+        "//main/unotools:unotools_headers",
+        "//main/ucbhelper:ucbhelper_headers",
+        "//main/comphelper:comphelper_headers",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+_SRCS = [
+    # base
+    "source/base/exchange.cxx",
+    "source/base/factory.cxx",
+    "source/base/filelist.cxx",
+    "source/base/formats.cxx",
+    "source/base/object.cxx",
+    # sdstor (private headers included via srcs)
+    "source/sdstor/stg.cxx",
+    "source/sdstor/stgavl.cxx",
+    "source/sdstor/stgavl.hxx",
+    "source/sdstor/stgcache.cxx",
+    "source/sdstor/stgcache.hxx",
+    "source/sdstor/stgdir.cxx",
+    "source/sdstor/stgdir.hxx",
+    "source/sdstor/stgelem.cxx",
+    "source/sdstor/stgelem.hxx",
+    "source/sdstor/stgio.cxx",
+    "source/sdstor/stgio.hxx",
+    "source/sdstor/stgole.cxx",
+    "source/sdstor/stgole.hxx",
+    "source/sdstor/stgstrms.cxx",
+    "source/sdstor/stgstrms.hxx",
+    "source/sdstor/storage.cxx",
+    "source/sdstor/storinfo.cxx",
+    "source/sdstor/ucbstorage.cxx",
+    "source/sdstor/unostorageholder.cxx",
+    "source/sdstor/unostorageholder.hxx",
+    # unoolestorage
+    "source/unoolestorage/xolesimplestorage.cxx",
+    "source/unoolestorage/xolesimplestorage.hxx",
+    "source/unoolestorage/register.cxx",
+]
+
+# ── sot.dll ───────────────────────────────────────────────────────
+cc_binary(
+    name = "sot",
+    srcs = _SRCS,
+    copts = _COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    deps = [
+        ":sot_headers",
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/tools:tools_headers",
+        "//main/unotools:unotools_headers",
+        "//main/ucbhelper:ucbhelper_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/stlport:stlport",
+        "@boost.legacy//:boost.legacy",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/ucbhelper:ucbhelper_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/ucbhelper:ucbhelper_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "ole32.lib",
+        "user32.lib",
+        "uuid.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── import library for downstream consumers ───────────────────────
+filegroup(
+    name = "sot_implib",
+    srcs = [":sot"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
