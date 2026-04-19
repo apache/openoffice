@@ -1,0 +1,6 @@
+; Windows export file for gdipluscanvas.dll
+; Standard UNO component exports
+LIBRARY gdipluscanvas
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

@@ -1,0 +1,6 @@
+; Windows export file for vclcanvas.dll
+; Standard UNO component exports
+LIBRARY vclcanvas
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

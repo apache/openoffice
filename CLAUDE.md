@@ -136,7 +136,7 @@ officecfg     ✅  (xsltproc pipeline: schema_trim + alllang, per-locale zips) �
 ── Layer 8 ──────────────────────────────────────────────────────────────
 framework     ✅  (fwi.dll, fwe.dll, fwk.dll, fwl.dll, fwm.dll) — main/framework/readme.md
 editeng       ✅  (editeng.dll) — main/editeng/readme.md
-canvas        ⬜  (svtools, vcl, basegfx, unoil, javaunohelper, comphelper + cairo ext)
+canvas        ✅  (canvastools, canvasfactory, nullcanvas, simplecanvas, vclcanvas, directx9canvas, gdipluscanvas) — main/canvas/readme.md
 basic         ⬜  (oovbaapi, svtools, xmlscript, framework, salhelper)
 connectivity  ⬜  (shell, svl, unoil, javaunohelper, officecfg, comphelper)
 ── Layer 9 ──────────────────────────────────────────────────────────────

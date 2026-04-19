@@ -1,0 +1,6 @@
+; Windows export file for nullcanvas.dll
+; Standard UNO component exports
+LIBRARY nullcanvas
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

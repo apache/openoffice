@@ -1,0 +1,6 @@
+; Windows export file for directx9canvas.dll
+; Standard UNO component exports
+LIBRARY directx9canvas
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

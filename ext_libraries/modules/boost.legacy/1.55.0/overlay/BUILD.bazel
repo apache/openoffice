@@ -3,8 +3,12 @@ load("@rules_cc//cc:defs.bzl", "cc_library")
 package(default_visibility = ["//visibility:public"])
 
 # Boost is header-only for the parts used in AOO (bind, unordered, etc.)
+# BOOST_MEM_FN_ENABLE_CDECL: MSVC 9.0 (VS2008) encodes SAL_CALL (__cdecl) into
+# member-function-pointer types for template argument deduction. Without this
+# define, boost::bind falls through to the generic path and fails with C2825.
 cc_library(
     name = "boost.legacy",
     hdrs = glob(["boost/**/*.hpp"]),
     includes = ["."],
+    defines = ["BOOST_MEM_FN_ENABLE_CDECL"],
 )

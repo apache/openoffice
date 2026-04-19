@@ -1,0 +1,6 @@
+; Windows export file for simplecanvas.dll
+; Standard UNO component exports
+LIBRARY simplecanvas
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

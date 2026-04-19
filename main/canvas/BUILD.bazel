@@ -1,0 +1,378 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+]
+
+_COPTS = [
+    "/Imain/canvas/inc",
+    "/Imain/canvas/inc/pch",
+    "/Zc:wchar_t-",
+]
+
+# ── public headers ─────────────────────────────────────────────────
+cc_library(
+    name = "canvas_headers",
+    hdrs = glob([
+        "inc/canvas/**",
+        "inc/pch/**",
+    ]),
+    strip_include_prefix = "inc",
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/tools:tools_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/basegfx:basegfx_headers",
+        "//main/vcl:vcl_headers",
+        "//main/toolkit:toolkit_headers",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── canvastools.dll ────────────────────────────────────────────────
+# Shared utilities for all canvas backends.
+# Exports via CANVASTOOLS_DLLPUBLIC (SAL_DLLPUBLIC_EXPORT) — no DEF file.
+cc_binary(
+    name = "canvastools",
+    srcs = glob([
+        "source/tools/*.cxx",
+        "source/tools/*.hxx",
+    ], exclude = [
+        # AGG-dependent files (not building AGG)
+        "source/tools/bitmap.cxx",
+        "source/tools/image.cxx",
+    ]),
+    copts = _COPTS,
+    defines = _DEFINES + ["CANVASTOOLS_DLLIMPLEMENTATION"],
+    linkshared = True,
+    deps = [
+        ":canvas_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/basegfx:basegfx_implib",
+        "//main/vcl:vcl_implib",
+        "//main/toolkit:ootk_implib",
+        "//main/tools:tl_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/basegfx:basegfx_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/toolkit:ootk_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "winmm.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "canvastools_implib",
+    srcs = [":canvastools"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── canvasfactory.dll ──────────────────────────────────────────────
+# UNO component: canvas rendering service factory.
+cc_binary(
+    name = "canvasfactory",
+    srcs = ["source/factory/cf_service.cxx"],
+    copts = _COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/canvasfactory.def",
+    deps = [
+        ":canvas_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── nullcanvas.dll ─────────────────────────────────────────────────
+# UNO component: null/no-op canvas implementation for testing.
+cc_binary(
+    name = "nullcanvas",
+    srcs = glob([
+        "source/null/*.cxx",
+        "source/null/*.hxx",
+    ]),
+    copts = _COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/nullcanvas.def",
+    deps = [
+        ":canvas_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/basegfx:basegfx_implib",
+        "//main/vcl:vcl_implib",
+        ":canvastools_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/basegfx:basegfx_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath :canvastools_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── simplecanvas.dll ───────────────────────────────────────────────
+# UNO component: minimal canvas adapter.
+cc_binary(
+    name = "simplecanvas",
+    srcs = ["source/simplecanvas/simplecanvasimpl.cxx"],
+    copts = _COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/simplecanvas.def",
+    deps = [
+        ":canvas_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/basegfx:basegfx_implib",
+        ":canvastools_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/basegfx:basegfx_implib)",
+        "$(execpath :canvastools_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── vclcanvas.dll ──────────────────────────────────────────────────
+# UNO component: VCL-based software canvas renderer.
+cc_binary(
+    name = "vclcanvas",
+    srcs = glob([
+        "source/vcl/*.cxx",
+        "source/vcl/*.hxx",
+    ]),
+    copts = _COPTS + [
+        "/Imain/canvas/source/vcl",
+    ],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/vclcanvas.def",
+    deps = [
+        ":canvas_headers",
+        "//main/stlport:stlport",
+        "//main/svtools:svtools_headers",
+        "//main/i18nutil:i18nutil_headers",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/basegfx:basegfx_implib",
+        "//main/vcl:vcl_implib",
+        "//main/toolkit:ootk_implib",
+        "//main/tools:tl_implib",
+        "//main/svtools:svt_implib",
+        "//main/i18npool:i18nisolang1_implib",
+        ":canvastools_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/basegfx:basegfx_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/toolkit:ootk_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+        "$(execpath //main/i18npool:i18nisolang1_implib)",
+        "$(execpath :canvastools_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── directx9canvas.dll ─────────────────────────────────────────────
+# UNO component: DirectX 9 accelerated canvas renderer (Windows).
+cc_binary(
+    name = "directx9canvas",
+    srcs = glob([
+        "source/directx/*.cxx",
+        "source/directx/*.hxx",
+    ], exclude = [
+        # GDI+-only canvas (no D3D) — built as gdipluscanvas instead
+        "source/directx/dx_canvas.cxx",
+        # DirectX 5 render module — not building dx5 target
+        "source/directx/dx_5rm.cxx",
+    ]),
+    copts = _COPTS + [
+        "/Imain/canvas/source/directx",
+        "/UNOMINMAX",  # GdiplusTypes.h needs min/max macros from windows.h
+    ],
+    defines = _DEFINES + ["DIRECTX_VERSION=0x0900"],
+    linkshared = True,
+    win_def_file = "util/directx9canvas.def",
+    deps = [
+        ":canvas_headers",
+        "//main/stlport:stlport",
+        "//main/svtools:svtools_headers",
+        "//main/unotools:unotools_headers",
+        "//main/i18nutil:i18nutil_headers",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/basegfx:basegfx_implib",
+        "//main/vcl:vcl_implib",
+        "//main/toolkit:ootk_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/svtools:svt_implib",
+        "//main/i18npool:i18nisolang1_implib",
+        ":canvastools_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/basegfx:basegfx_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/toolkit:ootk_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+        "$(execpath //main/i18npool:i18nisolang1_implib)",
+        "$(execpath :canvastools_implib)",
+        "user32.lib", "gdi32.lib", "gdiplus.lib", "d3d9.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── gdipluscanvas.dll ──────────────────────────────────────────────
+# UNO component: GDI+-based canvas renderer (Windows, software fallback).
+cc_binary(
+    name = "gdipluscanvas",
+    srcs = [
+        "source/directx/dx_bitmap.cxx",
+        "source/directx/dx_bitmap.hxx",
+        "source/directx/dx_bitmapcanvashelper.cxx",
+        "source/directx/dx_bitmapcanvashelper.hxx",
+        "source/directx/dx_canvas.cxx",
+        "source/directx/dx_canvas.hxx",
+        "source/directx/dx_canvasbitmap.cxx",
+        "source/directx/dx_canvasbitmap.hxx",
+        "source/directx/dx_canvasfont.cxx",
+        "source/directx/dx_canvasfont.hxx",
+        "source/directx/dx_canvashelper.cxx",
+        "source/directx/dx_canvashelper.hxx",
+        "source/directx/dx_canvashelper_texturefill.cxx",
+        "source/directx/dx_devicehelper.cxx",
+        "source/directx/dx_devicehelper.hxx",
+        "source/directx/dx_gdiplususer.cxx",
+        "source/directx/dx_gdiplususer.hxx",
+        "source/directx/dx_impltools.cxx",
+        "source/directx/dx_impltools.hxx",
+        "source/directx/dx_linepolypolygon.cxx",
+        "source/directx/dx_linepolypolygon.hxx",
+        "source/directx/dx_textlayout.cxx",
+        "source/directx/dx_textlayout.hxx",
+        "source/directx/dx_textlayout_drawhelper.cxx",
+        "source/directx/dx_textlayout_drawhelper.hxx",
+        "source/directx/dx_vcltools.cxx",
+        "source/directx/dx_vcltools.hxx",
+    ],
+    copts = _COPTS + [
+        "/Imain/canvas/source/directx",
+        "/UNOMINMAX",  # GdiplusTypes.h needs min/max macros from windows.h
+    ],
+    defines = _DEFINES + ["DIRECTX_VERSION=0x0900"],
+    linkshared = True,
+    win_def_file = "util/gdipluscanvas.def",
+    deps = [
+        ":canvas_headers",
+        "//main/stlport:stlport",
+        "//main/svtools:svtools_headers",
+        "//main/unotools:unotools_headers",
+        "//main/i18nutil:i18nutil_headers",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/basegfx:basegfx_implib",
+        "//main/vcl:vcl_implib",
+        "//main/toolkit:ootk_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/svtools:svt_implib",
+        "//main/i18npool:i18nisolang1_implib",
+        ":canvastools_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/basegfx:basegfx_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/toolkit:ootk_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+        "$(execpath //main/i18npool:i18nisolang1_implib)",
+        "$(execpath :canvastools_implib)",
+        "user32.lib", "gdi32.lib", "gdiplus.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)

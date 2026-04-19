@@ -1,0 +1,6 @@
+; Windows export file for canvasfactory.dll
+; Standard UNO component exports
+LIBRARY canvasfactory
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory
