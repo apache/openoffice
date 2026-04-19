@@ -1,0 +1,30 @@
+load("@bazel_skylib//rules:common_settings.bzl", "bool_flag")
+load(":langs.bzl", "OOO_LANGS", "lang_id")
+
+# One bool_flag per OOo locale.
+# en-US is always enabled; all others default to False.
+#
+# To build German and French in addition to English:
+#   build --//build:lang_de=True --//build:lang_fr=True
+#
+# In user.bazelrc:
+#   build --//build:lang_de=True
+
+[
+    bool_flag(
+        name = "lang_" + lang_id(lang),
+        build_setting_default = (lang == "en-US"),
+        visibility = ["//visibility:public"],
+    )
+    for lang in OOO_LANGS
+]
+
+# config_setting per locale — consumed by select() in package BUILD files.
+[
+    config_setting(
+        name = "build_" + lang_id(lang),
+        flag_values = {":lang_" + lang_id(lang): "True"},
+        visibility = ["//visibility:public"],
+    )
+    for lang in OOO_LANGS
+]

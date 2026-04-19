@@ -1,4 +1,4 @@
-load("@rules_cc//cc:defs.bzl", "cc_library")
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 load("@bazel_skylib//rules:expand_template.bzl", "expand_template")
 
 # ── xsltconfig.h substitutions ───────────────────────────────────
@@ -49,6 +49,7 @@ expand_template(
 
 # ── libxslt sources ───────────────────────────────────────────────
 LIBXSLT_SRCS = [
+    "libxslt/attributes.c",
     "libxslt/attrvt.c",
     "libxslt/documents.c",
     "libxslt/extensions.c",
@@ -144,6 +145,44 @@ cc_library(
         "//conditions:default":   LIBXSLT_UNIX_COPTS,
     }),
     deps = [
+        ":libxslt",
+        "@libxml2//:libxml2",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── xsltproc binary ──────────────────────────────────────────────
+# Command-line XSLT processor. Used by officecfg to run alllang.xsl
+# (language pack extraction) and schema_trim.xsl (schema cleanup).
+# HAVE_* macros cover what VS2008 MSVC actually provides.
+cc_binary(
+    name = "xsltproc",
+    srcs = ["xsltproc/xsltproc.c"],
+    defines = select({
+        "@platforms//os:windows": LIBXSLT_WINDOWS_DEFINES + [
+            "HAVE_STRING_H",
+            "HAVE_STDLIB_H",
+            "HAVE_STDARG_H",
+            "HAVE_TIME_H",
+            "HAVE_SYS_STAT_H",
+        ],
+        "//conditions:default": LIBXSLT_UNIX_DEFINES + [
+            "HAVE_SYS_TIME_H",
+            "HAVE_SYS_STAT_H",
+            "HAVE_UNISTD_H",
+            "HAVE_STDARG_H",
+            "HAVE_STDLIB_H",
+            "HAVE_STRING_H",
+            "HAVE_FTIME",
+            "HAVE_SYS_TIMEB_H",
+        ],
+    }),
+    copts = select({
+        "@platforms//os:windows": LIBXSLT_WINDOWS_COPTS + ["/wd4702"],
+        "//conditions:default":   LIBXSLT_UNIX_COPTS,
+    }),
+    deps = [
+        ":libexslt",
         ":libxslt",
         "@libxml2//:libxml2",
     ],

@@ -1,5 +1,7 @@
 # .bazelrc
 
+try-import %workspace%/user.bazelrc
+
 # Use bzlmod
 common --enable_bzlmod
 common --check_direct_dependencies=off

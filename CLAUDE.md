@@ -131,7 +131,7 @@ xmloff        ✅  (xo.dll, xof.dll) — main/xmloff/readme.md
 linguistic    ✅  (svl, xmloff, ucbhelper, vos, comphelper + icu ext) — main/linguistic/readme.md
 toolkit       ✅  (ootk.dll) — main/toolkit/readme.md
 svtools       ✅  (svt.dll, hatchwindowfactory.dll) — main/svtools/readme.md
-officecfg     ⬜  (soltools)
+officecfg     ✅  (xsltproc pipeline: schema_trim + alllang, per-locale zips) — main/officecfg/BUILD.bazel
 ── Layer 8 ──────────────────────────────────────────────────────────────
 framework     ⬜  (svtools)
 editeng       ⬜  (svtools, xmloff, linguistic)

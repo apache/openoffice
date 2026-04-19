@@ -1,0 +1,203 @@
+# officecfg — Configuration registry for Apache OpenOffice
+#
+# Pure data module: 101 .xcs schema files + 73 .xcu data files.
+# Pipeline mirrors the original nmake build:
+#   schema:  xsltproc schema_trim.xsl   → trimmed .xcs (removes authors/nil vals)
+#   data:    xsltproc alllang.xsl       → per-locale .xcu (locale extraction)
+#   package: zip spool/<locale>/...     → registry_<locale>.zip per language
+#
+# Language selection (replaces alllangiso from the nmake era):
+#   en-US is always built.  Enable other locales in user.bazelrc:
+#     build --//build:lang_de=True --//build:lang_fr=True
+#   or on the command line:
+#     bazel build --//build:lang_de=True //main/officecfg:officecfg
+#
+# The LOCALIZEDFILES list comes from each data subdirectory's makefile.mk.
+# Non-localized .xcu files are copied as-is into every language pack.
+
+load("//build:langs.bzl", "OOO_LANGS", "lang_id")
+load(":registry_pipeline.bzl", "lang_zip_srcs", "registry_zip")
+
+# ── LOCALIZEDFILES ────────────────────────────────────────────────
+# Files that carry embedded multilingual strings and need locale
+# extraction via alllang.xsl.  Relative to registry/data/.
+
+_LOCALIZED = [
+    "org/openoffice/Setup.xcu",
+    # org/openoffice/Office/
+    "org/openoffice/Office/Accelerators.xcu",
+    "org/openoffice/Office/Common.xcu",
+    "org/openoffice/Office/SFX.xcu",
+    "org/openoffice/Office/DataAccess.xcu",
+    "org/openoffice/Office/TableWizard.xcu",
+    "org/openoffice/Office/UI.xcu",
+    "org/openoffice/Office/Embedding.xcu",
+    "org/openoffice/Office/WebWizard.xcu",
+    "org/openoffice/Office/FormWizard.xcu",
+    "org/openoffice/Office/Writer.xcu",
+    "org/openoffice/Office/Impress.xcu",
+    "org/openoffice/Office/PresenterScreen.xcu",
+    # org/openoffice/Office/UI/
+    "org/openoffice/Office/UI/BasicIDECommands.xcu",
+    "org/openoffice/Office/UI/BibliographyCommands.xcu",
+    "org/openoffice/Office/UI/CalcCommands.xcu",
+    "org/openoffice/Office/UI/ChartCommands.xcu",
+    "org/openoffice/Office/UI/ChartWindowState.xcu",
+    "org/openoffice/Office/UI/DbuCommands.xcu",
+    "org/openoffice/Office/UI/BaseWindowState.xcu",
+    "org/openoffice/Office/UI/WriterFormWindowState.xcu",
+    "org/openoffice/Office/UI/WriterReportWindowState.xcu",
+    "org/openoffice/Office/UI/DbQueryWindowState.xcu",
+    "org/openoffice/Office/UI/DbTableWindowState.xcu",
+    "org/openoffice/Office/UI/DbRelationWindowState.xcu",
+    "org/openoffice/Office/UI/DbBrowserWindowState.xcu",
+    "org/openoffice/Office/UI/DbTableDataWindowState.xcu",
+    "org/openoffice/Office/UI/DrawImpressCommands.xcu",
+    "org/openoffice/Office/UI/Effects.xcu",
+    "org/openoffice/Office/UI/GenericCommands.xcu",
+    "org/openoffice/Office/UI/MathCommands.xcu",
+    "org/openoffice/Office/UI/StartModuleCommands.xcu",
+    "org/openoffice/Office/UI/BasicIDEWindowState.xcu",
+    "org/openoffice/Office/UI/CalcWindowState.xcu",
+    "org/openoffice/Office/UI/DrawWindowState.xcu",
+    "org/openoffice/Office/UI/ImpressWindowState.xcu",
+    "org/openoffice/Office/UI/MathWindowState.xcu",
+    "org/openoffice/Office/UI/StartModuleWindowState.xcu",
+    "org/openoffice/Office/UI/WriterWindowState.xcu",
+    "org/openoffice/Office/UI/XFormsWindowState.xcu",
+    "org/openoffice/Office/UI/WriterGlobalWindowState.xcu",
+    "org/openoffice/Office/UI/WriterWebWindowState.xcu",
+    "org/openoffice/Office/UI/WriterCommands.xcu",
+    "org/openoffice/Office/UI/GenericCategories.xcu",
+    "org/openoffice/Office/UI/Sidebar.xcu",
+]
+
+_LOCALIZED_SET = {f: True for f in _LOCALIZED}
+
+# ── Raw source filegroups ─────────────────────────────────────────
+
+filegroup(
+    name = "registry_schema_src",
+    srcs = glob(["registry/schema/**/*.xcs"]),
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "registry_data_src",
+    srcs = glob(["registry/data/**/*.xcu"]),
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "registry_dtd",
+    srcs = glob(["registry/*.dtd"]),
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "processing_xsl",
+    srcs = glob(["util/*.xsl"]),
+    visibility = ["//visibility:public"],
+)
+
+# ── Schema trimming ────────────────────────────────────────────────
+# Apply schema_trim.xsl to every .xcs file.
+# Removes author elements, nil values, deprecated documentation
+# and xsi:schemaLocation attributes — matches the nmake output.
+
+_SCHEMA_FILES = glob(["registry/schema/**/*.xcs"])
+
+[
+    genrule(
+        name = "trim_" + xcs.replace("/", "_").replace(".", "_"),
+        srcs = [xcs, "util/schema_trim.xsl"],
+        outs = ["trimmed/" + xcs],
+        tools = ["@libxslt//:xsltproc"],
+        cmd_bat = (
+            "$(location @libxslt//:xsltproc) --novalid -o $(OUTS) " +
+            "$(location util/schema_trim.xsl) $(location {})".format(xcs)
+        ),
+    )
+    for xcs in _SCHEMA_FILES
+]
+
+filegroup(
+    name = "registry_schema_trimmed",
+    srcs = ["trimmed/" + xcs for xcs in _SCHEMA_FILES],
+    visibility = ["//visibility:public"],
+)
+
+# ── Non-localized data (same for all languages) ────────────────────
+# These files are copied as-is into every language pack.
+filegroup(
+    name = "registry_data_nonlocalized",
+    srcs = [
+        f
+        for f in glob(["registry/data/**/*.xcu"])
+        if f.replace("registry/data/", "") not in _LOCALIZED_SET
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── Per-locale alllang extraction + zip ───────────────────────────
+# For each locale in OOO_LANGS:
+#   1. Run alllang.xsl on every LOCALIZEDFILE → spool/<locale>/<file>.xcu
+#   2. Package spool/<locale>/ + non-localized data → registry_<locale>.zip
+#
+# Targets are always defined; whether they are included in the final
+# officecfg filegroup is controlled by //build:lang_<id> flags.
+
+[
+    [
+        # alllang.xsl extraction for one locale × one localized file
+        genrule(
+            name = "alllang_{}_{}".format(lang_id(lang), xcu.replace("/", "_").replace(".", "_")),
+            srcs = ["registry/data/" + xcu, "util/alllang.xsl"],
+            outs = ["spool/{}/{}".format(lang, xcu)],
+            tools = ["@libxslt//:xsltproc"],
+            cmd_bat = (
+                "$(location @libxslt//:xsltproc) --novalid " +
+                "--stringparam locale {} ".format(lang) +
+                "-o $(OUTS) " +
+                "$(location util/alllang.xsl) " +
+                "$(location registry/data/{})".format(xcu)
+            ),
+        )
+        for xcu in _LOCALIZED
+    ]
+    for lang in OOO_LANGS
+]
+
+[
+    # Spool filegroup for one locale
+    filegroup(
+        name = "spool_" + lang_id(lang),
+        srcs = ["spool/{}/{}".format(lang, xcu) for xcu in _LOCALIZED],
+    )
+    for lang in OOO_LANGS
+]
+
+[
+    # registry_<locale>.zip for one locale — built with Bazel's zipper tool
+    registry_zip(
+        name = "registry_zip_" + lang_id(lang),
+        lang = lang,
+        spool_files = [":spool_" + lang_id(lang)],
+        nonlocalized = [":registry_data_nonlocalized"],
+    )
+    for lang in OOO_LANGS
+]
+
+# ── Top-level target ──────────────────────────────────────────────
+# Always includes trimmed schema + non-localized data.
+# Each language zip is added only when its //build:lang_<id> flag is True.
+# Equivalent to the old alllangiso loop: enable languages in user.bazelrc.
+
+filegroup(
+    name = "officecfg",
+    srcs = [
+        ":registry_schema_trimmed",
+        ":registry_data_nonlocalized",
+    ] + lang_zip_srcs(OOO_LANGS, lang_id),
+    visibility = ["//visibility:public"],
+)
