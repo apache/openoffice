@@ -38,7 +38,7 @@ module com { module sun { module star { module script { module provider {
 
 //===========================================================================
 /**
-    This service is a Java-specific LanguageScriptProvider.
+    This service is a Javascript-specific LanguageScriptProvider.
 */
 service ScriptProviderForJavaScript {
     service ::com::sun::star::script::provider::LanguageScriptProvider;
