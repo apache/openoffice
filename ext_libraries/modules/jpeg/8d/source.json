@@ -1,0 +1,13 @@
+{
+    "url": "file:///C:/workspace/openoffice/ext_sources/52654eb3b2e60c35731ea8fc87f1bd29-jpeg-8d.tar.gz",
+    "integrity": "sha256-AAKbFHPw8Opy+8oyMOjLJXl/uyfliuLka7i/WoBv4LM=",
+    "strip_prefix": "jpeg-8d",
+    "overlay": {
+        "BUILD.bazel": "sha256-VcdAtQOoC3As0uqOko/XVzXOTrH27QyY4RPjljejZlE=",
+        "MODULE.bazel": "sha256-97waIxIk0fTTvnFscFvlLBDl+zAe6BLdB1WvFkqkAFg=",
+        "jconfig.h": "sha256-lyEDrBx3hS726mRU0yau8lf/lH4g/RqAbOU3gMOhmdQ=",
+        "jmorecfg.h": "sha256-pEuHS5mKyi0/u5fNGX+akLI33vGczZDTwN0hKqlyNLY="
+    },
+    "patches": {},
+    "patch_strip": 0
+}

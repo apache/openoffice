@@ -130,7 +130,7 @@ xmloff        ✅  (xo.dll, xof.dll) — main/xmloff/readme.md
 ── Layer 7 ──────────────────────────────────────────────────────────────
 linguistic    ✅  (svl, xmloff, ucbhelper, vos, comphelper + icu ext) — main/linguistic/readme.md
 toolkit       ✅  (ootk.dll) — main/toolkit/readme.md
-svtools       ⬜  (svl, sot, unotools, toolkit, vcl, ucbhelper, comphelper, jvmfwk + jpeg ext)
+svtools       ✅  (svt.dll, hatchwindowfactory.dll) — main/svtools/readme.md
 officecfg     ⬜  (soltools)
 ── Layer 8 ──────────────────────────────────────────────────────────────
 framework     ⬜  (svtools)

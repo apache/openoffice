@@ -1,0 +1,198 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+]
+
+_COPTS = [
+    "/Imain/svtools/inc",
+    "/Imain/svtools/inc/pch",
+    "/Imain/svtools/inc/svtools",
+    "/Imain/svtools/source/inc",
+    "/Imain/svtools/source/brwbox",
+    "/Imain/svtools/source/config",
+    "/Imain/svtools/source/contnr",
+    "/Imain/svtools/source/control",
+    "/Imain/svtools/source/dialogs",
+    "/Imain/svtools/source/edit",
+    "/Imain/svtools/source/filter",
+    "/Imain/svtools/source/filter/igif",
+    "/Imain/svtools/source/filter/ixpm",
+    "/Imain/svtools/source/filter/wmf",
+    "/Imain/svtools/source/graphic",
+    "/Imain/svtools/source/hatchwindow",
+    "/Imain/svtools/source/table",
+    "/Imain/svtools/source/toolpanel",
+    "/Imain/svtools/source/uno",
+    "/Imain/svtools/source/uno/wizard",
+    "/Zc:wchar_t-",
+]
+
+# ── public headers ─────────────────────────────────────────────────
+cc_library(
+    name = "svtools_headers",
+    hdrs = glob([
+        "inc/svtools/**",
+        "inc/pch/**",
+    ]),
+    strip_include_prefix = "inc",
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/tools:tools_headers",
+        "//main/unotools:unotools_headers",
+        "//main/ucbhelper:ucbhelper_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/sot:sot_headers",
+        "//main/svl:svl_headers",
+        "//main/basegfx:basegfx_headers",
+        "//main/vos:vos_headers",
+        "//main/vcl:vcl_headers",
+        "//main/toolkit:toolkit_headers",
+        "//main/i18nutil:i18nutil_headers",
+        "//main/jvmfwk:jvmfwk_headers",
+        "@jpeg//:jpeg",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── svt.dll ────────────────────────────────────────────────────────
+cc_binary(
+    name = "svt",
+    srcs = [
+        "inc/pch/precompiled_svtools.cxx",
+        # jpegc is a plain C file (no PCH)
+        "source/filter/jpeg/jpegc.c",
+    ] + glob([
+        "source/brwbox/*.cxx",
+        "source/config/*.cxx",
+        "source/contnr/*.cxx",
+        "source/control/*.cxx",
+        "source/dialogs/*.cxx",
+        "source/edit/*.cxx",
+        "source/filter/*.cxx",
+        "source/filter/igif/*.cxx",
+        "source/filter/ixbm/*.cxx",
+        "source/filter/ixpm/*.cxx",
+        "source/filter/jpeg/*.cxx",
+        "source/filter/wmf/*.cxx",
+        "source/graphic/*.cxx",
+        "source/java/*.cxx",
+        "source/misc/*.cxx",
+        "source/plugapp/*.cxx",
+        "source/svhtml/*.cxx",
+        "source/svrtf/*.cxx",
+        "source/table/*.cxx",
+        "source/toolpanel/*.cxx",
+        "source/uno/*.cxx",
+        "source/uno/wizard/*.cxx",
+        "source/urlobj/*.cxx",
+        # private headers co-located with sources
+        "source/inc/**/*.hxx",
+    ]),
+    copts = _COPTS,
+    defines = _DEFINES + ["SVT_DLLIMPLEMENTATION"],
+    linkshared = True,
+    deps = [
+        ":svtools_headers",
+        "//main/stlport:stlport",
+        "@boost.legacy//:boost.legacy",
+        "@jpeg//:jpeg",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/ucbhelper:ucbhelper_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/sot:sot_implib",
+        "//main/svl:svl_implib",
+        "//main/basegfx:basegfx_implib",
+        "//main/vcl:vcl_implib",
+        "//main/toolkit:ootk_implib",
+        "//main/i18npool:i18nisolang1_implib",
+        "//main/i18nutil:i18nutil_implib",
+        "//main/jvmfwk:jvmfwk_implib",
+        "//main/vos:vos3_implib",
+        "@icu//:icuuc_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/ucbhelper:ucbhelper_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/sot:sot_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/basegfx:basegfx_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/toolkit:ootk_implib)",
+        "$(execpath //main/i18npool:i18nisolang1_implib)",
+        "$(execpath //main/i18nutil:i18nutil_implib)",
+        "$(execpath //main/jvmfwk:jvmfwk_implib)",
+        "$(execpath //main/vos:vos3_implib)",
+        "$(execpath @icu//:icuuc_implib)",
+        "advapi32.lib", "gdi32.lib", "ole32.lib", "oleaut32.lib",
+        "user32.lib", "uuid.lib", "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "svt_implib",
+    srcs = [":svt"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── hatchwindowfactory.dll ────────────────────────────────────────
+cc_binary(
+    name = "hatchwindowfactory",
+    srcs = glob([
+        "source/hatchwindow/*.cxx",
+        "source/hatchwindow/*.hxx",
+    ]),
+    copts = _COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    deps = [
+        ":svtools_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/tools:tl_implib",
+        "//main/vcl:vcl_implib",
+        "//main/toolkit:ootk_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/toolkit:ootk_implib)",
+        "user32.lib", "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "hatchwindowfactory_implib",
+    srcs = [":hatchwindowfactory"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
