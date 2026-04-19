@@ -1,0 +1,202 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+    "snwprintf=_snwprintf",
+]
+
+_COPTS = [
+    "/Imain/connectivity/inc",
+    "/Imain/connectivity/inc/pch",
+    "/Imain/connectivity/source/inc",
+    "/Imain/connectivity/source/parse",
+    "/Zc:wchar_t-",
+]
+
+# ── public headers ─────────────────────────────────────────────────
+cc_library(
+    name = "connectivity_headers",
+    hdrs = glob([
+        "inc/connectivity/**/*.hxx",
+        "inc/pch/*.hxx",
+    ]),
+    strip_include_prefix = "inc",
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/tools:tools_headers",
+        "//main/unotools:unotools_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/ucbhelper:ucbhelper_headers",
+        "//main/svl:svl_headers",
+        "//main/i18nutil:i18nutil_headers",
+        "//main/salhelper:salhelper_headers",
+        "//main/jvmaccess:jvmaccess_headers",
+        "//main/jvmfwk:jvmfwk_headers",
+        "//main/vos:vos_headers",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# Pre-generated SQL parser (bison -d -pSQLyy -o sqlbison.cxx sqlbison.y
+#                           flex -i -8 -PSQLyy -L -o sqlflex.cxx sqlflex.l)
+# wrap_sqlbison.cxx and wrap_sqlflex.cxx #include these generated files.
+cc_library(
+    name = "_parse_generated",
+    textual_hdrs = [
+        "source/parse/sqlbison.cxx",
+        "source/parse/sqlbison.hxx",
+        "source/parse/sqlflex.cxx",
+    ],
+)
+
+# ── dbtools.dll — core connectivity / database-tools library ───────
+# Aggregates: commontools + sdbcx + sql-parser + simpledbt + resource
+cc_binary(
+    name = "dbtools",
+    srcs = glob([
+        "source/commontools/*.cxx",
+        "source/sdbcx/*.cxx",
+        "source/simpledbt/*.cxx",
+        "source/resource/sharedresources.cxx",
+    ]) + [
+        "source/parse/PColumn.cxx",
+        "source/parse/internalnode.cxx",
+        "source/parse/sqliterator.cxx",
+        "source/parse/sqlnode.cxx",
+        "source/parse/wrap_sqlbison.cxx",
+        "source/parse/wrap_sqlflex.cxx",
+    ],
+    copts = _COPTS + [
+        "/Imain/soltools/winunistd",
+        "/DBOOST_SPIRIT_USE_OLD_NAMESPACE",
+        "/DCONN_SHARED_RESOURCE_FILE=cnr",
+    ],
+    defines = _DEFINES + [
+        "OOO_DLLIMPLEMENTATION_DBTOOLS",
+    ],
+    linkshared = True,
+    deps = [
+        ":connectivity_headers",
+        ":_parse_generated",
+        "//main/stlport:stlport",
+        "@boost.legacy//:boost.legacy",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/vos:vos3_implib",
+        "//main/jvmaccess:jvmaccess_implib",
+        "//main/i18npool:i18nisolang1_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/vos:vos3_implib)",
+        "$(execpath //main/jvmaccess:jvmaccess_implib)",
+        "$(execpath //main/i18npool:i18nisolang1_implib)",
+        "user32.lib", "uuid.lib", "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "dbtools_implib",
+    srcs = [":dbtools"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── sdbc2.dll — driver manager ─────────────────────────────────────
+cc_binary(
+    name = "sdbc2",
+    srcs = glob([
+        "source/manager/*.cxx",
+        "source/manager/*.hxx",
+    ]),
+    copts = _COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/sdbc2.def",
+    deps = [
+        ":connectivity_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/unotools:utl_implib",
+        ":dbtools_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath :dbtools_implib)",
+        "user32.lib", "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "sdbc2_implib",
+    srcs = [":sdbc2"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── dbpool2.dll — connection pool ──────────────────────────────────
+cc_binary(
+    name = "dbpool2",
+    srcs = glob([
+        "source/cpool/*.cxx",
+        "source/cpool/*.hxx",
+    ]),
+    copts = _COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/dbpool2.def",
+    deps = [":connectivity_headers"],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/vos:vos3_implib",
+        ":dbtools_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/vos:vos3_implib)",
+        "$(execpath :dbtools_implib)",
+        "user32.lib", "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "dbpool2_implib",
+    srcs = [":dbpool2"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)

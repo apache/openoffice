@@ -141,7 +141,7 @@ framework     ✅  (fwi.dll, fwe.dll, fwk.dll, fwl.dll, fwm.dll) — main/framew
 editeng       ✅  (editeng.dll) — main/editeng/readme.md
 canvas        ✅  (canvastools, canvasfactory, nullcanvas, simplecanvas, vclcanvas, directx9canvas, gdipluscanvas) — main/canvas/readme.md
 basic         ✅  (oovbaapi, svtools, xmlscript, framework, salhelper)
-connectivity  ⬜  (shell, svl, unoil, javaunohelper, officecfg, comphelper)
+connectivity  ✅  (dbtools.dll, sdbc2.dll, dbpool2.dll) — main/connectivity/readme.md
 ── Layer 9 ──────────────────────────────────────────────────────────────
 sfx2          ⬜  (basic, xmlscript, framework, shell, sax + libxml2 ext)
 cppcanvas     ⬜  (canvas, vcl, basegfx, comphelper)
