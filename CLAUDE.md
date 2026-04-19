@@ -50,6 +50,7 @@ These apply to many packages — check before building any new module:
 - `/Zc:wchar_t-` — required for any module using `sal_Unicode`; VS2008 native `wchar_t`
   differs from `unsigned short`, breaking `Sequence<sal_Unicode>` / `cppu_detail_getUnoType`
 - `snprintf=_snprintf` — VS2008 MSVCRT only exports `_snprintf`, not `snprintf`
+- `snwprintf=_snwprintf` — same for the wide-char variant; needed by framework and potentially others
 - `stlport` dep — required for modules using `boost::unordered_map` or `hash_map` via boost
 - `Z_PREFIX` + `SYSTEM_ZLIB` — required for all zlib consumers (all symbols prefixed with `z_`)
 - `/Imain/soltools/winunistd` — for modules that `#include <unistd.h>` unconditionally
@@ -133,8 +134,8 @@ toolkit       ✅  (ootk.dll) — main/toolkit/readme.md
 svtools       ✅  (svt.dll, hatchwindowfactory.dll) — main/svtools/readme.md
 officecfg     ✅  (xsltproc pipeline: schema_trim + alllang, per-locale zips) — main/officecfg/BUILD.bazel
 ── Layer 8 ──────────────────────────────────────────────────────────────
-framework     ⬜  (svtools)
-editeng       ⬜  (svtools, xmloff, linguistic)
+framework     ✅  (fwi.dll, fwe.dll, fwk.dll, fwl.dll, fwm.dll) — main/framework/readme.md
+editeng       ✅  (editeng.dll) — main/editeng/readme.md
 canvas        ⬜  (svtools, vcl, basegfx, unoil, javaunohelper, comphelper + cairo ext)
 basic         ⬜  (oovbaapi, svtools, xmlscript, framework, salhelper)
 connectivity  ⬜  (shell, svl, unoil, javaunohelper, officecfg, comphelper)
