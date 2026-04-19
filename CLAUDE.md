@@ -56,6 +56,9 @@ These apply to many packages — check before building any new module:
 - `/Imain/soltools/winunistd` — for modules that `#include <unistd.h>` unconditionally
 - UNO component DEF exports: `component_getImplementationEnvironment`, `component_getFactory`,
   `component_canUnload` (standard unloadable component pattern for all future component DLLs)
+- MASM `.asm` files: list directly in `srcs`; toolchain `assemble` action uses `ml.exe` with
+  `masm_flags` feature (`/c /coff /Cx`). `/Cx` is critical — without it MASM uppercases all
+  PUBLIC symbols, breaking the link. Build-system define `SUPD=680` (Solar Update version).
 # dependency notes
 icu - ext_libraries\modules\icu\Readme.md
 redland - ext_libraries\modules\redland\README
@@ -137,7 +140,7 @@ officecfg     ✅  (xsltproc pipeline: schema_trim + alllang, per-locale zips) �
 framework     ✅  (fwi.dll, fwe.dll, fwk.dll, fwl.dll, fwm.dll) — main/framework/readme.md
 editeng       ✅  (editeng.dll) — main/editeng/readme.md
 canvas        ✅  (canvastools, canvasfactory, nullcanvas, simplecanvas, vclcanvas, directx9canvas, gdipluscanvas) — main/canvas/readme.md
-basic         ⬜  (oovbaapi, svtools, xmlscript, framework, salhelper)
+basic         ✅  (oovbaapi, svtools, xmlscript, framework, salhelper)
 connectivity  ⬜  (shell, svl, unoil, javaunohelper, officecfg, comphelper)
 ── Layer 9 ──────────────────────────────────────────────────────────────
 sfx2          ⬜  (basic, xmlscript, framework, shell, sax + libxml2 ext)

@@ -185,6 +185,7 @@ def _impl(ctx):
                 "nologo",
                 "msvc_env",
                 "sysroot",
+                "masm_flags",
             ],
             tools = [tool(path = ctx.attr.msvc_ml_path)],
         )
@@ -800,6 +801,19 @@ def _impl(ctx):
         if ctx.attr.win32_winnt_flag:
             default_compile_flags_list.append(ctx.attr.win32_winnt_flag)
 
+        masm_flags_feature = feature(
+            name = "masm_flags",
+            flag_sets = [
+                flag_set(
+                    actions = [
+                        ACTION_NAMES.assemble,
+                        ACTION_NAMES.preprocess_assemble,
+                    ],
+                    flag_groups = [flag_group(flags = ["/c", "/coff", "/Cx"])],
+                ),
+            ],
+        )
+
         default_compile_flags_feature = feature(
             name = "default_compile_flags",
             enabled = True,
@@ -1334,6 +1348,7 @@ def _impl(ctx):
             targets_windows_feature,
             copy_dynamic_libraries_to_binary_feature,
             default_cpp_std_feature,
+            masm_flags_feature,
             default_compile_flags_feature,
             msvc_env_feature,
             msvc_compile_env_feature,

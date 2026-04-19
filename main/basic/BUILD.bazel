@@ -1,0 +1,115 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+    "snwprintf=_snwprintf",
+    "SUPD=680",
+]
+
+_COPTS = [
+    "/Imain/basic/inc",
+    "/Imain/basic/inc/pch",
+    "/Imain/basic/source/inc",
+    "/Zc:wchar_t-",
+]
+
+# ── public headers ─────────────────────────────────────────────────
+cc_library(
+    name = "basic_headers",
+    hdrs = glob([
+        "inc/basic/**",
+        "inc/pch/**",
+        "inc/*.hrc",
+    ]),
+    strip_include_prefix = "inc",
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/oovbaapi:oovbaapi_idl_headers",
+        "//main/tools:tools_headers",
+        "//main/unotools:unotools_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/svl:svl_headers",
+        "//main/sot:sot_headers",
+        "//main/vcl:vcl_headers",
+        "//main/svtools:svtools_headers",
+        "//main/salhelper:salhelper_headers",
+        "//main/vos:vos_headers",
+        "//main/xmlscript:xmlscript_headers",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── sb.dll (StarBasic runtime + UNO component) ─────────────────────
+# wnt.asm defines _DllMgr_call32@12 / _DllMgr_callFp@12 — the 32-bit
+# stdcall trampoline used by dllmgr.cxx for Basic Declare'd DLL calls.
+# The toolchain's assemble action (ml.exe) handles it via srcs.
+cc_binary(
+    name = "sb",
+    srcs = glob([
+        "source/basmgr/*.cxx",
+        "source/classes/*.cxx",
+        "source/comp/*.cxx",
+        "source/runtime/*.cxx",
+        "source/sbx/*.cxx",
+        "source/uno/*.cxx",
+        "source/inc/**",
+    ]) + [
+        "inc/pch/precompiled_basic.cxx",
+        "source/runtime/wnt.asm",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES + ["BASIC_DLLIMPLEMENTATION"],
+    linkshared = True,
+    deps = [
+        ":basic_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/salhelper:salhelper_implib",
+        "//main/sot:sot_implib",
+        "//main/svl:svl_implib",
+        "//main/svtools:svt_implib",
+        "//main/tools:tl_implib",
+        "//main/vcl:vcl_implib",
+        "//main/vos:vos3_implib",
+        "//main/unotools:utl_implib",
+        "//main/xmlscript:xcr_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/salhelper:salhelper_implib)",
+        "$(execpath //main/sot:sot_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/vos:vos3_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/xmlscript:xcr_implib)",
+        "oleaut32.lib", "ole32.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "sb_implib",
+    srcs = [":sb"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
