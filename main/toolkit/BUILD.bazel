@@ -29,7 +29,7 @@ _COPTS = [
 # ── public headers ─────────────────────────────────────────────────
 cc_library(
     name = "toolkit_headers",
-    hdrs = glob(["inc/toolkit/**", "inc/pch/**", "inc/*.h"], allow_empty = True),
+    hdrs = glob(["inc/toolkit/**", "inc/layout/**", "inc/pch/**", "inc/*.h"], allow_empty = True),
     strip_include_prefix = "inc",
     deps = [
         "//main/sal:sal_headers",
@@ -46,6 +46,23 @@ cc_library(
     ],
     visibility = ["//visibility:public"],
 )
+
+# Private implementation headers used by downstream modules (e.g. sfx2 layout):
+#   <toolkit/awt/vclxdialog.hxx>  → source/awt/vclxdialog.hxx
+#   <layout/core/bin.hxx> etc.    → source/layout/core/*.hxx  (via strip "source")
+cc_library(
+    name = "toolkit_awt_vclxdialog",
+    hdrs = [
+        "source/awt/vclxdialog.hxx",
+    ] + glob([
+        "source/layout/core/*.hxx",
+        "source/layout/vcl/*.hxx",
+    ]),
+    strip_include_prefix = "source",
+    deps = [":toolkit_headers"],
+    visibility = ["//visibility:public"],
+)
+
 
 # ── ootk.dll ───────────────────────────────────────────────────────
 cc_binary(

@@ -1,0 +1,184 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("//build/rules:sdi_target.bzl", "sdi_target")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+    "snwprintf=_snwprintf",
+    "SUPD=680",
+    "ENABLE_QUICKSTART_APPLET",
+]
+
+_COPTS = [
+    "/Imain/sfx2/inc",
+    "/Imain/sfx2/inc/sfx2",
+    "/Imain/sfx2/inc/pch",
+    # Per-subdir paths for local headers included with angle brackets (no slash prefix)
+    "/Imain/sfx2/source/appl",
+    "/Imain/sfx2/source/dialog",
+    "/Imain/sfx2/source/doc",
+    "/Imain/sfx2/source/view",
+    "/Zc:wchar_t-",
+]
+
+# ── Public headers ──────────────────────────────────────────────────────────
+cc_library(
+    name = "sfx2_headers",
+    hdrs = glob([
+        "inc/sfx2/**",
+        "inc/pch/**",
+        "inc/*.hxx",
+        "inc/*.hrc",
+    ]),
+    strip_include_prefix = "inc",
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/tools:tools_headers",
+        "//main/unotools:unotools_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/svl:svl_headers",
+        "//main/sot:sot_headers",
+        "//main/vcl:vcl_headers",
+        "//main/svtools:svtools_headers",
+        "//main/vos:vos_headers",
+        "//main/toolkit:toolkit_headers",
+        "//main/framework:framework_headers",
+        "//main/basic:basic_headers",
+        "//main/xmlscript:xmlscript_headers",
+        "//main/sax:sax_headers",
+        "//main/ucbhelper:ucbhelper_headers",
+        "//main/i18npool:i18npool_headers",
+        "//main/stlport:stlport",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── SDI slot definition code generation ────────────────────────────────────
+# svidl reads sfxslots.sdi (which includes the other .sdi files) and
+# generates sfxslots.hxx — the C++ slot dispatch table used by the
+# SFX dispatcher.  sfx.sdi (-fx) lists which slots are exported.
+sdi_target(
+    name = "sfxslots_sdi",
+    main_sdi = "sdi/sfxslots.sdi",
+    exports  = "sdi/sfx.sdi",
+    srcs     = glob(["sdi/*.sdi", "inc/sfx2/*.hrc"]) + ["//main/svl:svl_hrc"],
+    slot_name    = "sfxslots",
+    include_dirs = [
+        "main/sfx2/sdi",
+        "main/sfx2/inc/sfx2",
+        "main/sfx2/inc",
+        "main/svl/inc",
+    ],
+)
+
+cc_library(
+    name = "sfxslots_headers",
+    hdrs  = [":sfxslots_sdi"],
+    # sdi_target places output under sfxslots_sdi_inc/; this include entry
+    # covers both $(GENDIR)/main/sfx2/sfxslots_sdi_inc and the source mirror,
+    # enabling #include "sfxslots.hxx" from any sfx2 source file.
+    includes = ["sfxslots_sdi_inc"],
+    visibility = ["//visibility:public"],
+)
+
+# source/inc/ headers get a virtual-includes path (direct dep → earlier in search
+# order than transitive framework_headers), so #include "helpid.hrc" resolves to
+# sfx2's version, not framework's identically-named root-level header.
+cc_library(
+    name = "sfx2_source_inc",
+    textual_hdrs = glob(["source/inc/**"]),
+    strip_include_prefix = "source/inc",
+)
+
+# Other source-subdir .hrc files — declared as inputs so Bazel tracks them;
+# found at compile time via the per-subdir /I copts entries.
+cc_library(
+    name = "sfx2_source_hrc",
+    textual_hdrs = glob(["source/**/*.hrc"], exclude = ["source/inc/**"]),
+)
+
+# ── sfx.dll ─────────────────────────────────────────────────────────────────
+cc_binary(
+    name = "sfx",
+    srcs = glob(
+        [
+            "source/**/*.cxx",
+            "source/**/*.hxx",
+        ],
+        exclude = [
+            "source/appl/shutdowniconOs2.cxx",      # OS/2 only
+            "source/appl/shutdowniconaqua.mm",      # macOS only (Objective-C++)
+            "source/appl/shutdowniconunx.cxx",      # Linux/GTK only
+            "source/sidebar/SidebarPanel.cxx",      # dead code: IDL refactoring left .cxx unupdated
+            "source/layout/**",                     # ENABLE_LAYOUT=YES only; duplicates dialog/ without the flag
+        ],
+    ) + ["inc/pch/precompiled_sfx2.cxx"],
+    copts   = _COPTS,
+    defines = _DEFINES + ["SFX2_DLLIMPLEMENTATION"],
+    linkshared = True,
+    deps = [
+        ":sfx2_source_inc",
+        ":sfx2_headers",
+        ":sfxslots_headers",
+        ":sfx2_source_hrc",
+        "//main/toolkit:toolkit_awt_vclxdialog",
+        "//main/stlport:stlport",
+        "@libxml2//:libxml2",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/svl:svl_implib",
+        "//main/svtools:svt_implib",
+        "//main/toolkit:ootk_implib",
+        "//main/vos:vos3_implib",
+        "//main/vcl:vcl_implib",
+        "//main/ucbhelper:ucbhelper_implib",
+        "//main/sot:sot_implib",
+        "//main/sax:sax_implib",
+        "//main/basic:sb_implib",
+        "//main/framework:fwe_implib",
+        "//main/i18npool:i18nisolang1_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+        "$(execpath //main/toolkit:ootk_implib)",
+        "$(execpath //main/vos:vos3_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/ucbhelper:ucbhelper_implib)",
+        "$(execpath //main/sot:sot_implib)",
+        "$(execpath //main/sax:sax_implib)",
+        "$(execpath //main/basic:sb_implib)",
+        "$(execpath //main/framework:fwe_implib)",
+        "$(execpath //main/i18npool:i18nisolang1_implib)",
+        "gdi32.lib", "advapi32.lib", "ole32.lib", "oleaut32.lib",
+        "shell32.lib", "user32.lib", "uuid.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "sfx_implib",
+    srcs  = [":sfx"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)

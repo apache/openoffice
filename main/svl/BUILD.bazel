@@ -118,6 +118,12 @@ cc_binary(
 )
 
 filegroup(
+    name = "svl_hrc",
+    srcs = glob(["inc/svl/*.hrc"]),
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
     name = "svl_implib",
     srcs = [":svl"],
     output_group = "interface_library",
