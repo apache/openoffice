@@ -1,0 +1,95 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+]
+
+_COPTS = [
+    "/Imain/cppcanvas/inc",
+    "/Imain/cppcanvas/inc/pch",
+    "/Imain/cppcanvas/source/inc",
+    "/Imain/cppcanvas/source/mtfrenderer",
+    "/Imain/cppcanvas/source/wrapper",
+    "/Zc:wchar_t-",
+]
+
+# ── public headers ─────────────────────────────────────────────────
+cc_library(
+    name = "cppcanvas_headers",
+    hdrs = glob([
+        "inc/cppcanvas/**",
+        "inc/pch/**",
+    ]),
+    strip_include_prefix = "inc",
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/tools:tools_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/basegfx:basegfx_headers",
+        "//main/vcl:vcl_headers",
+        "//main/canvas:canvas_headers",
+        "//main/stlport:stlport",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── cppcanvas.dll ──────────────────────────────────────────────────
+# C++ wrapper library over the UNO canvas API.
+# Exports via CPPCANVAS_DLLPUBLIC (SAL_DLLPUBLIC_EXPORT) — no DEF file.
+cc_binary(
+    name = "cppcanvas",
+    srcs = glob([
+        "source/mtfrenderer/*.cxx",
+        "source/mtfrenderer/*.hxx",
+        "source/tools/*.cxx",
+        "source/wrapper/*.cxx",
+        "source/wrapper/*.hxx",
+        "source/inc/*.hxx",
+    ]),
+    copts = _COPTS,
+    defines = _DEFINES + ["CPPCANVAS_DLLIMPLEMENTATION"],
+    linkshared = True,
+    deps = [
+        ":cppcanvas_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/basegfx:basegfx_implib",
+        "//main/vcl:vcl_implib",
+        "//main/tools:tl_implib",
+        "//main/i18npool:i18nisolang1_implib",
+        "//main/canvas:canvastools_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/basegfx:basegfx_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/i18npool:i18nisolang1_implib)",
+        "$(execpath //main/canvas:canvastools_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "cppcanvas_implib",
+    srcs = [":cppcanvas"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)

@@ -144,7 +144,7 @@ basic         ✅  (oovbaapi, svtools, xmlscript, framework, salhelper)
 connectivity  ✅  (dbtools.dll, sdbc2.dll, dbpool2.dll) — main/connectivity/readme.md
 ── Layer 9 ──────────────────────────────────────────────────────────────
 sfx2          ✅  (basic, xmlscript, framework, shell, sax + libxml2 ext) — main/sfx2/readme.md
-cppcanvas     ⬜  (canvas, vcl, basegfx, comphelper)
+cppcanvas     ✅  (cppcanvas.dll) — main/cppcanvas/readme.md
 ── Layer 10 ─────────────────────────────────────────────────────────────
 avmedia       ⬜  (tools, sfx2)
 oox           ⬜  (basegfx, xmlscript, tools, vcl, sax + boost, openssl ext)
