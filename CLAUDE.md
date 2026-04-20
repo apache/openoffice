@@ -149,7 +149,7 @@ cppcanvas     ✅  (cppcanvas.dll) — main/cppcanvas/readme.md
 avmedia       ✅  (avmedia.dll, avmediawin.dll) — main/avmedia/readme.md
 oox           ⬜  (basegfx, xmlscript, tools, vcl, sax + boost, openssl ext)
 ── Layer 11 ─────────────────────────────────────────────────────────────
-drawinglayer  ⬜  (vcl, svtools, basegfx, avmedia, canvas, cppcanvas)
+drawinglayer  ✅  (vcl, svtools, basegfx, avmedia, canvas, cppcanvas)
 ── Layer 12 ─────────────────────────────────────────────────────────────
 svx           ⬜  (sfx2, oovbaapi, connectivity, xmloff, linguistic, editeng,
                    avmedia, drawinglayer, jvmfwk)

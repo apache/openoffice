@@ -1,0 +1,116 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+    "snwprintf=_snwprintf",
+    "SUPD=680",
+]
+
+_COPTS = [
+    "/Imain/drawinglayer/inc",
+    "/Imain/drawinglayer/inc/pch",
+    "/Imain/drawinglayer/source/processor2d",
+    "/Zc:wchar_t-",
+]
+
+# ── Public headers ────────────────────────────────────────────────────────────
+cc_library(
+    name = "drawinglayer_headers",
+    hdrs = glob(["inc/drawinglayer/**"]),
+    strip_include_prefix = "inc",
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/tools:tools_headers",
+        "//main/basegfx:basegfx_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/vcl:vcl_headers",
+        "//main/svl:svl_headers",
+        "//main/svtools:svtools_headers",
+        "//main/toolkit:toolkit_headers",
+        "//main/avmedia:avmedia_headers",
+        "//main/canvas:canvas_headers",
+        "//main/cppcanvas:cppcanvas_headers",
+        "//main/stlport:stlport",
+        "@boost.legacy//:boost.legacy",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── drawinglayer.dll ──────────────────────────────────────────────────────────
+cc_binary(
+    name = "drawinglayer",
+    srcs = glob([
+        "source/animation/*.cxx",
+        "source/attribute/*.cxx",
+        "source/drawinglayeruno/*.cxx",
+        "source/geometry/*.cxx",
+        "source/primitive2d/*.cxx",
+        "source/primitive3d/*.cxx",
+        "source/processor2d/*.cxx",
+        "source/processor2d/*.hxx",
+        "source/processor3d/*.cxx",
+        "source/texture/*.cxx",
+        "source/tools/*.cxx",
+    ]),
+    copts = _COPTS,
+    defines = _DEFINES + ["DRAWINGLAYER_DLLIMPLEMENTATION"],
+    linkshared = True,
+    deps = [
+        ":drawinglayer_headers",
+        "//main/stlport:stlport",
+        "@boost.legacy//:boost.legacy",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/basegfx:basegfx_implib",
+        "//main/tools:tl_implib",
+        "//main/vcl:vcl_implib",
+        "//main/svl:svl_implib",
+        "//main/svtools:svt_implib",
+        "//main/toolkit:ootk_implib",
+        "//main/avmedia:avmedia_implib",
+        "//main/canvas:canvastools_implib",
+        "//main/cppcanvas:cppcanvas_implib",
+        "//main/i18npool:i18nisolang1_implib",
+        "//main/vos:vos3_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/basegfx:basegfx_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+        "$(execpath //main/toolkit:ootk_implib)",
+        "$(execpath //main/avmedia:avmedia_implib)",
+        "$(execpath //main/canvas:canvastools_implib)",
+        "$(execpath //main/cppcanvas:cppcanvas_implib)",
+        "$(execpath //main/i18npool:i18nisolang1_implib)",
+        "$(execpath //main/vos:vos3_implib)",
+        "ole32.lib", "oleaut32.lib", "user32.lib", "gdi32.lib",
+        "ws2_32.lib", "advapi32.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "drawinglayer_implib",
+    srcs = [":drawinglayer"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
