@@ -146,7 +146,7 @@ connectivity  ✅  (dbtools.dll, sdbc2.dll, dbpool2.dll) — main/connectivity/r
 sfx2          ✅  (basic, xmlscript, framework, shell, sax + libxml2 ext) — main/sfx2/readme.md
 cppcanvas     ✅  (cppcanvas.dll) — main/cppcanvas/readme.md
 ── Layer 10 ─────────────────────────────────────────────────────────────
-avmedia       ⬜  (tools, sfx2)
+avmedia       ✅  (avmedia.dll, avmediawin.dll) — main/avmedia/readme.md
 oox           ⬜  (basegfx, xmlscript, tools, vcl, sax + boost, openssl ext)
 ── Layer 11 ─────────────────────────────────────────────────────────────
 drawinglayer  ⬜  (vcl, svtools, basegfx, avmedia, canvas, cppcanvas)

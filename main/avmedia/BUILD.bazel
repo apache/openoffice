@@ -1,0 +1,173 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+    "snwprintf=_snwprintf",
+    "SUPD=680",
+]
+
+_COPTS = [
+    "/Imain/avmedia/inc",
+    "/Imain/avmedia/source/inc",
+    "/Imain/avmedia/source/framework",
+    "/Imain/avmedia/source/viewer",
+    "/Zc:wchar_t-",
+]
+
+# ── Public headers ──────────────────────────────────────────────────────────
+cc_library(
+    name = "avmedia_headers",
+    hdrs = glob([
+        "inc/avmedia/**",
+        "inc/*.hrc",
+        "inc/*.hxx",
+    ]),
+    strip_include_prefix = "inc",
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/tools:tools_headers",
+        "//main/unotools:unotools_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/svl:svl_headers",
+        "//main/svtools:svtools_headers",
+        "//main/vcl:vcl_headers",
+        "//main/sfx2:sfx2_headers",
+        "//main/stlport:stlport",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# Private source/inc headers
+cc_library(
+    name = "avmedia_source_inc",
+    textual_hdrs = glob(["source/inc/**"]),
+    strip_include_prefix = "source/inc",
+)
+
+# .hrc resource headers included by source files
+cc_library(
+    name = "avmedia_source_hrc",
+    textual_hdrs = glob(["source/**/*.hrc", "source/**/*.src"]),
+)
+
+# ── avmedia.dll ─────────────────────────────────────────────────────────────
+# Main media framework library: controls, toolbar, viewer, SoundHandler UNO component.
+# Exports via AVMEDIA_DLLPUBLIC / SAL_DLLPUBLIC_EXPORT — no DEF file needed.
+cc_binary(
+    name = "avmedia",
+    srcs = glob([
+        "source/framework/*.cxx",
+        "source/framework/*.hxx",
+        "source/viewer/*.cxx",
+        "source/viewer/*.hxx",
+    ]),
+    copts = _COPTS,
+    defines = _DEFINES + ["AVMEDIA_DLLIMPLEMENTATION"],
+    linkshared = True,
+    deps = [
+        ":avmedia_headers",
+        ":avmedia_source_inc",
+        ":avmedia_source_hrc",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/svl:svl_implib",
+        "//main/svtools:svt_implib",
+        "//main/sfx2:sfx_implib",
+        "//main/vos:vos3_implib",
+        "//main/vcl:vcl_implib",
+        "//main/toolkit:ootk_implib",
+        "//main/i18npool:i18nisolang1_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+        "$(execpath //main/sfx2:sfx_implib)",
+        "$(execpath //main/vos:vos3_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/toolkit:ootk_implib)",
+        "$(execpath //main/i18npool:i18nisolang1_implib)",
+        "gdi32.lib", "user32.lib", "ole32.lib", "oleaut32.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "avmedia_implib",
+    srcs = [":avmedia"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── avmediawin.dll ──────────────────────────────────────────────────────────
+# Windows DirectX (DirectShow) media backend.
+# Exports via SAL_DLLPUBLIC_EXPORT — no DEF file needed.
+cc_binary(
+    name = "avmediawin",
+    srcs = glob([
+        "source/win/*.cxx",
+        "source/win/*.hxx",
+    ]),
+    copts = _COPTS + [
+        "/Imain/avmedia/source/win",
+    ],
+    defines = _DEFINES,
+    linkshared = True,
+    deps = [
+        ":avmedia_headers",
+        ":avmedia_source_inc",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/vcl:vcl_implib",
+        "//main/i18npool:i18nisolang1_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/i18npool:i18nisolang1_implib)",
+        "gdi32.lib", "ole32.lib", "oleaut32.lib", "user32.lib",
+        "strmiids.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "avmediawin_implib",
+    srcs = [":avmediawin"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
