@@ -128,7 +128,7 @@ log.debug( "pythonscript loading" )
 #from com.sun.star.lang import typeOfXServiceInfo, typeOfXTypeProvider
 from com.sun.star.uno import RuntimeException
 from com.sun.star.lang import XServiceInfo
-from com.sun.star.io import IOException
+from com.sun.star.io import IOException, XInputStream
 from com.sun.star.ucb import CommandAbortedException, XCommandEnvironment, XProgressHandler, Command
 from com.sun.star.task import XInteractionHandler
 from com.sun.star.beans import XPropertySet, Property
@@ -172,6 +172,26 @@ def toIniName( str ):
     if( hasattr(sys , "dllhandle") ):
         return str + ".ini"
     return str + "rc"
+
+class EmptyInputStream( unohelper.Base, XInputStream ):
+      def __init__( self ):
+          self.alive = 1
+
+      def closeInput(self):
+          pass
+
+      def readBytes( self, seq, n ):
+          return 0, ""
+
+      def readSomeBytes( self, seq, n ):
+          log.debug("readSomeBytes(" + str(seq) + "," + str(n) + ")")
+          return 0, ""
+
+      def skipBytes( self, n ):
+          pass
+
+      def available( self ):
+          return 0
 
 
 """ definition: storageURI is the system dependent, absolute file url, where the script is stored on disk
@@ -582,7 +602,7 @@ class ScriptBrowseNode( unohelper.Base, XBrowseNode , XPropertySet, XInvocation,
 
 
 #-------------------------------------------------------
-class FileBrowseNode( unohelper.Base, XBrowseNode ):
+class FileBrowseNode( unohelper.Base, XBrowseNode, XPropertySet, XInvocation ):
     def __init__( self, provCtx, uri , name ):
         self.provCtx = provCtx
         self.uri = uri
@@ -619,13 +639,74 @@ class FileBrowseNode( unohelper.Base, XBrowseNode ):
     def getType( self):
         return CONTAINER
 
+    # XPropertySet
+
+    def getPropertyValue( self, name ):
+        ret = None
+        try:
+            if name == "Editable":
+                ret = not self.provCtx.sfa.isReadOnly( self.uri )
+            elif name == "Deletable":
+                ret = not self.provCtx.sfa.isReadOnly( self.uri )
+            elif name == "Renamable":
+                ret = not self.provCtx.sfa.isReadOnly( self.uri )
+
+            log.debug("uri is " + self.uri)
+            log.debug( "FileBrowseNode.getPropertyValue called for " + name + ", returning " + str(ret) )
+        except Exception as e:
+            log.error( "FileBrowseNode.getPropertyValue error " + lastException2String())
+            raise
+
+        return ret
+
+    def setPropertyValue( self, name, value ):
+        log.debug( "FileBrowseNode.setPropertyValue called " + name + "=" +str(value ) )
+
+    def getPropertySetInfo( self ):
+        log.debug( "FileBrowseNode.getPropertySetInfo called "  )
+        return None
+
+    # XInvocation
+
+    def getIntrospection( self ):
+        log.debug( "FileBrowseNode.getIntrospection() called" )
+        return None
+
+    def invoke( self, name, params, outparamindex, outparams ):
+        log.debug("FileBrowseNode.invoke called for " + name + "," + str(params) + "," + str(outparamindex) + "," + str(outparams))
+        if name == "Editable":
+            log.debug("Editable not implemented")
+        elif name == "Deletable":
+            self.provCtx.sfa.kill( self.uri )
+            return True
+        elif name == "Renamable":
+            newUrl = self.rootUrl[0:self.uri.rfind("/")+1] + params[0]
+            self.provCtx.sfa.move( self.uri, newUrl )
+            childNode = FileBrowseNode( self.provCtx, newUrl, params[0] )
+            return childNode
+        return None
+
+    def setValue( self, name, value ):
+        return None
+
+    def getValue( self, name ):
+        log.debug( "FileBrowseNode.getValue() called" )
+        return None
+
+    def hasMethod( self, name ):
+        return False
+
+    def hasProperty( self, name ):
+        return False
 
 
-class DirBrowseNode( unohelper.Base, XBrowseNode ):
-    def __init__( self, provCtx, name, rootUrl ):
+class DirBrowseNode( unohelper.Base, XBrowseNode, XPropertySet, XInvocation ):
+    def __init__( self, provCtx, name, rootUrl, depth ):
         self.provCtx = provCtx
         self.name = name
         self.rootUrl = rootUrl
+        self.depth = depth
+        log.debug( "DirBrowseNode constructor for " + name + "," + rootUrl )
 
     def getName( self ):
         return self.name
@@ -642,7 +723,8 @@ class DirBrowseNode( unohelper.Base, XBrowseNode ):
                         FileBrowseNode( self.provCtx, i, i[i.rfind("/")+1:len(i)-3] ) )
                 elif self.provCtx.sfa.isFolder( i ) and not i.endswith("/pythonpath"):
                     log.debug( "adding DirBrowseNode " + i )
-                    browseNodeList.append( DirBrowseNode( self.provCtx, i[i.rfind("/")+1:len(i)],i))
+                    browseNodeList.append(
+                        DirBrowseNode( self.provCtx, i[i.rfind("/")+1:len(i)], i, self.depth + 1 ) )
             return tuple( browseNodeList )
         except Exception as e:
             text = lastException2String()
@@ -656,9 +738,90 @@ class DirBrowseNode( unohelper.Base, XBrowseNode ):
     def getType( self ):
         return CONTAINER
 
+    # XScriptProvider
+
     def getScript( self, uri ):
         log.debug( "DirBrowseNode getScript " + uri + " invoked" )
         raise IllegalArgumentException( "DirBrowseNode couldn't instantiate script " + uri , self , 0 )
+
+    # XPropertySet
+
+    def getPropertyValue( self, name ):
+        ret = None
+        try:
+            if name == "Creatable":
+                ret = not self.provCtx.sfa.isReadOnly( self.rootUrl )
+            elif name == "Deletable":
+                ret = not self.provCtx.sfa.isReadOnly( self.rootUrl )
+            elif name == "Renamable":
+                ret = not self.provCtx.sfa.isReadOnly( self.rootUrl )
+
+            log.debug("rootUrl is " + self.rootUrl)
+            log.debug( "DirBrowseNode.getPropertyValue called for " + name + ", returning " + str(ret) )
+        except Exception as e:
+            log.error( "DirBrowseNode.getPropertyValue error " + lastException2String())
+            raise
+
+        return ret
+
+    def setPropertyValue( self, name, value ):
+        log.debug( "DirBrowseNode.setPropertyValue called " + name + "=" +str(value ) )
+
+    def getPropertySetInfo( self ):
+        log.debug( "DirBrowseNode.getPropertySetInfo called "  )
+        return None
+
+    # XInvocation
+
+    def getIntrospection( self ):
+        log.debug( "DirBrowseNode.getIntrospection() called" )
+        return None
+
+    def invoke( self, name, params, outparamindex, outparams ):
+        log.debug("DirBrowseNode.invoke called for " + name + "," + str(params) + "," + str(outparamindex) + "," + str(outparams))
+        if name == "Creatable":
+            if self.depth == 0:
+                log.debug( "depth is 0" )
+                subFolderUrl = self.rootUrl + "/" + params[0]
+                self.provCtx.sfa.createFolder( subFolderUrl )
+                log.debug( "created folder!" )
+                childNode = DirBrowseNode( self.provCtx, subFolderUrl[subFolderUrl.rfind("/")+1:len(subFolderUrl)], subFolderUrl, self.depth + 1 )
+                log.debug( "created childNode" )
+                return childNode
+            else:
+                log.debug( "depth is " + str(self.depth) )
+                scriptUrl = self.rootUrl + "/" + params[0] + ".py"
+                log.debug( "scriptUrl=" + scriptUrl )
+                try:
+                    self.provCtx.sfa.writeFile( scriptUrl, EmptyInputStream() )
+                except Exception as e:
+                    log.error( "Creatable error: " + lastException2String())
+                    raise
+                childNode = FileBrowseNode( self.provCtx, scriptUrl, params[0] + ".py" )
+                log.debug( "returning" )
+                return childNode
+        elif name == "Deletable":
+            self.provCtx.sfa.kill( self.rootUrl )
+            return True
+        elif name == "Renamable":
+            newUrl = self.rootUrl[0:self.rootUrl.rfind("/")+1] + params[0]
+            self.provCtx.sfa.move( self.rootUrl, newUrl )
+            childNode = FileBrowseNode( self.provCtx, newUrl, params[0] )
+            return childNode
+        return None
+
+    def setValue( self, name, value ):
+        return None
+
+    def getValue( self, name ):
+        log.debug( "DirBrowseNode.getValue() called" )
+        return None
+
+    def hasMethod( self, name ):
+        return False
+
+    def hasProperty( self, name ):
+        return False
 
 
 class ManifestHandler( XDocumentHandler, unohelper.Base ):
@@ -842,11 +1005,11 @@ class PackageBrowseNode( unohelper.Base, XBrowseNode ):
         for i in items:
             if len( i[1].pathes ) == 1:
                 browseNodeList.append(
-                    DirBrowseNode( self.provCtx, i[0], i[1].pathes[0] ))
+                    DirBrowseNode( self.provCtx, i[0], i[1].pathes[0], 0 ))
             else:
                 for j in i[1].pathes:
                     browseNodeList.append(
-                        DirBrowseNode( self.provCtx, i[0]+"."+lastElement(j), j ) )
+                        DirBrowseNode( self.provCtx, i[0]+"."+lastElement(j), j, 0 ) )
         return tuple( browseNodeList )
 
     def hasChildNodes( self ):
@@ -904,7 +1067,7 @@ def expandUri(  uri ):
     return uri
 
 #--------------------------------------------------------------
-class PythonScriptProvider( unohelper.Base, XBrowseNode, XScriptProvider, XNameContainer):
+class PythonScriptProvider( unohelper.Base, XBrowseNode, XScriptProvider, XNameContainer, XPropertySet, XInvocation):
     def __init__( self, ctx, *args ):
         if log.isDebugLevel():
             mystr = ""
@@ -912,7 +1075,7 @@ class PythonScriptProvider( unohelper.Base, XBrowseNode, XScriptProvider, XNameC
                 if len(mystr) > 0:
                     mystr = mystr +","
                 mystr = mystr + str(i)
-            log.debug( "Entering PythonScriptProvider.ctor" + mystr )
+            log.debug( "Entering PythonScriptProvider.ctor with args " + mystr )
 
         doc = None
         inv = None
@@ -958,7 +1121,7 @@ class PythonScriptProvider( unohelper.Base, XBrowseNode, XScriptProvider, XNameC
                 self.provCtx.setPackageAttributes( mapPackageName2Path , rootUrl )
                 self.dirBrowseNode = PackageBrowseNode( self.provCtx, LANGUAGENAME, rootUrl )
             else:
-                self.dirBrowseNode = DirBrowseNode( self.provCtx, LANGUAGENAME, rootUrl )
+                self.dirBrowseNode = DirBrowseNode( self.provCtx, LANGUAGENAME, rootUrl, 0 )
 
         except Exception as e:
             text = lastException2String()
@@ -1004,6 +1167,36 @@ class PythonScriptProvider( unohelper.Base, XBrowseNode, XScriptProvider, XNameC
             log.error( text )
             raise ScriptFrameworkErrorException( text, self, scriptUri, LANGUAGENAME, 0 )
 
+    # XPropertySet
+
+    def getPropertyValue( self, name ):
+        return self.dirBrowseNode.getPropertyValue( name )
+
+    def setPropertyValue( self, name, value ):
+        return self.dirBrowseNode.setPropertyValue( name, value )
+
+    def getPropertySetInfo( self ):
+        return self.dirBrowseNode.getPropertySetInfo()
+
+    # XInvocation
+
+    def getIntrospection( self ):
+        return self.dirBrowseNode.getIntrospection()
+
+    def invoke( self, name, params, outparamindex, outparams ):
+        return self.dirBrowseNode.invoke( name, params, outparamindex, outparams)
+
+    def setValue( self, name, value ):
+        return self.dirBrowseNode.setValue( name, value )
+
+    def getValue( self, name ):
+        return self.dirBrowseNode.getValue( name )
+
+    def hasMethod( self, name ):
+        return self.dirBrowseNode.hasMethod( name )
+
+    def hasProperty( self, name ):
+        return self.dirBrowseNode.hasProperty( name )
 
     # XServiceInfo
     def getSupportedServices( self ):
