@@ -1,5 +1,5 @@
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
-load("//build/rules:sdi_target.bzl", "sdi_target")
+load("//build/rules:sdi_target.bzl", "sdi_package", "sdi_target")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -78,6 +78,16 @@ sdi_target(
     ],
 )
 
+# Stages sfx.sdi and sfxitems.sdi under the prefix "sfx2/" so downstream
+# modules can resolve include "sfx2/sfxitems.sdi" (mirrors Package_sdi.mk
+# delivery to inc/sfx2/).
+sdi_package(
+    name = "sfx2_sdi_pkg",
+    srcs = ["sdi/sfx.sdi", "sdi/sfxitems.sdi"],
+    prefix = "sfx2",
+    visibility = ["//visibility:public"],
+)
+
 cc_library(
     name = "sfxslots_headers",
     hdrs  = [":sfxslots_sdi"],
@@ -102,6 +112,7 @@ cc_library(
 cc_library(
     name = "sfx2_source_hrc",
     textual_hdrs = glob(["source/**/*.hrc"], exclude = ["source/inc/**"]),
+    visibility = ["//visibility:public"],
 )
 
 # ── sfx.dll ─────────────────────────────────────────────────────────────────

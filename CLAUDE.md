@@ -147,12 +147,11 @@ sfx2          ✅  (basic, xmlscript, framework, shell, sax + libxml2 ext) — m
 cppcanvas     ✅  (cppcanvas.dll) — main/cppcanvas/readme.md
 ── Layer 10 ─────────────────────────────────────────────────────────────
 avmedia       ✅  (avmedia.dll, avmediawin.dll) — main/avmedia/readme.md
-oox           ⬜  (basegfx, xmlscript, tools, vcl, sax + boost, openssl ext)
 ── Layer 11 ─────────────────────────────────────────────────────────────
 drawinglayer  ✅  (vcl, svtools, basegfx, avmedia, canvas, cppcanvas)
 ── Layer 12 ─────────────────────────────────────────────────────────────
-svx           ⬜  (sfx2, oovbaapi, connectivity, xmloff, linguistic, editeng,
-                   avmedia, drawinglayer, jvmfwk)
+svx           ✅  (svxcore.dll, svx.dll, textconversiondlgs.dll) — main/svx/readme.md
+oox           ⬜  (basegfx, xmlscript, tools, vcl, sax + boost, openssl ext, svx)
 ── Layer 13 ─────────────────────────────────────────────────────────────
 writerfilter  ⬜  (tools, svx, oox, cppu, cppuhelper, ucbhelper, sal)
 filter        ⬜  (svtools, unotools, xmloff, svx, canvas, javaunohelper,

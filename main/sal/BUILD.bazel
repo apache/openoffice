@@ -134,7 +134,7 @@ cc_binary(
 )
 ## final shared dll
 cc_binary(
-    name = "sal",
+    name = "sal3",
     # dllentry.c is compiled directly here (not via osl_w32 lib) so that its
     # DllMain lands as an explicit .obj in the link command.  Explicit objects
     # take precedence over /DEFAULTLIB objects, preventing the LNK2005 conflict
@@ -152,12 +152,20 @@ cc_binary(
     visibility = ["//visibility:public"],
 )
 
+# Backward-compatible alias: all existing consumers of //main/sal:sal
+# (idl_pipeline.bzl, java_pipeline.bzl, etc.) continue to work unchanged.
+alias(
+    name = "sal",
+    actual = ":sal3",
+    visibility = ["//visibility:public"],
+)
+
 # Expose sal's import library (.if.lib) so DLLs that link against sal can
 # reference it via additional_linker_inputs + $(rootpath ...).
 # cc_binary does not propagate CcInfo, so this filegroup is the bridge.
 filegroup(
     name = "sal_implib",
-    srcs = [":sal"],
+    srcs = [":sal3"],
     output_group = "interface_library",
     visibility = ["//visibility:public"],
 )

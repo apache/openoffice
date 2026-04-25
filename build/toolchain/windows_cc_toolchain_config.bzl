@@ -1340,6 +1340,20 @@ def _impl(ctx):
             ],
         )
 
+        # Linker-only PDB: --features=generate_pdb
+        # Keeps the fastbuild CRT (/MD) so debug-iterator checks stay off.
+        # /Z7 and /Od are already present in fastbuild_feature, so no recompilation
+        # is triggered — only the link step reruns with /DEBUG to emit the .pdb.
+        generate_pdb_linker_feature = feature(
+            name = "generate_pdb",
+            flag_sets = [
+                flag_set(
+                    actions = all_link_actions,
+                    flag_groups = [flag_group(flags = ["/DEBUG"])],
+                ),
+            ],
+        )
+
         features = [
             no_legacy_features_feature,
             nologo_feature,
@@ -1395,6 +1409,7 @@ def _impl(ctx):
             supports_dynamic_linker_feature,
             supports_interface_shared_libraries_feature,
             symbol_check_feature,
+            generate_pdb_linker_feature,
         ]
     else:
         targets_windows_feature = feature(
