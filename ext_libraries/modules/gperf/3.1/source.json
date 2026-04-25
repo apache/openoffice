@@ -1,0 +1,10 @@
+{
+  "integrity": "sha256-WIVGuUW7pLcLajphboC0q0ZuPzMCSjUvwhmBEs27OuI=",
+  "strip_prefix": "gperf-3.1",
+  "url": "https://ftp.gnu.org/pub/gnu/gperf/gperf-3.1.tar.gz",
+  "overlay": {
+    "BUILD.bazel":       "sha256-W9xAw/F4zjvzDUs1EIfxOwPVdTirb6xO8RKBGEKd8w8=",
+    "MODULE.bazel":      "sha256-1f2wuN0TyaONv6par5VVUrLAhpufawWRKp/f+OH+JAY=",
+    "include/config.h":  "sha256-DvwJwKUO+n311oLkE9DY2QTQQS1MNFYh/cCvGFTeQsk="
+  }
+}
