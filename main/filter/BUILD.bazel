@@ -1,4 +1,5 @@
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("//main/filter:filter_rules.bzl", "FILTER_COPTS", "FILTER_HDR_DEPS", "graphic_filter")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -152,4 +153,812 @@ filegroup(
     srcs = [":msfilter"],
     output_group = "interface_library",
     visibility = ["//visibility:public"],
+)
+
+# ── xmlfa.dll ─────────────────────────────────────────────────────────────────
+cc_binary(
+    name = "xmlfa",
+    srcs = [
+        "source/xmlfilteradaptor/genericfilter.cxx",
+        "source/xmlfilteradaptor/XmlFilterAdaptor.cxx",
+        "source/xmlfilteradaptor/XmlFilterAdaptor.hxx",
+        "source/xmlfilteradaptor/streamwrap.cxx",
+        "source/xmlfilteradaptor/streamwrap.hxx",
+    ],
+    copts = FILTER_COPTS + ["/Imain/filter/source/xmlfilteradaptor"],
+    defines = _DEFINES + ["COMPMOD_NAMESPACE=framework"],
+    win_def_file = "util/component.def",
+    linkshared = True,
+    deps = FILTER_HDR_DEPS,
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/tools:tl_implib",
+        "//main/vcl:vcl_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "ole32.lib", "user32.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "xmlfa_implib",
+    srcs = [":xmlfa"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── xfld.dll ──────────────────────────────────────────────────────────────────
+cc_binary(
+    name = "xfld",
+    srcs = [
+        "source/xmlfilterdetect/fdcomp.cxx",
+        "source/xmlfilterdetect/filterdetect.cxx",
+        "source/xmlfilterdetect/filterdetect.hxx",
+    ],
+    copts = FILTER_COPTS + ["/Imain/filter/source/xmlfilterdetect"],
+    defines = _DEFINES + ["COMPMOD_NAMESPACE=framework"],
+    win_def_file = "util/component.def",
+    linkshared = True,
+    deps = FILTER_HDR_DEPS,
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/ucbhelper:ucbhelper_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/ucbhelper:ucbhelper_implib)",
+        "ole32.lib", "user32.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "xfld_implib",
+    srcs = [":xfld"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── svgfilter.dll ─────────────────────────────────────────────────────────────
+# svgimport.cxx omitted: requires SOLAR_JAVA (JVM-based SVG import pipeline)
+cc_binary(
+    name = "svgfilter",
+    srcs = [
+        "source/svg/svguno.cxx",
+        "source/svg/svgdialog.cxx",
+        "source/svg/svgdialog.hxx",
+        "source/svg/impsvgdialog.cxx",
+        "source/svg/impsvgdialog.hxx",
+        "source/svg/svgfilter.cxx",
+        "source/svg/svgfilter.hxx",
+        "source/svg/svgexport.cxx",
+        "source/svg/svgfontexport.cxx",
+        "source/svg/svgfontexport.hxx",
+        "source/svg/svgwriter.cxx",
+        "source/svg/svgwriter.hxx",
+        "source/svg/svgscript.hxx",
+    ],
+    copts = FILTER_COPTS + ["/Imain/filter/source/svg"],
+    defines = _DEFINES,
+    win_def_file = "util/component.def",
+    linkshared = True,
+    deps = FILTER_HDR_DEPS + ["//main/jvmaccess:jvmaccess_headers"],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/tools:tl_implib",
+        "//main/vcl:vcl_implib",
+        "//main/svl:svl_implib",
+        "//main/svtools:svt_implib",
+        "//main/unotools:utl_implib",
+        "//main/basegfx:basegfx_implib",
+        "//main/xmloff:xo_implib",
+        "//main/editeng:editeng_implib",
+        "//main/svx:svxcore_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/basegfx:basegfx_implib)",
+        "$(execpath //main/xmloff:xo_implib)",
+        "$(execpath //main/editeng:editeng_implib)",
+        "$(execpath //main/svx:svxcore_implib)",
+        "gdi32.lib", "user32.lib", "ole32.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "svgfilter_implib",
+    srcs = [":svgfilter"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── pdffilter.dll ─────────────────────────────────────────────────────────────
+# .src resource files (impdialog.src, pdf.src) skipped — no rsc pipeline yet
+cc_library(
+    name = "pdf_hrc",
+    textual_hdrs = [
+        "source/pdf/impdialog.hrc",
+        "source/pdf/pdf.hrc",
+    ],
+)
+
+cc_binary(
+    name = "pdffilter",
+    srcs = [
+        "source/pdf/pdfuno.cxx",
+        "source/pdf/pdfdialog.cxx",
+        "source/pdf/pdfdialog.hxx",
+        "source/pdf/impdialog.cxx",
+        "source/pdf/impdialog.hxx",
+        "source/pdf/pdffilter.cxx",
+        "source/pdf/pdffilter.hxx",
+        "source/pdf/pdfinteract.cxx",
+        "source/pdf/pdfinteract.hxx",
+        "source/pdf/pdfexport.cxx",
+        "source/pdf/pdfexport.hxx",
+    ],
+    copts = FILTER_COPTS + ["/Imain/filter/source/pdf"],
+    defines = _DEFINES,
+    win_def_file = "util/component.def",
+    linkshared = True,
+    deps = FILTER_HDR_DEPS + [":pdf_hrc"],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/tools:tl_implib",
+        "//main/vcl:vcl_implib",
+        "//main/svl:svl_implib",
+        "//main/svtools:svt_implib",
+        "//main/unotools:utl_implib",
+        "//main/basegfx:basegfx_implib",
+        "//main/sfx2:sfx_implib",
+        "//main/toolkit:ootk_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/basegfx:basegfx_implib)",
+        "$(execpath //main/sfx2:sfx_implib)",
+        "$(execpath //main/toolkit:ootk_implib)",
+        "gdi32.lib", "user32.lib", "ole32.lib", "oleaut32.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "pdffilter_implib",
+    srcs = [":pdffilter"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── flash.dll ─────────────────────────────────────────────────────────────────
+# .src resource file (impswfdialog.src) skipped — no rsc pipeline yet
+cc_library(
+    name = "flash_hrc",
+    textual_hdrs = ["source/flash/impswfdialog.hrc"],
+)
+
+cc_binary(
+    name = "flash",
+    srcs = [
+        "source/flash/swffilter.cxx",
+        "source/flash/swfwriter.cxx",
+        "source/flash/swfwriter.hxx",
+        "source/flash/swfwriter1.cxx",
+        "source/flash/swfwriter2.cxx",
+        "source/flash/swfuno.cxx",
+        "source/flash/swfexporter.cxx",
+        "source/flash/swfexporter.hxx",
+        "source/flash/swfdialog.cxx",
+        "source/flash/swfdialog.hxx",
+        "source/flash/impswfdialog.cxx",
+        "source/flash/impswfdialog.hxx",
+    ],
+    copts = FILTER_COPTS + ["/Imain/filter/source/flash"],
+    defines = _DEFINES + ["SYSTEM_ZLIB", "Z_PREFIX"],
+    win_def_file = "util/component.def",
+    linkshared = True,
+    deps = FILTER_HDR_DEPS + ["@zlib//:zlib", ":flash_hrc"],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/tools:tl_implib",
+        "//main/vcl:vcl_implib",
+        "//main/svtools:svt_implib",
+        "//main/unotools:utl_implib",
+        "//main/basegfx:basegfx_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/basegfx:basegfx_implib)",
+        "gdi32.lib", "user32.lib", "ole32.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "flash_implib",
+    srcs = [":flash"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── placeware.dll ─────────────────────────────────────────────────────────────
+cc_binary(
+    name = "placeware",
+    srcs = [
+        "source/placeware/zip.cxx",
+        "source/placeware/zip.hxx",
+        "source/placeware/zipfile.hxx",
+        "source/placeware/filter.cxx",
+        "source/placeware/uno.cxx",
+        "source/placeware/exporter.cxx",
+        "source/placeware/exporter.hxx",
+        "source/placeware/Base64Codec.cxx",
+        "source/placeware/Base64Codec.hxx",
+        "source/placeware/tempfile.cxx",
+        "source/placeware/tempfile.hxx",
+    ],
+    copts = FILTER_COPTS + ["/Imain/filter/source/placeware"],
+    defines = _DEFINES,
+    win_def_file = "util/component.def",
+    linkshared = True,
+    deps = FILTER_HDR_DEPS,
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "ole32.lib", "user32.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "placeware_implib",
+    srcs = [":placeware"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── t602filter.dll ────────────────────────────────────────────────────────────
+# .src resource file (t602filter.src) skipped — no rsc pipeline yet
+cc_library(
+    name = "t602_hrc",
+    textual_hdrs = ["source/t602/t602filter.hrc"],
+)
+
+cc_binary(
+    name = "t602filter",
+    srcs = [
+        "source/t602/t602filter.cxx",
+        "source/t602/t602filter.hxx",
+        "source/t602/filterenv.cxx",
+    ],
+    copts = FILTER_COPTS + ["/Imain/filter/source/t602"],
+    defines = _DEFINES,
+    win_def_file = "util/component.def",
+    linkshared = True,
+    deps = FILTER_HDR_DEPS + [":t602_hrc"],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/tools:tl_implib",
+        "//main/xmloff:xo_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/xmloff:xo_implib)",
+        "ole32.lib", "user32.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "t602filter_implib",
+    srcs = [":t602filter"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── filterconfig1.dll ─────────────────────────────────────────────────────────
+cc_binary(
+    name = "filterconfig1",
+    srcs = [
+        "source/config/cache/basecontainer.cxx",
+        "source/config/cache/basecontainer.hxx",
+        "source/config/cache/cacheitem.cxx",
+        "source/config/cache/cacheitem.hxx",
+        "source/config/cache/cacheupdatelistener.cxx",
+        "source/config/cache/cacheupdatelistener.hxx",
+        "source/config/cache/configflush.cxx",
+        "source/config/cache/configflush.hxx",
+        "source/config/cache/constant.hxx",
+        "source/config/cache/contenthandlerfactory.cxx",
+        "source/config/cache/contenthandlerfactory.hxx",
+        "source/config/cache/filtercache.cxx",
+        "source/config/cache/filtercache.hxx",
+        "source/config/cache/filterfactory.cxx",
+        "source/config/cache/filterfactory.hxx",
+        "source/config/cache/frameloaderfactory.cxx",
+        "source/config/cache/frameloaderfactory.hxx",
+        "source/config/cache/lateinitlistener.cxx",
+        "source/config/cache/lateinitlistener.hxx",
+        "source/config/cache/lateinitthread.cxx",
+        "source/config/cache/lateinitthread.hxx",
+        "source/config/cache/macros.hxx",
+        "source/config/cache/querytokenizer.cxx",
+        "source/config/cache/querytokenizer.hxx",
+        "source/config/cache/registration.cxx",
+        "source/config/cache/registration.hxx",
+        "source/config/cache/typedetection.cxx",
+        "source/config/cache/typedetection.hxx",
+        "source/config/cache/versions.hxx",
+    ],
+    copts = FILTER_COPTS + ["/Imain/filter/source/config/cache"],
+    defines = _DEFINES,
+    win_def_file = "util/component.def",
+    linkshared = True,
+    deps = FILTER_HDR_DEPS,
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/framework:fwe_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/framework:fwe_implib)",
+        "ole32.lib", "user32.lib", "advapi32.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "filterconfig1_implib",
+    srcs = [":filterconfig1"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── xsltfilter.dll ────────────────────────────────────────────────────────────
+# Java companion (XSLTFilter.jar) skipped — no Java pipeline yet
+cc_binary(
+    name = "xsltfilter",
+    srcs = [
+        "source/xsltfilter/XSLTFilter.cxx",
+        "source/xsltfilter/XMLBase64Codec.cxx",
+        "source/xsltfilter/XMLBase64Codec.hxx",
+        "source/xsltfilter/containerhelper.hxx",
+        "source/xsltfilter/uof2merge.cxx",
+        "source/xsltfilter/uof2merge.hxx",
+        "source/xsltfilter/uof2splithandler.cxx",
+        "source/xsltfilter/uof2splithandler.hxx",
+        "source/xsltfilter/uof2splitter.cxx",
+        "source/xsltfilter/uof2splitter.hxx",
+        "source/xsltfilter/uof2storage.cxx",
+        "source/xsltfilter/uof2storage.hxx",
+    ],
+    copts = FILTER_COPTS + ["/Imain/filter/source/xsltfilter"],
+    defines = _DEFINES,
+    win_def_file = "util/component.def",
+    linkshared = True,
+    deps = FILTER_HDR_DEPS,
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/tools:tl_implib",
+        "//main/xmloff:xo_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/xmloff:xo_implib)",
+        "ole32.lib", "user32.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "xsltfilter_implib",
+    srcs = [":xsltfilter"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── xsltdlg.dll ──────────────────────────────────────────────────────────────
+# .src resource files skipped — no rsc pipeline yet
+cc_library(
+    name = "xsltdlg_hrc",
+    textual_hdrs = [
+        "source/xsltdialog/xmlfiltersettingsdialog.hrc",
+        "source/xsltdialog/xmlfiltertabdialog.hrc",
+        "source/xsltdialog/xmlfiltertabpagebasic.hrc",
+        "source/xsltdialog/xmlfiltertabpagexslt.hrc",
+        "source/xsltdialog/xmlfiltertestdialog.hrc",
+        "source/xsltdialog/xmlfileview.hrc",
+        "source/xsltdialog/xmlfilterdialogstrings.hrc",
+        "source/xsltdialog/xmlfilterhelpids.hrc",
+    ],
+)
+
+cc_binary(
+    name = "xsltdlg",
+    srcs = [
+        "source/xsltdialog/typedetectionimport.cxx",
+        "source/xsltdialog/typedetectionimport.hxx",
+        "source/xsltdialog/typedetectionexport.cxx",
+        "source/xsltdialog/typedetectionexport.hxx",
+        "source/xsltdialog/xmlfilterjar.cxx",
+        "source/xsltdialog/xmlfilterjar.hxx",
+        "source/xsltdialog/xmlfilterdialogcomponent.cxx",
+        "source/xsltdialog/xmlfiltercommon.hxx",
+        "source/xsltdialog/xmlfiltersettingsdialog.cxx",
+        "source/xsltdialog/xmlfiltersettingsdialog.hxx",
+        "source/xsltdialog/xmlfiltertabdialog.cxx",
+        "source/xsltdialog/xmlfiltertabdialog.hxx",
+        "source/xsltdialog/xmlfiltertabpagebasic.cxx",
+        "source/xsltdialog/xmlfiltertabpagebasic.hxx",
+        "source/xsltdialog/xmlfiltertabpagexslt.cxx",
+        "source/xsltdialog/xmlfiltertabpagexslt.hxx",
+        "source/xsltdialog/xmlfiltertestdialog.cxx",
+        "source/xsltdialog/xmlfiltertestdialog.hxx",
+        "source/xsltdialog/xmlfileview.cxx",
+        "source/xsltdialog/xmlfileview.hxx",
+    ],
+    copts = FILTER_COPTS + ["/Imain/filter/source/xsltdialog"],
+    defines = _DEFINES,
+    win_def_file = "util/component.def",
+    linkshared = True,
+    deps = FILTER_HDR_DEPS + [":xsltdlg_hrc"],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/tools:tl_implib",
+        "//main/vcl:vcl_implib",
+        "//main/svl:svl_implib",
+        "//main/svtools:svt_implib",
+        "//main/unotools:utl_implib",
+        "//main/toolkit:ootk_implib",
+        "//main/sfx2:sfx_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/toolkit:ootk_implib)",
+        "$(execpath //main/sfx2:sfx_implib)",
+        "gdi32.lib", "user32.lib", "ole32.lib", "oleaut32.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "xsltdlg_implib",
+    srcs = [":xsltdlg"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── filtertracer.dll ──────────────────────────────────────────────────────────
+cc_binary(
+    name = "filtertracer",
+    srcs = [
+        "source/filtertracer/filtertracer.cxx",
+        "source/filtertracer/filtertracer.hxx",
+        "source/filtertracer/filtertraceruno.cxx",
+    ],
+    copts = FILTER_COPTS + ["/Imain/filter/source/filtertracer"],
+    defines = _DEFINES,
+    win_def_file = "util/component.def",
+    linkshared = True,
+    deps = FILTER_HDR_DEPS,
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "ole32.lib", "user32.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "filtertracer_implib",
+    srcs = [":filtertracer"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── Graphic export filters ────────────────────────────────────────────────────
+
+graphic_filter(
+    name = "egi",
+    subdir = "egif",
+    srcs = ["egif.cxx", "giflzwc.cxx", "giflzwc.hxx"],
+    win_def = "util/GraphicExport.def",
+)
+
+graphic_filter(
+    name = "eme",
+    subdir = "eos2met",
+    srcs = ["eos2met.cxx"],
+    win_def = "util/GraphicExport.def",
+)
+
+graphic_filter(
+    name = "epb",
+    subdir = "epbm",
+    srcs = ["epbm.cxx"],
+    win_def = "util/GraphicExport.def",
+)
+
+graphic_filter(
+    name = "epg",
+    subdir = "epgm",
+    srcs = ["epgm.cxx"],
+    win_def = "util/GraphicExport.def",
+)
+
+graphic_filter(
+    name = "epp",
+    subdir = "eppm",
+    srcs = ["eppm.cxx"],
+    win_def = "util/GraphicExport.def",
+)
+
+graphic_filter(
+    name = "era",
+    subdir = "eras",
+    srcs = ["eras.cxx"],
+    win_def = "util/GraphicExport.def",
+)
+
+graphic_filter(
+    name = "eti",
+    subdir = "etiff",
+    srcs = ["etiff.cxx"],
+    win_def = "util/GraphicExport.def",
+)
+
+graphic_filter(
+    name = "exp",
+    subdir = "expm",
+    srcs = ["expm.cxx"],
+    win_def = "util/GraphicExport.def",
+)
+
+graphic_filter(
+    name = "ept",
+    subdir = "epict",
+    srcs = ["epict.cxx"],
+    win_def = "util/GraphicExport.def",
+)
+
+graphic_filter(
+    name = "eps",
+    subdir = "eps",
+    srcs = ["eps.cxx"],
+    local_hrc = ["strings.hrc"],
+    win_def = "util/GraphicExport.def",
+)
+
+# ── Graphic import filters ────────────────────────────────────────────────────
+
+graphic_filter(
+    name = "ime",
+    subdir = "ios2met",
+    srcs = ["ios2met.cxx"],
+    win_def = "util/GraphicImport.def",
+)
+
+graphic_filter(
+    name = "ipb",
+    subdir = "ipbm",
+    srcs = ["ipbm.cxx"],
+    win_def = "util/GraphicImport.def",
+)
+
+graphic_filter(
+    name = "icd",
+    subdir = "ipcd",
+    srcs = ["ipcd.cxx"],
+    win_def = "util/GraphicImport.def",
+)
+
+graphic_filter(
+    name = "ipx",
+    subdir = "ipcx",
+    srcs = ["ipcx.cxx"],
+    win_def = "util/GraphicImport.def",
+)
+
+graphic_filter(
+    name = "ipt",
+    subdir = "ipict",
+    srcs = ["ipict.cxx", "shape.cxx", "shape.hxx"],
+    win_def = "util/GraphicImport.def",
+)
+
+graphic_filter(
+    name = "idx",
+    subdir = "idxf",
+    srcs = [
+        "dxf2mtf.cxx", "dxf2mtf.hxx",
+        "dxfblkrd.cxx", "dxfblkrd.hxx",
+        "dxfentrd.cxx", "dxfentrd.hxx",
+        "dxfgrprd.cxx", "dxfgrprd.hxx",
+        "dxfreprd.cxx", "dxfreprd.hxx",
+        "dxftblrd.cxx", "dxftblrd.hxx",
+        "dxfvec.cxx",   "dxfvec.hxx",
+        "idxf.cxx",
+    ],
+    win_def = "util/GraphicImport.def",
+    extra_copts = ["/Imain/filter/source/graphicfilter/idxf"],
+)
+
+graphic_filter(
+    name = "iti",
+    subdir = "itiff",
+    srcs = ["itiff.cxx", "ccidecom.cxx", "ccidecom.hxx", "lzwdecom.cxx", "lzwdecom.hxx"],
+    win_def = "util/GraphicImport.def",
+)
+
+graphic_filter(
+    name = "ipd",
+    subdir = "ipsd",
+    srcs = ["ipsd.cxx"],
+    win_def = "util/GraphicImport.def",
+)
+
+graphic_filter(
+    name = "itg",
+    subdir = "itga",
+    srcs = ["itga.cxx"],
+    win_def = "util/GraphicImport.def",
+)
+
+graphic_filter(
+    name = "ira",
+    subdir = "iras",
+    srcs = ["iras.cxx"],
+    win_def = "util/GraphicImport.def",
+)
+
+graphic_filter(
+    name = "ips",
+    subdir = "ieps",
+    srcs = ["ieps.cxx"],
+    win_def = "util/GraphicImport.def",
+)
+
+# ── CGM import filter ─────────────────────────────────────────────────────────
+
+graphic_filter(
+    name = "icg",
+    subdir = "icgm",
+    srcs = [
+        "actimpr.cxx",
+        "bitmap.cxx",  "bitmap.hxx",
+        "bundles.cxx", "bundles.hxx",
+        "cgm.cxx",     "cgm.hxx", "cgmtypes.hxx",
+        "chart.cxx",   "chart.hxx",
+        "class0.cxx",
+        "class1.cxx",
+        "class2.cxx",
+        "class3.cxx",
+        "class4.cxx",
+        "class5.cxx",
+        "class7.cxx",
+        "classx.cxx",
+        "elements.cxx", "elements.hxx",
+        "main.hxx",
+        "outact.cxx",  "outact.hxx",
+    ],
+    local_hrc = ["cgmres.hrc"],
+    win_def = "util/ImportCGM.def",
+    extra_copts = ["/Imain/filter/source/graphicfilter/icgm"],
+    extra_implins = [
+        "//main/toolkit:ootk_implib",
+        "//main/unotools:utl_implib",
+    ],
+    extra_linkopts = [
+        "$(execpath //main/toolkit:ootk_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+    ],
 )
