@@ -52,7 +52,7 @@ elif os.environ.get(PYSCRIPT_LOG_ENV) == "DEBUG":
 # False, writes to user/Scripts/python/log.txt
 LOG_STDOUT = os.environ.get(PYSCRIPT_LOG_STDOUT_ENV, "1") != "0"
 
-ENABLE_EDIT_DIALOG=False                    # offers a minimal editor for editing.
+ENABLE_EDIT_DIALOG=True                    # offers a minimal editor for editing.
 #-------------------------------------------------------------------
 
 def encfile(uni):
@@ -174,24 +174,51 @@ def toIniName( str ):
     return str + "rc"
 
 class EmptyInputStream( unohelper.Base, XInputStream ):
-      def __init__( self ):
-          pass
+    def __init__( self ):
+        pass
 
-      def closeInput(self):
-          pass
+    def closeInput(self):
+        pass
 
-      def readBytes( self, seq, n ):
-          return 0, ""
+    def readBytes( self, seq, n ):
+        return 0, ""
 
-      def readSomeBytes( self, seq, n ):
-          return 0, ""
+    def readSomeBytes( self, seq, n ):
+        return 0, ""
 
-      def skipBytes( self, n ):
-          pass
+    def skipBytes( self, n ):
+        pass
 
-      def available( self ):
-          return 0
+    def available( self ):
+        return 0
 
+class BytesInputStream( unohelper.Base, XInputStream ):
+    def __init__( self, bytes ):
+        self.bytes = bytes
+        self.position = 0
+
+    def closeInput(self):
+        pass
+
+    def readBytes( self, seq, n ):
+        size = self.available()
+        if n < size:
+            size = n
+        curr = self.position
+        self.position += size
+        return size, uno.ByteSequence( self.bytes[curr:curr+size] )
+
+    def readSomeBytes( self, seq, n ):
+        return self.readBytes( seq, n )
+
+    def skipBytes( self, n ):
+        size = self.available()
+        if n < size:
+            size = n
+        self.position += size
+
+    def available( self ):
+        return len( self.bytes ) - self.position
 
 """ definition: storageURI is the system dependent, absolute file url, where the script is stored on disk
                 scriptURI is the system independent uri
@@ -476,6 +503,78 @@ class ProviderContext:
             log.debug( "mapped " + url + " to " + str( entry.module ) )
         return  entry.module
 
+def createEditorDialog( ctx ):
+    smgr = ctx.ServiceManager
+
+    dialogModel = smgr.createInstanceWithContext(
+        "com.sun.star.awt.UnoControlDialogModel", ctx)
+    dialogModel.PositionX = 105
+    dialogModel.PositionY = 117
+    dialogModel.Width = 240
+    dialogModel.Height = 320
+    dialogModel.Closeable = True
+    dialogModel.Moveable = True
+    dialogModel.Title = "Python Macro Editor"
+
+    runButtonModel = dialogModel.createInstance(
+        "com.sun.star.awt.UnoControlButtonModel" )
+    runButtonModel.PositionX = 57
+    runButtonModel.PositionY = 300
+    runButtonModel.Width = 40
+    runButtonModel.Height = 14
+    runButtonModel.TabIndex = 0
+    runButtonModel.Label = "Run"
+
+    saveButtonModel = dialogModel.createInstance(
+        "com.sun.star.awt.UnoControlButtonModel" )
+    saveButtonModel.PositionX = 100
+    saveButtonModel.PositionY = 300
+    saveButtonModel.Width = 40
+    saveButtonModel.Height = 14
+    saveButtonModel.TabIndex = 1
+    saveButtonModel.Label = "Save"
+
+    closeButtonModel = dialogModel.createInstance(
+        "com.sun.star.awt.UnoControlButtonModel" )
+    closeButtonModel.PositionX = 143
+    closeButtonModel.PositionY = 300
+    closeButtonModel.Width = 40
+    closeButtonModel.Height = 14
+    closeButtonModel.TabIndex = 2
+    closeButtonModel.PushButtonType = 2  # CANCEL
+    closeButtonModel.Label = "Close"
+
+    textFieldModel = dialogModel.createInstance(
+        "com.sun.star.awt.UnoControlEditModel" )
+    textFieldModel.PositionX = 6
+    textFieldModel.PositionY = 6
+    textFieldModel.Width = 228
+    textFieldModel.Height = 288
+    textFieldModel.TabIndex = 3
+    textFieldModel.HScroll = True
+    textFieldModel.VScroll = True
+    textFieldModel.MultiLine = True
+
+    dialogModel.insertByName( "RunButton", runButtonModel )
+    dialogModel.insertByName( "SaveButton", saveButtonModel )
+    dialogModel.insertByName( "CloseButton", closeButtonModel )
+    dialogModel.insertByName( "EditorTextField", textFieldModel )
+
+    # create the dialog control and set the model
+    controlContainer = smgr.createInstanceWithContext(
+        "com.sun.star.awt.UnoControlDialog", ctx);
+    controlContainer.setModel(dialogModel);
+
+    # create a peer
+    toolkit = smgr.createInstanceWithContext(
+        "com.sun.star.awt.ExtToolkit", ctx);
+
+    controlContainer.setVisible(False);
+    controlContainer.createPeer(toolkit, None);
+
+    return controlContainer
+
+
 #--------------------------------------------------
 def isScript( candidate ):
     ret = False
@@ -532,14 +631,9 @@ class ScriptBrowseNode( unohelper.Base, XBrowseNode , XPropertySet, XInvocation,
 
     def invoke( self, name, params, outparamindex, outparams ):
         if name == "Editable":
-            servicename = "com.sun.star.awt.DialogProvider"
             ctx = self.provCtx.scriptContext.getComponentContext()
-            dlgprov = ctx.ServiceManager.createInstanceWithContext(
-                servicename, ctx )
 
-            self.editor = dlgprov.createDialog(
-                "vnd.sun.star.script:" +
-                "ScriptBindingLibrary.MacroEditor?location=application")
+            self.editor = createEditorDialog( ctx )
 
             code = readTextFromStream(self.provCtx.sfa.openFileRead(self.uri()))
             code = ensureSourceState( code )
@@ -573,14 +667,12 @@ class ScriptBrowseNode( unohelper.Base, XBrowseNode , XPropertySet, XInvocation,
 
             elif event.ActionCommand == "Save":
                 toWrite = uno.ByteSequence(
-                    str(
                     self.editor.getControl("EditorTextField").getText().encode(
-                    sys.getdefaultencoding())) )
+                    sys.getdefaultencoding()))
                 copyUrl = self.uri() + ".orig"
                 self.provCtx.sfa.move( self.uri(), copyUrl )
-                out = self.provCtx.sfa.openFileWrite( self.uri() )
-                out.writeBytes( toWrite )
-                out.close()
+                log.debug( "Saving Python macro to URI " + self.uri() )
+                self.provCtx.sfa.writeFile( self.uri(), BytesInputStream( toWrite.value ) )
                 self.provCtx.sfa.kill( copyUrl )
 #                log.debug("Save is not implemented yet")
 #                text = self.editor.getControl("EditorTextField").getText()
@@ -604,7 +696,7 @@ class ScriptBrowseNode( unohelper.Base, XBrowseNode , XPropertySet, XInvocation,
 
 
 #-------------------------------------------------------
-class FileBrowseNode( unohelper.Base, XBrowseNode, XPropertySet, XInvocation ):
+class FileBrowseNode( unohelper.Base, XBrowseNode, XPropertySet, XInvocation, XActionListener ):
     def __init__( self, provCtx, parent, name ):
         self.provCtx = provCtx
         self.parent = parent
@@ -679,7 +771,20 @@ class FileBrowseNode( unohelper.Base, XBrowseNode, XPropertySet, XInvocation ):
         log.debug("FileBrowseNode.invoke called for " + name + "," + str(params) + "," + str(outparamindex) + "," + str(outparams))
         try:
             if name == "Editable":
-                log.error("Editable not implemented")
+                ctx = self.provCtx.scriptContext.getComponentContext()
+
+                self.editor = createEditorDialog( ctx )
+
+                code = readTextFromStream(self.provCtx.sfa.openFileRead(self.uri()))
+                code = ensureSourceState( code )
+                self.editor.getControl("EditorTextField").setText(code)
+
+                self.editor.getControl("RunButton").setActionCommand("Run")
+                self.editor.getControl("RunButton").addActionListener(self)
+                self.editor.getControl("SaveButton").setActionCommand("Save")
+                self.editor.getControl("SaveButton").addActionListener(self)
+
+                self.editor.execute()
             elif name == "Deletable":
                 self.provCtx.sfa.kill( self.uri() )
                 return True, (), ()
@@ -707,6 +812,41 @@ class FileBrowseNode( unohelper.Base, XBrowseNode, XPropertySet, XInvocation ):
 
     def hasProperty( self, name ):
         return False
+
+    # XActionListener
+
+    def actionPerformed( self, event ):
+        try:
+            if event.ActionCommand == "Run":
+                code = self.editor.getControl("EditorTextField").getText()
+                code = ensureSourceState( code )
+                mod = imp.new_module("ooo_script_framework")
+                mod.__dict__[GLOBAL_SCRIPTCONTEXT_NAME] = self.provCtx.scriptContext
+                exec(code, mod.__dict__)
+                values = mod.__dict__.get( CALLABLE_CONTAINER_NAME , None )
+                if not values:
+                    values = list(mod.__dict__.values())
+
+                for i in values:
+                    if isScript( i ):
+                        i()
+                        break
+
+            elif event.ActionCommand == "Save":
+                toWrite = uno.ByteSequence(
+                    self.editor.getControl("EditorTextField").getText().encode(
+                    sys.getdefaultencoding()))
+                copyUrl = self.uri() + ".orig"
+                self.provCtx.sfa.move( self.uri(), copyUrl )
+                log.debug( "Saving Python macro to URI " + self.uri() )
+                self.provCtx.sfa.writeFile( self.uri(), BytesInputStream( toWrite.value ) )
+                self.provCtx.sfa.kill( copyUrl )
+#                log.debug("Save is not implemented yet")
+#                text = self.editor.getControl("EditorTextField").getText()
+#                log.debug("Would save: " + text)
+        except Exception as e:
+            # TODO: add an error box here !
+            log.error( lastException2String() )
 
 
 class DirBrowseNode( unohelper.Base, XBrowseNode, XPropertySet, XInvocation ):
