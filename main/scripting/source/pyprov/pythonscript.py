@@ -583,7 +583,7 @@ def isScript( candidate ):
     return ret
 
 #-------------------------------------------------------
-class ScriptBrowseNode( unohelper.Base, XBrowseNode , XPropertySet, XInvocation, XActionListener ):
+class ScriptBrowseNode( unohelper.Base, XBrowseNode, XPropertySet, XInvocation, XActionListener ):
     def __init__( self, provCtx, parent, fileName, funcName ):
         self.parent = parent
         self.fileName = fileName
@@ -667,16 +667,12 @@ class ScriptBrowseNode( unohelper.Base, XBrowseNode , XPropertySet, XInvocation,
 
             elif event.ActionCommand == "Save":
                 toWrite = uno.ByteSequence(
-                    self.editor.getControl("EditorTextField").getText().encode(
-                    sys.getdefaultencoding()))
+                    self.editor.getControl("EditorTextField").getText().encode("utf-8"))
                 copyUrl = self.uri() + ".orig"
                 self.provCtx.sfa.move( self.uri(), copyUrl )
                 log.debug( "Saving Python macro to URI " + self.uri() )
                 self.provCtx.sfa.writeFile( self.uri(), BytesInputStream( toWrite.value ) )
                 self.provCtx.sfa.kill( copyUrl )
-#                log.debug("Save is not implemented yet")
-#                text = self.editor.getControl("EditorTextField").getText()
-#                log.debug("Would save: " + text)
         except Exception as e:
             # TODO: add an error box here !
             log.error( lastException2String() )
@@ -834,16 +830,12 @@ class FileBrowseNode( unohelper.Base, XBrowseNode, XPropertySet, XInvocation, XA
 
             elif event.ActionCommand == "Save":
                 toWrite = uno.ByteSequence(
-                    self.editor.getControl("EditorTextField").getText().encode(
-                    sys.getdefaultencoding()))
+                    self.editor.getControl("EditorTextField").getText().encode("utf-8"))
                 copyUrl = self.uri() + ".orig"
                 self.provCtx.sfa.move( self.uri(), copyUrl )
                 log.debug( "Saving Python macro to URI " + self.uri() )
                 self.provCtx.sfa.writeFile( self.uri(), BytesInputStream( toWrite.value ) )
                 self.provCtx.sfa.kill( copyUrl )
-#                log.debug("Save is not implemented yet")
-#                text = self.editor.getControl("EditorTextField").getText()
-#                log.debug("Would save: " + text)
         except Exception as e:
             # TODO: add an error box here !
             log.error( lastException2String() )
