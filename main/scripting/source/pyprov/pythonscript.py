@@ -998,7 +998,7 @@ def penultimateElement( aStr ):
 def lastElement( aStr):
     return aStr[ aStr.rfind( "/" )+1:len(aStr)]
 
-class PackageBrowseNode( unohelper.Base, XBrowseNode ):
+class PackageBrowseNode( unohelper.Base, XBrowseNode, XPropertySet, XInvocation ):
     def __init__( self, provCtx, name, rootUrl ):
         self.provCtx = provCtx
         self.name = name
@@ -1030,6 +1030,45 @@ class PackageBrowseNode( unohelper.Base, XBrowseNode ):
         log.debug( "DirBrowseNode getScript " + uri + " invoked" )
         raise IllegalArgumentException( "PackageBrowseNode couldn't instantiate script " + uri , self , 0 )
 
+    # XPropertySet
+
+    def getPropertyValue( self, name ):
+        ret = None
+        log.debug( "PackageBrowseNode.getPropertyValue called for " + name + ", returning " + str(ret) )
+        return ret
+
+    def setPropertyValue( self, name, value ):
+        log.debug( "PackageBrowseNode.setPropertyValue " + name + "=" +str( value ) )
+
+    def getPropertySetInfo( self ):
+        log.debug( "PackageBrowseNode.getPropertySetInfo called" )
+        return None
+
+    # XInvocation
+
+    def getIntrospection( self ):
+        log.debug( "PackageBrowseNode.getIntrospection() called" )
+        return None
+
+    def invoke( self, name, params, outparamindex, outparams ):
+        log.debug( "PackageBrowseNode.invoke called for " + name + "," + str( params ) + "," + str( outparamindex ) + "," + str( outparams ) )
+        return None, (), ()
+
+    def setValue( self, name, value ):
+        log.debug( "PackageBrowseNode.setValue" )
+        return None
+
+    def getValue( self, name ):
+        log.debug( "PackageBrowseNode.getValue" )
+        return None
+
+    def hasMethod( self, name ):
+        log.debug( "PackageBrowseNode.hasMethod" )
+        return False
+
+    def hasProperty( self, name ):
+        log.debug( "PackageBrowseNode.hasProperty" )
+        return False
 
 
 
