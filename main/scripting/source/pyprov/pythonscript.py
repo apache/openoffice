@@ -52,7 +52,6 @@ elif os.environ.get(PYSCRIPT_LOG_ENV) == "DEBUG":
 # False, writes to user/Scripts/python/log.txt
 LOG_STDOUT = os.environ.get(PYSCRIPT_LOG_STDOUT_ENV, "1") != "0"
 
-ENABLE_EDIT_DIALOG=True                    # offers a minimal editor for editing.
 #-------------------------------------------------------------------
 
 def encfile(uni):
@@ -611,7 +610,7 @@ class ScriptBrowseNode( unohelper.Base, XBrowseNode, XPropertySet, XInvocation, 
             if name == "URI":
                 ret = self.provCtx.uriHelper.getScriptURI(
                     self.provCtx.getPersistentUrlFromStorageUrl( self.uri() + "$" + self.funcName ) )
-            elif name == "Editable" and ENABLE_EDIT_DIALOG:
+            elif name == "Editable":
                 ret = not self.provCtx.sfa.isReadOnly( self.uri() )
 
             log.debug( "ScriptBrowseNode.getPropertyValue called for " + name + ", returning " + str(ret) )
