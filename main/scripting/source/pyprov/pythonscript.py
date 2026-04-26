@@ -175,7 +175,7 @@ def toIniName( str ):
 
 class EmptyInputStream( unohelper.Base, XInputStream ):
       def __init__( self ):
-          self.alive = 1
+          pass
 
       def closeInput(self):
           pass
@@ -184,7 +184,6 @@ class EmptyInputStream( unohelper.Base, XInputStream ):
           return 0, ""
 
       def readSomeBytes( self, seq, n ):
-          log.debug("readSomeBytes(" + str(seq) + "," + str(n) + ")")
           return 0, ""
 
       def skipBytes( self, n ):
@@ -629,10 +628,9 @@ class FileBrowseNode( unohelper.Base, XBrowseNode, XPropertySet, XInvocation ):
                     ScriptBrowseNode(
                     self.provCtx, self, self.name, i ))
             ret = tuple( scriptNodeList )
-            log.debug( "returning " +str(len(ret)) + " ScriptChildNodes on " + self.uri() )
         except Exception as e:
             text = lastException2String()
-            log.error( "Error while evaluating " + self.uri() + ":" + text )
+            log.error( "FileBrowseNode.getChildNodes error while evaluating " + self.uri() + ":" + text )
             raise
         return ret
 
@@ -657,7 +655,6 @@ class FileBrowseNode( unohelper.Base, XBrowseNode, XPropertySet, XInvocation ):
             elif name == "Renamable":
                 ret = not self.provCtx.sfa.isReadOnly( self.uri() )
 
-            log.debug("uri is " + self.uri())
             log.debug( "FileBrowseNode.getPropertyValue called for " + name + ", returning " + str(ret) )
         except Exception as e:
             log.error( "FileBrowseNode.getPropertyValue error " + lastException2String())
@@ -680,20 +677,20 @@ class FileBrowseNode( unohelper.Base, XBrowseNode, XPropertySet, XInvocation ):
 
     def invoke( self, name, params, outparamindex, outparams ):
         log.debug("FileBrowseNode.invoke called for " + name + "," + str(params) + "," + str(outparamindex) + "," + str(outparams))
-        if name == "Editable":
-            log.debug("Editable not implemented")
-        elif name == "Deletable":
-            self.provCtx.sfa.kill( self.uri() )
-            return True, (), ()
-        elif name == "Renamable":
-            try:
+        try:
+            if name == "Editable":
+                log.error("Editable not implemented")
+            elif name == "Deletable":
+                self.provCtx.sfa.kill( self.uri() )
+                return True, (), ()
+            elif name == "Renamable":
                 newUri = self.parent.rootUrl + "/" + params[0] + ".py"
                 self.provCtx.sfa.move( self.uri(), newUri )
                 self.name = params[0]
                 return self, (), ()
-            except Exception as e:
-                log.error( "FileBrowseNode invoke rename error " + lastException2String())
-                raise
+        except Exception as e:
+            log.error( "FileBrowseNode.invoke error " + lastException2String() )
+            raise
         return None, (), ()
 
     def setValue( self, name, value ):
@@ -766,7 +763,6 @@ class DirBrowseNode( unohelper.Base, XBrowseNode, XPropertySet, XInvocation ):
             elif name == "Renamable":
                 ret = self.depth > 0 and not self.provCtx.sfa.isReadOnly( self.rootUrl )
 
-            log.debug("rootUrl is " + self.rootUrl)
             log.debug( "DirBrowseNode.getPropertyValue called for " + name + ", returning " + str(ret) )
         except Exception as e:
             log.error( "DirBrowseNode.getPropertyValue error " + lastException2String())
@@ -789,36 +785,31 @@ class DirBrowseNode( unohelper.Base, XBrowseNode, XPropertySet, XInvocation ):
 
     def invoke( self, name, params, outparamindex, outparams ):
         log.debug("DirBrowseNode.invoke called for " + name + "," + str(params) + "," + str(outparamindex) + "," + str(outparams))
-        if name == "Creatable":
-            if self.depth == 0:
-                log.debug( "depth is 0" )
-                subFolderUrl = self.rootUrl + "/" + params[0]
-                self.provCtx.sfa.createFolder( subFolderUrl )
-                log.debug( "created folder!" )
-                childNode = DirBrowseNode( self.provCtx, subFolderUrl[subFolderUrl.rfind("/")+1:len(subFolderUrl)], subFolderUrl, self.depth + 1 )
-                log.debug( "created childNode" )
-                return childNode, (), ()
-            else:
-                log.debug( "depth is " + str(self.depth) )
-                scriptUrl = self.rootUrl + "/" + params[0] + ".py"
-                log.debug( "scriptUrl=" + scriptUrl )
-                try:
+        try:
+            if name == "Creatable":
+                if self.depth == 0:
+                    subFolderUrl = self.rootUrl + "/" + params[0]
+                    self.provCtx.sfa.createFolder( subFolderUrl )
+                    childNode = DirBrowseNode( self.provCtx, subFolderUrl[subFolderUrl.rfind("/")+1:len(subFolderUrl)], subFolderUrl, self.depth + 1 )
+                    return childNode, (), ()
+                else:
+                    scriptUrl = self.rootUrl + "/" + params[0] + ".py"
+                    # Creates an empty file
                     self.provCtx.sfa.writeFile( scriptUrl, EmptyInputStream() )
-                except Exception as e:
-                    log.error( "Creatable error: " + lastException2String())
-                    raise
-                childNode = FileBrowseNode( self.provCtx, self, params[0] )
-                log.debug( "returning" )
-                return childNode, (), ()
-        elif name == "Deletable":
-            self.provCtx.sfa.kill( self.rootUrl )
-            return True, (), ()
-        elif name == "Renamable":
-            newUrl = self.rootUrl[0:self.rootUrl.rfind("/")+1] + params[0]
-            self.provCtx.sfa.move( self.rootUrl, newUrl )
-            self.rootUrl = newUrl
-            self.name = params[0]
-            return self, (), ()
+                    childNode = FileBrowseNode( self.provCtx, self, params[0] )
+                    return childNode, (), ()
+            elif name == "Deletable":
+                self.provCtx.sfa.kill( self.rootUrl )
+                return True, (), ()
+            elif name == "Renamable":
+                newUrl = self.rootUrl[0:self.rootUrl.rfind("/")+1] + params[0]
+                self.provCtx.sfa.move( self.rootUrl, newUrl )
+                self.rootUrl = newUrl
+                self.name = params[0]
+                return self, (), ()
+        except Exception as e:
+            log.error( "DirBrowseNode.invoke error: " + lastException2String())
+            raise
         return None, (), ()
 
     def setValue( self, name, value ):
