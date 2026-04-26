@@ -684,6 +684,8 @@ class FileBrowseNode( unohelper.Base, XBrowseNode, XPropertySet, XInvocation ):
                 self.provCtx.sfa.kill( self.uri() )
                 return True, (), ()
             elif name == "Renamable":
+                if params is None or not params:
+                    raise IllegalArgumentException( "invoke with Creatable needs the name in params" )
                 newUri = self.parent.rootUrl + "/" + params[0] + ".py"
                 self.provCtx.sfa.move( self.uri(), newUri )
                 self.name = params[0]
@@ -787,6 +789,8 @@ class DirBrowseNode( unohelper.Base, XBrowseNode, XPropertySet, XInvocation ):
         log.debug("DirBrowseNode.invoke called for " + name + "," + str(params) + "," + str(outparamindex) + "," + str(outparams))
         try:
             if name == "Creatable":
+                if params is None or not params:
+                    raise IllegalArgumentException( "invoke with Creatable needs the name in params" )
                 if self.depth == 0:
                     subFolderUrl = self.rootUrl + "/" + params[0]
                     self.provCtx.sfa.createFolder( subFolderUrl )
@@ -802,6 +806,8 @@ class DirBrowseNode( unohelper.Base, XBrowseNode, XPropertySet, XInvocation ):
                 self.provCtx.sfa.kill( self.rootUrl )
                 return True, (), ()
             elif name == "Renamable":
+                if params is None or not params:
+                    raise IllegalArgumentException( "invoke with Renamable needs the name in params" )
                 newUrl = self.rootUrl[0:self.rootUrl.rfind("/")+1] + params[0]
                 self.provCtx.sfa.move( self.rootUrl, newUrl )
                 self.rootUrl = newUrl
