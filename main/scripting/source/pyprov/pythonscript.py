@@ -486,11 +486,14 @@ def isScript( candidate ):
 
 #-------------------------------------------------------
 class ScriptBrowseNode( unohelper.Base, XBrowseNode , XPropertySet, XInvocation, XActionListener ):
-    def __init__( self, provCtx, uri, fileName, funcName ):
+    def __init__( self, provCtx, parent, fileName, funcName ):
+        self.parent = parent
         self.fileName = fileName
         self.funcName = funcName
         self.provCtx = provCtx
-        self.uri = uri
+
+    def uri( self ):
+        return self.parent.uri()
 
     def getName( self ):
         return self.funcName
@@ -509,9 +512,9 @@ class ScriptBrowseNode( unohelper.Base, XBrowseNode , XPropertySet, XInvocation,
         try:
             if name == "URI":
                 ret = self.provCtx.uriHelper.getScriptURI(
-                    self.provCtx.getPersistentUrlFromStorageUrl( self.uri + "$" + self.funcName ) )
+                    self.provCtx.getPersistentUrlFromStorageUrl( self.uri() + "$" + self.funcName ) )
             elif name == "Editable" and ENABLE_EDIT_DIALOG:
-                ret = not self.provCtx.sfa.isReadOnly( self.uri )
+                ret = not self.provCtx.sfa.isReadOnly( self.uri() )
 
             log.debug( "ScriptBrowseNode.getPropertyValue called for " + name + ", returning " + str(ret) )
         except Exception as e:
@@ -539,7 +542,7 @@ class ScriptBrowseNode( unohelper.Base, XBrowseNode , XPropertySet, XInvocation,
                 "vnd.sun.star.script:" +
                 "ScriptBindingLibrary.MacroEditor?location=application")
 
-            code = readTextFromStream(self.provCtx.sfa.openFileRead(self.uri))
+            code = readTextFromStream(self.provCtx.sfa.openFileRead(self.uri()))
             code = ensureSourceState( code )
             self.editor.getControl("EditorTextField").setText(code)
 
@@ -574,9 +577,9 @@ class ScriptBrowseNode( unohelper.Base, XBrowseNode , XPropertySet, XInvocation,
                     str(
                     self.editor.getControl("EditorTextField").getText().encode(
                     sys.getdefaultencoding())) )
-                copyUrl = self.uri + ".orig"
-                self.provCtx.sfa.move( self.uri, copyUrl )
-                out = self.provCtx.sfa.openFileWrite( self.uri )
+                copyUrl = self.uri() + ".orig"
+                self.provCtx.sfa.move( self.uri(), copyUrl )
+                out = self.provCtx.sfa.openFileWrite( self.uri() )
                 out.writeBytes( toWrite )
                 out.close()
                 self.provCtx.sfa.kill( copyUrl )
@@ -603,11 +606,14 @@ class ScriptBrowseNode( unohelper.Base, XBrowseNode , XPropertySet, XInvocation,
 
 #-------------------------------------------------------
 class FileBrowseNode( unohelper.Base, XBrowseNode, XPropertySet, XInvocation ):
-    def __init__( self, provCtx, uri , name ):
+    def __init__( self, provCtx, parent, name ):
         self.provCtx = provCtx
-        self.uri = uri
+        self.parent = parent
         self.name = name
         self.funcnames = None
+
+    def uri( self ):
+        return self.parent.rootUrl + "/" + self.name + ".py"
 
     def getName( self ):
         return self.name
@@ -615,18 +621,18 @@ class FileBrowseNode( unohelper.Base, XBrowseNode, XPropertySet, XInvocation ):
     def getChildNodes(self):
         ret = ()
         try:
-            self.funcnames = self.provCtx.getFuncsByUrl( self.uri )
+            self.funcnames = self.provCtx.getFuncsByUrl( self.uri() )
 
             scriptNodeList = []
             for i in self.funcnames:
                 scriptNodeList.append(
                     ScriptBrowseNode(
-                    self.provCtx, self.uri, self.name, i ))
+                    self.provCtx, self, self.name, i ))
             ret = tuple( scriptNodeList )
-            log.debug( "returning " +str(len(ret)) + " ScriptChildNodes on " + self.uri )
+            log.debug( "returning " +str(len(ret)) + " ScriptChildNodes on " + self.uri() )
         except Exception as e:
             text = lastException2String()
-            log.error( "Error while evaluating " + self.uri + ":" + text )
+            log.error( "Error while evaluating " + self.uri() + ":" + text )
             raise
         return ret
 
@@ -645,13 +651,13 @@ class FileBrowseNode( unohelper.Base, XBrowseNode, XPropertySet, XInvocation ):
         ret = None
         try:
             if name == "Editable":
-                ret = not self.provCtx.sfa.isReadOnly( self.uri )
+                ret = not self.provCtx.sfa.isReadOnly( self.uri() )
             elif name == "Deletable":
-                ret = not self.provCtx.sfa.isReadOnly( self.uri )
+                ret = not self.provCtx.sfa.isReadOnly( self.uri() )
             elif name == "Renamable":
-                ret = not self.provCtx.sfa.isReadOnly( self.uri )
+                ret = not self.provCtx.sfa.isReadOnly( self.uri() )
 
-            log.debug("uri is " + self.uri)
+            log.debug("uri is " + self.uri())
             log.debug( "FileBrowseNode.getPropertyValue called for " + name + ", returning " + str(ret) )
         except Exception as e:
             log.error( "FileBrowseNode.getPropertyValue error " + lastException2String())
@@ -677,13 +683,12 @@ class FileBrowseNode( unohelper.Base, XBrowseNode, XPropertySet, XInvocation ):
         if name == "Editable":
             log.debug("Editable not implemented")
         elif name == "Deletable":
-            self.provCtx.sfa.kill( self.uri )
+            self.provCtx.sfa.kill( self.uri() )
             return True, (), ()
         elif name == "Renamable":
             try:
-                newUrl = self.uri[0:self.uri.rfind("/")+1] + params[0] + ".py"
-                self.provCtx.sfa.move( self.uri, newUrl )
-                self.uri = newUrl
+                newUri = self.parent.rootUrl + "/" + params[0] + ".py"
+                self.provCtx.sfa.move( self.uri(), newUri )
                 self.name = params[0]
                 return self, (), ()
             except Exception as e:
@@ -725,7 +730,7 @@ class DirBrowseNode( unohelper.Base, XBrowseNode, XPropertySet, XInvocation ):
                 if i.endswith( ".py" ):
                     log.debug( "adding filenode " + i )
                     browseNodeList.append(
-                        FileBrowseNode( self.provCtx, i, i[i.rfind("/")+1:len(i)-3] ) )
+                        FileBrowseNode( self.provCtx, self, i[i.rfind("/")+1:len(i)-3] ) )
                 elif self.provCtx.sfa.isFolder( i ) and not i.endswith("/pythonpath"):
                     log.debug( "adding DirBrowseNode " + i )
                     browseNodeList.append(
@@ -802,7 +807,7 @@ class DirBrowseNode( unohelper.Base, XBrowseNode, XPropertySet, XInvocation ):
                 except Exception as e:
                     log.error( "Creatable error: " + lastException2String())
                     raise
-                childNode = FileBrowseNode( self.provCtx, scriptUrl, params[0] )
+                childNode = FileBrowseNode( self.provCtx, self, params[0] )
                 log.debug( "returning" )
                 return childNode, (), ()
         elif name == "Deletable":
