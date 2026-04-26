@@ -1,0 +1,155 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+    "snwprintf=_snwprintf",
+    "SUPD=680",
+]
+
+# ── Public msfilter headers ───────────────────────────────────────────────────
+cc_library(
+    name = "filter_msfilter_headers",
+    hdrs = glob(["inc/filter/msfilter/*.hxx", "inc/filter/msfilter/*.h"]),
+    strip_include_prefix = "inc",
+    visibility = ["//visibility:public"],
+)
+
+# ── Stub for the local-debug impinccv.h that is absent from the source tree ───
+genrule(
+    name = "impinccv_stub_gen",
+    outs = ["impinccv.h"],
+    cmd_bat = "echo /* local debug stub - not present in source tree */ > \"$@\"",
+)
+
+cc_library(
+    name = "impinccv_hdr",
+    hdrs = [":impinccv_stub_gen"],
+    includes = ["."],
+)
+
+_MSFILTER_COPTS = [
+    "/Imain/filter/source/msfilter",
+    "/Imain/filter/inc",
+    "/Imain/filter/inc/pch",
+    "/Zc:wchar_t-",
+]
+
+# ── msfilter.dll ──────────────────────────────────────────────────────────────
+# Contains the MSO binary format codec (EscherEx, BIFF, VBA, DFF).
+# Built before oox because oox/source/export/{shapes,drawingml,vmlexport}.cxx
+# link against EscherPropertyContainer from this DLL.
+cc_binary(
+    name = "msfilter",
+    srcs = [
+        "source/msfilter/countryid.cxx",
+        "source/msfilter/dffpropset.cxx",
+        "source/msfilter/dffrecordheader.cxx",
+        "source/msfilter/escherex.cxx",
+        "source/msfilter/eschesdo.cxx",
+        "source/msfilter/mscodec.cxx",
+        "source/msfilter/msdffimp.cxx",
+        "source/msfilter/msfiltertracer.cxx",
+        "source/msfilter/msocximex.cxx",
+        "source/msfilter/msoleexp.cxx",
+        "source/msfilter/msvbahelper.cxx",
+        "source/msfilter/msvbasic.cxx",
+        "source/msfilter/services.cxx",
+        "source/msfilter/svdfppt.cxx",
+        "source/msfilter/svxmsbas.cxx",
+        "source/msfilter/svxmsbas2.cxx",
+        # private headers
+        "source/msfilter/eschesdo.hxx",
+        "source/msfilter/msvbasic.hxx",
+        "source/msfilter/viscache.hxx",
+    ],
+    copts = _MSFILTER_COPTS,
+    defines = _DEFINES + ["MSFILTER_DLLIMPLEMENTATION"],
+    linkshared = True,
+    deps = [
+        ":filter_msfilter_headers",
+        ":impinccv_hdr",
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/svx:svx_headers",
+        "//main/editeng:editeng_headers",
+        "//main/sfx2:sfx2_headers",
+        "//main/svtools:svtools_headers",
+        "//main/tools:tools_headers",
+        "//main/basic:basic_headers",
+        "//main/vos:vos_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/basegfx:basegfx_headers",
+        "//main/toolkit:toolkit_headers",
+        "//main/vcl:vcl_headers",
+        "//main/svl:svl_headers",
+        "//main/sot:sot_headers",
+        "//main/unotools:unotools_headers",
+        "//main/sax:sax_headers",
+        "//main/xmloff:xmloff_headers",
+        "//main/xmlscript:xmlscript_headers",
+        "//main/stlport:stlport",
+        "@boost.legacy//:boost.legacy",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/basegfx:basegfx_implib",
+        "//main/tools:tl_implib",
+        "//main/vcl:vcl_implib",
+        "//main/svl:svl_implib",
+        "//main/svtools:svt_implib",
+        "//main/editeng:editeng_implib",
+        "//main/sfx2:sfx_implib",
+        "//main/sot:sot_implib",
+        "//main/unotools:utl_implib",
+        "//main/vos:vos3_implib",
+        "//main/sax:sax_implib",
+        "//main/xmloff:xo_implib",
+        "//main/svx:svxcore_implib",
+        "//main/toolkit:ootk_implib",
+        "//main/basic:sb_implib",
+        "//main/xmlscript:xcr_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/basegfx:basegfx_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+        "$(execpath //main/editeng:editeng_implib)",
+        "$(execpath //main/sfx2:sfx_implib)",
+        "$(execpath //main/sot:sot_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/vos:vos3_implib)",
+        "$(execpath //main/sax:sax_implib)",
+        "$(execpath //main/xmloff:xo_implib)",
+        "$(execpath //main/svx:svxcore_implib)",
+        "$(execpath //main/toolkit:ootk_implib)",
+        "$(execpath //main/basic:sb_implib)",
+        "$(execpath //main/xmlscript:xcr_implib)",
+        "ole32.lib", "oleaut32.lib", "user32.lib", "gdi32.lib",
+        "ws2_32.lib", "advapi32.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "msfilter_implib",
+    srcs = [":msfilter"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)

@@ -151,7 +151,8 @@ avmedia       ✅  (avmedia.dll, avmediawin.dll) — main/avmedia/readme.md
 drawinglayer  ✅  (vcl, svtools, basegfx, avmedia, canvas, cppcanvas)
 ── Layer 12 ─────────────────────────────────────────────────────────────
 svx           ✅  (svxcore.dll, svx.dll, textconversiondlgs.dll) — main/svx/readme.md
-oox           ⬜  (basegfx, xmlscript, tools, vcl, sax + boost, openssl ext, svx)
+msfilter      ✅  (msfilter.dll — prereq for oox export) — main/filter/BUILD.bazel
+oox           ✅  (oox.dll) — main/oox/readme.md
 ── Layer 13 ─────────────────────────────────────────────────────────────
 writerfilter  ⬜  (tools, svx, oox, cppu, cppuhelper, ucbhelper, sal)
 filter        ⬜  (svtools, unotools, xmloff, svx, canvas, javaunohelper,

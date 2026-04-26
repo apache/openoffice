@@ -1,0 +1,10 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+cc_library(
+    name = "ssl",
+    srcs = ["crypto_shim.c"],
+    hdrs = glob(["include/openssl/*.h"]),
+    includes = ["include"],
+    linkopts = ["bcrypt.lib"],
+    visibility = ["//visibility:public"],
+)

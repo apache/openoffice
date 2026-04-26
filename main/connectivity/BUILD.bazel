@@ -24,6 +24,10 @@ cc_library(
         "inc/connectivity/**/*.hxx",
         "inc/pch/*.hxx",
     ]),
+    # sqlparse.hxx includes sqlbison.hxx without a path; expose the
+    # pre-generated parser header so external consumers can find it.
+    textual_hdrs = ["source/parse/sqlbison.hxx"],
+    includes = ["source/parse"],
     strip_include_prefix = "inc",
     deps = [
         "//main/sal:sal_headers",
@@ -65,8 +69,8 @@ cc_binary(
         "source/commontools/*.cxx",
         "source/sdbcx/*.cxx",
         "source/simpledbt/*.cxx",
-        "source/resource/sharedresources.cxx",
     ]) + [
+        "source/resource/sharedresources.cxx",
         "source/parse/PColumn.cxx",
         "source/parse/internalnode.cxx",
         "source/parse/sqliterator.cxx",

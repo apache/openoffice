@@ -1,0 +1,248 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+    "snwprintf=_snwprintf",
+    "SUPD=680",
+]
+
+_COPTS = [
+    "/Imain/oox/inc",
+    # private source-dir headers included with bare filenames
+    "/Imain/oox/source/docprop",
+    "/Imain/oox/source/drawingml",
+    "/Imain/oox/source/drawingml/diagram",
+    "/Imain/oox/source/ppt",
+    "/Imain/oox/source/shape",
+    "/Zc:wchar_t-",
+]
+
+# ── Token header generation ──────────────────────────────────────────────────
+# Perl scripts generate C++ headers from .txt tables.
+# Outputs go to oox/token/{tokens,namespaces,properties}.hxx so they are
+# includeable as "oox/token/tokens.hxx" with includes = ["."].
+
+genrule(
+    name = "gen_tokens_hxx",
+    srcs = [
+        "source/token/tokens.hxx.head",
+        "source/token/tokens.hxx.tail",
+        "source/token/tokens.txt",
+        "source/token/tokens.pl",
+    ],
+    outs = ["oox/token/tokens.hxx"],
+    cmd_bat = "type \"$(location source/token/tokens.hxx.head)\" > \"$@\" && perl \"$(location source/token/tokens.pl)\" 1 \"$(location source/token/tokens.txt)\" >> \"$@\" && type \"$(location source/token/tokens.hxx.tail)\" >> \"$@\"",
+)
+
+genrule(
+    name = "gen_namespaces_hxx",
+    srcs = [
+        "source/token/namespaces.hxx.head",
+        "source/token/namespaces.hxx.tail",
+        "source/token/namespaces.txt",
+        "source/token/namespaces.pl",
+    ],
+    outs = ["oox/token/namespaces.hxx"],
+    cmd_bat = "type \"$(location source/token/namespaces.hxx.head)\" > \"$@\" && perl \"$(location source/token/namespaces.pl)\" 1 \"$(location source/token/namespaces.txt)\" >> \"$@\" && type \"$(location source/token/namespaces.hxx.tail)\" >> \"$@\"",
+)
+
+genrule(
+    name = "gen_properties_hxx",
+    srcs = [
+        "source/token/properties.hxx.head",
+        "source/token/properties.hxx.tail",
+        "source/token/properties.txt",
+        "source/token/properties.pl",
+    ],
+    outs = ["oox/token/properties.hxx"],
+    cmd_bat = "type \"$(location source/token/properties.hxx.head)\" > \"$@\" && perl \"$(location source/token/properties.pl)\" 1 \"$(location source/token/properties.txt)\" >> \"$@\" && type \"$(location source/token/properties.hxx.tail)\" >> \"$@\"",
+)
+
+# ── Generated .inc files (textually #included by token/*.cxx) ────────────────
+# Outputs go to bazel-bin/main/oox/token/ so that
+# #include <token/xxx.inc> resolves via the includes=["."] path below.
+
+genrule(
+    name = "gen_propertynames_inc",
+    srcs = ["source/token/properties.txt", "source/token/properties.pl"],
+    outs = ["token/propertynames.inc"],
+    cmd_bat = "perl $(location source/token/properties.pl) 2 $(location source/token/properties.txt) > \"$@\"",
+)
+
+genrule(
+    name = "gen_tokennames_inc",
+    srcs = ["source/token/tokens.txt", "source/token/tokens.pl"],
+    outs = ["token/tokennames.inc"],
+    cmd_bat = "perl $(location source/token/tokens.pl) 2 $(location source/token/tokens.txt) > \"$@\"",
+)
+
+genrule(
+    name = "gen_namespacenames_inc",
+    srcs = ["source/token/namespaces.txt", "source/token/namespaces.pl"],
+    outs = ["token/namespacenames.inc"],
+    cmd_bat = "perl $(location source/token/namespaces.pl) 2 $(location source/token/namespaces.txt) > \"$@\"",
+)
+
+genrule(
+    name = "gen_tokenhash_inc",
+    srcs = ["source/token/tokens.txt", "source/token/tokens.pl"],
+    outs = ["token/tokenhash.inc"],
+    tools = ["@gperf//:gperf"],
+    cmd_bat = "perl $(location source/token/tokens.pl) 3 $(location source/token/tokens.txt) > \"$(@D)\\tokenhash.gperf\" && $(location @gperf//:gperf) \"$(@D)\\tokenhash.gperf\" > \"$@\"",
+)
+
+# ── Generated token headers ──────────────────────────────────────────────────
+# includes = ["."] adds bazel-bin/main/oox/ to search path so that
+# #include "oox/token/tokens.hxx" resolves to the genrule output, and
+# #include <token/xxx.inc> resolves to the generated .inc files.
+cc_library(
+    name = "oox_token_headers",
+    hdrs = [
+        ":gen_tokens_hxx",
+        ":gen_namespaces_hxx",
+        ":gen_properties_hxx",
+        ":gen_propertynames_inc",
+        ":gen_tokennames_inc",
+        ":gen_namespacenames_inc",
+        ":gen_tokenhash_inc",
+    ],
+    includes = ["."],
+    visibility = ["//visibility:public"],
+)
+
+# ── Legacy <svx/...> shim headers ────────────────────────────────────────────
+# The oox source uses old include paths where several headers lived under the
+# svx/ namespace in the OUTDIR.  Two are not in main/svx/inc/svx/:
+#   <svx/svxenum.hxx>  → editeng/inc/editeng/svxenum.hxx
+#   <svx/escherex.hxx> → filter/inc/filter/msfilter/escherex.hxx
+# Forward headers placed in bazel-bin/main/oox/svx/ make them resolvable via
+# includes = ["."] below.
+
+genrule(
+    name = "svxenum_shim_hdr",
+    outs = ["svx/svxenum.hxx"],
+    cmd_bat = "echo #include ^<editeng/svxenum.hxx^> > \"$@\"",
+)
+
+genrule(
+    name = "escherex_shim_hdr",
+    outs = ["svx/escherex.hxx"],
+    cmd_bat = "echo #include ^<filter/msfilter/escherex.hxx^> > \"$@\"",
+)
+
+cc_library(
+    name = "oox_svx_shims",
+    hdrs = [":svxenum_shim_hdr", ":escherex_shim_hdr"],
+    includes = ["."],
+    deps = [
+        "//main/editeng:editeng_headers",
+        "//main/filter:filter_msfilter_headers",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── Public headers ───────────────────────────────────────────────────────────
+cc_library(
+    name = "oox_headers",
+    hdrs = glob(["inc/oox/**"], exclude = ["inc/oox/token/**"]),
+    strip_include_prefix = "inc",
+    deps = [
+        ":oox_token_headers",
+        ":oox_svx_shims",
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/tools:tools_headers",
+        "//main/basegfx:basegfx_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/sax:sax_headers",
+        "//main/xmlscript:xmlscript_headers",
+        "//main/vcl:vcl_headers",
+        "//main/unotools:unotools_headers",
+        "//main/vos:vos_headers",
+        "//main/svx:svx_headers",
+        "//main/stlport:stlport",
+        "@boost.legacy//:boost.legacy",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── oox.dll ──────────────────────────────────────────────────────────────────
+# OOXML filter library: Excel/PowerPoint/Word import-export, VML, DrawingML.
+# All public API exported via OOX_DLLPUBLIC/__declspec(dllexport); no DEF file.
+cc_binary(
+    name = "oox",
+    srcs = glob([
+        "source/core/*.cxx",
+        "source/docprop/*.cxx",
+        "source/docprop/*.hxx",
+        "source/drawingml/*.cxx",
+        "source/drawingml/*.hxx",
+        "source/drawingml/chart/*.cxx",
+        "source/drawingml/diagram/*.cxx",
+        "source/drawingml/diagram/*.hxx",
+        "source/drawingml/table/*.cxx",
+        "source/dump/*.cxx",
+        "source/helper/*.cxx",
+        "source/ole/*.cxx",
+        "source/ppt/*.cxx",
+        "source/ppt/*.hxx",
+        "source/shape/*.cxx",
+        "source/shape/*.hxx",
+        "source/token/*.cxx",
+        "source/vml/*.cxx",
+        "source/xls/*.cxx",
+    ]),
+    copts = _COPTS,
+    defines = _DEFINES + ["OOX_DLLIMPLEMENTATION"],
+    linkshared = True,
+    deps = [
+        ":oox_headers",
+        "//main/stlport:stlport",
+        "@boost.legacy//:boost.legacy",
+        "//main/openssl_shim:ssl",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/basegfx:basegfx_implib",
+        "//main/sax:sax_implib",
+        "//main/xmlscript:xcr_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/vos:vos3_implib",
+        "//main/vcl:vcl_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/basegfx:basegfx_implib)",
+        "$(execpath //main/sax:sax_implib)",
+        "$(execpath //main/xmlscript:xcr_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/vos:vos3_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "ole32.lib", "oleaut32.lib", "user32.lib", "gdi32.lib",
+        "ws2_32.lib", "crypt32.lib", "advapi32.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "oox_implib",
+    srcs = [":oox"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)

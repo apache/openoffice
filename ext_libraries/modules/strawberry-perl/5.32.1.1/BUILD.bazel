@@ -1,9 +1,0 @@
-# Windows only - used as a tool to build OpenSSL
-filegroup(
-    name = "perl",
-    srcs = select({
-        "@platforms//os:windows": glob(["perl/bin/**"]),
-        "//conditions:default": [],
-    }),
-    visibility = ["//visibility:public"],
-)
