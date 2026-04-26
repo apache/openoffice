@@ -154,7 +154,7 @@ svx           ✅  (svxcore.dll, svx.dll, textconversiondlgs.dll) — main/svx/r
 msfilter      ✅  (msfilter.dll — prereq for oox export) — main/filter/BUILD.bazel
 oox           ✅  (oox.dll) — main/oox/readme.md
 ── Layer 13 ─────────────────────────────────────────────────────────────
-writerfilter  ⬜  (tools, svx, oox, cppu, cppuhelper, ucbhelper, sal)
+writerfilter  ✅  (writerfilter.dll, writerfilter_debug.dll) — main/writerfilter/readme.md
 filter        ⬜  (svtools, unotools, xmloff, svx, canvas, javaunohelper,
                    jvmaccess, basegfx, tools)
 vbahelper     ⬜  (oovbaapi, basic, sfx2, svx, filter, vcl, svtools, tools, unotools)

@@ -246,3 +246,33 @@ filegroup(
     output_group = "interface_library",
     visibility = ["//visibility:public"],
 )
+
+filegroup(
+    name = "oox_tokens_txt",
+    srcs = ["source/token/tokens.txt"],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "oox_namespaces_txt",
+    srcs = ["source/token/namespaces.txt"],
+    visibility = ["//visibility:public"],
+)
+
+# namespace_preprocess.pl (writerfilter) needs numeric-id name url format,
+# produced by namespaces.pl mode 3.
+genrule(
+    name = "gen_namespaces_indexed",
+    srcs = [
+        "source/token/namespaces.txt",
+        "source/token/namespaces.pl",
+    ],
+    outs = ["namespaces_indexed.txt"],
+    cmd_bat = "perl \"$(location source/token/namespaces.pl)\" 3 \"$(location source/token/namespaces.txt)\" > \"$@\"",
+)
+
+filegroup(
+    name = "oox_namespaces_indexed_txt",
+    srcs = [":gen_namespaces_indexed"],
+    visibility = ["//visibility:public"],
+)

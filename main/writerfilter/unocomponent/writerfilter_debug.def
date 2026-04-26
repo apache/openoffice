@@ -1,0 +1,6 @@
+; Windows export file for writerfilter_debug.dll
+; UNO component entry points
+LIBRARY writerfilter_debug
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory
