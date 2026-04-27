@@ -1,0 +1,5 @@
+; Windows export file for evtatt.dll
+LIBRARY evtatt
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

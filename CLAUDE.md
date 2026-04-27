@@ -164,7 +164,7 @@ vbahelper     ✅  (vbahelper.dll, msforms.dll) — main/vbahelper/readme.md
 ucb           ✅  (ucb1, cached1, srtrs1, ucpexpand1, ucpext, ucpfile1, ucphier1,
                    ucppkg1, ucptdoc1, ucpftp1, ucpdav1) — main/ucb/readme.md
 unoxml        ✅  (unoxml.dll — DOM/XPath/Events; unordf deferred: redland not yet on Windows) — main/unoxml/readme.md
-eventattacher ⬜  (cppu, cppuhelper, comphelper)
+eventattacher ✅  (evtatt.dll) — main/eventattacher/readme.md
 UnoControls   ⬜  (toolkit, vcl, cppu)
 dtrans        ⬜  (vcl, tools, comphelper — clipboard/data transfer, Windows)
 svgio         ⬜  (vcl, basegfx, filter — SVG I/O)
