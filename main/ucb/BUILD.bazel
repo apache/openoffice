@@ -1,0 +1,456 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+    "snwprintf=_snwprintf",
+]
+
+_COPTS = [
+    "/Imain/ucb/source/inc",
+    "/Imain/ucb/inc/pch",
+    "/Zc:wchar_t-",
+]
+
+_COMMON_DEPS = [
+    "//main/sal:sal_headers",
+    "//main/cppu:cppu_headers",
+    "//main/cppuhelper:cppuhelper_headers",
+    "//main/ucbhelper:ucbhelper_headers",
+    "//main/udkapi:udkapi_idl_headers",
+    "//main/offapi:offapi_idl_headers",
+    "//main/stlport:stlport",
+]
+
+_COMMON_LINKINPUTS = [
+    "//main/sal:sal_implib",
+    "//main/cppu:cppu3_implib",
+    "//main/cppuhelper:cppuhelper_implib",
+    "//main/ucbhelper:ucbhelper_implib",
+]
+
+_COMMON_LINKOPTS = [
+    "$(execpath //main/sal:sal_implib)",
+    "$(execpath //main/cppu:cppu3_implib)",
+    "$(execpath //main/cppuhelper:cppuhelper_implib)",
+    "$(execpath //main/ucbhelper:ucbhelper_implib)",
+    "/MANIFEST:NO",
+]
+
+# regexpmap.tpt is a C++ template file #included by regexpmap.hxx —
+# wrap it in textual_hdrs so Bazel tracks it without extension-checking.
+cc_library(
+    name = "_ucb_internal_inc",
+    textual_hdrs = [
+        "source/inc/regexp.hxx",
+        "source/inc/regexpmap.hxx",
+        "source/inc/regexpmap.tpt",
+        "source/core/providermap.hxx",
+    ],
+    copts = _COPTS,
+    deps = _COMMON_DEPS,
+)
+
+# ── ucb1.dll — Universal Content Broker core ──────────────────────
+cc_binary(
+    name = "ucb1",
+    srcs = [
+        "source/regexp/regexp.cxx",
+        "source/core/cmdenv.cxx",
+        "source/core/identify.cxx",
+        "source/core/provprox.cxx",
+        "source/core/ucb.cxx",
+        "source/core/ucbcmds.cxx",
+        "source/core/ucbprops.cxx",
+        "source/core/ucbserv.cxx",
+        "source/core/ucbstore.cxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/ucb1.def",
+    deps = _COMMON_DEPS + [":_ucb_internal_inc"],
+    additional_linker_inputs = _COMMON_LINKINPUTS,
+    linkopts = _COMMON_LINKOPTS,
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "ucb1_implib",
+    srcs = [":ucb1"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── cached1.dll — content result-set caching layer ───────────────
+cc_binary(
+    name = "cached1",
+    srcs = [
+        "source/cacher/cacheserv.cxx",
+        "source/cacher/cacheddynamicresultset.cxx",
+        "source/cacher/cacheddynamicresultsetstub.cxx",
+        "source/cacher/cachedcontentresultset.cxx",
+        "source/cacher/cachedcontentresultsetstub.cxx",
+        "source/cacher/contentresultsetwrapper.cxx",
+        "source/cacher/dynamicresultsetwrapper.cxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/cached1.def",
+    deps = _COMMON_DEPS,
+    additional_linker_inputs = _COMMON_LINKINPUTS,
+    linkopts = _COMMON_LINKOPTS,
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "cached1_implib",
+    srcs = [":cached1"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── srtrs1.dll — content result-set sorter ────────────────────────
+cc_binary(
+    name = "srtrs1",
+    srcs = [
+        "source/sorter/sortdynres.cxx",
+        "source/sorter/sortmain.cxx",
+        "source/sorter/sortresult.cxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/srtrs1.def",
+    deps = _COMMON_DEPS,
+    additional_linker_inputs = _COMMON_LINKINPUTS,
+    linkopts = _COMMON_LINKOPTS,
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "srtrs1_implib",
+    srcs = [":srtrs1"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── ucpexpand1.dll — macro-expand UCP ────────────────────────────
+cc_binary(
+    name = "ucpexpand1",
+    srcs = [
+        "source/ucp/expand/ucpexpand.cxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/ucpexpand1.def",
+    deps = _COMMON_DEPS,
+    additional_linker_inputs = _COMMON_LINKINPUTS,
+    linkopts = _COMMON_LINKOPTS,
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "ucpexpand1_implib",
+    srcs = [":ucpexpand1"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── ucpext.dll — extension UCP ───────────────────────────────────
+cc_binary(
+    name = "ucpext",
+    srcs = glob(["source/ucp/ext/*.cxx"]),
+    copts = _COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/ucpext.def",
+    deps = _COMMON_DEPS + [
+        "//main/comphelper:comphelper_headers",
+        "//main/salhelper:salhelper_headers",
+        "//main/tools:tools_headers",
+        "@boost.legacy//:boost.legacy",
+    ],
+    additional_linker_inputs = _COMMON_LINKINPUTS + [
+        "//main/comphelper:comphelp_implib",
+        "//main/salhelper:salhelper_implib",
+        "//main/tools:tl_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/ucbhelper:ucbhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/salhelper:salhelper_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "ucpext_implib",
+    srcs = [":ucpext"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── ucpfile1.dll — file-system UCP ───────────────────────────────
+cc_binary(
+    name = "ucpfile1",
+    srcs = [
+        "source/ucp/file/bc.cxx",
+        "source/ucp/file/filcmd.cxx",
+        "source/ucp/file/filglob.cxx",
+        "source/ucp/file/filid.cxx",
+        "source/ucp/file/filinpstr.cxx",
+        "source/ucp/file/filinsreq.cxx",
+        "source/ucp/file/filnot.cxx",
+        "source/ucp/file/filprp.cxx",
+        "source/ucp/file/filrec.cxx",
+        "source/ucp/file/filrow.cxx",
+        "source/ucp/file/filrset.cxx",
+        "source/ucp/file/filstr.cxx",
+        "source/ucp/file/filtask.cxx",
+        "source/ucp/file/prov.cxx",
+        "source/ucp/file/shell.cxx",
+    ],
+    copts = _COPTS + ["/Imain/ucb/source/ucp/file"],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/ucpfile1.def",
+    deps = _COMMON_DEPS,
+    additional_linker_inputs = _COMMON_LINKINPUTS,
+    linkopts = _COMMON_LINKOPTS,
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "ucpfile1_implib",
+    srcs = [":ucpfile1"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── ucphier1.dll — hierarchy UCP ─────────────────────────────────
+cc_binary(
+    name = "ucphier1",
+    srcs = [
+        "source/ucp/hierarchy/dynamicresultset.cxx",
+        "source/ucp/hierarchy/hierarchycontent.cxx",
+        "source/ucp/hierarchy/hierarchycontentcaps.cxx",
+        "source/ucp/hierarchy/hierarchydata.cxx",
+        "source/ucp/hierarchy/hierarchydatasource.cxx",
+        "source/ucp/hierarchy/hierarchydatasupplier.cxx",
+        "source/ucp/hierarchy/hierarchyprovider.cxx",
+        "source/ucp/hierarchy/hierarchyservices.cxx",
+        "source/ucp/hierarchy/hierarchyuri.cxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/ucphier1.def",
+    deps = _COMMON_DEPS + [
+        "//main/salhelper:salhelper_headers",
+    ],
+    additional_linker_inputs = _COMMON_LINKINPUTS + [
+        "//main/salhelper:salhelper_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/ucbhelper:ucbhelper_implib)",
+        "$(execpath //main/salhelper:salhelper_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "ucphier1_implib",
+    srcs = [":ucphier1"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── ucppkg1.dll — package-archive UCP ────────────────────────────
+cc_binary(
+    name = "ucppkg1",
+    srcs = [
+        "source/ucp/package/pkgcontent.cxx",
+        "source/ucp/package/pkgcontentcaps.cxx",
+        "source/ucp/package/pkgdatasupplier.cxx",
+        "source/ucp/package/pkgprovider.cxx",
+        "source/ucp/package/pkgresultset.cxx",
+        "source/ucp/package/pkgservices.cxx",
+        "source/ucp/package/pkguri.cxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/ucppkg1.def",
+    deps = _COMMON_DEPS + [
+        "//main/comphelper:comphelper_headers",
+        "//main/salhelper:salhelper_headers",
+    ],
+    additional_linker_inputs = _COMMON_LINKINPUTS + [
+        "//main/comphelper:comphelp_implib",
+        "//main/salhelper:salhelper_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/ucbhelper:ucbhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/salhelper:salhelper_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "ucppkg1_implib",
+    srcs = [":ucppkg1"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── ucptdoc1.dll — transient-document UCP ────────────────────────
+cc_binary(
+    name = "ucptdoc1",
+    srcs = [
+        "source/ucp/tdoc/tdoc_content.cxx",
+        "source/ucp/tdoc/tdoc_contentcaps.cxx",
+        "source/ucp/tdoc/tdoc_datasupplier.cxx",
+        "source/ucp/tdoc/tdoc_docmgr.cxx",
+        "source/ucp/tdoc/tdoc_documentcontentfactory.cxx",
+        "source/ucp/tdoc/tdoc_passwordrequest.cxx",
+        "source/ucp/tdoc/tdoc_provider.cxx",
+        "source/ucp/tdoc/tdoc_resultset.cxx",
+        "source/ucp/tdoc/tdoc_services.cxx",
+        "source/ucp/tdoc/tdoc_stgelems.cxx",
+        "source/ucp/tdoc/tdoc_storage.cxx",
+        "source/ucp/tdoc/tdoc_uri.cxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/ucptdoc1.def",
+    deps = _COMMON_DEPS + [
+        "//main/comphelper:comphelper_headers",
+        "//main/salhelper:salhelper_headers",
+    ],
+    additional_linker_inputs = _COMMON_LINKINPUTS + [
+        "//main/comphelper:comphelp_implib",
+        "//main/salhelper:salhelper_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/ucbhelper:ucbhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/salhelper:salhelper_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "ucptdoc1_implib",
+    srcs = [":ucptdoc1"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── ucpftp1.dll — FTP UCP (requires curl) ────────────────────────
+cc_binary(
+    name = "ucpftp1",
+    srcs = [
+        "source/ucp/ftp/ftpcfunc.cxx",
+        "source/ucp/ftp/ftpcontent.cxx",
+        "source/ucp/ftp/ftpcontentcaps.cxx",
+        "source/ucp/ftp/ftpcontentidentifier.cxx",
+        "source/ucp/ftp/ftpcontentprovider.cxx",
+        "source/ucp/ftp/ftpdirp.cxx",
+        "source/ucp/ftp/ftpdynresultset.cxx",
+        "source/ucp/ftp/ftpinpstr.cxx",
+        "source/ucp/ftp/ftpintreq.cxx",
+        "source/ucp/ftp/ftploaderthread.cxx",
+        "source/ucp/ftp/ftpresultsetbase.cxx",
+        "source/ucp/ftp/ftpresultsetI.cxx",
+        "source/ucp/ftp/ftpservices.cxx",
+        "source/ucp/ftp/ftpurl.cxx",
+    ],
+    copts = _COPTS + ["/Imain/ucb/source/ucp/ftp"],
+    defines = _DEFINES + ["CURL_STATICLIB"],
+    linkshared = True,
+    win_def_file = "util/ucpftp1.def",
+    deps = _COMMON_DEPS + [
+        "@curl//:curl",
+    ],
+    additional_linker_inputs = _COMMON_LINKINPUTS,
+    linkopts = _COMMON_LINKOPTS + [
+        "ws2_32.lib",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "ucpftp1_implib",
+    srcs = [":ucpftp1"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── ucpdav1.dll — WebDAV UCP (requires curl + openssl) ───────────
+cc_binary(
+    name = "ucpdav1",
+    srcs = glob(["source/ucp/webdav/*.cxx"]),
+    copts = _COPTS + [
+        "/Imain/ucb/source/ucp/webdav",
+        "/Imain/ucb/source/ucp/inc",
+    ],
+    defines = _DEFINES + ["CURL_STATICLIB"],
+    linkshared = True,
+    win_def_file = "util/ucpdav1.def",
+    deps = _COMMON_DEPS + [
+        "//main/comphelper:comphelper_headers",
+        "//main/salhelper:salhelper_headers",
+        "//main/tools:tools_headers",
+        "@curl//:curl",
+        "@openssl//:ssl",
+    ],
+    additional_linker_inputs = _COMMON_LINKINPUTS + [
+        "//main/comphelper:comphelp_implib",
+        "//main/salhelper:salhelper_implib",
+        "//main/tools:tl_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/ucbhelper:ucbhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/salhelper:salhelper_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "ws2_32.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "ucpdav1_implib",
+    srcs = [":ucpdav1"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)

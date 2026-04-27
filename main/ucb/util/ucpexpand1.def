@@ -1,0 +1,5 @@
+; Windows export file for ucpexpand1.dll
+LIBRARY ucpexpand1
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

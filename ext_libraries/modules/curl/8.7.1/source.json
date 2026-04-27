@@ -1,5 +1,9 @@
 {
-    "integrity": "sha256-1lCEiJbUiyHXYemGOv7wGMbBXNpKgSnZ3rq/gYG9KkM=",
+    "integrity": "sha256-+RJJyH9o6gDPJ8RP36WnhCPkHnG31AjlkBqYltkFxJU=",
     "strip_prefix": "curl-8.7.1",
-    "url": "https://github.com/curl/curl/releases/download/curl-8_7_1/curl-8.7.1.tar.gz"
+    "url": "https://github.com/curl/curl/releases/download/curl-8_7_1/curl-8.7.1.tar.gz",
+    "overlay": {
+        "MODULE.bazel": "sha256-KJDj4DF6WRv0VqCvA7OEaLuQ1aMHrncAP6RnDbawlzQ=",
+        "BUILD.bazel": "sha256-Kk1wI1Cpfhs3A9XMll4WwaHPpOdazqTabhtm2xu3z6o="
+    }
 }

@@ -1,0 +1,5 @@
+; Windows export file for srtrs1.dll
+LIBRARY srtrs1
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

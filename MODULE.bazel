@@ -10,6 +10,9 @@ bazel_dep(name = "rules_cc",         version = "0.2.17")
 bazel_dep(name = "bazel_skylib",     version = "1.7.1")
 bazel_dep(name = "libxml2",          version = "2.9.10")
 bazel_dep(name = "libxslt",          version = "1.1.35")
+bazel_dep(name = "curl",             version = "8.7.1")
+bazel_dep(name = "openssl",          version = "3.0.13")
+bazel_dep(name = "strawberry-perl",  version = "5.32.1.1")
 bazel_dep(name = "rules_foreign_cc", version = "0.15.1")
 # MODULE.bazel (root) - only orchestrates, no details
 bazel_dep(name = "redland",          version = "1.0.17")
@@ -26,3 +29,6 @@ bazel_dep(name = "gperf",                        version = "3.1")
 bazel_dep(name = "rules_java",             version = "8.11.0")
 
 register_toolchains("//build/toolchain:cc_toolchain_x86_vs2008_def")
+# Use preinstalled pkg-config instead of building it from source (building it
+# from source requires gettext_runtime whose BUILD uses a removed cc_import builtin).
+register_toolchains("@rules_foreign_cc//toolchains:preinstalled_pkgconfig_toolchain")

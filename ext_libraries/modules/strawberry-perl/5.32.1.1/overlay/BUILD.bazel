@@ -1,0 +1,7 @@
+package(default_visibility = ["//visibility:public"])
+
+# perl.exe — used by openssl configure
+filegroup(
+    name = "perl_exe",
+    srcs = ["perl/bin/perl.exe"],
+)

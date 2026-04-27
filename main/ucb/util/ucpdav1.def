@@ -1,0 +1,5 @@
+; Windows export file for ucpdav1.dll
+LIBRARY ucpdav1
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

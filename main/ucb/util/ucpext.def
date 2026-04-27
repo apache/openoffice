@@ -1,0 +1,5 @@
+; Windows export file for ucpext.dll
+LIBRARY ucpext
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

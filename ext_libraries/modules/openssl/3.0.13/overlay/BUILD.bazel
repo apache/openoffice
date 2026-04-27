@@ -1,0 +1,49 @@
+load("@rules_foreign_cc//foreign_cc:defs.bzl", "configure_make_variant")
+
+package(default_visibility = ["//visibility:public"])
+
+filegroup(
+    name = "all_srcs",
+    srcs = glob(["**"], exclude = ["*.bazel"]),
+)
+
+# OpenSSL 3.0.13 — VC-WIN32, no-asm, no-shared (static libs)
+#
+# Build flow (replicates AOO legacy makefile for WNT+MSVC):
+#   perl Configure VC-WIN32 no-asm no-shared --prefix=<tmpdir>/ssl
+#   nmake build_libs
+#   nmake install_dev          (headers + static libs → $INSTALLDIR)
+#
+# CPPFLAGS for VS2008 compatibility:
+#   - OPENSSL_NO_ASYNC: async I/O uses fibers/ucontext, absent on XP/2003
+#   - INT64_MAX/MIN/UINT64_MAX: VS2008 stdint.h omits these C99 constants
+#   - No WINVER/_WIN32_WINNT override: OpenSSL 3.0 needs >= 0x0501 (XP) for
+#     IPv6 APIs (IPPROTO_IPV6 etc.); let the SDK headers use their defaults.
+configure_make_variant(
+    name = "ssl",
+    visibility = ["//visibility:public"],
+    toolchain = "@rules_foreign_cc//toolchains:preinstalled_nmake_toolchain",
+    lib_source = ":all_srcs",
+    build_data = ["@strawberry-perl//:perl_exe"],
+    configure_command = "configure.sh",
+    configure_prefix = "bash",
+    configure_in_place = True,
+    configure_options = ["VC-WIN32", "no-asm", "no-shared"],
+    targets = [],
+    env = {
+        "PERL": "$(execpath @strawberry-perl//:perl_exe)",
+        "CPPFLAGS": (
+            "-DOPENSSL_NO_ASYNC=1 " +
+            "-DINT64_MAX=9223372036854775807i64 " +
+            "-DINT64_MIN=(-9223372036854775807i64-1) " +
+            "-DUINT64_MAX=0xffffffffffffffffui64"
+        ),
+    },
+    out_static_libs = ["libssl.lib", "libcrypto.lib"],
+    out_include_dir = "include",
+    linkopts = [
+        "crypt32.lib",   # CertOpenStore, CertEnumCertificatesInStore, etc.
+        "advapi32.lib",  # CryptAcquireContext, CryptGenRandom, event log
+        "user32.lib",    # GetProcessWindowStation, MessageBoxW
+    ],
+)

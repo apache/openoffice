@@ -1,0 +1,5 @@
+; Windows export file for ucpftp1.dll
+LIBRARY ucpftp1
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

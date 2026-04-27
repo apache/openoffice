@@ -1,0 +1,5 @@
+; Windows export file for ucb1.dll
+LIBRARY ucb1
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

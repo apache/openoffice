@@ -1,0 +1,5 @@
+; Windows export file for cached1.dll
+LIBRARY cached1
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

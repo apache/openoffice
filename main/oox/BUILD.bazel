@@ -206,7 +206,7 @@ cc_binary(
         ":oox_headers",
         "//main/stlport:stlport",
         "@boost.legacy//:boost.legacy",
-        "//main/openssl_shim:ssl",
+        "@openssl//:ssl",
     ],
     additional_linker_inputs = [
         "//main/sal:sal_implib",

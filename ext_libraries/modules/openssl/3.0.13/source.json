@@ -1,7 +1,10 @@
 {
   "url": "https://www.openssl.org/source/openssl-3.0.13.tar.gz",
-  "integrity": "sha256-88525753b37e6e5b7f7bd5172f51c20d12ef84f2cec4e3c4e02d22bcae98a7ef",
+  "integrity": "sha256-iFJXU/edO+wn0vp8ZqoLkrOqlJja/ZPXz6SzeAza4xM=",
   "strip_prefix": "openssl-3.0.13",
-  "patches": {},
-  "patch_strip": 0
+  "overlay": {
+    "MODULE.bazel": "sha256-LIe7ROIfVim3leVjQi6CL5SuFiDZ/iCveLqSNLqyXG8=",
+    "BUILD.bazel": "sha256-kXXbxUOysk3Al6DLEFczsPesYA2tZTOqVFZrYyfccKA=",
+    "configure.sh": "sha256-vfynN+p+3b09VtyAhYodn3vmycV7iIDWaYoyf26qtHQ="
+  }
 }

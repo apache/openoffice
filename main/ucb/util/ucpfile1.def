@@ -1,0 +1,5 @@
+; Windows export file for ucpfile1.dll
+LIBRARY ucpfile1
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

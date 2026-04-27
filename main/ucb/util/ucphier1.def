@@ -1,0 +1,5 @@
+; Windows export file for ucphier1.dll
+LIBRARY ucphier1
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

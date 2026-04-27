@@ -56,6 +56,7 @@ These apply to many packages — check before building any new module:
 - `/Imain/soltools/winunistd` — for modules that `#include <unistd.h>` unconditionally
 - UNO component DEF exports: `component_getImplementationEnvironment`, `component_getFactory`,
   `component_canUnload` (standard unloadable component pattern for all future component DLLs)
+- `CURL_STATICLIB` — required for any target using `@curl//:curl`; without it curl.h uses `__declspec(dllimport)` which breaks static linking
 - MASM `.asm` files: list directly in `srcs`; toolchain `assemble` action uses `ml.exe` with
   `masm_flags` feature (`/c /coff /Cx`). `/Cx` is critical — without it MASM uppercases all
   PUBLIC symbols, breaking the link. Build-system define `SUPD=680` (Solar Update version).
@@ -160,7 +161,8 @@ filter        ✅  (xmlfa, xfld, svgfilter, pdffilter, flash, placeware, t602fil
                    filter DLLs) — main/filter/readme.md
 vbahelper     ✅  (vbahelper.dll, msforms.dll) — main/vbahelper/readme.md
 ── Layer 14 — pre-app infrastructure ─────────────────────────────────────
-ucb           ⬜  (ucbhelper, comphelper, configmgr, tools — Universal Content Broker)
+ucb           ✅  (ucb1, cached1, srtrs1, ucpexpand1, ucpext, ucpfile1, ucphier1,
+                   ucppkg1, ucptdoc1, ucpftp1, ucpdav1) — main/ucb/readme.md
 unoxml        ⬜  (cppu, cppuhelper, sal — XML DOM/SAX service registration)
 eventattacher ⬜  (cppu, cppuhelper, comphelper)
 UnoControls   ⬜  (toolkit, vcl, cppu)
@@ -217,7 +219,7 @@ cli_ure       ⬜  (cppu, cppuhelper, sal, codemaker, stoc, udkapi, bridges)
                    AL.exe policy assemblies, sn.exe strong-name signing.
 unoil         ⬜  update climaker
 ── Already done, not yet listed ─────────────────────────────────────────
-ooxml         ✅  (done with oox migration — openssl_shim bridge included)
+ooxml         ✅  (done with oox migration; openssl_shim removed, now uses @openssl//:ssl)
 stlport       ✅  (boost hash_map shim, referenced as dep)
 ── Deferred: Java-based ─────────────────────────────────────────────────
 bean          ⬜  (Java bean component)

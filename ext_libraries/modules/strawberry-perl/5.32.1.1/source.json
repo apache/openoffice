@@ -1,5 +1,8 @@
 {
     "url": "https://strawberryperl.com/download/5.32.1.1/strawberry-perl-5.32.1.1-32bit-portable.zip",
     "integrity": "sha256-2cVxHRJXOg9tl3eSyqWDZLHUYhdSGuXCXPXMN4p8I8A=",
-    "build_file": "BUILD.bazel"
+    "overlay": {
+        "MODULE.bazel": "sha256-+wkdPC+6h3GpSQ/wTN3lc7oNgltVEVcgvb1eVkcZOBI=",
+        "BUILD.bazel": "sha256-wC/T1qM+9EXYJRemL5FjhXJb0MNxIzoX2w+LRjISufo="
+    }
 }

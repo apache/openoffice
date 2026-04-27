@@ -1,0 +1,5 @@
+; Windows export file for ucptdoc1.dll
+LIBRARY ucptdoc1
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

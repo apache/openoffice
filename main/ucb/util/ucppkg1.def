@@ -1,0 +1,5 @@
+; Windows export file for ucppkg1.dll
+LIBRARY ucppkg1
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

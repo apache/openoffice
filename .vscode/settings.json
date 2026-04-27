@@ -1,3 +1,7 @@
 {
-    "bazel.buildifierExecutable": "C:\\ProgramData\\chocolatey\\bin\\buildifier.exe"
+    "bazel.buildifierExecutable": "C:\\ProgramData\\chocolatey\\bin\\buildifier.exe",
+    "bazel.commandLine.queryFlags": [
+        "--registry=file:///C:/workspace/openoffice/ext_libraries",
+        "--registry=https://bcr.bazel.build"
+    ]
 }

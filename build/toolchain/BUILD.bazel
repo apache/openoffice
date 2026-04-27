@@ -52,7 +52,9 @@ cc_toolchain_config(
         "cpp":     _VC + "\\bin\\cl.exe",
         "gcc":     _VC + "\\bin\\cl.exe",
         "gcov":    "wrapper/bin/msvc_nop.bat",
-        "ld":      _VC + "\\bin\\link.exe",
+        # Forward slashes required: rules_foreign_cc uses paths.dirname() on this
+        # value which only recognises '/' as a separator; backslashes produce "".
+        "ld": (_VC + "\\bin\\link.exe").replace("\\", "/"),
         "ml":      _VC + "\\bin\\ml.exe",
         "nm":      "wrapper/bin/msvc_nop.bat",
         "objcopy": "wrapper/bin/msvc_nop.bat",
