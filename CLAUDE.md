@@ -163,7 +163,7 @@ vbahelper     ✅  (vbahelper.dll, msforms.dll) — main/vbahelper/readme.md
 ── Layer 14 — pre-app infrastructure ─────────────────────────────────────
 ucb           ✅  (ucb1, cached1, srtrs1, ucpexpand1, ucpext, ucpfile1, ucphier1,
                    ucppkg1, ucptdoc1, ucpftp1, ucpdav1) — main/ucb/readme.md
-unoxml        ⬜  (cppu, cppuhelper, sal — XML DOM/SAX service registration)
+unoxml        ✅  (unoxml.dll — DOM/XPath/Events; unordf deferred: redland not yet on Windows) — main/unoxml/readme.md
 eventattacher ⬜  (cppu, cppuhelper, comphelper)
 UnoControls   ⬜  (toolkit, vcl, cppu)
 dtrans        ⬜  (vcl, tools, comphelper — clipboard/data transfer, Windows)

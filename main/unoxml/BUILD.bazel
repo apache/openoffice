@@ -1,0 +1,80 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+]
+
+_COPTS = [
+    "/Zc:wchar_t-",
+    "/Imain/unoxml/source/dom",
+    "/Imain/unoxml/source/events",
+    "/Imain/unoxml/source/xpath",
+]
+
+_DEPS = [
+    "//main/sal:sal_headers",
+    "//main/cppu:cppu_headers",
+    "//main/cppuhelper:cppuhelper_headers",
+    "//main/comphelper:comphelper_headers",
+    "//main/ucbhelper:ucbhelper_headers",
+    "//main/sax:sax_headers",
+    "//main/udkapi:udkapi_idl_headers",
+    "//main/offapi:offapi_idl_headers",
+    "//main/stlport:stlport",
+    "@boost.legacy//:boost.legacy",
+    "@libxml2//:libxml2",
+]
+
+_LINKINPUTS = [
+    "//main/sal:sal_implib",
+    "//main/cppu:cppu3_implib",
+    "//main/cppuhelper:cppuhelper_implib",
+    "//main/comphelper:comphelp_implib",
+    "//main/ucbhelper:ucbhelper_implib",
+    "//main/sax:sax_implib",
+]
+
+_LINKOPTS = [
+    "$(execpath //main/sal:sal_implib)",
+    "$(execpath //main/cppu:cppu3_implib)",
+    "$(execpath //main/cppuhelper:cppuhelper_implib)",
+    "$(execpath //main/comphelper:comphelp_implib)",
+    "$(execpath //main/ucbhelper:ucbhelper_implib)",
+    "$(execpath //main/sax:sax_implib)",
+    "/MANIFEST:NO",
+]
+
+# ── unoxml.dll ────────────────────────────────────────────────────
+# XML DOM/XPath/Events UNO component.
+# Exports component_getImplementationEnvironment + component_getFactory
+# via SAL_DLLPUBLIC_EXPORT — no DEF file needed.
+cc_binary(
+    name = "unoxml",
+    srcs = glob([
+        "source/dom/*.cxx",
+        "source/dom/*.hxx",
+        "source/events/*.cxx",
+        "source/events/*.hxx",
+        "source/xpath/*.cxx",
+        "source/xpath/*.hxx",
+        "source/service/services.cxx",
+    ]),
+    copts = _COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    deps = _DEPS,
+    additional_linker_inputs = _LINKINPUTS,
+    linkopts = _LINKOPTS,
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "unoxml_implib",
+    srcs = [":unoxml"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
