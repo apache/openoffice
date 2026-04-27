@@ -1,0 +1,275 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+]
+
+_COPTS = [
+    "/Zc:wchar_t-",
+    "/Dsnprintf=_snprintf",
+    "/wd4996",
+]
+
+_COMMON_DEPS = [
+    "//main/sal:sal_headers",
+    "//main/cppuhelper:cppuhelper_headers",
+    "//main/comphelper:comphelper_headers",
+    "//main/offapi:offapi_idl_headers",
+    "//main/udkapi:udkapi_idl_headers",
+]
+
+_COMMON_IMPLIBS = [
+    "//main/sal:sal_implib",
+    "//main/cppu:cppu3_implib",
+    "//main/cppuhelper:cppuhelper_implib",
+]
+
+_COMMON_LINKOPTS = [
+    "$(execpath //main/sal:sal_implib)",
+    "$(execpath //main/cppu:cppu3_implib)",
+    "$(execpath //main/cppuhelper:cppuhelper_implib)",
+    "/MANIFEST:NO",
+]
+
+# ── dtrans.dll ────────────────────────────────────────────────────────────────
+# Generic clipboard manager and fallback generic clipboard service.
+cc_binary(
+    name = "dtrans",
+    srcs = [
+        "source/generic/dtrans.cxx",
+        "source/generic/clipboardmanager.cxx",
+        "source/generic/generic_clipboard.cxx",
+        "source/generic/clipboardmanager.hxx",
+        "source/generic/generic_clipboard.hxx",
+        "inc/pch/precompiled_dtrans.hxx",
+    ],
+    copts = _COPTS + [
+        "/Imain/dtrans/inc/pch",
+        "/Imain/dtrans/source/generic",
+    ],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/dtrans.def",
+    deps = _COMMON_DEPS,
+    additional_linker_inputs = _COMMON_IMPLIBS,
+    linkopts = _COMMON_LINKOPTS,
+    visibility = ["//visibility:public"],
+)
+
+# ── mcnttype.dll ─────────────────────────────────────────────────────────────
+# MIME content type factory UNO service.
+cc_binary(
+    name = "mcnttype",
+    srcs = [
+        "source/cnttype/mctfentry.cxx",
+        "source/cnttype/mcnttfactory.cxx",
+        "source/cnttype/mcnttype.cxx",
+        "source/cnttype/mcnttfactory.hxx",
+        "source/cnttype/mcnttype.hxx",
+        "inc/pch/precompiled_dtrans.hxx",
+    ],
+    copts = _COPTS + [
+        "/Imain/dtrans/inc/pch",
+        "/Imain/dtrans/source/cnttype",
+    ],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/mcnttype.def",
+    deps = _COMMON_DEPS,
+    additional_linker_inputs = _COMMON_IMPLIBS,
+    linkopts = _COMMON_LINKOPTS,
+    visibility = ["//visibility:public"],
+)
+
+# ── dnd.dll ───────────────────────────────────────────────────────────────────
+# Windows OLE drag-and-drop UNO service (DragSource + DropTarget).
+cc_binary(
+    name = "dnd",
+    srcs = [
+        # dnd core
+        "source/win32/dnd/dndentry.cxx",
+        "source/win32/dnd/target.cxx",
+        "source/win32/dnd/idroptarget.cxx",
+        "source/win32/dnd/source.cxx",
+        "source/win32/dnd/globals.cxx",
+        "source/win32/dnd/targetdropcontext.cxx",
+        "source/win32/dnd/targetdragcontext.cxx",
+        "source/win32/dnd/sourcecontext.cxx",
+        # OLE data object support (RTTI required)
+        "source/win32/dtobj/DtObjFactory.cxx",
+        "source/win32/dtobj/APNDataObject.cxx",
+        "source/win32/dtobj/DOTransferable.cxx",
+        "source/win32/dtobj/DTransHelper.cxx",
+        "source/win32/dtobj/XTDataObject.cxx",
+        "source/win32/dtobj/TxtCnvtHlp.cxx",
+        "source/win32/dtobj/DataFmtTransl.cxx",
+        "source/win32/dtobj/FmtFilter.cxx",
+        "source/win32/dtobj/FetcList.cxx",
+        "source/win32/dtobj/Fetc.cxx",
+        # misc helper
+        "source/win32/misc/ImplHelper.cxx",
+        # headers — dnd
+        "source/win32/dnd/globals.hxx",
+        "source/win32/dnd/idroptarget.hxx",
+        "source/win32/dnd/source.hxx",
+        "source/win32/dnd/sourcecontext.hxx",
+        "source/win32/dnd/target.hxx",
+        "source/win32/dnd/targetdragcontext.hxx",
+        "source/win32/dnd/targetdropcontext.hxx",
+        # headers — dtobj
+        "source/win32/dtobj/APNDataObject.hxx",
+        "source/win32/dtobj/DOTransferable.hxx",
+        "source/win32/dtobj/DTransHelper.hxx",
+        "source/win32/dtobj/DataFmtTransl.hxx",
+        "source/win32/dtobj/Fetc.hxx",
+        "source/win32/dtobj/FetcList.hxx",
+        "source/win32/dtobj/FmtFilter.hxx",
+        "source/win32/dtobj/MimeAttrib.hxx",
+        "source/win32/dtobj/TxtCnvtHlp.hxx",
+        "source/win32/dtobj/XTDataObject.hxx",
+        # headers — misc
+        "source/win32/misc/ImplHelper.hxx",
+        "source/win32/misc/WinClip.hxx",
+        # shared internal headers (reached via relative "..\..\" paths)
+        "source/inc/DtObjFactory.hxx",
+        # pch
+        "inc/pch/precompiled_dtrans.hxx",
+    ],
+    copts = _COPTS + [
+        "/Imain/dtrans/inc/pch",
+        "/Imain/dtrans/source/win32/dnd",
+        "/Imain/dtrans/source/win32/dtobj",
+        "/Imain/dtrans/source/win32/misc",
+        "/GR",
+    ],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/dnd.def",
+    deps = _COMMON_DEPS,
+    additional_linker_inputs = _COMMON_IMPLIBS,
+    linkopts = _COMMON_LINKOPTS + [
+        "advapi32.lib", "gdi32.lib", "ole32.lib", "oleaut32.lib",
+        "shell32.lib", "user32.lib", "uuid.lib",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── ftransl.dll ───────────────────────────────────────────────────────────────
+# Windows data format translator UNO service.
+cc_binary(
+    name = "ftransl",
+    srcs = [
+        "source/win32/ftransl/ftransl.cxx",
+        "source/win32/ftransl/ftranslentry.cxx",
+        "source/win32/misc/ImplHelper.cxx",
+        "source/win32/ftransl/ftransl.hxx",
+        "source/win32/misc/ImplHelper.hxx",
+        "source/win32/misc/WinClip.hxx",
+        "inc/pch/precompiled_dtrans.hxx",
+    ],
+    copts = _COPTS + [
+        "/Imain/dtrans/inc/pch",
+        "/Imain/dtrans/source/win32/ftransl",
+        "/Imain/dtrans/source/win32/misc",
+    ],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/ftransl.def",
+    deps = _COMMON_DEPS,
+    additional_linker_inputs = _COMMON_IMPLIBS,
+    linkopts = _COMMON_LINKOPTS + [
+        "advapi32.lib", "gdi32.lib", "ole32.lib",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# dtobj + misc compiled WITHOUT UNICODE: these files call narrow Win32 APIs
+# (e.g. RegisterClipboardFormatA) and break when UNICODE is defined globally.
+# The original makefile compiled them with only -GR -Ob0, no -DUNICODE.
+cc_library(
+    name = "_sysdtrans_dtobj",
+    srcs = [
+        "source/win32/dtobj/DtObjFactory.cxx",
+        "source/win32/dtobj/APNDataObject.cxx",
+        "source/win32/dtobj/DOTransferable.cxx",
+        "source/win32/dtobj/DTransHelper.cxx",
+        "source/win32/dtobj/XTDataObject.cxx",
+        "source/win32/dtobj/TxtCnvtHlp.cxx",
+        "source/win32/dtobj/DataFmtTransl.cxx",
+        "source/win32/dtobj/FmtFilter.cxx",
+        "source/win32/dtobj/FetcList.cxx",
+        "source/win32/dtobj/Fetc.cxx",
+        "source/win32/dtobj/XNotifyingDataObject.cxx",
+        "source/win32/misc/ImplHelper.cxx",
+        "source/win32/dtobj/APNDataObject.hxx",
+        "source/win32/dtobj/DOTransferable.hxx",
+        "source/win32/dtobj/DTransHelper.hxx",
+        "source/win32/dtobj/DataFmtTransl.hxx",
+        "source/win32/dtobj/Fetc.hxx",
+        "source/win32/dtobj/FetcList.hxx",
+        "source/win32/dtobj/FmtFilter.hxx",
+        "source/win32/dtobj/MimeAttrib.hxx",
+        "source/win32/dtobj/TxtCnvtHlp.hxx",
+        "source/win32/dtobj/XNotifyingDataObject.hxx",
+        "source/win32/dtobj/XTDataObject.hxx",
+        "source/win32/misc/ImplHelper.hxx",
+        "source/win32/misc/WinClip.hxx",
+        "source/inc/DtObjFactory.hxx",
+        "source/inc/MtaOleClipb.hxx",
+        "inc/pch/precompiled_dtrans.hxx",
+    ],
+    copts = _COPTS + [
+        "/Imain/dtrans/inc/pch",
+        "/Imain/dtrans/source/win32/dtobj",
+        "/Imain/dtrans/source/win32/misc",
+        "/GR",
+    ],
+    defines = _DEFINES,
+    deps = _COMMON_DEPS,
+)
+
+# ── sysdtrans.dll ─────────────────────────────────────────────────────────────
+# Windows system clipboard UNO service (ClipboardW32).
+# clipb + mtaole compiled WITH UNICODE; dtobj compiled without (see above).
+cc_binary(
+    name = "sysdtrans",
+    srcs = [
+        # clipboard (UNICODE W-API callers)
+        "source/win32/clipb/WinClipboard.cxx",
+        "source/win32/clipb/WinClipbImpl.cxx",
+        "source/win32/clipb/wcbentry.cxx",
+        # MTA OLE clipboard thread (UNICODE)
+        "source/win32/mtaole/MtaOleClipb.cxx",
+        # headers — clipb
+        "source/win32/clipb/APNDataObject.hxx",
+        "source/win32/clipb/WinClipbImpl.hxx",
+        "source/win32/clipb/WinClipboard.hxx",
+        # dtobj headers needed by clipb relative includes ("..\dtobj\...")
+        "source/win32/dtobj/APNDataObject.hxx",
+        "source/win32/dtobj/XNotifyingDataObject.hxx",
+        # shared internal headers reached via "..\..\inc\..." relative includes
+        "source/inc/DtObjFactory.hxx",
+        "source/inc/MtaOleClipb.hxx",
+        # pch
+        "inc/pch/precompiled_dtrans.hxx",
+    ],
+    copts = _COPTS + [
+        "/Imain/dtrans/inc/pch",
+        "/Imain/dtrans/source/win32/clipb",
+        "/Imain/dtrans/source/win32/dtobj",
+        "/Imain/dtrans/source/win32/misc",
+    ],
+    defines = _DEFINES + ["UNICODE", "_UNICODE"],
+    linkshared = True,
+    win_def_file = "util/sysdtrans.def",
+    deps = _COMMON_DEPS + [":_sysdtrans_dtobj"],
+    additional_linker_inputs = _COMMON_IMPLIBS,
+    linkopts = _COMMON_LINKOPTS + [
+        "advapi32.lib", "gdi32.lib", "ole32.lib", "oleaut32.lib",
+        "shell32.lib", "user32.lib", "uuid.lib",
+    ],
+    visibility = ["//visibility:public"],
+)

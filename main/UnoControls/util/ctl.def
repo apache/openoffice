@@ -1,0 +1,5 @@
+; Windows export file for ctl.dll
+LIBRARY ctl
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

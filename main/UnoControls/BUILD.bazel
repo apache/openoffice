@@ -1,0 +1,70 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK",
+    "SHAREDLIB", "_DLL_",
+]
+
+_COPTS = [
+    "/Zc:wchar_t-",
+    "/Dsnprintf=_snprintf",
+    "/wd4996",
+    "/Imain/UnoControls/inc",
+    "/Imain/UnoControls/source/inc",
+]
+
+# ── ctl.dll ────────────────────────────────────────────────────
+# UNO control component: ProgressBar, ProgressMonitor, FrameControl, StatusIndicator
+cc_binary(
+    name = "ctl",
+    srcs = [
+        "source/base/basecontainercontrol.cxx",
+        "source/base/basecontrol.cxx",
+        "source/base/multiplexer.cxx",
+        "source/base/registercontrols.cxx",
+        "source/controls/OConnectionPointContainerHelper.cxx",
+        "source/controls/OConnectionPointHelper.cxx",
+        "source/controls/framecontrol.cxx",
+        "source/controls/progressbar.cxx",
+        "source/controls/progressmonitor.cxx",
+        "source/controls/statusindicator.cxx",
+        # private headers
+        "source/inc/OConnectionPointContainerHelper.hxx",
+        "source/inc/OConnectionPointHelper.hxx",
+        "source/inc/framecontrol.hxx",
+        "source/inc/progressbar.hxx",
+        "source/inc/progressmonitor.hxx",
+        "source/inc/statusindicator.hxx",
+        # public headers
+        "inc/basecontainercontrol.hxx",
+        "inc/basecontrol.hxx",
+        "inc/definesunocontrols.hxx",
+        "inc/multiplexer.hxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/ctl.def",
+    deps = [
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/tools:tools_headers",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/tools:tl_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)

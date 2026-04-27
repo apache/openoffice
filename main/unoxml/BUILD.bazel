@@ -1,4 +1,4 @@
-load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("@rules_cc//cc:defs.bzl", "cc_binary")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -61,8 +61,9 @@ cc_binary(
         "source/events/*.hxx",
         "source/xpath/*.cxx",
         "source/xpath/*.hxx",
+    ]) + [
         "source/service/services.cxx",
-    ]),
+    ],
     copts = _COPTS,
     defines = _DEFINES,
     linkshared = True,

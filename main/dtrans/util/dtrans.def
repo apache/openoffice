@@ -1,0 +1,5 @@
+; Windows export file for dtrans.dll
+LIBRARY dtrans
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

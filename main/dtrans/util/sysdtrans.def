@@ -1,0 +1,5 @@
+; Windows export file for sysdtrans.dll
+LIBRARY sysdtrans
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

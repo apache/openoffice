@@ -1,0 +1,6 @@
+; Windows export file for dnd.dll
+LIBRARY dnd
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory
+    component_canUnload

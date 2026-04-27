@@ -1,0 +1,5 @@
+; Windows export file for ftransl.dll
+LIBRARY ftransl
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

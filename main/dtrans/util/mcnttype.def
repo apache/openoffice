@@ -1,0 +1,5 @@
+; Windows export file for mcnttype.dll
+LIBRARY mcnttype
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

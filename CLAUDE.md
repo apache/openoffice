@@ -165,8 +165,8 @@ ucb           ✅  (ucb1, cached1, srtrs1, ucpexpand1, ucpext, ucpfile1, ucphier
                    ucppkg1, ucptdoc1, ucpftp1, ucpdav1) — main/ucb/readme.md
 unoxml        ✅  (unoxml.dll — DOM/XPath/Events; unordf deferred: redland not yet on Windows) — main/unoxml/readme.md
 eventattacher ✅  (evtatt.dll) — main/eventattacher/readme.md
-UnoControls   ⬜  (toolkit, vcl, cppu)
-dtrans        ⬜  (vcl, tools, comphelper — clipboard/data transfer, Windows)
+UnoControls   ✅  (ctl.dll) — main/UnoControls/readme.md
+dtrans        ✅  (dtrans.dll, mcnttype.dll, dnd.dll, ftransl.dll, sysdtrans.dll) — main/dtrans/readme.md
 svgio         ⬜  (vcl, basegfx, filter — SVG I/O)
 lingucomponent ⬜ (linguistic, i18npool — hunspell, thesaurus, hyphenation engines)
 fpicker       ⬜  (vcl, toolkit, svtools — file picker dialog)
