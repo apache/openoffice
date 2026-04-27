@@ -158,7 +158,7 @@ writerfilter  ✅  (writerfilter.dll, writerfilter_debug.dll) — main/writerfil
 filter        ✅  (xmlfa, xfld, svgfilter, pdffilter, flash, placeware, t602filter,
                    filterconfig1, xsltfilter, xsltdlg, filtertracer + 22 graphic
                    filter DLLs) — main/filter/readme.md
-vbahelper     ⬜  (oovbaapi, basic, sfx2, svx, filter, vcl, svtools, tools, unotools)
+vbahelper     ✅  (vbahelper.dll, msforms.dll) — main/vbahelper/readme.md
 ── Layer 14 — TARGET ────────────────────────────────────────────────────
 sw            ⬜  (filter, connectivity, vbahelper, svx, writerfilter, stoc)
 ── Layer 15 — .NET interop (deferred) ───────────────────────────────────

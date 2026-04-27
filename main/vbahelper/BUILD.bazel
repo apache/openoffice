@@ -1,0 +1,152 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+    "snwprintf=_snwprintf",
+    "SUPD=680",
+]
+
+_COPTS = [
+    "/Imain/vbahelper/source/vbahelper",
+    "/Zc:wchar_t-",
+]
+
+# ── Public vbahelper headers ──────────────────────────────────────────────────
+cc_library(
+    name = "vbahelper_headers",
+    hdrs = glob(["inc/vbahelper/**"]),
+    strip_include_prefix = "inc",
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/oovbaapi:oovbaapi_idl_headers",
+        "//main/tools:tools_headers",
+        "//main/unotools:unotools_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/svl:svl_headers",
+        "//main/vcl:vcl_headers",
+        "//main/svtools:svtools_headers",
+        "//main/svx:svx_headers",
+        "//main/sfx2:sfx2_headers",
+        "//main/basic:basic_headers",
+        "//main/filter:filter_msfilter_headers",
+        "//main/toolkit:toolkit_headers",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── vbahelper.dll ─────────────────────────────────────────────────────────────
+cc_binary(
+    name = "vbahelper",
+    srcs = glob([
+        "source/vbahelper/*.cxx",
+        "source/vbahelper/*.hxx",
+    ]),
+    copts = _COPTS,
+    defines = _DEFINES + ["VBAHELPER_DLLIMPLEMENTATION"],
+    linkshared = True,
+    deps = [
+        ":vbahelper_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/salhelper:salhelper_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/svl:svl_implib",
+        "//main/svtools:svt_implib",
+        "//main/svx:svxcore_implib",
+        "//main/toolkit:ootk_implib",
+        "//main/vcl:vcl_implib",
+        "//main/sfx2:sfx_implib",
+        "//main/basic:sb_implib",
+        "//main/filter:msfilter_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/salhelper:salhelper_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+        "$(execpath //main/svx:svxcore_implib)",
+        "$(execpath //main/toolkit:ootk_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/sfx2:sfx_implib)",
+        "$(execpath //main/basic:sb_implib)",
+        "$(execpath //main/filter:msfilter_implib)",
+        "oleaut32.lib", "ole32.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "vbahelper_implib",
+    srcs = [":vbahelper"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── msforms.dll (UNO component — MS Forms controls) ──────────────────────────
+cc_binary(
+    name = "msforms",
+    srcs = glob([
+        "source/msforms/*.cxx",
+        "source/msforms/*.hxx",
+    ]),
+    copts = _COPTS + ["/Imain/vbahelper/source/msforms"],
+    defines = _DEFINES,
+    linkshared = True,
+    deps = [
+        ":vbahelper_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/tools:tl_implib",
+        "//main/svl:svl_implib",
+        "//main/svtools:svt_implib",
+        "//main/svx:svxcore_implib",
+        "//main/toolkit:ootk_implib",
+        "//main/vcl:vcl_implib",
+        "//main/sfx2:sfx_implib",
+        "//main/basic:sb_implib",
+        ":vbahelper_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+        "$(execpath //main/svx:svxcore_implib)",
+        "$(execpath //main/toolkit:ootk_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/sfx2:sfx_implib)",
+        "$(execpath //main/basic:sb_implib)",
+        "$(execpath :vbahelper_implib)",
+        "oleaut32.lib", "ole32.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
