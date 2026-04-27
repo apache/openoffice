@@ -1,4 +1,4 @@
-# Apache OpenOffice — Bazel Migration
+﻿# Apache OpenOffice — Bazel Migration
 
 ## Goal
 Replace the Perl/dmake/gmake orchestration layer with Bazel.
@@ -159,14 +159,112 @@ filter        ✅  (xmlfa, xfld, svgfilter, pdffilter, flash, placeware, t602fil
                    filterconfig1, xsltfilter, xsltdlg, filtertracer + 22 graphic
                    filter DLLs) — main/filter/readme.md
 vbahelper     ✅  (vbahelper.dll, msforms.dll) — main/vbahelper/readme.md
-── Layer 14 — TARGET ────────────────────────────────────────────────────
-sw            ⬜  (filter, connectivity, vbahelper, svx, writerfilter, stoc)
-── Layer 15 — .NET interop (deferred) ───────────────────────────────────
+── Layer 14 — pre-app infrastructure ─────────────────────────────────────
+ucb           ⬜  (ucbhelper, comphelper, configmgr, tools — Universal Content Broker)
+unoxml        ⬜  (cppu, cppuhelper, sal — XML DOM/SAX service registration)
+eventattacher ⬜  (cppu, cppuhelper, comphelper)
+UnoControls   ⬜  (toolkit, vcl, cppu)
+dtrans        ⬜  (vcl, tools, comphelper — clipboard/data transfer, Windows)
+svgio         ⬜  (vcl, basegfx, filter — SVG I/O)
+lingucomponent ⬜ (linguistic, i18npool — hunspell, thesaurus, hyphenation engines)
+fpicker       ⬜  (vcl, toolkit, svtools — file picker dialog)
+mysqlc        ⬜  (connectivity — MySQL/MariaDB native connector)
+── Layer 15 ─────────────────────────────────────────────────────────────
+formula       ⬜  (svl, svx, tools, i18npool — formula bar/parser)
+animations    ⬜  (vcl, comphelper, tools — drawing layer animations)
+chart2        ⬜  (svx, xmloff, editeng, vcl, oox, filter, formula)
+embeddedobj   ⬜  (sfx2, svx, tools — OLE embedded object framework)
+xmlsecurity   ⬜  (xmloff, sfx2, tools, libxmlsec — XML digital signatures)
+uui           ⬜  (svtools, vcl, toolkit, sfx2 — user interaction/auth dialogs)
+fileaccess    ⬜  (ucb, comphelper — file access UNO service)
+accessibility ⬜  (vcl, toolkit, svx, cppu — a11y UNO API)
+── Layer 16 ─────────────────────────────────────────────────────────────
+forms         ⬜  (svx, toolkit, vcl, formula, connectivity — form controls)
+scripting     ⬜  (sfx2, basic, vcl, comphelper — macro scripting framework)
+embedserv     ⬜  (embeddedobj, sfx2, tools — OLE embedding server)
+winaccessibility ⬜ (accessibility, vcl — Windows a11y bridge)
+── Layer 17 ─────────────────────────────────────────────────────────────
+cui           ⬜  (svx, svtools, toolkit, sfx2, vcl, editeng, chart2, scripting
+                   — common UI dialogs shared by all apps)
+── Layer 18 — sw ─────────────────────────────────────────────────────────
+sw            ✅  (swd.dll + sw.dll) — main/sw/README.md
+── Layer 19 ─────────────────────────────────────────────────────────────
+basctl        ⬜  (basic, scripting, sfx2, sw — Basic IDE)
+sd            ⬜  Draw/Impress (sw, svx, sfx2, filter, oox, avmedia, canvas,
+                   cppcanvas, chart2, animations, embeddedobj, forms, svgio, cui)
+── Layer 20 ─────────────────────────────────────────────────────────────
+slideshow     ⬜  (sd, canvas, cppcanvas, vcl, svx — Impress slideshow engine)
+sdext         ⬜  (sd — PDF import, Presenter Console, minimizer)
+sc            ⬜  Calc (sw, svx, sfx2, filter, oox, connectivity, vbahelper,
+                   chart2, formula, forms, scripting, embeddedobj, cui, ucb)
+── Layer 21 ─────────────────────────────────────────────────────────────
+scaddins      ⬜  (sc, tools, comphelper — Calc add-in infrastructure)
+sccomp        ⬜  (sc, connectivity — Calc compatibility components)
+solver        ⬜  (sc — linear programming solver)
+dbaccess      ⬜  Base (sc, sw, connectivity, svx, sfx2, svtools, xmloff,
+                   ucb, forms, cui)
+── Layer 22 ─────────────────────────────────────────────────────────────
+reportdesign  ⬜  (dbaccess, svx, sfx2, sc, vcl — Base report designer)
+reportbuilder ⬜  (reportdesign, dbaccess — Java-based report engine)
+starmath      ⬜  (svx, sfx2, editeng, vcl, sw — Math formula editor)
+── Layer 23 — desktop ────────────────────────────────────────────────────
+desktop       ⬜  (sw, sd, sc, dbaccess, starmath, sfx2, vcl, framework,
+                   ucb, scripting, basctl, fpicker, dtrans, uui, accessibility
+                   — soffice.exe launcher + splash, quickstarter)
+── Layer 24 — .NET interop (deferred) ────────────────────────────────────
 cli_ure       ⬜  (cppu, cppuhelper, sal, codemaker, stoc, udkapi, bridges)
                    Blockers: C# rules (csc.exe), C++/CLI (/clr toolchain),
                    AL.exe policy assemblies, sn.exe strong-name signing.
-                   Not on critical path to sw — do after Layer 14.
-unoil         ⬜  update climaker 
+unoil         ⬜  update climaker
+── Already done, not yet listed ─────────────────────────────────────────
+ooxml         ✅  (done with oox migration — openssl_shim bridge included)
+stlport       ✅  (boost hash_map shim, referenced as dep)
+── Deferred: Java-based ─────────────────────────────────────────────────
+bean          ⬜  (Java bean component)
+stax          ⬜  (StAX XML streaming API)
+saxon         ⬜  (XSLT 2.0 processor)
+wizards       ⬜  (Java-based document wizards)
+xmerge        ⬜  (document format converter, Java)
+javainstaller2 ⬜ (Java installer UI)
+swext         ⬜  (Writer Java extensions e.g. mediawiki)
+unodevtools   ⬜  (UNO component inspector, Java)
+── Deferred: Linux/macOS — not applicable for Windows build ─────────────
+padmin        —   Linux printer administration
+sane          —   Linux scanner interface (SANE)
+unixODBC      —   Linux ODBC bridge
+x11_extensions —  X11/Linux platform extensions
+psprint_config —  Linux PostScript/font config
+apple_remote  —   macOS Apple Remote control
+macOS         —   macOS-specific platform UI
+── Deferred: Installer/packaging — post-build ────────────────────────────
+scp2          ⬜  (installer package/script definitions)
+instsetoo_native ⬜ (native Windows installer build)
+setup_native  ⬜  (Windows setup UI)
+packimages    ⬜  (image packaging for install)
+sysui         ⬜  (system UI integration — mime types, desktop entries)
+postprocess   ⬜  (post-build registration, rdb merging)
+solenv        ⬜  (legacy build environment, mostly migrated away)
+── Deferred: Docs/tests/dev tooling ─────────────────────────────────────
+autodoc       ⬜  (API documentation generator)
+odk           ⬜  (OpenDocument/Developer Kit)
+helpauthoring ⬜  (help authoring tools)
+helpcontent2  ⬜  (help content sources)
+xmlhelp       ⬜  (XML help runtime)
+xml2cmp       ⬜  (XML component comparison tool)
+qadevOOo      ⬜  (Java-based QA test framework)
+test          ⬜  (C++ unit tests)
+testgraphical ⬜  (graphical/visual regression tests)
+testtools     ⬜  (test infrastructure)
+── Deferred: Standalone/misc ─────────────────────────────────────────────
+crashrep      ⬜  (crash reporter)
+automation    ⬜  (test automation/macro recorder framework)
+migrationanalysis ⬜ (migration analysis tool)
+extensions    ⬜  (misc UNO extension infrastructure)
+extras        —   templates and samples (data, not build target)
+more_fonts    —   bundled fonts (data, not build target)
+default_images —  bundled images (data, not build target)
+ooo_custom_images — custom branding images (data, not build target)
+readlicense_oo —  license files (data, not build target)
 ```
 
 ## Out of scope

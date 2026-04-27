@@ -1,4 +1,5 @@
 load("@rules_cc//cc:defs.bzl", "cc_binary")
+load("//build/rules:sdi_target.bzl", "svidl_bundle")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -12,8 +13,7 @@ _COPTS = [
     "/Imain/idl/inc",
     "/Imain/idl/inc/pch",
     "/Zc:wchar_t-",
-    "/MT",
-    "/D_SNPRINTF_DLLIMPORT=",
+    "/MD",
     "/Od",
 ]
 
@@ -56,11 +56,10 @@ cc_binary(
         "$(execpath //main/sal:sal_implib)",
         "$(execpath //main/tools:tl_implib)",
         "/MANIFEST:NO",
-        "/NODEFAULTLIB:msvcrt.lib",
     ],
-    # Runtime DLLs needed when svidl.exe is invoked as a Bazel exec tool.
-    # sdi_target.bzl stages these via DefaultInfo.data_runfiles — no CRT DLLs
-    # needed here because svidl links the CRT statically (/MT).
+    # Runtime DLLs for svidl_bundle — staged once in main/idl/svidl_bundle/.
+    # svidl is /MD; sal3.dll and the others are also /MD — all share the same
+    # msvcr90.dll instance from crt_dlls, so no CRT conflict occurs.
     data = [
         "//main/sal:sal3",
         "//main/tools:tl",
@@ -72,6 +71,15 @@ cc_binary(
         "//main/vos:vos3",
         "//main/basegfx:basegfx",
         "//main/i18npool:i18nisolang1",
+        "//main/external/msvcp90:crt_dlls",
     ],
+    visibility = ["//visibility:public"],
+)
+
+# One shared tool directory: svidl.exe + all runtime DLLs staged once.
+# Every sdi_target instance uses this bundle; no per-module tool staging.
+svidl_bundle(
+    name = "svidl_bundle",
+    svidl = ":svidl",
     visibility = ["//visibility:public"],
 )

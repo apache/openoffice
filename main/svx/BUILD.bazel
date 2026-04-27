@@ -1,5 +1,5 @@
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
-load("//build/rules:sdi_target.bzl", "sdi_target")
+load("//build/rules:sdi_target.bzl", "sdi_package", "sdi_target")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -71,6 +71,15 @@ cc_library(
     name = "svxslots_headers",
     hdrs     = [":svxslots_sdi"],
     includes = ["svxslots_sdi_inc"],
+    visibility = ["//visibility:public"],
+)
+
+# Stages svx SDI files so downstream modules (e.g. sw) can resolve
+# include "svx/svxitems.sdi" etc. via pkg_deps.
+sdi_package(
+    name = "svx_sdi_pkg",
+    srcs = ["sdi/svxitems.sdi", "sdi/xoitems.sdi", "sdi/svx.sdi"],
+    prefix = "svx",
     visibility = ["//visibility:public"],
 )
 

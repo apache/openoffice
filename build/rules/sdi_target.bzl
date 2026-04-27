@@ -5,10 +5,14 @@ svidl takes .sdi files and generates a C++ header (.hxx) containing
 slot dispatch maps, item info tables, and other binding data used by
 the SFX framework dispatcher.
 
-Runtime DLLs (sal3, tl, and their transitive deps) are declared as `data`
-on the svidl cc_binary in main/idl/BUILD.bazel — that is the single source
-of truth for what the tool needs at runtime.  sdi_target stages them here
-via DefaultInfo.data_runfiles; no DLL knowledge lives in this rule.
+svidl_bundle stages svidl.exe + all its runtime DLLs into a single flat
+directory (main/idl/svidl_bundle/).  Every sdi_target instance shares this
+one directory rather than re-staging the tool per module.
+
+sdi_package stages .sdi source files under a named prefix so that
+downstream sdi_target rules can include them with a module-qualified
+path (e.g. include "sfx2/sfxitems.sdi").  The original build achieved
+this via Package_sdi.mk delivering files to <outdir>/inc/<prefix>/.
 
 Usage:
     sdi_target(
@@ -23,26 +27,15 @@ Usage:
 The rule places its output header at <name>_inc/<slot_name>.hxx.
 Consuming cc_library should set includes = ["<name>_inc"].
 
-sdi_package stages .sdi source files under a named prefix so that
-downstream sdi_target rules can include them with a module-qualified
-path (e.g. include "sfx2/sfxitems.sdi").  The original build achieved
-this via Package_sdi.mk delivering files to <outdir>/inc/<prefix>/.
-
-Usage:
-    # In the owning module (e.g. sfx2/BUILD.bazel):
     sdi_package(
         name = "sfx2_sdi_pkg",
         srcs = ["sdi/sfx.sdi", "sdi/sfxitems.sdi"],
         prefix = "sfx2",
         visibility = ["//visibility:public"],
     )
-
-    # In the consuming module (e.g. svx/BUILD.bazel):
-    sdi_target(
-        ...,
-        pkg_deps = ["//main/sfx2:sfx2_sdi_pkg"],
-    )
 """
+
+# ── SdiPkgInfo / sdi_package ──────────────────────────────────────────────────
 
 SdiPkgInfo = provider(
     doc = "Staged SDI files accessible as <prefix>/<basename> via the include_root -I path.",
@@ -83,24 +76,61 @@ sdi_package = rule(
     },
 )
 
-def _sdi_target_impl(ctx):
-    svidl = ctx.executable._svidl
+# ── SvidlBundleInfo / svidl_bundle ────────────────────────────────────────────
 
-    # ── Stage svidl.exe + all runtime DLLs into one flat directory ─────────
-    # Runtime DLLs come from the `data` attribute of the svidl cc_binary;
-    # main/idl/BUILD.bazel is the single source of truth for what the tool
-    # needs.  No CRT DLLs or manifest are staged because svidl links the
-    # CRT statically (/MT).
-    data_files = ctx.attr._svidl[DefaultInfo].data_runfiles.files.to_list()
+SvidlBundleInfo = provider(
+    doc = "Single flat directory with svidl.exe + all runtime DLLs, shared by all sdi_target instances.",
+    fields = {
+        "exe":       "The staged svidl.exe File",
+        "tools_dir": "execroot-relative directory to set as PATH when running svidl",
+        "files":     "All staged File objects (exe + DLLs)",
+    },
+)
+
+def _svidl_bundle_impl(ctx):
+    exe        = ctx.executable.svidl
+    data_files = ctx.attr.svidl[DefaultInfo].data_runfiles.files.to_list()
 
     staged = {}
-    for f in [svidl] + data_files:
-        out = ctx.actions.declare_file(ctx.label.name + "_tools/" + f.basename)
-        ctx.actions.symlink(output = out, target_file = f)
-        staged[f.basename] = out
+    for f in [exe] + data_files:
+        if f.basename not in staged:
+            out = ctx.actions.declare_file("svidl_bundle/" + f.basename)
+            ctx.actions.symlink(output = out, target_file = f)
+            staged[f.basename] = out
 
     all_staged = list(staged.values())
-    tools_dir  = staged[svidl.basename].dirname
+    exe_out    = staged[exe.basename]
+
+    return [
+        DefaultInfo(files = depset(all_staged)),
+        SvidlBundleInfo(
+            exe       = exe_out,
+            tools_dir = exe_out.dirname,
+            files     = all_staged,
+        ),
+    ]
+
+svidl_bundle = rule(
+    implementation = _svidl_bundle_impl,
+    attrs = {
+        "svidl": attr.label(
+            executable  = True,
+            cfg         = "exec",
+            allow_files = True,
+            doc         = "The svidl cc_binary",
+        ),
+    },
+    doc = "Stages svidl.exe + all runtime DLLs into one flat directory in main/idl/. " +
+          "All sdi_target instances share this bundle; no per-module tool staging.",
+)
+
+# ── sdi_target ────────────────────────────────────────────────────────────────
+
+def _sdi_target_impl(ctx):
+    bundle     = ctx.attr._svidl_bundle[SvidlBundleInfo]
+    svidl_exe  = bundle.exe
+    tools_dir  = bundle.tools_dir
+    all_staged = bundle.files
 
     # ── Declare the .hxx output ─────────────────────────────────────────────
     hxx = ctx.actions.declare_file(
@@ -124,7 +154,7 @@ def _sdi_target_impl(ctx):
 
     # ── Run svidl ───────────────────────────────────────────────────────────
     ctx.actions.run(
-        executable = staged[svidl.basename].path,
+        executable = svidl_exe.path,
         arguments  = ["-quiet"] + include_args + [
             "-fs" + hxx.path,
             "-fx" + ctx.file.exports.path,
@@ -170,11 +200,12 @@ sdi_target = rule(
             default = [],
             doc = "Extra -I paths (relative to execroot) for svidl include resolution",
         ),
-        "_svidl": attr.label(
-            default    = "//main/idl:svidl",
-            executable = True,
-            cfg        = "exec",
+        "_svidl_bundle": attr.label(
+            default     = "//main/idl:svidl_bundle",
+            providers   = [SvidlBundleInfo],
+            cfg         = "exec",
             allow_files = True,
+            doc         = "Shared tool bundle — svidl.exe + runtime DLLs staged once in main/idl/svidl_bundle/",
         ),
     },
 )
