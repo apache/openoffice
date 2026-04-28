@@ -1,0 +1,331 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+]
+
+_COPTS = [
+    "/Zc:wchar_t-",
+    "/Dsnprintf=_snprintf",
+    "/wd4996",
+]
+
+_COMMON_DEPS = [
+    "//main/sal:sal_headers",
+    "//main/cppu:cppu_headers",
+    "//main/cppuhelper:cppuhelper_headers",
+    "//main/offapi:offapi_idl_headers",
+    "//main/udkapi:udkapi_idl_headers",
+]
+
+_COMMON_IMPLIBS = [
+    "//main/sal:sal_implib",
+    "//main/cppu:cppu3_implib",
+    "//main/cppuhelper:cppuhelper_implib",
+]
+
+_COMMON_LINKOPTS = [
+    "$(execpath //main/sal:sal_implib)",
+    "$(execpath //main/cppu:cppu3_implib)",
+    "$(execpath //main/cppuhelper:cppuhelper_implib)",
+    "/MANIFEST:NO",
+]
+
+# ── fps.dll ───────────────────────────────────────────────────────────────────
+# Windows system file picker (uses IFileOpenDialog on Vista+, GetOpenFileName fallback).
+cc_binary(
+    name = "fps",
+    srcs = [
+        "source/win32/filepicker/FileOpenDlg.cxx",
+        "source/win32/filepicker/FPentry.cxx",
+        "source/win32/filepicker/FilePicker.cxx",
+        "source/win32/filepicker/WinFileOpenImpl.cxx",
+        "source/win32/filepicker/FilterContainer.cxx",
+        "source/win32/filepicker/controlaccess.cxx",
+        "source/win32/filepicker/dibpreview.cxx",
+        "source/win32/filepicker/helppopupwindow.cxx",
+        "source/win32/filepicker/controlcommand.cxx",
+        "source/win32/filepicker/filepickerstate.cxx",
+        "source/win32/filepicker/getfilenamewrapper.cxx",
+        "source/win32/filepicker/asynceventnotifier.cxx",
+        "source/win32/filepicker/previewadapter.cxx",
+        "source/win32/filepicker/previewbase.cxx",
+        "source/win32/filepicker/filepickereventnotification.cxx",
+        "source/win32/filepicker/customcontrol.cxx",
+        "source/win32/filepicker/customcontrolcontainer.cxx",
+        "source/win32/filepicker/customcontrolfactory.cxx",
+        "source/win32/filepicker/dialogcustomcontrols.cxx",
+        "source/win32/filepicker/asyncrequests.cxx",
+        "source/win32/filepicker/VistaFilePickerEventHandler.cxx",
+        "source/win32/filepicker/VistaFilePickerImpl.cxx",
+        "source/win32/filepicker/VistaFilePicker.cxx",
+        "source/win32/filepicker/SolarMutex.cxx",
+        "source/win32/misc/WinImplHelper.cxx",
+        "source/win32/misc/AutoBuffer.cxx",
+        "source/win32/misc/resourceprovider.cxx",
+        # headers needed by Bazel to track direct includes
+        "source/win32/filepicker/FileOpenDlg.hxx",
+        "source/win32/filepicker/FilePicker.hxx",
+        "source/win32/filepicker/VistaFilePicker.hxx",
+        "source/win32/filepicker/VistaFilePickerImpl.hxx",
+        "source/win32/filepicker/VistaFilePickerEventHandler.hxx",
+        "source/win32/filepicker/WinFileOpenImpl.hxx",
+        "source/win32/filepicker/FilterContainer.hxx",
+        "source/win32/filepicker/controlaccess.hxx",
+        "source/win32/filepicker/controlcommand.hxx",
+        "source/win32/filepicker/controlcommandrequest.hxx",
+        "source/win32/filepicker/controlcommandresult.hxx",
+        "source/win32/filepicker/customcontrol.hxx",
+        "source/win32/filepicker/customcontrolcontainer.hxx",
+        "source/win32/filepicker/customcontrolfactory.hxx",
+        "source/win32/filepicker/dialogcustomcontrols.hxx",
+        "source/win32/filepicker/helppopupwindow.hxx",
+        "source/win32/filepicker/PreviewCtrl.hxx",
+        "source/win32/filepicker/previewadapter.hxx",
+        "source/win32/filepicker/previewbase.hxx",
+        "source/win32/filepicker/dibpreview.hxx",
+        "source/win32/filepicker/asynceventnotifier.hxx",
+        "source/win32/filepicker/asyncrequests.hxx",
+        "source/win32/filepicker/filepickereventnotification.hxx",
+        "source/win32/filepicker/eventnotification.hxx",
+        "source/win32/filepicker/filepickerstate.hxx",
+        "source/win32/filepicker/getfilenamewrapper.hxx",
+        "source/win32/filepicker/SolarMutex.hxx",
+        "source/win32/filepicker/comptr.hxx",
+        "source/win32/filepicker/propmap.hxx",
+        "source/win32/filepicker/shared.hxx",
+        "source/win32/filepicker/platform_vista.h",
+        "source/win32/filepicker/platform_xp.h",
+        "source/win32/filepicker/vistatypes.h",
+        "source/win32/filepicker/afxres.h",
+        "source/win32/filepicker/FPServiceInfo.hxx",
+        "source/win32/filepicker/resource.h",
+        "source/win32/filepicker/IVistaFilePickerInternalNotify.hxx",
+        "source/win32/misc/AutoBuffer.hxx",
+        "source/win32/misc/WinImplHelper.hxx",
+        "source/win32/misc/resourceprovider.hxx",
+        "inc/pch/precompiled_fpicker.hxx",
+    ],
+    copts = _COPTS + [
+        "/Imain/fpicker/inc/pch",
+        "/Imain/fpicker/source/win32/filepicker",
+        "/Imain/fpicker/source/win32/misc",
+        "/D_UNICODE", "/DUNICODE",
+        "/U_WIN32_WINNT", "/D_WIN32_WINNT=0x0600",
+    ],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/fps.def",
+    deps = _COMMON_DEPS + [
+        "//main/comphelper:comphelper_headers",
+        "//main/tools:tools_headers",
+        "//main/vcl:vcl_headers",
+        "//main/svtools:svtools_headers",
+        "//main/vos:vos_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = _COMMON_IMPLIBS + [
+        "//main/comphelper:comphelp_implib",
+        "//main/tools:tl_implib",
+        "//main/vcl:vcl_implib",
+    ],
+    linkopts = _COMMON_LINKOPTS + [
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "advapi32.lib", "comdlg32.lib", "gdi32.lib", "kernel32.lib",
+        "ole32.lib", "oleaut32.lib", "shell32.lib", "user32.lib", "uuid.lib",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "fps_implib",
+    srcs = [":fps"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── fop.dll ───────────────────────────────────────────────────────────────────
+# Windows system folder picker (SHBrowseForFolder).
+cc_binary(
+    name = "fop",
+    srcs = [
+        "source/win32/folderpicker/Fopentry.cxx",
+        "source/win32/folderpicker/FolderPicker.cxx",
+        "source/win32/folderpicker/WinFOPImpl.cxx",
+        "source/win32/folderpicker/MtaFop.cxx",
+        "source/win32/misc/WinImplHelper.cxx",
+        "source/win32/misc/AutoBuffer.cxx",
+        "source/win32/misc/resourceprovider.cxx",
+        # headers
+        "source/win32/folderpicker/FolderPicker.hxx",
+        "source/win32/folderpicker/FOPServiceInfo.hxx",
+        "source/win32/folderpicker/FopEvtDisp.hxx",
+        "source/win32/folderpicker/MtaFop.hxx",
+        "source/win32/folderpicker/WinFOPImpl.hxx",
+        "source/win32/misc/AutoBuffer.hxx",
+        "source/win32/misc/WinImplHelper.hxx",
+        "source/win32/misc/resourceprovider.hxx",
+        "inc/pch/precompiled_fpicker.hxx",
+    ],
+    copts = _COPTS + [
+        "/Imain/fpicker/inc/pch",
+        "/Imain/fpicker/source/win32/folderpicker",
+        "/Imain/fpicker/source/win32/misc",
+        "/DUNICODE", "/D_UNICODE",
+    ],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/fop.def",
+    deps = _COMMON_DEPS + [
+        "//main/comphelper:comphelper_headers",
+        "//main/tools:tools_headers",
+        "//main/vcl:vcl_headers",
+        "//main/svtools:svtools_headers",
+        "//main/vos:vos_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = _COMMON_IMPLIBS + [
+        "//main/comphelper:comphelp_implib",
+        "//main/tools:tl_implib",
+        "//main/vcl:vcl_implib",
+    ],
+    linkopts = _COMMON_LINKOPTS + [
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "advapi32.lib", "gdi32.lib", "ole32.lib", "oleaut32.lib",
+        "shell32.lib", "user32.lib",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "fop_implib",
+    srcs = [":fop"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── fps_office.dll ────────────────────────────────────────────────────────────
+# OOo office file/folder picker dialog (used when no system picker or as fallback).
+cc_binary(
+    name = "fps_office",
+    srcs = [
+        "source/office/asyncfilepicker.cxx",
+        "source/office/commonpicker.cxx",
+        "source/office/OfficeControlAccess.cxx",
+        "source/office/OfficeFilePicker.cxx",
+        "source/office/OfficeFolderPicker.cxx",
+        "source/office/fpinteraction.cxx",
+        "source/office/fpsmartcontent.cxx",
+        "source/office/fps_office.cxx",
+        "source/office/iodlg.cxx",
+        "source/office/iodlgimp.cxx",
+        # headers
+        "source/office/asyncfilepicker.hxx",
+        "source/office/commonpicker.hxx",
+        "source/office/OfficeControlAccess.hxx",
+        "source/office/OfficeFilePicker.hxx",
+        "source/office/OfficeFolderPicker.hxx",
+        "source/office/fpinteraction.hxx",
+        "source/office/fpsmartcontent.hxx",
+        "source/office/iodlg.hxx",
+        "source/office/iodlgimp.hxx",
+        "source/office/pickercallbacks.hxx",
+        "inc/pch/precompiled_fpicker.hxx",
+    ],
+    copts = _COPTS + [
+        "/Imain/fpicker/inc/pch",
+        "/Imain/fpicker/source/office",
+    ],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/fps_office.def",
+    deps = _COMMON_DEPS + [
+        "//main/comphelper:comphelper_headers",
+        "//main/tools:tools_headers",
+        "//main/vcl:vcl_headers",
+        "//main/svl:svl_headers",
+        "//main/svtools:svtools_headers",
+        "//main/toolkit:toolkit_headers",
+        "//main/ucbhelper:ucbhelper_headers",
+        "//main/unotools:unotools_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = _COMMON_IMPLIBS + [
+        "//main/comphelper:comphelp_implib",
+        "//main/tools:tl_implib",
+        "//main/vcl:vcl_implib",
+        "//main/svl:svl_implib",
+        "//main/svtools:svt_implib",
+        "//main/toolkit:ootk_implib",
+        "//main/ucbhelper:ucbhelper_implib",
+        "//main/unotools:utl_implib",
+    ],
+    linkopts = _COMMON_LINKOPTS + [
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+        "$(execpath //main/toolkit:ootk_implib)",
+        "$(execpath //main/ucbhelper:ucbhelper_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "fps_office_implib",
+    srcs = [":fps_office"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── fpicker.dll ───────────────────────────────────────────────────────────────
+# Generic file picker bridge: dispatches to system or office picker based on
+# desktop environment and SvtMiscOptions.
+cc_binary(
+    name = "fpicker",
+    srcs = [
+        "source/generic/fpicker.cxx",
+        "inc/pch/precompiled_fpicker.hxx",
+    ],
+    copts = _COPTS + [
+        "/Imain/fpicker/inc/pch",
+    ],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/fpicker.def",
+    deps = _COMMON_DEPS + [
+        "//main/tools:tools_headers",
+        "//main/vcl:vcl_headers",
+        "//main/svl:svl_headers",
+        "//main/svtools:svtools_headers",
+    ],
+    additional_linker_inputs = _COMMON_IMPLIBS + [
+        "//main/tools:tl_implib",
+        "//main/vcl:vcl_implib",
+        "//main/svl:svl_implib",
+        "//main/svtools:svt_implib",
+    ],
+    linkopts = _COMMON_LINKOPTS + [
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "fpicker_implib",
+    srcs = [":fpicker"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)

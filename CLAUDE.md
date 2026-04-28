@@ -169,7 +169,7 @@ UnoControls   ✅  (ctl.dll) — main/UnoControls/readme.md
 dtrans        ✅  (dtrans.dll, mcnttype.dll, dnd.dll, ftransl.dll, sysdtrans.dll) — main/dtrans/readme.md
 svgio         ✅  (svgio.dll) — main/svgio/readme.md
 lingucomponent ✅ (spell.dll, hyphen.dll, lnth.dll, guesslang.dll) — main/lingucomponent/readme.md
-fpicker       ⬜  (vcl, toolkit, svtools — file picker dialog)
+fpicker       ✅  (fps.dll, fop.dll, fps_office.dll, fpicker.dll) — main/fpicker/readme.md
 mysqlc        ⬜  (connectivity — MySQL/MariaDB native connector)
 ── Layer 15 ─────────────────────────────────────────────────────────────
 formula       ⬜  (svl, svx, tools, i18npool — formula bar/parser)

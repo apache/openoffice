@@ -1,0 +1,5 @@
+; Windows export file for fps_office.dll
+LIBRARY fps_office
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

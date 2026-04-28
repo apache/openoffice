@@ -1,0 +1,5 @@
+; Windows export file for fop.dll
+LIBRARY fop
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

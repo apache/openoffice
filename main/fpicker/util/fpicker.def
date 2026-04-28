@@ -1,0 +1,5 @@
+; Windows export file for fpicker.dll
+LIBRARY fpicker
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory
