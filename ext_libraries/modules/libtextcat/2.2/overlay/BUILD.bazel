@@ -1,0 +1,47 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+_SRCS = [
+    "src/common.c",
+    "src/fingerprint.c",
+    "src/textcat.c",
+    "src/utf8misc.c",
+    "src/wg_mempool.c",
+]
+
+_HDRS = [
+    "src/common.h",
+    "src/config.h",
+    "src/constants.h",
+    "src/fingerprint.h",
+    "src/textcat.h",
+    "src/utf8misc.h",
+    "src/wg_mempool.h",
+]
+
+cc_library(
+    name = "libtextcat",
+    srcs = _SRCS,
+    hdrs = _HDRS,
+    strip_include_prefix = "src",
+    include_prefix = "libtextcat",
+    copts = select({
+        "@platforms//os:windows": [
+            "/Isrc",
+            "/W3",
+            "/wd4996",
+            "/wd4244",
+            "/wd4267",
+            "/wd4018",
+            "/wd4028",
+        ],
+        "//conditions:default": ["-Isrc", "-w"],
+    }),
+    defines = select({
+        "@platforms//os:windows": [
+            "WIN32",
+            "_CRT_SECURE_NO_WARNINGS",
+        ],
+        "//conditions:default": [],
+    }),
+    visibility = ["//visibility:public"],
+)

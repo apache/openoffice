@@ -1,0 +1,5 @@
+; Windows export file for spell.dll
+LIBRARY spell
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

@@ -168,7 +168,7 @@ eventattacher ✅  (evtatt.dll) — main/eventattacher/readme.md
 UnoControls   ✅  (ctl.dll) — main/UnoControls/readme.md
 dtrans        ✅  (dtrans.dll, mcnttype.dll, dnd.dll, ftransl.dll, sysdtrans.dll) — main/dtrans/readme.md
 svgio         ✅  (svgio.dll) — main/svgio/readme.md
-lingucomponent ⬜ (linguistic, i18npool — hunspell, thesaurus, hyphenation engines)
+lingucomponent ✅ (spell.dll, hyphen.dll, lnth.dll, guesslang.dll) — main/lingucomponent/readme.md
 fpicker       ⬜  (vcl, toolkit, svtools — file picker dialog)
 mysqlc        ⬜  (connectivity — MySQL/MariaDB native connector)
 ── Layer 15 ─────────────────────────────────────────────────────────────

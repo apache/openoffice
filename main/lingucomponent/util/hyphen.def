@@ -1,0 +1,5 @@
+; Windows export file for hyphen.dll
+LIBRARY hyphen
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

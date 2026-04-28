@@ -1,0 +1,19 @@
+{
+    "url": "https://sourceforge.net/projects/oooextras.mirror/files/128cfc86ed5953e57fe0f5ae98b62c2e-libtextcat-2.2.tar.gz",
+    "integrity": "sha256-Vne63/xIqNMy40XqT+Il41d/U/yV3u7IMGAAslaCllU=",
+    "strip_prefix": "libtextcat-2.2",
+    "overlay": {
+        "MODULE.bazel": "sha256-NL9f8BE/lCD9M7NdjT+PA4eonNTCVbP9jsMsaUpZLOA=",
+        "BUILD.bazel": "sha256-x1BTYRrFCkLqbbKEsPme1WrGp72vO4JM8NuQjBKeMgk=",
+        "src/constants.h": "sha256-/JNJVyGmiOGv+WYGzJPZrYiNjoGPKMu8f0SK2SKYBrU=",
+        "src/common.h": "sha256-J6zCa026zcox3HrofPjjSyeDBGjYPmTmqa85tdvFfrI=",
+        "src/common.c": "sha256-9MJkVHxNfcQ+5gx1MNG6JMpoc2SXsUmc61PN83exFG8=",
+        "src/fingerprint.c": "sha256-O8pwTs8640wMpGRFUKwHL/hjZ6kzjFos6KO6erBNwPg=",
+        "src/fingerprint.h": "sha256-tdR/V9/XL525nojh6uT1gzKU57jYFwXGAeGemjiP2ME=",
+        "src/textcat.c": "sha256-T5hBb6u1XoQ9DranpI+dIjaYUcgv/jRCT0Tb0kZ8ITM=",
+        "src/textcat.h": "sha256-gdmOgIYAKQYlmFcgJsj53+5f0ZKM72pOpxPE2+R2KSo=",
+        "src/config.h": "sha256-WIOH12ImgXCkzznEY+wJWYeGp233iofNVr3HRTPzUYU=",
+        "src/utf8misc.h": "sha256-G6oEbqYiozVxXkiwIr4cAOvrlG+QJzSQ02bEdjXM2gY=",
+        "src/utf8misc.c": "sha256-r9cYPOt+eAP+O0/zvZqoCBcT4w7dbgGZVBDw/pmFD10="
+    }
+}

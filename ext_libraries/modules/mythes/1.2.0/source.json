@@ -1,0 +1,13 @@
+{
+    "url": "https://sourceforge.net/projects/hunspell/files/MyThes/1.2.0/mythes-1.2.0.tar.gz",
+    "integrity": "sha256-nSnLpDEoEqJrFO/9os9WKE5wImzczJCoOEQpfjt0mO4=",
+    "strip_prefix": "mythes-1.2.0",
+    "overlay": {
+        "MODULE.bazel": "sha256-xf1bmWqZaSatgcDud8NfzbS5iFiHQeC5n63IP8CjzKo=",
+        "BUILD.bazel": "sha256-CAYeMD1yswe35MIUOh2GHiX1jfk95V0bTQiyjkb+C4I="
+    },
+    "patches": {
+        "aoo-overflow.patch": "sha256-1fpGKuWHIbxGk1WNc9T869wb1Hs7oQ6Tr719tQ0Bl/o="
+    },
+    "patch_strip": 2
+}

@@ -1,0 +1,13 @@
+{
+    "url": "https://sourceforge.net/projects/hunspell/files/Hunspell/1.3.3/hunspell-1.3.3.tar.gz",
+    "integrity": "sha256-p7LA3g4s4XQmgh3BrI6xFQKZWbOtqdgKgXOfoZNzJGw=",
+    "strip_prefix": "hunspell-1.3.3",
+    "overlay": {
+        "MODULE.bazel": "sha256-gtjvPdV6XM03yGBHzu8li6Ch414Sf4Owi5PtnMhlEas=",
+        "BUILD.bazel": "sha256-dzl6Psy2hOr1WwQQsdL49h5jQC48Q/LxwS3+NvTcCgU="
+    },
+    "patches": {
+        "aoo-overflow.patch": "sha256-0VuuSy4evfbXX07qYIHse0zq4mkvi6HjCasxoVJss/Q="
+    },
+    "patch_strip": 0
+}

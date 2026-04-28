@@ -1,0 +1,26 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+cc_library(
+    name = "mythes",
+    srcs = ["mythes.cxx"],
+    hdrs = ["mythes.hxx"],
+    includes = ["."],
+    copts = select({
+        "@platforms//os:windows": [
+            "/W3",
+            "/wd4996",
+            "/wd4244",
+            "/wd4267",
+            "/wd4018",
+        ],
+        "//conditions:default": ["-w"],
+    }),
+    defines = select({
+        "@platforms//os:windows": [
+            "WIN32",
+            "_CRT_SECURE_NO_WARNINGS",
+        ],
+        "//conditions:default": [],
+    }),
+    visibility = ["//visibility:public"],
+)

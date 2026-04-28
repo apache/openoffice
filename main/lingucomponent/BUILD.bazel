@@ -1,0 +1,189 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT",
+    "GUI",
+    "WIN32",
+    "_WINDOWS",
+    "CPPU_ENV=msci",
+    "INTEL",
+    "_X86_=1",
+    "snprintf=_snprintf",
+    "SUPD=680",
+]
+
+_COPTS = [
+    "/Zc:wchar_t-",
+]
+
+# Header-only deps — safe for cc_library
+_HDR_DEPS = [
+    "//main/sal:sal_headers",
+    "//main/tools:tools_headers",
+    "//main/unotools:unotools_headers",
+    "//main/i18npool:i18npool_headers",
+    "//main/linguistic:linguistic_headers",
+    "//main/udkapi:udkapi_idl_headers",
+    "//main/offapi:offapi_idl_headers",
+]
+
+# Common implibs for all four component DLLs
+_IMPLIBS = [
+    "//main/sal:sal_implib",
+    "//main/cppu:cppu3_implib",
+    "//main/cppuhelper:cppuhelper_implib",
+    "//main/tools:tl_implib",
+    "//main/unotools:utl_implib",
+    "//main/i18npool:i18nisolang1_implib",
+    "//main/linguistic:lng_implib",
+]
+
+_IMPLIB_LINKOPTS = [
+    "$(execpath //main/sal:sal_implib)",
+    "$(execpath //main/cppu:cppu3_implib)",
+    "$(execpath //main/cppuhelper:cppuhelper_implib)",
+    "$(execpath //main/tools:tl_implib)",
+    "$(execpath //main/unotools:utl_implib)",
+    "$(execpath //main/i18npool:i18nisolang1_implib)",
+    "$(execpath //main/linguistic:lng_implib)",
+    "/MANIFEST:NO",
+]
+
+# ---------- shared utility static lib ----------
+cc_library(
+    name = "ulingu",
+    srcs = ["source/lingutil/lingutil.cxx"],
+    hdrs = ["source/lingutil/lingutil.hxx"] + glob(["inc/pch/*.hxx"]),
+    copts = _COPTS + ["/Imain/lingucomponent/inc/pch"],
+    defines = _DEFINES,
+    includes = ["source/lingutil"],
+    deps = _HDR_DEPS,
+)
+
+# ---------- spell.dll (hunspell spellchecker) ----------
+cc_binary(
+    name = "spell",
+    srcs = [
+        "source/spellcheck/spell/sspellimp.cxx",
+        "source/spellcheck/spell/sreg.cxx",
+    ] + glob(["source/spellcheck/spell/*.hxx"]),
+    copts = _COPTS + [
+        "/Imain/lingucomponent/source/lingutil",
+        "/Imain/lingucomponent/source/spellcheck/spell",
+        "/Imain/lingucomponent/inc/pch",
+    ],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/spell.def",
+    deps = [
+        ":ulingu",
+        "@hunspell//:hunspell",
+    ] + _HDR_DEPS,
+    additional_linker_inputs = _IMPLIBS + [
+        "//main/svl:svl_implib",
+        "//main/ucbhelper:ucbhelper_implib",
+    ],
+    linkopts = _IMPLIB_LINKOPTS + [
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/ucbhelper:ucbhelper_implib)",
+    ],
+)
+
+filegroup(
+    name = "spell_implib",
+    srcs = [":spell"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ---------- hyphen.dll (hyphenator) ----------
+cc_binary(
+    name = "hyphen_uno",
+    srcs = [
+        "source/hyphenator/altlinuxhyph/hyphen/hyphenimp.cxx",
+        "source/hyphenator/altlinuxhyph/hyphen/hreg.cxx",
+    ] + glob(["source/hyphenator/altlinuxhyph/hyphen/*.hxx"]),
+    copts = _COPTS + [
+        "/Imain/lingucomponent/source/lingutil",
+        "/Imain/lingucomponent/source/hyphenator/altlinuxhyph/hyphen",
+        "/Imain/lingucomponent/inc/pch",
+    ],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/hyphen.def",
+    deps = [
+        ":ulingu",
+        "@hyphen//:hyphen",
+    ] + _HDR_DEPS,
+    additional_linker_inputs = _IMPLIBS,
+    linkopts = _IMPLIB_LINKOPTS,
+)
+
+filegroup(
+    name = "hyphen_uno_implib",
+    srcs = [":hyphen_uno"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ---------- lnth.dll (mythes thesaurus) ----------
+cc_binary(
+    name = "lnth",
+    srcs = [
+        "source/thesaurus/libnth/nthesimp.cxx",
+        "source/thesaurus/libnth/nthesdta.cxx",
+        "source/thesaurus/libnth/ntreg.cxx",
+    ] + glob(["source/thesaurus/libnth/*.hxx"]),
+    copts = _COPTS + [
+        "/Imain/lingucomponent/source/lingutil",
+        "/Imain/lingucomponent/source/thesaurus/libnth",
+        "/Imain/lingucomponent/inc/pch",
+    ],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/lnth.def",
+    deps = [
+        ":ulingu",
+        "@mythes//:mythes",
+    ] + _HDR_DEPS,
+    additional_linker_inputs = _IMPLIBS,
+    linkopts = _IMPLIB_LINKOPTS,
+)
+
+filegroup(
+    name = "lnth_implib",
+    srcs = [":lnth"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ---------- guesslang.dll (libtextcat language guesser) ----------
+cc_binary(
+    name = "guesslang",
+    srcs = [
+        "source/languageguessing/guesslang.cxx",
+        "source/languageguessing/simpleguesser.cxx",
+        "source/languageguessing/guess.cxx",
+        "source/languageguessing/altstrfunc.cxx",
+    ] + glob(["source/languageguessing/*.hxx"]),
+    copts = _COPTS + [
+        "/Imain/lingucomponent/source/languageguessing",
+        "/Imain/lingucomponent/inc/pch",
+    ],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/guesslang.def",
+    deps = [
+        ":ulingu",
+        "@libtextcat//:libtextcat",
+    ] + _HDR_DEPS,
+    additional_linker_inputs = _IMPLIBS,
+    linkopts = _IMPLIB_LINKOPTS,
+)
+
+filegroup(
+    name = "guesslang_implib",
+    srcs = [":guesslang"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)

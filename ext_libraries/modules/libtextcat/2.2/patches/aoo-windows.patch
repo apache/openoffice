@@ -1,0 +1,91 @@
+--- src/constants.h	2026-04-28 07:22:20.642575300 +0200
++++ src/constants.h	2026-04-28 07:32:26.417903800 +0200
+@@ -39,6 +39,8 @@
+  */
+ #include <limits.h>
+ 
++#define _UTF8_
++
+ #define DESCRIPTION "out of place"
+ 
+ /* Reported matches are those fingerprints with a score less than best
+@@ -59,14 +61,21 @@
+ /* Maximum number of n-grams in a fingerprint */
+ #define MAXNGRAMS  400
+ 
+-/* Maximum size of an n-gram? */
+-#define MAXNGRAMSIZE 5
++/* Maximum number of characters per n-gram symbol */
++#define MAXNGRAMSYMBOL 5
++
++/* Maximum byte-size of an n-gram string (must accommodate UTF-8) */
++#ifdef _UTF8_
++#define MAXNGRAMSIZE 20
++#else
++#define MAXNGRAMSIZE MAXNGRAMSYMBOL
++#endif
+ 
+ /* Which characters are not acceptable in n-grams? */
+-#define INVALID(c) (isspace((int)c) || isdigit((int)c)) 
++#define INVALID(c) (isspace((unsigned char)c) || isdigit((unsigned char)c)) 
+ 
+ /* Minimum size (in characters) for accepting a document */
+-#define MINDOCSIZE  25
++#define MINDOCSIZE  6
+ 
+ /* Maximum penalty for missing an n-gram in fingerprint */
+ #define MAXOUTOFPLACE 400
+@@ -76,4 +85,6 @@
+ 
+ #define MAXSCORE  INT_MAX
+ 
++#define DEFAULT_FINGERPRINTS_PATH ""
++
+ #endif
+--- src/common.h	2026-04-28 07:22:20.642575300 +0200
++++ src/common.h	2026-04-28 07:32:26.417903800 +0200
+@@ -86,10 +86,12 @@
+ typedef char		boole;
+ #endif
+ 
++#ifdef HAVE_GETTIMEOFDAY
+ typedef struct wgtimer_s {
+         struct timeval start;
+         struct timeval stop;
+ } wgtimer_t;
++#endif
+ 
+ 
+ extern void *wg_malloc( size_t size );
+@@ -101,8 +103,10 @@
+ 
+ extern char *wg_getline( char *line, int size, FILE *fp );
+ 
++#ifdef HAVE_GETTIMEOFDAY
+ extern void wg_timerstart(wgtimer_t *t);
+ extern uint4 wg_timerstop(wgtimer_t *t);
++#endif
+ 
+ extern unsigned int wg_split( char **result, char *dest, char *src, int maxsegments );
+ extern char *wg_strgmov( char *dest, const char *src, const char *destlimit );
+--- src/fingerprint.c	2026-04-28 07:22:20.604323800 +0200
++++ src/fingerprint.c	2026-04-28 07:32:26.418902600 +0200
+@@ -63,6 +63,10 @@
+  * - put table/heap datastructure in a separate file.
+  */
+ 
++#ifndef _UTF8_
++#define _UTF8_
++#endif
++
+ #include "config.h"
+ #include <stdio.h>
+ #ifdef HAVE_STDLIB_H
+@@ -79,6 +83,7 @@
+ #include "common.h"
+ #include "wg_mempool.h"
+ #include "constants.h"
++#include "utf8misc.h"
+ 
+ 
+ #define TABLESIZE  (1<<TABLEPOW)

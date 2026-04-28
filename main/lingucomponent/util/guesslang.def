@@ -1,0 +1,5 @@
+; Windows export file for guesslang.dll
+LIBRARY guesslang
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

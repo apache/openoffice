@@ -1,0 +1,9 @@
+{
+    "url": "https://sourceforge.net/projects/hunspell/files/Hyphen/2.7/hyphen-2.7.1.tar.gz",
+    "integrity": "sha256-1VR7ljqJDLwO3Q6ShuPMvxCkz/MGeJHIzoCNMEAtWLg=",
+    "strip_prefix": "hyphen-2.7.1",
+    "overlay": {
+        "MODULE.bazel": "sha256-c5wY8wNp5IG6CfhoqaeAtHs7LVhm/l2y4eUPX2Eqbos=",
+        "BUILD.bazel": "sha256-ZsY1q4Z5t175/fU2RvcAXDIbfEo9XKXZ2t0/z3RbAhg="
+    }
+}

@@ -1,0 +1,60 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+# Hunspell 1.3.3 — spell-checking library
+# Sources from src/hunspell/; Windows config.h from src/win_api/.
+# Compiled as static library; consumers include <hunspell.hxx>.
+
+_SRCS = [
+    "src/hunspell/affentry.cxx",
+    "src/hunspell/affixmgr.cxx",
+    "src/hunspell/csutil.cxx",
+    "src/hunspell/dictmgr.cxx",
+    "src/hunspell/filemgr.cxx",
+    "src/hunspell/hashmgr.cxx",
+    "src/hunspell/hunspell.cxx",
+    "src/hunspell/hunzip.cxx",
+    "src/hunspell/phonet.cxx",
+    "src/hunspell/replist.cxx",
+    "src/hunspell/suggestmgr.cxx",
+]
+
+_HDRS = glob([
+    "src/hunspell/*.hxx",
+    "src/hunspell/hunspell.h",
+    "src/hunspell/hunvisapi.h",
+    "src/win_api/config.h",
+])
+
+cc_library(
+    name = "hunspell",
+    srcs = _SRCS,
+    hdrs = _HDRS,
+    # Expose src/hunspell/ so consumers can #include <hunspell.hxx>
+    includes = ["src/hunspell", "src/win_api"],
+    copts = select({
+        "@platforms//os:windows": [
+            "/W3",
+            "/wd4996",  # deprecated POSIX names
+            "/wd4244",  # conversion, possible loss of data
+            "/wd4267",  # size_t -> int
+            "/wd4018",  # signed/unsigned mismatch
+            "/wd4305",  # truncation from double to float
+            "/wd4309",  # truncation of constant value
+            "/wd4065",  # switch has default but no case labels
+            "/wd4702",  # unreachable code
+        ],
+        "//conditions:default": [
+            "-Isrc/win_api",
+            "-w",
+        ],
+    }),
+    defines = select({
+        "@platforms//os:windows": [
+            "WIN32",
+            "_CRT_SECURE_NO_WARNINGS",
+            "BUILDING_LIBHUNSPELL",
+        ],
+        "//conditions:default": ["BUILDING_LIBHUNSPELL"],
+    }),
+    visibility = ["//visibility:public"],
+)

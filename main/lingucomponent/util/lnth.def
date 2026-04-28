@@ -1,0 +1,5 @@
+; Windows export file for lnth.dll
+LIBRARY lnth
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

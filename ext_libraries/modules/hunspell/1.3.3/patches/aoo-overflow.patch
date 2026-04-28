@@ -1,0 +1,23 @@
+--- src/hunspell/affixmgr.cxx	2026-04-28 07:44:07.882070200 +0200
++++ src/hunspell/affixmgr.cxx	2026-04-28 07:50:52.032275100 +0200
+@@ -8,6 +8,8 @@
+ 
+ #include <vector>
+ 
++#include <limits>
++
+ #include "affixmgr.hxx"
+ #include "affentry.hxx"
+ #include "langnum.hxx"
+@@ -4238,7 +4240,10 @@
+              case 3: { 
+                        np++;
+                        numents = atoi(piece); 
+-                       if (numents == 0) {
++                       if ((numents <= 0) ||
++                           ((::std::numeric_limits<size_t>::max()
++                                / sizeof(struct affentry)) < (size_t)numents))
++                       {
+                            char * err = pHMgr->encode_flag(aflag);
+                            if (err) {
+                                 HUNSPELL_WARNING(stderr, "error: line %d: bad entry number\n",
