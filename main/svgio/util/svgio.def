@@ -1,0 +1,5 @@
+; Windows export file for svgio.dll
+LIBRARY svgio
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

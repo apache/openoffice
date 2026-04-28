@@ -1,0 +1,91 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+    "snwprintf=_snwprintf",
+    "SUPD=680",
+]
+
+_COPTS = [
+    "/Imain/svgio/inc",
+    "/Imain/svgio/inc/pch",
+    "/Zc:wchar_t-",
+]
+
+# ── Public headers ─────────────────────────────────────────────────────────────
+cc_library(
+    name = "svgio_headers",
+    hdrs = glob([
+        "inc/svgio/svgiodllapi.h",
+        "inc/svgio/svgreader/*.hxx",
+    ]),
+    strip_include_prefix = "inc",
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/tools:tools_headers",
+        "//main/basegfx:basegfx_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/vcl:vcl_headers",
+        "//main/svtools:svtools_headers",
+        "//main/drawinglayer:drawinglayer_headers",
+        "//main/stlport:stlport",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── svgio.dll ──────────────────────────────────────────────────────────────────
+# UNO component providing SVG parsing (com.sun.star.graphic.SvgTools).
+cc_binary(
+    name = "svgio",
+    srcs = glob([
+        "source/svgreader/*.cxx",
+        "source/svguno/*.cxx",
+    ]),
+    copts = _COPTS,
+    defines = _DEFINES + ["SVGIO_DLLIMPLEMENTATION"],
+    linkshared = True,
+    win_def_file = "util/svgio.def",
+    deps = [":svgio_headers"],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/basegfx:basegfx_implib",
+        "//main/tools:tl_implib",
+        "//main/sax:sax_implib",
+        "//main/vcl:vcl_implib",
+        "//main/svtools:svt_implib",
+        "//main/drawinglayer:drawinglayer_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/basegfx:basegfx_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/sax:sax_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+        "$(execpath //main/drawinglayer:drawinglayer_implib)",
+        "gdi32.lib", "user32.lib", "ole32.lib", "advapi32.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "svgio_implib",
+    srcs = [":svgio"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
