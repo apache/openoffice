@@ -1,0 +1,71 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary")
+
+# mysqlc — MySQL native SDBC driver extension
+# Produces mysqlc.uno.dll (UNO component registered as sdbc:mysqlc:*)
+# Requires MySQL Connector/C++ 1.1.x SDK — see
+# ext_libraries/modules/mysqlcppconn/1.1.12/README.md for setup.
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+    "SUPD=680",
+    "CPPDBC_EXPORTS",
+    "CPPCONN_LIB_BUILD",
+    "MYSQLC_VERSION_MAJOR=1",
+    "MYSQLC_VERSION_MINOR=0",
+    "MYSQLC_VERSION_MICRO=1",
+    "SYSTEM_MYSQL",
+]
+
+_COPTS = [
+    "/Zc:wchar_t-",
+    "/Imain/mysqlc/source",
+    "/wd4100",  # unreferenced formal parameter
+    "/wd4512",  # assignment operator could not be generated
+    "/wd4996",  # deprecated POSIX names
+]
+
+cc_binary(
+    name = "mysqlc",
+    srcs = glob(["source/*.cxx", "source/*.hxx"]),
+    copts = _COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "source/mysqlc.def",
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/salhelper:salhelper_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/salhelper:salhelper_implib)",
+        "ole32.lib", "user32.lib", "advapi32.lib",
+        "/MANIFEST:NO",
+        "/NODEFAULTLIB:LIBCMT",
+    ],
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/salhelper:salhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/stlport:stlport",
+        "@mysqlcppconn//:cppconn",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "mysqlc_implib",
+    srcs = [":mysqlc"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)

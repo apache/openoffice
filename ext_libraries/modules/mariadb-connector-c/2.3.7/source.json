@@ -1,0 +1,12 @@
+{
+    "integrity": "sha256-5WzqBeqSxMU6XCxLYEPd51mvnh5RweirP/kRg5sWq5w=",
+    "strip_prefix": "mariadb-connector-c-v_2.3.7",
+    "url": "https://github.com/mariadb-corporation/mariadb-connector-c/archive/refs/tags/v_2.3.7.zip",
+    "overlay": {
+        "MODULE.bazel": "sha256-k8HuYIOryCL/xPZJdE4jzfOgPckyuwdb0X32/fXQQBg=",
+        "BUILD.bazel": "sha256-OVob1l2pmNHv2rCNh/2Zu1HyW46WxLh7c/nzEQos4JA=",
+        "cmake/ConnectorName.cmake": "sha256-sgj29Y82ZTI7o2sd8HSD4rK5qDVdSt4i6tQURxsjF38=",
+        "include/mysql.h": "sha256-qtgc1JL8x00XMpYJbQCGW5C5ybs+BmfrybVJmB+3uwQ=",
+        "include/errmsg.h": "sha256-Re4nkCLtV2B82L51S05FcLiWCztmA0g6dMvP9xiNGfU="
+    }
+}

@@ -1,0 +1,61 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+package(default_visibility = ["//visibility:public"])
+
+# MySQL Connector/C++ 1.1.12 — built as a static Bazel cc_library.
+#
+# Using native Bazel rules rather than cmake() avoids cmake FindMySQL.cmake
+# probing for "mysqlclient" / "libmysql" by name when the actual library from
+# mariadb-connector-c is named "libmariadb".
+#
+# Public include paths:
+#   <cppconn/driver.h>        via includes = ["."]
+#   <mysql_driver.h>          via includes = ["driver"]
+#   <mysql_connection.h>      via includes = ["driver"]
+
+cc_library(
+    name = "cppconn",
+    srcs = glob(
+        [
+            "driver/*.cpp",
+            "driver/nativeapi/*.cpp",
+            "driver/nativeapi/*.h",
+        ],
+        exclude = [
+            # Dynamic-binding path: LoadLibrary at runtime.
+            # Excluded because MYSQLCLIENT_STATIC_BINDING=1 links mariadbclient.lib directly.
+            "driver/nativeapi/libmysql_dynamic_proxy.cpp",
+            "driver/nativeapi/library_loader.cpp",
+            # mysql_client_api.cpp #include "libmysql_static_proxy.cpp" when
+            # MYSQLCLIENT_STATIC_BINDING=1; compiling it separately causes duplicate symbols.
+            "driver/nativeapi/libmysql_static_proxy.cpp",
+        ],
+    ),
+    hdrs = glob([
+        "cppconn/*.h",
+        "driver/*.h",
+    ]),
+    # "."      → #include <cppconn/driver.h>
+    # "driver" → #include <mysql_driver.h>
+    # "cppconn" → nativeapi files use #include <sqlstring.h> (no cppconn/ prefix)
+    includes = [".", "driver", "cppconn"],
+    copts = [
+        "/Zc:wchar_t-",
+        "/wd4100",  # unreferenced formal parameter
+        "/wd4512",  # assignment operator could not be generated
+        "/wd4996",  # deprecated POSIX names
+        "/wd4244",  # conversion, possible loss of data
+        "/wd4267",  # size_t → int conversion
+    ],
+    defines = [
+        "WIN32",
+        "CPPDBC_EXPORTS",
+        "CPPCONN_LIB_BUILD",
+        "snprintf=_snprintf",
+    ],
+    deps = [
+        "@mariadb-connector-c//:mariadb",
+        "@boost.legacy//:boost.legacy",
+    ],
+    visibility = ["//visibility:public"],
+)

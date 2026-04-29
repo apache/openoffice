@@ -1,0 +1,13 @@
+{
+    "integrity": "sha256-0GOWxeON1ER6uOZuH6+3F1+lunE2pcXimaOss5PCQtE=",
+    "strip_prefix": "mysql-connector-cpp-1.1.12",
+    "url": "https://github.com/mysql/mysql-connector-cpp/archive/refs/tags/1.1.12.tar.gz",
+    "overlay": {
+        "MODULE.bazel": "sha256-ZIHNmSCgq3CdpI0ap2SdwQ7dURwmPYgnnOWAVE6HrtA=",
+        "BUILD.bazel": "sha256-19IiAAMqFi0NEnKQx/LzxYSIAqvA2vs8vbwFo2ls7og=",
+        "cppconn/config.h": "sha256-g2G/fMoFer8e7Ql46WGSD6i/S9ui+WwZf+i0nUCA9gA=",
+        "driver/nativeapi/binding_config.h": "sha256-CR7myCnrGVT9yW2LjxXuezs3OmWo5WbsGoTAZgXj3Is=",
+        "cppconn/version_info.h": "sha256-lQdxsg9E0O+l7ipKzT9wuLBfSgBeaf9MkYiMUPMomiI=",
+        "driver/version_info.h": "sha256-1Xv8blJPK1iv+XfzxpEy/cWGPTSEOompt7RpmMVd7gA="
+    }
+}

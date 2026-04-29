@@ -30,7 +30,10 @@ bazel_dep(name = "hunspell",                     version = "1.3.3")
 bazel_dep(name = "hyphen",                       version = "2.7.1")
 bazel_dep(name = "mythes",                       version = "1.2.0")
 bazel_dep(name = "libtextcat",                   version = "2.2")
+bazel_dep(name = "mysqlcppconn",                 version = "1.1.12")
+bazel_dep(name = "mariadb-connector-c",          version = "2.3.7")
 bazel_dep(name = "rules_java",             version = "8.11.0")
+
 
 register_toolchains("//build/toolchain:cc_toolchain_x86_vs2008_def")
 # Use preinstalled pkg-config instead of building it from source (building it

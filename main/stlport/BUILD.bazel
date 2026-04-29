@@ -6,6 +6,6 @@ load("@rules_cc//cc:defs.bzl", "cc_library")
 cc_library(
     name = "stlport",
     hdrs = glob(["systemstl/*", "systemstlguards/*.h"]),
-    includes = ["systemstl"],
+    includes = ["systemstl", "systemstlguards"],
     visibility = ["//visibility:public"],
 )

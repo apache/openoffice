@@ -170,7 +170,7 @@ dtrans        ✅  (dtrans.dll, mcnttype.dll, dnd.dll, ftransl.dll, sysdtrans.dl
 svgio         ✅  (svgio.dll) — main/svgio/readme.md
 lingucomponent ✅ (spell.dll, hyphen.dll, lnth.dll, guesslang.dll) — main/lingucomponent/readme.md
 fpicker       ✅  (fps.dll, fop.dll, fps_office.dll, fpicker.dll) — main/fpicker/readme.md
-mysqlc        ⬜  (connectivity — MySQL/MariaDB native connector)
+mysqlc        ✅  (mysqlc.uno.dll — MySQL/MariaDB SDBC driver via mysqlcppconn+mariadb-connector-c) — main/mysqlc/readme.md
 ── Layer 15 ─────────────────────────────────────────────────────────────
 formula       ⬜  (svl, svx, tools, i18npool — formula bar/parser)
 animations    ⬜  (vcl, comphelper, tools — drawing layer animations)

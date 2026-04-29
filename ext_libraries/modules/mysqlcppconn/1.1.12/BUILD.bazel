@@ -1,0 +1,49 @@
+load("@rules_cc//cc:defs.bzl", "cc_import", "cc_library")
+
+package(default_visibility = ["//visibility:public"])
+
+# MySQL Connector/C++ 1.1.x prebuilt SDK wrapper (Windows x86 / VS2008)
+#
+# Download the MySQL Connector/C++ 1.1.12 Windows x86 binary package from:
+#   https://dev.mysql.com/downloads/connector/cpp/
+# (Select "Windows (x86, 32-bit), ZIP Archive" for version 1.1.12)
+#
+# Extract the zip contents directly into this directory so the layout is:
+#   include/cppconn/connection.h
+#   include/cppconn/driver.h
+#   include/cppconn/exception.h
+#   include/cppconn/resultset.h
+#   include/cppconn/statement.h
+#   include/cppconn/prepared_statement.h
+#   include/cppconn/resultset_metadata.h
+#   include/cppconn/metadata.h
+#   include/cppconn/warning.h
+#   include/mysql_driver.h
+#   include/mysql_connection.h
+#   lib/opt/mysqlcppconn.lib     <- release import lib
+#   lib/opt/mysqlcppconn.dll
+#
+# If your package places the .lib elsewhere (e.g. lib/ flat), adjust the
+# interface_library and shared_library paths in the cc_import below.
+
+cc_import(
+    name = "mysqlcppconn_prebuilt",
+    interface_library = "lib/opt/mysqlcppconn.lib",
+    shared_library = "lib/opt/mysqlcppconn.dll",
+)
+
+cc_library(
+    name = "cppconn",
+    hdrs = glob(
+        [
+            "include/cppconn/*.h",
+            "include/mysql_driver.h",
+            "include/mysql_connection.h",
+            "include/mysql_error.h",
+        ],
+        allow_empty = False,
+    ),
+    includes = ["include"],
+    deps = [":mysqlcppconn_prebuilt"],
+    visibility = ["//visibility:public"],
+)

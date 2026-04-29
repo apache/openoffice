@@ -1,0 +1,37 @@
+load("@rules_foreign_cc//foreign_cc:defs.bzl", "cmake")
+
+package(default_visibility = ["//visibility:public"])
+
+filegroup(
+    name = "all_srcs",
+    srcs = glob(["**"], exclude = ["*.bazel"]),
+)
+
+# MariaDB Connector/C 2.3.7 - ABI-compatible libmysql replacement.
+#
+# The cmake always builds both targets regardless of BUILD_SHARED_LIBS:
+#   libmariadb  (SHARED) -> libmariadb.dll  [not used by AOO]
+#   mariadbclient (STATIC) -> mariadbclient.lib  [this is what we link]
+#
+# Install layout:
+#   include/mariadb/  -> mysql.h, errmsg.h, ...
+#   lib/mariadb/      -> mariadbclient.lib, libmariadb.lib (import lib), libmariadb.dll
+cmake(
+    name = "mariadb",
+    lib_source = ":all_srcs",
+    cache_entries = {
+        # No SSL required for the SDBC driver layer
+        "WITH_OPENSSL": "OFF",
+        # VS2008 MSVCRT does not define ETIMEDOUT; map to WSAETIMEDOUT (10060).
+        # _snprintf only; suppress common conversion/deprecation warnings.
+        # /MD: dynamic CRT; prevents LIBCMT from being embedded in the static lib,
+        # which would conflict with msvcrt.lib when linking mysqlc.dll.
+        "CMAKE_C_FLAGS": "/MD /wd4996 /wd4244 /wd4267 /wd4018 /wd4133 /Dsnprintf=_snprintf /DETIMEDOUT=10060",
+    },
+    # Static lib name on Windows is the cmake target name: mariadbclient
+    out_static_libs = ["mariadbclient.lib"],
+    # cmake installs libs to lib/mariadb/ not lib/
+    out_lib_dir = "lib/mariadb",
+    # cmake installs headers to include/mariadb/ so #include <mysql.h> resolves correctly
+    out_include_dir = "include/mariadb",
+)
