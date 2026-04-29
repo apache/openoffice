@@ -1,0 +1,158 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+]
+
+# ── public headers ──────────────────────────────────────────────────
+cc_library(
+    name = "formula_headers",
+    hdrs = glob([
+        "inc/formula/**",
+        "inc/*.hxx",
+        "inc/*.hrc",
+        "inc/pch/**",
+    ]),
+    strip_include_prefix = "inc",
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/tools:tools_headers",
+        "//main/unotools:unotools_headers",
+        "//main/svl:svl_headers",
+        "//main/svtools:svtools_headers",
+        "//main/vcl:vcl_headers",
+        "@boost.legacy//:boost.legacy",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── for.dll (formula core + UNO component) ─────────────────────────
+cc_binary(
+    name = "for",
+    srcs = [
+        "inc/pch/precompiled_formula.cxx",
+        "source/core/api/FormulaCompiler.cxx",
+        "source/core/api/FormulaOpCodeMapperObj.cxx",
+        "source/core/api/services.cxx",
+        "source/core/api/token.cxx",
+        "source/core/resource/core_resource.cxx",
+    ] + glob([
+        "source/core/inc/*.hxx",
+    ]),
+    copts = [
+        "/Imain/formula/inc",
+        "/Imain/formula/inc/pch",
+        "/Imain/formula/source/core/inc",
+        "/Zc:wchar_t-",
+    ],
+    defines = _DEFINES + ["FORMULA_DLLIMPLEMENTATION"],
+    linkshared = True,
+    deps = [
+        ":formula_headers",
+        "//main/stlport:stlport",
+        "@boost.legacy//:boost.legacy",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/svl:svl_implib",
+        "//main/svtools:svt_implib",
+        "//main/vcl:vcl_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "user32.lib", "uuid.lib", "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "for_implib",
+    srcs = [":for"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── forui.dll (formula wizard UI) ──────────────────────────────────
+cc_binary(
+    name = "forui",
+    srcs = [
+        "source/ui/dlg/formula.cxx",
+        "source/ui/dlg/FormulaHelper.cxx",
+        "source/ui/dlg/parawin.cxx",
+        "source/ui/dlg/funcutl.cxx",
+        "source/ui/dlg/funcpage.cxx",
+        "source/ui/dlg/structpg.cxx",
+        "source/ui/resource/ModuleHelper.cxx",
+    ] + glob([
+        "source/ui/dlg/*.hxx",
+        "source/ui/inc/*.hxx",
+    ]),
+    copts = [
+        "/Imain/formula/inc",
+        "/Imain/formula/inc/pch",
+        "/Imain/formula/source/ui/inc",
+        "/Imain/formula/source/ui/dlg",
+        "/Zc:wchar_t-",
+    ],
+    defines = _DEFINES + ["FORMULA_DLLIMPLEMENTATION"],
+    linkshared = True,
+    deps = [
+        ":formula_headers",
+        "//main/sfx2:sfx2_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        ":for_implib",
+        "//main/sfx2:sfx_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/svl:svl_implib",
+        "//main/svtools:svt_implib",
+        "//main/vcl:vcl_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath :for_implib)",
+        "$(execpath //main/sfx2:sfx_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "user32.lib", "uuid.lib", "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "forui_implib",
+    srcs = [":forui"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)

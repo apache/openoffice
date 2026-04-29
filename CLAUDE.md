@@ -172,7 +172,7 @@ lingucomponent ✅ (spell.dll, hyphen.dll, lnth.dll, guesslang.dll) — main/lin
 fpicker       ✅  (fps.dll, fop.dll, fps_office.dll, fpicker.dll) — main/fpicker/readme.md
 mysqlc        ✅  (mysqlc.uno.dll — MySQL/MariaDB SDBC driver via mysqlcppconn+mariadb-connector-c) — main/mysqlc/readme.md
 ── Layer 15 ─────────────────────────────────────────────────────────────
-formula       ⬜  (svl, svx, tools, i18npool — formula bar/parser)
+formula       ✅  (for.dll, forui.dll) — main/formula/readme.md
 animations    ⬜  (vcl, comphelper, tools — drawing layer animations)
 chart2        ⬜  (svx, xmloff, editeng, vcl, oox, filter, formula)
 embeddedobj   ⬜  (sfx2, svx, tools — OLE embedded object framework)
