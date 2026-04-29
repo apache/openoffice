@@ -502,6 +502,14 @@ class ProviderContext:
             log.debug( "mapped " + url + " to " + str( entry.module ) )
         return  entry.module
 
+    # Forgets a stale module so a fresh copy can be loaded in the future.
+    # This is necessary because getModuleByUrl()'s self.sfa.getDateTimeModified()
+    # doesn't always work, eg. for embedded scripts it always returns timestamps
+    # with all zeroes, and even if it worked, the smallest granularity for ZIP file
+    # timestamps is 2 seconds, which isn't good enough.
+    def removeModuleByUrl( self, url ):
+        del self.modules[ url ]
+
 def createEditorDialog( ctx ):
     smgr = ctx.ServiceManager
 
@@ -671,6 +679,7 @@ class ScriptBrowseNode( unohelper.Base, XBrowseNode, XPropertySet, XInvocation, 
                 self.provCtx.sfa.move( self.uri(), copyUrl )
                 log.debug( "Saving Python macro to URI " + self.uri() )
                 self.provCtx.sfa.writeFile( self.uri(), BytesInputStream( toWrite.value ) )
+                self.provCtx.removeModuleByUrl( self.uri() )
                 self.provCtx.sfa.kill( copyUrl )
         except Exception as e:
             # TODO: add an error box here !
@@ -834,6 +843,7 @@ class FileBrowseNode( unohelper.Base, XBrowseNode, XPropertySet, XInvocation, XA
                 self.provCtx.sfa.move( self.uri(), copyUrl )
                 log.debug( "Saving Python macro to URI " + self.uri() )
                 self.provCtx.sfa.writeFile( self.uri(), BytesInputStream( toWrite.value ) )
+                self.provCtx.removeModuleByUrl( self.uri() )
                 self.provCtx.sfa.kill( copyUrl )
         except Exception as e:
             # TODO: add an error box here !
