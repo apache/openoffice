@@ -1,0 +1,368 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+    "snwprintf=_snwprintf",
+    "SUPD=680",
+]
+
+# Include paths shared by all four DLLs
+_COMMON_COPTS = [
+    "/Imain/chart2/source/inc",
+    "/Imain/chart2/inc/pch",
+    "/Zc:wchar_t-",
+]
+
+# ── public headers ──────────────────────────────────────────────────
+cc_library(
+    name = "chart2_headers",
+    hdrs = glob([
+        "source/inc/**/*.hxx",
+        "source/inc/**/*.hrc",
+    ]),
+    strip_include_prefix = "source/inc",
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/tools:tools_headers",
+        "//main/basegfx:basegfx_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/vcl:vcl_headers",
+        "//main/svl:svl_headers",
+        "//main/svtools:svtools_headers",
+        "//main/unotools:unotools_headers",
+        "//main/editeng:editeng_headers",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── charttools.dll ──────────────────────────────────────────────────
+# Core utility library: regression, scaling, data helpers, property wrappers.
+# Uses OOO_DLLIMPLEMENTATION_CHARTTOOLS → __declspec(dllexport); no DEF file.
+cc_binary(
+    name = "charttools",
+    srcs = glob(
+        ["source/tools/*.cxx", "source/tools/*.hxx"],
+        exclude = [
+            "source/tools/NamedFillProperties.cxx",
+            "source/tools/NamedLineProperties.cxx",
+            "source/tools/NamedProperties.cxx",
+        ],
+    ),
+    copts = _COMMON_COPTS + [
+        "/Imain/chart2/source/tools",
+    ],
+    defines = _DEFINES + ["OOO_DLLIMPLEMENTATION_CHARTTOOLS"],
+    linkshared = True,
+    deps = [
+        ":chart2_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/tools:tl_implib",
+        "//main/svl:svl_implib",
+        "//main/vcl:vcl_implib",
+        "//main/i18npool:i18nisolang1_implib",
+        "//main/basegfx:basegfx_implib",
+        "//main/unotools:utl_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/i18npool:i18nisolang1_implib)",
+        "$(execpath //main/basegfx:basegfx_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "user32.lib", "uuid.lib", "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "charttools_implib",
+    srcs = [":charttools"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── chartmodel.dll ──────────────────────────────────────────────────
+# Data model: ChartModel, ChartType objects, XML filter.
+# Exports only UNO component entry points via DEF file.
+cc_binary(
+    name = "chartmodel",
+    srcs = glob(
+        [
+            "source/model/main/*.cxx",
+            "source/model/main/*.hxx",
+            "source/model/template/*.cxx",
+            "source/model/template/*.hxx",
+            "source/model/filter/*.cxx",
+            "source/model/inc/*.hxx",
+        ],
+        exclude = ["source/model/main/LayoutContainer.cxx"],
+    ),
+    copts = _COMMON_COPTS + [
+        "/Imain/chart2/source/model/inc",
+        "/Imain/chart2/source/model/main",
+        "/Imain/chart2/source/model/template",
+        "/Imain/chart2/source/model/filter",
+    ],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/chartmodel.def",
+    deps = [
+        ":chart2_headers",
+        "//main/framework:framework_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        ":charttools_implib",
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/unotools:utl_implib",
+        "//main/vcl:vcl_implib",
+        "//main/svl:svl_implib",
+        "//main/svtools:svt_implib",
+        "//main/ucbhelper:ucbhelper_implib",
+        "//main/framework:fwe_implib",
+        "//main/tools:tl_implib",
+    ],
+    linkopts = [
+        "$(execpath :charttools_implib)",
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+        "$(execpath //main/ucbhelper:ucbhelper_implib)",
+        "$(execpath //main/framework:fwe_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "user32.lib", "uuid.lib", "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "chartmodel_implib",
+    srcs = [":chartmodel"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── chartview.dll ───────────────────────────────────────────────────
+# Rendering: axes, chart types, diagram, view layer.
+# Uses OOO_DLLIMPLEMENTATION_CHARTVIEW → __declspec(dllexport); no DEF file.
+cc_binary(
+    name = "chartview",
+    srcs = glob(
+        [
+            "source/view/axes/*.cxx",
+            "source/view/axes/*.hxx",
+            "source/view/charttypes/*.cxx",
+            "source/view/charttypes/*.hxx",
+            "source/view/diagram/*.cxx",
+            "source/view/main/*.cxx",
+            "source/view/main/*.hxx",
+            "source/view/inc/*.hxx",
+        ],
+        exclude = ["source/view/axes/TickmarkHelper.cxx"],
+    ),
+    copts = _COMMON_COPTS + [
+        "/Imain/chart2/source/view/inc",
+        "/Imain/chart2/source/view/main",
+        "/Imain/chart2/source/view/axes",
+        "/Imain/chart2/source/view/charttypes",
+        "/Imain/chart2/source/view/diagram",
+    ],
+    defines = _DEFINES + ["OOO_DLLIMPLEMENTATION_CHARTVIEW"],
+    linkshared = True,
+    deps = [
+        ":chart2_headers",
+        "//main/svx:svx_headers",
+        "//main/sfx2:sfx2_headers",
+        "//main/editeng:editeng_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        ":charttools_implib",
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/editeng:editeng_implib",
+        "//main/svl:svl_implib",
+        "//main/svtools:svt_implib",
+        "//main/svx:svxcore_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/basegfx:basegfx_implib",
+        "//main/vcl:vcl_implib",
+        "//main/sfx2:sfx_implib",
+    ],
+    linkopts = [
+        "$(execpath :charttools_implib)",
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/editeng:editeng_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+        "$(execpath //main/svx:svxcore_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/basegfx:basegfx_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/sfx2:sfx_implib)",
+        "user32.lib", "uuid.lib", "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "chartview_implib",
+    srcs = [":chartview"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── controller .hrc resources ───────────────────────────────────────
+# Using hdrs + strip_include_prefix creates explicit symlinks in
+# bazel-out/_virtual_includes/, which MSVC can reliably find.  Plain
+# textual_hdrs relies on source-tree junctions that MSVC sometimes
+# doesn't follow for quoted includes.
+cc_library(
+    name = "chartcontroller_inc_hrc",
+    hdrs = glob(["source/controller/inc/*.hrc"]),
+    strip_include_prefix = "source/controller/inc",
+)
+
+cc_library(
+    name = "chartcontroller_dialogs_hrc",
+    hdrs = glob(["source/controller/dialogs/*.hrc"]),
+    strip_include_prefix = "source/controller/dialogs",
+)
+
+cc_library(
+    name = "chartcontroller_main_hrc",
+    hdrs = glob(["source/controller/main/*.hrc"]),
+    strip_include_prefix = "source/controller/main",
+)
+
+# ── chartcontroller.dll ─────────────────────────────────────────────
+# Controller/UI: dialogs, API wrappers, accessibility, drag methods.
+# Exports only UNO component entry points via DEF file.
+cc_binary(
+    name = "chartcontroller",
+    srcs = glob([
+        "source/controller/main/*.cxx",
+        "source/controller/main/*.hxx",
+        "source/controller/dialogs/*.cxx",
+        "source/controller/dialogs/*.hxx",
+        "source/controller/chartapiwrapper/*.cxx",
+        "source/controller/chartapiwrapper/*.hxx",
+        "source/controller/itemsetwrapper/*.cxx",
+        "source/controller/itemsetwrapper/*.hxx",
+        "source/controller/accessibility/*.cxx",
+        "source/controller/accessibility/*.hxx",
+        "source/controller/drawinglayer/*.cxx",
+        "source/controller/inc/*.hxx",
+        "source/view/inc/*.hxx",
+    ]),
+    copts = _COMMON_COPTS + [
+        "/Imain/chart2/source/controller/inc",
+        "/Imain/chart2/source/controller/main",
+        "/Imain/chart2/source/controller/dialogs",
+        "/Imain/chart2/source/controller/chartapiwrapper",
+        "/Imain/chart2/source/controller/itemsetwrapper",
+        "/Imain/chart2/source/controller/accessibility",
+        "/Imain/chart2/source/controller/drawinglayer",
+        "/Imain/chart2/source/view/inc",
+    ],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/chartcontroller.def",
+    deps = [
+        ":chart2_headers",
+        ":chartcontroller_inc_hrc",
+        ":chartcontroller_dialogs_hrc",
+        ":chartcontroller_main_hrc",
+        "//main/svx:svx_headers",
+        "//main/sfx2:sfx2_headers",
+        "//main/editeng:editeng_headers",
+        "//main/drawinglayer:drawinglayer_headers",
+        "//main/toolkit:toolkit_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        ":charttools_implib",
+        ":chartview_implib",
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/basegfx:basegfx_implib",
+        "//main/drawinglayer:drawinglayer_implib",
+        "//main/editeng:editeng_implib",
+        "//main/svl:svl_implib",
+        "//main/svtools:svt_implib",
+        "//main/svx:svxcore_implib",
+        "//main/svx:svx_implib",
+        "//main/toolkit:ootk_implib",
+        "//main/tools:tl_implib",
+        "//main/vcl:vcl_implib",
+        "//main/sfx2:sfx_implib",
+        "//main/unotools:utl_implib",
+        "//main/sot:sot_implib",
+    ],
+    linkopts = [
+        "$(execpath :charttools_implib)",
+        "$(execpath :chartview_implib)",
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/basegfx:basegfx_implib)",
+        "$(execpath //main/drawinglayer:drawinglayer_implib)",
+        "$(execpath //main/editeng:editeng_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+        "$(execpath //main/svx:svxcore_implib)",
+        "$(execpath //main/svx:svx_implib)",
+        "$(execpath //main/toolkit:ootk_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/sfx2:sfx_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/sot:sot_implib)",
+        "user32.lib", "uuid.lib", "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "chartcontroller_implib",
+    srcs = [":chartcontroller"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)

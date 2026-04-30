@@ -1,0 +1,68 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+]
+
+# ── public headers ──────────────────────────────────────────────────
+cc_library(
+    name = "animations_headers",
+    hdrs = glob(["inc/animations/**"]),
+    strip_include_prefix = "inc",
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── animcore.dll (UNO animation core component) ─────────────────────
+cc_binary(
+    name = "animcore",
+    srcs = [
+        "source/animcore/animcore.cxx",
+        "source/animcore/factreg.cxx",
+        "source/animcore/factreg.hxx",
+        "source/animcore/targetpropertiescreator.cxx",
+    ],
+    copts = [
+        "/Imain/animations/inc",
+        "/Zc:wchar_t-",
+    ],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/animcore.def",
+    deps = [
+        ":animations_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "user32.lib", "uuid.lib", "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "animcore_implib",
+    srcs = [":animcore"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)

@@ -173,8 +173,8 @@ fpicker       ✅  (fps.dll, fop.dll, fps_office.dll, fpicker.dll) — main/fpic
 mysqlc        ✅  (mysqlc.uno.dll — MySQL/MariaDB SDBC driver via mysqlcppconn+mariadb-connector-c) — main/mysqlc/readme.md
 ── Layer 15 ─────────────────────────────────────────────────────────────
 formula       ✅  (for.dll, forui.dll) — main/formula/readme.md
-animations    ⬜  (vcl, comphelper, tools — drawing layer animations)
-chart2        ⬜  (svx, xmloff, editeng, vcl, oox, filter, formula)
+animations    ✅  (animcore.dll) — main/animations/readme.md
+chart2        ✅  (charttools, chartmodel, chartview, chartcontroller) — main/chart2/readme.md
 embeddedobj   ⬜  (sfx2, svx, tools — OLE embedded object framework)
 xmlsecurity   ⬜  (xmloff, sfx2, tools, libxmlsec — XML digital signatures)
 uui           ⬜  (svtools, vcl, toolkit, sfx2 — user interaction/auth dialogs)

@@ -1,0 +1,5 @@
+LIBRARY animcore
+EXPORTS
+    component_canUnload
+    component_getFactory
+    component_getImplementationEnvironment
