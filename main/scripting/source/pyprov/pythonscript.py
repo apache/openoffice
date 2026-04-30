@@ -508,7 +508,7 @@ class ProviderContext:
     # with all zeroes, and even if it worked, the smallest granularity for ZIP file
     # timestamps is 2 seconds, which isn't good enough.
     def removeModuleByUrl( self, url ):
-        del self.modules[ url ]
+        self.modules.pop( url, None )
 
 def createEditorDialog( ctx ):
     smgr = ctx.ServiceManager
@@ -675,12 +675,9 @@ class ScriptBrowseNode( unohelper.Base, XBrowseNode, XPropertySet, XInvocation, 
             elif event.ActionCommand == "Save":
                 toWrite = uno.ByteSequence(
                     self.editor.getControl("EditorTextField").getText().encode("utf-8"))
-                copyUrl = self.uri() + ".orig"
-                self.provCtx.sfa.move( self.uri(), copyUrl )
                 log.debug( "Saving Python macro to URI " + self.uri() )
                 self.provCtx.sfa.writeFile( self.uri(), BytesInputStream( toWrite.value ) )
                 self.provCtx.removeModuleByUrl( self.uri() )
-                self.provCtx.sfa.kill( copyUrl )
         except Exception as e:
             # TODO: add an error box here !
             log.error( lastException2String() )
@@ -839,12 +836,9 @@ class FileBrowseNode( unohelper.Base, XBrowseNode, XPropertySet, XInvocation, XA
             elif event.ActionCommand == "Save":
                 toWrite = uno.ByteSequence(
                     self.editor.getControl("EditorTextField").getText().encode("utf-8"))
-                copyUrl = self.uri() + ".orig"
-                self.provCtx.sfa.move( self.uri(), copyUrl )
                 log.debug( "Saving Python macro to URI " + self.uri() )
                 self.provCtx.sfa.writeFile( self.uri(), BytesInputStream( toWrite.value ) )
                 self.provCtx.removeModuleByUrl( self.uri() )
-                self.provCtx.sfa.kill( copyUrl )
         except Exception as e:
             # TODO: add an error box here !
             log.error( lastException2String() )
