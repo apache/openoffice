@@ -1,0 +1,145 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+]
+
+# ── embobj.dll (generic embedded object factory) ────────────────────
+cc_binary(
+    name = "embobj",
+    srcs = [
+        "inc/pch/precompiled_embeddedobj.hxx",
+        "source/commonembedding/embedobj.cxx",
+        "source/commonembedding/inplaceobj.cxx",
+        "source/commonembedding/miscobj.cxx",
+        "source/commonembedding/persistence.cxx",
+        "source/commonembedding/register.cxx",
+        "source/commonembedding/specialobject.cxx",
+        "source/commonembedding/visobj.cxx",
+        "source/commonembedding/xfactory.cxx",
+        "source/commonembedding/xfactory.hxx",
+        "source/general/docholder.cxx",
+        "source/general/dummyobject.cxx",
+        "source/general/intercept.cxx",
+        "source/general/xcreator.cxx",
+    ] + glob([
+        "source/inc/*.hxx",
+    ]),
+    copts = [
+        "/Imain/embeddedobj/inc/pch",
+        "/Imain/embeddedobj/source/inc",
+        "/Imain/embeddedobj/source/commonembedding",
+        "/Zc:wchar_t-",
+    ],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/embobj.def",
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/tools:tools_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "user32.lib", "uuid.lib", "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "embobj_implib",
+    srcs = [":embobj"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── emboleobj.dll (Windows MS-OLE embedded object implementation) ───
+cc_binary(
+    name = "emboleobj",
+    srcs = [
+        "inc/pch/precompiled_embeddedobj.hxx",
+        "source/msole/advisesink.cxx",
+        "source/msole/closepreventer.cxx",
+        "source/msole/graphconvert.cxx",
+        "source/msole/olecomponent.cxx",
+        "source/msole/oleembed.cxx",
+        "source/msole/olemisc.cxx",
+        "source/msole/olepersist.cxx",
+        "source/msole/oleregister.cxx",
+        "source/msole/olevisual.cxx",
+        "source/msole/olewrapclient.cxx",
+        "source/msole/ownview.cxx",
+        "source/msole/xdialogcreator.cxx",
+        "source/msole/xolefactory.cxx",
+    ] + glob([
+        "source/inc/*.hxx",
+        "source/msole/*.hxx",
+    ]),
+    copts = [
+        "/Imain/embeddedobj/inc/pch",
+        "/Imain/embeddedobj/source/inc",
+        "/Imain/embeddedobj/source/msole",
+        "/Zc:wchar_t-",
+    ],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/emboleobj.def",
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/tools:tools_headers",
+        "//main/unotools:unotools_headers",
+        "//main/vos:vos_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/vos:vos3_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/vos:vos3_implib)",
+        "gdi32.lib", "ole32.lib", "oleaut32.lib", "user32.lib", "uuid.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "emboleobj_implib",
+    srcs = [":emboleobj"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)

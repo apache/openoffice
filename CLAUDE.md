@@ -175,7 +175,7 @@ mysqlc        ✅  (mysqlc.uno.dll — MySQL/MariaDB SDBC driver via mysqlcppcon
 formula       ✅  (for.dll, forui.dll) — main/formula/readme.md
 animations    ✅  (animcore.dll) — main/animations/readme.md
 chart2        ✅  (charttools, chartmodel, chartview, chartcontroller) — main/chart2/readme.md
-embeddedobj   ⬜  (sfx2, svx, tools — OLE embedded object framework)
+embeddedobj   ✅  (embobj.dll, emboleobj.dll) — main/embeddedobj/readme.md
 xmlsecurity   ⬜  (xmloff, sfx2, tools, libxmlsec — XML digital signatures)
 uui           ⬜  (svtools, vcl, toolkit, sfx2 — user interaction/auth dialogs)
 fileaccess    ⬜  (ucb, comphelper — file access UNO service)
