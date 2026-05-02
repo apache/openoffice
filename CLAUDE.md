@@ -116,7 +116,7 @@ fileaccess    ✅  (fileacc.dll) — main/fileaccess/readme.md
 accessibility ✅  (acc.dll — VCL + svt a11y factories) — main/accessibility/readme.md
 ── Layer 16 ─────────────────────────────────────────────────────────────
 forms         ✅  (frm.dll — form controls) — main/forms/readme.md
-scripting     ⬜  (sfx2, basic, vcl, comphelper — macro scripting framework)
+scripting     ✅  (scriptframe.dll, basprov.uno.dll, dlgprov.uno.dll, vbaevents.uno.dll, stringresource.uno.dll, protocolhandler.dll) — main/scripting/readme.md
 embedserv     ⬜  (embeddedobj, sfx2, tools — OLE embedding server)
 winaccessibility ⬜ (accessibility, vcl — Windows a11y bridge)
 ── Layer 17 ─────────────────────────────────────────────────────────────

@@ -1,0 +1,296 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+]
+
+_COMMON_COPTS = [
+    "/Zc:wchar_t-",
+    "/Imain/scripting/inc/pch",
+    "/Imain/scripting/source/inc",
+]
+
+_COMMON_DEPS = [
+    "//main/sal:sal_headers",
+    "//main/cppu:cppu_headers",
+    "//main/cppuhelper:cppuhelper_headers",
+    "//main/udkapi:udkapi_idl_headers",
+    "//main/offapi:offapi_idl_headers",
+]
+
+# ── scriptframe.dll ─────────────────────────────────────────────────────────
+cc_binary(
+    name = "scriptframe",
+    srcs = [
+        "source/provider/ActiveMSPList.cxx",
+        "source/provider/ActiveMSPList.hxx",
+        "source/provider/BrowseNodeFactoryImpl.cxx",
+        "source/provider/BrowseNodeFactoryImpl.hxx",
+        "source/provider/MasterScriptProvider.cxx",
+        "source/provider/MasterScriptProvider.hxx",
+        "source/provider/MasterScriptProviderFactory.cxx",
+        "source/provider/MasterScriptProviderFactory.hxx",
+        "source/provider/ProviderCache.cxx",
+        "source/provider/ProviderCache.hxx",
+        "source/provider/URIHelper.cxx",
+        "source/provider/URIHelper.hxx",
+    ] + glob(["source/inc/**/*.hxx"]),
+    copts = _COMMON_COPTS + ["/Imain/scripting/source/provider"],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/scriptframe.def",
+    deps = _COMMON_DEPS + [
+        "//main/tools:tools_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/ucbhelper:ucbhelper_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/tools:tl_implib",
+        "//main/ucbhelper:ucbhelper_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/ucbhelper:ucbhelper_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "scriptframe_implib",
+    srcs = [":scriptframe"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── basprov.uno.dll ─────────────────────────────────────────────────────────
+cc_binary(
+    name = "basprov.uno",
+    srcs = glob([
+        "source/basprov/*.cxx",
+        "source/basprov/*.hxx",
+    ]),
+    copts = _COMMON_COPTS + ["/Imain/scripting/source/basprov"],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "source/basprov/basprov.uno.def",
+    deps = _COMMON_DEPS + [
+        "//main/tools:tools_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/ucbhelper:ucbhelper_headers",
+        "//main/svl:svl_headers",
+        "//main/vcl:vcl_headers",
+        "//main/sfx2:sfx2_headers",
+        "//main/basic:basic_headers",
+        "//main/oovbaapi:oovbaapi_idl_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/tools:tl_implib",
+        "//main/ucbhelper:ucbhelper_implib",
+        "//main/svl:svl_implib",
+        "//main/vcl:vcl_implib",
+        "//main/sfx2:sfx_implib",
+        "//main/basic:sb_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/ucbhelper:ucbhelper_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/sfx2:sfx_implib)",
+        "$(execpath //main/basic:sb_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── dlgprov.uno.dll ─────────────────────────────────────────────────────────
+cc_binary(
+    name = "dlgprov.uno",
+    srcs = glob([
+        "source/dlgprov/*.cxx",
+        "source/dlgprov/*.hxx",
+    ]),
+    copts = _COMMON_COPTS + ["/Imain/scripting/source/dlgprov"],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "source/dlgprov/dlgprov.uno.def",
+    deps = _COMMON_DEPS + [
+        "//main/tools:tools_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/ucbhelper:ucbhelper_headers",
+        "//main/vcl:vcl_headers",
+        "//main/sfx2:sfx2_headers",
+        "//main/xmlscript:xmlscript_headers",
+        "//main/basic:basic_headers",
+        "//main/vbahelper:vbahelper_headers",
+        "//main/oovbaapi:oovbaapi_idl_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/tools:tl_implib",
+        "//main/ucbhelper:ucbhelper_implib",
+        "//main/vcl:vcl_implib",
+        "//main/sfx2:sfx_implib",
+        "//main/xmlscript:xcr_implib",
+        "//main/basic:sb_implib",
+        "//main/vbahelper:vbahelper_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/ucbhelper:ucbhelper_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/sfx2:sfx_implib)",
+        "$(execpath //main/xmlscript:xcr_implib)",
+        "$(execpath //main/basic:sb_implib)",
+        "$(execpath //main/vbahelper:vbahelper_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── vbaevents.uno.dll ───────────────────────────────────────────────────────
+cc_binary(
+    name = "vbaevents.uno",
+    srcs = glob([
+        "source/vbaevents/*.cxx",
+    ]),
+    copts = _COMMON_COPTS + ["/Imain/scripting/source/vbaevents"],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "source/vbaevents/vbaevents.uno.def",
+    deps = _COMMON_DEPS + [
+        "//main/tools:tools_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/sfx2:sfx2_headers",
+        "//main/basic:basic_headers",
+        "//main/oovbaapi:oovbaapi_idl_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/tools:tl_implib",
+        "//main/sfx2:sfx_implib",
+        "//main/basic:sb_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/sfx2:sfx_implib)",
+        "$(execpath //main/basic:sb_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── stringresource.uno.dll ──────────────────────────────────────────────────
+cc_binary(
+    name = "stringresource.uno",
+    srcs = glob([
+        "source/stringresource/*.cxx",
+        "source/stringresource/*.hxx",
+    ]),
+    copts = _COMMON_COPTS + ["/Imain/scripting/source/stringresource"],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "source/stringresource/stringresource.uno.def",
+    deps = _COMMON_DEPS + [
+        "//main/tools:tools_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/tools:tl_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── protocolhandler.dll ─────────────────────────────────────────────────────
+cc_binary(
+    name = "protocolhandler",
+    srcs = glob([
+        "source/protocolhandler/*.cxx",
+        "source/protocolhandler/*.hxx",
+    ]),
+    copts = _COMMON_COPTS + ["/Imain/scripting/source/protocolhandler"],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "source/protocolhandler/protocolhandler.def",
+    deps = _COMMON_DEPS + [
+        "//main/tools:tools_headers",
+        "//main/vcl:vcl_headers",
+        "//main/sfx2:sfx2_headers",
+        "//main/framework:framework_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/vcl:vcl_implib",
+        "//main/sfx2:sfx_implib",
+        "//main/framework:fwe_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/sfx2:sfx_implib)",
+        "$(execpath //main/framework:fwe_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "protocolhandler_implib",
+    srcs = [":protocolhandler"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
