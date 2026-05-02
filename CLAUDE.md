@@ -213,11 +213,6 @@ starmath      ⬜  (svx, sfx2, editeng, vcl, sw — Math formula editor)
 desktop       ⬜  (sw, sd, sc, dbaccess, starmath, sfx2, vcl, framework,
                    ucb, scripting, basctl, fpicker, dtrans, uui, accessibility
                    — soffice.exe launcher + splash, quickstarter)
-── Layer 24 — .NET interop (deferred) ────────────────────────────────────
-cli_ure       ⬜  (cppu, cppuhelper, sal, codemaker, stoc, udkapi, bridges)
-                   Blockers: C# rules (csc.exe), C++/CLI (/clr toolchain),
-                   AL.exe policy assemblies, sn.exe strong-name signing.
-unoil         ⬜  update climaker
 ── Already done, not yet listed ─────────────────────────────────────────
 ooxml         ✅  (done with oox migration; openssl_shim removed, now uses @openssl//:ssl)
 stlport       ✅  (boost hash_map shim, referenced as dep)
@@ -226,6 +221,11 @@ rsc pipeline   ⬜  (.src → .srs → .res via rscpp + rsc genrule; tools alrea
                    built at //main/rsc:rsc + :rscpp; affects all UI modules with
                    AllLangResTarget: uui, svl, svtools, vcl, sfx2, svx, filter,
                    xmlsecurity, and all future app-layer modules)
+── Deferred: .NET interop (deferred) ────────────────────────────────────
+cli_ure       ⬜  (cppu, cppuhelper, sal, codemaker, stoc, udkapi, bridges)
+                   Blockers: C# rules (csc.exe), C++/CLI (/clr toolchain),
+                   AL.exe policy assemblies, sn.exe strong-name signing.
+unoil         ⬜  update climaker
 ── Deferred: Java-based ─────────────────────────────────────────────────
 bean          ⬜  (Java bean component)
 stax          ⬜  (StAX XML streaming API)
