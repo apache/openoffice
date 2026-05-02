@@ -32,6 +32,8 @@ bazel_dep(name = "mythes",                       version = "1.2.0")
 bazel_dep(name = "libtextcat",                   version = "2.2")
 bazel_dep(name = "mysqlcppconn",                 version = "1.1.12")
 bazel_dep(name = "mariadb-connector-c",          version = "2.3.7")
+bazel_dep(name = "libxmlsec1",                   version = "1.2.14")
+bazel_dep(name = "nss",                          version = "3.39")
 bazel_dep(name = "rules_java",             version = "8.11.0")
 
 

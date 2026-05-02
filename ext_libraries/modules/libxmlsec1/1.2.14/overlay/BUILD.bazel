@@ -1,0 +1,153 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+# ── Core libxmlsec1 sources ──────────────────────────────────────────────
+# All C files that form the xmlsec1 core library.
+# Excluded: xslt.c (XMLSEC_NO_XSLT=1 — no libxslt dependency)
+LIBXMLSEC1_CORE_SRCS = [
+    "src/app.c",
+    "src/base64.c",
+    "src/bn.c",
+    "src/buffer.c",
+    "src/c14n.c",
+    "src/dl.c",
+    "src/enveloped.c",
+    "src/errors.c",
+    "src/io.c",
+    "src/keyinfo.c",
+    "src/keys.c",
+    "src/keysdata.c",
+    "src/keysmngr.c",
+    "src/list.c",
+    "src/membuf.c",
+    "src/nodeset.c",
+    "src/parser.c",
+    "src/strings.c",
+    "src/templates.c",
+    "src/transforms.c",
+    "src/x509.c",
+    "src/xmldsig.c",
+    "src/xmlenc.c",
+    "src/xmlsec.c",
+    "src/xmltree.c",
+    "src/xpath.c",
+    "src/xkms.c",
+    "src/soap.c",
+]
+
+# ── MS Crypto backend sources ────────────────────────────────────────────
+# Implements XML security using the Windows CryptoAPI (CNG/CryptoAPI).
+# akmngr.c is an OpenOffice.org custom addition (key manager bridge).
+LIBXMLSEC1_MSCRYPTO_SRCS = [
+    "src/mscrypto/app.c",
+    "src/mscrypto/certkeys.c",
+    "src/mscrypto/ciphers.c",
+    "src/mscrypto/crypto.c",
+    "src/mscrypto/digests.c",
+    "src/mscrypto/keysstore.c",
+    "src/mscrypto/kt_rsa.c",
+    "src/mscrypto/signatures.c",
+    "src/mscrypto/symkeys.c",
+    "src/mscrypto/x509.c",
+    "src/mscrypto/x509vfy.c",
+    "src/mscrypto/akmngr.c",    # OOo custom: applied key manager bridge
+]
+
+# ── Windows/MSVC compiler options ────────────────────────────────────────
+XMLSEC_WIN_COPTS = [
+    "/W3",
+    "/wd4996",  # deprecated POSIX names
+    "/wd4244",  # possible loss of data
+    "/wd4267",  # size_t -> int
+    "/wd4018",  # signed/unsigned mismatch
+    "/wd4133",  # incompatible types (void* assigns)
+    "/wd4090",  # different const qualifiers
+    "/wd4028",  # formal parameter type mismatch
+]
+
+XMLSEC_UNIX_COPTS = [
+    "-w",
+]
+
+# ── Windows/MSVC defines ─────────────────────────────────────────────────
+# xmlsecconfig.h (overlay) defines XMLSEC_CRYPTO_MSCRYPTO, XMLSEC_NO_XSLT,
+# XMLSEC_NO_CRYPTO_DYNAMIC_LOADING. The rest are Windows platform defines.
+XMLSEC_WIN_DEFINES = [
+    "WIN32",
+    "_WINDOWS",
+    "_CRT_SECURE_NO_DEPRECATE",
+    "_CRT_NONSTDC_NO_DEPRECATE",
+    "NDEBUG",
+    # Explicit flags (belt-and-suspenders over xmlsecconfig.h)
+    "XMLSEC_NO_XSLT",
+    "XMLSEC_NO_CRYPTO_DYNAMIC_LOADING",
+    # autoconf package name used by dl.c for dynamic library loading
+    'PACKAGE=\\"xmlsec1\\"',
+    # Prevent #include "config.h" in globals.h from failing (no autoconf config)
+    # HAVE_CONFIG_H intentionally NOT defined; the ifdef guard skips it
+]
+
+XMLSEC_UNIX_DEFINES = []
+
+# ── libxmlsec1 (core) ────────────────────────────────────────────────────
+# Provides xmlSec* functions and the public xmlsec/ headers.
+# xmlsecconfig.h is provided as an overlay file (pre-generated for mscrypto).
+cc_library(
+    name = "libxmlsec1",
+    srcs = LIBXMLSEC1_CORE_SRCS + glob(
+        ["src/*.h"],
+        allow_empty = True,
+    ),
+    hdrs = glob([
+        "include/xmlsec/*.h",
+        "include/xmlsec/mscrypto/*.h",
+        "include/xmlsec/nss/*.h",
+        "include/xmlsec/openssl/*.h",
+    ]),
+    includes = ["include"],
+    copts = select({
+        "@platforms//os:windows": XMLSEC_WIN_COPTS + [
+            "/Isrc",           # for globals.h in src/
+        ],
+        "//conditions:default": XMLSEC_UNIX_COPTS + ["-Isrc"],
+    }),
+    defines = select({
+        "@platforms//os:windows": XMLSEC_WIN_DEFINES,
+        "//conditions:default":   XMLSEC_UNIX_DEFINES,
+    }),
+    deps = ["@libxml2//:libxml2"],
+    visibility = ["//visibility:public"],
+)
+
+# ── libxmlsec1-mscrypto (Windows CryptoAPI backend) ─────────────────────
+# Provides the MS Crypto implementation of xmlsec crypto operations.
+# Links against the core library (libxmlsec1) and Windows crypto APIs.
+cc_library(
+    name = "libxmlsec1_mscrypto",
+    srcs = LIBXMLSEC1_MSCRYPTO_SRCS + glob(
+        ["src/mscrypto/*.h"],
+        allow_empty = True,
+    ),
+    copts = select({
+        "@platforms//os:windows": XMLSEC_WIN_COPTS + [
+            "/Isrc",            # for ../globals.h from mscrypto/
+            "/Isrc/mscrypto",   # for globals.h from mscrypto/ sources
+        ],
+        "//conditions:default": XMLSEC_UNIX_COPTS + [
+            "-Isrc",
+            "-Isrc/mscrypto",
+        ],
+    }),
+    defines = select({
+        "@platforms//os:windows": XMLSEC_WIN_DEFINES + ["XMLSEC_CRYPTO_MSCRYPTO"],
+        "//conditions:default":   XMLSEC_UNIX_DEFINES,
+    }),
+    deps = [
+        ":libxmlsec1",
+        "@libxml2//:libxml2",
+    ],
+    linkopts = select({
+        "@platforms//os:windows": ["crypt32.lib", "advapi32.lib"],
+        "//conditions:default":   [],
+    }),
+    visibility = ["//visibility:public"],
+)

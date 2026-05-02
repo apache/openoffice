@@ -1,0 +1,209 @@
+diff -ur misc/nss-3.39/nspr/configure misc/build/nss-3.39/nspr/configure
+--- misc/nss-3.39/nspr/configure	2018-08-28 05:42:28.000000000 -0700
++++ misc/build/nss-3.39/nspr/configure	2020-10-06 07:41:59.563345390 -0700
+@@ -7039,7 +7039,7 @@
+     PR_MD_CSRCS=linux.c
+     MKSHLIB='$(CC) $(DSO_LDOPTS) -o $@'
+     DSO_CFLAGS=-fPIC
+-    DSO_LDOPTS='-shared -Wl,-soname -Wl,$(notdir $@)'
++    DSO_LDOPTS='-shared -Wl,-rpath,\$$ORIGIN -Wl,-soname -Wl,$(notdir $@)'
+     _OPTIMIZE_FLAGS=-O2
+     _DEBUG_FLAGS="-g -fno-inline"  # most people on linux use gcc/gdb, and that
+                                    # combo is not yet good at debugging inlined
+diff -ur misc/nss-3.39/nspr/pr/include/pratom.h misc/build/nss-3.39/nspr/pr/include/pratom.h
+--- misc/nss-3.39/nspr/pr/include/pratom.h	2018-08-28 05:42:28.000000000 -0700
++++ misc/build/nss-3.39/nspr/pr/include/pratom.h	2020-10-06 07:41:59.563345390 -0700
+@@ -81,7 +81,9 @@
+ #if defined(_WIN32) && !defined(_WIN32_WCE) && \
+     (!defined(_MSC_VER) || (_MSC_VER >= 1310))
+ 
++PR_END_EXTERN_C
+ #include <intrin.h>
++PR_BEGIN_EXTERN_C
+ 
+ #ifdef _MSC_VER
+ #pragma intrinsic(_InterlockedIncrement)
+diff -ur misc/nss-3.39/nss/cmd/platlibs.mk misc/build/nss-3.39/nss/cmd/platlibs.mk
+--- misc/nss-3.39/nss/cmd/platlibs.mk	2018-08-31 05:55:53.000000000 -0700
++++ misc/build/nss-3.39/nss/cmd/platlibs.mk	2020-10-06 07:41:59.567345437 -0700
+@@ -10,17 +10,18 @@
+ 
+ ifeq ($(OS_ARCH), SunOS) 
+ ifeq ($(USE_64), 1)
+-EXTRA_SHARED_LIBS += -R '$$ORIGIN/../lib:/usr/lib/mps/secv1/64:/usr/lib/mps/64'
++#In AOO we would probable put the executables next to libs
++EXTRA_SHARED_LIBS += -R '$$ORIGIN'
+ else
+-EXTRA_SHARED_LIBS += -R '$$ORIGIN/../lib:/usr/lib/mps/secv1:/usr/lib/mps'
++EXTRA_SHARED_LIBS += -R '$$ORIGIN'
+ endif
+ endif
+ 
+ ifeq ($(OS_ARCH), Linux)
+ ifeq ($(USE_64), 1)
+-EXTRA_SHARED_LIBS += -Wl,-rpath,'$$ORIGIN/../lib64:/opt/sun/private/lib64:$$ORIGIN/../lib'
++EXTRA_SHARED_LIBS += -Wl,-rpath,'$$ORIGIN'
+ else
+-EXTRA_SHARED_LIBS += -Wl,-rpath,'$$ORIGIN/../lib:/opt/sun/private/lib'
++EXTRA_SHARED_LIBS += -Wl,-rpath,'$$ORIGIN'
+ endif
+ endif
+ 
+diff -ur misc/nss-3.39/nss/cmd/shlibsign/Makefile misc/build/nss-3.39/nss/cmd/shlibsign/Makefile
+--- misc/nss-3.39/nss/cmd/shlibsign/Makefile	2018-08-31 05:55:53.000000000 -0700
++++ misc/build/nss-3.39/nss/cmd/shlibsign/Makefile	2020-10-06 07:41:59.567345437 -0700
+@@ -49,10 +49,15 @@
+ CHECKLIBS =
+ CHECKLOC =
+ else
+-CHECKLIBS = $(DIST)/lib/$(DLL_PREFIX)softokn3.$(DLL_SUFFIX)
+-CHECKLIBS += $(wildcard $(DIST)/lib/$(DLL_PREFIX)freebl*3.$(DLL_SUFFIX))
++# Signing causes loading of some system library which in turn loads
++# libsqlite3. Then it loads libsqulite3 from nss, which does not have the proper
++# version. Therefore signing fails.
++# We cannot build with the system sqlite3, because it is too old (SDK
++# 10.4). Otherwise one could set NSS_USE_SYSTEM_SQLITE=1 and use the system lib.
++#CHECKLIBS = $(DIST)/lib/$(DLL_PREFIX)softokn3.$(DLL_SUFFIX)
++#CHECKLIBS += $(wildcard $(DIST)/lib/$(DLL_PREFIX)freebl*3.$(DLL_SUFFIX))
+ ifndef NSS_DISABLE_DBM
+-CHECKLIBS += $(DIST)/lib/$(DLL_PREFIX)nssdbm3.$(DLL_SUFFIX)
++#CHECKLIBS += $(DIST)/lib/$(DLL_PREFIX)nssdbm3.$(DLL_SUFFIX)
+ endif
+ CHECKLOC = $(CHECKLIBS:.$(DLL_SUFFIX)=.chk)
+ 
+diff -ur misc/nss-3.39/nss/coreconf/Darwin.mk misc/build/nss-3.39/nss/coreconf/Darwin.mk
+--- misc/nss-3.39/nss/coreconf/Darwin.mk	2018-08-31 05:55:53.000000000 -0700
++++ misc/build/nss-3.39/nss/coreconf/Darwin.mk	2020-10-06 07:51:49.590356560 -0700
+@@ -3,14 +3,15 @@
+ # License, v. 2.0. If a copy of the MPL was not distributed with this
+ # file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ 
+-CC     ?= gcc
+-CCC    ?= g++
++# CC is taken from environment automatically.
++#CC     ?= gcc
++CCC    ?= $(CXX)
+ RANLIB ?= ranlib
+ 
+ include $(CORE_DEPTH)/coreconf/UNIX.mk
+-include $(CORE_DEPTH)/coreconf/Werror.mk
++#include $(CORE_DEPTH)/coreconf/Werror.mk
+ 
+-DEFAULT_COMPILER = gcc
++DEFAULT_COMPILER = cc
+ 
+ ifndef CPU_ARCH
+ # When cross-compiling, CPU_ARCH should already be defined as the target
+diff -ur misc/nss-3.39/nss/coreconf/FreeBSD.mk misc/build/nss-3.39/nss/coreconf/FreeBSD.mk
+--- misc/nss-3.39/nss/coreconf/FreeBSD.mk	2018-08-31 05:55:53.000000000 -0700
++++ misc/build/nss-3.39/nss/coreconf/FreeBSD.mk	2020-10-06 07:41:59.567345437 -0700
+@@ -5,9 +5,8 @@
+ 
+ include $(CORE_DEPTH)/coreconf/UNIX.mk
+ 
+-DEFAULT_COMPILER	= gcc
+-CC			= gcc
+-CCC			= g++
++DEFAULT_COMPILER	= $(CC)
++CCC			= $(CXX)
+ RANLIB			= ranlib
+ 
+ CPU_ARCH		= $(OS_TEST)
+@@ -21,7 +20,7 @@
+ CPU_ARCH		= x86_64
+ endif
+ 
+-OS_CFLAGS		= $(DSO_CFLAGS) -Wall -Wno-switch -DFREEBSD -DHAVE_STRERROR -DHAVE_BSD_FLOCK
++OS_CFLAGS		= $(DSO_CFLAGS) -Wall -Wno-switch -DFREEBSD -DHAVE_STRERROR -DHAVE_UNISTD_H -DHAVE_BSD_FLOCK
+ 
+ DSO_CFLAGS		= -fPIC
+ DSO_LDOPTS		= -shared -Wl,-soname -Wl,$(notdir $@)
+diff -ur misc/nss-3.39/nss/coreconf/Linux.mk misc/build/nss-3.39/nss/coreconf/Linux.mk
+--- misc/nss-3.39/nss/coreconf/Linux.mk	2018-08-31 05:55:53.000000000 -0700
++++ misc/build/nss-3.39/nss/coreconf/Linux.mk	2020-10-06 07:41:59.567345437 -0700
+@@ -140,7 +140,7 @@
+ endif
+ 
+ DSO_CFLAGS		= -fPIC
+-DSO_LDOPTS		= -shared $(ARCHFLAG) -Wl,--gc-sections
++DSO_LDOPTS		= -shared $(ARCHFLAG) -Wl,--gc-sections '-Wl,-rpath,$$ORIGIN'
+ # The linker on Red Hat Linux 7.2 and RHEL 2.1 (GNU ld version 2.11.90.0.8)
+ # incorrectly reports undefined references in the libraries we link with, so
+ # we don't use -z defs there.
+@@ -177,8 +177,13 @@
+ endif
+ endif
+ 
++ifeq ($(SYSTEM_ZLIB),YES)  
++# Currently (3.12.4) only the tools modutil and signtool are linked with libz
++# If USE_SYSTEM_ZLIB is not set then the tools link statically libzlib.a which
++# is also build in nss.
+ USE_SYSTEM_ZLIB = 1
+ ZLIB_LIBS = -lz
++endif
+ 
+ # The -rpath '$$ORIGIN' linker option instructs this library to search for its
+ # dependencies in the same directory where it resides.
+diff -ur misc/nss-3.39/nss/coreconf/rules.mk misc/build/nss-3.39/nss/coreconf/rules.mk
+--- misc/nss-3.39/nss/coreconf/rules.mk	2018-08-31 05:55:53.000000000 -0700
++++ misc/build/nss-3.39/nss/coreconf/rules.mk	2020-10-06 07:41:59.567345437 -0700
+@@ -322,7 +322,12 @@
+ ifdef NS_USE_GCC
+ 	$(RC) $(filter-out -U%,$(DEFINES)) $(INCLUDES:-I%=--include-dir %) -o $@ $<
+ else
+-	$(RC) $(filter-out -U%,$(DEFINES)) $(INCLUDES) -Fo$@ $<
++        #We remove stl from the paths to avoid that rc.exe finds the stlport of
++        #OOo. stlport includes the system stl which will fail. By removing it,
++        #rc will use the stl from the system if the path is in the INCLUDE
++        #variable.
++	INCLUDE="$(subst /stl,,$(INCLUDE))" $(RC) $(filter-out -U%,$(DEFINES)) $(INCLUDES) -Fo$@ $<
++
+ endif
+ 	@echo $(RES) finished
+ endif
+diff -ur misc/nss-3.39/nss/coreconf/SunOS5.mk misc/build/nss-3.39/nss/coreconf/SunOS5.mk
+--- misc/nss-3.39/nss/coreconf/SunOS5.mk	2018-08-31 05:55:53.000000000 -0700
++++ misc/build/nss-3.39/nss/coreconf/SunOS5.mk	2020-10-06 07:41:59.567345437 -0700
+@@ -48,8 +48,12 @@
+ 	    # OPTIMIZER += -mno-omit-leaf-frame-pointer -fno-omit-frame-pointer
+ 	endif
+ else
+-	CC         = cc
+-	CCC        = CC
++# CC is taken from environment automatically.
++#	CC         = cc
++# Use CXX from environment.
++#	CCC        = CC
++        CCC       = $(CXX)
++
+ 	ASFLAGS   += -Wa,-P
+ 	OS_CFLAGS += $(NOMD_OS_CFLAGS) $(ARCHFLAG)
+ 	ifndef BUILD_OPT
+diff -ur misc/nss-3.39/nss/lib/zlib/inflate.c misc/build/nss-3.39/nss/lib/zlib/inflate.c
+--- misc/nss-3.39/nss/lib/zlib/inflate.c	2018-08-31 05:55:53.000000000 -0700
++++ misc/build/nss-3.39/nss/lib/zlib/inflate.c	2020-10-06 07:41:59.567345437 -0700
+@@ -1472,9 +1472,9 @@
+ {
+     struct inflate_state FAR *state;
+ 
+-    if (strm == Z_NULL || strm->state == Z_NULL) return -1L << 16;
++    if (strm == Z_NULL || strm->state == Z_NULL) return ~0UL << 16;
+     state = (struct inflate_state FAR *)strm->state;
+-    return ((long)(state->back) << 16) +
++    return ((unsigned long)(state->back) << 16) +
+         (state->mode == COPY ? state->length :
+             (state->mode == MATCH ? state->was - state->length : 0));
+ }
+diff -ur misc/nss-3.39/nss/Makefile misc/build/nss-3.39/nss/Makefile
+--- misc/nss-3.39/nss/Makefile	2018-08-31 05:55:53.000000000 -0700
++++ misc/build/nss-3.39/nss/Makefile	2020-10-06 07:41:59.567345437 -0700
+@@ -77,6 +77,9 @@
+ ifeq ($(OS_TARGET),WIN95)
+ NSPR_CONFIGURE_OPTS += --enable-win32-target=WIN95
+ endif
++ifdef MACOS_SDK_DIR
++NSPR_CONFIGURE_OPTS += --with-macos-sdk=$(MACOS_SDK_DIR)
++endif
+ ifdef USE_DEBUG_RTL
+ NSPR_CONFIGURE_OPTS += --enable-debug-rtl
+ endif

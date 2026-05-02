@@ -1,0 +1,16 @@
+{
+  "integrity": "sha256-OQpQhWUYKLj+EqqXiyAPWbkVXu27kaS+ib98857v3Uo=",
+  "strip_prefix": "xmlsec1-1.2.14",
+  "url": "http://xmlsoft.org/sources/xmlsec/releases/xmlsec1-1.2.14.tar.gz",
+  "overlay": {
+    "MODULE.bazel":                              "sha256-1/gIpRhUEr8M1flj4Z1t3VzndiGDll+vcIMZd7DV53E=",
+    "BUILD.bazel":                               "sha256-3HuL0ZgC0+AorlyPBD+6OYDJlNOD/i7ng8mN5DpXmt0=",
+    "include/xmlsec/xmlsecconfig.h":             "sha256-eh7slwg2eph4RD+PdSGI7wkiHIT92CtWmvTzNzeQl74=",
+    "include/xmlsec/mscrypto/akmngr.h":          "sha256-dk1K6M+qTKnaHAasUfvxhwdP25fHkaSfvAaBug71QlQ=",
+    "src/mscrypto/akmngr.c":                     "sha256-hv9JTxx7Cj6n1FHVH+diOSN/t46ZpnHOVZ5ySAT8nAg="
+  },
+  "patches": {
+    "noverify.patch": "sha256-R5wvsSTjGFpvDeJTMDBQMCj1GipHO+3r0DZgzOW+gEU="
+  },
+  "patch_strip": 1
+}

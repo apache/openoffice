@@ -1,0 +1,16 @@
+--- a/src/mscrypto/x509vfy.c
++++ b/src/mscrypto/x509vfy.c
+@@ -570,3 +570,10 @@
+-        if((selected == 1) && xmlSecMSCryptoX509StoreConstructCertsChain(store, cert, certs, keyInfoCtx)) {
+-            return(cert);
+-        }
++        /* JL: OpenOffice.org implements its own certificate verification routine.
++           The goal is to separate validation of the signature
++           and the certificate. For example, OOo could show that the document signature is valid,
++           but the certificate could not be verified. If we do not prevent the verification of
++           the certificate by libxmlsec and the verification fails, then the XML signature will not be
++           verified. This would happen, for example, if the root certificate is not installed.
++         */
++/*      if((selected == 1) && xmlSecMSCryptoX509StoreConstructCertsChain(store, cert, certs, keyInfoCtx)) { */
++        if (selected == 1)
++            return cert;

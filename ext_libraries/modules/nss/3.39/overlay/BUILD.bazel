@@ -1,0 +1,868 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+package(default_visibility = ["//visibility:public"])
+
+# ── Common flags ─────────────────────────────────────────────────────────────
+
+WIN_DEFINES = [
+    "WIN32",
+    "_WIN32_WINNT=0x0501",
+    "WINNT",
+    "XP_WIN",
+    "XP_WIN32",
+    "_WINDOWS",
+    "NDEBUG",
+    "_USRDLL",
+    "IEEE_8087",   # x86/x64 little-endian IEEE 754; required by nspr/dtoa.c
+]
+
+WIN_COPTS = [
+    "/W3",
+    "/wd4996", "/wd4244", "/wd4267", "/wd4018", "/wd4090", "/wd4028",
+    "/wd4005",  # macro redefinition
+    "/wd4133",  # incompatible pointer types
+    "/wd4057",  # pointer target type mismatch
+    "/wd4117",
+]
+
+# Canonical external-repo root path.
+# includes= on cc_binary does NOT prepend external/<repo>/ automatically;
+# copts must use full execroot-relative paths instead.
+_R = "external/nss+"
+
+NSPR_INCLUDES = [
+    "/I" + _R + "/nspr/pr/src",
+    "/I" + _R + "/nspr/pr/include",
+    "/I" + _R + "/nspr/pr/include/md",
+    "/I" + _R + "/nspr/pr/include/obsolete",
+    "/I" + _R + "/nspr/pr/include/private",
+    "/I" + _R + "/nspr/lib/ds",
+    "/I" + _R + "/nspr/lib/libc/include",
+]
+
+PLDS4_INCLUDES = [
+    "/I" + _R + "/nspr/pr/include",
+    "/I" + _R + "/nspr/lib/ds",
+]
+
+PLC4_INCLUDES = [
+    "/I" + _R + "/nspr/pr/include",
+    "/I" + _R + "/nspr/lib/libc/include",
+]
+
+NSSUTIL_INCLUDES = [
+    "/I" + _R + "/nspr/pr/include",
+    "/I" + _R + "/nspr/lib/ds",
+    "/I" + _R + "/nspr/lib/libc/include",
+    "/I" + _R + "/nss/lib/util",
+]
+
+FREEBL_INCLUDES = NSSUTIL_INCLUDES + [
+    "/I" + _R + "/nss/lib/freebl",
+    "/I" + _R + "/nss/lib/freebl/mpi",
+    "/I" + _R + "/nss/lib/freebl/ecl",
+    "/I" + _R + "/nss/lib/freebl/verified",
+    "/I" + _R + "/nss/lib/softoken",
+]
+
+SOFTOKN_INCLUDES = NSSUTIL_INCLUDES + [
+    "/I" + _R + "/nss/lib/freebl",
+    "/I" + _R + "/nss/lib/freebl/ecl",
+    "/I" + _R + "/nss/lib/softoken",
+    "/I" + _R + "/nss/lib/sqlite",
+]
+
+NSS3_INCLUDES = NSSUTIL_INCLUDES + [
+    "/I" + _R + "/nss/lib/base",
+    "/I" + _R + "/nss/lib/certdb",
+    "/I" + _R + "/nss/lib/certhigh",
+    "/I" + _R + "/nss/lib/cryptohi",
+    "/I" + _R + "/nss/lib/dev",
+    "/I" + _R + "/nss/lib/pk11wrap",
+    "/I" + _R + "/nss/lib/pki",
+    "/I" + _R + "/nss/lib/freebl",
+    "/I" + _R + "/nss/lib/freebl/ecl",
+    "/I" + _R + "/nss/lib/ssl",
+    "/I" + _R + "/nss/lib/nss",
+    "/I" + _R + "/nss/lib/smime",
+    "/I" + _R + "/nss/lib/pkcs7",
+    "/I" + _R + "/nss/lib/libpkix/include",
+    "/I" + _R + "/nss/lib/libpkix/pkix/util",
+    "/I" + _R + "/nss/lib/libpkix/pkix/checker",
+    "/I" + _R + "/nss/lib/libpkix/pkix/certsel",
+    "/I" + _R + "/nss/lib/libpkix/pkix/crlsel",
+    "/I" + _R + "/nss/lib/libpkix/pkix/params",
+    "/I" + _R + "/nss/lib/libpkix/pkix/results",
+    "/I" + _R + "/nss/lib/libpkix/pkix/store",
+    "/I" + _R + "/nss/lib/libpkix/pkix/top",
+    "/I" + _R + "/nss/lib/libpkix/pkix_pl_nss/module",
+    "/I" + _R + "/nss/lib/libpkix/pkix_pl_nss/pki",
+    "/I" + _R + "/nss/lib/libpkix/pkix_pl_nss/system",
+]
+
+SMIME_INCLUDES = NSSUTIL_INCLUDES + [
+    "/I" + _R + "/nss/lib/smime",
+    "/I" + _R + "/nss/lib/certdb",
+    "/I" + _R + "/nss/lib/certhigh",
+    "/I" + _R + "/nss/lib/cryptohi",
+    "/I" + _R + "/nss/lib/pk11wrap",
+    "/I" + _R + "/nss/lib/pki",
+    "/I" + _R + "/nss/lib/base",
+    "/I" + _R + "/nss/lib/dev",
+    "/I" + _R + "/nss/lib/freebl",
+    "/I" + _R + "/nss/lib/freebl/ecl",
+    "/I" + _R + "/nss/lib/nss",
+    "/I" + _R + "/nss/lib/pkcs7",
+    "/I" + _R + "/nss/lib/pkcs12",
+]
+
+# ── nspr4.dll ────────────────────────────────────────────────────────────────
+
+cc_binary(
+    name = "nspr4",
+    srcs = [
+        "nspr/pr/src/prvrsion.c",
+        # I/O
+        "nspr/pr/src/io/prdir.c",
+        "nspr/pr/src/io/prfdcach.c",
+        "nspr/pr/src/io/prfile.c",
+        "nspr/pr/src/io/prio.c",
+        "nspr/pr/src/io/priometh.c",
+        "nspr/pr/src/io/pripv6.c",
+        "nspr/pr/src/io/prlayer.c",
+        "nspr/pr/src/io/prlog.c",
+        "nspr/pr/src/io/prmapopt.c",
+        "nspr/pr/src/io/prmmap.c",
+        "nspr/pr/src/io/prmwait.c",
+        "nspr/pr/src/io/prpolevt.c",
+        "nspr/pr/src/io/prprf.c",
+        "nspr/pr/src/io/prscanf.c",
+        "nspr/pr/src/io/prsocket.c",
+        "nspr/pr/src/io/prstdio.c",
+        # linking
+        "nspr/pr/src/linking/prlink.c",
+        # malloc
+        "nspr/pr/src/malloc/prmem.c",
+        # memory
+        "nspr/pr/src/memory/prseg.c",
+        "nspr/pr/src/memory/prshm.c",
+        "nspr/pr/src/memory/prshma.c",
+        # md common
+        "nspr/pr/src/md/prosdep.c",
+        # misc
+        "nspr/pr/src/misc/dtoa.c",
+        "nspr/pr/src/misc/pralarm.c",
+        "nspr/pr/src/misc/pratom.c",
+        "nspr/pr/src/misc/praton.c",
+        "nspr/pr/src/misc/prcountr.c",
+        "nspr/pr/src/misc/prdtoa.c",
+        "nspr/pr/src/misc/prenv.c",
+        "nspr/pr/src/misc/prerr.c",
+        "nspr/pr/src/misc/prerror.c",
+        "nspr/pr/src/misc/prerrortable.c",
+        "nspr/pr/src/misc/prinit.c",
+        "nspr/pr/src/misc/prinrval.c",
+        "nspr/pr/src/misc/pripc.c",
+        "nspr/pr/src/misc/pripcsem.c",
+        "nspr/pr/src/misc/prlog2.c",
+        "nspr/pr/src/misc/prlong.c",
+        "nspr/pr/src/misc/prnetdb.c",
+        "nspr/pr/src/misc/prolock.c",
+        "nspr/pr/src/misc/prrng.c",
+        "nspr/pr/src/misc/prsystem.c",
+        "nspr/pr/src/misc/prthinfo.c",
+        "nspr/pr/src/misc/prtime.c",
+        "nspr/pr/src/misc/prtpool.c",
+        "nspr/pr/src/misc/prtrace.c",
+        # threads
+        "nspr/pr/src/threads/prcmon.c",
+        "nspr/pr/src/threads/prcthr.c",
+        "nspr/pr/src/threads/prdump.c",
+        "nspr/pr/src/threads/prmon.c",
+        "nspr/pr/src/threads/prrwlock.c",
+        "nspr/pr/src/threads/prsem.c",
+        "nspr/pr/src/threads/prtpd.c",
+        "nspr/pr/src/threads/combined/prucpu.c",
+        "nspr/pr/src/threads/combined/prucv.c",
+        "nspr/pr/src/threads/combined/prulock.c",
+        "nspr/pr/src/threads/combined/prustack.c",
+        "nspr/pr/src/threads/combined/pruthr.c",
+        # Windows md files — WINNT target only (no w95cv/w95sock/w95thred/w95io/w95dllmain)
+        "nspr/pr/src/md/windows/ntdllmn.c",
+        "nspr/pr/src/md/windows/ntgc.c",
+        "nspr/pr/src/md/windows/ntinrval.c",
+        "nspr/pr/src/md/windows/ntio.c",
+        "nspr/pr/src/md/windows/ntmisc.c",
+        "nspr/pr/src/md/windows/ntsec.c",
+        "nspr/pr/src/md/windows/ntsem.c",
+        "nspr/pr/src/md/windows/ntthread.c",
+        "nspr/pr/src/md/windows/w32ipcsem.c",
+        "nspr/pr/src/md/windows/w32poll.c",
+        "nspr/pr/src/md/windows/w32rng.c",
+        "nspr/pr/src/md/windows/w32shm.c",
+        "nspr/pr/src/md/windows/win32_errors.c",
+    ],
+    copts = WIN_COPTS + NSPR_INCLUDES,
+    defines = WIN_DEFINES + ["_NSPR_BUILD_"],
+    linkshared = True,
+    win_def_file = "nspr/pr/src/nspr.def",
+    linkopts = ["winmm.lib", "ws2_32.lib", "mswsock.lib", "advapi32.lib", "/MANIFEST:NO"],
+)
+
+filegroup(name = "nspr4_implib", srcs = [":nspr4"], output_group = "interface_library")
+
+# ── plds4.dll (libplds4) ─────────────────────────────────────────────────────
+
+cc_binary(
+    name = "plds4",
+    srcs = [
+        "nspr/lib/ds/plarena.c",
+        "nspr/lib/ds/plhash.c",
+        "nspr/lib/ds/plvrsion.c",
+    ],
+    copts = WIN_COPTS + PLDS4_INCLUDES,
+    defines = WIN_DEFINES + ["_NSPR_BUILD_"],
+    linkshared = True,
+    win_def_file = "nspr/lib/ds/plds.def",
+    additional_linker_inputs = [":nspr4_implib"],
+    linkopts = ["$(execpath :nspr4_implib)", "/MANIFEST:NO"],
+)
+
+filegroup(name = "plds4_implib", srcs = [":plds4"], output_group = "interface_library")
+
+# ── plc4.dll (libplc4) ───────────────────────────────────────────────────────
+
+cc_binary(
+    name = "plc4",
+    srcs = [
+        "nspr/lib/libc/src/base64.c",
+        "nspr/lib/libc/src/plerror.c",
+        "nspr/lib/libc/src/plgetopt.c",
+        "nspr/lib/libc/src/plvrsion.c",
+        "nspr/lib/libc/src/strcase.c",
+        "nspr/lib/libc/src/strcat.c",
+        "nspr/lib/libc/src/strchr.c",
+        "nspr/lib/libc/src/strcmp.c",
+        "nspr/lib/libc/src/strcpy.c",
+        "nspr/lib/libc/src/strdup.c",
+        "nspr/lib/libc/src/strlen.c",
+        "nspr/lib/libc/src/strpbrk.c",
+        "nspr/lib/libc/src/strstr.c",
+        "nspr/lib/libc/src/strtok.c",
+    ],
+    copts = WIN_COPTS + PLC4_INCLUDES,
+    defines = WIN_DEFINES + ["_NSPR_BUILD_"],
+    linkshared = True,
+    win_def_file = "nspr/lib/libc/src/plc.def",
+    additional_linker_inputs = [":nspr4_implib"],
+    linkopts = ["$(execpath :nspr4_implib)", "/MANIFEST:NO"],
+)
+
+filegroup(name = "plc4_implib", srcs = [":plc4"], output_group = "interface_library")
+
+# ── nssutil3.dll ─────────────────────────────────────────────────────────────
+
+cc_binary(
+    name = "nssutil3",
+    srcs = [
+        "nss/lib/util/derdec.c",
+        "nss/lib/util/derenc.c",
+        "nss/lib/util/dersubr.c",
+        "nss/lib/util/dertime.c",
+        "nss/lib/util/errstrs.c",
+        "nss/lib/util/nssb64d.c",
+        "nss/lib/util/nssb64e.c",
+        "nss/lib/util/nssilock.c",
+        "nss/lib/util/nssrwlk.c",
+        "nss/lib/util/oidstring.c",
+        "nss/lib/util/pkcs11uri.c",
+        "nss/lib/util/pkcs1sig.c",
+        "nss/lib/util/portreg.c",
+        "nss/lib/util/quickder.c",
+        "nss/lib/util/secalgid.c",
+        "nss/lib/util/secasn1d.c",
+        "nss/lib/util/secasn1e.c",
+        "nss/lib/util/secasn1u.c",
+        "nss/lib/util/secdig.c",
+        "nss/lib/util/secitem.c",
+        "nss/lib/util/secload.c",
+        "nss/lib/util/secoid.c",
+        "nss/lib/util/secplcy.c",
+        "nss/lib/util/secport.c",
+        "nss/lib/util/sectime.c",
+        "nss/lib/util/templates.c",
+        "nss/lib/util/utf8.c",
+        "nss/lib/util/utilmod.c",
+        "nss/lib/util/utilpars.c",
+    ],
+    copts = WIN_COPTS + NSSUTIL_INCLUDES,
+    defines = WIN_DEFINES + ["NSSUTIL_BUILD", "USE_UTIL_DIRECTLY"],
+    linkshared = True,
+    win_def_file = "nss/lib/util/nssutil.def",
+    additional_linker_inputs = [":nspr4_implib", ":plds4_implib", ":plc4_implib"],
+    linkopts = ["$(execpath :nspr4_implib)", "$(execpath :plds4_implib)", "$(execpath :plc4_implib)", "/MANIFEST:NO"],
+)
+
+filegroup(name = "nssutil3_implib", srcs = [":nssutil3"], output_group = "interface_library")
+
+# ── freebl3.dll ──────────────────────────────────────────────────────────────
+# Pure-C build; x86 hardware-AES asm is excluded for simplicity.
+
+cc_binary(
+    name = "freebl3",
+    srcs = [
+        # hashes
+        "nss/lib/freebl/md2.c",
+        "nss/lib/freebl/md5.c",
+        "nss/lib/freebl/sha512.c",
+        "nss/lib/freebl/sha_fast.c",
+        "nss/lib/freebl/alghmac.c",
+        "nss/lib/freebl/rawhash.c",
+        "nss/lib/freebl/hmacct.c",
+        "nss/lib/freebl/blake2b.c",
+        # symmetric ciphers
+        "nss/lib/freebl/arcfour.c",
+        "nss/lib/freebl/arcfive.c",
+        "nss/lib/freebl/des.c",
+        "nss/lib/freebl/desblapi.c",
+        "nss/lib/freebl/rijndael.c",
+        # rijndael_tables.c is textually #include'd by rijndael.c when RIJNDAEL_INCLUDE_TABLES is set
+        "nss/lib/freebl/camellia.c",
+        "nss/lib/freebl/seed.c",
+        "nss/lib/freebl/alg2268.c",
+        # block modes / AEAD
+        "nss/lib/freebl/ctr.c",
+        "nss/lib/freebl/cts.c",
+        "nss/lib/freebl/gcm.c",
+        "nss/lib/freebl/chacha20poly1305.c",
+        "nss/lib/freebl/aeskeywrap.c",
+        # asymmetric
+        "nss/lib/freebl/rsa.c",
+        "nss/lib/freebl/rsapkcs.c",
+        "nss/lib/freebl/dsa.c",
+        "nss/lib/freebl/dh.c",
+        "nss/lib/freebl/ec.c",
+        "nss/lib/freebl/ecdecode.c",
+        "nss/lib/freebl/pqg.c",
+        "nss/lib/freebl/jpake.c",
+        # ECL
+        "nss/lib/freebl/ecl/ecl.c",
+        "nss/lib/freebl/ecl/ecl_mult.c",
+        "nss/lib/freebl/ecl/ecl_gf.c",
+        "nss/lib/freebl/ecl/ec_naf.c",
+        "nss/lib/freebl/ecl/ecp_aff.c",
+        "nss/lib/freebl/ecl/ecp_jac.c",
+        "nss/lib/freebl/ecl/ecp_jm.c",
+        "nss/lib/freebl/ecl/ecp_mont.c",
+        "nss/lib/freebl/ecl/ecp_256.c",
+        "nss/lib/freebl/ecl/ecp_256_32.c",
+        "nss/lib/freebl/ecl/ecp_384.c",
+        "nss/lib/freebl/ecl/ecp_521.c",
+        "nss/lib/freebl/ecl/ecp_25519.c",
+        "nss/lib/freebl/ecl/curve25519_32.c",
+        # MPI (portable C; skip mpi_amd64.c, mpi_arm.c, mpi_sparc.c, mpi_x86_asm.c)
+        "nss/lib/freebl/mpi/mpi.c",
+        "nss/lib/freebl/mpi/mplogic.c",
+        "nss/lib/freebl/mpi/mpmontg.c",
+        "nss/lib/freebl/mpi/mpprime.c",  # includes primes.c internally
+        "nss/lib/freebl/mpi/mp_gf2m.c",
+        "nss/lib/freebl/mpi/mpcpucache.c",
+        "nss/lib/freebl/mpi/montmulf.c",
+        # mulsqr.c has a standalone main() at line 19; excluded like mp_comba.c
+        # mp_comba.c is AMD64 GCC inline asm only; not usable with MSVC/x86
+        # RNG / DRBG
+        "nss/lib/freebl/sysrand.c",
+        # win_rand.c is #include'd by sysrand.c; listing it separately causes duplicate RNG symbols
+        # det_rng.c: C99 mixed-decl + Hacl_Chacha20 dep; not in gyp build
+        "nss/lib/freebl/drbg.c",
+        # TLS / misc crypto
+        "nss/lib/freebl/tlsprfalg.c",
+        "nss/lib/freebl/crypto_primitives.c",
+        # verified implementations (Hacl*)
+        "nss/lib/freebl/verified/FStar.c",
+        "nss/lib/freebl/verified/Hacl_Chacha20.c",
+        "nss/lib/freebl/verified/Hacl_Chacha20_Vec128.c",  # scalar fallback via vec128.h; no SSSE3 needed
+        "nss/lib/freebl/verified/Hacl_Poly1305_32.c",
+        "nss/lib/freebl/verified/Hacl_Curve25519.c",
+        # library infrastructure
+        "nss/lib/freebl/blinit.c",
+        "nss/lib/freebl/blname.c",
+        "nss/lib/freebl/fipsfreebl.c",
+        "nss/lib/freebl/freeblver.c",
+        "nss/lib/freebl/nsslowhash.c",
+        "nss/lib/freebl/shvfy.c",
+        # stubs.c is POSIX-only (unistd.h/dlfcn.h); not needed on Windows
+        "nss/lib/freebl/ldvector.c",
+    ],
+    copts = WIN_COPTS + FREEBL_INCLUDES,
+    defines = WIN_DEFINES + [
+        "FREEBL_LOWHASH",
+        "NSS_ENABLE_ECC",
+        "RIJNDAEL_INCLUDE_TABLES",
+        "MP_API_COMPATIBLE",
+        # NSS_X86_OR_X64 / NSS_X86 intentionally omitted: those defines pull in
+        # extern declarations for hw AES-NI / CLMUL / ChaCha20-Vec128 symbols that
+        # live in assembly files we don't compile.  MPI digit-width is set
+        # explicitly via MP_USE_UINT_DIGIT below.
+        "MP_CHAR_STORE_SLOW",
+        "MP_USE_UINT_DIGIT",
+        "KRML_NOUINT128",  # MSVC has no __int128; use FStar struct emulation
+        "USE_UTIL_DIRECTLY",  # resolves PORT_*/SECITEM_*/SECOID_* via nssutil rename scheme
+        "SHLIB_PREFIX=",
+        "SHLIB_VERSION=\\\"3\\\"",
+        "SHLIB_SUFFIX=\\\"dll\\\"",
+    ],
+    linkshared = True,
+    win_def_file = "nss/lib/freebl/freebl.def",
+    additional_linker_inputs = [
+        ":nspr4_implib",
+        ":nssutil3_implib",
+    ],
+    linkopts = [
+        "$(execpath :nspr4_implib)",
+        "$(execpath :nssutil3_implib)",
+        "advapi32.lib",
+        "/MANIFEST:NO",
+    ],
+)
+
+filegroup(name = "freebl3_implib", srcs = [":freebl3"], output_group = "interface_library")
+
+# ── freebl_loader (static) ────────────────────────────────────────────────────
+# loader.c provides all freebl API wrappers (SHA*, AES*, BL_Init, HMAC_*, …)
+# via vector dispatch: it dlopen's freebl3.dll at runtime via FREEBL_GetVector.
+# softokn3 and nss3 link this object directly instead of against freebl3.if.lib.
+
+cc_library(
+    name = "freebl_loader",
+    srcs = ["nss/lib/freebl/loader.c"],
+    copts = WIN_COPTS + FREEBL_INCLUDES,
+    defines = WIN_DEFINES + [
+        "FREEBL_LOWHASH",
+        "USE_UTIL_DIRECTLY",
+        "SHLIB_PREFIX=",
+        "SHLIB_VERSION=\\\"3\\\"",
+        "SHLIB_SUFFIX=\\\"dll\\\"",
+        "SOFTOKEN_SHLIB_VERSION=\\\"3\\\"",
+    ],
+)
+
+# ── softokn3.dll ─────────────────────────────────────────────────────────────
+
+cc_binary(
+    name = "softokn3",
+    srcs = [
+        "nss/lib/softoken/fipsaudt.c",
+        "nss/lib/softoken/fipstest.c",
+        "nss/lib/softoken/fipstokn.c",
+        "nss/lib/softoken/jpakesftk.c",
+        "nss/lib/softoken/lgglue.c",
+        "nss/lib/softoken/lowkey.c",
+        "nss/lib/softoken/lowpbe.c",
+        "nss/lib/softoken/padbuf.c",
+        "nss/lib/softoken/pkcs11.c",
+        "nss/lib/softoken/pkcs11c.c",
+        "nss/lib/softoken/pkcs11u.c",
+        "nss/lib/softoken/sdb.c",
+        "nss/lib/softoken/sftkdb.c",
+        "nss/lib/softoken/sftkhmac.c",
+        "nss/lib/softoken/sftkpars.c",
+        "nss/lib/softoken/sftkpwd.c",
+        "nss/lib/softoken/softkver.c",
+        "nss/lib/softoken/tlsprf.c",
+        # bundled SQLite3
+        "nss/lib/sqlite/sqlite3.c",
+    ],
+    copts = WIN_COPTS + SOFTOKN_INCLUDES + [
+        "/Zm500",  # SQLite3 is large; raise compiler heap limit
+    ],
+    defines = WIN_DEFINES + [
+        'SHLIB_SUFFIX=\\"dll\\"',
+        'SHLIB_PREFIX=\\"\\\"',
+        'SHLIB_VERSION=\\"3\\"',
+        'SOFTOKEN_LIB_NAME=\\"softokn3.dll\\"',
+        "USE_UTIL_DIRECTLY",
+        "FREEBL_LOWHASH",
+        "NSS_ENABLE_ECC",
+        # SQLite compile-time options
+        "SQLITE_NO_SYNC",
+        "SQLITE_OMIT_TRACE",
+        "SQLITE_OMIT_DEPRECATED",
+        "SQLITE_OMIT_LOOKASIDE",
+        "SQLITE_OS_WIN=1",
+        "SQLITE_TEMP_STORE=1",
+    ],
+    linkshared = True,
+    win_def_file = "nss/lib/softoken/softokn.def",
+    deps = [":freebl_loader"],
+    additional_linker_inputs = [
+        ":nspr4_implib",
+        ":plds4_implib",
+        ":plc4_implib",
+        ":nssutil3_implib",
+        # freebl3 is loaded at runtime by loader.c; no .if.lib needed at link time
+    ],
+    linkopts = [
+        "$(execpath :nspr4_implib)",
+        "$(execpath :plds4_implib)",
+        "$(execpath :plc4_implib)",
+        "$(execpath :nssutil3_implib)",
+        "/MANIFEST:NO",
+    ],
+)
+
+filegroup(name = "softokn3_implib", srcs = [":softokn3"], output_group = "interface_library")
+
+# ── nss3.dll ─────────────────────────────────────────────────────────────────
+# All internal NSS components (base, certdb, dev, pk11wrap, pki, cryptohi,
+# certhigh) are compiled directly into nss3.dll so their global state is shared.
+
+cc_binary(
+    name = "nss3",
+    srcs = [
+        # nss init
+        "nss/lib/nss/nssinit.c",
+        "nss/lib/nss/nssoptions.c",
+        "nss/lib/nss/nssver.c",
+        "nss/lib/nss/utilwrap.c",
+        # base
+        "nss/lib/base/arena.c",
+        "nss/lib/base/error.c",
+        "nss/lib/base/errorval.c",
+        "nss/lib/base/hash.c",
+        "nss/lib/base/hashops.c",
+        "nss/lib/base/item.c",
+        "nss/lib/base/libc.c",
+        "nss/lib/base/list.c",
+        "nss/lib/base/tracker.c",
+        "nss/lib/base/utf8.c",
+        # certdb
+        "nss/lib/certdb/alg1485.c",
+        "nss/lib/certdb/certdb.c",
+        "nss/lib/certdb/certv3.c",
+        "nss/lib/certdb/certxutl.c",
+        "nss/lib/certdb/crl.c",
+        "nss/lib/certdb/genname.c",
+        "nss/lib/certdb/polcyxtn.c",
+        "nss/lib/certdb/secname.c",
+        "nss/lib/certdb/stanpcertdb.c",
+        "nss/lib/certdb/xauthkid.c",
+        "nss/lib/certdb/xbsconst.c",
+        "nss/lib/certdb/xconst.c",
+        # certhigh
+        "nss/lib/certhigh/certhigh.c",
+        "nss/lib/certhigh/certhtml.c",
+        "nss/lib/certhigh/certreq.c",
+        "nss/lib/certhigh/certvfy.c",
+        "nss/lib/certhigh/certvfypkix.c",
+        "nss/lib/certhigh/crlv2.c",
+        "nss/lib/certhigh/ocsp.c",
+        "nss/lib/certhigh/ocspsig.c",
+        "nss/lib/certhigh/xcrldist.c",
+        # cryptohi
+        "nss/lib/cryptohi/dsautil.c",
+        "nss/lib/cryptohi/sechash.c",
+        "nss/lib/cryptohi/seckey.c",
+        "nss/lib/cryptohi/secsign.c",
+        "nss/lib/cryptohi/secvfy.c",
+        # dev
+        "nss/lib/dev/ckhelper.c",
+        "nss/lib/dev/devslot.c",
+        "nss/lib/dev/devtoken.c",
+        "nss/lib/dev/devutil.c",
+        # pk11wrap
+        # debug_module.c is #include'd by pk11load.c; not compiled separately
+        "nss/lib/pk11wrap/dev3hack.c",
+        "nss/lib/pk11wrap/pk11akey.c",
+        "nss/lib/pk11wrap/pk11auth.c",
+        "nss/lib/pk11wrap/pk11cert.c",
+        "nss/lib/pk11wrap/pk11cxt.c",
+        "nss/lib/pk11wrap/pk11err.c",
+        "nss/lib/pk11wrap/pk11kea.c",
+        "nss/lib/pk11wrap/pk11list.c",
+        "nss/lib/pk11wrap/pk11load.c",
+        "nss/lib/pk11wrap/pk11mech.c",
+        "nss/lib/pk11wrap/pk11merge.c",
+        "nss/lib/pk11wrap/pk11nobj.c",
+        "nss/lib/pk11wrap/pk11obj.c",
+        "nss/lib/pk11wrap/pk11pars.c",
+        "nss/lib/pk11wrap/pk11pbe.c",
+        "nss/lib/pk11wrap/pk11pk12.c",
+        "nss/lib/pk11wrap/pk11pqg.c",
+        "nss/lib/pk11wrap/pk11sdr.c",
+        "nss/lib/pk11wrap/pk11skey.c",
+        "nss/lib/pk11wrap/pk11slot.c",
+        "nss/lib/pk11wrap/pk11util.c",
+        # pki
+        "nss/lib/pki/asymmkey.c",
+        "nss/lib/pki/certdecode.c",
+        "nss/lib/pki/certificate.c",
+        "nss/lib/pki/cryptocontext.c",
+        "nss/lib/pki/pki3hack.c",
+        "nss/lib/pki/pkibase.c",
+        "nss/lib/pki/pkistore.c",
+        "nss/lib/pki/symmkey.c",
+        "nss/lib/pki/tdcache.c",
+        "nss/lib/pki/trustdomain.c",
+        # libpkix — pkix/certsel
+        "nss/lib/libpkix/pkix/certsel/pkix_certselector.c",
+        "nss/lib/libpkix/pkix/certsel/pkix_comcertselparams.c",
+        # libpkix — pkix/checker
+        "nss/lib/libpkix/pkix/checker/pkix_basicconstraintschecker.c",
+        "nss/lib/libpkix/pkix/checker/pkix_certchainchecker.c",
+        "nss/lib/libpkix/pkix/checker/pkix_crlchecker.c",
+        "nss/lib/libpkix/pkix/checker/pkix_ekuchecker.c",
+        "nss/lib/libpkix/pkix/checker/pkix_expirationchecker.c",
+        "nss/lib/libpkix/pkix/checker/pkix_namechainingchecker.c",
+        "nss/lib/libpkix/pkix/checker/pkix_nameconstraintschecker.c",
+        "nss/lib/libpkix/pkix/checker/pkix_ocspchecker.c",
+        "nss/lib/libpkix/pkix/checker/pkix_policychecker.c",
+        "nss/lib/libpkix/pkix/checker/pkix_revocationchecker.c",
+        "nss/lib/libpkix/pkix/checker/pkix_revocationmethod.c",
+        "nss/lib/libpkix/pkix/checker/pkix_signaturechecker.c",
+        "nss/lib/libpkix/pkix/checker/pkix_targetcertchecker.c",
+        # libpkix — pkix/crlsel
+        "nss/lib/libpkix/pkix/crlsel/pkix_comcrlselparams.c",
+        "nss/lib/libpkix/pkix/crlsel/pkix_crlselector.c",
+        # libpkix — pkix/params
+        "nss/lib/libpkix/pkix/params/pkix_procparams.c",
+        "nss/lib/libpkix/pkix/params/pkix_resourcelimits.c",
+        "nss/lib/libpkix/pkix/params/pkix_trustanchor.c",
+        "nss/lib/libpkix/pkix/params/pkix_valparams.c",
+        # libpkix — pkix/results
+        "nss/lib/libpkix/pkix/results/pkix_buildresult.c",
+        "nss/lib/libpkix/pkix/results/pkix_policynode.c",
+        "nss/lib/libpkix/pkix/results/pkix_valresult.c",
+        "nss/lib/libpkix/pkix/results/pkix_verifynode.c",
+        # libpkix — pkix/store
+        "nss/lib/libpkix/pkix/store/pkix_store.c",
+        # libpkix — pkix/top
+        "nss/lib/libpkix/pkix/top/pkix_build.c",
+        "nss/lib/libpkix/pkix/top/pkix_lifecycle.c",
+        "nss/lib/libpkix/pkix/top/pkix_validate.c",
+        # libpkix — pkix/util
+        "nss/lib/libpkix/pkix/util/pkix_error.c",
+        "nss/lib/libpkix/pkix/util/pkix_errpaths.c",
+        "nss/lib/libpkix/pkix/util/pkix_list.c",
+        "nss/lib/libpkix/pkix/util/pkix_logger.c",
+        "nss/lib/libpkix/pkix/util/pkix_tools.c",
+        # libpkix — pkix_pl_nss/module
+        "nss/lib/libpkix/pkix_pl_nss/module/pkix_pl_aiamgr.c",
+        "nss/lib/libpkix/pkix_pl_nss/module/pkix_pl_colcertstore.c",
+        "nss/lib/libpkix/pkix_pl_nss/module/pkix_pl_httpcertstore.c",
+        "nss/lib/libpkix/pkix_pl_nss/module/pkix_pl_httpdefaultclient.c",
+        "nss/lib/libpkix/pkix_pl_nss/module/pkix_pl_ldapcertstore.c",
+        "nss/lib/libpkix/pkix_pl_nss/module/pkix_pl_ldapdefaultclient.c",
+        "nss/lib/libpkix/pkix_pl_nss/module/pkix_pl_ldaprequest.c",
+        "nss/lib/libpkix/pkix_pl_nss/module/pkix_pl_ldapresponse.c",
+        "nss/lib/libpkix/pkix_pl_nss/module/pkix_pl_ldaptemplates.c",
+        "nss/lib/libpkix/pkix_pl_nss/module/pkix_pl_nsscontext.c",
+        "nss/lib/libpkix/pkix_pl_nss/module/pkix_pl_pk11certstore.c",
+        "nss/lib/libpkix/pkix_pl_nss/module/pkix_pl_socket.c",
+        # libpkix — pkix_pl_nss/pki
+        "nss/lib/libpkix/pkix_pl_nss/pki/pkix_pl_basicconstraints.c",
+        "nss/lib/libpkix/pkix_pl_nss/pki/pkix_pl_cert.c",
+        "nss/lib/libpkix/pkix_pl_nss/pki/pkix_pl_certpolicyinfo.c",
+        "nss/lib/libpkix/pkix_pl_nss/pki/pkix_pl_certpolicymap.c",
+        "nss/lib/libpkix/pkix_pl_nss/pki/pkix_pl_certpolicyqualifier.c",
+        "nss/lib/libpkix/pkix_pl_nss/pki/pkix_pl_crl.c",
+        "nss/lib/libpkix/pkix_pl_nss/pki/pkix_pl_crldp.c",
+        "nss/lib/libpkix/pkix_pl_nss/pki/pkix_pl_crlentry.c",
+        "nss/lib/libpkix/pkix_pl_nss/pki/pkix_pl_date.c",
+        "nss/lib/libpkix/pkix_pl_nss/pki/pkix_pl_generalname.c",
+        "nss/lib/libpkix/pkix_pl_nss/pki/pkix_pl_infoaccess.c",
+        "nss/lib/libpkix/pkix_pl_nss/pki/pkix_pl_nameconstraints.c",
+        "nss/lib/libpkix/pkix_pl_nss/pki/pkix_pl_ocspcertid.c",
+        "nss/lib/libpkix/pkix_pl_nss/pki/pkix_pl_ocsprequest.c",
+        "nss/lib/libpkix/pkix_pl_nss/pki/pkix_pl_ocspresponse.c",
+        "nss/lib/libpkix/pkix_pl_nss/pki/pkix_pl_publickey.c",
+        "nss/lib/libpkix/pkix_pl_nss/pki/pkix_pl_x500name.c",
+        # libpkix — pkix_pl_nss/system
+        "nss/lib/libpkix/pkix_pl_nss/system/pkix_pl_bigint.c",
+        "nss/lib/libpkix/pkix_pl_nss/system/pkix_pl_bytearray.c",
+        "nss/lib/libpkix/pkix_pl_nss/system/pkix_pl_common.c",
+        "nss/lib/libpkix/pkix_pl_nss/system/pkix_pl_error.c",
+        "nss/lib/libpkix/pkix_pl_nss/system/pkix_pl_hashtable.c",
+        "nss/lib/libpkix/pkix_pl_nss/system/pkix_pl_lifecycle.c",
+        "nss/lib/libpkix/pkix_pl_nss/system/pkix_pl_mem.c",
+        "nss/lib/libpkix/pkix_pl_nss/system/pkix_pl_monitorlock.c",
+        "nss/lib/libpkix/pkix_pl_nss/system/pkix_pl_mutex.c",
+        "nss/lib/libpkix/pkix_pl_nss/system/pkix_pl_object.c",
+        "nss/lib/libpkix/pkix_pl_nss/system/pkix_pl_oid.c",
+        "nss/lib/libpkix/pkix_pl_nss/system/pkix_pl_primhash.c",
+        "nss/lib/libpkix/pkix_pl_nss/system/pkix_pl_rwlock.c",
+        "nss/lib/libpkix/pkix_pl_nss/system/pkix_pl_string.c",
+    ],
+    copts = WIN_COPTS + NSS3_INCLUDES,
+    defines = WIN_DEFINES + [
+        "NSS_BUILD",
+        "USE_UTIL_DIRECTLY",
+        "SHLIB_PREFIX=",
+        "SHLIB_VERSION=\\\"3\\\"",
+        "SHLIB_SUFFIX=\\\"dll\\\"",
+        "SOFTOKEN_SHLIB_VERSION=\\\"3\\\"",
+    ],
+    linkshared = True,
+    win_def_file = "nss/lib/nss/nss.def",
+    additional_linker_inputs = [
+        ":nspr4_implib",
+        ":plds4_implib",
+        ":plc4_implib",
+        ":nssutil3_implib",
+        ":softokn3_implib",
+        ":freebl3_implib",
+    ],
+    linkopts = [
+        "$(execpath :nspr4_implib)",
+        "$(execpath :plds4_implib)",
+        "$(execpath :plc4_implib)",
+        "$(execpath :nssutil3_implib)",
+        "$(execpath :softokn3_implib)",
+        "$(execpath :freebl3_implib)",
+        "/MANIFEST:NO",
+    ],
+)
+
+filegroup(name = "nss3_implib", srcs = [":nss3"], output_group = "interface_library")
+
+# ── smime3.dll ───────────────────────────────────────────────────────────────
+
+cc_binary(
+    name = "smime3",
+    srcs = [
+        # smime
+        "nss/lib/smime/cmsarray.c",
+        "nss/lib/smime/cmsasn1.c",
+        "nss/lib/smime/cmsattr.c",
+        "nss/lib/smime/cmscinfo.c",
+        "nss/lib/smime/cmscipher.c",
+        "nss/lib/smime/cmsdecode.c",
+        "nss/lib/smime/cmsdigdata.c",
+        "nss/lib/smime/cmsdigest.c",
+        "nss/lib/smime/cmsencdata.c",
+        "nss/lib/smime/cmsencode.c",
+        "nss/lib/smime/cmsenvdata.c",
+        "nss/lib/smime/cmsmessage.c",
+        "nss/lib/smime/cmspubkey.c",
+        "nss/lib/smime/cmsrecinfo.c",
+        "nss/lib/smime/cmsreclist.c",
+        "nss/lib/smime/cmssigdata.c",
+        "nss/lib/smime/cmssiginfo.c",
+        "nss/lib/smime/cmsudf.c",
+        "nss/lib/smime/cmsutil.c",
+        "nss/lib/smime/smimemessage.c",
+        "nss/lib/smime/smimeutil.c",
+        "nss/lib/smime/smimever.c",
+        # pkcs7 (SEC_PKCS7* + CERT_Decode* exports in smime.def)
+        "nss/lib/pkcs7/certread.c",
+        "nss/lib/pkcs7/p7common.c",
+        "nss/lib/pkcs7/p7create.c",
+        "nss/lib/pkcs7/p7decode.c",
+        "nss/lib/pkcs7/p7encode.c",
+        "nss/lib/pkcs7/p7local.c",
+        "nss/lib/pkcs7/secmime.c",
+        # pkcs12 (SEC_PKCS12* exports in smime.def — new API only; p12exp/p12dec/p12creat are legacy, not exported)
+        "nss/lib/pkcs12/p12d.c",
+        "nss/lib/pkcs12/p12e.c",
+        "nss/lib/pkcs12/p12local.c",
+        "nss/lib/pkcs12/p12plcy.c",
+        "nss/lib/pkcs12/p12tmpl.c",
+    ],
+    copts = WIN_COPTS + SMIME_INCLUDES,
+    defines = WIN_DEFINES + [
+        "USE_UTIL_DIRECTLY",
+        "SHLIB_PREFIX=",
+        "SHLIB_VERSION=\\\"3\\\"",
+        "SHLIB_SUFFIX=\\\"dll\\\"",
+    ],
+    linkshared = True,
+    win_def_file = "nss/lib/smime/smime.def",
+    additional_linker_inputs = [
+        ":nspr4_implib",
+        ":plds4_implib",
+        ":plc4_implib",
+        ":nssutil3_implib",
+        ":nss3_implib",
+    ],
+    linkopts = [
+        "$(execpath :nspr4_implib)",
+        "$(execpath :plds4_implib)",
+        "$(execpath :plc4_implib)",
+        "$(execpath :nssutil3_implib)",
+        "$(execpath :nss3_implib)",
+        "/MANIFEST:NO",
+    ],
+)
+
+filegroup(name = "smime3_implib", srcs = [":smime3"], output_group = "interface_library")
+
+# ── nss (top-level consumer target) ──────────────────────────────────────────
+# Provides all public headers and links against all NSS/NSPR import libs.
+# xmlsecurity deps on this target.
+
+cc_library(
+    name = "nss",
+    hdrs = glob(
+        [
+            "nspr/pr/include/**/*.h",
+            "nspr/lib/ds/*.h",
+            "nspr/lib/libc/include/*.h",
+            "nss/lib/util/*.h",
+            "nss/lib/nss/*.h",
+            "nss/lib/smime/*.h",
+            "nss/lib/certdb/*.h",
+            "nss/lib/certhigh/*.h",
+            "nss/lib/cryptohi/*.h",
+            "nss/lib/pk11wrap/*.h",
+            "nss/lib/dev/*.h",
+            "nss/lib/pki/*.h",
+            "nss/lib/freebl/*.h",
+            "nss/lib/ssl/*.h",
+            "nss/lib/base/*.h",
+            "nss/lib/pkcs7/*.h",
+            "nss/lib/pkcs12/*.h",
+            "nss/lib/ckfw/builtins/*.h",
+        ],
+        allow_empty = True,
+    ),
+    includes = [
+        "nspr/pr/include",
+        "nspr/lib/ds",
+        "nspr/lib/libc/include",
+        "nss/lib/util",
+        "nss/lib/nss",
+        "nss/lib/smime",
+        "nss/lib/certdb",
+        "nss/lib/certhigh",
+        "nss/lib/cryptohi",
+        "nss/lib/pk11wrap",
+        "nss/lib/dev",
+        "nss/lib/pki",
+        "nss/lib/freebl",
+        "nss/lib/ssl",
+        "nss/lib/base",
+        "nss/lib/pkcs7",
+        "nss/lib/pkcs12",
+        "nss/lib/ckfw/builtins",
+    ],
+    additional_linker_inputs = [
+        ":nspr4_implib",
+        ":plds4_implib",
+        ":plc4_implib",
+        ":nssutil3_implib",
+        ":freebl3_implib",
+        ":softokn3_implib",
+        ":nss3_implib",
+        ":smime3_implib",
+    ],
+    linkopts = [
+        "$(execpath :nspr4_implib)",
+        "$(execpath :plds4_implib)",
+        "$(execpath :plc4_implib)",
+        "$(execpath :nssutil3_implib)",
+        "$(execpath :freebl3_implib)",
+        "$(execpath :softokn3_implib)",
+        "$(execpath :nss3_implib)",
+        "$(execpath :smime3_implib)",
+    ],
+)

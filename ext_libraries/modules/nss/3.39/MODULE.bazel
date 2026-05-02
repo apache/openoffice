@@ -1,0 +1,8 @@
+module(
+    name = "nss",
+    version = "3.39",
+    compatibility_level = 1,
+)
+
+bazel_dep(name = "platforms", version = "1.0.0")
+bazel_dep(name = "rules_cc",  version = "0.2.17")

@@ -1,0 +1,21 @@
+{
+  "integrity": "sha256-vCyOa4jyNBXypTTkascbFku807RzlC3pnzTmKPyTbR4=",
+  "strip_prefix": "nss-3.39",
+  "url": "https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_39_RTM/src/nss-3.39-with-nspr-4.20.tar.gz",
+  "overlay": {
+    "MODULE.bazel":                    "sha256-mXRzSNFfz0l/ZE/gxIXrTXgGEu73DRFzcL03hpjgzWw=",
+    "BUILD.bazel":                     "sha256-BVN8Qf65vHdXoWqhWZQcmrQEbmftW8U+Ef9T5FoQiG0=",
+    "nspr/pr/include/prcpucfg.h":      "sha256-epNyl8GFFwovhIu3m76CCZkyQlMxDlsitfA/83I/oS8=",
+    "nspr/pr/src/_pr_bld.h":           "sha256-KbNBXdVYpv4NqdFTM9U1OGsXFI0t2Pvsv4p7b6dTnNE=",
+    "nspr/lib/libc/src/_pl_bld.h":     "sha256-8EkKDhgBCnbvsC3iz8vHqVtm6Mzwq8VgAFjve6zRPcQ=",
+    "nspr/lib/ds/_pl_bld.h":           "sha256-8EkKDhgBCnbvsC3iz8vHqVtm6Mzwq8VgAFjve6zRPcQ=",
+    "nss/lib/util/secplcy.h":          "sha256-XBtVgg45TUUkJ9dzcgzTgiRAYcmx9Kl0dMOTtiAkZR4=",
+    "nss/lib/freebl/stdint.h":         "sha256-JAsLPCTa8ljpq0q5Bkhki/M6c6bmqGQwAe8tdbezRlo="
+  },
+  "patches": {
+    "nss.patch":       "sha256-PNisPTc+Syr3cnD+8Ixipw65zUrG2rOg1peBfXVcdck=",
+    "nss_win.patch":   "sha256-ORoSU5UGyh5eR5VfrS9LBDG5oHGPGmKyhC3ZYgvxvyA=",
+    "nss_sizes.patch": "sha256-OMYmfwozZnvzpRVl0ipMnbUsmedPULlPoGKBUsdONDw="
+  },
+  "patch_strip": 2
+}
