@@ -177,8 +177,8 @@ animations    ✅  (animcore.dll) — main/animations/readme.md
 chart2        ✅  (charttools, chartmodel, chartview, chartcontroller) — main/chart2/readme.md
 embeddedobj   ✅  (embobj.dll, emboleobj.dll) — main/embeddedobj/readme.md
 xmlsecurity   ✅  (xsec_fw.dll, xsec_xmlsec.dll, xmlsecurity.dll) — main/xmlsecurity/readme.md
-uui           ⬜  (svtools, vcl, toolkit, sfx2 — user interaction/auth dialogs)
-fileaccess    ⬜  (ucb, comphelper — file access UNO service)
+uui           ✅  (uui.dll) — main/uui/readme.md
+fileaccess    ✅  (fileacc.dll) — main/fileaccess/readme.md
 accessibility ⬜  (vcl, toolkit, svx, cppu — a11y UNO API)
 ── Layer 16 ─────────────────────────────────────────────────────────────
 forms         ⬜  (svx, toolkit, vcl, formula, connectivity — form controls)
@@ -221,6 +221,11 @@ unoil         ⬜  update climaker
 ── Already done, not yet listed ─────────────────────────────────────────
 ooxml         ✅  (done with oox migration; openssl_shim removed, now uses @openssl//:ssl)
 stlport       ✅  (boost hash_map shim, referenced as dep)
+── Cross-cutting infrastructure ─────────────────────────────────────
+rsc pipeline   ⬜  (.src → .srs → .res via rscpp + rsc genrule; tools already
+                   built at //main/rsc:rsc + :rscpp; affects all UI modules with
+                   AllLangResTarget: uui, svl, svtools, vcl, sfx2, svx, filter,
+                   xmlsecurity, and all future app-layer modules)
 ── Deferred: Java-based ─────────────────────────────────────────────────
 bean          ⬜  (Java bean component)
 stax          ⬜  (StAX XML streaming API)

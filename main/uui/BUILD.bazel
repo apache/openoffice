@@ -1,0 +1,86 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+]
+
+_COPTS = [
+    "/Imain/uui/source",
+    "/Zc:wchar_t-",
+]
+
+# .hrc files are #include'd by .cxx files for resource IDs; textual_hdrs
+# requires cc_library, so wrap them here and dep from the binary.
+cc_library(
+    name = "_hrc_headers",
+    textual_hdrs = glob(["source/*.hrc"]),
+)
+
+# ── uui.dll ──────────────────────────────────────────────────────────
+# UNO component: UUIInteractionHandler, UUIInteractionRequestStringResolver,
+# PasswordContainerInteractionHandler — user authentication/security dialogs.
+# .src resource files deferred — no rsc pipeline yet.
+cc_binary(
+    name = "uui",
+    srcs = glob([
+        "source/*.cxx",
+        "source/*.hxx",
+    ]),
+    copts = _COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/uui.def",
+    deps = [
+        ":_hrc_headers",
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/tools:tools_headers",
+        "//main/unotools:unotools_headers",
+        "//main/svl:svl_headers",
+        "//main/svtools:svtools_headers",
+        "//main/vcl:vcl_headers",
+        "//main/toolkit:toolkit_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/svl:svl_implib",
+        "//main/svtools:svt_implib",
+        "//main/vcl:vcl_implib",
+        "//main/toolkit:ootk_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/toolkit:ootk_implib)",
+        "user32.lib", "gdi32.lib", "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "uui_implib",
+    srcs = [":uui"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)

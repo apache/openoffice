@@ -1,0 +1,5 @@
+; Windows export file for fileacc.dll
+LIBRARY fileacc
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory
