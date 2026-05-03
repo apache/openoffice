@@ -1,0 +1,231 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+# winaccessibility requires ATL headers (VC\ATLMFC\INCLUDE) — same guard as embedserv.
+# On a VS Professional/Enterprise install add to user.bazelrc:
+#   build --//build:atl_available=True
+_ATL_REQUIRED = select({
+    "//build:has_atl": [],
+    "//conditions:default": ["@platforms//:incompatible"],
+})
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+]
+
+# ── MIDL IDL compilation ──────────────────────────────────────────────────────
+# Runs midl.exe on the 6 IAccessible2 IDL files to produce generated headers
+# and proxy/stub C files consumed by UAccCOM.dll and winaccessibility.dll.
+# UAccCOM.idl imports ia2_api_all.idl + defines.idl, so those are compiled
+# first and their output dir is added as an include path for the final pass.
+genrule(
+    name = "uacccom_idl",
+    srcs = [
+        "source/UAccCOMIDL/UAccCOM.idl",
+        "source/UAccCOMIDL/ia2_api_all.idl",
+        "source/UAccCOMIDL/AccessibleKeyBinding.idl",
+        "source/UAccCOMIDL/AccessibleKeyStroke.idl",
+        "source/UAccCOMIDL/Charset.idl",
+        "source/UAccCOMIDL/defines.idl",
+    ],
+    outs = [
+        "UAccCOM.h",               "UAccCOM_i.c",               "UAccCOM_p.c",               "UAccCOM.tlb",
+        "ia2_api_all.h",           "ia2_api_all_i.c",           "ia2_api_all_p.c",           "ia2_api_all.tlb",
+        "AccessibleKeyBinding.h",  "AccessibleKeyBinding_i.c",  "AccessibleKeyBinding_p.c",  "AccessibleKeyBinding.tlb",
+        "AccessibleKeyStroke.h",   "AccessibleKeyStroke_i.c",   "AccessibleKeyStroke_p.c",   "AccessibleKeyStroke.tlb",
+        "Charset.h",               "Charset_i.c",               "Charset_p.c",               "Charset.tlb",
+        "defines.h",               "defines_i.c",               "defines_p.c",               "defines.tlb",
+    ],
+    target_compatible_with = _ATL_REQUIRED,
+    cmd_bat = (
+        "set \"_WS=%cd%\"&&" +
+        "set \"_MIDL=C:\\Program Files\\Microsoft SDKs\\Windows\\v7.0\\Bin\\midl.exe\"&&" +
+        "set \"_INC=C:\\Program Files\\Microsoft SDKs\\Windows\\v7.0\\Include\"&&" +
+        "set \"_IDL=!_WS!\\main\\winaccessibility\\source\\UAccCOMIDL\"&&" +
+        "set \"_OUT=$(RULEDIR)\"&&" +
+        "set \"_OUT=!_OUT:/=\\!\"&&" +
+        "\"!_MIDL!\" -tlb \"!_OUT!\\AccessibleKeyBinding.tlb\" -h \"!_OUT!\\AccessibleKeyBinding.h\" -iid \"!_OUT!\\AccessibleKeyBinding_i.c\" -proxy \"!_OUT!\\AccessibleKeyBinding_p.c\" -Oicf -I \"!_INC!\" -I \"!_IDL!\" \"!_IDL!\\AccessibleKeyBinding.idl\"&&" +
+        "\"!_MIDL!\" -tlb \"!_OUT!\\AccessibleKeyStroke.tlb\" -h \"!_OUT!\\AccessibleKeyStroke.h\" -iid \"!_OUT!\\AccessibleKeyStroke_i.c\" -proxy \"!_OUT!\\AccessibleKeyStroke_p.c\" -Oicf -I \"!_INC!\" -I \"!_IDL!\" \"!_IDL!\\AccessibleKeyStroke.idl\"&&" +
+        "\"!_MIDL!\" -tlb \"!_OUT!\\Charset.tlb\" -h \"!_OUT!\\Charset.h\" -iid \"!_OUT!\\Charset_i.c\" -proxy \"!_OUT!\\Charset_p.c\" -Oicf -I \"!_INC!\" -I \"!_IDL!\" \"!_IDL!\\Charset.idl\"&&" +
+        "\"!_MIDL!\" -tlb \"!_OUT!\\defines.tlb\" -h \"!_OUT!\\defines.h\" -iid \"!_OUT!\\defines_i.c\" -proxy \"!_OUT!\\defines_p.c\" -Oicf -I \"!_INC!\" -I \"!_IDL!\" \"!_IDL!\\defines.idl\"&&" +
+        "\"!_MIDL!\" -tlb \"!_OUT!\\ia2_api_all.tlb\" -h \"!_OUT!\\ia2_api_all.h\" -iid \"!_OUT!\\ia2_api_all_i.c\" -proxy \"!_OUT!\\ia2_api_all_p.c\" -Oicf -I \"!_INC!\" -I \"!_IDL!\" -I \"!_OUT!\" \"!_IDL!\\ia2_api_all.idl\"&&" +
+        "\"!_MIDL!\" -tlb \"!_OUT!\\UAccCOM.tlb\" -h \"!_OUT!\\UAccCOM.h\" -iid \"!_OUT!\\UAccCOM_i.c\" -proxy \"!_OUT!\\UAccCOM_p.c\" -Oicf -I \"!_INC!\" -I \"!_IDL!\" -I \"!_OUT!\" \"!_IDL!\\UAccCOM.idl\""
+    ),
+)
+
+# Generated COM headers exposed as a cc_library dep.
+# includes = ["."] adds bazel-out/.../main/winaccessibility/ to the -I path so
+# that consumers can #include "UAccCOM.h" and #include "UAccCOM_i.c" directly.
+cc_library(
+    name = "uacccom_idl_headers",
+    hdrs = [
+        ":UAccCOM.h",
+        ":ia2_api_all.h",
+        ":AccessibleKeyBinding.h",
+        ":AccessibleKeyStroke.h",
+        ":Charset.h",
+        ":defines.h",
+    ],
+    # _i.c files are #included directly in source files; treat as textual headers
+    textual_hdrs = [
+        ":UAccCOM_i.c",
+        ":ia2_api_all_i.c",
+    ],
+    includes = ["."],
+    target_compatible_with = _ATL_REQUIRED,
+    visibility = ["//visibility:public"],
+)
+
+# ── UAccCOM.dll (IAccessible2 COM wrapper, ATL-based) ─────────────────────────
+cc_binary(
+    name = "uacccom",
+    srcs = [
+        "source/UAccCOM/AccAction.cpp",
+        "source/UAccCOM/AccActionBase.cpp",
+        "source/UAccCOM/AccComponent.cpp",
+        "source/UAccCOM/AccComponentBase.cpp",
+        "source/UAccCOM/AccEditableText.cpp",
+        "source/UAccCOM/AccHyperLink.cpp",
+        "source/UAccCOM/AccHypertext.cpp",
+        "source/UAccCOM/AccImage.cpp",
+        "source/UAccCOM/AccRelation.cpp",
+        "source/UAccCOM/AccTable.cpp",
+        "source/UAccCOM/AccText.cpp",
+        "source/UAccCOM/AccTextBase.cpp",
+        "source/UAccCOM/AccValue.cpp",
+        "source/UAccCOM/CheckEnableAccessible.cpp",
+        "source/UAccCOM/EnumVariant.cpp",
+        "source/UAccCOM/MAccessible.cpp",
+        "source/UAccCOM/StdAfx.cpp",
+        "source/UAccCOM/UAccCOM.cpp",
+        "source/UAccCOM/UNOXWrapper.cpp",
+    ] + glob([
+        "source/UAccCOM/*.h",
+        "inc/*.hxx",
+        "inc/*.h",
+    ]),
+    copts = [
+        "/Zc:wchar_t-",
+        "/Imain/winaccessibility/inc",
+        "/Imain/winaccessibility/source/UAccCOM",
+    ],
+    defines = _DEFINES + ["_UNICODE", "UNICODE"],
+    linkshared = True,
+    win_def_file = "source/UAccCOM/UAccCOM.def",
+    target_compatible_with = _ATL_REQUIRED,
+    deps = [
+        ":uacccom_idl_headers",
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/vcl:vcl_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "@icu//:icuuc_headers",
+        "@icu//:icui18n_headers",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/vcl:vcl_implib",
+        "@icu//:icuuc_implib",
+        "@icu//:icui18n_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath @icu//:icuuc_implib)",
+        "$(execpath @icu//:icui18n_implib)",
+        "kernel32.lib", "user32.lib", "advapi32.lib",
+        "ole32.lib", "oleaut32.lib", "shlwapi.lib",
+        "uuid.lib", "oleacc.lib",
+        "atls.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "uacccom_implib",
+    srcs = [":uacccom"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── winaccessibility.dll (MSAA UNO service) ──────────────────────────────────
+cc_binary(
+    name = "winaccessibility",
+    srcs = [
+        "source/service/AccObject.cxx",
+        "source/service/AccObjectWinManager.cxx",
+        "source/service/AccObjectManagerAgent.cxx",
+        "source/service/AccEventListener.cxx",
+        "source/service/AccComponentEventListener.cxx",
+        "source/service/AccContainerEventListener.cxx",
+        "source/service/AccDescendantManagerEventListener.cxx",
+        "source/service/AccDialogEventListener.cxx",
+        "source/service/AccFrameEventListener.cxx",
+        "source/service/AccListEventListener.cxx",
+        "source/service/AccMenuEventListener.cxx",
+        "source/service/AccObjectContainerEventListener.cxx",
+        "source/service/AccParagraphEventListener.cxx",
+        "source/service/AccTableEventListener.cxx",
+        "source/service/AccTextComponentEventListener.cxx",
+        "source/service/AccTopWindowListener.cxx",
+        "source/service/AccTreeEventListener.cxx",
+        "source/service/AccWindowEventListener.cxx",
+        "source/service/AccResource.cxx",
+        "source/service/ResIDGenerator.cxx",
+        "source/service/checkmt.cxx",
+        "source/service/msaaservice_impl.cxx",
+    ] + glob([
+        "source/service/*.hxx",
+        "inc/*.hxx",
+        "inc/*.h",
+    ]),
+    copts = [
+        "/Zc:wchar_t-",
+        "/Imain/winaccessibility/inc",
+        "/Imain/winaccessibility/source/service",
+    ],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/winaccessibility.def",
+    target_compatible_with = _ATL_REQUIRED,
+    deps = [
+        ":uacccom_idl_headers",
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/vcl:vcl_headers",
+        "//main/vos:vos_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/tools:tl_implib",
+        "//main/vcl:vcl_implib",
+        "//main/toolkit:ootk_implib",
+        "//main/vos:vos3_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/toolkit:ootk_implib)",
+        "$(execpath //main/vos:vos3_implib)",
+        "gdi32.lib", "winspool.lib", "ole32.lib", "shell32.lib",
+        "advapi32.lib", "imm32.lib", "uuid.lib", "oleacc.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
