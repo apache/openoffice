@@ -122,7 +122,7 @@ winaccessibility ✅  (UAccCOM.dll + winaccessibility.dll — ATL + MIDL require
 ── Layer 17 ─────────────────────────────────────────────────────────────
 cui           ✅  (cui.dll) — main/cui/readme.md
 ── Layer 18 — sw ─────────────────────────────────────────────────────────
-sw            ✅  (swd.dll + sw.dll) — main/sw/README.md
+sw            ✅  (swd.dll + sw.dll + swui.dll + msword.dll + vbaswobj.dll) — main/sw/README.md
 ── Layer 19 ─────────────────────────────────────────────────────────────
 basctl        ⬜  (basic, scripting, sfx2, sw — Basic IDE)
 sd            ⬜  Draw/Impress (sw, svx, sfx2, filter, oox, avmedia, canvas,

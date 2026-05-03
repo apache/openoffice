@@ -25,10 +25,13 @@
 
 | Target | DLL | Role |
 |--------|-----|------|
-| `:sw` | `sw.dll` | Core Writer library — document model, layout, filters, UNO services |
 | `:swd` | `swd.dll` | Format detector UNO component |
+| `:sw` | `sw.dll` | Core Writer library — document model, layout, filters, UNO services |
+| `:swui` | `swui.dll` | Writer UI dialogs (character, frame, field, table, index, envelope, etc.) |
+| `:msword` | `msword.dll` | Word (.doc/.docx) and RTF import/export filters |
+| `:vbaswobj` | `vbaswobj.dll` | Writer VBA scripting objects UNO component |
 
-Import libraries for downstream linking: `:sw_implib`, `:swd_implib`.
+Import libraries for downstream linking: `:sw_implib`, `:swd_implib`, `:swui_implib`, `:msword_implib`, `:vbaswobj_implib`.
 
 ### SDI code generation
 
