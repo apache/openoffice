@@ -1,0 +1,170 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("//build/rules:sdi_target.bzl", "sdi_target")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+    "SUPD=680",
+]
+
+_COPTS = [
+    "/Zc:wchar_t-",
+    "/Imain/basctl/inc",
+    "/Imain/basctl/inc/pch",
+    "/Imain/basctl/source/inc",
+    # source/basicide .hrc files are included with angle brackets (e.g. <baside2.hrc>)
+    "/Imain/basctl/source/basicide",
+]
+
+# inc/ headers — stripped so they resolve before any transitively-added
+# identically-named headers (e.g. helpid.hrc, basidesh.hrc)
+cc_library(
+    name = "basctl_inc",
+    textual_hdrs = glob(["inc/**"]),
+    strip_include_prefix = "inc",
+)
+
+# source/inc headers — stripped so they are findable as bare filenames
+cc_library(
+    name = "basctl_source_inc",
+    textual_hdrs = glob(["source/inc/**"]),
+    strip_include_prefix = "source/inc",
+)
+
+# source/basicide .hrc resource constant files included by .cxx files
+cc_library(
+    name = "basctl_source_hrc",
+    textual_hdrs = glob([
+        "source/basicide/*.hrc",
+        "source/dlged/*.hrc",
+    ]),
+)
+
+# ── SDI slot header generation ────────────────────────────────────────────────
+sdi_target(
+    name = "basslots_sdi",
+    main_sdi  = "sdi/basslots.sdi",
+    exports   = "sdi/baside.sdi",
+    srcs      = glob(["sdi/*.sdi", "sdi/*.hrc", "inc/*.hrc"]),
+    slot_name = "basslots",
+    include_dirs = [
+        "main/basctl/sdi",
+        "main/basctl/inc",
+        "main/sfx2/sdi",
+        "main/sfx2/inc/sfx2",
+        "main/sfx2/inc",
+        "main/svx/sdi",
+        "main/svx/inc",
+        "main/svl/inc",
+        "main/editeng/inc",
+    ],
+    pkg_deps = [
+        "//main/sfx2:sfx2_sdi_pkg",
+        "//main/svx:svx_sdi_pkg",
+    ],
+)
+
+cc_library(
+    name = "basslots_headers",
+    hdrs     = [":basslots_sdi"],
+    includes = ["basslots_sdi_inc"],
+    visibility = ["//visibility:public"],
+)
+
+# ── basctl.dll — Basic IDE ────────────────────────────────────────────────────
+cc_binary(
+    name = "basctl",
+    srcs = [
+        "inc/pch/precompiled_basctl.cxx",
+    ] + glob([
+        "source/accessibility/*.cxx",
+        "source/basicide/*.cxx",
+        "source/basicide/*.hxx",
+        "source/dlged/*.cxx",
+    ]),
+    copts      = _COPTS,
+    defines    = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/basctl.def",
+    deps = [
+        ":basctl_inc",
+        ":basctl_source_inc",
+        ":basctl_source_hrc",
+        ":basslots_headers",
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/tools:tools_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/unotools:unotools_headers",
+        "//main/svl:svl_headers",
+        "//main/vcl:vcl_headers",
+        "//main/svtools:svtools_headers",
+        "//main/editeng:editeng_headers",
+        "//main/toolkit:toolkit_headers",
+        "//main/sfx2:sfx2_headers",
+        "//main/svx:svx_headers",
+        "//main/xmlscript:xmlscript_headers",
+        "//main/basic:basic_headers",
+        "//main/sot:sot_headers",
+        "//main/ucbhelper:ucbhelper_headers",
+        "//main/framework:framework_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/svl:svl_implib",
+        "//main/svtools:svt_implib",
+        "//main/vcl:vcl_implib",
+        "//main/toolkit:ootk_implib",
+        "//main/sot:sot_implib",
+        "//main/sfx2:sfx_implib",
+        "//main/svx:svxcore_implib",
+        "//main/svx:svx_implib",
+        "//main/editeng:editeng_implib",
+        "//main/ucbhelper:ucbhelper_implib",
+        "//main/xmlscript:xcr_implib",
+        "//main/basic:sb_implib",
+        "//main/framework:fwe_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/toolkit:ootk_implib)",
+        "$(execpath //main/sot:sot_implib)",
+        "$(execpath //main/sfx2:sfx_implib)",
+        "$(execpath //main/svx:svxcore_implib)",
+        "$(execpath //main/svx:svx_implib)",
+        "$(execpath //main/editeng:editeng_implib)",
+        "$(execpath //main/ucbhelper:ucbhelper_implib)",
+        "$(execpath //main/xmlscript:xcr_implib)",
+        "$(execpath //main/basic:sb_implib)",
+        "$(execpath //main/framework:fwe_implib)",
+        "shell32.lib",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "basctl_implib",
+    srcs = [":basctl"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
