@@ -1,0 +1,112 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+    "snwprintf=_snwprintf",
+    "SUPD=680",
+    "BOOST_SPIRIT_USE_OLD_NAMESPACE",
+]
+
+_COPTS = [
+    "/Imain/slideshow/source/inc",
+    "/Imain/slideshow/inc/pch",
+    "/Imain/slideshow/source/engine",
+    "/Imain/slideshow/source/engine/activities",
+    "/Imain/slideshow/source/engine/animationnodes",
+    "/Imain/slideshow/source/engine/shapes",
+    "/Imain/slideshow/source/engine/slide",
+    "/Imain/slideshow/source/engine/transitions",
+    "/Zc:wchar_t-",
+]
+
+# ── Internal headers ──────────────────────────────────────────────────────────
+cc_library(
+    name = "slideshow_source_inc",
+    textual_hdrs = glob([
+        "source/inc/**",
+        "inc/pch/**",
+        "source/engine/**/*.hxx",
+    ]),
+)
+
+# ── slideshow.dll (Impress slideshow engine UNO component) ────────────────────
+cc_binary(
+    name = "slideshow",
+    srcs = glob(
+        [
+            "source/engine/transitions/*.cxx",
+            "source/engine/activities/*.cxx",
+            "source/engine/animationnodes/*.cxx",
+            "source/engine/shapes/*.cxx",
+            "source/engine/slide/*.cxx",
+            "source/engine/*.cxx",
+        ],
+        exclude = ["source/engine/sp_debug.cxx"],
+    ),
+    copts = _COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/slideshow.def",
+    deps = [
+        ":slideshow_source_inc",
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/tools:tools_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/basegfx:basegfx_headers",
+        "//main/vcl:vcl_headers",
+        "//main/canvas:canvas_headers",
+        "//main/cppcanvas:cppcanvas_headers",
+        "//main/unotools:unotools_headers",
+        "//main/svtools:svtools_headers",
+        "//main/avmedia:avmedia_headers",
+        "//main/animations:animations_headers",
+        "//main/stlport:stlport",
+        "@boost.legacy//:boost.legacy",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/basegfx:basegfx_implib",
+        "//main/canvas:canvastools_implib",
+        "//main/cppcanvas:cppcanvas_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/svtools:svt_implib",
+        "//main/vcl:vcl_implib",
+        "//main/avmedia:avmedia_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/basegfx:basegfx_implib)",
+        "$(execpath //main/canvas:canvastools_implib)",
+        "$(execpath //main/cppcanvas:cppcanvas_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/avmedia:avmedia_implib)",
+        "gdi32.lib", "user32.lib", "ole32.lib", "oleaut32.lib", "uuid.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "slideshow_implib",
+    srcs = [":slideshow"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)

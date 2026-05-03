@@ -127,7 +127,7 @@ sw            ✅  (swd.dll + sw.dll + swui.dll + msword.dll + vbaswobj.dll) —
 basctl        ✅  (basic, sfx2, svx — Basic IDE) — main/basctl/readme.md
 sd            ✅  (sdd.dll, sd.dll, sdui.dll, sdfilt.dll) — main/sd/readme.md
 ── Layer 20 ─────────────────────────────────────────────────────────────
-slideshow     ⬜  (sd, canvas, cppcanvas, vcl, svx — Impress slideshow engine)
+slideshow     ✅  (slideshow.dll — Impress slideshow engine) — main/slideshow/readme.md
 sdext         ⬜  (sd — PDF import, Presenter Console, minimizer)
 sc            ⬜  Calc (sw, svx, sfx2, filter, oox, connectivity, vbahelper,
                    chart2, formula, forms, scripting, embeddedobj, cui, ucb)
