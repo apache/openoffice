@@ -18,3 +18,30 @@
 -->
 
 # Draw / Impress
+
+## Bazel Migration
+
+### Deliverables
+
+| Target | Output | Description |
+|--------|--------|-------------|
+| `//main/sd:sdd` | `sdd.dll` | Format detector (sddetect.cxx) |
+| `//main/sd:sd` | `sd.dll` | Main Draw/Impress library (~381 sources) |
+| `//main/sd:sdui` | `sdui.dll` | UI dialogs (31 sources) |
+| `//main/sd:sdfilt` | `sdfilt.dll` | PowerPoint import/export (ppt/ + eppt/) |
+
+### SDI Pipeline
+
+Two slot headers via `sdi_target`:
+- `sdslots_sdi` → `sdslots.hxx` (Impress/Draw slots, `sdslots.sdi`)
+- `sdgslots_sdi` → `sdgslots.hxx` (Draw-only slots, `sdgslots.sdi`)
+
+Both use `sdraw.sdi` as the exports file and depend on
+`//main/sfx2:sfx2_sdi_pkg` and `//main/svx:svx_sdi_pkg`.
+
+### Notes
+
+- `ins_paste.cxx`, `buttonset.cxx`, `bulmaper.cxx` are compiled into both
+  `sd` and `sdui` (matches original gbuild; each cc_binary has its own copy).
+- No `.def` file: exports are via `SD_DLLPUBLIC` / `SD_DLLIMPLEMENTATION`
+  (`__declspec(dllexport)`) macros defined in `inc/sddllapi.h`.

@@ -125,8 +125,7 @@ cui           ✅  (cui.dll) — main/cui/readme.md
 sw            ✅  (swd.dll + sw.dll + swui.dll + msword.dll + vbaswobj.dll) — main/sw/README.md
 ── Layer 19 ─────────────────────────────────────────────────────────────
 basctl        ✅  (basic, sfx2, svx — Basic IDE) — main/basctl/readme.md
-sd            ⬜  Draw/Impress (sw, svx, sfx2, filter, oox, avmedia, canvas,
-                   cppcanvas, chart2, animations, embeddedobj, forms, svgio, cui)
+sd            ✅  (sdd.dll, sd.dll, sdui.dll, sdfilt.dll) — main/sd/readme.md
 ── Layer 20 ─────────────────────────────────────────────────────────────
 slideshow     ⬜  (sd, canvas, cppcanvas, vcl, svx — Impress slideshow engine)
 sdext         ⬜  (sd — PDF import, Presenter Console, minimizer)
