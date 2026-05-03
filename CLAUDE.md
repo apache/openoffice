@@ -120,8 +120,7 @@ scripting     ✅  (scriptframe.dll, basprov.uno.dll, dlgprov.uno.dll, vbaevents
 embedserv     ✅  (emser.dll, inprocserv.dll — ATL required; skipped unless --//build:atl_available=True) — main/embedserv/readme.md
 winaccessibility ✅  (UAccCOM.dll + winaccessibility.dll — ATL + MIDL required; skipped unless --//build:atl_available=True) — main/winaccessibility/readme.md
 ── Layer 17 ─────────────────────────────────────────────────────────────
-cui           ⬜  (svx, svtools, toolkit, sfx2, vcl, editeng, chart2, scripting
-                   — common UI dialogs shared by all apps)
+cui           ✅  (cui.dll) — main/cui/readme.md
 ── Layer 18 — sw ─────────────────────────────────────────────────────────
 sw            ✅  (swd.dll + sw.dll) — main/sw/README.md
 ── Layer 19 ─────────────────────────────────────────────────────────────

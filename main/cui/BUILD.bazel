@@ -1,0 +1,154 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+    "SUPD=680",
+]
+
+_COPTS = [
+    "/Zc:wchar_t-",
+    "/Imain/cui/inc/pch",
+    "/Imain/cui/source/inc",
+    "/Imain/cui/source/customize",
+    "/Imain/cui/source/dialogs",
+    "/Imain/cui/source/factory",
+    "/Imain/cui/source/options",
+    "/Imain/cui/source/tabpages",
+]
+
+# source/inc files — virtual path so "helpid.hrc" etc. resolve to cui's
+# version before any transitively-added identically-named headers.
+cc_library(
+    name = "cui_source_inc",
+    textual_hdrs = glob(["source/inc/**"]),
+    strip_include_prefix = "source/inc",
+)
+
+# Other source-subdir .hrc files — declared as inputs so Bazel tracks them;
+# found at compile time via the per-subdir /I copts entries.
+cc_library(
+    name = "cui_source_hrc",
+    textual_hdrs = glob(["source/**/*.hrc"], exclude = ["source/inc/**"]),
+)
+
+# ── cui.dll — Common UI dialogs shared by all apps ────────────────────
+cc_binary(
+    name = "cui",
+    srcs = [
+        "inc/pch/precompiled_cui.cxx",
+    ] + glob([
+        "source/customize/*.cxx",
+        "source/dialogs/*.cxx",
+        "source/factory/*.cxx",
+        "source/options/*.cxx",
+        "source/tabpages/*.cxx",
+        "source/uno/services/*.cxx",
+        "source/inc/*.hxx",
+    ]),
+    copts = _COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/cui.def",
+    deps = [
+        ":cui_source_inc",
+        ":cui_source_hrc",
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/tools:tools_headers",
+        "//main/basegfx:basegfx_headers",
+        "//main/unotools:unotools_headers",
+        "//main/svl:svl_headers",
+        "//main/svtools:svtools_headers",
+        "//main/vcl:vcl_headers",
+        "//main/toolkit:toolkit_headers",
+        "//main/sfx2:sfx2_headers",
+        "//main/svx:svx_headers",
+        "//main/editeng:editeng_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/connectivity:connectivity_headers",
+        "//main/vos:vos_headers",
+        "//main/ucbhelper:ucbhelper_headers",
+        "//main/i18npool:i18npool_headers",
+        "//main/avmedia:avmedia_headers",
+        "//main/jvmfwk:jvmfwk_headers",
+        "//main/linguistic:linguistic_headers",
+        "//main/sot:sot_headers",
+        "//main/sax:sax_headers",
+        "//main/basic:basic_headers",
+        "//main/xmlscript:xmlscript_headers",
+        "@icu//:icuuc_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/tools:tl_implib",
+        "//main/basegfx:basegfx_implib",
+        "//main/unotools:utl_implib",
+        "//main/svl:svl_implib",
+        "//main/svtools:svt_implib",
+        "//main/vcl:vcl_implib",
+        "//main/toolkit:ootk_implib",
+        "//main/sfx2:sfx_implib",
+        "//main/svx:svxcore_implib",
+        "//main/svx:svx_implib",
+        "//main/editeng:editeng_implib",
+        "//main/avmedia:avmedia_implib",
+        "//main/linguistic:lng_implib",
+        "//main/basic:sb_implib",
+        "//main/sax:sax_implib",
+        "//main/sot:sot_implib",
+        "//main/jvmfwk:jvmfwk_implib",
+        "//main/ucbhelper:ucbhelper_implib",
+        "//main/vos:vos3_implib",
+        "//main/i18npool:i18nisolang1_implib",
+        "@icu//:icuuc_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/basegfx:basegfx_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/toolkit:ootk_implib)",
+        "$(execpath //main/sfx2:sfx_implib)",
+        "$(execpath //main/svx:svxcore_implib)",
+        "$(execpath //main/svx:svx_implib)",
+        "$(execpath //main/editeng:editeng_implib)",
+        "$(execpath //main/avmedia:avmedia_implib)",
+        "$(execpath //main/linguistic:lng_implib)",
+        "$(execpath //main/basic:sb_implib)",
+        "$(execpath //main/sax:sax_implib)",
+        "$(execpath //main/sot:sot_implib)",
+        "$(execpath //main/jvmfwk:jvmfwk_implib)",
+        "$(execpath //main/ucbhelper:ucbhelper_implib)",
+        "$(execpath //main/vos:vos3_implib)",
+        "$(execpath //main/i18npool:i18nisolang1_implib)",
+        "$(execpath @icu//:icuuc_implib)",
+        "advapi32.lib", "shlwapi.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── cui_implib ─────────────────────────────────────────────────────────
+filegroup(
+    name = "cui_implib",
+    srcs = [":cui"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
