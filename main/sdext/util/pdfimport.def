@@ -1,0 +1,5 @@
+LIBRARY pdfimport
+EXPORTS
+    component_getFactory
+    component_getImplementationEnvironment
+    component_writeInfo

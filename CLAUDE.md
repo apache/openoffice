@@ -128,7 +128,7 @@ basctl        ✅  (basic, sfx2, svx — Basic IDE) — main/basctl/readme.md
 sd            ✅  (sdd.dll, sd.dll, sdui.dll, sdfilt.dll) — main/sd/readme.md
 ── Layer 20 ─────────────────────────────────────────────────────────────
 slideshow     ✅  (slideshow.dll — Impress slideshow engine) — main/slideshow/readme.md
-sdext         ⬜  (sd — PDF import, Presenter Console, minimizer)
+sdext         ✅  (PresentationMinimizer.uno.dll, PresenterScreen.uno.dll, pdfimport.uno.dll) — main/sdext/readme.md
 sc            ⬜  Calc (sw, svx, sfx2, filter, oox, connectivity, vbahelper,
                    chart2, formula, forms, scripting, embeddedobj, cui, ucb)
 ── Layer 21 ─────────────────────────────────────────────────────────────

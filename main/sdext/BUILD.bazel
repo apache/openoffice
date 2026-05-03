@@ -1,0 +1,196 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+    "snwprintf=_snwprintf",
+    "SUPD=680",
+]
+
+# ── Shared PCH stub ───────────────────────────────────────────────────────────
+cc_library(
+    name = "sdext_pch",
+    textual_hdrs = glob(["inc/pch/**"]),
+)
+
+# ══════════════════════════════════════════════════════════════════════════════
+# PresentationMinimizer.uno.dll — Impress Presentation Minimizer extension
+# ══════════════════════════════════════════════════════════════════════════════
+cc_binary(
+    name = "PresentationMinimizer",
+    srcs = glob(["source/minimizer/*.cxx"]),
+    copts = [
+        "/Imain/sdext/source/minimizer",
+        "/Imain/sdext/inc/pch",
+        "/Zc:wchar_t-",
+    ],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/PresentationMinimizer.def",
+    deps = [
+        ":sdext_pch",
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/stlport:stlport",
+        "@boost.legacy//:boost.legacy",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "gdi32.lib", "user32.lib", "ole32.lib", "oleaut32.lib", "uuid.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "PresentationMinimizer_implib",
+    srcs = [":PresentationMinimizer"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ══════════════════════════════════════════════════════════════════════════════
+# PresenterScreen.uno.dll — Impress Presenter Console extension
+# ══════════════════════════════════════════════════════════════════════════════
+cc_binary(
+    name = "PresenterScreen",
+    srcs = glob(
+        ["source/presenter/*.cxx"],
+        exclude = ["source/presenter/PresenterClock.cxx"],
+    ),
+    copts = [
+        "/Imain/sdext/source/presenter",
+        "/Imain/sdext/inc/pch",
+        "/Zc:wchar_t-",
+    ],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/PresenterScreen.def",
+    deps = [
+        ":sdext_pch",
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/tools:tools_headers",
+        "@boost.legacy//:boost.legacy",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "gdi32.lib", "user32.lib", "ole32.lib", "oleaut32.lib", "uuid.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "PresenterScreen_implib",
+    srcs = [":PresenterScreen"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ══════════════════════════════════════════════════════════════════════════════
+# pdfimport.uno.dll — PDF Import extension
+# ══════════════════════════════════════════════════════════════════════════════
+
+# hash.cxx is #include'd directly by wrapper.cxx (gperf-generated keyword table)
+cc_library(
+    name = "_pdfimport_hash",
+    textual_hdrs = ["source/pdfimport/wrapper/hash.cxx"],
+)
+
+_PDF_DEFINES = _DEFINES + [
+    "Z_PREFIX",
+    "SYSTEM_ZLIB",
+    "BOOST_SPIRIT_USE_OLD_NAMESPACE",
+    "BOOST_SYSTEM_NO_DEPRECATED",
+    "PDFI_IMPL_IDENTIFIER=com.sun.star.PDFImport-wnt",
+]
+
+_PDF_COPTS = [
+    "/Imain/sdext/source/pdfimport",
+    "/Imain/sdext/source/pdfimport/inc",
+    "/Imain/sdext/source/pdfimport/misc",
+    "/Imain/sdext/source/pdfimport/odf",
+    "/Imain/sdext/source/pdfimport/pdfparse",
+    "/Imain/sdext/source/pdfimport/sax",
+    "/Imain/sdext/source/pdfimport/tree",
+    "/Imain/sdext/source/pdfimport/wrapper",
+    "/Imain/sdext/inc/pch",
+    "/Zc:wchar_t-",
+]
+
+cc_binary(
+    name = "pdfimport",
+    srcs = glob([
+        "source/pdfimport/*.cxx",
+        "source/pdfimport/misc/*.cxx",
+        "source/pdfimport/odf/*.cxx",
+        "source/pdfimport/pdfparse/*.cxx",
+        "source/pdfimport/sax/*.cxx",
+        "source/pdfimport/tree/*.cxx",
+    ]) + ["source/pdfimport/wrapper/wrapper.cxx"],
+    copts = _PDF_COPTS,
+    defines = _PDF_DEFINES,
+    linkshared = True,
+    win_def_file = "util/pdfimport.def",
+    deps = [
+        ":sdext_pch",
+        ":_pdfimport_hash",
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/basegfx:basegfx_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/tools:tools_headers",
+        "//main/stlport:stlport",
+        "@boost.legacy//:boost.legacy",
+        "@zlib//:zlib",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/basegfx:basegfx_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/basegfx:basegfx_implib)",
+        "gdi32.lib", "user32.lib", "ole32.lib", "oleaut32.lib", "uuid.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "pdfimport_implib",
+    srcs = [":pdfimport"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
