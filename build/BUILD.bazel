@@ -1,6 +1,24 @@
 load("@bazel_skylib//rules:common_settings.bzl", "bool_flag")
 load(":langs.bzl", "OOO_LANGS", "lang_id")
 
+# ATL availability flag — requires Visual Studio Professional/Enterprise (VC\ATLMFC\INCLUDE).
+# VS Express and BuildTools do not include ATLMFC; affected modules (embedserv,
+# winaccessibility, extensions/activex) are skipped when this is False, mirroring
+# the old build system's DISABLE_ATL guard.
+# On a Pro/Enterprise install, add to user.bazelrc:
+#   build --//build:atl_available=True
+bool_flag(
+    name = "atl_available",
+    build_setting_default = False,
+    visibility = ["//visibility:public"],
+)
+
+config_setting(
+    name = "has_atl",
+    flag_values = {":atl_available": "True"},
+    visibility = ["//visibility:public"],
+)
+
 # One bool_flag per OOo locale.
 # en-US is always enabled; all others default to False.
 #

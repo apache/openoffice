@@ -1,0 +1,7 @@
+LIBRARY inprocserv
+EXPORTS
+    DllGetClassObject
+    DllCanUnloadNow
+    DllMain
+    DllRegisterServer
+    DllUnregisterServer

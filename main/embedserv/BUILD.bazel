@@ -1,0 +1,111 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary")
+
+# emser.dll and inprocserv.dll require ATL headers (VC\ATLMFC\INCLUDE), which are
+# only present in Visual Studio Professional/Enterprise — not Express or BuildTools.
+# This mirrors the old build system's DISABLE_ATL guard: the targets are defined
+# but marked incompatible unless --//build:atl_available=True is set.
+# On a qualifying install, add to user.bazelrc:
+#   build --//build:atl_available=True
+_ATL_REQUIRED = select({
+    "//build:has_atl": [],
+    "//conditions:default": ["@platforms//:incompatible"],
+})
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+]
+
+# ── emser.dll (OLE embedding server — UNO component) ───────────────────
+cc_binary(
+    name = "emser",
+    srcs = [
+        "source/embed/docholder.cxx",
+        "source/embed/ed_idataobj.cxx",
+        "source/embed/ed_iinplace.cxx",
+        "source/embed/ed_ioleobject.cxx",
+        "source/embed/ed_ipersiststr.cxx",
+        "source/embed/esdll.cxx",
+        "source/embed/guid.cxx",
+        "source/embed/iipaobj.cxx",
+        "source/embed/intercept.cxx",
+        "source/embed/register.cxx",
+        "source/embed/servprov.cxx",
+        "source/embed/syswinwrapper.cxx",
+        "source/embed/tracker.cxx",
+    ] + glob([
+        "source/inc/*.h",
+        "source/inc/*.hxx",
+    ]),
+    copts = [
+        "/Imain/embedserv/source/inc",
+        "/Zc:wchar_t-",
+    ],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/emser.def",
+    target_compatible_with = _ATL_REQUIRED,
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "ole32.lib", "gdi32.lib", "uuid.lib", "oleaut32.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "emser_implib",
+    srcs = [":emser"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── inprocserv.dll (in-process COM OLE embedding stub) ─────────────────
+cc_binary(
+    name = "inprocserv",
+    srcs = [
+        "source/inprocserv/advisesink.cxx",
+        "source/inprocserv/dllentry.cxx",
+        "source/inprocserv/inprocembobj.cxx",
+    ] + glob([
+        "source/inprocserv/*.h",
+        "source/inprocserv/*.hxx",
+    ]),
+    copts = [
+        "/Imain/embedserv/source/inc",
+        "/Imain/embedserv/source/inprocserv",
+        "/Zc:wchar_t-",
+    ],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "source/inprocserv/inprocserv.def",
+    target_compatible_with = _ATL_REQUIRED,
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/comphelper:comphelper_headers",
+    ],
+    linkopts = [
+        "uuid.lib", "ole32.lib", "gdi32.lib", "advapi32.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)

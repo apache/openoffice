@@ -117,7 +117,7 @@ accessibility ✅  (acc.dll — VCL + svt a11y factories) — main/accessibility
 ── Layer 16 ─────────────────────────────────────────────────────────────
 forms         ✅  (frm.dll — form controls) — main/forms/readme.md
 scripting     ✅  (scriptframe.dll, basprov.uno.dll, dlgprov.uno.dll, vbaevents.uno.dll, stringresource.uno.dll, protocolhandler.dll) — main/scripting/readme.md
-embedserv     ⬜  (embeddedobj, sfx2, tools — OLE embedding server)
+embedserv     ✅  (emser.dll, inprocserv.dll — ATL required; skipped unless --//build:atl_available=True) — main/embedserv/readme.md
 winaccessibility ⬜ (accessibility, vcl — Windows a11y bridge)
 ── Layer 17 ─────────────────────────────────────────────────────────────
 cui           ⬜  (svx, svtools, toolkit, sfx2, vcl, editeng, chart2, scripting
