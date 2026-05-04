@@ -1,0 +1,136 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("//build/rules:idl_pipeline.bzl", "idl_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+    "SUPD=680",
+    "MSC",
+]
+
+# ── analysis IDL pipeline ─────────────────────────────────────────────────────
+# analysisadd.idl defines com.sun.star.sheet.addin.XAnalysis (not in offapi).
+idl_library(
+    name = "analysisadd_idl",
+    srcs = ["source/analysis/analysisadd.idl"],
+    include_dirs = ["main/offapi", "main/udkapi"],
+    extra_rdbs = [
+        "//main/udkapi:udkapi_idl",
+        "//main/offapi:offapi_idl",
+    ],
+)
+
+cc_library(
+    name = "analysisadd_idl_headers",
+    hdrs = [":analysisadd_idl"],
+    includes = ["analysisadd_idl_inc"],
+    visibility = ["//visibility:public"],
+)
+
+# ── dateadd IDL pipeline ──────────────────────────────────────────────────────
+# dateadd.idl defines XDateFunctions and XMiscFunctions (not in offapi).
+idl_library(
+    name = "dateadd_idl",
+    srcs = ["source/datefunc/dateadd.idl"],
+    include_dirs = ["main/offapi", "main/udkapi"],
+    extra_rdbs = [
+        "//main/udkapi:udkapi_idl",
+        "//main/offapi:offapi_idl",
+    ],
+)
+
+cc_library(
+    name = "dateadd_idl_headers",
+    hdrs = [":dateadd_idl"],
+    includes = ["dateadd_idl_inc"],
+    visibility = ["//visibility:public"],
+)
+
+# ── Private source headers ────────────────────────────────────────────────────
+cc_library(
+    name = "analysis_source_hdrs",
+    textual_hdrs = glob(["source/analysis/**"]),
+)
+
+cc_library(
+    name = "datefunc_source_hdrs",
+    textual_hdrs = glob(["source/datefunc/**"]),
+)
+
+# ── analysis.dll — Calc Analysis add-in ──────────────────────────────────────
+cc_binary(
+    name = "analysis",
+    srcs = [
+        "source/analysis/analysis.cxx",
+        "source/analysis/financial.cxx",
+        "source/analysis/analysishelper.cxx",
+        "source/analysis/bessel.cxx",
+    ],
+    defines = _DEFINES,
+    copts = [
+        "/Imain/scaddins/source/analysis",
+        "/Zc:wchar_t-",
+    ],
+    linkshared = True,
+    deps = [
+        ":analysisadd_idl_headers",
+        ":analysis_source_hdrs",
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/tools:tools_headers",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/tools:tl_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── date.dll — Calc date/misc add-in ─────────────────────────────────────────
+cc_binary(
+    name = "date",
+    srcs = [
+        "source/datefunc/datefunc.cxx",
+    ],
+    defines = _DEFINES,
+    copts = [
+        "/Imain/scaddins/source/datefunc",
+        "/Zc:wchar_t-",
+    ],
+    linkshared = True,
+    deps = [
+        ":dateadd_idl_headers",
+        ":datefunc_source_hdrs",
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/tools:tools_headers",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/tools:tl_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)

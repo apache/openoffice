@@ -131,7 +131,7 @@ slideshow     ✅  (slideshow.dll — Impress slideshow engine) — main/slidesh
 sdext         ✅  (PresentationMinimizer.uno.dll, PresenterScreen.uno.dll, pdfimport.uno.dll) — main/sdext/readme.md
 sc            ✅  (sc.dll, scd.dll, scfilt.dll, scui.dll, vbaobj.dll) — main/sc/readme.md
 ── Layer 21 ─────────────────────────────────────────────────────────────
-scaddins      ⬜  (sc, tools, comphelper — Calc add-in infrastructure)
+scaddins      ✅  (analysis.dll, date.dll) — main/scaddins/readme.md
 sccomp        ⬜  (sc, connectivity — Calc compatibility components)
 solver        ⬜  (sc — linear programming solver)
 dbaccess      ⬜  Base (sc, sw, connectivity, svx, sfx2, svtools, xmloff,
