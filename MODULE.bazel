@@ -35,6 +35,7 @@ bazel_dep(name = "mariadb-connector-c",          version = "2.3.7")
 bazel_dep(name = "libxmlsec1",                   version = "1.2.14")
 bazel_dep(name = "nss",                          version = "3.39")
 bazel_dep(name = "rules_java",             version = "8.11.0")
+bazel_dep(name = "mdds",                   version = "0.3.1")
 
 
 register_toolchains("//build/toolchain:cc_toolchain_x86_vs2008_def")

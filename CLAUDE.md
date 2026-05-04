@@ -129,8 +129,7 @@ sd            ✅  (sdd.dll, sd.dll, sdui.dll, sdfilt.dll) — main/sd/readme.md
 ── Layer 20 ─────────────────────────────────────────────────────────────
 slideshow     ✅  (slideshow.dll — Impress slideshow engine) — main/slideshow/readme.md
 sdext         ✅  (PresentationMinimizer.uno.dll, PresenterScreen.uno.dll, pdfimport.uno.dll) — main/sdext/readme.md
-sc            ⬜  Calc (sw, svx, sfx2, filter, oox, connectivity, vbahelper,
-                   chart2, formula, forms, scripting, embeddedobj, cui, ucb)
+sc            ✅  (sc.dll, scd.dll, scfilt.dll, scui.dll, vbaobj.dll) — main/sc/readme.md
 ── Layer 21 ─────────────────────────────────────────────────────────────
 scaddins      ⬜  (sc, tools, comphelper — Calc add-in infrastructure)
 sccomp        ⬜  (sc, connectivity — Calc compatibility components)

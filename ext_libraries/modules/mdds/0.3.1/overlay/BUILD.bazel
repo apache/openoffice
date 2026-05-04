@@ -1,0 +1,10 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+# mdds 0.3.1 — header-only multi-dimensional data structures library
+# Used by sc (Calc) for flat_segment_tree in source/core/data/segmenttree.cxx.
+cc_library(
+    name = "mdds",
+    hdrs = glob(["include/mdds/**"]),
+    strip_include_prefix = "include",
+    visibility = ["//visibility:public"],
+)

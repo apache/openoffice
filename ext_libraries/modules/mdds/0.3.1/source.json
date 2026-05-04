@@ -1,0 +1,11 @@
+{
+    "url": "file:///C:/workspace/openoffice/ext_sources/0dd138efff4412c707e239290fb82d4f-mdds_0.3.1.tar.bz2",
+    "integrity": "sha256-ZspieSkIzShRd0hTjVA60mRjMKLHJt8dyiRBAJaf4Qs=",
+    "strip_prefix": "mdds_0.3.1",
+    "overlay": {
+        "MODULE.bazel": "sha256-/3QINM/oNGJMQld/So8V598dvId3hC+PEgMhcwcnubQ=",
+        "BUILD.bazel":  "sha256-xDEXIf2eFO60qMBUPhp6K3uVVz1bxMSF0Ej5cDRKYEs="
+    },
+    "patches": {},
+    "patch_strip": 0
+}
