@@ -22,10 +22,13 @@ _COMMON_DEPS = [
 ]
 
 # ── dbaccess_headers — public inc/ headers ─────────────────────────────
+# strip_include_prefix + include_prefix expose files as <dbaccess/dataview.hxx>
+# (dbu/dba binaries still use their own /Imain/dbaccess/inc copts for unqualified includes)
 cc_library(
     name = "dbaccess_headers",
     hdrs = glob(["inc/**/*.hxx", "inc/**/*.h", "inc/**/*.hrc"]),
-    includes = ["inc"],
+    strip_include_prefix = "inc",
+    include_prefix = "dbaccess",
     visibility = ["//visibility:public"],
 )
 

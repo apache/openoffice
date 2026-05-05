@@ -135,7 +135,7 @@ scaddins      ✅  (analysis.dll, date.dll) — main/scaddins/readme.md
 sccomp        ✅  (solver.dll — CoinMP/COIN-OR linear solver) — main/sccomp/readme.md
 dbaccess      ✅  (dba.dll, dbu.dll, dbaxml.dll, sdbt.dll, dbmm.dll, adabasui.dll) — main/dbaccess/readme.md
 ── Layer 22 ─────────────────────────────────────────────────────────────
-reportdesign  ⬜  (dbaccess, svx, sfx2, sc, vcl — Base report designer)
+reportdesign  ✅  (rpt.dll, rptui.dll, rptxml.dll) — main/reportdesign/readme.md
 reportbuilder ⬜  (reportdesign, dbaccess — Java-based report engine)
 starmath      ⬜  (svx, sfx2, editeng, vcl, sw — Math formula editor)
 ── Layer 23 — desktop ────────────────────────────────────────────────────
