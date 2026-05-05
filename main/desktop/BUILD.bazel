@@ -1,0 +1,999 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+# ── Common compile settings ───────────────────────────────────────────────────
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+    "snwprintf=_snwprintf",
+    "SUPD=680",
+    "MSC",
+    "ENABLE_QUICKSTART_APPLET",
+]
+
+_COPTS = [
+    "/Zc:wchar_t-",
+    "/Imain/desktop/inc",
+    "/Imain/desktop/inc/pch",
+    "/Imain/desktop/source/deployment/inc",
+]
+
+# ── source/inc headers exposed via strip_include_prefix so helpid.hrc is found
+#    before framework's helpid.hrc (which framework_headers also exposes bare).
+cc_library(
+    name = "desktop_source_inc_hdrs",
+    hdrs = glob(["source/inc/**"]),
+    strip_include_prefix = "source/inc",
+    visibility = ["//visibility:public"],
+)
+
+# ── introbmpnames.hxx — generated list of intro bitmap paths (empty = default) ─
+genrule(
+    name = "introbmpnames_hxx_gen",
+    outs = ["introbmpnames.hxx"],
+    cmd = """printf 'const char INTRO_BITMAP_STRINGLIST[]="";\n' > $@""",
+)
+
+cc_library(
+    name = "introbmpnames_lib",
+    hdrs = [":introbmpnames_hxx_gen"],
+    includes = ["."],
+)
+
+# ── Private source headers ────────────────────────────────────────────────────
+cc_library(
+    name = "desktop_source_hdrs",
+    textual_hdrs = glob([
+        "inc/**",
+        "source/inc/**",
+        "source/app/*.hxx",
+        "source/app/*.hrc",
+        "source/app/*.h",
+        "source/migration/*.hxx",
+        "source/migration/*.hrc",
+        "source/splash/*.hxx",
+        "source/offacc/*.hxx",
+        "source/so_comp/*.hxx",
+        "source/deployment/**/*.hxx",
+        "source/deployment/**/*.h",
+        "source/deployment/**/*.hrc",
+        "source/pkgchk/unopkg/*.h",
+        "win32/source/*.hxx",
+        "win32/source/*.h",
+        "win32/source/applauncher/*.hxx",
+        "win32/source/guistdio/*.inc",
+        "win32/source/QuickStart/*.h",
+        "win32/source/rebase/*.h",
+    ]),
+    deps = [
+        ":desktop_source_inc_hdrs",
+        "//main/stlport:stlport",
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/tools:tools_headers",
+        "//main/unotools:unotools_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/svl:svl_headers",
+        "//main/vcl:vcl_headers",
+        "//main/svtools:svtools_headers",
+        "//main/sfx2:sfx2_headers",
+        "//main/svx:svx_headers",
+        "//main/framework:framework_headers",
+        "//main/toolkit:toolkit_headers",
+        "//main/ucbhelper:ucbhelper_headers",
+        "//main/jvmfwk:jvmfwk_headers",
+        "//main/xmlscript:xmlscript_headers",
+        "//main/vos:vos_headers",
+        "//main/i18npool:i18npool_headers",
+        "//main/salhelper:salhelper_headers",
+        "//main/sot:sot_headers",
+        "//main/editeng:editeng_headers",
+    ],
+)
+
+# ── deploymentmisc.dll ────────────────────────────────────────────────────────
+# C++ helper DLL: exports via DESKTOP_DEPLOYMENTMISC_DLLIMPLEMENTATION/__declspec(dllexport)
+cc_binary(
+    name = "deploymentmisc",
+    srcs = [
+        "source/deployment/misc/dp_dependencies.cxx",
+        "source/deployment/misc/dp_descriptioninfoset.cxx",
+        "source/deployment/misc/dp_identifier.cxx",
+        "source/deployment/misc/dp_interact.cxx",
+        "source/deployment/misc/dp_misc.cxx",
+        "source/deployment/misc/dp_platform.cxx",
+        "source/deployment/misc/dp_resource.cxx",
+        "source/deployment/misc/dp_ucb.cxx",
+        "source/deployment/misc/dp_update.cxx",
+        "source/deployment/misc/dp_version.cxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES + ["DESKTOP_DEPLOYMENTMISC_DLLIMPLEMENTATION"],
+    linkshared = True,
+    deps = [":desktop_source_hdrs"],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/ucbhelper:ucbhelper_implib",
+        "//main/xmlscript:xcr_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/ucbhelper:ucbhelper_implib)",
+        "$(execpath //main/xmlscript:xcr_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "deploymentmisc_implib",
+    srcs = [":deploymentmisc"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── deploymentgui.uno.dll ─────────────────────────────────────────────────────
+cc_binary(
+    name = "deploymentgui",
+    srcs = [
+        "source/deployment/gui/descedit.cxx",
+        "source/deployment/gui/dp_gui_autoscrolledit.cxx",
+        "source/deployment/gui/dp_gui_dependencydialog.cxx",
+        "source/deployment/gui/dp_gui_dialog2.cxx",
+        "source/deployment/gui/dp_gui_extensioncmdqueue.cxx",
+        "source/deployment/gui/dp_gui_extlistbox.cxx",
+        "source/deployment/gui/dp_gui_handleversionexception.cxx",
+        "source/deployment/gui/dp_gui_service.cxx",
+        "source/deployment/gui/dp_gui_system.cxx",
+        "source/deployment/gui/dp_gui_theextmgr.cxx",
+        "source/deployment/gui/dp_gui_thread.cxx",
+        "source/deployment/gui/dp_gui_updatedialog.cxx",
+        "source/deployment/gui/dp_gui_updateinstalldialog.cxx",
+        "source/deployment/gui/license_dialog.cxx",
+    ],
+    copts = _COPTS + ["/Imain/desktop/source/deployment/gui"],
+    defines = _DEFINES + ["DESKTOP_DEPLOYMENTGUI_DLLIMPLEMENTATION"],
+    linkshared = True,
+    win_def_file = "util/deploymentgui.def",
+    deps = [":desktop_source_hdrs"],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/salhelper:salhelper_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/ucbhelper:ucbhelper_implib",
+        "//main/vcl:vcl_implib",
+        "//main/svl:svl_implib",
+        "//main/svtools:svt_implib",
+        "//main/svx:svxcore_implib",
+        "//main/svx:svx_implib",
+        "//main/sfx2:sfx_implib",
+        "//main/toolkit:ootk_implib",
+        "//main/i18npool:i18nisolang1_implib",
+        ":deploymentmisc_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/salhelper:salhelper_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/ucbhelper:ucbhelper_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+        "$(execpath //main/svx:svxcore_implib)",
+        "$(execpath //main/svx:svx_implib)",
+        "$(execpath //main/sfx2:sfx_implib)",
+        "$(execpath //main/toolkit:ootk_implib)",
+        "$(execpath //main/i18npool:i18nisolang1_implib)",
+        "$(execpath :deploymentmisc_implib)",
+        "ole32.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "deploymentgui_implib",
+    srcs = [":deploymentgui"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── deployment registry/manager sub-libs (static, linked into deployment.uno.dll) ──
+
+cc_library(
+    name = "deployment_registry_lib",
+    srcs = [
+        "source/deployment/registry/dp_backend.cxx",
+        "source/deployment/registry/dp_backenddb.cxx",
+        "source/deployment/registry/dp_registry.cxx",
+    ],
+    copts = _COPTS + ["/Imain/desktop/source/deployment/registry/inc"],
+    defines = _DEFINES,
+    deps = [":desktop_source_hdrs"],
+)
+
+cc_library(
+    name = "deployment_manager_lib",
+    srcs = [
+        "source/deployment/manager/dp_activepackages.cxx",
+        "source/deployment/manager/dp_commandenvironments.cxx",
+        "source/deployment/manager/dp_extensionmanager.cxx",
+        "source/deployment/manager/dp_informationprovider.cxx",
+        "source/deployment/manager/dp_manager.cxx",
+        "source/deployment/manager/dp_managerfac.cxx",
+        "source/deployment/manager/dp_properties.cxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    deps = [":desktop_source_hdrs"],
+)
+
+cc_library(
+    name = "deployment_registry_executable_lib",
+    srcs = [
+        "source/deployment/registry/executable/dp_executable.cxx",
+        "source/deployment/registry/executable/dp_executablebackenddb.cxx",
+    ],
+    copts = _COPTS + ["/Imain/desktop/source/deployment/registry/inc"],
+    defines = _DEFINES,
+    deps = [":desktop_source_hdrs"],
+)
+
+cc_library(
+    name = "deployment_registry_component_lib",
+    srcs = [
+        "source/deployment/registry/component/dp_component.cxx",
+        "source/deployment/registry/component/dp_compbackenddb.cxx",
+    ],
+    copts = _COPTS + ["/Imain/desktop/source/deployment/registry/inc"],
+    defines = _DEFINES,
+    deps = [":desktop_source_hdrs"],
+)
+
+cc_library(
+    name = "deployment_registry_configuration_lib",
+    srcs = [
+        "source/deployment/registry/configuration/dp_configuration.cxx",
+        "source/deployment/registry/configuration/dp_configurationbackenddb.cxx",
+    ],
+    copts = _COPTS + ["/Imain/desktop/source/deployment/registry/inc"],
+    defines = _DEFINES,
+    deps = [":desktop_source_hdrs"],
+)
+
+cc_library(
+    name = "deployment_registry_package_lib",
+    srcs = [
+        "source/deployment/registry/package/dp_extbackenddb.cxx",
+        "source/deployment/registry/package/dp_package.cxx",
+    ],
+    copts = _COPTS + ["/Imain/desktop/source/deployment/registry/inc"],
+    defines = _DEFINES,
+    deps = [":desktop_source_hdrs"],
+)
+
+cc_library(
+    name = "deployment_registry_script_lib",
+    srcs = [
+        "source/deployment/registry/script/dp_lib_container.cxx",
+        "source/deployment/registry/script/dp_script.cxx",
+        "source/deployment/registry/script/dp_scriptbackenddb.cxx",
+    ],
+    copts = _COPTS + ["/Imain/desktop/source/deployment/registry/inc"],
+    defines = _DEFINES,
+    deps = [":desktop_source_hdrs"],
+)
+
+cc_library(
+    name = "deployment_registry_sfwk_lib",
+    srcs = [
+        "source/deployment/registry/sfwk/dp_parceldesc.cxx",
+        "source/deployment/registry/sfwk/dp_sfwk.cxx",
+    ],
+    copts = _COPTS + ["/Imain/desktop/source/deployment/registry/inc"],
+    defines = _DEFINES,
+    deps = [":desktop_source_hdrs"],
+)
+
+cc_library(
+    name = "deployment_registry_help_lib",
+    srcs = [
+        "source/deployment/registry/help/dp_help.cxx",
+        "source/deployment/registry/help/dp_helpbackenddb.cxx",
+    ],
+    copts = _COPTS + ["/Imain/desktop/source/deployment/registry/inc"],
+    defines = _DEFINES,
+    deps = [
+        ":desktop_source_hdrs",
+        "//main/l10ntools:helplinker_headers",
+    ],
+)
+
+# ── deployment.uno.dll ────────────────────────────────────────────────────────
+cc_binary(
+    name = "deployment",
+    srcs = [
+        "source/deployment/dp_log.cxx",
+        "source/deployment/dp_persmap.cxx",
+        "source/deployment/dp_services.cxx",
+        "source/deployment/dp_xml.cxx",
+    ],
+    copts = _COPTS + ["/Imain/desktop/source/deployment/registry/inc"],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/deployment.def",
+    deps = [
+        ":desktop_source_hdrs",
+        ":deployment_manager_lib",
+        ":deployment_registry_lib",
+        ":deployment_registry_executable_lib",
+        ":deployment_registry_component_lib",
+        ":deployment_registry_configuration_lib",
+        ":deployment_registry_package_lib",
+        ":deployment_registry_script_lib",
+        ":deployment_registry_sfwk_lib",
+        ":deployment_registry_help_lib",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/ucbhelper:ucbhelper_implib",
+        "//main/svl:svl_implib",
+        "//main/xmlscript:xcr_implib",
+        "//main/l10ntools:helplinker_implib",
+        ":deploymentmisc_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/ucbhelper:ucbhelper_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/xmlscript:xcr_implib)",
+        "$(execpath //main/l10ntools:helplinker_implib)",
+        "$(execpath :deploymentmisc_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "deployment_implib",
+    srcs = [":deployment"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── migration static library (shared by sofficeapp + spl) ────────────────────
+cc_library(
+    name = "migration_lib",
+    srcs = [
+        "source/migration/cfgfilter.cxx",
+        "source/migration/migration.cxx",
+        "source/migration/pages.cxx",
+        "source/migration/wizard.cxx",
+    ],
+    copts = _COPTS + [
+        "/Imain/desktop/source/app",
+        "/Imain/desktop/source/migration",
+    ],
+    defines = _DEFINES,
+    deps = [":desktop_source_hdrs"],
+)
+
+# ── sofficeapp.dll ────────────────────────────────────────────────────────────
+cc_binary(
+    name = "sofficeapp",
+    srcs = [
+        "source/app/app.cxx",
+        "source/app/appfirststart.cxx",
+        "source/app/appinit.cxx",
+        "source/app/appsys.cxx",
+        "source/app/check_ext_deps.cxx",
+        "source/app/checkinstall.cxx",
+        "source/app/cmdlineargs.cxx",
+        "source/app/cmdlinehelp.cxx",
+        "source/app/configinit.cxx",
+        "source/app/desktopcontext.cxx",
+        "source/app/desktopresid.cxx",
+        "source/app/dispatchwatcher.cxx",
+        "source/app/langselect.cxx",
+        "source/app/lockfile.cxx",
+        "source/app/lockfile2.cxx",
+        "source/app/officeipcthread.cxx",
+        "source/app/sofficemain.cxx",
+        "source/app/userinstall.cxx",
+    ],
+    copts = _COPTS + [
+        "/Imain/desktop/source/app",
+        "/Imain/desktop/source/migration",
+        "/Imain/soltools/winunistd",
+    ],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/sofficeapp.def",
+    deps = [
+        ":desktop_source_hdrs",
+        ":migration_lib",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/ucbhelper:ucbhelper_implib",
+        "//main/svl:svl_implib",
+        "//main/svtools:svt_implib",
+        "//main/vcl:vcl_implib",
+        "//main/vos:vos3_implib",
+        "//main/sfx2:sfx_implib",
+        "//main/toolkit:ootk_implib",
+        "//main/i18npool:i18nisolang1_implib",
+        ":deploymentmisc_implib",
+        ":deploymentgui_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/ucbhelper:ucbhelper_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/vos:vos3_implib)",
+        "$(execpath //main/sfx2:sfx_implib)",
+        "$(execpath //main/toolkit:ootk_implib)",
+        "$(execpath //main/i18npool:i18nisolang1_implib)",
+        "$(execpath :deploymentmisc_implib)",
+        "$(execpath :deploymentgui_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "sofficeapp_implib",
+    srcs = [":sofficeapp"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── spl.dll (splash + migration) ─────────────────────────────────────────────
+cc_binary(
+    name = "spl",
+    srcs = [
+        "source/splash/firststart.cxx",
+        "source/splash/services_spl.cxx",
+        "source/splash/splash.cxx",
+    ],
+    copts = _COPTS + [
+        "/Imain/desktop/source/app",
+        "/Imain/desktop/source/migration",
+        "/Imain/desktop/source/splash",
+    ],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/spl.def",
+    deps = [
+        ":desktop_source_hdrs",
+        ":introbmpnames_lib",
+        ":migration_lib",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/ucbhelper:ucbhelper_implib",
+        "//main/svl:svl_implib",
+        "//main/svtools:svt_implib",
+        "//main/vcl:vcl_implib",
+        "//main/vos:vos3_implib",
+        "//main/sfx2:sfx_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/ucbhelper:ucbhelper_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/vos:vos3_implib)",
+        "$(execpath //main/sfx2:sfx_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── socomp.dll ────────────────────────────────────────────────────────────────
+cc_binary(
+    name = "socomp",
+    srcs = [
+        "source/so_comp/evaluation.cxx",
+        "source/so_comp/oemjob.cxx",
+        "source/so_comp/services.cxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/socomp.def",
+    deps = [":desktop_source_hdrs"],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/vcl:vcl_implib",
+        "//main/svl:svl_implib",
+        "//main/svtools:svt_implib",
+        "//main/framework:fwi_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+        "$(execpath //main/framework:fwi_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── offacc.dll ────────────────────────────────────────────────────────────────
+cc_binary(
+    name = "offacc",
+    srcs = ["source/offacc/acceptor.cxx"],
+    copts = _COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/offacc.def",
+    deps = [":desktop_source_hdrs"],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── migrationoo2.uno.dll ──────────────────────────────────────────────────────
+cc_binary(
+    name = "migrationoo2",
+    srcs = [
+        "source/migration/services/autocorrmigration.cxx",
+        "source/migration/services/basicmigration.cxx",
+        "source/migration/services/cexports.cxx",
+        "source/migration/services/jvmfwk.cxx",
+        "source/migration/services/oo3extensionmigration.cxx",
+        "source/migration/services/wordbookmigration.cxx",
+    ],
+    copts = _COPTS + ["/Imain/desktop/source/migration/services"],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/migrationoo2.def",
+    deps = [":desktop_source_hdrs"],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/ucbhelper:ucbhelper_implib",
+        "//main/xmlscript:xcr_implib",
+        "//main/i18npool:i18nisolang1_implib",
+        "//main/jvmfwk:jvmfwk_implib",
+        ":deploymentmisc_implib",
+        ":deploymentgui_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/ucbhelper:ucbhelper_implib)",
+        "$(execpath //main/xmlscript:xcr_implib)",
+        "$(execpath //main/i18npool:i18nisolang1_implib)",
+        "$(execpath //main/jvmfwk:jvmfwk_implib)",
+        "$(execpath :deploymentmisc_implib)",
+        "$(execpath :deploymentgui_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── unopkgapp.dll ─────────────────────────────────────────────────────────────
+cc_binary(
+    name = "unopkgapp",
+    srcs = [
+        "source/app/lockfile.cxx",
+        "source/pkgchk/unopkg/unopkg_app.cxx",
+        "source/pkgchk/unopkg/unopkg_cmdenv.cxx",
+        "source/pkgchk/unopkg/unopkg_misc.cxx",
+    ],
+    copts = _COPTS + [
+        "/Imain/desktop/source/app",
+        "/Imain/desktop/source/pkgchk/unopkg",
+    ],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/unopkgapp.def",
+    deps = [":desktop_source_hdrs"],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/ucbhelper:ucbhelper_implib",
+        "//main/vcl:vcl_implib",
+        ":deploymentmisc_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/ucbhelper:ucbhelper_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath :deploymentmisc_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "unopkgapp_implib",
+    srcs = [":unopkgapp"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── soffice.exe ───────────────────────────────────────────────────────────────
+# Main office executable: calls soffice_main() from sofficeapp.dll
+cc_binary(
+    name = "soffice",
+    srcs = [
+        "source/app/copyright_ascii_ooo.c",
+        "source/app/main.c",
+    ],
+    copts = [
+        "/Zc:wchar_t-",
+        "/Imain/desktop/source/app",
+        "/Imain/desktop/inc/pch",
+    ],
+    defines = [
+        "WNT", "WIN32", "INTEL", "_X86_=1",
+        "snprintf=_snprintf",
+        "SUPD=680", "MSC",
+    ],
+    deps = ["//main/sal:sal_headers"],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        ":sofficeapp_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath :sofficeapp_implib)",
+        "/SUBSYSTEM:WINDOWS",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── officeloader.exe ──────────────────────────────────────────────────────────
+# Bootstrap loader (delivered as soffice.exe in the final install)
+cc_binary(
+    name = "officeloader",
+    srcs = [
+        "win32/source/extendloaderenvironment.cxx",
+        "win32/source/officeloader/officeloader.cxx",
+    ],
+    copts = [
+        "/Zc:wchar_t-",
+        "/Imain/desktop/win32/source",
+        "/Imain/desktop/inc/pch",
+    ],
+    defines = [
+        "WNT", "WIN32", "INTEL", "_X86_=1",
+        "snprintf=_snprintf",
+        "SUPD=680", "MSC", "UNICODE", "_UNICODE",
+    ],
+    deps = ["//main/tools:ooopathutils"],
+    linkopts = [
+        "advapi32.lib", "shell32.lib", "shlwapi.lib", "user32.lib",
+        "/SUBSYSTEM:WINDOWS",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── guiloader.exe ─────────────────────────────────────────────────────────────
+# Generic GUI loader (reused as unopkg.exe and testtool.exe)
+cc_binary(
+    name = "guiloader",
+    srcs = [
+        "win32/source/extendloaderenvironment.cxx",
+        "win32/source/guiloader/genericloader.cxx",
+    ],
+    copts = [
+        "/Zc:wchar_t-",
+        "/Imain/desktop/win32/source",
+        "/Imain/desktop/inc/pch",
+    ],
+    defines = [
+        "WNT", "WIN32", "INTEL", "_X86_=1",
+        "snprintf=_snprintf",
+        "SUPD=680", "MSC", "UNICODE", "_UNICODE",
+    ],
+    deps = [
+        "//main/tools:ooopathutils",
+        "//main/tools:tools_headers",
+    ],
+    linkopts = [
+        "shlwapi.lib", "user32.lib",
+        "/SUBSYSTEM:WINDOWS",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── unoinfo.exe ───────────────────────────────────────────────────────────────
+cc_binary(
+    name = "unoinfo",
+    srcs = ["win32/source/unoinfo.cxx"],
+    copts = [
+        "/Zc:wchar_t-",
+        "/Imain/desktop/win32/source",
+        "/Imain/desktop/inc/pch",
+    ],
+    defines = [
+        "WNT", "WIN32", "INTEL", "_X86_=1",
+        "snprintf=_snprintf",
+        "SUPD=680", "MSC", "UNICODE", "_UNICODE",
+    ],
+    deps = [
+        "//main/tools:ooopathutils",
+        "//main/tools:tools_headers",
+    ],
+    linkopts = [
+        "/SUBSYSTEM:CONSOLE",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── guistdio.exe ──────────────────────────────────────────────────────────────
+cc_binary(
+    name = "guistdio",
+    srcs = ["win32/source/guistdio/guistdio.cxx"],
+    copts = [
+        "/Zc:wchar_t-",
+        "/Imain/desktop/inc/pch",
+        "/Imain/desktop/win32/source/guistdio",
+    ],
+    defines = [
+        "WNT", "WIN32", "INTEL", "_X86_=1",
+        "snprintf=_snprintf",
+        "SUPD=680", "MSC",
+    ],
+    deps = [":desktop_source_hdrs"],
+    linkopts = [
+        "/SUBSYSTEM:CONSOLE",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── unopkgio.exe ──────────────────────────────────────────────────────────────
+cc_binary(
+    name = "unopkgio",
+    srcs = ["win32/source/guistdio/unopkgio.cxx"],
+    copts = [
+        "/Zc:wchar_t-",
+        "/Imain/desktop/inc/pch",
+        "/Imain/desktop/win32/source/guistdio",
+    ],
+    defines = [
+        "WNT", "WIN32", "INTEL", "_X86_=1",
+        "snprintf=_snprintf",
+        "SUPD=680", "MSC",
+    ],
+    deps = [":desktop_source_hdrs"],
+    linkopts = [
+        "/SUBSYSTEM:CONSOLE",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── unopkg.exe ────────────────────────────────────────────────────────────────
+# Thin bootstrap loader that calls unopkg_main() from unopkgapp.dll
+cc_binary(
+    name = "unopkg",
+    srcs = ["source/pkgchk/unopkg/unopkg_main.c"],
+    copts = [
+        "/Zc:wchar_t-",
+        "/Imain/desktop/source/pkgchk/unopkg",
+    ],
+    defines = [
+        "WNT", "WIN32", "INTEL", "_X86_=1",
+        "snprintf=_snprintf",
+        "SUPD=680", "MSC",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        ":unopkgapp_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath :unopkgapp_implib)",
+        "/SUBSYSTEM:WINDOWS",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── Application launcher EXEs (swriter, scalc, etc.) ─────────────────────────
+[cc_binary(
+    name = app,
+    srcs = [
+        "win32/source/applauncher/launcher.cxx",
+        "win32/source/applauncher/" + app + ".cxx",
+    ],
+    copts = [
+        "/Zc:wchar_t-",
+        "/Imain/desktop/win32/source/applauncher",
+        "/Imain/desktop/inc/pch",
+    ],
+    defines = [
+        "WNT", "WIN32", "INTEL", "_X86_=1",
+        "snprintf=_snprintf",
+        "SUPD=680", "MSC", "UNICODE", "_UNICODE",
+    ],
+    linkopts = [
+        "shell32.lib",
+        "/SUBSYSTEM:WINDOWS",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+) for app in ["swriter", "scalc", "sdraw", "simpress", "sbase", "smath", "sweb"]]
+
+# ── rebaseoo.exe ──────────────────────────────────────────────────────────────
+cc_binary(
+    name = "rebaseoo",
+    srcs = ["win32/source/rebase/rebase.cxx"],
+    copts = [
+        "/Zc:wchar_t-",
+        "/Imain/desktop/win32/source",
+        "/Imain/desktop/win32/source/rebase",
+        "/Imain/desktop/inc/pch",
+    ],
+    defines = [
+        "WNT", "WIN32", "INTEL", "_X86_=1",
+        "snprintf=_snprintf",
+        "SUPD=680", "MSC", "UNICODE", "_UNICODE",
+    ],
+    deps = [
+        "//main/tools:ooopathutils",
+        "//main/tools:tools_headers",
+    ],
+    linkopts = [
+        "shell32.lib", "imagehlp.lib",
+        "/SUBSYSTEM:CONSOLE",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── rebasegui.exe ─────────────────────────────────────────────────────────────
+cc_binary(
+    name = "rebasegui",
+    srcs = ["win32/source/rebase/rebasegui.cxx"],
+    copts = [
+        "/Zc:wchar_t-",
+        "/Imain/desktop/win32/source",
+        "/Imain/desktop/win32/source/rebase",
+        "/Imain/desktop/inc/pch",
+    ],
+    defines = [
+        "WNT", "WIN32", "INTEL", "_X86_=1",
+        "snprintf=_snprintf",
+        "SUPD=680", "MSC", "UNICODE", "_UNICODE",
+    ],
+    deps = [
+        "//main/tools:ooopathutils",
+        "//main/tools:tools_headers",
+    ],
+    linkopts = [
+        "shell32.lib", "imagehlp.lib",
+        "/SUBSYSTEM:WINDOWS",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── quickstart.exe ────────────────────────────────────────────────────────────
+cc_binary(
+    name = "quickstart",
+    srcs = ["win32/source/QuickStart/QuickStart.cpp"],
+    copts = [
+        "/Zc:wchar_t-",
+        "/Imain/desktop/inc/pch",
+        "/Imain/desktop/win32/source/QuickStart",
+    ],
+    defines = [
+        "WNT", "WIN32", "INTEL", "_X86_=1",
+        "snprintf=_snprintf",
+        "SUPD=680", "MSC", "UNICODE", "_UNICODE",
+    ],
+    deps = [
+        ":desktop_source_hdrs",
+        "//main/sal:sal_headers",
+    ],
+    linkopts = [
+        "comsupp.lib",
+        "shell32.lib", "ole32.lib", "gdi32.lib",
+        "oleaut32.lib", "comdlg32.lib", "kernel32.lib", "uuid.lib",
+        "/SUBSYSTEM:WINDOWS",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)

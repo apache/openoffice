@@ -358,3 +358,11 @@ filegroup(
     output_group = "interface_library",
     visibility = ["//visibility:public"],
 )
+
+cc_library(
+    name = "helplinker_headers",
+    hdrs = ["source/help/compilehelp.hxx"],
+    strip_include_prefix = "source/help",
+    include_prefix = "l10ntools",
+    visibility = ["//visibility:public"],
+)

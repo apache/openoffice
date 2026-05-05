@@ -138,9 +138,7 @@ dbaccess      ✅  (dba.dll, dbu.dll, dbaxml.dll, sdbt.dll, dbmm.dll, adabasui.d
 reportdesign  ✅  (rpt.dll, rptui.dll, rptxml.dll) — main/reportdesign/readme.md
 starmath      ✅  (sm.dll, smd.dll — Math formula editor) — main/starmath/readme.md
 ── Layer 23 — desktop ────────────────────────────────────────────────────
-desktop       ⬜  (sw, sd, sc, dbaccess, starmath, sfx2, vcl, framework,
-                   ucb, scripting, basctl, fpicker, dtrans, uui, accessibility
-                   — soffice.exe launcher + splash, quickstarter)
+desktop       ✅  (soffice.exe + all launcher EXEs + 9 DLLs) — main/desktop/readme.md
 ── Already done, not yet listed ─────────────────────────────────────────
 ooxml         ✅  (done with oox migration; openssl_shim removed, now uses @openssl//:ssl)
 stlport       ✅  (boost hash_map shim, referenced as dep)
