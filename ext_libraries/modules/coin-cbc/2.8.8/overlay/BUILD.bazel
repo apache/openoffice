@@ -1,0 +1,31 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+cc_library(
+    name = "cbc",
+    srcs = glob(
+        ["Cbc/src/*.cpp"],
+        exclude = [
+            "Cbc/src/unitTest.cpp",
+            "Cbc/src/unitTestClp.cpp",
+            "Cbc/src/CoinSolve.cpp",
+            "Cbc/src/Cbc_ampl.cpp",
+        ],
+    ) + ["stubs.cpp"],
+    hdrs = glob(["Cbc/src/*.h", "Cbc/src/*.hpp"]),
+    includes = ["Cbc/src", "BuildTools/headers"],
+    defines = [
+        "WIN32",
+        "NDEBUG",
+        "_WINDOWS",
+        "_CRT_SECURE_NO_DEPRECATE",
+        "_CRT_SECURE_NO_WARNINGS",
+        "CBC_BUILD",
+    ],
+    deps = [
+        "@coin-coinutils//:coinutils",
+        "@coin-osi//:osi",
+        "@coin-clp//:clp",
+        "@coin-cgl//:cgl",
+    ],
+    visibility = ["//visibility:public"],
+)

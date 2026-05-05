@@ -1,0 +1,17 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+cc_library(
+    name = "coinutils",
+    srcs = glob(["CoinUtils/src/*.cpp"]),
+    hdrs = glob(["CoinUtils/src/*.h", "CoinUtils/src/*.hpp"]),
+    includes = ["CoinUtils/src", "BuildTools/headers"],
+    defines = [
+        "WIN32",
+        "NDEBUG",
+        "_WINDOWS",
+        "_CRT_SECURE_NO_DEPRECATE",
+        "_CRT_SECURE_NO_WARNINGS",
+        "COINUTILS_BUILD",
+    ],
+    visibility = ["//visibility:public"],
+)

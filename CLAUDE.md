@@ -132,8 +132,7 @@ sdext         ✅  (PresentationMinimizer.uno.dll, PresenterScreen.uno.dll, pdfi
 sc            ✅  (sc.dll, scd.dll, scfilt.dll, scui.dll, vbaobj.dll) — main/sc/readme.md
 ── Layer 21 ─────────────────────────────────────────────────────────────
 scaddins      ✅  (analysis.dll, date.dll) — main/scaddins/readme.md
-sccomp        ⬜  (sc, connectivity — Calc compatibility components)
-solver        ⬜  (sc — linear programming solver)
+sccomp        ✅  (solver.dll — CoinMP/COIN-OR linear solver) — main/sccomp/readme.md
 dbaccess      ⬜  Base (sc, sw, connectivity, svx, sfx2, svtools, xmloff,
                    ucb, forms, cui)
 ── Layer 22 ─────────────────────────────────────────────────────────────

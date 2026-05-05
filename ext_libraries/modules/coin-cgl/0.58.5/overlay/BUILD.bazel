@@ -1,0 +1,48 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+cc_library(
+    name = "cgl",
+    srcs = glob(
+        ["Cgl/src/**/*.cpp"],
+        exclude = ["Cgl/src/**/*Test.cpp"],
+    ),
+    hdrs = glob(["Cgl/src/**/*.h", "Cgl/src/**/*.hpp"]),
+    includes = [
+        "Cgl/src",
+        "Cgl/src/CglAllDifferent",
+        "Cgl/src/CglClique",
+        "Cgl/src/CglDuplicateRow",
+        "Cgl/src/CglFlowCover",
+        "Cgl/src/CglGMI",
+        "Cgl/src/CglGomory",
+        "Cgl/src/CglKnapsackCover",
+        "Cgl/src/CglLandP",
+        "Cgl/src/CglLiftAndProject",
+        "Cgl/src/CglMixedIntegerRounding",
+        "Cgl/src/CglMixedIntegerRounding2",
+        "Cgl/src/CglOddHole",
+        "Cgl/src/CglPreProcess",
+        "Cgl/src/CglProbing",
+        "Cgl/src/CglRedSplit",
+        "Cgl/src/CglRedSplit2",
+        "Cgl/src/CglResidualCapacity",
+        "Cgl/src/CglSimpleRounding",
+        "Cgl/src/CglTwomir",
+        "Cgl/src/CglZeroHalf",
+        "BuildTools/headers",
+    ],
+    defines = [
+        "WIN32",
+        "NDEBUG",
+        "_WINDOWS",
+        "_CRT_SECURE_NO_DEPRECATE",
+        "_CRT_SECURE_NO_WARNINGS",
+        "CGL_BUILD",
+    ],
+    deps = [
+        "@coin-coinutils//:coinutils",
+        "@coin-osi//:osi",
+        "@coin-clp//:clp",
+    ],
+    visibility = ["//visibility:public"],
+)

@@ -1,0 +1,34 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+cc_library(
+    name = "clp",
+    srcs = glob(
+        ["Clp/src/*.cpp", "Clp/src/OsiClp/*.cpp"],
+        exclude = [
+            "Clp/src/Abc*.cpp",
+            "Clp/src/CoinAbc*.cpp",
+            "Clp/src/ClpMain.cpp",
+            "Clp/src/CbcOrClpParam.cpp",
+            "Clp/src/My*.cpp",
+            "Clp/src/unitTest.cpp",
+            "Clp/src/ClpCholeskyUfl.cpp",
+            "Clp/src/ClpCholeskyWssmp*.cpp",
+            "Clp/src/ClpCholeskyMumps.cpp",
+        ],
+    ),
+    hdrs = glob(["Clp/src/*.h", "Clp/src/*.hpp", "Clp/src/OsiClp/*.hpp"]),
+    includes = ["Clp/src", "Clp/src/OsiClp", "BuildTools/headers"],
+    defines = [
+        "WIN32",
+        "NDEBUG",
+        "_WINDOWS",
+        "_CRT_SECURE_NO_DEPRECATE",
+        "_CRT_SECURE_NO_WARNINGS",
+        "CLP_BUILD",
+    ],
+    deps = [
+        "@coin-coinutils//:coinutils",
+        "@coin-osi//:osi",
+    ],
+    visibility = ["//visibility:public"],
+)

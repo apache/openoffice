@@ -1,0 +1,13 @@
+{
+    "url": "https://github.com/coin-or/Osi/archive/refs/tags/releases/0.106.5.tar.gz",
+    "integrity": "sha256-gy33oRJj9iY+Kd7FHh+z4IOhAkXxWGIBSBDsk55gzAM=",
+    "strip_prefix": "Osi-releases-0.106.5",
+    "overlay": {
+        "MODULE.bazel":                              "sha256-2fl9KKjK5LGasrw4Ip6iBNfowpsVU0X7Else3UPQlgU=",
+        "BUILD.bazel":                               "sha256-pCtYvKXJOtKmjhxDvttmSU6gsoprEYhOQgzEcNPqyQU=",
+        "BuildTools/headers/configall_system.h":     "sha256-8ukjlrUNe/3vYcRz1NXdvLqpS0FYDpmhxFP36u5uHYU=",
+        "BuildTools/headers/configall_system_msc.h": "sha256-1hr//GoCz0H00v/k1eW1OODwMnlKm6zpN+YOsIFG07g="
+    },
+    "patches": {},
+    "patch_strip": 0
+}

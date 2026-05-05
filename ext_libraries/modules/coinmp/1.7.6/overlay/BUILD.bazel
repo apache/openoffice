@@ -1,0 +1,51 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+# Build CoinMP.dll — thin wrapper around the COIN-OR sub-libraries.
+# Sub-library sources (CoinUtils, Osi, Clp, Cgl, Cbc) come from separate modules.
+cc_binary(
+    name = "CoinMP",
+    srcs = glob([
+        "CoinMP/src/*.cpp",
+        "CoinMP/src/*.c",
+        "CoinMP/src/*.h",
+    ]),
+    includes = ["CoinMP/src"],
+    defines = [
+        "WIN32",
+        "NDEBUG",
+        "_WINDOWS",
+        "_USRDLL",
+        "COINMP_EXPORTS",
+        "_CRT_SECURE_NO_DEPRECATE",
+        "_CRT_SECURE_NO_WARNINGS",
+        "_X86_=1",
+    ],
+    copts = ["/FIwindef.h"],
+    win_def_file = "CoinMP/src/CoinMP.def",
+    linkshared = True,
+    deps = [
+        "@coin-coinutils//:coinutils",
+        "@coin-osi//:osi",
+        "@coin-clp//:clp",
+        "@coin-cgl//:cgl",
+        "@coin-cbc//:cbc",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# Import library (.if.lib) for consumers to link against.
+filegroup(
+    name = "coinmp_implib",
+    srcs = [":CoinMP"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# Header-only target: propagates CoinMP.h include path to consumers.
+# Link against :coinmp_implib via additional_linker_inputs + linkopts.
+cc_library(
+    name = "coinmp",
+    hdrs = ["CoinMP/src/CoinMP.h"],
+    includes = ["CoinMP/src"],
+    visibility = ["//visibility:public"],
+)

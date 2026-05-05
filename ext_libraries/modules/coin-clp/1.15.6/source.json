@@ -1,0 +1,13 @@
+{
+    "url": "https://github.com/coin-or/Clp/archive/refs/tags/releases/1.15.6.tar.gz",
+    "integrity": "sha256-xDwobKdieG01Db0L0uAlNXstKO1IcKsI8pQn0eC4OA4=",
+    "strip_prefix": "Clp-releases-1.15.6",
+    "overlay": {
+        "MODULE.bazel":                              "sha256-1jJSFaHHewridYps4LUknWWhudBD8oxEcLmwBqKGtjA=",
+        "BUILD.bazel":                               "sha256-ltc3GFnmL7DOQ6DRgWof3PE7rKuobPhHPnG5uYa6QyU=",
+        "BuildTools/headers/configall_system.h":     "sha256-8ukjlrUNe/3vYcRz1NXdvLqpS0FYDpmhxFP36u5uHYU=",
+        "BuildTools/headers/configall_system_msc.h": "sha256-1hr//GoCz0H00v/k1eW1OODwMnlKm6zpN+YOsIFG07g="
+    },
+    "patches": {},
+    "patch_strip": 0
+}

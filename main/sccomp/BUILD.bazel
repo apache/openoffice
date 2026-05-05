@@ -1,0 +1,58 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+    "SUPD=680",
+    "MSC",
+]
+
+cc_library(
+    name = "solver_source_hdrs",
+    textual_hdrs = glob(["source/solver/*.hxx", "source/solver/*.hrc"]),
+)
+
+# solver.dll — Calc linear solver (COIN-OR CoinMP backend)
+cc_binary(
+    name = "solver",
+    srcs = ["source/solver/solver.cxx"],
+    defines = _DEFINES,
+    copts = [
+        "/Imain/sccomp/source/solver",
+        "/Zc:wchar_t-",
+    ],
+    linkshared = True,
+    deps = [
+        ":solver_source_hdrs",
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/tools:tools_headers",
+        "//main/stlport:stlport",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "@coinmp//:coinmp",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/tools:tl_implib",
+        "@coinmp//:coinmp_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath @coinmp//:coinmp_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)

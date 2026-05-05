@@ -1,0 +1,18 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+cc_library(
+    name = "osi",
+    srcs = glob(["Osi/src/Osi/*.cpp"]),
+    hdrs = glob(["Osi/src/Osi/*.h", "Osi/src/Osi/*.hpp"]),
+    includes = ["Osi/src", "Osi/src/Osi", "BuildTools/headers"],
+    defines = [
+        "WIN32",
+        "NDEBUG",
+        "_WINDOWS",
+        "_CRT_SECURE_NO_DEPRECATE",
+        "_CRT_SECURE_NO_WARNINGS",
+        "OSI_BUILD",
+    ],
+    deps = ["@coin-coinutils//:coinutils"],
+    visibility = ["//visibility:public"],
+)

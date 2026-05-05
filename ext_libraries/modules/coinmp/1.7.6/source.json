@@ -1,0 +1,11 @@
+{
+    "url": "https://github.com/coin-or/CoinMP/archive/refs/tags/releases/1.7.6.tar.gz",
+    "integrity": "sha256-1zFuLxGIbRsU0L6CmQMF4z9LA08iUfBcIGFouFT1AQo=",
+    "strip_prefix": "CoinMP-releases-1.7.6",
+    "overlay": {
+        "MODULE.bazel": "sha256-leibdbQi7pf+2uZbPTsVDcr7riTg8fX4zfoqEtyl65I=",
+        "BUILD.bazel":  "sha256-8FprSzd0502j0rjXQzswLPmEr3AzVRySwFJRpSHa+rE="
+    },
+    "patches": {},
+    "patch_strip": 0
+}

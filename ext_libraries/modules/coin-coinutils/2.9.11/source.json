@@ -1,0 +1,13 @@
+{
+    "url": "https://github.com/coin-or/CoinUtils/archive/refs/tags/releases/2.9.11.tar.gz",
+    "integrity": "sha256-NSLzVxqYGM7z644ldx09WgfjQ730vXGWSxCj8iKkFQw=",
+    "strip_prefix": "CoinUtils-releases-2.9.11",
+    "overlay": {
+        "MODULE.bazel":                              "sha256-gUyAnAiAthWSl/9Dcrz25eEalaxK39QbLxVOJ57NJ/k=",
+        "BUILD.bazel":                               "sha256-613s/HMeM2V9zZHmDeDoBDWG2eUpbEfXA7uyuE4l1Bg=",
+        "BuildTools/headers/configall_system.h":     "sha256-8ukjlrUNe/3vYcRz1NXdvLqpS0FYDpmhxFP36u5uHYU=",
+        "BuildTools/headers/configall_system_msc.h": "sha256-1hr//GoCz0H00v/k1eW1OODwMnlKm6zpN+YOsIFG07g="
+    },
+    "patches": {},
+    "patch_strip": 0
+}

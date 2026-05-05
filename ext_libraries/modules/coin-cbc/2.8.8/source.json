@@ -1,0 +1,14 @@
+{
+    "url": "https://github.com/coin-or/Cbc/archive/refs/tags/releases/2.8.8.tar.gz",
+    "integrity": "sha256-pzLX7lbmXiqzVwLjNLUSUM/iTuCrR3uZii5krrOkAzU=",
+    "strip_prefix": "Cbc-releases-2.8.8",
+    "overlay": {
+        "MODULE.bazel":                              "sha256-oNGGcN8CyVw8QK+dC2SCtDLN9gVqWkE7sPmC76yo0g4=",
+        "BUILD.bazel":                               "sha256-OwpBgCMrxCo2N8FOHF3nn3Q5KJf4VZZEt/YvpeIqfPw=",
+        "stubs.cpp":                                 "sha256-pDEbnTcZrNzDcFtJxv9QqcBl68S8tJQuuupxUW1wWwo=",
+        "BuildTools/headers/configall_system.h":     "sha256-8ukjlrUNe/3vYcRz1NXdvLqpS0FYDpmhxFP36u5uHYU=",
+        "BuildTools/headers/configall_system_msc.h": "sha256-1hr//GoCz0H00v/k1eW1OODwMnlKm6zpN+YOsIFG07g="
+    },
+    "patches": {},
+    "patch_strip": 0
+}

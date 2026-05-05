@@ -1,0 +1,13 @@
+{
+    "url": "https://github.com/coin-or/Cgl/archive/refs/tags/releases/0.58.5.tar.gz",
+    "integrity": "sha256-nfpUuzsY91JkEt6DZng/1pq03myRoAJEL/+DgppzT1M=",
+    "strip_prefix": "Cgl-releases-0.58.5",
+    "overlay": {
+        "MODULE.bazel":                              "sha256-En6l9ujf0yFZm+I53L/8NwDDrNsike3niaQA3R00DyQ=",
+        "BUILD.bazel":                               "sha256-zTGFqIwdRvAX/wJ6/y5l1pbDzCjNDgv6hH9iftzDMEQ=",
+        "BuildTools/headers/configall_system.h":     "sha256-8ukjlrUNe/3vYcRz1NXdvLqpS0FYDpmhxFP36u5uHYU=",
+        "BuildTools/headers/configall_system_msc.h": "sha256-1hr//GoCz0H00v/k1eW1OODwMnlKm6zpN+YOsIFG07g="
+    },
+    "patches": {},
+    "patch_strip": 0
+}

@@ -1,0 +1,8 @@
+module(
+    name = "coin-osi",
+    version = "0.106.5",
+    compatibility_level = 1,
+)
+
+bazel_dep(name = "rules_cc",         version = "0.2.17")
+bazel_dep(name = "coin-coinutils",   version = "2.9.11")

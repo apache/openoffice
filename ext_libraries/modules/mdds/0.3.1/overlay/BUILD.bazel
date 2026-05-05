@@ -4,7 +4,17 @@ load("@rules_cc//cc:defs.bzl", "cc_library")
 # Used by sc (Calc) for flat_segment_tree in source/core/data/segmenttree.cxx.
 cc_library(
     name = "mdds",
-    hdrs = glob(["include/mdds/**"]),
+    hdrs = [
+        "include/mdds/flat_segment_tree.hpp",
+        "include/mdds/global.hpp",
+        "include/mdds/hash_container/map.hpp",
+        "include/mdds/node.hpp",
+        "include/mdds/point_quad_tree.hpp",
+        "include/mdds/quad_node.hpp",
+        "include/mdds/quad_type_matrix.hpp",
+        "include/mdds/rectangle_set.hpp",
+        "include/mdds/segment_tree.hpp",
+    ],
     strip_include_prefix = "include",
     visibility = ["//visibility:public"],
 )
