@@ -1,0 +1,17 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+# Exposes unixODBC headers as <odbc/sqlext.h> etc., matching the gbuild
+# Package_inc.mk install path (inc/external/odbc/).
+cc_library(
+    name = "odbc_headers",
+    hdrs = glob(["inc/*.h"]),
+    defines = [
+        # Prevent iodbcunix.h (Unix-only, needs unistd.h) from being included.
+        # sqltypes.h guards it with #ifndef _IODBCUNIX_H; sqltypes.h itself
+        # handles WIN32 by defining HWND/SQLHWND/SQL_API without iodbcunix.h.
+        "_IODBCUNIX_H",
+    ],
+    include_prefix = "odbc",
+    strip_include_prefix = "inc",
+    visibility = ["//visibility:public"],
+)

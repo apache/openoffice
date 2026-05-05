@@ -133,8 +133,7 @@ sc            ✅  (sc.dll, scd.dll, scfilt.dll, scui.dll, vbaobj.dll) — main/
 ── Layer 21 ─────────────────────────────────────────────────────────────
 scaddins      ✅  (analysis.dll, date.dll) — main/scaddins/readme.md
 sccomp        ✅  (solver.dll — CoinMP/COIN-OR linear solver) — main/sccomp/readme.md
-dbaccess      ⬜  Base (sc, sw, connectivity, svx, sfx2, svtools, xmloff,
-                   ucb, forms, cui)
+dbaccess      ✅  (dba.dll, dbu.dll, dbaxml.dll, sdbt.dll, dbmm.dll, adabasui.dll) — main/dbaccess/readme.md
 ── Layer 22 ─────────────────────────────────────────────────────────────
 reportdesign  ⬜  (dbaccess, svx, sfx2, sc, vcl — Base report designer)
 reportbuilder ⬜  (reportdesign, dbaccess — Java-based report engine)
