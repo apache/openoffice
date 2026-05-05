@@ -1,0 +1,240 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("//build/rules:sdi_target.bzl", "sdi_target")
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+    "snwprintf=_snwprintf",
+    "SUPD=680",
+    "MSC",
+]
+
+_COPTS = [
+    "/Imain/starmath/inc",
+    "/Imain/starmath/inc/pch",
+    "/Imain/starmath/sdi",
+    "/Imain/starmath/source",
+    "/Zc:wchar_t-",
+]
+
+# ── Public headers ────────────────────────────────────────────────────────────
+cc_library(
+    name = "sm_headers",
+    hdrs = glob(["inc/**"]),
+    strip_include_prefix = "inc",
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/tools:tools_headers",
+        "//main/unotools:unotools_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/svl:svl_headers",
+        "//main/sot:sot_headers",
+        "//main/vcl:vcl_headers",
+        "//main/svtools:svtools_headers",
+        "//main/editeng:editeng_headers",
+        "//main/sfx2:sfx2_headers",
+        "//main/svx:svx_headers",
+        "//main/xmloff:xmloff_headers",
+        "//main/toolkit:toolkit_headers",
+        "//main/stlport:stlport",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── Private source headers ────────────────────────────────────────────────────
+cc_library(
+    name = "sm_source_hdrs",
+    textual_hdrs = glob([
+        "source/**/*.hxx",
+        "source/**/*.hrc",
+    ]),
+)
+
+# ── SDI slot header generation ────────────────────────────────────────────────
+sdi_target(
+    name = "smslots_sdi",
+    main_sdi     = "sdi/smslots.sdi",
+    exports      = "sdi/smath.sdi",
+    srcs         = glob(["sdi/*.sdi", "inc/**"]),
+    slot_name    = "smslots",
+    include_dirs = [
+        "main/starmath/sdi",
+        "main/starmath/inc",
+        "main/sfx2/sdi",
+        "main/sfx2/inc/sfx2",
+        "main/sfx2/inc",
+        "main/svx/sdi",
+        "main/svx/inc",
+        "main/svl/inc",
+        "main/editeng/inc",
+    ],
+    pkg_deps = [
+        "//main/sfx2:sfx2_sdi_pkg",
+        "//main/svx:svx_sdi_pkg",
+    ],
+)
+
+cc_library(
+    name = "smslots_headers",
+    hdrs     = [":smslots_sdi"],
+    includes = ["smslots_sdi_inc"],
+    visibility = ["//visibility:public"],
+)
+
+# ── sm.dll — Math formula editor ─────────────────────────────────────────────
+cc_binary(
+    name = "sm",
+    srcs = [
+        "inc/pch/precompiled_starmath.cxx",
+        "source/accessibility.cxx",
+        "source/action.cxx",
+        "source/cfgitem.cxx",
+        "source/config.cxx",
+        "source/dialog.cxx",
+        "source/document.cxx",
+        "source/edit.cxx",
+        "source/eqnolefilehdr.cxx",
+        "source/format.cxx",
+        "source/mathmlexport.cxx",
+        "source/mathmlimport.cxx",
+        "source/mathtype.cxx",
+        "source/node.cxx",
+        "source/parse.cxx",
+        "source/rect.cxx",
+        "source/register.cxx",
+        "source/smdll.cxx",
+        "source/smmod.cxx",
+        "source/symbol.cxx",
+        "source/toolbox.cxx",
+        "source/typemap.cxx",
+        "source/types.cxx",
+        "source/unodoc.cxx",
+        "source/unomodel.cxx",
+        "source/utility.cxx",
+        "source/view.cxx",
+    ],
+    copts      = _COPTS,
+    defines    = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/sm.def",
+    deps = [
+        ":sm_headers",
+        ":smslots_headers",
+        ":sm_source_hdrs",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
+        "//main/editeng:editeng_implib",
+        "//main/i18npool:i18npaper_implib",
+        "//main/toolkit:ootk_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/sfx2:sfx_implib",
+        "//main/sot:sot_implib",
+        "//main/svl:svl_implib",
+        "//main/svtools:svt_implib",
+        "//main/svx:svx_implib",
+        "//main/svx:svxcore_implib",
+        "//main/vcl:vcl_implib",
+        "//main/xmloff:xo_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/editeng:editeng_implib)",
+        "$(execpath //main/i18npool:i18npaper_implib)",
+        "$(execpath //main/toolkit:ootk_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/sfx2:sfx_implib)",
+        "$(execpath //main/sot:sot_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+        "$(execpath //main/svx:svx_implib)",
+        "$(execpath //main/svx:svxcore_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/xmloff:xo_implib)",
+        "ole32.lib", "user32.lib", "advapi32.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "sm_implib",
+    srcs         = [":sm"],
+    output_group = "interface_library",
+    visibility   = ["//visibility:public"],
+)
+
+# ── smd.dll — Math format detector ───────────────────────────────────────────
+cc_binary(
+    name = "smd",
+    srcs = [
+        "source/detreg.cxx",
+        "source/smdetect.cxx",
+    ],
+    copts = [
+        "/Imain/starmath/inc",
+        "/Imain/starmath/inc/pch",
+        "/Imain/starmath/source",
+        "/Zc:wchar_t-",
+    ],
+    defines    = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/smd.def",
+    deps = [
+        ":sm_headers",
+        ":sm_source_hdrs",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/tools:tl_implib",
+        "//main/sfx2:sfx_implib",
+        ":sm_implib",
+        "//main/sot:sot_implib",
+        "//main/svl:svl_implib",
+        "//main/svtools:svt_implib",
+        "//main/ucbhelper:ucbhelper_implib",
+        "//main/vcl:vcl_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/sfx2:sfx_implib)",
+        "$(execpath :sm_implib)",
+        "$(execpath //main/sot:sot_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+        "$(execpath //main/ucbhelper:ucbhelper_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "ole32.lib", "user32.lib", "advapi32.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "smd_implib",
+    srcs         = [":smd"],
+    output_group = "interface_library",
+    visibility   = ["//visibility:public"],
+)

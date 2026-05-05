@@ -136,7 +136,7 @@ sccomp        ✅  (solver.dll — CoinMP/COIN-OR linear solver) — main/sccomp
 dbaccess      ✅  (dba.dll, dbu.dll, dbaxml.dll, sdbt.dll, dbmm.dll, adabasui.dll) — main/dbaccess/readme.md
 ── Layer 22 ─────────────────────────────────────────────────────────────
 reportdesign  ✅  (rpt.dll, rptui.dll, rptxml.dll) — main/reportdesign/readme.md
-starmath      ⬜  (svx, sfx2, editeng, vcl, sw — Math formula editor)
+starmath      ✅  (sm.dll, smd.dll — Math formula editor) — main/starmath/readme.md
 ── Layer 23 — desktop ────────────────────────────────────────────────────
 desktop       ⬜  (sw, sd, sc, dbaccess, starmath, sfx2, vcl, framework,
                    ucb, scripting, basctl, fpicker, dtrans, uui, accessibility
