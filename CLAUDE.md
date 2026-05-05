@@ -136,7 +136,6 @@ sccomp        ✅  (solver.dll — CoinMP/COIN-OR linear solver) — main/sccomp
 dbaccess      ✅  (dba.dll, dbu.dll, dbaxml.dll, sdbt.dll, dbmm.dll, adabasui.dll) — main/dbaccess/readme.md
 ── Layer 22 ─────────────────────────────────────────────────────────────
 reportdesign  ✅  (rpt.dll, rptui.dll, rptxml.dll) — main/reportdesign/readme.md
-reportbuilder ⬜  (reportdesign, dbaccess — Java-based report engine)
 starmath      ⬜  (svx, sfx2, editeng, vcl, sw — Math formula editor)
 ── Layer 23 — desktop ────────────────────────────────────────────────────
 desktop       ⬜  (sw, sd, sc, dbaccess, starmath, sfx2, vcl, framework,
@@ -156,6 +155,7 @@ cli_ure       ⬜  (cppu, cppuhelper, sal, codemaker, stoc, udkapi, bridges)
                    AL.exe policy assemblies, sn.exe strong-name signing.
 unoil         ⬜  update climaker
 ── Deferred: Java-based ─────────────────────────────────────────────────
+reportbuilder ⬜  (pure Java .oxt extension; blockers: JFreeReport suite not on Maven, SourceForge ZIPs have token-based URLs; wizards dep also deferred)
 bean          ⬜  (Java bean component)
 stax          ⬜  (StAX XML streaming API)
 saxon         ⬜  (XSLT 2.0 processor)
