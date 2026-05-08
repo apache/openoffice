@@ -1,4 +1,5 @@
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("//build/rules:rsc_pipeline.bzl", "rsc_res")
 load("//main/filter:filter_rules.bzl", "FILTER_COPTS", "FILTER_HDR_DEPS", "graphic_filter")
 
 _DEFINES = [
@@ -961,4 +962,96 @@ graphic_filter(
         "$(execpath //main/toolkit:ootk_implib)",
         "$(execpath //main/unotools:utl_implib)",
     ],
+)
+
+# Each DLL in the original build compiled its own .src files into a separate
+# .res (via SRC1FILES in per-directory makefile.mk).  Merging them all with
+# glob causes duplicate resource IDs (e.g. pdf.hrc:PDF_PROGRESS_BAR=260 vs
+# graphicfilter/eps/strings.hrc:KEY_VERSION_CHECK=260).  Split to match.
+
+rsc_res(
+    name        = "pdf_res",
+    srcs        = [
+        "source/pdf/impdialog.src",
+        "source/pdf/pdf.src",
+    ],
+    hdrs        = [
+        "inc/filter.hrc",
+        "source/pdf/impdialog.hrc",
+        "source/pdf/pdf.hrc",
+        "//main/svl:svl_hrc",
+    ],
+    includes    = [
+        "main/filter/inc",
+        "main/filter/source/pdf",
+        "main/svl/inc",
+    ],
+    images      = ["//main/default_images:shared_images"],
+    images_root = "main/default_images/res",
+    visibility  = ["//visibility:public"],
+)
+
+rsc_res(
+    name        = "flash_res",
+    srcs        = ["source/flash/impswfdialog.src"],
+    hdrs        = [
+        "inc/filter.hrc",
+        "source/flash/impswfdialog.hrc",
+    ],
+    includes    = [
+        "main/filter/inc",
+        "main/filter/source/flash",
+    ],
+    visibility  = ["//visibility:public"],
+)
+
+rsc_res(
+    name        = "t602_res",
+    srcs        = ["source/t602/t602filter.src"],
+    hdrs        = [
+        "inc/filter.hrc",
+        "source/t602/t602filter.hrc",
+    ],
+    includes    = [
+        "main/filter/inc",
+        "main/filter/source/t602",
+    ],
+    visibility  = ["//visibility:public"],
+)
+
+rsc_res(
+    name        = "xsltdialog_res",
+    srcs        = [
+        "source/xsltdialog/xmlfiltersettingsdialog.src",
+        "source/xsltdialog/xmlfiltertabdialog.src",
+        "source/xsltdialog/xmlfiltertabpagebasic.src",
+        "source/xsltdialog/xmlfiltertabpagexslt.src",
+        "source/xsltdialog/xmlfiltertestdialog.src",
+        "source/xsltdialog/xmlfileview.src",
+        "source/xsltdialog/xmlfilterdialogstrings.src",
+    ],
+    hdrs        = glob(["source/xsltdialog/*.hrc"]) + [
+        "inc/filter.hrc",
+        "//main/svl:svl_hrc",
+    ],
+    includes    = [
+        "main/filter/inc",
+        "main/filter/source/xsltdialog",
+        "main/svl/inc",
+    ],
+    visibility  = ["//visibility:public"],
+)
+
+rsc_res(
+    name        = "graphicfilter_eps_res",
+    srcs        = ["source/graphicfilter/eps/epsstr.src"],
+    hdrs        = [
+        "inc/filter.hrc",
+        "source/graphicfilter/eps/strings.hrc",
+    ],
+    includes    = [
+        "main/filter/inc",
+        "main/filter/source/graphicfilter/eps",
+    ],
+    visibility  = ["//visibility:public"],
 )

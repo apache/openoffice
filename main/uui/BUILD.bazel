@@ -1,4 +1,5 @@
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("//build/rules:rsc_pipeline.bzl", "rsc_res")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -83,4 +84,21 @@ filegroup(
     srcs = [":uui"],
     output_group = "interface_library",
     visibility = ["//visibility:public"],
+)
+
+rsc_res(
+    name        = "uui_res",
+    srcs        = glob(["source/*.src"]),
+    hdrs        = glob(["source/*.hrc"]) + [
+        "//main/svl:svl_hrc",
+        "//main/tools:tools_inc_hdrs",
+        "//main/svtools:svtools_hrc",
+    ],
+    includes    = ["main/uui/source", "main/svl/inc", "main/tools/inc", "main/svtools/inc"],
+    images      = [
+        "//main/default_images:xmlsecurity_res_images",
+        "//main/default_images:shared_images",
+    ],
+    images_root = "main/default_images/xmlsecurity/res",
+    visibility  = ["//visibility:public"],
 )

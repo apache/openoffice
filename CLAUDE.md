@@ -143,11 +143,10 @@ desktop       ✅  (soffice.exe + all launcher EXEs + 9 DLLs) — main/desktop/r
 ooxml         ✅  (done with oox migration; openssl_shim removed, now uses @openssl//:ssl)
 stlport       ✅  (boost hash_map shim, referenced as dep)
 ── Cross-cutting infrastructure ─────────────────────────────────────
-rsc pipeline   ⬜  (.src → .srs → .res via rscpp + rsc genrule; tools already
-                   built at //main/rsc:rsc + :rscpp; affects all UI modules with
-                   AllLangResTarget: uui, svl, svtools, vcl, sfx2, svx, filter,
-                   xmlsecurity, and all future app-layer modules)
-── Deferred: .NET interop (deferred) ────────────────────────────────────
+rsc pipeline   ✅  (rscpp + rsc2 called directly as Bazel actions; rsc.exe launcher
+                   not used; -lip= + -subimages= required for image lookup; normal
+                   mode writes .res only; 31 modules wired up) — build/rules/rsc_pipeline.bzl
+e── Deferred: .NET interop (deferred) ────────────────────────────────────
 cli_ure       ⬜  (cppu, cppuhelper, sal, codemaker, stoc, udkapi, bridges)
                    Blockers: C# rules (csc.exe), C++/CLI (/clr toolchain),
                    AL.exe policy assemblies, sn.exe strong-name signing.

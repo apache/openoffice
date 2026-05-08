@@ -1,4 +1,5 @@
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("//build/rules:rsc_pipeline.bzl", "rsc_res")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -476,5 +477,71 @@ filegroup(
     name = "rptxml_implib",
     srcs = [":rptxml"],
     output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# rpt.res — core string resources only (AllLangResTarget_rpt.mk)
+rsc_res(
+    name        = "rpt_res",
+    srcs        = ["source/core/resource/strings.src"],
+    hdrs        = glob(["inc/**/*.hrc", "source/core/inc/**/*.hrc"]) + [
+        "//main/svl:svl_hrc",
+    ],
+    includes    = [
+        "main/reportdesign/inc",
+        "main/reportdesign/source/core/inc",
+        "main/svl/inc",
+    ],
+    visibility  = ["//visibility:public"],
+)
+
+# CondFormat.src uses FileList = { < "path"; SID; >; } syntax which rsc2 cannot
+# parse directly (the original rsc.exe PreprocessSrsFile corrupted these blocks
+# into empty FileList = {}; before compilation, producing empty image lists).
+# Replicate that behavior: replace every FileList block with an empty IdList.
+genrule(
+    name = "condformat_src_patched",
+    srcs = ["source/ui/dlg/CondFormat.src"],
+    outs = ["condformat_fixed/CondFormat.src"],
+    cmd_bat = "perl -0777 -pe \"s/FileList\\s*=\\s*\\{[^}]*\\}/IdList = {}/g\" \"$(location source/ui/dlg/CondFormat.src)\" > \"$(OUTS)\"",
+)
+
+# rptui.res — UI dialog/inspection/report resources (AllLangResTarget_rptui.mk)
+rsc_res(
+    name        = "rptui_res",
+    srcs        = [
+        "source/ui/dlg/dlgpage.src",
+        "source/ui/dlg/PageNumber.src",
+        "source/ui/dlg/DateTime.src",
+        ":condformat_src_patched",
+        "source/ui/dlg/Navigator.src",
+        "source/ui/dlg/GroupsSorting.src",
+        "source/ui/inspection/inspection.src",
+        "source/ui/report/report.src",
+    ],
+    hdrs        = glob(["inc/**/*.hrc", "source/ui/**/*.hrc"]) + [
+        "//main/svl:svl_hrc",
+        "//main/svx:svx_inc_hrc",
+        "//main/editeng:editeng_inc_hrc",
+        "//main/sfx2:sfx2_inc_hrc",
+    ],
+    includes    = [
+        "main/reportdesign/inc",
+        "main/reportdesign/source/ui/dlg",
+        "main/svl/inc",
+        "main/svx/inc",
+        "main/editeng/inc",
+        "main/sfx2/inc",
+        "main/sfx2/inc/sfx2",
+    ],
+    images      = ["//main/default_images:reportdesign_res_images"],
+    images_root = "main/default_images/reportdesign/res",
+    visibility  = ["//visibility:public"],
+)
+
+# Alias kept for compatibility with references.
+alias(
+    name       = "reportdesign_res",
+    actual     = ":rptui_res",
     visibility = ["//visibility:public"],
 )

@@ -60,6 +60,7 @@ _TOOLS_LINKOPTS = [
     "msvcrt.lib",
 ]
 
+
 # ── rscpp — standalone C preprocessor ────────────────────────────
 # Pure C sources; defines SOLAR on Windows (no -Dunix branch).
 cc_binary(

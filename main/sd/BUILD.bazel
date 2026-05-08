@@ -1,4 +1,5 @@
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("//build/rules:rsc_pipeline.bzl", "rsc_res")
 load("//build/rules:sdi_target.bzl", "sdi_target")
 
 _DEFINES = [
@@ -887,4 +888,35 @@ filegroup(
     srcs  = [":sdfilt"],
     output_group = "interface_library",
     visibility = ["//visibility:public"],
+)
+
+rsc_res(
+    name        = "sd_res",
+    srcs        = glob(["source/**/*.src"]),
+    hdrs        = glob(["inc/**/*.hrc", "source/**/*.hrc"]) + [
+        "//main/sfx2:sfx2_inc_hrc",
+        "//main/svl:svl_hrc",
+        "//main/svtools:svtools_hrc",
+        "//main/svx:svx_inc_hrc",
+        "//main/editeng:editeng_inc_hrc",
+        "//main/tools:tools_inc_hdrs",
+    ],
+    includes    = [
+        "main/sd/inc",
+        "main/sd/source/ui/inc",
+        "main/sd/source/ui/slidesorter/inc",
+        "main/sfx2/inc",
+        "main/sfx2/inc/sfx2",
+        "main/svl/inc",
+        "main/svtools/inc",
+        "main/svx/inc",
+        "main/editeng/inc",
+        "main/tools/inc",
+    ],
+    images      = [
+        "//main/default_images:sd_res_images",
+        "//main/default_images:shared_images",
+    ],
+    images_root = "main/default_images/sd/res",
+    visibility  = ["//visibility:public"],
 )

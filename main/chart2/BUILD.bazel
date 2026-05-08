@@ -1,4 +1,5 @@
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("//build/rules:rsc_pipeline.bzl", "rename_file", "rsc_res")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -365,4 +366,76 @@ filegroup(
     srcs = [":chartcontroller"],
     output_group = "interface_library",
     visibility = ["//visibility:public"],
+)
+
+rename_file(
+    name = "res_Titlesx_hrc",
+    src  = "source/controller/dialogs/res_Titlesx_tmpl.hrc",
+    out  = "res_Titlesx.hrc",
+)
+
+rename_file(
+    name = "res_SecondaryAxisCheckBoxes_hrc",
+    src  = "source/controller/dialogs/res_SecondaryAxisCheckBoxes_tmpl.hrc",
+    out  = "res_SecondaryAxisCheckBoxes.hrc",
+)
+
+rename_file(
+    name = "res_DataLabel_hrc",
+    src  = "source/controller/dialogs/res_DataLabel_tmpl.hrc",
+    out  = "res_DataLabel.hrc",
+)
+
+rename_file(
+    name = "res_ErrorBar_hrc",
+    src  = "source/controller/dialogs/res_ErrorBar_tmpl.hrc",
+    out  = "res_ErrorBar.hrc",
+)
+
+rename_file(
+    name = "res_LegendPosition_hrc",
+    src  = "source/controller/dialogs/res_LegendPosition_tmpl.hrc",
+    out  = "res_LegendPosition.hrc",
+)
+
+rename_file(
+    name = "res_Trendline_hrc",
+    src  = "source/controller/dialogs/res_Trendline_tmpl.hrc",
+    out  = "res_Trendline.hrc",
+)
+
+rsc_res(
+    name     = "chart2_res",
+    srcs     = glob(
+        ["source/**/*.src"],
+        exclude = ["source/controller/dialogs/hidother.src"],
+    ),
+    hdrs     = glob(["source/**/*.hrc", "source/**/*.hxx"]) + [
+        "//main/svtools:svtools_hrc",
+        "//main/svx:svx_inc_hrc",
+        "//main/svl:svl_hrc",
+        "//main/editeng:editeng_inc_hrc",
+        "//main/sfx2:sfx2_inc_hrc",
+        ":res_Titlesx_hrc",
+        ":res_SecondaryAxisCheckBoxes_hrc",
+        ":res_DataLabel_hrc",
+        ":res_ErrorBar_hrc",
+        ":res_LegendPosition_hrc",
+        ":res_Trendline_hrc",
+    ],
+    includes    = [
+        "main/chart2/source/controller/dialogs",
+        "main/chart2/source/controller/menus",
+        "main/chart2/source/controller/inc",
+        "main/chart2/source/inc",
+        "main/svtools/inc",
+        "main/svx/inc",
+        "main/svl/inc",
+        "main/editeng/inc",
+        "main/sfx2/inc",
+        "main/sfx2/inc/sfx2",
+    ],
+    images      = ["//main/default_images:chart2_res_images"],
+    images_root = "main/default_images/chart2/res",
+    visibility  = ["//visibility:public"],
 )

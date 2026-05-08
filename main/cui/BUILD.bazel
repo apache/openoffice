@@ -1,4 +1,5 @@
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("//build/rules:rsc_pipeline.bzl", "rsc_res")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -150,5 +151,33 @@ filegroup(
     name = "cui_implib",
     srcs = [":cui"],
     output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+rsc_res(
+    name     = "cui_res",
+    srcs     = glob(["source/**/*.src"]),
+    hdrs     = glob(["source/**/*.hrc"]) + [
+        "//main/sfx2:sfx2_inc_hrc",
+        "//main/svtools:svtools_hrc",
+        "//main/svx:svx_inc_hrc",
+        "//main/svl:svl_hrc",
+        "//main/editeng:editeng_inc_hrc",
+    ],
+    includes = [
+        "main/cui/source/inc",
+        "main/sfx2/inc",
+        "main/sfx2/inc/sfx2",
+        "main/svtools/inc",
+        "main/svx/inc",
+        "main/svl/inc",
+        "main/editeng/inc",
+    ],
+    images      = [
+        "//main/default_images:svx_res_images",
+        "//main/default_images:sd_res_images",
+        "//main/default_images:shared_images",
+    ],
+    images_root = "main/default_images/svx/res",
     visibility = ["//visibility:public"],
 )

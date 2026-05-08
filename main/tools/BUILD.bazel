@@ -206,6 +206,12 @@ filegroup(
     visibility = ["//visibility:public"],
 )
 
+filegroup(
+    name = "tools_inc_hdrs",
+    srcs = glob(["inc/**/*.h", "inc/**/*.hxx"]),
+    visibility = ["//visibility:public"],
+)
+
 # ── ooopathutils (static lib, separate from tl.dll) ───────────────
 # Used by modules that need path utilities without linking the full tl.dll.
 cc_library(

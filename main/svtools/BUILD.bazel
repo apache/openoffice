@@ -1,4 +1,5 @@
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("//build/rules:rsc_pipeline.bzl", "rsc_res")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -195,4 +196,27 @@ filegroup(
     srcs = [":hatchwindowfactory"],
     output_group = "interface_library",
     visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "svtools_hrc",
+    srcs = glob(["inc/svtools/**/*.hrc", "inc/svtools/**/*.hxx", "inc/svtools/**/*.h"]),
+    visibility = ["//visibility:public"],
+)
+
+rsc_res(
+    name        = "svtools_res",
+    srcs        = glob(["source/**/*.src"]),
+    hdrs        = glob(["inc/**/*.hrc", "source/**/*.hrc", "inc/**/*.hxx", "inc/**/*.h"]) + [
+        "//main/svl:svl_hrc",
+        "//main/i18npool:i18npool_lang_h",
+        "//main/tools:tools_inc_hdrs",
+    ],
+    includes    = ["main/svtools/inc", "main/svtools/source/inc", "main/svl/inc", "main/i18npool/inc", "main/tools/inc"],
+    images      = [
+        "//main/default_images:svtools_res_images",
+        "//main/default_images:shared_images",
+    ],
+    images_root = "main/default_images/svtools/res",
+    visibility  = ["//visibility:public"],
 )

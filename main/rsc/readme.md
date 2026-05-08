@@ -19,8 +19,8 @@ There are 703 `.src` files in the AOO tree.
 | Executable | Role |
 |---|---|
 | `rscpp` | Standalone C preprocessor — handles `#include` and `#define` in `.src` files. Six plain C files, no bison. |
-| `rsc2` | The actual compiler: parses preprocessed `.src` text → binary `.res` (and optionally `.srs`, `.hxx`, `.cxx`). Uses the bison-generated parser. |
-| `rsc` | Thin launcher that orchestrates rscpp → rsc2. |
+| `rsc2` | The actual compiler: parses preprocessed `.src` text → binary `.res`. Uses the bison-generated parser. |
+| `rsc` | Thin launcher that orchestrates rscpp → rsc2 (not used in the Bazel pipeline). |
 
 ## The bison grammar (yyrscyacc.y)
 
@@ -34,8 +34,8 @@ outside AOO/LibreOffice uses it.
 the tree** (same approach as idlc). It is not regenerated during the Bazel build.
 
 Rationale: the `.src` grammar is completely frozen — AOO has not added a new resource type in
-over a decade and is in maintenance mode. bison would never be invoked again in this codebase's
-lifetime. The pre-generation approach eliminates bison as a build-time dependency entirely.
+over a decade and is in maintenance mode. The pre-generation approach eliminates bison as a
+build-time dependency entirely.
 
 To regenerate if ever needed:
 ```bash
@@ -78,3 +78,116 @@ Dependencies: `//main/sal`, `//main/tools` (tl), `//main/i18npool` (i18nisolang1
 - `cppmain.c` excluded from `rscpp`: on MSVC the `MAIN` macro in `cpp.h` expands to `__cdecl main`, so `cpp1.c` already provides `main()` — compiling `cppmain.c` causes a duplicate symbol.
 - `yyrscyacc.cxx` and `yyrscyacc.hxx` are pre-generated and checked in. A `cc_library` wrapper (`rsc2_parser`) is needed because `cc_binary` does not support `textual_hdrs`; `rscyacc.cxx` `#include`s `yyrscyacc.cxx` directly.
 - Include path `/Imain/rsc/source/parser` added to shared copts so `rsclex.cxx` can find `<yyrscyacc.hxx>` (angle-bracket include).
+
+## rsc_pipeline.bzl — Bazel rule for .res compilation
+
+The shared rule lives at `//build/rules:rsc_pipeline.bzl`.
+
+### Two-step pipeline (rscpp + rsc2 directly)
+
+The Bazel rule does NOT use the `rsc.exe` launcher. Instead it calls rscpp and rsc2
+as separate Bazel actions, giving full control over each action's inputs, outputs, and
+environment. This avoids subprocess-spawning issues (CWD inheritance, path resolution)
+that arise when rsc.exe forks child processes.
+
+**Step 1 — RscPreprocess** (one action per `.src` file):
+```
+rscpp.exe  -I<inc>...  -D<def>...  input.src  output.src.srs
+```
+
+**Step 2 — Rsc2Compile** (one action for all intermediates):
+```
+rsc2.exe  -fs=<name>.res  -lgEN_US  -LITTLEENDIAN
+          -I<inc>...  -D<def>...
+          -lip=<tools_dir>  -subimages=<tools_dir>
+          <all intermediate .src.srs files>
+```
+
+#### Image lookup: -lip= and -subimages=
+
+`-lip=<dir>` tells rsc2 where to search for image files by basename.
+
+`-subimages=<dir>` is equally required: rsc2's `GetImageFilePath()` only sets
+`bFound=true` when a `-sub<key>=<path>` replacement in `m_aReplacements` matches
+as a prefix of the found file's path. Without `-sub`, every image is found on disk
+but never recorded (bFound stays false), producing the f268 "could not be found" error.
+
+Both flags point to the same flat `<name>_tools/` directory where images are staged
+alongside the EXE and DLL files.
+
+#### .res vs .srs output mode
+
+rsc2 has two mutually exclusive output modes:
+- **Normal mode** (no `-s` flag): writes `.res` only — used by `rsc_res`
+- **NOLINK mode** (`-s` flag): writes `.srs` only, skips `.res`
+
+The `rsc_res` rule runs in normal mode and declares only `.res` as the output.
+
+### Tool staging
+
+Each `rsc_res` rule stages its own `<name>_tools/` directory containing:
+- `rscpp.exe` + `rsc2.exe` (the two tool executables)
+- All runtime DLLs: `sal3`, `tl`, `cppu3`, `cppuhelper3MSC`, `salhelper3MSC`,
+  `comphelp`, `ucbhelper`, `basegfx`, `vos3`, `i18nisolang1`, CRT
+- `.manifest` files for rscpp.exe and rsc2.exe (VS2008 SxS CRT loading)
+- All image files (`.png`/`.bmp`) staged flat by basename
+
+`env = {"PATH": tools_dir}` on every action; Windows DLL loader finds everything.
+
+### Usage example
+
+```python
+load("//build/rules:rsc_pipeline.bzl", "rsc_res")
+
+rsc_res(
+    name     = "vcl_res",
+    srcs     = glob(["source/src/*.src"]),
+    hdrs     = glob(["inc/**/*.hrc"]) + ["//main/svl:svl_hrc"],
+    includes = ["main/vcl/inc", "main/svl/inc"],
+    images   = [
+        "//main/default_images:vcl_images",
+        "//main/default_images:shared_images",
+    ],
+    visibility = ["//visibility:public"],
+)
+```
+
+The default `defines` list (`WNT GUI WIN32 INTEL _X86_=1 CPPU_ENV=msci`) covers
+all currently-migrated modules; override with an explicit `defines = [...]` if
+a module needs additional preprocessor symbols.
+
+### Modules wired up
+
+| Module | Target |
+|---|---|
+| `accessibility` | `//main/accessibility:accessibility_res` |
+| `avmedia` | `//main/avmedia:avmedia_res` |
+| `basic` | `//main/basic:basic_res` |
+| `basctl` | `//main/basctl:basctl_res` |
+| `chart2` | `//main/chart2:chart2_res` |
+| `connectivity` | `//main/connectivity:connectivity_res` |
+| `cui` | `//main/cui:cui_res` |
+| `dbaccess` | `//main/dbaccess:dbaccess_res` |
+| `desktop` | `//main/desktop:desktop_res` |
+| `editeng` | `//main/editeng:editeng_res` |
+| `filter` | `//main/filter:filter_res` |
+| `forms` | `//main/forms:forms_res` |
+| `formula` | `//main/formula:formula_res` |
+| `fpicker` | `//main/fpicker:fpicker_res` |
+| `framework` | `//main/framework:framework_res` |
+| `reportdesign` | `//main/reportdesign:reportdesign_res` |
+| `sc` | `//main/sc:sc_res` |
+| `scaddins` | `//main/scaddins:scaddins_res` |
+| `sccomp` | `//main/sccomp:sccomp_res` |
+| `sd` | `//main/sd:sd_res` |
+| `sdext` | `//main/sdext:sdext_res` |
+| `sfx2` | `//main/sfx2:sfx2_res` |
+| `scripting` | `//main/scripting:scripting_res` |
+| `starmath` | `//main/starmath:starmath_res` |
+| `svl` | `//main/svl:svl_res` |
+| `svtools` | `//main/svtools:svtools_res` |
+| `svx` | `//main/svx:svx_res` |
+| `sw` | `//main/sw:sw_res` |
+| `uui` | `//main/uui:uui_res` |
+| `vcl` | `//main/vcl:vcl_res` |
+| `xmlsecurity` | `//main/xmlsecurity:xmlsecurity_res` |

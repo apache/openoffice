@@ -1,4 +1,5 @@
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("//build/rules:rsc_pipeline.bzl", "rename_file", "rsc_res")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -848,5 +849,104 @@ filegroup(
     name = "adabasui_implib",
     srcs = [":adabasui"],
     output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+rename_file(
+    name = "dbaccess_toolbox_hrc",
+    src  = "source/ui/inc/toolbox_tmpl.hrc",
+    out  = "toolbox.hrc",
+)
+
+rename_file(
+    name = "dbaccess_autocontrols_hrc",
+    src  = "source/ui/dlg/AutoControls_tmpl.hrc",
+    out  = "AutoControls.hrc",
+)
+
+# dba.res — core string resources only
+rsc_res(
+    name     = "dba_res",
+    srcs     = ["source/core/resource/strings.src"],
+    hdrs     = glob(["inc/**/*.hrc", "source/core/inc/**/*.hrc"]),
+    includes = [
+        "main/dbaccess/inc",
+        "main/dbaccess/source/core/inc",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# dbmm.res — macro migration strings
+rsc_res(
+    name     = "dbmm_res",
+    srcs     = ["source/ext/macromigration/macromigration.src"],
+    hdrs     = glob(["inc/**/*.hrc", "source/ext/macromigration/**/*.hrc"]),
+    includes = [
+        "main/dbaccess/inc",
+        "main/dbaccess/source/ext/macromigration",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# adabasui.res — Adabas extension
+rsc_res(
+    name     = "adabasui_res",
+    srcs     = ["source/ext/adabas/AdabasNewDb.src"],
+    hdrs     = glob(["inc/**/*.hrc", "source/ext/adabas/**/*.hrc"]),
+    includes = [
+        "main/dbaccess/inc",
+        "main/dbaccess/source/ext/adabas",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# sdbt.res — sdbtools strings
+rsc_res(
+    name     = "sdbt_res",
+    srcs     = ["source/sdbtools/resource/sdbt_strings.src"],
+    hdrs     = glob(["inc/**/*.hrc", "source/sdbtools/**/*.hrc"]),
+    includes = [
+        "main/dbaccess/inc",
+        "main/dbaccess/source/sdbtools/inc",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# dbui.res — main UI resources (dbu.dll)
+rsc_res(
+    name     = "dbui_res",
+    srcs     = glob(
+        ["source/ui/**/*.src"],
+        exclude = ["source/ui/browser/bcommon.src"],
+    ),
+    hdrs     = glob(["inc/**/*.hrc", "source/ui/**/*.hrc"]) + [
+        "//main/sfx2:sfx2_inc_hrc",
+        "//main/svx:svx_inc_hrc",
+        "//main/svl:svl_hrc",
+        "//main/editeng:editeng_inc_hrc",
+        ":dbaccess_toolbox_hrc",
+        ":dbaccess_autocontrols_hrc",
+    ],
+    includes = [
+        "main/dbaccess/inc",
+        "main/dbaccess/source/ui/inc",
+        "main/dbaccess/source/ui/dlg",
+        "main/sfx2/inc",
+        "main/sfx2/inc/sfx2",
+        "main/svx/inc",
+        "main/svl/inc",
+        "main/editeng/inc",
+    ],
+    images      = [
+        "//main/default_images:dbaccess_res_images",
+        "//main/default_images:shared_images",
+    ],
+    images_root = "main/default_images/dbaccess/res",
+    visibility  = ["//visibility:public"],
+)
+
+alias(
+    name       = "dbaccess_res",
+    actual     = ":dbui_res",
     visibility = ["//visibility:public"],
 )

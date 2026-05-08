@@ -1,4 +1,5 @@
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("//build/rules:rsc_pipeline.bzl", "rsc_res")
 load("//build/rules:sdi_target.bzl", "sdi_package", "sdi_target")
 
 _DEFINES = [
@@ -192,4 +193,34 @@ filegroup(
     srcs  = [":sfx"],
     output_group = "interface_library",
     visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "sfx2_inc_hrc",
+    srcs = glob(["inc/sfx2/**/*.hrc", "inc/sfx2/**/*.h"]),
+    visibility = ["//visibility:public"],
+)
+
+rsc_res(
+    name        = "sfx2_res",
+    srcs        = glob(["source/**/*.src"]),
+    hdrs        = glob(["inc/**/*.hrc", "source/inc/*.hrc"]) + [
+        "//main/svl:svl_hrc",
+        "//main/svtools:svtools_hrc",
+        "//main/tools:tools_inc_hdrs",
+    ],
+    includes    = [
+        "main/sfx2/inc",
+        "main/sfx2/inc/sfx2",
+        "main/sfx2/source/inc",
+        "main/svl/inc",
+        "main/svtools/inc",
+        "main/tools/inc",
+    ],
+    images      = [
+        "//main/default_images:sfx2_res_images",
+        "//main/default_images:shared_images",
+    ],
+    images_root = "main/default_images/sfx2/res",
+    visibility  = ["//visibility:public"],
 )

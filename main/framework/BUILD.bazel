@@ -1,4 +1,5 @@
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("//build/rules:rsc_pipeline.bzl", "rsc_res")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -535,4 +536,19 @@ filegroup(
     srcs = [":fwm"],
     output_group = "interface_library",
     visibility = ["//visibility:public"],
+)
+
+rsc_res(
+    name        = "framework_res",
+    srcs        = glob(["source/**/*.src"]),
+    hdrs        = glob(["inc/**/*.hrc"]) + ["//main/svl:svl_hrc"],
+    includes    = ["main/framework/inc", "main/svl/inc"],
+    images      = [
+        "//main/default_images:framework_res_images",
+        "//main/default_images:extensions_res_images",
+        "//main/default_images:desktop_res_images",
+        "//main/default_images:shared_images",
+    ],
+    images_root = "main/default_images/framework/res",
+    visibility  = ["//visibility:public"],
 )

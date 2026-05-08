@@ -1,4 +1,5 @@
 load("@rules_cc//cc:defs.bzl", "cc_binary")
+load("//build/rules:rsc_pipeline.bzl", "rsc_res")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -134,5 +135,21 @@ filegroup(
     name = "frm_implib",
     srcs = [":frm"],
     output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+rsc_res(
+    name     = "forms_res",
+    srcs     = glob(["source/resource/*.src"]),
+    hdrs     = glob(["source/inc/*.hrc"]) + [
+        "//main/svl:svl_hrc",
+        "//main/sal:sal_inc_hdrs",
+    ],
+    includes = [
+        "main/forms/source/resource",
+        "main/forms/source/inc",
+        "main/svl/inc",
+        "main/sal/inc",
+    ],
     visibility = ["//visibility:public"],
 )

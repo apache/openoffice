@@ -1,5 +1,6 @@
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 load("//build/rules:idl_pipeline.bzl", "idl_library")
+load("//build/rules:rsc_pipeline.bzl", "rsc_res")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -132,5 +133,21 @@ cc_binary(
         "$(execpath //main/tools:tl_implib)",
         "/MANIFEST:NO",
     ],
+    visibility = ["//visibility:public"],
+)
+
+rsc_res(
+    name     = "analysis_res",
+    srcs     = glob(["source/analysis/*.src"]),
+    hdrs     = glob(["source/analysis/*.hrc"]),
+    includes = ["main/scaddins/source/analysis"],
+    visibility = ["//visibility:public"],
+)
+
+rsc_res(
+    name     = "date_res",
+    srcs     = glob(["source/datefunc/*.src"]),
+    hdrs     = glob(["source/datefunc/*.hrc"]),
+    includes = ["main/scaddins/source/datefunc"],
     visibility = ["//visibility:public"],
 )

@@ -1,0 +1,157 @@
+load("//build/rules:rsc_pipeline.bzl", "rename_file")
+
+filegroup(
+    name = "vcl_images",
+    srcs = glob(["vcl/res/**"]),
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "shared_images",
+    srcs = glob(["res/*.png", "res/*.bmp"], allow_empty = True),
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "minimizer_images",
+    srcs = glob(["minimizer/**"]),
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "presenter_images",
+    srcs = glob(["presenter/**"]),
+    visibility = ["//visibility:public"],
+)
+
+# editbrowsebox.src has `IMG_EBB_NEW;IMG_EBB_DELETED;IMG_EBB_CURRENTNEW;` on one
+# line (no spaces).  rscpp expands it to `3;4;5;`; rsc2 strips `;` and gets the
+# single string "345", which it treats as image ID 345 → looks for ed0345.png.
+# Provide a placeholder so rsc2 does not abort with ERR_NOIMAGE.
+rename_file(
+    name = "ed0345_png",
+    src  = "svtools/res/ed01.png",
+    out  = "ed0345.png",
+)
+rename_file(
+    name = "edh0345_png",
+    src  = "svtools/res/edh01.png",
+    out  = "edh0345.png",
+)
+
+filegroup(
+    name = "svtools_res_images",
+    srcs = glob(["svtools/res/**"]) + [":ed0345_png", ":edh0345_png"],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "framework_res_images",
+    srcs = glob(["framework/res/**"]),
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "basctl_res_images",
+    srcs = glob(["basctl/res/**"]),
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "chart2_res_images",
+    srcs = glob(["chart2/res/**"]),
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "formula_res_images",
+    srcs = glob(["formula/res/**"]),
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "fpicker_res_images",
+    srcs = glob(["fpicker/res/**"]),
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "reportdesign_res_images",
+    srcs = glob(["reportdesign/res/**"]),
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "sc_res_images",
+    srcs = glob(["sc/res/**"]),
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "sd_res_images",
+    srcs = glob(["sd/res/**", "sd/imglst/**"]),
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "sfx2_res_images",
+    srcs = glob(["sfx2/res/**"]),
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "starmath_res_images",
+    srcs = glob(["starmath/res/**"]),
+    visibility = ["//visibility:public"],
+)
+
+# float3d.src references these 4 images but they were removed from the source tree.
+# Provide placeholders so rsc2 does not abort with ERR_NOIMAGE.
+rename_file(name = "lightons_png",  src = "svx/res/3dlight.png",  out = "lightons.png")
+rename_file(name = "lightsel_png",  src = "svx/res/3dlight.png",  out = "lightsel.png")
+rename_file(name = "matedit_png",   src = "svx/res/3dgeo.png",    out = "matedit.png")
+rename_file(name = "matfavor_png",  src = "svx/res/3dgeo.png",    out = "matfavor.png")
+
+filegroup(
+    name = "svx_res_images",
+    srcs = glob(["svx/res/**"]) + [
+        ":lightons_png", ":lightsel_png", ":matedit_png", ":matfavor_png",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "sw_res_images",
+    srcs = glob(["sw/res/**", "sw/imglst/**"]),
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "xmlsecurity_res_images",
+    srcs = glob(["xmlsecurity/res/**"]),
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "extensions_res_images",
+    srcs = glob(["extensions/res/**"]),
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "desktop_res_images",
+    srcs = glob(["desktop/res/**", "res/commandimagelist/**"]),
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "dbaccess_res_images",
+    srcs = glob(["dbaccess/res/**"]),
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "database_images",
+    srcs = glob(["database/**"]),
+    visibility = ["//visibility:public"],
+)

@@ -1,4 +1,5 @@
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("//build/rules:rsc_pipeline.bzl", "rsc_res")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -352,4 +353,25 @@ filegroup(
     srcs = [":xmlsecurity"],
     output_group = "interface_library",
     visibility = ["//visibility:public"],
+)
+
+rsc_res(
+    name        = "xmlsecurity_res",
+    srcs        = glob(["source/**/*.src"]),
+    hdrs        = glob(["inc/**/*.hrc", "source/**/*.hrc"]) + [
+        "//main/svtools:svtools_hrc",
+        "//main/svl:svl_hrc",
+    ],
+    includes    = [
+        "main/xmlsecurity/inc",
+        "main/svtools/inc",
+        "main/svl/inc",
+    ],
+    images      = [
+        "//main/default_images:xmlsecurity_res_images",
+        "//main/default_images:svx_res_images",
+        "//main/default_images:shared_images",
+    ],
+    images_root = "main/default_images/xmlsecurity/res",
+    visibility  = ["//visibility:public"],
 )

@@ -123,5 +123,11 @@ exports_files(
     visibility = ["//main/i18npool/pool:__pkg__"],
 )
 
+filegroup(
+    name = "i18npool_lang_h",
+    srcs = glob(["inc/i18npool/*.h"]),
+    visibility = ["//visibility:public"],
+)
+
 # ── i18npool.uno.dll, i18nsearch.dll ─────────────────────────────
 # ICU-dependent targets — see main/i18npool/pool/BUILD.bazel.

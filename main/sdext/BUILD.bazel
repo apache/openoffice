@@ -1,4 +1,5 @@
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("//build/rules:rsc_pipeline.bzl", "rsc_res")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -193,4 +194,50 @@ filegroup(
     srcs = [":pdfimport"],
     output_group = "interface_library",
     visibility = ["//visibility:public"],
+)
+
+rsc_res(
+    name        = "minimizer_res",
+    srcs        = glob(["source/minimizer/*.src"]),
+    hdrs        = glob(["source/minimizer/*.hrc"]),
+    includes    = ["main/sdext/source/minimizer"],
+    images      = ["//main/default_images:minimizer_images"],
+    images_root = "main/default_images",
+    visibility  = ["//visibility:public"],
+)
+
+# PresenterScreen.hrc defines macros like:
+#   #define BACKGROUND  SDEXT_PRESENTER_RES_START + 1
+# Without parentheses these expand to "Bitmap 255 + 1 {" which rsc2 rejects.
+# Wrap every arithmetic expression in parens before compilation.
+genrule(
+    name = "presenter_hrc_patched",
+    srcs = ["source/presenter/PresenterScreen.hrc"],
+    outs = ["presenter_fixed/PresenterScreen.hrc"],
+    cmd_bat = "perl -pe \"s/(SDEXT_PRESENTER_RES_START\\s*\\+\\s*\\d+)/($$1)/g\" \"$(location source/presenter/PresenterScreen.hrc)\" > \"$(OUTS)\"",
+)
+
+# PresenterScreen.src has single-line Bitmap declarations:
+#   Bitmap NAME{ File = "path"; };
+# rsc2's PreprocessSrsFile() reads the .srs line-by-line and replaces any
+# line containing "File =" (with one '=' sign) with "File = resolved_path".
+# A single-line declaration has CLASSNAME+ID on the same line as "File =",
+# so the entire Bitmap block gets replaced by a bare "File = ...;" leaving
+# the parser without the CLASSNAME context.  Fix: split to multi-line so
+# "File = ..." appears on its own line inside the { } block.
+genrule(
+    name = "presenter_src_copy",
+    srcs = ["source/presenter/PresenterScreen.src"],
+    outs = ["presenter_fixed/PresenterScreen.src"],
+    cmd_bat = "perl -pe \"s{^(Bitmap\\s+\\w+)\\s*\\{\\s*(File\\s*=\\s*[^;]+;)\\s*\\};\\s*$$}{$$1\\n\\{\\n$$2\\n\\};}g\" \"$(location source/presenter/PresenterScreen.src)\" > \"$(OUTS)\"",
+)
+
+rsc_res(
+    name        = "presenter_res",
+    srcs        = [":presenter_src_copy"],
+    hdrs        = [":presenter_hrc_patched"],
+    includes    = ["main/sdext/source/presenter"],
+    images      = ["//main/default_images:presenter_images"],
+    images_root = "main/default_images",
+    visibility  = ["//visibility:public"],
 )

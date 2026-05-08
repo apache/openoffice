@@ -1,4 +1,5 @@
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("//build/rules:rsc_pipeline.bzl", "rsc_res")
 load("//build/rules:sdi_target.bzl", "sdi_target")
 
 _DEFINES = [
@@ -167,4 +168,29 @@ filegroup(
     srcs = [":basctl"],
     output_group = "interface_library",
     visibility = ["//visibility:public"],
+)
+
+rsc_res(
+    name        = "basctl_res",
+    srcs        = glob(["source/**/*.src"]),
+    hdrs        = glob(["inc/**/*.hrc", "source/**/*.hrc"]) + [
+        "//main/sfx2:sfx2_inc_hrc",
+        "//main/svx:svx_inc_hrc",
+        "//main/svl:svl_hrc",
+        "//main/svtools:svtools_hrc",
+        "//main/editeng:editeng_inc_hrc",
+    ],
+    includes    = [
+        "main/basctl/inc",
+        "main/basctl/source/inc",
+        "main/sfx2/inc",
+        "main/sfx2/inc/sfx2",
+        "main/svx/inc",
+        "main/svl/inc",
+        "main/svtools/inc",
+        "main/editeng/inc",
+    ],
+    images      = ["//main/default_images:basctl_res_images"],
+    images_root = "main/default_images/basctl/res",
+    visibility  = ["//visibility:public"],
 )

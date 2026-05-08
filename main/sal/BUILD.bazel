@@ -169,3 +169,9 @@ filegroup(
     output_group = "interface_library",
     visibility = ["//visibility:public"],
 )
+
+filegroup(
+    name = "sal_inc_hdrs",
+    srcs = glob(["inc/**/*.h", "inc/**/*.hxx"]),
+    visibility = ["//visibility:public"],
+)

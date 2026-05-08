@@ -1,4 +1,5 @@
 load("@rules_cc//cc:defs.bzl", "cc_binary")
+load("//build/rules:rsc_pipeline.bzl", "rsc_res")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -328,4 +329,24 @@ filegroup(
     srcs = [":fpicker"],
     output_group = "interface_library",
     visibility = ["//visibility:public"],
+)
+
+rsc_res(
+    name        = "fpicker_res",
+    srcs        = glob(["source/office/*.src"]),
+    hdrs        = glob(["source/office/*.hrc"]) + [
+        "//main/svtools:svtools_hrc",
+        "//main/svl:svl_hrc",
+    ],
+    includes    = [
+        "main/fpicker/source/office",
+        "main/svtools/inc",
+        "main/svl/inc",
+    ],
+    images      = [
+        "//main/default_images:fpicker_res_images",
+        "//main/default_images:shared_images",
+    ],
+    images_root = "main/default_images/fpicker/res",
+    visibility  = ["//visibility:public"],
 )

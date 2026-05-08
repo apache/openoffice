@@ -1,4 +1,5 @@
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("//build/rules:rsc_pipeline.bzl", "rsc_res")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -54,5 +55,13 @@ cc_binary(
         "$(execpath @coinmp//:coinmp_implib)",
         "/MANIFEST:NO",
     ],
+    visibility = ["//visibility:public"],
+)
+
+rsc_res(
+    name     = "sccomp_res",
+    srcs     = glob(["source/solver/*.src"]),
+    hdrs     = glob(["source/solver/*.hrc"]),
+    includes = ["main/sccomp/source/solver"],
     visibility = ["//visibility:public"],
 )

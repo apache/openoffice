@@ -1,4 +1,5 @@
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("//build/rules:rsc_pipeline.bzl", "rsc_res")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -131,5 +132,19 @@ filegroup(
     name = "editeng_implib",
     srcs = [":editeng"],
     output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "editeng_inc_hrc",
+    srcs = glob(["inc/editeng/**/*.hrc", "inc/editeng/**/*.hxx", "inc/**/*.hrc"]),
+    visibility = ["//visibility:public"],
+)
+
+rsc_res(
+    name     = "editeng_res",
+    srcs     = glob(["source/**/*.src"]),
+    hdrs     = glob(["inc/**/*.hrc"]) + ["//main/svl:svl_hrc"],
+    includes = ["main/editeng/inc", "main/svl/inc"],
     visibility = ["//visibility:public"],
 )
