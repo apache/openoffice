@@ -303,3 +303,6 @@ rsc_res(
     includes = ["main/scripting/source/runtimemgr"],
     visibility = ["//visibility:public"],
 )
+
+exports_files(glob(["**/*.component"]))
+

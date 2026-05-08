@@ -65,3 +65,6 @@ rsc_res(
     includes = ["main/sccomp/source/solver"],
     visibility = ["//visibility:public"],
 )
+
+exports_files(glob(["**/*.component"]))
+

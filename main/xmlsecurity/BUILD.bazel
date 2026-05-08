@@ -375,3 +375,6 @@ rsc_res(
     images_root = "main/default_images/xmlsecurity/res",
     visibility  = ["//visibility:public"],
 )
+
+exports_files(glob(["**/*.component"]))
+

@@ -409,3 +409,6 @@ cc_binary(
     linkopts = ["kernel32.lib"],
     visibility = ["//visibility:public"],
 )
+
+exports_files(glob(["**/*.component"]))
+

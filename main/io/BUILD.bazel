@@ -136,3 +136,6 @@ cc_binary(
     linkopts = _LINKOPTS,
     visibility = ["//visibility:public"],
 )
+
+exports_files(glob(["**/*.component"]))
+

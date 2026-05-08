@@ -172,3 +172,6 @@ rsc_res(
     includes = ["main/accessibility/inc"],
     visibility = ["//visibility:public"],
 )
+
+exports_files(glob(["**/*.component"]))
+

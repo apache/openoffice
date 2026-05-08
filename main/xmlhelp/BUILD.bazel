@@ -1,0 +1,6 @@
+# main/xmlhelp — XML help runtime (deferred full migration)
+# Minimal BUILD.bazel to expose .component files for postprocess/services.rdb.
+
+exports_files(glob([
+    "**/*.component",
+]))

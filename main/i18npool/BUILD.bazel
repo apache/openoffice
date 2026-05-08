@@ -131,3 +131,6 @@ filegroup(
 
 # ── i18npool.uno.dll, i18nsearch.dll ─────────────────────────────
 # ICU-dependent targets — see main/i18npool/pool/BUILD.bazel.
+
+exports_files(glob(["**/*.component"]))
+

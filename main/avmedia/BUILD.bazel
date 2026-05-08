@@ -180,3 +180,6 @@ rsc_res(
     includes = ["main/avmedia/source"],
     visibility = ["//visibility:public"],
 )
+
+exports_files(glob(["**/*.component"]))
+

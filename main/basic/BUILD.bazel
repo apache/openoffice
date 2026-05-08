@@ -126,3 +126,6 @@ rsc_res(
     includes = ["main/basic/inc", "main/tools/inc", "main/svtools/inc", "main/svl/inc"],
     visibility = ["//visibility:public"],
 )
+
+exports_files(glob(["**/*.component"]))
+

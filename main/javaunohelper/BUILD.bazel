@@ -1,6 +1,8 @@
 load("@rules_cc//cc:defs.bzl", "cc_binary")
 load("@rules_java//java:defs.bzl", "java_library")
 
+exports_files(["util/juh.component"])
+
 _COPTS = [
     "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs",
     "/EHsc",

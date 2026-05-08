@@ -454,3 +454,6 @@ filegroup(
     output_group = "interface_library",
     visibility = ["//visibility:public"],
 )
+
+exports_files(glob(["**/*.component"]))
+

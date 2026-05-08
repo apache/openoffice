@@ -224,3 +224,6 @@ rsc_res(
     images_root = "main/default_images/sfx2/res",
     visibility  = ["//visibility:public"],
 )
+
+exports_files(glob(["**/*.component"]))
+

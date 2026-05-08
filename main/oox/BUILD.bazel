@@ -276,3 +276,6 @@ filegroup(
     srcs = [":gen_namespaces_indexed"],
     visibility = ["//visibility:public"],
 )
+
+exports_files(glob(["**/*.component"]))
+

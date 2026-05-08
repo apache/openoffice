@@ -950,3 +950,12 @@ alias(
     actual     = ":dbui_res",
     visibility = ["//visibility:public"],
 )
+
+filegroup(
+    name       = "uiconfig_files",
+    srcs       = glob(["uiconfig/**/*.xml"]),
+    visibility = ["//main/postprocess:__pkg__"],
+)
+
+exports_files(glob(["**/*.component"]))
+

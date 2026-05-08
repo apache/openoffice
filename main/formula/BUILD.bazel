@@ -178,3 +178,6 @@ rsc_res(
     images_root = "main/default_images/formula/res",
     visibility  = ["//visibility:public"],
 )
+
+exports_files(glob(["**/*.component"]))
+

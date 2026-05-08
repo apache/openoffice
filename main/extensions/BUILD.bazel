@@ -1,0 +1,13 @@
+# main/extensions — UNO extension infrastructure (deferred full migration)
+# Minimal BUILD.bazel to expose .component files for postprocess/services.rdb
+# and the bibliography UI config for uiconfig.zip.
+
+exports_files(glob([
+    "**/*.component",
+]))
+
+filegroup(
+    name = "uiconfig_files",
+    srcs = glob(["source/bibliography/uiconfig/**/*.xml"]),
+    visibility = ["//main/postprocess:__pkg__"],
+)

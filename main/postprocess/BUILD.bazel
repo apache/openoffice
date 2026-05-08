@@ -1,0 +1,413 @@
+# main/postprocess — post-build registry and configuration packaging
+#
+# Outputs
+# ───────
+#   services_rdb      → services.rdb  + services.input
+#   ooo_services_rdb  → ooo-services.rdb + ooo-services.input
+#   uiconfig_zip      → uiconfig.zip
+#
+# How to build
+# ────────────
+#   bazel build //main/postprocess:services_rdb
+#   bazel build //main/postprocess:ooo_services_rdb
+#   bazel build //main/postprocess:uiconfig_zip
+#   bazel build //main/postprocess:all          # all three
+#
+# Deferred
+# ────────
+#   packregistry (.xcd files) — requires spool-generated .xcu files from
+#   officecfg module-extraction and filter/FCFGMerge pipelines.
+#   Implement after those pipelines are in place.
+
+load(":postprocess.bzl", "services_rdb", "uiconfig_zip")
+
+# ── Component files — Windows build ──────────────────────────────────────────
+# Mirrors packcomponents/makefile.mk my_components for OS=WNT.
+# Java-only components (ScriptFramework, hsqldb, jdbc, postgresql, wizards,
+# XMergeBridge, LuceneHelpWrapper, XSLTValidate) are omitted — Java build
+# is deferred.  ENABLE_ONLINE_UPDATE components (updchk.uno) are included.
+
+_SERVICES_COMPONENTS = [
+    # ── stoc / cppuhelper (UNO core runtime) ─────────────────────────────
+    "//main/stoc:util/bootstrap.component",
+    "//main/stoc:source/inspect/introspection.component",
+    "//main/stoc:source/invocation_adapterfactory/invocadapt.component",
+    "//main/stoc:source/invocation/invocation.component",
+    "//main/stoc:source/javaloader/javaloader.component",
+    "//main/stoc:source/javavm/javavm.component",
+    "//main/stoc:source/namingservice/namingservice.component",
+    "//main/stoc:source/proxy_factory/proxyfac.component",
+    "//main/stoc:source/corereflection/reflection.component",
+    "//main/stoc:util/stocservices.component",
+
+    # ── Extensions (abpilot, bibliography, dbpilots, …) ──────────────────
+    "//main/extensions:source/abpilot/abp.component",
+    "//main/extensions:source/bibliography/bib.component",
+    "//main/extensions:source/dbpilots/dbp.component",
+    "//main/extensions:source/logging/log.component",
+    "//main/extensions:source/oooimprovecore/oooimprovecore.component",
+    "//main/extensions:source/preload/preload.component",
+    "//main/extensions:source/propctrlr/pcr.component",
+    "//main/extensions:source/resource/res.component",
+    "//main/extensions:source/scanner/scn.component",
+    "//main/extensions:source/update/check/updchk.uno.component",
+    "//main/extensions:source/update/feed/updatefeed.component",
+    "//main/extensions:source/update/ui/updchk.component",
+    "//main/extensions:source/xmlextract/xmx.component",
+    "//main/extensions:source/config/ldap/ldapbe2.component",
+
+    # ── scripting/basic provider ──────────────────────────────────────────
+    "//main/scripting:source/basprov/basprov.component",
+
+    # ── chart2 ────────────────────────────────────────────────────────────
+    "//main/chart2:source/controller/chartcontroller.component",
+    "//main/chart2:source/model/chartmodel.component",
+    "//main/chart2:source/tools/charttools.component",
+    "//main/chart2:source/view/chartview.component",
+
+    # ── UnoControls ───────────────────────────────────────────────────────
+    "//main/UnoControls:util/ctl.component",
+
+    # ── animations ───────────────────────────────────────────────────────
+    "//main/animations:source/animcore/animcore.component",
+
+    # ── avmedia (generic + Windows) ──────────────────────────────────────
+    "//main/avmedia:util/avmedia.component",
+    "//main/avmedia:source/win/avmediawin.component",
+
+    # ── basctl (Basic IDE) ────────────────────────────────────────────────
+    "//main/basctl:util/basctl.component",
+
+    # ── basic / StarBasic ─────────────────────────────────────────────────
+    "//main/basic:util/sb.component",
+
+    # ── binaryurp ────────────────────────────────────────────────────────
+    "//main/binaryurp:source/binaryurp.component",
+
+    # ── canvas ───────────────────────────────────────────────────────────
+    "//main/canvas:source/factory/canvasfactory.component",
+    "//main/canvas:source/simplecanvas/simplecanvas.component",
+    "//main/canvas:source/vcl/vclcanvas.component",
+    "//main/canvas:source/directx/directx9canvas.component",
+    "//main/canvas:source/directx/gdipluscanvas.component",
+
+    # ── comphelper ───────────────────────────────────────────────────────
+    "//main/comphelper:util/comphelp.component",
+
+    # ── configmgr ────────────────────────────────────────────────────────
+    "//main/configmgr:source/configmgr.component",
+
+    # ── connectivity ─────────────────────────────────────────────────────
+    "//main/connectivity:source/drivers/calc/calc.component",
+    "//main/connectivity:source/cpool/dbpool2.component",
+    "//main/connectivity:source/dbtools/dbtools.component",
+    "//main/connectivity:source/drivers/adabas/adabas.component",
+    "//main/connectivity:source/drivers/ado/ado.component",
+    "//main/connectivity:source/drivers/dbase/dbase.component",
+    "//main/connectivity:source/drivers/flat/flat.component",
+    "//main/connectivity:source/drivers/mysql/mysql.component",
+    "//main/connectivity:source/drivers/odbc/odbc.component",
+    "//main/connectivity:source/manager/sdbc2.component",
+
+    # ── cui ───────────────────────────────────────────────────────────────
+    "//main/cui:util/cui.component",
+
+    # ── dbaccess ─────────────────────────────────────────────────────────
+    "//main/dbaccess:source/ext/adabas/adabasui.component",
+    "//main/dbaccess:source/ext/macromigration/dbmm.component",
+    "//main/dbaccess:source/filter/xml/dbaxml.component",
+    "//main/dbaccess:util/dba.component",
+    "//main/dbaccess:util/dbu.component",
+    "//main/dbaccess:util/sdbt.component",
+
+    # ── desktop (deployment, migration, splash, …) ────────────────────────
+    "//main/desktop:source/deployment/deployment.component",
+    "//main/desktop:source/deployment/gui/deploymentgui.component",
+    "//main/desktop:source/migration/services/migrationoo2.component",
+    "//main/desktop:source/offacc/offacc.component",
+    "//main/desktop:source/splash/spl.component",
+
+    # ── drawinglayer ─────────────────────────────────────────────────────
+    "//main/drawinglayer:drawinglayer.component",
+
+    # ── dtrans (Windows clipboard / DnD) ─────────────────────────────────
+    "//main/dtrans:util/mcnttype.component",
+    "//main/dtrans:source/generic/dtrans.component",
+    "//main/dtrans:util/dnd.component",
+    "//main/dtrans:util/ftransl.component",
+    "//main/dtrans:util/sysdtrans.component",
+
+    # ── embeddedobj ──────────────────────────────────────────────────────
+    "//main/embeddedobj:util/embobj.component",
+    "//main/embeddedobj:source/msole/emboleobj.windows.component",
+
+    # ── embedserv (ATL — skipped when ATL not available) ─────────────────
+    "//main/embedserv:util/emser.component",
+
+    # ── eventattacher ────────────────────────────────────────────────────
+    "//main/eventattacher:source/evtatt.component",
+
+    # ── fileaccess ───────────────────────────────────────────────────────
+    "//main/fileaccess:util/fileacc.component",
+
+    # ── filter ───────────────────────────────────────────────────────────
+    "//main/filter:source/config/cache/filterconfig1.component",
+    "//main/filter:source/flash/flash.component",
+    "//main/filter:source/msfilter/msfilter.component",
+    "//main/filter:source/pdf/pdffilter.component",
+    "//main/filter:source/placeware/placeware.component",
+    "//main/filter:source/svg/svgfilter.component",
+    "//main/filter:source/t602/t602filter.component",
+    "//main/filter:source/xmlfilteradaptor/xmlfa.component",
+    "//main/filter:source/xmlfilterdetect/xmlfd.component",
+    "//main/filter:source/xsltdialog/xsltdlg.component",
+    "//main/filter:source/xsltfilter/xsltfilter.component",
+    "//main/filter:source/xsltfilter/XSLTFilter.jar.component",
+
+    # ── forms ────────────────────────────────────────────────────────────
+    "//main/forms:util/frm.component",
+
+    # ── formula ──────────────────────────────────────────────────────────
+    "//main/formula:util/for.component",
+
+    # ── fpicker ──────────────────────────────────────────────────────────
+    "//main/fpicker:source/generic/fpicker.component",
+    "//main/fpicker:source/office/fps_office.component",
+    "//main/fpicker:util/fop.component",
+    "//main/fpicker:util/fps.component",
+
+    # ── framework ────────────────────────────────────────────────────────
+    "//main/framework:util/fwk.component",
+    "//main/framework:util/fwl.component",
+    "//main/framework:util/fwm.component",
+
+    # ── i18npool ─────────────────────────────────────────────────────────
+    "//main/i18npool:util/i18npool.component",
+    "//main/i18npool:source/search/i18nsearch.component",
+
+    # ── io ───────────────────────────────────────────────────────────────
+    "//main/io:source/acceptor/acceptor.component",
+    "//main/io:source/connector/connector.component",
+    "//main/io:source/stm/streams.component",
+    "//main/io:source/TextInputStream/textinstream.component",
+    "//main/io:source/TextOutputStream/textoutstream.component",
+
+    # ── javaunohelper ────────────────────────────────────────────────────
+    "//main/javaunohelper:util/juh.component",
+
+    # ── lingucomponent ───────────────────────────────────────────────────
+    "//main/lingucomponent:source/languageguessing/guesslang.component",
+    "//main/lingucomponent:source/thesaurus/libnth/lnth.component",
+    "//main/lingucomponent:source/hyphenator/altlinuxhyph/hyphen/hyphen.component",
+    "//main/lingucomponent:source/spellcheck/spell/spell.component",
+
+    # ── linguistic ───────────────────────────────────────────────────────
+    "//main/linguistic:source/lng.component",
+
+    # ── oox ──────────────────────────────────────────────────────────────
+    "//main/oox:util/oox.component",
+
+    # ── package ──────────────────────────────────────────────────────────
+    "//main/package:source/xstor/xstor.component",
+    "//main/package:util/package2.component",
+
+    # ── pyuno ────────────────────────────────────────────────────────────
+    "//main/pyuno:source/loader/pythonloader.component",
+
+    # ── remotebridges ────────────────────────────────────────────────────
+    "//main/remotebridges:source/unourl_resolver/uuresolver.component",
+
+    # ── reportdesign ─────────────────────────────────────────────────────
+    "//main/reportdesign:util/rpt.component",
+    "//main/reportdesign:util/rptui.component",
+    "//main/reportdesign:util/rptxml.component",
+
+    # ── sax ──────────────────────────────────────────────────────────────
+    "//main/sax:source/expatwrap/expwrap.component",
+    "//main/sax:source/fastparser/fastsax.component",
+
+    # ── sc (Calc) ─────────────────────────────────────────────────────────
+    "//main/sc:util/sc.component",
+    "//main/sc:util/scd.component",
+    "//main/sc:util/vbaobj.component",
+
+    # ── scaddins ─────────────────────────────────────────────────────────
+    "//main/scaddins:source/analysis/analysis.component",
+    "//main/scaddins:source/datefunc/date.component",
+
+    # ── sccomp (COIN-OR solver) ───────────────────────────────────────────
+    "//main/sccomp:source/solver/solver.component",
+
+    # ── scripting ────────────────────────────────────────────────────────
+    "//main/scripting:source/dlgprov/dlgprov.component",
+    "//main/scripting:source/protocolhandler/protocolhandler.component",
+    "//main/scripting:source/pyprov/pythonscript.component",
+    "//main/scripting:source/stringresource/stringresource.component",
+    "//main/scripting:source/vbaevents/vbaevents.component",
+    "//main/scripting:util/scriptframe.component",
+
+    # ── sd (Impress/Draw) ─────────────────────────────────────────────────
+    "//main/sd:util/sd.component",
+    "//main/sd:util/sdd.component",
+
+    # ── sdext (Minimizer, PresenterScreen) ───────────────────────────────
+    "//main/sdext:source/minimizer/PresentationMinimizer.component",
+    "//main/sdext:source/presenter/PresenterScreen.component",
+
+    # ── sfx2 ─────────────────────────────────────────────────────────────
+    "//main/sfx2:util/sfx.component",
+
+    # ── shell (localbe, wininetbe, syssh, sysmail — Windows) ─────────────
+    "//main/shell:source/backends/localebe/localebe1.component",
+    "//main/shell:source/backends/wininetbe/wininetbe1.component",
+    "//main/shell:source/win32/syssh.component",
+    "//main/shell:source/win32/sysmail/sysmail.component",
+
+    # ── slideshow ────────────────────────────────────────────────────────
+    "//main/slideshow:util/slideshow.component",
+
+    # ── sot ──────────────────────────────────────────────────────────────
+    "//main/sot:util/sot.component",
+
+    # ── starmath (Math formula editor) ───────────────────────────────────
+    "//main/starmath:util/sm.component",
+    "//main/starmath:util/smd.component",
+
+    # ── svgio ────────────────────────────────────────────────────────────
+    "//main/svgio:svgio.component",
+
+    # ── svl ──────────────────────────────────────────────────────────────
+    "//main/svl:source/fsstor/fsstorage.component",
+    "//main/svl:source/passwordcontainer/passwordcontainer.component",
+    "//main/svl:util/svl.component",
+
+    # ── svtools ──────────────────────────────────────────────────────────
+    "//main/svtools:source/hatchwindow/hatchwindowfactory.component",
+    "//main/svtools:util/svt.component",
+
+    # ── svx ──────────────────────────────────────────────────────────────
+    "//main/svx:util/svx.component",
+    "//main/svx:util/svxcore.component",
+    "//main/svx:util/textconversiondlgs.component",
+
+    # ── sw (Writer) ───────────────────────────────────────────────────────
+    "//main/sw:util/msword.component",
+    "//main/sw:util/sw.component",
+    "//main/sw:util/swd.component",
+    "//main/sw:util/vbaswobj.component",
+
+    # ── toolkit ──────────────────────────────────────────────────────────
+    "//main/toolkit:util/ootk.component",
+
+    # ── ucb ──────────────────────────────────────────────────────────────
+    "//main/ucb:source/cacher/cached1.component",
+    "//main/ucb:source/core/ucb1.component",
+    "//main/ucb:source/sorter/srtrs1.component",
+    "//main/ucb:source/ucp/expand/ucpexpand1.component",
+    "//main/ucb:source/ucp/ext/ucpext.component",
+    "//main/ucb:source/ucp/file/ucpfile1.component",
+    "//main/ucb:source/ucp/ftp/ucpftp1.component",
+    "//main/ucb:source/ucp/hierarchy/ucphier1.component",
+    "//main/ucb:source/ucp/package/ucppkg1.component",
+    "//main/ucb:source/ucp/tdoc/ucptdoc1.component",
+    "//main/ucb:source/ucp/webdav/ucpdav1.component",
+
+    # ── unotools ─────────────────────────────────────────────────────────
+    "//main/unotools:util/utl.component",
+
+    # ── unoxml ───────────────────────────────────────────────────────────
+    "//main/unoxml:source/rdf/unordf.component",
+    "//main/unoxml:source/service/unoxml.component",
+
+    # ── uui ──────────────────────────────────────────────────────────────
+    "//main/uui:util/uui.component",
+
+    # ── vbahelper ────────────────────────────────────────────────────────
+    "//main/vbahelper:util/msforms.component",
+
+    # ── vcl (Windows) ────────────────────────────────────────────────────
+    "//main/vcl:vcl.windows.component",
+
+    # ── winaccessibility ─────────────────────────────────────────────────
+    "//main/winaccessibility:source/service/winaccessibility.component",
+
+    # ── writerfilter ─────────────────────────────────────────────────────
+    "//main/writerfilter:util/writerfilter.component",
+
+    # ── xmlhelp ──────────────────────────────────────────────────────────
+    "//main/xmlhelp:source/treeview/tvhlp1.component",
+    "//main/xmlhelp:util/ucpchelp1.component",
+
+    # ── xmloff ───────────────────────────────────────────────────────────
+    "//main/xmloff:source/transform/xof.component",
+    "//main/xmloff:util/xo.component",
+
+    # ── xmlscript ────────────────────────────────────────────────────────
+    "//main/xmlscript:util/xcr.component",
+
+    # ── xmlsecurity (NSS — Windows variant) ──────────────────────────────
+    "//main/xmlsecurity:util/xmlsecurity.component",
+    "//main/xmlsecurity:util/xsec_fw.component",
+    "//main/xmlsecurity:util/xsec_xmlsec.windows.component",
+
+    # ── Windows-only: extensions/ole (ATL) ───────────────────────────────
+    "//main/extensions:source/ole/oleautobridge.component",
+
+    # ── accessibility (Java UNO bridge — Windows) ─────────────────────────
+    "//main/accessibility:java/java_uno_accessbridge/java_uno_accessbridge.component",
+]
+
+# ooo-services.rdb — only mailmerge (loaded separately by configmgr)
+_OOO_SERVICES_COMPONENTS = [
+    "//main/scripting:source/pyprov/mailmerge.component",
+]
+
+# ── All uiconfig XML files (collected from every module) ─────────────────────
+
+_UICONFIG_SRCS = [
+    "//main/basctl:uiconfig_files",
+    "//main/chart2:uiconfig_files",
+    "//main/dbaccess:uiconfig_files",
+    "//main/extensions:uiconfig_files",
+    "//main/framework:uiconfig_files",
+    "//main/reportdesign:uiconfig_files",
+    "//main/sc:uiconfig_files",
+    "//main/sd:uiconfig_files",
+    "//main/starmath:uiconfig_files",
+    "//main/svx:uiconfig_files",
+    "//main/sw:uiconfig_files",
+    "//main/toolkit:uiconfig_files",
+]
+
+# ── Targets ───────────────────────────────────────────────────────────────────
+
+services_rdb(
+    name       = "services_rdb",
+    components = _SERVICES_COMPONENTS,
+    xslt       = "//main/solenv/bin:packcomponents.xslt",
+    visibility = ["//visibility:public"],
+)
+
+services_rdb(
+    name       = "ooo_services_rdb",
+    components = _OOO_SERVICES_COMPONENTS,
+    xslt       = "//main/solenv/bin:packcomponents.xslt",
+    visibility = ["//visibility:public"],
+)
+
+uiconfig_zip(
+    name       = "uiconfig_zip",
+    srcs       = _UICONFIG_SRCS,
+    visibility = ["//visibility:public"],
+)
+
+# Convenience: build all postprocess outputs in one shot.
+filegroup(
+    name = "all",
+    srcs = [
+        ":services_rdb",
+        ":ooo_services_rdb",
+        ":uiconfig_zip",
+    ],
+    visibility = ["//visibility:public"],
+)

@@ -181,3 +181,6 @@ rsc_res(
     images_root = "main/default_images/svx/res",
     visibility = ["//visibility:public"],
 )
+
+exports_files(glob(["**/*.component"]))
+

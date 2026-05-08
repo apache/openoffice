@@ -151,3 +151,6 @@ rsc_res(
     includes = ["main/scaddins/source/datefunc"],
     visibility = ["//visibility:public"],
 )
+
+exports_files(glob(["**/*.component"]))
+

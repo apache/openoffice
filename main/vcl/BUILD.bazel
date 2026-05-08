@@ -158,3 +158,6 @@ rsc_res(
     ],
     visibility = ["//visibility:public"],
 )
+
+exports_files(glob(["**/*.component"]))
+

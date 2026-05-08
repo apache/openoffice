@@ -152,3 +152,6 @@ cc_binary(
     ],
     visibility = ["//visibility:public"],
 )
+
+exports_files(glob(["**/*.component"]))
+

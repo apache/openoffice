@@ -1,0 +1,7 @@
+# main/solenv/bin — build-system XSLT scripts
+# Expose the pack*.xslt files so postprocess (and future rules) can reference them.
+
+exports_files([
+    "packcomponents.xslt",
+    "packregistry.xslt",
+])

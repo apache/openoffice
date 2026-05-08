@@ -175,7 +175,7 @@ instsetoo_native ⬜ (native Windows installer build)
 setup_native  ⬜  (Windows setup UI)
 packimages    ⬜  (image packaging for install)
 sysui         ⬜  (system UI integration — mime types, desktop entries)
-postprocess   ⬜  (post-build registration, rdb merging)
+postprocess   ✅  (services.rdb, ooo_services_rdb, uiconfig.zip; xcd deferred) — main/postprocess/readme.md
 solenv        ⬜  (legacy build environment, mostly migrated away)
 ── Deferred: Docs/tests/dev tooling ─────────────────────────────────────
 autodoc       ⬜  (API documentation generator)
