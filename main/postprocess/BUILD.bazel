@@ -19,7 +19,8 @@
 #   officecfg module-extraction and filter/FCFGMerge pipelines.
 #   Implement after those pipelines are in place.
 
-load(":postprocess.bzl", "services_rdb", "uiconfig_zip")
+load(":postprocess.bzl", "services_rdb", "uiconfig_zip", "pack_registry",
+     "oc_xcs", "oc_xcu", "oc_mod", "fcfg")
 
 # ── Component files — Windows build ──────────────────────────────────────────
 # Mirrors packcomponents/makefile.mk my_components for OS=WNT.
@@ -408,6 +409,545 @@ filegroup(
         ":services_rdb",
         ":ooo_services_rdb",
         ":uiconfig_zip",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── XCD registry packages ─────────────────────────────────────────────────────
+# Each pack_registry target corresponds to one .xcd file produced by the old
+# packregistry make target.  XCS files must come first (configmgr requirement).
+#
+# File categories:
+#   XCS     : static schema files from //main/officecfg:registry/schema/...
+#   XCU-raw : static data files  from //main/officecfg:registry/data/...
+#   XCU-mod : module extractions from //main/officecfg:spool_module/...
+#   XCU-fcfg: FCFGMerge outputs  from //main/filter/source/config/fragments:...
+#   XCU-da  : DataAccess XCU     from //main/connectivity:source/drivers/...
+#   XCU-ext : static from other modules (sdext, extensions, lingucomponent)
+
+_XSLT = "//main/solenv/bin:packregistry.xslt"
+
+# ── base.xcd ──────────────────────────────────────────────────────────────────
+
+pack_registry(
+    name = "base_xcd",
+    xcs  = [],
+    xcu  = [
+        fcfg("fcfg_database_types"),
+        fcfg("fcfg_database_filters"),
+        fcfg("fcfg_database_others"),
+        oc_mod("Office/Common.xcu",  "base"),
+        oc_mod("Setup.xcu",          "base"),
+    ],
+    xslt = _XSLT,
+    visibility = ["//visibility:public"],
+)
+
+# ── calc.xcd ──────────────────────────────────────────────────────────────────
+
+pack_registry(
+    name = "calc_xcd",
+    xcs  = [
+        oc_xcs("Office/UI/CalcCommands.xcs"),
+        oc_xcs("Office/UI/CalcWindowState.xcs"),
+    ],
+    xcu  = [
+        oc_xcu("Office/UI/CalcCommands.xcu"),
+        oc_xcu("Office/UI/CalcWindowState.xcu"),
+        "//main/connectivity:source/drivers/calc/calc.xcu",
+        fcfg("fcfg_calc_types"),
+        fcfg("fcfg_calc_filters"),
+        oc_mod("Office/Common.xcu",    "calc"),
+        oc_mod("Office/Embedding.xcu", "calc"),
+        oc_mod("Setup.xcu",            "calc"),
+    ],
+    xslt = _XSLT,
+    visibility = ["//visibility:public"],
+)
+
+# ── cjk.xcd ───────────────────────────────────────────────────────────────────
+
+pack_registry(
+    name = "cjk_xcd",
+    xcs  = [],
+    xcu  = [
+        oc_mod("Office/Common.xcu",  "cjk"),
+        oc_mod("Office/Writer.xcu",  "cjk"),
+    ],
+    xslt = _XSLT,
+    visibility = ["//visibility:public"],
+)
+
+# ── ctl.xcd ───────────────────────────────────────────────────────────────────
+
+pack_registry(
+    name = "ctl_xcd",
+    xcs  = [],
+    xcu  = [
+        oc_mod("Office/Common.xcu", "ctl"),
+    ],
+    xslt = _XSLT,
+    visibility = ["//visibility:public"],
+)
+
+# ── draw.xcd ──────────────────────────────────────────────────────────────────
+
+pack_registry(
+    name = "draw_xcd",
+    xcs  = [
+        oc_xcs("Office/UI/DrawWindowState.xcs"),
+    ],
+    xcu  = [
+        oc_xcu("Office/UI/DrawWindowState.xcu"),
+        fcfg("fcfg_draw_types"),
+        fcfg("fcfg_draw_filters"),
+        oc_mod("Office/Common.xcu",    "draw"),
+        oc_mod("Office/Embedding.xcu", "draw"),
+        oc_mod("Setup.xcu",            "draw"),
+    ],
+    xslt = _XSLT,
+    visibility = ["//visibility:public"],
+)
+
+# ── graphicfilter.xcd ─────────────────────────────────────────────────────────
+
+pack_registry(
+    name = "graphicfilter_xcd",
+    xcs  = [],
+    xcu  = [
+        fcfg("fcfg_drawgraphics_types"),
+        fcfg("fcfg_drawgraphics_filters"),
+        fcfg("fcfg_impressgraphics_types"),
+        fcfg("fcfg_impressgraphics_filters"),
+    ],
+    xslt = _XSLT,
+    visibility = ["//visibility:public"],
+)
+
+# ── impress.xcd ───────────────────────────────────────────────────────────────
+
+pack_registry(
+    name = "impress_xcd",
+    xcs  = [
+        oc_xcs("Office/UI/Effects.xcs"),
+        oc_xcs("Office/UI/ImpressWindowState.xcs"),
+        oc_xcs("Office/PresenterScreen.xcs"),
+    ],
+    xcu  = [
+        oc_xcu("Office/UI/Effects.xcu"),
+        oc_xcu("Office/UI/ImpressWindowState.xcu"),
+        oc_xcu("Office/PresenterScreen.xcu"),
+        fcfg("fcfg_impress_types"),
+        fcfg("fcfg_impress_filters"),
+        oc_mod("Office/Common.xcu",    "impress"),
+        oc_mod("Office/Embedding.xcu", "impress"),
+        "//main/sdext:source/presenter/Jobs.xcu",
+        "//main/sdext:source/presenter/ProtocolHandler.xcu",
+        oc_mod("Setup.xcu",            "impress"),
+    ],
+    xslt = _XSLT,
+    visibility = ["//visibility:public"],
+)
+
+# ── korea.xcd ─────────────────────────────────────────────────────────────────
+
+pack_registry(
+    name = "korea_xcd",
+    xcs  = [],
+    xcu  = [
+        oc_mod("Office/Common.xcu", "korea"),
+    ],
+    xslt = _XSLT,
+    visibility = ["//visibility:public"],
+)
+
+# ── lingucomponent.xcd ────────────────────────────────────────────────────────
+
+pack_registry(
+    name = "lingucomponent_xcd",
+    xcs  = [],
+    xcu  = [
+        "//main/lingucomponent:config/Linguistic-lingucomponent-hyphenator.xcu",
+        "//main/lingucomponent:config/Linguistic-lingucomponent-spellchecker.xcu",
+        "//main/lingucomponent:config/Linguistic-lingucomponent-thesaurus.xcu",
+    ],
+    xslt = _XSLT,
+    visibility = ["//visibility:public"],
+)
+
+# ── main.xcd ──────────────────────────────────────────────────────────────────
+
+_MAIN_XCS = [
+    oc_xcs("FirstStartWizard.xcs"),
+    oc_xcs("Inet.xcs"),
+    oc_xcs("Interaction.xcs"),
+    oc_xcs("LDAP.xcs"),
+    oc_xcs("Office/Accelerators.xcs"),
+    oc_xcs("Office/Addons.xcs"),
+    oc_xcs("Office/Calc.xcs"),
+    oc_xcs("Office/CalcAddIns.xcs"),
+    oc_xcs("Office/Canvas.xcs"),
+    oc_xcs("Office/Chart.xcs"),
+    oc_xcs("Office/Commands.xcs"),
+    oc_xcs("Office/Common.xcs"),
+    oc_xcs("Office/Compatibility.xcs"),
+    oc_xcs("Office/DataAccess/Drivers.xcs"),
+    oc_xcs("Office/DataAccess.xcs"),
+    oc_xcs("Office/Draw.xcs"),
+    oc_xcs("Office/Embedding.xcs"),
+    oc_xcs("Office/Events.xcs"),
+    oc_xcs("Office/ExtendedColorScheme.xcs"),
+    oc_xcs("Office/ExtensionDependencies.xcs"),
+    oc_xcs("Office/ExtensionManager.xcs"),
+    oc_xcs("Office/FormWizard.xcs"),
+    oc_xcs("Office/Histories.xcs"),
+    oc_xcs("Office/Impress.xcs"),
+    oc_xcs("Office/Java.xcs"),
+    oc_xcs("Office/Jobs.xcs"),
+    oc_xcs("Office/Labels.xcs"),
+    oc_xcs("Office/Linguistic.xcs"),
+    oc_xcs("Office/Logging.xcs"),
+    oc_xcs("Office/Math.xcs"),
+    oc_xcs("Office/OOoImprovement/Settings.xcs"),
+    oc_xcs("Office/OptionsDialog.xcs"),
+    oc_xcs("Office/Paths.xcs"),
+    oc_xcs("Office/ProtocolHandler.xcs"),
+    oc_xcs("Office/Recovery.xcs"),
+    oc_xcs("Office/SFX.xcs"),
+    oc_xcs("Office/Scripting.xcs"),
+    oc_xcs("Office/Security.xcs"),
+    oc_xcs("Office/Substitution.xcs"),
+    oc_xcs("Office/TabBrowse.xcs"),
+    oc_xcs("Office/TableWizard.xcs"),
+    oc_xcs("Office/TypeDetection.xcs"),
+    oc_xcs("Office/UI/BaseWindowState.xcs"),
+    oc_xcs("Office/UI/BasicIDECommands.xcs"),
+    oc_xcs("Office/UI/BasicIDEWindowState.xcs"),
+    oc_xcs("Office/UI/BibliographyCommands.xcs"),
+    oc_xcs("Office/UI/BibliographyWindowState.xcs"),
+    oc_xcs("Office/UI/Category.xcs"),
+    oc_xcs("Office/UI/ChartCommands.xcs"),
+    oc_xcs("Office/UI/ChartWindowState.xcs"),
+    oc_xcs("Office/UI/Commands.xcs"),
+    oc_xcs("Office/UI/Controller.xcs"),
+    oc_xcs("Office/UI/DbBrowserWindowState.xcs"),
+    oc_xcs("Office/UI/DbQueryWindowState.xcs"),
+    oc_xcs("Office/UI/DbRelationWindowState.xcs"),
+    oc_xcs("Office/UI/DbTableDataWindowState.xcs"),
+    oc_xcs("Office/UI/DbTableWindowState.xcs"),
+    oc_xcs("Office/UI/DbuCommands.xcs"),
+    oc_xcs("Office/UI/DrawImpressCommands.xcs"),
+    oc_xcs("Office/UI/Factories.xcs"),
+    oc_xcs("Office/UI/GenericCategories.xcs"),
+    oc_xcs("Office/UI/GenericCommands.xcs"),
+    oc_xcs("Office/UI/GlobalSettings.xcs"),
+    oc_xcs("Office/UI/Sidebar.xcs"),
+    oc_xcs("Office/UI/StartModuleCommands.xcs"),
+    oc_xcs("Office/UI/StartModuleWindowState.xcs"),
+    oc_xcs("Office/UI/WindowContentFactories.xcs"),
+    oc_xcs("Office/UI/WindowState.xcs"),
+    oc_xcs("Office/UI.xcs"),
+    oc_xcs("Office/Views.xcs"),
+    oc_xcs("Office/WebWizard.xcs"),
+    oc_xcs("Office/Writer.xcs"),
+    oc_xcs("Office/WriterWeb.xcs"),
+    oc_xcs("Setup.xcs"),
+    oc_xcs("System.xcs"),
+    oc_xcs("TypeDetection/Filter.xcs"),
+    oc_xcs("TypeDetection/GraphicFilter.xcs"),
+    oc_xcs("TypeDetection/Misc.xcs"),
+    oc_xcs("TypeDetection/Types.xcs"),
+    oc_xcs("TypeDetection/UISort.xcs"),
+    oc_xcs("UserProfile.xcs"),
+    oc_xcs("VCL.xcs"),
+    oc_xcs("ucb/Configuration.xcs"),
+    oc_xcs("ucb/Hierarchy.xcs"),
+    oc_xcs("ucb/InteractionHandler.xcs"),
+    oc_xcs("ucb/Store.xcs"),
+]
+
+_MAIN_XCU = [
+    # Raw data files from officecfg
+    oc_xcu("FirstStartWizard.xcu"),
+    oc_xcu("Inet.xcu"),
+    oc_xcu("Interaction.xcu"),
+    oc_xcu("Office/Accelerators.xcu"),
+    oc_xcu("Office/Calc.xcu"),
+    oc_xcu("Office/Canvas.xcu"),
+    oc_xcu("Office/Common.xcu"),
+    oc_xcu("Office/Compatibility.xcu"),
+    oc_xcu("Office/DataAccess.xcu"),
+    oc_xcu("Office/Embedding.xcu"),
+    oc_xcu("Office/ExtensionDependencies.xcu"),
+    oc_xcu("Office/ExtensionManager.xcu"),
+    oc_xcu("Office/FormWizard.xcu"),
+    oc_xcu("Office/Histories.xcu"),
+    oc_xcu("Office/Impress.xcu"),
+    oc_xcu("Office/Jobs.xcu"),
+    oc_xcu("Office/Labels.xcu"),
+    oc_xcu("Office/Logging.xcu"),
+    oc_xcu("Office/Math.xcu"),
+    oc_xcu("Office/Paths.xcu"),
+    oc_xcu("Office/ProtocolHandler.xcu"),
+    oc_xcu("Office/SFX.xcu"),
+    oc_xcu("Office/Scripting.xcu"),
+    oc_xcu("Office/Security.xcu"),
+    oc_xcu("Office/TableWizard.xcu"),
+    oc_xcu("Office/UI/BaseWindowState.xcu"),
+    oc_xcu("Office/UI/BasicIDECommands.xcu"),
+    oc_xcu("Office/UI/BasicIDEWindowState.xcu"),
+    oc_xcu("Office/UI/BibliographyCommands.xcu"),
+    oc_xcu("Office/UI/ChartCommands.xcu"),
+    oc_xcu("Office/UI/ChartWindowState.xcu"),
+    oc_xcu("Office/UI/Controller.xcu"),
+    oc_xcu("Office/UI/DbBrowserWindowState.xcu"),
+    oc_xcu("Office/UI/DbQueryWindowState.xcu"),
+    oc_xcu("Office/UI/DbRelationWindowState.xcu"),
+    oc_xcu("Office/UI/DbTableDataWindowState.xcu"),
+    oc_xcu("Office/UI/DbTableWindowState.xcu"),
+    oc_xcu("Office/UI/DbuCommands.xcu"),
+    oc_xcu("Office/UI/DrawImpressCommands.xcu"),
+    oc_xcu("Office/UI/Factories.xcu"),
+    oc_xcu("Office/UI/GenericCategories.xcu"),
+    oc_xcu("Office/UI/GenericCommands.xcu"),
+    oc_xcu("Office/UI/Sidebar.xcu"),
+    oc_xcu("Office/UI/StartModuleCommands.xcu"),
+    oc_xcu("Office/UI/StartModuleWindowState.xcu"),
+    oc_xcu("Office/UI.xcu"),
+    oc_xcu("Office/Views.xcu"),
+    oc_xcu("Office/WebWizard.xcu"),
+    oc_xcu("Office/Writer.xcu"),
+    oc_xcu("Setup.xcu"),
+    oc_xcu("System.xcu"),
+    oc_xcu("TypeDetection/UISort.xcu"),
+    oc_xcu("UserProfile.xcu"),
+    oc_xcu("VCL.xcu"),
+    oc_xcu("ucb/Configuration.xcu"),
+    # DataAccess XCU (Windows build: dbase, flat, mysql, odbc, adabas, ado)
+    "//main/connectivity:source/drivers/dbase/dbase.xcu",
+    "//main/connectivity:source/drivers/flat/flat.xcu",
+    "//main/connectivity:source/drivers/mysql/mysql.xcu",
+    "//main/connectivity:source/drivers/odbc/odbc.xcu",
+    "//main/connectivity:source/drivers/adabas/adabas.xcu",
+    "//main/connectivity:source/drivers/ado/ado.xcu",
+    # FCFGMerge spool
+    fcfg("fcfg_base_types"),
+    fcfg("fcfg_base_filters"),
+    fcfg("fcfg_base_others"),
+    fcfg("fcfg_chart_types"),
+    fcfg("fcfg_chart_filters"),
+    fcfg("fcfg_chart_others"),
+    fcfg("fcfg_internalgraphics_types"),
+    fcfg("fcfg_internalgraphics_filters"),
+    # Module extractions
+    oc_mod("Office/Common.xcu",          "brand"),
+    oc_mod("Office/Common.xcu",          "wnt"),
+    oc_mod("Office/Embedding.xcu",       "chart"),
+    oc_mod("Office/UI.xcu",              "brand"),
+    oc_mod("Setup.xcu",                  "brand"),
+    oc_mod("Setup.xcu",                  "start"),
+    oc_mod("Inet.xcu",                   "wnt"),
+    oc_mod("Office/Accelerators.xcu",    "unxwnt"),
+    oc_mod("Office/Paths.xcu",           "unxwnt"),
+    oc_mod("Office/Paths.xcu",           "internallibtextcatdata"),
+    oc_mod("TypeDetection/UISort.xcu",   "calc"),
+    oc_mod("TypeDetection/UISort.xcu",   "draw"),
+    oc_mod("TypeDetection/UISort.xcu",   "impress"),
+    oc_mod("TypeDetection/UISort.xcu",   "math"),
+    oc_mod("TypeDetection/UISort.xcu",   "writer"),
+]
+
+pack_registry(
+    name = "main_xcd",
+    xcs  = _MAIN_XCS,
+    xcu  = _MAIN_XCU,
+    xslt = _XSLT,
+    visibility = ["//visibility:public"],
+)
+
+# ── math.xcd ──────────────────────────────────────────────────────────────────
+
+pack_registry(
+    name = "math_xcd",
+    xcs  = [
+        oc_xcs("Office/UI/MathCommands.xcs"),
+        oc_xcs("Office/UI/MathWindowState.xcs"),
+    ],
+    xcu  = [
+        oc_xcu("Office/UI/MathCommands.xcu"),
+        oc_xcu("Office/UI/MathWindowState.xcu"),
+        fcfg("fcfg_math_types"),
+        fcfg("fcfg_math_filters"),
+        oc_mod("Office/Common.xcu",    "math"),
+        oc_mod("Office/Embedding.xcu", "math"),
+        oc_mod("Setup.xcu",            "math"),
+    ],
+    xslt = _XSLT,
+    visibility = ["//visibility:public"],
+)
+
+# ── oooimprovement.xcd ────────────────────────────────────────────────────────
+
+pack_registry(
+    name = "oooimprovement_xcd",
+    xcs  = [],
+    xcu  = [
+        "//main/extensions/source/oooimprovement:Jobs.xcu",
+        "//main/extensions/source/oooimprovement:Logging.xcu",
+    ],
+    xslt = _XSLT,
+    visibility = ["//visibility:public"],
+)
+
+# ── palm.xcd ──────────────────────────────────────────────────────────────────
+
+pack_registry(
+    name = "palm_xcd",
+    xcs  = [],
+    xcu  = [
+        fcfg("fcfg_palm_types"),
+        fcfg("fcfg_palm_filters"),
+    ],
+    xslt = _XSLT,
+    visibility = ["//visibility:public"],
+)
+
+# ── pocketexcel.xcd ───────────────────────────────────────────────────────────
+
+pack_registry(
+    name = "pocketexcel_xcd",
+    xcs  = [],
+    xcu  = [
+        fcfg("fcfg_pocketexcel_types"),
+        fcfg("fcfg_pocketexcel_filters"),
+    ],
+    xslt = _XSLT,
+    visibility = ["//visibility:public"],
+)
+
+# ── pocketword.xcd ────────────────────────────────────────────────────────────
+
+pack_registry(
+    name = "pocketword_xcd",
+    xcs  = [],
+    xcu  = [
+        fcfg("fcfg_pocketword_types"),
+        fcfg("fcfg_pocketword_filters"),
+    ],
+    xslt = _XSLT,
+    visibility = ["//visibility:public"],
+)
+
+# ── pyuno.xcd ─────────────────────────────────────────────────────────────────
+
+pack_registry(
+    name = "pyuno_xcd",
+    xcs  = [],
+    xcu  = [
+        oc_mod("Office/Scripting.xcu", "python"),
+    ],
+    xslt = _XSLT,
+    visibility = ["//visibility:public"],
+)
+
+# ── w4w.xcd ───────────────────────────────────────────────────────────────────
+
+pack_registry(
+    name = "w4w_xcd",
+    xcs  = [],
+    xcu  = [
+        fcfg("fcfg_w4w_types"),
+        fcfg("fcfg_w4w_filters"),
+    ],
+    xslt = _XSLT,
+    visibility = ["//visibility:public"],
+)
+
+# ── writer.xcd ────────────────────────────────────────────────────────────────
+
+pack_registry(
+    name = "writer_xcd",
+    xcs  = [
+        oc_xcs("Office/UI/WriterCommands.xcs"),
+        oc_xcs("Office/UI/WriterFormWindowState.xcs"),
+        oc_xcs("Office/UI/WriterGlobalWindowState.xcs"),
+        oc_xcs("Office/UI/WriterReportWindowState.xcs"),
+        oc_xcs("Office/UI/WriterWebWindowState.xcs"),
+        oc_xcs("Office/UI/WriterWindowState.xcs"),
+        oc_xcs("Office/UI/XFormsWindowState.xcs"),
+    ],
+    xcu  = [
+        oc_xcu("Office/UI/WriterCommands.xcu"),
+        oc_xcu("Office/UI/WriterFormWindowState.xcu"),
+        oc_xcu("Office/UI/WriterGlobalWindowState.xcu"),
+        oc_xcu("Office/UI/WriterReportWindowState.xcu"),
+        oc_xcu("Office/UI/WriterWebWindowState.xcu"),
+        oc_xcu("Office/UI/WriterWindowState.xcu"),
+        oc_xcu("Office/UI/XFormsWindowState.xcu"),
+        fcfg("fcfg_global_types"),
+        fcfg("fcfg_global_filters"),
+        fcfg("fcfg_web_types"),
+        fcfg("fcfg_web_filters"),
+        fcfg("fcfg_writer_types"),
+        fcfg("fcfg_writer_filters"),
+        oc_mod("Office/Common.xcu",    "writer"),
+        oc_mod("Office/Embedding.xcu", "writer"),
+        oc_mod("Setup.xcu",            "writer"),
+    ],
+    xslt = _XSLT,
+    visibility = ["//visibility:public"],
+)
+
+# ── xsltfilter.xcd ────────────────────────────────────────────────────────────
+
+pack_registry(
+    name = "xsltfilter_xcd",
+    xcs  = [],
+    xcu  = [
+        fcfg("fcfg_xslt_types"),
+        fcfg("fcfg_xslt_filters"),
+    ],
+    xslt = _XSLT,
+    visibility = ["//visibility:public"],
+)
+
+# ── forcedefault.xcd (Windows) ────────────────────────────────────────────────
+
+pack_registry(
+    name = "forcedefault_xcd",
+    xcs  = [],
+    xcu  = [
+        oc_mod("Office/Linguistic.xcu", "ForceDefaultLanguage"),
+    ],
+    xslt = _XSLT,
+    visibility = ["//visibility:public"],
+)
+
+# ── All XCD targets ───────────────────────────────────────────────────────────
+
+filegroup(
+    name = "all_xcd",
+    srcs = [
+        ":base_xcd",
+        ":calc_xcd",
+        ":cjk_xcd",
+        ":ctl_xcd",
+        ":draw_xcd",
+        ":forcedefault_xcd",
+        ":graphicfilter_xcd",
+        ":impress_xcd",
+        ":korea_xcd",
+        ":lingucomponent_xcd",
+        ":main_xcd",
+        ":math_xcd",
+        ":oooimprovement_xcd",
+        ":palm_xcd",
+        ":pocketexcel_xcd",
+        ":pocketword_xcd",
+        ":pyuno_xcd",
+        ":w4w_xcd",
+        ":writer_xcd",
+        ":xsltfilter_xcd",
     ],
     visibility = ["//visibility:public"],
 )

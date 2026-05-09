@@ -1,3 +1,5 @@
+package(default_visibility = ["//visibility:public"])
+
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 
 _DEFINES = [
@@ -87,6 +89,7 @@ cc_binary(
         "$(execpath //main/svl:svl_implib)",
         "$(execpath //main/ucbhelper:ucbhelper_implib)",
     ],
+    visibility = ["//visibility:public"],
 )
 
 filegroup(
@@ -117,6 +120,7 @@ cc_binary(
     ] + _HDR_DEPS,
     additional_linker_inputs = _IMPLIBS,
     linkopts = _IMPLIB_LINKOPTS,
+    visibility = ["//visibility:public"],
 )
 
 filegroup(
@@ -148,6 +152,7 @@ cc_binary(
     ] + _HDR_DEPS,
     additional_linker_inputs = _IMPLIBS,
     linkopts = _IMPLIB_LINKOPTS,
+    visibility = ["//visibility:public"],
 )
 
 filegroup(
@@ -179,6 +184,7 @@ cc_binary(
     ] + _HDR_DEPS,
     additional_linker_inputs = _IMPLIBS,
     linkopts = _IMPLIB_LINKOPTS,
+    visibility = ["//visibility:public"],
 )
 
 filegroup(
@@ -189,4 +195,10 @@ filegroup(
 )
 
 exports_files(glob(["**/*.component"]))
+
+exports_files([
+    "config/Linguistic-lingucomponent-hyphenator.xcu",
+    "config/Linguistic-lingucomponent-spellchecker.xcu",
+    "config/Linguistic-lingucomponent-thesaurus.xcu",
+])
 

@@ -76,6 +76,12 @@ _LOCALIZED_SET = {f: True for f in _LOCALIZED}
 
 # ── Raw source filegroups ─────────────────────────────────────────
 
+# Allow individual file references from other packages
+exports_files(glob([
+    "registry/schema/**/*.xcs",
+    "registry/data/**/*.xcu",
+]))
+
 filegroup(
     name = "registry_schema_src",
     srcs = glob(["registry/schema/**/*.xcs"]),
@@ -201,3 +207,80 @@ filegroup(
     ] + lang_zip_srcs(OOO_LANGS, lang_id),
     visibility = ["//visibility:public"],
 )
+
+# ── Module extraction genrules ─────────────────────────────────────
+# alllang.xsl with --stringparam module <suffix> extracts module-specific
+# nodes from an XCU file.  These spool files are consumed by pack_registry
+# in //main/postprocess for the XCD packaging pipeline.
+#
+# Naming: alllang_module_<xcu_id>_<module>
+# where xcu_id = xcu path with / and . replaced by _
+
+[
+    genrule(
+        name = "alllang_module_{}_{}".format(
+            xcu.replace("/", "_").replace(".", "_"), module),
+        srcs = ["registry/data/" + xcu, "util/alllang.xsl"],
+        outs = ["spool_module/{}/{}".format(module, xcu)],
+        tools = ["@libxslt//:xsltproc"],
+        cmd_bat = (
+            "$(location @libxslt//:xsltproc) --novalid " +
+            "--stringparam module {} ".format(module) +
+            "-o $(OUTS) " +
+            "$(location util/alllang.xsl) " +
+            "$(location registry/data/{})".format(xcu)
+        ),
+        visibility = ["//visibility:public"],
+    )
+    for xcu, module in [
+        # Setup.xcu module extractions
+        ("org/openoffice/Setup.xcu",                "brand"),
+        ("org/openoffice/Setup.xcu",                "writer"),
+        ("org/openoffice/Setup.xcu",                "calc"),
+        ("org/openoffice/Setup.xcu",                "draw"),
+        ("org/openoffice/Setup.xcu",                "impress"),
+        ("org/openoffice/Setup.xcu",                "base"),
+        ("org/openoffice/Setup.xcu",                "math"),
+        ("org/openoffice/Setup.xcu",                "start"),
+        # Inet.xcu module extractions
+        ("org/openoffice/Inet.xcu",                 "wnt"),
+        # Office/Common.xcu module extractions
+        ("org/openoffice/Office/Common.xcu",        "brand"),
+        ("org/openoffice/Office/Common.xcu",        "writer"),
+        ("org/openoffice/Office/Common.xcu",        "calc"),
+        ("org/openoffice/Office/Common.xcu",        "draw"),
+        ("org/openoffice/Office/Common.xcu",        "impress"),
+        ("org/openoffice/Office/Common.xcu",        "base"),
+        ("org/openoffice/Office/Common.xcu",        "math"),
+        ("org/openoffice/Office/Common.xcu",        "cjk"),
+        ("org/openoffice/Office/Common.xcu",        "ctl"),
+        ("org/openoffice/Office/Common.xcu",        "korea"),
+        ("org/openoffice/Office/Common.xcu",        "wnt"),
+        # Office/Embedding.xcu module extractions
+        ("org/openoffice/Office/Embedding.xcu",     "calc"),
+        ("org/openoffice/Office/Embedding.xcu",     "chart"),
+        ("org/openoffice/Office/Embedding.xcu",     "draw"),
+        ("org/openoffice/Office/Embedding.xcu",     "impress"),
+        ("org/openoffice/Office/Embedding.xcu",     "math"),
+        ("org/openoffice/Office/Embedding.xcu",     "writer"),
+        # Office/UI.xcu module extractions
+        ("org/openoffice/Office/UI.xcu",            "brand"),
+        # Office/Writer.xcu module extractions
+        ("org/openoffice/Office/Writer.xcu",        "cjk"),
+        # Office/Scripting.xcu module extractions
+        ("org/openoffice/Office/Scripting.xcu",     "python"),
+        # Office/Paths.xcu module extractions
+        ("org/openoffice/Office/Paths.xcu",         "unxwnt"),
+        ("org/openoffice/Office/Paths.xcu",         "internallibtextcatdata"),
+        # Office/Accelerators.xcu module extractions
+        ("org/openoffice/Office/Accelerators.xcu",  "unxwnt"),
+        # Office/Linguistic.xcu module extractions
+        ("org/openoffice/Office/Linguistic.xcu",    "ForceDefaultLanguage"),
+        # TypeDetection/UISort.xcu module extractions
+        ("org/openoffice/TypeDetection/UISort.xcu", "calc"),
+        ("org/openoffice/TypeDetection/UISort.xcu", "draw"),
+        ("org/openoffice/TypeDetection/UISort.xcu", "impress"),
+        ("org/openoffice/TypeDetection/UISort.xcu", "math"),
+        ("org/openoffice/TypeDetection/UISort.xcu", "writer"),
+    ]
+]

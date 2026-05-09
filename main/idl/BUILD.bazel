@@ -72,6 +72,7 @@ cc_binary(
         "//main/basegfx:basegfx",
         "//main/i18npool:i18nisolang1",
         "//main/external/msvcp90:crt_dlls",
+        "util/svidl.exe.manifest",
     ],
     visibility = ["//visibility:public"],
 )

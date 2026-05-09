@@ -1,3 +1,5 @@
+package(default_visibility = ["//visibility:public"])
+
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 load("//main/i18npool:breakiter_pipeline.bzl", "breakiter_data")
 
@@ -282,6 +284,7 @@ cc_binary(
     linkshared = True,
     deps = _COMMON_DEPS + [
         "//main/i18npool:i18npool_headers",
+        "//main/comphelper:comphelper_headers",
         "@icu//:icuuc_headers",
         "@icu//:icui18n_headers",
     ],
@@ -289,6 +292,7 @@ cc_binary(
         "//main/sal:sal_implib",
         "//main/cppu:cppu3_implib",
         "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelp_implib",
         "//main/i18npool:i18nisolang1_implib",
         "@icu//:icuuc_implib",
         "@icu//:icui18n_implib",
@@ -297,6 +301,7 @@ cc_binary(
         "$(execpath //main/sal:sal_implib)",
         "$(execpath //main/cppu:cppu3_implib)",
         "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelp_implib)",
         "$(execpath //main/i18npool:i18nisolang1_implib)",
         "$(execpath @icu//:icuuc_implib)",
         "$(execpath @icu//:icui18n_implib)",

@@ -1,3 +1,5 @@
+package(default_visibility = ["//visibility:public"])
+
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 load("//build/rules:idl_pipeline.bzl", "idl_library")
 load("//build/rules:rsc_pipeline.bzl", "rsc_res")

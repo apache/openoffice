@@ -1,3 +1,5 @@
+package(default_visibility = ["//visibility:public"])
+
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 
 _DEFINES = [
@@ -97,7 +99,7 @@ cc_binary(
         "source/cacher/contentresultsetwrapper.cxx",
         "source/cacher/dynamicresultsetwrapper.cxx",
     ],
-    copts = _COPTS,
+    copts = _COPTS + ["/Imain/ucb/source/cacher"],
     defines = _DEFINES,
     linkshared = True,
     win_def_file = "util/cached1.def",
@@ -122,7 +124,7 @@ cc_binary(
         "source/sorter/sortmain.cxx",
         "source/sorter/sortresult.cxx",
     ],
-    copts = _COPTS,
+    copts = _COPTS + ["/Imain/ucb/source/sorter"],
     defines = _DEFINES,
     linkshared = True,
     win_def_file = "util/srtrs1.def",
@@ -145,7 +147,7 @@ cc_binary(
     srcs = [
         "source/ucp/expand/ucpexpand.cxx",
     ],
-    copts = _COPTS,
+    copts = _COPTS + ["/Imain/ucb/source/ucp/expand"],
     defines = _DEFINES,
     linkshared = True,
     win_def_file = "util/ucpexpand1.def",
@@ -166,7 +168,7 @@ filegroup(
 cc_binary(
     name = "ucpext",
     srcs = glob(["source/ucp/ext/*.cxx"]),
-    copts = _COPTS,
+    copts = _COPTS + ["/Imain/ucb/source/ucp/ext"],
     defines = _DEFINES,
     linkshared = True,
     win_def_file = "util/ucpext.def",
@@ -252,7 +254,7 @@ cc_binary(
         "source/ucp/hierarchy/hierarchyservices.cxx",
         "source/ucp/hierarchy/hierarchyuri.cxx",
     ],
-    copts = _COPTS,
+    copts = _COPTS + ["/Imain/ucb/source/ucp/hierarchy"],
     defines = _DEFINES,
     linkshared = True,
     win_def_file = "util/ucphier1.def",
@@ -292,7 +294,7 @@ cc_binary(
         "source/ucp/package/pkgservices.cxx",
         "source/ucp/package/pkguri.cxx",
     ],
-    copts = _COPTS,
+    copts = _COPTS + ["/Imain/ucb/source/ucp/package"],
     defines = _DEFINES,
     linkshared = True,
     win_def_file = "util/ucppkg1.def",
@@ -340,7 +342,7 @@ cc_binary(
         "source/ucp/tdoc/tdoc_storage.cxx",
         "source/ucp/tdoc/tdoc_uri.cxx",
     ],
-    copts = _COPTS,
+    copts = _COPTS + ["/Imain/ucb/source/ucp/tdoc"],
     defines = _DEFINES,
     linkshared = True,
     win_def_file = "util/ucptdoc1.def",

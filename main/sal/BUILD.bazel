@@ -1,3 +1,5 @@
+package(default_visibility = ["//visibility:public"])
+
 # we need to load cc_binary and cc_library to be able to use them here
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 

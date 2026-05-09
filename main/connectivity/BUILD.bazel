@@ -1,3 +1,5 @@
+package(default_visibility = ["//visibility:public"])
+
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 load("//build/rules:rsc_pipeline.bzl", "rsc_res")
 
@@ -221,4 +223,15 @@ rsc_res(
 )
 
 exports_files(glob(["**/*.component"]))
+
+# DataAccess XCU files consumed by //main/postprocess pack_registry targets.
+exports_files([
+    "source/drivers/adabas/adabas.xcu",
+    "source/drivers/ado/ado.xcu",
+    "source/drivers/calc/calc.xcu",
+    "source/drivers/dbase/dbase.xcu",
+    "source/drivers/flat/flat.xcu",
+    "source/drivers/mysql/mysql.xcu",
+    "source/drivers/odbc/odbc.xcu",
+])
 

@@ -1,3 +1,5 @@
+package(default_visibility = ["//visibility:public"])
+
 load("@rules_cc//cc:defs.bzl", "cc_binary")
 
 # emser.dll and inprocserv.dll require ATL headers (VC\ATLMFC\INCLUDE), which are

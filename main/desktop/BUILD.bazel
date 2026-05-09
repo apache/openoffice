@@ -1,3 +1,5 @@
+package(default_visibility = ["//visibility:public"])
+
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 load("//build/rules:rsc_pipeline.bzl", "rsc_res")
 
@@ -837,6 +839,7 @@ cc_binary(
     ],
     deps = [":desktop_source_hdrs"],
     linkopts = [
+        "user32.lib",
         "/SUBSYSTEM:CONSOLE",
         "/MANIFEST:NO",
     ],
@@ -879,6 +882,7 @@ cc_binary(
         "snprintf=_snprintf",
         "SUPD=680", "MSC",
     ],
+    deps = ["//main/sal:sal_headers"],
     additional_linker_inputs = [
         "//main/sal:sal_implib",
         ":unopkgapp_implib",
@@ -911,6 +915,7 @@ cc_binary(
     ],
     linkopts = [
         "shell32.lib",
+        "user32.lib",
         "/SUBSYSTEM:WINDOWS",
         "/MANIFEST:NO",
     ],
@@ -937,8 +942,8 @@ cc_binary(
         "//main/tools:tools_headers",
     ],
     linkopts = [
-        "shell32.lib", "imagehlp.lib",
-        "/SUBSYSTEM:CONSOLE",
+        "shell32.lib", "imagehlp.lib", "user32.lib",
+        "/SUBSYSTEM:WINDOWS",
         "/MANIFEST:NO",
     ],
     visibility = ["//visibility:public"],
@@ -964,7 +969,7 @@ cc_binary(
         "//main/tools:tools_headers",
     ],
     linkopts = [
-        "shell32.lib", "imagehlp.lib",
+        "shell32.lib", "imagehlp.lib", "user32.lib",
         "/SUBSYSTEM:WINDOWS",
         "/MANIFEST:NO",
     ],
@@ -983,7 +988,7 @@ cc_binary(
     defines = [
         "WNT", "WIN32", "INTEL", "_X86_=1",
         "snprintf=_snprintf",
-        "SUPD=680", "MSC", "UNICODE", "_UNICODE",
+        "SUPD=680", "MSC",
     ],
     deps = [
         ":desktop_source_hdrs",
@@ -991,7 +996,7 @@ cc_binary(
     ],
     linkopts = [
         "comsupp.lib",
-        "shell32.lib", "ole32.lib", "gdi32.lib",
+        "shell32.lib", "ole32.lib", "gdi32.lib", "user32.lib",
         "oleaut32.lib", "comdlg32.lib", "kernel32.lib", "uuid.lib",
         "/SUBSYSTEM:WINDOWS",
         "/MANIFEST:NO",
@@ -1023,4 +1028,5 @@ rsc_res(
 )
 
 exports_files(glob(["**/*.component"]))
+exports_files(["util/soffice.exe.manifest", "util/soffice.bin.manifest"])
 

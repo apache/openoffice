@@ -139,6 +139,8 @@ reportdesign  ✅  (rpt.dll, rptui.dll, rptxml.dll) — main/reportdesign/readme
 starmath      ✅  (sm.dll, smd.dll — Math formula editor) — main/starmath/readme.md
 ── Layer 23 — desktop ────────────────────────────────────────────────────
 desktop       ✅  (soffice.exe + all launcher EXEs + 9 DLLs) — main/desktop/readme.md
+── Layer 24 — staging ────────────────────────────────────────────
+staging       ✅  (bazel build //main/staging:install → runnable install layout) — main/staging/BUILD.bazel
 ── Already done, not yet listed ─────────────────────────────────────────
 ooxml         ✅  (done with oox migration; openssl_shim removed, now uses @openssl//:ssl)
 stlport       ✅  (boost hash_map shim, referenced as dep)
@@ -175,7 +177,7 @@ instsetoo_native ⬜ (native Windows installer build)
 setup_native  ⬜  (Windows setup UI)
 packimages    ⬜  (image packaging for install)
 sysui         ⬜  (system UI integration — mime types, desktop entries)
-postprocess   ✅  (services.rdb, ooo_services_rdb, uiconfig.zip; xcd deferred) — main/postprocess/readme.md
+postprocess   ✅  (services.rdb, ooo_services_rdb, uiconfig.zip, 20 .xcd packages via fcfg_merge+pack_registry) — main/postprocess/readme.md
 solenv        ⬜  (legacy build environment, mostly migrated away)
 ── Deferred: Docs/tests/dev tooling ─────────────────────────────────────
 autodoc       ⬜  (API documentation generator)

@@ -1,0 +1,980 @@
+# main/filter/source/config/fragments — FCFGMerge outputs
+#
+# Each fcfg_<pkg>_<set> target merges fragment .xcu files into a combined
+# XCU ready for inclusion in a packregistry .xcd package.
+# Fragment fragment data comes from the fcfg_*.mk package definition files.
+#
+# Sets: _types → xmlpackage=Types
+#       _filters → xmlpackage=Filter  (or GraphicFilter for internalgraphics)
+#       _others → xmlpackage=Misc  (frame-loaders + content-handlers)
+
+load("//main/postprocess:postprocess.bzl", "fcfg_merge")
+
+# ── fcfg_base ─────────────────────────────────────────────────────────────────
+
+fcfg_merge(
+    name       = "fcfg_base_types",
+    xmlpackage = "Types",
+    types = [
+        "types/writer_web_HTML_help.xcu",
+        "types/oxt_OpenOffice_Extension.xcu",
+        "types/wav_Wave_Audio_File.xcu",
+        "types/component_Bibliography.xcu",
+        "types/component_DB.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+fcfg_merge(
+    name       = "fcfg_base_filters",
+    xmlpackage = "Filter",
+    filters = [
+        "filters/writer_web_HTML_help.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+fcfg_merge(
+    name       = "fcfg_base_others",
+    xmlpackage = "Misc",
+    loaders = [
+        "frameloaders/com_sun_star_frame_Bibliography.xcu",
+        "frameloaders/com_sun_star_sdb_ContentLoader.xcu",
+    ],
+    handlers = [
+        "contenthandlers/com_sun_star_comp_framework_SoundHandler.xcu",
+        "contenthandlers/com_sun_star_comp_framework_oxt_handler.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── fcfg_chart ────────────────────────────────────────────────────────────────
+
+fcfg_merge(
+    name       = "fcfg_chart_types",
+    xmlpackage = "Types",
+    types = [
+        "types/chart_StarOffice_XML_Chart.xcu",
+        "types/chart8.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+fcfg_merge(
+    name       = "fcfg_chart_filters",
+    xmlpackage = "Filter",
+    filters = [
+        "filters/StarOffice_XML__Chart_.xcu",
+        "filters/chart8.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+fcfg_merge(
+    name       = "fcfg_chart_others",
+    xmlpackage = "Misc",
+    loaders = [
+        "frameloaders/com_sun_star_comp_chart2_ChartFrameLoader.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── fcfg_database ─────────────────────────────────────────────────────────────
+
+fcfg_merge(
+    name       = "fcfg_database_types",
+    xmlpackage = "Types",
+    types = [
+        "types/StarBase.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+fcfg_merge(
+    name       = "fcfg_database_filters",
+    xmlpackage = "Filter",
+    filters = [
+        "filters/StarOffice_XML__Base_.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+fcfg_merge(
+    name       = "fcfg_database_others",
+    xmlpackage = "Misc",
+    loaders = [
+        "frameloaders/org_openoffice_comp_dbflt_DBContentLoader2.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── fcfg_calc ─────────────────────────────────────────────────────────────────
+
+fcfg_merge(
+    name       = "fcfg_calc_types",
+    xmlpackage = "Types",
+    types = [
+        "types/calc_DIF.xcu",
+        "types/writer_web_HTML.xcu",
+        "types/calc_Lotus.xcu",
+        "types/calc_QPro.xcu",
+        "types/calc_MS_Excel_40.xcu",
+        "types/calc_MS_Excel_40_VorlageTemplate.xcu",
+        "types/calc_MS_Excel_5095.xcu",
+        "types/calc_MS_Excel_5095_VorlageTemplate.xcu",
+        "types/calc_MS_Excel_95.xcu",
+        "types/calc_MS_Excel_95_VorlageTemplate.xcu",
+        "types/calc_MS_Excel_97.xcu",
+        "types/calc_MS_Excel_97_VorlageTemplate.xcu",
+        "types/writer_Rich_Text_Format.xcu",
+        "types/calc_SYLK.xcu",
+        "types/calc_StarOffice_XML_Calc.xcu",
+        "types/calc_Text_txt_csv_StarCalc.xcu",
+        "types/calc_StarOffice_XML_Calc_Template.xcu",
+        "types/pdf_Portable_Document_Format.xcu",
+        "types/calc_dBase.xcu",
+        "types/calc8.xcu",
+        "types/calc_NSO_UOF2.xcu",
+        "types/calc8_template.xcu",
+        "types/calc_MS_Excel_2003_XML.xcu",
+        "types/MS_Excel_2007_XML.xcu",
+        "types/MS_Excel_2007_XML_Template.xcu",
+        "types/MS_Excel_2007_Binary.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+fcfg_merge(
+    name       = "fcfg_calc_filters",
+    xmlpackage = "Filter",
+    filters = [
+        "filters/DIF.xcu",
+        "filters/HTML__StarCalc_.xcu",
+        "filters/Lotus.xcu",
+        "filters/QPro.xcu",
+        "filters/MS_Excel_4_0.xcu",
+        "filters/MS_Excel_4_0_Vorlage_Template.xcu",
+        "filters/MS_Excel_5_0_95.xcu",
+        "filters/MS_Excel_5_0_95_Vorlage_Template.xcu",
+        "filters/MS_Excel_95.xcu",
+        "filters/MS_Excel_95_Vorlage_Template.xcu",
+        "filters/MS_Excel_97.xcu",
+        "filters/MS_Excel_97_Vorlage_Template.xcu",
+        "filters/Rich_Text_Format__StarCalc_.xcu",
+        "filters/SYLK.xcu",
+        "filters/StarOffice_XML__Calc_.xcu",
+        "filters/Text___txt___csv__StarCalc_.xcu",
+        "filters/calc_HTML_WebQuery.xcu",
+        "filters/calc_StarOffice_XML_Calc_Template.xcu",
+        "filters/calc_pdf_Export.xcu",
+        "filters/dBase.xcu",
+        "filters/calc8.xcu",
+        "filters/NSO_Calc_UOF2.xcu",
+        "filters/calc8_template.xcu",
+        "filters/MS_Excel_2003_XML.xcu",
+        "filters/calc_MS_Excel_2007_XML.xcu",
+        "filters/calc_MS_Excel_2007_XML_Template.xcu",
+        "filters/calc_MS_Excel_2007_Binary.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── fcfg_draw ─────────────────────────────────────────────────────────────────
+
+fcfg_merge(
+    name       = "fcfg_draw_types",
+    xmlpackage = "Types",
+    types = [
+        "types/draw_StarOffice_XML_Draw.xcu",
+        "types/draw_StarOffice_XML_Draw_Template.xcu",
+        "types/pdf_Portable_Document_Format.xcu",
+        "types/draw8.xcu",
+        "types/draw8_template.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+fcfg_merge(
+    name       = "fcfg_draw_filters",
+    xmlpackage = "Filter",
+    filters = [
+        "filters/StarOffice_XML__Draw_.xcu",
+        "filters/draw_StarOffice_XML_Draw_Template.xcu",
+        "filters/draw_pdf_Export.xcu",
+        "filters/draw8.xcu",
+        "filters/draw8_template.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── fcfg_impress ──────────────────────────────────────────────────────────────
+
+fcfg_merge(
+    name       = "fcfg_impress_types",
+    xmlpackage = "Types",
+    types = [
+        "types/draw_StarOffice_XML_Draw.xcu",
+        "types/impress_MS_PowerPoint_97.xcu",
+        "types/impress_MS_PowerPoint_97_Vorlage.xcu",
+        "types/impress_StarOffice_XML_Impress.xcu",
+        "types/impress_StarOffice_XML_Impress_Template.xcu",
+        "types/pdf_Portable_Document_Format.xcu",
+        "types/pwp_PlaceWare.xcu",
+        "types/impress8.xcu",
+        "types/impress_NSO_UOF2.xcu",
+        "types/impress8_template.xcu",
+        "types/draw8.xcu",
+        "types/MS_PowerPoint_2007_XML.xcu",
+        "types/MS_PowerPoint_2007_XML_Template.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+fcfg_merge(
+    name       = "fcfg_impress_filters",
+    xmlpackage = "Filter",
+    filters = [
+        "filters/MS_PowerPoint_97.xcu",
+        "filters/MS_PowerPoint_97_Vorlage.xcu",
+        "filters/impress_StarOffice_XML_Draw.xcu",
+        "filters/StarOffice_XML__Impress_.xcu",
+        "filters/impress_StarOffice_XML_Impress_Template.xcu",
+        "filters/impress_pdf_Export.xcu",
+        "filters/placeware_Export.xcu",
+        "filters/impress8.xcu",
+        "filters/NSO_Impress_UOF2.xcu",
+        "filters/impress8_template.xcu",
+        "filters/impress8_draw.xcu",
+        "filters/impress_MS_PowerPoint_2007_XML.xcu",
+        "filters/impress_MS_PowerPoint_2007_XML_Template.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── fcfg_math ─────────────────────────────────────────────────────────────────
+
+fcfg_merge(
+    name       = "fcfg_math_types",
+    xmlpackage = "Types",
+    types = [
+        "types/math_MathML_XML_Math.xcu",
+        "types/math_MathType_3x.xcu",
+        "types/math_StarOffice_XML_Math.xcu",
+        "types/pdf_Portable_Document_Format.xcu",
+        "types/math8.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+fcfg_merge(
+    name       = "fcfg_math_filters",
+    xmlpackage = "Filter",
+    filters = [
+        "filters/MathML_XML__Math_.xcu",
+        "filters/MathType_3_x.xcu",
+        "filters/StarOffice_XML__Math_.xcu",
+        "filters/math_pdf_Export.xcu",
+        "filters/math8.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── fcfg_global ───────────────────────────────────────────────────────────────
+
+fcfg_merge(
+    name       = "fcfg_global_types",
+    xmlpackage = "Types",
+    types = [
+        "types/writer_Text.xcu",
+        "types/writer_StarOffice_XML_Writer.xcu",
+        "types/writer_globaldocument_StarOffice_XML_Writer_GlobalDocument.xcu",
+        "types/pdf_Portable_Document_Format.xcu",
+        "types/writerglobal8.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+fcfg_merge(
+    name       = "fcfg_global_filters",
+    xmlpackage = "Filter",
+    filters = [
+        "filters/Text__encoded___StarWriter_GlobalDocument_.xcu",
+        "filters/writer_globaldocument_StarOffice_XML_Writer.xcu",
+        "filters/writer_globaldocument_StarOffice_XML_Writer_GlobalDocument.xcu",
+        "filters/writer_globaldocument_pdf_Export.xcu",
+        "filters/writerglobal8.xcu",
+        "filters/writerglobal8_writer.xcu",
+        "filters/writerglobal8_HTML.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── fcfg_web ──────────────────────────────────────────────────────────────────
+
+fcfg_merge(
+    name       = "fcfg_web_types",
+    xmlpackage = "Types",
+    types = [
+        "types/writer_web_HTML.xcu",
+        "types/writer_Text.xcu",
+        "types/writer_web_HTML_help.xcu",
+        "types/writer_StarOffice_XML_Writer.xcu",
+        "types/writer_web_StarOffice_XML_Writer_Web_Template.xcu",
+        "types/pdf_Portable_Document_Format.xcu",
+        "types/writerweb8_writer_template.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+fcfg_merge(
+    name       = "fcfg_web_filters",
+    xmlpackage = "Filter",
+    filters = [
+        "filters/HTML.xcu",
+        "filters/Text__StarWriter_Web_.xcu",
+        "filters/Text__encoded___StarWriter_Web_.xcu",
+        "filters/writer_web_HTML_help.xcu",
+        "filters/writer_web_StarOffice_XML_Writer.xcu",
+        "filters/writer_web_StarOffice_XML_Writer_Web_Template.xcu",
+        "filters/writer_web_pdf_Export.xcu",
+        "filters/writerweb8_writer_template.xcu",
+        "filters/writerweb8_writer.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── fcfg_writer ───────────────────────────────────────────────────────────────
+
+fcfg_merge(
+    name       = "fcfg_writer_types",
+    xmlpackage = "Types",
+    types = [
+        "types/writer_web_HTML.xcu",
+        "types/writer_Lotus_1_2_3_10_DOS_StarWriter.xcu",
+        "types/writer_Lotus_1_2_3_10_WIN_StarWriter.xcu",
+        "types/calc_MS_Excel_40.xcu",
+        "types/calc_MS_Excel_5095.xcu",
+        "types/calc_MS_Excel_95.xcu",
+        "types/writer_MS_WinWord_5.xcu",
+        "types/writer_MS_WinWord_60.xcu",
+        "types/writer_MS_Word_95.xcu",
+        "types/writer_MS_Word_95_Vorlage.xcu",
+        "types/writer_MS_Word_97.xcu",
+        "types/writer_MS_Word_97_Vorlage.xcu",
+        "types/writer_Rich_Text_Format.xcu",
+        "types/writer_StarOffice_XML_Writer.xcu",
+        "types/writer_T602_Document.xcu",
+        "types/writer_Text.xcu",
+        "types/writer_Text_encoded.xcu",
+        "types/writer_StarOffice_XML_Writer_Template.xcu",
+        "types/pdf_Portable_Document_Format.xcu",
+        "types/writer8_template.xcu",
+        "types/writer8.xcu",
+        "types/writer_NSO_UOF2.xcu",
+        "types/writer_MS_Word_2003_XML.xcu",
+        "types/writer_MS_Word_2007_XML.xcu",
+        "types/writer_MS_Word_2007_XML_Template.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+fcfg_merge(
+    name       = "fcfg_writer_filters",
+    xmlpackage = "Filter",
+    filters = [
+        "filters/HTML__StarWriter_.xcu",
+        "filters/Lotus_1_2_3_1_0__DOS___StarWriter_.xcu",
+        "filters/Lotus_1_2_3_1_0__WIN___StarWriter_.xcu",
+        "filters/MS_Excel_4_0__StarWriter_.xcu",
+        "filters/MS_Excel_5_0__StarWriter_.xcu",
+        "filters/MS_Excel_95__StarWriter_.xcu",
+        "filters/MS_WinWord_5.xcu",
+        "filters/MS_WinWord_6_0.xcu",
+        "filters/MS_Word_95.xcu",
+        "filters/MS_Word_95_Vorlage.xcu",
+        "filters/MS_Word_97.xcu",
+        "filters/MS_Word_97_Vorlage.xcu",
+        "filters/Rich_Text_Format.xcu",
+        "filters/StarOffice_XML__Writer_.xcu",
+        "filters/T602Document.xcu",
+        "filters/Text.xcu",
+        "filters/Text__encoded_.xcu",
+        "filters/writer_StarOffice_XML_Writer_Template.xcu",
+        "filters/writer_pdf_Export.xcu",
+        "filters/writer8.xcu",
+        "filters/NSO_Writer_UOF2.xcu",
+        "filters/writer8_template.xcu",
+        "filters/MS_Word_2003_XML.xcu",
+        "filters/MS_Word_2007_XML.xcu",
+        "filters/MS_Word_2007_XML_Template.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── fcfg_xslt ─────────────────────────────────────────────────────────────────
+
+fcfg_merge(
+    name       = "fcfg_xslt_types",
+    xmlpackage = "Types",
+    types = [
+        "types/writer_DocBook_File.xcu",
+        "types/XHTML_File.xcu",
+        "types/Unified_Office_Format_text.xcu",
+        "types/Unified_Office_Format_spreadsheet.xcu",
+        "types/Unified_Office_Format_presentation.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+fcfg_merge(
+    name       = "fcfg_xslt_filters",
+    xmlpackage = "Filter",
+    filters = [
+        "filters/DocBook_File.xcu",
+        "filters/XHTML_Calc_File.xcu",
+        "filters/XHTML_Draw_File.xcu",
+        "filters/XHTML_Impress_File.xcu",
+        "filters/XHTML_Writer_File.xcu",
+        "filters/UOF_text.xcu",
+        "filters/UOF_spreadsheet.xcu",
+        "filters/UOF_presentation.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── fcfg_palm ─────────────────────────────────────────────────────────────────
+
+fcfg_merge(
+    name       = "fcfg_palm_types",
+    xmlpackage = "Types",
+    types = [
+        "types/writer_AportisDoc_PalmDB_File.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+fcfg_merge(
+    name       = "fcfg_palm_filters",
+    xmlpackage = "Filter",
+    filters = [
+        "filters/AportisDoc_Palm_DB.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── fcfg_pocketexcel ──────────────────────────────────────────────────────────
+
+fcfg_merge(
+    name       = "fcfg_pocketexcel_types",
+    xmlpackage = "Types",
+    types = [
+        "types/calc_Pocket_Excel_File.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+fcfg_merge(
+    name       = "fcfg_pocketexcel_filters",
+    xmlpackage = "Filter",
+    filters = [
+        "filters/Pocket_Excel.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── fcfg_pocketword ───────────────────────────────────────────────────────────
+
+fcfg_merge(
+    name       = "fcfg_pocketword_types",
+    xmlpackage = "Types",
+    types = [
+        "types/writer_PocketWord_File.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+fcfg_merge(
+    name       = "fcfg_pocketword_filters",
+    xmlpackage = "Filter",
+    filters = [
+        "filters/PocketWord_File.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── fcfg_drawgraphics ─────────────────────────────────────────────────────────
+
+fcfg_merge(
+    name       = "fcfg_drawgraphics_types",
+    xmlpackage = "Types",
+    types = [
+        "types/bmp_MS_Windows.xcu",
+        "types/dxf_AutoCAD_Interchange.xcu",
+        "types/emf_MS_Windows_Metafile.xcu",
+        "types/eps_Encapsulated_PostScript.xcu",
+        "types/gif_Graphics_Interchange.xcu",
+        "types/graphic_HTML.xcu",
+        "types/graphic_SWF.xcu",
+        "types/jpg_JPEG.xcu",
+        "types/met_OS2_Metafile.xcu",
+        "types/pbm_Portable_Bitmap.xcu",
+        "types/pcd_Photo_CD_Base.xcu",
+        "types/pcd_Photo_CD_Base16.xcu",
+        "types/pcd_Photo_CD_Base4.xcu",
+        "types/pct_Mac_Pict.xcu",
+        "types/pcx_Zsoft_Paintbrush.xcu",
+        "types/pgm_Portable_Graymap.xcu",
+        "types/png_Portable_Network_Graphic.xcu",
+        "types/ppm_Portable_Pixelmap.xcu",
+        "types/psd_Adobe_Photoshop.xcu",
+        "types/ras_Sun_Rasterfile.xcu",
+        "types/sgf_StarOffice_Writer_SGF.xcu",
+        "types/sgv_StarDraw_20.xcu",
+        "types/svg_Scalable_Vector_Graphics.xcu",
+        "types/svm_StarView_Metafile.xcu",
+        "types/tga_Truevision_TARGA.xcu",
+        "types/tif_Tag_Image_File.xcu",
+        "types/wmf_MS_Windows_Metafile.xcu",
+        "types/xbm_X_Consortium.xcu",
+        "types/xpm_XPM.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+fcfg_merge(
+    name       = "fcfg_drawgraphics_filters",
+    xmlpackage = "Filter",
+    filters = [
+        "filters/BMP___MS_Windows.xcu",
+        "filters/DXF___AutoCAD_Interchange.xcu",
+        "filters/EMF___MS_Windows_Metafile.xcu",
+        "filters/EPS___Encapsulated_PostScript.xcu",
+        "filters/GIF___Graphics_Interchange.xcu",
+        "filters/JPG___JPEG.xcu",
+        "filters/MET___OS_2_Metafile.xcu",
+        "filters/PBM___Portable_Bitmap.xcu",
+        "filters/PCT___Mac_Pict.xcu",
+        "filters/PCX___Zsoft_Paintbrush.xcu",
+        "filters/PGM___Portable_Graymap.xcu",
+        "filters/PNG___Portable_Network_Graphic.xcu",
+        "filters/PPM___Portable_Pixelmap.xcu",
+        "filters/PSD___Adobe_Photoshop.xcu",
+        "filters/RAS___Sun_Rasterfile.xcu",
+        "filters/SGF___StarOffice_Writer_SGF.xcu",
+        "filters/SGV___StarDraw_2_0.xcu",
+        "filters/SVG___Scalable_Vector_Graphics.xcu",
+        "filters/SVM___StarView_Metafile.xcu",
+        "filters/TGA___Truevision_TARGA.xcu",
+        "filters/TIF___Tag_Image_File.xcu",
+        "filters/WMF___MS_Windows_Metafile.xcu",
+        "filters/XBM___X_Consortium.xcu",
+        "filters/XPM.xcu",
+        "filters/draw_PCD_Photo_CD_Base.xcu",
+        "filters/draw_PCD_Photo_CD_Base16.xcu",
+        "filters/draw_PCD_Photo_CD_Base4.xcu",
+        "filters/draw_bmp_Export.xcu",
+        "filters/draw_emf_Export.xcu",
+        "filters/draw_eps_Export.xcu",
+        "filters/draw_flash_Export.xcu",
+        "filters/draw_gif_Export.xcu",
+        "filters/draw_html_Export.xcu",
+        "filters/draw_jpg_Export.xcu",
+        "filters/draw_met_Export.xcu",
+        "filters/draw_pbm_Export.xcu",
+        "filters/draw_pct_Export.xcu",
+        "filters/draw_pgm_Export.xcu",
+        "filters/draw_png_Export.xcu",
+        "filters/draw_ppm_Export.xcu",
+        "filters/draw_ras_Export.xcu",
+        "filters/draw_svg_Export.xcu",
+        "filters/draw_svm_Export.xcu",
+        "filters/draw_tif_Export.xcu",
+        "filters/draw_wmf_Export.xcu",
+        "filters/draw_xpm_Export.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── fcfg_impressgraphics ──────────────────────────────────────────────────────
+
+fcfg_merge(
+    name       = "fcfg_impressgraphics_types",
+    xmlpackage = "Types",
+    types = [
+        "types/bmp_MS_Windows.xcu",
+        "types/emf_MS_Windows_Metafile.xcu",
+        "types/eps_Encapsulated_PostScript.xcu",
+        "types/gif_Graphics_Interchange.xcu",
+        "types/graphic_HTML.xcu",
+        "types/graphic_SWF.xcu",
+        "types/impress_CGM_Computer_Graphics_Metafile.xcu",
+        "types/jpg_JPEG.xcu",
+        "types/met_OS2_Metafile.xcu",
+        "types/pbm_Portable_Bitmap.xcu",
+        "types/pct_Mac_Pict.xcu",
+        "types/pgm_Portable_Graymap.xcu",
+        "types/png_Portable_Network_Graphic.xcu",
+        "types/ppm_Portable_Pixelmap.xcu",
+        "types/ras_Sun_Rasterfile.xcu",
+        "types/svg_Scalable_Vector_Graphics.xcu",
+        "types/svm_StarView_Metafile.xcu",
+        "types/tif_Tag_Image_File.xcu",
+        "types/wmf_MS_Windows_Metafile.xcu",
+        "types/xpm_XPM.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+fcfg_merge(
+    name       = "fcfg_impressgraphics_filters",
+    xmlpackage = "Filter",
+    filters = [
+        "filters/CGM___Computer_Graphics_Metafile.xcu",
+        "filters/impress_bmp_Export.xcu",
+        "filters/impress_emf_Export.xcu",
+        "filters/impress_eps_Export.xcu",
+        "filters/impress_flash_Export.xcu",
+        "filters/impress_gif_Export.xcu",
+        "filters/impress_html_Export.xcu",
+        "filters/impress_jpg_Export.xcu",
+        "filters/impress_met_Export.xcu",
+        "filters/impress_pbm_Export.xcu",
+        "filters/impress_pct_Export.xcu",
+        "filters/impress_pgm_Export.xcu",
+        "filters/impress_png_Export.xcu",
+        "filters/impress_ppm_Export.xcu",
+        "filters/impress_ras_Export.xcu",
+        "filters/impress_svg_Export.xcu",
+        "filters/impress_svm_Export.xcu",
+        "filters/impress_tif_Export.xcu",
+        "filters/impress_wmf_Export.xcu",
+        "filters/impress_xpm_Export.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── fcfg_internalgraphics ─────────────────────────────────────────────────────
+# Note: filters come from internalgraphicfilters/ (not filters/)
+
+fcfg_merge(
+    name       = "fcfg_internalgraphics_types",
+    xmlpackage = "Types",
+    types = [
+        "types/bmp_MS_Windows.xcu",
+        "types/dxf_AutoCAD_Interchange.xcu",
+        "types/emf_MS_Windows_Metafile.xcu",
+        "types/eps_Encapsulated_PostScript.xcu",
+        "types/gif_Graphics_Interchange.xcu",
+        "types/jpg_JPEG.xcu",
+        "types/met_OS2_Metafile.xcu",
+        "types/pbm_Portable_Bitmap.xcu",
+        "types/pcd_Photo_CD_Base.xcu",
+        "types/pcd_Photo_CD_Base16.xcu",
+        "types/pcd_Photo_CD_Base4.xcu",
+        "types/pct_Mac_Pict.xcu",
+        "types/pcx_Zsoft_Paintbrush.xcu",
+        "types/pgm_Portable_Graymap.xcu",
+        "types/png_Portable_Network_Graphic.xcu",
+        "types/ppm_Portable_Pixelmap.xcu",
+        "types/psd_Adobe_Photoshop.xcu",
+        "types/ras_Sun_Rasterfile.xcu",
+        "types/sgf_StarOffice_Writer_SGF.xcu",
+        "types/sgv_StarDraw_20.xcu",
+        "types/svg_Scalable_Vector_Graphics.xcu",
+        "types/svm_StarView_Metafile.xcu",
+        "types/tga_Truevision_TARGA.xcu",
+        "types/tif_Tag_Image_File.xcu",
+        "types/wmf_MS_Windows_Metafile.xcu",
+        "types/xbm_X_Consortium.xcu",
+        "types/xpm_XPM.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+fcfg_merge(
+    name       = "fcfg_internalgraphics_filters",
+    xmlpackage = "GraphicFilter",
+    filters = [
+        "internalgraphicfilters/bmp_Export.xcu",
+        "internalgraphicfilters/bmp_Import.xcu",
+        "internalgraphicfilters/dxf_Import.xcu",
+        "internalgraphicfilters/emf_Export.xcu",
+        "internalgraphicfilters/emf_Import.xcu",
+        "internalgraphicfilters/eps_Export.xcu",
+        "internalgraphicfilters/eps_Import.xcu",
+        "internalgraphicfilters/gif_Export.xcu",
+        "internalgraphicfilters/gif_Import.xcu",
+        "internalgraphicfilters/jpg_Export.xcu",
+        "internalgraphicfilters/jpg_Import.xcu",
+        "internalgraphicfilters/met_Export.xcu",
+        "internalgraphicfilters/met_Import.xcu",
+        "internalgraphicfilters/pbm_Export.xcu",
+        "internalgraphicfilters/pbm_Import.xcu",
+        "internalgraphicfilters/pcd_Import_Base.xcu",
+        "internalgraphicfilters/pcd_Import_Base4.xcu",
+        "internalgraphicfilters/pcd_Import_Base16.xcu",
+        "internalgraphicfilters/pct_Export.xcu",
+        "internalgraphicfilters/pct_Import.xcu",
+        "internalgraphicfilters/pcx_Import.xcu",
+        "internalgraphicfilters/pgm_Export.xcu",
+        "internalgraphicfilters/pgm_Import.xcu",
+        "internalgraphicfilters/png_Export.xcu",
+        "internalgraphicfilters/png_Import.xcu",
+        "internalgraphicfilters/ppm_Export.xcu",
+        "internalgraphicfilters/ppm_Import.xcu",
+        "internalgraphicfilters/psd_Import.xcu",
+        "internalgraphicfilters/ras_Export.xcu",
+        "internalgraphicfilters/ras_Import.xcu",
+        "internalgraphicfilters/sgf_Import.xcu",
+        "internalgraphicfilters/sgv_Import.xcu",
+        "internalgraphicfilters/svg_Export.xcu",
+        "internalgraphicfilters/svg_Import.xcu",
+        "internalgraphicfilters/svm_Export.xcu",
+        "internalgraphicfilters/svm_Import.xcu",
+        "internalgraphicfilters/tga_Import.xcu",
+        "internalgraphicfilters/tif_Export.xcu",
+        "internalgraphicfilters/tif_Import.xcu",
+        "internalgraphicfilters/wmf_Export.xcu",
+        "internalgraphicfilters/wmf_Import.xcu",
+        "internalgraphicfilters/xbm_Import.xcu",
+        "internalgraphicfilters/xpm_Export.xcu",
+        "internalgraphicfilters/xpm_Import.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── fcfg_w4w ──────────────────────────────────────────────────────────────────
+
+fcfg_merge(
+    name       = "fcfg_w4w_types",
+    xmlpackage = "Types",
+    types = [
+        "types/writer_Ami_Pro_1x_31_W4W.xcu",
+        "types/writer_CTOS_DEF_W4W.xcu",
+        "types/writer_Claris_Works_W4W.xcu",
+        "types/writer_DCA_Revisable_Form_Text_W4W.xcu",
+        "types/writer_DCA_with_Display_Write_5_W4W.xcu",
+        "types/writer_DCAFFT_Final_Form_Text_W4W.xcu",
+        "types/writer_DEC_DX_W4W.xcu",
+        "types/writer_DEC_WPS_PLUS_W4W.xcu",
+        "types/writer_DataGeneral_CEO_Write_W4W.xcu",
+        "types/writer_DisplayWrite_20_4x_W4W.xcu",
+        "types/writer_DisplayWrite_5x_W4W.xcu",
+        "types/writer_EBCDIC_W4W.xcu",
+        "types/writer_Enable_W4W.xcu",
+        "types/writer_Frame_Maker_MIF_30_W4W.xcu",
+        "types/writer_Frame_Maker_MIF_40_W4W.xcu",
+        "types/writer_Frame_Maker_MIF_50_W4W.xcu",
+        "types/writer_Frame_Work_III_W4W.xcu",
+        "types/writer_Frame_Work_IV_W4W.xcu",
+        "types/writer_HP_AdvanceWrite_Plus_W4W.xcu",
+        "types/writer_ICL_Office_Power_6_W4W.xcu",
+        "types/writer_ICL_Office_Power_7_W4W.xcu",
+        "types/writer_Interleaf_W4W.xcu",
+        "types/writer_Interleaf_5_6_W4W.xcu",
+        "types/writer_Legacy_Winstar_onGO_W4W.xcu",
+        "types/writer_Lotus_Manuscript_W4W.xcu",
+        "types/writer_MASS_11_Rel_80_83_W4W.xcu",
+        "types/writer_MASS_11_Rel_85_90_W4W.xcu",
+        "types/writer_MS_MacWord_30_W4W.xcu",
+        "types/writer_MS_MacWord_40_W4W.xcu",
+        "types/writer_MS_MacWord_5x_W4W.xcu",
+        "types/writer_MS_WinWord_1x_W4W.xcu",
+        "types/writer_MS_WinWord_2x_W4W.xcu",
+        "types/writer_MS_Word_3x_W4W.xcu",
+        "types/writer_MS_Word_4x_W4W.xcu",
+        "types/writer_MS_Word_5x_W4W.xcu",
+        "types/writer_MS_Word_6x_W4W.xcu",
+        "types/writer_MS_Works_20_DOS_W4W.xcu",
+        "types/writer_MS_Works_30_Win_W4W.xcu",
+        "types/writer_MS_Works_40_Mac_W4W.xcu",
+        "types/writer_Mac_Write_4x_50_W4W.xcu",
+        "types/writer_Mac_Write_II_W4W.xcu",
+        "types/writer_Mac_Write_Pro_W4W.xcu",
+        "types/writer_MultiMate_33_W4W.xcu",
+        "types/writer_MultiMate_4_W4W.xcu",
+        "types/writer_MultiMate_Adv_36_W4W.xcu",
+        "types/writer_MultiMate_Adv_II_37_W4W.xcu",
+        "types/writer_NAVY_DIF_W4W.xcu",
+        "types/writer_OfficeWriter_40_W4W.xcu",
+        "types/writer_OfficeWriter_50_W4W.xcu",
+        "types/writer_OfficeWriter_6x_W4W.xcu",
+        "types/writer_PFS_First_Choice_10_W4W.xcu",
+        "types/writer_PFS_First_Choice_20_W4W.xcu",
+        "types/writer_PFS_First_Choice_30_W4W.xcu",
+        "types/writer_PFS_Write_W4W.xcu",
+        "types/writer_Peach_Text_W4W.xcu",
+        "types/writer_Professional_Write_10_W4W.xcu",
+        "types/writer_Professional_Write_2x_W4W.xcu",
+        "types/writer_Professional_Write_Plus_W4W.xcu",
+        "types/writer_QA_Write_10_30_W4W.xcu",
+        "types/writer_QA_Write_40_W4W.xcu",
+        "types/writer_Rapid_File_10_W4W.xcu",
+        "types/writer_Rapid_File_12_W4W.xcu",
+        "types/writer_Samna_Word_IV_IV_Plus_W4W.xcu",
+        "types/writer_Total_Word_W4W.xcu",
+        "types/writer_Uniplex_V7_V8_W4W.xcu",
+        "types/writer_Uniplex_onGO_W4W.xcu",
+        "types/writer_VolksWriter_3_and_4_W4W.xcu",
+        "types/writer_VolksWriter_Deluxe_W4W.xcu",
+        "types/writer_WITA_W4W.xcu",
+        "types/writer_Wang_II_SWP_W4W.xcu",
+        "types/writer_Wang_PC_W4W.xcu",
+        "types/writer_Wang_WP_Plus_W4W.xcu",
+        "types/writer_Win_Write_3x_W4W.xcu",
+        "types/writer_WiziWord_30_W4W.xcu",
+        "types/writer_WordPerfect_Win_51_52_W4W.xcu",
+        "types/writer_WordPerfect_Win_60_W4W.xcu",
+        "types/writer_WordPerfect_Win_61_W4W.xcu",
+        "types/writer_WordPerfect_Win_70_W4W.xcu",
+        "types/writer_WordPerfect_41_W4W.xcu",
+        "types/writer_WordPerfect_42_W4W.xcu",
+        "types/writer_WordPerfect_50_W4W.xcu",
+        "types/writer_WordPerfect_51_W4W.xcu",
+        "types/writer_WordPerfect_60_W4W.xcu",
+        "types/writer_WordPerfect_61_W4W.xcu",
+        "types/writer_WordPerfect_Mac_1_W4W.xcu",
+        "types/writer_WordPerfect_Mac_2_W4W.xcu",
+        "types/writer_WordPerfect_Mac_3_W4W.xcu",
+        "types/writer_WordStar_Win_1x_20_W4W.xcu",
+        "types/writer_WordStar_2000_Rel_30_W4W.xcu",
+        "types/writer_WordStar_2000_Rel_35_W4W.xcu",
+        "types/writer_WordStar_33x_W4W.xcu",
+        "types/writer_WordStar_345_W4W.xcu",
+        "types/writer_WordStar_40_W4W.xcu",
+        "types/writer_WordStar_50_W4W.xcu",
+        "types/writer_WordStar_55_W4W.xcu",
+        "types/writer_WordStar_60_W4W.xcu",
+        "types/writer_WordStar_70_W4W.xcu",
+        "types/writer_WriteNow_30_Macintosh_W4W.xcu",
+        "types/writer_Writing_Assistant_W4W.xcu",
+        "types/writer_XEROX_XIF_50_Illustrator_W4W.xcu",
+        "types/writer_XEROX_XIF_50_W4W.xcu",
+        "types/writer_XEROX_XIF_60_Color_Bitmap_W4W.xcu",
+        "types/writer_XEROX_XIF_60_Res_Graphic_W4W.xcu",
+        "types/writer_XyWrite_Win_10_W4W.xcu",
+        "types/writer_XyWrite_III_W4W.xcu",
+        "types/writer_XyWrite_IIIP_W4W.xcu",
+        "types/writer_XyWrite_IV_W4W.xcu",
+        "types/writer_XyWrite_Sig_Win_W4W.xcu",
+        "types/writer_XyWrite_Signature_W4W.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+fcfg_merge(
+    name       = "fcfg_w4w_filters",
+    xmlpackage = "Filter",
+    filters = [
+        "filters/Ami_Pro_1_x_3_1__W4W_.xcu",
+        "filters/CTOS_DEF__W4W_.xcu",
+        "filters/Claris_Works__W4W_.xcu",
+        "filters/DCA_Revisable_Form_Text__W4W_.xcu",
+        "filters/DCA_with_Display_Write_5__W4W_.xcu",
+        "filters/DCA_FFT_Final_Form_Text__W4W_.xcu",
+        "filters/DEC_DX__W4W_.xcu",
+        "filters/DEC_WPS_PLUS__W4W_.xcu",
+        "filters/DataGeneral_CEO_Write__W4W_.xcu",
+        "filters/DisplayWrite_2_0_4_x__W4W_.xcu",
+        "filters/DisplayWrite_5_x__W4W_.xcu",
+        "filters/EBCDIC__W4W_.xcu",
+        "filters/Enable__W4W_.xcu",
+        "filters/Frame_Maker_MIF_3_0__W4W_.xcu",
+        "filters/Frame_Maker_MIF_4_0__W4W_.xcu",
+        "filters/Frame_Maker_MIF_5_0__W4W_.xcu",
+        "filters/Frame_Work_III__W4W_.xcu",
+        "filters/Frame_Work_IV___W4W_.xcu",
+        "filters/HP_AdvanceWrite_Plus__W4W_.xcu",
+        "filters/ICL_Office_Power_6__W4W_.xcu",
+        "filters/ICL_Office_Power_7__W4W_.xcu",
+        "filters/Interleaf__W4W_.xcu",
+        "filters/Interleaf_5___6__W4W_.xcu",
+        "filters/Legacy_Winstar_onGO__W4W_.xcu",
+        "filters/Lotus_Manuscript__W4W_.xcu",
+        "filters/MASS_11_Rel__8_0_8_3__W4W_.xcu",
+        "filters/MASS_11_Rel__8_5_9_0__W4W_.xcu",
+        "filters/MS_MacWord_3_0__W4W_.xcu",
+        "filters/MS_MacWord_4_0__W4W_.xcu",
+        "filters/MS_MacWord_5_x__W4W_.xcu",
+        "filters/MS_WinWord_1_x__W4W_.xcu",
+        "filters/MS_WinWord_2_x__W4W_.xcu",
+        "filters/MS_Word_3_x__W4W_.xcu",
+        "filters/MS_Word_4_x__W4W_.xcu",
+        "filters/MS_Word_5_x__W4W_.xcu",
+        "filters/MS_Word_6_x__W4W_.xcu",
+        "filters/MS_Works_2_0_DOS__W4W_.xcu",
+        "filters/MS_Works_3_0_Win__W4W_.xcu",
+        "filters/MS_Works_4_0_Mac__W4W_.xcu",
+        "filters/Mac_Write_4_x_5_0__W4W_.xcu",
+        "filters/Mac_Write_II__W4W_.xcu",
+        "filters/Mac_Write_Pro__W4W_.xcu",
+        "filters/MultiMate_3_3__W4W_.xcu",
+        "filters/MultiMate_4__W4W_.xcu",
+        "filters/MultiMate_Adv__3_6__W4W_.xcu",
+        "filters/MultiMate_Adv__II_3_7__W4W_.xcu",
+        "filters/NAVY_DIF__W4W_.xcu",
+        "filters/OfficeWriter_4_0__W4W_.xcu",
+        "filters/OfficeWriter_5_0__W4W_.xcu",
+        "filters/OfficeWriter_6_x__W4W_.xcu",
+        "filters/PFS_First_Choice_1_0__W4W_.xcu",
+        "filters/PFS_First_Choice_2_0__W4W_.xcu",
+        "filters/PFS_First_Choice_3_0__W4W_.xcu",
+        "filters/PFS_Write__W4W_.xcu",
+        "filters/Peach_Text__W4W_.xcu",
+        "filters/Professional_Write_1_0__W4W_.xcu",
+        "filters/Professional_Write_2_x__W4W_.xcu",
+        "filters/Professional_Write_Plus__W4W_.xcu",
+        "filters/Q_A_Write_1_0_3_0__W4W_.xcu",
+        "filters/Q_A_Write_4_0__W4W_.xcu",
+        "filters/Rapid_File_1_0__W4W_.xcu",
+        "filters/Rapid_File_1_2__W4W_.xcu",
+        "filters/Samna_Word_IV_IV_Plus__W4W_.xcu",
+        "filters/Total_Word__W4W_.xcu",
+        "filters/Uniplex_V7_V8__W4W_.xcu",
+        "filters/Uniplex_onGO__W4W_.xcu",
+        "filters/VolksWriter_3_and_4__W4W_.xcu",
+        "filters/VolksWriter_Deluxe__W4W_.xcu",
+        "filters/WITA__W4W_.xcu",
+        "filters/Wang_II_SWP__W4W_.xcu",
+        "filters/Wang_PC__W4W_.xcu",
+        "filters/Wang_WP_Plus__W4W_.xcu",
+        "filters/Win_Write_3_x__W4W_.xcu",
+        "filters/WiziWord_3_0__W4W_.xcu",
+        "filters/WordPerfect__Win__5_1_5_2__W4W_.xcu",
+        "filters/WordPerfect__Win__6_0__W4W_.xcu",
+        "filters/WordPerfect__Win__6_1__W4W_.xcu",
+        "filters/WordPerfect__Win__7_0__W4W_.xcu",
+        "filters/WordPerfect_4_1__W4W_.xcu",
+        "filters/WordPerfect_4_2__W4W_.xcu",
+        "filters/WordPerfect_5_0__W4W_.xcu",
+        "filters/WordPerfect_5_1__W4W_.xcu",
+        "filters/WordPerfect_6_0__W4W_.xcu",
+        "filters/WordPerfect_6_1__W4W_.xcu",
+        "filters/WordPerfect_Mac_1__W4W_.xcu",
+        "filters/WordPerfect_Mac_2__W4W_.xcu",
+        "filters/WordPerfect_Mac_3__W4W_.xcu",
+        "filters/WordStar__Win__1_x_2_0__W4W_.xcu",
+        "filters/WordStar_2000_Rel__3_0__W4W_.xcu",
+        "filters/WordStar_2000_Rel__3_5__W4W_.xcu",
+        "filters/WordStar_3_3x__W4W_.xcu",
+        "filters/WordStar_3_45__W4W_.xcu",
+        "filters/WordStar_4_0___W4W_.xcu",
+        "filters/WordStar_5_0___W4W_.xcu",
+        "filters/WordStar_5_5___W4W_.xcu",
+        "filters/WordStar_6_0___W4W_.xcu",
+        "filters/WordStar_7_0___W4W_.xcu",
+        "filters/WriteNow_3_0__Macintosh___W4W_.xcu",
+        "filters/Writing_Assistant__W4W_.xcu",
+        "filters/XEROX_XIF_5_0__Illustrator___W4W_.xcu",
+        "filters/XEROX_XIF_5_0__W4W_.xcu",
+        "filters/XEROX_XIF_6_0__Color_Bitmap___W4W_.xcu",
+        "filters/XEROX_XIF_6_0__Res_Graphic___W4W_.xcu",
+        "filters/XyWrite__Win__1_0__W4W_.xcu",
+        "filters/XyWrite_III___W4W_.xcu",
+        "filters/XyWrite_III____W4W_.xcu",
+        "filters/XyWrite_IV__W4W_.xcu",
+        "filters/XyWrite_Sig___Win___W4W_.xcu",
+        "filters/XyWrite_Signature__W4W_.xcu",
+    ],
+    visibility = ["//visibility:public"],
+)

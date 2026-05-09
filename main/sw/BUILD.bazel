@@ -1,3 +1,5 @@
+package(default_visibility = ["//visibility:public"])
+
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 load("//build/rules:rsc_pipeline.bzl", "rsc_res")
 load("//build/rules:sdi_target.bzl", "sdi_target")
@@ -1285,6 +1287,7 @@ cc_binary(
         ":sw_source_filter_inc",
         ":sw_source_ui_inc",
         ":sw_source_hdrs",
+        "//main/writerfilter:writerfilter_headers",
         "//main/stlport:stlport",
         "@boost.legacy//:boost.legacy",
     ],
