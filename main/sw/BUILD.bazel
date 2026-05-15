@@ -961,7 +961,10 @@ cc_binary(
         "inc/pch/precompiled_sw.cxx",
     ],
     copts   = _COPTS,
-    defines = _DEFINES + ["SW_DLLIMPLEMENTATION"],
+    # _HAS_ITERATOR_DEBUGGING=0: crbm.cxx uses a boost::bind heterogeneous
+    # comparator with std::upper_bound; MSVC debug validation calls
+    # comp(shared_ptr<IMark>, shared_ptr<IMark>) which the binder can't satisfy.
+    defines = _DEFINES + ["SW_DLLIMPLEMENTATION", "_HAS_ITERATOR_DEBUGGING=0"],
     linkshared = True,
     deps = [
         ":sw_headers",

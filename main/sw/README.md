@@ -70,6 +70,12 @@ filenames with digits (`w1class.hxx`).
 `MSC` must be defined. Without it, `htmlatr.cxx` triggers a `#error` checking the `ATTRFNTAB_SIZE`
 table — the condition is `#if !defined(MSC) && !defined(UNX) && ...`.
 
+`_HAS_ITERATOR_DEBUGGING=0` is set on `sw.dll`. `crbm.cxx` passes a `boost::bind`
+heterogeneous comparator to `std::upper_bound`; MSVC debug STL validation then calls
+`comp(shared_ptr<IMark>, shared_ptr<IMark>)` to verify the range is sorted, which
+the binder cannot satisfy. The code is correct C++; this is the same MSVC debug-probe
+limitation seen in `connectivity` (`CompareDriverAccessToName`, `PropertyStringLessFunctor`).
+
 **2. Quoted relative includes like `"../rtf/swparrtf.hxx"`**
 MSVC `cl.exe` resolves quoted includes relative to the **directory of the file containing the `#include`**,
 not the working directory. So `source/filter/ww8/rtfimportfilter.cxx` including `"../rtf/swparrtf.hxx"`
