@@ -86,8 +86,12 @@ cc_binary(
         "/DBOOST_SPIRIT_USE_OLD_NAMESPACE",
         "/DCONN_SHARED_RESOURCE_FILE=cnr",
     ],
+    # _HAS_ITERATOR_DEBUGGING=0: same heterogeneous-comparator issue as sdbc2;
+    # comphelper::PropertyStringLessFunctor used with std::lower_bound trips
+    # MSVC debug validation in dbtools.cxx.
     defines = _DEFINES + [
         "OOO_DLLIMPLEMENTATION_DBTOOLS",
+        "_HAS_ITERATOR_DEBUGGING=0",
     ],
     linkshared = True,
     deps = [

@@ -39,8 +39,9 @@ files as textual fragments (declared via `_parse_generated` cc_library).
 - `CONN_SHARED_RESOURCE_FILE=cnr` names the shared resource bundle
 - `/Imain/soltools/winunistd` needed because flex-generated `sqlflex.cxx` includes `<unistd.h>`
 - stlport required by `sdbc2` for `std::unary_compose` (SGI extension)
-- `_HAS_ITERATOR_DEBUGGING=0` on `sdbc2`: `mdrivermanager.cxx` uses a heterogeneous
-  comparator with `std::equal_range`; MSVC debug STL validates the range by calling
-  `comp(DriverAccess, DriverAccess)` which the comparator doesn't provide — semantically
-  correct C++ but the MSVC debug probe trips on it
+- `_HAS_ITERATOR_DEBUGGING=0` on `dbtools` and `sdbc2`: both DLLs use heterogeneous
+  comparators (`comphelper::PropertyStringLessFunctor`, `CompareDriverAccessToName`)
+  with `std::lower_bound`/`std::equal_range`; MSVC debug STL validates the range by
+  calling `comp(T, T)` which these comparators don't provide — semantically correct C++
+  but the MSVC debug probe trips on it; applied per-binary for consistency across TUs
 - Drivers (ado, odbc, dbase, calc, flat, hsqldb, jdbc, mysql, …) are not yet migrated
