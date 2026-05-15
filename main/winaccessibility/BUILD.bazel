@@ -215,7 +215,7 @@ cc_binary(
         "//main/tools:tl_implib",
         "//main/vcl:vcl_implib",
         "//main/toolkit:ootk_implib",
-        "//main/vos:vos3_implib",
+        "//main/vos:vos3MSC_implib",
     ],
     linkopts = [
         "$(execpath //main/sal:sal_implib)",
@@ -224,7 +224,7 @@ cc_binary(
         "$(execpath //main/tools:tl_implib)",
         "$(execpath //main/vcl:vcl_implib)",
         "$(execpath //main/toolkit:ootk_implib)",
-        "$(execpath //main/vos:vos3_implib)",
+        "$(execpath //main/vos:vos3MSC_implib)",
         "gdi32.lib", "winspool.lib", "ole32.lib", "shell32.lib",
         "advapi32.lib", "imm32.lib", "uuid.lib", "oleacc.lib",
         "/MANIFEST:NO",

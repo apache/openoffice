@@ -22,7 +22,7 @@ cc_library(
 
 # ── i18nutil.dll ──────────────────────────────────────────────────
 cc_binary(
-    name = "i18nutil",
+    name = "i18nutilMSC",
     srcs = [
         # exception-enabled
         "source/utility/casefolding.cxx",
@@ -58,8 +58,8 @@ cc_binary(
 )
 
 filegroup(
-    name = "i18nutil_implib",
-    srcs = [":i18nutil"],
+    name = "i18nutilMSC_implib",
+    srcs = [":i18nutilMSC"],
     output_group = "interface_library",
     visibility = ["//visibility:public"],
 )

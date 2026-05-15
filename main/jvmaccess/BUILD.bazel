@@ -32,7 +32,7 @@ cc_library(
 
 # ── jvmaccess.dll ────────────────────────────────────────────────────
 cc_binary(
-    name = "jvmaccess",
+    name = "jvmaccess3MSC",
     srcs = [
         "source/classpath.cxx",
         "source/unovirtualmachine.cxx",
@@ -66,8 +66,8 @@ cc_binary(
 
 # ── import library for downstream consumers ──────────────────────────
 filegroup(
-    name = "jvmaccess_implib",
-    srcs = [":jvmaccess"],
+    name = "jvmaccess3MSC_implib",
+    srcs = [":jvmaccess3MSC"],
     output_group = "interface_library",
     visibility = ["//visibility:public"],
 )

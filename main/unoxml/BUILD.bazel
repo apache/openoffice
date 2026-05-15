@@ -33,8 +33,8 @@ _LINKINPUTS = [
     "//main/sal:sal_implib",
     "//main/cppu:cppu3_implib",
     "//main/cppuhelper:cppuhelper_implib",
-    "//main/comphelper:comphelp_implib",
-    "//main/ucbhelper:ucbhelper_implib",
+    "//main/comphelper:comphelpMSC_implib",
+    "//main/ucbhelper:ucbhelperMSC_implib",
     "//main/sax:sax_implib",
 ]
 
@@ -42,8 +42,8 @@ _LINKOPTS = [
     "$(execpath //main/sal:sal_implib)",
     "$(execpath //main/cppu:cppu3_implib)",
     "$(execpath //main/cppuhelper:cppuhelper_implib)",
-    "$(execpath //main/comphelper:comphelp_implib)",
-    "$(execpath //main/ucbhelper:ucbhelper_implib)",
+    "$(execpath //main/comphelper:comphelpMSC_implib)",
+    "$(execpath //main/ucbhelper:ucbhelperMSC_implib)",
     "$(execpath //main/sax:sax_implib)",
     "/MANIFEST:NO",
 ]

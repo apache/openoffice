@@ -140,7 +140,7 @@ _SRCS = [
 # Comphelper utility library.
 # Exports via COMPHELPER_DLLPUBLIC (SAL_DLLPUBLIC_EXPORT) — no DEF file.
 cc_binary(
-    name = "comphelp",
+    name = "comphelpMSC",
     srcs = _SRCS,
     copts = [
         "/Imain/comphelper/inc/pch",
@@ -167,16 +167,16 @@ cc_binary(
         "//main/cppu:cppu3_implib",
         "//main/cppuhelper:cppuhelper_implib",
         "//main/salhelper:salhelper_implib",
-        "//main/ucbhelper:ucbhelper_implib",
-        "//main/vos:vos3_implib",
+        "//main/ucbhelper:ucbhelperMSC_implib",
+        "//main/vos:vos3MSC_implib",
     ],
     linkopts = [
         "$(execpath //main/sal:sal_implib)",
         "$(execpath //main/cppu:cppu3_implib)",
         "$(execpath //main/cppuhelper:cppuhelper_implib)",
         "$(execpath //main/salhelper:salhelper_implib)",
-        "$(execpath //main/ucbhelper:ucbhelper_implib)",
-        "$(execpath //main/vos:vos3_implib)",
+        "$(execpath //main/ucbhelper:ucbhelperMSC_implib)",
+        "$(execpath //main/vos:vos3MSC_implib)",
         "/MANIFEST:NO",
     ],
     visibility = ["//visibility:public"],
@@ -184,8 +184,8 @@ cc_binary(
 
 # ── import library for downstream ─────────────────────────────────
 filegroup(
-    name = "comphelp_implib",
-    srcs = [":comphelp"],
+    name = "comphelpMSC_implib",
+    srcs = [":comphelpMSC"],
     output_group = "interface_library",
     visibility = ["//visibility:public"],
 )

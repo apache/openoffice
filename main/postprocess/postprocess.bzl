@@ -33,7 +33,8 @@ _PERL = "@strawberry-perl//:perl_exe"
 # ── services_rdb ─────────────────────────────────────────────────────────────
 
 def _services_rdb_impl(ctx):
-    rdb_file   = ctx.actions.declare_file(ctx.label.name + ".rdb")
+    out_name   = ctx.attr.out if ctx.attr.out else ctx.label.name + ".rdb"
+    rdb_file   = ctx.actions.declare_file(out_name)
     input_file = ctx.actions.declare_file(ctx.label.name + ".input")
 
     perl   = ctx.file._perl
@@ -77,6 +78,10 @@ services_rdb = rule(
         "components": attr.label_list(
             allow_files = True,
             doc = ".component XML files to merge into the output .rdb",
+        ),
+        "out": attr.string(
+            default = "",
+            doc     = "Output filename (default: <name>.rdb)",
         ),
         "xslt": attr.label(
             allow_single_file = True,

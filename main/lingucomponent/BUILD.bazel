@@ -36,7 +36,7 @@ _IMPLIBS = [
     "//main/cppuhelper:cppuhelper_implib",
     "//main/tools:tl_implib",
     "//main/unotools:utl_implib",
-    "//main/i18npool:i18nisolang1_implib",
+    "//main/i18npool:i18nisolang1MSC_implib",
     "//main/linguistic:lng_implib",
 ]
 
@@ -46,7 +46,7 @@ _IMPLIB_LINKOPTS = [
     "$(execpath //main/cppuhelper:cppuhelper_implib)",
     "$(execpath //main/tools:tl_implib)",
     "$(execpath //main/unotools:utl_implib)",
-    "$(execpath //main/i18npool:i18nisolang1_implib)",
+    "$(execpath //main/i18npool:i18nisolang1MSC_implib)",
     "$(execpath //main/linguistic:lng_implib)",
     "/MANIFEST:NO",
 ]
@@ -83,11 +83,11 @@ cc_binary(
     ] + _HDR_DEPS,
     additional_linker_inputs = _IMPLIBS + [
         "//main/svl:svl_implib",
-        "//main/ucbhelper:ucbhelper_implib",
+        "//main/ucbhelper:ucbhelperMSC_implib",
     ],
     linkopts = _IMPLIB_LINKOPTS + [
         "$(execpath //main/svl:svl_implib)",
-        "$(execpath //main/ucbhelper:ucbhelper_implib)",
+        "$(execpath //main/ucbhelper:ucbhelperMSC_implib)",
     ],
     visibility = ["//visibility:public"],
 )

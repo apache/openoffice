@@ -235,3 +235,40 @@ cc_library(
     ],
     visibility = ["//visibility:public"],
 )
+
+# ── python.exe — interpreter launcher ─────────────────────────────────
+# Tiny wrapper: calls Py_Main() in python27.dll.
+# Matches PC/VS9.0/python.vcproj which compiled only Modules/python.c.
+# Installed both flat in program/ and as python-core-2.7.18/bin/python.exe.
+cc_binary(
+    name = "python",
+    srcs = ["Modules/python.c"],
+    includes = ["Include", "PC"],
+    local_defines = select({
+        "@platforms//os:windows": _WIN_DLL_DEFINES,
+        "//conditions:default": [],
+    }),
+    copts = select({
+        "@platforms//os:windows": _WIN_DLL_COPTS,
+        "//conditions:default": ["-w"],
+    }),
+    additional_linker_inputs = [":python27_implib"],
+    linkopts = select({
+        "@platforms//os:windows": [
+            "$(execpath :python27_implib)",
+            "/SUBSYSTEM:CONSOLE",
+            "/MANIFEST:NO",
+        ],
+        "//conditions:default": [],
+    }),
+    visibility = ["//visibility:public"],
+)
+
+# ── Python standard library ────────────────────────────────────────────
+# All .py (and a few data) files from Lib/ — installed under
+# program/python-core-2.7.18/lib/ in the staging layout.
+filegroup(
+    name = "python_lib",
+    srcs = glob(["Lib/**"]),
+    visibility = ["//visibility:public"],
+)

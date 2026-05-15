@@ -44,15 +44,15 @@ _TOOLS_DEPS = [
 _TOOLS_LINKER_INPUTS = [
     "//main/sal:sal_implib",
     "//main/tools:tl_implib",
-    "//main/i18npool:i18nisolang1_implib",
-    "//main/vos:vos3_implib",
+    "//main/i18npool:i18nisolang1MSC_implib",
+    "//main/vos:vos3MSC_implib",
 ]
 
 _TOOLS_LINKOPTS = [
     "$(execpath //main/sal:sal_implib)",
     "$(execpath //main/tools:tl_implib)",
-    "$(execpath //main/i18npool:i18nisolang1_implib)",
-    "$(execpath //main/vos:vos3_implib)",
+    "$(execpath //main/i18npool:i18nisolang1MSC_implib)",
+    "$(execpath //main/vos:vos3MSC_implib)",
     "/MANIFEST:NO",
     "kernel32.lib",
     "user32.lib",

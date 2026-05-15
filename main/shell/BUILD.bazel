@@ -381,12 +381,12 @@ cc_binary(
     additional_linker_inputs = [
         "//main/sal:sal_implib",
         "//main/tools:tl_implib",
-        "//main/i18npool:i18nisolang1_implib",
+        "//main/i18npool:i18nisolang1MSC_implib",
     ],
     linkopts = [
         "$(execpath //main/sal:sal_implib)",
         "$(execpath //main/tools:tl_implib)",
-        "$(execpath //main/i18npool:i18nisolang1_implib)",
+        "$(execpath //main/i18npool:i18nisolang1MSC_implib)",
     ],
     deps = [
         "//main/sal:sal_headers",

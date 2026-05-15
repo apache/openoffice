@@ -1,5 +1,6 @@
 load("@rules_cc//cc:defs.bzl", "cc_library")
 load("//build/rules:idl_pipeline.bzl", "idl_library")
+load("//build/rules:merge_rdb.bzl", "merge_rdb")
 
 # Files present on disk but NOT listed in UnoApi_oovbaapi.mk — excluded to
 # match the original build's explicit file list exactly.
@@ -34,5 +35,16 @@ cc_library(
     name = "oovbaapi_idl_headers",
     hdrs = [":oovbaapi_idl"],
     includes = ["oovbaapi_idl_inc"],
+    visibility = ["//visibility:public"],
+)
+
+# ── oovbaapi.rdb — VBA API type library ───────────────────────────────────────
+# Mirrors UnoApi_oovbaapi.mk output. Single-source merge renames the file from
+# oovbaapi_idl.rdb to the install-required oovbaapi.rdb.
+# Installed to program/oovbaapi.rdb (loaded via URE_MORE_TYPES in fundamental.ini).
+merge_rdb(
+    name = "oovbaapi_rdb",
+    rdbs = [":oovbaapi_idl"],
+    out  = "oovbaapi.rdb",
     visibility = ["//visibility:public"],
 )

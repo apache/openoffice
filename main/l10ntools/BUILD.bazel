@@ -43,13 +43,13 @@ _TOOL_DEPS = [
 _TOOL_LINKER_INPUTS = [
     "//main/sal:sal_implib",
     "//main/tools:tl_implib",
-    "//main/vos:vos3_implib",
+    "//main/vos:vos3MSC_implib",
 ]
 
 _TOOL_LINKOPTS = [
     "$(execpath //main/sal:sal_implib)",
     "$(execpath //main/tools:tl_implib)",
-    "$(execpath //main/vos:vos3_implib)",
+    "$(execpath //main/vos:vos3MSC_implib)",
     "/MANIFEST:NO",
     "kernel32.lib",
     "user32.lib",

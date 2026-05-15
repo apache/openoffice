@@ -44,7 +44,7 @@ cc_library(
 
 # ── jvmfwk.dll ───────────────────────────────────────────────────
 cc_binary(
-    name = "jvmfwk",
+    name = "jvmfwk3",
     srcs = [
         "source/elements.cxx",
         "source/elements.hxx",
@@ -81,8 +81,8 @@ cc_binary(
 
 # ── import library for downstream DLLs ───────────────────────────
 filegroup(
-    name = "jvmfwk_implib",
-    srcs = [":jvmfwk"],
+    name = "jvmfwk3_implib",
+    srcs = [":jvmfwk3"],
     output_group = "interface_library",
     visibility = ["//visibility:public"],
 )

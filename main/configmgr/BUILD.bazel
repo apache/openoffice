@@ -71,7 +71,7 @@ cc_binary(
         "//main/cppu:cppu3_implib",
         "//main/cppuhelper:cppuhelper_implib",
         "//main/salhelper:salhelper_implib",
-        "//main/comphelper:comphelp_implib",
+        "//main/comphelper:comphelpMSC_implib",
         "//main/xmlreader:xmlreader_implib",
     ],
     linkopts = [
@@ -79,7 +79,7 @@ cc_binary(
         "$(execpath //main/cppu:cppu3_implib)",
         "$(execpath //main/cppuhelper:cppuhelper_implib)",
         "$(execpath //main/salhelper:salhelper_implib)",
-        "$(execpath //main/comphelper:comphelp_implib)",
+        "$(execpath //main/comphelper:comphelpMSC_implib)",
         "$(execpath //main/xmlreader:xmlreader_implib)",
         "/MANIFEST:NO",
     ],

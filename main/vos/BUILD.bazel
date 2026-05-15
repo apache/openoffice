@@ -28,7 +28,7 @@ cc_library(
 
 # ── vos3.dll ──────────────────────────────────────────────────────
 cc_binary(
-    name = "vos3",
+    name = "vos3MSC",
     srcs = [
         "source/conditn.cxx",
         "source/module.cxx",
@@ -64,8 +64,8 @@ cc_binary(
 
 # ── import library for downstream ─────────────────────────────────
 filegroup(
-    name = "vos3_implib",
-    srcs = [":vos3"],
+    name = "vos3MSC_implib",
+    srcs = [":vos3MSC"],
     output_group = "interface_library",
     visibility = ["//visibility:public"],
 )

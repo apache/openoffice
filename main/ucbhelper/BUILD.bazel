@@ -61,7 +61,7 @@ _SRCS = [
 # Universal Content Broker helper library.
 # Exports via UCBHELPER_DLLPUBLIC (SAL_DLLPUBLIC_EXPORT) — no DEF file.
 cc_binary(
-    name = "ucbhelper",
+    name = "ucbhelperMSC",
     srcs = _SRCS,
     copts = ["/Imain/ucbhelper/inc/pch"],
     defines = _DEFINES,
@@ -94,8 +94,8 @@ cc_binary(
 
 # ── import library for downstream ─────────────────────────────────
 filegroup(
-    name = "ucbhelper_implib",
-    srcs = [":ucbhelper"],
+    name = "ucbhelperMSC_implib",
+    srcs = [":ucbhelperMSC"],
     output_group = "interface_library",
     visibility = ["//visibility:public"],
 )

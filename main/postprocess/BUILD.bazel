@@ -3,13 +3,11 @@
 # Outputs
 # ───────
 #   services_rdb      → services.rdb  + services.input
-#   ooo_services_rdb  → ooo-services.rdb + ooo-services.input
 #   uiconfig_zip      → uiconfig.zip
 #
 # How to build
 # ────────────
 #   bazel build //main/postprocess:services_rdb
-#   bazel build //main/postprocess:ooo_services_rdb
 #   bazel build //main/postprocess:uiconfig_zip
 #   bazel build //main/postprocess:all          # all three
 #
@@ -356,10 +354,8 @@ _SERVICES_COMPONENTS = [
 
     # ── accessibility (Java UNO bridge — Windows) ─────────────────────────
     "//main/accessibility:java/java_uno_accessbridge/java_uno_accessbridge.component",
-]
 
-# ooo-services.rdb — only mailmerge (loaded separately by configmgr)
-_OOO_SERVICES_COMPONENTS = [
+    # ── mail merge (was separate ooo-services.rdb in OOo 3.x, merged here in 4.x) ──
     "//main/scripting:source/pyprov/mailmerge.component",
 ]
 
@@ -385,13 +381,7 @@ _UICONFIG_SRCS = [
 services_rdb(
     name       = "services_rdb",
     components = _SERVICES_COMPONENTS,
-    xslt       = "//main/solenv/bin:packcomponents.xslt",
-    visibility = ["//visibility:public"],
-)
-
-services_rdb(
-    name       = "ooo_services_rdb",
-    components = _OOO_SERVICES_COMPONENTS,
+    out        = "services.rdb",
     xslt       = "//main/solenv/bin:packcomponents.xslt",
     visibility = ["//visibility:public"],
 )
@@ -407,7 +397,6 @@ filegroup(
     name = "all",
     srcs = [
         ":services_rdb",
-        ":ooo_services_rdb",
         ":uiconfig_zip",
     ],
     visibility = ["//visibility:public"],

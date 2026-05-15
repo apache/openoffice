@@ -1,358 +1,274 @@
-# main/staging — assemble all Bazel outputs into a runnable OpenOffice layout.
-#
-# Build:
-#   bazel build //main/staging:install
-#
-# Run (from repo root):
-#   bazel-bin\main\staging\install\program\soffice.exe
-#
-# The staged tree:
-#   bazel-bin/main/staging/install/
-#     program/      ← all DLLs + EXEs + services.rdb + types.rdb + offapi.rdb
-#     share/registry/  ← *.xcd configuration packages
+load("//main/staging:collect_files_aspect.bzl", "collect_outputs", "flat_install", "tree_install")
 
-load(":stage_install.bzl", "stage_install")
+# ── Flat program/ files (DLLs, EXEs, RDBs, ZIPs, .py scripts, .ini) ─────────
+collect_outputs(
+    name = "all_files",
+    deps = [
+        # ── Core launcher (pulls compile-time transitive DLLs transitively) ──
+        "//main/desktop:soffice",
 
-# ── Bootstrap + UNO runtime ───────────────────────────────────────────────────
-_SAL = [
-    "//main/sal:sal3",
-    "//main/sal:uwinapi",
-    "//main/salhelper:salhelper3MSC",
-    "//main/store:store",
-    "//main/registry:reg",
-    "//main/cppu:cppu3",
-    "//main/cppu:purpenvhelper3MSC",
-    "//main/cppu:unsafe_uno_uno",
-    "//main/cppu:affine_uno_uno",
-    "//main/cppu:log_uno_uno",
-    "//main/cppuhelper:cppuhelper3MSC",
-    "//main/bridges:msci_uno",
-    "//main/xmlreader:xmlreader",
-    "//main/stoc:bootstrap.uno",
-    "//main/stoc:stocservices.uno",
-    "//main/jvmfwk:jvmfwk",
-    "//main/jvmaccess:jvmaccess",
-    "//main/jurt:jpipe",
-    "//main/jurt:jpipx",
-    "//main/vos:vos3",
-    "//main/binaryurp:binaryurp",
-    "//main/remotebridges:uuresolver",
-]
+        # ── UNO runtime infrastructure ────────────────────────────────────────
+        "//main/stoc:bootstrap.uno",
+        "//main/stoc:stocservices.uno",
+        "//main/binaryurp:binaryurp",
+        "//main/bridges:msci_uno",
+        "//main/io:streams",
+        "//main/io:acceptor",
+        "//main/io:connector",
+        "//main/io:textinstream",
+        "//main/io:textoutstream",
+        "//main/remotebridges:uuresolver",
+        "//main/configmgr:configmgr.uno",
 
-# ── IO + helpers ──────────────────────────────────────────────────────────────
-_IO = [
-    "//main/io:streams",
-    "//main/io:acceptor",
-    "//main/io:connector",
-    "//main/io:textinstream",
-    "//main/io:textoutstream",
-]
+        # ── Storage / XML / UCB ───────────────────────────────────────────────
+        "//main/package:package2",
+        "//main/package:xstor",
+        "//main/unoxml:unoxml",
+        "//main/ucb:ucb1",
+        "//main/ucb:cached1",
+        "//main/ucb:srtrs1",
+        "//main/ucb:ucpfile1",
+        "//main/ucb:ucphier1",
+        "//main/ucb:ucppkg1",
+        "//main/ucb:ucpdav1",
+        "//main/ucb:ucpftp1",
+        "//main/ucb:ucpexpand1",
+        "//main/ucb:ucpext",
+        "//main/ucb:ucptdoc1",
+        "//main/shell:localebe1.uno",
+        "//main/shell:wininetbe1.uno",
+        "//main/shell:syssh.uno",
 
-# ── Core utility libs ─────────────────────────────────────────────────────────
-_UTIL = [
-    "//main/comphelper:comphelp",
-    "//main/configmgr:configmgr.uno",
-    "//main/i18nutil:i18nutil",
-    "//main/ucbhelper:ucbhelper",
-    "//main/tools:tl",
-    "//main/sot:sot",
-    "//main/unotools:utl",
-    "//main/xmlscript:xcr",
-    "//main/sax:sax",
-    "//main/sax:expwrap",
-    "//main/sax:fastsax",
-    "//main/package:package2",
-    "//main/package:xstor",
-    "//main/eventattacher:evtatt",
-    "//main/unoxml:unoxml",
-    "//main/UnoControls:ctl",
-    "//main/fileaccess:fileacc",
-]
+        # ── SAX ──────────────────────────────────────────────────────────────
+        "//main/sax:expwrap",
+        "//main/sax:fastsax",
 
-# ── Shell / platform backends ─────────────────────────────────────────────────
-_SHELL = [
-    "//main/shell:syssh.uno",
-    "//main/shell:localebe1.uno",
-    "//main/shell:wininetbe1.uno",
-]
+        # ── i18n ──────────────────────────────────────────────────────────────
+        "//main/i18npool/pool:i18npool",
+        "//main/i18npool/pool:i18nsearch",
 
-# ── i18n ──────────────────────────────────────────────────────────────────────
-_I18N = [
-    "//main/i18npool:i18nisolang1",
-    "//main/i18npool:i18npaper",
-    "//main/i18npool/pool:i18npool",
-    "//main/i18npool/pool:i18nsearch",
-]
+        # ── Linguistic ────────────────────────────────────────────────────────
+        "//main/lingucomponent:spell",
+        "//main/lingucomponent:hyphen_uno",
+        "//main/lingucomponent:lnth",
+        "//main/lingucomponent:guesslang",
 
-# ── Graphics / VCL ────────────────────────────────────────────────────────────
-_GFX = [
-    "//main/basegfx:basegfx",
-    "//main/vcl:vcl",
-    "//main/svgio:svgio",
-    "//main/canvas:canvastools",
-    "//main/canvas:canvasfactory",
-    "//main/canvas:nullcanvas",
-    "//main/canvas:simplecanvas",
-    "//main/canvas:vclcanvas",
-    "//main/canvas:directx9canvas",
-    "//main/canvas:gdipluscanvas",
-    "//main/cppcanvas:cppcanvas",
-    "//main/drawinglayer:drawinglayer",
-]
+        # ── Canvas backends ───────────────────────────────────────────────────
+        "//main/canvas:canvasfactory",
+        "//main/canvas:simplecanvas",
+        "//main/canvas:vclcanvas",
+        "//main/canvas:directx9canvas",
+        "//main/canvas:gdipluscanvas",
 
-# ── Document model / core ─────────────────────────────────────────────────────
-_CORE = [
-    "//main/svl:svl",
-    "//main/svl:fsstorage",
-    "//main/svl:passwordcontainer",
-    "//main/svtools:svt",
-    "//main/svtools:hatchwindowfactory",
-    "//main/xmloff:xo",
-    "//main/xmloff:xof",
-    "//main/editeng:editeng",
-    "//main/toolkit:ootk",
-    "//main/linguistic:lng",
-    "//main/formula:for",
-    "//main/formula:forui",
-    "//main/animations:animcore",
-    "//main/avmedia:avmedia",
-    "//main/avmedia:avmediawin",
-]
+        # ── Scripting & Python ────────────────────────────────────────────────
+        "//main/scripting:scriptframe",
+        "//main/scripting:basprov.uno",
+        "//main/scripting:dlgprov.uno",
+        "//main/scripting:vbaevents.uno",
+        "//main/scripting:stringresource.uno",
+        "//main/scripting:protocolhandler",
+        "//main/pyuno:pyuno",
+        "//main/pyuno:pythonloader",
 
-# ── Framework ─────────────────────────────────────────────────────────────────
-_FRAMEWORK = [
-    "//main/framework:fwi",
-    "//main/framework:fwe",
-    "//main/framework:fwk",
-    "//main/framework:fwl",
-    "//main/framework:fwm",
-    "//main/sfx2:sfx",
-    "//main/basic:sb",
-    "//main/accessibility:acc",
-]
+        # ── VBA ───────────────────────────────────────────────────────────────
+        "//main/vbahelper:vbahelper",
+        "//main/vbahelper:msforms",
 
-# ── Filter / import-export ────────────────────────────────────────────────────
-_FILTER = [
-    "//main/filter:msfilter",
-    "//main/filter:xmlfa",
-    "//main/filter:xfld",
-    "//main/filter:svgfilter",
-    "//main/filter:pdffilter",
-    "//main/filter:flash",
-    "//main/filter:placeware",
-    "//main/filter:t602filter",
-    "//main/filter:filterconfig1",
-    "//main/filter:xsltfilter",
-    "//main/filter:xsltdlg",
-    "//main/filter:filtertracer",
-    "//main/oox:oox",
-    "//main/writerfilter:writerfilter",
-    "//main/writerfilter:writerfilter_debug",
-    "//main/vbahelper:vbahelper",
-    "//main/vbahelper:msforms",
-]
+        # ── File picker ───────────────────────────────────────────────────────
+        "//main/fpicker:fps",
+        "//main/fpicker:fop",
+        "//main/fpicker:fps_office",
+        "//main/fpicker:fpicker",
 
-# ── UCB (content broker) ──────────────────────────────────────────────────────
-_UCB = [
-    "//main/ucb:ucb1",
-    "//main/ucb:cached1",
-    "//main/ucb:srtrs1",
-    "//main/ucb:ucpexpand1",
-    "//main/ucb:ucpext",
-    "//main/ucb:ucpfile1",
-    "//main/ucb:ucphier1",
-    "//main/ucb:ucppkg1",
-    "//main/ucb:ucptdoc1",
-    "//main/ucb:ucpftp1",
-    "//main/ucb:ucpdav1",
-]
+        # ── Chart ─────────────────────────────────────────────────────────────
+        "//main/chart2:charttools",
+        "//main/chart2:chartmodel",
+        "//main/chart2:chartview",
+        "//main/chart2:chartcontroller",
 
-# ── Connectivity / database ───────────────────────────────────────────────────
-_DB = [
-    "//main/connectivity:dbtools",
-    "//main/connectivity:sdbc2",
-    "//main/connectivity:dbpool2",
-    "//main/dbaccess:dba",
-    "//main/dbaccess:dbu",
-    "//main/dbaccess:dbaxml",
-    "//main/dbaccess:sdbt",
-    "//main/dbaccess:dbmm",
-    "//main/dbaccess:adabasui",
-]
+        # ── Animations / slideshow ────────────────────────────────────────────
+        "//main/animations:animcore",
+        "//main/slideshow:slideshow",
 
-# ── SVX + chart + forms ───────────────────────────────────────────────────────
-_SVX = [
-    "//main/svx:svxcore",
-    "//main/svx:svx",
-    "//main/svx:textconversiondlgs",
-    "//main/chart2:charttools",
-    "//main/chart2:chartmodel",
-    "//main/chart2:chartview",
-    "//main/chart2:chartcontroller",
-    "//main/forms:frm",
-    "//main/xmlsecurity:xsec_fw",
-    "//main/xmlsecurity:xsec_xmlsec",
-    "//main/xmlsecurity:xmlsecurity",
-    "//main/uui:uui",
-    "//main/fpicker:fps",
-    "//main/fpicker:fop",
-    "//main/fpicker:fps_office",
-    "//main/fpicker:fpicker",
-    "//main/cui:cui",
-]
+        # ── SVG I/O ───────────────────────────────────────────────────────────
+        "//main/svgio:svgio",
 
-# ── Scripting ─────────────────────────────────────────────────────────────────
-_SCRIPTING = [
-    "//main/scripting:scriptframe",
-    "//main/scripting:basprov.uno",
-    "//main/scripting:dlgprov.uno",
-    "//main/scripting:vbaevents.uno",
-    "//main/scripting:stringresource.uno",
-    "//main/scripting:protocolhandler",
-    "//main/basctl:basctl",
-]
+        # ── Filters ───────────────────────────────────────────────────────────
+        "//main/filter:msfilter",
+        "//main/filter:xmlfa",
+        "//main/filter:xfld",
+        "//main/filter:svgfilter",
+        "//main/filter:pdffilter",
+        "//main/filter:flash",
+        "//main/filter:placeware",
+        "//main/filter:t602filter",
+        "//main/filter:filterconfig1",
+        "//main/filter:xsltfilter",
+        "//main/filter:xsltdlg",
+        # Graphic format import/export filters
+        "//main/filter:egi",
+        "//main/filter:eme",
+        "//main/filter:epb",
+        "//main/filter:epg",
+        "//main/filter:epp",
+        "//main/filter:era",
+        "//main/filter:eti",
+        "//main/filter:exp",
+        "//main/filter:ept",
+        "//main/filter:eps",
+        "//main/filter:ime",
+        "//main/filter:ipb",
+        "//main/filter:icd",
+        "//main/filter:ipx",
+        "//main/filter:ipt",
+        "//main/filter:idx",
+        "//main/filter:iti",
+        "//main/filter:ipd",
+        "//main/filter:itg",
+        "//main/filter:ira",
+        "//main/filter:ips",
+        "//main/filter:icg",
 
-# ── Embedded objects ──────────────────────────────────────────────────────────
-_EMBED = [
-    "//main/embeddedobj:embobj",
-    "//main/embeddedobj:emboleobj",
-    "//main/dtrans:dtrans",
-    "//main/dtrans:mcnttype",
-    "//main/dtrans:dnd",
-    "//main/dtrans:ftransl",
-    "//main/dtrans:sysdtrans",
-]
+        # ── Embedded objects ──────────────────────────────────────────────────
+        "//main/embeddedobj:embobj",
+        "//main/embeddedobj:emboleobj",
 
-# ── Linguistic components ─────────────────────────────────────────────────────
-_LINGU = [
-    "//main/lingucomponent:spell",
-    "//main/lingucomponent:hyphen_uno",
-    "//main/lingucomponent:lnth",
-    "//main/lingucomponent:guesslang",
-]
+        # ── Accessibility ─────────────────────────────────────────────────────
+        "//main/accessibility:acc",
 
-# ── Application modules ───────────────────────────────────────────────────────
-_APPS = [
-    # Writer
-    "//main/sw:swd",
-    "//main/sw:sw",
-    "//main/sw:swui",
-    "//main/sw:msword",
-    "//main/sw:vbaswobj",
-    # Calc
-    "//main/sc:sc",
-    "//main/sc:scd",
-    "//main/sc:scfilt",
-    "//main/sc:scui",
-    "//main/sc:vbaobj",
-    "//main/scaddins:analysis",
-    "//main/scaddins:date",
-    "//main/sccomp:solver",
-    # Impress + Draw
-    "//main/sd:sdd",
-    "//main/sd:sd",
-    "//main/sd:sdui",
-    "//main/sd:sdfilt",
-    "//main/slideshow:slideshow",
-    "//main/sdext:PresentationMinimizer",
-    "//main/sdext:PresenterScreen",
-    "//main/sdext:pdfimport",
-    # Math
-    "//main/starmath:sm",
-    "//main/starmath:smd",
-    # Base / Reports
-    "//main/reportdesign:rpt",
-    "//main/reportdesign:rptui",
-    "//main/reportdesign:rptxml",
-    "//main/mysqlc:mysqlc",
-]
+        # ── Data transfer ─────────────────────────────────────────────────────
+        "//main/dtrans:dtrans",
+        "//main/dtrans:mcnttype",
+        "//main/dtrans:dnd",
+        "//main/dtrans:ftransl",
+        "//main/dtrans:sysdtrans",
 
-# ── Python / PyUNO ────────────────────────────────────────────────────────────
-_PYUNO = [
-    "//main/pyuno:pyuno",
-    "//main/pyuno:pythonloader",
-]
+        # ── MS Open XML ───────────────────────────────────────────────────────
+        "//main/oox:oox",
 
-# ── Desktop DLLs and EXEs (keep original names) ───────────────────────────────
-_DESKTOP_DLLS = [
-    "//main/desktop:util/soffice.exe.manifest",
-    "//main/desktop:util/soffice.bin.manifest",
-    "//main/desktop:sofficeapp",
-    "//main/desktop:spl",
-    "//main/desktop:socomp",
-    "//main/desktop:offacc",
-    "//main/desktop:migrationoo2",
-    "//main/desktop:deployment",
-    "//main/desktop:deploymentgui",
-    "//main/desktop:deploymentmisc",
-    "//main/desktop:unopkgapp",
-]
+        # ── Writer ────────────────────────────────────────────────────────────
+        "//main/writerfilter:writerfilter",
+        "//main/sw:swd",
+        "//main/sw:sw",
+        "//main/sw:swui",
+        "//main/sw:msword",
+        "//main/sw:vbaswobj",
 
-_DESKTOP_EXES = [
-    # Application launchers
-    "//main/desktop:swriter",
-    "//main/desktop:scalc",
-    "//main/desktop:sdraw",
-    "//main/desktop:simpress",
-    "//main/desktop:sbase",
-    "//main/desktop:smath",
-    "//main/desktop:sweb",
-    # Tools
-    "//main/desktop:unopkg",
-    "//main/desktop:guiloader",
-    "//main/desktop:unoinfo",
-    "//main/desktop:guistdio",
-    "//main/desktop:rebaseoo",
-    "//main/desktop:rebasegui",
-    "//main/desktop:quickstart",
-]
+        # ── Calc ──────────────────────────────────────────────────────────────
+        "//main/sc:sc",
+        "//main/sc:scd",
+        "//main/sc:scfilt",
+        "//main/sc:scui",
+        "//main/sc:vbaobj",
+        "//main/scaddins:analysis",
+        "//main/scaddins:date",
+        "//main/sccomp:solver",
 
-# ── Bootstrap ini files ───────────────────────────────────────────────────────
-_INI = [
-    "fundamental.ini",
-    "bootstrap.ini",
-    "uno.ini",
-]
+        # ── Impress / Draw ────────────────────────────────────────────────────
+        "//main/sd:sdd",
+        "//main/sd:sd",
+        "//main/sd:sdui",
+        "//main/sd:sdfilt",
+        "//main/sdext:PresentationMinimizer",
+        "//main/sdext:PresenterScreen",
 
-# ── CRT + external runtime DLLs ──────────────────────────────────────────────
-_EXTERNAL = [
-    "//main/external/msvcp90:crt_dlls",
-    "//main/external/gdiplus:gdiplus_dll",
-    "@icu//:icuuc",
-    "@icu//:icui18n",
-    "@icu//:icudata",
-]
+        # ── Math ──────────────────────────────────────────────────────────────
+        "//main/starmath:sm",
+        "//main/starmath:smd",
 
-# ── ATL-guarded targets (embedserv + winaccessibility) ────────────────────────
-_ATL_OPTIONAL = select({
-    "//build:has_atl": [
-        "//main/embedserv:emser",
-        "//main/embedserv:inprocserv",
-        "//main/winaccessibility:uacccom",
-        "//main/winaccessibility:winaccessibility",
-    ],
-    "//conditions:default": [],
-})
+        # ── Base / Database ───────────────────────────────────────────────────
+        "//main/connectivity:dbtools",
+        "//main/connectivity:sdbc2",
+        "//main/connectivity:dbpool2",
+        "//main/dbaccess:dba",
+        "//main/dbaccess:dbu",
+        "//main/dbaccess:dbaxml",
+        "//main/dbaccess:sdbt",
+        "//main/dbaccess:dbmm",
+        "//main/dbaccess:adabasui",
+        "//main/reportdesign:rpt",
+        "//main/reportdesign:rptui",
+        "//main/reportdesign:rptxml",
 
-# ── Combine all program-directory files ───────────────────────────────────────
-_PROGRAM_FILES = (
-    _SAL + _IO + _UTIL + _SHELL + _I18N + _GFX + _CORE +
-    _FRAMEWORK + _FILTER + _UCB + _DB + _SVX + _SCRIPTING +
-    _EMBED + _LINGU + _APPS + _PYUNO + _DESKTOP_DLLS + _DESKTOP_EXES +
-    _EXTERNAL + _INI + _ATL_OPTIONAL
+        # ── Basic IDE / Common UI / Controls ──────────────────────────────────
+        "//main/basctl:basctl",
+        "//main/cui:cui",
+        "//main/formula:for",
+        "//main/formula:forui",
+        "//main/UnoControls:ctl",
+        "//main/eventattacher:evtatt",
+
+        # ── Framework extras (not compile-time dep of soffice) ────────────────
+        "//main/framework:fwl",
+        "//main/framework:fwm",
+
+        # ── svl / svtools extras ──────────────────────────────────────────────
+        "//main/svl:fsstorage",
+        "//main/svl:passwordcontainer",
+        "//main/svtools:hatchwindowfactory",
+
+        # ── xmloff / svx extras ───────────────────────────────────────────────
+        "//main/xmloff:xof",
+        "//main/svx:textconversiondlgs",
+
+        # ── XML security ──────────────────────────────────────────────────────
+        "//main/xmlsecurity:xsec_fw",
+        "//main/xmlsecurity:xsec_xmlsec",
+        "//main/xmlsecurity:xmlsecurity",
+
+        # ── Forms ─────────────────────────────────────────────────────────────
+        "//main/forms:frm",
+
+        # ── Postprocess outputs (RDB, ZIP) ────────────────────────────────────
+        "//main/postprocess:all",
+        "//main/offapi:types_rdb",
+        "//main/oovbaapi:oovbaapi_rdb",
+
+        # ── Python ────────────────────────────────────────────────────────────
+        "@python//:python",
+        "@python//:python27",
+    ] + select({
+        # ATL-gated modules (VS Professional/Enterprise only; not Express/BuildTools).
+        # Enable with:  build --//build:atl_available=True  in user.bazelrc
+        "//build:has_atl": [
+            "//main/embedserv:emser",
+            "//main/embedserv:inprocserv",
+            "//main/winaccessibility:uacccom",
+            "//main/winaccessibility:winaccessibility",
+        ],
+        "//conditions:default": [],
+    }),
 )
 
-# ── Staging target ────────────────────────────────────────────────────────────
+flat_install(
+    name = "install",
+    srcs = [":all_files"],
+)
 
-stage_install(
-    name         = "install",
-    program      = _PROGRAM_FILES,
-    soffice_exe  = ["//main/desktop:officeloader"],   # → soffice.exe
-    soffice_bin  = ["//main/desktop:soffice"],          # → soffice.bin
-    types_rdb    = ["//main/udkapi:udkapi_idl"],        # → types.rdb
-    offapi_rdb   = ["//main/offapi:offapi_idl"],         # → offapi.rdb
-    services_rdb = ["//main/postprocess:services_rdb"],  # → services.rdb
-    ooo_srdb     = ["//main/postprocess:ooo_services_rdb"], # → ooo-services.rdb
-    registry     = ["//main/postprocess:all_xcd"],
-    visibility   = ["//visibility:public"],
+# ── Python standard library tree → program/python-core-2.7.18/lib/ ───────────
+# Strip the "Lib" prefix so "Lib/abc.py" → "python-core-2.7.18/lib/abc.py".
+tree_install(
+    name = "install_python_lib",
+    src          = "@python//:python_lib",
+    strip_prefix = "Lib",
+    dst          = "python-core-2.7.18/lib",
+)
+
+# ── python.exe inside the core tree → python-core-2.7.18/bin/python.exe ──────
+# Same binary as in program/ root; installed again under the versioned tree.
+tree_install(
+    name = "install_python_bin",
+    src          = "@python//:python",
+    strip_prefix = "",
+    dst          = "python-core-2.7.18/bin",
+)
+
+# ── install_all: build everything in one shot ─────────────────────────────────
+filegroup(
+    name = "install_all",
+    srcs = [
+        ":install",
+        ":install_python_lib",
+        ":install_python_bin",
+    ],
 )

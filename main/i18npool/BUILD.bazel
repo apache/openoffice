@@ -51,7 +51,7 @@ cc_library(
 # Language/locale identification; no ICU dependency.
 # Exports class MsLangId via I18NPOOL_DLLPUBLIC (SAL_DLLPUBLIC_EXPORT).
 cc_binary(
-    name = "i18nisolang1",
+    name = "i18nisolang1MSC",
     srcs = [
         "source/isolang/insys.cxx",   # includes inwnt.cxx on WNT
         "source/isolang/isolang.cxx",
@@ -74,8 +74,8 @@ cc_binary(
 )
 
 filegroup(
-    name = "i18nisolang1_implib",
-    srcs = [":i18nisolang1"],
+    name = "i18nisolang1MSC_implib",
+    srcs = [":i18nisolang1MSC"],
     output_group = "interface_library",
     visibility = ["//visibility:public"],
 )
@@ -95,14 +95,14 @@ cc_binary(
     additional_linker_inputs = [
         "//main/sal:sal_implib",
         "//main/cppu:cppu3_implib",
-        "//main/comphelper:comphelp_implib",
-        ":i18nisolang1_implib",
+        "//main/comphelper:comphelpMSC_implib",
+        ":i18nisolang1MSC_implib",
     ],
     linkopts = [
         "$(execpath //main/sal:sal_implib)",
         "$(execpath //main/cppu:cppu3_implib)",
-        "$(execpath //main/comphelper:comphelp_implib)",
-        "$(execpath :i18nisolang1_implib)",
+        "$(execpath //main/comphelper:comphelpMSC_implib)",
+        "$(execpath :i18nisolang1MSC_implib)",
         "/MANIFEST:NO",
     ],
     visibility = ["//visibility:public"],

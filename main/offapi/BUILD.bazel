@@ -1,5 +1,6 @@
 load("@rules_cc//cc:defs.bzl", "cc_library")
 load("//build/rules:idl_pipeline.bzl", "idl_library")
+load("//build/rules:merge_rdb.bzl", "merge_rdb")
 
 # Files present on disk but NOT listed in UnoApi_offapi.mk — excluded to match
 # the original build's explicit file list exactly.
@@ -87,5 +88,18 @@ cc_library(
     name = "offapi_idl_headers",
     hdrs = [":offapi_idl"],
     includes = ["offapi_idl_inc"],
+    visibility = ["//visibility:public"],
+)
+
+# ── types.rdb — merged UNO type library (udkapi + offapi) ─────────
+# Mirrors UnoApi_types.mk: regmerge udkapi.rdb + offapi.rdb → types.rdb.
+# Installed to program/types.rdb alongside services.rdb and oovbaapi.rdb.
+merge_rdb(
+    name = "types_rdb",
+    rdbs = [
+        "//main/udkapi:udkapi_idl",
+        ":offapi_idl",
+    ],
+    out  = "types.rdb",
     visibility = ["//visibility:public"],
 )
