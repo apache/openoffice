@@ -38,9 +38,11 @@ cmake(
         "BUILD_TESTING": "OFF",
         # VS2008: suppress C4127/C4244/C4267 noise, no /std: flag
         "CMAKE_C_FLAGS": "/Zc:wchar_t- /wd4127 /wd4244 /wd4267 /wd4996",
-        # Suppress the -d debug suffix: CMake appends it by default in debug
-        # builds, producing libcurl-d.lib instead of libcurl.lib.
-        "CMAKE_DEBUG_POSTFIX": "",
+        # Force Release so the output is always libcurl.lib regardless of
+        # Bazel compilation_mode. rules_foreign_cc drops empty-string cache
+        # entries, so CMAKE_DEBUG_POSTFIX="" does not suppress the -d suffix;
+        # fixing CMAKE_BUILD_TYPE is the reliable approach.
+        "CMAKE_BUILD_TYPE": "Release",
     },
     out_static_libs = ["libcurl.lib"],
 )

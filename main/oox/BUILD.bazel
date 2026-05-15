@@ -21,6 +21,9 @@ _COPTS = [
     "/Imain/oox/source/ppt",
     "/Imain/oox/source/shape",
     "/Zc:wchar_t-",
+    # VS2008 debug STL validates comparators symmetrically (both comp(a,b) and
+    # comp(b,a)); ValueRangeComp is heterogeneous and lacks the reverse overload.
+    "/D_HAS_ITERATOR_DEBUGGING=0",
 ]
 
 # ── Token header generation ──────────────────────────────────────────────────

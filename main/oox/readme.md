@@ -43,3 +43,7 @@ The public export headers (`inc/oox/export/vmlexport.hxx`, `drawingml.hxx`) incl
 - `OOX_DLLIMPLEMENTATION` activates `OOX_DLLPUBLIC = __declspec(dllexport)` — no DEF file needed
 - Private headers in `source/{docprop,drawingml,ppt,shape}/` are added to `srcs` and their directories to `_COPTS`
 - `ws2_32.lib`, `crypt32.lib`, `advapi32.lib` in `linkopts` for OpenSSL Windows runtime
+- `/D_HAS_ITERATOR_DEBUGGING=0` required: VS2008 debug STL validates heterogeneous comparators
+  symmetrically (calls `comp(val, range)` as well as `comp(range, val)`); `ValueRangeComp` in
+  `containerhelper.cxx` only implements the latter, and `ValueRange`'s `explicit` constructor
+  prevents the implicit conversion that the debug check expects.
