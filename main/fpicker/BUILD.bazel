@@ -245,6 +245,9 @@ cc_binary(
     copts = _COPTS + [
         "/Imain/fpicker/inc/pch",
         "/Imain/fpicker/source/office",
+        # VS2008 debug STL _Debug_order_single calls pred(T,T) to verify sort order,
+        # but ControlDescriptionLookup is heterogeneous (OUString,ControlDescription).
+        "/D_HAS_ITERATOR_DEBUGGING=0",
     ],
     defines = _DEFINES,
     linkshared = True,

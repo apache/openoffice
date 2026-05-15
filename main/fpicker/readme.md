@@ -16,3 +16,4 @@
 - The `Fps.rc` Windows resource file (dialog templates for the pre-Vista picker) is not compiled; rc.exe support is not configured in the custom MSVC toolchain and the Vista picker path doesn't need these templates.
 - `resourceprovider.cxx` requires `svtools/svtools.hrc` for string resource IDs; deps include `//main/svtools:svtools_headers`.
 - All four DLLs export the standard UNO component entry points: `component_getImplementationEnvironment` and `component_getFactory`.
+- `fps_office` builds with `/D_HAS_ITERATOR_DEBUGGING=0`. VS2008 debug STL's `_Debug_order_single` verifies sort order by calling the comparator with two range-element arguments `(ControlDescription, ControlDescription)`, but `ControlDescriptionLookup` is a heterogeneous predicate (only handles `OUString`↔`ControlDescription` pairs). Disabling iterator debugging suppresses that check without affecting container ABI (`_SECURE_SCL` controls layout, not this flag).
