@@ -243,6 +243,14 @@ collect_outputs(
 flat_install(
     name = "install",
     srcs = [":all_files"],
+    install_pdb = select({
+        # Stage .pdb debug-info files alongside DLLs/EXEs.
+        # Also requires --compilation_mode=dbg (or --features=generate_pdb_file)
+        # so the toolchain actually produces PDB files.
+        # Enable with:  build --//build:debug_info=True --compilation_mode=dbg
+        "//build:has_debug": True,
+        "//conditions:default": False,
+    }),
 )
 
 # ── Python standard library tree → program/python-core-2.7.18/lib/ ───────────

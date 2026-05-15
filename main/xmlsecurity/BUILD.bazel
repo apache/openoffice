@@ -126,6 +126,13 @@ cc_library(
         "/Imain/xmlsecurity/source/xmlsec/mscrypt",
         "/Imain/xmlsecurity/source/xmlsec/nss",
         "/Zc:wchar_t-",
+        # Suppress VS2008 manifest-consistency check in crtdefs.h / use_ansi.h.
+        # prerror.h → prtypes.h → <stddef.h> → crtdefs.h runs while _DEBUG is set
+        # (from /MDd), recording _CRT_MANIFEST_DEBUG.  The NSS source files then
+        # #undef _DEBUG, so when use_ansi.h first runs it sees the inconsistency.
+        # We use /MANIFEST:NO at link time so the manifest pragmas are irrelevant.
+        "/D_CRT_NOFORCE_MANIFEST",
+        "/D_STL_NOFORCE_MANIFEST",
         # Force-include our shim header: supplies prerror.h + xmlSecNssApplied* decls
         "/FInss_akmngr.hxx",
     ],

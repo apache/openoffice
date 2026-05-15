@@ -18,7 +18,13 @@ _COPTS = [
     "/Dsnprintf=_snprintf",
     "/Imain/pyuno/inc",
     "/Imain/pyuno/source/module",
-]
+] + select({
+    # In dbg builds /MDd causes _DEBUG to be defined; Python headers on Windows
+    # check _DEBUG and expect python27_d.lib when set, but we always link the
+    # release library — undefine to keep the CRT consistent.
+    "//build:dbg_build": ["/U_DEBUG", "/D_HAS_ITERATOR_DEBUGGING=0", "/D_SECURE_SCL=0"],
+    "//conditions:default": [],
+})
 
 _DEPS = [
     "//main/sal:sal_headers",

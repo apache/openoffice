@@ -51,6 +51,16 @@ Required throughout — `sal_Unicode` is `unsigned short`; native
 `pyuno_impl.hxx` uses `::std::hash_map` / `::std::hash_set`; stlport
 supplies these in `namespace std` on MSVC 2008.
 
+### Debug build: `_invalid_parameter_noinfo` unresolved
+In debug mode (`/MDd`) MSVC's `std::vector::operator[]` calls
+`_invalid_parameter_noinfo` for bounds checking.  VS2008's `msvcrtd.dll`
+does not export this symbol (it was added in VS2015), so the debug link
+fails with LNK2019.
+
+**Fix**: `/D_HAS_ITERATOR_DEBUGGING=0 /D_SECURE_SCL=0` are injected in
+the `dbg_build` select branch to disable that checking path.  Both flags
+are already zero by default in release, so only debug is affected.
+
 ### Windows-only — pyuno_loader (pyuno.so) skipped
 `Library_pyuno_loader.mk` builds a thin `dlopen` wrapper that Python
 uses on *nix to load `pyuno.so` lazily.  Windows does not have

@@ -10,4 +10,5 @@ tstring.cxx/tustring.cxx use #include <strimp.cxx> (angle-bracket) → added /Im
 strmsys.cxx includes strmwnt.cxx and comdep.cxx includes wntmsc.cxx (both quoted) → textual_hdrs handles visibility
 dirent.cxx uses clock() without #include <time.h> → fixed with /FItime.h force-include
 resmgr.cxx uses std::hash_map<OUString,...> → //main/stlport:stlport
+resmgr.cxx ImpContentMixLessCompare is a heterogeneous comparator (ImpContent vs sal_uInt64); MSVC debug-mode iterator validation (_HAS_ITERATOR_DEBUGGING) calls it with homogeneous (ImpContent, ImpContent) args which fails to compile → _HAS_ITERATOR_DEBUGGING=0 in _DEFINES
 zcodec.cxx uses zlib → Z_PREFIX + SYSTEM_ZLIB + @zlib//:zlib

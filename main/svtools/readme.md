@@ -19,3 +19,7 @@
     (adds `#ifndef _SOLAR_H` guard to prevent INT32 redefinition with OOo headers).
 - `icuuc` linked for collation/text services in control and i18n code.
 - Windows system libs: `advapi32`, `gdi32`, `ole32`, `oleaut32`, `user32`, `uuid`.
+- `_HAS_ITERATOR_DEBUGGING=0` defined globally: VS2008 debug STL validates sort order in
+  `lower_bound` by calling the comparator as `comp(element, element)`; `ColumnInfoPositionLess`
+  only defines heterogeneous overloads `(MutableColumnMetrics, long)` and
+  `(long, MutableColumnMetrics)`, so the homogeneous check fails at compile time.

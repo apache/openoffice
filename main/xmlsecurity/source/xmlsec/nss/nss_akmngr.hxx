@@ -42,8 +42,10 @@
 #include "certdb.h"
 
 /* xmlsec keys manager handle */
-#include <sal/types.h>
-#if SAL_TYPES_SIZEOFPOINTER != 4
+/* On 64-bit Windows, size_t != unsigned int; tell xmlsec about it.
+   Using _WIN64 avoids pulling in <sal/types.h> (a C++ header) which
+   breaks the _DEBUG consistency check in files that #undef _DEBUG. */
+#ifdef _WIN64
 #  define XMLSEC_NO_SIZE_T
 #endif
 #include <xmlsec/keysmngr.h>

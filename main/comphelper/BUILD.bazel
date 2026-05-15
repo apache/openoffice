@@ -146,6 +146,9 @@ cc_binary(
         "/Imain/comphelper/inc/pch",
         "/Imain/comphelper/source/inc",
         "/Zc:wchar_t-",
+        # VS2008 debug iterator validation calls comparators with (T,T) which breaks
+        # heterogeneous comparators (e.g. ComparePropertyWithHandle). Harmless in release.
+        "/D_HAS_ITERATOR_DEBUGGING=0",
     ],
     defines = _DEFINES,
     linkshared = True,

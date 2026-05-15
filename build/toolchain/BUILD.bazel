@@ -63,8 +63,8 @@ cc_toolchain_config(
     },
     archiver_flags         = ["/MACHINE:X86"],
     default_link_flags     = ["/MACHINE:X86"],
-    dbg_mode_debug_flag      = "/DEBUG",
-    fastbuild_mode_debug_flag = "",  # no PDB in fastbuild; avoids mspdbsrv.exe crashes under parallel links
+    dbg_mode_debug_flag      = "",   # /Z7 embeds debug info in objects; no mspdbsrv.exe under parallel links
+    fastbuild_mode_debug_flag = "",  # same — /Z7 embeds, no linker PDB
     supports_parse_showincludes = False,
     all_compile_flags = [],
     conly_flags       = [],

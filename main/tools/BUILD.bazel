@@ -13,6 +13,10 @@ _DEFINES = [
     "snprintf=_snprintf",
     "Z_PREFIX",
     "SYSTEM_ZLIB",
+    # ImpContentMixLessCompare is a heterogeneous comparator (ImpContent vs sal_uInt64).
+    # MSVC debug-mode iterator validation calls it with (ImpContent, ImpContent) to check
+    # sort order, which fails to compile. Disable that checking without touching sources.
+    "_HAS_ITERATOR_DEBUGGING=0",
 ]
 
 _COMMON_COPTS = [

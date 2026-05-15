@@ -19,6 +19,31 @@ config_setting(
     visibility = ["//visibility:public"],
 )
 
+# Debug-info staging flag — when True, flat_install also copies .pdb files.
+# Complement with --compilation_mode=dbg (or --features=generate_pdb_file) so
+# the toolchain actually produces PDB files; without that flag the .pdb output
+# group is empty and nothing extra is staged.
+# Add to user.bazelrc when debugging:
+#   build --//build:debug_info=True --compilation_mode=dbg
+bool_flag(
+    name = "debug_info",
+    build_setting_default = False,
+    visibility = ["//visibility:public"],
+)
+
+config_setting(
+    name = "has_debug",
+    flag_values = {":debug_info": "True"},
+    visibility = ["//visibility:public"],
+)
+
+# Matches --compilation_mode=dbg; used to suppress _DEBUG for Python headers.
+config_setting(
+    name = "dbg_build",
+    values = {"compilation_mode": "dbg"},
+    visibility = ["//visibility:public"],
+)
+
 # One bool_flag per OOo locale.
 # en-US is always enabled; all others default to False.
 #

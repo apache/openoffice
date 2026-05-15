@@ -11,9 +11,15 @@ def _collect_files_aspect_impl(target, ctx):
                 if OutputGroupInfo in dep:
                     transitive.append(dep[OutputGroupInfo].collected_files)
 
-    files = depset(
-        transitive = [target[DefaultInfo].files] + transitive,
-    )
+    # Also collect PDB files from cc targets when the generate_pdb_file feature
+    # is active (--compilation_mode=dbg or --features=generate_pdb_file).
+    # The pdb_file output group is empty in fastbuild/opt, so this is a no-op
+    # unless the caller also sets --//build:debug_info=True and builds with dbg.
+    own_files = [target[DefaultInfo].files]
+    if OutputGroupInfo in target and hasattr(target[OutputGroupInfo], "pdb_file"):
+        own_files.append(target[OutputGroupInfo].pdb_file)
+
+    files = depset(transitive = own_files + transitive)
     return [OutputGroupInfo(collected_files = files)]
 
 collect_files_aspect = aspect(
@@ -43,10 +49,14 @@ def _flat_install_impl(ctx):
         dep[DefaultInfo].files for dep in ctx.attr.srcs
     ])
 
+    exts = dict(_INSTALL_EXTS)
+    if ctx.attr.install_pdb:
+        exts["pdb"] = True
+
     seen = {}
     filtered = []
     for f in all_files.to_list():
-        if f.extension.lower() not in _INSTALL_EXTS:
+        if f.extension.lower() not in exts:
             continue
         if f.basename in seen:
             continue
@@ -81,6 +91,7 @@ flat_install = rule(
     implementation = _flat_install_impl,
     attrs = {
         "srcs": attr.label_list(providers = [DefaultInfo]),
+        "install_pdb": attr.bool(default = False, doc = "Also stage .pdb debug-info files alongside DLLs/EXEs"),
     },
 )
 

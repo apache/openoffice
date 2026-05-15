@@ -564,7 +564,7 @@ def _impl(ctx):
             ],
             # No implies = ["generate_pdb_file"]: /Z7 embeds debug info in objects,
             # so no linker PDB is needed. This avoids mspdbsrv.exe crashes under
-            # parallel link.exe processes. (dbg_feature still implies generate_pdb_file.)
+            # parallel link.exe processes. (dbg_feature mirrors this behaviour.)
         )
 
         user_compile_flags_feature = feature(
@@ -728,7 +728,9 @@ def _impl(ctx):
                     ],
                 ),
             ],
-            implies = ["generate_pdb_file"],
+            # No implies = ["generate_pdb_file"]: /Z7 embeds debug info in objects,
+            # so no linker PDB is needed. Use --features=generate_pdb (--config=dbg)
+            # with --jobs=1 when a separate .pdb file is required.
         )
 
         opt_feature = feature(
@@ -1235,7 +1237,7 @@ def _impl(ctx):
             flag_sets = [
                 flag_set(
                     actions = [ACTION_NAMES.c_compile, ACTION_NAMES.cpp_compile],
-                    flag_groups = [flag_group(flags = ["/Gy", "/Gw"])],
+                    flag_groups = [flag_group(flags = ["/Gy"])],
                     with_features = [with_feature_set(features = ["opt"])],
                 ),
                 flag_set(

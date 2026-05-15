@@ -9,6 +9,7 @@ _DEFINES = [
     "CPPU_ENV=msci", "INTEL", "_X86_=1",
     "FULL_DESK", "SHAREDLIB", "_DLL_",
     "snprintf=_snprintf",
+    "_HAS_ITERATOR_DEBUGGING=0",
 ]
 
 _COPTS = [
