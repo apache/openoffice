@@ -137,7 +137,10 @@ cc_binary(
         "source/manager/*.hxx",
     ]),
     copts = _COPTS,
-    defines = _DEFINES,
+    # _HAS_ITERATOR_DEBUGGING=0: mdrivermanager.cxx uses a heterogeneous
+    # comparator with std::equal_range; MSVC debug validation calls
+    # comp(DriverAccess,DriverAccess) which doesn't exist in this type.
+    defines = _DEFINES + ["_HAS_ITERATOR_DEBUGGING=0"],
     linkshared = True,
     win_def_file = "util/sdbc2.def",
     deps = [
