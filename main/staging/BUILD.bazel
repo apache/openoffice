@@ -252,6 +252,15 @@ collect_outputs(
             "//main/winaccessibility:winaccessibility",
         ],
         "//conditions:default": [],
+    }) + select({
+        # Debug CRT DLLs (MSVCR90D.dll, MSVCP90D.dll) — required when the
+        # toolchain uses /MDd (--compilation_mode=dbg).  Not in System32;
+        # must be staged alongside the application.
+        # Set MSVC_DEBUG_CRT_PATH in user.bazelrc pointing at the VS2008
+        # non-redistributable debug CRT directory.
+        # Release builds use MSVCR90.dll which is already in System32.
+        "//build:dbg_build": ["@msvc_debug_crt//:dlls"],
+        "//conditions:default": [],
     }),
 )
 

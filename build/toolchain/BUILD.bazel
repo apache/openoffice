@@ -1,12 +1,9 @@
 load("@rules_cc//cc/toolchains:cc_toolchain.bzl", "cc_toolchain")
 load(":windows_cc_toolchain_config.bzl", "cc_toolchain_config")
+load("//build:vs_paths.bzl", _VS = "VS", _VC = "VC", _SDK = "SDK")
 
 # VS2008 x86 toolchain for Apache OpenOffice on Windows
-# Paths derived from VC\bin\vcvars32.bat + Windows SDK v7.0
-
-_VS = "C:\\Program Files (x86)\\Microsoft Visual Studio 9.0"
-_VC = _VS + "\\VC"
-_SDK = "C:\\Program Files\\Microsoft SDKs\\Windows\\v7.0"
+# Paths are defined in //build:vs_paths.bzl — edit there when the installation moves.
 
 filegroup(name = "empty", srcs = [])
 

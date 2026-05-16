@@ -41,6 +41,9 @@ bazel_dep(name = "coinmp",                 version = "1.7.6")
 
 # --------------- build-time tools (not linked, not in registry) ---------------
 http_file = use_repo_rule("@bazel_tools//tools/build_defs/repo:http.bzl", "http_file")
+msvc_debug_crt = use_repo_rule("//build:debug_crt_repo.bzl", "msvc_debug_crt_repo")
+
+msvc_debug_crt(name = "msvc_debug_crt")
 
 http_file(
     name = "apache_rat_jar",
