@@ -1,0 +1,25 @@
+load("@rules_java//java:defs.bzl", "java_binary", "java_import")
+
+# Apache RAT 0.10 — license-header compliance scanner (build-time tool only).
+java_import(
+    name = "rat_jar",
+    jars = ["@apache_rat_jar//file"],
+    visibility = ["//visibility:public"],
+)
+
+java_binary(
+    name = "ratscan",
+    main_class = "org.apache.rat.Report",
+    runtime_deps = [":rat_jar"],
+    visibility = ["//visibility:public"],
+)
+
+# Produces an XML report on stdout — redirect to a file:
+#   bazel run //build/third_party/ratscan:ratscan_report -- <dir> > rat-report.xml
+java_binary(
+    name = "ratscan_report",
+    main_class = "org.apache.rat.Report",
+    args = ["--xml"],
+    runtime_deps = [":rat_jar"],
+    visibility = ["//visibility:public"],
+)

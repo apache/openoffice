@@ -39,6 +39,15 @@ bazel_dep(name = "rules_java",             version = "8.11.0")
 bazel_dep(name = "mdds",                   version = "0.3.1")
 bazel_dep(name = "coinmp",                 version = "1.7.6")
 
+# --------------- build-time tools (not linked, not in registry) ---------------
+http_file = use_repo_rule("@bazel_tools//tools/build_defs/repo:http.bzl", "http_file")
+
+http_file(
+    name = "apache_rat_jar",
+    url = "https://repo1.maven.org/maven2/org/apache/rat/apache-rat/0.10/apache-rat-0.10.jar",
+    sha256 = "b9565317dd5c3c02806e023aa8724fcfcb10a1a8c13d17b30872f0bb0bd4646e",
+    downloaded_file_path = "apache-rat-0.10.jar",
+)
 
 register_toolchains("//build/toolchain:cc_toolchain_x86_vs2008_def")
 # Use preinstalled pkg-config instead of building it from source (building it
