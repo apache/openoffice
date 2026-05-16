@@ -16,22 +16,23 @@ bazel-bin\main\staging\install\program\soffice.exe
 
 ## Staged layout
 
+Mirrors the real OpenOffice install tree (`C:\Program Files (x86)\OpenOffice 4\`):
+
 ```
 bazel-bin/main/staging/install/
-  program/          ← all DLLs + EXEs + RDB files
-  share/registry/   ← *.xcd configuration packages
+  program/          ← all DLLs, EXEs, RDB files, and INI files
+  share/registry/   ← *.xcd configuration packages (deferred)
 ```
 
-Key renamed files:
-| Source target | Staged name |
-|---|---|
-| `//main/desktop:officeloader` | `program/soffice.exe` |
-| `//main/desktop:soffice` | `program/soffice.bin` |
-| `//main/udkapi:udkapi_idl` | `program/types.rdb` |
-| `//main/offapi:offapi_idl` | `program/offapi.rdb` |
-| `//main/postprocess:services_rdb` | `program/services.rdb` |
-| `//main/postprocess:ooo_services_rdb` | `program/ooo-services.rdb` |
-| `//main/postprocess:all_xcd` | `share/registry/*.xcd` |
+All build outputs go into `program/` so that the bootstrap INI variables work
+as written: `${ORIGIN}` resolves to `program/` and `${ORIGIN}/..` to the
+install root, matching the layout `utl::Bootstrap` and `scp2` expect.
+
+## Run
+
+```
+bazel-bin\main\staging\install\program\soffice.exe
+```
 
 ## Implementation
 
@@ -43,8 +44,7 @@ Key renamed files:
 
 - **INI files are hand-written stand-ins** for what `scp2` + `instsetoo_native` would generate at
   install time. When those modules are migrated the static files in this directory should be
-  replaced by generated outputs. `bootstrap.ini` is placed at `program/bootstrap.ini` because
-  `utl::Bootstrap` hardcodes `${OOO_BASE_DIR}/program/bootstrap.ini` as its lookup path.
+  replaced by generated outputs.
 - **Silent crash on bootstrap failure**: if `UserInstallation` or `BaseInstallation` cannot be
   resolved, `UserInstall::finalize()` returns `E_Unknown` and the application exits without any
   error message or dialog. The proper fix is in `desktop/source/app/app.cxx` — the `E_Unknown`

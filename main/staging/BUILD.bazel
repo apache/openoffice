@@ -1,23 +1,15 @@
 load("//main/staging:collect_files_aspect.bzl", "collect_outputs", "flat_install", "tree_install")
 
 # ── Profile INI files (equivalent to scp2-generated profiles in dmake) ────────
-# fundamental.ini, soffice.ini and uno.ini land flat alongside soffice.exe.
-# bootstrap.ini must be at program/bootstrap.ini because utl::Bootstrap
-# constructs its path as ${OOO_BASE_DIR}/program/bootstrap.ini.
+# All ini files land in program/ alongside the DLLs and EXEs.
 filegroup(
     name = "profile_ini",
     srcs = [
+        "bootstrap.ini",
         "fundamental.ini",
         "soffice.ini",
         "uno.ini",
     ],
-)
-
-tree_install(
-    name = "install_bootstrap_ini",
-    src = "bootstrap.ini",
-    strip_prefix = "main/staging",
-    dst = "program",
 )
 
 # ── Flat program/ files (DLLs, EXEs, RDBs, ZIPs, .py scripts, .ini) ─────────
@@ -282,7 +274,7 @@ tree_install(
     name = "install_python_lib",
     src          = "@python//:python_lib",
     strip_prefix = "Lib",
-    dst          = "python-core-2.7.18/lib",
+    dst          = "program/python-core-2.7.18/lib",
 )
 
 # ── python.exe inside the core tree → python-core-2.7.18/bin/python.exe ──────
@@ -291,7 +283,7 @@ tree_install(
     name = "install_python_bin",
     src          = "@python//:python",
     strip_prefix = "",
-    dst          = "python-core-2.7.18/bin",
+    dst          = "program/python-core-2.7.18/bin",
 )
 
 # ── install_all: build everything in one shot ─────────────────────────────────
@@ -299,7 +291,6 @@ filegroup(
     name = "install_all",
     srcs = [
         ":install",
-        ":install_bootstrap_ini",
         ":install_python_lib",
         ":install_python_bin",
     ],

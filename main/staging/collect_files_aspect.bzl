@@ -66,9 +66,10 @@ def _flat_install_impl(ctx):
     if not filtered:
         return [DefaultInfo(files = depset())]
 
-    outputs = [ctx.actions.declare_file(f.basename) for f in filtered]
+    outputs = [ctx.actions.declare_file("program/" + f.basename) for f in filtered]
 
-    lines = ["@echo off"]
+    program_dir = outputs[0].dirname.replace("/", "\\")
+    lines = ["@echo off", 'if not exist "{d}" mkdir "{d}"'.format(d = program_dir)]
     for f, out in zip(filtered, outputs):
         lines.append('copy /Y "{}" "{}" >nul || exit /b 1'.format(
             f.path.replace("/", "\\"),
