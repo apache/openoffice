@@ -39,6 +39,18 @@ Key renamed files:
 - `build/tools/stage_install.pl` — Perl copy script reading `subdir TAB src [TAB destname]` manifest
 - ATL-guarded targets (`embedserv`, `winaccessibility`) included via `select({"//build:has_atl": [...], "//conditions:default": []})`
 
+## Known gaps (deferred)
+
+- **INI files are hand-written stand-ins** for what `scp2` + `instsetoo_native` would generate at
+  install time. When those modules are migrated the static files in this directory should be
+  replaced by generated outputs. `bootstrap.ini` is placed at `program/bootstrap.ini` because
+  `utl::Bootstrap` hardcodes `${OOO_BASE_DIR}/program/bootstrap.ini` as its lookup path.
+- **Silent crash on bootstrap failure**: if `UserInstallation` or `BaseInstallation` cannot be
+  resolved, `UserInstall::finalize()` returns `E_Unknown` and the application exits without any
+  error message or dialog. The proper fix is in `desktop/source/app/app.cxx` — the `E_Unknown`
+  case in the `UserInstall::finalize()` error handler should show a meaningful error before exit,
+  the same way `E_NoDiskSpace` and `E_NoWriteAccess` already do.
+
 ## Fixes applied during staging
 
 - `//main/i18npool/pool:i18npool` and `:i18nsearch` — correct subpackage path (not `//main/i18npool:`)
