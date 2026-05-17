@@ -2,6 +2,7 @@
 # Expose the pack*.xslt files so postprocess (and future rules) can reference them.
 
 exports_files([
+    "createcomponent.xslt",
     "packcomponents.xslt",
     "packregistry.xslt",
 ])

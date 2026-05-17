@@ -1,11 +1,12 @@
 """Starlark rules for the postprocess pipeline.
 
 services_rdb  : merges .component XML files → services.rdb via xsltproc.
-                make_services_input.pl writes services.input with absolute
-                file:/// URIs (using Perl's cwd()); xsltproc then processes it.
-                Absolute URIs are required because packcomponents.xslt's
-                document() resolves relative URIs against the stylesheet's base
-                URI, not the input document's base URI.
+                Each component is first annotated with its DLL/Python/Java URI
+                via createcomponent.xslt (--stringparam uri VALUE), then packed
+                by packcomponents.xslt.  Components are specified as a
+                label_keyed_string_dict mapping each .component file to its
+                full URI string (use the basis_native/basis_java/ure_java/
+                pymodule helpers below).
 
 uiconfig_zip  : collects uiconfig/**/*.xml from all modules and creates
                 uiconfig.zip via make_uiconfig_zip.pl (Archive::Zip).
@@ -30,6 +31,24 @@ All rules use @strawberry-perl//:perl_exe.  No shell required.
 
 _PERL = "@strawberry-perl//:perl_exe"
 
+# ── URI helpers for services_rdb components dict ──────────────────────────────
+
+def basis_native(dll):
+    """URI for a native DLL in program/ (most components)."""
+    return "vnd.sun.star.expand:$OOO_BASE_DIR/program/" + dll
+
+def basis_java(jar):
+    """URI for a Java JAR in program/classes/."""
+    return "vnd.sun.star.expand:$OOO_BASE_DIR/program/classes/" + jar
+
+def ure_java(jar):
+    """URI for a Java JAR in URE_INTERNAL_JAVA_DIR (juh, etc.)."""
+    return "vnd.sun.star.expand:$URE_INTERNAL_JAVA_DIR/" + jar
+
+def pymodule(module):
+    """URI for a Python module component."""
+    return "vnd.openoffice.pymodule:" + module
+
 # ── services_rdb ─────────────────────────────────────────────────────────────
 
 def _services_rdb_impl(ctx):
@@ -37,23 +56,50 @@ def _services_rdb_impl(ctx):
     rdb_file   = ctx.actions.declare_file(out_name)
     input_file = ctx.actions.declare_file(ctx.label.name + ".input")
 
-    perl   = ctx.file._perl
-    script = ctx.file._make_services_input
+    perl      = ctx.file._perl
+    script    = ctx.file._make_services_input
+    xslt_anno = ctx.file._createcomponent_xslt
 
-    # Action 1: write services.input with absolute file:/// URIs.
+    # For each component, run createcomponent.xslt to inject the uri attribute.
+    annotated_files = []
+    for src_tgt, uri in ctx.attr.components.items():
+        src_list = src_tgt.files.to_list()
+        if len(src_list) != 1:
+            fail("components key must resolve to exactly one file, got {}".format(
+                len(src_list)))
+        src = src_list[0]
+        safe = src.short_path.replace("/", "_").replace(".", "_").replace("-", "_")
+        anno_file = ctx.actions.declare_file("_anno_" + safe + ".component")
+        ctx.actions.run(
+            executable = ctx.executable._xsltproc,
+            arguments  = [
+                "--nonet",
+                "--stringparam", "uri", uri,
+                "-o", anno_file.path,
+                xslt_anno.path,
+                src.path,
+            ],
+            inputs  = [src, xslt_anno],
+            outputs = [anno_file],
+            mnemonic         = "AnnoComponent",
+            progress_message = "Annotating {}".format(src.basename),
+        )
+        annotated_files.append(anno_file)
+
+    # Write services.input with absolute file:/// URIs for the annotated files.
     ctx.actions.run(
         executable = perl,
         arguments  = (
             [script.path, input_file.path] +
-            [f.path for f in ctx.files.components]
+            [f.path for f in annotated_files]
         ),
-        inputs  = [perl, script] + ctx.files.components,
+        inputs  = [perl, script] + annotated_files,
         outputs = [input_file],
         mnemonic         = "ServicesInput",
         progress_message = "Generating {}".format(input_file.basename),
     )
 
-    # Action 2: xsltproc merges services.input → services.rdb.
+    # Pack all annotated components into services.rdb.
     ctx.actions.run(
         executable = ctx.executable._xsltproc,
         arguments  = [
@@ -63,11 +109,11 @@ def _services_rdb_impl(ctx):
             ctx.file.xslt.path,
             input_file.path,
         ],
-        inputs  = [input_file, ctx.file.xslt] + ctx.files.components,
+        inputs  = [input_file, ctx.file.xslt] + annotated_files,
         outputs = [rdb_file],
         mnemonic         = "ServicesRdb",
         progress_message = "Merging {} components → {}".format(
-            len(ctx.files.components), rdb_file.basename),
+            len(annotated_files), rdb_file.basename),
     )
 
     return [DefaultInfo(files = depset([rdb_file, input_file]))]
@@ -75,9 +121,9 @@ def _services_rdb_impl(ctx):
 services_rdb = rule(
     implementation = _services_rdb_impl,
     attrs = {
-        "components": attr.label_list(
+        "components": attr.label_keyed_string_dict(
             allow_files = True,
-            doc = ".component XML files to merge into the output .rdb",
+            doc = "Map from .component file to its full URI string (createcomponent.xslt --stringparam uri VALUE). Use basis_native/basis_java/ure_java/pymodule helpers.",
         ),
         "out": attr.string(
             default = "",
@@ -101,6 +147,10 @@ services_rdb = rule(
             default    = "@libxslt//:xsltproc",
             executable = True,
             cfg        = "exec",
+        ),
+        "_createcomponent_xslt": attr.label(
+            default           = "//main/solenv/bin:createcomponent.xslt",
+            allow_single_file = True,
         ),
     },
 )

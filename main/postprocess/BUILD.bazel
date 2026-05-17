@@ -18,7 +18,8 @@
 #   Implement after those pipelines are in place.
 
 load(":postprocess.bzl", "services_rdb", "uiconfig_zip", "pack_registry",
-     "oc_xcs", "oc_xcu", "oc_mod", "fcfg")
+     "oc_xcs", "oc_xcu", "oc_mod", "fcfg",
+     "basis_native", "basis_java", "ure_java", "pymodule")
 
 # ── Component files — Windows build ──────────────────────────────────────────
 # Mirrors packcomponents/makefile.mk my_components for OS=WNT.
@@ -26,338 +27,532 @@ load(":postprocess.bzl", "services_rdb", "uiconfig_zip", "pack_registry",
 # XMergeBridge, LuceneHelpWrapper, XSLTValidate) are omitted — Java build
 # is deferred.  ENABLE_ONLINE_UPDATE components (updchk.uno) are included.
 
-_SERVICES_COMPONENTS = [
+# Map each .component file to its full URI string (injected via createcomponent.xslt).
+# Native DLLs:  basis_native("foo.dll")
+# Java JARs:    basis_java("Foo.jar") or ure_java("foo.jar")
+# Python mods:  pymodule("module_name")
+_SERVICES_COMPONENTS = {
     # ── stoc / cppuhelper (UNO core runtime) ─────────────────────────────
-    "//main/stoc:util/bootstrap.component",
-    "//main/stoc:source/inspect/introspection.component",
-    "//main/stoc:source/invocation_adapterfactory/invocadapt.component",
-    "//main/stoc:source/invocation/invocation.component",
-    "//main/stoc:source/javaloader/javaloader.component",
-    "//main/stoc:source/javavm/javavm.component",
-    "//main/stoc:source/namingservice/namingservice.component",
-    "//main/stoc:source/proxy_factory/proxyfac.component",
-    "//main/stoc:source/corereflection/reflection.component",
-    "//main/stoc:util/stocservices.component",
+    # All bundled into bootstrap.uno.dll; stocservices separately.
+    "//main/stoc:util/bootstrap.component":
+        basis_native("bootstrap.uno.dll"),
+    "//main/stoc:source/inspect/introspection.component":
+        basis_native("bootstrap.uno.dll"),
+    "//main/stoc:source/invocation_adapterfactory/invocadapt.component":
+        basis_native("bootstrap.uno.dll"),
+    "//main/stoc:source/invocation/invocation.component":
+        basis_native("bootstrap.uno.dll"),
+    "//main/stoc:source/javaloader/javaloader.component":
+        basis_native("bootstrap.uno.dll"),
+    "//main/stoc:source/javavm/javavm.component":
+        basis_native("bootstrap.uno.dll"),
+    "//main/stoc:source/namingservice/namingservice.component":
+        basis_native("bootstrap.uno.dll"),
+    "//main/stoc:source/proxy_factory/proxyfac.component":
+        basis_native("bootstrap.uno.dll"),
+    "//main/stoc:source/corereflection/reflection.component":
+        basis_native("bootstrap.uno.dll"),
+    "//main/stoc:util/stocservices.component":
+        basis_native("stocservices.uno.dll"),
 
-    # ── Extensions (abpilot, bibliography, dbpilots, …) ──────────────────
-    "//main/extensions:source/abpilot/abp.component",
-    "//main/extensions:source/bibliography/bib.component",
-    "//main/extensions:source/dbpilots/dbp.component",
-    "//main/extensions:source/logging/log.component",
-    "//main/extensions:source/oooimprovecore/oooimprovecore.component",
-    "//main/extensions:source/preload/preload.component",
-    "//main/extensions:source/propctrlr/pcr.component",
-    "//main/extensions:source/resource/res.component",
-    "//main/extensions:source/scanner/scn.component",
-    "//main/extensions:source/update/check/updchk.uno.component",
-    "//main/extensions:source/update/feed/updatefeed.component",
-    "//main/extensions:source/update/ui/updchk.component",
-    "//main/extensions:source/xmlextract/xmx.component",
-    "//main/extensions:source/config/ldap/ldapbe2.component",
+    # ── extensions ───────────────────────────────────────────────────────
+    "//main/extensions:source/abpilot/abp.component":
+        basis_native("abp.dll"),
+    "//main/extensions:source/bibliography/bib.component":
+        basis_native("bib.dll"),
+    "//main/extensions:source/dbpilots/dbp.component":
+        basis_native("dbp.dll"),
+    "//main/extensions:source/logging/log.component":
+        basis_native("log.dll"),
+    "//main/extensions:source/oooimprovecore/oooimprovecore.component":
+        basis_native("oooimprovecore.dll"),
+    "//main/extensions:source/preload/preload.component":
+        basis_native("preload.dll"),
+    "//main/extensions:source/propctrlr/pcr.component":
+        basis_native("pcr.dll"),
+    "//main/extensions:source/resource/res.component":
+        basis_native("res.dll"),
+    "//main/extensions:source/scanner/scn.component":
+        basis_native("scn.dll"),
+    "//main/extensions:source/update/check/updchk.uno.component":
+        basis_native("updchk.dll"),
+    "//main/extensions:source/update/feed/updatefeed.component":
+        basis_native("updatefeed.dll"),
+    "//main/extensions:source/update/ui/updchk.component":
+        basis_native("updchkui.dll"),
+    "//main/extensions:source/xmlextract/xmx.component":
+        basis_native("xmx.dll"),
+    "//main/extensions:source/config/ldap/ldapbe2.component":
+        basis_native("ldapbe.dll"),
 
     # ── scripting/basic provider ──────────────────────────────────────────
-    "//main/scripting:source/basprov/basprov.component",
+    "//main/scripting:source/basprov/basprov.component":
+        basis_native("basprov.uno.dll"),
 
-    # ── chart2 ────────────────────────────────────────────────────────────
-    "//main/chart2:source/controller/chartcontroller.component",
-    "//main/chart2:source/model/chartmodel.component",
-    "//main/chart2:source/tools/charttools.component",
-    "//main/chart2:source/view/chartview.component",
+    # ── chart2 ───────────────────────────────────────────────────────────
+    "//main/chart2:source/controller/chartcontroller.component":
+        basis_native("chartcontroller.dll"),
+    "//main/chart2:source/model/chartmodel.component":
+        basis_native("chartmodel.dll"),
+    "//main/chart2:source/tools/charttools.component":
+        basis_native("charttools.dll"),
+    "//main/chart2:source/view/chartview.component":
+        basis_native("chartview.dll"),
 
-    # ── UnoControls ───────────────────────────────────────────────────────
-    "//main/UnoControls:util/ctl.component",
+    # ── UnoControls ──────────────────────────────────────────────────────
+    "//main/UnoControls:util/ctl.component":
+        basis_native("ctl.dll"),
 
     # ── animations ───────────────────────────────────────────────────────
-    "//main/animations:source/animcore/animcore.component",
+    "//main/animations:source/animcore/animcore.component":
+        basis_native("animcore.dll"),
 
-    # ── avmedia (generic + Windows) ──────────────────────────────────────
-    "//main/avmedia:util/avmedia.component",
-    "//main/avmedia:source/win/avmediawin.component",
+    # ── avmedia ──────────────────────────────────────────────────────────
+    "//main/avmedia:util/avmedia.component":
+        basis_native("avmedia.dll"),
+    "//main/avmedia:source/win/avmediawin.component":
+        basis_native("avmediawin.dll"),
 
     # ── basctl (Basic IDE) ────────────────────────────────────────────────
-    "//main/basctl:util/basctl.component",
+    "//main/basctl:util/basctl.component":
+        basis_native("basctl.dll"),
 
     # ── basic / StarBasic ─────────────────────────────────────────────────
-    "//main/basic:util/sb.component",
+    "//main/basic:util/sb.component":
+        basis_native("sb.dll"),
 
     # ── binaryurp ────────────────────────────────────────────────────────
-    "//main/binaryurp:source/binaryurp.component",
+    "//main/binaryurp:source/binaryurp.component":
+        basis_native("binaryurp.dll"),
 
     # ── canvas ───────────────────────────────────────────────────────────
-    "//main/canvas:source/factory/canvasfactory.component",
-    "//main/canvas:source/simplecanvas/simplecanvas.component",
-    "//main/canvas:source/vcl/vclcanvas.component",
-    "//main/canvas:source/directx/directx9canvas.component",
-    "//main/canvas:source/directx/gdipluscanvas.component",
+    "//main/canvas:source/factory/canvasfactory.component":
+        basis_native("canvasfactory.dll"),
+    "//main/canvas:source/simplecanvas/simplecanvas.component":
+        basis_native("simplecanvas.dll"),
+    "//main/canvas:source/vcl/vclcanvas.component":
+        basis_native("vclcanvas.dll"),
+    "//main/canvas:source/directx/directx9canvas.component":
+        basis_native("directx9canvas.dll"),
+    "//main/canvas:source/directx/gdipluscanvas.component":
+        basis_native("gdipluscanvas.dll"),
 
-    # ── comphelper ───────────────────────────────────────────────────────
-    "//main/comphelper:util/comphelp.component",
+    # ── comphelper — EXCEPTION: MSC suffix ───────────────────────────────
+    "//main/comphelper:util/comphelp.component":
+        basis_native("comphelpMSC.dll"),
 
     # ── configmgr ────────────────────────────────────────────────────────
-    "//main/configmgr:source/configmgr.component",
+    "//main/configmgr:source/configmgr.component":
+        basis_native("configmgr.uno.dll"),
 
     # ── connectivity ─────────────────────────────────────────────────────
-    "//main/connectivity:source/drivers/calc/calc.component",
-    "//main/connectivity:source/cpool/dbpool2.component",
-    "//main/connectivity:source/dbtools/dbtools.component",
-    "//main/connectivity:source/drivers/adabas/adabas.component",
-    "//main/connectivity:source/drivers/ado/ado.component",
-    "//main/connectivity:source/drivers/dbase/dbase.component",
-    "//main/connectivity:source/drivers/flat/flat.component",
-    "//main/connectivity:source/drivers/mysql/mysql.component",
-    "//main/connectivity:source/drivers/odbc/odbc.component",
-    "//main/connectivity:source/manager/sdbc2.component",
+    "//main/connectivity:source/drivers/calc/calc.component":
+        basis_native("calc.dll"),
+    "//main/connectivity:source/cpool/dbpool2.component":
+        basis_native("dbpool2.dll"),
+    "//main/connectivity:source/dbtools/dbtools.component":
+        basis_native("dbtools.dll"),
+    "//main/connectivity:source/drivers/adabas/adabas.component":
+        basis_native("adabas.dll"),
+    "//main/connectivity:source/drivers/ado/ado.component":
+        basis_native("ado.dll"),
+    "//main/connectivity:source/drivers/dbase/dbase.component":
+        basis_native("dbase.dll"),
+    "//main/connectivity:source/drivers/flat/flat.component":
+        basis_native("flat.dll"),
+    "//main/connectivity:source/drivers/mysql/mysql.component":
+        basis_native("mysql.dll"),
+    "//main/connectivity:source/drivers/odbc/odbc.component":
+        basis_native("odbc.dll"),
+    "//main/connectivity:source/manager/sdbc2.component":
+        basis_native("sdbc2.dll"),
 
     # ── cui ───────────────────────────────────────────────────────────────
-    "//main/cui:util/cui.component",
+    "//main/cui:util/cui.component":
+        basis_native("cui.dll"),
 
     # ── dbaccess ─────────────────────────────────────────────────────────
-    "//main/dbaccess:source/ext/adabas/adabasui.component",
-    "//main/dbaccess:source/ext/macromigration/dbmm.component",
-    "//main/dbaccess:source/filter/xml/dbaxml.component",
-    "//main/dbaccess:util/dba.component",
-    "//main/dbaccess:util/dbu.component",
-    "//main/dbaccess:util/sdbt.component",
+    "//main/dbaccess:source/ext/adabas/adabasui.component":
+        basis_native("adabasui.dll"),
+    "//main/dbaccess:source/ext/macromigration/dbmm.component":
+        basis_native("dbmm.dll"),
+    "//main/dbaccess:source/filter/xml/dbaxml.component":
+        basis_native("dbaxml.dll"),
+    "//main/dbaccess:util/dba.component":
+        basis_native("dba.dll"),
+    "//main/dbaccess:util/dbu.component":
+        basis_native("dbu.dll"),
+    "//main/dbaccess:util/sdbt.component":
+        basis_native("sdbt.dll"),
 
-    # ── desktop (deployment, migration, splash, …) ────────────────────────
-    "//main/desktop:source/deployment/deployment.component",
-    "//main/desktop:source/deployment/gui/deploymentgui.component",
-    "//main/desktop:source/migration/services/migrationoo2.component",
-    "//main/desktop:source/offacc/offacc.component",
-    "//main/desktop:source/splash/spl.component",
+    # ── desktop ──────────────────────────────────────────────────────────
+    "//main/desktop:source/deployment/deployment.component":
+        basis_native("deployment.dll"),
+    "//main/desktop:source/deployment/gui/deploymentgui.component":
+        basis_native("deploymentgui.dll"),
+    "//main/desktop:source/migration/services/migrationoo2.component":
+        basis_native("migrationoo2.dll"),
+    "//main/desktop:source/offacc/offacc.component":
+        basis_native("offacc.dll"),
+    "//main/desktop:source/splash/spl.component":
+        basis_native("spl.dll"),
 
     # ── drawinglayer ─────────────────────────────────────────────────────
-    "//main/drawinglayer:drawinglayer.component",
+    "//main/drawinglayer:drawinglayer.component":
+        basis_native("drawinglayer.dll"),
 
     # ── dtrans (Windows clipboard / DnD) ─────────────────────────────────
-    "//main/dtrans:util/mcnttype.component",
-    "//main/dtrans:source/generic/dtrans.component",
-    "//main/dtrans:util/dnd.component",
-    "//main/dtrans:util/ftransl.component",
-    "//main/dtrans:util/sysdtrans.component",
+    "//main/dtrans:util/mcnttype.component":
+        basis_native("mcnttype.dll"),
+    "//main/dtrans:source/generic/dtrans.component":
+        basis_native("dtrans.dll"),
+    "//main/dtrans:util/dnd.component":
+        basis_native("dnd.dll"),
+    "//main/dtrans:util/ftransl.component":
+        basis_native("ftransl.dll"),
+    "//main/dtrans:util/sysdtrans.component":
+        basis_native("sysdtrans.dll"),
 
     # ── embeddedobj ──────────────────────────────────────────────────────
-    "//main/embeddedobj:util/embobj.component",
-    "//main/embeddedobj:source/msole/emboleobj.windows.component",
+    "//main/embeddedobj:util/embobj.component":
+        basis_native("embobj.dll"),
+    "//main/embeddedobj:source/msole/emboleobj.windows.component":
+        basis_native("emboleobj.dll"),
 
-    # ── embedserv (ATL — skipped when ATL not available) ─────────────────
-    "//main/embedserv:util/emser.component",
+    # ── embedserv (ATL) ───────────────────────────────────────────────────
+    "//main/embedserv:util/emser.component":
+        basis_native("emser.dll"),
 
     # ── eventattacher ────────────────────────────────────────────────────
-    "//main/eventattacher:source/evtatt.component",
+    "//main/eventattacher:source/evtatt.component":
+        basis_native("evtatt.dll"),
 
     # ── fileaccess ───────────────────────────────────────────────────────
-    "//main/fileaccess:util/fileacc.component",
+    "//main/fileaccess:util/fileacc.component":
+        basis_native("fileacc.dll"),
 
     # ── filter ───────────────────────────────────────────────────────────
-    "//main/filter:source/config/cache/filterconfig1.component",
-    "//main/filter:source/flash/flash.component",
-    "//main/filter:source/msfilter/msfilter.component",
-    "//main/filter:source/pdf/pdffilter.component",
-    "//main/filter:source/placeware/placeware.component",
-    "//main/filter:source/svg/svgfilter.component",
-    "//main/filter:source/t602/t602filter.component",
-    "//main/filter:source/xmlfilteradaptor/xmlfa.component",
-    "//main/filter:source/xmlfilterdetect/xmlfd.component",
-    "//main/filter:source/xsltdialog/xsltdlg.component",
-    "//main/filter:source/xsltfilter/xsltfilter.component",
-    "//main/filter:source/xsltfilter/XSLTFilter.jar.component",
+    "//main/filter:source/config/cache/filterconfig1.component":
+        basis_native("filterconfig1.dll"),
+    "//main/filter:source/flash/flash.component":
+        basis_native("flash.dll"),
+    "//main/filter:source/msfilter/msfilter.component":
+        basis_native("msfilter.dll"),
+    "//main/filter:source/pdf/pdffilter.component":
+        basis_native("pdffilter.dll"),
+    "//main/filter:source/placeware/placeware.component":
+        basis_native("placeware.dll"),
+    "//main/filter:source/svg/svgfilter.component":
+        basis_native("svgfilter.dll"),
+    "//main/filter:source/t602/t602filter.component":
+        basis_native("t602filter.dll"),
+    "//main/filter:source/xmlfilteradaptor/xmlfa.component":
+        basis_native("xmlfa.dll"),
+    "//main/filter:source/xmlfilterdetect/xmlfd.component":
+        basis_native("xfld.dll"),  # DLL name is xfld (not xmlfd)
+    "//main/filter:source/xsltdialog/xsltdlg.component":
+        basis_native("xsltdlg.dll"),
+    "//main/filter:source/xsltfilter/xsltfilter.component":
+        basis_native("xsltfilter.dll"),
+    "//main/filter:source/xsltfilter/XSLTFilter.jar.component":
+        basis_java("XSLTFilter.jar"),
 
     # ── forms ────────────────────────────────────────────────────────────
-    "//main/forms:util/frm.component",
+    "//main/forms:util/frm.component":
+        basis_native("frm.dll"),
 
     # ── formula ──────────────────────────────────────────────────────────
-    "//main/formula:util/for.component",
+    "//main/formula:util/for.component":
+        basis_native("for.dll"),
 
     # ── fpicker ──────────────────────────────────────────────────────────
-    "//main/fpicker:source/generic/fpicker.component",
-    "//main/fpicker:source/office/fps_office.component",
-    "//main/fpicker:util/fop.component",
-    "//main/fpicker:util/fps.component",
+    "//main/fpicker:source/generic/fpicker.component":
+        basis_native("fpicker.dll"),
+    "//main/fpicker:source/office/fps_office.component":
+        basis_native("fps_office.dll"),
+    "//main/fpicker:util/fop.component":
+        basis_native("fop.dll"),
+    "//main/fpicker:util/fps.component":
+        basis_native("fps.dll"),
 
     # ── framework ────────────────────────────────────────────────────────
-    "//main/framework:util/fwk.component",
-    "//main/framework:util/fwl.component",
-    "//main/framework:util/fwm.component",
+    "//main/framework:util/fwk.component":
+        basis_native("fwk.dll"),
+    "//main/framework:util/fwl.component":
+        basis_native("fwl.dll"),
+    "//main/framework:util/fwm.component":
+        basis_native("fwm.dll"),
 
     # ── i18npool ─────────────────────────────────────────────────────────
-    "//main/i18npool:util/i18npool.component",
-    "//main/i18npool:source/search/i18nsearch.component",
+    "//main/i18npool:util/i18npool.component":
+        basis_native("i18npool.dll"),
+    "//main/i18npool:source/search/i18nsearch.component":
+        basis_native("i18nsearch.dll"),
 
     # ── io ───────────────────────────────────────────────────────────────
-    "//main/io:source/acceptor/acceptor.component",
-    "//main/io:source/connector/connector.component",
-    "//main/io:source/stm/streams.component",
-    "//main/io:source/TextInputStream/textinstream.component",
-    "//main/io:source/TextOutputStream/textoutstream.component",
+    "//main/io:source/acceptor/acceptor.component":
+        basis_native("acceptor.dll"),
+    "//main/io:source/connector/connector.component":
+        basis_native("connector.dll"),
+    "//main/io:source/stm/streams.component":
+        basis_native("streams.dll"),
+    "//main/io:source/TextInputStream/textinstream.component":
+        basis_native("textinstream.dll"),
+    "//main/io:source/TextOutputStream/textoutstream.component":
+        basis_native("textoutstream.dll"),
 
-    # ── javaunohelper ────────────────────────────────────────────────────
-    "//main/javaunohelper:util/juh.component",
+    # ── javaunohelper (Java, deferred) ───────────────────────────────────
+    "//main/javaunohelper:util/juh.component":
+        ure_java("juh.jar"),
 
-    # ── lingucomponent ───────────────────────────────────────────────────
-    "//main/lingucomponent:source/languageguessing/guesslang.component",
-    "//main/lingucomponent:source/thesaurus/libnth/lnth.component",
-    "//main/lingucomponent:source/hyphenator/altlinuxhyph/hyphen/hyphen.component",
-    "//main/lingucomponent:source/spellcheck/spell/spell.component",
+    # ── lingucomponent — EXCEPTION: hyphen_uno.dll ────────────────────────
+    "//main/lingucomponent:source/languageguessing/guesslang.component":
+        basis_native("guesslang.dll"),
+    "//main/lingucomponent:source/thesaurus/libnth/lnth.component":
+        basis_native("lnth.dll"),
+    "//main/lingucomponent:source/hyphenator/altlinuxhyph/hyphen/hyphen.component":
+        basis_native("hyphen_uno.dll"),
+    "//main/lingucomponent:source/spellcheck/spell/spell.component":
+        basis_native("spell.dll"),
 
     # ── linguistic ───────────────────────────────────────────────────────
-    "//main/linguistic:source/lng.component",
+    "//main/linguistic:source/lng.component":
+        basis_native("lng.dll"),
 
     # ── oox ──────────────────────────────────────────────────────────────
-    "//main/oox:util/oox.component",
+    "//main/oox:util/oox.component":
+        basis_native("oox.dll"),
 
     # ── package ──────────────────────────────────────────────────────────
-    "//main/package:source/xstor/xstor.component",
-    "//main/package:util/package2.component",
+    "//main/package:source/xstor/xstor.component":
+        basis_native("xstor.dll"),
+    "//main/package:util/package2.component":
+        basis_native("package2.dll"),
 
-    # ── pyuno ────────────────────────────────────────────────────────────
-    "//main/pyuno:source/loader/pythonloader.component",
+    # ── pyuno (Bazel target name is "pythonloader", not "pythonloader.uno") ──
+    "//main/pyuno:source/loader/pythonloader.component":
+        basis_native("pythonloader.dll"),
 
     # ── remotebridges ────────────────────────────────────────────────────
-    "//main/remotebridges:source/unourl_resolver/uuresolver.component",
+    "//main/remotebridges:source/unourl_resolver/uuresolver.component":
+        basis_native("uuresolver.dll"),
 
     # ── reportdesign ─────────────────────────────────────────────────────
-    "//main/reportdesign:util/rpt.component",
-    "//main/reportdesign:util/rptui.component",
-    "//main/reportdesign:util/rptxml.component",
+    "//main/reportdesign:util/rpt.component":
+        basis_native("rpt.dll"),
+    "//main/reportdesign:util/rptui.component":
+        basis_native("rptui.dll"),
+    "//main/reportdesign:util/rptxml.component":
+        basis_native("rptxml.dll"),
 
     # ── sax ──────────────────────────────────────────────────────────────
-    "//main/sax:source/expatwrap/expwrap.component",
-    "//main/sax:source/fastparser/fastsax.component",
+    "//main/sax:source/expatwrap/expwrap.component":
+        basis_native("expwrap.dll"),
+    "//main/sax:source/fastparser/fastsax.component":
+        basis_native("fastsax.dll"),
 
     # ── sc (Calc) ─────────────────────────────────────────────────────────
-    "//main/sc:util/sc.component",
-    "//main/sc:util/scd.component",
-    "//main/sc:util/vbaobj.component",
+    "//main/sc:util/sc.component":
+        basis_native("sc.dll"),
+    "//main/sc:util/scd.component":
+        basis_native("scd.dll"),
+    "//main/sc:util/vbaobj.component":
+        basis_native("vbaobj.dll"),
 
     # ── scaddins ─────────────────────────────────────────────────────────
-    "//main/scaddins:source/analysis/analysis.component",
-    "//main/scaddins:source/datefunc/date.component",
+    "//main/scaddins:source/analysis/analysis.component":
+        basis_native("analysis.dll"),
+    "//main/scaddins:source/datefunc/date.component":
+        basis_native("date.dll"),
 
     # ── sccomp (COIN-OR solver) ───────────────────────────────────────────
-    "//main/sccomp:source/solver/solver.component",
+    "//main/sccomp:source/solver/solver.component":
+        basis_native("solver.dll"),
 
     # ── scripting ────────────────────────────────────────────────────────
-    "//main/scripting:source/dlgprov/dlgprov.component",
-    "//main/scripting:source/protocolhandler/protocolhandler.component",
-    "//main/scripting:source/pyprov/pythonscript.component",
-    "//main/scripting:source/stringresource/stringresource.component",
-    "//main/scripting:source/vbaevents/vbaevents.component",
-    "//main/scripting:util/scriptframe.component",
+    "//main/scripting:source/dlgprov/dlgprov.component":
+        basis_native("dlgprov.uno.dll"),
+    "//main/scripting:source/protocolhandler/protocolhandler.component":
+        basis_native("protocolhandler.dll"),
+    "//main/scripting:source/pyprov/pythonscript.component":
+        pymodule("pythonscript"),
+    "//main/scripting:source/stringresource/stringresource.component":
+        basis_native("stringresource.uno.dll"),
+    "//main/scripting:source/vbaevents/vbaevents.component":
+        basis_native("vbaevents.uno.dll"),
+    "//main/scripting:util/scriptframe.component":
+        basis_native("scriptframe.dll"),
 
     # ── sd (Impress/Draw) ─────────────────────────────────────────────────
-    "//main/sd:util/sd.component",
-    "//main/sd:util/sdd.component",
+    "//main/sd:util/sd.component":
+        basis_native("sd.dll"),
+    "//main/sd:util/sdd.component":
+        basis_native("sdd.dll"),
 
-    # ── sdext (Minimizer, PresenterScreen) ───────────────────────────────
-    "//main/sdext:source/minimizer/PresentationMinimizer.component",
-    "//main/sdext:source/presenter/PresenterScreen.component",
+    # ── sdext ────────────────────────────────────────────────────────────
+    "//main/sdext:source/minimizer/PresentationMinimizer.component":
+        basis_native("PresentationMinimizer.dll"),
+    "//main/sdext:source/presenter/PresenterScreen.component":
+        basis_native("PresenterScreen.dll"),
 
     # ── sfx2 ─────────────────────────────────────────────────────────────
-    "//main/sfx2:util/sfx.component",
+    "//main/sfx2:util/sfx.component":
+        basis_native("sfx.dll"),
 
-    # ── shell (localbe, wininetbe, syssh, sysmail — Windows) ─────────────
-    "//main/shell:source/backends/localebe/localebe1.component",
-    "//main/shell:source/backends/wininetbe/wininetbe1.component",
-    "//main/shell:source/win32/syssh.component",
-    "//main/shell:source/win32/sysmail/sysmail.component",
+    # ── shell (Windows backends) ──────────────────────────────────────────
+    "//main/shell:source/backends/localebe/localebe1.component":
+        basis_native("localebe1.uno.dll"),
+    "//main/shell:source/backends/wininetbe/wininetbe1.component":
+        basis_native("wininetbe1.uno.dll"),
+    "//main/shell:source/win32/syssh.component":
+        basis_native("syssh.uno.dll"),
+    "//main/shell:source/win32/sysmail/sysmail.component":
+        basis_native("sysmail.dll"),
 
     # ── slideshow ────────────────────────────────────────────────────────
-    "//main/slideshow:util/slideshow.component",
+    "//main/slideshow:util/slideshow.component":
+        basis_native("slideshow.dll"),
 
     # ── sot ──────────────────────────────────────────────────────────────
-    "//main/sot:util/sot.component",
+    "//main/sot:util/sot.component":
+        basis_native("sot.dll"),
 
-    # ── starmath (Math formula editor) ───────────────────────────────────
-    "//main/starmath:util/sm.component",
-    "//main/starmath:util/smd.component",
+    # ── starmath ─────────────────────────────────────────────────────────
+    "//main/starmath:util/sm.component":
+        basis_native("sm.dll"),
+    "//main/starmath:util/smd.component":
+        basis_native("smd.dll"),
 
     # ── svgio ────────────────────────────────────────────────────────────
-    "//main/svgio:svgio.component",
+    "//main/svgio:svgio.component":
+        basis_native("svgio.dll"),
 
     # ── svl ──────────────────────────────────────────────────────────────
-    "//main/svl:source/fsstor/fsstorage.component",
-    "//main/svl:source/passwordcontainer/passwordcontainer.component",
-    "//main/svl:util/svl.component",
+    "//main/svl:source/fsstor/fsstorage.component":
+        basis_native("fsstorage.dll"),
+    "//main/svl:source/passwordcontainer/passwordcontainer.component":
+        basis_native("passwordcontainer.dll"),
+    "//main/svl:util/svl.component":
+        basis_native("svl.dll"),
 
     # ── svtools ──────────────────────────────────────────────────────────
-    "//main/svtools:source/hatchwindow/hatchwindowfactory.component",
-    "//main/svtools:util/svt.component",
+    "//main/svtools:source/hatchwindow/hatchwindowfactory.component":
+        basis_native("hatchwindowfactory.dll"),
+    "//main/svtools:util/svt.component":
+        basis_native("svt.dll"),
 
     # ── svx ──────────────────────────────────────────────────────────────
-    "//main/svx:util/svx.component",
-    "//main/svx:util/svxcore.component",
-    "//main/svx:util/textconversiondlgs.component",
+    "//main/svx:util/svx.component":
+        basis_native("svx.dll"),
+    "//main/svx:util/svxcore.component":
+        basis_native("svxcore.dll"),
+    "//main/svx:util/textconversiondlgs.component":
+        basis_native("textconversiondlgs.dll"),
 
     # ── sw (Writer) ───────────────────────────────────────────────────────
-    "//main/sw:util/msword.component",
-    "//main/sw:util/sw.component",
-    "//main/sw:util/swd.component",
-    "//main/sw:util/vbaswobj.component",
+    "//main/sw:util/msword.component":
+        basis_native("msword.dll"),
+    "//main/sw:util/sw.component":
+        basis_native("sw.dll"),
+    "//main/sw:util/swd.component":
+        basis_native("swd.dll"),
+    "//main/sw:util/vbaswobj.component":
+        basis_native("vbaswobj.dll"),
 
     # ── toolkit ──────────────────────────────────────────────────────────
-    "//main/toolkit:util/ootk.component",
+    "//main/toolkit:util/ootk.component":
+        basis_native("ootk.dll"),
 
     # ── ucb ──────────────────────────────────────────────────────────────
-    "//main/ucb:source/cacher/cached1.component",
-    "//main/ucb:source/core/ucb1.component",
-    "//main/ucb:source/sorter/srtrs1.component",
-    "//main/ucb:source/ucp/expand/ucpexpand1.component",
-    "//main/ucb:source/ucp/ext/ucpext.component",
-    "//main/ucb:source/ucp/file/ucpfile1.component",
-    "//main/ucb:source/ucp/ftp/ucpftp1.component",
-    "//main/ucb:source/ucp/hierarchy/ucphier1.component",
-    "//main/ucb:source/ucp/package/ucppkg1.component",
-    "//main/ucb:source/ucp/tdoc/ucptdoc1.component",
-    "//main/ucb:source/ucp/webdav/ucpdav1.component",
+    "//main/ucb:source/cacher/cached1.component":
+        basis_native("cached1.dll"),
+    "//main/ucb:source/core/ucb1.component":
+        basis_native("ucb1.dll"),
+    "//main/ucb:source/sorter/srtrs1.component":
+        basis_native("srtrs1.dll"),
+    "//main/ucb:source/ucp/expand/ucpexpand1.component":
+        basis_native("ucpexpand1.dll"),
+    "//main/ucb:source/ucp/ext/ucpext.component":
+        basis_native("ucpext.dll"),
+    "//main/ucb:source/ucp/file/ucpfile1.component":
+        basis_native("ucpfile1.dll"),
+    "//main/ucb:source/ucp/ftp/ucpftp1.component":
+        basis_native("ucpftp1.dll"),
+    "//main/ucb:source/ucp/hierarchy/ucphier1.component":
+        basis_native("ucphier1.dll"),
+    "//main/ucb:source/ucp/package/ucppkg1.component":
+        basis_native("ucppkg1.dll"),
+    "//main/ucb:source/ucp/tdoc/ucptdoc1.component":
+        basis_native("ucptdoc1.dll"),
+    "//main/ucb:source/ucp/webdav/ucpdav1.component":
+        basis_native("ucpdav1.dll"),
 
     # ── unotools ─────────────────────────────────────────────────────────
-    "//main/unotools:util/utl.component",
+    "//main/unotools:util/utl.component":
+        basis_native("utl.dll"),
 
-    # ── unoxml ───────────────────────────────────────────────────────────
-    "//main/unoxml:source/rdf/unordf.component",
-    "//main/unoxml:source/service/unoxml.component",
+    # ── unoxml (both components use the same DLL) ─────────────────────────
+    "//main/unoxml:source/rdf/unordf.component":
+        basis_native("unoxml.dll"),
+    "//main/unoxml:source/service/unoxml.component":
+        basis_native("unoxml.dll"),
 
     # ── uui ──────────────────────────────────────────────────────────────
-    "//main/uui:util/uui.component",
+    "//main/uui:util/uui.component":
+        basis_native("uui.dll"),
 
     # ── vbahelper ────────────────────────────────────────────────────────
-    "//main/vbahelper:util/msforms.component",
+    "//main/vbahelper:util/msforms.component":
+        basis_native("msforms.dll"),
 
     # ── vcl (Windows) ────────────────────────────────────────────────────
-    "//main/vcl:vcl.windows.component",
+    "//main/vcl:vcl.windows.component":
+        basis_native("vcl.dll"),
 
     # ── winaccessibility ─────────────────────────────────────────────────
-    "//main/winaccessibility:source/service/winaccessibility.component",
+    "//main/winaccessibility:source/service/winaccessibility.component":
+        basis_native("winaccessibility.dll"),
 
     # ── writerfilter ─────────────────────────────────────────────────────
-    "//main/writerfilter:util/writerfilter.component",
+    "//main/writerfilter:util/writerfilter.component":
+        basis_native("writerfilter.dll"),
 
-    # ── xmlhelp ──────────────────────────────────────────────────────────
-    "//main/xmlhelp:source/treeview/tvhlp1.component",
-    "//main/xmlhelp:util/ucpchelp1.component",
+    # ── xmlhelp (deferred) ────────────────────────────────────────────────
+    "//main/xmlhelp:source/treeview/tvhlp1.component":
+        basis_native("tvhlp1.dll"),
+    "//main/xmlhelp:util/ucpchelp1.component":
+        basis_native("ucpchelp1.dll"),
 
     # ── xmloff ───────────────────────────────────────────────────────────
-    "//main/xmloff:source/transform/xof.component",
-    "//main/xmloff:util/xo.component",
+    "//main/xmloff:source/transform/xof.component":
+        basis_native("xof.dll"),
+    "//main/xmloff:util/xo.component":
+        basis_native("xo.dll"),
 
     # ── xmlscript ────────────────────────────────────────────────────────
-    "//main/xmlscript:util/xcr.component",
+    "//main/xmlscript:util/xcr.component":
+        basis_native("xcr.dll"),
 
-    # ── xmlsecurity (NSS — Windows variant) ──────────────────────────────
-    "//main/xmlsecurity:util/xmlsecurity.component",
-    "//main/xmlsecurity:util/xsec_fw.component",
-    "//main/xmlsecurity:util/xsec_xmlsec.windows.component",
+    # ── xmlsecurity ──────────────────────────────────────────────────────
+    "//main/xmlsecurity:util/xmlsecurity.component":
+        basis_native("xmlsecurity.dll"),
+    "//main/xmlsecurity:util/xsec_fw.component":
+        basis_native("xsec_fw.dll"),
+    "//main/xmlsecurity:util/xsec_xmlsec.windows.component":
+        basis_native("xsec_xmlsec.dll"),
 
     # ── Windows-only: extensions/ole (ATL) ───────────────────────────────
-    "//main/extensions:source/ole/oleautobridge.component",
+    "//main/extensions:source/ole/oleautobridge.component":
+        basis_native("oleautobridge.uno.dll"),
 
-    # ── accessibility (Java UNO bridge — Windows) ─────────────────────────
-    "//main/accessibility:java/java_uno_accessbridge/java_uno_accessbridge.component",
+    # ── accessibility (Java UNO bridge, deferred) ─────────────────────────
+    "//main/accessibility:java/java_uno_accessbridge/java_uno_accessbridge.component":
+        basis_java("java_uno_accessbridge.jar"),
 
-    # ── mail merge (was separate ooo-services.rdb in OOo 3.x, merged here in 4.x) ──
-    "//main/scripting:source/pyprov/mailmerge.component",
-]
+    # ── mail merge (Python) ───────────────────────────────────────────────
+    "//main/scripting:source/pyprov/mailmerge.component":
+        pymodule("mailmerge"),
+}
 
 # ── All uiconfig XML files (collected from every module) ─────────────────────
 

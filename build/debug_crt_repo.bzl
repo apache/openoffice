@@ -18,7 +18,7 @@ so non-debug builds are unaffected.
 
 load("//build:vs_paths.bzl", "DEBUG_CRT_DIR")
 
-_DLLS = ["msvcr90d.dll", "msvcp90d.dll"]
+_DLLS = ["msvcr90d.dll", "msvcp90d.dll", "msvcm90d.dll"]
 
 _BUILD_DLLS = """\
 filegroup(
