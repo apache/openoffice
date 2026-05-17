@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity
+    version="1.0.0.0"
+    processorArchitecture="x86"
+    name="Apache.OpenOffice"
+    type="win32"/>
+  <!--
+    Declare Microsoft.VC90.DebugCRT so Windows activates it as a private SxS
+    assembly from program\.  Required when the toolchain uses /MDd
+    (--compilation_mode=dbg) and DLLs have no embedded manifests.
+    Paired with Microsoft.VC90.DebugCRT.manifest staged alongside the DLLs.
+  -->
+  <dependency>
+    <dependentAssembly>
+      <assemblyIdentity
+        type="win32"
+        name="Microsoft.VC90.DebugCRT"
+        version="9.0.30729.1"
+        processorArchitecture="x86"
+        publicKeyToken="1fc8b3b9a1e18e3b"/>
+    </dependentAssembly>
+  </dependency>
+</assembly>

@@ -231,7 +231,8 @@ fcfg_merge = rule(
 # ── pack_registry ─────────────────────────────────────────────────────────────
 
 def _pack_registry_impl(ctx):
-    xcd_file   = ctx.actions.declare_file(ctx.label.name + ".xcd")
+    out_name   = ctx.attr.out if ctx.attr.out else ctx.label.name + ".xcd"
+    xcd_file   = ctx.actions.declare_file(out_name)
     input_file = ctx.actions.declare_file(ctx.label.name + ".input")
 
     perl   = ctx.file._perl
@@ -275,6 +276,10 @@ def _pack_registry_impl(ctx):
 pack_registry = rule(
     implementation = _pack_registry_impl,
     attrs = {
+        "out": attr.string(
+            default = "",
+            doc     = "Output filename (default: <name>.xcd)",
+        ),
         "xcs": attr.label_list(
             allow_files = True,
             doc = ".xcs schema files (must precede xcu in the registry list)",

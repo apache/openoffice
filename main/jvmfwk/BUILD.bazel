@@ -43,8 +43,11 @@ cc_library(
 )
 
 # ── jvmfwk.dll ───────────────────────────────────────────────────
+# Named "jvmfwk" (not "jvmfwk3") so the output file is jvmfwk.dll,
+# matching the LIBRARY jvmfwk statement in util/jvmfwk.def and the
+# DLL name embedded in the import libraries of all consumers.
 cc_binary(
-    name = "jvmfwk3",
+    name = "jvmfwk",
     srcs = [
         "source/elements.cxx",
         "source/elements.hxx",
@@ -81,8 +84,11 @@ cc_binary(
 
 # ── import library for downstream DLLs ───────────────────────────
 filegroup(
-    name = "jvmfwk3_implib",
-    srcs = [":jvmfwk3"],
+    name = "jvmfwk_implib",
+    srcs = [":jvmfwk"],
     output_group = "interface_library",
     visibility = ["//visibility:public"],
 )
+
+# Alias so existing references still resolve during transition.
+alias(name = "jvmfwk3_implib", actual = ":jvmfwk_implib", visibility = ["//visibility:public"])

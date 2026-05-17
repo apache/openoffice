@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <!--
+    Private SxS assembly manifest for Microsoft.VC90.DebugCRT.
+    Placed in program\ so Windows resolves the debug CRT DLLs from this
+    directory instead of WinSxS (which only carries the release CRT on
+    developer machines).  Activated by soffice.exe.manifest.
+
+    Intentionally omits msvcm90d.dll (managed debug CRT) — not needed for
+    pure native C++ builds.  Hash verification is skipped for private assemblies
+    on all supported Windows versions.
+  -->
+  <assemblyIdentity
+    type="win32"
+    name="Microsoft.VC90.DebugCRT"
+    version="9.0.30729.1"
+    processorArchitecture="x86"
+    publicKeyToken="1fc8b3b9a1e18e3b"/>
+  <file name="msvcr90d.dll"/>
+  <file name="msvcp90d.dll"/>
+</assembly>

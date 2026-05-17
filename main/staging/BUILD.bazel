@@ -12,6 +12,24 @@ filegroup(
     ],
 )
 
+# ── Debug-mode application manifest ──────────────────────────────────────────
+# When --compilation_mode=dbg, toolchain uses /MDd which requires MSVCR90D.dll.
+# Without an EXE manifest, Windows can't activate the debug CRT SxS assembly
+# and raises R6034.  This manifest declares Microsoft.VC90.DebugCRT as a
+# private assembly dependency so Windows resolves it from program/ instead of
+# WinSxS (which doesn't carry the debug CRT on non-developer machines).
+# Must be paired with Microsoft.VC90.DebugCRT.manifest (from @msvc_debug_crt).
+filegroup(
+    name = "soffice_exe_manifest",
+    srcs = [
+        # EXE application manifest — declares Microsoft.VC90.DebugCRT dependency.
+        "soffice.exe.manifest",
+        # Private SxS assembly manifest — tells Windows to resolve msvcr90d.dll
+        # and msvcp90d.dll from program\ rather than WinSxS.
+        "Microsoft.VC90.DebugCRT.manifest",
+    ],
+)
+
 # ── Flat program/ files (DLLs, EXEs, RDBs, ZIPs, .py scripts, .ini) ─────────
 collect_outputs(
     name = "all_files",
@@ -21,6 +39,9 @@ collect_outputs(
 
         # ── Core launcher (pulls compile-time transitive DLLs transitively) ──
         "//main/desktop:soffice",
+
+        # ── JVM framework (required by cui, svl, svtools, desktop at load time) ─
+        "//main/jvmfwk:jvmfwk",
 
         # ── UNO runtime infrastructure ────────────────────────────────────────
         "//main/stoc:bootstrap.uno",
@@ -253,19 +274,23 @@ collect_outputs(
         ],
         "//conditions:default": [],
     }) + select({
-        # Debug CRT DLLs (MSVCR90D.dll, MSVCP90D.dll) — required when the
-        # toolchain uses /MDd (--compilation_mode=dbg).  Not in System32;
-        # must be staged alongside the application.
-        # Set MSVC_DEBUG_CRT_PATH in user.bazelrc pointing at the VS2008
-        # non-redistributable debug CRT directory.
+        # Debug CRT DLLs (MSVCR90D.dll, MSVCP90D.dll) and private-assembly
+        # manifest — required when the toolchain uses /MDd (--compilation_mode=dbg).
+        # The DLLs are not in System32; the manifest suppresses R6034 by
+        # activating Microsoft.VC90.DebugCRT as a private SxS assembly.
+        # Set MSVC_DEBUG_CRT_PATH in user.bazelrc if VS2008 is not at the
+        # default path (see //build:vs_paths.bzl).
         # Release builds use MSVCR90.dll which is already in System32.
-        "//build:dbg_build": ["@msvc_debug_crt//:dlls"],
+        "//build:dbg_build": [
+            "@msvc_debug_crt//:dlls",
+            ":soffice_exe_manifest",
+        ],
         "//conditions:default": [],
     }),
 )
 
 flat_install(
-    name = "install",
+    name = "_install_program",
     srcs = [":all_files"],
     install_pdb = select({
         # Stage .pdb debug-info files alongside DLLs/EXEs.
@@ -275,6 +300,26 @@ flat_install(
         "//build:has_debug": True,
         "//conditions:default": False,
     }),
+)
+
+# ── share/registry — XCD configuration packages ───────────────────────────────
+# configmgr.uno.dll reads all *.xcd files from ${OOO_BASE_DIR}/share/registry/
+# on startup.  Without them the app exits immediately with no UI.
+tree_install(
+    name = "_install_registry",
+    src  = "//main/postprocess:all_xcd",
+    strip_prefix = "main/postprocess",
+    dst  = "share/registry",
+)
+
+# Top-level install: program/ files + share/registry/ XCD packages.
+filegroup(
+    name = "install",
+    srcs = [
+        ":_install_program",
+        ":_install_registry",
+    ],
+    visibility = ["//visibility:public"],
 )
 
 # ── Python standard library tree → program/python-core-2.7.18/lib/ ───────────

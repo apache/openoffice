@@ -42,7 +42,7 @@ collect_outputs = rule(
 )
 
 # Extensions included in the flat install directory.
-_INSTALL_EXTS = {"exe": True, "dll": True, "rdb": True, "zip": True, "py": True, "ini": True}
+_INSTALL_EXTS = {"exe": True, "dll": True, "rdb": True, "zip": True, "py": True, "ini": True, "manifest": True}
 
 def _flat_install_impl(ctx):
     all_files = depset(transitive = [
@@ -128,7 +128,17 @@ def _tree_install_impl(ctx):
         # Compute in-repo relative path by stripping the workspace root.
         ws_root = f.owner.workspace_root  # e.g. "external/python+"
         if ws_root:
-            in_repo = f.path[len(ws_root) + 1:]  # e.g. "Lib/abc.py"
+            if f.is_source:
+                # Source files: f.path = "external/python+/Lib/abc.py"
+                in_repo = f.path[len(ws_root) + 1:]
+            else:
+                # Generated files (cc_binary etc.): f.path starts with
+                # "bazel-out/<config>/bin/..." so we cannot strip ws_root
+                # from the front.  short_path is "../python+/python.exe".
+                repo_basename = ws_root.split("/")[-1]  # "python+"
+                short_prefix = "../" + repo_basename + "/"
+                short = f.short_path
+                in_repo = short[len(short_prefix):] if short.startswith(short_prefix) else short
         else:
             in_repo = f.short_path
 

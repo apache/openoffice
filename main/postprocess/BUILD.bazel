@@ -420,6 +420,7 @@ _XSLT = "//main/solenv/bin:packregistry.xslt"
 
 pack_registry(
     name = "base_xcd",
+    out  = "base.xcd",
     xcs  = [],
     xcu  = [
         fcfg("fcfg_database_types"),
@@ -436,6 +437,7 @@ pack_registry(
 
 pack_registry(
     name = "calc_xcd",
+    out  = "calc.xcd",
     xcs  = [
         oc_xcs("Office/UI/CalcCommands.xcs"),
         oc_xcs("Office/UI/CalcWindowState.xcs"),
@@ -458,6 +460,7 @@ pack_registry(
 
 pack_registry(
     name = "cjk_xcd",
+    out  = "cjk.xcd",
     xcs  = [],
     xcu  = [
         oc_mod("Office/Common.xcu",  "cjk"),
@@ -471,6 +474,7 @@ pack_registry(
 
 pack_registry(
     name = "ctl_xcd",
+    out  = "ctl.xcd",
     xcs  = [],
     xcu  = [
         oc_mod("Office/Common.xcu", "ctl"),
@@ -483,6 +487,7 @@ pack_registry(
 
 pack_registry(
     name = "draw_xcd",
+    out  = "draw.xcd",
     xcs  = [
         oc_xcs("Office/UI/DrawWindowState.xcs"),
     ],
@@ -502,6 +507,7 @@ pack_registry(
 
 pack_registry(
     name = "graphicfilter_xcd",
+    out  = "graphicfilter.xcd",
     xcs  = [],
     xcu  = [
         fcfg("fcfg_drawgraphics_types"),
@@ -517,6 +523,7 @@ pack_registry(
 
 pack_registry(
     name = "impress_xcd",
+    out  = "impress.xcd",
     xcs  = [
         oc_xcs("Office/UI/Effects.xcs"),
         oc_xcs("Office/UI/ImpressWindowState.xcs"),
@@ -542,6 +549,7 @@ pack_registry(
 
 pack_registry(
     name = "korea_xcd",
+    out  = "korea.xcd",
     xcs  = [],
     xcu  = [
         oc_mod("Office/Common.xcu", "korea"),
@@ -554,6 +562,7 @@ pack_registry(
 
 pack_registry(
     name = "lingucomponent_xcd",
+    out  = "lingucomponent.xcd",
     xcs  = [],
     xcu  = [
         "//main/lingucomponent:config/Linguistic-lingucomponent-hyphenator.xcu",
@@ -748,6 +757,7 @@ _MAIN_XCU = [
 
 pack_registry(
     name = "main_xcd",
+    out  = "main.xcd",
     xcs  = _MAIN_XCS,
     xcu  = _MAIN_XCU,
     xslt = _XSLT,
@@ -758,6 +768,7 @@ pack_registry(
 
 pack_registry(
     name = "math_xcd",
+    out  = "math.xcd",
     xcs  = [
         oc_xcs("Office/UI/MathCommands.xcs"),
         oc_xcs("Office/UI/MathWindowState.xcs"),
@@ -779,6 +790,7 @@ pack_registry(
 
 pack_registry(
     name = "oooimprovement_xcd",
+    out  = "oooimprovement.xcd",
     xcs  = [],
     xcu  = [
         "//main/extensions/source/oooimprovement:Jobs.xcu",
@@ -792,6 +804,7 @@ pack_registry(
 
 pack_registry(
     name = "palm_xcd",
+    out  = "palm.xcd",
     xcs  = [],
     xcu  = [
         fcfg("fcfg_palm_types"),
@@ -805,6 +818,7 @@ pack_registry(
 
 pack_registry(
     name = "pocketexcel_xcd",
+    out  = "pocketexcel.xcd",
     xcs  = [],
     xcu  = [
         fcfg("fcfg_pocketexcel_types"),
@@ -818,6 +832,7 @@ pack_registry(
 
 pack_registry(
     name = "pocketword_xcd",
+    out  = "pocketword.xcd",
     xcs  = [],
     xcu  = [
         fcfg("fcfg_pocketword_types"),
@@ -831,6 +846,7 @@ pack_registry(
 
 pack_registry(
     name = "pyuno_xcd",
+    out  = "pyuno.xcd",
     xcs  = [],
     xcu  = [
         oc_mod("Office/Scripting.xcu", "python"),
@@ -843,6 +859,7 @@ pack_registry(
 
 pack_registry(
     name = "w4w_xcd",
+    out  = "w4w.xcd",
     xcs  = [],
     xcu  = [
         fcfg("fcfg_w4w_types"),
@@ -856,6 +873,7 @@ pack_registry(
 
 pack_registry(
     name = "writer_xcd",
+    out  = "writer.xcd",
     xcs  = [
         oc_xcs("Office/UI/WriterCommands.xcs"),
         oc_xcs("Office/UI/WriterFormWindowState.xcs"),
@@ -891,6 +909,7 @@ pack_registry(
 
 pack_registry(
     name = "xsltfilter_xcd",
+    out  = "xsltfilter.xcd",
     xcs  = [],
     xcu  = [
         fcfg("fcfg_xslt_types"),
@@ -904,6 +923,7 @@ pack_registry(
 
 pack_registry(
     name = "forcedefault_xcd",
+    out  = "forcedefault.xcd",
     xcs  = [],
     xcu  = [
         oc_mod("Office/Linguistic.xcu", "ForceDefaultLanguage"),
