@@ -135,7 +135,8 @@ from com.sun.star.container import XNameContainer
 from com.sun.star.xml.sax import XDocumentHandler, InputSource
 from com.sun.star.uno import Exception as UnoException
 from com.sun.star.script import XInvocation
-from com.sun.star.awt import XActionListener
+from com.sun.star.awt import XActionListener, FontDescriptor
+from com.sun.star.awt.FontPitch import FIXED
 
 from com.sun.star.script.provider import XScriptProvider, XScript, XScriptContext, ScriptFrameworkErrorException
 from com.sun.star.script.browse import XBrowseNode
@@ -551,6 +552,10 @@ def createEditorDialog( ctx ):
     closeButtonModel.PushButtonType = 2  # CANCEL
     closeButtonModel.Label = "Close"
 
+    fontDescriptor = FontDescriptor()
+    fontDescriptor.Name = "SomeFixedWidthFont"
+    fontDescriptor.Pitch = FIXED
+
     textFieldModel = dialogModel.createInstance(
         "com.sun.star.awt.UnoControlEditModel" )
     textFieldModel.PositionX = 6
@@ -561,6 +566,7 @@ def createEditorDialog( ctx ):
     textFieldModel.HScroll = True
     textFieldModel.VScroll = True
     textFieldModel.MultiLine = True
+    textFieldModel.FontDescriptor = fontDescriptor
 
     dialogModel.insertByName( "RunButton", runButtonModel )
     dialogModel.insertByName( "SaveButton", saveButtonModel )
