@@ -19,6 +19,10 @@ browsing and executing scripts.
 C++ for a ProtocolHandler implementation that handles vnd.sun.star.script
 URIs and dispatches them for execution to the Scripting Framework.
 
+- source/pyprov
+
+LanguageScriptProvider for Python
+
 - source/basprov
 
 C++ implementation of the LanguageScriptProvider UNO service for Basic
@@ -56,10 +60,6 @@ Deprecated Code
 - java/org/openoffice/*
 
 Support for developing scripts in IDEs such as NetBeans.
-
-- source/pyprov
-
-LanguageScriptProvider for Python
 
 - source/storage
 - source/runtimemgr
