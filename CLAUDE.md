@@ -25,7 +25,7 @@ psprint_config —  Linux PostScript/font config
 apple_remote  —   macOS Apple Remote control
 macOS         —   macOS-specific platform UI
 ── Deferred: Installer/packaging — post-build ────────────────────────────
-scp2          ⬜  (installer package/script definitions)
+scp2          ✅  (installer package/script definitions)
 instsetoo_native ⬜ (native Windows installer build)
 setup_native  ⬜  (Windows setup UI)
 packimages    ⬜  (image packaging for install)
@@ -95,7 +95,7 @@ Source code is NOT being changed — only the build system.
 - never manipulate the cache directly, if you have to reset it use: bazel mod deps --lockfile_mode=refresh or ask the user for cleanup.
 - add a migration summary to the module as readme.md
 - let the user build
-- update frontier after build is successfull.
+- update frontier after build is successful.
 
 ## Cross-cutting compiler flags & defines
 These apply to many packages — check before building any new module:

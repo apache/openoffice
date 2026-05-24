@@ -21,7 +21,8 @@ Mirrors the real OpenOffice install tree (`C:\Program Files (x86)\OpenOffice 4\`
 ```
 bazel-bin/main/staging/install/
   program/          ← all DLLs, EXEs, RDB files, and INI files
-  share/registry/   ← *.xcd configuration packages (deferred)
+  share/registry/   ← *.xcd configuration packages
+  share/setup/      ← setup_osl.inf (consumed by instsetoo_native, still deferred)
 ```
 
 All build outputs go into `program/` so that the bootstrap INI variables work
@@ -42,9 +43,11 @@ bazel-bin\main\staging\install\program\soffice.exe
 
 ## Known gaps (deferred)
 
-- **INI files are hand-written stand-ins** for what `scp2` + `instsetoo_native` would generate at
-  install time. When those modules are migrated the static files in this directory should be
-  replaced by generated outputs.
+- **INI files are hand-written stand-ins** for what `instsetoo_native` would generate at
+  install time from the scp2 `.par` files.  `scp2` is now built and staged at
+  `share/setup/setup_osl.inf`; the remaining step is `instsetoo_native` (still deferred)
+  which would read that `.inf` and produce the Windows MSI and the INI files currently
+  maintained by hand here.
 - **Silent crash on bootstrap failure**: if `UserInstallation` or `BaseInstallation` cannot be
   resolved, `UserInstall::finalize()` returns `E_Unknown` and the application exits without any
   error message or dialog. The proper fix is in `desktop/source/app/app.cxx` — the `E_Unknown`
@@ -66,3 +69,26 @@ bazel-bin\main\staging\install\program\soffice.exe
 - `msword` — added `//main/writerfilter:writerfilter_headers` dep
 - `i18nsearch` — added `//main/comphelper:comphelper_headers`
 - `writerfilter_gen_headers` — added `".."` to `includes` so `writerfilter/doctok/sprmids.hxx` (generated) resolves via `bin/main` search path
+
+# Facts from the debug session:
+
+1. Throw site confirmed
+The C++ exception is thrown at cppuhelper3MSC!cppu::ImplHelper_query+0x3c8, called from cppu::bootstrapInitialSF. ImplHelper_query is UNO's QueryInterface — it throws RuntimeException when a type is not recognized.
+
+2. DLLs genuinely load twice at different addresses with different sizes
+
+cppuhelper3MSC.dll: 1.4 MB at 00bf0000, then 508 KB at 00d60000
+cppu3.dll, comphelpMSC.dll, svxcore.dll, icuuc.dll, basegfx.dll, sot.dll and others all load twice
+Different sizes = two genuinely different physical DLL files with the same name. This is the core problem.
+
+3. Two-phase load pattern
+Phase 1 (static import resolution before loader break): sofficeapp.dll → deploymentgui.dll → svxcore.dll → pulls in a large transitive dep tree including cppuhelper3MSC, cppu3, etc.
+
+Phase 2 (after g, during UNO bootstrap): bootstrap.uno.dll, msci_uno.dll load — their deps reload the same DLLs again at new addresses.
+
+4. Result
+Two separate copies of the UNO type system global state. Bootstrap's type descriptors are unknown to the first instance → RuntimeException in ImplHelper_query → during unwind, uno_any_clear hits a null pType → AV.
+
+Root cause in one line: deploymentgui.dll pulls svxcore.dll into process before UNO bootstrap runs, causing a second copy of all UNO runtime DLLs to load at different addresses, splitting the type system.
+
+Take the break. When you're back, the fix direction is clear: either remove deploymentgui/deploymentmisc from sofficeapp.dll's static import list (defer it to runtime LoadLibrary) or remove it from the staging deps entirely if the deployment check isn't needed for a dev build.

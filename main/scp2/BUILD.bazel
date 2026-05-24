@@ -1,0 +1,152 @@
+"""Bazel build for scp2 — installer package definitions.
+
+Pipeline (no bash/genrule shell — all steps via ctx.actions.run):
+  langmacros_rule     macro.pl → langmacros.inc
+  scp_module          *.scp → (scp_preprocess.pl + cl.exe) → *.pre
+                            → (pre2par.pl) → osl/*.par
+  setup_osl_rule      par2script.pl → setup/setup_osl.inf
+"""
+
+load("//build/rules:scp2.bzl", "alllangmodules_target", "langmacros_target", "scp_module", "setup_osl_target")
+
+package(default_visibility = ["//visibility:public"])
+
+# ── Step 0: langmacros.inc ──────────────────────────────────────────────────
+langmacros_target(
+    name = "langmacros_inc",
+    macro_pl = "macros/macro.pl",
+)
+
+# ── Step 0b: alllangmodules_*.inc ────────────────────────────────────────────
+alllangmodules_target(
+    name = "alllangmodules_incs",
+    modules_pl = "source/templates/modules.pl",
+    sct_srcs = glob(["source/templates/module_langpack*.sct"]),
+)
+
+# Expose macros.inc so scp_module rules can list it as a tracked input.
+filegroup(
+    name = "macros_inc",
+    srcs = ["inc/macros.inc"],
+)
+
+# ── Step 1: per-module .scp → .par ──────────────────────────────────────────
+
+scp_module(name = "ooo",           srcdir = "source/ooo")
+scp_module(name = "calc",          srcdir = "source/calc")
+scp_module(name = "writer",        srcdir = "source/writer")
+scp_module(name = "impress",       srcdir = "source/impress")
+scp_module(name = "draw",          srcdir = "source/draw")
+scp_module(name = "base",          srcdir = "source/base")
+scp_module(name = "math",          srcdir = "source/math")
+scp_module(name = "canvas",        srcdir = "source/canvas")
+scp_module(name = "graphicfilter", srcdir = "source/graphicfilter")
+scp_module(name = "xsltfilter",    srcdir = "source/xsltfilter")
+scp_module(name = "python",        srcdir = "source/python")
+scp_module(name = "activex",       srcdir = "source/activex")
+scp_module(name = "quickstart",    srcdir = "source/quickstart")
+scp_module(name = "winexplorerext",srcdir = "source/winexplorerext")
+
+# ── Step 2: par2script — aggregate .par files into a setup script ────────────
+
+# Basenames of .par files to include, mirroring SCP1FILES in util/makefile.mk
+# (Windows, no JRE, with ActiveX, quickstart and winexplorerext).
+_SETUP_OSL_PAR_NAMES = [
+    # ooo core
+    "installation_ooo.par",
+    "scpaction_ooo.par",
+    "directory_ooo.par",
+    "datacarrier_ooo.par",
+    "file_ooo.par",
+    "file_extra_ooo.par",
+    "file_font_ooo.par",
+    "file_library_ooo.par",
+    "file_resource_ooo.par",
+    "shortcut_ooo.par",
+    "module_ooo.par",
+    "module_hidden_ooo.par",
+    "module_langpack.par",
+    "module_lang_template.par",
+    "module_systemint.par",
+    "module_improvement.par",
+    "profile_ooo.par",
+    "profileitem_ooo.par",
+    "ure_into_ooo.par",
+    "ure.par",
+    "common_brand.par",
+    "common_brand_readme.par",
+    "ooo_brand.par",
+    "file_improvement.par",
+    # Windows-only ooo (file_jre_ooo.par is in setup_osljre only)
+    "folder_ooo.par",
+    "folderitem_ooo.par",
+    "registryitem_ooo.par",
+    "windowscustomaction_ooo.par",
+    "vc_redist.par",
+    # writer
+    "module_writer.par",
+    "file_writer.par",
+    "registryitem_writer.par",
+    "folderitem_writer.par",
+    # calc
+    "module_calc.par",
+    "file_calc.par",
+    "registryitem_calc.par",
+    "folderitem_calc.par",
+    # draw
+    "module_draw.par",
+    "file_draw.par",
+    "registryitem_draw.par",
+    "folderitem_draw.par",
+    # impress
+    "module_impress.par",
+    "file_impress.par",
+    "registryitem_impress.par",
+    "folderitem_impress.par",
+    # base
+    "module_base.par",
+    "file_base.par",
+    "registryitem_base.par",
+    "folderitem_base.par",
+    # math
+    "module_math.par",
+    "file_math.par",
+    "registryitem_math.par",
+    "folderitem_math.par",
+    # canvas
+    "canvascommons.par",
+    "vclcanvas.par",
+    # graphicfilter
+    "module_graphicfilter.par",
+    "file_graphicfilter.par",
+    # xsltfilter
+    "module_xsltfilter.par",
+    "file_xsltfilter.par",
+    # python
+    "module_python.par",
+    "module_python_mailmerge.par",
+    "file_python.par",
+    "profileitem_python.par",
+    # activex
+    "module_activex.par",
+    "file_activex.par",
+    # quickstart
+    "module_quickstart.par",
+    "file_quickstart.par",
+    "registryitem_quickstart.par",
+    # winexplorerext
+    "module_winexplorerext.par",
+    "file_winexplorerext.par",
+    "registryitem_winexplorerext.par",
+]
+
+setup_osl_target(
+    name = "setup_osl",
+    scp_modules = [
+        ":ooo", ":calc", ":writer", ":impress", ":draw", ":base", ":math",
+        ":canvas", ":graphicfilter", ":xsltfilter", ":python",
+        ":activex", ":quickstart", ":winexplorerext",
+    ],
+    par_names = _SETUP_OSL_PAR_NAMES,
+    par2script_srcs = "//main/solenv/bin:par2script_srcs",
+)

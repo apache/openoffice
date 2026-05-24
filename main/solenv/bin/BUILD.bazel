@@ -1,8 +1,28 @@
-# main/solenv/bin — build-system XSLT scripts
-# Expose the pack*.xslt files so postprocess (and future rules) can reference them.
+# main/solenv/bin — build-system XSLT scripts and Perl pipeline tools
 
 exports_files([
     "createcomponent.xslt",
     "packcomponents.xslt",
     "packregistry.xslt",
 ])
+
+# Perl wrapper: runs cl.exe via IPC::Open3, captures stdout → .pre file.
+filegroup(
+    name = "scp_preprocess_pl",
+    srcs = ["scp_preprocess.pl"],
+    visibility = ["//visibility:public"],
+)
+
+# Perl modules for the scp2 pre2par pipeline (.pre → .par)
+filegroup(
+    name = "pre2par_srcs",
+    srcs = ["pre2par.pl"] + glob(["modules/pre2par/**/*.pm"]),
+    visibility = ["//visibility:public"],
+)
+
+# Perl modules for the scp2 par2script pipeline (.par → setup script)
+filegroup(
+    name = "par2script_srcs",
+    srcs = ["par2script.pl"] + glob(["modules/par2script/**/*.pm"]),
+    visibility = ["//visibility:public"],
+)

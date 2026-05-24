@@ -312,12 +312,24 @@ tree_install(
     dst  = "share/registry",
 )
 
-# Top-level install: program/ files + share/registry/ XCD packages.
+# ── share/setup — scp2 installer script ──────────────────────────────────────
+# setup_osl.inf is consumed by instsetoo_native (still deferred) to produce the
+# Windows MSI installer.  Staged here so the artifact is reachable alongside the
+# rest of the install layout.
+tree_install(
+    name = "_install_scp2",
+    src  = "//main/scp2:setup_osl",
+    strip_prefix = "main/scp2/setup",
+    dst  = "share/setup",
+)
+
+# Top-level install: program/ files + share/registry/ XCD packages + scp2 metadata.
 filegroup(
     name = "install",
     srcs = [
         ":_install_program",
         ":_install_registry",
+        ":_install_scp2",
     ],
     visibility = ["//visibility:public"],
 )

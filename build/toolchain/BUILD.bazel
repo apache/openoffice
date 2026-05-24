@@ -1,9 +1,9 @@
 load("@rules_cc//cc/toolchains:cc_toolchain.bzl", "cc_toolchain")
 load(":windows_cc_toolchain_config.bzl", "cc_toolchain_config")
-load("//build:vs_paths.bzl", _VS = "VS", _VC = "VC", _SDK = "SDK")
+load("@vs_config//:paths.bzl", _VS = "VS", _VC = "VC", _SDK = "SDK", _MSVC_TMP = "MSVC_TMP")
 
 # VS2008 x86 toolchain for Apache OpenOffice on Windows
-# Paths are defined in //build:vs_paths.bzl — edit there when the installation moves.
+# Paths are configured via --repo_env=VS_PATH / --repo_env=SDK_PATH in user.bazelrc.
 
 filegroup(name = "empty", srcs = [])
 
@@ -17,7 +17,7 @@ cc_toolchain_config(
     abi_version = "local",
     abi_libc_version = "local",
     toolchain_identifier = "msvc_x86_vs2008",
-    msvc_env_tmp  = "C:\\Users\\legin\\AppData\\Local\\Temp",
+    msvc_env_tmp  = _MSVC_TMP,
     msvc_env_path = (
         _SDK + "\\bin;" +
         _VS  + "\\Common7\\IDE;" +
@@ -50,7 +50,7 @@ cc_toolchain_config(
         "gcc":     _VC + "\\bin\\cl.exe",
         "gcov":    "wrapper/bin/msvc_nop.bat",
         # Forward slashes required: rules_foreign_cc uses paths.dirname() on this
-        # value which only recognises '/' as a separator; backslashes produce "".
+        # value which only recognizes '/' as a separator; backslashes produce "".
         "ld": (_VC + "\\bin\\link.exe").replace("\\", "/"),
         "ml":      _VC + "\\bin\\ml.exe",
         "nm":      "wrapper/bin/msvc_nop.bat",
