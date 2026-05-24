@@ -80,6 +80,7 @@ _LOCALIZED_SET = {f: True for f in _LOCALIZED}
 exports_files(glob([
     "registry/schema/**/*.xcs",
     "registry/data/**/*.xcu",
+    "registry/data/**/*.xcu.tmpl",
 ]))
 
 filegroup(

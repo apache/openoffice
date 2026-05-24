@@ -282,7 +282,10 @@ cc_library(
         "source/deployment/registry/configuration/dp_configuration.cxx",
         "source/deployment/registry/configuration/dp_configurationbackenddb.cxx",
     ],
-    copts = _COPTS + ["/Imain/desktop/source/deployment/registry/inc"],
+    copts = _COPTS + [
+        "/Imain/desktop/source/deployment/registry/inc",
+        "/FIrtl/strbuf.hxx",  # dp_configuration.cxx uses OStringBuffer but omits this include
+    ],
     defines = _DEFINES,
     deps = [":desktop_source_hdrs"],
 )

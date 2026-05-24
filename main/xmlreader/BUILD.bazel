@@ -48,10 +48,14 @@ cc_binary(
         "//main/stlport:stlport",
         "@boost.legacy//:boost.legacy",
     ],
-    additional_linker_inputs = ["//main/sal:sal_implib"],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+    ],
     linkshared = True,
     linkopts = [
         "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
         "/MANIFEST:NO",
     ],
     visibility = ["//visibility:public"],

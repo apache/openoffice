@@ -186,7 +186,7 @@ def _idl_library_impl(ctx):
         executable = staged["cppumaker.exe"].path,
         arguments  = [
             "-Gc",             # generate include guards
-            "-L",              # local (relative) includes
+            "-C",              # comprehensive getCppuType (full typelib registration, pType set at init)
             "-BUCR",           # browse UCR section
             "-O./" + hdr_dir.path,
             rdb.path,

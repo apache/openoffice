@@ -292,10 +292,13 @@ def _pack_registry_impl(ctx):
     all_files = ctx.files.xcs + ctx.files.xcu
 
     # Action 1: write input list with absolute file:/// URIs.
+    # --dep=name args are written as <dependency file="name"/> by the script.
+    dep_args = ["--dep=" + d for d in ctx.attr.deps]
     ctx.actions.run(
         executable = perl,
         arguments  = (
             [script.path, input_file.path] +
+            dep_args +
             [f.path for f in all_files]
         ),
         inputs  = [perl, script] + all_files,
@@ -337,6 +340,10 @@ pack_registry = rule(
         "xcu": attr.label_list(
             allow_files = True,
             doc = ".xcu data + spool files",
+        ),
+        "deps": attr.string_list(
+            default = [],
+            doc = "XCD file basenames (without .xcd) that must be parsed before this one",
         ),
         "xslt": attr.label(
             allow_single_file = True,

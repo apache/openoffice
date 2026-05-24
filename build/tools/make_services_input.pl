@@ -24,8 +24,12 @@ $here =~ s{/$}{};       # strip trailing slash
 open(my $fh, '>', $output) or die "Cannot write '$output': $!\n";
 print $fh "<list>\n";
 for my $comp (@components) {
-    $comp =~ s{\\}{/}g;
-    printf $fh "  <filename>file:///%s/%s</filename>\n", $here, $comp;
+    if ($comp =~ /^--dep=(.+)$/) {
+        printf $fh "  <dependency file=\"%s\"/>\n", $1;
+    } else {
+        $comp =~ s{\\}{/}g;
+        printf $fh "  <filename>file:///%s/%s</filename>\n", $here, $comp;
+    }
 }
 print $fh "</list>\n";
 close($fh);

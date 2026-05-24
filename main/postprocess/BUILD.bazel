@@ -1127,6 +1127,33 @@ pack_registry(
     visibility = ["//visibility:public"],
 )
 
+# ── Langpack-en-US.xcd ────────────────────────────────────────────────────────
+# Mirrors postprocess/packregistry/makefile.mk Langpack-{lang}.xcd targets.
+# Registers "en-US" in org.openoffice.Setup/Office/InstalledLocales so that
+# prepareLanguage() finds an installed locale and completes successfully.
+# The <dependency file="main"/> ensures main.xcd (which defines the Setup schema)
+# is parsed first by configmgr's XCD resolution loop.
+
+genrule(
+    name = "langpack_en_us_xcu",
+    srcs = ["//main/officecfg:registry/data/org/openoffice/Langpack.xcu.tmpl"],
+    outs = ["Langpack-en-US.xcu"],
+    cmd_bat = (
+        "powershell -NoProfile -Command " +
+        "\"(Get-Content -Raw '$(location //main/officecfg:registry/data/org/openoffice/Langpack.xcu.tmpl)') " +
+        "-replace '__LANGUAGE__', 'en-US' | Set-Content -Encoding UTF8 '$(OUTS)'\""
+    ),
+)
+
+pack_registry(
+    name = "langpack_en_us_xcd",
+    out  = "Langpack-en-US.xcd",
+    xcu  = [":langpack_en_us_xcu"],
+    deps = ["main"],
+    xslt = _XSLT,
+    visibility = ["//visibility:public"],
+)
+
 # ── All XCD targets ───────────────────────────────────────────────────────────
 
 filegroup(
@@ -1141,6 +1168,7 @@ filegroup(
         ":graphicfilter_xcd",
         ":impress_xcd",
         ":korea_xcd",
+        ":langpack_en_us_xcd",
         ":lingucomponent_xcd",
         ":main_xcd",
         ":math_xcd",
