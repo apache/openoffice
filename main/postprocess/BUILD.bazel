@@ -624,6 +624,7 @@ pack_registry(
         oc_mod("Office/Common.xcu",  "base"),
         oc_mod("Setup.xcu",          "base"),
     ],
+    deps = ["main"],
     xslt = _XSLT,
     visibility = ["//visibility:public"],
 )
@@ -647,6 +648,7 @@ pack_registry(
         oc_mod("Office/Embedding.xcu", "calc"),
         oc_mod("Setup.xcu",            "calc"),
     ],
+    deps = ["main"],
     xslt = _XSLT,
     visibility = ["//visibility:public"],
 )
@@ -661,6 +663,7 @@ pack_registry(
         oc_mod("Office/Common.xcu",  "cjk"),
         oc_mod("Office/Writer.xcu",  "cjk"),
     ],
+    deps = ["main"],
     xslt = _XSLT,
     visibility = ["//visibility:public"],
 )
@@ -674,6 +677,7 @@ pack_registry(
     xcu  = [
         oc_mod("Office/Common.xcu", "ctl"),
     ],
+    deps = ["main"],
     xslt = _XSLT,
     visibility = ["//visibility:public"],
 )
@@ -694,6 +698,7 @@ pack_registry(
         oc_mod("Office/Embedding.xcu", "draw"),
         oc_mod("Setup.xcu",            "draw"),
     ],
+    deps = ["main"],
     xslt = _XSLT,
     visibility = ["//visibility:public"],
 )
@@ -710,6 +715,7 @@ pack_registry(
         fcfg("fcfg_impressgraphics_types"),
         fcfg("fcfg_impressgraphics_filters"),
     ],
+    deps = ["main"],
     xslt = _XSLT,
     visibility = ["//visibility:public"],
 )
@@ -736,6 +742,7 @@ pack_registry(
         "//main/sdext:source/presenter/ProtocolHandler.xcu",
         oc_mod("Setup.xcu",            "impress"),
     ],
+    deps = ["main"],
     xslt = _XSLT,
     visibility = ["//visibility:public"],
 )
@@ -749,6 +756,7 @@ pack_registry(
     xcu  = [
         oc_mod("Office/Common.xcu", "korea"),
     ],
+    deps = ["main"],
     xslt = _XSLT,
     visibility = ["//visibility:public"],
 )
@@ -764,6 +772,7 @@ pack_registry(
         "//main/lingucomponent:config/Linguistic-lingucomponent-spellchecker.xcu",
         "//main/lingucomponent:config/Linguistic-lingucomponent-thesaurus.xcu",
     ],
+    deps = ["main"],
     xslt = _XSLT,
     visibility = ["//visibility:public"],
 )
@@ -977,6 +986,7 @@ pack_registry(
         oc_mod("Office/Embedding.xcu", "math"),
         oc_mod("Setup.xcu",            "math"),
     ],
+    deps = ["main"],
     xslt = _XSLT,
     visibility = ["//visibility:public"],
 )
@@ -991,6 +1001,7 @@ pack_registry(
         "//main/extensions/source/oooimprovement:Jobs.xcu",
         "//main/extensions/source/oooimprovement:Logging.xcu",
     ],
+    deps = ["main"],
     xslt = _XSLT,
     visibility = ["//visibility:public"],
 )
@@ -1005,6 +1016,7 @@ pack_registry(
         fcfg("fcfg_palm_types"),
         fcfg("fcfg_palm_filters"),
     ],
+    deps = ["main"],
     xslt = _XSLT,
     visibility = ["//visibility:public"],
 )
@@ -1019,6 +1031,7 @@ pack_registry(
         fcfg("fcfg_pocketexcel_types"),
         fcfg("fcfg_pocketexcel_filters"),
     ],
+    deps = ["main"],
     xslt = _XSLT,
     visibility = ["//visibility:public"],
 )
@@ -1033,6 +1046,7 @@ pack_registry(
         fcfg("fcfg_pocketword_types"),
         fcfg("fcfg_pocketword_filters"),
     ],
+    deps = ["main"],
     xslt = _XSLT,
     visibility = ["//visibility:public"],
 )
@@ -1046,6 +1060,7 @@ pack_registry(
     xcu  = [
         oc_mod("Office/Scripting.xcu", "python"),
     ],
+    deps = ["main"],
     xslt = _XSLT,
     visibility = ["//visibility:public"],
 )
@@ -1060,6 +1075,7 @@ pack_registry(
         fcfg("fcfg_w4w_types"),
         fcfg("fcfg_w4w_filters"),
     ],
+    deps = ["main"],
     xslt = _XSLT,
     visibility = ["//visibility:public"],
 )
@@ -1096,6 +1112,7 @@ pack_registry(
         oc_mod("Office/Embedding.xcu", "writer"),
         oc_mod("Setup.xcu",            "writer"),
     ],
+    deps = ["main"],
     xslt = _XSLT,
     visibility = ["//visibility:public"],
 )
@@ -1110,6 +1127,7 @@ pack_registry(
         fcfg("fcfg_xslt_types"),
         fcfg("fcfg_xslt_filters"),
     ],
+    deps = ["main"],
     xslt = _XSLT,
     visibility = ["//visibility:public"],
 )
@@ -1123,6 +1141,7 @@ pack_registry(
     xcu  = [
         oc_mod("Office/Linguistic.xcu", "ForceDefaultLanguage"),
     ],
+    deps = ["main"],
     xslt = _XSLT,
     visibility = ["//visibility:public"],
 )
