@@ -15,6 +15,12 @@ filegroup(
 
 # Perl modules for the scp2 pre2par pipeline (.pre → .par)
 filegroup(
+    name = "gen_versionlist_hrc_pl",
+    srcs = ["gen_versionlist_hrc.pl"],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
     name = "pre2par_srcs",
     srcs = ["pre2par.pl"] + glob(["modules/pre2par/**/*.pm"]),
     visibility = ["//visibility:public"],

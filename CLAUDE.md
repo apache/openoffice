@@ -43,7 +43,7 @@ test          ⬜  (C++ unit tests)
 testgraphical ⬜  (graphical/visual regression tests)
 testtools     ⬜  (test infrastructure)
 ── Deferred: Standalone/misc ─────────────────────────────────────────────
-crashrep      ⬜  (crash reporter)
+crashrep      ✅  (crash reporter)
 automation    ⬜  (test automation/macro recorder framework)
 migrationanalysis ⬜ (migration analysis tool)
 extensions    ⬜  (misc UNO extension infrastructure)

@@ -40,6 +40,9 @@ collect_outputs(
         # ── Core launcher (pulls compile-time transitive DLLs transitively) ──
         "//main/desktop:soffice",
 
+        # ── Crash reporter ────────────────────────────────────────────────────
+        "//main/crashrep:crashrep",
+
         # ── JVM framework (required by cui, svl, svtools, desktop at load time) ─
         "//main/jvmfwk:jvmfwk",
 

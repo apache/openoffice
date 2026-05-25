@@ -1,6 +1,7 @@
 package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("//build/rules:lngconvex_rule.bzl", "lngconvex_bundle")
 
 # ── Common settings ───────────────────────────────────────────────
 # Defines shared by all shlxthandler targets (XML parser + ZIP reader
@@ -376,7 +377,7 @@ cc_binary(
         "source/tools/lngconvex/defs.hxx",
         "inc/pch/precompiled_shell.hxx",
     ],
-    copts = _UNO_COPTS + ["/Ob0"],
+    copts = _UNO_COPTS + ["/Ob0", "/MD"],
     defines = _UNO_DEFINES + ["_NTSDK"],
     additional_linker_inputs = [
         "//main/sal:sal_implib",
@@ -394,6 +395,28 @@ cc_binary(
         "//main/i18npool:i18npool_headers",
         "//main/udkapi:udkapi_idl_headers",
     ],
+    # Runtime DLLs needed when lngconvex.exe is staged into lngconvex_bundle/.
+    data = [
+        "//main/sal:sal3",
+        "//main/tools:tl",
+        "//main/cppu:cppu3",
+        "//main/comphelper:comphelpMSC",
+        "//main/cppuhelper:cppuhelper3MSC",
+        "//main/salhelper:salhelper3MSC",
+        "//main/ucbhelper:ucbhelperMSC",
+        "//main/vos:vos3MSC",
+        "//main/basegfx:basegfx",
+        "//main/i18npool:i18nisolang1MSC",
+        "//main/external/msvcp90:crt_dlls",
+        "util/lngconvex.exe.manifest",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# One shared tool directory: lngconvex.exe + all runtime DLLs staged once.
+lngconvex_bundle(
+    name = "lngconvex_bundle",
+    lngconvex = ":lngconvex",
     visibility = ["//visibility:public"],
 )
 
