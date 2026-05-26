@@ -285,3 +285,35 @@ filegroup(
         ("org/openoffice/TypeDetection/UISort.xcu", "writer"),
     ]
 ]
+
+# ── Default (locale-independent) alllang extraction ───────────────────────
+# alllang.xsl with no --stringparam locale or --stringparam module strips
+# all <value xml:lang="..."> elements (they fall through the "drop localized"
+# branch in the value template) and retains only locale-neutral <value>
+# elements.  This matches the dmake XCU_DEFAULT pipeline in tg_config.mk:
+#
+#   $(PROCESSOUT)/registry/data/.../%.xcu : %.xcu
+#       xsltproc ... alllang.xsl $<
+#
+# Required for any XCU that carries embedded xml:lang values (_LOCALIZED),
+# so that configmgr does not encounter empty xs:boolean values and throw
+# "invalid value" (e.g. CaptionOrderNumberingFirst in Writer.xcu has
+# <value xml:lang="x-no-translate"/> which is valid XML but unparseable
+# as xs:boolean).
+
+[
+    genrule(
+        name = "alllang_default_{}".format(xcu.replace("/", "_").replace(".", "_")),
+        srcs = ["registry/data/" + xcu, "util/alllang.xsl"],
+        outs = ["spool_default/{}".format(xcu)],
+        tools = ["@libxslt//:xsltproc"],
+        cmd_bat = (
+            "$(location @libxslt//:xsltproc) --novalid " +
+            "-o $(OUTS) " +
+            "$(location util/alllang.xsl) " +
+            "$(location registry/data/{})".format(xcu)
+        ),
+        visibility = ["//visibility:public"],
+    )
+    for xcu in _LOCALIZED
+]

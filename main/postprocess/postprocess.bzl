@@ -374,8 +374,69 @@ def oc_xcs(path):
     """Return a label for an officecfg XCS schema file."""
     return "//main/officecfg:registry/schema/org/openoffice/" + path
 
+# Files that carry embedded xml:lang values and must be pre-processed by
+# alllang.xsl (no locale, no module) before being packed into XCDs.
+# Mirrors the dmake XCU_DEFAULT pipeline: every file in XCUFILES is run
+# through alllang.xsl which strips <value xml:lang="..."> elements so that
+# configmgr never sees empty non-string typed values (e.g. xs:boolean).
+_LOCALIZED_XCUS = {
+    "Setup.xcu": True,
+    "Office/Accelerators.xcu": True,
+    "Office/Common.xcu": True,
+    "Office/SFX.xcu": True,
+    "Office/DataAccess.xcu": True,
+    "Office/TableWizard.xcu": True,
+    "Office/UI.xcu": True,
+    "Office/Embedding.xcu": True,
+    "Office/WebWizard.xcu": True,
+    "Office/FormWizard.xcu": True,
+    "Office/Writer.xcu": True,
+    "Office/Impress.xcu": True,
+    "Office/PresenterScreen.xcu": True,
+    "Office/UI/BasicIDECommands.xcu": True,
+    "Office/UI/BibliographyCommands.xcu": True,
+    "Office/UI/CalcCommands.xcu": True,
+    "Office/UI/ChartCommands.xcu": True,
+    "Office/UI/ChartWindowState.xcu": True,
+    "Office/UI/DbuCommands.xcu": True,
+    "Office/UI/BaseWindowState.xcu": True,
+    "Office/UI/WriterFormWindowState.xcu": True,
+    "Office/UI/WriterReportWindowState.xcu": True,
+    "Office/UI/DbQueryWindowState.xcu": True,
+    "Office/UI/DbTableWindowState.xcu": True,
+    "Office/UI/DbRelationWindowState.xcu": True,
+    "Office/UI/DbBrowserWindowState.xcu": True,
+    "Office/UI/DbTableDataWindowState.xcu": True,
+    "Office/UI/DrawImpressCommands.xcu": True,
+    "Office/UI/Effects.xcu": True,
+    "Office/UI/GenericCommands.xcu": True,
+    "Office/UI/MathCommands.xcu": True,
+    "Office/UI/StartModuleCommands.xcu": True,
+    "Office/UI/BasicIDEWindowState.xcu": True,
+    "Office/UI/CalcWindowState.xcu": True,
+    "Office/UI/DrawWindowState.xcu": True,
+    "Office/UI/ImpressWindowState.xcu": True,
+    "Office/UI/MathWindowState.xcu": True,
+    "Office/UI/StartModuleWindowState.xcu": True,
+    "Office/UI/WriterWindowState.xcu": True,
+    "Office/UI/XFormsWindowState.xcu": True,
+    "Office/UI/WriterGlobalWindowState.xcu": True,
+    "Office/UI/WriterWebWindowState.xcu": True,
+    "Office/UI/WriterCommands.xcu": True,
+    "Office/UI/GenericCategories.xcu": True,
+    "Office/UI/Sidebar.xcu": True,
+}
+
 def oc_xcu(path):
-    """Return a label for an officecfg XCU data file."""
+    """Return a label for an officecfg XCU data file.
+
+    For LOCALIZED files (those with embedded xml:lang values) returns the
+    alllang_default-processed spool version that strips locale-specific
+    values, matching the dmake XCU_DEFAULT pipeline.  Non-localized files
+    are returned as raw source labels.
+    """
+    if path in _LOCALIZED_XCUS:
+        return "//main/officecfg:spool_default/org/openoffice/" + path
     return "//main/officecfg:registry/data/org/openoffice/" + path
 
 def oc_mod(path, module):

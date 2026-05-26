@@ -96,6 +96,11 @@ Source code is NOT being changed — only the build system.
 - add a migration summary to the module as readme.md
 - let the user build
 - update frontier after build is successful.
+- XCU pipeline: LOCALIZED XCU files (those containing <value xml:lang="...">) must be pre-processed
+  by alllang.xsl (no locale, no module) before being packed into XCDs — matches dmake XCU_DEFAULT
+  pipeline in tg_config.mk.  Without this, configmgr crashes on empty xs:boolean values.
+  Implemented via alllang_default_<xcu> genrules in officecfg/BUILD.bazel and _LOCALIZED_XCUS
+  routing in postprocess.bzl's oc_xcu() function.  Both lists must stay in sync.
 
 ## Cross-cutting compiler flags & defines
 These apply to many packages — check before building any new module:
