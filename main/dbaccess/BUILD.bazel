@@ -870,10 +870,11 @@ rename_file(
 rsc_res(
     name     = "dba_res",
     srcs     = ["source/core/resource/strings.src"],
-    hdrs     = glob(["inc/**/*.hrc", "source/core/inc/**/*.hrc"]),
+    hdrs     = glob(["inc/**/*.hrc", "source/core/inc/**/*.hrc"]) + ["//main/svl:svl_hrc"],
     includes = [
         "main/dbaccess/inc",
         "main/dbaccess/source/core/inc",
+        "main/svl/inc",
     ],
     visibility = ["//visibility:public"],
 )
@@ -882,10 +883,11 @@ rsc_res(
 rsc_res(
     name     = "dbmm_res",
     srcs     = ["source/ext/macromigration/macromigration.src"],
-    hdrs     = glob(["inc/**/*.hrc", "source/ext/macromigration/**/*.hrc"]),
+    hdrs     = glob(["inc/**/*.hrc", "source/ext/macromigration/**/*.hrc"]) + ["//main/svl:svl_hrc"],
     includes = [
         "main/dbaccess/inc",
         "main/dbaccess/source/ext/macromigration",
+        "main/svl/inc",
     ],
     visibility = ["//visibility:public"],
 )
@@ -894,10 +896,11 @@ rsc_res(
 rsc_res(
     name     = "adabasui_res",
     srcs     = ["source/ext/adabas/AdabasNewDb.src"],
-    hdrs     = glob(["inc/**/*.hrc", "source/ext/adabas/**/*.hrc"]),
+    hdrs     = glob(["inc/**/*.hrc", "source/ext/adabas/**/*.hrc"]) + ["//main/svl:svl_hrc"],
     includes = [
         "main/dbaccess/inc",
         "main/dbaccess/source/ext/adabas",
+        "main/svl/inc",
     ],
     visibility = ["//visibility:public"],
 )
@@ -906,10 +909,11 @@ rsc_res(
 rsc_res(
     name     = "sdbt_res",
     srcs     = ["source/sdbtools/resource/sdbt_strings.src"],
-    hdrs     = glob(["inc/**/*.hrc", "source/sdbtools/**/*.hrc"]),
+    hdrs     = glob(["inc/**/*.hrc", "source/sdbtools/**/*.hrc"]) + ["//main/svl:svl_hrc"],
     includes = [
         "main/dbaccess/inc",
         "main/dbaccess/source/sdbtools/inc",
+        "main/svl/inc",
     ],
     visibility = ["//visibility:public"],
 )

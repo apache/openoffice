@@ -70,11 +70,11 @@ _DLL_RENAME = [
     ("_cppu_dll",        "cppu3.dll"),
     ("_cppuhelper_dll",  "cppuhelper3MSC.dll"),
     ("_salhelper_dll",   "salhelper3MSC.dll"),
-    ("_comphelp_dll",    "comphelp.dll"),
-    ("_ucbhelper_dll",   "ucbhelper.dll"),
+    ("_comphelp_dll",    "comphelpMSC.dll"),
+    ("_ucbhelper_dll",   "ucbhelperMSC.dll"),
     ("_basegfx_dll",     "basegfx.dll"),
-    ("_vos_dll",         "vos3.dll"),
-    ("_i18nisolang_dll", "i18nisolang1.dll"),
+    ("_vos_dll",         "vos3MSC.dll"),
+    ("_i18nisolang_dll", "i18nisolang1MSC.dll"),
 ]
 
 _DEFAULT_DEFINES = [
@@ -303,12 +303,12 @@ rsc_res = rule(
             cfg               = "exec",
         ),
         "_comphelp_dll": attr.label(
-            default           = "//main/comphelper:comphelp",
+            default           = "//main/comphelper:comphelpMSC",
             allow_single_file = True,
             cfg               = "exec",
         ),
         "_ucbhelper_dll": attr.label(
-            default           = "//main/ucbhelper:ucbhelper",
+            default           = "//main/ucbhelper:ucbhelperMSC",
             allow_single_file = True,
             cfg               = "exec",
         ),
@@ -318,12 +318,12 @@ rsc_res = rule(
             cfg               = "exec",
         ),
         "_vos_dll": attr.label(
-            default           = "//main/vos:vos3",
+            default           = "//main/vos:vos3MSC",
             allow_single_file = True,
             cfg               = "exec",
         ),
         "_i18nisolang_dll": attr.label(
-            default           = "//main/i18npool:i18nisolang1",
+            default           = "//main/i18npool:i18nisolang1MSC",
             allow_single_file = True,
             cfg               = "exec",
         ),

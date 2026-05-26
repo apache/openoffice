@@ -41,6 +41,73 @@ collect_outputs = rule(
     },
 )
 
+# ── res_stage ─────────────────────────────────────────────────────────────────
+# Stages OOo binary .res resource files into program/resource/ with renamed
+# output names.  resmgr.cxx scans $OOO_BASE_DIR/program/resource/ at startup;
+# filenames must match the <prefix><lang>-<country>.res pattern the runtime
+# expects (e.g. vclen-US.res for prefix "vcl").
+#
+# Usage:
+#   res_stage(
+#       name = "_install_resources",
+#       res_files = {
+#           "//main/vcl:vcl_res": "vclen-US",
+#           "//main/sfx2:sfx2_res": "sfxen-US",
+#       },
+#   )
+
+def _res_stage_impl(ctx):
+    outputs = []
+    pairs   = []
+
+    for src_tgt, out_name in ctx.attr.res_files.items():
+        src_list = src_tgt.files.to_list()
+        if len(src_list) != 1:
+            fail("res_files key must resolve to exactly one file, got {}".format(len(src_list)))
+        src_file = src_list[0]
+        out = ctx.actions.declare_file("program/resource/" + out_name + ".res")
+        pairs.append((src_file, out))
+        outputs.append(out)
+
+    if not outputs:
+        return [DefaultInfo(files = depset())]
+
+    # One mkdir + copy per file, in a single .bat for efficiency.
+    out_dir = outputs[0].dirname.replace("/", "\\")
+    lines = [
+        "@echo off",
+        'if not exist "{d}" mkdir "{d}"'.format(d = out_dir),
+    ]
+    for src_file, out in pairs:
+        lines.append('copy /Y "{}" "{}" >nul || exit /b 1'.format(
+            src_file.path.replace("/", "\\"),
+            out.path.replace("/", "\\"),
+        ))
+
+    bat = ctx.actions.declare_file("_stage_resources.bat")
+    ctx.actions.write(output = bat, content = "\r\n".join(lines) + "\r\n", is_executable = True)
+    ctx.actions.run(
+        inputs           = depset([f for f, _ in pairs] + [bat]),
+        outputs          = outputs,
+        executable       = bat,
+        use_default_shell_env = True,
+        mnemonic         = "StageResFiles",
+        progress_message = "Staging {} .res files to program/resource/".format(len(outputs)),
+    )
+
+    return [DefaultInfo(files = depset(outputs))]
+
+res_stage = rule(
+    implementation = _res_stage_impl,
+    attrs = {
+        "res_files": attr.label_keyed_string_dict(
+            allow_files = True,
+            doc = "Mapping {rsc_res_target: output_name_without_extension}. Output is placed at program/resource/<output_name>.res",
+        ),
+    },
+    doc = "Stage OOo .res resource files into program/resource/ with locale-named filenames.",
+)
+
 # Extensions included in the flat install directory.
 _INSTALL_EXTS = {"exe": True, "dll": True, "rdb": True, "zip": True, "py": True, "ini": True, "manifest": True}
 

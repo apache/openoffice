@@ -967,6 +967,11 @@ rsc_res(
     ],
     hdrs        = _SVX_HDRS,
     includes    = _SVX_INCLUDES,
+    images      = [
+        "//main/default_images:svx_res_images",
+        "//main/default_images:shared_images",
+    ],
+    images_root = "main/default_images/svx/res",
     visibility  = ["//visibility:public"],
 )
 
