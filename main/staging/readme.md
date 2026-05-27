@@ -20,9 +20,10 @@ Mirrors the real OpenOffice install tree (`C:\Program Files (x86)\OpenOffice 4\`
 
 ```
 bazel-bin/main/staging/install/
-  program/          ← all DLLs, EXEs, RDB files, and INI files
-  share/registry/   ← *.xcd configuration packages
-  share/setup/      ← setup_osl.inf (consumed by instsetoo_native, still deferred)
+  program/           ← all DLLs, EXEs, RDB files, INI files
+  program/resource/  ← binary .res resource files (one per UI module, e.g. vclen-US.res)
+  share/registry/    ← *.xcd configuration packages
+  share/setup/       ← setup_osl.inf (consumed by instsetoo_native, still deferred)
 ```
 
 All build outputs go into `program/` so that the bootstrap INI variables work
@@ -37,9 +38,9 @@ bazel-bin\main\staging\install\program\soffice.exe
 
 ## Implementation
 
-- `stage_install.bzl` — Starlark rule using `ctx.actions.declare_directory`; builds a manifest at analysis time, runs `stage_install.pl` at execution time
-- `build/tools/stage_install.pl` — Perl copy script reading `subdir TAB src [TAB destname]` manifest
+- `collect_files_aspect.bzl` — aspect that collects transitive `DefaultInfo` + PDB files; `collect_outputs` rule aggregates them; `flat_install` copies to `program/`; `res_stage` copies `.res` files to `program/resource/` with locale-renamed filenames; `tree_install` copies a subtree preserving relative paths.
 - ATL-guarded targets (`embedserv`, `winaccessibility`) included via `select({"//build:has_atl": [...], "//conditions:default": []})`
+- Debug CRT DLLs (`MSVCR90D`, `MSVCP90D`) and private-assembly manifest staged only for `--compilation_mode=dbg` builds via `select({"//build:dbg_build": [...]})`
 
 ## Known gaps (deferred)
 
@@ -70,25 +71,14 @@ bazel-bin\main\staging\install\program\soffice.exe
 - `i18nsearch` — added `//main/comphelper:comphelper_headers`
 - `writerfilter_gen_headers` — added `".."` to `includes` so `writerfilter/doctok/sprmids.hxx` (generated) resolves via `bin/main` search path
 
-# Facts from the debug session:
+## Resource files (.res)
 
-1. Throw site confirmed
-The C++ exception is thrown at cppuhelper3MSC!cppu::ImplHelper_query+0x3c8, called from cppu::bootstrapInitialSF. ImplHelper_query is UNO's QueryInterface — it throws RuntimeException when a type is not recognized.
+`ResMgrContainer::init()` scans `$OOO_BASE_DIR/program/resource/` on startup. The `res_stage`
+rule in `collect_files_aspect.bzl` copies each `rsc_res` output to that directory with the
+locale-named filename the runtime expects (`<prefix>en-US.res`, e.g. `vclen-US.res`).
 
-2. DLLs genuinely load twice at different addresses with different sizes
-
-cppuhelper3MSC.dll: 1.4 MB at 00bf0000, then 508 KB at 00d60000
-cppu3.dll, comphelpMSC.dll, svxcore.dll, icuuc.dll, basegfx.dll, sot.dll and others all load twice
-Different sizes = two genuinely different physical DLL files with the same name. This is the core problem.
-
-3. Two-phase load pattern
-Phase 1 (static import resolution before loader break): sofficeapp.dll → deploymentgui.dll → svxcore.dll → pulls in a large transitive dep tree including cppuhelper3MSC, cppu3, etc.
-
-Phase 2 (after g, during UNO bootstrap): bootstrap.uno.dll, msci_uno.dll load — their deps reload the same DLLs again at new addresses.
-
-4. Result
-Two separate copies of the UNO type system global state. Bootstrap's type descriptors are unknown to the first instance → RuntimeException in ImplHelper_query → during unwind, uno_any_clear hits a null pType → AV.
-
-Root cause in one line: deploymentgui.dll pulls svxcore.dll into process before UNO bootstrap runs, causing a second copy of all UNO runtime DLLs to load at different addresses, splitting the type system.
-
-Take the break. When you're back, the fix direction is clear: either remove deploymentgui/deploymentmisc from sofficeapp.dll's static import list (defer it to runtime LoadLibrary) or remove it from the staging deps entirely if the deployment check isn't needed for a dev build.
+**Byte-order requirement**: `ResMgr::GetLong`, `GetShort`, and `GetUInt64` are unconditionally
+big-endian readers. The `.res` pipeline must pass `-BIGENDIAN` to `rsc2` (the rsc2 default).
+Using `-LITTLEENDIAN` causes `InternalResMgr::Create()` to misread the content-table length at
+the end of the file, causing `rtl_allocateMemory` to fail (returns NULL), then
+`ResMgr::GetUInt64(NULL)` crashes immediately on startup.

@@ -219,7 +219,7 @@ def _rsc_res_impl(ctx):
             [
                 "-fs=" + res_out.path,
                 "-lgEN_US",
-                "-LITTLEENDIAN",
+                "-BIGENDIAN",
             ]
             + include_args
             + define_args

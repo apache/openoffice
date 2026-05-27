@@ -97,11 +97,17 @@ rscpp.exe  -I<inc>...  -D<def>...  input.src  output.src.srs
 
 **Step 2 — Rsc2Compile** (one action for all intermediates):
 ```
-rsc2.exe  -fs=<name>.res  -lgEN_US  -LITTLEENDIAN
+rsc2.exe  -fs=<name>.res  -lgEN_US  -BIGENDIAN
           -I<inc>...  -D<def>...
           -lip=<tools_dir>  -subimages=<tools_dir>
           <all intermediate .src.srs files>
 ```
+
+> **Why `-BIGENDIAN`?**  `GetLong`, `GetShort`, and `GetUInt64` in `tl!ResMgr` are unconditionally
+> big-endian readers — the `.res` binary format is always big-endian regardless of host platform.
+> `rsc2`'s own default is also `BIGENDIAN`.  Passing `-LITTLEENDIAN` causes a byte-order mismatch:
+> the content-table length stored at the end of the file is misread as ~2.8 GB, `rtl_allocateMemory`
+> returns `NULL`, `nEntries` is non-zero (huge), and `GetUInt64(NULL)` crashes immediately.
 
 #### Image lookup: -lip= and -subimages=
 
@@ -128,7 +134,7 @@ The `rsc_res` rule runs in normal mode and declares only `.res` as the output.
 Each `rsc_res` rule stages its own `<name>_tools/` directory containing:
 - `rscpp.exe` + `rsc2.exe` (the two tool executables)
 - All runtime DLLs: `sal3`, `tl`, `cppu3`, `cppuhelper3MSC`, `salhelper3MSC`,
-  `comphelp`, `ucbhelper`, `basegfx`, `vos3`, `i18nisolang1`, CRT
+  `comphelpMSC`, `ucbhelperMSC`, `basegfx`, `vos3MSC`, `i18nisolang1MSC`, CRT
 - `.manifest` files for rscpp.exe and rsc2.exe (VS2008 SxS CRT loading)
 - All image files (`.png`/`.bmp`) staged flat by basename
 
