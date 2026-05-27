@@ -1,0 +1,5 @@
+; abp.dll — address book pilot UNO component
+LIBRARY abp
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

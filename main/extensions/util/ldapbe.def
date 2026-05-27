@@ -1,0 +1,5 @@
+; ldapbe.dll — LDAP user profile backend UNO component
+LIBRARY ldapbe
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

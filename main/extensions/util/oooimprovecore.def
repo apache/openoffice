@@ -1,0 +1,5 @@
+; oooimprovecore.dll — OOo improvement core UNO component
+LIBRARY oooimprovecore
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

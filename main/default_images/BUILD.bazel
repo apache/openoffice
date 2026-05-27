@@ -140,6 +140,12 @@ filegroup(
 )
 
 filegroup(
+    name = "extensions_update_images",
+    srcs = glob(["extensions/source/update/ui/**"]),
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
     name = "desktop_res_images",
     srcs = glob(["desktop/res/**", "res/commandimagelist/**"]),
     visibility = ["//visibility:public"],

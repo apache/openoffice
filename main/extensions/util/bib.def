@@ -1,0 +1,5 @@
+; bib.dll — bibliography UNO component
+LIBRARY bib
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

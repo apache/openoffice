@@ -1,0 +1,5 @@
+; oooimprovement.dll — OOo improvement UNO component
+LIBRARY oooimprovement
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

@@ -1,0 +1,5 @@
+; res.dll — resource loader UNO component
+LIBRARY res
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

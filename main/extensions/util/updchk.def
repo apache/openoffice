@@ -1,0 +1,5 @@
+; updchk.dll — online update check UNO component
+LIBRARY updchk
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

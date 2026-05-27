@@ -1,0 +1,5 @@
+; pcr.dll — property controller UNO component
+LIBRARY pcr
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

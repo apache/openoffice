@@ -1,13 +1,728 @@
-# main/extensions — UNO extension infrastructure (deferred full migration)
-# Minimal BUILD.bazel to expose .component files for postprocess/services.rdb
-# and the bibliography UI config for uiconfig.zip.
+# main/extensions — UNO extension infrastructure (abpilot, bibliography, dbpilots,
+# logging, oooimprovecore, oooimprovement, preload, propctrlr, resource, scanner,
+# update/feed, update/check, update/ui, xmlextract)
+# Windows-only ATL component: ole/oleautobridge.uno
+# Deferred: config/ldap (needs LDAP SDK), mozbootstrap (Linux/macOS only),
+#            activex/msidl, activex/main (ActiveX/COM, needs special tooling)
 
+package(default_visibility = ["//visibility:public"])
+
+load("@rules_cc//cc:defs.bzl", "cc_binary")
+load("//build/rules:rsc_pipeline.bzl", "rsc_res")
+
+# ── Component XML files (for services.rdb via postprocess) ────────────────────
 exports_files(glob([
     "**/*.component",
 ]))
 
+# ── uiconfig — bibliography browser form UI ───────────────────────────────────
 filegroup(
     name = "uiconfig_files",
     srcs = glob(["source/bibliography/uiconfig/**/*.xml"]),
     visibility = ["//main/postprocess:__pkg__"],
 )
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Common build settings
+# ─────────────────────────────────────────────────────────────────────────────
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+    "snwprintf=_snwprintf",
+    "SUPD=680",
+    "MSC",
+]
+
+_COPTS = [
+    "/Imain/extensions/inc",
+    "/Imain/extensions/inc/pch",
+    "/Zc:wchar_t-",
+]
+
+_COMMON_DEPS = [
+    "//main/sal:sal_headers",
+    "//main/cppu:cppu_headers",
+    "//main/cppuhelper:cppuhelper_headers",
+    "//main/udkapi:udkapi_idl_headers",
+    "//main/offapi:offapi_idl_headers",
+]
+
+_COMMON_LINKINPUTS = [
+    "//main/sal:sal_implib",
+    "//main/cppu:cppu3_implib",
+    "//main/cppuhelper:cppuhelper_implib",
+]
+
+_COMMON_LINKOPTS = [
+    "$(execpath //main/sal:sal_implib)",
+    "$(execpath //main/cppu:cppu3_implib)",
+    "$(execpath //main/cppuhelper:cppuhelper_implib)",
+    "/MANIFEST:NO",
+]
+
+# ── ATL guard (same pattern as embedserv / winaccessibility) ─────────────────
+_ATL_REQUIRED = select({
+    "//build:has_atl": [],
+    "//conditions:default": ["@platforms//:incompatible"],
+})
+
+# ─────────────────────────────────────────────────────────────────────────────
+# log.dll — logging framework UNO component
+# ─────────────────────────────────────────────────────────────────────────────
+cc_binary(
+    name = "log",
+    srcs = glob(["source/logging/*.cxx"]),
+    copts = _COPTS + ["/Imain/extensions/source/logging"],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/log.def",
+    deps = _COMMON_DEPS + [
+        "//main/tools:tools_headers",
+        "//main/comphelper:comphelper_headers",
+    ],
+    additional_linker_inputs = _COMMON_LINKINPUTS + [
+        "//main/tools:tl_implib",
+        "//main/comphelper:comphelpMSC_implib",
+    ],
+    linkopts = _COMMON_LINKOPTS + [
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/comphelper:comphelpMSC_implib)",
+    ],
+)
+
+# ─────────────────────────────────────────────────────────────────────────────
+# xmx.dll — XML extract UNO component
+# ─────────────────────────────────────────────────────────────────────────────
+cc_binary(
+    name = "xmx",
+    srcs = glob(["source/xmlextract/*.cxx"]),
+    copts = _COPTS + ["/Imain/extensions/source/xmlextract"],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/xmx.def",
+    deps = _COMMON_DEPS + [
+        "//main/tools:tools_headers",
+        "//main/unotools:unotools_headers",
+        "//main/sot:sot_headers",
+        "//main/comphelper:comphelper_headers",
+    ],
+    additional_linker_inputs = _COMMON_LINKINPUTS + [
+        "//main/sot:sot_implib",
+        "//main/unotools:utl_implib",
+        "//main/tools:tl_implib",
+        "//main/comphelper:comphelpMSC_implib",
+    ],
+    linkopts = _COMMON_LINKOPTS + [
+        "$(execpath //main/sot:sot_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/comphelper:comphelpMSC_implib)",
+    ],
+)
+
+# oooimprovement.dll lives in //main/extensions/source/oooimprovement:oooimprovement
+# (that sub-package also exports Jobs.xcu / Logging.xcu used by postprocess).
+
+# ─────────────────────────────────────────────────────────────────────────────
+# oooimprovecore.dll — OOo improvement core UNO component
+# ─────────────────────────────────────────────────────────────────────────────
+cc_binary(
+    name = "oooimprovecore",
+    srcs = glob(["source/oooimprovecore/*.cxx"]),
+    copts = _COPTS + ["/Imain/extensions/source/oooimprovecore"],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/oooimprovecore.def",
+    deps = _COMMON_DEPS + [
+        "//main/tools:tools_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/vcl:vcl_headers",
+        "//main/svl:svl_headers",
+        "//main/svtools:svtools_headers",
+        "//main/sfx2:sfx2_headers",
+        "//main/svx:svx_headers",
+        "//main/vos:vos_headers",
+    ],
+    additional_linker_inputs = _COMMON_LINKINPUTS + [
+        "//main/comphelper:comphelpMSC_implib",
+        "//main/tools:tl_implib",
+        "//main/vcl:vcl_implib",
+        "//main/svl:svl_implib",
+        "//main/svtools:svt_implib",
+        "//main/sfx2:sfx_implib",
+        "//main/svx:svxcore_implib",
+        "//main/svx:svx_implib",
+    ],
+    linkopts = _COMMON_LINKOPTS + [
+        "$(execpath //main/comphelper:comphelpMSC_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+        "$(execpath //main/sfx2:sfx_implib)",
+        "$(execpath //main/svx:svxcore_implib)",
+        "$(execpath //main/svx:svx_implib)",
+    ],
+)
+
+# ─────────────────────────────────────────────────────────────────────────────
+# res.dll — office resource loader UNO component
+# ─────────────────────────────────────────────────────────────────────────────
+cc_binary(
+    name = "res",
+    srcs = glob(["source/resource/*.cxx"]),
+    copts = _COPTS + ["/Imain/extensions/source/resource"],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/res.def",
+    deps = _COMMON_DEPS + [
+        "//main/tools:tools_headers",
+        "//main/vcl:vcl_headers",
+    ],
+    additional_linker_inputs = _COMMON_LINKINPUTS + [
+        "//main/tools:tl_implib",
+        "//main/vcl:vcl_implib",
+    ],
+    linkopts = _COMMON_LINKOPTS + [
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+    ],
+)
+
+# ─────────────────────────────────────────────────────────────────────────────
+# scn.dll — scanner UNO component (Windows: scnserv + scanner + scanwin)
+# sane.cxx / sanedlg.cxx / scanunx.cxx / grid.cxx are Linux-only — excluded.
+# twain/twain.h is in main/twain/inc/.
+# ─────────────────────────────────────────────────────────────────────────────
+cc_binary(
+    name = "scn",
+    srcs = [
+        "source/scanner/scnserv.cxx",
+        "source/scanner/scanner.cxx",
+        "source/scanner/scanwin.cxx",
+        "source/scanner/twain.cxx",
+        # Headers needed as textual inputs
+        "source/scanner/scanner.hxx",
+        "source/scanner/twain.hxx",
+    ],
+    copts = _COPTS + [
+        "/Imain/extensions/source/scanner",
+        "/Imain/twain/inc",
+    ],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/scn.def",
+    deps = _COMMON_DEPS + [
+        "//main/tools:tools_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/vcl:vcl_headers",
+        "//main/svtools:svtools_headers",
+        "//main/vos:vos_headers",
+    ],
+    additional_linker_inputs = _COMMON_LINKINPUTS + [
+        "//main/comphelper:comphelpMSC_implib",
+        "//main/tools:tl_implib",
+        "//main/vcl:vcl_implib",
+        "//main/svtools:svt_implib",
+        "//main/vos:vos3MSC_implib",
+    ],
+    linkopts = _COMMON_LINKOPTS + [
+        "$(execpath //main/comphelper:comphelpMSC_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+        "$(execpath //main/vos:vos3MSC_implib)",
+    ],
+)
+
+# ─────────────────────────────────────────────────────────────────────────────
+# updatefeed.dll — update information provider UNO component
+# ─────────────────────────────────────────────────────────────────────────────
+cc_binary(
+    name = "updatefeed",
+    srcs = glob(["source/update/feed/*.cxx"]),
+    copts = _COPTS + ["/Imain/extensions/source/update/feed"],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/updatefeed.def",
+    deps = _COMMON_DEPS,
+    additional_linker_inputs = _COMMON_LINKINPUTS,
+    linkopts = _COMMON_LINKOPTS,
+)
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Resources for modules with .src files
+# ─────────────────────────────────────────────────────────────────────────────
+
+# bib.res — bibliography strings
+rsc_res(
+    name = "bib_res",
+    srcs = glob(["source/bibliography/*.src"]),
+    hdrs = glob(["inc/**/*.hrc", "source/bibliography/*.hrc"]) + [
+        "//main/svl:svl_hrc",
+    ],
+    includes = [
+        "main/extensions/inc",
+        "main/extensions/source/bibliography",
+        "main/svl/inc",
+    ],
+)
+
+# dbp.res — database pilots
+rsc_res(
+    name = "dbp_res",
+    srcs = glob(["source/dbpilots/*.src"]),
+    hdrs = glob(["inc/**/*.hrc", "source/dbpilots/*.hrc"]) + [
+        "//main/svl:svl_hrc",
+    ],
+    includes = [
+        "main/extensions/inc",
+        "main/extensions/source/dbpilots",
+        "main/svl/inc",
+    ],
+)
+
+# abp.res — address book pilot
+rsc_res(
+    name = "abp_res",
+    srcs = glob(["source/abpilot/*.src"]),
+    hdrs = glob(["inc/**/*.hrc", "source/abpilot/*.hrc"]) + [
+        "//main/svl:svl_hrc",
+    ],
+    includes = [
+        "main/extensions/inc",
+        "main/extensions/source/abpilot",
+        "main/svl/inc",
+    ],
+)
+
+# preload.res — OEM preload/wizard
+rsc_res(
+    name = "preload_res",
+    srcs = glob(["source/preload/*.src"]),
+    hdrs = glob(["inc/**/*.hrc", "source/preload/*.hrc"]) + [
+        "//main/svl:svl_hrc",
+    ],
+    includes = [
+        "main/extensions/inc",
+        "main/extensions/source/preload",
+        "main/svl/inc",
+    ],
+)
+
+# pcr.res — property controller UI
+rsc_res(
+    name = "pcr_res",
+    srcs = glob(["source/propctrlr/*.src"]),
+    hdrs = glob(["inc/**/*.hrc", "source/propctrlr/*.hrc"]) + [
+        "//main/svl:svl_hrc",
+    ],
+    includes = [
+        "main/extensions/inc",
+        "main/extensions/source/propctrlr",
+        "main/svl/inc",
+    ],
+    images      = ["//main/default_images:extensions_res_images"],
+    images_root = "main/default_images/extensions/res",
+)
+
+# upd.res — online update check strings
+rsc_res(
+    name = "upd_res",
+    srcs = glob(["source/update/check/*.src"]),
+    hdrs = glob(["inc/**/*.hrc", "source/update/check/*.hrc"]) + [
+        "//main/svl:svl_hrc",
+    ],
+    includes = [
+        "main/extensions/inc",
+        "main/extensions/source/update/check",
+        "main/svl/inc",
+    ],
+)
+
+# updchkui.res — online update check UI + images
+rsc_res(
+    name = "updchkui_res",
+    srcs = glob(["source/update/ui/*.src"]),
+    hdrs = glob(["inc/**/*.hrc", "source/update/ui/*.hrc"]) + [
+        "//main/svl:svl_hrc",
+    ],
+    includes = [
+        "main/extensions/inc",
+        "main/extensions/source/update/ui",
+        "main/svl/inc",
+    ],
+    images      = ["//main/default_images:extensions_update_images"],
+    images_root = "main/default_images/extensions/source/update/ui",
+)
+
+# ─────────────────────────────────────────────────────────────────────────────
+# bib.dll — bibliography UNO component
+# ─────────────────────────────────────────────────────────────────────────────
+cc_binary(
+    name = "bib",
+    srcs = glob([
+        "source/bibliography/*.cxx",
+        "source/bibliography/*.hxx",
+    ]),
+    copts = _COPTS + ["/Imain/extensions/source/bibliography"],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/bib.def",
+    deps = _COMMON_DEPS + [
+        "//main/tools:tools_headers",
+        "//main/unotools:unotools_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/vcl:vcl_headers",
+        "//main/svl:svl_headers",
+        "//main/svtools:svtools_headers",
+        "//main/sot:sot_headers",
+        "//main/toolkit:toolkit_headers",
+        "//main/vos:vos_headers",
+        "//main/svx:svx_headers",
+        "//main/connectivity:connectivity_headers",
+        "//main/ucbhelper:ucbhelper_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = _COMMON_LINKINPUTS + [
+        "//main/comphelper:comphelpMSC_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/vcl:vcl_implib",
+        "//main/svl:svl_implib",
+        "//main/svtools:svt_implib",
+        "//main/sot:sot_implib",
+        "//main/toolkit:ootk_implib",
+        "//main/connectivity:dbtools_implib",
+        "//main/vos:vos3MSC_implib",
+    ],
+    linkopts = _COMMON_LINKOPTS + [
+        "$(execpath //main/comphelper:comphelpMSC_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+        "$(execpath //main/sot:sot_implib)",
+        "$(execpath //main/toolkit:ootk_implib)",
+        "$(execpath //main/connectivity:dbtools_implib)",
+        "$(execpath //main/vos:vos3MSC_implib)",
+    ],
+)
+
+# ─────────────────────────────────────────────────────────────────────────────
+# dbp.dll — database pilots (form control wizards) UNO component
+# ─────────────────────────────────────────────────────────────────────────────
+cc_binary(
+    name = "dbp",
+    srcs = glob([
+        "source/dbpilots/*.cxx",
+        "source/dbpilots/*.hxx",
+    ]),
+    copts = _COPTS + [
+        "/Imain/extensions/source/dbpilots",
+        "/Imain/extensions/inc",
+    ],
+    defines = _DEFINES + ["COMPMOD_NAMESPACE=dbp"],
+    linkshared = True,
+    win_def_file = "util/dbp.def",
+    deps = _COMMON_DEPS + [
+        "//main/tools:tools_headers",
+        "//main/unotools:unotools_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/vcl:vcl_headers",
+        "//main/svl:svl_headers",
+        "//main/svtools:svtools_headers",
+        "//main/sfx2:sfx2_headers",
+        "//main/connectivity:connectivity_headers",
+        "//main/vos:vos_headers",
+    ],
+    additional_linker_inputs = _COMMON_LINKINPUTS + [
+        "//main/comphelper:comphelpMSC_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/vcl:vcl_implib",
+        "//main/svl:svl_implib",
+        "//main/svtools:svt_implib",
+        "//main/sfx2:sfx_implib",
+        "//main/connectivity:dbtools_implib",
+    ],
+    linkopts = _COMMON_LINKOPTS + [
+        "$(execpath //main/comphelper:comphelpMSC_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+        "$(execpath //main/sfx2:sfx_implib)",
+        "$(execpath //main/connectivity:dbtools_implib)",
+    ],
+)
+
+# ─────────────────────────────────────────────────────────────────────────────
+# abp.dll — address book pilot UNO component
+# ─────────────────────────────────────────────────────────────────────────────
+cc_binary(
+    name = "abp",
+    srcs = glob([
+        "source/abpilot/*.cxx",
+        "source/abpilot/*.hxx",
+    ]),
+    copts = _COPTS + ["/Imain/extensions/source/abpilot"],
+    defines = _DEFINES + [
+        "COMPMOD_NAMESPACE=abp",
+        "COMPMOD_RESPREFIX=abp",
+    ],
+    linkshared = True,
+    win_def_file = "util/abp.def",
+    deps = _COMMON_DEPS + [
+        "//main/tools:tools_headers",
+        "//main/unotools:unotools_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/vcl:vcl_headers",
+        "//main/svl:svl_headers",
+        "//main/svtools:svtools_headers",
+        "//main/sfx2:sfx2_headers",
+        "//main/toolkit:toolkit_headers",
+        "//main/svx:svx_headers",
+        "//main/vos:vos_headers",
+    ],
+    additional_linker_inputs = _COMMON_LINKINPUTS + [
+        "//main/comphelper:comphelpMSC_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/vcl:vcl_implib",
+        "//main/svl:svl_implib",
+        "//main/svtools:svt_implib",
+        "//main/sfx2:sfx_implib",
+        "//main/toolkit:ootk_implib",
+        "//main/svx:svxcore_implib",
+        "//main/svx:svx_implib",
+    ],
+    linkopts = _COMMON_LINKOPTS + [
+        "$(execpath //main/comphelper:comphelpMSC_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+        "$(execpath //main/sfx2:sfx_implib)",
+        "$(execpath //main/toolkit:ootk_implib)",
+        "$(execpath //main/svx:svxcore_implib)",
+        "$(execpath //main/svx:svx_implib)",
+    ],
+)
+
+# ─────────────────────────────────────────────────────────────────────────────
+# preload.dll — OEM preload/wizard UNO component
+# ─────────────────────────────────────────────────────────────────────────────
+cc_binary(
+    name = "preload",
+    srcs = glob([
+        "source/preload/*.cxx",
+        "source/preload/*.hxx",
+    ]),
+    copts = _COPTS + ["/Imain/extensions/source/preload"],
+    defines = _DEFINES + [
+        "COMPMOD_NAMESPACE=preload",
+        "COMPMOD_RESPREFIX=preload",
+    ],
+    linkshared = True,
+    win_def_file = "util/preload.def",
+    deps = _COMMON_DEPS + [
+        "//main/tools:tools_headers",
+        "//main/unotools:unotools_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/vcl:vcl_headers",
+        "//main/svl:svl_headers",
+        "//main/svtools:svtools_headers",
+        "//main/sfx2:sfx2_headers",
+        "//main/svx:svx_headers",
+        "//main/vos:vos_headers",
+    ],
+    additional_linker_inputs = _COMMON_LINKINPUTS + [
+        "//main/comphelper:comphelpMSC_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/vcl:vcl_implib",
+        "//main/svl:svl_implib",
+        "//main/svtools:svt_implib",
+        "//main/sfx2:sfx_implib",
+    ],
+    linkopts = _COMMON_LINKOPTS + [
+        "$(execpath //main/comphelper:comphelpMSC_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+        "$(execpath //main/sfx2:sfx_implib)",
+    ],
+)
+
+# ─────────────────────────────────────────────────────────────────────────────
+# pcr.dll — property controller (form design inspector) UNO component
+# ─────────────────────────────────────────────────────────────────────────────
+cc_binary(
+    name = "pcr",
+    srcs = glob([
+        "source/propctrlr/*.cxx",
+        "source/propctrlr/*.hxx",
+    ]),
+    copts = _COPTS + ["/Imain/extensions/source/propctrlr"],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/pcr.def",
+    deps = _COMMON_DEPS + [
+        "//main/tools:tools_headers",
+        "//main/unotools:unotools_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/vcl:vcl_headers",
+        "//main/svl:svl_headers",
+        "//main/svtools:svtools_headers",
+        "//main/toolkit:toolkit_headers",
+        "//main/sfx2:sfx2_headers",
+        "//main/editeng:editeng_headers",
+        "//main/svx:svx_headers",
+        "//main/connectivity:connectivity_headers",
+        "//main/i18npool:i18npool_headers",
+        "//main/vos:vos_headers",
+    ],
+    additional_linker_inputs = _COMMON_LINKINPUTS + [
+        "//main/comphelper:comphelpMSC_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/vcl:vcl_implib",
+        "//main/svl:svl_implib",
+        "//main/svtools:svt_implib",
+        "//main/toolkit:ootk_implib",
+        "//main/sfx2:sfx_implib",
+        "//main/editeng:editeng_implib",
+        "//main/svx:svxcore_implib",
+        "//main/svx:svx_implib",
+        "//main/connectivity:dbtools_implib",
+        "//main/i18npool:i18nisolang1MSC_implib",
+    ],
+    linkopts = _COMMON_LINKOPTS + [
+        "$(execpath //main/comphelper:comphelpMSC_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/svtools:svt_implib)",
+        "$(execpath //main/toolkit:ootk_implib)",
+        "$(execpath //main/sfx2:sfx_implib)",
+        "$(execpath //main/editeng:editeng_implib)",
+        "$(execpath //main/svx:svxcore_implib)",
+        "$(execpath //main/svx:svx_implib)",
+        "$(execpath //main/connectivity:dbtools_implib)",
+        "$(execpath //main/i18npool:i18nisolang1MSC_implib)",
+    ],
+)
+
+# ─────────────────────────────────────────────────────────────────────────────
+# updchk.dll — online update check UNO component
+# update/check/makefile.mk builds only when ENABLE_ONLINE_UPDATE=YES;
+# we always build it in Bazel (it safely no-ops when updates are disabled).
+# ─────────────────────────────────────────────────────────────────────────────
+cc_binary(
+    name = "updchk",
+    srcs = glob(["source/update/check/*.cxx"]),
+    copts = _COPTS + [
+        "/Imain/extensions/source/update/check",
+        "/Imain/extensions/inc",
+    ],
+    defines = _DEFINES + ["CURL_STATICLIB"],
+    linkshared = True,
+    win_def_file = "util/updchk.def",
+    deps = _COMMON_DEPS + [
+        "//main/vcl:vcl_headers",
+        "//main/comphelper:comphelper_headers",
+        "@curl//:curl",
+    ],
+    additional_linker_inputs = _COMMON_LINKINPUTS + [
+        "//main/vcl:vcl_implib",
+        "//main/comphelper:comphelpMSC_implib",
+    ],
+    linkopts = _COMMON_LINKOPTS + [
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/comphelper:comphelpMSC_implib)",
+        "shell32.lib", "ole32.lib",
+    ],
+)
+
+# ─────────────────────────────────────────────────────────────────────────────
+# updchkui.dll — online update check UI UNO component
+# ─────────────────────────────────────────────────────────────────────────────
+cc_binary(
+    name = "updchkui",
+    srcs = glob(["source/update/ui/*.cxx"]),
+    copts = _COPTS + ["/Imain/extensions/source/update/ui"],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/updchkui.def",
+    deps = _COMMON_DEPS + [
+        "//main/tools:tools_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/vcl:vcl_headers",
+        "//main/sfx2:sfx2_headers",
+        "//main/vos:vos_headers",
+    ],
+    additional_linker_inputs = _COMMON_LINKINPUTS + [
+        "//main/comphelper:comphelpMSC_implib",
+        "//main/tools:tl_implib",
+        "//main/vcl:vcl_implib",
+        "//main/vos:vos3MSC_implib",
+    ],
+    linkopts = _COMMON_LINKOPTS + [
+        "$(execpath //main/comphelper:comphelpMSC_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/vcl:vcl_implib)",
+        "$(execpath //main/vos:vos3MSC_implib)",
+    ],
+)
+
+# ─────────────────────────────────────────────────────────────────────────────
+# oleautobridge.uno.dll — OLE automation bridge UNO component
+# Requires ATL headers — only available in VS Professional/Enterprise.
+# Enable with: build --//build:atl_available=True  in user.bazelrc
+# ─────────────────────────────────────────────────────────────────────────────
+cc_binary(
+    name = "oleautobridge.uno",
+    srcs = glob([
+        "source/ole/*.cxx",
+        "source/ole/*.hxx",
+    ]),
+    copts = _COPTS + [
+        "/Imain/extensions/source/ole",
+        "/Imain/extensions/inc/pch",
+    ],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/oleautobridge.uno.def",
+    target_compatible_with = _ATL_REQUIRED,
+    deps = _COMMON_DEPS + [
+        "//main/vos:vos_headers",
+        "//main/comphelper:comphelper_headers",
+    ],
+    additional_linker_inputs = _COMMON_LINKINPUTS + [
+        "//main/vos:vos3MSC_implib",
+        "//main/comphelper:comphelpMSC_implib",
+    ],
+    linkopts = _COMMON_LINKOPTS + [
+        "$(execpath //main/vos:vos3MSC_implib)",
+        "$(execpath //main/comphelper:comphelpMSC_implib)",
+        "ole32.lib", "uuid.lib", "advapi32.lib", "oleaut32.lib",
+        "atls.lib",
+    ],
+)
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Deferred: config/ldap (ldapbe.dll) — requires LDAP SDK headers + libraries.
+# Deferred: mozbootstrap.uno — Linux/macOS only (skipped on Windows).
+# Deferred: activex/msidl, activex/main — ActiveX/COM tooling required.
+# ─────────────────────────────────────────────────────────────────────────────

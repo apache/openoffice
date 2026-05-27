@@ -1,0 +1,5 @@
+; log.dll — logging UNO component
+LIBRARY log
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

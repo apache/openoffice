@@ -1,0 +1,5 @@
+; updchkui.dll — online update check UI UNO component
+LIBRARY updchkui
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

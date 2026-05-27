@@ -1,0 +1,5 @@
+; updatefeed.dll — update information feed UNO component
+LIBRARY updatefeed
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

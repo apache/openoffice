@@ -1,0 +1,5 @@
+; dbp.dll — database pilots UNO component
+LIBRARY dbp
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

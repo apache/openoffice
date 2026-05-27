@@ -1,0 +1,5 @@
+; scn.dll — scanner UNO component
+LIBRARY scn
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

@@ -1,4 +1,56 @@
+package(default_visibility = ["//visibility:public"])
+
+load("@rules_cc//cc:defs.bzl", "cc_binary")
+
 exports_files([
     "Jobs.xcu",
     "Logging.xcu",
 ])
+
+# ── oooimprovement.dll — OOo improvement telemetry UNO component ──────────────
+cc_binary(
+    name = "oooimprovement",
+    srcs = glob(["*.cxx"]),
+    copts = [
+        "/Imain/extensions/inc",
+        "/Imain/extensions/inc/pch",
+        "/Imain/extensions/source/oooimprovement",
+        "/Zc:wchar_t-",
+    ],
+    defines = [
+        "WNT", "GUI", "WIN32",
+        "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+        "CPPU_ENV=msci", "INTEL", "_X86_=1",
+        "FULL_DESK", "SHAREDLIB", "_DLL_",
+        "snprintf=_snprintf",
+        "snwprintf=_snwprintf",
+        "SUPD=680",
+        "MSC",
+    ],
+    linkshared = True,
+    win_def_file = "//main/extensions:util/oooimprovement.def",
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/unotools:unotools_headers",
+        "//main/comphelper:comphelper_headers",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/unotools:utl_implib",
+        "//main/comphelper:comphelpMSC_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/comphelper:comphelpMSC_implib)",
+        "/MANIFEST:NO",
+    ],
+)

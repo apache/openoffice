@@ -258,6 +258,22 @@ collect_outputs(
         # ── Forms ─────────────────────────────────────────────────────────────
         "//main/forms:frm",
 
+        # ── Extensions (UNO component plugins) ────────────────────────────────
+        "//main/extensions:log",
+        "//main/extensions:xmx",
+        "//main/extensions:res",
+        "//main/extensions:scn",
+        "//main/extensions/source/oooimprovement:oooimprovement",
+        "//main/extensions:oooimprovecore",
+        "//main/extensions:updatefeed",
+        "//main/extensions:bib",
+        "//main/extensions:dbp",
+        "//main/extensions:abp",
+        "//main/extensions:preload",
+        "//main/extensions:pcr",
+        "//main/extensions:updchk",
+        "//main/extensions:updchkui",
+
         # ── Postprocess outputs (RDB, ZIP) ────────────────────────────────────
         "//main/postprocess:all",
         "//main/offapi:types_rdb",
@@ -274,6 +290,7 @@ collect_outputs(
             "//main/embedserv:inprocserv",
             "//main/winaccessibility:uacccom",
             "//main/winaccessibility:winaccessibility",
+            "//main/extensions:oleautobridge.uno",
         ],
         "//conditions:default": [],
     }) + select({
@@ -348,6 +365,13 @@ res_stage(
         "//main/dbaccess:dbui_res":                    "dbuien-US",
         "//main/desktop:desktop_res":                  "dkten-US",
         "//main/editeng:editeng_res":                  "editengen-US",
+        "//main/extensions:bib_res":                   "biben-US",
+        "//main/extensions:dbp_res":                   "dbpen-US",
+        "//main/extensions:abp_res":                   "abpen-US",
+        "//main/extensions:preload_res":               "preloaden-US",
+        "//main/extensions:pcr_res":                   "pcren-US",
+        "//main/extensions:upd_res":                   "upden-US",
+        "//main/extensions:updchkui_res":              "updchken-US",
         "//main/filter:flash_res":                     "flashen-US",
         "//main/forms:forms_res":                      "frmen-US",
         "//main/formula:formula_res":                  "foren-US",

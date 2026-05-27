@@ -1,0 +1,5 @@
+; xmx.dll — XML extract UNO component
+LIBRARY xmx
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

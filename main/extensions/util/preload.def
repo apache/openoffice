@@ -1,0 +1,5 @@
+; preload.dll — preload/OEM wizard UNO component
+LIBRARY preload
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory
