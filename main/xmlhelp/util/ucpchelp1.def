@@ -1,0 +1,5 @@
+; Windows export file for ucpchelp1.dll
+LIBRARY ucpchelp1
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

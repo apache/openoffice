@@ -1,6 +1,154 @@
-# main/xmlhelp — XML help runtime (deferred full migration)
-# Minimal BUILD.bazel to expose .component files for postprocess/services.rdb.
+package(default_visibility = ["//visibility:public"])
+
+load("@rules_cc//cc:defs.bzl", "cc_binary")
+
+# ── xmlhelp — XML help runtime ────────────────────────────────────────────────
+# Two DLLs:
+#   tvhlp1.dll      — TreeView help hierarchy data source
+#   ucpchelp1.dll   — UCB content provider for compiled help
+#
+# build.lst: comphelper ucbhelper LIBXSLT:libxslt unoil l10ntools
 
 exports_files(glob([
     "**/*.component",
 ]))
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "FULL_DESK", "SHAREDLIB", "_DLL_",
+    "snprintf=_snprintf",
+]
+
+# Common header deps for both DLLs
+_COMMON_DEPS = [
+    "//main/sal:sal_headers",
+    "//main/cppu:cppu_headers",
+    "//main/cppuhelper:cppuhelper_headers",
+    "//main/comphelper:comphelper_headers",
+    "//main/vos:vos_headers",
+    "//main/ucbhelper:ucbhelper_headers",
+    "//main/udkapi:udkapi_idl_headers",
+    "//main/offapi:offapi_idl_headers",
+    "//main/stlport:stlport",
+]
+
+_COMMON_LINKINPUTS = [
+    "//main/sal:sal_implib",
+    "//main/cppu:cppu3_implib",
+    "//main/cppuhelper:cppuhelper_implib",
+    "//main/comphelper:comphelpMSC_implib",
+    "//main/vos:vos3MSC_implib",
+    "//main/ucbhelper:ucbhelperMSC_implib",
+]
+
+_COMMON_LINKOPTS = [
+    "$(execpath //main/sal:sal_implib)",
+    "$(execpath //main/cppu:cppu3_implib)",
+    "$(execpath //main/cppuhelper:cppuhelper_implib)",
+    "$(execpath //main/comphelper:comphelpMSC_implib)",
+    "$(execpath //main/vos:vos3MSC_implib)",
+    "$(execpath //main/ucbhelper:ucbhelperMSC_implib)",
+    "/MANIFEST:NO",
+    "kernel32.lib",
+    "user32.lib",
+    "advapi32.lib",
+    "msvcrt.lib",
+]
+
+# ── tvhlp1.dll — TreeView help hierarchy data source ─────────────────────────
+cc_binary(
+    name = "tvhlp1",
+    srcs = [
+        "source/treeview/tvfactory.cxx",
+        "source/treeview/tvread.cxx",
+        # local headers (included with "" form)
+        "source/treeview/tvfactory.hxx",
+        "source/treeview/tvread.hxx",
+    ],
+    copts = [
+        "/Zc:wchar_t-",
+        "/EHsc", "/GR",
+        "/Imain/xmlhelp/inc",
+        "/Imain/xmlhelp/inc/pch",
+        "/Imain/xmlhelp/source/treeview",
+    ],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/tvhlp1.def",
+    additional_linker_inputs = _COMMON_LINKINPUTS,
+    linkopts = _COMMON_LINKOPTS,
+    deps = _COMMON_DEPS + [
+        "@expat//:expat_utf8",
+    ],
+)
+
+filegroup(
+    name = "tvhlp1_implib",
+    srcs = [":tvhlp1"],
+    output_group = "interface_library",
+)
+
+# ── ucpchelp1.dll — UCB content provider for compiled help ───────────────────
+cc_binary(
+    name = "ucpchelp1",
+    srcs = [
+        # provider sources
+        "source/cxxhelp/provider/bufferedinputstream.cxx",
+        "source/cxxhelp/provider/content.cxx",
+        "source/cxxhelp/provider/contentcaps.cxx",
+        "source/cxxhelp/provider/databases.cxx",
+        "source/cxxhelp/provider/db.cxx",
+        "source/cxxhelp/provider/inputstream.cxx",
+        "source/cxxhelp/provider/provider.cxx",
+        "source/cxxhelp/provider/resultset.cxx",
+        "source/cxxhelp/provider/resultsetbase.cxx",
+        "source/cxxhelp/provider/resultsetforroot.cxx",
+        "source/cxxhelp/provider/resultsetforquery.cxx",
+        "source/cxxhelp/provider/services.cxx",
+        "source/cxxhelp/provider/urlparameter.cxx",
+        # qe sources
+        "source/cxxhelp/qe/DocGenerator.cxx",
+        # util sources
+        "source/cxxhelp/util/Decompressor.cxx",
+        # local provider headers (included with "" form)
+        "source/cxxhelp/provider/bufferedinputstream.hxx",
+        "source/cxxhelp/provider/content.hxx",
+        "source/cxxhelp/provider/databases.hxx",
+        "source/cxxhelp/provider/db.hxx",
+        "source/cxxhelp/provider/inputstream.hxx",
+        "source/cxxhelp/provider/provider.hxx",
+        "source/cxxhelp/provider/resultset.hxx",
+        "source/cxxhelp/provider/resultsetbase.hxx",
+        "source/cxxhelp/provider/resultsetfactory.hxx",
+        "source/cxxhelp/provider/resultsetforroot.hxx",
+        "source/cxxhelp/provider/resultsetforquery.hxx",
+        "source/cxxhelp/provider/urlparameter.hxx",
+    ],
+    copts = [
+        "/Zc:wchar_t-",
+        "/EHsc", "/GR",
+        "/Imain/xmlhelp/inc",
+        "/Imain/xmlhelp/inc/pch",
+        "/Imain/xmlhelp/source/cxxhelp/inc",
+        "/Imain/xmlhelp/source/cxxhelp/provider",
+    ],
+    defines = _DEFINES + ["HAVE_EXPAT_H"],
+    linkshared = True,
+    win_def_file = "util/ucpchelp1.def",
+    additional_linker_inputs = _COMMON_LINKINPUTS,
+    linkopts = _COMMON_LINKOPTS,
+    deps = _COMMON_DEPS + [
+        "//main/l10ntools:helplinker_headers",
+        "@expat//:expat_utf8",
+        "@libxslt//:libxslt",
+        "@libxml2//:libxml2",
+    ],
+)
+
+filegroup(
+    name = "ucpchelp1_implib",
+    srcs = [":ucpchelp1"],
+    output_group = "interface_library",
+)

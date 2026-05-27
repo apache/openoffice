@@ -1,0 +1,5 @@
+; Windows export file for tvhlp1.dll
+LIBRARY tvhlp1
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

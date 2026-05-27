@@ -36,7 +36,7 @@ autodoc       ⬜  (API documentation generator)
 odk           ⬜  (OpenDocument/Developer Kit)
 helpauthoring ⬜  (help authoring tools)
 helpcontent2  ⬜  (help content sources)
-xmlhelp       ⬜  (XML help runtime)
+xmlhelp       ✅  tvhlp1.dll + ucpchelp1.dll; stlport for hash_map, libxslt for XSLT in urlparameter
 xml2cmp       ⬜  (XML component comparison tool)
 qadevOOo      ⬜  (Java-based QA test framework)
 test          ⬜  (C++ unit tests)

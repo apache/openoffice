@@ -517,7 +517,7 @@ _SERVICES_COMPONENTS = {
     "//main/writerfilter:util/writerfilter.component":
         basis_native("writerfilter.dll"),
 
-    # ── xmlhelp (deferred) ────────────────────────────────────────────────
+    # ── xmlhelp ───────────────────────────────────────────────────────────
     "//main/xmlhelp:source/treeview/tvhlp1.component":
         basis_native("tvhlp1.dll"),
     "//main/xmlhelp:util/ucpchelp1.component":

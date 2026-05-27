@@ -13,6 +13,7 @@ load("//build/rules:rsc_pipeline.bzl", "rsc_res")
 # ── Component XML files (for services.rdb via postprocess) ────────────────────
 exports_files(glob([
     "**/*.component",
+    "**/*.def",
 ]))
 
 # ── uiconfig — bibliography browser form UI ───────────────────────────────────
