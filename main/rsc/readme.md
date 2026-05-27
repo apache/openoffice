@@ -63,7 +63,7 @@ LibreOffice (the active fork) has already replaced this stack:
 | `.src` + `rsc2` → `.res` | `.po` files → GNU gettext `msgfmt` → `.mo` |
 | Binary VCL resource loading | UI description in `.ui` XML (GtkBuilder / Glade format) |
 | Inline dialog layout in `.src` | `vcl/uiconfig/*.ui` |
-| String tables in `.src` | `strings.po` translated via Weblate |
+| String tables in `.src` | `strings.po` translated via translation page |
 
 Replacing rsc in AOO would require porting all 703 `.src` files — a complete rewrite of the UI
 layer. It is out of scope for this migration.

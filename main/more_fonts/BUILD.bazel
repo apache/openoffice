@@ -1,0 +1,15 @@
+# more_fonts — external bundled fonts for share/fonts/truetype/.
+#
+# The font families (DejaVu, Carlito, Croscore, Crosextra, Gentium) are not
+# bundled in the source tree; each makefile.mk downloads a tarball from an
+# external host (SourceForge, Google, SIL) and extracts the TTF files.
+#
+# Blocker: SourceForge uses token-based redirect URLs that change per request,
+# making them incompatible with Bazel's http_archive (which requires stable,
+# content-addressed URLs).  Deferred until a mirror with stable URLs is found
+# or the fonts are vendored into ext_libraries/.
+#
+# The OpenSymbol font (opens___.ttf) is shipped with the OOo source tree under
+# extras/source/truetype/ and is staged via //main/extras:opensymbol_ttf.
+#
+# fc_local.conf (fontconfig alias file) is Linux-only; no Windows staging needed.

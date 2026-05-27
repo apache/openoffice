@@ -1,0 +1,37 @@
+load("//build/rules:images.bzl", "images_zip")
+
+# ── images_industrial.zip ─────────────────────────────────────────────────────
+# Industrial theme: overrides default_images/ icons with tango-style versions.
+# In the dmake build packimages.pl merges default_images + industrial overrides.
+# Here we zip only the industrial-specific overrides; OOo loads images_industrial
+# as a fallback over images.zip so any icon not in industrial falls back to the
+# default set automatically.
+images_zip(
+    name = "images_industrial",
+    srcs = glob(["industrial/**/*.png"]),
+    strip_prefix = "main/ooo_custom_images/industrial",
+    visibility = ["//visibility:public"],
+)
+
+# ── nologo intro screen ───────────────────────────────────────────────────────
+# Single intro.png for builds without the OOo logo splash screen.
+filegroup(
+    name = "nologo_intro",
+    srcs = glob(["nologo/**"]),
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "dev_nologo_intro",
+    srcs = glob(["dev_nologo/**"]),
+    visibility = ["//visibility:public"],
+)
+
+# classic_images.tar.gz is a pre-packaged archive; extraction and conversion to
+# images_classic.zip requires a tar + zip step.  Deferred until packimages is
+# fully migrated.
+filegroup(
+    name = "classic_images_tar",
+    srcs = ["classic/classic_images.tar.gz"],
+    visibility = ["//visibility:public"],
+)

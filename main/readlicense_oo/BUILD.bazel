@@ -1,0 +1,15 @@
+# readlicense_oo — generates readme_<lang>.html and readme_<lang>.txt from
+# readme.xrm (XML resource) via readme.xsl (XSLT stylesheet).
+#
+# The dmake build uses xsltproc.  On Windows xsltproc is not a standard tool;
+# Strawberry Perl provides XML::LibXSLT but requires additional setup.  The
+# localized build also requires a prior l10ntools merge step to produce the
+# merged readme.xrm with translated strings.
+#
+# Deferred: implement once the l10ntools merge pipeline and an xsltproc wrapper
+# (or Perl XML::LibXSLT genrule) are in place.
+#
+# Source files are under docs/readme/:
+#   readme.xrm   — XML source with English strings
+#   readme.xsl   — XSLT stylesheet (HTML and text modes)
+#   readme.dtd   — DTD for validation

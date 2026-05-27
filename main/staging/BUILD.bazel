@@ -381,6 +381,98 @@ res_stage(
     },
 )
 
+# ── extras: share/ data directories ──────────────────────────────────────────
+# Shared autotext (.dat, .bau), wordbook dictionaries, gallery SVG/GIF objects,
+# document templates, bibliography database, and the OpenSymbol font.
+
+tree_install(
+    name = "_install_autotext",
+    src          = "//main/extras:autotext_files",
+    strip_prefix = "main/extras/source/autotext",
+    dst          = "share/autotext",
+)
+
+tree_install(
+    name = "_install_wordbook",
+    src          = "//main/extras:wordbook_files",
+    strip_prefix = "main/extras/source/wordbook",
+    dst          = "share/wordbook",
+)
+
+tree_install(
+    name = "_install_gallery",
+    src          = "//main/extras:gallery_files",
+    strip_prefix = "main/extras/source/gallery",
+    dst          = "share/gallery",
+)
+
+tree_install(
+    name = "_install_templates",
+    src          = "//main/extras:template_files",
+    strip_prefix = "main/extras/source/templates",
+    dst          = "share/template",
+)
+
+tree_install(
+    name = "_install_misc_config",
+    src          = "//main/extras:misc_config_files",
+    strip_prefix = "main/extras/source/misc_config",
+    dst          = "share/config",
+)
+
+tree_install(
+    name = "_install_database",
+    src          = "//main/extras:database_files",
+    strip_prefix = "main/extras/source/database",
+    dst          = "share/database",
+)
+
+tree_install(
+    name = "_install_opensymbol",
+    src          = "//main/extras:opensymbol_ttf",
+    strip_prefix = "main/extras/source/truetype/symbol",
+    dst          = "share/fonts/truetype",
+)
+
+# ── extras: presets/ — initial user profile template ─────────────────────────
+# UserInstall::finalize() copies $OOO_BASE_DIR/presets/ → $UserInstallation/user/
+# on first launch.  Staging autotext + palettes into presets/ subdirectories
+# ensures the directory exists and the user gets a useful initial profile.
+
+tree_install(
+    name = "_install_presets_autotext",
+    src          = "//main/extras:autotext_files",
+    strip_prefix = "main/extras/source/autotext",
+    dst          = "presets/autotext",
+)
+
+tree_install(
+    name = "_install_presets_config",
+    src          = "//main/extras:palette_files",
+    strip_prefix = "main/extras/source/palettes",
+    dst          = "presets/config",
+)
+
+# ── images.zip — toolbar and UI icons ─────────────────────────────────────────
+# share/config/images.zip    — default icon set (all modules)
+# share/config/images_industrial.zip — industrial/tango theme overrides
+# The classic set (images_classic.zip) requires extracting classic_images.tar.gz;
+# deferred until the packimages pipeline is complete.
+
+tree_install(
+    name = "_install_images_zip",
+    src          = "//main/default_images:images",
+    strip_prefix = "main/default_images",
+    dst          = "share/config",
+)
+
+tree_install(
+    name = "_install_images_industrial_zip",
+    src          = "//main/ooo_custom_images:images_industrial",
+    strip_prefix = "main/ooo_custom_images",
+    dst          = "share/config",
+)
+
 # Top-level install: program/ files + share/registry/ XCD packages + scp2 metadata.
 filegroup(
     name = "install",
@@ -389,6 +481,17 @@ filegroup(
         ":_install_registry",
         ":_install_scp2",
         ":_install_resources",
+        ":_install_autotext",
+        ":_install_wordbook",
+        ":_install_gallery",
+        ":_install_templates",
+        ":_install_misc_config",
+        ":_install_database",
+        ":_install_opensymbol",
+        ":_install_presets_autotext",
+        ":_install_presets_config",
+        ":_install_images_zip",
+        ":_install_images_industrial_zip",
     ],
     visibility = ["//visibility:public"],
 )

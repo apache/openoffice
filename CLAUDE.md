@@ -47,11 +47,16 @@ crashrep      ✅  (crash reporter)
 automation    ⬜  (test automation/macro recorder framework)
 migrationanalysis ⬜ (migration analysis tool)
 extensions    ⬜  (misc UNO extension infrastructure)
-extras        —   templates and samples (data, not build target)
-more_fonts    —   bundled fonts (data, not build target)
-default_images —  bundled images (data, not build target)
-ooo_custom_images — custom branding images (data, not build target)
-readlicense_oo —  license files (data, not build target)
+extras        ✅  staged: share/autotext, share/wordbook, share/gallery, share/template,
+                   share/config (wizard), share/database, share/fonts/truetype (OpenSymbol),
+                   presets/autotext, presets/config (palettes); bootstrap.ini → 4bazel profile
+more_fonts    —   bundled fonts; blocked: SourceForge token URLs prevent http_archive;
+                   OpenSymbol staged via extras; other fonts (DejaVu, Carlito…) deferred
+default_images ✅  images.zip staged to share/config/ via images_zip Starlark rule +
+                   make_images_zip.pl (Archive::Zip); vcl/res/ excluded (baked into .res)
+ooo_custom_images ✅  images_industrial.zip staged to share/config/; classic deferred
+                   (classic_images.tar.gz needs tar→zip conversion)
+readlicense_oo —  readme.html/txt; blocked: needs xsltproc + l10ntools merge; deferred
 ```
 ## Goal
 Replace the Perl/dmake/gmake orchestration layer with Bazel.

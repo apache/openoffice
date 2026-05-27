@@ -1,0 +1,84 @@
+# extras — static data files for user profile and shared share/ directories.
+#
+# Destination mapping (relative to the staging install root):
+#   autotext_files  → share/autotext/<lang>/     (shared autocorrect data)
+#                   → presets/autotext/<lang>/    (initial user profile copy)
+#   wordbook_files  → share/wordbook/             (shared spelling wordbooks)
+#   gallery_files   → share/gallery/              (shared gallery objects)
+#   template_files  → share/template/             (shared document templates)
+#   palette_files   → presets/config/             (initial user palette files)
+#   misc_config_files → share/config/             (wizard CSS/images, autotbl.fmt)
+#   database_files  → share/database/             (bibliography sample database)
+#   opensymbol_ttf  → share/fonts/truetype/       (OpenSymbol math/symbol font)
+
+filegroup(
+    name = "autotext_files",
+    srcs = glob(
+        ["source/autotext/**"],
+        exclude = ["**/makefile.mk", "**/delzip"],
+    ),
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "wordbook_files",
+    srcs = glob(
+        ["source/wordbook/**"],
+        exclude = ["**/makefile.mk", "**/delzip"],
+    ),
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "gallery_files",
+    srcs = glob(
+        ["source/gallery/**"],
+        exclude = ["**/makefile.mk", "**/delzip"],
+    ),
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "template_files",
+    srcs = glob(
+        ["source/templates/**"],
+        exclude = ["**/makefile.mk", "**/delzip"],
+    ),
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "palette_files",
+    srcs = glob(
+        ["source/palettes/**"],
+        exclude = ["**/makefile.mk", "**/delzip"],
+    ),
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "misc_config_files",
+    srcs = glob(
+        ["source/misc_config/**"],
+        exclude = ["**/makefile.mk", "**/delzip"],
+    ),
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "database_files",
+    srcs = glob(
+        ["source/database/**"],
+        exclude = ["**/makefile.mk", "**/delzip"],
+    ),
+    visibility = ["//visibility:public"],
+)
+
+# OpenSymbol is the OOo symbol/math font — needed for bullet points and
+# Math formula rendering.  It lives in extras/ rather than more_fonts/
+# because it is part of the OOo source distribution, not an external download.
+filegroup(
+    name = "opensymbol_ttf",
+    srcs = ["source/truetype/symbol/opens___.ttf"],
+    visibility = ["//visibility:public"],
+)
