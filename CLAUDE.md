@@ -46,7 +46,9 @@ testtools     ⬜  (test infrastructure)
 crashrep      ✅  (crash reporter)
 automation    ⬜  (test automation/macro recorder framework)
 migrationanalysis ⬜ (migration analysis tool)
-extensions    ⬜  (misc UNO extension infrastructure)
+extensions    ✅  14 DLLs + 7 .res files; deploymenten-US.res alias for deployment manager;
+                   componentmodule.cxx textual_hdrs pattern; twain_headers strip/prefix;
+                   twain.cxx excluded (not in SLOFILES); ws2_32.lib for updchk curl
 extras        ✅  staged: share/autotext, share/wordbook, share/gallery, share/template,
                    share/config (wizard), share/database, share/fonts/truetype (OpenSymbol),
                    presets/autotext, presets/config (palettes); bootstrap.ini → 4bazel profile

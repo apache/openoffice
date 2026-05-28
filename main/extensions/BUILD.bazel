@@ -7,7 +7,7 @@
 
 package(default_visibility = ["//visibility:public"])
 
-load("@rules_cc//cc:defs.bzl", "cc_binary")
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 load("//build/rules:rsc_pipeline.bzl", "rsc_res")
 
 # ── Component XML files (for services.rdb via postprocess) ────────────────────
@@ -41,6 +41,7 @@ _DEFINES = [
 _COPTS = [
     "/Imain/extensions/inc",
     "/Imain/extensions/inc/pch",
+    "/Imain/extensions/source/inc",
     "/Zc:wchar_t-",
 ]
 
@@ -70,6 +71,16 @@ _ATL_REQUIRED = select({
     "//build:has_atl": [],
     "//conditions:default": ["@platforms//:incompatible"],
 })
+
+# Shared #include'd implementation files used by module-driver files in
+# abpilot, dbpilots, and preload (each moduleXXX.cxx does #include "componentmodule.cxx")
+cc_library(
+    name = "extensions_source_inc",
+    textual_hdrs = [
+        "source/inc/componentmodule.cxx",
+        "source/inc/componentmodule.hxx",
+    ],
+)
 
 # ─────────────────────────────────────────────────────────────────────────────
 # log.dll — logging framework UNO component
@@ -205,19 +216,19 @@ cc_binary(
         "source/scanner/scnserv.cxx",
         "source/scanner/scanner.cxx",
         "source/scanner/scanwin.cxx",
-        "source/scanner/twain.cxx",
-        # Headers needed as textual inputs
+        # scanner.hxx / twain.hxx are #included by scanwin.cxx
         "source/scanner/scanner.hxx",
         "source/scanner/twain.hxx",
+        # twain.cxx is legacy (not in dmake SLOFILES); ImpTwain lives in scanwin.cxx
     ],
     copts = _COPTS + [
         "/Imain/extensions/source/scanner",
-        "/Imain/twain/inc",
     ],
     defines = _DEFINES,
     linkshared = True,
     win_def_file = "util/scn.def",
     deps = _COMMON_DEPS + [
+        "//main/twain:twain_headers",
         "//main/tools:tools_headers",
         "//main/comphelper:comphelper_headers",
         "//main/vcl:vcl_headers",
@@ -237,6 +248,7 @@ cc_binary(
         "$(execpath //main/vcl:vcl_implib)",
         "$(execpath //main/svtools:svt_implib)",
         "$(execpath //main/vos:vos3MSC_implib)",
+        "user32.lib",
     ],
 )
 
@@ -262,14 +274,25 @@ cc_binary(
 # bib.res — bibliography strings
 rsc_res(
     name = "bib_res",
-    srcs = glob(["source/bibliography/*.src"]),
+    srcs = [
+        "source/bibliography/bib.src",
+        "source/bibliography/datman.src",
+        "source/bibliography/sections.src",
+        "source/bibliography/toolbar.src",
+    ],
     hdrs = glob(["inc/**/*.hrc", "source/bibliography/*.hrc"]) + [
         "//main/svl:svl_hrc",
+        "//main/svx:svx_inc_hrc",
+        "//main/sfx2:sfx2_inc_hrc",
+        "//main/editeng:editeng_inc_hrc",
     ],
     includes = [
         "main/extensions/inc",
         "main/extensions/source/bibliography",
         "main/svl/inc",
+        "main/svx/inc",
+        "main/sfx2/inc",
+        "main/editeng/inc",
     ],
 )
 
@@ -313,6 +336,8 @@ rsc_res(
         "main/extensions/source/preload",
         "main/svl/inc",
     ],
+    images      = ["//main/default_images:extensions_res_images"],
+    images_root = "main/default_images/extensions/res",
 )
 
 # pcr.res — property controller UI
@@ -426,12 +451,12 @@ cc_binary(
     ]),
     copts = _COPTS + [
         "/Imain/extensions/source/dbpilots",
-        "/Imain/extensions/inc",
     ],
     defines = _DEFINES + ["COMPMOD_NAMESPACE=dbp"],
     linkshared = True,
     win_def_file = "util/dbp.def",
     deps = _COMMON_DEPS + [
+        ":extensions_source_inc",
         "//main/tools:tools_headers",
         "//main/unotools:unotools_headers",
         "//main/comphelper:comphelper_headers",
@@ -481,6 +506,7 @@ cc_binary(
     linkshared = True,
     win_def_file = "util/abp.def",
     deps = _COMMON_DEPS + [
+        ":extensions_source_inc",
         "//main/tools:tools_headers",
         "//main/unotools:unotools_headers",
         "//main/comphelper:comphelper_headers",
@@ -535,6 +561,7 @@ cc_binary(
     linkshared = True,
     win_def_file = "util/preload.def",
     deps = _COMMON_DEPS + [
+        ":extensions_source_inc",
         "//main/tools:tools_headers",
         "//main/unotools:unotools_headers",
         "//main/comphelper:comphelper_headers",
@@ -632,7 +659,10 @@ cc_binary(
 # ─────────────────────────────────────────────────────────────────────────────
 cc_binary(
     name = "updchk",
-    srcs = glob(["source/update/check/*.cxx"]),
+    srcs = glob(
+        ["source/update/check/*.cxx"],
+        exclude = ["source/update/check/updateprotocoltest.cxx"],  # standalone test binary
+    ),
     copts = _COPTS + [
         "/Imain/extensions/source/update/check",
         "/Imain/extensions/inc",
@@ -643,6 +673,7 @@ cc_binary(
     deps = _COMMON_DEPS + [
         "//main/vcl:vcl_headers",
         "//main/comphelper:comphelper_headers",
+        "//main/salhelper:salhelper_headers",
         "@curl//:curl",
     ],
     additional_linker_inputs = _COMMON_LINKINPUTS + [
@@ -653,6 +684,8 @@ cc_binary(
         "$(execpath //main/vcl:vcl_implib)",
         "$(execpath //main/comphelper:comphelpMSC_implib)",
         "shell32.lib", "ole32.lib",
+        "crypt32.lib", "advapi32.lib", "user32.lib",
+        "ws2_32.lib",
     ],
 )
 

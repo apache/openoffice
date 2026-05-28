@@ -1,0 +1,12 @@
+package(default_visibility = ["//visibility:public"])
+
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+# Exposes inc/twain.h as <twain/twain.h> — matches the old build's
+# Package_inc.mk which staged it to inc/external/twain/twain.h.
+cc_library(
+    name = "twain_headers",
+    hdrs = ["inc/twain.h"],
+    strip_include_prefix = "inc",
+    include_prefix = "twain",
+)
