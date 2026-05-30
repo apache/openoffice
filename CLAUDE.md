@@ -108,6 +108,15 @@ Source code is NOT being changed — only the build system.
   pipeline in tg_config.mk.  Without this, configmgr crashes on empty xs:boolean values.
   Implemented via alllang_default_<xcu> genrules in officecfg/BUILD.bazel and _LOCALIZED_XCUS
   routing in postprocess.bzl's oc_xcu() function.  Both lists must stay in sync.
+- forcedefault.xcd / ${PRODUCTLANGUAGE}: the ForceDefaultLanguage spool sets
+  Linguistic/General/UILocale to the literal installer placeholder ${PRODUCTLANGUAGE},
+  which the MSI (installer/languages.pm → $officestartlanguage) would substitute.
+  Bazel staging never runs the MSI, so a genrule (postprocess/BUILD.bazel
+  forcedefault_linguistic_xcu) substitutes it to en-US before pack_registry.
+  Without it: first-start (langselect.cxx) copies the unexpanded placeholder into
+  Setup/L10N/ooLocale, dp_resource.cxx::toLocale() throws "Invalid language string.",
+  surfacing as '[context="user"] caught unexpected exception' + startup FatalError.
+  When parameterize languages (see localization section) this literal becomes the knob.
 
 ## Cross-cutting compiler flags & defines
 These apply to many packages — check before building any new module:
@@ -125,6 +134,61 @@ These apply to many packages — check before building any new module:
 - MASM `.asm` files: list directly in `srcs`; toolchain `assemble` action uses `ml.exe` with
   `masm_flags` feature (`/c /coff /Cx`). `/Cx` is critical — without it MASM uppercases all
   PUBLIC symbols, breaking the link. Build-system define `SUPD=680` (Solar Update version).
+- `_HAS_ITERATOR_DEBUGGING=0` — set GLOBALLY in build/toolchain/windows_cc_toolchain_config.bzl
+  (default_compile_flags_list).  This is an STL-ABI macro: at =1 (the /MDd _DEBUG default) MSVC
+  adds a _Container_proxy to std::vector/hash_map, changing layout.  It MUST be identical across
+  every DLL or a container built in one (e.g. comphelper::SequenceAsHashMap, exported from
+  comphelp.dll) and read inline in another (e.g. desktop/spl FirstStart::execute) indexes a
+  garbage bucket → "vector subscript out of range" assert (debug only; release defaults to 0 so
+  it never showed).  Cannot be =1: ~8 modules (comphelper, connectivity, sw, oox, fpicker, tools,
+  svtools, pyuno) don't compile at =1 (heterogeneous comparators).  Global =0 matches upstream
+  solenv; the per-module /D_HAS_ITERATOR_DEBUGGING=0 in those BUILD files are now redundant.
+## Localization / language builds (planned — not yet wired)
+Current staging is en-US only.  This is the deliberate demo baseline; AOO must
+start first.  When adding languages, keep THREE independent axes distinct
+(conflating them is the trap) — dmake drives them from separate variables:
+
+1. Installed locales (which UI languages are SELECTABLE) — dmake `alllangiso`/
+   `WITH_LANG`, a LIST.  Each lang gets a Langpack-<lang>.xcd registering it in
+   Setup/Office/InstalledLocales (+ fcfg_langpack_<lang>.xcd, registry_<lang>.xcd).
+   Bazel today: only langpack_en_us_xcd.  Future: a macro over OOO_LANGS emitting
+   one pack_registry per lang, each added to all_xcd via
+   select({"//build:build_<code>": [...], "//conditions:default": []}) so
+   --//build:lang_de=True auto-includes Langpack-de.xcd.  Mirrors the
+   {$(alllangiso)} brace-expansion in postprocess/packregistry/makefile.mk.
+2. Default UI language (the ONE start language) — dmake `PRODUCTLANGUAGE`, a
+   SCALAR (installer/languages.pm $officestartlanguage; NOT the list).  This is
+   the forcedefault.xcd ${PRODUCTLANGUAGE} substitution above.  Future: replace
+   the hardcoded 'en-US' with a make-var, e.g. --define=office_start_lang=de
+   (default en-US) read in the forcedefault_linguistic_xcu genrule cmd.
+3. Localized content (the big lift) — per-lang .src/.res (rsc pipeline),
+   localized .xcu (oc_xcu alllang spool), help, autotext, wordbook.  Same
+   select()-per-lang pattern, but needs the TRANSLATION DATA wired in (see SDF).
+
+Existing scaffolding (unconsumed): build/langs.bzl (OOO_LANGS, lang_id),
+build/BUILD.bazel emits //build:lang_<code> bool_flags (en-US default True) and
+//build:build_<code> config_settings.  user.bazelrc can flip lang_de/lang_fr;
+nothing reads them yet.
+
+### SDF files and the missing Pootle→SDF rule
+Translation data flows as SDF (a.k.a. GSI) — the build's merge-database format,
+one TAB-delimited line per translatable string
+(project\path\file\type\gid\lid\helpid\platform\width\langid\text\...).
+- Consumption (merge): l10ntools `transex`/export.cxx and friends read a source
+  file + an SDF via `-m <sdf> -l <lang>` and emit the localized resource
+  (the merge step before rsc compiles .src→.res, and for helpex/cfgex/xrmex).
+  l10ntools localize.cxx does the reverse — EXTRACTS source strings into one
+  merged .sdf (POT-equivalent) for translators.
+- The gap: Pootle stores translations as .po (per lang/module).  AOO's build
+  consumes .sdf, NOT .po.  The .po↔.sdf bridge is translate-toolkit's
+  oo2po (sdf→po, to seed/update Pootle) and po2oo (po→sdf, to feed the build).
+  Neither translate-toolkit nor any po/sdf conversion exists in this tree
+  (grep: no oo2po/po2oo/po2sdf).  So axis 3 needs a NEW Bazel rule that runs
+  po2oo over the Pootle .po export to (re)generate the per-lang .sdf the merge
+  tools expect — this rule does not exist yet and is a prerequisite for any
+  real (translated) language build.  Until then, language builds can only do
+  axes 1+2 (German/French DEFAULT UI, but strings still English).
+
 # dependency notes
 icu - ext_libraries\modules\icu\Readme.md
 redland - ext_libraries\modules\redland\README

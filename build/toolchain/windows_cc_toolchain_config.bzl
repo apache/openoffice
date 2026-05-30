@@ -792,6 +792,21 @@ def _impl(ctx):
             "/DNOMINMAX",
             "/D_CRT_SECURE_NO_DEPRECATE",
             "/D_CRT_SECURE_NO_WARNINGS",
+            # Force MSVC iterator-debugging OFF for ALL modules so the STL
+            # container ABI is identical in debug and release builds.  In
+            # release _HAS_ITERATOR_DEBUGGING already defaults to 0; in a /MDd
+            # _DEBUG build it defaults to 1, which adds a _Container_proxy to
+            # std::vector/hash_map and changes their layout.  Several modules
+            # (comphelper, tools, svtools, sw, oox, …) already set =0 locally
+            # because they don't even compile at =1 (heterogeneous comparators);
+            # any module that DOESN'T set it then disagrees on container layout,
+            # so an object built in one DLL (e.g. comphelper::SequenceAsHashMap)
+            # and read inline in another (e.g. desktop/spl FirstStart) indexes a
+            # garbage bucket → "vector subscript out of range" assert / crash.
+            # Matches upstream solenv (iterator-debugging off even in debug).
+            # Symbols/PDBs/-Od are unaffected.  Makes the per-module
+            # /D_HAS_ITERATOR_DEBUGGING=0 copies redundant.
+            "/D_HAS_ITERATOR_DEBUGGING=0",
             "/bigobj",
             "/Zm500",
             "/EHsc",

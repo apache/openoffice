@@ -1133,13 +1133,34 @@ pack_registry(
 )
 
 # ── forcedefault.xcd (Windows) ────────────────────────────────────────────────
+# The ForceDefaultLanguage spool sets Linguistic/General/UILocale to the literal
+# placeholder ${PRODUCTLANGUAGE}, which the MSI installer would normally
+# substitute with the install language.  Our staging never runs the MSI, so we
+# substitute it here to en-US (the only InstalledLocale, registered by
+# langpack_en_us).  Without this, first-start copies the unexpanded placeholder
+# into Setup/L10N/ooLocale; dp_resource.cxx::toLocale() then throws
+# "Invalid language string." which surfaces as
+# '[context="user"] caught unexpected exception' and a startup FatalError.
+
+genrule(
+    name = "forcedefault_linguistic_xcu",
+    srcs = [oc_mod("Office/Linguistic.xcu", "ForceDefaultLanguage")],
+    outs = ["ForceDefaultLanguage/Linguistic.xcu"],
+    cmd_bat = (
+        "powershell -NoProfile -Command " +
+        "\"(Get-Content -Raw '$(location " +
+        oc_mod("Office/Linguistic.xcu", "ForceDefaultLanguage") +
+        ")').Replace('$${PRODUCTLANGUAGE}', 'en-US') " +
+        "| Set-Content -Encoding UTF8 '$(OUTS)'\""
+    ),
+)
 
 pack_registry(
     name = "forcedefault_xcd",
     out  = "forcedefault.xcd",
     xcs  = [],
     xcu  = [
-        oc_mod("Office/Linguistic.xcu", "ForceDefaultLanguage"),
+        ":forcedefault_linguistic_xcu",
     ],
     deps = ["main"],
     xslt = _XSLT,
