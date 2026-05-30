@@ -41,6 +41,15 @@ The Bazel implementation uses a custom `services_rdb` Starlark rule in
 `file:///` URIs are required because xsltproc's `document()` resolves relative
 paths against the input XML's base URI (the bazel-out path), not the working directory.
 
+**Each registered DLL must also be staged.** The `_SERVICES_COMPONENTS` map associates every
+`.component` with a loader URL via `basis_native("X.dll")` →
+`vnd.sun.star.expand:$OOO_BASE_DIR/program/X.dll`. Registration here does **not** stage the DLL —
+`X.dll` must independently be a dep of `//main/staging` so it lands in `program/`. If it is missing,
+the first service instantiated from that component throws
+`com.sun.star.loader.CannotActivateFactoryException("loading component library failed: …/X.dll")`
+at runtime. (Example: `fileacc.dll` was registered here but unstaged, causing a startup `FatalError`
+via the deployment help backend on 2026-05-30 — see `main/staging/readme.md`.)
+
 ### uiconfig.zip
 
 A `uiconfig_zip` Starlark rule generates a PowerShell script at analysis time.

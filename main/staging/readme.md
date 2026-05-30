@@ -70,6 +70,33 @@ bazel-bin\main\staging\install\program\soffice.exe
 - `msword` — added `//main/writerfilter:writerfilter_headers` dep
 - `i18nsearch` — added `//main/comphelper:comphelper_headers`
 - `writerfilter_gen_headers` — added `".."` to `includes` so `writerfilter/doctok/sprmids.hxx` (generated) resolves via `bin/main` search path
+- `//main/fileaccess:fileacc` — was registered in `services.rdb` but never staged; added to the UCB component block (see "Every services.rdb component DLL must be staged" below)
+
+## Every services.rdb component DLL must be staged
+
+`services.rdb` (built by `//main/postprocess:services_rdb`) maps each UNO implementation to a
+loader URL via `postprocess.bzl`'s `basis_native("X.dll")` → `vnd.sun.star.expand:$OOO_BASE_DIR/program/X.dll`.
+If a `.component` file is listed in `postprocess/BUILD.bazel` but the corresponding `X.dll` target
+is **not** a staging dep, the registration exists but the DLL is absent from `program/`. At runtime,
+the first service from that DLL that someone instantiates throws
+`com.sun.star.loader.CannotActivateFactoryException("loading component library failed: …/X.dll")`.
+
+Concrete failure seen 2026-05-30: `fileacc.dll` (`com.sun.star.ucb.SimpleFileAccess`) was registered
+but unstaged. On startup `Desktop::Main` → `syncRepositories` → `getSharedRepository` →
+`dp_registry::create` instantiates the deployment **help backend**, which needs `SimpleFileAccess`.
+The load failed, the exception was wrapped at `dp_manager.cxx:482` as
+`WrappedTargetRuntimeException("[context=\"shared\"] caught unexpected exception!")`, propagated to the
+outer `catch (Exception&)` in `Desktop::Main`, and became a `FatalError` dialog → silent exit.
+
+**Rule:** for every `basis_native("X.dll")` in `postprocess/BUILD.bazel`, `X.dll` must resolve to a
+staging dep here. After changing either file, verify each registered DLL exists in
+`bazel-bin/main/staging/program/`.
+
+**How it was diagnosed (CDB, no private symbols):** decode the thrown C++ class post-mortem from the
+MSVC `ThrowInfo` (3rd parameter of the `e06d7363` exception record):
+`r $t0=poi(<throwinfo>+0c); r $t1=poi($t0+4); r $t2=poi($t1+4); da $t2+8` →
+`.?AVCannotActivateFactoryException@loader@…`. Then capture the message live with
+`bp MSVCR90D!_CxxThrowException "du poi(poi(esp+4))+8 L80; gc"` — the message names the exact DLL.
 
 ## Resource files (.res)
 
