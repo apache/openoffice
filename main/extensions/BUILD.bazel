@@ -337,7 +337,7 @@ rsc_res(
         "main/svl/inc",
     ],
     images      = ["//main/default_images:extensions_res_images"],
-    images_root = "main/default_images/extensions/res",
+    images_root = "main/default_images",
 )
 
 # pcr.res — property controller UI
@@ -353,7 +353,7 @@ rsc_res(
         "main/svl/inc",
     ],
     images      = ["//main/default_images:extensions_res_images"],
-    images_root = "main/default_images/extensions/res",
+    images_root = "main/default_images",
 )
 
 # upd.res — online update check strings
@@ -383,7 +383,7 @@ rsc_res(
         "main/svl/inc",
     ],
     images      = ["//main/default_images:extensions_update_images"],
-    images_root = "main/default_images/extensions/source/update/ui",
+    images_root = "main/default_images",
 )
 
 # ─────────────────────────────────────────────────────────────────────────────

@@ -202,6 +202,55 @@ uiconfig_zip = rule(
     },
 )
 
+# ── uiconfig_tree ─────────────────────────────────────────────────────────────
+# Lay out the per-module UI configuration as a *directory tree* (not a zip),
+# mirroring what the dmake build delivers to share/config/soffice.cfg/.
+#
+# At startup the framework PresetHandler
+# (main/framework/source/accelerators/presethandler.cxx) opens
+# share/config/soffice.cfg as a *folder* via the FileSystemStorageFactory and
+# then navigates to modules/<ModuleShortName>/<restype>/...  (E_MODULES; e.g.
+# the Start Center loads modules/startmodule first).  The old per-install
+# uiconfig.zip is read as a folder after the installer's ARCHIVE-extract step;
+# Bazel never runs that step, so we must materialise the loose tree directly.
+# A bare .zip in soffice.cfg/ is therefore useless and the missing folder makes
+# UIConfigurationManager throw CorruptedUIConfigurationException ("error loading
+# user interface configuration data" FatalError).
+#
+# Source layout → install layout:
+#   <module>/uiconfig/<short>/<restype>/x.xml → soffice.cfg/modules/<short>/<restype>/x.xml
+#   chart2/uiconfig/<restype>/x.xml           → soffice.cfg/modules/schart/<restype>/x.xml
+#     (chart2's source tree has no short-name dir; its module id is "schart")
+# Outputs are declared under "soffice.cfg/..." so a plain tree_install with
+# strip_prefix = "main/postprocess" lands them at share/config/soffice.cfg/...
+
+def _uiconfig_dest(short_path):
+    # short_path e.g. "main/sw/uiconfig/swriter/menubar/menubar.xml"
+    marker = "/uiconfig/"
+    rel = short_path[short_path.find(marker) + len(marker):]
+    module = short_path.split("/")[1]  # "main/<module>/..."
+    if module == "chart2":
+        return "soffice.cfg/modules/schart/" + rel
+    return "soffice.cfg/modules/" + rel
+
+def _uiconfig_tree_impl(ctx):
+    outputs = []
+    for f in ctx.files.srcs:
+        out = ctx.actions.declare_file(_uiconfig_dest(f.short_path))
+        ctx.actions.symlink(output = out, target_file = f)
+        outputs.append(out)
+    return [DefaultInfo(files = depset(outputs))]
+
+uiconfig_tree = rule(
+    implementation = _uiconfig_tree_impl,
+    attrs = {
+        "srcs": attr.label_list(
+            allow_files = True,
+            doc = "All uiconfig/**/*.xml source files to lay out under soffice.cfg/",
+        ),
+    },
+)
+
 # ── fcfg_merge ────────────────────────────────────────────────────────────────
 
 def _fcfg_merge_impl(ctx):

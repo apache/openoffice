@@ -99,7 +99,8 @@ rscpp.exe  -I<inc>...  -D<def>...  input.src  output.src.srs
 ```
 rsc2.exe  -fs=<name>.res  -lgEN_US  -BIGENDIAN
           -I<inc>...  -D<def>...
-          -lip=<tools_dir>  -subimages=<tools_dir>
+          -lip=<tools_dir/X/res>  -lip=<tools_dir/Y/res>  ...
+          -subimages=<tools_dir>
           <all intermediate .src.srs files>
 ```
 
@@ -109,17 +110,31 @@ rsc2.exe  -fs=<name>.res  -lgEN_US  -BIGENDIAN
 > the content-table length stored at the end of the file is misread as ~2.8 GB, `rtl_allocateMemory`
 > returns `NULL`, `nEntries` is non-zero (huge), and `GetUInt64(NULL)` crashes immediately.
 
-#### Image lookup: -lip= and -subimages=
+#### Image lookup: -lip=, -subimages=, and images_root
 
-`-lip=<dir>` tells rsc2 where to search for image files by basename.
+`BitmapEx(ResId)` (the runtime image loader) reads a **filename string** from the `.res` file,
+then calls `ImplImageTree::loadImage(name, style, bitmap)` which does an **exact name lookup**
+inside `share/config/images.zip`.  The path stored in the `.res` must therefore match the zip
+entry name exactly.
 
-`-subimages=<dir>` is equally required: rsc2's `GetImageFilePath()` only sets
-`bFound=true` when a `-sub<key>=<path>` replacement in `m_aReplacements` matches
-as a prefix of the found file's path. Without `-sub`, every image is found on disk
-but never recorded (bFound stays false), producing the f268 "could not be found" error.
+`images.zip` is built with `strip_prefix = "main/default_images"`, so entries are stored at paths
+like `"framework/res/backing.png"` or `"res/odt_32.png"`.
 
-Both flags point to the same flat `<name>_tools/` directory where images are staged
-alongside the EXE and DLL files.
+`images_root = "main/default_images"` in every `rsc_res` rule causes images to be staged in
+`<name>_tools/<zip-entry-path>` (e.g. `tools/framework/res/backing.png`).  The rsc_pipeline.bzl
+then passes one `-lip=<dir>` flag per unique staging subdirectory so rsc2 can find each image by
+its bare `File = "backing.png"` declaration.  `-subimages=<tools_dir>` strips the tools prefix
+from the found path, leaving the relative portion (`"framework/res/backing.png"`) which is what
+gets written into the `.res` and later matched exactly in images.zip.
+
+`-subimages=<dir>` is equally required: rsc2's `GetImageFilePath()` only sets `bFound=true` when
+a `-sub<key>=<path>` replacement matches as a prefix of the found file's path.  Without it, every
+image is found on disk but never recorded, producing the f268 "could not be found" error.
+
+**Critical invariant:** `images_root` must equal the `strip_prefix` used when building
+`images.zip` (`"main/default_images"`).  A module-specific subdirectory
+(e.g. `"main/default_images/framework/res"`) stages images flat → stores bare basenames →
+mismatches the zip's full relative paths → all `BitmapEx(ResId)` loads return empty bitmaps.
 
 #### .res vs .srs output mode
 
@@ -136,7 +151,8 @@ Each `rsc_res` rule stages its own `<name>_tools/` directory containing:
 - All runtime DLLs: `sal3`, `tl`, `cppu3`, `cppuhelper3MSC`, `salhelper3MSC`,
   `comphelpMSC`, `ucbhelperMSC`, `basegfx`, `vos3MSC`, `i18nisolang1MSC`, CRT
 - `.manifest` files for rscpp.exe and rsc2.exe (VS2008 SxS CRT loading)
-- All image files (`.png`/`.bmp`) staged flat by basename
+- All image files (`.png`/`.bmp`) staged at their relative path from `images_root`
+  (e.g. `tools/framework/res/backing.png` for a file from `framework/res/`)
 
 `env = {"PATH": tools_dir}` on every action; Windows DLL loader finds everything.
 
@@ -145,15 +161,28 @@ Each `rsc_res` rule stages its own `<name>_tools/` directory containing:
 ```python
 load("//build/rules:rsc_pipeline.bzl", "rsc_res")
 
+# Module with images loaded at runtime via BitmapEx(ResId) — must use
+# images_root = "main/default_images" to match images.zip's strip_prefix.
+rsc_res(
+    name        = "framework_res",
+    srcs        = glob(["source/**/*.src"]),
+    hdrs        = glob(["inc/**/*.hrc"]) + ["//main/svl:svl_hrc"],
+    includes    = ["main/framework/inc", "main/svl/inc"],
+    images      = [
+        "//main/default_images:framework_res_images",
+        "//main/default_images:shared_images",
+    ],
+    images_root = "main/default_images",   # must match images.zip strip_prefix
+    visibility  = ["//visibility:public"],
+)
+
+# Module whose .res only contains strings/dialogs (no Bitmap{File=} resources):
+# omit images and images_root entirely.
 rsc_res(
     name     = "vcl_res",
     srcs     = glob(["source/src/*.src"]),
     hdrs     = glob(["inc/**/*.hrc"]) + ["//main/svl:svl_hrc"],
     includes = ["main/vcl/inc", "main/svl/inc"],
-    images   = [
-        "//main/default_images:vcl_images",
-        "//main/default_images:shared_images",
-    ],
     visibility = ["//visibility:public"],
 )
 ```

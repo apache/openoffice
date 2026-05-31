@@ -261,7 +261,7 @@ rsc_res(
         "main/editeng/inc",
     ],
     images      = ["//main/default_images:starmath_res_images"],
-    images_root = "main/default_images/starmath/res",
+    images_root = "main/default_images",
     visibility  = ["//visibility:public"],
 )
 

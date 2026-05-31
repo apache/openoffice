@@ -1499,7 +1499,7 @@ rsc_res(
         "//main/default_images:sw_res_images",
         "//main/default_images:shared_images",
     ],
-    images_root = "main/default_images/sw/res",
+    images_root = "main/default_images",
     visibility  = ["//visibility:public"],
 )
 

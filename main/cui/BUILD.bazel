@@ -180,7 +180,7 @@ rsc_res(
         "//main/default_images:sd_res_images",
         "//main/default_images:shared_images",
     ],
-    images_root = "main/default_images/svx/res",
+    images_root = "main/default_images",
     visibility = ["//visibility:public"],
 )
 

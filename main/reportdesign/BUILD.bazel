@@ -537,7 +537,7 @@ rsc_res(
         "main/sfx2/inc/sfx2",
     ],
     images      = ["//main/default_images:reportdesign_res_images"],
-    images_root = "main/default_images/reportdesign/res",
+    images_root = "main/default_images",
     visibility  = ["//visibility:public"],
 )
 

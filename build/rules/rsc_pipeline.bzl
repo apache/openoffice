@@ -162,8 +162,22 @@ def _rsc_res_impl(ctx):
     # -lip=   tells rsc2 where to search for image files by basename.
     # -subimages= provides the path-replacement prefix so GetImageFilePath
     # records bFound=true: the found path must start with the replacement value,
-    # and the relative tail (e.g. "check.png") is stored in the .res.
-    image_args   = ["-lip=" + tools_dir, "-subimages=" + tools_dir] if staged_images else []
+    # and the relative tail (e.g. "framework/res/backing.png") is stored in .res.
+    #
+    # When images_root = "main/default_images" (the images.zip strip_prefix),
+    # images are staged at tools_dir/<zip-entry-path> so that the stored path
+    # matches the zip entry name exactly (e.g. "framework/res/backing.png").
+    # We add one -lip= per unique staging subdirectory so rsc2 can find each
+    # image by its bare filename as written in the .src File= declaration.
+    # Without per-directory -lip= entries, rsc2 only looks in the flat tools_dir
+    # root and misses files staged in subdirectories, breaking Bitmap{} resources.
+    if staged_images:
+        lip_dirs = {}
+        for _img_out in staged_images:
+            lip_dirs[_img_out.dirname] = True
+        image_args = ["-lip=" + _d for _d in lip_dirs] + ["-subimages=" + tools_dir]
+    else:
+        image_args = []
 
     # ── Step 1: Preprocess each .src → intermediate .srs ─────────────────
     srs_intermediates = []

@@ -438,7 +438,7 @@ rsc_res(
         "main/sfx2/inc/sfx2",
     ],
     images      = ["//main/default_images:chart2_res_images"],
-    images_root = "main/default_images/chart2/res",
+    images_root = "main/default_images",
     visibility  = ["//visibility:public"],
 )
 

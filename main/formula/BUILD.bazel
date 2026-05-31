@@ -177,7 +177,7 @@ rsc_res(
         "main/svl/inc",
     ],
     images      = ["//main/default_images:formula_res_images"],
-    images_root = "main/default_images/formula/res",
+    images_root = "main/default_images",
     visibility  = ["//visibility:public"],
 )
 

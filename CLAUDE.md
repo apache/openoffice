@@ -55,7 +55,8 @@ extras        ✅  staged: share/autotext, share/wordbook, share/gallery, share/
 more_fonts    —   bundled fonts; blocked: SourceForge token URLs prevent http_archive;
                    OpenSymbol staged via extras; other fonts (DejaVu, Carlito…) deferred
 default_images ✅  images.zip staged to share/config/ via images_zip Starlark rule +
-                   make_images_zip.pl (Archive::Zip); vcl/res/ excluded (baked into .res)
+                   make_images_zip.pl (Archive::Zip); vcl/res/ excluded (baked into .res);
+                   strip_prefix="main/default_images" → zip entries like "framework/res/backing.png"
 ooo_custom_images ✅  images_industrial.zip staged to share/config/; classic deferred
                    (classic_images.tar.gz needs tar→zip conversion)
 readlicense_oo —  readme.html/txt; blocked: needs xsltproc + l10ntools merge; deferred
@@ -117,6 +118,14 @@ Source code is NOT being changed — only the build system.
   Setup/L10N/ooLocale, dp_resource.cxx::toLocale() throws "Invalid language string.",
   surfacing as '[context="user"] caught unexpected exception' + startup FatalError.
   When parameterize languages (see localization section) this literal becomes the knob.
+  - uiconfig (UI config) MUST be staged as a FOLDER TREE at share/config/soffice.cfg/,
+  not a zip.  framework PresetHandler (presethandler.cxx) opens soffice.cfg as a folder
+  (FileSystemStorageFactory) and reads modules/<ModuleShortName>/<restype>/*.xml; dmake's
+  scp2 ARCHIVE style extracts uiconfig.zip on install but Bazel skips that.  Missing folder
+  ⇒ CorruptedUIConfigurationException ⇒ "error loading user interface configuration data"
+  FatalError (Start Center = modules/startmodule loads first).  Implemented via uiconfig_tree
+  rule in postprocess.bzl (//main/postprocess:uiconfig_tree) + staging _install_uiconfig;
+  source <module>/uiconfig/<short>/... → modules/<short>/..., chart2 → modules/schart.
 
 ## Cross-cutting compiler flags & defines
 These apply to many packages — check before building any new module:
@@ -143,6 +152,13 @@ These apply to many packages — check before building any new module:
   it never showed).  Cannot be =1: ~8 modules (comphelper, connectivity, sw, oox, fpicker, tools,
   svtools, pyuno) don't compile at =1 (heterogeneous comparators).  Global =0 matches upstream
   solenv; the per-module /D_HAS_ITERATOR_DEBUGGING=0 in those BUILD files are now redundant.
+- rsc_res `images_root` MUST be `"main/default_images"` for every module that uses
+  `Bitmap { File = "xxx.png" }` resources.  `BitmapEx(ResId)` reads the filename from .res and
+  looks it up by exact name in `images.zip`.  `images.zip` uses `strip_prefix="main/default_images"`
+  so entries are stored as `"framework/res/backing.png"`, `"res/odt_32.png"`, etc.  Setting
+  `images_root` to a module-specific subdirectory (e.g. `"main/default_images/framework/res"`)
+  stages images flat → .res stores bare basenames → exact-name lookup always fails → all
+  `BitmapEx(ResId)` loads return empty bitmaps → Start Center shows no buttons or text.
 ## Localization / language builds (planned — not yet wired)
 Current staging is en-US only.  This is the deliberate demo baseline; AOO must
 start first.  When adding languages, keep THREE independent axes distinct

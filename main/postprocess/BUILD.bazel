@@ -17,7 +17,7 @@
 #   officecfg module-extraction and filter/FCFGMerge pipelines.
 #   Implement after those pipelines are in place.
 
-load(":postprocess.bzl", "services_rdb", "uiconfig_zip", "pack_registry",
+load(":postprocess.bzl", "services_rdb", "uiconfig_zip", "uiconfig_tree", "pack_registry",
      "oc_xcs", "oc_xcu", "oc_mod", "fcfg",
      "basis_native", "basis_java", "ure_java", "pymodule")
 
@@ -218,10 +218,6 @@ _SERVICES_COMPONENTS = {
         basis_native("embobj.dll"),
     "//main/embeddedobj:source/msole/emboleobj.windows.component":
         basis_native("emboleobj.dll"),
-
-    # ── embedserv (ATL) ───────────────────────────────────────────────────
-    "//main/embedserv:util/emser.component":
-        basis_native("emser.dll"),
 
     # ── eventattacher ────────────────────────────────────────────────────
     "//main/eventattacher:source/evtatt.component":
@@ -541,10 +537,6 @@ _SERVICES_COMPONENTS = {
     "//main/xmlsecurity:util/xsec_xmlsec.windows.component":
         basis_native("xsec_xmlsec.dll"),
 
-    # ── Windows-only: extensions/ole (ATL) ───────────────────────────────
-    "//main/extensions:source/ole/oleautobridge.component":
-        basis_native("oleautobridge.uno.dll"),
-
     # ── accessibility (Java UNO bridge, deferred) ─────────────────────────
     "//main/accessibility:java/java_uno_accessbridge/java_uno_accessbridge.component":
         basis_java("java_uno_accessbridge.jar"),
@@ -552,6 +544,16 @@ _SERVICES_COMPONENTS = {
     # ── mail merge (Python) ───────────────────────────────────────────────
     "//main/scripting:source/pyprov/mailmerge.component":
         pymodule("mailmerge"),
+}
+
+# Components only present when ATL headers are available (VS Professional/Enterprise).
+# Gated by //build:has_atl so they are excluded from services.rdb in Express builds,
+# preventing "loading component library failed" on startup.
+_ATL_SERVICES_COMPONENTS = {
+    "//main/embedserv:util/emser.component":
+        basis_native("emser.dll"),
+    "//main/extensions:source/ole/oleautobridge.component":
+        basis_native("oleautobridge.uno.dll"),
 }
 
 # ── All uiconfig XML files (collected from every module) ─────────────────────
@@ -575,7 +577,10 @@ _UICONFIG_SRCS = [
 
 services_rdb(
     name       = "services_rdb",
-    components = _SERVICES_COMPONENTS,
+    components = _SERVICES_COMPONENTS | select({
+        "//build:has_atl": _ATL_SERVICES_COMPONENTS,
+        "//conditions:default": {},
+    }),
     out        = "services.rdb",
     xslt       = "//main/solenv/bin:packcomponents.xslt",
     visibility = ["//visibility:public"],
@@ -583,6 +588,14 @@ services_rdb(
 
 uiconfig_zip(
     name       = "uiconfig_zip",
+    srcs       = _UICONFIG_SRCS,
+    visibility = ["//visibility:public"],
+)
+
+# Per-module UI configuration laid out as a folder tree under soffice.cfg/ (the
+# form the framework reads at runtime).  Staged by //main/staging:_install_uiconfig.
+uiconfig_tree(
+    name       = "uiconfig_tree",
     srcs       = _UICONFIG_SRCS,
     visibility = ["//visibility:public"],
 )

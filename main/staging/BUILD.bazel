@@ -501,6 +501,21 @@ tree_install(
     dst          = "share/config",
 )
 
+# ── share/config/soffice.cfg — per-module UI configuration tree ───────────────
+# The framework PresetHandler opens share/config/soffice.cfg as a *folder* and
+# reads modules/<ModuleShortName>/{menubar,toolbar,statusbar}/*.xml at startup
+# (the Start Center loads modules/startmodule first).  Without this tree the
+# UIConfigurationManager throws CorruptedUIConfigurationException, surfacing as
+# the "error loading user interface configuration data" FatalError.  The
+# uiconfig_tree rule already roots its outputs at "soffice.cfg/...", so we strip
+# only the package prefix and install into share/config.
+tree_install(
+    name = "_install_uiconfig",
+    src          = "//main/postprocess:uiconfig_tree",
+    strip_prefix = "main/postprocess",
+    dst          = "share/config",
+)
+
 # Top-level install: program/ files + share/registry/ XCD packages + scp2 metadata.
 filegroup(
     name = "install",
@@ -520,6 +535,7 @@ filegroup(
         ":_install_presets_config",
         ":_install_images_zip",
         ":_install_images_industrial_zip",
+        ":_install_uiconfig",
     ],
     visibility = ["//visibility:public"],
 )

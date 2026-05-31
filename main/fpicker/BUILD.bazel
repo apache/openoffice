@@ -352,7 +352,7 @@ rsc_res(
         "//main/default_images:fpicker_res_images",
         "//main/default_images:shared_images",
     ],
-    images_root = "main/default_images/fpicker/res",
+    images_root = "main/default_images",
     visibility  = ["//visibility:public"],
 )
 

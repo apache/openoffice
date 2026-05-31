@@ -225,7 +225,7 @@ rsc_res(
         "main/connectivity/source/inc",
     ],
     images      = ["//main/default_images:database_images"],
-    images_root = "main/default_images/database",
+    images_root = "main/default_images",
     visibility = ["//visibility:public"],
 )
 

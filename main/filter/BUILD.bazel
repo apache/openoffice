@@ -989,7 +989,7 @@ rsc_res(
         "main/svl/inc",
     ],
     images      = ["//main/default_images:shared_images"],
-    images_root = "main/default_images/res",
+    images_root = "main/default_images",
     visibility  = ["//visibility:public"],
 )
 

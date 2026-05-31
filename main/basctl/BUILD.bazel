@@ -193,7 +193,7 @@ rsc_res(
         "main/editeng/inc",
     ],
     images      = ["//main/default_images:basctl_res_images"],
-    images_root = "main/default_images/basctl/res",
+    images_root = "main/default_images",
     visibility  = ["//visibility:public"],
 )
 
