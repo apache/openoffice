@@ -99,7 +99,7 @@ rscpp.exe  -I<inc>...  -D<def>...  input.src  output.src.srs
 ```
 rsc2.exe  -fs=<name>.res  -lgEN_US  -BIGENDIAN
           -I<inc>...  -D<def>...
-          -lip=<tools_dir/X/res>  -lip=<tools_dir/Y/res>  ...
+          -lip=<tools_dir/X/res>  -lip=<tools_dir/Y/res>  ...  -lip=<tools_dir>
           -subimages=<tools_dir>
           <all intermediate .src.srs files>
 ```
@@ -120,12 +120,29 @@ entry name exactly.
 `images.zip` is built with `strip_prefix = "main/default_images"`, so entries are stored at paths
 like `"framework/res/backing.png"` or `"res/odt_32.png"`.
 
-`images_root = "main/default_images"` in every `rsc_res` rule causes images to be staged in
+`images_root = "main/default_images"` in every `rsc_res` rule causes images to be staged under
 `<name>_tools/<zip-entry-path>` (e.g. `tools/framework/res/backing.png`).  The rsc_pipeline.bzl
-then passes one `-lip=<dir>` flag per unique staging subdirectory so rsc2 can find each image by
-its bare `File = "backing.png"` declaration.  `-subimages=<tools_dir>` strips the tools prefix
-from the found path, leaving the relative portion (`"framework/res/backing.png"`) which is what
-gets written into the `.res` and later matched exactly in images.zip.
+then passes one `-lip=` per unique staging subdirectory **plus** `-lip=<tools_dir>` (the root)
+**last**, covering two `.src` reference styles.
+
+**Search ORDER is load-bearing.**  rsc2's `GetImageFilePath()` walks the `-lip` dirs in order,
+stops at the **first** on-disk hit, and stores that path with the `-subimages` prefix stripped.
+Flat copies of every image also sit at the `tools_dir` root — stale orphans from earlier builds
+(Bazel does not GC per-file outputs whose declaring action changed) plus a few generated/renamed
+placeholders that stage flat.  So the root must be searched **after** every subdirectory:
+
+- **Bare basename** (`File = "backing.png"`): rsc2 tries the subdir `-lip` first →
+  finds `tools_dir/framework/res/backing.png` (NOT the flat `tools_dir/backing.png`, which the
+  root would have matched if listed first).  `-subimages=tools_dir` strips the prefix →
+  stores `"framework/res/backing.png"`.
+- **Subdirectory-prefixed** (`File = "presenter/Background"`): no subdir `-lip` matches
+  `presenter/Background.png`; the search falls through to `-lip=tools_dir` (last) →
+  finds `tools_dir/presenter/Background.png`.  `-subimages=tools_dir` strips the prefix →
+  stores `"presenter/Background.png"`.
+
+Both stored paths match the corresponding images.zip entry names exactly.  Listing the root
+`-lip` **first** is the bug that empties the Start Center: every bare basename then matches its
+flat root copy, storing `"backing.png"` (no zip entry) → `BitmapEx` returns an empty bitmap.
 
 `-subimages=<dir>` is equally required: rsc2's `GetImageFilePath()` only sets `bFound=true` when
 a `-sub<key>=<path>` replacement matches as a prefix of the found file's path.  Without it, every

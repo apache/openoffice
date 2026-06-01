@@ -172,10 +172,26 @@ def _rsc_res_impl(ctx):
     # Without per-directory -lip= entries, rsc2 only looks in the flat tools_dir
     # root and misses files staged in subdirectories, breaking Bitmap{} resources.
     if staged_images:
+        # Search ORDER matters.  rsc2's GetImageFilePath() (rsc.cxx) walks the
+        # -lip dirs in order, stops at the FIRST on-disk hit, then stores the
+        # found path with the -subimages prefix stripped.  The search must reach
+        # the path-qualified copy (tools_dir/framework/res/backing.png → stored
+        # "framework/res/backing.png", which matches the images.zip entry) BEFORE
+        # any flat copy at the tools_dir root.
+        #
+        # Flat copies DO sit at the root: stale orphans from earlier builds (Bazel
+        # does not GC per-file outputs whose declaring action changed) plus a few
+        # generated/renamed placeholders that legitimately stage flat.  So the root
+        # is searched LAST.  Bare basenames (File = "backing.png") then resolve to
+        # their subdir copy and store the qualified name; only genuinely subdir-
+        # prefixed refs (File = "presenter/Background") miss every subdir and fall
+        # through to the root, storing the prefixed name — both matching images.zip.
         lip_dirs = {}
         for _img_out in staged_images:
-            lip_dirs[_img_out.dirname] = True
-        image_args = ["-lip=" + _d for _d in lip_dirs] + ["-subimages=" + tools_dir]
+            if _img_out.dirname != tools_dir:
+                lip_dirs[_img_out.dirname] = True
+        ordered_lip = list(lip_dirs.keys()) + [tools_dir]
+        image_args = ["-lip=" + _d for _d in ordered_lip] + ["-subimages=" + tools_dir]
     else:
         image_args = []
 
