@@ -116,7 +116,7 @@ def _rsc_res_impl(ctx):
     # If images_root is set, preserve the path relative to that root so that
     # subdirectory references in .src (e.g. "minimizer/foo.png") resolve under
     # tools_dir/minimizer/.  Without images_root, stage flat by basename
-    # (original behaviour for vcl and others that use bare "foo.png" paths).
+    # (original behavior for vcl and others that use bare "foo.png" paths).
     # When multiple filegroups supply an image with the same relative path,
     # the first occurrence wins (module-specific images precede shared_images
     # in the images = [...] list, so module files take priority).

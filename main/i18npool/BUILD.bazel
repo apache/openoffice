@@ -1,6 +1,8 @@
 package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("//main/postprocess:postprocess.bzl", "services_rdb")
+load("//build/rules:localedata_pipeline.bzl", "localedata_gen")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -135,4 +137,326 @@ filegroup(
 # ICU-dependent targets — see main/i18npool/pool/BUILD.bazel.
 
 exports_files(glob(["**/*.component"]))
+
+# ══════════════════════════════════════════════════════════════════════════════
+# localedata — per-locale data libraries (localedata_{en,es,euro,others}.dll)
+# ══════════════════════════════════════════════════════════════════════════════
+# Mirrors i18npool/source/localedata/{makefile.mk,data/makefile.mk}.
+#
+# LocaleDataImpl::getLocaleItem() (compiled into i18npool.dll) osl_loadModule()s
+# these DLLs by bare name and looks up getXxx_<lang>_<CC>() data functions.  For
+# en-US the group is localedata_en.dll.  Without them every locale lookup throws,
+# so Writer/Calc text + caret init fails while the Start Center (which lays out no
+# editable text) still works — the exact symptom this restores.
+#
+# Pipeline:  data/<lang>_<CC>.xml --saxparser--> localedata_<lang>_<CC>.cxx
+#            grouped + linked into 4 DLLs.  The generated functions are
+#            SAL_DLLPUBLIC_EXPORT (__declspec(dllexport)) → no .def needed.
+#
+# Group membership is copied verbatim from data/makefile.mk SHL{1,2,3,4}OBJS.
+# localedata_en is the base library; es/euro/others import getXxx_en_US() from it
+# (data/makefile.mk SHL{2,3,4}STDLIBS = LINK_LOCALEDATA_EN_LIB), so they link its
+# import library.
+
+# ── saxparser — UNO tool: <locale>.xml → localedata_<locale>.cxx ──────────────
+# APP1 in source/localedata/makefile.mk (saxparser + LocaleNode + filewriter).
+# Bootstraps a UNO service manager (createRegistryServiceFactory) and runs the
+# SAX parser (expwrap.dll) over each locale XML.  Built default-config but pulled
+# cfg="exec" by localedata_gen.
+cc_binary(
+    name = "saxparser",
+    srcs = [
+        "source/localedata/saxparser.cxx",
+        "source/localedata/LocaleNode.cxx",
+        "source/localedata/filewriter.cxx",
+        "source/localedata/LocaleNode.hxx",
+    ],
+    copts = _COMMON_COPTS + ["/Imain/i18npool/source/localedata"],
+    defines = _DEFINES,
+    deps = _COMMON_DEPS + [
+        ":i18npool_headers",
+        "//main/vos:vos_headers",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── saxparser.rdb — registers com.sun.star.xml.sax.Parser → expwrap.dll ───────
+# Build-time (NONE-layer) URI: resolved against -env:OOO_INBUILD_SHAREDLIB_DIR
+# (the staged tools dir) at codegen time.  Mirrors the expwrap.inbuild.component
+# that dmake feeds packcomponents.xslt.
+services_rdb(
+    name       = "saxparser_rdb",
+    components = {
+        "//main/sax:source/expatwrap/expwrap.component":
+            "vnd.sun.star.expand:$OOO_INBUILD_SHAREDLIB_DIR/expwrap.dll",
+    },
+    out        = "saxparser.rdb",
+    xslt       = "//main/solenv/bin:packcomponents.xslt",
+)
+
+# ── Locale → DLL group lists (verbatim from data/makefile.mk) ─────────────────
+_LD_EN = [
+    "source/localedata/data/en_AU.xml",
+    "source/localedata/data/en_BZ.xml",
+    "source/localedata/data/en_CA.xml",
+    "source/localedata/data/en_GB.xml",
+    "source/localedata/data/en_GH.xml",
+    "source/localedata/data/en_IE.xml",
+    "source/localedata/data/en_JM.xml",
+    "source/localedata/data/en_NA.xml",
+    "source/localedata/data/en_NZ.xml",
+    "source/localedata/data/en_PH.xml",
+    "source/localedata/data/en_TT.xml",
+    "source/localedata/data/en_US.xml",
+    "source/localedata/data/en_ZA.xml",
+    "source/localedata/data/en_ZW.xml",
+]
+
+_LD_ES = [
+    "source/localedata/data/es_AR.xml",
+    "source/localedata/data/es_BO.xml",
+    "source/localedata/data/es_CL.xml",
+    "source/localedata/data/es_CO.xml",
+    "source/localedata/data/es_CR.xml",
+    "source/localedata/data/es_DO.xml",
+    "source/localedata/data/es_EC.xml",
+    "source/localedata/data/es_ES.xml",
+    "source/localedata/data/es_GT.xml",
+    "source/localedata/data/es_HN.xml",
+    "source/localedata/data/es_MX.xml",
+    "source/localedata/data/es_NI.xml",
+    "source/localedata/data/es_PA.xml",
+    "source/localedata/data/es_PE.xml",
+    "source/localedata/data/es_PR.xml",
+    "source/localedata/data/es_PY.xml",
+    "source/localedata/data/es_SV.xml",
+    "source/localedata/data/es_UY.xml",
+    "source/localedata/data/es_VE.xml",
+    "source/localedata/data/gl_ES.xml",
+]
+
+_LD_EURO = [
+    "source/localedata/data/ast_ES.xml",
+    "source/localedata/data/be_BY.xml",
+    "source/localedata/data/bg_BG.xml",
+    "source/localedata/data/br_FR.xml",
+    "source/localedata/data/bs_BA.xml",
+    "source/localedata/data/ca_ES.xml",
+    "source/localedata/data/cs_CZ.xml",
+    "source/localedata/data/cv_RU.xml",
+    "source/localedata/data/cy_GB.xml",
+    "source/localedata/data/da_DK.xml",
+    "source/localedata/data/de_AT.xml",
+    "source/localedata/data/de_CH.xml",
+    "source/localedata/data/de_DE.xml",
+    "source/localedata/data/de_LI.xml",
+    "source/localedata/data/de_LU.xml",
+    "source/localedata/data/dsb_DE.xml",
+    "source/localedata/data/el_GR.xml",
+    "source/localedata/data/et_EE.xml",
+    "source/localedata/data/eu.xml",
+    "source/localedata/data/fi_FI.xml",
+    "source/localedata/data/fo_FO.xml",
+    "source/localedata/data/fr_BE.xml",
+    "source/localedata/data/fr_CA.xml",
+    "source/localedata/data/fr_CH.xml",
+    "source/localedata/data/fr_FR.xml",
+    "source/localedata/data/fr_LU.xml",
+    "source/localedata/data/fr_MC.xml",
+    "source/localedata/data/fur_IT.xml",
+    "source/localedata/data/fy_NL.xml",
+    "source/localedata/data/ga_IE.xml",
+    "source/localedata/data/gd_GB.xml",
+    "source/localedata/data/gsc_FR.xml",
+    "source/localedata/data/hr_HR.xml",
+    "source/localedata/data/hsb_DE.xml",
+    "source/localedata/data/is_IS.xml",
+    "source/localedata/data/it_CH.xml",
+    "source/localedata/data/it_IT.xml",
+    "source/localedata/data/ka_GE.xml",
+    "source/localedata/data/kl_GL.xml",
+    "source/localedata/data/la_VA.xml",
+    "source/localedata/data/lb_LU.xml",
+    "source/localedata/data/lij_IT.xml",
+    "source/localedata/data/lt_LT.xml",
+    "source/localedata/data/ltg_LV.xml",
+    "source/localedata/data/lv_LV.xml",
+    "source/localedata/data/mk_MK.xml",
+    "source/localedata/data/mt_MT.xml",
+    "source/localedata/data/nb_NO.xml",
+    "source/localedata/data/nds_DE.xml",
+    "source/localedata/data/nl_BE.xml",
+    "source/localedata/data/nl_NL.xml",
+    "source/localedata/data/nn_NO.xml",
+    "source/localedata/data/no_NO.xml",
+    "source/localedata/data/oc_FR.xml",
+    "source/localedata/data/pl_PL.xml",
+    "source/localedata/data/pt_BR.xml",
+    "source/localedata/data/pt_PT.xml",
+    "source/localedata/data/ro_RO.xml",
+    "source/localedata/data/ru_RU.xml",
+    "source/localedata/data/rue_SK.xml",
+    "source/localedata/data/sc_IT.xml",
+    "source/localedata/data/sh_ME.xml",
+    "source/localedata/data/sh_RS.xml",
+    "source/localedata/data/sh_YU.xml",
+    "source/localedata/data/sk_SK.xml",
+    "source/localedata/data/sl_SI.xml",
+    "source/localedata/data/sr_ME.xml",
+    "source/localedata/data/sr_RS.xml",
+    "source/localedata/data/sr_YU.xml",
+    "source/localedata/data/sv_FI.xml",
+    "source/localedata/data/sv_SE.xml",
+    "source/localedata/data/tr_TR.xml",
+    "source/localedata/data/tt_RU.xml",
+    "source/localedata/data/uk_UA.xml",
+    "source/localedata/data/wa_BE.xml",
+]
+
+_LD_OTHERS = [
+    "source/localedata/data/af_NA.xml",
+    "source/localedata/data/af_ZA.xml",
+    "source/localedata/data/ak_GH.xml",
+    "source/localedata/data/am_ET.xml",
+    "source/localedata/data/ar_DZ.xml",
+    "source/localedata/data/ar_EG.xml",
+    "source/localedata/data/ar_LB.xml",
+    "source/localedata/data/ar_OM.xml",
+    "source/localedata/data/ar_SA.xml",
+    "source/localedata/data/ar_TN.xml",
+    "source/localedata/data/az_AZ.xml",
+    "source/localedata/data/bn_IN.xml",
+    "source/localedata/data/bn_BD.xml",
+    "source/localedata/data/dz_BT.xml",
+    "source/localedata/data/ee_GH.xml",
+    "source/localedata/data/en_IN.xml",
+    "source/localedata/data/eo.xml",
+    "source/localedata/data/fa_IR.xml",
+    "source/localedata/data/gu_IN.xml",
+    "source/localedata/data/gug_PY.xml",
+    "source/localedata/data/haw_US.xml",
+    "source/localedata/data/ha_GH.xml",
+    "source/localedata/data/he_IL.xml",
+    "source/localedata/data/hi_IN.xml",
+    "source/localedata/data/hil_PH.xml",
+    "source/localedata/data/ht_HT.xml",
+    "source/localedata/data/hu_HU.xml",
+    "source/localedata/data/hy_AM.xml",
+    "source/localedata/data/ia.xml",
+    "source/localedata/data/id_ID.xml",
+    "source/localedata/data/ja_JP.xml",
+    "source/localedata/data/jbo.xml",
+    "source/localedata/data/kab_DZ.xml",
+    "source/localedata/data/kk_KZ.xml",
+    "source/localedata/data/km_KH.xml",
+    "source/localedata/data/kn_IN.xml",
+    "source/localedata/data/ko_KR.xml",
+    "source/localedata/data/ku_TR.xml",
+    "source/localedata/data/ky_KG.xml",
+    "source/localedata/data/lg_UG.xml",
+    "source/localedata/data/lif_NP.xml",
+    "source/localedata/data/ln_CD.xml",
+    "source/localedata/data/lo_LA.xml",
+    "source/localedata/data/mai_IN.xml",
+    "source/localedata/data/ml_IN.xml",
+    "source/localedata/data/mn_MN.xml",
+    "source/localedata/data/mr_IN.xml",
+    "source/localedata/data/ms_MY.xml",
+    "source/localedata/data/my_MM.xml",
+    "source/localedata/data/ne_NP.xml",
+    "source/localedata/data/nr_ZA.xml",
+    "source/localedata/data/nso_ZA.xml",
+    "source/localedata/data/om_ET.xml",
+    "source/localedata/data/or_IN.xml",
+    "source/localedata/data/pa_IN.xml",
+    "source/localedata/data/plt_MG.xml",
+    "source/localedata/data/rw_RW.xml",
+    "source/localedata/data/sg_CF.xml",
+    "source/localedata/data/shs_CA.xml",
+    "source/localedata/data/so_SO.xml",
+    "source/localedata/data/ss_ZA.xml",
+    "source/localedata/data/st_ZA.xml",
+    "source/localedata/data/sw_TZ.xml",
+    "source/localedata/data/ta_IN.xml",
+    "source/localedata/data/te_IN.xml",
+    "source/localedata/data/tg_TJ.xml",
+    "source/localedata/data/th_TH.xml",
+    "source/localedata/data/ti_ER.xml",
+    "source/localedata/data/tk_TM.xml",
+    "source/localedata/data/tn_ZA.xml",
+    "source/localedata/data/tpi_PG.xml",
+    "source/localedata/data/ts_ZA.xml",
+    "source/localedata/data/ug_CN.xml",
+    "source/localedata/data/ur_PK.xml",
+    "source/localedata/data/uz_UZ.xml",
+    "source/localedata/data/ve_ZA.xml",
+    "source/localedata/data/vi_VN.xml",
+    "source/localedata/data/xh_ZA.xml",
+    "source/localedata/data/yi_US.xml",
+    "source/localedata/data/zh_CN.xml",
+    "source/localedata/data/zh_HK.xml",
+    "source/localedata/data/zh_MO.xml",
+    "source/localedata/data/zh_SG.xml",
+    "source/localedata/data/zh_TW.xml",
+    "source/localedata/data/zu_ZA.xml",
+]
+
+# ── Codegen: one .cxx per locale, per group ──────────────────────────────────
+localedata_gen(name = "localedata_en_gen",     srcs = _LD_EN,     rdb = ":saxparser_rdb")
+localedata_gen(name = "localedata_es_gen",     srcs = _LD_ES,     rdb = ":saxparser_rdb")
+localedata_gen(name = "localedata_euro_gen",   srcs = _LD_EURO,   rdb = ":saxparser_rdb")
+localedata_gen(name = "localedata_others_gen", srcs = _LD_OTHERS, rdb = ":saxparser_rdb")
+
+# ── The 4 data DLLs (target config) ──────────────────────────────────────────
+# Pure data: generated functions only return static const sal_Unicode arrays, so
+# no external link deps (just sal headers for sal/types.h + /Zc:wchar_t-).
+_LD_DLL_COPTS = ["/Zc:wchar_t-"]
+
+cc_binary(
+    name = "localedata_en",
+    srcs = [":localedata_en_gen"],
+    copts = _LD_DLL_COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    deps = ["//main/sal:sal_headers"],
+    linkopts = ["/MANIFEST:NO"],
+    visibility = ["//visibility:public"],
+)
+
+# en's import library — es/euro/others import getXxx_en_US() from localedata_en.dll.
+filegroup(
+    name = "localedata_en_implib",
+    srcs = [":localedata_en"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+[
+    cc_binary(
+        name = "localedata_" + grp,
+        srcs = [":localedata_" + grp + "_gen"],
+        copts = _LD_DLL_COPTS,
+        defines = _DEFINES,
+        linkshared = True,
+        deps = ["//main/sal:sal_headers"],
+        additional_linker_inputs = [":localedata_en_implib"],
+        linkopts = [
+            "$(execpath :localedata_en_implib)",
+            "/MANIFEST:NO",
+        ],
+        visibility = ["//visibility:public"],
+    )
+    for grp in ["es", "euro", "others"]
+]
 

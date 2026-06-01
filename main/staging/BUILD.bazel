@@ -88,6 +88,14 @@ collect_outputs(
         # ── i18n ──────────────────────────────────────────────────────────────
         "//main/i18npool/pool:i18npool",
         "//main/i18npool/pool:i18nsearch",
+        # Per-locale data libraries — loaded by LocaleDataImpl::getLocaleItem()
+        # via osl_loadModule(localedata_<group>).  Missing these makes every
+        # locale lookup throw, so Writer/Calc text + caret init fails (the Start
+        # Center, which lays out no editable text, still works).
+        "//main/i18npool:localedata_en",
+        "//main/i18npool:localedata_es",
+        "//main/i18npool:localedata_euro",
+        "//main/i18npool:localedata_others",
 
         # ── Linguistic ────────────────────────────────────────────────────────
         "//main/lingucomponent:spell",
