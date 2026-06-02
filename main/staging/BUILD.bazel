@@ -248,6 +248,14 @@ collect_outputs(
         "//main/UnoControls:ctl",
         "//main/eventattacher:evtatt",
 
+        # ── User interaction handler ──────────────────────────────────────────
+        # uui.dll: UUIInteractionHandler — instantiated as the medium's
+        # interaction handler during every document load (passwords, filter
+        # selection, name clashes, SSL/locking warnings).  Missing it makes
+        # SfxMedium's load throw "loading component library failed .../uui.dll",
+        # aborting any File>Open.
+        "//main/uui:uui",
+
         # ── Framework extras (not compile-time dep of soffice) ────────────────
         "//main/framework:fwl",
         "//main/framework:fwm",
