@@ -95,6 +95,18 @@ Source code is NOT being changed — only the build system.
   (provides -I path to cppumaker output via includes = ["udkapi_idl_inc"])
 - DLL export pattern: convert <name>.map GNU ld script → <name>.def Windows DEF,
   use win_def_file = "util/<name>.def", expose implib via filegroup output_group = "interface_library"
+- KNOWN DIVERGENCE — component DLL naming: Bazel emits UNO component libs as bare
+  <name>.dll where upstream/scp2 uses <name>.uno.dll (e.g. acceptor.dll vs
+  acceptor.uno.dll, binaryurp/fastsax/expwrap/fpicker/fps_office/fsstorage/...).
+  Harmless because the `.uno` infix has NO loader semantics: the SharedLibrary
+  loader opens whatever name is registered in services.rdb, and both names are
+  produced by the same Bazel pipeline so they stay consistent (proven by boot).
+  Could only bite where a lib is named by a hardcoded string OUTSIDE generated
+  services.rdb: remote-UNO/URP bootstrap (uno.exe -c acceptor), third-party .oxt
+  manifests, or a deferred module's config referencing the canonical .uno.dll name
+  → same "loading component library failed" class as fileacc/uui. To reach upstream
+  parity (cosmetic): apply .uno infix in the link/staging step AND regenerate
+  services.rdb together so both sides move in lockstep. Left as-is for the en-US demo.
 - IDL pipeline: tools link /MD (dynamic CRT); stage msvcr90/msvcp90 DLLs +
   external .manifest files alongside EXEs (no mt.exe embedding); use
   ctx.actions.symlink (pure Bazel, no shell) for staging
