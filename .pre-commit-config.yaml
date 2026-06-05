@@ -1,0 +1,85 @@
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+---
+default_stages: [pre-commit, pre-push]
+default_language_version:
+  # force all unspecified Python hooks to run python3
+  python: python3
+minimum_pre_commit_version: "3.2.0"
+repos:
+  - repo: meta
+    hooks:
+      - id: identity
+      - id: check-hooks-apply
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.30.0
+    hooks:
+      - id: gitleaks
+        name: run gitleaks
+        description: check for secrets with gitleaks
+  - repo: https://github.com/Lucas-C/pre-commit-hooks
+    rev: v1.5.5
+    hooks:
+      - id: insert-license
+        name: add license for all Markdown files
+        files: \.md$
+        args:
+          - --comment-style
+          - '<!--||-->'
+          - --license-filepath
+          - .github/workflows/license-templates/LICENSE.txt
+          - --fuzzy-match-generates-todo
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: check-case-conflict
+        description: check for files with names that would conflict on a case-insensitive filesystem like MacOS HFS+ or Windows FAT
+      - id: check-illegal-windows-names
+        description: check for files that cannot be created on Windows
+      - id: check-merge-conflict
+        description: check for files that contain merge conflict strings
+      - id: check-vcs-permalinks
+        description: ensures that links to vcs websites are permalinks
+      - id: end-of-file-fixer
+        description: makes sure files end in a newline and only a newline
+        files: (m|M)akefile$|\.(asm|asp|bas|bat|c|cl|cmd|common|component|cpp|cs|cxx|dtd|dxp|el|h|hrc|hxx|idl|in|ini|java|js|lst|m|m4|map|md|mk|mm|mod|old|pas|php|pl|pm|pmk|properties|props|py|rc|rdf|rng|s|sdi|sh|src|template|ulf|vbs|xba|xcs|xcu|xdl|xhp|xlb|xmi|xml|xsd|xslt?|ya?ml)$|^ext_libraries/.*$|^test/.*$
+      - id: fix-byte-order-marker
+        description: removes UTF-8 byte order marker
+      - id: mixed-line-ending
+        description: replaces or checks mixed line ending
+        files: \.(asm|asp|bas|c|cl|cmd|common|component|cpp|cs|cxx|dtd|dxp|el|h|hrc|hxx|idl|in|ini|java|js|lst|m|m4|map|md|mk|mm|mod|old|pas|php|pl|pm|pmk|properties|props|py|rc|rdf|rng|s|sdi|sh|src|template|ulf|vbs|xba|xcs|xcu|xdl|xhp|xlb|xmi|xsd|xslt?|ya?ml)$|^main/accessibility/.*$|^main/afms/.*$|^main/animations/.*$|^main/apache-commons/.*$|^test/testgui/.*$
+      - id: trailing-whitespace
+        description: trims trailing whitespace
+        files: (m|M)akefile$|\.(asm|asp|bas|bat|c|cl|cmd|common|component|cpp|cs|cxx|dtd|dxp|el|h|hrc|hxx|idl|in|ini|java|js|lst|m|m4|map|md|mk|mm|mod|old|pas|php|pl|pm|pmk|properties|props|py|rc|rdf|rng|s|sdi|sh|src|template|ulf|vbs|xba|xcs|xcu|xdl|xhp|xlb|xmi|xml|xsd|xslt?|ya?ml)$
+        args: [--markdown-linebreak-ext=md]
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.4.1
+    hooks:
+      - id: codespell
+        name: run codespell
+        description: check spelling with codespell
+        args: [--ignore-words=.github/linters/codespell.txt]
+        exclude: ^extras/
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.47.0
+    hooks:
+      - id: markdownlint
+        name: run markdownlint
+        description: check Markdown files with markdownlint
+        args: [--config=.github/linters/.markdown-lint.yml]
+        types: [markdown]
+        files: \.md$
