@@ -64,6 +64,8 @@ ifeq ($(CPUNAME),POWERPC)
 gb_CPUDEFS += -DPOWERPC -DPPC
 else ifeq ($(CPUNAME),INTEL)
 gb_CPUDEFS += -DX86
+else ifeq ($(CPUNAME),AARCH64)
+gb_CPUDEFS += -DARM64
 endif
 
 ifeq ($(strip $(SYSBASE)),)

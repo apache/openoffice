@@ -102,6 +102,12 @@ struct JavaSearchPathEntry {
 struct JavaSearchPathEntry g_arSearchPaths[] = {
 #ifdef MACOSX
     { 0, "" },
+    // Modern macOS JDK location (Oracle/Temurin/etc., both arm64 and x86_64
+    // install here). Each subdirectory is a JDK whose home is Contents/Home,
+    // so scan the immediate contents. A JDK of the wrong architecture (e.g. a
+    // Rosetta x86_64 JDK on Apple Silicon) is harmlessly skipped when its
+    // libjvm.dylib fails to load into the native-arch process.
+    { 1, "Library/Java/JavaVirtualMachines/" },
     { 0, "Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin" },
     { 0, "System/Library/Frameworks/JavaVM.framework/Versions/1.4.2/" },
 #else
@@ -1245,6 +1251,14 @@ void createJavaInfoDirScan(vector<rtl::Reference<VendorBase> >& vecInfos)
                                    OUSTR(" is a Java. \n"));
 
                         getJREInfoByPath(aStatus.getFileURL(),vecInfos);
+#ifdef MACOSX
+                        // On macOS a JDK bundle's home is at <bundle>/Contents/Home
+                        // (e.g. under /Library/Java/JavaVirtualMachines/<jdk>/),
+                        // not the bundle directory itself, so also probe there.
+                        getJREInfoByPath(
+                            aStatus.getFileURL() +
+                            OUSTR("/Contents/Home"), vecInfos);
+#endif
                     }
 
                     JFW_ENSURE(errNext == File::E_None || errNext == File::E_NOENT,

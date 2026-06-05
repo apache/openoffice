@@ -922,8 +922,8 @@ AC_ARG_WITH(arm-target,
 AC_ARG_WITH(macosx-target,
 [  --macosx-target            The minimal macOS/OSX deployment and build target
 
-                              Usage: --with-macosx-target=10.9
-],with_macosx_target=$withval,with_macosx_target=10.9)
+                              Usage: --with-macosx-target=11.0
+],with_macosx_target=$withval,with_macosx_target=11.0)
 AC_ARG_WITH(macosx-sdk,
 [  --macosx-sdk            The macOS SDK to build against
 
@@ -1159,9 +1159,29 @@ case "$build_os" in
 		fi
 		# Don't use OSVERSION until we know no conflicts result from it
 		_darwin_version="`uname -r | $AWK -F . '{ print $1 }'`"
-		# FIXME: Assumes 10.x, breaks w/ Big Sur
-		_osx_version="10.`expr $_darwin_version - 4`"
+		# Map the Darwin (XNU) major version to the macOS version.
+		# Darwin 6..19  => macOS 10.(darwin-4)   (10.2 .. 10.15)
+		# Darwin 20+    => macOS (darwin-9)       (11, 12, 13, ...)
+		if test "$_darwin_version" -ge 20; then
+		   _osx_version="`expr $_darwin_version - 9`"
+		else
+		   _osx_version="10.`expr $_darwin_version - 4`"
+		fi
 		AC_MSG_NOTICE([Detected Darwin version: $_darwin_version ($_osx_version)])
+		# Detect the build CPU architecture. Apple Silicon (arm64) reports
+		# "arm64" from uname -m and maps to the aarch64 toolchain/bridge.
+		_darwin_cpu="`uname -m`"
+		case "$_darwin_cpu" in
+		   arm64|aarch64)
+		      AC_MSG_NOTICE([Detected Apple Silicon (arm64) build host])
+		      ;;
+		   x86_64|i*86)
+		      AC_MSG_NOTICE([Detected Intel (x86_64) build host])
+		      ;;
+		   *)
+		      AC_MSG_ERROR([Unsupported macOS CPU architecture: $_darwin_cpu])
+		      ;;
+		esac
 		;;
 	os2*)
 		test_x=no
@@ -3893,10 +3913,20 @@ if test  "$_os" = "Darwin"; then
    sdk_target=$with_macosx_target
    AC_MSG_CHECKING([checking SDK compatibility with OSX $sdk_target])
 
+   sdk_major=`echo $sdk_target | cut -d"." -f1`
    sdk_minor=`echo $sdk_target | cut -d"." -f2`
+   test -z "$sdk_minor" && sdk_minor=0
 
-   if test "$sdk_minor" -lt "9"; then
-      AC_MSG_ERROR([SDK version < 10.9 is not longer supported])
+   dnl Minimum supported macOS is 11.0 (Big Sur). Pre-11 targets are only
+   dnl accepted down to the old 10.9 floor for legacy Intel builds.
+   if test "$_darwin_cpu" = "arm64" -o "$_darwin_cpu" = "aarch64"; then
+      if test "$sdk_major" -lt "11"; then
+         AC_MSG_ERROR([Apple Silicon (arm64) requires --with-macosx-target=11.0 or later])
+      fi
+   fi
+
+   if test "$sdk_major" -lt "10" -o \( "$sdk_major" -eq "10" -a "$sdk_minor" -lt "9" \); then
+      AC_MSG_ERROR([macOS deployment target < 10.9 is no longer supported])
    else
       MACOSX_DEPLOYMENT_TARGET=$sdk_target
       sdk_path=$with_macosx_sdk

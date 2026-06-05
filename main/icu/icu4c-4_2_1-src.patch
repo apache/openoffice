@@ -212,7 +212,7 @@ diff -ru misc/icu/source/tools/genuca/genuca.cpp misc/build/icu/source/tools/gen
 +	echo "${CC} ${CFLAGS} ${CPPFLAGS} ${LDFLAGS}"
  	case "${CC} ${CFLAGS} ${CPPFLAGS} ${LDFLAGS}" in  #(
 -	  *-arch*ppc*|*-arch*i386*|*-arch*x86_64*) ac_cv_c_bigendian=universal;;
-+	  *-arch*i386*|*-arch*x86_64*) ac_cv_c_bigendian=no;;
++	  *-arch*i386*|*-arch*x86_64*|*-arch*arm64*|*-arch*aarch64*) ac_cv_c_bigendian=no;;
 +	  *-arch*ppc*) ac_cv_c_bigendian=yes;;
  	esac
  else

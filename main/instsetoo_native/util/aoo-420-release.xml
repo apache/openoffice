@@ -222,6 +222,14 @@
         package-types="dmg"
         extension="dmg"
         />
+    <platform
+        id="unxmaccr.pro"
+        display-name="OS X (Apple Silicon)"
+        archive-platform="unxmaccr_aarch64"
+        word-size="64"
+        package-types="dmg"
+        extension="dmg"
+        />
 
     <!--
     <download

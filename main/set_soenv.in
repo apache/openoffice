@@ -807,6 +807,14 @@ elsif ( $platform =~ m/darwin/ )
           $CPUNAME        = "X86_64";
           $OUTPATH        = "unxmaccx";
       }
+      elsif ($platform =~ m/^(aarch64|arm64)/)
+      {
+          print "Setting values for MacOSX/Darwin on aarch64 (Apple Silicon)... ";
+          $outfile        = "MacOSXAARCH64Env.Set";
+          $CPU            = "R";
+          $CPUNAME        = "AARCH64";
+          $OUTPATH        = "unxmaccr";
+      }
       else
       {
 	  print "\nset_soenv: Unknown MacOSX/Darwin platform: $platform\n";
