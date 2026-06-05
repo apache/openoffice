@@ -607,6 +607,10 @@ sub get_download_architecture
 	{
 		$arch = "x86-64";
 	}
+	elsif ( $installer::globals::compiler =~ /^unxmaccr/ )
+	{
+		$arch = "aarch64";
+	}
 	elsif ( $installer::globals::issolarissparcbuild )
 	{
 		$arch = "Sparc";

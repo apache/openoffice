@@ -107,7 +107,11 @@ UNAME=$(shell uname)
 .ENDIF
 
 .IF "$(OS)" == "MACOSX"
+.IF "$(CPUNAME)" == "AARCH64"
+	CONFIGURE_ACTION=Configure darwin64-arm64-cc no-dso no-shared $(NO_ASM)
+.ELSE
 	CONFIGURE_ACTION=Configure darwin64-x86_64-cc no-dso no-shared $(NO_ASM)
+.ENDIF
 .ENDIF
 
 .IF "$(OS)" == "WNT"

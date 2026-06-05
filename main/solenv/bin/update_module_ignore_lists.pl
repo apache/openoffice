@@ -47,6 +47,7 @@ my @platforms = (
         "unxmacxp",
         "unxmacci",
         "unxmaccx",
+        "unxmaccr",
         "unxubit8",
         "unxaixp",
         "unxbsda",

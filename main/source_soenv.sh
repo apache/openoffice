@@ -108,6 +108,9 @@ else
         i[3456]86-*-darwin*|x86_64-*-darwin*)
             . ./MacOSXX64Env.Set.sh
         ;;
+        aarch64-*-darwin*|arm64-*-darwin*)
+            . ./MacOSXAARCH64Env.Set.sh
+        ;;
         powerpc-*-darwin*)
             . ./MacOSXPPCEnv.Set.sh
         ;;
