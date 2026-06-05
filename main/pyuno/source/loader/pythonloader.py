@@ -21,7 +21,7 @@
 import uno
 import unohelper
 import sys
-import types
+import imp
 import os
 from com.sun.star.uno import Exception,RuntimeException
 from com.sun.star.loader import XImplementationLoader
@@ -84,14 +84,14 @@ class Loader( XImplementationLoader, XServiceInfo, unohelper.Base ):
                 # did we load the module already ?
                 mod = g_loadedComponents.get( url )
                 if not mod:
-                    mod = types.ModuleType("uno_component")
+                    mod = imp.new_module("uno_component")
 
                     # check for pythonpath.zip beside .py files
                     checkForPythonPathBesideComponent( url[0:url.rfind('/')] )
 
                     # read the file
                     filename = unohelper.fileUrlToSystemPath( url )
-                    fileHandle = open( filename )
+                    fileHandle = file( filename )
                     src = fileHandle.read().replace("\r","")
                     if not src.endswith( "\n" ):
                         src = src + "\n"
