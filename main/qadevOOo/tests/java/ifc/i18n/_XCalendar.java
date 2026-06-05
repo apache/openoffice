@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -89,7 +89,7 @@ public class _XCalendar extends MultiMethodTest {
         count = new int[installed_locales.length];
         oObj.loadDefaultCalendar(installed_locales[0]);
         aOriginalDTime = oObj.getDateTime();
-        
+
         debug = tParam.getBool("DebugIsActive");
     }
 
@@ -101,7 +101,7 @@ public class _XCalendar extends MultiMethodTest {
         oObj.loadDefaultCalendar(installed_locales[0]);
         oObj.setDateTime(aOriginalDTime);
     }
-    
+
     /**
     * Loads default calendar for different locales. <p>
     * Has <b> OK </b> status if method loads calendar, that is
@@ -246,7 +246,7 @@ public class _XCalendar extends MultiMethodTest {
 
     public void _setDateTime() {
         boolean res = true;
-        
+
         for (int i=0; i<installed_locales.length; i++) {
             String lang = "Language: "+installed_locales[i].Language +
                           ", Country: "+ installed_locales[i].Country +
@@ -316,15 +316,15 @@ public class _XCalendar extends MultiMethodTest {
                                          CalendarFieldIndex.MONTH
             };
             for (int k=0; k<fields.length;k++) {
-                
+
                 oObj.setDateTime(0.0);
-                
+
                 // save the current values for debug purposes
                 short[] oldValues = new short[fields.length];
                 for (int n=0; n < oldValues.length; n++){
                     oldValues[n] = oObj.getValue(fields[n]);
                 }
-                
+
                 short set = oObj.getValue(fields[k]);
                 if (fields[k] == CalendarFieldIndex.MONTH) set = newValue;
                 oObj.setValue(fields[k],set);
@@ -340,7 +340,7 @@ public class _XCalendar extends MultiMethodTest {
                         for (int n=0; n < fields.length;n++){
                             log.println(names[n] + ":" + oObj.getValue(fields[n]));
                         }
-                        
+
                     error += "failed for "+names[k]+" expected "+
                                 set+" gained "+get+" ; \n";
                 }
@@ -535,7 +535,7 @@ public class _XCalendar extends MultiMethodTest {
     */
     public void _isValid() {
         boolean res = true;
-        
+
         oObj.loadDefaultCalendar(installed_locales[0]);
         oObj.setValue(CalendarFieldIndex.MONTH, (short) 37);
         res &= !oObj.isValid();

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -29,16 +29,16 @@ import javax.accessibility.AccessibleText;
 import com.sun.star.uno.*;
 import com.sun.star.accessibility.*;
 
-/** 
+/**
  */
 public class Paragraph extends Container implements javax.accessibility.Accessible {
-    
+
     protected Paragraph(XAccessible xAccessible, XAccessibleContext xAccessibleContext) {
         super(javax.accessibility.AccessibleRole.TEXT, xAccessible, xAccessibleContext);
     }
-    
+
     protected class AccessibleParagraphListener extends AccessibleContainerListener {
-        
+
         protected AccessibleParagraphListener() {
             super();
         }
@@ -58,7 +58,7 @@ public class Paragraph extends Container implements javax.accessibility.Accessib
                     break;
             }
         }
-               
+
 
         protected void handleVisibleDataChanged() {
             if (Paragraph.this.isFocusOwner()) {
@@ -75,13 +75,13 @@ public class Paragraph extends Container implements javax.accessibility.Accessib
                 }
             }
         }
-        
+
         /** Called by OpenOffice process to notify property changes */
         public void notifyEvent(AccessibleEventObject event) {
             switch (event.EventId) {
                 case AccessibleEventId.CARET_CHANGED:
                     firePropertyChange(accessibleContext.ACCESSIBLE_CARET_PROPERTY,
-                        Component.toNumber(event.OldValue), 
+                        Component.toNumber(event.OldValue),
                         Component.toNumber(event.NewValue));
                     break;
                 case AccessibleEventId.VISIBLE_DATA_CHANGED:
@@ -95,28 +95,28 @@ public class Paragraph extends Container implements javax.accessibility.Accessib
             }
         }
     }
-    
+
     protected XAccessibleEventListener createEventListener() {
         return new AccessibleParagraphListener();
     }
-    
+
     /** Creates the AccessibleContext associated with this object */
     public javax.accessibility.AccessibleContext createAccessibleContext() {
         return new AccessibleParagraph();
     }
 
     protected class AccessibleParagraph extends AccessibleContainer {
-        
+
         protected AccessibleParagraph() {
             // Don't do the queryInterface on XAccessibleText already ..
             super(false);
-            /* Since getAccessibleText() is heavily used by the java access 
+            /* Since getAccessibleText() is heavily used by the java access
              * bridge for gnome and the gnome at-tools, we do a query interface
              * here and remember the result.
              */
             accessibleText = AccessibleHypertextImpl.get(unoAccessibleContext);
         }
-    
+
         /*
         * AccessibleContext
         */
@@ -128,12 +128,12 @@ public class Paragraph extends Container implements javax.accessibility.Accessib
 
         /** Gets the AccessibleEditableText associated with this object presenting text on the display */
         public javax.accessibility.AccessibleEditableText getAccessibleEditableText() {
-            
+
             if (disposed)
                 return null;
-            
+
             try {
-                XAccessibleEditableText unoAccessibleText = (XAccessibleEditableText) 
+                XAccessibleEditableText unoAccessibleText = (XAccessibleEditableText)
                     UnoRuntime.queryInterface(XAccessibleEditableText.class,
                     unoAccessibleComponent);
                 if (unoAccessibleText != null) {
@@ -145,28 +145,28 @@ public class Paragraph extends Container implements javax.accessibility.Accessib
                 return null;
             }
         }
-        
+
         /** Gets the AccessibleAction associated with this object that has a graphical representation */
         public javax.accessibility.AccessibleAction getAccessibleAction() {
             try {
                 XAccessibleAction unoAccessibleAction = (XAccessibleAction)
                     UnoRuntime.queryInterface(XAccessibleAction.class, unoAccessibleComponent);
-                return (unoAccessibleAction != null) ? 
+                return (unoAccessibleAction != null) ?
                     new AccessibleActionImpl(unoAccessibleAction) : null;
             } catch (com.sun.star.uno.RuntimeException e) {
                 return null;
             }
         }
-        
+
         /** Returns the relation set of this object */
         public javax.accessibility.AccessibleRelationSet getAccessibleRelationSet() {
             try {
-                XAccessibleRelationSet unoAccessibleRelationSet = 
+                XAccessibleRelationSet unoAccessibleRelationSet =
                     unoAccessible.getAccessibleContext().getAccessibleRelationSet();
                 if (unoAccessibleRelationSet == null) {
                     return super.getAccessibleRelationSet();
                 }
-                
+
                 javax.accessibility.AccessibleRelationSet relationSet = new javax.accessibility.AccessibleRelationSet();
                 int count = unoAccessibleRelationSet.getRelationCount();
                 for (int i = 0; i < count; i++) {
@@ -215,4 +215,3 @@ public class Paragraph extends Container implements javax.accessibility.Accessib
         }
     }
 }
-

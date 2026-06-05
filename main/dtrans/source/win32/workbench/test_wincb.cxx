@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -95,7 +95,7 @@ Reference< XTransferable > rXTransfRead;
 HANDLE	g_hEvtThreadWakeup;
 
 //------------------------------------------------------------
-//	
+//
 //------------------------------------------------------------
 
 class CClipboardListener : public WeakImplHelper1 < XClipboardListener >
@@ -106,7 +106,7 @@ public:
 	//-------------------------------------------------
 	// XClipboardListener
 	//-------------------------------------------------
-	
+
 	virtual void SAL_CALL disposing( const EventObject& Source ) throw(RuntimeException);
 	virtual void SAL_CALL changedContents( const ClipboardEvent& event ) throw( RuntimeException );
 };
@@ -126,32 +126,32 @@ void SAL_CALL CClipboardListener::changedContents( const ClipboardEvent& event )
 }
 
 //------------------------------------------------------------
-//	
+//
 //------------------------------------------------------------
 
 class CTransferable : public WeakImplHelper2< XClipboardOwner, XTransferable >
 {
-public:	
+public:
 	CTransferable( );
-		
+
 	//-------------------------------------------------
 	// XTransferable
 	//-------------------------------------------------
 
-	virtual Any SAL_CALL getTransferData( const DataFlavor& aFlavor ) 
+	virtual Any SAL_CALL getTransferData( const DataFlavor& aFlavor )
 		throw(UnsupportedFlavorException, IOException, RuntimeException);
 
     virtual Sequence< DataFlavor > SAL_CALL getTransferDataFlavors(  ) throw(RuntimeException);
 
 	virtual sal_Bool SAL_CALL isDataFlavorSupported( const DataFlavor& aFlavor ) throw(RuntimeException);
-	
+
 	//-------------------------------------------------
 	// XClipboardOwner
 	//-------------------------------------------------
 
-	virtual void SAL_CALL lostOwnership( const Reference< XClipboard >& xClipboard, const Reference< XTransferable >& xTrans ) 
+	virtual void SAL_CALL lostOwnership( const Reference< XClipboard >& xClipboard, const Reference< XTransferable >& xTrans )
 		throw(RuntimeException);
-	
+
 private:
 	Sequence< DataFlavor > m_FlavorList;
 	OUString               m_Data;
@@ -166,10 +166,10 @@ CTransferable::CTransferable( ) :
 	m_Data( OUString::createFromAscii( "Ich habe mir ein neues Fahrrad gekauft!" ) )
 {
 	DataFlavor df;
-	
+
 	//df.MimeType = L"text/plain;charset=utf-16";
 	//df.DataType = getCppuType( ( OUString* )0 );
-	
+
 	df.MimeType = L"text/plain;charset=Windows1252";
 	df.DataType = getCppuType( (Sequence< sal_Int8 >*)0 );
 
@@ -180,9 +180,9 @@ CTransferable::CTransferable( ) :
 //	getTransferData
 //----------------------------------------------------------------
 
-Any SAL_CALL CTransferable::getTransferData( const DataFlavor& aFlavor ) 
+Any SAL_CALL CTransferable::getTransferData( const DataFlavor& aFlavor )
 	throw(UnsupportedFlavorException, IOException, RuntimeException)
-{	
+{
 	Any anyData;
 
 	/*
@@ -191,9 +191,9 @@ Any SAL_CALL CTransferable::getTransferData( const DataFlavor& aFlavor )
 	*/
 	if ( aFlavor.MimeType.equalsIgnoreCase( m_FlavorList[0].MimeType ) )
 	{
-		OString text( 
-			m_Data.getStr( ), 
-			m_Data.getLength( ), 
+		OString text(
+			m_Data.getStr( ),
+			m_Data.getLength( ),
 			RTL_TEXTENCODING_ASCII_US );
 
 		Sequence< sal_Int8 > textStream( text.getLength( ) + 1 );
@@ -201,7 +201,7 @@ Any SAL_CALL CTransferable::getTransferData( const DataFlavor& aFlavor )
 		rtl_copyMemory( textStream.getArray( ), text.getStr( ), textStream.getLength( ) );
 
 		anyData = makeAny( textStream );
-	}	
+	}
 	else
 		throw UnsupportedFlavorException( );
 
@@ -212,7 +212,7 @@ Any SAL_CALL CTransferable::getTransferData( const DataFlavor& aFlavor )
 //	getTransferDataFlavors
 //----------------------------------------------------------------
 
-Sequence< DataFlavor > SAL_CALL CTransferable::getTransferDataFlavors(  ) 
+Sequence< DataFlavor > SAL_CALL CTransferable::getTransferDataFlavors(  )
 	throw(RuntimeException)
 {
 	return m_FlavorList;
@@ -222,14 +222,14 @@ Sequence< DataFlavor > SAL_CALL CTransferable::getTransferDataFlavors(  )
 //	isDataFlavorSupported
 //----------------------------------------------------------------
 
-sal_Bool SAL_CALL CTransferable::isDataFlavorSupported( const DataFlavor& aFlavor ) 
+sal_Bool SAL_CALL CTransferable::isDataFlavorSupported( const DataFlavor& aFlavor )
 	throw(RuntimeException)
 {
 	sal_Int32 nLength = m_FlavorList.getLength( );
-	
+
 	for ( sal_Int32 i = 0; i < nLength; ++i )
-		if ( m_FlavorList[i].MimeType == aFlavor.MimeType )	
-			return sal_True;			
+		if ( m_FlavorList[i].MimeType == aFlavor.MimeType )
+			return sal_True;
 
 	return sal_False;
 }
@@ -238,8 +238,8 @@ sal_Bool SAL_CALL CTransferable::isDataFlavorSupported( const DataFlavor& aFlavo
 //	lostOwnership
 //----------------------------------------------------------------
 
-void SAL_CALL CTransferable::lostOwnership( 
-	const Reference< XClipboard >& xClipboard, const Reference< XTransferable >& xTrans ) 
+void SAL_CALL CTransferable::lostOwnership(
+	const Reference< XClipboard >& xClipboard, const Reference< XTransferable >& xTrans )
 	throw(RuntimeException)
 {
 	//MessageBox( NULL, TEXT("No longer clipboard owner"), TEXT("Info"), MB_OK | MB_ICONINFORMATION );
@@ -251,12 +251,12 @@ void SAL_CALL CTransferable::lostOwnership(
 
 int SAL_CALL main( int nArgc, char* Argv[] )
 {
-	// create a multi-threaded apartment; we can test only 
+	// create a multi-threaded apartment; we can test only
 	// with a multithreaded apartment because for a single
 	// threaded apartment we need a message loop to deliver
 	// messages to our XTDataObject
 	//HRESULT hr = CoInitializeEx( NULL, COINIT_MULTITHREADED );
-	HRESULT hr = CoInitialize( NULL );	
+	HRESULT hr = CoInitialize( NULL );
 
 	char buff[6];
 
@@ -285,7 +285,7 @@ int SAL_CALL main( int nArgc, char* Argv[] )
 
 	Reference< XTransferable > rXTransf( static_cast< XTransferable* >( new CTransferable ) );
 
-	Reference< XClipboard > 
+	Reference< XClipboard >
 		xClipboard( g_xFactory->createInstance( OUString( WINCLIPBOARD_SERVICE_NAME ) ), UNO_QUERY );
 	if ( !xClipboard.is( ) )
 	{
@@ -295,7 +295,7 @@ int SAL_CALL main( int nArgc, char* Argv[] )
 
 	Reference< XClipboardNotifier > xClipNotifier( xClipboard, UNO_QUERY );
 	Reference< XClipboardListener > rXClipListener( static_cast< XClipboardListener* >( new CClipboardListener() ) );
-	xClipNotifier->addClipboardListener( rXClipListener );	
+	xClipNotifier->addClipboardListener( rXClipListener );
 
 	MessageBox( NULL, TEXT("Go"), TEXT("INFO"), MB_OK|MB_ICONINFORMATION);
 
@@ -311,7 +311,7 @@ int SAL_CALL main( int nArgc, char* Argv[] )
 	*/
 
 	MessageBox( NULL, TEXT("Stop"), TEXT("INFO"), MB_OK|MB_ICONINFORMATION);
-	
+
 	// flush the clipboard content
 	Reference< XFlushableClipboard > rXFlushableClip( xClipboard, UNO_QUERY );
 	rXFlushableClip->flushClipboard( );
@@ -320,7 +320,7 @@ int SAL_CALL main( int nArgc, char* Argv[] )
 	xClipNotifier->removeClipboardListener( rXClipListener );
 	rXClipListener = Reference< XClipboardListener >( );
 	xClipNotifier  = Reference< XClipboardNotifier >( );
-	
+
 	//--------------------------------------------------
 	// shutdown the service manager
 	//--------------------------------------------------
@@ -330,7 +330,7 @@ int SAL_CALL main( int nArgc, char* Argv[] )
 
 	if ( !xComponent.is() )
 		OSL_ENSURE(sal_False, "Error shuting down");
-	
+
 	// Dispose and clear factory
 	xComponent->dispose();
 	xComponent = Reference< XComponent >( );
@@ -340,5 +340,5 @@ int SAL_CALL main( int nArgc, char* Argv[] )
 
 	CoUninitialize( );
 
-	return 0;	
+	return 0;
 }

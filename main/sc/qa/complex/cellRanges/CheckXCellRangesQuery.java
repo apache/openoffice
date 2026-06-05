@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,7 +53,7 @@ import org.openoffice.test.OfficeConnection;
 import static org.junit.Assert.*;
 
 /**
- * Check the XCellRangesQuery interface on the SheetCell service. test was 
+ * Check the XCellRangesQuery interface on the SheetCell service. test was
  * created for bug i20044.
  */
 public class CheckXCellRangesQuery /* extends ComplexTestCase */ {
@@ -70,7 +70,7 @@ public class CheckXCellRangesQuery /* extends ComplexTestCase */ {
 //     }
 
     /**
-    * Creates Spreadsheet document and the test object, 
+    * Creates Spreadsheet document and the test object,
     * before the actual test starts.
     */
     @Before public void before() {
@@ -92,7 +92,7 @@ public class CheckXCellRangesQuery /* extends ComplexTestCase */ {
         try {
             System.out.println("Getting spreadsheet") ;
             XSpreadsheets oSheets = m_xSheetDoc.getSheets() ;
-            XIndexAccess oIndexSheets = 
+            XIndexAccess oIndexSheets =
             UnoRuntime.queryInterface(XIndexAccess.class, oSheets);
             m_xSpreadSheet = (XSpreadsheet) AnyConverter.toObject(
                     new Type(XSpreadsheet.class),oIndexSheets.getByIndex(0));
@@ -160,7 +160,7 @@ public class CheckXCellRangesQuery /* extends ComplexTestCase */ {
         {
             closeSpreadsheetDocument();
         }
-    
+
     /**
      * Perform some tests on an empty cell:
      * <ol>

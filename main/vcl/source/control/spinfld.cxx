@@ -1041,7 +1041,7 @@ void SpinField::Draw( OutputDevice* pDev, const Point& rPos, const Size& rSize, 
 		pDev->SetMapMode();
 
 		if ( eOutDevType == OUTDEV_PRINTER )
-		{ 
+		{
 			StyleSettings aStyleSettings = aOldSettings.GetStyleSettings();
 			aStyleSettings.SetFaceColor( COL_LIGHTGRAY );
 			aStyleSettings.SetButtonTextColor( COL_BLACK );

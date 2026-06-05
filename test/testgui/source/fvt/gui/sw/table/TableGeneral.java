@@ -1,6 +1,6 @@
 <<<<<<< HEAD
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,16 +8,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package fvt.gui.sw.table;
@@ -38,7 +38,7 @@ import org.openoffice.test.common.SystemUtil;
 import testlib.gui.AppTool;
 
 public class TableGeneral {
-	
+
 	@Rule
 	public Logger log = Logger.getLogger(this);
 
@@ -59,7 +59,7 @@ public class TableGeneral {
 
 	/**
 	 * Test setting table size in text document
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -87,7 +87,7 @@ public class TableGeneral {
 
 	/**
 	 * Test setting table cell background in text document
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -122,7 +122,7 @@ public class TableGeneral {
 
 	/**
 	 * Test setting table border in text document
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -142,7 +142,7 @@ public class TableGeneral {
 	/**
 	 * Test setting table border line style,line color,spacing to content in
 	 * text document
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -230,7 +230,7 @@ public class TableGeneral {
 
 	/**
 	 * create table with auto format
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -251,7 +251,7 @@ public class TableGeneral {
 
 	/**
 	 * set row height and select row,insert/delete row
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -281,7 +281,7 @@ public class TableGeneral {
 
 	/**
 	 * test select row
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -306,7 +306,7 @@ public class TableGeneral {
 
 	/**
 	 * insert row and verify how many row inserted
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -337,7 +337,7 @@ public class TableGeneral {
 
 	/**
 	 * delete row and verify row
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -359,7 +359,7 @@ public class TableGeneral {
 
 	/**
 	 * set column width and verify
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -385,7 +385,7 @@ public class TableGeneral {
 
 	/**
 	 * select column and verify
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -409,7 +409,7 @@ public class TableGeneral {
 
 	/**
 	 * insert column and verify
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -440,7 +440,7 @@ public class TableGeneral {
 
 	/**
 	 * delete column and verify whether delete or not
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	public void testTableColumnDelete() throws Exception {
@@ -463,7 +463,7 @@ public class TableGeneral {
 
 	/**
 	 * split cell
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -501,7 +501,7 @@ public class TableGeneral {
 
 	/**
 	 * Test convert table to text in text document
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test

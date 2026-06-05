@@ -67,7 +67,7 @@
 		<get src="${junit.jar.repos}" dest="lib/junit.jar" skipexisting="true" />
 		<get src="${hamcrest.jar.repos}" dest="lib/hamcrest.jar" skipexisting="true" />
 	</target>
-	
+
 	<target name="testcommon.init">
 		<mkdir dir="testcommon/bin" />
 		<copy includeemptydirs="false" todir="testcommon/bin">

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,12 +51,12 @@ import org.openoffice.test.OfficeConnection;
 import static org.junit.Assert.*;
 
 /**
- * Documents are opened and exported with StarOffice. The memory usage of 
+ * Documents are opened and exported with StarOffice. The memory usage of
  * StarOffice is monitored and if the usage exceeds the allowed kilobytes,
- * the test is failed. Used for monitoring the StarOffice process is the 
+ * the test is failed. Used for monitoring the StarOffice process is the
  * command line tool 'pmap', available on Solaris or Linux. This test will not
- * run on Windows.<br>Test procedure: every given document type is searched in 
- * the source directory 
+ * run on Windows.<br>Test procedure: every given document type is searched in
+ * the source directory
  * Needed parameters:
  * <ul>
  *   <li>"TestDocumentPath" - the path where test documents are located.</li>
@@ -175,7 +175,7 @@ public class CheckMemoryUsage /* extends ComplexTestCase */
             v.add(sCalcDoc);
             v.add(sImpressDoc);
         }
-        // store a file extension 
+        // store a file extension
         sDocTypeExportFilter = new String[v.size()][2];
         for (int i = 0; i < v.size(); i++)
         {

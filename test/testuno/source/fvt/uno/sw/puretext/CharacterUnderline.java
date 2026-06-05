@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package fvt.uno.sw.puretext;
@@ -195,7 +195,7 @@ public class CharacterUnderline {
 		xCursorProps.setPropertyValue("CharUnderline", new Short(com.sun.star.awt.FontUnderline.BOLD));
 		xCursorProps.setPropertyValue("CharUnderlineHasColor", true);
 		xCursorProps.setPropertyValue("CharUnderlineColor", 0x0000FF00);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -205,7 +205,7 @@ public class CharacterUnderline {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -214,7 +214,7 @@ public class CharacterUnderline {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
 		//reopen the document and assert row height setting
@@ -265,7 +265,7 @@ public class CharacterUnderline {
 		xTextCursor_assert_odt.gotoRange(xTextCursor_assert_odt, false);
 		xTextCursor_assert_odt.goRight((short) 100, true);
 		assertEquals("assert individual word setting",false,xCursorProps_assert_odt.getPropertyValue("CharWordMode"));
-		assertEquals("assert underline is DONTKNOW",com.sun.star.awt.FontUnderline.NONE,xCursorProps_assert_odt.getPropertyValue("CharUnderline"));	
+		assertEquals("assert underline is DONTKNOW",com.sun.star.awt.FontUnderline.NONE,xCursorProps_assert_odt.getPropertyValue("CharUnderline"));
 		xTextCursor_assert_odt.gotoRange(xTextCursor_assert_odt, false);
 		xTextCursor_assert_odt.goRight((short) 100, true);
 		assertEquals("assert individual word setting",false,xCursorProps_assert_odt.getPropertyValue("CharWordMode"));
@@ -295,7 +295,7 @@ public class CharacterUnderline {
 		assertEquals("assert individual word setting",false,xCursorProps_assert_odt.getPropertyValue("CharWordMode"));
 		assertEquals("assert underline is BOLDWAVE",com.sun.star.awt.FontUnderline.BOLDWAVE,xCursorProps_assert_odt.getPropertyValue("CharUnderline"));
 		assertEquals("assert has underline color",true,xCursorProps_assert_odt.getPropertyValue("CharUnderlineHasColor"));
-		assertEquals("assert underline color",0x0000FF00,xCursorProps_assert_odt.getPropertyValue("CharUnderlineColor"));		
+		assertEquals("assert underline color",0x0000FF00,xCursorProps_assert_odt.getPropertyValue("CharUnderlineColor"));
 		xTextCursor_assert_odt.gotoRange(xTextCursor_assert_odt, false);
 		xTextCursor_assert_odt.goRight((short) 100, true);
 		assertEquals("assert individual word setting",false,xCursorProps_assert_odt.getPropertyValue("CharWordMode"));
@@ -307,19 +307,19 @@ public class CharacterUnderline {
 		assertEquals("assert individual word setting",false,xCursorProps_assert_odt.getPropertyValue("CharWordMode"));
 		assertEquals("assert underline is BOLDDOTTED",com.sun.star.awt.FontUnderline.BOLDDOTTED,xCursorProps_assert_odt.getPropertyValue("CharUnderline"));
 		assertEquals("assert has underline color",true,xCursorProps_assert_odt.getPropertyValue("CharUnderlineHasColor"));
-		assertEquals("assert underline color",0x0000FF00,xCursorProps_assert_odt.getPropertyValue("CharUnderlineColor"));	
+		assertEquals("assert underline color",0x0000FF00,xCursorProps_assert_odt.getPropertyValue("CharUnderlineColor"));
 		xTextCursor_assert_odt.gotoRange(xTextCursor_assert_odt, false);
 		xTextCursor_assert_odt.goRight((short) 100, true);
 		assertEquals("assert individual word setting",false,xCursorProps_assert_odt.getPropertyValue("CharWordMode"));
 		assertEquals("assert underline is BOLDDASHDOTDOT",com.sun.star.awt.FontUnderline.BOLDDASHDOTDOT,xCursorProps_assert_odt.getPropertyValue("CharUnderline"));
 		assertEquals("assert has underline color",true,xCursorProps_assert_odt.getPropertyValue("CharUnderlineHasColor"));
-		assertEquals("assert underline color",0x0000FF00,xCursorProps_assert_odt.getPropertyValue("CharUnderlineColor"));		
+		assertEquals("assert underline color",0x0000FF00,xCursorProps_assert_odt.getPropertyValue("CharUnderlineColor"));
 		xTextCursor_assert_odt.gotoRange(xTextCursor_assert_odt, false);
 		xTextCursor_assert_odt.goRight((short) 100, true);
 		assertEquals("assert individual word setting",false,xCursorProps_assert_odt.getPropertyValue("CharWordMode"));
 		assertEquals("assert underline is BOLDDASHDOT",com.sun.star.awt.FontUnderline.BOLDDASHDOT,xCursorProps_assert_odt.getPropertyValue("CharUnderline"));
 		assertEquals("assert has underline color",true,xCursorProps_assert_odt.getPropertyValue("CharUnderlineHasColor"));
-		assertEquals("assert underline color",0x0000FF00,xCursorProps_assert_odt.getPropertyValue("CharUnderlineColor"));		
+		assertEquals("assert underline color",0x0000FF00,xCursorProps_assert_odt.getPropertyValue("CharUnderlineColor"));
 		xTextCursor_assert_odt.gotoRange(xTextCursor_assert_odt, false);
 		xTextCursor_assert_odt.goRight((short) 100, true);
 		assertEquals("assert individual word setting",false,xCursorProps_assert_odt.getPropertyValue("CharWordMode"));
@@ -332,7 +332,7 @@ public class CharacterUnderline {
 		assertEquals("assert underline is bold",com.sun.star.awt.FontUnderline.BOLD,xCursorProps_assert_odt.getPropertyValue("CharUnderline"));
 		assertEquals("assert has underline color",true,xCursorProps_assert_odt.getPropertyValue("CharUnderlineHasColor"));
 		assertEquals("assert underline color",0x0000FF00,xCursorProps_assert_odt.getPropertyValue("CharUnderlineColor"));
-		
+
 		//reopen the document and assert row height setting
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XTextCursor xTextCursor_assert_doc = assertDocument_doc.getText().createTextCursor();
@@ -381,7 +381,7 @@ public class CharacterUnderline {
 		xTextCursor_assert_doc.gotoRange(xTextCursor_assert_doc, false);
 		xTextCursor_assert_doc.goRight((short) 100, true);
 		assertEquals("assert individual word setting",false,xCursorProps_assert_doc.getPropertyValue("CharWordMode"));
-		assertEquals("assert underline is DONTKNOW",com.sun.star.awt.FontUnderline.NONE,xCursorProps_assert_doc.getPropertyValue("CharUnderline"));	
+		assertEquals("assert underline is DONTKNOW",com.sun.star.awt.FontUnderline.NONE,xCursorProps_assert_doc.getPropertyValue("CharUnderline"));
 		xTextCursor_assert_doc.gotoRange(xTextCursor_assert_doc, false);
 		xTextCursor_assert_doc.goRight((short) 100, true);
 		assertEquals("assert individual word setting",false,xCursorProps_assert_doc.getPropertyValue("CharWordMode"));
@@ -411,7 +411,7 @@ public class CharacterUnderline {
 		assertEquals("assert individual word setting",false,xCursorProps_assert_doc.getPropertyValue("CharWordMode"));
 		assertEquals("assert underline is BOLDWAVE",com.sun.star.awt.FontUnderline.BOLDWAVE,xCursorProps_assert_doc.getPropertyValue("CharUnderline"));
 		assertEquals("assert has underline color",true,xCursorProps_assert_doc.getPropertyValue("CharUnderlineHasColor"));
-		assertEquals("assert underline color",0x0000FF00,xCursorProps_assert_doc.getPropertyValue("CharUnderlineColor"));		
+		assertEquals("assert underline color",0x0000FF00,xCursorProps_assert_doc.getPropertyValue("CharUnderlineColor"));
 		xTextCursor_assert_doc.gotoRange(xTextCursor_assert_doc, false);
 		xTextCursor_assert_doc.goRight((short) 100, true);
 		assertEquals("assert individual word setting",false,xCursorProps_assert_doc.getPropertyValue("CharWordMode"));
@@ -423,19 +423,19 @@ public class CharacterUnderline {
 		assertEquals("assert individual word setting",false,xCursorProps_assert_doc.getPropertyValue("CharWordMode"));
 		assertEquals("assert underline is BOLDDOTTED",com.sun.star.awt.FontUnderline.BOLDDOTTED,xCursorProps_assert_doc.getPropertyValue("CharUnderline"));
 		assertEquals("assert has underline color",true,xCursorProps_assert_doc.getPropertyValue("CharUnderlineHasColor"));
-		assertEquals("assert underline color",0x0000FF00,xCursorProps_assert_doc.getPropertyValue("CharUnderlineColor"));	
+		assertEquals("assert underline color",0x0000FF00,xCursorProps_assert_doc.getPropertyValue("CharUnderlineColor"));
 		xTextCursor_assert_doc.gotoRange(xTextCursor_assert_doc, false);
 		xTextCursor_assert_doc.goRight((short) 100, true);
 		assertEquals("assert individual word setting",false,xCursorProps_assert_doc.getPropertyValue("CharWordMode"));
 		assertEquals("assert underline is BOLDDASHDOTDOT",com.sun.star.awt.FontUnderline.BOLDDASHDOTDOT,xCursorProps_assert_doc.getPropertyValue("CharUnderline"));
 		assertEquals("assert has underline color",true,xCursorProps_assert_doc.getPropertyValue("CharUnderlineHasColor"));
-		assertEquals("assert underline color",0x0000FF00,xCursorProps_assert_doc.getPropertyValue("CharUnderlineColor"));		
+		assertEquals("assert underline color",0x0000FF00,xCursorProps_assert_doc.getPropertyValue("CharUnderlineColor"));
 		xTextCursor_assert_doc.gotoRange(xTextCursor_assert_doc, false);
 		xTextCursor_assert_doc.goRight((short) 100, true);
 		assertEquals("assert individual word setting",false,xCursorProps_assert_doc.getPropertyValue("CharWordMode"));
 		assertEquals("assert underline is BOLDDASHDOT",com.sun.star.awt.FontUnderline.BOLDDASHDOT,xCursorProps_assert_doc.getPropertyValue("CharUnderline"));
 		assertEquals("assert has underline color",true,xCursorProps_assert_doc.getPropertyValue("CharUnderlineHasColor"));
-		assertEquals("assert underline color",0x0000FF00,xCursorProps_assert_doc.getPropertyValue("CharUnderlineColor"));		
+		assertEquals("assert underline color",0x0000FF00,xCursorProps_assert_doc.getPropertyValue("CharUnderlineColor"));
 		xTextCursor_assert_doc.gotoRange(xTextCursor_assert_doc, false);
 		xTextCursor_assert_doc.goRight((short) 100, true);
 		assertEquals("assert individual word setting",false,xCursorProps_assert_doc.getPropertyValue("CharWordMode"));

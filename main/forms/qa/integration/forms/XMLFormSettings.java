@@ -63,7 +63,7 @@ public class XMLFormSettings extends complexlib.ComplexTestCase
             "checkExternalData"
         };
     }
-    
+
     /* ------------------------------------------------------------------ */
     public String getTestObjectName()
     {

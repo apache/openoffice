@@ -81,7 +81,7 @@ public class CalcRTL /* extends ComplexTestCase */
      */
 //     public String[] getTestMethodNames() {
 //         return new String[] {
-//             "checkSpreadsheetProperties", "checkShapeProperties", 
+//             "checkSpreadsheetProperties", "checkShapeProperties",
 //             "checkInfluenceOfSpreadsheetChange"
 //         };
 //     }

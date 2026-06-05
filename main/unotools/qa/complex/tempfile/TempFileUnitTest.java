@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,7 +41,7 @@ import static org.junit.Assert.*;
 public class TempFileUnitTest /* extends ComplexTestCase */ {
     private XMultiServiceFactory m_xMSF = null;
     private XSimpleFileAccess m_xSFA = null;
-    
+
 //    public String[] getTestMethodNames() {
 //        return new String[] {
 //            "ExecuteTest01",
@@ -51,7 +51,7 @@ public class TempFileUnitTest /* extends ComplexTestCase */ {
 //    public String getTestObjectName() {
 //        return "TempFileUnitTest";
 //    }
-    
+
     @Before public void before() {
         m_xMSF = getMSF();
         if ( m_xMSF == null ) {
@@ -70,17 +70,17 @@ public class TempFileUnitTest /* extends ComplexTestCase */ {
             fail ( "Cannot get simple file access!" );
         }
     }
-    
+
     @After public void after() {
         m_xMSF = null;
         m_xSFA = null;
     }
-    
+
     @Test public void ExecuteTest01() {
         TempFileTest aTest = new Test01( m_xMSF, m_xSFA );
         assertTrue( "Test01 failed!", aTest.test() );
     }
-    
+
     @Test public void ExecuteTest02() {
         TempFileTest aTest = new Test02( m_xMSF, m_xSFA );
         assertTrue( "Test02 failed!", aTest.test() );

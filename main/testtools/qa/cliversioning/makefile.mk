@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -54,19 +54,19 @@ ALLTAR : \
 echo :
     @echo .
     @echo ###########################   N O T E  ######################################
-    @echo . 
+    @echo .
     @echo To run the test you have to provide the path to the  office location. It must
     @echo contain the ure (d:\myOffice\OpenOffice.org\URE).
     @echo Also an office must be installed with full system integration.
     @echo Example:
     @echo dmake run office="d:\myOffice"
     @echo .
-    @echo To build a test library with a particular name run. The names must start with "version". 
+    @echo To build a test library with a particular name run. The names must start with "version".
     @echo For example:
-    @echo "dmake name=version_10_10_10.dll"	
+    @echo "dmake name=version_10_10_10.dll"
     @echo ###########################   N O T E  ######################################
     @echo .
-    @echo .	
+    @echo .
 
 # --- Parameters for the test --------------------------------------
 
@@ -86,4 +86,3 @@ RUN: $(MISC)$/copyassemblies.done
     java -cp $(CLASSPATH) -DSystemRoot=$(SystemRoot) -Dcli_test_program=$(BIN)$/runtests.exe -Dpath="$(office)"\OpenOffice.org\URE\bin $(CT_APP) $(CT_NOOFFICE) $(CT_TESTBASE) $(CT_TEST)
 
 run: RUN
-

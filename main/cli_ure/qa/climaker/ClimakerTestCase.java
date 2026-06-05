@@ -46,7 +46,7 @@ public class ClimakerTestCase extends ComplexTestCase
                 failed("Check the make file. Java must be called with -Dcli_ure_test=pathtoexe");
             Process proc = null;
             try{
-                
+
              proc = Runtime.getRuntime().exec(testProgram);
              Reader outReader = new Reader(proc.getInputStream());
              Reader errReader = new Reader(proc.getErrorStream());
@@ -64,7 +64,7 @@ public class ClimakerTestCase extends ComplexTestCase
         {
             failed("Unexpected exception.");
         }
-        
+
     }
 }
 

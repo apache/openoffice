@@ -25,4 +25,3 @@ public interface EmbeddingTest
 {
 	boolean test();
 }
-

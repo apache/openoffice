@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -76,7 +76,7 @@ void CheckMimeContentType( const OUString& aCntType, const OUString& aType, cons
 
 	OSL_ASSERT( aType    == xMimeCntType->getMediaType ( ) );
 	OSL_ASSERT( aSubtype == xMimeCntType->getMediaSubtype ( ) );
-	
+
 	try
 	{
 		Sequence< OUString > seqParam = xMimeCntType->getParameters( );
@@ -100,13 +100,13 @@ void CheckMimeContentType( const OUString& aCntType, const OUString& aType, cons
 	}
 	catch( NoSuchElementException& )
 	{
-		
+
 	}
 }
 */
 
 //----------------------------------------------------------------
-//	
+//
 //----------------------------------------------------------------
 
 void ShutdownServiceMgr( Reference< XMultiServiceFactory >& SrvMgr )
@@ -116,7 +116,7 @@ void ShutdownServiceMgr( Reference< XMultiServiceFactory >& SrvMgr )
 
 	if ( !xComponent.is() )
 		OSL_ENSURE(sal_False, "Error shuting down");
-	
+
 	// Dispose and clear factory
 	xComponent->dispose();
 	SrvMgr.clear();
@@ -124,7 +124,7 @@ void ShutdownServiceMgr( Reference< XMultiServiceFactory >& SrvMgr )
 }
 
 //----------------------------------------------------------------
-//	
+//
 //----------------------------------------------------------------
 
 sal_Bool readCntTypesFromFileIntoVector( char* fname, vector< string >& vecData )
@@ -140,7 +140,7 @@ sal_Bool readCntTypesFromFileIntoVector( char* fname, vector< string >& vecData 
 
 	char line[1024];
 	while ( fscanf( fstream, "%[^\n]s", line ) != EOF )
-	{		
+	{
 		vecData.push_back( line );
 		fgetc( fstream );
 	}
@@ -151,7 +151,7 @@ sal_Bool readCntTypesFromFileIntoVector( char* fname, vector< string >& vecData 
 }
 
 //----------------------------------------------------------------
-//	
+//
 //----------------------------------------------------------------
 
 sal_Bool processCntTypesAndWriteResultIntoFile( char* fname, vector< string >& vecData, Reference< XMimeContentTypeFactory > cnttypeFactory )
@@ -169,7 +169,7 @@ sal_Bool processCntTypesAndWriteResultIntoFile( char* fname, vector< string >& v
 	const char* pStr = NULL;
 
 	for ( vector< string >::iterator iter = vecData.begin( ); iter != iter_end; ++iter )
-	{	
+	{
 		try
 		{
 			fprintf( fstream, "Gelesen: %s\n", iter->c_str( ) );
@@ -186,14 +186,14 @@ sal_Bool processCntTypesAndWriteResultIntoFile( char* fname, vector< string >& v
 			{
 				fwprintf( fstream, OUString::createFromAscii("PName: %s\n" ), seqParam[i].getStr( ) );
 				fwprintf( fstream, OUString::createFromAscii("PValue: %s\n" ), xMCntTyp->getParameterValue( seqParam[i] ).getStr( ) );
-			}			
+			}
 		}
 		catch( IllegalArgumentException& ex )
 		{
-			fwprintf( fstream, OUString::createFromAscii( "Fehlerhafter Content-Type gelesen!!!\n\n" ) ); 
+			fwprintf( fstream, OUString::createFromAscii( "Fehlerhafter Content-Type gelesen!!!\n\n" ) );
 		}
 		catch( NoSuchElementException& )
-		{		
+		{
 			fwprintf( fstream, OUString::createFromAscii( "Parameterwert nicht vorhanden\n" ) );
 		}
 		catch( ... )
@@ -205,7 +205,7 @@ sal_Bool processCntTypesAndWriteResultIntoFile( char* fname, vector< string >& v
 	}
 
 	fclose( fstream );
-	
+
 	return sal_True;
 }
 
@@ -240,7 +240,7 @@ int SAL_CALL main( int nArgc, char* argv[] )
 		ShutdownServiceMgr( g_xFactory );
 	}
 
-	Reference< XMimeContentTypeFactory > 
+	Reference< XMimeContentTypeFactory >
 		xMCntTypeFactory( g_xFactory->createInstance( OUString::createFromAscii( "com.sun.star.datatransfer.MimeContentTypeFactory" ) ), UNO_QUERY );
 
 	if ( !xMCntTypeFactory.is( ) )
@@ -261,5 +261,5 @@ int SAL_CALL main( int nArgc, char* argv[] )
 
 	ShutdownServiceMgr( g_xFactory );
 
-	return 0;	
+	return 0;
 }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -543,11 +543,11 @@ void VCLXAccessibleToolBox::ProcessWindowEvent( const VclWindowEvent& rVclWindow
 	// to prevent an early release of the toolbox (VCLEVENT_OBJECT_DYING)
 	Reference< XAccessibleContext > xTemp = this;
 
-	ToolBox* pToolBox = static_cast< ToolBox* >( GetWindow() ); 
+	ToolBox* pToolBox = static_cast< ToolBox* >( GetWindow() );
 	switch ( rVclWindowEvent.GetId() )
 	{
 		case VCLEVENT_TOOLBOX_CLICK:
-		case VCLEVENT_TOOLBOX_SELECT: 
+		case VCLEVENT_TOOLBOX_SELECT:
         {
 			if ( rVclWindowEvent.GetData() )
             {
@@ -574,7 +574,7 @@ void VCLXAccessibleToolBox::ProcessWindowEvent( const VclWindowEvent& rVclWindow
 	        {
 				UpdateChecked_Impl( TOOLBOX_ITEM_NOTFOUND );
 	            UpdateIndeterminate_Impl( (sal_Int32)rVclWindowEvent.GetData() );
-	        }	
+	        }
 		break;
 		}
 		*/

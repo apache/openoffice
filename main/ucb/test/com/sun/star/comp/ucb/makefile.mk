@@ -53,4 +53,3 @@ runtest:
     java -classpath $(CLASSPATH) org.openoffice.Runner -TestBase java_complex \
         -AppExecutionCommand "c:\staroffice8.m13\program\soffice -accept=socket,host=localhost,port=8100;urp;" \
         -o $(subst,$/,. $(PACKAGE)$/GlobalTransfer_Test)
-

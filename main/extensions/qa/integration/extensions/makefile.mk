@@ -76,4 +76,3 @@ run:
 
 run_%:
     +java $(RUNNER_CLASSPATH) $(RUNNER_ARGS) -o integration.$(PRJNAME).$(@:s/run_//)
-

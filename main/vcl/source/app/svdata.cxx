@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -96,7 +96,7 @@ using namespace rtl;
 
 namespace
 {
-    struct private_aImplSVData : 
+    struct private_aImplSVData :
         public rtl::Static<ImplSVData, private_aImplSVData> {};
 }
 
@@ -149,7 +149,7 @@ void ImplInitSVData()
 	//Default enable the acc bridge interface
 	pImplSVData->maAppData.m_bEnableAccessInterface =true;
 #endif
-    
+
     // mark default layout border as unitialized
     pImplSVData->maAppData.mnDefaultLayoutBorder = -1;
 }
@@ -187,7 +187,7 @@ void ImplDeInitSVData()
         delete pSVData->maAppData.mpMSFTempFileName;
         pSVData->maAppData.mpMSFTempFileName = NULL;
     }
-    
+
     if( pSVData->maCtrlData.mpFieldUnitStrings )
         delete pSVData->maCtrlData.mpFieldUnitStrings, pSVData->maCtrlData.mpFieldUnitStrings = NULL;
     if( pSVData->maCtrlData.mpCleanUnitStrings )
@@ -213,7 +213,7 @@ Window* ImplGetDefaultWindow()
 
 	// First test if we already have a default window.
 	// Don't only place a single if..else inside solar mutex lockframe
-	// because then we might have to wait for the solar mutex what is not necessary 
+	// because then we might have to wait for the solar mutex what is not necessary
 	// if we already have a default window.
 
     if ( !pSVData->mpDefaultWin )
@@ -246,7 +246,7 @@ ResMgr* ImplGetResMgr()
     {
         ::com::sun::star::lang::Locale aLocale = Application::GetSettings().GetUILocale();
         pSVData->mpResMgr = ResMgr::SearchCreateResMgr( VCL_CREATERESMGR_NAME( vcl ), aLocale );
-        
+
         static bool bMessageOnce = false;
         if( !pSVData->mpResMgr && ! bMessageOnce )
         {
@@ -267,7 +267,7 @@ ResId VclResId( sal_Int32 nId )
     ResMgr* pMgr = ImplGetResMgr();
     if( ! pMgr )
         throw std::bad_alloc();
-    
+
     return ResId( nId, *pMgr );
 }
 
@@ -332,7 +332,7 @@ public:
     AccessBridgeCurrentContext(
         const com::sun::star::uno::Reference< com::sun::star::uno::XCurrentContext > &context ) :
         m_prevContext( context ) {}
-    
+
     // XCurrentContext
     virtual com::sun::star::uno::Any SAL_CALL getValueByName( const rtl::OUString& Name )
         throw (com::sun::star::uno::RuntimeException);
@@ -362,13 +362,13 @@ void AccessBridgehandleExistingWindow(Window * pWindow, bool bShow)
     if ( pWindow )
     {
         css::uno::Reference< css::accessibility::XAccessible > xAccessible;
-    
+
         // Test for combo box - drop down floating windows first
         Window * pParentWindow = pWindow->GetParent();
 
         if ( pParentWindow )
         {
-            try 
+            try
             {
                 // The parent window of a combo box floating window should have the role COMBO_BOX
                 css::uno::Reference< css::accessibility::XAccessible > xParentAccessible(pParentWindow->GetAccessible());
@@ -405,7 +405,7 @@ void AccessBridgehandleExistingWindow(Window * pWindow, bool bShow)
         }
 
         // We have to rely on the fact that Window::GetAccessible()->getAccessibleContext() returns a valid XAccessibleContext
-        // also for other menus than menubar or toplevel popup window. Otherwise we had to traverse the hierarchy to find the 
+        // also for other menus than menubar or toplevel popup window. Otherwise we had to traverse the hierarchy to find the
         // context object to this menu floater. This makes the call to Window->IsMenuFloatingWindow() obsolete.
         if ( ! xAccessible.is() )
             xAccessible = pWindow->GetAccessible();
@@ -470,19 +470,19 @@ bool ImplInitAccessBridge(sal_Bool bAllowCancel, sal_Bool &rCancelled)
             {
 #ifdef WNT
 				pSVData->mxAccessBridge = xFactory->createInstance(
-			               OUString::createFromAscii( "com.sun.star.accessibility.MSAAService" ) ); 
+			               OUString::createFromAscii( "com.sun.star.accessibility.MSAAService" ) );
 			    if( pSVData->mxAccessBridge.is() )
 			    {
 			    	css::uno::Reference< css::uno::XInterface > pRManager= pSVData->mxAccessBridge;
 			    	g_acc_manager1 = (css::accessibility::XMSAAService*)(pRManager.get());
 					AccessBridgeupdateOldTopWindows();
 			    }
-			    
+
 			    if( !pSVData->mxAccessBridge.is() )
                     bSuccess = sal_False;
                 return bSuccess;
 #endif
-                css::uno::Reference< XExtendedToolkit > xToolkit = 
+                css::uno::Reference< XExtendedToolkit > xToolkit =
                     css::uno::Reference< XExtendedToolkit >(Application::GetVCLToolkit(), UNO_QUERY);
 
                 Sequence< Any > arguments(1);
@@ -492,7 +492,7 @@ bool ImplInitAccessBridge(sal_Bool bAllowCancel, sal_Bool &rCancelled)
 		        // for a disabled user. Use native message boxes which are accessible without java support.
 			    // No need to do this when activated by Tools-Options dialog ..
                 if( bAllowCancel )
-		        { 
+		        {
 			        // customize the java-not-available-interaction-handler entry within the
 				    // current context when called at startup.
 					com::sun::star::uno::ContextLayer layer(
@@ -500,22 +500,22 @@ bool ImplInitAccessBridge(sal_Bool bAllowCancel, sal_Bool &rCancelled)
 
 	                pSVData->mxAccessBridge = xFactory->createInstanceWithArguments(
 			                OUString::createFromAscii( "com.sun.star.accessibility.AccessBridge" ),
-				            arguments 
+				            arguments
 					    );
 				}
 				else
 				{
 	                pSVData->mxAccessBridge = xFactory->createInstanceWithArguments(
 			                OUString::createFromAscii( "com.sun.star.accessibility.AccessBridge" ),
-				            arguments 
+				            arguments
 					    );
 				}
-                    
+
                 if( !pSVData->mxAccessBridge.is() )
                     bSuccess = sal_False;
             }
         }
-        
+
         return bSuccess;
     }
 
@@ -540,7 +540,7 @@ bool ImplInitAccessBridge(sal_Bool bAllowCancel, sal_Bool &rCancelled)
             if( SALSYSTEM_SHOWNATIVEMSGBOX_BTN_CANCEL == ret )
                 rCancelled = sal_True;
         }
-        
+
         return sal_False;
     }
 
@@ -565,7 +565,7 @@ bool ImplInitAccessBridge(sal_Bool bAllowCancel, sal_Bool &rCancelled)
             if( SALSYSTEM_SHOWNATIVEMSGBOX_BTN_CANCEL == ret )
                 rCancelled = sal_True;
         }
-        
+
         return sal_False;
     }
 
@@ -590,7 +590,7 @@ bool ImplInitAccessBridge(sal_Bool bAllowCancel, sal_Bool &rCancelled)
             if( SALSYSTEM_SHOWNATIVEMSGBOX_BTN_CANCEL == ret )
                 rCancelled = sal_True;
         }
-        
+
         return sal_False;
     }
 
@@ -615,7 +615,7 @@ bool ImplInitAccessBridge(sal_Bool bAllowCancel, sal_Bool &rCancelled)
             if( SALSYSTEM_SHOWNATIVEMSGBOX_BTN_CANCEL == ret )
                 rCancelled = sal_True;
         }
-        
+
         return sal_False;
     }
 
@@ -648,8 +648,8 @@ bool ImplInitAccessBridge(sal_Bool bAllowCancel, sal_Bool &rCancelled)
                     aMessage += String(ResId(SV_ACCESSERROR_OK_CANCEL_MSG, *pResMgr));
 
                     int ret = ImplGetSalSystem()->ShowNativeMessageBox(
-                        aTitle, 
-                        ReplaceJavaErrorMessages(aMessage), 
+                        aTitle,
+                        ReplaceJavaErrorMessages(aMessage),
                         SALSYSTEM_SHOWNATIVEMSGBOX_BTNCOMBI_OK_CANCEL,
                         SALSYSTEM_SHOWNATIVEMSGBOX_BTN_CANCEL);
 
@@ -662,14 +662,14 @@ bool ImplInitAccessBridge(sal_Bool bAllowCancel, sal_Bool &rCancelled)
                     // The user tried to activate accessibility support using Tools-Options dialog,
                     // so we don't offer to terminate here !
                     ImplGetSalSystem()->ShowNativeMessageBox(
-                        aTitle, 
-                        ReplaceJavaErrorMessages(aMessage), 
+                        aTitle,
+                        ReplaceJavaErrorMessages(aMessage),
                         SALSYSTEM_SHOWNATIVEMSGBOX_BTNCOMBI_OK,
                         SALSYSTEM_SHOWNATIVEMSGBOX_BTN_OK);
                 }
             }
         }
-        
+
         return sal_False;
     }
 
@@ -705,4 +705,3 @@ void LocaleConfigurationListener::ConfigurationChanged( utl::ConfigurationBroadc
 {
 	AllSettings::LocaleSettingsChanged( nHint );
 }
-
