@@ -980,7 +980,7 @@ void SwSidebarWin::ToggleInsMode()
     {
         //change outliner
         mpOutlinerView->GetEditView().SetInsertMode(!mpOutlinerView->GetEditView().IsInsertMode());
-        //change documnet
+        //change document
         mrView.GetWrtShell().ToggleInsMode();
         //update statusbar
         SfxBindings &rBnd = mrView.GetViewFrame()->GetBindings();

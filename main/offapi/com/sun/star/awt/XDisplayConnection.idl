@@ -63,7 +63,7 @@ published interface XDisplayConnection: com::sun::star::uno::XInterface
 
 		@param window
 		the platform specific window id the handler should be deregistered for.
-		If empty, the handler should be deregistered completly.
+		If empty, the handler should be deregistered completely.
 
 		@param eventHandler
 		the handler to remove.

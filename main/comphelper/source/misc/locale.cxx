@@ -375,7 +375,7 @@ Locale::Locale(const ::rtl::OUString& sLanguage,
 //-----------------------------------------------
 Locale::Locale()
 {
-    // Initialize instance ... otherwhise user will
+    // Initialize instance ... otherwise user will
     // may be get exceptions if he e.g. copy this instance ...
     (*this) = X_NOTRANSLATE();
 }
@@ -511,7 +511,7 @@ sal_Bool Locale::similar(const Locale& aComparable) const
     Locale aReference(sReferenceISO);
 
     // Note: The same language or "en"/"en-US" should be preferred as fallback.
-    // On the other side some localized variables doesn't use localzation in real.
+    // On the other side some localized variables doesn't use localization in real.
     // May be the use a "fix" value only ... marked as X-DEFAULT or X-NOTRANSLATE.
     // At least it can be discussed, if any language is a valid fallback ...
     // But in case some office functionality depends on that (that means real functionality instead

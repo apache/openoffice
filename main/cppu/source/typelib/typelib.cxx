@@ -1730,7 +1730,7 @@ extern "C" void SAL_CALL typelib_typedescription_register(
 				}
 				else if( !pTDR->pType->bOnDemand && (*ppNewDescription)->bOnDemand )
 				{
-					// switch from !OnDemand to OnDemand, so the description must be relesed
+					// switch from !OnDemand to OnDemand, so the description must be released
 					typelib_typedescription_release( pTDR->pType );
 				}
 
@@ -2440,7 +2440,7 @@ extern "C" void SAL_CALL typelib_typedescriptionreference_getDescription(
 		{
 			::osl_decrementInterlockedCount( &pRef->pType->nRefCount );
 			// detruction of this type in progress (another thread!)
-			// no acces through this weak reference
+			// no access through this weak reference
 			pRef->pType = 0;
 		}
 	}
@@ -2480,7 +2480,7 @@ extern "C" void SAL_CALL typelib_typedescriptionreference_getByName(
 			else
 			{
 				// detruction of this type in progress (another thread!)
-				// no acces through this weak reference
+				// no access through this weak reference
 				::osl_decrementInterlockedCount( &(*aIt).second->nRefCount );
 			}
 		}

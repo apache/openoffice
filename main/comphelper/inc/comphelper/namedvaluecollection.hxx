@@ -158,7 +158,7 @@ namespace comphelper
 
             @return
                 <TRUE/> if there is a value with the given name, which could successfully
-                be extraced. In this case, <arg>_out_rValue</arg> will contain the requested
+                be extracted. In this case, <arg>_out_rValue</arg> will contain the requested
                 value.<br/>
                 <FALSE/>, if there is no value with the given name.
             @throws IllegalArgumentException

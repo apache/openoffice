@@ -418,7 +418,7 @@ void PropertyMapper::setMultiProperties(
     }
     catch( uno::Exception& e )
     {
-        ASSERT_EXCEPTION( e ); //if this occurs more often think of removing the XMultiPropertySet completly for better performance
+        ASSERT_EXCEPTION( e ); //if this occurs more often think of removing the XMultiPropertySet completely for better performance
     }
 
     if(!bSuccess)

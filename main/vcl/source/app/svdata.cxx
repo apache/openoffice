@@ -346,7 +346,7 @@ com::sun::star::uno::Any AccessBridgeCurrentContext::getValueByName( const rtl::
     com::sun::star::uno::Any ret;
     if( Name.equalsAscii( "java-vm.interaction-handler" ) )
     {
-        // Currently, for accessbility no interaction handler shall be offered.
+        // Currently, for accessibility no interaction handler shall be offered.
         // There may be introduced later on a handler using native toolkits
         // jbu->obr: Instantiate here your interaction handler
     }

@@ -633,7 +633,7 @@ void VCLXAccessibleToolBox::ProcessWindowEvent( const VclWindowEvent& rVclWindow
 
 		case VCLEVENT_OBJECT_DYING :
 		{
-            // if this toolbox is a subtoolbox, we have to relese it from its parent
+            // if this toolbox is a subtoolbox, we have to release it from its parent
             ToolBox* pToolBox = static_cast< ToolBox* >( GetWindow() );
             if ( pToolBox && pToolBox->GetParent() &&
                  pToolBox->GetParent()->GetType() == WINDOW_TOOLBOX )

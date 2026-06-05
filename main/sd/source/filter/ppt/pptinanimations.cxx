@@ -3150,7 +3150,7 @@ sal_Int32 AnimationImporter::importTargetElementContainer( const Atom* pAtom, An
 			}
 			break;
 			default:
-				DBG_ERROR("unknwon atom inside ppt::AnimationImporter::importTargetElementContainer()!");
+				DBG_ERROR("unknown atom inside ppt::AnimationImporter::importTargetElementContainer()!");
 				break;
 			}
 
@@ -3181,7 +3181,7 @@ void AnimationImporter::importPropertySetContainer( const Atom* pAtom, PropertyS
 			}
 			else
 			{
-				DBG_ERROR("unknwon atom inside ppt::AnimationImporter::importPropertySetContainer()!");
+				DBG_ERROR("unknown atom inside ppt::AnimationImporter::importPropertySetContainer()!");
 			}
 
 			pChildAtom = pAtom->findNextChildAtom( pChildAtom );

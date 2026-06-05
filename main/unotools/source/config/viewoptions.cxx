@@ -335,7 +335,7 @@ class SvtViewOptionsBase_Impl
     @short          ctor
     @descr          We use it to open right configuration file and let configuration objects fill her caches.
                     Then we read all existing entries from right list and cached it inside our object too.
-                    Normaly we should enable notifications for changes on these values too ... but these feature
+                    Normally we should enable notifications for changes on these values too ... but these feature
                     isn't full implemented in the moment.
 
     @seealso        baseclass ::utl::ConfigItem
@@ -1234,7 +1234,7 @@ void SvtViewOptions::SetUserItem( const ::rtl::OUString& sName  ,
 		// ... we must create a new one. Protect follow code with the global mutex -
 		// It must be - we create a static variable!
         ::osl::MutexGuard aGuard( ::osl::Mutex::getGlobalMutex() );
-		// We must check our pointer again - because it can be that another instance of ouer class will be fastr then these!
+		// We must check our pointer again - because it can be that another instance of outer class will be faster then these!
         if( pMutex == NULL )
         {
 			// Create the new mutex and set it for return on static variable.

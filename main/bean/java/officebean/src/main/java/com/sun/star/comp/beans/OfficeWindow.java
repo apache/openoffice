@@ -37,14 +37,14 @@ import com.sun.star.awt.XWindowPeer;
 public interface OfficeWindow
 {
 	/**
-	 * Retrives an AWT component object associated with the OfficeWindow.
+	 * Retrieves an AWT component object associated with the OfficeWindow.
 	 *
 	 * @return The AWT component object associated with the OfficeWindow.
 	 */
 	Component getAWTComponent();
 
 	/**
-	 * Retrives an UNO XWindowPeer object associated with the OfficeWindow.
+	 * Retrieves an UNO XWindowPeer object associated with the OfficeWindow.
 	 *
 	 * @return The UNO XWindowPeer object associated with the OfficeWindow.
 	 */

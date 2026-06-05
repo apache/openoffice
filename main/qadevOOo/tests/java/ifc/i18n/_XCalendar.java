@@ -371,7 +371,7 @@ public class _XCalendar extends MultiMethodTest {
         res &= (aValue == newValue);
         if (!res){
             log.println("the returned value is not the expected value:");
-            log.println("expexted: " + newValue + "  returned value: " + aValue);
+            log.println("expected: " + newValue + "  returned value: " + aValue);
         }
         tRes.tested("getValue()", res);
     }
@@ -395,7 +395,7 @@ public class _XCalendar extends MultiMethodTest {
         res &= (aValue > newValue);
         if (!res){
             log.println("the returned value is not the expected value:");
-            log.println("expexted: " + newValue + "  returned value: " + aValue);
+            log.println("expected: " + newValue + "  returned value: " + aValue);
         }
         tRes.tested("addValue()", res);
     }
