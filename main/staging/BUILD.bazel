@@ -30,6 +30,15 @@ filegroup(
     ],
 )
 
+# Release application manifest for soffice.exe — declares the Microsoft.VC90.CRT
+# dependency so Windows consults SxS/publisher-policy and loads MSVCR90.dll from
+# WinSxS with an activation context (no R6034).  Wrapped in a filegroup because
+# collect_outputs.deps does not accept raw source files.
+filegroup(
+    name = "soffice_app_manifest",
+    srcs = ["//main/desktop:util/soffice.exe.manifest"],
+)
+
 # ── Flat program/ files (DLLs, EXEs, RDBs, ZIPs, .py scripts, .ini) ─────────
 collect_outputs(
     name = "all_files",
@@ -319,12 +328,28 @@ collect_outputs(
         # activating Microsoft.VC90.DebugCRT as a private SxS assembly.
         # Set MSVC_DEBUG_CRT_PATH in user.bazelrc if VS2008 is not at the
         # default path (see //build:vs_paths.bzl).
-        # Release builds use MSVCR90.dll which is already in System32.
         "//build:dbg_build": [
             "@msvc_debug_crt//:dlls",
             ":soffice_exe_manifest",
         ],
-        "//conditions:default": [],
+        # Release (/MD): do NOT bundle app-local CRT DLLs.  Instead stage the
+        # application manifest so soffice.exe declares a Microsoft.VC90.CRT
+        # 9.0.30729.1 dependency.  That manifest is what makes Windows consult
+        # SxS: the installed VC90 publisher policy
+        # (x86_policy.9.0.microsoft.vc90.crt_..._9.0.30729.9635) redirects
+        # 9.0.30729.1 → 9.0.30729.9635, which is present in WinSxS, so MSVCR90.dll
+        # loads WITH an activation context (no R6034).
+        # Without the manifest the loader never consults SxS/policy and searches
+        # MSVCR90.dll only on the plain DLL path (program\, System32, PATH) — it is
+        # in none of those, so the process dies before any window ("no window").
+        # The :soffice cc_binary links /MANIFEST:NO, so this external .manifest is
+        # the only manifest soffice.exe gets.  (A redistributable build for
+        # machines lacking the VC9 redist would additionally ship the CRT as a
+        # program\Microsoft.VC90.CRT\ subfolder private assembly + hash-free
+        # manifest; on a dev box with the redist installed WinSxS covers it.)
+        "//conditions:default": [
+            ":soffice_app_manifest",
+        ],
     }),
 )
 
