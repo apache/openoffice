@@ -265,7 +265,8 @@ extern "C" typelib_TypeClass cpp_vtable_call(
 	// fpreg:  [fpr params]
 	// ovrflw: [gpr or fpr params (properly aligned)]
 	void * pThis;
-	if ( nFunctionIndex & 0x80000000 )
+	bool bHasHiddenReturn = (nFunctionIndex & 0x80000000) != 0;
+	if ( bHasHiddenReturn )
 	{
 		nFunctionIndex &= 0x7fffffff;
 		pThis = gpreg[1];
@@ -338,6 +339,11 @@ extern "C" typelib_TypeClass cpp_vtable_call(
 					eRet = typelib_TypeClass_VOID;
 					break;
 				case 0: // queryInterface() opt
+				// Only apply when hidden return is present:
+				//   gpreg[0]=ret, gpreg[1]=this, gpreg[2]=type
+				// Without hidden return gpreg[2] is not the type arg.
+					if ( !bHasHiddenReturn )
+						break;
 				{
 					typelib_TypeDescription * pTD = 0;
 					TYPELIB_DANGER_GET( &pTD, reinterpret_cast<Type *>( gpreg[2] )->getTypeLibType() );
@@ -434,7 +440,7 @@ extern "C" void privateSnippetExecutor( void )
 		"	movq	-136(%rbp), %xmm1\n"	// Return value (int case)
 		"	jmp	.Lfinish\n"
 		".Lfloat:\n"
-		"	movlpd	-144(%rbp), %xmm0\n"		// Return value (float/double case)
+		"	movsd	-144(%rbp), %xmm0\n"		// Return value (float/double case)
 		".Lfinish:\n"
 		"	addq	$160, %rsp\n"
 	);
