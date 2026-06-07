@@ -7321,6 +7321,17 @@ fi
 AC_SUBST(nodep)
 
 dnl ===================================================================
+dnl Check for execstack(8) on Linux
+dnl ===================================================================
+if test "$_os" = "Linux"; then
+   AC_PATH_PROG(EXECSTACK, execstack )
+   if test -z "$EXECSTACK"; then
+      AC_MSG_ERROR([execstack is required on Linux])
+   fi
+fi
+
+
+dnl ===================================================================
 dnl Setting up the environment.
 dnl ===================================================================
 echo "********************************************************************"

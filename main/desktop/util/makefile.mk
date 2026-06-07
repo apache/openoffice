@@ -179,7 +179,7 @@ $(APP1TARGETN) :  $(MISC)$/binso_created.flg
 
 .IF "$(APP5TARGETN)"!=""
 $(APP5TARGETN) :  $(MISC)$/binso_created.flg
-.ENDIF			# "$(APP6TARGETN)"!=""
+.ENDIF			# "$(APP5TARGETN)"!=""
 
 .IF "$(APP6TARGETN)"!=""
 $(APP6TARGETN) :  $(MISC)$/binso_created.flg
@@ -200,6 +200,14 @@ ALLTAR: $(BIN)$/$(TARGET).bin
 
 $(BIN)$/soffice_oo$(EXECPOST) : $(APP5TARGETN)
 	$(COPY) $< $@
+
+.IF "$(OS)" == "LINUX"
+# $(APP5TARGETN) must be fixed with execstack
+$(BIN)$/soffice_oo$(EXECPOST) : $(MISC)$/selinux_fixed.flg
+
+$(MISC)$/selinux_fixed.flg : $(APP5TARGETN)
+	 execstack -s $< && $(TOUCH) $@
+.ENDIF # Linux
 
 .IF "$(GUI)" != "OS2"
 .IF "$(LINK_SO)"=="TRUE"
@@ -270,4 +278,4 @@ $(BIN)$/$(TARGET).bin: $(BIN)$/$(TARGET)$(EXECPOST)
 $(MISC)$/binso_created.flg :
 	@@-$(MKDIRHIER) $(BIN)$/so && $(TOUCH) $@
 
-.ENDIF
+.ENDIF # "$(L10N_framework)"==""
