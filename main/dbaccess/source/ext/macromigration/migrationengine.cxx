@@ -1065,7 +1065,7 @@ namespace dbmm
             const Reference< XNameAccess >& _rxContainer, const ::rtl::OUString& _rContainerLoc,
             SubDocuments& _out_rDocs, const SubDocumentType _eType, size_t& _io_counter )
         {
-            const ::rtl::OUString sHierarhicalBase(
+            const ::rtl::OUString sHierarchicalBase(
                 _rContainerLoc.getLength()  ?   ::rtl::OUStringBuffer( _rContainerLoc ).appendAscii( "/" ).makeStringAndClear()
                                             :   ::rtl::OUString() );
 
@@ -1076,7 +1076,7 @@ namespace dbmm
                 )
             {
                 Any aElement( _rxContainer->getByName( *elementName ) );
-                ::rtl::OUString sElementName( ::rtl::OUStringBuffer( sHierarhicalBase ).append( *elementName ) );
+                ::rtl::OUString sElementName( ::rtl::OUStringBuffer( sHierarchicalBase ).append( *elementName ) );
 
                 Reference< XNameAccess > xSubContainer( aElement, UNO_QUERY );
                 if ( xSubContainer.is() )
@@ -1086,7 +1086,7 @@ namespace dbmm
                 else
                 {
                     Reference< XCommandProcessor > xCommandProcessor( aElement, UNO_QUERY );
-                    OSL_ENSURE( xCommandProcessor.is(), "lcl_collectHierarchicalElementNames_throw: no container, and no comand processor? What *is* it, then?!" );
+                    OSL_ENSURE( xCommandProcessor.is(), "lcl_collectHierarchicalElementNames_throw: no container, and no command processor? What *is* it, then?!" );
                     if ( xCommandProcessor.is() )
                     {
                         _out_rDocs.push_back( SubDocument( xCommandProcessor, sElementName, _eType, ++_io_counter ) );

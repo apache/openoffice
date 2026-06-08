@@ -2102,7 +2102,7 @@ DirEntry DirEntry::TempName( DirEntryKind eKind ) const
         char *ret_val;
         size_t i;
 
-        // dertermine Directory, Prefix and Extension
+        // determine Directory, Prefix and Extension
         char pfx[6];
         char ext[5];
         const char *dir;
