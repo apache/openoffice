@@ -339,11 +339,13 @@ extern "C" typelib_TypeClass cpp_vtable_call(
 					eRet = typelib_TypeClass_VOID;
 					break;
 				case 0: // queryInterface() opt
-				// Only apply when hidden return is present:
-				//   gpreg[0]=ret, gpreg[1]=this, gpreg[2]=type
-				// Without hidden return gpreg[2] is not the type arg.
-					if ( !bHasHiddenReturn )
-						break;
+				// The fast path is only valid when a hidden return param is
+				// present, i.e. gpreg[0]=ret, gpreg[1]=this, gpreg[2]=type.
+				// Without it gpreg[2] is not the type arg, so we must NOT take
+				// the shortcut. Note: we deliberately fall through to default
+				// (not break) so the generic queryInterface() is performed and
+				// eRet is always assigned.
+				if ( bHasHiddenReturn )
 				{
 					typelib_TypeDescription * pTD = 0;
 					TYPELIB_DANGER_GET( &pTD, reinterpret_cast<Type *>( gpreg[2] )->getTypeLibType() );
