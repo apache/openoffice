@@ -157,7 +157,7 @@ rtl::OUString getImageFromFileName(const rtl::OUString& aFile)
         oslProcessError rc = osl_executeProcess_WithRedirectedIO(
             aUnpackPath.pData,                                  // [in] Image name
             &aSystemPath.pData, 1,                              // [in] Arguments
-            osl_Process_WAIT || osl_Process_NORMAL,             // [in] Options
+            osl_Process_WAIT | osl_Process_NORMAL,              // [in] Options
             NULL,                                               // [in] Security
             NULL,                                               // [in] Working directory
             NULL, 0,                                            // [in] Environment variables
@@ -181,14 +181,14 @@ rtl::OUString getImageFromFileName(const rtl::OUString& aFile)
                     rtl::OUString aImageName;
                     while( osl_File_E_None == osl_readFile(hOut, szBuffer, nBytesToRead, &nBytesRead) )
                     {
+                        // strip trailing CR/LF, but never read/write before the
+                        // start of the buffer (e.g. when nBytesRead == 0)
                         sal_Char *pc = szBuffer + nBytesRead;
-                        do
-                        {
-                            *pc = '\0'; --pc;
-                        }
-                        while( ('\n' == *pc) || ('\r' == *pc) );
+                        while( pc > szBuffer && ( '\n' == *(pc-1) || '\r' == *(pc-1) ) )
+                            --pc;
+                        *pc = '\0';
 
-                        aImageName += rtl::OUString(szBuffer, pc - szBuffer + 1, osl_getThreadTextEncoding());
+                        aImageName += rtl::OUString(szBuffer, pc - szBuffer, osl_getThreadTextEncoding());
 
                         if( nBytesRead < nBytesToRead )
                             break;
