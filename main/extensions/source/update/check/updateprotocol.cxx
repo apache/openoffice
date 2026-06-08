@@ -163,7 +163,8 @@ checkForUpdates(
                     UNISTRING("http://openoffice.bouncer.osuosl.org/?product=OpenOffice.org&os=solarissparcwjre&lang=en-US&version=2.2.1") ) );
 */
 
-                sal_Int32 i, imax = xNodeList->getLength();
+                // xNodeList may be null if selectNodeList() above threw and was swallowed
+                sal_Int32 i, imax = xNodeList.is() ? xNodeList->getLength() : 0;
                 for( i = 0; i < imax; ++i )
                 {
                     uno::Reference< xml::dom::XNode > xNode2( xNodeList->item(i) );
@@ -202,13 +203,16 @@ checkForUpdates(
                 o_rUpdateInfo.Description = aEntry.Description;
 
                 // Release Notes
+                // reset, so a swallowed exception below does not leave us
+                // iterating the previous (sources) node list
+                xNodeList.clear();
                 try {
                     xNodeList = xXPath->selectNodeList(xNode, aXPathExpression
                         + UNISTRING("/inst:relnote"));
                 } catch (css::xml::xpath::XPathException &) {
                     // ignore
                 }
-                imax = xNodeList->getLength();
+                imax = xNodeList.is() ? xNodeList->getLength() : 0;
                 for( i = 0; i < imax; ++i )
                 {
                     uno::Reference< xml::dom::XElement > xRelNote(xNodeList->item(i), uno::UNO_QUERY);
