@@ -1,8 +1,6 @@
-diff --git misc/build/openssl-3.0.13/crypto/bio/bio_sock2.c misc/build/openssl-3.0.13/crypto/bio/bio_sock2.c
-index 8bdad0c0b6..e52cd4f00e 100644
---- misc/build/openssl-3.0.13/crypto/bio/bio_sock2.c
-+++ misc/build/openssl-3.0.13/crypto/bio/bio_sock2.c
-@@ -270,6 +270,10 @@ int BIO_listen(int sock, const BIO_ADDR *addr, int options)
+--- misc/build/openssl-3.0.20/crypto/bio/bio_sock2.c
++++ misc/build/openssl-3.0.20/crypto/bio/bio_sock2.c
+@@ -268,6 +268,10 @@
           * Therefore we always have to use setsockopt here.
           */
          on = options & BIO_SOCK_V6_ONLY ? 1 : 0;
@@ -11,40 +9,36 @@ index 8bdad0c0b6..e52cd4f00e 100644
 +#    define IPPROTO_IPV6 41
 +#  endif
          if (setsockopt(sock, IPPROTO_IPV6, IPV6_V6ONLY,
-                        (const void *)&on, sizeof(on)) != 0) {
-             ERR_raise_data(ERR_LIB_SYS, get_last_socket_error(),
-diff --git misc/build/openssl-3.0.13/crypto/init.c misc/build/openssl-3.0.13/crypto/init.c
-index cacf637c89..0728c0a20d 100644
---- misc/build/openssl-3.0.13/crypto/init.c
-+++ misc/build/openssl-3.0.13/crypto/init.c
-@@ -131,7 +131,7 @@ DEFINE_RUN_ONCE_STATIC(ossl_init_load_crypto_nodelete)
- 
+                 (const void *)&on, sizeof(on))
+             != 0) {
+--- misc/build/openssl-3.0.20/crypto/init.c
++++ misc/build/openssl-3.0.20/crypto/init.c
+@@ -133,7 +133,7 @@
+
  #if !defined(OPENSSL_USE_NODELETE) \
      && !defined(OPENSSL_NO_PINSHARED)
--# if defined(DSO_WIN32) && !defined(_WIN32_WCE)
-+# if defined(DSO_WIN32) && !defined(_WIN32_WCE) && _WIN32_WINNT >= 0x0500
+-#if defined(DSO_WIN32) && !defined(_WIN32_WCE)
++#if defined(DSO_WIN32) && !defined(_WIN32_WCE) && _WIN32_WINNT >= 0x0500
      {
          HMODULE handle = NULL;
          BOOL ret;
-@@ -659,7 +659,7 @@ int OPENSSL_atexit(void (*handler)(void))
- #if !defined(OPENSSL_USE_NODELETE)\
+@@ -656,7 +656,7 @@
+ #if !defined(OPENSSL_USE_NODELETE) \
      && !defined(OPENSSL_NO_PINSHARED)
      {
--# if defined(DSO_WIN32) && !defined(_WIN32_WCE)
-+# if defined(DSO_WIN32) && !defined(_WIN32_WCE) && _WIN32_WINNT >= 0x0500
+-#if defined(DSO_WIN32) && !defined(_WIN32_WCE)
++#if defined(DSO_WIN32) && !defined(_WIN32_WCE) && _WIN32_WINNT >= 0x0500
          HMODULE handle = NULL;
          BOOL ret;
          union {
-diff --git misc/build/openssl-3.0.13/crypto/threads_win.c misc/build/openssl-3.0.13/crypto/threads_win.c
-index dbeda74d73..c599e88c59 100644
---- misc/build/openssl-3.0.13/crypto/threads_win.c
-+++ misc/build/openssl-3.0.13/crypto/threads_win.c
-@@ -54,7 +54,7 @@ CRYPTO_RWLOCK *CRYPTO_THREAD_lock_new(void)
+--- misc/build/openssl-3.0.20/crypto/threads_win.c
++++ misc/build/openssl-3.0.20/crypto/threads_win.c
+@@ -54,7 +54,7 @@
          return NULL;
      }
- 
--#  if !defined(_WIN32_WCE)
-+#  if !defined(_WIN32_WCE) && _WIN32_WINNT >= 0x0403
+
+-#if !defined(_WIN32_WCE)
++#if !defined(_WIN32_WCE) && _WIN32_WINNT >= 0x0403
      /* 0x400 is the spin count value suggested in the documentation */
      if (!InitializeCriticalSectionAndSpinCount(lock, 0x400)) {
          OPENSSL_free(lock);
