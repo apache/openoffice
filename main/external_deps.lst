@@ -151,9 +151,9 @@ if (SOLAR_JAVA==TRUE)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SYSTEM_OPENSSL!=YES)
-    MD5 = c15e53a62711002901d3515ac8b30b86
-    name = openssl-3.0.13.tar.gz
-    URL1 = https://www.openssl.org/source/$(name)
+    MD5 = fabdcf86f3f54e27689253f85b738959
+    name = openssl-3.0.20.tar.gz
+    URL1 = https://github.com/openssl/openssl/releases/download/openssl-3.0.20/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 # On Windows, we need Strawberry Perl to build OpenSSL 3:
