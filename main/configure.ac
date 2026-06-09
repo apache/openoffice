@@ -2182,7 +2182,7 @@ dnl      The following find microsoft, matches nn.nn.nnnn then pulls numbers out
 								printf (\"%04d\",vertoken[[i]] )
 							}
 							}"`
-			AC_MSG_RESULT([found Compiler version $CCNUMVER in \"$CCTXTVER\"])
+			AC_MSG_RESULT([found Compiler version $CCNUMVER in "$CCTXTVER"])
 			if test "$CCNUMVER" -ge "001500000000"; then
 				COMEX=12
 				MSVSVER=2008
