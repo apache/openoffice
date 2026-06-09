@@ -19,8 +19,8 @@ dnl *  under the License.
 dnl *
 dnl * *************************************************************
 AC_REVISION( $Revision$ )
-AC_PREREQ(2.50)
-AC_INIT()
+AC_PREREQ([2.73])
+AC_INIT
 echo "$@" >config.parms
 AC_ARG_WITH(dmake-path,
 [  --with-dmake-path=<PATH TO EXECUTABLE>   Specify the location of dmake ],
@@ -1048,7 +1048,7 @@ AC_SUBST(USE_PACKAGER)
 dnl ===================================================================
 dnl Checks for the operating system and processor.
 dnl ===================================================================
-AC_CANONICAL_SYSTEM
+AC_CANONICAL_TARGET
 if test "$build" != "$host" -o "$build" != "$target" \
   -o "$host" != "$target"; then
 	AC_MSG_WARN([cross-compiling by any means is not supported (yet)!])
@@ -2425,7 +2425,15 @@ dnl ===================================================================
 dnl Check if stdc headers are available excluding Windows.
 dnl ===================================================================
 if test "$_os" != "WINNT" -o "$WITH_MINGWIN" = "yes"; then
-   AC_HEADER_STDC
+   m4_warn([obsolete],
+[The preprocessor macro 'STDC_HEADERS' is obsolete.
+  Except in unusual embedded environments, you can safely include all
+  C89 headers unconditionally.])dnl
+# Autoupdate added the next two lines to ensure that your configure
+# script's behavior did not change.  They are probably safe to remove.
+AC_CHECK_INCLUDES_DEFAULT
+AC_PROG_EGREP
+
 fi
 
 dnl ===================================================================
@@ -2573,7 +2581,7 @@ if test "$GXX" = "yes"; then
 
    if test "$_gpp_majmin" = "304"; then
       AC_MSG_CHECKING([whether $CXX has the enum bug])
-AC_TRY_RUN([
+AC_RUN_IFELSE([AC_LANG_SOURCE([[
 extern "C" void abort (void);
 extern "C" void exit (int status);
 
@@ -2594,7 +2602,7 @@ main (void)
   test (E0);
   return 0;
 }
-],[AC_MSG_ERROR([your version of the GNU C++ compiler has a bug which prevents Apache OpenOffice from being compiled correctly - please check https://gcc.gnu.org/ml/gcc-patches/2004-07/msg00968.html for details.])], [AC_MSG_RESULT([no])])
+]])],[AC_MSG_ERROR([your version of the GNU C++ compiler has a bug which prevents Apache OpenOffice from being compiled correctly - please check https://gcc.gnu.org/ml/gcc-patches/2004-07/msg00968.html for details.])],[AC_MSG_RESULT([no])],[])
    fi
 fi
 
@@ -2733,16 +2741,12 @@ dnl *************************************************************
 AC_MSG_CHECKING([exception type])
 AC_LANG_PUSH([C++])
 if test "$WITH_MINGWIN" = "yes"; then
-  AC_TRY_LINK(
-	[#include <iostream>
+  AC_LINK_IFELSE([AC_LANG_PROGRAM([[#include <iostream>
 
 extern "C" void _Unwind_SjLj_RaiseException(void) __attribute__ ((__noreturn__));
 
-	],
-	[_Unwind_SjLj_RaiseException() ],
-	[exceptions_type="sjlj"],
-	[exceptions_type="dwarf2"]
-  )
+	]], [[_Unwind_SjLj_RaiseException() ]])],[exceptions_type="sjlj"],[exceptions_type="dwarf2"
+  ])
 fi
 
 AC_MSG_RESULT($exceptions_type)
@@ -2770,7 +2774,7 @@ if test "$GCC" = "yes"; then
    AC_MSG_CHECKING([whether $CC supports -fvisibility=hidden])
    save_CFLAGS=$CFLAGS
    CFLAGS="$CFLAGS -fvisibility=hidden"
-   AC_TRY_LINK([], [ return 0; ], [ HAVE_GCC_VISIBILITY_FEATURE=TRUE ], [])
+   AC_LINK_IFELSE([AC_LANG_PROGRAM([[]], [[ return 0; ]])],[ HAVE_GCC_VISIBILITY_FEATURE=TRUE ],[])
    CFLAGS=$save_CFLAGS
    if test "$HAVE_GCC_VISIBILITY_FEATURE" = "TRUE"; then
       AC_MSG_RESULT([yes])
@@ -2852,12 +2856,10 @@ if test "$USE_SYSTEM_STL" = "YES"; then
       LDFLAGS="$LDFLAGS -fvisibility-inlines-hidden -fpic -shared"
 
       AC_MSG_CHECKING([if gcc is -fvisibility-inlines-hidden safe with STL headers])
-      AC_TRY_LINK([#include <sstream>
+      AC_LINK_IFELSE([AC_LANG_PROGRAM([[#include <sstream>
 using namespace std;
-],[istringstream strm( "test" ); return 0;],
-      $EGREP -q  unresolvable conftest.err;
-      if test $? -eq 0; then gccvisok=no; else gccvisok=yes; fi,
-      gccvisok=no)
+]], [[istringstream strm( "test" ); return 0;]])],[$EGREP -q  unresolvable conftest.err;
+      if test $? -eq 0; then gccvisok=no; else gccvisok=yes; fi],[gccvisok=no])
       AC_MSG_RESULT([$gccvisok])
       if test "$gccvisok" = "no"; then
          AC_MSG_WARN([Your gcc is not -fvisibility-inlines-hidden safe. Disabling visibility])
@@ -3705,8 +3707,10 @@ if test "z$enable_odk" = "z" -o "$enable_odk" != "no"; then
       # do not make sense here (and 'd make the check fail)
       save_LIBS=$LIBS
       LIBS=""
-      AC_HAVE_LIBRARY(kernel32)
-      AC_HAVE_LIBRARY(advapi32)
+      AC_CHECK_LIB([kernel32],[main],[],[],[])ac_cv_lib_kernel32=ac_cv_lib_kernel32_main
+
+      AC_CHECK_LIB([advapi32],[main],[],[],[])ac_cv_lib_advapi32=ac_cv_lib_advapi32_main
+
       AC_CHECK_HEADER(windows.h, [], [AC_MSG_ERROR([windows.h missing])])
       CXXFLAGS=$save_CXXFLAGS
       CPPFLAGS=$save_CPPFLAGS
@@ -4233,7 +4237,7 @@ if test -n "$with_system_mysql_cppconn" -o -n "$with_system_libs" && \
 	AC_CHECK_LIB(mysqlcppconn, main, [],
 					[AC_MSG_ERROR(MySQL C++ Connectivity lib not found or functional)], [])
    AC_MSG_CHECKING([version])
-      AC_TRY_RUN([
+      AC_RUN_IFELSE([AC_LANG_SOURCE([[
 #include <mysql_driver.h>
 
 int main(int argc, char **argv) {
@@ -4246,7 +4250,7 @@ int main(int argc, char **argv) {
       else
         return 1;
 }
-      ], [AC_MSG_RESULT(OK)], [AC_MSG_ERROR([not suitable, we need >= 1.0.6])])
+      ]])],[AC_MSG_RESULT(OK)],[AC_MSG_ERROR([not suitable, we need >= 1.0.6])],[])
         AC_LANG_POP([C++])
 
 else
@@ -4585,9 +4589,8 @@ if test -n "$with_system_boost" -o -n "$with_system_headers" && \
    save_CXXFLAGS=$CXXFLAGS
    CXXFLAGS="$CXXFLAGS -fno-exceptions"
    AC_MSG_CHECKING([whether boost/function.hpp compiles with -fno-exceptions])
-   AC_TRY_COMPILE([#include <boost/function.hpp>
-], [],
-   ac_cv_cxx_boost_no_exceptons_broken=no, ac_cv_cxx_boost_no_exceptons_broken=yes)
+   AC_COMPILE_IFELSE([AC_LANG_PROGRAM([[#include <boost/function.hpp>
+]], [[]])],[ac_cv_cxx_boost_no_exceptons_broken=no],[ac_cv_cxx_boost_no_exceptons_broken=yes])
 
    if test "$ac_cv_cxx_boost_no_exceptons_broken" = "yes"; then
 	AC_MSG_ERROR([no, see https://bugzilla.redhat.com/show_bug.cgi?id=477131])
@@ -4747,7 +4750,7 @@ if test -n "$with_system_icu" -o -n "$with_system_libs" && \
    SYSTEM_ICU=YES
    AC_LANG_PUSH([C++])
    AC_MSG_CHECKING([for unicode/rbbi.h])
-   AC_TRY_CPP(unicode/rbbi.h, AC_MSG_RESULT([checked.]), AC_MSG_ERROR([icu headers not found.]))
+   AC_PREPROC_IFELSE([AC_LANG_SOURCE([[unicode/rbbi.h]])],[AC_MSG_RESULT(checked.)],[AC_MSG_ERROR(icu headers not found.)])
    AC_LANG_POP([C++])
    AC_PATH_PROG(SYSTEM_GENBRK, genbrk, [], [$PATH:/usr/sbin:/sbin])
    if test -z "$SYSTEM_GENBRK"; then
@@ -4916,14 +4919,14 @@ if test "$ENABLE_FONTCONFIG" = "TRUE" ; then
     AC_CHECK_HEADER(fontconfig/fontconfig.h, [],
                     [AC_MSG_ERROR([fontconfig/fontconfig.h could not be found. libfontconfig1-dev or fontconfig???-devel missing?])], [])
     AC_MSG_CHECKING([whether fontconfig is >= 2.2.0])
-    AC_TRY_RUN([
+    AC_RUN_IFELSE([AC_LANG_SOURCE([[
 #include <fontconfig/fontconfig.h>
 
 int main(int argc, char **argv) {
 	if(FC_MAJOR > 2 || (FC_MAJOR == 2 && FC_MINOR >= 2)) return 0;
 	else return 1;
 }
-], [AC_MSG_RESULT([yes])], [AC_MSG_ERROR([no, fontconfig >= 2.2.0 needed])])
+]])],[AC_MSG_RESULT([yes])],[AC_MSG_ERROR([no, fontconfig >= 2.2.0 needed])],[])
 fi
 
 dnl ===================================================================
@@ -6003,7 +6006,7 @@ if test  "$test_cairo" = "yes"; then
 	   fi
            if test "$with_system_xrender_headers" = "yes"; then
               AC_MSG_CHECKING([whether Xrender.h defines PictStandardA8])
-              AC_TRY_RUN([
+              AC_RUN_IFELSE([AC_LANG_SOURCE([[
 #include <X11/extensions/Xrender.h>
 
 int main(int argc, char **argv) {
@@ -6013,7 +6016,7 @@ int main(int argc, char **argv) {
       return 1;
 #endif
 }
-               ], [AC_MSG_RESULT([yes])], [AC_MSG_ERROR([no, X headers too old.])])
+               ]])],[AC_MSG_RESULT([yes])],[AC_MSG_ERROR([no, X headers too old.])],[])
            fi
         else
            BUILD_TYPE="$BUILD_TYPE CAIRO"
