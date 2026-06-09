@@ -3921,36 +3921,46 @@ if test  "$_os" = "Darwin"; then
    sdk_minor=`echo $sdk_target | cut -d"." -f2`
    test -z "$sdk_minor" && sdk_minor=0
 
-   dnl Minimum supported macOS is 11.0 (Big Sur). Pre-11 targets are only
-   dnl accepted down to the old 10.9 floor for legacy Intel builds.
-   if test "$_darwin_cpu" = "arm64" -o "$_darwin_cpu" = "aarch64"; then
-      if test "$sdk_major" -lt "11"; then
-         AC_MSG_ERROR([Apple Silicon (arm64) requires --with-macosx-target=11.0 or later])
-      fi
-   fi
-
-   if test "$sdk_major" -lt "10" ; then
-      AC_MSG_ERROR([macOS deployment target < 11.0 is no longer supported])
+   dnl Minimum supported macOS deployment target is 11.0 (Big Sur). This is
+   dnl also the hard floor for Apple Silicon (arm64), so enforce it for every
+   dnl architecture.
+   if test "$sdk_major" -lt "11" ; then
+      AC_MSG_ERROR([macOS deployment target < 11.0 is no longer supported; use --with-macosx-target=11.0 or later])
    else
       MACOSX_DEPLOYMENT_TARGET=$sdk_target
       sdk_path=$with_macosx_sdk
       if test -z "$sdk_path"; then
-          dnl --macosx-sdk not used (or blank): We look for the SDK
-          sdk_found=`xcodebuild -showsdks | $EGREP "sdk macosx(11|12|13|14|15|26)" | sed -e "s/.*sdk //" | tail -n1`
-          if test -z "$sdk_found"; then
-             AC_MSG_ERROR([No SDK with OSX $sdk_target compatibility found])
-          else
+          dnl --macosx-sdk not used (or blank): We look for the SDK.
+          dnl Prefer xcodebuild when full Xcode is installed, but fall back
+          dnl to xcrun so that Command Line Tools-only setups also work
+          dnl (xcodebuild is unavailable without the full Xcode app).
+          sdk_found=`xcodebuild -showsdks 2>/dev/null | $EGREP "sdk macosx(1[1-9]|[2-9][0-9])" | sed -e "s/.*sdk //" | tail -n1`
+          if test -n "$sdk_found"; then
              AC_MSG_RESULT([yes, by using SDK $sdk_found])
-          fi
-          sdk_path=`xcodebuild -version -sdk ${sdk_found} Path`
-      elif test ! -d "$sdk_path"; then
-          sdk_found=`xcodebuild -showsdks | $EGREP "sdk macosx${sdk_path}" | sed -e "s/.*sdk //" | tail -n1`
-          if test -z "$sdk_found"; then
-             AC_MSG_ERROR([SDK macosx${sdk_path} not found by xcodebuild])
+             sdk_path=`xcodebuild -version -sdk ${sdk_found} Path`
           else
-             AC_MSG_RESULT([SDK $sdk_found])
+             sdk_path=`xcrun --sdk macosx --show-sdk-path 2>/dev/null`
+             if test -z "$sdk_path"; then
+                AC_MSG_ERROR([No SDK with OSX $sdk_target compatibility found])
+             fi
+             AC_MSG_RESULT([yes, by using SDK at $sdk_path])
           fi
-          sdk_path=`xcodebuild -version -sdk ${sdk_found} Path`
+      elif test ! -d "$sdk_path"; then
+          dnl --macosx-sdk=<version> given (not a path): resolve it. Prefer
+          dnl xcodebuild, but fall back to xcrun so Command Line Tools-only
+          dnl setups (no full Xcode) also work.
+          sdk_found=`xcodebuild -showsdks 2>/dev/null | $EGREP "sdk macosx${sdk_path}" | sed -e "s/.*sdk //" | tail -n1`
+          if test -n "$sdk_found"; then
+             AC_MSG_RESULT([SDK $sdk_found])
+             sdk_path=`xcodebuild -version -sdk ${sdk_found} Path`
+          else
+             sdk_xcrun=`xcrun --sdk macosx${sdk_path} --show-sdk-path 2>/dev/null`
+             if test -z "$sdk_xcrun"; then
+                AC_MSG_ERROR([SDK macosx${sdk_path} not found])
+             fi
+             AC_MSG_RESULT([SDK at $sdk_xcrun])
+             sdk_path=$sdk_xcrun
+          fi
       fi
       AC_MSG_CHECKING([for $sdk_path])
       if test -d "$sdk_path"; then
@@ -3976,9 +3986,29 @@ AC_MSG_CHECKING([which python to use])
 if test "$_os" = "Darwin" && test "$with_system_python" != "no"; then
    with_system_python=yes
 
-   _python="/Library/Frameworks/Python.framework/Versions/Current/bin/python"
-   if test ! -f $_python; then
-   	  _python="/usr/bin/python"
+   dnl Recent macOS releases no longer ship a usable Python under /usr/bin,
+   dnl so probe the locations where a system/user Python is typically found:
+   dnl the python.org framework build, Homebrew (Apple Silicon and Intel),
+   dnl and the Command Line Tools python3. Fall back to whatever python3 or
+   dnl python is on PATH.
+   _python=""
+   for _python_candidate in \
+       "/Library/Frameworks/Python.framework/Versions/Current/bin/python3" \
+       "/Library/Frameworks/Python.framework/Versions/Current/bin/python" \
+       "/opt/homebrew/bin/python3" \
+       "/usr/local/bin/python3" \
+       "/usr/bin/python3" \
+       "/usr/bin/python" ; do
+       if test -x "$_python_candidate"; then
+           _python="$_python_candidate"
+           break
+       fi
+   done
+   if test -z "$_python"; then
+       AC_PATH_PROGS([_python], [python3 python])
+   fi
+   if test -z "$_python"; then
+       AC_MSG_ERROR([no system python found; install Python (e.g. from python.org or Homebrew), or configure with --without-system-python])
    fi
    AC_MSG_RESULT([compiling against system python ($_python)])
 
@@ -3986,7 +4016,7 @@ if test "$_os" = "Darwin" && test "$with_system_python" != "no"; then
 
    dnl hex version of Python 2.7.1 = 34013680
    if test $_python_hexversion -ge 34013680 ; then
-   	  _python_version=`$_python -c "import sys; print sys.version;" | head -c 3`
+   	  _python_version=`$_python -c "import sys; print(sys.version);" | head -c 3`
       AC_MSG_RESULT([compiling against system python (version $_python_version)])
 
 	  if ! $_python -c "import distutils.sysconfig;"; then
@@ -3994,18 +4024,34 @@ if test "$_os" = "Darwin" && test "$with_system_python" != "no"; then
 	  fi
 	  _python_ver=`$_python -c "import distutils.sysconfig; print(distutils.sysconfig.get_config_var('VERSION'));"`
 
+	  dnl Locate the headers. Prefer the framework/SDK locations, but fall
+	  dnl back to whatever include dir the interpreter itself reports (this
+	  dnl is what makes Homebrew and other non-framework installs work).
 	  if test -d "/Library/Frameworks/Python.framework/Versions/$_python_ver/include/python$_python_ver"; then
 	  	 PYTHON_CFLAGS="-I/Library/Frameworks/Python.framework/Versions/$_python_ver/include/python$_python_ver"
          elif test -d "$MACOSX_SDK_PATH/usr/include/python$_python_ver"; then
              PYTHON_CFLAGS="-I$MACOSX_SDK_PATH/usr/include/python$_python_ver"
-	  else
+         elif test -d "$MACOSX_SDK_PATH/System/Library/Frameworks/Python.framework/Versions/$_python_ver/include/python$_python_ver"; then
              PYTHON_CFLAGS="-I$MACOSX_SDK_PATH/System/Library/Frameworks/Python.framework/Versions/$_python_ver/include/python$_python_ver"
+	  else
+             _python_inc=`$_python -c "import distutils.sysconfig; print(distutils.sysconfig.get_python_inc());"`
+             PYTHON_CFLAGS="-I$_python_inc"
 	  fi
    else
 		AC_MSG_ERROR([Python 2.7.1 or higher is required])
    fi
 
-   PYTHON_LIBS="-framework Python"
+   dnl A framework build links against the Python framework; any other
+   dnl install (Homebrew, etc.) links against libpython in its LIBDIR.
+   case "$_python" in
+       /Library/Frameworks/Python.framework/*|*/System/Library/Frameworks/Python.framework/*)
+           PYTHON_LIBS="-framework Python"
+           ;;
+       *)
+           _python_libdir=`$_python -c "import distutils.sysconfig; print(distutils.sysconfig.get_config_var('LIBDIR'));"`
+           PYTHON_LIBS="-L$_python_libdir -lpython$_python_ver"
+           ;;
+   esac
 elif test -n "$with_system_python" -o -n "$with_system_libs" && \
 	test "$with_system_python" != "no"; then
    with_system_python=yes
