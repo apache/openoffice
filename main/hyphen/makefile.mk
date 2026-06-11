@@ -44,9 +44,9 @@ TARFILE_MD5=5ade6ae2a99bc1e9e57031ca88d36dad
 
 ADDITIONAL_FILES += makefile.mk
 
-PATCH_FILES= \
-	hyphen-2.8.8.patch \
-	hyphen-2.8.8-read-charset.patch
+# hyphen 2.8.8 builds cleanly from the upstream tarball; no in-tree patches
+# are needed (the old 2.7.1 patches that rewired the dictionary build and
+# tweaked the charset read are obsolete for this version).
 
 .IF "$(GUI)"=="UNX"
 CONFIGURE_DIR=$(BUILD_DIR)
