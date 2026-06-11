@@ -1961,6 +1961,26 @@ fi
 AC_SUBST(GNUTAR)
 
 dnl ===================================================================
+dnl Search for xz, needed to unpack .tar.xz external dependency tarballs
+dnl ===================================================================
+AC_MSG_CHECKING([for xz])
+for a in $XZ xz; do
+      $a --version 2> /dev/null > /dev/null
+      if test $? -eq 0; then
+           XZ=$a
+           break
+      fi
+done
+if test -z "$XZ"; then
+    AC_MSG_RESULT([not found])
+    AC_MSG_WARN([xz not found - building with a .tar.xz external dependency will fail. Install xz-utils.])
+    echo "xz not found - building with a .tar.xz external dependency will fail. Install xz-utils." >> warn
+else
+    AC_MSG_RESULT($XZ)
+fi
+AC_SUBST(XZ)
+
+dnl ===================================================================
 dnl  Test the solaris compiler version
 dnl ===================================================================
 if test "$_os" = "SunOS"; then
