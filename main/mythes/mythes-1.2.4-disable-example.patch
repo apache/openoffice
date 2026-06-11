@@ -1,0 +1,11 @@
+--- misc/mythes-1.2.4/Makefile.in	2014-06-27 04:24:01
++++ misc/build/mythes-1.2.4/Makefile.in	2026-06-11 08:10:31
+@@ -705,7 +705,7 @@
+ 	       exit 1; } >&2
+ check-am: all-am
+ check: check-am
+-all-am: Makefile $(LTLIBRARIES) $(PROGRAMS) $(SCRIPTS) $(DATA) \
++all-am: Makefile $(LTLIBRARIES) $(SCRIPTS) $(DATA) \
+ 		$(HEADERS) config.h
+ installdirs:
+ 	for dir in "$(DESTDIR)$(libdir)" "$(DESTDIR)$(bindir)" "$(DESTDIR)$(pkgconfdir)" "$(DESTDIR)$(libmythes_1_2_includedir)"; do \
