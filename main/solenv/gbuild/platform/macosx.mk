@@ -110,9 +110,12 @@ endif
 gb_OBJCFLAGS := -x objective-c -fobjc-exceptions
 gb_OBJCXXFLAGS := -x objective-c++ -fobjc-exceptions
 
-ifneq ($(MACOSX_DEPLOYMENT_TARGET),)
-	gb_CXXFLAGS += -DMAC_OS_X_VERSION_MAX_ALLOWED=MAC_OS_X_VERSION_$(subst .,_,$(MACOSX_DEPLOYMENT_TARGET))
-endif
+# Do NOT force MAC_OS_X_VERSION_MAX_ALLOWED.  Apple renamed the constants at
+# macOS 11: the old MAC_OS_X_VERSION_<v> family stops at 10_15, and 11+ uses
+# MAC_OS_VERSION_<v> (no "_X_").  Forcing MAC_OS_X_VERSION_11_0 references an
+# undefined macro (expands to 0) and trips AvailabilityMacros.h's
+# "MAX_ALLOWED must be >= MIN_REQUIRED" #error.  Letting it default makes the
+# SDK derive max(14.0, MIN_REQUIRED).  (Mirrors solenv/inc/unxmacc.mk.)
 
 ifneq ($(EXTERNAL_WARNINGS_NOT_ERRORS),TRUE)
 gb_CFLAGS_WERROR := -Werror -Wno-error=deprecated
