@@ -1,3 +1,22 @@
+diff -ur misc/nss-3.39/nspr/configure misc/build/nss-3.39/nspr/configure
+--- misc/nss-3.39/nspr/configure	2018-08-28 05:42:28.000000000 -0700
++++ misc/build/nss-3.39/nspr/configure	2020-10-06 07:41:59.563345390 -0700
+@@ -6570,8 +6570,14 @@
+     AS='$(CC) -x assembler-with-cpp'
+     CFLAGS="$CFLAGS -Wall -fno-common"
+     case "${target_cpu}" in
++        aarch64|arm64)
++            CPU_ARCH=arm64
++            ;;
+         arm*)
+-            CPU_ARCH=arm
++            # On Apple Silicon the bundled config.guess reports the bare CPU
++            # "arm"; the macOS arch name is "arm64" (plain "arm" makes ld pick
++            # the nonexistent armv4t).  Treat any arm on Darwin as arm64.
++            CPU_ARCH=arm64
+             ;;
+         i*86*|x86_64)
+             if test -n "$USE_64"; then
 diff -ur misc/nss-3.39/nss/lib/sqlite/config.mk misc/build/nss-3.39/nss/lib/sqlite/config.mk
 --- misc/nss-3.39/nss/lib/sqlite/config.mk	2018-08-31 05:55:53.000000000 -0700
 +++ misc/build/nss-3.39/nss/lib/sqlite/config.mk	2018-09-10 10:36:01.074375000 -0700
