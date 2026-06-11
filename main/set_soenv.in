@@ -1522,7 +1522,15 @@ elsif ($platform =~ m/darwin/)
 	   # Xcode 5
 	   $STLINC = "$TOOLSPATH/Toolchains/XcodeDefault.xctoolchain/usr/lib/c++/v1/";
 	}
-    $SOLARINC .= $I.$STLINC . $I.$FRAMEWORKSHOME.$ds."JavaVM.framework".$ds."Headers";
+    $SOLARINC .= $I.$STLINC;
+    # JNI headers.  The old Apple JavaVM.framework/Headers/jni.h is gone
+    # (removed by Apple ~2017); a real JDK (Oracle/OpenJDK/Temurin/Semeru)
+    # puts them in $JAVA_HOME/include and $JAVA_HOME/include/darwin (jni_md.h),
+    # matching the layout used for the other platforms above.
+    if (!($JDK eq "gcj"))
+    {  $SOLARINC .= $I.'$JAVA_HOME'.$INCLUDE.
+                    $I.'$JAVA_HOME'.$INCLUDE.$ds."darwin";
+    }
     $GUIBASE  = "aqua";
 }
 else
