@@ -75,6 +75,11 @@ PATCH_FILES+=nss_linux.patch
 BUILD_ACTION+=NSS_DISABLE_GTESTS=1
 .ENDIF
 
+.IF "$(OS)"=="MACOSX"
+# clang 13+ warns on unused-but-set variables, fatal under NSS's default -Werror
+BUILD_ACTION+=NSS_DISABLE_GTESTS=1 NSS_ENABLE_WERROR=0
+.ENDIF
+
 
 .IF "$(GUI)"=="WNT"
 
