@@ -56,6 +56,17 @@ BUILD_ACTION=$(COMPATH)$/vcpackages$/vcbuild.exe -useenv CoinMP\\MSVisualStudio\
 CONFIGURE_ACTION=./configure
 #CONFIGURE_FLAGS=--disable-pkg-config --disable-bzlib --disable-zlib CC='$(CC) $(ARCH_FLAGS)' CXX='$(CXX) $(ARCH_FLAGS)' CFLAGS='$(ARCH_FLAGS) -Wc,-arch -Wc,i386' CPPFLAGS='$(ARCH_FLAGS)' LDFLAGS='$(ARCH_FLAGS)' compiler_flags='$(ARCH_FLAGS)'
 CONFIGURE_FLAGS=--disable-pkg-config --with-blas=BUILD --with-lapack=BUILD --disable-bzlib --disable-zlib CC='$(CC) $(ARCH_FLAGS)' CXX='$(CXX) $(ARCH_FLAGS)'
+.IF "$(OS)"=="MACOSX"
+# Each CoinMP sub-library (Osi, Clp, ...) depends on symbols from its siblings
+# (CoinUtils, ...).  CoinMP's bundled 2013-era libtool only adds the Darwin
+# "-undefined dynamic_lookup" escape hatch for MACOSX_DEPLOYMENT_TARGET=10.x;
+# at 11.0+ (Apple Silicon baseline) that case falls through, leaving the flag
+# empty, so each .dylib is linked with unresolved sibling symbols and the
+# two-level-namespace linker rejects it ("symbol(s) not found for arm64").
+# --enable-dependency-linking makes the inter-library dependencies explicit on
+# each link line (and sets -no-undefined), which is the correct fix.
+CONFIGURE_FLAGS+=--enable-dependency-linking
+.ENDIF
 #BUILD_ACTION= CC="$(CC) $(ARCH_FLAGS)" CPP="$(CXX) $(ARCH_FLAGS)" $(GNUMAKE) -j8
 BUILD_ACTION= $(GNUMAKE) -j$(MAXPROCESS)
 .ENDIF
