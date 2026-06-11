@@ -1759,6 +1759,15 @@ if test "$_os" != "WINNT" -o "$WITH_MINGWIN" = "yes"; then
    AC_PROG_CC
 fi
 
+dnl Newer autoconf (>= 2.70) probes for the highest C standard the compiler
+dnl accepts and appends it (e.g. -std=gnu23) to $CC.  That breaks bundled
+dnl module configure scripts (nss/nspr, ...) which pass CC=$(CC) unquoted as
+dnl an inline environment assignment: the embedded space makes the shell
+dnl treat -std=gnu23 as a command ("-std=gnu23: command not found").  We pin
+dnl the C dialect per-module in solenv/inc/*.mk anyway, so strip the appended
+dnl -std= token and keep $CC a single bare compiler word.
+CC=`echo "$CC" | $SED 's/ -std=[[^ ]]*//g'`
+
 COMPATH=`dirname "$CC"`
 if test "$COMPATH" = "." ; then
     AC_PATH_PROGS(COMPATH, $CC)
