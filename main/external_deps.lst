@@ -44,9 +44,9 @@ if (ENABLE_UNIT_TESTS == YES)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if ( true )
-    MD5 = 067201ea8b126597670b5eff72e1f66c
-    name = mythes-1.2.0.tar.gz
-    URL1 = https://sourceforge.net/projects/hunspell/files/MyThes/1.2.0/mythes-1.2.0.tar.gz
+    MD5 = a8c2c5b8f09e7ede322d5c602ff6a4b6
+    name = mythes-1.2.4.tar.gz
+    URL1 = https://sourceforge.net/projects/hunspell/files/MyThes/1.2.4/mythes-1.2.4.tar.gz
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SYSTEM_MDDS != YES)
@@ -283,9 +283,9 @@ if (WITH_CATB_FONTS == YES)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (ENABLE_CATEGORY_B==YES && SYSTEM_HYPH!=YES)
-    MD5 = 48a9f787f43a09c0a9b7b00cd1fddbbf
-    name = hyphen-2.7.1.tar.gz
-    URL1 = https://sourceforge.net/projects/hunspell/files/Hyphen/2.7/$(name)
+    MD5 = 5ade6ae2a99bc1e9e57031ca88d36dad
+    name = hyphen-2.8.8.tar.gz
+    URL1 = https://sourceforge.net/projects/hunspell/files/Hyphen/2.8/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (ENABLE_CATEGORY_B==YES && SYSTEM_HUNSPELL!=YES)

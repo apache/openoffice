@@ -39,14 +39,14 @@ all:
 
 .ELSE
 
-TARFILE_NAME=hyphen-2.7.1
-TARFILE_MD5=48a9f787f43a09c0a9b7b00cd1fddbbf
+TARFILE_NAME=hyphen-2.8.8
+TARFILE_MD5=5ade6ae2a99bc1e9e57031ca88d36dad
 
 ADDITIONAL_FILES += makefile.mk
 
 PATCH_FILES= \
-	hyphen-2.7.1.patch \
-	hyphen-2.7.1-read-charset.patch
+	hyphen-2.8.8.patch \
+	hyphen-2.8.8-read-charset.patch
 
 .IF "$(GUI)"=="UNX"
 CONFIGURE_DIR=$(BUILD_DIR)
