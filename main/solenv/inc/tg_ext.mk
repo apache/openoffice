@@ -135,6 +135,18 @@ $(MISC)/%.unpack : $(TARFILE_LOCATION2)/%.tgz
 	@$(TYPE) $(mktmp $(UNPACKCMD)) > $@.$(INPATH)
 	@$(RENAME) $@.$(INPATH) $@
 
+$(MISC)/%.unpack : $(TARFILE_LOCATION2)/%.tar.xz
+	@-$(RM) $@
+	@noop $(assign UNPACKCMD := $(XZ) -d -c $(subst,\,/ $(TARFILE_LOCATION)/$(TARFILE_MD5)-$(TARFILE_NAME).tar.xz) $(TARFILE_FILTER) | $(GNUTAR) -x$(tar_verbose_switch)f - )
+	@$(TYPE) $(mktmp $(UNPACKCMD)) > $@.$(INPATH)
+	@$(RENAME) $@.$(INPATH) $@
+
+$(MISC)/%.unpack : $(TARFILE_LOCATION2)/%.txz
+	@-$(RM) $@
+	@noop $(assign UNPACKCMD := $(XZ) -d -c $(subst,\,/ $(TARFILE_LOCATION)/$(TARFILE_MD5)-$(TARFILE_NAME).txz) $(TARFILE_FILTER) | $(GNUTAR) -x$(tar_verbose_switch)f - )
+	@$(TYPE) $(mktmp $(UNPACKCMD)) > $@.$(INPATH)
+	@$(RENAME) $@.$(INPATH) $@
+
 $(MISC)/%.unpack : $(TARFILE_LOCATION2)/%.tar
 	@-$(RM) $@
 	@noop $(assign UNPACKCMD := $(GNUTAR) -x$(tar_verbose_switch)f $(TARFILE_LOCATION)/$(TARFILE_MD5)-$(TARFILE_NAME).tar)
