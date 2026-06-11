@@ -17,6 +17,24 @@ diff -ur misc/nss-3.39/nspr/configure misc/build/nss-3.39/nspr/configure
              ;;
          i*86*|x86_64)
              if test -n "$USE_64"; then
+diff -ur misc/nss-3.39/nss/coreconf/Darwin.mk misc/build/nss-3.39/nss/coreconf/Darwin.mk
+--- misc/nss-3.39/nss/coreconf/Darwin.mk	2018-08-31 05:55:53.000000000 -0700
++++ misc/build/nss-3.39/nss/coreconf/Darwin.mk	2020-10-06 07:51:49.590356560 -0700
+@@ -32,7 +32,13 @@
+ endif
+ else
+ ifeq (arm,$(CPU_ARCH))
+-# Nothing set for arm currently.
++# Apple Silicon: "uname -p" reports "arm", but NSS uses "aarch64" as its
++# 64-bit ARM token.  freebl's Makefile selects the 64-bit HACL crypto
++# (e.g. Hacl_Poly1305_64.c) only for CPU_ARCH=aarch64, which also matches the
++# __aarch64__ macro the compiler defines and that chacha20poly1305.c keys on;
++# leaving it as "arm" builds the 32-bit sources and the 64-bit symbol refs go
++# unresolved.  No -arch flag needed -- the build is native arm64.
++override CPU_ARCH = aarch64
+ else
+ OS_REL_CFLAGS	= -Dppc
+ CC              += -arch ppc
 diff -ur misc/nss-3.39/nss/lib/sqlite/config.mk misc/build/nss-3.39/nss/lib/sqlite/config.mk
 --- misc/nss-3.39/nss/lib/sqlite/config.mk	2018-08-31 05:55:53.000000000 -0700
 +++ misc/build/nss-3.39/nss/lib/sqlite/config.mk	2018-09-10 10:36:01.074375000 -0700
