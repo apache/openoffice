@@ -36,9 +36,16 @@ LINKOUTPUT_FILTER=
 #  compiling STLport sources too, either internally or externally.
 CDEFS+=-DGLIBC=2 -D_PTHREADS -D_REENTRANT -DNO_PTHREAD_PRIORITY $(PROCESSOR_DEFINES) -D_USE_NAMESPACE=1
 
-.IF "$(MACOSX_DEPLOYMENT_TARGET)" != ""
-	CDEFS += -DMAC_OS_X_VERSION_MAX_ALLOWED=MAC_OS_X_VERSION_$(subst,.,_ $(MACOSX_DEPLOYMENT_TARGET))
-.ENDIF
+# Do NOT force MAC_OS_X_VERSION_MAX_ALLOWED.  Apple renamed the constants at
+# macOS 11: the old MAC_OS_X_VERSION_<v> family stops at 10_15, and 11+ uses
+# MAC_OS_VERSION_<v> (no "_X_").  The old code emitted
+# -DMAC_OS_X_VERSION_MAX_ALLOWED=MAC_OS_X_VERSION_$(target), which for an 11.0+
+# deployment target references an undefined macro (expands to 0) and trips
+# AvailabilityMacros.h's "MAC_OS_X_VERSION_MAX_ALLOWED must be >=
+# MAC_OS_X_VERSION_MIN_REQUIRED" #error.  Leaving it unset lets the SDK derive
+# the correct value, max(14.0, MIN_REQUIRED).  Nothing in the tree reads this
+# macro (the lone consumer, vcl PictToBmpFlt.cxx, checks the distinct
+# __MAC_OS_X_VERSION_MAX_ALLOWED), so dropping the -D is safe on old SDKs too.
 
 CDEFS+=-DQUARTZ
 EXTRA_CDEFS*=-isysroot $(MACOSX_SDK_PATH)
