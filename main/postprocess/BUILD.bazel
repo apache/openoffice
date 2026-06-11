@@ -929,7 +929,13 @@ _MAIN_XCU = [
     oc_xcu("Office/UI/StartModuleCommands.xcu"),
     oc_xcu("Office/UI/StartModuleWindowState.xcu"),
     oc_xcu("Office/UI.xcu"),
-    oc_xcu("Office/Views.xcu"),
+    # Sidebar hidden by default: ship a stage-time-patched Views.xcu that flips
+    # SID_SIDEBAR (10336) Visible true->false.  This stops the sfx2
+    # SidebarController (and its async UpdateConfigurations) from ever being
+    # constructed on a document frame, which avoids the use-after-free hang
+    # documented in bug-readme.md (latent AOO lifetime race; not masked by the
+    # release CRT in this build).  See :sidebar_off_views_xcu genrule below.
+    ":sidebar_off_views_xcu",
     oc_xcu("Office/WebWizard.xcu"),
     oc_xcu("Office/Writer.xcu"),
     oc_xcu("Setup.xcu"),
@@ -971,6 +977,27 @@ _MAIN_XCU = [
     oc_mod("TypeDetection/UISort.xcu",   "math"),
     oc_mod("TypeDetection/UISort.xcu",   "writer"),
 ]
+
+# Stage-time copy of Office/Views.xcu with the Sidebar (SID_SIDEBAR == 10336)
+# default flipped from Visible=true to Visible=false.  Views.xcu contains exactly
+# one <value>true</value> (the sidebar; node 5539 is already false), so a single
+# string replace is unambiguous.  Output is consumed by main_xcd's packer (not by
+# configmgr at runtime), so the UTF-8 BOM that Set-Content emits is harmless here
+# — unlike a hand-written profile registrymodifications.xcu, which configmgr
+# rejects as a profile access error.  Mirrors the forcedefault_linguistic_xcu
+# substitution pattern.  See bug-readme.md for the underlying Sidebar UAF.
+genrule(
+    name = "sidebar_off_views_xcu",
+    srcs = [oc_xcu("Office/Views.xcu")],
+    outs = ["SidebarOff/Office/Views.xcu"],
+    cmd_bat = (
+        "powershell -NoProfile -Command " +
+        "\"(Get-Content -Raw '$(location " +
+        oc_xcu("Office/Views.xcu") +
+        ")').Replace('<value>true</value>', '<value>false</value>') " +
+        "| Set-Content -Encoding UTF8 '$(OUTS)'\""
+    ),
+)
 
 pack_registry(
     name = "main_xcd",

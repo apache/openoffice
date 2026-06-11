@@ -203,6 +203,34 @@ filegroup(
     visibility = ["//visibility:public"],
 )
 
+# ── Real ICU data as a linkable object ────────────────────────────
+# Convert the prebuilt icudt49l.dat into a COFF object so the runtime
+# icudata.dll carries the REAL data (break iterators, collation, …)
+# instead of the empty stub.  Without this, ICU has no brkitr data and
+# i18npool's BreakIterator_Unicode::loadICUBreakIterator throws an
+# (empty-message) RuntimeException on the first Writer text layout,
+# which aborts document load → office self-terminates.  See repo
+# bug-readme.md.
+#
+# genccode -o emits a COFF object directly (pkg_genc.h CAN_GENERATE_OBJECTS);
+# with no -m match-arch file getArchitecture() defaults to IMAGE_FILE_MACHINE_I386,
+# matching the VS2008 x86 build.
+#   -e icudt49     → C symbol  icudt49_dat  (== U_ICUDATA_ENTRY_POINT for ICU 49,
+#                    i.e. the same symbol the stub used to provide)
+#   -f icudt49_dat → output file icudt49_dat.obj (predictable name for outs)
+#   -d $(RULEDIR)  → write into the rule's output dir
+genrule(
+    name = "icudt49_dat_obj",
+    srcs = ["source/data/in/icudt49l.dat"],
+    outs = ["icudt49_dat.obj"],
+    tools = [":genccode"],
+    cmd_bat = (
+        "$(execpath :genccode) -o -e icudt49 -f icudt49_dat " +
+        "-d $(RULEDIR) $(execpath source/data/in/icudt49l.dat)"
+    ),
+    visibility = ["//visibility:public"],
+)
+
 # ── ICU shared DLLs (for i18npool.dll / i18nsearch.dll) ──────────
 # These are the DLLs that ship with OpenOffice and are loaded at runtime.
 # Consumers get __declspec(dllimport) via ICU's own macros.
@@ -273,23 +301,29 @@ filegroup(
     visibility = ["//visibility:public"],
 )
 
+# Runtime ICU data DLL — carries the REAL data (NOT the stub).
+# The data object (icudt49_dat.obj) is self-contained: it defines exactly one
+# symbol, icudt49_dat, and references nothing.  So this is a pure data DLL:
+#   /NOENTRY  — no DllMain/CRT startup needed (matches ICU's own icudt49.dll)
+#   /EXPORT:icudt49_dat — export the entry point (the stub used U_EXPORT in C
+#                         source; a hand-built COFF object has no dllexport flag,
+#                         so we export it explicitly here).  This is what icuuc.dll
+#                         imports via :icudata_implib.
+# NOTE: the build tools above (genbrk/gencmn/genccode) keep using the STUB
+# :icudata_static — they only need enough ICU to run, and making icudt49_dat.obj
+# depends on :genccode, so the runtime data DLL must not feed back into the tools.
 cc_binary(
     name = "icudata",
-    srcs = ["source/stubdata/stubdata.c"],
-    local_defines = select({
-        "@platforms//os:windows": _WIN_DEFINES,
-        "//conditions:default": [],
-    }),
-    copts = select({
-        "@platforms//os:windows": _WIN_DLL_COPTS,
-        "//conditions:default": ["-w"],
-    }),
+    srcs = [":icudt49_dat_obj"],
     linkshared = True,
     linkopts = select({
-        "@platforms//os:windows": ["/MANIFEST:NO"],
+        "@platforms//os:windows": [
+            "/NOENTRY",
+            "/EXPORT:icudt49_dat",
+            "/MANIFEST:NO",
+        ],
         "//conditions:default": [],
     }),
-    deps = [":icuuc_headers"],
     visibility = ["//visibility:public"],
 )
 
