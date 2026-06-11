@@ -87,7 +87,12 @@ CFLAGS+=-Wno-deprecated-declarations
 #  Compilation flags
 # ---------------------------------
 # Normal C compilation flags
-CFLAGSCC=-pipe -fsigned-char
+# Clang 16+ (Xcode 15+) removed support for K&R-style function definitions and
+# implicit-int, turning them from warnings into hard errors. Much of the
+# in-tree C is old-style, so pin the C dialect to gnu89 (symmetric with the
+# gnu++98 C++ pin). gnu89 still permits later constructs as GNU extensions, so
+# it does not break modern C modules.
+CFLAGSCC=-pipe -fsigned-char -std=gnu89
 
 # Normal Objective C compilation flags
 #OBJCFLAGS=-no-precomp
