@@ -33,15 +33,14 @@ TARGET=mythes
 # --- Files --------------------------------------------------------
 
 
-TARFILE_NAME=mythes-1.2.0
-TARFILE_MD5=067201ea8b126597670b5eff72e1f66c
+TARFILE_NAME=mythes-1.2.4
+TARFILE_MD5=a8c2c5b8f09e7ede322d5c602ff6a4b6
 
 ADDITIONAL_FILES += makefile.mk
 
-PATCH_FILES=mythes-1.2.0-vanilla-th-gen-idx.patch \
-	mythes-1.2.0-overflow.patch \
-	mythes-1.2.0-makefile-mk.patch \
-	mythes-1.2.0-disable-example.patch
+PATCH_FILES=mythes-1.2.4-vanilla-th-gen-idx.patch \
+	mythes-1.2.4-makefile-mk.patch \
+	mythes-1.2.4-disable-example.patch
 
 .IF "$(GUI)"=="UNX"
 CONFIGURE_DIR=$(BUILD_DIR)
@@ -52,6 +51,10 @@ CONFIGURE_DIR=$(BUILD_DIR)
 # still needed also in system-mythes case as it creates the makefile
 CONFIGURE_ACTION=configure
 CONFIGURE_FLAGS= --disable-shared --with-pic
+# hunspell is only needed by the example program, which is not built
+# (see mythes-1.2.4-disable-example.patch); preset the variables so
+# configure does not abort when no hunspell pkg-config file is around
+CONFIGURE_FLAGS+= HUNSPELL_CFLAGS=-I. HUNSPELL_LIBS=-L.
 
 .IF "$(COM)"=="C52" && "$(CPU)"=="U"
 LCL_CONFIGURE_CFLAGS+=-m64
@@ -80,6 +83,7 @@ OUT2INC += mythes.hxx
 .IF "$(COM)"=="GCC"
 CONFIGURE_ACTION=configure
 CONFIGURE_FLAGS= --disable-shared --with-pic
+CONFIGURE_FLAGS+= HUNSPELL_CFLAGS=-I. HUNSPELL_LIBS=-L.
 
 BUILD_ACTION=make
 
