@@ -38,8 +38,9 @@ TARFILE_MD5=a8c2c5b8f09e7ede322d5c602ff6a4b6
 
 ADDITIONAL_FILES += makefile.mk
 
-# mythes 1.2.4 builds cleanly from the upstream tarball; no in-tree patches
-# are needed (the old 1.2.0 patches are obsolete for this version).
+PATCH_FILES=mythes-1.2.4-vanilla-th-gen-idx.patch \
+	mythes-1.2.4-makefile-mk.patch \
+	mythes-1.2.4-disable-example.patch
 
 .IF "$(GUI)"=="UNX"
 CONFIGURE_DIR=$(BUILD_DIR)
@@ -50,7 +51,8 @@ CONFIGURE_DIR=$(BUILD_DIR)
 # still needed also in system-mythes case as it creates the makefile
 CONFIGURE_ACTION=configure
 CONFIGURE_FLAGS= --disable-shared --with-pic
-# hunspell is only needed by the example program; preset the variables so
+# hunspell is only needed by the example program, which is not built
+# (see mythes-1.2.4-disable-example.patch); preset the variables so
 # configure does not abort when no hunspell pkg-config file is around
 CONFIGURE_FLAGS+= HUNSPELL_CFLAGS=-I. HUNSPELL_LIBS=-L.
 
