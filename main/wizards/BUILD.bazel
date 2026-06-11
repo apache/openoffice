@@ -1,0 +1,20 @@
+# wizards — mostly a deferred (Java) module.  The only piece needed for the
+# en-US runtime is the initial USER BASIC library template: the Standard-only
+# script.xlc / dialog.xlc that scp2 ships as basicusr.zip into user/basic/.
+# Without it, a fresh profile has no user/basic/script.xlc and the application
+# BASIC library container raises ERRCODE_IO_GENERAL on startup ("Error loading
+# BASIC of document .../user/basic/script.xlc/").  See repo bug-readme.md.
+#
+# source/config/      → user/basic/ template  (Standard, link=false)
+# source/configshare/ → share/basic/ index    (lists the deferred wizard libs;
+#                       NOT staged — those .xlb libraries aren't built, and the
+#                       share read fails silently anyway.)
+
+filegroup(
+    name = "basic_user_config",
+    srcs = [
+        "source/config/dialog.xlc",
+        "source/config/script.xlc",
+    ],
+    visibility = ["//visibility:public"],
+)

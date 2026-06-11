@@ -522,6 +522,18 @@ tree_install(
     dst          = "presets/config",
 )
 
+# Initial user BASIC library template (Standard-only script.xlc/dialog.xlc).
+# Copied to $UserInstallation/user/basic/ by UserInstall::finalize() on first
+# launch, so the application BASIC library container finds a valid (empty)
+# user/basic/script.xlc instead of raising ERRCODE_IO_GENERAL.  Replaces the
+# scp2 basicusr.zip seed (built by the deferred wizards module).
+tree_install(
+    name = "_install_presets_basic",
+    src          = "//main/wizards:basic_user_config",
+    strip_prefix = "main/wizards/source/config",
+    dst          = "presets/basic",
+)
+
 # ── images.zip — toolbar and UI icons ─────────────────────────────────────────
 # share/config/images.zip    — default icon set (all modules)
 # share/config/images_industrial.zip — industrial/tango theme overrides
@@ -574,6 +586,7 @@ filegroup(
         ":_install_opensymbol",
         ":_install_presets_autotext",
         ":_install_presets_config",
+        ":_install_presets_basic",
         ":_install_images_zip",
         ":_install_images_industrial_zip",
         ":_install_uiconfig",

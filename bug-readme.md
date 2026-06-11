@@ -358,6 +358,36 @@ are source-level hardening, out of migration scope, and only bite if the office 
 
 ---
 
+## 10. Follow-on after the ICU fix — BASIC user-library seed (non-fatal)
+
+Once ICU has data, the Writer load proceeds far enough to reveal a *separate*, pre-existing first-start
+gap that the broken break iterator had been masking. The application BASIC library container reads
+`$(user)/basic/script.xlc` ([namecont.cxx:763-776](main/basic/source/uno/namecont.cxx#L763)); on a fresh
+profile the file is absent, `openFileRead` throws, and `nPass==0` raises `ERRCODE_IO_GENERAL` /
+`ERRCTX_SFX_LOADBASIC` → dialog **"Error loading BASIC of document …/user/basic/script.xlc/ : General
+input/output error."** It is **non-fatal** — the code continues past the dialog with an empty container
+(`xInput` stays empty → parse skipped). This is the *same* `SfxLibraryContainer::init` path that appears in
+Appendix A.4; the ICU break-iterator throw used to abort it before the dialog could even render.
+
+**Root cause:** scp2 seeds `user/basic/` from `basicusr.zip` (`gid_File_Basic_User`, the `Standard`-only
+`script.xlc`/`dialog.xlc`) and `share/basic/` from `basicshare.zip` — both produced by the **deferred
+`wizards` module**, so neither is staged.
+
+**Fix (staging):** the two `Standard`-only template files
+([wizards/source/config/script.xlc + dialog.xlc](main/wizards/source/config/script.xlc)) are now staged
+into `presets/basic/` via `//main/wizards:basic_user_config` + `tree_install :_install_presets_basic`
+([staging/BUILD.bazel](main/staging/BUILD.bazel)). `UserInstall::finalize()` copies `presets/` →
+`$UserInstallation/user/` on first launch, so `user/basic/script.xlc` exists and the read succeeds.
+The `configshare` `share/basic/script.xlc` is deliberately **not** staged: it lists wizard libraries
+(`Tools`, `Gimmicks`, …) that the deferred module doesn't build, and the share read (`nPass==1`) fails
+silently anyway.
+
+**Separate cosmetic item (not addressed here):** the error box title shows literal
+`${PRODUCTNAME} ${PRODUCTVERSION}` — product branding substitution (`org.openoffice.Setup/Product/ooName`
+etc., normally filled from the bootstrap/version config) isn't applied. Tracked separately from the crash.
+
+---
+
 ## Appendix A — raw debugger output
 
 ### A.1 Sig. A — `SfxInterface::Register` AV (sidebar off), with `kp`
