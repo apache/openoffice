@@ -3108,6 +3108,19 @@
  #define icMaxFlare     ((icMeasurementFlare) 0xFFFFFFFF) /* as defined by earlier versions */
  
  
+@@ -672,10 +673,11 @@
+     icGeometryUnknown                   = 0x00000000,  /* Unknown geometry */
+     icGeometry045or450                  = 0x00000001,  /* 0/45, 45/0 */
+     icGeometry0dord0                    = 0x00000002,  /* 0/d or d/0 */
++    icMaxEnumGeometry                   = 0xFFFFFFFF
+ } icMeasurementGeometry;
+ 
+ /** Convenience Enum Definition - Not defined in ICC specification*/
+-#define icMaxEnumGeometry ((icMeasurementGeometry) 0xFFFFFFFF)
++/*#define icMaxEnumGeometry ((icMeasurementGeometry) 0xFFFFFFFF)*/
+ #define icMaxGeometry     ((icMeasurementGeometry) 0xFFFFFFFF)
+ 
+
 --- misc/SampleICC-1.3.2/Tools/CmdLine/Makefile.in	Mon Aug 20 22:10:42 2007
 +++ misc/build/SampleICC-1.3.2/Tools/CmdLine/Makefile.in	Fri Jan 25 14:23:09 2008
 @@ -101,17 +101,13 @@
