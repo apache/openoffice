@@ -33,25 +33,31 @@ load(":postprocess.bzl", "services_rdb", "uiconfig_zip", "uiconfig_tree", "pack_
 # Python mods:  pymodule("module_name")
 _SERVICES_COMPONENTS = {
     # ── stoc / cppuhelper (UNO core runtime) ─────────────────────────────
-    # All bundled into bootstrap.uno.dll; stocservices separately.
+    # bootstrap.uno.dll = bootstrap/registry/loader/tdmanager only.  The
+    # reflection/introspection/invocation components are SEPARATE DLLs (each
+    # has its own component_getFactory; cannot merge into bootstrap.uno), so
+    # each .component must point at its own library — not bootstrap.uno.dll,
+    # which does not contain their factories (CannotActivateFactoryException).
     "//main/stoc:util/bootstrap.component":
         basis_native("bootstrap.uno.dll"),
     "//main/stoc:source/inspect/introspection.component":
-        basis_native("bootstrap.uno.dll"),
+        basis_native("introspection.uno.dll"),
     "//main/stoc:source/invocation_adapterfactory/invocadapt.component":
-        basis_native("bootstrap.uno.dll"),
+        basis_native("invocadapt.uno.dll"),
     "//main/stoc:source/invocation/invocation.component":
-        basis_native("bootstrap.uno.dll"),
+        basis_native("invocation.uno.dll"),
+    # javaloader/javavm: Java components (deferred) — still mapped to
+    # bootstrap.uno.dll (not built; only loaded if Java is used).
     "//main/stoc:source/javaloader/javaloader.component":
         basis_native("bootstrap.uno.dll"),
     "//main/stoc:source/javavm/javavm.component":
         basis_native("bootstrap.uno.dll"),
     "//main/stoc:source/namingservice/namingservice.component":
-        basis_native("bootstrap.uno.dll"),
+        basis_native("namingservice.uno.dll"),
     "//main/stoc:source/proxy_factory/proxyfac.component":
-        basis_native("bootstrap.uno.dll"),
+        basis_native("proxyfac.uno.dll"),
     "//main/stoc:source/corereflection/reflection.component":
-        basis_native("bootstrap.uno.dll"),
+        basis_native("reflection.uno.dll"),
     "//main/stoc:util/stocservices.component":
         basis_native("stocservices.uno.dll"),
 

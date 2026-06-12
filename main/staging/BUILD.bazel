@@ -58,6 +58,13 @@ collect_outputs(
         # ── UNO runtime infrastructure ────────────────────────────────────────
         "//main/stoc:bootstrap.uno",
         "//main/stoc:stocservices.uno",
+        # UNO reflection/introspection/invocation components (needed by BASIC/scripting)
+        "//main/stoc:reflection.uno",
+        "//main/stoc:introspection.uno",
+        "//main/stoc:invocation.uno",
+        "//main/stoc:invocadapt.uno",
+        "//main/stoc:namingservice.uno",
+        "//main/stoc:proxyfac.uno",
         "//main/binaryurp:binaryurp",
         "//main/bridges:msci_uno",
         "//main/io:streams",

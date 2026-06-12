@@ -155,5 +155,61 @@ cc_binary(
     visibility = ["//visibility:public"],
 )
 
+# ── stoc reflection / introspection / invocation component DLLs ───
+# Each is a standalone UNO component (its own component_getFactory, so they
+# cannot be merged into bootstrap.uno — symbol collision).  They were
+# registered in services.rdb (postprocess maps each impl here) but never
+# compiled; BASIC's ThisComponent introspection at view activation is the
+# first consumer (CannotActivateFactoryException: com.sun.star.comp.stoc.Introspection).
+# DLL names match the upstream .component loader URIs.
+_REFL_IMPLIBS = [
+    "//main/sal:sal_implib",
+    "//main/salhelper:salhelper_implib",
+    "//main/cppu:cppu3_implib",
+    "//main/cppuhelper:cppuhelper_implib",
+    "//main/registry:reg_implib",
+]
+
+_REFL_LINKOPTS = [
+    "$(execpath //main/sal:sal_implib)",
+    "$(execpath //main/salhelper:salhelper_implib)",
+    "$(execpath //main/cppu:cppu3_implib)",
+    "$(execpath //main/cppuhelper:cppuhelper_implib)",
+    "$(execpath //main/registry:reg_implib)",
+    "/MANIFEST:NO",
+]
+
+_REFL_COMPONENTS = {
+    "reflection.uno": [
+        "source/corereflection/crarray.cxx",
+        "source/corereflection/crbase.cxx",
+        "source/corereflection/crcomp.cxx",
+        "source/corereflection/crefl.cxx",
+        "source/corereflection/crenum.cxx",
+        "source/corereflection/criface.cxx",
+    ],
+    "introspection.uno": ["source/inspect/introspection.cxx"],
+    "invocation.uno": ["source/invocation/invocation.cxx"],
+    "invocadapt.uno": ["source/invocation_adapterfactory/iafactory.cxx"],
+    "namingservice.uno": ["source/namingservice/namingservice.cxx"],
+    "proxyfac.uno": ["source/proxy_factory/proxyfac.cxx"],
+}
+
+[
+    cc_binary(
+        name = _name,
+        srcs = _srcs,
+        copts = _COPTS,
+        defines = _DEFINES,
+        deps = _DEPS,
+        additional_linker_inputs = _REFL_IMPLIBS,
+        linkshared = True,
+        win_def_file = "util/component.def",
+        linkopts = _REFL_LINKOPTS,
+        visibility = ["//visibility:public"],
+    )
+    for _name, _srcs in _REFL_COMPONENTS.items()
+]
+
 exports_files(glob(["**/*.component"]))
 

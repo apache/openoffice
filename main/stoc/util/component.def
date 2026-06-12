@@ -1,0 +1,8 @@
+; Windows export file for standalone UNO component DLLs.
+; No LIBRARY line: shared by every stoc reflection/introspection component DLL.
+; Only the two ALWAYS-present component exports — component_canUnload is
+; optional (several stoc components, e.g. introspection, don't define it;
+; exporting it then fails to link).  Omitting it merely means "not unloadable".
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory

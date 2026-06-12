@@ -399,6 +399,36 @@ etc., normally filled from the bootstrap/version config) isn't applied. Tracked 
 
 ---
 
+## 11. Follow-on — unbuilt UNO reflection/introspection layer (the activation crash)
+
+With ICU + BASIC + Standard-library all fixed, the Writer view builds fully (toolbars, layout, frame
+**Show**) and then throws at the very last step — **view activation**:
+```
+type:  com.sun.star.loader.CannotActivateFactoryException
+msg:   bootstrap.uno.dll: cannot get factory of demanded implementation:
+       com.sun.star.comp.stoc.Introspection
+sb!SbUnoObject::doIntrospection ← BasicManager::SetGlobalUNOConstant ("ThisComponent")
+  ← SfxObjectShell::SetCurrentComponent ← SfxViewShell::Activate ← SwView::Activate
+```
+**Root cause:** the entire stoc UNO **reflection/introspection/invocation** layer was never compiled.
+`stoc/BUILD.bazel` built only `bootstrap.uno` (bootstrap/registry/loader/tdmanager) and `stocservices.uno`
+(typeconv/uri). Missing: `corereflection` (`CoreReflection`), `inspect` (`Introspection`), `invocation`
+(`Invocation`), `invocation_adapterfactory` (`InvocationAdapterFactory`), `namingservice` (`NamingService`),
+`proxy_factory` (`ProxyFactory`). The postprocess `_SERVICES_COMPONENTS` map *registered* all of them in
+services.rdb pointing at `bootstrap.uno.dll` ("All bundled into bootstrap.uno.dll"), but that DLL never
+contained their factories → `CannotActivateFactoryException`. They cannot be merged into `bootstrap.uno`
+(each has its own `component_getFactory` → symbol collision).
+
+**Fix (build-only, no source change):** build each as its own component DLL and point services.rdb at it.
+- [stoc/BUILD.bazel](main/stoc/BUILD.bazel): six `cc_binary` targets (`reflection.uno`, `introspection.uno`,
+  `invocation.uno`, `invocadapt.uno`, `namingservice.uno`, `proxyfac.uno`) over a `_REFL_COMPONENTS` map,
+  sharing [util/component.def](main/stoc/util/component.def) (the 3 standard component exports).
+- [postprocess/BUILD.bazel](main/postprocess/BUILD.bazel): each `.component` URI now points at its own DLL
+  instead of `bootstrap.uno.dll` (java* stay on bootstrap — deferred, only loaded if Java is used).
+- [staging/BUILD.bazel](main/staging/BUILD.bazel): stage the six new DLLs.
+
+---
+
 ## Appendix A — raw debugger output
 
 ### A.1 Sig. A — `SfxInterface::Register` AV (sidebar off), with `kp`
