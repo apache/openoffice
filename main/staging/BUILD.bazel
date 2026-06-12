@@ -534,6 +534,16 @@ tree_install(
     dst          = "presets/basic",
 )
 
+# The empty "Standard" user library that the container index references.
+# Without Standard/dialog.xlb the app BasicManager raises ERRCODE_IO_GENERAL
+# ("Error loading BASIC of document .../user/basic/Standard/dialog.xlb/").
+tree_install(
+    name = "_install_presets_basic_standard",
+    src          = "//main/wizards:basic_user_standard",
+    strip_prefix = "main/wizards/source/standard",
+    dst          = "presets/basic/Standard",
+)
+
 # ── images.zip — toolbar and UI icons ─────────────────────────────────────────
 # share/config/images.zip    — default icon set (all modules)
 # share/config/images_industrial.zip — industrial/tango theme overrides
@@ -587,6 +597,7 @@ filegroup(
         ":_install_presets_autotext",
         ":_install_presets_config",
         ":_install_presets_basic",
+        ":_install_presets_basic_standard",
         ":_install_images_zip",
         ":_install_images_industrial_zip",
         ":_install_uiconfig",

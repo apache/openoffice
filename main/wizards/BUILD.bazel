@@ -18,3 +18,17 @@ filegroup(
     ],
     visibility = ["//visibility:public"],
 )
+
+# The empty "Standard" user library (scp2 basicsrvstandard.zip → user/basic/Standard/).
+# The container index (basic_user_config) lists "Standard"; loading it needs these
+# library index files, or the BasicManager raises ERRCODE_IO_GENERAL on
+# user/basic/Standard/dialog.xlb at startup.
+filegroup(
+    name = "basic_user_standard",
+    srcs = [
+        "source/standard/Module1.xba",
+        "source/standard/dialog.xlb",
+        "source/standard/script.xlb",
+    ],
+    visibility = ["//visibility:public"],
+)

@@ -332,6 +332,17 @@ The build **tools** (`genbrk`/`gencmn`/`genccode`) keep using the stub `:icudata
 enough ICU to run, and `icudt49_dat.obj` depends on `:genccode`, so the runtime data DLL must not feed back
 into the tools (no cycle). Staging is unchanged: it already stages `:icudata`; that DLL now carries data.
 
+> **CRITICAL — local-registry overlay hash.** `icu` is a `bazel_dep` from the local registry under
+> `ext_libraries/`. Its `49.1.2/source.json` pins the overlay BUILD by SHA-256
+> (`"overlay": { "BUILD.bazel": "sha256-…" }`). **Editing `overlay/BUILD.bazel` has NO effect until that
+> hash is updated** — Bazel keeps the cached repo and silently builds the *old* rules (here: the stub,
+> linking `stubdata.obj` → a 7680-byte `icudata.dll`). After any overlay edit:
+> `openssl dgst -sha256 -binary overlay/BUILD.bazel | openssl base64`, prefix `sha256-`, write it into
+> `source.json`, then `bazel build --lockfile_mode=refresh …`. **Verify the staged `icudata.dll` is ~18 MB,
+> not 7680 bytes.** This gotcha hid the ICU fix for days; the symptom kept drifting ("BASIC error" →
+> "main menu fails") but it was always the same `loadICUBreakIterator` throw reached via different
+> first-start paths.
+
 **Build & verify:**
 ```
 bazel build //main/staging:install
