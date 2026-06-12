@@ -101,6 +101,10 @@ LDFLAGS:=-Wl,-rpath,'$$$$ORIGIN:$$$$ORIGIN/../ure-link/lib' -Wl,-noinhibit-exec
 LDFLAGS:=-Wl,-R'$$$$ORIGIN:$$$$ORIGIN/../ure-link/lib'
 .ENDIF                  # "$(OS)$(COM)"=="SOLARISC52"
 
+.IF "$(OS)"=="LINUX"
+LDFLAGS+:=-Wl,-z,noexecstack
+.ENDIF # "$(OS)"=="LINUX"
+
 .IF "$(COM)"=="C52" && "$(CPU)"=="U"
 CFLAGS=-m64
 .EXPORT: CFLAGS
