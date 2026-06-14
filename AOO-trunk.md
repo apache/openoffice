@@ -109,7 +109,7 @@ depend on the Python-3 or Win64 baseline.
 
 | Area | trunk commit(s) | What it fixes | Risk |
 |---|---|---|---|
-| **Calc / MS Excel 2003 XML import** | `d10bb11432` | Importing references to **columns 677–702** (and beyond) was wrong: the old XSLT used a `÷26 − 1` scheme instead of base-26² (676). Touches `spreadsheetml2ooo.xsl`. | Low — isolated XSLT + test doc |
+| **Calc / MS Excel 2003 XML import** | ~~`d10bb11432`~~ | Importing references to **columns 677–702** (and beyond) was wrong: the old XSLT used a `÷26 − 1` scheme instead of base-26² (676). Touches `spreadsheetml2ooo.xsl`. | Low — isolated XSLT + test doc |
 | **Calc / Excel 2003 XML export** | ~~`b045a72b`~~, `3714104178`, `50f8b0f2cf` | Use the correct `of:`/`ooow:` namespace and R1C1 form when exporting ODF formulas to Excel 2003 XML; allow exporting ODF <1.2 formulas. | Low–medium |
 | **Win64 portability — file handles** | `5a41e572de` | `SvStream::GetFileHandle()` returns `sal_uInt32` capped at 32 bits; widen to support 64-bit Windows. (`tools/inc/tools/stream.hxx`, `strmunx.cxx`) | Low (also benefits non-Win64) |
 | **Win64 portability — time_t** | `926379c890` | `rsc` preprocessor used a 32-bit-capped `long` for `time_t`; use native `time_t`. (`rsc/source/rscpp/cpp3.c`) | Low |
