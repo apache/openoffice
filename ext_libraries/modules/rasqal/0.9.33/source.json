@@ -1,5 +1,14 @@
 {
   "url": "https://download.librdf.org/source/rasqal-0.9.33.tar.gz",
   "integrity": "sha256-aSTJrGVwvSQalmn4O0Z8cooyJHC/NPSy2k9pSSzP2Xw=",
-  "strip_prefix": "rasqal-0.9.33"
+  "strip_prefix": "rasqal-0.9.33",
+  "overlay": {
+    "MODULE.bazel": "sha256-LzoH6hfz7IOqbWsWmgBZo1WyrQNcdj2ZFRKI7KJ+Y3k=",
+    "BUILD.bazel": "sha256-hpY38TBFs0Y3ma+Q/D8JK/sll6Pl+1aZMXgJW6I2/gs=",
+    "src/rasqal_config.h": "sha256-9xHwERo71aVsFYEfXa2qhSleuOO5Bq4nNHjq0xwXcCA=",
+    "src/unistd.h": "sha256-8UrEOC4mwmG08FixBPRjvzV3XeyrgQ0wapUzpWISf1g=",
+    "src/rasqal_ntriples.c": "sha256-PPZDmfGN2UigNKRaspV7NybIHRA7zV3HBxxtUjVbMUg="
+  },
+  "patches": {},
+  "patch_strip": 0
 }

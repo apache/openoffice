@@ -80,5 +80,34 @@ filegroup(
     visibility = ["//visibility:public"],
 )
 
+# ── unordf.dll ────────────────────────────────────────────────────
+# RDF/metadata UNO component (source/rdf/), backed by static redland
+# (librdf + raptor2 + rasqal).  Needed by ODF document metadata, e.g.
+# saving a Writer doc writes manifest.rdf — without this the librdf_Repository
+# service can't activate and the save silently fails (file dialog re-prompts).
+# Was deferred ("redland not yet on Windows"); redland is now built (static),
+# so split into its own DLL (own component_getFactory; cannot merge into unoxml).
+cc_binary(
+    name = "unordf",
+    srcs = glob([
+        "source/rdf/*.cxx",
+        "source/rdf/*.hxx",
+    ]),
+    copts = _COPTS + ["/Imain/unoxml/source/rdf"],
+    defines = _DEFINES,
+    linkshared = True,
+    deps = _DEPS + ["@redland//:redland", "@libxslt//:libxslt"],
+    additional_linker_inputs = _LINKINPUTS,
+    linkopts = _LINKOPTS,
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "unordf_implib",
+    srcs = [":unordf"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
 exports_files(glob(["**/*.component"]))
 

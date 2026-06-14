@@ -219,7 +219,10 @@ one TAB-delimited line per translatable string
 
 # dependency notes
 icu - ext_libraries\modules\icu\Readme.md
-redland - ext_libraries\modules\redland\README
+redland / raptor2 / rasqal (RDF stack, native-cc static) + unordf.dll - rdf-readme.md
+  (the modules\<lib>\README files are the original autotools docs; the Bazel
+   migration notes — overlay mechanism, *_INTERNAL/HAVE_CONFIG_H defines,
+   local_defines vs defines, *_STATIC, RAPTOR_WWW_NONE/S_ISREG — are in rdf-readme.md)
 rhino - ext_libraries\modules\rhino\README
 sal_pch - was merged with sal_headers
 ## Out of scope

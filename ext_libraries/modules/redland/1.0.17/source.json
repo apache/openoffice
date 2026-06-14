@@ -1,5 +1,15 @@
 {
   "url": "https://download.librdf.org/source/redland-1.0.17.tar.gz",
   "integrity": "sha256-3hhH97WQIcFr3HKrtNji2Rh81hJNaRVvMybdNO4ENoE=",
-  "strip_prefix": "redland-1.0.17"
+  "strip_prefix": "redland-1.0.17",
+  "overlay": {
+    "MODULE.bazel": "sha256-mdLvH8IkZglQDx2aAybFSThNZXM0X8VZhBNQbc4tqic=",
+    "BUILD.bazel": "sha256-FdiGE/VusX7Ow821cVYuNYAyzGIi2F4sG/9BwhnvEQQ=",
+    "src/rdf_config.h": "sha256-Rg8EBMZqhx6TTxjWdV1fgPNOEWNhYDF/2VEdXWiKfpI=",
+    "src/win32_rdf_config.h": "sha256-iCGJQ/pA6paMfw2ZHL9QBQBxZRJZIDbVy2RsicM2n2c=",
+    "src/rdf_concepts.c": "sha256-+iQaQbZ8ESAu/txVLuEAc2ji/N2xeYFdSyeO/uSfWGQ=",
+    "src/unistd.h": "sha256-jkN7WWHGaIZYf5O63jqD0HhtohfeRrWnLKQdI+Klj3U="
+  },
+  "patches": {},
+  "patch_strip": 0
 }

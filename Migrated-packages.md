@@ -96,7 +96,9 @@ vbahelper     ✅  (vbahelper.dll, msforms.dll) — main/vbahelper/readme.md
 ── Layer 14 — pre-app infrastructure ─────────────────────────────────────
 ucb           ✅  (ucb1, cached1, srtrs1, ucpexpand1, ucpext, ucpfile1, ucphier1,
                    ucppkg1, ucptdoc1, ucpftp1, ucpdav1) — main/ucb/readme.md
-unoxml        ✅  (unoxml.dll — DOM/XPath/Events; unordf deferred: redland not yet on Windows) — main/unoxml/readme.md
+unoxml        ✅  (unoxml.dll — DOM/XPath/Events; unordf.dll — RDF/metadata librdf_Repository) — main/unoxml/readme.md
+              RDF stack (native-cc, static): redland (librdf) + raptor2 + rasqal — rdf-readme.md
+              build-side complete 2026-06-14; save *runtime* path still open (see rdf-readme.md)
 eventattacher ✅  (evtatt.dll) — main/eventattacher/readme.md
 UnoControls   ✅  (ctl.dll) — main/UnoControls/readme.md
 dtrans        ✅  (dtrans.dll, mcnttype.dll, dnd.dll, ftransl.dll, sysdtrans.dll) — main/dtrans/readme.md

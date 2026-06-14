@@ -6,7 +6,8 @@
 |--------|--------|--------|
 | `//main/unoxml:unoxml` | `unoxml.dll` | ✅ |
 | `//main/unoxml:unoxml_implib` | `unoxml.lib` (interface library) | ✅ |
-| `unordf.dll` | RDF repository UNO component | ⬜ deferred |
+| `//main/unoxml:unordf` | `unordf.dll` (RDF repository UNO component) | ✅ |
+| `//main/unoxml:unordf_implib` | `unordf.lib` (interface library) | ✅ |
 
 ## What builds
 
@@ -20,9 +21,18 @@ Sources: `source/dom/` (22 files), `source/events/` (6 files), `source/xpath/` (
 
 External dependency: `@libxml2` (static, provides `<libxml/...>` headers).
 
-## What is deferred
+**unordf.dll** — RDF/metadata UNO component (`source/rdf/`): the `librdf_Repository`
+service used by ODF document metadata (e.g. `manifest.rdf` on save). Backed by the
+static Redland stack (`@redland` → `@raptor2` + `@rasqal`), plus `@libxml2` and
+`@libxslt`. Own `component_getFactory`, so it is a **separate** cc_binary (cannot
+merge into `unoxml.dll`).
 
-**unordf.dll** — RDF repository UNO component (`source/rdf/`). Requires Redland (`@redland`), which depends on raptor2 and rasqal. These libraries have no Windows/MSVC `configure_make` BUILD setup yet. Defer until redland is ported.
+The Redland stack was migrated to **native cc_library** (not `configure_make`) and
+is documented in detail in the top-level **`rdf-readme.md`** — including the
+`*_INTERNAL`/`HAVE_CONFIG_H` defines, `local_defines`-vs-`defines` propagation, the
+`*_STATIC` dllimport guard, the win32 config-header reproduction, and the
+`RAPTOR_WWW_NONE`/`S_ISREG` link fixes. Build-side complete; the save *runtime* path
+is the remaining open item (see `rdf-readme.md` → Open items).
 
 ## Key decisions
 

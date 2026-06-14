@@ -1,0 +1,69 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+load("@bazel_skylib//rules:expand_template.bzl", "expand_template")
+
+package(default_visibility = ["//visibility:public"])
+
+# ── configure replacement ────────────────────────────────────
+# rasqal.h is the only generated public header.  Substitutions mirror the
+# legacy makefile.mk Windows recipe (PERL -p -e on src/rasqal.h.in).
+expand_template(
+    name = "rasqal_h",
+    template = "src/rasqal.h.in",
+    out = "src/rasqal.h",
+    substitutions = {
+        "@RASQAL_VERSION_DECIMAL@": "933",
+        "@VERSION@": "0.9.33",
+        "@RASQAL_VERSION_MAJOR@": "0",
+        "@RASQAL_VERSION_MINOR@": "9",
+        "@RASQAL_VERSION_RELEASE@": "33",
+        "@RAPTOR_VERSION_DEC@": "2.0.15",
+        "@HAVE_SYS_TIME_H@": "0",
+        "@HAVE_TIME_H@": "1",
+    },
+)
+
+# ── Main library target ──────────────────────────────────────
+# Windows-only native build.  Config comes from the hand-maintained
+# src/win32_rasqal_config.h (pulled in by every source via `#ifdef WIN32`),
+# so no autotools/config-header generation and no legacy patches are needed.
+# RASQAL_STATIC ⇒ RASQAL_API expands empty (no __declspec(dllimport)) so the
+# static lib exposes undecorated C symbols for unordf/redland to link.
+cc_library(
+    name = "rasqal",
+    srcs = glob(
+        ["src/*.c"],
+        exclude = ["src/rasqal_query_test.c"],  # test main, not part of the lib
+    ) + ["libsv/sv.c"],  # libsv/libsv.la is an unconditional LIBADD
+    hdrs = glob(["src/*.h", "libsv/*.h"]) + [":rasqal_h"],
+    includes = [
+        "src",     # rasqal.h (generated), win32_rasqal_config.h, sparql_*.h, sv_config.h
+        "libsv",   # sv.h for rasqal_format_sv.c
+    ],
+    # Build-private macros are local_defines so they don't propagate to consumers
+    # (redland/unordf) and clobber their config — same trap as raptor2's HAVE_STDINT_H.
+    local_defines = [
+        "WIN32=1",                  # selects win32_rasqal_config.h in every source (MSVC shims)
+        "HAVE_CONFIG_H=1",          # selects rasqal_config.h (HAVE_* feature flags); dmake defines both
+        "RASQAL_INTERNAL=1",        # unlocks rasqal_internal.h body; autotools sets it via @RASQAL_INTERNAL_CPPFLAGS@
+        "SV_CONFIG=1",              # dmake -DSV_CONFIG: libsv/sv.c includes sv_config.h (sv_*->rasqal_sv_* renames)
+        "_CRT_SECURE_NO_WARNINGS=1",
+    ],
+    defines = ["RASQAL_STATIC=1"],  # RASQAL_API → empty; consumers' rasqal.h needs it (no dllimport)
+    copts = [
+        "/W3",
+        "/wd4005",  # benign identical-macro redefinition between rasqal_config.h and win32_rasqal_config.h
+        "/wd4996",
+        "/wd4244",
+        "/wd4267",
+        "/wd4305",
+        "/wd4018",
+        "/wd4101",
+        "/wd4133",
+    ],
+    linkopts = ["ws2_32.lib"],  # timeval/winsock via win32_rasqal_config.h
+    deps = [
+        "@raptor2//:raptor2",
+        "@libxml2//:libxml2",
+    ],
+    visibility = ["//visibility:public"],
+)

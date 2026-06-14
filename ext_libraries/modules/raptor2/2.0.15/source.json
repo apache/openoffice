@@ -2,13 +2,11 @@
     "url": "https://download.librdf.org/source/raptor2-2.0.15.tar.gz",
     "integrity": "sha256-rafwulR4ezNIXQkNPSaAUzUgzUQm0vf7R4LdSmoUgO0=",
     "strip_prefix": "raptor2-2.0.15",
-    "patches": {
-        "raptor2-2.0.15.patch": "sha256-32zuch/mbAtRP3hstQRh2g1ggFxweobysWXX5pJV1rU=",
-        "raptor2-2.0.15.patch.nspace": "sha256-O1vGY+tDgBqbJ9lovzotH8Iy0hBBJUd9dmQ4KgT0aXI=",
-        "raptor2-2.0.15.patch.os2": "sha256-FbSfYnPJtvNorKnJMNc1jjbPQ67fKWpEeT/lhxmrXzg=",
-        "raptor2-2.0.15.patch.win32": "sha256-EdSBMxtce8S/dcywtbSEJXXbEWktWPbFwXFfivDCFnY=",
-        "raptor2-2.0.15.patch.dmake": "sha256-ppbyKmd0D2SiWS8rP34zOAQBjxYSkeqkVinXeirknzU="
+    "overlay": {
+        "MODULE.bazel": "sha256-XZycZuc5Q7ZGwJEre8zEgm7OrCR5Js6ESjuhoErYxe4=",
+        "BUILD.bazel": "sha256-L3vxJ6FeveNptTwWTI4ba6q5fFNwuFn9/4XHrYQfnKg=",
+        "src/unistd.h": "sha256-jkN7WWHGaIZYf5O63jqD0HhtohfeRrWnLKQdI+Klj3U="
     },
-    "patch_strip": 1,
-    "build_file": "BUILD.bazel"
+    "patches": {},
+    "patch_strip": 0
 }

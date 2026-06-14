@@ -493,9 +493,9 @@ _SERVICES_COMPONENTS = {
     "//main/unotools:util/utl.component":
         basis_native("utl.dll"),
 
-    # ── unoxml (both components use the same DLL) ─────────────────────────
+    # ── unoxml (DOM/XPath/Events) + unordf (RDF/metadata, separate DLL) ───
     "//main/unoxml:source/rdf/unordf.component":
-        basis_native("unoxml.dll"),
+        basis_native("unordf.dll"),
     "//main/unoxml:source/service/unoxml.component":
         basis_native("unoxml.dll"),
 
