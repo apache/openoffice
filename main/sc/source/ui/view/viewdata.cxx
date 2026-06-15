@@ -2952,6 +2952,15 @@ void ScViewData::ReadUserDataSequence(const uno::Sequence <beans::PropertyValue>
             pTabData[nZoomTab]->aPageZoomY = aDefPageZoomY;
         }
 
+	// The loop above delete'd and re-new'd pTabData[] entries (including the
+	// active one) but left pThisTab pointing at a freed ScViewDataTable.  Restore
+	// the pThisTab == pTabData[nTabNo] invariant before anyone dereferences it
+	// (e.g. ScTabView::SetTabNo -> GetActivePart()).  Mirrors SetTabNo (line
+	// ~1502).  Without it, a debug build AVs on document open (reads 0xDDDDDDDD);
+	// release masks it only via allocator MRU reuse.  See bug-readme.md §14.
+	CreateTabData( nTabNo );
+	pThisTab = pTabData[nTabNo];
+
 	if (nCount)
 		SetPagebreakMode( bPageMode );
 
