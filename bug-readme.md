@@ -612,7 +612,7 @@ defined in `fundamental.ini`, so the imported values expand. Rejected alternativ
 (`DISABLE_EXTENSION_SYNCHRONIZATION=1`) — keeps sync working for future extension modules.
 **Verified:** fatal gone; office boots into documents.
 
-## 14. Calc crash-on-open AV — debug-CRT-only latent UAF (NOT a migration bug)
+## 14. Calc crash-on-open AV — latent UAF, debug-CRT-deterministic (NOT a migration bug)
 
 **Component:** `sc` view init — **stock AOO defect**, source byte-identical to upstream.
 **Root cause (CONFIRMED):** `ScViewData::ReadUserDataSequence`
@@ -624,21 +624,91 @@ refreshes `pThisTab`** (which pointed at `pTabData[nTabNo]`). Back in
 `sc!ScTabView::SetTabNo` `mov ecx,[eax+edx*4+0x664]` with **edx=0xDDDDDDDD**
 (`pGridWin[0xdddddddd]`).
 
-**Why only in this build:** debug-CRT artifact, *not* a regression. Release allocator reuses
-the just-freed same-size block, so the immediate `new` returns the **same** address and
-`pThisTab` stays valid. The debug CRT (`MSVCR90D`) poison-fills freed blocks with `0xDD`
-and **delays** their reuse, so `new` returns a *different* block → `pThisTab` dangles.
+**Why it shows here but not in normal use — and why "release is fine" is too strong.**
+This is a genuine latent **UAF** (reading a dangling pointer is UB); it is *masked* in
+release by **unspecified allocator behaviour**, not made correct. The `delete` and `new`
+are same-thread, adjacent, same size class, with nothing between them (the
+`ScViewDataTable` ctor runs *after* `operator new`). Mainstream allocators keep per-size
+free lists with MRU/LIFO reuse, so `new` almost always returns the **just-freed block** —
+and when it does, `pThisTab == pTabData[nTabNo]` again and points at the *live, freshly
+constructed* object (genuinely correct, not stale-luck). That is why it has survived ~20
+years in the field.
+
+But it is **not guaranteed**, and can surface non-deterministically even in release:
+- Windows **LFH randomizes** allocation slots (Win8+ exploit mitigation), so `new` may
+  return a *different* slot. In release the freed block isn't poisoned, so the immediate
+  read usually still sees plausible old bytes — but the window here is **not** two
+  instructions: the rest of `ReadUserDataSequence` parses *all other sheets* (lots of
+  allocation), any of which can reclaim that block and overwrite the `eWhichActive` offset
+  with a large value → `pGridWin[garbage]` → a **rare, timing-dependent release crash**.
+- Hardened/diagnostic allocators (PageHeap, Application Verifier, ASan, a custom
+  `operator new`) don't do MRU reuse at all → they crash release too.
+- The debug CRT (`MSVCR90D`) is just the *deterministic* trigger: it poison-fills freed
+  blocks with `0xDD` and **delays** reuse, so `new` returns a different block every time.
+
+> NOT a factor: **multiple apps in parallel.** Each process has its own heap and address
+> space; another `soffice.exe`'s allocations can't touch this process's free list, and ASLR
+> randomizes base addresses, not intra-heap reuse. The variable is *this* process's
+> allocator policy + the interleaving inside the parse loop.
 
 cdb proof (`.frame 0; dv /t` + `?? &this->aViewData`): `eOldActive = 0xDDDDDDDD`, but
 `this`/`pDoc`/`pViewShell` all valid, and crucially
 `pThisTab = 0x09a5f118` (old/low region, freed) **≠** `pTabData[nTabNo=0] = 0x13deca08`
 (fresh/valid) — the new table object is fine; only the stale pointer dangles. **Contrast
-with §1 (ICU):** there, release *also* failed (missing data = real staging gap); here
-release opens Calc fine.
+with §1 (ICU):** there the root was missing *data* (a real staging gap) and release failed
+deterministically; here the source is byte-identical to upstream and release fails only
+rarely (allocator-dependent), which is why it's not a *migration* regression.
 
-**Disposition:** out of migration scope ("source is not changed"). The 1-line upstream fix
-would be `pThisTab = pTabData[nTabNo];` at the end of `ReadUserDataSequence`. **Triage rule:**
-a debug-build `0xDD`/`0xFEEE` AV is a migration bug only if an upstream *failure* feeds it
-(a throw, a missing staged file/data, as in §1); if every object is valid and only one
-pointer dangles across a `delete`/`new`, it's a debug-CRT-exposed latent UAF → confirm by
-opening the same document in the **release** build. Do feature testing in release.
+**Disposition:** out of migration scope ("source is not changed"), but "masked by the
+allocator" ≠ "correct" — it's a latent UAF whose release manifestation is rare and
+non-deterministic (the worst kind: invisible in testing, occasionally lethal in the field),
+so the 1-line upstream fix is warranted: `pThisTab = pTabData[nTabNo];` at the end of
+`ReadUserDataSequence` ([viewdata.cxx:2955-2960](main/sc/source/ui/view/viewdata.cxx#L2955)),
+mirroring `ScViewData::SetTabNo` line 1502 — it removes the dependence on allocator luck
+entirely. **Triage rule:** a debug-build `0xDD`/`0xFEEE` AV is a *migration* bug only if an
+upstream *failure* feeds it (a throw, a missing staged file/data, as in §1); if every object
+is valid and only one pointer dangles across a `delete`/`new`, it's a debug-CRT-exposed
+latent UAF. Reproducing in release tells you whether the allocator is masking it — a *clean*
+release run is **not** proof of correctness, only that MRU reuse held that time.
+
+### 14.1 Two fixes — the patch vs. the correct model
+
+**(a) Minimal coherence patch (what to do under the build-only rule).** Restore the broken
+invariant at the one site that violated it — end of `ReadUserDataSequence`
+([viewdata.cxx:2955-2960](main/sc/source/ui/view/viewdata.cxx#L2955)), before
+`pDoc->SetViewOptions(...)`:
+```cpp
+    // pTabData[nTabNo] was delete'd + re-new'd in the loop above; pThisTab is stale.
+    pThisTab = pTabData[nTabNo];     // same line ScViewData::SetTabNo (1502) already does
+```
+One line; fixes the symptom. But it leaves the underlying hazard in place: the invariant
+`pThisTab == pTabData[nTabNo]` is still maintained *by convention* at every site that
+touches `nTabNo` or `pTabData[]` — the next such site can forget again.
+
+**(b) Correct model — don't cache a cheap-to-derive value; encapsulate it.** The real defect
+is that `pThisTab` is a **stored cache** of `pTabData[nTabNo]` whose coherence is the
+caller's job. `nTabNo` is already the source of truth; the cached pointer only saves one
+indexed load. Remove the member and derive it, so the invariant is true *by construction*
+and can never desync:
+```cpp
+private:
+    ScViewDataTable* ThisTab() const { return pTabData[nTabNo]; }   // always correct, by construction
+```
+Then every `pThisTab->x` becomes `ThisTab()->x` (e.g. `GetActivePart()` →
+`return ThisTab()->eWhichActive;`). There is no stored state to refresh, so no site can ever
+leave it stale — the whole class of bug is gone, not just this instance. Cost is one extra
+indexed load per access (the accessor inlines to the same `base + nTabNo*sizeof(ptr)` the
+cache was avoiding) — negligible, and on modern CPUs often *faster* than chasing a pointer
+into possibly-cold memory. If profiling ever shows a hot path, cache it in a **local** for
+that loop's duration (`ScViewDataTable* t = ThisTab();`), which has zero lifetime coupling —
+never as a long-lived member.
+
+*(Variant, if the per-tab object were expensive to re-derive: keep the member but make
+`nTabNo`/`pTabData[]` private and route ALL mutation through one `ReplaceTabData(n, p)` /
+`SetActiveTab(n)` that refreshes the cache — single enforced update point. For a plain array
+index that's overkill; option (b) is the right shape here.)*
+
+The principle generalizes: **a cache must be an encapsulated implementation detail with a
+single enforced point of update — not an invariant the type trusts every caller to
+preserve.** Same lesson the vcl-lifetime-redesign track is applying in `vcl`; this is the
+`sc` instance of it.
