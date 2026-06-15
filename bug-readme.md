@@ -493,3 +493,152 @@ sb!basic::SfxLibraryContainer::init+0x28
 ICU build proof: `icudata` `cc_binary` `srcs = ["source/stubdata/stubdata.c"]`
 ([icu overlay/BUILD.bazel:277](ext_libraries/modules/icu/49.1.2/overlay/BUILD.bazel#L277)); no
 `icudt49l.dat` / `ICU_DATA` / `udata_setCommonData` staged or set.
+
+---
+
+# Follow-on findings — after Writer opens (2026-06-15)
+
+Once the ICU fix let Writer open and accept input, three further issues surfaced while
+testing **save** and a second app (Calc). Two are real migration/staging gaps (fixed,
+build-only); one is a debug-CRT-only latent upstream defect (out of scope). All three were
+root-caused with cdb against the **debug** build (`MSVCR90D`).
+
+## 12. Save-As ODF dialog loops forever — empty filter UINames (FIXED)
+
+**Component:** `filter/source/config` fragment merge (build); surfaces in `sfx2` save flow.
+**Root cause (CONFIRMED):** every filter's `UIName` is **empty** in the staged
+`share/registry/*.xcd`, because the Bazel `fcfg_merge` listed only the base
+`filters/*.xcu` fragments and **dropped the separate `filters/<name>_ui.xcu` UIName
+fragments**. (Type fragments embed `<prop oor:name="UIName">` inline, so types were fine;
+filters keep the localized UIName in a sibling `_ui.xcu`.)
+**Symptom:** in Writer, *File ▸ Save As ▸ ODF Text Document ▸ Save* does **not** write the
+file — the picker just reappears, indefinitely. (Not a crash, not a hang.)
+
+### 12.1 The loop mechanism (sfx2)
+
+`SfxStoringHelper::Execute`'s inner `while(!bExit)`
+([guisaveas.cxx:1497-1523](main/sfx2/source/doc/guisaveas.cxx#L1497)) only sets `bExit`
+when `ModelData_Impl::CheckFilter` returns `STATUS_SAVE` (1). With an **empty** filter name,
+`CheckFilter` ([guisaveas.cxx:716-768](main/sfx2/source/doc/guisaveas.cxx#L716)) returns
+`STATUS_SAVEAS_STANDARDNAME` (3) → set `bSetStandardName`, re-show → repeat forever
+(`STATUS_SAVEAS`=2 would loop too — neither 2 nor 3 is handled as an exit). `STATUS_*`
+values: NO_ACTION 0 / SAVE 1 / SAVEAS 2 / SAVEAS_STANDARDNAME 3.
+
+### 12.2 Where the empty name comes from (the file picker side)
+
+`FileDialogHelper_Impl::getRealFilter`
+([filedlghelper.cxx:1756-1768](main/sfx2/source/dialog/filedlghelper.cxx#L1756)):
+```cpp
+_rFilter = getCurrentFilterUIName();          // native Vista picker getCurrentFilter() → ""
+if ( !_rFilter.Len() ) _rFilter = maCurFilter; // fallback = the filter's UIName
+if ( _rFilter.Len() && mpMatcher ) {
+    pFilter = mpMatcher->GetFilter4UIName( _rFilter, m_nMustFlags, m_nDontFlags );
+    _rFilter = pFilter ? pFilter->GetFilterName() : _rFilter.Erase();   // NULL → ""
+}
+```
+The native `fps_office` Vista picker returns `""` for `getCurrentFilter()` (it tracks the
+filter by *index*; `impl_sta_getCurrentFilter`
+[VistaFilePickerImpl.cxx:370](main/fpicker/source/win32/filepicker/VistaFilePickerImpl.cxx#L370)).
+The fallback `maCurFilter` holds the filter **UIName** — but because the staged UIName is
+empty, the value is just the `" (.ext)"` annotation, and
+`SfxFilterMatcher::GetFilter4UIName(" (.odt)")` returns **NULL** → `.Erase()` → empty →
+the loop.
+
+### 12.3 cdb evidence
+```
+bp sfx!ModelData_Impl::CheckFilter
+  du poi(poi(@esp+4))+8   → ""        ; aFilterName arg is EMPTY
+  pt; r al                → al = 3    ; STATUS_SAVEAS_STANDARDNAME
+bp sfx!sfx2::FileDialogHelper_Impl::getCurrentFilterUIName
+  pt; du poi(@eax)+8      → ""        ; native picker reports no current filter
+bp sfx!SfxFilterMatcher::GetFilter4UIName
+  du poi(poi(@esp+4))+8   → " (.odt)" ; looked-up UI name = empty + annotation
+  pt; r eax               → 0         ; NULL → .Erase()
+```
+Save-dialog "File type" dropdown showed `(.odt)` with **no name** — consistent with empty
+UIName. Confirmed in `bazel-bin/.../share/registry/writer.xcd`: the `writer8` **filter**
+node has Flags/Type/DocumentService but **no `UIName` prop**, while the `writer8` **type**
+node does (`Writer 8`).
+
+### 12.4 Fix (build-only, no source change)
+- [build/tools/fcfg_merge.pl](build/tools/fcfg_merge.pl): new `ui` manifest section →
+  builds an `oor:name → <prop oor:name="UIName">` map from the `_ui.xcu` fragments and
+  injects each into the filter node with the matching `oor:name` (before `</node>`).
+  Mirrors what upstream FCFGMerge does when folding `_ui` into the filter.
+- [main/postprocess/postprocess.bzl](main/postprocess/postprocess.bzl): added a `ui`
+  attribute to the `fcfg_merge` rule; threaded into the manifest + action inputs.
+- [main/filter/source/config/fragments/BUILD.bazel](main/filter/source/config/fragments/BUILD.bazel):
+  `_FILTER_UI = glob(["filters/*_ui.xcu"])` + `ui = _FILTER_UI` on all 18 `fcfg_*_filters`
+  targets. Injection is `oor:name`-matched, so passing the full `_ui` set to every target
+  is harmless.
+
+**Verified:** after rebuild the dropdown reads "ODF Text Document (.odt)" and the document
+saves as `.odt`.
+
+## 13. Startup FatalError "Failed to update/lastsynchronized" (FIXED)
+
+**Component:** brand bootstrap profiles (build); surfaces in `desktop` extension manager.
+**Root cause (CONFIRMED):** the extension path macros (`BUNDLED_EXTENSIONS_USER`,
+`BUNDLED_EXTENSIONS_PREREG`, `SHARED_EXTENSIONS_USER`, `UNO_*_PACKAGES_CACHE`,
+`TMP/BAK_EXTENSIONS`) were defined **only in `uno.ini`**, not in `fundamental.ini`. The UNO
+component-context bootstrap reads `uno.ini` (so the PackageManager could still create
+`user/extensions/*`), but bare `rtl::Bootstrap::expandMacros()` resolves against the
+**`URE_BOOTSTRAP` file = `fundamental.ini`**. So `writeLastModified()`
+([dp_extensionmanager.cxx:116](main/desktop/source/deployment/manager/dp_extensionmanager.cxx#L116))
+expanded `"$BUNDLED_EXTENSIONS_USER/lastsynchronized"` to the bare **`/lastsynchronized`**
+→ invalid `ucbhelper::Content` URL → `DeploymentException("Failed to update" + url)` →
+caught at [app.cxx](main/desktop/source/app/app.cxx) outer handler →
+`FatalError(MakeStartupErrorMessage(...))`. Only seen when extension sync is **not**
+disabled (`-env:DISABLE_EXTENSION_SYNCHRONIZATION=1` had been masking it).
+
+### 13.1 cdb evidence
+```
+bp sofficeapp!desktop::FatalError
+  du poi(poi(@esp+4))+8   → "The application cannot be started. \nFailed to update/lastsynchronized"
+```
+The URL tail is just `/lastsynchronized` — the leading macro expanded to empty. (Creating
+`share/prereg/bundled` + `share/extensions` dirs did **not** help — red herring; the macro
+itself was empty.)
+
+### 13.2 Fix (build-only)
+[main/staging/fundamental.ini](main/staging/fundamental.ini): added the extension path
+macros as cross-refs to `uno.ini`, e.g.
+`BUNDLED_EXTENSIONS_USER=${$ORIGIN/uno.ini:BUNDLED_EXTENSIONS_USER}` (+ `_PREREG`,
+`BUNDLED_EXTENSIONS`, `SHARED_EXTENSIONS_USER`, `TMP/BAK_EXTENSIONS`, `UNO_*_PACKAGES_CACHE`).
+Upstream propagates these `fundamentalrc → fundamentalbasisrc → unorc` (scp2
+`common_brand.scp` gid_Brand_Profile_Fundamental_Ini items 999-1061); we have no
+fundamentalbasis layer, so reference `uno.ini` directly. `$OOO_BASE_DIR`/`$ORIGIN` are
+defined in `fundamental.ini`, so the imported values expand. Rejected alternative
+(`DISABLE_EXTENSION_SYNCHRONIZATION=1`) — keeps sync working for future extension modules.
+**Verified:** fatal gone; office boots into documents.
+
+## 14. Calc crash-on-open AV — debug-CRT-only latent UAF (NOT a migration bug)
+
+**Component:** `sc` view init — **stock AOO defect**, source byte-identical to upstream.
+**Root cause (CONFIRMED):** `ScViewData::ReadUserDataSequence`
+([viewdata.cxx:2821](main/sc/source/ui/view/viewdata.cxx#L2821)) does
+`delete pTabData[nTab]; pTabData[nTab] = new ScViewDataTable;` per sheet but **never
+refreshes `pThisTab`** (which pointed at `pTabData[nTabNo]`). Back in
+`ScTabView::SetTabNo`, line 1660 reads `aViewData.GetActivePart()` → `pThisTab->eWhichActive`
+**before** line 1663 fixes `pThisTab` → use-after-free → AV
+`sc!ScTabView::SetTabNo` `mov ecx,[eax+edx*4+0x664]` with **edx=0xDDDDDDDD**
+(`pGridWin[0xdddddddd]`).
+
+**Why only in this build:** debug-CRT artifact, *not* a regression. Release allocator reuses
+the just-freed same-size block, so the immediate `new` returns the **same** address and
+`pThisTab` stays valid. The debug CRT (`MSVCR90D`) poison-fills freed blocks with `0xDD`
+and **delays** their reuse, so `new` returns a *different* block → `pThisTab` dangles.
+
+cdb proof (`.frame 0; dv /t` + `?? &this->aViewData`): `eOldActive = 0xDDDDDDDD`, but
+`this`/`pDoc`/`pViewShell` all valid, and crucially
+`pThisTab = 0x09a5f118` (old/low region, freed) **≠** `pTabData[nTabNo=0] = 0x13deca08`
+(fresh/valid) — the new table object is fine; only the stale pointer dangles. **Contrast
+with §1 (ICU):** there, release *also* failed (missing data = real staging gap); here
+release opens Calc fine.
+
+**Disposition:** out of migration scope ("source is not changed"). The 1-line upstream fix
+would be `pThisTab = pTabData[nTabNo];` at the end of `ReadUserDataSequence`. **Triage rule:**
+a debug-build `0xDD`/`0xFEEE` AV is a migration bug only if an upstream *failure* feeds it
+(a throw, a missing staged file/data, as in §1); if every object is valid and only one
+pointer dangles across a `delete`/`new`, it's a debug-CRT-exposed latent UAF → confirm by
+opening the same document in the **release** build. Do feature testing in release.

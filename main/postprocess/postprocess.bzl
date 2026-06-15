@@ -265,6 +265,7 @@ def _fcfg_merge_impl(ctx):
     for section, frags in [
         ("types",    ctx.files.types),
         ("filters",  ctx.files.filters),
+        ("ui",       ctx.files.ui),
         ("loaders",  ctx.files.loaders),
         ("handlers", ctx.files.handlers),
     ]:
@@ -277,7 +278,7 @@ def _fcfg_merge_impl(ctx):
         content = "\n".join(lines) + "\n",
     )
 
-    all_frags = (ctx.files.types + ctx.files.filters +
+    all_frags = (ctx.files.types + ctx.files.filters + ctx.files.ui +
                  ctx.files.loaders + ctx.files.handlers)
 
     ctx.actions.run(
@@ -306,6 +307,12 @@ fcfg_merge = rule(
         "filters": attr.label_list(
             allow_files = True,
             doc = "filter fragment .xcu files (filters/ or internalgraphicfilters/)",
+        ),
+        "ui": attr.label_list(
+            allow_files = True,
+            doc = "filter UIName fragments (filters/<name>_ui.xcu); each <prop " +
+                  "oor:name=\"UIName\"> is injected into the filter node with the " +
+                  "matching oor:name.  Filters (unlike types) keep UIName separate.",
         ),
         "loaders": attr.label_list(
             allow_files = True,

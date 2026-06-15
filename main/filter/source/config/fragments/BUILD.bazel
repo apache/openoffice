@@ -10,6 +10,12 @@
 
 load("//main/postprocess:postprocess.bzl", "fcfg_merge")
 
+# Filter UIName fragments (filters/<name>_ui.xcu).  Filters keep their
+# localized UIName in a separate _ui.xcu (types embed it inline); these are
+# injected into the matching filter node by fcfg_merge.pl.  Passing the full
+# set to every filter target is harmless: injection is matched by oor:name.
+_FILTER_UI = glob(["filters/*_ui.xcu"])
+
 # ── fcfg_base ─────────────────────────────────────────────────────────────────
 
 fcfg_merge(
@@ -27,6 +33,7 @@ fcfg_merge(
 
 fcfg_merge(
     name       = "fcfg_base_filters",
+    ui       = _FILTER_UI,
     xmlpackage = "Filter",
     filters = [
         "filters/writer_web_HTML_help.xcu",
@@ -62,6 +69,7 @@ fcfg_merge(
 
 fcfg_merge(
     name       = "fcfg_chart_filters",
+    ui       = _FILTER_UI,
     xmlpackage = "Filter",
     filters = [
         "filters/StarOffice_XML__Chart_.xcu",
@@ -92,6 +100,7 @@ fcfg_merge(
 
 fcfg_merge(
     name       = "fcfg_database_filters",
+    ui       = _FILTER_UI,
     xmlpackage = "Filter",
     filters = [
         "filters/StarOffice_XML__Base_.xcu",
@@ -146,6 +155,7 @@ fcfg_merge(
 
 fcfg_merge(
     name       = "fcfg_calc_filters",
+    ui       = _FILTER_UI,
     xmlpackage = "Filter",
     filters = [
         "filters/DIF.xcu",
@@ -196,6 +206,7 @@ fcfg_merge(
 
 fcfg_merge(
     name       = "fcfg_draw_filters",
+    ui       = _FILTER_UI,
     xmlpackage = "Filter",
     filters = [
         "filters/StarOffice_XML__Draw_.xcu",
@@ -232,6 +243,7 @@ fcfg_merge(
 
 fcfg_merge(
     name       = "fcfg_impress_filters",
+    ui       = _FILTER_UI,
     xmlpackage = "Filter",
     filters = [
         "filters/MS_PowerPoint_97.xcu",
@@ -268,6 +280,7 @@ fcfg_merge(
 
 fcfg_merge(
     name       = "fcfg_math_filters",
+    ui       = _FILTER_UI,
     xmlpackage = "Filter",
     filters = [
         "filters/MathML_XML__Math_.xcu",
@@ -296,6 +309,7 @@ fcfg_merge(
 
 fcfg_merge(
     name       = "fcfg_global_filters",
+    ui       = _FILTER_UI,
     xmlpackage = "Filter",
     filters = [
         "filters/Text__encoded___StarWriter_GlobalDocument_.xcu",
@@ -328,6 +342,7 @@ fcfg_merge(
 
 fcfg_merge(
     name       = "fcfg_web_filters",
+    ui       = _FILTER_UI,
     xmlpackage = "Filter",
     filters = [
         "filters/HTML.xcu",
@@ -380,6 +395,7 @@ fcfg_merge(
 
 fcfg_merge(
     name       = "fcfg_writer_filters",
+    ui       = _FILTER_UI,
     xmlpackage = "Filter",
     filters = [
         "filters/HTML__StarWriter_.xcu",
@@ -428,6 +444,7 @@ fcfg_merge(
 
 fcfg_merge(
     name       = "fcfg_xslt_filters",
+    ui       = _FILTER_UI,
     xmlpackage = "Filter",
     filters = [
         "filters/DocBook_File.xcu",
@@ -455,6 +472,7 @@ fcfg_merge(
 
 fcfg_merge(
     name       = "fcfg_palm_filters",
+    ui       = _FILTER_UI,
     xmlpackage = "Filter",
     filters = [
         "filters/AportisDoc_Palm_DB.xcu",
@@ -475,6 +493,7 @@ fcfg_merge(
 
 fcfg_merge(
     name       = "fcfg_pocketexcel_filters",
+    ui       = _FILTER_UI,
     xmlpackage = "Filter",
     filters = [
         "filters/Pocket_Excel.xcu",
@@ -495,6 +514,7 @@ fcfg_merge(
 
 fcfg_merge(
     name       = "fcfg_pocketword_filters",
+    ui       = _FILTER_UI,
     xmlpackage = "Filter",
     filters = [
         "filters/PocketWord_File.xcu",
@@ -543,6 +563,7 @@ fcfg_merge(
 
 fcfg_merge(
     name       = "fcfg_drawgraphics_filters",
+    ui       = _FILTER_UI,
     xmlpackage = "Filter",
     filters = [
         "filters/BMP___MS_Windows.xcu",
@@ -627,6 +648,7 @@ fcfg_merge(
 
 fcfg_merge(
     name       = "fcfg_impressgraphics_filters",
+    ui       = _FILTER_UI,
     xmlpackage = "Filter",
     filters = [
         "filters/CGM___Computer_Graphics_Metafile.xcu",
@@ -693,6 +715,7 @@ fcfg_merge(
 
 fcfg_merge(
     name       = "fcfg_internalgraphics_filters",
+    ui       = _FILTER_UI,
     xmlpackage = "GraphicFilter",
     filters = [
         "internalgraphicfilters/bmp_Export.xcu",
@@ -864,6 +887,7 @@ fcfg_merge(
 
 fcfg_merge(
     name       = "fcfg_w4w_filters",
+    ui       = _FILTER_UI,
     xmlpackage = "Filter",
     filters = [
         "filters/Ami_Pro_1_x_3_1__W4W_.xcu",
