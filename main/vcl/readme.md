@@ -29,3 +29,51 @@ On Windows, font layout uses the native GDI path (`win/source/gdi/winlayout.cxx`
 - Private headers in `inc/`, `source/window/`, `source/gdi/`, `source/fontsubset/` are included
   via copts `/I` paths and not exported in `vcl_headers`.
 - `//main/icc:srgb_icc` provides `<icc/sRGB-IEC61966-2.1.hxx>` used by `source/gdi/pdfwriter_impl.cxx`.
+
+## Resource images — `vcl_res` and `images_root` (radio/checkbox indicators)
+
+`vcl_res` (the `//main/vcl:vcl_res` RSC target) compiles `source/src/*.src` into
+`vcl_res.res`.  Among these, `source/src/images.src` declares the built-in control
+indicator bitmaps as `Bitmap { File = "radio.png" }` / `"check.png"` (+ mono/win/unx/
+mac/os2 variants), under resource ids `SV_RESID_BITMAP_RADIO` / `SV_RESID_BITMAP_CHECK`.
+
+**The RSC pipeline does NOT embed bitmap pixel data into the `.res`.**  It stores only
+the image *filename*.  At runtime VCL loads the bitmap by that name from
+`share/config/images.zip`:
+
+```
+RadioButton::GetRadioImage()  (source/control/button.cxx)
+  → LoadThemedImageList(... ResId(SV_RESID_BITMAP_RADIO) ...)
+  → BitmapEx(ResId) reads "radio.png" from the .res
+  → looks it up by EXACT name as a key in images.zip
+```
+
+`vcl_res.res` is therefore tiny (~23 KB = filename strings, not pixels) — confirm with
+`grep -a -o '..radio.png' bazel-bin/main/vcl/vcl_res.res`.
+
+Because of this, `vcl_res` MUST set `images_root = "main/default_images"` like every
+other `rsc_res` module.  That makes RSC bake the image path *relative to that root*
+(`vcl/res/radio.png`) instead of a bare basename (`radio.png`).  The bare name never
+resolves: `images.zip` is built with `strip_prefix = "main/default_images"`, so its
+keys are full paths (`vcl/res/radio.png`), and a lookup of bare `radio.png` always
+misses → empty `ImageList` → `GetImage()` returns a 0-size image → the radio/checkbox
+indicator is invisible and the control's text is laid out against a zero-width indicator
+(visible as missing bullets + clipped/left-collapsed labels, e.g. Calc's *Delete Cells*
+and *Insert Cells* dialogs).
+
+This pairs with a matching requirement in `//main/default_images`: `vcl/res/**` PNG/BMP
+files must be included in the `images.zip` (`_images_srcs`).  An earlier comment there
+wrongly claimed vcl/res images were "baked into .res" and excluded them — that
+assumption is false (see above) and was the second half of the same bug.
+
+These indicator bitmaps are the *fallback* path: on themed Windows the radio/checkbox is
+normally drawn natively (`ImplDrawRadioButtonState` → `DrawNativeControl`), and
+`ImplGetRadioImageSize()` takes its size from `GetNativeControlRegion`.  The bitmap path
+(and thus this bug) is exercised whenever native control drawing is not active for the
+control, so the staged images must always be correct.
+
+Triage: a missing toolbar/indicator/dialog image → `grep -a` the consuming `.res` for the
+bare filename.  If the string is present, the `.res` *references* (does not embed) the
+image, so the exact stored name MUST exist as an `images.zip` key.  A mismatch means
+either `images_root` is unset (bare name baked) or the source dir was left out of
+`_images_srcs`.

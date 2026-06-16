@@ -158,6 +158,13 @@ rsc_res(
         "//main/default_images:vcl_images",
         "//main/default_images:shared_images",
     ],
+    # Match every other rsc_res module: store the image path relative to
+    # main/default_images (e.g. "vcl/res/radio.png") in the .res so the runtime
+    # BitmapEx(ResId) exact-name lookup hits the matching images.zip entry.
+    # Without this, rsc bakes BARE basenames ("radio.png") that never resolve
+    # (images.zip keys are full paths) → radio/checkbox indicators load empty
+    # → missing glyph + collapsed text layout (e.g. Delete/Insert Cells dialogs).
+    images_root = "main/default_images",
     visibility = ["//visibility:public"],
 )
 
