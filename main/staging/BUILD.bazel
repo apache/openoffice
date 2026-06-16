@@ -19,10 +19,15 @@ filegroup(
 # private assembly dependency so Windows resolves it from program/ instead of
 # WinSxS (which doesn't carry the debug CRT on non-developer machines).
 # Must be paired with Microsoft.VC90.DebugCRT.manifest (from @msvc_debug_crt).
+# It ALSO declares Microsoft.Windows.Common-Controls 6.0.0.0 — same as the release
+# manifest below — to enable visual styles; without it OpenThemeData() returns NULL,
+# IsNativeControlSupported() is FALSE for all controls, and VCL silently uses bitmap
+# radio/checkbox indicators (debug-only divergence from release).
 filegroup(
     name = "soffice_exe_manifest",
     srcs = [
-        # EXE application manifest — declares Microsoft.VC90.DebugCRT dependency.
+        # EXE application manifest — declares Microsoft.VC90.DebugCRT +
+        # Microsoft.Windows.Common-Controls (visual styles) dependencies.
         "soffice.exe.manifest",
         # Private SxS assembly manifest — tells Windows to resolve msvcr90d.dll
         # and msvcp90d.dll from program\ rather than WinSxS.

@@ -72,6 +72,21 @@ normally drawn natively (`ImplDrawRadioButtonState` → `DrawNativeControl`), an
 (and thus this bug) is exercised whenever native control drawing is not active for the
 control, so the staged images must always be correct.
 
+### Why the fallback was active at all — the debug manifest (visual styles)
+
+`WinSalGraphics::IsNativeControlSupported` (win/source/gdi/salnativewidgets-luna.cxx)
+returns TRUE only if `OpenThemeData(hWnd, L"Button")` succeeds, which requires the
+process to have **Windows visual styles** enabled — i.e. a manifest declaring a
+dependency on `Microsoft.Windows.Common-Controls version 6.0.0.0` (comctl32 v6).  The
+*release* app manifest (`//main/desktop:util/soffice.exe.manifest`) declares it, but the
+*debug* manifest (`//main/staging:soffice.exe.manifest`, used under
+`--compilation_mode=dbg`) originally declared only the VC90 CRT assemblies.  So in debug
+builds `OpenThemeData` returned NULL, `IsNativeControlSupported` was FALSE for every
+control, and ALL radio/checkbox indicators fell to the bitmap path above — which is how
+the missing-`radio.png` bug became visible.  Fixed by adding the Common-Controls
+dependency to the debug manifest so debug matches release.  (Native theming being off in
+debug also affected the look of every other themed control, not just radios.)
+
 Triage: a missing toolbar/indicator/dialog image → `grep -a` the consuming `.res` for the
 bare filename.  If the string is present, the `.res` *references* (does not embed) the
 image, so the exact stored name MUST exist as an `images.zip` key.  A mismatch means

@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity version="1.0.0.0" processorArchitecture="x86" name="OpenOffice" type="win32" />
+  <description>http://www.openoffice.org</description>
+  <!-- comctl32 v6: enables Windows visual styles for this process.  Without it
+       OpenThemeData() returns NULL, IsNativeControlSupported() is FALSE for every
+       control, and VCL falls back to bitmap radio/checkbox indicators.  The release
+       manifest (//main/desktop:util/soffice.exe.manifest) already declares this; the
+       debug manifest must too, or native theming is silently off in debug builds. -->
+  <dependency>
+    <dependentAssembly>
+      <assemblyIdentity type="win32" name="Microsoft.Windows.Common-Controls" version="6.0.0.0" publicKeyToken="6595b64144ccf1df" language="*" processorArchitecture="x86"/>
+    </dependentAssembly>
+  </dependency>
   <dependency>
     <dependentAssembly>
       <assemblyIdentity type="win32" name="Microsoft.VC90.DebugCRT" version="9.0.30729.1" processorArchitecture="x86" publicKeyToken="1fc8b3b9a1e18e3b"/>
