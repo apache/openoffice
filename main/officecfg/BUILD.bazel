@@ -287,28 +287,44 @@ filegroup(
 ]
 
 # ── Default (locale-independent) alllang extraction ───────────────────────
-# alllang.xsl with no --stringparam locale or --stringparam module strips
-# all <value xml:lang="..."> elements (they fall through the "drop localized"
-# branch in the value template) and retains only locale-neutral <value>
-# elements.  This matches the dmake XCU_DEFAULT pipeline in tg_config.mk:
+# alllang.xsl with no --stringparam locale or --stringparam module produces the
+# "default" spool: it keeps the en-US fallback (<value xml:lang="en-US">) for
+# every localized prop and drops the other languages.  This matches the dmake
+# XCU_DEFAULT pipeline in tg_config.mk:
 #
-#   $(PROCESSOUT)/registry/data/.../%.xcu : %.xcu
-#       xsltproc ... alllang.xsl $<
+#   $(XCU_DEFAULT) : ... %.xcu
+#       xsltproc --stringparam xcs        $(XCSROOTURL)/.../%.xcs \
+#                --stringparam schemaRoot $(XCSROOTURL)/registry/schema \
+#                ... alllang.xsl $<
 #
-# Required for any XCU that carries embedded xml:lang values (_LOCALIZED),
-# so that configmgr does not encounter empty xs:boolean values and throw
-# "invalid value" (e.g. CaptionOrderNumberingFirst in Writer.xcu has
-# <value xml:lang="x-no-translate"/> which is valid XML but unparseable
-# as xs:boolean).
+# The xcs/schemaRoot params are REQUIRED, not optional.  alllang.xsl's prop
+# template decides whether a prop is "localized-only" (keep en-US fallback) or
+# "mergeable" by inspecting the schema node passed in via document($xcs).  With
+# no schema, $context is empty, the prop falls into the not($context) branch and
+# is processed by the *normal* value template, which discards every @xml:lang
+# value — so command Labels (which exist ONLY as <value xml:lang="en-US">) were
+# silently stripped, blanking every menu/toolbar/command in the UI.  Passing the
+# schema routes localized-only props through the fallback-locale template that
+# retains en-US (verified: GenericCommands xml:lang count 0 -> 850, ~File kept).
+#
+# Paths are resolved relative to the STYLESHEET base URI (registry/schema sits at
+# ../registry/schema from util/alllang.xsl), so no absolute/%cd% path is needed.
+# The full schema tree is provided as srcs because composeFileURL may pull in
+# other components' .xcs for cross-component template references.
 
 [
     genrule(
         name = "alllang_default_{}".format(xcu.replace("/", "_").replace(".", "_")),
-        srcs = ["registry/data/" + xcu, "util/alllang.xsl"],
+        srcs = [
+            "registry/data/" + xcu,
+            "util/alllang.xsl",
+        ] + glob(["registry/schema/**/*.xcs"]),
         outs = ["spool_default/{}".format(xcu)],
         tools = ["@libxslt//:xsltproc"],
         cmd_bat = (
             "$(location @libxslt//:xsltproc) --novalid " +
+            "--stringparam xcs ../registry/schema/{}.xcs ".format(xcu[:-len(".xcu")]) +
+            "--stringparam schemaRoot ../registry/schema " +
             "-o $(OUTS) " +
             "$(location util/alllang.xsl) " +
             "$(location registry/data/{})".format(xcu)
