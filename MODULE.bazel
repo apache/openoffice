@@ -4,6 +4,18 @@ module(
     version = "4.5.0",
 )
 
+# --------------- product branding (single source of truth) ---------------
+# The product VERSION is module(version=...) above.  The human-readable product
+# NAME and FULL NAME live here (a module() name can't hold spaces/caps).  These
+# feed the window title, About box and %PRODUCTNAME tokens via @product_info →
+# //main/postprocess brand Setup.xcu substitution.
+product = use_extension("//build:product.bzl", "product")
+product.info(
+    name = "Apache OpenOffice",
+    full_name = "Apache OpenOffice",
+)
+use_repo(product, "product_info")
+
 # --------------- bazel dependencies ---------------
 bazel_dep(name = "platforms",        version = "1.0.0")
 bazel_dep(name = "rules_cc",         version = "0.2.17")

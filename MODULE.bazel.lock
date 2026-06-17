@@ -195,6 +195,23 @@
   },
   "selectedYankedVersions": {},
   "moduleExtensions": {
+    "//build:product.bzl%product": {
+      "general": {
+        "bzlTransitiveDigest": "8ojzhp1NoC+WNzpqqBck3bVfIdWcrL4ZoXWRSz56Vxk=",
+        "usagesDigest": "mOSBQDxn/VOkkcBKT0VS43WJKNUbheKjaifCtm+HPes=",
+        "recordedInputs": [],
+        "generatedRepoSpecs": {
+          "product_info": {
+            "repoRuleId": "@@//build:product.bzl%_product_info_repo",
+            "attributes": {
+              "product_name": "Apache OpenOffice",
+              "product_fullname": "Apache OpenOffice",
+              "product_version": "4.5.0"
+            }
+          }
+        }
+      }
+    },
     "@@pybind11_bazel+//:internal_configure.bzl%internal_configure_extension": {
       "general": {
         "bzlTransitiveDigest": "06cynZ1bCvvy8zHPrrDlXq+Z68xmjctHpfFxi+zEpJY=",

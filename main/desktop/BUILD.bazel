@@ -713,6 +713,42 @@ filegroup(
 )
 
 # ── soffice.exe ───────────────────────────────────────────────────────────────
+# ── soffice.exe Windows icon resource ────────────────────────────────────────
+# soffice.exe (built from main.c) carried no resources, so the window/taskbar
+# showed the generic Windows icon and framework's per-module SetIcon() loaded
+# nothing (VCL ImplLoadSalIcon tries the app exe first).  This embeds id 1 (the
+# app/default icon) + the OOo document-window icons (ids 2..39 — Writer=2,
+# Calc=4, Draw=6, Impress=8, Math=15, ...), and links the .res into :soffice.
+# This is dmake's APP5 resource (solenv/inc/_tg_app.mk: "1 ICON <APP5ICON>" +
+# #include ooverinfo2.rc).
+#
+# fix_icon_rc.pl regenerates ooverinfo2.rc's entries with MS rc's required
+# "<id> ICON" token order (the upstream "ICON <id>" form makes the strict v7.0
+# rc.exe treat the .ico as RT_BITMAP -> RC2170) and skips its stale references to
+# renamed app icons (now ooo3_*_app.ico) that no longer exist.  Original icons,
+# no frame stripping — compiles on the configured v7.0 SDK.  Icon "icons/<f>.ico"
+# paths resolve via rc /I main/sysui/desktop.  RC path mirrors crashrep.
+genrule(
+    name = "soffice_icon_res",
+    srcs = [
+        "util/ooverinfo2.rc",
+        "util/fix_icon_rc.pl",
+        "//main/sysui/desktop/icons:app_icons",
+    ],
+    outs = ["soffice_icon.res"],
+    cmd_bat = (
+        "perl \"$(execpath util/fix_icon_rc.pl)\"" +
+        " main/sysui/desktop/icons" +
+        " \"$(execpath util/ooverinfo2.rc)\"" +
+        " soffice_icons.rc&&" +
+        "set \"_RC=C:\\Program Files\\Microsoft SDKs\\Windows\\v7.0\\Bin\\RC.Exe\"&&" +
+        "\"!_RC!\" /nologo /DWIN32" +
+        " /I \"main/sysui/desktop\"" +
+        " /fo \"$(OUTS)\"" +
+        " soffice_icons.rc"
+    ),
+)
+
 # Main office executable: calls soffice_main() from sofficeapp.dll
 cc_binary(
     name = "soffice",
@@ -734,10 +770,12 @@ cc_binary(
     additional_linker_inputs = [
         "//main/sal:sal_implib",
         ":sofficeapp_implib",
+        ":soffice_icon_res",
     ],
     linkopts = [
         "$(execpath //main/sal:sal_implib)",
         "$(execpath :sofficeapp_implib)",
+        "$(execpath :soffice_icon_res)",
         "/SUBSYSTEM:WINDOWS",
         "/MANIFEST:NO",
     ],

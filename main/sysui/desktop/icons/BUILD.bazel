@@ -1,0 +1,9 @@
+# Application / document-type icons (.ico) consumed by the Windows resource
+# compiled into soffice.exe (//main/desktop:soffice_icon_res via ooverinfo2.rc).
+# sysui itself is not yet migrated; this only exports the existing icon assets.
+package(default_visibility = ["//visibility:public"])
+
+filegroup(
+    name = "app_icons",
+    srcs = glob(["*.ico"]),
+)

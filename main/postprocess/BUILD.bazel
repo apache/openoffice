@@ -20,6 +20,7 @@
 load(":postprocess.bzl", "services_rdb", "uiconfig_zip", "uiconfig_tree", "pack_registry",
      "oc_xcs", "oc_xcu", "oc_mod", "fcfg",
      "basis_native", "basis_java", "ure_java", "pymodule")
+load("@product_info//:defs.bzl", "PRODUCT_NAME", "PRODUCT_FULLNAME", "PRODUCT_VERSION")
 
 # ── Component files — Windows build ──────────────────────────────────────────
 # Mirrors packcomponents/makefile.mk my_components for OS=WNT.
@@ -971,7 +972,9 @@ _MAIN_XCU = [
     oc_mod("Office/Common.xcu",          "wnt"),
     oc_mod("Office/Embedding.xcu",       "chart"),
     oc_mod("Office/UI.xcu",              "brand"),
-    oc_mod("Setup.xcu",                  "brand"),
+    # Setup.xcu brand props carry ${PRODUCTNAME}/${PRODUCTVERSION}/... installer
+    # placeholders; :brand_setup_xcu substitutes them from MODULE.bazel before pack.
+    ":brand_setup_xcu",
     oc_mod("Setup.xcu",                  "start"),
     oc_mod("Inet.xcu",                   "wnt"),
     oc_mod("Office/Accelerators.xcu",    "unxwnt"),
@@ -1002,6 +1005,42 @@ genrule(
         oc_xcu("Office/Views.xcu") +
         ")').Replace('<value>true</value>', '<value>false</value>') " +
         "| Set-Content -Encoding UTF8 '$(OUTS)'\""
+    ),
+)
+
+# ── Brand Setup.xcu — product-name/version substitution ──────────────────────
+# The brand spool of Setup.xcu carries installer placeholders in ooName /
+# ooFullname / ooSetupVersion / ooSetupVersionAboutBox / ooSetupExtension / ... .
+# The MSI installer normally substitutes them (from instsetoo openoffice.lst);
+# our staging never runs the MSI, so configmgr reads the literal "${PRODUCTNAME}"
+# into Product/ooName → the window title shows "${PRODUCTNAME} ${PRODUCTEXTENSION}"
+# and every runtime %PRODUCTNAME token (menus, About box) resolves to it.
+# Substitute here, sourcing name/full-name/version from MODULE.bazel via
+# @product_info.  Same .Replace genrule pattern as forcedefault_linguistic_xcu.
+# Note: $$ escapes the genrule '$' so the shell sees a literal "${...}".
+_BRAND_SUBST = [
+    ("$${FULLPRODUCTNAME}", PRODUCT_FULLNAME),
+    ("$${ABOUTBOXPRODUCTVERSION}", PRODUCT_VERSION),
+    ("$${PRODUCTNAME}", PRODUCT_NAME),
+    ("$${PRODUCTVERSION}", PRODUCT_VERSION),
+    ("$${PRODUCTEXTENSION}", ""),
+    ("$${OOOVENDOR}", "Apache Software Foundation"),
+    ("$${OOOXMLFILEFORMATNAME}", "OpenOffice.org XML"),
+    ("$${OOOXMLFILEFORMATVERSION}", "1.0"),
+    ("$${OPENSOURCE}", "1"),
+]
+
+genrule(
+    name = "brand_setup_xcu",
+    srcs = [oc_mod("Setup.xcu", "brand")],
+    outs = ["BrandSetup/Setup.xcu"],
+    cmd_bat = (
+        "powershell -NoProfile -Command " +
+        "\"(Get-Content -Raw '$(location " +
+        oc_mod("Setup.xcu", "brand") +
+        ")')" +
+        "".join([".Replace('{}','{}')".format(k, v) for k, v in _BRAND_SUBST]) +
+        " | Set-Content -Encoding UTF8 '$(OUTS)'\""
     ),
 )
 
