@@ -355,7 +355,10 @@ rsc_res(
         "main/extensions/source/propctrlr",
         "main/svl/inc",
     ],
-    images      = ["//main/default_images:extensions_res_images"],
+    images      = [
+        "//main/default_images:extensions_res_images",
+        "//main/default_images:shared_images",
+    ],
     images_root = "main/default_images",
 )
 

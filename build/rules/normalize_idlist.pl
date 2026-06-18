@@ -20,12 +20,21 @@
 # first pass evaluates the expressions and writes one integer per line; this
 # script reproduces that for the rscpp+rsc2 split.
 #
-# WHAT: inside each `IdList = { ... }` block, evaluate every additive numeric
-# expression "(BASE + N [+ ...])" to a plain integer and emit one entry per
-# line.  Non-numeric tokens (e.g. leftover cpp line-markers like "# 137") are
-# passed through untouched — rsc2 already skips them.  The rsc2 COMPILE pass
-# evaluated these same expressions itself, so this is behaviour-preserving for
-# compilation and only repairs the image pre-pass.
+# WHAT: inside each `IdList = { ... }` block of an ImageList that uses a CAPITAL
+# "Prefix", evaluate every additive numeric expression "(BASE + N [+ ...])" to a
+# plain integer and emit one entry per line, on a fresh line ("\nIdList =\n{...").
+# This repairs three cases:
+#   - unevaluated arithmetic ids "(3076 + 47)"  (svtools doc icons, basctl, ...)
+#   - plain ids that sit INLINE next to a "MaskColor=Color{...};" on one line
+#     (sd/sw style-family lists via the STYLE_IMAGE_LISTEF macro): the canonical
+#     leading newline moves "IdList" onto its own line so the Color{} '}' no
+#     longer desyncs rsc2's scanner (which otherwise built a corrupt image list
+#     that crashed when read — SfxStyleFamilies::updateImages → ImageList::ImageList).
+# Lowercase "prefix" ImageLists (dbaccess, reportdesign) are left untouched: rsc2's
+# resolver can't see them anyway and evaluating their ids would ERR_NOIMAGE.
+# Non-numeric tokens (e.g. cpp line-markers "# 137") pass through — rsc2 skips them.
+# The rsc2 COMPILE pass evaluated these same expressions itself, so this is
+# behaviour-preserving for compilation and only repairs the image pre-pass.
 #**************************************************************
 use strict;
 use warnings;
@@ -39,13 +48,6 @@ print $text;
 
 sub normalize {
     my ($head, $body, $tail, $pre) = @_;
-    # Only repair IdLists whose entries are the UNEVALUATED arithmetic that rscpp
-    # leaves behind, e.g. "(3076 + 47)".  Those always contain a '+'.  Plain
-    # numeric or symbolic-already-resolved IdLists ("1; 2;", "36; 37;") were never
-    # affected by that bug, and many appear inline inside macros next to a
-    # Color{...} mask whose stray '}' would desync rsc2's line scanner if we
-    # reformatted them — so leave such blocks BYTE-FOR-BYTE unchanged.
-    return $head . $body . $tail unless $body =~ /\+/;
 
     # Only act when the enclosing ImageList uses capital "Prefix".  rsc2's image
     # resolver scans case-sensitively for "Prefix"; some .src (dbaccess,
