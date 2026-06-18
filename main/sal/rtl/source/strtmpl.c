@@ -56,12 +56,62 @@ inline void rtl_str_ImplCopy( IMPL_RTL_STRCODE* pDest,
 }
 
 /* ======================================================================= */
+/* NULL-pointer guards                                                     */
+/*                                                                         */
+/* The C-string functions below document (see rtl/string.h, rtl/ustring.h) */
+/* that their string arguments must be non-NULL, null-terminated strings.  */
+/* Passing NULL is a caller error.  We diagnose it loudly in non-product   */
+/* builds via OSL_PRECOND (which compiles to nothing in product builds, so */
+/* there is no release-build cost for the assertion), and in every build   */
+/* we fall back to defined behaviour so the library never dereferences a   */
+/* NULL pointer.                                                           */
+/*                                                                         */
+/* These guards run exactly once, at function entry: they are OUTSIDE the  */
+/* per-character processing loops, so they do not change string-processing */
+/* throughput.  In the common (non-NULL) case the only added work is a     */
+/* single, perfectly-predicted pointer test per call.                      */
+/* ======================================================================= */
+
+#define IMPL_RTL_STR_GUARD_MSG \
+    "rtl string function: NULL pointer passed; the documented contract " \
+    "requires a non-NULL, null-terminated string"
+
+/* Read-only argument: treat a NULL pointer as the empty string. */
+static const IMPL_RTL_STRCODE aImplGuardEmptyStr = 0;
+#define IMPL_RTL_STR_NULL_AS_EMPTY( pStr )                                  \
+    do {                                                                    \
+        OSL_PRECOND( (pStr) != NULL, IMPL_RTL_STR_GUARD_MSG );              \
+        if ( !(pStr) )                                                      \
+            (pStr) = &aImplGuardEmptyStr;                                   \
+    } while (0)
+
+/* Argument that cannot be substituted (returns a value): bail out early. */
+#define IMPL_RTL_STR_NULL_RETURN( pStr, _ret )                              \
+    do {                                                                    \
+        OSL_PRECOND( (pStr) != NULL, IMPL_RTL_STR_GUARD_MSG );              \
+        if ( !(pStr) )                                                      \
+            return _ret;                                                    \
+    } while (0)
+
+/* Same, for functions returning void. */
+#define IMPL_RTL_STR_NULL_RETURN_VOID( pStr )                               \
+    do {                                                                    \
+        OSL_PRECOND( (pStr) != NULL, IMPL_RTL_STR_GUARD_MSG );              \
+        if ( !(pStr) )                                                      \
+            return;                                                         \
+    } while (0)
+
+/* ======================================================================= */
 /* C-String functions which could be used without the String-Class         */
 /* ======================================================================= */
 
 sal_Int32 SAL_CALL IMPL_RTL_STRNAME( getLength )( const IMPL_RTL_STRCODE* pStr )
 {
     const IMPL_RTL_STRCODE* pTempStr = pStr;
+    /* A NULL string has length 0.  Guarding getLength here also protects
+       hashCode, lastIndexOfChar, indexOfStr, lastIndexOfStr and trim, which
+       all start by calling getLength and then a length-bounded helper. */
+    IMPL_RTL_STR_NULL_RETURN( pStr, 0 );
     while( *pTempStr )
         pTempStr++;
     return pTempStr-pStr;
@@ -73,6 +123,10 @@ sal_Int32 SAL_CALL IMPL_RTL_STRNAME( compare )( const IMPL_RTL_STRCODE* pStr1,
                                                 const IMPL_RTL_STRCODE* pStr2 )
 {
     sal_Int32 nRet;
+    /* A NULL argument is treated as the empty string; the loop below then
+       yields the correct ordering (empty < any non-empty string). */
+    IMPL_RTL_STR_NULL_AS_EMPTY( pStr1 );
+    IMPL_RTL_STR_NULL_AS_EMPTY( pStr2 );
     while ( ((nRet = ((sal_Int32)(IMPL_RTL_USTRCODE(*pStr1)))-
                      ((sal_Int32)(IMPL_RTL_USTRCODE(*pStr2)))) == 0) &&
             *pStr2 )
@@ -165,6 +219,9 @@ sal_Int32 SAL_CALL IMPL_RTL_STRNAME( compareIgnoreAsciiCase )( const IMPL_RTL_ST
     sal_Int32   nRet;
     sal_Int32   c1;
     sal_Int32   c2;
+    /* A NULL argument is treated as the empty string. */
+    IMPL_RTL_STR_NULL_AS_EMPTY( pStr1 );
+    IMPL_RTL_STR_NULL_AS_EMPTY( pStr2 );
     do
     {
         /* If character between 'A' and 'Z', than convert it to lowercase */
@@ -324,6 +381,8 @@ sal_Int32 SAL_CALL IMPL_RTL_STRNAME( indexOfChar )( const IMPL_RTL_STRCODE* pStr
                                                     IMPL_RTL_STRCODE c )
 {
     const IMPL_RTL_STRCODE* pTempStr = pStr;
+    /* Nothing can be found in a NULL (empty) string. */
+    IMPL_RTL_STR_NULL_RETURN( pStr, -1 );
     while ( *pTempStr )
     {
         if ( *pTempStr == c )
@@ -524,6 +583,8 @@ void SAL_CALL IMPL_RTL_STRNAME( replaceChar )( IMPL_RTL_STRCODE* pStr,
                                                IMPL_RTL_STRCODE cOld,
                                                IMPL_RTL_STRCODE cNew )
 {
+    /* Nothing to replace in a NULL (empty) string. */
+    IMPL_RTL_STR_NULL_RETURN_VOID( pStr );
     while ( *pStr )
     {
         if ( *pStr == cOld )
@@ -554,6 +615,8 @@ void SAL_CALL IMPL_RTL_STRNAME( replaceChar_WithLength )( IMPL_RTL_STRCODE* pStr
 
 void SAL_CALL IMPL_RTL_STRNAME( toAsciiLowerCase )( IMPL_RTL_STRCODE* pStr )
 {
+    /* Nothing to convert in a NULL (empty) string. */
+    IMPL_RTL_STR_NULL_RETURN_VOID( pStr );
     while ( *pStr )
     {
         /* Between A-Z (65-90), than to lowercase (+32) */
@@ -584,6 +647,8 @@ void SAL_CALL IMPL_RTL_STRNAME( toAsciiLowerCase_WithLength )( IMPL_RTL_STRCODE*
 
 void SAL_CALL IMPL_RTL_STRNAME( toAsciiUpperCase )( IMPL_RTL_STRCODE* pStr )
 {
+    /* Nothing to convert in a NULL (empty) string. */
+    IMPL_RTL_STR_NULL_RETURN_VOID( pStr );
     while ( *pStr )
     {
         /* Between a-z (97-122), than to uppercase (-32) */
@@ -699,6 +764,8 @@ sal_Int32 SAL_CALL IMPL_RTL_STRNAME( valueOfBoolean )( IMPL_RTL_STRCODE* pStr, s
 sal_Int32 SAL_CALL IMPL_RTL_STRNAME( valueOfChar )( IMPL_RTL_STRCODE* pStr,
                                                     IMPL_RTL_STRCODE c )
 {
+    /* The caller must supply a writable buffer; on NULL write nothing. */
+    IMPL_RTL_STR_NULL_RETURN( pStr, 0 );
     *pStr++ = c;
     *pStr = 0;
     return 1;

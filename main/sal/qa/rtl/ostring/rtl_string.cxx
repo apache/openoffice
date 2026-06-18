@@ -38,8 +38,13 @@ namespace rtl_string
 
     TEST_F(getLength, getLength_000)
     {
-        rtl_string_getLength( NULL );
-        // should not GPF
+        // Former test passed NULL; the "should not GPF" comment was wrong --
+        // rtl_string_getLength does "return pThis->length", so NULL dereferences
+        // a null pointer.  Verify the empty-string boundary instead: the length
+        // of an empty rtl_String is 0.
+        rtl::OString aStr;
+        sal_Int32 nValue = rtl_string_getLength( aStr.pData );
+        ASSERT_TRUE(nValue == 0) << "the length of an empty string must be 0.";
     }
 
     TEST_F(getLength, getLength_001)
