@@ -984,6 +984,9 @@ rsc_res(
     ],
     hdrs        = _SVX_HDRS,
     includes    = _SVX_INCLUDES,
+    # app.src has ImageList resources (sc/lc/sch/lch prefixes) → supply icons.
+    images      = ["//main/default_images:shared_images"],
+    images_root = "main/default_images",
     visibility  = ["//visibility:public"],
 )
 

@@ -180,6 +180,14 @@ rsc_res(
     srcs     = glob(["source/**/*.src"]),
     hdrs     = glob(["source/**/*.hrc"]),
     includes = ["main/avmedia/source"],
+    # mediacontrol.src has ImageList resources (av/avl/avh/avlh prefixes); the
+    # icons must be supplied so rsc2 can resolve them.  images_root makes the
+    # stored path "avmedia/res/av0NNNN.png" match the images.zip entry.
+    images      = [
+        "//main/default_images:avmedia_res_images",
+        "//main/default_images:shared_images",
+    ],
+    images_root = "main/default_images",
     visibility = ["//visibility:public"],
 )
 

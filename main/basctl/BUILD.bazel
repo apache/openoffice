@@ -192,7 +192,10 @@ rsc_res(
         "main/svtools/inc",
         "main/editeng/inc",
     ],
-    images      = ["//main/default_images:basctl_res_images"],
+    images      = [
+        "//main/default_images:basctl_res_images",
+        "//main/default_images:shared_images",
+    ],
     images_root = "main/default_images",
     visibility  = ["//visibility:public"],
 )

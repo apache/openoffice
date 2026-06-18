@@ -294,6 +294,9 @@ rsc_res(
         "main/sfx2/inc",
         "main/editeng/inc",
     ],
+    # toolbar.src has ImageList resources (sc/lc/sch/lch prefixes) → supply icons.
+    images = ["//main/default_images:shared_images"],
+    images_root = "main/default_images",
 )
 
 # dbp.res — database pilots

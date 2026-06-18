@@ -53,6 +53,12 @@ filegroup(
 )
 
 filegroup(
+    name = "avmedia_res_images",
+    srcs = glob(["avmedia/res/**"]),
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
     name = "basctl_res_images",
     srcs = glob(["basctl/res/**"]),
     visibility = ["//visibility:public"],

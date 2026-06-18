@@ -216,17 +216,34 @@ filegroup(
 #
 # Naming: alllang_module_<xcu_id>_<module>
 # where xcu_id = xcu path with / and . replaced by _
+#
+# The xcs/schemaRoot params are REQUIRED here for the SAME reason as the default
+# spool below (see that block's long comment).  alllang.xsl's prop template
+# decides "localized-only fallback" vs "mergeable" by inspecting the schema node
+# from document($xcs); the `module` param only selects which install:module
+# nodes survive — it does NOT change prop-value handling.  Without the schema,
+# every localized-only prop (e.g. Office/Common.xcu Menus/New Title, which exists
+# only as <value xml:lang="en-US">) falls through the normal value template that
+# discards all @xml:lang values, so the per-module .xcd entries kept their nodes
+# (Text Document, HTML Document, …) but with EMPTY <prop oor:name="Title"/> →
+# the Writer "New" toolbar dropdown showed blank rows.  Adding xcs/schemaRoot
+# retains the en-US fallback exactly as it did for the default spool.
 
 [
     genrule(
         name = "alllang_module_{}_{}".format(
             xcu.replace("/", "_").replace(".", "_"), module),
-        srcs = ["registry/data/" + xcu, "util/alllang.xsl"],
+        srcs = [
+            "registry/data/" + xcu,
+            "util/alllang.xsl",
+        ] + glob(["registry/schema/**/*.xcs"]),
         outs = ["spool_module/{}/{}".format(module, xcu)],
         tools = ["@libxslt//:xsltproc"],
         cmd_bat = (
             "$(location @libxslt//:xsltproc) --novalid " +
             "--stringparam module {} ".format(module) +
+            "--stringparam xcs ../registry/schema/{}.xcs ".format(xcu[:-len(".xcu")]) +
+            "--stringparam schemaRoot ../registry/schema " +
             "-o $(OUTS) " +
             "$(location util/alllang.xsl) " +
             "$(location registry/data/{})".format(xcu)

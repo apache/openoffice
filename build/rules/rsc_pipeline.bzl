@@ -240,7 +240,28 @@ def _rsc_res_impl(ctx):
             mnemonic              = "RscFixBitmaps",
             progress_message      = "Fixing Bitmap blocks in %s" % srs_int.basename,
         )
-        srs_for_rsc2.append(srs_fixed)
+
+        # ── Step 1.6: Normalize ImageList IdList blocks ───────────────────────
+        # rscpp leaves IdList entries as unevaluated "(BASE + N)" expressions all
+        # on one line.  rsc2's PreprocessSrsFile() image resolver only accepts a
+        # single pure integer per line, so without this every Prefix+Id image
+        # (svtools document-type icons, navigator/toolbox images, ~44 .src files)
+        # is dropped from the .res.  Evaluate + one-per-line; see normalize_idlist.pl.
+        srs_idlist = ctx.actions.declare_file(
+            ctx.label.name + "_srs_idlist/" + srs_int.basename,
+        )
+        ctx.actions.run_shell(
+            command = (
+                "perl '" + ctx.file._fix_idlist.path + "' < '" +
+                srs_fixed.path + "' > '" + srs_idlist.path + "'"
+            ),
+            inputs                = [srs_fixed, ctx.file._fix_idlist],
+            outputs               = [srs_idlist],
+            use_default_shell_env = True,
+            mnemonic              = "RscFixImageList",
+            progress_message      = "Normalizing ImageList IdLists in %s" % srs_int.basename,
+        )
+        srs_for_rsc2.append(srs_idlist)
 
     # ── Step 2: Compile all .srs intermediates → .res with rsc2 ──────────
     ctx.actions.run(
@@ -305,6 +326,12 @@ rsc_res = rule(
             executable  = True,
             cfg         = "exec",
             allow_files = True,
+        ),
+        "_fix_idlist": attr.label(
+            default           = "//build/rules:normalize_idlist.pl",
+            allow_single_file = True,
+            cfg               = "exec",
+            doc               = "perl script that evaluates ImageList IdList expressions to one-int-per-line so rsc2 can resolve Prefix+Id images",
         ),
         # ── Runtime DLLs (individual single-file attrs) ──────────────────
         "_sal_dll": attr.label(
