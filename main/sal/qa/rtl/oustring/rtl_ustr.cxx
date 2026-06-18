@@ -49,15 +49,30 @@ namespace rtl_ustr
 
     TEST_F(compare, compare_000)
     {
-        rtl_ustr_compare( NULL, NULL);
-        // should not GPF
+        // Former test passed (NULL, NULL); the "should not GPF" comment was
+        // wrong -- rtl_ustr_compare requires null-terminated strings and
+        // unconditionally dereferences both, so NULL is undefined behaviour.
+        // Verify the ordering-sign contract instead, which had no coverage.
+        rtl::OUString aStr1 = rtl::OUString::createFromAscii("abc");
+        rtl::OUString aStr2 = rtl::OUString::createFromAscii("abd");
+
+        ASSERT_TRUE(rtl_ustr_compare( aStr1.getStr(), aStr2.getStr()) < 0)
+            << "\"abc\" must compare less than \"abd\".";
+        ASSERT_TRUE(rtl_ustr_compare( aStr2.getStr(), aStr1.getStr()) > 0)
+            << "\"abd\" must compare greater than \"abc\".";
     }
 
     TEST_F(compare, compare_000_1)
     {
+        // Former test passed (validStr, NULL) -> undefined behaviour.
+        // Verify the empty-string boundary instead.
         rtl::OUString aStr1 = rtl::OUString::createFromAscii("Line must be equal.");
-        rtl_ustr_compare( aStr1.getStr(), NULL);
-        // should not GPF
+        rtl::OUString aEmpty;
+
+        ASSERT_TRUE(rtl_ustr_compare( aStr1.getStr(), aEmpty.getStr()) > 0)
+            << "a non-empty string must be greater than the empty string.";
+        ASSERT_TRUE(rtl_ustr_compare( aEmpty.getStr(), aStr1.getStr()) < 0)
+            << "the empty string must be less than a non-empty string.";
     }
     TEST_F(compare, compare_001)
     {
@@ -93,13 +108,26 @@ namespace rtl_ustr
 
     TEST_F(compareIgnoreAsciiCase, compare_000)
     {
-        rtl_ustr_compareIgnoreAsciiCase( NULL, NULL);
+        // Former test passed (NULL, NULL) -> undefined behaviour.  Verify the
+        // case-insensitive ordering-sign contract instead.
+        rtl::OUString aStr1 = rtl::OUString::createFromAscii("abc");
+        rtl::OUString aStr2 = rtl::OUString::createFromAscii("ABD");
+
+        ASSERT_TRUE(rtl_ustr_compareIgnoreAsciiCase( aStr1.getStr(), aStr2.getStr()) < 0)
+            << "\"abc\" must compare less than \"ABD\" ignoring case.";
+        ASSERT_TRUE(rtl_ustr_compareIgnoreAsciiCase( aStr2.getStr(), aStr1.getStr()) > 0)
+            << "\"ABD\" must compare greater than \"abc\" ignoring case.";
     }
 
     TEST_F(compareIgnoreAsciiCase, compare_000_1)
     {
+        // Former test passed (validStr, NULL) -> undefined behaviour.
+        // Verify the empty-string boundary instead.
         rtl::OUString aStr1 = rtl::OUString::createFromAscii("Line must be equal.");
-        rtl_ustr_compareIgnoreAsciiCase( aStr1.getStr(), NULL);
+        rtl::OUString aEmpty;
+
+        ASSERT_TRUE(rtl_ustr_compareIgnoreAsciiCase( aStr1.getStr(), aEmpty.getStr()) > 0)
+            << "a non-empty string must be greater than the empty string.";
     }
     TEST_F(compareIgnoreAsciiCase, compare_001)
     {
@@ -145,13 +173,21 @@ namespace rtl_ustr
 
     TEST_F(shortenedCompareIgnoreAsciiCase_WithLength, compare_000)
     {
-        rtl_ustr_shortenedCompareIgnoreAsciiCase_WithLength( NULL, 0, NULL, 0, 0);
+        // Length-bounded: NULL data with length 0 is well-defined (the loop
+        // body never runs) and must return 0.  Keep NULL+0 as a regression
+        // guard, but assert it.
+        sal_Int32 nValue = rtl_ustr_shortenedCompareIgnoreAsciiCase_WithLength( NULL, 0, NULL, 0, 0);
+        ASSERT_TRUE(nValue == 0) << "zero-length comparison must return 0, even for NULL data.";
     }
 
     TEST_F(shortenedCompareIgnoreAsciiCase_WithLength, compare_000_1)
     {
+        // First string has data, second is a zero-length string (NULL data, len 0).
+        // Nothing is dereferenced; the function returns the length difference.
         rtl::OUString aStr1 = rtl::OUString::createFromAscii("Line must be equal.");
-        rtl_ustr_shortenedCompareIgnoreAsciiCase_WithLength( aStr1.getStr(), aStr1.getLength(), NULL, 0, 1);
+        sal_Int32 nValue = rtl_ustr_shortenedCompareIgnoreAsciiCase_WithLength( aStr1.getStr(), aStr1.getLength(), NULL, 0, 1);
+        ASSERT_TRUE(nValue == aStr1.getLength())
+            << "comparing against a zero-length string must yield the length difference.";
     }
     TEST_F(shortenedCompareIgnoreAsciiCase_WithLength, compare_001)
     {
@@ -259,7 +295,11 @@ namespace rtl_ustr
 
     TEST_F(indexOfChar, indexOfChar_000)
     {
-        rtl_ustr_indexOfChar( NULL, 0 );
+        // Former test passed NULL -> while(*pStr) dereferences NULL (UB).
+        // Verify the empty-string boundary: nothing is ever found -> -1.
+        rtl::OUString aStr1;
+        sal_Int32 nIndex = rtl_ustr_indexOfChar( aStr1.getStr(), 'x' );
+        ASSERT_TRUE(nIndex == -1) << "searching an empty string must return -1.";
     }
 
     TEST_F(indexOfChar, indexOfChar_001)
@@ -295,7 +335,11 @@ namespace rtl_ustr
 
     TEST_F(lastIndexOfChar, lastIndexOfChar_000)
     {
-        rtl_ustr_lastIndexOfChar( NULL, 0 );
+        // Former test passed NULL -> getLength(NULL) dereferences NULL (UB).
+        // Verify the empty-string boundary instead.
+        rtl::OUString aStr1;
+        sal_Int32 nIndex = rtl_ustr_lastIndexOfChar( aStr1.getStr(), 'x' );
+        ASSERT_TRUE(nIndex == -1) << "searching an empty string must return -1.";
     }
 
     TEST_F(lastIndexOfChar, lastIndexOfChar_001)
@@ -332,13 +376,22 @@ namespace rtl_ustr
 
     TEST_F(indexOfStr, indexOfStr_000)
     {
-        rtl_ustr_indexOfStr( NULL, 0 );
+        // Former test passed (NULL, NULL) -> getLength(NULL) dereferences NULL (UB).
+        // Verify the empty-haystack boundary: nothing is found -> -1.
+        rtl::OUString aStr1;
+        rtl::OUString suSearch = rtl::OUString::createFromAscii("x");
+        sal_Int32 nIndex = rtl_ustr_indexOfStr( aStr1.getStr(), suSearch.getStr() );
+        ASSERT_TRUE(nIndex == -1) << "searching in an empty string must return -1.";
     }
 
     TEST_F(indexOfStr, indexOfStr_000_1)
     {
+        // Former test passed a NULL needle -> getLength(NULL) (UB).
+        // Verify the empty-needle boundary: an empty search string is never found.
         rtl::OUString aStr1 = rtl::OUString::createFromAscii("Line for a indexOfStr.");
-        rtl_ustr_indexOfStr( aStr1.getStr(), 0 );
+        rtl::OUString suSearch;
+        sal_Int32 nIndex = rtl_ustr_indexOfStr( aStr1.getStr(), suSearch.getStr() );
+        ASSERT_TRUE(nIndex == -1) << "an empty search string is never found -> -1.";
     }
 
     TEST_F(indexOfStr, indexOfStr_001)
@@ -381,13 +434,22 @@ namespace rtl_ustr
 
     TEST_F(lastIndexOfStr, lastIndexOfStr_000)
     {
-        rtl_ustr_lastIndexOfStr( NULL, NULL );
+        // Former test passed (NULL, NULL) -> getLength(NULL) dereferences NULL (UB).
+        // Verify the empty-haystack boundary instead.
+        rtl::OUString aStr1;
+        rtl::OUString aSearchStr = rtl::OUString::createFromAscii("Line");
+        sal_Int32 nIndex = rtl_ustr_lastIndexOfStr( aStr1.getStr(), aSearchStr.getStr() );
+        ASSERT_TRUE(nIndex == -1) << "searching in an empty string must return -1.";
     }
 
     TEST_F(lastIndexOfStr, lastIndexOfStr_000_1)
     {
+        // Former test passed a NULL needle -> getLength(NULL) (UB).
+        // Verify the empty-needle boundary: an empty search string is never found.
         rtl::OUString aStr1 = rtl::OUString::createFromAscii("Line for a lastIndexOfStr.");
-        rtl_ustr_lastIndexOfStr( aStr1.getStr(), NULL );
+        rtl::OUString aSearchStr;
+        sal_Int32 nIndex = rtl_ustr_lastIndexOfStr( aStr1.getStr(), aSearchStr.getStr() );
+        ASSERT_TRUE(nIndex == -1) << "an empty search string is never found -> -1.";
     }
 
     TEST_F(lastIndexOfStr, lastIndexOfStr_001)
@@ -434,7 +496,11 @@ namespace rtl_ustr
 
     TEST_F(replaceChar, replaceChar_000)
     {
-        rtl_ustr_replaceChar( NULL, 0, 0 );
+        // Former test passed NULL -> while(*pStr) dereferences NULL (UB).
+        // Verify the empty-string boundary: replacing in "" is a no-op.
+        sal_Unicode pStr[] = { 0 };
+        rtl_ustr_replaceChar( pStr, 'a', 'b' );
+        ASSERT_TRUE(pStr[0] == 0) << "replacing in an empty string must leave it empty.";
     }
 
     TEST_F(replaceChar, replaceChar_001)
@@ -464,12 +530,21 @@ namespace rtl_ustr
 
     TEST_F(replaceChar_WithLength, replaceChar_WithLength_000)
     {
+        // Length-bounded: NULL data with length 0 never dereferences -> no-op.
         rtl_ustr_replaceChar_WithLength( NULL, 0, 0, 0 );
+        SUCCEED() << "NULL data with zero length must be tolerated (no dereference).";
     }
 
     TEST_F(replaceChar_WithLength, replaceChar_WithLength_000_1)
     {
-        rtl_ustr_replaceChar_WithLength( NULL, 1, 0, 0 );
+        // Former test passed (NULL, 1, ...) -> the loop runs once and
+        // dereferences NULL (UB).  Verify the length bound instead: only the
+        // first nLen characters are touched, the rest are left intact.
+        sal_Unicode pStr[]       = { 'a', 'a', 'a', 'a', 0 };
+        sal_Unicode pExpected[]  = { 'b', 'b', 'a', 'a', 0 };
+        rtl_ustr_replaceChar_WithLength( pStr, 2, 'a', 'b' );
+        ASSERT_TRUE(rtl::OUString(pStr).equals(rtl::OUString(pExpected)) == sal_True)
+            << "only the first nLen characters must be replaced.";
     }
     TEST_F(replaceChar_WithLength, replaceChar_WithLength_001)
     {
@@ -514,7 +589,11 @@ namespace rtl_ustr
 
     TEST_F(toAsciiLowerCase, toAsciiLowerCase_000)
     {
-        rtl_ustr_toAsciiLowerCase( NULL );
+        // Former test passed NULL -> while(*pStr) dereferences NULL (UB).
+        // Verify the empty-string boundary: lowercasing "" is a no-op.
+        sal_Unicode pStr[] = { 0 };
+        rtl_ustr_toAsciiLowerCase( pStr );
+        ASSERT_TRUE(pStr[0] == 0) << "lowercasing an empty string must leave it empty.";
     }
 
     TEST_F(toAsciiLowerCase, toAsciiLowerCase_001)
@@ -541,7 +620,9 @@ namespace rtl_ustr
 
     TEST_F(toAsciiLowerCase, toAsciiLowerCase_WithLength_000)
     {
+        // Length-bounded: NULL data with length 0 never dereferences -> no-op.
         rtl_ustr_toAsciiLowerCase_WithLength( NULL, 0 );
+        SUCCEED() << "NULL data with zero length must be tolerated (no dereference).";
     }
 
     TEST_F(toAsciiLowerCase, toAsciiLowerCase_WithLength_001)
@@ -576,7 +657,11 @@ namespace rtl_ustr
 
     TEST_F(toAsciiUpperCase, toAsciiUpperCase_000)
     {
-        rtl_ustr_toAsciiUpperCase( NULL );
+        // Former test passed NULL -> while(*pStr) dereferences NULL (UB).
+        // Verify the empty-string boundary: uppercasing "" is a no-op.
+        sal_Unicode pStr[] = { 0 };
+        rtl_ustr_toAsciiUpperCase( pStr );
+        ASSERT_TRUE(pStr[0] == 0) << "uppercasing an empty string must leave it empty.";
     }
 
     TEST_F(toAsciiUpperCase, toAsciiUpperCase_001)
@@ -604,7 +689,9 @@ namespace rtl_ustr
 
     TEST_F(toAsciiUpperCase_WithLength, toAsciiUpperCase_WithLength_000)
     {
+        // Length-bounded: NULL data with length 0 never dereferences -> no-op.
         rtl_ustr_toAsciiUpperCase_WithLength( NULL, 0 );
+        SUCCEED() << "NULL data with zero length must be tolerated (no dereference).";
     }
 
     TEST_F(toAsciiUpperCase_WithLength, toAsciiUpperCase_WithLength_001)
@@ -634,8 +721,10 @@ namespace rtl_ustr
 
     TEST_F(trim_WithLength, trim_WithLength_000)
     {
-        rtl_ustr_trim_WithLength(NULL, 0);
-        // should not GPF
+        // Length-bounded: NULL data with length 0 never dereferences and
+        // returns the resulting length 0.
+        sal_Int32 nLen = rtl_ustr_trim_WithLength(NULL, 0);
+        ASSERT_TRUE(nLen == 0) << "trimming a zero-length string must return 0 (and not GPF).";
     }
 
     TEST_F(trim_WithLength, trim_WithLength_000_1)
@@ -730,8 +819,14 @@ namespace rtl_ustr
 
     TEST_F(valueOfChar, valueOfChar_000)
     {
-        rtl_ustr_valueOfChar(NULL, 0);
-        // should not GPF
+        // Former test passed NULL -> the function writes through NULL (UB);
+        // the "should not GPF" comment was wrong, it always did.
+        // Verify the documented behaviour on a real buffer.
+        sal_Unicode pStr[RTL_USTR_MAX_VALUEOFCHAR];
+        sal_Int32 nLen = rtl_ustr_valueOfChar(pStr, 'Z');
+        ASSERT_TRUE(nLen == 1) << "valueOfChar must return 1.";
+        ASSERT_TRUE(pStr[0] == L'Z') << "valueOfChar must write the character.";
+        ASSERT_TRUE(pStr[1] == 0) << "valueOfChar must NUL-terminate.";
     }
     TEST_F(valueOfChar, valueOfChar_001)
     {
@@ -823,22 +918,26 @@ namespace rtl_ustr
 
     TEST_F(ascii_shortenedCompareIgnoreAsciiCase_WithLength, ascii_shortenedCompareIgnoreAsciiCase_WithLength_000)
     {
-        rtl_ustr_ascii_shortenedCompareIgnoreAsciiCase_WithLength( NULL, 0, NULL, 0);
-        // should not GPF
+        // A shortened length of 0 means "compare nothing"; the loop never runs
+        // and the function returns 0 without dereferencing the (NULL) data.
+        sal_Int32 nValue = rtl_ustr_ascii_shortenedCompareIgnoreAsciiCase_WithLength( NULL, 0, NULL, 0);
+        ASSERT_TRUE(nValue == 0) << "a shortened length of 0 must return 0, even for NULL data.";
     }
 
     TEST_F(ascii_shortenedCompareIgnoreAsciiCase_WithLength, ascii_shortenedCompareIgnoreAsciiCase_WithLength_000_1)
     {
+        // Shortened length 0 -> return 0 without touching the NULL ascii string.
         rtl::OUString aStr1 = rtl::OUString::createFromAscii("Line must be equal.");
-        rtl_ustr_ascii_shortenedCompareIgnoreAsciiCase_WithLength( aStr1.getStr(), aStr1.getLength(), NULL, 0);
-        // should not GPF
+        sal_Int32 nValue = rtl_ustr_ascii_shortenedCompareIgnoreAsciiCase_WithLength( aStr1.getStr(), aStr1.getLength(), NULL, 0);
+        ASSERT_TRUE(nValue == 0) << "a shortened length of 0 must return 0.";
     }
     TEST_F(ascii_shortenedCompareIgnoreAsciiCase_WithLength, ascii_shortenedCompareIgnoreAsciiCase_WithLength_000_2)
     {
+        // Shortened length 0 -> return 0, even though both strings have data.
         rtl::OUString aStr1 = rtl::OUString::createFromAscii("Line must be equal.");
         rtl::OString sStr2 =                                 "Line is shorter.";
-        rtl_ustr_ascii_shortenedCompareIgnoreAsciiCase_WithLength( aStr1.getStr(), sStr2.getLength(), sStr2.getStr(), 0);
-        // should not GPF
+        sal_Int32 nValue = rtl_ustr_ascii_shortenedCompareIgnoreAsciiCase_WithLength( aStr1.getStr(), sStr2.getLength(), sStr2.getStr(), 0);
+        ASSERT_TRUE(nValue == 0) << "a shortened length of 0 must return 0.";
     }
     TEST_F(ascii_shortenedCompareIgnoreAsciiCase_WithLength, ascii_shortenedCompareIgnoreAsciiCase_WithLength_001)
     {
@@ -876,15 +975,24 @@ namespace rtl_ustr
 
     TEST_F(ascii_compareIgnoreAsciiCase_WithLength, ascii_compareIgnoreAsciiCase_WithLength_000)
     {
-        rtl_ustr_ascii_compareIgnoreAsciiCase_WithLength( NULL, 0, NULL);
-        // should not GPF
+        // Former test passed a NULL ascii string.  Even with nStr1Len 0 this is
+        // undefined behaviour: the "!nStr1Len" branch returns "*pStr2 == '\0' ?
+        // 0 : -1", which dereferences the (NULL) ascii pointer.  Use a valid
+        // (empty) ascii string instead: an empty-vs-empty comparison is 0.
+        rtl::OUString aEmpty;
+        sal_Int32 nValue = rtl_ustr_ascii_compareIgnoreAsciiCase_WithLength( aEmpty.getStr(), 0, "");
+        ASSERT_TRUE(nValue == 0) << "comparing two empty strings must return 0.";
     }
 
     TEST_F(ascii_compareIgnoreAsciiCase_WithLength, ascii_compareIgnoreAsciiCase_WithLength_000_1)
     {
+        // Former test passed (validStr, 0, NULL) -> the "!nStr1Len" branch
+        // dereferences the NULL ascii pointer.  Verify the documented boundary
+        // instead: a zero-length first string vs. a non-empty ascii string is
+        // "less" (-1).
         rtl::OUString aStr1 = rtl::OUString::createFromAscii("Line must be equal.");
-        rtl_ustr_ascii_compareIgnoreAsciiCase_WithLength( aStr1.getStr(), 0, NULL);
-        // should not GPF
+        sal_Int32 nValue = rtl_ustr_ascii_compareIgnoreAsciiCase_WithLength( aStr1.getStr(), 0, "x");
+        ASSERT_TRUE(nValue == -1) << "a zero-length string is less than a non-empty ascii string.";
     }
     TEST_F(ascii_compareIgnoreAsciiCase_WithLength, ascii_compareIgnoreAsciiCase_WithLength_000_2)
     {
@@ -928,15 +1036,24 @@ namespace rtl_ustr
 
     TEST_F(ascii_compare, ascii_compare_000)
     {
-        rtl_ustr_ascii_compare( NULL, NULL);
-        // should not GPF
+        // Former test passed (NULL, NULL); the "should not GPF" comment was
+        // wrong -- rtl_ustr_ascii_compare unconditionally dereferences both
+        // pointers.  Verify the ordering-sign contract instead.
+        rtl::OUString aStr1 = rtl::OUString::createFromAscii("abc");
+
+        ASSERT_TRUE(rtl_ustr_ascii_compare( aStr1.getStr(), "abd") < 0)
+            << "\"abc\" must compare less than \"abd\".";
+        ASSERT_TRUE(rtl_ustr_ascii_compare( aStr1.getStr(), "abb") > 0)
+            << "\"abc\" must compare greater than \"abb\".";
     }
 
     TEST_F(ascii_compare, ascii_compare_000_1)
     {
+        // Former test passed (validStr, NULL) -> undefined behaviour.
+        // Verify the empty-string boundary instead.
         rtl::OUString aStr1 = rtl::OUString::createFromAscii("Line must be equal.");
-        rtl_ustr_ascii_compare( aStr1.getStr(), NULL);
-        // should not GPF
+        ASSERT_TRUE(rtl_ustr_ascii_compare( aStr1.getStr(), "") > 0)
+            << "a non-empty string must be greater than the empty string.";
     }
     TEST_F(ascii_compare, ascii_compare_001)
     {
@@ -974,15 +1091,23 @@ namespace rtl_ustr
 
     TEST_F(ascii_compareIgnoreAsciiCase, ascii_compareIgnoreAsciiCase_000)
     {
-        rtl_ustr_ascii_compareIgnoreAsciiCase( NULL, NULL);
-        // should not GPF
+        // Former test passed (NULL, NULL) -> undefined behaviour (both pointers
+        // are dereferenced).  Verify the case-insensitive ordering-sign contract.
+        rtl::OUString aStr1 = rtl::OUString::createFromAscii("abc");
+
+        ASSERT_TRUE(rtl_ustr_ascii_compareIgnoreAsciiCase( aStr1.getStr(), "ABD") < 0)
+            << "\"abc\" must compare less than \"ABD\" ignoring case.";
+        ASSERT_TRUE(rtl_ustr_ascii_compareIgnoreAsciiCase( aStr1.getStr(), "ABB") > 0)
+            << "\"abc\" must compare greater than \"ABB\" ignoring case.";
     }
 
     TEST_F(ascii_compareIgnoreAsciiCase, ascii_compareIgnoreAsciiCase_000_1)
     {
+        // Former test passed (validStr, NULL) -> undefined behaviour.
+        // Verify the empty-string boundary instead.
         rtl::OUString aStr1 = rtl::OUString::createFromAscii("Line must be equal.");
-        rtl_ustr_ascii_compareIgnoreAsciiCase( aStr1.getStr(), NULL);
-        // should not GPF
+        ASSERT_TRUE(rtl_ustr_ascii_compareIgnoreAsciiCase( aStr1.getStr(), "") > 0)
+            << "a non-empty string must be greater than the empty string.";
     }
     TEST_F(ascii_compareIgnoreAsciiCase, ascii_compareIgnoreAsciiCase_001)
     {
@@ -1058,15 +1183,23 @@ namespace rtl_ustr
 
     TEST_F(getToken, getToken_000)
     {
-        rtl_ustr_ascii_compareIgnoreAsciiCase( NULL, NULL);
-        // should not GPF
+        // Former test passed (NULL, NULL) -> undefined behaviour.  Verify the
+        // case-insensitive ordering-sign contract instead.
+        rtl::OUString aStr1 = rtl::OUString::createFromAscii("abc");
+
+        ASSERT_TRUE(rtl_ustr_ascii_compareIgnoreAsciiCase( aStr1.getStr(), "ABD") < 0)
+            << "\"abc\" must compare less than \"ABD\" ignoring case.";
+        ASSERT_TRUE(rtl_ustr_ascii_compareIgnoreAsciiCase( aStr1.getStr(), "ABB") > 0)
+            << "\"abc\" must compare greater than \"ABB\" ignoring case.";
     }
 
     TEST_F(getToken, ascii_compareIgnoreAsciiCase_000_1)
     {
+        // Former test passed (validStr, NULL) -> undefined behaviour.
+        // Verify the empty-string boundary instead.
         rtl::OUString aStr1 = rtl::OUString::createFromAscii("Line must be equal.");
-        rtl_ustr_ascii_compareIgnoreAsciiCase( aStr1.getStr(), NULL);
-        // should not GPF
+        ASSERT_TRUE(rtl_ustr_ascii_compareIgnoreAsciiCase( aStr1.getStr(), "") > 0)
+            << "a non-empty string must be greater than the empty string.";
     }
     TEST_F(getToken, ascii_compareIgnoreAsciiCase_001)
     {
