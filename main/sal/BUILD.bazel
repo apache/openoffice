@@ -196,11 +196,17 @@ filegroup(
 #   * osl/security — Win32 SID/registry APIs (needs <windows.h> + advapi32.lib)
 #
 # KNOWN UPSTREAM FAILURES (wired + run, but fail on their own merits — source is
-# out of scope so not fixed here): several rtl string suites have *_000 cases
-# that pass NULL into functions which dereference it (e.g. rtl_str_compare(NULL,
-# NULL)) → 0xC0000005; testHelperFunctions has 64-bit-shift logic asserts that
-# fail on this platform.  These are excluded from the :sal_tests green gate
-# below but remain buildable/runnable individually.
+# out of scope so not fixed here): testHelperFunctions has 64-bit-shift logic
+# asserts that fail on this platform.  These remain buildable/runnable
+# individually.
+#
+# FIXED: rtl_str / rtl_ustr / rtl_string previously had *_000 cases that passed
+# NULL into C string functions which dereference it (e.g. rtl_str_compare(NULL,
+# NULL)) → 0xC0000005.  NULL violates those functions' documented contract
+# ("must be null-terminated"), so the defect was in the test, not the (correct,
+# unchanged) source.  The cases were rewritten as contract-respecting boundary
+# tests (empty-string / ordering-sign / NULL-with-length-0 tolerance), which
+# also closed real coverage gaps.  They now pass.
 
 # rtl/ — string, encoding, math and crypto helpers (pure computation)
 sal_qa_test(name = "rtl_OString2", srcs = ["qa/rtl/ostring/rtl_OString2.cxx"], subdir = "rtl/ostring")
@@ -260,8 +266,6 @@ sal_qa_test(name = "sal_ut_bytesequence", srcs = ["qa/ByteSequence/ByteSequence.
 # test — passing and failing alike (failures are information, not hidden).  Most
 # pass; the known failures fail on their OWN merits, NOT the build (source is out
 # of scope), and are kept in so they stay visible:
-#   rtl_str / rtl_ustr / rtl_string / rtl_OUString2 — *_000 cases pass NULL into
-#       rtl_*_compare etc. which dereference it → 0xC0000005 (upstream test bug)
 #   testHelperFunctions — test_t_abs64 does (2147483648 << 1) in 32-bit → 0
 #   rtl_logfile — writes/reads c:/temp and asserts on it → env/permission bound
 #   rtl_textcvt — conversion/mime/codepage table expectations (sal conversion
