@@ -1,7 +1,7 @@
 package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
-load("//build/rules:rsc_pipeline.bzl", "rsc_res", "rename_file")
+load("//build/rules:rsc_pipeline.bzl", "rsc_res")
 
 # ── Common compile settings ───────────────────────────────────────────────────
 _DEFINES = [
@@ -1074,33 +1074,73 @@ cc_binary(
     visibility = ["//visibility:public"],
 )
 
+# RSC resource libraries.  Upstream's desktop module builds THREE separate
+# resource libraries (one .res per ResMgr name), NOT one merged .res.  Each is
+# loaded at runtime by ResMgr::CreateResMgr("<name>") → <name>en-US.res:
+#   * dkt           (util/makefile.mk)            desktop.src + wizard.src
+#   * deployment    (source/deployment/...)       registry/manager/misc/unopkg
+#   * deploymentgui (source/deployment/gui/...)   dp_gui_*.src  ← Extension Manager
+# A previous single glob(["source/**/*.src"]) merged everything into one .res
+# staged as both dkten-US and deploymenten-US, leaving deploymentguien-US.res
+# absent → ResMgr::CreateResMgr("deploymentgui") returned NULL → DeploymentGui-
+# ResMgr::get() NULL-deref in ResMgr::GetResource the moment Extension Manager
+# opened.  Split here to match upstream; hdrs/includes/images are shared (a
+# strict partition of the same inputs that compiled as one).
+_DESKTOP_RES_HDRS = glob(["inc/**/*.hrc", "source/**/*.hrc"]) + [
+    "//main/svtools:svtools_hrc",
+    "//main/svl:svl_hrc",
+]
+
+_DESKTOP_RES_INCLUDES = [
+    "main/desktop/inc",
+    "main/desktop/source/app",
+    "main/desktop/source/inc",
+    "main/desktop/source/deployment/registry/inc",
+    "main/svtools/inc",
+    "main/svl/inc",
+]
+
+_DESKTOP_RES_IMAGES = [
+    "//main/default_images:desktop_res_images",
+    "//main/default_images:shared_images",
+]
+
+# dkt → dkten-US.res  (app + migration wizard strings)
 rsc_res(
     name     = "desktop_res",
-    srcs     = glob(["source/**/*.src"]),
-    hdrs     = glob(["inc/**/*.hrc", "source/**/*.hrc"]) + [
-        "//main/svtools:svtools_hrc",
-        "//main/svl:svl_hrc",
+    srcs     = [
+        "source/app/desktop.src",
+        "source/migration/wizard.src",
     ],
-    includes = [
-        "main/desktop/inc",
-        "main/desktop/source/app",
-        "main/desktop/source/inc",
-        "main/desktop/source/deployment/registry/inc",
-        "main/svtools/inc",
-        "main/svl/inc",
-    ],
-    images      = [
-        "//main/default_images:desktop_res_images",
-        "//main/default_images:shared_images",
-    ],
+    hdrs     = _DESKTOP_RES_HDRS,
+    includes = _DESKTOP_RES_INCLUDES,
+    images      = _DESKTOP_RES_IMAGES,
     images_root = "main/default_images",
     visibility = ["//visibility:public"],
 )
 
-rename_file(
-    name = "deployment_res",
-    src  = ":desktop_res",
-    out  = "deploymenten-US.res",
+# deployment → deploymenten-US.res  (registry/manager/misc/unopkg, no gui)
+rsc_res(
+    name     = "deployment_res",
+    srcs     = glob(
+        ["source/deployment/**/*.src"],
+        exclude = ["source/deployment/gui/*.src"],
+    ),
+    hdrs     = _DESKTOP_RES_HDRS,
+    includes = _DESKTOP_RES_INCLUDES,
+    images      = _DESKTOP_RES_IMAGES,
+    images_root = "main/default_images",
+    visibility = ["//visibility:public"],
+)
+
+# deploymentgui → deploymentguien-US.res  (Extension Manager dialogs)
+rsc_res(
+    name     = "deploymentgui_res",
+    srcs     = glob(["source/deployment/gui/*.src"]),
+    hdrs     = _DESKTOP_RES_HDRS,
+    includes = _DESKTOP_RES_INCLUDES,
+    images      = _DESKTOP_RES_IMAGES,
+    images_root = "main/default_images",
     visibility = ["//visibility:public"],
 )
 

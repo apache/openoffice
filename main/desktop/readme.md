@@ -58,3 +58,17 @@
 
 - **App launchers** (swriter/scalc/sdraw/simpress/sbase/smath/sweb): each links `launcher.cxx` +
   `<app>.cxx`, uses `UNICODE`/`_UNICODE`, links only `shell32.lib`.
+
+- **RSC resource libraries — THREE separate `.res`, not one**: the desktop module's strings are
+  loaded at runtime by `ResMgr::CreateResMgr("<name>")` → `<name>en-US.res`, so each ResMgr name
+  needs its own `.res` file. Upstream builds three (`util/makefile.mk` → `dkt`,
+  `source/deployment/makefile.mk` → `deployment`, `source/deployment/gui/makefile.mk` →
+  `deploymentgui`). The three `rsc_res` targets are `:desktop_res` (→ `dkten-US.res`,
+  app `desktop.src` + migration `wizard.src`), `:deployment_res` (→ `deploymenten-US.res`,
+  registry/manager/misc/unopkg `.src`, gui excluded) and `:deploymentgui_res`
+  (→ `deploymentguien-US.res`, the `dp_gui_*.src` Extension Manager dialogs). `hdrs`/`includes`/
+  `images` are shared (a strict partition of the same inputs).
+  HISTORY: a single `glob(["source/**/*.src"])` once merged everything into one `.res` staged as
+  both `dkten-US` and `deploymenten-US`, so `deploymentguien-US.res` never existed →
+  `ResMgr::CreateResMgr("deploymentgui")` returned NULL → `DeploymentGuiResMgr::get()` NULL-deref
+  in `ResMgr::GetResource` (`[eax+20h]`, eax=0) the instant Extension Manager opened.
