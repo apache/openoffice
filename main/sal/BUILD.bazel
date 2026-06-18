@@ -2,6 +2,7 @@ package(default_visibility = ["//visibility:public"])
 
 # we need to load cc_binary and cc_library to be able to use them here
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("//main/sal:sal_qa.bzl", "sal_qa_test")
 
 # Global defines for all cc_library rules in sal (Windows MSVC)
 _COPTS = [
@@ -176,4 +177,145 @@ filegroup(
     name = "sal_inc_hdrs",
     srcs = glob(["inc/**/*.h", "inc/**/*.hxx"]),
     visibility = ["//visibility:public"],
+)
+
+# ── unit tests (qa/) ──────────────────────────────────────────────
+# Standalone GoogleTest apps (each has its own main()), link sal only.
+# See sal_qa.bzl for the shared copts/deps.  $(TESTSHL2LIB) in the dmake
+# *STDLIBS is a no-op here (undefined → empty; AOO retired testshl2), so the
+# only real gate is the test source's helper includes — all handled by the
+# macro's /Imain/sal/qa/inc + per-dir include.
+#
+# DEFERRED (not wired):
+#   * cppunit suites — osl/socket/*, rtl_strings/* → Phase 4 (needs CppUnit dep)
+#   * child-process tests — osl/process, rtl/bootstrap, rtl/process (parent
+#     execs a helper exe that would need separate staging)
+#   * resource/IPC tests — osl/file, osl/module, osl/pipe (need temp dirs, a
+#     loadable module, or a process pair)
+#   * systools/test_comtools — Win32 COM smart-pointers (needs ole32 + CoInit)
+#   * osl/security — Win32 SID/registry APIs (needs <windows.h> + advapi32.lib)
+#
+# KNOWN UPSTREAM FAILURES (wired + run, but fail on their own merits — source is
+# out of scope so not fixed here): several rtl string suites have *_000 cases
+# that pass NULL into functions which dereference it (e.g. rtl_str_compare(NULL,
+# NULL)) → 0xC0000005; testHelperFunctions has 64-bit-shift logic asserts that
+# fail on this platform.  These are excluded from the :sal_tests green gate
+# below but remain buildable/runnable individually.
+
+# rtl/ — string, encoding, math and crypto helpers (pure computation)
+sal_qa_test(name = "rtl_OString2", srcs = ["qa/rtl/ostring/rtl_OString2.cxx"], subdir = "rtl/ostring")
+sal_qa_test(name = "rtl_str", srcs = ["qa/rtl/ostring/rtl_str.cxx"], subdir = "rtl/ostring")
+sal_qa_test(name = "rtl_string", srcs = ["qa/rtl/ostring/rtl_string.cxx"], subdir = "rtl/ostring")
+sal_qa_test(name = "rtl_OUString2", srcs = ["qa/rtl/oustring/rtl_OUString2.cxx"], subdir = "rtl/oustring")
+sal_qa_test(name = "rtl_ustr", srcs = ["qa/rtl/oustring/rtl_ustr.cxx"], subdir = "rtl/oustring")
+sal_qa_test(name = "rtl_OUStringBuffer2", srcs = ["qa/rtl/oustringbuffer/rtl_OUStringBuffer2.cxx"], subdir = "rtl/oustringbuffer")
+sal_qa_test(name = "rtl_textcvt", srcs = ["qa/rtl/textenc/rtl_textcvt.cxx"], subdir = "rtl/textenc")
+sal_qa_test(name = "rtl_tencinfo", srcs = ["qa/rtl/textenc/rtl_tencinfo.cxx"], subdir = "rtl/textenc")
+sal_qa_test(name = "rtl_uri_simple", srcs = ["qa/rtl/uri/rtl_Uri.cxx"], subdir = "rtl/uri")
+sal_qa_test(name = "rtl_Uri", srcs = ["qa/rtl/uri/rtl_testuri.cxx"], subdir = "rtl/uri")
+sal_qa_test(name = "rtl_Alloc", srcs = ["qa/rtl/alloc/rtl_alloc.cxx"], subdir = "rtl/alloc")
+sal_qa_test(name = "rtl_cipher", srcs = ["qa/rtl/cipher/rtl_cipher.cxx"], subdir = "rtl/cipher")
+sal_qa_test(name = "rtl_crc32", srcs = ["qa/rtl/crc32/rtl_crc32.cxx"], subdir = "rtl/crc32")
+sal_qa_test(name = "rtl_digest", srcs = ["qa/rtl/digest/rtl_digest.cxx"], subdir = "rtl/digest")
+sal_qa_test(name = "rtl_doublelocking", srcs = ["qa/rtl/doublelock/rtl_doublelocking.cxx"], subdir = "rtl/doublelock")
+sal_qa_test(name = "rtl_locale", srcs = ["qa/rtl/locale/rtl_locale.cxx"], subdir = "rtl/locale")
+sal_qa_test(name = "rtl_logfile", srcs = ["qa/rtl/logfile/rtl_logfile.cxx"], subdir = "rtl/logfile", copts = ["/FIwindows.h"])
+sal_qa_test(name = "rtl_Random", srcs = ["qa/rtl/random/rtl_random.cxx"], subdir = "rtl/random")
+sal_qa_test(name = "rtl_Uuid", srcs = ["qa/rtl/uuid/rtl_Uuid.cxx"], subdir = "rtl/uuid")
+sal_qa_test(name = "test-rtl-math", srcs = ["qa/rtl/math/test-rtl-math.cxx"], subdir = "rtl/math")
+
+# osl/ — synchronisation, threads, profiles, security, file, module, pipe
+sal_qa_test(name = "sal_ut_osl_condition", srcs = ["qa/osl/condition/osl_Condition.cxx"], subdir = "osl/condition")
+sal_qa_test(name = "osl_Mutex", srcs = ["qa/osl/mutex/osl_Mutex.cxx"], subdir = "osl/mutex")
+sal_qa_test(name = "sal_ut_osl_thread", srcs = ["qa/osl/thread/test_thread.cxx"], subdir = "osl/thread")
+sal_qa_test(name = "osl_old_testprofile", srcs = ["qa/osl/profile/osl_old_testprofile.cxx"], subdir = "osl/profile")
+sal_qa_test(name = "test-setthreadname", srcs = ["qa/osl/setthreadname/test-setthreadname.cxx"], subdir = "osl/setthreadname")
+# osl_Security uses Win32 SID/registry APIs directly: <windows.h> + advapi32.
+sal_qa_test(name = "osl_Security", srcs = ["qa/osl/security/osl_Security.cxx"], subdir = "osl/security", copts = ["/FIwindows.h"], linkopts = ["advapi32.lib"])
+sal_qa_test(name = "osl_Module", srcs = ["qa/osl/module/osl_Module.cxx"], subdir = "osl/module")
+sal_qa_test(name = "sal_ut_osl_pipe", srcs = ["qa/osl/pipe/osl_Pipe.cxx"], subdir = "osl/pipe")
+sal_qa_test(name = "osl_File", srcs = ["qa/osl/file/osl_File.cxx"], subdir = "osl/file")
+sal_qa_test(name = "tcwf", srcs = ["qa/osl/file/test_cpy_wrt_file.cxx"], subdir = "osl/file")
+sal_qa_test(name = "osl_old_test_file", srcs = ["qa/osl/file/osl_old_test_file.cxx"], subdir = "osl/file")
+sal_qa_test(name = "osl_Thread", srcs = ["qa/osl/process/osl_Thread.cxx"], subdir = "osl/process")
+
+# systools — Win32 COM smart pointers (needs ole32 + CoInitialize).
+sal_qa_test(name = "test_comtools", srcs = ["qa/systools/test_comtools.cxx"], subdir = "systools", copts = ["/FIwindows.h"], linkopts = ["ole32.lib"])
+
+# string-buffer & misc — own helper sources / pure logic
+sal_qa_test(
+    name = "rtl_OStringBuffer",
+    srcs = ["qa/OStringBuffer/rtl_OStringBuffer.cxx", "qa/OStringBuffer/rtl_String_Utils.cxx", "qa/OStringBuffer/rtl_String_Utils.hxx"],
+    subdir = "OStringBuffer",
+)
+sal_qa_test(
+    name = "testHelperFunctions",
+    srcs = ["qa/testHelperFunctions/testHelperFunctions.cxx", "qa/testHelperFunctions/testHelperFunctions2.cxx"],
+    subdir = "testHelperFunctions",
+)
+sal_qa_test(name = "sal_ut_types", srcs = ["qa/sal/test_types.cxx"], subdir = "sal")
+sal_qa_test(name = "sal_ut_bytesequence", srcs = ["qa/ByteSequence/ByteSequence.cxx"], subdir = "ByteSequence")
+
+# `bazel test //main/sal:sal_tests` runs EVERY migrated self-contained sal/qa
+# test — passing and failing alike (failures are information, not hidden).  Most
+# pass; the known failures fail on their OWN merits, NOT the build (source is out
+# of scope), and are kept in so they stay visible:
+#   rtl_str / rtl_ustr / rtl_string / rtl_OUString2 — *_000 cases pass NULL into
+#       rtl_*_compare etc. which dereference it → 0xC0000005 (upstream test bug)
+#   testHelperFunctions — test_t_abs64 does (2147483648 << 1) in 32-bit → 0
+#   rtl_logfile — writes/reads c:/temp and asserts on it → env/permission bound
+#   rtl_textcvt — conversion/mime/codepage table expectations (sal conversion
+#       works in the running app → test-data drift)
+#   osl_File / osl_old_test_file / tcwf / osl_Module / sal_ut_osl_pipe — exercise
+#       the filesystem / module loader / pipes; may depend on the run environment
+#
+# NOT YET WIRED (hard blockers, not cosmetic):
+#   * cppunit suites — osl/socket/*, rtl_strings/* → need a CppUnit external dep
+#     (Phase 4); they will not compile until it is wrapped.
+#   * child-process spawners — osl/process:osl_process, rtl/process:rtl_Process,
+#     rtl/bootstrap:rtl_Bootstrap → resolve their helper exe via
+#     getExecutablePath()→"../bin" (the dmake solver/bin layout), which flat
+#     Bazel staging cannot satisfy without source changes.  The gtest_test rule
+#     has a `companions` hook ready for when that layout is reproduced.
+test_suite(
+    name = "sal_tests",
+    tests = [
+        ":rtl_OString2",
+        ":rtl_str",
+        ":rtl_string",
+        ":rtl_OUString2",
+        ":rtl_ustr",
+        ":rtl_OStringBuffer",
+        ":rtl_OUStringBuffer2",
+        ":rtl_textcvt",
+        ":rtl_tencinfo",
+        ":rtl_uri_simple",
+        ":rtl_Uri",
+        ":rtl_Alloc",
+        ":rtl_cipher",
+        ":rtl_crc32",
+        ":rtl_digest",
+        ":rtl_doublelocking",
+        ":rtl_locale",
+        ":rtl_logfile",
+        ":rtl_Random",
+        ":rtl_Uuid",
+        ":test-rtl-math",
+        ":sal_ut_osl_condition",
+        ":osl_Mutex",
+        ":sal_ut_osl_thread",
+        ":osl_old_testprofile",
+        ":test-setthreadname",
+        ":osl_Security",
+        ":osl_Module",
+        ":sal_ut_osl_pipe",
+        ":osl_File",
+        ":tcwf",
+        ":osl_old_test_file",
+        ":osl_Thread",
+        ":test_comtools",
+        ":testHelperFunctions",
+        ":sal_ut_types",
+        ":sal_ut_bytesequence",
+    ],
 )

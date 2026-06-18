@@ -1,6 +1,7 @@
 package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("//build/rules:gtest_test.bzl", "gtest_test")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -230,4 +231,41 @@ cc_library(
         "//main/sal:sal_headers",
     ],
     visibility = ["//visibility:public"],
+)
+
+# ── tools_pathutils — GoogleTest_tools_pathutils.mk ───────────────
+# Tests tools::buildPath (Windows path-mangling).  buildPath lives in the
+# static ooopathutils lib (pure sal/types.h + <windows.h>, no DLL), so the
+# test links it directly and needs only the VC90 CRT at run time — no tl.dll.
+# precompiled_tools.hxx (force-included by the source) pulls a wide header set
+# (basegfx/offapi/comphelper/cppuhelper/i18npool/sal), hence the header deps;
+# none are *used* so no runtime symbols are pulled.
+gtest_test(
+    name = "tools_pathutils",
+    srcs = ["qa/test_pathutils.cxx"],
+    copts = [
+        "/Imain/tools/inc",
+        "/Imain/tools/inc/pch",
+        "/Zc:wchar_t-",
+    ],
+    defines = [
+        "WNT", "GUI", "WIN32",
+        "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+        "CPPU_ENV=msci", "INTEL", "_X86_=1",
+        "snprintf=_snprintf",
+    ],
+    deps = [
+        ":tools_headers",
+        ":ooopathutils",  # static: tools::buildPath
+        "//main/sal:sal_headers",
+        "//main/basegfx:basegfx_headers",
+        "//main/comphelper:comphelper_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/i18npool:i18npool_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/stlport:stlport",
+        "@boost.legacy//:boost.legacy",
+    ],
 )

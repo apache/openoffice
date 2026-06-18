@@ -1,0 +1,11 @@
+{
+    "url": "file:///C:/workspace/openoffice/ext_sources/2d6ec8ccdf5c46b05ba54a9fd1d130d7-gtest-1.7.0.zip",
+    "integrity": "sha256-JHyhjdg/U96xMovhfksb4xUUzt/B40JPZyvxH9fg1g0=",
+    "strip_prefix": "gtest-1.7.0",
+    "overlay": {
+        "BUILD.bazel": "sha256-P/s/IZH/arK7VLZp1/CclJC9uH5koaVhTD7V78+DGn4=",
+        "MODULE.bazel": "sha256-iSA2QfWt94Ed7j+mJ6Mt3eKABFqlD1eIWYsLvKSkCaM="
+    },
+    "patches": {},
+    "patch_strip": 0
+}

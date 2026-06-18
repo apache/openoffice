@@ -1,0 +1,90 @@
+package(default_visibility = ["//visibility:public"])
+
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+# main/test — libtest, AOO's C++ unit-test support library (test.dll).
+#
+# Provides test::OfficeConnection (bootstrap/connect to a soffice instance over
+# UNO/URP) and the arg/url helpers that per-module qa/ GoogleTest suites build
+# on.  Mirrors Library_test.mk: 5 exception objects, links gtest + cppu(helper)
+# + sal + stlport, exports via OOO_DLLPUBLIC_TEST (SAL_DLLPUBLIC_EXPORT) so no
+# DEF file is needed (declspec exports, like comphelper).
+
+_DEFINES = [
+    "WNT", "GUI", "WIN32",
+    "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
+    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "SHAREDLIB", "_DLL_",
+    "OOO_DLLIMPLEMENTATION_TEST",
+    "snprintf=_snprintf",
+]
+
+# ── public test/ API headers (test/officeconnection.hxx, etc.) ────────
+cc_library(
+    name = "test_headers",
+    hdrs = glob(["inc/test/**"]),
+    strip_include_prefix = "inc",
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "@boost.legacy//:boost.legacy",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+_SRCS = [
+    "source/cpp/getargument.cxx",
+    "source/cpp/gettestargument.cxx",
+    "source/cpp/officeconnection.cxx",
+    "source/cpp/toabsolutefileurl.cxx",
+    "source/cpp/uniquepipename.cxx",
+    "source/cpp/getargument.hxx",  # private header
+]
+
+# ── test.dll ──────────────────────────────────────────────────────────
+cc_binary(
+    name = "test",
+    srcs = _SRCS,
+    copts = [
+        "/Imain/test/inc",
+        "/Imain/test/inc/pch",
+        "/Imain/test/source/cpp",
+        "/Zc:wchar_t-",
+    ],
+    defines = _DEFINES,
+    linkshared = True,
+    deps = [
+        ":test_headers",
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/stlport:stlport",  # preextstl.h / postextstl.h guards around gtest
+        "@boost.legacy//:boost.legacy",
+        "@gtest//:gtest",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── import library for downstream qa/ suites ──────────────────────────
+filegroup(
+    name = "test_implib",
+    srcs = [":test"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)

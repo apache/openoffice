@@ -1,0 +1,62 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+# GoogleTest 1.7.0 — built with MSVC VS2008 (32-bit), self-contained.
+#
+# AOO's C++ unit-test foundation (//main/test:test links this; per-module qa/
+# gtest suites link it too).  Matches the dmake ext_libraries/modules/gtest
+# recipe: a single static lib built from src/gtest-all.cc.
+#
+# gtest-all.cc textually #includes the other src/*.cc (gtest.cc,
+# gtest-death-test.cc, …) and src/gtest-internal-inl.h — those must be
+# textual_hdrs, NOT srcs, or they compile twice → duplicate symbols.
+# `includes = ["."]` puts the module root on -I so gtest-all.cc's
+# `#include "src/gtest-internal-inl.h"` resolves; `include/` is for consumers'
+# `#include "gtest/gtest.h"`.
+#
+# GTEST_USE_OWN_TR1_TUPLE=1 reproduces use-own-tuple.patch: VS2008's <tr1/tuple>
+# is incomplete, so gtest uses its bundled tuple.  It is a `defines` (propagated)
+# not a local define because gtest-port.h is included by consumers too and the
+# tuple choice MUST be identical on both sides of the ABI.
+
+_COPTS = [
+    "/EHsc",     # gtest uses try/catch (exception tests)
+    # AOO compiles the whole tree (incl. gtest, via solenv) with /Zc:wchar_t-,
+    # so wchar_t == unsigned short.  Tests that touch sal_Unicode build with the
+    # same flag; if gtest were built with native wchar_t, gtest's
+    # PrintTo(wchar_t) would mangle differently from the test's
+    # PrintTo(unsigned short) → LNK2019.  Keep gtest's wchar_t ABI aligned.
+    "/Zc:wchar_t-",
+    "/wd4127",   # conditional expression is constant
+    "/wd4244",   # conversion, possible loss of data
+    "/wd4267",   # size_t → int
+    "/wd4996",   # deprecated CRT functions (sprintf, fopen, …)
+    "/wd4068",   # unknown pragma
+    "/wd4275",   # non dll-interface base
+]
+
+cc_library(
+    name = "gtest",
+    srcs = ["src/gtest-all.cc"],
+    hdrs = glob(["include/**/*.h"]),
+    textual_hdrs = glob(
+        ["src/*.cc", "src/*.h"],
+        exclude = ["src/gtest-all.cc", "src/gtest_main.cc"],
+    ),
+    includes = [
+        "include",  # consumers: #include "gtest/gtest.h"
+        ".",        # gtest-all.cc: #include "src/gtest-internal-inl.h"
+    ],
+    copts = _COPTS,
+    defines = ["GTEST_USE_OWN_TR1_TUPLE=1"],
+    visibility = ["//visibility:public"],
+)
+
+# Optional default main() — most AOO suites provide their own, but expose it for
+# the trivial cc_test case.
+cc_library(
+    name = "gtest_main",
+    srcs = ["src/gtest_main.cc"],
+    copts = _COPTS,
+    deps = [":gtest"],
+    visibility = ["//visibility:public"],
+)

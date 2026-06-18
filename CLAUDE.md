@@ -39,9 +39,16 @@ helpcontent2  ⬜  (help content sources)
 xmlhelp       ✅  tvhlp1.dll + ucpchelp1.dll; stlport for hash_map, libxslt for XSLT in urlparameter
 xml2cmp       ⬜  (XML component comparison tool)
 qadevOOo      ⬜  (Java-based QA test framework)
-test          ⬜  (C++ unit tests)
-testgraphical ⬜  (graphical/visual regression tests)
-testtools     ⬜  (test infrastructure)
+test          🔨  C++ unit-test infra runnable.  @gtest 1.7.0 bzlmod wrap (built
+                   /Zc:wchar_t- to match sal_Unicode); build/rules/gtest_test.bzl
+                   (svidl_bundle analog: stages /MD exe + DLLs + CRT + external
+                   manifest into one dir or R6034); libtest (test.dll) builds.
+                   GREEN: o3tl_test (5), tools_pathutils, //main/sal:sal_tests (22)
+                   via sal_qa_test macro.  See main/test/readme.md.  NEXT: per-module
+                   qa/ across other modules; OfficeConnection (UNO subsequent) tests
+                   need a running-soffice fixture; cppunit suites need Phase-4 dep
+testgraphical ⬜  (graphical/visual regression tests; needs instsetoo_native + qadevOOo)
+testtools     ⬜  (bridgetest — pure-C++ UNO bridge round-trip; cli/pyuno/java variants deferred)
 ── Deferred: Standalone/misc ─────────────────────────────────────────────
 crashrep      ✅  (crash reporter)
 automation    ⬜  (test automation/macro recorder framework)

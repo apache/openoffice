@@ -1,4 +1,5 @@
 load("@rules_cc//cc:defs.bzl", "cc_library")
+load("//build/rules:gtest_test.bzl", "gtest_test")
 
 # ── o3tl — header-only template utilities ────────────────────────
 # cow_wrapper, heap_ptr, lazy_update, range, vector_pool
@@ -11,4 +12,29 @@ cc_library(
         "@boost.legacy//:boost.legacy",
     ],
     visibility = ["//visibility:public"],
+)
+
+# ── o3tl_test — first runnable bazel test (GoogleTest_o3tl.mk) ─────
+# Pure unit test: own main() (qa/main.cxx → InitGoogleTest + RUN_ALL_TESTS),
+# no UNO runtime / no OfficeConnection.  Only sal3.dll at run time (cow_wrapper
+# uses osl_interlocked*).  preextstl.h/postextstl.h come from stlport.
+gtest_test(
+    name = "o3tl_test",
+    srcs = glob(["qa/*.cxx", "qa/*.hxx"]),
+    copts = [
+        "/Imain/o3tl/qa",   # cow_wrapper_clients.hxx (quote include)
+        "/Zc:wchar_t-",
+    ],
+    defines = [
+        "WNT", "WIN32", "INTEL", "_X86_=1",
+        "snprintf=_snprintf",
+    ],
+    deps = [
+        ":o3tl",                     # o3tl/*.hxx + sal_headers + boost
+        "//main/sal:sal_headers",
+        "//main/stlport:stlport",    # preextstl.h / postextstl.h
+    ],
+    additional_linker_inputs = ["//main/sal:sal_implib"],
+    linkopts = ["$(execpath //main/sal:sal_implib)"],
+    runtime_dlls = ["//main/sal:sal3"],
 )
