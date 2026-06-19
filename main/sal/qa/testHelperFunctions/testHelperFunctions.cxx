@@ -42,7 +42,7 @@ inline sal_Int64 t_abs64(sal_Int64 _nValue)
 {
     // std::abs() seems to have some ambiguity problems (so-texas)
     // return abs(_nValue);
-    printf("t_abs64(%ld)\n", _nValue);
+    printf("t_abs64(%" SAL_PRIdINT64 ")\n", _nValue);
     // ASSERT_TRUE(_nValue < 2147483647);
 
     if (_nValue < 0)
@@ -105,10 +105,17 @@ namespace testOfHelperFunctions
     TEST_F(test_t_abs64, test1)
     {
         sal_Int64 n;
-        n = 2147483648 << 8;
+        // The shift must happen in 64-bit: a bare 2147483648 literal is at most
+        // 32 bits wide on ILP32/LLP64 platforms (e.g. win32), so the high bit
+        // would be shifted out before the result is widened to sal_Int64.
+        // Force a 64-bit operand, exactly as test1_1 does.
+        n = sal_Int64(2147483648) << 8;
         printf("Value of n is ");
         printf64(n);
         ASSERT_TRUE(t_abs64(n) > 0) << "n=2^31 << 8";
+        // 2^31 << 8 == 2^39 == 549755813888; written independently to catch a
+        // regression back to 32-bit arithmetic (which would yield 0).
+        ASSERT_TRUE(n == SAL_CONST_INT64(549755813888)) << "n=2^31 << 8 exact value";
     }
     TEST_F(test_t_abs64, test1_1)
     {
@@ -122,19 +129,24 @@ namespace testOfHelperFunctions
     TEST_F(test_t_abs64, test2)
     {
         sal_Int64 n;
-        n = 2147483648 << 1;
+        // 2^31 << 1, 2^31 * 2 and 2^32 must all equal 4294967296. Each operand
+        // is forced to 64 bits; with a bare 2147483648 literal the shift and the
+        // multiplication would overflow in 32-bit arithmetic and yield 0 on
+        // ILP32/LLP64 platforms (the original test bug, latent on LP64).
+        n = sal_Int64(2147483648) << 1;
         printf("Value of n is ");
         printf64(n);
 
-        ASSERT_TRUE(n != 0) << "(2147483648 << 1) is != 0";
+        ASSERT_TRUE(n != 0) << "(2^31 << 1) is != 0";
 
-        sal_Int64 n2 = 2147483648 * 2;
-        ASSERT_TRUE(n2 != 0) << "2147483648 * 2 is != 0";
+        sal_Int64 n2 = sal_Int64(2147483648) * 2;
+        ASSERT_TRUE(n2 != 0) << "2^31 * 2 is != 0";
 
         sal_Int64 n3 = 4294967296LL;
         ASSERT_TRUE(n3 != 0) << "4294967296 is != 0";
 
         ASSERT_TRUE(n == n2 && n == n3) << "n=2^31 << 1, n2 = 2^31 * 2, n3 = 2^32, all should equal!";
+        ASSERT_TRUE(n == SAL_CONST_INT64(4294967296)) << "2^31 << 1 == 2^32 exact value";
     }
 
 
@@ -147,10 +159,10 @@ namespace testOfHelperFunctions
         ASSERT_TRUE(t_abs64(n) > 0) << "n=1";
 
         n = 2147483647;
-        ASSERT_TRUE(t_abs64(n) > 0) << "n=2^31 - 1";
+        ASSERT_TRUE(t_abs64(n) == 2147483647) << "n=2^31 - 1";
 
-        n = 2147483648;
-        ASSERT_TRUE(t_abs64(n) > 0) << "n=2^31";
+        n = SAL_CONST_INT64(2147483648);
+        ASSERT_TRUE(t_abs64(n) == SAL_CONST_INT64(2147483648)) << "n=2^31";
     }
 
     TEST_F(test_t_abs64, test4)
@@ -159,17 +171,35 @@ namespace testOfHelperFunctions
         n = -1;
         printf("Value of n is -1 : ");
         printf64(n);
-        ASSERT_TRUE(t_abs64(n) > 0) << "n=-1";
+        ASSERT_TRUE(t_abs64(n) == 1) << "n=-1";
 
-        n = -2147483648;
+        n = -SAL_CONST_INT64(2147483648);
         printf("Value of n is -2^31 : ");
         printf64(n);
-        ASSERT_TRUE(t_abs64(n) > 0) << "n=-2^31";
+        ASSERT_TRUE(t_abs64(n) == SAL_CONST_INT64(2147483648)) << "n=-2^31";
 
         n = -8589934592LL;
         printf("Value of n is -2^33 : ");
         printf64(n);
-        ASSERT_TRUE(t_abs64(n) > 0) << "n=-2^33";
+        ASSERT_TRUE(t_abs64(n) == SAL_CONST_INT64(8589934592)) << "n=-2^33";
+    }
+
+    // Exercise t_abs64 across the full 64-bit range, including the boundaries
+    // that the original > 0 / != 0 assertions never really checked.
+    TEST_F(test_t_abs64, test_abs64_range)
+    {
+        ASSERT_TRUE(t_abs64(0) == 0) << "abs(0)";
+        ASSERT_TRUE(t_abs64(SAL_CONST_INT64(1)) == 1) << "abs(1)";
+        ASSERT_TRUE(t_abs64(SAL_CONST_INT64(-1)) == 1) << "abs(-1)";
+        ASSERT_TRUE(t_abs64(SAL_MAX_INT64) == SAL_MAX_INT64) << "abs(SAL_MAX_INT64)";
+        ASSERT_TRUE(t_abs64(-SAL_MAX_INT64) == SAL_MAX_INT64) << "abs(-SAL_MAX_INT64)";
+
+        // Known limitation: SAL_MIN_INT64 has no representable positive
+        // counterpart in two's complement, so -SAL_MIN_INT64 overflows and
+        // t_abs64 cannot return a positive value here. Document the boundary so
+        // any future change to t_abs64's contract is a deliberate, visible one.
+        ASSERT_TRUE(SAL_MIN_INT64 < 0) << "SAL_MIN_INT64 is negative";
+        ASSERT_TRUE(SAL_MIN_INT64 != -SAL_MAX_INT64) << "min/max are not symmetric";
     }
 
 
