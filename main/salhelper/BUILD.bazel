@@ -1,6 +1,7 @@
 package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("//build/rules:gtest_test.bzl", "gtest_test")
 
 _COPTS = [
     "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs",
@@ -55,4 +56,34 @@ filegroup(
     srcs = [":salhelper3MSC"],
     output_group = "interface_library",
     visibility = ["//visibility:public"],
+)
+
+# ── salhelper_test — RTTI/type_info checks for salhelper's public API ──
+# Standalone GoogleTest (own main()), no UNO runtime.  Links sal + salhelper
+# import libs; needs sal3.dll + salhelper3MSC.dll at run time.  Mirrors
+# qa/makefile.mk (test_api.obj + main.obj, GTESTLIB + SALLIB + SALHELPERLIB).
+gtest_test(
+    name = "salhelper_test",
+    srcs = [
+        "qa/main.cxx",
+        "qa/test_api.cxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    deps = [
+        ":salhelper_headers",
+        "//main/sal:sal_headers",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        ":salhelper_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath :salhelper_implib)",
+    ],
+    runtime_dlls = [
+        "//main/sal:sal3",
+        ":salhelper3MSC",
+    ],
 )
