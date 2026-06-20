@@ -1,22 +1,75 @@
 ﻿# Apache OpenOffice — Bazel Migration
 Migrated packages have been moved to: Migrated-packages.md
 ## Current frontier
-── Deferred: .NET interop (deferred) ────────────────────────────────────
-cli_ure       ⬜  (cppu, cppuhelper, sal, codemaker, stoc, udkapi, bridges)
-                   Blockers: C# rules (csc.exe), C++/CLI (/clr toolchain),
-                   AL.exe policy assemblies, sn.exe strong-name signing.
-unoil         ⬜  update climaker
-── Deferred: Java-based ─────────────────────────────────────────────────
+Demo done 2026-06-20 → goal is now FULL migration (see [[project-full-migration-goal]]).
+Buckets below labelled "Remaining" are in-scope work, not abandoned; only
+"Out of scope" and "Dropped" are excluded.  Ordered by priority — testing of
+already-migrated modules is the active front-line task.
+
+── Active: test coverage for already-migrated modules ───────────────────
+test          🔨  C++ unit-test infra runnable — NOW THE FRONT-LINE TASK: bring up
+                   per-module qa/ tests across every ALREADY-MIGRATED module and keep
+                   them green as the migration proceeds (regression net for the rest).
+                   @gtest 1.7.0 bzlmod wrap (built /Zc:wchar_t- to match sal_Unicode);
+                   build/rules/gtest_test.bzl (svidl_bundle analog: stages /MD exe +
+                   DLLs + CRT + external manifest into one dir or R6034); libtest
+                   (test.dll) builds.  GREEN: o3tl_test (5), tools_pathutils,
+                   //main/sal:sal_tests (22) via sal_qa_test macro.  See
+                   main/test/readme.md.  NEXT: sweep qa/ across the other migrated
+                   modules (comphelper, tools, svl, sax, …); OfficeConnection (UNO
+                   subsequent) tests need a running-soffice fixture; cppunit suites
+                   need Phase-4 dep.
+testtools     ⬜  (bridgetest — pure-C++ UNO bridge round-trip; cli/pyuno/java variants
+                   need rules_java — see Java bucket)
+qadevOOo      ⬜  (Java-based QA test framework; needs rules_java — see Java bucket)
+testgraphical ⬜  (graphical/visual regression tests; needs instsetoo_native + qadevOOo)
+
+── Remaining: Java-based (gated on rules_java / UNO-Java component rules) ─
 reportbuilder ⬜  (pure Java .oxt extension; blockers: JFreeReport suite not on Maven, SourceForge ZIPs have token-based URLs; wizards dep also deferred)
 bean          ⬜  (Java bean component)
-stax          ⬜  (StAX XML streaming API)
-saxon         ⬜  (XSLT 2.0 processor)
+saxon         ⬜  (XSLT 2.0 processor — IN SCOPE for full migration.  Feeds the
+                   Java xsltfilter UNO component (UOF/DocBook/user XSLT-2.0 filters);
+                   without it those filters silently drop (upstream gates the whole
+                   xsltfilter lib behind DISABLE_SAXON).  Leaf of the Java bucket —
+                   only useful once Java/UNO-component rules exist, so sequence AFTER
+                   rules_java enablement, not before.  saxon9.jar = 3rd-party tarball
+                   source-9.0.0.7-bj (ant/build.xml) → http_archive + java build or
+                   vendored jar.  When built, compile against the toolchain JDK's
+                   javax.xml.stream — no bundled stax jar.  See Dropped: stax below.)
 wizards       ⬜  (Java-based document wizards)
 xmerge        ⬜  (document format converter, Java)
 javainstaller2 ⬜ (Java installer UI)
 swext         ⬜  (Writer Java extensions e.g. mediawiki)
 unodevtools   ⬜  (UNO component inspector, Java)
-── Deferred: Linux/macOS — not applicable for Windows build ─────────────
+
+── Remaining: .NET interop ──────────────────────────────────────────────
+cli_ure       ⬜  (cppu, cppuhelper, sal, codemaker, stoc, udkapi, bridges)
+                   Blockers: C# rules (csc.exe), C++/CLI (/clr toolchain),
+                   AL.exe policy assemblies, sn.exe strong-name signing.
+unoil         ⬜  update climaker
+
+── Remaining: Installer/packaging ───────────────────────────────────────
+instsetoo_native ⬜ (native Windows installer build)
+setup_native  ⬜  (Windows setup UI)
+packimages    ⬜  (image packaging for install)
+sysui         ⬜  (system UI integration — mime types, desktop entries)
+solenv        ⬜  (legacy build environment, mostly migrated away)
+
+── Remaining: Docs/dev tooling ──────────────────────────────────────────
+autodoc       ⬜  (API documentation generator)
+odk           ⬜  (OpenDocument/Developer Kit)
+helpauthoring ⬜  (help authoring tools)
+helpcontent2  ⬜  (help content sources)
+xml2cmp       ⬜  (XML component comparison tool)
+
+── Remaining: Standalone/misc ───────────────────────────────────────────
+automation    ⬜  (test automation/macro recorder framework)
+migrationanalysis ⬜ (migration analysis tool)
+more_fonts    ⬜  bundled fonts; blocked: SourceForge token URLs prevent http_archive;
+                   OpenSymbol staged via extras; other fonts (DejaVu, Carlito…) pending
+readlicense_oo ⬜  readme.html/txt; blocked: needs xsltproc + l10ntools merge
+
+── Out of scope: Linux/macOS — not applicable to the Windows build ──────
 padmin        —   Linux printer administration
 sane          —   Linux scanner interface (SANE)
 unixODBC      —   Linux ODBC bridge
@@ -24,36 +77,38 @@ x11_extensions —  X11/Linux platform extensions
 psprint_config —  Linux PostScript/font config
 apple_remote  —   macOS Apple Remote control
 macOS         —   macOS-specific platform UI
-── Deferred: Installer/packaging — post-build ────────────────────────────
-instsetoo_native ⬜ (native Windows installer build)
-setup_native  ⬜  (Windows setup UI)
-packimages    ⬜  (image packaging for install)
-sysui         ⬜  (system UI integration — mime types, desktop entries)
-solenv        ⬜  (legacy build environment, mostly migrated away)
-── Deferred: Docs/tests/dev tooling ─────────────────────────────────────
-autodoc       ⬜  (API documentation generator)
-odk           ⬜  (OpenDocument/Developer Kit)
-helpauthoring ⬜  (help authoring tools)
-helpcontent2  ⬜  (help content sources)
-xml2cmp       ⬜  (XML component comparison tool)
-qadevOOo      ⬜  (Java-based QA test framework)
-test          🔨  C++ unit-test infra runnable.  @gtest 1.7.0 bzlmod wrap (built
-                   /Zc:wchar_t- to match sal_Unicode); build/rules/gtest_test.bzl
-                   (svidl_bundle analog: stages /MD exe + DLLs + CRT + external
-                   manifest into one dir or R6034); libtest (test.dll) builds.
-                   GREEN: o3tl_test (5), tools_pathutils, //main/sal:sal_tests (22)
-                   via sal_qa_test macro.  See main/test/readme.md.  NEXT: per-module
-                   qa/ across other modules; OfficeConnection (UNO subsequent) tests
-                   need a running-soffice fixture; cppunit suites need Phase-4 dep
-testgraphical ⬜  (graphical/visual regression tests; needs instsetoo_native + qadevOOo)
-testtools     ⬜  (bridgetest — pure-C++ UNO bridge round-trip; cli/pyuno/java variants deferred)
-── Deferred: Standalone/misc ─────────────────────────────────────────────
-automation    ⬜  (test automation/macro recorder framework)
-migrationanalysis ⬜ (migration analysis tool)
-more_fonts    —   bundled fonts; blocked: SourceForge token URLs prevent http_archive;
-                   OpenSymbol staged via extras; other fonts (DejaVu, Carlito…) deferred
 
-readlicense_oo —  readme.html/txt; blocked: needs xsltproc + l10ntools merge; deferred
+── Dropped — do NOT migrate ─────────────────────────────────────────────
+stax          ❌  StAX (JSR-173 / javax.xml.stream) has been part of the JDK since
+                   Java SE 6; bundling/building stax-1.2.0.jar is dead weight.  Only
+                   saxon ever depended on it (ooxml already uses the JDK's
+                   javax.xml.stream directly).  Since Bazel replaces the dmake/configure
+                   layer entirely (where the stax module lived), there is nothing to
+                   migrate — saxon must just rely on the toolchain JDK's
+                   javax.xml.stream.  Supersedes upstream PR apache/openoffice#87
+                   (stax removal against dmake tree, now moot).
+
+── Innovation (NOT a migration — no dmake equivalent to port) ───────────
+release-identity 💡 Replaces the old configure --with-build-version="$(date) -
+                   uname" + --with-vendor.  A wall-clock build string defeats
+                   reproducible builds, so do NOT port it.  Build instead a
+                   deterministic release identity:
+                     • //build:channel string_flag (dev|beta|release, default dev)
+                       — successor to --with-vendor; gates branding via
+                       product.bzl → Setup.xcu (Apache OpenOffice vs …Dev/Snapshot).
+                     • version = `git describe --tags` captured as a STABLE
+                       workspace-status key (STABLE_*, rebuild-triggering); ties the
+                       binary to an exact commit and only changes with source.
+                     • keep volatile keys (BUILD_TIMESTAMP) OUT of release artifacts;
+                       if a date is needed, derive SOURCE_DATE_EPOCH from the commit
+                       date, never `date +%s`.
+                     • the actual "valid release" proof = a deterministic buildinfo
+                       provenance manifest (commit, channel, MSVC/SDK/Bazel versions),
+                       optionally SLSA attestation — verifiable, unlike a timestamp.
+                   Post-migration: needs the Installer/packaging bucket landed first
+                   to have artifacts to stamp.  (The old --enable-win-x64-shellext is
+                   NOT carried — it's a cross-bit hack that dissolves once the office
+                   itself is ported to a 64-bit toolchain.)
 ```
 ## Goal
 Replace the Perl/dmake/gmake orchestration layer with Bazel.
