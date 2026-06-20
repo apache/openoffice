@@ -14,11 +14,13 @@ test          🔨  C++ unit-test infra runnable — NOW THE FRONT-LINE TASK: br
                    build/rules/gtest_test.bzl (svidl_bundle analog: stages /MD exe +
                    DLLs + CRT + external manifest into one dir or R6034); libtest
                    (test.dll) builds.  GREEN: o3tl_test (5), tools_pathutils,
-                   //main/sal:sal_tests (22) via sal_qa_test macro.  See
-                   main/test/readme.md.  NEXT: sweep qa/ across the other migrated
-                   modules (comphelper, tools, svl, sax, …); OfficeConnection (UNO
-                   subsequent) tests need a running-soffice fixture; cppunit suites
-                   need Phase-4 dep.
+                   //main/sal:sal_tests (22) via sal_qa_test macro, salhelper_test,
+                   comphelper_test_string + comphelper_test_weakbag, sax_test_converter.
+                   See main/test/readme.md.  NEXT: sweep qa/ across the other migrated
+                   modules (svl, svtools, …; svl/qa/test_URIHelper bootstraps a UNO
+                   component context → subsequent test, needs the soffice fixture, not
+                   standalone); OfficeConnection (UNO subsequent) tests need a
+                   running-soffice fixture; cppunit suites need Phase-4 dep.
 testtools     ⬜  (bridgetest — pure-C++ UNO bridge round-trip; cli/pyuno/java variants
                    need rules_java — see Java bucket)
 qadevOOo      ⬜  (Java-based QA test framework; needs rules_java — see Java bucket)

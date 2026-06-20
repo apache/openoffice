@@ -1,6 +1,7 @@
 package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("//build/rules:gtest_test.bzl", "gtest_test")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -191,6 +192,78 @@ filegroup(
     srcs = [":comphelpMSC"],
     output_group = "interface_library",
     visibility = ["//visibility:public"],
+)
+
+# ── qa unit tests ─────────────────────────────────────────────────
+# Standalone GoogleTest exes (own main()).  Both #include
+# precompiled_comphelper.hxx (inc/pch) and link comphelp.dll's import lib;
+# comphelpMSC.dll + its transitive runtime DLLs must sit beside the exe.
+_QA_COPTS = [
+    "/Imain/comphelper/inc/pch",
+    "/Zc:wchar_t-",
+    "/D_HAS_ITERATOR_DEBUGGING=0",
+]
+
+_QA_RUNTIME_DLLS = [
+    "//main/sal:sal3",
+    "//main/cppu:cppu3",
+    "//main/cppuhelper:cppuhelper3MSC",
+    "//main/salhelper:salhelper3MSC",
+    "//main/ucbhelper:ucbhelperMSC",
+    "//main/vos:vos3MSC",
+    ":comphelpMSC",
+]
+
+_QA_LINKER_INPUTS = [
+    "//main/sal:sal_implib",
+    "//main/cppu:cppu3_implib",
+    "//main/cppuhelper:cppuhelper_implib",
+    ":comphelpMSC_implib",
+]
+
+_QA_LINKOPTS = [
+    "$(execpath //main/sal:sal_implib)",
+    "$(execpath //main/cppu:cppu3_implib)",
+    "$(execpath //main/cppuhelper:cppuhelper_implib)",
+    "$(execpath :comphelpMSC_implib)",
+]
+
+# comphelper::string::searchAndReplaceAsciiI round-trip (qa/test_string.cxx).
+gtest_test(
+    name = "comphelper_test_string",
+    srcs = ["qa/test_string.cxx"],
+    copts = _QA_COPTS,
+    defines = _DEFINES,
+    deps = [
+        ":comphelper_headers",
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/stlport:stlport",
+        "@boost.legacy//:boost.legacy",
+    ],
+    additional_linker_inputs = _QA_LINKER_INPUTS,
+    linkopts = _QA_LINKOPTS,
+    runtime_dlls = _QA_RUNTIME_DLLS,
+)
+
+# comphelper::WeakBag lifetime semantics (qa/test_weakbag.cxx).
+gtest_test(
+    name = "comphelper_test_weakbag",
+    srcs = ["qa/test_weakbag.cxx"],
+    copts = _QA_COPTS,
+    defines = _DEFINES,
+    deps = [
+        ":comphelper_headers",
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/stlport:stlport",
+        "@boost.legacy//:boost.legacy",
+    ],
+    additional_linker_inputs = _QA_LINKER_INPUTS,
+    linkopts = _QA_LINKOPTS,
+    runtime_dlls = _QA_RUNTIME_DLLS,
 )
 
 exports_files(glob(["**/*.component"]))

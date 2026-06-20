@@ -1,6 +1,7 @@
 package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("//build/rules:gtest_test.bzl", "gtest_test")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -150,6 +151,46 @@ cc_binary(
         "/MANIFEST:NO",
     ],
     visibility = ["//visibility:public"],
+)
+
+# ── qa unit test ──────────────────────────────────────────────────
+# sax::Converter round-trips (qa/gtest/test_converter.cxx).  Standalone
+# GoogleTest (own main()); links sax.dll's import lib, so sax.dll + its
+# transitive runtime DLLs (comphelp pulls salhelper/ucbhelper/vos) must sit
+# beside the exe.  preextstl.h/postextstl.h come from stlport/systemstlguards.
+gtest_test(
+    name = "sax_test_converter",
+    srcs = ["qa/gtest/test_converter.cxx"],
+    copts = [
+        "/Imain/sax/inc",
+        "/Imain/stlport/systemstlguards",
+        "/Zc:wchar_t-",
+    ],
+    defines = _DEFINES,
+    deps = _COMMON_DEPS + [
+        ":sax_headers",
+        "@boost.legacy//:boost.legacy",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        ":sax_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath :sax_implib)",
+    ],
+    runtime_dlls = [
+        "//main/sal:sal3",
+        "//main/cppu:cppu3",
+        "//main/cppuhelper:cppuhelper3MSC",
+        "//main/comphelper:comphelpMSC",
+        "//main/salhelper:salhelper3MSC",
+        "//main/ucbhelper:ucbhelperMSC",
+        "//main/vos:vos3MSC",
+        ":sax",
+    ],
 )
 
 exports_files(glob(["**/*.component"]))

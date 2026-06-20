@@ -20,6 +20,18 @@ holdouts).  This brings the test layer onto Bazel so suites run under
    - `//main/o3tl:o3tl_test`
    - `//main/tools:tools_pathutils`
    - `//main/sal:sal_tests` (green gate, 22 targets)
+   - `//main/salhelper:salhelper_test`
+   - `//main/comphelper:comphelper_test_string`, `:comphelper_test_weakbag`
+   - `//main/sax:sax_test_converter`
+
+   For a test that links a module DLL (not just sal), the staged exe needs
+   that DLL **and its transitive runtime DLLs** co-located (the loader only
+   searches the exe's dir).  comphelp.dll, e.g., drags in
+   sal3/cppu3/cppuhelper3MSC/salhelper3MSC/ucbhelperMSC/vos3MSC — list them all
+   in `runtime_dlls`.  Link-time `additional_linker_inputs` must include the
+   import lib of every DLL whose symbols the test TU references directly
+   (e.g. `cppu3_implib` for `uno_any_destruct`/`typelib_*` pulled in by an
+   `Any` destructor or `getCppuType`).
 2. **Subsequent / UNO tests** — use `test::OfficeConnection` to launch a real
    soffice. Need the staged install wired as a fixture. **Not yet wired.**
 
