@@ -25,7 +25,6 @@ psprint_config —  Linux PostScript/font config
 apple_remote  —   macOS Apple Remote control
 macOS         —   macOS-specific platform UI
 ── Deferred: Installer/packaging — post-build ────────────────────────────
-scp2          ✅  (installer package/script definitions)
 instsetoo_native ⬜ (native Windows installer build)
 setup_native  ⬜  (Windows setup UI)
 packimages    ⬜  (image packaging for install)
@@ -36,7 +35,6 @@ autodoc       ⬜  (API documentation generator)
 odk           ⬜  (OpenDocument/Developer Kit)
 helpauthoring ⬜  (help authoring tools)
 helpcontent2  ⬜  (help content sources)
-xmlhelp       ✅  tvhlp1.dll + ucpchelp1.dll; stlport for hash_map, libxslt for XSLT in urlparameter
 xml2cmp       ⬜  (XML component comparison tool)
 qadevOOo      ⬜  (Java-based QA test framework)
 test          🔨  C++ unit-test infra runnable.  @gtest 1.7.0 bzlmod wrap (built
@@ -50,22 +48,11 @@ test          🔨  C++ unit-test infra runnable.  @gtest 1.7.0 bzlmod wrap (bui
 testgraphical ⬜  (graphical/visual regression tests; needs instsetoo_native + qadevOOo)
 testtools     ⬜  (bridgetest — pure-C++ UNO bridge round-trip; cli/pyuno/java variants deferred)
 ── Deferred: Standalone/misc ─────────────────────────────────────────────
-crashrep      ✅  (crash reporter)
 automation    ⬜  (test automation/macro recorder framework)
 migrationanalysis ⬜ (migration analysis tool)
-extensions    ✅  14 DLLs + 7 .res files; deploymenten-US.res alias for deployment manager;
-                   componentmodule.cxx textual_hdrs pattern; twain_headers strip/prefix;
-                   twain.cxx excluded (not in SLOFILES); ws2_32.lib for updchk curl
-extras        ✅  staged: share/autotext, share/wordbook, share/gallery, share/template,
-                   share/config (wizard), share/database, share/fonts/truetype (OpenSymbol),
-                   presets/autotext, presets/config (palettes); bootstrap.ini → 4bazel profile
 more_fonts    —   bundled fonts; blocked: SourceForge token URLs prevent http_archive;
                    OpenSymbol staged via extras; other fonts (DejaVu, Carlito…) deferred
-default_images ✅  images.zip staged to share/config/ via images_zip Starlark rule +
-                   make_images_zip.pl (Archive::Zip); vcl/res/ excluded (baked into .res);
-                   strip_prefix="main/default_images" → zip entries like "framework/res/backing.png"
-ooo_custom_images ✅  images_industrial.zip staged to share/config/; classic deferred
-                   (classic_images.tar.gz needs tar→zip conversion)
+
 readlicense_oo —  readme.html/txt; blocked: needs xsltproc + l10ntools merge; deferred
 ```
 ## Goal

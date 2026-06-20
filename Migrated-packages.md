@@ -151,3 +151,20 @@ rsc pipeline   ✅  (rscpp + rsc2 called directly as Bazel actions; rsc.exe laun
                    mode writes .res only; 31 modules wired up) — build/rules/rsc_pipeline.bzl
 ── Deployment local ─────────────────────────────────────
 postprocess   ✅  (services.rdb, ooo_services_rdb, uiconfig.zip, 20 .xcd packages via fcfg_merge+pack_registry) — main/postprocess/readme.md
+── Deferred: Installer/packaging — post-build ────────────────────────────
+scp2          ✅  (installer package/script definitions)
+── Deferred: Docs/tests/dev tooling ─────────────────────────────────────
+xmlhelp       ✅  tvhlp1.dll + ucpchelp1.dll; stlport for hash_map, libxslt for XSLT in urlparameter
+── Deferred: Standalone/misc ─────────────────────────────────────────────
+crashrep      ✅  (crash reporter)
+extensions    ✅  14 DLLs + 7 .res files; deploymenten-US.res alias for deployment manager;
+                   componentmodule.cxx textual_hdrs pattern; twain_headers strip/prefix;
+                   twain.cxx excluded (not in SLOFILES); ws2_32.lib for updchk curl
+extras        ✅  staged: share/autotext, share/wordbook, share/gallery, share/template,
+                   share/config (wizard), share/database, share/fonts/truetype (OpenSymbol),
+                   presets/autotext, presets/config (palettes); bootstrap.ini → 4bazel profile
+default_images ✅  images.zip staged to share/config/ via images_zip Starlark rule +
+                   make_images_zip.pl (Archive::Zip); vcl/res/ excluded (baked into .res);
+                   strip_prefix="main/default_images" → zip entries like "framework/res/backing.png"
+ooo_custom_images ✅  images_industrial.zip staged to share/config/; classic deferred
+                   (classic_images.tar.gz needs tar→zip conversion)
