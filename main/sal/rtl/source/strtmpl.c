@@ -60,21 +60,24 @@ inline void rtl_str_ImplCopy( IMPL_RTL_STRCODE* pDest,
 /*                                                                         */
 /* The C-string functions below document (see rtl/string.h, rtl/ustring.h) */
 /* that their string arguments must be non-NULL, null-terminated strings.  */
-/* Passing NULL is a caller error.  We diagnose it loudly in non-product   */
-/* builds via OSL_PRECOND (which compiles to nothing in product builds, so */
-/* there is no release-build cost for the assertion), and in every build   */
-/* we fall back to defined behaviour so the library never dereferences a   */
-/* NULL pointer.                                                           */
+/* Passing NULL is a caller error.  In non-product builds (OSL_DEBUG_LEVEL  */
+/* > 0) we diagnose it loudly via OSL_PRECOND and then fall back to defined */
+/* behaviour so the diagnostic build never dereferences a NULL pointer.    */
 /*                                                                         */
-/* These guards run exactly once, at function entry: they are OUTSIDE the  */
-/* per-character processing loops, so they do not change string-processing */
-/* throughput.  In the common (non-NULL) case the only added work is a     */
-/* single, perfectly-predicted pointer test per call.                      */
+/* In product builds the guards compile away entirely: callers must honour */
+/* the documented non-NULL contract, and we add zero release-build cost    */
+/* (not even a pointer test) to these hot string primitives.               */
+/*                                                                         */
+/* Even in debug, the guards run exactly once, at function entry: they are  */
+/* OUTSIDE the per-character processing loops, so they do not change        */
+/* string-processing throughput.                                           */
 /* ======================================================================= */
 
 #define IMPL_RTL_STR_GUARD_MSG \
     "rtl string function: NULL pointer passed; the documented contract " \
     "requires a non-NULL, null-terminated string"
+
+#if OSL_DEBUG_LEVEL > 0
 
 /* Read-only argument: treat a NULL pointer as the empty string. */
 static const IMPL_RTL_STRCODE aImplGuardEmptyStr = 0;
@@ -100,6 +103,14 @@ static const IMPL_RTL_STRCODE aImplGuardEmptyStr = 0;
         if ( !(pStr) )                                                      \
             return;                                                         \
     } while (0)
+
+#else /* product build: guards compile away, callers must honour contract */
+
+#define IMPL_RTL_STR_NULL_AS_EMPTY( pStr )      ((void)0)
+#define IMPL_RTL_STR_NULL_RETURN( pStr, _ret )  ((void)0)
+#define IMPL_RTL_STR_NULL_RETURN_VOID( pStr )   ((void)0)
+
+#endif
 
 /* ======================================================================= */
 /* C-String functions which could be used without the String-Class         */
