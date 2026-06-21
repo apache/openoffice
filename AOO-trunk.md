@@ -1,3 +1,22 @@
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+-->
+
 # trunk vs AOO42X — Functional Difference Analysis
 
 **Date:** 2026-06-08
@@ -9,7 +28,7 @@
 ## 1. Summary
 
 | | trunk | AOO42X |
-|---|---|---|
+| --- | --- | --- |
 | Branch tip | `9d1a529d5e` | `4ccec83d37` |
 | Tip commit subject | *Fix crash, uninitialized-return, and buffer bugs…* | *(same)* |
 | Common ancestor | `a341bc611d` (2019-01-09) | (same) |
@@ -79,7 +98,7 @@
 ### Functional AOO42X-only commits — all verified present in trunk
 
 | AOO42X commit | Verified in trunk as |
-|---|---|
+| --- | --- |
 | WebDAV provider serf/apr → curl (`9646dec`) | `51ba086bf1` (+ follow-ups `e469ab6`, `f7b97bf`, `88ba7bc`…) |
 | OpenSSL built as dynamic library (`e350def`) | `8eb9a7e66a`, `0ca5b4b7b8` |
 | editeng 32-bit paragraph indices (PR #164) | `d5edfd0976` + full series; `GetParagraphCount()` returns `sal_uInt32` on both |
@@ -108,7 +127,7 @@ depend on the Python-3 or Win64 baseline.
 ### 3a. Recommended cherry-picks (bug fixes)
 
 | Area | trunk commit(s) | What it fixes | Risk |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **Calc / MS Excel 2003 XML import** | ~~`d10bb11432`~~ | Importing references to **columns 677–702** (and beyond) was wrong: the old XSLT used a `÷26 − 1` scheme instead of base-26² (676). Touches `spreadsheetml2ooo.xsl`. | Low — isolated XSLT + test doc |
 | **Calc / Excel 2003 XML export** | ~~`b045a72b`~~, `3714104178`, `50f8b0f2cf` | Use the correct `of:`/`ooow:` namespace and R1C1 form when exporting ODF formulas to Excel 2003 XML; allow exporting ODF <1.2 formulas. | Low–medium |
 | **Win64 portability — file handles** | `5a41e572de` | `SvStream::GetFileHandle()` returns `sal_uInt32` capped at 32 bits; widen to support 64-bit Windows. (`tools/inc/tools/stream.hxx`, `strmunx.cxx`) | Low (also benefits non-Win64) |
@@ -127,14 +146,14 @@ depend on the Python-3 or Win64 baseline.
 ### 3b. Build-system / infrastructure (cherry-pick only if AOO42X wants the same CI)
 
 | Area | trunk commit(s) | Notes |
-|---|---|---|
+| --- | --- | --- |
 | **gbuild port** of `pyuno`, `ure`, `packimages`, `apple_remote`, `qadevOOo`, `test`, `testgraphical` | `1c25f25`, `453cfdf`, `147182f`, `e2cbcf0`, `62e2780`, `19ee18f`… | Large; trunk migrated dmake→gbuild for these modules. AOO42X already received the pyuno/ure `.mk` files via merge, but the **JUnit/Ant test migration in `qadevOOo` is the single largest divergence** (2310 files): trunk moved tests into `test/testuno` + JUnit; AOO42X keeps the legacy `qadevOOo/objdsc` CSV-driven framework. Migrating this to a release branch is **high-effort and not recommended** mid-release. |
 | **pre-commit hooks + GitHub Actions linter** | `cc42a29`, `4ae038e`, `819addb`, `ffa4afe`, `98279f3` | trunk's `.pre-commit-config.yaml`, codespell word-list, `actions/checkout@v6`, `actions/cache@v5`. AOO42X already backported an equivalent set (`f30d168 Backport pre-commit and CI configuration from trunk`). |
 
 ### 3c. NOT suitable for cherry-pick (intentional baseline / release-policy decisions)
 
 | Item | trunk | AOO42X | Why not |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **Python 3.10 baseline** | `PYMAJOR=3 / 3.10.18` | `PYMAJOR=2 / 2.7.18` | AOO42X **explicitly reverted** the Py3.10 change (`08fafdc14b`) to keep the 4.2.x release on Python 2.7. Cherry-picking would change the shipped runtime. |
 | **Native Win64 UNO C++ bridge** (`msvc_win64_x86-64/`) | full directory present | directory **absent** | A whole new architecture target (`b146d3b`, `b7f28a5`, `4844d31`, `2cf0c06`, `d35e03c`, `8a51f61`…). New platform support belongs in a feature release, not a maintenance branch. |
 | Boost / `-std=gnu++98` Clang build tweaks (`8ef8ad0`) | applied | n/a | Tied to trunk's toolchain modernization. |
