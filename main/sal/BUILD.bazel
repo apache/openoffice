@@ -236,16 +236,23 @@ sal_qa_test(name = "osl_Mutex", srcs = ["qa/osl/mutex/osl_Mutex.cxx"], subdir = 
 sal_qa_test(name = "sal_ut_osl_thread", srcs = ["qa/osl/thread/test_thread.cxx"], subdir = "osl/thread")
 sal_qa_test(name = "osl_old_testprofile", srcs = ["qa/osl/profile/osl_old_testprofile.cxx"], subdir = "osl/profile")
 sal_qa_test(name = "test-setthreadname", srcs = ["qa/osl/setthreadname/test-setthreadname.cxx"], subdir = "osl/setthreadname")
-# osl_Security uses Win32 SID/registry APIs directly: <windows.h> + advapi32.
-sal_qa_test(name = "osl_Security", srcs = ["qa/osl/security/osl_Security.cxx"], subdir = "osl/security", copts = ["/FIwindows.h"], linkopts = ["advapi32.lib"])
+# osl_Security — BLOCKED on retired testshl2: osl_Security.cxx uses WIN_BYTE/
+# WIN_BOOL and getForwardString() from testshl2's cmdlinebits.hxx (see the
+# commented-out include in osl_Security_Const.h).  testshl2 was removed from AOO
+# and has no replacement in-tree, so the test cannot compile (the Win32 part —
+# SID/registry APIs, /FIwindows.h + advapi32 — was only half the story).  Left
+# unwired until/unless a getForwardString shim is provided.  Was:
+#   sal_qa_test(name="osl_Security", srcs=["qa/osl/security/osl_Security.cxx"],
+#       subdir="osl/security", copts=["/FIwindows.h"], linkopts=["advapi32.lib"])
 sal_qa_test(name = "osl_Module", srcs = ["qa/osl/module/osl_Module.cxx"], subdir = "osl/module")
 sal_qa_test(name = "sal_ut_osl_pipe", srcs = ["qa/osl/pipe/osl_Pipe.cxx"], subdir = "osl/pipe")
 # osl_File uses Win32 directly (MAX_PATH/DWORD, GetLogicalDrives/GetFileAttributes
-# — all kernel32, default-linked): force-include <windows.h> like osl_Security.
+# — all kernel32, default-linked): force-include <windows.h>.
 sal_qa_test(name = "osl_File", srcs = ["qa/osl/file/osl_File.cxx"], subdir = "osl/file", copts = ["/FIwindows.h"])
 sal_qa_test(name = "tcwf", srcs = ["qa/osl/file/test_cpy_wrt_file.cxx"], subdir = "osl/file")
 sal_qa_test(name = "osl_old_test_file", srcs = ["qa/osl/file/osl_old_test_file.cxx"], subdir = "osl/file")
-sal_qa_test(name = "osl_Thread", srcs = ["qa/osl/process/osl_Thread.cxx"], subdir = "osl/process")
+# osl_Thread calls Win32 Sleep() (kernel32, default-linked): force-include <windows.h>.
+sal_qa_test(name = "osl_Thread", srcs = ["qa/osl/process/osl_Thread.cxx"], subdir = "osl/process", copts = ["/FIwindows.h"])
 
 # systools — Win32 COM smart pointers (needs ole32 + CoInitialize).
 sal_qa_test(name = "test_comtools", srcs = ["qa/systools/test_comtools.cxx"], subdir = "systools", copts = ["/FIwindows.h"], linkopts = ["ole32.lib"])
@@ -312,7 +319,6 @@ test_suite(
         ":sal_ut_osl_thread",
         ":osl_old_testprofile",
         ":test-setthreadname",
-        ":osl_Security",
         ":osl_Module",
         ":sal_ut_osl_pipe",
         ":osl_File",

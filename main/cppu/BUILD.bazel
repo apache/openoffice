@@ -1,6 +1,8 @@
 package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("//build/rules:idl_pipeline.bzl", "idl_library")
+load("//build/rules:gtest_test.bzl", "gtest_test")
 
 # ── Compiler / preprocessor options (mirrors sal conventions) ────
 _COPTS = [
@@ -233,3 +235,62 @@ cc_binary(
     ],
     visibility = ["//visibility:public"],
 )
+
+# ── qa unit tests ─────────────────────────────────────────────────
+# Four standalone GoogleTest apps (qa/main.cxx + qa/test_<x>.cxx), each linking
+# cppu + sal only.  They exercise UNO type machinery against private test types
+# defined in qa/types.idl (Enum1/Struct1/Interface1/Exception1/Poly/Rec, mostly
+# in the global namespace) — generated to C++ headers and #include'd by bare
+# name (e.g. "Enum1.hpp"), so the generated inc dir goes on the include path.
+
+# qa/types.idl → headers.  Exception1 etc. derive from com::sun::star::uno::
+# Exception, so idlc needs udkapi on -I and cppumaker the udkapi rdb.
+idl_library(
+    name = "cppu_qa_idl",
+    srcs = ["qa/types.idl"],
+    include_dirs = ["main/udkapi"],
+    extra_rdbs = ["//main/udkapi:udkapi_idl"],
+)
+
+cc_library(
+    name = "cppu_qa_idl_headers",
+    hdrs = [":cppu_qa_idl"],
+    includes = ["cppu_qa_idl_inc"],
+)
+
+_QA_DEPS = [
+    ":cppu_qa_idl_headers",
+    ":cppu_headers",
+    "//main/sal:sal_headers",
+    "//main/udkapi:udkapi_idl_headers",
+    "@boost.legacy//:boost.legacy",
+]
+
+_QA_LINKER_INPUTS = [
+    "//main/sal:sal_implib",
+    ":cppu3_implib",
+]
+
+_QA_LINKOPTS = [
+    "$(execpath //main/sal:sal_implib)",
+    "$(execpath :cppu3_implib)",
+]
+
+_QA_RUNTIME_DLLS = [
+    "//main/sal:sal3",
+    ":cppu3",
+]
+
+[
+    gtest_test(
+        name = "cppu_qa_" + t,
+        srcs = ["qa/test_%s.cxx" % t, "qa/main.cxx"],
+        copts = ["/Zc:wchar_t-"],
+        defines = _DEFINES,
+        deps = _QA_DEPS,
+        additional_linker_inputs = _QA_LINKER_INPUTS,
+        linkopts = _QA_LINKOPTS,
+        runtime_dlls = _QA_RUNTIME_DLLS,
+    )
+    for t in ["any", "unotype", "reference", "recursion"]
+]

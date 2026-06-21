@@ -15,9 +15,11 @@ test          🔨  C++ unit-test infra runnable — NOW THE FRONT-LINE TASK: br
                    DLLs + CRT + external manifest into one dir or R6034); libtest
                    (test.dll) builds.  GREEN: o3tl_test (5), tools_pathutils,
                    //main/sal:sal_tests (22) via sal_qa_test macro, salhelper_test,
-                   comphelper_test_string + comphelper_test_weakbag, sax_test_converter.
-                   See main/test/readme.md.  NEXT: sweep qa/ across the other migrated
-                   modules (svl, svtools, …; svl/qa/test_URIHelper bootstraps a UNO
+                   comphelper_test_string + comphelper_test_weakbag, sax_test_converter,
+                   cppu_qa_{any,unotype,reference,recursion} (private types.idl → headers
+                   via idl_library reuse).  See main/test/readme.md.  NEXT: sweep qa/
+                   across the other migrated modules (cppuhelper [5 subdirs], svl,
+                   svtools, …; svl/qa/test_URIHelper bootstraps a UNO
                    component context → subsequent test, needs the soffice fixture, not
                    standalone); OfficeConnection (UNO subsequent) tests need a
                    running-soffice fixture; cppunit suites need Phase-4 dep.

@@ -23,6 +23,16 @@ holdouts).  This brings the test layer onto Bazel so suites run under
    - `//main/salhelper:salhelper_test`
    - `//main/comphelper:comphelper_test_string`, `:comphelper_test_weakbag`
    - `//main/sax:sax_test_converter`
+   - `//main/cppu:cppu_qa_any` / `:cppu_qa_unotype` / `:cppu_qa_reference` /
+     `:cppu_qa_recursion`
+
+   **Tests with private IDL types** (cppu/qa has a `types.idl` defining
+   Enum1/Struct1/Interface1/… used only by the tests): reuse the `idl_library`
+   rule (`//build/rules:idl_pipeline.bzl`) to compile the .idl → C++ headers,
+   wrap it in a `cc_library(includes=["<name>_inc"])`, and add that as a test
+   dep.  The test `#include`s the generated headers by bare name (`"Enum1.hpp"`)
+   because the types sit in the global IDL namespace.  `test_any` also needs
+   `@boost.legacy` (boost/type_traits).
 
    For a test that links a module DLL (not just sal), the staged exe needs
    that DLL **and its transitive runtime DLLs** co-located (the loader only
@@ -45,8 +55,13 @@ holdouts).  This brings the test layer onto Bazel so suites run under
   `source.json` + `bazel mod deps --lockfile_mode=refresh`.** Otherwise Bazel
   reuses the cached extraction and silently ignores the edit.
 - **`$(TESTSHL2LIB)` in the dmake `*STDLIBS` is a no-op** — AOO retired
-  `testshl2`; the variable is undefined (expands empty). So those suites are not
-  blocked by a missing lib.
+  `testshl2`; the variable is undefined (expands empty). So most suites are not
+  blocked by a missing *lib*.  But a few still `#include` testshl2 *headers*
+  (`cmdlinebits.hxx` → `getForwardString()`, plus its `WIN_BYTE`/`WIN_BOOL`
+  typedefs) — those genuinely can't compile without a shim.  `osl_Security` is
+  the one that bites: it's left **unwired** (not a green-gate exclusion — it
+  won't build at all).  Don't be fooled by the half-fix: `/FIwindows.h` +
+  advapi32 satisfies its Win32 SID/registry calls but not the testshl2 include.
 
 ## Excluded from the sal green gate
 
@@ -60,7 +75,11 @@ they fail on their own merits (source is out of scope, so not fixed):
 - `rtl_logfile` — writes/reads `c:/temp` and asserts on it (env/permission).
 - `rtl_textcvt` — text-conversion / mime / codepage table expectations
   (sal's conversion works in the running app; this is test-data drift).
-- `osl_Security` — Win32 SID/registry APIs (needs `<windows.h>` + advapi32).
+- `osl_File` — builds (`/FIwindows.h`) but 10/208 cases assert on a specific
+  drive topology (CD/floppy/RAM disk) absent on the test machine; the rest pass.
+
+(`osl_Security` is NOT here — it fails to *build* on testshl2, see the gotcha
+above; it's unwired entirely, not a green-gate exclusion.)
 
 Also deferred: cppunit suites (`osl/socket`, `rtl_strings`) → need a CppUnit
 external dep; child-process tests (`osl/process`, `rtl/bootstrap`, `rtl/process`)
