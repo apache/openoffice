@@ -138,6 +138,9 @@ Source code is NOT being changed — only the build system.
   - BAZEL_DO_NOT_DETECT_CPP_TOOLCHAIN=1 disables auto-detection
 
 ## Key conventions
+- BUILD-file authoring conventions (module skeleton, naming, idioms, anti-patterns):
+  see STYLEGUIDE.md.  The rules below are the operating/landmine notes; STYLEGUIDE.md
+  is the copy-paste pattern reference for new modules.
 - BUILD.bazel files live at main/<package>/BUILD.bazel (NOT prj/)
   - prj/ convention only worked for nmake() wrappers; cc_library needs
     glob() access to sources which requires the BUILD at module root
