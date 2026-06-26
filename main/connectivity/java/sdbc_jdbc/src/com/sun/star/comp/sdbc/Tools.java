@@ -32,7 +32,13 @@ import com.sun.star.uno.Any;
 import com.sun.star.uno.AnyConverter;
 
 public class Tools {
+    private static final int MAX_EXCEPTION_NESTING = 8;
+
     public static SQLException toUnoException(Object source, Throwable throwable) {
+        return toUnoException(source, throwable, 0);
+    }
+
+    private static SQLException toUnoException(Object source, Throwable throwable, int nesting) {
         // FIXME: use SQLException.getNextException() instead of getCause()?
         // There are up to 3 dimensions of exception chaining of warnings in Java,
         // getCause(), getNextException(), and getNextWarning().
@@ -40,8 +46,9 @@ public class Tools {
         // but I am using the widely used and more helpful getCause().
         Throwable cause = throwable.getCause();
         Object unoCause = Any.VOID;
-        if (cause != null) {
-            unoCause = toUnoException(source, throwable);
+        // Avoid loops and limit recursion to prevent stack overflows:
+        if (cause != null && cause != throwable && nesting < MAX_EXCEPTION_NESTING) {
+            unoCause = toUnoException(source, throwable, nesting + 1);
         }
         if (throwable instanceof SQLException) {
             return (SQLException)throwable;
