@@ -69,6 +69,8 @@
 #define ODBC_UI_LIBRARY_1	"libodbcinst.so.1"
 #define ODBC_LIBRARY		"libodbc.so"
 #define ODBC_UI_LIBRARY		"libodbcinst.so"
+#define ODBC_LIBRARY_2		"libiodbc.so"
+#define ODBC_UI_LIBRARY_2	"libiodbcinst.so"
 #endif
 #endif
 
@@ -215,6 +217,10 @@ OOdbcEnumeration::OOdbcEnumeration()
 #ifdef ODBC_LIBRARY_1
 	if ( !bLoaded )
 		bLoaded = load(ODBC_LIBRARY_1);
+#endif
+#ifdef ODBC_LIBRARY_2
+	if ( !bLoaded )
+		bLoaded = load(ODBC_LIBRARY_2);
 #endif
 
 	if ( bLoaded )

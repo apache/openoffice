@@ -112,10 +112,17 @@ sal_Bool LoadLibrary_ODBC3(::rtl::OUString &_rPath)
  #ifdef MACOSX
  	_rPath = ::rtl::OUString::createFromAscii("libiodbc.dylib");
  #else
+	// Try unixODBC first, since we have a long history of only using it:
 	_rPath = ::rtl::OUString::createFromAscii("libodbc.so.1");
 	pODBCso = osl_loadModule( _rPath.pData,SAL_LOADMODULE_NOW );
 	if ( !pODBCso )
+	{
 		_rPath = ::rtl::OUString::createFromAscii("libodbc.so");
+		pODBCso = osl_loadModule( _rPath.pData,SAL_LOADMODULE_NOW );
+		// If no unixODBC, try iODBC instead:
+		if ( !pODBCso )
+			_rPath = ::rtl::OUString::createFromAscii("libiodbc.so");
+	}
  #endif   /* MACOSX */
 #endif
 #ifdef OS2
