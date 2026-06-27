@@ -25,7 +25,12 @@ test          🔨  C++ unit-test infra runnable — NOW THE FRONT-LINE TASK: br
                    running-soffice fixture; cppunit suites need Phase-4 dep.
 testtools     ⬜  (bridgetest — pure-C++ UNO bridge round-trip; cli/pyuno/java variants
                    need rules_java — see Java bucket)
-qadevOOo      ⬜  (Java-based QA test framework; needs rules_java — see Java bucket)
+qadevOOo      🔨  OOoRunner.jar built (//main/qadevOOo:OOoRunner — qadevOOo QA
+                   framework, ~2137 classes; classpath ridl/unoil/jurt/juh_jar/
+                   java_uno_jar; .csv objdsc NOT jarred, manifest omitted).
+                   Unblocks bridges java_uno tests (acquire, java_remote).  STILL
+                   ⬜: OOoRunnerLight, qa/complex, JunitTest_qadevOOo_unoapi,
+                   testdocs — need running-soffice/OfficeConnection fixture.
 testgraphical ⬜  (graphical/visual regression tests; needs instsetoo_native + qadevOOo)
 
 ── Remaining: Java-based ────────────────────────────────────────────────

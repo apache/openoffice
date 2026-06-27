@@ -1,0 +1,32 @@
+load("@rules_java//java:defs.bzl", "java_library")
+
+# ── OOoRunner.jar ────────────────────────────────────────────────────────────
+# The qadevOOo test framework (lib.*, base.*, util.*, share.*, mod.* …) used as a
+# classpath library by UNO-Java API/integration tests — notably the bridges
+# java_uno tests (test/java_uno/acquire, com/sun/star/lib/.../java_remote/*).
+#
+# Classpath (build.xml main.classpath): ridl + unoil + jurt + juh + java_uno.
+#
+# Resources: src/main/resources holds ONLY the 670 objdsc/*.csv object-description
+# files, which the ant jar target does NOT bundle (.csv is absent from its include
+# list) — the runner reads them from the filesystem via an -objdsc parameter. So
+# this jar is compiled classes only, matching upstream.
+#
+# Manifest (Class-Path: ridl.jar unoil.jar / RegistrationClassName:
+# org.openoffice.RunnerService) is a deployment/UNO-registration detail not needed
+# for classpath use; omitted here, same as ridljar/unoloader (see ridljar/readme.md).
+java_library(
+    name = "OOoRunner",
+    srcs = glob(["java/OOoRunner/src/main/java/**/*.java"]),
+    # Legacy Java 1.4-era sources: pin --release 8 and silence Error Prone, same
+    # as jurt (modern JDK compiles them with deprecation/raw-type warnings only).
+    javacopts = ["--release", "8", "-XepDisableAllChecks"],
+    deps = [
+        "//main/ridljar:ridl",
+        "//main/unoil:unoil",
+        "//main/jurt:jurt",
+        "//main/javaunohelper:juh_jar",
+        "//main/bridges:java_uno_jar",
+    ],
+    visibility = ["//visibility:public"],
+)
