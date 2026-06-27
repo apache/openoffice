@@ -72,6 +72,11 @@ collect_outputs(
         "//main/stoc:proxyfac.uno",
         "//main/binaryurp:binaryurp",
         "//main/bridges:msci_uno",
+        # Native JNI bridge (java_uno.dll). Loaded by jurt's NativeThreadPool via
+        # System.loadLibrary("java_uno") once Java is enabled. The Java side
+        # (java_uno.jar) needs the program/classes/ classpath staging, which does
+        # not exist yet — see readme.md "jni_uno" notes.
+        "//main/bridges:java_uno",
         "//main/io:streams",
         "//main/io:acceptor",
         "//main/io:connector",

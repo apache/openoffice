@@ -28,7 +28,13 @@ testtools     ⬜  (bridgetest — pure-C++ UNO bridge round-trip; cli/pyuno/jav
 qadevOOo      ⬜  (Java-based QA test framework; needs rules_java — see Java bucket)
 testgraphical ⬜  (graphical/visual regression tests; needs instsetoo_native + qadevOOo)
 
-── Remaining: Java-based (gated on rules_java / UNO-Java component rules) ─
+── Remaining: Java-based ────────────────────────────────────────────────
+NOTE: rules_java 8.11.0 IS now wired (MODULE.bazel) and the core Java UNO
+runtime is migrated & green — ridljar/jurt/jvmaccess/javaunohelper/jvmfwk/
+bridges (incl. the java_uno JNI bridge: java_uno.dll + java_uno.jar, done
+2026-06-26)/stoc/io/remotebridges/unotools/unoil/pyuno.  The items below are
+the higher-level Java apps/extensions still to do (no longer gated on rules_java
+itself; per-module UNO-Java component/packaging rules may still be needed).
 reportbuilder ⬜  (pure Java .oxt extension; blockers: JFreeReport suite not on Maven, SourceForge ZIPs have token-based URLs; wizards dep also deferred)
 bean          ⬜  (Java bean component)
 saxon         ⬜  (XSLT 2.0 processor — IN SCOPE for full migration.  Feeds the

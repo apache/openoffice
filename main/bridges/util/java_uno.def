@@ -1,0 +1,16 @@
+LIBRARY java_uno
+EXPORTS
+    uno_initEnvironment
+    uno_ext_getMapping
+    component_canUnload
+    Java_com_sun_star_bridges_jni_1uno_JNI_1proxy_finalize__J
+    Java_com_sun_star_bridges_jni_1uno_JNI_1proxy_dispatch_1call
+    Java_com_sun_star_bridges_jni_1uno_JNI_1info_1holder_finalize__J
+    Java_com_sun_star_lib_uno_environments_remote_NativeThreadPool_attach
+    Java_com_sun_star_lib_uno_environments_remote_NativeThreadPool_create
+    Java_com_sun_star_lib_uno_environments_remote_NativeThreadPool_destroy
+    Java_com_sun_star_lib_uno_environments_remote_NativeThreadPool_detach
+    Java_com_sun_star_lib_uno_environments_remote_NativeThreadPool_dispose
+    Java_com_sun_star_lib_uno_environments_remote_NativeThreadPool_enter
+    Java_com_sun_star_lib_uno_environments_remote_NativeThreadPool_threadId
+    Java_com_sun_star_lib_uno_environments_remote_NativeThreadPool_putJob

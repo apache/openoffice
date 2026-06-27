@@ -1,6 +1,8 @@
 package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("@rules_java//java:defs.bzl", "java_library")
+load("//build/rules:gtest_test.bzl", "staged_run_test")
 
 _COPTS = [
     "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs",
@@ -89,4 +91,214 @@ filegroup(
     srcs = [":msci_uno"],
     output_group = "interface_library",
     visibility = ["//visibility:public"],
+)
+
+# ── java_uno bridge (Java↔C++ UNO bridge) ────────────────────────────────
+# Two cooperating artifacts:
+#   • java_uno.dll  — native JNI bridge (this cc_binary)
+#   • java_uno.jar  — the Java side (java_library below), loaded reflectively
+# jurt's NativeThreadPool does System.loadLibrary("java_uno") at runtime, so the
+# .jar and .dll are linked only at runtime, not at build time.
+
+# Local copts for the jni_uno layer: quote-includes resolve same-dir, but the
+# explicit -I keeps cross-file jni_*.h includes robust.  inc/pch (for
+# precompiled_bridges_java_uno.hxx) and the UNO/sal/cppu/udkapi -I paths come in
+# via :bridges_headers and the header deps below.
+_JNI_COPTS = [
+    "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs",
+    "/EHsc",
+    # sal_Unicode must equal jchar (unsigned short). With native wchar_t it's a
+    # distinct type, so JNI calls like GetStringRegion(...,jchar*) reject
+    # sal_Unicode*. /Zc:wchar_t- makes wchar_t == unsigned short == sal_Unicode.
+    "/Zc:wchar_t-",
+    "/Dsnprintf=_snprintf",
+    "/Imain/bridges/source/jni_uno",
+    "/Imain/bridges/inc/pch",
+    "/wd4061", "/wd4127",
+]
+
+# ── java_uno.dll ─────────────────────────────────────────────────────────
+# JNICALL is __stdcall on Win32, so the Java_* methods would otherwise be
+# decorated _Java_...@N which the JVM cannot resolve; util/java_uno.def exports
+# the undecorated names (same pattern as jurt's jpipe.def).  The DEF also exports
+# the three UNO C entry points (uno_initEnvironment / uno_ext_getMapping /
+# component_canUnload) for the c++_uno↔java_uno mapping bridge.
+cc_binary(
+    name = "java_uno",
+    srcs = [
+        "source/jni_uno/jni_base.h",
+        "source/jni_uno/jni_bridge.cxx",
+        "source/jni_uno/jni_bridge.h",
+        "source/jni_uno/jni_data.cxx",
+        "source/jni_uno/jni_helper.h",
+        "source/jni_uno/jni_info.cxx",
+        "source/jni_uno/jni_info.h",
+        "source/jni_uno/jni_java2uno.cxx",
+        "source/jni_uno/jni_uno2java.cxx",
+        "source/jni_uno/nativethreadpool.cxx",
+    ],
+    copts = _JNI_COPTS,
+    # SOLAR_JAVA makes jvmaccess/virtualmachine.hxx #include the real <jni.h>
+    # instead of its stub typedefs (jint=int, jobject=void*); without it the stubs
+    # clash with the real jni.h pulled in by these sources → jint/JNIEnv redefinition.
+    defines = _SLO_DEFINES + ["SOLAR_JAVA"],
+    deps = [
+        ":bridges_headers",
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/jvmaccess:jvmaccess_headers",
+        # jvmaccess/unovirtualmachine.hxx includes salhelper/simplereferenceobject.hxx
+        # but jvmaccess_headers doesn't propagate salhelper_headers (see its deps),
+        # so consumers must add it explicitly — same as jvmaccess3MSC does.
+        "//main/salhelper:salhelper_headers",
+        # jni_info.h uses ::std::hash_map, which only lives in std:: under stlport
+        # (VS2008 native puts hash_map in stdext::). Upstream relies on the global
+        # SOLAR stlport; here it's an explicit dep.
+        "//main/stlport:stlport",
+        "@rules_java//toolchains:jni",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/salhelper:salhelper_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/jvmaccess:jvmaccess3MSC_implib",
+    ],
+    linkshared = True,
+    win_def_file = "util/java_uno.def",
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/salhelper:salhelper_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/jvmaccess:jvmaccess3MSC_implib)",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── java_uno.jar ─────────────────────────────────────────────────────────
+# JNI_proxy + JNI_info_holder.  Helper classes (AsynchronousFinalizer,
+# NativeLibraryLoader) live in jurt; the UNO types come from ridl.  Sealed
+# manifest is a deployment detail (handled at staging), not a build concern.
+java_library(
+    name = "java_uno_jar",
+    srcs = glob(["java/java_uno/src/main/java/**/*.java"]),
+    javacopts = ["--release", "8", "-XepDisableAllChecks"],
+    deps = [
+        "//main/jurt:jurt",
+        "//main/ridljar:ridl",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ═══════════════════════════════════════════════════════════════════════════
+# Tests
+# ═══════════════════════════════════════════════════════════════════════════
+# inter_libs_exc — verifies a UNO/C++ exception thrown in one shared library is
+# caught across the boundary in another (an MSVC RTTI/ABI sanity check for the
+# bridge's exception handling).  inter.exe loads thrower.dll + starter.dll by
+# bare name (osl::Module), thrower throws lang::IllegalArgumentException,
+# starter catches it.  Single process, no UNO connection, no Java — the only
+# bridges/test that runs without a qadevOOo/running-soffice fixture.
+
+_TEST_COPTS = [
+    "/EHsc", "/GR", "/nologo",
+    "/Dsnprintf=_snprintf",
+    "/Imain/bridges/inc/pch",  # precompiled_bridges.hxx (plain #include, not /Yu)
+]
+
+_TEST_DLL_DEFINES = _DEFINES + ["SHAREDLIB", "_DLL_"]
+
+# thrower.dll / starter.dll — target names MUST be the bare dll basenames because
+# inter.exe loads them via osl::Module("thrower"/"starter") (Windows LoadLibrary
+# resolves them from the staged exe's own directory).
+
+# thrower.dll — exports get_thrower(); throws a UNO exception.
+cc_binary(
+    name = "thrower",
+    srcs = [
+        "test/inter_libs_exc/thrower.cxx",
+        "test/inter_libs_exc/share.h",
+    ],
+    copts = _TEST_COPTS,
+    defines = _TEST_DLL_DEFINES,
+    testonly = True,
+    linkshared = True,
+    win_def_file = "test/inter_libs_exc/thrower.def",
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/udkapi:udkapi_idl_headers",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "/MANIFEST:NO",
+    ],
+)
+
+# starter.dll — exports start(p); calls p() and catches the exception.
+cc_binary(
+    name = "starter",
+    srcs = [
+        "test/inter_libs_exc/starter.cxx",
+        "test/inter_libs_exc/share.h",
+    ],
+    copts = _TEST_COPTS,
+    defines = _TEST_DLL_DEFINES,
+    testonly = True,
+    linkshared = True,
+    win_def_file = "test/inter_libs_exc/starter.def",
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/udkapi:udkapi_idl_headers",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "/MANIFEST:NO",
+    ],
+)
+
+# inter.exe — the driver; loads the two DLLs and invokes the throw/catch path.
+cc_binary(
+    name = "test_inter",
+    srcs = [
+        "test/inter_libs_exc/inter.cxx",
+        "test/inter_libs_exc/share.h",
+    ],
+    copts = _TEST_COPTS,
+    defines = _DEFINES,
+    testonly = True,
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/udkapi:udkapi_idl_headers",
+    ],
+    additional_linker_inputs = ["//main/sal:sal_implib"],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "/MANIFEST:NO",
+    ],
+)
+
+# Stage inter.exe + starter.dll + thrower.dll + sal3/cppu3 + CRT into one dir and
+# run it; passes iff it exits 0 (exception caught, no crash).
+staged_run_test(
+    name = "inter_libs_exc_test",
+    binary = ":test_inter",
+    runtime = [
+        ":starter",
+        ":thrower",
+        "//main/sal:sal3",
+        "//main/cppu:cppu3",
+    ],
 )

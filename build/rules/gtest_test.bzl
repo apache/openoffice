@@ -84,6 +84,13 @@ _staged_gtest_test = rule(
     },
 )
 
+# The staging rule above is NOT gtest-specific: it stages an arbitrary /MD exe +
+# runtime DLLs + VC90 CRT + external manifest into one flat dir and runs it as a
+# test (pass/fail = process exit code).  Exposed for non-gtest runnable tests,
+# e.g. bridges' inter_libs_exc (a cross-DLL C++ exception smoke test whose exe
+# loads two sibling DLLs and exits 0 iff exception propagation works).
+staged_run_test = _staged_gtest_test
+
 def gtest_test(
         name,
         srcs,
