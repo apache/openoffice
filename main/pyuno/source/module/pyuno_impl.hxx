@@ -46,15 +46,9 @@
 //
 // Local workarounds for compatibility issues
 //
-#if PY_MAJOR_VERSION >= 3
     #define PYSTR_FROMSTR               PyUnicode_FromString
     #define USTR_TO_PYSTR               ustring2PyUnicode
     #define PYSTR_CHECK                 PyUnicode_Check
-#else
-    #define PYSTR_FROMSTR               PyBytes_FromString
-    #define USTR_TO_PYSTR               ustring2PyString
-    #define PYSTR_CHECK                 PyBytes_Check
-#endif
 
 #include <rtl/string.hxx>
 inline void PyErr_SetString( PyObject* pyObj, const rtl::OString& rName) { PyErr_SetString( pyObj, rName.getStr());}
@@ -140,7 +134,6 @@ typedef struct
 } PyUNO;
 
 PyRef ustring2PyUnicode( const rtl::OUString &source );
-PyRef ustring2PyString( const ::rtl::OUString & source );
 rtl::OUString pyString2ustring( PyObject *str );
 
 

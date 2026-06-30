@@ -4059,15 +4059,12 @@ if test "$_os" = "Darwin" && test "$with_system_python" != "no"; then
 
    _python_hexversion=`$_python -c "import sys; print(sys.hexversion);"`
 
-   dnl hex version of Python 2.7.1 = 34013680
-   if test $_python_hexversion -ge 34013680 ; then
-   	  _python_version=`$_python -c "import sys; print(sys.version);" | head -c 3`
+   dnl hex version of Python 3.11.0 = 51118080
+   if test $_python_hexversion -ge 51118080 ; then
+   	  _python_version=`$_python -c "import sys; print(sys.version);" | head -c 4`
       AC_MSG_RESULT([compiling against system python (version $_python_version)])
 
-	  if ! $_python -c "import distutils.sysconfig;"; then
-	      AC_MSG_ERROR([python setuptools module is required to provide distutils for python >= 3.12])
-	  fi
-	  _python_ver=`$_python -c "import distutils.sysconfig; print(distutils.sysconfig.get_config_var('VERSION'));"`
+	  _python_ver=`$_python -c "import sysconfig; print(sysconfig.get_config_var('VERSION'));"`
 
 	  dnl Locate the headers. Prefer the framework/SDK locations, but fall
 	  dnl back to whatever include dir the interpreter itself reports (this
@@ -4083,7 +4080,7 @@ if test "$_os" = "Darwin" && test "$with_system_python" != "no"; then
              PYTHON_CFLAGS="-I$_python_inc"
 	  fi
    else
-		AC_MSG_ERROR([Python 2.7.1 or higher is required])
+		AC_MSG_ERROR([Python 3.11 or higher is required])
    fi
 
    dnl A framework build links against the Python framework; any other
@@ -4101,13 +4098,10 @@ elif test -n "$with_system_python" -o -n "$with_system_libs" && \
 	test "$with_system_python" != "no"; then
    with_system_python=yes
    AC_MSG_RESULT([external])
-   AM_PATH_PYTHON([2.7])
+   AM_PATH_PYTHON([3.11])
 
-   if ! $PYTHON -c "import distutils.sysconfig;"; then
-       AC_MSG_ERROR([python setuptools module is required to provide distutils for python >= 3.12])
-   fi
-   python_include=`$PYTHON -c "import distutils.sysconfig; print(distutils.sysconfig.get_config_var('INCLUDEPY'));"`
-   python_version=`$PYTHON -c "import distutils.sysconfig; print(distutils.sysconfig.get_config_var('VERSION'));"`
+   python_include=`$PYTHON -c "import sysconfig; print(sysconfig.get_config_var('INCLUDEPY'));"`
+   python_version=`$PYTHON -c "import sysconfig; print(sysconfig.get_config_var('VERSION'));"`
    # Python 3.8 and later distinguish building Python modules from linking to the libpython:
    # (https://bugs.python.org/issue36721)
    if test "$python_version" -lt "3.8"; then

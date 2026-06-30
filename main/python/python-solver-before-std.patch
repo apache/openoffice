@@ -1,100 +1,35 @@
-diff -ur misc/Python-2.7.18/setup.py misc/build/Python-2.7.18/setup.py
---- misc/Python-2.7.18/setup.py	2016-06-25 16:49:32.000000000 -0500
-+++ misc/build/Python-2.7.18/setup.py	2016-09-02 17:09:20.687419000 -0500
-@@ -126,39 +126,41 @@
+diff -ur misc/Python-3.11.15/setup.py misc/build/Python-3.11.15/setup.py
+--- misc/Python-3.11.15/setup.py	2025-01-01 00:00:00.000000000 +0000
++++ misc/build/Python-3.11.15/setup.py	2025-01-01 00:00:00.000000000 +0000
+@@ -248,24 +248,24 @@
          # system, but with only header files and libraries.
          sysroot = macosx_sdk_root()
- 
+
 -    # Check the standard locations
--    for dir in std_dirs:
-+    # Check the standard directories
-+    for dir in paths:
-         f = os.path.join(dir, filename)
- 
-         if host_platform == 'darwin' and is_macosx_sdk_path(dir):
-             f = os.path.join(sysroot, dir[1:], filename)
- 
+-    for dir_ in std_dirs:
++    # Check the additional directories (solver paths take priority)
++    for dir_ in paths:
+         f = os.path.join(dir_, filename)
+
+         if MACOS and is_macosx_sdk_path(dir_):
+             f = os.path.join(sysroot, dir_[1:], filename)
+
 -        if os.path.exists(f): return []
 +        if os.path.exists(f):
-+	    return [dir]
- 
++            return [dir_]
+
 -    # Check the additional directories
--    for dir in paths:
+-    for dir_ in paths:
 +    # Check the standard locations
-+    for dir in std_dirs:
-         f = os.path.join(dir, filename)
- 
-         if host_platform == 'darwin' and is_macosx_sdk_path(dir):
-             f = os.path.join(sysroot, dir[1:], filename)
- 
-         if os.path.exists(f):
--            return [dir]
-+            return []
- 
++    for dir_ in std_dirs:
+         f = os.path.join(dir_, filename)
+
+         if MACOS and is_macosx_sdk_path(dir_):
+             f = os.path.join(sysroot, dir_[1:], filename)
+
+-        if os.path.exists(f):
+-            return [dir_]
++        if os.path.exists(f): return []
+
      # Not found anywhere
      return None
- 
- def find_library_file(compiler, libname, std_dirs, paths):
--    result = compiler.find_library_file(std_dirs + paths, libname)
-+    result = compiler.find_library_file(paths+std_dirs, libname)
-     if result is None:
-         return None
- 
-     if host_platform == 'darwin':
-         sysroot = macosx_sdk_root()
- 
--    # Check whether the found file is in one of the standard directories
-     dirname = os.path.dirname(result)
--    for p in std_dirs:
-+    # Otherwise, it must have been in one of the additional directories,
-+    # so we have to figure out which one.
-+    for p in paths:
-         # Ensure path doesn't end with path separator
-         p = p.rstrip(os.sep)
- 
-@@ -180,23 +180,22 @@
-             # vs
-             #   /usr/lib/libedit.dylib
-             if os.path.join(sysroot, p[1:]) == dirname:
--                return [ ]
-+                return [ p ]
- 
-         if p == dirname:
--            return [ ]
-+            return [ p ]
- 
--    # Otherwise, it must have been in one of the additional directories,
--    # so we have to figure out which one.
--    for p in paths:
-+    # Check whether the found file is in one of the standard directories
-+    for p in std_dirs:
-         # Ensure path doesn't end with path separator
-         p = p.rstrip(os.sep)
- 
-         if host_platform == 'darwin' and is_macosx_sdk_path(p):
-             if os.path.join(sysroot, p[1:]) == dirname:
--                return [ p ]
-+                return [ ]
- 
-         if p == dirname:
--            return [p]
-+            return [ ]
-     else:
-         assert False, "Internal error: Path not found in std_dirs or paths"
- 
-@@ -891,6 +892,7 @@
-             exts.append( Extension('_ssl', ['_ssl.c'],
-                                    include_dirs = ssl_incs,
-                                    library_dirs = ssl_libs,
-+                                   extra_link_args = ['-Wl,--exclude-libs,ALL'],
-                                    libraries = ['ssl', 'crypto'],
-                                    depends = ['socketmodule.h']), )
-         else:
-@@ -930,6 +931,7 @@
-                 exts.append( Extension('_hashlib', ['_hashopenssl.c'],
-                                        include_dirs = ssl_incs,
-                                        library_dirs = ssl_libs,
-+                                       extra_link_args = ['-Wl,--exclude-libs,ALL'],
-                                        libraries = ['ssl', 'crypto']) )
-             else:
-                 print ("warning: openssl 0x%08x is too old for _hashlib" %

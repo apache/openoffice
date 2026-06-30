@@ -179,9 +179,7 @@ static PyRef createClass( const OUString & name, const Runtime &runtime )
         PyRef getter = getObjectFromUnoModule( runtime,"_uno_struct__getattr__" );
         PyRef repr = getObjectFromUnoModule( runtime,"_uno_struct__repr__" );
         PyRef eq = getObjectFromUnoModule( runtime,"_uno_struct__eq__" );
-#if PY_MAJOR_VERSION >= 3
         PyRef dir = getObjectFromUnoModule( runtime, "_uno_struct__dir__" );
-#endif
 
         PyObject_SetAttrString(
             ret.get(), const_cast< char * >("__pyunostruct__"),
@@ -201,10 +199,8 @@ static PyRef createClass( const OUString & name, const Runtime &runtime )
             ret.get(), const_cast< char * >("__str__"), repr.get() );
         PyObject_SetAttrString(
             ret.get(), const_cast< char * >("__eq__"), eq.get() );
-#if PY_MAJOR_VERSION >= 3
         PyObject_SetAttrString(
             ret.get(), const_cast< char * >("__dir__"), dir.get() );
-#endif
     }
     return ret;
 }

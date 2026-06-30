@@ -225,11 +225,7 @@ PyObject * extractOneStringArg( PyObject *args, char const *funcName )
         return NULL;
     }
     PyObject *obj = PyTuple_GetItem( args, 0 );
-#if PY_MAJOR_VERSION >= 3
     if( ! PyUnicode_Check(obj) )
-#else
-    if( !PyBytes_Check( obj ) && ! PyUnicode_Check(obj))
-#endif
     {
         OStringBuffer buf;
         buf.append( funcName ).append( ": expecting one string argument" );
@@ -488,18 +484,9 @@ static PyObject *isInterface( PyObject *, PyObject *args )
     {
         PyObject *obj = PyTuple_GetItem( args, 0 );
         Runtime r;
-#if PY_MAJOR_VERSION >= 3
         return PyLong_FromLong( isInterfaceClass( r, obj ) );
-#else
-        return PyInt_FromLong( isInterfaceClass( r, obj ) );
-
-#endif
     }
-#if PY_MAJOR_VERSION >= 3
     return PyLong_FromLong( 0 );
-#else
-    return PyInt_FromLong( 0 );
-#endif
 }
 
 static PyObject * generateUuid( PyObject *, PyObject * )
@@ -607,14 +594,7 @@ static PyObject * invoke ( PyObject *, PyObject * args )
 
         if( PYSTR_CHECK( PyTuple_GetItem( args, 1 ) ) )
         {
-#if PY_VERSION_HEX >= 0x03030000
             const char *name = PyUnicode_AsUTF8( PyTuple_GetItem( args, 1 ) );
-#elif PY_MAJOR_VERSION >= 3
-            PyRef pUtf8(PyUnicode_AsUTF8String( PyTuple_GetItem( args, 1 ) ), SAL_NO_ACQUIRE);
-            const char *name = PyBytes_AsString( pUtf8.get() );
-#else
-            const char *name = PyBytes_AsString( PyTuple_GetItem( args, 1 ) );
-#endif
             if( PyTuple_Check( PyTuple_GetItem( args , 2 )))
             {
                 ret = PyUNO_invoke( object, name , PyTuple_GetItem( args, 2 ) );
@@ -623,11 +603,7 @@ static PyObject * invoke ( PyObject *, PyObject * args )
             {
                 OStringBuffer buf;
                 buf.append( "uno.invoke expects a tuple as 3rd argument, got " );
-#if PY_MAJOR_VERSION >= 3
                 buf.append( OUStringToOString( pyString2ustring( PyTuple_GetItem( args, 2 ) ), RTL_TEXTENCODING_ASCII_US) );
-#else
-                buf.append( PyBytes_AsString( PyObject_Str( PyTuple_GetItem( args, 2) ) ) );
-#endif
                 PyErr_SetString( PyExc_RuntimeError, buf.makeStringAndClear() );
             }
         }
@@ -635,11 +611,7 @@ static PyObject * invoke ( PyObject *, PyObject * args )
         {
             OStringBuffer buf;
             buf.append( "uno.invoke expected a string as 2nd argument, got " );
-#if PY_MAJOR_VERSION >= 3
             buf.append( OUStringToOString( pyString2ustring( PyTuple_GetItem( args, 1 ) ), RTL_TEXTENCODING_ASCII_US ) );
-#else
-            buf.append( PyBytes_AsString( PyObject_Str( PyTuple_GetItem( args, 1) ) ) );
-#endif
             PyErr_SetString( PyExc_RuntimeError, buf.makeStringAndClear() );
         }
     }
@@ -689,11 +661,7 @@ static PyObject *setCurrentContext( PyObject *, PyObject * args )
             {
                 OStringBuffer buf;
                 buf.append( "uno.setCurrentContext expects an XComponentContext implementation, got " );
-#if PY_MAJOR_VERSION >= 3
                 buf.append( OUStringToOString( pyString2ustring( PyTuple_GetItem( args, 0 ) ), RTL_TEXTENCODING_ASCII_US ) );
-#else
-                buf.append( PyBytes_AsString( PyObject_Str( PyTuple_GetItem( args, 0) ) ) );
-#endif
                 PyErr_SetString( PyExc_RuntimeError, buf.makeStringAndClear() );
             }
         }
@@ -733,7 +701,6 @@ struct PyMethodDef PyUNOModule_methods [] =
     {NULL, NULL, 0, NULL}
 };
 
-#if PY_MAJOR_VERSION >= 3
 static struct PyModuleDef PyUNOModule =
 {
     PyModuleDef_HEAD_INIT,
@@ -742,15 +709,11 @@ static struct PyModuleDef PyUNOModule =
     -1,
     PyUNOModule_methods
 };
-#endif
 }
 
-#if PY_MAJOR_VERSION >= 3
 PY_DLLEXPORT PyMODINIT_FUNC PyInit_pyuno()
 {
     PyObject *m;
-
-    PyEval_InitThreads();
 
     m = PyModule_Create(&PyUNOModule);
     if (m == NULL)
@@ -760,12 +723,3 @@ PY_DLLEXPORT PyMODINIT_FUNC PyInit_pyuno()
         return NULL;
     return m;
 }
-#else
-extern "C" PY_DLLEXPORT void initpyuno()
-{
-    // noop when called already, otherwise needed to allow multiple threads
-    // This has to be reworked for Python 3.
-    PyEval_InitThreads();
-    Py_InitModule (const_cast< char * >("pyuno"), PyUNOModule_methods);
-}
-#endif
