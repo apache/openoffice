@@ -1,22 +1,20 @@
-diff -ru misc/Python-2.7.18/Modules/Setup.dist misc/build/Python-2.7.18/Modules/Setup.dist
---- misc/Python-2.7.18/Modules/Setup.dist	2012-04-09 18:07:33.000000000 -0500
-+++ misc/build/Python-2.7.18/Modules/Setup.dist	2012-07-24 17:08:56.000000000 -0500
-@@ -252,14 +252,14 @@
- # Message-Digest Algorithm, described in RFC 1321.  The necessary files
- # md5.c and md5.h are included here.
- 
--#_md5 md5module.c md5.c
-+_md5 md5module.c md5.c
- 
- 
- # The _sha module implements the SHA checksum algorithms.
- # (NIST's Secure Hash Algorithms.)
--#_sha shamodule.c
+diff -ru misc/Python-3.11.15/Modules/Setup misc/build/Python-3.11.15/Modules/Setup
+--- misc/Python-3.11.15/Modules/Setup	2025-01-01 00:00:00.000000000 +0000
++++ misc/build/Python-3.11.15/Modules/Setup	2025-01-01 00:00:00.000000000 +0000
+@@ -163,11 +163,11 @@
+
+ # hashing builtins
+ #_blake2 _blake2/blake2module.c _blake2/blake2b_impl.c _blake2/blake2s_impl.c
+-#_md5 md5module.c
+-#_sha1 sha1module.c
 -#_sha256 sha256module.c
 -#_sha512 sha512module.c
-+_sha shamodule.c
+-#_sha3 _sha3/sha3module.c
++_md5 md5module.c
++_sha1 sha1module.c
 +_sha256 sha256module.c
 +_sha512 sha512module.c
- 
- 
- # SGI IRIX specific modules -- off by default.
++_sha3 _sha3/sha3module.c
+
+ # text encodings and unicode
+ #_codecs_cn cjkcodecs/_codecs_cn.c

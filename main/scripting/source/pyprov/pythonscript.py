@@ -27,6 +27,7 @@ import os
 import types
 import time
 import ast
+import re
 
 try:
     unicode
@@ -296,6 +297,36 @@ def ensureSourceState( code ):
     return code
 
 
+# Heuristics for Python 2 constructs that are *syntax* errors under Python 3.
+# These fail at compile() time, so a runtime shim cannot fix them; the best we
+# can do is recognise the most common ones and tell the user the script needs
+# to be ported, instead of surfacing a bare SyntaxError traceback.
+PYTHON2_SYNTAX_HINTS = (
+    (re.compile( r"^\s*print\s+[^(=]" ),          "'print' statement (use the print() function)"),
+    (re.compile( r"^\s*exec\s+[^(=]" ),           "'exec' statement (use the exec() function)"),
+    (re.compile( r"\bexcept\b[^:]*,\s*\w+\s*:" ), "'except Exception, e:' syntax (use 'except Exception as e:')"),
+    (re.compile( r"\braise\s+\w+\s*," ),          "'raise Exc, args' syntax (use 'raise Exc(args)')"),
+    (re.compile( r"`[^`]+`" ),                     "backtick repr `x` (use repr(x))"),
+    (re.compile( r"<>" ),                          "'<>' operator (use '!=')"),
+    (re.compile( r"\b0[0-7]+\b" ),                 "old-style octal literal (use the 0o prefix)"),
+    (re.compile( r"\b[uU][rR]['\"]" ),             "'ur' string prefix (removed in Python 3)"),
+)
+
+def detectPython2Syntax( src, syntaxError ):
+    # Prefer the exact line the compiler flagged; fall back to scanning the source.
+    candidates = []
+    text = getattr( syntaxError, "text", None )
+    if text:
+        candidates.append( text )
+    else:
+        candidates = src.split( "\n" )
+    for line in candidates:
+        for pattern, description in PYTHON2_SYNTAX_HINTS:
+            if pattern.search( line ):
+                return description
+    return None
+
+
 def checkForPythonPathBesideScript( url ):
     if url.startswith( "file:" ):
         path = unohelper.fileUrlToSystemPath( url+"/pythonpath.zip" );
@@ -493,10 +524,17 @@ class ProviderContext:
             entry.module.__dict__[GLOBAL_SCRIPTCONTEXT_NAME] = self.scriptContext
 
             code = None
-            if url.startswith( "file:" ):
-                code = compile( src, encfile(uno.fileUrlToSystemPath( url ) ), "exec" )
-            else:
-                code = compile( src, url, "exec" )
+            scriptName = uno.fileUrlToSystemPath( url ) if url.startswith( "file:" ) else url
+            try:
+                code = compile( src, encfile(scriptName) if url.startswith( "file:" ) else url, "exec" )
+            except SyntaxError as e:
+                hint = detectPython2Syntax( src, e )
+                if hint:
+                    raise SyntaxError(
+                        "The script '" + scriptName + "' appears to use Python 2 syntax that is "
+                        "not valid in Python 3: " + hint + ". Please port the script to Python 3. "
+                        "(original error: " + str(e) + ")" )
+                raise
             exec(code, entry.module.__dict__)
             entry.module.__file__ = url
             self.modules[ url ] = entry

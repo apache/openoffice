@@ -150,21 +150,13 @@ sal_Unicode PyChar2Unicode( PyObject *obj ) throw ( RuntimeException )
             Reference< XInterface > () );
     }
 
-#if PY_VERSION_HEX >= 0x030C0000
     if( PyUnicode_GetLength( value.get() ) < 1 )
-#else
-    if( PyUnicode_GetSize( value.get() ) < 1 )
-#endif
     {
         throw RuntimeException(
             USTR_ASCII( "uno.Char contains an empty unicode string" ),
             Reference< XInterface > () );
     }
-#if PY_VERSION_HEX >= 0x03030000
     sal_Unicode c = (sal_Unicode)PyUnicode_ReadChar( value.get(), 0 );
-#else
-    sal_Unicode c = (sal_Unicode)PyUnicode_AsUnicode( value.get() )[0];
-#endif
     return c;
 }
 
@@ -283,18 +275,8 @@ PyObject *importToGlobal(PyObject *str, PyObject *dict, PyObject *target)
                 Py_INCREF( typesModule.get() );
                 PyDict_SetItemString( dict, "unotypes" , typesModule.get() );
             }
-#if PY_VERSION_HEX >= 0x03030000
             const char *targetName = PyUnicode_AsUTF8( target );
             const char *typeName = PyUnicode_AsUTF8( str );
-#elif PY_MAJOR_VERSION > 3
-            PyRef pUtf8( PyUnicode_AsUTF8String( target ), SAL_NO_ACQUIRE );
-            const char *targetName = PyBytes_AsString( pUtf8.get() );
-            PyRef pTypeName( PyUnicode_AsUTF8String( str ), SAL_NO_ACQUIRE );
-            const char *typeName = PyBytes_AsString( pTypeName.get() );
-#else
-            /*const*/ char *targetName = PyBytes_AsString( target );
-            const char *typeName = PyBytes_AsString( str );
-#endif
             PyModule_AddObject(
                 typesModule.get(),
                 targetName,
@@ -315,14 +297,7 @@ PyObject *importToGlobal(PyObject *str, PyObject *dict, PyObject *target)
                 {
                     OString enumElementName(
                         OUStringToOString( pDesc->ppEnumNames[i], RTL_TEXTENCODING_ASCII_US) );
-#if PY_VERSION_HEX >= 0x03030000
                     const char *name = PyUnicode_AsUTF8(str);
-#elif PY_MAJOR_VERSION > 3
-                    PyRef *pUtf8( PyUnicode_AsUTF8String( str ), SAL_NO_ACQUIRE );
-                    const char *name = PyBytes_AsString( pUtf8.get() );
-#else
-                    const char *name = PyBytes_AsString(str);
-#endif
                     PyDict_SetItemString(
                         dict, (char*)enumElementName.getStr(),
                         PyUNO_Enum_new(name, enumElementName.getStr(), runtime ) );
@@ -434,16 +409,9 @@ PyObject* PyUNO_char_new ( sal_Unicode val , const Runtime &r )
     // retrieve type object
     PyRef args( PyTuple_New( 1 ), SAL_NO_ACQUIRE );
 
-#if PY_VERSION_HEX >= 0x03030000
     Py_UCS2 u[1];
     u[0] = val;
     PyTuple_SetItem( args.get(), 0, PyUnicode_FromKindAndData( PyUnicode_2BYTE_KIND, u, 1 ) );
-#else
-    Py_UNICODE u[2];
-    u[0] = val;
-    u[1] = 0;
-    PyTuple_SetItem( args.get() , 0 , PyUnicode_FromUnicode( u ,1) );
-#endif
 
     return callCtor( r, "Char" , args );
 }

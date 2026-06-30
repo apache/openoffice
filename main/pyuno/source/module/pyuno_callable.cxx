@@ -197,11 +197,7 @@ static PyTypeObject PyUNO_callable_Type =
     (printfunc) 0,
     (getattrfunc) 0,
     (setattrfunc) 0,
-#if PY_MAJOR_VERSION >= 3
     0,
-#else
-    (cmpfunc) 0,
-#endif
     (reprfunc) 0,
     0,
     0,
@@ -238,10 +234,8 @@ static PyTypeObject PyUNO_callable_Type =
     NULL,
     NULL,
     NULL,
-    (destructor)0
-#if PY_VERSION_HEX >= 0x02060000
-    , 0
-#endif
+    (destructor)0,
+    0
 };
 
 PyRef PyUNO_callable_new (

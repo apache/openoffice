@@ -1,0 +1,11 @@
+--- misc/Python-3.11.15/Makefile.pre.in	2025-01-01 00:00:00.000000000 +0000
++++ misc/build/Python-3.11.15/Makefile.pre.in	2025-01-01 00:00:00.000000000 +0000
+@@ -759,7 +759,7 @@
+ libpython$(LDVERSION).so: $(LIBRARY_OBJS) $(DTRACE_OBJS)
+ 	if test $(INSTSONAME) != $(LDLIBRARY); then \
+ 		$(BLDSHARED) -Wl,-h$(INSTSONAME) -o $(INSTSONAME) $(LIBRARY_OBJS) $(MODLIBS) $(SHLIBS) $(LIBC) $(LIBM); \
+-		$(LN) -f $(INSTSONAME) $@; \
++		$(LN) -fs $(INSTSONAME) $@; \
+ 	else \
+ 		$(BLDSHARED) -o $@ $(LIBRARY_OBJS) $(MODLIBS) $(SHLIBS) $(LIBC) $(LIBM); \
+ 	fi

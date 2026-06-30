@@ -42,35 +42,48 @@ all:
 
 
 TARFILE_NAME=Python-$(PYVERSION)
-TARFILE_MD5=38c84292658ed4456157195f1c9bcbe1
+TARFILE_MD5=57f84cbd92d478ceff55217d88a07ded
 PATCH_FILES=\
-	python-solaris.patch \
-	python-freebsd.patch \
 	python-md5.patch \
-	python-ssl.patch \
 	python-solver-before-std.patch \
 	python-$(PYVERSION)-sysbase.patch \
 	python-$(PYVERSION)-nohardlink.patch
+# python-freebsd.patch: all hunks obsolete in Python 3.11 (upstream fixes).
+# python-ssl.patch: dropped. Python 3.11's setup.py finds the bundled OpenSSL
+#   through the compiler include/lib search paths instead of the old hard-coded
+#   source edit; see python_CFLAGS/python_LDFLAGS in the UNX branch below.
 
-.IF "$(GUI)"=="WNT"
-.IF "$(CPUNAME)"=="INTEL"
-PATCH_FILES += python-$(PYVERSION)-msvs9.patch
-.ELIF "$(CPUNAME)"=="X86_64"
-PATCH_FILES += \
-	python-$(PYVERSION)-msvs9-win64.patch \
-	python-$(PYVERSION)-msvs9-win64-target.patch \
-	python-$(PYVERSION)-msvs9-subsystem.patch \
-	python-$(PYVERSION)-msvs9-dir.patch \
-	python-$(PYVERSION)-msvs9-no-host-python.patch \
-	python-$(PYVERSION)-msvs9-python-path.patch
-.ENDIF
-.ENDIF
+# Windows build deferred — Python 3 requires modern MSVC (VS2008/msvs9 not supported).
+# The msvs9 patch files below are retained for reference but are NOT applied until
+# the Windows toolchain is modernised. See python3 migration notes.
+#.IF "$(GUI)"=="WNT"
+#.IF "$(CPUNAME)"=="INTEL"
+#PATCH_FILES += python-$(PYVERSION)-msvs9.patch
+#.ELIF "$(CPUNAME)"=="X86_64"
+#PATCH_FILES += \
+#	python-$(PYVERSION)-msvs9-win64.patch \
+#	python-$(PYVERSION)-msvs9-win64-target.patch \
+#	python-$(PYVERSION)-msvs9-subsystem.patch \
+#	python-$(PYVERSION)-msvs9-dir.patch \
+#	python-$(PYVERSION)-msvs9-no-host-python.patch \
+#	python-$(PYVERSION)-msvs9-python-path.patch
+#.ENDIF
+#.ENDIF
 
 CONFIGURE_DIR=
 
 .IF "$(GUI)"=="UNX"
 BUILD_DIR=
 MYCWD=$(shell @pwd)/$(INPATH)/misc/build
+
+# Point Python's setup.py at the bundled OpenSSL delivered to the solver.
+# (Replaces the old python-ssl.patch: Python 3.11 discovers _ssl/_hashlib via
+# the C compiler include/lib search paths, so feeding the solver's external
+# include dir and lib dir through CFLAGS/LDFLAGS is sufficient. Headers live
+# in $(SOLARINCDIR)/external/openssl/, so the search dir is .../external so
+# that setup.py's "openssl/ssl.h" probe resolves.)
+python_CFLAGS+=-I$(SOLARINCDIR)$/external
+python_LDFLAGS+=-L$(SOLARLIBDIR)
 
 # CLFLAGS get overwritten in Makefile.pre.in
 .IF "$(SYSBASE)"!=""
@@ -122,18 +135,14 @@ BUILD_ACTION=$(ENV_BUILD) make && make install
 #.ENDIF #"$(WINDOWS_VISTA_PSDK)"!=""
 #.ENDIF
 
-# Requires adapting for according to the MSVC compiler version.
-# Normally PCBuild will carry the latest supported build files.
-BUILD_DIR=PC/VS9.0
-
-# Build python executable and then runs a minimal script. Running the minimal script
-# ensures that certain *.pyc files are generated which would otherwise be created on
-# solver during registration in insetoo_native
-.IF "$(CPUNAME)"=="INTEL"
-BUILD_ACTION=$(COMPATH)$/vcpackages$/vcbuild.exe -useenv pcbuild.sln "Release|Win32"
-.ELIF "$(CPUNAME)"=="X86_64"
-BUILD_ACTION=$(COMPATH)$/vcpackages$/vcbuild.exe -useenv pcbuild.sln "Release|x64"
-.ENDIF
+# Windows build deferred — Python 3 requires modern MSVC (PCbuild); VS9.0/vcbuild
+# no longer supported. Retained for reference. See python3 migration notes.
+#BUILD_DIR=PC/VS9.0
+#.IF "$(CPUNAME)"=="INTEL"
+#BUILD_ACTION=$(COMPATH)$/vcpackages$/vcbuild.exe -useenv pcbuild.sln "Release|Win32"
+#.ELIF "$(CPUNAME)"=="X86_64"
+#BUILD_ACTION=$(COMPATH)$/vcpackages$/vcbuild.exe -useenv pcbuild.sln "Release|x64"
+#.ENDIF
 .ENDIF
 .ENDIF
 

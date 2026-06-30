@@ -75,11 +75,7 @@ static PyTypeObject RuntimeImpl_Type =
     (printfunc) 0,
     (getattrfunc) 0,
     (setattrfunc) 0,
-#if PY_MAJOR_VERSION >= 3
     0,
-#else
-    (cmpfunc) 0,
-#endif
     (reprfunc) 0,
     0,
     0,
@@ -116,10 +112,8 @@ static PyTypeObject RuntimeImpl_Type =
     NULL,
     NULL,
     NULL,
-    (destructor)0
-#if PY_VERSION_HEX >= 0x02060000
-    , 0
-#endif
+    (destructor)0,
+    0
 };
 
 /*----------------------------------------------------------------------
@@ -444,11 +438,7 @@ PyRef Runtime::any2PyObject (const Any &a ) const
 	{
         sal_Int32 l = 0;
         a >>= l;
-#if PY_MAJOR_VERSION >= 3
         return PyRef( PyLong_FromLong (l), SAL_NO_ACQUIRE );
-#else
-        return PyRef( PyInt_FromLong (l), SAL_NO_ACQUIRE );
-#endif
 	}
     case typelib_TypeClass_UNSIGNED_LONG:
 	{
@@ -669,7 +659,6 @@ Any Runtime::pyObject2Any ( const PyRef & source, enum ConversionMode mode ) con
     {
 
     }
-#if PY_MAJOR_VERSION >= 3	// Python 3 has no PyInt
     else if (PyBool_Check(o))
     {
         if( o == Py_True )
@@ -683,39 +672,6 @@ Any Runtime::pyObject2Any ( const PyRef & source, enum ConversionMode mode ) con
             a = Any( &b, getBooleanCppuType() );
         }
     }
-#else
-    else if (PyInt_Check (o))
-    {
-        if( o == Py_True )
-        {
-            sal_Bool b = sal_True;
-            a = Any( &b, getBooleanCppuType() );
-        }
-        else if ( o == Py_False )
-        {
-            sal_Bool b = sal_False;
-            a = Any( &b, getBooleanCppuType() );
-        }
-        else
-        {
-            sal_Int32 l = (sal_Int32) PyInt_AsLong( o );
-            if( l < 128 && l >= -128 )
-            {
-                sal_Int8 b = (sal_Int8 ) l;
-                a <<= b;
-            }
-            else if( l <= 0x7fff && l >= -0x8000 )
-            {
-                sal_Int16 s = (sal_Int16) l;
-                a <<= s;
-            }
-            else
-            {
-                a <<= l;
-            }
-        }
-    }
-#endif				// Python 3 has no PyInt
     else if (PyLong_Check (o))
     {
         sal_Int64 l = (sal_Int64)PyLong_AsLong (o);
@@ -745,10 +701,6 @@ Any Runtime::pyObject2Any ( const PyRef & source, enum ConversionMode mode ) con
         double d = PyFloat_AsDouble (o);
         a <<= d;
     }
-#if PY_MAJOR_VERSION < 3
-    else if (PyBytes_Check (o))
-	a <<= pyString2ustring(o);
-#endif
     else if( PyUnicode_Check( o ) )
 	a <<= pyString2ustring(o);
     else if (PyTuple_Check (o))
@@ -773,13 +725,11 @@ Any Runtime::pyObject2Any ( const PyRef & source, enum ConversionMode mode ) con
                 seq = Sequence<sal_Int8 > (
                     (sal_Int8*) PyBytes_AsString(str.get()), PyBytes_Size(str.get()));
             }
-#if PY_MAJOR_VERSION >= 3
             else if ( PyByteArray_Check( str.get() ) )
             {
                 seq = Sequence< sal_Int8 >(
                     (sal_Int8 *) PyByteArray_AS_STRING(str.get()), PyByteArray_GET_SIZE(str.get()));
             }
-#endif
             a <<= seq;
         }
         else
