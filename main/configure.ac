@@ -3028,6 +3028,23 @@ if test "$_os" = "WINNT"; then
    fi
 fi
 
+dnl on macOS there is no reliable way to derive JAVA_HOME from the path
+dnl of the java/javac binaries (the /usr/bin/java* wrappers are no longer
+dnl symlinks into a JDK, they are dispatcher stubs that shell out to
+dnl /usr/libexec/java_home), so ask the system tool directly.
+if test "$_os" = "Darwin"; then
+   if test -z "$with_jdk_home"; then
+      AC_MSG_CHECKING([for JDK home])
+      _jdk_home=`/usr/libexec/java_home 2>/dev/null`
+      AC_MSG_RESULT([$_jdk_home])
+      if test -d "$_jdk_home"; then
+          with_jdk_home="$_jdk_home"
+      else
+          AC_MSG_WARN([/usr/libexec/java_home did not return a JDK home directory, ignoring it])
+      fi
+   fi
+fi
+
 dnl ===================================================================
 dnl Checks for java
 dnl ===================================================================
@@ -3378,6 +3395,11 @@ if test "$SOLAR_JAVA" != ""; then
       save_LDFLAGS=$LDFLAGS
       save_LD_LIBRARY_PATH=$LD_LIBRARY_PATH
       CFLAGS="$CFLAGS -I$JAVA_HOME/include"
+      if test "$_os" = "Darwin"; then
+         dnl jni_md.h lives in a platform-specific subdirectory on macOS,
+         dnl matching the layout set up for the real build in set_soenv.in
+         CFLAGS="$CFLAGS -I$JAVA_HOME/include/darwin"
+      fi
       LDFLAGS="$LDFLAGS -L$JAVA_HOME/jre/bin"
       LD_LIBRARY_PATH=$JAVA_HOME/jre/bin:$JAVA_HOME/jre/bin/classic:$JAVA_HOME/jre/bin/xawt:$LD_LIBRARY_PATH
       export LD_LIBRARY_PATH
