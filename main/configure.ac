@@ -1146,6 +1146,7 @@ case "$build_os" in
          	   enable_systray=no
       		fi
 		SDKROOT="`xcrun --sdk macosx --show-sdk-path`"
+		export SDKROOT
 		if test ! -n "$CC"; then
 		   CC="`xcrun -f clang`"
 		fi
@@ -4000,6 +4001,7 @@ if test  "$_os" = "Darwin"; then
 
       MACOSX_SDK_PATH=$sdk_path
       SDKROOT=$sdk_path
+      export SDKROOT
    fi
 
 fi
