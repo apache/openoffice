@@ -4032,55 +4032,51 @@ if test "$_os" = "Darwin" && test "$with_system_python" != "no"; then
    with_system_python=yes
 
    dnl Recent macOS releases no longer ship a usable Python under /usr/bin,
-   dnl so probe the locations where a system/user Python is typically found:
-   dnl the python.org framework build, Homebrew (Apple Silicon and Intel),
-   dnl and the Command Line Tools python3. Fall back to whatever python3 or
-   dnl python is on PATH.
+   dnl and even when python3 exists there it may be Apple's old CLT stub
+   dnl (< 3.11). Probe the locations where a system/user Python is typically
+   dnl found - the python.org framework build, Homebrew (Apple Silicon and
+   dnl Intel), and whatever python3 is first on PATH (MacPorts/pyenv/etc.) -
+   dnl and pick the first candidate that actually satisfies the 3.11 floor.
+   dnl hex version of Python 3.11.0 = 51118080
    _python=""
    for _python_candidate in \
        "/Library/Frameworks/Python.framework/Versions/Current/bin/python3" \
        "/Library/Frameworks/Python.framework/Versions/Current/bin/python" \
        "/opt/homebrew/bin/python3" \
        "/usr/local/bin/python3" \
+       `command -v python3 2>/dev/null` \
        "/usr/bin/python3" \
        "/usr/bin/python" ; do
        if test -x "$_python_candidate"; then
-           _python="$_python_candidate"
-           break
+           _python_candidate_hexversion=`$_python_candidate -c "import sys; print(sys.hexversion)" 2>/dev/null`
+           if test -n "$_python_candidate_hexversion" && \
+              test "$_python_candidate_hexversion" -ge 51118080 2>/dev/null; then
+               _python="$_python_candidate"
+               break
+           fi
        fi
    done
    if test -z "$_python"; then
-       AC_PATH_PROGS([_python], [python3 python])
+       AC_MSG_ERROR([Python 3.11 or higher is required; install it (e.g. from python.org or Homebrew), or configure with --without-system-python])
    fi
-   if test -z "$_python"; then
-       AC_MSG_ERROR([no system python found; install Python (e.g. from python.org or Homebrew), or configure with --without-system-python])
-   fi
-   AC_MSG_RESULT([compiling against system python ($_python)])
 
-   _python_hexversion=`$_python -c "import sys; print(sys.hexversion);"`
+   _python_version=`$_python -c "import sys; print(sys.version);" | head -c 4`
+   AC_MSG_RESULT([compiling against system python ($_python, version $_python_version)])
 
-   dnl hex version of Python 3.11.0 = 51118080
-   if test $_python_hexversion -ge 51118080 ; then
-   	  _python_version=`$_python -c "import sys; print(sys.version);" | head -c 4`
-      AC_MSG_RESULT([compiling against system python (version $_python_version)])
+   _python_ver=`$_python -c "import sysconfig; print(sysconfig.get_config_var('VERSION'));"`
 
-	  _python_ver=`$_python -c "import sysconfig; print(sysconfig.get_config_var('VERSION'));"`
-
-	  dnl Locate the headers. Prefer the framework/SDK locations, but fall
-	  dnl back to whatever include dir the interpreter itself reports (this
-	  dnl is what makes Homebrew and other non-framework installs work).
-	  if test -d "/Library/Frameworks/Python.framework/Versions/$_python_ver/include/python$_python_ver"; then
-	  	 PYTHON_CFLAGS="-I/Library/Frameworks/Python.framework/Versions/$_python_ver/include/python$_python_ver"
-         elif test -d "$MACOSX_SDK_PATH/usr/include/python$_python_ver"; then
-             PYTHON_CFLAGS="-I$MACOSX_SDK_PATH/usr/include/python$_python_ver"
-         elif test -d "$MACOSX_SDK_PATH/System/Library/Frameworks/Python.framework/Versions/$_python_ver/include/python$_python_ver"; then
-             PYTHON_CFLAGS="-I$MACOSX_SDK_PATH/System/Library/Frameworks/Python.framework/Versions/$_python_ver/include/python$_python_ver"
-	  else
-             _python_inc=`$_python -c "import distutils.sysconfig; print(distutils.sysconfig.get_python_inc());"`
-             PYTHON_CFLAGS="-I$_python_inc"
-	  fi
+   dnl Locate the headers. Prefer the framework/SDK locations, but fall back
+   dnl to whatever include dir the interpreter itself reports (this is what
+   dnl makes Homebrew and other non-framework installs work).
+   if test -d "/Library/Frameworks/Python.framework/Versions/$_python_ver/include/python$_python_ver"; then
+        PYTHON_CFLAGS="-I/Library/Frameworks/Python.framework/Versions/$_python_ver/include/python$_python_ver"
+   elif test -d "$MACOSX_SDK_PATH/usr/include/python$_python_ver"; then
+       PYTHON_CFLAGS="-I$MACOSX_SDK_PATH/usr/include/python$_python_ver"
+   elif test -d "$MACOSX_SDK_PATH/System/Library/Frameworks/Python.framework/Versions/$_python_ver/include/python$_python_ver"; then
+       PYTHON_CFLAGS="-I$MACOSX_SDK_PATH/System/Library/Frameworks/Python.framework/Versions/$_python_ver/include/python$_python_ver"
    else
-		AC_MSG_ERROR([Python 3.11 or higher is required])
+       _python_inc=`$_python -c "import sysconfig; print(sysconfig.get_path('include'));"`
+       PYTHON_CFLAGS="-I$_python_inc"
    fi
 
    dnl A framework build links against the Python framework; any other
