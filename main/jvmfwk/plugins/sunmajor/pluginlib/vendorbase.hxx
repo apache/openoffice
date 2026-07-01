@@ -57,6 +57,8 @@ namespace jfw_plugin
 #define JFW_PLUGIN_ARCH "s390x"
 #elif defined S390
 #define JFW_PLUGIN_ARCH "s390"
+#elif defined AARCH64
+#define JFW_PLUGIN_ARCH "aarch64"
 #elif defined ARM
 #define JFW_PLUGIN_ARCH "arm"
 #elif defined IA64
