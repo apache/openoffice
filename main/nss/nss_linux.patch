@@ -1,6 +1,6 @@
-diff -ur misc/nss-3.39/nss/lib/freebl/Makefile misc/build/nss-3.39/nss/lib/freebl/Makefile
---- misc/nss-3.39/nss/lib/freebl/Makefile	2018-08-31 05:55:53.000000000 -0700
-+++ misc/build/nss-3.39/nss/lib/freebl/Makefile	2018-09-10 10:33:50.973984000 -0700
+diff -ur misc/nss-3.112.5/nss/lib/freebl/Makefile misc/build/nss-3.112.5/nss/lib/freebl/Makefile
+--- misc/nss-3.112.5/nss/lib/freebl/Makefile	2018-08-31 05:55:53.000000000 -0700
++++ misc/build/nss-3.112.5/nss/lib/freebl/Makefile	2018-09-10 10:33:50.973984000 -0700
 @@ -156,8 +156,8 @@
      # The Intel AES assembly code requires Visual C++ 2010.
      # if $(_MSC_VER) >= 1600 (Visual C++ 2010)

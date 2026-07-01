@@ -37,11 +37,10 @@ all:
 
 .ELSE
 
-TARFILE_NAME=nss-3.39-with-nspr-4.20
-TARFILE_MD5=8ac77166663de5c33bba6cb3d0066929
-TARFILE_ROOTDIR=nss-3.39
+TARFILE_NAME=nss-3.112.5-with-nspr-4.38.2
+TARFILE_MD5=8b373566dd5bba69f2cd6e63f733ae65
+TARFILE_ROOTDIR=nss-3.112.5
 PATCH_FILES=nss.patch
-PATCH_FILES+=nss_sizes.patch
 
 .IF "$(OS)"=="MACOSX"
 MACOS_SDK_DIR=$(SDK_PATH)
@@ -85,6 +84,9 @@ BUILD_ACTION+=NSS_DISABLE_GTESTS=1 NSS_ENABLE_WERROR=0
 
 .IF "$(COM)"=="GCC"
 
+# FIXME: nss.patch.mingw was written against the ancient nss-3.13.6
+# "mozilla/security/nss" source layout and does NOT apply to nss-3.112.5.
+# The MinGW Windows build needs this patch regenerated on a Windows host.
 PATCH_FILES+=nss.patch.mingw
 
 moz_build:=$(shell cygpath -p $(MOZILLABUILD))
@@ -121,6 +123,10 @@ OUT2LIB= \
 .ELSE # "$(COM)"=="GCC"
 MOZ_MSVCVERSION= 9
 .EXPORT : MOZ_MSVCVERSION
+# FIXME: nss_win.patch is a set of old-MSVC (VS2008/_MSC_VER<1900) compatibility
+# shims written against nss-3.39; ~16 of its files no longer apply to nss-3.112.5
+# (freebl HACL crypto sources were rewritten upstream). The MSVC Windows build
+# needs this patch regenerated/trimmed on a Windows host with a modern toolchain.
 PATCH_FILES+=nss_win.patch
 moz_build:=$(shell cygpath -p $(MOZILLABUILD))
 

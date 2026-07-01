@@ -1,25 +1,6 @@
-diff -ur misc/nss-3.39/nspr/configure misc/build/nss-3.39/nspr/configure
---- misc/nss-3.39/nspr/configure	2018-08-28 05:42:28.000000000 -0700
-+++ misc/build/nss-3.39/nspr/configure	2020-10-06 07:41:59.563345390 -0700
-@@ -6570,8 +6570,14 @@
-     AS='$(CC) -x assembler-with-cpp'
-     CFLAGS="$CFLAGS -Wall -fno-common"
-     case "${target_cpu}" in
-+        aarch64|arm64)
-+            CPU_ARCH=arm64
-+            ;;
-         arm*)
--            CPU_ARCH=arm
-+            # On Apple Silicon the bundled config.guess reports the bare CPU
-+            # "arm"; the macOS arch name is "arm64" (plain "arm" makes ld pick
-+            # the nonexistent armv4t).  Treat any arm on Darwin as arm64.
-+            CPU_ARCH=arm64
-             ;;
-         i*86*|x86_64)
-             if test -n "$USE_64"; then
-diff -ur misc/nss-3.39/nss/coreconf/Darwin.mk misc/build/nss-3.39/nss/coreconf/Darwin.mk
---- misc/nss-3.39/nss/coreconf/Darwin.mk	2018-08-31 05:55:53.000000000 -0700
-+++ misc/build/nss-3.39/nss/coreconf/Darwin.mk	2020-10-06 07:51:49.590356560 -0700
+diff -ur misc/nss-3.112.5/nss/coreconf/Darwin.mk misc/build/nss-3.112.5/nss/coreconf/Darwin.mk
+--- misc/nss-3.112.5/nss/coreconf/Darwin.mk	2018-08-31 05:55:53.000000000 -0700
++++ misc/build/nss-3.112.5/nss/coreconf/Darwin.mk	2020-10-06 07:51:49.590356560 -0700
 @@ -32,7 +32,13 @@
  endif
  else
@@ -35,19 +16,3 @@ diff -ur misc/nss-3.39/nss/coreconf/Darwin.mk misc/build/nss-3.39/nss/coreconf/D
  else
  OS_REL_CFLAGS	= -Dppc
  CC              += -arch ppc
-diff -ur misc/nss-3.39/nss/lib/sqlite/config.mk misc/build/nss-3.39/nss/lib/sqlite/config.mk
---- misc/nss-3.39/nss/lib/sqlite/config.mk	2018-08-31 05:55:53.000000000 -0700
-+++ misc/build/nss-3.39/nss/lib/sqlite/config.mk	2018-09-10 10:36:01.074375000 -0700
-@@ -35,9 +35,9 @@
- # OSAtomicCompareAndSwapPtrBarrier, which is only available on Mac OS X 10.5
- # (Darwin 9.0) and later. Define SQLITE_WITHOUT_ZONEMALLOC to disable
- # that code for older versions of Mac OS X. See bug 820374.
--DARWIN_VER_MAJOR := $(shell uname -r | cut -f1 -d.)
--DARWIN_LT_9 := $(shell [ $(DARWIN_VER_MAJOR) -lt 9 ] && echo true)
--ifeq ($(DARWIN_LT_9),true)
-+OSX_TARGET_MINOR := $(shell echo $(MACOSX_DEPLOYMENT_TARGET) | cut -f2 -d.)
-+OSX_MINOR_LT_5 := $(shell [ $(OSX_TARGET_MINOR) -lt 5 ] && echo true)
-+ifeq ($(OSX_MINOR_LT_5),true)
- OS_CFLAGS += -DSQLITE_WITHOUT_ZONEMALLOC
- endif
- endif # Darwin
