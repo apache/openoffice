@@ -1,0 +1,22 @@
+--- misc/build/hsqldb/src/org/hsqldb/lib/java/JavaSystem.java
++++ misc/build/hsqldb/src/org/hsqldb/lib/java/JavaSystem.java
+@@ -160,7 +160,7 @@
+     public static void runFinalizers() {
+ 
+ //#ifdef JAVA2FULL
+-        System.runFinalizersOnExit(true);
++        // System.runFinalizersOnExit(boolean) was removed in Java 11+; dropped for modern JDK compatibility
+ 
+ //#endif
+     }
+--- misc/build/hsqldb/src/org/hsqldb/lib/HsqlArrayList.java
++++ misc/build/hsqldb/src/org/hsqldb/lib/HsqlArrayList.java
+@@ -57,7 +57,7 @@
+         Reporter() {
+ 
+             try {
+-                System.runFinalizersOnExit(true);
++                // System.runFinalizersOnExit(boolean) was removed in Java 11+; dropped for modern JDK compatibility
+             } catch (SecurityException e) {}
+         }
+ 

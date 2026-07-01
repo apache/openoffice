@@ -150,6 +150,17 @@ JAVARESPONSE=
 .ENDIF
 .ENDIF
 
+# Tree-wide Java bytecode floor: compile all Java to a fixed source/target level
+# so artifacts run on the minimum supported JRE (Java 8) regardless of how new
+# the build JDK is. Without this, building on a modern JDK (e.g. 21) emits
+# bytecode that will not load on Java 8. gcj does not accept -source/-target,
+# so skip it there. Can be overridden by setting JAVA_TARGET_FLAG in the env.
+.IF "$(JAVA_TARGET_FLAG)"==""
+.IF "$(JAVACISGCJ)"!="yes"
+JAVA_TARGET_FLAG=-source 1.8 -target 1.8
+.ENDIF			# "$(JAVACISGCJ)"!="yes"
+.ENDIF			# "$(JAVA_TARGET_FLAG)"==""
+
 JAVAFLAGS+=$(JAVA_TARGET_FLAG)
 
 #END JAVA

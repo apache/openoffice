@@ -49,6 +49,7 @@ TARFILE_MD5=4c8c505cc3cba4c467c479e3e0f09ba4
 TARFILE_ROOTDIR=commons-lang3-3.3-src
 
 #PATCH_FILES=$(PRJ)$/patches$/logging.patch
+PATCH_FILES=commons-lang3-java-version.patch
 
 #CONVERTFILES=build.xml
 

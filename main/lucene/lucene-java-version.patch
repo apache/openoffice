@@ -6,8 +6,8 @@
    <property name="javac.debug" value="on"/>
 -  <property name="javac.source" value="1.4"/>
 -  <property name="javac.target" value="1.4"/>
-+  <property name="javac.source" value="1.6"/>
-+  <property name="javac.target" value="1.6"/>
++  <property name="javac.source" value="1.8"/>
++  <property name="javac.target" value="1.8"/>
  
    <property name="javadoc.link" value="http://java.sun.com/j2se/1.4/docs/api/"/>
    <property name="javadoc.access" value="protected"/>
@@ -19,8 +19,8 @@
  
 -  <property name="javac.source" value="1.4" />
 -  <property name="javac.target" value="1.4" />
-+  <property name="javac.source" value="1.6" />
-+  <property name="javac.target" value="1.6" />
++  <property name="javac.source" value="1.8" />
++  <property name="javac.target" value="1.8" />
  	
    <property name="build.dir" location="../../../build/contrib/analyzers/common" />
    <property name="dist.dir" location="../../../dist/contrib/analyzers/common" />
@@ -32,8 +32,8 @@
  
 -  <property name="javac.source" value="1.4" />
 -  <property name="javac.target" value="1.4" />
-+  <property name="javac.source" value="1.6" />
-+  <property name="javac.target" value="1.6" />
++  <property name="javac.source" value="1.8" />
++  <property name="javac.target" value="1.8" />
  	
    <property name="build.dir" location="../../../build/contrib/analyzers/smartcn" />
    <property name="dist.dir" location="../../../dist/contrib/analyzers/smartcn" />

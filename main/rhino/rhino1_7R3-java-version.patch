@@ -1,0 +1,13 @@
+--- misc/build/rhino1_7R3/build.properties
++++ misc/build/rhino1_7R3/build.properties
+@@ -53,8 +53,8 @@
+ 
+ # compilation settings
+ debug: on
+-target-jvm: 1.5
+-source-level: 1.5
++target-jvm: 1.8
++source-level: 1.8
+ 
+ # jar generation settings
+ jar-compression: true

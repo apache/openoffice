@@ -55,7 +55,9 @@ TARFILE_NAME=stax-src-1.2.0
 TARFILE_MD5=980143f96b3f6ce45d2e4947da21a5e9
 TARFILE_ROOTDIR=src
 
-BUILD_ACTION=$(JAVAC) javax$/xml$/stream$/*.java && jar -cf stax-1.2.0.jar javax$/xml$/stream$/*.class javax$/xml$/stream$/events$/*.class javax$/xml$/stream$/util$/*.class
+# $(JAVA_TARGET_FLAG) pins bytecode to the Java 8 floor (settings.mk); this raw
+# javac call would otherwise emit bytecode for whatever the build JDK defaults to.
+BUILD_ACTION=$(JAVAC) $(JAVA_TARGET_FLAG) javax$/xml$/stream$/*.java && jar -cf stax-1.2.0.jar javax$/xml$/stream$/*.class javax$/xml$/stream$/events$/*.class javax$/xml$/stream$/util$/*.class
 
 OUT2CLASS=stax-1.2.0.jar
 .ENDIF			#  "$(BUILD_STAX)" != "YES"

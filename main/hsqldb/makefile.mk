@@ -49,17 +49,21 @@ CONVERTFILES=build$/build.xml \
 			src$/org$/hsqldb$/persist$/HsqlDatabaseProperties.java \
 			src$/org$/hsqldb$/Library.java
 
-PATCH_FILES=patches$/i121754.patch patches$/script.patch
+PATCH_FILES=patches$/i121754.patch patches$/script.patch patches$/runfinalizers.patch
+
+# hsqldb's build.xml javac tasks specify no source/target; pin them so bytecode
+# stays Java 8 compatible regardless of the (possibly much newer) build JDK.
+JAVAC_SRCTGT=-Dant.build.javac.source=1.8 -Dant.build.javac.target=1.8
 
 .IF "$(JAVACISGCJ)"=="yes"
 JAVA_HOME=
 .EXPORT : JAVA_HOME
-BUILD_ACTION=$(ANT) -Dbuild.label="build-$(RSCREVISION)" -Dbuild.compiler=gcj -f $(ANT_BUILDFILE) jar
+BUILD_ACTION=$(ANT) -Dbuild.label="build-$(RSCREVISION)" -Dbuild.compiler=gcj $(JAVAC_SRCTGT) -f $(ANT_BUILDFILE) jar
 .ELSE
 .IF "$(debug)"!=""
-BUILD_ACTION=$(ANT) -Dbuild.label="build-$(RSCREVISION)" -Dbuild.debug="on" -f $(ANT_BUILDFILE) jar
+BUILD_ACTION=$(ANT) -Dbuild.label="build-$(RSCREVISION)" -Dbuild.debug="on" $(JAVAC_SRCTGT) -f $(ANT_BUILDFILE) jar
 .ELSE
-BUILD_ACTION=$(ANT) -Dbuild.label="build-$(RSCREVISION)" -f $(ANT_BUILDFILE) jar
+BUILD_ACTION=$(ANT) -Dbuild.label="build-$(RSCREVISION)" $(JAVAC_SRCTGT) -f $(ANT_BUILDFILE) jar
 .ENDIF
 .ENDIF
 

@@ -144,10 +144,10 @@
 +    <property name="build.debuglevel" value="source,lines,vars"/>
 +    <property name="build.deprecation" value="true"/>
 +    <property name="build.optimize" value="true"/>
-+    <property name="build.compiler.source" value="1.4"/>
-+    <property name="build.compiler.target" value="1.4"/>
-+    <property name="build.s9api.compiler.source" value="1.5"/>
-+    <property name="build.s9api.compiler.target" value="1.5"/>    
++    <property name="build.compiler.source" value="1.8"/>
++    <property name="build.compiler.target" value="1.8"/>
++    <property name="build.s9api.compiler.source" value="1.8"/>
++    <property name="build.s9api.compiler.target" value="1.8"/>
 +    <property name="build.compress" value="false"/>
 +    
 +    <!-- following properties can be switched to determine whether to build from patch source
