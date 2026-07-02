@@ -149,13 +149,14 @@ def _impl(ctx):
         # Linker tool selection for the executable / dynamic-library link actions.
         # When the generate_pdb feature is enabled (debug builds that emit .pdb),
         # Bazel runs a modern MSVC link.exe (pdb_link_path, auto-discovered from a
-        # VS2017+/BuildTools install). The VC9 linker's single mspdbsrv cannot
-        # write PDBs in parallel (LNK1318 0x6BA; VC9 has no /FS), while a modern
-        # link.exe reads the VC9 /Z7 objects natively and its mspdbsrv handles
-        # parallel PDB writes — so debug builds run at full --jobs. (LLVM lld-link
-        # was rejected: it cannot emit PDBs from VC9-era CodeView.) Every other
-        # link stays on VC9 link.exe so shipped (non-PDB) binaries are produced by
-        # the same linker as before. Bazel selects the first tool whose
+        # VS2017+/BuildTools install), whose mspdbsrv writes PDBs in parallel so
+        # /DEBUG links run at full --jobs (VC9's single mspdbsrv cannot: LNK1318
+        # 0x6BA, no /FS). The modern linker consumes VC9 /Z7 objects only under
+        # /DEBUG:FASTLINK — its full CodeView→PDB *merge* (plain /DEBUG) access-
+        # violates on VC9-era CodeView (0xC0000005, e.g. //main/sal:sal3), so the
+        # generate_pdb feature passes /DEBUG:FASTLINK (see generate_pdb_linker_feature).
+        # Every other link stays on VC9 link.exe so shipped (non-PDB) binaries are
+        # produced by the same linker as before. Bazel selects the first tool whose
         # with_features set matches the active feature configuration.
         link_tools = [
             tool(
@@ -1384,14 +1385,22 @@ def _impl(ctx):
             flag_sets = [
                 flag_set(
                     actions = all_link_actions,
-                    # /DEBUG: emit the separate .pdb.
-                    # /SAFESEH:NO: this feature routes links through lld-link (see
-                    # link_tools), which — unlike VC9 link.exe — enforces /safeseh
-                    # on x86 and rejects data-only objects that carry no SEH table
-                    # (e.g. ICU's icudt49_dat.obj). SafeSEH is a ship-time mitigation
-                    # and these are non-distributed debug binaries, so disabling it
-                    # here is harmless and only affects the generate_pdb path.
-                    flag_groups = [flag_group(flags = ["/DEBUG", "/SAFESEH:NO"])],
+                    # /DEBUG:FASTLINK — not plain /DEBUG (= /DEBUG:FULL). This feature
+                    # routes links through the modern VS2017+/BuildTools link.exe (see
+                    # link_tools), whose full CodeView→PDB *merge* access-violates
+                    # (0xC0000005) on the VC9-era CodeView emitted by VC9 cl.exe's /Z7
+                    # objects (e.g. //main/sal:sal3). FASTLINK skips that merge and
+                    # emits a partial .pdb that references the /Z7 debug info left in
+                    # the .obj/.lib under bazel-out — fine for on-machine debugging of
+                    # these non-distributed debug binaries. VC9 link.exe is the only
+                    # linker that can produce a full standalone PDB from these objects,
+                    # but it cannot write PDBs in parallel (LNK1318 0x6BA, no /FS).
+                    # /SAFESEH:NO: the modern linker — unlike VC9 link.exe — enforces
+                    # /safeseh on x86 and rejects data-only objects that carry no SEH
+                    # table (e.g. ICU's icudt49_dat.obj). SafeSEH is a ship-time
+                    # mitigation and these are non-distributed debug binaries, so
+                    # disabling it here is harmless and only affects the generate_pdb path.
+                    flag_groups = [flag_group(flags = ["/DEBUG:FASTLINK", "/SAFESEH:NO"])],
                 ),
             ],
         )
