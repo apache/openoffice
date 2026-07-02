@@ -25,6 +25,7 @@
 #include "precompiled_filter.hxx"
 
 #include <string.h>
+#include <math.h>
 #include <dxfreprd.hxx>
 
 
@@ -231,6 +232,43 @@ void DXFRepresentation::ReadHeader(DXFGroupReader & rDGR)
 }
 
 
+// Approximate the world-space extent of a single line of text and add it to
+// the bounding box, so labels sitting near the drawing edge are not cropped.
+// AOO renders TEXT/ATTRIB left-aligned on the baseline at the insertion point,
+// growing up and to the right (the justification codes are ignored by the
+// renderer, see DXF2GDIMetaFile::DrawTextEntity), so bound that rectangle,
+// rotated by the text angle. The per-character advance and descent are
+// deliberately generous fractions of the text height so the label never clips.
+static void UnionTextExtent(DXFBoundingBox & rBox, const DXFVector & rInsert,
+							double fHeight, double fXScale, double fRotAngle,
+							const char * pText)
+{
+	if (fHeight <= 0.0) {
+		rBox.Union(rInsert);
+		return;
+	}
+	if (fXScale <= 0.0)
+		fXScale = 1.0;
+
+	const size_t nLen = (pText != NULL) ? strlen(pText) : 0;
+	const double fWidth   = (double)nLen * 0.85 * fHeight * fXScale;
+	const double fAscent  = fHeight;
+	const double fDescent = 0.25 * fHeight;
+
+	const double fRad = fRotAngle * 3.14159265359 / 180.0;
+	const DXFVector aDir( cos(fRad),  sin(fRad), 0.0); // text direction
+	const DXFVector aUp (-sin(fRad),  cos(fRad), 0.0); // baseline normal (up)
+
+	for (int a = 0; a < 2; a++) {
+		const double fAlong = a ? fWidth : 0.0;
+		for (int b = 0; b < 2; b++) {
+			const double fPerp = b ? fAscent : -fDescent;
+			rBox.Union(rInsert + aDir * fAlong + aUp * fPerp);
+		}
+	}
+}
+
+
 void DXFRepresentation::CalcBoundingBox(const DXFEntities & rEntities,
 										DXFBoundingBox & rBox)
 {
@@ -291,8 +329,9 @@ void DXFRepresentation::CalcBoundingBox(const DXFEntities & rEntities,
 				break;
 			}
 			case DXF_TEXT: {
-				//const DXFTextEntity * pE = (DXFTextEntity*)pBE;
-				//???
+				const DXFTextEntity * pE = (DXFTextEntity*)pBE;
+				UnionTextExtent(rBox, pE->aP0, pE->fHeight, pE->fXScale,
+								pE->fRotAngle, pE->sText);
 				break;
 			}
 			case DXF_SHAPE: {
@@ -325,8 +364,9 @@ void DXFRepresentation::CalcBoundingBox(const DXFEntities & rEntities,
 				break;
 			}
 			case DXF_ATTRIB: {
-				//const DXFAttribEntity * pE = (DXFAttribEntity*)pBE;
-				//???
+				const DXFAttribEntity * pE = (DXFAttribEntity*)pBE;
+				UnionTextExtent(rBox, pE->aP0, pE->fHeight, pE->fXScale,
+								pE->fRotAngle, pE->sText);
 				break;
 			}
 			case DXF_VERTEX: {
@@ -373,8 +413,19 @@ void DXFRepresentation::CalcBoundingBox(const DXFEntities & rEntities,
 			}
 			case DXF_HATCH :
 				break;
-			case DXF_LWPOLYLINE :
+			case DXF_LWPOLYLINE : {
+				// LWPOLYLINE keeps its vertices inline in pP[] (not as
+				// separate VERTEX entities), so they must be unioned here
+				// or the drawing extent misses the polyline and the graphic
+				// is cropped. Walk the same [0,nCount) range that
+				// DrawLWPolyLineEntity renders.
+				const DXFLWPolyLineEntity * pE = (DXFLWPolyLineEntity*)pBE;
+				if (pE->pP != NULL) {
+					for (sal_Int32 i = 0; i < pE->nCount; i++)
+						rBox.Union(pE->pP[i]);
+				}
 				break;
+			}
 		}
 		pBE=pBE->pSucc;
 	}
