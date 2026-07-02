@@ -19,6 +19,11 @@ filegroup(
 cmake(
     name = "mariadb",
     lib_source = ":all_srcs",
+    # Drop the generate_pdb feature: it emits /DEBUG:FASTLINK for the native
+    # modern-linker path, but rules_foreign_cc links with VC9 link.exe, which
+    # predates FASTLINK (VS2015+) and fails LNK1117. External deps are Release
+    # and need no PDB, so keep that flag out of the generated CMake toolchain.
+    features = ["-generate_pdb"],
     cache_entries = {
         # No SSL required for the SDBC driver layer
         "WITH_OPENSSL": "OFF",

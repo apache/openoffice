@@ -22,6 +22,11 @@ filegroup(
 configure_make_variant(
     name = "ssl",
     visibility = ["//visibility:public"],
+    # Drop the generate_pdb feature: it emits /DEBUG:FASTLINK for the native
+    # modern-linker path, but rules_foreign_cc builds link with VC9 link.exe,
+    # which predates FASTLINK (VS2015+) and fails LNK1117. External deps are
+    # Release and need no PDB, so keep that flag out of their link flags.
+    features = ["-generate_pdb"],
     toolchain = "@rules_foreign_cc//toolchains:preinstalled_nmake_toolchain",
     lib_source = ":all_srcs",
     build_data = ["@strawberry-perl//:perl_exe"],
