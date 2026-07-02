@@ -105,7 +105,11 @@ CFLAGSEXCEPTIONS=-fexceptions -fno-enforce-eh-specs
 CFLAGS_NO_EXCEPTIONS=-fno-exceptions
 
 # -fpermissive should be removed as soon as possible
-CFLAGSCXX= -pipe $(ARCH_FLAGS) -std=gnu++98
+# C++11 is the lowest supported standard (matches the macOS floor).  Our old
+# code base still uses constructs deprecated in C++11 (notably std::auto_ptr and
+# dynamic exception specifications); those remain valid until C++17 and are kept
+# non-fatal via -Wno-error= below.
+CFLAGSCXX= -pipe $(ARCH_FLAGS) -std=gnu++11
 .IF "$(HAVE_GCC_VISIBILITY_FEATURE)" == "TRUE"
 CFLAGSCXX += -fvisibility-inlines-hidden
 .ENDIF # "$(HAVE_GCC_VISIBILITY_FEATURE)" == "TRUE"
@@ -139,7 +143,10 @@ CFLAGSWARNCXX=$(CFLAGSWARNCC) -Wshadow -Wno-ctor-dtor-privacy \
     -Wno-non-virtual-dtor
 CFLAGSWALLCC=$(CFLAGSWARNCC)
 CFLAGSWALLCXX=$(CFLAGSWARNCXX)
-CFLAGSWERRCC=-Werror
+# Keep -Werror, but do not let the C++11 dialect's deprecation/narrowing
+# warnings (std::auto_ptr, dynamic exception specs, braced-init narrowing) break
+# the build.  Mirrors the macOS handling in unxmacc.mk.
+CFLAGSWERRCC=-Werror -Wno-error=deprecated -Wno-error=deprecated-declarations -Wno-error=narrowing
 
 # Once all modules on this platform compile without warnings, set
 # COMPILER_WARN_ERRORS=TRUE here instead of setting MODULES_WITH_WARNINGS (see
