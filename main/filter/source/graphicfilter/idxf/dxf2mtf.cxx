@@ -586,24 +586,55 @@ void DXF2GDIMetaFile::DrawPolyLineEntity(const DXFPolyLineEntity & rE, const DXF
 
 void DXF2GDIMetaFile::DrawLWPolyLineEntity(const DXFLWPolyLineEntity & rE, const DXFTransform & rTransform )
 {
-	sal_Int32 i, nPolySize = rE.nCount;
-	if ( nPolySize && rE.pP )
+	const sal_Int32 nPolySize = rE.nCount;
+	if ( nPolySize <= 0 || rE.pP == NULL )
+		return;
+
+	double fW = rE.fConstantWidth;
+	if ( !SetLineAttribute( rE, rTransform.TransLineWidth( fW ) ) )
+		return;
+
+	const sal_Bool bClosed = ( rE.nFlags & 1 ) != 0;
+
+	if ( nPolySize <= 0xFFFF )
 	{
-		Polygon aPoly( (sal_uInt16)nPolySize);
-		for ( i = 0; i < nPolySize; i++ )
-		{
-			rTransform.Transform( rE.pP[ (sal_uInt16)i ], aPoly[ (sal_uInt16)i ] );
-		}
-		double fW = rE.fConstantWidth;
-		if ( SetLineAttribute( rE, rTransform.TransLineWidth( fW ) ) )
-		{
-			if ( ( rE.nFlags & 1 ) != 0 )
-				pVirDev->DrawPolygon( aPoly );
-			else
-				pVirDev->DrawPolyLine( aPoly );
-				// ####
-				//pVirDev->DrawPolyLine( aPoly, aDXFLineInfo );
-		}
+		// Fits in a single tools Polygon (which is indexed by sal_uInt16).
+		Polygon aPoly( (sal_uInt16)nPolySize );
+		for ( sal_Int32 i = 0; i < nPolySize; i++ )
+			rTransform.Transform( rE.pP[ i ], aPoly[ (sal_uInt16)i ] );
+		if ( bClosed )
+			pVirDev->DrawPolygon( aPoly );
+		else
+			pVirDev->DrawPolyLine( aPoly );
+		return;
+	}
+
+	// The DXF vertex count (group code 90) is a 32-bit value, but a tools Polygon
+	// holds at most 0xFFFF points. Render a larger polyline as a sequence of
+	// Polygon segments that overlap by one point, so the whole line is drawn
+	// without truncation and the stroke stays continuous. The source array pP is
+	// walked with the full 32-bit position; only the per-segment index is 16-bit.
+	const sal_Int32 nMaxChunk = 0xFFFF;
+	sal_Int32 nStart = 0;
+	while ( nStart + 1 < nPolySize )
+	{
+		sal_Int32 nEnd = nStart + nMaxChunk;
+		if ( nEnd > nPolySize )
+			nEnd = nPolySize;
+		const sal_uInt16 nChunk = (sal_uInt16)( nEnd - nStart );
+		Polygon aChunk( nChunk );
+		for ( sal_uInt16 j = 0; j < nChunk; j++ )
+			rTransform.Transform( rE.pP[ nStart + j ], aChunk[ j ] );
+		pVirDev->DrawPolyLine( aChunk );
+		nStart = nEnd - 1;   // next segment shares this segment's last point
+	}
+	if ( bClosed )
+	{
+		// Close the outline: last vertex back to the first.
+		Polygon aClose( 2 );
+		rTransform.Transform( rE.pP[ nPolySize - 1 ], aClose[ 0 ] );
+		rTransform.Transform( rE.pP[ 0 ],             aClose[ 1 ] );
+		pVirDev->DrawPolyLine( aClose );
 	}
 }
 
