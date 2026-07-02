@@ -146,6 +146,24 @@ def _impl(ctx):
         ]
 
     if _use_msvc_toolchain(ctx):
+        # Linker tool selection for the executable / dynamic-library link actions.
+        # When the generate_pdb feature is enabled (debug builds that emit .pdb),
+        # Bazel runs a modern MSVC link.exe (pdb_link_path, auto-discovered from a
+        # VS2017+/BuildTools install). The VC9 linker's single mspdbsrv cannot
+        # write PDBs in parallel (LNK1318 0x6BA; VC9 has no /FS), while a modern
+        # link.exe reads the VC9 /Z7 objects natively and its mspdbsrv handles
+        # parallel PDB writes — so debug builds run at full --jobs. (LLVM lld-link
+        # was rejected: it cannot emit PDBs from VC9-era CodeView.) Every other
+        # link stays on VC9 link.exe so shipped (non-PDB) binaries are produced by
+        # the same linker as before. Bazel selects the first tool whose
+        # with_features set matches the active feature configuration.
+        link_tools = [
+            tool(
+                path = ctx.attr.pdb_link_path,
+                with_features = [with_feature_set(features = ["generate_pdb"])],
+            ),
+            tool(path = ctx.attr.msvc_link_path),
+        ]
         cpp_link_nodeps_dynamic_library_action = action_config(
             action_name = ACTION_NAMES.cpp_link_nodeps_dynamic_library,
             implies = [
@@ -162,7 +180,7 @@ def _impl(ctx):
                 "has_configured_linker_path",
                 "def_file",
             ],
-            tools = [tool(path = ctx.attr.msvc_link_path)],
+            tools = link_tools,
         )
 
         cpp_link_static_library_action = action_config(
@@ -256,7 +274,7 @@ def _impl(ctx):
                 "msvc_env",
                 "no_stripping",
             ],
-            tools = [tool(path = ctx.attr.msvc_link_path)],
+            tools = link_tools,
         )
 
         cpp_link_dynamic_library_action = action_config(
@@ -275,7 +293,7 @@ def _impl(ctx):
                 "has_configured_linker_path",
                 "def_file",
             ],
-            tools = [tool(path = ctx.attr.msvc_link_path)],
+            tools = link_tools,
         )
 
         deps_scanner = "cpp-module-deps-scanner_not_found"
@@ -1366,7 +1384,14 @@ def _impl(ctx):
             flag_sets = [
                 flag_set(
                     actions = all_link_actions,
-                    flag_groups = [flag_group(flags = ["/DEBUG"])],
+                    # /DEBUG: emit the separate .pdb.
+                    # /SAFESEH:NO: this feature routes links through lld-link (see
+                    # link_tools), which — unlike VC9 link.exe — enforces /safeseh
+                    # on x86 and rejects data-only objects that carry no SEH table
+                    # (e.g. ICU's icudt49_dat.obj). SafeSEH is a ship-time mitigation
+                    # and these are non-distributed debug binaries, so disabling it
+                    # here is harmless and only affects the generate_pdb path.
+                    flag_groups = [flag_group(flags = ["/DEBUG", "/SAFESEH:NO"])],
                 ),
             ],
         )
@@ -1825,6 +1850,7 @@ This is only offered as a migration bridge for projects transitioning to rule-ba
         "msvc_lib_path": attr.string(default = "vc_installation_error.bat"),
         "msvc_link_path": attr.string(default = "vc_installation_error.bat"),
         "msvc_ml_path": attr.string(default = "vc_installation_error.bat"),
+        "pdb_link_path": attr.string(default = "vc_installation_error.bat"),
         "shorten_virtual_includes": attr.bool(default = False),
         "supports_parse_showincludes": attr.bool(),
         "target_libc": attr.string(),

@@ -1,6 +1,6 @@
 load("@rules_cc//cc/toolchains:cc_toolchain.bzl", "cc_toolchain")
 load(":windows_cc_toolchain_config.bzl", "cc_toolchain_config")
-load("@vs_config//:paths.bzl", _VS = "VS", _VC = "VC", _SDK = "SDK", _MSVC_TMP = "MSVC_TMP", _LINK_WRAPPER = "LINK_WRAPPER")
+load("@vs_config//:paths.bzl", _VS = "VS", _VC = "VC", _SDK = "SDK", _MSVC_TMP = "MSVC_TMP", _LINK_WRAPPER = "LINK_WRAPPER", _PDB_LINK = "PDB_LINK")
 
 # VS2008 x86 toolchain for Apache OpenOffice on Windows
 # Paths are configured via --repo_env=VS_PATH / --repo_env=SDK_PATH in user.bazelrc.
@@ -37,10 +37,16 @@ cc_toolchain_config(
     tool_bin_path  = _VC + "\\bin",
     msvc_cl_path   = _VC + "\\bin\\cl.exe",
     msvc_ml_path   = _VC + "\\bin\\ml.exe",
-    # Native cc_library/cc_binary links go through the mspdbsrv-endpoint wrapper
-    # (see vs_config_repo.bzl) so debug (/DEBUG) builds run parallel without
-    # LNK1318.  rules_foreign_cc still uses raw link.exe via the "ld" tool_path
-    # below (external libs build without /DEBUG, so no mspdbsrv contention).
+    # Link tool selection (see windows_cc_toolchain_config.bzl link_tools):
+    #  - generate_pdb builds (debug .pdb) link with a modern MSVC link.exe
+    #    (auto-discovered under VS_MODERN_PATH), whose mspdbsrv writes PDBs in
+    #    parallel — so /DEBUG links run at full --jobs without the VC9 LNK1318
+    #    mspdbsrv contention. It reads the VC9 /Z7 objects natively.
+    #  - all other links use VC9 link.exe (via the mspdbsrv-endpoint wrapper),
+    #    so shipped non-PDB binaries are produced by the same linker as before.
+    # rules_foreign_cc still uses raw link.exe via the "ld" tool_path below
+    # (external libs build without /DEBUG, so no mspdbsrv contention there).
+    pdb_link_path  = _PDB_LINK,
     msvc_link_path = _LINK_WRAPPER,
     msvc_lib_path  = _VC + "\\bin\\lib.exe",
     cxx_builtin_include_directories = [
