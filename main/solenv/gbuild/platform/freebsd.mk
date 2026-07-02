@@ -92,7 +92,7 @@ gb_CXXFLAGS := \
 	-fno-use-cxa-atexit \
 	-fvisibility-inlines-hidden \
 	-fvisibility=hidden \
-	-std=gnu++98 \
+	-std=gnu++11 \
 	-pipe
 ifeq ($(COM),CLANG)
 gb_CXXFLAGS += -DHAVE_STL_INCLUDE_PATH
@@ -101,8 +101,10 @@ gb_CXXFLAGS += -DBOOST_TR1_DISABLE_INCLUDE_NEXT -DBOOST_TR1_GCC_INCLUDE_PATH=c++
 endif
 
 ifneq ($(EXTERNAL_WARNINGS_NOT_ERRORS),TRUE)
-gb_CFLAGS_WERROR := -Werror
-gb_CXXFLAGS_WERROR := -Werror
+# C++11 deprecation/narrowing warnings (std::auto_ptr, dynamic exception specs,
+# braced-init narrowing) must not be fatal.  Mirrors macosx.mk.
+gb_CFLAGS_WERROR := -Werror -Wno-error=deprecated -Wno-error=deprecated-declarations -Wno-error=narrowing
+gb_CXXFLAGS_WERROR := -Werror -Wno-error=deprecated -Wno-error=deprecated-declarations -Wno-error=narrowing
 endif
 
 ifneq ($(strip $(SYSBASE)),)
