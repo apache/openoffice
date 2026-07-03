@@ -20,6 +20,16 @@
  *************************************************************/
 package com.sun.star.comp.sdbc;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import org.apache.openoffice.comp.sdbc.dbtools.comphelper.ResourceBasedEventLogger;
 import org.apache.openoffice.comp.sdbc.dbtools.util.StandardSQLState;
 
@@ -33,6 +43,17 @@ import com.sun.star.uno.AnyConverter;
 
 public class Tools {
     private static final int MAX_EXCEPTION_NESTING = 8;
+
+    private static final Logger LOGGER = Logger.getLogger(Tools.class.getName());
+
+    /**
+     * URL schemes that resolve to the local filesystem or the running JVM image.
+     *
+     * <p>jvmaccess/source/classpath.cxx enforces the same allow-list in C++ for
+     * the UNO bootstrap class path; keep the two in sync.</p>
+     */
+    private static final Set<String> LOCAL_PROTOCOLS =
+            Collections.unmodifiableSet(new HashSet<>(Arrays.asList("file", "jrt", "jmod")));
 
     public static SQLException toUnoException(Object source, Throwable throwable) {
         return toUnoException(source, throwable, 0);
@@ -127,5 +148,51 @@ public class Tools {
             }
         }
         return ret;
+    }
+
+    /**
+     * Appends a class path entry to the list of URLs used to build a class loader.
+     *
+     * <p>Only local entries or a jar: wrapping a local entry are added.
+     * A malformed or non-local entry is logged and skipped.</p>
+     *
+     * @param urls the list of class path URLs to append to
+     * @param url  the class path entry to parse and validate
+     */
+    public static void addClassPathURL(Collection<URL> urls, String url) {
+        URL javaURL;
+        String protocol;
+        try {
+            javaURL = new URL(url);
+            protocol = getEffectiveProtocol(javaURL);
+        } catch (MalformedURLException e) {
+            LOGGER.log(Level.WARNING, e, () -> "Skipping malformed class path entry: " + url);
+            return;
+        }
+        if (LOCAL_PROTOCOLS.contains(protocol)) {
+            LOGGER.fine(() -> "Adding class path entry: " + url);
+            urls.add(javaURL);
+        } else {
+            LOGGER.warning(() -> "Skipping non-local class path entry: " + url);
+        }
+    }
+
+    /**
+     * Returns the scheme that actually locates the resource.
+     *
+     * <p>Since {@code jar:} only wraps another URL, the scheme of that wrapped URL is returned.
+     * For any other URL its own scheme is returned.</p>
+     *
+     * @param url the class path URL to inspect
+     * @return the effective URL scheme
+     * @throws MalformedURLException if the wrapped jar: URL cannot be parsed
+     */
+    private static String getEffectiveProtocol(URL url) throws MalformedURLException {
+        if (!"jar".equals(url.getProtocol())) {
+            return url.getProtocol();
+        }
+        String path = url.getPath();
+        int separator = path.lastIndexOf("!/");
+        return new URL(separator == -1 ? path : path.substring(0, separator)).getProtocol();
     }
 }

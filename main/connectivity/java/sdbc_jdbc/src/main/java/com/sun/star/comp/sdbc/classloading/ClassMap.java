@@ -21,7 +21,6 @@
 package com.sun.star.comp.sdbc.classloading;
 
 import java.lang.ref.WeakReference;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLClassLoader;
 import java.util.ArrayList;
@@ -31,6 +30,8 @@ import java.util.List;
 import java.util.StringTokenizer;
 
 import org.apache.openoffice.comp.sdbc.dbtools.comphelper.CompHelper;
+
+import com.sun.star.comp.sdbc.Tools;
 
 import com.sun.star.lang.IllegalArgumentException;
 import com.sun.star.uno.RuntimeException;
@@ -69,7 +70,7 @@ public class ClassMap {
     private final LinkedList<ClassMapEntry> map = new LinkedList<>();
 
     public synchronized ClassLoaderAndClass loadClass(XComponentContext context, String classPath, String className)
-            throws MalformedURLException, ClassNotFoundException {
+            throws ClassNotFoundException {
 
         ClassLoader classLoader = null;
         Class<?> classObject = null;
@@ -113,7 +114,7 @@ public class ClassMap {
         return new ClassLoaderAndClass(classLoader, classObject);
     }
 
-    private static List<URL> translateToUrls(XComponentContext context, String classPath) throws MalformedURLException {
+    private static List<URL> translateToUrls(XComponentContext context, String classPath) {
         StringTokenizer tokenizer = new StringTokenizer(classPath, " ", false);
         ArrayList<URL> urls = new ArrayList<>();
         while (tokenizer.hasMoreTokens()) {
@@ -142,8 +143,8 @@ public class ClassMap {
                 CompHelper.disposeComponent(expUrl);
                 CompHelper.disposeComponent(macroExpander);
             }
-            URL javaURL = new URL(url);
-            urls.add(javaURL);
+            // Add local entries to classpath
+            Tools.addClassPathURL(urls, url);
         }
         return urls;
     }
