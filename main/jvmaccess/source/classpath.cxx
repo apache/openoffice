@@ -48,6 +48,26 @@ namespace {
 
 namespace css = ::com::sun::star;
 
+#if defined SOLAR_JAVA
+// URL schemes that resolve to the local file system or the running JVM image,
+// optionally wrapped in a jar: URL.
+//
+// com.sun.star.comp.sdbc.Tools enforces the same allow-list on the Java side;
+// keep the two in sync.
+bool isLocalClassPathUrl(::rtl::OUString const & url)
+{
+    return url.matchIgnoreAsciiCaseAsciiL(RTL_CONSTASCII_STRINGPARAM("file:"))
+        || url.matchIgnoreAsciiCaseAsciiL(RTL_CONSTASCII_STRINGPARAM("jrt:"))
+        || url.matchIgnoreAsciiCaseAsciiL(RTL_CONSTASCII_STRINGPARAM("jmod:"))
+        || url.matchIgnoreAsciiCaseAsciiL(
+               RTL_CONSTASCII_STRINGPARAM("jar:file:"))
+        || url.matchIgnoreAsciiCaseAsciiL(
+               RTL_CONSTASCII_STRINGPARAM("jar:jrt:"))
+        || url.matchIgnoreAsciiCaseAsciiL(
+               RTL_CONSTASCII_STRINGPARAM("jar:jmod:"));
+}
+#endif
+
 }
 
 void * ::jvmaccess::ClassPath::doTranslateToUrls(
@@ -92,6 +112,16 @@ void * ::jvmaccess::ClassPath::doTranslateToUrls(
                          + e.Message),
                         css::uno::Reference< css::uno::XInterface >());
                 }
+            }
+            // Add only local entries; a non-local one is logged and skipped.
+            if (!isLocalClassPathUrl(url))
+            {
+                OSL_TRACE(
+                    "jvmaccess::ClassPath: skipping non-local class path"
+                    " entry: %s",
+                    ::rtl::OUStringToOString(
+                        url, RTL_TEXTENCODING_ASCII_US).getStr());
+                continue;
             }
             jvalue arg;
             arg.l = env->NewString(
