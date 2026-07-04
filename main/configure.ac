@@ -19,7 +19,7 @@ dnl *  under the License.
 dnl *
 dnl * *************************************************************
 AC_REVISION( $Revision$ )
-AC_PREREQ([2.73])
+AC_PREREQ([2.72])
 AC_INIT
 echo "$@" >config.parms
 AC_ARG_WITH(dmake-path,
