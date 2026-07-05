@@ -659,7 +659,7 @@ static void readExtraFields( MemoryByteGrabber &rMemGrabber, sal_Int16 nLength, 
 	sal_Int16 nReadBytes = 0;
 	sal_Int8 n8;
 	rtl::OUString s;
-	while ( ( nLength - nReadBytes ) >= 2 ) {
+	while ( ( nLength - nReadBytes ) >= 4 ) {
 		rMemGrabber >> nHeaderID;
 		rMemGrabber >> nDataSize;
 		nReadBytes += 4;
