@@ -943,21 +943,32 @@ sal_Bool DXF2GDIMetaFile::Convert(const DXFRepresentation & rDXF, GDIMetaFile & 
 				fScale = 0;  // -Wall added this...
 			}
 			else {
+				// Leave a small margin around the drawing. The larger extent is
+				// scaled to fill the 10000-unit target exactly, so geometry that
+				// lies right on the extent (e.g. a drawing frame's outer line)
+				// would otherwise sit precisely on the fit boundary and be
+				// clipped. This surfaced once issue 58347 made the bounding box
+				// a tight fit to the geometry; the margin keeps every edge inside
+				// the fitted area (symmetric, so all four sides get breathing room).
+				const double fMargin =
+					(fWidth>fHeight ? fWidth : fHeight) * 0.01;
+				const double fFitWidth  = fWidth  + 2.0*fMargin;
+				const double fFitHeight = fHeight + 2.0*fMargin;
 //				if (fWidth<500.0 || fHeight<500.0 || fWidth>32767.0 || fHeight>32767.0) {
-					if (fWidth>fHeight)
-						fScale=10000.0/fWidth;
+					if (fFitWidth>fFitHeight)
+						fScale=10000.0/fFitWidth;
 					else
-						fScale=10000.0/fHeight;
+						fScale=10000.0/fFitHeight;
 //				}
 //				else
 //					fScale=1.0;
 				aTransform=DXFTransform(fScale,-fScale,fScale,
-										DXFVector(-pDXF->aBoundingBox.fMinX*fScale,
-												   pDXF->aBoundingBox.fMaxY*fScale,
+										DXFVector((fMargin-pDXF->aBoundingBox.fMinX)*fScale,
+												  (pDXF->aBoundingBox.fMaxY+fMargin)*fScale,
 												  -pDXF->aBoundingBox.fMinZ*fScale));
+				aPrefSize.Width() =(long)(fFitWidth*fScale+1.5);
+				aPrefSize.Height()=(long)(fFitHeight*fScale+1.5);
 			}
-			aPrefSize.Width() =(long)(fWidth*fScale+1.5);
-			aPrefSize.Height()=(long)(fHeight*fScale+1.5);
 		}
 	}
 	else {

@@ -177,8 +177,23 @@ sal_Bool DXFRepresentation::Read( SvStream & rIStream, sal_uInt16 nMinPercent, s
 
 	delete pDGR;
 
-	if (bRes==sal_True && aBoundingBox.bEmpty==sal_True)
-		CalcBoundingBox(aEntities,aBoundingBox);
+	if (bRes==sal_True)
+	{
+		// The header $EXTMIN/$EXTMAX that ReadHeader collected into aBoundingBox
+		// are written by AutoCAD from the current view/regen state, not from a
+		// tight geometry fit, so they drift with the zoom level in effect when
+		// the file was saved (issue 58347: same drawing, different zoom, wrong
+		// import scale). Measure the real geometry extent and use that for the
+		// page-fit scaling instead. CalcBoundingBox now measures every entity
+		// type DrawEntities actually renders (HATCH included), so a non-empty
+		// geometry box is authoritative. The header extents are kept only as a
+		// last-resort fallback for the degenerate case where nothing measurable
+		// was drawn at all (empty geometry box).
+		DXFBoundingBox aGeometryBox;
+		CalcBoundingBox(aEntities,aGeometryBox);
+		if (aGeometryBox.bEmpty==sal_False)
+			aBoundingBox=aGeometryBox;
+	}
 
 	return bRes;
 }
@@ -335,8 +350,11 @@ void DXFRepresentation::CalcBoundingBox(const DXFEntities & rEntities,
 				break;
 			}
 			case DXF_SHAPE: {
-				//const DXFShapeEntity * pE = (DXFShapeEntity*)pBE;
-				//???
+				// SHAPE is not rendered (DrawEntities' dispatch has no case for
+				// it, so DrawEntities falls through to default:break), therefore
+				// it deliberately does not contribute to the extent — measuring
+				// invisible geometry would only reserve empty margin and shrink
+				// the visible drawing on the page.
 				break;
 			}
 			case DXF_INSERT: {
@@ -359,8 +377,10 @@ void DXFRepresentation::CalcBoundingBox(const DXFEntities & rEntities,
 				break;
 			}
 			case DXF_ATTDEF: {
-				//const DXFAttDefEntity * pE = (DXFAttDefEntity*)pBE;
-				//???
+				// ATTDEF (attribute definition) is likewise not rendered by
+				// DrawEntities, so — like SHAPE — it is intentionally left out
+				// of the extent to stay consistent with what actually gets
+				// drawn.
 				break;
 			}
 			case DXF_ATTRIB: {
@@ -402,8 +422,10 @@ void DXFRepresentation::CalcBoundingBox(const DXFEntities & rEntities,
 				break;
 			}
 			case DXF_POLYLINE: {
-				//const DXFAttribEntity * pE = (DXFAttribEntity*)pBE;
-				//???
+				// The old-style POLYLINE header carries no coordinates itself;
+				// its geometry lives in the VERTEX entities that follow it in
+				// the entity list (each handled by the DXF_VERTEX case above),
+				// so there is nothing to union here.
 				break;
 			}
 			case DXF_SEQEND: {
@@ -411,8 +433,40 @@ void DXFRepresentation::CalcBoundingBox(const DXFEntities & rEntities,
 				//???
 				break;
 			}
-			case DXF_HATCH :
+			case DXF_HATCH : {
+				// HATCH is rendered (DrawHatchEntity), so its extent has to be
+				// measured or a hatch reaching past the rest of the drawing gets
+				// cropped. Union exactly the boundary geometry the renderer
+				// actually draws: the points of a polyline boundary path, and
+				// the endpoints of straight (type 1) edges. Circular-arc,
+				// elliptical-arc and spline edges are NOT drawn by
+				// DrawHatchEntity (their code is commented out / empty), so they
+				// are intentionally not unioned here — matching the render.
+				const DXFHatchEntity * pE = (DXFHatchEntity*)pBE;
+				for (sal_Int32 nPath = 0;
+					 pE->pBoundaryPathData != NULL && nPath < pE->nBoundaryPathCount;
+					 nPath++)
+				{
+					const DXFBoundaryPathData & rPath = pE->pBoundaryPathData[nPath];
+					if (rPath.bIsPolyLine == sal_True) {
+						if (rPath.pP != NULL) {
+							for (sal_Int32 i = 0; i < rPath.nPointCount; i++)
+								rBox.Union(rPath.pP[i]);
+						}
+					}
+					else {
+						for (size_t i = 0; i < rPath.aEdges.size(); i++) {
+							const DXFEdgeType * pEdge = rPath.aEdges[i];
+							if (pEdge != NULL && pEdge->nEdgeType == 1) {
+								const DXFEdgeTypeLine * pLine = (DXFEdgeTypeLine*)pEdge;
+								rBox.Union(pLine->aStartPoint);
+								rBox.Union(pLine->aEndPoint);
+							}
+						}
+					}
+				}
 				break;
+			}
 			case DXF_LWPOLYLINE : {
 				// LWPOLYLINE keeps its vertices inline in pP[] (not as
 				// separate VERTEX entities), so they must be unioned here
