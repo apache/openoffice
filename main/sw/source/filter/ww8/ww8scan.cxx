@@ -28,6 +28,7 @@
 
 #include <functional>
 #include <algorithm>
+#include <stdexcept>
 
 #include <string.h>         // memset()
 #include <rtl/tencinfo.h>
