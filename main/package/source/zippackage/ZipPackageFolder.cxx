@@ -674,7 +674,7 @@ bool ZipPackageFolder::saveChild( const ::rtl::OUString &rShortName, const Conte
             if ( rInfo.pStream->IsEncrypted() )
                 rInfo.pStream->setSize( nOwnStreamOrigSize );
 
-            rInfo.pStream->aEntry.nFileDataOffset = rInfo.pStream->aEntry.nFileHeaderOffset;
+            rInfo.pStream->aEntry.nFileDataOffset = -1;
         }
     }
 
