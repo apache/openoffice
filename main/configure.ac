@@ -4140,9 +4140,12 @@ elif test -n "$with_system_python" -o -n "$with_system_libs" && \
    python_version=`$PYTHON -c "import sysconfig; print(sysconfig.get_config_var('VERSION'));"`
    # Python 3.8 and later distinguish building Python modules from linking to the libpython:
    # (https://bugs.python.org/issue36721)
-   if test "$python_version" -lt "3.8"; then
+   # We cannot use test(1) because Python version numbers are floats
+   if $PYTHON -c "import sys; v = sys.version_info; g = ((v.major < 3) or ((v.major == 3) and (v.minor < 8))); sys.exit(not g)"; then
+       # < 3.8
        PKG_CHECK_MODULES(PYTHON, python-$python_version, PYTHON_PC="TRUE", PYTHON_PC="" )
    else
+       # >= 3.8
        PKG_CHECK_MODULES(PYTHON, python-$python_version-embed, PYTHON_PC="TRUE", PYTHON_PC="" )
    fi
    if test "$PYTHON_PC" != "TRUE"; then
