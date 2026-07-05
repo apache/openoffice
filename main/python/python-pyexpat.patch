@@ -1,0 +1,11 @@
+--- misc/Python-3.11.15/Modules/Setup	2026-03-03 01:52:57.000000000 +0100
++++ misc/build/Python-3.11.15/Modules/Setup	2026-07-04 12:51:02.908154677 +0200
+@@ -159,7 +159,7 @@
+ 
+ # XML
+ #_elementtree _elementtree.c
+-#pyexpat pyexpat.c
++pyexpat pyexpat.c
+ 
+ # hashing builtins
+ #_blake2 _blake2/blake2module.c _blake2/blake2b_impl.c _blake2/blake2s_impl.c

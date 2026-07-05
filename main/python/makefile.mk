@@ -45,6 +45,7 @@ TARFILE_NAME=Python-$(PYVERSION)
 TARFILE_MD5=57f84cbd92d478ceff55217d88a07ded
 PATCH_FILES=\
 	python-md5.patch \
+	python-pyexpat.patch \
 	python-solver-before-std.patch \
 	python-$(PYVERSION)-sysbase.patch \
 	python-$(PYVERSION)-nohardlink.patch
