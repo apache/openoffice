@@ -594,8 +594,8 @@ void DXF2GDIMetaFile::DrawPolyLineEntity(const DXFPolyLineEntity & rE, const DXF
 
 void DXF2GDIMetaFile::DrawLWPolyLineEntity(const DXFLWPolyLineEntity & rE, const DXFTransform & rTransform )
 {
-	const sal_Int32 nPolySize = rE.nCount;
-	if ( nPolySize <= 0 || rE.pP == NULL )
+	const sal_Int32 nVtxCount = rE.nCount;
+	if ( nVtxCount <= 0 || rE.pP == NULL )
 		return;
 
 	double fW = rE.fConstantWidth;
@@ -604,12 +604,66 @@ void DXF2GDIMetaFile::DrawLWPolyLineEntity(const DXFLWPolyLineEntity & rE, const
 
 	const sal_Bool bClosed = ( rE.nFlags & 1 ) != 0;
 
+	// Build the outline in device space, expanding any segment that carries a
+	// non-zero bulge into an arc. In DXF a bulge is tan(sweep/4), so bulge 1.0
+	// is a 180 degree arc; a circle is commonly stored as two bulged segments
+	// (e.g. Eagle CAD). Straight segments (bulge 0) contribute just the vertex.
+	DXFPointArray aPtAry;
+	Point aPt;
+	for ( sal_Int32 i = 0; i < nVtxCount; i++ )
+	{
+		rTransform.Transform( rE.pP[ i ], aPt );
+		aPtAry.push_back( aPt );
+
+		sal_Int32 iNext = i + 1;
+		if ( iNext >= nVtxCount )
+		{
+			if ( !bClosed ) break;   // open: no segment after the last vertex
+			iNext = 0;               // closed: last vertex arcs back to the first
+		}
+
+		const double fBulge = ( rE.pBulge != NULL ) ? rE.pBulge[ i ] : 0.0;
+		if ( fBulge != 0.0 )
+		{
+			const DXFVector & rS = rE.pP[ i ];
+			const DXFVector & rEnd = rE.pP[ iNext ];
+			// Arc centre from the bulge (cotangent form): the centre lies on the
+			// chord's perpendicular bisector, offset by cot(sweep/2)/2 * chord.
+			const double fCot = 0.5 * ( 1.0 / fBulge - fBulge );
+			const double fCx = 0.5 * ( ( rS.fx + rEnd.fx ) + fCot * ( rS.fy - rEnd.fy ) );
+			const double fCy = 0.5 * ( ( rS.fy + rEnd.fy ) + fCot * ( rEnd.fx - rS.fx ) );
+			const double fRx = rS.fx - fCx;
+			const double fRy = rS.fy - fCy;
+			const double fRadius = sqrt( fRx * fRx + fRy * fRy );
+			const double fStartAng = atan2( fRy, fRx );
+			const double fSweep = 4.0 * atan( fBulge );   // signed: >0 = CCW
+			sal_Int32 nArcPoints = (sal_Int32)( fabs( fSweep ) / ( 2 * 3.14159265359 )
+												* (double)OptPointsPerCircle + 0.5 );
+			// Emit the interior arc samples; the start vertex is already pushed
+			// and the end vertex is pushed as the next loop's leading vertex.
+			for ( sal_Int32 k = 1; k < nArcPoints; k++ )
+			{
+				const double fAng = fStartAng + fSweep * (double)k / (double)nArcPoints;
+				rTransform.Transform(
+					DXFVector( fCx + fRadius * cos( fAng ),
+							   fCy + fRadius * sin( fAng ),
+							   rS.fz ),
+					aPt );
+				aPtAry.push_back( aPt );
+			}
+		}
+	}
+
+	const sal_Int32 nPolySize = (sal_Int32)aPtAry.size();
+	if ( nPolySize < 2 )
+		return;
+
 	if ( nPolySize <= 0xFFFF )
 	{
 		// Fits in a single tools Polygon (which is indexed by sal_uInt16).
 		Polygon aPoly( (sal_uInt16)nPolySize );
 		for ( sal_Int32 i = 0; i < nPolySize; i++ )
-			rTransform.Transform( rE.pP[ i ], aPoly[ (sal_uInt16)i ] );
+			aPoly[ (sal_uInt16)i ] = aPtAry[ i ];
 		if ( bClosed )
 			pVirDev->DrawPolygon( aPoly );
 		else
@@ -617,11 +671,9 @@ void DXF2GDIMetaFile::DrawLWPolyLineEntity(const DXFLWPolyLineEntity & rE, const
 		return;
 	}
 
-	// The DXF vertex count (group code 90) is a 32-bit value, but a tools Polygon
-	// holds at most 0xFFFF points. Render a larger polyline as a sequence of
-	// Polygon segments that overlap by one point, so the whole line is drawn
-	// without truncation and the stroke stays continuous. The source array pP is
-	// walked with the full 32-bit position; only the per-segment index is 16-bit.
+	// The tessellated outline can exceed the 0xFFFF points a tools Polygon holds.
+	// Render it as a sequence of Polygon segments that overlap by one point, so
+	// the whole line is drawn without truncation and the stroke stays continuous.
 	const sal_Int32 nMaxChunk = 0xFFFF;
 	sal_Int32 nStart = 0;
 	while ( nStart + 1 < nPolySize )
@@ -632,16 +684,16 @@ void DXF2GDIMetaFile::DrawLWPolyLineEntity(const DXFLWPolyLineEntity & rE, const
 		const sal_uInt16 nChunk = (sal_uInt16)( nEnd - nStart );
 		Polygon aChunk( nChunk );
 		for ( sal_uInt16 j = 0; j < nChunk; j++ )
-			rTransform.Transform( rE.pP[ nStart + j ], aChunk[ j ] );
+			aChunk[ j ] = aPtAry[ nStart + j ];
 		pVirDev->DrawPolyLine( aChunk );
 		nStart = nEnd - 1;   // next segment shares this segment's last point
 	}
 	if ( bClosed )
 	{
-		// Close the outline: last vertex back to the first.
+		// Close the outline: last point back to the first.
 		Polygon aClose( 2 );
-		rTransform.Transform( rE.pP[ nPolySize - 1 ], aClose[ 0 ] );
-		rTransform.Transform( rE.pP[ 0 ],             aClose[ 1 ] );
+		aClose[ 0 ] = aPtAry[ nPolySize - 1 ];
+		aClose[ 1 ] = aPtAry[ 0 ];
 		pVirDev->DrawPolyLine( aClose );
 	}
 }

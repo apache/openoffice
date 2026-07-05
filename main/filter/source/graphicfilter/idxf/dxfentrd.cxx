@@ -422,7 +422,8 @@ DXFLWPolyLineEntity::DXFLWPolyLineEntity() :
 	fConstantWidth( 0.0 ),
 	fStartWidth( 0.0 ),
 	fEndWidth( 0.0 ),
-	pP( NULL )
+	pP( NULL ),
+	pBulge( NULL )
 {
 }
 
@@ -438,6 +439,9 @@ void DXFLWPolyLineEntity::EvaluateGroup( DXFGroupReader & rDGR )
 				try
 				{
 					pP = new DXFVector[ nCount ];
+					pBulge = new double[ nCount ];
+					for ( sal_Int32 i = 0; i < nCount; i++ )
+						pBulge[ i ] = 0.0;
 				}
 				catch (::std::bad_alloc)
 				{
@@ -464,6 +468,14 @@ void DXFLWPolyLineEntity::EvaluateGroup( DXFGroupReader & rDGR )
 				pP[ nIndex++ ].fy = rDGR.GetF();
 		}
 		break;
+		case 42:
+		{
+			// per-vertex bulge; follows the 10/20 pair of the vertex it
+			// belongs to (nIndex has already advanced past that vertex).
+			if ( pBulge && ( nIndex > 0 ) && ( nIndex <= nCount ) )
+				pBulge[ nIndex - 1 ] = rDGR.GetF();
+		}
+		break;
 		default: DXFBasicEntity::EvaluateGroup(rDGR);
 	}
 }
@@ -471,6 +483,7 @@ void DXFLWPolyLineEntity::EvaluateGroup( DXFGroupReader & rDGR )
 DXFLWPolyLineEntity::~DXFLWPolyLineEntity()
 {
 	delete[] pP;
+	delete[] pBulge;
 }
 
 //--------------------------DXFHatchEntity-------------------------------------

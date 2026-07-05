@@ -371,6 +371,7 @@ class DXFLWPolyLineEntity : public DXFBasicEntity
 		double		fEndWidth;		// 41
 
 		DXFVector*	pP;
+		double*		pBulge;			// 42 (per vertex; parallel to pP, 0.0 = straight segment)
 
 		DXFLWPolyLineEntity();
 		~DXFLWPolyLineEntity();
