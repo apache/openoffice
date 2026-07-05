@@ -132,15 +132,23 @@ DXFLineInfo DXF2GDIMetaFile::LTypeToDXFLineInfo(const char * sLineType)
 		}
 	}
 
-#if 0
-	if (aDXFLineInfo.DashCount > 0 && aDXFLineInfo.DashLen == 0.0)
-		aDXFLineInfo.DashLen ( 1 );
-	if (aDXFLineInfo.DotCount > 0 && aDXFLineInfo.DotLen() == 0.0)
-		aDXFLineInfo.SetDotLen( 1 );
-	if (aDXFLineInfo.GetDashCount > 0 || aDXFLineInfo.GetDotCount > 0)
-		if (aDXFLineInfo.GetDistance() == 0)
-			aDXFLineInfo.SetDistance( 1 );
-#endif
+	// A DXF pattern element of exactly 0.0 is a *dot* (a point), distinct from a
+	// positive-length dash (e.g. DOT2 = 0,-3.175). AutoCAD paints it as a small
+	// dot, but VCL has no round dot: LineInfo strokes every "on" run as a short
+	// segment, so a dot is just a very short dash. Rendered verbatim the length
+	// collapses to a sub-unit mark (Transform() only clamps it to 1/100mm) and the
+	// line came out invisible (issue 70275). Give a zero-length dot/dash a small
+	// model-unit length so it survives scaling; keep it a SMALL fraction of the
+	// gap (0.05) so it reads as a dot, not a dash. Done here in model units, not
+	// after scaling, so it tracks the drawing size. Only true 0.0 elements are
+	// adjusted — real authored dashes keep their length.
+	const double fDotOnFraction = 0.05;   // dot mark length as a fraction of the gap
+	if (aDXFLineInfo.fDistance != 0.0) {
+		if (aDXFLineInfo.nDotCount > 0 && aDXFLineInfo.fDotLen == 0.0)
+			aDXFLineInfo.fDotLen = aDXFLineInfo.fDistance * fDotOnFraction;
+		if (aDXFLineInfo.nDashCount > 0 && aDXFLineInfo.fDashLen == 0.0)
+			aDXFLineInfo.fDashLen = aDXFLineInfo.fDistance * fDotOnFraction;
+	}
 
 	return aDXFLineInfo;
 }
