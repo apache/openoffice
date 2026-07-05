@@ -53,7 +53,9 @@ enum DXFEntityType {
 	DXF_3DFACE,
 	DXF_DIMENSION,
 	DXF_LWPOLYLINE,
-	DXF_HATCH
+	DXF_HATCH,
+	DXF_ELLIPSE,
+	DXF_SPLINE
 };
 
 //------------------------------------------------------------------------------
@@ -491,6 +493,53 @@ class DXFHatchEntity : public DXFBasicEntity
 		virtual void EvaluateGroup( DXFGroupReader & rDGR );
 };
 
+
+//--------------------------Ellipse---------------------------------------------
+
+class DXFEllipseEntity : public DXFBasicEntity {
+
+public:
+
+	DXFVector aP0;   // 10,20,30  center
+	DXFVector aP1;   // 11,21,31  endpoint of the major axis, relative to center
+	double fRatio;   // 40        ratio of minor axis to major axis
+	double fStart;   // 41        start parameter (radians; 0 for a full ellipse)
+	double fEnd;     // 42        end parameter   (radians; 2*pi for a full ellipse)
+
+	DXFEllipseEntity();
+
+protected:
+
+	virtual void EvaluateGroup(DXFGroupReader & rDGR);
+};
+
+//--------------------------Spline----------------------------------------------
+
+class DXFSplineEntity : public DXFBasicEntity {
+
+public:
+
+	long nFlags;         // 70   bit 1=closed, 2=periodic, 4=rational, 8=planar
+	long nDegree;        // 71
+	long nKnotCount;     // 72
+	long nCtrlCount;     // 73
+	long nFitCount;      // 74
+
+	double *    pfKnots;      // 40        (nKnotCount entries)
+	DXFVector * pControlPts;  // 10,20,30  (nCtrlCount entries)
+
+	DXFSplineEntity();
+	~DXFSplineEntity();
+
+protected:
+
+	virtual void EvaluateGroup(DXFGroupReader & rDGR);
+
+private:
+
+	long nKnotIndex;
+	long nCtrlIndex;
+};
 
 //--------------------------Vertex----------------------------------------------
 

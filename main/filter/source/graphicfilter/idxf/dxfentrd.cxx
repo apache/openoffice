@@ -842,6 +842,98 @@ void DXFDimensionEntity::EvaluateGroup(DXFGroupReader & rDGR)
 
 //---------------------------- DXFEntites --------------------------------------
 
+//--------------------------DXFEllipseEntity------------------------------------
+
+DXFEllipseEntity::DXFEllipseEntity() : DXFBasicEntity(DXF_ELLIPSE)
+{
+	fRatio = 1.0;
+	fStart = 0.0;
+	fEnd   = 2*3.14159265359;
+}
+
+void DXFEllipseEntity::EvaluateGroup(DXFGroupReader & rDGR)
+{
+	switch (rDGR.GetG()) {
+		case 10: aP0.fx=rDGR.GetF(); break;
+		case 20: aP0.fy=rDGR.GetF(); break;
+		case 30: aP0.fz=rDGR.GetF(); break;
+		case 11: aP1.fx=rDGR.GetF(); break;
+		case 21: aP1.fy=rDGR.GetF(); break;
+		case 31: aP1.fz=rDGR.GetF(); break;
+		case 40: fRatio=rDGR.GetF(); break;
+		case 41: fStart=rDGR.GetF(); break;
+		case 42: fEnd=rDGR.GetF(); break;
+		default: DXFBasicEntity::EvaluateGroup(rDGR);
+	}
+}
+
+//--------------------------DXFSplineEntity-------------------------------------
+
+DXFSplineEntity::DXFSplineEntity() :
+	DXFBasicEntity(DXF_SPLINE),
+	nFlags(0),
+	nDegree(0),
+	nKnotCount(0),
+	nCtrlCount(0),
+	nFitCount(0),
+	pfKnots(NULL),
+	pControlPts(NULL),
+	nKnotIndex(0),
+	nCtrlIndex(0)
+{
+}
+
+DXFSplineEntity::~DXFSplineEntity()
+{
+	delete[] pfKnots;
+	delete[] pControlPts;
+}
+
+void DXFSplineEntity::EvaluateGroup(DXFGroupReader & rDGR)
+{
+	switch (rDGR.GetG()) {
+		case 70: nFlags  = rDGR.GetI(); break;
+		case 71: nDegree = rDGR.GetI(); break;
+		case 72:
+			nKnotCount = rDGR.GetI();
+			if ( rDGR.GetStatus() && nKnotCount > 0 ) {
+				try { pfKnots = new double[nKnotCount]; }
+				catch (::std::bad_alloc) { rDGR.SetError(); }
+			}
+			else if ( nKnotCount < 0 )
+				rDGR.SetError();
+			break;
+		case 73:
+			nCtrlCount = rDGR.GetI();
+			if ( rDGR.GetStatus() && nCtrlCount > 0 ) {
+				try { pControlPts = new DXFVector[nCtrlCount]; }
+				catch (::std::bad_alloc) { rDGR.SetError(); }
+			}
+			else if ( nCtrlCount < 0 )
+				rDGR.SetError();
+			break;
+		case 74: nFitCount = rDGR.GetI(); break;
+		case 40:
+			if ( pfKnots && nKnotIndex < nKnotCount )
+				pfKnots[nKnotIndex++] = rDGR.GetF();
+			break;
+		// control points are 3D (10/20/30); advance on the Z group
+		case 10:
+			if ( pControlPts && nCtrlIndex < nCtrlCount )
+				pControlPts[nCtrlIndex].fx = rDGR.GetF();
+			break;
+		case 20:
+			if ( pControlPts && nCtrlIndex < nCtrlCount )
+				pControlPts[nCtrlIndex].fy = rDGR.GetF();
+			break;
+		case 30:
+			if ( pControlPts && nCtrlIndex < nCtrlCount )
+				pControlPts[nCtrlIndex++].fz = rDGR.GetF();
+			break;
+		default: DXFBasicEntity::EvaluateGroup(rDGR);
+	}
+}
+
 void DXFEntities::Read(DXFGroupReader & rDGR)
 {
 	DXFBasicEntity * pE, * * ppSucc;
@@ -874,6 +966,8 @@ void DXFEntities::Read(DXFGroupReader & rDGR)
 		else if (strcmp(rDGR.GetS(),"3DFACE"	)==0) pE=new DXF3DFaceEntity;
 		else if (strcmp(rDGR.GetS(),"DIMENSION"	)==0) pE=new DXFDimensionEntity;
 		else if (strcmp(rDGR.GetS(),"HATCH"		)==0) pE=new DXFHatchEntity;
+		else if (strcmp(rDGR.GetS(),"ELLIPSE"	)==0) pE=new DXFEllipseEntity;
+		else if (strcmp(rDGR.GetS(),"SPLINE"	)==0) pE=new DXFSplineEntity;
 		else
 		{
 			do {

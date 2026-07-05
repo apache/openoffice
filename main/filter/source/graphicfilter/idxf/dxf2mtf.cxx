@@ -737,6 +737,80 @@ void DXF2GDIMetaFile::DrawHatchEntity(const DXFHatchEntity & rE, const DXFTransf
 	}
 }
 
+void DXF2GDIMetaFile::DrawEllipseEntity(const DXFEllipseEntity & rE, const DXFTransform & rTransform)
+{
+	if (SetLineAttribute(rE)==sal_False) return;
+
+	// Major axis vector (relative to centre) and the minor axis, which for the
+	// common planar case (extrusion 0,0,1) is ratio*(normal x major) =
+	// ratio*(-major.y, major.x, 0). A non-default extrusion is applied through
+	// rTransform by DrawEntities, so compute in the entity's own frame.
+	const DXFVector & aU = rE.aP1;
+	DXFVector aV(-aU.fy * rE.fRatio, aU.fx * rE.fRatio, 0.0);
+
+	double fSweep = rE.fEnd - rE.fStart;
+	while (fSweep <= 0.0)             fSweep += 2*3.14159265359;
+	while (fSweep >  2*3.14159265359) fSweep -= 2*3.14159265359;
+
+	sal_uInt16 nPoints = (sal_uInt16)( fSweep/(2*3.14159265359)*(double)OptPointsPerCircle + 0.5 );
+	if (nPoints<2) nPoints=2;
+
+	Polygon aPoly(nPoints);
+	for (sal_uInt16 i=0; i<nPoints; i++) {
+		double t = rE.fStart + fSweep*(double)i/(double)(nPoints-1);
+		rTransform.Transform( rE.aP0 + aU*cos(t) + aV*sin(t), aPoly[i] );
+	}
+	pVirDev->DrawPolyLine(aPoly);
+}
+
+
+void DXF2GDIMetaFile::DrawSplineEntity(const DXFSplineEntity & rE, const DXFTransform & rTransform)
+{
+	// Non-uniform B-spline, evaluated with de Boor's algorithm and drawn as a
+	// polyline. Rational (weighted) splines are treated as non-rational (the
+	// weights are ignored) — sufficient for the planar curves this targets.
+	if ( rE.pControlPts==NULL || rE.pfKnots==NULL ) return;
+	const long p = rE.nDegree;
+	const long n = rE.nCtrlCount - 1;
+	if ( p < 1 || n < p ) return;
+	if ( rE.nKnotCount != rE.nCtrlCount + p + 1 ) return;   // not a clamped B-spline
+	if ( SetLineAttribute(rE)==sal_False ) return;
+
+	const double * U = rE.pfKnots;
+	const double u0 = U[p];
+	const double u1 = U[n+1];
+	if ( u1 <= u0 ) return;
+
+	long nPoints = rE.nCtrlCount * 8;
+	if (nPoints < 2)    nPoints = 2;
+	if (nPoints > 2000) nPoints = 2000;
+
+	Polygon aPoly((sal_uInt16)nPoints);
+	DXFVector * d = new DXFVector[p+1];
+	for (long i=0; i<nPoints; i++) {
+		double u = u0 + (u1-u0)*(double)i/(double)(nPoints-1);
+		if (u >= u1) u = u1 - (u1-u0)*1e-9;   // stay inside the last knot span
+
+		// knot span k with U[k] <= u < U[k+1], clamped to [p, n]
+		long k = p;
+		while (k < n && u >= U[k+1]) k++;
+
+		long j, r;
+		for (j=0; j<=p; j++) d[j] = rE.pControlPts[k-p+j];
+		for (r=1; r<=p; r++) {
+			for (j=p; j>=r; j--) {
+				double fDenom = U[k+1+j-r] - U[k-p+j];
+				double a = (fDenom!=0.0) ? (u - U[k-p+j])/fDenom : 0.0;
+				d[j] = d[j-1]*(1.0-a) + d[j]*a;
+			}
+		}
+		rTransform.Transform(d[p], aPoly[(sal_uInt16)i]);
+	}
+	delete[] d;
+	pVirDev->DrawPolyLine(aPoly);
+}
+
+
 void DXF2GDIMetaFile::Draw3DFaceEntity(const DXF3DFaceEntity & rE, const DXFTransform & rTransform)
 {
 	sal_uInt16 nN,i;
@@ -847,6 +921,12 @@ void DXF2GDIMetaFile::DrawEntities(const DXFEntities & rEntities,
 				break;
 			case DXF_HATCH :
 				DrawHatchEntity((DXFHatchEntity&)*pE, *pT);
+				break;
+			case DXF_ELLIPSE:
+				DrawEllipseEntity((DXFEllipseEntity&)*pE,*pT);
+				break;
+			case DXF_SPLINE:
+				DrawSplineEntity((DXFSplineEntity&)*pE,*pT);
 				break;
 			case DXF_3DFACE:
 				Draw3DFaceEntity((DXF3DFaceEntity&)*pE,*pT);

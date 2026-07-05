@@ -105,6 +105,10 @@ private:
 
 	void DrawHatchEntity( const DXFHatchEntity & rE, const DXFTransform & rTransform );
 
+	void DrawEllipseEntity( const DXFEllipseEntity & rE, const DXFTransform & rTransform );
+
+	void DrawSplineEntity( const DXFSplineEntity & rE, const DXFTransform & rTransform );
+
 	void DrawEntities(const DXFEntities & rEntities,
 					  const DXFTransform & rTransform,
 					  sal_Bool bTopEntities);

@@ -496,6 +496,30 @@ void DXFRepresentation::CalcBoundingBox(const DXFEntities & rEntities,
 				}
 				break;
 			}
+			case DXF_ELLIPSE: {
+				// Conservative full-ellipse AABB (like ARC uses the full-circle
+				// box): centre +/- the axis-projected radii. Over-approximates a
+				// partial ellipse, which is fine for a bounding box.
+				const DXFEllipseEntity * pE = (DXFEllipseEntity*)pBE;
+				const DXFVector & aU = pE->aP1;
+				DXFVector aV(-aU.fy*pE->fRatio, aU.fx*pE->fRatio, 0.0);
+				double fRx = sqrt(aU.fx*aU.fx + aV.fx*aV.fx);
+				double fRy = sqrt(aU.fy*aU.fy + aV.fy*aV.fy);
+				DXFVector aC;
+				aE2W.Transform(pE->aP0, aC);
+				DXFVector aP=aC; aP.fx-=fRx; aP.fy-=fRy; rBox.Union(aP);
+				aP=aC; aP.fx+=fRx; aP.fy+=fRy; rBox.Union(aP);
+				break;
+			}
+			case DXF_SPLINE: {
+				// The control polygon's convex hull contains the B-spline curve,
+				// so unioning the control points bounds it (conservatively).
+				const DXFSplineEntity * pE = (DXFSplineEntity*)pBE;
+				if (pE->pControlPts != NULL)
+					for (long i = 0; i < pE->nCtrlCount; i++)
+						UnionOCS(rBox, aE2W, pE->pControlPts[i]);
+				break;
+			}
 		}
 		pBE=pBE->pSucc;
 	}
