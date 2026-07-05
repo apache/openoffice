@@ -1645,9 +1645,6 @@ sal_Int32 SwWW8ImplReader::MatchSdrBoxIntoFlyBoxItem(const Color& rLineColor,
         else
             nIdx = WW8_BordersSO::double5;// 180
     break;
-    // no line style is set
-    case (MSO_LineStyle)USHRT_MAX:
-        break;
     // erroneously not implemented line style is set
     default:
         ASSERT(sal_False, "eLineStyle is not (yet) implemented!");
