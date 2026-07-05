@@ -36,6 +36,13 @@
 #include "sal/types.h"
 #include "gtest/gtest.h"
 
+/* The ISCII Devanagari converter was removed for licensing reasons (its table
+   was derived from LGPL code; see #i119141), so RTL_TEXTENCODING_ISCII_DEVANAGARI
+   is currently unimplemented and has no converter.  The test data that exercises
+   it is kept below but compiled out.  Define this macro to re-enable those
+   checks once an Apache-licensed ISCII converter is reintroduced. */
+// #define TEST_ISCII_DEVANAGARI
+
 namespace {
 
 struct SingleByteCharSet {
@@ -1062,6 +1069,7 @@ TEST_F(Test, testSingleByte) {
                 0x0425,0x0418,0x0419,0x041A,0x041B,0x041C,0x041D,0x041E,
                 0x041F,0x042F,0x0420,0x0421,0x0422,0x0423,0x0416,0x0412,
                 0x042C,0x042B,0x0417,0x0428,0x042D,0x0429,0x0427,0x042A } },
+#ifdef TEST_ISCII_DEVANAGARI
             { RTL_TEXTENCODING_ISCII_DEVANAGARI,
               { 0x0000,0x0001,0x0002,0x0003,0x0004,0x0005,0x0006,0x0007,
                 0x0008,0x0009,0x000A,0x000B,0x000C,0x000D,0x000E,0x000F,
@@ -1095,6 +1103,7 @@ TEST_F(Test, testSingleByte) {
                 0x094D,0x093C,0x0964,0xFFFF,0xFFFF,0xFFFF,0xFFFF,0xFFFF,
                 0xFFFF,0x0966,0x0967,0x0968,0x0969,0x096A,0x096B,0x096C,
                 0x096D,0x096E,0x096F,0xFFFF,0xFFFF,0xFFFF,0xFFFF,0xFFFF } },
+#endif
             { RTL_TEXTENCODING_ADOBE_STANDARD,
               { 0xFFFF,0xFFFF,0xFFFF,0xFFFF,0xFFFF,0xFFFF,0xFFFF,0xFFFF,
                 0xFFFF,0xFFFF,0xFFFF,0xFFFF,0xFFFF,0xFFFF,0xFFFF,0xFFFF,
@@ -1178,7 +1187,7 @@ TEST_F(Test, testSingleByte) {
                 0x2738,0x2739,0x273A,0x273B,0x273C,0x273D,0x273E,0x273F,
 // 60
                 0x2740,0x2741,0x2742,0x2743,0x2744,0x2745,0x2746,0x2747,
-                0x2748,0x2749,0x274A,0x274B,0x27CF,0x274D,0x25A0,0x274F,
+                0x2748,0x2749,0x274A,0x274B,0x25CF,0x274D,0x25A0,0x274F,
                 0x2750,0x2751,0x2752,0x25B2,0x25BC,0x25C6,0x2756,0x25D7,
                 0x2758,0x2759,0x275A,0x275B,0x275C,0x275D,0x275E,0xFFFF,
 // 80
@@ -1194,7 +1203,7 @@ TEST_F(Test, testSingleByte) {
 // C0
                 0x2780,0x2781,0x2782,0x2783,0x2784,0x2785,0x2786,0x2787,
                 0x2788,0x2789,0x278A,0x278B,0x278C,0x278D,0x278E,0x278F,
-                0x2790,0x2791,0x2792,0x2793,0x2794,0x2795,0x2796,0x2797,
+                0x2790,0x2791,0x2792,0x2793,0x2794,0x2192,0x2194,0x2195,
                 0x2798,0x2799,0x279A,0x279B,0x279C,0x279D,0x279E,0x279F,
 // E0
                 0x27A0,0x27A1,0x27A2,0x27A3,0x27A4,0x27A5,0x27A6,0x27A7,
@@ -2775,7 +2784,10 @@ TEST_F(Test, testWindows) {
         { 0, RTL_TEXTENCODING_DONTKNOW, true },
         { 0, RTL_TEXTENCODING_UCS4, true },
         { 0, RTL_TEXTENCODING_UCS2, true },
-        { 0, RTL_TEXTENCODING_ISCII_DEVANAGARI, true }
+        // 57002 is the genuine Windows code page for ISCII Devanagari; the
+        // codepage<->encoding mapping is a fixed table independent of whether
+        // a converter is implemented (the converter was removed, see #i119141).
+        { 57002, RTL_TEXTENCODING_ISCII_DEVANAGARI, true }
     };
     for (std::size_t i = 0; i < sizeof data / sizeof data[0]; ++i) {
         OSL_ASSERT(data[i].codePage != 0 || data[i].reverse);
@@ -2832,8 +2844,10 @@ TEST_F(Test, testInfo) {
         { RTL_TEXTENCODING_IBM_861, RTL_TEXTENCODING_INFO_MIME, true },
         { RTL_TEXTENCODING_IBM_863, RTL_TEXTENCODING_INFO_MIME, true },
         { RTL_TEXTENCODING_IBM_865, RTL_TEXTENCODING_INFO_MIME, true },
+#ifdef TEST_ISCII_DEVANAGARI
         { RTL_TEXTENCODING_ISCII_DEVANAGARI, RTL_TEXTENCODING_INFO_ASCII, true },
         { RTL_TEXTENCODING_ISCII_DEVANAGARI, RTL_TEXTENCODING_INFO_MIME, false },
+#endif
         { RTL_TEXTENCODING_ADOBE_STANDARD, RTL_TEXTENCODING_INFO_ASCII, false },
         { RTL_TEXTENCODING_ADOBE_STANDARD, RTL_TEXTENCODING_INFO_MIME, true },
         { RTL_TEXTENCODING_ADOBE_STANDARD, RTL_TEXTENCODING_INFO_SYMBOL, false },
