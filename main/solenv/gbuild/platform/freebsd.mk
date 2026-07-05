@@ -145,6 +145,12 @@ gb_LinkTarget_LDFLAGS += \
 
 endif
 
+ifneq ($(HAVE_LD_UNDEFINED_VERSION),)
+gb_LinkTarget_LDFLAGS += \
+	-Wl,--undefined-version \
+
+endif
+
 ifneq ($(filter $(CPUNAME),INTEL X86_64),)
 gb_CFLAGS += -fstack-protector
 gb_CXXFLAGS += -fstack-protector

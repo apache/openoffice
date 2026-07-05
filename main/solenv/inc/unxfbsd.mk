@@ -182,6 +182,10 @@ LINKFLAGSRUNPATH_BOXT=-Wl,-z,origin -Wl,-rpath,\''$$ORIGIN'\'
 LINKFLAGSRUNPATH_NONE=
 LINKFLAGS=-Wl,-z,combreloc $(LDFLAGS) $(LINKFLAGSDEFS) $(LINKFLAGS_SYSBASE)
 
+.IF "$(HAVE_LD_UNDEFINED_VERSION)" == "TRUE"
+LINKFLAGS += -Wl,--undefined-version
+.ENDIF
+
 # linker flags for linking applications
 LINKFLAGSAPPGUI= -Wl,-export-dynamic -Wl,--noinhibit-exec \
       -Wl,-rpath-link,$(LB):$(SOLARLIBDIR):$(SYSBASE)/lib:$(SYSBASE)/usr/lib

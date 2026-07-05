@@ -227,6 +227,10 @@ LINKFLAGS += -Wl,--hash-style=both
 LINKFLAGS += -Wl,-zdynsort
 .ENDIF
 
+.IF "$(HAVE_LD_UNDEFINED_VERSION)" == "TRUE"
+LINKFLAGS += -Wl,--undefined-version
+.ENDIF
+
 # libraries for linking applications
 STDLIBGUIMT+=-Wl,--as-needed -ldl -lpthread -lm -Wl,--no-as-needed
 STDLIBCUIMT+=-Wl,--as-needed -ldl -lpthread -lm -Wl,--no-as-needed
