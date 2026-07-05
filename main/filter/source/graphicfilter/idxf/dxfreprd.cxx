@@ -247,6 +247,21 @@ void DXFRepresentation::ReadHeader(DXFGroupReader & rDGR)
 }
 
 
+// Map a single OCS point of an entity to WCS via its extrusion, then add it to
+// the bounding box. The renderer (DXF2GDIMetaFile::DrawEntities) applies the
+// same ECS->WCS transform per entity, so the extent has to be measured in WCS
+// as well — otherwise drawings that use a non-default (e.g. negative-Z)
+// extrusion come out mis-scaled and offset (issue 16564: PL1CAFE.dxf reaches
+// OCS X=-10.88 on mirrored polylines that actually render near WCS X=+10.88).
+static inline void UnionOCS(DXFBoundingBox & rBox, const DXFTransform & rE2W,
+							const DXFVector & rP)
+{
+	DXFVector aW;
+	rE2W.Transform(rP, aW);
+	rBox.Union(aW);
+}
+
+
 // Approximate the world-space extent of a single line of text and add it to
 // the bounding box, so labels sitting near the drawing edge are not cropped.
 // AOO renders TEXT/ATTRIB left-aligned on the baseline at the insertion point,
@@ -254,12 +269,15 @@ void DXFRepresentation::ReadHeader(DXFGroupReader & rDGR)
 // renderer, see DXF2GDIMetaFile::DrawTextEntity), so bound that rectangle,
 // rotated by the text angle. The per-character advance and descent are
 // deliberately generous fractions of the text height so the label never clips.
-static void UnionTextExtent(DXFBoundingBox & rBox, const DXFVector & rInsert,
+// rE2W maps the (OCS) text rectangle to WCS so text on an extruded entity is
+// measured where it is drawn.
+static void UnionTextExtent(DXFBoundingBox & rBox, const DXFTransform & rE2W,
+							const DXFVector & rInsert,
 							double fHeight, double fXScale, double fRotAngle,
 							const char * pText)
 {
 	if (fHeight <= 0.0) {
-		rBox.Union(rInsert);
+		UnionOCS(rBox, rE2W, rInsert);
 		return;
 	}
 	if (fXScale <= 0.0)
@@ -278,7 +296,7 @@ static void UnionTextExtent(DXFBoundingBox & rBox, const DXFVector & rInsert,
 		const double fAlong = a ? fWidth : 0.0;
 		for (int b = 0; b < 2; b++) {
 			const double fPerp = b ? fAscent : -fDescent;
-			rBox.Union(rInsert + aDir * fAlong + aUp * fPerp);
+			UnionOCS(rBox, rE2W, rInsert + aDir * fAlong + aUp * fPerp);
 		}
 	}
 }
@@ -289,63 +307,61 @@ void DXFRepresentation::CalcBoundingBox(const DXFEntities & rEntities,
 {
 	DXFBasicEntity * pBE=rEntities.pFirst;
 	while (pBE!=NULL) {
+		// The renderer builds an ECS->WCS transform from the entity's extrusion
+		// whenever it is not the default (DrawEntities checks fz != 1.0); measure
+		// through the same transform so the box is in WCS, not raw OCS.
+		DXFTransform aE2W;                        // identity by default
+		if (pBE->aExtrusion.fz != 1.0)
+			aE2W = DXFTransform(pBE->aExtrusion);
 		switch (pBE->eType) {
 			case DXF_LINE: {
 				const DXFLineEntity * pE = (DXFLineEntity*)pBE;
-				rBox.Union(pE->aP0);
-				rBox.Union(pE->aP1);
+				UnionOCS(rBox, aE2W, pE->aP0);
+				UnionOCS(rBox, aE2W, pE->aP1);
 				break;
 			}
 			case DXF_POINT: {
 				const DXFPointEntity * pE = (DXFPointEntity*)pBE;
-				rBox.Union(pE->aP0);
+				UnionOCS(rBox, aE2W, pE->aP0);
 				break;
 			}
 			case DXF_CIRCLE: {
 				const DXFCircleEntity * pE = (DXFCircleEntity*)pBE;
-				DXFVector aP;
-				aP=pE->aP0;
-				aP.fx-=pE->fRadius;
-				aP.fy-=pE->fRadius;
-				rBox.Union(aP);
-				aP=pE->aP0;
-				aP.fx+=pE->fRadius;
-				aP.fy+=pE->fRadius;
-				rBox.Union(aP);
+				// radius is invariant under the extrusion (a rotation/reflection),
+				// so map the centre to WCS and take +/-radius there.
+				DXFVector aC;
+				aE2W.Transform(pE->aP0, aC);
+				DXFVector aP=aC; aP.fx-=pE->fRadius; aP.fy-=pE->fRadius; rBox.Union(aP);
+				aP=aC; aP.fx+=pE->fRadius; aP.fy+=pE->fRadius; rBox.Union(aP);
 				break;
 			}
 			case DXF_ARC: {
 				const DXFArcEntity * pE = (DXFArcEntity*)pBE;
-				DXFVector aP;
-				aP=pE->aP0;
-				aP.fx-=pE->fRadius;
-				aP.fy-=pE->fRadius;
-				rBox.Union(aP);
-				aP=pE->aP0;
-				aP.fx+=pE->fRadius;
-				aP.fy+=pE->fRadius;
-				rBox.Union(aP);
+				DXFVector aC;
+				aE2W.Transform(pE->aP0, aC);
+				DXFVector aP=aC; aP.fx-=pE->fRadius; aP.fy-=pE->fRadius; rBox.Union(aP);
+				aP=aC; aP.fx+=pE->fRadius; aP.fy+=pE->fRadius; rBox.Union(aP);
 				break;
 			}
 			case DXF_TRACE: {
 				const DXFTraceEntity * pE = (DXFTraceEntity*)pBE;
-				rBox.Union(pE->aP0);
-				rBox.Union(pE->aP1);
-				rBox.Union(pE->aP2);
-				rBox.Union(pE->aP3);
+				UnionOCS(rBox, aE2W, pE->aP0);
+				UnionOCS(rBox, aE2W, pE->aP1);
+				UnionOCS(rBox, aE2W, pE->aP2);
+				UnionOCS(rBox, aE2W, pE->aP3);
 				break;
 			}
 			case DXF_SOLID: {
 				const DXFSolidEntity * pE = (DXFSolidEntity*)pBE;
-				rBox.Union(pE->aP0);
-				rBox.Union(pE->aP1);
-				rBox.Union(pE->aP2);
-				rBox.Union(pE->aP3);
+				UnionOCS(rBox, aE2W, pE->aP0);
+				UnionOCS(rBox, aE2W, pE->aP1);
+				UnionOCS(rBox, aE2W, pE->aP2);
+				UnionOCS(rBox, aE2W, pE->aP3);
 				break;
 			}
 			case DXF_TEXT: {
 				const DXFTextEntity * pE = (DXFTextEntity*)pBE;
-				UnionTextExtent(rBox, pE->aP0, pE->fHeight, pE->fXScale,
+				UnionTextExtent(rBox, aE2W, pE->aP0, pE->fHeight, pE->fXScale,
 								pE->fRotAngle, pE->sText);
 				break;
 			}
@@ -369,11 +385,11 @@ void DXFRepresentation::CalcBoundingBox(const DXFEntities & rEntities,
 				aP.fx=(aBox.fMinX-pB->aBasePoint.fx)*pE->fXScale+pE->aP0.fx;
 				aP.fy=(aBox.fMinY-pB->aBasePoint.fy)*pE->fYScale+pE->aP0.fy;
 				aP.fz=(aBox.fMinZ-pB->aBasePoint.fz)*pE->fZScale+pE->aP0.fz;
-				rBox.Union(aP);
+				UnionOCS(rBox, aE2W, aP);
 				aP.fx=(aBox.fMaxX-pB->aBasePoint.fx)*pE->fXScale+pE->aP0.fx;
 				aP.fy=(aBox.fMaxY-pB->aBasePoint.fy)*pE->fYScale+pE->aP0.fy;
 				aP.fz=(aBox.fMaxZ-pB->aBasePoint.fz)*pE->fZScale+pE->aP0.fz;
-				rBox.Union(aP);
+				UnionOCS(rBox, aE2W, aP);
 				break;
 			}
 			case DXF_ATTDEF: {
@@ -385,21 +401,21 @@ void DXFRepresentation::CalcBoundingBox(const DXFEntities & rEntities,
 			}
 			case DXF_ATTRIB: {
 				const DXFAttribEntity * pE = (DXFAttribEntity*)pBE;
-				UnionTextExtent(rBox, pE->aP0, pE->fHeight, pE->fXScale,
+				UnionTextExtent(rBox, aE2W, pE->aP0, pE->fHeight, pE->fXScale,
 								pE->fRotAngle, pE->sText);
 				break;
 			}
 			case DXF_VERTEX: {
 				const DXFVertexEntity * pE = (DXFVertexEntity*)pBE;
-				rBox.Union(pE->aP0);
+				UnionOCS(rBox, aE2W, pE->aP0);
 				break;
 			}
 			case DXF_3DFACE: {
 				const DXF3DFaceEntity * pE = (DXF3DFaceEntity*)pBE;
-				rBox.Union(pE->aP0);
-				rBox.Union(pE->aP1);
-				rBox.Union(pE->aP2);
-				rBox.Union(pE->aP3);
+				UnionOCS(rBox, aE2W, pE->aP0);
+				UnionOCS(rBox, aE2W, pE->aP1);
+				UnionOCS(rBox, aE2W, pE->aP2);
+				UnionOCS(rBox, aE2W, pE->aP3);
 				break;
 			}
 			case DXF_DIMENSION: {
@@ -414,11 +430,11 @@ void DXFRepresentation::CalcBoundingBox(const DXFEntities & rEntities,
 				aP.fx=aBox.fMinX-pB->aBasePoint.fx;
 				aP.fy=aBox.fMinY-pB->aBasePoint.fy;
 				aP.fz=aBox.fMinZ-pB->aBasePoint.fz;
-				rBox.Union(aP);
+				UnionOCS(rBox, aE2W, aP);
 				aP.fx=aBox.fMaxX-pB->aBasePoint.fx;
 				aP.fy=aBox.fMaxY-pB->aBasePoint.fy;
 				aP.fz=aBox.fMaxZ-pB->aBasePoint.fz;
-				rBox.Union(aP);
+				UnionOCS(rBox, aE2W, aP);
 				break;
 			}
 			case DXF_POLYLINE: {
@@ -451,7 +467,7 @@ void DXFRepresentation::CalcBoundingBox(const DXFEntities & rEntities,
 					if (rPath.bIsPolyLine == sal_True) {
 						if (rPath.pP != NULL) {
 							for (sal_Int32 i = 0; i < rPath.nPointCount; i++)
-								rBox.Union(rPath.pP[i]);
+								UnionOCS(rBox, aE2W, rPath.pP[i]);
 						}
 					}
 					else {
@@ -459,8 +475,8 @@ void DXFRepresentation::CalcBoundingBox(const DXFEntities & rEntities,
 							const DXFEdgeType * pEdge = rPath.aEdges[i];
 							if (pEdge != NULL && pEdge->nEdgeType == 1) {
 								const DXFEdgeTypeLine * pLine = (DXFEdgeTypeLine*)pEdge;
-								rBox.Union(pLine->aStartPoint);
-								rBox.Union(pLine->aEndPoint);
+								UnionOCS(rBox, aE2W, pLine->aStartPoint);
+								UnionOCS(rBox, aE2W, pLine->aEndPoint);
 							}
 						}
 					}
@@ -476,7 +492,7 @@ void DXFRepresentation::CalcBoundingBox(const DXFEntities & rEntities,
 				const DXFLWPolyLineEntity * pE = (DXFLWPolyLineEntity*)pBE;
 				if (pE->pP != NULL) {
 					for (sal_Int32 i = 0; i < pE->nCount; i++)
-						rBox.Union(pE->pP[i]);
+						UnionOCS(rBox, aE2W, pE->pP[i]);
 				}
 				break;
 			}
