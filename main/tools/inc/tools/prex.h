@@ -46,6 +46,10 @@ extern "C" {
 #include <X11/extensions/Xrender.h>
 #include <X11/XKBlib.h>
 
+#if defined __cplusplus
+}
+#endif
+
 typedef unsigned long Pixel;
 
 #undef  DestroyAll
