@@ -60,11 +60,15 @@ mkdir: %_DEST%\lib%_EXT%\python\python3.11\config
 ..\%__SRC%\misc\build\Python-3.11.15\Makefile %_DEST%\lib%_EXT%\python\python3.11\config\Makefile
 # TODO: _sysconfigdata filename is platform-mangled (e.g. _sysconfigdata__darwin_darwin.py on macOS,
 # _sysconfigdata__linux_x86_64-linux-gnu.py on Linux). Verify exact name from built tree.
-..\%__SRC%\misc\build\python-inst\lib\python3.11\_sysconfigdata*.py %_DEST%\lib%_EXT%\python\_sysconfigdata.py
+..\%__SRC%\misc\build\python-inst\lib\python3.11\_sysconfigdata__darwin_darwin.py %_DEST%\lib%_EXT%\python\_sysconfigdata.py
+..\%__SRC%\misc\build\python-inst\lib\python3.11\_sysconfigdata__linux_x86_64-linux-gnu.py %_DEST%\lib%_EXT%\python\_sysconfigdata.py
 ..\pyversion.mk %_DEST%\inc%_EXT%\pyversion.mk
 ..\pyversion_dmake.mk %_DEST%\inc%_EXT%\pyversion_dmake.mk
 
+mkdir: %_DEST%\inc%_EXT%\python\cpython
+
 ..\%__SRC%\misc\build\Python-3.11.15\Include\* %_DEST%\inc%_EXT%\python\*
+..\%__SRC%\misc\build\Python-3.11.15\Include\cpython\* %_DEST%\inc%_EXT%\python\cpython\*
 
 #unix ONLY !
 ..\%__SRC%\misc\build\python-inst\bin\python %_DEST%\bin%_EXT%\python
