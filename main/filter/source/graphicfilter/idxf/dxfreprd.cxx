@@ -337,10 +337,26 @@ void DXFRepresentation::CalcBoundingBox(const DXFEntities & rEntities,
 			}
 			case DXF_ARC: {
 				const DXFArcEntity * pE = (DXFArcEntity*)pBE;
-				DXFVector aC;
-				aE2W.Transform(pE->aP0, aC);
-				DXFVector aP=aC; aP.fx-=pE->fRadius; aP.fy-=pE->fRadius; rBox.Union(aP);
-				aP=aC; aP.fx+=pE->fRadius; aP.fy+=pE->fRadius; rBox.Union(aP);
+				// Measure the arc's SWEPT extent, not its full circle. A
+				// large-radius arc (nearly straight, common in CAD) has its
+				// centre far outside the drawing; unioning centre +/- radius
+				// blew the box up enormously and collapsed the real geometry
+				// (issue 122565). Sample along the sweep exactly as the renderer
+				// does (CCW from fStart by fdA, normalised to (0,360]) and map
+				// each point through the same ECS->WCS transform.
+				double fA1 = pE->fStart;
+				double fdA = pE->fEnd - fA1;
+				while (fdA>=360.0) fdA-=360.0;
+				while (fdA<=0.0)   fdA+=360.0;
+				sal_uInt16 nSeg = (sal_uInt16)(fdA/4.0 + 0.5);
+				if (nSeg<1) nSeg=1;
+				for (sal_uInt16 nA=0; nA<=nSeg; nA++) {
+					double fAng = 3.14159265359/180.0 *
+								  (fA1 + fdA*(double)nA/(double)nSeg);
+					UnionOCS(rBox, aE2W, pE->aP0 +
+							 DXFVector(pE->fRadius*cos(fAng),
+									   pE->fRadius*sin(fAng), 0.0));
+				}
 				break;
 			}
 			case DXF_TRACE: {
