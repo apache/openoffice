@@ -19,7 +19,7 @@ dnl *  under the License.
 dnl *
 dnl * *************************************************************
 AC_REVISION( $Revision$ )
-AC_PREREQ([2.73])
+AC_PREREQ([2.72])
 AC_INIT
 echo "$@" >config.parms
 AC_ARG_WITH(dmake-path,
@@ -2362,6 +2362,24 @@ if test "$_os" = "FreeBSD"; then
 	fi
     fi
     AC_SUBST(FBSD_GCC_RPATH)
+fi
+
+if test "$_os" = "Linux" -o "$_os" = "FreeBSD" -o "$_os" = "GNU"; then
+    AC_MSG_CHECKING( for --undefined-version linker support )
+    undefined_version_ldflags_save=$LDFLAGS
+    LDFLAGS="$LDFLAGS -Wl,--undefined-version"
+    AC_LINK_IFELSE([AC_LANG_PROGRAM([
+    #include <stdio.h>
+    ],[
+     printf ("hello world\n");
+    ])], HAVE_LD_UNDEFINED_VERSION=TRUE, HAVE_LD_UNDEFINED_VERSION=FALSE)
+    if test "z$HAVE_LD_UNDEFINED_VERSION" = "zTRUE"; then
+        AC_MSG_RESULT( found )
+    else
+        AC_MSG_RESULT( not found )
+    fi
+    LDFLAGS=$undefined_version_ldflags_save
+    AC_SUBST(HAVE_LD_UNDEFINED_VERSION)
 fi
 
 dnl ===================================================================

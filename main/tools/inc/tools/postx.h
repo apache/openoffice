@@ -24,9 +24,6 @@
 #ifndef _POSTX_H
 #define _POSTX_H
 
-#if defined __cplusplus
-}
-#endif
 
 /* X-Types */
 #undef Window
