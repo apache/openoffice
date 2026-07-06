@@ -26,6 +26,9 @@
 
 #include <string.h>
 #include <math.h>
+#include <tools/string.hxx>   // gsl_getSystemTextEncoding
+#include <rtl/tencinfo.h>     // rtl_getTextEncodingFromWindowsCodePage
+#include <rtl/string.h>       // rtl_str_compareIgnoreAsciiCase
 #include <dxfreprd.hxx>
 
 
@@ -136,7 +139,32 @@ void DXFPalette::SetColor(sal_uInt8 nIndex, sal_uInt8 nRed, sal_uInt8 nGreen, sa
 
 DXFRepresentation::DXFRepresentation()
 {
-	setTextEncoding(RTL_TEXTENCODING_IBM_437);
+	// Default text encoding for a DXF that neither declares a $DWGCODEPAGE nor
+	// receives an override from the caller (see GraphicImport / FilterConfigItem).
+	// The historic hard-coded IBM_437 (DOS OEM) is almost never right for a modern
+	// DXF and garbles any high-bit text (issue 99892). Prefer the system encoding,
+	// which usually matches the locale the file came from (e.g. a Russian machine
+	// -> MS_1251).
+	//
+	// BUT the system encoding is not necessarily a legacy 8-bit code page any more:
+	// on Windows with the "Use Unicode UTF-8 for worldwide language support" option
+	// GetACP() returns 65001, and on modern Linux the locale is UTF-8 as well, so
+	// the system encoding is RTL_TEXTENCODING_UTF8. Legacy DXF text predates UTF-8
+	// and is never encoded that way (test13.dxf: windows-1252 Ä/ü/ß on a UTF-8 host
+	// came out as artefacts), so decoding those bytes as UTF-8 fails. When the
+	// system encoding is Unicode/unknown, fall back to windows-1252 — the most
+	// common encoding for untagged DXF and AOO's usual Western default (cf. the
+	// msfilter legacy importers); other scripts come from an explicit $DWGCODEPAGE
+	// or the Phase B chooser.
+	// Precedence: file $DWGCODEPAGE > caller override > this default.
+	rtl_TextEncoding eDefault = gsl_getSystemTextEncoding();
+	if ( eDefault == RTL_TEXTENCODING_UTF8 ||
+	     eDefault == RTL_TEXTENCODING_UTF7 ||
+	     eDefault == RTL_TEXTENCODING_UCS2 ||
+	     eDefault == RTL_TEXTENCODING_UCS4 ||
+	     eDefault == RTL_TEXTENCODING_DONTKNOW )
+		eDefault = RTL_TEXTENCODING_MS_1252;
+	setTextEncoding(eDefault);
         setGlobalLineTypeScale(1.0);
 }
 
@@ -199,6 +227,45 @@ sal_Bool DXFRepresentation::Read( SvStream & rIStream, sal_uInt16 nMinPercent, s
 }
 
 
+// Map a DXF $DWGCODEPAGE value to an rtl text encoding.
+// The values AutoCAD writes are "ANSI_<cp>" (e.g. ANSI_1252, ANSI_1251),
+// "DOS<cp>" (e.g. DOS932, DOS850) or a few named ones ("MACINTOSH", "UTF8").
+// For the ANSI_/DOS_ forms the trailing number IS the Windows code page, so we
+// extract it and let rtl resolve it (covers the whole family in one line instead
+// of the old single ANSI_932 special case). Returns RTL_TEXTENCODING_DONTKNOW
+// when the value is empty/unrecognised so the caller can keep its current
+// (default or caller-supplied) encoding.
+static rtl_TextEncoding DXFCodePageToTextEncoding(const char * pCodePage)
+{
+	if (pCodePage==NULL || *pCodePage==0)
+		return RTL_TEXTENCODING_DONTKNOW;
+
+	// find the first digit (start of the code-page number, if any)
+	const char * p = pCodePage;
+	while (*p!=0 && (*p<'0' || *p>'9'))
+		p++;
+	if (*p!=0) {
+		sal_uInt32 nCodePage = 0;
+		while (*p>='0' && *p<='9') {
+			nCodePage = nCodePage*10 + (sal_uInt32)(*p-'0');
+			p++;
+		}
+		rtl_TextEncoding eEnc = rtl_getTextEncodingFromWindowsCodePage(nCodePage);
+		if (eEnc!=RTL_TEXTENCODING_DONTKNOW)
+			return eEnc;
+	}
+
+	// named values without a code-page number
+	if (rtl_str_compareIgnoreAsciiCase(pCodePage,"MACINTOSH")==0)
+		return RTL_TEXTENCODING_APPLE_ROMAN;
+	if (rtl_str_compareIgnoreAsciiCase(pCodePage,"UTF8")==0 ||
+	    rtl_str_compareIgnoreAsciiCase(pCodePage,"UTF-8")==0)
+		return RTL_TEXTENCODING_UTF8;
+
+	return RTL_TEXTENCODING_DONTKNOW;
+}
+
+
 void DXFRepresentation::ReadHeader(DXFGroupReader & rDGR)
 {
 
@@ -224,15 +291,13 @@ void DXFRepresentation::ReadHeader(DXFGroupReader & rDGR)
                                  {
                                          rDGR.Read();
 
-                                         // FIXME: we really need a whole table of
-                                         // $DWGCODEPAGE to encodings mappings
-                                         if ( (strcmp(rDGR.GetS(),"ANSI_932")==0) ||
-					      (strcmp(rDGR.GetS(),"ansi_932")==0) ||
-                                              (strcmp(rDGR.GetS(),"DOS932")==0) ||
-                                              (strcmp(rDGR.GetS(),"dos932")==0) )
-                                         {
-                                                 setTextEncoding(RTL_TEXTENCODING_MS_932);
-                                         }
+                                         // The file declares its encoding: this is
+                                         // authoritative and overrides both the
+                                         // default and any caller-supplied override.
+                                         rtl_TextEncoding eEnc =
+                                                 DXFCodePageToTextEncoding(rDGR.GetS());
+                                         if (eEnc!=RTL_TEXTENCODING_DONTKNOW)
+                                                 setTextEncoding(eEnc);
                                  }
 				 else if (strcmp(rDGR.GetS(),"$LTSCALE")==0)
                                  {
