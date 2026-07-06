@@ -627,6 +627,14 @@ public:
 		// Loescht alle Entities
 };
 
+// True when an entity's stored coordinates are already in WCS, so the OCS
+// "arbitrary axis" (extrusion) transform must NOT be applied to them. Used by
+// BOTH the renderer (DrawEntities) and the bounding-box pass (CalcBoundingBox) so
+// they stay consistent: flat/planar entities (CIRCLE, ARC, TEXT, 2D POLYLINE,
+// LWPOLYLINE, INSERT, ...) are OCS and DO need the extrusion; inherently-3D
+// entities (LINE, POINT, 3DFACE, and a 3D polyline / mesh) carry WCS coordinates.
+sal_Bool DXFCoordsAreWCS(const DXFBasicEntity & rE);
+
 //------------------------------------------------------------------------------
 //--------------------------------- inlines ------------------------------------
 //------------------------------------------------------------------------------

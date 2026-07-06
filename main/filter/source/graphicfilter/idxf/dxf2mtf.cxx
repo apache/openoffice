@@ -483,6 +483,104 @@ void DXF2GDIMetaFile::DrawTextEntity(const DXFTextEntity & rE, const DXFTransfor
 }
 
 
+// Draw a TEXT entity projected into the (3D) view, used when the drawing is
+// rendered through a non-top viewport. VCL's DrawText can only place text with a
+// position + uniform height + single rotation, so it cannot follow the shear /
+// foreshortening a 3D projection produces. Instead we take the glyph OUTLINES and
+// push them through the full transform like any other geometry, so the text lies
+// in its projected plane. The flat 2D path (DrawTextEntity) is left untouched.
+void DXF2GDIMetaFile::Draw3DTextEntity(const DXFTextEntity & rE, const DXFTransform & rTransform)
+{
+	ByteString aStr( rE.sText );
+	String aUString( aStr, pDXF->getTextEncoding() );
+	if ( aUString.Len()==0 ) return;
+
+	long nColor = GetEntityColor(rE);
+	if ( nColor<0 ) return;
+	Color aColor = ConvertColor((sal_uInt8)nColor);
+
+	// Extract the glyph outlines from a SCRATCH device, never from pVirDev: the
+	// recording device has output disabled, so its GetTextOutlines falls back to a
+	// bitmap path that fails ("could not create system bitmap"). A clean scalable
+	// font on a plain VirtualDevice takes the vector path. The nominal height is
+	// arbitrary — the extent is self-calibrated below.
+	const long nNominal = 1000;
+	Font aFont;
+	aFont.SetFamily(FAMILY_SWISS);
+	aFont.SetSize(Size(0,nNominal));
+	aFont.SetAlign(ALIGN_BASELINE);
+	VirtualDevice aTextDev;
+	aTextDev.SetFont(aFont);
+	PolyPolyVector aGlyphs;
+	sal_Bool bOK = aTextDev.GetTextOutlines( aGlyphs, aUString );
+	if ( !bOK || aGlyphs.empty() ) {
+		DrawTextEntity(rE,rTransform);   // no outlines available -> flat fallback
+		return;
+	}
+
+	// GetTextOutlines returns the glyphs in an opaque internal scale (it toggles
+	// the map mode and rescales by a pixel factor), so we can't assume the height
+	// is nNominal. Self-calibrate: measure the real outline extent and normalise by
+	// its height, so one text-height maps to 1.0 regardless of the device scale.
+	double fMinY=0.0, fMaxY=0.0;
+	sal_Bool bFirst = sal_True;
+	sal_uInt32 g;
+	for ( g=0; g<aGlyphs.size(); g++ ) {
+		const PolyPolygon & rGlyph = aGlyphs[ g ];
+		sal_uInt16 c;
+		for ( c=0; c<rGlyph.Count(); c++ ) {
+			const Polygon & rContour = rGlyph[ c ];
+			sal_uInt16 i, nPts = rContour.GetSize();
+			for ( i=0; i<nPts; i++ ) {
+				const double y = (double)rContour[ i ].Y();
+				if ( bFirst ) { fMinY=fMaxY=y; bFirst=sal_False; }
+				else { if (y<fMinY) fMinY=y; if (y>fMaxY) fMaxY=y; }
+			}
+		}
+	}
+	const double fHeight = fMaxY - fMinY;
+	if ( fHeight <= 0.0 ) {          // degenerate outlines -> flat fallback
+		DrawTextEntity(rE,rTransform);
+		return;
+	}
+	const double fInv = 1.0/fHeight;
+
+	// Text-local coords (baseline at Y=0, one text-height == 1.0, Y up) -> DXF
+	// text placement (width/height/rotation/insertion) -> the incoming extrusion+
+	// view transform. This is the same chain the renderer uses for geometry.
+	// The outlines are normalised to text-height units in BOTH axes, so X and Y
+	// must both scale by fHeight; fXScale (DXF group 41 width factor) is only an
+	// extra horizontal stretch on top (default 1.0). Scaling X by fXScale alone —
+	// as DrawTextEntity can, because it re-derives width from the font — would
+	// collapse the glyphs to a vertical sliver here.
+	const double fWScale = rE.fHeight * ( rE.fXScale>0.0 ? rE.fXScale : 1.0 );
+	DXFTransform aT( DXFTransform(fWScale,rE.fHeight,1.0,rE.fRotAngle,rE.aP0), rTransform );
+
+	if ( aActFillColor!=aColor ) pVirDev->SetFillColor( aActFillColor = aColor );
+	if ( aActLineColor!=aColor ) pVirDev->SetLineColor( aActLineColor = aColor );
+
+	for ( g=0; g<aGlyphs.size(); g++ ) {
+		const PolyPolygon & rGlyph = aGlyphs[ g ];
+		PolyPolygon aDevGlyph;
+		sal_uInt16 c;
+		for ( c=0; c<rGlyph.Count(); c++ ) {
+			const Polygon & rContour = rGlyph[ c ];
+			sal_uInt16 nPts = rContour.GetSize();
+			Polygon aDev( nPts );
+			sal_uInt16 i;
+			for ( i=0; i<nPts; i++ ) {
+				const Point & rP = rContour[ i ];
+				aT.Transform( DXFVector( (double)rP.X()*fInv,
+										 -(double)rP.Y()*fInv, 0.0 ),
+							  aDev[ i ] );
+			}
+			aDevGlyph.Insert( aDev );
+		}
+		pVirDev->DrawPolyPolygon( aDevGlyph );
+	}
+}
+
+
 void DXF2GDIMetaFile::DrawInsertEntity(const DXFInsertEntity & rE, const DXFTransform & rTransform)
 {
 	const DXFBlock * pB;
@@ -938,7 +1036,7 @@ void DXF2GDIMetaFile::DrawEntities(const DXFEntities & rEntities,
 
 	while (pE!=NULL && bStatus==sal_True) {
 		if (pE->nSpace==0) {
-			if (pE->aExtrusion.fz==1.0) {
+			if (pE->aExtrusion.fz==1.0 || DXFCoordsAreWCS(*pE)) {
 				pT=&rTransform;
 			}
 			else {
@@ -965,7 +1063,10 @@ void DXF2GDIMetaFile::DrawEntities(const DXFEntities & rEntities,
 				DrawSolidEntity((DXFSolidEntity&)*pE,*pT);
 				break;
 			case DXF_TEXT:
-				DrawTextEntity((DXFTextEntity&)*pE,*pT);
+				if (b3DText)
+					Draw3DTextEntity((DXFTextEntity&)*pE,*pT);
+				else
+					DrawTextEntity((DXFTextEntity&)*pE,*pT);
 				break;
 			case DXF_INSERT:
 				DrawInsertEntity((DXFInsertEntity&)*pE,*pT);
@@ -1071,6 +1172,9 @@ sal_Bool DXF2GDIMetaFile::Convert(const DXFRepresentation & rDXF, GDIMetaFile & 
 		if (pVPort->aDirection.fx==0 && pVPort->aDirection.fy==0)
 			pVPort=NULL;
 	}
+	// A non-top viewport means the drawing is projected in 3D; text then has to be
+	// laid into that projection (Draw3DTextEntity) rather than drawn flat.
+	b3DText = (pVPort!=NULL) ? sal_True : sal_False;
 
 	if (pVPort==NULL) {
 		if (pDXF->aBoundingBox.bEmpty==sal_True)

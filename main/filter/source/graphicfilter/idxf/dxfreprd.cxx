@@ -309,9 +309,13 @@ void DXFRepresentation::CalcBoundingBox(const DXFEntities & rEntities,
 	while (pBE!=NULL) {
 		// The renderer builds an ECS->WCS transform from the entity's extrusion
 		// whenever it is not the default (DrawEntities checks fz != 1.0); measure
-		// through the same transform so the box is in WCS, not raw OCS.
+		// through the SAME transform so the box is in WCS, not raw OCS. Use the same
+		// WCS-vs-OCS rule as DrawEntities (DXFCoordsAreWCS): entities whose coords
+		// are already WCS (LINE/POINT/3DFACE/3D-polyline) must NOT be extruded, or
+		// the box is measured over scattered positions and comes out far too large
+		// (issue 99893/70273 — geometry then sits in a corner of an inflated page).
 		DXFTransform aE2W;                        // identity by default
-		if (pBE->aExtrusion.fz != 1.0)
+		if (pBE->aExtrusion.fz != 1.0 && !DXFCoordsAreWCS(*pBE))
 			aE2W = DXFTransform(pBE->aExtrusion);
 		switch (pBE->eType) {
 			case DXF_LINE: {

@@ -332,11 +332,29 @@ DXFLayer * DXFTables::SearchLayer(const char * pName) const
 }
 
 
+// DXF symbol-table names (e.g. the "*ACTIVE" viewport) are case-insensitive, but
+// applications write them in different case ("*ACTIVE" vs "*Active"). A plain
+// strcmp then misses the active viewport, so idxf discards the saved view and
+// flattens a 3D drawing to a top-view. Compare ASCII-case-insensitively (names
+// are ASCII; this avoids <ctype.h>/locale and cherry-picks cleanly).
+static sal_Bool DXFNameEqualIgnoreCase(const char * p1, const char * p2)
+{
+	while (*p1!=0 && *p2!=0) {
+		char c1=*p1, c2=*p2;
+		if (c1>='A' && c1<='Z') c1 = (char)(c1 - 'A' + 'a');
+		if (c2>='A' && c2<='Z') c2 = (char)(c2 - 'A' + 'a');
+		if (c1!=c2) return sal_False;
+		p1++; p2++;
+	}
+	return (*p1==0 && *p2==0) ? sal_True : sal_False;
+}
+
+
 DXFVPort * DXFTables::SearchVPort(const char * pName) const
 {
 	DXFVPort * p;
 	for (p=pVPorts; p!=NULL; p=p->pSucc) {
-		if (strcmp(pName,p->sName)==0) break;
+		if (DXFNameEqualIgnoreCase(pName,p->sName)) break;
 	}
 	return p;
 }

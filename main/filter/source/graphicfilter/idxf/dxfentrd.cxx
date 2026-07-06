@@ -1004,3 +1004,25 @@ void DXFEntities::Clear()
 		delete ptmp;
 	}
 }
+
+sal_Bool DXFCoordsAreWCS(const DXFBasicEntity & rE)
+{
+	// See the header comment. For a LINE the extrusion only defines a thickness
+	// direction, never the endpoint positions; applying it scatters 3D wireframes
+	// (issue 99893) and inflates the bounding box (both must agree). ELLIPSE/SPLINE
+	// are intentionally NOT WCS here — DrawEllipseEntity/DrawSplineEntity compute in
+	// the entity's own frame and rely on the extrusion being applied.
+	switch (rE.eType) {
+		case DXF_LINE:
+		case DXF_POINT:
+		case DXF_3DFACE:
+			return sal_True;
+		case DXF_POLYLINE:
+			// 3D polyline / 3D mesh / polyface mesh store WCS vertices; a plain
+			// 2D polyline is in OCS.
+			return ( ((const DXFPolyLineEntity &)rE).nFlags & (8|16|64) ) != 0
+				   ? sal_True : sal_False;
+		default:
+			return sal_False;
+	}
+}
