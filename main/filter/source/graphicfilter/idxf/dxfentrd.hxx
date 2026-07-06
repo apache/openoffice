@@ -468,6 +468,7 @@ class DXFHatchEntity : public DXFBasicEntity
 {
 		sal_Bool	bIsInBoundaryPathContext;
 		sal_Int32	nCurrentBoundaryPathIndex;
+		sal_Bool	bPatternLineOffsetSet;			// transient parse state (first 45/46 captured)
 
 	public :
 
@@ -483,6 +484,15 @@ class DXFHatchEntity : public DXFBasicEntity
 		sal_Int32	nHatchPatternDefinitionLines;	// 78
 		double		fPixelSize;						// 47
 		sal_Int32	nNumberOfSeedPoints;			// 98
+
+		// First pattern-definition line (78 block). Enough to drive a VCL Hatch
+		// (single/double/triple): the line angle (53) and the inter-line offset
+		// (45/46) give on-page angle + spacing; multi-line patterns collapse to
+		// this line's geometry plus the style from nHatchPatternDefinitionLines.
+		sal_Bool	bHasPatternLine;				// a 53 line angle was parsed
+		double		fPatternLineAngle;				// 53
+		double		fPatternLineOffsetX;			// 45
+		double		fPatternLineOffsetY;			// 46
 
 		DXFBoundaryPathData* pBoundaryPathData;
 

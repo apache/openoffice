@@ -27,6 +27,7 @@
 #include <string.h>
 #include <vcl/gdimtf.hxx>
 #include <vcl/virdev.hxx>
+#include <vcl/hatch.hxx>
 #include <tools/poly.hxx>
 #include "dxf2mtf.hxx"
 
@@ -798,100 +799,148 @@ void DXF2GDIMetaFile::DrawLWPolyLineEntity(const DXFLWPolyLineEntity & rE, const
 
 void DXF2GDIMetaFile::DrawHatchEntity(const DXFHatchEntity & rE, const DXFTransform & rTransform )
 {
-	if ( rE.nBoundaryPathCount )
+	if ( !rE.nBoundaryPathCount )
+		return;
+
+	// Build the boundary as a PolyPolygon, tessellating curved edges so the
+	// area is measured correctly for both the solid fill and the pattern clip.
+	sal_Int32 j;
+	PolyPolygon aPolyPoly;
+	for ( j = 0; j < rE.nBoundaryPathCount; j++ )
 	{
-		SetAreaAttribute( rE );
-		sal_Int32 j = 0;
-		PolyPolygon aPolyPoly;
-		for ( j = 0; j < rE.nBoundaryPathCount; j++ )
+		DXFPointArray aPtAry;
+		const DXFBoundaryPathData& rPathData = rE.pBoundaryPathData[ j ];
+		if ( rPathData.bIsPolyLine )
 		{
-			DXFPointArray aPtAry;
-			const DXFBoundaryPathData& rPathData = rE.pBoundaryPathData[ j ];
-			if ( rPathData.bIsPolyLine )
+			sal_Int32 i;
+			for( i = 0; i < rPathData.nPointCount; i++ )
 			{
-				sal_Int32 i;
-				for( i = 0; i < rPathData.nPointCount; i++ )
-				{
-					Point aPt;
-					rTransform.Transform( rPathData.pP[ i ], aPt );
-					aPtAry.push_back( aPt );
-				}
-			}
-			else
-			{
-				sal_uInt32 i;
-				for ( i = 0; i < rPathData.aEdges.size(); i++ )
-				{
-					const DXFEdgeType* pEdge = rPathData.aEdges[ i ];
-					switch( pEdge->nEdgeType )
-					{
-						case 1 :
-						{
-							Point aPt;
-							rTransform.Transform( ((DXFEdgeTypeLine*)pEdge)->aStartPoint, aPt );
-							aPtAry.push_back( aPt );
-							rTransform.Transform( ((DXFEdgeTypeLine*)pEdge)->aEndPoint, aPt );
-							aPtAry.push_back( aPt );
-						}
-						break;
-						case 2 :
-						{
-/*
-							double frx,fry,fA1,fdA,fAng;
-							sal_uInt16 nPoints,i;
-							DXFVector aC;
-							Point aPS,aPE;
-							fA1=((DXFEdgeTypeCircularArc*)pEdge)->fStartAngle;
-							fdA=((DXFEdgeTypeCircularArc*)pEdge)->fEndAngle - fA1;
-							while ( fdA >= 360.0 )
-								fdA -= 360.0;
-							while ( fdA <= 0 )
-								fdA += 360.0;
-							rTransform.Transform(((DXFEdgeTypeCircularArc*)pEdge)->aCenter, aC);
-							if ( fdA > 5.0 && rTransform.TransCircleToEllipse(((DXFEdgeTypeCircularArc*)pEdge)->fRadius,frx,fry ) == sal_True )
-							{
-								DXFVector aVS(cos(fA1/180.0*3.14159265359),sin(fA1/180.0*3.14159265359),0.0);
-								aVS*=((DXFEdgeTypeCircularArc*)pEdge)->fRadius;
-								aVS+=((DXFEdgeTypeCircularArc*)pEdge)->aCenter;
-								DXFVector aVE(cos((fA1+fdA)/180.0*3.14159265359),sin((fA1+fdA)/180.0*3.14159265359),0.0);
-								aVE*=((DXFEdgeTypeCircularArc*)pEdge)->fRadius;
-								aVE+=((DXFEdgeTypeCircularArc*)pEdge)->aCenter;
-								if ( rTransform.Mirror() == sal_True )
-								{
-									rTransform.Transform(aVS,aPS);
-									rTransform.Transform(aVE,aPE);
-								}
-								else
-								{
-									rTransform.Transform(aVS,aPE);
-									rTransform.Transform(aVE,aPS);
-								}
-								pVirDev->DrawArc(
-									Rectangle((long)(aC.fx-frx+0.5),(long)(aC.fy-fry+0.5),
-											  (long)(aC.fx+frx+0.5),(long)(aC.fy+fry+0.5)),
-									aPS,aPE
-								);
-							}
-*/
-						}
-						break;
-						case 3 :
-						case 4 :
-						break;
-					}
-				}
-			}
-			sal_uInt16 i, nSize = (sal_uInt16)aPtAry.size();
-			if ( nSize )
-			{
-				Polygon aPoly( nSize );
-				for ( i = 0; i < nSize; i++ )
-					aPoly[ i ] = aPtAry[ i ];
-				aPolyPoly.Insert( aPoly, POLYPOLY_APPEND );
+				Point aPt;
+				rTransform.Transform( rPathData.pP[ i ], aPt );
+				aPtAry.push_back( aPt );
 			}
 		}
-		if ( aPolyPoly.Count() )
+		else
+		{
+			sal_uInt32 i;
+			for ( i = 0; i < rPathData.aEdges.size(); i++ )
+			{
+				const DXFEdgeType* pEdge = rPathData.aEdges[ i ];
+				switch( pEdge->nEdgeType )
+				{
+					case 1 :
+					{
+						Point aPt;
+						rTransform.Transform( ((DXFEdgeTypeLine*)pEdge)->aStartPoint, aPt );
+						aPtAry.push_back( aPt );
+						rTransform.Transform( ((DXFEdgeTypeLine*)pEdge)->aEndPoint, aPt );
+						aPtAry.push_back( aPt );
+					}
+					break;
+					case 2 :
+					{
+						// Circular arc edge: sample the sweep and push the points.
+						// Angles are in degrees; direction follows the CCW flag.
+						const DXFEdgeTypeCircularArc* pArc = (const DXFEdgeTypeCircularArc*)pEdge;
+						double fSweep = pArc->fEndAngle - pArc->fStartAngle;
+						if ( pArc->nIsCounterClockwiseFlag )
+							{ while ( fSweep <= 0.0 ) fSweep += 360.0; }
+						else
+							{ while ( fSweep >= 0.0 ) fSweep -= 360.0; }
+						sal_uInt16 nPts = (sal_uInt16)( fabs(fSweep)/360.0*(double)OptPointsPerCircle + 0.5 );
+						if ( nPts < 2 ) nPts = 2;
+						for ( sal_uInt16 k = 0; k < nPts; k++ )
+						{
+							double a = ( pArc->fStartAngle + fSweep*(double)k/(double)(nPts-1) )
+										* (3.14159265359/180.0);
+							Point aPt;
+							rTransform.Transform(
+								DXFVector( pArc->aCenter.fx + pArc->fRadius*cos(a),
+										   pArc->aCenter.fy + pArc->fRadius*sin(a), 0.0 ), aPt );
+							aPtAry.push_back( aPt );
+						}
+					}
+					break;
+					case 3 :	// elliptical arc: not tessellated (not seen in
+					case 4 :	// practice here); spline edges store no control
+					break;		// points, so both fall through as before.
+				}
+			}
+		}
+		sal_uInt16 i, nSize = (sal_uInt16)aPtAry.size();
+		if ( nSize )
+		{
+			Polygon aPoly( nSize );
+			for ( i = 0; i < nSize; i++ )
+				aPoly[ i ] = aPtAry[ i ];
+			aPolyPoly.Insert( aPoly, POLYPOLY_APPEND );
+		}
+	}
+	if ( !aPolyPoly.Count() )
+		return;
+
+	if ( rE.nFlags & 1 )
+	{
+		// Solid fill (group 70 bit 0): flood-fill the boundary in the entity colour.
+		SetAreaAttribute( rE );
+		pVirDev->DrawPolyPolygon( aPolyPoly );
+	}
+	else if ( rE.bHasPatternLine )
+	{
+		// Pattern fill: render the section lines with VCL's DrawHatch, which
+		// clips a line family to the boundary and records a MetaHatchAction.
+		// The DXF pattern is collapsed to a single/double/triple Hatch; the
+		// on-page angle and spacing come from mapping the pattern-definition
+		// line's direction and inter-line offset through rTransform, so any
+		// scale / rotation / block-insert nesting is accounted for.
+		long nColor = GetEntityColor( rE );
+		if ( nColor < 0 )
+			return;
+		Color aColor = ConvertColor( (sal_uInt8)nColor );
+
+		const double fPi = 3.14159265359;
+		double fA = rE.fPatternLineAngle * (fPi/180.0);
+		DXFVector aDir, aOff;
+		rTransform.TransDir( DXFVector( cos(fA), sin(fA), 0.0 ), aDir );
+		rTransform.TransDir( DXFVector( rE.fPatternLineOffsetX, rE.fPatternLineOffsetY, 0.0 ), aOff );
+
+		double fDirLen = sqrt( aDir.fx*aDir.fx + aDir.fy*aDir.fy );
+		if ( fDirLen < 1e-9 )
+		{
+			// degenerate direction: fall back to a bare outline (no blob).
+			SetLineAttribute( rE );
 			pVirDev->DrawPolyPolygon( aPolyPoly );
+			return;
+		}
+
+		// Perpendicular spacing between adjacent lines in device space, and the
+		// device line angle. VCL's angle is measured in the recorded coordinate
+		// system with its positive direction as (cos,-sin), hence -aDir.fy.
+		double fDist = fabs( aOff.fx*aDir.fy - aOff.fy*aDir.fx ) / fDirLen;
+		long nDistance = (long)( fDist + 0.5 );
+		if ( nDistance < 1 ) nDistance = 1;
+
+		double fAngle = atan2( -aDir.fy, aDir.fx ) * 1800.0 / fPi;
+		long nAngle10 = (long)( fAngle + (fAngle < 0.0 ? -0.5 : 0.5) );
+		nAngle10 %= 1800;
+		if ( nAngle10 < 0 )
+			nAngle10 += 1800;
+
+		HatchStyle eStyle = HATCH_SINGLE;
+		if ( rE.nHatchPatternDefinitionLines == 2 )
+			eStyle = HATCH_DOUBLE;
+		else if ( rE.nHatchPatternDefinitionLines >= 3 )
+			eStyle = HATCH_TRIPLE;
+
+		Hatch aHatch( eStyle, aColor, nDistance, (sal_uInt16)nAngle10 );
+		pVirDev->DrawHatch( aPolyPoly, aHatch );
+	}
+	else
+	{
+		// Pattern fill but no pattern-definition line was parsed: stroke the
+		// boundary outline only (transparent fill), never a solid blob.
+		SetLineAttribute( rE );
+		pVirDev->DrawPolyPolygon( aPolyPoly );
 	}
 }
 

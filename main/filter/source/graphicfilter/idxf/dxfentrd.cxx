@@ -697,6 +697,7 @@ DXFHatchEntity::DXFHatchEntity() :
 	DXFBasicEntity( DXF_HATCH ),
 	bIsInBoundaryPathContext( sal_False ),
 	nCurrentBoundaryPathIndex( -1 ),
+	bPatternLineOffsetSet( sal_False ),
 	nFlags( 0 ),
 	nAssociativityFlag( 0 ),
 	nBoundaryPathCount( 0 ),
@@ -708,6 +709,10 @@ DXFHatchEntity::DXFHatchEntity() :
 	nHatchPatternDefinitionLines( 0 ),
 	fPixelSize( 1.0 ),
 	nNumberOfSeedPoints( 0 ),
+	bHasPatternLine( sal_False ),
+	fPatternLineAngle( 0.0 ),
+	fPatternLineOffsetX( 0.0 ),
+	fPatternLineOffsetY( 0.0 ),
 	pBoundaryPathData( NULL )
 {
 }
@@ -753,6 +758,21 @@ void DXFHatchEntity::EvaluateGroup( DXFGroupReader & rDGR )
 		case 78 : nHatchPatternDefinitionLines = rDGR.GetI(); break;
 		case 47 : fPixelSize = rDGR.GetF(); break;
 		case 98 : nNumberOfSeedPoints = rDGR.GetI(); break;
+
+		// Pattern-definition lines (only present for a pattern fill, after 75).
+		// Capture the FIRST line's angle (53) and inter-line offset (45/46);
+		// 53/45/46 appear nowhere else in a HATCH, so intercepting them here is
+		// safe. Codes 43/44 (base point) are not needed for a VCL Hatch.
+		case 53 :
+			if ( !bHasPatternLine ) { fPatternLineAngle = rDGR.GetF(); bHasPatternLine = sal_True; }
+			break;
+		case 45 :
+			if ( bHasPatternLine && !bPatternLineOffsetSet ) fPatternLineOffsetX = rDGR.GetF();
+			break;
+		case 46 :
+			if ( bHasPatternLine && !bPatternLineOffsetSet )
+			{ fPatternLineOffsetY = rDGR.GetF(); bPatternLineOffsetSet = sal_True; }
+			break;
 
 		//!! passthrough !!
 		case 92 : nCurrentBoundaryPathIndex++;
