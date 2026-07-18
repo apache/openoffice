@@ -27,6 +27,7 @@ mkdir: %_DEST%\lib%_EXT%\python\importlib
 mkdir: %_DEST%\lib%_EXT%\python\multiprocessing
 mkdir: %_DEST%\lib%_EXT%\python\multiprocessing\dummy
 mkdir: %_DEST%\lib%_EXT%\python\unittest
+mkdir: %_DEST%\lib%_EXT%\python\collections
 mkdir: %_DEST%\lib%_EXT%\python\python3.11\config
 
 ..\%__SRC%\misc\build\Python-3.11.15\Lib\* %_DEST%\lib%_EXT%\python\*
@@ -57,6 +58,7 @@ mkdir: %_DEST%\lib%_EXT%\python\python3.11\config
 ..\%__SRC%\misc\build\Python-3.11.15\Lib\multiprocessing\* %_DEST%\lib%_EXT%\python\multiprocessing\*
 ..\%__SRC%\misc\build\Python-3.11.15\Lib\multiprocessing\dummy\* %_DEST%\lib%_EXT%\python\multiprocessing\dummy\*
 ..\%__SRC%\misc\build\Python-3.11.15\Lib\unittest\* %_DEST%\lib%_EXT%\python\unittest\*
+..\%__SRC%\misc\build\Python-3.11.15\Lib\collections\* %_DEST%\lib%_EXT%\python\collections\*
 ..\%__SRC%\misc\build\Python-3.11.15\Makefile %_DEST%\lib%_EXT%\python\python3.11\config\Makefile
 # TODO: _sysconfigdata filename is platform-mangled (e.g. _sysconfigdata__darwin_darwin.py on macOS,
 # _sysconfigdata__linux_x86_64-linux-gnu.py on Linux). Verify exact name from built tree.
