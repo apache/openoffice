@@ -32,9 +32,11 @@
 #include <comphelper/types.hxx>
 #include <vcl/msgbox.hxx>
 #include <tools/debug.hxx>
+#include <tools/urlobj.hxx>
 #include <svx/dataaccessdescriptor.hxx>
 #include <sfx2/viewfrm.hxx>
 
+#include <com/sun/star/document/XLinkAuthorizer.hpp>
 #include <com/sun/star/sdb/CommandType.hpp>
 #include <com/sun/star/sdb/XCompletedExecution.hpp>
 #include <com/sun/star/sdbc/XRow.hpp>
@@ -137,6 +139,14 @@ sal_Bool ScDBDocFunc::DoImport( SCTAB nTab, const ScImportParam& rParam,
         const svx::ODataAccessDescriptor* pDescriptor, sal_Bool bRecord, sal_Bool bAddrInsert )
 {
 	ScDocument* pDoc = rDocShell.GetDocument();
+
+	INetURLObject aURL( rParam.aDBName );
+	if ( aURL.GetProtocol() != INET_PROT_NOT_VALID ) {
+		::com::sun::star::uno::Reference< ::com::sun::star::document::XLinkAuthorizer > xLinkAuthorizer( pDoc->GetDocumentShell()->GetModel(), ::com::sun::star::uno::UNO_QUERY );
+		if ( xLinkAuthorizer.is() && ! xLinkAuthorizer->authorizeLinks( rParam.aDBName ) ) {
+			return sal_False;
+		}
+	}
 
 	if (bRecord && !pDoc->IsUndoEnabled())
 		bRecord = sal_False;
