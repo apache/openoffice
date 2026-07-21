@@ -7,7 +7,7 @@ load("//build/rules:rsc_pipeline.bzl", "rsc_res")
 _DEFINES = [
     "WNT", "GUI", "WIN32",
     "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
-    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "CPPU_ENV=msci", 
     "FULL_DESK", "SHAREDLIB", "_DLL_",
     "snprintf=_snprintf",
     "snwprintf=_snwprintf",
@@ -762,7 +762,7 @@ cc_binary(
         "/Imain/desktop/inc/pch",
     ],
     defines = [
-        "WNT", "WIN32", "INTEL", "_X86_=1",
+        "WNT", "WIN32", 
         "snprintf=_snprintf",
         "SUPD=680", "MSC",
     ],
@@ -825,7 +825,7 @@ cc_binary(
         "/Imain/desktop/inc/pch",
     ],
     defines = [
-        "WNT", "WIN32", "INTEL", "_X86_=1",
+        "WNT", "WIN32", 
         "snprintf=_snprintf",
         "SUPD=680", "MSC", "UNICODE", "_UNICODE",
     ],
@@ -852,7 +852,7 @@ cc_binary(
         "/Imain/desktop/inc/pch",
     ],
     defines = [
-        "WNT", "WIN32", "INTEL", "_X86_=1",
+        "WNT", "WIN32", 
         "snprintf=_snprintf",
         "SUPD=680", "MSC", "UNICODE", "_UNICODE",
     ],
@@ -878,7 +878,7 @@ cc_binary(
         "/Imain/desktop/inc/pch",
     ],
     defines = [
-        "WNT", "WIN32", "INTEL", "_X86_=1",
+        "WNT", "WIN32", 
         "snprintf=_snprintf",
         "SUPD=680", "MSC", "UNICODE", "_UNICODE",
     ],
@@ -903,7 +903,7 @@ cc_binary(
         "/Imain/desktop/win32/source/guistdio",
     ],
     defines = [
-        "WNT", "WIN32", "INTEL", "_X86_=1",
+        "WNT", "WIN32", 
         "snprintf=_snprintf",
         "SUPD=680", "MSC",
     ],
@@ -926,7 +926,7 @@ cc_binary(
         "/Imain/desktop/win32/source/guistdio",
     ],
     defines = [
-        "WNT", "WIN32", "INTEL", "_X86_=1",
+        "WNT", "WIN32", 
         "snprintf=_snprintf",
         "SUPD=680", "MSC",
     ],
@@ -948,7 +948,7 @@ cc_binary(
         "/Imain/desktop/source/pkgchk/unopkg",
     ],
     defines = [
-        "WNT", "WIN32", "INTEL", "_X86_=1",
+        "WNT", "WIN32", 
         "snprintf=_snprintf",
         "SUPD=680", "MSC",
     ],
@@ -979,7 +979,7 @@ cc_binary(
         "/Imain/desktop/inc/pch",
     ],
     defines = [
-        "WNT", "WIN32", "INTEL", "_X86_=1",
+        "WNT", "WIN32", 
         "snprintf=_snprintf",
         "SUPD=680", "MSC", "UNICODE", "_UNICODE",
     ],
@@ -1003,7 +1003,7 @@ cc_binary(
         "/Imain/desktop/inc/pch",
     ],
     defines = [
-        "WNT", "WIN32", "INTEL", "_X86_=1",
+        "WNT", "WIN32", 
         "snprintf=_snprintf",
         "SUPD=680", "MSC", "UNICODE", "_UNICODE",
     ],
@@ -1030,7 +1030,7 @@ cc_binary(
         "/Imain/desktop/inc/pch",
     ],
     defines = [
-        "WNT", "WIN32", "INTEL", "_X86_=1",
+        "WNT", "WIN32", 
         "snprintf=_snprintf",
         "SUPD=680", "MSC", "UNICODE", "_UNICODE",
     ],
@@ -1056,7 +1056,7 @@ cc_binary(
         "/Imain/desktop/win32/source/QuickStart",
     ],
     defines = [
-        "WNT", "WIN32", "INTEL", "_X86_=1",
+        "WNT", "WIN32", 
         "snprintf=_snprintf",
         "SUPD=680", "MSC",
     ],

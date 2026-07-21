@@ -73,7 +73,7 @@ genrule(
 )
 
 _DEFINES = [
-    "WNT", "WIN32", "INTEL", "_X86_=1",
+    "WNT", "WIN32", 
     "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
     "snprintf=_snprintf",
     "SUPD=680",

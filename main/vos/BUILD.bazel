@@ -12,7 +12,7 @@ _COPTS = [
 _DEFINES = [
     "WNT", "GUI", "WIN32",
     "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
-    "INTEL", "_X86_=1",
+    
     "SHAREDLIB", "_DLL_",
     "VOS_DLLIMPLEMENTATION",
 ]

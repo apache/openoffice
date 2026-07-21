@@ -26,7 +26,7 @@ gtest_test(
         "/Zc:wchar_t-",
     ],
     defines = [
-        "WNT", "WIN32", "INTEL", "_X86_=1",
+        "WNT", "WIN32", 
         "snprintf=_snprintf",
     ],
     deps = [

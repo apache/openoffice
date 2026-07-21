@@ -5,7 +5,7 @@ load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 _DEFINES = [
     "WNT", "GUI", "WIN32",
     "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
-    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "CPPU_ENV=msci", 
     "FULL_DESK",
     "SHAREDLIB", "_DLL_",
     "UCBHELPER_DLLIMPLEMENTATION",
