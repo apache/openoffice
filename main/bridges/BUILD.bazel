@@ -2,7 +2,7 @@ package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 load("@rules_java//java:defs.bzl", "java_library")
-load("//build/rules:gtest_test.bzl", "staged_run_test")
+load("//build/rules:gtest_test.bzl", "gtest_test", "staged_run_test")
 
 _COPTS = [
     "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs",
@@ -19,13 +19,51 @@ _COPTS = [
 _DEFINES = [
     "WNT", "GUI", "WIN32",
     "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
-    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "CPPU_ENV=msci", 
     "FULL_DESK",
     # Needed by vtablefactory.cxx for the Windows code path
     "LEAK_STATIC_DATA",
 ]
 
 _SLO_DEFINES = _DEFINES + ["SHAREDLIB", "_DLL_"]
+
+# x64 (mscx) variants — same as the x86 flags but with the msvc_win64_x86-64
+# platform include and CPPU_ENV=mscx (the x64 C++/UNO environment name).
+_COPTS_X64 = [
+    "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs",
+    "/EHsc",
+    "/Dsnprintf=_snprintf",
+    "/Imain/bridges/source/cpp_uno/shared",
+    "/Imain/bridges/source/cpp_uno/msvc_win64_x86-64",
+    "/Imain/bridges/inc/pch",
+    "/wd4061", "/wd4127",
+]
+
+_DEFINES_X64 = [
+    "WNT", "GUI", "WIN32",
+    # Vista (0x0600) floor: x64 Windows is Vista+ (Win2000's 0x0500 is
+    # anachronistic on x64), and the trunk x64 cpp2uno.cxx calls GetModuleHandleExW
+    # (XP+/0x0501).  x86 keeps 0x0500 for legacy support; this is x64-only.
+    "WINVER=0x0600", "_WIN32_WINNT=0x0600", "_WIN32_IE=0x0600",
+    "CPPU_ENV=mscx",
+    "FULL_DESK",
+    "LEAK_STATIC_DATA",
+]
+
+_SLO_DEFINES_X64 = _DEFINES_X64 + ["SHAREDLIB", "_DLL_"]
+
+# Platform-neutral bridge sources shared by the x86 (msci) and x64 (mscx) DLLs.
+_BRIDGE_SHARED_SRCS = [
+    "source/cpp_uno/shared/bridge.cxx",
+    "source/cpp_uno/shared/component.cxx",
+    "source/cpp_uno/shared/component.hxx",
+    "source/cpp_uno/shared/cppinterfaceproxy.cxx",
+    "source/cpp_uno/shared/guardedarray.hxx",
+    "source/cpp_uno/shared/types.cxx",
+    "source/cpp_uno/shared/unointerfaceproxy.cxx",
+    "source/cpp_uno/shared/vtablefactory.cxx",
+    "source/cpp_uno/shared/vtables.cxx",
+]
 
 # ── Public headers ────────────────────────────────────────────────
 cc_library(
@@ -46,18 +84,8 @@ cc_library(
 # Sources: platform-neutral shared/ layer + msvc_win32_intel/ platform layer.
 cc_binary(
     name = "msci_uno",
-    srcs = [
-        # Shared (platform-neutral) sources
-        "source/cpp_uno/shared/bridge.cxx",
-        "source/cpp_uno/shared/component.cxx",
-        "source/cpp_uno/shared/component.hxx",
-        "source/cpp_uno/shared/cppinterfaceproxy.cxx",
-        "source/cpp_uno/shared/guardedarray.hxx",
-        "source/cpp_uno/shared/types.cxx",
-        "source/cpp_uno/shared/unointerfaceproxy.cxx",
-        "source/cpp_uno/shared/vtablefactory.cxx",
-        "source/cpp_uno/shared/vtables.cxx",
-        # Windows MSVC x86 platform sources
+    srcs = _BRIDGE_SHARED_SRCS + [
+        # Windows MSVC x86 platform sources (inline __asm; no call.asm/abi.cxx)
         "source/cpp_uno/msvc_win32_intel/cpp2uno.cxx",
         "source/cpp_uno/msvc_win32_intel/dllinit.cxx",
         "source/cpp_uno/msvc_win32_intel/except.cxx",
@@ -83,12 +111,63 @@ cc_binary(
         "$(execpath //main/sal:sal_implib)",
         "$(execpath //main/cppu:cppu3_implib)",
     ],
+    # x86 bridge: inline __asm doesn't compile on x64 — build only for x86.
+    target_compatible_with = ["@platforms//cpu:x86_32"],
     visibility = ["//visibility:public"],
 )
 
 filegroup(
     name = "msci_uno_implib",
     srcs = [":msci_uno"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── mscx_uno.dll ─────────────────────────────────────────────────
+# Windows MSVC x64 C++/UNO bridge.  Loaded at runtime as "mscx_uno.dll"
+# (CPPU_ENV=mscx).  Uses the msvc_win64_x86-64/ platform layer: no inline __asm —
+# the vtable-slot trampoline is call.asm (ml64) with abi.cxx doing the x64 calling-
+# convention argument marshalling; except.cxx handles x64 SEH→UNO exception mapping.
+cc_binary(
+    name = "mscx_uno",
+    srcs = _BRIDGE_SHARED_SRCS + [
+        # Windows MSVC x64 platform sources
+        "source/cpp_uno/msvc_win64_x86-64/abi.cxx",
+        "source/cpp_uno/msvc_win64_x86-64/abi.hxx",
+        "source/cpp_uno/msvc_win64_x86-64/call.asm",
+        "source/cpp_uno/msvc_win64_x86-64/cpp2uno.cxx",
+        "source/cpp_uno/msvc_win64_x86-64/dllinit.cxx",
+        "source/cpp_uno/msvc_win64_x86-64/except.cxx",
+        "source/cpp_uno/msvc_win64_x86-64/mscx.hxx",
+        "source/cpp_uno/msvc_win64_x86-64/uno2cpp.cxx",
+    ],
+    copts = _COPTS_X64,
+    defines = _SLO_DEFINES_X64,
+    deps = [
+        ":bridges_headers",
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+    ],
+    linkshared = True,
+    win_def_file = "util/mscx_uno.def",
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+    ],
+    # x64-only bridge.
+    target_compatible_with = ["@platforms//cpu:x86_64"],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "mscx_uno_implib",
+    srcs = [":mscx_uno"],
     output_group = "interface_library",
     visibility = ["//visibility:public"],
 )
@@ -301,4 +380,47 @@ staged_run_test(
         "//main/sal:sal3",
         "//main/cppu:cppu3",
     ],
+)
+
+# ── C++/UNO bridge round-trip test ───────────────────────────────
+# Maps a C++ object cpp->uno->cpp (which loads the bridge DLL) and calls methods
+# through the doubly-mapped proxy, exercising the bridge's asm trampoline +
+# argument/return marshalling in both directions at run time.  Arch-agnostic: the
+# bridge runtime dep select()s msci_uno (x86) / mscx_uno (x64), and the compiled
+# CPPU_ENV (msci/mscx) makes the mapping load the matching DLL — so this runs on
+# both arches.
+gtest_test(
+    name = "cppuno_roundtrip_test",
+    srcs = ["test/cppuno_roundtrip_test.cxx"],
+    copts = _TEST_COPTS,
+    defines = select({
+        "//build:arch_x64": _DEFINES_X64,
+        "//conditions:default": _DEFINES,
+    }),
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+    ],
+    runtime_dlls = [
+        "//main/sal:sal3",
+        "//main/salhelper:salhelper3MSC",
+        "//main/cppu:cppu3",
+        "//main/cppuhelper:cppuhelper3MSC",
+    ] + select({
+        "//build:arch_x64": ["//main/bridges:mscx_uno"],
+        "//conditions:default": ["//main/bridges:msci_uno"],
+    }),
 )

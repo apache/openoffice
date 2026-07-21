@@ -15,7 +15,7 @@ _COPTS = [
 _DEFINES = [
     "WNT", "GUI", "WIN32", "_MT",
     "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
-    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "CPPU_ENV=msci", 
     "FULL_DESK",
 ]
 
@@ -107,32 +107,47 @@ cc_library(
 ## a Windows API compatibility shim
 cc_binary(
     name = "uwinapi",
-    srcs = glob(
-        [
-            "systools/win32/uwinapi/*.h",
-            "systools/win32/uwinapi/*.cpp",
-            "systools/win32/uwinapi/*.c",
+    srcs = glob(["systools/win32/uwinapi/*.h"]) + select({
+        # x64: MSVC has no inline assembler, so the naked-__asm thunk forwarders
+        # (IMPLEMENT_THUNK / DEFINE_*_THUNK in macros.h) don't compile.  On x64
+        # Windows every shimmed API exists natively, so — mirroring the dmake
+        # makefile.mk CPUNAME split (INTEL adds the thunks; x64 builds only the
+        # asm-free base set) — compile just the four base TUs on x64.  Exports
+        # shrink to uwinapi64.dxp's single symbol (see the Uwinapi64.def below).
+        "//build:arch_x64": [
+            "systools/win32/uwinapi/ResolveThunk.cpp",
+            "systools/win32/uwinapi/SHCreateItemFromParsingName.cpp",
+            "systools/win32/uwinapi/snprintf.c",
+            "systools/win32/uwinapi/snwprintf.c",
         ],
-        exclude = [
-            # function-body fragments — #include'd by other .cpp files
-            "systools/win32/uwinapi/GetLongPathName.cpp",
-            "systools/win32/uwinapi/GetUserDomain_NT.cpp",
-            "systools/win32/uwinapi/GetUserDomain_WINDOWS.cpp",
-            # not in original makefile SLOFILES — incomplete/broken TUs 
-            "systools/win32/uwinapi/SHILCreateFromPathW.cpp",
-            "systools/win32/uwinapi/MCIWndCreateW.cpp",
-            "systools/win32/uwinapi/sntprintf.c",
-        ],
-    ),
+        "//conditions:default": glob(
+            [
+                "systools/win32/uwinapi/*.cpp",
+                "systools/win32/uwinapi/*.c",
+            ],
+            exclude = [
+                # function-body fragments — #include'd by other .cpp files
+                "systools/win32/uwinapi/GetLongPathName.cpp",
+                "systools/win32/uwinapi/GetUserDomain_NT.cpp",
+                "systools/win32/uwinapi/GetUserDomain_WINDOWS.cpp",
+                # not in original makefile SLOFILES — incomplete/broken TUs
+                "systools/win32/uwinapi/SHILCreateFromPathW.cpp",
+                "systools/win32/uwinapi/MCIWndCreateW.cpp",
+                "systools/win32/uwinapi/sntprintf.c",
+            ],
+        ),
+    }),
     linkshared = True,
     copts = _COPTS,
     defines = _DEFINES,
     deps = [":sal_headers", ":uwinapi_fragments"],
     linkopts = [
-        "/DEF:main/sal/systools/win32/uwinapi/Uwinapi.def",
         "kernel32.lib", "user32.lib", "advapi32.lib",
         "version.lib", "shlwapi.lib",
-    ],
+    ] + select({
+        "//build:arch_x64": ["/DEF:main/sal/systools/win32/uwinapi/Uwinapi64.def"],
+        "//conditions:default": ["/DEF:main/sal/systools/win32/uwinapi/Uwinapi.def"],
+    }),
     visibility = ["//visibility:public"],
 )
 ## final shared dll

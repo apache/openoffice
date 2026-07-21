@@ -1,0 +1,29 @@
+; Windows export file for salhelper3MSC.dll (x64 / mscx)
+; Derived from salhelper/source/mscx.map (all global: sections)
+; GetVersionInfo excluded (build-system artifact, not in source)
+LIBRARY salhelper3MSC
+EXPORTS
+    ??0ORealDynamicLoader@salhelper@@IEAA@PEAPEAV01@AEBVOUString@rtl@@1PEAX2@Z
+    ??1ORealDynamicLoader@salhelper@@MEAA@XZ
+    ??_7ORealDynamicLoader@salhelper@@6B@
+    ?acquire@ORealDynamicLoader@salhelper@@QEAAKXZ
+    ?getApi@ORealDynamicLoader@salhelper@@QEBAPEAXXZ
+    ?newInstance@ORealDynamicLoader@salhelper@@SAPEAV12@PEAPEAV12@AEBVOUString@rtl@@1@Z
+    ?release@ORealDynamicLoader@salhelper@@QEAAKXZ
+    ??1SimpleReferenceObject@salhelper@@MEAA@XZ
+    ??2SimpleReferenceObject@salhelper@@SAPEAX_K@Z
+    ??2SimpleReferenceObject@salhelper@@SAPEAX_KAEBUnothrow_t@std@@@Z
+    ??3SimpleReferenceObject@salhelper@@SAXPEAX@Z
+    ??3SimpleReferenceObject@salhelper@@SAXPEAXAEBUnothrow_t@std@@@Z
+    ??_7SimpleReferenceObject@salhelper@@6B@
+    ??0Condition@salhelper@@QEAA@AEAVMutex@osl@@@Z
+    ??1Condition@salhelper@@UEAA@XZ
+    ??0ConditionModifier@salhelper@@QEAA@AEAVCondition@1@@Z
+    ??1ConditionModifier@salhelper@@QEAA@XZ
+    ??0ConditionWaiter@salhelper@@QEAA@AEAVCondition@1@@Z
+    ??0ConditionWaiter@salhelper@@QEAA@AEAVCondition@1@K@Z
+    ??1ConditionWaiter@salhelper@@QEAA@XZ
+    ??0timedout@ConditionWaiter@salhelper@@QEAA@XZ
+    ??0timedout@ConditionWaiter@salhelper@@QEAA@AEBU012@@Z
+    ??1timedout@ConditionWaiter@salhelper@@UEAA@XZ
+    ??4timedout@ConditionWaiter@salhelper@@QEAAAEAU012@AEBU012@@Z

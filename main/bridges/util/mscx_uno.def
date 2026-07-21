@@ -1,0 +1,8 @@
+; Windows export file for mscx_uno.dll (x64 C++/UNO bridge)
+; Exports the three C-linkage entry points from source/cpp_uno/shared/component.cxx
+; (undecorated extern "C" names — identical on x86/x64; only the DLL name differs)
+LIBRARY mscx_uno
+EXPORTS
+    component_canUnload
+    uno_initEnvironment
+    uno_ext_getMapping

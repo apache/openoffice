@@ -12,7 +12,7 @@ _COPTS = [
 _DEFINES = [
     "WNT", "GUI", "WIN32", "_MT",
     "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
-    "CPPU_ENV=msci", "INTEL", "_X86_=1",
+    "CPPU_ENV=msci", 
     "FULL_DESK",
 ]
 
@@ -43,7 +43,12 @@ cc_binary(
     ],
     additional_linker_inputs = ["//main/sal:sal_implib"],
     linkshared = True,
-    win_def_file = "util/salhelper.def",
+    # x64 uses a .def with x64 C++ name mangling (mscx.map: __cdecl __ptr64
+    # QEAA/PEAV/AEBV, size_t=_K), vs x86's __thiscall QAE/AAV (msci.map).
+    win_def_file = select({
+        "//build:arch_x64": "util/salhelperx64.def",
+        "//conditions:default": "util/salhelper.def",
+    }),
     linkopts = [
         "$(execpath //main/sal:sal_implib)",
     ],
