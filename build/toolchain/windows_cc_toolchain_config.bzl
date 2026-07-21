@@ -837,6 +837,20 @@ def _impl(ctx):
         if ctx.attr.win32_winnt_flag:
             default_compile_flags_list.append(ctx.attr.win32_winnt_flag)
 
+        # Per-arch CPU defines, injected globally like _HAS_ITERATOR_DEBUGGING=0
+        # above so no per-module BUILD file carries an arch flag (Win64 Phase 2).
+        #   x86 → _X86_=1, INTEL      x64 → _AMD64_=1, X86_64
+        # (WIN32/WNT/GUI stay in the module BUILDs — they're arch-neutral on Windows;
+        #  the x64 compiler auto-defines _WIN64, so WIN64 is NOT defined here.)
+        # Values verified against origin/windows-amd64 (settings.mk -D$(CPUNAME) +
+        # wntmsci11.mk/wntmscx.mk), which keeps WIN32 on both arches.
+        for arch_def in ctx.attr.arch_defines:
+            default_compile_flags_list.append("/D" + arch_def)
+
+        # MASM flags differ by arch: the x86 ml.exe takes /c /coff /Cx (/Cx keeps
+        # PUBLIC symbol case, /coff emits COFF).  The x64 ml64.exe REJECTS both
+        # /coff and /Cx (it only emits COFF and preserves case), so the x64
+        # toolchain passes just ["/c"].  Driven by the masm_flags attr.
         masm_flags_feature = feature(
             name = "masm_flags",
             flag_sets = [
@@ -845,7 +859,7 @@ def _impl(ctx):
                         ACTION_NAMES.assemble,
                         ACTION_NAMES.preprocess_assemble,
                     ],
-                    flag_groups = [flag_group(flags = ["/c", "/coff", "/Cx"])],
+                    flag_groups = [flag_group(flags = ctx.attr.masm_flags)],
                 ),
             ],
         )
@@ -1400,7 +1414,9 @@ def _impl(ctx):
                     # table (e.g. ICU's icudt49_dat.obj). SafeSEH is a ship-time
                     # mitigation and these are non-distributed debug binaries, so
                     # disabling it here is harmless and only affects the generate_pdb path.
-                    flag_groups = [flag_group(flags = ["/DEBUG:FASTLINK", "/SAFESEH:NO"])],
+                    # SafeSEH is an x86-only concept; the x64 linker rejects /SAFESEH,
+                    # so the x64 toolchain drops it via the pdb_link_flags attr.
+                    flag_groups = [flag_group(flags = ctx.attr.pdb_link_flags)],
                 ),
             ],
         )
@@ -1820,6 +1836,7 @@ cc_toolchain_config = rule(
     attrs = {
         "abi_libc_version": attr.string(),
         "abi_version": attr.string(),
+        "arch_defines": attr.string_list(default = []),
         "archiver_flags": attr.string_list(default = []),
         "all_compile_flags": attr.string_list(),
         "compiler": attr.string(),
@@ -1851,6 +1868,8 @@ This is only offered as a migration bridge for projects transitioning to rule-ba
         "fastbuild_mode_debug_flag": attr.string(default = ""),
         "host_system_name": attr.string(),
         "link_flags": attr.string_list(),
+        # MASM flags: x86 ml.exe = /c /coff /Cx; x64 ml64.exe = /c only (rejects /coff, /Cx).
+        "masm_flags": attr.string_list(default = ["/c", "/coff", "/Cx"]),
         "msvc_cl_path": attr.string(default = "vc_installation_error.bat"),
         "msvc_env_include": attr.string(default = "msvc_not_found"),
         "msvc_env_lib": attr.string(default = "msvc_not_found"),
@@ -1860,6 +1879,9 @@ This is only offered as a migration bridge for projects transitioning to rule-ba
         "msvc_link_path": attr.string(default = "vc_installation_error.bat"),
         "msvc_ml_path": attr.string(default = "vc_installation_error.bat"),
         "pdb_link_path": attr.string(default = "vc_installation_error.bat"),
+        # generate_pdb linker flags: x86 needs /SAFESEH:NO (modern linker enforces
+        # safeseh on x86); x64 drops it (safeseh is x86-only, x64 link rejects it).
+        "pdb_link_flags": attr.string_list(default = ["/DEBUG:FASTLINK", "/SAFESEH:NO"]),
         "shorten_virtual_includes": attr.bool(default = False),
         "supports_parse_showincludes": attr.bool(),
         "target_libc": attr.string(),

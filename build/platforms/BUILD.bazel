@@ -1,0 +1,26 @@
+# Target platforms for the dual-arch Windows build.
+# Selected via --platforms (wired to --config=x86 / --config=x64 in .bazelrc);
+# the target cpu constraint picks which //build/toolchain cc_toolchain resolves.
+#
+#   windows_x86 → @platforms//cpu:x86_32 → cc_toolchain_x86_vs2008 (default build)
+#   windows_x64 → @platforms//cpu:x86_64 → cc_toolchain_x64_vs2008 (Win64 build)
+#
+# The exec (host) platform stays Bazel's auto-detected x64 Windows host for both.
+
+platform(
+    name = "windows_x86",
+    constraint_values = [
+        "@platforms//os:windows",
+        "@platforms//cpu:x86_32",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+platform(
+    name = "windows_x64",
+    constraint_values = [
+        "@platforms//os:windows",
+        "@platforms//cpu:x86_64",
+    ],
+    visibility = ["//visibility:public"],
+)

@@ -48,14 +48,18 @@ _DEFAULT_PERL = "C:\\msys64\\usr\\bin\\perl.exe"
 # link.exe for the generate_pdb path (see _find_modern_link / PDB_LINK below).
 _DEFAULT_VS_MODERN = "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools"
 
-def _find_modern_link(rctx, vs_modern):
-    """Locate the newest VS2017+ x86-target link.exe under a BuildTools/VS root.
+def _find_modern_link(rctx, vs_modern, target = "x86"):
+    """Locate the newest VS2017+ link.exe (for the given target arch) under a
+    BuildTools/VS root.
 
     The VC9 link.exe cannot write PDBs in parallel (single mspdbsrv, no /FS, the
     LNK1318 bug); LLVM lld-link cannot write PDBs from VC9-era CodeView at all
     ("Stream too short"). A modern MSVC link.exe reads the VC9 /Z7 objects natively
     and its mspdbsrv handles parallel PDB writes, so the generate_pdb link path
     uses it. Returns a placeholder if none is found (only breaks generate_pdb builds).
+
+    target = "x86" or "x64" selects the bin\\Host*\\<target>\\link.exe leaf so the
+    x64 toolchain gets an x64-target modern linker for its own generate_pdb path.
     """
     tools = rctx.path(vs_modern + "\\VC\\Tools\\MSVC")
     if not tools.exists:
@@ -63,7 +67,7 @@ def _find_modern_link(rctx, vs_modern):
     best = None
     for ver in tools.readdir():
         for host in ["Hostx64", "Hostx86"]:
-            link = ver.get_child("bin").get_child(host).get_child("x86").get_child("link.exe")
+            link = ver.get_child("bin").get_child(host).get_child(target).get_child("link.exe")
             if link.exists:
                 if best == None or ver.basename > best[0]:
                     best = (ver.basename, str(link))
@@ -79,7 +83,8 @@ def _vs_config_impl(rctx):
     perl = rctx.os.environ.get("PERL_PATH", _DEFAULT_PERL)
     vs_modern = rctx.os.environ.get("VS_MODERN_PATH", _DEFAULT_VS_MODERN)
     vc   = vs + "\\VC"
-    pdb_link = _find_modern_link(rctx, vs_modern)
+    pdb_link = _find_modern_link(rctx, vs_modern, "x86")
+    pdb_link_x64 = _find_modern_link(rctx, vs_modern, "x64")
     debug_crt = vc + "\\redist\\Debug_NonRedist\\x86\\Microsoft.VC90.DebugCRT"
 
     def q(p):
@@ -150,6 +155,7 @@ def _vs_config_impl(rctx):
         'DEBUG_CRT_DIR = "{}"'.format(q(debug_crt)),
         'LINK_WRAPPER = "{}"'.format(q(link_wrapper)),
         'PDB_LINK = "{}"'.format(q(pdb_link)),
+        'PDB_LINK_X64 = "{}"'.format(q(pdb_link_x64)),
         "",
     ])
     rctx.file("paths.bzl", content)

@@ -8,3 +8,22 @@ common --check_direct_dependencies=off
 
 common --registry="file:///%workspace%/ext_libraries"
 common --registry=https://bcr.bazel.build
+
+# ---------------------------- Architecture (x86 / x64) ----------------------------
+# x86 is the DEFAULT build (a plain `bazel build` = 32-bit).  Now that the x86
+# toolchain correctly targets @platforms//cpu:x86_32, the target platform must be
+# pinned explicitly (the auto host platform is x86_64 and would not resolve it).
+# Each arch pins --platforms + a distinct --platform_suffix (separate bazel-out
+# trees, no clobber) + --symlink_prefix (both convenience symlinks coexist).
+# --config=x64 overrides these x86 defaults (all three are last-value-wins).
+build --platforms=//build/platforms:windows_x86
+build --platform_suffix=x86
+build --symlink_prefix=bazel-x86-
+
+build:x86 --platforms=//build/platforms:windows_x86
+build:x86 --platform_suffix=x86
+build:x86 --symlink_prefix=bazel-x86-
+
+build:x64 --platforms=//build/platforms:windows_x64
+build:x64 --platform_suffix=x64
+build:x64 --symlink_prefix=bazel-x64-

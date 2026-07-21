@@ -1,8 +1,17 @@
 load("@rules_cc//cc/toolchains:cc_toolchain.bzl", "cc_toolchain")
 load(":windows_cc_toolchain_config.bzl", "cc_toolchain_config")
-load("@vs_config//:paths.bzl", _VS = "VS", _VC = "VC", _SDK = "SDK", _MSVC_TMP = "MSVC_TMP", _LINK_WRAPPER = "LINK_WRAPPER", _PDB_LINK = "PDB_LINK")
+load("@vs_config//:paths.bzl", _VS = "VS", _VC = "VC", _SDK = "SDK", _MSVC_TMP = "MSVC_TMP", _LINK_WRAPPER = "LINK_WRAPPER", _PDB_LINK = "PDB_LINK", _PDB_LINK_X64 = "PDB_LINK_X64")
 
-# VS2008 x86 toolchain for Apache OpenOffice on Windows
+# VS2008 toolchains for Apache OpenOffice on Windows.
+# Two targets share one windows_cc_toolchain_config.bzl, parameterized by arch:
+#   * x86 (cc_toolchain_x86_vs2008) — the default build, VC\bin\{cl,ml,link}.exe,
+#     SDK\lib + VC\LIB, /MACHINE:X86, ml /coff /Cx.  Targets @platforms//cpu:x86_32.
+#   * x64 (cc_toolchain_x64_vs2008) — the Win64 build, VC\bin\x86_amd64 cross tools
+#     (cl/ml64/link) + VC\bin\amd64\lib.exe, SDK\lib\x64 + VC\LIB\amd64,
+#     /MACHINE:X64, ml64 /c only.  Targets @platforms//cpu:x86_64.
+# The exec platform for both is this x64 Windows host (@platforms//cpu:x86_64);
+# --platforms=//build/platforms:windows_{x86,x64} (via --config=x86/x64) picks the
+# target arch and thus which toolchain resolves.
 # Paths are configured via --repo_env=VS_PATH / --repo_env=SDK_PATH in user.bazelrc.
 
 filegroup(name = "empty", srcs = [])
@@ -70,6 +79,9 @@ cc_toolchain_config(
     },
     archiver_flags         = ["/MACHINE:X86"],
     default_link_flags     = ["/MACHINE:X86"],
+    # Per-arch CPU defines injected globally (Win64 Phase 2) so no module BUILD
+    # carries an arch flag.  x86 → _X86_=1, INTEL.  WIN32 stays in the modules.
+    arch_defines           = ["_X86_=1", "INTEL"],
     dbg_mode_debug_flag      = "",   # /Z7 embeds debug info in objects at compile; linker PDB (/DEBUG via --features=generate_pdb) uses the per-action mspdbsrv wrapper above for parallel links
     fastbuild_mode_debug_flag = "",  # same — /Z7 embeds, no compile-time PDB
     supports_parse_showincludes = False,
@@ -97,13 +109,133 @@ cc_toolchain(
 toolchain(
     name = "cc_toolchain_x86_vs2008_def",
     exec_compatible_with = [
+        # Exec = this x64 Windows host.
         "@platforms//cpu:x86_64",
         "@platforms//os:windows",
     ],
     target_compatible_with = [
-        "@platforms//cpu:x86_64",
+        # FIX: the x86 toolchain builds 32-bit binaries, so its TARGET cpu is
+        # x86_32 — not x86_64 as it wrongly declared before.  Resolved against
+        # //build/platforms:windows_x86 (--config=x86, the default).
+        "@platforms//cpu:x86_32",
         "@platforms//os:windows",
     ],
     toolchain      = ":cc_toolchain_x86_vs2008",
+    toolchain_type = "@bazel_tools//tools/cpp:toolchain_type",
+)
+
+# ============================ x64 (Win64) toolchain ============================
+
+cc_toolchain_config(
+    name = "vs2008_x64_config",
+    cpu = "x64_windows",  # MSVC toolchain-config selector (not the platform cpu)
+    compiler = "msvc-cl",
+    host_system_name = "local",
+    target_system_name = "local",
+    target_libc = "msvcrt",
+    abi_version = "local",
+    abi_libc_version = "local",
+    toolchain_identifier = "msvc_x64_vs2008",
+    msvc_env_tmp  = _MSVC_TMP,
+    # PATH: the x86_amd64 CROSS cl/link (host-x86, target-x64) resolve their own
+    # c1/c2 DLLs from their dir, but mspdb/1033 live in VC\BIN — so both dirs are
+    # on PATH.  amd64\ (native x64 tools, e.g. lib.exe) is also on PATH.
+    msvc_env_path = (
+        _SDK + "\\bin;" +
+        _VS  + "\\Common7\\IDE;" +
+        _VC  + "\\BIN\\x86_amd64;" +
+        _VC  + "\\BIN\\amd64;" +
+        _VC  + "\\BIN;" +
+        _VS  + "\\Common7\\Tools"
+    ),
+    # Headers are arch-neutral — same INCLUDE as x86.
+    msvc_env_include = (
+        _SDK + "\\include;" +
+        _VC  + "\\ATLMFC\\INCLUDE;" +
+        _VC  + "\\INCLUDE"
+    ),
+    # LIB is the x64 variant: SDK\lib\x64 + VC\...\amd64.
+    msvc_env_lib = (
+        _SDK + "\\lib\\x64;" +
+        _VC  + "\\ATLMFC\\LIB\\amd64;" +
+        _VC  + "\\LIB\\amd64"
+    ),
+    tool_bin_path  = _VC + "\\bin\\x86_amd64",
+    msvc_cl_path   = _VC + "\\bin\\x86_amd64\\cl.exe",
+    msvc_ml_path   = _VC + "\\bin\\x86_amd64\\ml64.exe",
+    # x64 generate_pdb path uses an x64-target modern link.exe (Host*\x64).
+    pdb_link_path  = _PDB_LINK_X64,
+    # Default (non-PDB) links use the x86_amd64 cross link.exe directly.  The
+    # mspdbsrv-endpoint wrapper (LINK_WRAPPER) is x86-link-specific and only
+    # matters for parallel /DEBUG PDB writes, which the default /Z7-embed build
+    # does not do — so x64 skips it.  (If x64 debug PDB builds later hit LNK1318,
+    # generate an x64 wrapper in vs_config_repo.bzl and point this there.)
+    msvc_link_path = _VC + "\\bin\\x86_amd64\\link.exe",
+    # x86_amd64\ has no lib.exe; use the native amd64 archiver (runs on this x64 host).
+    msvc_lib_path  = _VC + "\\bin\\amd64\\lib.exe",
+    cxx_builtin_include_directories = [
+        _SDK + "\\include",
+        _VC  + "\\ATLMFC\\INCLUDE",
+        _VC  + "\\INCLUDE",
+    ],
+    tool_paths = {
+        "ar":      _VC + "\\bin\\amd64\\lib.exe",
+        "cpp":     _VC + "\\bin\\x86_amd64\\cl.exe",
+        "gcc":     _VC + "\\bin\\x86_amd64\\cl.exe",
+        "gcov":    "wrapper/bin/msvc_nop.bat",
+        # Forward slashes required (rules_foreign_cc paths.dirname only splits '/').
+        "ld": (_VC + "\\bin\\x86_amd64\\link.exe").replace("\\", "/"),
+        "ml":      _VC + "\\bin\\x86_amd64\\ml64.exe",
+        "nm":      "wrapper/bin/msvc_nop.bat",
+        "objcopy": "wrapper/bin/msvc_nop.bat",
+        "objdump": "wrapper/bin/msvc_nop.bat",
+        "strip":   "wrapper/bin/msvc_nop.bat",
+    },
+    archiver_flags         = ["/MACHINE:X64"],
+    default_link_flags     = ["/MACHINE:X64"],
+    # Per-arch CPU defines injected globally (Win64 Phase 2).  x64 → _AMD64_=1,
+    # X86_64.  WIN32 stays in the modules; the x64 compiler auto-defines _WIN64.
+    arch_defines           = ["_AMD64_=1", "X86_64"],
+    # ml64 rejects the x86 /coff and /Cx flags — assemble with /c only.
+    masm_flags             = ["/c"],
+    # x64 has no SafeSEH — drop /SAFESEH:NO from the generate_pdb link.
+    pdb_link_flags         = ["/DEBUG:FASTLINK"],
+    dbg_mode_debug_flag       = "",
+    fastbuild_mode_debug_flag = "",
+    supports_parse_showincludes = False,
+    all_compile_flags = [],
+    conly_flags       = [],
+    cxx_flags         = [],
+    link_flags        = [],
+)
+
+cc_toolchain(
+    name = "cc_toolchain_x64_vs2008",
+    toolchain_identifier = "msvc_x64_vs2008",
+    toolchain_config     = ":vs2008_x64_config",
+    all_files      = ":empty",
+    ar_files       = ":empty",
+    as_files       = ":empty",
+    compiler_files = ":empty",
+    dwp_files      = ":empty",
+    linker_files   = ":empty",
+    objcopy_files  = ":empty",
+    strip_files    = ":empty",
+    supports_param_files = 1,
+)
+
+toolchain(
+    name = "cc_toolchain_x64_vs2008_def",
+    exec_compatible_with = [
+        # Exec = this x64 Windows host.
+        "@platforms//cpu:x86_64",
+        "@platforms//os:windows",
+    ],
+    target_compatible_with = [
+        # Target = Win64.  Resolved against //build/platforms:windows_x64 (--config=x64).
+        "@platforms//cpu:x86_64",
+        "@platforms//os:windows",
+    ],
+    toolchain      = ":cc_toolchain_x64_vs2008",
     toolchain_type = "@bazel_tools//tools/cpp:toolchain_type",
 )
