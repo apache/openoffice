@@ -16,7 +16,11 @@
 // The original AOO build used MinGW/GCC which ignores both calling convention
 // and exception specs in template type matching, so no fix was needed there.
 
-#ifdef _MSC_VER
+// x86 ONLY: on x64 there is a single calling convention (__cdecl), so the default
+// boost mf1 overload already matches SAL_CALL member pointers; defining
+// BOOST_MEM_FN_ENABLE_CDECL there makes mf1_cdecl duplicate mf1 → boost::bind
+// C2668 ambiguous.  Matches the x86-only handling in the boost.legacy overlay.
+#if defined(_MSC_VER) && !defined(_WIN64)
 #  define BOOST_MEM_FN_ENABLE_CDECL
 #endif
 

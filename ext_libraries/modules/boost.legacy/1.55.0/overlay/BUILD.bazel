@@ -2,13 +2,28 @@ load("@rules_cc//cc:defs.bzl", "cc_library")
 
 package(default_visibility = ["//visibility:public"])
 
+# x64 detection (local config_setting so this overlay stays self-contained and
+# doesn't reference main-repo labels).
+config_setting(
+    name = "x64",
+    constraint_values = ["@platforms//cpu:x86_64"],
+)
+
 # Boost is header-only for the parts used in AOO (bind, unordered, etc.)
-# BOOST_MEM_FN_ENABLE_CDECL: MSVC 9.0 (VS2008) encodes SAL_CALL (__cdecl) into
-# member-function-pointer types for template argument deduction. Without this
-# define, boost::bind falls through to the generic path and fails with C2825.
+# BOOST_MEM_FN_ENABLE_CDECL (x86 ONLY): on x86, MSVC 9.0 (VS2008) member functions
+# default to __thiscall, which differs from SAL_CALL (__cdecl), so boost needs the
+# explicit __cdecl mem_fn overload for template argument deduction of SAL_CALL
+# member-function pointers — without it boost::bind fails C2825.
+# On x64 there is a SINGLE calling convention (__cdecl), so __thiscall == __cdecl and
+# the explicit-cdecl overload becomes identical to the default one → boost::bind is
+# AMBIGUOUS (C2668).  So the define must NOT be set on x64 (matches wntmscx.mk, which
+# comments it out).
 cc_library(
     name = "boost.legacy",
     hdrs = glob(["boost/**/*.hpp"]),
     includes = ["."],
-    defines = ["BOOST_MEM_FN_ENABLE_CDECL"],
+    defines = select({
+        ":x64": [],
+        "//conditions:default": ["BOOST_MEM_FN_ENABLE_CDECL"],
+    }),
 )
