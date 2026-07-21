@@ -146,6 +146,7 @@ typedef unsigned char		SQLVARCHAR;
  *  New Win64 datatypes
  */
 #ifdef _WIN64
+#include <basetsd.h>			/* INT64 / UINT64 (not otherwise pulled in here) */
 typedef INT64			SQLLEN;
 typedef UINT64			SQLULEN;
 typedef UINT64			SQLSETPOSIROW;

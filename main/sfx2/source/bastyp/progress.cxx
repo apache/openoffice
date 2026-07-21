@@ -110,7 +110,8 @@ struct SfxProgress_Impl
 #define aTypeLibInfo aProgressTypeLibImpl
 
 //========================================================================
-extern sal_uIntPtr Get10ThSec();
+extern sal_uInt32 Get10ThSec();  // must match the definition in sfxbasecontroller.cxx
+                                 // (sal_uInt32); sal_uIntPtr diverges from it on x64
 
 // -----------------------------------------------------------------------
 
