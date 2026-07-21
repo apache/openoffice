@@ -1,0 +1,8 @@
+; jvmaccess3MSC.dll x64 export file.
+; Exports come from __declspec(dllexport) (JVMACCESS_DLLPUBLIC = SAL_DLLPUBLIC_EXPORT
+; in inc/jvmaccess/jvmaccessdllapi.h), which emits all 16 /EXPORT: directives with
+; correct x64 mangling — so this def only sets the LIBRARY name (same pattern as
+; cppuhelper3MSC.def).  The x86 jvmaccess.def lists explicit x86-mangled (__thiscall
+; QAE) names; x64 mangling differs (QEAA/PEAX/AEBV) and there is no mscx.map to
+; regenerate from, but dllexport already provides every export.
+LIBRARY jvmaccess3MSC

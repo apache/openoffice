@@ -41,7 +41,13 @@ cc_binary(
     copts = _COPTS,
     defines = _DEFINES,
     linkshared = True,
-    win_def_file = "util/jvmaccess.def",
+    # x86 uses explicit x86-mangled exports; x64 has no mscx.map, but the source
+    # uses JVMACCESS_DLLPUBLIC (__declspec(dllexport)) so an empty def suffices on
+    # x64 (dllexport emits all 16 exports with x64 mangling — like cppuhelper).
+    win_def_file = select({
+        "//build:arch_x64": "util/jvmaccessx64.def",
+        "//conditions:default": "util/jvmaccess.def",
+    }),
     deps = [
         ":jvmaccess_headers",
         "//main/sal:sal_headers",

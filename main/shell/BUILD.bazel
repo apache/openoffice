@@ -408,8 +408,12 @@ cc_binary(
         "//main/basegfx:basegfx",
         "//main/i18npool:i18nisolang1MSC",
         "//main/external/msvcp90:crt_dlls",
-        "util/lngconvex.exe.manifest",
-    ],
+        # amd64 app manifest for the x64 (exec) tool — matches the arch-selected CRT
+        # (an x86 manifest → loader rejects amd64 msvcr90.dll, 0xC000007B).
+    ] + select({
+        "//build:arch_x64": ["util/amd64/lngconvex.exe.manifest"],
+        "//conditions:default": ["util/lngconvex.exe.manifest"],
+    }),
     visibility = ["//visibility:public"],
 )
 

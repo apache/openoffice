@@ -134,9 +134,13 @@ cc_binary(
         "advapi32.lib", "gdi32.lib", "gdiplus.lib", "imm32.lib",
         "mpr.lib", "msimg32.lib", "ole32.lib", "shell32.lib",
         "user32.lib", "uuid.lib", "version.lib", "winspool.lib",
-        "/ENTRY:LibMain@12",
+        # LibMain is WINAPI (__stdcall): x86 decorates it _LibMain@12; x64 has no
+        # stdcall @N decoration, so the entry symbol is the undecorated LibMain.
         "/MANIFEST:NO",
-    ],
+    ] + select({
+        "//build:arch_x64": ["/ENTRY:LibMain"],
+        "//conditions:default": ["/ENTRY:LibMain@12"],
+    }),
     visibility = ["//visibility:public"],
 )
 

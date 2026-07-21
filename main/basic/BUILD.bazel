@@ -66,8 +66,12 @@ cc_binary(
         "source/inc/**",
     ]) + [
         "inc/pch/precompiled_basic.cxx",
-        "source/runtime/wnt.asm",
-    ],
+    ] + select({
+        # wnt.asm is the x86 stdcall trampoline for Basic Declare'd DLL calls; on
+        # x64 dllmgr.cxx uses the not-implemented stub instead (no asm to assemble).
+        "//build:arch_x64": [],
+        "//conditions:default": ["source/runtime/wnt.asm"],
+    }),
     copts = _COPTS,
     defines = _DEFINES + ["BASIC_DLLIMPLEMENTATION"],
     linkshared = True,

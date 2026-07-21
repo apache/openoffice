@@ -72,8 +72,15 @@ cc_binary(
         "//main/basegfx:basegfx",
         "//main/i18npool:i18nisolang1MSC",
         "//main/external/msvcp90:crt_dlls",
-        "util/svidl.exe.manifest",
-    ],
+        # App manifest declares the CRT-assembly processorArchitecture; must match
+        # the (arch-selected) CRT.  x64 svidl is exec-built for the x64 host, so it
+        # needs the amd64 manifest — an x86 manifest makes the loader reject the
+        # amd64 msvcr90.dll (0xC000007B STATUS_INVALID_IMAGE_FORMAT).  Staged by
+        # basename, so both are named svidl.exe.manifest.
+    ] + select({
+        "//build:arch_x64": ["util/amd64/svidl.exe.manifest"],
+        "//conditions:default": ["util/svidl.exe.manifest"],
+    }),
     visibility = ["//visibility:public"],
 )
 
