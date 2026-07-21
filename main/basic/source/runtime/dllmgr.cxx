@@ -60,7 +60,11 @@
    variables accordingly.
 */
 
-#if defined WNT // only 32-bit Windows, actually
+#if defined(WNT) && !defined(_WIN64) // only 32-bit Windows: the DllMgr_call32/callFp
+                                     // trampolines (wnt.asm) are x86 stdcall only.
+                                     // x64 falls through to the not-implemented stub
+                                     // below (Basic Declare'd DLL calls unsupported on
+                                     // x64 until an x64 trampoline is written).
 
 extern "C" {
 

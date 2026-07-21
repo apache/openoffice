@@ -622,7 +622,7 @@ void ImplClearHDCCache( SalData* pData )
 // Make sure pWinPointAry and pWinFlagAry are big enough
 void ImplPreparePolyDraw( bool						bCloseFigures,
                           sal_uLong 					nPoly,
-                          const sal_uLong* 				pPoints,
+                          const sal_uInt32* 				pPoints,
                           const SalPoint* const* 	pPtAry,
                           const BYTE* const* 		pFlgAry,
                           POINT* 					pWinPointAry,
@@ -1601,7 +1601,7 @@ sal_Bool WinSalGraphics::drawPolyPolygonBezier( sal_uInt32 nPoly, const sal_uInt
 				"WinSalGraphics::DrawPolyPolygonBezier(): POINT != SalPoint" );
 
     sal_uLong nCurrPoly, nTotalPoints;
-    const sal_uLong* pCurrPoints = pPoints;
+    const sal_uInt32* pCurrPoints = pPoints;
     for( nCurrPoly=0, nTotalPoints=0; nCurrPoly<nPoly; ++nCurrPoly )
         nTotalPoints += *pCurrPoints++;
 
