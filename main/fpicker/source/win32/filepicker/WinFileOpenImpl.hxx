@@ -170,7 +170,7 @@ protected:
 	virtual bool SAL_CALL preModal( );
 	virtual void SAL_CALL postModal( sal_Int16 nDialogResult );
 
-	virtual sal_uInt32 SAL_CALL onFileOk();
+	virtual UINT_PTR SAL_CALL onFileOk();
 	virtual void SAL_CALL onSelChanged( HWND hwndListBox );
 
 	// only called back if OFN_EXPLORER is set
@@ -181,7 +181,7 @@ protected:
 	// call base class method first when overloading
 	virtual void SAL_CALL onInitDialog( HWND hwndDlg );
 
-	virtual sal_uInt32 SAL_CALL onCtrlCommand( HWND hwndDlg, sal_uInt16 ctrlId, sal_uInt16 notifyCode );
+	virtual UINT_PTR SAL_CALL onCtrlCommand( HWND hwndDlg, sal_uInt16 ctrlId, sal_uInt16 notifyCode );
 
 
 	void onWMSize();

@@ -508,7 +508,7 @@ inline sal_Bool SAL_CALL CWinFileOpenImpl::IsCustomControlHelpRequested(LPHELPIN
 LRESULT CALLBACK CWinFileOpenImpl::SubClassFunc(
     HWND hWnd, UINT wMessage, WPARAM wParam, LPARAM lParam)
 {
-	unsigned int lResult = 0;
+	LRESULT lResult = 0;
 
     CWinFileOpenImpl* pImpl = dynamic_cast<CWinFileOpenImpl*>(getCurrentInstance(hWnd));
 
@@ -553,8 +553,8 @@ LRESULT CALLBACK CWinFileOpenImpl::SubClassFunc(
 
     case WM_NCDESTROY:
 		// restore the old window proc
-		SetWindowLong(hWnd, GWL_WNDPROC,
-			reinterpret_cast<LONG>(pImpl->m_pfnOldDlgProc));
+		SetWindowLongPtr(hWnd, GWLP_WNDPROC,
+			reinterpret_cast<LONG_PTR>(pImpl->m_pfnOldDlgProc));
 
 		lResult = CallWindowProc(
 			reinterpret_cast<WNDPROC>(pImpl->m_pfnOldDlgProc),
@@ -654,7 +654,7 @@ BOOL CALLBACK CWinFileOpenImpl::EnumChildWndProc(HWND hWnd, LPARAM lParam)
 //
 //-----------------------------------------------------------------
 
-sal_uInt32 SAL_CALL CWinFileOpenImpl::onFileOk()
+UINT_PTR SAL_CALL CWinFileOpenImpl::onFileOk()
 {
     m_NonExecuteFilePickerState->reset();
 
@@ -832,7 +832,7 @@ void SAL_CALL CWinFileOpenImpl::onTypeChanged(sal_uInt32)
 // onMessageCommand handler
 //-----------------------------------------------------------------------------------------
 
-sal_uInt32 SAL_CALL CWinFileOpenImpl::onCtrlCommand(
+UINT_PTR SAL_CALL CWinFileOpenImpl::onCtrlCommand(
 	HWND, sal_uInt16 ctrlId, sal_uInt16)
 {
     SetDefaultExtension();
@@ -905,8 +905,8 @@ void SAL_CALL CWinFileOpenImpl::onInitDialog(HWND hwndDlg)
 	// subclass the dialog window
 	m_pfnOldDlgProc =
 		reinterpret_cast<WNDPROC>(
-			SetWindowLong( hwndDlg, GWL_WNDPROC,
-			reinterpret_cast<LONG>(SubClassFunc)));
+			SetWindowLongPtr( hwndDlg, GWLP_WNDPROC,
+			reinterpret_cast<LONG_PTR>(SubClassFunc)));
 }
 
 //-----------------------------------------------------------------------------------------
