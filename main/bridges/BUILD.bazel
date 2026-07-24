@@ -19,7 +19,6 @@ _COPTS = [
 _DEFINES = [
     "WNT", "GUI", "WIN32",
     "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
-    "CPPU_ENV=msci", 
     "FULL_DESK",
     # Needed by vtablefactory.cxx for the Windows code path
     "LEAK_STATIC_DATA",
@@ -169,6 +168,21 @@ filegroup(
     name = "mscx_uno_implib",
     srcs = [":mscx_uno"],
     output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── cpp_uno_bridge — arch-selecting alias for the C++/UNO bridge DLL ──────────
+# Resolves to msci_uno.dll (x86) or mscx_uno.dll (x64) IN THE CONSUMER'S CONFIG.
+# This is what exec-config codegen tools (e.g. i18npool saxparser) depend on: the
+# select keys off the exec platform (x86_64 host), so it picks the compatible
+# mscx_uno and never pulls the x86-only msci_uno into an x64 exec config.  Runtime
+# staging (target config) can also use it instead of a hand-written select().
+alias(
+    name = "cpp_uno_bridge",
+    actual = select({
+        "//build:arch_x64": ":mscx_uno",
+        "//conditions:default": ":msci_uno",
+    }),
     visibility = ["//visibility:public"],
 )
 

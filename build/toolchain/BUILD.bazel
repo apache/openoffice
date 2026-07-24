@@ -81,7 +81,11 @@ cc_toolchain_config(
     default_link_flags     = ["/MACHINE:X86"],
     # Per-arch CPU defines injected globally (Win64 Phase 2) so no module BUILD
     # carries an arch flag.  x86 → _X86_=1, INTEL.  WIN32 stays in the modules.
-    arch_defines           = ["_X86_=1", "INTEL"],
+    # CPPU_ENV (the C++/UNO environment name — lbnames.h picks the bridge DLL:
+    # msci_uno.dll here) is arch-dependent exactly like _X86_/_AMD64_, so it is
+    # injected globally too (mirrors solenv wntmsci*.mk); the per-module
+    # CPPU_ENV=msci literals were stripped (would override this on x64).
+    arch_defines           = ["_X86_=1", "INTEL", "CPPU_ENV=msci"],
     dbg_mode_debug_flag      = "",   # /Z7 embeds debug info in objects at compile; linker PDB (/DEBUG via --features=generate_pdb) uses the per-action mspdbsrv wrapper above for parallel links
     fastbuild_mode_debug_flag = "",  # same — /Z7 embeds, no compile-time PDB
     supports_parse_showincludes = False,
@@ -195,7 +199,11 @@ cc_toolchain_config(
     default_link_flags     = ["/MACHINE:X64"],
     # Per-arch CPU defines injected globally (Win64 Phase 2).  x64 → _AMD64_=1,
     # X86_64.  WIN32 stays in the modules; the x64 compiler auto-defines _WIN64.
-    arch_defines           = ["_AMD64_=1", "X86_64"],
+    # CPPU_ENV=mscx is the x64 C++/UNO environment name (lbnames.h → loads
+    # mscx_uno.dll); injected globally like the CPU defines so every UNO DLL/tool
+    # in the x64 build requests the mscx bridge consistently (the per-module
+    # CPPU_ENV=msci literals were stripped so they can't override this).
+    arch_defines           = ["_AMD64_=1", "X86_64", "CPPU_ENV=mscx"],
     # ml64 rejects the x86 /coff and /Cx flags — assemble with /c only.
     masm_flags             = ["/c"],
     # x64 has no SafeSEH — drop /SAFESEH:NO from the generate_pdb link.

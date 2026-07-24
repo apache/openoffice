@@ -3,7 +3,6 @@ load("@rules_cc//cc:defs.bzl", "cc_binary")
 _DEFINES = [
     "WNT", "GUI", "WIN32",
     "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
-    "CPPU_ENV=msci", 
     "FULL_DESK",
 ]
 

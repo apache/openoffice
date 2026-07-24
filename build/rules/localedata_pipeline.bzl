@@ -46,10 +46,13 @@ _DLL_RENAME = [
     # bootstrap.uno's simpleregistry/textualservices parses the XML components
     # rdb via xmlreader.dll.
     ("_xmlreader_dll",  "xmlreader.dll"),
-    # Binary UNO bridge (msci C++ <=> UNO) — loaded by name to map interfaces
-    # across the saxparser <-> expwrap component boundary.
-    ("_msci_uno_dll",   "msci_uno.dll"),
 ]
+
+# Binary UNO bridge (C++ <=> UNO) — loaded by name (msci_uno.dll on x86,
+# mscx_uno.dll on x64) to map interfaces across the saxparser <-> expwrap
+# component boundary.  Staged under its real basename so the arch-selected DLL
+# keeps its own name (the name saxparser's CPPU_ENV asks the loader for).
+_BRIDGE_ATTR = "_cpp_uno_bridge"
 
 def _localedata_gen_impl(ctx):
     saxparser    = ctx.executable._saxparser
@@ -69,6 +72,9 @@ def _localedata_gen_impl(ctx):
     for attr, runtime in _DLL_RENAME:
         rename[getattr(ctx.file, attr)] = runtime
     dll_files = [getattr(ctx.file, attr) for attr, _ in _DLL_RENAME]
+    # C++/UNO bridge: stage under its real basename (msci_uno.dll / mscx_uno.dll).
+    bridge_dll = getattr(ctx.file, _BRIDGE_ATTR)
+    dll_files.append(bridge_dll)
 
     # ── Stage saxparser.exe + DLLs + CRT into one flat tools dir ──────────────
     all_to_stage = [saxparser] + dll_files + crt_files
@@ -153,7 +159,11 @@ localedata_gen = rule(
         "_expwrap_dll":    attr.label(default = "//main/sax:expwrap",              allow_single_file = True, cfg = "exec"),
         "_bootstrap_uno":  attr.label(default = "//main/stoc:bootstrap.uno",       allow_single_file = True, cfg = "exec"),
         "_xmlreader_dll":  attr.label(default = "//main/xmlreader:xmlreader",       allow_single_file = True, cfg = "exec"),
-        "_msci_uno_dll":   attr.label(default = "//main/bridges:msci_uno",          allow_single_file = True, cfg = "exec"),
+        # C++/UNO bridge, cfg="exec" (built for the x64 host).  The alias selects
+        # msci_uno.dll (x86) / mscx_uno.dll (x64) in the exec config — so on this
+        # x64 host it resolves mscx_uno and never pulls the x86-only msci_uno into
+        # the exec config.  Staged under its real basename (see _DLL_RENAME).
+        "_cpp_uno_bridge": attr.label(default = "//main/bridges:cpp_uno_bridge",     allow_single_file = True, cfg = "exec"),
         "_crt_dlls": attr.label(
             default = "//main/external/msvcp90:msvcp90",
             allow_files = True,

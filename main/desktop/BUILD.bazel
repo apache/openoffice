@@ -7,7 +7,6 @@ load("//build/rules:rsc_pipeline.bzl", "rsc_res")
 _DEFINES = [
     "WNT", "GUI", "WIN32",
     "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
-    "CPPU_ENV=msci", 
     "FULL_DESK", "SHAREDLIB", "_DLL_",
     "snprintf=_snprintf",
     "snwprintf=_snwprintf",
@@ -1146,4 +1145,10 @@ rsc_res(
 
 exports_files(glob(["**/*.component"]))
 exports_files(["util/soffice.exe.manifest", "util/soffice.bin.manifest"])
+# amd64 (x64) release app manifest — same as util/soffice.exe.manifest but with
+# processorArchitecture="amd64" in the assemblyIdentity + Microsoft.VC90.CRT /
+# Common-Controls deps.  On x64 the loader rejects an x86 CRT manifest against
+# the amd64 msvcr90.dll (see project_win64_source_fixes #4), so staging selects
+# this variant.  Same basename so it still stages as soffice.exe/bin.manifest.
+exports_files(["util/amd64/soffice.exe.manifest"])
 

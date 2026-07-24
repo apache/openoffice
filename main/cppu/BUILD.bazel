@@ -14,7 +14,6 @@ _COPTS = [
 _DEFINES = [
     "WNT", "GUI", "WIN32", "_MT",
     "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
-    "CPPU_ENV=msci", 
     "FULL_DESK",
 ]
 

@@ -41,7 +41,12 @@ filegroup(
 # collect_outputs.deps does not accept raw source files.
 filegroup(
     name = "soffice_app_manifest",
-    srcs = ["//main/desktop:util/soffice.exe.manifest"],
+    srcs = select({
+        # x64 needs an amd64 CRT/assembly manifest — the loader rejects an x86
+        # processorArchitecture manifest against the amd64 msvcr90.dll (0xC000007B).
+        "//build:arch_x64": ["//main/desktop:util/amd64/soffice.exe.manifest"],
+        "//conditions:default": ["//main/desktop:util/soffice.exe.manifest"],
+    }),
 )
 
 # ── Flat program/ files (DLLs, EXEs, RDBs, ZIPs, .py scripts, .ini) ─────────
@@ -71,7 +76,6 @@ collect_outputs(
         "//main/stoc:namingservice.uno",
         "//main/stoc:proxyfac.uno",
         "//main/binaryurp:binaryurp",
-        "//main/bridges:msci_uno",
         # Native JNI bridge (java_uno.dll). Loaded by jurt's NativeThreadPool via
         # System.loadLibrary("java_uno") once Java is enabled. The Java side
         # (java_uno.jar) needs the program/classes/ classpath staging, which does
@@ -368,6 +372,12 @@ collect_outputs(
         "//conditions:default": [
             ":soffice_app_manifest",
         ],
+    }) + select({
+        # C++/UNO bridge, loaded by name from CPPU_ENV: msci_uno.dll on x86,
+        # mscx_uno.dll on x64.  Each target is target_compatible_with its own
+        # arch, so the unused one must not appear in the other arch's deps.
+        "//build:arch_x64": ["//main/bridges:mscx_uno"],
+        "//conditions:default": ["//main/bridges:msci_uno"],
     }),
 )
 
