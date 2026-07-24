@@ -2,6 +2,13 @@ load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 
 package(default_visibility = ["//visibility:public"])
 
+# Local x64 selector — kept self-contained so this overlay never references
+# main-repo labels (same pattern as the boost.legacy overlay).
+config_setting(
+    name = "x64",
+    constraint_values = ["@platforms//cpu:x86_64"],
+)
+
 # ── Common flags ─────────────────────────────────────────────────────────────
 
 WIN_DEFINES = [
@@ -14,7 +21,13 @@ WIN_DEFINES = [
     "NDEBUG",
     "_USRDLL",
     "IEEE_8087",   # x86/x64 little-endian IEEE 754; required by nspr/dtoa.c
-]
+] + select({
+    # 64-bit build mode (coreconf USE_64=1 → -DNSS_USE_64).  Gates size_t>4
+    # code paths (e.g. freebl/drbg.c PR_STATIC_ASSERT) and 64-bit pointer
+    # assumptions.  Mirrors reference makefile.mk (origin/windows-amd64).
+    ":x64": ["NSS_USE_64"],
+    "//conditions:default": [],
+})
 
 WIN_COPTS = [
     "/W3",

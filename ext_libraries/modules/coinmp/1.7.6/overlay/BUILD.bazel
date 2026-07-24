@@ -18,7 +18,9 @@ cc_binary(
         "COINMP_EXPORTS",
         "_CRT_SECURE_NO_DEPRECATE",
         "_CRT_SECURE_NO_WARNINGS",
-        "_X86_=1",
+        # Arch CPU define (_X86_ / _AMD64_) comes from the toolchain arch_defines
+        # globally — do NOT hardcode _X86_=1 here: on x64 it collides with the
+        # toolchain's _AMD64_=1 and winnt.h defines the CONTEXT struct twice (C2011).
     ],
     copts = ["/FIwindef.h"],
     win_def_file = "CoinMP/src/CoinMP.def",
