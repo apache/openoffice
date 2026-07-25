@@ -63,7 +63,12 @@ typedef enum
 
 typedef sal_uInt32 oslThreadIdentifier;
 
-typedef sal_uInt32 oslThreadKey;
+/* oslThreadKey holds a pointer (the w32 impl returns a PTLS*, the unx impl a
+ * pthread_key_t/index); it MUST be pointer-width or the w32 osl_createThreadKey
+ * pointer is truncated on Win64 (LLP64) → osl_getThreadKeyData derefs a bad
+ * pointer and crashes (first seen: cppu getIdContainer during InitVCL).
+ * sal_uIntPtr == sal_uInt32 on x86 (unchanged) / sal_uInt64 on x64. */
+typedef sal_uIntPtr oslThreadKey;
 
 /** Create the thread, using the function-ptr pWorker as
 	its main (worker) function. This functions receives in

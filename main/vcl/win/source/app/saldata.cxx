@@ -114,16 +114,16 @@ int ImplSalWICompareAscii( const wchar_t* pStr1, const char* pStr2 )
 
 // =======================================================================
 
-LONG ImplSetWindowLong( HWND hWnd, int nIndex, DWORD dwNewLong )
+LONG_PTR ImplSetWindowLong( HWND hWnd, int nIndex, LONG_PTR newLong )
 {
-	return SetWindowLongW( hWnd, nIndex, dwNewLong );
+	return SetWindowLongPtrW( hWnd, nIndex, newLong );
 }
 
 // -----------------------------------------------------------------------
 
-LONG ImplGetWindowLong( HWND hWnd, int nIndex )
+LONG_PTR ImplGetWindowLong( HWND hWnd, int nIndex )
 {
-	return GetWindowLongW( hWnd, nIndex );
+	return GetWindowLongPtrW( hWnd, nIndex );
 }
 
 // -----------------------------------------------------------------------
@@ -135,10 +135,14 @@ BOOL ImplPostMessage( HWND hWnd, UINT nMsg, WPARAM wParam, LPARAM lParam )
 
 // -----------------------------------------------------------------------
 
-BOOL ImplSendMessage( HWND hWnd, UINT nMsg, WPARAM wParam, LPARAM lParam )
+/* MUST return LRESULT (LONG_PTR), not BOOL: WinSalInstance::CreateFrame /
+ * CreateObject route the new SalFrame / SalObject pointer back as the
+ * SAL_MSG_CREATE* message result (an LRESULT).  Truncating that to 32-bit BOOL
+ * loses the high pointer bits on Win64 -> the caller derefs a truncated frame
+ * (AV in SalFrame::SetCallback during InitVCL/splash). */
+LRESULT ImplSendMessage( HWND hWnd, UINT nMsg, WPARAM wParam, LPARAM lParam )
 {
-	BOOL bRet = SendMessageW( hWnd, nMsg, wParam, lParam );
-    return bRet;
+	return SendMessageW( hWnd, nMsg, wParam, lParam );
 }
 
 // -----------------------------------------------------------------------
