@@ -212,21 +212,41 @@ filegroup(
 # which aborts document load → office self-terminates.  See repo
 # bug-readme.md.
 #
-# genccode -o emits a COFF object directly (pkg_genc.h CAN_GENERATE_OBJECTS);
-# with no -m match-arch file getArchitecture() defaults to IMAGE_FILE_MACHINE_I386,
-# matching the VS2008 x86 build.
+# genccode -o emits a COFF object directly (pkg_genc.h CAN_GENERATE_OBJECTS).
+# With no -m match-arch file, pkg_genc.c getArchitecture() defaults the object's
+# COFF machine type from genccode's OWN compile-time arch: _M_AMD64 → AMD64,
+# otherwise I386.  So the emitted object's machine follows the arch genccode was
+# BUILT for — it MUST match the icudata.dll link's /MACHINE or the link fails
+# LNK1112 ("module machine type 'x64' conflicts with target machine type 'X86'").
+#
+# genccode is therefore taken as a TARGET-configuration dep here (in srcs, run via
+# $(location)) — NOT as an exec-config `tools =` entry.  As a target dep it is built
+# for the product arch (x86 for the default build, x64 for --config=winXP-x64) and,
+# running on the x64 build host via WOW64 (x86) or natively (x64), stamps the
+# matching machine type, so icudt49_dat.obj always agrees with the icudata.dll link
+# below.  This scales across the arch matrix with no per-arch branching.
+#
+# MATRIX/CROSS caveat: this relies on the target-arch genccode being RUNNABLE on the
+# build host (true for x86+x64 on an x64 host).  A future TRUE cross-compile to a
+# non-host-runnable arch (arm64/riscv) would instead keep genccode in exec config
+# and pass `-m <a target-arch .obj>` (pkg_genc.c --match-arch, the upstream
+# cross-compile mechanism), since getArchitecture() then reads the machine type
+# from that reference object instead of genccode's own arch.
+#
 #   -e icudt49     → C symbol  icudt49_dat  (== U_ICUDATA_ENTRY_POINT for ICU 49,
 #                    i.e. the same symbol the stub used to provide)
 #   -f icudt49_dat → output file icudt49_dat.obj (predictable name for outs)
 #   -d $(RULEDIR)  → write into the rule's output dir
 genrule(
     name = "icudt49_dat_obj",
-    srcs = ["source/data/in/icudt49l.dat"],
+    srcs = [
+        "source/data/in/icudt49l.dat",
+        ":genccode",  # TARGET config (see above), not tools= (exec)
+    ],
     outs = ["icudt49_dat.obj"],
-    tools = [":genccode"],
     cmd_bat = (
-        "$(execpath :genccode) -o -e icudt49 -f icudt49_dat " +
-        "-d $(RULEDIR) $(execpath source/data/in/icudt49l.dat)"
+        "$(location :genccode) -o -e icudt49 -f icudt49_dat " +
+        "-d $(RULEDIR) $(location source/data/in/icudt49l.dat)"
     ),
     visibility = ["//visibility:public"],
 )
