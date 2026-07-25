@@ -1778,7 +1778,18 @@ static bool WriteStackFile( FILE *fout, hash_map< string, string >& rLibraries, 
 					{
 						rLibraries[ GetFileName( moduleInfo.LoadedImageName ).c_str() ] = moduleInfo.LoadedImageName;
 
+						// SymGetSymFromAddr's displacement parameter is arch-dependent:
+						// on x86 it is PDWORD, on x64 the dbghelp macro maps it to
+						// SymGetSymFromAddr64 wanting PDWORD64.  Match the type per arch
+						// (same INTEL/X86_64 guard used for AddrPC.Offset above); an
+						// unconditional DWORD64 breaks the x86 build (C2664).
+#if defined(INTEL)
+						DWORD	dwRelOffset = 0;
+#elif defined(X86_64)
 						DWORD64	dwRelOffset = 0;
+#else
+#error Unsupported architecture
+#endif
 						BYTE	symbolBuffer[sizeof(IMAGEHLP_SYMBOL) + 256 ];
 						PIMAGEHLP_SYMBOL	pSymbol = (PIMAGEHLP_SYMBOL)symbolBuffer;
 
