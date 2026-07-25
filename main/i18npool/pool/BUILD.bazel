@@ -7,7 +7,6 @@ load("//main/i18npool:breakiter_pipeline.bzl", "breakiter_data")
 _DEFINES = [
     "WNT", "GUI", "WIN32",
     "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
-    "CPPU_ENV=msci", 
     "FULL_DESK",
     "SHAREDLIB", "_DLL_",
     "I18NPOOL_DLLIMPLEMENTATION",
