@@ -1,5 +1,5 @@
 /**************************************************************
- *
+ * 
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- *
+ * 
  *   http://www.apache.org/licenses/LICENSE-2.0
- *
+ * 
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- *
+ * 
  *************************************************************/
 
 
@@ -343,7 +343,7 @@ extern "C" typelib_TypeClass cpp_vtable_call(
 //==================================================================================================
 extern "C" void privateSnippetExecutor( ... );
 
-int const codeSnippetSize = 44;
+int const codeSnippetSize = 48;
 
 unsigned char * codeSnippet(
     unsigned char * code, sal_Int32 functionIndex, sal_Int32 vtableOffset, bool isArgFloat[4])
@@ -366,8 +366,13 @@ unsigned char * codeSnippet(
     //  rsp+08 +----------------------------+ -------
     //         | return address             |
     //  rsp--> +----------------------------+
+    // 
     //
-    //
+
+    // When it doubt about correctness,
+    // uncomment this and disassemble at runtime:
+    // INT 0x3
+    //*p++ = 0xcc;
 
     if (isArgFloat[0])
     {
@@ -377,7 +382,7 @@ unsigned char * codeSnippet(
     else
     {
         // mov QWORD[rsp+8], rcx
-        *p++ = 0x48; *p++ = 0x49; *p++ = 0x4c; *p++ = 0x24; *p++ = 0x08;
+        *p++ = 0x48; *p++ = 0x89; *p++ = 0x4c; *p++ = 0x24; *p++ = 0x08;
     }
 
     if (isArgFloat[1])
@@ -388,7 +393,7 @@ unsigned char * codeSnippet(
     else
     {
         // mov QWORD[rsp+16], rdx
-        *p++ = 0x48; *p++ = 0x49; *p++ = 0x54; *p++ = 0x24; *p++ = 0x10;
+        *p++ = 0x48; *p++ = 0x89; *p++ = 0x54; *p++ = 0x24; *p++ = 0x10;
     }
 
     if (isArgFloat[2])
@@ -441,7 +446,7 @@ unsigned char * codeSnippet(
     *p++ = (((sal_uIntPtr)(&privateSnippetExecutor)) >> 56) & 0xff;
 
     // jmp r11
-    *p++ = 0x49;
+    *p++ = 0x41;
     *p++ = 0xff;
     *p++ = 0xe3;
 
