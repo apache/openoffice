@@ -1,0 +1,42 @@
+# Arch-neutral host JDK **runtime** toolchain.
+#
+# Why this exists
+# ---------------
+# Target platforms in this build are chosen by TARGET cpu — winXP-x86 (x86_32),
+# winXP-x64 (x86_64), and the matrix is expected to grow (arm64, riscv, …).
+# rules_java, however, only auto-registers java RUNTIME toolchains that are
+# cpu-pinned to the downloaded JDK's own platform (windows + x86_64).  The moment
+# the target cpu isn't x86_64 that toolchain no longer resolves:
+#
+#     No matching toolchains found for types:
+#       @@bazel_tools//tools/jdk:runtime_toolchain_type
+#
+# which is exactly what broke the default (x86_32) build once the x86 toolchain
+# was corrected to target @platforms//cpu:x86_32 (before that, the x86 build was
+# mislabelled x86_64 and accidentally matched the x64 JDK).
+#
+# The fix — and why it is arch-neutral
+# ------------------------------------
+# This runtime toolchain is only ever used as a HOST BUILD TOOL: jar.exe zipping
+# arch-neutral .class files (see build/rules/java_pipeline.bzl jar_from_directory).
+# javamaker itself runs as a native exec-cfg cc_binary, NOT through this toolchain.
+# So a single host JDK serves EVERY target arch.  We therefore register ONE runtime
+# toolchain with no cpu constraint; it matches any windows target platform, present
+# or future, and the matrix expands without adding a java toolchain per arch.
+#
+# It is registered in the ROOT module (MODULE.bazel), so it outranks rules_java's
+# cpu-pinned remote-JDK runtime toolchains and is selected for both x86 and x64.
+
+toolchain(
+    name = "host_jdk_runtime_toolchain",
+    # The machine's local JDK (JAVA_HOME), wired via the rules_java `toolchains`
+    # module extension in MODULE.bazel.  It runs natively on the x64 build host
+    # regardless of the TARGET arch of the product being built.
+    toolchain = "@local_jdk//:jdk",
+    toolchain_type = "@bazel_tools//tools/jdk:runtime_toolchain_type",
+    # No cpu constraint: arch-neutral by design (see header).  os:windows only,
+    # so it matches every windows target platform in the matrix.
+    target_compatible_with = ["@platforms//os:windows"],
+    exec_compatible_with = ["@platforms//os:windows"],
+    visibility = ["//visibility:public"],
+)

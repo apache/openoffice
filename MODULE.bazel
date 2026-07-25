@@ -52,6 +52,13 @@ bazel_dep(name = "mdds",                   version = "0.3.1")
 bazel_dep(name = "coinmp",                 version = "1.7.6")
 bazel_dep(name = "gtest",                  version = "1.7.0")  # GoogleTest — C++ unit-test foundation (//main/test)
 
+# Host JDK.  Expose the machine's local JDK so we can register an ARCH-NEUTRAL java
+# RUNTIME toolchain (see //build/toolchain/java).  rules_java only auto-registers
+# cpu-pinned (windows + x86_64) runtime toolchains, which stop resolving the moment
+# the TARGET cpu isn't x86_64 — x86_32 today, arm64/riscv as the matrix grows.
+java_toolchains = use_extension("@rules_java//java:extensions.bzl", "toolchains")
+use_repo(java_toolchains, "local_jdk")
+
 # --------------- build-time tools (not linked, not in registry) ---------------
 http_file = use_repo_rule("@bazel_tools//tools/build_defs/repo:http.bzl", "http_file")
 vs_config_repo_rule = use_repo_rule("//build:vs_config_repo.bzl", "vs_config_repo")
@@ -69,6 +76,12 @@ http_file(
 
 register_toolchains("//build/toolchain:cc_toolchain_x86_vs2008_def")
 register_toolchains("//build/toolchain:cc_toolchain_x64_vs2008_def")
+
+# Arch-neutral host JDK RUNTIME toolchain.  Registered in the root module so it
+# outranks rules_java's cpu-pinned remote-JDK runtime toolchains; it matches EVERY
+# windows target platform (x86_32, x86_64, future arm64/riscv) so the jar-packaging
+# host step (java_pipeline.bzl) resolves regardless of the product's target arch.
+register_toolchains("//build/toolchain/java:host_jdk_runtime_toolchain")
 
 # Execution platforms.  ORDER MATTERS — register_execution_platforms prepends, so the
 # FIRST entry is the highest-priority exec platform.
