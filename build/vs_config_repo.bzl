@@ -102,6 +102,10 @@ def _vs_config_impl(rctx):
     bat = "\r\n".join([
         "@echo off",
         "setlocal enabledelayedexpansion",
+        # The action PATH is just VC\\bin; findstr/ping (used below for the LNK1318
+        # retry classifier and its backoff) live in System32 — put it on PATH.
+        # Appended, so the VC9 toolchain binaries still take precedence.
+        "set \"PATH=%PATH%;%SystemRoot%\\System32\"",
         "set \"ep=\"",
         "for %%A in (%*) do (",
         "  set \"arg=%%A\"",
@@ -116,7 +120,12 @@ def _vs_config_impl(rctx):
         # Tunables (override via --action_env at build time), with sane defaults.
         "if not defined LINK_MAX_RETRY set \"LINK_MAX_RETRY=5\"",
         "if not defined LINK_RETRY_BASE_SEC set \"LINK_RETRY_BASE_SEC=2\"",
-        "set \"log=%TEMP%\\bzl_link_%RANDOM%%RANDOM%.log\"",
+        # Log name MUST be unique per concurrent link.  %RANDOM% is clock-seeded, so
+        # links launched in the same tick (e.g. the 7 applauncher EXEs) collided on
+        # one log path → the second '>' redirect hit ERROR_SHARING_VIOLATION and the
+        # link never ran ("output X was not created").  !ep! is derived from the
+        # per-target @param-file name, so it is unique across concurrent targets.
+        "set \"log=%TEMP%\\bzl_link_!ep!.log\"",
         "set \"n=0\"",
         ":retry",
         "set /a n+=1",
