@@ -13,15 +13,19 @@ For per-module conventions, compiler flags, and the migration frontier, see
 
 ## 1. Prerequisites
 
-The build targets **32-bit Windows** using the **VS2008 (VC9) MSVC toolchain**.
-A custom Bazel toolchain (`//build/toolchain`) drives the compiler directly, so
-the Visual Studio IDE is not required — only the compiler, linker, and headers.
+The build targets **Windows on the VS2008 (VC9) MSVC toolchain** in **two
+architectures**: **32-bit x86** (the default) and **64-bit x64** (the Win64
+port). Both stay on VC9 — the x64 build uses the VS2008 `x86_amd64` cross-tools
+(`cl.exe` / `ml64.exe`) plus the Windows SDK v7.0 `lib\x64`. A custom Bazel
+toolchain (`//build/toolchain`) drives the compiler directly, so the Visual
+Studio IDE is not required — only the compiler, linker, and headers. **x86 is the
+default and stays green**; see [§4](#4-running-builds) for selecting x64.
 
 | Tool | Version / Notes |
 | --- | --- |
 | **Bazel** | bzlmod-based (`MODULE.bazel`). Install via [Bazelisk](https://github.com/bazelbuild/bazelisk). ⚠️ Bazel 9.0.1 has a patch-section bug — see [§7](#7-known-issues). |
-| **Visual Studio 2008 (VC9)** | Provides `cl.exe`, `link.exe`, `lib.exe`, `ml.exe`. Default: `C:\Program Files (x86)\Microsoft Visual Studio 9.0`. |
-| **Windows SDK v7.0** | System headers/libs. Default: `C:\Program Files\Microsoft SDKs\Windows\v7.0`. |
+| **Visual Studio 2008 (VC9)** | Provides `cl.exe`, `link.exe`, `lib.exe`, `ml.exe`. Default: `C:\Program Files (x86)\Microsoft Visual Studio 9.0`. The **x64** build additionally uses the `x86_amd64` cross-tools (`VC\bin\x86_amd64\cl.exe`, `ml64.exe`) and `VC\bin\amd64\lib.exe`, which ship with the same VS2008 install. |
+| **Windows SDK v7.0** | System headers/libs. Default: `C:\Program Files\Microsoft SDKs\Windows\v7.0`. The x64 build links against `lib\x64`. |
 | **Perl** | Used by IDL/rsc/installer codegen scripts. A Strawberry Perl is pulled in via bzlmod for *build deps*, but some local genrules invoke a host Perl set via `PERL_PATH` (e.g. `C:\msys64\usr\bin\perl.exe`). |
 | **ATLMFC** (optional) | Only needed for ATL modules (`embedserv`, `winaccessibility`, `extensions/activex`). VS Express / BuildTools do **not** ship ATLMFC — those modules are skipped unless you opt in. See [§5](#5-optional-features). |
 
@@ -82,17 +86,33 @@ registries are consulted, in order ([.bazelrc](../.bazelrc)):
 `--check_direct_dependencies=off` is set because the legacy version pins do not
 all match BCR's resolution.
 
-### Toolchain
-The custom VS2008 x86 toolchain lives in [build/toolchain](toolchain/) and is
-registered in `MODULE.bazel`:
+### Toolchain (dual-arch)
+Two custom VS2008 (VC9) toolchains live in [build/toolchain](toolchain/) — one
+per architecture — both registered in `MODULE.bazel`:
 
 ```python
-register_toolchains("//build/toolchain:cc_toolchain_x86_vs2008_def")
+register_toolchains("//build/toolchain:cc_toolchain_x86_vs2008_def")  # 32-bit x86 (default)
+register_toolchains("//build/toolchain:cc_toolchain_x64_vs2008_def")  # 64-bit x64 (Win64)
 ```
 
-Key toolchain choices (see [CLAUDE.md](../CLAUDE.md) for full rationale):
-`/Zc:wchar_t-`, `_HAS_ITERATOR_DEBUGGING=0` set globally, `/Z7` (no
-`mspdbsrv.exe` for fastbuild), MASM via `ml.exe` with `/Cx`.
+Which one Bazel uses is decided by the **target platform**, not a flag. The
+platforms in [build/platforms/BUILD.bazel](platforms/BUILD.bazel) —
+`winXP-x86` (`@platforms//cpu:x86_32`) and `winXP-x64` (`x86_64`) — are each
+composed with the `//build/constraints:win_version` constraint, giving a
+`{winxp, win10} × {x86, x64}` target space (a future win10 target is a new
+constraint value, not a new stringly-typed config). Toolchain resolution then
+selects the matching `cc_toolchain` automatically; when `--platforms` is x86 the
+x64 toolchain is simply incompatible and never chosen, and vice-versa.
+
+The per-arch defines are injected **globally by the toolchain**, so module BUILD
+files carry no arch literals: x86 → `_X86_=1` / `INTEL` / `CPPU_ENV=msci`, x64 →
+`_AMD64_=1` / `X86_64` / `CPPU_ENV=mscx` (`WIN32` stays defined on both; the x64
+compiler auto-defines `_WIN64`).
+
+Key toolchain choices shared by both arches (see [CLAUDE.md](../CLAUDE.md) for
+full rationale): `/Zc:wchar_t-`, `_HAS_ITERATOR_DEBUGGING=0` set globally, `/Z7`
+(no `mspdbsrv.exe` for fastbuild), MASM via `ml.exe` (x86) / `ml64.exe` (x64)
+with `/Cx`.
 
 ### Where BUILD files live
 **`main/<package>/BUILD.bazel`** — at the *module root*, **not** under `prj/`.
@@ -114,6 +134,26 @@ installer archives (`scp2.bzl`), RDB merge (`merge_rdb.bzl`), and image packing
 
 > Independent commands print to stderr; you do not need `2>&1`.
 
+### Choosing the architecture (x86 vs x64)
+The default build is **32-bit x86**. To build **64-bit x64** (Win64), pass the
+`--config=winXP-x64` convenience config (defined in [.bazelrc](../.bazelrc)):
+
+```bash
+bazel build //main/staging:install                    # x86 (default)
+bazel build --config=winXP-x64 //main/staging:install # x64 (Win64)
+```
+
+Each config pins `--platforms` plus a distinct `--platform_suffix` and
+`--symlink_prefix`, so the two architectures build into **separate output trees**
+and never clobber each other — the convenience symlinks are
+`bazel-winXP-x86-bin/` (default) and `bazel-winXP-x64-bin/`. Because the action
+outputs are cached per-config, switching arch only re-analyzes; it does not
+recompile. `--config=winXP-x86` names the default explicitly.
+
+Every example below defaults to x86 — add `--config=winXP-x64` to any of them for
+the Win64 build, and read `bazel-winXP-x86-bin` as `bazel-winXP-x64-bin` in the
+output paths.
+
 ### Build a single module
 ```bash
 bazel build //main/sal:sal
@@ -134,7 +174,8 @@ output into a real OpenOffice install layout:
 bazel build //main/staging:install
 ```
 
-Output lands under `bazel-bin/main/staging/install/`:
+Output lands under `bazel-winXP-x86-bin/main/staging/install/` (x86 default; the
+x64 build lands under `bazel-winXP-x64-bin/…`):
 
 ```
 install/
@@ -148,7 +189,7 @@ To also stage the full Python standard library, build `//main/staging:install_al
 
 ### Run it
 ```bash
-bazel-bin\main\staging\install\program\soffice.exe
+bazel-winXP-x86-bin\main\staging\install\program\soffice.exe
 ```
 
 ### Inspect the dependency graph
@@ -270,7 +311,7 @@ After the staged debug build, attach to the launcher:
 ```bash
 # Visual Studio / WinDbg / CDB — symbols are auto-found because the .pdb files
 # sit next to the DLLs in program\.
-cdb -g bazel-bin\main\staging\install\program\soffice.exe
+cdb -g bazel-winXP-x86-bin\main\staging\install\program\soffice.exe
 ```
 
 Note the process layout differs from a stock OpenOffice install. Upstream ships
