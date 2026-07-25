@@ -253,14 +253,18 @@ int ImplSalWICompareAscii( const wchar_t* pStr1, const char* pStr2 );
 // - Defines -
 // -----------
 
-#define SAL_FRAME_WNDEXTRA          sizeof( DWORD )
+/* Extra window bytes hold the WinSalFrame* (SAL_FRAME_THIS, offset 0) via
+ * Set/GetWindowLongPtr — so the reserve MUST be pointer-width, else the 8-byte
+ * store on Win64 overruns a 4-byte reserve.  sizeof(ULONG_PTR) == 4 on x86
+ * (unchanged) / 8 on x64. */
+#define SAL_FRAME_WNDEXTRA          sizeof( ULONG_PTR )
 #define SAL_FRAME_THIS              0
 #define SAL_FRAME_CLASSNAMEA        "SALFRAME"
 #define SAL_FRAME_CLASSNAMEW        L"SALFRAME"
 #define SAL_SUBFRAME_CLASSNAMEA     "SALSUBFRAME"
 #define SAL_SUBFRAME_CLASSNAMEW     L"SALSUBFRAME"
 #define SAL_TMPSUBFRAME_CLASSNAMEW  L"SALTMPSUBFRAME"
-#define SAL_OBJECT_WNDEXTRA         sizeof( DWORD )
+#define SAL_OBJECT_WNDEXTRA         sizeof( ULONG_PTR )
 #define SAL_OBJECT_THIS             0
 #define SAL_OBJECT_CLASSNAMEA       "SALOBJECT"
 #define SAL_OBJECT_CLASSNAMEW       L"SALOBJECT"
@@ -344,17 +348,17 @@ int ImplSalWICompareAscii( const wchar_t* pStr1, const char* pStr2 );
 // -----------------
 
 // A/W-Wrapper
-LONG        ImplSetWindowLong( HWND hWnd, int nIndex, DWORD dwNewLong );
-LONG        ImplGetWindowLong( HWND hWnd, int nIndex );
+LONG_PTR        ImplSetWindowLong( HWND hWnd, int nIndex, LONG_PTR newLong );
+LONG_PTR        ImplGetWindowLong( HWND hWnd, int nIndex );
 BOOL    ImplPostMessage( HWND hWnd, UINT Msg, WPARAM wParam, LPARAM lParam );
-BOOL    ImplSendMessage( HWND hWnd, UINT Msg, WPARAM wParam, LPARAM lParam );
+LRESULT ImplSendMessage( HWND hWnd, UINT Msg, WPARAM wParam, LPARAM lParam );
 BOOL    ImplGetMessage( LPMSG lpMsg, HWND hWnd, UINT wMsgFilterMin, UINT wMsgFilterMax );
 BOOL    ImplPeekMessage( LPMSG lpMsg, HWND hWnd, UINT wMsgFilterMin, UINT wMsgFilterMax, UINT wRemoveMsg );
 LONG        ImplDispatchMessage( CONST MSG *lpMsg );
 
 inline void SetWindowPtr( HWND hWnd, WinSalFrame* pThis )
 {
-    ImplSetWindowLong( hWnd, SAL_FRAME_THIS, (LONG)pThis );
+    ImplSetWindowLong( hWnd, SAL_FRAME_THIS, (LONG_PTR)pThis );
 }
 
 inline WinSalFrame* GetWindowPtr( HWND hWnd )
@@ -364,7 +368,7 @@ inline WinSalFrame* GetWindowPtr( HWND hWnd )
 
 inline void SetSalObjWindowPtr( HWND hWnd, WinSalObject* pThis )
 {
-    ImplSetWindowLong( hWnd, SAL_OBJECT_THIS, (LONG)pThis );
+    ImplSetWindowLong( hWnd, SAL_OBJECT_THIS, (LONG_PTR)pThis );
 }
 
 inline WinSalObject* GetSalObjWindowPtr( HWND hWnd )
