@@ -246,12 +246,17 @@ SHL1STDLIBS += $(UWINAPILIB)      \
                $(WINSPOOLLIB)     \
                $(OLE32LIB)        \
                $(SHELL32LIB)      \
-               $(ADVAPI32LIB)
+               $(ADVAPI32LIB)     \
+               $(VERSIONLIB)
 
 SHL1STDLIBS += $(IMM32LIB)
 
 .IF "$(GUI)$(COM)$(CPU)" == "WNTMSCI"
 LINKFLAGSSHL += /ENTRY:LibMain@12
+.ELIF "$(GUI)$(COM)$(CPU)" == "WNTMSCX"
+# LibMain is WINAPI (__stdcall): x86 decorates it LibMain@12; x64 has no
+# stdcall @N decoration, so the entry symbol is the undecorated LibMain.
+LINKFLAGSSHL += /ENTRY:LibMain
 .ENDIF
 .ENDIF
 
