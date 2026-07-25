@@ -66,16 +66,20 @@ bool x86_64::return_in_hidden_param( typelib_TypeDescriptionReference *pTypeRef 
                 typelib_TypeDescription * pTypeDescr = 0;
                 TYPELIB_DANGER_GET( &pTypeDescr, pTypeRef );
 
-                /* If the struct is larger than 8 bytes, pass it on the stack.  */
+                /* A struct is returned in a register only when its size is
+                 * 1/2/4/8 bytes; otherwise (here: > 8) it is returned via a
+                 * hidden pointer (in memory).  This logic was inverted, which
+                 * corrupted struct/exception return marshalling on x64 — e.g.
+                 * getAllExtensions returning nested Sequences (ref 0c2e3065a0). */
                 if ( pTypeDescr->nSize > 8 )
                 {
                     TYPELIB_DANGER_RELEASE( pTypeDescr );
-                    return false;
+                    return true;
                 }
                 else
                 {
                     TYPELIB_DANGER_RELEASE( pTypeDescr );
-                    return true;
+                    return false;
                 }
             }
 

@@ -1,5 +1,5 @@
 /**************************************************************
- *
+ * 
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- *
+ * 
  *   http://www.apache.org/licenses/LICENSE-2.0
- *
+ * 
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- *
+ * 
  *************************************************************/
 
 
@@ -46,6 +46,67 @@ using namespace ::com::sun::star::uno;
 using namespace ::std;
 using namespace ::osl;
 using namespace ::rtl;
+
+//##############################################################################
+// Windows's C++ exception  handling is built on top of SEH (Structured Exception Handling).
+//
+// SEH documentation:
+// https://web.archive.org/web/20060114142024/https://www.microsoft.com/msj/0197/exception/exception.aspx
+//
+// See this excellent article,
+// "Decoding the parameters of a thrown C++ exception (0xE06D7363)"
+// by Raymond Chen:
+// https://devblogs.microsoft.com/oldnewthing/20100730-00/?p=13273
+//
+// Then this one with more details on ExceptionInformation:
+// http://workblog.pilin.name/2014/03/decoding-parameters-of-thrown-c.html
+//
+// Others:
+// https://github.com/icestudent/ontl/blob/master/ntl/nt/exception.hxx
+// https://www.openrce.org/articles/full_view/21
+// https://www.openrce.org/articles/full_view/23
+//
+// For a C++ exception in SEH, on AMD64:
+//
+// +-----------------------------------+            +-------------------------------------------------------------+
+// |EXCEPTION_POINTERS                 |            |EXCEPTION_RECORD                                             |
+// +-----------------------------------+            +-------------------------------------------------------------+
+// |PEXCEPTION_RECORD  ExceptionRecord;|----------->|DWORD ExceptionCode; // == 0xE06D7363 for C++ exception      |
+// |PCONTEXT           ContextRecord;  |            |DWORD ExceptionFlags;                                        |
+// +-----------------------------------+            |struct  _EXCEPTION_RECORD *ExceptionRecord;                  |
+//                                                  |PVOID ExceptionAddress;                                      |
+//                                                  |DWORD NumberParameters; // == 4 on AMD64, 3 on i386          |
+//                                                  |ULONG_PTR ExceptionInformation[0];                           |
+//               C++ object being thrown <----------|ULONG_PTR ExceptionInformation[1];                           |
+//   +----------------------------------------------|ULONG_PTR ExceptionInformation[2];                           |
+//   |    HINSTANCE of the EXE/DLL where <----------|ULONG_PTR ExceptionInformation[3];                           |
+//   |    where the exception was thrown            |ULONG_PTR ExceptionInformation[...];                         |
+//   |                                              |ULONG_PTR ExceptionInformation[EXCEPTION_MAXIMUM_PARAMETERS];|
+//   | offset from HINSTANCE                        +-------------------------------------------------------------+
+//   | to:
+//   |     +------------------------------+
+//   |     |ThrowInfo                     |
+//   |     +------------------------------+
+//   +---->|unsigned int attributes;      |                             +----------------------------------+
+//         |PMFN   pmfnUnwind;            |                             |CatchableTypeArray                |
+//         |__int32   pForwardCompat;     | offset from HINSTANCE to:   +----------------------------------+
+//         |__int32   pCatchableTypeArray;|---------------------------->|int nCatchableTypes;              |
+//         +------------------------------+                    +--------|__int32   arrayOfCatchableTypes[];|
+//                                                             |        +----------------------------------+
+//        +------------------------+                           |
+//        |CatchableType           |                           |
+//        +------------------------+ offsets from HINSTANCE to |
+//        |unsigned int properties;|<--------------------------+        +--------------------------------+
+//        |__int32   pType;        |---------+                          |TypeDescriptor                  |
+//        |PMD    thisDisplacement;|         | offset from HINSTANCE to +--------------------------------+
+//        |int    sizeOrOffset;    |         +------------------------->|const void * _EH_PTR64 pVFTable;|
+//        |PMFN   copyFunction;    |                                    |void * _EH_PTR64   spare;       |
+//        +------------------------+                                    |char name[];                    |
+//                                                                      +--------------------------------+
+//
+//
+//
+//
 
 namespace CPPU_CURRENT_NAMESPACE
 {
@@ -117,9 +178,8 @@ class __type_info
 public:
     virtual ~__type_info() throw ();
 
-	inline __type_info( void * m_vtable, const char * m_d_name ) throw ()
-		: _m_vtable( m_vtable )
-		, _m_name( NULL )
+	inline __type_info( void * m_data, const char * m_d_name ) throw ()
+		: _m_data( m_data )
         { ::strcpy( _m_d_name, m_d_name ); } // #100211# - checked
 
 	size_t length() const
@@ -128,8 +188,7 @@ public:
 	}
 
 private:
-    void * _m_vtable;
-    char * _m_name;     // cached copy of unmangled name, NULL initially
+    void * _m_data;
     char _m_d_name[1];  // mangled name
 };
 //__________________________________________________________________________________________________
@@ -340,7 +399,7 @@ RaiseInfo::RaiseInfo( typelib_TypeDescription * pTypeDescr ) throw ()
 	, _n2( 0 )
 {
 	// a must be
-	OSL_ENSURE( sizeof(sal_Int32) == sizeof(ExceptionType *), "### pointer size differs from sal_Int32!" );
+	OSL_ENSURE( sizeof(sal_Int64) == sizeof(ExceptionType *), "### pointer size differs from sal_Int64!" );
 
 	::typelib_typedescription_acquire( pTypeDescr );
 	this->pTypeDescr = pTypeDescr;
@@ -427,7 +486,7 @@ ExceptionInfos::~ExceptionInfos() throw ()
 #if OSL_DEBUG_LEVEL > 1
 	OSL_TRACE( "> freeing exception infos... <\n" );
 #endif
-
+    
 	MutexGuard aGuard( _aMutex );
 	for ( t_string2PtrMap::const_iterator iPos( _allRaiseInfos.begin() );
           iPos != _allRaiseInfos.end(); ++iPos )
@@ -522,8 +581,8 @@ void mscx_raiseException( uno_Any * pUnoExc, uno_Mapping * pUno2Cpp )
 
 	// a must be
 	OSL_ENSURE(
-        sizeof(sal_Int32) == sizeof(void *),
-        "### pointer size differs from sal_Int32!" );
+        sizeof(sal_Int64) == sizeof(void *),
+        "### pointer size differs from sal_Int64!" );
 	RaiseInfo *raiseInfo = ExceptionInfos::getRaiseInfo( pTypeDescr );
 	ULONG_PTR arFilterArgs[4];
 	arFilterArgs[0] = MSVC_magic_number;
@@ -549,9 +608,9 @@ int mscx_filterCppException(
     // handle only C++ exceptions:
 	if (pRecord == 0 || pRecord->ExceptionCode != MSVC_ExceptionCode)
         return EXCEPTION_CONTINUE_SEARCH;
-
+    
 #if _MSC_VER < 1300 // MSVC -6
-    bool rethrow = (pRecord->NumberParameters < 3 ||
+    bool rethrow = (pRecord->NumberParameters < 4 ||
                     pRecord->ExceptionInformation[ 2 ] == 0);
 #else
     bool rethrow = __CxxDetectRethrow( &pRecord );
@@ -574,7 +633,7 @@ int mscx_filterCppException(
     // rethrow: handle only C++ exceptions:
 	if (pRecord == 0 || pRecord->ExceptionCode != MSVC_ExceptionCode)
         return EXCEPTION_CONTINUE_SEARCH;
-
+    
     if (pRecord->NumberParameters == 4 &&
 //  		pRecord->ExceptionInformation[ 0 ] == MSVC_magic_number &&
 		pRecord->ExceptionInformation[ 1 ] != 0 &&
@@ -596,7 +655,7 @@ int mscx_filterCppException(
                             baseAddress + pType->_pTypeInfo )->_m_d_name,
                         RTL_TEXTENCODING_ASCII_US ) );
 				OUString aUNOname( toUNOname( aRTTIname ) );
-
+                
 				typelib_TypeDescription * pExcTypeDescr = 0;
 				typelib_typedescription_getByName(
                     &pExcTypeDescr, aUNOname.pData );
@@ -640,7 +699,7 @@ int mscx_filterCppException(
 #endif
 					typelib_typedescription_release( pExcTypeDescr );
 				}
-
+                
 				return EXCEPTION_EXECUTE_HANDLER;
 			}
 		}
@@ -660,3 +719,4 @@ int mscx_filterCppException(
 }
 
 #pragma pack(pop)
+

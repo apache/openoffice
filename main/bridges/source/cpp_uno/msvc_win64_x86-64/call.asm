@@ -6,16 +6,16 @@
 ; to you under the Apache License, Version 2.0 (the
 ; "License"); you may not use this file except in compliance
 ; with the License.  You may obtain a copy of the License at
-;
+; 
 ;   http://www.apache.org/licenses/LICENSE-2.0
-;
+; 
 ; Unless required by applicable law or agreed to in writing,
 ; software distributed under the License is distributed on an
 ; "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 ; KIND, either express or implied.  See the License for the
 ; specific language governing permissions and limitations
 ; under the License.
-;
+; 
 
 
 typelib_TypeClass_VOID equ 0
@@ -51,8 +51,8 @@ EXTERN cpp_vtable_call: PROC
 ; rbp+16 rsp+08 +----------------------------+ -------
 ;               | return address             |
 ; rbp+08 rsp--> +----------------------------+
-;               | old rbp                    |
-; rbp---------> +----------------------------+
+;               | caller's rbp               |
+; rbp---------> +----------------------------+ <------ 16 byte boundary
 ;               | pRegisterReturn memory     |
 ; rbp-08 -----> +----------------------------+
 ;               |                            |
@@ -72,14 +72,14 @@ EXTERN cpp_vtable_call: PROC
 ;
 
 privateSnippetExecutor PROC FRAME
-
 	push	rbp
+	.PUSHREG rbp
 	mov	rbp, rsp
+	.SETFRAME rbp, 0
 	sub	rsp, 48
-	.ALLOCSTACK(48)
 	.ENDPROLOG
 
-	; 4th param: sal_uInt64 *pRegisterReturn
+	; 4th param: sal_uInt64 *pRegisterReturn 
 	lea r9, -8[rbp]
 
 	; 3rd param: sal_Int32 nVtableOffset
@@ -98,7 +98,8 @@ privateSnippetExecutor PROC FRAME
 	mov rax, -8[rbp]
 	movsd xmm0, qword ptr -8[rbp]
 
-	leave
+	add rsp, 48
+        pop rbp
 	ret
 
 privateSnippetExecutor ENDP
@@ -121,7 +122,7 @@ privateSnippetExecutor ENDP
 ; rbp+16 -----> +---------------------------------------------+ -------
 ;               | return address                              |
 ; rbp+08 -----> +---------------------------------------------+
-;               | old rbp                                     |
+;               | caller's rbp                                |
 ; rbp --------> +---------------------------------------------+ <---- 16 byte boundary
 ;               | (possible 16 byte alignment placeholder)    |
 ; rbp-08 -----> +---------------------------------------------+
@@ -133,8 +134,9 @@ privateSnippetExecutor ENDP
 callVirtualMethod PROC FRAME
 
 	push rbp
+	.PUSHREG rbp
 	mov rbp, rsp
-	.ENDPROLOG
+	.SETFRAME rbp, 0
 
 	; Save our register arguments to the shadow space:
 	mov 16[rbp], rcx
@@ -142,28 +144,33 @@ callVirtualMethod PROC FRAME
 	mov 32[rbp], r8
 	mov 40[rbp], r9
 
-	; We must maintain the stack aligned to a 16 byte boundary:
+	; nStack rounded to multiple of 2, so the stack is aligned to a 16 byte boundary:
 	mov eax, 56[rbp]
-	cmp rax, 0
-	je stackIsEmpty
-	mov r11, rax
-	test rax,1
-	jz stackSizeEven
-	sub rsp, 8
-stackSizeEven:
-	mov r10, 48[rbp]
-	shl rax, 3        ; nStack is in units of sal_uInt64, and sizeof(sal_uInt64) == 8
-	add rax, r10
+	inc eax
+	shr eax, 1
+	shl eax, 1
+
+	; if nStack < 4, add (4 - nStack) empty slots to the stack:
+	mov r10d, 4
+	sub r10d, eax
+	js copyStack
+	shl r10, 3
+	sub rsp, r10
 
 copyStack:
+	mov r10, rax
+	shl rax, 3
+	add rax, 48[rbp]
+copyStackLoop:
 	sub rax, 8
 	push [rax]
-	dec r11
-	jne copyStack
+	dec r10
+	jne copyStackLoop
 
+populateArgumentRegisters:
 	; First 4 args are passed in registers. Floating point args needs to be
-	; in floating point registers, but those are free for us to clobber
-	; anyway, and the callee knows where to look, so put each arg in both
+	; in floating point registers, but those are volatile anyway,
+	; and the callee knows where to look, so put each arg in both
 	; its general purpose and its floating point register:
 	mov rcx, [rsp]
 	movsd xmm0, qword ptr [rsp]
@@ -173,11 +180,10 @@ copyStack:
 	movsd xmm2, qword ptr 16[rsp]
 	mov r9, 24[rsp]
 	movsd xmm3, qword ptr 24[rsp]
-	jmp callMethod
 
-stackIsEmpty:
-	sub rsp, 32       ; we still need shadow space
+	.ENDPROLOG
 
+	
 callMethod:
 	; Find the method pointer
 	mov rax, 16[rbp]
@@ -188,6 +194,7 @@ callMethod:
 	call qword ptr [r10]
 
 	mov r10d, 40[rbp]
+	mov r11, 32[rbp]
 	cmp r10, typelib_TypeClass_VOID
 	je cleanup
 	cmp r10, typelib_TypeClass_LONG
@@ -217,30 +224,31 @@ callMethod:
 
 	; https://docs.microsoft.com/en-us/cpp/build/x64-calling-convention?view=vs-2017
 	; "The same pointer must be returned by the callee in RAX."
-	jmp Lint64
+	jmp cleanup
 
 Lint64:
-	mov 32[rbp], rax
+	mov qword ptr [r11], rax
 	jmp cleanup
 
 Lint32:
-	mov 32[rbp], eax
+	mov dword ptr [r11], eax
 	jmp cleanup
 
 Lint16:
-	mov 32[rbp], ax
+	mov word ptr [r11], ax
 	jmp cleanup
 
 Lint8:
-	mov 32[rbp], al
+	mov byte ptr [r11], al
 	jmp cleanup
 
 Lfloat:
-	movsd qword ptr 32[rbp], xmm0
+	movsd qword ptr [r11], xmm0
 	jmp cleanup
 
 cleanup:
-	leave
+	lea rsp, 0[rbp]
+	pop rbp
 	ret
 
 callVirtualMethod ENDP
