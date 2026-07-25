@@ -1,0 +1,54 @@
+# Windows target-version constraint dimension.
+#
+# This is the Bazel-native way to model "which Windows do we target" — the same
+# mechanism @platforms//os and @platforms//cpu use.  It composes ORTHOGONALLY
+# with @platforms//cpu:{x86_32,x86_64} inside the target platforms, so the target
+# space is {winxp, win10, ...} x {x86, x64}, not a flat list of stringly-typed
+# --config names.
+#
+# Why a constraint and not just a platform name: a constraint_value can be the
+# subject of select() (via the config_settings below).  So the target Windows
+# floor can DRIVE DEPENDENCIES AND DEFINES, e.g.
+#
+#     _WIN32_WINNT = select({
+#         "//build/constraints:is_winxp": ["_WIN32_WINNT=0x0501"],
+#         "//build/constraints:is_win10": ["_WIN32_WINNT=0x0A00"],
+#     })
+#     deps = select({
+#         "//build/constraints:is_win10": ["@some_lib//:win10_variant"],
+#         "//conditions:default":         ["@some_lib//:legacy_variant"],
+#     })
+#
+# Adding win10 later is then a new constraint_value + platforms + config_setting
+# here — every consumer's select() picks it up; nothing else is stringly-coupled.
+
+package(default_visibility = ["//visibility:public"])
+
+# The dimension itself.  No default_constraint_value: platforms state their floor
+# explicitly, and the auto-detected host (exec) platform simply leaves it unset
+# (exec-config tool builds don't care about the target Windows floor).
+constraint_setting(name = "win_version")
+
+# Current: XP-era (VC9 / VS2008 + SDK v7.0 — the toolchain we stay on for XP
+# compatibility).  Future values slot in beside this one.
+constraint_value(
+    name = "winxp",
+    constraint_setting = ":win_version",
+)
+
+# Placeholder for the planned win10 target (not yet wired to a platform/toolchain).
+constraint_value(
+    name = "win10",
+    constraint_setting = ":win_version",
+)
+
+# select()-able views of the constraint.
+config_setting(
+    name = "is_winxp",
+    constraint_values = [":winxp"],
+)
+
+config_setting(
+    name = "is_win10",
+    constraint_values = [":win10"],
+)

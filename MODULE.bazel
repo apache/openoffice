@@ -72,21 +72,21 @@ register_toolchains("//build/toolchain:cc_toolchain_x64_vs2008_def")
 
 # Execution platforms.  ORDER MATTERS — register_execution_platforms prepends, so the
 # FIRST entry is the highest-priority exec platform.
-#   windows_x64 (x86_64) MUST be first: it becomes the exec platform for all build
+#   winXP-x64 (x86_64) MUST be first: it becomes the exec platform for all build
 #     actions and cfg="exec" tools (idlc/regmerge/cppumaker/rsc/…), so those tools are
 #     built x64 and run natively on this x64 host (matching the amd64 CRT staging).
 #     A target that requires no cc toolchain (e.g. idl_library, which just runs the
-#     staged tools) picks the first exec platform outright — if windows_x86 were first,
+#     staged tools) picks the first exec platform outright — if winXP-x86 were first,
 #     those tools would be built x86_32 (breaking the x64 regmerge/idlc link + CRT).
-#   windows_x86 (x86_32) is the fallback: this x64 host also runs 32-bit binaries via
+#   winXP-x86 (x86_32) is the fallback: this x64 host also runs 32-bit binaries via
 #     WOW64, so x86 TEST targets (target cpu:x86_32) resolve their test toolchain here
 #     (Bazel runs tests on an exec platform matching the target's constraints; without
 #     this, x86 `bazel test` fails "no matching default_test_toolchain_type").  Only the
 #     test-run action lands here — cc/exec-tool actions need a cc toolchain, which is
-#     exec_compatible_with x86_64 only, so they never select windows_x86.
+#     exec_compatible_with x86_64 only, so they never select winXP-x86.
 register_execution_platforms(
-    "//build/platforms:windows_x64",
-    "//build/platforms:windows_x86",
+    "//build/platforms:winXP-x64",
+    "//build/platforms:winXP-x86",
 )
 # Use preinstalled pkg-config instead of building it from source (building it
 # from source requires gettext_runtime whose BUILD uses a removed cc_import builtin).

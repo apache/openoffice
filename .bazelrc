@@ -15,15 +15,19 @@ common --registry=https://bcr.bazel.build
 # pinned explicitly (the auto host platform is x86_64 and would not resolve it).
 # Each arch pins --platforms + a distinct --platform_suffix (separate bazel-out
 # trees, no clobber) + --symlink_prefix (both convenience symlinks coexist).
-# --config=x64 overrides these x86 defaults (all three are last-value-wins).
-build --platforms=//build/platforms:windows_x86
-build --platform_suffix=x86
-build --symlink_prefix=bazel-x86-
+# Thin alias only: --config=winXP-x64 => target the winXP-x64 platform, into its
+# own output tree.  The SEMANTICS (target Windows floor, and any deps/defines that
+# vary by it) live in the //build/constraints:win_version constraint carried by the
+# platform, NOT here.  --config=winXP-x64 overrides the winXP-x86 default (all
+# last-value-wins).
+build --platforms=//build/platforms:winXP-x86
+build --platform_suffix=winXP-x86
+build --symlink_prefix=bazel-winXP-x86-
 
-build:x86 --platforms=//build/platforms:windows_x86
-build:x86 --platform_suffix=x86
-build:x86 --symlink_prefix=bazel-x86-
+build:winXP-x86 --platforms=//build/platforms:winXP-x86
+build:winXP-x86 --platform_suffix=winXP-x86
+build:winXP-x86 --symlink_prefix=bazel-winXP-x86-
 
-build:x64 --platforms=//build/platforms:windows_x64
-build:x64 --platform_suffix=x64
-build:x64 --symlink_prefix=bazel-x64-
+build:winXP-x64 --platforms=//build/platforms:winXP-x64
+build:winXP-x64 --platform_suffix=winXP-x64
+build:winXP-x64 --symlink_prefix=bazel-winXP-x64-

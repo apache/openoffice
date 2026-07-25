@@ -120,7 +120,7 @@ toolchain(
     target_compatible_with = [
         # FIX: the x86 toolchain builds 32-bit binaries, so its TARGET cpu is
         # x86_32 — not x86_64 as it wrongly declared before.  Resolved against
-        # //build/platforms:windows_x86 (--config=x86, the default).
+        # //build/platforms:winXP-x86 (--config=winXP-x86, the default).
         "@platforms//cpu:x86_32",
         "@platforms//os:windows",
     ],
@@ -240,7 +240,7 @@ toolchain(
         "@platforms//os:windows",
     ],
     target_compatible_with = [
-        # Target = Win64.  Resolved against //build/platforms:windows_x64 (--config=x64).
+        # Target = Win64.  Resolved against //build/platforms:winXP-x64 (--config=winXP-x64).
         "@platforms//cpu:x86_64",
         "@platforms//os:windows",
     ],
