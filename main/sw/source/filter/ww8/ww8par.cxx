@@ -965,7 +965,7 @@ SdrObject* SwMSDffManager::ProcessObj(SvStream& rSt,
                               ? (MSO_LineStyle)GetPropertyValue(
                                                     DFF_Prop_lineStyle,
                                                     mso_lineSimple )
-                              : (MSO_LineStyle)USHRT_MAX;
+                              : mso_lineNone;
 
 		pImpRec->nFlags = rObjData.nSpFlags;
 
