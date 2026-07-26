@@ -125,6 +125,40 @@ release-identity 💡 Replaces the old configure --with-build-version="$(date) -
                    NOT carried — it's a cross-bit hack that dissolves once the office
                    itself is ported to a 64-bit toolchain.)
 ```
+
+## Trunk backports
+Periodically port upstream trunk fixes that bazel-migration lacks.  METHOD:
+`git cherry bazel-migration origin/trunk <merge-base>` — `-` marks commits ALREADY
+present by patch-id (our own win64 + sal fixes went upstream, so they show `-`;
+never re-apply those), `+` marks real candidates.  Then `git cherry-pick -x` so the
+upstream hash is recorded in the message.
+
+BACKPORT #1 LANDED 2026-07-26 (branch trunk-backports off bazel-migration, 14 commits,
+GREEN per user build).  Two groups:
+  • cross-platform bug fixes: package ZipPackageFolder (HSQLDB doc corruption+crash
+    regression, 7f52a288cb), package ZipFile bounds check, extensions/update crash+
+    uninit-return, sc dbdocimp check, ww8scan missing includes, ww8graf invalid-enum
+    removal, connectivity jdbc Tools.java cyclic-cause recursion (Java, inert until
+    the Java bucket lands).
+  • Damjan's Win64 SOURCE fixes, complementary to our x64 port (NOT duplicates):
+    ADO driver types (2), unixODBC/OFunctiondefs types (2), dbase Min() types,
+    avmedia IMediaEvent::GetEvent, and winaccessibility amd64 (7d7b15ea9e — changes
+    PUBLIC XMSAAService.idl long→hyper; offapi + UAccCOM MIDL regen; merged cleanly
+    with our existing x64 salframe.cxx edits).
+  DEVIATION: 9d1a529d5e's macOS-only s5abi_macosx_x86-64/cpp2uno.cxx hunk was DROPPED
+  (depends on upstream 11db77d7e7 macOS x86 bridge rework, not carried here); only its
+  extensions/update files were taken.  Noted in that commit's body.
+
+DO NOT PORT (VC9 island landmines — see the trunk drift audit above): boost 1.84
+(2e60be5056), pyuno→Python 3 (27dee00ef8), C++11 floor (7ce5b5df31), autoconf 2.72,
+the macOS/Apple-Silicon batch, GTK/iODBC/lld/icc-Clang16.
+
+STILL OPEN — dmake-only trunk commits with NO cherry-pick equivalent, but whose Win64
+facts our Bazel targets may be missing: crashrep must link psapi on x64 (7e339f4bc5),
+OpenSSL lib names carry an `-x64` suffix (2cc1933ab8 + 6a1563a7a3 CPUNAME in SCPDEFS),
+coinmp x64 build flags (23448c919c), NSS/NSPR win64 patch (22f8d3ac55).  These are a
+BUILD-file audit, not a port.
+
 ## Goal
 Replace the Perl/dmake/gmake orchestration layer with Bazel.
 Primary constraint: eliminate the Cygwin dependency from the build.
