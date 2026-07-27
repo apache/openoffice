@@ -9,6 +9,8 @@ filegroup(
         "fundamental.ini",
         "soffice.ini",
         "uno.ini",
+        # PYUNO_LOADER_PYTHONHOME / PYTHONPATH for pythonloader.dll.
+        "pythonloader.uno.ini",
     ],
 )
 
@@ -148,8 +150,16 @@ collect_outputs(
         "//main/scripting:vbaevents.uno",
         "//main/scripting:stringresource.uno",
         "//main/scripting:protocolhandler",
-        "//main/pyuno:pyuno",
+        # pyuno.pyd, NOT pyuno.dll: Python 2.7 imports only ".pyd".  Staging
+        # both would load the bridge twice under two HMODULEs, each with its own
+        # PyUNOType/RuntimeImpl_Type statics — see main/pyuno/util/pyuno.def.
+        "//main/pyuno:pyuno_pyd",
         "//main/pyuno:pythonloader",
+        # pythonloader.py / uno.py / unohelper.py — imported by the loader.
+        "//main/pyuno:pyuno_py",
+        # pythonscript.py — the ScriptProviderForPython implementation itself,
+        # resolved by `import pythonscript` from the services.rdb pymodule URI.
+        "//main/scripting:pyprov_py",
 
         # ── VBA ───────────────────────────────────────────────────────────────
         "//main/vbahelper:vbahelper",
@@ -490,6 +500,14 @@ tree_install(
     dst          = "share/autotext",
 )
 
+# share/Scripts/python — the "OpenOffice Macros" Python container.
+tree_install(
+    name = "_install_python_scripts",
+    src          = "//main/scripting:python_example_scripts",
+    strip_prefix = "main/scripting/examples/python",
+    dst          = "share/Scripts/python",
+)
+
 tree_install(
     name = "_install_wordbook",
     src          = "//main/extras:wordbook_files",
@@ -630,6 +648,13 @@ filegroup(
         ":_install_images_zip",
         ":_install_images_industrial_zip",
         ":_install_uiconfig",
+        ":_install_python_scripts",
+        # The Python stdlib tree is NOT optional: pythonloader.dll calls
+        # Py_Initialize(), and Python 2.7 exit()s the process if it cannot find
+        # its stdlib.  Anything that instantiates com.sun.star.loader.Python
+        # (Tools > Macros, script-provider enumeration) would kill soffice.
+        ":install_python_lib",
+        ":install_python_bin",
     ],
     visibility = ["//visibility:public"],
 )
@@ -652,12 +677,11 @@ tree_install(
     dst          = "program/python-core-2.7.18/bin",
 )
 
-# ── install_all: build everything in one shot ─────────────────────────────────
+# ── install_all: kept as an alias for :install ────────────────────────────────
+# The python-core tree used to live only here; it is now part of :install itself
+# (see above), so the two are identical.  Retained so existing invocations and
+# docs referring to //main/staging:install_all keep working.
 filegroup(
     name = "install_all",
-    srcs = [
-        ":install",
-        ":install_python_lib",
-        ":install_python_bin",
-    ],
+    srcs = [":install"],
 )

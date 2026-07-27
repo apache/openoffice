@@ -1,6 +1,7 @@
 package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("//build/rules:copy_file.bzl", "copy_file")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -64,10 +65,21 @@ cc_library(
     visibility = ["//visibility:public"],
 )
 
-# ── pyuno.dll ─────────────────────────────────────────────────────
-# Core Python-UNO bridge DLL.  On Windows Python extension modules
-# conventionally use the .pyd extension; Bazel produces .dll — rename
-# at install time if needed.
+# ── pyuno.pyd ─────────────────────────────────────────────────────
+# Core Python-UNO bridge.  Windows Python extension modules MUST use the .pyd
+# extension — Python 2.7's _PyImport_DynLoadFiletab (Python/dynload_win.c) lists
+# only {".pyd"} ({"_d.pyd"} under _DEBUG), NOT ".dll".  uno.py starts with
+# `import pyuno`, so with a pyuno.dll that import raises ImportError, `import
+# pythonloader` fails with it, and ScriptProviderForPython can never be
+# instantiated (macro dialog shows the Python node from pyuno.xcd but lists
+# nothing and offers no Create).  Upstream: DLLPOST=.pyd in
+# source/module/makefile.mk, scp2 ships "pyuno.pyd".
+#
+# Bazel names a linkshared cc_binary "<target>.dll" unconditionally, so the file
+# is produced as pyuno.dll and re-exposed as pyuno.pyd by :pyuno_pyd below;
+# util/pyuno.def carries `LIBRARY pyuno.pyd` so consumers' import tables name
+# the .pyd.  Only ONE of the two may be staged — see util/pyuno.def for why.
+#
 # Exports: initpyuno (Python 2.x), Runtime, PyRef, PyThreadAttach,
 #          PyThreadDetach via PY_DLLEXPORT = SAL_DLLPUBLIC_EXPORT.
 # pyuno_dlopenwrapper.c is *nix-only (uses dlopen); omitted on Windows.
@@ -91,6 +103,15 @@ cc_binary(
     additional_linker_inputs = _LINK_DEPS,
     linkshared = True,
     linkopts = _LINKOPTS,
+    win_def_file = "util/pyuno.def",
+    visibility = ["//visibility:public"],
+)
+
+# The staged artifact: same file, the name Python's importer will accept.
+copy_file(
+    name = "pyuno_pyd",
+    src  = ":pyuno",
+    out  = "pyuno.pyd",
     visibility = ["//visibility:public"],
 )
 
@@ -115,6 +136,21 @@ cc_binary(
     linkshared = True,
     linkopts = _LINKOPTS + [
         "$(execpath :pyuno_implib)",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── Python-side runtime modules → staged flat into program/ ───────────────────
+# pyuno_loader.cxx imports the "pythonloader" module, which imports "uno";
+# unohelper is pulled in by most Python components.  PYUNO_LOADER_PYTHONPATH
+# ends with $ORIGIN (= program/), so all three must sit there as plain files.
+# Equivalent of Package_py.mk / scp2 file_python.scp (Dir = program).
+filegroup(
+    name = "pyuno_py",
+    srcs = [
+        "source/loader/pythonloader.py",
+        "source/module/uno.py",
+        "source/module/unohelper.py",
     ],
     visibility = ["//visibility:public"],
 )

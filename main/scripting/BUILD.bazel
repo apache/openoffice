@@ -305,5 +305,40 @@ rsc_res(
     visibility = ["//visibility:public"],
 )
 
+# ── Python script provider (pyprov) → staged flat into program/ ───────────────
+# pythonscript.component is registered in services.rdb with the URI
+# vnd.openoffice.pymodule:pythonscript, so pythonloader resolves the
+# implementation by doing `import pythonscript` off PYTHONPATH, whose last
+# entry is $ORIGIN (= program/).  Without these files the macro dialog still
+# shows the Python language node (that comes from pyuno.xcd config) but the
+# provider cannot be instantiated — no scripts listed, none can be added.
+# officehelper is imported by the examples; mailmerge is the mail-merge
+# component, registered the same way.  Equivalent of source/pyprov/makefile.mk
+# copying them to $(DLLDEST) and scp2 file_python.scp (Dir = program).
+filegroup(
+    name = "pyprov_py",
+    srcs = [
+        "source/pyprov/pythonscript.py",
+        "source/pyprov/officehelper.py",
+        "source/pyprov/mailmerge.py",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── Example Python scripts → share/Scripts/python/ ("OpenOffice Macros") ─────
+# MyUriHelper in pythonscript.py maps the "share" location to
+# <BaseInstallation>/share/Scripts/python; the folder has to exist for that
+# container to enumerate.  Upstream ships it as ScriptsPython.zip (ARCHIVE
+# style, extracted on install — examples/makefile.mk ZIP4LIST); Bazel stages
+# the tree directly.
+filegroup(
+    name = "python_example_scripts",
+    srcs = [
+        "examples/python/HelloWorld.py",
+        "examples/python/Capitalise.py",
+    ] + glob(["examples/python/pythonSamples/**"]),
+    visibility = ["//visibility:public"],
+)
+
 exports_files(glob(["**/*.component"]))
 

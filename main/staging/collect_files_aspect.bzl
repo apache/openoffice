@@ -109,7 +109,10 @@ res_stage = rule(
 )
 
 # Extensions included in the flat install directory.
-_INSTALL_EXTS = {"exe": True, "dll": True, "rdb": True, "zip": True, "py": True, "ini": True, "manifest": True}
+# "pyd": Python extension modules.  Python 2.7's importer accepts ONLY this
+# suffix on Windows (Python/dynload_win.c), so pyuno ships as pyuno.pyd; without
+# it here the file is collected but silently dropped on the way to program/.
+_INSTALL_EXTS = {"exe": True, "dll": True, "pyd": True, "rdb": True, "zip": True, "py": True, "ini": True, "manifest": True}
 
 def _flat_install_impl(ctx):
     all_files = depset(transitive = [

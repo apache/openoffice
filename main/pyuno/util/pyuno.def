@@ -1,0 +1,27 @@
+; Windows module-definition file for the Python-UNO bridge.
+;
+; No EXPORTS section: every exported symbol already carries
+; SAL_DLLPUBLIC_EXPORT / PY_DLLEXPORT (__declspec(dllexport)).
+;
+; The single LIBRARY statement is the whole point of this file.  It sets the
+; DLL's *internal* name, which is what the linker records in the generated
+; import library (pyuno.if.lib) and therefore in the import table of every
+; consumer -- currently pythonloader.dll.  Bazel's /OUT still names the file on
+; disk pyuno.dll; the copy_file rule in BUILD.bazel re-exposes it as pyuno.pyd,
+; the name Python 2.7 requires (Python/dynload_win.c accepts ONLY ".pyd").
+;
+; Both halves must agree, because pyuno keeps per-DLL statics -- PyUNOType
+; (pyuno.cxx) and RuntimeImpl_Type (pyuno_runtime.cxx).  Shipping the module
+; twice, once as pyuno.dll for pythonloader's import table and once as
+; pyuno.pyd for `import pyuno`, would give two HMODULEs with two distinct
+; PyTypeObjects, and each half would reject the other's objects.  Upstream has
+; exactly one file (pyuno/source/module/makefile.mk: DLLPOST=.pyd); so do we.
+;
+; EXPECTED, harmless: VC9 emits
+;   pyuno.if.exp : warning LNK4070: /OUT:pyuno.pyd directive in .EXP differs
+;                  from output filename 'pyuno.dll'; ignoring directive
+; It ignores the directive only for the *output filename* (which is what we
+; want -- Bazel owns that).  Verified with VC9 link.exe 9.00.30729.01: the
+; export directory, the import-library members, and a consumer's import table
+; all name pyuno.pyd.
+LIBRARY pyuno.pyd
