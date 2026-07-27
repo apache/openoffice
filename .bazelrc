@@ -6,6 +6,17 @@ try-import %workspace%/user.bazelrc
 common --enable_bzlmod
 common --check_direct_dependencies=off
 
+# Materialize the runfiles symlink tree on Windows (default-off there). Required
+# for tests that resolve files at runtime via %TEST_SRCDIR% (e.g. JNI tests that
+# put native libs on java.library.path). Staged gtest tests are unaffected.
+build --enable_runfiles
+
+# Compile all Java to the Java 8 baseline (class file version 52). AOO's Java
+# baseline is 8; the runtime JRE (and the 32-bit JVM the JNI bridge tests host)
+# is Java 8, so jars must load there. Without this, rules_java's bundled JDK emits
+# class 55 (Java 11), which a Java 8 JRE rejects with UnsupportedClassVersionError.
+build --java_language_version=8
+
 common --registry="file:///%workspace%/ext_libraries"
 common --registry=https://bcr.bazel.build
 

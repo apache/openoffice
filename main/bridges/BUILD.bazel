@@ -1,8 +1,12 @@
 package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
-load("@rules_java//java:defs.bzl", "java_library")
+load("@rules_java//java:defs.bzl", "java_library", "java_import")
 load("//build/rules:gtest_test.bzl", "gtest_test", "staged_run_test")
+load("//build/rules:idl_pipeline.bzl", "idl_library")
+load("//build/rules:java_pipeline.bzl", "javamaker_classes", "jar_from_directory")
+load("//build/rules:native_lib_dir.bzl", "native_lib_dir")
+load("//build/rules:java_run_test.bzl", "staged_java_test")
 
 _COPTS = [
     "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs",
@@ -437,4 +441,195 @@ gtest_test(
         "//build:arch_x64": ["//main/bridges:mscx_uno"],
         "//conditions:default": ["//main/bridges:msci_uno"],
     }),
+)
+
+# ═══════════════════════════════════════════════════════════════════════════
+# jni_test_launcher — in-process JVM host for native-bridge tests
+# ═══════════════════════════════════════════════════════════════════════════
+# Carries the VC90-CRT manifest embedded (id 1) so the *process* has the CRT
+# activation context that covers the UNO DLLs the JVM loads at runtime (R6034 fix).
+genrule(
+    name = "launcher_manifest_res",
+    srcs = [
+        "test/jni_test_launcher.rc",
+        "//main/external/msvcp90:vc90_app_manifest",
+    ],
+    outs = ["jni_test_launcher.res"],
+    cmd_bat = (
+        "set \"_RC=C:\\Program Files\\Microsoft SDKs\\Windows\\v7.0\\Bin\\RC.Exe\"&&" +
+        "\"!_RC!\" /nologo /I \"main/external/msvcp90\"" +
+        " /fo \"$(OUTS)\" \"$(location test/jni_test_launcher.rc)\""
+    ),
+)
+
+cc_binary(
+    name = "jni_test_launcher",
+    srcs = ["test/jni_test_launcher.cxx"],
+    copts = ["/EHsc", "/GR", "/nologo", "/Zc:wchar_t-", "/Dsnprintf=_snprintf"],
+    defines = ["WNT", "WIN32", "INTEL", "_X86_=1"],
+    deps = ["@rules_java//toolchains:jni"],
+    additional_linker_inputs = [":launcher_manifest_res"],
+    linkopts = ["$(execpath :launcher_manifest_res)"],
+)
+
+# ═══════════════════════════════════════════════════════════════════════════
+# java_uno "any" round-trip integration test (test/java_uno/any)
+# ═══════════════════════════════════════════════════════════════════════════
+# Drives a Java array/Any across the real JNI bridge (map_to_uno SEQUENCE →
+# seq_allocate). Regression coverage for the sequence allocation-size guard.
+
+# 1. Test UNO types (XTransport / Base / DerivedInterface) → rdb + C++ headers.
+idl_library(
+    name = "test_any_idl",
+    srcs = ["test/java_uno/any/types.idl"],
+    include_dirs = ["main/udkapi"],
+    extra_rdbs = ["//main/udkapi:udkapi_idl"],
+)
+
+cc_library(
+    name = "test_any_idl_headers",
+    hdrs = [":test_any_idl"],
+    includes = ["test_any_idl_inc"],
+)
+
+# 2. Java type classes from the same rdb → jar.
+javamaker_classes(
+    name = "test_any_java_classes",
+    rdb = ":test_any_idl",
+    extra_rdb = "//main/udkapi:udkapi_idl",
+)
+
+jar_from_directory(
+    name = "test_any_types_jar",
+    classes_dir = ":test_any_java_classes",
+)
+
+java_import(
+    name = "test_any_types",
+    jars = [":test_any_types_jar"],
+)
+
+# 4. Java test classes (TestJni entry + shared TestAny). TestBed/TestRemote are
+#    only for the remote variant, not the JNI path.
+java_library(
+    name = "test_any_classes",
+    testonly = True,
+    srcs = [
+        "test/java_uno/any/TestAny.java",
+        "test/java_uno/any/TestJni.java",
+        "test/java_uno/any/TestSeqSize.java",
+    ],
+    javacopts = ["--release", "8", "-XepDisableAllChecks"],
+    deps = [
+        "//main/ridljar:ridl",
+        ":test_any_types",
+    ],
+)
+
+# 5a. All native libs (bridge + UNO/sal + VC90 CRT) co-located in one dir so the
+#     JVM's System.loadLibrary + the Windows loader resolve them and their deps.
+native_lib_dir(
+    name = "test_any_libs",
+    dlls = [
+        ":jni_test_launcher",  # in-process JVM host, co-located so its CRT resolves here too
+        ":test_javauno_any",
+        ":java_uno",   # uno↔java bridge + registers the "java" UNO environment
+        ":msci_uno",   # cpp↔uno bridge + registers the "msci" C++ UNO environment
+        "//main/sal:sal3",
+        "//main/salhelper:salhelper3MSC",
+        "//main/cppu:cppu3",
+        "//main/cppuhelper:cppuhelper3MSC",
+        "//main/jvmaccess:jvmaccess3MSC",
+        "//main/registry:reg",
+        "//main/store:store",
+        "//main/external/msvcp90:msvcp90",
+    ],
+    # The CRT activation context comes from the manifest embedded in
+    # test_javauno_any.dll (transport_manifest_res); the msvcp90 group above
+    # supplies the co-located Microsoft.VC90.CRT SxS assembly it resolves to.
+)
+
+# 5b. The test: a JVM runs TestJni, which loads the bridge and runs the round-trip.
+#     The launcher resolves java.exe, the native-lib dir, and the classpath to
+#     absolute paths via %TEST_SRCDIR% (native libs load at runtime, not a link dep).
+staged_java_test(
+    name = "test_any_jni",
+    main_class = "test.java_uno.anytest.TestJni",
+    library_dir = ":test_any_libs",
+    # 32-bit JDK dirs on PATH so the launcher finds jvm.dll + its deps.
+    # TODO: machine-specific paths — parameterize via env/build setting for CI.
+    jvm_path_dirs = [
+        "C:\\Program Files (x86)\\Eclipse Adoptium\\jdk-8.0.452.9-hotspot\\jre\\bin\\server",
+        "C:\\Program Files (x86)\\Eclipse Adoptium\\jdk-8.0.452.9-hotspot\\jre\\bin",
+    ],
+    runtime_deps = [
+        ":test_any_classes",
+        ":test_any_types",
+        "//main/ridljar:ridl",
+        "//main/jurt:jurt",
+        "//main/javaunohelper:juh_jar",
+        ":java_uno_jar",  # JNI_proxy/JNI_info_holder — the bridge's Java side
+    ],
+)
+
+# 3a. Compile the VC90-CRT manifest into a .res (RC.Exe), to embed in the DLL so
+#     it has a CRT activation context when loaded into a foreign JVM (avoids R6034).
+#     Mirrors the crashrep soreport_res RC.exe pattern.
+genrule(
+    name = "transport_manifest_res",
+    srcs = [
+        "test/java_uno/any/transport.rc",
+        "//main/external/msvcp90:vc90_app_manifest",
+    ],
+    outs = ["transport_manifest.res"],
+    cmd_bat = (
+        "set \"_RC=C:\\Program Files\\Microsoft SDKs\\Windows\\v7.0\\Bin\\RC.Exe\"&&" +
+        "\"!_RC!\" /nologo /I \"main/external/msvcp90\"" +
+        " /fo \"$(OUTS)\" \"$(location test/java_uno/any/transport.rc)\""
+    ),
+)
+
+# 3b. transport.dll — native side; exports the JNI create_jni_transport entry.
+#    Mirrors the java_uno cc_binary (jni.h via @rules_java//toolchains:jni,
+#    SOLAR_JAVA so jvmaccess pulls the real jni.h, undecorated JNI export via .def).
+cc_binary(
+    name = "test_javauno_any",
+    srcs = ["test/java_uno/any/transport.cxx"],
+    copts = [
+        "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs", "/EHsc",
+        "/Zc:wchar_t-",
+        "/Dsnprintf=_snprintf",
+        "/Imain/bridges/inc/pch",
+    ],
+    defines = _SLO_DEFINES + ["SOLAR_JAVA"],
+    deps = [
+        ":bridges_headers",
+        ":test_any_idl_headers",
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/jvmaccess:jvmaccess_headers",
+        "//main/salhelper:salhelper_headers",
+        "//main/stlport:stlport",
+        "@rules_java//toolchains:jni",
+    ],
+    additional_linker_inputs = [
+        ":transport_manifest_res",
+        "//main/sal:sal_implib",
+        "//main/salhelper:salhelper_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/jvmaccess:jvmaccess3MSC_implib",
+    ],
+    linkshared = True,
+    win_def_file = "test/java_uno/any/transport.def",
+    linkopts = [
+        "$(execpath :transport_manifest_res)",  # embeds the VC90-CRT manifest (id 2)
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/salhelper:salhelper_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/jvmaccess:jvmaccess3MSC_implib)",
+    ],
 )

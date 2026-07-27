@@ -30,8 +30,9 @@ public class TestJni
 
     public static void main( String args [] )
     {
-        if (TestAny.test(
-                create_jni_transport(TestJni.class.getClassLoader()), false ))
+        XTransport transport =
+            create_jni_transport(TestJni.class.getClassLoader());
+        if (TestAny.test( transport, false ) && TestSeqSize.test( transport ))
         {
             System.out.println( "jni any test succeeded." );
         }

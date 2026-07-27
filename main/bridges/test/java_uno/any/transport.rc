@@ -1,0 +1,8 @@
+// Embed a VC90-CRT dependency manifest as RT_MANIFEST (type 24), resource id 2
+// (ISOLATIONAWARE_MANIFEST_RESOURCE_ID — the DLL manifest slot). This gives
+// test_javauno_any.dll a CRT activation context when it is loaded into a foreign
+// process (the JVM), so the VC90 CRT resolves via the co-located SxS assembly
+// (Microsoft.VC90.CRT) instead of loose off PATH — which otherwise triggers R6034.
+// Windows honours external <name>.manifest files only for EXEs, so a DLL must
+// embed its manifest.
+2 24 "vc90_app.manifest"

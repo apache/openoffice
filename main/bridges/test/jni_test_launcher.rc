@@ -1,0 +1,6 @@
+// Embed the VC90-CRT dependency manifest as RT_MANIFEST (type 24), resource id 1
+// (CREATEPROCESS_MANIFEST_RESOURCE_ID — the EXE manifest slot). This gives the
+// launcher process a default activation context for the VC90 CRT, which covers
+// every DLL the hosted JVM loads at runtime (the UNO bridge libs), so they
+// resolve the CRT via the SxS assembly instead of loose (avoids R6034).
+1 24 "vc90_app.manifest"

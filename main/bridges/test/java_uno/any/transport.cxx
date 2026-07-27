@@ -34,6 +34,7 @@
 
 #include "test/java_uno/anytest/XTransport.hpp"
 #include "test/java_uno/anytest/DerivedInterface.hpp"
+#include "test/java_uno/anytest/SeqSizeBig.hpp"
 
 
 using namespace ::com::sun::star::uno;
@@ -65,6 +66,10 @@ extern "C" JNIEXPORT jobject JNICALL Java_test_java_1uno_anytest_TestJni_create_
     // publish some idl types
     ::getCppuType( (Reference< XTransport > const *)0 );
     ::getCppuType( (Reference< ::test::java_uno::anytest::DerivedInterface > const *)0 );
+    // publish SeqSizeBig (+ its sequence) so the bridge can resolve the element
+    // size when a sequence of it is mapped, without a registered type rdb.
+    ::getCppuType( (::test::java_uno::anytest::SeqSizeBig const *)0 );
+    ::getCppuType( (Sequence< ::test::java_uno::anytest::SeqSizeBig > const *)0 );
 
     Reference< XTransport > xRet( new Transport() );
 

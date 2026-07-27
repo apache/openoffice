@@ -35,4 +35,23 @@ interface BaseInterface : com::sun::star::uno::XInterface {};
 
 interface DerivedInterface : BaseInterface {};
 
+// A struct with a deliberately large binary size (16 * 8 * 8 = 1024 bytes per
+// element), used to drive a sequence whose (element count * element size)
+// exceeds the 32-bit allocation ceiling with only a few million elements — so
+// the bridge's sequence size handling can be exercised without allocating
+// gigabytes of element data (the elements are left null).
+struct SeqSizeBlock
+{
+    hyper m0; hyper m1; hyper m2; hyper m3;
+    hyper m4; hyper m5; hyper m6; hyper m7;
+};
+
+struct SeqSizeBig
+{
+    SeqSizeBlock b00; SeqSizeBlock b01; SeqSizeBlock b02; SeqSizeBlock b03;
+    SeqSizeBlock b04; SeqSizeBlock b05; SeqSizeBlock b06; SeqSizeBlock b07;
+    SeqSizeBlock b08; SeqSizeBlock b09; SeqSizeBlock b10; SeqSizeBlock b11;
+    SeqSizeBlock b12; SeqSizeBlock b13; SeqSizeBlock b14; SeqSizeBlock b15;
+};
+
 }; }; };
