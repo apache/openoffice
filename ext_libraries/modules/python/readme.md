@@ -28,6 +28,32 @@ ext_libraries/modules/python/
 
 ## Key build decisions
 
+### `_socket` is linked in, not built as `_socket.pyd`
+Upstream CPython builds a set of *extension modules* as separate `.pyd` DLLs
+(`PCbuild/_socket.vcproj`, `select`, `unicodedata`, `_ssl`, `_ctypes`, …).
+This port has **no `.pyd` extension-module targets at all** — `python27.dll`
+contains only what `PC/config.c` lists in `_PyImport_Inittab`.
+
+`socketmodule.c` is the one exception, compiled into `python27.dll` and listed
+in the overlay's `PC/config.c` as `{"_socket", init_socket}`.  It is not
+optional: [main/pyuno/source/module/uno.py](../../../main/pyuno/source/module/uno.py)
+does `import socket` at module scope ("since on Windows sal3.dll no longer calls
+WSAStartup"), so without `_socket` every `import uno` raises
+`ImportError: No module named _socket`.  That kills `import pythonloader`, so
+`pyuno_loader.cxx`'s `CreateInstance()` throws before `activate()` is ever
+reached and the whole Python UNO loader is dead — visible as an empty tree and
+greyed buttons in Tools ▸ Macros ▸ Organize Macros ▸ Python, with the exception
+swallowed by `ProviderCache`.  `ws2_32.lib` was already in `linkopts`.
+
+Expect `warning C4005: 'INVALID_SOCKET' : macro redefinition` — `socketmodule.c`
+defines it before including the SDK's `winsock2.h`.  Harmless, same value.
+
+**Still missing**: every other extension module.  A Python macro that imports
+`select`, `unicodedata`, `_ssl`, `_ctypes`, `pyexpat`, `bz2` … will fail the same
+way.  Add them the same way (source into `_MODULE_SRCS` + entry in `PC/config.c`)
+as they are needed, or build real `.pyd` targets — `//build/rules:copy_file.bzl`
+exists for the `.dll` → `.pyd` rename, see `main/pyuno/readme.md`.
+
 ### No DEF file
 Python 2.7.18's tarball does not include `PC/python27.def`. Exports are
 produced via `__declspec(dllexport)` through the `Py_BUILD_CORE` →

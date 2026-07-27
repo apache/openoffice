@@ -57,6 +57,12 @@ extern void init_json(void);
 extern void init_subprocess(void);
 extern void init_ast(void);
 extern void init_io(void);
+/* Upstream CPython ships _socket as a separate _socket.pyd (PCbuild/_socket.vcproj).
+   We have no .pyd extension-module targets, so it is linked into python27.dll and
+   listed here instead.  Required: uno.py does "import socket" at module scope, so
+   without it "import uno" -> "import pythonloader" fails and the whole Python UNO
+   loader is dead (ImportError: No module named _socket). */
+extern void init_socket(void);
 extern void _PyWarnings_Init(void);
 extern void initxxsubtype(void);
 extern void initzipimport(void);
@@ -81,6 +87,7 @@ struct _inittab _PyImport_Inittab[] = {
     {"_sha",           init_sha},
     {"_sha256",        init_sha256},
     {"_sha512",        init_sha512},
+    {"_socket",        init_socket},
     {"strop",          initstrop},
     {"time",           inittime},
 #ifdef WITH_THREAD

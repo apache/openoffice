@@ -117,6 +117,11 @@ _PC_SRCS = [
 
 # ── Built-in modules (those listed in PC/config.c _inittab) ───────────
 # Only the modules compiled directly into python27.dll, not extension DLLs.
+# EXCEPTION: socketmodule.c.  Upstream builds it as a separate _socket.pyd
+# (PCbuild/_socket.vcproj) and this port has no .pyd extension targets at all,
+# so it is linked in as a built-in.  uno.py imports socket at module scope —
+# without _socket, "import uno" raises ImportError and pyuno's loader never
+# starts.  ws2_32.lib is already in linkopts below.
 _MODULE_SRCS = [
     # Entry points
     "Modules/main.c",
@@ -156,6 +161,8 @@ _MODULE_SRCS = [
     "Modules/timemodule.c",
     # Regex
     "Modules/_sre.c",
+    # Sockets — '_socket' (see note above); needed by uno.py
+    "Modules/socketmodule.c",
     # IO (subdirectory — pick up all .c files)
 ] + glob(["Modules/_io/*.c"]) + [
     # Remaining built-ins
