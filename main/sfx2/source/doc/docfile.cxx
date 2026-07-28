@@ -1791,6 +1791,89 @@ sal_Bool SfxMedium::StorageCommit_Impl()
 }
 
 //------------------------------------------------------------------
+namespace
+{
+
+// Replace the file at rTarget with the contents of rSourceContent by streaming
+// into a sibling temporary file and renaming that over the target.
+//
+// The alternative - truncating the target and rewriting it in place - destroys
+// the user's document at the moment of truncation, so any interruption before
+// the rewrite has reached the medium leaves nothing to recover: the file system
+// commits the final file size but not the data, and the document reads back as
+// a run of zeros (i126990).  Renaming keeps the previous document intact until
+// a single atomic operation swaps the new one in, so an interruption costs at
+// most the most recent save instead of the whole document.
+//
+// The replacement is deliberately created in the target's own directory:
+// osl_moveFile() passes MOVEFILE_COPY_ALLOWED, which silently degrades a
+// cross-volume move into a non-atomic copy+delete, and rename() cannot cross a
+// mount point at all.  Only a sibling can guarantee the swap is atomic.
+sal_Bool lcl_ReplaceTargetAtomically( ::ucbhelper::Content& rSourceContent,
+									  const INetURLObject& rTarget )
+{
+	::rtl::OUString aTargetURL( rTarget.GetMainURL( INetURLObject::NO_DECODE ) );
+	if ( !::utl::LocalFileHelper::IsLocalFile( aTargetURL ) )
+		return sal_False;
+
+	// An in-place rewrite follows a symbolic link and updates the file it points
+	// at; a rename would replace the link itself.  Leave links to the caller's
+	// fallback instead of silently turning one into a regular file.
+	::osl::DirectoryItem aTargetItem;
+	if ( ::osl::DirectoryItem::get( aTargetURL, aTargetItem ) == ::osl::FileBase::E_None )
+	{
+		::osl::FileStatus aTargetStatus( osl_FileStatus_Mask_Type );
+		if ( aTargetItem.getFileStatus( aTargetStatus ) == ::osl::FileBase::E_None
+		  && aTargetStatus.getFileType() == ::osl::FileStatus::Link )
+			return sal_False;
+	}
+
+	INetURLObject aTargetDir( rTarget );
+	if ( !aTargetDir.removeSegment() )
+		return sal_False;
+
+	// name the replacement after the target, so that a leftover left behind by a
+	// crash is recognizable as belonging to this document
+	::rtl::OUString aFileName = rTarget.getName( INetURLObject::LAST_SEGMENT, true, INetURLObject::NO_DECODE );
+	sal_Int32 nPrefixLen = aFileName.lastIndexOf( '.' );
+	String aPrefix = ( nPrefixLen == -1 ) ? aFileName : aFileName.copy( 0, nPrefixLen );
+	String aExtension = ( nPrefixLen == -1 ) ? String() : String(aFileName.copy( nPrefixLen ));
+	String aTargetDirURL( aTargetDir.GetMainURL( INetURLObject::NO_DECODE ) );
+
+	::utl::TempFile aReplacement( aPrefix, &aExtension, &aTargetDirURL );
+	aReplacement.EnableKillingFile( sal_True );
+
+	::rtl::OUString aReplacementURL( aReplacement.GetURL() );
+	if ( !aReplacementURL.getLength() )
+		return sal_False;
+
+	try
+	{
+		Reference< ::com::sun::star::ucb::XCommandEnvironment > xDummyEnv;
+		::ucbhelper::Content aReplacementContent;
+		if ( !::ucbhelper::Content::create( aReplacementURL, xDummyEnv, aReplacementContent ) )
+			return sal_False;
+
+		// writeStream() forces the data onto the medium before reporting
+		// success, so the replacement is durable before it is swapped in
+		aReplacementContent.writeStream( rSourceContent.openStream(), sal_True );
+	}
+	catch( Exception& )
+	{
+		return sal_False;
+	}
+
+	if ( ::osl::File::move( aReplacementURL, aTargetURL ) != ::osl::FileBase::E_None )
+		return sal_False;
+
+	// the replacement is the document now and must not be removed
+	aReplacement.EnableKillingFile( sal_False );
+	return sal_True;
+}
+
+}
+
+//------------------------------------------------------------------
 sal_Bool SfxMedium::TransactedTransferForFS_Impl( const INetURLObject& aSource,
 											 	const INetURLObject& aDest,
 											 	const Reference< ::com::sun::star::ucb::XCommandEnvironment >& xComEnv )
@@ -1853,12 +1936,27 @@ sal_Bool SfxMedium::TransactedTransferForFS_Impl( const INetURLObject& aSource,
 
 					if( pImp->m_aBackupURL.getLength() )
 					{
-						Reference< XInputStream > aTempInput = aTempCont.openStream();
-						bTransactStarted = sal_True;
-						aOriginalContent.setPropertyValue( ::rtl::OUString::createFromAscii( "Size" ),
-															uno::makeAny( (sal_Int64)0 ) );
-						aOriginalContent.writeStream( aTempInput, bOverWrite );
-						bResult = sal_True;
+						// swap the new contents in with an atomic rename, so that the
+						// previous document survives untouched if anything goes wrong
+						bResult = lcl_ReplaceTargetAtomically( aTempCont, aDest );
+
+						if ( !bResult )
+						{
+							// The rename was not possible - for instance because another
+							// process holds the target open, which an in-place rewrite
+							// tolerates but a rename does not.  Rather than fail a save
+							// that used to succeed, fall back to the previous behaviour;
+							// this reopens the i126990 window, but only in the cases where
+							// the safe path cannot be taken at all.
+							OSL_TRACE( "SfxMedium::TransactedTransferForFS_Impl: atomic replace "
+									   "unavailable, falling back to in-place rewrite" );
+							Reference< XInputStream > aTempInput = aTempCont.openStream();
+							bTransactStarted = sal_True;
+							aOriginalContent.setPropertyValue( ::rtl::OUString::createFromAscii( "Size" ),
+																uno::makeAny( (sal_Int64)0 ) );
+							aOriginalContent.writeStream( aTempInput, bOverWrite );
+							bResult = sal_True;
+						}
 					}
 					else
 					{
