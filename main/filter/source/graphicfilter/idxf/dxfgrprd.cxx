@@ -151,7 +151,7 @@ sal_uInt16 DXFGroupReader::Read()
 			else if (nG< 140) ReadS( aTmp );
 			else if (nG< 148) F140_147[nG-140]=ReadF();
 			else if (nG< 170) ReadS( aTmp );
-			else if (nG< 176) I170_175[nG-175]=ReadI();
+			else if (nG< 176) I170_175[nG-170]=ReadI();
 			else if (nG< 180) ReadI();
 			else if (nG< 210) ReadS( aTmp );
 			else if (nG< 240) F210_239[nG-210]=ReadF();
@@ -330,6 +330,18 @@ long DXFGroupReader::ReadI()
 	}
 
 	while (*p==0x20) p++;
+
+	// Tolerate an integer group value written in floating-point notation
+	// (e.g. "1.0"): some CAD applications (Pro/ENGINEER) emit integer group
+	// codes — such as the DIMSTYLE flags 71/72 — that way. Skip a trailing
+	// decimal fraction and keep the integer part; AutoCAD accepts this, whereas
+	// a strict reject aborts the whole import (issue 122565).
+	if (*p=='.') {
+		p++;
+		while (*p>='0' && *p<='9') p++;
+		while (*p==0x20) p++;
+	}
+
 	if (*p!=0) {
 		bStatus=sal_False;
 		return 0;

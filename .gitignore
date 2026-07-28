@@ -89,3 +89,18 @@ main/winaccessibility/source/UAccCOMIDL/dlldata.c
 
 # Python
 .venv
+
+# Visual Studio Code
+.vscode/
+
+# JetBrains IDEs
+.idea/
+
+# claude
+.claude/
+
+# bazel
+bazel-*
+user.bazelrc
+*.lock
+
