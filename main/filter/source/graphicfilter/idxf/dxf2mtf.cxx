@@ -27,6 +27,7 @@
 #include <string.h>
 #include <vcl/gdimtf.hxx>
 #include <vcl/virdev.hxx>
+#include <vcl/hatch.hxx>
 #include <tools/poly.hxx>
 #include "dxf2mtf.hxx"
 
@@ -132,15 +133,23 @@ DXFLineInfo DXF2GDIMetaFile::LTypeToDXFLineInfo(const char * sLineType)
 		}
 	}
 
-#if 0
-	if (aDXFLineInfo.DashCount > 0 && aDXFLineInfo.DashLen == 0.0)
-		aDXFLineInfo.DashLen ( 1 );
-	if (aDXFLineInfo.DotCount > 0 && aDXFLineInfo.DotLen() == 0.0)
-		aDXFLineInfo.SetDotLen( 1 );
-	if (aDXFLineInfo.GetDashCount > 0 || aDXFLineInfo.GetDotCount > 0)
-		if (aDXFLineInfo.GetDistance() == 0)
-			aDXFLineInfo.SetDistance( 1 );
-#endif
+	// A DXF pattern element of exactly 0.0 is a *dot* (a point), distinct from a
+	// positive-length dash (e.g. DOT2 = 0,-3.175). AutoCAD paints it as a small
+	// dot, but VCL has no round dot: LineInfo strokes every "on" run as a short
+	// segment, so a dot is just a very short dash. Rendered verbatim the length
+	// collapses to a sub-unit mark (Transform() only clamps it to 1/100mm) and the
+	// line came out invisible (issue 70275). Give a zero-length dot/dash a small
+	// model-unit length so it survives scaling; keep it a SMALL fraction of the
+	// gap (0.05) so it reads as a dot, not a dash. Done here in model units, not
+	// after scaling, so it tracks the drawing size. Only true 0.0 elements are
+	// adjusted — real authored dashes keep their length.
+	const double fDotOnFraction = 0.05;   // dot mark length as a fraction of the gap
+	if (aDXFLineInfo.fDistance != 0.0) {
+		if (aDXFLineInfo.nDotCount > 0 && aDXFLineInfo.fDotLen == 0.0)
+			aDXFLineInfo.fDotLen = aDXFLineInfo.fDistance * fDotOnFraction;
+		if (aDXFLineInfo.nDashCount > 0 && aDXFLineInfo.fDashLen == 0.0)
+			aDXFLineInfo.fDashLen = aDXFLineInfo.fDistance * fDotOnFraction;
+	}
 
 	return aDXFLineInfo;
 }
@@ -475,6 +484,104 @@ void DXF2GDIMetaFile::DrawTextEntity(const DXFTextEntity & rE, const DXFTransfor
 }
 
 
+// Draw a TEXT entity projected into the (3D) view, used when the drawing is
+// rendered through a non-top viewport. VCL's DrawText can only place text with a
+// position + uniform height + single rotation, so it cannot follow the shear /
+// foreshortening a 3D projection produces. Instead we take the glyph OUTLINES and
+// push them through the full transform like any other geometry, so the text lies
+// in its projected plane. The flat 2D path (DrawTextEntity) is left untouched.
+void DXF2GDIMetaFile::Draw3DTextEntity(const DXFTextEntity & rE, const DXFTransform & rTransform)
+{
+	ByteString aStr( rE.sText );
+	String aUString( aStr, pDXF->getTextEncoding() );
+	if ( aUString.Len()==0 ) return;
+
+	long nColor = GetEntityColor(rE);
+	if ( nColor<0 ) return;
+	Color aColor = ConvertColor((sal_uInt8)nColor);
+
+	// Extract the glyph outlines from a SCRATCH device, never from pVirDev: the
+	// recording device has output disabled, so its GetTextOutlines falls back to a
+	// bitmap path that fails ("could not create system bitmap"). A clean scalable
+	// font on a plain VirtualDevice takes the vector path. The nominal height is
+	// arbitrary — the extent is self-calibrated below.
+	const long nNominal = 1000;
+	Font aFont;
+	aFont.SetFamily(FAMILY_SWISS);
+	aFont.SetSize(Size(0,nNominal));
+	aFont.SetAlign(ALIGN_BASELINE);
+	VirtualDevice aTextDev;
+	aTextDev.SetFont(aFont);
+	PolyPolyVector aGlyphs;
+	sal_Bool bOK = aTextDev.GetTextOutlines( aGlyphs, aUString );
+	if ( !bOK || aGlyphs.empty() ) {
+		DrawTextEntity(rE,rTransform);   // no outlines available -> flat fallback
+		return;
+	}
+
+	// GetTextOutlines returns the glyphs in an opaque internal scale (it toggles
+	// the map mode and rescales by a pixel factor), so we can't assume the height
+	// is nNominal. Self-calibrate: measure the real outline extent and normalise by
+	// its height, so one text-height maps to 1.0 regardless of the device scale.
+	double fMinY=0.0, fMaxY=0.0;
+	sal_Bool bFirst = sal_True;
+	sal_uInt32 g;
+	for ( g=0; g<aGlyphs.size(); g++ ) {
+		const PolyPolygon & rGlyph = aGlyphs[ g ];
+		sal_uInt16 c;
+		for ( c=0; c<rGlyph.Count(); c++ ) {
+			const Polygon & rContour = rGlyph[ c ];
+			sal_uInt16 i, nPts = rContour.GetSize();
+			for ( i=0; i<nPts; i++ ) {
+				const double y = (double)rContour[ i ].Y();
+				if ( bFirst ) { fMinY=fMaxY=y; bFirst=sal_False; }
+				else { if (y<fMinY) fMinY=y; if (y>fMaxY) fMaxY=y; }
+			}
+		}
+	}
+	const double fHeight = fMaxY - fMinY;
+	if ( fHeight <= 0.0 ) {          // degenerate outlines -> flat fallback
+		DrawTextEntity(rE,rTransform);
+		return;
+	}
+	const double fInv = 1.0/fHeight;
+
+	// Text-local coords (baseline at Y=0, one text-height == 1.0, Y up) -> DXF
+	// text placement (width/height/rotation/insertion) -> the incoming extrusion+
+	// view transform. This is the same chain the renderer uses for geometry.
+	// The outlines are normalised to text-height units in BOTH axes, so X and Y
+	// must both scale by fHeight; fXScale (DXF group 41 width factor) is only an
+	// extra horizontal stretch on top (default 1.0). Scaling X by fXScale alone —
+	// as DrawTextEntity can, because it re-derives width from the font — would
+	// collapse the glyphs to a vertical sliver here.
+	const double fWScale = rE.fHeight * ( rE.fXScale>0.0 ? rE.fXScale : 1.0 );
+	DXFTransform aT( DXFTransform(fWScale,rE.fHeight,1.0,rE.fRotAngle,rE.aP0), rTransform );
+
+	if ( aActFillColor!=aColor ) pVirDev->SetFillColor( aActFillColor = aColor );
+	if ( aActLineColor!=aColor ) pVirDev->SetLineColor( aActLineColor = aColor );
+
+	for ( g=0; g<aGlyphs.size(); g++ ) {
+		const PolyPolygon & rGlyph = aGlyphs[ g ];
+		PolyPolygon aDevGlyph;
+		sal_uInt16 c;
+		for ( c=0; c<rGlyph.Count(); c++ ) {
+			const Polygon & rContour = rGlyph[ c ];
+			sal_uInt16 nPts = rContour.GetSize();
+			Polygon aDev( nPts );
+			sal_uInt16 i;
+			for ( i=0; i<nPts; i++ ) {
+				const Point & rP = rContour[ i ];
+				aT.Transform( DXFVector( (double)rP.X()*fInv,
+										 -(double)rP.Y()*fInv, 0.0 ),
+							  aDev[ i ] );
+			}
+			aDevGlyph.Insert( aDev );
+		}
+		pVirDev->DrawPolyPolygon( aDevGlyph );
+	}
+}
+
+
 void DXF2GDIMetaFile::DrawInsertEntity(const DXFInsertEntity & rE, const DXFTransform & rTransform)
 {
 	const DXFBlock * pB;
@@ -586,125 +693,330 @@ void DXF2GDIMetaFile::DrawPolyLineEntity(const DXFPolyLineEntity & rE, const DXF
 
 void DXF2GDIMetaFile::DrawLWPolyLineEntity(const DXFLWPolyLineEntity & rE, const DXFTransform & rTransform )
 {
-	sal_Int32 i, nPolySize = rE.nCount;
-	if ( nPolySize && rE.pP )
+	const sal_Int32 nVtxCount = rE.nCount;
+	if ( nVtxCount <= 0 || rE.pP == NULL )
+		return;
+
+	double fW = rE.fConstantWidth;
+	if ( !SetLineAttribute( rE, rTransform.TransLineWidth( fW ) ) )
+		return;
+
+	const sal_Bool bClosed = ( rE.nFlags & 1 ) != 0;
+
+	// Build the outline in device space, expanding any segment that carries a
+	// non-zero bulge into an arc. In DXF a bulge is tan(sweep/4), so bulge 1.0
+	// is a 180 degree arc; a circle is commonly stored as two bulged segments
+	// (e.g. Eagle CAD). Straight segments (bulge 0) contribute just the vertex.
+	DXFPointArray aPtAry;
+	Point aPt;
+	for ( sal_Int32 i = 0; i < nVtxCount; i++ )
 	{
-		Polygon aPoly( (sal_uInt16)nPolySize);
-		for ( i = 0; i < nPolySize; i++ )
+		rTransform.Transform( rE.pP[ i ], aPt );
+		aPtAry.push_back( aPt );
+
+		sal_Int32 iNext = i + 1;
+		if ( iNext >= nVtxCount )
 		{
-			rTransform.Transform( rE.pP[ (sal_uInt16)i ], aPoly[ (sal_uInt16)i ] );
+			if ( !bClosed ) break;   // open: no segment after the last vertex
+			iNext = 0;               // closed: last vertex arcs back to the first
 		}
-		double fW = rE.fConstantWidth;
-		if ( SetLineAttribute( rE, rTransform.TransLineWidth( fW ) ) )
+
+		const double fBulge = ( rE.pBulge != NULL ) ? rE.pBulge[ i ] : 0.0;
+		if ( fBulge != 0.0 )
 		{
-			if ( ( rE.nFlags & 1 ) != 0 )
-				pVirDev->DrawPolygon( aPoly );
-			else
-				pVirDev->DrawPolyLine( aPoly );
-				// ####
-				//pVirDev->DrawPolyLine( aPoly, aDXFLineInfo );
+			const DXFVector & rS = rE.pP[ i ];
+			const DXFVector & rEnd = rE.pP[ iNext ];
+			// Arc centre from the bulge (cotangent form): the centre lies on the
+			// chord's perpendicular bisector, offset by cot(sweep/2)/2 * chord.
+			const double fCot = 0.5 * ( 1.0 / fBulge - fBulge );
+			const double fCx = 0.5 * ( ( rS.fx + rEnd.fx ) + fCot * ( rS.fy - rEnd.fy ) );
+			const double fCy = 0.5 * ( ( rS.fy + rEnd.fy ) + fCot * ( rEnd.fx - rS.fx ) );
+			const double fRx = rS.fx - fCx;
+			const double fRy = rS.fy - fCy;
+			const double fRadius = sqrt( fRx * fRx + fRy * fRy );
+			const double fStartAng = atan2( fRy, fRx );
+			const double fSweep = 4.0 * atan( fBulge );   // signed: >0 = CCW
+			sal_Int32 nArcPoints = (sal_Int32)( fabs( fSweep ) / ( 2 * 3.14159265359 )
+												* (double)OptPointsPerCircle + 0.5 );
+			// Emit the interior arc samples; the start vertex is already pushed
+			// and the end vertex is pushed as the next loop's leading vertex.
+			for ( sal_Int32 k = 1; k < nArcPoints; k++ )
+			{
+				const double fAng = fStartAng + fSweep * (double)k / (double)nArcPoints;
+				rTransform.Transform(
+					DXFVector( fCx + fRadius * cos( fAng ),
+							   fCy + fRadius * sin( fAng ),
+							   rS.fz ),
+					aPt );
+				aPtAry.push_back( aPt );
+			}
 		}
+	}
+
+	const sal_Int32 nPolySize = (sal_Int32)aPtAry.size();
+	if ( nPolySize < 2 )
+		return;
+
+	if ( nPolySize <= 0xFFFF )
+	{
+		// Fits in a single tools Polygon (which is indexed by sal_uInt16).
+		Polygon aPoly( (sal_uInt16)nPolySize );
+		for ( sal_Int32 i = 0; i < nPolySize; i++ )
+			aPoly[ (sal_uInt16)i ] = aPtAry[ i ];
+		if ( bClosed )
+			pVirDev->DrawPolygon( aPoly );
+		else
+			pVirDev->DrawPolyLine( aPoly );
+		return;
+	}
+
+	// The tessellated outline can exceed the 0xFFFF points a tools Polygon holds.
+	// Render it as a sequence of Polygon segments that overlap by one point, so
+	// the whole line is drawn without truncation and the stroke stays continuous.
+	const sal_Int32 nMaxChunk = 0xFFFF;
+	sal_Int32 nStart = 0;
+	while ( nStart + 1 < nPolySize )
+	{
+		sal_Int32 nEnd = nStart + nMaxChunk;
+		if ( nEnd > nPolySize )
+			nEnd = nPolySize;
+		const sal_uInt16 nChunk = (sal_uInt16)( nEnd - nStart );
+		Polygon aChunk( nChunk );
+		for ( sal_uInt16 j = 0; j < nChunk; j++ )
+			aChunk[ j ] = aPtAry[ nStart + j ];
+		pVirDev->DrawPolyLine( aChunk );
+		nStart = nEnd - 1;   // next segment shares this segment's last point
+	}
+	if ( bClosed )
+	{
+		// Close the outline: last point back to the first.
+		Polygon aClose( 2 );
+		aClose[ 0 ] = aPtAry[ nPolySize - 1 ];
+		aClose[ 1 ] = aPtAry[ 0 ];
+		pVirDev->DrawPolyLine( aClose );
 	}
 }
 
 void DXF2GDIMetaFile::DrawHatchEntity(const DXFHatchEntity & rE, const DXFTransform & rTransform )
 {
-	if ( rE.nBoundaryPathCount )
+	if ( !rE.nBoundaryPathCount )
+		return;
+
+	// Build the boundary as a PolyPolygon, tessellating curved edges so the
+	// area is measured correctly for both the solid fill and the pattern clip.
+	sal_Int32 j;
+	PolyPolygon aPolyPoly;
+	for ( j = 0; j < rE.nBoundaryPathCount; j++ )
 	{
-		SetAreaAttribute( rE );
-		sal_Int32 j = 0;
-		PolyPolygon aPolyPoly;
-		for ( j = 0; j < rE.nBoundaryPathCount; j++ )
+		DXFPointArray aPtAry;
+		const DXFBoundaryPathData& rPathData = rE.pBoundaryPathData[ j ];
+		if ( rPathData.bIsPolyLine )
 		{
-			DXFPointArray aPtAry;
-			const DXFBoundaryPathData& rPathData = rE.pBoundaryPathData[ j ];
-			if ( rPathData.bIsPolyLine )
+			sal_Int32 i;
+			for( i = 0; i < rPathData.nPointCount; i++ )
 			{
-				sal_Int32 i;
-				for( i = 0; i < rPathData.nPointCount; i++ )
-				{
-					Point aPt;
-					rTransform.Transform( rPathData.pP[ i ], aPt );
-					aPtAry.push_back( aPt );
-				}
-			}
-			else
-			{
-				sal_uInt32 i;
-				for ( i = 0; i < rPathData.aEdges.size(); i++ )
-				{
-					const DXFEdgeType* pEdge = rPathData.aEdges[ i ];
-					switch( pEdge->nEdgeType )
-					{
-						case 1 : 
-						{
-							Point aPt;
-							rTransform.Transform( ((DXFEdgeTypeLine*)pEdge)->aStartPoint, aPt );
-							aPtAry.push_back( aPt );
-							rTransform.Transform( ((DXFEdgeTypeLine*)pEdge)->aEndPoint, aPt );
-							aPtAry.push_back( aPt );
-						}
-						break;
-						case 2 :
-						{
-/*
-							double frx,fry,fA1,fdA,fAng;
-							sal_uInt16 nPoints,i;
-							DXFVector aC;
-							Point aPS,aPE;
-							fA1=((DXFEdgeTypeCircularArc*)pEdge)->fStartAngle;
-							fdA=((DXFEdgeTypeCircularArc*)pEdge)->fEndAngle - fA1;
-							while ( fdA >= 360.0 )
-								fdA -= 360.0;
-							while ( fdA <= 0 )
-								fdA += 360.0;
-							rTransform.Transform(((DXFEdgeTypeCircularArc*)pEdge)->aCenter, aC);
-							if ( fdA > 5.0 && rTransform.TransCircleToEllipse(((DXFEdgeTypeCircularArc*)pEdge)->fRadius,frx,fry ) == sal_True )
-							{
-								DXFVector aVS(cos(fA1/180.0*3.14159265359),sin(fA1/180.0*3.14159265359),0.0);
-								aVS*=((DXFEdgeTypeCircularArc*)pEdge)->fRadius;
-								aVS+=((DXFEdgeTypeCircularArc*)pEdge)->aCenter;
-								DXFVector aVE(cos((fA1+fdA)/180.0*3.14159265359),sin((fA1+fdA)/180.0*3.14159265359),0.0);
-								aVE*=((DXFEdgeTypeCircularArc*)pEdge)->fRadius;
-								aVE+=((DXFEdgeTypeCircularArc*)pEdge)->aCenter;
-								if ( rTransform.Mirror() == sal_True )
-								{
-									rTransform.Transform(aVS,aPS);
-									rTransform.Transform(aVE,aPE);
-								}
-								else
-								{
-									rTransform.Transform(aVS,aPE);
-									rTransform.Transform(aVE,aPS);
-								}
-								pVirDev->DrawArc(
-									Rectangle((long)(aC.fx-frx+0.5),(long)(aC.fy-fry+0.5),
-											  (long)(aC.fx+frx+0.5),(long)(aC.fy+fry+0.5)),
-									aPS,aPE
-								);
-							}
-*/
-						}
-						break;
-						case 3 :
-						case 4 :
-						break;
-					}
-				}
-			}
-			sal_uInt16 i, nSize = (sal_uInt16)aPtAry.size();
-			if ( nSize )
-			{
-				Polygon aPoly( nSize );
-				for ( i = 0; i < nSize; i++ )
-					aPoly[ i ] = aPtAry[ i ];
-				aPolyPoly.Insert( aPoly, POLYPOLY_APPEND );
+				Point aPt;
+				rTransform.Transform( rPathData.pP[ i ], aPt );
+				aPtAry.push_back( aPt );
 			}
 		}
-		if ( aPolyPoly.Count() )
+		else
+		{
+			sal_uInt32 i;
+			for ( i = 0; i < rPathData.aEdges.size(); i++ )
+			{
+				const DXFEdgeType* pEdge = rPathData.aEdges[ i ];
+				switch( pEdge->nEdgeType )
+				{
+					case 1 :
+					{
+						Point aPt;
+						rTransform.Transform( ((DXFEdgeTypeLine*)pEdge)->aStartPoint, aPt );
+						aPtAry.push_back( aPt );
+						rTransform.Transform( ((DXFEdgeTypeLine*)pEdge)->aEndPoint, aPt );
+						aPtAry.push_back( aPt );
+					}
+					break;
+					case 2 :
+					{
+						// Circular arc edge: sample the sweep and push the points.
+						// Angles are in degrees; direction follows the CCW flag.
+						const DXFEdgeTypeCircularArc* pArc = (const DXFEdgeTypeCircularArc*)pEdge;
+						double fSweep = pArc->fEndAngle - pArc->fStartAngle;
+						if ( pArc->nIsCounterClockwiseFlag )
+							{ while ( fSweep <= 0.0 ) fSweep += 360.0; }
+						else
+							{ while ( fSweep >= 0.0 ) fSweep -= 360.0; }
+						sal_uInt16 nPts = (sal_uInt16)( fabs(fSweep)/360.0*(double)OptPointsPerCircle + 0.5 );
+						if ( nPts < 2 ) nPts = 2;
+						for ( sal_uInt16 k = 0; k < nPts; k++ )
+						{
+							double a = ( pArc->fStartAngle + fSweep*(double)k/(double)(nPts-1) )
+										* (3.14159265359/180.0);
+							Point aPt;
+							rTransform.Transform(
+								DXFVector( pArc->aCenter.fx + pArc->fRadius*cos(a),
+										   pArc->aCenter.fy + pArc->fRadius*sin(a), 0.0 ), aPt );
+							aPtAry.push_back( aPt );
+						}
+					}
+					break;
+					case 3 :	// elliptical arc: not tessellated (not seen in
+					case 4 :	// practice here); spline edges store no control
+					break;		// points, so both fall through as before.
+				}
+			}
+		}
+		sal_uInt16 i, nSize = (sal_uInt16)aPtAry.size();
+		if ( nSize )
+		{
+			Polygon aPoly( nSize );
+			for ( i = 0; i < nSize; i++ )
+				aPoly[ i ] = aPtAry[ i ];
+			aPolyPoly.Insert( aPoly, POLYPOLY_APPEND );
+		}
+	}
+	if ( !aPolyPoly.Count() )
+		return;
+
+	if ( rE.nFlags & 1 )
+	{
+		// Solid fill (group 70 bit 0): flood-fill the boundary in the entity colour.
+		SetAreaAttribute( rE );
+		pVirDev->DrawPolyPolygon( aPolyPoly );
+	}
+	else if ( rE.bHasPatternLine )
+	{
+		// Pattern fill: render the section lines with VCL's DrawHatch, which
+		// clips a line family to the boundary and records a MetaHatchAction.
+		// The DXF pattern is collapsed to a single/double/triple Hatch; the
+		// on-page angle and spacing come from mapping the pattern-definition
+		// line's direction and inter-line offset through rTransform, so any
+		// scale / rotation / block-insert nesting is accounted for.
+		long nColor = GetEntityColor( rE );
+		if ( nColor < 0 )
+			return;
+		Color aColor = ConvertColor( (sal_uInt8)nColor );
+
+		const double fPi = 3.14159265359;
+		double fA = rE.fPatternLineAngle * (fPi/180.0);
+		DXFVector aDir, aOff;
+		rTransform.TransDir( DXFVector( cos(fA), sin(fA), 0.0 ), aDir );
+		rTransform.TransDir( DXFVector( rE.fPatternLineOffsetX, rE.fPatternLineOffsetY, 0.0 ), aOff );
+
+		double fDirLen = sqrt( aDir.fx*aDir.fx + aDir.fy*aDir.fy );
+		if ( fDirLen < 1e-9 )
+		{
+			// degenerate direction: fall back to a bare outline (no blob).
+			SetLineAttribute( rE );
 			pVirDev->DrawPolyPolygon( aPolyPoly );
+			return;
+		}
+
+		// Perpendicular spacing between adjacent lines in device space, and the
+		// device line angle. VCL's angle is measured in the recorded coordinate
+		// system with its positive direction as (cos,-sin), hence -aDir.fy.
+		double fDist = fabs( aOff.fx*aDir.fy - aOff.fy*aDir.fx ) / fDirLen;
+		long nDistance = (long)( fDist + 0.5 );
+		if ( nDistance < 1 ) nDistance = 1;
+
+		double fAngle = atan2( -aDir.fy, aDir.fx ) * 1800.0 / fPi;
+		long nAngle10 = (long)( fAngle + (fAngle < 0.0 ? -0.5 : 0.5) );
+		nAngle10 %= 1800;
+		if ( nAngle10 < 0 )
+			nAngle10 += 1800;
+
+		HatchStyle eStyle = HATCH_SINGLE;
+		if ( rE.nHatchPatternDefinitionLines == 2 )
+			eStyle = HATCH_DOUBLE;
+		else if ( rE.nHatchPatternDefinitionLines >= 3 )
+			eStyle = HATCH_TRIPLE;
+
+		Hatch aHatch( eStyle, aColor, nDistance, (sal_uInt16)nAngle10 );
+		pVirDev->DrawHatch( aPolyPoly, aHatch );
+	}
+	else
+	{
+		// Pattern fill but no pattern-definition line was parsed: stroke the
+		// boundary outline only (transparent fill), never a solid blob.
+		SetLineAttribute( rE );
+		pVirDev->DrawPolyPolygon( aPolyPoly );
 	}
 }
+
+void DXF2GDIMetaFile::DrawEllipseEntity(const DXFEllipseEntity & rE, const DXFTransform & rTransform)
+{
+	if (SetLineAttribute(rE)==sal_False) return;
+
+	// Major axis vector (relative to centre) and the minor axis, which for the
+	// common planar case (extrusion 0,0,1) is ratio*(normal x major) =
+	// ratio*(-major.y, major.x, 0). A non-default extrusion is applied through
+	// rTransform by DrawEntities, so compute in the entity's own frame.
+	const DXFVector & aU = rE.aP1;
+	DXFVector aV(-aU.fy * rE.fRatio, aU.fx * rE.fRatio, 0.0);
+
+	double fSweep = rE.fEnd - rE.fStart;
+	while (fSweep <= 0.0)             fSweep += 2*3.14159265359;
+	while (fSweep >  2*3.14159265359) fSweep -= 2*3.14159265359;
+
+	sal_uInt16 nPoints = (sal_uInt16)( fSweep/(2*3.14159265359)*(double)OptPointsPerCircle + 0.5 );
+	if (nPoints<2) nPoints=2;
+
+	Polygon aPoly(nPoints);
+	for (sal_uInt16 i=0; i<nPoints; i++) {
+		double t = rE.fStart + fSweep*(double)i/(double)(nPoints-1);
+		rTransform.Transform( rE.aP0 + aU*cos(t) + aV*sin(t), aPoly[i] );
+	}
+	pVirDev->DrawPolyLine(aPoly);
+}
+
+
+void DXF2GDIMetaFile::DrawSplineEntity(const DXFSplineEntity & rE, const DXFTransform & rTransform)
+{
+	// Non-uniform B-spline, evaluated with de Boor's algorithm and drawn as a
+	// polyline. Rational (weighted) splines are treated as non-rational (the
+	// weights are ignored) — sufficient for the planar curves this targets.
+	if ( rE.pControlPts==NULL || rE.pfKnots==NULL ) return;
+	const long p = rE.nDegree;
+	const long n = rE.nCtrlCount - 1;
+	if ( p < 1 || n < p ) return;
+	if ( rE.nKnotCount != rE.nCtrlCount + p + 1 ) return;   // not a clamped B-spline
+	if ( SetLineAttribute(rE)==sal_False ) return;
+
+	const double * U = rE.pfKnots;
+	const double u0 = U[p];
+	const double u1 = U[n+1];
+	if ( u1 <= u0 ) return;
+
+	long nPoints = rE.nCtrlCount * 8;
+	if (nPoints < 2)    nPoints = 2;
+	if (nPoints > 2000) nPoints = 2000;
+
+	Polygon aPoly((sal_uInt16)nPoints);
+	DXFVector * d = new DXFVector[p+1];
+	for (long i=0; i<nPoints; i++) {
+		double u = u0 + (u1-u0)*(double)i/(double)(nPoints-1);
+		if (u >= u1) u = u1 - (u1-u0)*1e-9;   // stay inside the last knot span
+
+		// knot span k with U[k] <= u < U[k+1], clamped to [p, n]
+		long k = p;
+		while (k < n && u >= U[k+1]) k++;
+
+		long j, r;
+		for (j=0; j<=p; j++) d[j] = rE.pControlPts[k-p+j];
+		for (r=1; r<=p; r++) {
+			for (j=p; j>=r; j--) {
+				double fDenom = U[k+1+j-r] - U[k-p+j];
+				double a = (fDenom!=0.0) ? (u - U[k-p+j])/fDenom : 0.0;
+				d[j] = d[j-1]*(1.0-a) + d[j]*a;
+			}
+		}
+		rTransform.Transform(d[p], aPoly[(sal_uInt16)i]);
+	}
+	delete[] d;
+	pVirDev->DrawPolyLine(aPoly);
+}
+
 
 void DXF2GDIMetaFile::Draw3DFaceEntity(const DXF3DFaceEntity & rE, const DXFTransform & rTransform)
 {
@@ -773,7 +1085,7 @@ void DXF2GDIMetaFile::DrawEntities(const DXFEntities & rEntities,
 
 	while (pE!=NULL && bStatus==sal_True) {
 		if (pE->nSpace==0) {
-			if (pE->aExtrusion.fz==1.0) {
+			if (pE->aExtrusion.fz==1.0 || DXFCoordsAreWCS(*pE)) {
 				pT=&rTransform;
 			}
 			else {
@@ -800,7 +1112,10 @@ void DXF2GDIMetaFile::DrawEntities(const DXFEntities & rEntities,
 				DrawSolidEntity((DXFSolidEntity&)*pE,*pT);
 				break;
 			case DXF_TEXT:
-				DrawTextEntity((DXFTextEntity&)*pE,*pT);
+				if (b3DText)
+					Draw3DTextEntity((DXFTextEntity&)*pE,*pT);
+				else
+					DrawTextEntity((DXFTextEntity&)*pE,*pT);
 				break;
 			case DXF_INSERT:
 				DrawInsertEntity((DXFInsertEntity&)*pE,*pT);
@@ -816,6 +1131,12 @@ void DXF2GDIMetaFile::DrawEntities(const DXFEntities & rEntities,
 				break;
 			case DXF_HATCH :
 				DrawHatchEntity((DXFHatchEntity&)*pE, *pT);
+				break;
+			case DXF_ELLIPSE:
+				DrawEllipseEntity((DXFEllipseEntity&)*pE,*pT);
+				break;
+			case DXF_SPLINE:
+				DrawSplineEntity((DXFSplineEntity&)*pE,*pT);
 				break;
 			case DXF_3DFACE:
 				Draw3DFaceEntity((DXF3DFaceEntity&)*pE,*pT);
@@ -900,6 +1221,9 @@ sal_Bool DXF2GDIMetaFile::Convert(const DXFRepresentation & rDXF, GDIMetaFile & 
 		if (pVPort->aDirection.fx==0 && pVPort->aDirection.fy==0)
 			pVPort=NULL;
 	}
+	// A non-top viewport means the drawing is projected in 3D; text then has to be
+	// laid into that projection (Draw3DTextEntity) rather than drawn flat.
+	b3DText = (pVPort!=NULL) ? sal_True : sal_False;
 
 	if (pVPort==NULL) {
 		if (pDXF->aBoundingBox.bEmpty==sal_True)
@@ -912,21 +1236,32 @@ sal_Bool DXF2GDIMetaFile::Convert(const DXFRepresentation & rDXF, GDIMetaFile & 
 				fScale = 0;  // -Wall added this...
 			}
 			else {
+				// Leave a small margin around the drawing. The larger extent is
+				// scaled to fill the 10000-unit target exactly, so geometry that
+				// lies right on the extent (e.g. a drawing frame's outer line)
+				// would otherwise sit precisely on the fit boundary and be
+				// clipped. This surfaced once issue 58347 made the bounding box
+				// a tight fit to the geometry; the margin keeps every edge inside
+				// the fitted area (symmetric, so all four sides get breathing room).
+				const double fMargin =
+					(fWidth>fHeight ? fWidth : fHeight) * 0.01;
+				const double fFitWidth  = fWidth  + 2.0*fMargin;
+				const double fFitHeight = fHeight + 2.0*fMargin;
 //				if (fWidth<500.0 || fHeight<500.0 || fWidth>32767.0 || fHeight>32767.0) {
-					if (fWidth>fHeight)
-						fScale=10000.0/fWidth;
+					if (fFitWidth>fFitHeight)
+						fScale=10000.0/fFitWidth;
 					else
-						fScale=10000.0/fHeight;
+						fScale=10000.0/fFitHeight;
 //				}
 //				else
 //					fScale=1.0;
 				aTransform=DXFTransform(fScale,-fScale,fScale,
-										DXFVector(-pDXF->aBoundingBox.fMinX*fScale,
-												   pDXF->aBoundingBox.fMaxY*fScale,
+										DXFVector((fMargin-pDXF->aBoundingBox.fMinX)*fScale,
+												  (pDXF->aBoundingBox.fMaxY+fMargin)*fScale,
 												  -pDXF->aBoundingBox.fMinZ*fScale));
+				aPrefSize.Width() =(long)(fFitWidth*fScale+1.5);
+				aPrefSize.Height()=(long)(fFitHeight*fScale+1.5);
 			}
-			aPrefSize.Width() =(long)(fWidth*fScale+1.5);
-			aPrefSize.Height()=(long)(fHeight*fScale+1.5);
 		}
 	}
 	else {

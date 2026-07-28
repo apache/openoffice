@@ -53,7 +53,9 @@ enum DXFEntityType {
 	DXF_3DFACE,
 	DXF_DIMENSION,
 	DXF_LWPOLYLINE,
-	DXF_HATCH
+	DXF_HATCH,
+	DXF_ELLIPSE,
+	DXF_SPLINE
 };
 
 //------------------------------------------------------------------------------
@@ -369,6 +371,7 @@ class DXFLWPolyLineEntity : public DXFBasicEntity
 		double		fEndWidth;		// 41
 
 		DXFVector*	pP;
+		double*		pBulge;			// 42 (per vertex; parallel to pP, 0.0 = straight segment)
 
 		DXFLWPolyLineEntity();
 		~DXFLWPolyLineEntity();
@@ -465,6 +468,7 @@ class DXFHatchEntity : public DXFBasicEntity
 {
 		sal_Bool	bIsInBoundaryPathContext;
 		sal_Int32	nCurrentBoundaryPathIndex;
+		sal_Bool	bPatternLineOffsetSet;			// transient parse state (first 45/46 captured)
 
 	public :
 
@@ -481,6 +485,15 @@ class DXFHatchEntity : public DXFBasicEntity
 		double		fPixelSize;						// 47
 		sal_Int32	nNumberOfSeedPoints;			// 98
 
+		// First pattern-definition line (78 block). Enough to drive a VCL Hatch
+		// (single/double/triple): the line angle (53) and the inter-line offset
+		// (45/46) give on-page angle + spacing; multi-line patterns collapse to
+		// this line's geometry plus the style from nHatchPatternDefinitionLines.
+		sal_Bool	bHasPatternLine;				// a 53 line angle was parsed
+		double		fPatternLineAngle;				// 53
+		double		fPatternLineOffsetX;			// 45
+		double		fPatternLineOffsetY;			// 46
+
 		DXFBoundaryPathData* pBoundaryPathData;
 
 		DXFHatchEntity();
@@ -491,6 +504,53 @@ class DXFHatchEntity : public DXFBasicEntity
 		virtual void EvaluateGroup( DXFGroupReader & rDGR );
 };
 
+
+//--------------------------Ellipse---------------------------------------------
+
+class DXFEllipseEntity : public DXFBasicEntity {
+
+public:
+
+	DXFVector aP0;   // 10,20,30  center
+	DXFVector aP1;   // 11,21,31  endpoint of the major axis, relative to center
+	double fRatio;   // 40        ratio of minor axis to major axis
+	double fStart;   // 41        start parameter (radians; 0 for a full ellipse)
+	double fEnd;     // 42        end parameter   (radians; 2*pi for a full ellipse)
+
+	DXFEllipseEntity();
+
+protected:
+
+	virtual void EvaluateGroup(DXFGroupReader & rDGR);
+};
+
+//--------------------------Spline----------------------------------------------
+
+class DXFSplineEntity : public DXFBasicEntity {
+
+public:
+
+	long nFlags;         // 70   bit 1=closed, 2=periodic, 4=rational, 8=planar
+	long nDegree;        // 71
+	long nKnotCount;     // 72
+	long nCtrlCount;     // 73
+	long nFitCount;      // 74
+
+	double *    pfKnots;      // 40        (nKnotCount entries)
+	DXFVector * pControlPts;  // 10,20,30  (nCtrlCount entries)
+
+	DXFSplineEntity();
+	~DXFSplineEntity();
+
+protected:
+
+	virtual void EvaluateGroup(DXFGroupReader & rDGR);
+
+private:
+
+	long nKnotIndex;
+	long nCtrlIndex;
+};
 
 //--------------------------Vertex----------------------------------------------
 
@@ -576,6 +636,14 @@ public:
 	void Clear();
 		// Loescht alle Entities
 };
+
+// True when an entity's stored coordinates are already in WCS, so the OCS
+// "arbitrary axis" (extrusion) transform must NOT be applied to them. Used by
+// BOTH the renderer (DrawEntities) and the bounding-box pass (CalcBoundingBox) so
+// they stay consistent: flat/planar entities (CIRCLE, ARC, TEXT, 2D POLYLINE,
+// LWPOLYLINE, INSERT, ...) are OCS and DO need the extrusion; inherently-3D
+// entities (LINE, POINT, 3DFACE, and a 3D polyline / mesh) carry WCS coordinates.
+sal_Bool DXFCoordsAreWCS(const DXFBasicEntity & rE);
 
 //------------------------------------------------------------------------------
 //--------------------------------- inlines ------------------------------------

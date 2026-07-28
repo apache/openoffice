@@ -514,8 +514,32 @@ static sal_Bool ImpPeekGraphicFormat( SvStream& rStream, String& rFormatExtensio
 		bSomethingTested=sal_True;
 
 		i=0;
-		while (i<256 && sFirstBytes[i]<=32)
-			i++;
+
+		// A DXF file may begin with one or more 999 comment groups (each is a
+		// "999" code line followed by a comment value line), e.g. files written
+		// by Pro/ENGINEER. Skip them before looking for the first real group,
+		// otherwise such valid DXF files are rejected as an unknown format
+		// (issue 122565).
+		for (;;)
+		{
+			while (i<256 && sFirstBytes[i]<=32)
+				i++;
+			if ( i+3<256 && sFirstBytes[i]=='9' && sFirstBytes[i+1]=='9' &&
+				 sFirstBytes[i+2]=='9' && sFirstBytes[i+3]<=32 )
+			{
+				// skip the "999" code line and the comment value line after it
+				int nLine;
+				for ( nLine=0; nLine<2 && i<256; nLine++ )
+				{
+					while (i<256 && sFirstBytes[i]!='\n' && sFirstBytes[i]!='\r')
+						i++;
+					while (i<256 && (sFirstBytes[i]=='\n' || sFirstBytes[i]=='\r'))
+						i++;
+				}
+				continue;
+			}
+			break;
+		}
 
 		if (i<256)
 		{

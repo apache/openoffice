@@ -84,3 +84,20 @@ main/winaccessibility/source/UAccCOMIDL/dlldata.c
 
 # RepoRevision hash file
 /main/solenv/inc/reporevision.lst
+
+# Python
+.venv
+
+# Visual Studio Code
+.vscode/
+
+# JetBrains IDEs
+.idea/
+
+# claude
+.claude/
+
+# bazel
+bazel-*
+user.bazelrc
+*.lock
