@@ -422,7 +422,8 @@ DXFLWPolyLineEntity::DXFLWPolyLineEntity() :
 	fConstantWidth( 0.0 ),
 	fStartWidth( 0.0 ),
 	fEndWidth( 0.0 ),
-	pP( NULL )
+	pP( NULL ),
+	pBulge( NULL )
 {
 }
 
@@ -438,6 +439,9 @@ void DXFLWPolyLineEntity::EvaluateGroup( DXFGroupReader & rDGR )
 				try
 				{
 					pP = new DXFVector[ nCount ];
+					pBulge = new double[ nCount ];
+					for ( sal_Int32 i = 0; i < nCount; i++ )
+						pBulge[ i ] = 0.0;
 				}
 				catch (::std::bad_alloc)
 				{
@@ -464,6 +468,14 @@ void DXFLWPolyLineEntity::EvaluateGroup( DXFGroupReader & rDGR )
 				pP[ nIndex++ ].fy = rDGR.GetF();
 		}
 		break;
+		case 42:
+		{
+			// per-vertex bulge; follows the 10/20 pair of the vertex it
+			// belongs to (nIndex has already advanced past that vertex).
+			if ( pBulge && ( nIndex > 0 ) && ( nIndex <= nCount ) )
+				pBulge[ nIndex - 1 ] = rDGR.GetF();
+		}
+		break;
 		default: DXFBasicEntity::EvaluateGroup(rDGR);
 	}
 }
@@ -471,6 +483,7 @@ void DXFLWPolyLineEntity::EvaluateGroup( DXFGroupReader & rDGR )
 DXFLWPolyLineEntity::~DXFLWPolyLineEntity()
 {
 	delete[] pP;
+	delete[] pBulge;
 }
 
 //--------------------------DXFHatchEntity-------------------------------------
@@ -684,6 +697,7 @@ DXFHatchEntity::DXFHatchEntity() :
 	DXFBasicEntity( DXF_HATCH ),
 	bIsInBoundaryPathContext( sal_False ),
 	nCurrentBoundaryPathIndex( -1 ),
+	bPatternLineOffsetSet( sal_False ),
 	nFlags( 0 ),
 	nAssociativityFlag( 0 ),
 	nBoundaryPathCount( 0 ),
@@ -695,6 +709,10 @@ DXFHatchEntity::DXFHatchEntity() :
 	nHatchPatternDefinitionLines( 0 ),
 	fPixelSize( 1.0 ),
 	nNumberOfSeedPoints( 0 ),
+	bHasPatternLine( sal_False ),
+	fPatternLineAngle( 0.0 ),
+	fPatternLineOffsetX( 0.0 ),
+	fPatternLineOffsetY( 0.0 ),
 	pBoundaryPathData( NULL )
 {
 }
@@ -740,6 +758,21 @@ void DXFHatchEntity::EvaluateGroup( DXFGroupReader & rDGR )
 		case 78 : nHatchPatternDefinitionLines = rDGR.GetI(); break;
 		case 47 : fPixelSize = rDGR.GetF(); break;
 		case 98 : nNumberOfSeedPoints = rDGR.GetI(); break;
+
+		// Pattern-definition lines (only present for a pattern fill, after 75).
+		// Capture the FIRST line's angle (53) and inter-line offset (45/46);
+		// 53/45/46 appear nowhere else in a HATCH, so intercepting them here is
+		// safe. Codes 43/44 (base point) are not needed for a VCL Hatch.
+		case 53 :
+			if ( !bHasPatternLine ) { fPatternLineAngle = rDGR.GetF(); bHasPatternLine = sal_True; }
+			break;
+		case 45 :
+			if ( bHasPatternLine && !bPatternLineOffsetSet ) fPatternLineOffsetX = rDGR.GetF();
+			break;
+		case 46 :
+			if ( bHasPatternLine && !bPatternLineOffsetSet )
+			{ fPatternLineOffsetY = rDGR.GetF(); bPatternLineOffsetSet = sal_True; }
+			break;
 
 		//!! passthrough !!
 		case 92 : nCurrentBoundaryPathIndex++;
@@ -842,6 +875,98 @@ void DXFDimensionEntity::EvaluateGroup(DXFGroupReader & rDGR)
 
 //---------------------------- DXFEntites --------------------------------------
 
+//--------------------------DXFEllipseEntity------------------------------------
+
+DXFEllipseEntity::DXFEllipseEntity() : DXFBasicEntity(DXF_ELLIPSE)
+{
+	fRatio = 1.0;
+	fStart = 0.0;
+	fEnd   = 2*3.14159265359;
+}
+
+void DXFEllipseEntity::EvaluateGroup(DXFGroupReader & rDGR)
+{
+	switch (rDGR.GetG()) {
+		case 10: aP0.fx=rDGR.GetF(); break;
+		case 20: aP0.fy=rDGR.GetF(); break;
+		case 30: aP0.fz=rDGR.GetF(); break;
+		case 11: aP1.fx=rDGR.GetF(); break;
+		case 21: aP1.fy=rDGR.GetF(); break;
+		case 31: aP1.fz=rDGR.GetF(); break;
+		case 40: fRatio=rDGR.GetF(); break;
+		case 41: fStart=rDGR.GetF(); break;
+		case 42: fEnd=rDGR.GetF(); break;
+		default: DXFBasicEntity::EvaluateGroup(rDGR);
+	}
+}
+
+//--------------------------DXFSplineEntity-------------------------------------
+
+DXFSplineEntity::DXFSplineEntity() :
+	DXFBasicEntity(DXF_SPLINE),
+	nFlags(0),
+	nDegree(0),
+	nKnotCount(0),
+	nCtrlCount(0),
+	nFitCount(0),
+	pfKnots(NULL),
+	pControlPts(NULL),
+	nKnotIndex(0),
+	nCtrlIndex(0)
+{
+}
+
+DXFSplineEntity::~DXFSplineEntity()
+{
+	delete[] pfKnots;
+	delete[] pControlPts;
+}
+
+void DXFSplineEntity::EvaluateGroup(DXFGroupReader & rDGR)
+{
+	switch (rDGR.GetG()) {
+		case 70: nFlags  = rDGR.GetI(); break;
+		case 71: nDegree = rDGR.GetI(); break;
+		case 72:
+			nKnotCount = rDGR.GetI();
+			if ( rDGR.GetStatus() && nKnotCount > 0 ) {
+				try { pfKnots = new double[nKnotCount]; }
+				catch (::std::bad_alloc) { rDGR.SetError(); }
+			}
+			else if ( nKnotCount < 0 )
+				rDGR.SetError();
+			break;
+		case 73:
+			nCtrlCount = rDGR.GetI();
+			if ( rDGR.GetStatus() && nCtrlCount > 0 ) {
+				try { pControlPts = new DXFVector[nCtrlCount]; }
+				catch (::std::bad_alloc) { rDGR.SetError(); }
+			}
+			else if ( nCtrlCount < 0 )
+				rDGR.SetError();
+			break;
+		case 74: nFitCount = rDGR.GetI(); break;
+		case 40:
+			if ( pfKnots && nKnotIndex < nKnotCount )
+				pfKnots[nKnotIndex++] = rDGR.GetF();
+			break;
+		// control points are 3D (10/20/30); advance on the Z group
+		case 10:
+			if ( pControlPts && nCtrlIndex < nCtrlCount )
+				pControlPts[nCtrlIndex].fx = rDGR.GetF();
+			break;
+		case 20:
+			if ( pControlPts && nCtrlIndex < nCtrlCount )
+				pControlPts[nCtrlIndex].fy = rDGR.GetF();
+			break;
+		case 30:
+			if ( pControlPts && nCtrlIndex < nCtrlCount )
+				pControlPts[nCtrlIndex++].fz = rDGR.GetF();
+			break;
+		default: DXFBasicEntity::EvaluateGroup(rDGR);
+	}
+}
+
 void DXFEntities::Read(DXFGroupReader & rDGR)
 {
 	DXFBasicEntity * pE, * * ppSucc;
@@ -874,6 +999,8 @@ void DXFEntities::Read(DXFGroupReader & rDGR)
 		else if (strcmp(rDGR.GetS(),"3DFACE"	)==0) pE=new DXF3DFaceEntity;
 		else if (strcmp(rDGR.GetS(),"DIMENSION"	)==0) pE=new DXFDimensionEntity;
 		else if (strcmp(rDGR.GetS(),"HATCH"		)==0) pE=new DXFHatchEntity;
+		else if (strcmp(rDGR.GetS(),"ELLIPSE"	)==0) pE=new DXFEllipseEntity;
+		else if (strcmp(rDGR.GetS(),"SPLINE"	)==0) pE=new DXFSplineEntity;
 		else
 		{
 			do {
@@ -895,5 +1022,27 @@ void DXFEntities::Clear()
 		ptmp=pFirst;
 		pFirst=ptmp->pSucc;
 		delete ptmp;
+	}
+}
+
+sal_Bool DXFCoordsAreWCS(const DXFBasicEntity & rE)
+{
+	// See the header comment. For a LINE the extrusion only defines a thickness
+	// direction, never the endpoint positions; applying it scatters 3D wireframes
+	// (issue 99893) and inflates the bounding box (both must agree). ELLIPSE/SPLINE
+	// are intentionally NOT WCS here — DrawEllipseEntity/DrawSplineEntity compute in
+	// the entity's own frame and rely on the extrusion being applied.
+	switch (rE.eType) {
+		case DXF_LINE:
+		case DXF_POINT:
+		case DXF_3DFACE:
+			return sal_True;
+		case DXF_POLYLINE:
+			// 3D polyline / 3D mesh / polyface mesh store WCS vertices; a plain
+			// 2D polyline is in OCS.
+			return ( ((const DXFPolyLineEntity &)rE).nFlags & (8|16|64) ) != 0
+				   ? sal_True : sal_False;
+		default:
+			return sal_False;
 	}
 }

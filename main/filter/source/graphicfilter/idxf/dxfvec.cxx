@@ -245,5 +245,16 @@ double DXFTransform::CalcRotAngle() const
 
 sal_Bool DXFTransform::Mirror() const
 {
-	if (aMZ.SProd(aMX*aMY)<0) return sal_True; else return sal_False;
+	// True when this transform reverses orientation *in the projected XY plane* —
+	// the plane the 2D metafile is actually drawn in. Arc rendering uses this to
+	// choose the sweep direction handed to DrawArc.
+	//
+	// The 3D handedness aMZ.(aMX x aMY) is the wrong test here: a negative-Z
+	// extrusion feeds the Arbitrary Axis Algorithm a 180-degrees rotation about Y
+	// (a proper rotation), which flips the in-plane orientation yet leaves the 3D
+	// determinant sign unchanged (the flipped aMZ.z masks it). That drew arcs with
+	// negative-Z extrusion as their complement (e.g. a quarter arc as three
+	// quarters — issue 16564). Use the sign of the 2D projected determinant, which
+	// is what actually governs clockwise vs counter-clockwise on the page.
+	if (aMX.fx*aMY.fy - aMX.fy*aMY.fx < 0) return sal_True; else return sal_False;
 }
