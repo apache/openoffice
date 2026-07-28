@@ -57,6 +57,7 @@ private:
 	Color		aActLineColor;
 	Color		aActFillColor;
 	Font		aActFont;
+	sal_Bool	b3DText;		// draw TEXT projected into the 3D view (Draw3DTextEntity)
 
 	sal_uLong CountEntities(const DXFEntities & rEntities);
 
@@ -91,6 +92,8 @@ private:
 
 	void DrawTextEntity(const DXFTextEntity & rE, const DXFTransform & rTransform);
 
+	void Draw3DTextEntity(const DXFTextEntity & rE, const DXFTransform & rTransform);
+
 	void DrawInsertEntity(const DXFInsertEntity & rE, const DXFTransform & rTransform);
 
 	void DrawAttribEntity(const DXFAttribEntity & rE, const DXFTransform & rTransform);
@@ -104,6 +107,10 @@ private:
 	void DrawLWPolyLineEntity( const DXFLWPolyLineEntity & rE, const DXFTransform & rTransform );
 
 	void DrawHatchEntity( const DXFHatchEntity & rE, const DXFTransform & rTransform );
+
+	void DrawEllipseEntity( const DXFEllipseEntity & rE, const DXFTransform & rTransform );
+
+	void DrawSplineEntity( const DXFSplineEntity & rE, const DXFTransform & rTransform );
 
 	void DrawEntities(const DXFEntities & rEntities,
 					  const DXFTransform & rTransform,
