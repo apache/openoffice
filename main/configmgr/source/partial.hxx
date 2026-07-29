@@ -26,10 +26,11 @@
 
 #include "sal/config.h"
 
-#include <boost/unordered_map.hpp> // using the boost container because it explicitly allows recursive types
+#include <map>
 #include <set>
 
 #include "boost/noncopyable.hpp"
+#include "boost/shared_ptr.hpp"
 
 #include "path.hxx"
 #include "rtl/ustring.hxx"
@@ -50,7 +51,8 @@ public:
 
 private:
     struct Node {
-        typedef boost::unordered_map< rtl::OUString, Node, rtl::OUStringHash > Children;
+        typedef boost::shared_ptr< Node > NodePtr;
+        typedef std::map< rtl::OUString, NodePtr > Children;
 
         Node(): startInclude(false) {}
         void clear() { startInclude=false; children.clear(); }
@@ -58,6 +60,9 @@ private:
         Children children;
         bool startInclude;
     };
+
+    static Node * getOrCreateChild(
+        Node * parent, rtl::OUString const & name);
 
     Node root_;
 };
