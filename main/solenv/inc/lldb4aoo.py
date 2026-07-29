@@ -89,10 +89,13 @@ def ret_strdata_info( v, refvar, lenvar, aryvar):
 	L = min(l,128)
 	d = c.AddressOf().GetPointeeData( 0, L)
 	if c.GetByteSize() == 1: # assume UTF-8
-		s = ''.join([chr(x) for x in d.uint8s])
+		s = bytes(bytearray(d.uint8s)).decode('utf-8', 'replace')
 	else: # assume UTF-16
-		s = (u''.join([unichr(x) for x in d.uint16s])).encode('utf-8')
-	info += ('{refs=%d, len=%d, str="%s"%s}' % (r, l, s.encode('string_escape'), '...'if(l!=L)else''))
+		s = u''.join([chr(x) for x in d.uint16s])
+	# Python 3 has no 'string_escape' codec; 'unicode_escape' is the
+	# equivalent for escaping a str for display.
+	esc = s.encode('unicode_escape').decode('ascii')
+	info += ('{refs=%d, len=%d, str="%s"%s}' % (r, l, esc, '...'if(l!=L)else''))
 	return info
 
 # definitions for our individual LLDB type summary providers

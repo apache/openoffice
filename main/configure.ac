@@ -4126,7 +4126,10 @@ if test "$_os" = "Darwin" && test "$with_system_python" != "no"; then
            PYTHON_LIBS="-framework Python"
            ;;
        *)
-           _python_libdir=`$_python -c "import distutils.sysconfig; print(distutils.sysconfig.get_config_var('LIBDIR'));"`
+           dnl Use sysconfig, not distutils.sysconfig: distutils was removed in
+           dnl Python 3.12 and the interpreter we pick here may well be newer
+           dnl than the 3.11 floor.
+           _python_libdir=`$_python -c "import sysconfig; print(sysconfig.get_config_var('LIBDIR'));"`
            PYTHON_LIBS="-L$_python_libdir -lpython$_python_ver"
            ;;
    esac
@@ -4138,13 +4141,13 @@ elif test -n "$with_system_python" -o -n "$with_system_libs" && \
 
    python_include=`$PYTHON -c "import sysconfig; print(sysconfig.get_config_var('INCLUDEPY'));"`
    python_version=`$PYTHON -c "import sysconfig; print(sysconfig.get_config_var('VERSION'));"`
-   # Python 3.8 and later distinguish building Python modules from linking to the libpython:
+   # Python 3.8 and later distinguish building Python modules from linking to the
+   # libpython, so embedders must use the "-embed" pkg-config module:
    # (https://bugs.python.org/issue36721)
-   if test "$python_version" -lt "3.8"; then
-       PKG_CHECK_MODULES(PYTHON, python-$python_version, PYTHON_PC="TRUE", PYTHON_PC="" )
-   else
-       PKG_CHECK_MODULES(PYTHON, python-$python_version-embed, PYTHON_PC="TRUE", PYTHON_PC="" )
-   fi
+   # AM_PATH_PYTHON above already enforces a 3.11 floor, so "-embed" is always
+   # the right variant here. (The old "$python_version" -lt "3.8" test was a
+   # numeric comparison on a string like "3.11" and could never work.)
+   PKG_CHECK_MODULES(PYTHON, python-$python_version-embed, PYTHON_PC="TRUE", PYTHON_PC="" )
    if test "$PYTHON_PC" != "TRUE"; then
        PYTHON_CFLAGS="-I$python_include"
        PYTHON_LIBS="-lpython$python_version"
@@ -4166,13 +4169,9 @@ else
    if test "z$HOME" = "z"; then
       export HOME="";
    fi
-   # bz2 tarball and bzip2 is not standard
-   if test -z "$BZIP2"; then
-	AC_PATH_PROG( BZIP2, bzip2)
-	if test -z "$BZIP2"; then
-   		AC_MSG_ERROR([the internal Python module has a .tar.bz2. You need bzip2])
-   	fi
-   fi
+   dnl The internal Python tarball is a .tgz (see main/external_deps.lst), so
+   dnl gzip is all that is needed to unpack it. The old bzip2 requirement was
+   dnl for the Python 2.x .tar.bz2 and no longer applies.
 fi
 AC_SUBST(SYSTEM_PYTHON)
 AC_SUBST(PYTHON_CFLAGS)

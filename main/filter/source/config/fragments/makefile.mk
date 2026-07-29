@@ -142,7 +142,7 @@ $(ALL_FLAGS) : $(INCLUDE_FRAGMENTS)
 .IF "$(SOLAR_JAVA)"==""
 #cmc, hack to workaround the java build requirement
 .IF "$(SYSTEM_PYTHON)" == "YES"
-MERGE:=python ../tools/merge/pyAltFCFGMerge
+MERGE:=python3 ../tools/merge/pyAltFCFGMerge
 .ELSE
 MERGE:=$(AUGMENT_LIBRARY_PATH) $(SOLARBINDIR)/python ../tools/merge/pyAltFCFGMerge
 .ENDIF

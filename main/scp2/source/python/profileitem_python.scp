@@ -67,23 +67,20 @@ ProfileItem gid_Profileitem_Pythonloader_Pythonpath
   #ifdef UNX
     #ifdef MACOSX
     #define FRAMEWORKLIB CONCAT4($ORIGIN/OOoPython.framework/Versions/,PYMAJMIN,/lib/python,PYMAJMIN)
-    Value = CONCAT4(FRAMEWORKLIB FRAMEWORKLIB,
+    Value = CONCAT3(FRAMEWORKLIB FRAMEWORKLIB,
 		   /lib-dynload FRAMEWORKLIB,
-		   /lib-tk FRAMEWORKLIB,
 		   /site-packages $ORIGIN);
     #else
-    Value = CONCAT9($ORIGIN/python-core-,PYVERSION,
+    Value = CONCAT7($ORIGIN/python-core-,PYVERSION,
 		   /lib $ORIGIN/python-core-,PYVERSION,
 		   /lib/lib-dynload $ORIGIN/python-core-,PYVERSION,
-		   /lib/lib-tk $ORIGIN/python-core-,PYVERSION,
 		   /lib/site-packages $ORIGIN);
     #endif
   #else
    #ifdef _gcc3
-    Value = STRING(CONCAT9($ORIGIN/python-core-,PYVERSION,
+    Value = STRING(CONCAT7($ORIGIN/python-core-,PYVERSION,
 		   /lib $ORIGIN/python-core-,PYVERSION,
 		   /lib/lib-dynload $ORIGIN/python-core-,PYVERSION,
-		   /lib/lib-tk $ORIGIN/python-core-,PYVERSION,
 		   /lib/site-packages $ORIGIN));
    #else
     Value = STRING(CONCAT5($ORIGIN/python-core-,PYVERSION,

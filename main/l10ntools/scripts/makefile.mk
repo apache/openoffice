@@ -32,7 +32,7 @@ TARGET = l10ntools_dummy_pyc
 .IF "$(SYSTEM_PYTHON)"!="YES"
 PYTHON=$(AUGMENT_LIBRARY_PATH) $(WRAPCMD) $(SOLARBINDIR)/python
 .ELSE                   # "$(SYSTEM_PYTHON)"!="YES"
-PYTHON=$(AUGMENT_LIBRARY_PATH) $(WRAPCMD) python
+PYTHON=$(AUGMENT_LIBRARY_PATH) $(WRAPCMD) python3
 .ENDIF                  # "$(SYSTEM_PYTHON)"!="YES"
 
 PYFILES = $(BIN)$/const.py \
