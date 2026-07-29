@@ -142,7 +142,13 @@ $(ALL_FLAGS) : $(INCLUDE_FRAGMENTS)
 .IF "$(SOLAR_JAVA)"==""
 #cmc, hack to workaround the java build requirement
 .IF "$(SYSTEM_PYTHON)" == "YES"
+# PYTHON_BIN is the interpreter configure located and checked against the
+# 3.11 floor; fall back to PATH only if the environment does not carry it.
+.IF "$(PYTHON_BIN)"==""
 MERGE:=python3 ../tools/merge/pyAltFCFGMerge
+.ELSE
+MERGE:=$(PYTHON_BIN) ../tools/merge/pyAltFCFGMerge
+.ENDIF
 .ELSE
 MERGE:=$(AUGMENT_LIBRARY_PATH) $(SOLARBINDIR)/python ../tools/merge/pyAltFCFGMerge
 .ENDIF

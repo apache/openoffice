@@ -32,7 +32,13 @@ TARGET = l10ntools_dummy_pyc
 .IF "$(SYSTEM_PYTHON)"!="YES"
 PYTHON=$(AUGMENT_LIBRARY_PATH) $(WRAPCMD) $(SOLARBINDIR)/python
 .ELSE                   # "$(SYSTEM_PYTHON)"!="YES"
+# PYTHON_BIN is the interpreter configure located and checked against the
+# 3.11 floor; fall back to PATH only if the environment does not carry it.
+.IF "$(PYTHON_BIN)"==""
 PYTHON=$(AUGMENT_LIBRARY_PATH) $(WRAPCMD) python3
+.ELSE                   # "$(PYTHON_BIN)"==""
+PYTHON=$(AUGMENT_LIBRARY_PATH) $(WRAPCMD) $(PYTHON_BIN)
+.ENDIF                  # "$(PYTHON_BIN)"==""
 .ENDIF                  # "$(SYSTEM_PYTHON)"!="YES"
 
 PYFILES = $(BIN)$/const.py \

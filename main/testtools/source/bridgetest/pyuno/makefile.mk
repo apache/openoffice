@@ -42,7 +42,13 @@ REGEXC=$(DLLDEST)$/regcomp$(EXECPOST)
 .IF "$(SYSTEM_PYTHON)"!="YES"
 PYTHON=$(AUGMENT_LIBRARY_PATH) $(WRAPCMD) $(SOLARBINDIR)/python
 .ELSE                   # "$(SYSTEM_PYTHON)"!="YES"
+# PYTHON_BIN is the interpreter configure located and checked against the
+# 3.11 floor; fall back to PATH only if the environment does not carry it.
+.IF "$(PYTHON_BIN)"==""
 PYTHON=$(AUGMENT_LIBRARY_PATH) $(WRAPCMD) python3
+.ELSE                   # "$(PYTHON_BIN)"==""
+PYTHON=$(AUGMENT_LIBRARY_PATH) $(WRAPCMD) $(PYTHON_BIN)
+.ENDIF                  # "$(PYTHON_BIN)"==""
 .ENDIF                  # "$(SYSTEM_PYTHON)"!="YES"
 .IF "$(GUI)"=="WNT"
 PYTHONPATH:=$(SOLARLIBDIR)$/pyuno;$(PWD);$(SOLARLIBDIR);$(SOLARLIBDIR)$/python;$(SOLARLIBDIR)$/python$/lib-dynload

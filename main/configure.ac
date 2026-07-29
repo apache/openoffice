@@ -4103,6 +4103,11 @@ if test "$_os" = "Darwin" && test "$with_system_python" != "no"; then
    _python_version=`$_python -c "import sys; print(sys.version);" | head -c 4`
    AC_MSG_RESULT([compiling against system python ($_python, version $_python_version)])
 
+   dnl Hand the interpreter we just validated to the build, so that the build
+   dnl steps that run Python scripts use it instead of whatever "python3"
+   dnl happens to be first on PATH.
+   PYTHON_BIN="$_python"
+
    _python_ver=`$_python -c "import sysconfig; print(sysconfig.get_config_var('VERSION'));"`
 
    dnl Locate the headers. Prefer the framework/SDK locations, but fall back
@@ -4139,6 +4144,11 @@ elif test -n "$with_system_python" -o -n "$with_system_libs" && \
    AC_MSG_RESULT([external])
    AM_PATH_PYTHON([3.11])
 
+   dnl Hand the interpreter AM_PATH_PYTHON just validated to the build, so that
+   dnl the build steps that run Python scripts use it instead of whatever
+   dnl "python3" happens to be first on PATH.
+   PYTHON_BIN="$PYTHON"
+
    python_include=`$PYTHON -c "import sysconfig; print(sysconfig.get_config_var('INCLUDEPY'));"`
    python_version=`$PYTHON -c "import sysconfig; print(sysconfig.get_config_var('VERSION'));"`
    # Python 3.8 and later distinguish building Python modules from linking to the
@@ -4174,6 +4184,7 @@ else
    dnl for the Python 2.x .tar.bz2 and no longer applies.
 fi
 AC_SUBST(SYSTEM_PYTHON)
+AC_SUBST(PYTHON_BIN)
 AC_SUBST(PYTHON_CFLAGS)
 AC_SUBST(PYTHON_LIBS)
 HOME=`echo $HOME | sed 's:\\\\:/:g'`

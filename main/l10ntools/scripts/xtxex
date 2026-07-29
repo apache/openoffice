@@ -27,15 +27,15 @@ fi
 
 if [ ${GUI} = "WNT" ]; then
 if [ x${SOLARVER}x = xx -o x${UPDMINOREXT}x = xx  ]; then
-    exec "${PYTHON:-python3}" $SOLARVERSION/$INPATH/bin/xtxex.py "$@"
+    exec "${PYTHON_BIN:-python3}" $SOLARVERSION/$INPATH/bin/xtxex.py "$@"
 else
-    exec "${PYTHON:-python3}" $SOLARVERSION/$INPATH/bin$UPDMINOREXT/xtxex.py "$@"
+    exec "${PYTHON_BIN:-python3}" $SOLARVERSION/$INPATH/bin$UPDMINOREXT/xtxex.py "$@"
 fi
 else
 if [ x${SOLARVER}x = xx -o x${UPDMINOREXT}x = xx  ]; then
-    exec "${PYTHON:-python3}" $SOLARVERSION/$INPATH/bin/xtxex.py "$@"
+    exec "${PYTHON_BIN:-python3}" $SOLARVERSION/$INPATH/bin/xtxex.py "$@"
 else
-    exec "${PYTHON:-python3}" $SOLARVERSION/$INPATH/bin$UPDMINOREXT/xtxex.py "$@"
+    exec "${PYTHON_BIN:-python3}" $SOLARVERSION/$INPATH/bin$UPDMINOREXT/xtxex.py "$@"
 fi
 fi
 

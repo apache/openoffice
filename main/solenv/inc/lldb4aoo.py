@@ -36,7 +36,7 @@ def __lldb_init_module( dbg, dict):
 
 	# add info about specific helper methods
 	# assume functions with docstrings are available for general consumption
-	helper_funcs = [v for (k,v) in globals().iteritems() if( not k.startswith('_') and callable(v) and v.__doc__)]
+	helper_funcs = [v for (k,v) in list(globals().items()) if( not k.startswith('_') and callable(v) and v.__doc__)]
 	if helper_funcs:
 		print( 'Available AOO-specific helper functions:')
 		for hfunc in helper_funcs:

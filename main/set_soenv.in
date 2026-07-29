@@ -1950,6 +1950,7 @@ ToFile( "SYSTEM_OPENSSL",    "@SYSTEM_OPENSSL@",   "e" );
 ToFile( "OPENSSL_CFLAGS",    "@OPENSSL_CFLAGS@",   "e" );
 ToFile( "OPENSSL_LIBS",      "@OPENSSL_LIBS@",     "e" );
 ToFile( "SYSTEM_PYTHON",     "@SYSTEM_PYTHON@",    "e" );
+ToFile( "PYTHON_BIN",        "@PYTHON_BIN@",       "e" );
 ToFile( "PYTHON_CFLAGS",     "@PYTHON_CFLAGS@",    "e" );
 ToFile( "PYTHON_LIBS",       "@PYTHON_LIBS@",      "e" );
 if ($SYSTEM_PYTHON eq "NO") {
