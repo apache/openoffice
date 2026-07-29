@@ -149,6 +149,27 @@ GREEN per user build).  Two groups:
   (depends on upstream 11db77d7e7 macOS x86 bridge rework, not carried here); only its
   extensions/update files were taken.  Noted in that commit's body.
 
+BACKPORT #2 LANDED 2026-07-29 (idxf DXF import filter, SQUASHED to one commit).
+Unlike #1 this work ORIGINATED here: it was developed on the local branch
+dxf-filter-fix using Bazel purely as the fast iteration harness, went upstream as
+apache/openoffice#491 (merge c082241a9b, 2026-07-28), and was then brought back from
+trunk.  LANDMINE for the `git cherry` method above: because it was squashed, the 11
+upstream commits have NO patch-id match here and WILL show as `+` candidates
+(999d0e5d3c 22079cd995 65c7e1576f e345bd9383 030749d53e 82ba6d6560 c4b51fde1e
+5ed424c6ce 3931960203 05e2156ffd 96b0524be2).  Do NOT re-apply them — they are
+already in, verified tree-identical to trunk's post-PR state; the list also lives in
+the squash commit's body.  Source-only, 11 files:
+main/filter/source/graphicfilter/idxf/* (scaling/extents, arc+ellipse+spline geometry,
+LWPOLYLINE bulge, linetype dots, HATCH patterns, 3D OCS/WCS + VPORT, $DWGCODEPAGE
+encoding) + main/svtools/source/filter/filter.cxx (DXF detector tolerates leading 999
+comments).  Root causes per defect: main/filter/source/graphicfilter/idxf/Readme.md.
+  DEVIATION: the PR's .gitignore hunk was DROPPED — bazel-migration's .gitignore
+  already covers bazel-*/user.bazelrc/.vscode, and trunk's `*.lock` + whole-dir
+  `.claude/` are wrong here (MODULE.bazel.lock is tracked).
+  NOT carried to AOO42X/AOO41X yet.  The 13.5 MB Bugzilla sample corpus and the
+  still-open cases (99892 Phase B encoding-chooser UI, text-dense thumbnail) live on
+  the local branch bugfix-dxf-filter-open, deliberately out of this tree.
+
 DO NOT PORT (VC9 island landmines — see the trunk drift audit above): boost 1.84
 (2e60be5056), pyuno→Python 3 (27dee00ef8), C++11 floor (7ce5b5df31), autoconf 2.72,
 the macOS/Apple-Silicon batch, GTK/iODBC/lld/icc-Clang16.
