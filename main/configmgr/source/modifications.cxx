@@ -44,13 +44,13 @@ void Modifications::add(Path const & path) {
             if (wasPresent && p->children.empty()) {
                 return;
             }
-            j = p->children.insert(Node::Children::value_type(*i, Node())).
-                first;
+            j = p->children.insert(
+                Node::Children::value_type(*i, Node::NodePtr(new Node))).first;
             wasPresent = false;
         } else {
             wasPresent = true;
         }
-        p = &j->second;
+        p = j->second.get();
     }
     p->children.clear();
 }
@@ -72,7 +72,7 @@ void Modifications::remove(Path const & path) {
             }
             break;
         }
-        p = &j->second;
+        p = j->second.get();
     }
 }
 

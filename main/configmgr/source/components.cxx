@@ -278,7 +278,7 @@ void Components::initGlobalBroadcaster(
                         mods = 0;
                         break;
                     }
-                    mods = &k->second;
+                    mods = k->second.get();
                 }
                 //TODO: If the complete tree of which root is a part is deleted,
                 // or replaced, mods will be null, but some of the listeners

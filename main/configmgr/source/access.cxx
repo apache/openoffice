@@ -483,10 +483,10 @@ void Access::initBroadcasterAndChanges(
         if (child.is()) {
             switch (child->getNode()->kind()) {
             case Node::KIND_LOCALIZED_PROPERTY:
-                if (!i->second.children.empty()) {
+                if (!i->second->children.empty()) {
                     if (Components::allLocales(getRootAccess()->getLocale())) {
                         child->initBroadcasterAndChanges(
-                            i->second, broadcaster, allChanges);
+                            *i->second, broadcaster, allChanges);
                             //TODO: if allChanges==0, recurse only into children
                             // w/ listeners
                     } else {
@@ -644,7 +644,7 @@ void Access::initBroadcasterAndChanges(
                 break;
             case Node::KIND_GROUP:
             case Node::KIND_SET:
-                if (i->second.children.empty()) {
+                if (i->second->children.empty()) {
                     if (child->getNode()->getTemplateName().getLength() != 0) {
                         for (ContainerListeners::iterator j(
                                  containerListeners_.begin());
@@ -672,7 +672,7 @@ void Access::initBroadcasterAndChanges(
                     // change
                 } else {
                     child->initBroadcasterAndChanges(
-                        i->second, broadcaster, allChanges);
+                        *i->second, broadcaster, allChanges);
                         //TODO: if allChanges==0, recurse only into children w/
                         // listeners
                 }
@@ -781,7 +781,7 @@ void Access::initBroadcasterAndChanges(
                 break;
             case Node::KIND_SET:
                 // Removed set member:
-                if (i->second.children.empty()) {
+                if (i->second->children.empty()) {
                     for (ContainerListeners::iterator j(
                              containerListeners_.begin());
                          j != containerListeners_.end(); ++j)

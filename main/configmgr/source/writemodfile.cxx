@@ -519,7 +519,7 @@ void writeModifications(
         {
             writeModifications(
                 components, handle, pathRep, node, i->first,
-                node->getMember(i->first), i->second);
+                node->getMember(i->first), *i->second);
         }
     }
 }
@@ -582,7 +582,7 @@ void writeModFile(
         writeModifications(
             components, tmp.handle, rtl::OUString(), rtl::Reference< Node >(),
             j->first, Data::findNode(Data::NO_LAYER, data.components, j->first),
-            j->second);
+            *j->second);
     }
     writeData(tmp.handle, RTL_CONSTASCII_STRINGPARAM("</oor:items>"));
     oslFileError e = osl_closeFile(tmp.handle);
