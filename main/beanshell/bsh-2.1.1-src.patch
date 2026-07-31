@@ -1,0 +1,95 @@
+--- misc/BeanShell-2.1.1/build.xml	Fri Dec 19 17:14:27 2003
++++ misc/build/BeanShell-2.1.1/build.xml	Fri Mar 28 15:55:04 2008
+@@ -10,14 +10,14 @@
+ 		- Why can't I nest filesets?  This seems like it would be so easy and
+ 		useful...
+ -->
+-<project name="beanshell" default="compile-all" basedir=".">
++<project name="beanshell" default="jarall" basedir=".">
+
+ <!-- Project Configuration -->
+
+ <property name="file" value=""/>
+
+-	<property name="ant.build.javac.target" value="1.6" />
+-	<property name="ant.build.javac.source" value="1.6" />
++	<property name="ant.build.javac.target" value="1.8" />
++	<property name="ant.build.javac.source" value="1.8" />
+ 	<property name="version" value="2.1.1"/>
+ 	<property name="deprecation" value="on"/>
+ 	<property name="Specification-Title" value="BeanShell" />
+@@ -178,8 +178,8 @@
+ 			debug="on"
+ 			includes="**/*.java"
+ 			excludes="${excludes},**/bak/**"
+-			source="1.6"
+-			target="1.6"
++			source="1.8"
++			target="1.8"
+ 		>
+ 			<classpath>
+ 				<fileset refid="lib-fileset"/>
+@@ -213,8 +213,8 @@
+ 			debug="on"
+ 			includes="**/*.java"
+ 			excludes="${excludes},**/bak/**"
+-			source="1.6"
+-			target="1.6"
++			source="1.8"
++			target="1.8"
+ 		>
+ 			<classpath>
+ 				<fileset refid="lib-fileset"/>
+@@ -255,7 +255,7 @@
+ 			 destdir="${javadoc-dir}"
+ 			 author="true"
+ 			 version="true"
+-			 source="1.6"
++			 source="1.8"
+ 			 use="true"
+ 			 windowtitle="BeanShell ${version}"
+ 			 doctitle="&lt;h1&gt;BeanShell ${version}&lt;h1&gt;"
+@@ -680,8 +680,8 @@
+ 				destdir="${build-dir}"
+ 				debug="on"
+ 				debuglevel="lines,vars,source"
+-				source="1.6"
+-				target="1.6"
++				source="1.8"
++				target="1.8"
+ 			  >
+ 		 <classpath>
+ 			<path refid="test-classpath"/>
+--- misc/BeanShell-2.1.1/makefile.mk	Fri Mar 28 15:56:40 2008
++++ misc/build/BeanShell-2.1.1/makefile.mk	Fri Mar 28 15:56:06 2008
+@@ -1 +1,29 @@
+-dummy
++#**************************************************************
++#
++#  Licensed to the Apache Software Foundation (ASF) under one
++#  or more contributor license agreements.  See the NOTICE file
++#  distributed with this work for additional information
++#  regarding copyright ownership.  The ASF licenses this file
++#  to you under the Apache License, Version 2.0 (the
++#  "License"); you may not use this file except in compliance
++#  with the License.  You may obtain a copy of the License at
++#
++#    http://www.apache.org/licenses/LICENSE-2.0
++#
++#  Unless required by applicable law or agreed to in writing,
++#  software distributed under the License is distributed on an
++#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
++#  KIND, either express or implied.  See the License for the
++#  specific language governing permissions and limitations
++#  under the License.
++#
++#**************************************************************
++
++PRJ=..$/..$/..$/..
++PRJNAME=ooo_beanshell
++TARGET=jarall
++
++.INCLUDE : ant.mk
++
++ALLTAR : ANTBUILD
++

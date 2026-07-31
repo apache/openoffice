@@ -255,9 +255,9 @@ if (RAT_JAR_HOME==BUILD)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SOLAR_JAVA==TRUE && SYSTEM_BSH!=YES)
-    MD5 = 34c726044fc4e2c7c3cf489fc239cdd5
-    name = bsh-2.1.0-src.zip
-    URL1 = https://github.com/beanshell/beanshell/releases/download/2.1.0/$(name)
+    MD5 = f75fbfe6d5ce3568704f89ec5c3b34a7
+    name = bsh-2.1.1-src.zip
+    URL1 = https://github.com/beanshell/beanshell/releases/download/2.1.1/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 ###############################################################################
