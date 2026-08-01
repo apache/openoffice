@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -301,13 +301,18 @@ extern "C" typelib_TypeClass cpp_vtable_call(
 
 		                if ( pInterface )
 		                {
-		                    ::uno_any_construct( reinterpret_cast<uno_Any *>( pCallStack[1] ),
+		                    // pCallStack is "ret addr, this, [ret *], params", so the
+		                    // hidden return buffer is [2]; [1] is `this`.  Writing the
+		                    // Any to [1] overwrote the proxy object and left the
+		                    // caller's return buffer untouched, so the caller then
+		                    // destructed an uninitialised Any.
+		                    ::uno_any_construct( reinterpret_cast<uno_Any *>( pCallStack[2] ),
 												 &pInterface, pTD, cpp_acquire );
 
 		                    pInterface->release();
 		                    TYPELIB_DANGER_RELEASE( pTD );
 
-		                    reinterpret_cast<void **>( pRegisterReturn )[0] = pCallStack[1];
+		                    reinterpret_cast<void **>( pRegisterReturn )[0] = pCallStack[2];
 		                    eRet = typelib_TypeClass_ANY;
 		                    break;
 		                }
@@ -366,7 +371,7 @@ unsigned char * codeSnippet(
     //  rsp+08 +----------------------------+ -------
     //         | return address             |
     //  rsp--> +----------------------------+
-    // 
+    //
     //
 
     // When it doubt about correctness,

@@ -105,29 +105,34 @@ static void cpp_call(
 			uno_copyAndConvertData( pCppArgs[nPos] = alloca( 8 ), pUnoArgs[nPos], pParamTypeDescr,
 									pThis->getBridge()->getUno2Cpp() );
 
+			// pCppArgs[nPos] is the alloca(8) temp above, i.e. a POINTER to the
+			// converted value -- the value is *pCppArgs[nPos].  Using
+			// &pCppArgs[nPos] would read the array slot instead, passing the
+			// temp's address as the argument.  (That form is correct only in the
+			// complex/ref branch below, where the pointer IS the argument.)
 			switch (pParamTypeDescr->eTypeClass)
 			{
 			case typelib_TypeClass_HYPER:
 			case typelib_TypeClass_UNSIGNED_HYPER:
-				*pStack++ = *(sal_uInt64*)&pCppArgs[nPos];
+				*pStack++ = *(sal_uInt64*)pCppArgs[nPos];
 				break;
 			case typelib_TypeClass_LONG:
 			case typelib_TypeClass_UNSIGNED_LONG:
 			case typelib_TypeClass_ENUM:
-				*pStack++ = *(sal_uInt32*)&pCppArgs[nPos];
+				*pStack++ = *(sal_uInt32*)pCppArgs[nPos];
 				break;
 			case typelib_TypeClass_SHORT:
 			case typelib_TypeClass_UNSIGNED_SHORT:
 			case typelib_TypeClass_CHAR:
-				*pStack++ = *(sal_uInt16*)&pCppArgs[nPos];
+				*pStack++ = *(sal_uInt16*)pCppArgs[nPos];
 				break;
 			case typelib_TypeClass_BOOLEAN:
 			case typelib_TypeClass_BYTE:
-				*pStack++ = *(sal_uInt8*)&pCppArgs[nPos];
+				*pStack++ = *(sal_uInt8*)pCppArgs[nPos];
 				break;
 			case typelib_TypeClass_FLOAT:
 			case typelib_TypeClass_DOUBLE:
-				*pStack++ = *(sal_uInt64*)&pCppArgs[nPos]; // verbatim!
+				*pStack++ = *(sal_uInt64*)pCppArgs[nPos]; // verbatim!
                 break;
             default:
                 break;
@@ -164,7 +169,8 @@ static void cpp_call(
 				// no longer needed
 				TYPELIB_DANGER_RELEASE( pParamTypeDescr );
 			}
-			*pStack++ = *(sal_uInt64*)&pCppArgs[nPos];
+			// here the POINTER is the argument (complex value passed by ref)
+			*pStack++ = (sal_uInt64)pCppArgs[nPos];
 		}
 	}
 
