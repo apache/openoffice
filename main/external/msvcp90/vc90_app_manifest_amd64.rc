@@ -1,0 +1,6 @@
+// x64 counterpart of vc90_app_manifest.rc (see there for why this exists).
+// Same RT_MANIFEST id 1 slot, but pointing at the amd64 app manifest, which
+// declares processorArchitecture="amd64" for the VC90 CRT assembly.
+// Both .rc files are compiled with /I main/external/msvcp90, so the path here
+// is relative to the package root.
+1 24 "amd64/vc90_app.manifest"

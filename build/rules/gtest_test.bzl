@@ -34,6 +34,14 @@ load("@rules_cc//cc:defs.bzl", "cc_binary")
 _CRT = "//main/external/msvcp90:crt_dlls"
 _APP_MANIFEST = "//main/external/msvcp90:vc90_app_manifest"
 
+# VC90-CRT manifest compiled to a .res, linked into every test exe so it sits in
+# the image at RT_MANIFEST id 1.  The staged external <exe>.manifest below only
+# covers DLLs bound at process start; a test that osl_loadModule()s a UNO DLL
+# later (any cppu Mapping pulls in the C++/UNO bridge on demand) needs the CRT
+# activation context to still apply at that point, or the late load resolves
+# msvcr90 loose → R6034 → DllMain fails → exit 0xC0000142.
+_APP_MANIFEST_RES = "//main/external/msvcp90:vc90_app_manifest_res"
+
 def _staged_gtest_test_impl(ctx):
     d = ctx.label.name + ".run"
     staged = []
@@ -114,8 +122,13 @@ def gtest_test(
         # mangle differently → LNK2019.
         copts = ["/Zc:wchar_t-"] + copts,
         defines = defines,
-        additional_linker_inputs = additional_linker_inputs,
-        linkopts = linkopts + ["/MANIFEST:NO"],
+        # /MANIFEST:NO keeps the LINKER from generating one; the .res supplies
+        # the manifest as a resource instead (see _APP_MANIFEST_RES).
+        additional_linker_inputs = additional_linker_inputs + [_APP_MANIFEST_RES],
+        linkopts = linkopts + [
+            "$(execpath %s)" % _APP_MANIFEST_RES,
+            "/MANIFEST:NO",
+        ],
         testonly = True,
         **kwargs
     )

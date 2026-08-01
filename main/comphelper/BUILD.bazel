@@ -203,6 +203,11 @@ _QA_COPTS = [
     "/D_HAS_ITERATOR_DEBUGGING=0",
 ]
 
+# msci_uno/mscx_uno is a RUN-TIME dep nothing links: cppu::getCaughtException()
+# (reached from OWeakObject dispose paths, e.g. test_weakbag) builds a C++↔UNO
+# Mapping, and cppu's uno_getMapping osl_loadModule()s the bridge on demand.
+# Without it staged the loader grabs a stray copy off PATH whose CRT loads
+# outside this exe's activation context → R6034 → exit 0xC0000142.
 _QA_RUNTIME_DLLS = [
     "//main/sal:sal3",
     "//main/cppu:cppu3",
@@ -211,7 +216,10 @@ _QA_RUNTIME_DLLS = [
     "//main/ucbhelper:ucbhelperMSC",
     "//main/vos:vos3MSC",
     ":comphelpMSC",
-]
+] + select({
+    "//build:arch_x64": ["//main/bridges:mscx_uno"],
+    "//conditions:default": ["//main/bridges:msci_uno"],
+})
 
 _QA_LINKER_INPUTS = [
     "//main/sal:sal_implib",

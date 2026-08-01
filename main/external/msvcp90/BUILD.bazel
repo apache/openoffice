@@ -1,0 +1,109 @@
+filegroup(
+    name = "msvcp90",
+    srcs = [":crt_dlls"],
+    visibility = ["//visibility:public"],
+)
+
+# CRT DLLs + assembly manifest, arch-selected.  The select() resolves in the
+# CONSUMER's configuration, which is exactly what both use-sites need:
+#   * IDL/UNO build TOOLS (idl_pipeline.bzl, cfg="exec") pull this in the exec
+#     configuration = the x64 host, so they get the amd64 CRT — required now that
+#     the x86 toolchain correctly targets x86_32 and exec-config tools build x64.
+#   * Product STAGING pulls it in the target configuration → x86 CRT for the x86
+#     build, amd64 CRT for the --config=x64 build.
+# amd64/ holds the VC\redist\amd64\Microsoft.VC90.CRT copies (+ amd64 app manifest).
+filegroup(
+    name = "crt_dlls",
+    srcs = select({
+        "//build:arch_x64": [
+            "amd64/msvcr90.dll",
+            "amd64/msvcp90.dll",
+            "amd64/msvcm90.dll",
+            "amd64/Microsoft.VC90.CRT.manifest",
+        ],
+        "//conditions:default": [
+            "msvcr90.dll",
+            "msvcp90.dll",
+            "msvcm90.dll",
+            "Microsoft.VC90.CRT.manifest",
+        ],
+    }),
+    visibility = ["//visibility:public"],
+)
+
+# Generic application manifest declaring the VC90 CRT dependency.
+# Stage this alongside each /MD tool EXE as <exename>.manifest so that
+# Windows picks it up as an external manifest (no mt.exe embedding needed).
+# amd64 variant declares processorArchitecture="amd64" for x64 tools/binaries.
+filegroup(
+    name = "vc90_app_manifest",
+    srcs = select({
+        "//build:arch_x64": ["amd64/vc90_app.manifest"],
+        "//conditions:default": ["vc90_app.manifest"],
+    }),
+    visibility = ["//visibility:public"],
+)
+
+# ── Embedded (in-image) form of the app manifest ─────────────────────────────
+# vc90_app_manifest above is the EXTERNAL form, staged as <exe>.manifest.  That
+# is enough for DLLs bound at process start, but NOT for an exe that
+# osl_loadModule()s a UNO DLL later: the C++/UNO bridge (msci_uno/mscx_uno) is
+# pulled in on demand by any cppu Mapping, and if the CRT activation context is
+# not in force in the image itself, that late load resolves msvcr90 loose
+# instead of via the SxS assembly → R6034 → DllMain fails → exit 0xC0000142.
+#
+# Linking this .res into the exe embeds the manifest at RT_MANIFEST id 1, which
+# the loader always honours (and which supersedes the external file).  Used by
+# //build/rules:gtest_test.bzl for every staged test exe; //main/bridges'
+# jni_test_launcher does the same thing by hand for the JVM host.
+#
+# The .rc is arch-selected rather than parameterised because RC.Exe takes the
+# manifest path as a literal in the resource statement — the x64 one points at
+# amd64/, and both compile with /I main/external/msvcp90.
+filegroup(
+    name = "vc90_app_manifest_rc",
+    srcs = select({
+        "//build:arch_x64": ["vc90_app_manifest_amd64.rc"],
+        "//conditions:default": ["vc90_app_manifest.rc"],
+    }),
+)
+
+genrule(
+    name = "vc90_app_manifest_res",
+    srcs = [
+        ":vc90_app_manifest_rc",
+        ":vc90_app_manifest",
+    ],
+    outs = ["vc90_app_manifest.res"],
+    cmd_bat = (
+        "set \"_RC=C:\\Program Files\\Microsoft SDKs\\Windows\\v7.0\\Bin\\RC.Exe\"&&" +
+        "\"!_RC!\" /nologo /I \"main/external/msvcp90\"" +
+        " /fo \"$(OUTS)\" \"$(location :vc90_app_manifest_rc)\""
+    ),
+    visibility = ["//visibility:public"],
+)
+
+# ── Debug CRT (/MDd, --compilation_mode=dbg) ─────────────────────────────────
+# The debug analog of crt_dlls.  Under --compilation_mode=dbg the toolchain
+# links /MDd, so binaries import MSVCR90D.dll / MSVCP90D.dll / MSVCM90D.dll,
+# which are NOT in System32 or any redistributable.  @msvc_debug_crt copies them
+# from a VS2008 install (empty filegroup when unavailable — see
+# build/debug_crt_repo.bzl).  The private-assembly manifest lets the loader
+# resolve them from the app dir instead of WinSxS.  Mirrors the debug branch of
+# //main/staging:all_files.
+filegroup(
+    name = "debug_crt_dlls",
+    srcs = [
+        "@msvc_debug_crt//:dlls",
+        "Microsoft.VC90.DebugCRT.manifest",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# Debug analog of vc90_app_manifest: staged as <exe>.exe.manifest beside a /MDd
+# EXE so it declares the Microsoft.VC90.DebugCRT private-assembly dependency.
+filegroup(
+    name = "vc90_debug_app_manifest",
+    srcs = ["vc90_debug_app.manifest"],
+    visibility = ["//visibility:public"],
+)

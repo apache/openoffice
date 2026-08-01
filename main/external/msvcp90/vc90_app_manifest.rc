@@ -1,0 +1,13 @@
+// Embed the VC90-CRT dependency manifest as RT_MANIFEST (type 24), resource id 1
+// (CREATEPROCESS_MANIFEST_RESOURCE_ID — the EXE manifest slot).
+//
+// An external "<exe>.manifest" file only reliably supplies the activation
+// context for DLLs bound at process start.  Test exes that osl_loadModule() a
+// UNO DLL later (the C++/UNO bridge, pulled in by any cppu Mapping) need the
+// context to still be in force at that point — embedding it in the image is the
+// only way to guarantee that.  Without it the late-loaded DLL resolves the CRT
+// loose instead of via the SxS assembly → R6034 → DllMain fails → 0xC0000142.
+//
+// x86 variant: the manifest sits at the package root.  See
+// vc90_app_manifest_amd64.rc for the x64 one.
+1 24 "vc90_app.manifest"

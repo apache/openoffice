@@ -56,7 +56,18 @@ TAGS
 
 # externals
 /external/unowinreg/unowinreg.dll
-/external/msvcp90/*
+
+# VS2008 CRT redistributable — user-supplied, see external/msvcp90/README_msvcX90.dll.
+# Only the Microsoft-shipped binaries and their assembly manifests are ignored;
+# the first-party Bazel build files in that directory (BUILD.bazel, the
+# vc90_app*.manifest application manifests and the .rc files that embed them)
+# ARE tracked.  This was a blanket /external/msvcp90/* until 2026-08-01, which
+# silently kept those build files out of the repo.
+/external/msvcp90/*.dll
+/external/msvcp90/amd64/*.dll
+/external/msvcp90/Microsoft.VC90.CRT.manifest
+/external/msvcp90/amd64/Microsoft.VC90.CRT.manifest
+/external/msvcp90/Microsoft.VC90.DebugCRT.manifest
 
 # $INPATH output directories
 /*/unxfbsd?
