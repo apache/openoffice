@@ -292,7 +292,10 @@ private:
 
     void MakeFailedPLCF();
 public:
-    WW8PLCF( SvStream* pSt, WW8_FC nFilePos, sal_Int32 nPLCF, int nStruct, 
+    static bool IsValidLength( sal_Int32 nPLCF )
+    { return nPLCF >= 1 && nPLCF <= ( WW8_CP_MAX - 4 ); }
+
+    WW8PLCF( SvStream* pSt, WW8_FC nFilePos, sal_Int32 nPLCF, int nStruct,
         WW8_CP nStartPos = -1 );
 
     /*
