@@ -70,8 +70,38 @@ holdouts).  This brings the test layer onto Bazel so suites run under
    import lib of every DLL whose symbols the test TU references directly
    (e.g. `cppu3_implib` for `uno_any_destruct`/`typelib_*` pulled in by an
    `Any` destructor or `getCppuType`).
-2. **Subsequent / UNO tests** — use `test::OfficeConnection` to launch a real
-   soffice. Need the staged install wired as a fixture. **Not yet wired.**
+2. **Subsequent / UNO tests** — need a real UNO installation, not just
+   co-located DLLs. These are **two different fixtures**, long conflated under
+   the one name "OfficeConnection":
+
+   a. **In-process bootstrap** — the test calls
+      `cppu::defaultBootstrap_InitialComponentContext()` and builds its own
+      component context. **No soffice process is involved.** WIRED: pass
+      `uno_install = "//main/staging:install"` to `gtest_test`.
+
+      The launcher exports a single **`URE_BOOTSTRAP`** pointing at the staged
+      `program/fundamental.ini`. That is the whole trick: the dmake recipe
+      (`cppuhelper/qa/propertysetmixin/makefile.mk`) sets `UNO_TYPES`,
+      `UNO_SERVICES`, `URE_INTERNAL_LIB_DIR`, … by hand, but `fundamental.ini`
+      resolves `${ORIGIN}` against *its own* directory, so pointing at it
+      supplies all of them transitively — and they cannot drift when the ini
+      changes. `URE_BOOTSTRAP` takes a `vnd.sun.star.pathname:` URL (a *native*
+      path after the scheme; `sal`'s `resolvePathnameUrl` converts it).
+      The launcher also `cd`s into `program/` and prepends it to `PATH` so the
+      component DLLs named in `services.rdb` load.
+
+      Green: `//main/svl:svl_qa_test_URIHelper`.
+
+      **Cost:** the test depends on the entire staged install, so it is slow to
+      build and is not a unit test in any meaningful sense. Do not reach for
+      `uno_install` unless the test genuinely bootstraps UNO.
+
+   b. **Running-office connection** — `test::OfficeConnection` (libtest) starts
+      a real soffice with `-accept=pipe,name=…;urp` and resolves a remote
+      context over URP. **Still unwired.** `test.dll` is built and its arguments
+      come from `rtl::Bootstrap` (`arg-soffice=path:<soffice.exe>`,
+      `arg-user=<user installation>`), so what is missing is the process
+      lifecycle, not the plumbing.
 
 ## Gotchas (learned the hard way)
 
@@ -113,11 +143,18 @@ holdouts).  This brings the test layer onto Bazel so suites run under
   (Not yet handled: under `--compilation_mode=dbg` the exes link `/MDd` but
   this `.res` still carries the *release* CRT manifest.)
 
-- **Staging a data file beside the exe is not enough — the working directory is
-  the execroot.** `bazel test` launches the test with its CWD set to the
-  execroot, *not* the exe's directory. Co-located DLLs still resolve (the loader
-  searches the exe's own path), which makes it easy to assume relative file
-  opens will too — they don't. A test that opens a fixture by bare relative name
+- **Never assume the test's working directory.** It is *not* the exe's
+  directory, and it is *not* the execroot either — a launcher that built paths
+  from `%CD%` produced "The system cannot find the path specified" even though
+  those paths were correct relative to the execroot. Anything the launcher needs
+  to find must be located from **`%~dp0`** (the .bat's own directory) via a
+  relative path computed at analysis time — `_windows_relpath` in
+  [gtest_test.bzl](../../build/rules/gtest_test.bzl) does this, and it is why
+  `uno_install` works from any package depth.
+
+- **Staging a data file beside the exe is not enough.** Co-located DLLs resolve
+  regardless (the loader searches the exe's own path), which makes it easy to
+  assume relative file opens will too — they don't. A test that opens a fixture by bare relative name
   (`//main/shell:shell_qa_zip` → `simpledocument.odt`) throws
   file-not-found while passing when run by hand from the staged dir. Pass such
   inputs as `data_files`: they are staged beside the exe *and* the target

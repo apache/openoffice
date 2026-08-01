@@ -65,11 +65,24 @@ test          🔨  C++ unit-test infra runnable — NOW THE FRONT-LINE TASK: br
                    genuinely left is not standalone — svl/qa/complex + svtools/qa/unoapi
                    + sfx2 + writerfilter/qa/complex are Java/UNO; svl/qa/test_URIHelper,
                    configmgr/qa/unit and cppuhelper/qa/propertysetmixin bootstrap a UNO
-                   component context.  So the front line is now ONE fixture:
-                   OfficeConnection (running-soffice).  test.dll is built and its
-                   arg plumbing is rtl::Bootstrap "arg-soffice=path:…"/"arg-user=…",
-                   so the missing piece is a rule that points it at //main/staging:install
-                   and gives the test exe its own UNO bootstrap.
+                   component context.  KEY DISTINCTION (was conflated under
+                   "OfficeConnection", making the work look bigger than it is): those
+                   are TWO fixtures.  (a) IN-PROCESS bootstrap —
+                   defaultBootstrap_InitialComponentContext(), NO soffice process —
+                   is DONE: gtest_test's uno_install=//main/staging:install exports
+                   URE_BOOTSTRAP at the staged program/fundamental.ini, whose ${ORIGIN}
+                   then supplies UNO_TYPES/UNO_SERVICES/URE_INTERNAL_LIB_DIR
+                   transitively (no hand-set env vars, no drift).  First green:
+                   //main/svl:svl_qa_test_URIHelper.  Caveat — it depends on the WHOLE
+                   install, so it is slow and not a unit test; only use uno_install
+                   where UNO is genuinely bootstrapped.  (b) test::OfficeConnection
+                   (launch soffice -accept=…;urp, resolve over URP) is STILL UNWIRED
+                   and is the remaining front line — test.dll is built and its args
+                   come from rtl::Bootstrap (arg-soffice=path:…, arg-user=…), so what
+                   is missing is the process lifecycle, not the plumbing.
+                   LANDMINE for any new launcher: bazel test's CWD is NEITHER the exe
+                   dir NOR the execroot — locate everything from %~dp0 (see
+                   _windows_relpath in gtest_test.bzl).
 testtools     ⬜  (bridgetest — pure-C++ UNO bridge round-trip; cli/pyuno/java variants
                    need rules_java — see Java bucket)
 qadevOOo      🔨  OOoRunner.jar built (//main/qadevOOo:OOoRunner — qadevOOo QA

@@ -42,6 +42,23 @@ _APP_MANIFEST = "//main/external/msvcp90:vc90_app_manifest"
 # msvcr90 loose → R6034 → DllMain fails → exit 0xC0000142.
 _APP_MANIFEST_RES = "//main/external/msvcp90:vc90_app_manifest_res"
 
+def _windows_relpath(from_dir, to_dir):
+    """Backslash relative path from one execroot-relative dir to another.
+
+    Used to make the launcher .bat self-locating via %~dp0 instead of trusting
+    the working directory: `bazel test` does NOT run tests with the working
+    directory set to the execroot, so a %CD%-relative path to the staged install
+    resolves to nothing ("The system cannot find the path specified").
+    """
+    f = from_dir.split("/")
+    t = to_dir.split("/")
+    common = 0
+    for i in range(min(len(f), len(t))):
+        if f[i] != t[i]:
+            break
+        common = i + 1
+    return "..\\" * (len(f) - common) + "\\".join(t[common:])
+
 def _staged_gtest_test_impl(ctx):
     d = ctx.label.name + ".run"
     staged = []
@@ -75,32 +92,67 @@ def _staged_gtest_test_impl(ctx):
     ctx.actions.symlink(output = man, target_file = ctx.file.app_manifest)
     staged.append(man)
 
-    # Co-locating a data file with the exe is not enough for a test that opens it
-    # by bare relative name: `bazel test` runs the executable with the working
-    # directory set to the execroot, not to the exe's directory (the loader finds
-    # the staged DLLs via the exe's own path, which is why those work regardless).
-    # When run_in_staged_dir is set, hand Bazel a .bat that cd's into the staged
-    # dir first and forwards the exit code, so relative paths resolve there.
+    # ── UNO environment (subsequent / in-process-bootstrap tests) ────────────
+    # A test that calls cppu::defaultBootstrap_InitialComponentContext() needs a
+    # real UNO installation: type + service rdbs, and every component DLL named
+    # in services.rdb.  Rather than reinvent that, point it at the staged office
+    # via URE_BOOTSTRAP, the documented override for "which fundamental.ini
+    # describes this installation".  fundamental.ini resolves ${ORIGIN} against
+    # its OWN directory, so that one variable transitively supplies UNO_TYPES,
+    # UNO_SERVICES, URE_INTERNAL_LIB_DIR and BRAND_BASE_DIR — no need to
+    # duplicate any of them here, and no drift when the ini changes.
+    #
+    # The install root is a fixed bazel-out path (tree_install declares its
+    # outputs in //main/staging), so locating program/fundamental.ini among the
+    # install files at analysis time yields the execroot-relative program dir.
+    # `bazel test` runs with the working directory set to the execroot, hence
+    # %CD% below.
+    uno_program_dir = None
+    for f in ctx.files.uno_install:
+        if f.path.endswith("/program/fundamental.ini"):
+            uno_program_dir = f.dirname
+            break
+    if ctx.files.uno_install and uno_program_dir == None:
+        fail("uno_install does not contain program/fundamental.ini — is it //main/staging:install?")
+
     executable = staged_exe
-    if ctx.attr.run_in_staged_dir:
-        launcher = ctx.actions.declare_file(d + "/" + ctx.label.name + "_run.bat")
-        ctx.actions.write(
-            output = launcher,
-            content = "\r\n".join([
-                "@echo off",
+    if ctx.attr.run_in_staged_dir or uno_program_dir:
+        launcher_dir = staged_exe.dirname  # the .bat sits beside the staged exe
+        lines = ["@echo off", "setlocal"]
+        if uno_program_dir:
+            lines += [
+                'set "_EXE=%~dp0' + staged_exe.basename + '"',
+                # Resolved from the launcher's own location (%~dp0), not %CD%.
+                'for %%I in ("%~dp0' + _windows_relpath(launcher_dir, uno_program_dir) +
+                '") do set "_PROG=%%~fI"',
+                # vnd.sun.star.pathname: takes a native path, not a file URL.
+                'set "URE_BOOTSTRAP=vnd.sun.star.pathname:%_PROG%\\fundamental.ini"',
+                # Component DLLs named in services.rdb are loaded at run time and
+                # live in program/; the exe's own directory still wins for what it
+                # imports directly, so its staged copies are unaffected.
+                'set "PATH=%_PROG%;%PATH%"',
+                'cd /d "%_PROG%" || exit /b 1',
+                '"%_EXE%" %*',
+            ]
+        else:
+            # Co-locating a data file with the exe is not enough for a test that
+            # opens it by bare relative name: the working directory is the
+            # execroot, not the exe's directory (the loader finds the staged DLLs
+            # via the exe's own path, which is why those work regardless).
+            lines += [
                 'cd /d "%~dp0" || exit /b 1',
                 '"%~dp0' + staged_exe.basename + '" %*',
-                "exit /b %ERRORLEVEL%",
-                "",
-            ]),
-            is_executable = True,
-        )
+            ]
+        lines += ["exit /b %ERRORLEVEL%", ""]
+
+        launcher = ctx.actions.declare_file(d + "/" + ctx.label.name + "_run.bat")
+        ctx.actions.write(output = launcher, content = "\r\n".join(lines), is_executable = True)
         staged.append(launcher)
         executable = launcher
 
     return [DefaultInfo(
         executable = executable,
-        runfiles = ctx.runfiles(files = staged),
+        runfiles = ctx.runfiles(files = staged + ctx.files.uno_install),
         files = depset([executable]),
     )]
 
@@ -113,6 +165,7 @@ _staged_gtest_test = rule(
         "companions": attr.label_list(cfg = "target"),
         "app_manifest": attr.label(allow_single_file = True, default = _APP_MANIFEST),
         "run_in_staged_dir": attr.bool(default = False),
+        "uno_install": attr.label(allow_files = True),
     },
 )
 
@@ -131,6 +184,7 @@ def gtest_test(
         defines = [],
         runtime_dlls = [],
         data_files = [],
+        uno_install = None,
         companions = [],
         additional_linker_inputs = [],
         linkopts = [],
@@ -142,6 +196,12 @@ def gtest_test(
     They are staged beside the exe AND the test is launched with its working
     directory set to that staged dir, which co-location alone does not give you
     (see run_in_staged_dir in the staging rule).
+
+    uno_install: for *subsequent* tests that call
+    cppu::defaultBootstrap_InitialComponentContext(). Pass
+    //main/staging:install; the test then runs against that staged office via
+    URE_BOOTSTRAP. Note this makes the test depend on the whole install, so it
+    is far from a unit test — keep it off targets that don't need UNO.
     """
     cc_binary(
         name = name + "_bin",
@@ -169,5 +229,6 @@ def gtest_test(
         runtime = runtime_dlls + data_files + [_CRT],
         companions = companions,
         run_in_staged_dir = bool(data_files),
+        uno_install = uno_install,
         size = size,
     )

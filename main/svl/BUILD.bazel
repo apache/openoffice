@@ -2,6 +2,7 @@ package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 load("//build/rules:rsc_pipeline.bzl", "rsc_res")
+load("//build/rules:gtest_test.bzl", "gtest_test")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -206,6 +207,58 @@ rsc_res(
     hdrs     = glob(["inc/**/*.hrc"]),
     includes = ["main/svl/inc"],
     visibility = ["//visibility:public"],
+)
+
+# ── qa unit test ──────────────────────────────────────────────────
+# URIHelper::FindFirstURLInText (qa/test_URIHelper.cxx).  Ports
+# GoogleTest_svl_urihelper.mk (cppu cppuhelper sal svl stl tl utl).
+#
+# This is the first *subsequent* test on Bazel: its fixture calls
+# cppu::defaultBootstrap_InitialComponentContext(), so it needs a real UNO
+# installation rather than just a set of co-located DLLs.  uno_install points it
+# at the staged office and the gtest_test launcher exports URE_BOOTSTRAP — see
+# //build/rules:gtest_test.bzl.  That makes this test depend on the ENTIRE
+# install, so it is slow to build and is not a unit test in any real sense.
+#
+# It does NOT need a running soffice (that is test::OfficeConnection, still
+# unwired): the component context is bootstrapped in-process.  Note the file's
+# heavier case, testNormalizedMakeRelative — the one that drives the UCB — is
+# compiled out upstream behind `#define RUN_OLD_FAILING_TESTS 0`, so only
+# testFindFirstURLInText actually runs.
+gtest_test(
+    name = "svl_qa_test_URIHelper",
+    srcs = ["qa/test_URIHelper.cxx"],
+    copts = _COPTS + ["/Imain/svl/inc/svl"],
+    defines = _DEFINES,
+    deps = [
+        ":svl_headers",
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/tools:tools_headers",
+        "//main/unotools:unotools_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/stlport:stlport",
+        "@boost.legacy//:boost.legacy",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        ":svl_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath :svl_implib)",
+    ],
+    uno_install = "//main/staging:install",
 )
 
 exports_files(glob(["**/*.component"]))
