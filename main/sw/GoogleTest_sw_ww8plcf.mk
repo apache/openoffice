@@ -20,35 +20,30 @@
 #**************************************************************
 
 
+$(eval $(call gb_GoogleTest_GoogleTest,sw_ww8plcf))
 
-$(eval $(call gb_Module_Module,sw))
-
-$(eval $(call gb_Module_add_targets,sw,\
-	AllLangResTarget_sw \
-	Library_msword \
-	Library_sw \
-	Library_swd \
-	Library_swui \
-	Library_vbaswobj \
-	Package_misc \
-	Package_uiconfig \
-	Package_xml \
+$(eval $(call gb_GoogleTest_add_exception_objects,sw_ww8plcf, \
+	sw/source/filter/ww8/qa/ww8plcf_test \
 ))
 
-
-ifeq ($(ENABLE_UNIT_TESTS),YES)
-$(eval $(call gb_Module_add_check_targets,sw,\
-	GoogleTest_sw_bigpointerarray \
-	GoogleTest_sw_ww8plcf \
+# WW8PLCF::IsValidLength is inline and references only compile-time constants,
+# so the test compiles against the ww8 filter headers without linking msword.
+$(eval $(call gb_GoogleTest_add_linked_libs,sw_ww8plcf, \
+    sal \
+    stl \
+    sw \
+    tl \
+    $(gb_STDLIBS) \
 ))
-endif
 
-
-ifneq ($(OOO_JUNIT_JAR),)
-$(eval $(call gb_Module_add_subsequentcheck_targets,sw,\
-	JunitTest_sw_complex \
-	JunitTest_sw_unoapi \
+$(eval $(call gb_GoogleTest_set_include,sw_ww8plcf,\
+	$$(INCLUDE) \
+	-I$(SRCDIR)/sw/inc \
+	-I$(SRCDIR)/sw/inc/pch \
+	-I$(SRCDIR)/sw/source/filter/inc \
+	-I$(SRCDIR)/sw/source/filter/ww8 \
+	-I$(OUTDIR)/inc/offuh \
+	-I$(OUTDIR)/inc \
 ))
-endif
 
 # vim: set noet sw=4 ts=4:

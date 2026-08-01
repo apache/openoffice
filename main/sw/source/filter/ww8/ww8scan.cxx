@@ -2208,6 +2208,15 @@ WW8PLCFspecial::WW8PLCFspecial(SvStream* pSt, long nFilePos, long nPLCF,
     long nStruct, long nStartPos)
     : nIdx(0), nStru(nStruct)
 {
+    if (!WW8PLCF::IsValidLength(static_cast<sal_Int32>(nPLCF)))
+    {
+        nIMax = 0;
+        pPLCF_PosArray = new sal_Int32[1];
+        pPLCF_PosArray[0] = WW8_CP_MAX;
+        pPLCF_Contents = 0;
+        return;
+    }
+
     nIMax = ( nPLCF - 4 ) / ( 4 + nStruct );
     // Pointer auf Pos- u. Struct-Array
     pPLCF_PosArray = new sal_Int32[ ( nPLCF + 3 ) / 4 ];
@@ -2381,6 +2390,12 @@ bool WW8PLCF::IsValid()
 void WW8PLCF::ReadPLCF( SvStream* pSt, WW8_FC nFilePos, sal_Int32 nPLCF )
 {
     bool failure = false;
+
+    if (!IsValidLength(nPLCF))
+    {
+        MakeFailedPLCF();
+        return;
+    }
 
     // Pointer auf Pos-Array
     pPLCF_PosArray = new WW8_CP[ ( nPLCF + 3 ) / 4 ];
