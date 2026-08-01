@@ -1,6 +1,28 @@
-﻿# Apache OpenOffice — Bazel Migration
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+-->
+
+# Apache OpenOffice — Bazel Migration
+
 Migrated packages have been moved to: Migrated-packages.md
+
 ## Current frontier
+
 Demo done 2026-06-20 → goal is now FULL migration (see [[project-full-migration-goal]]).
 Buckets below labelled "Remaining" are in-scope work, not abandoned; only
 "Out of scope" and "Dropped" are excluded.  Ordered by priority — testing of
@@ -124,6 +146,7 @@ release-identity 💡 Replaces the old configure --with-build-version="$(date) -
                    to have artifacts to stamp.  (The old --enable-win-x64-shellext is
                    NOT carried — it's a cross-bit hack that dissolves once the office
                    itself is ported to a 64-bit toolchain.)
+
 ```
 
 ## Trunk backports

@@ -1,3 +1,22 @@
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+-->
+
 # idxf — DXF import filter (developer notes)
 
 Imports AutoCAD DXF drawings into AOO as a GDI metafile (vector graphic). This
@@ -95,7 +114,7 @@ makefile.mk; under Bazel the `graphic_filter` macro already supplies it, so
 ## Defects fixed
 
 | BZ | Title | Area | Root cause / fix |
-|----|-------|------|------------------|
+| ---- | ------- | ------ | ------------------ |
 | [58347](https://bz.apache.org/ooo/show_bug.cgi?id=58347) | Wrong scaling after import | scaling / extents | Stale header `$EXTMIN/$EXTMAX` used as the bounding box. dxfreprd.cxx: always measure geometry (`CalcBoundingBox`, WCS/extrusion-aware) and prefer it; HATCH measurement gap closed. dxf2mtf.cxx: 1% page-fit margin so a tight box doesn't edge-clip the frame. |
 | [16564](https://bz.apache.org/ooo/show_bug.cgi?id=16564) | Arcs imported incorrectly | geometry / arcs | **(a)** Negative-Z extrusion arcs drawn as their complement: `Mirror()` tested the 3D determinant, but the Arbitrary-Axis result for ext (0,0,-1) is a proper rotation that flips only the *in-plane* orientation → now tests the 2D projected determinant, plus an extrusion-aware bbox. **(b)** The R13 file's "arcs" are 14 ELLIPSE + 8 SPLINE that idxf did not support at all → added ELLIPSE and SPLINE (parse + de-Boor/parametric render + bbox). |
 | [70274](https://bz.apache.org/ooo/show_bug.cgi?id=70274) | Cutting edges on import | scaling / clip | Duplicate of 58347: width 180 > height 90 put the far edge exactly on the fit boundary → right-edge clip. Resolved by the page-fit margin. |
@@ -104,10 +123,10 @@ makefile.mk; under Bazel the `graphic_filter` macro already supplies it, so
 | [112320](https://bz.apache.org/ooo/show_bug.cgi?id=112320) | Circle rendered as a bar | geometry / LWPOLYLINE bulge | Eagle stores the circle as a *bulged* LWPOLYLINE, not a CIRCLE; the per-vertex bulge (group 42) was dropped, so straight chords were drawn = a bar. Read the bulge and tessellate the arcs in `DrawLWPolyLineEntity` (dxfentrd.hxx/.cxx, dxf2mtf.cxx). |
 | [70273](https://bz.apache.org/ooo/show_bug.cgi?id=70273) | Partial import (misaligned) | viewport lookup / 3D | Not missing entities — all imported. The file names its viewport `*Active`, which the case-sensitive `SearchVPort` missed → flat drop-Z projection. Fixed in dxftblrd.cxx. (This file's saved view genuinely *is* top (0,0,1), so top-view rendering is correct by design.) |
 | [70275](https://bz.apache.org/ooo/show_bug.cgi?id=70275) | Wrong line type | linetype | A dotted line (`DOT2` = `[0.0,-3.175]`) drew solid/invisible: a `0.0` pattern element is a *dot* (zero-length pen-down), so `fDotLen=0` clamped only to 1/100mm. `LTypeToDXFLineInfo` (dxf2mtf.cxx) now gives a zero-length dot a model-unit length of 0.05·gap so it scales and reads as a dot; real dashes untouched. VCL has no round-dot line style (native Draw is dashed too), so true round dots remain future work. |
-| _(no BZ)_ | HATCH pattern fills render as solid blobs | area fill / hatch | Found via 122565: `DrawHatchEntity` ignored `nFlags`, so pattern fills (group 70 = 0) were flood-filled in the entity colour. Now gates solid fill on `nFlags & 1`; for a pattern fill it parses the pattern-definition line (angle 53, offset 45/46 — new fields in dxfentrd.hxx/.cxx) and draws the section lines via VCL `DrawHatch` (angle+spacing mapped through `rTransform`, style from group 78); the boundary tessellates circular-arc edges (type 2) for a correct clip. Every fallback path degrades to no-blob. |
+| *(no BZ)* | HATCH pattern fills render as solid blobs | area fill / hatch | Found via 122565: `DrawHatchEntity` ignored `nFlags`, so pattern fills (group 70 = 0) were flood-filled in the entity colour. Now gates solid fill on `nFlags & 1`; for a pattern fill it parses the pattern-definition line (angle 53, offset 45/46 — new fields in dxfentrd.hxx/.cxx) and draws the section lines via VCL `DrawHatch` (angle+spacing mapped through `rTransform`, style from group 78); the boundary tessellates circular-arc edges (type 2) for a correct clip. Every fallback path degrades to no-blob. |
 | [99893](https://bz.apache.org/ooo/show_bug.cgi?id=99893) | 3D DXF imported flat / scattered | 3D / extrusion + projection | Viewport projection was already correct; the real cause was applying the OCS/extrusion transform to WCS entities (LINE/POINT/3DFACE/3D polyline) → the pyramid scattered. `DXFCoordsAreWCS` skips extrusion for those types; VPORT lookup made case-insensitive; new `Draw3DTextEntity` puts TEXT in the 3D plane via transformed glyph outlines. |
 | [99892](https://bz.apache.org/ooo/show_bug.cgi?id=99892) | Cyrillic / accented text garbled | text / encoding | **Partial — the filter half only.** `$DWGCODEPAGE` now resolves through `DXFCodePageToTextEncoding`; the default is the system encoding with a UTF-8→MS_1252 guard; and a `"CharacterSet"` `FilterConfigItem` override seam lets a higher layer supply the encoding. Nothing populates that option yet — see *Open* below. |
-| _(no BZ)_ | Oversized LWPOLYLINE truncated | reader robustness | A vertex count exceeding the reader's limit truncated the polyline; it is now chunked instead. |
+| *(no BZ)* | Oversized LWPOLYLINE truncated | reader robustness | A vertex count exceeding the reader's limit truncated the polyline; it is now chunked instead. |
 
 ## Open / not fixed
 
