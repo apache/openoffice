@@ -2,6 +2,7 @@ package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 load(":ooxml_ns_rules.bzl", "OOXML_NS", "ooxml_ns_factory_rules")
+load("//build/rules:gtest_test.bzl", "gtest_test")
 
 # ── Constants ────────────────────────────────────────────────────────────────
 
@@ -516,3 +517,50 @@ cc_binary(
 
 exports_files(glob(["**/*.component"]))
 
+
+# ── qa unit test ──────────────────────────────────────────────────
+# doctok WW8Document event walk (qa/cppunittests/doctok).  Ports
+# GoogleTest_writerfilter_doctok.mk (writerfilter ucbhelper cppuhelper cppu sal
+# stl).  The directory name "cppunittests" is a misnomer — this suite is
+# GoogleTest; its four siblings (odiapi/qname/sl/xxml) are the ones still on the
+# retired testshl harness and are NOT migratable.
+#
+# Bootstraps UNO in-process (defaultBootstrap_InitialComponentContext + the UCB
+# ContentBroker), hence uno_install.
+#
+# EXPECTED RED: testOpenFile/testEvents read "<cwd>/test.doc", and no test.doc
+# exists anywhere in the tree (the qa dir holds only the .cxx and doctok.job) —
+# the sample was never checked in.  testInitUno/testEnd should pass.  Wired
+# anyway: the failure is the suite's own missing fixture, not the build.
+gtest_test(
+    name = "writerfilter_qa_doctok",
+    srcs = ["qa/cppunittests/doctok/testdoctok.cxx"],
+    copts = _COPTS,
+    defines = _DEFINES,
+    deps = [
+        ":writerfilter_headers",
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/ucbhelper:ucbhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/stlport:stlport",
+        "@boost.legacy//:boost.legacy",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/ucbhelper:ucbhelperMSC_implib",
+        ":writerfilter_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/ucbhelper:ucbhelperMSC_implib)",
+        "$(execpath :writerfilter_implib)",
+    ],
+    uno_install = "//main/staging:install",
+)

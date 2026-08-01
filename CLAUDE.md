@@ -96,13 +96,21 @@ test          🔨  C++ unit-test infra runnable — NOW THE FRONT-LINE TASK: br
                    sfx2_qa_metadatable, desktop_qa_dp_version.  uno_install doubles as
                    "give me the whole office DLL closure on PATH", which beats
                    enumerating dozens of transitive DLLs for sw/sfx-sized libraries.
-                   STILL TODO in this sweep: configmgr/qa/unit (builds its OWN mini
-                   installation — urebootstrap.ini + data.xcd + generated inis — so it
-                   needs a genrule, not //main/staging:install), cppuhelper/qa/
-                   propertysetmixin (UNO component DLL + own types.idl + services.rdb),
-                   xmlsecurity/qa/certext + sal child-process suites (osl/process,
-                   rtl/bootstrap, rtl/process) which need OfficeConnection / companion
-                   staging, and writerfilter doctok.
+                   writerfilter_qa_doctok wired too (RED on its own missing fixture:
+                   reads <cwd>/test.doc, never checked in; testInitUno passes).
+                   STILL TODO, with what each actually needs:
+                    • configmgr/qa/unit — its OWN mini installation (urebootstrap.ini +
+                      data.xcd + 2 generated inis) plus unit.rdb = types.rdb with
+                      configmgr.uno registered via //main/cpputools:regcomp (that tool
+                      IS built), and env CONFIGMGR_UNIT_FORWARD_STRING=<unit.rdb>.
+                      Needs gtest_test to accept a CUSTOM ure_bootstrap root + extra
+                      env, not just uno_install=//main/staging:install.
+                    • cppuhelper/qa/propertysetmixin — UNO component DLL + own
+                      types.idl + a per-test services.rdb (packcomponents.xslt).
+                    • xmlsecurity/qa/certext — uses test::OfficeConnection ⇒ fixture (b).
+                    • sal child-process suites (osl/process, rtl/bootstrap,
+                      rtl/process) — helper exe via getExecutablePath()+"/../bin";
+                      gtest_test's `companions` hook exists for this.
 testtools     ⬜  (bridgetest — pure-C++ UNO bridge round-trip; cli/pyuno/java variants
                    need rules_java — see Java bucket)
 qadevOOo      🔨  OOoRunner.jar built (//main/qadevOOo:OOoRunner — qadevOOo QA

@@ -259,6 +259,15 @@ near-total failure to a small residual set — none of it a build problem:
 - **DNS/host dependent.** `getHostname_001`, `getSocketAddrHandle_002`,
   `getLocalPort_002` resolve names against whatever network the machine is on.
 
+### Red on their own fixture, wired anyway
+
+- `//main/writerfilter:writerfilter_qa_doctok` — `testInitUno` passes (a real
+  in-process UNO bootstrap + UCB ContentBroker), but `testOpenFile` /
+  `testEvents` read `<cwd>/test.doc` and **no `test.doc` exists anywhere in the
+  tree** — the sample was never checked in (the qa dir holds only the `.cxx` and
+  `doctok.job`). `testEvents` then trips a `shared_ptr` assert on the null
+  document. That is the suite's own missing fixture, not the build.
+
 Earlier revisions of this file listed `rtl_str`/`rtl_ustr`/`rtl_string` as
 NULL-deref crashes; those were since fixed (boundary checks in the tests plus
 `NULL` guards at the rtl entry points) and now pass.
