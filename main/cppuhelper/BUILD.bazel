@@ -2,6 +2,7 @@ package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 load("//build/rules:idl_pipeline.bzl", "idl_library")
+load("//build/rules:gtest_test.bzl", "gtest_test")
 
 _COPTS = [
     "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs",
@@ -117,4 +118,109 @@ filegroup(
     srcs = [":cppuhelper3MSC"],
     output_group = "interface_library",
     visibility = ["//visibility:public"],
+)
+
+# ── qa unit tests ─────────────────────────────────────────────────
+# Standalone GoogleTest exes (own main()) that link cppuhelper3MSC.dll's import
+# lib.  cppuhelper drags in sal3/cppu3/salhelper3MSC at run time, so all four
+# DLLs must sit beside the staged exe (see //build/rules:gtest_test.bzl).
+#
+# The dmake makefiles also list $(TESTSHL2LIB) — a no-op, the variable is
+# undefined since AOO retired testshl2 (see main/test/readme.md).
+#
+# NOT wired: qa/propertysetmixin — it is a *subsequent* test (builds a UNO
+# component DLL + its own types.idl, driven from Java against a service
+# manager), so it needs the OfficeConnection fixture, not a standalone exe.
+_QA_COPTS = ["/Imain/cppuhelper/inc/pch"]
+
+_QA_DEPS = [
+    ":cppuhelper_headers",
+    "//main/sal:sal_headers",
+    "//main/cppu:cppu_headers",
+    "//main/udkapi:udkapi_idl_headers",
+]
+
+_QA_LINKER_INPUTS = [
+    "//main/sal:sal_implib",
+    "//main/cppu:cppu3_implib",
+    ":cppuhelper_implib",
+]
+
+_QA_LINKOPTS = [
+    "$(execpath //main/sal:sal_implib)",
+    "$(execpath //main/cppu:cppu3_implib)",
+    "$(execpath :cppuhelper_implib)",
+]
+
+# The C++/UNO bridge DLL is a RUN-TIME dep even though nothing links it:
+# cppu::getCaughtException()/throwException() build a Mapping between the C++
+# and UNO environments, and cppu's uno_getMapping osl_loadModule()s the bridge
+# (msci_uno.dll / mscx_uno.dll) on demand.  Omit it and the loader either finds
+# a stray copy elsewhere on PATH — whose CRT then loads outside the exe's
+# activation context → R6034 → DllMain fails → exit 0xC0000142 — or finds
+# nothing, leaving a null mapping that AVs inside dispose().  Same select() as
+# //main/bridges:cppuno_roundtrip_test; the compiled CPPU_ENV picks the match.
+_QA_RUNTIME_DLLS = [
+    "//main/sal:sal3",
+    "//main/cppu:cppu3",
+    "//main/salhelper:salhelper3MSC",
+    ":cppuhelper3MSC",
+] + select({
+    "//build:arch_x64": ["//main/bridges:mscx_uno"],
+    "//conditions:default": ["//main/bridges:msci_uno"],
+})
+
+# cppu::OInterfaceContainerHelper / OMultiTypeInterfaceContainerHelper —
+# listener add/remove/dispose lifetime (qa/ifcontainer).
+gtest_test(
+    name = "cppuhelper_qa_ifcontainer",
+    srcs = [
+        "qa/ifcontainer/cppu_ifcontainer.cxx",
+        "qa/ifcontainer/main.cxx",
+    ],
+    copts = _QA_COPTS,
+    defines = _DEFINES,
+    deps = _QA_DEPS,
+    additional_linker_inputs = _QA_LINKER_INPUTS,
+    linkopts = _QA_LINKOPTS,
+    runtime_dlls = _QA_RUNTIME_DLLS,
+)
+
+# cppu::UnoUrl / UnoUrlDescriptor parsing (qa/unourl).  This suite has no
+# main.cxx of its own — dmake got main() from the gtest lib, so use
+# @gtest//:gtest_main here.
+gtest_test(
+    name = "cppuhelper_qa_unourl",
+    srcs = ["qa/unourl/cppu_unourl.cxx"],
+    copts = _QA_COPTS,
+    defines = _DEFINES,
+    deps = _QA_DEPS + ["@gtest//:gtest_main"],
+    additional_linker_inputs = _QA_LINKER_INPUTS,
+    linkopts = _QA_LINKOPTS,
+    runtime_dlls = _QA_RUNTIME_DLLS,
+)
+
+# cppu::OWeakObject / WeakImplHelper — XWeak adapter + queryAdapted, incl.
+# exceptions thrown out of dispose() (qa/weak).
+gtest_test(
+    name = "cppuhelper_qa_weak",
+    srcs = [
+        "qa/weak/main.cxx",
+        "qa/weak/test_weak.cxx",
+    ],
+    copts = _QA_COPTS,
+    defines = _DEFINES,
+    deps = _QA_DEPS,
+    additional_linker_inputs = _QA_LINKER_INPUTS,
+    linkopts = _QA_LINKOPTS,
+    runtime_dlls = _QA_RUNTIME_DLLS,
+)
+
+test_suite(
+    name = "cppuhelper_tests",
+    tests = [
+        ":cppuhelper_qa_ifcontainer",
+        ":cppuhelper_qa_unourl",
+        ":cppuhelper_qa_weak",
+    ],
 )

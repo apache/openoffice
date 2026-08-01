@@ -1,6 +1,7 @@
 package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary")
+load("//build/rules:gtest_test.bzl", "gtest_test")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -26,26 +27,28 @@ _DEPS = [
     "@boost.legacy//:boost.legacy",
 ]
 
+_SRCS = [
+    "source/binaryany.cxx",
+    "source/bridge.cxx",
+    "source/bridgefactory.cxx",
+    "source/currentcontext.cxx",
+    "source/incomingrequest.cxx",
+    "source/lessoperators.cxx",
+    "source/marshal.cxx",
+    "source/outgoingrequests.cxx",
+    "source/proxy.cxx",
+    "source/reader.cxx",
+    "source/unmarshal.cxx",
+    "source/writer.cxx",
+]
+
 # ── binaryurp.dll ─────────────────────────────────────────────────
 # UNO bridge component.  Exports component_getFactory and
 # component_getImplementationEnvironment via SAL_DLLPUBLIC_EXPORT —
 # no DEF file needed.
 cc_binary(
     name = "binaryurp",
-    srcs = [
-        "source/binaryany.cxx",
-        "source/bridge.cxx",
-        "source/bridgefactory.cxx",
-        "source/currentcontext.cxx",
-        "source/incomingrequest.cxx",
-        "source/lessoperators.cxx",
-        "source/marshal.cxx",
-        "source/outgoingrequests.cxx",
-        "source/proxy.cxx",
-        "source/reader.cxx",
-        "source/unmarshal.cxx",
-        "source/writer.cxx",
-    ] + glob(["source/*.hxx"]),
+    srcs = _SRCS + glob(["source/*.hxx"]),
     copts = _COPTS,
     defines = _DEFINES,
     linkshared = True,
@@ -64,6 +67,78 @@ cc_binary(
         "/MANIFEST:NO",
     ],
     visibility = ["//visibility:public"],
+)
+
+# ── qa unit tests ─────────────────────────────────────────────────
+# Standalone GoogleTest exes (qa/main.cxx provides main()).  Ports
+# GoogleTest_cache.mk / GoogleTest_unmarshal.mk.
+#
+# binaryurp.dll exports ONLY the two UNO component entry points, so neither
+# test can link against it — both compile the code under test straight into
+# the exe.  The tests reach into the module's private headers by relative
+# path ("../source/cache.hxx"), which resolves from the qa/ source dir.
+
+# Cache<T> LRU eviction — header-only, sal + stl only (GoogleTest_cache.mk).
+gtest_test(
+    name = "binaryurp_qa_cache",
+    srcs = [
+        "qa/main.cxx",
+        "qa/test-cache.cxx",
+        "source/cache.hxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    deps = _DEPS + ["//main/stlport:stlport"],
+    additional_linker_inputs = ["//main/sal:sal_implib"],
+    linkopts = ["$(execpath //main/sal:sal_implib)"],
+    runtime_dlls = ["//main/sal:sal3"],
+)
+
+# Unmarshal — URP wire decoding.  Pulls in the whole module (GoogleTest_
+# unmarshal.mk lists every binaryurp/source object) because Unmarshal ctor
+# ties back to Bridge/Reader/Writer.
+gtest_test(
+    name = "binaryurp_qa_unmarshal",
+    srcs = [
+        "qa/main.cxx",
+        "qa/test-unmarshal.cxx",
+    ] + _SRCS + glob(["source/*.hxx"]),
+    copts = _COPTS,
+    defines = _DEFINES,
+    deps = _DEPS + ["//main/stlport:stlport"],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/salhelper:salhelper_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/salhelper:salhelper_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+    ],
+    # msci_uno/mscx_uno: nothing links it, but cppu osl_loadModule()s the
+    # C++↔UNO bridge on demand from any Mapping (getCaughtException, proxy
+    # marshalling).  Unstaged ⇒ a stray copy off PATH loads its CRT outside
+    # this exe's activation context ⇒ R6034 ⇒ exit 0xC0000142.
+    runtime_dlls = [
+        "//main/sal:sal3",
+        "//main/salhelper:salhelper3MSC",
+        "//main/cppu:cppu3",
+        "//main/cppuhelper:cppuhelper3MSC",
+    ] + select({
+        "//build:arch_x64": ["//main/bridges:mscx_uno"],
+        "//conditions:default": ["//main/bridges:msci_uno"],
+    }),
+)
+
+test_suite(
+    name = "binaryurp_tests",
+    tests = [
+        ":binaryurp_qa_cache",
+        ":binaryurp_qa_unmarshal",
+    ],
 )
 
 exports_files(glob(["**/*.component"]))

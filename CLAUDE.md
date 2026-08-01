@@ -39,12 +39,22 @@ test          🔨  C++ unit-test infra runnable — NOW THE FRONT-LINE TASK: br
                    //main/sal:sal_tests (22) via sal_qa_test macro, salhelper_test,
                    comphelper_test_string + comphelper_test_weakbag, sax_test_converter,
                    cppu_qa_{any,unotype,reference,recursion} (private types.idl → headers
-                   via idl_library reuse).  See main/test/readme.md.  NEXT: sweep qa/
-                   across the other migrated modules (cppuhelper [5 subdirs], svl,
-                   svtools, …; svl/qa/test_URIHelper bootstraps a UNO
-                   component context → subsequent test, needs the soffice fixture, not
-                   standalone); OfficeConnection (UNO subsequent) tests need a
-                   running-soffice fixture; cppunit suites need Phase-4 dep.
+                   via idl_library reuse), cppuhelper_tests (ifcontainer/unourl/weak),
+                   binaryurp_tests (cache/unmarshal).  See main/test/readme.md.
+                   LANDMINE (cost a whole session): the C++/UNO bridge DLL
+                   (msci_uno/mscx_uno) is a RUNTIME dep nothing links — cppu
+                   osl_loadModule()s it from any Mapping (getCaughtException etc.).
+                   Unstaged ⇒ either a null mapping AV or R6034 → 0xC0000142 with an
+                   EMPTY test.log; and the CRT manifest must be EMBEDDED (RT_MANIFEST
+                   id 1, now linked into every gtest_test exe) not just staged as an
+                   external <exe>.manifest, or late DLL loads fall outside the
+                   activation context.  NEXT: sweep qa/ across the remaining migrated
+                   modules — most of what is left is NOT standalone: svl/qa/complex +
+                   svtools/qa/unoapi + sfx2 + writerfilter/qa/complex are Java/UNO,
+                   svl/qa/test_URIHelper and configmgr/qa/unit bootstrap a UNO
+                   component context, shell/qa + writerfilter/qa/cppunittests are
+                   cppunit.  So the front line now shifts to the two fixtures:
+                   OfficeConnection (running-soffice) and a CppUnit external dep.
 testtools     ⬜  (bridgetest — pure-C++ UNO bridge round-trip; cli/pyuno/java variants
                    need rules_java — see Java bucket)
 qadevOOo      🔨  OOoRunner.jar built (//main/qadevOOo:OOoRunner — qadevOOo QA
