@@ -1,0 +1,16 @@
+package(default_visibility = ["//visibility:public"])
+
+# Bazel migration test support — helper TUs linked into test exes.  These are
+# migration-authored (like //main/bridges:jni_test_launcher), NOT AOO product
+# source, which is why they live under build/ rather than main/<module>/qa/.
+
+# sal_process_init — runs sal_detail_initialize() from a dynamic initialiser,
+# for GoogleTest suites whose own main() skips the SAL_IMPLEMENT_MAIN
+# boilerplate.  On Windows that boilerplate is what calls WSAStartup(), so
+# without it every osl socket call fails with WSANOTINITIALISED.  See the file
+# header for the full story.
+#
+# Exported as a plain source file rather than a cc_library so it compiles with
+# the consuming test's own copts/defines (the sal/qa suites need /Zc:wchar_t-
+# and the sal_qa_test define set to agree with sal3.dll).
+exports_files(["sal_process_init.cxx"])

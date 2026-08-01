@@ -49,12 +49,27 @@ test          🔨  C++ unit-test infra runnable — NOW THE FRONT-LINE TASK: br
                    id 1, now linked into every gtest_test exe) not just staged as an
                    external <exe>.manifest, or late DLL loads fall outside the
                    activation context.  NEXT: sweep qa/ across the remaining migrated
-                   modules — most of what is left is NOT standalone: svl/qa/complex +
-                   svtools/qa/unoapi + sfx2 + writerfilter/qa/complex are Java/UNO,
-                   svl/qa/test_URIHelper and configmgr/qa/unit bootstrap a UNO
-                   component context, shell/qa + writerfilter/qa/cppunittests are
-                   cppunit.  So the front line now shifts to the two fixtures:
-                   OfficeConnection (running-soffice) and a CppUnit external dep.
+                   modules.  DONE since: 8 sal osl/socket suites + shell_qa_zip.
+                   "Needs a CppUnit external dep" was largely a MYTH — NOTHING checked
+                   so far actually uses cppunit.  osl/socket and shell/qa are plain
+                   GoogleTest (now wired); writerfilter/qa/cppunittests is misnamed —
+                   only doctok is GoogleTest, the other 4 (odiapi/qname/sl/xxml) use
+                   the RETIRED testshl harness, as does rtl_strings, which is also
+                   superseded by qa/rtl/{ostring,oustring} — treat all of those as dead
+                   weight, not blockers, and do not migrate them.  Two reusable hooks came
+                   out of it, both in gtest_test: //build/testsupport:sal_process_init
+                   (suites with a bare main() skip SAL_IMPLEMENT_MAIN ⇒ no WSAStartup
+                   ⇒ every osl socket call is WSANOTINITIALISED) and data_files (a
+                   staged fixture is NOT enough — bazel test's CWD is the execroot, so
+                   relative opens need the cd-first .bat launcher).  NEXT: what is
+                   genuinely left is not standalone — svl/qa/complex + svtools/qa/unoapi
+                   + sfx2 + writerfilter/qa/complex are Java/UNO; svl/qa/test_URIHelper,
+                   configmgr/qa/unit and cppuhelper/qa/propertysetmixin bootstrap a UNO
+                   component context.  So the front line is now ONE fixture:
+                   OfficeConnection (running-soffice).  test.dll is built and its
+                   arg plumbing is rtl::Bootstrap "arg-soffice=path:…"/"arg-user=…",
+                   so the missing piece is a rule that points it at //main/staging:install
+                   and gives the test exe its own UNO bootstrap.
 testtools     ⬜  (bridgetest — pure-C++ UNO bridge round-trip; cli/pyuno/java variants
                    need rules_java — see Java bucket)
 qadevOOo      🔨  OOoRunner.jar built (//main/qadevOOo:OOoRunner — qadevOOo QA

@@ -2,6 +2,7 @@ package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 load("//build/rules:lngconvex_rule.bzl", "lngconvex_bundle")
+load("//build/rules:gtest_test.bzl", "gtest_test")
 
 # ── Common settings ───────────────────────────────────────────────
 # Defines shared by all shlxthandler targets (XML parser + ZIP reader
@@ -436,6 +437,38 @@ cc_binary(
     defines = _UNO_DEFINES,
     linkopts = ["kernel32.lib"],
     visibility = ["//visibility:public"],
+)
+
+# ── qa unit test ──────────────────────────────────────────────────
+# zipfile reader round-trip over a real .odt (qa/zip).  Another suite long
+# filed as "needs CppUnit" that is in fact plain GoogleTest.
+#
+# dmake built this as an exe (ziptest.obj) linking a DLL (qa_zipimpl.dll from
+# testzipimpl.obj); that split existed only to let the DLL be rebuilt against a
+# different STL (NO_DEFAULT_STL / msvcprt.lib in testimpl/makefile.mk), which
+# has no analogue here — so both TUs go straight into the one exe.
+#
+# The test opens "simpledocument.odt" by BARE RELATIVE NAME, so it needs the
+# file resolvable from the process's working directory — which `bazel test` sets
+# to the execroot, not the exe's dir.  Passing it as data_files both stages it
+# beside the exe and switches the target to the cd-first .bat launcher.
+gtest_test(
+    name = "shell_qa_zip",
+    srcs = [
+        "qa/zip/ziptest.cxx",
+        "qa/zip/testimpl/testzipimpl.cxx",
+        "qa/zip/testimpl/testzipimpl.hxx",
+    ],
+    copts = _SHLXT_COPTS + ["/Imain/shell/qa/zip"],
+    defines = _SHLXT_DEFINES,
+    deps = [
+        ":zipfile",
+        "//main/sal:sal_headers",
+    ],
+    additional_linker_inputs = ["//main/sal:sal_implib"],
+    linkopts = ["$(execpath //main/sal:sal_implib)"],
+    runtime_dlls = ["//main/sal:sal3"],
+    data_files = ["qa/zip/simpledocument.odt"],
 )
 
 exports_files(glob(["**/*.component"]))

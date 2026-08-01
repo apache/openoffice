@@ -75,10 +75,33 @@ def _staged_gtest_test_impl(ctx):
     ctx.actions.symlink(output = man, target_file = ctx.file.app_manifest)
     staged.append(man)
 
+    # Co-locating a data file with the exe is not enough for a test that opens it
+    # by bare relative name: `bazel test` runs the executable with the working
+    # directory set to the execroot, not to the exe's directory (the loader finds
+    # the staged DLLs via the exe's own path, which is why those work regardless).
+    # When run_in_staged_dir is set, hand Bazel a .bat that cd's into the staged
+    # dir first and forwards the exit code, so relative paths resolve there.
+    executable = staged_exe
+    if ctx.attr.run_in_staged_dir:
+        launcher = ctx.actions.declare_file(d + "/" + ctx.label.name + "_run.bat")
+        ctx.actions.write(
+            output = launcher,
+            content = "\r\n".join([
+                "@echo off",
+                'cd /d "%~dp0" || exit /b 1',
+                '"%~dp0' + staged_exe.basename + '" %*',
+                "exit /b %ERRORLEVEL%",
+                "",
+            ]),
+            is_executable = True,
+        )
+        staged.append(launcher)
+        executable = launcher
+
     return [DefaultInfo(
-        executable = staged_exe,
+        executable = executable,
         runfiles = ctx.runfiles(files = staged),
-        files = depset([staged_exe]),
+        files = depset([executable]),
     )]
 
 _staged_gtest_test = rule(
@@ -89,6 +112,7 @@ _staged_gtest_test = rule(
         "runtime": attr.label_list(allow_files = True),
         "companions": attr.label_list(cfg = "target"),
         "app_manifest": attr.label(allow_single_file = True, default = _APP_MANIFEST),
+        "run_in_staged_dir": attr.bool(default = False),
     },
 )
 
@@ -106,12 +130,19 @@ def gtest_test(
         copts = [],
         defines = [],
         runtime_dlls = [],
+        data_files = [],
         companions = [],
         additional_linker_inputs = [],
         linkopts = [],
         size = "small",
         **kwargs):
-    """A GoogleTest suite that actually runs under `bazel test` on Windows/MD."""
+    """A GoogleTest suite that actually runs under `bazel test` on Windows/MD.
+
+    data_files: inputs the test opens by relative path (fixture documents, …).
+    They are staged beside the exe AND the test is launched with its working
+    directory set to that staged dir, which co-location alone does not give you
+    (see run_in_staged_dir in the staging rule).
+    """
     cc_binary(
         name = name + "_bin",
         srcs = srcs,
@@ -135,7 +166,8 @@ def gtest_test(
     _staged_gtest_test(
         name = name,
         binary = ":" + name + "_bin",
-        runtime = runtime_dlls + [_CRT],
+        runtime = runtime_dlls + data_files + [_CRT],
         companions = companions,
+        run_in_staged_dir = bool(data_files),
         size = size,
     )

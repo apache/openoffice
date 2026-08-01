@@ -28,7 +28,8 @@ holdouts).  This brings the test layer onto Bazel so suites run under
 | Piece | Path | Role |
 | ----- | ---- | ---- |
 | `@gtest` | `ext_libraries/modules/gtest/1.7.0/` | GoogleTest 1.7.0 bzlmod wrap (zip cached in `ext_sources`). Built with `/Zc:wchar_t-` so its `wchar_t` ABI matches `sal_Unicode` test code. |
-| `gtest_test` rule | [//build/rules:gtest_test.bzl](../../build/rules/gtest_test.bzl) | Reusable runnable-test rule. The `/MD` toolchain embeds no manifest, so a bare `cc_test` exe can't launch (DLLs land in runfiles subdirs; loose CRT → R6034). This stages the exe + runtime DLLs + VC90 CRT + an external `<exe>.manifest` into ONE flat dir (the test analog of `//main/idl:svidl_bundle`). |
+| `gtest_test` rule | [//build/rules:gtest_test.bzl](../../build/rules/gtest_test.bzl) | Reusable runnable-test rule. The `/MD` toolchain embeds no manifest, so a bare `cc_test` exe can't launch (DLLs land in runfiles subdirs; loose CRT → R6034). This stages the exe + runtime DLLs + VC90 CRT + an external `<exe>.manifest` into ONE flat dir (the test analog of `//main/idl:svidl_bundle`). Pass `data_files` for fixture inputs the test opens by relative path — see "working directory" below. |
+| `sal_process_init` | [//build/testsupport](../../build/testsupport/BUILD.bazel) | Migration-authored TU that runs `sal_detail_initialize()` from a dynamic initialiser, for suites whose own `main()` skips the `SAL_IMPLEMENT_MAIN` boilerplate (⇒ no `WSAStartup`). |
 | `libtest` | [//main/test:test](BUILD.bazel) | `test.dll` — `test::OfficeConnection` + arg/url helpers, for *subsequent* (UNO) tests that bootstrap a running soffice over URP. Built; not yet exercised. |
 | `vc90_app_manifest_res` | [//main/external/msvcp90](../external/msvcp90/BUILD.bazel) | The VC90-CRT manifest compiled to a `.res` and linked into every `gtest_test` exe at `RT_MANIFEST` id 1. See "the CRT activation context" below. |
 | `sal_qa_test` macro | [//main/sal:sal_qa.bzl](../sal/sal_qa.bzl) | Thin `gtest_test` wrapper for the sal/qa suites (common copts/deps + per-dir `*_Const.h` include). |
@@ -49,6 +50,9 @@ holdouts).  This brings the test layer onto Bazel so suites run under
      `:cppuhelper_qa_unourl`, `:cppuhelper_qa_weak`
    - `//main/binaryurp:binaryurp_tests` — `:binaryurp_qa_cache`,
      `:binaryurp_qa_unmarshal`
+   - `//main/shell:shell_qa_zip` (3) — zipfile reader over a real `.odt`
+   - `//main/sal:osl_Socket_tests`, `:osl_StreamSocket`, `:osl_DatagramSocket`,
+     `:osl_AcceptorSocket` (4 of the 8 socket suites; see the socket note below)
 
    **Tests with private IDL types** (cppu/qa has a `types.idl` defining
    Enum1/Struct1/Interface1/… used only by the tests): reuse the `idl_library`
@@ -109,6 +113,17 @@ holdouts).  This brings the test layer onto Bazel so suites run under
   (Not yet handled: under `--compilation_mode=dbg` the exes link `/MDd` but
   this `.res` still carries the *release* CRT manifest.)
 
+- **Staging a data file beside the exe is not enough — the working directory is
+  the execroot.** `bazel test` launches the test with its CWD set to the
+  execroot, *not* the exe's directory. Co-located DLLs still resolve (the loader
+  searches the exe's own path), which makes it easy to assume relative file
+  opens will too — they don't. A test that opens a fixture by bare relative name
+  (`//main/shell:shell_qa_zip` → `simpledocument.odt`) throws
+  file-not-found while passing when run by hand from the staged dir. Pass such
+  inputs as `data_files`: they are staged beside the exe *and* the target
+  switches to a `.bat` launcher that `cd`s there first and forwards the exit
+  code.
+
 - **`/Zc:wchar_t-` must be consistent across gtest and every test TU.** gtest
   declares `PrintTo(wchar_t)`; with `/Zc:wchar_t-` (`wchar_t == unsigned short`)
   on one side only, that mangles vs `PrintTo(unsigned short)` → `LNK2019`. Fixed
@@ -127,11 +142,11 @@ holdouts).  This brings the test layer onto Bazel so suites run under
 
 ## The sal suite is deliberately NOT a green gate
 
-`//main/sal:sal_tests` runs **every** migrated self-contained sal/qa test — 36
+`//main/sal:sal_tests` runs **every** migrated self-contained sal/qa test — 44
 targets, passing and failing alike, on the principle that failures are
 information, not something to hide (the rationale lives next to the
 `test_suite` in [main/sal/BUILD.bazel](../sal/BUILD.bazel)). So expect it to be
-red. As of 2026-08-01, 30 pass and these 6 fail, each on its **own merits** —
+red. As of 2026-08-01, 34 pass and these 10 fail, each on its **own merits** —
 none is a build or loader problem, and the source is out of scope:
 
 | Target | Failing | Why |
@@ -142,6 +157,45 @@ none is a build or loader problem, and the source is out of scope:
 | `rtl_logfile` | 1 | Writes/reads `c:/temp` and asserts on it — env/permission bound |
 | `osl_Thread` | 1 | `resume_001` is a timing race; flaky, not deterministic |
 | `rtl_OUString2` | 1 | `convertFromString` expects `\x80` to fail UTF-8 validation — test-data drift, same class as `rtl_textcvt` |
+| `osl_SocketOld` | 10 | see socket note below |
+| `osl_SocketAddr` | 3 | see socket note below |
+| `osl_Socket2` | 7 | see socket note below |
+| `osl_ConnectorSocket` | 1 | see socket note below |
+
+### The osl/socket suites
+
+Long recorded as "blocked on a CppUnit external dep" — that was simply wrong.
+All 8 apps in `qa/osl/socket/makefile.mk` are plain GoogleTest suites with no
+testshl2 include; they only ever needed `ws2_32`.
+
+What they *did* need is `//build/testsupport:sal_process_init.cxx`. Each
+declares its own bare `main()` instead of going through `SAL_IMPLEMENT_MAIN`,
+and on Windows that macro is what calls `sal_detail_initialize()` →
+**`WSAStartup()`** (sal3.dll's `DllMain` only ever calls the matching
+`WSACleanup()`, never `WSAStartup`). Without it Winsock is never initialised,
+every osl socket call returns `WSANOTINITIALISED`, and the suites collapse in
+ways that implicate everything except the real cause — `SocketAddr`
+constructors quietly yield unusable addresses, `getLocalHostname()` fails.
+These are testshl2-era suites; that harness used to supply `main()` for them.
+The shim does the init from a dynamic initialiser (which the CRT runs before
+`main`), using `__argc`/`__argv` — `osl_setCommandArgs` asserts `argc > 0`.
+
+With it, 4 of the 8 are fully green (`osl_Socket_tests`, `osl_StreamSocket`,
+`osl_DatagramSocket`, `osl_AcceptorSocket`) and the rest go from
+near-total failure to a small residual set — none of it a build problem:
+
+- **Upstream already knew.** `connect_003` and `getLocalHost_001` are listed in
+  the module's own `.xsce` exclusion files *specifically for `wntmsci`*, our
+  exact platform; `ctors_family_Ipx` (IPX is dead on modern Windows) and
+  `getHostname_002` are excluded on every platform.
+- **Needs Administrator.** `ctors_TypeRaw` / `getType_003` create a
+  `osl_Socket_TypeRaw` socket — privileged on Windows. The test's own message
+  admits it doesn't pass on Linux/Solaris either.
+- **Unsupported socket option.** `setOption_001` / `getOption_simple_001` set
+  `SO_DONTROUTE`; the test even comments "maybe asAcceptorSocket is not right
+  initialized".
+- **DNS/host dependent.** `getHostname_001`, `getSocketAddrHandle_002`,
+  `getLocalPort_002` resolve names against whatever network the machine is on.
 
 Earlier revisions of this file listed `rtl_str`/`rtl_ustr`/`rtl_string` as
 NULL-deref crashes; those were since fixed (boundary checks in the tests plus
@@ -150,8 +204,15 @@ NULL-deref crashes; those were since fixed (boundary checks in the tests plus
 (`osl_Security` is not in the suite at all — it fails to *build* on testshl2,
 see the gotcha above; it is unwired entirely, not an exclusion.)
 
-Still unwired: cppunit suites (`osl/socket`, `rtl_strings`) → need a CppUnit
-external dep; child-process tests (`osl/process`, `rtl/bootstrap`,
+`rtl_strings` was also filed under "needs CppUnit". It does not: it includes
+`testshl/tresstatewrapper.hxx`, i.e. the retired **testshl** harness, and its own
+`readme.txt` says it is "the old test implementation of rtl::XString",
+superseded by `sal/qa/rtl/ostring` + `sal/qa/rtl/oustring` — both of which are
+already wired (`rtl_OString2`, `rtl_str`, `rtl_string`, `rtl_OUString2`,
+`rtl_ustr`). So it is **dead weight, not a blocker**; there is nothing to gain
+by migrating it.
+
+Still unwired: child-process tests (`osl/process`, `rtl/bootstrap`,
 `rtl/process`) → they resolve their helper exe via `getExecutablePath()`+`"/../bin"`
 (the dmake `solver/bin` layout), which flat Bazel staging can't satisfy without
 source changes — `gtest_test` has a `companions` hook ready for when that layout

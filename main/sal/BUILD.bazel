@@ -268,6 +268,51 @@ sal_qa_test(name = "osl_old_test_file", srcs = ["qa/osl/file/osl_old_test_file.c
 # osl_Thread calls Win32 Sleep() (kernel32, default-linked): force-include <windows.h>.
 sal_qa_test(name = "osl_Thread", srcs = ["qa/osl/process/osl_Thread.cxx"], subdir = "osl/process", copts = ["/FIwindows.h"])
 
+# osl/socket — 8 apps from qa/osl/socket/makefile.mk.  These were long listed as
+# "blocked on a CppUnit external dep"; that was wrong — every one of them is
+# already a plain GoogleTest suite (`#include "gtest/gtest.h"`, TEST_F) with no
+# testshl2 include, so all they ever needed was ws2_32.  6 of the 8 share
+# sockethelper.cxx (ping/hostname/addr helpers).
+#
+# These bind real sockets on localhost and resolve the local hostname, so unlike
+# the rest of sal/qa they are environment-sensitive by nature.
+#
+# //build/testsupport:sal_process_init is REQUIRED, not incidental: each of
+# these suites declares its own bare main() that skips the SAL_IMPLEMENT_MAIN
+# boilerplate, and on Windows that boilerplate (sal_detail_initialize) is what
+# calls WSAStartup.  Without it Winsock is never initialised, every osl socket
+# call returns WSANOTINITIALISED, and the suites fail wholesale in ways that
+# point everywhere except the real cause.  They are testshl2-era suites — that
+# harness used to supply main() for them.
+_SOCKET_LINKOPTS = ["ws2_32.lib"]
+
+_SOCKET_INIT = "//build/testsupport:sal_process_init.cxx"
+
+sal_qa_test(name = "osl_SocketOld", srcs = ["qa/osl/socket/osl_Socket.cxx", _SOCKET_INIT], subdir = "osl/socket", linkopts = _SOCKET_LINKOPTS)
+sal_qa_test(name = "osl_Socket_tests", srcs = ["qa/osl/socket/osl_Socket_tests.cxx", _SOCKET_INIT], subdir = "osl/socket", linkopts = _SOCKET_LINKOPTS)
+
+[
+    sal_qa_test(
+        name = t,
+        srcs = [
+            "qa/osl/socket/%s.cxx" % t,
+            "qa/osl/socket/sockethelper.cxx",
+            "qa/osl/socket/sockethelper.hxx",
+            _SOCKET_INIT,
+        ],
+        subdir = "osl/socket",
+        linkopts = _SOCKET_LINKOPTS,
+    )
+    for t in [
+        "osl_StreamSocket",
+        "osl_DatagramSocket",
+        "osl_SocketAddr",
+        "osl_Socket2",
+        "osl_ConnectorSocket",
+        "osl_AcceptorSocket",
+    ]
+]
+
 # systools — Win32 COM smart pointers (needs ole32 + CoInitialize).
 sal_qa_test(name = "test_comtools", srcs = ["qa/systools/test_comtools.cxx"], subdir = "systools", copts = ["/FIwindows.h"], linkopts = ["ole32.lib"])
 
@@ -339,6 +384,14 @@ test_suite(
         ":tcwf",
         ":osl_old_test_file",
         ":osl_Thread",
+        ":osl_SocketOld",
+        ":osl_Socket_tests",
+        ":osl_StreamSocket",
+        ":osl_DatagramSocket",
+        ":osl_SocketAddr",
+        ":osl_Socket2",
+        ":osl_ConnectorSocket",
+        ":osl_AcceptorSocket",
         ":test_comtools",
         ":testHelperFunctions",
         ":sal_ut_types",
