@@ -3,6 +3,7 @@ package(default_visibility = ["//visibility:public"])
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 load("//build/rules:rsc_pipeline.bzl", "rsc_res")
 load("//build/rules:sdi_target.bzl", "sdi_package", "sdi_target")
+load("//build/rules:gtest_test.bzl", "gtest_test")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -227,3 +228,40 @@ rsc_res(
 )
 
 exports_files(glob(["**/*.component"]))
+# ── qa unit test ──────────────────────────────────────────────────
+# sfx2::Metadatable / XmlIdRegistry — RDF metadata identity and the
+# copy/undo bookkeeping around it (qa/gtest/test_metadatable.cxx).
+# Ports GoogleTest_sfx2_metadatable.mk (cppu cppuhelper sal sfx stl).
+gtest_test(
+    name = "sfx2_qa_metadatable",
+    srcs = ["qa/gtest/test_metadatable.cxx"],
+    copts = _COPTS,
+    defines = _DEFINES,
+    deps = [
+        ":sfx2_headers",
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/stlport:stlport",
+        "@boost.legacy//:boost.legacy",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        ":sfx_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath :sfx_implib)",
+    ],
+    # Not a UNO-bootstrapping test, but sfx.dll's transitive DLL closure is
+    # enormous (svl, svtools, tools, vcl, comphelper, ucbhelper, …).  Running
+    # inside the staged install supplies all of it via PATH instead of making us
+    # enumerate it in runtime_dlls.
+    uno_install = "//main/staging:install",
+)

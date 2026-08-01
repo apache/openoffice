@@ -51,6 +51,10 @@ holdouts).  This brings the test layer onto Bazel so suites run under
    - `//main/binaryurp:binaryurp_tests` — `:binaryurp_qa_cache`,
      `:binaryurp_qa_unmarshal`
    - `//main/shell:shell_qa_zip` (3) — zipfile reader over a real `.odt`
+   - `//main/sal:qa_rtl_strings` (5 TUs, one exe)
+   - `//main/sw:sw_qa_bigpointerarray` (26) — `BigPtrArray` behind `SwNodes`
+   - `//main/sfx2:sfx2_qa_metadatable` — `Metadatable` / `XmlIdRegistry`
+   - `//main/desktop:desktop_qa_dp_version` — extension version ordering
    - `//main/sal:osl_Socket_tests`, `:osl_StreamSocket`, `:osl_DatagramSocket`,
      `:osl_AcceptorSocket` (4 of the 8 socket suites; see the socket note below)
 
@@ -143,6 +147,26 @@ holdouts).  This brings the test layer onto Bazel so suites run under
   (Not yet handled: under `--compilation_mode=dbg` the exes link `/MDd` but
   this `.res` still carries the *release* CRT manifest.)
 
+- **System32 shadows our bundled `icuuc.dll`, and `PATH` cannot beat it.** The
+  Windows loader searches `System32` *before* the working directory and `PATH`.
+  Windows ships a ~36 KB `C:\Windows\System32\icuuc.dll`; AOO bundles ICU 49.1.2
+  (~1.3 MB) under the same name. Any test exe importing it transitively —
+  anything linking `sw.dll`, `sfx.dll`, … — therefore binds the *system* one,
+  whose exports don't match, and dies at load with **`STATUS_ENTRYPOINT_NOT_FOUND`
+  (`0xC0000139`)** and an **empty test log**. `soffice.exe` never hits this
+  because it lives in `program/` next to our copy, and the exe's OWN directory is
+  the one thing searched ahead of `System32`.
+
+  `gtest_test` handles it: when `uno_install` is set it co-locates the ICU DLLs
+  with the test exe. `icuuc.dll` is the only collision among the 248 staged DLLs
+  (verified by diffing basenames against `System32`); the other two ICU DLLs are
+  staged with it to keep the loaded ICU coherent.
+
+  Triage note: this and the R6034 bridge landmine both present as *empty
+  test.log + a load-time exit code*. `0xC0000139` = a DLL loaded but an export
+  was missing (wrong DLL won the search); `0xC0000142` = `DllMain` failed (the
+  CRT activation-context case).
+
 - **Never assume the test's working directory.** It is *not* the exe's
   directory, and it is *not* the execroot either — a launcher that built paths
   from `%CD%` produced "The system cannot find the path specified" even though
@@ -179,11 +203,11 @@ holdouts).  This brings the test layer onto Bazel so suites run under
 
 ## The sal suite is deliberately NOT a green gate
 
-`//main/sal:sal_tests` runs **every** migrated self-contained sal/qa test — 44
+`//main/sal:sal_tests` runs **every** migrated self-contained sal/qa test — 45
 targets, passing and failing alike, on the principle that failures are
 information, not something to hide (the rationale lives next to the
 `test_suite` in [main/sal/BUILD.bazel](../sal/BUILD.bazel)). So expect it to be
-red. As of 2026-08-01, 34 pass and these 10 fail, each on its **own merits** —
+red. As of 2026-08-02, 34 pass and these 11 fail, each on its **own merits** —
 none is a build or loader problem, and the source is out of scope:
 
 | Target | Failing | Why |
@@ -194,6 +218,7 @@ none is a build or loader problem, and the source is out of scope:
 | `rtl_logfile` | 1 | Writes/reads `c:/temp` and asserts on it — env/permission bound |
 | `osl_Thread` | 1 | `resume_001` is a timing race; flaky, not deterministic |
 | `rtl_OUString2` | 1 | `convertFromString` expects `\x80` to fail UTF-8 validation — test-data drift, same class as `rtl_textcvt` |
+| `qa_rtl_strings` | 1 | `Convert.convertToString` — same text-conversion drift |
 | `osl_SocketOld` | 10 | see socket note below |
 | `osl_SocketAddr` | 3 | see socket note below |
 | `osl_Socket2` | 7 | see socket note below |

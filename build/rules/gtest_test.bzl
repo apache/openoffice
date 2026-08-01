@@ -62,17 +62,26 @@ def _windows_relpath(from_dir, to_dir):
 def _staged_gtest_test_impl(ctx):
     d = ctx.label.name + ".run"
     staged = []
+    seen = {}
+
+    def stage(f, name = None):
+        name = name or f.basename
+        if name in seen:
+            return
+        seen[name] = True
+        o = ctx.actions.declare_file(d + "/" + name)
+        ctx.actions.symlink(output = o, target_file = f)
+        staged.append(o)
 
     # The gtest exe, renamed to the test target's name.
     staged_exe = ctx.actions.declare_file(d + "/" + ctx.label.name + ".exe")
     ctx.actions.symlink(output = staged_exe, target_file = ctx.executable.binary)
+    seen[staged_exe.basename] = True
     staged.append(staged_exe)
 
     # Runtime DLLs + VC90 CRT (msvcr90/msvcp90/msvcm90 + Microsoft.VC90.CRT.manifest).
     for f in ctx.files.runtime:
-        o = ctx.actions.declare_file(d + "/" + f.basename)
-        ctx.actions.symlink(output = o, target_file = f)
-        staged.append(o)
+        stage(f)
 
     # Companion helper exes (e.g. a child process the test spawns by name).
     # Staged under their own basename + a matching <name>.exe.manifest so they
@@ -105,8 +114,8 @@ def _staged_gtest_test_impl(ctx):
     # The install root is a fixed bazel-out path (tree_install declares its
     # outputs in //main/staging), so locating program/fundamental.ini among the
     # install files at analysis time yields the execroot-relative program dir.
-    # `bazel test` runs with the working directory set to the execroot, hence
-    # %CD% below.
+    # The launcher then reaches it from its OWN location (%~dp0) — see
+    # _windows_relpath; never from %CD%, which is not the execroot.
     uno_program_dir = None
     for f in ctx.files.uno_install:
         if f.path.endswith("/program/fundamental.ini"):
@@ -114,6 +123,26 @@ def _staged_gtest_test_impl(ctx):
             break
     if ctx.files.uno_install and uno_program_dir == None:
         fail("uno_install does not contain program/fundamental.ini — is it //main/staging:install?")
+
+    # System32 SHADOWS one of our staged DLLs, and putting program/ on PATH does
+    # NOT beat it: the Windows loader searches System32 *before* the working
+    # directory and PATH.  Windows ships its own C:\Windows\System32\icuuc.dll (a
+    # ~36 KB stub) while AOO bundles ICU 49.1.2 (~1.3 MB); everything importing
+    # icuuc — sw.dll, sfx.dll, … — then binds the system one, whose exports do
+    # not match, and the process dies at load with STATUS_ENTRYPOINT_NOT_FOUND
+    # (0xC0000139) and an EMPTY test log.  soffice.exe is immune only because it
+    # lives in program/ next to our copy, and the exe's own directory IS searched
+    # first.  So mirror that: co-locate ICU with the test exe.
+    # icuuc.dll is the only one of the 248 staged DLLs that collides; the other
+    # two come along to keep the loaded ICU coherent.
+    if uno_program_dir:
+        for f in ctx.files.uno_install:
+            if f.dirname == uno_program_dir and f.basename in [
+                "icuuc.dll",
+                "icui18n.dll",
+                "icudata.dll",
+            ]:
+                stage(f)
 
     executable = staged_exe
     if ctx.attr.run_in_staged_dir or uno_program_dir:
@@ -197,11 +226,17 @@ def gtest_test(
     directory set to that staged dir, which co-location alone does not give you
     (see run_in_staged_dir in the staging rule).
 
-    uno_install: for *subsequent* tests that call
-    cppu::defaultBootstrap_InitialComponentContext(). Pass
-    //main/staging:install; the test then runs against that staged office via
-    URE_BOOTSTRAP. Note this makes the test depend on the whole install, so it
-    is far from a unit test — keep it off targets that don't need UNO.
+    uno_install: run the test INSIDE the staged office install (pass
+    //main/staging:install). Two independent things come from this, and either
+    one alone is a good enough reason to use it:
+      * a UNO bootstrap — URE_BOOTSTRAP is exported, so a test that calls
+        cppu::defaultBootstrap_InitialComponentContext() gets a real component
+        context (the *subsequent* test case);
+      * the whole office DLL closure on PATH — which beats enumerating dozens of
+        transitive DLLs in runtime_dlls for anything linking a big library like
+        sfx.dll or sw.dll.
+    It does make the test depend on the entire install, but a slow test beats no
+    test; build time is not a reason to skip wiring something.
     """
     cc_binary(
         name = name + "_bin",

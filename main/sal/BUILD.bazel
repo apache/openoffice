@@ -327,6 +327,21 @@ sal_qa_test(
     srcs = ["qa/testHelperFunctions/testHelperFunctions.cxx", "qa/testHelperFunctions/testHelperFunctions2.cxx"],
     subdir = "testHelperFunctions",
 )
+# qa/rtl/strings — one exe from 5 TUs (test_oustring_noadditional.cxx supplies
+# main()).  NOT the same thing as qa/rtl_strings, which is testshl-based dead
+# weight superseded by qa/rtl/{ostring,oustring}; this one is plain GoogleTest.
+sal_qa_test(
+    name = "qa_rtl_strings",
+    srcs = [
+        "qa/rtl/strings/test_oustringbuffer_utf32.cxx",
+        "qa/rtl/strings/test_oustring_compare.cxx",
+        "qa/rtl/strings/test_oustring_convert.cxx",
+        "qa/rtl/strings/test_oustring_endswith.cxx",
+        "qa/rtl/strings/test_oustring_noadditional.cxx",
+    ],
+    subdir = "rtl/strings",
+)
+
 sal_qa_test(name = "sal_ut_types", srcs = ["qa/sal/test_types.cxx"], subdir = "sal")
 sal_qa_test(name = "sal_ut_bytesequence", srcs = ["qa/ByteSequence/ByteSequence.cxx"], subdir = "ByteSequence")
 
@@ -384,6 +399,7 @@ test_suite(
         ":tcwf",
         ":osl_old_test_file",
         ":osl_Thread",
+        ":qa_rtl_strings",
         ":osl_SocketOld",
         ":osl_Socket_tests",
         ":osl_StreamSocket",

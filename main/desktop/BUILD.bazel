@@ -2,6 +2,7 @@ package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 load("//build/rules:rsc_pipeline.bzl", "rsc_res")
+load("//build/rules:gtest_test.bzl", "gtest_test")
 
 # ── Common compile settings ───────────────────────────────────────────────────
 _DEFINES = [
@@ -1152,3 +1153,36 @@ exports_files(["util/soffice.exe.manifest", "util/soffice.bin.manifest"])
 # this variant.  Same basename so it still stages as soffice.exe/bin.manifest.
 exports_files(["util/amd64/soffice.exe.manifest"])
 
+
+# ── qa unit test ──────────────────────────────────────────────────
+# dp_misc::compareVersions — extension version ordering (qa/deployment_misc).
+# Ports qa/deployment_misc/makefile.mk (gtest + deploymentmisc + sal).
+# DISABLE_PCH_HACK comes from that makefile's CFLAGSCXX.
+gtest_test(
+    name = "desktop_qa_dp_version",
+    srcs = [
+        "qa/deployment_misc/test_dp_version.cxx",
+        "qa/deployment_misc/main.cxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES + ["DISABLE_PCH_HACK"],
+    deps = [
+        ":desktop_source_inc_hdrs",
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/stlport:stlport",
+        "@boost.legacy//:boost.legacy",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        ":deploymentmisc_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath :deploymentmisc_implib)",
+    ],
+    uno_install = "//main/staging:install",
+)

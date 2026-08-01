@@ -3,6 +3,7 @@ package(default_visibility = ["//visibility:public"])
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 load("//build/rules:rsc_pipeline.bzl", "rsc_res")
 load("//build/rules:sdi_target.bzl", "sdi_target")
+load("//build/rules:gtest_test.bzl", "gtest_test")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -1510,3 +1511,36 @@ filegroup(
 
 exports_files(glob(["**/*.component"]))
 
+
+# ── qa unit test ──────────────────────────────────────────────────
+# BigPtrArray — the block-pointer array behind SwNodes (qa/core).
+# Ports GoogleTest_sw_bigpointerarray.mk (sal sfx stl sw tl).
+gtest_test(
+    name = "sw_qa_bigpointerarray",
+    srcs = ["qa/core/Test-BigPtrArray.cxx"],
+    copts = _COPTS + ["/Imain/sw/qa/core"],
+    defines = _DEFINES,
+    deps = [
+        ":sw_headers",
+        "//main/sal:sal_headers",
+        "//main/tools:tools_headers",
+        "//main/sfx2:sfx2_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/stlport:stlport",
+        "@boost.legacy//:boost.legacy",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/tools:tl_implib",
+        ":sw_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath :sw_implib)",
+    ],
+    # sw.dll drags in most of the office; run inside the staged install rather
+    # than enumerating the closure (see gtest_test's uno_install).
+    uno_install = "//main/staging:install",
+)

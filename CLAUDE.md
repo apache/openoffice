@@ -83,6 +83,26 @@ test          🔨  C++ unit-test infra runnable — NOW THE FRONT-LINE TASK: br
                    LANDMINE for any new launcher: bazel test's CWD is NEITHER the exe
                    dir NOR the execroot — locate everything from %~dp0 (see
                    _windows_relpath in gtest_test.bzl).
+                   LANDMINE (icu): C:\Windows\System32\icuuc.dll SHADOWS our bundled
+                   ICU 49 icuuc.dll, and PATH cannot beat it — System32 is searched
+                   before CWD/PATH.  Anything importing it (sw.dll, sfx.dll…) dies at
+                   load with STATUS_ENTRYPOINT_NOT_FOUND 0xC0000139 + an EMPTY
+                   test.log; soffice.exe is immune only because it sits in program/
+                   next to our copy.  gtest_test co-locates the ICU DLLs with the test
+                   exe when uno_install is set.  icuuc is the ONLY collision among the
+                   248 staged DLLs.  Empty-log triage: 0xC0000139 = wrong DLL won the
+                   search; 0xC0000142 = DllMain failed (CRT activation ctx).
+                   Wired since: sal qa_rtl_strings, sw_qa_bigpointerarray,
+                   sfx2_qa_metadatable, desktop_qa_dp_version.  uno_install doubles as
+                   "give me the whole office DLL closure on PATH", which beats
+                   enumerating dozens of transitive DLLs for sw/sfx-sized libraries.
+                   STILL TODO in this sweep: configmgr/qa/unit (builds its OWN mini
+                   installation — urebootstrap.ini + data.xcd + generated inis — so it
+                   needs a genrule, not //main/staging:install), cppuhelper/qa/
+                   propertysetmixin (UNO component DLL + own types.idl + services.rdb),
+                   xmlsecurity/qa/certext + sal child-process suites (osl/process,
+                   rtl/bootstrap, rtl/process) which need OfficeConnection / companion
+                   staging, and writerfilter doctok.
 testtools     ⬜  (bridgetest — pure-C++ UNO bridge round-trip; cli/pyuno/java variants
                    need rules_java — see Java bucket)
 qadevOOo      🔨  OOoRunner.jar built (//main/qadevOOo:OOoRunner — qadevOOo QA
