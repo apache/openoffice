@@ -259,6 +259,41 @@ comments).  Root causes per defect: main/filter/source/graphicfilter/idxf/Readme
   still-open cases (99892 Phase B encoding-chooser UI, text-dense thumbnail) live on
   the local branch bugfix-dxf-filter-open, deliberately out of this tree.
 
+BACKPORT #3 LANDED 2026-08-02 (Damjan's Win64 type-correctness follow-ups, 4 commits,
+GREEN on BOTH arches per user build).  These refine hunks ALREADY in this branch —
+two of them (dllmgr, sfx2 Get10ThSec) are trunk rewriting OUR OWN upstreamed edits, so
+skipping them would have left those files permanently divergent and re-flagged by every
+`git cherry` run.  None fixes a live x64 defect (uInt32→uLong is a widening, IMR_* are
+small constants, Windows clock_t is 32-bit long on both arches) — the value is drift
+removal.  Source-only, 5 files: vcl salgdi.cxx ImplPreparePolyDraw nCurrPoint(s)
+sal_uLong→sal_uInt32 (48f8cc8f69, completes 30f18d3fb8), vcl salframe.cxx drop the
+static_cast<int>(wParam) on IMR_* (1e5d8e72b5), basic dllmgr.cxx guard
+!defined(_WIN64)→defined(INTEL) (14a9b8c1d9 — equivalent here, the toolchain injects
+INTEL/X86_64 globally, see build/toolchain/windows_cc_toolchain_config.bzl), sfx2
+Get10ThSec() sal_uInt32→clock_t + SfxStatusIndicator::_nStartTime long→clock_t
+(448dc86220; progress.cxx already includes <time.h> at line 54, no new include needed).
+  NOT PORTED from the same trunk batch, because the Bazel side is ALREADY AHEAD:
+  29ca9883b9 (link `version` for VerQueryValueW on x64) — vcl/BUILD.bazel already has
+  version.lib; 25912db745 (Win64 vcl entrypoint) — we already select /ENTRY:LibMain on
+  x64, and trunk's `/ENTRY:LibMain@16` looks WRONG: MSVC x64 drops the stdcall @N
+  decoration, so the symbol from vcl/win/source/app/salshl.cxx is undecorated LibMain
+  (that is what links and boots here).  Report upstream.
+  ALSO NOT PORTED: f116fde0f6 + the packregistry half of 70996efe05 (ADO component path
+  `drivers/ado`→`source/drivers/ado`, ADABAS platform condition) — both already correct
+  in main/postprocess/BUILD.bazel, which resolves components by TARGET LABEL so the
+  malformed path cannot exist in our form.  70996efe05's BFunctions.cxx half is a
+  UNX/MACOSX-only refactor (WNT branch untouched) = no-op here.  The gbuild ports in
+  that batch (connectivity 07bf101f83/5db65c3a88, chart2 89e8f0e82d/f1c404e081/
+  93fbba6999 + 0a9d806e68 version-map workaround, officecfg ef56053619/323ac1e9a6/
+  9e90d1d104, solenv Configuration.mk 431aafefb5/4dc45a5a3e, Ant jar sealing 861c48608f)
+  have NO Bazel equivalent — Bazel replaces that layer.
+  DRIFT TO WATCH (not actionable yet): 861c48608f also MOVES the DataAccess *.xcu out of
+  connectivity into officecfg registry/data/org/openoffice/Office/DataAccess/ and adds
+  *.xcs schemas for them; main/postprocess/BUILD.bazel still references the old
+  //main/connectivity:source/drivers/*/*.xcu paths and would break on a future sync.
+  d50e6300ed (drop -Xbootclasspath, unsupported on Java > 8) is inert now but is a real
+  constraint for scripting/java when the Java bucket lands.
+
 DO NOT PORT (VC9 island landmines — see the trunk drift audit above): boost 1.84
 (2e60be5056), pyuno→Python 3 (27dee00ef8), C++11 floor (7ce5b5df31), autoconf 2.72,
 the macOS/Apple-Silicon batch, GTK/iODBC/lld/icc-Clang16.
