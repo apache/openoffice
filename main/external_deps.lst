@@ -203,7 +203,8 @@ if (SYSTEM_BOOST != YES)
     MD5 = 9dcd632441e4da04a461082ebbafd337
     name = boost_1_84_0.tar.bz2
     URL1 = https://sourceforge.net/projects/boost/files/boost/1.84.0/boost_1_84_0.tar.bz2
-    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+    URL2 = https://archives.boost.io/release/1.84.0/source/$(name)
+    URL3 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SYSTEM_VIGRA != YES)
     MD5 = d62650a6f908e85643e557a236ea989c
