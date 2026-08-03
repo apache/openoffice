@@ -58,6 +58,18 @@ using namespace ::__cxxabiv1;
 namespace CPPU_CURRENT_NAMESPACE
 {
 
+namespace {
+
+typedef hash_map< OUString, type_info *, OUStringHash > ObservedRttiMap;
+
+ObservedRttiMap & observedRttis()
+{
+    static ObservedRttiMap map;
+    return map;
+}
+
+}
+
 void dummy_can_throw_anything( char const * )
 {
 }
@@ -138,6 +150,11 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
     OUString const & unoName = *(OUString const *)&pTypeDescr->aBase.pTypeName;
 
     MutexGuard guard( m_mutex );
+
+    ObservedRttiMap::const_iterator observed( observedRttis().find( unoName ) );
+    if ( observed != observedRttis().end() )
+        return observed->second;
+
     t_rtti_map::const_iterator iFind( m_rttis.find( unoName ) );
     if (iFind == m_rttis.end())
     {
@@ -156,7 +173,7 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
         buf.append( 'E' );
 
         OString symName( buf.makeStringAndClear() );
-        rtti = static_cast<std::type_info *>(dlsym( m_hApp, symName.getStr() ));
+        rtti = static_cast<std::type_info *>(dlsym( RTLD_DEFAULT, symName.getStr() ));
 
         if (rtti)
         {
@@ -351,6 +368,34 @@ void fillUnoException( __cxa_exception * header, uno_Any * pUnoExc, uno_Mapping 
     {
         // construct uno exception any
         uno_any_constructAndConvert( pUnoExc, header->adjustedPtr, pExcTypeDescr, pCpp2Uno );
+        typelib_typedescription_release( pExcTypeDescr );
+    }
+}
+
+void fillUnoException(
+    std::type_info const & type, void * exception, uno_Any * pUnoExc,
+    uno_Mapping * pCpp2Uno )
+{
+    typelib_TypeDescription * pExcTypeDescr = 0;
+    OUString unoName( toUNOname( type.name() ) );
+    {
+        MutexGuard guard( Mutex::getGlobalMutex() );
+        observedRttis()[unoName] = const_cast<std::type_info *>( &type );
+    }
+    typelib_typedescription_getByName( &pExcTypeDescr, unoName.pData );
+    if ( pExcTypeDescr == 0 )
+    {
+        RuntimeException aRE(
+            OUString( RTL_CONSTASCII_USTRINGPARAM("exception type not found: ") ) + unoName,
+            Reference< XInterface >() );
+        Type const & rType = ::getCppuType( &aRE );
+        uno_type_any_constructAndConvert(
+            pUnoExc, &aRE, rType.getTypeLibType(), pCpp2Uno );
+    }
+    else
+    {
+        uno_any_constructAndConvert(
+            pUnoExc, exception, pExcTypeDescr, pCpp2Uno );
         typelib_typedescription_release( pExcTypeDescr );
     }
 }

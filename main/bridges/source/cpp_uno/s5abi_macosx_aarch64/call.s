@@ -41,12 +41,16 @@
     .globl _callVirtualFunction
     .p2align 2
 _callVirtualFunction:
+    .cfi_startproc
     // prologue: save fp/lr and the callee-saved registers we use
     stp     x29, x30, [sp, #-16]!
     stp     x19, x20, [sp, #-16]!
     stp     x21, x22, [sp, #-16]!
     stp     x23, x24, [sp, #-16]!
     mov     x29, sp
+    .cfi_def_cfa x29, 64
+    .cfi_offset x29, -16
+    .cfi_offset x30, -8
 
     // stash inputs that must survive the call into callee-saved registers
     mov     x19, x0                     // pFunction
@@ -103,6 +107,7 @@ Lcvf_copied:
     ldp     x19, x20, [sp], #16
     ldp     x29, x30, [sp], #16
     ret
+    .cfi_endproc
 
 // ---------------------------------------------------------------------------
 // privateSnippetExecutor: the incoming (cpp2uno) register-spill executor.
@@ -124,13 +129,17 @@ Lcvf_copied:
 //       void* pIndirectReturn, sal_uInt64* pRegisterReturn);
 //
 // Frame (176 bytes): [0]=x29,x30  [16..79]=x0..x7  [80..143]=d0..d7
-//                    [144..159]=return buffer.
+//                    [144..175]=return buffer (up to four HFA doubles).
     .globl _privateSnippetExecutor
     .p2align 2
 _privateSnippetExecutor:
+    .cfi_startproc
     mov     x17, sp                     // x17 = ovrflw (incoming stack args)
     stp     x29, x30, [sp, #-176]!
     mov     x29, sp
+    .cfi_def_cfa x29, 176
+    .cfi_offset x29, -176
+    .cfi_offset x30, -168
 
     stp     x0, x1, [sp, #16]           // save GP argument registers x0..x7
     stp     x2, x3, [sp, #32]
@@ -151,6 +160,10 @@ _privateSnippetExecutor:
     add     x6, sp, #144                // pRegisterReturn (16-byte buffer)
     bl      _cpp_vtable_call
 
+    cmp     w0, #0x100                   // RETURN_KIND_HFA_FLOAT
+    b.eq    Lpse_hfa_float
+    cmp     w0, #0x101                   // RETURN_KIND_HFA_DOUBLE
+    b.eq    Lpse_hfa_double
     cmp     w0, #10                     // typelib_TypeClass_FLOAT
     b.eq    Lpse_float
     cmp     w0, #11                     // typelib_TypeClass_DOUBLE
@@ -162,7 +175,18 @@ _privateSnippetExecutor:
     b       Lpse_done
 Lpse_float:
     ldr     d0, [sp, #144]
+    b       Lpse_done
+Lpse_hfa_float:
+    ldr     s0, [sp, #144]
+    ldr     s1, [sp, #148]
+    ldr     s2, [sp, #152]
+    ldr     s3, [sp, #156]
+    b       Lpse_done
+Lpse_hfa_double:
+    ldp     d0, d1, [sp, #144]
+    ldp     d2, d3, [sp, #160]
 Lpse_done:
     mov     sp, x29
     ldp     x29, x30, [sp], #176
     ret
+    .cfi_endproc

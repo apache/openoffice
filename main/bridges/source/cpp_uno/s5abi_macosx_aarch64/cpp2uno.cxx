@@ -123,11 +123,11 @@ static typelib_TypeClass cpp2uno_call(
 
 		int nUsedGPR = 0;
 		int nUsedFPR = 0;
-		bool bFitsRegisters = aarch64::examine_argument( rParam.pTypeRef, false, nUsedGPR, nUsedFPR );
+		aarch64::examine_argument( rParam.pTypeRef, false, nUsedGPR, nUsedFPR );
 		if ( !rParam.bOut && bridges::cpp_uno::shared::isSimpleType( rParam.pTypeRef ) ) // value
 		{
 			// A simple UNO type occupies exactly one register, GPR or FPR.
-			OSL_ASSERT( bFitsRegisters && ( ( nUsedFPR == 1 && nUsedGPR == 0 ) || ( nUsedFPR == 0 && nUsedGPR == 1 ) ) );
+			OSL_ASSERT( ( nUsedFPR == 1 && nUsedGPR == 0 ) || ( nUsedFPR == 0 && nUsedGPR == 1 ) );
 
 			if ( nUsedFPR == 1 )
 			{
@@ -155,7 +155,7 @@ static typelib_TypeClass cpp2uno_call(
 			typelib_TypeDescription * pParamTypeDescr = 0;
 			TYPELIB_DANGER_GET( &pParamTypeDescr, rParam.pTypeRef );
 
-			void *pCppStack;
+			void *pCppStack = 0;
 			if ( nr_gpr < aarch64::MAX_GPR_REGS )
 			{
 				pCppArgs[nPos] = pCppStack = *gpreg++;
@@ -262,7 +262,7 @@ static typelib_TypeClass cpp2uno_call(
 
 
 //==================================================================================================
-extern "C" typelib_TypeClass cpp_vtable_call(
+extern "C" sal_uInt32 cpp_vtable_call(
 	sal_Int32 nFunctionIndex, sal_Int32 nVtableOffset,
 	void ** gpreg, void ** fpreg, void ** ovrflw,
 	void * pIndirectReturn, // AArch64 x8 indirect-result pointer (0 if none)
@@ -300,7 +300,7 @@ extern "C" typelib_TypeClass cpp_vtable_call(
 
 	TypeDescription aMemberDescr( pTypeDescr->ppAllMembers[nMemberPos] );
 
-	typelib_TypeClass eRet;
+	sal_uInt32 eRet;
 	switch ( aMemberDescr.get()->eTypeClass )
 	{
 		case typelib_TypeClass_INTERFACE_ATTRIBUTE:
@@ -311,9 +311,10 @@ extern "C" typelib_TypeClass cpp_vtable_call(
 			if ( pTypeDescr->pMapMemberIndexToFunctionIndex[nMemberPos] == nFunctionIndex )
 			{
 				// is GET method
-				eRet = cpp2uno_call( pCppI, aMemberDescr.get(), pAttrTypeRef,
+					eRet = cpp2uno_call( pCppI, aMemberDescr.get(), pAttrTypeRef,
 						0, 0, // no params
 						gpreg, fpreg, ovrflw, pIndirectReturn, pRegisterReturn );
+					eRet = aarch64::get_return_kind( pAttrTypeRef );
 			}
 			else
 			{
@@ -385,6 +386,7 @@ extern "C" typelib_TypeClass cpp_vtable_call(
 										 pMethodTD->nParams,
 										 pMethodTD->pParams,
 										 gpreg, fpreg, ovrflw, pIndirectReturn, pRegisterReturn );
+					eRet = aarch64::get_return_kind( pMethodTD->pReturnTypeRef );
 				}
 			}
 			break;

@@ -175,19 +175,28 @@ static void callVirtualMethod(void * pThis, sal_uInt32 nVtableIndex,
 // pFPR, pGPR - pointer to the registers
 // pDS - pointer to the stack [will be increased if stored here]
 
-// The pFPR slot holds the value to be loaded into a v register; the trampoline
-// loads it with LDR d<n>, so float and double are stored the same way here.
-#define INSERT_FLOAT_DOUBLE( pSV, nr, pFPR, pDS ) \
+// Each pFPR slot is the low 64 bits of a v register.  A float occupies only
+// the low 32 bits, while a double occupies all 64 bits.
+#define INSERT_FLOAT( pSV, nr, pFPR, pDS ) \
 	if ( nr < aarch64::MAX_FPR_REGS ) \
-		pFPR[nr++] = *reinterpret_cast<double *>( pSV ); \
+	{ \
+		pFPR[nr] = 0; \
+		*reinterpret_cast<float *>( pFPR + nr++ ) = *reinterpret_cast<const float *>( pSV ); \
+	} \
 	else \
-		*pDS++ = *reinterpret_cast<sal_uInt64 *>( pSV ); // verbatim!
+		*pDS++ = *reinterpret_cast<const sal_uInt32 *>( pSV );
+
+#define INSERT_DOUBLE( pSV, nr, pFPR, pDS ) \
+	if ( nr < aarch64::MAX_FPR_REGS ) \
+		pFPR[nr++] = *reinterpret_cast<const double *>( pSV ); \
+	else \
+		*pDS++ = *reinterpret_cast<const sal_uInt64 *>( pSV ); // verbatim!
 
 #define INSERT_INT64( pSV, nr, pGPR, pDS ) \
 	if ( nr < aarch64::MAX_GPR_REGS ) \
-		pGPR[nr++] = *reinterpret_cast<sal_uInt64 *>( pSV ); \
+		pGPR[nr++] = *reinterpret_cast<const sal_uInt64 *>( pSV ); \
 	else \
-		*pDS++ = *reinterpret_cast<sal_uInt64 *>( pSV );
+		*pDS++ = *reinterpret_cast<const sal_uInt64 *>( pSV );
 
 #define INSERT_INT32( pSV, nr, pGPR, pDS ) \
 	if ( nr < aarch64::MAX_GPR_REGS ) \
@@ -314,8 +323,10 @@ static void cpp_call(
 				INSERT_INT8( pCppArgs[nPos], nGPR, pGPR, pStack );
 				break;
 			case typelib_TypeClass_FLOAT:
+				INSERT_FLOAT( pCppArgs[nPos], nFPR, pFPR, pStack );
+				break;
 			case typelib_TypeClass_DOUBLE:
-				INSERT_FLOAT_DOUBLE( pCppArgs[nPos], nFPR, pFPR, pStack );
+				INSERT_DOUBLE( pCppArgs[nPos], nFPR, pFPR, pStack );
 				break;
 			default:
 				break;
@@ -421,10 +432,13 @@ static void cpp_call(
 			uno_destructData( pCppReturn, pReturnTypeDescr, cpp_release );
 		}
 	}
- 	catch (...)
- 	{
-  		// fill uno exception
-		fillUnoException( CPPU_CURRENT_NAMESPACE::__cxa_get_globals()->caughtExceptions, *ppUnoExc, pThis->getBridge()->getCpp2Uno() );
+	catch (Exception & e)
+	{
+		// fill uno exception
+		std::type_info * type = CPPU_CURRENT_NAMESPACE::__cxa_current_exception_type();
+		CPPU_CURRENT_NAMESPACE::fillUnoException(
+			type ? *type : typeid(e), &e, *ppUnoExc,
+			pThis->getBridge()->getCpp2Uno() );
 
 		// temporary params
 		for ( ; nTempIndizes--; )
@@ -435,6 +449,24 @@ static void cpp_call(
 			TYPELIB_DANGER_RELEASE( ppTempParamTypeDescr[nTempIndizes] );
 		}
 		// return type
+		if (pReturnTypeDescr)
+			TYPELIB_DANGER_RELEASE( pReturnTypeDescr );
+	}
+	catch (...)
+	{
+		RuntimeException e(
+			OUString( RTL_CONSTASCII_USTRINGPARAM("C++ code threw unknown exception") ),
+			Reference< XInterface >() );
+		uno_type_any_constructAndConvert(
+			*ppUnoExc, &e, ::getCppuType( &e ).getTypeLibType(),
+			pThis->getBridge()->getCpp2Uno() );
+		for ( ; nTempIndizes--; )
+		{
+			sal_Int32 nIndex = pTempIndizes[nTempIndizes];
+			uno_destructData(
+				pCppArgs[nIndex], ppTempParamTypeDescr[nTempIndizes], cpp_release );
+			TYPELIB_DANGER_RELEASE( ppTempParamTypeDescr[nTempIndizes] );
+		}
 		if (pReturnTypeDescr)
 			TYPELIB_DANGER_RELEASE( pReturnTypeDescr );
 	}
