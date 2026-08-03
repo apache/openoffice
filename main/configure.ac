@@ -6959,7 +6959,7 @@ dnl ===================================================================
 SYSTEM_GETTEXT=YES
 AC_SUBST(SYSTEM_GETTEXT)
 
-if test "$_os" = "FreeBSD"; then
+if test "$_os" = "FreeBSD" -o "$_os" = "Darwin"; then
     LIBINTL_PREFIX=
     for dir in $CPPFLAGS; do
       if dir=`expr -- $dir : '-I\(.*\)'`; then
@@ -6968,6 +6968,11 @@ if test "$_os" = "FreeBSD"; then
         fi
       fi
     done
+    if test -z "$LIBINTL_PREFIX"; then
+       for dir in /usr/local /opt/homebrew /opt/local /usr; do
+          test -f "$dir/include/libintl.h" && LIBINTL_PREFIX=$dir && break
+       done
+    fi
     AC_SUBST(LIBINTL_PREFIX)
 fi
 

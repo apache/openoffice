@@ -1782,6 +1782,7 @@ if ( $platform =~ m/darwin/ )
     ToFile( "MACOSX_DEPLOYMENT_TARGET",       "@MACOSX_DEPLOYMENT_TARGET@",       "e" );
     ToFile( "MACOSX_SDK_PATH",       "@MACOSX_SDK_PATH@",       "e" );
     ToFile( "SDKROOT",       "@SDKROOT@",       "e" );
+    ToFile( "LIBINTL_PREFIX",       "@LIBINTL_PREFIX@", "e" );
 }
 if ( $platform =~ m/freebsd/ )
 {
