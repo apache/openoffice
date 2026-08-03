@@ -49,6 +49,20 @@ LIB1FILES=\
 
 SHL1TARGET=$(TARGET)$(DLLPOSTFIX)
 
+.IF "$(OS)$(SYSTEM_LIBXML)"=="MACOSXYES"
+# The macOS shared-library link template (tg_shl.mk) always searches
+# $(SOLARLIB) -- which includes /usr/lib -- before any of this makefile's
+# own libs, and the SDK bundles its own older libxml2 under /usr/lib. A
+# plain "-lxml2" (as pulled in by LIBXML2LIB) resolves to that bundled
+# copy instead of the configured --with-system-libxml one, and it is
+# missing symbols (xmlXPathValuePush, xmlXPathValuePop) that xformsxpath
+# needs. Link the intended libxml2 by absolute path so the search order
+# can't shadow it.
+FORMS_LIBXML2LIB:=$(shell xml2-config --prefix)/lib/libxml2.dylib
+.ELSE
+FORMS_LIBXML2LIB=$(LIBXML2LIB)
+.ENDIF
+
 SHL1STDLIBS= \
 		$(EDITENGLIB) \
 		$(SALLIB) \
@@ -68,7 +82,7 @@ SHL1STDLIBS= \
 		$(TKLIB) \
 		$(SVXCORELIB) \
         $(UCBHELPERLIB) \
-        $(LIBXML2LIB) \
+        $(FORMS_LIBXML2LIB) \
         $(ICUUCLIB) \
         $(ICUINLIB)
 

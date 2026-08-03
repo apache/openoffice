@@ -118,6 +118,17 @@ SHL2STDLIBS += $(NSS_LIBS)
 SHL2STDLIBS+= $(MSCRYPTOLIBS)
 # SHL2STDLIBS+= $(XMLSECLIB) $(LIBXML2LIB) $(NSS3LIB) $(NSPR4LIB) $(PLC4LIB)
 SHL2STDLIBS+= $(NSS3LIB) $(NSPR4LIB)
+.ELIF "$(OS)$(SYSTEM_LIBXML)"=="MACOSXYES"
+# The macOS shared-library link template (tg_shl.mk) always searches
+# $(SOLARLIB) -- which includes /usr/lib -- before any of this makefile's
+# own libs, and the SDK bundles its own older libxml2 under /usr/lib. A
+# plain "-lxml2" (as pulled in by NSSCRYPTOLIBS via LIBXML2LIB) resolves
+# to that bundled copy instead of the configured --with-system-libxml one,
+# and it is missing symbols (xmlCtxtPushInput, xmlXPathValuePush) that
+# xmlsec1 needs. Link the intended libxml2 by absolute path so the
+# search order can't shadow it.
+XMLSECURITY_SYSTEM_LIBXML2:=$(shell xml2-config --prefix)/lib/libxml2.dylib
+SHL2STDLIBS+= $(XMLSECLIB-NSS) $(XMLSECLIB) $(XMLSECURITY_SYSTEM_LIBXML2) $(NSS3LIB) $(NSPR4LIB) $(PLC4LIB)
 .ELSE
 SHL2STDLIBS+= $(NSSCRYPTOLIBS)
 .ENDIF
