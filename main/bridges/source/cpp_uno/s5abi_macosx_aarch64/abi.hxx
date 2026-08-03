@@ -48,6 +48,12 @@ const sal_uInt32 MAX_FPR_REGS = 8;
    most 2 (16 bytes / 8). */
 const sal_uInt32 MAX_AGGREGATE_REGS = 4;
 
+enum ReturnKind
+{
+    RETURN_KIND_HFA_FLOAT = 0x100,
+    RETURN_KIND_HFA_DOUBLE = 0x101
+};
+
 /* Count the number of registers required to pass the given type.
 
    Examines the argument and sets the number of GPR (x) and FPR (v) registers
@@ -71,6 +77,9 @@ bool examine_argument( typelib_TypeDescriptionReference *pTypeRef, bool bInRetur
     that is the "hidden param" case, for which this returns true.
 */
 bool return_in_hidden_param( typelib_TypeDescriptionReference *pTypeRef );
+
+/** Return the assembly return kind for an HFA, or the type class otherwise. */
+sal_uInt32 get_return_kind( typelib_TypeDescriptionReference *pTypeRef );
 
 /** Scatter a register-resident return value (an HFA returned in v0..v3, or a
     non-HFA aggregate <= 16 bytes returned in x0,x1) into the caller's struct.

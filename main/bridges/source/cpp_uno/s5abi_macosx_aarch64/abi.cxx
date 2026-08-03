@@ -46,6 +46,8 @@
 
 #include "abi.hxx"
 
+#include "bridges/cpp_uno/shared/types.hxx"
+
 #include <rtl/ustring.hxx>
 
 using namespace aarch64;
@@ -69,6 +71,27 @@ HfaKind mergeHfa( HfaKind running, HfaKind seen )
     if ( running == HFA_NONE )
         return seen;
     return ( running == seen ) ? running : HFA_NONE;
+}
+
+bool isComplexAggregate( typelib_TypeDescriptionReference *pTypeRef )
+{
+    typelib_TypeDescription * pTypeDescr = 0;
+    TYPELIB_DANGER_GET( &pTypeDescr, pTypeRef );
+    const typelib_CompoundTypeDescription *pComp =
+        reinterpret_cast<const typelib_CompoundTypeDescription *>( pTypeDescr );
+    bool complex = pComp->pBaseTypeDescription != 0 &&
+        isComplexAggregate( pComp->pBaseTypeDescription->aBase.pWeakRef );
+    for ( sal_Int32 i = 0; !complex && i < pComp->nMembers; ++i )
+    {
+        typelib_TypeClass typeClass = pComp->ppTypeRefs[i]->eTypeClass;
+        if ( typeClass == typelib_TypeClass_STRUCT ||
+             typeClass == typelib_TypeClass_EXCEPTION )
+            complex = isComplexAggregate( pComp->ppTypeRefs[i] );
+        else
+            complex = !bridges::cpp_uno::shared::isSimpleType( typeClass );
+    }
+    TYPELIB_DANGER_RELEASE( pTypeDescr );
+    return complex;
 }
 
 // Recursively determine whether pTypeRef is (part of) a homogeneous
@@ -158,7 +181,7 @@ bool classifyAggregate( typelib_TypeDescriptionReference *pTypeRef, int &nUsedGP
 
 } // anonymous namespace
 
-bool aarch64::examine_argument( typelib_TypeDescriptionReference *pTypeRef, bool /*bInReturn*/, int &nUsedGPR, int &nUsedFPR )
+bool aarch64::examine_argument( typelib_TypeDescriptionReference *pTypeRef, bool bInReturn, int &nUsedGPR, int &nUsedFPR )
 {
     nUsedGPR = 0;
     nUsedFPR = 0;
@@ -199,7 +222,10 @@ bool aarch64::examine_argument( typelib_TypeDescriptionReference *pTypeRef, bool
 
         case typelib_TypeClass_STRUCT:
         case typelib_TypeClass_EXCEPTION:
-            return classifyAggregate( pTypeRef, nUsedGPR, nUsedFPR );
+            if ( bInReturn )
+                return classifyAggregate( pTypeRef, nUsedGPR, nUsedFPR );
+            nUsedGPR = 1; // generated UNO C++ bindings pass aggregates by const reference
+            return true;
 
         default:
 #if OSL_DEBUG_LEVEL > 1
@@ -218,6 +244,8 @@ bool aarch64::return_in_hidden_param( typelib_TypeDescriptionReference *pTypeRef
         case typelib_TypeClass_TYPE:
         case typelib_TypeClass_ANY:
         case typelib_TypeClass_TYPEDEF:
+        case typelib_TypeClass_UNION:
+        case typelib_TypeClass_ARRAY:
         case typelib_TypeClass_SEQUENCE:
         case typelib_TypeClass_INTERFACE:
             // These are C++ wrapper objects, not pointer-sized scalar values.
@@ -227,10 +255,30 @@ bool aarch64::return_in_hidden_param( typelib_TypeDescriptionReference *pTypeRef
             break;
     }
 
+    if ( pTypeRef->eTypeClass == typelib_TypeClass_STRUCT ||
+         pTypeRef->eTypeClass == typelib_TypeClass_EXCEPTION )
+    {
+        if ( isComplexAggregate( pTypeRef ) )
+            return true;
+    }
+
     int g, s;
     // Returned in registers iff examine_argument() says it fits; otherwise the
     // caller must pass an indirect-result buffer in x8.
     return !examine_argument( pTypeRef, true, g, s );
+}
+
+sal_uInt32 aarch64::get_return_kind( typelib_TypeDescriptionReference *pTypeRef )
+{
+    if ( pTypeRef->eTypeClass == typelib_TypeClass_STRUCT ||
+         pTypeRef->eTypeClass == typelib_TypeClass_EXCEPTION )
+    {
+        HfaKind kind = HFA_NONE;
+        int count = 0;
+        if ( collectHfa( pTypeRef, kind, count ) && count >= 1 && count <= 4 )
+            return kind == HFA_FLOAT ? RETURN_KIND_HFA_FLOAT : RETURN_KIND_HFA_DOUBLE;
+    }
+    return pTypeRef->eTypeClass;
 }
 
 void aarch64::fill_struct( typelib_TypeDescriptionReference *pTypeRef, const sal_uInt64 *pGPR, const double *pFPR, void *pStruct )
@@ -257,7 +305,7 @@ void aarch64::fill_struct( typelib_TypeDescriptionReference *pTypeRef, const sal
         {
             float *pDest = reinterpret_cast<float *>( pStruct );
             for ( int i = 0; i < nUsedFPR; ++i )
-                pDest[i] = static_cast<float>( pFPR[i] );
+                pDest[i] = *reinterpret_cast<const float *>( pFPR + i );
         }
         else // HFA_DOUBLE
         {
