@@ -46,8 +46,12 @@ s#$#$#' | tr '\n' '|' | sed "s#|\$##" >$2
 # symbols will erroneously be added to the generated export symbols list file.
 # Typeinfo and typeinfo-name symbols (__ZTI*, __ZTS*) are exempt from that
 # filter: they have vague linkage and legitimately carry the same value, and
-# the macOS/arm64 C++-UNO bridge resolves exception typeinfo via dlsym(), so
-# dropping them would silently degrade UNO exceptions to RuntimeExceptions.
-# See solenv/src/component.map.
+# exporting them is correct for cross-library catch/dynamic_cast on every
+# platform that has a real version script.  It does not, however, rescue the
+# macOS/arm64 C++-UNO bridge's dlsym()-based exception lookup: clang emits the
+# typeinfo of every keyless class (every UNO exception) as hidden on arm64
+# Darwin no matter what an export list says, so that bridge instead falls back
+# to synthesising RTTI when dlsym() misses.  See solenv/src/component.map and
+# bridges/source/cpp_uno/s5abi_macosx_aarch64/except.cxx.
 awk -v SYMBOLSREGEXP="`cat $2`" '
 match ($6,SYMBOLSREGEXP) > 0 && $6 !~ /_GLOBAL_/ { if (($2 != 1) && (($2 != "1f") || ($6 ~ /^__ZT[IS]/))) print $6 }'

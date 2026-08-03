@@ -32,6 +32,25 @@ namespace CPPU_CURRENT_NAMESPACE
 
 void dummy_can_throw_anything( char const * );
 
+// Donor types for RTTI synthesis.  Their type_info objects are emitted by the
+// compiler, so they carry the real libc++abi vtables and the platform's own
+// uniqueness convention.  They must stay ordinary namespace-scope classes with
+// no virtual functions and a single public non-virtual base -- exactly the
+// shape of a generated UNO exception -- so that typeid(RttiDonorDerived) is a
+// __si_class_type_info and typeid(RttiDonorBase) a __class_type_info.
+// Do not move them into an anonymous namespace.
+struct RttiDonorBase { sal_Int32 dummy; };
+struct RttiDonorDerived : public RttiDonorBase { sal_Int32 dummy2; };
+
+// Itanium ABI object layouts (http://itanium-cxx-abi.github.io/cxx-abi/abi.html#rtti).
+// libc++abi does not publish __cxxabiv1::__class_type_info, and declaring a
+// look-alike class is not an option: it would get its own vtable, and
+// __class_type_info::can_catch() dynamic_casts the thrown type to the real
+// libc++abi class, so no typed handler would ever match.  We therefore build
+// raw storage in the ABI layout and install a borrowed, genuine vtable.
+struct RttiClassLayout   { void const * pVtable; sal_uIntPtr nName; };
+struct RttiSiClassLayout { void const * pVtable; sal_uIntPtr nName; void const * pBase; };
+
 extern "C" void *__cxa_allocate_exception(
     std::size_t thrown_size ) throw();
 extern "C" void __cxa_free_exception( void *thrown_exception ) throw();

@@ -29,6 +29,7 @@
 #endif
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include <dlfcn.h>
 #include <cxxabi.h>
@@ -85,6 +86,38 @@ Mutex & exceptionMapsMutex()
     return mutex;
 }
 
+// libc++ marks a type_info whose object is not unique across images by setting
+// the top bit of type_info::__type_name; comparison then falls back to strcmp
+// of the mangled name (see __non_unique_arm_rtti_bit_impl in <typeinfo>).  On
+// arm64 Darwin clang emits the typeinfo of every keyless class -- which is every
+// UNO exception -- hidden and therefore non-unique, so a synthesised object must
+// set the bit too, or std::type_info::operator== degenerates to an address
+// comparison and never matches the handler's real typeinfo.
+sal_uIntPtr const NON_UNIQUE_RTTI_BIT =
+    static_cast< sal_uIntPtr >(1) << (8 * sizeof (sal_uIntPtr) - 1);
+
+RttiSiClassLayout const * siDonor()
+{
+    return reinterpret_cast< RttiSiClassLayout const * >( &typeid(RttiDonorDerived) );
+}
+RttiClassLayout const * classDonor()
+{
+    return reinterpret_cast< RttiClassLayout const * >( &typeid(RttiDonorBase) );
+}
+
+// Refuse to synthesise unless the donors really have the layout we assume.
+bool rttiDonorsUsable()
+{
+    return sizeof (void *) == 8
+        && siDonor()->pBase == static_cast< void const * >( classDonor() );
+}
+
+// Mirror the platform's own convention rather than assuming it.
+bool rttiIsNonUnique()
+{
+    return (siDonor()->nName & NON_UNIQUE_RTTI_BIT) != 0;
+}
+
 }
 
 void dummy_can_throw_anything( char const * )
@@ -130,12 +163,35 @@ static OUString toUNOname( char const * p ) SAL_THROW( () )
 }
 
 //==================================================================================================
+static OString mangledRttiSymbol( OUString const & unoName ) SAL_THROW( () )
+{
+    OStringBuffer buf( 64 );
+    buf.append( RTL_CONSTASCII_STRINGPARAM("_ZTIN") );
+    sal_Int32 index = 0;
+    do
+    {
+        OUString token( unoName.getToken( 0, '.', index ) );
+        buf.append( token.getLength() );
+        OString c_token( OUStringToOString( token, RTL_TEXTENCODING_ASCII_US ) );
+        buf.append( c_token );
+    }
+    while (index >= 0);
+    buf.append( 'E' );
+    return buf.makeStringAndClear();
+}
+
+//==================================================================================================
 class RTTI
 {
     typedef hash_map< OUString, type_info *, OUStringHash > t_rtti_map;
 
     Mutex m_mutex;
 	t_rtti_map m_rttis;
+    t_rtti_map m_generatedRttis;
+
+    type_info * synthesiseRTTI(
+        OString const & rSymbolName,
+        typelib_CompoundTypeDescription * pTypeDescr ) SAL_THROW( () );
 
 public:
     RTTI() SAL_THROW( () );
@@ -157,62 +213,92 @@ RTTI::~RTTI() SAL_THROW( () )
 //__________________________________________________________________________________________________
 type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THROW( () )
 {
-    type_info * rtti;
-
     OUString const & unoName = *(OUString const *)&pTypeDescr->aBase.pTypeName;
 
+    // Recursive: synthesiseRTTI() re-enters getRTTI() for the base chain.
+    // osl::Mutex is a PTHREAD_MUTEX_RECURSIVE (sal/osl/unx/mutex.c), so this
+    // is safe.  Lock order against exceptionMapsMutex() is unchanged.
     MutexGuard guard( m_mutex );
 
     {
         MutexGuard observedGuard( exceptionMapsMutex() );
         ObservedRttiMap::const_iterator observed( observedRttis().find( unoName ) );
         if ( observed != observedRttis().end() )
-            return observed->second;
+            return observed->second;          // a real typeinfo always wins
     }
 
     t_rtti_map::const_iterator iFind( m_rttis.find( unoName ) );
-    if (iFind == m_rttis.end())
-    {
-        // RTTI symbol
-        OStringBuffer buf( 64 );
-        buf.append( RTL_CONSTASCII_STRINGPARAM("_ZTIN") );
-        sal_Int32 index = 0;
-        do
-        {
-            OUString token( unoName.getToken( 0, '.', index ) );
-            buf.append( token.getLength() );
-            OString c_token( OUStringToOString( token, RTL_TEXTENCODING_ASCII_US ) );
-            buf.append( c_token );
-        }
-        while (index >= 0);
-        buf.append( 'E' );
+    if (iFind != m_rttis.end())
+        return iFind->second;
 
-        OString symName( buf.makeStringAndClear() );
-        rtti = static_cast<std::type_info *>(dlsym( RTLD_DEFAULT, symName.getStr() ));
-
-        if (rtti)
-        {
-            m_rttis.insert( t_rtti_map::value_type( unoName, rtti ) );
-        }
-        else
-        {
-            // Unlike the gcc3_* bridges this one does NOT synthesise a
-            // __class_type_info when the lookup fails.  Hand-built type_info
-            // objects are not reliably matched by libc++abi's throw/catch
-            // machinery, so a miss is reported instead of silently producing an
-            // exception that no handler can catch.  Lookup relies on the
-            // typeinfo actually being exported: see the _ZTI*/_ZTS* entries in
-            // solenv/src/component.map and the typeinfo carve-out in
-            // solenv/bin/addsym-macosx.sh.
-            rtti = 0;
-        }
-    }
-    else
+    OString symName( mangledRttiSymbol( unoName ) );
+    type_info * rtti = static_cast<std::type_info *>(dlsym( RTLD_DEFAULT, symName.getStr() ));
+    if (rtti != 0)
     {
-        rtti = iFind->second;
+        m_rttis.insert( t_rtti_map::value_type( unoName, rtti ) );
+        return rtti;
     }
 
+    t_rtti_map::const_iterator iGen( m_generatedRttis.find( unoName ) );
+    if (iGen != m_generatedRttis.end())
+        return iGen->second;
+
+    // On arm64 Darwin, clang emits the typeinfo of every keyless class (which
+    // is every UNO exception) hidden, so the dlsym() lookup above can never
+    // succeed here -- see solenv/src/component.map for the full explanation.
+    // Synthesise one instead of degrading straight to a RuntimeException.
+    rtti = synthesiseRTTI( symName, pTypeDescr );
+    if (rtti != 0)
+        m_generatedRttis.insert( t_rtti_map::value_type( unoName, rtti ) );
     return rtti;
+}
+
+//__________________________________________________________________________________________________
+type_info * RTTI::synthesiseRTTI(
+    OString const & rSymbolName,
+    typelib_CompoundTypeDescription * pTypeDescr ) SAL_THROW( () )
+{
+    if (! rttiDonorsUsable())
+        return 0;                             // keep the loud RuntimeException fallback
+
+    type_info * pBaseRtti = 0;
+    if (pTypeDescr->pBaseTypeDescription != 0)
+    {
+        // The whole chain must resolve: libc++abi walks __base_type when matching
+        // a handler for a base class and would dereference a null link.
+        pBaseRtti = getRTTI(
+            (typelib_CompoundTypeDescription *) pTypeDescr->pBaseTypeDescription );
+        if (pBaseRtti == 0)
+            return 0;
+    }
+
+    // The mangled type name is the symbol name without its "_ZTI" prefix.
+    char * pName = strdup( rSymbolName.getStr() + 4 );
+    if (pName == 0)
+        return 0;
+    sal_uIntPtr nName = reinterpret_cast< sal_uIntPtr >( pName );
+    if (rttiIsNonUnique())
+        nName |= NON_UNIQUE_RTTI_BIT;
+
+    // Deliberately never freed; these live for the life of the process
+    // (the module already builds with -DLEAK_STATIC_DATA).
+    if (pBaseRtti != 0)
+    {
+        RttiSiClassLayout * p = static_cast< RttiSiClassLayout * >(
+            calloc( 1, sizeof (RttiSiClassLayout) ) );
+        if (p == 0) { free( pName ); return 0; }
+        p->pVtable = siDonor()->pVtable;
+        p->nName   = nName;
+        p->pBase   = pBaseRtti;
+        return reinterpret_cast< type_info * >( p );
+    }
+
+    RttiClassLayout * p = static_cast< RttiClassLayout * >(
+        calloc( 1, sizeof (RttiClassLayout) ) );
+    if (p == 0) { free( pName ); return 0; }
+    p->pVtable = classDonor()->pVtable;
+    p->nName   = nName;
+    return reinterpret_cast< type_info * >( p );
 }
 
 //--------------------------------------------------------------------------------------------------

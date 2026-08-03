@@ -25,10 +25,15 @@
 # "dynamic_cast" then fail to match.  Exporting them restores the one-definition
 # behaviour that libraries without a version script already have.
 #
-# The macOS/arm64 C++-UNO bridge additionally depends on this: it resolves
-# exception typeinfo with dlsym() rather than synthesising it, so an unexported
-# _ZTI symbol degrades a UNO exception into a RuntimeException.  See
-# bridges/source/cpp_uno/s5abi_macosx_aarch64/except.cxx (RTTI::getRTTI) and
+# Exporting is also the right intent on macOS/arm64, where the C++-UNO bridge
+# resolves exception typeinfo with dlsym() first and falls back to synthesis
+# only if that fails.  In practice it always falls back there: clang emits the
+# typeinfo of every keyless class (which is every UNO exception) as hidden on
+# arm64 Darwin regardless of any version script or export list, so these _ZTI*
+# entries do not reach dlsym() on that platform.  Keep them anyway -- they are
+# correct and load-bearing for every other target -- and see
+# bridges/source/cpp_uno/s5abi_macosx_aarch64/except.cxx (RTTI::getRTTI and
+# RTTI::synthesiseRTTI) for how arm64 copes without them, and
 # solenv/bin/addsym-macosx.sh.
 UDK_3_0_0 {
     global:
