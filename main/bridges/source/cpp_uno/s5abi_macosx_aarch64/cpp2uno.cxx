@@ -69,12 +69,13 @@ static typelib_TypeClass cpp2uno_call(
 	const typelib_TypeDescription * pMemberTypeDescr,
 	typelib_TypeDescriptionReference * pReturnTypeRef, // 0 indicates void return
 	sal_Int32 nParams, typelib_MethodParameter * pParams,
-	void ** gpreg, void ** fpreg, void ** ovrflw,
+	void ** gpreg, void ** fpreg, unsigned char * ovrflw,
 	void * pIndirectReturn, // AArch64 x8 indirect-result pointer (0 if none)
 	sal_uInt64 * pRegisterReturn /* space for register return */ )
 {
 	unsigned int nr_gpr = 0; //number of gpr registers used
 	unsigned int nr_fpr = 0; //number of fpr registers used
+	sal_uInt32 stackOffset = 0;
 
 	// return
 	typelib_TypeDescription * pReturnTypeDescr = 0;
@@ -137,7 +138,12 @@ static typelib_TypeClass cpp2uno_call(
 					nr_fpr++;
 				}
 				else
-					pCppArgs[nPos] = pUnoArgs[nPos] = ovrflw++;
+				{
+					stackOffset = aarch64::align_stack_offset(
+						stackOffset, rParam.pTypeRef );
+					pCppArgs[nPos] = pUnoArgs[nPos] = ovrflw + stackOffset;
+					stackOffset += aarch64::stack_size( rParam.pTypeRef );
+				}
 			}
 			else if ( nUsedGPR == 1 )
 			{
@@ -147,7 +153,12 @@ static typelib_TypeClass cpp2uno_call(
 					nr_gpr++;
 				}
 				else
-					pCppArgs[nPos] = pUnoArgs[nPos] = ovrflw++;
+				{
+					stackOffset = aarch64::align_stack_offset(
+						stackOffset, rParam.pTypeRef );
+					pCppArgs[nPos] = pUnoArgs[nPos] = ovrflw + stackOffset;
+					stackOffset += aarch64::stack_size( rParam.pTypeRef );
+				}
 			}
 		}
 		else // struct <= 16 bytes || ptr to complex value || ref
@@ -162,7 +173,13 @@ static typelib_TypeClass cpp2uno_call(
 				nr_gpr++;
 			}
 			else
-				pCppArgs[nPos] = pCppStack = *ovrflw++;
+			{
+				stackOffset = (stackOffset + sizeof(void *) - 1) &
+					~(sizeof(void *) - 1);
+				pCppArgs[nPos] = pCppStack =
+					*reinterpret_cast<void **>( ovrflw + stackOffset );
+				stackOffset += sizeof(void *);
+			}
 
 			if (! rParam.bIn) // is pure out
 			{
@@ -264,7 +281,7 @@ static typelib_TypeClass cpp2uno_call(
 //==================================================================================================
 extern "C" sal_uInt32 cpp_vtable_call(
 	sal_Int32 nFunctionIndex, sal_Int32 nVtableOffset,
-	void ** gpreg, void ** fpreg, void ** ovrflw,
+	void ** gpreg, void ** fpreg, unsigned char * ovrflw,
 	void * pIndirectReturn, // AArch64 x8 indirect-result pointer (0 if none)
 	sal_uInt64 * pRegisterReturn /* space for register return */ )
 {

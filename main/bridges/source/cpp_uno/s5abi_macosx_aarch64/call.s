@@ -32,8 +32,8 @@
 //     sal_uInt64  pIndirectRet,  // x1: value for x8 (indirect result ptr), 0 if none
 //     sal_uInt64 *pGPR,          // x2: 8 words  -> x0..x7
 //     double     *pFPR,          // x3: 8 doubles -> d0..d7
-//     sal_uInt64 *pStack,        // x4: overflow-arg words
-//     sal_uInt32  nStackWords,   // x5: number of 8-byte overflow words
+//     unsigned char *pStack,     // x4: packed overflow-argument bytes
+//     sal_uInt32  nStackBytes,   // x5: byte count
 //     sal_uInt64 *pGPRReturn,    // x6: [out] x0,x1
 //     double     *pFPRReturn);   // x7: [out] d0..d3 (HFA up to 4 elements)
 
@@ -51,6 +51,12 @@ _callVirtualFunction:
     .cfi_def_cfa x29, 64
     .cfi_offset x29, -16
     .cfi_offset x30, -8
+    .cfi_offset x19, -32
+    .cfi_offset x20, -24
+    .cfi_offset x21, -48
+    .cfi_offset x22, -40
+    .cfi_offset x23, -64
+    .cfi_offset x24, -56
 
     // stash inputs that must survive the call into callee-saved registers
     mov     x19, x0                     // pFunction
@@ -61,17 +67,16 @@ _callVirtualFunction:
     mov     x24, x1                     // x8 indirect-result value
 
     // allocate and copy the outgoing overflow stack arguments.
-    // bytes = ((nStackWords + 1) & ~1) * 8, to keep sp 16-byte aligned.
-    add     x9, x5, #1
-    bic     x9, x9, #1
-    lsl     x9, x9, #3
+    // Round the packed byte area up to preserve 16-byte SP alignment.
+    add     x9, x5, #15
+    bic     x9, x9, #15
     sub     sp, sp, x9
     mov     x10, #0
 Lcvf_copy:
     cmp     x10, x5
     b.ge    Lcvf_copied
-    ldr     x11, [x4, x10, lsl #3]
-    str     x11, [sp, x10, lsl #3]
+    ldrb    w11, [x4, x10]
+    strb    w11, [sp, x10]
     add     x10, x10, #1
     b       Lcvf_copy
 Lcvf_copied:
@@ -168,10 +173,24 @@ _privateSnippetExecutor:
     b.eq    Lpse_float
     cmp     w0, #11                     // typelib_TypeClass_DOUBLE
     b.eq    Lpse_float
-    // integer / pointer / <=16B aggregate: load both banks; caller reads the
-    // ones that matter for its return type.
+    cmp     w0, #3                      // typelib_TypeClass_BYTE
+    b.eq    Lpse_signed_byte
+    cmp     w0, #4                      // typelib_TypeClass_SHORT
+    b.eq    Lpse_signed_short
+    cmp     w0, #1                      // typelib_TypeClass_CHAR
+    b.eq    Lpse_unsigned_short
+    cmp     w0, #5                      // typelib_TypeClass_UNSIGNED_SHORT
+    b.eq    Lpse_unsigned_short
+    cmp     w0, #2                      // typelib_TypeClass_BOOLEAN
+    b.eq    Lpse_unsigned_byte
+    cmp     w0, #6                      // typelib_TypeClass_LONG
+    b.eq    Lpse_word
+    cmp     w0, #7                      // typelib_TypeClass_UNSIGNED_LONG
+    b.eq    Lpse_word
+    cmp     w0, #15                     // typelib_TypeClass_ENUM
+    b.eq    Lpse_word
+    // Integer / pointer / <=16B aggregate.
     ldp     x0, x1, [sp, #144]
-    ldp     d0, d1, [sp, #144]
     b       Lpse_done
 Lpse_float:
     ldr     d0, [sp, #144]
@@ -185,6 +204,21 @@ Lpse_hfa_float:
 Lpse_hfa_double:
     ldp     d0, d1, [sp, #144]
     ldp     d2, d3, [sp, #160]
+    b       Lpse_done
+Lpse_signed_byte:
+    ldrsb   w0, [sp, #144]
+    b       Lpse_done
+Lpse_unsigned_byte:
+    ldrb    w0, [sp, #144]
+    b       Lpse_done
+Lpse_signed_short:
+    ldrsh   w0, [sp, #144]
+    b       Lpse_done
+Lpse_unsigned_short:
+    ldrh    w0, [sp, #144]
+    b       Lpse_done
+Lpse_word:
+    ldr     w0, [sp, #144]
 Lpse_done:
     mov     sp, x29
     ldp     x29, x30, [sp], #176
