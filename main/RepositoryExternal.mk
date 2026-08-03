@@ -142,7 +142,14 @@ $(call gb_LinkTarget_set_include,$(1),\
 	$$(INCLUDE) \
 	$(LIBXML_CFLAGS) \
 )
-$(call gb_LinkTarget_add_libs,$(1),$(LIBXML_LIBS))
+
+# Some system libxml2 builds report -licuuc in their link flags because
+# libxml2 itself was built against ICU. That ICU dependency is already
+# satisfied inside libxml2's own dylib; forwarding -licuuc to consumers
+# makes them link this tree's bundled (OOO-layer) ICU directly, which
+# breaks URE-layer consumers on macOS (see macosx-change-install-names.pl,
+# which has no rule for a URE library depending on an OOO one).
+$(call gb_LinkTarget_add_libs,$(1),$(filter-out -licuuc,$(LIBXML_LIBS)))
 endef
 
 else # !SYSTEM_LIBXML

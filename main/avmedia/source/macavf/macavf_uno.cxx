@@ -21,6 +21,8 @@
 
 #include "macavf_manager.hxx"
 
+#include <cppuhelper/implementationentry.hxx>
+
 using namespace ::com::sun::star;
 
 // -------------------
