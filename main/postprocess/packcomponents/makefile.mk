@@ -315,7 +315,7 @@ my_components += \
     component/avmedia/source/macavf/avmediaMacAVF \
     component/fpicker/source/aqua/fps_aqua \
     component/lingucomponent/source/spellcheck/macosxspell/MacOSXSpell \
-    macab1 \
+    component/connectivity/source/drivers/macab/macab1 \
     macbe1
 .END
 
