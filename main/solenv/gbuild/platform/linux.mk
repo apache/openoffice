@@ -489,6 +489,9 @@ gb_Library_COMPONENTPREFIXES := \
     URELIB:vnd.sun.star.expand:\dURE_INTERNAL_LIB_DIR/ \
     NONE:vnd.sun.star.expand:\dOOO_INBUILD_SHAREDLIB_DIR/ \
 
+# Configuration
+gb_CFGEXPRECOMMAND := LD_LIBRARY_PATH=$(OUTDIR)/lib
+
 # UnoApiTarget
 
 gb_UnoApiTarget_IDLCTARGET := $(OUTDIR)/bin/idlc

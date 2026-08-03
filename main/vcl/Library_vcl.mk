@@ -514,9 +514,16 @@ endif
 
 ifeq ($(OS),WNT)
 ifeq ($(USE_MINGW),)
+ifeq ($(CPUNAME),INTEL)
 $(eval $(call gb_Library_add_ldflags,vcl,\
 	/ENTRY:LibMain@12 \
 ))
+endif
+ifeq ($(CPUNAME),X86-64)
+$(eval $(call gb_Library_add_ldflags,vcl,\
+	/ENTRY:LibMain@16 \
+))
+endif
 endif
 $(eval $(call gb_Library_add_linked_libs,vcl,\
 	advapi32 \
@@ -529,6 +536,7 @@ $(eval $(call gb_Library_add_linked_libs,vcl,\
 	shell32 \
 	user32 \
 	uuid \
+	version \
 	winspool \
 	$(gb_STDLIBS) \
 ))

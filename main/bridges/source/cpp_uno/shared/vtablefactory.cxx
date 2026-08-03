@@ -53,6 +53,9 @@
 #include <unistd.h>
 #include <string.h>
 #include <sys/mman.h>
+#if defined MACOSX && defined AARCH64
+#include <pthread.h>
+#endif
 #elif defined SAL_W32
 #define WIN32_LEAN_AND_MEAN
 #ifdef _MSC_VER
@@ -73,6 +76,27 @@
 using bridges::cpp_uno::shared::VtableFactory;
 
 namespace {
+
+#if defined MACOSX && defined AARCH64
+class JitWriteGuard
+{
+public:
+    JitWriteGuard(): m_active(pthread_jit_write_protect_supported_np() != 0)
+    {
+        if (m_active)
+            pthread_jit_write_protect_np(0);
+    }
+
+    ~JitWriteGuard()
+    {
+        if (m_active)
+            pthread_jit_write_protect_np(1);
+    }
+
+private:
+    bool m_active;
+};
+#endif
 
 extern "C" void * SAL_CALL allocExec(rtl_arena_type *, sal_Size * size) {
     sal_Size pagesize;
@@ -96,17 +120,25 @@ extern "C" void * SAL_CALL allocExec(rtl_arena_type *, sal_Size * size) {
     sal_Size n = (*size + (pagesize - 1)) & ~(pagesize - 1);
     void * p;
 #if defined SAL_UNX
+#if defined MACOSX && defined AARCH64
+    p = mmap(
+        0, n, PROT_READ | PROT_WRITE | PROT_EXEC,
+        MAP_PRIVATE | MAP_ANON | MAP_JIT, -1, 0);
+#else
     p = mmap(
         0, n, PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANON, -1,
         0);
+#endif
     if (p == MAP_FAILED) {
         p = 0;
     }
+#if !defined MACOSX || !defined AARCH64
 	else if (mprotect (static_cast<char*>(p), n, PROT_READ | PROT_WRITE | PROT_EXEC) == -1)
 	{
 		munmap (static_cast<char*>(p), n);
 		p = 0;
 	}
+#endif
 #elif defined SAL_W32
     p = VirtualAlloc(0, n, MEM_COMMIT, PAGE_EXECUTE_READWRITE);
 #elif defined(SAL_OS2)
@@ -342,6 +374,9 @@ void VtableFactory::createVtables(
             throw std::bad_alloc();
         }
         try {
+#if defined MACOSX && defined AARCH64
+            JitWriteGuard jitWriteGuard;
+#endif
             Slot * slots = initializeBlock(block.start, slotCount);
             unsigned char * codeBegin =
                 reinterpret_cast< unsigned char * >(slots);

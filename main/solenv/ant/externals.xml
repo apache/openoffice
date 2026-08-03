@@ -62,6 +62,12 @@
         internal-filename="commons-httpclient-3.1.jar"/>
 
     <define-external
+        name="hsqldb"
+        system-test="${SYSTEM_HSQLDB}"
+        system-path="${HSQLDB_JAR}"
+        internal-filename="hsqldb.jar"/>
+
+    <define-external
         name="commons-lang"
         system-test="${SYSTEM_APACHE_COMMONS}"
         system-path="${COMMONS_LANG_JAR}"

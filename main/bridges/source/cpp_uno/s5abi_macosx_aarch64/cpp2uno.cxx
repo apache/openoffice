@@ -27,6 +27,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <hash_map>
+#include <libkern/OSCacheControl.h>
 
 #include <rtl/alloc.h>
 #include <osl/mutex.hxx>
@@ -538,6 +539,8 @@ unsigned char * bridges::cpp_uno::shared::VtableFactory::addLocalFunctions(
 
 //==================================================================================================
 void bridges::cpp_uno::shared::VtableFactory::flushCode(
-	unsigned char const *, unsigned char const * )
+	unsigned char const * begin, unsigned char const * end )
 {
+	sys_icache_invalidate(
+		const_cast<unsigned char *>(begin), end - begin );
 }

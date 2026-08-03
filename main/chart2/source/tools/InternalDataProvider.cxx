@@ -23,7 +23,7 @@
 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
-#include "precompiled_chart2.hxx"
+#include "precompiled_charttools.hxx"
 #include <rtl/math.hxx>
 
 #include <valarray>

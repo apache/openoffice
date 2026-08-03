@@ -22,7 +22,7 @@
 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
-#include "precompiled_connectivity.hxx"
+#include "precompiled_dbtools.hxx"
 #ifndef _CONNECTIVITY_CONNECTIONWRAPPER_HXX_
 #include "connectivity/ConnectionWrapper.hxx"
 #endif

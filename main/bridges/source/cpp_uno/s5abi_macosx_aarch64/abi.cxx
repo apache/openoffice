@@ -212,6 +212,21 @@ bool aarch64::examine_argument( typelib_TypeDescriptionReference *pTypeRef, bool
 
 bool aarch64::return_in_hidden_param( typelib_TypeDescriptionReference *pTypeRef )
 {
+    switch ( pTypeRef->eTypeClass )
+    {
+        case typelib_TypeClass_STRING:
+        case typelib_TypeClass_TYPE:
+        case typelib_TypeClass_ANY:
+        case typelib_TypeClass_TYPEDEF:
+        case typelib_TypeClass_SEQUENCE:
+        case typelib_TypeClass_INTERFACE:
+            // These are C++ wrapper objects, not pointer-sized scalar values.
+            // Apple's arm64 C++ ABI returns them through the buffer in x8.
+            return true;
+        default:
+            break;
+    }
+
     int g, s;
     // Returned in registers iff examine_argument() says it fits; otherwise the
     // caller must pass an indirect-result buffer in x8.

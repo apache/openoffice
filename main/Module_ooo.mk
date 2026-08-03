@@ -69,6 +69,7 @@ $(eval $(call gb_Module_add_moduledirs,ooo,\
 	linguistic \
 	o3tl \
 	offapi \
+	officecfg \
 	oovbaapi \
 	oox \
 	package \

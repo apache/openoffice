@@ -48,11 +48,6 @@ my_components = \
     abp \
     basprov \
     bib \
-    calc \
-    chartcontroller \
-    chartmodel \
-    charttools \
-    chartview \
     component/UnoControls/util/ctl \
     component/animations/source/animcore/animcore \
     component/avmedia/util/avmedia \
@@ -62,8 +57,20 @@ my_components = \
     component/canvas/source/factory/canvasfactory \
     component/canvas/source/simplecanvas/simplecanvas \
     component/canvas/source/vcl/vclcanvas \
+    component/chart2/source/controller/chartcontroller \
+    component/chart2/source/model/chartmodel \
+    component/chart2/source/tools/charttools \
+    component/chart2/source/view/chartview \
     component/comphelper/util/comphelp \
     component/configmgr/source/configmgr \
+    component/connectivity/source/cpool/dbpool2 \
+    component/connectivity/source/dbtools/dbtools \
+    component/connectivity/source/drivers/calc/calc \
+    component/connectivity/source/drivers/dbase/dbase \
+    component/connectivity/source/drivers/flat/flat \
+    component/connectivity/source/drivers/mysql/mysql \
+    component/connectivity/source/drivers/odbc/odbc \
+    component/connectivity/source/manager/sdbc2 \
     component/cui/util/cui \
     component/drawinglayer/drawinglayer \
 	component/dbaccess/source/ext/adabas/adabasui \
@@ -151,24 +158,18 @@ my_components = \
     component/xmloff/source/transform/xof \
     component/xmloff/util/xo \
     component/xmlscript/util/xcr \
-    dbase \
     dbp \
-    dbpool2 \
-    dbtools \
     deployment \
     deploymentgui \
     dlgprov \
     filterconfig1 \
     flash \
-    flat \
     frm \
     localebe1 \
     log \
 	mailmerge \
     migrationoo2 \
     msfilter \
-    mysql \
-    odbc \
     offacc \
     oooimprovecore \
     pcr \
@@ -180,7 +181,6 @@ my_components = \
     res \
     scn \
     scriptframe \
-    sdbc2 \
     spl \
     stringresource \
     svgfilter \
@@ -283,9 +283,9 @@ my_components += \
     component/wizards/com/sun/star/wizards/agenda/agenda \
     component/wizards/com/sun/star/wizards/fax/fax \
     component/wizards/com/sun/star/wizards/form/form \
-    hsqldb \
-    jdbc \
-    postgresql \
+    component/connectivity/java/sdbc_jdbc/jdbc \
+    component/connectivity/java/sdbc_postgresql/postgresql \
+    component/connectivity/source/drivers/hsqldb/hsqldb \
     component/wizards/com/sun/star/wizards/letter/letter \
     component/wizards/com/sun/star/wizards/query/query \
     component/wizards/com/sun/star/wizards/report/report \
@@ -321,9 +321,9 @@ my_components += \
 
 .IF "$(OS)" == "WNT"
 my_components += \
-    ado \
     component/accessibility/java/java_uno_accessbridge/java_uno_accessbridge \
     component/avmedia/source/win/avmediawin \
+    component/connectivity/source/drivers/ado/ado \
     component/dtrans/source/generic/dtrans \
     component/dtrans/util/dnd \
     component/dtrans/util/ftransl \
@@ -358,9 +358,9 @@ my_components += \
 my_components += component/canvas/source/directx/directx5canvas
 .END
 
-.IF "$(OS)" == "LINUX" || "$(OS)" == "NETBSD" || \
-    ("$(OS)" == "SOLARIS" && "$(CPU)" == "S") || "$(OS)" == "WNT"
-my_components += adabas
+.IF "$(OS)" == "WNT" || "$(GUIBASE)" == "aqua" ||\
+    "$(GUIBASE)" == "unx"
+my_components += component/connectivity/source/drivers/adabas/adabas
 .END
 
 .IF "$(OS)" != "MACOSX" && "$(OS)" != "WNT" && "$(OS)" != "OS2"
