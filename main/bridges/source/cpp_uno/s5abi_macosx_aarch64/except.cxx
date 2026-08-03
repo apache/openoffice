@@ -60,12 +60,25 @@ namespace CPPU_CURRENT_NAMESPACE
 
 namespace {
 
+typedef hash_map< void *, typelib_TypeDescription * > ThrownTypes;
 typedef hash_map< OUString, type_info *, OUStringHash > ObservedRttiMap;
+
+ThrownTypes & thrownTypes()
+{
+    static ThrownTypes types;
+    return types;
+}
 
 ObservedRttiMap & observedRttis()
 {
     static ObservedRttiMap map;
     return map;
+}
+
+Mutex & observedRttisMutex()
+{
+    static Mutex mutex;
+    return mutex;
 }
 
 }
@@ -119,9 +132,6 @@ class RTTI
 
     Mutex m_mutex;
 	t_rtti_map m_rttis;
-    t_rtti_map m_generatedRttis;
-
-    void * m_hApp;
 
 public:
     RTTI() SAL_THROW( () );
@@ -132,14 +142,12 @@ public:
 
 //__________________________________________________________________________________________________
 RTTI::RTTI() SAL_THROW( () )
-    : m_hApp( dlopen( 0, RTLD_LAZY ) )
 {
 }
 
 //__________________________________________________________________________________________________
 RTTI::~RTTI() SAL_THROW( () )
 {
-    dlclose( m_hApp );
 }
 
 //__________________________________________________________________________________________________
@@ -151,9 +159,12 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
 
     MutexGuard guard( m_mutex );
 
-    ObservedRttiMap::const_iterator observed( observedRttis().find( unoName ) );
-    if ( observed != observedRttis().end() )
-        return observed->second;
+    {
+        MutexGuard observedGuard( observedRttisMutex() );
+        ObservedRttiMap::const_iterator observed( observedRttis().find( unoName ) );
+        if ( observed != observedRttis().end() )
+            return observed->second;
+    }
 
     t_rtti_map::const_iterator iFind( m_rttis.find( unoName ) );
     if (iFind == m_rttis.end())
@@ -177,50 +188,10 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
 
         if (rtti)
         {
-            pair< t_rtti_map::iterator, bool > insertion(
-                m_rttis.insert( t_rtti_map::value_type( unoName, rtti ) ) );
-            OSL_ENSURE( insertion.second, "### inserting new rtti failed?!" );
+            m_rttis.insert( t_rtti_map::value_type( unoName, rtti ) );
         }
         else
-        {
-            // try to lookup the symbol in the generated rtti map
-            t_rtti_map::const_iterator iFind2( m_generatedRttis.find( unoName ) );
-            if (iFind2 == m_generatedRttis.end())
-            {
-                // we must generate it !
-                // symbol and rtti-name is nearly identical,
-                // the symbol is prefixed with _ZTI
-                char const * rttiName = symName.getStr() +4;
-#if OSL_DEBUG_LEVEL > 1
-                fprintf( stderr,"generated rtti for %s\n", rttiName );
-                const OString aCUnoName = OUStringToOString( unoName, RTL_TEXTENCODING_UTF8);
-                OSL_TRACE( "TypeInfo for \"%s\" not found and cannot be generated.\n", aCUnoName.getStr());
-#endif
-#ifndef AOO_BYPASS_RTTI
-                if (pTypeDescr->pBaseTypeDescription)
-                {
-                    // ensure availability of base
-                    type_info * base_rtti = getRTTI(
-                        (typelib_CompoundTypeDescription *)pTypeDescr->pBaseTypeDescription );
-                    rtti = new __si_class_type_info(
-                        strdup( rttiName ), (__class_type_info *)base_rtti );
-                }
-                else
-                {
-                    // this class has no base class
-                    rtti = new __class_type_info( strdup( rttiName ) );
-                }
-#else
-                rtti = NULL;
-#endif
-                bool bOK = m_generatedRttis.insert( t_rtti_map::value_type( unoName, rtti )).second;
-                OSL_ENSURE( bOK, "### inserting new generated rtti failed?!" );
-            }
-            else // taking already generated rtti
-            {
-                rtti = iFind2->second;
-            }
-        }
+            rtti = 0;
     }
     else
     {
@@ -233,25 +204,21 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
 //--------------------------------------------------------------------------------------------------
 static void deleteException( void * pExc )
 {
-    __cxa_exception const * header = static_cast<__cxa_exception const *>(pExc) - 1;
-    /* More __cxa_exception mumbo-jumbo. See share.hxx and fillUnoException() below */
-    if (header->exceptionDestructor != &deleteException)
-    {
-        header = reinterpret_cast<__cxa_exception const *>(reinterpret_cast<char const *>(header) - 8);
-    }
-    if( !header->exceptionType)
-    {
-        return; // NOTE: leak for now
-    }
     typelib_TypeDescription * pTD = 0;
-    OUString unoName( toUNOname( header->exceptionType->name() ) );
-    ::typelib_typedescription_getByName( &pTD, unoName.pData );
-    OSL_ENSURE( pTD, "### unknown exception type! leaving out destruction => leaking!!!" );
-    if (pTD)
     {
-		::uno_destructData( pExc, pTD, cpp_release );
-		::typelib_typedescription_release( pTD );
-	}
+        MutexGuard guard( observedRttisMutex() );
+        ThrownTypes::iterator i = thrownTypes().find( pExc );
+        if ( i != thrownTypes().end() )
+        {
+            pTD = i->second;
+            thrownTypes().erase( i );
+        }
+    }
+    if ( pTD )
+    {
+        ::uno_destructData( pExc, pTD, cpp_release );
+        ::typelib_typedescription_release( pTD );
+    }
 }
 
 //==================================================================================================
@@ -266,6 +233,8 @@ void raiseException( uno_Any * pUnoExc, uno_Mapping * pUno2Cpp )
 #endif
     void * pCppExc;
     type_info * rtti;
+    OUString typeName(
+        *reinterpret_cast< OUString const * >( &pUnoExc->pType->pTypeName ) );
 
     {
     // construct cpp exception object
@@ -283,93 +252,30 @@ void raiseException( uno_Any * pUnoExc, uno_Mapping * pUno2Cpp )
 	pCppExc = __cxa_allocate_exception( pTypeDescr->nSize );
 	::uno_copyAndConvertData( pCppExc, pUnoExc->pData, pTypeDescr, pUno2Cpp );
 
-	// destruct uno exception
-	::uno_any_destruct( pUnoExc, 0 );
-    // avoiding locked counts
-    static RTTI * s_rtti = 0;
-    if (! s_rtti)
-    {
-        MutexGuard guard( Mutex::getGlobalMutex() );
-        if (! s_rtti)
-        {
-#ifdef LEAK_STATIC_DATA
-            s_rtti = new RTTI();
-#else
-            static RTTI rtti_data;
-            s_rtti = &rtti_data;
-#endif
-        }
-    }
-	rtti = (type_info *)s_rtti->getRTTI( (typelib_CompoundTypeDescription *) pTypeDescr );
-    TYPELIB_DANGER_RELEASE( pTypeDescr );
+	static RTTI rtti_data;
+	rtti = rtti_data.getRTTI(
+		(typelib_CompoundTypeDescription *) pTypeDescr );
     OSL_ENSURE( rtti, "### no rtti for throwing exception!" );
     if (! rtti)
     {
         throw RuntimeException(
             OUString( RTL_CONSTASCII_USTRINGPARAM("no rtti for type ") ) +
-            *reinterpret_cast< OUString const * >( &pUnoExc->pType->pTypeName ),
+            typeName,
             Reference< XInterface >() );
     }
+
+    {
+        MutexGuard guard( Mutex::getGlobalMutex() );
+        typelib_typedescription_acquire( pTypeDescr );
+        thrownTypes()[pCppExc] = pTypeDescr;
+    }
+    TYPELIB_DANGER_RELEASE( pTypeDescr );
+
+	// The C++ payload and its retained type description now own the value.
+	::uno_any_destruct( pUnoExc, 0 );
     }
 
 	__cxa_throw( pCppExc, rtti, deleteException );
-}
-
-//==================================================================================================
-void fillUnoException( __cxa_exception * header, uno_Any * pUnoExc, uno_Mapping * pCpp2Uno )
-{
-    if (! header)
-    {
-        RuntimeException aRE(
-            OUString( RTL_CONSTASCII_USTRINGPARAM("no exception header!") ),
-            Reference< XInterface >() );
-        Type const & rType = ::getCppuType( &aRE );
-        uno_type_any_constructAndConvert( pUnoExc, &aRE, rType.getTypeLibType(), pCpp2Uno );
-#if OSL_DEBUG_LEVEL > 0
-        OString cstr( OUStringToOString( aRE.Message, RTL_TEXTENCODING_ASCII_US ) );
-        OSL_ENSURE( 0, cstr.getStr() );
-#endif
-        return;
-    }
-
-    /*
-     * Handle the case where we are built on llvm 10 (or later) but are running
-     * on an earlier version (eg, community builds). In this situation the
-     * reserved ptr doesn't exist in the struct returned and so the offsets
-     * that header uses are wrong. This assumes that reserved isn't used
-     * and that referenceCount is always >0 in the cases we handle.
-     * See share.hxx for the definition of __cxa_exception
-     */
-    if (*reinterpret_cast<void **>(header) == 0)
-    {
-        header = reinterpret_cast<__cxa_exception *>(reinterpret_cast<char *>(header) + 8);
-    }
-
-	typelib_TypeDescription * pExcTypeDescr = 0;
-    OUString unoName( toUNOname( header->exceptionType->name() ) );
-#if OSL_DEBUG_LEVEL > 1
-    OString cstr_unoName( OUStringToOString( unoName, RTL_TEXTENCODING_ASCII_US ) );
-    fprintf( stderr, "> c++ exception occurred: %s\n", cstr_unoName.getStr() );
-#endif
-	typelib_typedescription_getByName( &pExcTypeDescr, unoName.pData );
-    if (0 == pExcTypeDescr)
-    {
-        RuntimeException aRE(
-            OUString( RTL_CONSTASCII_USTRINGPARAM("exception type not found: ") ) + unoName,
-            Reference< XInterface >() );
-        Type const & rType = ::getCppuType( &aRE );
-        uno_type_any_constructAndConvert( pUnoExc, &aRE, rType.getTypeLibType(), pCpp2Uno );
-#if OSL_DEBUG_LEVEL > 0
-        OString cstr( OUStringToOString( aRE.Message, RTL_TEXTENCODING_ASCII_US ) );
-        OSL_ENSURE( 0, cstr.getStr() );
-#endif
-    }
-    else
-    {
-        // construct uno exception any
-        uno_any_constructAndConvert( pUnoExc, header->adjustedPtr, pExcTypeDescr, pCpp2Uno );
-        typelib_typedescription_release( pExcTypeDescr );
-    }
 }
 
 void fillUnoException(

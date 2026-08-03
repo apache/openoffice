@@ -49,6 +49,7 @@
 #include "bridges/cpp_uno/shared/types.hxx"
 
 #include <rtl/ustring.hxx>
+#include <string.h>
 
 using namespace aarch64;
 
@@ -134,6 +135,14 @@ bool collectHfa( typelib_TypeDescriptionReference *pTypeRef, HfaKind &rKind, int
 
             for ( sal_Int32 i = 0; bOk && i < pComp->nMembers; ++i )
                 bOk = collectHfa( pComp->ppTypeRefs[i], rKind, rCount );
+
+            if ( bOk )
+            {
+                sal_Int32 elementSize = rKind == HFA_FLOAT ? 4 : 8;
+                bOk = pTypeDescr->nSize == rCount * elementSize;
+                for ( sal_Int32 i = 0; bOk && i < pComp->nMembers; ++i )
+                    bOk = pComp->pMemberOffsets[i] % elementSize == 0;
+            }
 
             TYPELIB_DANGER_RELEASE( pTypeDescr );
             return bOk;
@@ -316,9 +325,32 @@ void aarch64::fill_struct( typelib_TypeDescriptionReference *pTypeRef, const sal
     }
     else
     {
-        // Non-HFA aggregate <= 16 bytes: raw copy of the 1-2 GPRs.
-        sal_uInt64 *pDest = reinterpret_cast<sal_uInt64 *>( pStruct );
-        for ( int i = 0; i < nUsedGPR; ++i )
-            pDest[i] = pGPR[i];
+        typelib_TypeDescription * pTypeDescr = 0;
+        TYPELIB_DANGER_GET( &pTypeDescr, pTypeRef );
+        // The registers contain up to 16 bytes, but the destination has the
+        // aggregate's exact size and need not be 64-bit aligned.
+        memcpy( pStruct, pGPR, pTypeDescr->nSize );
+        TYPELIB_DANGER_RELEASE( pTypeDescr );
     }
+}
+
+sal_uInt32 aarch64::align_stack_offset(
+    sal_uInt32 offset, typelib_TypeDescriptionReference *pTypeRef )
+{
+    typelib_TypeDescription * pTypeDescr = 0;
+    TYPELIB_DANGER_GET( &pTypeDescr, pTypeRef );
+    sal_uInt32 alignment = pTypeDescr->nAlignment;
+    TYPELIB_DANGER_RELEASE( pTypeDescr );
+    if ( alignment == 0 )
+        alignment = 1;
+    return (offset + alignment - 1) & ~(alignment - 1);
+}
+
+sal_uInt32 aarch64::stack_size( typelib_TypeDescriptionReference *pTypeRef )
+{
+    typelib_TypeDescription * pTypeDescr = 0;
+    TYPELIB_DANGER_GET( &pTypeDescr, pTypeRef );
+    sal_uInt32 size = pTypeDescr->nSize;
+    TYPELIB_DANGER_RELEASE( pTypeDescr );
+    return size;
 }

@@ -352,12 +352,18 @@ void VtableFactory::freeBlock(Block const & block) const {
 #else
 bool VtableFactory::createBlock(Block &block, sal_Int32 slotCount) const
 {
+#if defined MACOSX && defined AARCH64
+    JitWriteGuard jitWriteGuard;
+#endif
     block.size = getBlockSize(slotCount);
     block.start = rtl_arena_alloc(m_arena, &block.size);
     return block.start != 0;
 }
 
 void VtableFactory::freeBlock(Block const & block) const {
+#if defined MACOSX && defined AARCH64
+    JitWriteGuard jitWriteGuard;
+#endif
     rtl_arena_free(m_arena, block.start, block.size);
 }
 #endif

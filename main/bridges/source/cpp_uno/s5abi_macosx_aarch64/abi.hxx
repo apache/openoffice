@@ -90,6 +90,11 @@ sal_uInt32 get_return_kind( typelib_TypeDescriptionReference *pTypeRef );
 */
 void fill_struct( typelib_TypeDescriptionReference *pTypeRef, const sal_uInt64* pGPR, const double* pFPR, void *pStruct );
 
+sal_uInt32 align_stack_offset(
+    sal_uInt32 offset, typelib_TypeDescriptionReference *pTypeRef );
+
+sal_uInt32 stack_size( typelib_TypeDescriptionReference *pTypeRef );
+
 } // namespace aarch64
 
 #endif // _BRIDGES_CPP_UNO_AARCH64_ABI_HXX_
