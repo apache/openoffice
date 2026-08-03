@@ -82,9 +82,10 @@ static void callVirtualMethod(void * pThis, sal_uInt32 nVtableIndex,
         fprintf( stderr, "\nFPR's (%d): ", nFPR );
         for ( unsigned int i = 0; i < nFPR; ++i )
             fprintf( stderr, "%f, ", pFPR[i] );
-        fprintf( stderr, "\nStack (%d): ", nStack );
+        // The overflow area is a packed byte image, not an array of words.
+        fprintf( stderr, "\nStack (%d bytes): ", nStack );
         for ( unsigned int i = 0; i < nStack; ++i )
-            fprintf( stderr, "0x%lx, ", pStack[i] );
+            fprintf( stderr, "%02x ", pStack[i] );
         fprintf( stderr, "\n" );
     }
 #endif

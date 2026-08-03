@@ -162,7 +162,7 @@ _privateSnippetExecutor:
     add     x3, sp, #80                 // fpreg
     mov     x4, x17                     // ovrflw
     mov     x5, x8                      // pIndirectReturn (x8 indirect-result reg)
-    add     x6, sp, #144                // pRegisterReturn (16-byte buffer)
+    add     x6, sp, #144                // pRegisterReturn (32-byte buffer)
     bl      _cpp_vtable_call
 
     cmp     w0, #0x100                   // RETURN_KIND_HFA_FLOAT

@@ -75,7 +75,11 @@ ObservedRttiMap & observedRttis()
     return map;
 }
 
-Mutex & observedRttisMutex()
+// Guards BOTH thrownTypes() and observedRttis().  Every access to either map
+// must hold this one mutex; they are plain hash_maps, so an insertion racing a
+// find or erase is undefined behaviour.  RTTI::m_mutex may be held while
+// acquiring this one (see RTTI::getRTTI), never the other way round.
+Mutex & exceptionMapsMutex()
 {
     static Mutex mutex;
     return mutex;
@@ -160,7 +164,7 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
     MutexGuard guard( m_mutex );
 
     {
-        MutexGuard observedGuard( observedRttisMutex() );
+        MutexGuard observedGuard( exceptionMapsMutex() );
         ObservedRttiMap::const_iterator observed( observedRttis().find( unoName ) );
         if ( observed != observedRttis().end() )
             return observed->second;
@@ -191,7 +195,17 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
             m_rttis.insert( t_rtti_map::value_type( unoName, rtti ) );
         }
         else
+        {
+            // Unlike the gcc3_* bridges this one does NOT synthesise a
+            // __class_type_info when the lookup fails.  Hand-built type_info
+            // objects are not reliably matched by libc++abi's throw/catch
+            // machinery, so a miss is reported instead of silently producing an
+            // exception that no handler can catch.  Lookup relies on the
+            // typeinfo actually being exported: see the _ZTI*/_ZTS* entries in
+            // solenv/src/component.map and the typeinfo carve-out in
+            // solenv/bin/addsym-macosx.sh.
             rtti = 0;
+        }
     }
     else
     {
@@ -206,7 +220,7 @@ static void deleteException( void * pExc )
 {
     typelib_TypeDescription * pTD = 0;
     {
-        MutexGuard guard( observedRttisMutex() );
+        MutexGuard guard( exceptionMapsMutex() );
         ThrownTypes::iterator i = thrownTypes().find( pExc );
         if ( i != thrownTypes().end() )
         {
@@ -236,6 +250,17 @@ void raiseException( uno_Any * pUnoExc, uno_Mapping * pUno2Cpp )
     OUString typeName(
         *reinterpret_cast< OUString const * >( &pUnoExc->pType->pTypeName ) );
 
+    // Every UNO exception derives from com.sun.star.uno.Exception, whose first
+    // member is the Message string.  Keep a copy: if the throw below cannot be
+    // completed we substitute a RuntimeException, and without this the original
+    // diagnostic would be lost silently.
+    OUString message;
+    if ( pUnoExc->pData != 0 &&
+         *reinterpret_cast< rtl_uString * const * >( pUnoExc->pData ) != 0 )
+    {
+        message = *reinterpret_cast< OUString const * >( pUnoExc->pData );
+    }
+
     {
     // construct cpp exception object
 	typelib_TypeDescription * pTypeDescr = 0;
@@ -243,9 +268,13 @@ void raiseException( uno_Any * pUnoExc, uno_Mapping * pUno2Cpp )
     OSL_ASSERT( pTypeDescr );
     if (! pTypeDescr)
     {
+        // NOTE: pUnoExc is deliberately left alone here.  Destructing an any
+        // whose type description cannot be resolved is not safe, so this path
+        // leaks it rather than risking a null dereference.  It only fires if
+        // the type system has already lost the type being thrown.
         throw RuntimeException(
             OUString( RTL_CONSTASCII_USTRINGPARAM("cannot get typedescription for type ") ) +
-            *reinterpret_cast< OUString const * >( &pUnoExc->pType->pTypeName ),
+            typeName + OUString( RTL_CONSTASCII_USTRINGPARAM(": ") ) + message,
             Reference< XInterface >() );
     }
 
@@ -258,14 +287,22 @@ void raiseException( uno_Any * pUnoExc, uno_Mapping * pUno2Cpp )
     OSL_ENSURE( rtti, "### no rtti for throwing exception!" );
     if (! rtti)
     {
+        // Undo everything done above: the payload was constructed into the
+        // __cxa buffer, so it has to be destructed before the buffer is
+        // released, and raiseException still owes its caller the destruction
+        // of the incoming any.
+        ::uno_destructData( pCppExc, pTypeDescr, cpp_release );
+        __cxa_free_exception( pCppExc );
+        TYPELIB_DANGER_RELEASE( pTypeDescr );
+        ::uno_any_destruct( pUnoExc, 0 );
         throw RuntimeException(
             OUString( RTL_CONSTASCII_USTRINGPARAM("no rtti for type ") ) +
-            typeName,
+            typeName + OUString( RTL_CONSTASCII_USTRINGPARAM(": ") ) + message,
             Reference< XInterface >() );
     }
 
     {
-        MutexGuard guard( Mutex::getGlobalMutex() );
+        MutexGuard guard( exceptionMapsMutex() );
         typelib_typedescription_acquire( pTypeDescr );
         thrownTypes()[pCppExc] = pTypeDescr;
     }
@@ -285,7 +322,7 @@ void fillUnoException(
     typelib_TypeDescription * pExcTypeDescr = 0;
     OUString unoName( toUNOname( type.name() ) );
     {
-        MutexGuard guard( Mutex::getGlobalMutex() );
+        MutexGuard guard( exceptionMapsMutex() );
         observedRttis()[unoName] = const_cast<std::type_info *>( &type );
     }
     typelib_typedescription_getByName( &pExcTypeDescr, unoName.pData );

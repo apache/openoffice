@@ -44,5 +44,10 @@ s#$#$#' | tr '\n' '|' | sed "s#|\$##" >$2
 # Please note that the awk expression expects to get the output of 'nm -gx'!
 # On Panther we have to filter out symbols with a value "1f" otherwise external
 # symbols will erroneously be added to the generated export symbols list file.
+# Typeinfo and typeinfo-name symbols (__ZTI*, __ZTS*) are exempt from that
+# filter: they have vague linkage and legitimately carry the same value, and
+# the macOS/arm64 C++-UNO bridge resolves exception typeinfo via dlsym(), so
+# dropping them would silently degrade UNO exceptions to RuntimeExceptions.
+# See solenv/src/component.map.
 awk -v SYMBOLSREGEXP="`cat $2`" '
 match ($6,SYMBOLSREGEXP) > 0 && $6 !~ /_GLOBAL_/ { if (($2 != 1) && (($2 != "1f") || ($6 ~ /^__ZT[IS]/))) print $6 }'

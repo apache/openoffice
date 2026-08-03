@@ -18,6 +18,18 @@
 #  under the License.
 #
 ###############################################################
+# NOTE: the _ZTI*/_ZTS* entries below are deliberately not platform-specific.
+# A version script that hides typeinfo and typeinfo-name symbols breaks C++
+# across library boundaries: type_info objects have vague linkage, so hiding
+# them gives each library its own copy and cross-library "catch" and
+# "dynamic_cast" then fail to match.  Exporting them restores the one-definition
+# behaviour that libraries without a version script already have.
+#
+# The macOS/arm64 C++-UNO bridge additionally depends on this: it resolves
+# exception typeinfo with dlsym() rather than synthesising it, so an unexported
+# _ZTI symbol degrades a UNO exception into a RuntimeException.  See
+# bridges/source/cpp_uno/s5abi_macosx_aarch64/except.cxx (RTTI::getRTTI) and
+# solenv/bin/addsym-macosx.sh.
 UDK_3_0_0 {
     global:
 		component_getImplementationEnvironment;

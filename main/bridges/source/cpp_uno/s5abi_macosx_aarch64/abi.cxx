@@ -124,6 +124,9 @@ bool collectHfa( typelib_TypeDescriptionReference *pTypeRef, HfaKind &rKind, int
             const typelib_CompoundTypeDescription *pComp =
                 reinterpret_cast<const typelib_CompoundTypeDescription*>( pTypeDescr );
 
+            // rCount is cumulative over the whole recursion, so remember where
+            // this aggregate started in order to size-check it below.
+            const int nCountAtEntry = rCount;
             bool bOk = true;
 
             // Flatten base class first (its members precede ours in layout).
@@ -138,8 +141,11 @@ bool collectHfa( typelib_TypeDescriptionReference *pTypeRef, HfaKind &rKind, int
 
             if ( bOk )
             {
+                // Reject anything the elements do not tile exactly: only the
+                // elements contributed by THIS aggregate count towards its size.
                 sal_Int32 elementSize = rKind == HFA_FLOAT ? 4 : 8;
-                bOk = pTypeDescr->nSize == rCount * elementSize;
+                bOk = pTypeDescr->nSize ==
+                    ( rCount - nCountAtEntry ) * elementSize;
                 for ( sal_Int32 i = 0; bOk && i < pComp->nMembers; ++i )
                     bOk = pComp->pMemberOffsets[i] % elementSize == 0;
             }
