@@ -127,8 +127,11 @@ SHL2STDLIBS+= $(NSS3LIB) $(NSPR4LIB)
 # and it is missing symbols (xmlCtxtPushInput, xmlXPathValuePush) that
 # xmlsec1 needs. Link the intended libxml2 statically by absolute path
 # so the search order can't shadow it and no dylib needs to be bundled.
+# The static archive carries no dependency info (unlike a dylib, which
+# records its own link to libz), so zlib must be linked explicitly here
+# to satisfy libxml2's HTTP/gzip symbols (deflate, inflate, gzopen, ...).
 XMLSECURITY_SYSTEM_LIBXML2:=$(shell xml2-config --prefix)/lib/libxml2.a
-SHL2STDLIBS+= $(XMLSECLIB-NSS) $(XMLSECLIB) $(XMLSECURITY_SYSTEM_LIBXML2) $(NSS3LIB) $(NSPR4LIB) $(PLC4LIB)
+SHL2STDLIBS+= $(XMLSECLIB-NSS) $(XMLSECLIB) $(XMLSECURITY_SYSTEM_LIBXML2) $(ZLIB3RDLIB) $(NSS3LIB) $(NSPR4LIB) $(PLC4LIB)
 .ELSE
 SHL2STDLIBS+= $(NSSCRYPTOLIBS)
 .ENDIF
