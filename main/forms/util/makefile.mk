@@ -58,7 +58,10 @@ SHL1TARGET=$(TARGET)$(DLLPOSTFIX)
 # missing symbols (xmlXPathValuePush, xmlXPathValuePop) that xformsxpath
 # needs. Link the intended libxml2 statically by absolute path so the
 # search order can't shadow it and no dylib needs to be bundled.
-FORMS_LIBXML2LIB:=$(shell xml2-config --prefix)/lib/libxml2.a
+# The static archive carries no dependency info (unlike a dylib, which
+# records its own link to libz), so zlib must be linked explicitly here
+# to satisfy libxml2's HTTP/gzip symbols (deflate, inflate, gzopen, ...).
+FORMS_LIBXML2LIB:=$(shell xml2-config --prefix)/lib/libxml2.a $(ZLIB3RDLIB)
 .ELSE
 FORMS_LIBXML2LIB=$(LIBXML2LIB)
 .ENDIF
