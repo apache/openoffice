@@ -125,9 +125,9 @@ SHL2STDLIBS+= $(NSS3LIB) $(NSPR4LIB)
 # plain "-lxml2" (as pulled in by NSSCRYPTOLIBS via LIBXML2LIB) resolves
 # to that bundled copy instead of the configured --with-system-libxml one,
 # and it is missing symbols (xmlCtxtPushInput, xmlXPathValuePush) that
-# xmlsec1 needs. Link the intended libxml2 by absolute path so the
-# search order can't shadow it.
-XMLSECURITY_SYSTEM_LIBXML2:=$(shell xml2-config --prefix)/lib/libxml2.dylib
+# xmlsec1 needs. Link the intended libxml2 statically by absolute path
+# so the search order can't shadow it and no dylib needs to be bundled.
+XMLSECURITY_SYSTEM_LIBXML2:=$(shell xml2-config --prefix)/lib/libxml2.a
 SHL2STDLIBS+= $(XMLSECLIB-NSS) $(XMLSECLIB) $(XMLSECURITY_SYSTEM_LIBXML2) $(NSS3LIB) $(NSPR4LIB) $(PLC4LIB)
 .ELSE
 SHL2STDLIBS+= $(NSSCRYPTOLIBS)
