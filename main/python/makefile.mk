@@ -76,6 +76,18 @@ CONFIGURE_DIR=
 BUILD_DIR=
 MYCWD=$(shell @pwd)/$(INPATH)/misc/build
 
+# CPython's own vendored expat (Modules/expat/expat.h) renames every public
+# symbol via pyexpatns.h so it can't clash with any expat also loaded into the
+# process. The solver's external include dir below also carries AOO's own
+# flat expat.h (main/expat delivers it to inc/external/expat.h for other
+# modules), which has no such renaming. Since -I dirs are searched in the
+# order given, put Python's own Modules/expat ahead of the solver dir so
+# "expat.h" resolves to CPython's copy — otherwise pyexpat.c/_elementtree.c
+# compile against the un-renamed declarations while linking against the
+# renamed symbols in libexpat.a, leaving XML_SetCommentHandler (and friends)
+# undefined at import time.
+python_CFLAGS+=-I$(MYCWD)$/$(TARFILE_NAME)$/Modules$/expat
+
 # Point Python's setup.py at the bundled OpenSSL delivered to the solver.
 # (Replaces the old python-ssl.patch: Python 3.11 discovers _ssl/_hashlib via
 # the C compiler include/lib search paths, so feeding the solver's external
