@@ -28,6 +28,7 @@ mkdir: %_DEST%\lib%_EXT%\python\multiprocessing
 mkdir: %_DEST%\lib%_EXT%\python\multiprocessing\dummy
 mkdir: %_DEST%\lib%_EXT%\python\unittest
 mkdir: %_DEST%\lib%_EXT%\python\python3.11\config
+mkdir: %_DEST%\inc%_EXT%\python\cpython
 
 ..\%__SRC%\misc\build\Python-3.11.15\Lib\* %_DEST%\lib%_EXT%\python\*
 ..\%__SRC%\misc\build\Python-3.11.15\Lib\site-packages\* %_DEST%\lib%_EXT%\python\site-packages\*
@@ -70,6 +71,7 @@ mkdir: %_DEST%\lib%_EXT%\python\python3.11\config
 ..\pyversion_dmake.mk %_DEST%\inc%_EXT%\pyversion_dmake.mk
 
 ..\%__SRC%\misc\build\Python-3.11.15\Include\* %_DEST%\inc%_EXT%\python\*
+..\%__SRC%\misc\build\Python-3.11.15\Include\cpython\* %_DEST%\inc%_EXT%\python\cpython\*
 
 #unix ONLY !
 ..\%__SRC%\misc\build\python-inst\bin\python %_DEST%\bin%_EXT%\python
