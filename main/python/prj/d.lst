@@ -58,8 +58,10 @@ mkdir: %_DEST%\lib%_EXT%\python\python3.11\config
 ..\%__SRC%\misc\build\Python-3.11.15\Lib\multiprocessing\dummy\* %_DEST%\lib%_EXT%\python\multiprocessing\dummy\*
 ..\%__SRC%\misc\build\Python-3.11.15\Lib\unittest\* %_DEST%\lib%_EXT%\python\unittest\*
 ..\%__SRC%\misc\build\Python-3.11.15\Makefile %_DEST%\lib%_EXT%\python\python3.11\config\Makefile
-# TODO: _sysconfigdata filename is platform-mangled (e.g. _sysconfigdata__darwin_darwin.py on macOS,
-# _sysconfigdata__linux_x86_64-linux-gnu.py on Linux). Verify exact name from built tree.
+# _sysconfigdata filename is platform-mangled (e.g. _sysconfigdata__darwin_darwin.py on macOS,
+# _sysconfigdata__linux_x86_64-linux-gnu.py on Linux). On Linux, makefile.mk's BUILD_ACTION
+# renames the generated file to the plain name below before delivery runs. Not yet handled
+# for other platforms.
 ..\%__SRC%\misc\build\python-inst\lib\python3.11\_sysconfigdata*.py %_DEST%\lib%_EXT%\python\_sysconfigdata.py
 ..\pyversion.mk %_DEST%\inc%_EXT%\pyversion.mk
 ..\pyversion_dmake.mk %_DEST%\inc%_EXT%\pyversion_dmake.mk
