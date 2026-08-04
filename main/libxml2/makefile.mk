@@ -91,6 +91,12 @@ CONFIGURE_DIR=
 .IF "$(OS)"=="OS2"
 CONFIGURE_ACTION=sh .$/configure
 CONFIGURE_FLAGS=--enable-ipv6=no --without-python --without-zlib --without-lzma --enable-static=yes --with-sax1=yes ADDCFLAGS="$(xml2_CFLAGS)" CFLAGS="$(EXTRA_CFLAGS)" LDFLAGS="$(xml2_LDFLAGS) $(EXTRA_LINKFLAGS)"
+.ELIF "$(OS)"=="MACOSX"
+# Community builds bundle a static libxml2 rather than a dylib -- see
+# main/xmlsecurity/util/makefile.mk and main/forms/util/makefile.mk for
+# the consumer side of this.
+CONFIGURE_ACTION=.$/configure
+CONFIGURE_FLAGS=--enable-ipv6=no --without-python --without-zlib --without-lzma --enable-static=yes --enable-shared=no --with-sax1=yes ADDCFLAGS="$(xml2_CFLAGS) $(EXTRA_CFLAGS)" LDFLAGS="$(xml2_LDFLAGS) $(EXTRA_LINKFLAGS)"
 .ELSE
 CONFIGURE_ACTION=.$/configure
 CONFIGURE_FLAGS=--enable-ipv6=no --without-python --without-zlib --without-lzma --enable-static=no --with-sax1=yes ADDCFLAGS="$(xml2_CFLAGS) $(EXTRA_CFLAGS)" LDFLAGS="$(xml2_LDFLAGS) $(EXTRA_LINKFLAGS)"
@@ -105,7 +111,7 @@ OUTDIR2INC=include$/libxml
 
 .IF "$(OS)"=="MACOSX"
 EXTRPATH=URELIB
-OUT2LIB+=.libs$/libxml2.*.dylib
+OUT2LIB+=.libs$/libxml2.a
 OUT2BIN+=.libs$/xmllint
 OUT2BIN+=xml2-config
 .ELIF "$(OS)"=="WNT"

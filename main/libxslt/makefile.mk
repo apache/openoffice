@@ -106,7 +106,14 @@ CPPFLAGS+:=$(ARCH_FLAGS) -xc99=none
 .ENDIF                  # "$(COMNAME)"=="sunpro5"
 CONFIGURE_DIR=
 CONFIGURE_ACTION=.$/configure
+.IF "$(OS)"=="MACOSX"
+# Community builds bundle a static libxslt/libexslt rather than a dylib --
+# see main/xmlsecurity/util/makefile.mk and main/forms/util/makefile.mk
+# for the analogous libxml2 case.
+CONFIGURE_FLAGS=--enable-ipv6=no --without-crypto --without-python --enable-static=yes --enable-shared=no --with-sax1=yes ac_cv_func_clock_gettime=false
+.ELSE
 CONFIGURE_FLAGS=--enable-ipv6=no --without-crypto --without-python --enable-static=no --with-sax1=yes ac_cv_func_clock_gettime=false
+.ENDIF
 BUILD_ACTION=chmod 777 xslt-config && $(GNUMAKE)
 BUILD_FLAGS+= -j$(EXTMAXPROCESS)
 BUILD_DIR=$(CONFIGURE_DIR)
@@ -115,8 +122,8 @@ BUILD_DIR=$(CONFIGURE_DIR)
 OUT2INC=libxslt$/*.h
 
 .IF "$(OS)"=="MACOSX"
-OUT2LIB+=libxslt$/.libs$/libxslt.*.dylib
-OUT2LIB+=libexslt$/.libs$/libexslt.*.dylib
+OUT2LIB+=libxslt$/.libs$/libxslt.a
+OUT2LIB+=libexslt$/.libs$/libexslt.a
 OUT2BIN+=xsltproc$/.libs$/xsltproc
 OUT2BIN+=xslt-config
 .ELIF "$(OS)"=="WNT"
