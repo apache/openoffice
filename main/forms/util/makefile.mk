@@ -56,9 +56,9 @@ SHL1TARGET=$(TARGET)$(DLLPOSTFIX)
 # plain "-lxml2" (as pulled in by LIBXML2LIB) resolves to that bundled
 # copy instead of the configured --with-system-libxml one, and it is
 # missing symbols (xmlXPathValuePush, xmlXPathValuePop) that xformsxpath
-# needs. Link the intended libxml2 by absolute path so the search order
-# can't shadow it.
-FORMS_LIBXML2LIB:=$(shell xml2-config --prefix)/lib/libxml2.dylib
+# needs. Link the intended libxml2 statically by absolute path so the
+# search order can't shadow it and no dylib needs to be bundled.
+FORMS_LIBXML2LIB:=$(shell xml2-config --prefix)/lib/libxml2.a
 .ELSE
 FORMS_LIBXML2LIB=$(LIBXML2LIB)
 .ENDIF
