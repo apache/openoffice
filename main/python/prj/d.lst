@@ -60,9 +60,12 @@ mkdir: %_DEST%\lib%_EXT%\python\python3.11\config
 ..\%__SRC%\misc\build\Python-3.11.15\Makefile %_DEST%\lib%_EXT%\python\python3.11\config\Makefile
 # _sysconfigdata filename is platform-mangled (e.g. _sysconfigdata__darwin_darwin.py on macOS,
 # _sysconfigdata__linux_x86_64-linux-gnu.py on Linux). On Linux, makefile.mk's BUILD_ACTION
-# renames the generated file to the plain name below before delivery runs. Not yet handled
-# for other platforms.
-..\%__SRC%\misc\build\python-inst\lib\python3.11\_sysconfigdata*.py %_DEST%\lib%_EXT%\python\_sysconfigdata.py
+# renames the generated file to the plain name below before delivery runs (not yet handled
+# for other platforms). The source below is deliberately NOT a wildcard: deliver.pl's
+# glob_line() only renames-on-copy when the destination also has a wildcard; paired with a
+# literal destination, a wildcard source makes it treat the destination as a directory and
+# append the matched filename onto it, producing a bogus nested path.
+..\%__SRC%\misc\build\python-inst\lib\python3.11\_sysconfigdata.py %_DEST%\lib%_EXT%\python\_sysconfigdata.py
 ..\pyversion.mk %_DEST%\inc%_EXT%\pyversion.mk
 ..\pyversion_dmake.mk %_DEST%\inc%_EXT%\pyversion_dmake.mk
 
