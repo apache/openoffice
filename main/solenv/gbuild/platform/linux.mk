@@ -135,7 +135,7 @@ gb_LinkTarget_LDFLAGS += \
 
 endif
 
-ifneq ($(HAVE_LD_UNDEFINED_VERSION),)
+ifeq ($(HAVE_LD_UNDEFINED_VERSION),TRUE)
 gb_LinkTarget_LDFLAGS += \
 	-Wl,--undefined-version \
 
