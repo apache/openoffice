@@ -128,6 +128,61 @@ def _prerun_lines(prerun):
         out.append(_expand_tokens(cmd) + " || exit /b 1")
     return out
 
+def _server_lines(server_exe, server_args, port):
+    """Start the background server, then wait until it is actually listening.
+
+    `start "" /b` detaches without a console window; the empty first argument is
+    the window TITLE, and it has to be there — otherwise cmd reads the quoted
+    exe path as the title and there is nothing left to run.  The server inherits
+    the environment set above it (URE_BOOTSTRAP, PATH) and the working
+    directory, which is what makes its relative `-ro` registry names resolve.
+    """
+    lines = [
+        'start "" /b "%%~dp0%s"%s' % (server_exe, _arg_string(server_args)),
+    ]
+    if not port:
+        return lines
+
+    # Without this the test is a race the client usually loses: the server has
+    # to load the whole UNO stack before it calls accept(), which takes about a
+    # second, and the client's UnoUrlResolver::resolve() does ONE connect() and
+    # throws NoConnectException if nothing is listening yet.
+    #
+    # netstat rather than a connect probe, because a probe that succeeds has
+    # consumed the single connection --singleaccept will serve.
+    #
+    # LANDMINE: netstat's STATE column is LOCALIZED — on a German Windows the
+    # listening row reads "ABHÖREN", not "LISTENING", so matching the state word
+    # makes the wait time out on every run for reasons that have nothing to do
+    # with the test.  Match the FOREIGN ADDRESS instead: a listening socket is
+    # the only kind whose peer is 0.0.0.0:0, and that is a number, not a word.
+    # Both patterns have to hit the SAME line, which the pipeline gives for free.
+    #
+    # The trailing space after the port is load-bearing too: without it ":2002"
+    # also matches ":20020".
+    #
+    # `ping -n 2` is the portable batch sleep (~1s).  timeout.exe is the modern
+    # spelling but aborts with "Input redirection is not supported" whenever
+    # stdin is not a console, which under `bazel test` it never is.
+    return lines + [
+        "set /a _TRY=0",
+        ":_waitport",
+        'netstat -an | findstr /c:"127.0.0.1:%s " | findstr /c:"0.0.0.0:0" >nul' % port,
+        "if not errorlevel 1 goto _portup",
+        "set /a _TRY+=1",
+        # ~30s: the server needs about one to reach accept(), so this is pure
+        # headroom, and it has to stay well inside the "small" 60s test budget
+        # or bazel's timeout would preempt the readable error below.
+        "if %_TRY% GEQ 30 goto _porttimeout",
+        "ping -n 2 127.0.0.1 >nul",
+        "goto _waitport",
+        ":_porttimeout",
+        'echo ERROR: server never listened on 127.0.0.1:%s 1>&2' % port,
+        'taskkill /f /im "%s" >nul 2>nul' % server_exe,
+        "exit /b 1",
+        ":_portup",
+    ]
+
 def _staged_gtest_test_impl(ctx):
     # The staging dir is normally "<name>.run".  bin_layout makes it
     # "<name>.run/bin" instead — the ONE thing the child-process suites need.
@@ -178,6 +233,20 @@ def _staged_gtest_test_impl(ctx):
     man = ctx.actions.declare_file(d + "/" + ctx.label.name + ".exe.manifest")
     ctx.actions.symlink(output = man, target_file = ctx.file.app_manifest)
     staged.append(man)
+
+    # A client/server test runs the SAME binary twice, so the background half is
+    # staged a second time under its own name.  That is not cosmetic: it is what
+    # makes the cleanup `taskkill /f /im` precise.  Killing by the shared image
+    # name would take the client — and any concurrently running test using the
+    # same tool — down with it.
+    server_exe_name = ctx.label.name + "_server.exe"
+    if ctx.attr.server_args:
+        srv = ctx.actions.declare_file(d + "/" + server_exe_name)
+        ctx.actions.symlink(output = srv, target_file = ctx.executable.binary)
+        staged.append(srv)
+        srvman = ctx.actions.declare_file(d + "/" + server_exe_name + ".manifest")
+        ctx.actions.symlink(output = srvman, target_file = ctx.file.app_manifest)
+        staged.append(srvman)
 
     # data_tree — fixture files staged at an EXPLICIT relative path rather than
     # flat by basename (which is all `runtime` can express).  Needed whenever the
@@ -256,8 +325,11 @@ def _staged_gtest_test_impl(ctx):
     env = ctx.attr.env
     prerun = ctx.attr.prerun
     run_args = ctx.attr.run_args
+    server_args = ctx.attr.server_args
     argstr = _arg_string(run_args)
-    values = env.values() + prerun + run_args
+    srvlines = (_server_lines(server_exe_name, server_args, ctx.attr.server_ready_port)
+                if server_args else [])
+    values = env.values() + prerun + run_args + server_args
     need_scratch = (ctx.attr.office_connection or
                     _uses_token(values, "$(SCRATCH"))
     if _uses_token(values, "$(PROGRAM)") and not uno_program_dir:
@@ -265,9 +337,12 @@ def _staged_gtest_test_impl(ctx):
     if ctx.attr.ure_bootstrap and not uno_program_dir:
         fail("ure_bootstrap needs uno_install: it only REDIRECTS the bootstrap " +
              "ini, it does not supply the UNO DLL closure the test still loads.")
+    if ctx.attr.server_ready_port and not server_args:
+        fail("server_ready_port without server_args — there is no server to wait for.")
 
     executable = staged_exe
-    if (ctx.attr.run_in_staged_dir or uno_program_dir or env or prerun or run_args):
+    if (ctx.attr.run_in_staged_dir or uno_program_dir or env or prerun or
+        run_args or server_args):
         launcher_dir = staged_exe.dirname  # the .bat sits beside the staged exe
         lines = ["@echo off", "setlocal"]
 
@@ -395,7 +470,7 @@ def _staged_gtest_test_impl(ctx):
                     'set "arg-soffice=path:%_SOFFICE:\\=\\\\%"',
                     'set "arg-user=%_SCRATCH:\\=\\\\%"',
                 ]
-            lines += _env_lines(env) + _prerun_lines(prerun)
+            lines += _env_lines(env) + _prerun_lines(prerun) + srvlines
             lines += ['"%_EXE%"' + argstr + " %*"]
         else:
             # Co-locating a data file with the exe is not enough for a test that
@@ -406,11 +481,18 @@ def _staged_gtest_test_impl(ctx):
             # solely to set `env` must not silently move the cwd as well.
             if ctx.attr.run_in_staged_dir:
                 lines += ['cd /d "%~dp0" || exit /b 1']
-            lines += _env_lines(env) + _prerun_lines(prerun)
+            lines += _env_lines(env) + _prerun_lines(prerun) + srvlines
             lines += ['"%~dp0' + staged_exe.basename + '"' + argstr + " %*"]
 
         # Capture the exit code BEFORE any cleanup — rmdir would clobber it.
         lines += ['set "_RC=%ERRORLEVEL%"']
+        if server_args:
+            # Normally a no-op: a --singleaccept server exits on its own once the
+            # client drops the connection.  It is the FAILURE path that needs
+            # this — a client that died before connecting would otherwise leave
+            # the server blocked in accept() forever, holding the port and
+            # poisoning every later run.
+            lines += ['taskkill /f /im "%s" >nul 2>nul' % server_exe_name]
         if need_scratch:
             lines += ['rmdir /s /q "%_SCRATCH%" 2>nul']
         lines += ["exit /b %_RC%", ""]
@@ -442,6 +524,8 @@ _staged_gtest_test = rule(
         "env": attr.string_dict(),
         "prerun": attr.string_list(),
         "run_args": attr.string_list(),
+        "server_args": attr.string_list(),
+        "server_ready_port": attr.string(),
         "ure_bootstrap": attr.string(),
     },
 )
@@ -459,6 +543,18 @@ _staged_gtest_test = rule(
 # command line still follows it, via %*.  Deliberately not the native `args`
 # attribute: baking it in keeps `bazel run` on the target reproducing exactly
 # what `bazel test` ran.
+#
+# server_args / server_ready_port: a CLIENT/SERVER test.  The same `binary` is
+# staged a second time as "<name>_server.exe" and started detached with
+# server_args (token-expanded like run_args) just before the client runs; the
+# launcher then waits until something is LISTENING on server_ready_port, and
+# kills any surviving server afterwards.  The test result is still purely the
+# CLIENT's exit code — the server is fixture, not verdict.
+#
+# It exists for testtools' bridgetest_urp, where the round trip has to cross a
+# process boundary to exercise the URP bridge at all; the in-process variants
+# need none of it.  A test using it should carry tags = ["exclusive"], since the
+# port is a fixed, machine-global resource (upstream hardcodes 2002).
 staged_run_test = _staged_gtest_test
 
 def gtest_test(

@@ -264,9 +264,11 @@ test          🔨  C++ unit-test infra runnable — NOW THE FRONT-LINE TASK: br
                    not build: osl_process asserts an env ORDER Windows doesn't use;
                    rtl_Bootstrap expects the default ini to be testshl2.ini because the
                    testshl2-era process was literally testshl2.exe.
-testtools     🔨  bridgetest GREEN 2026-08-05, BOTH halves — //main/testtools:bridgetest
-                   (C++ object, ~1.1s) and :bridgetest_java (Java object over the
-                   java_uno JNI bridge, ~1.4s); :bridgetest_tests runs both.  This is
+testtools     🔨  bridgetest GREEN 2026-08-05, ALL THREE halves — //main/testtools:
+                   bridgetest (C++ object in-process, ~1.1s), :bridgetest_java (Java
+                   object over the java_uno JNI bridge, ~1.4s) and :bridgetest_urp
+                   (C++ object in a SECOND PROCESS over socket URP, ~4s);
+                   :bridgetest_tests runs all three.  This is
                    the widest type-marshalling check in the tree (every simple type,
                    string, enum, struct, POLYMORPHIC struct, sequence, any, interface,
                    attribute, out/inout param, exception, multiple inheritance, current
@@ -315,9 +317,62 @@ testtools     🔨  bridgetest GREEN 2026-08-05, BOTH halves — //main/testtool
                    along.  Passed as a file:/// URL (unoexe convertToFileUrl takes it
                    verbatim).  //build:jre.bzl now centralizes the machine-specific,
                    arch-select()ed test JRE (was duplicated in cppuhelper).
+                   SOCKET-URP VARIANT GREEN 2026-08-05 — //main/testtools:bridgetest_urp
+                   (~4s), dmake's bridgetest_server + bridgetest_client pair.
+                   Same driver, same assertions, same C++ object, but in a SECOND PROCESS,
+                   so every call crosses //main/binaryurp over TCP.  Only test in the tree
+                   that puts a real object graph across a real connection (binaryurp's own
+                   qa/ covers cache+unmarshal in isolation); also WIDER than the Java half,
+                   which must pass noCurrentContext — here the current-context check runs,
+                   so it is the only proof a UNO current context propagates across a
+                   process boundary.  The whole client/server split is ONE argument: "-u
+                   <uno url>" AFTER "--" makes it an arg to BridgeTest::run(), which then
+                   resolves via UnoUrlResolver instead of instantiating locally.
+                   FIRST REAL BITE of the KNOWN .uno COMPONENT-NAMING DIVERGENCE, at
+                   exactly the site CLAUDE.md predicted ("remote-UNO/URP bootstrap"):
+                   dmake gives the SERVER only the two test registries and lets
+                   unoexe.cxx's createInstance() fallback loadSharedLibComponentFactory()
+                   the HARDCODED names acceptor.uno.dll / connector.uno.dll /
+                   binaryurp.uno.dll — we emit acceptor.dll etc., so that path can never
+                   fire.  FIX IS NOT A RENAME: nest the installation's own
+                   program/services.rdb into the server too (the Java half already does it
+                   for the client) and all three resolve BY SERVICE NAME on the first
+                   attempt, so the filename path is never reached.  Naming services is
+                   rename-proof; a rename would need services.rdb moved in lockstep.
+                   TWO NEW GENERAL gtest_test ATTRS: server_args (stage `binary` a SECOND
+                   time as <name>_server.exe and start it detached before the client —
+                   the second name is what makes cleanup `taskkill /f /im` precise; a
+                   shared image name would kill the client too) and server_ready_port
+                   (poll netstat until LISTENING).  The wait is NOT optional: the server
+                   needs ~1s to reach accept() and UnoUrlResolver::resolve() does ONE
+                   connect() then throws NoConnectException.  And it must be netstat, not
+                   a connect probe — a probe that succeeds CONSUMES the single connection
+                   --singleaccept will serve.  Verdict = the CLIENT's exit code only;
+                   stragglers are killed so a failed run cannot leave a server blocked in
+                   accept() holding the port.  tags=["exclusive"] — port 2002 is
+                   upstream's hardcoded choice and is machine-global.  NOTE dmake only
+                   GENERATES the two .bat files (in ALLTAR but never run; only the
+                   in-process `runtest` executes), so there was no recipe to port.
                    See main/testtools/readme.md.  STILL ⬜: cli + cliversioning + qa/cli
-                   (cli_ure bucket), pyuno variant (reachable now), source/performance
-                   (a benchmark), and the socket-URP client/server variants.
+                   (cli_ure bucket), source/performance (a benchmark), and
+                   bridgetest_javaserver (Java server over URP — needs the background
+                   process to be a `java` command line, which server_args does not
+                   express; its Java marshalling is already covered in-process).
+                   pyuno variant — ⬜ BLOCKED, and the old note "reachable now" was WRONG.
+                   It is not the same driver: main.py is a unittest suite whose FIRST
+                   statement is unohelper.addComponentsToContext(…,
+                   "com.sun.star.loader.SharedLibrary"), i.e.
+                   ImplementationRegistration → DllComponentLoader::writeRegistryInfo →
+                   cppuhelper writeSharedLibComponentInfo, which resolves
+                   component_writeInfo — the SAME RETIRED MECHANISM as configmgr/qa/unit.
+                   cppobj/bridgetest export only getImplementationEnvironment+getFactory
+                   ⇒ "cannot get symbol: component_writeInfo".  Putting them in
+                   UNO_SERVICES does not help (the call is unconditional, before any test),
+                   and importer.py's testDynamicComponentRegistration repeats it with
+                   acceptor.uno/connector.uno — it is the suite's PREMISE, not one line.
+                   Second, independent blocker: main.py never checks the runner result and
+                   never sys.exit()s, so a faithful port would be GREEN whatever it
+                   reported.  Fixing either is a source change.
 qadevOOo      🔨  OOoRunner.jar built (//main/qadevOOo:OOoRunner — qadevOOo QA
                    framework, ~2137 classes; classpath ridl/unoil/jurt/juh_jar/
                    java_uno_jar; .csv objdsc NOT jarred, manifest omitted).

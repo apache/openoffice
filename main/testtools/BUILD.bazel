@@ -409,12 +409,104 @@ staged_run_test(
     size = "small",
 )
 
-# Both halves of the round trip: the same driver and the same assertions, once
-# against a C++ object and once against a Java one.
+# ── The same round trip, over a socket ────────────────────────────────────
+# dmake's `bridgetest_server` + `bridgetest_client` pair.  Same driver, same
+# assertions, same C++ object as :bridgetest — but the object now lives in
+# ANOTHER PROCESS, so every call is marshalled by the binary URP bridge
+# (//main/binaryurp) over a TCP connection instead of staying in-process.
+#
+# That makes it the only test of the remote-UNO path as a whole: acceptor and
+# connector (//main/io), the URP protocol itself, UnoUrlResolver
+# (//main/remotebridges), and bridge lifetime/disposal.  binaryurp's own qa/
+# suites cover its cache and unmarshal helpers in isolation; nothing until now
+# put a real object graph across a real connection.
+#
+# It is also WIDER than :bridgetest_java, which has to pass "noCurrentContext"
+# because the Java object cannot supply one.  Here the current-context check
+# runs, i.e. this is the only test that a UNO current context propagates across
+# a process boundary.
+#
+# dmake only ever GENERATES the two .bat scripts (they are in ALLTAR, but
+# nothing runs them; only the in-process `runtest` is executed automatically),
+# so the orchestration below has no recipe to copy — hence server_args /
+# server_ready_port in gtest_test.bzl.  The verdict is the CLIENT's exit code;
+# the server is fixture.  --singleaccept makes it serve one connection and exit,
+# and the launcher kills any straggler so a failed run cannot leave the port
+# held.  tags=["exclusive"] because port 2002 is upstream's hardcoded choice and
+# is a machine-global resource.
+#
+# DIVERGENCE, and it is the KNOWN component-DLL NAMING divergence finally
+# biting: dmake gives the SERVER only the two test registries and lets
+# unoexe.cxx's fallback in createInstance() cover the rest — when a service is
+# missing it loadSharedLibComponentFactory()s "acceptor.uno.dll",
+# "connector.uno.dll" and "binaryurp.uno.dll" by HARDCODED NAME.  Bazel emits
+# those as acceptor.dll / connector.dll / binaryurp.dll (see CLAUDE.md), so that
+# fallback can never fire here.  The fix is not a rename but the registry the
+# client already uses: with the installation's own services.rdb nested in, all
+# three services resolve by NAME on the first attempt and the fallback is never
+# reached.  This is exactly the failure mode CLAUDE.md predicted for the
+# divergence ("remote-UNO/URP bootstrap"), and the reason it is harmless.
+staged_run_test(
+    name = "bridgetest_urp",
+    binary = "//main/cpputools:uno",
+    server_args = [
+        "-ro",
+        "file:///$(PROGRAM_URL)/services.rdb",
+        "-ro",
+        "uno_services.rdb",
+        "-ro",
+        "uno_types.rdb",
+        "-s",
+        "com.sun.star.test.bridge.CppTestObject",
+        "-u",
+        "uno:socket,host=127.0.0.1,port=2002;urp;test",
+        "--singleaccept",
+    ],
+    server_ready_port = "2002",
+    # "-u" here is NOT unoexe's own option — it comes after "--", so it is an
+    # argument to BridgeTest::run(), which reads it as "resolve the object at
+    # this URL" instead of "instantiate this service locally" (bridgetest.cxx).
+    # That one difference is the entire client/server split.
+    run_args = [
+        "-ro",
+        "file:///$(PROGRAM_URL)/services.rdb",
+        "-ro",
+        "uno_services.rdb",
+        "-ro",
+        "uno_types.rdb",
+        "-s",
+        "com.sun.star.test.bridge.BridgeTest",
+        "--",
+        "-u",
+        "uno:socket,host=127.0.0.1,port=2002;urp;test",
+    ],
+    run_in_staged_dir = True,
+    # Test-only artifacts ONLY, as in :bridgetest_java and for the same reason —
+    # co-locating cppuhelper3MSC.dll alongside uno_install would make
+    # cppu::get_unorc() miss program/uno.ini and silently expand every
+    # vnd.sun.star.expand: URI to nothing.  Both processes get the core stack
+    # from program/ via PATH.
+    runtime = [
+        ":bridgetest.uno",
+        ":constructors.uno",
+        ":cppobj.uno",
+        ":bridgetest_uno_services",
+        ":bridgetest_uno_types",
+        "//main/external/msvcp90:crt_dlls",
+    ],
+    uno_install = "//main/staging:install",
+    size = "small",
+    tags = ["exclusive"],
+)
+
+# Every half of the round trip: the same driver and the same assertions, once
+# against a C++ object in-process, once against a Java one, and once against a
+# C++ object in another process over URP.
 test_suite(
     name = "bridgetest_tests",
     tests = [
         ":bridgetest",
         ":bridgetest_java",
+        ":bridgetest_urp",
     ],
 )

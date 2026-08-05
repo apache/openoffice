@@ -17,7 +17,7 @@
  under the License.
 -->
 
-# Notes for testtools (bridgetest: C++ and Java green)
+# Notes for testtools (bridgetest green: in-process C++ and Java, plus C++ over URP)
 
 `bridgetest` is the UNO bridge round-trip suite: every construct the type
 system has — each simple type, strings, enums, structs, polymorphic structs,
@@ -25,14 +25,18 @@ sequences, anys, interfaces, attributes, out/inout parameters, exceptions,
 multiple inheritance, the current context, recursive and sequence-of-calls
 dispatch — pushed through a call chain and checked coming back.
 
-Two targets, one driver:
+Three targets, one driver:
 
 | target | object under test | fixture | time |
 | --- | --- | --- | --- |
-| `//main/testtools:bridgetest` | `CppTestObject` (C++) | self-contained | ~1.1 s |
-| `//main/testtools:bridgetest_java` | `JavaTestObject` (Java) | `uno_install` | ~1.4 s |
+| `//main/testtools:bridgetest` | `CppTestObject` (C++), in-process | self-contained | ~1.1 s |
+| `//main/testtools:bridgetest_java` | `JavaTestObject` (Java), in-process | `uno_install` | ~1.4 s |
+| `//main/testtools:bridgetest_urp` | `CppTestObject` in a **second process**, over socket URP | `uno_install`, client/server | ~4 s |
 
-`//main/testtools:bridgetest_tests` runs both.
+`//main/testtools:bridgetest_tests` runs all three. The first two check that
+the *bridges* marshal correctly (`msci_uno`/`mscx_uno` and `java_uno`); the
+third checks that the *remote* path does — a different bridge implementation
+(`//main/binaryurp`) over a real connection.
 
 ## It is not a GoogleTest, and should not be made into one
 
@@ -149,6 +153,72 @@ keys in `program/fundamental.ini`, and `jvmfwk.dll` finds `javavendors.xml`,
 `jvmfwk3.ini`, `sunjavaplugin.dll` and `JREProperties.class` beside itself
 there. One `URE_BOOTSTRAP` supplies the lot with no list to keep in sync.
 
+## The URP target — the round trip across a process boundary
+
+`//main/testtools:bridgetest_urp` is dmake's `bridgetest_server` +
+`bridgetest_client` pair. Same driver, same assertions, same C++ object as
+`:bridgetest` — but the object lives in **another process**, so every call is
+marshalled by the binary URP bridge over a TCP connection.
+
+The single difference on the command line is that `-u <uno url>` comes *after*
+`--`, which makes it an argument to `BridgeTest::run()` rather than to `unoexe`:
+the driver then resolves the object through
+`com.sun.star.bridge.UnoUrlResolver` instead of instantiating it locally
+(`bridgetest.cxx` around the `remote` flag). The server side is the same
+`uno.exe` with its *own* `-u`, plus `--singleaccept` so it serves one
+connection and exits.
+
+It is the only test in the tree that puts a real object graph across a real
+connection: acceptor and connector (`//main/io`), the URP protocol
+(`//main/binaryurp`, whose own qa/ suites cover only its cache and unmarshal
+helpers in isolation), `UnoUrlResolver` (`//main/remotebridges`), and bridge
+lifetime. It is also **wider than the Java target**, which must pass
+`noCurrentContext` because the Java object has no `XCurrentContext` to hand
+back — here that sub-test runs, so this is the only check that a UNO current
+context propagates across a process boundary.
+
+### The `.uno` naming divergence, finally biting
+
+dmake gives the **server** only the two test registries and lets `unoexe.cxx`
+cover the rest: when `createInstance()` cannot find a service it falls back to
+`loadSharedLibComponentFactory()` on the hardcoded names `acceptor.uno.dll`,
+`connector.uno.dll` and `binaryurp.uno.dll`.
+
+Bazel emits those as `acceptor.dll` / `connector.dll` / `binaryurp.dll` (the
+known component-DLL naming divergence in CLAUDE.md), so that fallback can never
+fire here — and this is the *first* place the divergence has actually mattered.
+CLAUDE.md predicted exactly this site ("remote-UNO/URP bootstrap").
+
+The fix is not a rename. The server gets the installation's own
+`program/services.rdb` nested in, the same third registry the Java target
+already uses, and all three services then resolve **by service name** on the
+first attempt, so the hardcoded-filename path is never reached. A rename would
+have to move `services.rdb` in lockstep; naming the services does not.
+
+### Orchestration: `server_args` / `server_ready_port`
+
+There is no dmake recipe to copy. dmake only *generates* the two `.bat` scripts
+— they are in `ALLTAR`, but nothing runs them; only the in-process `runtest` is
+executed automatically. So `gtest_test.bzl` grew two attributes:
+
+- **`server_args`** — stage `binary` a second time as `<name>_server.exe` and
+  start it detached (`start "" /b`) just before the client. A second staged
+  name rather than reusing the client's is what makes the cleanup
+  `taskkill /f /im` precise; killing by a shared image name would take the
+  client with it.
+- **`server_ready_port`** — poll `netstat` until something is LISTENING there.
+  Without it the test is a race the client usually loses: the server needs
+  about a second to load the UNO stack before it reaches `accept()`, and
+  `UnoUrlResolver::resolve()` makes **one** `connect()` and throws
+  `NoConnectException`. A connect probe would be worse than useless — a probe
+  that succeeds consumes the single connection `--singleaccept` will serve, so
+  it has to be `netstat`.
+
+The verdict is purely the **client's** exit code; the server is fixture. Any
+straggling server is killed afterwards, so a client that dies before connecting
+cannot leave one blocked in `accept()` holding the port. `tags = ["exclusive"]`
+because port 2002 is upstream's hardcoded choice and is machine-global.
+
 ## Build notes
 
 - `/Zc:wchar_t-` throughout — `sal_Unicode` is not VS2008's native `wchar_t`.
@@ -170,14 +240,45 @@ there. One `URE_BOOTSTRAP` supplies the lot with no list to keep in sync.
 
 - `source/bridgetest/cli` (C#/VB round trip) — blocked on the `cli_ure`
   bucket's C# and C++/CLI toolchains.
-- `source/bridgetest/pyuno` — the Python variant of the same driver; reachable
-  now that pyuno is wired, not yet done.
+- `source/bridgetest/pyuno` — **BLOCKED on a retired mechanism, not on the
+  fixture.** It was recorded here as "reachable now that pyuno is wired", which
+  was wrong: the Python variant is not the same driver at all. It is a
+  `unittest` suite (`main.py` → `importer` / `core` / `impl`), and its very
+  first statement registers the C++ objects dynamically:
+
+  ```python
+  unohelper.addComponentsToContext(
+      ctx, ctx, (FOO+"/cppobj.uno", FOO+"/bridgetest.uno", …),
+      "com.sun.star.loader.SharedLibrary")
+  ```
+
+  That path is `com.sun.star.registry.ImplementationRegistration` →
+  `DllComponentLoader::writeRegistryInfo()` →
+  `cppuhelper::writeSharedLibComponentInfo()`, which resolves
+  **`component_writeInfo`** — the pre-`.component` registration mechanism.
+  `cppobj.cxx` and `bridgetest.cxx` export only
+  `component_getImplementationEnvironment` and `component_getFactory`, so
+  `shlib.cxx` throws `cannot get symbol: component_writeInfo`. Registering the
+  components in `UNO_SERVICES` instead does not help — the call is made
+  unconditionally, before any test runs — and `importer.py`'s
+  `testDynamicComponentRegistration` does the same thing again with
+  `acceptor.uno` / `connector.uno`, so it is the suite's premise, not one line.
+
+  This is the **same wall as `configmgr/qa/unit`** (see CLAUDE.md): a qa/ dir
+  gated off for a decade encoding a mechanism the product no longer has. Fixing
+  it means porting `main.py` to a services registry, i.e. a source change.
+  Note also that `main.py` never checks the runner's result and never calls
+  `sys.exit()`, so a faithful port would be **green whatever it reported** —
+  a second reason it cannot be wired as-is.
 - `source/performance` (`perftest.uno`) — a benchmark, not a correctness test.
   Note `TestComponent.java` *does* implement
   `com.sun.star.test.performance.XPerformanceTest`, whose IDL lives in udkapi,
   so the Java half of it is already compiled here.
 - `source/cliversioning`, `qa/cli`, `qa/cliversioning` — `cli_ure` bucket.
-- `bridgetest_server` / `bridgetest_client` / `bridgetest_javaserver` — the
-  socket-URP variants of the same driver. They need an acceptor and a second
-  process; the in-process targets cover the marshalling, and URP itself is
-  covered by `//main/binaryurp` and `//main/test:test_qa_officeconnection`.
+- `bridgetest_javaserver` — the socket-URP variant with a **Java** server
+  (`com.sun.star.comp.bridge.TestComponentMain … singleaccept`). The C++
+  client/server pair is now wired as `:bridgetest_urp`; this one additionally
+  needs the background process to be a `java` command line rather than a second
+  copy of `binary`, which `server_args` does not currently express. Its
+  coverage — Java marshalling — is already reached in-process by
+  `:bridgetest_java`; what it would add is Java *over URP*.
