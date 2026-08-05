@@ -52,6 +52,10 @@ BEGIN_VENDOR_MAP()
     VENDOR_MAP_ENTRY("Free Software Foundation, Inc.", GnuInfo)
     VENDOR_MAP_ENTRY("The FreeBSD Foundation", OtherInfo)
     VENDOR_MAP_ENTRY("AdoptOpenJDK", OtherInfo)
+    // Adoptium renamed AdoptOpenJDK to Temurin in 2021; java.vendor reads
+    // "Temurin" from 8u302 on.  Same builds, so same handler as its own
+    // predecessor above.
+    VENDOR_MAP_ENTRY("Temurin", OtherInfo)
     VENDOR_MAP_ENTRY("OpenJDK", SunInfo)
 END_VENDOR_MAP()
 

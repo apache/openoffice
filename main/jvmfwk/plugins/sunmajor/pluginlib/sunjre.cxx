@@ -64,7 +64,8 @@ char const* const* SunInfo::getRuntimePaths(int * size)
         "/bin/client/jvm.dll",
         "/bin/hotspot/jvm.dll",
         "/bin/classic/jvm.dll",
-        "/bin/jrockit/jvm.dll"
+        "/bin/jrockit/jvm.dll",
+        "/bin/server/jvm.dll"  // 64-bit JREs ship no client VM
 #elif defined(OS2)
         "/bin/classic/jvm.dll",
         "/bin/client/jvm.dll",

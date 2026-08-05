@@ -23,7 +23,7 @@
 <javaSelection xmlns="http://openoffice.org/2004/java/framework/1.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
- <updated>2019-07-27</updated>
+ <updated>2026-08-05</updated>
 
  <vendorInfos>
   <vendor name="Oracle Corporation">
@@ -38,6 +38,9 @@
   <vendor name="AdoptOpenJDK">
     <minVersion>1.8.0</minVersion>
   </vendor>
+  <vendor name="Temurin">
+    <minVersion>1.8.0</minVersion>
+  </vendor>
   <vendor name="OpenJDK">
     <minVersion>1.8.0</minVersion>
   </vendor>
@@ -48,6 +51,7 @@
   <library vendor="Sun Microsystems Inc.">vnd.sun.star.expand:$URE_INTERNAL_LIB_DIR/sunjavaplugin.dll</library>
   <library vendor="IBM Corporation">vnd.sun.star.expand:$URE_INTERNAL_LIB_DIR/sunjavaplugin.dll</library>
   <library vendor="AdoptOpenJDK">vnd.sun.star.expand:$URE_INTERNAL_LIB_DIR/sunjavaplugin.dll</library>
+  <library vendor="Temurin">vnd.sun.star.expand:$URE_INTERNAL_LIB_DIR/sunjavaplugin.dll</library>
   <library vendor="OpenJDK">vnd.sun.star.expand:$URE_INTERNAL_LIB_DIR/sunjavaplugin.dll</library>
  </plugins>
 </javaSelection>
