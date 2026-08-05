@@ -3952,8 +3952,23 @@ if test -n "$with_system_libxslt" -o -n "$with_system_libs" -o \
 	if test "$_os" != "Darwin"; then
 		PKG_CHECK_MODULES(LIBXSLT, libxslt)
 	else
-		LIBXSLT_CFLAGS=`xslt-config --cflags`
-		LIBXSLT_LIBS=`xslt-config --libs`
+		dnl See the matching libxml check below for why this pins
+		dnl xslt-config to the directory given to --with-system-libxslt
+		dnl instead of resolving a bare "xslt-config" off PATH.
+		if test "$with_system_libxslt" != "yes" -a -n "$with_system_libxslt"; then
+			XSLT_CONFIG="$with_system_libxslt/bin/xslt-config"
+			if test ! -x "$XSLT_CONFIG"; then
+				AC_MSG_ERROR([--with-system-libxslt=$with_system_libxslt given, but $XSLT_CONFIG not found or not executable])
+			fi
+		else
+			AC_PATH_PROG(XSLT_CONFIG, xslt-config, [])
+			if test -z "$XSLT_CONFIG"; then
+				AC_MSG_ERROR([xslt-config not found on PATH])
+			fi
+		fi
+		LIBXSLT_CFLAGS=`$XSLT_CONFIG --cflags`
+		LIBXSLT_LIBS=`$XSLT_CONFIG --libs`
+		LIBXSLT_PREFIX=`$XSLT_CONFIG --prefix`
 	fi
 
    dnl Check for xsltproc
@@ -3969,6 +3984,7 @@ fi
 AC_SUBST(SYSTEM_LIBXSLT)
 AC_SUBST(LIBXSLT_CFLAGS)
 AC_SUBST(LIBXSLT_LIBS)
+AC_SUBST(LIBXSLT_PREFIX)
 
 
 dnl ===================================================================
@@ -3985,8 +4001,27 @@ if test -n "$with_system_libxml" -o -n "$with_system_libs" -o \
 	if test "$_os" != "Darwin"; then
 		PKG_CHECK_MODULES(LIBXML, libxml-2.0 >= 2.0)
 	else
-		LIBXML_CFLAGS=`xml2-config --cflags`
-		LIBXML_LIBS=`xml2-config --libs`
+		dnl A bare "xml2-config" resolves off whatever happens to be
+		dnl first on PATH, which is ambiguous when several package
+		dnl managers each ship their own libxml2 (MacPorts, Homebrew,
+		dnl a hand-built static copy, ...). When --with-system-libxml
+		dnl is given an actual directory (not just a bare "yes"), pin
+		dnl xml2-config to that prefix explicitly so the intended copy
+		dnl can't be shadowed by PATH order.
+		if test "$with_system_libxml" != "yes" -a -n "$with_system_libxml"; then
+			XML2_CONFIG="$with_system_libxml/bin/xml2-config"
+			if test ! -x "$XML2_CONFIG"; then
+				AC_MSG_ERROR([--with-system-libxml=$with_system_libxml given, but $XML2_CONFIG not found or not executable])
+			fi
+		else
+			AC_PATH_PROG(XML2_CONFIG, xml2-config, [])
+			if test -z "$XML2_CONFIG"; then
+				AC_MSG_ERROR([xml2-config not found on PATH])
+			fi
+		fi
+		LIBXML_CFLAGS=`$XML2_CONFIG --cflags`
+		LIBXML_LIBS=`$XML2_CONFIG --libs`
+		LIBXML_PREFIX=`$XML2_CONFIG --prefix`
 	fi
 else
     AC_MSG_RESULT([internal])
@@ -3996,6 +4031,7 @@ fi
 AC_SUBST(SYSTEM_LIBXML)
 AC_SUBST(LIBXML_CFLAGS)
 AC_SUBST(LIBXML_LIBS)
+AC_SUBST(LIBXML_PREFIX)
 
 
 dnl ===================================================================
@@ -4633,6 +4669,11 @@ AC_SUBST(COINMP_LIBS)
 dnl ===================================================================
 dnl Check for system curl
 dnl ===================================================================
+dnl Darwin always treats curl as external (see the "-o \"$_os\" = \"Darwin\""
+dnl clause below), regardless of whether --with-system-curl was actually
+dnl given a directory -- capture the as-given value first, before it gets
+dnl forced to a bare "yes", so a real --with-system-curl=DIR isn't lost.
+with_system_curl_dir="$with_system_curl"
 if test "$_os" = "Darwin" && test "$with_system_curl" != "no"; then
    with_system_curl=yes
 fi
@@ -4642,9 +4683,19 @@ if test -n "$with_system_curl" -o -n "$with_system_libs" && \
    AC_MSG_RESULT([external])
    SYSTEM_CURL=YES
 
-   AC_PATH_PROG( CURLCONFIG, curl-config)
-   if test -z "$CURLCONFIG"; then
-      AC_MSG_ERROR([install curl to run this script])
+   dnl See the matching libxml check above for why this pins
+   dnl curl-config to the directory given to --with-system-curl instead
+   dnl of resolving a bare "curl-config" off PATH.
+   if test "$with_system_curl_dir" != "yes" -a -n "$with_system_curl_dir"; then
+      CURLCONFIG="$with_system_curl_dir/bin/curl-config"
+      if test ! -x "$CURLCONFIG"; then
+         AC_MSG_ERROR([--with-system-curl=$with_system_curl_dir given, but $CURLCONFIG not found or not executable])
+      fi
+   else
+      AC_PATH_PROG( CURLCONFIG, curl-config)
+      if test -z "$CURLCONFIG"; then
+         AC_MSG_ERROR([install curl to run this script])
+      fi
    fi
 
    # check curl version
@@ -4667,6 +4718,7 @@ if test -n "$with_system_curl" -o -n "$with_system_libs" && \
 
    CURL_LIBS=`$CURLCONFIG --libs`
    CURL_CFLAGS=`$CURLCONFIG --cflags`
+   CURL_PREFIX=`$CURLCONFIG --prefix`
 else
    AC_MSG_RESULT([internal])
    SYSTEM_CURL=NO
@@ -4675,6 +4727,7 @@ fi
 AC_SUBST(SYSTEM_CURL)
 AC_SUBST(CURL_CFLAGS)
 AC_SUBST(CURL_LIBS)
+AC_SUBST(CURL_PREFIX)
 
 dnl ===================================================================
 dnl Check for system mdds

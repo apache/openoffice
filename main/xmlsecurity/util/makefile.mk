@@ -125,13 +125,44 @@ SHL2STDLIBS+= $(NSS3LIB) $(NSPR4LIB)
 # plain "-lxml2" (as pulled in by NSSCRYPTOLIBS via LIBXML2LIB) resolves
 # to that bundled copy instead of the configured --with-system-libxml one,
 # and it is missing symbols (xmlCtxtPushInput, xmlXPathValuePush) that
-# xmlsec1 needs. Link the intended libxml2 statically by absolute path
-# so the search order can't shadow it and no dylib needs to be bundled.
-# The static archive carries no dependency info (unlike a dylib, which
-# records its own link to libz), so zlib must be linked explicitly here
-# to satisfy libxml2's HTTP/gzip symbols (deflate, inflate, gzopen, ...).
-XMLSECURITY_SYSTEM_LIBXML2:=$(shell xml2-config --prefix)/lib/libxml2.a
-SHL2STDLIBS+= $(XMLSECLIB-NSS) $(XMLSECLIB) $(XMLSECURITY_SYSTEM_LIBXML2) $(ZLIB3RDLIB) $(NSS3LIB) $(NSPR4LIB) $(PLC4LIB)
+# xmlsec1 needs. Link the intended libxml2 by absolute path so the search
+# order can't shadow it.
+#
+# The path is built from $(LIBXML_PREFIX), not a live `xml2-config`
+# lookup: $(LIBXML_PREFIX) is resolved exactly once by `./configure`
+# (honoring the directory given to --with-system-libxml=DIR, see
+# configure.ac's libxml check) and exported via the generated
+# *Env.Set.sh script -- the same mechanism that already delivers
+# $(LIBXML_CFLAGS)/$(LIBXML_LIBS) (aka $(LIBXML2LIB), solenv/inc/libs.mk)
+# to every other module. Re-running `xml2-config` here at build time
+# instead would re-do that PATH-dependent lookup a second time,
+# independently of configure -- if the build-resume shell's PATH ever
+# differs from the configure shell's (e.g. MacPorts' /opt/local ends up
+# ahead of the intended prefix), that would silently link a stray
+# libxml2.a instead of the intended one, pulling in a different, unrelated
+# set of missing transitive symbols (seen in practice: ICU + GNU libiconv
+# from a MacPorts copy on one machine, liblzma from a different stray copy
+# on another). Going through $(LIBXML_PREFIX) removes that ambiguity.
+#
+# Prefer the dylib when one is actually present at that prefix: unlike a
+# static archive, a dylib records its own transitive links (e.g. to libz),
+# so the linker resolves those automatically and no extra -lz/-llzma is
+# needed. Fall back to the static archive (community builds normally only
+# install that, via --enable-shared=no) when no dylib exists there.
+.IF "$(shell test -f $(LIBXML_PREFIX)/lib/libxml2.dylib && echo yes)"=="yes"
+XMLSECURITY_SYSTEM_LIBXML2:=$(LIBXML_PREFIX)/lib/libxml2.dylib
+XMLSECURITY_SYSTEM_LIBXML2_EXTRALIBS:=
+.ELSE
+XMLSECURITY_SYSTEM_LIBXML2:=$(LIBXML_PREFIX)/lib/libxml2.a
+# The static archive carries no dependency info, so zlib must be linked
+# explicitly here to satisfy libxml2's HTTP/gzip symbols (deflate,
+# inflate, gzopen, ...). liblzma is linked only if actually present next
+# to it: it's not part of the documented static-lib bundle, so only
+# needed if this libxml2 build happens to have xz support compiled in.
+XMLSECURITY_SYSTEM_LIBLZMA:=$(shell test -f $(LIBXML_PREFIX)/lib/liblzma.a -o -f $(LIBXML_PREFIX)/lib/liblzma.dylib && echo $(LIBXML_PREFIX)/lib/liblzma.a)
+XMLSECURITY_SYSTEM_LIBXML2_EXTRALIBS:=$(ZLIB3RDLIB) $(XMLSECURITY_SYSTEM_LIBLZMA)
+.ENDIF
+SHL2STDLIBS+= $(XMLSECLIB-NSS) $(XMLSECLIB) $(XMLSECURITY_SYSTEM_LIBXML2) $(XMLSECURITY_SYSTEM_LIBXML2_EXTRALIBS) $(NSS3LIB) $(NSPR4LIB) $(PLC4LIB)
 .ELSE
 SHL2STDLIBS+= $(NSSCRYPTOLIBS)
 .ENDIF

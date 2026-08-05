@@ -56,12 +56,28 @@ SHL1TARGET=$(TARGET)$(DLLPOSTFIX)
 # plain "-lxml2" (as pulled in by LIBXML2LIB) resolves to that bundled
 # copy instead of the configured --with-system-libxml one, and it is
 # missing symbols (xmlXPathValuePush, xmlXPathValuePop) that xformsxpath
-# needs. Link the intended libxml2 statically by absolute path so the
-# search order can't shadow it and no dylib needs to be bundled.
-# The static archive carries no dependency info (unlike a dylib, which
-# records its own link to libz), so zlib must be linked explicitly here
-# to satisfy libxml2's HTTP/gzip symbols (deflate, inflate, gzopen, ...).
-FORMS_LIBXML2LIB:=$(shell xml2-config --prefix)/lib/libxml2.a $(ZLIB3RDLIB)
+# needs. Link the intended libxml2 by absolute path so the search order
+# can't shadow it.
+#
+# The path is built from $(LIBXML_PREFIX), not a live `xml2-config`
+# lookup -- see the matching comment in xmlsecurity/util/makefile.mk for
+# why: $(LIBXML_PREFIX) is resolved exactly once by `./configure`
+# (honoring the directory given to --with-system-libxml=DIR) and exported
+# via the generated *Env.Set.sh script, so it can't drift from what
+# configure actually resolved the way a fresh `xml2-config` shell-out at
+# dmake time could.
+#
+# Prefer the dylib when one is actually present at that prefix (it
+# records its own transitive links, e.g. to libz, so nothing extra needs
+# to be added); fall back to the static archive -- which carries no
+# dependency info, so zlib must be linked explicitly to satisfy libxml2's
+# HTTP/gzip symbols (deflate, inflate, gzopen, ...) -- when no dylib
+# exists there.
+.IF "$(shell test -f $(LIBXML_PREFIX)/lib/libxml2.dylib && echo yes)"=="yes"
+FORMS_LIBXML2LIB:=$(LIBXML_PREFIX)/lib/libxml2.dylib
+.ELSE
+FORMS_LIBXML2LIB:=$(LIBXML_PREFIX)/lib/libxml2.a $(ZLIB3RDLIB)
+.ENDIF
 .ELSE
 FORMS_LIBXML2LIB=$(LIBXML2LIB)
 .ENDIF
