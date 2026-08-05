@@ -711,7 +711,7 @@ static struct PyModuleDef PyUNOModule =
 };
 }
 
-PY_DLLEXPORT PyMODINIT_FUNC PyInit_pyuno()
+PyMODINIT_FUNC PyInit_pyuno()
 {
     PyObject *m;
 
