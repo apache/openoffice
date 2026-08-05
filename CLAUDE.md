@@ -254,6 +254,39 @@ qadevOOo      🔨  OOoRunner.jar built (//main/qadevOOo:OOoRunner — qadevOOo 
 testgraphical ⬜  (graphical/visual regression tests; needs instsetoo_native + qadevOOo)
 
 ── Remaining: Java-based ────────────────────────────────────────────────
+JAVA2 LOADER — STARTED 2026-08-05.  The bucket's real first blocker was NOT
+javamaker (already built): com.sun.star.loader.Java2 had NO IMPLEMENTATION.
+javaloader.uno.dll + javavm.uno.dll were never built while BOTH were registered
+in services.rdb MAPPED TO bootstrap.uno.dll as a placeholder — unworkable, since
+neither impl is in that DLL.  Now built (//main/stoc), staged, and registered at
+their real DLLs; x64 //main/staging:install GREEN per user build 2026-08-05.
+TWO LANDMINES: (1) SOLAR_JAVA is LOAD-BEARING — jvmaccess/virtualmachine.hxx
+pulls the real <jni.h> only under it, else stubs, so every JNIEnv-> call is
+C2027 even in javaloader.cxx which #includes "jni.h" ITSELF (the stub is already
+in scope); (2) javavm needs /Zc:wchar_t- (passes sal_Unicode ptr into NewString/
+GetStringRegion; on Windows sal_Unicode IS wchar_t, distinct from jchar unless
+wchar_t is unsigned short), javaloader does NOT (only NewStringUTF).
+NEXT STEP IS STAGING, NOT COMPILATION — and it is not just a classes/ dest:
+(a) Bazel jar names ≠ runtime names (java_library "x" → libx.jar, runtime wants
+bare unoloader.jar/jurt.jar/juh.jar/unoil.jar/java_uno.jar by EXACT string) so
+each needs an explicit destname (stage_install's manifest already has that 3rd
+column); (b) ridl.jar must be MERGED not copied — upstream's holds generated UDK
+types + 27 hand-written sources, but here exports=[":udkapi_java"] is
+COMPILE-time only, so libridl.jar has no com.sun.star.uno.* (fix = the
+java_binary(create_executable=False) deploy-jar trick from propertysetmixin);
+(c) the jars need MANIFESTS nothing currently emits (checked-in at
+jurt/util/manifest, javaunohelper/util/manifest, ridljar/.../unoloader/manifest
+— Sealed:, RegistrationClassName:, UNO-Type-Path:), and UnoClassLoader reads
+UNO-Type-Path off the main attributes, so they are load-bearing; neither
+jar_from_directory (bare `jar cf`) nor java_library sets one.  OPEN QUESTION to
+resolve FIRST: how jurt/ridl/unoil actually reach the class loader given
+URE_INTERNAL_JAVA_CLASSPATH expands empty and juh's UNO-Type-Path is empty —
+read UnoClassLoader.getClassLoader() + javavm.cxx's UnoClassLoader construction
+before wiring.  Also still needed: URE_INTERNAL_JAVA_DIR in
+program/fundamental.ini (NOT uno.ini — theMacroExpander resolves against the
+URE_BOOTSTRAP file; uno.ini already has it, fundamental.ini does not), and a
+jvmfwk JRE config (javavendors.xml + jvmfwk3) or jvmfwk finds no JRE.
+See main/stoc/readme.md.
 NOTE: rules_java 8.11.0 IS now wired (MODULE.bazel) and the core Java UNO
 runtime is migrated & green — ridljar/jurt/jvmaccess/javaunohelper/jvmfwk/
 bridges (incl. the java_uno JNI bridge: java_uno.dll + java_uno.jar, done
