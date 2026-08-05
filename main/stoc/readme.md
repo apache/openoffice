@@ -181,14 +181,28 @@ direction. Reversible if the jars ever need integrity sealing.
   `SAL_CONFIGFILE("/jvmfwk3")` relative to its own library directory, so it stays
   `jvmfwk3.ini` even though the library is built as `jvmfwk.dll` here.
 
-#### Still open
+#### Verified end to end
 
-- **No `Package_jvmfwk` equivalent for `sunjavapluginrc`.** Upstream ships it
-  next to the plugin with `JFW_PLUGIN_DO_NOT_CHECK_ACCESSIBILITY=1`; jvmfwk reads
-  that key through the *default* `rtl::Bootstrap`, not a plugin-private ini, so
-  the file appears to be inert in an office install. Left unstaged; the fallback
-  is a registry probe of `HKCU\Software\OpenOffice\Accessibility\AtToolSupport`.
-- **End-to-end verification.** The chain builds and stages; it has not yet been
-  exercised by loading an actual Java UNO component. The natural first probe is
-  `cppuhelper/qa/propertysetmixin`'s three red `testJava*` cases, which need
-  exactly this (plus that suite's own Java component jar).
+`//main/cppuhelper:cppuhelper_qa_propertysetmixin` is **6/6 GREEN** as of
+2026-08-05 — the first Java UNO component this tree has ever loaded. The three
+`testJava*` cases start a real JVM through jvmfwk, have javaloader build a class
+loader over `qa_propertysetmixin.uno.jar`, instantiate
+`test.cppuhelper.propertysetmixin.comp.JavaSupplier`, and round-trip UNO calls
+into it. They share their test bodies with the three `testCpp*` cases, so the
+same assertions now pass through both a C++ and a Java implementation of the
+same interfaces.
+
+Getting there turned up four more gaps beyond the staging above; see
+`main/jvmfwk/readme.md` for the JRE-recognition ones and the commit history for
+the rest. The one worth repeating here, because it will bite any future
+`gtest_test`:
+
+**A literal `%` in a `gtest_test` `env` value was eaten by the launcher.** The
+launcher is a `.bat`, where `%` is a metacharacter — and percent-digit is the
+silent case, since `cmd` reads `%2` as the script's (empty) second argument and
+drops it. A `%20`-escaped file URL is exactly that shape, so
+`file:///C:/Program%20Files%20(x86)/…` arrived as
+`file:///C:/Program0Files0(x86)/…`. `_expand_tokens` in
+`build/rules/gtest_test.bzl` now doubles `%` before substituting its own
+`%VAR%` references. Nothing reported an error at any layer; the only symptom was
+jvmfwk saying the JRE "could not be recognized".

@@ -1,6 +1,7 @@
 package(default_visibility = ["//visibility:public"])
 
 load("//build/rules:copy_file.bzl", "copy_file")
+load("//build/rules:java_pipeline.bzl", "javac_classes")
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 
 _COPTS = [
@@ -185,4 +186,54 @@ copy_file(
     name = "javavendors_xml",
     src  = "distributions/OpenOfficeorg/javavendors_wnt.xml",
     out  = "javavendors.xml",
+)
+
+# ── JREProperties.class → program/ ───────────────────────────────────────────
+# How sunjavaplugin actually identifies a JRE: it does not parse files, it RUNS
+# the candidate —
+#     <jre>/bin/java -classpath <dir of sunjavaplugin.dll> JREProperties
+# — and reads java.vendor / java.version / java.home off stdout
+# (plugins/sunmajor/pluginlib/util.cxx getJavaProps).  So this must be a LOOSE
+# .class file sitting next to the plugin; a jar in that directory is not on
+# that classpath.  Missing, every JRE on the machine is "not recognized":
+#
+#   [Java framework] The JRE specified by the bootstrap variable
+#   UNO_JAVA_JFW_JREHOME or UNO_JAVA_JFW_ENV_JREHOME could not be recognized.
+#
+# Upstream builds it with Ant (Ant_jreproperties.mk); javac_classes is the
+# Bazel equivalent.  --release 8 because it runs on the CANDIDATE JRE, not on
+# the build JDK — it must load on the oldest JRE we are willing to accept.
+javac_classes(
+    name    = "jreproperties_class",
+    srcs    = ["java/jreproperties/src/main/java/JREProperties.java"],
+    outs    = ["JREProperties.class"],
+    release = "8",
+)
+
+# ── sunjavaplugin.ini → program/ ─────────────────────────────────────────────
+# Read by the plugin from its own directory (util.cxx InitBootstrapData, via
+# SAL_CONFIGFILE("/sunjavaplugin")).  Its one key adds the "noaccessibility"
+# argument to the JREProperties run above, which makes the probe skip
+# java.awt.Toolkit.getDefaultToolkit().
+#
+# Staged for parity with upstream, which ships it; MEASURED not to be required —
+# //main/cppuhelper:cppuhelper_qa_propertysetmixin still passes 6/6 without it on
+# this machine.  Keep it anyway: the toolkit call is the probe's only dependency
+# on a usable display, and it is what would bite in a headless or service
+# context, which is not what that test exercises.
+copy_file(
+    name = "sunjavaplugin_ini",
+    src  = "plugins/sunmajor/pluginlib/sunjavapluginrc",
+    out  = "sunjavaplugin.ini",
+)
+
+# Everything jvmfwk needs in program/ that is not a DLL, and so is not picked up
+# by flat_install's extension filter.
+filegroup(
+    name = "runtime_config",
+    srcs = [
+        ":javavendors_xml",
+        ":jreproperties_class",
+        ":sunjavaplugin_ini",
+    ],
 )

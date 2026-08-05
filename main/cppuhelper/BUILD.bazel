@@ -1,7 +1,9 @@
 package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("@rules_java//java:defs.bzl", "java_import", "java_library")
 load("//build/rules:idl_pipeline.bzl", "idl_library")
+load("//build/rules:java_pipeline.bzl", "jar_from_directory", "javamaker_classes", "uno_jar")
 load("//build/rules:merge_rdb.bzl", "merge_rdb")
 load("//build/rules:gtest_test.bzl", "gtest_test")
 load("//main/postprocess:postprocess.bzl", "services_rdb")
@@ -219,10 +221,10 @@ gtest_test(
     runtime_dlls = _QA_RUNTIME_DLLS,
 )
 
-# NOTE this suite is MIXED, not a green gate: cppuhelper_qa_propertysetmixin
-# contributes 3 known-red cases (see its own note below).  Every wired suite
-# belongs here, passing and failing alike — same convention as //main/sal:
-# a red left OUT of its module's suite is a test that gets forgotten.
+# Fully GREEN as of 2026-08-05 (propertysetmixin's 3 Java cases were the last
+# reds).  Every wired suite belongs here, passing and failing alike — same
+# convention as //main/sal: a red left OUT of its module's suite is a test that
+# gets forgotten.
 test_suite(
     name = "cppuhelper_tests",
     tests = [
@@ -290,39 +292,108 @@ cc_binary(
     testonly = True,
 )
 
-# $OOO_INBUILD_SHAREDLIB_DIR is the dmake COMPONENTPREFIX_INBUILD_NATIVE
-# (solenv/inc/settings.mk) — "the component lives wherever this build put it",
-# resolved by the env var below to the staged test dir.
+# ── The suite's OTHER component: the same interfaces, implemented in Java ────
+# This is what the three testJava* cases instantiate, and the first thing in the
+# tree to exercise com.sun.star.loader.Java2 end to end: javavm.uno starts a JVM
+# through jvmfwk, javaloader.uno builds a class loader over the jar below and
+# calls its RegistrationClassName.
+#
+# Java classes for the private IDL.  -X udkapi excludes the dependent types
+# (com.sun.star.beans.Ambiguous/Defaulted/Optional, com.sun.star.lang.XComponent
+# — all udkapi), which the runtime already gets from ridl.jar; without it they
+# would be duplicated into this jar.
+javamaker_classes(
+    name      = "cppuhelper_qa_psm_java_classes",
+    rdb       = ":cppuhelper_qa_psm_idl",
+    extra_rdb = "//main/udkapi:udkapi_idl",
+    testonly  = True,
+)
+
+jar_from_directory(
+    name        = "cppuhelper_qa_psm_java_types_jar",
+    classes_dir = ":cppuhelper_qa_psm_java_classes",
+    testonly    = True,
+)
+
+java_import(
+    name     = "cppuhelper_qa_psm_java_types",
+    jars     = [":cppuhelper_qa_psm_java_types_jar"],
+    testonly = True,
+)
+
+# JARFILES in the dmake recipe is java_uno.jar juh.jar jurt.jar ridl.jar; the
+# java_uno one is a RUNTIME dependency of the bridge, not a compile dependency
+# of this source, so it is not listed here.  ridl covers com.sun.star.beans.*
+# (udkapi types), jurt com.sun.star.comp.loader.FactoryHelper, juh
+# com.sun.star.lib.uno.helper.{WeakBase,PropertySetMixin} — the Java twin of the
+# C++ mixin under test.
+java_library(
+    name = "cppuhelper_qa_psm_javasupplier",
+    srcs = ["qa/propertysetmixin/JavaSupplier.java"],
+    javacopts = ["--release", "8", "-XepDisableAllChecks"],
+    deps = [
+        ":cppuhelper_qa_psm_java_types",
+        "//main/ridljar:ridl",
+        "//main/jurt:jurt",
+        "//main/javaunohelper:juh_jar",
+    ],
+    testonly = True,
+)
+
+# Both class trees in one jar, exactly as the dmake recipe's
+# `jar cfm $@ manifest -C $(CLASSDIR) test/cppuhelper/propertysetmixin` does —
+# the implementation and the private types share that package root.
+#
+# RegistrationClassName is not decoration here: it is the only way javaloader
+# finds the class to register, and it is the reason this needs uno_jar rather
+# than a plain java_library (see build/rules/java_pipeline.bzl).
+uno_jar(
+    name           = "cppuhelper_qa_psm_uno_jar",
+    out            = "qa_propertysetmixin.uno.jar",
+    jars           = [
+        ":cppuhelper_qa_psm_javasupplier",
+        ":cppuhelper_qa_psm_java_types_jar",
+    ],
+    manifest_lines = [
+        "RegistrationClassName: test.cppuhelper.propertysetmixin.comp.JavaSupplier",
+    ],
+    testonly       = True,
+)
+
+# $OOO_INBUILD_SHAREDLIB_DIR and $OOO_INBUILD_JAR_DIR are the dmake
+# COMPONENTPREFIX_INBUILD_NATIVE / _JAVA (solenv/inc/settings.mk) — "the
+# component lives wherever this build put it", resolved by the env vars below to
+# the staged test dir.
 services_rdb(
     name = "cppuhelper_qa_psm_services",
     components = {
         "qa/propertysetmixin/qa_propertysetmixin.cpp.component":
             "vnd.sun.star.expand:$OOO_INBUILD_SHAREDLIB_DIR/qa_propertysetmixin.uno.dll",
+        "qa/propertysetmixin/qa_propertysetmixin.java.component":
+            "vnd.sun.star.expand:$OOO_INBUILD_JAR_DIR/qa_propertysetmixin.uno.jar",
     },
     out = "psm_services.rdb",
     xslt = "//main/solenv/bin:packcomponents.xslt",
     testonly = True,
 )
 
-# CONFIRMED 2026-08-05: 3 of 6 pass (testCpp{Empty1,Empty2,Full}), 3 red.
+# 6/6 GREEN as of 2026-08-05 — and the first Java UNO component this tree has
+# ever loaded.  The three testJava* cases start a real JVM through jvmfwk, have
+# javaloader build a class loader over qa_propertysetmixin.uno.jar, and
+# round-trip UNO calls into JavaSupplier.
+#
 # The three test BODIES are shared functions — testEmpty1/testEmpty2/testFull,
 # each called once with getCppSupplier() and once with getJavaSupplier() — so
-# the identical body passing for C++ and failing for Java isolates the fault to
-# service instantiation, not to anything in PropertySetMixin.  That is also the
-# proof that the rest of this wiring is correct: the UNO_TYPES/UNO_SERVICES
-# override, the private IDL types, and the component DLL loading through the
-# vnd.sun.star.expand: URI all work.
+# the same assertions now pass through a C++ and a Java implementation of the
+# same interfaces.  That symmetry is also the diagnostic: while the Java half
+# was red, the identical body passing for C++ isolated the fault to service
+# instantiation rather than to anything in PropertySetMixin.
 #
-# EXPECTED RED: 3 of 6.  testJavaEmpty1/testJavaEmpty2/testJavaFull ask for
-# test.cppuhelper.propertysetmixin.JavaSupplier, which lives in the suite's
-# OTHER component — a Java one (JavaSupplier.java + qa_propertysetmixin.java.
-# component + a .uno.jar built by javamaker).  That belongs to the Java bucket
-# and is not wired, so those three fail to instantiate the service.  The three
-# C++ cases are the ones that actually exercise PropertySetMixin; wiring the
-# suite now means the mixin is covered, and the Java half turns green later for
-# free.  (UNO exceptions do not derive from std::exception, so gtest reports
-# the Java failures as a bare "Unknown C++ exception" — that is the expected
-# shape of the miss, not a crash.)
+# DEBUGGING NOTE for whoever sees these go red again: UNO exceptions do not
+# derive from std::exception, so gtest reports any failure here as a bare
+# "Unknown C++ exception thrown in the test body" with no message.  The real
+# diagnosis is on stderr, flushed at process exit — read the END of test.log,
+# not the gtest summary.
 gtest_test(
     name = "cppuhelper_qa_propertysetmixin",
     srcs = ["qa/propertysetmixin/test_propertysetmixin.cxx"],
@@ -343,6 +414,7 @@ gtest_test(
     data_tree = {
         ":cppuhelper_qa_psm_types": "psm_types.rdb",
         ":cppuhelper_qa_psm_services": "psm_services.rdb",
+        ":cppuhelper_qa_psm_uno_jar": "qa_propertysetmixin.uno.jar",
     },
     env = {
         # Space-separated URL lists.  rtl::Bootstrap has no "append", and it
@@ -364,8 +436,44 @@ gtest_test(
             "file:///$(PROGRAM_URL)/services.rdb " +
             "file:///$(RUNDIR_URL)/psm_services.rdb"
         ),
-        # Where the vnd.sun.star.expand: URI in psm_services.rdb resolves to.
+        # Where the vnd.sun.star.expand: URIs in psm_services.rdb resolve to.
         "OOO_INBUILD_SHAREDLIB_DIR": "file:///$(RUNDIR_URL)",
-    },
+        "OOO_INBUILD_JAR_DIR": "file:///$(RUNDIR_URL)",
+        # Put jvmfwk in DIRECT mode with an explicit JRE.
+        #
+        # Its other mode, JFW_MODE_APPLICATION, reads a javasettings_<os>_<arch>
+        # .xml recording which JRE the user picked and whether Java is enabled —
+        # written by Tools > Options > Java, i.e. by a human, at some point in
+        # the past.  A test fixture has no such history, so jfw_startVM() would
+        # return JFW_E_JAVA_DISABLED before ever looking for a JVM.  Direct mode
+        # (any of UNO_JAVA_JFW_{JREHOME,ENV_JREHOME,CLASSPATH,PARAMETER_1} set —
+        # fwkbase.cxx getMode) skips the settings layer and takes what it is
+        # given.  sunjavaplugin.dll still inspects it, so that path is exercised.
+        #
+        # The JRE must match the TARGET arch: this test process is 32-bit for
+        # the default build and loads a 32-bit jvm.dll into itself.  That rules
+        # out the ENV_JREHOME/$JAVA_HOME form — one JAVA_HOME cannot be right
+        # for both arches, and bazel does not forward it to tests anyway.
+        #
+        # A URL, not a path, and forward slashes: UNO_JAVA_JFW_JREHOME is taken
+        # as-is (unlike ENV_JREHOME, which goes through
+        # getFileURLFromSystemPath), and every rtl::Bootstrap value is macro-
+        # expanded, where a backslash is an ESCAPE character — "C:\Program"
+        # would come back "C:Program".  Spaces must be %20-encoded for osl's
+        # file URL parsing.
+        #
+        # TODO: machine-specific, same as //main/bridges test_any_jni's
+        # jvm_path_dirs.  Both want one build setting for "the JRE for this
+        # arch".  Set below, per arch.
+    } | select({
+        "//build:arch_x64": {
+            "UNO_JAVA_JFW_JREHOME":
+                "file:///C:/Program%20Files/Eclipse%20Adoptium/jdk-8.0.452.9-hotspot",
+        },
+        "//conditions:default": {
+            "UNO_JAVA_JFW_JREHOME":
+                "file:///C:/Program%20Files%20(x86)/Eclipse%20Adoptium/jdk-8.0.452.9-hotspot",
+        },
+    }),
     uno_install = "//main/staging:install",
 )

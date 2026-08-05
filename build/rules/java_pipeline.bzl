@@ -270,6 +270,74 @@ def _uno_jar_impl(ctx):
 
     return [DefaultInfo(files = depset([jar_out]))]
 
+# ---------------------------------------------------------------------------
+# javac_classes
+# ---------------------------------------------------------------------------
+# Compile .java to LOOSE .class files rather than a jar.
+#
+# Almost everything wants a jar, which is why java_library exists.  This is for
+# the rare consumer that puts a DIRECTORY on the classpath and names a class:
+# jvmfwk's sunjavaplugin runs a candidate JRE as
+#     <jre>/bin/java -classpath <dir of sunjavaplugin.dll> JREProperties
+# to read its system properties (util.cxx getJavaProps).  A jar sitting in that
+# directory is not on that classpath — only a real JREProperties.class is.
+#
+# `outs` is explicit because Bazel must know the outputs up front and javac's
+# file names are not derivable from the source names alone (nested and
+# anonymous classes each get their own .class).
+# ---------------------------------------------------------------------------
+
+def _javac_classes_impl(ctx):
+    java_rt = ctx.toolchains["@bazel_tools//tools/jdk:runtime_toolchain_type"].java_runtime
+
+    javac = None
+    for f in java_rt.files.to_list():
+        if f.basename in ("javac.exe", "javac") and (
+            "/bin/" in f.path or "\\bin\\" in f.path
+        ):
+            javac = f
+            break
+    if javac == None:
+        fail("javac_classes: could not locate javac(.exe) in the JDK runtime")
+
+    outs = [ctx.actions.declare_file(n) for n in ctx.attr.outs]
+    out_dir = outs[0].dirname
+
+    ctx.actions.run(
+        executable = javac.path,
+        arguments = (
+            ["--release", ctx.attr.release, "-d", out_dir] +
+            [s.path for s in ctx.files.srcs]
+        ),
+        inputs = depset(ctx.files.srcs, transitive = [java_rt.files]),
+        outputs = outs,
+        mnemonic = "JavacClasses",
+        progress_message = "Compiling %s to loose .class files" % ctx.label.name,
+        use_default_shell_env = False,
+    )
+
+    return [DefaultInfo(files = depset(outs))]
+
+javac_classes = rule(
+    implementation = _javac_classes_impl,
+    attrs = {
+        "srcs": attr.label_list(
+            allow_files = [".java"],
+            mandatory   = True,
+        ),
+        "outs": attr.string_list(
+            mandatory = True,
+            doc       = "Every .class file javac will emit, e.g. [\"JREProperties.class\"].",
+        ),
+        "release": attr.string(
+            default = "8",
+            doc     = "--release level.  Must be <= the oldest JRE expected to run these classes.",
+        ),
+    },
+    toolchains = ["@bazel_tools//tools/jdk:runtime_toolchain_type"],
+    doc = "Compile .java sources to loose .class files (no jar).",
+)
+
 uno_jar = rule(
     implementation = _uno_jar_impl,
     attrs = {

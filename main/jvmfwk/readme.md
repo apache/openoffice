@@ -64,20 +64,62 @@ and is what actually calls `JNI_CreateJavaVM`.
 - No `/Zc:wchar_t-`: unlike `javavm`, this code never hands `sal_Unicode*` to a
   JNI string call.
 
+## How a JRE is actually recognised — and `JREProperties.class`
+
+`sunjavaplugin` does not parse files to identify a JRE. It **runs** the
+candidate:
+
+```
+<jre>/bin/java -classpath <dir of sunjavaplugin.dll> JREProperties
+```
+
+and reads `java.vendor` / `java.version` / `java.home` off stdout, character
+code by character code (`util.cxx` `getJavaProps`). So `JREProperties.class`
+must be a **loose class file next to the plugin** — a jar sitting in that
+directory is not on that `-classpath`. Upstream builds it with Ant
+(`Ant_jreproperties.mk`); here `javac_classes`
+(`build/rules/java_pipeline.bzl`) is the equivalent, at `--release 8` because
+it runs on the *candidate* JRE, not on the build JDK.
+
+Without it, every JRE on the machine is rejected with the singularly
+unhelpful:
+
+```
+[Java framework] The JRE specified by the bootstrap variable UNO_JAVA_JFW_JREHOME
+or UNO_JAVA_JFW_ENV_JREHOME could not be recognized.
+```
+
+That message covers *every* failure mode of `jfw_getJavaInfoByPath` — missing
+probe class, unsupported vendor, unreadable path — so treat it as "look at all
+three", not as a vendor problem.
+
+**The vendor gate is a second, independent filter.** `vendorlist.cxx` maps a
+`java.vendor` string to a handler class, and `javavendors.xml` lists which
+vendors are acceptable at which minimum version. A JRE passes only if it
+appears in **both**. `Temurin` was in neither — see the source-fix commit.
+
 ## Runtime configuration staged into `program/`
 
 - `javavendors.xml` — from `distributions/OpenOfficeorg/javavendors_wnt.xml`, via
   `copy_file` because the bootstrap value names the bare filename.
+- `JREProperties.class` — the probe above.
+- `sunjavaplugin.ini` — from `plugins/sunmajor/pluginlib/sunjavapluginrc`. Read
+  by the plugin from its own directory (`util.cxx` `InitBootstrapData`,
+  `SAL_CONFIGFILE("/sunjavaplugin")`); its one key adds `noaccessibility` to the
+  probe run so it skips `java.awt.Toolkit.getDefaultToolkit()`. Measured *not*
+  to be required — `//main/cppuhelper:cppuhelper_qa_propertysetmixin` passes 6/6
+  without it — but staged for parity, since that toolkit call is the probe's only
+  dependency on a usable display and would bite headless.
 - `jvmfwk3.ini` — in `main/staging/`. The name is fixed by
   `source/fwkutil.hxx`, which hardcodes `SAL_CONFIGFILE("/jvmfwk3")` relative to
   its own library directory, so it stays `jvmfwk3` even though the library here
   is `jvmfwk.dll` rather than upstream's `jvmfwk3.dll`.
 
-Not staged: `plugins/sunmajor/pluginlib/sunjavapluginrc`. Its one key
-(`JFW_PLUGIN_DO_NOT_CHECK_ACCESSIBILITY`) is read through the *default*
-`rtl::Bootstrap`, not a plugin-private ini, so the file looks inert in an office
-install; without it jvmfwk falls back to probing
-`HKCU\Software\OpenOffice\Accessibility\AtToolSupport`.
+`URE_INTERNAL_LIB_DIR` — which `javavendors.xml`'s plugin URI expands through —
+is **not** needed in `program/fundamental.ini`. It reads like it should be (the
+URI is expanded by `cppu::bootstrap_expandUri` against `URE_BOOTSTRAP`), but
+`findPlugin` then resolves the result relative to the jvmfwk library's own
+directory, which is already `program/`. Measured: adding it changes nothing.
 
 See `main/stoc/readme.md` for the full Java2-loader bootstrap chain.
 

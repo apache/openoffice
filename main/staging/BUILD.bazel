@@ -662,12 +662,16 @@ tree_install(
     dst     = "program/classes",
 )
 
-# ── program/javavendors.xml — jvmfwk JRE-selection policy ────────────────────
-# Not staged by _install_program: flat_install filters on _INSTALL_EXTS, and
-# adding "xml" there would sweep in every .xml in the transitive closure.
+# ── program/ — jvmfwk's non-DLL runtime files ────────────────────────────────
+# javavendors.xml (JRE-selection policy), JREProperties.class (the probe
+# sunjavaplugin RUNS on a candidate JRE to read its properties) and
+# sunjavaplugin.ini.  Not staged by _install_program: flat_install filters on
+# _INSTALL_EXTS, and adding "xml"/"class" there would sweep in every such file
+# in the transitive closure.  JREProperties.class in particular must land beside
+# sunjavaplugin.dll — that directory is the -classpath the plugin passes.
 tree_install(
     name    = "_install_java_config",
-    src     = "//main/jvmfwk:javavendors_xml",
+    src     = "//main/jvmfwk:runtime_config",
     flatten = True,
     dst     = "program",
 )

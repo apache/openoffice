@@ -84,6 +84,20 @@ _TOKENS = [
 ]
 
 def _expand_tokens(s):
+    # A literal '%' has to be doubled FIRST, before the tokens below introduce
+    # the launcher's own %VAR% references (which must stay single).
+    #
+    # LANDMINE: '%' is a metacharacter in a .bat, and a percent-DIGIT sequence is
+    # the worst case because it fails silently — cmd reads %2 as the script's
+    # second argument, which is empty, and drops it.  A %20-escaped file URL is
+    # exactly that shape, so
+    #     file:///C:/Program%20Files%20(x86)/…
+    # reaches the test as
+    #     file:///C:/Program0Files0(x86)/…
+    # with no error anywhere.  It cost a debugging session via
+    # UNO_JAVA_JFW_JREHOME, where the only symptom was jvmfwk reporting the JRE
+    # "could not be recognized".
+    s = s.replace("%", "%%")
     for token, var in _TOKENS:
         s = s.replace(token, var)
     return s

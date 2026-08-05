@@ -189,9 +189,16 @@ test          🔨  C++ unit-test infra runnable — NOW THE FRONT-LINE TASK: br
                       decade may encode a mechanism the product no longer has — check
                       the test's BOOTSTRAP PATH against current source before costing
                       the fixture.
-                    • cppuhelper/qa/propertysetmixin — DONE 2026-08-05, 3/6 GREEN
-                      (testCpp{Empty1,Empty2,Full}); the 3 reds are the Java half, see
-                      below.  It is fixture (a) (in-process bootstrap,
+                    • cppuhelper/qa/propertysetmixin — 6/6 GREEN 2026-08-05, and the
+                      FIRST Java UNO component this tree has ever loaded (the 3 testJava*
+                      cases start a real JVM via jvmfwk, javaloader builds a class loader
+                      over qa_propertysetmixin.uno.jar, UNO round-trips into it).
+                      //main/cppuhelper:cppuhelper_tests is therefore a GREEN GATE again.
+                      DEBUGGING NOTE: UNO exceptions don't derive from std::exception, so
+                      gtest reports any failure here as a bare "Unknown C++ exception"
+                      with NO message — the real diagnosis is on stderr, flushed at
+                      process exit, i.e. at the END of test.log, not in the gtest summary.
+                      It is fixture (a) (in-process bootstrap,
                       NO soffice) despite living behind OOO_SUBSEQUENT_TESTS — the old
                       note in cppuhelper/BUILD.bazel calling it an OfficeConnection test
                       was wrong.  Uses the MODERN .component mechanism, so it does NOT
@@ -207,18 +214,21 @@ test          🔨  C++ unit-test infra runnable — NOW THE FRONT-LINE TASK: br
                       ENVIRONMENT BEFORE the ini, so env UNO_TYPES/UNO_SERVICES REPLACE
                       fundamental.ini's and must REPEAT them (incl. oovbaapi.rdb) before
                       adding the test's own — DRIFT WATCH on main/staging/fundamental.ini.
-                      3 RED, as predicted: testJava{Empty1,Empty2,Full} need the suite's
-                      OTHER component, a Java one (JavaSupplier.java + .uno.jar via
-                      javamaker) = Java bucket; they surface as "Unknown C++ exception"
-                      (UNO exceptions don't derive from std::exception).  They turn green
-                      there with NO change here.  The 3 test BODIES are shared functions
-                      called once per supplier, so the same body passing for C++ and
-                      failing for Java ISOLATES the fault to service instantiation — and
-                      is the proof the rest of the wiring is right (registry override,
-                      private IDL types, component DLL via the expand: URI).
-                      //main/cppuhelper:cppuhelper_tests is therefore now MIXED, not a
-                      green gate — a red left out of its module's suite is a test that
-                      gets forgotten (same convention as //main/sal:sal_tests).
+                      The Java half is now wired too: javamaker_classes on the private IDL
+                      + java_library(JavaSupplier.java) merged by uno_jar into
+                      qa_propertysetmixin.uno.jar (RegistrationClassName manifest), a 2nd
+                      component in the test's services.rdb at
+                      vnd.sun.star.expand:$OOO_INBUILD_JAR_DIR/…, and
+                      UNO_JAVA_JFW_JREHOME putting jvmfwk in DIRECT mode (its other mode
+                      wants a javasettings_<os>_<arch>.xml a human wrote via Tools >
+                      Options > Java, which a fixture has no history of ⇒
+                      JFW_E_JAVA_DISABLED).  The JRE must match the TARGET arch (32-bit
+                      for the default build), so the path is select()ed per arch —
+                      machine-specific, like //main/bridges test_any_jni's jvm_path_dirs;
+                      both want one build setting for "the JRE for this arch".
+                      The 3 test BODIES are shared functions called once per supplier, so
+                      the same assertions now pass through BOTH a C++ and a Java
+                      implementation of the same interfaces.
                       See main/cppuhelper/readme.md.
                     • xmlsecurity/qa/certext — BLOCKED, and NOT on fixture (b) as
                       recorded here before: it #includes <neon/ne_ssl.h> and calls
@@ -314,9 +324,42 @@ NAME is fixed by fwkutil.hxx's SAL_CONFIGFILE("/jvmfwk3") relative to the
 library's own dir, so it stays jvmfwk3 even though ours is jvmfwk.dll.
 NOT staged: sunjavapluginrc — its one key is read via the DEFAULT rtl::Bootstrap,
 not a plugin-private ini, so it looks inert in an office install.
-NEXT: exercise it.  Best first probe = cppuhelper/qa/propertysetmixin's 3 RED
-testJava* cases, which need exactly this chain plus that suite's own Java
-component jar (JavaSupplier.java + .uno.jar via javamaker).
+EXERCISED AND GREEN 2026-08-05 — cppuhelper/qa/propertysetmixin 6/6, the first
+Java UNO component ever loaded here (see the test bucket above).  Getting from
+"staged" to "green" took FOUR more fixes, none of them in the staging itself:
+ (a) JREProperties.class was never built.  sunjavaplugin does not PARSE a JRE, it
+     RUNS it — "<jre>/bin/java -classpath <dir of sunjavaplugin.dll>
+     JREProperties" — and reads java.vendor/version off stdout (util.cxx
+     getJavaProps).  So it must be a LOOSE .class next to the plugin; a jar in
+     that dir is not on that -classpath.  New rule javac_classes (java_pipeline
+     .bzl), --release 8 since it runs on the CANDIDATE JRE not the build JDK.
+     Upstream builds it with Ant (Ant_jreproperties.mk).
+ (b) vendor "Temurin" was in NEITHER gate — vendorlist.cxx's compiled-in map nor
+     javavendors*.xml.  Adoptium renamed AdoptOpenJDK→Temurin in 2021 (8u302+),
+     so stock AOO rejects every current JDK.  SOURCE FIX, separate commit.
+ (c) 64-bit JREs ship no client VM, and the WNT runtime-path lists had only
+     bin/{client,hotspot,classic,jrockit}/jvm.dll — added bin/server/jvm.dll.
+     Upstream already did the equivalent for UNX ("/lib/server/libjvm.so // > 1.8")
+     and never for Windows.  Matters for x64 only; x86 finds client first.
+ (d) LANDMINE, cost most of the session — a literal % in a gtest_test `env` value
+     was EATEN by the launcher.  The launcher is a .bat, where % is a
+     metacharacter, and percent-DIGIT is the silent case: cmd reads %2 as the
+     script's (empty) 2nd argument and drops it.  A %20-escaped file URL is
+     exactly that shape, so file:///C:/Program%20Files%20(x86)/… arrived as
+     file:///C:/Program0Files0(x86)/….  `_expand_tokens` in gtest_test.bzl now
+     doubles % BEFORE substituting its own %VAR% refs.  No layer reported an
+     error; the only symptom was jvmfwk's "could not be recognized".
+GENERAL TRIAGE RULE from (a)+(b)+(d): jvmfwk's "The JRE … could not be
+recognized" covers EVERY failure mode of jfw_getJavaInfoByPath — missing probe
+class, unsupported vendor, unreadable path — so it means "check all three", not
+"vendor problem".  And because UNO exceptions don't derive from std::exception,
+gtest shows only "Unknown C++ exception": the real message is on stderr at the
+END of test.log.
+MEASURED NOT LOAD-BEARING (do not cargo-cult): URE_INTERNAL_LIB_DIR in
+fundamental.ini (findPlugin resolves the expanded URI relative to the jvmfwk
+library's own dir, already program/), and sunjavaplugin.ini (staged anyway for
+upstream parity — its noaccessibility key is the probe's only dependency on a
+usable display, so it would bite headless).
 See main/stoc/readme.md and main/jvmfwk/readme.md.
 NOTE: rules_java 8.11.0 IS now wired (MODULE.bazel) and the core Java UNO
 runtime is migrated & green — ridljar/jurt/jvmaccess/javaunohelper/jvmfwk/
