@@ -11,6 +11,9 @@ filegroup(
         "uno.ini",
         # PYUNO_LOADER_PYTHONHOME / PYTHONPATH for pythonloader.dll.
         "pythonloader.uno.ini",
+        # Vendor settings + JRE-selection data paths for jvmfwk.dll.  Name fixed
+        # by fwkutil.hxx, not by us — see the file's own header.
+        "jvmfwk3.ini",
     ],
 )
 
@@ -66,6 +69,12 @@ collect_outputs(
 
         # ── JVM framework (required by cui, svl, svtools, desktop at load time) ─
         "//main/jvmfwk:jvmfwk",
+        # Vendor plugin — the half that actually knows how to find and start a
+        # JRE.  jvmfwk osl_loadModule()s it by the path in javavendors.xml
+        # ("vnd.sun.star.expand:$URE_INTERNAL_LIB_DIR/sunjavaplugin.dll"), so
+        # nothing links it and it must be listed here explicitly.  Missing, the
+        # office reports no Java installed however many JDKs are present.
+        "//main/jvmfwk:sunjavaplugin",
 
         # ── UNO runtime infrastructure ────────────────────────────────────────
         "//main/stoc:bootstrap.uno",
@@ -620,6 +629,49 @@ tree_install(
     dst          = "share/config",
 )
 
+# ── program/classes/ — Java UNO runtime jars ($URE_INTERNAL_JAVA_DIR) ────────
+# com.sun.star.loader.Java2 bootstraps from here.  javavm.cxx builds a
+# URLClassLoader over "$URE_INTERNAL_JAVA_DIR/unoloader.jar" to reach
+# com.sun.star.lib.unoloader.UnoClassLoader, whose createUrls() then hardcodes
+# java_uno.jar / juh.jar / jurt.jar / ridl.jar relative to the same base.  All
+# five are exact-string lookups, which is why the uno_jar rule fixes each output
+# filename at the producing target rather than renaming during staging.
+#
+# unoil.jar is the exception: it is NOT one of the hardcoded names and arrives
+# through the second channel — $URE_INTERNAL_JAVA_CLASSPATH → URE_MORE_JAVA_TYPES
+# in program/fundamental.ini, passed to UnoClassLoader as its classPath argument.
+#
+# flatten: the six jars come from five different packages, so no single
+# strip_prefix applies.
+filegroup(
+    name = "java_runtime_jars",
+    srcs = [
+        "//main/ridljar:unoloader_jar",
+        "//main/ridljar:ridl_jar",
+        "//main/jurt:jurt_jar",
+        "//main/javaunohelper:juh_runtime_jar",
+        "//main/bridges:java_uno_runtime_jar",
+        "//main/unoil:unoil_jar",
+    ],
+)
+
+tree_install(
+    name    = "_install_classes",
+    src     = ":java_runtime_jars",
+    flatten = True,
+    dst     = "program/classes",
+)
+
+# ── program/javavendors.xml — jvmfwk JRE-selection policy ────────────────────
+# Not staged by _install_program: flat_install filters on _INSTALL_EXTS, and
+# adding "xml" there would sweep in every .xml in the transitive closure.
+tree_install(
+    name    = "_install_java_config",
+    src     = "//main/jvmfwk:javavendors_xml",
+    flatten = True,
+    dst     = "program",
+)
+
 # ── share/config/soffice.cfg — per-module UI configuration tree ───────────────
 # The framework PresetHandler opens share/config/soffice.cfg as a *folder* and
 # reads modules/<ModuleShortName>/{menubar,toolbar,statusbar}/*.xml at startup
@@ -657,6 +709,8 @@ filegroup(
         ":_install_images_zip",
         ":_install_images_industrial_zip",
         ":_install_uiconfig",
+        ":_install_classes",
+        ":_install_java_config",
         ":_install_python_scripts",
         # The Python stdlib tree is NOT optional: pythonloader.dll calls
         # Py_Initialize(), and Python 2.7 exit()s the process if it cannot find

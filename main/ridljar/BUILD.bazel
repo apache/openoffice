@@ -1,4 +1,4 @@
-load("//build/rules:java_pipeline.bzl", "jar_from_directory", "javamaker_classes")
+load("//build/rules:java_pipeline.bzl", "jar_from_directory", "javamaker_classes", "uno_jar")
 load("@rules_java//java:defs.bzl", "java_import", "java_library")
 
 # ── Step 1: Generate Java .class files from udkapi.rdb ───────────────────
@@ -44,5 +44,30 @@ java_library(
 java_library(
     name       = "unoloader",
     srcs       = glob(["java/unoloader/src/main/java/**/*.java"]),
+    visibility = ["//visibility:public"],
+)
+
+# ── Runtime jars → program/classes/ ──────────────────────────────────────
+# Staged by //main/staging:install.  The names are exact-string lookups, not
+# conventions: javavm.cxx::setUpUnoVirtualMachine builds a URLClassLoader over
+# "$URE_INTERNAL_JAVA_DIR/unoloader.jar" to reach UnoClassLoader, whose
+# createUrls() then hardcodes java_uno.jar / juh.jar / jurt.jar / ridl.jar
+# relative to the same base.  See main/stoc/readme.md.
+
+uno_jar(
+    name       = "unoloader_jar",
+    out        = "unoloader.jar",
+    jars       = [":unoloader"],
+    visibility = ["//visibility:public"],
+)
+
+# ridl.jar is a MERGE, not a rename.  Upstream's single jar holds both the
+# javamaker-generated UDK types and the 27 hand-written sources; here they are
+# two targets and `exports` above only wires them together at COMPILE time, so
+# libridl.jar on its own contains no com.sun.star.uno.*.
+uno_jar(
+    name       = "ridl_jar",
+    out        = "ridl.jar",
+    jars       = [":ridl", ":udkapi_java_jar"],
     visibility = ["//visibility:public"],
 )

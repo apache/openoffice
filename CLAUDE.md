@@ -266,27 +266,58 @@ C2027 even in javaloader.cxx which #includes "jni.h" ITSELF (the stub is already
 in scope); (2) javavm needs /Zc:wchar_t- (passes sal_Unicode ptr into NewString/
 GetStringRegion; on Windows sal_Unicode IS wchar_t, distinct from jchar unless
 wchar_t is unsigned short), javaloader does NOT (only NewStringUTF).
-NEXT STEP IS STAGING, NOT COMPILATION — and it is not just a classes/ dest:
-(a) Bazel jar names ≠ runtime names (java_library "x" → libx.jar, runtime wants
-bare unoloader.jar/jurt.jar/juh.jar/unoil.jar/java_uno.jar by EXACT string) so
-each needs an explicit destname (stage_install's manifest already has that 3rd
-column); (b) ridl.jar must be MERGED not copied — upstream's holds generated UDK
-types + 27 hand-written sources, but here exports=[":udkapi_java"] is
-COMPILE-time only, so libridl.jar has no com.sun.star.uno.* (fix = the
-java_binary(create_executable=False) deploy-jar trick from propertysetmixin);
-(c) the jars need MANIFESTS nothing currently emits (checked-in at
-jurt/util/manifest, javaunohelper/util/manifest, ridljar/.../unoloader/manifest
-— Sealed:, RegistrationClassName:, UNO-Type-Path:), and UnoClassLoader reads
-UNO-Type-Path off the main attributes, so they are load-bearing; neither
-jar_from_directory (bare `jar cf`) nor java_library sets one.  OPEN QUESTION to
-resolve FIRST: how jurt/ridl/unoil actually reach the class loader given
-URE_INTERNAL_JAVA_CLASSPATH expands empty and juh's UNO-Type-Path is empty —
-read UnoClassLoader.getClassLoader() + javavm.cxx's UnoClassLoader construction
-before wiring.  Also still needed: URE_INTERNAL_JAVA_DIR in
-program/fundamental.ini (NOT uno.ini — theMacroExpander resolves against the
-URE_BOOTSTRAP file; uno.ini already has it, fundamental.ini does not), and a
-jvmfwk JRE config (javavendors.xml + jvmfwk3) or jvmfwk finds no JRE.
-See main/stoc/readme.md.
+STAGING DONE 2026-08-05 — the whole bootstrap chain is now wired; what is left is
+to EXERCISE it (nothing has yet loaded a real Java UNO component).
+OPEN QUESTION ANSWERED — there are TWO channels, and conflating them is what made
+URE_INTERNAL_JAVA_CLASSPATH look optional: (1) FIVE jars arrive by HARDCODED NAME
+— javavm.cxx opens the literal "$URE_INTERNAL_JAVA_DIR/unoloader.jar", and
+UnoClassLoader.createUrls() then appends java_uno.jar/juh.jar/jurt.jar/ridl.jar.
+No manifest, no classpath var, no UNO-Type-Path involved: the FILENAME IS THE
+LOOKUP KEY.  (2) unoil.jar is NOT one of the five — it reaches the loader only as
+the classPath ctor arg, i.e. $URE_INTERNAL_JAVA_CLASSPATH → URE_MORE_JAVA_TYPES
+(upstream $ORIGIN/classes/unoil.jar + ScriptFramework.jar + each extension's
+UNO_JAVA_CLASSPATH).  So an empty value does not just lose extensions, it loses
+EVERY com.sun.star.* office API type.  UNO-Type-Path bites somewhere else
+entirely: getClassLoader() reads it when javaloader opens a COMPONENT jar; juh's
+empty value suppresses the hoist, an ABSENT one falls back to "<>" = re-add the
+jar itself, already there via createUrls() ⇒ harmless duplicate.  Hence only
+juh's RegistrationClassName was reproduced (juh.jar IS a registered component).
+NEW RULE uno_jar (build/rules/java_pipeline.bzl, singlejar) solves all three
+build-side problems at once — exact `out =` filename at the PRODUCING target
+(not a staging rename table), N-jar merge (ridl.jar = :ridl + :udkapi_java_jar,
+verified 436 classes incl. XInterface/TypeClass/UnoRuntime), and manifest main
+attributes.  DIVERGENCE: Sealed: is OMITTED.  --deploy_manifest_lines writes the
+MAIN section only, so jurt's per-package un-sealing of com/sun/star/uno/ +
+com/sun/star/lib/util/ (those packages are SPLIT across jurt.jar and ridl.jar) is
+inexpressible, and a blanket Sealed:true would be STRICTER than upstream →
+SecurityException on exactly that split.  Sealing only ever restricts, never
+enables ⇒ omitting is the safe direction.
+Staged flat to program/classes/ via //main/staging:_install_classes, using a new
+`flatten` opt on tree_install (six jars, five packages, no single strip_prefix).
+fundamental.ini got URE_INTERNAL_JAVA_DIR + URE_MORE_JAVA_TYPES +
+URE_INTERNAL_JAVA_CLASSPATH + URE_OVERRIDE_JAVA_JFW_{SHARED,USER}_DATA — it is
+the URE_BOOTSTRAP file theMacroExpander resolves against, uno.ini is NOT.
+TWO MORE STUBS FOUND, same family as the javaloader/javavm one (a DLL exists but
+the feature is compiled out): (a) jvmfwk.dll was built WITHOUT SOLAR_JAVA, under
+which framework.cxx compiles jfw_startVM() to a bare `return JFW_E_ERROR;` — no
+configuration could ever have made Java work; ABI is unaffected (JNI types appear
+only behind pointers) so consumers including framework.h without it still link;
+(b) sunjavaplugin.dll was NEVER BUILT — jvmfwk holds no JRE knowledge at all,
+javavendors.xml maps every vendor to
+vnd.sun.star.expand:$URE_INTERNAL_LIB_DIR/sunjavaplugin.dll which it
+osl_loadModule()s.  Now built (//main/jvmfwk, 8 TUs, 4 exports from
+sunjavaplugin.map → util/sunjavaplugin.def — a PRIVATE plugin interface, NOT a
+UNO component: no component_getFactory, nothing in services.rdb) and listed
+explicitly in staging since NOTHING LINKS IT.  javavendors.xml (from
+javavendors_wnt.xml via copy_file) + jvmfwk3.ini staged into program/; the ini
+NAME is fixed by fwkutil.hxx's SAL_CONFIGFILE("/jvmfwk3") relative to the
+library's own dir, so it stays jvmfwk3 even though ours is jvmfwk.dll.
+NOT staged: sunjavapluginrc — its one key is read via the DEFAULT rtl::Bootstrap,
+not a plugin-private ini, so it looks inert in an office install.
+NEXT: exercise it.  Best first probe = cppuhelper/qa/propertysetmixin's 3 RED
+testJava* cases, which need exactly this chain plus that suite's own Java
+component jar (JavaSupplier.java + .uno.jar via javamaker).
+See main/stoc/readme.md and main/jvmfwk/readme.md.
 NOTE: rules_java 8.11.0 IS now wired (MODULE.bazel) and the core Java UNO
 runtime is migrated & green — ridljar/jurt/jvmaccess/javaunohelper/jvmfwk/
 bridges (incl. the java_uno JNI bridge: java_uno.dll + java_uno.jar, done

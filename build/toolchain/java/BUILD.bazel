@@ -17,8 +17,9 @@
 #
 # The fix — and why it is arch-neutral
 # ------------------------------------
-# This runtime toolchain is only ever used as a HOST BUILD TOOL: jar.exe zipping
-# arch-neutral .class files (see build/rules/java_pipeline.bzl jar_from_directory).
+# This runtime toolchain is only ever used as a HOST BUILD TOOL: the JVM Bazel
+# starts JavaBuilder on, jar.exe zipping arch-neutral .class files (see
+# build/rules/java_pipeline.bzl jar_from_directory), and singlejar (uno_jar).
 # javamaker itself runs as a native exec-cfg cc_binary, NOT through this toolchain.
 # So a single host JDK serves EVERY target arch.  We therefore register ONE runtime
 # toolchain with no cpu constraint; it matches any windows target platform, present
@@ -26,13 +27,26 @@
 #
 # It is registered in the ROOT module (MODULE.bazel), so it outranks rules_java's
 # cpu-pinned remote-JDK runtime toolchains and is selected for both x86 and x64.
+# That priority is total — it has no target_settings, so --java_runtime_version and
+# --tool_java_runtime_version cannot steer around it.  Which makes WHICH jdk this
+# points at load-bearing for every Java action in the build:
+#
+#   NOT @local_jdk.  JavaBuilder is launched with --add-exports, which a JDK 8 JVM
+#   rejects before main() ("Unrecognized option ... Could not create the Java
+#   Virtual Machine") — and this machine's JAVA_HOME is a 32-bit JDK 8, so every
+#   java_library in the tree failed to compile.  Java 8 BYTECODE does not require a
+#   Java 8 javac: --java_language_version=8 in .bazelrc pins the class-file level.
+#
+# The 32-bit Java 8 JVM that the java_uno JNI bridge tests host is NOT affected:
+# build/rules/java_run_test.bzl takes explicit jvm_path_dirs and never consults a
+# java toolchain.
 
 toolchain(
     name = "host_jdk_runtime_toolchain",
-    # The machine's local JDK (JAVA_HOME), wired via the rules_java `toolchains`
-    # module extension in MODULE.bazel.  It runs natively on the x64 build host
-    # regardless of the TARGET arch of the product being built.
-    toolchain = "@local_jdk//:jdk",
+    # Downloaded JDK 21, wired via the rules_java `toolchains` module extension in
+    # MODULE.bazel.  Hermetic — independent of JAVA_HOME — and runs natively on the
+    # x64 build host regardless of the TARGET arch of the product being built.
+    toolchain = "@remotejdk21_win//:jdk",
     toolchain_type = "@bazel_tools//tools/jdk:runtime_toolchain_type",
     # No cpu constraint: arch-neutral by design (see header).  os:windows only,
     # so it matches every windows target platform in the matrix.

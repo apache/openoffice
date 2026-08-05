@@ -52,12 +52,20 @@ bazel_dep(name = "mdds",                   version = "0.3.1")
 bazel_dep(name = "coinmp",                 version = "1.7.6")
 bazel_dep(name = "gtest",                  version = "1.7.0")  # GoogleTest — C++ unit-test foundation (//main/test)
 
-# Host JDK.  Expose the machine's local JDK so we can register an ARCH-NEUTRAL java
+# Host JDK.  Expose a downloaded JDK so we can register an ARCH-NEUTRAL java
 # RUNTIME toolchain (see //build/toolchain/java).  rules_java only auto-registers
 # cpu-pinned (windows + x86_64) runtime toolchains, which stop resolving the moment
 # the TARGET cpu isn't x86_64 — x86_32 today, arm64/riscv as the matrix grows.
+#
+# remotejdk21_win, NOT local_jdk: this runtime is what Bazel starts JavaBuilder on,
+# and JavaBuilder passes --add-exports, which a JDK 8 JVM rejects outright
+# ("Unrecognized option ... Could not create the Java Virtual Machine").  Binding
+# the build to whatever JAVA_HOME happens to be is also the exact class of
+# environment dependence this migration exists to remove.  Java 8 BYTECODE is still
+# guaranteed, by --java_language_version=8 in .bazelrc — a compiler flag, unrelated
+# to the JVM the compiler itself runs on.
 java_toolchains = use_extension("@rules_java//java:extensions.bzl", "toolchains")
-use_repo(java_toolchains, "local_jdk")
+use_repo(java_toolchains, "remotejdk21_win")
 
 # --------------- build-time tools (not linked, not in registry) ---------------
 http_file = use_repo_rule("@bazel_tools//tools/build_defs/repo:http.bzl", "http_file")

@@ -207,3 +207,93 @@ no shell quoting or PATH issues arise.  The output JAR is named
 <name>.jar and placed in the package output directory.
 """,
 )
+
+# ---------------------------------------------------------------------------
+# uno_jar
+# ---------------------------------------------------------------------------
+# Produce a jar under the EXACT filename the UNO runtime looks it up by.
+#
+# Three problems, one rule:
+#
+#  (a) Bazel jar names are not runtime jar names.  java_library(name = "x")
+#      emits libx.jar, but com/sun/star/lib/unoloader/UnoClassLoader.java
+#      hardcodes "java_uno.jar" / "juh.jar" / "jurt.jar" / "ridl.jar" and
+#      stoc/source/javavm/javavm.cxx hardcodes "unoloader.jar".  These are
+#      exact-string lookups relative to $URE_INTERNAL_JAVA_DIR, so the staged
+#      basename is load-bearing.  `out =` names the output directly rather
+#      than renaming at staging time, so the name lives next to the target
+#      that produces it.
+#
+#  (b) Some runtime jars are the union of several Bazel targets.  ridl.jar
+#      upstream holds the javamaker-generated UDK types AND the hand-written
+#      ridl sources; here those are two targets and java_library's `exports`
+#      is COMPILE-time only, so libridl.jar alone has no com.sun.star.uno.*.
+#      `jars =` takes any number of inputs and merges them.
+#
+#  (c) The manifest main attributes are read at runtime.  javaloader reads
+#      RegistrationClassName to register a Java component; UnoClassLoader
+#      .getClassLoader() reads UNO-Type-Path.  Neither java_library nor
+#      jar_from_directory (a bare `jar cf`) writes a manifest.
+#
+# singlejar does all three, and is already part of the Bazel JDK tooling —
+# no new external dependency.
+# ---------------------------------------------------------------------------
+
+def _uno_jar_impl(ctx):
+    jar_out = ctx.actions.declare_file(ctx.attr.out)
+
+    srcs = []
+    for t in ctx.attr.jars:
+        srcs += [f for f in t.files.to_list() if f.extension == "jar"]
+    if not srcs:
+        fail("uno_jar '%s': jars = produced no .jar files" % ctx.label.name)
+
+    args = ctx.actions.args()
+    args.add("--output", jar_out)
+    args.add("--sources")
+    args.add_all(srcs)
+    if ctx.attr.manifest_lines:
+        args.add("--deploy_manifest_lines")
+        args.add_all(ctx.attr.manifest_lines)
+    # Deterministic output: no timestamps, no build-data.properties stamp.
+    args.add("--normalize")
+    args.add("--exclude_build_data")
+
+    ctx.actions.run(
+        executable       = ctx.executable._singlejar,
+        arguments        = [args],
+        inputs           = depset(srcs),
+        outputs          = [jar_out],
+        mnemonic         = "UnoJar",
+        progress_message = "Assembling %s" % jar_out.basename,
+    )
+
+    return [DefaultInfo(files = depset([jar_out]))]
+
+uno_jar = rule(
+    implementation = _uno_jar_impl,
+    attrs = {
+        "out": attr.string(
+            mandatory = True,
+            doc       = "Exact output filename, e.g. \"ridl.jar\" — the name the UNO runtime looks up.",
+        ),
+        "jars": attr.label_list(
+            allow_files = True,
+            mandatory   = True,
+            doc         = "Jars to merge, in order.  A single entry simply restamps name/manifest.",
+        ),
+        "manifest_lines": attr.string_list(
+            doc = "Manifest MAIN-section attributes, e.g. [\"RegistrationClassName: com.sun.star.comp.Foo\"].",
+        ),
+        "_singlejar": attr.label(
+            default    = "@bazel_tools//tools/jdk:singlejar",
+            executable = True,
+            cfg        = "exec",
+        ),
+    },
+    doc = """
+Assemble a runtime UNO jar: merge jars, stamp manifest main attributes, and
+emit under an exact filename.  See the block comment above for why each of
+the three is needed.
+""",
+)

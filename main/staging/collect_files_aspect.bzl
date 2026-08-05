@@ -173,7 +173,11 @@ flat_install = rule(
 # strip_prefix: path component within the repo to strip.
 #   For "@python//:python_lib" (glob(["Lib/**"])), set strip_prefix = "Lib"
 #   so "external/python+/Lib/abc.py" → "abc.py" → installed at dst/abc.py.
-#   Set "" to strip nothing (files land at dst/<basename>).
+#   Set "" to strip nothing (files keep their full in-repo path under dst).
+#
+# flatten: discard the tree entirely — every file lands at dst/<basename>.
+#   Use when the sources come from several packages, so no single strip_prefix
+#   applies, and the tree carries no meaning at the destination.
 #
 # dst: destination subdirectory inside the rule's output dir.
 #   e.g. "python-core-2.7.18/lib"
@@ -213,7 +217,15 @@ def _tree_install_impl(ctx):
             in_repo = f.short_path
 
         # Strip the known prefix (e.g. "Lib/") to get the bare relative path.
-        if strip:
+        if ctx.attr.flatten:
+            # No tree to preserve: every file lands directly in dst under its own
+            # basename.  For inputs that come from SEVERAL packages there is no
+            # single strip_prefix that works (each would need its own), and the
+            # destination name is already fixed by the producing rule — as for the
+            # Java UNO runtime jars, whose basenames are exact-string lookups in
+            # javavm.cxx / UnoClassLoader (see build/rules/java_pipeline.bzl).
+            rel = f.basename
+        elif strip:
             marker = strip + "/"
             idx = in_repo.find(marker)
             if idx >= 0:
@@ -265,6 +277,7 @@ tree_install = rule(
     attrs = {
         "src":          attr.label(allow_files = True),
         "strip_prefix": attr.string(default = "", doc = "In-repo path prefix to strip (e.g. 'Lib')"),
+        "flatten":      attr.bool(default = False, doc = "Ignore strip_prefix and install every file flat into dst under its basename"),
         "dst":          attr.string(mandatory = True, doc = "Destination subdir in output (e.g. 'python-core-2.7.18/lib')"),
     },
 )

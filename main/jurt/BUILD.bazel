@@ -1,3 +1,4 @@
+load("//build/rules:java_pipeline.bzl", "uno_jar")
 load("@rules_cc//cc:defs.bzl", "cc_binary")
 load("@rules_java//java:defs.bzl", "java_library")
 
@@ -26,6 +27,23 @@ java_library(
         "//main/ridljar:ridl",
         "//main/ridljar:unoloader",
     ],
+    visibility = ["//visibility:public"],
+)
+
+# ── jurt.jar → program/classes/ ───────────────────────────────────────────────
+# UnoClassLoader.createUrls() looks this up as the bare string "jurt.jar".
+#
+# DIVERGENCE (deliberate): upstream's util/manifest seals the jar but un-seals
+# com/sun/star/lib/util/ and com/sun/star/uno/, because those two packages are
+# split across jurt.jar and ridl.jar.  A per-package manifest section cannot be
+# expressed through singlejar's --deploy_manifest_lines (main section only), and
+# a blanket "Sealed: true" here would be STRICTER than upstream and throw
+# SecurityException on exactly that split.  Omitting Sealed is the safe
+# direction — sealing only ever restricts, never enables.
+uno_jar(
+    name       = "jurt_jar",
+    out        = "jurt.jar",
+    jars       = [":jurt"],
     visibility = ["//visibility:public"],
 )
 

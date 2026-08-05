@@ -1,0 +1,6 @@
+LIBRARY sunjavaplugin
+EXPORTS
+    jfw_plugin_getAllJavaInfos
+    jfw_plugin_getJavaInfoByPath
+    jfw_plugin_startJavaVirtualMachine
+    jfw_plugin_existJRE

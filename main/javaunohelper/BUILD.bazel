@@ -1,4 +1,5 @@
 load("@rules_cc//cc:defs.bzl", "cc_binary")
+load("//build/rules:java_pipeline.bzl", "uno_jar")
 load("@rules_java//java:defs.bzl", "java_library")
 
 exports_files(["util/juh.component"])
@@ -31,6 +32,26 @@ java_library(
         "//main/unoil:unoil",
     ],
     visibility = ["//visibility:public"],
+)
+
+# ── juh.jar → program/classes/ ────────────────────────────────────────────────
+# Two exact-string lookups land on this file: UnoClassLoader.createUrls() names
+# it "juh.jar", and services.rdb registers util/juh.component at
+# vnd.sun.star.expand:$URE_INTERNAL_JAVA_DIR/juh.jar (see //main/postprocess).
+#
+# Because it IS a registered component, RegistrationClassName is load-bearing —
+# javaloader reads it off the main attributes to find the class to register.
+# Upstream's util/manifest also carries "UNO-Type-Path:" with a deliberately
+# EMPTY value; that is omitted here because an absent UNO-Type-Path makes
+# UnoClassLoader.getClassLoader() fall back to "<>", i.e. add juh.jar itself to
+# the root loader — which createUrls() has already added, so the fallback is a
+# harmless duplicate rather than a behaviour change.
+uno_jar(
+    name           = "juh_runtime_jar",
+    out            = "juh.jar",
+    jars           = [":juh_jar"],
+    manifest_lines = ["RegistrationClassName: com.sun.star.comp.JavaUNOHelperServices"],
+    visibility     = ["//visibility:public"],
 )
 
 # ── juh.dll (preload) ──────────────────────────────────────────────────────────

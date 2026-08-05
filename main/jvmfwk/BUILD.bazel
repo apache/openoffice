@@ -1,5 +1,6 @@
 package(default_visibility = ["//visibility:public"])
 
+load("//build/rules:copy_file.bzl", "copy_file")
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 
 _COPTS = [
@@ -20,16 +21,35 @@ _DEFINES = [
     "FULL_DESK",
     "SHAREDLIB", "_DLL_",
     "JVMFWK_DLLIMPLEMENTATION",
+    # SOLAR_JAVA is not a feature flag here, it is the difference between a
+    # working library and a stub.  jvmfwk/source/framework.cxx compiles
+    # jfw_startVM() to a bare `return JFW_E_ERROR;` under #ifndef SOLAR_JAVA
+    # (and jvmfwk/framework.h then declares JavaVM/JNIEnv/JavaVMOption as
+    # incomplete types instead of including <jni.h>).  Built without it, every
+    # caller — stoc's javavm.uno, cui's Java options page, javaldx — gets a
+    # generic error no matter how correct the JRE, javavendors.xml and
+    # jvmfwk3.ini are.  Upstream drives this from configure; here it is
+    # unconditional, as rules_java is a hard dependency (same reasoning as
+    # //main/stoc's javaloader/javavm).
+    #
+    # The exported ABI does not change: the affected types appear only behind
+    # pointers, so consumers that include jvmfwk/framework.h WITHOUT SOLAR_JAVA
+    # (desktop, cui, svl…) still link and call correctly.
+    "SOLAR_JAVA",
 ]
 
 _DEPS = [
     "//main/sal:sal_headers",
+    # salhelper/simplereferenceobject.hxx — VendorBase's base class.
+    "//main/salhelper:salhelper_headers",
     "//main/cppu:cppu_headers",
     "//main/cppuhelper:cppuhelper_headers",
     "//main/udkapi:udkapi_idl_headers",
     "//main/stlport:stlport",
     "@boost.legacy//:boost.legacy",
     "@libxml2//:libxml2",
+    # <jni.h>, reached through jvmfwk/framework.h once SOLAR_JAVA is on.
+    "@rules_java//toolchains:jni",
 ]
 
 # ── jvmfwk headers (for downstream consumers) ────────────────────
@@ -81,6 +101,65 @@ cc_binary(
     visibility = ["//visibility:public"],
 )
 
+# ── sunjavaplugin.dll ────────────────────────────────────────────
+# The vendor plugin: given a candidate JRE it reports vendor/version/runtime
+# lib, and it is what actually calls JNI_CreateJavaVM.  jvmfwk itself contains
+# no JRE knowledge — javavendors.xml maps every supported vendor to
+# "vnd.sun.star.expand:$URE_INTERNAL_LIB_DIR/sunjavaplugin.dll", which jvmfwk
+# osl_loadModule()s.  Without it jfw_findAllJREs finds nothing and the office
+# reports no Java however many JDKs are installed.
+#
+# The four exports come from plugins/sunmajor/pluginlib/sunjavaplugin.map,
+# converted to util/sunjavaplugin.def (the standard .map → .def conversion; note
+# these are NOT the UNO component entry points — this is a private jvmfwk plugin
+# interface, not a registered UNO component, so there is no
+# component_getFactory here and it does not belong in services.rdb).
+cc_binary(
+    name = "sunjavaplugin",
+    srcs = [
+        "plugins/sunmajor/pluginlib/gnujre.cxx",
+        "plugins/sunmajor/pluginlib/gnujre.hxx",
+        "plugins/sunmajor/pluginlib/otherjre.cxx",
+        "plugins/sunmajor/pluginlib/otherjre.hxx",
+        "plugins/sunmajor/pluginlib/sunjavaplugin.cxx",
+        "plugins/sunmajor/pluginlib/sunjre.cxx",
+        "plugins/sunmajor/pluginlib/sunjre.hxx",
+        "plugins/sunmajor/pluginlib/sunversion.cxx",
+        "plugins/sunmajor/pluginlib/sunversion.hxx",
+        "plugins/sunmajor/pluginlib/util.cxx",
+        "plugins/sunmajor/pluginlib/util.hxx",
+        "plugins/sunmajor/pluginlib/vendorbase.cxx",
+        "plugins/sunmajor/pluginlib/vendorbase.hxx",
+        "plugins/sunmajor/pluginlib/vendorlist.cxx",
+        "plugins/sunmajor/pluginlib/vendorlist.hxx",
+        "plugins/sunmajor/pluginlib/diagnostics.h",
+        # pch, included by every .cxx as "precompiled_plugin.hxx"
+        "inc/pch/precompiled_plugin.hxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    deps = _DEPS,
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/salhelper:salhelper_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+    ],
+    linkshared = True,
+    win_def_file = "util/sunjavaplugin.def",
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/salhelper:salhelper_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        # util.cxx reads HKEY_LOCAL_MACHINE\SOFTWARE\JavaSoft to enumerate
+        # installed JREs.
+        "advapi32.lib",
+        "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
 # ── import library for downstream DLLs ───────────────────────────
 filegroup(
     name = "jvmfwk_implib",
@@ -91,3 +170,19 @@ filegroup(
 
 # Alias so existing references still resolve during transition.
 alias(name = "jvmfwk3_implib", actual = ":jvmfwk_implib", visibility = ["//visibility:public"])
+
+# ── javavendors.xml → program/ ───────────────────────────────────────────────
+# The JRE-selection policy: which vendors are acceptable, at which minimum
+# version, and which plugin library can inspect a candidate JRE for each.
+# jvmfwk finds it through UNO_JAVA_JFW_VENDOR_SETTINGS in program/jvmfwk3.ini;
+# VendorSettings' constructor throws JFW_E_CONFIGURATION if it is absent, so no
+# JVM is located at all without this file.
+#
+# Renamed, not just staged: upstream picks one of the per-platform variants
+# (scp2 ure.scp gid_File_Misc_JavavendorsXml installs it under the bare name)
+# and the bootstrap value names javavendors.xml exactly.
+copy_file(
+    name = "javavendors_xml",
+    src  = "distributions/OpenOfficeorg/javavendors_wnt.xml",
+    out  = "javavendors.xml",
+)

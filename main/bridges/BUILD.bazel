@@ -4,7 +4,7 @@ load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 load("@rules_java//java:defs.bzl", "java_library", "java_import")
 load("//build/rules:gtest_test.bzl", "gtest_test", "staged_run_test")
 load("//build/rules:idl_pipeline.bzl", "idl_library")
-load("//build/rules:java_pipeline.bzl", "javamaker_classes", "jar_from_directory")
+load("//build/rules:java_pipeline.bzl", "javamaker_classes", "jar_from_directory", "uno_jar")
 load("//build/rules:native_lib_dir.bzl", "native_lib_dir")
 load("//build/rules:java_run_test.bzl", "staged_java_test")
 
@@ -284,6 +284,17 @@ java_library(
         "//main/jurt:jurt",
         "//main/ridljar:ridl",
     ],
+    visibility = ["//visibility:public"],
+)
+
+# java_uno.jar → program/classes/.  First of the four names hardcoded in
+# UnoClassLoader.createUrls(), so the basename is load-bearing (the comment
+# above about the sealed manifest being "handled at staging" is now here:
+# Sealed is omitted, for the same reason as jurt.jar — see //main/jurt).
+uno_jar(
+    name       = "java_uno_runtime_jar",
+    out        = "java_uno.jar",
+    jars       = [":java_uno_jar"],
     visibility = ["//visibility:public"],
 )
 

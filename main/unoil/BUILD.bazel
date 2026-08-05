@@ -1,4 +1,4 @@
-load("//build/rules:java_pipeline.bzl", "jar_from_directory", "javamaker_classes")
+load("//build/rules:java_pipeline.bzl", "jar_from_directory", "javamaker_classes", "uno_jar")
 load("@rules_java//java:defs.bzl", "java_import")
 
 # ── Step 1: Generate Java .class files from offapi.rdb ───────────────────────
@@ -24,5 +24,21 @@ java_import(
     jars       = [":offapi_java_jar"],
     deps       = ["//main/ridljar:ridl"],
     exports    = ["//main/ridljar:ridl"],
+    visibility = ["//visibility:public"],
+)
+
+# ── Step 4: unoil.jar → program/classes/ ─────────────────────────────────────
+# Unlike the other five runtime jars, unoil.jar is NOT one of the names
+# UnoClassLoader.createUrls() hardcodes.  It reaches the class loader through
+# the OTHER channel: javavm.cxx expands $URE_INTERNAL_JAVA_CLASSPATH and passes
+# the result as the UnoClassLoader classPath argument.  Upstream chains that to
+# URE_MORE_JAVA_TYPES = "$ORIGIN/classes/unoil.jar $ORIGIN/classes/
+# ScriptFramework.jar ..." in fundamentalbasisrc; main/staging/fundamental.ini
+# does the same (minus ScriptFramework, not built yet).  So an empty
+# URE_INTERNAL_JAVA_CLASSPATH is precisely what loses the office API types.
+uno_jar(
+    name       = "unoil_jar",
+    out        = "unoil.jar",
+    jars       = [":offapi_java_jar"],
     visibility = ["//visibility:public"],
 )
