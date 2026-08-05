@@ -1,0 +1,420 @@
+package(default_visibility = ["//visibility:public"])
+
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("@rules_java//java:defs.bzl", "java_import", "java_library")
+load("//build:jre.bzl", "jre_home_env")
+load("//build/rules:gtest_test.bzl", "staged_run_test")
+load("//build/rules:idl_pipeline.bzl", "idl_library")
+load("//build/rules:java_pipeline.bzl", "jar_from_directory", "javamaker_classes", "uno_jar")
+load("//build/rules:merge_rdb.bzl", "merge_rdb")
+load("//main/postprocess:postprocess.bzl", "services_rdb")
+
+# ── testtools / bridgetest ────────────────────────────────────────────────
+# The UNO bridge round-trip suite: every IDL construct the type system has —
+# each simple type, strings, enums, structs, polymorphic structs, sequences,
+# anys, interfaces, attributes, out/inout parameters, exceptions, multiple
+# inheritance, the current context, recursive and sequence-of-calls dispatch —
+# driven through a call chain and checked on the way back.
+#
+# Unlike every other test in this tree it is NOT a GoogleTest binary.  It is
+# three UNO COMPONENTS, and the runner is the generic //main/cpputools uno.exe:
+#
+#   uno -ro uno_services.rdb -ro uno_types.rdb \
+#       -s com.sun.star.test.bridge.BridgeTest -- com.sun.star.test.bridge.CppTestObject
+#
+# uno.exe instantiates the service named by -s, casts it to XMain, and calls
+# run() with everything after "--" as arguments.  BridgeTest::run() therefore
+# receives the NAME of the object to test and instantiates it itself, which is
+# what makes one driver reusable across the C++, Java, Python and CLI test
+# objects — only that last argument changes.  Its exit code is the test result,
+# so no gtest wrapper is needed or wanted (source changes are out of scope).
+#
+# This is a self-contained UNO installation, NOT fixture (a): uno.exe's -ro
+# path calls bootstrap_InitialComponentContext(registry), not
+# defaultBootstrap_InitialComponentContext(), so there is no fundamental.ini
+# and no staged office involved.  Everything the service manager needs beyond
+# the two registries below is hardcoded in cppuhelper's
+# bootstrapInitialSF() — ORegistryServiceManager, DLLComponentLoader,
+# SimpleRegistry, NestedRegistry, TypeDescriptionManager and the rest, all
+# loaded out of bootstrap.uno.dll beside the exe.  Hence no uno_install, and
+# hence the test runs in seconds rather than depending on the whole office.
+
+_DEFINES = [
+    "WNT",
+    "GUI",
+    "WIN32",
+    "WINVER=0x0500",
+    "_WIN32_WINNT=0x0500",
+    "_WIN32_IE=0x0500",
+    "FULL_DESK",
+]
+
+_COPTS = [
+    # sal_Unicode is not VS2008's native wchar_t; every UNO string type depends
+    # on the two agreeing.
+    "/Zc:wchar_t-",
+    "/EHsc",
+    "/Imain/testtools/inc/pch",
+]
+
+_DEPS = [
+    "//main/sal:sal_headers",
+    "//main/cppu:cppu_headers",
+    "//main/cppuhelper:cppuhelper_headers",
+    "//main/udkapi:udkapi_idl_headers",
+    # osl/diagnose.hxx (the C++ header, as opposed to diagnose.h) declares an
+    # std::hash_set member, which VS2008's own STL does not have.
+    "//main/stlport:stlport",
+    ":bridgetest_idl_headers",
+]
+
+_LINKER_INPUTS = [
+    "//main/sal:sal_implib",
+    "//main/cppu:cppu3_implib",
+    "//main/cppuhelper:cppuhelper_implib",
+]
+
+_LINKOPTS = [
+    "$(execpath //main/sal:sal_implib)",
+    "$(execpath //main/cppu:cppu3_implib)",
+    "$(execpath //main/cppuhelper:cppuhelper_implib)",
+    "/MANIFEST:NO",
+]
+
+# ── The suite's private IDL ───────────────────────────────────────────────
+# test::testtools::bridgetest — the types actually under test.  It is a
+# deliberately exhaustive vocabulary, which is the whole point: a bridge that
+# mishandles one type class fails here and nowhere else.
+idl_library(
+    name = "bridgetest_idl",
+    srcs = ["source/bridgetest/idl/bridgetest.idl"],
+    include_dirs = ["main/udkapi"],
+    extra_rdbs = ["//main/udkapi:udkapi_idl"],
+    testonly = True,
+)
+
+cc_library(
+    name = "bridgetest_idl_headers",
+    hdrs = [":bridgetest_idl"],
+    includes = ["bridgetest_idl_inc"],
+    testonly = True,
+)
+
+# The type registry uno.exe is given.  dmake copies udkapi.rdb and regmerges
+# bridgetest.rdb into it at "/"; merge_rdb does both in one action.  Both
+# halves are needed — the private types reference com.sun.star.uno.XInterface
+# and friends, and the TypeDescriptionManager resolves them at run time.
+merge_rdb(
+    name = "bridgetest_uno_types",
+    out = "uno_types.rdb",
+    rdbs = [
+        "//main/udkapi:udkapi_idl",
+        ":bridgetest_idl",
+    ],
+    testonly = True,
+)
+
+# ── The three components ──────────────────────────────────────────────────
+# cppobj.uno — the object UNDER test: com.sun.star.test.bridge.CppTestObject,
+# a C++ implementation of XBridgeTest2 (and XMulti, and the current-context
+# checker).  This is what the driver bounces every type off.
+cc_binary(
+    name = "cppobj.uno",
+    srcs = [
+        "source/bridgetest/cppobj.cxx",
+        "source/bridgetest/currentcontextchecker.cxx",
+        "source/bridgetest/currentcontextchecker.hxx",
+        "source/bridgetest/multi.cxx",
+        "source/bridgetest/multi.hxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "source/bridgetest/cppobj.uno.def",
+    deps = _DEPS,
+    additional_linker_inputs = _LINKER_INPUTS,
+    linkopts = _LINKOPTS,
+    testonly = True,
+)
+
+# bridgetest.uno — the DRIVER: com.sun.star.test.bridge.BridgeTest, an XMain
+# whose run() performs the round trip and returns 0 on success.  It links its
+# own copies of multi/currentcontextchecker because both sides of the
+# comparison need them (dmake builds two static libs from the same objects).
+cc_binary(
+    name = "bridgetest.uno",
+    srcs = [
+        "source/bridgetest/bridgetest.cxx",
+        "source/bridgetest/currentcontextchecker.cxx",
+        "source/bridgetest/currentcontextchecker.hxx",
+        "source/bridgetest/multi.cxx",
+        "source/bridgetest/multi.hxx",
+    ],
+    copts = _COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "source/bridgetest/bridgetest.uno.def",
+    deps = _DEPS,
+    additional_linker_inputs = _LINKER_INPUTS,
+    linkopts = _LINKOPTS,
+    testonly = True,
+)
+
+# constructors.uno — covers IDL service CONSTRUCTORS specifically (the
+# "new-style" services with named constructors and a rest parameter), which
+# the driver exercises through test.testtools.bridgetest.Constructors{,2}.
+cc_binary(
+    name = "constructors.uno",
+    srcs = ["source/bridgetest/constructors.cxx"],
+    copts = _COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "source/bridgetest/constructors.uno.def",
+    deps = _DEPS,
+    additional_linker_inputs = _LINKER_INPUTS,
+    linkopts = _LINKOPTS,
+    testonly = True,
+)
+
+# The service registry.  The "./<dll>" URIs are dmake's, verbatim, and they are
+# the right choice rather than the vnd.sun.star.expand: form used elsewhere:
+# stoc's textualservices.cxx resolves a component uri with
+# rtl::Uri::convertRelToAbs() against the URL of the registry FILE, so a
+# relative URI simply means "beside this rdb" and needs no bootstrap variable
+# to point at the staged directory.
+services_rdb(
+    name = "bridgetest_uno_services",
+    components = {
+        "source/bridgetest/bridgetest.component": "./bridgetest.uno.dll",
+        "source/bridgetest/cppobj.component": "./cppobj.uno.dll",
+        "source/bridgetest/constructors.component": "./constructors.uno.dll",
+    },
+    out = "uno_services.rdb",
+    xslt = "//main/solenv/bin:packcomponents.xslt",
+    testonly = True,
+)
+
+# ── The test ──────────────────────────────────────────────────────────────
+# dmake's `runtest` target, which the ordinary build runs unconditionally on
+# every platform whose bridge is believed to work (see the OSX-PPC/Solaris
+# escape hatch in source/bridgetest/makefile.mk).
+#
+# The DLL closure is listed explicitly instead of borrowing the office's via
+# uno_install, because it is small and known: uno.exe links sal/cppu/
+# cppuhelper/salhelper, cppuhelper loads bootstrap.uno.dll from its OWN
+# directory, and bootstrap.uno pulls reg (→ store) and xmlreader.  Co-locating
+# them is correct HERE — the "co-located UNO DLL breaks the bootstrap"
+# landmine is specifically about doing it *alongside* uno_install, where
+# get_this_libpath() would then pick the test dir over program/.
+#
+# The bridge DLL is a pure runtime dependency that nothing links: any cppu
+# Mapping osl_loadModule()s it, and the driver's exception round-trip goes
+# through cppu::getCaughtException(). Unstaged it is an empty test.log.
+staged_run_test(
+    name = "bridgetest",
+    binary = "//main/cpputools:uno",
+    # Bare relative registry names, and the working directory set to the staged
+    # dir — exactly dmake's `cd $(DLLDEST) && uno -ro uno_services.rdb …`.  It
+    # also keeps the relative component URIs above meaningful.
+    run_args = [
+        "-ro",
+        "uno_services.rdb",
+        "-ro",
+        "uno_types.rdb",
+        "-s",
+        "com.sun.star.test.bridge.BridgeTest",
+        "--",
+        "com.sun.star.test.bridge.CppTestObject",
+    ],
+    run_in_staged_dir = True,
+    runtime = [
+        ":bridgetest.uno",
+        ":constructors.uno",
+        ":cppobj.uno",
+        ":bridgetest_uno_services",
+        ":bridgetest_uno_types",
+        "//main/cppu:cppu3",
+        "//main/cppuhelper:cppuhelper3MSC",
+        "//main/external/msvcp90:crt_dlls",
+        "//main/registry:reg",
+        "//main/sal:sal3",
+        "//main/salhelper:salhelper3MSC",
+        "//main/stoc:bootstrap.uno",
+        "//main/store:store",
+        "//main/xmlreader:xmlreader",
+    ] + select({
+        "//build:arch_x64": ["//main/bridges:mscx_uno"],
+        "//conditions:default": ["//main/bridges:msci_uno"],
+    }),
+    size = "small",
+)
+
+# ── The same round trip, through Java ─────────────────────────────────────
+# dmake's `bridgetest_inprocess_java`.  The driver, the assertions and the IDL
+# are all unchanged; only the object on the far side is swapped:
+#
+#   -s com.sun.star.test.bridge.BridgeTest -- com.sun.star.test.bridge.JavaTestObject
+#
+# so every type in bridgetest.idl now crosses the java_uno JNI bridge twice
+# (out and back) instead of staying in C++.  That makes this by far the widest
+# exercise of the Java bridge in the tree — cppuhelper/qa/propertysetmixin
+# proved a Java component can be LOADED at all; this one checks that the
+# marshalling is actually correct for every type class.
+#
+# "noCurrentContext" is the second argument the dmake recipe passes, and it is
+# not optional: the Java side has no XCurrentContext implementation to hand
+# back, so the driver skips that one sub-test (bridgetest.cxx run()).
+
+javamaker_classes(
+    name = "bridgetest_java_classes",
+    rdb = ":bridgetest_idl",
+    extra_rdb = "//main/udkapi:udkapi_idl",
+    testonly = True,
+)
+
+jar_from_directory(
+    name = "bridgetest_java_types_jar",
+    classes_dir = ":bridgetest_java_classes",
+    testonly = True,
+)
+
+java_import(
+    name = "bridgetest_java_types",
+    jars = [":bridgetest_java_types_jar"],
+    testonly = True,
+)
+
+# JARFILES in com/sun/star/comp/bridge/makefile.mk is ridl.jar jurt.jar juh.jar.
+# ridl covers both com.sun.star.uno.* and the udkapi types the object
+# implements beyond its own IDL — com.sun.star.test.performance.XPerformanceTest
+# (udkapi/com/sun/star/test/performance), which TestComponent also implements.
+java_library(
+    name = "bridgetest_testcomponent",
+    srcs = glob(["com/sun/star/comp/bridge/*.java"]),
+    javacopts = ["--release", "8", "-XepDisableAllChecks"],
+    deps = [
+        ":bridgetest_java_types",
+        "//main/javaunohelper:juh_jar",
+        "//main/jurt:jurt",
+        "//main/ridljar:ridl",
+    ],
+    testonly = True,
+)
+
+# Both class trees in one jar, as JARCLASSDIRS = $(PACKAGE) test/testtools/
+# bridgetest does.  RegistrationClassName is copied from the checked-in
+# com/sun/star/comp/bridge/manifest — it is how javaloader finds the class to
+# register, so it has to be a main manifest attribute, which is what uno_jar is
+# for (a plain java_library cannot express it).
+uno_jar(
+    name = "bridgetest_testcomponent_jar",
+    out = "testComponent.jar",
+    jars = [
+        ":bridgetest_testcomponent",
+        ":bridgetest_java_types_jar",
+    ],
+    manifest_lines = [
+        "RegistrationClassName: com.sun.star.comp.bridge.TestComponent",
+    ],
+    testonly = True,
+)
+
+# Only the test's OWN components.  The Java run additionally needs the two
+# halves of com.sun.star.loader.Java2 — javavm.uno (locates and starts a JVM
+# through jvmfwk) and javaloader.uno (builds a class loader over the jar and
+# calls its RegistrationClassName) — and those come, as in dmake, from a THIRD
+# registry: the installation's own services.rdb, nested in below.
+#
+# Registering them here instead does not work, and the reason is worth keeping:
+# javaloader resolves the component URL through
+# com.sun.star.uri.UriReferenceFactory, which is itself a URE component (stoc's
+# uriproc).  Naming the loaders without the registry that provides everything
+# they in turn need just moves the failure one service along.
+services_rdb(
+    name = "bridgetest_uno_services_java",
+    components = {
+        "source/bridgetest/bridgetest.component": "./bridgetest.uno.dll",
+        "source/bridgetest/cppobj.component": "./cppobj.uno.dll",
+        "source/bridgetest/constructors.component": "./constructors.uno.dll",
+        "source/bridgetest/testComponent.component": "./testComponent.jar",
+    },
+    out = "uno_services_java.rdb",
+    xslt = "//main/solenv/bin:packcomponents.xslt",
+    testonly = True,
+)
+
+# uno_install, unlike the C++ sibling — and here it earns its keep for the DATA
+# rather than the DLLs.  The Java2 loader's whole configuration lives in the
+# staged program/: URE_INTERNAL_JAVA_DIR (the five jars javavm.cxx opens by
+# HARDCODED NAME, starting with unoloader.jar), URE_MORE_JAVA_TYPES,
+# URE_INTERNAL_JAVA_CLASSPATH and URE_OVERRIDE_JAVA_JFW_{SHARED,USER}_DATA are
+# all keys in program/fundamental.ini, and jvmfwk.dll finds javavendors.xml,
+# jvmfwk3.ini, sunjavaplugin.dll and JREProperties.class beside itself there.
+# Pointing URE_BOOTSTRAP at that one ini supplies the lot, with no list to keep
+# in sync here.  It is also why the two loader components above use
+# $URE_INTERNAL_LIB_DIR rather than the "./" form: they come from program/.
+staged_run_test(
+    name = "bridgetest_java",
+    binary = "//main/cpputools:uno",
+    run_args = [
+        # dmake's third registry ($(SOLARXMLDIR)/ure/services.rdb, copied in as
+        # services.rdb).  Given as a file:/// URL so unoexe's convertToFileUrl
+        # passes it through untouched instead of going via
+        # getFileURLFromSystemPath.
+        "-ro",
+        "file:///$(PROGRAM_URL)/services.rdb",
+        "-ro",
+        "uno_services_java.rdb",
+        "-ro",
+        "uno_types.rdb",
+        "-s",
+        "com.sun.star.test.bridge.BridgeTest",
+        "--",
+        "com.sun.star.test.bridge.JavaTestObject",
+        "noCurrentContext",
+    ],
+    # Keeps the cwd on the staged dir (not program/), so the bare registry
+    # names above and the "./" component URIs still resolve.
+    run_in_staged_dir = True,
+    # ONLY the test-only artifacts — the exact INVERSE of the C++ sibling, and
+    # the "co-located UNO DLL breaks the bootstrap" landmine is why.  Its
+    # mechanism is precise: cppu::get_unorc() (cppuhelper/source/bootstrap.cxx)
+    # opens uno.ini at get_this_libpath() + "/uno.ini", i.e. beside
+    # cppuhelper3MSC.dll, and uno.ini is where URE_INTERNAL_LIB_DIR is defined —
+    # fundamental.ini does not define it.  Every vnd.sun.star.expand: URI in the
+    # tree goes through that handle (cppu::bootstrap_expandUri →
+    # cppuhelper::detail::expandMacros).  Co-locate cppuhelper3MSC.dll and the
+    # exe's own directory wins the loader search, so the lookup lands in the
+    # test dir, finds no uno.ini, and every such macro silently expands to
+    # nothing.  Here that surfaced as jvmfwk reporting
+    #   The file: vnd.sun.star.expand:$URE_INTERNAL_LIB_DIR/sunjavaplugin.dll
+    #   does not exist
+    # and then the catch-all "The JRE … could not be recognized".  Leave the
+    # core stack to program/ via PATH and it resolves.
+    runtime = [
+        ":bridgetest.uno",
+        ":constructors.uno",
+        ":cppobj.uno",
+        ":bridgetest_testcomponent_jar",
+        ":bridgetest_uno_services_java",
+        ":bridgetest_uno_types",
+        "//main/external/msvcp90:crt_dlls",
+    ],
+    env = {} | jre_home_env(),
+    uno_install = "//main/staging:install",
+    # Starting a JVM sounds like it should need "medium", but it does not: this
+    # is jvmfwk DIRECT mode over a tiny classpath, measured at ~1.4s, and
+    # //main/cppuhelper:cppuhelper_qa_propertysetmixin runs "small" for the same
+    # reason.  Only office_connection (a real soffice boot) needs "medium".
+    size = "small",
+)
+
+# Both halves of the round trip: the same driver and the same assertions, once
+# against a C++ object and once against a Java one.
+test_suite(
+    name = "bridgetest_tests",
+    tests = [
+        ":bridgetest",
+        ":bridgetest_java",
+    ],
+)

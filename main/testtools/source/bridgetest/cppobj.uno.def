@@ -1,0 +1,11 @@
+; Windows DEF equivalent of solenv/src/component.map, which
+; source/bridgetest/makefile.mk names as SHL1VERSIONMAP for this library.
+;
+; Two exports, not the usual three: cppobj.cxx defines
+; component_getImplementationEnvironment and component_getFactory but no
+; component_canUnload, so listing it would be an unresolved-symbol link error.
+LIBRARY	cppobj.uno.dll
+
+EXPORTS
+	component_getImplementationEnvironment
+	component_getFactory

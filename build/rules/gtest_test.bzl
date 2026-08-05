@@ -114,6 +114,12 @@ def _env_lines(env):
     # where the author's ordering carries no meaning).
     return ['set "%s=%s"' % (k, _expand_tokens(env[k])) for k in sorted(env)]
 
+def _arg_string(run_args):
+    # Quoted so an argument containing a space survives cmd's tokenizing, and
+    # token-expanded like `env` values are — a fixed command line routinely has
+    # to name a staged file, which is only locatable at run time.
+    return "".join([' "%s"' % _expand_tokens(a) for a in run_args])
+
 def _prerun_lines(prerun):
     # `|| exit /b 1` on every one: a fixture that failed to build must fail the
     # test loudly, not leave the suite to report a confusing downstream error.
@@ -249,7 +255,9 @@ def _staged_gtest_test_impl(ctx):
     # a working directory, an environment, or a fixture built at run time.
     env = ctx.attr.env
     prerun = ctx.attr.prerun
-    values = env.values() + prerun
+    run_args = ctx.attr.run_args
+    argstr = _arg_string(run_args)
+    values = env.values() + prerun + run_args
     need_scratch = (ctx.attr.office_connection or
                     _uses_token(values, "$(SCRATCH"))
     if _uses_token(values, "$(PROGRAM)") and not uno_program_dir:
@@ -259,7 +267,7 @@ def _staged_gtest_test_impl(ctx):
              "ini, it does not supply the UNO DLL closure the test still loads.")
 
     executable = staged_exe
-    if (ctx.attr.run_in_staged_dir or uno_program_dir or env or prerun):
+    if (ctx.attr.run_in_staged_dir or uno_program_dir or env or prerun or run_args):
         launcher_dir = staged_exe.dirname  # the .bat sits beside the staged exe
         lines = ["@echo off", "setlocal"]
 
@@ -387,7 +395,8 @@ def _staged_gtest_test_impl(ctx):
                     'set "arg-soffice=path:%_SOFFICE:\\=\\\\%"',
                     'set "arg-user=%_SCRATCH:\\=\\\\%"',
                 ]
-            lines += _env_lines(env) + _prerun_lines(prerun) + ['"%_EXE%" %*']
+            lines += _env_lines(env) + _prerun_lines(prerun)
+            lines += ['"%_EXE%"' + argstr + " %*"]
         else:
             # Co-locating a data file with the exe is not enough for a test that
             # opens it by bare relative name: the working directory is the
@@ -398,7 +407,7 @@ def _staged_gtest_test_impl(ctx):
             if ctx.attr.run_in_staged_dir:
                 lines += ['cd /d "%~dp0" || exit /b 1']
             lines += _env_lines(env) + _prerun_lines(prerun)
-            lines += ['"%~dp0' + staged_exe.basename + '" %*']
+            lines += ['"%~dp0' + staged_exe.basename + '"' + argstr + " %*"]
 
         # Capture the exit code BEFORE any cleanup — rmdir would clobber it.
         lines += ['set "_RC=%ERRORLEVEL%"']
@@ -432,6 +441,7 @@ _staged_gtest_test = rule(
         "data_tree": attr.label_keyed_string_dict(allow_files = True),
         "env": attr.string_dict(),
         "prerun": attr.string_list(),
+        "run_args": attr.string_list(),
         "ure_bootstrap": attr.string(),
     },
 )
@@ -440,7 +450,15 @@ _staged_gtest_test = rule(
 # runtime DLLs + VC90 CRT + external manifest into one flat dir and runs it as a
 # test (pass/fail = process exit code).  Exposed for non-gtest runnable tests,
 # e.g. bridges' inter_libs_exc (a cross-DLL C++ exception smoke test whose exe
-# loads two sibling DLLs and exits 0 iff exception propagation works).
+# loads two sibling DLLs and exits 0 iff exception propagation works), and
+# testtools' bridgetest, where the "test binary" is the generic //main/cpputools
+# uno.exe and the suite is selected entirely by `run_args`.
+#
+# run_args: a FIXED command line baked into the launcher, token-expanded like
+# `env` (so it can name a staged file).  Anything passed on the `bazel test`
+# command line still follows it, via %*.  Deliberately not the native `args`
+# attribute: baking it in keeps `bazel run` on the target reproducing exactly
+# what `bazel test` ran.
 staged_run_test = _staged_gtest_test
 
 def gtest_test(

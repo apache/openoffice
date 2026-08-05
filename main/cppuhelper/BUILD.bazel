@@ -5,6 +5,7 @@ load("@rules_java//java:defs.bzl", "java_import", "java_library")
 load("//build/rules:idl_pipeline.bzl", "idl_library")
 load("//build/rules:java_pipeline.bzl", "jar_from_directory", "javamaker_classes", "uno_jar")
 load("//build/rules:merge_rdb.bzl", "merge_rdb")
+load("//build:jre.bzl", "jre_home_env")
 load("//build/rules:gtest_test.bzl", "gtest_test")
 load("//main/postprocess:postprocess.bzl", "services_rdb")
 
@@ -439,41 +440,8 @@ gtest_test(
         # Where the vnd.sun.star.expand: URIs in psm_services.rdb resolve to.
         "OOO_INBUILD_SHAREDLIB_DIR": "file:///$(RUNDIR_URL)",
         "OOO_INBUILD_JAR_DIR": "file:///$(RUNDIR_URL)",
-        # Put jvmfwk in DIRECT mode with an explicit JRE.
-        #
-        # Its other mode, JFW_MODE_APPLICATION, reads a javasettings_<os>_<arch>
-        # .xml recording which JRE the user picked and whether Java is enabled —
-        # written by Tools > Options > Java, i.e. by a human, at some point in
-        # the past.  A test fixture has no such history, so jfw_startVM() would
-        # return JFW_E_JAVA_DISABLED before ever looking for a JVM.  Direct mode
-        # (any of UNO_JAVA_JFW_{JREHOME,ENV_JREHOME,CLASSPATH,PARAMETER_1} set —
-        # fwkbase.cxx getMode) skips the settings layer and takes what it is
-        # given.  sunjavaplugin.dll still inspects it, so that path is exercised.
-        #
-        # The JRE must match the TARGET arch: this test process is 32-bit for
-        # the default build and loads a 32-bit jvm.dll into itself.  That rules
-        # out the ENV_JREHOME/$JAVA_HOME form — one JAVA_HOME cannot be right
-        # for both arches, and bazel does not forward it to tests anyway.
-        #
-        # A URL, not a path, and forward slashes: UNO_JAVA_JFW_JREHOME is taken
-        # as-is (unlike ENV_JREHOME, which goes through
-        # getFileURLFromSystemPath), and every rtl::Bootstrap value is macro-
-        # expanded, where a backslash is an ESCAPE character — "C:\Program"
-        # would come back "C:Program".  Spaces must be %20-encoded for osl's
-        # file URL parsing.
-        #
-        # TODO: machine-specific, same as //main/bridges test_any_jni's
-        # jvm_path_dirs.  Both want one build setting for "the JRE for this
-        # arch".  Set below, per arch.
-    } | select({
-        "//build:arch_x64": {
-            "UNO_JAVA_JFW_JREHOME":
-                "file:///C:/Program%20Files/Eclipse%20Adoptium/jdk-8.0.452.9-hotspot",
-        },
-        "//conditions:default": {
-            "UNO_JAVA_JFW_JREHOME":
-                "file:///C:/Program%20Files%20(x86)/Eclipse%20Adoptium/jdk-8.0.452.9-hotspot",
-        },
-    }),
+        # Put jvmfwk in DIRECT mode with an explicit, arch-matched JRE — see
+        # //build:jre.bzl for why that is a select() and not $JAVA_HOME.
+    } | jre_home_env(),
     uno_install = "//main/staging:install",
 )

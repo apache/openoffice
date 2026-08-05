@@ -110,6 +110,17 @@ test          🔨  C++ unit-test infra runnable — NOW THE FRONT-LINE TASK: br
                    component library failed: …/<test>.run/bootstrap.uno.dll").  List
                    only test-only DLLs; the office closure is already on PATH via
                    program/ (svl_qa_test_URIHelper lists none, which is why it passed).
+                   SECOND, WIDER MECHANISM found 2026-08-05 via testtools/bridgetest_java
+                   — same cause, but it breaks MACRO EXPANSION rather than one DLL load,
+                   so the symptom can appear layers away with no mention of a DLL:
+                   cppu::get_unorc() opens get_this_libpath()+"/uno.ini", i.e. uno.ini
+                   BESIDE cppuhelper3MSC.dll, and uno.ini — NOT fundamental.ini — is where
+                   URE_INTERNAL_LIB_DIR is defined.  Every vnd.sun.star.expand: URI in the
+                   tree goes through that handle (bootstrap_expandUri →
+                   cppuhelper::detail::expandMacros), so a co-located cppuhelper3MSC.dll
+                   makes all of them silently expand to NOTHING.  It surfaced as jvmfwk's
+                   "The file: vnd.sun.star.expand:$URE_INTERNAL_LIB_DIR/sunjavaplugin.dll
+                   does not exist" + the catch-all "JRE could not be recognized".
                    CONSUMER NOTE: upstream's ONLY C++ user of the fixture,
                    xmlsecurity/qa/certext, CANNOT BUILD — it needs neon
                    (ne_ssl_cert_read) and AOO replaced neon with curl (no main/neon, no
@@ -253,8 +264,60 @@ test          🔨  C++ unit-test infra runnable — NOW THE FRONT-LINE TASK: br
                    not build: osl_process asserts an env ORDER Windows doesn't use;
                    rtl_Bootstrap expects the default ini to be testshl2.ini because the
                    testshl2-era process was literally testshl2.exe.
-testtools     ⬜  (bridgetest — pure-C++ UNO bridge round-trip; cli/pyuno/java variants
-                   need rules_java — see Java bucket)
+testtools     🔨  bridgetest GREEN 2026-08-05, BOTH halves — //main/testtools:bridgetest
+                   (C++ object, ~1.1s) and :bridgetest_java (Java object over the
+                   java_uno JNI bridge, ~1.4s); :bridgetest_tests runs both.  This is
+                   the widest type-marshalling check in the tree (every simple type,
+                   string, enum, struct, POLYMORPHIC struct, sequence, any, interface,
+                   attribute, out/inout param, exception, multiple inheritance, current
+                   context, recursive + sequence-of-calls dispatch) and the Java half is
+                   the FIRST verification that the java_uno bridge marshals correctly —
+                   propertysetmixin only proved a Java component can be LOADED.
+                   NOT a gtest and must not become one (that would be a source change):
+                   it is 3 UNO components driven by the generic //main/cpputools uno.exe,
+                   which instantiates the -s service, queries XMain and calls run() with
+                   everything after "--"; the driver takes the NAME of the object to test,
+                   which is exactly why ONE driver serves the C++/Java/Python/CLI objects.
+                   run() 's return value IS the exit code, so no wrapper is needed.
+                   NEW general rule attr `run_args` (gtest_test.bzl, on staged_run_test):
+                   a FIXED command line baked into the launcher and token-expanded like
+                   `env`, so the "test binary" can be a generic tool the suite configures.
+                   FOURTH FIXTURE KIND (the C++ half): uno.exe -ro calls
+                   bootstrap_InitialComponentContext(REGISTRY), not defaultBootstrap —
+                   no fundamental.ini, no URE_BOOTSTRAP, NO uno_install, ~1s.  Everything
+                   else is hardcoded in cppuhelper bootstrapInitialSF() out of
+                   bootstrap.uno.dll.  Two reusable facts: (1) the TEXTUAL (XML) registry
+                   WORKS on this path — openRegistry passes (bReadOnly=true,
+                   bCreate=false), exactly the combination configmgr/qa/unit cannot get
+                   from its 1-arg createRegistryServiceFactory; (2) a RELATIVE component
+                   uri ("./cppobj.uno.dll") is resolved by textualservices.cxx with
+                   rtl::Uri::convertRelToAbs against the RDB FILE's own URL, so "beside
+                   this rdb" needs no bootstrap variable and no env at all.
+                   LANDMINE — the co-located-UNO-DLL rule has a SECOND, bigger mechanism
+                   than the recorded one (bootstrap.uno.dll via get_this_libpath):
+                   cppu::get_unorc() opens get_this_libpath()+"/uno.ini", i.e. uno.ini
+                   BESIDE cppuhelper3MSC.dll, and uno.ini is where URE_INTERNAL_LIB_DIR
+                   is defined (fundamental.ini does NOT define it).  EVERY
+                   vnd.sun.star.expand: URI resolves through that one handle
+                   (bootstrap_expandUri → cppuhelper::detail::expandMacros).  Co-locate
+                   cppuhelper3MSC.dll and the exe's dir wins the loader search ⇒ lookup
+                   lands in the test dir ⇒ no uno.ini ⇒ every such macro silently expands
+                   to NOTHING.  Surfaced two layers away as jvmfwk's "The file:
+                   vnd.sun.star.expand:$URE_INTERNAL_LIB_DIR/sunjavaplugin.dll does not
+                   exist" + "could not be recognized".  So with uno_install, `runtime`
+                   must list ONLY test-only files: the C++ target lists the whole core
+                   stack and the Java one lists NONE — opposite, both correct.
+                   Also: the Java run needs the INSTALL's services.rdb as a 3rd -ro
+                   (dmake's $(SOLARXMLDIR)/ure/services.rdb).  Registering just the two
+                   Java2-loader components instead does NOT work — javaloader resolves
+                   the component URL via com.sun.star.uri.UriReferenceFactory, itself a
+                   URE component (stoc uriproc), so it only moves the failure one service
+                   along.  Passed as a file:/// URL (unoexe convertToFileUrl takes it
+                   verbatim).  //build:jre.bzl now centralizes the machine-specific,
+                   arch-select()ed test JRE (was duplicated in cppuhelper).
+                   See main/testtools/readme.md.  STILL ⬜: cli + cliversioning + qa/cli
+                   (cli_ure bucket), pyuno variant (reachable now), source/performance
+                   (a benchmark), and the socket-URP client/server variants.
 qadevOOo      🔨  OOoRunner.jar built (//main/qadevOOo:OOoRunner — qadevOOo QA
                    framework, ~2137 classes; classpath ridl/unoil/jurt/juh_jar/
                    java_uno_jar; .csv objdsc NOT jarred, manifest omitted).
