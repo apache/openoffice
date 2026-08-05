@@ -48,8 +48,13 @@ test          🔨  C++ unit-test infra runnable — NOW THE FRONT-LINE TASK: br
                    EMPTY test.log; and the CRT manifest must be EMBEDDED (RT_MANIFEST
                    id 1, now linked into every gtest_test exe) not just staged as an
                    external <exe>.manifest, or late DLL loads fall outside the
-                   activation context.  NEXT: sweep qa/ across the remaining migrated
-                   modules.  DONE since: 8 sal osl/socket suites + shell_qa_zip.
+                   activation context.  The qa/ SWEEP IS DONE: no ALREADY-MIGRATED module
+                   still has an unwired C++ qa/ suite (verified 2026-08-04 — every other
+                   qa/ dir is Java, or Perl/shell tooling as in basegfx+slideshow; the
+                   only C++ leftover is xmlsecurity/qa/certext, which needs fixture (b)).
+                   DONE since: 8 sal osl/socket suites + shell_qa_zip + the 3 sal
+                   child-process suites (osl_process 7/8, rtl_Process 3/3,
+                   rtl_Bootstrap 25/30).
                    "Needs a CppUnit external dep" was largely a MYTH — NOTHING checked
                    so far actually uses cppunit.  osl/socket and shell/qa are plain
                    GoogleTest (now wired); writerfilter/qa/cppunittests is misnamed —
@@ -76,10 +81,42 @@ test          🔨  C++ unit-test infra runnable — NOW THE FRONT-LINE TASK: br
                    //main/svl:svl_qa_test_URIHelper.  Caveat — it depends on the WHOLE
                    install, so it is slow and not a unit test; only use uno_install
                    where UNO is genuinely bootstrapped.  (b) test::OfficeConnection
-                   (launch soffice -accept=…;urp, resolve over URP) is STILL UNWIRED
-                   and is the remaining front line — test.dll is built and its args
-                   come from rtl::Bootstrap (arg-soffice=path:…, arg-user=…), so what
-                   is missing is the process lifecycle, not the plumbing.
+                   (launch soffice -accept=…;urp, resolve over URP) is DONE 2026-08-05:
+                   gtest_test office_connection=True (+ uno_install) makes a throwaway
+                   user installation and exports arg-soffice/arg-user.  GREEN:
+                   //main/test:test_qa_officeconnection (3/3 runs, ~15s — real office
+                   boot → URP resolve → remote Desktop → clean terminate).
+                   NOTHING TO PORT from dmake: solenv's C++ APP1TEST rule (_tg_app.mk)
+                   runs the bare exe with only --gtest_output and never sets these args
+                   at all; the complete recipe is the JAVA one
+                   (installationtest.mk::javatest), which is what was mirrored.  Two
+                   forced divergences from it: (1) the args go in the ENVIRONMENT, not
+                   as -env: command-line args — rtl::Bootstrap tries the command line
+                   first, but that half reads osl_getCommandArgCount(), only populated
+                   by SAL_IMPLEMENT_MAIN, and AOO's gtest suites all declare a bare
+                   main() (same root cause as //build/testsupport:sal_process_init);
+                   (2) arg-user is a NATIVE PATH, not Java's file:// URL, because the
+                   C++ side feeds it to getFileURLFromSystemPath().
+                   LANDMINE: a BACKSLASH IS AN ESCAPE CHARACTER in any rtl::Bootstrap
+                   value (every value goes through macro expansion; read() in sal
+                   bootstrap.cxx turns \X into X), so a raw Windows path loses EVERY
+                   separator — "C:\Users\x" comes back "C:Usersx" and
+                   getFileURLFromSystemPath fails with 21.  Double them.
+                   LANDMINE (INVERTS the usual runtime_dlls advice): with uno_install,
+                   co-locating a core UNO DLL BREAKS the bootstrap.  cppuhelper picks
+                   the dir to load bootstrap.uno.dll from via get_this_libpath() =
+                   getUrlFromAddress on ITSELF, and the exe's own dir beats PATH — so a
+                   co-located cppuhelper3MSC.dll makes it search the TEST dir ("loading
+                   component library failed: …/<test>.run/bootstrap.uno.dll").  List
+                   only test-only DLLs; the office closure is already on PATH via
+                   program/ (svl_qa_test_URIHelper lists none, which is why it passed).
+                   CONSUMER NOTE: upstream's ONLY C++ user of the fixture,
+                   xmlsecurity/qa/certext, CANNOT BUILD — it needs neon
+                   (ne_ssl_cert_read) and AOO replaced neon with curl (no main/neon, no
+                   ext module, no neon in configure.in, ucb webdav is curl-based; only a
+                   stale NEON3RDLIB lingers in solenv/inc/libs.mk).  Hence the
+                   migration-authored smoke test, without which the fixture would ship
+                   unexercised.
                    LANDMINE for any new launcher: bazel test's CWD is NEITHER the exe
                    dir NOR the execroot — locate everything from %~dp0 (see
                    _windows_relpath in gtest_test.bzl).
@@ -107,10 +144,29 @@ test          🔨  C++ unit-test infra runnable — NOW THE FRONT-LINE TASK: br
                       env, not just uno_install=//main/staging:install.
                     • cppuhelper/qa/propertysetmixin — UNO component DLL + own
                       types.idl + a per-test services.rdb (packcomponents.xslt).
-                    • xmlsecurity/qa/certext — uses test::OfficeConnection ⇒ fixture (b).
-                    • sal child-process suites (osl/process, rtl/bootstrap,
-                      rtl/process) — helper exe via getExecutablePath()+"/../bin";
-                      gtest_test's `companions` hook exists for this.
+                    • xmlsecurity/qa/certext — BLOCKED, and NOT on fixture (b) as
+                      recorded here before: it #includes <neon/ne_ssl.h> and calls
+                      ne_ssl_cert_read(), but AOO deleted neon in favour of curl.  Would
+                      need a neon external wrap (or a source change) — do not treat it as
+                      a fixture-(b) consumer.
+                   DONE 2026-08-04 — sal child-process suites (osl/process, rtl/process,
+                   rtl/bootstrap).  The recorded blocker ("helper exe via
+                   getExecutablePath()+/../bin, needs source changes") was a MISREADING:
+                   the idiom is dir-of(own module) → strip last component → +"bin", which
+                   under dmake's solver/bin is the IDENTITY, not a sibling lookup.  New
+                   gtest_test `bin_layout` just names the staging dir "bin" and it
+                   resolves; helpers via sal_qa_helper_exe + `companions`.  Second
+                   landmine, unrelated: BOTH osl/process TUs use LPTSTR/
+                   GetEnvironmentStrings/_tcslen without including <windows.h> (nothing
+                   they include reaches it — precompiled_sal.hxx is empty), i.e. bit-rot,
+                   since dmake gates qa/ behind ENABLE_UNIT_TESTS=NO.  Fixed with
+                   /FIwindows.h, but the two need OPPOSITE flavours and swapping them
+                   compiles cleanly while walking an ANSI block as wide chars: parent =
+                   ANSI, child = /DUNICODE= /D_UNICODE= (empty, so its own #define is an
+                   identical redefinition, not C4005).  Residual reds are test defects,
+                   not build: osl_process asserts an env ORDER Windows doesn't use;
+                   rtl_Bootstrap expects the default ini to be testshl2.ini because the
+                   testshl2-era process was literally testshl2.exe.
 testtools     ⬜  (bridgetest — pure-C++ UNO bridge round-trip; cli/pyuno/java variants
                    need rules_java — see Java bucket)
 qadevOOo      🔨  OOoRunner.jar built (//main/qadevOOo:OOoRunner — qadevOOo QA

@@ -60,7 +60,16 @@ def _windows_relpath(from_dir, to_dir):
     return "..\\" * (len(f) - common) + "\\".join(t[common:])
 
 def _staged_gtest_test_impl(ctx):
-    d = ctx.label.name + ".run"
+    # The staging dir is normally "<name>.run".  bin_layout makes it
+    # "<name>.run/bin" instead — the ONE thing the child-process suites need.
+    # They locate their helper exe with the testshl2-era idiom
+    #     dir-of(own module) → strip last path component → + "bin"
+    # (osl_process.cxx::getExecutablePath, rtl_Process/rtl_Bootstrap::
+    # getModulePath).  Under dmake both parent and child lived in solver/bin, so
+    # that round-trip was the IDENTITY; it only looks like an "../bin" lookup.
+    # Naming the staging dir "bin" reproduces the identity exactly, so the
+    # helpers staged beside the exe are found with no source change.
+    d = ctx.label.name + ".run" + ("/bin" if ctx.attr.bin_layout else "")
     staged = []
     seen = {}
 
@@ -144,6 +153,11 @@ def _staged_gtest_test_impl(ctx):
             ]:
                 stage(f)
 
+    if ctx.attr.office_connection and not uno_program_dir:
+        fail("office_connection requires uno_install — test::OfficeConnection " +
+             "bootstraps an in-process context to build the URL resolver, and " +
+             "the soffice it launches comes from the staged install.")
+
     executable = staged_exe
     if ctx.attr.run_in_staged_dir or uno_program_dir:
         launcher_dir = staged_exe.dirname  # the .bat sits beside the staged exe
@@ -160,9 +174,68 @@ def _staged_gtest_test_impl(ctx):
                 # live in program/; the exe's own directory still wins for what it
                 # imports directly, so its staged copies are unaffected.
                 'set "PATH=%_PROG%;%PATH%"',
-                'cd /d "%_PROG%" || exit /b 1',
-                '"%_EXE%" %*',
             ]
+
+            # Working directory.  program/ by default (what the UNO bootstrap
+            # tests have always used), but the staged dir when the test also
+            # opens a fixture by bare relative name — the two demands collide,
+            # and PATH already covers the only reason program/ was the cwd.
+            if ctx.attr.run_in_staged_dir:
+                lines += ['cd /d "%~dp0" || exit /b 1']
+            else:
+                lines += ['cd /d "%_PROG%" || exit /b 1']
+
+            if ctx.attr.office_connection:
+                # test::OfficeConnection reads its two arguments through
+                # rtl::Bootstrap under an "arg-" prefix (test/getargument.cxx).
+                # There is no dmake recipe to copy: solenv's C++ APP1TEST rule
+                # runs the bare exe with only --gtest_output, so it never sets
+                # these at all; the complete recipe is the JAVA one
+                # (installationtest.mk::javatest), which this mirrors.
+                #   * arg-soffice — "path:<exe>" makes OfficeConnection LAUNCH an
+                #     office (with -accept=pipe,name=…;urp); "connect:<desc>"
+                #     would attach to an already-running one.
+                #   * arg-user — a fresh user installation, wiped before AND after
+                #     as javatest does, so no state leaks between runs.  NOTE it
+                #     is a NATIVE PATH, not the file:// URL the Java side passes:
+                #     the C++ side feeds it to toAbsoluteFileUrl(), i.e.
+                #     osl::FileBase::getFileURLFromSystemPath().
+                #
+                # Passed as ENVIRONMENT VARIABLES, not as "-env:arg-…" command
+                # line arguments, which is what the dmake/Java side implies.
+                # rtl::Bootstrap resolves a key by trying the command line first
+                # and the environment second (bootstrap.cxx, Bootstrap_Impl::
+                # getValue), but the command-line half reads
+                # osl_getCommandArgCount(), which is only ever populated by
+                # sal_detail_initialize() — i.e. by SAL_IMPLEMENT_MAIN.  AOO's
+                # GoogleTest suites declare a plain main() instead and skip that,
+                # so -env: arguments are INVISIBLE to them.  Same root cause as
+                # //build/testsupport:sal_process_init (no WSAStartup for the
+                # socket suites); the environment route needs no shim TU and
+                # cannot be broken by a future suite's choice of main().
+                lines += [
+                    'set "_USER=%TEST_TMPDIR%\\oootest_user"',
+                    'if "%TEST_TMPDIR%"=="" set "_USER=%~dp0oootest_user"',
+                    # TEST_TMPDIR arrives with forward slashes; osl's
+                    # getFileURLFromSystemPath wants native separators.
+                    'set "_USER=%_USER:/=\\%"',
+                    'if exist "%_USER%" rmdir /s /q "%_USER%"',
+                    'mkdir "%_USER%" || exit /b 1',
+                    'set "_SOFFICE=%_PROG%\\soffice.exe"',
+                    # A BACKSLASH IS AN ESCAPE CHARACTER in a bootstrap value:
+                    # rtl::Bootstrap runs every value it returns through macro
+                    # expansion, where read() (sal/rtl/source/bootstrap.cxx)
+                    # turns "\X" into "X" and "\uXXXX" into a code point.  So a
+                    # raw Windows path loses EVERY separator on the way out —
+                    # "C:\Users\x" comes back as "C:Usersx" and
+                    # getFileURLFromSystemPath then fails with 21.  Double them
+                    # so one survives each unescape.  (The dmake/Java side never
+                    # hit this: it passes a file:// URL, which has no
+                    # backslashes.)
+                    'set "arg-soffice=path:%_SOFFICE:\\=\\\\%"',
+                    'set "arg-user=%_USER:\\=\\\\%"',
+                ]
+            lines += ['"%_EXE%" %*']
         else:
             # Co-locating a data file with the exe is not enough for a test that
             # opens it by bare relative name: the working directory is the
@@ -172,7 +245,12 @@ def _staged_gtest_test_impl(ctx):
                 'cd /d "%~dp0" || exit /b 1',
                 '"%~dp0' + staged_exe.basename + '" %*',
             ]
-        lines += ["exit /b %ERRORLEVEL%", ""]
+
+        # Capture the exit code BEFORE any cleanup — rmdir would clobber it.
+        lines += ['set "_RC=%ERRORLEVEL%"']
+        if ctx.attr.office_connection:
+            lines += ['rmdir /s /q "%_USER%" 2>nul']
+        lines += ["exit /b %_RC%", ""]
 
         launcher = ctx.actions.declare_file(d + "/" + ctx.label.name + "_run.bat")
         ctx.actions.write(output = launcher, content = "\r\n".join(lines), is_executable = True)
@@ -194,6 +272,8 @@ _staged_gtest_test = rule(
         "companions": attr.label_list(cfg = "target"),
         "app_manifest": attr.label(allow_single_file = True, default = _APP_MANIFEST),
         "run_in_staged_dir": attr.bool(default = False),
+        "bin_layout": attr.bool(default = False),
+        "office_connection": attr.bool(default = False),
         "uno_install": attr.label(allow_files = True),
     },
 )
@@ -215,9 +295,11 @@ def gtest_test(
         data_files = [],
         uno_install = None,
         companions = [],
+        bin_layout = False,
+        office_connection = False,
         additional_linker_inputs = [],
         linkopts = [],
-        size = "small",
+        size = None,
         **kwargs):
     """A GoogleTest suite that actually runs under `bazel test` on Windows/MD.
 
@@ -237,7 +319,27 @@ def gtest_test(
         sfx.dll or sw.dll.
     It does make the test depend on the entire install, but a slow test beats no
     test; build time is not a reason to skip wiring something.
+
+    companions: helper exes the test spawns by name (a child process). Staged
+    beside the exe with their own external CRT manifest.
+
+    bin_layout: stage into "<name>.run/bin" instead of "<name>.run", for suites
+    that derive the helper's directory as <parent-of-own-dir>/bin (see the
+    staging rule). Implies run_in_staged_dir so the child's working directory
+    matches too.
+
+    office_connection: the test uses test::OfficeConnection, i.e. it LAUNCHES a
+    real soffice and talks to it over URP (fixture (b)). Requires uno_install.
+    Supplies arg-soffice / arg-user and a per-run user installation.
+    Defaults size to "medium" (300s): an office boot is far past the "small"
+    60s budget — ~15s observed here, and every run builds a FRESH user
+    installation so it is always a cold start. The headroom also bounds the
+    failure mode: OfficeConnection::setUp() retries the resolve in an UNBOUNDED
+    loop, so if the office never comes up the test timeout is the only thing
+    that ends it. Do not drop this to "small".
     """
+    if size == None:
+        size = "medium" if office_connection else "small"
     cc_binary(
         name = name + "_bin",
         srcs = srcs,
@@ -263,7 +365,9 @@ def gtest_test(
         binary = ":" + name + "_bin",
         runtime = runtime_dlls + data_files + [_CRT],
         companions = companions,
-        run_in_staged_dir = bool(data_files),
+        run_in_staged_dir = bool(data_files) or bin_layout,
+        bin_layout = bin_layout,
+        office_connection = office_connection,
         uno_install = uno_install,
         size = size,
     )

@@ -10,6 +10,7 @@ only.  They differ just in their source(s) and a per-dir include for a local
   * sal_headers + stlport + boost; sal_implib link; sal3.dll at run time.
 """
 
+load("@rules_cc//cc:defs.bzl", "cc_binary")
 load("//build/rules:gtest_test.bzl", "gtest_test")
 
 _DEFINES = [
@@ -20,26 +21,50 @@ _DEFINES = [
     "snprintf=_snprintf",
 ]
 
+_COMMON_COPTS = [
+    "/Imain/sal/inc/pch",
+    "/Imain/sal/qa/inc",
+    "/Imain/soltools/winunistd",
+    "/Zc:wchar_t-",
+]
+
+_COMMON_DEPS = [
+    "//main/sal:sal_headers",
+    "//main/stlport:stlport",
+    "@boost.legacy//:boost.legacy",
+]
+
 def sal_qa_test(name, srcs, subdir, copts = [], deps = [], linkopts = [], companions = [], **kwargs):
     gtest_test(
         name = name,
         srcs = srcs,
         companions = companions,
-        copts = [
-            "/Imain/sal/inc/pch",
-            "/Imain/sal/qa/inc",
-            "/Imain/sal/qa/" + subdir,
-            "/Imain/soltools/winunistd",
-            "/Zc:wchar_t-",
-        ] + copts,
+        copts = _COMMON_COPTS + ["/Imain/sal/qa/" + subdir] + copts,
         defines = _DEFINES,
-        deps = [
-            "//main/sal:sal_headers",
-            "//main/stlport:stlport",
-            "@boost.legacy//:boost.legacy",
-        ] + deps,
+        deps = _COMMON_DEPS + deps,
         additional_linker_inputs = ["//main/sal:sal_implib"],
         linkopts = ["$(execpath //main/sal:sal_implib)"] + linkopts,
         runtime_dlls = ["//main/sal:sal3"],
         **kwargs
+    )
+
+def sal_qa_helper_exe(name, srcs, subdir, copts = [], deps = [], linkopts = []):
+    """A child process a sal/qa suite spawns by name (osl_process_child, …).
+
+    Same compile environment as sal_qa_test, minus gtest: these are not test
+    harnesses but plain exes that the parent launches and then inspects the exit
+    code of, the arguments echoed by, or a dumped environment file written by.
+    Pass them to sal_qa_test's `companions` so they are staged beside the exe.
+    """
+    cc_binary(
+        name = name,
+        srcs = srcs,
+        copts = _COMMON_COPTS + ["/Imain/sal/qa/" + subdir] + copts,
+        defines = _DEFINES,
+        deps = _COMMON_DEPS + deps,
+        additional_linker_inputs = ["//main/sal:sal_implib"],
+        # /MANIFEST:NO — the staging rule supplies an external <exe>.manifest
+        # for the VC90 CRT, exactly as it does for the test exe itself.
+        linkopts = ["$(execpath //main/sal:sal_implib)", "/MANIFEST:NO"] + linkopts,
+        testonly = True,
     )

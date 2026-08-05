@@ -1,6 +1,7 @@
 package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("//build/rules:gtest_test.bzl", "gtest_test")
 
 # main/test — libtest, AOO's C++ unit-test support library (test.dll).
 #
@@ -86,4 +87,81 @@ filegroup(
     srcs = [":test"],
     output_group = "interface_library",
     visibility = ["//visibility:public"],
+)
+
+# ── smoke test for the OfficeConnection fixture itself ────────────────
+# MIGRATION-AUTHORED (qa/test_officeconnection.cxx) — see the long comment at
+# the top of that file.  Upstream's only C++ user of test::OfficeConnection is
+# xmlsecurity/qa/certext, which cannot build here (it needs neon, which AOO
+# replaced with curl and removed from the tree), so without this the fixture
+# would ship unexercised.
+#
+# office_connection = True is what makes this fixture (b) rather than (a): the
+# launcher creates a throwaway user installation and passes -env:arg-soffice /
+# -env:arg-user, which test::OfficeConnection reads through rtl::Bootstrap.
+# It LAUNCHES A FULL OFFICE, so it is slow by construction (14-18s, and always a
+# cold start — the user installation is recreated per run).
+#
+# EXPECTED: `bazel test` warns that the execution time is "outside of range for
+# MODERATE tests. Consider setting timeout=short or size=small".  Do NOT take
+# that advice.  size=small caps the timeout at 60s, barely 3x the observed time
+# on an idle machine (18.1s of that range was measured under parallel load), and
+# the failure mode here is an UNBOUNDED retry loop in
+# OfficeConnection::setUp() — the timeout is the only thing that ends a run
+# where the office never accepts.  The warning is the cost of that headroom.
+gtest_test(
+    name = "test_qa_officeconnection",
+    srcs = ["qa/test_officeconnection.cxx"],
+    copts = [
+        "/Imain/test/inc",
+        "/Imain/test/inc/pch",
+        "/Zc:wchar_t-",
+    ],
+    # NOT OOO_DLLIMPLEMENTATION_TEST — that is for building test.dll itself;
+    # a consumer wants the dllimport side of OOO_DLLPUBLIC_TEST.
+    defines = [
+        "WNT",
+        "GUI",
+        "WIN32",
+        "snprintf=_snprintf",
+    ],
+    deps = [
+        ":test_headers",
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/stlport:stlport",
+        "@boost.legacy//:boost.legacy",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        ":test_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath :test_implib)",
+    ],
+    # ONLY test.dll.  It is a test-only library, so unlike everything else here
+    # it is genuinely not part of the staged install.
+    #
+    # Do NOT add sal3/cppu3/cppuhelper here to "be safe".  With uno_install the
+    # usual advice inverts: co-locating a core UNO DLL BREAKS the bootstrap.
+    # cppuhelper resolves the directory it loads bootstrap.uno.dll and friends
+    # from via get_this_libpath() — Module::getUrlFromAddress() on ITSELF
+    # (cppuhelper/source/bootstrap.cxx) — and the loader searches the exe's own
+    # directory before PATH.  A co-located cppuhelper3MSC.dll therefore makes
+    # that path the TEST staging dir instead of program/, and the bootstrap dies
+    # with "loading component library failed: .../<test>.run/bootstrap.uno.dll".
+    # Everything in the office closure is already on PATH via program/; leave it
+    # there.  //main/svl:svl_qa_test_URIHelper passes for the same reason — it
+    # lists no runtime_dlls at all.
+    runtime_dlls = [":test"],
+    uno_install = "//main/staging:install",
+    office_connection = True,
 )

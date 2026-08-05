@@ -2,7 +2,7 @@ package(default_visibility = ["//visibility:public"])
 
 # we need to load cc_binary and cc_library to be able to use them here
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
-load("//main/sal:sal_qa.bzl", "sal_qa_test")
+load("//main/sal:sal_qa.bzl", "sal_qa_helper_exe", "sal_qa_test")
 
 # Global defines for all cc_library rules in sal (Windows MSVC)
 _COPTS = [
@@ -200,19 +200,16 @@ filegroup(
 # only real gate is the test source's helper includes — all handled by the
 # macro's /Imain/sal/qa/inc + per-dir include.
 #
-# DEFERRED (not wired):
-#   * cppunit suites — osl/socket/*, rtl_strings/* → Phase 4 (needs CppUnit dep)
-#   * child-process tests — osl/process, rtl/bootstrap, rtl/process (parent
-#     execs a helper exe that would need separate staging)
-#   * resource/IPC tests — osl/file, osl/module, osl/pipe (need temp dirs, a
-#     loadable module, or a process pair)
-#   * systools/test_comtools — Win32 COM smart-pointers (needs ole32 + CoInit)
-#   * osl/security — Win32 SID/registry APIs (needs <windows.h> + advapi32.lib)
+# DEFERRED (not wired): osl/security only — see the note at its commented-out
+# sal_qa_test below.  Everything else once listed here is now wired: the
+# osl/socket suites (plain GoogleTest all along, + sal_process_init), the
+# resource/IPC tests (osl/file, osl/module, osl/pipe), systools/test_comtools,
+# and the child-process spawners (osl/process, rtl/process, rtl/bootstrap —
+# see the bin_layout note below).
 #
 # KNOWN UPSTREAM FAILURES (wired + run, but fail on their own merits — source is
-# out of scope so not fixed here): testHelperFunctions has 64-bit-shift logic
-# asserts that fail on this platform.  These remain buildable/runnable
-# individually.
+# out of scope so not fixed here): see the annotated list next to the test_suite
+# at the bottom of this file.  All of them remain buildable/runnable individually.
 #
 # FIXED: rtl_str / rtl_ustr / rtl_string previously had *_000 cases that passed
 # NULL into C string functions which dereference it (e.g. rtl_str_compare(NULL,
@@ -267,6 +264,74 @@ sal_qa_test(name = "tcwf", srcs = ["qa/osl/file/test_cpy_wrt_file.cxx"], subdir 
 sal_qa_test(name = "osl_old_test_file", srcs = ["qa/osl/file/osl_old_test_file.cxx"], subdir = "osl/file")
 # osl_Thread calls Win32 Sleep() (kernel32, default-linked): force-include <windows.h>.
 sal_qa_test(name = "osl_Thread", srcs = ["qa/osl/process/osl_Thread.cxx"], subdir = "osl/process", copts = ["/FIwindows.h"])
+
+# ── child-process suites ─────────────────────────────────────────────────
+# Long listed here as unwirable "without source changes", on the reading that
+# they look their helper exe up at ../bin.  They don't.  Each derives the
+# helper's directory as
+#     dir-of(own module) → strip the last path component → append "bin"
+# (osl_process.cxx::getExecutablePath, rtl_Process.cxx / rtl_Bootstrap.cxx::
+# getModulePath).  Under dmake parent and child both lived in solver/bin, so
+# that round-trip resolved back to the SAME directory — it is the identity, not
+# a sibling lookup.  gtest_test's `bin_layout` reproduces it by naming the
+# staging dir "bin"; the helpers then sit right where the suites look, with the
+# source untouched.  (bin_layout also runs the test with its working directory
+# in the staged dir, which the environment-dump cases need.)
+#
+# Both TUs of the osl/process pair walk the environment block with LPTSTR /
+# GetEnvironmentStrings() / _tcslen() but neither includes <windows.h>, and
+# nothing they do include reaches it (sal's precompiled_sal.hxx is empty and no
+# rtl header pulls it in) — dead code, since dmake gates every qa/ dir behind
+# ENABLE_UNIT_TESTS, which defaults to NO.  Source is out of scope, so supply it
+# with /FIwindows.h — but the two want OPPOSITE flavours, and getting that
+# backwards compiles cleanly while silently walking an ANSI block as wide chars:
+#   * osl_process (parent) defines neither UNICODE nor _UNICODE, and does
+#     std::string(p) / _tcslen(p) on the LPTSTR → it wants the ANSI mapping.
+#   * osl_process_child defines UNICODE + _UNICODE itself and does
+#     reinterpret_cast<wchar_t*> + WideCharToMultiByte → it wants the wide one,
+#     so UNICODE must already be defined when windows.h arrives.  Defined as
+#     EMPTY (/DUNICODE=) so the source's own `#define UNICODE` is an identical
+#     redefinition rather than a C4005.
+sal_qa_helper_exe(
+    name = "osl_process_child",
+    srcs = ["qa/osl/process/osl_process_child.cxx"],
+    subdir = "osl/process",
+    copts = ["/DUNICODE=", "/D_UNICODE=", "/FIwindows.h"],
+)
+sal_qa_test(
+    name = "osl_process",
+    srcs = ["qa/osl/process/osl_process.cxx"],
+    subdir = "osl/process",
+    copts = ["/FIwindows.h"],
+    companions = [":osl_process_child"],
+    bin_layout = True,
+)
+
+sal_qa_helper_exe(name = "child_process", srcs = ["qa/rtl/process/child_process.cxx"], subdir = "rtl/process")
+sal_qa_helper_exe(name = "child_process_id", srcs = ["qa/rtl/process/child_process_id.cxx"], subdir = "rtl/process")
+sal_qa_test(
+    name = "rtl_Process",
+    srcs = ["qa/rtl/process/rtl_Process.cxx"],
+    subdir = "rtl/process",
+    companions = [
+        ":child_process",
+        ":child_process_id",
+    ],
+    bin_layout = True,
+)
+
+# rtl_Bootstrap additionally writes its own bootstrap_process.ini next to the
+# exe at run time (create_bootstrap_processrc) and reads testshl2.ini/pseudo.ini
+# from the exe's directory via osl_getExecutableFile — all satisfied by the same
+# staged dir, no extra data files.
+sal_qa_helper_exe(name = "bootstrap_process", srcs = ["qa/rtl/bootstrap/bootstrap_process.cxx"], subdir = "rtl/bootstrap")
+sal_qa_test(
+    name = "rtl_Bootstrap",
+    srcs = ["qa/rtl/bootstrap/rtl_Bootstrap.cxx"],
+    subdir = "rtl/bootstrap",
+    companions = [":bootstrap_process"],
+    bin_layout = True,
+)
 
 # osl/socket — 8 apps from qa/osl/socket/makefile.mk.  These were long listed as
 # "blocked on a CppUnit external dep"; that was wrong — every one of them is
@@ -349,21 +414,22 @@ sal_qa_test(name = "sal_ut_bytesequence", srcs = ["qa/ByteSequence/ByteSequence.
 # test — passing and failing alike (failures are information, not hidden).  Most
 # pass; the known failures fail on their OWN merits, NOT the build (source is out
 # of scope), and are kept in so they stay visible:
-#   testHelperFunctions — test_t_abs64 does (2147483648 << 1) in 32-bit → 0
 #   rtl_logfile — writes/reads c:/temp and asserts on it → env/permission bound
 #   rtl_textcvt — conversion/mime/codepage table expectations (sal conversion
 #       works in the running app → test-data drift)
 #   osl_File / osl_old_test_file / tcwf / osl_Module / sal_ut_osl_pipe — exercise
 #       the filesystem / module loader / pipes; may depend on the run environment
+#   osl_process — osl_execProc_merged_child_environment compares the merged vars
+#       against a hand-written ORDER, but Windows returns the environment block
+#       sorted case-insensitively (PAT, Patha, PATHb ≠ PAT, PATHb, Patha)
+#   rtl_Bootstrap — 4 of 5 read the DEFAULT bootstrap context and expect
+#       testshl2.ini; the default ini is <exename>.ini, and under the retired
+#       testshl2 harness the process was literally testshl2.exe
 #
-# NOT YET WIRED (hard blockers, not cosmetic):
-#   * cppunit suites — osl/socket/*, rtl_strings/* → need a CppUnit external dep
-#     (Phase 4); they will not compile until it is wrapped.
-#   * child-process spawners — osl/process:osl_process, rtl/process:rtl_Process,
-#     rtl/bootstrap:rtl_Bootstrap → resolve their helper exe via
-#     getExecutablePath()→"../bin" (the dmake solver/bin layout), which flat
-#     Bazel staging cannot satisfy without source changes.  The gtest_test rule
-#     has a `companions` hook ready for when that layout is reproduced.
+# NOT YET WIRED: osl_Security only — it does not COMPILE (testshl2 header, see
+# above), which is a different thing from an excluded-because-failing test.
+# The child-process spawners (osl_process, rtl_Process, rtl_Bootstrap) used to
+# be listed here; they are wired now via bin_layout (see above).
 test_suite(
     name = "sal_tests",
     tests = [
@@ -399,6 +465,9 @@ test_suite(
         ":tcwf",
         ":osl_old_test_file",
         ":osl_Thread",
+        ":osl_process",
+        ":rtl_Process",
+        ":rtl_Bootstrap",
         ":qa_rtl_strings",
         ":osl_SocketOld",
         ":osl_Socket_tests",

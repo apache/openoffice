@@ -57,6 +57,8 @@ holdouts).  This brings the test layer onto Bazel so suites run under
    - `//main/desktop:desktop_qa_dp_version` — extension version ordering
    - `//main/sal:osl_Socket_tests`, `:osl_StreamSocket`, `:osl_DatagramSocket`,
      `:osl_AcceptorSocket` (4 of the 8 socket suites; see the socket note below)
+   - `//main/sal:rtl_Process` (3), `:osl_process` (7/8), `:rtl_Bootstrap`
+     (25/30) — the child-process suites; see "the `bin` layout" below
 
    **Tests with private IDL types** (cppu/qa has a `types.idl` defining
    Enum1/Struct1/Interface1/… used only by the tests): reuse the `idl_library`
@@ -102,10 +104,39 @@ holdouts).  This brings the test layer onto Bazel so suites run under
 
    b. **Running-office connection** — `test::OfficeConnection` (libtest) starts
       a real soffice with `-accept=pipe,name=…;urp` and resolves a remote
-      context over URP. **Still unwired.** `test.dll` is built and its arguments
-      come from `rtl::Bootstrap` (`arg-soffice=path:<soffice.exe>`,
-      `arg-user=<user installation>`), so what is missing is the process
-      lifecycle, not the plumbing.
+      context over URP. Pass `office_connection = True` **together with**
+      `uno_install` (the fixture still bootstraps an in-process context to build
+      the URL resolver). The launcher then creates a throwaway user installation
+      and passes the two arguments the fixture reads through `rtl::Bootstrap`:
+      `-env:arg-soffice=path:<soffice.exe>` and `-env:arg-user=<dir>`.
+
+      **There is no dmake recipe to port for this.** solenv's C++ run rule
+      (`_tg_app.mk`, `APP1TEST`) invokes the bare exe with nothing but
+      `--gtest_output=`, so it never sets these at all — an upstream gap, not
+      something the migration dropped. The complete recipe is the **Java** one,
+      `installationtest.mk::javatest`, and the launcher mirrors it (including
+      wiping the user installation before *and* after). One deliberate
+      divergence: Java passes `arg-user` as a `file://` URL, but the C++ side
+      feeds it to `toAbsoluteFileUrl()` →
+      `osl::FileBase::getFileURLFromSystemPath()`, so it must be a **native
+      path**.
+
+      **Upstream's only C++ consumer cannot be built**:
+      `xmlsecurity/qa/certext` includes `<neon/ne_ssl.h>` and calls
+      `ne_ssl_cert_read()`, but AOO replaced neon with **curl** — WebDAV
+      (`ucb/source/ucp/webdav`) is curl-based, `configure.in` has no neon
+      option, and no neon source exists in the tree (only a stale `NEON3RDLIB`
+      in `solenv/inc/libs.mk`). That is a dead dependency, not a migration gap,
+      and it is why the fixture is exercised by a migration-authored smoke test
+      (`//main/test:test_qa_officeconnection`) instead — otherwise it would ship
+      unexercised and rot.
+
+      Note `OfficeConnection::setUp()` retries the resolve in an **unbounded**
+      loop, so a soffice that never accepts hangs until the Bazel test timeout.
+      That is why `office_connection` defaults `size` to `large`.
+
+      Green: `//main/test:test_qa_officeconnection` (~13 s — a full office boot,
+      URP resolve, remote service creation and clean terminate).
 
 ## Gotchas (learned the hard way)
 
@@ -176,6 +207,52 @@ holdouts).  This brings the test layer onto Bazel so suites run under
   [gtest_test.bzl](../../build/rules/gtest_test.bzl) does this, and it is why
   `uno_install` works from any package depth.
 
+- **A backslash is an ESCAPE character in an `rtl::Bootstrap` value.** Every
+  value `Bootstrap::get()` returns goes through macro expansion, where `read()`
+  ([sal/rtl/source/bootstrap.cxx](../sal/rtl/source/bootstrap.cxx)) turns `\X`
+  into `X` and `\uXXXX` into a code point. So a raw Windows path handed to a
+  bootstrap variable comes back with **every separator gone** —
+  `C:\Users\x` → `C:Usersx` — and `getFileURLFromSystemPath` then fails with
+  21. Double the backslashes so one survives each unescape (the `gtest_test`
+  launcher does this with cmd's `%VAR:\=\\%`). The dmake/Java side never hit
+  this because it passes a `file://` URL, which has no backslashes.
+
+- **With `uno_install`, co-locating a core UNO DLL BREAKS the bootstrap.** This
+  inverts the usual "list every transitive DLL in `runtime_dlls`" advice, so it
+  is easy to walk into while trying to be careful. cppuhelper finds the
+  directory to load `bootstrap.uno.dll` (and the other stoc bootstrap
+  components) from via `get_this_libpath()` — `Module::getUrlFromAddress()` on
+  *itself*, in [cppuhelper/source/bootstrap.cxx](../cppuhelper/source/bootstrap.cxx).
+  The loader searches the exe's own directory before `PATH`, so a co-located
+  `cppuhelper3MSC.dll` makes that path the *test staging dir* and the bootstrap
+  dies with `loading component library failed: …/<test>.run/bootstrap.uno.dll`.
+  Everything in the office closure is already reachable through `program/` on
+  `PATH` — leave it there. Both `//main/svl:svl_qa_test_URIHelper` and
+  `//main/test:test_qa_officeconnection` list nothing but their own test-only
+  DLL for exactly this reason.
+
+  (`bootstrap.uno.dll` is also one of the hardcoded-name cases CLAUDE.md warns
+  about for the `.uno` infix divergence — but it is staged under the upstream
+  name, so the infix is *not* what bites here. The directory is.)
+
+- **"`../bin`" was a misreading — it is the identity.** The child-process
+  suites were long recorded as unwirable without source changes because they
+  "resolve their helper exe via `getExecutablePath()`+`/../bin`". They don't.
+  The idiom (`osl_process.cxx::getExecutablePath`, `rtl_Process.cxx` /
+  `rtl_Bootstrap.cxx::getModulePath`) is
+
+  ```
+  dir-of(own module) → strip the last path component → append "bin"
+  ```
+
+  and under dmake both parent and child lived in `solver/bin`, so that
+  round-trip resolves back to the *same* directory. Naming the staging dir
+  `bin` reproduces it exactly — that is all `gtest_test`'s `bin_layout` does
+  (it also implies `run_in_staged_dir`). No source change, no `companions`
+  layout gymnastics. Worth remembering as a class: a path expression that looks
+  like it reaches out of the staging dir may just be a no-op round-trip that
+  the old layout satisfied trivially.
+
 - **Staging a data file beside the exe is not enough.** Co-located DLLs resolve
   regardless (the loader searches the exe's own path), which makes it easy to
   assume relative file opens will too — they don't. A test that opens a fixture by bare relative name
@@ -203,11 +280,11 @@ holdouts).  This brings the test layer onto Bazel so suites run under
 
 ## The sal suite is deliberately NOT a green gate
 
-`//main/sal:sal_tests` runs **every** migrated self-contained sal/qa test — 45
+`//main/sal:sal_tests` runs **every** migrated self-contained sal/qa test — 48
 targets, passing and failing alike, on the principle that failures are
 information, not something to hide (the rationale lives next to the
 `test_suite` in [main/sal/BUILD.bazel](../sal/BUILD.bazel)). So expect it to be
-red. As of 2026-08-02, 34 pass and these 11 fail, each on its **own merits** —
+red. As of 2026-08-04, 35 pass and these 13 fail, each on its **own merits** —
 none is a build or loader problem, and the source is out of scope:
 
 | Target | Failing | Why |
@@ -219,6 +296,8 @@ none is a build or loader problem, and the source is out of scope:
 | `osl_Thread` | 1 | `resume_001` is a timing race; flaky, not deterministic |
 | `rtl_OUString2` | 1 | `convertFromString` expects `\x80` to fail UTF-8 validation — test-data drift, same class as `rtl_textcvt` |
 | `qa_rtl_strings` | 1 | `Convert.convertToString` — same text-conversion drift |
+| `osl_process` | 1 | `osl_execProc_merged_child_environment` asserts the merged vars come back in the order the test listed them (`std::equal` over a vector), but Windows returns the environment block sorted case-insensitively — `PAT`, `Patha`, `PATHb` vs the expected `PAT`, `PATHb`, `Patha`. Ordering bug in the test |
+| `rtl_Bootstrap` | 5 | 4 of them (`getFrom_004_1`, `setIniFilename_002`, `testOverride`, `testNonexisting`) read the **default** bootstrap context and expect `testshl2.ini` — the default ini is `<exename>.ini`, and under the retired testshl2 harness the process *was* `testshl2.exe` (the log shows ours resolving `rtl_Bootstrap.ini`). `expandMacrosFrom_002_2` is ini cross-reference precedence |
 | `osl_SocketOld` | 10 | see socket note below |
 | `osl_SocketAddr` | 3 | see socket note below |
 | `osl_Socket2` | 7 | see socket note below |
@@ -283,8 +362,25 @@ already wired (`rtl_OString2`, `rtl_str`, `rtl_string`, `rtl_OUString2`,
 `rtl_ustr`). So it is **dead weight, not a blocker**; there is nothing to gain
 by migrating it.
 
-Still unwired: child-process tests (`osl/process`, `rtl/bootstrap`,
-`rtl/process`) → they resolve their helper exe via `getExecutablePath()`+`"/../bin"`
-(the dmake `solver/bin` layout), which flat Bazel staging can't satisfy without
-source changes — `gtest_test` has a `companions` hook ready for when that layout
-is reproduced.
+The child-process tests (`osl/process`, `rtl/process`, `rtl/bootstrap`) were
+listed here as unwired for exactly that reason; they are wired now via
+`bin_layout` + `companions` (see the gotcha above). Their helper exes are built
+by `sal_qa_helper_exe` in [sal_qa.bzl](../sal/sal_qa.bzl) — the same compile
+environment as `sal_qa_test` minus gtest.
+
+Both TUs of the `osl/process` pair walk the environment block with `LPTSTR` /
+`GetEnvironmentStrings()` / `_tcslen()` but **neither includes `<windows.h>`**,
+and nothing they include reaches it (`precompiled_sal.hxx` is empty; no rtl
+header pulls it in). That is bit-rot, not a migration gap — dmake gates every
+`qa/` dir behind `ENABLE_UNIT_TESTS`, which defaults to NO, so these had not
+compiled in years. Supplied with `/FIwindows.h`, but the two want **opposite**
+flavours and getting it backwards compiles cleanly while silently walking an
+ANSI block as wide chars: the parent defines neither `UNICODE` nor `_UNICODE`
+and does `std::string(p)` → ANSI; the child defines both itself and does
+`reinterpret_cast<wchar_t*>` → needs `UNICODE` defined *before* `windows.h`
+arrives, hence `/DUNICODE=` (empty, so the source's own `#define UNICODE` is an
+identical redefinition rather than a C4005). `/DNOMINMAX` is already global in
+the toolchain, so force-including `windows.h` ahead of `<algorithm>` is safe.
+
+Still unwired: nothing in sal/qa except `osl_Security`, which does not compile
+(testshl2 header — see the gotcha above).
