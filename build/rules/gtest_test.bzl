@@ -59,6 +59,47 @@ def _windows_relpath(from_dir, to_dir):
         common = i + 1
     return "..\\" * (len(f) - common) + "\\".join(t[common:])
 
+# Tokens usable in `env` values and `prerun` command lines.  They stand for
+# paths only knowable at run time, and expand to launcher variables:
+#   $(RUNDIR)      the staged directory (native, no trailing separator)
+#   $(PROGRAM)     the staged install's program/ dir (needs uno_install)
+#   $(SCRATCH)     a fresh, empty, WRITABLE per-run directory (native)
+#   $(SCRATCH_URL) the same directory as forward slashes, for a file:/// URL
+# Everything a test writes belongs under $(SCRATCH): the staged dir lives in
+# bazel-out and must be treated as read-only build output.
+_TOKENS = [
+    # $(SCRATCH_URL) FIRST — otherwise $(SCRATCH) matches its prefix.
+    ("$(SCRATCH_URL)", "%_SCRATCHU%"),
+    ("$(SCRATCH)", "%_SCRATCH%"),
+    ("$(RUNDIR)", "%_RUN%"),
+    ("$(PROGRAM)", "%_PROG%"),
+]
+
+def _expand_tokens(s):
+    for token, var in _TOKENS:
+        s = s.replace(token, var)
+    return s
+
+def _uses_token(strings, token):
+    for s in strings:
+        if s.find(token) != -1:
+            return True
+    return False
+
+def _env_lines(env):
+    # sorted() so the launcher is byte-identical across analyses (a dict's
+    # iteration order is stable in Starlark, but the attr comes from a BUILD file
+    # where the author's ordering carries no meaning).
+    return ['set "%s=%s"' % (k, _expand_tokens(env[k])) for k in sorted(env)]
+
+def _prerun_lines(prerun):
+    # `|| exit /b 1` on every one: a fixture that failed to build must fail the
+    # test loudly, not leave the suite to report a confusing downstream error.
+    out = []
+    for cmd in prerun:
+        out.append(_expand_tokens(cmd) + " || exit /b 1")
+    return out
+
 def _staged_gtest_test_impl(ctx):
     # The staging dir is normally "<name>.run".  bin_layout makes it
     # "<name>.run/bin" instead — the ONE thing the child-process suites need.
@@ -110,6 +151,20 @@ def _staged_gtest_test_impl(ctx):
     ctx.actions.symlink(output = man, target_file = ctx.file.app_manifest)
     staged.append(man)
 
+    # data_tree — fixture files staged at an EXPLICIT relative path rather than
+    # flat by basename (which is all `runtime` can express).  Needed whenever the
+    # shape of the tree is what is under test: a mini UNO installation resolves
+    # $ORIGIN against the ini's own directory, so basis/program/uno.ini has to be
+    # exactly there, and two files in it are both named "bootstrap.ini".
+    for label, rel in ctx.attr.data_tree.items():
+        files = label[DefaultInfo].files.to_list()
+        if len(files) != 1:
+            fail("data_tree entry %s must provide exactly one file, got %d" %
+                 (label.label, len(files)))
+        o = ctx.actions.declare_file(d + "/" + rel)
+        ctx.actions.symlink(output = o, target_file = files[0])
+        staged.append(o)
+
     # ── UNO environment (subsequent / in-process-bootstrap tests) ────────────
     # A test that calls cppu::defaultBootstrap_InitialComponentContext() needs a
     # real UNO installation: type + service rdbs, and every component DLL named
@@ -158,18 +213,82 @@ def _staged_gtest_test_impl(ctx):
              "bootstraps an in-process context to build the URL resolver, and " +
              "the soffice it launches comes from the staged install.")
 
+    # A launcher .bat is needed for anything the bare exe cannot express itself:
+    # a working directory, an environment, or a fixture built at run time.
+    env = ctx.attr.env
+    prerun = ctx.attr.prerun
+    values = env.values() + prerun
+    need_scratch = (ctx.attr.office_connection or
+                    _uses_token(values, "$(SCRATCH"))
+    if _uses_token(values, "$(PROGRAM)") and not uno_program_dir:
+        fail("$(PROGRAM) needs uno_install — there is no staged install to point at.")
+    if ctx.attr.ure_bootstrap and not uno_program_dir:
+        fail("ure_bootstrap needs uno_install: it only REDIRECTS the bootstrap " +
+             "ini, it does not supply the UNO DLL closure the test still loads.")
+
     executable = staged_exe
-    if ctx.attr.run_in_staged_dir or uno_program_dir:
+    if (ctx.attr.run_in_staged_dir or uno_program_dir or env or prerun):
         launcher_dir = staged_exe.dirname  # the .bat sits beside the staged exe
         lines = ["@echo off", "setlocal"]
+
+        # %~dp0 keeps its trailing backslash, which does not concatenate cleanly
+        # and cannot be quoted next to one; "%~dp0." normalized by %%~fI gives the
+        # same directory without it.
+        lines += ['for %%I in ("%~dp0.") do set "_RUN=%%~fI"']
+
+        if need_scratch:
+            # Everything the test writes goes here.  Wiped BEFORE as well as
+            # after: a run that dies without cleaning up must not hand its state
+            # to the next one (a stale user installation is exactly the kind of
+            # thing that makes a failure unreproducible).
+            lines += [
+                'set "_SCRATCH=%TEST_TMPDIR%\\scratch"',
+                'if "%TEST_TMPDIR%"=="" set "_SCRATCH=%_RUN%\\scratch"',
+                # TEST_TMPDIR arrives with forward slashes; the native form is
+                # what osl's getFileURLFromSystemPath and cmd both want.
+                'set "_SCRATCH=%_SCRATCH:/=\\%"',
+                'if exist "%_SCRATCH%" rmdir /s /q "%_SCRATCH%"',
+                'mkdir "%_SCRATCH%" || exit /b 1',
+                # file:/// URL form: only the separators differ on Windows.
+                'set "_SCRATCHU=%_SCRATCH:\\=/%"',
+            ]
+
         if uno_program_dir:
             lines += [
                 'set "_EXE=%~dp0' + staged_exe.basename + '"',
                 # Resolved from the launcher's own location (%~dp0), not %CD%.
                 'for %%I in ("%~dp0' + _windows_relpath(launcher_dir, uno_program_dir) +
                 '") do set "_PROG=%%~fI"',
-                # vnd.sun.star.pathname: takes a native path, not a file URL.
-                'set "URE_BOOTSTRAP=vnd.sun.star.pathname:%_PROG%\\fundamental.ini"',
+            ]
+
+            # Which installation the UNO bootstrap describes.  Normally the
+            # staged office (program/fundamental.ini, whose ${ORIGIN} then
+            # supplies UNO_TYPES / UNO_SERVICES / URE_INTERNAL_LIB_DIR).  A test
+            # that is ABOUT the configuration layer needs its own tiny
+            # installation instead, so it can assert on data it controls rather
+            # than on whatever the real registry happens to hold — that is what
+            # ure_bootstrap redirects to.  The DLLs still come from program/ via
+            # PATH below; only the data root moves.
+            #
+            # NOTE single backslashes here, unlike arg-soffice/arg-user further
+            # down.  URE_BOOTSTRAP is consumed by the bootstrap machinery itself
+            # (rtl_bootstrap_args_open on the ini path) and is NOT put through
+            # macro expansion, so its separators survive.  Values that a test
+            # later reads back via rtl::Bootstrap::get() ARE expanded, and those
+            # must double their backslashes.
+            #
+            # vnd.sun.star.pathname: takes a native path, not a file URL.
+            if ctx.attr.ure_bootstrap:
+                lines += [
+                    'set "URE_BOOTSTRAP=vnd.sun.star.pathname:%_RUN%\\' +
+                    ctx.attr.ure_bootstrap.replace("/", "\\") + '"',
+                ]
+            else:
+                lines += [
+                    'set "URE_BOOTSTRAP=vnd.sun.star.pathname:%_PROG%\\fundamental.ini"',
+                ]
+
+            lines += [
                 # Component DLLs named in services.rdb are loaded at run time and
                 # live in program/; the exe's own directory still wins for what it
                 # imports directly, so its staged copies are unaffected.
@@ -213,14 +332,10 @@ def _staged_gtest_test_impl(ctx):
                 # //build/testsupport:sal_process_init (no WSAStartup for the
                 # socket suites); the environment route needs no shim TU and
                 # cannot be broken by a future suite's choice of main().
+                # The user installation is just the general scratch directory —
+                # created and wiped by the block above, which is why there is no
+                # per-run bookkeeping here.
                 lines += [
-                    'set "_USER=%TEST_TMPDIR%\\oootest_user"',
-                    'if "%TEST_TMPDIR%"=="" set "_USER=%~dp0oootest_user"',
-                    # TEST_TMPDIR arrives with forward slashes; osl's
-                    # getFileURLFromSystemPath wants native separators.
-                    'set "_USER=%_USER:/=\\%"',
-                    'if exist "%_USER%" rmdir /s /q "%_USER%"',
-                    'mkdir "%_USER%" || exit /b 1',
                     'set "_SOFFICE=%_PROG%\\soffice.exe"',
                     # A BACKSLASH IS AN ESCAPE CHARACTER in a bootstrap value:
                     # rtl::Bootstrap runs every value it returns through macro
@@ -233,23 +348,25 @@ def _staged_gtest_test_impl(ctx):
                     # hit this: it passes a file:// URL, which has no
                     # backslashes.)
                     'set "arg-soffice=path:%_SOFFICE:\\=\\\\%"',
-                    'set "arg-user=%_USER:\\=\\\\%"',
+                    'set "arg-user=%_SCRATCH:\\=\\\\%"',
                 ]
-            lines += ['"%_EXE%" %*']
+            lines += _env_lines(env) + _prerun_lines(prerun) + ['"%_EXE%" %*']
         else:
             # Co-locating a data file with the exe is not enough for a test that
             # opens it by bare relative name: the working directory is the
             # execroot, not the exe's directory (the loader finds the staged DLLs
             # via the exe's own path, which is why those work regardless).
-            lines += [
-                'cd /d "%~dp0" || exit /b 1',
-                '"%~dp0' + staged_exe.basename + '" %*',
-            ]
+            # Only when that was actually asked for — a launcher that exists
+            # solely to set `env` must not silently move the cwd as well.
+            if ctx.attr.run_in_staged_dir:
+                lines += ['cd /d "%~dp0" || exit /b 1']
+            lines += _env_lines(env) + _prerun_lines(prerun)
+            lines += ['"%~dp0' + staged_exe.basename + '" %*']
 
         # Capture the exit code BEFORE any cleanup — rmdir would clobber it.
         lines += ['set "_RC=%ERRORLEVEL%"']
-        if ctx.attr.office_connection:
-            lines += ['rmdir /s /q "%_USER%" 2>nul']
+        if need_scratch:
+            lines += ['rmdir /s /q "%_SCRATCH%" 2>nul']
         lines += ["exit /b %_RC%", ""]
 
         launcher = ctx.actions.declare_file(d + "/" + ctx.label.name + "_run.bat")
@@ -275,6 +392,10 @@ _staged_gtest_test = rule(
         "bin_layout": attr.bool(default = False),
         "office_connection": attr.bool(default = False),
         "uno_install": attr.label(allow_files = True),
+        "data_tree": attr.label_keyed_string_dict(allow_files = True),
+        "env": attr.string_dict(),
+        "prerun": attr.string_list(),
+        "ure_bootstrap": attr.string(),
     },
 )
 
@@ -297,6 +418,10 @@ def gtest_test(
         companions = [],
         bin_layout = False,
         office_connection = False,
+        data_tree = {},
+        env = {},
+        prerun = [],
+        ure_bootstrap = None,
         additional_linker_inputs = [],
         linkopts = [],
         size = None,
@@ -337,6 +462,29 @@ def gtest_test(
     failure mode: OfficeConnection::setUp() retries the resolve in an UNBOUNDED
     loop, so if the office never comes up the test timeout is the only thing
     that ends it. Do not drop this to "small".
+
+    data_tree: {label: "relative/staged/path"} — like data_files, but staged at
+    a path you choose instead of flat by basename. Use it when the SHAPE of the
+    tree is the fixture: a mini UNO installation resolves $ORIGIN against the
+    ini's own directory, and two of its files are both named "bootstrap.ini".
+
+    env / prerun: extra environment variables, and command lines run in the
+    launcher just before the exe (each is `|| exit /b 1`-guarded). Both expand
+    $(RUNDIR) / $(PROGRAM) / $(SCRATCH) / $(SCRATCH_URL) — see _TOKENS.
+    prerun exists for fixtures that can only be BUILT at run time: a registry a
+    UNO tool has to write, for instance, where doing it as a build action would
+    mean bundling that tool with its own CRT manifest and DLL closure, and would
+    bake an absolute bazel-out path into a cached artifact.
+    NOTE an env value that the test reads back through rtl::Bootstrap::get()
+    goes through macro expansion, so its backslashes must be DOUBLED; one read
+    with plain getenv() must not be.
+
+    ure_bootstrap: staged-relative path (a data_tree entry) to a bootstrap ini
+    to use as URE_BOOTSTRAP instead of the install's program/fundamental.ini —
+    i.e. "run against THIS installation's data". For tests of the configuration
+    layer itself, which need a registry they control rather than the real one.
+    Requires uno_install: it moves the data root only, and the UNO DLL closure
+    still comes from program/ via PATH.
     """
     if size == None:
         size = "medium" if office_connection else "small"
@@ -369,5 +517,9 @@ def gtest_test(
         bin_layout = bin_layout,
         office_connection = office_connection,
         uno_install = uno_install,
+        data_tree = data_tree,
+        env = env,
+        prerun = prerun,
+        ure_bootstrap = ure_bootstrap or "",
         size = size,
     )

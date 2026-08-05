@@ -1,6 +1,8 @@
 package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary")
+load("@bazel_skylib//rules:write_file.bzl", "write_file")
+load("//build/rules:gtest_test.bzl", "gtest_test")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -86,4 +88,191 @@ cc_binary(
 )
 
 exports_files(glob(["**/*.component"]))
+
+# ── qa/unit — the configuration layer against its OWN mini installation ──
+#
+# STATUS: WIRED AND RED, and it cannot go green without a SOURCE change (out of
+# scope).  It builds and links; it dies in the `prerun` fixture step with
+#     configmgr.uno.dll: cannot get symbol: component_writeInfo
+# That is not a migration defect.  `regcomp -register` registers a component by
+# calling component_writeInfo() on it — the PRE-.component registration
+# mechanism — and AOO retired that in the 3-layer-office removal: configmgr's
+# services.cxx exports only component_getFactory and
+# component_getImplementationEnvironment, and the tree now has 438 .component
+# files against a handful of component_writeInfo exporters (odk examples,
+# workbench samples, legacy tests).  qa/unit/makefile.mk was never updated.
+#
+# The obvious escape — hand it a textual (XML) services registry instead of a
+# binary one — is closed: test.cxx calls the ONE-argument
+# createRegistryServiceFactory overload, which defaults bReadOnly to sal_False,
+# so SimpleRegistry::open() gets (readonly=false, create=true), and the textual
+# branch is reachable only when bReadOnly && !bCreate (simpleregistry.cxx).
+# UNO_SERVICES does not help either: it belongs to
+# defaultBootstrap_InitialComponentContext, not to this deprecated path.
+#
+# Upstream knows.  The commit that moved this suite to GoogleTest (7231f715d2,
+# "#i125003#") says in its own message: "All tests fail and on Windows it doesn't
+# start running, but these look like problems from before and at least it doesn't
+# run during the build" — dmake gates every qa/ dir behind ENABLE_UNIT_TESTS=NO,
+# so nobody has run it since.  Same class of bit-rot as the missing <windows.h>
+# in sal's osl/process suites, just fatal instead of cosmetic.
+#
+# Kept wired anyway, per the policy that a test which BUILDS gets wired even when
+# it is red on its own merits (cf. //main/writerfilter:writerfilter_qa_doctok,
+# red on a fixture that was never checked in).  The regcomp line is deliberately
+# left in place: its error message names the retired mechanism exactly, which is
+# more useful than a vaguer failure later inside Test::SetUp.
+#
+# To fix it, one of these — all source changes:
+#   * port test.cxx to defaultBootstrap_InitialComponentContext + a services.rdb
+#     (i.e. make it fixture (a), which gtest_test already supports); or
+#   * pass sal_True for bReadOnly and feed it a textual services registry; or
+#   * re-export component_writeInfo from configmgr (reviving what AOO retired —
+#     the worst of the three).
+#
+# Everything BELOW this notice is verified working and is the reason the target
+# stays: the mini installation stages and resolves, and the four gtest_test
+# capabilities it drove (data_tree / ure_bootstrap / env / prerun) are general.
+#
+# This is a THIRD test fixture flavour, distinct from the two in
+# build/rules/gtest_test.bzl's notes.  It is not the in-process bootstrap of the
+# staged office (a), nor a launched soffice over URP (b): the test builds its own
+# service manager with cppu::createRegistryServiceFactory(unit.rdb) and points
+# the bootstrap at a four-file installation whose entire share/registry is one
+# data.xcd it ships.  That is the whole point — a test that asserts on
+# /org.openoffice.Setup Test/AString cannot run against the real registry, which
+# has no such key, and one that WRITES keys must not touch the real user profile.
+#
+# Mirrors the TEST target in qa/unit/makefile.mk, whose recipe is:
+#   * a mini installation under $(MISC)/unitdata (below);
+#   * unit.rdb = a copy of types.rdb with configmgr.uno registered into it via
+#     regcomp, passed to the test in CONFIGMGR_UNIT_FORWARD_STRING;
+#   * URE_BOOTSTRAP pointed at unitdata/urebootstrap.ini.
+#
+# Two deliberate divergences from that recipe, both forced:
+#
+# 1. unit.rdb is built by the LAUNCHER (gtest_test prerun), not by a build
+#    action.  regcomp bootstraps a UNO service manager, so as a build action it
+#    would need its own staged DLL closure and CRT manifest — and worse, the
+#    location it records for a component is an ABSOLUTE path
+#    (registercomponent.cxx::convertToFileUrl), which a cached artifact must not
+#    contain.  Built per run in the scratch dir, the path it bakes in is the
+#    staged install that this very run is using, and nothing goes stale.
+#    `-br types.rdb` (which dmake omits) keeps regcomp's OWN bootstrap off the
+#    default registry: with it, cppuhelper builds the service manager from the
+#    type registry plus its hardcoded bootstrap components, so regcomp never
+#    consults the URE_BOOTSTRAP we have just redirected at the mini installation.
+#
+# 2. bootstrap.ini is written to basis/program/ as well as brand/program/.
+#    The makefile writes it only under brand/, but AOO's Components::
+#    getModificationFileUrl() reads
+#    ${$OOO_BASE_DIR/program/bootstrap.ini:UserInstallation} — OOO_BASE_DIR, i.e.
+#    basis/ — so under the recipe as written the lookup yields nothing and every
+#    write test loses its changes.  The fixture is stale, not the code; since it
+#    is generated build data rather than source, it is fixed here.
+#    UserInstallation also cannot be the makefile's $ORIGIN/../../user: that
+#    resolves inside bazel-out, which is build output and must be treated as
+#    read-only.  It indirects through $CONFIGMGR_UNIT_USER instead, which the
+#    launcher points at the per-run scratch dir (writeModFile() does
+#    Directory::createPath, so the leaf need not exist).
+
+write_file(
+    name = "qa_unit_uno_ini",
+    out = "qa/unit/gen/uno.ini",
+    content = [
+        "[Bootstrap]",
+        "UNO_SHARED_PACKAGES_CACHE = $OOO_BASE_DIR",
+        "UNO_USER_PACKAGES_CACHE = ${$OOO_BASE_DIR/program/bootstrap.ini:UserInstallation}",
+        "",
+    ],
+)
+
+# $CONFIGMGR_UNIT_USER is expanded by rtl::Bootstrap from the environment; the
+# launcher sets it to a file:/// URL under the scratch dir.  A URL, not a native
+# path, so there are no backslashes for bootstrap macro expansion to eat.
+#
+# TWO targets with identical content because data_tree is keyed by LABEL: one
+# label cannot be staged to two paths, and this file is needed at both
+# basis/program/ (what Components::getModificationFileUrl reads) and
+# brand/program/ (what the dmake recipe writes — kept for parity, in case
+# anything resolves it through BRAND_BASE_DIR).
+[
+    write_file(
+        name = "qa_unit_bootstrap_ini_" + where,
+        out = "qa/unit/gen/" + where + "/bootstrap.ini",
+        content = [
+            "[Bootstrap]",
+            "UserInstallation = $CONFIGMGR_UNIT_USER",
+            "",
+        ],
+    )
+    for where in [
+        "basis",
+        "brand",
+    ]
+]
+
+gtest_test(
+    name = "configmgr_qa_unit",
+    srcs = ["qa/unit/test.cxx"],
+    copts = [
+        "/Imain/configmgr/inc/pch",
+        "/Zc:wchar_t-",
+    ],
+    defines = [
+        "WNT",
+        "GUI",
+        "WIN32",
+        "snprintf=_snprintf",
+    ],
+    deps = [
+        "//main/sal:sal_headers",
+        "//main/cppu:cppu_headers",
+        "//main/cppuhelper:cppuhelper_headers",
+        "//main/udkapi:udkapi_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+        "//main/stlport:stlport",
+        "@boost.legacy//:boost.legacy",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+    ],
+    # The mini installation.  Paths are load-bearing: urebootstrap.ini resolves
+    # $ORIGIN against its OWN directory to reach basis/ and brand/, and the two
+    # bootstrap.ini files would collide under flat basename staging.
+    data_tree = {
+        "qa/unit/urebootstrap.ini": "unitdata/urebootstrap.ini",
+        ":qa_unit_uno_ini": "unitdata/basis/program/uno.ini",
+        ":qa_unit_bootstrap_ini_basis": "unitdata/basis/program/bootstrap.ini",
+        "qa/unit/data.xcd": "unitdata/basis/share/registry/data.xcd",
+        ":qa_unit_bootstrap_ini_brand": "unitdata/brand/program/bootstrap.ini",
+    },
+    ure_bootstrap = "unitdata/urebootstrap.ini",
+    # regcomp is staged beside the test exe (with its own CRT manifest) and run
+    # by the prerun lines below.
+    companions = ["//main/cpputools:regcomp"],
+    prerun = [
+        'copy /y "$(PROGRAM)\\types.rdb" "$(SCRATCH)\\unit.rdb" >nul',
+        '"$(RUNDIR)\\regcomp.exe" -register -br "$(PROGRAM)\\types.rdb" ' +
+        '-r "$(SCRATCH)\\unit.rdb" -c "$(PROGRAM)\\configmgr.uno.dll"',
+    ],
+    env = {
+        # Read with getenv() (test.cxx Test::SetUp), so NOT bootstrap-expanded:
+        # single backslashes, unlike arg-user in the office_connection fixture.
+        "CONFIGMGR_UNIT_FORWARD_STRING": "$(SCRATCH)\\unit.rdb",
+        "CONFIGMGR_UNIT_USER": "file:///$(SCRATCH_URL)/user",
+    },
+    # No runtime_dlls: with uno_install, co-locating a core UNO DLL breaks the
+    # bootstrap (cppuhelper resolves its component dir from its own module
+    # handle, and the exe's directory beats PATH).  program/ already has the
+    # whole closure, including configmgr.uno.dll itself.
+    uno_install = "//main/staging:install",
+)
 

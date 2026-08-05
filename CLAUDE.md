@@ -84,7 +84,7 @@ test          🔨  C++ unit-test infra runnable — NOW THE FRONT-LINE TASK: br
                    (launch soffice -accept=…;urp, resolve over URP) is DONE 2026-08-05:
                    gtest_test office_connection=True (+ uno_install) makes a throwaway
                    user installation and exports arg-soffice/arg-user.  GREEN:
-                   //main/test:test_qa_officeconnection (3/3 runs, ~15s — real office
+                   //main/test:test_qa_officeconnection (2/2, ~13s — real office
                    boot → URP resolve → remote Desktop → clean terminate).
                    NOTHING TO PORT from dmake: solenv's C++ APP1TEST rule (_tg_app.mk)
                    runs the bare exe with only --gtest_output and never sets these args
@@ -135,15 +135,64 @@ test          🔨  C++ unit-test infra runnable — NOW THE FRONT-LINE TASK: br
                    enumerating dozens of transitive DLLs for sw/sfx-sized libraries.
                    writerfilter_qa_doctok wired too (RED on its own missing fixture:
                    reads <cwd>/test.doc, never checked in; testInitUno passes).
+                   FIXTURE (c) DONE 2026-08-05 — "own mini installation": the test
+                   supplies its own registry data and builds its own service manager,
+                   no default bootstrap and no soffice.  Four NEW general gtest_test
+                   attrs, all reusable: data_tree={label:"rel/path"} (staging at a
+                   CHOSEN path, not flat by basename — $ORIGIN resolves against an
+                   ini's own dir and a mini installation has TWO files named
+                   bootstrap.ini), ure_bootstrap="rel/path" (point URE_BOOTSTRAP at a
+                   staged ini instead of the install's program/fundamental.ini; STILL
+                   needs uno_install — only the DATA root moves, the DLL closure stays
+                   on PATH from program/), env={} and prerun=[] (extra env vars, and
+                   launcher command lines run before the exe, each || exit /b 1).  Both
+                   expand $(RUNDIR)/$(PROGRAM)/$(SCRATCH)/$(SCRATCH_URL).  $(SCRATCH) is
+                   a fresh WRITABLE dir under TEST_TMPDIR wiped before AND after —
+                   everything a test writes goes there, since the staged dir is
+                   bazel-out and must be read-only; office_connection's user
+                   installation is now this same mechanism.  prerun exists for fixtures
+                   only buildable AT RUN TIME (a registry a UNO tool must write: as a
+                   build action it needs its own DLL closure + CRT manifest, and the
+                   location it records is an ABSOLUTE path that must not enter a cached
+                   artifact).  BACKSLASH RULE CUTS BOTH WAYS: an env value read back via
+                   rtl::Bootstrap::get() is macro-expanded so must be DOUBLED
+                   (arg-user); one read with plain getenv() must NOT be
+                   (CONFIGMGR_UNIT_FORWARD_STRING).  Prefer a file:/// URL where the
+                   consumer takes one.
                    STILL TODO, with what each actually needs:
-                    • configmgr/qa/unit — its OWN mini installation (urebootstrap.ini +
-                      data.xcd + 2 generated inis) plus unit.rdb = types.rdb with
-                      configmgr.uno registered via //main/cpputools:regcomp (that tool
-                      IS built), and env CONFIGMGR_UNIT_FORWARD_STRING=<unit.rdb>.
-                      Needs gtest_test to accept a CUSTOM ure_bootstrap root + extra
-                      env, not just uno_install=//main/staging:install.
+                    • configmgr/qa/unit — WIRED 2026-08-05 but RED, and NOT fixable
+                      without a SOURCE change.  The blocker recorded here before ("needs
+                      a custom ure_bootstrap root + extra env") was read off
+                      qa/unit/makefile.mk and was WRONG: that fixture is built and works
+                      (mini installation stages + resolves).  The real wall is that the
+                      test's BOOTSTRAP PREMISE was retired under it — regcomp -register
+                      registers via component_writeInfo(), the pre-.component mechanism,
+                      and configmgr/source/services.cxx exports only
+                      component_getFactory + component_getImplementationEnvironment
+                      (tree-wide: 438 .component files vs a handful of
+                      component_writeInfo exporters, all odk examples/workbench/legacy
+                      tests) ⇒ "cannot get symbol: component_writeInfo".  The escape of
+                      feeding it a TEXTUAL (XML) services registry is closed: test.cxx
+                      calls the 1-ARG createRegistryServiceFactory overload, which
+                      defaults bReadOnly=sal_False, so SimpleRegistry::open() gets
+                      (readonly=false, create=true) and the textual branch needs
+                      bReadOnly && !bCreate.  UNO_SERVICES belongs to
+                      defaultBootstrap_InitialComponentContext, not this path.  UPSTREAM
+                      KNOWS: the GoogleTest-migration commit 7231f715d2 (#i125003#) says
+                      "All tests fail and on Windows it doesn't start running".  Kept
+                      wired (it BUILDS) with the regcomp line deliberately left in — its
+                      error names the retired mechanism exactly.  Fix = port test.cxx to
+                      defaultBootstrap_InitialComponentContext + services.rdb (i.e.
+                      fixture (a), already supported), or pass bReadOnly=sal_True with a
+                      textual registry, or re-export component_writeInfo (worst).
+                      GENERAL LESSON: a qa/ dir gated behind ENABLE_UNIT_TESTS=NO for a
+                      decade may encode a mechanism the product no longer has — check
+                      the test's BOOTSTRAP PATH against current source before costing
+                      the fixture.
                     • cppuhelper/qa/propertysetmixin — UNO component DLL + own
                       types.idl + a per-test services.rdb (packcomponents.xslt).
+                      Uses the MODERN .component mechanism, so it should not hit the
+                      configmgr wall; fixture (c)'s data_tree/env/prerun should cover it.
                     • xmlsecurity/qa/certext — BLOCKED, and NOT on fixture (b) as
                       recorded here before: it #includes <neon/ne_ssl.h> and calls
                       ne_ssl_cert_read(), but AOO deleted neon in favour of curl.  Would

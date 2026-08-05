@@ -133,10 +133,75 @@ holdouts).  This brings the test layer onto Bazel so suites run under
 
       Note `OfficeConnection::setUp()` retries the resolve in an **unbounded**
       loop, so a soffice that never accepts hangs until the Bazel test timeout.
-      That is why `office_connection` defaults `size` to `large`.
+      That is why `office_connection` defaults `size` to `medium` (300 s) —
+      `small`'s 60 s is barely 3× the observed run, and the timeout is the only
+      thing that ends a run where the office never comes up.
 
       Green: `//main/test:test_qa_officeconnection` (~13 s — a full office boot,
       URP resolve, remote service creation and clean terminate).
+
+   c. **Own mini installation** — the test supplies its own registry data and
+      builds its own service manager, typically with
+      `cppu::createRegistryServiceFactory(<rdb>)`. Neither (a) nor (b): no
+      default bootstrap, no soffice. This is what a test *of the configuration
+      layer* needs, because it must assert on keys the real registry does not
+      have and write keys without touching a real user profile.
+
+      Four `gtest_test` attributes cover it, and none is specific to that one
+      test:
+
+      - **`data_tree = {label: "relative/path"}`** — staging at a path you
+        choose rather than flat by basename. Needed when the *shape* of the tree
+        is the fixture: `$ORIGIN` in a bootstrap ini resolves against that ini's
+        own directory, and a mini installation has two files named
+        `bootstrap.ini`.
+      - **`ure_bootstrap = "relative/path"`** — point `URE_BOOTSTRAP` at one of
+        those staged inis instead of the install's `program/fundamental.ini`.
+        Still requires `uno_install`: only the DATA root moves, and the UNO DLL
+        closure still comes from `program/` via `PATH`.
+      - **`env = {…}`** and **`prerun = […]`** — extra environment variables,
+        and command lines run in the launcher just before the exe (each
+        `|| exit /b 1`-guarded, so a fixture that fails to build fails the test
+        loudly). Both expand `$(RUNDIR)`, `$(PROGRAM)`, `$(SCRATCH)` and
+        `$(SCRATCH_URL)`.
+
+      `$(SCRATCH)` is a fresh, empty, **writable** directory under
+      `TEST_TMPDIR`, wiped before *and* after the run. Everything a test writes
+      belongs there: the staged directory lives in `bazel-out` and must be
+      treated as read-only build output. `office_connection`'s user installation
+      is just this same scratch dir.
+
+      `prerun` exists for fixtures that can only be built **at run time**. The
+      configmgr case is the archetype: its registry has to be written by
+      `regcomp`, a tool that bootstraps UNO — as a build action that would need
+      its own staged DLL closure and CRT manifest, and the component location it
+      records is an *absolute* path, which must not end up in a cacheable
+      artifact.
+
+      **Backslash rule, restated because it cuts both ways.** An `env` value the
+      test reads back through `rtl::Bootstrap::get()` is macro-expanded, so its
+      backslashes must be **doubled** (`arg-user`). One read with plain
+      `getenv()` must **not** be (`CONFIGMGR_UNIT_FORWARD_STRING`). Prefer a
+      `file:///` URL where the consumer accepts one — forward slashes sidestep
+      the question entirely.
+
+      Wired: `//main/configmgr:configmgr_qa_unit` — **red, and not fixable
+      without a source change**. The fixture machinery above works; the test
+      itself bootstraps through `createRegistryServiceFactory` + `regcomp
+      -register`, i.e. the pre-`.component` registration mechanism that AOO
+      retired, so `regcomp` cannot find `component_writeInfo` in
+      `configmgr.uno.dll`. Upstream's own GoogleTest-migration commit
+      (`7231f715d2`) records that the suite already failed and "on Windows it
+      doesn't start running". See `main/configmgr/readme.md` for the full
+      diagnosis, the staged layout, and the two forced divergences from
+      `qa/unit/makefile.mk`.
+
+      **Lesson for the remaining fixture work:** a `qa/` dir that dmake has
+      gated behind `ENABLE_UNIT_TESTS=NO` for a decade may encode a mechanism
+      the product no longer has. Check the test's *bootstrap path* against
+      current source before costing the fixture — the blocker recorded for this
+      one ("needs a custom `ure_bootstrap` root + extra env") was read off the
+      makefile and was not the real obstacle.
 
 ## Gotchas (learned the hard way)
 
