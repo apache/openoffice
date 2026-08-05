@@ -73,7 +73,12 @@ SHL1TARGET=$(TARGET)$(DLLPOSTFIX)
 # dependency info, so zlib must be linked explicitly to satisfy libxml2's
 # HTTP/gzip symbols (deflate, inflate, gzopen, ...) -- when no dylib
 # exists there.
-.IF "$(shell test -f $(LIBXML_PREFIX)/lib/libxml2.dylib && echo yes)"=="yes"
+#
+# The existence check is resolved into a plain macro first, then branched
+# on -- dmake's .IF does not reliably evaluate a $(shell ...) call written
+# directly inside the condition string itself.
+FORMS_LIBXML2_HAS_DYLIB:=$(shell test -f $(LIBXML_PREFIX)/lib/libxml2.dylib && echo yes)
+.IF "$(FORMS_LIBXML2_HAS_DYLIB)"=="yes"
 FORMS_LIBXML2LIB:=$(LIBXML_PREFIX)/lib/libxml2.dylib
 .ELSE
 FORMS_LIBXML2LIB:=$(LIBXML_PREFIX)/lib/libxml2.a $(ZLIB3RDLIB)

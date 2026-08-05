@@ -149,7 +149,12 @@ SHL2STDLIBS+= $(NSS3LIB) $(NSPR4LIB)
 # so the linker resolves those automatically and no extra -lz/-llzma is
 # needed. Fall back to the static archive (community builds normally only
 # install that, via --enable-shared=no) when no dylib exists there.
-.IF "$(shell test -f $(LIBXML_PREFIX)/lib/libxml2.dylib && echo yes)"=="yes"
+#
+# The existence check is resolved into a plain macro first, then branched
+# on -- dmake's .IF does not reliably evaluate a $(shell ...) call written
+# directly inside the condition string itself.
+XMLSECURITY_LIBXML2_HAS_DYLIB:=$(shell test -f $(LIBXML_PREFIX)/lib/libxml2.dylib && echo yes)
+.IF "$(XMLSECURITY_LIBXML2_HAS_DYLIB)"=="yes"
 XMLSECURITY_SYSTEM_LIBXML2:=$(LIBXML_PREFIX)/lib/libxml2.dylib
 XMLSECURITY_SYSTEM_LIBXML2_EXTRALIBS:=
 .ELSE
