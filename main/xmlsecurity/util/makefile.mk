@@ -153,7 +153,18 @@ SHL2STDLIBS+= $(NSS3LIB) $(NSPR4LIB)
 # The existence check is resolved into a plain macro first, then branched
 # on -- dmake's .IF does not reliably evaluate a $(shell ...) call written
 # directly inside the condition string itself.
-XMLSECURITY_LIBXML2_HAS_DYLIB:=$(shell test -f $(LIBXML_PREFIX)/lib/libxml2.dylib && echo yes)
+#
+# The leading "-" is load-bearing: dmake runs $(shell ...) as a phony
+# recipe named "Shell escape" and, same as any other recipe line, treats
+# a non-zero exit as a fatal build error unless the line is marked
+# ignore-errors (the same leading "-" convention as normal recipes,
+# handled by Rcp_attribute() in dag.c). "test -f X && echo yes" exits 1
+# whenever X does not exist -- the expected, common case here, since
+# community builds normally only install libxml2 as a static archive
+# (--enable-shared=no, no dylib at all) -- so without the "-" this aborts
+# the whole build the moment no dylib is found, instead of just leaving
+# the macro empty.
+XMLSECURITY_LIBXML2_HAS_DYLIB:=$(shell -test -f $(LIBXML_PREFIX)/lib/libxml2.dylib && echo yes)
 .IF "$(XMLSECURITY_LIBXML2_HAS_DYLIB)"=="yes"
 XMLSECURITY_SYSTEM_LIBXML2:=$(LIBXML_PREFIX)/lib/libxml2.dylib
 XMLSECURITY_SYSTEM_LIBXML2_EXTRALIBS:=
@@ -164,7 +175,8 @@ XMLSECURITY_SYSTEM_LIBXML2:=$(LIBXML_PREFIX)/lib/libxml2.a
 # inflate, gzopen, ...). liblzma is linked only if actually present next
 # to it: it's not part of the documented static-lib bundle, so only
 # needed if this libxml2 build happens to have xz support compiled in.
-XMLSECURITY_SYSTEM_LIBLZMA:=$(shell test -f $(LIBXML_PREFIX)/lib/liblzma.a -o -f $(LIBXML_PREFIX)/lib/liblzma.dylib && echo $(LIBXML_PREFIX)/lib/liblzma.a)
+# (See above for why the leading "-" is required.)
+XMLSECURITY_SYSTEM_LIBLZMA:=$(shell -test -f $(LIBXML_PREFIX)/lib/liblzma.a -o -f $(LIBXML_PREFIX)/lib/liblzma.dylib && echo $(LIBXML_PREFIX)/lib/liblzma.a)
 XMLSECURITY_SYSTEM_LIBXML2_EXTRALIBS:=$(ZLIB3RDLIB) $(XMLSECURITY_SYSTEM_LIBLZMA)
 .ENDIF
 SHL2STDLIBS+= $(XMLSECLIB-NSS) $(XMLSECLIB) $(XMLSECURITY_SYSTEM_LIBXML2) $(XMLSECURITY_SYSTEM_LIBXML2_EXTRALIBS) $(NSS3LIB) $(NSPR4LIB) $(PLC4LIB)
