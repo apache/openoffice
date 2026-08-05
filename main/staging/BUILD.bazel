@@ -83,6 +83,15 @@ collect_outputs(
         # (java_uno.jar) needs the program/classes/ classpath staging, which does
         # not exist yet — see readme.md "jni_uno" notes.
         "//main/bridges:java_uno",
+        # com.sun.star.loader.Java2, in two halves: javavm starts/locates the
+        # JVM through jvmfwk, javaloader is the loader that builds a class
+        # loader over a component's jar.  Registered in services.rdb by
+        # //main/postprocess.  NOTE these being present is necessary but NOT
+        # sufficient to run a Java component — program/classes/ staging and the
+        # URE_INTERNAL_JAVA_DIR bootstrap variable are still missing; see
+        # main/stoc/readme.md.
+        "//main/stoc:javaloader.uno",
+        "//main/stoc:javavm.uno",
         "//main/io:streams",
         "//main/io:acceptor",
         "//main/io:connector",

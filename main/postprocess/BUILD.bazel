@@ -47,12 +47,16 @@ _SERVICES_COMPONENTS = {
         basis_native("invocadapt.uno.dll"),
     "//main/stoc:source/invocation/invocation.component":
         basis_native("invocation.uno.dll"),
-    # javaloader/javavm: Java components (deferred) — still mapped to
-    # bootstrap.uno.dll (not built; only loaded if Java is used).
+    # javaloader/javavm — the two halves of com.sun.star.loader.Java2, i.e.
+    # what makes loading a UNO component written in Java possible at all.
+    # They used to be mapped to bootstrap.uno.dll as a PLACEHOLDER, which could
+    # never work: neither implementation is in that DLL, so any Java component
+    # would fail to instantiate no matter how it was registered.  Both are now
+    # built (//main/stoc) and staged, so point at them for real.
     "//main/stoc:source/javaloader/javaloader.component":
-        basis_native("bootstrap.uno.dll"),
+        basis_native("javaloader.uno.dll"),
     "//main/stoc:source/javavm/javavm.component":
-        basis_native("bootstrap.uno.dll"),
+        basis_native("javavm.uno.dll"),
     "//main/stoc:source/namingservice/namingservice.component":
         basis_native("namingservice.uno.dll"),
     "//main/stoc:source/proxy_factory/proxyfac.component":

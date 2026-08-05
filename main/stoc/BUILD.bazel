@@ -210,5 +210,105 @@ _REFL_COMPONENTS = {
     for _name, _srcs in _REFL_COMPONENTS.items()
 ]
 
+# ── Java UNO loader: javaloader.uno.dll + javavm.uno.dll ──────────
+# These two are what makes `com.sun.star.loader.Java2` real, i.e. what lets the
+# office load a UNO component written in Java at all.  Until now both were
+# registered in services.rdb but MAPPED TO bootstrap.uno.dll as a placeholder
+# (postprocess/BUILD.bazel), which cannot work — neither implementation is in
+# that DLL, so any Java component would fail to instantiate.
+#   * javavm.uno.dll     — com.sun.star.comp.stoc.JavaVirtualMachine: starts /
+#     locates the JVM through jvmfwk and hands out a jvmaccess::VirtualMachine.
+#   * javaloader.uno.dll — com.sun.star.comp.stoc.JavaComponentLoader: the
+#     Java2 loader itself; builds a class loader over the component's jar and
+#     calls its RegistrationClassName.
+# Upstream gates both behind SOLAR_JAVA; here they are unconditional, because
+# the Bazel build always has a JDK toolchain (rules_java is a hard dep).
+#
+# They do not fit _REFL_COMPONENTS: both need jvmaccess, javavm additionally
+# needs jvmfwk, the JNI headers and advapi32 (it reads the registry to find an
+# installed JRE).
+# SOLAR_JAVA is LOAD-BEARING, not just a feature switch: jvmaccess/
+# virtualmachine.hxx #includes the real <jni.h> only under it, and otherwise
+# declares stubs (`struct JNIEnv;`, `typedef void * jobject;`).  Without it
+# every JNIEnv-> call is C2027 "use of undefined type", even though the file
+# #includes "jni.h" itself — the stub declaration is what the compiler already
+# has by then.  Same landmine as the java_uno JNI bridge (//main/bridges).
+_JAVA_LOADER_DEFINES = _DEFINES + ["SOLAR_JAVA"]
+
+_JAVA_LOADER_IMPLIBS = _REFL_IMPLIBS + [
+    "//main/jvmaccess:jvmaccess3MSC_implib",
+]
+
+_JAVA_LOADER_LINKOPTS = [
+    "$(execpath //main/sal:sal_implib)",
+    "$(execpath //main/salhelper:salhelper_implib)",
+    "$(execpath //main/cppu:cppu3_implib)",
+    "$(execpath //main/cppuhelper:cppuhelper_implib)",
+    "$(execpath //main/registry:reg_implib)",
+    "$(execpath //main/jvmaccess:jvmaccess3MSC_implib)",
+    "/MANIFEST:NO",
+]
+
+cc_binary(
+    name = "javaloader.uno",
+    srcs = ["source/javaloader/javaloader.cxx"],
+    copts = _COPTS,
+    defines = _JAVA_LOADER_DEFINES,
+    deps = _DEPS + [
+        "//main/jvmaccess:jvmaccess_headers",
+        # javaloader.cxx calls JNIEnv methods but never #includes <jni.h>: it
+        # gets only the forward declaration from jvmaccess/virtualmachine.hxx
+        # and relies on the build system's JAVAINCLUDES (dmake supplies those
+        # from settings.mk when SOLAR_JAVA=TRUE).  Without this the whole file
+        # is C2027 "use of undefined type 'JNIEnv'".
+        "@rules_java//toolchains:jni",
+    ],
+    additional_linker_inputs = _JAVA_LOADER_IMPLIBS,
+    linkshared = True,
+    win_def_file = "util/component.def",
+    linkopts = _JAVA_LOADER_LINKOPTS,
+    visibility = ["//visibility:public"],
+)
+
+cc_binary(
+    name = "javavm.uno",
+    srcs = [
+        "source/javavm/interact.cxx",
+        "source/javavm/interact.hxx",
+        "source/javavm/javavm.cxx",
+        "source/javavm/javavm.hxx",
+        "source/javavm/jvmargs.cxx",
+        "source/javavm/jvmargs.hxx",
+    ],
+    # /Zc:wchar_t- — javavm.cxx passes sal_Unicode* straight into JNI calls
+    # (NewString, GetStringRegion).  On Windows sal_Unicode IS wchar_t
+    # (sal/types.h), and with NATIVE wchar_t that is a distinct type from
+    # jchar (unsigned short), so every one of those calls is C2664 "types
+    # pointed to are unrelated".  /Zc:wchar_t- makes wchar_t == unsigned short
+    # == jchar and they line up.  Exactly the same reason //main/bridges builds
+    # the jni_uno sources this way; javaloader.uno needs no such thing because
+    # it only ever hands JNI plain UTF-8 (NewStringUTF).
+    copts = _COPTS + ["/Zc:wchar_t-"],
+    defines = _JAVA_LOADER_DEFINES,
+    deps = _DEPS + [
+        "//main/jvmaccess:jvmaccess_headers",
+        "//main/jvmfwk:jvmfwk_headers",
+        # jni.h / jni_md.h from the toolchain JDK — same dep the java_uno JNI
+        # bridge uses, so the two cannot disagree on JNI version.
+        "@rules_java//toolchains:jni",
+    ],
+    additional_linker_inputs = _JAVA_LOADER_IMPLIBS + [
+        "//main/jvmfwk:jvmfwk3_implib",
+    ],
+    linkshared = True,
+    win_def_file = "util/component.def",
+    linkopts = _JAVA_LOADER_LINKOPTS + [
+        "$(execpath //main/jvmfwk:jvmfwk3_implib)",
+        # javavm.cxx reads the JRE location out of the Windows registry.
+        "advapi32.lib",
+    ],
+    visibility = ["//visibility:public"],
+)
+
 exports_files(glob(["**/*.component"]))
 
