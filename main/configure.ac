@@ -19,7 +19,11 @@ dnl *  under the License.
 dnl *
 dnl * *************************************************************
 AC_REVISION( $Revision$ )
-AC_PREREQ([2.72])
+dnl macOS needs autoconf 2.72 (2.71 mis-detects the toolchain there);
+dnl other platforms remain on the older 2.71 floor.
+m4_define([AOO_REQUIRED_AUTOCONF],
+  [m4_if(m4_esyscmd_s([uname]), [Darwin], [2.72], [2.71])])
+AC_PREREQ(AOO_REQUIRED_AUTOCONF)
 AC_INIT
 echo "$@" >config.parms
 AC_ARG_WITH(dmake-path,
