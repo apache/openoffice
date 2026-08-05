@@ -189,8 +189,9 @@ test          🔨  C++ unit-test infra runnable — NOW THE FRONT-LINE TASK: br
                       decade may encode a mechanism the product no longer has — check
                       the test's BOOTSTRAP PATH against current source before costing
                       the fixture.
-                    • cppuhelper/qa/propertysetmixin — WIRED 2026-08-05, builds clean,
-                      RUN NOT YET CONFIRMED.  It is fixture (a) (in-process bootstrap,
+                    • cppuhelper/qa/propertysetmixin — DONE 2026-08-05, 3/6 GREEN
+                      (testCpp{Empty1,Empty2,Full}); the 3 reds are the Java half, see
+                      below.  It is fixture (a) (in-process bootstrap,
                       NO soffice) despite living behind OOO_SUBSEQUENT_TESTS — the old
                       note in cppuhelper/BUILD.bazel calling it an OfficeConnection test
                       was wrong.  Uses the MODERN .component mechanism, so it does NOT
@@ -206,11 +207,18 @@ test          🔨  C++ unit-test infra runnable — NOW THE FRONT-LINE TASK: br
                       ENVIRONMENT BEFORE the ini, so env UNO_TYPES/UNO_SERVICES REPLACE
                       fundamental.ini's and must REPEAT them (incl. oovbaapi.rdb) before
                       adding the test's own — DRIFT WATCH on main/staging/fundamental.ini.
-                      EXPECTED 3/6 RED: testJava{Empty1,Empty2,Full} need the suite's
+                      3 RED, as predicted: testJava{Empty1,Empty2,Full} need the suite's
                       OTHER component, a Java one (JavaSupplier.java + .uno.jar via
                       javamaker) = Java bucket; they surface as "Unknown C++ exception"
-                      (UNO exceptions don't derive from std::exception).  The 3 C++ cases
-                      are the ones that actually exercise PropertySetMixin.
+                      (UNO exceptions don't derive from std::exception).  They turn green
+                      there with NO change here.  The 3 test BODIES are shared functions
+                      called once per supplier, so the same body passing for C++ and
+                      failing for Java ISOLATES the fault to service instantiation — and
+                      is the proof the rest of the wiring is right (registry override,
+                      private IDL types, component DLL via the expand: URI).
+                      //main/cppuhelper:cppuhelper_tests is therefore now MIXED, not a
+                      green gate — a red left out of its module's suite is a test that
+                      gets forgotten (same convention as //main/sal:sal_tests).
                       See main/cppuhelper/readme.md.
                     • xmlsecurity/qa/certext — BLOCKED, and NOT on fixture (b) as
                       recorded here before: it #includes <neon/ne_ssl.h> and calls

@@ -219,10 +219,15 @@ gtest_test(
     runtime_dlls = _QA_RUNTIME_DLLS,
 )
 
+# NOTE this suite is MIXED, not a green gate: cppuhelper_qa_propertysetmixin
+# contributes 3 known-red cases (see its own note below).  Every wired suite
+# belongs here, passing and failing alike — same convention as //main/sal:
+# a red left OUT of its module's suite is a test that gets forgotten.
 test_suite(
     name = "cppuhelper_tests",
     tests = [
         ":cppuhelper_qa_ifcontainer",
+        ":cppuhelper_qa_propertysetmixin",
         ":cppuhelper_qa_unourl",
         ":cppuhelper_qa_weak",
     ],
@@ -299,6 +304,15 @@ services_rdb(
     testonly = True,
 )
 
+# CONFIRMED 2026-08-05: 3 of 6 pass (testCpp{Empty1,Empty2,Full}), 3 red.
+# The three test BODIES are shared functions — testEmpty1/testEmpty2/testFull,
+# each called once with getCppSupplier() and once with getJavaSupplier() — so
+# the identical body passing for C++ and failing for Java isolates the fault to
+# service instantiation, not to anything in PropertySetMixin.  That is also the
+# proof that the rest of this wiring is correct: the UNO_TYPES/UNO_SERVICES
+# override, the private IDL types, and the component DLL loading through the
+# vnd.sun.star.expand: URI all work.
+#
 # EXPECTED RED: 3 of 6.  testJavaEmpty1/testJavaEmpty2/testJavaFull ask for
 # test.cppuhelper.propertysetmixin.JavaSupplier, which lives in the suite's
 # OTHER component — a Java one (JavaSupplier.java + qa_propertysetmixin.java.

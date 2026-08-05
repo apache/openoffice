@@ -77,7 +77,7 @@ bootstrap" landmine applies to `cppuhelper3MSC` and friends, whose directory
 cppuhelper resolves from its *own* module handle. This one is reached only
 through the services.rdb URI.
 
-### Expected: 3 of 6 red
+### 3 of 6 red (confirmed 2026-08-05)
 
 `testJavaEmpty1` / `testJavaEmpty2` / `testJavaFull` ask for
 `test.cppuhelper.propertysetmixin.JavaSupplier`, which lives in the suite's
@@ -90,7 +90,19 @@ the miss, not a crash.
 
 The three C++ cases are the ones that actually exercise `PropertySetMixin`.
 Wiring the suite now means the mixin is covered, and the Java half turns green
-for free once the Java bucket lands.
+for free once the Java bucket lands — with no change here.
+
+**Why the split is itself the evidence.** The three test *bodies* are shared
+functions (`testEmpty1`, `testEmpty2`, `testFull`), each called once with
+`getCppSupplier()` and once with `getJavaSupplier()`. The identical body passing
+for C++ and failing for Java isolates the fault to service instantiation rather
+than to anything in the mixin — and confirms the rest of this wiring works: the
+`UNO_TYPES`/`UNO_SERVICES` override, the private IDL types resolving, and the
+component DLL loading through the `vnd.sun.star.expand:` URI.
+
+`//main/cppuhelper:cppuhelper_tests` is therefore **mixed, not a green gate**.
+The suite includes this target deliberately: a red left out of its module's
+suite is a test that gets forgotten (same convention as `//main/sal:sal_tests`).
 
 ### DEF file
 
