@@ -77,7 +77,18 @@ SHL1TARGET=$(TARGET)$(DLLPOSTFIX)
 # The existence check is resolved into a plain macro first, then branched
 # on -- dmake's .IF does not reliably evaluate a $(shell ...) call written
 # directly inside the condition string itself.
-FORMS_LIBXML2_HAS_DYLIB:=$(shell test -f $(LIBXML_PREFIX)/lib/libxml2.dylib && echo yes)
+#
+# The leading "-" is load-bearing: dmake runs $(shell ...) as a phony
+# recipe named "Shell escape" and, same as any other recipe line, treats
+# a non-zero exit as a fatal build error unless the line is marked
+# ignore-errors (the same leading "-" convention as normal recipes,
+# handled by Rcp_attribute() in dag.c). "test -f X && echo yes" exits 1
+# whenever X does not exist -- the expected, common case here, since
+# community builds normally only install libxml2 as a static archive
+# (--enable-shared=no, no dylib at all) -- so without the "-" this aborts
+# the whole build the moment no dylib is found, instead of just leaving
+# the macro empty.
+FORMS_LIBXML2_HAS_DYLIB:=$(shell -test -f $(LIBXML_PREFIX)/lib/libxml2.dylib && echo yes)
 .IF "$(FORMS_LIBXML2_HAS_DYLIB)"=="yes"
 FORMS_LIBXML2LIB:=$(LIBXML_PREFIX)/lib/libxml2.dylib
 .ELSE
