@@ -189,10 +189,29 @@ test          🔨  C++ unit-test infra runnable — NOW THE FRONT-LINE TASK: br
                       decade may encode a mechanism the product no longer has — check
                       the test's BOOTSTRAP PATH against current source before costing
                       the fixture.
-                    • cppuhelper/qa/propertysetmixin — UNO component DLL + own
-                      types.idl + a per-test services.rdb (packcomponents.xslt).
-                      Uses the MODERN .component mechanism, so it should not hit the
-                      configmgr wall; fixture (c)'s data_tree/env/prerun should cover it.
+                    • cppuhelper/qa/propertysetmixin — WIRED 2026-08-05, builds clean,
+                      RUN NOT YET CONFIRMED.  It is fixture (a) (in-process bootstrap,
+                      NO soffice) despite living behind OOO_SUBSEQUENT_TESTS — the old
+                      note in cppuhelper/BUILD.bazel calling it an OfficeConnection test
+                      was wrong.  Uses the MODERN .component mechanism, so it does NOT
+                      hit the configmgr component_writeInfo wall.  Most involved qa/
+                      wiring so far — FOUR artifacts, not one: idl_library
+                      (qa/propertysetmixin/types.idl → headers) + merge_rdb (re-emits
+                      just the registry as psm_types.rdb, since idl_library returns rdb
+                      AND a header dir) + the component DLL qa_propertysetmixin.uno
+                      (2-export DEF — comp_propertysetmixin.cxx has NO
+                      component_canUnload) + services_rdb registering it at
+                      vnd.sun.star.expand:$OOO_INBUILD_SHAREDLIB_DIR/… .
+                      LANDMINE: rtl::Bootstrap has NO append and resolves the
+                      ENVIRONMENT BEFORE the ini, so env UNO_TYPES/UNO_SERVICES REPLACE
+                      fundamental.ini's and must REPEAT them (incl. oovbaapi.rdb) before
+                      adding the test's own — DRIFT WATCH on main/staging/fundamental.ini.
+                      EXPECTED 3/6 RED: testJava{Empty1,Empty2,Full} need the suite's
+                      OTHER component, a Java one (JavaSupplier.java + .uno.jar via
+                      javamaker) = Java bucket; they surface as "Unknown C++ exception"
+                      (UNO exceptions don't derive from std::exception).  The 3 C++ cases
+                      are the ones that actually exercise PropertySetMixin.
+                      See main/cppuhelper/readme.md.
                     • xmlsecurity/qa/certext — BLOCKED, and NOT on fixture (b) as
                       recorded here before: it #includes <neon/ne_ssl.h> and calls
                       ne_ssl_cert_read(), but AOO deleted neon in favour of curl.  Would

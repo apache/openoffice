@@ -64,12 +64,20 @@ def _windows_relpath(from_dir, to_dir):
 #   $(RUNDIR)      the staged directory (native, no trailing separator)
 #   $(PROGRAM)     the staged install's program/ dir (needs uno_install)
 #   $(SCRATCH)     a fresh, empty, WRITABLE per-run directory (native)
-#   $(SCRATCH_URL) the same directory as forward slashes, for a file:/// URL
+# and a forward-slash variant of each, for building a `file:///` URL:
+#   $(RUNDIR_URL)  $(PROGRAM_URL)  $(SCRATCH_URL)
 # Everything a test writes belongs under $(SCRATCH): the staged dir lives in
 # bazel-out and must be treated as read-only build output.
+#
+# Prefer the _URL forms wherever the consumer takes a URL — UNO bootstrap
+# variables all do.  Forward slashes sidestep the backslash-escaping trap in
+# rtl::Bootstrap entirely (see the arg-user comment further down).
 _TOKENS = [
-    # $(SCRATCH_URL) FIRST — otherwise $(SCRATCH) matches its prefix.
+    # The _URL forms MUST come first — otherwise the plain token matches their
+    # prefix and leaves a stray "_URL" behind.
     ("$(SCRATCH_URL)", "%_SCRATCHU%"),
+    ("$(RUNDIR_URL)", "%_RUNU%"),
+    ("$(PROGRAM_URL)", "%_PROGU%"),
     ("$(SCRATCH)", "%_SCRATCH%"),
     ("$(RUNDIR)", "%_RUN%"),
     ("$(PROGRAM)", "%_PROG%"),
@@ -158,9 +166,19 @@ def _staged_gtest_test_impl(ctx):
     # exactly there, and two files in it are both named "bootstrap.ini".
     for label, rel in ctx.attr.data_tree.items():
         files = label[DefaultInfo].files.to_list()
+        want = rel.split("/")[-1]
+        if len(files) > 1:
+            # Several rules legitimately return more than the one artifact you
+            # want (services_rdb also emits services.input; idl_library emits
+            # its .rdb plus a header directory).  Disambiguate by the basename
+            # you asked to stage it AS, which is unambiguous and needs no extra
+            # filegroup boilerplate at every call site.
+            files = [f for f in files if f.basename == want]
         if len(files) != 1:
-            fail("data_tree entry %s must provide exactly one file, got %d" %
-                 (label.label, len(files)))
+            fail(("data_tree entry %s → %s: expected one file, got %d. Give " +
+                  "the staged path the same basename as the artifact you " +
+                  "want, or point at a target that provides a single file.") %
+                 (label.label, rel, len(files)))
         o = ctx.actions.declare_file(d + "/" + rel)
         ctx.actions.symlink(output = o, target_file = files[0])
         staged.append(o)
@@ -234,7 +252,11 @@ def _staged_gtest_test_impl(ctx):
         # %~dp0 keeps its trailing backslash, which does not concatenate cleanly
         # and cannot be quoted next to one; "%~dp0." normalized by %%~fI gives the
         # same directory without it.
-        lines += ['for %%I in ("%~dp0.") do set "_RUN=%%~fI"']
+        lines += [
+            'for %%I in ("%~dp0.") do set "_RUN=%%~fI"',
+            # file:/// URL form: on Windows only the separators differ.
+            'set "_RUNU=%_RUN:\\=/%"',
+        ]
 
         if need_scratch:
             # Everything the test writes goes here.  Wiped BEFORE as well as
@@ -259,6 +281,7 @@ def _staged_gtest_test_impl(ctx):
                 # Resolved from the launcher's own location (%~dp0), not %CD%.
                 'for %%I in ("%~dp0' + _windows_relpath(launcher_dir, uno_program_dir) +
                 '") do set "_PROG=%%~fI"',
+                'set "_PROGU=%_PROG:\\=/%"',
             ]
 
             # Which installation the UNO bootstrap describes.  Normally the

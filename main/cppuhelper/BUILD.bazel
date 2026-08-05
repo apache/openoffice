@@ -2,7 +2,9 @@ package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 load("//build/rules:idl_pipeline.bzl", "idl_library")
+load("//build/rules:merge_rdb.bzl", "merge_rdb")
 load("//build/rules:gtest_test.bzl", "gtest_test")
+load("//main/postprocess:postprocess.bzl", "services_rdb")
 
 _COPTS = [
     "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs",
@@ -128,9 +130,10 @@ filegroup(
 # The dmake makefiles also list $(TESTSHL2LIB) — a no-op, the variable is
 # undefined since AOO retired testshl2 (see main/test/readme.md).
 #
-# NOT wired: qa/propertysetmixin — it is a *subsequent* test (builds a UNO
-# component DLL + its own types.idl, driven from Java against a service
-# manager), so it needs the OfficeConnection fixture, not a standalone exe.
+# qa/propertysetmixin is wired at the BOTTOM of this file — it needs its own
+# component DLL, private types and services.rdb, so it does not fit these
+# shared _QA_* constants.  (It is NOT an OfficeConnection test, as an earlier
+# note here claimed: it bootstraps in-process and launches no soffice.)
 _QA_COPTS = ["/Imain/cppuhelper/inc/pch"]
 
 _QA_DEPS = [
@@ -223,4 +226,132 @@ test_suite(
         ":cppuhelper_qa_unourl",
         ":cppuhelper_qa_weak",
     ],
+)
+
+# ── qa/propertysetmixin ──────────────────────────────────────────────────
+# cppu::PropertySetMixin — the helper that turns IDL [attribute]s into a
+# com.sun.star.beans.XPropertySet.  The only way to test it is through a real
+# UNO component that USES the mixin, so the suite ships one, plus the private
+# IDL the component implements, plus a services.rdb registering it.
+#
+# Fixture (a): an in-process bootstrap, no soffice — despite the makefile
+# living behind OOO_SUBSEQUENT_TESTS.  Unlike configmgr/qa/unit it uses the
+# MODERN .component registration mechanism, so it does not hit that suite's
+# component_writeInfo wall (see main/configmgr/readme.md).
+#
+# The dmake recipe sets UNO_TYPES / UNO_SERVICES / URE_INTERNAL_LIB_DIR /
+# OOO_INBUILD_SHAREDLIB_DIR by hand.  Two of those come free from
+# uno_install's URE_BOOTSTRAP, but UNO_TYPES and UNO_SERVICES must still be set
+# explicitly because the test's OWN registries have to be APPENDED to the
+# install's — rtl::Bootstrap resolves the environment before the ini, so the
+# values below win over fundamental.ini and therefore have to repeat the
+# install's entries rather than just adding to them.
+
+idl_library(
+    name = "cppuhelper_qa_psm_idl",
+    srcs = ["qa/propertysetmixin/types.idl"],
+    include_dirs = ["main/udkapi"],
+    extra_rdbs = ["//main/udkapi:udkapi_idl"],
+)
+
+cc_library(
+    name = "cppuhelper_qa_psm_idl_headers",
+    hdrs = [":cppuhelper_qa_psm_idl"],
+    includes = ["cppuhelper_qa_psm_idl_inc"],
+    testonly = True,
+)
+
+# idl_library returns its .rdb AND a header directory; merge_rdb re-emits just
+# the registry, under the name the test stages it as.
+merge_rdb(
+    name = "cppuhelper_qa_psm_types",
+    rdbs = [":cppuhelper_qa_psm_idl"],
+    out = "psm_types.rdb",
+    testonly = True,
+)
+
+# The component under test.  Two DEF exports, not the usual three:
+# comp_propertysetmixin.cxx has no component_canUnload (see the .def).
+cc_binary(
+    name = "qa_propertysetmixin.uno",
+    srcs = ["qa/propertysetmixin/comp_propertysetmixin.cxx"],
+    copts = _QA_COPTS + ["/Zc:wchar_t-"],
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "qa/propertysetmixin/qa_propertysetmixin.uno.def",
+    deps = _QA_DEPS + [":cppuhelper_qa_psm_idl_headers"],
+    additional_linker_inputs = _QA_LINKER_INPUTS,
+    linkopts = _QA_LINKOPTS + ["/MANIFEST:NO"],
+    testonly = True,
+)
+
+# $OOO_INBUILD_SHAREDLIB_DIR is the dmake COMPONENTPREFIX_INBUILD_NATIVE
+# (solenv/inc/settings.mk) — "the component lives wherever this build put it",
+# resolved by the env var below to the staged test dir.
+services_rdb(
+    name = "cppuhelper_qa_psm_services",
+    components = {
+        "qa/propertysetmixin/qa_propertysetmixin.cpp.component":
+            "vnd.sun.star.expand:$OOO_INBUILD_SHAREDLIB_DIR/qa_propertysetmixin.uno.dll",
+    },
+    out = "psm_services.rdb",
+    xslt = "//main/solenv/bin:packcomponents.xslt",
+    testonly = True,
+)
+
+# EXPECTED RED: 3 of 6.  testJavaEmpty1/testJavaEmpty2/testJavaFull ask for
+# test.cppuhelper.propertysetmixin.JavaSupplier, which lives in the suite's
+# OTHER component — a Java one (JavaSupplier.java + qa_propertysetmixin.java.
+# component + a .uno.jar built by javamaker).  That belongs to the Java bucket
+# and is not wired, so those three fail to instantiate the service.  The three
+# C++ cases are the ones that actually exercise PropertySetMixin; wiring the
+# suite now means the mixin is covered, and the Java half turns green later for
+# free.  (UNO exceptions do not derive from std::exception, so gtest reports
+# the Java failures as a bare "Unknown C++ exception" — that is the expected
+# shape of the miss, not a crash.)
+gtest_test(
+    name = "cppuhelper_qa_propertysetmixin",
+    srcs = ["qa/propertysetmixin/test_propertysetmixin.cxx"],
+    copts = _QA_COPTS + ["/Zc:wchar_t-"],
+    defines = _DEFINES,
+    deps = _QA_DEPS + [
+        ":cppuhelper_qa_psm_idl_headers",
+        "//main/offapi:offapi_idl_headers",
+    ],
+    additional_linker_inputs = _QA_LINKER_INPUTS,
+    linkopts = _QA_LINKOPTS,
+    # The component DLL is test-only, so it is genuinely not in the install and
+    # must be staged.  Co-locating it is safe — the "co-located UNO DLL breaks
+    # the bootstrap" landmine applies to cppuhelper3MSC and friends, whose
+    # directory cppuhelper resolves from its own module handle; this one is
+    # found only through the services.rdb URI below.
+    runtime_dlls = [":qa_propertysetmixin.uno"],
+    data_tree = {
+        ":cppuhelper_qa_psm_types": "psm_types.rdb",
+        ":cppuhelper_qa_psm_services": "psm_services.rdb",
+    },
+    env = {
+        # Space-separated URL lists.  rtl::Bootstrap has no "append", and it
+        # resolves the environment BEFORE the ini, so these REPLACE
+        # fundamental.ini's values and must therefore repeat them.
+        #
+        # DRIFT: the leading entries mirror main/staging/fundamental.ini
+        #   UNO_TYPES=${ORIGIN}/types.rdb ${ORIGIN}/oovbaapi.rdb
+        #   UNO_SERVICES=${ORIGIN}/services.rdb
+        # (${ORIGIN} expands to that ini's own directory as a file URL, so the
+        # two forms agree).  If that file gains an entry, add it here too — the
+        # symptom is a service the office normally provides going missing.
+        "UNO_TYPES": (
+            "file:///$(PROGRAM_URL)/types.rdb " +
+            "file:///$(PROGRAM_URL)/oovbaapi.rdb " +
+            "file:///$(RUNDIR_URL)/psm_types.rdb"
+        ),
+        "UNO_SERVICES": (
+            "file:///$(PROGRAM_URL)/services.rdb " +
+            "file:///$(RUNDIR_URL)/psm_services.rdb"
+        ),
+        # Where the vnd.sun.star.expand: URI in psm_services.rdb resolves to.
+        "OOO_INBUILD_SHAREDLIB_DIR": "file:///$(RUNDIR_URL)",
+    },
+    uno_install = "//main/staging:install",
 )

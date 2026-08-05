@@ -1,0 +1,11 @@
+; Windows DEF equivalent of solenv/src/component.map (SHL2VERSIONMAP in
+; qa/propertysetmixin/makefile.mk).
+;
+; Only TWO exports, not the usual three: comp_propertysetmixin.cxx defines
+; component_getFactory and component_getImplementationEnvironment but no
+; component_canUnload, so listing it would be an unresolved-symbol link error.
+LIBRARY	qa_propertysetmixin.uno.dll
+
+EXPORTS
+	component_getImplementationEnvironment
+	component_getFactory
