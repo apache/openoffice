@@ -249,6 +249,12 @@ sub do_linklib
         {
            push(@{$globbed_hash{$1}}, $lib);
         }
+        # libtool's macOS naming puts the version before the extension
+        # (libfoo.4.dylib), unlike ELF's libfoo.so.4 -- same file, opposite order.
+        elsif ( $lib =~ /^(lib\S+)\.(\d+)(\.\d+)?(\.\d+)?(\.dylib)$/ )
+        {
+           push(@{$globbed_hash{"$1$5"}}, $lib);
+        }
         else {
             print_warning("invalid library name: $lib");
         }
@@ -261,6 +267,12 @@ sub do_linklib
         {
             $lib_major = "$lib_base.$3";
             $long = 1;
+        }
+        elsif ( $lib =~ /^(lib\S+)\.(\d+)(\.\d+)?(\.\d+)?(\.dylib)$/ )
+        {
+            # macOS dylibs don't carry a separate major-only symlink; the
+            # single unversioned name below is enough.
+            $long = 0;
         }
         else
         {
