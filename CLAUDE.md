@@ -363,6 +363,32 @@ test          🔨  C++ unit-test infra runnable — NOW THE FRONT-LINE TASK: br
                    and several qa/complex dirs (writerfilter's among them) have no
                    makefile.mk at all, i.e. were never wired upstream either.
                    See main/test/readme.md.
+                   OPEN RED, LEFT RED ON PURPOSE — //main/bridges:test_any_jni.
+                   NOT a fixture problem and NOT caused by anything above: it fails in
+                   TestSeqSize because jni_uno's seq_allocate() computes
+                   SAL_SEQUENCE_HEADER_SIZE + (nElements*nSize) in 32-BIT SIGNED
+                   arithmetic (jni_data.cxx:41).  5,000,000 × 1024 = 5.12e9 wraps to
+                   825,032,704, which a 32-bit process cannot allocate ⇒
+                   BridgeRuntimeError "out of memory!", and the test only accepts a
+                   rejection that came from a SIZE GUARD ("out of range").  That
+                   distinction is the point: today the oversized sequence is refused BY
+                   LUCK.  Pick a count whose wrap lands small — 4,194,304 × 1024 is
+                   exactly 2^32 ⇒ wraps to 0 — and seq_allocate returns an 8-byte header
+                   while the loop at jni_data.cxx:1115 writes nElements elements into it
+                   (nPos*nSize overflowing too, so some writes land BEFORE the buffer):
+                   a heap overflow reachable from any in-process Java UNO caller.
+                   THE FIX EXISTS ON ANOTHER BRANCH — 7efd38098e "jni_uno: added guard
+                   sequence allocation size against integer overflow" (security-triage,
+                   security-ASVS-Scan, ww8-fixes): size in sal_uInt64, negatives
+                   rejected, > SAL_MAX_SIZE ⇒ "sequence size out of range".  799ee9fa5e
+                   brought the TEST here when it unified the two bridge test sets and
+                   deliberately left the security-branch SOURCE edits behind; its own
+                   note says "both test targets ANALYSE clean", i.e. analysis, not
+                   execution.  So this branch holds the regression pin without the fix.
+                   Kept red because it is an accurate report of a real defect and this
+                   branch does not change source; cherry-picking 7efd38098e (~15 lines,
+                   one file) is the fix if it is ever to carry it.
+                   See main/bridges/readme.md.
 testtools     🔨  bridgetest GREEN 2026-08-05, ALL THREE halves — //main/testtools:
                    bridgetest (C++ object in-process, ~1.1s), :bridgetest_java (Java
                    object over the java_uno JNI bridge, ~1.4s) and :bridgetest_urp

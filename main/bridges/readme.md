@@ -1,3 +1,22 @@
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+-->
+
 # Notes for bridges (done)
 
 ## cpp_uno (C++↔UNO bridge) → `msci_uno.dll`
@@ -60,11 +79,12 @@ calls `System.loadLibrary("java_uno")`), so there is no build-time cycle.
 ## Tests (`bridges/test/`)
 
 | Test | Kind | Bazel status |
-|------|------|--------------|
+| ---- | ---- | ------------ |
 | `inter_libs_exc` | single C++ process | ✅ `//main/bridges:inter_libs_exc_test` — runs & passes |
-| `java_uno/any`, `…/equals`, `…/nativethreadpool` | 2-process socket URP bridge (native `uno` ↔ java) | ⬜ deferred — multi-process orchestration fixture |
-| `java_uno/acquire` | same + `OOoRunner.jar` | ⬜ blocked on qadevOOo |
-| `com/sun/star/lib/uno/bridges/java_remote/*` | pure-Java JUnit-via-OOoRunner | ⬜ blocked on qadevOOo |
+| `java_uno/any` | in-process JVM host (`staged_java_test`) | ❌ `//main/bridges:test_any_jni` — **red on a real bridge defect, see below** |
+| `java_uno/equals`, `…/nativethreadpool` | 2-process socket URP bridge (native `uno` ↔ java) | ⬜ deferred — the fixture now exists, see below |
+| `java_uno/acquire` | same + `OOoRunner.jar` | ⬜ `OOoRunner.jar` is built now; needs the 2-process fixture |
+| `com/sun/star/lib/uno/bridges/java_remote/*` | pure-Java JUnit-via-OOoRunner | ⬜ `OOoRunner.jar` is built now; needs wiring |
 | `performance` | UNO perf harness | ⬜ deferred (needs running UNO env) |
 | `testserver`/`testclient`/`testcomp`/`testsameprocess` | legacy CORBA-era (`com.sun.star.corba.giop`) | ⬜ likely obsolete |
 
@@ -73,15 +93,53 @@ calls `System.loadLibrary("java_uno")`), so there is no build-time cycle.
   `starter.dll` (an MSVC RTTI/ABI check).  `inter.exe` loads both via
   `osl::Module("thrower"/"starter")`, so the cc_binary target names MUST be the
   bare `thrower`/`starter` (the dll basenames it hard-codes).  Run via the generic
-  `staged_run_test` (the non-gtest form of `gtest_test`'s staging rule): inter.exe
-  + both dlls + sal3/cppu3 + VC90 CRT are staged into one dir; the test passes iff
-  the exe exits 0.  No UNO connection, no Java — the only test here that runs
+  `staged_run_test` (the non-gtest form of `gtest_test`'s staging rule): inter.exe,
+  both dlls, sal3/cppu3 and the VC90 CRT are staged into one dir; the test passes
+  iff the exe exits 0.  No UNO connection, no Java — the only test here that runs
   without a qadevOOo / running-soffice fixture.
+- **`test_any_jni` is RED, and it is the bridge that is wrong — not the test.**
+  It fails in `TestSeqSize`, on this line:
+
+  ```
+  TestSeqSize: oversized sequence rejected: [jni_uno bridge error] Java calling UNO method mapAny: out of memory!
+  TestSeqSize: rejected, but not by the size guard!
+  ```
+
+  `seq_allocate()` ([jni_data.cxx:41](source/jni_uno/jni_data.cxx)) computes the
+  buffer size as `SAL_SEQUENCE_HEADER_SIZE + (nElements * nSize)` in **32-bit
+  signed** arithmetic. The test sends 5,000,000 elements of 1024 bytes:
+  5,120,000,000 overflows `INT32_MAX` and wraps to 825,032,704, which a 32-bit
+  process cannot allocate, so `rtl_mem::allocate` throws `"out of memory!"`. The
+  test accepts a rejection only if it came from a size *guard* (`"out of
+  range"`), and that distinction is its whole purpose: today the oversized
+  sequence is refused **by luck**. Choose a count whose wrap lands small —
+  4,194,304 × 1024 is exactly 2³², wrapping to **0** — and `seq_allocate`
+  returns an 8-byte header, after which the loop at
+  [jni_data.cxx:1115](source/jni_uno/jni_data.cxx) writes `nElements` elements
+  into it (`nPos * nSize` overflowing as well, so some writes land *before* the
+  buffer). That is a heap overflow reachable from any in-process Java UNO caller.
+
+  **The fix exists, on another branch**: `7efd38098e` "jni_uno: added guard
+  sequence allocation size against integer overflow" (on `security-triage`,
+  `security-ASVS-Scan`, `ww8-fixes`) computes the size in `sal_uInt64`, rejects
+  negatives, and throws `"sequence size out of range"` above `SAL_MAX_SIZE`.
+  `799ee9fa5e` brought the *test* here when it unified the two bridge test sets
+  and deliberately left the security-branch source edits behind — its own
+  verification note is "both test targets **analyse** clean", i.e. analysis, not
+  execution. So this branch holds the regression pin without the fix.
+
+  Left red on purpose: it is an accurate report of a real defect, and
+  bazel-migration does not change source (CLAUDE.md). Cherry-picking
+  `7efd38098e` (~15 lines, one file) is the fix if this branch is ever to carry
+  it.
+
 - **Why the rest are deferred**: the `java_uno/*` tests were *manual* harnesses
   upstream (each `readme.txt`: "run `…-server &`, sleep 3, run `…-client`") — the
   makefile only builds the components + emits run-scripts.  The native `uno`
-  runner exists (`//main/cpputools:uno`), but automating them under `bazel test`
-  needs a 2-process socket fixture (port allocation, server-ready wait).
-  `acquire` + `java_remote` additionally need `OOoRunner.jar` from **qadevOOo**,
-  which is not migrated (frontier).  These belong with the deferred
-  OfficeConnection/subsequent-test bucket.
+  runner exists (`//main/cpputools:uno`).  Both former blockers are now GONE:
+  `OOoRunner.jar` is built (`//main/qadevOOo:OOoRunner`), and the 2-process
+  socket fixture exists — `gtest_test`/`staged_run_test` grew `server_args` +
+  `server_ready_port` for `//main/testtools:bridgetest_urp`, which does exactly
+  this (start the server detached, wait until it listens, run the client, kill
+  stragglers).  What is left is wiring, not missing machinery.  `java_remote`'s
+  pure-Java suites are JUnit and can use `//build/rules:junit_test.bzl`.
