@@ -273,7 +273,7 @@ $(PACKAGE_DIR)/$(PREDELIVER_FLAG_FILE) : $(PACKAGE_DIR)/$(INSTALL_FLAG_FILE)
     $(COMMAND_ECHO)$(PERL) $(SOLARENV)/bin/macosx-change-install-names.pl extshl \
         $(EXTRPATH) \
         $(shell ls $(foreach,j,$(OUT2LIB) $(LB)/$(j:f)) | \
-            (grep -v '\.a$$' || test $$? = 1))
+            (grep -vE '\.(a|pc)$$' || test $$? = 1))
 .ENDIF
 .ENDIF			# "$(OUT2LIB)"!=""
 .IF "$(OUT2INC)"!=""
