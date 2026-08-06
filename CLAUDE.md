@@ -352,16 +352,74 @@ test          🔨  C++ unit-test infra runnable — NOW THE FRONT-LINE TASK: br
                    JVM.  JAVA_HOME is pinned to the same JDK because OfficeConnection
                    always passes -env:UNO_JAVA_JFW_ENV_JREHOME=true (the OFFICE's jvmfwk
                    then reads it).
-                   THE QUEUE IS LARGE AND WAS UNDER-COUNTED HERE: 18 qa/unoapi + 24
-                   qa/complex dirs, not the 4 modules this bucket used to name.  Two
-                   gates on the rest: (i) -tdoc — 11 of the 18 unoapi adapters pass a
-                   test-document root ⇒ qadevOOo/testdocs must be staged, and data_tree
-                   stages one FILE per entry, so a directory-preserving variant is the
-                   next rule work (svtools went first precisely because its scenario
-                   builds its document via SOfficeFactory and needs none); (ii) per-module
-                   fixtures — svl/qa/complex/ConfigItems needs a C++ helper component,
-                   and several qa/complex dirs (writerfilter's among them) have no
-                   makefile.mk at all, i.e. were never wired upstream either.
+                   qa/unoapi — WHOLE CATEGORY WIRED 2026-08-06, all 18, every one
+                   //main/<module>:qa_unoapi.  They are not 18 tests but 18 sets of DATA
+                   for one runner, so they are ONE MACRO — unoapi_test (junit_test.bzl)
+                   over the only four things that differ: module (= the source dir name,
+                   which is ALSO the adapter package org.openoffice.<module>.qa.unoapi
+                   .Test for all 18 without exception), sce, xcl, tdoc.  Mirrors the
+                   JunitTest_<module>_unoapi.mk files, which differ only in their
+                   -Dorg.openoffice.test.arg.<name> lines.  ANALYSED CLEAN (bazel build
+                   --nobuild, all 18); NOT YET RUN — 16 of them have never executed here.
+                   THE RECORDED -tdoc GATE WAS WRONG on the key fact: it is NOT
+                   qadevOOo/testdocs.  Every makefile that sets -tdoc points at
+                   $(SRCDIR)/<module>/qa/unoapi/testdocuments — 10 small per-module dirs,
+                   ~570 KB total (linguistic points at qa/unoapi ITSELF, i.e. passing
+                   something non-null; neither of its 2 objects opens a document).
+                   qadevOOo/testdocs is only the FALLBACK util.utils getFullTestDocName
+                   takes when the arg is absent AND SRC_ROOT is set — a dmake-tree
+                   assumption no wired suite reaches.  So staging it is NOT a gate;
+                   OOoRunnerLight/testdocs stay ⬜ for other reasons.
+                   The gate that WAS real: data_dirs, the directory-preserving companion
+                   to data_tree (gtest_test.bzl, shared by both launchers).  data_tree
+                   maps one label→one path, right when exact PLACEMENT is under test (a
+                   mini installation has two files named bootstrap.ini); wrong for a
+                   document ROOT, since the runner joins a name onto -tdoc AT RUN TIME so
+                   which documents a scenario opens is not a build-time fact — and
+                   dbaccess/forms testdocuments/TestDB/ is a NESTED dir data_tree cannot
+                   express at all.  Each entry stages every file of the label under the
+                   chosen dir at its path relative to the LONGEST COMMON DIRECTORY of
+                   that label's files: the strip prefix is DERIVED, not declared, which
+                   is exact for the glob(["<dir>/**"]) filegroup the macro generates and
+                   keeps the call site to the one fact it knows.
+                   FIRST ONE RUN — //main/toolkit:qa_unoapi, RED on an ORPHANED MUTEX in
+                   acc.dll (main/accessibility), left red.  Fixture is FINE: it connects,
+                   stages testdocuments/, and the first object
+                   (toolkit.AccessibleDropDownComboBox = the Find toolbar combo) passes
+                   FOUR whole interfaces; then the office HANGS and takes the other 52
+                   with it.  cdb -pv (non-invasive, on the live hang): Windows logs
+                   Application Hang event 1002, NOT a crash (Responding=False) — the Java
+                   EOFException/DisposedException are only the consequence; the MAIN
+                   thread holds the SolarMutex inside a WinProc dispatch
+                   (Application::Execute→Yield→DispatchMessageW) delivering a focus event
+                   ImplGrabFocus→ImplCallActivateListeners→VclEventListeners::Call→
+                   ootk!VCLXAccessibleComponent::WindowEventListener→acc.dll→
+                   sal3!osl_acquireMutex and BLOCKS; a binaryurp worker (the test's UNO
+                   call) blocks on the SAME acc mutex; and !locks names the contended CS
+                   (LockCount 2 = exactly those two waiters) whose OwningThread IS NOT IN
+                   THE LIVE THREAD LIST.  So NOT a lock-order inversion and NOT the
+                   qadevOOo shutdown deadlock — the lock is ORPHANED: a thread exited
+                   holding it, and an osl mutex is a plain CRITICAL_SECTION, so it can
+                   never be acquired again and nothing recovers in-process.  A real
+                   product defect reachable by ANY assistive technology attaching to a
+                   running office, not just this test; fix = source change in
+                   main/accessibility, out of scope.  Upstream's knownissues.xcl excludes
+                   toolkit.AccessibleComboBox but NOT AccessibleDropDownComboBox, i.e.
+                   upstream thinks the object is testable — consistent with a qa/ dir
+                   gated behind ENABLE_UNIT_TESTS=NO for a decade that never ran.
+                   TWO MORE REDS EXPECTED, both recorded at the call site: dbaccess (the only
+                   -ini adapter; dbaccess.props names a MySQL server no dev box has, so
+                   ORowSet + OSingleSelectQueryComposer fail and the other 7 objects do
+                   not — wired anyway, a partial red naming which objects need a DB beats
+                   an unwired suite) and sc (43 active objects vs 67 COMMENTED OUT, each
+                   with its issue number — the honest upstream state, left verbatim).
+                   Long poles size="large": sw (75 objects), toolkit (53), sc (43),
+                   forms (34).
+                   STILL ⬜: the 24 qa/complex dirs — unlike unoapi these are hand-written
+                   suites with no shared shape, so one at a time.  Gates: per-module
+                   fixtures (svl/qa/complex/ConfigItems needs a C++ helper component) and
+                   several (writerfilter's among them) have no makefile.mk at all, i.e.
+                   were never wired upstream either.
                    See main/test/readme.md.
                    OPEN RED, LEFT RED ON PURPOSE — //main/bridges:test_any_jni.
                    NOT a fixture problem and NOT caused by anything above: it fails in
@@ -514,8 +572,12 @@ qadevOOo      🔨  OOoRunner.jar built (//main/qadevOOo:OOoRunner — qadevOOo 
                    JunitTest_qadevOOo_unoapi GREEN 2026-08-06 (//main/qadevOOo:
                    qa_unoapi, ~16s) via uno_junit_test fixture_starts_office — see
                    the OFFICE SHUTDOWN DEADLOCK note in the test bucket.
-                   STILL ⬜: OOoRunnerLight, testdocs (needed by 11 of the 18
-                   unoapi adapters, which pass -tdoc).
+                   STILL ⬜: OOoRunnerLight, testdocs.  CORRECTION — testdocs is
+                   NOT what the 11 -tdoc adapters need: they each point at their
+                   OWN <module>/qa/unoapi/testdocuments (now staged per module via
+                   data_dirs).  qadevOOo/testdocs is only utils.getFullTestDocName's
+                   fallback when -tdoc is absent AND SRC_ROOT is set, which no
+                   wired suite hits.  It is a leftover, not a blocker.
 testgraphical ⬜  (graphical/visual regression tests; needs instsetoo_native + qadevOOo)
 
 ── Remaining: Java-based ────────────────────────────────────────────────

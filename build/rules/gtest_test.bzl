@@ -183,14 +183,66 @@ def _server_lines(server_exe, server_args, port):
         ":_portup",
     ]
 
+def _stage_data_dirs(ctx, d, data_dirs):
+    """Stage whole fixture DIRECTORIES, preserving their internal shape.
+
+    data_tree maps one label to one staged path, which is right when the exact
+    location of each file is the thing under test (a mini UNO installation has
+    two files named bootstrap.ini and only their directories tell them apart).
+    It is the wrong shape for a fixture that is simply "this directory of test
+    documents": the qadevOOo unoapi runner takes a document ROOT (-tdoc) and
+    joins a name onto it at runtime, so the build cannot know which documents a
+    scenario will open — the whole directory has to be there.
+
+    Each entry is {label: "staged/dir"}, and every file the label provides is
+    staged under it at its path relative to the LONGEST COMMON DIRECTORY of that
+    label's files.  Deriving the strip prefix instead of taking one as an
+    argument keeps the call site to the one fact it actually knows (where the
+    tree goes), and is exact for the usual `glob(["<dir>/**"])` filegroup: the
+    common directory IS <dir>, including when it holds only one file.  A glob
+    that reaches outside its directory shortens the common prefix and so stages
+    deeper than intended, which is visible in the staged layout rather than
+    silent.
+
+    Source files only, in practice: a mix of source and generated inputs shares
+    no directory prefix at all (bazel-out/... vs the execroot), which the same
+    rule would faithfully — and uselessly — reflect.
+    """
+    staged = []
+    for label, rel in data_dirs.items():
+        files = label[DefaultInfo].files.to_list()
+        if not files:
+            fail("data_dirs entry %s -> %s: the label provides no files." %
+                 (label.label, rel))
+
+        common = files[0].dirname.split("/")
+        for f in files[1:]:
+            parts = f.dirname.split("/")
+            n = 0
+            for i in range(min(len(common), len(parts))):
+                if common[i] != parts[i]:
+                    break
+                n = i + 1
+            common = common[:n]
+        prefix = "/".join(common)
+
+        for f in files:
+            sub = f.path[len(prefix) + 1:] if prefix else f.path
+            o = ctx.actions.declare_file(d + "/" + rel + "/" + sub)
+            ctx.actions.symlink(output = o, target_file = f)
+            staged.append(o)
+    return staged
+
 # ── shared with junit_test.bzl ───────────────────────────────────────────────
-# The Java/UNO tests emit a launcher .bat of their own and need exactly these two
+# The Java/UNO tests emit a launcher .bat of their own and need exactly these
 # primitives: a %~dp0-relative path to the staged install (bazel test's working
-# directory is neither the execroot nor the exe's directory), and the escaping
-# rules for a value baked into a .bat (the percent landmine above).  Re-exported
-# rather than copied, so both launchers keep one definition of each.
+# directory is neither the execroot nor the exe's directory), the escaping rules
+# for a value baked into a .bat (the percent landmine above), and directory
+# staging.  Re-exported rather than copied, so both launchers keep one
+# definition of each.
 launcher_relpath = _windows_relpath
 launcher_expand_tokens = _expand_tokens
+stage_data_dirs = _stage_data_dirs
 
 def _staged_gtest_test_impl(ctx):
     # The staging dir is normally "<name>.run".  bin_layout makes it

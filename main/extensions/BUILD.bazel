@@ -9,6 +9,7 @@ package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 load("//build/rules:rsc_pipeline.bzl", "rsc_res")
+load("//build/rules:junit_test.bzl", "unoapi_test")
 
 # ── Component XML files (for services.rdb via postprocess) ────────────────────
 exports_files(glob([
@@ -765,3 +766,18 @@ cc_binary(
 # Deferred: mozbootstrap.uno — Linux/macOS only (skipped on Windows).
 # Deferred: activex/msidl, activex/main — ActiveX/COM tooling required.
 # ─────────────────────────────────────────────────────────────────────────────
+
+# ── qa/unoapi ────────────────────────────────────────────────────────────────
+# The qadevOOo UNOAPI runner over a live office: Test.java hands
+# org.openoffice.Runner the scenario below, and the Runner instantiates each
+# named object in the running office and checks every interface and property it
+# declares against the UNO type description.  See build/rules/junit_test.bzl.
+#
+# One object, pcr.ObjectInspector — listed TWICE on purpose.  The comment in
+# extensions.sce explains it: the Runner only prints "N of M tests failed" when
+# it ran more than one test, and the harness above it parses that line.
+unoapi_test(
+    name = "qa_unoapi",
+    module = "extensions",
+    sce = "qa/unoapi/extensions.sce",
+)

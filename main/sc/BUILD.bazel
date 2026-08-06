@@ -3,6 +3,7 @@ package(default_visibility = ["//visibility:public"])
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 load("//build/rules:rsc_pipeline.bzl", "rsc_res")
 load("//build/rules:sdi_target.bzl", "sdi_target")
+load("//build/rules:junit_test.bzl", "unoapi_test")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -1277,3 +1278,21 @@ filegroup(
 
 exports_files(glob(["**/*.component"]))
 
+# ── qa/unoapi ────────────────────────────────────────────────────────────────
+# The qadevOOo UNOAPI runner over a live office: Test.java hands
+# org.openoffice.Runner the scenario below, and the Runner instantiates each
+# named object in the running office and checks every interface and property it
+# declares against the UNO type description.  See build/rules/junit_test.bzl.
+#
+# 43 active objects — and 67 commented out, each with the issue number that
+# broke it.  That ratio is the honest state of the Calc unoapi suite upstream,
+# not something lost in migration; the commented lines are left exactly as they
+# are so re-enabling one is a one-character edit.
+unoapi_test(
+    name = "qa_unoapi",
+    module = "sc",
+    sce = "qa/unoapi/sc.sce",
+    xcl = "qa/unoapi/knownissues.xcl",
+    tdoc = "qa/unoapi/testdocuments",
+    size = "large",
+)

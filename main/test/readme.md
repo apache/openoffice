@@ -419,6 +419,9 @@ Each of these was invisible until a foreign process loaded our DLLs:
 | `//main/svtools:qa_unoapi` | the first UNOAPI suite ever run here — 26 interface/property checks on `svtools.AccessibleTabBar` | ~25 s |
 | `//main/qadevOOo:qa_unoapi` | the runner testing itself (`qadevOOo.SelfTest`) — the guard on the framework the other unoapi suites are built out of. Needs `fixture_starts_office`, see below | ~16 s |
 
+The other 16 `qa/unoapi` suites are wired but have not been run yet — see
+[the category section](#the-whole-qaunoapi-category-all-18-wired) below.
+
 ### When the office will not shut down: `fixture_starts_office`
 
 `qadevOOo:qa_unoapi` is the suite that motivated this. With the faithful
@@ -463,19 +466,113 @@ It is **opt-in and costs something**: `tearDown`'s check that the office
 terminates cleanly and exits 0. Use it only where that check is the thing that
 is broken, and record why.
 
-### The rest of the category, and what each needs
+### The whole `qa/unoapi` category: all 18 wired
 
-There are **18** `qa/unoapi` and **24** `qa/complex` directories in the tree, so
-this is a queue, not a leftover. Two things gate the remainder:
+Every `qa/unoapi` directory in the tree is now a target, all named
+`//main/<module>:qa_unoapi`. They are not 18 different tests — they are 18 sets
+of *data* for one runner, which is why they are one macro, `unoapi_test`
+(`build/rules/junit_test.bzl`), over the four things that actually differ:
 
-- **`-tdoc`** — 11 of the 18 unoapi adapters pass a test-document root, which
-  means staging `qadevOOo/testdocs` (53 entries, some of them directories). The
-  rule's `data_tree` stages one *file* per entry; a directory-preserving
-  variant is the next piece of rule work. `svtools`' scenario builds its
-  document through `SOfficeFactory` and needs none, which is why it went first.
+| | |
+| --- | --- |
+| `module` | the source directory name, which is also the adapter's package — `org.openoffice.<module>.qa.unoapi.Test` for all 18 without exception |
+| `sce` | the scenario: one `-o <object>` per line, commented-out lines carrying the issue number that broke that object |
+| `xcl` | the matching exclusion list of individual interface tests |
+| `tdoc` | the module's `qa/unoapi/testdocuments` directory, when it has one |
+
+That mirrors the `JunitTest_<module>_unoapi.mk` files being ported, which differ
+only in their `-Dorg.openoffice.test.arg.*` lines.
+
+**`-tdoc` is per-module, and an earlier note here had it wrong.** It is *not*
+`qadevOOo/testdocs` — every makefile that sets it points at
+`$(SRCDIR)/<module>/qa/unoapi/testdocuments`, 10 small directories totalling
+about 570 KB (`linguistic` is the odd one, pointing at `qa/unoapi` itself, which
+is a way of passing something non-null: neither of its two objects opens a
+document). `qadevOOo/testdocs` is only the *fallback* `util.utils`
+`getFullTestDocName` reaches for when the argument is absent and `SRC_ROOT` is
+set — a dmake-tree assumption, and not a path any wired suite takes.
+
+The gate this did need was **`data_dirs`**, the directory-preserving companion
+to `data_tree`, now in `gtest_test.bzl` and shared by both launchers. `data_tree`
+maps one label to one staged path, which is right when the exact placement of a
+file is the thing under test (a mini UNO installation has two files named
+`bootstrap.ini` and only their directories tell them apart). It is the wrong
+shape for a document *root*: the runner joins a document name onto `-tdoc` at
+run time, so which documents a scenario opens is not a build-time fact and the
+directory has to go over whole — including `dbaccess`'s and `forms`'s
+`testdocuments/TestDB/`, a nested directory `data_tree` cannot express at all.
+Each entry stages every file the label provides under the chosen directory, at
+its path relative to the **longest common directory** of that label's files; the
+strip prefix is derived rather than declared, which is exact for the
+`glob(["<dir>/**"])` filegroup the macro generates and keeps the call site to the
+one fact it knows — where the tree goes.
+
+Expect reds, and expect them to be informative rather than structural — this is
+the first time these suites have run here at all.
+
+#### First one run: `toolkit`, red on an **orphaned mutex in `acc.dll`**
+
+The fixture works — it connects, stages `testdocuments/`, and the first object
+(`toolkit.AccessibleDropDownComboBox`, the Find toolbar's combo box) passes four
+whole interfaces. Then the office **hangs**, and takes the other 52 objects with
+it. Diagnosed with a non-invasive `cdb -pv -p <pid>` against the live hang:
+
+- Windows logs an **Application Hang** (event 1002), *not* a crash; the office
+  stops pumping messages and `Process.Responding` is `False`. The Java side sees
+  only the consequence — `EOFException` on the URP pipe, then `DisposedException`
+  out of `tearDown`.
+- The **main thread holds the SolarMutex** (inside a WinProc dispatch under
+  `Application::Execute` → `Yield` → `DispatchMessageW`) delivering a focus
+  event: `Window::ImplGrabFocus` → `ImplCallActivateListeners` →
+  `VclEventListeners::Call` → `ootk!VCLXAccessibleComponent::WindowEventListener`
+  → `acc.dll` → `sal3!osl_acquireMutex`, where it blocks.
+- A **`binaryurp` worker** — the test's incoming UNO call — blocks on the *same*
+  `acc.dll` mutex.
+- `!locks` names the contended critical section (`LockCount 2`, exactly those two
+  waiters) and its `OwningThread` — **and that thread ID is not in the live
+  thread list.**
+
+So it is *not* a lock-order inversion, and not the solar-mutex-vs-URP shutdown
+deadlock recorded above for `qadevOOo`: the lock is **orphaned**. A thread left
+`acc.dll`'s mutex held and exited, and an osl mutex is a plain Windows
+`CRITICAL_SECTION` — once orphaned it can never be acquired again, so the first
+VCL event *and* the first UNO call that reach accessibility both block forever.
+Nothing recovers it in-process.
+
+That is a real product defect reachable by any assistive technology that attaches
+to a running office, not just by this test, and fixing it is a source change in
+`main/accessibility` — out of scope here. The suite stays wired and red, the same
+disposition as `//main/bridges:test_any_jni`. Upstream's `knownissues.xcl`
+excludes `toolkit.AccessibleComboBox` but **not** `AccessibleDropDownComboBox`,
+i.e. upstream considers this object testable — consistent with a `qa/` directory
+gated behind `ENABLE_UNIT_TESTS=NO` for a decade that has simply never run.
+
+Two more reds are known in advance:
+
+- **`dbaccess`** is the only adapter taking `-ini`, and its `dbaccess.props`
+  names a MySQL server (`jdbc.url=mysql://unoapi:3306/testDB`) no developer
+  machine has. `ORowSet` and `OSingleSelectQueryComposer` reach for it; the
+  other seven objects do not. Wired anyway — a partial red that names which
+  objects need a database beats an unwired suite, and the props file is staged,
+  so pointing it at a real server is a one-line change.
+- **`sc`** has 43 active objects and **67 commented out**, each with its issue
+  number. That ratio is the honest upstream state of the Calc suite, not
+  something lost in migration; the lines are left exactly as they are.
+
+The long poles are `sw` (75 objects), `toolkit` (53), `sc` (43) and `forms`
+(34) — every object is instantiated in a running office, so those four take
+`size = "large"`.
+
+### What is left
+
+That leaves the **24** `qa/complex` directories, which unlike unoapi are
+hand-written suites with no shared shape, so they come one at a time. Two things
+gate them:
+
 - **per-module fixtures** — `svl/qa/complex/ConfigItems` needs a C++ helper
-  component built alongside; `writerfilter/qa/complex` and several others have
-  no `makefile.mk` at all upstream, i.e. they were never wired there either.
+  component built alongside;
+- **several were never wired upstream either** — `writerfilter/qa/complex` and
+  others have no `makefile.mk` at all.
 
 ## The sal suite is deliberately NOT a green gate
 

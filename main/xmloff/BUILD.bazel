@@ -1,6 +1,7 @@
 package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("//build/rules:junit_test.bzl", "unoapi_test")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -163,3 +164,18 @@ filegroup(
 
 exports_files(glob(["**/*.component"]))
 
+# ── qa/unoapi ────────────────────────────────────────────────────────────────
+# The qadevOOo UNOAPI runner over a live office: Test.java hands
+# org.openoffice.Runner the scenario below, and the Runner instantiates each
+# named object in the running office and checks every interface and property it
+# declares against the UNO type description.  See build/rules/junit_test.bzl.
+#
+# 10 objects, the XML import/export filter services.  emptyChart.sds is the one
+# fixture document — the chart filters need a chart to round-trip.
+unoapi_test(
+    name = "qa_unoapi",
+    module = "xmloff",
+    sce = "qa/unoapi/xmloff.sce",
+    xcl = "qa/unoapi/knownissues.xcl",
+    tdoc = "qa/unoapi/testdocuments",
+)

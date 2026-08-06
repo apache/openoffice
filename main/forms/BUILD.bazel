@@ -2,6 +2,7 @@ package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary")
 load("//build/rules:rsc_pipeline.bzl", "rsc_res")
+load("//build/rules:junit_test.bzl", "unoapi_test")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -157,3 +158,21 @@ rsc_res(
 
 exports_files(glob(["**/*.component"]))
 
+# ── qa/unoapi ────────────────────────────────────────────────────────────────
+# The qadevOOo UNOAPI runner over a live office: Test.java hands
+# org.openoffice.Runner the scenario below, and the Runner instantiates each
+# named object in the running office and checks every interface and property it
+# declares against the UNO type description.  See build/rules/junit_test.bzl.
+#
+# 34 objects, the largest of the control/model suites.  The second of the two
+# adapters that hardcode their paths instead of calling Argument.get (see
+# chart2).  testdocuments holds TestDB, a directory — which is why the fixture
+# has to go over as a directory tree and not as a list of files.
+unoapi_test(
+    name = "qa_unoapi",
+    module = "forms",
+    sce = "qa/unoapi/forms.sce",
+    xcl = "qa/unoapi/knownissues.xcl",
+    tdoc = "qa/unoapi/testdocuments",
+    size = "large",
+)

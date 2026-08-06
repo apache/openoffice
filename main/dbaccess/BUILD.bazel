@@ -2,6 +2,7 @@ package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 load("//build/rules:rsc_pipeline.bzl", "rename_file", "rsc_res")
+load("//build/rules:junit_test.bzl", "unoapi_test")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -964,3 +965,26 @@ filegroup(
 
 exports_files(glob(["**/*.component"]))
 
+# ── qa/unoapi ────────────────────────────────────────────────────────────────
+# The qadevOOo UNOAPI runner over a live office: Test.java hands
+# org.openoffice.Runner the scenario below, and the Runner instantiates each
+# named object in the running office and checks every interface and property it
+# declares against the UNO type description.  See build/rules/junit_test.bzl.
+#
+# The only adapter that takes -ini, and the reason is an EXTERNAL dependency:
+# dbaccess.props names a MySQL server (jdbc.url=mysql://unoapi:3306/testDB) that
+# no developer machine has.  The objects that reach for it — ORowSet,
+# OSingleSelectQueryComposer — will fail here; the rest (ODatabaseContext,
+# OInteractionHandler, the dialogs) do not touch it.  Wired anyway: a partial
+# red that names which objects need a database is a better record than an
+# unwired suite, and the file is staged so pointing it at a real server is a
+# one-line change.
+unoapi_test(
+    name = "qa_unoapi",
+    module = "dbaccess",
+    sce = "qa/unoapi/dbaccess.sce",
+    xcl = "qa/unoapi/knownissues.xcl",
+    ini = "qa/unoapi/dbaccess.props",
+    tdoc = "qa/unoapi/testdocuments",
+    size = "large",
+)

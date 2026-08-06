@@ -1,5 +1,5 @@
 load("@rules_java//java:defs.bzl", "java_library")
-load("//build/rules:junit_test.bzl", "uno_junit_test")
+load("//build/rules:junit_test.bzl", "uno_junit_test", "unoapi_test")
 
 # ── OOoRunner.jar ────────────────────────────────────────────────────────────
 # The qadevOOo test framework (lib.*, base.*, util.*, share.*, mod.* …) used as a
@@ -91,27 +91,12 @@ java_library(
 # which are what this target is for, then run and report.  What is given up is
 # tearDown's check that the office exits 0, which for this suite is exactly the
 # thing that is broken and would otherwise cost 300 s per run to re-observe.
-uno_junit_test(
+unoapi_test(
     name = "qa_unoapi",
-    srcs = ["qa/unoapi/Test.java"],
-    classes = ["org.openoffice.qadevOOo.qa.unoapi.Test"],
+    module = "qadevOOo",
+    sce = "qa/unoapi/qadevOOo.sce",
+    xcl = "qa/unoapi/knownissues.xcl",
     fixture_starts_office = True,
-    data_tree = {
-        "qa/unoapi/qadevOOo.sce": "qadevOOo.sce",
-        "qa/unoapi/knownissues.xcl": "knownissues.xcl",
-    },
-    test_args = {
-        "org.openoffice.test.arg.sce": "$(RUNDIR)\\qadevOOo.sce",
-        "org.openoffice.test.arg.xcl": "$(RUNDIR)\\knownissues.xcl",
-    },
-    deps = [
-        ":OOoRunner",
-        "//main/test:test_jar",
-        "//main/ridljar:ridl",
-        "//main/unoil:unoil",
-        "//main/jurt:jurt",
-        "//main/javaunohelper:juh_jar",
-    ],
 )
 
 uno_junit_test(

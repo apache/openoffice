@@ -3,6 +3,7 @@ package(default_visibility = ["//visibility:public"])
 load("@rules_cc//cc:defs.bzl", "cc_binary")
 load("@bazel_skylib//rules:write_file.bzl", "write_file")
 load("//build/rules:gtest_test.bzl", "gtest_test")
+load("//build/rules:junit_test.bzl", "unoapi_test")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -276,3 +277,19 @@ gtest_test(
     uno_install = "//main/staging:install",
 )
 
+# ── qa/unoapi ────────────────────────────────────────────────────────────────
+# The qadevOOo UNOAPI runner over a live office: Test.java hands
+# org.openoffice.Runner the scenario below, and the Runner instantiates each
+# named object in the running office and checks every interface and property it
+# declares against the UNO type description.  See build/rules/junit_test.bzl.
+#
+# Two objects, configmgr.ConfigurationProvider and configmgr.DefaultProvider.
+# Nothing to do with configmgr/qa/unit, which is red on a retired bootstrap
+# mechanism (component_writeInfo): this one runs against a live office and only
+# asks the running configuration manager for its UNO interfaces.  No xcl and no
+# testdocuments — upstream's makefile defines the sce and nothing else.
+unoapi_test(
+    name = "qa_unoapi",
+    module = "configmgr",
+    sce = "qa/unoapi/module.sce",
+)

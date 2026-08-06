@@ -4,6 +4,7 @@ load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 load("//build/rules:rsc_pipeline.bzl", "rsc_res")
 load("//build/rules:sdi_target.bzl", "sdi_package", "sdi_target")
 load("//build/rules:gtest_test.bzl", "gtest_test")
+load("//build/rules:junit_test.bzl", "unoapi_test")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -264,4 +265,20 @@ gtest_test(
     # inside the staged install supplies all of it via PATH instead of making us
     # enumerate it in runtime_dlls.
     uno_install = "//main/staging:install",
+)
+
+# ── qa/unoapi ────────────────────────────────────────────────────────────────
+# The qadevOOo UNOAPI runner over a live office: Test.java hands
+# org.openoffice.Runner the scenario below, and the Runner instantiates each
+# named object in the running office and checks every interface and property it
+# declares against the UNO type description.  See build/rules/junit_test.bzl.
+#
+# Three objects (the standalone document-info object and the frame loaders),
+# with the .sdw/.stw documents they open staged beside them.
+unoapi_test(
+    name = "qa_unoapi",
+    module = "sfx2",
+    sce = "qa/unoapi/sfx.sce",
+    xcl = "qa/unoapi/knownissues.xcl",
+    tdoc = "qa/unoapi/testdocuments",
 )

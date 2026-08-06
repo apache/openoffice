@@ -1,6 +1,7 @@
 package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("//build/rules:junit_test.bzl", "unoapi_test")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -458,3 +459,19 @@ filegroup(
 
 exports_files(glob(["**/*.component"]))
 
+# ── qa/unoapi ────────────────────────────────────────────────────────────────
+# The qadevOOo UNOAPI runner over a live office: Test.java hands
+# org.openoffice.Runner the scenario below, and the Runner instantiates each
+# named object in the running office and checks every interface and property it
+# declares against the UNO type description.  See build/rules/junit_test.bzl.
+#
+# 10 objects — the broker itself plus one content provider per scheme (file,
+# hierarchy, package, help, FTP).  ucpftp.FTPContentProvider is the one to watch:
+# it is instantiated, not connected to anything, but it is the only object here
+# that names a network protocol.
+unoapi_test(
+    name = "qa_unoapi",
+    module = "ucb",
+    sce = "qa/unoapi/ucb.sce",
+    xcl = "qa/unoapi/knownissues.xcl",
+)

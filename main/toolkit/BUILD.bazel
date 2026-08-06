@@ -1,6 +1,7 @@
 package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("//build/rules:junit_test.bzl", "unoapi_test")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -131,3 +132,60 @@ filegroup(
 
 exports_files(glob(["**/*.component"]))
 
+# ── qa/unoapi ────────────────────────────────────────────────────────────────
+# The qadevOOo UNOAPI runner over a live office: Test.java hands
+# org.openoffice.Runner the scenario below, and the Runner instantiates each
+# named object in the running office and checks every interface and property it
+# declares against the UNO type description.  See build/rules/junit_test.bzl.
+#
+# 53 objects: every UnoControl* pair (control + model) plus the AWT peers.  The
+# single fixture document is poliball.gif, loaded by the image-control tests.
+#
+# RED, AND LEFT RED — an ORPHANED MUTEX IN acc.dll HANGS THE OFFICE.  The fixture
+# itself is fine: the suite connects, and the FIRST object
+# (toolkit.AccessibleDropDownComboBox, the Find toolbar's combo box) passes four
+# whole interfaces — XAccessibleExtendedComponent, XAccessibleEventBroadcaster,
+# XAccessibleAction and the rest — before anything goes wrong.  It dies on the
+# NEXT object creation, and takes all 53 with it.
+#
+# Diagnosed, not guessed (`cdb -pv -p <pid>`, non-invasive, against the live
+# hang):
+#
+#  * Windows logs an "Application Hang" (event 1002), NOT a crash — the office
+#    stops pumping messages and is killed; Process.Responding is False.  What the
+#    Java side sees is only the consequence: an EOFException on the URP pipe,
+#    then DisposedException out of tearDown.
+#  * the office's MAIN thread holds the SolarMutex (it is inside a WinProc
+#    dispatch under Application::Execute -> Yield -> DispatchMessageW) delivering
+#    a focus event: Window::ImplGrabFocus -> ImplCallActivateListeners ->
+#    VclEventListeners::Call -> ootk!VCLXAccessibleComponent::WindowEventListener
+#    -> acc.dll -> sal3!osl_acquireMutex, where it BLOCKS.
+#  * a binaryurp worker — the test's incoming UNO call — blocks in the SAME
+#    acc.dll mutex, one frame below binaryurp.
+#  * `!locks` names the contended critical section (LockCount 2, i.e. exactly
+#    those two waiters) and its OwningThread, and that thread ID IS NOT IN THE
+#    LIVE THREAD LIST.
+#
+# So this is not a lock-ORDER inversion and not the solar-mutex-vs-URP shutdown
+# deadlock already recorded for qadevOOo (see main/test/readme.md): the lock is
+# ORPHANED.  Some thread left acc.dll's mutex held and exited, after which an osl
+# mutex — a plain Windows CRITICAL_SECTION — can never be acquired again, so the
+# first VCL event and the first UNO call that reach accessibility both block
+# forever.  Nothing can recover it in-process.
+#
+# Fixing that is a SOURCE change in main/accessibility, which this branch does
+# not make, so the suite stays wired and red: it is an accurate report of a real
+# product defect, and the same defect is reachable by any assistive technology
+# that attaches to a running office, not just by this test.  Upstream's own
+# knownissues.xcl excludes toolkit.AccessibleComboBox but NOT
+# AccessibleDropDownComboBox, i.e. upstream considers this object testable —
+# consistent with a qa/ dir that has been gated behind ENABLE_UNIT_TESTS=NO for a
+# decade and has simply not run.
+unoapi_test(
+    name = "qa_unoapi",
+    module = "toolkit",
+    sce = "qa/unoapi/toolkit.sce",
+    xcl = "qa/unoapi/knownissues.xcl",
+    tdoc = "qa/unoapi/testdocuments",
+    size = "large",
+)

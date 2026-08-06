@@ -2,6 +2,7 @@ package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 load("//build/rules:rsc_pipeline.bzl", "rename_file", "rsc_res")
+load("//build/rules:junit_test.bzl", "unoapi_test")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -449,3 +450,22 @@ filegroup(
 
 exports_files(glob(["**/*.component"]))
 
+# ── qa/unoapi ────────────────────────────────────────────────────────────────
+# The qadevOOo UNOAPI runner over a live office: Test.java hands
+# org.openoffice.Runner the scenario below, and the Runner instantiates each
+# named object in the running office and checks every interface and property it
+# declares against the UNO type description.  See build/rules/junit_test.bzl.
+#
+# 12 objects, none commented out — the chart model and its wrappers (Diagram,
+# Axis, DataSeries, Title, Legend, …).  chart2's adapter is one of the TWO that
+# ignore Argument.get and hardcode "sch.sce" / "knownissues.xcl" /
+# "testdocuments" as paths relative to the working directory; staging by
+# basename is what makes both spellings resolve to the same files.
+unoapi_test(
+    name = "qa_unoapi",
+    module = "chart2",
+    sce = "qa/unoapi/sch.sce",
+    xcl = "qa/unoapi/knownissues.xcl",
+    tdoc = "qa/unoapi/testdocuments",
+    size = "large",
+)

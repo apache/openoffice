@@ -43,7 +43,7 @@
 load("@rules_java//java:defs.bzl", "java_library")
 load("@rules_java//java/common:java_info.bzl", "JavaInfo")
 load("//build:jre.bzl", "jre_home_native", "jre_java_exe")
-load(":gtest_test.bzl", "launcher_expand_tokens", "launcher_relpath")
+load(":gtest_test.bzl", "launcher_expand_tokens", "launcher_relpath", "stage_data_dirs")
 
 _JUNIT = "//build/third_party/junit:junit"
 _RUNNER = "org.junit.runner.JUnitCore"
@@ -98,6 +98,11 @@ def _uno_junit_test_impl(ctx):
         o = ctx.actions.declare_file(d + "/" + rel)
         ctx.actions.symlink(output = o, target_file = files[0])
         staged.append(o)
+
+    # Whole fixture DIRECTORIES.  The unoapi runner takes a document root and
+    # joins names onto it at run time, so which documents a scenario opens is not
+    # a build-time fact — the directory goes over as a directory.
+    staged += stage_data_dirs(ctx, d, ctx.attr.data_dirs)
 
     # ── the staged office ───────────────────────────────────────────────────
     uno_program_dir = None
@@ -280,6 +285,7 @@ _uno_junit_test = rule(
         "jvm_flags": attr.string_list(),
         "uno_install": attr.label(allow_files = True, mandatory = True),
         "data_tree": attr.label_keyed_string_dict(allow_files = True),
+        "data_dirs": attr.label_keyed_string_dict(allow_files = True),
         "java_exe": attr.string(mandatory = True),
         "java_home": attr.string(mandatory = True),
         "fixture_starts_office": attr.bool(default = False),
@@ -293,6 +299,7 @@ def uno_junit_test(
         deps = [],
         uno_install = "//main/staging:install",
         data_tree = {},
+        data_dirs = {},
         test_args = {},
         jvm_flags = [],
         fixture_starts_office = False,
@@ -318,6 +325,13 @@ def uno_junit_test(
     data_tree: {label: "relative/staged/path"} fixture files. The test runs with
     its working directory set to the staged dir, so a suite that does
     new File("test_documents", …) finds them.
+
+    data_dirs: {label: "relative/staged/dir"} fixture DIRECTORIES — every file
+    the label provides, staged under that directory keeping its shape (the
+    strip prefix is their longest common directory, so a
+    glob(["testdocuments/**"]) filegroup lands as testdocuments/…). Use this for
+    a document root the test names as a whole, such as the unoapi runner's
+    -tdoc; use data_tree when the exact placement of one file is the point.
 
     fixture_starts_office: the LAUNCHER starts and kills the office, and the
     test attaches to it (`connect:`) instead of launching it (`path:`). Use this
@@ -348,8 +362,107 @@ def uno_junit_test(
         fixture_starts_office = fixture_starts_office,
         uno_install = uno_install,
         data_tree = data_tree,
+        data_dirs = data_dirs,
         java_exe = jre_java_exe(),
         java_home = jre_home_native(),
         size = size,
+        **kwargs
+    )
+
+# The six runtime jars every qa/unoapi adapter needs.  Upstream's makefiles vary
+# — some list unoil.jar and jurt.jar, some do not — but the variation is
+# accidental: the ones that omit them still run because gbuild puts the whole
+# solver bin on the classpath.  The Runner needs all six regardless (unoil is
+# where every com.sun.star.* office API type lives).
+_UNOAPI_DEPS = [
+    "//main/qadevOOo:OOoRunner",
+    "//main/test:test_jar",
+    "//main/ridljar:ridl",
+    "//main/unoil:unoil",
+    "//main/jurt:jurt",
+    "//main/javaunohelper:juh_jar",
+]
+
+def unoapi_test(
+        name,
+        module,
+        sce,
+        xcl = None,
+        ini = None,
+        tdoc = None,
+        srcs = None,
+        deps = [],
+        test_args = {},
+        data_tree = {},
+        data_dirs = {},
+        **kwargs):
+    """One module's qa/unoapi suite — the qadevOOo UNOAPI runner over a live office.
+
+    These 18 suites are not hand-written tests. Each is the SAME three-line
+    adapter (connect, hand org.openoffice.Runner a scenario file and the
+    connection description, assert its boolean result); what differs between
+    modules is only the data — which objects the scenario names, which
+    individual interface tests are excluded, and where the fixture documents
+    live. So the whole category is one macro over that data, mirroring the
+    JunitTest_<module>_unoapi.mk files it ports, which differ only in their
+    `-Dorg.openoffice.test.arg.*` lines.
+
+    module: the source directory name, which is also the adapter's package —
+    org.openoffice.<module>.qa.unoapi.Test — for all 18 without exception.
+
+    sce: the scenario file (`-o <object>` per line, commented-out entries being
+    the objects a known issue broke). xcl: the matching exclusion list of
+    individual interface tests. ini: a properties file, used only by dbaccess.
+
+    Each is staged under its own basename and the argument points at the staged
+    copy, never at the source path: the arguments are read at RUN time, and
+    bazel test's working directory is neither the source tree nor the execroot.
+    These are NATIVE paths with single backslashes, deliberately —
+    org.openoffice.test.Argument.get is a bare System.getProperty, so none of
+    these values is macro-expanded and the doubling rtl::Bootstrap values need
+    (see gtest_test's `env`) would arrive here as literal double backslashes.
+    Staging by basename is also what makes the two adapters that IGNORE these
+    arguments work — chart2 and forms hardcode "sch.sce" / "forms.sce",
+    "knownissues.xcl" and "testdocuments" as paths relative to the working
+    directory instead of calling Argument.get.
+
+    tdoc: the module's test-document directory, staged whole (see data_dirs) as
+    "testdocuments". Leave it unset for a scenario whose objects build their
+    documents through SOfficeFactory and load nothing from disk; the argument
+    then points at the staged dir itself, which is what upstream's argument-less
+    modules effectively get.
+    """
+    files = {sce: sce.split("/")[-1]}
+    args = {"org.openoffice.test.arg.sce": "$(RUNDIR)\\" + files[sce]}
+    if xcl:
+        files[xcl] = xcl.split("/")[-1]
+        args["org.openoffice.test.arg.xcl"] = "$(RUNDIR)\\" + files[xcl]
+    if ini:
+        files[ini] = ini.split("/")[-1]
+        args["org.openoffice.test.arg.ini"] = "$(RUNDIR)\\" + files[ini]
+
+    dirs = dict(data_dirs)
+    if tdoc:
+        native.filegroup(
+            name = name + "_tdoc",
+            srcs = native.glob([tdoc + "/**"]),
+            testonly = True,
+        )
+        dirs[":" + name + "_tdoc"] = "testdocuments"
+        args["org.openoffice.test.arg.tdoc"] = "$(RUNDIR)\\testdocuments"
+    else:
+        args["org.openoffice.test.arg.tdoc"] = "$(RUNDIR)"
+
+    files.update(data_tree)
+    args.update(test_args)
+
+    uno_junit_test(
+        name = name,
+        srcs = srcs if srcs else ["qa/unoapi/Test.java"],
+        classes = ["org.openoffice.%s.qa.unoapi.Test" % module],
+        data_tree = files,
+        data_dirs = dirs,
+        test_args = args,
+        deps = deps + _UNOAPI_DEPS,
         **kwargs
     )

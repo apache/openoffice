@@ -1,6 +1,7 @@
 package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("//build/rules:junit_test.bzl", "unoapi_test")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -96,3 +97,19 @@ filegroup(
 
 exports_files(glob(["**/*.component"]))
 
+# ── qa/unoapi ────────────────────────────────────────────────────────────────
+# The qadevOOo UNOAPI runner over a live office: Test.java hands
+# org.openoffice.Runner the scenario below, and the Runner instantiates each
+# named object in the running office and checks every interface and property it
+# declares against the UNO type description.  See build/rules/junit_test.bzl.
+#
+# Two objects, lng.DicList and lng.LinguProps.  Upstream points -tdoc at
+# qa/unoapi ITSELF (there is no testdocuments subdirectory), which is a way of
+# passing something non-null rather than a real document root — neither object
+# opens a document.  Staged dir it is, same as svtools.
+unoapi_test(
+    name = "qa_unoapi",
+    module = "linguistic",
+    sce = "qa/unoapi/lng.sce",
+    xcl = "qa/unoapi/knownissues.xcl",
+)

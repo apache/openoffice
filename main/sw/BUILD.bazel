@@ -4,6 +4,7 @@ load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 load("//build/rules:rsc_pipeline.bzl", "rsc_res")
 load("//build/rules:sdi_target.bzl", "sdi_target")
 load("//build/rules:gtest_test.bzl", "gtest_test")
+load("//build/rules:junit_test.bzl", "unoapi_test")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -1543,4 +1544,23 @@ gtest_test(
     # sw.dll drags in most of the office; run inside the staged install rather
     # than enumerating the closure (see gtest_test's uno_install).
     uno_install = "//main/staging:install",
+)
+
+# ── qa/unoapi ────────────────────────────────────────────────────────────────
+# The qadevOOo UNOAPI runner over a live office: Test.java hands
+# org.openoffice.Runner the scenario below, and the Runner instantiates each
+# named object in the running office and checks every interface and property it
+# declares against the UNO type description.  See build/rules/junit_test.bzl.
+#
+# 75 objects, the largest unoapi scenario in the tree: the whole Writer text
+# model (paragraphs, portions, tables, fields, sections, bookmarks, the
+# embedded-object and mail-merge paths).  Expect this one to be the long pole of
+# the category — every object is instantiated in the running office.
+unoapi_test(
+    name = "qa_unoapi",
+    module = "sw",
+    sce = "qa/unoapi/sw.sce",
+    xcl = "qa/unoapi/knownissues.xcl",
+    tdoc = "qa/unoapi/testdocuments",
+    size = "large",
 )
