@@ -251,7 +251,9 @@ sub do_linklib
         }
         # libtool's macOS naming puts the version before the extension
         # (libfoo.4.dylib), unlike ELF's libfoo.so.4 -- same file, opposite order.
-        elsif ( $lib =~ /^(lib\S+)\.(\d+)(\.\d+)?(\.\d+)?(\.dylib)$/ )
+        # Non-greedy: \S matches dots, so a greedy base would swallow leading
+        # version components (libxslt.1.1.34.dylib -> "libxslt.1.1").
+        elsif ( $lib =~ /^(lib\S+?)\.(\d+)(\.\d+)?(\.\d+)?(\.dylib)$/ )
         {
            push(@{$globbed_hash{"$1$5"}}, $lib);
         }
@@ -268,7 +270,7 @@ sub do_linklib
             $lib_major = "$lib_base.$3";
             $long = 1;
         }
-        elsif ( $lib =~ /^(lib\S+)\.(\d+)(\.\d+)?(\.\d+)?(\.dylib)$/ )
+        elsif ( $lib =~ /^(lib\S+?)\.(\d+)(\.\d+)?(\.\d+)?(\.dylib)$/ )
         {
             # macOS dylibs don't carry a separate major-only symlink; the
             # single unversioned name below is enough.
