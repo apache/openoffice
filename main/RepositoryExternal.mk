@@ -160,10 +160,20 @@ ifeq ($(OS),MACOSX)
 # not a dylib, so it can't be a PLAINLIB like the else-branch below. A static
 # archive carries no transitive deps, so its own libxml-2.0.pc's
 # "Libs.private: -lpthread -liconv -lm" must be added explicitly.
+#
+# --with-static-system-libs=libiconv:DIR pins iconv to that archive; the SDK
+# ships only a .tbd stub for the dylib, so there is no system libiconv.a to
+# fall back on.
+ifeq ($(STATIC_SYSTEM_LIBICONV),YES)
+gb_libiconv_lib := $(LIBICONV_PREFIX)/lib/libiconv.a
+else
+gb_libiconv_lib := -liconv
+endif
+
 define gb_LinkTarget__use_libxml2
 $(call gb_LinkTarget_add_libs,$(1),\
 	$(OUTDIR)/lib/libxml2.a \
-	-lpthread -liconv -lm \
+	-lpthread $(gb_libiconv_lib) -lm \
 )
 endef
 
