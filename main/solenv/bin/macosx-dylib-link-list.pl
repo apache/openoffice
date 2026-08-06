@@ -80,6 +80,11 @@ foreach $file (@todo)
         if (m'^\s*(@.+/([^/]+)) \(compatibility version \d+\.\d+\.\d+, current version \d+\.\d+\.\d+\)\n$')
         {
             my $full = $1;
+            # A reference into a .framework bundle (e.g. a system/SDK Python
+            # framework) isn't a flat libFOO.dylib and never will be found by
+            # locate() -- these are system frameworks, not tree-built dylibs
+            # needing a -dylib_file fixup, so just skip them.
+            next if $full =~ m'\.framework/';
             my $loc = locate($2);
             if (defined $loc)
             {
