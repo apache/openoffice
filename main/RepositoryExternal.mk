@@ -160,17 +160,10 @@ ifeq ($(OS),MACOSX)
 # not a dylib, so it can't be a PLAINLIB like the else-branch below. A static
 # archive carries no transitive deps, so its own libxml-2.0.pc's
 # "Libs.private: -lpthread -liconv -lm" must be added explicitly.
-#
-# If the user already has prebuilt static libs under /usr/local/lib, prefer
-# those over the tree's own build (Apple's SDK ships no static libiconv.a,
-# only a .tbd stub for the dylib, so a /usr/local one is additive there).
-gb_libxml2_static_lib := $(if $(wildcard /usr/local/lib/libxml2.a),/usr/local/lib/libxml2.a,$(OUTDIR)/lib/libxml2.a)
-gb_libiconv_static_lib := $(if $(wildcard /usr/local/lib/libiconv.a),/usr/local/lib/libiconv.a,-liconv)
-
 define gb_LinkTarget__use_libxml2
 $(call gb_LinkTarget_add_libs,$(1),\
-	$(gb_libxml2_static_lib) \
-	-lpthread $(gb_libiconv_static_lib) -lm \
+	$(OUTDIR)/lib/libxml2.a \
+	-lpthread -liconv -lm \
 )
 endef
 
@@ -207,14 +200,10 @@ ifeq ($(OS),MACOSX)
 
 # Bundled libxslt/libexslt build as static archives on macOS (see
 # main/libxslt/makefile.mk); link by absolute path, same as libxml2 above.
-# Prefer a prebuilt /usr/local/lib copy when the user already has one.
-gb_libxslt_static_lib := $(if $(wildcard /usr/local/lib/libxslt.a),/usr/local/lib/libxslt.a,$(OUTDIR)/lib/libxslt.a)
-gb_libexslt_static_lib := $(if $(wildcard /usr/local/lib/libexslt.a),/usr/local/lib/libexslt.a,$(OUTDIR)/lib/libexslt.a)
-
 define gb_LinkTarget__use_libxslt
 $(call gb_LinkTarget_add_libs,$(1),\
-	$(gb_libxslt_static_lib) \
-	$(gb_libexslt_static_lib) \
+	$(OUTDIR)/lib/libxslt.a \
+	$(OUTDIR)/lib/libexslt.a \
 )
 endef
 
@@ -452,33 +441,17 @@ endef
 
 else # !SYSTEM_CURL
 
-ifeq ($(OS),MACOSX)
-
-# If the user already has a prebuilt static libcurl.a under /usr/local/lib,
-# prefer that copy over the tree's own (dylib) build.
-gb_curl_static_lib := $(wildcard /usr/local/lib/libcurl.a)
-
-else # !MACOSX
 ifeq ($(OS),WNT)
 $(eval $(call gb_Helper_register_libraries,PLAINLIBS_NONE,libcurl))
 else
 $(eval $(call gb_Helper_register_libraries,PLAINLIBS_NONE,curl))
 endif
-endif # MACOSX
 
 define gb_LinkTarget__use_curl
-ifeq ($(OS),MACOSX)
-ifneq ($(gb_curl_static_lib),)
-$(call gb_LinkTarget_add_libs,$(1),$(gb_curl_static_lib))
-else
-$(call gb_LinkTarget_add_linked_libs,$(1),curl)
-endif
-else
 ifeq ($(OS),WNT)
 $(call gb_LinkTarget_add_linked_libs,$(1),libcurl)
 else
 $(call gb_LinkTarget_add_linked_libs,$(1),curl)
-endif
 endif
 endef
 
