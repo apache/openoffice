@@ -111,7 +111,14 @@ CONFIGURE_ACTION=.$/configure
 # Community builds bundle a static libxslt/libexslt rather than a dylib --
 # see main/xmlsecurity/util/makefile.mk and main/forms/util/makefile.mk
 # for the analogous libxml2 case.
-CONFIGURE_FLAGS=--enable-ipv6=no --without-crypto --without-python --enable-static=yes --enable-shared=no --with-sax1=yes ac_cv_func_clock_gettime=false
+#
+# libxslt's own configure otherwise discovers libxml2 via pkg-config,
+# which resolves to whatever libxml2 a package manager (MacPorts,
+# Homebrew, ...) has registered there -- not the bundled copy this
+# module just built. --with-libxml-prefix pins it to the bundled
+# xml2-config instead, matching the consumer-side fix in xmlsecurity/
+# forms.
+CONFIGURE_FLAGS=--enable-ipv6=no --without-crypto --without-python --enable-static=yes --enable-shared=no --with-sax1=yes --with-libxml-prefix=$(SOLARVERSION)/$(INPATH) ac_cv_func_clock_gettime=false
 .ELSE
 CONFIGURE_FLAGS=--enable-ipv6=no --without-crypto --without-python --enable-static=no --with-sax1=yes ac_cv_func_clock_gettime=false
 .ENDIF
@@ -125,7 +132,9 @@ OUT2INC=libxslt$/*.h
 .IF "$(OS)"=="MACOSX"
 OUT2LIB+=libxslt$/.libs$/libxslt.a
 OUT2LIB+=libexslt$/.libs$/libexslt.a
-OUT2BIN+=xsltproc$/.libs$/xsltproc
+# With --enable-shared=no, libtool links xsltproc directly (no .libs
+# wrapper dir, unlike the static .a archives above).
+OUT2BIN+=xsltproc$/xsltproc
 OUT2BIN+=xslt-config
 .ELIF "$(OS)"=="WNT"
 .IF "$(COM)"=="GCC"
