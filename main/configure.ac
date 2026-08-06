@@ -440,11 +440,16 @@ AC_ARG_WITH(system-libxml,
 AC_ARG_WITH(static-system-libs,
 [  --with-static-system-libs=LIST
                           Comma-separated list of system libraries to link
-                          statically, e.g. "libxml,libxslt,curl". Supported:
-                          libxml, libxslt, curl. Without this the archive is
-                          used only when the prefix happens to have no dylib,
-                          so a dylib appearing there silently switches the
-                          build to dynamic linking.
+                          statically, each NAME or NAME:DIR, e.g.
+                          "libxml,libxslt,curl,libiconv:/usr/local".
+                          Supported: libxml, libxslt, curl, libiconv.
+                          NAME alone uses the prefix the matching
+                          --with-system-NAME resolved; libiconv has no such
+                          option, so it always needs the :DIR form. Without
+                          this the archive is used only when the prefix
+                          happens to have no dylib, so a dylib appearing
+                          there silently switches the build to dynamic
+                          linking.
 ],,)
 AC_ARG_WITH(system-python,
 [  --with-system-python    Use python already on system
@@ -4729,11 +4734,21 @@ STATIC_SYSTEM_LIBS=
 STATIC_SYSTEM_LIBXML=NO
 STATIC_SYSTEM_LIBXSLT=NO
 STATIC_SYSTEM_CURL=NO
+STATIC_SYSTEM_LIBICONV=NO
+LIBICONV_PREFIX=
 if test -n "$with_static_system_libs" -a "$with_static_system_libs" != "no"; then
    if test "$with_static_system_libs" = "yes"; then
       AC_MSG_ERROR([--with-static-system-libs needs a list, e.g. --with-static-system-libs=libxml,libxslt,curl])
    fi
-   for _sslib in `echo "$with_static_system_libs" | $SED -e 's/,/ /g'`; do
+   for _ssentry in `echo "$with_static_system_libs" | $SED -e 's/,/ /g'`; do
+      dnl Each entry is NAME or NAME:DIR. The explicit DIR is what makes
+      dnl libiconv usable here: it has no --with-system-libiconv, so
+      dnl configure has no prefix of its own to fall back on.
+      _sslib=`echo "$_ssentry" | $SED -e 's/:.*//'`
+      _ssgiven=
+      case "$_ssentry" in
+      *:*) _ssgiven=`echo "$_ssentry" | $SED -e 's/^[[^:]]*://'` ;;
+      esac
       AC_MSG_CHECKING([for a static system $_sslib])
       case "$_sslib" in
       libxml)
@@ -4748,15 +4763,27 @@ if test -n "$with_static_system_libs" -a "$with_static_system_libs" != "no"; the
          _ssenabled="$SYSTEM_CURL"; _ssprefix="$CURL_PREFIX"; _ssopt="--with-system-curl"
          _ssarchives="libcurl.a"; _sslflags="-lcurl"
          ;;
+      libiconv)
+         dnl No --with-system-libiconv exists: iconv is only ever pulled in
+         dnl as a transitive dep of the XML libs, so there is nothing to
+         dnl enable and the prefix must be given as libiconv:DIR.
+         _ssenabled=YES; _ssprefix="$_ssgiven"; _ssopt=
+         _ssarchives="libiconv.a"; _sslflags="-liconv"
+         ;;
       *)
-         AC_MSG_ERROR([unsupported library "$_sslib" in --with-static-system-libs; supported: libxml, libxslt, curl])
+         AC_MSG_ERROR([unsupported library "$_sslib" in --with-static-system-libs; supported: libxml, libxslt, curl, libiconv])
          ;;
       esac
+      test -n "$_ssgiven" && _ssprefix="$_ssgiven"
       if test "$_ssenabled" != "YES"; then
          AC_MSG_ERROR([--with-static-system-libs=$_sslib requires $_ssopt])
       fi
       if test -z "$_ssprefix"; then
-         AC_MSG_ERROR([--with-static-system-libs=$_sslib needs a prefix; give $_ssopt=DIR (macOS only)])
+         if test -n "$_ssopt"; then
+            AC_MSG_ERROR([--with-static-system-libs=$_sslib needs a prefix; give $_ssopt=DIR (macOS only)])
+         else
+            AC_MSG_ERROR([--with-static-system-libs=$_sslib needs a prefix; write $_sslib:DIR, e.g. $_sslib:/usr/local])
+         fi
       fi
       for _ssa in $_ssarchives; do
          if test ! -f "$_ssprefix/lib/$_ssa"; then
@@ -4775,12 +4802,20 @@ if test -n "$with_static_system_libs" -a "$with_static_system_libs" != "no"; the
          libxml)   LIBXML_LIBS=`echo "$LIBXML_LIBS " | $SED -e "s|$_ssl |$_ssprefix/lib/$_ssa |g" -e 's| *$||'` ;;
          libxslt)  LIBXSLT_LIBS=`echo "$LIBXSLT_LIBS " | $SED -e "s|$_ssl |$_ssprefix/lib/$_ssa |g" -e 's| *$||'` ;;
          curl)     CURL_LIBS=`echo "$CURL_LIBS " | $SED -e "s|$_ssl |$_ssprefix/lib/$_ssa |g" -e 's| *$||'` ;;
+         libiconv)
+            dnl iconv is a transitive dep, so -liconv turns up in whichever
+            dnl of these *-config reported it -- rewrite all of them.
+            LIBXML_LIBS=`echo "$LIBXML_LIBS " | $SED -e "s|$_ssl |$_ssprefix/lib/$_ssa |g" -e 's| *$||'`
+            LIBXSLT_LIBS=`echo "$LIBXSLT_LIBS " | $SED -e "s|$_ssl |$_ssprefix/lib/$_ssa |g" -e 's| *$||'`
+            CURL_LIBS=`echo "$CURL_LIBS " | $SED -e "s|$_ssl |$_ssprefix/lib/$_ssa |g" -e 's| *$||'`
+            ;;
          esac
       done
       case "$_sslib" in
       libxml)   STATIC_SYSTEM_LIBXML=YES ;;
       libxslt)  STATIC_SYSTEM_LIBXSLT=YES ;;
       curl)     STATIC_SYSTEM_CURL=YES ;;
+      libiconv) STATIC_SYSTEM_LIBICONV=YES; LIBICONV_PREFIX="$_ssprefix" ;;
       esac
       STATIC_SYSTEM_LIBS="$STATIC_SYSTEM_LIBS $_sslib"
       AC_MSG_RESULT([$_ssprefix/lib])
@@ -4791,6 +4826,8 @@ AC_SUBST(STATIC_SYSTEM_LIBS)
 AC_SUBST(STATIC_SYSTEM_LIBXML)
 AC_SUBST(STATIC_SYSTEM_LIBXSLT)
 AC_SUBST(STATIC_SYSTEM_CURL)
+AC_SUBST(STATIC_SYSTEM_LIBICONV)
+AC_SUBST(LIBICONV_PREFIX)
 
 dnl ===================================================================
 dnl Check for system mdds
