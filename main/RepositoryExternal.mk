@@ -156,15 +156,14 @@ else # !SYSTEM_LIBXML
 
 ifeq ($(OS),MACOSX)
 
-# The bundled libxml2 builds as a static archive on macOS (see
-# main/libxml2/makefile.mk), not a dylib, so it can't be registered as a
-# PLAINLIB the way other platforms do below -- there is no libxml2.dylib
-# for the solver to deliver. Link the static archive by absolute path
-# instead; $(LIBXML_PREFIX) is empty here (it's only set when
-# SYSTEM_LIBXML=YES), so this is the module's own delivered location.
+# Bundled libxml2 builds as a static archive on macOS (main/libxml2/makefile.mk),
+# not a dylib, so it can't be a PLAINLIB like the else-branch below. A static
+# archive carries no transitive deps, so its own libxml-2.0.pc's
+# "Libs.private: -lpthread -liconv -lm" must be added explicitly.
 define gb_LinkTarget__use_libxml2
 $(call gb_LinkTarget_add_libs,$(1),\
 	$(OUTDIR)/lib/libxml2.a \
+	-lpthread -liconv -lm \
 )
 endef
 
