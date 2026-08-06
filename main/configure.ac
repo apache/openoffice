@@ -4760,8 +4760,6 @@ STATIC_SYSTEM_LIBS=
 STATIC_SYSTEM_LIBXML=NO
 STATIC_SYSTEM_LIBXSLT=NO
 STATIC_SYSTEM_CURL=NO
-STATIC_SYSTEM_LIBICONV=NO
-LIBICONV_PREFIX=
 if test -n "$with_static_system_libs" -a "$with_static_system_libs" != "no"; then
    if test "$with_static_system_libs" = "yes"; then
       AC_MSG_ERROR([--with-static-system-libs needs a list, e.g. --with-static-system-libs=libxml,libxslt,curl])
@@ -4790,9 +4788,10 @@ if test -n "$with_static_system_libs" -a "$with_static_system_libs" != "no"; the
          _ssarchives="libcurl.a"; _sslflags="-lcurl"
          ;;
       libiconv)
-         dnl No --with-system-libiconv exists: iconv is only ever pulled in
-         dnl as a transitive dep of the XML libs, so there is nothing to
-         dnl enable and the prefix must be given as libiconv:DIR.
+         dnl The bundled XML libs are built --without-iconv, so this only
+         dnl covers a *system* libxml2/libxslt/curl whose own build enabled
+         dnl iconv and whose *-config therefore reports -liconv. There is no
+         dnl --with-system-libiconv to take a prefix from, hence libiconv:DIR.
          _ssenabled=YES; _ssprefix="$_ssgiven"; _ssopt=
          _ssarchives="libiconv.a"; _sslflags="-liconv"
          ;;
@@ -4841,7 +4840,6 @@ if test -n "$with_static_system_libs" -a "$with_static_system_libs" != "no"; the
       libxml)   STATIC_SYSTEM_LIBXML=YES ;;
       libxslt)  STATIC_SYSTEM_LIBXSLT=YES ;;
       curl)     STATIC_SYSTEM_CURL=YES ;;
-      libiconv) STATIC_SYSTEM_LIBICONV=YES; LIBICONV_PREFIX="$_ssprefix" ;;
       esac
       STATIC_SYSTEM_LIBS="$STATIC_SYSTEM_LIBS $_sslib"
       AC_MSG_RESULT([$_ssprefix/lib])
@@ -4852,8 +4850,6 @@ AC_SUBST(STATIC_SYSTEM_LIBS)
 AC_SUBST(STATIC_SYSTEM_LIBXML)
 AC_SUBST(STATIC_SYSTEM_LIBXSLT)
 AC_SUBST(STATIC_SYSTEM_CURL)
-AC_SUBST(STATIC_SYSTEM_LIBICONV)
-AC_SUBST(LIBICONV_PREFIX)
 
 dnl ===================================================================
 dnl Check for system mdds

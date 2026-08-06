@@ -65,7 +65,7 @@ xml2_LIBS+=$(MINGW_SHARED_LIBSTDCPP)
 .ENDIF
 CONFIGURE_DIR=
 CONFIGURE_ACTION=.$/configure
-CONFIGURE_FLAGS=--enable-ipv6=no --without-python --without-lzma --enable-static=no --without-debug --build=i586-pc-mingw32 --host=i586-pc-mingw32 lt_cv_cc_dll_switch="-shared" CC="$(xml2_CC)" LDFLAGS="-no-undefined -Wl,--enable-runtime-pseudo-reloc-v2 -L$(ILIB:s/;/ -L/)" LIBS="$(xml2_LIBS)" OBJDUMP=objdump
+CONFIGURE_FLAGS=--enable-ipv6=no --without-python --without-lzma --without-iconv --enable-static=no --without-debug --build=i586-pc-mingw32 --host=i586-pc-mingw32 lt_cv_cc_dll_switch="-shared" CC="$(xml2_CC)" LDFLAGS="-no-undefined -Wl,--enable-runtime-pseudo-reloc-v2 -L$(ILIB:s/;/ -L/)" LIBS="$(xml2_LIBS)" OBJDUMP=objdump
 BUILD_ACTION=$(GNUMAKE)
 BUILD_DIR=$(CONFIGURE_DIR)
 .ELSE
@@ -87,19 +87,25 @@ xml2_CFLAGS+=$(ARCH_FLAGS) $(C_RESTRICTIONFLAGS)
 xml2_LDFLAGS+=-L$(SYSBASE)$/usr$/lib
 .ENDIF			# "$(SYSBASE)"!=""
 
+# --without-iconv: no OpenOffice code calls iconv, and libxml2-configure.patch
+# has always meant to turn it off -- it patches the generated xmlversion.h,
+# which configure then regenerates, so it never took effect here. The Windows
+# build has passed iconv=no all along. Dropping it keeps UTF-8/UTF-16/ASCII/
+# Latin-1 and turns on libxml2's built-in ISO-8859-x tables; only encodings
+# like Shift_JIS, Big5 and KOI8-R go.
 CONFIGURE_DIR=
 .IF "$(OS)"=="OS2"
 CONFIGURE_ACTION=sh .$/configure
-CONFIGURE_FLAGS=--enable-ipv6=no --without-python --without-zlib --without-lzma --enable-static=yes --with-sax1=yes ADDCFLAGS="$(xml2_CFLAGS)" CFLAGS="$(EXTRA_CFLAGS)" LDFLAGS="$(xml2_LDFLAGS) $(EXTRA_LINKFLAGS)"
+CONFIGURE_FLAGS=--enable-ipv6=no --without-python --without-zlib --without-lzma --without-iconv --enable-static=yes --with-sax1=yes ADDCFLAGS="$(xml2_CFLAGS)" CFLAGS="$(EXTRA_CFLAGS)" LDFLAGS="$(xml2_LDFLAGS) $(EXTRA_LINKFLAGS)"
 .ELIF "$(OS)"=="MACOSX"
 # Community builds bundle a static libxml2 rather than a dylib -- see
 # main/xmlsecurity/util/makefile.mk and main/forms/util/makefile.mk for
 # the consumer side of this.
 CONFIGURE_ACTION=.$/configure
-CONFIGURE_FLAGS=--enable-ipv6=no --without-python --without-zlib --without-lzma --enable-static=yes --enable-shared=no --with-sax1=yes ADDCFLAGS="$(xml2_CFLAGS) $(EXTRA_CFLAGS)" LDFLAGS="$(xml2_LDFLAGS) $(EXTRA_LINKFLAGS)"
+CONFIGURE_FLAGS=--enable-ipv6=no --without-python --without-zlib --without-lzma --without-iconv --enable-static=yes --enable-shared=no --with-sax1=yes ADDCFLAGS="$(xml2_CFLAGS) $(EXTRA_CFLAGS)" LDFLAGS="$(xml2_LDFLAGS) $(EXTRA_LINKFLAGS)"
 .ELSE
 CONFIGURE_ACTION=.$/configure
-CONFIGURE_FLAGS=--enable-ipv6=no --without-python --without-zlib --without-lzma --enable-static=no --with-sax1=yes ADDCFLAGS="$(xml2_CFLAGS) $(EXTRA_CFLAGS)" LDFLAGS="$(xml2_LDFLAGS) $(EXTRA_LINKFLAGS)"
+CONFIGURE_FLAGS=--enable-ipv6=no --without-python --without-zlib --without-lzma --without-iconv --enable-static=no --with-sax1=yes ADDCFLAGS="$(xml2_CFLAGS) $(EXTRA_CFLAGS)" LDFLAGS="$(xml2_LDFLAGS) $(EXTRA_LINKFLAGS)"
 .ENDIF
 BUILD_ACTION=$(GNUMAKE)
 BUILD_FLAGS+= -j$(EXTMAXPROCESS)

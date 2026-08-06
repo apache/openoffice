@@ -158,22 +158,12 @@ ifeq ($(OS),MACOSX)
 
 # Bundled libxml2 builds as a static archive on macOS (main/libxml2/makefile.mk),
 # not a dylib, so it can't be a PLAINLIB like the else-branch below. A static
-# archive carries no transitive deps, so its own libxml-2.0.pc's
-# "Libs.private: -lpthread -liconv -lm" must be added explicitly.
-#
-# --with-static-system-libs=libiconv:DIR pins iconv to that archive; the SDK
-# ships only a .tbd stub for the dylib, so there is no system libiconv.a to
-# fall back on.
-ifeq ($(STATIC_SYSTEM_LIBICONV),YES)
-gb_libiconv_lib := $(LIBICONV_PREFIX)/lib/libiconv.a
-else
-gb_libiconv_lib := -liconv
-endif
-
+# archive carries no transitive deps, so its own libxml-2.0.pc's Libs.private
+# must be added explicitly. It is built --without-iconv, so no -liconv here.
 define gb_LinkTarget__use_libxml2
 $(call gb_LinkTarget_add_libs,$(1),\
 	$(OUTDIR)/lib/libxml2.a \
-	-lpthread $(gb_libiconv_lib) -lm \
+	-lpthread -lm \
 )
 endef
 
