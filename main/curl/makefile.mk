@@ -60,7 +60,12 @@ ssl_param=--with-ssl
 .ELSE
 ssl_param=--with-ssl=$(OUTDIR)
 curl_CFLAGS+=-I$(SOLARINCDIR)$/external
+# -z origin/-rpath $ORIGIN are Linux/ELF idioms; Apple's ld rejects both.
+.IF "$(OS)"!="MACOSX"
 curl_LDFLAGS+=-L$(SOLARLIBDIR) -Wl,-z,origin -Wl,-rpath,\\\$$\$$ORIGIN
+.ELSE
+curl_LDFLAGS+=-L$(SOLARLIBDIR)
+.ENDIF
 PATCH_FILES+= curl-bundled_openssl.patch
 .ENDIF
 
@@ -73,7 +78,12 @@ BUILD_DIR=$(CONFIGURE_DIR)$/lib
 BUILD_ACTION=$(GNUMAKE)
 BUILD_FLAGS+= -j$(EXTMAXPROCESS)
 
+.IF "$(OS)"=="MACOSX"
+# libtool names macOS dylibs libcurl.<major>.dylib, not libcurl.dylib.<major>.
+OUT2LIB=$(BUILD_DIR)$/.libs$/libcurl.*.dylib
+.ELSE
 OUT2LIB=$(BUILD_DIR)$/.libs$/libcurl$(DLLPOST).4
+.ENDIF
 .ENDIF			# "$(GUI)"=="UNX"
 
 
