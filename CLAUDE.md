@@ -67,8 +67,9 @@ test          🔨  C++ unit-test infra runnable — NOW THE FRONT-LINE TASK: br
                    ⇒ every osl socket call is WSANOTINITIALISED) and data_files (a
                    staged fixture is NOT enough — bazel test's CWD is the execroot, so
                    relative opens need the cd-first .bat launcher).  NEXT: what is
-                   genuinely left is not standalone — svl/qa/complex + svtools/qa/unoapi
-                   + sfx2 + writerfilter/qa/complex are Java/UNO; svl/qa/test_URIHelper,
+                   genuinely left is not standalone — the JAVA/UNO suites (see the
+                   uno_junit_test block at the end of this bucket, DONE 2026-08-06,
+                   3 green); svl/qa/test_URIHelper,
                    configmgr/qa/unit and cppuhelper/qa/propertysetmixin bootstrap a UNO
                    component context.  KEY DISTINCTION (was conflated under
                    "OfficeConnection", making the work look bigger than it is): those
@@ -264,6 +265,104 @@ test          🔨  C++ unit-test infra runnable — NOW THE FRONT-LINE TASK: br
                    not build: osl_process asserts an env ORDER Windows doesn't use;
                    rtl_Bootstrap expects the default ini to be testshl2.ini because the
                    testshl2-era process was literally testshl2.exe.
+                   JAVA/UNO SUITES — FIXTURE DONE 2026-08-06, 3 GREEN.  New rule
+                   uno_junit_test (build/rules/junit_test.bzl) = the JAVA HALF of
+                   fixture (b), porting installationtest.mk::javatest: java_library +
+                   a launcher .bat that runs org.junit.runner.JUnitCore with
+                   -Dorg.openoffice.test.arg.soffice=path:<staged soffice> and
+                   .arg.user=file:///<scratch>.  SAME fixture as the C++ side, spelled
+                   differently, and BOTH differences bite: the args are SYSTEM
+                   PROPERTIES not env vars (Java reads System.getProperty, C++ reads
+                   rtl::Bootstrap), and arg.user is a file:/// URL not a native path
+                   (Java feeds it to -env:UserInstallation=, C++ to
+                   getFileURLFromSystemPath).  Transport differs too — Java connects
+                   over a NAMED PIPE (pipe,name=oootest<uuid>), so unlike bridgetest_urp
+                   there is no port to reserve and no tags=["exclusive"]; the three
+                   suites run concurrently.
+                   OFFICE SHUTDOWN DEADLOCK, and the general escape from it —
+                   uno_junit_test `fixture_starts_office`.  qadevOOo/qa/unoapi ran
+                   its assertions green in 3s and then HUNG to the 300s timeout.
+                   DIAGNOSED, not guessed: the JVM's main thread sits in
+                   Process.waitFor() (OfficeConnection:126), i.e. XDesktop.terminate()
+                   ALREADY RETURNED and the office did not exit; the office is alive,
+                   idle, has NO visible window and no longer answers a fresh UNO
+                   connection; a non-invasive `cdb -pv -p <pid> -c "~*k"` shows its
+                   MAIN thread inside a WinProc dispatch that entered a NESTED VCL
+                   message wait (Application::Execute → DispatchMessageW → …
+                   → GetMessageW) — so it holds the SolarMutex — while TWO URP threads
+                   block in vos::OMutex::acquire: an incoming binaryurp request into
+                   fwk's LockHelper, and an sw proxy release coming back through
+                   msci_uno.  So it is a solar-mutex-vs-in-flight-bridge-calls deadlock
+                   in the OFFICE's shutdown, not a fixture defect (the suites holding
+                   no stale proxies at teardown terminate cleanly); fixing it properly
+                   is a SOURCE change.  fixture_starts_office makes the LAUNCHER own
+                   the office (start detached, wait for the pipe, taskkill after) and
+                   the test attach with connect: instead of path:, which leaves
+                   tearDown a NO-OP (process==null ⇒ it neither terminates nor waits).
+                   Verdict = the JUnit result.  OPT-IN: it gives up tearDown's check
+                   that the office exits 0, so use it only where THAT is what is broken
+                   and say why.  Two mechanics: (1) the readiness wait is ONE PowerShell
+                   process — cmd CANNOT list the pipe namespace ("dir \\.\pipe\" =
+                   "invalid parameter", it is a device path) and osl pipes appear as
+                   \\.\pipe\OSL_PIPE_<SID>_<name> so match the NAME at the end; it is
+                   not optional because OfficeConnection's resolve loop has NO sleep
+                   when it did not start the process itself (it would spin a core);
+                   (2) the kill matches the UNIQUE PIPE NAME on the command line, never
+                   taskkill /im soffice.exe — that would kill a developer's session and
+                   any concurrent suite.  GREEN: //main/qadevOOo:
+                   qa_complex_junitskeleton (3, ~14s — upstream's own worked example,
+                   so it exercises the whole path: connect → XMultiServiceFactory →
+                   qadevOOo TestParameters → fixture doc by relative path → LOAD it into
+                   the office → close → office temp dir), //main/svl:
+                   qa_complex_passwordcontainer (3, ~13s — com.sun.star.task.
+                   PasswordContainer with/without master password, persistent +
+                   session-only, through the test's own XInteractionHandler; no C++
+                   equivalent is possible, it is a UNO-only service), //main/svtools:
+                   qa_unoapi (~25s — FIRST UNOAPI suite ever run here, 26 interface/
+                   property checks on svtools.AccessibleTabBar), //main/qadevOOo:
+                   qa_unoapi (~16s — the runner testing ITSELF, i.e. the guard on the
+                   framework every other unoapi suite is built out of;
+                   fixture_starts_office).
+                   JUnit 4.10 via http_file (@junit_jar → //build/third_party/junit) —
+                   upstream's OOO_JUNIT_JAR, never in ext_sources.  4.10 DELIBERATELY:
+                   it EMBEDS hamcrest-core, so there is no second jar (every upstream
+                   recipe forks on HAMCREST_CORE_JAR).
+                   THREE PRODUCT GAPS surfaced, all invisible until a FOREIGN process
+                   loaded our DLLs:
+                    (1) jpipe.dll + jpipx.dll were NEVER STAGED.  Nothing in the office
+                        links or loads them — the CLIENT JVM does — so their absence
+                        broke nothing visible.  Now in //main/staging.
+                    (2) a /MD DLL loaded by a process we do NOT build needs its OWN
+                        EMBEDDED MANIFEST.  We link /MANIFEST:NO everywhere, which is
+                        invisible inside soffice.exe (its manifest covers the process)
+                        and fatal for a DLL a stock java.exe loads: no activation
+                        context ⇒ MSVCR90.dll unresolvable ⇒ System.loadLibrary says only
+                        "Can't find dependent libraries" (and a loose msvcr90.dll on PATH
+                        would just trade that for R6034).  New
+                        //main/external/msvcp90:vc90_dll_manifest_res — same manifest at
+                        RT_MANIFEST id 2 (the DLL slot; id 1 is the EXE slot) — linked
+                        into both pipe DLLs.  Upstream gets this free: solenv embeds a
+                        manifest in every DLL.  ANY future DLL a foreign host loads needs
+                        this.
+                    (3) OOoRunner.jar carried NO object descriptions — see the qadevOOo
+                        bucket.  Fixing it is what makes the unoapi CATEGORY runnable.
+                   The test JVM is arch-selected like jre_home_env (new jre_java_exe /
+                   jre_home_native in //build:jre.bzl): the office is a separate process,
+                   but the JVM loads jpipe.dll ITSELF, so a 32-bit build needs a 32-bit
+                   JVM.  JAVA_HOME is pinned to the same JDK because OfficeConnection
+                   always passes -env:UNO_JAVA_JFW_ENV_JREHOME=true (the OFFICE's jvmfwk
+                   then reads it).
+                   THE QUEUE IS LARGE AND WAS UNDER-COUNTED HERE: 18 qa/unoapi + 24
+                   qa/complex dirs, not the 4 modules this bucket used to name.  Two
+                   gates on the rest: (i) -tdoc — 11 of the 18 unoapi adapters pass a
+                   test-document root ⇒ qadevOOo/testdocs must be staged, and data_tree
+                   stages one FILE per entry, so a directory-preserving variant is the
+                   next rule work (svtools went first precisely because its scenario
+                   builds its document via SOfficeFactory and needs none); (ii) per-module
+                   fixtures — svl/qa/complex/ConfigItems needs a C++ helper component,
+                   and several qa/complex dirs (writerfilter's among them) have no
+                   makefile.mk at all, i.e. were never wired upstream either.
+                   See main/test/readme.md.
 testtools     🔨  bridgetest GREEN 2026-08-05, ALL THREE halves — //main/testtools:
                    bridgetest (C++ object in-process, ~1.1s), :bridgetest_java (Java
                    object over the java_uno JNI bridge, ~1.4s) and :bridgetest_urp
@@ -375,10 +474,22 @@ testtools     🔨  bridgetest GREEN 2026-08-05, ALL THREE halves — //main/tes
                    reported.  Fixing either is a source change.
 qadevOOo      🔨  OOoRunner.jar built (//main/qadevOOo:OOoRunner — qadevOOo QA
                    framework, ~2137 classes; classpath ridl/unoil/jurt/juh_jar/
-                   java_uno_jar; .csv objdsc NOT jarred, manifest omitted).
-                   Unblocks bridges java_uno tests (acquire, java_remote).  STILL
-                   ⬜: OOoRunnerLight, qa/complex, JunitTest_qadevOOo_unoapi,
-                   testdocs — need running-soffice/OfficeConnection fixture.
+                   java_uno_jar; manifest omitted).  Unblocks bridges java_uno
+                   tests (acquire, java_remote).
+                   objdsc/*.csv ARE NOW JARRED (2026-08-06) — a deliberate
+                   divergence from the ant jar target (whose <include> list omits
+                   .csv) and the thing that makes the whole unoapi CATEGORY
+                   runnable: APIDescGetter takes a description either from a
+                   -objdsc DIRECTORY or, absent that argument, from the CLASSPATH
+                   resource /objdsc/<module> (it has a JarURLConnection branch for
+                   exactly that), and the qa/unoapi Test.java adapters pass no
+                   -objdsc ⇒ against upstream's csv-less jar every unoapi suite
+                   dies at its first object with "couldn't find module".
+                   JunitTest_qadevOOo_unoapi GREEN 2026-08-06 (//main/qadevOOo:
+                   qa_unoapi, ~16s) via uno_junit_test fixture_starts_office — see
+                   the OFFICE SHUTDOWN DEADLOCK note in the test bucket.
+                   STILL ⬜: OOoRunnerLight, testdocs (needed by 11 of the 18
+                   unoapi adapters, which pass -tdoc).
 testgraphical ⬜  (graphical/visual regression tests; needs instsetoo_native + qadevOOo)
 
 ── Remaining: Java-based ────────────────────────────────────────────────

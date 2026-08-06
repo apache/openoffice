@@ -47,6 +47,18 @@ uno_jar(
     visibility = ["//visibility:public"],
 )
 
+# ── the VC90-CRT manifest, EMBEDDED (both pipe DLLs) ─────────────────────────
+# These two are the only DLLs in the tree loaded into a process this build does
+# not produce: a stock java.exe, via System.loadLibrary("jpipe").  That process
+# has no VC90 dependency of its own, so nothing supplies an activation context
+# and the loader cannot resolve their MSVCR90.dll import — System.loadLibrary
+# reports "Can't find dependent libraries", and putting a loose msvcr90.dll on
+# PATH would only trade that for R6034.  Embedding the manifest at RT_MANIFEST
+# id 2 makes each DLL carry its own context.  Everything else here is loaded
+# into soffice.exe (or a staged test exe), whose own manifest already covers the
+# whole process.  See //main/external/msvcp90:vc90_dll_manifest_res.
+_DLL_MANIFEST_RES = "//main/external/msvcp90:vc90_dll_manifest_res"
+
 # ── jpipx.dll ─────────────────────────────────────────────────────────────────
 # Real JNI pipe implementation.  On Windows, functions are exported with
 # truncated names (PipeConnection_create etc., __cdecl) so wrapper.c can call
@@ -63,9 +75,13 @@ cc_binary(
         "//main/sal:sal_headers",
         "@rules_java//toolchains:jni",
     ],
-    additional_linker_inputs = ["//main/sal:sal_implib"],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        _DLL_MANIFEST_RES,
+    ],
     linkopts = [
         "$(execpath //main/sal:sal_implib)",
+        "$(execpath %s)" % _DLL_MANIFEST_RES,
         "/MANIFEST:NO",
     ],
     visibility = ["//visibility:public"],
@@ -88,6 +104,10 @@ cc_binary(
         "//main/sal:sal_headers",
         "@rules_java//toolchains:jni",
     ],
-    linkopts = ["/MANIFEST:NO"],
+    additional_linker_inputs = [_DLL_MANIFEST_RES],
+    linkopts = [
+        "$(execpath %s)" % _DLL_MANIFEST_RES,
+        "/MANIFEST:NO",
+    ],
     visibility = ["//visibility:public"],
 )

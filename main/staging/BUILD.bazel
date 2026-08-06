@@ -92,6 +92,18 @@ collect_outputs(
         # (java_uno.jar) needs the program/classes/ classpath staging, which does
         # not exist yet — see readme.md "jni_uno" notes.
         "//main/bridges:java_uno",
+        # jpipe.dll + jpipx.dll — the JNI half of jurt's NAMED-PIPE connection
+        # (com.sun.star.lib.connections.pipe.PipeConnection does
+        # System.loadLibrary("jpipe"), and jpipe's DllMain then loads jpipx
+        # beside it).  Nothing in the office links either, and the office never
+        # loads them itself — it is the JAVA CLIENT PROCESS that does, which is
+        # why they were missing without breaking anything visible.  Any external
+        # Java program connecting to a running office over a pipe needs them
+        # (upstream ships both in the URE lib dir); here it is the qa/complex
+        # suites, whose org.openoffice.test.OfficeConnection resolves
+        # "uno:pipe,name=…;urp;StarOffice.ComponentContext".
+        "//main/jurt:jpipe",
+        "//main/jurt:jpipx",
         # com.sun.star.loader.Java2, in two halves: javavm starts/locates the
         # JVM through jvmfwk, javaloader is the loader that builds a class
         # loader over a component's jar.  Registered in services.rdb by

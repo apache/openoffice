@@ -82,6 +82,23 @@ http_file(
     downloaded_file_path = "apache-rat-0.10.jar",
 )
 
+# JUnit 4 — the runner for the Java/UNO integration tests (//build/rules:junit_test.bzl).
+# Upstream never bundled it: configure takes --with-junit and the whole
+# JunitTest/javatest machinery is a no-op when OOO_JUNIT_JAR is empty, which is why
+# no junit jar exists in ext_sources.
+#
+# 4.10, not a later 4.x, and that is load-bearing: junit-4.10.jar EMBEDS
+# hamcrest-core 1.1, while 4.11+ split it out into a second jar.  Upstream's build
+# carries the same fork in every recipe (`.IF "$(HAMCREST_CORE_JAR)" != ""`);
+# pinning 4.10 means the tests need exactly one classpath entry and there is no
+# second jar to keep in sync.
+http_file(
+    name = "junit_jar",
+    url = "https://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.jar",
+    sha256 = "36a747ca1e0b86f6ea88055b8723bb87030d627766da6288bf077afdeeb0f75a",
+    downloaded_file_path = "junit-4.10.jar",
+)
+
 register_toolchains("//build/toolchain:cc_toolchain_x86_vs2008_def")
 register_toolchains("//build/toolchain:cc_toolchain_x64_vs2008_def")
 

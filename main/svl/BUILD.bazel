@@ -3,6 +3,7 @@ package(default_visibility = ["//visibility:public"])
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 load("//build/rules:rsc_pipeline.bzl", "rsc_res")
 load("//build/rules:gtest_test.bzl", "gtest_test")
+load("//build/rules:junit_test.bzl", "uno_junit_test")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -259,6 +260,32 @@ gtest_test(
         "$(execpath :svl_implib)",
     ],
     uno_install = "//main/staging:install",
+)
+
+# ── qa/complex/passwordcontainer ─────────────────────────────────────────────
+# The Java half of svl's test coverage, and the first suite here that tests a
+# real SERVICE rather than the fixture: com.sun.star.task.PasswordContainer as
+# the office exposes it over UNO — store/retrieve per-URL credentials, with and
+# without a master password, persistent and session-only (Test01/02/03), driven
+# through an XInteractionHandler the test supplies itself (MasterPasswdHandler).
+#
+# It is a UNO-level test by nature and has no C++ equivalent: the service lives
+# behind the office's configuration and its persistence layer, so it can only be
+# checked against a running office.  Upstream's makefile.mk lists
+# PasswordContainerUnitTest.java as the only JAVATESTFILES entry, with the
+# other five files as plain JAVAFILES — the `classes` / `srcs` split here.
+uno_junit_test(
+    name = "qa_complex_passwordcontainer",
+    srcs = glob(["qa/complex/passwordcontainer/*.java"]),
+    classes = ["complex.passwordcontainer.PasswordContainerUnitTest"],
+    deps = [
+        "//main/qadevOOo:OOoRunner",
+        "//main/test:test_jar",
+        "//main/ridljar:ridl",
+        "//main/unoil:unoil",
+        "//main/jurt:jurt",
+        "//main/javaunohelper:juh_jar",
+    ],
 )
 
 exports_files(glob(["**/*.component"]))

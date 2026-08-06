@@ -1,0 +1,17 @@
+load("@rules_java//java:defs.bzl", "java_import")
+
+# JUnit 4.10 — the test framework the Java/UNO integration suites are written
+# against (org.junit.Test / org.junit.Assert, run by org.junit.runner.JUnitCore).
+#
+# Upstream calls this OOO_JUNIT_JAR, supplied by `configure --with-junit`; it is
+# not in ext_sources because nothing in AOO ever built without it being optional.
+# 4.10 embeds hamcrest-core, so this single entry is the whole classpath
+# contribution — see the MODULE.bazel comment on @junit_jar.
+#
+# testonly: this is a test dependency, and nothing shipped may link it.
+java_import(
+    name = "junit",
+    jars = ["@junit_jar//file"],
+    testonly = True,
+    visibility = ["//visibility:public"],
+)

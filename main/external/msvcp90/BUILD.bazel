@@ -83,6 +83,34 @@ genrule(
     visibility = ["//visibility:public"],
 )
 
+# ── Embedded manifest for a DLL loaded by a FOREIGN process ──────────────────
+# Same idea as vc90_app_manifest_res, but at RT_MANIFEST id 2 (the DLL slot).
+# Needed by a /MD DLL that gets loaded into a process this build does not
+# produce — jurt's jpipe.dll, which a stock java.exe loads via
+# System.loadLibrary().  See vc90_dll_manifest.rc for the full reasoning.
+filegroup(
+    name = "vc90_dll_manifest_rc",
+    srcs = select({
+        "//build:arch_x64": ["vc90_dll_manifest_amd64.rc"],
+        "//conditions:default": ["vc90_dll_manifest.rc"],
+    }),
+)
+
+genrule(
+    name = "vc90_dll_manifest_res",
+    srcs = [
+        ":vc90_dll_manifest_rc",
+        ":vc90_app_manifest",
+    ],
+    outs = ["vc90_dll_manifest.res"],
+    cmd_bat = (
+        "set \"_RC=C:\\Program Files\\Microsoft SDKs\\Windows\\v7.0\\Bin\\RC.Exe\"&&" +
+        "\"!_RC!\" /nologo /I \"main/external/msvcp90\"" +
+        " /fo \"$(OUTS)\" \"$(location :vc90_dll_manifest_rc)\""
+    ),
+    visibility = ["//visibility:public"],
+)
+
 # ── Debug CRT (/MDd, --compilation_mode=dbg) ─────────────────────────────────
 # The debug analog of crt_dlls.  Under --compilation_mode=dbg the toolchain
 # links /MDd, so binaries import MSVCR90D.dll / MSVCP90D.dll / MSVCM90D.dll,

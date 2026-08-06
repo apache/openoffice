@@ -1,6 +1,7 @@
 package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("@rules_java//java:defs.bzl", "java_library")
 load("//build/rules:gtest_test.bzl", "gtest_test")
 
 # main/test — libtest, AOO's C++ unit-test support library (test.dll).
@@ -86,6 +87,34 @@ filegroup(
     name = "test_implib",
     srcs = [":test"],
     output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── test.jar — the JAVA half of the same fixture ──────────────────────
+# org.openoffice.test.OfficeConnection: launch an office with -accept=…;urp,
+# resolve a component context over it, terminate it in tearDown.  Exactly what
+# the C++ test::OfficeConnection above does, for the Java qa/complex and
+# qa/unoapi suites — see //build/rules:junit_test.bzl for how the two differ.
+#
+# Ant_test.mk builds this as test.jar with no manifest; the name here follows
+# juh_jar, i.e. "_jar" marks the Java artifact where a C++ target already owns
+# the plain name.
+#
+# Not in this jar: test/java/test-tools (org.openoffice.test.tools.*, a document
+# helper layer built as a SECOND jar by Ant_test-tools.mk).  Add it as its own
+# target when a suite that needs it is wired.
+java_library(
+    name = "test_jar",
+    srcs = glob(["java/test/src/main/java/org/openoffice/test/*.java"]),
+    javacopts = ["--release", "8", "-XepDisableAllChecks"],
+    deps = [
+        "//main/ridljar:ridl",
+        "//main/jurt:jurt",
+        "//main/javaunohelper:juh_jar",
+        "//main/unoil:unoil",
+        "//build/third_party/junit:junit",
+    ],
+    testonly = True,
     visibility = ["//visibility:public"],
 )
 

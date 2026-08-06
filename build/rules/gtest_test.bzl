@@ -183,6 +183,15 @@ def _server_lines(server_exe, server_args, port):
         ":_portup",
     ]
 
+# ── shared with junit_test.bzl ───────────────────────────────────────────────
+# The Java/UNO tests emit a launcher .bat of their own and need exactly these two
+# primitives: a %~dp0-relative path to the staged install (bazel test's working
+# directory is neither the execroot nor the exe's directory), and the escaping
+# rules for a value baked into a .bat (the percent landmine above).  Re-exported
+# rather than copied, so both launchers keep one definition of each.
+launcher_relpath = _windows_relpath
+launcher_expand_tokens = _expand_tokens
+
 def _staged_gtest_test_impl(ctx):
     # The staging dir is normally "<name>.run".  bin_layout makes it
     # "<name>.run/bin" instead — the ONE thing the child-process suites need.

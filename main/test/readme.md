@@ -30,7 +30,7 @@ holdouts).  This brings the test layer onto Bazel so suites run under
 | `@gtest` | `ext_libraries/modules/gtest/1.7.0/` | GoogleTest 1.7.0 bzlmod wrap (zip cached in `ext_sources`). Built with `/Zc:wchar_t-` so its `wchar_t` ABI matches `sal_Unicode` test code. |
 | `gtest_test` rule | [//build/rules:gtest_test.bzl](../../build/rules/gtest_test.bzl) | Reusable runnable-test rule. The `/MD` toolchain embeds no manifest, so a bare `cc_test` exe can't launch (DLLs land in runfiles subdirs; loose CRT → R6034). This stages the exe + runtime DLLs + VC90 CRT + an external `<exe>.manifest` into ONE flat dir (the test analog of `//main/idl:svidl_bundle`). Pass `data_files` for fixture inputs the test opens by relative path — see "working directory" below. |
 | `sal_process_init` | [//build/testsupport](../../build/testsupport/BUILD.bazel) | Migration-authored TU that runs `sal_detail_initialize()` from a dynamic initialiser, for suites whose own `main()` skips the `SAL_IMPLEMENT_MAIN` boilerplate (⇒ no `WSAStartup`). |
-| `libtest` | [//main/test:test](BUILD.bazel) | `test.dll` — `test::OfficeConnection` + arg/url helpers, for *subsequent* (UNO) tests that bootstrap a running soffice over URP. Built; not yet exercised. |
+| `libtest` | [//main/test:test](BUILD.bazel) | `test.dll` — `test::OfficeConnection` + arg/url helpers, for *subsequent* (UNO) tests that bootstrap a running soffice over URP. Exercised by `:test_qa_officeconnection`; its Java twin is `:test_jar` (see "The JAVA side of the same fixture" below). |
 | `vc90_app_manifest_res` | [//main/external/msvcp90](../external/msvcp90/BUILD.bazel) | The VC90-CRT manifest compiled to a `.res` and linked into every `gtest_test` exe at `RT_MANIFEST` id 1. See "the CRT activation context" below. |
 | `sal_qa_test` macro | [//main/sal:sal_qa.bzl](../sal/sal_qa.bzl) | Thin `gtest_test` wrapper for the sal/qa suites (common copts/deps + per-dir `*_Const.h` include). |
 
@@ -342,6 +342,140 @@ holdouts).  This brings the test layer onto Bazel so suites run under
   the one that bites: it's left **unwired** (not a green-gate exclusion — it
   won't build at all).  Don't be fooled by the half-fix: `/FIwindows.h` +
   advapi32 satisfies its Win32 SID/registry calls but not the testshl2 include.
+
+## The JAVA side of the same fixture — `uno_junit_test`
+
+Everything above is C++. The `qa/` directories also hold a large body of **Java**
+suites — `qa/complex/*` (hand-written JUnit) and `qa/unoapi` (the qadevOOo
+UNOAPI runner) — which drive a real office over UNO. They are the *only* form of
+coverage for anything that exists solely as a UNO service, and they are wired
+through [//build/rules:junit_test.bzl](../../build/rules/junit_test.bzl).
+
+| Piece | Path | Role |
+| ----- | ---- | ---- |
+| `@junit_jar` | `MODULE.bazel` → [//build/third_party/junit](../../build/third_party/junit/BUILD.bazel) | JUnit **4.10** from Maven Central — upstream's `OOO_JUNIT_JAR`, never bundled in the tree. 4.10 and not later: it *embeds* hamcrest-core, so there is no second jar to keep in sync (upstream forks on `HAMCREST_CORE_JAR` in every recipe). |
+| `test.jar` | [//main/test:test_jar](BUILD.bazel) | `org.openoffice.test.OfficeConnection` — the Java twin of `test::OfficeConnection`. |
+| `OOoRunner.jar` | [//main/qadevOOo:OOoRunner](../qadevOOo/BUILD.bazel) | The UNOAPI framework, **now carrying its `objdsc/*.csv` resources** — see below. |
+| `uno_junit_test` | [//build/rules:junit_test.bzl](../../build/rules/junit_test.bzl) | `java_library` + a launcher `.bat` mirroring `installationtest.mk::javatest`. |
+
+### The two OfficeConnections are the same fixture, spelled differently
+
+| | C++ (`gtest_test(office_connection=True)`) | Java (`uno_junit_test`) |
+| --- | --- | --- |
+| arguments | `arg-soffice` / `arg-user` via `rtl::Bootstrap` → the **environment** | `org.openoffice.test.arg.soffice` / `.user` via `System.getProperty` → **`-D` on the command line** |
+| user installation | a **native path** (fed to `getFileURLFromSystemPath`) | a **`file:///` URL** (fed to `-env:UserInstallation=`) |
+| transport | socket | **named pipe** (`pipe,name=oootest<uuid>`) |
+| consequence | — | no port to reserve, so no `exclusive` tag: these suites run concurrently |
+
+The recipe ported is `solenv/inc/installationtest.mk`'s `javatest` (identical in
+`solenv/gbuild/JunitTest.mk`), including its wipe of the user installation
+*before* as well as after.
+
+### Which JVM, and why it is not the build JDK
+
+`//build:jre.bzl` now also exports `jre_java_exe()` / `jre_home_native()`. The
+test JVM has to match the **target** arch even though the office is a separate
+process, because `OfficeConnection` connects over a named pipe and jurt's
+`PipeConnection` is JNI: the JVM loads `jpipe.dll` out of the staged `program/`,
+and a 64-bit JVM cannot load the 32-bit one a default build produces. `JAVA_HOME`
+is pinned to the same JDK, because `OfficeConnection` always passes
+`-env:UNO_JAVA_JFW_ENV_JREHOME=true`, which is what the *office's* jvmfwk reads.
+
+### Three things were missing from the product, not from the test
+
+Each of these was invisible until a foreign process loaded our DLLs:
+
+1. **`jpipe.dll` / `jpipx.dll` were never staged.** Nothing in the office links
+   or loads them — it is the *client* JVM that does — so their absence broke
+   nothing visible. Any external Java program talking to a running office over a
+   pipe needs them; upstream ships both in the URE lib dir. Now in
+   [//main/staging](../staging/BUILD.bazel).
+2. **A /MD DLL loaded by a process we do not build needs its OWN embedded
+   manifest.** This tree links `/MANIFEST:NO` throughout, which is invisible
+   inside `soffice.exe` (its manifest covers the whole process) and fatal for a
+   DLL a stock `java.exe` loads: nothing supplies an activation context, the
+   `MSVCR90.dll` import cannot be resolved, and `System.loadLibrary` reports the
+   uninformative **"Can't find dependent libraries"**. Putting a loose
+   `msvcr90.dll` on `PATH` only trades that for R6034. The fix is
+   `//main/external/msvcp90:vc90_dll_manifest_res` — the same manifest at
+   `RT_MANIFEST` **id 2** (the DLL slot; id 1 is the exe slot) — linked into both
+   pipe DLLs. Upstream gets this for free: solenv embeds a manifest in every
+   DLL.
+3. **`OOoRunner.jar` had no object descriptions.** `helper/APIDescGetter` finds
+   a description either under a `-objdsc` directory or, when that argument is
+   absent, as the classpath resource `/objdsc/<module>` (it has an explicit
+   `JarURLConnection` branch for exactly that). The `qa/unoapi` `Test.java`
+   adapters pass no `-objdsc`, and upstream's Ant `jar` target does not include
+   `*.csv` — so against upstream's jar every unoapi suite dies at its first
+   object with `couldn't find module '<module>'`. Bundling them is a deliberate
+   divergence, and it is what makes the whole unoapi category runnable.
+
+### Green
+
+| Target | What it covers | Time |
+| --- | --- | --- |
+| `//main/qadevOOo:qa_complex_junitskeleton` | upstream's worked example, and therefore the whole fixture: connect → `XMultiServiceFactory` → qadevOOo `TestParameters` → resolve a fixture document by relative path → **load it into the office** → close → ask the office for its temp dir (3 tests) | ~14 s |
+| `//main/svl:qa_complex_passwordcontainer` | `com.sun.star.task.PasswordContainer` over UNO: per-URL credentials with and without a master password, persistent and session-only, driven through the test's own `XInteractionHandler` (3 tests) | ~13 s |
+| `//main/svtools:qa_unoapi` | the first UNOAPI suite ever run here — 26 interface/property checks on `svtools.AccessibleTabBar` | ~25 s |
+| `//main/qadevOOo:qa_unoapi` | the runner testing itself (`qadevOOo.SelfTest`) — the guard on the framework the other unoapi suites are built out of. Needs `fixture_starts_office`, see below | ~16 s |
+
+### When the office will not shut down: `fixture_starts_office`
+
+`qadevOOo:qa_unoapi` is the suite that motivated this. With the faithful
+fixture its assertions all pass — scenario green in 3 s — and then the run hangs
+until the 300 s timeout with nothing printed after the job. Diagnosed rather
+than guessed:
+
+- the JVM's main thread is in `Process.waitFor()` (`OfficeConnection:126`), so
+  `XDesktop.terminate()` has already returned and the office has not exited;
+- the office is still alive, idle, has **no visible window**, and no longer
+  answers a fresh UNO connection;
+- a non-invasive `cdb -pv` stack dump shows the office's **main thread inside a
+  WinProc dispatch that entered a nested VCL message wait**
+  (`Application::Execute` → `DispatchMessageW` → … → `GetMessageW`) — so it
+  holds the SolarMutex — while **two URP threads block in
+  `vos::OMutex::acquire`**: an incoming `binaryurp` request into fwk's
+  `LockHelper`, and an `sw` proxy release coming back through `msci_uno`.
+
+That is an office **shutdown deadlock** between the solar mutex and in-flight
+bridge calls, not a fixture defect — the suites that hold no stale proxies at
+teardown terminate cleanly. Fixing it is a source change in the office.
+
+`fixture_starts_office = True` makes the **launcher** start and kill the office
+and the test attach to it (`connect:` instead of `path:`), which leaves
+`OfficeConnection.tearDown()` a no-op — `process` is null, so it neither
+terminates nor waits. The verdict becomes the JUnit result, and the shutdown
+becomes a `taskkill`. Same division of labour as `server_args` in `gtest_test`.
+
+Two mechanics worth knowing before reusing it:
+
+- **the readiness wait is one PowerShell process, not a batch loop.** cmd cannot
+  list the pipe namespace at all (`dir \\.\pipe\` answers "invalid parameter" —
+  it is a device path), and osl's pipes appear as
+  `\\.\pipe\OSL_PIPE_<SID>_<name>`, so the probe matches the name at the end.
+  It is not optional: `OfficeConnection`'s resolve loop has **no sleep** when it
+  did not start the process itself, so it would spin a core.
+- **the kill matches the unique pipe name on the command line**, never
+  `taskkill /im soffice.exe` — which would take down a developer's session and
+  any concurrently running suite. All four suites run in parallel today.
+
+It is **opt-in and costs something**: `tearDown`'s check that the office
+terminates cleanly and exits 0. Use it only where that check is the thing that
+is broken, and record why.
+
+### The rest of the category, and what each needs
+
+There are **18** `qa/unoapi` and **24** `qa/complex` directories in the tree, so
+this is a queue, not a leftover. Two things gate the remainder:
+
+- **`-tdoc`** — 11 of the 18 unoapi adapters pass a test-document root, which
+  means staging `qadevOOo/testdocs` (53 entries, some of them directories). The
+  rule's `data_tree` stages one *file* per entry; a directory-preserving
+  variant is the next piece of rule work. `svtools`' scenario builds its
+  document through `SOfficeFactory` and needs none, which is why it went first.
+- **per-module fixtures** — `svl/qa/complex/ConfigItems` needs a C++ helper
+  component built alongside; `writerfilter/qa/complex` and several others have
+  no `makefile.mk` at all upstream, i.e. they were never wired there either.
 
 ## The sal suite is deliberately NOT a green gate
 

@@ -1,4 +1,5 @@
 load("@rules_java//java:defs.bzl", "java_library")
+load("//build/rules:junit_test.bzl", "uno_junit_test")
 
 # ── OOoRunner.jar ────────────────────────────────────────────────────────────
 # The qadevOOo test framework (lib.*, base.*, util.*, share.*, mod.* …) used as a
@@ -7,10 +8,20 @@ load("@rules_java//java:defs.bzl", "java_library")
 #
 # Classpath (build.xml main.classpath): ridl + unoil + jurt + juh + java_uno.
 #
-# Resources: src/main/resources holds ONLY the 670 objdsc/*.csv object-description
-# files, which the ant jar target does NOT bundle (.csv is absent from its include
-# list) — the runner reads them from the filesystem via an -objdsc parameter. So
-# this jar is compiled classes only, matching upstream.
+# Resources: src/main/resources holds ONLY the objdsc/*.csv object-description
+# files — one per UNO implementation, listing the interfaces and properties the
+# UNOAPI runner is to check on it.
+#
+# DIVERGENCE (deliberate, and it FIXES a suite): they are bundled here, where
+# upstream's ant jar target drops them (its <include> list covers .class,
+# .properties, .xml, … but not .csv).  helper/APIDescGetter loads a description
+# in one of two ways — from a directory named by the -objdsc parameter, or, when
+# that parameter is absent, as the CLASSPATH RESOURCE "/objdsc/<module>", with an
+# explicit JarURLConnection branch for the jar case.  The qa/unoapi suites'
+# Test.java passes no -objdsc, so the classpath route is the only one they have,
+# and against upstream's csv-less jar every one of them fails at the first object
+# with "couldn't find module '<module>'".  Bundling costs a few hundred KB in a
+# test-only jar and is what makes those suites runnable at all.
 #
 # Manifest (Class-Path: ridl.jar unoil.jar / RegistrationClassName:
 # org.openoffice.RunnerService) is a deployment/UNO-registration detail not needed
@@ -18,6 +29,8 @@ load("@rules_java//java:defs.bzl", "java_library")
 java_library(
     name = "OOoRunner",
     srcs = glob(["java/OOoRunner/src/main/java/**/*.java"]),
+    resources = glob(["java/OOoRunner/src/main/resources/**"]),
+    resource_strip_prefix = "main/qadevOOo/java/OOoRunner/src/main/resources",
     # Legacy Java 1.4-era sources: pin --release 8 and silence Error Prone, same
     # as jurt (modern JDK compiles them with deprecation/raw-type warnings only).
     javacopts = ["--release", "8", "-XepDisableAllChecks"],
@@ -29,4 +42,91 @@ java_library(
         "//main/bridges:java_uno_jar",
     ],
     visibility = ["//visibility:public"],
+)
+
+# ── qa/complex/junitskeleton ─────────────────────────────────────────────────
+# Upstream's own worked example of a qa/complex suite, and therefore the right
+# first consumer of uno_junit_test: it exercises the whole Java-side fixture in
+# one go — connect to a launched office, get its XMultiServiceFactory, build a
+# qadevOOo TestParameters over it, resolve a fixture document by relative path,
+# LOAD that document into the office, close it, and ask the office for its temp
+# directory.  Nothing here is skeleton-specific; anything that fails, fails for
+# every later suite too.
+#
+# JAVATESTFILES in the makefile lists only Skeleton.java (the file carrying the
+# @Test methods) while JAVAFILES adds justatest + TestDocument, which is exactly
+# the split between `classes` and `srcs` here.
+#
+# The document is README.txt reached as new File("test_documents", …), i.e.
+# relative to the working directory — which uno_junit_test sets to the staged
+# dir, hence data_tree rather than a flat copy.
+# ── qa/unoapi ────────────────────────────────────────────────────────────────
+# JunitTest_qadevOOo_unoapi: the runner testing ITSELF.  Its scenario names one
+# object, qadevOOo.SelfTest, whose interface "tests" are canned passes and
+# failures, so it checks that the UNOAPI machinery reports both correctly rather
+# than checking any office component — the guard on the framework every other
+# unoapi suite is built out of.  Unlike svtools' adapter it takes no -tdoc.
+#
+# fixture_starts_office, and this is the suite that motivated it.  With the
+# faithful `path:` fixture the assertions all pass — scenario green in 3 s,
+# "0 of 1 tests failed" — and then the run hangs until the 300 s timeout, with
+# nothing printed after the job.  Diagnosed rather than guessed:
+#
+#   * the main thread is blocked in Process.waitFor() (OfficeConnection:126),
+#     i.e. XDesktop.terminate() has already returned and the office has not
+#     exited;
+#   * the office is still alive, idle, with NO visible window, and does not
+#     answer a fresh UNO connection;
+#   * a non-invasive cdb stack dump shows the office's MAIN thread inside a
+#     WinProc dispatch that entered a NESTED VCL message wait
+#     (Application::Execute → DispatchMessageW → … → GetMessageW), so it holds
+#     the SolarMutex, while two URP threads sit in vos::OMutex::acquire trying
+#     to get it — one an incoming binaryurp request into fwk's LockHelper, the
+#     other an sw proxy release coming back through msci_uno.
+#
+# That is an office SHUTDOWN DEADLOCK between the solar mutex and in-flight
+# bridge calls, not a fixture defect: the three suites that hold no stale
+# proxies at teardown terminate cleanly.  Fixing it is a source change in the
+# office, so the fixture takes ownership of the office instead — the assertions,
+# which are what this target is for, then run and report.  What is given up is
+# tearDown's check that the office exits 0, which for this suite is exactly the
+# thing that is broken and would otherwise cost 300 s per run to re-observe.
+uno_junit_test(
+    name = "qa_unoapi",
+    srcs = ["qa/unoapi/Test.java"],
+    classes = ["org.openoffice.qadevOOo.qa.unoapi.Test"],
+    fixture_starts_office = True,
+    data_tree = {
+        "qa/unoapi/qadevOOo.sce": "qadevOOo.sce",
+        "qa/unoapi/knownissues.xcl": "knownissues.xcl",
+    },
+    test_args = {
+        "org.openoffice.test.arg.sce": "$(RUNDIR)\\qadevOOo.sce",
+        "org.openoffice.test.arg.xcl": "$(RUNDIR)\\knownissues.xcl",
+    },
+    deps = [
+        ":OOoRunner",
+        "//main/test:test_jar",
+        "//main/ridljar:ridl",
+        "//main/unoil:unoil",
+        "//main/jurt:jurt",
+        "//main/javaunohelper:juh_jar",
+    ],
+)
+
+uno_junit_test(
+    name = "qa_complex_junitskeleton",
+    srcs = glob(["qa/complex/junitskeleton/*.java"]),
+    classes = ["complex.junitskeleton.Skeleton"],
+    data_tree = {
+        "qa/complex/junitskeleton/test_documents/README.txt": "test_documents/README.txt",
+    },
+    deps = [
+        ":OOoRunner",
+        "//main/test:test_jar",
+        "//main/ridljar:ridl",
+        "//main/unoil:unoil",
+        "//main/jurt:jurt",
+        "//main/javaunohelper:juh_jar",
+    ],
 )

@@ -1,0 +1,25 @@
+// Embed the VC90-CRT dependency manifest as RT_MANIFEST (type 24), resource id 2
+// (ISOLATIONAWARE_MANIFEST_RESOURCE_ID — the DLL manifest slot).
+//
+// The exe form (id 1, vc90_app_manifest.rc) covers a process we launch
+// ourselves.  This one is for a DLL loaded into a process we do NOT control:
+// jurt's jpipe.dll is loaded by System.loadLibrary() from a stock java.exe,
+// whose image carries no VC90 dependency at all, so nothing in that process
+// supplies an activation context.  Without a manifest of its own the loader
+// resolves MSVCR90.dll by plain search and reports "Can't find dependent
+// libraries" (or, if a loose copy is on PATH, R6034 — an unmanifested CRT load).
+// With it, the loader builds an activation context from the DLL's own manifest
+// while binding its imports and finds the SxS assembly.
+//
+// This is what upstream's link step does for every DLL (solenv embeds the
+// generated manifest with mt.exe); this tree links /MANIFEST:NO throughout,
+// which is invisible inside soffice.exe — its own manifest covers the whole
+// process — and only surfaces for a DLL a FOREIGN host loads.
+//
+// Same manifest XML as the exe form, deliberately: the assembly identity and
+// version are the part that must not drift, and the trustInfo element it also
+// carries is simply ignored in a DLL manifest.
+//
+// x86 variant: the manifest sits at the package root.  See
+// vc90_dll_manifest_amd64.rc for the x64 one.
+2 24 "vc90_app.manifest"

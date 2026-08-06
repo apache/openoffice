@@ -1,0 +1,6 @@
+// x64 variant of vc90_dll_manifest.rc — see there for why a DLL needs its own
+// embedded manifest (resource id 2, ISOLATIONAWARE_MANIFEST_RESOURCE_ID).
+//
+// Both .rc files are compiled with /I main/external/msvcp90, so the path here
+// is relative to the package root.
+2 24 "amd64/vc90_app.manifest"

@@ -2,6 +2,7 @@ package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 load("//build/rules:rsc_pipeline.bzl", "rsc_res")
+load("//build/rules:junit_test.bzl", "uno_junit_test")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -221,6 +222,49 @@ rsc_res(
     ],
     images_root = "main/default_images",
     visibility  = ["//visibility:public"],
+)
+
+# ── qa/unoapi ────────────────────────────────────────────────────────────────
+# The other kind of Java suite: not a hand-written JUnit test but the qadevOOo
+# UNOAPI runner.  Test.java is a three-line adapter — connect, then hand
+# org.openoffice.Runner a SCENARIO file and the connection description; the
+# Runner instantiates each named object in the running office and checks every
+# interface and property it declares against the UNO type description.
+#
+# What it actually runs is whatever svtools.sce lists, and all but ONE of its
+# entries are commented out with the issue number that broke them (#i110988,
+# #i88276, …), so this suite is exactly one object today:
+# svtools.AccessibleTabBar.  knownissues.xcl is the second half of that
+# mechanism — a list of individual interface tests to skip.  Both are staged
+# rather than passed as source paths, because the arguments are read at run time
+# and bazel test's working directory is neither the source tree nor the execroot.
+uno_junit_test(
+    name = "qa_unoapi",
+    srcs = ["qa/unoapi/Test.java"],
+    classes = ["org.openoffice.svtools.qa.unoapi.Test"],
+    data_tree = {
+        "qa/unoapi/svtools.sce": "svtools.sce",
+        "qa/unoapi/knownissues.xcl": "knownissues.xcl",
+    },
+    test_args = {
+        "org.openoffice.test.arg.sce": "$(RUNDIR)\\svtools.sce",
+        "org.openoffice.test.arg.xcl": "$(RUNDIR)\\knownissues.xcl",
+        # The runner's test-document root.  AccessibleTabBar builds its document
+        # through SOfficeFactory and loads nothing from disk, so no qadevOOo
+        # testdocs tree is staged here; a suite whose .sce names objects that DO
+        # open a fixture document will need one.  Upstream leaves this argument
+        # unset entirely (the makefile defines no DEFS), which is why its own
+        # Test.java would pass null.
+        "org.openoffice.test.arg.tdoc": "$(RUNDIR)",
+    },
+    deps = [
+        "//main/qadevOOo:OOoRunner",
+        "//main/test:test_jar",
+        "//main/ridljar:ridl",
+        "//main/unoil:unoil",
+        "//main/jurt:jurt",
+        "//main/javaunohelper:juh_jar",
+    ],
 )
 
 exports_files(glob(["**/*.component"]))
