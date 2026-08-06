@@ -175,7 +175,22 @@ LIBXML2LIB=$(LIBXML_LIBS)
 .IF "$(OS)"=="MACOSX"
 # Bundled libxml2 is a static archive on macOS (main/libxml2/makefile.mk), which
 # carries no transitive deps -- add what its own .pc's Libs.private needs.
-LIBXML2LIB=-lxml2 -lpthread -liconv -lm
+# If the user already has prebuilt static libs under /usr/local/lib, prefer
+# those over the tree's own build (Apple's SDK ships no static libiconv.a,
+# only a .tbd stub for the dylib, so a /usr/local one is additive there).
+PREBUILT_LIBXML2_A:=$(shell -test -f /usr/local/lib/libxml2.a && echo yes)
+PREBUILT_LIBICONV_A:=$(shell -test -f /usr/local/lib/libiconv.a && echo yes)
+.IF "$(PREBUILT_LIBXML2_A)"=="yes"
+LIBXML2LIB_XML2A=/usr/local/lib/libxml2.a
+.ELSE
+LIBXML2LIB_XML2A=-lxml2
+.ENDIF
+.IF "$(PREBUILT_LIBICONV_A)"=="yes"
+LIBXML2LIB_ICONVA=/usr/local/lib/libiconv.a
+.ELSE
+LIBXML2LIB_ICONVA=-liconv
+.ENDIF
+LIBXML2LIB=$(LIBXML2LIB_XML2A) -lpthread $(LIBXML2LIB_ICONVA) -lm
 .ELSE
 LIBXML2LIB=-lxml2
 .ENDIF
@@ -245,7 +260,18 @@ NEON3RDLIB=-lneon
 .IF "$(OS)" == "FREEBSD" && "$(CPUNAME)" == "POWERPC64"
 JPEG3RDLIB=/usr/local/lib/libjpeg.so
 .ENDIF
+.IF "$(SYSTEM_CURL)"!="YES" && "$(OS)"=="MACOSX"
+# If the user already has a prebuilt static libcurl.a under /usr/local/lib,
+# prefer that copy over the tree's own (dylib) build.
+PREBUILT_LIBCURL_A:=$(shell -test -f /usr/local/lib/libcurl.a && echo yes)
+.IF "$(PREBUILT_LIBCURL_A)"=="yes"
+CURLLIB=/usr/local/lib/libcurl.a
+.ELSE
 CURLLIB=-lcurl
+.ENDIF
+.ELSE
+CURLLIB=-lcurl
+.ENDIF
 SFX2LIB=-lsfx$(DLLPOSTFIX)
 SFXLIB=-lsfx$(DLLPOSTFIX)
 EGGTRAYLIB=-leggtray$(DLLPOSTFIX)
@@ -287,7 +313,16 @@ GTESTLIB= -lgtest
 .IF "$(SYSTEM_LIBXSLT)"=="YES"
 XSLTLIB=$(LIBXSLT_LIBS)
 .ELSE
+.IF "$(OS)"=="MACOSX"
+PREBUILT_LIBXSLT_A:=$(shell -test -f /usr/local/lib/libxslt.a && echo yes)
+.IF "$(PREBUILT_LIBXSLT_A)"=="yes"
+XSLTLIB=/usr/local/lib/libxslt.a $(LIBXML2LIB)
+.ELSE
 XSLTLIB=-lxslt $(LIBXML2LIB)
+.ENDIF
+.ELSE
+XSLTLIB=-lxslt $(LIBXML2LIB)
+.ENDIF
 .ENDIF
 .IF "$(GUI)$(COM)"=="WNTGCC" || "$(GUI)"=="OS2"
 JVMFWKLIB = -ljvmfwk$(UDK_MAJOR)
