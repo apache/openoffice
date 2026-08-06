@@ -1,0 +1,22 @@
+diff -ur misc/libxslt-1.1.34/libxslt/extensions.c misc/build/libxslt-1.1.34/libxslt/extensions.c
+--- misc/libxslt-1.1.34/libxslt/extensions.c
++++ misc/build/libxslt-1.1.34/libxslt/extensions.c
+@@ -13,6 +13,7 @@
+ #include "libxslt.h"
+
+ #include <string.h>
++#include <stdlib.h>
+ #include <limits.h>
+
+ #include <libxml/xmlmemory.h>
+diff -ur misc/libxslt-1.1.34/libexslt/date.c misc/build/libxslt-1.1.34/libexslt/date.c
+--- misc/libxslt-1.1.34/libexslt/date.c
++++ misc/build/libxslt-1.1.34/libexslt/date.c
+@@ -46,6 +46,7 @@
+ #include "exslt.h"
+
+ #include <string.h>
++#include <stdlib.h>
+ #include <limits.h>
+
+ #ifdef HAVE_ERRNO_H

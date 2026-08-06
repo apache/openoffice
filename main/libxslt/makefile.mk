@@ -49,7 +49,8 @@ TARFILE_MD5=db8765c8d076f1b6caafd9f2542a304a
 
 # libxslt-internal-symbols: #i112480#: Solaris ld requires symbols to be defined
 PATCH_FILES=libxslt-configure.patch \
-            libxslt-win_manifest.patch
+            libxslt-win_manifest.patch \
+            libxslt-stdlib-getenv.patch
 
 # This is only for UNX environment now
 .IF "$(OS)"=="WNT"
