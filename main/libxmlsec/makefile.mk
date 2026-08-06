@@ -151,6 +151,23 @@ LDFLAGS:=$(xmlsec_LDFLAGS)
 CONFIGURE_DIR=
 CONFIGURE_ACTION=.$/configure ADDCFLAGS="$(xmlsec_CFLAGS)" CPPFLAGS="$(xmlsec_CPPFLAGS)"
 CONFIGURE_FLAGS=--with-pic --disable-shared --disable-crypto-dl --with-libxslt=no --with-openssl=no --with-gnutls=no LIBXML2LIB="$(LIBXML2LIB)"
+# Pin xmlsec's libxml2 lookup to the prefix configure settled on.
+#
+# Without --with-libxml the AOO patches leave xmlsec resolving a bare
+# "xml2-config" off $PATH, which on a Mac carrying MacPorts/Homebrew is
+# often not the one --with-system-libxml named. The mis-pick is silent
+# until link time: newer libxml2 renamed the stack helpers but kept the
+# old spellings as macros (inputPush -> xmlCtxtPushInput, valuePush ->
+# xmlXPathValuePush), so xmlsec 1.2.14 built against post-rename headers
+# emits the new names and the older archive xmlsecurity links lacks them.
+# Compile-side counterpart to the absolute-path link fix in
+# xmlsecurity/util/makefile.mk and forms/util/makefile.mk; both are needed.
+#
+# Guarded on SYSTEM_LIBXML: the internal build already gets an
+# absolute-path xml2-config, which AC_PATH_PROG honors as-is.
+.IF "$(SYSTEM_LIBXML)"=="YES" && "$(LIBXML_PREFIX)"!=""
+CONFIGURE_FLAGS+=--with-libxml=$(LIBXML_PREFIX)
+.ENDIF
 # system-nss needs pkgconfig to get the information about nss
 # FIXME: This also will enable pkg-config usage for libxml2. It *seems*
 # that the internal headers still are used when they are there but....
