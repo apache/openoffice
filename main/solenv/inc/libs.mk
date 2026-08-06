@@ -172,7 +172,13 @@ XMLSECLIB-NSS=-lxmlsec1-nss
 .IF "$(SYSTEM_LIBXML)"=="YES"
 LIBXML2LIB=$(LIBXML_LIBS)
 .ELSE
+.IF "$(OS)"=="MACOSX"
+# Bundled libxml2 is a static archive on macOS (main/libxml2/makefile.mk), which
+# carries no transitive deps -- add what its own .pc's Libs.private needs.
+LIBXML2LIB=-lxml2 -lpthread -liconv -lm
+.ELSE
 LIBXML2LIB=-lxml2
+.ENDIF
 .ENDIF
 NSS3LIB=-lnss3
 NSPR4LIB=-lnspr4
