@@ -519,7 +519,7 @@ $(eval $(call gb_Library_add_ldflags,vcl,\
 	/ENTRY:LibMain@12 \
 ))
 endif
-ifeq ($(CPUNAME),X86-64)
+ifeq ($(CPUNAME),X86_64)
 $(eval $(call gb_Library_add_ldflags,vcl,\
 	/ENTRY:LibMain@16 \
 ))
