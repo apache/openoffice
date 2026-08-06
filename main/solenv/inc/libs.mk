@@ -170,7 +170,10 @@ SVTOOLLIB=-lsvt$(DLLPOSTFIX)
 XMLSECLIB=-lxmlsec1
 XMLSECLIB-NSS=-lxmlsec1-nss
 .IF "$(SYSTEM_LIBXML)"=="YES"
-LIBXML2LIB=$(LIBXML_LIBS)
+# Drop -licuuc for the same reason RepositoryExternal.mk does: libxml2 has
+# already satisfied its own ICU dependency, and forwarding it here makes
+# consumers link this tree's bundled ICU instead.
+LIBXML2LIB=$(LIBXML_LIBS:s/-licuuc//)
 .ELSE
 .IF "$(OS)"=="MACOSX"
 # Bundled libxml2 is a static archive on macOS (main/libxml2/makefile.mk), which
@@ -245,7 +248,13 @@ NEON3RDLIB=-lneon
 .IF "$(OS)" == "FREEBSD" && "$(CPUNAME)" == "POWERPC64"
 JPEG3RDLIB=/usr/local/lib/libjpeg.so
 .ENDIF
+.IF "$(SYSTEM_CURL)"=="YES" && "$(STATIC_SYSTEM_CURL)"=="YES"
+# --with-static-system-libs=curl. Unlike XSLTLIB/LIBXML2LIB this is a bare
+# -lcurl rather than $(CURL_LIBS), so configure's rewrite doesn't reach it.
+CURLLIB=$(CURL_PREFIX)/lib/libcurl.a
+.ELSE
 CURLLIB=-lcurl
+.ENDIF
 SFX2LIB=-lsfx$(DLLPOSTFIX)
 SFXLIB=-lsfx$(DLLPOSTFIX)
 EGGTRAYLIB=-leggtray$(DLLPOSTFIX)

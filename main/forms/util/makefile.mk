@@ -88,7 +88,14 @@ SHL1TARGET=$(TARGET)$(DLLPOSTFIX)
 # (--enable-shared=no, no dylib at all) -- so without the "-" this aborts
 # the whole build the moment no dylib is found, instead of just leaving
 # the macro empty.
+#
+# --with-static-system-libs=libxml pins this to the archive, so a dylib
+# appearing at the prefix can't silently turn a release build dynamic.
+.IF "$(STATIC_SYSTEM_LIBXML)"=="YES"
+FORMS_LIBXML2_HAS_DYLIB:=
+.ELSE
 FORMS_LIBXML2_HAS_DYLIB:=$(shell -test -f $(LIBXML_PREFIX)/lib/libxml2.dylib && echo yes)
+.ENDIF
 .IF "$(FORMS_LIBXML2_HAS_DYLIB)"=="yes"
 FORMS_LIBXML2LIB:=$(LIBXML_PREFIX)/lib/libxml2.dylib
 .ELSE

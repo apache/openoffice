@@ -437,6 +437,15 @@ AC_ARG_WITH(system-expat,
 AC_ARG_WITH(system-libxml,
 [  --with-system-libxml    Use libxml already on system
 ],,)
+AC_ARG_WITH(static-system-libs,
+[  --with-static-system-libs=LIST
+                          Comma-separated list of system libraries to link
+                          statically, e.g. "libxml,libxslt,curl". Supported:
+                          libxml, libxslt, curl. Without this the archive is
+                          used only when the prefix happens to have no dylib,
+                          so a dylib appearing there silently switches the
+                          build to dynamic linking.
+],,)
 AC_ARG_WITH(system-python,
 [  --with-system-python    Use python already on system
 ],,)
@@ -4003,6 +4012,7 @@ else
     BUILD_TYPE="$BUILD_TYPE LIBXML2 LIBXMLSEC"
 fi
 AC_SUBST(SYSTEM_LIBXML)
+AC_SUBST(SYSTEM_LIBXML_STATIC)
 AC_SUBST(LIBXML_CFLAGS)
 AC_SUBST(LIBXML_LIBS)
 AC_SUBST(LIBXML_PREFIX)
@@ -4702,6 +4712,85 @@ AC_SUBST(SYSTEM_CURL)
 AC_SUBST(CURL_CFLAGS)
 AC_SUBST(CURL_LIBS)
 AC_SUBST(CURL_PREFIX)
+
+dnl ===================================================================
+dnl Pin selected system libraries to their static archives
+dnl ===================================================================
+dnl Runs after the libxml/libxslt/curl checks above, which is where the
+dnl *_PREFIX and *_LIBS values it rewrites are established.
+dnl
+dnl Without this the static-vs-dynamic choice is implicit: "-lfoo" lets the
+dnl linker take a dylib over an archive, and the libxml2 link in
+dnl forms/util and xmlsecurity/util explicitly prefers a dylib when the
+dnl prefix has one. Either way a dylib appearing at the prefix silently
+dnl turns a release build dynamic, and these dylibs carry absolute install
+dnl names that do not exist on an end user's machine.
+STATIC_SYSTEM_LIBS=
+STATIC_SYSTEM_LIBXML=NO
+STATIC_SYSTEM_LIBXSLT=NO
+STATIC_SYSTEM_CURL=NO
+if test -n "$with_static_system_libs" -a "$with_static_system_libs" != "no"; then
+   if test "$with_static_system_libs" = "yes"; then
+      AC_MSG_ERROR([--with-static-system-libs needs a list, e.g. --with-static-system-libs=libxml,libxslt,curl])
+   fi
+   for _sslib in `echo "$with_static_system_libs" | $SED -e 's/,/ /g'`; do
+      AC_MSG_CHECKING([for a static system $_sslib])
+      case "$_sslib" in
+      libxml)
+         _ssenabled="$SYSTEM_LIBXML"; _ssprefix="$LIBXML_PREFIX"; _ssopt="--with-system-libxml"
+         _ssarchives="libxml2.a"; _sslflags="-lxml2"
+         ;;
+      libxslt)
+         _ssenabled="$SYSTEM_LIBXSLT"; _ssprefix="$LIBXSLT_PREFIX"; _ssopt="--with-system-libxslt"
+         _ssarchives="libxslt.a libexslt.a"; _sslflags="-lxslt -lexslt"
+         ;;
+      curl)
+         _ssenabled="$SYSTEM_CURL"; _ssprefix="$CURL_PREFIX"; _ssopt="--with-system-curl"
+         _ssarchives="libcurl.a"; _sslflags="-lcurl"
+         ;;
+      *)
+         AC_MSG_ERROR([unsupported library "$_sslib" in --with-static-system-libs; supported: libxml, libxslt, curl])
+         ;;
+      esac
+      if test "$_ssenabled" != "YES"; then
+         AC_MSG_ERROR([--with-static-system-libs=$_sslib requires $_ssopt])
+      fi
+      if test -z "$_ssprefix"; then
+         AC_MSG_ERROR([--with-static-system-libs=$_sslib needs a prefix; give $_ssopt=DIR (macOS only)])
+      fi
+      for _ssa in $_ssarchives; do
+         if test ! -f "$_ssprefix/lib/$_ssa"; then
+            AC_MSG_ERROR([--with-static-system-libs=$_sslib given, but $_ssprefix/lib/$_ssa not found])
+         fi
+      done
+      dnl Replace each "-lfoo" with the archive's absolute path so the
+      dnl linker cannot pick a dylib sitting beside it. Matching on a
+      dnl trailing space (the value gets one appended, then trimmed) keeps
+      dnl this to portable BRE -- $SED is whatever sed AC_PATH_PROGS found,
+      dnl which is not required to be GNU, and \| alternation silently
+      dnl matches nothing under the BSD sed macOS ships.
+      for _ssl in $_sslflags; do
+         _ssa="lib`echo "$_ssl" | $SED -e 's/^-l//'`.a"
+         case "$_sslib" in
+         libxml)   LIBXML_LIBS=`echo "$LIBXML_LIBS " | $SED -e "s|$_ssl |$_ssprefix/lib/$_ssa |g" -e 's| *$||'` ;;
+         libxslt)  LIBXSLT_LIBS=`echo "$LIBXSLT_LIBS " | $SED -e "s|$_ssl |$_ssprefix/lib/$_ssa |g" -e 's| *$||'` ;;
+         curl)     CURL_LIBS=`echo "$CURL_LIBS " | $SED -e "s|$_ssl |$_ssprefix/lib/$_ssa |g" -e 's| *$||'` ;;
+         esac
+      done
+      case "$_sslib" in
+      libxml)   STATIC_SYSTEM_LIBXML=YES ;;
+      libxslt)  STATIC_SYSTEM_LIBXSLT=YES ;;
+      curl)     STATIC_SYSTEM_CURL=YES ;;
+      esac
+      STATIC_SYSTEM_LIBS="$STATIC_SYSTEM_LIBS $_sslib"
+      AC_MSG_RESULT([$_ssprefix/lib])
+   done
+   STATIC_SYSTEM_LIBS=`echo $STATIC_SYSTEM_LIBS`
+fi
+AC_SUBST(STATIC_SYSTEM_LIBS)
+AC_SUBST(STATIC_SYSTEM_LIBXML)
+AC_SUBST(STATIC_SYSTEM_LIBXSLT)
+AC_SUBST(STATIC_SYSTEM_CURL)
 
 dnl ===================================================================
 dnl Check for system mdds
