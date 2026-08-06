@@ -178,13 +178,8 @@ LIBXML2LIB=$(LIBXML_LIBS:s/-licuuc//)
 .IF "$(OS)"=="MACOSX"
 # Bundled libxml2 is a static archive on macOS (main/libxml2/makefile.mk), which
 # carries no transitive deps -- add what its own .pc's Libs.private needs.
-# --with-static-system-libs=libiconv:DIR pins iconv to that archive; the SDK
-# ships only a .tbd stub for the dylib, so there is no system libiconv.a.
-.IF "$(STATIC_SYSTEM_LIBICONV)"=="YES"
-LIBXML2LIB=-lxml2 -lpthread $(LIBICONV_PREFIX)/lib/libiconv.a -lm
-.ELSE
-LIBXML2LIB=-lxml2 -lpthread -liconv -lm
-.ENDIF
+# It is built --without-iconv, so no -liconv here.
+LIBXML2LIB=-lxml2 -lpthread -lm
 .ELSE
 LIBXML2LIB=-lxml2
 .ENDIF
