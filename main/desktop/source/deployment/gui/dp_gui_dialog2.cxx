@@ -43,6 +43,7 @@
 #include "vcl/msgbox.hxx"
 #include "vcl/scrbar.hxx"
 #include "vcl/svapp.hxx"
+#include "vcl/threadex.hxx"
 
 #include "vos/mutex.hxx"
 
@@ -75,6 +76,7 @@
 
 #include <map>
 #include <vector>
+#include <boost/bind.hpp>
 #include <boost/shared_ptr.hpp>
 
 #define OUSTR(x) ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM(x) )
@@ -640,6 +642,16 @@ void DialogHelper::openWebBrowser( const OUString & sURL, const OUString &sTitle
 
 //------------------------------------------------------------------------------
 bool DialogHelper::installExtensionWarn( const OUString &rExtensionName ) const
+{
+	// Reached from the deployment worker thread, where AquaSalInstance::Yield
+	// cannot pump the Cocoa event queue; the dialog must execute on the main
+	// thread or it appears but never receives events.
+	return vcl::solarthread::syncExecute(
+		boost::bind( &DialogHelper::solar_installExtensionWarn, this, rExtensionName ) );
+}
+
+//------------------------------------------------------------------------------
+bool DialogHelper::solar_installExtensionWarn( const OUString &rExtensionName ) const
 {
 	const ::vos::OGuard guard( Application::GetSolarMutex() );
 	WarningBox aInfo( m_pVCLWindow, getResId( RID_WARNINGBOX_INSTALL_EXTENSION ) );
