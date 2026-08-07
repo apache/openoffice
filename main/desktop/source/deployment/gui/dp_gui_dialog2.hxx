@@ -95,6 +95,7 @@ public:
     void            setBusy( const bool bBusy ) { m_bIsBusy = bBusy; }
     bool            isBusy() const { return m_bIsBusy; }
     bool            installExtensionWarn( const ::rtl::OUString &rExtensionURL ) const;
+    bool            solar_installExtensionWarn( const ::rtl::OUString &rExtensionURL ) const;
     bool            installForAllUsers( bool &bInstallForAll ) const;
 };
 
