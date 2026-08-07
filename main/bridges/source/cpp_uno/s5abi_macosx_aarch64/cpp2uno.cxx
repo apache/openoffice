@@ -27,6 +27,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <hash_map>
+#include <libkern/OSCacheControl.h>
 
 #include <rtl/alloc.h>
 #include <osl/mutex.hxx>
@@ -68,12 +69,13 @@ static typelib_TypeClass cpp2uno_call(
 	const typelib_TypeDescription * pMemberTypeDescr,
 	typelib_TypeDescriptionReference * pReturnTypeRef, // 0 indicates void return
 	sal_Int32 nParams, typelib_MethodParameter * pParams,
-	void ** gpreg, void ** fpreg, void ** ovrflw,
+	void ** gpreg, void ** fpreg, unsigned char * ovrflw,
 	void * pIndirectReturn, // AArch64 x8 indirect-result pointer (0 if none)
 	sal_uInt64 * pRegisterReturn /* space for register return */ )
 {
 	unsigned int nr_gpr = 0; //number of gpr registers used
 	unsigned int nr_fpr = 0; //number of fpr registers used
+	sal_uInt32 stackOffset = 0;
 
 	// return
 	typelib_TypeDescription * pReturnTypeDescr = 0;
@@ -122,11 +124,11 @@ static typelib_TypeClass cpp2uno_call(
 
 		int nUsedGPR = 0;
 		int nUsedFPR = 0;
-		bool bFitsRegisters = aarch64::examine_argument( rParam.pTypeRef, false, nUsedGPR, nUsedFPR );
+		aarch64::examine_argument( rParam.pTypeRef, false, nUsedGPR, nUsedFPR );
 		if ( !rParam.bOut && bridges::cpp_uno::shared::isSimpleType( rParam.pTypeRef ) ) // value
 		{
 			// A simple UNO type occupies exactly one register, GPR or FPR.
-			OSL_ASSERT( bFitsRegisters && ( ( nUsedFPR == 1 && nUsedGPR == 0 ) || ( nUsedFPR == 0 && nUsedGPR == 1 ) ) );
+			OSL_ASSERT( ( nUsedFPR == 1 && nUsedGPR == 0 ) || ( nUsedFPR == 0 && nUsedGPR == 1 ) );
 
 			if ( nUsedFPR == 1 )
 			{
@@ -136,7 +138,12 @@ static typelib_TypeClass cpp2uno_call(
 					nr_fpr++;
 				}
 				else
-					pCppArgs[nPos] = pUnoArgs[nPos] = ovrflw++;
+				{
+					stackOffset = aarch64::align_stack_offset(
+						stackOffset, rParam.pTypeRef );
+					pCppArgs[nPos] = pUnoArgs[nPos] = ovrflw + stackOffset;
+					stackOffset += aarch64::stack_size( rParam.pTypeRef );
+				}
 			}
 			else if ( nUsedGPR == 1 )
 			{
@@ -146,7 +153,12 @@ static typelib_TypeClass cpp2uno_call(
 					nr_gpr++;
 				}
 				else
-					pCppArgs[nPos] = pUnoArgs[nPos] = ovrflw++;
+				{
+					stackOffset = aarch64::align_stack_offset(
+						stackOffset, rParam.pTypeRef );
+					pCppArgs[nPos] = pUnoArgs[nPos] = ovrflw + stackOffset;
+					stackOffset += aarch64::stack_size( rParam.pTypeRef );
+				}
 			}
 		}
 		else // struct <= 16 bytes || ptr to complex value || ref
@@ -154,14 +166,20 @@ static typelib_TypeClass cpp2uno_call(
 			typelib_TypeDescription * pParamTypeDescr = 0;
 			TYPELIB_DANGER_GET( &pParamTypeDescr, rParam.pTypeRef );
 
-			void *pCppStack;
+			void *pCppStack = 0;
 			if ( nr_gpr < aarch64::MAX_GPR_REGS )
 			{
 				pCppArgs[nPos] = pCppStack = *gpreg++;
 				nr_gpr++;
 			}
 			else
-				pCppArgs[nPos] = pCppStack = *ovrflw++;
+			{
+				stackOffset = (stackOffset + sizeof(void *) - 1) &
+					~(sizeof(void *) - 1);
+				pCppArgs[nPos] = pCppStack =
+					*reinterpret_cast<void **>( ovrflw + stackOffset );
+				stackOffset += sizeof(void *);
+			}
 
 			if (! rParam.bIn) // is pure out
 			{
@@ -261,9 +279,9 @@ static typelib_TypeClass cpp2uno_call(
 
 
 //==================================================================================================
-extern "C" typelib_TypeClass cpp_vtable_call(
+extern "C" sal_uInt32 cpp_vtable_call(
 	sal_Int32 nFunctionIndex, sal_Int32 nVtableOffset,
-	void ** gpreg, void ** fpreg, void ** ovrflw,
+	void ** gpreg, void ** fpreg, unsigned char * ovrflw,
 	void * pIndirectReturn, // AArch64 x8 indirect-result pointer (0 if none)
 	sal_uInt64 * pRegisterReturn /* space for register return */ )
 {
@@ -299,7 +317,7 @@ extern "C" typelib_TypeClass cpp_vtable_call(
 
 	TypeDescription aMemberDescr( pTypeDescr->ppAllMembers[nMemberPos] );
 
-	typelib_TypeClass eRet;
+	sal_uInt32 eRet;
 	switch ( aMemberDescr.get()->eTypeClass )
 	{
 		case typelib_TypeClass_INTERFACE_ATTRIBUTE:
@@ -310,9 +328,10 @@ extern "C" typelib_TypeClass cpp_vtable_call(
 			if ( pTypeDescr->pMapMemberIndexToFunctionIndex[nMemberPos] == nFunctionIndex )
 			{
 				// is GET method
-				eRet = cpp2uno_call( pCppI, aMemberDescr.get(), pAttrTypeRef,
+					eRet = cpp2uno_call( pCppI, aMemberDescr.get(), pAttrTypeRef,
 						0, 0, // no params
 						gpreg, fpreg, ovrflw, pIndirectReturn, pRegisterReturn );
+					eRet = aarch64::get_return_kind( pAttrTypeRef );
 			}
 			else
 			{
@@ -384,6 +403,7 @@ extern "C" typelib_TypeClass cpp_vtable_call(
 										 pMethodTD->nParams,
 										 pMethodTD->pParams,
 										 gpreg, fpreg, ovrflw, pIndirectReturn, pRegisterReturn );
+					eRet = aarch64::get_return_kind( pMethodTD->pReturnTypeRef );
 				}
 			}
 			break;
@@ -538,6 +558,8 @@ unsigned char * bridges::cpp_uno::shared::VtableFactory::addLocalFunctions(
 
 //==================================================================================================
 void bridges::cpp_uno::shared::VtableFactory::flushCode(
-	unsigned char const *, unsigned char const * )
+	unsigned char const * begin, unsigned char const * end )
 {
+	sys_icache_invalidate(
+		const_cast<unsigned char *>(begin), end - begin );
 }

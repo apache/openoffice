@@ -217,8 +217,33 @@ public:
         { return rStruct; }
     virtual AllFloats SAL_CALL echoAllFloats(const AllFloats& rStruct) throw(com::sun::star::uno::RuntimeException)
         { return rStruct; }
+    virtual TwoFloats SAL_CALL echoTwoFloats(const TwoFloats& rStruct) throw(com::sun::star::uno::RuntimeException)
+        { return rStruct; }
+    virtual ThreeDoubles SAL_CALL echoThreeDoubles(const ThreeDoubles& rStruct) throw(com::sun::star::uno::RuntimeException)
+        { return rStruct; }
+    virtual MixedFloatLong SAL_CALL echoMixedFloatLong(const MixedFloatLong& rStruct) throw(com::sun::star::uno::RuntimeException)
+        { return rStruct; }
+    virtual OneByte SAL_CALL echoOneByte(const OneByte& rStruct) throw(com::sun::star::uno::RuntimeException)
+        { return rStruct; }
+    virtual ThreeLongs SAL_CALL echoThreeLongs(const ThreeLongs& rStruct) throw(com::sun::star::uno::RuntimeException)
+        { return rStruct; }
     virtual sal_Int32 SAL_CALL testPPCAlignment( sal_Int64, sal_Int64, sal_Int32, sal_Int64, sal_Int32 i2 ) throw(com::sun::star::uno::RuntimeException)
         { return i2; }
+    virtual sal_Int64 SAL_CALL testPackedStack(
+        sal_Int64, sal_Int64, sal_Int64, sal_Int64, sal_Int64, sal_Int64,
+        sal_Int64, sal_Int8 b, sal_Int8 c, sal_Int16 s, sal_Int32 l,
+        sal_Int8 d, sal_Int64 h) throw(com::sun::star::uno::RuntimeException)
+    {
+        return ((static_cast<sal_Int64>(b) << 56) |
+            (static_cast<sal_uInt64>(static_cast<sal_uInt8>(c)) << 48) |
+            (static_cast<sal_uInt64>(static_cast<sal_uInt16>(s)) << 32) |
+            static_cast<sal_uInt32>(l)) ^
+            (static_cast<sal_Int64>(d) << 24) ^ h;
+    }
+    virtual double SAL_CALL testFpStack(
+        double, double, double, double, double, double, double, double,
+        float f8, double d9) throw(com::sun::star::uno::RuntimeException)
+        { return static_cast<double>(f8) + d9; }
 
     virtual sal_Bool SAL_CALL getBool() throw(com::sun::star::uno::RuntimeException)
 		{ return _aData.Bool; }

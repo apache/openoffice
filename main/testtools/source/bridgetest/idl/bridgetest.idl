@@ -106,6 +106,37 @@ struct AllFloats
     float                      c;
     float                      d;
 };
+
+struct TwoFloats
+{
+    float                      a;
+    float                      b;
+};
+
+struct ThreeDoubles
+{
+    double                     a;
+    double                     b;
+    double                     c;
+};
+
+struct MixedFloatLong
+{
+    float                      a;
+    long                       b;
+};
+
+struct OneByte
+{
+    byte                       value;
+};
+
+struct ThreeLongs
+{
+    long                       a;
+    long                       b;
+    long                       c;
+};
 /**
  * complex types adding string, inteface, any
  */
@@ -261,11 +292,28 @@ interface XBridgeTestBase : com::sun::star::uno::XInterface
      * register return test 4
      */
     AllFloats echoAllFloats( [in] AllFloats aStruct );
+    TwoFloats echoTwoFloats( [in] TwoFloats aStruct );
+    ThreeDoubles echoThreeDoubles( [in] ThreeDoubles aStruct );
+    MixedFloatLong echoMixedFloatLong( [in] MixedFloatLong aStruct );
+
+    OneByte echoOneByte( [in] OneByte aStruct );
+    ThreeLongs echoThreeLongs( [in] ThreeLongs aStruct );
 
     /**
      * register return test 4 (i107182)
      */
     long testPPCAlignment( [in] hyper l1, [in] hyper l2, [in] long i1, [in] hyper l3, [in] long i2 );
+
+    hyper testPackedStack(
+        [in] hyper a0, [in] hyper a1, [in] hyper a2, [in] hyper a3,
+        [in] hyper a4, [in] hyper a5, [in] hyper a6,
+        [in] byte b, [in] byte c, [in] short s, [in] long l,
+        [in] byte d, [in] hyper h );
+
+    double testFpStack(
+        [in] double a0, [in] double a1, [in] double a2, [in] double a3,
+        [in] double a4, [in] double a5, [in] double a6, [in] double a7,
+        [in] float f8, [in] double d9 );
 
     [attribute] boolean                  Bool;
     [attribute] byte                     Byte;

@@ -240,9 +240,52 @@ public class BridgeTestObject : WeakBase, XRecursiveCall, XBridgeTest2
         return arg;
     }
 
+    public TwoFloats echoTwoFloats(/*[in]*/TwoFloats arg)
+    {
+        return arg;
+    }
+
+    public ThreeDoubles echoThreeDoubles(/*[in]*/ThreeDoubles arg)
+    {
+        return arg;
+    }
+
+    public MixedFloatLong echoMixedFloatLong(/*[in]*/MixedFloatLong arg)
+    {
+        return arg;
+    }
+
+    public OneByte echoOneByte(/*[in]*/OneByte arg)
+    {
+        return arg;
+    }
+
+    public ThreeLongs echoThreeLongs(/*[in]*/ThreeLongs arg)
+    {
+        return arg;
+    }
+
     public int testPPCAlignment( long l1, long l2, int i1, long l3, int i2 )
     {
         return i2;
+    }
+
+    // UNO byte maps to the unsigned System.Byte here, so the signed terms are
+    // recovered with an sbyte cast to match the other language bindings.
+    public long testPackedStack( long a0, long a1, long a2, long a3, long a4, long a5, long a6,
+                                 byte b, byte c, short s, int l, byte d, long h )
+    {
+        return ((((long)(sbyte)b) << 56) |
+                (((long)c) << 48) |
+                (((long)(ushort)s) << 32) |
+                ((long)(uint)l)) ^
+                (((long)(sbyte)d) << 24) ^ h;
+    }
+
+    public double testFpStack( double a0, double a1, double a2, double a3, double a4,
+                               double a5, double a6, double a7, float f8, double d9 )
+    {
+        return (double)f8 + d9;
     }
 
     // Attributes

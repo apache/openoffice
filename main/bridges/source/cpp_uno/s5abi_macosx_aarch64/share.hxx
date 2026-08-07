@@ -32,85 +32,37 @@ namespace CPPU_CURRENT_NAMESPACE
 
 void dummy_can_throw_anything( char const * );
 
-typedef unsigned _Unwind_Ptr __attribute__((__mode__(__pointer__)));
+// Donor types for RTTI synthesis.  Their type_info objects are emitted by the
+// compiler, so they carry the real libc++abi vtables and the platform's own
+// uniqueness convention.  They must stay ordinary namespace-scope classes with
+// no virtual functions and a single public non-virtual base -- exactly the
+// shape of a generated UNO exception -- so that typeid(RttiDonorDerived) is a
+// __si_class_type_info and typeid(RttiDonorBase) a __class_type_info.
+// Do not move them into an anonymous namespace.
+struct RttiDonorBase { sal_Int32 dummy; };
+struct RttiDonorDerived : public RttiDonorBase { sal_Int32 dummy2; };
 
-// ----- the following structure is compatible with the one declared in libunwind's unwind.h
-// (use forced types)
-
-struct _Unwind_Exception
-{
-    uint64_t exception_class;
-    void * exception_cleanup;
-    uintptr_t private_1;
-    uintptr_t private_2;
-};
-
-struct __cxa_exception
-{
-    /* From LLVM 10 a reserved member was added at the top of the struct on
-       64-bit targets. Who the hell does that?
-       https://reviews.llvm.org/rG674ec1eb16678b8addc02a4b0534ab383d22fa77
-       It is required on arm64 (Apple Silicon): the trailing _Unwind_Exception
-       must be 16-byte aligned within the allocation, and only WITH this member
-       does unwindHeader land at a 16-byte boundary (offset 96, vs a misaligned
-       88 without it).  Verified empirically against this host's libc++abi.
-       NOTE: Apple clang version != upstream LLVM version. */
-    void *reserved;
-    size_t referenceCount;
-    ::std::type_info *exceptionType;
-    void (*exceptionDestructor)(void *);
-    ::std::unexpected_handler unexpectedHandler;
-    ::std::terminate_handler terminateHandler;
-    __cxa_exception *nextException;
-    int handlerCount;
-    int handlerSwitchValue;
-    const unsigned char *actionRecord;
-    const unsigned char *languageSpecificData;
-    void *catchTemp;
-    void *adjustedPtr;
-    _Unwind_Exception unwindHeader;
-};
+// Itanium ABI object layouts (http://itanium-cxx-abi.github.io/cxx-abi/abi.html#rtti).
+// libc++abi does not publish __cxxabiv1::__class_type_info, and declaring a
+// look-alike class is not an option: it would get its own vtable, and
+// __class_type_info::can_catch() dynamic_casts the thrown type to the real
+// libc++abi class, so no typed handler would ever match.  We therefore build
+// raw storage in the ABI layout and install a borrowed, genuine vtable.
+struct RttiClassLayout   { void const * pVtable; sal_uIntPtr nName; };
+struct RttiSiClassLayout { void const * pVtable; sal_uIntPtr nName; void const * pBase; };
 
 extern "C" void *__cxa_allocate_exception(
     std::size_t thrown_size ) throw();
+extern "C" void __cxa_free_exception( void *thrown_exception ) throw();
 extern "C" void __cxa_throw (
     void *thrown_exception, std::type_info *tinfo, void (*dest) (void *) ) __attribute__((noreturn));
-
-struct __cxa_eh_globals
-{
-    __cxa_exception *caughtExceptions;
-    unsigned int uncaughtExceptions;
-};
-extern "C" __cxa_eh_globals *__cxa_get_globals () throw();
-
-// -----
-
-// on OSX 64bit the class_type_info classes are specified
-// in http://refspecs.linuxbase.org/cxxabi-1.86.html#rtti but
-// these details are not generally available in a public header
-// of most development environments. So we define them here.
-// NOTE: https://www.hexblog.com/wp-content/uploads/2012/06/Recon-2012-Skochinsky-Compiler-Internals.pdf
-class __class_type_info : public std::type_info
-{
-public:
-        explicit __class_type_info( const char* pRttiName)
-        : std::type_info( pRttiName)
-        {}
-};
-
-class __si_class_type_info : public __class_type_info
-{
-        const __class_type_info* mpBaseType;
-public:
-        explicit __si_class_type_info( const char* pRttiName, __class_type_info* pBaseType)
-        : __class_type_info( pRttiName), mpBaseType( pBaseType)
-        {}
-};
+extern "C" std::type_info *__cxa_current_exception_type();
 
 //==================================================================================================
 void raiseException(
     uno_Any * pUnoExc, uno_Mapping * pUno2Cpp );
 //==================================================================================================
 void fillUnoException(
-    __cxa_exception * header, uno_Any *, uno_Mapping * pCpp2Uno );
+    std::type_info const & type, void * exception, uno_Any *,
+    uno_Mapping * pCpp2Uno );
 }

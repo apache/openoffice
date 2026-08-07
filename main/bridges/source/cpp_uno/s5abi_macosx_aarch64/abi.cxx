@@ -46,7 +46,10 @@
 
 #include "abi.hxx"
 
+#include "bridges/cpp_uno/shared/types.hxx"
+
 #include <rtl/ustring.hxx>
+#include <string.h>
 
 using namespace aarch64;
 
@@ -69,6 +72,27 @@ HfaKind mergeHfa( HfaKind running, HfaKind seen )
     if ( running == HFA_NONE )
         return seen;
     return ( running == seen ) ? running : HFA_NONE;
+}
+
+bool isComplexAggregate( typelib_TypeDescriptionReference *pTypeRef )
+{
+    typelib_TypeDescription * pTypeDescr = 0;
+    TYPELIB_DANGER_GET( &pTypeDescr, pTypeRef );
+    const typelib_CompoundTypeDescription *pComp =
+        reinterpret_cast<const typelib_CompoundTypeDescription *>( pTypeDescr );
+    bool complex = pComp->pBaseTypeDescription != 0 &&
+        isComplexAggregate( pComp->pBaseTypeDescription->aBase.pWeakRef );
+    for ( sal_Int32 i = 0; !complex && i < pComp->nMembers; ++i )
+    {
+        typelib_TypeClass typeClass = pComp->ppTypeRefs[i]->eTypeClass;
+        if ( typeClass == typelib_TypeClass_STRUCT ||
+             typeClass == typelib_TypeClass_EXCEPTION )
+            complex = isComplexAggregate( pComp->ppTypeRefs[i] );
+        else
+            complex = !bridges::cpp_uno::shared::isSimpleType( typeClass );
+    }
+    TYPELIB_DANGER_RELEASE( pTypeDescr );
+    return complex;
 }
 
 // Recursively determine whether pTypeRef is (part of) a homogeneous
@@ -100,6 +124,9 @@ bool collectHfa( typelib_TypeDescriptionReference *pTypeRef, HfaKind &rKind, int
             const typelib_CompoundTypeDescription *pComp =
                 reinterpret_cast<const typelib_CompoundTypeDescription*>( pTypeDescr );
 
+            // rCount is cumulative over the whole recursion, so remember where
+            // this aggregate started in order to size-check it below.
+            const int nCountAtEntry = rCount;
             bool bOk = true;
 
             // Flatten base class first (its members precede ours in layout).
@@ -111,6 +138,17 @@ bool collectHfa( typelib_TypeDescriptionReference *pTypeRef, HfaKind &rKind, int
 
             for ( sal_Int32 i = 0; bOk && i < pComp->nMembers; ++i )
                 bOk = collectHfa( pComp->ppTypeRefs[i], rKind, rCount );
+
+            if ( bOk )
+            {
+                // Reject anything the elements do not tile exactly: only the
+                // elements contributed by THIS aggregate count towards its size.
+                sal_Int32 elementSize = rKind == HFA_FLOAT ? 4 : 8;
+                bOk = pTypeDescr->nSize ==
+                    ( rCount - nCountAtEntry ) * elementSize;
+                for ( sal_Int32 i = 0; bOk && i < pComp->nMembers; ++i )
+                    bOk = pComp->pMemberOffsets[i] % elementSize == 0;
+            }
 
             TYPELIB_DANGER_RELEASE( pTypeDescr );
             return bOk;
@@ -158,7 +196,7 @@ bool classifyAggregate( typelib_TypeDescriptionReference *pTypeRef, int &nUsedGP
 
 } // anonymous namespace
 
-bool aarch64::examine_argument( typelib_TypeDescriptionReference *pTypeRef, bool /*bInReturn*/, int &nUsedGPR, int &nUsedFPR )
+bool aarch64::examine_argument( typelib_TypeDescriptionReference *pTypeRef, bool bInReturn, int &nUsedGPR, int &nUsedFPR )
 {
     nUsedGPR = 0;
     nUsedFPR = 0;
@@ -199,7 +237,10 @@ bool aarch64::examine_argument( typelib_TypeDescriptionReference *pTypeRef, bool
 
         case typelib_TypeClass_STRUCT:
         case typelib_TypeClass_EXCEPTION:
-            return classifyAggregate( pTypeRef, nUsedGPR, nUsedFPR );
+            if ( bInReturn )
+                return classifyAggregate( pTypeRef, nUsedGPR, nUsedFPR );
+            nUsedGPR = 1; // generated UNO C++ bindings pass aggregates by const reference
+            return true;
 
         default:
 #if OSL_DEBUG_LEVEL > 1
@@ -212,10 +253,47 @@ bool aarch64::examine_argument( typelib_TypeDescriptionReference *pTypeRef, bool
 
 bool aarch64::return_in_hidden_param( typelib_TypeDescriptionReference *pTypeRef )
 {
+    switch ( pTypeRef->eTypeClass )
+    {
+        case typelib_TypeClass_STRING:
+        case typelib_TypeClass_TYPE:
+        case typelib_TypeClass_ANY:
+        case typelib_TypeClass_TYPEDEF:
+        case typelib_TypeClass_UNION:
+        case typelib_TypeClass_ARRAY:
+        case typelib_TypeClass_SEQUENCE:
+        case typelib_TypeClass_INTERFACE:
+            // These are C++ wrapper objects, not pointer-sized scalar values.
+            // Apple's arm64 C++ ABI returns them through the buffer in x8.
+            return true;
+        default:
+            break;
+    }
+
+    if ( pTypeRef->eTypeClass == typelib_TypeClass_STRUCT ||
+         pTypeRef->eTypeClass == typelib_TypeClass_EXCEPTION )
+    {
+        if ( isComplexAggregate( pTypeRef ) )
+            return true;
+    }
+
     int g, s;
     // Returned in registers iff examine_argument() says it fits; otherwise the
     // caller must pass an indirect-result buffer in x8.
     return !examine_argument( pTypeRef, true, g, s );
+}
+
+sal_uInt32 aarch64::get_return_kind( typelib_TypeDescriptionReference *pTypeRef )
+{
+    if ( pTypeRef->eTypeClass == typelib_TypeClass_STRUCT ||
+         pTypeRef->eTypeClass == typelib_TypeClass_EXCEPTION )
+    {
+        HfaKind kind = HFA_NONE;
+        int count = 0;
+        if ( collectHfa( pTypeRef, kind, count ) && count >= 1 && count <= 4 )
+            return kind == HFA_FLOAT ? RETURN_KIND_HFA_FLOAT : RETURN_KIND_HFA_DOUBLE;
+    }
+    return pTypeRef->eTypeClass;
 }
 
 void aarch64::fill_struct( typelib_TypeDescriptionReference *pTypeRef, const sal_uInt64 *pGPR, const double *pFPR, void *pStruct )
@@ -242,7 +320,7 @@ void aarch64::fill_struct( typelib_TypeDescriptionReference *pTypeRef, const sal
         {
             float *pDest = reinterpret_cast<float *>( pStruct );
             for ( int i = 0; i < nUsedFPR; ++i )
-                pDest[i] = static_cast<float>( pFPR[i] );
+                pDest[i] = *reinterpret_cast<const float *>( pFPR + i );
         }
         else // HFA_DOUBLE
         {
@@ -253,9 +331,32 @@ void aarch64::fill_struct( typelib_TypeDescriptionReference *pTypeRef, const sal
     }
     else
     {
-        // Non-HFA aggregate <= 16 bytes: raw copy of the 1-2 GPRs.
-        sal_uInt64 *pDest = reinterpret_cast<sal_uInt64 *>( pStruct );
-        for ( int i = 0; i < nUsedGPR; ++i )
-            pDest[i] = pGPR[i];
+        typelib_TypeDescription * pTypeDescr = 0;
+        TYPELIB_DANGER_GET( &pTypeDescr, pTypeRef );
+        // The registers contain up to 16 bytes, but the destination has the
+        // aggregate's exact size and need not be 64-bit aligned.
+        memcpy( pStruct, pGPR, pTypeDescr->nSize );
+        TYPELIB_DANGER_RELEASE( pTypeDescr );
     }
+}
+
+sal_uInt32 aarch64::align_stack_offset(
+    sal_uInt32 offset, typelib_TypeDescriptionReference *pTypeRef )
+{
+    typelib_TypeDescription * pTypeDescr = 0;
+    TYPELIB_DANGER_GET( &pTypeDescr, pTypeRef );
+    sal_uInt32 alignment = pTypeDescr->nAlignment;
+    TYPELIB_DANGER_RELEASE( pTypeDescr );
+    if ( alignment == 0 )
+        alignment = 1;
+    return (offset + alignment - 1) & ~(alignment - 1);
+}
+
+sal_uInt32 aarch64::stack_size( typelib_TypeDescriptionReference *pTypeRef )
+{
+    typelib_TypeDescription * pTypeDescr = 0;
+    TYPELIB_DANGER_GET( &pTypeDescr, pTypeRef );
+    sal_uInt32 size = pTypeDescr->nSize;
+    TYPELIB_DANGER_RELEASE( pTypeDescr );
+    return size;
 }

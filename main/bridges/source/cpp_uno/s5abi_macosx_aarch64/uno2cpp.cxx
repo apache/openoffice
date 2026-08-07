@@ -56,20 +56,20 @@ using namespace ::com::sun::star::uno;
 extern "C" void callVirtualFunction(
     sal_uInt64 pFunction, sal_uInt64 pIndirectRet,
     sal_uInt64 *pGPR, double *pFPR,
-    sal_uInt64 *pStack, sal_uInt32 nStackWords,
+    unsigned char *pStack, sal_uInt32 nStackBytes,
     sal_uInt64 *pGPRReturn, double *pFPRReturn );
 
 static void callVirtualMethod(void * pThis, sal_uInt32 nVtableIndex,
                               void * pRegisterReturn, typelib_TypeDescriptionReference * pReturnTypeRef, bool bSimpleReturn,
                               void * pIndirectReturn,
-                              sal_uInt64 *pStack, sal_uInt32 nStack,
+                              unsigned char *pStack, sal_uInt32 nStack,
                               sal_uInt64 *pGPR, sal_uInt32 nGPR,
                               double *pFPR, sal_uInt32 nFPR) __attribute__((noinline));
 
 static void callVirtualMethod(void * pThis, sal_uInt32 nVtableIndex,
                               void * pRegisterReturn, typelib_TypeDescriptionReference * pReturnTypeRef, bool bSimpleReturn,
                               void * pIndirectReturn,
-                              sal_uInt64 *pStack, sal_uInt32 nStack,
+                               unsigned char *pStack, sal_uInt32 nStack,
                               sal_uInt64 *pGPR, sal_uInt32 nGPR,
                               double *pFPR, sal_uInt32 nFPR)
 {
@@ -82,9 +82,10 @@ static void callVirtualMethod(void * pThis, sal_uInt32 nVtableIndex,
         fprintf( stderr, "\nFPR's (%d): ", nFPR );
         for ( unsigned int i = 0; i < nFPR; ++i )
             fprintf( stderr, "%f, ", pFPR[i] );
-        fprintf( stderr, "\nStack (%d): ", nStack );
+        // The overflow area is a packed byte image, not an array of words.
+        fprintf( stderr, "\nStack (%d bytes): ", nStack );
         for ( unsigned int i = 0; i < nStack; ++i )
-            fprintf( stderr, "0x%lx, ", pStack[i] );
+            fprintf( stderr, "%02x ", pStack[i] );
         fprintf( stderr, "\n" );
     }
 #endif
@@ -136,27 +137,40 @@ static void callVirtualMethod(void * pThis, sal_uInt32 nVtableIndex,
         *reinterpret_cast<sal_uInt64 *>( pRegisterReturn ) = gpReturn[0];
         break;
     case typelib_TypeClass_LONG:
+        *reinterpret_cast<sal_Int32 *>( pRegisterReturn ) =
+            *reinterpret_cast<sal_Int32 *>( &gpReturn[0] );
+        break;
     case typelib_TypeClass_UNSIGNED_LONG:
     case typelib_TypeClass_ENUM:
-        *reinterpret_cast<sal_uInt32 *>( pRegisterReturn ) = *reinterpret_cast<sal_uInt32*>( &gpReturn[0] );
+        *reinterpret_cast<sal_uInt32 *>( pRegisterReturn ) =
+            *reinterpret_cast<sal_uInt32 *>( &gpReturn[0] );
         break;
     case typelib_TypeClass_CHAR:
-    case typelib_TypeClass_SHORT:
     case typelib_TypeClass_UNSIGNED_SHORT:
         *reinterpret_cast<sal_uInt16 *>( pRegisterReturn ) = *reinterpret_cast<sal_uInt16*>( &gpReturn[0] );
         break;
+    case typelib_TypeClass_SHORT:
+        *reinterpret_cast<sal_Int16 *>( pRegisterReturn ) =
+            *reinterpret_cast<sal_Int16 *>( &gpReturn[0] );
+        break;
     case typelib_TypeClass_BOOLEAN:
-    case typelib_TypeClass_BYTE:
         *reinterpret_cast<sal_uInt8 *>( pRegisterReturn ) = *reinterpret_cast<sal_uInt8*>( &gpReturn[0] );
         break;
+    case typelib_TypeClass_BYTE:
+        *reinterpret_cast<sal_Int8 *>( pRegisterReturn ) =
+            *reinterpret_cast<sal_Int8 *>( &gpReturn[0] );
+        break;
     case typelib_TypeClass_FLOAT:
+        *reinterpret_cast<float *>( pRegisterReturn ) =
+            *reinterpret_cast<float *>( &fpReturn[0] );
+        break;
     case typelib_TypeClass_DOUBLE:
         *reinterpret_cast<double *>( pRegisterReturn ) = fpReturn[0];
         break;
     default:
         {
             sal_Int32 const nRetSize = pReturnTypeRef->pType->nSize;
-            if (bSimpleReturn && nRetSize <= 16 && nRetSize > 0)
+            if (bSimpleReturn && nRetSize > 0)
             {
                 // Register-returned aggregate: an HFA arrives in d0..d3, a
                 // non-HFA <= 16 bytes in x0,x1.  fill_struct picks the right one.
@@ -169,43 +183,52 @@ static void callVirtualMethod(void * pThis, sal_uInt32 nVtableIndex,
 
 //==================================================================================================
 
-// Macros for easier insertion of values to registers or stack
+// Macros for inserting values into registers. Stack arguments are handled
+// separately with a byte cursor because Apple packs them by size/alignment.
 // pSV - pointer to the source
 // nr - order of the value [will be increased if stored to register]
 // pFPR, pGPR - pointer to the registers
-// pDS - pointer to the stack [will be increased if stored here]
 
-// The pFPR slot holds the value to be loaded into a v register; the trampoline
-// loads it with LDR d<n>, so float and double are stored the same way here.
-#define INSERT_FLOAT_DOUBLE( pSV, nr, pFPR, pDS ) \
+// Each pFPR slot is the low 64 bits of a v register.  A float occupies only
+// the low 32 bits, while a double occupies all 64 bits.
+#define INSERT_FLOAT( pSV, nr, pFPR ) \
 	if ( nr < aarch64::MAX_FPR_REGS ) \
-		pFPR[nr++] = *reinterpret_cast<double *>( pSV ); \
-	else \
-		*pDS++ = *reinterpret_cast<sal_uInt64 *>( pSV ); // verbatim!
+	{ \
+		pFPR[nr] = 0; \
+		*reinterpret_cast<float *>( pFPR + nr++ ) = *reinterpret_cast<const float *>( pSV ); \
+	}
 
-#define INSERT_INT64( pSV, nr, pGPR, pDS ) \
-	if ( nr < aarch64::MAX_GPR_REGS ) \
-		pGPR[nr++] = *reinterpret_cast<sal_uInt64 *>( pSV ); \
-	else \
-		*pDS++ = *reinterpret_cast<sal_uInt64 *>( pSV );
+#define INSERT_DOUBLE( pSV, nr, pFPR ) \
+	if ( nr < aarch64::MAX_FPR_REGS ) \
+		pFPR[nr++] = *reinterpret_cast<const double *>( pSV );
 
-#define INSERT_INT32( pSV, nr, pGPR, pDS ) \
+#define INSERT_INT64( pSV, nr, pGPR ) \
 	if ( nr < aarch64::MAX_GPR_REGS ) \
-		pGPR[nr++] = *reinterpret_cast<sal_uInt32 *>( pSV ); \
-	else \
-		*pDS++ = *reinterpret_cast<sal_uInt32 *>( pSV );
+		pGPR[nr++] = *reinterpret_cast<const sal_uInt64 *>( pSV );
 
-#define INSERT_INT16( pSV, nr, pGPR, pDS ) \
+#define INSERT_INT32( pSV, nr, pGPR ) \
 	if ( nr < aarch64::MAX_GPR_REGS ) \
-		pGPR[nr++] = *reinterpret_cast<sal_uInt16 *>( pSV ); \
-	else \
-		*pDS++ = *reinterpret_cast<sal_uInt16 *>( pSV );
+		pGPR[nr++] = *reinterpret_cast<const sal_uInt32 *>( pSV );
 
-#define INSERT_INT8( pSV, nr, pGPR, pDS ) \
+#define INSERT_SIGNED_INT32( pSV, nr, pGPR ) \
 	if ( nr < aarch64::MAX_GPR_REGS ) \
-		pGPR[nr++] = *reinterpret_cast<sal_uInt8 *>( pSV ); \
-	else \
-		*pDS++ = *reinterpret_cast<sal_uInt8 *>( pSV );
+		pGPR[nr++] = static_cast<sal_Int64>( *reinterpret_cast<const sal_Int32 *>( pSV ) );
+
+#define INSERT_INT16( pSV, nr, pGPR ) \
+	if ( nr < aarch64::MAX_GPR_REGS ) \
+		pGPR[nr++] = *reinterpret_cast<const sal_uInt16 *>( pSV );
+
+#define INSERT_SIGNED_INT16( pSV, nr, pGPR ) \
+	if ( nr < aarch64::MAX_GPR_REGS ) \
+		pGPR[nr++] = static_cast<sal_Int64>( *reinterpret_cast<const sal_Int16 *>( pSV ) );
+
+#define INSERT_INT8( pSV, nr, pGPR ) \
+	if ( nr < aarch64::MAX_GPR_REGS ) \
+		pGPR[nr++] = *reinterpret_cast<const sal_uInt8 *>( pSV );
+
+#define INSERT_SIGNED_INT8( pSV, nr, pGPR ) \
+	if ( nr < aarch64::MAX_GPR_REGS ) \
+		pGPR[nr++] = static_cast<sal_Int64>( *reinterpret_cast<const sal_Int8 *>( pSV ) );
 
 //==================================================================================================
 
@@ -228,10 +251,9 @@ static void cpp_call(
 	sal_Int32 nParams, typelib_MethodParameter * pParams,
 	void * pUnoReturn, void * pUnoArgs[], uno_Any ** ppUnoExc )
 {
-	// Maxium space for [complex ret ptr], values | ptr ...
-	// (but will be used less - some of the values will be in pGPR and pFPR)
-  	sal_uInt64 *pStack = (sal_uInt64 *)__builtin_alloca( (nParams + 3) * sizeof(sal_uInt64) );
-  	sal_uInt64 *pStackStart = pStack;
+	unsigned char *pStackStart = static_cast<unsigned char *>(
+		__builtin_alloca( (nParams + 3) * sizeof(sal_uInt64) ) );
+	sal_uInt32 nStack = 0;
 
 	sal_uInt64 pGPR[aarch64::MAX_GPR_REGS];
 	sal_uInt32 nGPR = 0;
@@ -271,7 +293,7 @@ static void cpp_call(
 
 	// Push "this" pointer
 	void * pAdjustedThisPtr = reinterpret_cast< void ** >( pThis->getCppI() ) + aVtableSlot.offset;
-	INSERT_INT64( &pAdjustedThisPtr, nGPR, pGPR, pStack );
+	INSERT_INT64( &pAdjustedThisPtr, nGPR, pGPR );
 
 	// Args
 	void ** pCppArgs = (void **)alloca( 3 * sizeof(void *) * nParams );
@@ -292,33 +314,58 @@ static void cpp_call(
 		{
 			uno_copyAndConvertData( pCppArgs[nPos] = alloca( 8 ), pUnoArgs[nPos], pParamTypeDescr,
 									pThis->getBridge()->getUno2Cpp() );
+			bool onStack = false;
 
 			switch (pParamTypeDescr->eTypeClass)
 			{
 			case typelib_TypeClass_HYPER:
 			case typelib_TypeClass_UNSIGNED_HYPER:
-				INSERT_INT64( pCppArgs[nPos], nGPR, pGPR, pStack );
+				onStack = nGPR >= aarch64::MAX_GPR_REGS;
+				INSERT_INT64( pCppArgs[nPos], nGPR, pGPR );
 				break;
 			case typelib_TypeClass_LONG:
+				onStack = nGPR >= aarch64::MAX_GPR_REGS;
+				INSERT_SIGNED_INT32( pCppArgs[nPos], nGPR, pGPR );
+				break;
 			case typelib_TypeClass_UNSIGNED_LONG:
 			case typelib_TypeClass_ENUM:
-				INSERT_INT32( pCppArgs[nPos], nGPR, pGPR, pStack );
+				onStack = nGPR >= aarch64::MAX_GPR_REGS;
+				INSERT_INT32( pCppArgs[nPos], nGPR, pGPR );
 				break;
 			case typelib_TypeClass_SHORT:
+				onStack = nGPR >= aarch64::MAX_GPR_REGS;
+				INSERT_SIGNED_INT16( pCppArgs[nPos], nGPR, pGPR );
+				break;
 			case typelib_TypeClass_CHAR:
 			case typelib_TypeClass_UNSIGNED_SHORT:
-				INSERT_INT16( pCppArgs[nPos], nGPR, pGPR, pStack );
+				onStack = nGPR >= aarch64::MAX_GPR_REGS;
+				INSERT_INT16( pCppArgs[nPos], nGPR, pGPR );
+				break;
+			case typelib_TypeClass_BYTE:
+				onStack = nGPR >= aarch64::MAX_GPR_REGS;
+				INSERT_SIGNED_INT8( pCppArgs[nPos], nGPR, pGPR );
 				break;
 			case typelib_TypeClass_BOOLEAN:
-			case typelib_TypeClass_BYTE:
-				INSERT_INT8( pCppArgs[nPos], nGPR, pGPR, pStack );
+				onStack = nGPR >= aarch64::MAX_GPR_REGS;
+				INSERT_INT8( pCppArgs[nPos], nGPR, pGPR );
 				break;
 			case typelib_TypeClass_FLOAT:
+				onStack = nFPR >= aarch64::MAX_FPR_REGS;
+				INSERT_FLOAT( pCppArgs[nPos], nFPR, pFPR );
+				break;
 			case typelib_TypeClass_DOUBLE:
-				INSERT_FLOAT_DOUBLE( pCppArgs[nPos], nFPR, pFPR, pStack );
+				onStack = nFPR >= aarch64::MAX_FPR_REGS;
+				INSERT_DOUBLE( pCppArgs[nPos], nFPR, pFPR );
 				break;
 			default:
 				break;
+			}
+			if ( onStack )
+			{
+				nStack = aarch64::align_stack_offset( nStack, rParam.pTypeRef );
+				sal_uInt32 size = aarch64::stack_size( rParam.pTypeRef );
+				memcpy( pStackStart + nStack, pCppArgs[nPos], size );
+				nStack += size;
 			}
 
 			// no longer needed
@@ -353,7 +400,16 @@ static void cpp_call(
 				// no longer needed
 				TYPELIB_DANGER_RELEASE( pParamTypeDescr );
 			}
-			INSERT_INT64( &(pCppArgs[nPos]), nGPR, pGPR, pStack );
+			if ( nGPR < aarch64::MAX_GPR_REGS )
+			{
+				INSERT_INT64( &(pCppArgs[nPos]), nGPR, pGPR );
+			}
+			else
+			{
+				nStack = (nStack + sizeof(void *) - 1) & ~(sizeof(void *) - 1);
+				memcpy( pStackStart + nStack, &pCppArgs[nPos], sizeof(void *) );
+				nStack += sizeof(void *);
+			}
 		}
 	}
 
@@ -364,7 +420,7 @@ static void cpp_call(
                 pAdjustedThisPtr, aVtableSlot.index,
                 pCppReturn, pReturnTypeRef, bSimpleReturn,
                 pIndirectReturn,
-                pStackStart, ( pStack - pStackStart ),
+				pStackStart, nStack,
                 pGPR, nGPR,
                 pFPR, nFPR );
         } catch (Exception &) {
@@ -421,10 +477,13 @@ static void cpp_call(
 			uno_destructData( pCppReturn, pReturnTypeDescr, cpp_release );
 		}
 	}
- 	catch (...)
- 	{
-  		// fill uno exception
-		fillUnoException( CPPU_CURRENT_NAMESPACE::__cxa_get_globals()->caughtExceptions, *ppUnoExc, pThis->getBridge()->getCpp2Uno() );
+	catch (Exception & e)
+	{
+		// fill uno exception
+		std::type_info * type = CPPU_CURRENT_NAMESPACE::__cxa_current_exception_type();
+		CPPU_CURRENT_NAMESPACE::fillUnoException(
+			type ? *type : typeid(e), &e, *ppUnoExc,
+			pThis->getBridge()->getCpp2Uno() );
 
 		// temporary params
 		for ( ; nTempIndizes--; )
@@ -435,6 +494,24 @@ static void cpp_call(
 			TYPELIB_DANGER_RELEASE( ppTempParamTypeDescr[nTempIndizes] );
 		}
 		// return type
+		if (pReturnTypeDescr)
+			TYPELIB_DANGER_RELEASE( pReturnTypeDescr );
+	}
+	catch (...)
+	{
+		RuntimeException e(
+			OUString( RTL_CONSTASCII_USTRINGPARAM("C++ code threw unknown exception") ),
+			Reference< XInterface >() );
+		uno_type_any_constructAndConvert(
+			*ppUnoExc, &e, ::getCppuType( &e ).getTypeLibType(),
+			pThis->getBridge()->getCpp2Uno() );
+		for ( ; nTempIndizes--; )
+		{
+			sal_Int32 nIndex = pTempIndizes[nTempIndizes];
+			uno_destructData(
+				pCppArgs[nIndex], ppTempParamTypeDescr[nTempIndizes], cpp_release );
+			TYPELIB_DANGER_RELEASE( ppTempParamTypeDescr[nTempIndizes] );
+		}
 		if (pReturnTypeDescr)
 			TYPELIB_DANGER_RELEASE( pReturnTypeDescr );
 	}
