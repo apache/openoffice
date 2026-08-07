@@ -146,9 +146,13 @@ runtest : $(DLLDEST)$/uno_types.rdb $(DLLDEST)$/uno_services.rdb makefile.mk \
 $(DLLDEST)/services.rdb :
     $(COPY) $(SOLARXMLDIR)/ure/services.rdb $@
 
-$(DLLDEST)$/uno_types.rdb : $(SOLARBINDIR)$/udkapi.rdb
+# bridgetest.rdb is merged in below, so it must be a prerequisite too: without
+# it an edit to bridgetest.idl leaves a registry that disagrees with the freshly
+# generated headers, and the bridge then dispatches through stale vtable slots.
+# $? cannot be used to name the copy source once there are two prerequisites.
+$(DLLDEST)$/uno_types.rdb : $(SOLARBINDIR)$/udkapi.rdb $(BIN)$/bridgetest.rdb
 	echo $(DLLDEST)
-	$(GNUCOPY) $? $@
+	$(GNUCOPY) $(SOLARBINDIR)$/udkapi.rdb $@
     $(REGMERGE) $@ / $(BIN)$/bridgetest.rdb
 
 $(DLLDEST)$/bridgetest_client$(BATCH_SUFFIX) .ERRREMOVE: makefile.mk
