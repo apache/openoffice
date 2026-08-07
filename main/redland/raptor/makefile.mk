@@ -59,7 +59,8 @@ OOO_PATCH_FILES+=$(TARFILE_NAME).patch.os2
 CONFIGURE_DIR=
 CONFIGURE_ACTION=libtoolize && aclocal && autoconf && .$/configure
 # do not enable grddl parser (#i93768#)
-CONFIGURE_FLAGS=--disable-static --disable-gtk-doc --with-openssl-digests --enable-parsers="rdfxml ntriples turtle trig guess rss-tag-soup" --without-bdb --without-sqlite --without-mysql --without-postgresql --without-threestore       --with-regex-library=posix --with-decimal=none --with-www=xml --prefix=$(PWD)/$(OUT) --includedir=(PWD)$/$(INCCOM) --libdir=$(PWD)$/$(LB)
+# www=none: see the unix/macOS stanza near the bottom of this file for why
+CONFIGURE_FLAGS=--disable-static --disable-gtk-doc --with-openssl-digests --enable-parsers="rdfxml ntriples turtle trig guess rss-tag-soup" --without-bdb --without-sqlite --without-mysql --without-postgresql --without-threestore       --with-regex-library=posix --with-decimal=none --with-www=none --prefix=$(PWD)/$(OUT) --includedir=(PWD)$/$(INCCOM) --libdir=$(PWD)$/$(LB)
 BUILD_ACTION=$(GNUMAKE)
 BUILD_FLAGS+= -j$(EXTMAXPROCESS)
 BUILD_DIR=$(CONFIGURE_DIR)
@@ -78,7 +79,8 @@ raptor_LIBS+=$(MINGW_SHARED_LIBSTDCPP)
 CONFIGURE_DIR=
 CONFIGURE_ACTION=.$/configure
 # do not enable grddl parser (#i93768#)
-CONFIGURE_FLAGS=--disable-static --disable-gtk-doc --with-openssl-digests --enable-parsers="rdfxml ntriples turtle trig guess rss-tag-soup" --without-bdb --without-sqlite --without-mysql --without-postgresql --without-threestore       --with-regex-library=posix --with-decimal=none --with-www=xml --build=i586-pc-mingw32 --host=i586-pc-mingw32 lt_cv_cc_dll_switch="-shared" --prefix=$(PWD)/$(OUT) --includedir=(PWD)$/$(INCCOM) --libdir=$(PWD)$/$(LB) --CC="$(raptor_CC)" CPPFLAGS="-nostdinc $(INCLUDE)" LDFLAGS="-no-undefined -Wl,--enable-runtime-pseudo-reloc-v2,--export-all-symbols  -L$(ILIB:s/;/ -L/)" LIBS="$(raptor_LIBS)" OBJDUMP="$(WRAPCMD) objdump" LIBXML2LIB=$(LIBXML2LIB) XSLTLIB="$(XSLTLIB)"
+# www=none: see the unix/macOS stanza near the bottom of this file for why
+CONFIGURE_FLAGS=--disable-static --disable-gtk-doc --with-openssl-digests --enable-parsers="rdfxml ntriples turtle trig guess rss-tag-soup" --without-bdb --without-sqlite --without-mysql --without-postgresql --without-threestore       --with-regex-library=posix --with-decimal=none --with-www=none --build=i586-pc-mingw32 --host=i586-pc-mingw32 lt_cv_cc_dll_switch="-shared" --prefix=$(PWD)/$(OUT) --includedir=(PWD)$/$(INCCOM) --libdir=$(PWD)$/$(LB) --CC="$(raptor_CC)" CPPFLAGS="-nostdinc $(INCLUDE)" LDFLAGS="-no-undefined -Wl,--enable-runtime-pseudo-reloc-v2,--export-all-symbols  -L$(ILIB:s/;/ -L/)" LIBS="$(raptor_LIBS)" OBJDUMP="$(WRAPCMD) objdump" LIBXML2LIB=$(LIBXML2LIB) XSLTLIB="$(XSLTLIB)"
 BUILD_ACTION=$(GNUMAKE)
 BUILD_FLAGS+= -j$(EXTMAXPROCESS)
 BUILD_DIR=$(CONFIGURE_DIR)
@@ -137,7 +139,12 @@ XSLTLIB!:=$(XSLTLIB) # expand dmake variables for xslt-config
 CONFIGURE_DIR=
 CONFIGURE_ACTION=.$/configure
 # do not enable grddl parser (#i93768#)
-CONFIGURE_FLAGS=--with-threads --with-curl-config=no --with-icu-config=no --disable-static --disable-gtk-doc --enable-parsers="rdfxml ntriples turtle trig guess rss-tag-soup" --without-bdb --without-sqlite --without-mysql --without-postgresql --without-threestore --with-regex-library=posix --with-decimal=none --with-www=xml --prefix=$(PDW)/$(OUT) --includedir=$(PWD)/$(INCCOM) --libdir=$(PWD)/$(LB)
+# www=none: raptor's URI-fetch backend is both unused and unbuildable here.
+# Unused: grddl, the only parser that dereferences remote URIs, is excluded
+# above, and AOO's own RDF consumer (unoxml/source/rdf/librdf_repository.cxx)
+# only ever parses local streams; curl is off too (--with-curl-config=no below).
+# Unbuildable: the libxml backend calls xmlNanoHTTP*, removed in libxml2 2.12.
+CONFIGURE_FLAGS=--with-threads --with-curl-config=no --with-icu-config=no --disable-static --disable-gtk-doc --enable-parsers="rdfxml ntriples turtle trig guess rss-tag-soup" --without-bdb --without-sqlite --without-mysql --without-postgresql --without-threestore --with-regex-library=posix --with-decimal=none --with-www=none --prefix=$(PDW)/$(OUT) --includedir=$(PWD)/$(INCCOM) --libdir=$(PWD)/$(LB)
 .IF "$(SYSTEM_LIBXML)" == "NO"
 CONFIGURE_FLAGS+=--with-xml2-config=${SOLARVERSION}/${INPATH}/bin/xml2-config \
 	--with-xslt-config=${SOLARVERSION}/${INPATH}/bin/xslt-config
