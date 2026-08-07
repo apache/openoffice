@@ -72,6 +72,7 @@
 #include "cppuhelper/implbase3.hxx"
 #include "comphelper/anytostring.hxx"
 #include "vcl/msgbox.hxx"
+#include "vcl/threadex.hxx"
 #include "toolkit/helper/vclunohelper.hxx"
 #include "comphelper/processfactory.hxx"
 
@@ -90,6 +91,7 @@
 #include <dp_gui_handleversionexception.hxx>
 
 #include <queue>
+#include <boost/bind.hpp>
 #include <boost/shared_ptr.hpp>
 
 #if (defined(_MSC_VER) && (_MSC_VER < 1400))
@@ -253,6 +255,7 @@ private:
     void _disableExtension( ::rtl::Reference< ProgressCmdEnv > &rCmdEnv,
                             const uno::Reference< deployment::XPackage > &xPackage );
     void _checkForUpdates( const std::vector<uno::Reference<deployment::XPackage > > &vExtensionList );
+    void _solar_checkForUpdates( const std::vector<uno::Reference<deployment::XPackage > > &vExtensionList );
     void _acceptLicense( ::rtl::Reference< ProgressCmdEnv > &rCmdEnv,
                            const uno::Reference< deployment::XPackage > &xPackage );
 
@@ -938,10 +941,20 @@ void ExtensionCmdQueue::Thread::_removeExtension( ::rtl::Reference< ProgressCmdE
 void ExtensionCmdQueue::Thread::_checkForUpdates(
     const std::vector<uno::Reference<deployment::XPackage > > &vExtensionList )
 {
+    // Dialog::Execute() must run on the main thread; on Mac OS X only that thread
+    // pumps the Cocoa event queue (AquaSalInstance::Yield), so executing the
+    // update dialog on this worker thread would leave it visible but frozen.
+    vcl::solarthread::syncExecute(
+        boost::bind( &ExtensionCmdQueue::Thread::_solar_checkForUpdates,
+                     this, vExtensionList ) );
+}
+
+//------------------------------------------------------------------------------
+void ExtensionCmdQueue::Thread::_solar_checkForUpdates(
+    const std::vector<uno::Reference<deployment::XPackage > > &vExtensionList )
+{
     UpdateDialog* pUpdateDialog;
     std::vector< UpdateData > vData;
-
-    const ::vos::OGuard guard( Application::GetSolarMutex() );
 
     pUpdateDialog = new UpdateDialog( m_xContext, m_pDialogHelper? m_pDialogHelper->getWindow() : NULL, vExtensionList, &vData );
 
