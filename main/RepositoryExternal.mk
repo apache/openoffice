@@ -327,15 +327,31 @@ endif # SYSTEM_GRAPHITE
 ifeq ($(SYSTEM_ICU),YES)
 
 define gb_LinkTarget__use_icudata
+$(call gb_LinkTarget_set_include,$(1),\
+	$$(INCLUDE) \
+	$(ICU_CFLAGS) \
+)
 $(call gb_LinkTarget_add_libs,$(1),-licudata)
 endef
 define gb_LinkTarget__use_icui18n
+$(call gb_LinkTarget_set_include,$(1),\
+	$$(INCLUDE) \
+	$(ICU_CFLAGS) \
+)
 $(call gb_LinkTarget_add_libs,$(1),-licui18n)
 endef
 define gb_LinkTarget__use_icule
+$(call gb_LinkTarget_set_include,$(1),\
+	$$(INCLUDE) \
+	$(ICU_CFLAGS) \
+)
 $(call gb_LinkTarget_add_libs,$(1),-licule)
 endef
 define gb_LinkTarget__use_icuuc
+$(call gb_LinkTarget_set_include,$(1),\
+	$$(INCLUDE) \
+	$(ICU_CFLAGS) \
+)
 $(call gb_LinkTarget_add_libs,$(1),-licuuc)
 endef
 
