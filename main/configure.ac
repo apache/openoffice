@@ -5074,6 +5074,7 @@ if test -n "$with_system_icu" -o -n "$with_system_libs" && \
       ICU_MAJOR=`$ICUCONFIG --version | cut -d"." -f1`
       ICU_MINOR=`$ICUCONFIG --version | cut -d"." -f2`
       ICU_MICRO=`$ICUCONFIG --version | cut -d"." -f3`
+      ICU_CFLAGS=`$ICUCONFIG --cppflags`
    fi
 
    if test "$ICU_MAJOR" -ge "4"; then
@@ -5094,6 +5095,7 @@ AC_SUBST(SYSTEM_GENCMN)
 AC_SUBST(ICU_MAJOR)
 AC_SUBST(ICU_MINOR)
 AC_SUBST(ICU_MICRO)
+AC_SUBST(ICU_CFLAGS)
 
 dnl ===================================================================
 dnl Graphite

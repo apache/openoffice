@@ -142,7 +142,13 @@ $(WORKDIR)/CustomTarget/i18npool/source/collator/lrl_include.hxx : $(wildcard $(
 
 
 # fdo#31271 ")" reclassified in more recent ICU/Unicode Standards
+# icuversion.mk is only delivered when building the bundled ICU; with
+# SYSTEM_ICU=YES it's never produced, and even -include still lets make try
+# (and fail) to remake it via the generic Package delivery rule. ICU_MAJOR/
+# ICU_MINOR are already set from the system ICU in that case, so just skip it.
+ifneq ($(SYSTEM_ICU),YES)
 -include $(OUTDIR)/inc/icuversion.mk
+endif
 ICU_RECLASSIFIED_BRACKET := $(shell [ ${ICU_MAJOR} -ge 5 -o \( ${ICU_MAJOR} -eq 4 -a ${ICU_MINOR} -ge 4 \) ] && echo YES)
 
 
