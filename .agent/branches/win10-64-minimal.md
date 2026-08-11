@@ -79,8 +79,13 @@ names the compiler, and every toolchain sharing that config rule is MSVC —
 unlike `arch_defines` (per target CPU) or `crt_defines` (per CRT).
 
 It flips a live code branch tree-wide and appears on every compile command line,
-so **per-module builds cannot check it**: it needs a full green
-`//main/staging:install --config=winXP-x86`. Found 2026-08-11 while checking why
-upstream's clang port never hit the missing-`<time.h>` blocker.
+so **per-module builds cannot check it**. **Validated 2026-08-11 by a full green
+`//main/staging:install --config=winXP-x86`** — the only check that covers it.
+Found while checking why upstream's clang port never hit the missing-`<time.h>`
+blocker.
+
+`tools/source/fsys/dirent.cxx` keeps its `#include <time.h>`: with `MSC` defined
+Windows no longer compiles the line that needed it, but the include is correct
+for the non-Windows branch and inert here.
 
 This one is a correction owed to `common/20-build-conventions.md` as well.
