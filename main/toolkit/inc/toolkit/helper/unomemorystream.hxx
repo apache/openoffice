@@ -49,6 +49,17 @@ protected:
 public:
 	UnoMemoryStream( sal_uInt32 nInitSize = 0x3FFF, sal_uInt32 nResize = 0x3FFFF );
 
+	/*	NARROWED rather than widening a base, deliberately.  This class mixes
+		SvMemoryStream (bare destructor, so implicitly noexcept from C++11 on) with
+		cppu::OWeakObject (declared SAL_THROW( (RuntimeException) )), and the deduced
+		specification for this destructor came out weaker than SvMemoryStream's
+		-- C2694.  The other repair, giving SvMemoryStream the UNO specification,
+		does not work: SvMemoryStream itself overrides SvStream, so the conflict just
+		moves up, and fixing it there would put a throwing specification on the root
+		of every stream class in the tree.  throw() is legal here because it is more
+		restrictive than BOTH bases, and it is what SvStream already promises. */
+	~UnoMemoryStream() SAL_THROW( () ) {}	// body is what the compiler generated
+
 	// ::com::sun::star::uno::XInterface
     ::com::sun::star::uno::Any	SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException);
 	void						SAL_CALL acquire() throw()	{ OWeakObject::acquire(); }

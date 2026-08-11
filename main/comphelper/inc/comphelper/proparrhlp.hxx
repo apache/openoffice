@@ -28,6 +28,13 @@
 #include <comphelper/propagg.hxx>
 #include <cppuhelper/propshlp.hxx>
 #include <osl/mutex.hxx>
+
+/*	Only the NAME is needed: the destructor below names RuntimeException in an
+	exception specification, which does not require a complete type, so this
+	header stays free of any UNO include. */
+namespace com { namespace sun { namespace star { namespace uno {
+	class RuntimeException;
+} } } }
 #include <osl/diagnose.h>
 #include <rtl/instance.hxx>
 
@@ -59,7 +66,14 @@ protected:
 
 public:
 	OPropertyArrayUsageHelper();
-	virtual ~OPropertyArrayUsageHelper()
+	/*	Classes derived from this one also derive from a UNO base whose destructor
+		is declared SAL_THROW( (RuntimeException) ).  From C++11 on a destructor with
+		no written specification gets an implicit "never throws", so the derived
+		class's own deduced specification came out weaker than this one, which an
+		override may not be (C2694).  Inert under C++03, where no implicit
+		specification exists, and MSVC does not enforce a dynamic specification at
+		run time in any case -- it only uses it for this compile-time check. */
+	virtual ~OPropertyArrayUsageHelper() SAL_THROW( (::com::sun::star::uno::RuntimeException) )
 	{	// ARGHHHHHHH ..... would like to implement this after the class
         // definition (as we do with all other methods) but SUNPRO 5 compiler
         // (linker) doesn't like this

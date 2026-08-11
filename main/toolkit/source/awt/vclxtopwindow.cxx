@@ -65,7 +65,7 @@ VCLXTopWindow_Base::VCLXTopWindow_Base( const bool _bSupportSystemWindowPeer )
 {
 }
 
-VCLXTopWindow_Base::~VCLXTopWindow_Base()
+VCLXTopWindow_Base::~VCLXTopWindow_Base() SAL_THROW( (::com::sun::star::uno::RuntimeException) )
 {
 }
 
