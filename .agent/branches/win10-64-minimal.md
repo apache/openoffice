@@ -41,3 +41,39 @@ docs still describe the tree as it was before this branch. Land these on
   states compiler and arch in a fixed order, which is what makes a third
   toolchain (`aoo_msvc_vs2019_x64_def`) fit the same shape instead of inventing
   one.
+
+- **`20-build-conventions.md` — `snprintf`/`snwprintf` are no longer per-module.**
+  Both are injected by the VC9 toolchains through the `crt_defines` attr
+  (`build/toolchain/BUILD.bazel`), and are deliberately **empty** on the modern
+  toolchain: the UCRT declares the real `snprintf` and refuses to compile with
+  the name taken (`C1189`). Which CRT is in play is a toolchain property, so a
+  module BUILD cannot know it. The 130 per-module copies were swept out
+  2026-08-11.
+
+## Known gap — the global `MSC` define
+
+**Not yet fixed; it needs a full product build to land.** Upstream defines `MSC`
+for every TU on MSVC (`solenv/inc/settings.mk:878`, `CDEFS= … -D$(COM) …`, where
+`$(COM)` is `MSC`) — the same line this toolchain already borrows `$(CPUNAME)`
+(`INTEL`/`X86_64`) and `CPPU_ENV` from. We inject those two and missed `$(COM)`:
+`MSC` is set in only 10 module BUILD files.
+
+26 source files test it, and three modules test it **without** defining it, so
+they silently take the non-Windows branch. This affects `winXP-x86` today, not
+just the win10 port:
+
+- `tools/source/fsys/dirent.cxx` — **live**. Temp filenames come from
+  `clock()`+`getpid()` instead of `GetTickCount()`+`_getpid()`. It is also the
+  only reason the win10 port needed `#include <time.h>` there: with `MSC`
+  defined, Windows never compiles that line — which is why upstream's
+  clang/Apple-Silicon port never hit the blocker either.
+- `svl/source/inc/poolio.hxx` — debug-only (`DBG_UTIL && MSC`, the `SFX_TRACE`
+  macro).
+- `vcl/source/gdi/sallayout.cxx` — dead (inside `#ifdef MULTI_SL_DEBUG`, which
+  is commented out).
+
+The fix is to inject `MSC` from all three toolchains — it names the **compiler**,
+so neither `arch_defines` nor `crt_defines` — and drop the 10 per-module copies.
+Deferred here because it flips a live code branch tree-wide: per-module builds
+cannot validate it. Found 2026-08-11 while checking why upstream's clang port
+never hit the missing-`<time.h>` blocker.
