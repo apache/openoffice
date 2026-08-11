@@ -5,7 +5,8 @@ load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 _COPTS = [
     "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs",
     "/EHsc",
-    "/Dsnprintf=_snprintf",
+    # /Dsnprintf=_snprintf moved to the toolchain (crt_defines): it is a
+    # property of the CRT, and a modern UCRT rejects it (C1189).
     "/wd4061", "/wd4063", "/wd4127",
 ]
 

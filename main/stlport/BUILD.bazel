@@ -3,9 +3,51 @@ load("@rules_cc//cc:defs.bzl", "cc_library")
 # STLport system-STL compatibility shim.
 # Provides extensionless headers like <hash_set>, <hash_map> etc. that
 # map SGI/STLport extensions to C++11/TR1 equivalents for MSVC.
+#
+# The headers fall into two groups, and the split between them is what makes a
+# modern toolchain possible at all:
+#
+#   systemstl/       <hash_map> <hash_set> <slist> — GENUINE EXTENSIONS.  No
+#                    standard header has these names, so nothing is shadowed.
+#                    Each tests __cplusplus >= 201103L BEFORE _MSC_VER, so with
+#                    /Zc:__cplusplus they resolve to the standard <unordered_map>
+#                    / <unordered_set> / <forward_list> and need no help.  Always
+#                    on the include path.
+#
+#   systemstl/vc9/   <list> <map> <set> <vector> <functional> <numeric> — these
+#                    SHADOW standard headers, and reach the real one behind them
+#                    with `#include <../../VC/include/list>`, a path relative to
+#                    VC9's own include directory.  A modern toolset has no
+#                    <root>/VC/include, so the include fails outright (C1083),
+#                    and there is no MSVC spelling that can rescue it: the
+#                    portable escape is #include_next, which MSVC does not have,
+#                    and a plain #include <list> from inside <list> is swallowed
+#                    by the shim's own guard.  So on a modern toolchain these are
+#                    simply kept OFF the include path and the real headers are
+#                    used directly.
+#
+# CARRIED CONTENT, and the one thing this split gives up: two of the six add
+# declarations of their own rather than only forwarding — systemstl/vc9/vector
+# defines std::bit_vector and std_bitset_count(), and systemstl/vc9/functional
+# adds std::hash aliases.  A win10 build does not see those.  Nothing in the
+# bottom of the stack uses them, but a module that does will fail to compile on
+# win10 with an undeclared-identifier error naming one of them; the fix then is
+# to move that content into a normally-named header rather than to reinstate the
+# shadowing.
 cc_library(
     name = "stlport",
-    hdrs = glob(["systemstl/*", "systemstlguards/*.h"]),
-    includes = ["systemstl", "systemstlguards"],
+    hdrs = glob([
+        "systemstl/*",
+        "systemstl/vc9/*",
+        "systemstlguards/*.h",
+    ]),
+    includes = [
+        "systemstl",
+        "systemstlguards",
+    ] + select({
+        # VC9 only — see the note above.
+        "//build/constraints:is_win10": [],
+        "//conditions:default": ["systemstl/vc9"],
+    }),
     visibility = ["//visibility:public"],
 )

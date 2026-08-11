@@ -9,7 +9,8 @@ _COPTS = [
     "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs",
     # /Gz omitted: SAL_CALL is __cdecl, so default must be __cdecl too
     "/wd4061", "/wd4063", "/wd4127",  # ... rest of warning suppressions
-    "/Dsnprintf=_snprintf",  # VS2008 has no snprintf; map to _snprintf
+    # /Dsnprintf=_snprintf moved to the toolchain (crt_defines): it is a
+    # property of the CRT, and a modern UCRT rejects it (C1189).
 ]
 
 _DEFINES = [

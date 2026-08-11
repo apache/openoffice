@@ -113,7 +113,7 @@ small, mechanical source changes that are inert on VC9 and therefore backportabl
 | **M0** | *(done)* Measure. This document. |
 | **M1** | *(done — see below)* Toolchain discovery: find modern `cl.exe`/`lib.exe`/`link.exe` under `VS_MODERN_PATH` and the newest Windows 10 SDK, and expose the paths. |
 | **M2** | *(done — see below)* A third `cc_toolchain` on those paths, the `win10-x64` platform, `--config=win10-x64` with its own output tree. |
-| **M3** | Build **`//main/sal`** and climb: `sal` → `salhelper` → `store` → `registry` → `cppu` → `cppuhelper`. Bottom of the stack first, same order the Win64 work used. Fix blockers 1–6 as they are actually hit rather than preemptively. |
+| **M3** | *(done — see below)* Build **`//main/sal`** and climb: `sal` → `salhelper` → `store` → `registry` → `cppu` → `cppuhelper`. |
 | **M4** | Widen to the rest of the tree, module by module. This is where the real conformance number is learned; the 216-file sample only says where to expect trouble. |
 
 **Definition of done for every phase**: `--config=winXP-x86` unchanged. Same rule as the other
@@ -219,6 +219,80 @@ pointer size. The same target built and ran through `--config=winXP-x86` on VC9,
 
 **Nothing from the product tree has been compiled with this toolchain yet** — that is M3, and the
 six blockers are expected there, not here.
+
+## M3 — the bottom of the stack compiles
+
+`sal` → `salhelper` → `store` → `registry` → `cppu` → `cppuhelper`, all green under
+`--config=win10-x64`. The same six targets stay green under `--config=winXP-x86` and
+`--config=winXP-x64`, and `//main/tools/...` + `//main/comphelper/...` were rebuilt on VC9 x86
+(4151 actions, clean) because the stlport change below reaches every module that depends on it.
+
+### How the six predicted blockers actually landed
+
+| # | Predicted | What happened |
+| --- | --- | --- |
+| 1 | `/Dsnprintf=_snprintf` collides with the UCRT | Hit immediately. Fixed in the **toolchain**, not the modules |
+| 2 | `snprintf.h` redeclares `snprintf` | Header was already guarded — but the *implementation* was not. Same root cause, second site |
+| 3 | stlport shims use `#include_next` | Hit, and the real mechanism is different from the prediction |
+| 4 | `/permissive-` rejects string literals | **Never appeared.** We do not pass `/permissive-`, so it is a non-issue, not a fix |
+| 5 | destructor exception specifications | Hit exactly where M0 said: `cppuhelper/source/factory.cxx` |
+| 6 | `clock` undeclared | Not reached — it is in `tools`, which is M4 |
+
+**Blocker 1 belonged to the toolchain all along.** The define appears 134 times across 91 BUILD
+files, so patching call sites with `select()` was never the right shape. Which CRT is in play is a
+property of the toolchain, and a module BUILD file cannot know it — so `windows_cc_toolchain_config`
+gained a `crt_defines` attribute alongside `arch_defines`, set on both VC9 toolchains and empty on
+the modern one. The per-module copies are then redundant on VC9 and fatal on win10; the four in this
+stack are removed, and the remaining 87 files are M4's to sweep as it widens.
+
+**Blocker 2 had a second site.** `a77e965b54` guarded the *declarations* in
+`sal/inc/systools/win32/snprintf.h`. But uwinapi also *implements* C99 `snprintf`/`vsnprintf` in
+`systools/win32/uwinapi/sntprintf.c`, and defining those on top of the UCRT's declarations is the
+same C2375 conflict one layer down. Guarded the same way, on `_MSC_VER < 1900`. Nothing is lost:
+those symbols are exported only by `Uwinapi.def` (x86) and never by `Uwinapi64.def`, which exports
+`SHCreateItemFromParsingName` alone.
+
+**Blocker 3 was misdiagnosed, and the correction matters.** `#include_next` is not what bites —
+that branch is behind `HAVE_STL_INCLUDE_PATH`, which MSVC never defines. What bites is the MSVC
+branch itself: `#include <../../VC/include/list>`, a path relative to *VC9's own* include directory,
+which a modern toolset does not have (C1083). There is no MSVC spelling that rescues it — the
+portable escape is `#include_next`, which MSVC lacks, and a plain `#include <list>` from inside
+`<list>` is swallowed by the shim's own guard. So the headers must come off the include path, which
+is what "the include-path split" has to mean.
+
+The split is not the obvious one, though. The nine shims divide by whether they shadow a standard
+header, and that divides them by *branch order*:
+
+- `hash_map`, `hash_set`, `slist` test `__cplusplus >= 201103L` **before** `_MSC_VER`, so with
+  `/Zc:__cplusplus` they already resolve to `<unordered_map>` / `<unordered_set>` / `<forward_list>`
+  and need nothing. They are genuine extensions — no standard header has those names.
+- `list`, `map`, `set`, `vector`, `functional`, `numeric` test `_MSC_VER` first and can only reach
+  the real header through the VC9 path hack.
+
+So the six moved to `main/stlport/systemstl/vc9/`, which `includes` adds only when the target is not
+win10. **One caveat, recorded because it will resurface:** two of the six add declarations of their
+own rather than only forwarding — `vector` defines `std::bit_vector` and `std_bitset_count()`, and
+`functional` adds `std::hash` aliases. A win10 build does not see them. Nothing in this stack uses
+them; when a module does, the fix is to move that content into a normally-named header, not to
+reinstate the shadowing.
+
+**Blocker 5 was one line, and the cause is C++11 itself.** `OFactoryComponentHelper` derives from
+both `OSingleFactoryHelper` and `OComponentHelper`. The latter's destructor is declared
+`SAL_THROW( (RuntimeException) )`; the former's was bare, which from C++11 on means implicitly
+`noexcept`. The derived destructor's implicit specification is the union of its bases', so it came
+out less restrictive than one of them — C2694. Under C++03 destructors carry no implicit
+specification and the two already agreed, which is why VC9 never complained. Giving
+`~OSingleFactoryHelper` the same specification as its sibling base fixes it and is inert on VC9,
+where MSVC does not enforce a dynamic specification other than `throw()` at all.
+
+### One thing the modern compiler found on its own
+
+`main/store/source/storbase.cxx:139` formats a `sal_Size` with `%lu` (C4477). `sal_Size` is 64-bit
+on x64 and `%lu` is 32-bit on Windows, so the types genuinely disagree — on **both** x64 targets,
+not just win10; VC9 simply never warned. It is harmless as written (the value originates from a
+`sal_uInt16` and is the only variadic argument), so it is recorded rather than fixed: this branch
+does not churn source for warnings. A modern compiler pointed at old code is worth having for
+exactly this reason.
 
 ## How this branch differs from `win10-64-support`
 

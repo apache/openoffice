@@ -127,6 +127,10 @@ cc_toolchain_config(
     # injected globally too (mirrors solenv wntmsci*.mk); the per-module
     # CPPU_ENV=msci literals were stripped (would override this on x64).
     arch_defines           = ["_X86_=1", "INTEL", "CPPU_ENV=msci"],
+    # VS2008's MSVCRT exports only _snprintf/_snwprintf.  Injected globally
+    # here rather than per-module: which CRT is in play is a property of the
+    # toolchain, and a modern UCRT rejects the mapping outright (C1189).
+    crt_defines            = ["snprintf=_snprintf", "snwprintf=_snwprintf"],
     dbg_mode_debug_flag      = "",   # /Z7 embeds debug info in objects at compile; linker PDB (/DEBUG via --features=generate_pdb) uses the per-action mspdbsrv wrapper above for parallel links
     fastbuild_mode_debug_flag = "",  # same — /Z7 embeds, no compile-time PDB
     supports_parse_showincludes = False,
@@ -251,6 +255,8 @@ cc_toolchain_config(
     # in the x64 build requests the mscx bridge consistently (the per-module
     # CPPU_ENV=msci literals were stripped so they can't override this).
     arch_defines           = ["_AMD64_=1", "X86_64", "CPPU_ENV=mscx"],
+    # See the x86 toolchain above — same VC9 CRT, same shim.
+    crt_defines            = ["snprintf=_snprintf", "snwprintf=_snwprintf"],
     # ml64 rejects the x86 /coff and /Cx flags — assemble with /c only.
     masm_flags             = ["/c"],
     # x64 has no SafeSEH — drop /SAFESEH:NO from the generate_pdb link.

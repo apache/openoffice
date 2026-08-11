@@ -847,6 +847,20 @@ def _impl(ctx):
         for arch_def in ctx.attr.arch_defines:
             default_compile_flags_list.append("/D" + arch_def)
 
+        # CRT-shim defines, injected the same way and for the same reason: they
+        # are a property of the C RUNTIME, not of any module.  VS2008's MSVCRT
+        # exports only _snprintf/_snwprintf, so the whole tree is compiled with
+        # snprintf mapped onto them — 134 identical copies across 91 BUILD files.
+        # A modern UCRT declares the real, standard snprintf, and stdio.h refuses
+        # to be compiled with the name taken:
+        #   fatal error C1189: Macro definition of snprintf conflicts with
+        #                      Standard Library function declaration
+        # So this cannot stay in the modules — a module BUILD cannot know which
+        # CRT it is being compiled against, while the toolchain is exactly the
+        # thing that does.  VC9 sets it; the modern toolchain leaves it empty.
+        for crt_def in ctx.attr.crt_defines:
+            default_compile_flags_list.append("/D" + crt_def)
+
         # MASM flags differ by arch: the x86 ml.exe takes /c /coff /Cx (/Cx keeps
         # PUBLIC symbol case, /coff emits COFF).  The x64 ml64.exe REJECTS both
         # /coff and /Cx (it only emits COFF and preserves case), so the x64
@@ -1837,6 +1851,9 @@ cc_toolchain_config = rule(
         "abi_libc_version": attr.string(),
         "abi_version": attr.string(),
         "arch_defines": attr.string_list(default = []),
+        # CRT-shim defines (see the loop that consumes this).  Empty by default so
+        # a toolchain on a standards-conforming CRT gets nothing.
+        "crt_defines": attr.string_list(default = []),
         "archiver_flags": attr.string_list(default = []),
         "all_compile_flags": attr.string_list(),
         "compiler": attr.string(),

@@ -99,7 +99,17 @@ public:
 		, aImplementationName( rImplementationName_ )
 		{}
 
-    virtual ~OSingleFactoryHelper();
+	/*	The specification is required, not decorative. OFactoryComponentHelper
+		derives from this class AND from OComponentHelper, whose destructor is
+		declared SAL_THROW( (RuntimeException) ). From C++11 on a destructor is
+		implicitly noexcept, so leaving this one bare made the two bases
+		disagree: the derived destructor's implicit specification is the union,
+		which is less restrictive than this one -- C2694. Under C++03, which is
+		what the XP-era compiler uses, destructors carry no implicit
+		specification and the two already agreed, so this is inert there. MSVC
+		does not enforce a dynamic specification other than throw(), so it does
+		not constrain what this destructor may do either. */
+	virtual ~OSingleFactoryHelper() SAL_THROW( (::com::sun::star::uno::RuntimeException) );
 
 	// XInterface
 	Any SAL_CALL queryInterface( const Type & rType )
@@ -143,7 +153,7 @@ protected:
 	Sequence< OUString >			 aServiceNames;
 	OUString						 aImplementationName;
 };
-OSingleFactoryHelper::~OSingleFactoryHelper()
+OSingleFactoryHelper::~OSingleFactoryHelper() SAL_THROW( (RuntimeException) )
 {
 }
 
