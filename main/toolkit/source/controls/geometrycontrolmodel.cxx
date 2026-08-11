@@ -306,7 +306,7 @@
 	}
 
 	//--------------------------------------------------------------------
-	OGeometryControlModel_Base::~OGeometryControlModel_Base()
+	OGeometryControlModel_Base::~OGeometryControlModel_Base() SAL_THROW( () )
 	{
 		releaseAggregation();
 	}
