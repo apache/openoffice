@@ -102,6 +102,7 @@ http_file(
 
 register_toolchains("//build/toolchain:aoo_msvc_vs2008_x86_def")
 register_toolchains("//build/toolchain:aoo_msvc_vs2008_x64_def")
+register_toolchains("//build/toolchain:aoo_msvc_vs2019_x64_def")
 
 # Arch-neutral host JDK RUNTIME toolchain.  Registered in the root module so it
 # outranks rules_java's cpu-pinned remote-JDK runtime toolchains; it matches EVERY

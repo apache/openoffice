@@ -1,6 +1,21 @@
 load("@rules_cc//cc/toolchains:cc_toolchain.bzl", "cc_toolchain")
 load(":windows_cc_toolchain_config.bzl", "cc_toolchain_config")
-load("@vs_config//:paths.bzl", _VS = "VS", _VC = "VC", _SDK = "SDK", _MSVC_TMP = "MSVC_TMP", _LINK_WRAPPER = "LINK_WRAPPER", _PDB_LINK = "PDB_LINK", _PDB_LINK_X64 = "PDB_LINK_X64")
+load(
+    "@vs_config//:paths.bzl",
+    _LINK_WRAPPER = "LINK_WRAPPER",
+    _MSVC_BIN = "MSVC_BIN",
+    _MSVC_INCLUDE = "MSVC_INCLUDE",
+    _MSVC_LIB = "MSVC_LIB",
+    _MSVC_TMP = "MSVC_TMP",
+    _PDB_LINK = "PDB_LINK",
+    _PDB_LINK_X64 = "PDB_LINK_X64",
+    _SDK = "SDK",
+    _SDK10_BIN = "SDK10_BIN",
+    _SDK10_INCLUDE = "SDK10_INCLUDE",
+    _SDK10_LIB = "SDK10_LIB",
+    _VC = "VC",
+    _VS = "VS",
+)
 
 # VS2008 toolchains for Apache OpenOffice on Windows.
 #
@@ -149,6 +164,12 @@ toolchain(
         # //build/platforms:winXP-x86 (--config=winXP-x86, the default).
         "@platforms//cpu:x86_32",
         "@platforms//os:windows",
+        # Required, not decorative: toolchain resolution accepts a toolchain when
+        # the target platform satisfies ALL of target_compatible_with, so without
+        # the floor constraint this VC9 toolchain also matches a win10 platform —
+        # and being registered first in MODULE.bazel it would WIN there, silently
+        # compiling the win10 target with VS2008.  Each toolchain must pin its floor.
+        "//build/constraints:winxp",
     ],
     toolchain      = ":aoo_msvc_vs2008_x86",
     toolchain_type = "@bazel_tools//tools/cpp:toolchain_type",
@@ -269,7 +290,140 @@ toolchain(
         # Target = Win64.  Resolved against //build/platforms:winXP-x64 (--config=winXP-x64).
         "@platforms//cpu:x86_64",
         "@platforms//os:windows",
+        # The floor pin — see the note on the x86 toolchain above.  This one is
+        # load-bearing: without it BOTH this and aoo_msvc_vs2019_x64 match the
+        # win10-x64 platform (same cpu, same os), and registration order decides.
+        "//build/constraints:winxp",
     ],
     toolchain      = ":aoo_msvc_vs2008_x64",
+    toolchain_type = "@bazel_tools//tools/cpp:toolchain_type",
+)
+
+# ==================== x64 (win10, modern MSVC + Win10 SDK) ====================
+#
+# The third toolchain: same windows_cc_toolchain_config.bzl, same arch_defines
+# and same /Z7-embed debug story as aoo_msvc_vs2008_x64 — only the tool paths and
+# the header/library search paths differ.  That is the whole point of M2: prove a
+# modern compiler resolves and is driven by OUR config, before asking it to
+# compile anything (M3).
+#
+# Paths come from //build:vs_config_repo.bzl's discovery (M1) rather than being
+# spelled out: MSVC_BIN/MSVC_LIB/MSVC_INCLUDE for the toolset under
+# VS_MODERN_PATH, SDK10_* for the Windows 10 SDK.  Two shape differences from the
+# VC9 blocks above, both consequences of the SDK layout:
+#   * INCLUDE is FIVE directories, not three — the toolset's own headers plus the
+#     SDK's four split trees (ucrt, um, shared, winrt).  SDK v7.0 had one.
+#   * LIB is THREE, not three-of-a-different-kind — the toolset's, plus the SDK's
+#     ucrt and um, each already arch-qualified by discovery.
+# Hence the ";".join() over lists instead of hand-written concatenation.
+
+_VS2019_BIN = _MSVC_BIN["x64"]
+
+_VS2019_INCLUDE_DIRS = [_MSVC_INCLUDE] + _SDK10_INCLUDE
+
+_VS2019_LIB_DIRS = [_MSVC_LIB["x64"]] + _SDK10_LIB["x64"]
+
+cc_toolchain_config(
+    name = "aoo_msvc_vs2019_x64_config",
+    cpu = "x64_windows",  # MSVC toolchain-config selector (not the platform cpu)
+    compiler = "msvc-cl",
+    host_system_name = "local",
+    target_system_name = "local",
+    target_libc = "msvcrt",
+    abi_version = "local",
+    abi_libc_version = "local",
+    toolchain_identifier = "aoo_msvc_vs2019_x64",
+    msvc_env_tmp  = _MSVC_TMP,
+    # Host-x64 tools resolve their own c1/c2 DLLs from their own directory, so
+    # unlike the VC9 cross-tools case there is no second bin dir to add.  The SDK
+    # bin is on PATH for rc.exe/mt.exe.
+    msvc_env_path = _VS2019_BIN + ";" + _SDK10_BIN["x64"],
+    msvc_env_include = ";".join(_VS2019_INCLUDE_DIRS),
+    msvc_env_lib     = ";".join(_VS2019_LIB_DIRS),
+    tool_bin_path  = _VS2019_BIN,
+    msvc_cl_path   = _VS2019_BIN + "/cl.exe",
+    msvc_ml_path   = _VS2019_BIN + "/ml64.exe",
+    # No mspdbsrv wrapper and no separate PDB linker: LINK_WRAPPER exists solely
+    # because the VC9 linker has one mspdbsrv and no /FS (LNK1318 under parallel
+    # /DEBUG links).  This link.exe IS the modern one the VC9 toolchains borrow
+    # for exactly that reason, so it links its own PDBs in parallel unaided.
+    msvc_link_path = _VS2019_BIN + "/link.exe",
+    pdb_link_path  = _VS2019_BIN + "/link.exe",
+    msvc_lib_path  = _VS2019_BIN + "/lib.exe",
+    cxx_builtin_include_directories = _VS2019_INCLUDE_DIRS,
+    tool_paths = {
+        "ar":      _VS2019_BIN + "/lib.exe",
+        "cpp":     _VS2019_BIN + "/cl.exe",
+        "gcc":     _VS2019_BIN + "/cl.exe",
+        "gcov":    "wrapper/bin/msvc_nop.bat",
+        # Already forward-slashed by discovery — rules_foreign_cc runs
+        # paths.dirname() on this value and only recognizes '/'.
+        "ld":      _VS2019_BIN + "/link.exe",
+        "ml":      _VS2019_BIN + "/ml64.exe",
+        "nm":      "wrapper/bin/msvc_nop.bat",
+        "objcopy": "wrapper/bin/msvc_nop.bat",
+        "objdump": "wrapper/bin/msvc_nop.bat",
+        "strip":   "wrapper/bin/msvc_nop.bat",
+    },
+    archiver_flags     = ["/MACHINE:X64"],
+    default_link_flags = ["/MACHINE:X64"],
+    # Identical to aoo_msvc_vs2008_x64 — the C++/UNO environment and CPU defines
+    # are properties of the TARGET, not of the compiler that produced it.
+    arch_defines       = ["_AMD64_=1", "X86_64", "CPPU_ENV=mscx"],
+    # ml64 rejects the x86 /coff and /Cx flags — assemble with /c only.
+    masm_flags         = ["/c"],
+    # x64 has no SafeSEH — drop /SAFESEH:NO from the generate_pdb link.
+    pdb_link_flags     = ["/DEBUG:FASTLINK"],
+    # The two flags the M0 measurement was taken with.  /std:c++14 is passed
+    # explicitly rather than relying on the compiler default, and goes in
+    # cxx_flags (not all_compile_flags) so C compiles never see a C++ std flag.
+    # NOT c++17: the tree's ~46,000 dynamic exception specifications are legal at
+    # c++14 and ill-formed at c++17 — the single measurement that keeps the
+    # conformance tail short.  The config rule's own default_cpp_std feature is
+    # left disabled; it hardcodes /std:c++17.
+    cxx_flags          = ["/std:c++14"],
+    all_compile_flags  = ["/Zc:__cplusplus"],
+    dbg_mode_debug_flag       = "",
+    fastbuild_mode_debug_flag = "",
+    # Kept False for parity with the VC9 toolchains, so M3 changes one variable
+    # (the compiler) and not two.  A modern cl.exe CAN drive Bazel's
+    # /showIncludes header-dependency checking, which all three toolchains
+    # currently forgo — worth revisiting on its own, with its own evidence.
+    supports_parse_showincludes = False,
+    conly_flags = [],
+    link_flags  = [],
+)
+
+cc_toolchain(
+    name = "aoo_msvc_vs2019_x64",
+    toolchain_identifier = "aoo_msvc_vs2019_x64",
+    toolchain_config     = ":aoo_msvc_vs2019_x64_config",
+    all_files      = ":empty",
+    ar_files       = ":empty",
+    as_files       = ":empty",
+    compiler_files = ":empty",
+    dwp_files      = ":empty",
+    linker_files   = ":empty",
+    objcopy_files  = ":empty",
+    strip_files    = ":empty",
+    supports_param_files = 1,
+)
+
+toolchain(
+    name = "aoo_msvc_vs2019_x64_def",
+    exec_compatible_with = [
+        # Exec = this x64 Windows host.
+        "@platforms//cpu:x86_64",
+        "@platforms//os:windows",
+    ],
+    target_compatible_with = [
+        # Same cpu+os as aoo_msvc_vs2008_x64 — //build/constraints:win10 is the
+        # ONLY thing that separates the two.  Resolved against
+        # //build/platforms:win10-x64 (--config=win10-x64).
+        "@platforms//cpu:x86_64",
+        "@platforms//os:windows",
+        "//build/constraints:win10",
+    ],
+    toolchain      = ":aoo_msvc_vs2019_x64",
     toolchain_type = "@bazel_tools//tools/cpp:toolchain_type",
 )

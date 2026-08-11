@@ -112,7 +112,7 @@ small, mechanical source changes that are inert on VC9 and therefore backportabl
 | --- | --- |
 | **M0** | *(done)* Measure. This document. |
 | **M1** | *(done — see below)* Toolchain discovery: find modern `cl.exe`/`lib.exe`/`link.exe` under `VS_MODERN_PATH` and the newest Windows 10 SDK, and expose the paths. |
-| **M2** | A third `cc_toolchain` on those paths, the `win10-x64` platform uncommented, `--config=win10-x64` in `.bazelrc` with its own `--platform_suffix`/`--symlink_prefix` so its output tree never touches the `winXP-*` ones. |
+| **M2** | *(done — see below)* A third `cc_toolchain` on those paths, the `win10-x64` platform, `--config=win10-x64` with its own output tree. |
 | **M3** | Build **`//main/sal`** and climb: `sal` → `salhelper` → `store` → `registry` → `cppu` → `cppuhelper`. Bottom of the stack first, same order the Win64 work used. Fix blockers 1–6 as they are actually hit rather than preemptively. |
 | **M4** | Widen to the rest of the tree, module by module. This is where the real conformance number is learned; the 216-file sample only says where to expect trouble. |
 
@@ -165,6 +165,60 @@ archive, link and run a program using `<windows.h>`, `<string>` and `<time.h>` u
 `/std:c++14 /Zc:__cplusplus /Zc:wchar_t-` the M0 measurement used. `PDB_LINK`/`PDB_LINK_X64` — which
 the two VC9 toolchains use for their `generate_pdb` link path, and which now come from the shared
 toolset walk instead of a second copy of it — are byte-identical to before.
+
+## M2 — the third toolchain
+
+`--config=win10-x64` resolves `//build/toolchain:aoo_msvc_vs2019_x64`, which drives the M1-discovered
+compiler through the tree's own `windows_cc_toolchain_config.bzl`. Same `arch_defines`, same
+`/Z7`-embed debug story, same nop `tool_paths` as the VC9 x64 toolchain — only the tool paths and the
+search paths differ. Nothing else changes, on purpose: M3 should vary the compiler and nothing else.
+
+Two shape differences fall out of the SDK layout. `INCLUDE` is five directories rather than three
+(the toolset's own headers plus the SDK's four split trees), and `LIB` is the toolset's plus the
+SDK's `ucrt` and `um` — so both are `";".join()` over the lists M1 exposes instead of the
+hand-written concatenation the VC9 blocks use. The mspdbsrv link wrapper is *not* used: it exists
+only because the VC9 linker has one mspdbsrv and no `/FS`, and this `link.exe` is the modern one the
+VC9 toolchains already borrow for exactly that reason.
+
+`/std:c++14` is passed explicitly, in `cxx_flags` so C compiles never see a C++ std flag. Not
+`c++17` — the tree's ~46,000 dynamic exception specifications are legal at 14 and ill-formed at 17,
+which is the single measurement that keeps the conformance tail short. The config rule's own
+`default_cpp_std` feature stays disabled; it hardcodes `/std:c++17`.
+
+### The bug this phase had to fix first
+
+The VS2008 toolchains declared `target_compatible_with = [x86_64, windows]` and **no floor
+constraint**. Toolchain resolution accepts a toolchain when the target platform satisfies *all* of
+`target_compatible_with`, so `aoo_msvc_vs2008_x64` also matched the new `win10-x64` platform — and
+being registered first, it won. Verified, not reasoned: with the constraint removed,
+`--config=win10-x64` silently selects
+
+```
+toolchain //build/toolchain:aoo_msvc_vs2008_x64
+```
+
+i.e. the win10 target quietly compiled with VC9. Both VS2008 toolchains now pin
+`//build/constraints:winxp`, so each toolchain matches exactly one floor. This is the constraint
+dimension doing the job `//build/constraints/BUILD.bazel` was written for; the platform name alone
+would never have caught it.
+
+### Verified
+
+Resolution, all three configs:
+
+| config | selected toolchain |
+| --- | --- |
+| `winXP-x86` | `//build/toolchain:aoo_msvc_vs2008_x86` |
+| `winXP-x64` | `//build/toolchain:aoo_msvc_vs2008_x64` |
+| `win10-x64` | `//build/toolchain:aoo_msvc_vs2019_x64` |
+
+And end-to-end, with a throwaway `cc_binary` outside the product tree (built, run, then deleted):
+Bazel drove `…/14.29.30133/bin/Hostx64/x64/cl.exe`, emitted into
+`bazel-out/x64_windows-fastbuild-win10-x64/`, and the resulting binary ran and reported a 64-bit
+pointer size. The same target built and ran through `--config=winXP-x86` on VC9, unchanged.
+
+**Nothing from the product tree has been compiled with this toolchain yet** — that is M3, and the
+six blockers are expected there, not here.
 
 ## How this branch differs from `win10-64-support`
 
