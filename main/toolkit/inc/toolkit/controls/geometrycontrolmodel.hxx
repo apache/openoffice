@@ -104,7 +104,14 @@ FORWARD_DECLARE_INTERFACE( script, XNameContainer )
 		void releaseAggregation();
 
 	protected:
-		~OGeometryControlModel_Base();
+		/*	throw(), not throw(RuntimeException): this class derives from
+			WeakAggComponentImplHelper2, whose root base declares
+			~WeakAggComponentImplHelperBase() SAL_THROW( () ) explicitly.  Callers
+			have therefore ALWAYS been promised that destroying one of these does
+			not throw; C++11 merely makes the promise checkable, by giving this
+			destructor an implicit specification deduced from its other bases that
+			contradicted it (C2694).  Stating it matches what was already promised. */
+		~OGeometryControlModel_Base() SAL_THROW( () );
 
 		// XAggregation
 		::com::sun::star::uno::Any SAL_CALL queryAggregation( const ::com::sun::star::uno::Type& _aType ) throw(::com::sun::star::uno::RuntimeException);
