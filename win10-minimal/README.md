@@ -296,8 +296,8 @@ exactly this reason.
 
 ## M4 — widening, and the one decision that needs making
 
-`tools` and `comphelper` now build under `--config=win10-x64` on top of the M3 stack. All three
-configs stay green over `//main/tools/...` and `//main/comphelper/...`.
+`tools`, `comphelper` and `svl` now build under `--config=win10-x64` on top of the M3 stack. All
+three configs stay green over `//main/tools/...`, `//main/comphelper/...` and `//main/svl:svl`.
 
 Three things were finished here:
 
@@ -321,21 +321,44 @@ against the toolset's own include directory and nothing else on the search path.
 trick the VC9 branch uses, retargeted — no generated headers, no absolute paths, no `#include_next`.
 `systemstl/vc9/` now holds only the four pure forwarders (`list`, `map`, `set`, `numeric`).
 
-### Open: the C2694 family needs a decision
+### The C2694 family, and why it is paperwork rather than a defect
 
-`svl` stops on the same destructor-exception-specification error as `cppuhelper` did, but the fix
-that worked twice does not reach here. `SfxBroadcaster` and `SfxListener` have bare destructors —
-implicitly `noexcept` from C++11 — while classes deriving from them *also* derive from a UNO base
-whose destructor is `SAL_THROW( (RuntimeException) )`. Two ways out, and they differ in kind:
+`svl` hit the same destructor error as `cppuhelper` and `comphelper`, and it is worth writing down
+what the family actually is, because it will keep appearing and it looks alarming when it does not
+need to.
 
-| | What it costs |
-| --- | --- |
-| **(a)** give the two base destructors `SAL_THROW( (RuntimeException) )` | one edit fixes every derived class at once — but `RuntimeException` is not visible in `svl/brdcst.hxx`, so it means pulling `com/sun/star/uno/RuntimeException.hpp` into one of the most widely included low-level headers in the tree |
-| **(b)** give each *derived* class `SAL_THROW( () )` | needs no include anywhere — `throw()` is more restrictive than both bases, which is legal — but it must be repeated at every class that mixes an `Sfx*` base with a UNO one, and how many that is has not been counted |
+A virtual function's override may not make a **weaker** promise about throwing than the function it
+overrides — otherwise a caller holding a base pointer, who was told "this never throws", gets an
+object that can. That rule is old. What changed is **who makes the promise**: under C++03 a
+destructor with no written specification had none, so nothing could conflict; from C++11 on the
+compiler supplies one, and a class with nothing throwing inside it silently gets "never throws".
 
-(a) is one line and a coupling change; (b) is no coupling change and an unknown number of lines.
-This is a tree-wide call about include structure, so it is left open rather than decided here. The
-speculative (a) edit was made, shown to need the include, and backed out — `svl` is untouched.
+So at any class that inherits from *both* a pre-UNO hierarchy and a UNO one, three promises meet and
+only one of them was written by a person:
+
+| | Promise | Written by |
+| --- | --- | --- |
+| the `Sfx*`/legacy base | never throws | the compiler, as of C++11 |
+| the UNO base | may throw `RuntimeException` | a person |
+| the derived class | may throw `RuntimeException` | the compiler, deduced from its bases |
+
+The derived class is-a legacy base, which promised never to throw — so the deduced promise is too
+weak and the compile fails, in a class where nobody wrote a destructor at all. **None of these
+destructors actually throws.** It is a paperwork conflict, and the fix changes no generated code:
+MSVC does not enforce a dynamic specification at run time, but it does use it for this compile-time
+override check.
+
+You cannot opt out by staying on an older dialect — modern MSVC rejects `/std:c++03` outright
+(`D9002`), so C++14 is the floor and implicitly-`noexcept` destructors come with it.
+
+**The fix costs nothing, once you notice an exception specification does not need a complete type.**
+The obvious worry was that giving `SfxBroadcaster` and `SfxListener` the UNO specification means
+pulling `com/sun/star/uno/RuntimeException.hpp` into two of the most widely included low-level
+headers in the tree. It does not: both compilers accept a **forward declaration** there, verified
+directly. So each header gains a four-line namespace forward declaration and nothing else — no UNO
+include, no coupling change — and on GCC and Sun CC `SAL_THROW` expands to nothing at all, so the
+declaration is simply unused. One edit per base class then covers every derived class in the tree,
+rather than annotating each meeting point.
 
 ## How this branch differs from `win10-64-support`
 

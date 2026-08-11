@@ -87,7 +87,7 @@ void SfxBroadcaster::BroadcastInIdle( const SfxHint& rHint )
 
 // unregister all listeners
 
-SfxBroadcaster::~SfxBroadcaster()
+SfxBroadcaster::~SfxBroadcaster() SAL_THROW( (::com::sun::star::uno::RuntimeException) )
 {
 	DBG_DTOR(SfxBroadcaster, 0);
 
