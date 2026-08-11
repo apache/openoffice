@@ -826,6 +826,22 @@ def _impl(ctx):
             # Symbols/PDBs/-Od are unaffected.  Makes the per-module
             # /D_HAS_ITERATOR_DEBUGGING=0 copies redundant.
             "/D_HAS_ITERATOR_DEBUGGING=0",
+            # "the compiler is MSVC".  Upstream sets this for EVERY translation
+            # unit — solenv/inc/settings.mk:878,
+            #   CDEFS= -D$(OS) -D$(GUI) -D$(GVER) -D$(COM) -D$(CVER) …
+            # where $(COM) is MSC — and this toolchain already borrows two other
+            # defines from that same line ($(CPUNAME) via arch_defines, and
+            # CPPU_ENV).  $(COM) was the one that got missed, so MSC was set in
+            # only 10 module BUILD files and three modules that TEST it did not
+            # get it: tools, vcl and svl silently took the non-Windows branch.
+            # The live consequence was tools/source/fsys/dirent.cxx building temp
+            # filenames from clock()+getpid() instead of GetTickCount()+_getpid();
+            # it is also the only reason the modern toolchain ever needed <time.h>
+            # there, since with MSC defined Windows never compiles that line.
+            # Hardcoded rather than an attribute because it identifies the
+            # COMPILER, and all toolchains sharing this config rule are MSVC —
+            # unlike arch_defines (per target CPU) or crt_defines (per CRT).
+            "/DMSC",
             "/bigobj",
             "/Zm500",
             "/EHsc",

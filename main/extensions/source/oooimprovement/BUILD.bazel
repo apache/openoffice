@@ -22,7 +22,6 @@ cc_binary(
         "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
         "FULL_DESK", "SHAREDLIB", "_DLL_",
         "SUPD=680",
-        "MSC",
     ],
     linkshared = True,
     win_def_file = "//main/extensions:util/oooimprovement.def",

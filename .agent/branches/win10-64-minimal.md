@@ -50,9 +50,9 @@ docs still describe the tree as it was before this branch. Land these on
   module BUILD cannot know it. The 130 per-module copies were swept out
   2026-08-11.
 
-## Known gap — the global `MSC` define
+## The global `MSC` define — now injected by the toolchain
 
-**Not yet fixed; it needs a full product build to land.** Upstream defines `MSC`
+Upstream defines `MSC`
 for every TU on MSVC (`solenv/inc/settings.mk:878`, `CDEFS= … -D$(COM) …`, where
 `$(COM)` is `MSC`) — the same line this toolchain already borrows `$(CPUNAME)`
 (`INTEL`/`X86_64`) and `CPPU_ENV` from. We inject those two and missed `$(COM)`:
@@ -72,8 +72,15 @@ just the win10 port:
 - `vcl/source/gdi/sallayout.cxx` — dead (inside `#ifdef MULTI_SL_DEBUG`, which
   is commented out).
 
-The fix is to inject `MSC` from all three toolchains — it names the **compiler**,
-so neither `arch_defines` nor `crt_defines` — and drop the 10 per-module copies.
-Deferred here because it flips a live code branch tree-wide: per-module builds
-cannot validate it. Found 2026-08-11 while checking why upstream's clang port
-never hit the missing-`<time.h>` blocker.
+`MSC` is now injected globally from `default_compile_flags_list` in
+`build/toolchain/windows_cc_toolchain_config.bzl`, and the 21 per-module copies
+are gone. It is **hardcoded there rather than made an attribute** because it
+names the compiler, and every toolchain sharing that config rule is MSVC —
+unlike `arch_defines` (per target CPU) or `crt_defines` (per CRT).
+
+It flips a live code branch tree-wide and appears on every compile command line,
+so **per-module builds cannot check it**: it needs a full green
+`//main/staging:install --config=winXP-x86`. Found 2026-08-11 while checking why
+upstream's clang port never hit the missing-`<time.h>` blocker.
+
+This one is a correction owed to `common/20-build-conventions.md` as well.

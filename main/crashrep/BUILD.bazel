@@ -76,7 +76,6 @@ _DEFINES = [
     "WNT", "WIN32", 
     "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
     "SUPD=680",
-    "MSC",
     # UNICODE/_UNICODE are already #define'd inside soreport.cpp; omit here.
 ]
 
