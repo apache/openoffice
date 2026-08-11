@@ -6,7 +6,6 @@ _DEFINES = [
     "FULL_DESK",
     "SHAREDLIB", "_DLL_",
     "SOT_DLLIMPLEMENTATION",
-    "snprintf=_snprintf",
 ]
 
 _COPTS = [

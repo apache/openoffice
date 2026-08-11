@@ -10,7 +10,6 @@ _DEFINES = [
     "WNT", "GUI", "WIN32",
     "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
     "FULL_DESK",
-    "snprintf=_snprintf",
     "YY_NEVER_INTERACTIVE=1",   # suppress flex interactive-mode check
     "YY_NO_UNISTD_H",           # flex-generated code: don't include <unistd.h>
 ]

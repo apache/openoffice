@@ -4,7 +4,6 @@ _COPTS = [
     "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs",
     "/EHsc",
     "/Zc:wchar_t-",
-    "/Dsnprintf=_snprintf",
     "/Imain/jvmaccess/inc",
 ]
 

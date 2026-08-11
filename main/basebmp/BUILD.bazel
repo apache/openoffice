@@ -6,7 +6,6 @@ _DEFINES = [
     "FULL_DESK",
     "SHAREDLIB", "_DLL_",
     "BASEBMP_DLLIMPLEMENTATION",
-    "snprintf=_snprintf",
 ]
 
 _COMMON_COPTS = [

@@ -18,7 +18,6 @@ _SHLXT_DEFINES = [
     "_WIN32_IE=0x501",
     "Z_PREFIX",             # zlib: all symbols prefixed with z_
     "SYSTEM_ZLIB",          # consume <zlib.h> directly, not the OOo wrapper path
-    "snprintf=_snprintf",
     # The toolchain sets NOMINMAX globally, so windows.h never defines the
     # min/max macros.  Map them to MSVC intrinsics so GdiplusTypes.h and the
     # shlxthandler sources that use bare `min(a,b)` / `max(a,b)` still work.
@@ -41,7 +40,6 @@ _UNO_DEFINES = [
     "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
     "FULL_DESK",
     "SHAREDLIB", "_DLL_",
-    "snprintf=_snprintf",
 ]
 
 _UNO_COPTS = [

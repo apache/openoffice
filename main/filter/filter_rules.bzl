@@ -84,8 +84,6 @@ def graphic_filter(
             "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
             "CPPU_ENV=msci", "INTEL", "_X86_=1",
             "FULL_DESK", "SHAREDLIB", "_DLL_",
-            "snprintf=_snprintf",
-            "snwprintf=_snwprintf",
             "SUPD=680",
         ],
         win_def_file = win_def,

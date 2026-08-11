@@ -114,7 +114,7 @@ small, mechanical source changes that are inert on VC9 and therefore backportabl
 | **M1** | *(done — see below)* Toolchain discovery: find modern `cl.exe`/`lib.exe`/`link.exe` under `VS_MODERN_PATH` and the newest Windows 10 SDK, and expose the paths. |
 | **M2** | *(done — see below)* A third `cc_toolchain` on those paths, the `win10-x64` platform, `--config=win10-x64` with its own output tree. |
 | **M3** | *(done — see below)* Build **`//main/sal`** and climb: `sal` → `salhelper` → `store` → `registry` → `cppu` → `cppuhelper`. |
-| **M4** | Widen to the rest of the tree, module by module. This is where the real conformance number is learned; the 216-file sample only says where to expect trouble. |
+| **M4** | *(in progress — see below)* Widen to the rest of the tree, module by module. This is where the real conformance number is learned; the 216-file sample only says where to expect trouble. |
 
 **Definition of done for every phase**: `--config=winXP-x86` unchanged. Same rule as the other
 branch, same reason.
@@ -293,6 +293,49 @@ not just win10; VC9 simply never warned. It is harmless as written (the value or
 `sal_uInt16` and is the only variadic argument), so it is recorded rather than fixed: this branch
 does not churn source for warnings. A modern compiler pointed at old code is worth having for
 exactly this reason.
+
+## M4 — widening, and the one decision that needs making
+
+`tools` and `comphelper` now build under `--config=win10-x64` on top of the M3 stack. All three
+configs stay green over `//main/tools/...` and `//main/comphelper/...`.
+
+Three things were finished here:
+
+**The `snprintf` sweep.** 130 redundant defines across 88 BUILD files, removed now that the
+toolchain supplies them. Purely mechanical, and provably a no-op on VC9 — the identical define
+arrives from `crt_defines` instead.
+
+**Blocker 6, the last predicted one.** `clock` in `tools/source/fsys/dirent.cxx` wanted `<time.h>`.
+A second instance of the same class turned up immediately afterwards in
+`comphelper/source/property/opropertybag.cxx`, which uses `std::insert_iterator` and got `<iterator>`
+transitively from VC9's `<algorithm>`. Expect more of these: they are one line each and carry no
+risk, because a header the code already depends on cannot break by being named.
+
+**The stlport caveat came due, and the fix was better than expected.** M3 predicted that dropping
+`vector` and `functional` would cost `std::bit_vector` and the SGI emulation block; `comphelper`
+proved it within one module (`std::select1st`, then `std::insert_iterator`). Those two shims turn
+out to have *two* jobs — forward to the real header, and declare SGI extensions that ~40 files rely
+on — and only the first is VC9-specific. So they moved back onto the always-on include path and each
+grew a `_MSC_VER >= 1900` branch reaching the real header at `<../include/vector>`, which resolves
+against the toolset's own include directory and nothing else on the search path. That is the same
+trick the VC9 branch uses, retargeted — no generated headers, no absolute paths, no `#include_next`.
+`systemstl/vc9/` now holds only the four pure forwarders (`list`, `map`, `set`, `numeric`).
+
+### Open: the C2694 family needs a decision
+
+`svl` stops on the same destructor-exception-specification error as `cppuhelper` did, but the fix
+that worked twice does not reach here. `SfxBroadcaster` and `SfxListener` have bare destructors —
+implicitly `noexcept` from C++11 — while classes deriving from them *also* derive from a UNO base
+whose destructor is `SAL_THROW( (RuntimeException) )`. Two ways out, and they differ in kind:
+
+| | What it costs |
+| --- | --- |
+| **(a)** give the two base destructors `SAL_THROW( (RuntimeException) )` | one edit fixes every derived class at once — but `RuntimeException` is not visible in `svl/brdcst.hxx`, so it means pulling `com/sun/star/uno/RuntimeException.hpp` into one of the most widely included low-level headers in the tree |
+| **(b)** give each *derived* class `SAL_THROW( () )` | needs no include anywhere — `throw()` is more restrictive than both bases, which is legal — but it must be repeated at every class that mixes an `Sfx*` base with a UNO one, and how many that is has not been counted |
+
+(a) is one line and a coupling change; (b) is no coupling change and an unknown number of lines.
+This is a tree-wide call about include structure, so it is left open rather than decided here. The
+speculative (a) edit was made, shown to need the include, and backed out — `svl` is untouched.
 
 ## How this branch differs from `win10-64-support`
 

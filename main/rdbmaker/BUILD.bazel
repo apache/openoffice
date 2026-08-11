@@ -3,7 +3,6 @@ load("@rules_cc//cc:defs.bzl", "cc_binary")
 _COPTS = [
     "/Zm500", "/Zc:forScope", "/GR", "/nologo", "/Gs",
     "/EHsc",
-    "/Dsnprintf=_snprintf",
     "/wd4061", "/wd4063", "/wd4127",
     # rdbmaker/inc holds its own <codemaker/*.hxx> (distinct from main/codemaker/inc)
     "/Imain/rdbmaker/inc",

@@ -75,7 +75,14 @@ namespace comphelper
 	    virtual ::com::sun::star::uno::Any				getPropertyDefaultByHandle(sal_Int32 nHandle) const;
 
     protected:
-        virtual ~OPropertyStateHelper();
+        /*	Same conflict as cppuhelper's OSingleFactoryHelper: OStatefulPropertySet
+		derives from this class AND from OWeakObject, whose destructor is declared
+		SAL_THROW( (RuntimeException) ).  From C++11 on a destructor is implicitly
+		noexcept, so a bare one here makes the derived destructor's implicit
+		specification -- the union of its bases' -- less restrictive than this one
+		(C2694).  Inert under C++03, where destructors carry no implicit
+		specification, and MSVC does not enforce a dynamic specification anyway. */
+        virtual ~OPropertyStateHelper() SAL_THROW( (::com::sun::star::uno::RuntimeException) );
 
 	    void firePropertyChange(sal_Int32 nHandle, const ::com::sun::star::uno::Any& aNewValue, const ::com::sun::star::uno::Any& aOldValue);
 

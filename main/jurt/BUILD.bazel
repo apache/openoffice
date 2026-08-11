@@ -7,7 +7,6 @@ _DEFINES = [
     "WINVER=0x0500", "_WIN32_WINNT=0x0500", "_WIN32_IE=0x0500",
     
     "SHAREDLIB", "_DLL_",
-    "snprintf=_snprintf",
 ]
 
 # ── jurt.jar ──────────────────────────────────────────────────────────────────

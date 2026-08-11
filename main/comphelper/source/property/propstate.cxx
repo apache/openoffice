@@ -82,7 +82,7 @@ namespace comphelper
         ::cppu::IEventNotificationHook *i_pFireEvents)
         :   ::cppu::OPropertySetHelper(rBHlp, i_pFireEvents) { }
 
-    OPropertyStateHelper::~OPropertyStateHelper() {}
+    OPropertyStateHelper::~OPropertyStateHelper() SAL_THROW( (::com::sun::star::uno::RuntimeException) ) {}
 
     //---------------------------------------------------------------------
     void OPropertyStateHelper::firePropertyChange(sal_Int32 nHandle, const  ::com::sun::star::uno::Any& aNewValue, const  ::com::sun::star::uno::Any& aOldValue)

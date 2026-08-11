@@ -51,7 +51,6 @@ cc_library(
         "WIN32",
         "CPPDBC_EXPORTS",
         "CPPCONN_LIB_BUILD",
-        "snprintf=_snprintf",
     ],
     deps = [
         "@mariadb-connector-c//:mariadb",

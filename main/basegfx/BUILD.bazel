@@ -8,7 +8,6 @@ _DEFINES = [
     "FULL_DESK",
     "SHAREDLIB", "_DLL_",
     "BASEGFX_DLLIMPLEMENTATION",
-    "snprintf=_snprintf",
 ]
 
 _COMMON_COPTS = [

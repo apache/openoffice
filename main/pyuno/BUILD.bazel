@@ -15,7 +15,6 @@ _COPTS = [
     "/EHsc",
     # wchar_t as typedef (unsigned short) — matches sal_Unicode ABI
     "/Zc:wchar_t-",
-    "/Dsnprintf=_snprintf",
     "/Imain/pyuno/inc",
     "/Imain/pyuno/source/module",
 ] + select({

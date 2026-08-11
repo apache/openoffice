@@ -38,6 +38,9 @@
 
 #include <algorithm>
 #include <functional>
+// std::insert_iterator, used below.  VC9's <algorithm> dragged <iterator> in
+// transitively, a modern one does not.
+#include <iterator>
 
 
 //--------------------------------------------------------------------------
