@@ -3,10 +3,36 @@ load(":windows_cc_toolchain_config.bzl", "cc_toolchain_config")
 load("@vs_config//:paths.bzl", _VS = "VS", _VC = "VC", _SDK = "SDK", _MSVC_TMP = "MSVC_TMP", _LINK_WRAPPER = "LINK_WRAPPER", _PDB_LINK = "PDB_LINK", _PDB_LINK_X64 = "PDB_LINK_X64")
 
 # VS2008 toolchains for Apache OpenOffice on Windows.
-# Two targets share one windows_cc_toolchain_config.bzl, parameterized by arch:
-#   * x86 (cc_toolchain_x86_vs2008) — the default build, VC\bin\{cl,ml,link}.exe,
+#
+# ── NAMING CONVENTION ────────────────────────────────────────────────────────
+# Every target here — and every toolchain_identifier — is
+#
+#     aoo_msvc_<compiler>_<arch>
+#
+# and the two components exist to answer two different questions in Bazel's own
+# output (--toolchain_resolution_debug, crosstool errors, `bazel config`):
+#
+#   aoo_       WHOSE toolchain this is.  Bazel/rules_cc auto-configures its own
+#              MSVC toolchains and names them `msvc_x64` / `msvc_x86` — near
+#              enough to the old names here (`msvc_x64_vs2008`) to be misread at
+#              a glance.  Anything without this prefix is NOT ours.  Today that
+#              distinction cannot actually go wrong, because .bazelrc sets
+#              BAZEL_DO_NOT_DETECT_CPP_TOOLCHAIN=1 and the stock @local_config_cc
+#              is generated empty — but the prefix is what keeps it unambiguous
+#              if auto-detection is ever switched back on.
+#   <compiler> WHICH compiler: vs2008 = the legacy VC9 build (the shipping
+#              toolchain and the regression baseline), vs2019 = the modern
+#              toolset + Windows 10 SDK.  Named after the compiler rather than
+#              "legacy"/"modern" so a third one slots in without a rename, and
+#              rather than after the target Windows floor (winxp/win10) because
+#              the two axes can decouple — the floor is carried by
+#              //build/constraints:win_version, which is what resolution
+#              actually keys on.
+#
+# Two VS2008 targets share one windows_cc_toolchain_config.bzl, parameterized by arch:
+#   * x86 (aoo_msvc_vs2008_x86) — the default build, VC\bin\{cl,ml,link}.exe,
 #     SDK\lib + VC\LIB, /MACHINE:X86, ml /coff /Cx.  Targets @platforms//cpu:x86_32.
-#   * x64 (cc_toolchain_x64_vs2008) — the Win64 build, VC\bin\x86_amd64 cross tools
+#   * x64 (aoo_msvc_vs2008_x64) — the Win64 build, VC\bin\x86_amd64 cross tools
 #     (cl/ml64/link) + VC\bin\amd64\lib.exe, SDK\lib\x64 + VC\LIB\amd64,
 #     /MACHINE:X64, ml64 /c only.  Targets @platforms//cpu:x86_64.
 # The exec platform for both is this x64 Windows host (@platforms//cpu:x86_64);
@@ -17,7 +43,7 @@ load("@vs_config//:paths.bzl", _VS = "VS", _VC = "VC", _SDK = "SDK", _MSVC_TMP =
 filegroup(name = "empty", srcs = [])
 
 cc_toolchain_config(
-    name = "vs2008_x86_config",
+    name = "aoo_msvc_vs2008_x86_config",
     cpu = "x64_windows",
     compiler = "msvc-cl",
     host_system_name = "local",
@@ -25,7 +51,7 @@ cc_toolchain_config(
     target_libc = "msvcrt",
     abi_version = "local",
     abi_libc_version = "local",
-    toolchain_identifier = "msvc_x86_vs2008",
+    toolchain_identifier = "aoo_msvc_vs2008_x86",
     msvc_env_tmp  = _MSVC_TMP,
     msvc_env_path = (
         _SDK + "\\bin;" +
@@ -96,9 +122,9 @@ cc_toolchain_config(
 )
 
 cc_toolchain(
-    name = "cc_toolchain_x86_vs2008",
-    toolchain_identifier = "msvc_x86_vs2008",
-    toolchain_config     = ":vs2008_x86_config",
+    name = "aoo_msvc_vs2008_x86",
+    toolchain_identifier = "aoo_msvc_vs2008_x86",
+    toolchain_config     = ":aoo_msvc_vs2008_x86_config",
     all_files      = ":empty",
     ar_files       = ":empty",
     as_files       = ":empty",
@@ -111,7 +137,7 @@ cc_toolchain(
 )
 
 toolchain(
-    name = "cc_toolchain_x86_vs2008_def",
+    name = "aoo_msvc_vs2008_x86_def",
     exec_compatible_with = [
         # Exec = this x64 Windows host.
         "@platforms//cpu:x86_64",
@@ -124,14 +150,14 @@ toolchain(
         "@platforms//cpu:x86_32",
         "@platforms//os:windows",
     ],
-    toolchain      = ":cc_toolchain_x86_vs2008",
+    toolchain      = ":aoo_msvc_vs2008_x86",
     toolchain_type = "@bazel_tools//tools/cpp:toolchain_type",
 )
 
 # ============================ x64 (Win64) toolchain ============================
 
 cc_toolchain_config(
-    name = "vs2008_x64_config",
+    name = "aoo_msvc_vs2008_x64_config",
     cpu = "x64_windows",  # MSVC toolchain-config selector (not the platform cpu)
     compiler = "msvc-cl",
     host_system_name = "local",
@@ -139,7 +165,7 @@ cc_toolchain_config(
     target_libc = "msvcrt",
     abi_version = "local",
     abi_libc_version = "local",
-    toolchain_identifier = "msvc_x64_vs2008",
+    toolchain_identifier = "aoo_msvc_vs2008_x64",
     msvc_env_tmp  = _MSVC_TMP,
     # PATH: the x86_amd64 CROSS cl/link (host-x86, target-x64) resolve their own
     # c1/c2 DLLs from their dir, but mspdb/1033 live in VC\BIN — so both dirs are
@@ -218,9 +244,9 @@ cc_toolchain_config(
 )
 
 cc_toolchain(
-    name = "cc_toolchain_x64_vs2008",
-    toolchain_identifier = "msvc_x64_vs2008",
-    toolchain_config     = ":vs2008_x64_config",
+    name = "aoo_msvc_vs2008_x64",
+    toolchain_identifier = "aoo_msvc_vs2008_x64",
+    toolchain_config     = ":aoo_msvc_vs2008_x64_config",
     all_files      = ":empty",
     ar_files       = ":empty",
     as_files       = ":empty",
@@ -233,7 +259,7 @@ cc_toolchain(
 )
 
 toolchain(
-    name = "cc_toolchain_x64_vs2008_def",
+    name = "aoo_msvc_vs2008_x64_def",
     exec_compatible_with = [
         # Exec = this x64 Windows host.
         "@platforms//cpu:x86_64",
@@ -244,6 +270,6 @@ toolchain(
         "@platforms//cpu:x86_64",
         "@platforms//os:windows",
     ],
-    toolchain      = ":cc_toolchain_x64_vs2008",
+    toolchain      = ":aoo_msvc_vs2008_x64",
     toolchain_type = "@bazel_tools//tools/cpp:toolchain_type",
 )

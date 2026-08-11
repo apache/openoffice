@@ -1,3 +1,22 @@
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+-->
+
 # Building Apache OpenOffice with Bazel
 
 This document describes how to set up a development machine and run Bazel builds
@@ -74,6 +93,7 @@ The generated `@vs_config//:paths.bzl` exposes `VS`, `VC`, `SDK`, `MSVC_TMP`,
 ## 3. How the build is wired
 
 ### MODULE.bazel + registries
+
 Dependencies are declared in [MODULE.bazel](../MODULE.bazel) (bzlmod). Two
 registries are consulted, in order ([.bazelrc](../.bazelrc)):
 
@@ -87,12 +107,13 @@ registries are consulted, in order ([.bazelrc](../.bazelrc)):
 all match BCR's resolution.
 
 ### Toolchain (dual-arch)
+
 Two custom VS2008 (VC9) toolchains live in [build/toolchain](toolchain/) — one
 per architecture — both registered in `MODULE.bazel`:
 
 ```python
-register_toolchains("//build/toolchain:cc_toolchain_x86_vs2008_def")  # 32-bit x86 (default)
-register_toolchains("//build/toolchain:cc_toolchain_x64_vs2008_def")  # 64-bit x64 (Win64)
+register_toolchains("//build/toolchain:aoo_msvc_vs2008_x86_def")  # 32-bit x86 (default)
+register_toolchains("//build/toolchain:aoo_msvc_vs2008_x64_def")  # 64-bit x64 (Win64)
 ```
 
 Which one Bazel uses is decided by the **target platform**, not a flag. The
@@ -115,6 +136,7 @@ full rationale): `/Zc:wchar_t-`, `_HAS_ITERATOR_DEBUGGING=0` set globally, `/Z7`
 with `/Cx`.
 
 ### Where BUILD files live
+
 **`main/<package>/BUILD.bazel`** — at the *module root*, **not** under `prj/`.
 `cc_library`/`cc_binary` need `glob()` access to sources, which requires the
 BUILD file at the module root. The legacy `prj/build.lst` is still parsed by hand
@@ -122,6 +144,7 @@ to derive `deps`, and `prj/d.lst` describes the legacy delivery layout, but
 neither is the Bazel build entry point.
 
 ### Custom rules
+
 Reusable Starlark rules live in [build/rules/](rules/): the SDI compiler
 (`sdi_target.bzl`), IDL pipeline (`idl_pipeline.bzl`), resource compiler
 (`rsc_pipeline.bzl`), locale data codegen (`localedata_pipeline.bzl`), scp2
@@ -135,6 +158,7 @@ installer archives (`scp2.bzl`), RDB merge (`merge_rdb.bzl`), and image packing
 > Independent commands print to stderr; you do not need `2>&1`.
 
 ### Choosing the architecture (x86 vs x64)
+
 The default build is **32-bit x86**. To build **64-bit x64** (Win64), pass the
 `--config=winXP-x64` convenience config (defined in [.bazelrc](../.bazelrc)):
 
@@ -155,6 +179,7 @@ the Win64 build, and read `bazel-winXP-x86-bin` as `bazel-winXP-x64-bin` in the
 output paths.
 
 ### Build a single module
+
 ```bash
 bazel build //main/sal:sal
 bazel build //main/sw:sw
@@ -162,11 +187,13 @@ bazel build //main/cui:cui
 ```
 
 ### Build everything migrated
+
 ```bash
 bazel build //main/...
 ```
 
 ### Assemble a runnable install tree
+
 The [//main/staging](../main/staging/readme.md) package collects every build
 output into a real OpenOffice install layout:
 
@@ -188,11 +215,13 @@ install/
 To also stage the full Python standard library, build `//main/staging:install_all`.
 
 ### Run it
+
 ```bash
 bazel-winXP-x86-bin\main\staging\install\program\soffice.exe
 ```
 
 ### Inspect the dependency graph
+
 ```bash
 bazel query "deps(//main/sw:sw)"
 bazel cquery //main/staging:install --output=files
@@ -203,6 +232,7 @@ bazel cquery //main/staging:install --output=files
 ## 5. Optional features
 
 ### Languages / locales
+
 The default build is **en-US only** (the demo baseline). Locale flags are
 defined in [build/BUILD.bazel](BUILD.bazel) from [build/langs.bzl](langs.bzl).
 Enable additional UI languages in `user.bazelrc` or on the command line:
@@ -217,6 +247,7 @@ build --//build:lang_de=True --//build:lang_fr=True
 > [CLAUDE.md](../CLAUDE.md).
 
 ### ATL modules
+
 ATL modules need ATLMFC (VS Pro/Enterprise). On such an install, opt in:
 
 ```bash
@@ -342,9 +373,11 @@ containers passed between DLLs will read garbage.
   listed in a module's `remote_patches`. Workaround: patch via an `overlay`
   for *all* affected files and omit the `patches` section entirely.
 - **Never edit the Bazel cache by hand.** To refresh dependency resolution:
+
   ```bash
   bazel mod deps --lockfile_mode=refresh
   ```
+
   Commit `MODULE.bazel` and `MODULE.bazel.lock` together.
 - **Silent exit on bootstrap failure** — if `UserInstallation` /
   `BaseInstallation` can't be resolved, `soffice.exe` exits with no dialog.
@@ -364,4 +397,5 @@ containers passed between DLLs will read garbage.
 5. Add a `readme.md` to the module summarizing the migration.
 6. Once the build succeeds, update the **frontier** in [CLAUDE.md](../CLAUDE.md)
    and move the module into [Migrated-packages.md](../Migrated-packages.md).
+
 ```

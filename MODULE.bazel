@@ -100,8 +100,8 @@ http_file(
     downloaded_file_path = "junit-4.10.jar",
 )
 
-register_toolchains("//build/toolchain:cc_toolchain_x86_vs2008_def")
-register_toolchains("//build/toolchain:cc_toolchain_x64_vs2008_def")
+register_toolchains("//build/toolchain:aoo_msvc_vs2008_x86_def")
+register_toolchains("//build/toolchain:aoo_msvc_vs2008_x64_def")
 
 # Arch-neutral host JDK RUNTIME toolchain.  Registered in the root module so it
 # outranks rules_java's cpu-pinned remote-JDK runtime toolchains; it matches EVERY
