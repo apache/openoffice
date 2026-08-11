@@ -175,7 +175,7 @@ namespace utl
             sal_Bool                getUniqueSetElementName( const rtl::OUString& _rSetNode, rtl::OUString& _rBaseName);
 
         public:
-            virtual ~ConfigItem();
+            virtual ~ConfigItem() SAL_THROW( (::com::sun::star::uno::RuntimeException) );
 
             /** is called from the ConfigManager before application ends of from the
                 PropertyChangeListener if the sub tree broadcasts changes. */

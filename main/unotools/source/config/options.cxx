@@ -43,7 +43,7 @@ ConfigurationBroadcaster::ConfigurationBroadcaster()
 {
 }
 
-ConfigurationBroadcaster::~ConfigurationBroadcaster()
+ConfigurationBroadcaster::~ConfigurationBroadcaster() SAL_THROW( (::com::sun::star::uno::RuntimeException) )
 {
     delete mpList;
 }
@@ -90,7 +90,7 @@ Options::Options()
 {
 }
 
-Options::~Options()
+Options::~Options() SAL_THROW( (::com::sun::star::uno::RuntimeException) )
 {
 }
 

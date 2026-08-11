@@ -36,6 +36,14 @@
 	a call of the Options::NotifyListeners() method will send out notifications to all external listeners.
 */
 
+
+/*	Only the NAME is needed: the destructors below name RuntimeException in an
+	exception specification, which does not require a complete type, so this
+	header stays free of any UNO include.  configitem.hxx picks it up from here. */
+namespace com { namespace sun { namespace star { namespace uno {
+	class RuntimeException;
+} } } }
+
 namespace utl {
 
     class ConfigurationBroadcaster;
@@ -62,7 +70,17 @@ namespace utl {
 		// notify listeners; nHint is an implementation detail of the particular class deriving from ConfigurationBroadcaster
         void NotifyListeners( sal_uInt32 nHint );
         ConfigurationBroadcaster();
-        virtual ~ConfigurationBroadcaster();
+        /*	Widened for the WHOLE CHAIN, not just here.  Classes deriving from
+            these also derive from UNO bases whose destructors are declared
+            SAL_THROW( (RuntimeException) ), and from C++11 on a destructor with
+            no written specification gets an implicit "never throws" -- so the
+            derived class ends up weaker than its base, which an override may not
+            be (C2694).  EVERY level from the root down must be widened: widening
+            only a middle class moves the conflict up to ITS base (learned from
+            SvMemoryStream).  Widening a ROOT is safe by construction, since a
+            wider base accepts any narrower derived.  Inert under C++03, and MSVC
+            uses a dynamic specification only for this compile-time check. */
+        virtual ~ConfigurationBroadcaster() SAL_THROW( (::com::sun::star::uno::RuntimeException) );
         virtual void BlockBroadcasts( bool bBlock );
     };
 
@@ -78,7 +96,7 @@ class UNOTOOLS_DLLPUBLIC Options : public utl::ConfigurationBroadcaster, public 
 public:
     Options();
 
-    virtual ~Options() = 0;
+    virtual ~Options() SAL_THROW( (::com::sun::star::uno::RuntimeException) ) = 0;
 
 private:
     UNOTOOLS_DLLPRIVATE Options(Options &); // not defined

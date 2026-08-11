@@ -44,7 +44,7 @@ MultiLineEditSyntaxHighlight::MultiLineEditSyntaxHighlight( Window* pParent, con
 	aHighlighter.initialize( aLanguage );
 }
 
-MultiLineEditSyntaxHighlight::~MultiLineEditSyntaxHighlight()
+MultiLineEditSyntaxHighlight::~MultiLineEditSyntaxHighlight() SAL_THROW( () )
 {
 }
 

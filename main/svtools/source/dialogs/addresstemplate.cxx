@@ -291,7 +291,7 @@ public:
 
 	public:
 		AssignmentPersistentData();
-		~AssignmentPersistentData();
+		~AssignmentPersistentData() SAL_THROW( () );
 
 		// IAssigmentData overridables
 		virtual ::rtl::OUString getDatasourceName() const;
@@ -330,7 +330,7 @@ void AssignmentPersistentData::Commit()
 	}
 
 	// -------------------------------------------------------------------
-	AssignmentPersistentData::~AssignmentPersistentData()
+	AssignmentPersistentData::~AssignmentPersistentData() SAL_THROW( () )
 	{
 	}
 
