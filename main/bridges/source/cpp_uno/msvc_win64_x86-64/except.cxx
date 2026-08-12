@@ -28,7 +28,9 @@
 #include <hash_map>
 #include <sal/config.h>
 #include <malloc.h>
-#include <typeinfo.h>
+// <typeinfo.h> was a Microsoft compatibility header, removed in VS2015+.
+// The standard spelling works on VC9 too, so this needs no guard.
+#include <typeinfo>
 #include <signal.h>
 
 #include "rtl/alloc.h"
