@@ -988,6 +988,9 @@ const Size& ToolBox::GetDefaultImageSize() const
             case STYLE_SYMBOLS_INDUSTRIAL:
                 aLargeButtonSize = Size( TB_LARGEIMAGESIZE_INDUSTRIAL, TB_LARGEIMAGESIZE_INDUSTRIAL );
                 break;
+            case STYLE_SYMBOLS_REMIXDARK:
+                aLargeButtonSize = Size( TB_LARGEIMAGESIZE_REMIXDARK, TB_LARGEIMAGESIZE_REMIXDARK );
+                break;
             default:
                 aLargeButtonSize = Size( TB_LARGEIMAGESIZE, TB_LARGEIMAGESIZE );
         }

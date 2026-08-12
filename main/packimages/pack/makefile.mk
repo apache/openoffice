@@ -43,7 +43,7 @@ VERBOSESWITCH=
 IMAGES := $(COMMONBIN)$/images.zip
 SORTED_LIST=$(RES)$/img$/sorted.lst
 # Custom sets, at 24x24 & 16x16 fall-back to Galaxy preferentially
-CUSTOM_IMAGE_SETS=hicontrast industrial classic
+CUSTOM_IMAGE_SETS=hicontrast industrial classic remixdark
 CUSTOM_IMAGES+=$(foreach,i,$(CUSTOM_IMAGE_SETS) images_$i)
 CUSTOM_PREFERRED_FALLBACK_1*=-c $(SOLARSRC)$/default_images$/
 
