@@ -29,6 +29,10 @@
 #include <functional>
 #include <algorithm>
 
+
+// std::back_inserter lives in <iterator>.  VC9's headers pulled it in
+// transitively, a modern one does not.
+#include <iterator>
 namespace chart
 {
 namespace CloneHelper
