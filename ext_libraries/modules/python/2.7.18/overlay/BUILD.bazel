@@ -186,7 +186,18 @@ _ALL_SRCS = _PYTHON_SRCS + _OBJECTS_SRCS + _PARSER_SRCS + _PC_SRCS + _MODULE_SRC
 # ── python27.dll ───────────────────────────────────────────────────────
 cc_binary(
     name = "python27",
-    srcs = _ALL_SRCS,
+    # Headers must be declared inputs, not merely found via includes[]: without
+    # them Bazel cannot see a header change and silently relinks stale objects.
+    # That is exactly what happened when Include/fileobject.h was patched -- the
+    # build reported "2 processes: 2 internal" and kept the old .obj files.
+    srcs = _ALL_SRCS + glob([
+        "Include/*.h",
+        "PC/*.h",
+        "Python/*.h",
+        "Objects/*.h",
+        "Parser/*.h",
+        "Modules/**/*.h",
+    ]),
     # Include/ — Python.h and all public headers
     # PC/     — pyconfig.h (Windows pre-generated config, no ./configure needed)
     includes = [
