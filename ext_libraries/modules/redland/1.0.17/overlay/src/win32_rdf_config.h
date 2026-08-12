@@ -4,17 +4,17 @@
  *
  * Copyright (C) 2004-2011, David Beckett http://www.dajobe.org/
  * Copyright (C) 2004-2005, University of Bristol, UK http://www.bristol.ac.uk/
- * 
+ *
  * This package is Free Software and part of Redland http://librdf.org/
- * 
+ *
  * It is licensed under the following three licenses as alternatives:
  *   1. GNU Lesser General Public License (LGPL) V2.1 or any newer version
  *   2. GNU General Public License (GPL) V2 or any newer version
  *   3. Apache License, V2.0 or any newer version
- * 
+ *
  * You may not use this file except in compliance with at least one of
  * the above three licenses.
- * 
+ *
  * See LICENSE.html or LICENSE.txt at the top of this package for the
  * complete terms and further detail along with the license texts for
  * the licenses in COPYING.LIB, COPYING and LICENSE-2.0.txt respectively.
@@ -45,7 +45,12 @@ extern "C" {
 /* MS names for these functions */
 // next line breaks build on wntmsci12
 //#define vsnprintf _vsnprintf
+/*	A CRT from VS2015 on declares the real, standard snprintf, and its stdio.h
+	refuses to be compiled with the name taken (C1189).  VC9 still needs the
+	shim, so gate rather than remove. */
+#if !defined(_MSC_VER) || (_MSC_VER < 1900)
 #define snprintf _snprintf
+#endif
 #define access _access
 #define stricmp _stricmp
 #define strnicmp _strnicmp
@@ -80,7 +85,7 @@ typedef struct timeval {
 #define REDLAND_INLINE __inline
 
 
-/* 
+/*
  * Defines that come from rdf_config.h
  */
 

@@ -33,7 +33,7 @@
 #define SEND_ARG2_CAST
 
 /*
- * Windows platforms may define except 
+ * Windows platforms may define except
  */
 #undef except
 
@@ -42,9 +42,9 @@
 #include <math.h>
 #if defined(_MSC_VER) || defined(__BORLANDC__)
 /* MS C-runtime has functions which can be used in order to determine if
-   a given floating-point variable contains NaN, (+-)INF. These are 
+   a given floating-point variable contains NaN, (+-)INF. These are
    preferred, because floating-point technology is considered proprietary
-   by MS and we can assume that their functions know more about their 
+   by MS and we can assume that their functions know more about their
    oddities than we do. */
 #include <float.h>
 /* Bjorn Reese figured a quite nice construct for isinf() using the _fpclass
@@ -97,7 +97,12 @@ static int isnan (double d) {
 #if defined(_MSC_VER)
 #define mkdir(p,m) _mkdir(p)
 #if _MSC_VER < 1900 // Cannot define this in VS 2015 and above!
+/*	A CRT from VS2015 on declares the real, standard snprintf, and its stdio.h
+	refuses to be compiled with the name taken (C1189).  Older MSVC still
+	needs the shim, so gate rather than remove. */
+#if !defined(_MSC_VER) || (_MSC_VER < 1900)
 #define snprintf _snprintf
+#endif
 #endif
 #if _MSC_VER < 1500
 #define vsnprintf(b,c,f,a) _vsnprintf(b,c,f,a)
@@ -124,4 +129,3 @@ static int isnan (double d) {
 #endif
 
 #endif /* __LIBXML_WIN32_CONFIG__ */
-

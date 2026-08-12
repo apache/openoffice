@@ -388,7 +388,13 @@ cc_toolchain_config(
     # conformance tail short.  The config rule's own default_cpp_std feature is
     # left disabled; it hardcodes /std:c++17.
     cxx_flags          = ["/std:c++14"],
-    all_compile_flags  = ["/Zc:__cplusplus"],
+    # _SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS: the tree uses <hash_map> and
+    # <hash_set> widely (via the stlport shims), and a modern MSVC turns their
+    # inclusion into a hard #error unless this is defined -- 113 of these in one
+    # full-tree pass.  They are the SGI/stdext containers, not std::unordered_map;
+    # replacing them tree-wide is a refactor, not a build fix, so acknowledge the
+    # deprecation instead.
+    all_compile_flags  = ["/Zc:__cplusplus", "/D_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS"],
     dbg_mode_debug_flag       = "",
     fastbuild_mode_debug_flag = "",
     # Kept False for parity with the VC9 toolchains, so M3 changes one variable
