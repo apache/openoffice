@@ -91,7 +91,7 @@ protected:
         Despite the fact that a RuntimeException is allowed to be thrown, you must not throw any
         exception upon destruction!
 	*/
-    virtual ~OWeakAggObject() SAL_THROW( (::com::sun::star::uno::RuntimeException) );
+    virtual ~OWeakAggObject() SAL_THROW_DTOR( (::com::sun::star::uno::RuntimeException) );
 
 	/** weak reference to delegator.
 	*/

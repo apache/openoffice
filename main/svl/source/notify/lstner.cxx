@@ -64,7 +64,7 @@ SfxListener::SfxListener( const SfxListener &rListener )
 
 // unregisteres the SfxListener from its SfxBroadcasters
 
-SfxListener::~SfxListener() SAL_THROW( (::com::sun::star::uno::RuntimeException) )
+SfxListener::~SfxListener()
 {
 	DBG_DTOR(SfxListener, 0);
 

@@ -47,7 +47,7 @@ OComponentHelper::OComponentHelper( Mutex & rMutex ) SAL_THROW( () )
 	: rBHelper( rMutex )
 {
 }
-OComponentHelper::~OComponentHelper() SAL_THROW( (RuntimeException) )
+OComponentHelper::~OComponentHelper() SAL_THROW_DTOR( (RuntimeException) )
 {
 }
 

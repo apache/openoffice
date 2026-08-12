@@ -59,7 +59,7 @@ protected:
         Despite the fact that a RuntimeException is allowed to be thrown, you must not throw any
         exception upon destruction!
 	*/
-    virtual ~OWeakObject() SAL_THROW( (::com::sun::star::uno::RuntimeException) );
+    virtual ~OWeakObject() SAL_THROW_DTOR( (::com::sun::star::uno::RuntimeException) );
 
     /** disposes and resets m_pWeakConnectionPoint
         @precond

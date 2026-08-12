@@ -109,7 +109,7 @@ public:
 		specification and the two already agreed, so this is inert there. MSVC
 		does not enforce a dynamic specification other than throw(), so it does
 		not constrain what this destructor may do either. */
-	virtual ~OSingleFactoryHelper() SAL_THROW( (::com::sun::star::uno::RuntimeException) );
+	virtual ~OSingleFactoryHelper();
 
 	// XInterface
 	Any SAL_CALL queryInterface( const Type & rType )
@@ -153,7 +153,7 @@ protected:
 	Sequence< OUString >			 aServiceNames;
 	OUString						 aImplementationName;
 };
-OSingleFactoryHelper::~OSingleFactoryHelper() SAL_THROW( (RuntimeException) )
+OSingleFactoryHelper::~OSingleFactoryHelper()
 {
 }
 
