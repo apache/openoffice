@@ -55,7 +55,7 @@ def capitalisePython( ):
             xTextRange = xIndexAccess.getByIndex(i);
             #print "string: " + xTextRange.getString();
             theString = xTextRange.getString();
-            if len(theString)==0 :
+            if len(theString)==0 and count==1: # Prevents an error if there are multiple selections.
                 # sadly we can have a selection where nothing is selected
                 # in this case we get the XWordCursor and make a selection!
                 xText = xTextRange.getText();
