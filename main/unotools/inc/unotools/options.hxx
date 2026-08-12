@@ -37,13 +37,6 @@
 */
 
 
-/*	Only the NAME is needed: the destructors below name RuntimeException in an
-	exception specification, which does not require a complete type, so this
-	header stays free of any UNO include.  configitem.hxx picks it up from here. */
-namespace com { namespace sun { namespace star { namespace uno {
-	class RuntimeException;
-} } } }
-
 namespace utl {
 
     class ConfigurationBroadcaster;
@@ -80,7 +73,7 @@ namespace utl {
             SvMemoryStream).  Widening a ROOT is safe by construction, since a
             wider base accepts any narrower derived.  Inert under C++03, and MSVC
             uses a dynamic specification only for this compile-time check. */
-        virtual ~ConfigurationBroadcaster() SAL_THROW( (::com::sun::star::uno::RuntimeException) );
+        virtual ~ConfigurationBroadcaster();
         virtual void BlockBroadcasts( bool bBlock );
     };
 
@@ -96,7 +89,7 @@ class UNOTOOLS_DLLPUBLIC Options : public utl::ConfigurationBroadcaster, public 
 public:
     Options();
 
-    virtual ~Options() SAL_THROW( (::com::sun::star::uno::RuntimeException) ) = 0;
+    virtual ~Options() = 0;
 
 private:
     UNOTOOLS_DLLPRIVATE Options(Options &); // not defined

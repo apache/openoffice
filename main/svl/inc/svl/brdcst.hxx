@@ -27,15 +27,6 @@
 #include <tools/rtti.hxx>
 #include <svl/svarray.hxx>
 
-/*	Only the NAME is needed: the destructors below name RuntimeException in an
-	exception specification, which neither compiler requires to be a complete
-	type, so this header stays free of any UNO include. On GCC and Sun CC
-	SAL_THROW expands to nothing at all (sal/types.h), so the declaration is
-	simply unused there. */
-namespace com { namespace sun { namespace star { namespace uno {
-	class RuntimeException;
-} } } }
-
 
 class SfxListener;
 class SfxHint;
@@ -75,7 +66,7 @@ public:
 		implicit specification -- deduced from its bases -- is then weaker than
 		that, which an override may not be (C2694). Under C++03 no implicit
 		specification exists and this is inert. */
-	virtual 				~SfxBroadcaster() SAL_THROW( (::com::sun::star::uno::RuntimeException) );
+	virtual 				~SfxBroadcaster();
 
 	void					Broadcast( const SfxHint &rHint );
 	void					BroadcastDelayed( const SfxHint& rHint );

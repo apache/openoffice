@@ -53,7 +53,7 @@ OPropertyContainer::OPropertyContainer(::cppu::OBroadcastHelper& _rBHelper)
 }
 
 // -------------------------------------------------------------------------
-OPropertyContainer::~OPropertyContainer() SAL_THROW( (::com::sun::star::uno::RuntimeException) )
+OPropertyContainer::~OPropertyContainer()
 {
 }
 

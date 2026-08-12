@@ -28,13 +28,6 @@
 #include <comphelper/propagg.hxx>
 #include <cppuhelper/propshlp.hxx>
 #include <osl/mutex.hxx>
-
-/*	Only the NAME is needed: the destructor below names RuntimeException in an
-	exception specification, which does not require a complete type, so this
-	header stays free of any UNO include. */
-namespace com { namespace sun { namespace star { namespace uno {
-	class RuntimeException;
-} } } }
 #include <osl/diagnose.h>
 #include <rtl/instance.hxx>
 
@@ -73,7 +66,7 @@ public:
 		override may not be (C2694).  Inert under C++03, where no implicit
 		specification exists, and MSVC does not enforce a dynamic specification at
 		run time in any case -- it only uses it for this compile-time check. */
-	virtual ~OPropertyArrayUsageHelper() SAL_THROW( (::com::sun::star::uno::RuntimeException) )
+	virtual ~OPropertyArrayUsageHelper()
 	{	// ARGHHHHHHH ..... would like to implement this after the class
         // definition (as we do with all other methods) but SUNPRO 5 compiler
         // (linker) doesn't like this

@@ -63,7 +63,7 @@ public:
 	OComponentHelper( ::osl::Mutex & rMutex ) SAL_THROW( () );
 	/** Dewstructor. If this object was not disposed previously, object will be disposed manually.
 	*/
-	virtual ~OComponentHelper() SAL_THROW( (::com::sun::star::uno::RuntimeException) );
+	virtual ~OComponentHelper() SAL_THROW_DTOR( (::com::sun::star::uno::RuntimeException) );
 
 	// XAggregation
     virtual ::com::sun::star::uno::Any SAL_CALL queryInterface(

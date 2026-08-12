@@ -64,7 +64,7 @@ public:
         override may not be (C2694).  Inert under C++03, where no implicit
         specification exists, and MSVC does not enforce a dynamic specification at
         run time in any case -- it only uses it for this compile-time check. */
-    virtual ~VCLXTopWindow_Base() SAL_THROW( (::com::sun::star::uno::RuntimeException) );
+    virtual ~VCLXTopWindow_Base();
 
     // XInterface equivalents
     ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException);

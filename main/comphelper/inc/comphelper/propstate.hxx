@@ -82,7 +82,7 @@ namespace comphelper
 		specification -- the union of its bases' -- less restrictive than this one
 		(C2694).  Inert under C++03, where destructors carry no implicit
 		specification, and MSVC does not enforce a dynamic specification anyway. */
-        virtual ~OPropertyStateHelper() SAL_THROW( (::com::sun::star::uno::RuntimeException) );
+        virtual ~OPropertyStateHelper();
 
 	    void firePropertyChange(sal_Int32 nHandle, const ::com::sun::star::uno::Any& aNewValue, const ::com::sun::star::uno::Any& aOldValue);
 

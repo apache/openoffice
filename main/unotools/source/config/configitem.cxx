@@ -268,7 +268,7 @@ sal_Bool ConfigItem::IsValidConfigMgr() const
 /* -----------------------------29.08.00 12:52--------------------------------
 
  ---------------------------------------------------------------------------*/
-ConfigItem::~ConfigItem() SAL_THROW( (::com::sun::star::uno::RuntimeException) )
+ConfigItem::~ConfigItem()
 {
 	if(pImpl->pManager)
 	{

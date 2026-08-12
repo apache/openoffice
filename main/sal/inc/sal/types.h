@@ -390,28 +390,37 @@ typedef struct _sal_Sequence
 	SAL_THROW_EXTERN_C() should be used for all C functions
 */
 #ifdef __cplusplus
-/*	A modern MSVC is treated exactly as GCC, Sun CC and SGI have always been
-	treated here: no dynamic exception specification is emitted at all.
-
-	This is not a workaround, it is the configuration the tree has shipped on
-	every other compiler for its whole life. What forces it here is that from
-	C++11 on a destructor with no written specification acquires an implicit
-	"never throws", while SAL_THROW( (RuntimeException) ) on a UNO base makes the
-	deduced specification of anything deriving from BOTH a UNO and a non-UNO
-	hierarchy weaker than one of its bases -- which an override may not be. That
-	is ill-formed at every point where the two hierarchies meet, and there are
-	242 such classes across 25 modules. Emptying the macro removes the premise
-	rather than patching 242 consequences.
-
-	Nothing is lost that MSVC was enforcing: it honours only throw(), never
-	throw(X), and the C++03 compilers keep the specifications exactly as before.
-	C++17 removes dynamic exception specifications from the language outright, so
-	this is also the direction the code has to move anyway. */
-#if defined(__GNUC__) || defined(__SUNPRO_CC) || defined(__sgi) || (defined(_MSC_VER) && (_MSC_VER >= 1900))
+#if defined(__GNUC__) || defined(__SUNPRO_CC) || defined(__sgi)
 #define SAL_THROW( exc )
-#else /* MSVC before 2015, all other */
+#else /* MSVC, all other */
 #define SAL_THROW( exc ) throw exc
-#endif /* __GNUC__, __SUNPRO_CC, modern _MSC_VER */
+#endif /* __GNUC__, __SUNPRO_CC */
+/*	SAL_THROW_DTOR() is SAL_THROW() for a DESTRUCTOR.  It exists because a
+	destructor is the one place where a written exception specification is
+	compared against one the COMPILER invented.
+
+	From C++11 on, a destructor with no written specification acquires an
+	implicit "throws nothing".  A class deriving from both a UNO base (whose
+	destructor says SAL_THROW( (RuntimeException) )) and an ordinary one (whose
+	destructor says nothing, and so is implicitly non-throwing) therefore gets a
+	deduced specification weaker than one of its bases -- which an override may
+	not be.  That is ill-formed wherever the two hierarchies meet: 242 classes
+	across 25 modules, none of which declares a destructor of its own.
+
+	Only three destructors in the tree are the source of it, all in cppuhelper,
+	and using this macro there removes the premise instead of annotating 242
+	consequences.  Ordinary member functions are unaffected: base and override
+	both carry the same WRITTEN specification, so they cannot disagree.
+
+	Nothing is lost.  MSVC honours throw() but has never enforced throw(X), so no
+	generated code changes; every SAL_THROW( () ) in the tree keeps its meaning;
+	and C++17 removes dynamic exception specifications from the language outright,
+	so this is where the code has to go regardless. */
+#if defined(_MSC_VER) && (_MSC_VER >= 1900)
+#define SAL_THROW_DTOR( exc )
+#else
+#define SAL_THROW_DTOR( exc ) SAL_THROW( exc )
+#endif
 #define SAL_THROW_EXTERN_C() throw ()
 #else /* ! __cplusplus */
 /* SAL_THROW() must not be used in C headers, only SAL_THROW_EXTERN_C() is defined */

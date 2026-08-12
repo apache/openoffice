@@ -232,7 +232,7 @@ void OWeakObject::disposeWeakConnectionPoint()
 	}
 }
 
-OWeakObject::~OWeakObject() SAL_THROW( (RuntimeException) )
+OWeakObject::~OWeakObject() SAL_THROW_DTOR( (RuntimeException) )
 {
 }
 
@@ -258,7 +258,7 @@ Reference< XAdapter > SAL_CALL OWeakObject::queryAdapter()
 //------------------------------------------------------------------------
 //-- OWeakAggObject ----------------------------------------------------
 //------------------------------------------------------------------------
-OWeakAggObject::~OWeakAggObject() SAL_THROW( (RuntimeException) )
+OWeakAggObject::~OWeakAggObject() SAL_THROW_DTOR( (RuntimeException) )
 {
 }
 
