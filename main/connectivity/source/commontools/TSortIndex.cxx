@@ -27,6 +27,10 @@
 #include <algorithm>
 #include <functional>
 
+
+// std::back_inserter lives in <iterator>.  VC9's headers pulled it in
+// transitively, a modern one does not.
+#include <iterator>
 using namespace connectivity;
 //------------------------------------------------------------------
 /// binary_function Functor object for class OSortIndex::TIntValuePairVector::value_type returntype is bool

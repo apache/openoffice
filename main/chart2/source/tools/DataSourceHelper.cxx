@@ -43,6 +43,10 @@
 #include <com/sun/star/chart/ChartDataRowSource.hpp>
 #include <com/sun/star/chart/ErrorBarStyle.hpp>
 
+
+// std::back_inserter lives in <iterator>.  VC9's headers pulled it in
+// transitively, a modern one does not.
+#include <iterator>
 //.............................................................................
 namespace chart
 {

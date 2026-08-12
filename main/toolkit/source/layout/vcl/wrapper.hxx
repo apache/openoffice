@@ -50,11 +50,7 @@ public:
     bool bFirstTimeVisible;
 
     WindowImpl (Context *context, PeerHandle const &peer, Window *window);
-    /*  ControlImpl below derives from this class and from a UNO base whose
-        destructor is declared throw(RuntimeException).  From C++11 on a bare
-        destructor is implicitly noexcept, which makes the derived one's
-        implicit specification weaker than this one (C2694).  Inert on C++03. */
-    virtual ~WindowImpl () throw (css::uno::RuntimeException);
+    virtual ~WindowImpl ();
 
     void wrapperGone();
     css::uno::Any getProperty (char const *name);

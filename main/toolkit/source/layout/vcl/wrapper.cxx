@@ -164,7 +164,7 @@ WindowImpl::WindowImpl (Context *context, const PeerHandle &peer, Window *window
 {
 }
 
-WindowImpl::~WindowImpl () throw (css::uno::RuntimeException)
+WindowImpl::~WindowImpl ()
 {
     if (mpWindow)
         mpWindow->mpImpl = 0;
