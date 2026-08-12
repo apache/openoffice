@@ -89,3 +89,75 @@ Windows no longer compiles the line that needed it, but the include is correct
 for the non-Windows branch and inert here.
 
 This one is a correction owed to `common/20-build-conventions.md` as well.
+
+## Next up — remove dynamic exception specifications tree-wide
+
+Agreed on the dev list 2026-08-12. Self-contained; everything needed to start is
+here. **Owed to `../migration/frontier.md`** when this branch merges — it is
+tree-wide work, not win10-specific, and it is only recorded here because a topic
+branch may not write the shared migration record.
+
+**Two separate changes. Do not combine them.**
+
+- **(a) `throw(X)` → delete outright.** Removed in C++17; MSVC never enforced it;
+  GCC/Sun/SGI never even saw it (`SAL_THROW` expands to nothing there).
+- **(b) `throw()` → migrate to `noexcept`, not delete.** MSVC *does* honour this
+  one (`__declspec(nothrow)`: elided unwind paths plus a terminate-on-throw
+  contract worth keeping on `acquire()`/`release()` and destructors). C++17 keeps
+  it as a deprecated spelling of `noexcept`; C++20 removes it. Deleting would
+  lose something the compiler actually implements.
+
+Size, measured 2026-08-12 under `main/`:
+
+| Spelling | Count | Goes to |
+| --- | ---: | --- |
+| `SAL_THROW( () )` | 3,677 | (b) |
+| `SAL_THROW( (Type) )` | 827 | (a) |
+| literal `throw(…RuntimeException…)` | ~32,600 | (a) |
+
+The last figure is soft — it includes declaration/definition duplication. The
+other two are exact.
+
+### The constraint that decides the approach — it cannot be incremental
+
+The specifications are **generated**. `InterfaceType::dumpExceptionSpecification()`
+in `main/codemaker/source/cppumaker/cpputype.cxx` (~line 2044) writes `" throw ("`
+onto every UNO interface method, so every generated `.hpp` carries them. For a
+non-destructor virtual function, an override with no specification may throw
+anything, which is **less** restrictive than a base declaring
+`throw(RuntimeException)` ⇒ ill-formed. Stripping hand-written overrides while
+generated bases keep theirs only trades one error set for another. **cppumaker and
+the sources must move in one commit.** ("Remove them a module at a time" is the
+natural instinct, and it does not work.)
+
+**Safe:** exception specifications do not participate in name mangling ⇒ not an
+ABI break. Backward compatible for extensions too — once bases lose their
+specifications, a third-party component still declaring `throw(RuntimeException)`
+on its overrides is merely *more* restrictive, which is legal, so external UNO
+components keep compiling unchanged.
+
+### Why it is urgent rather than cosmetic
+
+Since C++11 a destructor with no written specification is implicitly `noexcept`.
+A class inheriting from a UNO base (`~OWeakObject`, declared
+`throw(RuntimeException)`) **and** an ordinary base (implicitly non-throwing)
+therefore claims both "may throw" and "will not throw" about destroying the same
+object. No annotation resolves it — `noexcept(false)` gives the identical error.
+Three such destructors produced **6,690 errors across 25 modules / 242 classes**
+on a modern MSVC. All three bodies are `{}`: the specification described a
+possibility the implementation never took.
+
+### Already done, and superseded by this task
+
+Commit `4ee3de1fe6` added `SAL_THROW_DTOR()` in `main/sal/inc/sal/types.h` (empty
+on `_MSC_VER >= 1900`, defers to `SAL_THROW` otherwise) and applied it to exactly
+those three destructors — `~OWeakObject` (`cppuhelper/inc/cppuhelper/weak.hxx` +
+`source/weak.cxx`), `~OWeakAggObject` (`weakagg.hxx` + `source/weak.cxx`),
+`~OComponentHelper` (`component.hxx` + `source/component.cxx`). That is an
+**interim gate** to unblock the win10 toolchain. When (a) lands, `SAL_THROW_DTOR`
+and its three uses should be deleted — they become redundant.
+
+**Sequencing:** land (a) first (it is the C++17 blocker and it is mechanical),
+then (b) separately. Verify both `--config=winXP-x86` and `--config=win10-x64`
+after each; (a) needs a full `//main/staging:install` because it touches
+generated headers, i.e. every TU.
