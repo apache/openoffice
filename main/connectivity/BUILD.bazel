@@ -1,7 +1,9 @@
 package(default_visibility = ["//visibility:public"])
 
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+load("@rules_java//java:defs.bzl", "java_library")
 load("//build/rules:rsc_pipeline.bzl", "rsc_res")
+load("//build/rules:java_pipeline.bzl", "uno_jar")
 
 _DEFINES = [
     "WNT", "GUI", "WIN32",
@@ -214,6 +216,338 @@ filegroup(
     visibility = ["//visibility:public"],
 )
 
+# ── file.dll — shared base for the file-based drivers ──────────────
+# Not a UNO component: no component_getFactory, nothing in services.rdb.
+# It is the common SDBC implementation that dbase, flat and calc derive
+# from, exported by declspec via OOO_DLLPUBLIC_FILE (source/inc/file/
+# filedllapi.hxx) exactly like dbtools — hence no win_def_file.  dmake
+# built it with USE_DEFFILE + a .flt symbol filter, which only existed
+# because the .flt route predates the declspec annotations; the headers
+# are fully annotated, so the DEF is redundant here.
+cc_binary(
+    name = "file",
+    srcs = glob(["source/drivers/file/*.cxx"]),
+    copts = _COPTS,
+    defines = _DEFINES + ["OOO_DLLIMPLEMENTATION_FILE"],
+    linkshared = True,
+    # stlport: connectivity/dbtools.hxx declares askForParameters() with a
+    # ::std::bit_vector default argument (line 611).  bit_vector is an SGI STL
+    # extension that only stlport provides, so EVERY consumer of that header
+    # needs it, not just the ones using hash_map.
+    deps = [
+        ":connectivity_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelpMSC_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/svl:svl_implib",
+        "//main/ucbhelper:ucbhelperMSC_implib",
+        "//main/vos:vos3MSC_implib",
+        ":dbtools_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelpMSC_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/ucbhelper:ucbhelperMSC_implib)",
+        "$(execpath //main/vos:vos3MSC_implib)",
+        "$(execpath :dbtools_implib)",
+        "user32.lib", "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "file_implib",
+    srcs = [":file"],
+    output_group = "interface_library",
+    visibility = ["//visibility:public"],
+)
+
+# ── dbase.dll — dBASE III/IV driver ────────────────────────────────
+# DNoException.cxx is excluded, matching dmake: it is the ONE file in this
+# directory absent from the makefile's SLOFILES, and nothing #includes it.
+# It is a stale second copy of function bodies that also live in DTable.cxx
+# and dindexnode.cxx (ODbaseTable::seekRow/ReadMemo/AllocBuffer/WriteBuffer,
+# the whole ONDXNode/ONDXPage/ONDXPagePtr set), so compiling it gives ~25
+# LNK2005 duplicate-symbol errors.  Not a candidate for the glob.
+cc_binary(
+    name = "dbase",
+    srcs = glob(
+        ["source/drivers/dbase/*.cxx"],
+        exclude = ["source/drivers/dbase/DNoException.cxx"],
+    ),
+    copts = _COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/dbase.def",
+    deps = [
+        ":connectivity_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelpMSC_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/svl:svl_implib",
+        "//main/ucbhelper:ucbhelperMSC_implib",
+        "//main/vos:vos3MSC_implib",
+        ":dbtools_implib",
+        ":file_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelpMSC_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/ucbhelper:ucbhelperMSC_implib)",
+        "$(execpath //main/vos:vos3MSC_implib)",
+        "$(execpath :dbtools_implib)",
+        "$(execpath :file_implib)",
+        "user32.lib", "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── flat.dll — delimited-text driver ───────────────────────────────
+cc_binary(
+    name = "flat",
+    srcs = glob(["source/drivers/flat/*.cxx"]),
+    copts = _COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/flat.def",
+    deps = [
+        ":connectivity_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelpMSC_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/svl:svl_implib",
+        "//main/vos:vos3MSC_implib",
+        ":dbtools_implib",
+        ":file_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelpMSC_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/vos:vos3MSC_implib)",
+        "$(execpath :dbtools_implib)",
+        "$(execpath :file_implib)",
+        "user32.lib", "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── calc.dll — spreadsheet-as-datasource driver ────────────────────
+cc_binary(
+    name = "calc",
+    srcs = glob(["source/drivers/calc/*.cxx"]),
+    copts = _COPTS,
+    defines = _DEFINES,
+    linkshared = True,
+    win_def_file = "util/calc.def",
+    deps = [
+        ":connectivity_headers",
+        "//main/stlport:stlport",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelpMSC_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/svl:svl_implib",
+        "//main/vos:vos3MSC_implib",
+        ":dbtools_implib",
+        ":file_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelpMSC_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/svl:svl_implib)",
+        "$(execpath //main/vos:vos3MSC_implib)",
+        "$(execpath :dbtools_implib)",
+        "$(execpath :file_implib)",
+        "user32.lib", "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── jdbc.dll — generic JDBC bridge driver ──────────────────────────
+# SOLAR_JAVA is LOAD-BEARING, not a feature switch: jvmaccess/virtualmachine.hxx
+# #includes the real <jni.h> only under it and otherwise declares stubs, so
+# without it every JNIEnv-> call is C2027 even in files that include <jni.h>
+# themselves.  Same landmine as //main/stoc javaloader and the java_uno bridge.
+cc_binary(
+    name = "jdbc",
+    srcs = glob(["source/drivers/jdbc/*.cxx"]),
+    copts = _COPTS,
+    defines = _DEFINES + ["SOLAR_JAVA"],
+    linkshared = True,
+    win_def_file = "util/jdbc.def",
+    deps = [
+        ":connectivity_headers",
+        "//main/stlport:stlport",
+        "@boost.legacy//:boost.legacy",
+        "@rules_java//toolchains:jni",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelpMSC_implib",
+        "//main/unotools:utl_implib",
+        "//main/vos:vos3MSC_implib",
+        "//main/jvmaccess:jvmaccess3MSC_implib",
+        "//main/jvmfwk:jvmfwk_implib",
+        ":dbtools_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelpMSC_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/vos:vos3MSC_implib)",
+        "$(execpath //main/jvmaccess:jvmaccess3MSC_implib)",
+        "$(execpath //main/jvmfwk:jvmfwk_implib)",
+        "$(execpath :dbtools_implib)",
+        "user32.lib", "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── hsqldb.dll — embedded HSQLDB driver ────────────────────────────
+# This is what "create a new Base database" resolves to: dbaccess hardcodes
+# sdbc:embedded:hsqldb (dbaccess/source/core/misc/dsntypes.cxx), HDriver
+# delegates the actual SQL to the JDBC driver above ("jdbc:hsqldb:db"), and
+# the HSQLDB engine reaches back through the JNI exports below so the database
+# lives inside the .odb zip storage rather than as loose files on disk.
+#
+# DUAL-ROLE DLL: a UNO component AND a JNI library, hence a DEF that carries
+# both component_* entries and 28 undecorated Java_* names (JNICALL is
+# __stdcall on Win32, so without the DEF they would be exported as _Java_..@N
+# and the JVM could not find them) -- same trick as //main/jurt jpipe.def.
+#
+# No RT_MANIFEST id 2 here, deliberately, and this is the one place the
+# jpipe rule does NOT generalise: jpipe/jpipx are loaded by a stock java.exe
+# that has no VC90 activation context of its own, whereas the JVM that calls
+# these natives runs IN-PROCESS inside soffice.exe (started by javavm/jvmfwk),
+# whose own manifest already covers the whole process.
+#
+# NOT named with a DLLPOSTFIX, unlike every other driver here: version.mk sets
+# HSQLDB_TARGET=hsqldb bare, because the Java side hardcodes the base name in
+# System.loadLibrary("hsqldb") (sdbc_hsqldb NativeLibraries.java).
+cc_binary(
+    name = "hsqldb",
+    srcs = glob(["source/drivers/hsqldb/*.cxx"]),
+    copts = _COPTS,
+    defines = _DEFINES + ["SOLAR_JAVA"],
+    linkshared = True,
+    win_def_file = "util/hsqldb.def",
+    deps = [
+        ":connectivity_headers",
+        "//main/stlport:stlport",
+        "@boost.legacy//:boost.legacy",
+        "@rules_java//toolchains:jni",
+    ],
+    additional_linker_inputs = [
+        "//main/sal:sal_implib",
+        "//main/cppu:cppu3_implib",
+        "//main/cppuhelper:cppuhelper_implib",
+        "//main/comphelper:comphelpMSC_implib",
+        "//main/tools:tl_implib",
+        "//main/unotools:utl_implib",
+        "//main/jvmfwk:jvmfwk_implib",
+        ":dbtools_implib",
+    ],
+    linkopts = [
+        "$(execpath //main/sal:sal_implib)",
+        "$(execpath //main/cppu:cppu3_implib)",
+        "$(execpath //main/cppuhelper:cppuhelper_implib)",
+        "$(execpath //main/comphelper:comphelpMSC_implib)",
+        "$(execpath //main/tools:tl_implib)",
+        "$(execpath //main/unotools:utl_implib)",
+        "$(execpath //main/jvmfwk:jvmfwk_implib)",
+        "$(execpath :dbtools_implib)",
+        "user32.lib", "/MANIFEST:NO",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── hsqldb.jar — the embedded database engine ──────────────────────
+# AOO's patched classes come FIRST: singlejar keeps the first occurrence of a
+# duplicate entry, so this is what makes the patches actually win over the
+# release jar's copies.  See the overlay BUILD in the @hsqldb module for why
+# the release jar is the base rather than a full source build.
+#
+# The filename is not cosmetic: HDriver.cxx hardcodes the classpath it hands
+# to the JDBC driver as
+#   vnd.sun.star.expand:$OOO_BASE_DIR/program/classes/hsqldb.jar
+#   vnd.sun.star.expand:$OOO_BASE_DIR/program/classes/sdbc_hsqldb.jar
+# so both jars must land in program/classes/ under exactly these names.
+uno_jar(
+    name = "hsqldb_jar",
+    out = "hsqldb.jar",
+    jars = [
+        "@hsqldb//:hsqldb_patches",
+        "@hsqldb//:hsqldb_upstream",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+# ── sdbc_hsqldb.jar — AOO's storage bridge into the .odb ───────────
+# The half that makes an embedded database a SINGLE FILE: StorageAccess and
+# StorageFileAccess implement org.hsqldb.lib.Storage / FileAccess in terms of
+# UNO's embedded storage, and their native methods are the Java_* exports of
+# hsqldb.dll, so the engine reads and writes inside the .odb zip rather than
+# next to it.  Depends only on the engine and the JDK -- no UNO jars.
+java_library(
+    name = "sdbc_hsqldb_lib",
+    srcs = glob(["java/sdbc_hsqldb/src/**/*.java"]),
+    deps = ["@hsqldb//:hsqldb_upstream"],
+)
+
+uno_jar(
+    name = "sdbc_hsqldb_jar",
+    out = "sdbc_hsqldb.jar",
+    jars = [":sdbc_hsqldb_lib"],
+    # Mirrors the ant build's jar-class-path property.
+    manifest_lines = ["Class-Path: hsqldb.jar"],
+    visibility = ["//visibility:public"],
+)
+
 rsc_res(
     name     = "connectivity_res",
     srcs     = glob(["source/**/*.src"]),
@@ -231,12 +565,15 @@ rsc_res(
 exports_files(glob(["**/*.component"]))
 
 # DataAccess XCU files consumed by //main/postprocess pack_registry targets.
+# Exported for every driver whose source is here; which ones are actually PACKED
+# is postprocess's decision, and it packs only those with a built DLL.
 exports_files([
     "source/drivers/adabas/adabas.xcu",
     "source/drivers/ado/ado.xcu",
     "source/drivers/calc/calc.xcu",
     "source/drivers/dbase/dbase.xcu",
     "source/drivers/flat/flat.xcu",
+    "source/drivers/hsqldb/hsqldb.xcu",
     "source/drivers/mysql/mysql.xcu",
     "source/drivers/odbc/odbc.xcu",
 ])

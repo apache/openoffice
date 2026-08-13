@@ -301,6 +301,15 @@ collect_outputs(
         "//main/connectivity:dbtools",
         "//main/connectivity:sdbc2",
         "//main/connectivity:dbpool2",
+        # SDBC drivers.  file.dll is not a component and nothing registers it —
+        # it is the shared implementation dbase/flat/calc link against — but it
+        # must be staged all the same or those three fail to load.
+        "//main/connectivity:file",
+        "//main/connectivity:dbase",
+        "//main/connectivity:flat",
+        "//main/connectivity:calc",
+        "//main/connectivity:jdbc",
+        "//main/connectivity:hsqldb",
         "//main/dbaccess:dba",
         "//main/dbaccess:dbu",
         "//main/dbaccess:dbaxml",
@@ -664,6 +673,13 @@ filegroup(
         "//main/javaunohelper:juh_runtime_jar",
         "//main/bridges:java_uno_runtime_jar",
         "//main/unoil:unoil_jar",
+        # The embedded-database pair.  Not part of the UNO runtime like the six
+        # above, but they belong in the same directory: HDriver.cxx builds the
+        # JDBC classpath as the literal
+        # vnd.sun.star.expand:$OOO_BASE_DIR/program/classes/{hsqldb,sdbc_hsqldb}.jar
+        # so program/classes is not a convention here, it is the lookup path.
+        "//main/connectivity:hsqldb_jar",
+        "//main/connectivity:sdbc_hsqldb_jar",
     ],
 )
 

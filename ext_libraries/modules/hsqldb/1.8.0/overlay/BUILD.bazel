@@ -1,0 +1,64 @@
+load("@rules_java//java:defs.bzl", "java_import", "java_library")
+
+package(default_visibility = ["//visibility:public"])
+
+# HSQLDB 1.8.0 — the database engine behind "create a new Base database"
+# (dbaccess hardcodes sdbc:embedded:hsqldb).  Consumed as a jar by
+# //main/connectivity:hsqldb via the JDBC driver.
+#
+# WHY THE SHIPPED JAR IS THE BASE, AND NOT A FULL SOURCE BUILD.
+# Upstream builds this with Ant, and that build is not a plain javac: HSQLDB's
+# build.xml runs its own org.hsqldb.util.CodeSwitcher over the sources first,
+# commenting blocks in and out per JDK level.  Compiling the 255 non-test
+# sources directly with the toolchain JDK fails with 12 errors, all of them the
+# same thing — the JDBC wrapper classes (jdbcClob, jdbcDatabaseMetaData,
+# jdbcDataSource, jdbcParameterMetaData, jdbcResultSet, jdbcDriver) do not
+# implement methods that java.sql grew after this release: getCharacterStream
+# (long,long) (JDBC 4.0), isWrapperFor, generatedKeyAlwaysReturned,
+# getParentLogger, getObject(String,Class<T>) (JDBC 4.1).  AOO's own
+# i121754.patch exists to paper over exactly that for Java 7, and javac 21
+# cannot target anything below --release 8, so a raw source build would need
+# NEW source changes that upstream does not have.  That is out of scope here
+# (see CLAUDE.md "Source code is NOT being changed").
+#
+# lib/hsqldb.jar inside the archive is the official 1.8.0 release build, i.e.
+# already CodeSwitcher-processed, so it supplies those classes correctly.
+java_import(
+    name = "hsqldb_upstream",
+    jars = ["lib/hsqldb.jar"],
+)
+
+# AOO's two patches are not only about buildability.  These eight files carry
+# the BEHAVIOURAL half — script.patch's fix to skip SCRIPT while a script or
+# log is being replayed, and i121754's alignment of the engine to 1.8.0.11 —
+# and every one of them compiles cleanly against the release jar, because none
+# of them is a java.sql implementor.  So the behaviour patches are recovered in
+# full; only i121754's JDBC-compat hunks are dropped, and those exist purely to
+# make the SOURCE build on Java 7, which is moot when the classes come from the
+# release jar.
+java_library(
+    name = "hsqldb_patches",
+    srcs = [
+        "src/org/hsqldb/DatabaseCommandInterpreter.java",
+        "src/org/hsqldb/Expression.java",
+        "src/org/hsqldb/Library.java",
+        "src/org/hsqldb/Select.java",
+        "src/org/hsqldb/Table.java",
+        "src/org/hsqldb/TableWorks.java",
+        "src/org/hsqldb/lib/StringComparator.java",
+        "src/org/hsqldb/persist/HsqlDatabaseProperties.java",
+    ],
+    javacopts = ["--release", "8"],
+    deps = [":hsqldb_upstream"],
+)
+
+# The consumer-facing target.  Order matters: //main/connectivity merges these
+# with singlejar, which keeps the FIRST occurrence of a duplicate entry, so the
+# patched classes must come before the release jar.
+filegroup(
+    name = "hsqldb_jars",
+    srcs = [
+        ":hsqldb_patches",
+        ":hsqldb_upstream",
+    ],
+)

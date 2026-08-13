@@ -1,0 +1,13 @@
+{
+    "url": "file:///C:/workspace/openoffice/ext_sources/17410483b5b5f267aa18b7e00b65e6e0-hsqldb_1_8_0.zip",
+    "integrity": "sha256-0wsT9LouO2otTwIMDe4Kn7n8b7zC1WHza3jaS/OAI3A=",
+    "strip_prefix": "hsqldb",
+    "overlay": {
+        "MODULE.bazel": "sha256-o2J1egfwqE5IgWn95r5cKaiG6mI7W7d+rQIOWevYUWI=",
+        "BUILD.bazel": "sha256-jcwEGl/P8V251/+kr6ecm5DZsYjWVCiEL15xCskWKm4="
+    },
+    "patches": {
+        "aoo-hsqldb.patch": "sha256-IJcXwdW1ETdxNneaHymJ9OE+7yR5NfiCsfbIC3xF/OA="
+    },
+    "patch_strip": 1
+}

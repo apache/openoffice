@@ -163,20 +163,27 @@ _SERVICES_COMPONENTS = {
         basis_native("dbpool2.dll"),
     "//main/connectivity:source/dbtools/dbtools.component":
         basis_native("dbtools.dll"),
-    "//main/connectivity:source/drivers/adabas/adabas.component":
-        basis_native("adabas.dll"),
-    "//main/connectivity:source/drivers/ado/ado.component":
-        basis_native("ado.dll"),
     "//main/connectivity:source/drivers/dbase/dbase.component":
         basis_native("dbase.dll"),
     "//main/connectivity:source/drivers/flat/flat.component":
         basis_native("flat.dll"),
-    "//main/connectivity:source/drivers/mysql/mysql.component":
-        basis_native("mysql.dll"),
-    "//main/connectivity:source/drivers/odbc/odbc.component":
-        basis_native("odbc.dll"),
+    # The embedded-database pair.  hsqldb is what "create a new Base database"
+    # resolves to (dbaccess hardcodes sdbc:embedded:hsqldb) and it delegates the
+    # SQL to jdbc, so registering one without the other is useless.
+    "//main/connectivity:source/drivers/hsqldb/hsqldb.component":
+        basis_native("hsqldb.dll"),
+    "//main/connectivity:source/drivers/jdbc/jdbc.component":
+        basis_native("jdbc.dll"),
     "//main/connectivity:source/manager/sdbc2.component":
         basis_native("sdbc2.dll"),
+    # NOT registered: adabas, ado, mysql, odbc.  Their DLLs are not built (see
+    # connectivity/readme.md), and a registration without a library behind it is
+    # worse than none: the driver manager resolves the service, osl_loadModule
+    # fails on a file that was never produced, and the resulting UNO exception
+    # escapes the VCL message loop to desktop/source/app/app.cxx's catch, which
+    # calls FatalError() -> _exit().  I.e. picking such a driver in Base KILLS
+    # the office rather than reporting an error.  Re-add each line the moment
+    # the matching cc_binary exists, never before.
 
     # ── cui ───────────────────────────────────────────────────────────────
     "//main/cui:util/cui.component":
@@ -955,13 +962,14 @@ _MAIN_XCU = [
     oc_xcu("UserProfile.xcu"),
     oc_xcu("VCL.xcu"),
     oc_xcu("ucb/Configuration.xcu"),
-    # DataAccess XCU (Windows build: dbase, flat, mysql, odbc, adabas, ado)
+    # DataAccess XCU — one entry per driver that is actually BUILT.  These are
+    # what make a connection type selectable in the Base wizard, so listing a
+    # driver here whose DLL does not exist is what turns "unsupported database"
+    # into a hard process exit.  Keep this list in step with the component
+    # registrations above: dbase, flat, calc, hsqldb.
     "//main/connectivity:source/drivers/dbase/dbase.xcu",
     "//main/connectivity:source/drivers/flat/flat.xcu",
-    "//main/connectivity:source/drivers/mysql/mysql.xcu",
-    "//main/connectivity:source/drivers/odbc/odbc.xcu",
-    "//main/connectivity:source/drivers/adabas/adabas.xcu",
-    "//main/connectivity:source/drivers/ado/ado.xcu",
+    "//main/connectivity:source/drivers/hsqldb/hsqldb.xcu",
     # FCFGMerge spool
     fcfg("fcfg_base_types"),
     fcfg("fcfg_base_filters"),

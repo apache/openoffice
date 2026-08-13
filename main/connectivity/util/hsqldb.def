@@ -1,0 +1,37 @@
+; hsqldb.dll is dual-role: a UNO component AND a JNI library.  The two
+; component_* entries are what the SharedLibrary loader resolves; every
+; Java_* entry is a native method of the classes in sdbc_hsqldb.jar, which
+; the HSQLDB engine calls back into so that the database files live inside
+; the .odb zip storage instead of on disk.  Transcribed from
+; source/drivers/hsqldb/exports.dxp -- keep the two in step.
+LIBRARY hsqldb
+EXPORTS
+    component_getImplementationEnvironment
+    component_getFactory
+    Java_com_sun_star_sdbcx_comp_hsqldb_StorageNativeOutputStream_openStream
+    Java_com_sun_star_sdbcx_comp_hsqldb_StorageNativeOutputStream_write__Ljava_lang_String_2Ljava_lang_String_2_3BII
+    Java_com_sun_star_sdbcx_comp_hsqldb_StorageNativeOutputStream_write__Ljava_lang_String_2Ljava_lang_String_2_3B
+    Java_com_sun_star_sdbcx_comp_hsqldb_StorageNativeOutputStream_close
+    Java_com_sun_star_sdbcx_comp_hsqldb_StorageNativeOutputStream_write__Ljava_lang_String_2Ljava_lang_String_2I
+    Java_com_sun_star_sdbcx_comp_hsqldb_StorageNativeOutputStream_flush
+    Java_com_sun_star_sdbcx_comp_hsqldb_StorageNativeOutputStream_sync
+    Java_com_sun_star_sdbcx_comp_hsqldb_NativeStorageAccess_openStream
+    Java_com_sun_star_sdbcx_comp_hsqldb_NativeStorageAccess_close
+    Java_com_sun_star_sdbcx_comp_hsqldb_NativeStorageAccess_getFilePointer
+    Java_com_sun_star_sdbcx_comp_hsqldb_NativeStorageAccess_length
+    Java_com_sun_star_sdbcx_comp_hsqldb_NativeStorageAccess_read__Ljava_lang_String_2Ljava_lang_String_2
+    Java_com_sun_star_sdbcx_comp_hsqldb_NativeStorageAccess_read__Ljava_lang_String_2Ljava_lang_String_2_3BII
+    Java_com_sun_star_sdbcx_comp_hsqldb_NativeStorageAccess_readInt
+    Java_com_sun_star_sdbcx_comp_hsqldb_NativeStorageAccess_seek
+    Java_com_sun_star_sdbcx_comp_hsqldb_NativeStorageAccess_write
+    Java_com_sun_star_sdbcx_comp_hsqldb_NativeStorageAccess_writeInt
+    Java_com_sun_star_sdbcx_comp_hsqldb_StorageNativeInputStream_openStream
+    Java_com_sun_star_sdbcx_comp_hsqldb_StorageNativeInputStream_read__Ljava_lang_String_2Ljava_lang_String_2
+    Java_com_sun_star_sdbcx_comp_hsqldb_StorageNativeInputStream_read__Ljava_lang_String_2Ljava_lang_String_2_3BII
+    Java_com_sun_star_sdbcx_comp_hsqldb_StorageNativeInputStream_close
+    Java_com_sun_star_sdbcx_comp_hsqldb_StorageNativeInputStream_skip
+    Java_com_sun_star_sdbcx_comp_hsqldb_StorageNativeInputStream_available
+    Java_com_sun_star_sdbcx_comp_hsqldb_StorageNativeInputStream_read__Ljava_lang_String_2Ljava_lang_String_2_3B
+    Java_com_sun_star_sdbcx_comp_hsqldb_StorageFileAccess_isStreamElement
+    Java_com_sun_star_sdbcx_comp_hsqldb_StorageFileAccess_removeElement
+    Java_com_sun_star_sdbcx_comp_hsqldb_StorageFileAccess_renameElement

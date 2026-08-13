@@ -51,6 +51,7 @@ bazel_dep(name = "rules_java",             version = "8.11.0")
 bazel_dep(name = "mdds",                   version = "0.3.1")
 bazel_dep(name = "coinmp",                 version = "1.7.6")
 bazel_dep(name = "gtest",                  version = "1.7.0")  # GoogleTest — C++ unit-test foundation (//main/test)
+bazel_dep(name = "hsqldb",                 version = "1.8.0")  # embedded database engine behind sdbc:embedded:hsqldb (//main/connectivity)
 
 # Host JDK.  Expose a downloaded JDK so we can register an ARCH-NEUTRAL java
 # RUNTIME toolchain (see //build/toolchain/java).  rules_java only auto-registers
