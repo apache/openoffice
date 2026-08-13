@@ -112,11 +112,11 @@ class DispatchRecorderSupplier  :   // interfaces
         //_______________________________________
         // XDispatchRecorderSupplier
 
-        virtual void                                                 SAL_CALL setDispatchRecorder( const css::uno::Reference< css::frame::XDispatchRecorder >& xRecorder   ) throw (css::uno::RuntimeException);
-        virtual css::uno::Reference< css::frame::XDispatchRecorder > SAL_CALL getDispatchRecorder(                                                                         ) throw (css::uno::RuntimeException);
+        virtual void                                                 SAL_CALL setDispatchRecorder( const css::uno::Reference< css::frame::XDispatchRecorder >& xRecorder   );
+        virtual css::uno::Reference< css::frame::XDispatchRecorder > SAL_CALL getDispatchRecorder(                                                                         );
         virtual void                                                 SAL_CALL dispatchAndRecord  ( const css::util::URL&                                       aURL        ,
                                                                                                    const css::uno::Sequence< css::beans::PropertyValue >&      lArguments  ,
-                                                                                                   const css::uno::Reference< css::frame::XDispatch >&         xDispatcher ) throw (css::uno::RuntimeException);
+                                                                                                   const css::uno::Reference< css::frame::XDispatch >&         xDispatcher );
 
     //___________________________________________
     // native interface

@@ -38,12 +38,12 @@
 
 using namespace ::com::sun::star;
 
-::rtl::OUString SAL_CALL SwUnoModule_getImplementationName() throw( uno::RuntimeException )
+::rtl::OUString SAL_CALL SwUnoModule_getImplementationName()
 {
 	return rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.comp.Writer.WriterModule" ) );
 }
 
-uno::Sequence< rtl::OUString > SAL_CALL SwUnoModule_getSupportedServiceNames() throw( uno::RuntimeException )
+uno::Sequence< rtl::OUString > SAL_CALL SwUnoModule_getSupportedServiceNames()
 {
 	uno::Sequence< rtl::OUString > aSeq( 1 );
 	aSeq[0] = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.text.ModuleDispatcher"));
@@ -58,7 +58,7 @@ uno::Reference< uno::XInterface > SAL_CALL SwUnoModule_createInstance(
 }
 
     // XNotifyingDispatch
-void SAL_CALL SwUnoModule::dispatchWithNotification( const util::URL& aURL, const uno::Sequence< beans::PropertyValue >& aArgs, const uno::Reference< frame::XDispatchResultListener >& xListener ) throw (uno::RuntimeException)
+void SAL_CALL SwUnoModule::dispatchWithNotification( const util::URL& aURL, const uno::Sequence< beans::PropertyValue >& aArgs, const uno::Reference< frame::XDispatchResultListener >& xListener )
 {
     // there is no guarantee, that we are holded alive during this method!
     // May the outside dispatch container will be updated by a CONTEXT_CHANGED
@@ -91,7 +91,7 @@ void SAL_CALL SwUnoModule::dispatchWithNotification( const util::URL& aURL, cons
 }
 
     // XDispatch
-void SAL_CALL SwUnoModule::dispatch( const util::URL& aURL, const uno::Sequence< beans::PropertyValue >& aArgs ) throw( uno::RuntimeException )
+void SAL_CALL SwUnoModule::dispatch( const util::URL& aURL, const uno::Sequence< beans::PropertyValue >& aArgs )
 {
     dispatchWithNotification(aURL, aArgs, uno::Reference< frame::XDispatchResultListener >());
 }
@@ -99,18 +99,17 @@ void SAL_CALL SwUnoModule::dispatch( const util::URL& aURL, const uno::Sequence<
 void SAL_CALL SwUnoModule::addStatusListener(
     const uno::Reference< frame::XStatusListener > & /*xControl*/,
     const util::URL& /*aURL*/)
-    throw( uno::RuntimeException )
 {
 }
 
 void SAL_CALL SwUnoModule::removeStatusListener(
     const uno::Reference< frame::XStatusListener > & /*xControl*/,
-    const util::URL& /*aURL*/) throw( uno::RuntimeException )
+    const util::URL& /*aURL*/)
 {
 }
 
 SEQUENCE< REFERENCE< XDISPATCH > > SAL_CALL SwUnoModule::queryDispatches(
-    const SEQUENCE< DISPATCHDESCRIPTOR >& seqDescripts ) throw( uno::RuntimeException )
+    const SEQUENCE< DISPATCHDESCRIPTOR >& seqDescripts )
 {
     sal_Int32 nCount = seqDescripts.getLength();
     SEQUENCE< REFERENCE< XDISPATCH > > lDispatcher( nCount );
@@ -128,7 +127,7 @@ SEQUENCE< REFERENCE< XDISPATCH > > SAL_CALL SwUnoModule::queryDispatches(
 // XDispatchProvider
 REFERENCE< XDISPATCH > SAL_CALL SwUnoModule::queryDispatch(
     const UNOURL& aURL, const OUSTRING& /*sTargetFrameName*/,
-    sal_Int32 /*eSearchFlags*/    ) throw( uno::RuntimeException )
+    sal_Int32 /*eSearchFlags*/    )
 {
     REFERENCE< XDISPATCH > xReturn;
 
@@ -142,12 +141,12 @@ REFERENCE< XDISPATCH > SAL_CALL SwUnoModule::queryDispatch(
 }
 
 // XServiceInfo
-::rtl::OUString SAL_CALL SwUnoModule::getImplementationName(  ) throw(uno::RuntimeException)
+::rtl::OUString SAL_CALL SwUnoModule::getImplementationName(  )
 {
 	return SwUnoModule_getImplementationName();
 }
 
-sal_Bool SAL_CALL SwUnoModule::supportsService( const ::rtl::OUString& sServiceName ) throw(uno::RuntimeException)
+sal_Bool SAL_CALL SwUnoModule::supportsService( const ::rtl::OUString& sServiceName )
 {
     UNOSEQUENCE< UNOOUSTRING >  seqServiceNames =   getSupportedServiceNames();
     const UNOOUSTRING*          pArray          =   seqServiceNames.getConstArray();
@@ -161,7 +160,7 @@ sal_Bool SAL_CALL SwUnoModule::supportsService( const ::rtl::OUString& sServiceN
     return sal_False ;
 }
 
-uno::Sequence< ::rtl::OUString > SAL_CALL SwUnoModule::getSupportedServiceNames(  ) throw(uno::RuntimeException)
+uno::Sequence< ::rtl::OUString > SAL_CALL SwUnoModule::getSupportedServiceNames(  )
 {
 	return SwUnoModule_getSupportedServiceNames();
 }

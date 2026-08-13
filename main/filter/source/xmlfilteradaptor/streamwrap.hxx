@@ -32,7 +32,7 @@
 #define DECLARE_UNO3_AGG_DEFAULTS(classname, baseclass) \
 virtual void            SAL_CALL acquire() throw() { baseclass::acquire(); } \
 virtual void            SAL_CALL release() throw() { baseclass::release(); }    \
-virtual ::com::sun::star::uno::Any  SAL_CALL queryInterface(const ::com::sun::star::uno::Type& _rType) throw (::com::sun::star::uno::RuntimeException) \
+virtual ::com::sun::star::uno::Any  SAL_CALL queryInterface(const ::com::sun::star::uno::Type& _rType) \
 { return baseclass::queryInterface(_rType); } \
 void            SAL_CALL PUT_SEMICOLON_AT_THE_END()
 
@@ -62,9 +62,9 @@ public:
 	DECLARE_UNO3_AGG_DEFAULTS(OOutputStreamWrapper, OutputStreamWrapper_Base);
 
 // stario::XOutputStream
-	virtual void SAL_CALL writeBytes(const staruno::Sequence< sal_Int8 >& aData) throw(stario::NotConnectedException, stario::BufferSizeExceededException, staruno::RuntimeException);
-	virtual void SAL_CALL flush() throw(stario::NotConnectedException, stario::BufferSizeExceededException, staruno::RuntimeException);
-	virtual void SAL_CALL closeOutput() throw(stario::NotConnectedException, stario::BufferSizeExceededException, staruno::RuntimeException);
+	virtual void SAL_CALL writeBytes(const staruno::Sequence< sal_Int8 >& aData);
+	virtual void SAL_CALL flush();
+	virtual void SAL_CALL closeOutput();
 };
 
 }	// namespace utl

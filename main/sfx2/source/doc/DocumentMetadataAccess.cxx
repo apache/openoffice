@@ -848,7 +848,7 @@ DocumentMetadataAccess::~DocumentMetadataAccess()
 
 // ::com::sun::star::rdf::XRepositorySupplier:
 uno::Reference< rdf::XRepository > SAL_CALL
-DocumentMetadataAccess::getRDFRepository() throw (uno::RuntimeException)
+DocumentMetadataAccess::getRDFRepository()
 {
     OSL_ENSURE(m_pImpl->m_xRepository.is(), "repository not initialized");
     return m_pImpl->m_xRepository;
@@ -856,20 +856,20 @@ DocumentMetadataAccess::getRDFRepository() throw (uno::RuntimeException)
 
 // ::com::sun::star::rdf::XNode:
 ::rtl::OUString SAL_CALL
-DocumentMetadataAccess::getStringValue() throw (uno::RuntimeException)
+DocumentMetadataAccess::getStringValue()
 {
     return m_pImpl->m_xBaseURI->getStringValue();
 }
 
 // ::com::sun::star::rdf::XURI:
 ::rtl::OUString SAL_CALL
-DocumentMetadataAccess::getNamespace() throw (uno::RuntimeException)
+DocumentMetadataAccess::getNamespace()
 {
     return m_pImpl->m_xBaseURI->getNamespace();
 }
 
 ::rtl::OUString SAL_CALL
-DocumentMetadataAccess::getLocalName() throw (uno::RuntimeException)
+DocumentMetadataAccess::getLocalName()
 {
     return m_pImpl->m_xBaseURI->getLocalName();
 }
@@ -878,7 +878,6 @@ DocumentMetadataAccess::getLocalName() throw (uno::RuntimeException)
 uno::Reference< rdf::XMetadatable > SAL_CALL
 DocumentMetadataAccess::getElementByMetadataReference(
     const ::com::sun::star::beans::StringPair & i_rReference)
-throw (uno::RuntimeException)
 {
     const IXmlIdRegistry * pReg(
         m_pImpl->m_rXmlIdRegistrySupplier.GetXmlIdRegistry() );
@@ -892,7 +891,6 @@ throw (uno::RuntimeException)
 uno::Reference< rdf::XMetadatable > SAL_CALL
 DocumentMetadataAccess::getElementByURI(
     const uno::Reference< rdf::XURI > & i_xURI )
-throw (uno::RuntimeException, lang::IllegalArgumentException)
 {
     if (!i_xURI.is()) {
         throw lang::IllegalArgumentException(::rtl::OUString::createFromAscii(
@@ -918,7 +916,6 @@ throw (uno::RuntimeException, lang::IllegalArgumentException)
 uno::Sequence< uno::Reference< rdf::XURI > > SAL_CALL
 DocumentMetadataAccess::getMetadataGraphsWithType(
     const uno::Reference<rdf::XURI> & i_xType)
-throw (uno::RuntimeException, lang::IllegalArgumentException)
 {
     if (!i_xType.is()) {
         throw lang::IllegalArgumentException(::rtl::OUString::createFromAscii(
@@ -940,8 +937,6 @@ throw (uno::RuntimeException, lang::IllegalArgumentException)
 uno::Reference<rdf::XURI> SAL_CALL
 DocumentMetadataAccess::addMetadataFile(const ::rtl::OUString & i_rFileName,
     const uno::Sequence < uno::Reference< rdf::XURI > > & i_rTypes)
-throw (uno::RuntimeException, lang::IllegalArgumentException,
-    container::ElementExistException)
 {
     if (!isFileNameValid(i_rFileName)) {
         throw lang::IllegalArgumentException(::rtl::OUString::createFromAscii(
@@ -985,9 +980,6 @@ DocumentMetadataAccess::importMetadataFile(::sal_Int16 i_Format,
     const ::rtl::OUString & i_rFileName,
     const uno::Reference< rdf::XURI > & i_xBaseURI,
     const uno::Sequence < uno::Reference< rdf::XURI > > & i_rTypes)
-throw (uno::RuntimeException, lang::IllegalArgumentException,
-    datatransfer::UnsupportedFlavorException,
-    container::ElementExistException, rdf::ParseException, io::IOException)
 {
     if (!isFileNameValid(i_rFileName)) {
         throw lang::IllegalArgumentException(::rtl::OUString::createFromAscii(
@@ -1030,8 +1022,6 @@ throw (uno::RuntimeException, lang::IllegalArgumentException,
 void SAL_CALL
 DocumentMetadataAccess::removeMetadataFile(
     const uno::Reference< rdf::XURI > & i_xGraphName)
-throw (uno::RuntimeException, lang::IllegalArgumentException,
-    container::NoSuchElementException)
 {
     try {
         m_pImpl->m_xRepository->destroyGraph(i_xGraphName);
@@ -1050,8 +1040,6 @@ throw (uno::RuntimeException, lang::IllegalArgumentException,
 void SAL_CALL
 DocumentMetadataAccess::addContentOrStylesFile(
     const ::rtl::OUString & i_rFileName)
-throw (uno::RuntimeException, lang::IllegalArgumentException,
-    container::ElementExistException)
 {
     if (!isFileNameValid(i_rFileName)) {
         throw lang::IllegalArgumentException(::rtl::OUString::createFromAscii(
@@ -1070,8 +1058,6 @@ throw (uno::RuntimeException, lang::IllegalArgumentException,
 void SAL_CALL
 DocumentMetadataAccess::removeContentOrStylesFile(
     const ::rtl::OUString & i_rFileName)
-throw (uno::RuntimeException, lang::IllegalArgumentException,
-    container::NoSuchElementException)
 {
     if (!isFileNameValid(i_rFileName)) {
         throw lang::IllegalArgumentException(::rtl::OUString::createFromAscii(
@@ -1112,8 +1098,6 @@ void SAL_CALL DocumentMetadataAccess::loadMetadataFromStorage(
     const uno::Reference< embed::XStorage > & i_xStorage,
     const uno::Reference<rdf::XURI> & i_xBaseURI,
     const uno::Reference<task::XInteractionHandler> & i_xHandler)
-throw (uno::RuntimeException, lang::IllegalArgumentException,
-    lang::WrappedTargetException)
 {
     if (!i_xStorage.is()) {
         throw lang::IllegalArgumentException(::rtl::OUString::createFromAscii(
@@ -1223,8 +1207,6 @@ throw (uno::RuntimeException, lang::IllegalArgumentException,
 
 void SAL_CALL DocumentMetadataAccess::storeMetadataToStorage(
     const uno::Reference< embed::XStorage > & i_xStorage)
-throw (uno::RuntimeException, lang::IllegalArgumentException,
-    lang::WrappedTargetException)
 {
     if (!i_xStorage.is()) {
         throw lang::IllegalArgumentException(::rtl::OUString::createFromAscii(
@@ -1301,8 +1283,6 @@ throw (uno::RuntimeException, lang::IllegalArgumentException,
 void SAL_CALL
 DocumentMetadataAccess::loadMetadataFromMedium(
     const uno::Sequence< beans::PropertyValue > & i_rMedium)
-throw (uno::RuntimeException, lang::IllegalArgumentException,
-    lang::WrappedTargetException)
 {
     uno::Reference<io::XInputStream> xIn;
     ::comphelper::MediaDescriptor md(i_rMedium);
@@ -1363,8 +1343,6 @@ throw (uno::RuntimeException, lang::IllegalArgumentException,
 void SAL_CALL
 DocumentMetadataAccess::storeMetadataToMedium(
     const uno::Sequence< beans::PropertyValue > & i_rMedium)
-throw (uno::RuntimeException, lang::IllegalArgumentException,
-    lang::WrappedTargetException)
 {
     ::comphelper::MediaDescriptor md(i_rMedium);
     ::rtl::OUString URL;

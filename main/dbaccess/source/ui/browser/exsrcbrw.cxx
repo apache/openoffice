@@ -77,7 +77,7 @@ extern "C" void SAL_CALL createRegistryInfo_OFormGridView()
 	static OMultiInstanceAutoRegistration< SbaExternalSourceBrowser > aAutoRegistration;
 }
 //------------------------------------------------------------------------------
-Any SAL_CALL SbaExternalSourceBrowser::queryInterface(const Type& _rType) throw (RuntimeException)
+Any SAL_CALL SbaExternalSourceBrowser::queryInterface(const Type& _rType)
 {
 	Any aRet = SbaXDataBrowserController::queryInterface(_rType);
 	if(!aRet.hasValue())
@@ -107,17 +107,17 @@ SbaExternalSourceBrowser::~SbaExternalSourceBrowser()
 }
 
 //-------------------------------------------------------------------------
-::comphelper::StringSequence SAL_CALL SbaExternalSourceBrowser::getSupportedServiceNames() throw(RuntimeException)
+::comphelper::StringSequence SAL_CALL SbaExternalSourceBrowser::getSupportedServiceNames()
 {
 	return getSupportedServiceNames_Static();
 }
 // -------------------------------------------------------------------------
-::rtl::OUString SbaExternalSourceBrowser::getImplementationName_Static() throw(RuntimeException)
+::rtl::OUString SbaExternalSourceBrowser::getImplementationName_Static()
 {
 	return ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("org.openoffice.comp.dbu.OFormGridView"));
 }
 //-------------------------------------------------------------------------
-::comphelper::StringSequence SbaExternalSourceBrowser::getSupportedServiceNames_Static() throw(RuntimeException)
+::comphelper::StringSequence SbaExternalSourceBrowser::getSupportedServiceNames_Static()
 {
 	::comphelper::StringSequence aSupported(1);
 	aSupported.getArray()[0] = ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.sdb.FormGridView"));
@@ -129,7 +129,7 @@ Reference< XInterface > SAL_CALL SbaExternalSourceBrowser::Create(const Referenc
 	return *(new SbaExternalSourceBrowser(_rxFactory));
 }
 //-------------------------------------------------------------------------
-::rtl::OUString SAL_CALL SbaExternalSourceBrowser::getImplementationName() throw(RuntimeException)
+::rtl::OUString SAL_CALL SbaExternalSourceBrowser::getImplementationName()
 {
 	return getImplementationName_Static();
 }
@@ -156,7 +156,7 @@ sal_Bool SbaExternalSourceBrowser::LoadForm()
 
 
 //------------------------------------------------------------------
-void SbaExternalSourceBrowser::modified(const ::com::sun::star::lang::EventObject& aEvent) throw( RuntimeException )
+void SbaExternalSourceBrowser::modified(const ::com::sun::star::lang::EventObject& aEvent)
 {
 	SbaXDataBrowserController::modified(aEvent);
 
@@ -168,7 +168,7 @@ void SbaExternalSourceBrowser::modified(const ::com::sun::star::lang::EventObjec
 }
 
 //------------------------------------------------------------------
-void SAL_CALL SbaExternalSourceBrowser::dispatch(const ::com::sun::star::util::URL& aURL, const Sequence< ::com::sun::star::beans::PropertyValue>& aArgs) throw(::com::sun::star::uno::RuntimeException)
+void SAL_CALL SbaExternalSourceBrowser::dispatch(const ::com::sun::star::util::URL& aURL, const Sequence< ::com::sun::star::beans::PropertyValue>& aArgs)
 {
 	const ::com::sun::star::beans::PropertyValue* pArguments = aArgs.getConstArray();
 	if (aURL.Complete.equals(::rtl::OUString::createFromAscii(".uno:FormSlots/AddGridColumn")))
@@ -281,7 +281,7 @@ void SAL_CALL SbaExternalSourceBrowser::dispatch(const ::com::sun::star::util::U
 }
 
 //------------------------------------------------------------------
-Reference< ::com::sun::star::frame::XDispatch >  SAL_CALL SbaExternalSourceBrowser::queryDispatch(const ::com::sun::star::util::URL& aURL, const ::rtl::OUString& aTargetFrameName, sal_Int32 nSearchFlags) throw( RuntimeException )
+Reference< ::com::sun::star::frame::XDispatch >  SAL_CALL SbaExternalSourceBrowser::queryDispatch(const ::com::sun::star::util::URL& aURL, const ::rtl::OUString& aTargetFrameName, sal_Int32 nSearchFlags)
 {
 	Reference< ::com::sun::star::frame::XDispatch >  xReturn;
 	if (m_bInQueryDispatch)
@@ -351,19 +351,19 @@ void SAL_CALL SbaExternalSourceBrowser::disposing()
 }
 
 //------------------------------------------------------------------
-void SAL_CALL SbaExternalSourceBrowser::addModifyListener(const Reference< ::com::sun::star::util::XModifyListener > & aListener) throw( RuntimeException )
+void SAL_CALL SbaExternalSourceBrowser::addModifyListener(const Reference< ::com::sun::star::util::XModifyListener > & aListener)
 {
 	m_aModifyListeners.addInterface(aListener);
 }
 
 //------------------------------------------------------------------
-void SAL_CALL SbaExternalSourceBrowser::removeModifyListener(const Reference< ::com::sun::star::util::XModifyListener > & aListener) throw( RuntimeException )
+void SAL_CALL SbaExternalSourceBrowser::removeModifyListener(const Reference< ::com::sun::star::util::XModifyListener > & aListener)
 {
 	m_aModifyListeners.removeInterface(aListener);
 }
 
 //------------------------------------------------------------------
-void SAL_CALL SbaExternalSourceBrowser::unloading(const ::com::sun::star::lang::EventObject& aEvent) throw( RuntimeException )
+void SAL_CALL SbaExternalSourceBrowser::unloading(const ::com::sun::star::lang::EventObject& aEvent)
 {
 	if (m_pDataSourceImpl && (m_pDataSourceImpl->getAttachedForm() == aEvent.Source))
 	{
@@ -462,7 +462,7 @@ void SbaExternalSourceBrowser::ClearView()
 }
 
 //------------------------------------------------------------------
-void SAL_CALL SbaExternalSourceBrowser::disposing(const ::com::sun::star::lang::EventObject& Source) throw( RuntimeException )
+void SAL_CALL SbaExternalSourceBrowser::disposing(const ::com::sun::star::lang::EventObject& Source)
 {
 	if (m_pDataSourceImpl && (m_pDataSourceImpl->getAttachedForm() == Source.Source))
 	{

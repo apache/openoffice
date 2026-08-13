@@ -123,8 +123,8 @@ public:
 	SwDrawModellListener_Impl( SdrModel *pDrawModel );
 
 
-    virtual void SAL_CALL addEventListener( const uno::Reference< document::XEventListener >& xListener ) throw (uno::RuntimeException);
-    virtual void SAL_CALL removeEventListener( const uno::Reference< document::XEventListener >& xListener ) throw (uno::RuntimeException);
+    virtual void SAL_CALL addEventListener( const uno::Reference< document::XEventListener >& xListener );
+    virtual void SAL_CALL removeEventListener( const uno::Reference< document::XEventListener >& xListener );
 
 	virtual void		Notify( SfxBroadcaster& rBC, const SfxHint& rHint );
 	void Dispose();
@@ -142,12 +142,12 @@ SwDrawModellListener_Impl::~SwDrawModellListener_Impl()
 	EndListening( *mpDrawModel );
 }
 
-void SAL_CALL SwDrawModellListener_Impl::addEventListener( const uno::Reference< document::XEventListener >& xListener ) throw (uno::RuntimeException)
+void SAL_CALL SwDrawModellListener_Impl::addEventListener( const uno::Reference< document::XEventListener >& xListener )
 {
 	maEventListeners.addInterface( xListener );
 }
 
-void SAL_CALL SwDrawModellListener_Impl::removeEventListener( const uno::Reference< document::XEventListener >& xListener ) throw (uno::RuntimeException)
+void SAL_CALL SwDrawModellListener_Impl::removeEventListener( const uno::Reference< document::XEventListener >& xListener )
 {
 	maEventListeners.removeInterface( xListener );
 }
@@ -3337,7 +3337,7 @@ sal_Bool SwAccessibleMap::ReplaceChild (
 		const uno::Reference< drawing::XShape >& _rxShape,
         const long /*_nIndex*/,
         const ::accessibility::AccessibleShapeTreeInfo& /*_rShapeTreeInfo*/
-	)	throw (uno::RuntimeException)
+	)
 {
 	const SdrObject *pObj = 0;
 	{
@@ -3411,7 +3411,7 @@ sal_Bool SwAccessibleMap::ReplaceChild (
 }
 
 //Get the accessible control shape from the model object, here model object is with XPropertySet type
-::accessibility::AccessibleControlShape * SwAccessibleMap::GetAccControlShapeFromModel(::com::sun::star::beans::XPropertySet* pSet) throw (::com::sun::star::uno::RuntimeException)
+::accessibility::AccessibleControlShape * SwAccessibleMap::GetAccControlShapeFromModel(::com::sun::star::beans::XPropertySet* pSet)
 {
 	if( mpShapeMap )
 	{
@@ -3436,7 +3436,6 @@ sal_Bool SwAccessibleMap::ReplaceChild (
 
 ::com::sun::star::uno::Reference< XAccessible >
     SwAccessibleMap::GetAccessibleCaption (const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape >& xShape)
-    throw (::com::sun::star::uno::RuntimeException)
 {
 		SdrObject* captionedObject = GetSdrObjectFromXShape(xShape);
 

@@ -64,7 +64,7 @@ namespace accessibility
 	}
 
 	// -----------------------------------------------------------------------------
-	void SAL_CALL AccessibleBrowseBoxCell::grabFocus() throw ( RuntimeException )
+	void SAL_CALL AccessibleBrowseBoxCell::grabFocus()
 	{
 		SolarMethodGuard aGuard( *this );
 		mpBrowseBox->GoToCell( m_nRowPos, m_nColPos );

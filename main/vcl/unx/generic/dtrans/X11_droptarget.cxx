@@ -52,7 +52,7 @@ DropTarget::~DropTarget()
 
 // --------------------------------------------------------------------------
 
-void DropTarget::initialize( const Sequence< Any >& arguments ) throw( ::com::sun::star::uno::Exception )
+void DropTarget::initialize( const Sequence< Any >& arguments )
 {
 	if( arguments.getLength() > 1 )
 	{

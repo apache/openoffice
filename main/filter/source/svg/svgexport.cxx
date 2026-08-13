@@ -182,7 +182,6 @@ sal_Bool ObjectRepresentation::operator==( const ObjectRepresentation& rPresenta
 // -------------
 
 sal_Bool SVGFilter::implExport( const Sequence< PropertyValue >& rDescriptor )
-	throw (RuntimeException)
 {
     Reference< XMultiServiceFactory >	xServiceFactory( ::comphelper::getProcessServiceFactory() ) ;
     Reference< XOutputStream >          xOStm;

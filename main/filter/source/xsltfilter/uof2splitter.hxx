@@ -77,18 +77,18 @@ public :
 	~UOF2Splitter();
 
 	// XActiveDataControl
-	virtual void SAL_CALL   addListener ( const ::com::sun::star::uno::Reference< ::com::sun::star::io::XStreamListener> & rxListener ) throw( ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL   removeListener ( const ::com::sun::star::uno::Reference< ::com::sun::star::io::XStreamListener> & rxListener ) throw( ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL   start (void) throw( ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL   terminate (void) throw( ::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL   addListener ( const ::com::sun::star::uno::Reference< ::com::sun::star::io::XStreamListener> & rxListener );
+	virtual void SAL_CALL   removeListener ( const ::com::sun::star::uno::Reference< ::com::sun::star::io::XStreamListener> & rxListener );
+	virtual void SAL_CALL   start (void);
+    virtual void SAL_CALL   terminate (void);
 
 	// XActiveDataSink
-	virtual void SAL_CALL   setInputStream ( const ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream> &rxInputStream) throw( ::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream> SAL_CALL getInputStream (void) throw( ::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL   setInputStream ( const ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream> &rxInputStream);
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream> SAL_CALL getInputStream (void);
 
 	// XActiveDataStreamer
-	virtual void SAL_CALL   setStream ( const ::com::sun::star::uno::Reference< ::com::sun::star::io::XStream> &rxStream) throw( ::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Reference< ::com::sun::star::io::XStream> SAL_CALL getStream (void) throw( ::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL   setStream ( const ::com::sun::star::uno::Reference< ::com::sun::star::io::XStream> &rxStream);
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::io::XStream> SAL_CALL getStream (void);
 
 };
 

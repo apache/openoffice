@@ -64,7 +64,6 @@ AccEventListener::~AccEventListener()
  *	@param AccessibleEventObject	the event object which contains information about event
  */
 void  AccEventListener::notifyEvent( const ::com::sun::star::accessibility::AccessibleEventObject& aEvent )
-throw (::com::sun::star::uno::RuntimeException)
 {
 
     switch (aEvent.EventId)
@@ -277,13 +276,12 @@ void AccEventListener::removeMeFromBroadcaster()
  *	this method is invoked before listener is disposed
  */
 void AccEventListener::disposing( const ::com::sun::star::lang::EventObject& Source )
-throw (::com::sun::star::uno::RuntimeException)
 {
     removeMeFromBroadcaster();
 }
 
 //need to investigate further
-::com::sun::star::uno::Any SAL_CALL AccEventListener::queryInterface( const ::com::sun::star::uno::Type& aType ) throw (::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any SAL_CALL AccEventListener::queryInterface( const ::com::sun::star::uno::Type& aType )
 {
     if(aType.equals(::getCppuType( (Reference< com::sun::star::accessibility::XAccessibleEventListener> const *)0 ) ))
     {

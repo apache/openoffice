@@ -99,25 +99,25 @@ using namespace ::comphelper;
 using namespace ::osl;
 
 //------------------------------------------------------------------------------
-::rtl::OUString SAL_CALL ORelationController::getImplementationName() throw( RuntimeException )
+::rtl::OUString SAL_CALL ORelationController::getImplementationName()
 {
 	return getImplementationName_Static();
 }
 
 //------------------------------------------------------------------------------
-::rtl::OUString ORelationController::getImplementationName_Static() throw( RuntimeException )
+::rtl::OUString ORelationController::getImplementationName_Static()
 {
 	return ::rtl::OUString::createFromAscii("org.openoffice.comp.dbu.ORelationDesign");
 }
 //------------------------------------------------------------------------------
-Sequence< ::rtl::OUString> ORelationController::getSupportedServiceNames_Static(void) throw( RuntimeException )
+Sequence< ::rtl::OUString> ORelationController::getSupportedServiceNames_Static(void)
 {
 	Sequence< ::rtl::OUString> aSupported(1);
 	aSupported.getArray()[0] = ::rtl::OUString::createFromAscii("com.sun.star.sdb.RelationDesign");
 	return aSupported;
 }
 //-------------------------------------------------------------------------
-Sequence< ::rtl::OUString> SAL_CALL ORelationController::getSupportedServiceNames() throw(RuntimeException)
+Sequence< ::rtl::OUString> SAL_CALL ORelationController::getSupportedServiceNames()
 {
 	return getSupportedServiceNames_Static();
 }

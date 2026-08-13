@@ -101,15 +101,15 @@ public:
 	// XTransferable
 	//-------------------------------------------------
 
-	virtual Any SAL_CALL getTransferData( const DataFlavor& aFlavor ) throw(UnsupportedFlavorException, IOException, RuntimeException);
-    virtual Sequence< DataFlavor > SAL_CALL getTransferDataFlavors(  ) throw(RuntimeException);
-	virtual sal_Bool SAL_CALL isDataFlavorSupported( const DataFlavor& aFlavor ) throw(RuntimeException);
+	virtual Any SAL_CALL getTransferData( const DataFlavor& aFlavor );
+    virtual Sequence< DataFlavor > SAL_CALL getTransferDataFlavors(  );
+	virtual sal_Bool SAL_CALL isDataFlavorSupported( const DataFlavor& aFlavor );
 
 	//-------------------------------------------------
 	// XClipboardOwner
 	//-------------------------------------------------
 
-	virtual void SAL_CALL lostOwnership( const Reference< XClipboard >& xClipboard, const Reference< XTransferable >& xTrans ) throw(RuntimeException);
+	virtual void SAL_CALL lostOwnership( const Reference< XClipboard >& xClipboard, const Reference< XTransferable >& xTrans );
 
 private:
 	Sequence< DataFlavor > m_seqDFlv;

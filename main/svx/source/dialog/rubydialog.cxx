@@ -136,8 +136,8 @@ class SvxRubyData_Impl : public cppu::WeakImplHelper1
     Sequence<PropertyValues>&       GetRubyValues() {return aRubyValues;}
     void                            AssertOneEntry();
 
-    virtual void SAL_CALL selectionChanged( const ::com::sun::star::lang::EventObject& aEvent ) throw (RuntimeException);
-    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw (RuntimeException);
+    virtual void SAL_CALL selectionChanged( const ::com::sun::star::lang::EventObject& aEvent );
+    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
 };
 //-----------------------------------------------------------------------------
@@ -171,12 +171,12 @@ void    SvxRubyData_Impl::SetController(Reference<XController> xCtrl)
     }
 }
 //-----------------------------------------------------------------------------
-void SvxRubyData_Impl::selectionChanged( const EventObject& ) throw (RuntimeException)
+void SvxRubyData_Impl::selectionChanged( const EventObject& )
 {
     bHasSelectionChanged = sal_True;
 }
 //-----------------------------------------------------------------------------
-void SvxRubyData_Impl::disposing( const EventObject&) throw (RuntimeException)
+void SvxRubyData_Impl::disposing( const EventObject&)
 {
     try
     {

@@ -41,7 +41,6 @@ namespace xmlscript
 Reference< xml::input::XElement > ProgressBarElement::startChildElement(
 	sal_Int32 nUid, OUString const & rLocalName,
 	Reference< xml::input::XAttributes > const & xAttributes )
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	// event
     if (_pImport->isEventElement( nUid, rLocalName ))
@@ -58,7 +57,6 @@ Reference< xml::input::XElement > ProgressBarElement::startChildElement(
 }
 //__________________________________________________________________________________________________
 void ProgressBarElement::endElement()
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	ControlImportContext ctx(
 		_pImport, getControlId( _xAttributes ),
@@ -97,7 +95,6 @@ void ProgressBarElement::endElement()
 Reference< xml::input::XElement > ScrollBarElement::startChildElement(
 	sal_Int32 nUid, OUString const & rLocalName,
 	Reference< xml::input::XAttributes > const & xAttributes )
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	// event
     if (_pImport->isEventElement( nUid, rLocalName ))
@@ -113,7 +110,6 @@ Reference< xml::input::XElement > ScrollBarElement::startChildElement(
 }
 //__________________________________________________________________________________________________
 void ScrollBarElement::endElement()
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	ControlImportContext ctx(
 		_pImport, getControlId( _xAttributes ),
@@ -174,7 +170,6 @@ void ScrollBarElement::endElement()
 Reference< xml::input::XElement > FixedLineElement::startChildElement(
 	sal_Int32 nUid, OUString const & rLocalName,
 	Reference< xml::input::XAttributes > const & xAttributes )
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	// event
     if (_pImport->isEventElement( nUid, rLocalName ))
@@ -190,7 +185,6 @@ Reference< xml::input::XElement > FixedLineElement::startChildElement(
 }
 //__________________________________________________________________________________________________
 void FixedLineElement::endElement()
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	ControlImportContext ctx(
 		_pImport, getControlId( _xAttributes ),
@@ -226,7 +220,6 @@ void FixedLineElement::endElement()
 Reference< xml::input::XElement > PatternFieldElement::startChildElement(
 	sal_Int32 nUid, OUString const & rLocalName,
 	Reference< xml::input::XAttributes > const & xAttributes )
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	// event
     if (_pImport->isEventElement( nUid, rLocalName ))
@@ -242,7 +235,6 @@ Reference< xml::input::XElement > PatternFieldElement::startChildElement(
 }
 //__________________________________________________________________________________________________
 void PatternFieldElement::endElement()
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	ControlImportContext ctx(
 		_pImport, getControlId( _xAttributes ),
@@ -298,7 +290,6 @@ void PatternFieldElement::endElement()
 Reference< xml::input::XElement > FormattedFieldElement::startChildElement(
 	sal_Int32 nUid, OUString const & rLocalName,
 	Reference< xml::input::XAttributes > const & xAttributes )
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	// event
     if (_pImport->isEventElement( nUid, rLocalName ))
@@ -314,7 +305,6 @@ Reference< xml::input::XElement > FormattedFieldElement::startChildElement(
 }
 //__________________________________________________________________________________________________
 void FormattedFieldElement::endElement()
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	ControlImportContext ctx(
 		_pImport, getControlId( _xAttributes ),
@@ -476,7 +466,6 @@ void FormattedFieldElement::endElement()
 Reference< xml::input::XElement > TimeFieldElement::startChildElement(
 	sal_Int32 nUid, OUString const & rLocalName,
 	Reference< xml::input::XAttributes > const & xAttributes )
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	// event
     if (_pImport->isEventElement( nUid, rLocalName ))
@@ -492,7 +481,6 @@ Reference< xml::input::XElement > TimeFieldElement::startChildElement(
 }
 //__________________________________________________________________________________________________
 void TimeFieldElement::endElement()
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	ControlImportContext ctx(
 		_pImport, getControlId( _xAttributes ),
@@ -562,7 +550,6 @@ void TimeFieldElement::endElement()
 Reference< xml::input::XElement > NumericFieldElement::startChildElement(
 	sal_Int32 nUid, OUString const & rLocalName,
 	Reference< xml::input::XAttributes > const & xAttributes )
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	// event
     if (_pImport->isEventElement( nUid, rLocalName ))
@@ -578,7 +565,6 @@ Reference< xml::input::XElement > NumericFieldElement::startChildElement(
 }
 //__________________________________________________________________________________________________
 void NumericFieldElement::endElement()
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	ControlImportContext ctx(
 		_pImport, getControlId( _xAttributes ),
@@ -650,7 +636,6 @@ void NumericFieldElement::endElement()
 Reference< xml::input::XElement > DateFieldElement::startChildElement(
 	sal_Int32 nUid, OUString const & rLocalName,
 	Reference< xml::input::XAttributes > const & xAttributes )
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	// event
     if (_pImport->isEventElement( nUid, rLocalName ))
@@ -666,7 +651,6 @@ Reference< xml::input::XElement > DateFieldElement::startChildElement(
 }
 //__________________________________________________________________________________________________
 void DateFieldElement::endElement()
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	ControlImportContext ctx(
 		_pImport, getControlId( _xAttributes ),
@@ -741,7 +725,6 @@ void DateFieldElement::endElement()
 Reference< xml::input::XElement > CurrencyFieldElement::startChildElement(
 	sal_Int32 nUid, OUString const & rLocalName,
 	Reference< xml::input::XAttributes > const & xAttributes )
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	// event
     if (_pImport->isEventElement( nUid, rLocalName ))
@@ -757,7 +740,6 @@ Reference< xml::input::XElement > CurrencyFieldElement::startChildElement(
 }
 //__________________________________________________________________________________________________
 void CurrencyFieldElement::endElement()
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	ControlImportContext ctx(
 		_pImport, getControlId( _xAttributes ),
@@ -835,7 +817,6 @@ void CurrencyFieldElement::endElement()
 Reference< xml::input::XElement > FileControlElement::startChildElement(
 	sal_Int32 nUid, OUString const & rLocalName,
 	Reference< xml::input::XAttributes > const & xAttributes )
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	// event
     if (_pImport->isEventElement( nUid, rLocalName ))
@@ -851,7 +832,6 @@ Reference< xml::input::XElement > FileControlElement::startChildElement(
 }
 //__________________________________________________________________________________________________
 void FileControlElement::endElement()
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	ControlImportContext ctx(
 		_pImport, getControlId( _xAttributes ),
@@ -894,7 +874,6 @@ void FileControlElement::endElement()
 Reference< xml::input::XElement > TreeControlElement::startChildElement(
 	sal_Int32 nUid, OUString const & rLocalName,
 	Reference< xml::input::XAttributes > const & xAttributes )
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	// event
     if (_pImport->isEventElement( nUid, rLocalName ))
@@ -910,7 +889,6 @@ Reference< xml::input::XElement > TreeControlElement::startChildElement(
 }
 //__________________________________________________________________________________________________
 void TreeControlElement::endElement()
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	ControlImportContext ctx(
 		_pImport, getControlId( _xAttributes ),
@@ -964,7 +942,6 @@ void TreeControlElement::endElement()
 Reference< xml::input::XElement > ImageControlElement::startChildElement(
 	sal_Int32 nUid, OUString const & rLocalName,
 	Reference< xml::input::XAttributes > const & xAttributes )
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	// event
     if (_pImport->isEventElement( nUid, rLocalName ))
@@ -980,7 +957,6 @@ Reference< xml::input::XElement > ImageControlElement::startChildElement(
 }
 //__________________________________________________________________________________________________
 void ImageControlElement::endElement()
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	ControlImportContext ctx(
 		_pImport, getControlId( _xAttributes ),
@@ -1021,7 +997,6 @@ void ImageControlElement::endElement()
 Reference< xml::input::XElement > TextElement::startChildElement(
 	sal_Int32 nUid, OUString const & rLocalName,
 	Reference< xml::input::XAttributes > const & xAttributes )
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	// event
     if (_pImport->isEventElement( nUid, rLocalName ))
@@ -1037,7 +1012,6 @@ Reference< xml::input::XElement > TextElement::startChildElement(
 }
 //__________________________________________________________________________________________________
 void TextElement::endElement()
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	ControlImportContext ctx(
 		_pImport, getControlId( _xAttributes ),
@@ -1086,7 +1060,6 @@ void TextElement::endElement()
 Reference< xml::input::XElement > FixedHyperLinkElement::startChildElement(
 	sal_Int32 nUid, OUString const & rLocalName,
 	Reference< xml::input::XAttributes > const & xAttributes )
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	// event
     if (_pImport->isEventElement( nUid, rLocalName ))
@@ -1102,7 +1075,6 @@ Reference< xml::input::XElement > FixedHyperLinkElement::startChildElement(
 }
 //__________________________________________________________________________________________________
 void FixedHyperLinkElement::endElement()
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	ControlImportContext ctx(
 		_pImport, getControlId( _xAttributes ),
@@ -1159,7 +1131,6 @@ void FixedHyperLinkElement::endElement()
 Reference< xml::input::XElement > TextFieldElement::startChildElement(
 	sal_Int32 nUid, OUString const & rLocalName,
 	Reference< xml::input::XAttributes > const & xAttributes )
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	// event
     if (_pImport->isEventElement( nUid, rLocalName ))
@@ -1175,7 +1146,6 @@ Reference< xml::input::XElement > TextFieldElement::startChildElement(
 }
 //__________________________________________________________________________________________________
 void TextFieldElement::endElement()
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	ControlImportContext ctx(
 		_pImport, getControlId( _xAttributes ),
@@ -1253,7 +1223,6 @@ void TextFieldElement::endElement()
 Reference< xml::input::XElement > TitledBoxElement::startChildElement(
 	sal_Int32 nUid, OUString const & rLocalName,
 	Reference< xml::input::XAttributes > const & xAttributes )
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	// event
     if (_pImport->isEventElement( nUid, rLocalName ))
@@ -1300,7 +1269,6 @@ Reference< xml::input::XElement > TitledBoxElement::startChildElement(
 }
 //__________________________________________________________________________________________________
 void TitledBoxElement::endElement()
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	{
 	ControlImportContext ctx(
@@ -1409,7 +1377,6 @@ void TitledBoxElement::endElement()
 Reference< xml::input::XElement > RadioElement::startChildElement(
 	sal_Int32 nUid, OUString const & rLocalName,
 	Reference< xml::input::XAttributes > const & xAttributes )
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	// event
     if (_pImport->isEventElement( nUid, rLocalName ))
@@ -1431,7 +1398,6 @@ Reference< xml::input::XElement > RadioElement::startChildElement(
 Reference< xml::input::XElement > RadioGroupElement::startChildElement(
 	sal_Int32 nUid, OUString const & rLocalName,
 	Reference< xml::input::XAttributes > const & xAttributes )
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	if (_pImport->XMLNS_DIALOGS_UID != nUid)
 	{
@@ -1458,7 +1424,6 @@ Reference< xml::input::XElement > RadioGroupElement::startChildElement(
 }
 //__________________________________________________________________________________________________
 void RadioGroupElement::endElement()
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	for ( size_t nPos = 0; nPos < _radios.size(); ++nPos )
 	{
@@ -1536,7 +1501,6 @@ void RadioGroupElement::endElement()
 Reference< xml::input::XElement > MenuPopupElement::startChildElement(
 	sal_Int32 nUid, OUString const & rLocalName,
 	Reference< xml::input::XAttributes > const & xAttributes )
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	if (_pImport->XMLNS_DIALOGS_UID != nUid)
 	{
@@ -1607,7 +1571,6 @@ Sequence< sal_Int16 > MenuPopupElement::getSelectedItems()
 Reference< xml::input::XElement > MenuListElement::startChildElement(
 	sal_Int32 nUid, OUString const & rLocalName,
 	Reference< xml::input::XAttributes > const & xAttributes )
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	// event
     if (_pImport->isEventElement( nUid, rLocalName ))
@@ -1635,7 +1598,6 @@ Reference< xml::input::XElement > MenuListElement::startChildElement(
 }
 //__________________________________________________________________________________________________
 void MenuListElement::endElement()
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	ControlImportContext ctx(
 		_pImport, getControlId( _xAttributes ),
@@ -1694,7 +1656,6 @@ void MenuListElement::endElement()
 Reference< xml::input::XElement > ComboBoxElement::startChildElement(
 	sal_Int32 nUid, OUString const & rLocalName,
 	Reference< xml::input::XAttributes > const & xAttributes )
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	// event
     if (_pImport->isEventElement( nUid, rLocalName ))
@@ -1722,7 +1683,6 @@ Reference< xml::input::XElement > ComboBoxElement::startChildElement(
 }
 //__________________________________________________________________________________________________
 void ComboBoxElement::endElement()
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	ControlImportContext ctx(
 		_pImport, getControlId( _xAttributes ),
@@ -1789,7 +1749,6 @@ void ComboBoxElement::endElement()
 Reference< xml::input::XElement > CheckBoxElement::startChildElement(
 	sal_Int32 nUid, OUString const & rLocalName,
 	Reference< xml::input::XAttributes > const & xAttributes )
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	// event
     if (_pImport->isEventElement( nUid, rLocalName ))
@@ -1805,7 +1764,6 @@ Reference< xml::input::XElement > CheckBoxElement::startChildElement(
 }
 //__________________________________________________________________________________________________
 void CheckBoxElement::endElement()
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	ControlImportContext ctx(
 		_pImport, getControlId( _xAttributes ),
@@ -1887,7 +1845,6 @@ void CheckBoxElement::endElement()
 Reference< xml::input::XElement > ButtonElement::startChildElement(
 	sal_Int32 nUid, OUString const & rLocalName,
 	Reference< xml::input::XAttributes > const & xAttributes )
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	// event
     if (_pImport->isEventElement( nUid, rLocalName ))
@@ -1903,7 +1860,6 @@ Reference< xml::input::XElement > ButtonElement::startChildElement(
 }
 //__________________________________________________________________________________________________
 void ButtonElement::endElement()
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	ControlImportContext ctx(
 		_pImport, getControlId( _xAttributes ),
@@ -1988,7 +1944,6 @@ void ButtonElement::endElement()
 Reference< xml::input::XElement > BulletinBoardElement::startChildElement(
 	sal_Int32 nUid, OUString const & rLocalName,
 	Reference< xml::input::XAttributes > const & xAttributes )
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	if (_pImport->XMLNS_DIALOGS_UID != nUid)
 	{
@@ -2144,7 +2099,6 @@ BulletinBoardElement::BulletinBoardElement(
 Reference< xml::input::XElement > StyleElement::startChildElement(
 	sal_Int32 /*nUid*/, OUString const & /*rLocalName*/,
 	Reference< xml::input::XAttributes > const & /*xAttributes*/ )
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	throw xml::sax::SAXException(
 		OUString( RTL_CONSTASCII_USTRINGPARAM("unexpected sub elements of style!") ),
@@ -2152,7 +2106,6 @@ Reference< xml::input::XElement > StyleElement::startChildElement(
 }
 //__________________________________________________________________________________________________
 void StyleElement::endElement()
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	Reference< xml::input::XAttributes > xStyle;
 	OUString aStyleId(
@@ -2178,7 +2131,6 @@ void StyleElement::endElement()
 Reference< xml::input::XElement > StylesElement::startChildElement(
 	sal_Int32 nUid, OUString const & rLocalName,
 	Reference< xml::input::XAttributes > const & xAttributes )
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	if (_pImport->XMLNS_DIALOGS_UID != nUid)
 	{
@@ -2206,7 +2158,6 @@ Reference< xml::input::XElement > StylesElement::startChildElement(
 Reference< xml::input::XElement > WindowElement::startChildElement(
 	sal_Int32 nUid, OUString const & rLocalName,
 	Reference< xml::input::XAttributes > const & xAttributes )
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	// event
     if (_pImport->isEventElement( nUid, rLocalName ))
@@ -2238,7 +2189,6 @@ Reference< xml::input::XElement > WindowElement::startChildElement(
 }
 //__________________________________________________________________________________________________
 void WindowElement::endElement()
-	throw (xml::sax::SAXException, RuntimeException)
 {
 	Reference< beans::XPropertySet > xProps(
         _pImport->_xDialogModel, UNO_QUERY_THROW );

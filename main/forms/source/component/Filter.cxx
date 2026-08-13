@@ -148,7 +148,7 @@ namespace frm
 	}
 
 	//---------------------------------------------------------------------
-	Any	SAL_CALL OFilterControl::queryAggregation( const Type & rType ) throw(RuntimeException)
+	Any	SAL_CALL OFilterControl::queryAggregation( const Type & rType )
 	{
 		Any aRet = UnoControl::queryAggregation( rType);
 		if(!aRet.hasValue())
@@ -186,7 +186,7 @@ namespace frm
 
 	// XComponent
 	//---------------------------------------------------------------------
-	void OFilterControl::dispose() throw( RuntimeException  )
+	void OFilterControl::dispose()
 	{
 		EventObject aEvt(*this);
 		m_aTextListeners.disposeAndClear( aEvt );
@@ -194,7 +194,7 @@ namespace frm
 	}
 
 	//---------------------------------------------------------------------
-	void OFilterControl::createPeer( const Reference< XToolkit > & rxToolkit, const Reference< XWindowPeer >  & rParentPeer ) throw(RuntimeException)
+	void OFilterControl::createPeer( const Reference< XToolkit > & rxToolkit, const Reference< XWindowPeer >  & rParentPeer )
 	{
 		UnoControl::createPeer( rxToolkit, rParentPeer );
 
@@ -287,14 +287,14 @@ namespace frm
 
 	// XEventListener
 	//---------------------------------------------------------------------
-	void SAL_CALL OFilterControl::disposing(const EventObject& Source) throw( RuntimeException )
+	void SAL_CALL OFilterControl::disposing(const EventObject& Source)
 	{
 		UnoControl::disposing(Source);
 	}
 
 	// XItemListener
 	//---------------------------------------------------------------------
-	void SAL_CALL OFilterControl::itemStateChanged( const ItemEvent& rEvent ) throw(RuntimeException)
+	void SAL_CALL OFilterControl::itemStateChanged( const ItemEvent& rEvent )
 	{
 		::rtl::OUStringBuffer aText;
 		switch (m_nControlClass)
@@ -496,7 +496,7 @@ namespace frm
 
 	// XFocusListener
 	//---------------------------------------------------------------------
-	void SAL_CALL OFilterControl::focusGained(const FocusEvent& /*e*/)  throw( RuntimeException  )
+	void SAL_CALL OFilterControl::focusGained(const FocusEvent& /*e*/)
 	{
 		// should we fill the combobox?
 		if (m_bFilterList && !m_bFilterListFilled)
@@ -504,12 +504,12 @@ namespace frm
 	}
 
 	//---------------------------------------------------------------------
-	void SAL_CALL OFilterControl::focusLost(const FocusEvent& /*e*/) throw( RuntimeException )
+	void SAL_CALL OFilterControl::focusLost(const FocusEvent& /*e*/)
     {
     }
 
 	//---------------------------------------------------------------------
-	sal_Bool SAL_CALL OFilterControl::commit() throw(RuntimeException)
+	sal_Bool SAL_CALL OFilterControl::commit()
 	{
 		if ( !ensureInitialized( ) )
 			// already asserted in ensureInitialized
@@ -560,19 +560,19 @@ namespace frm
 
 	// XTextComponent
 	//---------------------------------------------------------------------
-	void SAL_CALL OFilterControl::addTextListener(const Reference< XTextListener > & l) throw(RuntimeException)
+	void SAL_CALL OFilterControl::addTextListener(const Reference< XTextListener > & l)
 	{
 		m_aTextListeners.addInterface( l );
 	}
 
 	//---------------------------------------------------------------------
-	void SAL_CALL OFilterControl::removeTextListener(const Reference< XTextListener > & l) throw(RuntimeException)
+	void SAL_CALL OFilterControl::removeTextListener(const Reference< XTextListener > & l)
 	{
 		m_aTextListeners.removeInterface( l );
 	}
 
 	//---------------------------------------------------------------------
-	void SAL_CALL OFilterControl::setText( const ::rtl::OUString& aText ) throw(RuntimeException)
+	void SAL_CALL OFilterControl::setText( const ::rtl::OUString& aText )
 	{
 		if ( !ensureInitialized( ) )
 			// already asserted in ensureInitialized
@@ -673,7 +673,7 @@ namespace frm
 	}
 
 	//---------------------------------------------------------------------
-	void SAL_CALL OFilterControl::insertText( const ::com::sun::star::awt::Selection& rSel, const ::rtl::OUString& aText ) throw(::com::sun::star::uno::RuntimeException)
+	void SAL_CALL OFilterControl::insertText( const ::com::sun::star::awt::Selection& rSel, const ::rtl::OUString& aText )
 	{
 		Reference< XTextComponent >  xText( getPeer(), UNO_QUERY );
 		if (xText.is())
@@ -684,13 +684,13 @@ namespace frm
 	}
 
 	//---------------------------------------------------------------------
-	::rtl::OUString SAL_CALL OFilterControl::getText() throw(RuntimeException)
+	::rtl::OUString SAL_CALL OFilterControl::getText()
 	{
 		return m_aText;
 	}
 
 	//---------------------------------------------------------------------
-	::rtl::OUString SAL_CALL OFilterControl::getSelectedText( void ) throw(RuntimeException)
+	::rtl::OUString SAL_CALL OFilterControl::getSelectedText( void )
 	{
 		::rtl::OUString aSelected;
 		Reference< XTextComponent >  xText( getPeer(), UNO_QUERY );
@@ -701,7 +701,7 @@ namespace frm
 	}
 
 	//---------------------------------------------------------------------
-	void SAL_CALL OFilterControl::setSelection( const ::com::sun::star::awt::Selection& aSelection ) throw(::com::sun::star::uno::RuntimeException)
+	void SAL_CALL OFilterControl::setSelection( const ::com::sun::star::awt::Selection& aSelection )
 	{
 		Reference< XTextComponent >  xText( getPeer(), UNO_QUERY );
 		if (xText.is())
@@ -709,7 +709,7 @@ namespace frm
 	}
 
 	//---------------------------------------------------------------------
-	::com::sun::star::awt::Selection SAL_CALL OFilterControl::getSelection( void ) throw(::com::sun::star::uno::RuntimeException)
+	::com::sun::star::awt::Selection SAL_CALL OFilterControl::getSelection( void )
 	{
 		::com::sun::star::awt::Selection aSel;
 		Reference< XTextComponent >  xText( getPeer(), UNO_QUERY );
@@ -719,14 +719,14 @@ namespace frm
 	}
 
 	//---------------------------------------------------------------------
-	sal_Bool SAL_CALL OFilterControl::isEditable( void ) throw(RuntimeException)
+	sal_Bool SAL_CALL OFilterControl::isEditable( void )
 	{
 		Reference< XTextComponent >  xText( getPeer(), UNO_QUERY );
 		return xText.is() && xText->isEditable();
 	}
 
 	//---------------------------------------------------------------------
-	void SAL_CALL OFilterControl::setEditable( sal_Bool bEditable ) throw(RuntimeException)
+	void SAL_CALL OFilterControl::setEditable( sal_Bool bEditable )
 	{
 		Reference< XTextComponent >  xText( getPeer(), UNO_QUERY );
 		if (xText.is())
@@ -734,14 +734,14 @@ namespace frm
 	}
 
 	//---------------------------------------------------------------------
-	sal_Int16 SAL_CALL OFilterControl::getMaxTextLen() throw(RuntimeException)
+	sal_Int16 SAL_CALL OFilterControl::getMaxTextLen()
 	{
 		Reference< XTextComponent >  xText( getPeer(), UNO_QUERY );
 		return xText.is() ? xText->getMaxTextLen() : 0;
 	}
 
 	//---------------------------------------------------------------------
-	void SAL_CALL OFilterControl::setMaxTextLen( sal_Int16 nLength ) throw(RuntimeException)
+	void SAL_CALL OFilterControl::setMaxTextLen( sal_Int16 nLength )
 	{
 		Reference< XTextComponent >  xText( getPeer(), UNO_QUERY );
 		if (xText.is())
@@ -775,7 +775,7 @@ namespace frm
 	}
 
 	//---------------------------------------------------------------------
-	void SAL_CALL OFilterControl::initialize( const Sequence< Any >& aArguments ) throw (Exception, RuntimeException)
+	void SAL_CALL OFilterControl::initialize( const Sequence< Any >& aArguments )
 	{
 		const Any* pArguments = aArguments.getConstArray();
 		const Any* pArgumentsEnd = pArguments + aArguments.getLength();
@@ -879,13 +879,13 @@ namespace frm
 	}
 
 	//---------------------------------------------------------------------
-	::rtl::OUString SAL_CALL OFilterControl::getImplementationName(  ) throw (RuntimeException)
+	::rtl::OUString SAL_CALL OFilterControl::getImplementationName(  )
 	{
 		return getImplementationName_Static();
 	}
 
 	//---------------------------------------------------------------------
-	sal_Bool SAL_CALL OFilterControl::supportsService( const ::rtl::OUString& ServiceName ) throw (RuntimeException)
+	sal_Bool SAL_CALL OFilterControl::supportsService( const ::rtl::OUString& ServiceName )
 	{
 		Sequence< ::rtl::OUString > aSupported( getSupportedServiceNames() );
 		const ::rtl::OUString* pArray = aSupported.getConstArray();
@@ -896,7 +896,7 @@ namespace frm
 	}
 
 	//---------------------------------------------------------------------
-	Sequence< ::rtl::OUString > SAL_CALL OFilterControl::getSupportedServiceNames(  ) throw (RuntimeException)
+	Sequence< ::rtl::OUString > SAL_CALL OFilterControl::getSupportedServiceNames(  )
 	{
 		return getSupportedServiceNames_Static();
 	}

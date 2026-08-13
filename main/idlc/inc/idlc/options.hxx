@@ -52,15 +52,12 @@ public:
     static bool checkArgument(std::vector< std::string > & rArgs, char const * arg, size_t len);
     static bool checkCommandFile(std::vector< std::string > & rArgs, char const * filename);
 
-    bool initOptions(std::vector< std::string > & rArgs)
-        throw(IllegalArgument);
-    bool badOption(char const * reason, std::string const & rArg)
-        throw(IllegalArgument);
+    bool initOptions(std::vector< std::string > & rArgs);
+    bool badOption(char const * reason, std::string const & rArg);
     bool setOption(char const * option, std::string const & rArg);
 
 #if 0  /* @@@ */
-	sal_Bool initOptions(int ac, char* av[], sal_Bool bCmdFile=sal_False)
-		throw( IllegalArgument );
+	sal_Bool initOptions(int ac, char* av[], sal_Bool bCmdFile=sal_False);
 #endif /* @@@ */
 
 	::rtl::OString prepareHelp();
@@ -68,8 +65,7 @@ public:
 
 	const ::rtl::OString&	getProgramName() const;
 	bool				isValid(const ::rtl::OString& option);
-	const ::rtl::OString&	getOption(const ::rtl::OString& option)
-		throw( IllegalArgument );
+	const ::rtl::OString&	getOption(const ::rtl::OString& option);
 
 	const StringVector& getInputFiles() const { return m_inputFiles; }
     bool readStdin() const { return m_stdin; }

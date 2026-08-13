@@ -77,7 +77,6 @@ OInstanceLocker::~OInstanceLocker()
 // XComponent
 // --------------------------------------------------------
 void SAL_CALL OInstanceLocker::dispose()
-	throw (uno::RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -103,7 +102,6 @@ void SAL_CALL OInstanceLocker::dispose()
 
 // --------------------------------------------------------
 void SAL_CALL OInstanceLocker::addEventListener( const uno::Reference< lang::XEventListener >& xListener )
-	throw (uno::RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	if ( m_bDisposed )
@@ -117,7 +115,6 @@ void SAL_CALL OInstanceLocker::addEventListener( const uno::Reference< lang::XEv
 
 // --------------------------------------------------------
 void SAL_CALL OInstanceLocker::removeEventListener( const uno::Reference< lang::XEventListener >& xListener )
-	throw (uno::RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	if ( m_pListenersContainer )
@@ -127,7 +124,6 @@ void SAL_CALL OInstanceLocker::removeEventListener( const uno::Reference< lang::
 // XInitialization
 // --------------------------------------------------------
 void SAL_CALL OInstanceLocker::initialize( const uno::Sequence< uno::Any >& aArguments )
-	throw (uno::Exception, uno::RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	if ( m_bInitialized )
@@ -199,14 +195,12 @@ void SAL_CALL OInstanceLocker::initialize( const uno::Sequence< uno::Any >& aArg
 // XServiceInfo
 // --------------------------------------------------------
 ::rtl::OUString SAL_CALL OInstanceLocker::getImplementationName(  )
-	throw (uno::RuntimeException)
 {
 	return getImplementationName_static();
 }
 
 // --------------------------------------------------------
 ::sal_Bool SAL_CALL OInstanceLocker::supportsService( const ::rtl::OUString& ServiceName )
-	throw (uno::RuntimeException)
 {
 	uno::Sequence< ::rtl::OUString > aSeq = getSupportedServiceNames();
 
@@ -219,7 +213,6 @@ void SAL_CALL OInstanceLocker::initialize( const uno::Sequence< uno::Any >& aArg
 
 // --------------------------------------------------------
 uno::Sequence< ::rtl::OUString > SAL_CALL OInstanceLocker::getSupportedServiceNames()
-	throw (uno::RuntimeException)
 {
 	return getSupportedServiceNames_static();
 }
@@ -312,7 +305,6 @@ void OLockListener::Dispose()
 // XEventListener
 // --------------------------------------------------------
 void SAL_CALL OLockListener::disposing( const lang::EventObject& aEvent )
-	throw (uno::RuntimeException)
 {
 	::osl::ResettableMutexGuard aGuard( m_aMutex );
 
@@ -337,7 +329,6 @@ void SAL_CALL OLockListener::disposing( const lang::EventObject& aEvent )
 // XCloseListener
 // --------------------------------------------------------
 void SAL_CALL OLockListener::queryClosing( const lang::EventObject& aEvent, sal_Bool )
-	throw (util::CloseVetoException, uno::RuntimeException)
 {
 	// GetsOwnership parameter is always ignored, the user of the service must close the object always
 	::osl::ResettableMutexGuard aGuard( m_aMutex );
@@ -367,7 +358,6 @@ void SAL_CALL OLockListener::queryClosing( const lang::EventObject& aEvent, sal_
 
 // --------------------------------------------------------
 void SAL_CALL OLockListener::notifyClosing( const lang::EventObject& aEvent )
-	throw (uno::RuntimeException)
 {
 	::osl::ResettableMutexGuard aGuard( m_aMutex );
 
@@ -398,7 +388,6 @@ void SAL_CALL OLockListener::notifyClosing( const lang::EventObject& aEvent )
 // XTerminateListener
 // --------------------------------------------------------
 void SAL_CALL OLockListener::queryTermination( const lang::EventObject& aEvent )
-	throw (frame::TerminationVetoException, uno::RuntimeException)
 {
 	::osl::ResettableMutexGuard aGuard( m_aMutex );
 	if ( aEvent.Source == m_xInstance && ( m_nMode & embed::Actions::PREVENT_TERMINATION ) )
@@ -427,7 +416,6 @@ void SAL_CALL OLockListener::queryTermination( const lang::EventObject& aEvent )
 
 // --------------------------------------------------------
 void SAL_CALL OLockListener::notifyTermination( const lang::EventObject& aEvent )
-	throw (uno::RuntimeException)
 {
 	::osl::ResettableMutexGuard aGuard( m_aMutex );
 

@@ -37,7 +37,7 @@ UnoMemoryStream::UnoMemoryStream( sal_uInt32 nInitSize, sal_uInt32 nInitResize )
 }
 
 // ::com::sun::star::uno::XInterface
-::com::sun::star::uno::Any UnoMemoryStream::queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any UnoMemoryStream::queryInterface( const ::com::sun::star::uno::Type & rType )
 {
 	::com::sun::star::uno::Any aRet = ::cppu::queryInterface( rType,
 										SAL_STATIC_CAST( ::com::sun::star::io::XInputStream*, this ) );
@@ -46,7 +46,7 @@ UnoMemoryStream::UnoMemoryStream( sal_uInt32 nInitSize, sal_uInt32 nInitResize )
 
 
 // ::com::sun::star::io::XInputStream
-sal_Int32 UnoMemoryStream::readBytes( ::com::sun::star::uno::Sequence< sal_Int8 >& rData, sal_Int32 nBytesToRead ) throw(::com::sun::star::io::NotConnectedException, ::com::sun::star::io::BufferSizeExceededException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException)
+sal_Int32 UnoMemoryStream::readBytes( ::com::sun::star::uno::Sequence< sal_Int8 >& rData, sal_Int32 nBytesToRead )
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
 
@@ -60,7 +60,7 @@ sal_Int32 UnoMemoryStream::readBytes( ::com::sun::star::uno::Sequence< sal_Int8 
 	return nRead;
 }
 
-sal_Int32 UnoMemoryStream::readSomeBytes( ::com::sun::star::uno::Sequence< sal_Int8 >& rData, sal_Int32 nMaxBytesToRead ) throw(::com::sun::star::io::NotConnectedException, ::com::sun::star::io::BufferSizeExceededException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException)
+sal_Int32 UnoMemoryStream::readSomeBytes( ::com::sun::star::uno::Sequence< sal_Int8 >& rData, sal_Int32 nMaxBytesToRead )
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
 
@@ -76,14 +76,14 @@ sal_Int32 UnoMemoryStream::readSomeBytes( ::com::sun::star::uno::Sequence< sal_I
 	}
 }
 
-void UnoMemoryStream::skipBytes( sal_Int32 nBytesToSkip ) throw(::com::sun::star::io::NotConnectedException, ::com::sun::star::io::BufferSizeExceededException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException)
+void UnoMemoryStream::skipBytes( sal_Int32 nBytesToSkip )
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
 
 	SeekRel( nBytesToSkip );
 }
 
-sal_Int32 UnoMemoryStream::available() throw(::com::sun::star::io::NotConnectedException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException)
+sal_Int32 UnoMemoryStream::available()
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
 
@@ -93,7 +93,7 @@ sal_Int32 UnoMemoryStream::available() throw(::com::sun::star::io::NotConnectedE
 	return nEnd - nStreamPos;
 }
 
-void UnoMemoryStream::closeInput() throw(::com::sun::star::io::NotConnectedException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException)
+void UnoMemoryStream::closeInput()
 {
 	// nothing to do
 }

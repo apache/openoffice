@@ -45,7 +45,6 @@ using ::comphelper::MediaDescriptor;
 
   -----------------------------------------------------------------------*/
 sal_Bool WriterFilter::filter( const uno::Sequence< beans::PropertyValue >& aDescriptor )
-   throw (uno::RuntimeException)
 {
     if( m_xSrcDoc.is() )
     {
@@ -149,7 +148,7 @@ sal_Bool WriterFilter::filter( const uno::Sequence< beans::PropertyValue >& aDes
 /*-- 09.06.2006 10:15:20---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-void WriterFilter::cancel(  ) throw (uno::RuntimeException)
+void WriterFilter::cancel(  )
 {
 }
 
@@ -157,13 +156,11 @@ void WriterFilter::cancel(  ) throw (uno::RuntimeException)
 
   -----------------------------------------------------------------------*/
 void WriterFilter::setTargetDocument( const uno::Reference< lang::XComponent >& xDoc )
-   throw (lang::IllegalArgumentException, uno::RuntimeException)
 {
    m_xDstDoc = xDoc;
 }
 
 void WriterFilter::setSourceDocument( const uno::Reference< lang::XComponent >& xDoc )
-   throw (lang::IllegalArgumentException, uno::RuntimeException)
 {
    m_xSrcDoc = xDoc;
 }
@@ -171,7 +168,7 @@ void WriterFilter::setSourceDocument( const uno::Reference< lang::XComponent >& 
 /*-- 09.06.2006 10:15:20---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-void WriterFilter::initialize( const uno::Sequence< uno::Any >& aArguments ) throw (uno::Exception, uno::RuntimeException)
+void WriterFilter::initialize( const uno::Sequence< uno::Any >& aArguments )
 {
    uno::Sequence < beans::PropertyValue > aAnySeq;
    sal_Int32 nLength = aArguments.getLength();
@@ -192,7 +189,7 @@ void WriterFilter::initialize( const uno::Sequence< uno::Any >& aArguments ) thr
 /*-- 09.06.2006 10:15:20---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-OUString WriterFilter_getImplementationName () throw (uno::RuntimeException)
+OUString WriterFilter_getImplementationName ()
 {
    return OUString ( RTL_CONSTASCII_USTRINGPARAM ( "com.sun.star.comp.Writer.WriterFilter" ) );
 }
@@ -202,7 +199,7 @@ OUString WriterFilter_getImplementationName () throw (uno::RuntimeException)
 /*-- 09.06.2006 10:15:20---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-sal_Bool WriterFilter_supportsService( const OUString& ServiceName ) throw (uno::RuntimeException)
+sal_Bool WriterFilter_supportsService( const OUString& ServiceName )
 {
    return (ServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM ( SERVICE_NAME1 ) ) ||
            ServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM ( SERVICE_NAME1 ) ));
@@ -210,7 +207,7 @@ sal_Bool WriterFilter_supportsService( const OUString& ServiceName ) throw (uno:
 /*-- 09.06.2006 10:15:20---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-uno::Sequence< OUString > WriterFilter_getSupportedServiceNames(  ) throw (uno::RuntimeException)
+uno::Sequence< OUString > WriterFilter_getSupportedServiceNames(  )
 {
    uno::Sequence < OUString > aRet(2);
    OUString* pArray = aRet.getArray();
@@ -225,7 +222,6 @@ uno::Sequence< OUString > WriterFilter_getSupportedServiceNames(  ) throw (uno::
 
   -----------------------------------------------------------------------*/
 uno::Reference< uno::XInterface > WriterFilter_createInstance( const uno::Reference< uno::XComponentContext >& xContext)
-                throw( uno::Exception )
 {
    return (cppu::OWeakObject*) new WriterFilter( xContext );
 }
@@ -233,21 +229,21 @@ uno::Reference< uno::XInterface > WriterFilter_createInstance( const uno::Refere
 /*-- 09.06.2006 10:15:20---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-OUString WriterFilter::getImplementationName(  ) throw (uno::RuntimeException)
+OUString WriterFilter::getImplementationName(  )
 {
    return WriterFilter_getImplementationName();
 }
 /*-- 09.06.2006 10:15:20---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-sal_Bool WriterFilter::supportsService( const OUString& rServiceName ) throw (uno::RuntimeException)
+sal_Bool WriterFilter::supportsService( const OUString& rServiceName )
 {
     return WriterFilter_supportsService( rServiceName );
 }
 /*-- 09.06.2006 10:15:20---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-uno::Sequence< OUString > WriterFilter::getSupportedServiceNames(  ) throw (uno::RuntimeException)
+uno::Sequence< OUString > WriterFilter::getSupportedServiceNames(  )
 {
     return WriterFilter_getSupportedServiceNames();
 }

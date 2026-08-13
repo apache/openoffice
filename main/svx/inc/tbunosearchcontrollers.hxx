@@ -100,14 +100,14 @@ public:
     ~FindTextToolbarController();
 
     // XInterface
-    virtual css::uno::Any SAL_CALL queryInterface( const css::uno::Type& aType ) throw ( css::uno::RuntimeException );
+    virtual css::uno::Any SAL_CALL queryInterface( const css::uno::Type& aType );
     virtual void SAL_CALL acquire() throw ();
     virtual void SAL_CALL release() throw ();
 
     // XServiceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName() throw( css::uno::RuntimeException );
-    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw( css::uno::RuntimeException );
-    virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames() throw( css::uno::RuntimeException );
+    virtual ::rtl::OUString SAL_CALL getImplementationName();
+    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+    virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 
     static ::rtl::OUString getImplementationName_Static() throw()
     {
@@ -117,17 +117,17 @@ public:
     static ::com::sun::star::uno::Sequence< ::rtl::OUString >  getSupportedServiceNames_Static() throw();
 
     // XComponent
-    virtual void SAL_CALL dispose() throw ( css::uno::RuntimeException );
+    virtual void SAL_CALL dispose();
 
     // XInitialization
-    virtual void SAL_CALL initialize( const css::uno::Sequence< css::uno::Any >& aArguments ) throw ( css::uno::Exception, css::uno::RuntimeException );
+    virtual void SAL_CALL initialize( const css::uno::Sequence< css::uno::Any >& aArguments );
 
     // XToolbarController
-    virtual void SAL_CALL execute( sal_Int16 KeyModifier ) throw ( css::uno::RuntimeException);
-    virtual css::uno::Reference< css::awt::XWindow > SAL_CALL createItemWindow( const css::uno::Reference< css::awt::XWindow >& Parent ) throw ( css::uno::RuntimeException );
+    virtual void SAL_CALL execute( sal_Int16 KeyModifier );
+    virtual css::uno::Reference< css::awt::XWindow > SAL_CALL createItemWindow( const css::uno::Reference< css::awt::XWindow >& Parent );
 
     // XStatusListener
-    virtual void SAL_CALL statusChanged( const css::frame::FeatureStateEvent& Event ) throw ( css::uno::RuntimeException );
+    virtual void SAL_CALL statusChanged( const css::frame::FeatureStateEvent& Event );
 
     DECL_LINK(EditModifyHdl, void*);
 
@@ -149,14 +149,14 @@ public:
     ~DownSearchToolboxController();
 
     // XInterface
-    virtual css::uno::Any SAL_CALL queryInterface( const css::uno::Type& aType ) throw ( css::uno::RuntimeException );
+    virtual css::uno::Any SAL_CALL queryInterface( const css::uno::Type& aType );
     virtual void SAL_CALL acquire() throw ();
     virtual void SAL_CALL release() throw ();
 
     // XServiceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName() throw( css::uno::RuntimeException );
-    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw( css::uno::RuntimeException );
-    virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames() throw( css::uno::RuntimeException );
+    virtual ::rtl::OUString SAL_CALL getImplementationName();
+    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+    virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 
     static ::rtl::OUString getImplementationName_Static() throw()
     {
@@ -166,16 +166,16 @@ public:
     static css::uno::Sequence< ::rtl::OUString >  getSupportedServiceNames_Static() throw();
 
     // XComponent
-    virtual void SAL_CALL dispose() throw ( css::uno::RuntimeException );
+    virtual void SAL_CALL dispose();
 
     // XInitialization
-    virtual void SAL_CALL initialize( const css::uno::Sequence< css::uno::Any >& aArguments ) throw ( css::uno::Exception, css::uno::RuntimeException );
+    virtual void SAL_CALL initialize( const css::uno::Sequence< css::uno::Any >& aArguments );
 
     // XToolbarController
-    virtual void SAL_CALL execute( sal_Int16 KeyModifier ) throw ( css::uno::RuntimeException);
+    virtual void SAL_CALL execute( sal_Int16 KeyModifier );
 
     // XStatusListener
-    virtual void SAL_CALL statusChanged( const css::frame::FeatureStateEvent& rEvent ) throw ( css::uno::RuntimeException );
+    virtual void SAL_CALL statusChanged( const css::frame::FeatureStateEvent& rEvent );
 
 };
 
@@ -188,14 +188,14 @@ public:
     ~UpSearchToolboxController();
 
     // XInterface
-    virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const css::uno::Type& aType ) throw ( css::uno::RuntimeException );
+    virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const css::uno::Type& aType );
     virtual void SAL_CALL acquire() throw ();
     virtual void SAL_CALL release() throw ();
 
     // XServiceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName() throw( css::uno::RuntimeException );
-    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw( css::uno::RuntimeException );
-    virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames() throw( css::uno::RuntimeException );
+    virtual ::rtl::OUString SAL_CALL getImplementationName();
+    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+    virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 
     static ::rtl::OUString getImplementationName_Static() throw()
     {
@@ -205,16 +205,16 @@ public:
     static css::uno::Sequence< ::rtl::OUString >  getSupportedServiceNames_Static() throw();
 
     // XComponent
-    virtual void SAL_CALL dispose() throw ( css::uno::RuntimeException );
+    virtual void SAL_CALL dispose();
 
     // XInitialization
-    virtual void SAL_CALL initialize( const css::uno::Sequence< css::uno::Any >& aArguments ) throw ( css::uno::Exception, css::uno::RuntimeException);
+    virtual void SAL_CALL initialize( const css::uno::Sequence< css::uno::Any >& aArguments );
 
     // XToolbarController
-    virtual void SAL_CALL execute( sal_Int16 KeyModifier ) throw ( css::uno::RuntimeException );
+    virtual void SAL_CALL execute( sal_Int16 KeyModifier );
 
     // XStatusListener
-    virtual void SAL_CALL statusChanged( const css::frame::FeatureStateEvent& rEvent ) throw ( css::uno::RuntimeException );
+    virtual void SAL_CALL statusChanged( const css::frame::FeatureStateEvent& rEvent );
 
 };
 
@@ -232,14 +232,14 @@ public:
     virtual ~FindbarDispatcher();
 
     // XInterface
-    virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const css::uno::Type& aType ) throw ( css::uno::RuntimeException );
+    virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const css::uno::Type& aType );
     virtual void SAL_CALL acquire() throw();
     virtual void SAL_CALL release() throw();
 
     // XServiceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName() throw( css::uno::RuntimeException );
-    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw( css::uno::RuntimeException );
-    virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames() throw( css::uno::RuntimeException );
+    virtual ::rtl::OUString SAL_CALL getImplementationName();
+    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+    virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 
     static ::rtl::OUString getImplementationName_Static() throw()
     {
@@ -249,16 +249,16 @@ public:
     static css::uno::Sequence< ::rtl::OUString >  getSupportedServiceNames_Static() throw();
 
     // XInitialization
-    virtual void SAL_CALL initialize( const css::uno::Sequence< css::uno::Any >& aArguments ) throw ( css::uno::Exception, css::uno::RuntimeException );
+    virtual void SAL_CALL initialize( const css::uno::Sequence< css::uno::Any >& aArguments );
 
     // XDispatchProvider
-    virtual css::uno::Reference< css::frame::XDispatch > SAL_CALL queryDispatch( const css::util::URL& aURL, const ::rtl::OUString& sTargetFrameName , sal_Int32 nSearchFlags ) throw( css::uno::RuntimeException );
-    virtual css::uno::Sequence< css::uno::Reference< css::frame::XDispatch > > SAL_CALL queryDispatches( const css::uno::Sequence< css::frame::DispatchDescriptor >& lDescriptions    ) throw( css::uno::RuntimeException );
+    virtual css::uno::Reference< css::frame::XDispatch > SAL_CALL queryDispatch( const css::util::URL& aURL, const ::rtl::OUString& sTargetFrameName , sal_Int32 nSearchFlags );
+    virtual css::uno::Sequence< css::uno::Reference< css::frame::XDispatch > > SAL_CALL queryDispatches( const css::uno::Sequence< css::frame::DispatchDescriptor >& lDescriptions    );
 
     // XDispatch
-    virtual void SAL_CALL dispatch( const css::util::URL& aURL, const css::uno::Sequence< css::beans::PropertyValue >& lArguments ) throw( css::uno::RuntimeException );
-    virtual void SAL_CALL addStatusListener( const css::uno::Reference< css::frame::XStatusListener >& xListener, const css::util::URL& aURL ) throw( css::uno::RuntimeException );
-    virtual void SAL_CALL removeStatusListener( const css::uno::Reference< css::frame::XStatusListener >& xListener, const css::util::URL& aURL ) throw( css::uno::RuntimeException );
+    virtual void SAL_CALL dispatch( const css::util::URL& aURL, const css::uno::Sequence< css::beans::PropertyValue >& lArguments );
+    virtual void SAL_CALL addStatusListener( const css::uno::Reference< css::frame::XStatusListener >& xListener, const css::util::URL& aURL );
+    virtual void SAL_CALL removeStatusListener( const css::uno::Reference< css::frame::XStatusListener >& xListener, const css::util::URL& aURL );
 
 private:
 

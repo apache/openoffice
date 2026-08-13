@@ -84,7 +84,6 @@ DEFINE_INIT_SERVICE                 (   MediaTypeDetectionHelper,
 //virtual
 sal_Bool SAL_CALL MediaTypeDetectionHelper::mapStrings(
 		uno::Sequence< OUString >& rSeq )
-		throw(uno::RuntimeException)
 {
 	sal_Bool bModified = sal_False;
 	for( sal_Int32 i = rSeq.getLength(); i--; )

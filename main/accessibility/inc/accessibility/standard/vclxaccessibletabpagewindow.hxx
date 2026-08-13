@@ -44,7 +44,7 @@ private:
 
 protected:
 	// OCommonAccessibleComponent
-	virtual ::com::sun::star::awt::Rectangle SAL_CALL	implGetBounds(  ) throw (::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::awt::Rectangle SAL_CALL	implGetBounds(  );
 
 	// XComponent
 	virtual void SAL_CALL	disposing();
@@ -54,8 +54,8 @@ public:
 	~VCLXAccessibleTabPageWindow();
 
 	// XAccessibleContext
-	virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getAccessibleParent(  ) throw (::com::sun::star::uno::RuntimeException);
-	virtual sal_Int32 SAL_CALL getAccessibleIndexInParent(  ) throw (::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getAccessibleParent(  );
+	virtual sal_Int32 SAL_CALL getAccessibleIndexInParent(  );
 };
 
 

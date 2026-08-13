@@ -62,15 +62,11 @@ protected:
 public:
     Box( bool horizontal );
 
-    virtual void SAL_CALL allocateArea( const css::awt::Rectangle &rArea )
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL allocateArea( const css::awt::Rectangle &rArea );
 
-    virtual css::awt::Size SAL_CALL getMinimumSize()
-        throw(css::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL hasHeightForWidth()
-        throw(css::uno::RuntimeException);
-    virtual sal_Int32 SAL_CALL getHeightForWidth( sal_Int32 nWidth )
-        throw(css::uno::RuntimeException);
+    virtual css::awt::Size SAL_CALL getMinimumSize();
+    virtual sal_Bool SAL_CALL hasHeightForWidth();
+    virtual sal_Int32 SAL_CALL getHeightForWidth( sal_Int32 nWidth );
 
     // helper: mix of getMinimumSize() and getHeightForWidth()
     css::awt::Size calculateSize( long nWidth = 0 );

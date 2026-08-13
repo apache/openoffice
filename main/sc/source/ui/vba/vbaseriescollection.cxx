@@ -35,7 +35,7 @@ ScVbaSeriesCollection::ScVbaSeriesCollection( const uno::Reference< XHelperInter
 // XEnumerationAccess
 
 uno::Reference< container::XEnumeration >
-ScVbaSeriesCollection::createEnumeration() throw (uno::RuntimeException)
+ScVbaSeriesCollection::createEnumeration()
 {
 	uno::Reference< container::XEnumeration > xEnum;
 	return xEnum;
@@ -44,7 +44,7 @@ ScVbaSeriesCollection::createEnumeration() throw (uno::RuntimeException)
 // XElementAccess
 
 uno::Type
-ScVbaSeriesCollection::getElementType() throw (uno::RuntimeException)
+ScVbaSeriesCollection::getElementType()
 {
 	return excel::XSeries::static_type(0);
 }

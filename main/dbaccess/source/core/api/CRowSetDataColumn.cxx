@@ -151,7 +151,7 @@ void SAL_CALL ORowSetDataColumn::getFastPropertyValue( Any& rValue, sal_Int32 nH
 }
 
 // -------------------------------------------------------------------------
-void SAL_CALL ORowSetDataColumn::setFastPropertyValue_NoBroadcast(sal_Int32 nHandle,const Any& rValue )throw (Exception)
+void SAL_CALL ORowSetDataColumn::setFastPropertyValue_NoBroadcast(sal_Int32 nHandle,const Any& rValue )
 {
     switch( nHandle )
     {
@@ -174,7 +174,7 @@ void SAL_CALL ORowSetDataColumn::setFastPropertyValue_NoBroadcast(sal_Int32 nHan
 sal_Bool SAL_CALL ORowSetDataColumn::convertFastPropertyValue( Any & rConvertedValue,
 															Any & rOldValue,
 															sal_Int32 nHandle,
-															const Any& rValue ) throw (IllegalArgumentException)
+															const Any& rValue )
 {
     sal_Bool bModified = sal_False;
     switch( nHandle )
@@ -201,7 +201,7 @@ sal_Bool SAL_CALL ORowSetDataColumn::convertFastPropertyValue( Any & rConvertedV
 	return bModified;
 }
 //--------------------------------------------------------------------------
-Sequence< sal_Int8 > ORowSetDataColumn::getImplementationId() throw (RuntimeException)
+Sequence< sal_Int8 > ORowSetDataColumn::getImplementationId()
 {
 	static OImplementationId * pId = 0;
 	if (! pId)
@@ -280,7 +280,7 @@ void ORowSetDataColumns::assign(const ::vos::ORef< ::connectivity::OSQLColumns>&
 	reFill(_rVector);
 }
 // -----------------------------------------------------------------------------
-void ORowSetDataColumns::impl_refresh() throw(::com::sun::star::uno::RuntimeException)
+void ORowSetDataColumns::impl_refresh()
 {
 }
 // -----------------------------------------------------------------------------

@@ -58,8 +58,7 @@ public:
 
     virtual ~CurrentContext();
 
-    virtual css::uno::Any SAL_CALL getValueByName(::rtl::OUString const & Name)
-        throw (css::uno::RuntimeException);
+    virtual css::uno::Any SAL_CALL getValueByName(::rtl::OUString const & Name);
 
 private:
     CurrentContext(CurrentContext &); // not defined
@@ -71,7 +70,6 @@ CurrentContext::CurrentContext() {}
 CurrentContext::~CurrentContext() {}
 
 css::uno::Any CurrentContext::getValueByName(::rtl::OUString const & Name)
-    throw (css::uno::RuntimeException)
 {
     return Name.equalsAsciiL(RTL_CONSTASCII_STRINGPARAM(KEY))
         ? css::uno::makeAny(::rtl::OUString::createFromAscii(VALUE))
@@ -88,7 +86,6 @@ testtools::bridgetest::CurrentContextChecker::~CurrentContextChecker() {}
     css::uno::Reference<
         ::test::testtools::bridgetest::XCurrentContextChecker > const & other,
     ::sal_Int32 setSteps, ::sal_Int32 checkSteps)
-    throw (css::uno::RuntimeException)
 {
     if (setSteps == 0) {
         css::uno::ContextLayer layer(new CurrentContext);

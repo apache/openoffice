@@ -55,7 +55,7 @@ namespace comphelper
 		: ComphelperBase ( pInfo, pMutex )
 		{}
 		virtual ~SettingsHelperNoState () throw( ) {}
-		com::sun::star::uno::Any SAL_CALL queryInterface( const com::sun::star::uno::Type& aType ) throw (com::sun::star::uno::RuntimeException)
+		com::sun::star::uno::Any SAL_CALL queryInterface( const com::sun::star::uno::Type& aType )
 		{ return HelperBaseNoState::queryInterface( aType ); }
 		void SAL_CALL acquire(  ) throw ()
 		{ HelperBaseNoState::acquire( ); }
@@ -64,42 +64,30 @@ namespace comphelper
 
 		// XPropertySet
 		virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  )
-			throw(::com::sun::star::uno::RuntimeException)
 		{ return ComphelperBase::getPropertySetInfo(); }
 		virtual void SAL_CALL setPropertyValue( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Any& aValue )
-			throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::beans::PropertyVetoException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
 		{ ComphelperBase::setPropertyValue ( aPropertyName, aValue ); }
 		virtual ::com::sun::star::uno::Any SAL_CALL getPropertyValue( const ::rtl::OUString& PropertyName )
-			throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
 		{ return ComphelperBase::getPropertyValue ( PropertyName ); }
 		virtual void SAL_CALL addPropertyChangeListener( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& xListener )
-			throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
 		{ ComphelperBase::addPropertyChangeListener ( aPropertyName, xListener ); }
 		virtual void SAL_CALL removePropertyChangeListener( const ::rtl::OUString& aPropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& aListener )
-			throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
 		{ ComphelperBase::removePropertyChangeListener ( aPropertyName, aListener ); }
 		virtual void SAL_CALL addVetoableChangeListener( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener >& aListener )
-			throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
 		{ ComphelperBase::addVetoableChangeListener ( PropertyName, aListener ); }
 		virtual void SAL_CALL removeVetoableChangeListener( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener >& aListener )
-			throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
 		{ ComphelperBase::removeVetoableChangeListener ( PropertyName, aListener ); }
 
 		// XMultiPropertySet
 		virtual void SAL_CALL setPropertyValues( const ::com::sun::star::uno::Sequence< ::rtl::OUString >& aPropertyNames, const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aValues )
-			throw(::com::sun::star::beans::PropertyVetoException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
 		{ ComphelperBase::setPropertyValues ( aPropertyNames, aValues ); }
 		virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any > SAL_CALL getPropertyValues( const ::com::sun::star::uno::Sequence< ::rtl::OUString >& aPropertyNames )
-			throw(::com::sun::star::uno::RuntimeException)
 		{ return ComphelperBase::getPropertyValues ( aPropertyNames ); }
 		virtual void SAL_CALL addPropertiesChangeListener( const ::com::sun::star::uno::Sequence< ::rtl::OUString >& aPropertyNames, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertiesChangeListener >& xListener )
-			throw(::com::sun::star::uno::RuntimeException)
 		{ ComphelperBase::addPropertiesChangeListener ( aPropertyNames, xListener ); }
 		virtual void SAL_CALL removePropertiesChangeListener( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertiesChangeListener >& xListener )
-			throw(::com::sun::star::uno::RuntimeException)
 		{ ComphelperBase::removePropertiesChangeListener ( xListener ); }
 		virtual void SAL_CALL firePropertiesChangeEvent( const ::com::sun::star::uno::Sequence< ::rtl::OUString >& aPropertyNames, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertiesChangeListener >& xListener )
-			throw(::com::sun::star::uno::RuntimeException)
 		{ ComphelperBase::firePropertiesChangeEvent ( aPropertyNames, xListener ); }
 	};
 	typedef comphelper::SettingsHelperNoState

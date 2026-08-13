@@ -174,7 +174,7 @@ public:
 	EffectSequenceHelper*	getEffectSequence() const { return mpEffectSequence; }
 
 	// helper
-	::com::sun::star::uno::Reference< ::com::sun::star::animations::XAnimationNode > createAfterEffectNode() const throw (com::sun::star::uno::Exception);
+	::com::sun::star::uno::Reference< ::com::sun::star::animations::XAnimationNode > createAfterEffectNode() const;
 	::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape > getTargetShape() const;
 
 	// static helpers

@@ -88,35 +88,33 @@ class SpellCheckerDispatcher :
 
     sal_Bool    isValid_Impl(const ::rtl::OUString& aWord, LanguageType nLanguage,
 					const ::com::sun::star::beans::PropertyValues& aProperties,
-					sal_Bool bCheckDics)
-				throw( ::com::sun::star::uno::RuntimeException, ::com::sun::star::lang::IllegalArgumentException );
+					sal_Bool bCheckDics);
 
 	::com::sun::star::uno::Reference<
 		::com::sun::star::linguistic2::XSpellAlternatives >
             spell_Impl(const ::rtl::OUString& aWord, LanguageType nLanguage,
 					const ::com::sun::star::beans::PropertyValues& aProperties,
-					sal_Bool bCheckDics)
-				throw( ::com::sun::star::uno::RuntimeException, ::com::sun::star::lang::IllegalArgumentException );
+					sal_Bool bCheckDics);
 
 public:
 	SpellCheckerDispatcher( LngSvcMgr &rLngSvcMgr );
 	virtual ~SpellCheckerDispatcher();
 
 	// XSupportedLocales (for XSpellChecker)
-    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::lang::Locale > SAL_CALL getLocales() throw(::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL hasLocale( const ::com::sun::star::lang::Locale& aLocale ) throw(::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::lang::Locale > SAL_CALL getLocales();
+    virtual sal_Bool SAL_CALL hasLocale( const ::com::sun::star::lang::Locale& aLocale );
 
 	// XSpellChecker
-    virtual sal_Bool SAL_CALL isValid( const ::rtl::OUString& aWord, const ::com::sun::star::lang::Locale& aLocale, const ::com::sun::star::beans::PropertyValues& aProperties ) throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::linguistic2::XSpellAlternatives > SAL_CALL spell( const ::rtl::OUString& aWord, const ::com::sun::star::lang::Locale& aLocale, const ::com::sun::star::beans::PropertyValues& aProperties ) throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL isValid( const ::rtl::OUString& aWord, const ::com::sun::star::lang::Locale& aLocale, const ::com::sun::star::beans::PropertyValues& aProperties );
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::linguistic2::XSpellAlternatives > SAL_CALL spell( const ::rtl::OUString& aWord, const ::com::sun::star::lang::Locale& aLocale, const ::com::sun::star::beans::PropertyValues& aProperties );
 
     // XSupportedLanguages
-    virtual ::com::sun::star::uno::Sequence< ::sal_Int16 > SAL_CALL getLanguages(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL hasLanguage( ::sal_Int16 nLanguage ) throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Sequence< ::sal_Int16 > SAL_CALL getLanguages(  );
+    virtual ::sal_Bool SAL_CALL hasLanguage( ::sal_Int16 nLanguage );
 
     // XSpellChecker1
-    virtual ::sal_Bool SAL_CALL isValid( const ::rtl::OUString& aWord, ::sal_Int16 nLanguage, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aProperties ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::linguistic2::XSpellAlternatives > SAL_CALL spell( const ::rtl::OUString& aWord, ::sal_Int16 nLanguage, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aProperties ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
+    virtual ::sal_Bool SAL_CALL isValid( const ::rtl::OUString& aWord, ::sal_Int16 nLanguage, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aProperties );
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::linguistic2::XSpellAlternatives > SAL_CALL spell( const ::rtl::OUString& aWord, ::sal_Int16 nLanguage, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aProperties );
 
     // LinguDispatcher
     virtual void SetServiceList( const ::com::sun::star::lang::Locale &rLocale, const ::com::sun::star::uno::Sequence< rtl::OUString > &rSvcImplNames );

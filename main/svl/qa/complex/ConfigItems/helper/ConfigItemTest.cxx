@@ -60,20 +60,14 @@ class ConfigItemTest : public ::cppu::WeakImplHelper2< css::task::XJob         ,
         explicit ConfigItemTest(const css::uno::Reference< css::uno::XComponentContext >& xContext);
 
         // css::task::XJob
-        virtual css::uno::Any SAL_CALL execute(const css::uno::Sequence< css::beans::NamedValue >& lArguments)
-            throw (css::uno::RuntimeException         ,
-                   css::lang::IllegalArgumentException,
-                   css::uno::Exception                );
+        virtual css::uno::Any SAL_CALL execute(const css::uno::Sequence< css::beans::NamedValue >& lArguments);
 
         // css::lang::XServiceInfo
-        virtual ::rtl::OUString SAL_CALL getImplementationName()
-            throw (css::uno::RuntimeException);
+        virtual ::rtl::OUString SAL_CALL getImplementationName();
 
-        virtual ::sal_Bool SAL_CALL supportsService(const ::rtl::OUString& sServiceName)
-            throw (css::uno::RuntimeException);
+        virtual ::sal_Bool SAL_CALL supportsService(const ::rtl::OUString& sServiceName);
 
-        virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames()
-            throw (css::uno::RuntimeException);
+        virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 
     //-------------------------------------------------------------------------
     // internal
@@ -103,9 +97,6 @@ ConfigItemTest::ConfigItemTest(const css::uno::Reference< css::uno::XComponentCo
 //=============================================================================
 // css::task::XJob
 css::uno::Any SAL_CALL ConfigItemTest::execute(const css::uno::Sequence< css::beans::NamedValue >& lArguments)
-    throw (css::uno::RuntimeException         ,
-           css::lang::IllegalArgumentException,
-           css::uno::Exception                )
 {
     ::rtl::OUString sTest;
     ::sal_Int32     i    = 0;
@@ -154,7 +145,6 @@ css::uno::Any SAL_CALL ConfigItemTest::execute(const css::uno::Sequence< css::be
 //=============================================================================
 // com::sun::star::uno::XServiceInfo
 ::rtl::OUString SAL_CALL ConfigItemTest::getImplementationName()
-    throw (css::uno::RuntimeException)
 {
     return ConfigItemTest::st_getImplementationName();
 }
@@ -162,7 +152,6 @@ css::uno::Any SAL_CALL ConfigItemTest::execute(const css::uno::Sequence< css::be
 //=============================================================================
 // com::sun::star::uno::XServiceInfo
 ::sal_Bool SAL_CALL ConfigItemTest::supportsService(const ::rtl::OUString& sServiceName)
-    throw (css::uno::RuntimeException)
 {
     css::uno::Sequence< ::rtl::OUString > lServiceNames = ConfigItemTest::st_getSupportedServiceNames();
     for (::sal_Int32 i = 0; i < lServiceNames.getLength(); ++i)
@@ -176,7 +165,6 @@ css::uno::Any SAL_CALL ConfigItemTest::execute(const css::uno::Sequence< css::be
 //=============================================================================
 // com::sun::star::uno::XServiceInfo
 css::uno::Sequence< ::rtl::OUString > SAL_CALL ConfigItemTest::getSupportedServiceNames()
-    throw (css::uno::RuntimeException)
 {
     return ConfigItemTest::st_getSupportedServiceNames();
 }

@@ -66,12 +66,12 @@ class RootStorageWrapper :  public ::cppu::WeakImplHelper1< com::sun::star::embe
         virtual ~RootStorageWrapper() {}
 
         // XTransactedObject
-        virtual void SAL_CALL commit() throw ( com::sun::star::io::IOException, com::sun::star::lang::WrappedTargetException )
+        virtual void SAL_CALL commit()
         {
             m_xRootCommit->commit();
         }
 
-	    virtual void SAL_CALL revert() throw ( com::sun::star::io::IOException, com::sun::star::lang::WrappedTargetException )
+	    virtual void SAL_CALL revert()
         {
             m_xRootCommit->revert();
         }
@@ -250,7 +250,6 @@ ModuleUIConfigurationManagerSupplier::~ModuleUIConfigurationManagerSupplier()
 
 // XComponent
 void SAL_CALL ModuleUIConfigurationManagerSupplier::dispose()
-throw ( RuntimeException )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "ModuleUIConfigurationManagerSupplier::dispose" );
     Reference< XComponent > xThis( static_cast< OWeakObject* >(this), UNO_QUERY );
@@ -265,7 +264,6 @@ throw ( RuntimeException )
 }
 
 void SAL_CALL ModuleUIConfigurationManagerSupplier::addEventListener( const Reference< XEventListener >& xListener )
-throw ( RuntimeException )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "ModuleUIConfigurationManagerSupplier::addEventListener" );
     {
@@ -280,7 +278,6 @@ throw ( RuntimeException )
 }
 
 void SAL_CALL ModuleUIConfigurationManagerSupplier::removeEventListener( const Reference< XEventListener >& xListener )
-throw ( RuntimeException )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "ModuleUIConfigurationManagerSupplier::removeEventListener" );
     /* SAFE AREA ----------------------------------------------------------------------------------------------- */
@@ -289,7 +286,6 @@ throw ( RuntimeException )
 
 // XModuleUIConfigurationManagerSupplier
 Reference< XUIConfigurationManager > SAL_CALL ModuleUIConfigurationManagerSupplier::getUIConfigurationManager( const ::rtl::OUString& ModuleIdentifier )
-throw ( NoSuchElementException, RuntimeException)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "ModuleUIConfigurationManagerSupplier::getUIConfigurationManager" );
     ResetableGuard aGuard( m_aLock );

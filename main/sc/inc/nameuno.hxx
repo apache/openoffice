@@ -80,97 +80,65 @@ public:
 	virtual void			Notify( SfxBroadcaster& rBC, const SfxHint& rHint );
 
 							// XNamedRange
-	virtual ::rtl::OUString SAL_CALL getContent() throw(::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL	setContent( const ::rtl::OUString& aContent )
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::table::CellAddress SAL_CALL getReferencePosition()
-								throw(::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getContent();
+	virtual void SAL_CALL	setContent( const ::rtl::OUString& aContent );
+	virtual ::com::sun::star::table::CellAddress SAL_CALL getReferencePosition();
 	virtual void SAL_CALL	setReferencePosition(
-								const ::com::sun::star::table::CellAddress& aReferencePosition )
-									throw(::com::sun::star::uno::RuntimeException);
-	virtual sal_Int32		SAL_CALL getType() throw(::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL	setType( sal_Int32 nType ) throw(::com::sun::star::uno::RuntimeException);
-	virtual ::rtl::OUString SAL_CALL getScopeName() throw(::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL	setScopeAndRangeName( const ::rtl::OUString& aScopeName, const ::rtl::OUString& aRangeName ) throw(::com::sun::star::uno::RuntimeException);
+								const ::com::sun::star::table::CellAddress& aReferencePosition );
+	virtual sal_Int32		SAL_CALL getType();
+	virtual void SAL_CALL	setType( sal_Int32 nType );
+	virtual ::rtl::OUString SAL_CALL getScopeName();
+	virtual void SAL_CALL	setScopeAndRangeName( const ::rtl::OUString& aScopeName, const ::rtl::OUString& aRangeName );
 
                             // XFormulaTokens
-    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::sheet::FormulaToken > SAL_CALL getTokens()
-                                throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::sheet::FormulaToken > SAL_CALL getTokens();
     virtual void SAL_CALL   setTokens( const ::com::sun::star::uno::Sequence<
-                                    ::com::sun::star::sheet::FormulaToken >& aTokens )
-                                throw (::com::sun::star::uno::RuntimeException);
+                                    ::com::sun::star::sheet::FormulaToken >& aTokens );
 
 							// XNamed
-	virtual ::rtl::OUString SAL_CALL getName() throw(::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL	setName( const ::rtl::OUString& aName )
-								throw(::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getName();
+	virtual void SAL_CALL	setName( const ::rtl::OUString& aName );
 
 							// XCellRangeReferrer
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::table::XCellRange > SAL_CALL
-							getReferredCells() throw(::com::sun::star::uno::RuntimeException);
+							getReferredCells();
 
 							// XPropertySet
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo >
-							SAL_CALL getPropertySetInfo()
-								throw(::com::sun::star::uno::RuntimeException);
+							SAL_CALL getPropertySetInfo();
 	virtual void SAL_CALL	setPropertyValue( const ::rtl::OUString& aPropertyName,
-									const ::com::sun::star::uno::Any& aValue )
-								throw(::com::sun::star::beans::UnknownPropertyException,
-									::com::sun::star::beans::PropertyVetoException,
-									::com::sun::star::lang::IllegalArgumentException,
-									::com::sun::star::lang::WrappedTargetException,
-									::com::sun::star::uno::RuntimeException);
+									const ::com::sun::star::uno::Any& aValue );
 	virtual ::com::sun::star::uno::Any SAL_CALL getPropertyValue(
-									const ::rtl::OUString& PropertyName )
-								throw(::com::sun::star::beans::UnknownPropertyException,
-									::com::sun::star::lang::WrappedTargetException,
-									::com::sun::star::uno::RuntimeException);
+									const ::rtl::OUString& PropertyName );
 	virtual void SAL_CALL	addPropertyChangeListener( const ::rtl::OUString& aPropertyName,
 									const ::com::sun::star::uno::Reference<
-										::com::sun::star::beans::XPropertyChangeListener >& xListener )
-								throw(::com::sun::star::beans::UnknownPropertyException,
-									::com::sun::star::lang::WrappedTargetException,
-									::com::sun::star::uno::RuntimeException);
+										::com::sun::star::beans::XPropertyChangeListener >& xListener );
 	virtual void SAL_CALL	removePropertyChangeListener( const ::rtl::OUString& aPropertyName,
 									const ::com::sun::star::uno::Reference<
-										::com::sun::star::beans::XPropertyChangeListener >& aListener )
-								throw(::com::sun::star::beans::UnknownPropertyException,
-									::com::sun::star::lang::WrappedTargetException,
-									::com::sun::star::uno::RuntimeException);
+										::com::sun::star::beans::XPropertyChangeListener >& aListener );
 	virtual void SAL_CALL	addVetoableChangeListener( const ::rtl::OUString& PropertyName,
 									const ::com::sun::star::uno::Reference<
-										::com::sun::star::beans::XVetoableChangeListener >& aListener )
-								throw(::com::sun::star::beans::UnknownPropertyException,
-									::com::sun::star::lang::WrappedTargetException,
-									::com::sun::star::uno::RuntimeException);
+										::com::sun::star::beans::XVetoableChangeListener >& aListener );
 	virtual void SAL_CALL	removeVetoableChangeListener( const ::rtl::OUString& PropertyName,
 									const ::com::sun::star::uno::Reference<
-										::com::sun::star::beans::XVetoableChangeListener >& aListener )
-								throw(::com::sun::star::beans::UnknownPropertyException,
-									::com::sun::star::lang::WrappedTargetException,
-									::com::sun::star::uno::RuntimeException);
+										::com::sun::star::beans::XVetoableChangeListener >& aListener );
 
 							// XUnoTunnel
 	virtual sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence<
-									sal_Int8 >& aIdentifier )
-								throw(::com::sun::star::uno::RuntimeException);
+									sal_Int8 >& aIdentifier );
 
 	static const com::sun::star::uno::Sequence<sal_Int8>& getUnoTunnelId();
 	static ScNamedRangeObj* getImplementation( const com::sun::star::uno::Reference<
 									com::sun::star::uno::XInterface> xObj );
 
 							// XServiceInfo
-	virtual ::rtl::OUString SAL_CALL getImplementationName()
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName )
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames()
-								throw(::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getImplementationName();
+	virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 
                             // methods accessible via getImplementation()
             void            SetContentWithGrammar( const ::rtl::OUString& aContent,
-                                    const formula::FormulaGrammar::Grammar eGrammar )
-                                throw(::com::sun::star::uno::RuntimeException);
+                                    const formula::FormulaGrammar::Grammar eGrammar );
 };
 
 
@@ -190,11 +158,9 @@ private:
 	ScNamedRangeObj*		GetObjectByScopeName_Impl(const ::rtl::OUString& aScopeName, const ::rtl::OUString& aRangeName);
 
 	void ImplAddNewByScopeAndName(SCTAB aScope,const ::rtl::OUString& aRangeName, const ::rtl::OUString& aContent,
-								const ::com::sun::star::table::CellAddress& aPosition, sal_Int32 nType)
-								throw(::com::sun::star::uno::RuntimeException);
+								const ::com::sun::star::table::CellAddress& aPosition, sal_Int32 nType);
 
-	void ImplRemoveByScopeAndName(SCTAB aScope,const ::rtl::OUString& aRangeName)
-								throw(::com::sun::star::uno::RuntimeException);
+	void ImplRemoveByScopeAndName(SCTAB aScope,const ::rtl::OUString& aRangeName);
 
 protected:
     /** called from the XActionLockable interface methods on initial locking */
@@ -211,70 +177,47 @@ public:
 
 							// XNamedRanges
 	virtual void SAL_CALL	addNewByName( const ::rtl::OUString& aName, const ::rtl::OUString& aContent,
-								const ::com::sun::star::table::CellAddress& aPosition, sal_Int32 nType )
-									throw(::com::sun::star::uno::RuntimeException);
+								const ::com::sun::star::table::CellAddress& aPosition, sal_Int32 nType );
 
 	virtual void SAL_CALL	addNewByScopeName( const ::rtl::OUString& aScopeName,const ::rtl::OUString& aRangeName, const ::rtl::OUString& aContent,
-								const ::com::sun::star::table::CellAddress& aPosition, sal_Int32 nType )
-									throw(::com::sun::star::uno::RuntimeException);
+								const ::com::sun::star::table::CellAddress& aPosition, sal_Int32 nType );
 	virtual void SAL_CALL	addNewFromTitles( const ::com::sun::star::table::CellRangeAddress& aSource,
-								::com::sun::star::sheet::Border aBorder )
-									throw(::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL	removeByName( const ::rtl::OUString& aName )
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL	removeByScopeName( const ::rtl::OUString& aScopeName, const ::rtl::OUString& aRangeName )
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL	outputList( const ::com::sun::star::table::CellAddress& aOutputPosition )
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual sal_Bool SAL_CALL hasByScopeName( const ::rtl::OUString& aScopeName, const ::rtl::OUString& aRangeName )
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::sheet::RangeScopeName > SAL_CALL getElementScopeNames()
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Any SAL_CALL getByScopeName( const ::rtl::OUString& aScopeName, const ::rtl::OUString& aRangeName )
-								throw(::com::sun::star::container::NoSuchElementException,
-									::com::sun::star::lang::WrappedTargetException,
-									::com::sun::star::uno::RuntimeException);
+								::com::sun::star::sheet::Border aBorder );
+	virtual void SAL_CALL	removeByName( const ::rtl::OUString& aName );
+	virtual void SAL_CALL	removeByScopeName( const ::rtl::OUString& aScopeName, const ::rtl::OUString& aRangeName );
+	virtual void SAL_CALL	outputList( const ::com::sun::star::table::CellAddress& aOutputPosition );
+	virtual sal_Bool SAL_CALL hasByScopeName( const ::rtl::OUString& aScopeName, const ::rtl::OUString& aRangeName );
+	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::sheet::RangeScopeName > SAL_CALL getElementScopeNames();
+	virtual ::com::sun::star::uno::Any SAL_CALL getByScopeName( const ::rtl::OUString& aScopeName, const ::rtl::OUString& aRangeName );
 
 							// XNameAccess
-	virtual ::com::sun::star::uno::Any SAL_CALL getByName( const ::rtl::OUString& aName )
-								throw(::com::sun::star::container::NoSuchElementException,
-									::com::sun::star::lang::WrappedTargetException,
-									::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames()
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName )
-								throw(::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Any SAL_CALL getByName( const ::rtl::OUString& aName );
+	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames();
+	virtual sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName );
 
 							// XIndexAccess
-	virtual sal_Int32 SAL_CALL getCount() throw(::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Any SAL_CALL getByIndex( sal_Int32 Index )
-								throw(::com::sun::star::lang::IndexOutOfBoundsException,
-									::com::sun::star::lang::WrappedTargetException,
-									::com::sun::star::uno::RuntimeException);
+	virtual sal_Int32 SAL_CALL getCount();
+	virtual ::com::sun::star::uno::Any SAL_CALL getByIndex( sal_Int32 Index );
 
 							// XEnumerationAccess
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::container::XEnumeration > SAL_CALL
-							createEnumeration() throw(::com::sun::star::uno::RuntimeException);
+							createEnumeration();
 
 							// XElementAccess
-	virtual ::com::sun::star::uno::Type SAL_CALL getElementType()
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual sal_Bool SAL_CALL hasElements() throw(::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Type SAL_CALL getElementType();
+	virtual sal_Bool SAL_CALL hasElements();
 
                             // XActionLockable
-    virtual sal_Bool SAL_CALL isActionLocked() throw(::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL addActionLock() throw(::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removeActionLock() throw(::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setActionLocks( sal_Int16 nLock ) throw(::com::sun::star::uno::RuntimeException);
-    virtual sal_Int16 SAL_CALL resetActionLocks() throw(::com::sun::star::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL isActionLocked();
+    virtual void SAL_CALL addActionLock();
+    virtual void SAL_CALL removeActionLock();
+    virtual void SAL_CALL setActionLocks( sal_Int16 nLock );
+    virtual sal_Int16 SAL_CALL resetActionLocks();
 
 							// XServiceInfo
-	virtual ::rtl::OUString SAL_CALL getImplementationName()
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName )
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames()
-								throw(::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getImplementationName();
+	virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 };
 
 
@@ -299,22 +242,15 @@ public:
 	virtual void			Notify( SfxBroadcaster& rBC, const SfxHint& rHint );
 
 							// XLabelRange
-	virtual ::com::sun::star::table::CellRangeAddress SAL_CALL getLabelArea()
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL	setLabelArea( const ::com::sun::star::table::CellRangeAddress& aLabelArea )
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::table::CellRangeAddress SAL_CALL getDataArea()
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL	setDataArea( const ::com::sun::star::table::CellRangeAddress& aDataArea )
-								throw(::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::table::CellRangeAddress SAL_CALL getLabelArea();
+	virtual void SAL_CALL	setLabelArea( const ::com::sun::star::table::CellRangeAddress& aLabelArea );
+	virtual ::com::sun::star::table::CellRangeAddress SAL_CALL getDataArea();
+	virtual void SAL_CALL	setDataArea( const ::com::sun::star::table::CellRangeAddress& aDataArea );
 
 							// XServiceInfo
-	virtual ::rtl::OUString SAL_CALL getImplementationName()
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName )
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames()
-								throw(::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getImplementationName();
+	virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 };
 
 
@@ -338,34 +274,25 @@ public:
 
 							// XLabelRanges
 	virtual void SAL_CALL	addNew( const ::com::sun::star::table::CellRangeAddress& aLabelArea,
-								const ::com::sun::star::table::CellRangeAddress& aDataArea )
-									throw(::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL	removeByIndex( sal_Int32 nIndex )
-								throw(::com::sun::star::uno::RuntimeException);
+								const ::com::sun::star::table::CellRangeAddress& aDataArea );
+	virtual void SAL_CALL	removeByIndex( sal_Int32 nIndex );
 
 							// XIndexAccess
-	virtual sal_Int32 SAL_CALL getCount() throw(::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Any SAL_CALL getByIndex( sal_Int32 Index )
-								throw(::com::sun::star::lang::IndexOutOfBoundsException,
-									::com::sun::star::lang::WrappedTargetException,
-									::com::sun::star::uno::RuntimeException);
+	virtual sal_Int32 SAL_CALL getCount();
+	virtual ::com::sun::star::uno::Any SAL_CALL getByIndex( sal_Int32 Index );
 
 							// XEnumerationAccess
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::container::XEnumeration > SAL_CALL
-							createEnumeration() throw(::com::sun::star::uno::RuntimeException);
+							createEnumeration();
 
 							// XElementAccess
-	virtual ::com::sun::star::uno::Type SAL_CALL getElementType()
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual sal_Bool SAL_CALL hasElements() throw(::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Type SAL_CALL getElementType();
+	virtual sal_Bool SAL_CALL hasElements();
 
 							// XServiceInfo
-	virtual ::rtl::OUString SAL_CALL getImplementationName()
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName )
-								throw(::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames()
-								throw(::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getImplementationName();
+	virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 };
 
 

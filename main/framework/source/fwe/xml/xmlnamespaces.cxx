@@ -48,7 +48,7 @@ XMLNamespaces::~XMLNamespaces()
 {
 }
 
-void XMLNamespaces::addNamespace( const ::rtl::OUString& aName, const ::rtl::OUString& aValue ) throw( SAXException )
+void XMLNamespaces::addNamespace( const ::rtl::OUString& aName, const ::rtl::OUString& aValue )
 {
 	NamespaceMap::iterator p;
 	::rtl::OUString aNamespaceName( aName );
@@ -101,7 +101,7 @@ void XMLNamespaces::addNamespace( const ::rtl::OUString& aName, const ::rtl::OUS
 	}
 }
 
-::rtl::OUString XMLNamespaces::applyNSToAttributeName( const ::rtl::OUString& aName ) const throw( SAXException )
+::rtl::OUString XMLNamespaces::applyNSToAttributeName( const ::rtl::OUString& aName ) const
 {
 	// xml draft: there is no default namespace for attributes!
 
@@ -126,7 +126,7 @@ void XMLNamespaces::addNamespace( const ::rtl::OUString& aName, const ::rtl::OUS
 	return aName;
 }
 
-::rtl::OUString XMLNamespaces::applyNSToElementName( const ::rtl::OUString& aName ) const	throw( SAXException )
+::rtl::OUString XMLNamespaces::applyNSToElementName( const ::rtl::OUString& aName ) const
 {
 	// xml draft: element names can have a default namespace
 
@@ -164,7 +164,7 @@ void XMLNamespaces::addNamespace( const ::rtl::OUString& aName, const ::rtl::OUS
 	return aElementName;
 }
 
-::rtl::OUString XMLNamespaces::getNamespaceValue( const ::rtl::OUString& aNamespace ) const throw( SAXException )
+::rtl::OUString XMLNamespaces::getNamespaceValue( const ::rtl::OUString& aNamespace ) const
 {
 	if ( aNamespace.getLength() == 0 )
 		return m_aDefaultNamespace;

@@ -121,82 +121,81 @@ namespace framework
 		    //---------------------------------------------------------------------------------------------------------
             // XLayoutManager
 		    //---------------------------------------------------------------------------------------------------------
-            virtual void SAL_CALL attachFrame( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XFrame >& Frame ) throw (::com::sun::star::uno::RuntimeException);
-            virtual void SAL_CALL reset() throw (::com::sun::star::uno::RuntimeException);
-            virtual ::com::sun::star::awt::Rectangle SAL_CALL getCurrentDockingArea(  ) throw (::com::sun::star::uno::RuntimeException);
-            virtual ::com::sun::star::uno::Reference< ::com::sun::star::ui::XDockingAreaAcceptor > SAL_CALL getDockingAreaAcceptor() throw (::com::sun::star::uno::RuntimeException);
-            virtual void SAL_CALL setDockingAreaAcceptor( const ::com::sun::star::uno::Reference< ::com::sun::star::ui::XDockingAreaAcceptor >& xDockingAreaAcceptor ) throw (::com::sun::star::uno::RuntimeException);
-            virtual void SAL_CALL createElement( const ::rtl::OUString& aName ) throw (::com::sun::star::uno::RuntimeException);
-            virtual void SAL_CALL destroyElement( const ::rtl::OUString& aName ) throw (::com::sun::star::uno::RuntimeException);
-            virtual ::sal_Bool SAL_CALL requestElement( const ::rtl::OUString& ResourceURL ) throw (::com::sun::star::uno::RuntimeException);
-            virtual ::com::sun::star::uno::Reference< ::com::sun::star::ui::XUIElement > SAL_CALL getElement( const ::rtl::OUString& aName ) throw (::com::sun::star::uno::RuntimeException);
-            virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::ui::XUIElement > > SAL_CALL getElements(  ) throw (::com::sun::star::uno::RuntimeException);
-            virtual sal_Bool SAL_CALL showElement( const ::rtl::OUString& aName ) throw (::com::sun::star::uno::RuntimeException);
-            virtual sal_Bool SAL_CALL hideElement( const ::rtl::OUString& aName ) throw (::com::sun::star::uno::RuntimeException);
-            virtual sal_Bool SAL_CALL dockWindow( const ::rtl::OUString& aName, ::com::sun::star::ui::DockingArea DockingArea, const ::com::sun::star::awt::Point& Pos ) throw (::com::sun::star::uno::RuntimeException);
-            virtual ::sal_Bool SAL_CALL dockAllWindows( ::sal_Int16 nElementType ) throw (::com::sun::star::uno::RuntimeException);
-            virtual sal_Bool SAL_CALL floatWindow( const ::rtl::OUString& aName ) throw (::com::sun::star::uno::RuntimeException);
-            virtual ::sal_Bool SAL_CALL lockWindow( const ::rtl::OUString& ResourceURL ) throw (::com::sun::star::uno::RuntimeException);
-            virtual ::sal_Bool SAL_CALL unlockWindow( const ::rtl::OUString& ResourceURL ) throw (::com::sun::star::uno::RuntimeException);
-            virtual void SAL_CALL setElementSize( const ::rtl::OUString& aName, const ::com::sun::star::awt::Size& aSize ) throw (::com::sun::star::uno::RuntimeException);
-            virtual void SAL_CALL setElementPos( const ::rtl::OUString& aName, const ::com::sun::star::awt::Point& aPos ) throw (::com::sun::star::uno::RuntimeException);
-            virtual void SAL_CALL setElementPosSize( const ::rtl::OUString& aName, const ::com::sun::star::awt::Point& aPos, const ::com::sun::star::awt::Size& aSize ) throw (::com::sun::star::uno::RuntimeException);
-            virtual sal_Bool SAL_CALL isElementVisible( const ::rtl::OUString& aName ) throw (::com::sun::star::uno::RuntimeException);
-            virtual sal_Bool SAL_CALL isElementFloating( const ::rtl::OUString& aName ) throw (::com::sun::star::uno::RuntimeException);
-            virtual sal_Bool SAL_CALL isElementDocked( const ::rtl::OUString& aName ) throw (::com::sun::star::uno::RuntimeException);
-            virtual ::sal_Bool SAL_CALL isElementLocked( const ::rtl::OUString& ResourceURL ) throw (::com::sun::star::uno::RuntimeException);
-            virtual ::com::sun::star::awt::Size SAL_CALL getElementSize( const ::rtl::OUString& aName ) throw (::com::sun::star::uno::RuntimeException);
-            virtual ::com::sun::star::awt::Point SAL_CALL getElementPos( const ::rtl::OUString& aName ) throw (::com::sun::star::uno::RuntimeException);
-            virtual void SAL_CALL lock(  ) throw (::com::sun::star::uno::RuntimeException);
-            virtual void SAL_CALL unlock(  ) throw (::com::sun::star::uno::RuntimeException);
-            virtual void SAL_CALL doLayout(  ) throw (::com::sun::star::uno::RuntimeException);
-            virtual void SAL_CALL setVisible( sal_Bool bVisible ) throw (::com::sun::star::uno::RuntimeException);
-            virtual sal_Bool SAL_CALL isVisible() throw (::com::sun::star::uno::RuntimeException);
+            virtual void SAL_CALL attachFrame( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XFrame >& Frame );
+            virtual void SAL_CALL reset();
+            virtual ::com::sun::star::awt::Rectangle SAL_CALL getCurrentDockingArea(  );
+            virtual ::com::sun::star::uno::Reference< ::com::sun::star::ui::XDockingAreaAcceptor > SAL_CALL getDockingAreaAcceptor();
+            virtual void SAL_CALL setDockingAreaAcceptor( const ::com::sun::star::uno::Reference< ::com::sun::star::ui::XDockingAreaAcceptor >& xDockingAreaAcceptor );
+            virtual void SAL_CALL createElement( const ::rtl::OUString& aName );
+            virtual void SAL_CALL destroyElement( const ::rtl::OUString& aName );
+            virtual ::sal_Bool SAL_CALL requestElement( const ::rtl::OUString& ResourceURL );
+            virtual ::com::sun::star::uno::Reference< ::com::sun::star::ui::XUIElement > SAL_CALL getElement( const ::rtl::OUString& aName );
+            virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::ui::XUIElement > > SAL_CALL getElements(  );
+            virtual sal_Bool SAL_CALL showElement( const ::rtl::OUString& aName );
+            virtual sal_Bool SAL_CALL hideElement( const ::rtl::OUString& aName );
+            virtual sal_Bool SAL_CALL dockWindow( const ::rtl::OUString& aName, ::com::sun::star::ui::DockingArea DockingArea, const ::com::sun::star::awt::Point& Pos );
+            virtual ::sal_Bool SAL_CALL dockAllWindows( ::sal_Int16 nElementType );
+            virtual sal_Bool SAL_CALL floatWindow( const ::rtl::OUString& aName );
+            virtual ::sal_Bool SAL_CALL lockWindow( const ::rtl::OUString& ResourceURL );
+            virtual ::sal_Bool SAL_CALL unlockWindow( const ::rtl::OUString& ResourceURL );
+            virtual void SAL_CALL setElementSize( const ::rtl::OUString& aName, const ::com::sun::star::awt::Size& aSize );
+            virtual void SAL_CALL setElementPos( const ::rtl::OUString& aName, const ::com::sun::star::awt::Point& aPos );
+            virtual void SAL_CALL setElementPosSize( const ::rtl::OUString& aName, const ::com::sun::star::awt::Point& aPos, const ::com::sun::star::awt::Size& aSize );
+            virtual sal_Bool SAL_CALL isElementVisible( const ::rtl::OUString& aName );
+            virtual sal_Bool SAL_CALL isElementFloating( const ::rtl::OUString& aName );
+            virtual sal_Bool SAL_CALL isElementDocked( const ::rtl::OUString& aName );
+            virtual ::sal_Bool SAL_CALL isElementLocked( const ::rtl::OUString& ResourceURL );
+            virtual ::com::sun::star::awt::Size SAL_CALL getElementSize( const ::rtl::OUString& aName );
+            virtual ::com::sun::star::awt::Point SAL_CALL getElementPos( const ::rtl::OUString& aName );
+            virtual void SAL_CALL lock(  );
+            virtual void SAL_CALL unlock(  );
+            virtual void SAL_CALL doLayout(  );
+            virtual void SAL_CALL setVisible( sal_Bool bVisible );
+            virtual sal_Bool SAL_CALL isVisible();
 
             //---------------------------------------------------------------------------------------------------------
 		    //	XInplaceLayout
 		    //---------------------------------------------------------------------------------------------------------
-            virtual void SAL_CALL setInplaceMenuBar( sal_Int64 pInplaceMenuBarPointer ) throw (::com::sun::star::uno::RuntimeException);
-            virtual void SAL_CALL resetInplaceMenuBar(  ) throw (::com::sun::star::uno::RuntimeException);
+            virtual void SAL_CALL setInplaceMenuBar( sal_Int64 pInplaceMenuBarPointer );
+            virtual void SAL_CALL resetInplaceMenuBar(  );
 
             //---------------------------------------------------------------------------------------------------------
             // XMenuBarMergingAcceptor
             //---------------------------------------------------------------------------------------------------------
-            virtual sal_Bool SAL_CALL setMergedMenuBar( const ::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexAccess >& xMergedMenuBar )
-                                                       throw (::com::sun::star::uno::RuntimeException);
-            virtual void SAL_CALL removeMergedMenuBar(  ) throw (::com::sun::star::uno::RuntimeException);
+            virtual sal_Bool SAL_CALL setMergedMenuBar( const ::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexAccess >& xMergedMenuBar );
+            virtual void SAL_CALL removeMergedMenuBar(  );
 
             //---------------------------------------------------------------------------------------------------------
 		    //	XWindowListener
 		    //---------------------------------------------------------------------------------------------------------
-    	    virtual void SAL_CALL windowResized( const css::awt::WindowEvent& aEvent ) throw( css::uno::RuntimeException );
-    	    virtual void SAL_CALL windowMoved( const css::awt::WindowEvent& aEvent ) throw( css::uno::RuntimeException );
-            virtual void SAL_CALL windowShown( const css::lang::EventObject& aEvent ) throw( css::uno::RuntimeException );
-            virtual void SAL_CALL windowHidden( const css::lang::EventObject& aEvent ) throw( css::uno::RuntimeException );
+    	    virtual void SAL_CALL windowResized( const css::awt::WindowEvent& aEvent );
+    	    virtual void SAL_CALL windowMoved( const css::awt::WindowEvent& aEvent );
+            virtual void SAL_CALL windowShown( const css::lang::EventObject& aEvent );
+            virtual void SAL_CALL windowHidden( const css::lang::EventObject& aEvent );
 
             //---------------------------------------------------------------------------------------------------------
 		    //	 XFrameActionListener
 		    //---------------------------------------------------------------------------------------------------------
-		    virtual void SAL_CALL frameAction( const css::frame::FrameActionEvent& aEvent ) throw ( css::uno::RuntimeException );
+		    virtual void SAL_CALL frameAction( const css::frame::FrameActionEvent& aEvent );
 
 		    //---------------------------------------------------------------------------------------------------------
             //  XEventListener
 		    //---------------------------------------------------------------------------------------------------------
             using cppu::OPropertySetHelper::disposing;
-	        virtual void SAL_CALL disposing( const css::lang::EventObject& aEvent ) throw( css::uno::RuntimeException );
+	        virtual void SAL_CALL disposing( const css::lang::EventObject& aEvent );
 
 		    //---------------------------------------------------------------------------------------------------------
             //  XUIConfigurationListener
 		    //---------------------------------------------------------------------------------------------------------
-            virtual void SAL_CALL elementInserted( const ::com::sun::star::ui::ConfigurationEvent& Event ) throw (::com::sun::star::uno::RuntimeException);
-            virtual void SAL_CALL elementRemoved( const ::com::sun::star::ui::ConfigurationEvent& Event ) throw (::com::sun::star::uno::RuntimeException);
-            virtual void SAL_CALL elementReplaced( const ::com::sun::star::ui::ConfigurationEvent& Event ) throw (::com::sun::star::uno::RuntimeException);
+            virtual void SAL_CALL elementInserted( const ::com::sun::star::ui::ConfigurationEvent& Event );
+            virtual void SAL_CALL elementRemoved( const ::com::sun::star::ui::ConfigurationEvent& Event );
+            virtual void SAL_CALL elementReplaced( const ::com::sun::star::ui::ConfigurationEvent& Event );
 
 		    //---------------------------------------------------------------------------------------------------------
             //  XLayoutManagerEventBroadcaster
 		    //---------------------------------------------------------------------------------------------------------
-            virtual void SAL_CALL addLayoutManagerEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XLayoutManagerListener >& aLayoutManagerListener ) throw (::com::sun::star::uno::RuntimeException);
-            virtual void SAL_CALL removeLayoutManagerEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XLayoutManagerListener >& aLayoutManagerListener ) throw (::com::sun::star::uno::RuntimeException);
+            virtual void SAL_CALL addLayoutManagerEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XLayoutManagerListener >& aLayoutManagerListener );
+            virtual void SAL_CALL removeLayoutManagerEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XLayoutManagerListener >& aLayoutManagerListener );
 
             DECL_LINK( MenuBarClose, MenuBar * );
 	        DECL_LINK( WindowEventListener, VclSimpleEvent* );
@@ -276,10 +275,8 @@ namespace framework
             void        implts_setOffset( const sal_Int32 nBottomOffset );
 
 			void 	implts_setInplaceMenuBar(
-						const ::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexAccess >& xMergedMenuBar )
-							throw (::com::sun::star::uno::RuntimeException);
-			void	implts_resetInplaceMenuBar()
-							throw (::com::sun::star::uno::RuntimeException);
+						const ::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexAccess >& xMergedMenuBar );
+			void	implts_resetInplaceMenuBar();
 
             void    implts_setVisibleState( sal_Bool bShow );
             void    implts_updateUIElementsVisibleState( sal_Bool bShow );
@@ -295,14 +292,14 @@ namespace framework
             virtual sal_Bool                                            SAL_CALL convertFastPropertyValue        ( com::sun::star::uno::Any&        aConvertedValue ,
                                                                                                                 com::sun::star::uno::Any&        aOldValue       ,
                                                                                                                 sal_Int32                        nHandle         ,
-                                                                                                                const com::sun::star::uno::Any&  aValue          ) throw( com::sun::star::lang::IllegalArgumentException );
+                                                                                                                const com::sun::star::uno::Any&  aValue          );
             virtual void                                                SAL_CALL setFastPropertyValue_NoBroadcast( sal_Int32                        nHandle         ,
-                                                                                                                const com::sun::star::uno::Any&  aValue          ) throw( com::sun::star::uno::Exception                 );
+                                                                                                                const com::sun::star::uno::Any&  aValue          );
             using cppu::OPropertySetHelper::getFastPropertyValue;
             virtual void                                                SAL_CALL getFastPropertyValue( com::sun::star::uno::Any&    aValue          ,
                                                                                                     sal_Int32                    nHandle         ) const;
             virtual ::cppu::IPropertyArrayHelper&                       SAL_CALL getInfoHelper();
-            virtual ::com::sun::star::uno::Reference< com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo() throw (::com::sun::star::uno::RuntimeException);
+            virtual ::com::sun::star::uno::Reference< com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo();
 
             css::uno::Reference< css::lang::XMultiServiceFactory >                      m_xSMGR; /** reference to factory, which has created this instance. */
             css::uno::Reference< css::util::XURLTransformer >                           m_xURLTransformer;

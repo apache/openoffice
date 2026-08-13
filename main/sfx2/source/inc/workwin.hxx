@@ -214,19 +214,19 @@ class LayoutManagerListener : public ::com::sun::star::frame::XLayoutManagerList
         //---------------------------------------------------------------------------------------------------------
         //  XComponent
 		//---------------------------------------------------------------------------------------------------------
-        virtual void SAL_CALL addEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL removeEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& aListener ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL dispose() throw( ::com::sun::star::uno::RuntimeException );
+        virtual void SAL_CALL addEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& xListener );
+        virtual void SAL_CALL removeEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& aListener );
+        virtual void SAL_CALL dispose();
 
         //---------------------------------------------------------------------------------------------------------
         //  XEventListener
 		//---------------------------------------------------------------------------------------------------------
-	    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& aEvent ) throw( ::com::sun::star::uno::RuntimeException );
+	    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& aEvent );
 
 		//---------------------------------------------------------------------------------------------------------
         // XLayoutManagerEventListener
 		//---------------------------------------------------------------------------------------------------------
-        virtual void SAL_CALL layoutEvent( const ::com::sun::star::lang::EventObject& aSource, ::sal_Int16 eLayoutEvent, const ::com::sun::star::uno::Any& aInfo ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL layoutEvent( const ::com::sun::star::lang::EventObject& aSource, ::sal_Int16 eLayoutEvent, const ::com::sun::star::uno::Any& aInfo );
 
     private:
         sal_Bool                                                                m_bHasFrame;

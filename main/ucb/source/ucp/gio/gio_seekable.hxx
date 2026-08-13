@@ -47,29 +47,19 @@ public:
     virtual ~Seekable();
 
     // XInterface
-    virtual com::sun::star::uno::Any SAL_CALL queryInterface(const ::com::sun::star::uno::Type & type )
-            throw( ::com::sun::star::uno::RuntimeException );
+    virtual com::sun::star::uno::Any SAL_CALL queryInterface(const ::com::sun::star::uno::Type & type );
     virtual void SAL_CALL acquire( void ) throw () { OWeakObject::acquire(); }
     virtual void SAL_CALL release( void ) throw() { OWeakObject::release(); }
 
     // XSeekable
-    virtual void SAL_CALL seek( sal_Int64 location )
-            throw( ::com::sun::star::lang::IllegalArgumentException,
-                ::com::sun::star::io::IOException,
-                ::com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL seek( sal_Int64 location );
 
-    virtual sal_Int64 SAL_CALL getPosition()
-            throw( ::com::sun::star::io::IOException,
-                ::com::sun::star::uno::RuntimeException );
+    virtual sal_Int64 SAL_CALL getPosition();
 
-    virtual sal_Int64 SAL_CALL getLength()
-            throw( ::com::sun::star::io::IOException,
-                ::com::sun::star::uno::RuntimeException );
+    virtual sal_Int64 SAL_CALL getLength();
 
     // XTruncate
-    virtual void SAL_CALL truncate( void )
-            throw( com::sun::star::io::IOException,
-                com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL truncate( void );
 };
 
 } // namespace gio

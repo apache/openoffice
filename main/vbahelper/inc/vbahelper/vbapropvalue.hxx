@@ -44,10 +44,10 @@ public:
     ScVbaPropValue( PropListener* pListener );
 
     // Attributes
-    virtual css::uno::Any SAL_CALL getValue() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setValue( const css::uno::Any& _value ) throw (css::uno::RuntimeException);
+    virtual css::uno::Any SAL_CALL getValue();
+    virtual void SAL_CALL setValue( const css::uno::Any& _value );
 
-    rtl::OUString SAL_CALL getDefaultPropertyName() throw (css::uno::RuntimeException) { return ::rtl::OUString::createFromAscii("Value"); }
+    rtl::OUString SAL_CALL getDefaultPropertyName() { return ::rtl::OUString::createFromAscii("Value"); }
 
 };
 #endif //SC_VBA_PROPVALULE_HXX

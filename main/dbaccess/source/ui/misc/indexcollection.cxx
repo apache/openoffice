@@ -166,7 +166,7 @@ namespace dbaui
 	}
 
 	//------------------------------------------------------------------
-	void OIndexCollection::commitNewIndex(const Indexes::iterator& _rPos) SAL_THROW((SQLException))
+	void OIndexCollection::commitNewIndex(const Indexes::iterator& _rPos)
 	{
 		OSL_ENSURE(_rPos->isNew(), "OIndexCollection::commitNewIndex: index must be new!");
 
@@ -236,7 +236,7 @@ namespace dbaui
 	}
 
 	//------------------------------------------------------------------
-	sal_Bool OIndexCollection::dropNoRemove(const Indexes::iterator& _rPos) SAL_THROW((SQLException))
+	sal_Bool OIndexCollection::dropNoRemove(const Indexes::iterator& _rPos)
 	{
 		try
 		{
@@ -270,7 +270,7 @@ namespace dbaui
 	}
 
 	//------------------------------------------------------------------
-	sal_Bool OIndexCollection::drop(const Indexes::iterator& _rPos) SAL_THROW((SQLException))
+	sal_Bool OIndexCollection::drop(const Indexes::iterator& _rPos)
 	{
 		OSL_ENSURE((_rPos >= m_aIndexes.begin()) && (_rPos < m_aIndexes.end()),
 			"OIndexCollection::drop: invalid position (fasten your seatbelt .... this will crash)!");
@@ -285,7 +285,7 @@ namespace dbaui
 	}
 
 	//------------------------------------------------------------------
-	void OIndexCollection::implFillIndexInfo(OIndex& _rIndex) SAL_THROW((Exception))
+	void OIndexCollection::implFillIndexInfo(OIndex& _rIndex)
 	{
 		// get the UNO descriptor for the index
 		Reference< XPropertySet > xIndex;
@@ -299,7 +299,7 @@ namespace dbaui
 	}
 
 	//------------------------------------------------------------------
-	void OIndexCollection::implFillIndexInfo(OIndex& _rIndex, Reference< XPropertySet > _rxDescriptor) SAL_THROW((Exception))
+	void OIndexCollection::implFillIndexInfo(OIndex& _rIndex, Reference< XPropertySet > _rxDescriptor)
 	{
 		static const ::rtl::OUString s_sPrimaryIndexPropertyName = ::rtl::OUString::createFromAscii("IsPrimaryKeyIndex");
 		static const ::rtl::OUString s_sUniquePropertyName = ::rtl::OUString::createFromAscii("IsUnique");
@@ -349,7 +349,7 @@ namespace dbaui
 	}
 
 	//------------------------------------------------------------------
-	void OIndexCollection::resetIndex(const Indexes::iterator& _rPos) SAL_THROW((SQLException))
+	void OIndexCollection::resetIndex(const Indexes::iterator& _rPos)
 	{
 		OSL_ENSURE(_rPos >= m_aIndexes.begin() && _rPos < m_aIndexes.end(),
 			"OIndexCollection::resetIndex: invalid position!");

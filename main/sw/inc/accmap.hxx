@@ -312,13 +312,11 @@ public:
 		const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape >& _rxShape,
 		const long _nIndex,
 		const ::accessibility::AccessibleShapeTreeInfo& _rShapeTreeInfo
-	)	throw (::com::sun::star::uno::RuntimeException);
+	);
 	virtual ::accessibility::AccessibleControlShape* GetAccControlShapeFromModel
-		(::com::sun::star::beans::XPropertySet* pSet)
-		throw (::com::sun::star::uno::RuntimeException);
+		(::com::sun::star::beans::XPropertySet* pSet);
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible >   GetAccessibleCaption (
-		const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape > & xShape)
-    throw (::com::sun::star::uno::RuntimeException);
+		const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape > & xShape);
 
     // additional Core/Pixel conversions for internal use; also works
     // for preview

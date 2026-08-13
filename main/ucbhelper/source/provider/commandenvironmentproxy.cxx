@@ -119,7 +119,6 @@ XTYPEPROVIDER_IMPL_2( CommandEnvironmentProxy,
 // virtual
 Reference< XInteractionHandler > SAL_CALL
 CommandEnvironmentProxy::getInteractionHandler()
-	throw ( RuntimeException )
 {
 	if ( m_pImpl->m_xEnv.is() )
 	{
@@ -141,7 +140,6 @@ CommandEnvironmentProxy::getInteractionHandler()
 // virtual
 Reference< XProgressHandler > SAL_CALL
 CommandEnvironmentProxy::getProgressHandler()
-	throw ( RuntimeException )
 {
 	if ( m_pImpl->m_xEnv.is() )
 	{

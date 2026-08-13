@@ -193,13 +193,11 @@ namespace
 
         // XCurrentContext
         virtual uno::Any SAL_CALL
-            getValueByName( OUString const & aName)
-                throw (uno::RuntimeException);
+            getValueByName( OUString const & aName);
     };
 
     uno::Any SAL_CALL
         SimpleCurrentContext::getValueByName( OUString const & aName)
-            throw (uno::RuntimeException)
     {
         return getChainedValueByName(aName);
     }
@@ -221,8 +219,7 @@ public:
 
     // XCurrentContext
     virtual uno::Any SAL_CALL
-        getValueByName( OUString const & aName)
-            throw (uno::RuntimeException);
+        getValueByName( OUString const & aName);
 
 private:
 	InteractionHandler  m_xHandler;
@@ -230,7 +227,6 @@ private:
 
 //------------------------------------------------------------------------------
 uno::Any SAL_CALL ConfigurationErrorHandler::Context::getValueByName( OUString const & aName)
-		throw (uno::RuntimeException)
 {
 	if ( aName.equalsAscii( CONFIG_ERROR_HANDLER ) )
 	{

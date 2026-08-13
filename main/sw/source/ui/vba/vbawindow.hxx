@@ -38,17 +38,16 @@ public:
         const css::uno::Reference< ov::XHelperInterface >& xParent,
         const css::uno::Reference< css::uno::XComponentContext >& xContext,
         const css::uno::Reference< css::frame::XModel >& xModel,
-        const css::uno::Reference< css::frame::XController >& xController )
-        throw (css::uno::RuntimeException);
+        const css::uno::Reference< css::frame::XController >& xController );
 
     // Attributes
-    virtual css::uno::Any SAL_CALL getView() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setView( const css::uno::Any& _view ) throw (css::uno::RuntimeException);
+    virtual css::uno::Any SAL_CALL getView();
+    virtual void SAL_CALL setView( const css::uno::Any& _view );
 	// Methods
-	virtual void SAL_CALL Activate(  ) throw (css::uno::RuntimeException);
-	virtual void SAL_CALL Close( const css::uno::Any& SaveChanges, const css::uno::Any& RouteDocument ) throw (css::uno::RuntimeException);
-    virtual css::uno::Any SAL_CALL Panes( const css::uno::Any& aIndex ) throw (css::uno::RuntimeException);
-    virtual css::uno::Any SAL_CALL ActivePane() throw (css::uno::RuntimeException);
+	virtual void SAL_CALL Activate(  );
+	virtual void SAL_CALL Close( const css::uno::Any& SaveChanges, const css::uno::Any& RouteDocument );
+    virtual css::uno::Any SAL_CALL Panes( const css::uno::Any& aIndex );
+    virtual css::uno::Any SAL_CALL ActivePane();
 	// XHelperInterface
 	virtual rtl::OUString& getServiceImplName();
 	virtual css::uno::Sequence<rtl::OUString> getServiceNames();

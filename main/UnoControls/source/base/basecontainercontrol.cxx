@@ -71,7 +71,7 @@ BaseContainerControl::~BaseContainerControl()
 //	XInterface
 //____________________________________________________________________________________________________________
 
-Any SAL_CALL BaseContainerControl::queryInterface( const Type& rType ) throw( RuntimeException )
+Any SAL_CALL BaseContainerControl::queryInterface( const Type& rType )
 {
 	// Attention:
 	//	Don't use mutex or guard in this method!!! Is a method of XInterface.
@@ -96,7 +96,7 @@ Any SAL_CALL BaseContainerControl::queryInterface( const Type& rType ) throw( Ru
 //	XTypeProvider
 //____________________________________________________________________________________________________________
 
-Sequence< Type > SAL_CALL BaseContainerControl::getTypes() throw( RuntimeException )
+Sequence< Type > SAL_CALL BaseContainerControl::getTypes()
 {
 	// Optimize this method !
 	// We initialize a static variable only one time. And we don't must use a mutex at every call!
@@ -128,7 +128,7 @@ Sequence< Type > SAL_CALL BaseContainerControl::getTypes() throw( RuntimeExcepti
 //	XAggregation
 //____________________________________________________________________________________________________________
 
-Any SAL_CALL BaseContainerControl::queryAggregation( const Type& aType ) throw( RuntimeException )
+Any SAL_CALL BaseContainerControl::queryAggregation( const Type& aType )
 {
 	// Ask for my own supported interfaces ...
 	// Attention: XTypeProvider and XInterface are supported by OComponentHelper!
@@ -156,7 +156,7 @@ Any SAL_CALL BaseContainerControl::queryAggregation( const Type& aType ) throw( 
 //____________________________________________________________________________________________________________
 
 void SAL_CALL BaseContainerControl::createPeer(	const	Reference< XToolkit >&		xToolkit	,
-												const	Reference< XWindowPeer >&	xParent		) throw( RuntimeException )
+												const	Reference< XWindowPeer >&	xParent		)
 {
 	if ( getPeer().is() == sal_False )
 	{
@@ -188,7 +188,7 @@ void SAL_CALL BaseContainerControl::createPeer(	const	Reference< XToolkit >&		xT
 //	XControl
 //____________________________________________________________________________________________________________
 
-sal_Bool SAL_CALL BaseContainerControl::setModel( const Reference< XControlModel >& ) throw( RuntimeException )
+sal_Bool SAL_CALL BaseContainerControl::setModel( const Reference< XControlModel >& )
 {
 	// This object has NO model.
 	return sal_False ;
@@ -198,7 +198,7 @@ sal_Bool SAL_CALL BaseContainerControl::setModel( const Reference< XControlModel
 //	XControl
 //____________________________________________________________________________________________________________
 
-Reference< XControlModel > SAL_CALL BaseContainerControl::getModel() throw( RuntimeException )
+Reference< XControlModel > SAL_CALL BaseContainerControl::getModel()
 {
 	// This object has NO model.
 	// return (XControlModel*)this ;
@@ -209,7 +209,7 @@ Reference< XControlModel > SAL_CALL BaseContainerControl::getModel() throw( Runt
 //	XComponent
 //____________________________________________________________________________________________________________
 
-void SAL_CALL BaseContainerControl::dispose() throw( RuntimeException )
+void SAL_CALL BaseContainerControl::dispose()
 {
 	// Zuerst der Welt mitteilen, da� der Container wegfliegt. Dieses ist um einiges
 	// schneller wenn die Welt sowohl an den Controls als auch am Container horcht
@@ -251,7 +251,7 @@ void SAL_CALL BaseContainerControl::dispose() throw( RuntimeException )
 //	XEventListener
 //____________________________________________________________________________________________________________
 
-void SAL_CALL BaseContainerControl::disposing( const EventObject& rEvent ) throw( RuntimeException )
+void SAL_CALL BaseContainerControl::disposing( const EventObject& rEvent )
 {
 	Reference< XControl > xControl( rEvent.Source, UNO_QUERY );
 
@@ -263,7 +263,7 @@ void SAL_CALL BaseContainerControl::disposing( const EventObject& rEvent ) throw
 //	XControlContainer
 //____________________________________________________________________________________________________________
 
-void SAL_CALL BaseContainerControl::addControl ( const OUString& rName, const Reference< XControl > & rControl ) throw( RuntimeException )
+void SAL_CALL BaseContainerControl::addControl ( const OUString& rName, const Reference< XControl > & rControl )
 {
 	if ( !rControl.is () )
         return;
@@ -322,7 +322,7 @@ void SAL_CALL BaseContainerControl::addControl ( const OUString& rName, const Re
 //	XControlContainer
 //____________________________________________________________________________________________________________
 
-void SAL_CALL BaseContainerControl::addContainerListener ( const Reference< XContainerListener > & rListener ) throw( RuntimeException )
+void SAL_CALL BaseContainerControl::addContainerListener ( const Reference< XContainerListener > & rListener )
 {
 	// Ready for multithreading
 	MutexGuard aGuard ( m_aMutex ) ;
@@ -334,7 +334,7 @@ void SAL_CALL BaseContainerControl::addContainerListener ( const Reference< XCon
 //	XControlContainer
 //____________________________________________________________________________________________________________
 
-void SAL_CALL BaseContainerControl::removeControl ( const Reference< XControl > & rControl ) throw( RuntimeException )
+void SAL_CALL BaseContainerControl::removeControl ( const Reference< XControl > & rControl )
 {
 	if ( rControl.is() )
 	{
@@ -385,7 +385,7 @@ void SAL_CALL BaseContainerControl::removeControl ( const Reference< XControl > 
 //	XControlContainer
 //____________________________________________________________________________________________________________
 
-void SAL_CALL BaseContainerControl::removeContainerListener ( const Reference< XContainerListener > & rListener ) throw( RuntimeException )
+void SAL_CALL BaseContainerControl::removeContainerListener ( const Reference< XContainerListener > & rListener )
 {
 	// Ready for multithreading
 	MutexGuard aGuard ( m_aMutex ) ;
@@ -397,7 +397,7 @@ void SAL_CALL BaseContainerControl::removeContainerListener ( const Reference< X
 //	XControlContainer
 //____________________________________________________________________________________________________________
 
-void SAL_CALL BaseContainerControl::setStatusText ( const OUString& rStatusText ) throw( RuntimeException )
+void SAL_CALL BaseContainerControl::setStatusText ( const OUString& rStatusText )
 {
 	// go down to each parent
 	Reference< XControlContainer > 	xContainer ( getContext(), UNO_QUERY ) ;
@@ -412,7 +412,7 @@ void SAL_CALL BaseContainerControl::setStatusText ( const OUString& rStatusText 
 //	XControlContainer
 //____________________________________________________________________________________________________________
 
-Reference< XControl > SAL_CALL BaseContainerControl::getControl ( const OUString& rName	) throw( RuntimeException )
+Reference< XControl > SAL_CALL BaseContainerControl::getControl ( const OUString& rName	)
 {
 	// Ready for multithreading
 	MutexGuard	aGuard ( Mutex::getGlobalMutex() ) ;
@@ -441,7 +441,7 @@ Reference< XControl > SAL_CALL BaseContainerControl::getControl ( const OUString
 //	XControlContainer
 //____________________________________________________________________________________________________________
 
-Sequence< Reference< XControl > > SAL_CALL BaseContainerControl::getControls () throw( RuntimeException )
+Sequence< Reference< XControl > > SAL_CALL BaseContainerControl::getControls ()
 {
 	// Ready for multithreading
 	MutexGuard	aGuard ( Mutex::getGlobalMutex() ) ;
@@ -466,7 +466,7 @@ Sequence< Reference< XControl > > SAL_CALL BaseContainerControl::getControls () 
 //	XUnoControlContainer
 //____________________________________________________________________________________________________________
 
-void SAL_CALL BaseContainerControl::addTabController ( const Reference< XTabController > & rTabController ) throw( RuntimeException )
+void SAL_CALL BaseContainerControl::addTabController ( const Reference< XTabController > & rTabController )
 {
 	// Ready for multithreading
 	MutexGuard aGuard (m_aMutex) ;
@@ -492,7 +492,7 @@ void SAL_CALL BaseContainerControl::addTabController ( const Reference< XTabCont
 //	XUnoControlContainer
 //____________________________________________________________________________________________________________
 
-void SAL_CALL BaseContainerControl::removeTabController ( const Reference< XTabController > & rTabController ) throw( RuntimeException )
+void SAL_CALL BaseContainerControl::removeTabController ( const Reference< XTabController > & rTabController )
 {
 	// Ready for multithreading
 	MutexGuard aGuard (m_aMutex) ;
@@ -516,7 +516,7 @@ void SAL_CALL BaseContainerControl::removeTabController ( const Reference< XTabC
 //	XUnoControlContainer
 //____________________________________________________________________________________________________________
 
-void SAL_CALL BaseContainerControl::setTabControllers ( const Sequence< Reference< XTabController >  >& rTabControllers ) throw( RuntimeException )
+void SAL_CALL BaseContainerControl::setTabControllers ( const Sequence< Reference< XTabController >  >& rTabControllers )
 {
 	// Ready for multithreading
 	MutexGuard aGuard (m_aMutex) ;
@@ -524,7 +524,7 @@ void SAL_CALL BaseContainerControl::setTabControllers ( const Sequence< Referenc
 	m_xTabControllerList = rTabControllers ;
 }
 
-Sequence<Reference< XTabController > > SAL_CALL BaseContainerControl::getTabControllers () throw( RuntimeException )
+Sequence<Reference< XTabController > > SAL_CALL BaseContainerControl::getTabControllers ()
 {
 	// Ready for multithreading
 	MutexGuard aGuard (m_aMutex) ;
@@ -536,7 +536,7 @@ Sequence<Reference< XTabController > > SAL_CALL BaseContainerControl::getTabCont
 //	XWindow
 //____________________________________________________________________________________________________________
 
-void SAL_CALL BaseContainerControl::setVisible ( sal_Bool bVisible ) throw( RuntimeException )
+void SAL_CALL BaseContainerControl::setVisible ( sal_Bool bVisible )
 {
 	// override baseclass definition
 	BaseControl::setVisible ( bVisible ) ;

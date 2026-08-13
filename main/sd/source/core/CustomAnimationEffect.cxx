@@ -975,7 +975,7 @@ void CustomAnimationEffect::setFill( sal_Int16 nFill )
 
 // --------------------------------------------------------------------
 
-Reference< XAnimationNode > CustomAnimationEffect::createAfterEffectNode() const throw (Exception)
+Reference< XAnimationNode > CustomAnimationEffect::createAfterEffectNode() const
 {
 	DBG_ASSERT( mbHasAfterEffect, "sd::CustomAnimationEffect::createAfterEffectNode(), this node has no after effect!" );
 
@@ -2147,7 +2147,6 @@ bool stl_CustomAnimationEffect_search_node_predict::operator()( CustomAnimationE
 // --------------------------------------------------------------------
 
 static bool implFindNextContainer( Reference< XTimeContainer >& xParent, Reference< XTimeContainer >& xCurrent, Reference< XTimeContainer >& xNext )
- throw(Exception)
 {
 	Reference< XEnumerationAccess > xEnumerationAccess( xParent, UNO_QUERY_THROW );
 	Reference< XEnumeration > xEnumeration( xEnumerationAccess->createEnumeration() );
@@ -3246,19 +3245,19 @@ class AnimationChangeListener : public cppu::WeakImplHelper1< XChangesListener >
 public:
 	AnimationChangeListener( MainSequence* pMainSequence ) : mpMainSequence( pMainSequence ) {}
 
-    virtual void SAL_CALL changesOccurred( const ::com::sun::star::util::ChangesEvent& Event ) throw (RuntimeException);
-    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw (RuntimeException);
+    virtual void SAL_CALL changesOccurred( const ::com::sun::star::util::ChangesEvent& Event );
+    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 private:
 	MainSequence* mpMainSequence;
 };
 
-void SAL_CALL AnimationChangeListener::changesOccurred( const ::com::sun::star::util::ChangesEvent& ) throw (RuntimeException)
+void SAL_CALL AnimationChangeListener::changesOccurred( const ::com::sun::star::util::ChangesEvent& )
 {
 	if( mpMainSequence )
 		mpMainSequence->startRecreateTimer();
 }
 
-void SAL_CALL AnimationChangeListener::disposing( const ::com::sun::star::lang::EventObject& ) throw (RuntimeException)
+void SAL_CALL AnimationChangeListener::disposing( const ::com::sun::star::lang::EventObject& )
 {
 }
 

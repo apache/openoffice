@@ -60,45 +60,36 @@ public:
     /** Accepts no arguments.  All values that are necessary to set up a
         preview cache can be provided via methods.
     */
-    virtual void SAL_CALL initialize (const css::uno::Sequence<css::uno::Any>& rArguments)
-        throw(css::uno::Exception,css::uno::RuntimeException);
+    virtual void SAL_CALL initialize (const css::uno::Sequence<css::uno::Any>& rArguments);
 
 
     // XSlidePreviewCache
 
     virtual void SAL_CALL setDocumentSlides (
         const css::uno::Reference<css::container::XIndexAccess>& rxSlides,
-        const css::uno::Reference<css::uno::XInterface>& rxDocument)
-        throw (css::uno::RuntimeException);
+        const css::uno::Reference<css::uno::XInterface>& rxDocument);
 
     virtual void SAL_CALL setVisibleRange (
         sal_Int32 nFirstVisibleSlideIndex,
-        sal_Int32 nLastVisibleSlideIndex)
-        throw (css::uno::RuntimeException);
+        sal_Int32 nLastVisibleSlideIndex);
 
     virtual void SAL_CALL setPreviewSize (
-        const css::geometry::IntegerSize2D& rSize)
-        throw (css::uno::RuntimeException);
+        const css::geometry::IntegerSize2D& rSize);
 
     virtual css::uno::Reference<css::rendering::XBitmap> SAL_CALL
         getSlidePreview (
             sal_Int32 nSlideIndex,
-            const css::uno::Reference<css::rendering::XCanvas>& rxCanvas)
-        throw (css::uno::RuntimeException);
+            const css::uno::Reference<css::rendering::XCanvas>& rxCanvas);
 
     virtual void SAL_CALL addPreviewCreationNotifyListener (
-        const css::uno::Reference<css::drawing::XSlidePreviewCacheListener>& rxListener)
-        throw (css::uno::RuntimeException);
+        const css::uno::Reference<css::drawing::XSlidePreviewCacheListener>& rxListener);
 
     virtual void SAL_CALL removePreviewCreationNotifyListener (
-        const css::uno::Reference<css::drawing::XSlidePreviewCacheListener>& rxListener)
-        throw (css::uno::RuntimeException);
+        const css::uno::Reference<css::drawing::XSlidePreviewCacheListener>& rxListener);
 
-    virtual void SAL_CALL pause (void)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL pause (void);
 
-    virtual void SAL_CALL resume (void)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL resume (void);
 
 private:
     css::uno::Reference<css::uno::XComponentContext> mxComponentContext;
@@ -110,7 +101,7 @@ private:
     /** This method throws a DisposedException when the object has already been
         disposed.
     */
-    void ThrowIfDisposed (void) throw (css::lang::DisposedException);
+    void ThrowIfDisposed (void);
 };
 
 } } // end of namespace ::sd::presenter

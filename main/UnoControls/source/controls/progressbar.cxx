@@ -81,7 +81,7 @@ ProgressBar::~ProgressBar()
 //	XInterface
 //____________________________________________________________________________________________________________
 
-Any SAL_CALL ProgressBar::queryInterface( const Type& rType ) throw( RuntimeException )
+Any SAL_CALL ProgressBar::queryInterface( const Type& rType )
 {
 	// Attention:
 	//	Don't use mutex or guard in this method!!! Is a method of XInterface.
@@ -132,7 +132,7 @@ void SAL_CALL ProgressBar::release() throw()
 //	XTypeProvider
 //____________________________________________________________________________________________________________
 
-Sequence< Type > SAL_CALL ProgressBar::getTypes() throw( RuntimeException )
+Sequence< Type > SAL_CALL ProgressBar::getTypes()
 {
 	// Optimize this method !
 	// We initialize a static variable only one time. And we don't must use a mutex at every call!
@@ -164,7 +164,7 @@ Sequence< Type > SAL_CALL ProgressBar::getTypes() throw( RuntimeException )
 //	XAggregation
 //____________________________________________________________________________________________________________
 
-Any SAL_CALL ProgressBar::queryAggregation( const Type& aType ) throw( RuntimeException )
+Any SAL_CALL ProgressBar::queryAggregation( const Type& aType )
 {
 	// Ask for my own supported interfaces ...
 	// Attention: XTypeProvider and XInterface are supported by OComponentHelper!
@@ -188,7 +188,7 @@ Any SAL_CALL ProgressBar::queryAggregation( const Type& aType ) throw( RuntimeEx
 //	XProgressBar
 //____________________________________________________________________________________________________________
 
-void SAL_CALL ProgressBar::setForegroundColor( sal_Int32 nColor ) throw( RuntimeException )
+void SAL_CALL ProgressBar::setForegroundColor( sal_Int32 nColor )
 {
 	// Ready for multithreading
 	MutexGuard	aGuard (m_aMutex) ;
@@ -204,7 +204,7 @@ void SAL_CALL ProgressBar::setForegroundColor( sal_Int32 nColor ) throw( Runtime
 //	XProgressBar
 //____________________________________________________________________________________________________________
 
-void SAL_CALL ProgressBar::setBackgroundColor ( sal_Int32 nColor ) throw( RuntimeException )
+void SAL_CALL ProgressBar::setBackgroundColor ( sal_Int32 nColor )
 {
 	// Ready for multithreading
 	MutexGuard	aGuard (m_aMutex) ;
@@ -220,7 +220,7 @@ void SAL_CALL ProgressBar::setBackgroundColor ( sal_Int32 nColor ) throw( Runtim
 //	XProgressBar
 //____________________________________________________________________________________________________________
 
-void SAL_CALL ProgressBar::setValue ( sal_Int32 nValue ) throw( RuntimeException )
+void SAL_CALL ProgressBar::setValue ( sal_Int32 nValue )
 {
 	// This method is defined for follow things:
 	//		1) Values >= _nMinRange
@@ -251,7 +251,7 @@ void SAL_CALL ProgressBar::setValue ( sal_Int32 nValue ) throw( RuntimeException
 //	XProgressBar
 //____________________________________________________________________________________________________________
 
-void SAL_CALL ProgressBar::setRange ( sal_Int32 nMin, sal_Int32 nMax ) throw( RuntimeException )
+void SAL_CALL ProgressBar::setRange ( sal_Int32 nMin, sal_Int32 nMax )
 {
 	// This method is defined for follow things:
 	//		1) All values of sal_Int32
@@ -295,7 +295,7 @@ void SAL_CALL ProgressBar::setRange ( sal_Int32 nMin, sal_Int32 nMax ) throw( Ru
 //	XProgressBar
 //____________________________________________________________________________________________________________
 
-sal_Int32 SAL_CALL ProgressBar::getValue () throw( RuntimeException )
+sal_Int32 SAL_CALL ProgressBar::getValue ()
 {
 	// Ready for multithreading
 	MutexGuard aGuard (m_aMutex) ;
@@ -307,7 +307,7 @@ sal_Int32 SAL_CALL ProgressBar::getValue () throw( RuntimeException )
 //	XWindow
 //____________________________________________________________________________________________________________
 
-void SAL_CALL ProgressBar::setPosSize ( sal_Int32 nX, sal_Int32 nY, sal_Int32 nWidth, sal_Int32 nHeight, sal_Int16 nFlags ) throw( RuntimeException )
+void SAL_CALL ProgressBar::setPosSize ( sal_Int32 nX, sal_Int32 nY, sal_Int32 nWidth, sal_Int32 nHeight, sal_Int16 nFlags )
 {
 	// Take old size BEFORE you set the new values at baseclass!
 	// You will control changes. At the other way, the values are the same!
@@ -329,7 +329,7 @@ void SAL_CALL ProgressBar::setPosSize ( sal_Int32 nX, sal_Int32 nY, sal_Int32 nW
 //	XControl
 //____________________________________________________________________________________________________________
 
-sal_Bool SAL_CALL ProgressBar::setModel( const Reference< XControlModel >& /*xModel*/ ) throw( RuntimeException )
+sal_Bool SAL_CALL ProgressBar::setModel( const Reference< XControlModel >& /*xModel*/ )
 {
 	// A model is not possible for this control.
 	return sal_False ;
@@ -339,7 +339,7 @@ sal_Bool SAL_CALL ProgressBar::setModel( const Reference< XControlModel >& /*xMo
 //	XControl
 //____________________________________________________________________________________________________________
 
-Reference< XControlModel > SAL_CALL ProgressBar::getModel() throw( RuntimeException )
+Reference< XControlModel > SAL_CALL ProgressBar::getModel()
 {
 	// A model is not possible for this control.
 	return Reference< XControlModel >();

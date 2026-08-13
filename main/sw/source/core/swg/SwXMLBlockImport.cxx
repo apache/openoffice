@@ -109,6 +109,5 @@ SvXMLImportContext *SwXMLTextBlockImport::CreateContext(
 	return pContext;
 }
 void SAL_CALL SwXMLTextBlockImport::endDocument(void)
-        throw( xml::sax::SAXException, uno::RuntimeException )
 {
 }

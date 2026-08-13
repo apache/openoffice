@@ -74,7 +74,6 @@ public:
 
 public:
     virtual sal_Int32 SAL_CALL readBytes( Sequence< sal_Int8 >& aData, sal_Int32 nBytesToRead )
-		throw(NotConnectedException, BufferSizeExceededException, IOException, RuntimeException)
 		{
 			nBytesToRead = (nBytesToRead > m_seq.getLength() - nPos ) ?
 				m_seq.getLength() - nPos :
@@ -86,22 +85,18 @@ public:
     virtual sal_Int32 SAL_CALL readSomeBytes(
 		::com::sun::star::uno::Sequence< sal_Int8 >& aData,
 		sal_Int32 nMaxBytesToRead )
-		throw(NotConnectedException, BufferSizeExceededException, IOException, RuntimeException)
 		{
 			return readBytes( aData, nMaxBytesToRead );
 		}
     virtual void SAL_CALL skipBytes( sal_Int32 /*nBytesToSkip*/ )
-		throw(NotConnectedException, BufferSizeExceededException, IOException, RuntimeException)
 		{
 			// not implemented
 		}
     virtual sal_Int32 SAL_CALL available(  )
-		throw(NotConnectedException, IOException, RuntimeException)
 		{
 			return m_seq.getLength() - nPos;
 		}
     virtual void SAL_CALL closeInput(  )
-		throw(NotConnectedException, IOException, RuntimeException)
 		{
 			// not needed
 		}
@@ -155,7 +150,7 @@ public:
 
 
 public: // Error handler
-    virtual void SAL_CALL error(const Any& aSAXParseException) throw (SAXException, RuntimeException)
+    virtual void SAL_CALL error(const Any& aSAXParseException)
     {
         ++nError;
     	printf( "Error !\n" );
@@ -164,12 +159,12 @@ public: // Error handler
 			Reference < XInterface >() ,
 			aSAXParseException );
     }
-    virtual void SAL_CALL fatalError(const Any& /*aSAXParseException*/) throw (SAXException, RuntimeException)
+    virtual void SAL_CALL fatalError(const Any& /*aSAXParseException*/)
     {
         ++nError;
     	printf( "Fatal Error !\n" );
     }
-    virtual void SAL_CALL warning(const Any& /*aSAXParseException*/) throw (SAXException, RuntimeException)
+    virtual void SAL_CALL warning(const Any& /*aSAXParseException*/)
     {
     	printf( "Warning !\n" );
     }
@@ -183,7 +178,7 @@ public: // ExtendedDocumentHandler
 	sal_Bool  fElement ;
 	LocaleNode * rootNode;
 
-	virtual void SAL_CALL startDocument(void) throw (SAXException, RuntimeException)
+	virtual void SAL_CALL startDocument(void)
     {
 	printf( "parsing document %s started\n", theLocale);
 	of.writeAsciiString("#include <sal/types.h>\n\n\n");
@@ -191,7 +186,7 @@ public: // ExtendedDocumentHandler
 	of.writeAsciiString("extern \"C\" {\n\n");
 	}
 
-    virtual void SAL_CALL endDocument(void) throw (SAXException, RuntimeException)
+    virtual void SAL_CALL endDocument(void)
     {
 		if (rootNode)
         {
@@ -216,7 +211,6 @@ public: // ExtendedDocumentHandler
 
     virtual void SAL_CALL startElement(const OUString& aName,
 							  const Reference< XAttributeList > & xAttribs)
-		throw (SAXException,RuntimeException)
 	{
 
 		LocaleNode * l =  LocaleNode::createNode (aName, xAttribs);
@@ -230,12 +224,12 @@ public: // ExtendedDocumentHandler
 	}
 
 
-	virtual void SAL_CALL endElement(const OUString& /*aName*/) throw (SAXException,RuntimeException)
+	virtual void SAL_CALL endElement(const OUString& /*aName*/)
     {
     	currentNode . pop();
     }
 
-	virtual void SAL_CALL characters(const OUString& aChars) throw (SAXException,RuntimeException)
+	virtual void SAL_CALL characters(const OUString& aChars)
     {
 
     	LocaleNode * l = currentNode . top();
@@ -246,17 +240,16 @@ public: // ExtendedDocumentHandler
 		  return;
     }
 
-	virtual void SAL_CALL ignorableWhitespace(const OUString& /*aWhitespaces*/) throw (SAXException,RuntimeException)
+	virtual void SAL_CALL ignorableWhitespace(const OUString& /*aWhitespaces*/)
     {
     }
 
-    virtual void SAL_CALL processingInstruction(const OUString& /*aTarget*/, const OUString& /*aData*/) throw (SAXException,RuntimeException)
+    virtual void SAL_CALL processingInstruction(const OUString& /*aTarget*/, const OUString& /*aData*/)
     {
 		// ignored
     }
 
     virtual void SAL_CALL setDocumentLocator(const Reference< XLocator> & /*xLocator*/)
-		throw (SAXException,RuntimeException)
     {
 		// ignored
     }
@@ -264,7 +257,6 @@ public: // ExtendedDocumentHandler
     virtual InputSource SAL_CALL resolveEntity(
 		const OUString& sPublicId,
 		const OUString& sSystemId)
-		throw (RuntimeException)
 	{
 		InputSource source;
 		source.sSystemId = sSystemId;
@@ -276,20 +268,20 @@ public: // ExtendedDocumentHandler
 		return source;
 	}
 
-    virtual void SAL_CALL startCDATA(void) throw (SAXException,RuntimeException)
+    virtual void SAL_CALL startCDATA(void)
     {
     }
-    virtual void SAL_CALL endCDATA(void) throw (RuntimeException)
+    virtual void SAL_CALL endCDATA(void)
     {
     }
-    virtual void SAL_CALL comment(const OUString& /*sComment*/) throw (SAXException,RuntimeException)
+    virtual void SAL_CALL comment(const OUString& /*sComment*/)
     {
     }
-    virtual void SAL_CALL unknown(const OUString& /*sString*/) throw (SAXException,RuntimeException)
+    virtual void SAL_CALL unknown(const OUString& /*sString*/)
     {
     }
 
-	virtual void SAL_CALL allowLineBreak( void) throw (SAXException, RuntimeException )
+	virtual void SAL_CALL allowLineBreak( void)
 	{
 
 	}

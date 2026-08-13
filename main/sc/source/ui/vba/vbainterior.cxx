@@ -84,7 +84,7 @@ PatternMap lcl_getPatternMap()
 
 static PatternMap aPatternMap( lcl_getPatternMap() );
 
-ScVbaInterior::ScVbaInterior( const uno::Reference< XHelperInterface >& xParent, const uno::Reference< uno::XComponentContext >& xContext, const uno::Reference< beans::XPropertySet >&  xProps, ScDocument* pScDoc ) throw ( lang::IllegalArgumentException) : ScVbaInterior_BASE( xParent, xContext ), m_xProps(xProps), m_pScDoc( pScDoc )
+ScVbaInterior::ScVbaInterior( const uno::Reference< XHelperInterface >& xParent, const uno::Reference< uno::XComponentContext >& xContext, const uno::Reference< beans::XPropertySet >&  xProps, ScDocument* pScDoc ) : ScVbaInterior_BASE( xParent, xContext ), m_xProps(xProps), m_pScDoc( pScDoc )
 {
     // auto color
     //m_aPattColor.SetColor( (sal_uInt32)0xFFFFFFFF );
@@ -95,14 +95,14 @@ ScVbaInterior::ScVbaInterior( const uno::Reference< XHelperInterface >& xParent,
 }
 
 uno::Any
-ScVbaInterior::getColor() throw (uno::RuntimeException)
+ScVbaInterior::getColor()
 {
     Color aBackColor( GetBackColor() );
 	return uno::makeAny( OORGBToXLRGB( aBackColor.GetColor() ) );
 }
 
 void
-ScVbaInterior::setColor( const uno::Any& _color  ) throw (uno::RuntimeException)
+ScVbaInterior::setColor( const uno::Any& _color  )
 {
     sal_Int32 nColor = 0;
     if( _color >>= nColor )
@@ -154,7 +154,7 @@ ScVbaInterior::getPalette()
 }
 
 void SAL_CALL
-ScVbaInterior::setColorIndex( const css::uno::Any& _colorindex ) throw (css::uno::RuntimeException)
+ScVbaInterior::setColorIndex( const css::uno::Any& _colorindex )
 {
 	sal_Int32 nIndex = 0;
 	_colorindex >>= nIndex;
@@ -205,7 +205,7 @@ ScVbaInterior::GetColorIndex( const sal_Int32 nColor )
 }
 
 uno::Any SAL_CALL
-ScVbaInterior::getColorIndex() throw ( css::uno::RuntimeException )
+ScVbaInterior::getColorIndex()
 {
 	sal_Int32 nColor = 0;
     // hackly for excel::XlColorIndex::xlColorIndexNone
@@ -301,7 +301,7 @@ ScVbaInterior::SetUserDefinedAttributes( const rtl::OUString& sName, const uno::
 }
 // OOo do not support below API
 uno::Any SAL_CALL
-ScVbaInterior::getPattern() throw (uno::RuntimeException)
+ScVbaInterior::getPattern()
 {
     // XlPattern
     uno::Any aPattern = GetUserDefinedAttributes( PATTERN );
@@ -310,7 +310,7 @@ ScVbaInterior::getPattern() throw (uno::RuntimeException)
     return uno::makeAny( excel::XlPattern::xlPatternNone );
 }
 void SAL_CALL
-ScVbaInterior::setPattern( const uno::Any& _pattern ) throw (uno::RuntimeException)
+ScVbaInterior::setPattern( const uno::Any& _pattern )
 {
     if( _pattern >>= m_nPattern )
     {
@@ -345,7 +345,7 @@ ScVbaInterior::GetBackColor()
     return aBackColor;
 }
 uno::Any SAL_CALL
-ScVbaInterior::getPatternColor() throw (uno::RuntimeException)
+ScVbaInterior::getPatternColor()
 {
     // 0 is the default color. no filled.
     uno::Any aPatternColor = GetUserDefinedAttributes( PATTERNCOLOR );
@@ -357,7 +357,7 @@ ScVbaInterior::getPatternColor() throw (uno::RuntimeException)
     return uno::makeAny( sal_Int32( 0 ) );
 }
 void SAL_CALL
-ScVbaInterior::setPatternColor( const uno::Any& _patterncolor ) throw (uno::RuntimeException)
+ScVbaInterior::setPatternColor( const uno::Any& _patterncolor )
 {
     sal_Int32 nPattColor = 0;
     if( _patterncolor >>= nPattColor )
@@ -369,7 +369,7 @@ ScVbaInterior::setPatternColor( const uno::Any& _patterncolor ) throw (uno::Runt
         throw uno::RuntimeException( rtl::OUString::createFromAscii( "Invalid Pattern Color" ), uno::Reference< uno::XInterface >() );
 }
 uno::Any SAL_CALL
-ScVbaInterior::getPatternColorIndex() throw (uno::RuntimeException)
+ScVbaInterior::getPatternColorIndex()
 {
 	sal_Int32 nColor = 0;
 	XLRGBToOORGB( getPatternColor() ) >>= nColor;
@@ -377,7 +377,7 @@ ScVbaInterior::getPatternColorIndex() throw (uno::RuntimeException)
 	return uno::makeAny( GetIndexColor( nColor ) );
 }
 void SAL_CALL
-ScVbaInterior::setPatternColorIndex( const uno::Any& _patterncolorindex ) throw (uno::RuntimeException)
+ScVbaInterior::setPatternColorIndex( const uno::Any& _patterncolorindex )
 {
     sal_Int32 nColorIndex = 0;
     if( _patterncolorindex >>= nColorIndex )

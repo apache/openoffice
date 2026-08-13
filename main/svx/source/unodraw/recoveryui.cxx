@@ -70,14 +70,12 @@ RecoveryUI::~RecoveryUI()
 
 //===============================================
 ::rtl::OUString SAL_CALL RecoveryUI::getImplementationName()
-    throw(css::uno::RuntimeException)
 {
     return RecoveryUI::st_getImplementationName();
 }
 
 //===============================================
 sal_Bool SAL_CALL RecoveryUI::supportsService(const ::rtl::OUString& sServiceName)
-    throw(css::uno::RuntimeException)
 {
     const css::uno::Sequence< ::rtl::OUString > lServices = RecoveryUI::st_getSupportedServiceNames();
           sal_Int32                             c         = lServices.getLength();
@@ -93,7 +91,6 @@ sal_Bool SAL_CALL RecoveryUI::supportsService(const ::rtl::OUString& sServiceNam
 
 //===============================================
 css::uno::Sequence< ::rtl::OUString > SAL_CALL RecoveryUI::getSupportedServiceNames()
-    throw(css::uno::RuntimeException)
 {
     return RecoveryUI::st_getSupportedServiceNames();
 }
@@ -101,7 +98,6 @@ css::uno::Sequence< ::rtl::OUString > SAL_CALL RecoveryUI::getSupportedServiceNa
 //===============================================
 css::uno::Any SAL_CALL RecoveryUI::dispatchWithReturnValue(const css::util::URL& aURL,
                                                    const css::uno::Sequence< css::beans::PropertyValue >& )
-    throw(css::uno::RuntimeException)
 {
     // Internally we use VCL ... every call into vcl based code must
     // be guarded by locking the global solar mutex.
@@ -138,14 +134,13 @@ css::uno::Any SAL_CALL RecoveryUI::dispatchWithReturnValue(const css::util::URL&
 //===============================================
 void SAL_CALL RecoveryUI::dispatch(const css::util::URL&                                  aURL      ,
                                    const css::uno::Sequence< css::beans::PropertyValue >& lArguments)
-    throw(css::uno::RuntimeException)
 {
     // recycle this method :-)
     dispatchWithReturnValue(aURL, lArguments);
 }
 
 //===============================================
-void SAL_CALL RecoveryUI::addStatusListener(const css::uno::Reference< css::frame::XStatusListener >&, const css::util::URL& ) throw(css::uno::RuntimeException)
+void SAL_CALL RecoveryUI::addStatusListener(const css::uno::Reference< css::frame::XStatusListener >&, const css::util::URL& )
 {
     // TODO
     OSL_ENSURE(sal_False, "RecoveryUI::addStatusListener()\nNot implemented yet!");
@@ -153,7 +148,6 @@ void SAL_CALL RecoveryUI::addStatusListener(const css::uno::Reference< css::fram
 
 //===============================================
 void SAL_CALL RecoveryUI::removeStatusListener(const css::uno::Reference< css::frame::XStatusListener >&, const css::util::URL& )
-    throw(css::uno::RuntimeException)
 {
     // TODO
     OSL_ENSURE(sal_False, "RecoveryUI::removeStatusListener()\nNot implemented yet!");

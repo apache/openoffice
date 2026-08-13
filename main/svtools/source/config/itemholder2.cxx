@@ -104,7 +104,6 @@ void ItemHolder2::holdConfigItem(EItem eItem)
 
 //-----------------------------------------------
 void SAL_CALL ItemHolder2::disposing(const css::lang::EventObject&)
-    throw(css::uno::RuntimeException)
 {
     impl_releaseAllItems();
 }

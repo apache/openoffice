@@ -52,7 +52,6 @@ SwAccessibleNoTextHyperlink::SwAccessibleNoTextHyperlink( SwAccessibleNoTextFram
 
 // XAccessibleAction
 sal_Int32 SAL_CALL SwAccessibleNoTextHyperlink::getAccessibleActionCount()
-		throw (RuntimeException)
 {
 	SwFmtURL aURL( GetFmt()->GetURL() );
 	ImageMap* pMap = aURL.GetMap();
@@ -68,7 +67,6 @@ sal_Int32 SAL_CALL SwAccessibleNoTextHyperlink::getAccessibleActionCount()
 }
 
 sal_Bool SAL_CALL SwAccessibleNoTextHyperlink::doAccessibleAction( sal_Int32 nIndex )
-		throw (IndexOutOfBoundsException, RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -108,7 +106,6 @@ sal_Bool SAL_CALL SwAccessibleNoTextHyperlink::doAccessibleAction( sal_Int32 nIn
 
 rtl::OUString SAL_CALL SwAccessibleNoTextHyperlink::getAccessibleActionDescription(
 		sal_Int32 nIndex )
-		throw (IndexOutOfBoundsException, RuntimeException)
 {
 	rtl::OUString sDesc;
 
@@ -134,7 +131,6 @@ rtl::OUString SAL_CALL SwAccessibleNoTextHyperlink::getAccessibleActionDescripti
 
 Reference< XAccessibleKeyBinding > SAL_CALL
 	SwAccessibleNoTextHyperlink::getAccessibleActionKeyBinding( sal_Int32 nIndex )
-	throw (IndexOutOfBoundsException, RuntimeException)
 {
 	Reference< XAccessibleKeyBinding > xKeyBinding;
 
@@ -172,7 +168,6 @@ Reference< XAccessibleKeyBinding > SAL_CALL
 // XAccessibleHyperlink
 Any SAL_CALL SwAccessibleNoTextHyperlink::getAccessibleActionAnchor(
 		sal_Int32 nIndex )
-		throw (IndexOutOfBoundsException, RuntimeException)
 {
 	if(nIndex < 0 || nIndex >= getAccessibleActionCount())
 		throw new IndexOutOfBoundsException;
@@ -188,7 +183,6 @@ Any SAL_CALL SwAccessibleNoTextHyperlink::getAccessibleActionAnchor(
 
 Any SAL_CALL SwAccessibleNoTextHyperlink::getAccessibleActionObject(
 			sal_Int32 nIndex )
-	throw (IndexOutOfBoundsException, RuntimeException)
 {
 	if(nIndex < 0 || nIndex >= getAccessibleActionCount())
 		throw new IndexOutOfBoundsException;
@@ -210,19 +204,16 @@ Any SAL_CALL SwAccessibleNoTextHyperlink::getAccessibleActionObject(
 }
 
 sal_Int32 SAL_CALL SwAccessibleNoTextHyperlink::getStartIndex()
-		throw (RuntimeException)
 {
 	return 0;
 }
 
 sal_Int32 SAL_CALL SwAccessibleNoTextHyperlink::getEndIndex()
-		throw (RuntimeException)
 {
 	return 0;
 }
 
 sal_Bool SAL_CALL SwAccessibleNoTextHyperlink::isValid(  )
-		throw (::com::sun::star::uno::RuntimeException)
 {
 	SwFmtURL aURL( GetFmt()->GetURL() );
 

@@ -153,7 +153,7 @@ namespace
 //*****************************************************************************************************************
 //	XURLTransformer
 //*****************************************************************************************************************
-sal_Bool SAL_CALL URLTransformer::parseStrict( URL& aURL ) throw( RuntimeException )
+sal_Bool SAL_CALL URLTransformer::parseStrict( URL& aURL )
 {
 	// Safe impossible cases.
 	if	(( &aURL						==	NULL	)	||
@@ -207,7 +207,7 @@ sal_Bool SAL_CALL URLTransformer::parseStrict( URL& aURL ) throw( RuntimeExcepti
 //	XURLTransformer
 //*****************************************************************************************************************
 sal_Bool SAL_CALL URLTransformer::parseSmart(			URL&		aURL			,
-												const	::rtl::OUString&	sSmartProtocol	) throw( RuntimeException )
+												const	::rtl::OUString&	sSmartProtocol	)
 {
 	// Safe impossible cases.
 	if	(( &aURL							==	NULL	) ||
@@ -262,7 +262,7 @@ sal_Bool SAL_CALL URLTransformer::parseSmart(			URL&		aURL			,
 //*****************************************************************************************************************
 //	XURLTransformer
 //*****************************************************************************************************************
-sal_Bool SAL_CALL URLTransformer::assemble( URL& aURL ) throw( RuntimeException )
+sal_Bool SAL_CALL URLTransformer::assemble( URL& aURL )
 {
 	// Safe impossible cases.
 	if	( &aURL == NULL )
@@ -326,7 +326,7 @@ sal_Bool SAL_CALL URLTransformer::assemble( URL& aURL ) throw( RuntimeException 
 //	XURLTransformer
 //*****************************************************************************************************************
 ::rtl::OUString SAL_CALL URLTransformer::getPresentation(	const	URL&		aURL			,
-															sal_Bool	bWithPassword	) throw( RuntimeException )
+															sal_Bool	bWithPassword	)
 {
 	// Safe impossible cases.
 	if	(( &aURL						==	NULL		)	||

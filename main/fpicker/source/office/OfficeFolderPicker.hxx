@@ -71,32 +71,32 @@ public:
 	// XFolderPicker functions
 	//------------------------------------------------------------------------------------
 
-	virtual void SAL_CALL			setDisplayDirectory( const ::rtl::OUString& aDirectory ) throw( ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException );
-	virtual ::rtl::OUString SAL_CALL	getDisplayDirectory() throw( ::com::sun::star::uno::RuntimeException );
-    virtual ::rtl::OUString SAL_CALL	getDirectory() throw( ::com::sun::star::uno::RuntimeException );
-    virtual void SAL_CALL           setDescription( const ::rtl::OUString& aDescription ) throw ( ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL			setDisplayDirectory( const ::rtl::OUString& aDirectory );
+	virtual ::rtl::OUString SAL_CALL	getDisplayDirectory();
+    virtual ::rtl::OUString SAL_CALL	getDirectory();
+    virtual void SAL_CALL           setDescription( const ::rtl::OUString& aDescription );
 
 	//------------------------------------------------------------------------------------
 	// XExecutableDialog functions
 	//------------------------------------------------------------------------------------
-	virtual void SAL_CALL setTitle( const ::rtl::OUString& _rTitle ) throw (::com::sun::star::uno::RuntimeException);
-	virtual sal_Int16 SAL_CALL execute(  ) throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL setTitle( const ::rtl::OUString& _rTitle );
+	virtual sal_Int16 SAL_CALL execute(  );
 
     //------------------------------------------------------------------------------------
     // XAsynchronousExecutableDialog functions
     //------------------------------------------------------------------------------------
-    virtual void SAL_CALL       setDialogTitle( const ::rtl::OUString& _rTitle ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL       startExecuteModal( const ::com::sun::star::uno::Reference< ::com::sun::star::ui::dialogs::XDialogClosedListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL       setDialogTitle( const ::rtl::OUString& _rTitle );
+    virtual void SAL_CALL       startExecuteModal( const ::com::sun::star::uno::Reference< ::com::sun::star::ui::dialogs::XDialogClosedListener >& xListener );
 
 	//------------------------------------------------------------------------------------
 	// XServiceInfo functions
 	//------------------------------------------------------------------------------------
 
 	/* XServiceInfo */
-    virtual ::rtl::OUString SAL_CALL	getImplementationName() throw( ::com::sun::star::uno::RuntimeException );
-    virtual sal_Bool SAL_CALL		supportsService( const ::rtl::OUString& sServiceName ) throw( ::com::sun::star::uno::RuntimeException );
+    virtual ::rtl::OUString SAL_CALL	getImplementationName();
+    virtual sal_Bool SAL_CALL		supportsService( const ::rtl::OUString& sServiceName );
     virtual com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL
-									getSupportedServiceNames() throw( ::com::sun::star::uno::RuntimeException );
+									getSupportedServiceNames();
 
 	/* Helper for XServiceInfo */
 	static com::sun::star::uno::Sequence< ::rtl::OUString > impl_getStaticSupportedServiceNames();
@@ -104,8 +104,7 @@ public:
 
 	/* Helper for registry */
 	static ::com::sun::star::uno::Reference< com::sun::star::uno::XInterface > SAL_CALL impl_createInstance (
-		const ::com::sun::star::uno::Reference< com::sun::star::uno::XComponentContext >& rxContext )
-		throw( com::sun::star::uno::Exception );
+		const ::com::sun::star::uno::Reference< com::sun::star::uno::XComponentContext >& rxContext );
 
 protected:
 	//------------------------------------------------------------------------------------

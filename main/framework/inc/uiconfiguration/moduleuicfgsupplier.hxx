@@ -81,16 +81,12 @@ namespace framework
             virtual ~ModuleUIConfigurationManagerSupplier();
 
             // XComponent
-            virtual void SAL_CALL dispose()
-                throw (::com::sun::star::uno::RuntimeException);
-            virtual void SAL_CALL addEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& xListener )
-                throw (::com::sun::star::uno::RuntimeException);
-            virtual void SAL_CALL removeEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& aListener )
-                throw (::com::sun::star::uno::RuntimeException);
+            virtual void SAL_CALL dispose();
+            virtual void SAL_CALL addEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& xListener );
+            virtual void SAL_CALL removeEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& aListener );
 
             // XModuleUIConfigurationManagerSupplier
-            virtual ::com::sun::star::uno::Reference< ::com::sun::star::ui::XUIConfigurationManager > SAL_CALL getUIConfigurationManager( const ::rtl::OUString& ModuleIdentifier )
-                throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::uno::RuntimeException);
+            virtual ::com::sun::star::uno::Reference< ::com::sun::star::ui::XUIConfigurationManager > SAL_CALL getUIConfigurationManager( const ::rtl::OUString& ModuleIdentifier );
 
         private:
             typedef ::std::hash_map< rtl::OUString, com::sun::star::uno::Reference< ::com::sun::star::ui::XUIConfigurationManager >, rtl::OUStringHash, ::std::equal_to< rtl::OUString > > ModuleToModuleCfgMgr;

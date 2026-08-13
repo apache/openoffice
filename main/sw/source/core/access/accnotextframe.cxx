@@ -194,7 +194,6 @@ void SwAccessibleNoTextFrame::Dispose( sal_Bool bRecursive )
 
 // --> OD 2009-07-14 #i73249#
 OUString SAL_CALL SwAccessibleNoTextFrame::getAccessibleName (void)
-        throw (uno::RuntimeException)
 {
     vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -210,7 +209,6 @@ OUString SAL_CALL SwAccessibleNoTextFrame::getAccessibleName (void)
 // <--
 
 OUString SAL_CALL SwAccessibleNoTextFrame::getAccessibleDescription (void)
-        throw (uno::RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -230,7 +228,6 @@ OUString SAL_CALL SwAccessibleNoTextFrame::getAccessibleDescription (void)
 //
 
 uno::Any SAL_CALL SwAccessibleNoTextFrame::queryInterface( const uno::Type& aType )
-    throw (uno::RuntimeException)
 {
     if( aType ==
         ::getCppuType( static_cast<uno::Reference<XAccessibleImage>*>( NULL ) ) )
@@ -253,7 +250,7 @@ uno::Any SAL_CALL SwAccessibleNoTextFrame::queryInterface( const uno::Type& aTyp
 
 
 //====== XTypeProvider ====================================================
-uno::Sequence< uno::Type > SAL_CALL SwAccessibleNoTextFrame::getTypes() throw(uno::RuntimeException)
+uno::Sequence< uno::Type > SAL_CALL SwAccessibleNoTextFrame::getTypes()
 {
 	uno::Sequence< uno::Type > aTypes( SwAccessibleFrameBase::getTypes() );
 
@@ -276,67 +273,63 @@ uno::Sequence< uno::Type > SAL_CALL SwAccessibleNoTextFrame::getTypes() throw(un
 // methods. So we just delegate to those.
 
 OUString SAL_CALL SwAccessibleNoTextFrame::getAccessibleImageDescription()
-    throw ( uno::RuntimeException )
 {
     return getAccessibleDescription();
 }
 
 sal_Int32 SAL_CALL SwAccessibleNoTextFrame::getAccessibleImageHeight(  )
-    throw ( uno::RuntimeException )
 {
     return getSize().Height;
 }
 
 sal_Int32 SAL_CALL SwAccessibleNoTextFrame::getAccessibleImageWidth(  )
-    throw ( uno::RuntimeException )
 {
     return getSize().Width;
 }
 //=====  XAccesibleText  ==================================================
-sal_Int32 SAL_CALL SwAccessibleNoTextFrame::getCaretPosition(  ) throw (::com::sun::star::uno::RuntimeException){return 0;}
-sal_Bool SAL_CALL SwAccessibleNoTextFrame::setCaretPosition( sal_Int32 ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException){return 0;}
-sal_Unicode SAL_CALL SwAccessibleNoTextFrame::getCharacter( sal_Int32 ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException){return 0;}
-::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue > SAL_CALL SwAccessibleNoTextFrame::getCharacterAttributes( sal_Int32 , const ::com::sun::star::uno::Sequence< ::rtl::OUString >& ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException)
+sal_Int32 SAL_CALL SwAccessibleNoTextFrame::getCaretPosition(  ){return 0;}
+sal_Bool SAL_CALL SwAccessibleNoTextFrame::setCaretPosition( sal_Int32 ){return 0;}
+sal_Unicode SAL_CALL SwAccessibleNoTextFrame::getCharacter( sal_Int32 ){return 0;}
+::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue > SAL_CALL SwAccessibleNoTextFrame::getCharacterAttributes( sal_Int32 , const ::com::sun::star::uno::Sequence< ::rtl::OUString >& )
 {
 	uno::Sequence<beans::PropertyValue> aValues(0);
 	return aValues;
 }
-::com::sun::star::awt::Rectangle SAL_CALL SwAccessibleNoTextFrame::getCharacterBounds( sal_Int32 ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::Rectangle SAL_CALL SwAccessibleNoTextFrame::getCharacterBounds( sal_Int32 )
 {
 	return com::sun::star::awt::Rectangle(0, 0, 0, 0 );
 }
-sal_Int32 SAL_CALL SwAccessibleNoTextFrame::getCharacterCount(  ) throw (::com::sun::star::uno::RuntimeException){return 0;}
-sal_Int32 SAL_CALL SwAccessibleNoTextFrame::getIndexAtPoint( const ::com::sun::star::awt::Point& ) throw (::com::sun::star::uno::RuntimeException){return 0;}
-::rtl::OUString SAL_CALL SwAccessibleNoTextFrame::getSelectedText(  ) throw (::com::sun::star::uno::RuntimeException){return OUString();}
-sal_Int32 SAL_CALL SwAccessibleNoTextFrame::getSelectionStart(  ) throw (::com::sun::star::uno::RuntimeException){return 0;}
-sal_Int32 SAL_CALL SwAccessibleNoTextFrame::getSelectionEnd(  ) throw (::com::sun::star::uno::RuntimeException){return 0;}
-sal_Bool SAL_CALL SwAccessibleNoTextFrame::setSelection( sal_Int32 , sal_Int32 ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException){return sal_True;}
-::rtl::OUString SAL_CALL SwAccessibleNoTextFrame::getText(  ) throw (::com::sun::star::uno::RuntimeException){return OUString();}
-::rtl::OUString SAL_CALL SwAccessibleNoTextFrame::getTextRange( sal_Int32 , sal_Int32 ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException){return OUString();}
-::com::sun::star::accessibility::TextSegment SAL_CALL SwAccessibleNoTextFrame::getTextAtIndex( sal_Int32 , sal_Int16 ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException)
+sal_Int32 SAL_CALL SwAccessibleNoTextFrame::getCharacterCount(  ){return 0;}
+sal_Int32 SAL_CALL SwAccessibleNoTextFrame::getIndexAtPoint( const ::com::sun::star::awt::Point& ){return 0;}
+::rtl::OUString SAL_CALL SwAccessibleNoTextFrame::getSelectedText(  ){return OUString();}
+sal_Int32 SAL_CALL SwAccessibleNoTextFrame::getSelectionStart(  ){return 0;}
+sal_Int32 SAL_CALL SwAccessibleNoTextFrame::getSelectionEnd(  ){return 0;}
+sal_Bool SAL_CALL SwAccessibleNoTextFrame::setSelection( sal_Int32 , sal_Int32 ){return sal_True;}
+::rtl::OUString SAL_CALL SwAccessibleNoTextFrame::getText(  ){return OUString();}
+::rtl::OUString SAL_CALL SwAccessibleNoTextFrame::getTextRange( sal_Int32 , sal_Int32 ){return OUString();}
+::com::sun::star::accessibility::TextSegment SAL_CALL SwAccessibleNoTextFrame::getTextAtIndex( sal_Int32 , sal_Int16 )
 {
 	::com::sun::star::accessibility::TextSegment aResult;
 	return aResult;
 }
-::com::sun::star::accessibility::TextSegment SAL_CALL SwAccessibleNoTextFrame::getTextBeforeIndex( sal_Int32, sal_Int16 ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException)
+::com::sun::star::accessibility::TextSegment SAL_CALL SwAccessibleNoTextFrame::getTextBeforeIndex( sal_Int32, sal_Int16 )
 {
 	::com::sun::star::accessibility::TextSegment aResult;
 	return aResult;
 }
-::com::sun::star::accessibility::TextSegment SAL_CALL SwAccessibleNoTextFrame::getTextBehindIndex( sal_Int32 , sal_Int16 ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException)
+::com::sun::star::accessibility::TextSegment SAL_CALL SwAccessibleNoTextFrame::getTextBehindIndex( sal_Int32 , sal_Int16 )
 {
 	::com::sun::star::accessibility::TextSegment aResult;
 	return aResult;
 }
 
-sal_Bool SAL_CALL SwAccessibleNoTextFrame::copyText( sal_Int32, sal_Int32 ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException){return sal_True;}
+sal_Bool SAL_CALL SwAccessibleNoTextFrame::copyText( sal_Int32, sal_Int32 ){return sal_True;}
 
 
 //
 //  XAccessibleHyperText
 //
 sal_Int32 SAL_CALL SwAccessibleNoTextFrame::getHyperLinkCount()
-throw (uno::RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -353,7 +346,6 @@ throw (uno::RuntimeException)
 
 uno::Reference< XAccessibleHyperlink > SAL_CALL
 	SwAccessibleNoTextFrame::getHyperLink( sal_Int32 nLinkIndex )
-	throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 	CHECK_FOR_DEFUNC( XAccessibleHypertext );
@@ -379,7 +371,6 @@ uno::Reference< XAccessibleHyperlink > SAL_CALL
 }
 
 sal_Int32 SAL_CALL SwAccessibleNoTextFrame::getHyperLinkIndex( sal_Int32 )
-	throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 	CHECK_FOR_DEFUNC( XAccessibleHypertext );
@@ -398,7 +389,6 @@ AccessibleRelation SwAccessibleNoTextFrame::makeRelation( sal_Int16 nType, const
 
 
 uno::Reference<XAccessibleRelationSet> SAL_CALL SwAccessibleNoTextFrame::getAccessibleRelationSet( )
-	throw ( uno::RuntimeException )
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 	CHECK_FOR_DEFUNC( XAccessibleContext );

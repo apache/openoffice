@@ -75,18 +75,14 @@ public:
     static ::rtl::OUString getImplementationName_static (void);
     static css::uno::Sequence< ::rtl::OUString > getSupportedServiceNames_static (void);
     static css::uno::Reference<css::uno::XInterface> Create(
-        const css::uno::Reference<css::uno::XComponentContext>& rxContext)
-        SAL_THROW((css::uno::Exception));
+        const css::uno::Reference<css::uno::XComponentContext>& rxContext);
 
     virtual void SAL_CALL disposing (void);
 
 	// XJob
 
     virtual css::uno::Any SAL_CALL execute(
-        const css::uno::Sequence<css::beans::NamedValue >& Arguments)
-        throw (css::lang::IllegalArgumentException,
-            css::uno::Exception,
-            css::uno::RuntimeException);
+        const css::uno::Sequence<css::beans::NamedValue >& Arguments);
 
 private:
     PresenterScreenJob (const css::uno::Reference<css::uno::XComponentContext>& rxContext);
@@ -135,7 +131,7 @@ public:
 
     // XEventListener
 
-    virtual void SAL_CALL disposing ( const css::lang::EventObject& rEvent) throw (css::uno::RuntimeException);
+    virtual void SAL_CALL disposing ( const css::lang::EventObject& rEvent);
 
 private:
 	css::uno::Reference<css::frame::XModel2 > mxModel;

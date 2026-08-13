@@ -103,7 +103,7 @@ namespace pcr
     }
 
 	//--------------------------------------------------------------------
-    Reference< XDataTypeRepository > XSDValidationHelper::getDataTypeRepository() const SAL_THROW((Exception))
+    Reference< XDataTypeRepository > XSDValidationHelper::getDataTypeRepository() const
     {
         Reference< XDataTypeRepository > xRepository;
 
@@ -115,7 +115,7 @@ namespace pcr
     }
 
 	//--------------------------------------------------------------------
-    Reference< XDataTypeRepository > XSDValidationHelper::getDataTypeRepository( const ::rtl::OUString& _rModelName ) const SAL_THROW((Exception))
+    Reference< XDataTypeRepository > XSDValidationHelper::getDataTypeRepository( const ::rtl::OUString& _rModelName ) const
     {
         Reference< XDataTypeRepository > xRepository;
 
@@ -127,7 +127,7 @@ namespace pcr
     }
 
 	//--------------------------------------------------------------------
-    Reference< XDataType > XSDValidationHelper::getDataType( const ::rtl::OUString& _rName ) const SAL_THROW((Exception))
+    Reference< XDataType > XSDValidationHelper::getDataType( const ::rtl::OUString& _rName ) const
     {
         Reference< XDataType > xDataType;
 

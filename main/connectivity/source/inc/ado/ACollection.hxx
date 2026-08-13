@@ -74,11 +74,11 @@ namespace connectivity
 				m_pCollection->Release();
 			}
 
-			virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw (staruno::RuntimeException)
+			virtual ::rtl::OUString SAL_CALL getImplementationName(  )
 			{
 				return ::rtl::OUString::createFromAscii("com.sun.star.sdbcx.ACollection");
 			}
-			virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& _rServiceName ) throw(staruno::RuntimeException)
+			virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& _rServiceName )
 			{
 				staruno::Sequence< ::rtl::OUString > aSupported(getSupportedServiceNames());
 				const ::rtl::OUString* pSupported = aSupported.getConstArray();
@@ -88,7 +88,7 @@ namespace connectivity
 
 				return sal_False;
 			}
-			virtual staruno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw(staruno::RuntimeException)
+			virtual staruno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  )
 			{
 				staruno::Sequence< ::rtl::OUString > aSupported(1);
 				aSupported[0] = ::rtl::OUString::createFromAscii("com.sun.star.sdbcx.Container");
@@ -106,19 +106,19 @@ namespace connectivity
 			}
 
 		// ::com::sun::star::container::XElementAccess
-			virtual staruno::Type SAL_CALL getElementType(  ) throw(staruno::RuntimeException)
+			virtual staruno::Type SAL_CALL getElementType(  )
 			{
 				return::getCppuType(static_cast< staruno::Reference< starbeans::XPropertySet>*>(NULL));
 			}
 
-			virtual sal_Bool SAL_CALL hasElements(  ) throw(staruno::RuntimeException)
+			virtual sal_Bool SAL_CALL hasElements(  )
 			{
 				::osl::MutexGuard aGuard(m_rMutex);
 				return getCount() > 0;
 			}
 
 		// starcontainer::XIndexAccess
-			virtual sal_Int32 SAL_CALL getCount(  ) throw(staruno::RuntimeException)
+			virtual sal_Int32 SAL_CALL getCount(  )
 			{
 				::osl::MutexGuard aGuard(m_rMutex);
 				sal_Int32 nCnt = 0;
@@ -126,7 +126,7 @@ namespace connectivity
 				return nCnt;
 			}
 
-			virtual staruno::Any SAL_CALL getByIndex( sal_Int32 Index ) throw(starlang::IndexOutOfBoundsException, starlang::WrappedTargetException, staruno::RuntimeException)
+			virtual staruno::Any SAL_CALL getByIndex( sal_Int32 Index )
 			{
 				::osl::MutexGuard aGuard(m_rMutex);
 				if (Index < 0 || Index >= getCount())
@@ -145,7 +145,7 @@ namespace connectivity
 
 
 		// starcontainer::XNameAccess
-			virtual staruno::Any SAL_CALL getByName( const ::rtl::OUString& aName ) throw(starcontainer::NoSuchElementException, starlang::WrappedTargetException, staruno::RuntimeException)
+			virtual staruno::Any SAL_CALL getByName( const ::rtl::OUString& aName )
 			{
 				::osl::MutexGuard aGuard(m_rMutex);
 
@@ -160,7 +160,7 @@ namespace connectivity
 
 				return staruno::makeAny( staruno::Reference< starbeans::XPropertySet >(pIndex));
 			}
-			virtual staruno::Sequence< ::rtl::OUString > SAL_CALL getElementNames(  ) throw(staruno::RuntimeException)
+			virtual staruno::Sequence< ::rtl::OUString > SAL_CALL getElementNames(  )
 			{
 				::osl::MutexGuard aGuard(m_rMutex);
 				sal_Int32 nLen = getCount();
@@ -182,7 +182,7 @@ namespace connectivity
 				}
 				return aNameList;
 			}
-			virtual sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName ) throw(staruno::RuntimeException)
+			virtual sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName )
 			{
 				::osl::MutexGuard aGuard(m_rMutex);
 				SimT* pCol = NULL;

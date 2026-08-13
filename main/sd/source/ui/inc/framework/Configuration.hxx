@@ -95,33 +95,28 @@ public:
 
     virtual void SAL_CALL addResource (
         const ::com::sun::star::uno::Reference<com::sun::star::drawing::framework::XResourceId>&
-            rxResourceId)
-        throw (::com::sun::star::uno::RuntimeException);
+            rxResourceId);
 
     virtual void SAL_CALL removeResource(
         const ::com::sun::star::uno::Reference<com::sun::star::drawing::framework::XResourceId>&
-            rxResourceId)
-        throw (::com::sun::star::uno::RuntimeException);
+            rxResourceId);
 
     virtual ::com::sun::star::uno::Sequence< com::sun::star::uno::Reference<
         com::sun::star::drawing::framework::XResourceId> > SAL_CALL getResources (
         const ::com::sun::star::uno::Reference<
             ::com::sun::star::drawing::framework::XResourceId>& rxAnchorId,
         const ::rtl::OUString& rsResourceURLPrefix,
-        ::com::sun::star::drawing::framework::AnchorBindingMode eMode)
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::drawing::framework::AnchorBindingMode eMode);
 
     virtual sal_Bool SAL_CALL hasResource (
         const ::com::sun::star::uno::Reference<com::sun::star::drawing::framework::XResourceId>&
-            rxResourceId)
-        throw (::com::sun::star::uno::RuntimeException);
+            rxResourceId);
 
 
     // XCloneable
 
     virtual ::com::sun::star::uno::Reference<com::sun::star::util::XCloneable>
-        SAL_CALL createClone (void)
-        throw (::com::sun::star::uno::RuntimeException);
+        SAL_CALL createClone (void);
 
 
     // XNamed
@@ -129,14 +124,12 @@ public:
     /** Return a human readable string representation.  This is used for
         debugging purposes.
     */
-    virtual ::rtl::OUString SAL_CALL getName (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getName (void);
 
     /** This call is ignored because the XNamed interface is (mis)used to
         give access to a human readable name for debugging purposes.
     */
-    virtual void SAL_CALL setName (const ::rtl::OUString& rName)
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL setName (const ::rtl::OUString& rName);
 
 private:
     class ResourceContainer;
@@ -183,8 +176,7 @@ private:
     /** When the called object has already been disposed this method throws
         an exception and does not return.
     */
-    void ThrowIfDisposed (void) const
-        throw (::com::sun::star::lang::DisposedException);
+    void ThrowIfDisposed (void) const;
 };
 
 

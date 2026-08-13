@@ -157,7 +157,6 @@ BaseContent::release( void )
 
 Any SAL_CALL
 BaseContent::queryInterface( const Type& rType )
-	throw( RuntimeException )
 {
     Any aRet = cppu::queryInterface( rType,
                                      SAL_STATIC_CAST( lang::XComponent*, this ),
@@ -182,7 +181,6 @@ BaseContent::queryInterface( const Type& rType )
 
 void SAL_CALL
 BaseContent::addEventListener( const Reference< lang::XEventListener >& Listener )
-	throw( RuntimeException )
 {
 	osl::MutexGuard aGuard( m_aMutex );
 
@@ -196,7 +194,6 @@ BaseContent::addEventListener( const Reference< lang::XEventListener >& Listener
 
 void SAL_CALL
 BaseContent::removeEventListener( const Reference< lang::XEventListener >& Listener )
-    throw( RuntimeException )
 {
     osl::MutexGuard aGuard( m_aMutex );
 
@@ -207,7 +204,6 @@ BaseContent::removeEventListener( const Reference< lang::XEventListener >& Liste
 
 void SAL_CALL
 BaseContent::dispose()
-    throw( RuntimeException )
 {
     lang::EventObject aEvt;
     cppu::OInterfaceContainerHelper* pDisposeEventListeners;
@@ -260,7 +256,6 @@ BaseContent::dispose()
 
 rtl::OUString SAL_CALL
 BaseContent::getImplementationName()
-	throw( RuntimeException)
 {
 	return rtl::OUString::createFromAscii( "com.sun.star.comp.ucb.FileContent" );
 }
@@ -269,7 +264,6 @@ BaseContent::getImplementationName()
 
 sal_Bool SAL_CALL
 BaseContent::supportsService( const rtl::OUString& ServiceName )
-	throw( RuntimeException)
 {
 	if( ServiceName.compareToAscii( "com.sun.star.ucb.FileContent" ) == 0 )
 		return true;
@@ -281,7 +275,6 @@ BaseContent::supportsService( const rtl::OUString& ServiceName )
 
 Sequence< rtl::OUString > SAL_CALL
 BaseContent::getSupportedServiceNames()
-	throw( RuntimeException )
 {
 	Sequence< rtl::OUString > ret( 1 );
 	ret[0] = rtl::OUString::createFromAscii( "com.sun.star.ucb.FileContent" );
@@ -313,7 +306,6 @@ XTYPEPROVIDER_IMPL_10( BaseContent,
 
 sal_Int32 SAL_CALL
 BaseContent::createCommandIdentifier( void )
-	throw( RuntimeException )
 {
 	return m_pMyShell->getCommandId();
 }
@@ -321,7 +313,6 @@ BaseContent::createCommandIdentifier( void )
 
 void SAL_CALL
 BaseContent::abort( sal_Int32 CommandId )
-	throw( RuntimeException )
 {
 	m_pMyShell->abort( CommandId );
 }
@@ -331,9 +322,6 @@ Any SAL_CALL
 BaseContent::execute( const Command& aCommand,
                       sal_Int32 CommandId,
                       const Reference< XCommandEnvironment >& Environment )
-    throw( Exception,
-           CommandAbortedException,
-           RuntimeException )
 {
     if( ! CommandId )
         // A Command with commandid zero cannot be aborted
@@ -451,7 +439,6 @@ void SAL_CALL
 BaseContent::addPropertiesChangeListener(
     const Sequence< rtl::OUString >& PropertyNames,
     const Reference< beans::XPropertiesChangeListener >& Listener )
-    throw( RuntimeException )
 {
     if( ! Listener.is() )
         return;
@@ -477,7 +464,6 @@ BaseContent::addPropertiesChangeListener(
 void SAL_CALL
 BaseContent::removePropertiesChangeListener( const Sequence< rtl::OUString >& PropertyNames,
                                              const Reference< beans::XPropertiesChangeListener >& Listener )
-    throw( RuntimeException )
 {
     if( ! Listener.is() )
         return;
@@ -500,7 +486,6 @@ BaseContent::removePropertiesChangeListener( const Sequence< rtl::OUString >& Pr
 
 Reference< ucb::XContentIdentifier > SAL_CALL
 BaseContent::getIdentifier()
-	throw( RuntimeException )
 {
 	return m_xContentIdentifier;
 }
@@ -508,7 +493,6 @@ BaseContent::getIdentifier()
 
 rtl::OUString SAL_CALL
 BaseContent::getContentType()
-    throw( RuntimeException )
 {
     if( !( m_nState & Deleted ) )
     {
@@ -561,7 +545,6 @@ BaseContent::getContentType()
 void SAL_CALL
 BaseContent::addContentEventListener(
 	const Reference< XContentEventListener >& Listener )
-	throw( RuntimeException )
 {
 	osl::MutexGuard aGuard( m_aMutex );
 
@@ -577,7 +560,6 @@ BaseContent::addContentEventListener(
 void SAL_CALL
 BaseContent::removeContentEventListener(
 	const Reference< XContentEventListener >& Listener )
-	throw( RuntimeException )
 {
 	osl::MutexGuard aGuard( m_aMutex );
 
@@ -597,10 +579,6 @@ BaseContent::addProperty(
     const rtl::OUString& Name,
     sal_Int16 Attributes,
     const Any& DefaultValue )
-    throw( beans::PropertyExistException,
-           beans::IllegalTypeException,
-           lang::IllegalArgumentException,
-           RuntimeException)
 {
     if( ( m_nState & JustInserted ) || ( m_nState & Deleted ) || Name == rtl::OUString() )
     {
@@ -614,9 +592,6 @@ BaseContent::addProperty(
 void SAL_CALL
 BaseContent::removeProperty(
     const rtl::OUString& Name )
-    throw( beans::UnknownPropertyException,
-           beans::NotRemoveableException,
-           RuntimeException)
 {
 
     if( m_nState & Deleted )
@@ -632,7 +607,6 @@ BaseContent::removeProperty(
 Sequence< ContentInfo > SAL_CALL
 BaseContent::queryCreatableContentsInfo(
     void )
-    throw( RuntimeException )
 {
     return m_pMyShell->queryCreatableContentsInfo();
 }
@@ -641,7 +615,6 @@ BaseContent::queryCreatableContentsInfo(
 Reference< XContent > SAL_CALL
 BaseContent::createNewContent(
     const ContentInfo& Info )
-    throw( RuntimeException )
 {
     // Check type.
     if ( !Info.Type.getLength() )
@@ -709,7 +682,6 @@ BaseContent::createNewContent(
 void SAL_CALL
 BaseContent::addPropertySetInfoChangeListener(
     const Reference< beans::XPropertySetInfoChangeListener >& Listener )
-    throw( RuntimeException )
 {
     osl::MutexGuard aGuard( m_aMutex );
     if( ! m_pPropertySetInfoChangeListeners )
@@ -722,7 +694,6 @@ BaseContent::addPropertySetInfoChangeListener(
 void SAL_CALL
 BaseContent::removePropertySetInfoChangeListener(
     const Reference< beans::XPropertySetInfoChangeListener >& Listener )
-    throw( RuntimeException )
 {
     osl::MutexGuard aGuard( m_aMutex );
 
@@ -738,7 +709,6 @@ BaseContent::removePropertySetInfoChangeListener(
 Reference< XInterface > SAL_CALL
 BaseContent::getParent(
     void )
-    throw( RuntimeException )
 {
     rtl::OUString ParentUnq = getParentName( m_aUncPath );
     rtl::OUString ParentUrl;
@@ -766,8 +736,6 @@ BaseContent::getParent(
 void SAL_CALL
 BaseContent::setParent(
     const Reference< XInterface >& )
-    throw( lang::NoSupportException,
-           RuntimeException)
 {
     throw lang::NoSupportException( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( OSL_LOG_PREFIX ) ), uno::Reference< uno::XInterface >() );
 }
@@ -780,7 +748,6 @@ BaseContent::setParent(
 
 Reference< XCommandInfo > SAL_CALL
 BaseContent::getCommandInfo()
-    throw( RuntimeException )
 {
     if( m_nState & Deleted )
         return Reference< XCommandInfo >();
@@ -792,7 +759,6 @@ BaseContent::getCommandInfo()
 Reference< beans::XPropertySetInfo > SAL_CALL
 BaseContent::getPropertySetInfo(
     sal_Int32 )
-    throw( RuntimeException )
 {
     if( m_nState & Deleted )
         return Reference< beans::XPropertySetInfo >();
@@ -807,7 +773,6 @@ Reference< sdbc::XRow > SAL_CALL
 BaseContent::getPropertyValues(
     sal_Int32 nMyCommandIdentifier,
     const Sequence< beans::Property >& PropertySet )
-    throw( RuntimeException )
 {
     sal_Int32 nProps = PropertySet.getLength();
     if ( !nProps )

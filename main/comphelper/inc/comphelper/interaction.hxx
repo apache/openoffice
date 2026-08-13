@@ -77,12 +77,12 @@ namespace comphelper
 		OInteraction() { }
 
 	// XInteractionContinuation
-	    virtual void SAL_CALL select(  ) throw(::com::sun::star::uno::RuntimeException);
+	    virtual void SAL_CALL select(  );
 	};
 
 	//.........................................................................
 	template <class INTERACTION>
-	void SAL_CALL OInteraction< INTERACTION >::select(  ) throw(::com::sun::star::uno::RuntimeException)
+	void SAL_CALL OInteraction< INTERACTION >::select(  )
 	{
 		implSelected();
 	}
@@ -123,8 +123,8 @@ namespace comphelper
         }
 
         // XInteractionPassword
-        virtual void SAL_CALL setPassword( const ::rtl::OUString& _Password ) throw (::com::sun::star::uno::RuntimeException);
-        virtual ::rtl::OUString SAL_CALL getPassword(  ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL setPassword( const ::rtl::OUString& _Password );
+        virtual ::rtl::OUString SAL_CALL getPassword(  );
 
     private:
         ::rtl::OUString m_sPassword;
@@ -154,8 +154,8 @@ namespace comphelper
 		void clearContinuations();
 
 	// XInteractionRequest
-		virtual ::com::sun::star::uno::Any SAL_CALL getRequest(  ) throw(::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionContinuation > > SAL_CALL getContinuations(  ) throw(::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Any SAL_CALL getRequest(  );
+		virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionContinuation > > SAL_CALL getContinuations(  );
 	};
 //.........................................................................
 }	// namespace comphelper

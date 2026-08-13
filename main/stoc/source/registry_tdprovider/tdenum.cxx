@@ -42,13 +42,11 @@ EnumTypeDescriptionImpl::~EnumTypeDescriptionImpl()
 // XTypeDescription
 //__________________________________________________________________________________________________
 TypeClass EnumTypeDescriptionImpl::getTypeClass()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return TypeClass_ENUM;
 }
 //__________________________________________________________________________________________________
 OUString EnumTypeDescriptionImpl::getName()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return _aName;
 }
@@ -56,13 +54,11 @@ OUString EnumTypeDescriptionImpl::getName()
 // XEnumTypeDescription
 //__________________________________________________________________________________________________
 sal_Int32 EnumTypeDescriptionImpl::getDefaultEnumValue()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return _nDefaultValue;
 }
 //__________________________________________________________________________________________________
 Sequence< OUString > EnumTypeDescriptionImpl::getEnumNames()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	if (! _pEnumNames)
 	{
@@ -94,7 +90,6 @@ Sequence< OUString > EnumTypeDescriptionImpl::getEnumNames()
 }
 //__________________________________________________________________________________________________
 Sequence< sal_Int32 > EnumTypeDescriptionImpl::getEnumValues()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	if (! _pEnumValues)
 	{

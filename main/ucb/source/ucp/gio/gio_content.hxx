@@ -91,18 +91,15 @@ private:
     bool doSetFileInfo ( GFileInfo *pNewInfo );
 
     com::sun::star::uno::Any open(const com::sun::star::ucb::OpenCommandArgument2 & rArg,
-        const com::sun::star::uno::Reference< com::sun::star::ucb::XCommandEnvironment > & xEnv )
-            throw( com::sun::star::uno::Exception );
+        const com::sun::star::uno::Reference< com::sun::star::ucb::XCommandEnvironment > & xEnv );
 
     void transfer( const com::sun::star::ucb::TransferInfo& rTransferInfo,
-        const com::sun::star::uno::Reference< com::sun::star::ucb::XCommandEnvironment > & xEnv )
-            throw( com::sun::star::uno::Exception );
+        const com::sun::star::uno::Reference< com::sun::star::ucb::XCommandEnvironment > & xEnv );
 
     void insert( const com::sun::star::uno::Reference< com::sun::star::io::XInputStream > & xInputStream,
-        sal_Bool bReplaceExisting, const com::sun::star::uno::Reference< com::sun::star::ucb::XCommandEnvironment >& xEnv )
-            throw( com::sun::star::uno::Exception );
+        sal_Bool bReplaceExisting, const com::sun::star::uno::Reference< com::sun::star::ucb::XCommandEnvironment >& xEnv );
 
-    void destroy( sal_Bool bDeletePhysical ) throw( com::sun::star::uno::Exception );
+    void destroy( sal_Bool bDeletePhysical );
 
     void copyData( com::sun::star::uno::Reference< com::sun::star::io::XInputStream > xIn,
         com::sun::star::uno::Reference< com::sun::star::io::XOutputStream > xOut );
@@ -117,22 +114,19 @@ private:
         const com::sun::star::uno::Reference< com::sun::star::ucb::XCommandEnvironment >& xEnv );
 
     com::sun::star::uno::Reference< com::sun::star::io::XInputStream >
-        createInputStream(const com::sun::star::uno::Reference< com::sun::star::ucb::XCommandEnvironment >& xEnv )
-            throw( com::sun::star::uno::Exception );
+        createInputStream(const com::sun::star::uno::Reference< com::sun::star::ucb::XCommandEnvironment >& xEnv );
 
     sal_Bool exchangeIdentity(const com::sun::star::uno::Reference< com::sun::star::ucb::XContentIdentifier >&  xNewId);
 
 public:
     Content( const com::sun::star::uno::Reference<
         com::sun::star::lang::XMultiServiceFactory >& rxSMgr, ContentProvider *pProvider,
-        const com::sun::star::uno::Reference< com::sun::star::ucb::XContentIdentifier >& Identifier)
-            throw ( com::sun::star::ucb::ContentCreationException );
+        const com::sun::star::uno::Reference< com::sun::star::ucb::XContentIdentifier >& Identifier);
 
     Content( const com::sun::star::uno::Reference<
         com::sun::star::lang::XMultiServiceFactory >& rxSMgr, ContentProvider *pProvider,
         const com::sun::star::uno::Reference< com::sun::star::ucb::XContentIdentifier >& Identifier,
-        sal_Bool bIsFolder)
-            throw ( com::sun::star::ucb::ContentCreationException );
+        sal_Bool bIsFolder);
 
     virtual ~Content();
 
@@ -156,37 +150,29 @@ public:
     XTYPEPROVIDER_DECL()
 
     virtual ::rtl::OUString SAL_CALL
-    getImplementationName()
-            throw( com::sun::star::uno::RuntimeException );
+    getImplementationName();
 
     virtual com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL
-    getSupportedServiceNames()
-            throw( com::sun::star::uno::RuntimeException );
+    getSupportedServiceNames();
 
     virtual rtl::OUString SAL_CALL
-    getContentType()
-            throw( com::sun::star::uno::RuntimeException );
+    getContentType();
 
     virtual com::sun::star::uno::Any SAL_CALL
         execute( const com::sun::star::ucb::Command& aCommand,
         sal_Int32 CommandId,
-        const com::sun::star::uno::Reference< com::sun::star::ucb::XCommandEnvironment >& Environment )
-            throw( com::sun::star::uno::Exception, com::sun::star::ucb::CommandAbortedException, com::sun::star::uno::RuntimeException );
+        const com::sun::star::uno::Reference< com::sun::star::ucb::XCommandEnvironment >& Environment );
 
-    virtual void SAL_CALL abort( sal_Int32 CommandId )
-            throw( com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL abort( sal_Int32 CommandId );
 
     virtual com::sun::star::uno::Sequence< com::sun::star::ucb::ContentInfo >
-        SAL_CALL queryCreatableContentsInfo()
-            throw( com::sun::star::uno::RuntimeException );
+        SAL_CALL queryCreatableContentsInfo();
     virtual com::sun::star::uno::Reference< com::sun::star::ucb::XContent >
-        SAL_CALL createNewContent( const com::sun::star::ucb::ContentInfo& Info )
-            throw( com::sun::star::uno::RuntimeException );
+        SAL_CALL createNewContent( const com::sun::star::ucb::ContentInfo& Info );
 
     com::sun::star::uno::Sequence< com::sun::star::ucb::ContentInfo >
         queryCreatableContentsInfo(
-        const com::sun::star::uno::Reference< com::sun::star::ucb::XCommandEnvironment >& xEnv)
-            throw( com::sun::star::uno::RuntimeException );
+        const com::sun::star::uno::Reference< com::sun::star::ucb::XCommandEnvironment >& xEnv);
 
     GFile* getGFile();
 };

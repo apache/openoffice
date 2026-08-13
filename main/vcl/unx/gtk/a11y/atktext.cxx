@@ -151,7 +151,7 @@ adjust_boundaries( accessibility::XAccessibleText* pText,
 /*****************************************************************************/
 
 static accessibility::XAccessibleText*
-    getText( AtkText *pText ) throw (uno::RuntimeException)
+    getText( AtkText *pText )
 {
     AtkObjectWrapper *pWrap = ATK_OBJECT_WRAPPER( pText );
     if( pWrap )
@@ -172,7 +172,7 @@ static accessibility::XAccessibleText*
 /*****************************************************************************/
 
 static accessibility::XAccessibleTextMarkup*
-    getTextMarkup( AtkText *pText ) throw (uno::RuntimeException)
+    getTextMarkup( AtkText *pText )
 {
     AtkObjectWrapper *pWrap = ATK_OBJECT_WRAPPER( pText );
     if( pWrap )
@@ -201,7 +201,7 @@ static accessibility::XAccessibleTextMarkup*
 /*****************************************************************************/
 
 static accessibility::XAccessibleTextAttributes*
-    getTextAttributes( AtkText *pText ) throw (uno::RuntimeException)
+    getTextAttributes( AtkText *pText )
 {
     AtkObjectWrapper *pWrap = ATK_OBJECT_WRAPPER( pText );
     if( pWrap )
@@ -229,7 +229,7 @@ static accessibility::XAccessibleTextAttributes*
 /*****************************************************************************/
 
 static accessibility::XAccessibleMultiLineText*
-    getMultiLineText( AtkText *pText ) throw (uno::RuntimeException)
+    getMultiLineText( AtkText *pText )
 {
     AtkObjectWrapper *pWrap = ATK_OBJECT_WRAPPER( pText );
     if( pWrap )

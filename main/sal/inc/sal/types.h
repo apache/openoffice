@@ -388,6 +388,12 @@ typedef struct _sal_Sequence
 
 	SAL_THROW()			 should be used for all C++ functions, e.g. SAL_THROW( () )
 	SAL_THROW_EXTERN_C() should be used for all C functions
+
+	Only the EMPTY specification is written any more.  A specification naming
+	types has been removed from the whole tree: C++17 deletes it from the
+	language, and MSVC has never enforced one -- it only compares it against the
+	one the compiler invents for a destructor, which is where it did real damage.
+	The empty one earns its keep: MSVC implements it as __declspec(nothrow).
 */
 #ifdef __cplusplus
 #if defined(__GNUC__) || defined(__SUNPRO_CC) || defined(__sgi)
@@ -395,32 +401,6 @@ typedef struct _sal_Sequence
 #else /* MSVC, all other */
 #define SAL_THROW( exc ) throw exc
 #endif /* __GNUC__, __SUNPRO_CC */
-/*	SAL_THROW_DTOR() is SAL_THROW() for a DESTRUCTOR.  It exists because a
-	destructor is the one place where a written exception specification is
-	compared against one the COMPILER invented.
-
-	From C++11 on, a destructor with no written specification acquires an
-	implicit "throws nothing".  A class deriving from both a UNO base (whose
-	destructor says SAL_THROW( (RuntimeException) )) and an ordinary one (whose
-	destructor says nothing, and so is implicitly non-throwing) therefore gets a
-	deduced specification weaker than one of its bases -- which an override may
-	not be.  That is ill-formed wherever the two hierarchies meet: 242 classes
-	across 25 modules, none of which declares a destructor of its own.
-
-	Only three destructors in the tree are the source of it, all in cppuhelper,
-	and using this macro there removes the premise instead of annotating 242
-	consequences.  Ordinary member functions are unaffected: base and override
-	both carry the same WRITTEN specification, so they cannot disagree.
-
-	Nothing is lost.  MSVC honours throw() but has never enforced throw(X), so no
-	generated code changes; every SAL_THROW( () ) in the tree keeps its meaning;
-	and C++17 removes dynamic exception specifications from the language outright,
-	so this is where the code has to go regardless. */
-#if defined(_MSC_VER) && (_MSC_VER >= 1900)
-#define SAL_THROW_DTOR( exc )
-#else
-#define SAL_THROW_DTOR( exc ) SAL_THROW( exc )
-#endif
 #define SAL_THROW_EXTERN_C() throw ()
 #else /* ! __cplusplus */
 /* SAL_THROW() must not be used in C headers, only SAL_THROW_EXTERN_C() is defined */

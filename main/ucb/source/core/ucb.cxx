@@ -302,7 +302,6 @@ XTYPEPROVIDER_IMPL_8( UniversalContentBroker,
 
 // virtual
 void SAL_CALL UniversalContentBroker::dispose()
-	throw( com::sun::star::uno::RuntimeException )
 {
 	if ( m_pDisposeEventListeners && m_pDisposeEventListeners->getLength() )
 	{
@@ -319,7 +318,6 @@ void SAL_CALL UniversalContentBroker::dispose()
 // virtual
 void SAL_CALL UniversalContentBroker::addEventListener(
 							const Reference< XEventListener >& Listener )
-	throw( com::sun::star::uno::RuntimeException )
 {
 	if ( !m_pDisposeEventListeners )
 		m_pDisposeEventListeners = new OInterfaceContainerHelper( m_aMutex );
@@ -331,7 +329,6 @@ void SAL_CALL UniversalContentBroker::addEventListener(
 // virtual
 void SAL_CALL UniversalContentBroker::removeEventListener(
 							const Reference< XEventListener >& Listener )
-	throw( com::sun::star::uno::RuntimeException )
 {
 	if ( m_pDisposeEventListeners )
 		m_pDisposeEventListeners->removeInterface( Listener );
@@ -368,8 +365,6 @@ ONE_INSTANCE_SERVICE_FACTORY_IMPL( UniversalContentBroker );
 // virtual
 void SAL_CALL UniversalContentBroker::initialize(
 					const com::sun::star::uno::Sequence< Any >& aArguments )
-	throw( com::sun::star::uno::Exception,
-		   com::sun::star::uno::RuntimeException )
 {
 	//@@@ At the moment, there's a problem when one (non-one-instance) factory
 	// 'wraps' another (one-instance) factory, causing this method to be
@@ -396,7 +391,6 @@ UniversalContentBroker::registerContentProvider(
 							const Reference< XContentProvider >& Provider,
 							const OUString& Scheme,
 							sal_Bool ReplaceExisting )
-	throw( DuplicateProviderException, com::sun::star::uno::RuntimeException )
 {
 	osl::MutexGuard aGuard(m_aMutex);
 
@@ -442,7 +436,6 @@ UniversalContentBroker::registerContentProvider(
 void SAL_CALL UniversalContentBroker::deregisterContentProvider(
 			  				const Reference< XContentProvider >& Provider,
 							const OUString& Scheme )
-	throw( com::sun::star::uno::RuntimeException )
 {
 	osl::MutexGuard aGuard(m_aMutex);
 
@@ -480,7 +473,6 @@ void SAL_CALL UniversalContentBroker::deregisterContentProvider(
 // virtual
 com::sun::star::uno::Sequence< ContentProviderInfo > SAL_CALL
 							UniversalContentBroker::queryContentProviders()
-	throw( com::sun::star::uno::RuntimeException )
 {
 	// Return a list with information about active(!) content providers.
 
@@ -508,7 +500,6 @@ com::sun::star::uno::Sequence< ContentProviderInfo > SAL_CALL
 Reference< XContentProvider > SAL_CALL
 		UniversalContentBroker::queryContentProvider( const OUString&
                                                           Identifier )
-	throw( com::sun::star::uno::RuntimeException )
 {
 	return queryContentProvider( Identifier, sal_False );
 }
@@ -522,7 +513,6 @@ Reference< XContentProvider > SAL_CALL
 // virtual
 Reference< XContent > SAL_CALL UniversalContentBroker::queryContent(
 						const Reference< XContentIdentifier >& Identifier )
-	throw( IllegalIdentifierException, com::sun::star::uno::RuntimeException )
 {
 	//////////////////////////////////////////////////////////////////////
 	// Let the content provider for the scheme given with the content
@@ -545,7 +535,6 @@ Reference< XContent > SAL_CALL UniversalContentBroker::queryContent(
 sal_Int32 SAL_CALL UniversalContentBroker::compareContentIds(
 								const Reference< XContentIdentifier >& Id1,
 								const Reference< XContentIdentifier >& Id2 )
-	throw( com::sun::star::uno::RuntimeException )
 {
 	OUString aURI1( Id1->getContentIdentifier() );
 	OUString aURI2( Id2->getContentIdentifier() );
@@ -574,7 +563,6 @@ sal_Int32 SAL_CALL UniversalContentBroker::compareContentIds(
 Reference< XContentIdentifier > SAL_CALL
 		UniversalContentBroker::createContentIdentifier(
 											const OUString& ContentId )
-	throw( com::sun::star::uno::RuntimeException )
 {
 	//////////////////////////////////////////////////////////////////////
 	// Let the content provider for the scheme given with content
@@ -608,7 +596,6 @@ Reference< XContentIdentifier > SAL_CALL
 
 // virtual
 sal_Int32 SAL_CALL UniversalContentBroker::createCommandIdentifier()
-	throw( RuntimeException )
 {
 	osl::MutexGuard aGuard( m_aMutex );
 
@@ -622,7 +609,6 @@ Any SAL_CALL UniversalContentBroker::execute(
 						  const Command& aCommand,
 						  sal_Int32,
 						  const Reference< XCommandEnvironment >& Environment )
-	throw( Exception, CommandAbortedException, RuntimeException )
 {
 	Any aRet;
 
@@ -684,7 +670,6 @@ Any SAL_CALL UniversalContentBroker::execute(
 //=========================================================================
 // virtual
 void SAL_CALL UniversalContentBroker::abort( sal_Int32 )
-	throw( RuntimeException )
 {
 	// @@@ Not implemented ( yet).
 }
@@ -696,7 +681,6 @@ void SAL_CALL UniversalContentBroker::abort( sal_Int32 )
 //=========================================================================
 // virtual
 void SAL_CALL UniversalContentBroker::changesOccurred( const util::ChangesEvent& Event )
-        throw( uno::RuntimeException )
 {
 	sal_Int32 nCount = Event.Changes.getLength();
     if ( nCount )
@@ -743,7 +727,6 @@ void SAL_CALL UniversalContentBroker::changesOccurred( const util::ChangesEvent&
 //=========================================================================
 // virtual
 void SAL_CALL UniversalContentBroker::disposing(const lang::EventObject&)
-    throw( uno::RuntimeException )
 {
     if ( m_xNotifier.is() )
     {
@@ -773,7 +756,6 @@ Reference< XContentProvider > UniversalContentBroker::queryContentProvider(
 }
 
 bool UniversalContentBroker::configureUcb()
-	throw (uno::RuntimeException)
 {
 	rtl::OUString aKey1;
 	rtl::OUString aKey2;

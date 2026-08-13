@@ -42,8 +42,7 @@ protected:
     virtual ::com::sun::star::chart2::InterpretedData SAL_CALL interpretDataSource(
         const ::com::sun::star::uno::Reference< ::com::sun::star::chart2::data::XDataSource >& xSource,
         const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aArguments,
-        const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XDataSeries > >& aSeriesToReUse )
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XDataSeries > >& aSeriesToReUse );
 
 private:
     sal_Int32 m_nNumberOfLines;

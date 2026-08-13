@@ -421,7 +421,7 @@ namespace sdbtools
     }
 
     //--------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL ObjectNames::suggestName( ::sal_Int32 _CommandType, const ::rtl::OUString& _BaseName ) throw (IllegalArgumentException, RuntimeException)
+    ::rtl::OUString SAL_CALL ObjectNames::suggestName( ::sal_Int32 _CommandType, const ::rtl::OUString& _BaseName )
     {
         EntryGuard aGuard( *this );
 
@@ -451,7 +451,7 @@ namespace sdbtools
     }
 
     //--------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL ObjectNames::convertToSQLName( const ::rtl::OUString& Name ) throw (RuntimeException)
+    ::rtl::OUString SAL_CALL ObjectNames::convertToSQLName( const ::rtl::OUString& Name )
     {
         EntryGuard aGuard( *this );
         Reference< XDatabaseMetaData > xMeta( getConnection()->getMetaData(), UNO_QUERY_THROW );
@@ -459,7 +459,7 @@ namespace sdbtools
     }
 
     //--------------------------------------------------------------------
-    ::sal_Bool SAL_CALL ObjectNames::isNameUsed( ::sal_Int32 _CommandType, const ::rtl::OUString& _Name ) throw (IllegalArgumentException, RuntimeException)
+    ::sal_Bool SAL_CALL ObjectNames::isNameUsed( ::sal_Int32 _CommandType, const ::rtl::OUString& _Name )
     {
         EntryGuard aGuard( *this );
 
@@ -468,7 +468,7 @@ namespace sdbtools
     }
 
     //--------------------------------------------------------------------
-    ::sal_Bool SAL_CALL ObjectNames::isNameValid( ::sal_Int32 _CommandType, const ::rtl::OUString& _Name ) throw (IllegalArgumentException, RuntimeException)
+    ::sal_Bool SAL_CALL ObjectNames::isNameValid( ::sal_Int32 _CommandType, const ::rtl::OUString& _Name )
     {
         EntryGuard aGuard( *this );
 
@@ -477,7 +477,7 @@ namespace sdbtools
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL ObjectNames::checkNameForCreate( ::sal_Int32 _CommandType, const ::rtl::OUString& _Name ) throw (SQLException, RuntimeException)
+    void SAL_CALL ObjectNames::checkNameForCreate( ::sal_Int32 _CommandType, const ::rtl::OUString& _Name )
     {
         EntryGuard aGuard( *this );
 

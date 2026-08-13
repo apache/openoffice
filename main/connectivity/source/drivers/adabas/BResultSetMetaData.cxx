@@ -46,7 +46,7 @@ OAdabasResultSetMetaData::~OAdabasResultSetMetaData()
 {
 }
 // -----------------------------------------------------------------------------
-sal_Int32 SAL_CALL OAdabasResultSetMetaData::getColumnType( sal_Int32 column ) throw(SQLException, RuntimeException)
+sal_Int32 SAL_CALL OAdabasResultSetMetaData::getColumnType( sal_Int32 column )
 {
 	sal_Int32 nType = OAdabasResultSetMetaData_BASE::getColumnType( column);
 	// special handling for float values which could be doubles
@@ -56,7 +56,7 @@ sal_Int32 SAL_CALL OAdabasResultSetMetaData::getColumnType( sal_Int32 column ) t
 	return nType;
 }
 // -----------------------------------------------------------------------------
-sal_Int32 SAL_CALL OAdabasResultSetMetaData::isNullable( sal_Int32 column ) throw(SQLException, RuntimeException)
+sal_Int32 SAL_CALL OAdabasResultSetMetaData::isNullable( sal_Int32 column )
 {
 	sal_Int32 nValue = 0;
 	sal_Bool bFound = sal_False;
@@ -68,7 +68,7 @@ sal_Int32 SAL_CALL OAdabasResultSetMetaData::isNullable( sal_Int32 column ) thro
 	return nValue;
 }
 // -------------------------------------------------------------------------
-sal_Bool SAL_CALL OAdabasResultSetMetaData::isAutoIncrement( sal_Int32 column ) throw(SQLException, RuntimeException)
+sal_Bool SAL_CALL OAdabasResultSetMetaData::isAutoIncrement( sal_Int32 column )
 {
 	if ( m_aSelectColumns.isValid() && column > 0 && column <= (sal_Int32)m_aSelectColumns->get().size() )
     {

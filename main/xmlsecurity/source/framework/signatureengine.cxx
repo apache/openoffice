@@ -95,7 +95,6 @@ bool SignatureEngine::checkReady() const
 }
 
 void SignatureEngine::tryToPerform( )
-    	throw (cssu::Exception, cssu::RuntimeException)
 /****** SignatureEngine/tryToPerform *****************************************
  *
  *   NAME
@@ -221,14 +220,12 @@ void SignatureEngine::clearUp( ) const
 
 /* XReferenceCollector */
 void SAL_CALL SignatureEngine::setReferenceCount( sal_Int32 count )
-	throw (cssu::Exception, cssu::RuntimeException)
 {
 	m_nTotalReferenceNumber = count;
 	tryToPerform();
 }
 
 void SAL_CALL SignatureEngine::setReferenceId( sal_Int32 id )
-	throw (cssu::Exception, cssu::RuntimeException)
 {
 	m_vReferenceIds.push_back( id );
 }
@@ -237,14 +234,12 @@ void SAL_CALL SignatureEngine::setReferenceId( sal_Int32 id )
 void SAL_CALL SignatureEngine::setUriBinding(
 	const rtl::OUString& uri,
 	const cssu::Reference< com::sun::star::io::XInputStream >& aInputStream )
-	throw (cssu::Exception, cssu::RuntimeException)
 {
 	m_vUris.push_back(uri);
 	m_vXInputStreams.push_back(aInputStream);
 }
 
 cssu::Reference< com::sun::star::io::XInputStream > SAL_CALL SignatureEngine::getUriBinding( const rtl::OUString& uri )
-	throw (cssu::Exception, cssu::RuntimeException)
 {
 	cssu::Reference< com::sun::star::io::XInputStream > xInputStream;
 

@@ -154,8 +154,7 @@ public:
      * throw a SAXParseException that describes the first error that matches
      * the given mask
      */
-    void ThrowErrorAsSAXException( sal_Int32 nIdMask )
-        throw( ::com::sun::star::xml::sax::SAXParseException );
+    void ThrowErrorAsSAXException( sal_Int32 nIdMask );
 };
 
 

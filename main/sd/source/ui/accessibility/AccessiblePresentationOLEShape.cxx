@@ -59,7 +59,6 @@ AccessiblePresentationOLEShape::~AccessiblePresentationOLEShape (void)
 
 ::rtl::OUString SAL_CALL
     AccessiblePresentationOLEShape::getImplementationName (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
 	return ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("AccessiblePresentationOLEShape"));
 }
@@ -70,7 +69,6 @@ AccessiblePresentationOLEShape::~AccessiblePresentationOLEShape (void)
 ///	Set this object's name if it is different to the current name.
 ::rtl::OUString
     AccessiblePresentationOLEShape::CreateAccessibleBaseName (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     ::rtl::OUString sName;
 
@@ -103,7 +101,6 @@ AccessiblePresentationOLEShape::~AccessiblePresentationOLEShape (void)
 
 ::rtl::OUString
     AccessiblePresentationOLEShape::CreateAccessibleDescription (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     //    return createAccessibleName();
     DescriptionGenerator aDG (mxShape);
@@ -142,7 +139,6 @@ AccessiblePresentationOLEShape::~AccessiblePresentationOLEShape (void)
 }
 //	Return this object's role.
 sal_Int16 SAL_CALL AccessiblePresentationOLEShape::getAccessibleRole ()
-	throw (::com::sun::star::uno::RuntimeException)
 {
 
 	return  AccessibleRole::EMBEDDED_OBJECT ;

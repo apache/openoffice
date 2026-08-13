@@ -36,7 +36,6 @@ namespace mysqlc_sdbc_driver
 {
 // -----------------------------------------------------------------------------
 void throwFeatureNotImplementedException( const sal_Char* _pAsciiFeatureName, const Reference< XInterface >& _rxContext, const Any* _pNextException )
-    throw (SQLException)
 {
     const ::rtl::OUString sMessage = ::rtl::OUString::createFromAscii( _pAsciiFeatureName ) + ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ": feature not implemented." ) );
     throw SQLException(
@@ -50,7 +49,6 @@ void throwFeatureNotImplementedException( const sal_Char* _pAsciiFeatureName, co
 
 
 void throwInvalidArgumentException( const sal_Char* _pAsciiFeatureName, const Reference< XInterface >& _rxContext, const Any* _pNextException )
-    throw (SQLException)
 {
     const ::rtl::OUString sMessage = ::rtl::OUString::createFromAscii( _pAsciiFeatureName ) + ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ": invalid arguments." ) );
     throw SQLException(

@@ -92,8 +92,6 @@ GlobalAcceleratorConfiguration::~GlobalAcceleratorConfiguration()
 }
 
 void SAL_CALL GlobalAcceleratorConfiguration::initialize(const css::uno::Sequence< css::uno::Any >& /*lArguments*/)
-	throw(css::uno::Exception		,
-		  css::uno::RuntimeException)
 {
 }
 
@@ -125,7 +123,6 @@ void GlobalAcceleratorConfiguration::impl_ts_fillCache()
 // XComponent.dispose(),  #120029#, to release the cyclic reference
 //
 void SAL_CALL GlobalAcceleratorConfiguration::dispose()
-	throw(css::uno::RuntimeException)
 {
     try
     {

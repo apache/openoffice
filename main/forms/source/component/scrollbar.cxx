@@ -171,7 +171,7 @@ namespace frm
     }
 
     //------------------------------------------------------------------------------
-    void OScrollBarModel::setFastPropertyValue_NoBroadcast( sal_Int32 _nHandle, const Any& _rValue ) throw ( Exception )
+    void OScrollBarModel::setFastPropertyValue_NoBroadcast( sal_Int32 _nHandle, const Any& _rValue )
     {
 	    switch ( _nHandle )
 	    {
@@ -188,7 +188,6 @@ namespace frm
     //------------------------------------------------------------------------------
     sal_Bool OScrollBarModel::convertFastPropertyValue(
 			    Any& _rConvertedValue, Any& _rOldValue, sal_Int32 _nHandle, const Any& _rValue )
-			    throw ( IllegalArgumentException )
     {
 	    sal_Bool bModified( sal_False );
 	    switch ( _nHandle )
@@ -244,14 +243,13 @@ namespace frm
     }
 
     //--------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL OScrollBarModel::getServiceName() throw( RuntimeException )
+    ::rtl::OUString SAL_CALL OScrollBarModel::getServiceName()
     {
 	    return FRM_SUN_COMPONENT_SCROLLBAR;
     }
 
     //--------------------------------------------------------------------
     void SAL_CALL OScrollBarModel::write( const Reference< XObjectOutputStream >& _rxOutStream )
-	    throw( IOException, RuntimeException )
     {
 	    OBoundControlModel::write( _rxOutStream );
         ::osl::MutexGuard aGuard( m_aMutex );
@@ -267,7 +265,7 @@ namespace frm
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OScrollBarModel::read( const Reference< XObjectInputStream>& _rxInStream ) throw( IOException, RuntimeException )
+    void SAL_CALL OScrollBarModel::read( const Reference< XObjectInputStream>& _rxInStream )
     {
 	    OBoundControlModel::read( _rxInStream );
 	    ::osl::MutexGuard aGuard( m_aMutex );

@@ -41,7 +41,7 @@ private:
     sal_Int32 m_nBackColor;
     sal_Int16 m_nGradientAngle;
 private:
-    void setFillStyle( css::drawing::FillStyle nFillStyle ) throw (css::uno::RuntimeException);
+    void setFillStyle( css::drawing::FillStyle nFillStyle );
 protected:
     virtual rtl::OUString& getServiceImplName();
     virtual css::uno::Sequence<rtl::OUString> getServiceNames();
@@ -49,18 +49,18 @@ protected:
 public:
     ScVbaFillFormat( const css::uno::Reference< ov::XHelperInterface >& xParent, const css::uno::Reference< css::uno::XComponentContext >& xContext, const css::uno::Reference< css::drawing::XShape > xShape );
 
-    void setForeColorAndInternalStyle( sal_Int32 nForeColor ) throw (css::uno::RuntimeException);
+    void setForeColorAndInternalStyle( sal_Int32 nForeColor );
     // Attributes
-    virtual sal_Bool SAL_CALL getVisible() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setVisible( sal_Bool _visible ) throw (css::uno::RuntimeException);
-    virtual double SAL_CALL getTransparency() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setTransparency( double _transparency ) throw (css::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL getVisible();
+    virtual void SAL_CALL setVisible( sal_Bool _visible );
+    virtual double SAL_CALL getTransparency();
+    virtual void SAL_CALL setTransparency( double _transparency );
 
     // Methods
-    virtual void SAL_CALL Solid() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL TwoColorGradient( sal_Int32 style, sal_Int32 variant ) throw (css::uno::RuntimeException);
-    virtual css::uno::Reference< ov::msforms::XColorFormat > SAL_CALL BackColor() throw (css::uno::RuntimeException);
-    virtual css::uno::Reference< ov::msforms::XColorFormat > SAL_CALL ForeColor() throw (css::uno::RuntimeException);
+    virtual void SAL_CALL Solid();
+    virtual void SAL_CALL TwoColorGradient( sal_Int32 style, sal_Int32 variant );
+    virtual css::uno::Reference< ov::msforms::XColorFormat > SAL_CALL BackColor();
+    virtual css::uno::Reference< ov::msforms::XColorFormat > SAL_CALL ForeColor();
 
 };
 

@@ -54,34 +54,24 @@ public:
     virtual void SAL_CALL					release() throw();
 
 	// XFilter
-    virtual sal_Bool SAL_CALL filter( const SEQ( NMSP_BEANS::PropertyValue )& aDescriptor )
-		throw ( NMSP_UNO::RuntimeException );
-    virtual void SAL_CALL cancel(  )
-		throw ( NMSP_UNO::RuntimeException );
+    virtual sal_Bool SAL_CALL filter( const SEQ( NMSP_BEANS::PropertyValue )& aDescriptor );
+    virtual void SAL_CALL cancel(  );
 
 	// XImporter
-    virtual void SAL_CALL setTargetDocument( const REF(NMSP_LANG::XComponent)& xDoc )
-		throw ( NMSP_LANG::IllegalArgumentException, NMSP_UNO::RuntimeException );
+    virtual void SAL_CALL setTargetDocument( const REF(NMSP_LANG::XComponent)& xDoc );
 
 	// XInitialization
-    virtual void SAL_CALL initialize( const SEQ( NMSP_UNO::Any )& aArguments )
-		throw ( NMSP_UNO::Exception, NMSP_UNO::RuntimeException );
+    virtual void SAL_CALL initialize( const SEQ( NMSP_UNO::Any )& aArguments );
 
 	// XServiceInfo
-    virtual NMSP_RTL::OUString SAL_CALL getImplementationName()
-		throw ( NMSP_UNO::RuntimeException );
-    virtual sal_Bool SAL_CALL supportsService( const NMSP_RTL::OUString& ServiceName )
-		throw ( NMSP_UNO::RuntimeException );
-    virtual SEQ( NMSP_RTL::OUString ) SAL_CALL getSupportedServiceNames()
-		throw ( NMSP_UNO::RuntimeException );
+    virtual NMSP_RTL::OUString SAL_CALL getImplementationName();
+    virtual sal_Bool SAL_CALL supportsService( const NMSP_RTL::OUString& ServiceName );
+    virtual SEQ( NMSP_RTL::OUString ) SAL_CALL getSupportedServiceNames();
 
 };
 
-NMSP_RTL::OUString PptImporter_getImplementationName()
-	throw ( NMSP_UNO::RuntimeException );
-sal_Bool SAL_CALL PptImportert_supportsService( const NMSP_RTL::OUString& ServiceName )
-	throw( NMSP_UNO::RuntimeException );
-SEQ( NMSP_RTL::OUString ) SAL_CALL PptImporter_getSupportedServiceNames()
-	throw( NMSP_UNO::RuntimeException );
+NMSP_RTL::OUString PptImporter_getImplementationName();
+sal_Bool SAL_CALL PptImportert_supportsService( const NMSP_RTL::OUString& ServiceName );
+SEQ( NMSP_RTL::OUString ) SAL_CALL PptImporter_getSupportedServiceNames();
 
 #endif

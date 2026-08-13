@@ -94,9 +94,7 @@ public:
 	virtual ::com::sun::star::uno::Reference<
 				::com::sun::star::ucb::XContent > SAL_CALL
 	queryContent( const ::com::sun::star::uno::Reference<
-					::com::sun::star::ucb::XContentIdentifier >& Identifier )
-		throw( ::com::sun::star::ucb::IllegalIdentifierException,
-			   ::com::sun::star::uno::RuntimeException );
+					::com::sun::star::ucb::XContentIdentifier >& Identifier );
 
 	//////////////////////////////////////////////////////////////////////
 	// Additional interfaces
@@ -148,7 +146,7 @@ public:
 
 		@return the URL of the temporary file
 	*/
-	static ::rtl::OUString openDoc(const ::rtl::Reference<ContentProperties>& _rProp) throw (::com::sun::star::uno::Exception);
+	static ::rtl::OUString openDoc(const ::rtl::Reference<ContentProperties>& _rProp);
 
 	/** convertURL converts a normal URL into an ODMA understandable name
 		@param	_sCanonicURL	the URL from ContentIndentifier

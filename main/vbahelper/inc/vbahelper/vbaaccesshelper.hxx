@@ -46,7 +46,7 @@ namespace ooo
             return xVBAFactory;
         }
 
-        VBAHELPER_DLLPUBLIC inline css::uno::Reference< css::uno::XInterface > createVBAUnoAPIServiceWithArgs( SfxObjectShell* pShell,  const sal_Char* _pAsciiName, const css::uno::Sequence< css::uno::Any >& aArgs ) throw (css::uno::RuntimeException)
+        VBAHELPER_DLLPUBLIC inline css::uno::Reference< css::uno::XInterface > createVBAUnoAPIServiceWithArgs( SfxObjectShell* pShell,  const sal_Char* _pAsciiName, const css::uno::Sequence< css::uno::Any >& aArgs )
         {
             OSL_PRECOND( pShell, "createVBAUnoAPIService: no shell!" );
             ::rtl::OUString sVarName( ::rtl::OUString::createFromAscii( _pAsciiName ) );

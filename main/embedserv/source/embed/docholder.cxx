@@ -1370,9 +1370,6 @@ HRESULT DocumentHolder::SetObjectRects(LPCRECT aRect, LPCRECT aClip)
     ::com::sun::star::awt::XWindow> SAL_CALL
 DocumentHolder::getContainerWindow(
 )
-    throw (
-        ::com::sun::star::uno::RuntimeException
-    )
 {
     if(m_xContainerWindow.is())
         return m_xContainerWindow;
@@ -1432,9 +1429,6 @@ sal_Bool SAL_CALL
 DocumentHolder::requestDockingAreaSpace(
     const ::com::sun::star::awt::Rectangle& RequestedSpace
 )
-    throw(
-        ::com::sun::star::uno::RuntimeException
-    )
 {
     if(m_bOnDeactivate)
         return sal_True;
@@ -1454,9 +1448,6 @@ void SAL_CALL
 DocumentHolder::setDockingAreaSpace(
     const ::com::sun::star::awt::Rectangle& BorderSpace
 )
-    throw (
-        ::com::sun::star::uno::RuntimeException
-    )
 {
     if(m_bOnDeactivate)
         return;
@@ -1492,7 +1483,6 @@ void SAL_CALL
 DocumentHolder::disposing(
 	const com::sun::star::lang::EventObject& aSource
 )
-		throw( uno::RuntimeException )
 {
 	if ( m_xDocument.is() && m_xDocument == aSource.Source )
 	{
@@ -1510,9 +1500,6 @@ DocumentHolder::queryClosing(
 	const lang::EventObject& aSource,
 	sal_Bool /*bGetsOwnership*/
 )
-	throw(
-		util::CloseVetoException
-	)
 {
 	if ( !m_bLink
 	  && ( m_xDocument.is() && m_xDocument == aSource.Source || m_xFrame.is() && m_xFrame == aSource.Source ) )
@@ -1523,7 +1510,6 @@ DocumentHolder::queryClosing(
 void SAL_CALL
 DocumentHolder::notifyClosing(
 	const lang::EventObject& aSource )
-		throw( uno::RuntimeException )
 {
 	try
 	{
@@ -1553,9 +1539,6 @@ void SAL_CALL
 DocumentHolder::queryTermination(
     const lang::EventObject& /*aSource*/
 )
-	throw(
-		frame::TerminationVetoException
-	)
 {
 	if ( m_xDocument.is() )
 		throw frame::TerminationVetoException();
@@ -1565,7 +1548,6 @@ void SAL_CALL
 DocumentHolder::notifyTermination(
 	const lang::EventObject& aSource
 )
-		throw( uno::RuntimeException )
 {
 	OSL_ENSURE( !m_xDocument.is(), "Just a disaster..." );
 	uno::Reference< frame::XDesktop > xDesktop(
@@ -1578,7 +1560,6 @@ DocumentHolder::notifyTermination(
 
 
 void SAL_CALL DocumentHolder::modified( const lang::EventObject& /*aEvent*/ )
-	throw (uno::RuntimeException)
 {
 	if ( m_xOleAccess.is() )
 	{

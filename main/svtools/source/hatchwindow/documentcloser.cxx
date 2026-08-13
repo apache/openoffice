@@ -151,7 +151,6 @@ ODocumentCloser::~ODocumentCloser()
 // XComponent
 // --------------------------------------------------------
 void SAL_CALL ODocumentCloser::dispose()
-	throw (uno::RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -175,7 +174,6 @@ void SAL_CALL ODocumentCloser::dispose()
 
 // --------------------------------------------------------
 void SAL_CALL ODocumentCloser::addEventListener( const uno::Reference< lang::XEventListener >& xListener )
-	throw (uno::RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	if ( m_bDisposed )
@@ -189,7 +187,6 @@ void SAL_CALL ODocumentCloser::addEventListener( const uno::Reference< lang::XEv
 
 // --------------------------------------------------------
 void SAL_CALL ODocumentCloser::removeEventListener( const uno::Reference< lang::XEventListener >& xListener )
-	throw (uno::RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	if ( m_pListenersContainer )
@@ -199,7 +196,6 @@ void SAL_CALL ODocumentCloser::removeEventListener( const uno::Reference< lang::
 // XInitialization
 // --------------------------------------------------------
 void SAL_CALL ODocumentCloser::initialize( const uno::Sequence< uno::Any >& aArguments )
-	throw (uno::Exception, uno::RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	if ( m_bInitialized )
@@ -231,14 +227,12 @@ void SAL_CALL ODocumentCloser::initialize( const uno::Sequence< uno::Any >& aArg
 // XServiceInfo
 // --------------------------------------------------------
 ::rtl::OUString SAL_CALL ODocumentCloser::getImplementationName(  )
-	throw (uno::RuntimeException)
 {
 	return impl_staticGetImplementationName();
 }
 
 // --------------------------------------------------------
 ::sal_Bool SAL_CALL ODocumentCloser::supportsService( const ::rtl::OUString& ServiceName )
-	throw (uno::RuntimeException)
 {
 	uno::Sequence< ::rtl::OUString > aSeq = impl_staticGetSupportedServiceNames();
 
@@ -251,7 +245,6 @@ void SAL_CALL ODocumentCloser::initialize( const uno::Sequence< uno::Any >& aArg
 
 // --------------------------------------------------------
 uno::Sequence< ::rtl::OUString > SAL_CALL ODocumentCloser::getSupportedServiceNames()
-	throw (uno::RuntimeException)
 {
 	return impl_staticGetSupportedServiceNames();
 }

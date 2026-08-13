@@ -1293,7 +1293,7 @@ void SlideshowImpl::paint( const Rectangle& /* rRect */ )
 
 // --------------------------------------------------------------------
 
-void SAL_CALL SlideshowImpl::addSlideShowListener( const Reference< XSlideShowListener >& xListener ) throw (RuntimeException)
+void SAL_CALL SlideshowImpl::addSlideShowListener( const Reference< XSlideShowListener >& xListener )
 {
 	if( mxListenerProxy.is() )
 		mxListenerProxy->addSlideShowListener( xListener );
@@ -1301,7 +1301,7 @@ void SAL_CALL SlideshowImpl::addSlideShowListener( const Reference< XSlideShowLi
 
 // --------------------------------------------------------------------
 
-void SAL_CALL SlideshowImpl::removeSlideShowListener( const Reference< XSlideShowListener >& xListener ) throw (RuntimeException)
+void SAL_CALL SlideshowImpl::removeSlideShowListener( const Reference< XSlideShowListener >& xListener )
 {
 	if( mxListenerProxy.is() )
 		mxListenerProxy->removeSlideShowListener( xListener );
@@ -1384,7 +1384,7 @@ void SlideshowImpl::registerShapeEvents(sal_Int32 nSlideNumber)
 
 // ---------------------------------------------------------
 
-void SlideshowImpl::registerShapeEvents( Reference< XShapes >& xShapes ) throw( Exception )
+void SlideshowImpl::registerShapeEvents( Reference< XShapes >& xShapes )
 {
 	try
 	{
@@ -1522,7 +1522,7 @@ IMPL_LINK( SlideshowImpl, endPresentationHdl, void*, EMPTYARG )
 
 // ---------------------------------------------------------
 
-void SAL_CALL SlideshowImpl::pause() throw (RuntimeException)
+void SAL_CALL SlideshowImpl::pause()
 {
 	::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 
@@ -1551,7 +1551,7 @@ void SAL_CALL SlideshowImpl::pause() throw (RuntimeException)
 
 // ---------------------------------------------------------
 
-void SAL_CALL SlideshowImpl::resume() throw (RuntimeException)
+void SAL_CALL SlideshowImpl::resume()
 {
 	::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 
@@ -1588,7 +1588,7 @@ void SAL_CALL SlideshowImpl::resume() throw (RuntimeException)
 
 // ---------------------------------------------------------
 
-sal_Bool SAL_CALL SlideshowImpl::isPaused() throw (RuntimeException)
+sal_Bool SAL_CALL SlideshowImpl::isPaused()
 {
 	::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 	return mbIsPaused;
@@ -1596,7 +1596,7 @@ sal_Bool SAL_CALL SlideshowImpl::isPaused() throw (RuntimeException)
 
 // ---------------------------------------------------------
 
-void SAL_CALL SlideshowImpl::blankScreen( sal_Int32 nColor ) throw (RuntimeException)
+void SAL_CALL SlideshowImpl::blankScreen( sal_Int32 nColor )
 {
 	::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 
@@ -1764,7 +1764,7 @@ sal_Int32 SlideshowImpl::getSlideNumberForBookmark( const OUString& rStrBookmark
 
 // ---------------------------------------------------------
 
-void SlideshowImpl::hyperLinkClicked( rtl::OUString const& aHyperLink ) throw (RuntimeException)
+void SlideshowImpl::hyperLinkClicked( rtl::OUString const& aHyperLink )
 {
 	OUString aBookmark( aHyperLink );
 
@@ -1871,7 +1871,7 @@ sal_Int32 SlideshowImpl::getLastSlideNumber()
 
 // ---------------------------------------------------------
 
-sal_Bool SAL_CALL SlideshowImpl::isEndless() throw( RuntimeException )
+sal_Bool SAL_CALL SlideshowImpl::isEndless()
 {
 	::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 	return maPresSettings.mbEndless;
@@ -2800,7 +2800,7 @@ void SlideshowImpl::setActiveXToolbarsVisible( sal_Bool bVisible )
 
 // -----------------------------------------------------------------------------
 
-void SAL_CALL SlideshowImpl::activate() throw (RuntimeException)
+void SAL_CALL SlideshowImpl::activate()
 {
 	::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 
@@ -2841,7 +2841,7 @@ void SAL_CALL SlideshowImpl::activate() throw (RuntimeException)
 
 // -----------------------------------------------------------------------------
 
-void SAL_CALL SlideshowImpl::deactivate() throw (RuntimeException)
+void SAL_CALL SlideshowImpl::deactivate()
 {
 	::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 
@@ -2877,7 +2877,7 @@ IMPL_LINK( SlideshowImpl, deactivateHdl, Timer*, EMPTYARG )
 
 // ---------------------------------------------------------
 
-sal_Bool SAL_CALL SlideshowImpl::isActive() throw (RuntimeException)
+sal_Bool SAL_CALL SlideshowImpl::isActive()
 {
 	::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 	return mbActive;
@@ -2969,7 +2969,7 @@ void SlideshowImpl::setAutoSaveState( bool bOn)
 
 // ---------------------------------------------------------
 
-Reference< XDrawPage > SAL_CALL SlideshowImpl::getCurrentSlide() throw (RuntimeException)
+Reference< XDrawPage > SAL_CALL SlideshowImpl::getCurrentSlide()
 {
 	::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 
@@ -2986,7 +2986,7 @@ Reference< XDrawPage > SAL_CALL SlideshowImpl::getCurrentSlide() throw (RuntimeE
 
 // ---------------------------------------------------------
 
-sal_Int32 SAL_CALL SlideshowImpl::getNextSlideIndex() throw (RuntimeException)
+sal_Int32 SAL_CALL SlideshowImpl::getNextSlideIndex()
 {
 	::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 
@@ -3002,7 +3002,7 @@ sal_Int32 SAL_CALL SlideshowImpl::getNextSlideIndex() throw (RuntimeException)
 
 // ---------------------------------------------------------
 
-sal_Int32 SAL_CALL SlideshowImpl::getCurrentSlideIndex() throw (RuntimeException)
+sal_Int32 SAL_CALL SlideshowImpl::getCurrentSlideIndex()
 {
 	return mpSlideController.get() ? mpSlideController->getCurrentSlideIndex() : -1;
 }
@@ -3011,14 +3011,14 @@ sal_Int32 SAL_CALL SlideshowImpl::getCurrentSlideIndex() throw (RuntimeException
 // ::com::sun::star::presentation::XSlideShowController:
 // --------------------------------------------------------------------
 
-::sal_Int32 SAL_CALL SlideshowImpl::getSlideCount() throw (RuntimeException)
+::sal_Int32 SAL_CALL SlideshowImpl::getSlideCount()
 {
 	return mpSlideController.get() ? mpSlideController->getSlideIndexCount() : 0;
 }
 
 // --------------------------------------------------------------------
 
-Reference< XDrawPage > SAL_CALL SlideshowImpl::getSlideByIndex(::sal_Int32 Index) throw (RuntimeException, css::lang::IndexOutOfBoundsException)
+Reference< XDrawPage > SAL_CALL SlideshowImpl::getSlideByIndex(::sal_Int32 Index)
 {
 	if( (mpSlideController.get() == 0 ) || (Index < 0) || (Index >= mpSlideController->getSlideIndexCount() ) )
 		throw IndexOutOfBoundsException();
@@ -3026,7 +3026,7 @@ Reference< XDrawPage > SAL_CALL SlideshowImpl::getSlideByIndex(::sal_Int32 Index
 	return mpSlideController->getSlideByNumber( mpSlideController->getSlideNumber( Index ) );
 }
 
-sal_Bool SAL_CALL SlideshowImpl::getAlwaysOnTop() throw (RuntimeException)
+sal_Bool SAL_CALL SlideshowImpl::getAlwaysOnTop()
 {
 	::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 	return maPresSettings.mbAlwaysOnTop;
@@ -3034,7 +3034,7 @@ sal_Bool SAL_CALL SlideshowImpl::getAlwaysOnTop() throw (RuntimeException)
 
 // --------------------------------------------------------------------
 
-void SAL_CALL SlideshowImpl::setAlwaysOnTop( sal_Bool bAlways ) throw (RuntimeException)
+void SAL_CALL SlideshowImpl::setAlwaysOnTop( sal_Bool bAlways )
 {
 	::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 	if( maPresSettings.mbAlwaysOnTop != bAlways )
@@ -3046,7 +3046,7 @@ void SAL_CALL SlideshowImpl::setAlwaysOnTop( sal_Bool bAlways ) throw (RuntimeEx
 
 // --------------------------------------------------------------------
 
-sal_Bool SAL_CALL SlideshowImpl::isFullScreen() throw (RuntimeException)
+sal_Bool SAL_CALL SlideshowImpl::isFullScreen()
 {
 	::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 	return maPresSettings.mbFullScreen;
@@ -3054,7 +3054,7 @@ sal_Bool SAL_CALL SlideshowImpl::isFullScreen() throw (RuntimeException)
 
 // --------------------------------------------------------------------
 
-sal_Bool SAL_CALL SlideshowImpl::getMouseVisible() throw (RuntimeException)
+sal_Bool SAL_CALL SlideshowImpl::getMouseVisible()
 {
 	::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 	return maPresSettings.mbMouseVisible;
@@ -3062,7 +3062,7 @@ sal_Bool SAL_CALL SlideshowImpl::getMouseVisible() throw (RuntimeException)
 
 // --------------------------------------------------------------------
 
-void SAL_CALL SlideshowImpl::setMouseVisible( sal_Bool bVisible ) throw (RuntimeException)
+void SAL_CALL SlideshowImpl::setMouseVisible( sal_Bool bVisible )
 {
 	::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 	if( maPresSettings.mbMouseVisible != bVisible )
@@ -3075,7 +3075,7 @@ void SAL_CALL SlideshowImpl::setMouseVisible( sal_Bool bVisible ) throw (Runtime
 
 // --------------------------------------------------------------------
 
-sal_Bool SAL_CALL SlideshowImpl::getUsePen() throw (RuntimeException)
+sal_Bool SAL_CALL SlideshowImpl::getUsePen()
 {
 	::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 	return mbUsePen;
@@ -3083,7 +3083,7 @@ sal_Bool SAL_CALL SlideshowImpl::getUsePen() throw (RuntimeException)
 
 // --------------------------------------------------------------------
 
-void SAL_CALL SlideshowImpl::setUsePen( sal_Bool bMouseAsPen ) throw (RuntimeException)
+void SAL_CALL SlideshowImpl::setUsePen( sal_Bool bMouseAsPen )
 {
 	::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 	mbUsePen = bMouseAsPen;
@@ -3127,7 +3127,7 @@ void SAL_CALL SlideshowImpl::setUsePen( sal_Bool bMouseAsPen ) throw (RuntimeExc
 
 // --------------------------------------------------------------------
 
-double SAL_CALL SlideshowImpl::getPenWidth() throw (RuntimeException)
+double SAL_CALL SlideshowImpl::getPenWidth()
 {
 	::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 	return mdUserPaintStrokeWidth;
@@ -3135,7 +3135,7 @@ double SAL_CALL SlideshowImpl::getPenWidth() throw (RuntimeException)
 
 // --------------------------------------------------------------------
 
-void SAL_CALL SlideshowImpl::setPenWidth( double dStrokeWidth ) throw (RuntimeException)
+void SAL_CALL SlideshowImpl::setPenWidth( double dStrokeWidth )
 {
 	::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 	mdUserPaintStrokeWidth = dStrokeWidth;
@@ -3144,7 +3144,7 @@ void SAL_CALL SlideshowImpl::setPenWidth( double dStrokeWidth ) throw (RuntimeEx
 
 // --------------------------------------------------------------------
 
-sal_Int32 SAL_CALL SlideshowImpl::getPenColor() throw (RuntimeException)
+sal_Int32 SAL_CALL SlideshowImpl::getPenColor()
 {
 	::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 	return mnUserPaintColor;
@@ -3152,7 +3152,7 @@ sal_Int32 SAL_CALL SlideshowImpl::getPenColor() throw (RuntimeException)
 
 // --------------------------------------------------------------------
 
-void SAL_CALL SlideshowImpl::setPenColor( sal_Int32 nColor ) throw (RuntimeException)
+void SAL_CALL SlideshowImpl::setPenColor( sal_Int32 nColor )
 {
 	::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 	mnUserPaintColor = nColor;
@@ -3161,13 +3161,13 @@ void SAL_CALL SlideshowImpl::setPenColor( sal_Int32 nColor ) throw (RuntimeExcep
 
 // --------------------------------------------------------------------
 
-void SAL_CALL SlideshowImpl::setUseEraser( ::sal_Bool /*_usepen*/ ) throw (css::uno::RuntimeException)
+void SAL_CALL SlideshowImpl::setUseEraser( ::sal_Bool /*_usepen*/ )
 {
 }
 
 // --------------------------------------------------------------------
 
-void SAL_CALL SlideshowImpl::setPenMode( bool bSwitchPenMode ) throw (RuntimeException)
+void SAL_CALL SlideshowImpl::setPenMode( bool bSwitchPenMode )
 {
 	::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 	setUsePen( bSwitchPenMode ); // SwitchPen Mode
@@ -3176,7 +3176,7 @@ void SAL_CALL SlideshowImpl::setPenMode( bool bSwitchPenMode ) throw (RuntimeExc
 
 // --------------------------------------------------------------------
 
-void SAL_CALL SlideshowImpl::setEraseAllInk(bool bEraseAllInk) throw (RuntimeException)
+void SAL_CALL SlideshowImpl::setEraseAllInk(bool bEraseAllInk)
 {
 	if( bEraseAllInk )
 	{
@@ -3201,11 +3201,11 @@ void SAL_CALL SlideshowImpl::setEraseAllInk(bool bEraseAllInk) throw (RuntimeExc
 	}
 }
 
-void SAL_CALL SlideshowImpl::setEraseInk( sal_Int32 /*nEraseInkSize*/ ) throw (css::uno::RuntimeException)
+void SAL_CALL SlideshowImpl::setEraseInk( sal_Int32 /*nEraseInkSize*/ )
 {
 }
 
-void SAL_CALL SlideshowImpl::setEraserMode( bool /*bSwitchEraserMode*/ ) throw (css::uno::RuntimeException)
+void SAL_CALL SlideshowImpl::setEraserMode( bool /*bSwitchEraserMode*/ )
 {
 }
 
@@ -3213,7 +3213,7 @@ void SAL_CALL SlideshowImpl::setEraserMode( bool /*bSwitchEraserMode*/ ) throw (
 // XSlideShowController Methods
 // --------------------------------------------------------------------
 
-sal_Bool SAL_CALL SlideshowImpl::isRunning(  ) throw (RuntimeException)
+sal_Bool SAL_CALL SlideshowImpl::isRunning(  )
 {
 	::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 	return mxShow.is();
@@ -3221,7 +3221,7 @@ sal_Bool SAL_CALL SlideshowImpl::isRunning(  ) throw (RuntimeException)
 
 // --------------------------------------------------------------------
 
-void SAL_CALL SlideshowImpl::gotoNextEffect(  ) throw (RuntimeException)
+void SAL_CALL SlideshowImpl::gotoNextEffect(  )
 {
 	::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 
@@ -3249,7 +3249,7 @@ void SAL_CALL SlideshowImpl::gotoNextEffect(  ) throw (RuntimeException)
 
 // --------------------------------------------------------------------
 
-void SAL_CALL SlideshowImpl::gotoPreviousEffect(  ) throw (RuntimeException)
+void SAL_CALL SlideshowImpl::gotoPreviousEffect(  )
 {
 	::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 
@@ -3273,7 +3273,7 @@ void SAL_CALL SlideshowImpl::gotoPreviousEffect(  ) throw (RuntimeException)
 
 // --------------------------------------------------------------------
 
-void SAL_CALL SlideshowImpl::gotoFirstSlide(  ) throw (RuntimeException)
+void SAL_CALL SlideshowImpl::gotoFirstSlide(  )
 {
 	::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 
@@ -3296,7 +3296,7 @@ void SAL_CALL SlideshowImpl::gotoFirstSlide(  ) throw (RuntimeException)
 
 // --------------------------------------------------------------------
 
-void SAL_CALL SlideshowImpl::gotoNextSlide(  ) throw (RuntimeException)
+void SAL_CALL SlideshowImpl::gotoNextSlide(  )
 {
 	::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 
@@ -3375,7 +3375,7 @@ void SAL_CALL SlideshowImpl::gotoNextSlide(  ) throw (RuntimeException)
 
 // --------------------------------------------------------------------
 
-void SAL_CALL SlideshowImpl::gotoPreviousSlide(  ) throw (RuntimeException)
+void SAL_CALL SlideshowImpl::gotoPreviousSlide(  )
 {
 	gotoPreviousSlide(false);
 }
@@ -3434,7 +3434,7 @@ void SlideshowImpl::gotoPreviousSlide (const bool bSkipAllMainSequenceEffects)
 
 // --------------------------------------------------------------------
 
-void SAL_CALL SlideshowImpl::gotoLastSlide() throw (RuntimeException)
+void SAL_CALL SlideshowImpl::gotoLastSlide()
 {
 	::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 
@@ -3460,7 +3460,7 @@ void SAL_CALL SlideshowImpl::gotoLastSlide() throw (RuntimeException)
 
 // --------------------------------------------------------------------
 
-void SAL_CALL SlideshowImpl::gotoBookmark( const OUString& rBookmark ) throw (RuntimeException)
+void SAL_CALL SlideshowImpl::gotoBookmark( const OUString& rBookmark )
 {
 	::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 
@@ -3475,7 +3475,6 @@ void SAL_CALL SlideshowImpl::gotoBookmark( const OUString& rBookmark ) throw (Ru
 // --------------------------------------------------------------------
 
 void SAL_CALL SlideshowImpl::gotoSlide( const Reference< XDrawPage >& xSlide )
-	throw(IllegalArgumentException, RuntimeException)
 {
 	::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 
@@ -3497,7 +3496,7 @@ void SAL_CALL SlideshowImpl::gotoSlide( const Reference< XDrawPage >& xSlide )
 
 // --------------------------------------------------------------------
 
-void SAL_CALL SlideshowImpl::gotoSlideIndex( sal_Int32 nIndex ) throw (RuntimeException)
+void SAL_CALL SlideshowImpl::gotoSlideIndex( sal_Int32 nIndex )
 {
 	::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 
@@ -3509,7 +3508,7 @@ void SAL_CALL SlideshowImpl::gotoSlideIndex( sal_Int32 nIndex ) throw (RuntimeEx
 
 // --------------------------------------------------------------------
 
-void SAL_CALL SlideshowImpl::stopSound(  ) throw (RuntimeException)
+void SAL_CALL SlideshowImpl::stopSound(  )
 {
 	::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 
@@ -3537,35 +3536,35 @@ void SAL_CALL SlideshowImpl::stopSound(  ) throw (RuntimeException)
 // XIndexAccess
 // --------------------------------------------------------------------
 
-::sal_Int32 SAL_CALL SlideshowImpl::getCount(  ) throw (::com::sun::star::uno::RuntimeException)
+::sal_Int32 SAL_CALL SlideshowImpl::getCount(  )
 {
 	return getSlideCount();
 }
 
 // --------------------------------------------------------------------
 
-::com::sun::star::uno::Any SAL_CALL SlideshowImpl::getByIndex( ::sal_Int32 Index ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any SAL_CALL SlideshowImpl::getByIndex( ::sal_Int32 Index )
 {
 	return Any( getSlideByIndex( Index ) );
 }
 
 // --------------------------------------------------------------------
 
-::com::sun::star::uno::Type SAL_CALL SlideshowImpl::getElementType(  ) throw (::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Type SAL_CALL SlideshowImpl::getElementType(  )
 {
 	return XDrawPage::static_type();
 }
 
 // --------------------------------------------------------------------
 
-::sal_Bool SAL_CALL SlideshowImpl::hasElements(  ) throw (::com::sun::star::uno::RuntimeException)
+::sal_Bool SAL_CALL SlideshowImpl::hasElements(  )
 {
 	return getSlideCount() != 0;
 }
 
 // --------------------------------------------------------------------
 
-Reference< XSlideShow > SAL_CALL SlideshowImpl::getSlideShow() throw (RuntimeException)
+Reference< XSlideShow > SAL_CALL SlideshowImpl::getSlideShow()
 {
 	return mxShow;
 }
@@ -3589,7 +3588,7 @@ PresentationSettingsEx::PresentationSettingsEx( PresentationSettings& r )
 {
 }
 
-void PresentationSettingsEx::SetArguments( const Sequence< PropertyValue >& rArguments ) throw (IllegalArgumentException)
+void PresentationSettingsEx::SetArguments( const Sequence< PropertyValue >& rArguments )
 {
 	sal_Int32 nArguments = rArguments.getLength();
 	const PropertyValue* pValue = rArguments.getConstArray();
@@ -3601,7 +3600,7 @@ void PresentationSettingsEx::SetArguments( const Sequence< PropertyValue >& rArg
 	}
 }
 
-void PresentationSettingsEx::SetPropertyValue( const OUString& rProperty, const Any& rValue ) throw (IllegalArgumentException)
+void PresentationSettingsEx::SetPropertyValue( const OUString& rProperty, const Any& rValue )
 {
 	if( rProperty.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM("RehearseTimings") ) )
 	{
@@ -3777,7 +3776,7 @@ void SlideShowListenerProxy::removeSlideShowListener( const css::uno::Reference<
 
 // ---------------------------------------------------------
 
-void SAL_CALL SlideShowListenerProxy::beginEvent( const Reference< XAnimationNode >& xNode ) throw (RuntimeException)
+void SAL_CALL SlideShowListenerProxy::beginEvent( const Reference< XAnimationNode >& xNode )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -3787,7 +3786,7 @@ void SAL_CALL SlideShowListenerProxy::beginEvent( const Reference< XAnimationNod
 
 // ---------------------------------------------------------
 
-void SAL_CALL SlideShowListenerProxy::endEvent( const Reference< XAnimationNode >& xNode ) throw (RuntimeException)
+void SAL_CALL SlideShowListenerProxy::endEvent( const Reference< XAnimationNode >& xNode )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -3797,7 +3796,7 @@ void SAL_CALL SlideShowListenerProxy::endEvent( const Reference< XAnimationNode 
 
 // ---------------------------------------------------------
 
-void SAL_CALL SlideShowListenerProxy::repeat( const Reference< XAnimationNode >& xNode, ::sal_Int32 nRepeat ) throw (RuntimeException)
+void SAL_CALL SlideShowListenerProxy::repeat( const Reference< XAnimationNode >& xNode, ::sal_Int32 nRepeat )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -3809,7 +3808,7 @@ void SAL_CALL SlideShowListenerProxy::repeat( const Reference< XAnimationNode >&
 // ::com::sun::star::presentation::XSlideShowListener:
 // ---------------------------------------------------------
 
-void SAL_CALL SlideShowListenerProxy::paused(  ) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL SlideShowListenerProxy::paused(  )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -3819,7 +3818,7 @@ void SAL_CALL SlideShowListenerProxy::paused(  ) throw (::com::sun::star::uno::R
 
 // ---------------------------------------------------------
 
-void SAL_CALL SlideShowListenerProxy::resumed(  ) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL SlideShowListenerProxy::resumed(  )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -3829,7 +3828,7 @@ void SAL_CALL SlideShowListenerProxy::resumed(  ) throw (::com::sun::star::uno::
 
 // ---------------------------------------------------------
 
-void SAL_CALL SlideShowListenerProxy::slideTransitionStarted( ) throw (RuntimeException)
+void SAL_CALL SlideShowListenerProxy::slideTransitionStarted( )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -3839,7 +3838,7 @@ void SAL_CALL SlideShowListenerProxy::slideTransitionStarted( ) throw (RuntimeEx
 
 // ---------------------------------------------------------
 
-void SAL_CALL SlideShowListenerProxy::slideTransitionEnded( ) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL SlideShowListenerProxy::slideTransitionEnded( )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -3849,7 +3848,7 @@ void SAL_CALL SlideShowListenerProxy::slideTransitionEnded( ) throw (::com::sun:
 
 // ---------------------------------------------------------
 
-void SAL_CALL SlideShowListenerProxy::slideAnimationsEnded(  ) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL SlideShowListenerProxy::slideAnimationsEnded(  )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -3859,7 +3858,7 @@ void SAL_CALL SlideShowListenerProxy::slideAnimationsEnded(  ) throw (::com::sun
 
 // ---------------------------------------------------------
 
-void SlideShowListenerProxy::slideEnded(sal_Bool bReverse) throw (RuntimeException)
+void SlideShowListenerProxy::slideEnded(sal_Bool bReverse)
 {
 	{
 		::osl::MutexGuard aGuard( m_aMutex );
@@ -3878,7 +3877,7 @@ void SlideShowListenerProxy::slideEnded(sal_Bool bReverse) throw (RuntimeExcepti
 
 // ---------------------------------------------------------
 
-void SlideShowListenerProxy::hyperLinkClicked( rtl::OUString const& aHyperLink ) throw (RuntimeException)
+void SlideShowListenerProxy::hyperLinkClicked( rtl::OUString const& aHyperLink )
 {
 	{
 		::osl::MutexGuard aGuard( m_aMutex );
@@ -3898,7 +3897,7 @@ void SlideShowListenerProxy::hyperLinkClicked( rtl::OUString const& aHyperLink )
 // XEventListener
 // ---------------------------------------------------------
 
-void SAL_CALL SlideShowListenerProxy::disposing( const ::com::sun::star::lang::EventObject& aDisposeEvent ) throw (RuntimeException)
+void SAL_CALL SlideShowListenerProxy::disposing( const ::com::sun::star::lang::EventObject& aDisposeEvent )
 {
 	maListeners.disposeAndClear( aDisposeEvent );
 	mxController.clear();
@@ -3909,7 +3908,7 @@ void SAL_CALL SlideShowListenerProxy::disposing( const ::com::sun::star::lang::E
 // XShapeEventListener
 // ---------------------------------------------------------
 
-void SAL_CALL SlideShowListenerProxy::click( const Reference< XShape >& xShape, const ::com::sun::star::awt::MouseEvent& aOriginalEvent ) throw (RuntimeException)
+void SAL_CALL SlideShowListenerProxy::click( const Reference< XShape >& xShape, const ::com::sun::star::awt::MouseEvent& aOriginalEvent )
 {
 	::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 	if( mxController.is() )

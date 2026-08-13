@@ -171,16 +171,13 @@ public:
 
     ~SfxDocInfoListener_Impl();
 
-    virtual void SAL_CALL disposing( const lang::EventObject& )
-        throw ( uno::RuntimeException );
-    virtual void SAL_CALL modified( const lang::EventObject& )
-        throw ( uno::RuntimeException );
+    virtual void SAL_CALL disposing( const lang::EventObject& );
+    virtual void SAL_CALL modified( const lang::EventObject& );
 };
 SfxDocInfoListener_Impl::~SfxDocInfoListener_Impl()
 {
 }
 void SAL_CALL SfxDocInfoListener_Impl::modified( const lang::EventObject& )
-        throw ( uno::RuntimeException )
 {
     ::vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 
@@ -189,7 +186,6 @@ void SAL_CALL SfxDocInfoListener_Impl::modified( const lang::EventObject& )
 }
 
 void SAL_CALL SfxDocInfoListener_Impl::disposing( const lang::EventObject& )
-    throw ( uno::RuntimeException )
 {
 }
 
@@ -336,16 +332,16 @@ public:
         : m_pData( pData )
     {}
 
-    virtual void SAL_CALL disposing( const lang::EventObject& aEvent ) throw ( uno::RuntimeException ) ;
-    virtual void SAL_CALL printJobEvent( const view::PrintJobEvent& rEvent ) throw ( uno::RuntimeException);
+    virtual void SAL_CALL disposing( const lang::EventObject& aEvent ) ;
+    virtual void SAL_CALL printJobEvent( const view::PrintJobEvent& rEvent );
 };
 
-void SAL_CALL SfxPrintHelperListener_Impl::disposing( const lang::EventObject& ) throw ( uno::RuntimeException )
+void SAL_CALL SfxPrintHelperListener_Impl::disposing( const lang::EventObject& )
 {
     m_pData->m_xPrintable = 0;
 }
 
-void SAL_CALL SfxPrintHelperListener_Impl::printJobEvent( const view::PrintJobEvent& rEvent ) throw (uno::RuntimeException)
+void SAL_CALL SfxPrintHelperListener_Impl::printJobEvent( const view::PrintJobEvent& rEvent )
 {
     ::cppu::OInterfaceContainerHelper* pContainer = m_pData->m_aInterfaceContainer.getContainer( ::getCppuType( ( const uno::Reference< view::XPrintJobListener >*) NULL ) );
     if ( pContainer!=NULL )
@@ -560,7 +556,7 @@ SfxBaseModel::~SfxBaseModel()
 //	XInterface
 //________________________________________________________________________________________________________
 
-uno::Any SAL_CALL SfxBaseModel::queryInterface( const UNOTYPE& rType ) throw( uno::RuntimeException )
+uno::Any SAL_CALL SfxBaseModel::queryInterface( const UNOTYPE& rType )
 {
     if  (   ( !m_bSupportEmbeddedScripts && rType.equals( XEMBEDDEDSCRIPTS::static_type() ) )
         ||  ( !m_bSupportDocRecovery && rType.equals( XDocumentRecovery::static_type() ) )
@@ -615,7 +611,7 @@ namespace
     }
 }
 
-uno::Sequence< UNOTYPE > SAL_CALL SfxBaseModel::getTypes() throw( uno::RuntimeException )
+uno::Sequence< UNOTYPE > SAL_CALL SfxBaseModel::getTypes()
 {
     uno::Sequence< UNOTYPE > aTypes( SfxBaseModel_Base::getTypes() );
 
@@ -632,7 +628,7 @@ uno::Sequence< UNOTYPE > SAL_CALL SfxBaseModel::getTypes() throw( uno::RuntimeEx
 //	XTypeProvider
 //________________________________________________________________________________________________________
 
-uno::Sequence< sal_Int8 > SAL_CALL SfxBaseModel::getImplementationId() throw( uno::RuntimeException )
+uno::Sequence< sal_Int8 > SAL_CALL SfxBaseModel::getImplementationId()
 {
 	// Create one Id for all instances of this class.
 	// Use ethernet address to do this! (sal_True)
@@ -675,7 +671,7 @@ uno::Reference< script::XStarBasicAccess > implGetStarBasicAccess( SfxObjectShel
 	return xRet;
 }
 
-uno::Reference< XNAMECONTAINER > SAL_CALL SfxBaseModel::getLibraryContainer() throw( uno::RuntimeException )
+uno::Reference< XNAMECONTAINER > SAL_CALL SfxBaseModel::getLibraryContainer()
 {
     SfxModelGuard aGuard( *this );
 
@@ -694,7 +690,6 @@ uno::Reference< XNAMECONTAINER > SAL_CALL SfxBaseModel::getLibraryContainer() th
 */
 void SAL_CALL SfxBaseModel::createLibrary( const ::rtl::OUString& LibName, const ::rtl::OUString& Password,
     const ::rtl::OUString& ExternalSourceURL, const ::rtl::OUString& LinkTargetURL )
-        throw(ELEMENTEXISTEXCEPTION, uno::RuntimeException)
 {
     SfxModelGuard aGuard( *this );
 
@@ -711,7 +706,6 @@ void SAL_CALL SfxBaseModel::createLibrary( const ::rtl::OUString& LibName, const
 */
 void SAL_CALL SfxBaseModel::addModule( const ::rtl::OUString& LibraryName, const ::rtl::OUString& ModuleName,
     const ::rtl::OUString& Language, const ::rtl::OUString& Source )
-        throw( NOSUCHELEMENTEXCEPTION, uno::RuntimeException)
 {
     SfxModelGuard aGuard( *this );
 
@@ -728,7 +722,6 @@ void SAL_CALL SfxBaseModel::addModule( const ::rtl::OUString& LibraryName, const
 */
 void SAL_CALL SfxBaseModel::addDialog( const ::rtl::OUString& LibraryName, const ::rtl::OUString& DialogName,
 	const ::com::sun::star::uno::Sequence< sal_Int8 >& Data )
-        throw(NOSUCHELEMENTEXCEPTION, uno::RuntimeException)
 {
     SfxModelGuard aGuard( *this );
 
@@ -745,7 +738,7 @@ void SAL_CALL SfxBaseModel::addDialog( const ::rtl::OUString& LibraryName, const
 //	XChild
 //________________________________________________________________________________________________________
 
-uno::Reference< uno::XInterface > SAL_CALL SfxBaseModel::getParent() throw( uno::RuntimeException )
+uno::Reference< uno::XInterface > SAL_CALL SfxBaseModel::getParent()
 {
     SfxModelGuard aGuard( *this );
 
@@ -756,7 +749,7 @@ uno::Reference< uno::XInterface > SAL_CALL SfxBaseModel::getParent() throw( uno:
 //	XChild
 //________________________________________________________________________________________________________
 
-void SAL_CALL SfxBaseModel::setParent(const uno::Reference< uno::XInterface >& Parent) throw(NOSUPPORTEXCEPTION, uno::RuntimeException)
+void SAL_CALL SfxBaseModel::setParent(const uno::Reference< uno::XInterface >& Parent)
 {
     SfxModelGuard aGuard( *this, SfxModelGuard::E_INITIALIZING );
 	m_pData->m_xParent = Parent;
@@ -766,7 +759,7 @@ void SAL_CALL SfxBaseModel::setParent(const uno::Reference< uno::XInterface >& P
 //	XChild
 //________________________________________________________________________________________________________
 
-void SAL_CALL SfxBaseModel::dispose() throw(::com::sun::star::uno::RuntimeException)
+void SAL_CALL SfxBaseModel::dispose()
 {
     SfxModelGuard aGuard( *this, SfxModelGuard::E_INITIALIZING );
 
@@ -831,7 +824,6 @@ void SAL_CALL SfxBaseModel::dispose() throw(::com::sun::star::uno::RuntimeExcept
 //________________________________________________________________________________________________________
 
 void SAL_CALL SfxBaseModel::addEventListener( const uno::Reference< XEVENTLISTENER >& aListener )
-    throw(::com::sun::star::uno::RuntimeException)
 {
     SfxModelGuard aGuard( *this, SfxModelGuard::E_INITIALIZING );
     m_pData->m_aInterfaceContainer.addInterface( ::getCppuType((const uno::Reference< XEVENTLISTENER >*)0), aListener );
@@ -842,7 +834,6 @@ void SAL_CALL SfxBaseModel::addEventListener( const uno::Reference< XEVENTLISTEN
 //________________________________________________________________________________________________________
 
 void SAL_CALL SfxBaseModel::removeEventListener( const uno::Reference< XEVENTLISTENER >& aListener )
-    throw(::com::sun::star::uno::RuntimeException)
 {
     SfxModelGuard aGuard( *this, SfxModelGuard::E_INITIALIZING );
     m_pData->m_aInterfaceContainer.removeInterface( ::getCppuType((const uno::Reference< XEVENTLISTENER >*)0), aListener );
@@ -852,7 +843,7 @@ void SAL_CALL SfxBaseModel::removeEventListener( const uno::Reference< XEVENTLIS
 //  document::XDocumentInfoSupplier
 //________________________________________________________________________________________________________
 
-uno::Reference< document::XDocumentInfo > SAL_CALL SfxBaseModel::getDocumentInfo() throw(::com::sun::star::uno::RuntimeException)
+uno::Reference< document::XDocumentInfo > SAL_CALL SfxBaseModel::getDocumentInfo()
 {
     SfxModelGuard aGuard( *this, SfxModelGuard::E_INITIALIZING );
     if ( !m_pData->m_xDocumentInfo.is() )
@@ -898,7 +889,6 @@ uno::Reference< document::XDocumentInfo > SAL_CALL SfxBaseModel::getDocumentInfo
 // document::XDocumentPropertiesSupplier:
 uno::Reference< document::XDocumentProperties > SAL_CALL
 SfxBaseModel::getDocumentProperties()
-    throw(::com::sun::star::uno::RuntimeException)
 {
     SfxModelGuard aGuard( *this, SfxModelGuard::E_INITIALIZING );
     if ( !m_pData->m_xDocumentProperties.is() )
@@ -922,7 +912,6 @@ SfxBaseModel::getDocumentProperties()
 //________________________________________________________________________________________________________
 
 void SAL_CALL SfxBaseModel::disposing( const lang::EventObject& aObject )
-    throw(::com::sun::star::uno::RuntimeException)
 {
     ::vos::OGuard aGuard( Application::GetSolarMutex() );
 	if ( impl_isDisposed() )
@@ -946,7 +935,6 @@ void SAL_CALL SfxBaseModel::disposing( const lang::EventObject& aObject )
 
 sal_Bool SAL_CALL SfxBaseModel::attachResource( const   ::rtl::OUString&                   rURL    ,
                                                 const   uno::Sequence< beans::PropertyValue >&  rArgs   )
-    throw(::com::sun::star::uno::RuntimeException)
 {
     SfxModelGuard aGuard( *this, SfxModelGuard::E_INITIALIZING );
 	if ( rURL.getLength() == 0 && rArgs.getLength() == 1 && rArgs[0].Name.equalsAscii( "SetEmbedded" ) )
@@ -1031,7 +1019,7 @@ sal_Bool SAL_CALL SfxBaseModel::attachResource( const   ::rtl::OUString&        
 //  frame::XModel
 //________________________________________________________________________________________________________
 
-::rtl::OUString SAL_CALL SfxBaseModel::getURL() throw(::com::sun::star::uno::RuntimeException)
+::rtl::OUString SAL_CALL SfxBaseModel::getURL()
 {
     SfxModelGuard aGuard( *this );
 	return m_pData->m_sURL ;
@@ -1041,7 +1029,7 @@ sal_Bool SAL_CALL SfxBaseModel::attachResource( const   ::rtl::OUString&        
 //  frame::XModel
 //________________________________________________________________________________________________________
 
-uno::Sequence< beans::PropertyValue > SAL_CALL SfxBaseModel::getArgs() throw(::com::sun::star::uno::RuntimeException)
+uno::Sequence< beans::PropertyValue > SAL_CALL SfxBaseModel::getArgs()
 {
     SfxModelGuard aGuard( *this );
 	if ( m_pData->m_pObjectShell.Is() )
@@ -1141,7 +1129,6 @@ uno::Sequence< beans::PropertyValue > SAL_CALL SfxBaseModel::getArgs() throw(::c
 //________________________________________________________________________________________________________
 
 void SAL_CALL SfxBaseModel::connectController( const uno::Reference< frame::XController >& xController )
-    throw(::com::sun::star::uno::RuntimeException)
 {
     SfxModelGuard aGuard( *this );
     OSL_PRECOND( xController.is(), "SfxBaseModel::connectController: invalid controller!" );
@@ -1170,7 +1157,7 @@ void SAL_CALL SfxBaseModel::connectController( const uno::Reference< frame::XCon
 //  frame::XModel
 //________________________________________________________________________________________________________
 
-void SAL_CALL SfxBaseModel::disconnectController( const uno::Reference< frame::XController >& xController ) throw(::com::sun::star::uno::RuntimeException)
+void SAL_CALL SfxBaseModel::disconnectController( const uno::Reference< frame::XController >& xController )
 {
     SfxModelGuard aGuard( *this );
 
@@ -1207,22 +1194,22 @@ namespace
         }
 
         // XUndoAction
-        virtual ::rtl::OUString SAL_CALL getTitle() throw (RuntimeException);
-        virtual void SAL_CALL undo(  ) throw (UndoFailedException, RuntimeException);
-        virtual void SAL_CALL redo(  ) throw (UndoFailedException, RuntimeException);
+        virtual ::rtl::OUString SAL_CALL getTitle();
+        virtual void SAL_CALL undo(  );
+        virtual void SAL_CALL redo(  );
 
     private:
         const Reference< XModel >   m_xModel;
         const bool                  m_bUndoIsUnlock;
     };
 
-    ::rtl::OUString SAL_CALL ControllerLockUndoAction::getTitle() throw (RuntimeException)
+    ::rtl::OUString SAL_CALL ControllerLockUndoAction::getTitle()
     {
         // this action is intended to be used within an UndoContext only, so nobody will ever see this title ...
         return ::rtl::OUString();
     }
 
-    void SAL_CALL ControllerLockUndoAction::undo(  ) throw (UndoFailedException, RuntimeException)
+    void SAL_CALL ControllerLockUndoAction::undo(  )
     {
         if ( m_bUndoIsUnlock )
             m_xModel->unlockControllers();
@@ -1230,7 +1217,7 @@ namespace
             m_xModel->lockControllers();
     }
 
-    void SAL_CALL ControllerLockUndoAction::redo(  ) throw (UndoFailedException, RuntimeException)
+    void SAL_CALL ControllerLockUndoAction::redo(  )
     {
         if ( m_bUndoIsUnlock )
             m_xModel->lockControllers();
@@ -1243,7 +1230,7 @@ namespace
 //  frame::XModel
 //________________________________________________________________________________________________________
 
-void SAL_CALL SfxBaseModel::lockControllers() throw(::com::sun::star::uno::RuntimeException)
+void SAL_CALL SfxBaseModel::lockControllers()
 {
     SfxModelGuard aGuard( *this );
 
@@ -1262,7 +1249,7 @@ void SAL_CALL SfxBaseModel::lockControllers() throw(::com::sun::star::uno::Runti
 //  frame::XModel
 //________________________________________________________________________________________________________
 
-void SAL_CALL SfxBaseModel::unlockControllers() throw(::com::sun::star::uno::RuntimeException)
+void SAL_CALL SfxBaseModel::unlockControllers()
 {
     SfxModelGuard aGuard( *this );
 
@@ -1281,7 +1268,7 @@ void SAL_CALL SfxBaseModel::unlockControllers() throw(::com::sun::star::uno::Run
 //  frame::XModel
 //________________________________________________________________________________________________________
 
-sal_Bool SAL_CALL SfxBaseModel::hasControllersLocked() throw(::com::sun::star::uno::RuntimeException)
+sal_Bool SAL_CALL SfxBaseModel::hasControllersLocked()
 {
     SfxModelGuard aGuard( *this );
 	return ( m_pData->m_nControllerLockCount != 0 ) ;
@@ -1291,7 +1278,7 @@ sal_Bool SAL_CALL SfxBaseModel::hasControllersLocked() throw(::com::sun::star::u
 //  frame::XModel
 //________________________________________________________________________________________________________
 
-uno::Reference< frame::XController > SAL_CALL SfxBaseModel::getCurrentController() throw(::com::sun::star::uno::RuntimeException)
+uno::Reference< frame::XController > SAL_CALL SfxBaseModel::getCurrentController()
 {
     SfxModelGuard aGuard( *this );
 
@@ -1308,7 +1295,6 @@ uno::Reference< frame::XController > SAL_CALL SfxBaseModel::getCurrentController
 //________________________________________________________________________________________________________
 
 void SAL_CALL SfxBaseModel::setCurrentController( const uno::Reference< frame::XController >& xCurrentController )
-        throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::uno::RuntimeException)
 {
     SfxModelGuard aGuard( *this );
 
@@ -1319,7 +1305,7 @@ void SAL_CALL SfxBaseModel::setCurrentController( const uno::Reference< frame::X
 //  frame::XModel
 //________________________________________________________________________________________________________
 
-uno::Reference< uno::XInterface > SAL_CALL SfxBaseModel::getCurrentSelection() throw(::com::sun::star::uno::RuntimeException)
+uno::Reference< uno::XInterface > SAL_CALL SfxBaseModel::getCurrentSelection()
 {
     SfxModelGuard aGuard( *this );
 
@@ -1343,7 +1329,7 @@ uno::Reference< uno::XInterface > SAL_CALL SfxBaseModel::getCurrentSelection() t
 //	XModifiable2
 //________________________________________________________________________________________________________
 
-sal_Bool SAL_CALL SfxBaseModel::disableSetModified() throw (::com::sun::star::uno::RuntimeException)
+sal_Bool SAL_CALL SfxBaseModel::disableSetModified()
 {
     SfxModelGuard aGuard( *this );
 
@@ -1356,7 +1342,7 @@ sal_Bool SAL_CALL SfxBaseModel::disableSetModified() throw (::com::sun::star::un
 	return bResult;
 }
 
-sal_Bool SAL_CALL SfxBaseModel::enableSetModified() throw (::com::sun::star::uno::RuntimeException)
+sal_Bool SAL_CALL SfxBaseModel::enableSetModified()
 {
     SfxModelGuard aGuard( *this );
 
@@ -1369,7 +1355,7 @@ sal_Bool SAL_CALL SfxBaseModel::enableSetModified() throw (::com::sun::star::uno
 	return bResult;
 }
 
-sal_Bool SAL_CALL SfxBaseModel::isSetModifiedEnabled() throw (::com::sun::star::uno::RuntimeException)
+sal_Bool SAL_CALL SfxBaseModel::isSetModifiedEnabled()
 {
     SfxModelGuard aGuard( *this );
 
@@ -1383,7 +1369,7 @@ sal_Bool SAL_CALL SfxBaseModel::isSetModifiedEnabled() throw (::com::sun::star::
 //	XModifiable
 //________________________________________________________________________________________________________
 
-sal_Bool SAL_CALL SfxBaseModel::isModified() throw(::com::sun::star::uno::RuntimeException)
+sal_Bool SAL_CALL SfxBaseModel::isModified()
 {
     SfxModelGuard aGuard( *this );
 
@@ -1395,7 +1381,6 @@ sal_Bool SAL_CALL SfxBaseModel::isModified() throw(::com::sun::star::uno::Runtim
 //________________________________________________________________________________________________________
 
 void SAL_CALL SfxBaseModel::setModified( sal_Bool bModified )
-        throw (::com::sun::star::beans::PropertyVetoException, ::com::sun::star::uno::RuntimeException)
 {
     SfxModelGuard aGuard( *this );
 
@@ -1407,7 +1392,7 @@ void SAL_CALL SfxBaseModel::setModified( sal_Bool bModified )
 //	XModifiable
 //________________________________________________________________________________________________________
 
-void SAL_CALL SfxBaseModel::addModifyListener(const uno::Reference< XMODIFYLISTENER >& xListener) throw( uno::RuntimeException )
+void SAL_CALL SfxBaseModel::addModifyListener(const uno::Reference< XMODIFYLISTENER >& xListener)
 {
     SfxModelGuard aGuard( *this, SfxModelGuard::E_INITIALIZING );
 
@@ -1418,7 +1403,7 @@ void SAL_CALL SfxBaseModel::addModifyListener(const uno::Reference< XMODIFYLISTE
 //	XModifiable
 //________________________________________________________________________________________________________
 
-void SAL_CALL SfxBaseModel::removeModifyListener(const uno::Reference< XMODIFYLISTENER >& xListener) throw( uno::RuntimeException )
+void SAL_CALL SfxBaseModel::removeModifyListener(const uno::Reference< XMODIFYLISTENER >& xListener)
 {
     SfxModelGuard aGuard( *this );
 
@@ -1429,7 +1414,7 @@ void SAL_CALL SfxBaseModel::removeModifyListener(const uno::Reference< XMODIFYLI
 //  XCloseable
 //____________________________________________________________________________________________________
 
-void SAL_CALL SfxBaseModel::close( sal_Bool bDeliverOwnership ) throw (util::CloseVetoException, uno::RuntimeException)
+void SAL_CALL SfxBaseModel::close( sal_Bool bDeliverOwnership )
 {
     static ::rtl::OUString MSG_1 = ::rtl::OUString::createFromAscii("Can't close while saving.");
 
@@ -1494,7 +1479,7 @@ void SAL_CALL SfxBaseModel::close( sal_Bool bDeliverOwnership ) throw (util::Clo
 //  XCloseBroadcaster
 //____________________________________________________________________________________________________
 
-void SAL_CALL SfxBaseModel::addCloseListener( const uno::Reference< XCLOSELISTENER >& xListener ) throw (uno::RuntimeException)
+void SAL_CALL SfxBaseModel::addCloseListener( const uno::Reference< XCLOSELISTENER >& xListener )
 {
     SfxModelGuard aGuard( *this, SfxModelGuard::E_INITIALIZING );
 
@@ -1505,7 +1490,7 @@ void SAL_CALL SfxBaseModel::addCloseListener( const uno::Reference< XCLOSELISTEN
 //  XCloseBroadcaster
 //____________________________________________________________________________________________________
 
-void SAL_CALL SfxBaseModel::removeCloseListener( const uno::Reference< XCLOSELISTENER >& xListener ) throw (uno::RuntimeException)
+void SAL_CALL SfxBaseModel::removeCloseListener( const uno::Reference< XCLOSELISTENER >& xListener )
 {
     SfxModelGuard aGuard( *this );
 
@@ -1516,7 +1501,7 @@ void SAL_CALL SfxBaseModel::removeCloseListener( const uno::Reference< XCLOSELIS
 //	XPrintable
 //________________________________________________________________________________________________________
 
-uno::Sequence< beans::PropertyValue > SAL_CALL SfxBaseModel::getPrinter() throw(::com::sun::star::uno::RuntimeException)
+uno::Sequence< beans::PropertyValue > SAL_CALL SfxBaseModel::getPrinter()
 {
     SfxModelGuard aGuard( *this );
 
@@ -1527,7 +1512,6 @@ uno::Sequence< beans::PropertyValue > SAL_CALL SfxBaseModel::getPrinter() throw(
 }
 
 void SAL_CALL SfxBaseModel::setPrinter(const uno::Sequence< beans::PropertyValue >& rPrinter)
-        throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException)
 {
     SfxModelGuard aGuard( *this );
 
@@ -1536,7 +1520,6 @@ void SAL_CALL SfxBaseModel::setPrinter(const uno::Sequence< beans::PropertyValue
 }
 
 void SAL_CALL SfxBaseModel::print(const uno::Sequence< beans::PropertyValue >& rOptions)
-        throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException)
 {
     SfxModelGuard aGuard( *this );
 
@@ -1548,7 +1531,7 @@ void SAL_CALL SfxBaseModel::print(const uno::Sequence< beans::PropertyValue >& r
 //	XStorable
 //________________________________________________________________________________________________________
 
-sal_Bool SAL_CALL SfxBaseModel::hasLocation() throw(::com::sun::star::uno::RuntimeException)
+sal_Bool SAL_CALL SfxBaseModel::hasLocation()
 {
     SfxModelGuard aGuard( *this );
 
@@ -1559,7 +1542,7 @@ sal_Bool SAL_CALL SfxBaseModel::hasLocation() throw(::com::sun::star::uno::Runti
 //	XStorable
 //________________________________________________________________________________________________________
 
-::rtl::OUString SAL_CALL SfxBaseModel::getLocation() throw(::com::sun::star::uno::RuntimeException)
+::rtl::OUString SAL_CALL SfxBaseModel::getLocation()
 {
     SfxModelGuard aGuard( *this );
 
@@ -1579,7 +1562,7 @@ sal_Bool SAL_CALL SfxBaseModel::hasLocation() throw(::com::sun::star::uno::Runti
 //	XStorable
 //________________________________________________________________________________________________________
 
-sal_Bool SAL_CALL SfxBaseModel::isReadonly() throw(::com::sun::star::uno::RuntimeException)
+sal_Bool SAL_CALL SfxBaseModel::isReadonly()
 {
     SfxModelGuard aGuard( *this );
 
@@ -1591,9 +1574,6 @@ sal_Bool SAL_CALL SfxBaseModel::isReadonly() throw(::com::sun::star::uno::Runtim
 //________________________________________________________________________________________________________
 
 void SAL_CALL SfxBaseModel::storeSelf( const    uno::Sequence< beans::PropertyValue >&  aSeqArgs )
-		throw ( ::com::sun::star::lang::IllegalArgumentException,
-				::com::sun::star::io::IOException,
-				::com::sun::star::uno::RuntimeException )
 {
 	RTL_LOGFILE_PRODUCT_CONTEXT( aPerfLog, "PERFORMANCE - SfxBaseModel::storeSelf" );
 
@@ -1681,7 +1661,7 @@ void SAL_CALL SfxBaseModel::storeSelf( const    uno::Sequence< beans::PropertyVa
 //	XStorable
 //________________________________________________________________________________________________________
 
-void SAL_CALL SfxBaseModel::store() throw (::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException)
+void SAL_CALL SfxBaseModel::store()
 {
 	storeSelf( uno::Sequence< beans::PropertyValue >() );
 }
@@ -1692,7 +1672,6 @@ void SAL_CALL SfxBaseModel::store() throw (::com::sun::star::io::IOException, ::
 
 void SAL_CALL SfxBaseModel::storeAsURL( const   ::rtl::OUString&                   rURL    ,
                                         const   uno::Sequence< beans::PropertyValue >&  rArgs   )
-        throw (::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException)
 {
 	RTL_LOGFILE_PRODUCT_CONTEXT( aPerfLog, "PERFORMANCE - SfxBaseModel::storeAsURL" );
 
@@ -1719,7 +1698,7 @@ void SAL_CALL SfxBaseModel::storeAsURL( const   ::rtl::OUString&                
 //________________________________________________________________________________________________________
 //	XUndoManagerSupplier
 //________________________________________________________________________________________________________
-Reference< XUndoManager > SAL_CALL SfxBaseModel::getUndoManager(  ) throw (RuntimeException)
+Reference< XUndoManager > SAL_CALL SfxBaseModel::getUndoManager(  )
 {
     SfxModelGuard aGuard( *this );
     if ( !m_pData->m_pDocumentUndoManager.is() )
@@ -1733,7 +1712,6 @@ Reference< XUndoManager > SAL_CALL SfxBaseModel::getUndoManager(  ) throw (Runti
 
 void SAL_CALL SfxBaseModel::storeToURL( const   ::rtl::OUString&                   rURL    ,
                                         const   uno::Sequence< beans::PropertyValue >&  rArgs   )
-        throw (::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException)
 {
     SfxModelGuard aGuard( *this );
 
@@ -1745,13 +1723,13 @@ void SAL_CALL SfxBaseModel::storeToURL( const   ::rtl::OUString&                
     }
 }
 
-::sal_Bool SAL_CALL SfxBaseModel::wasModifiedSinceLastSave() throw ( RuntimeException )
+::sal_Bool SAL_CALL SfxBaseModel::wasModifiedSinceLastSave()
 {
     SfxModelGuard aGuard( *this );
     return m_pData->m_bModifiedSinceLastSave;
 }
 
-void SAL_CALL SfxBaseModel::storeToRecoveryFile( const ::rtl::OUString& i_TargetLocation, const Sequence< PropertyValue >& i_MediaDescriptor ) throw ( RuntimeException, IOException, WrappedTargetException )
+void SAL_CALL SfxBaseModel::storeToRecoveryFile( const ::rtl::OUString& i_TargetLocation, const Sequence< PropertyValue >& i_MediaDescriptor )
 {
     SfxModelGuard aGuard( *this );
 
@@ -1763,7 +1741,7 @@ void SAL_CALL SfxBaseModel::storeToRecoveryFile( const ::rtl::OUString& i_Target
     m_pData->m_bModifiedSinceLastSave = sal_False;
 }
 
-void SAL_CALL SfxBaseModel::recoverFromFile( const ::rtl::OUString& i_SourceLocation, const ::rtl::OUString& i_SalvagedFile, const Sequence< PropertyValue >& i_MediaDescriptor ) throw ( RuntimeException, IOException, WrappedTargetException )
+void SAL_CALL SfxBaseModel::recoverFromFile( const ::rtl::OUString& i_SourceLocation, const ::rtl::OUString& i_SalvagedFile, const Sequence< PropertyValue >& i_MediaDescriptor )
 {
     SfxModelGuard aGuard( *this, SfxModelGuard::E_INITIALIZING );
 
@@ -1795,10 +1773,6 @@ void SAL_CALL SfxBaseModel::recoverFromFile( const ::rtl::OUString& i_SourceLoca
 //________________________________________________________________________________________________________
 
 void SAL_CALL SfxBaseModel::initNew()
-		throw (::com::sun::star::frame::DoubleInitializationException,
-			   ::com::sun::star::io::IOException,
-			   ::com::sun::star::uno::RuntimeException,
-			   ::com::sun::star::uno::Exception)
 {
     SfxModelGuard aGuard( *this, SfxModelGuard::E_INITIALIZING );
     if ( IsInitialized() )
@@ -1826,10 +1800,6 @@ void SAL_CALL SfxBaseModel::initNew()
 //________________________________________________________________________________________________________
 
 void SAL_CALL SfxBaseModel::load(   const uno::Sequence< beans::PropertyValue >& seqArguments )
-		throw (::com::sun::star::frame::DoubleInitializationException,
-               ::com::sun::star::io::IOException,
-			   ::com::sun::star::uno::RuntimeException,
-			   ::com::sun::star::uno::Exception)
 {
     SfxModelGuard aGuard( *this, SfxModelGuard::E_INITIALIZING );
     if ( IsInitialized() )
@@ -1995,9 +1965,6 @@ void SAL_CALL SfxBaseModel::load(   const uno::Sequence< beans::PropertyValue >&
 //________________________________________________________________________________________________________
 
 uno::Any SAL_CALL SfxBaseModel::getTransferData( const DATAFLAVOR& aFlavor )
-		throw (::com::sun::star::datatransfer::UnsupportedFlavorException,
-			   ::com::sun::star::io::IOException,
-			   ::com::sun::star::uno::RuntimeException)
 {
     SfxModelGuard aGuard( *this );
 
@@ -2260,7 +2227,6 @@ uno::Any SAL_CALL SfxBaseModel::getTransferData( const DATAFLAVOR& aFlavor )
 
 
 uno::Sequence< DATAFLAVOR > SAL_CALL SfxBaseModel::getTransferDataFlavors()
-		throw (::com::sun::star::uno::RuntimeException)
 {
     SfxModelGuard aGuard( *this );
 
@@ -2334,7 +2300,6 @@ uno::Sequence< DATAFLAVOR > SAL_CALL SfxBaseModel::getTransferDataFlavors()
 
 
 sal_Bool SAL_CALL SfxBaseModel::isDataFlavorSupported( const DATAFLAVOR& aFlavor )
-		throw (::com::sun::star::uno::RuntimeException)
 {
     SfxModelGuard aGuard( *this );
 
@@ -2398,7 +2363,7 @@ sal_Bool SAL_CALL SfxBaseModel::isDataFlavorSupported( const DATAFLAVOR& aFlavor
 //	XEventsSupplier
 //--------------------------------------------------------------------------------------------------------
 
-uno::Reference< container::XNameReplace > SAL_CALL SfxBaseModel::getEvents() throw( uno::RuntimeException )
+uno::Reference< container::XNameReplace > SAL_CALL SfxBaseModel::getEvents()
 {
     SfxModelGuard aGuard( *this );
 
@@ -2414,7 +2379,7 @@ uno::Reference< container::XNameReplace > SAL_CALL SfxBaseModel::getEvents() thr
 //	XEmbeddedScripts
 //--------------------------------------------------------------------------------------------------------
 
-uno::Reference< script::XStorageBasedLibraryContainer > SAL_CALL SfxBaseModel::getBasicLibraries() throw (RuntimeException)
+uno::Reference< script::XStorageBasedLibraryContainer > SAL_CALL SfxBaseModel::getBasicLibraries()
 {
     SfxModelGuard aGuard( *this );
 
@@ -2424,7 +2389,7 @@ uno::Reference< script::XStorageBasedLibraryContainer > SAL_CALL SfxBaseModel::g
     return xBasicLibraries;
 }
 
-uno::Reference< script::XStorageBasedLibraryContainer > SAL_CALL SfxBaseModel::getDialogLibraries() throw (RuntimeException)
+uno::Reference< script::XStorageBasedLibraryContainer > SAL_CALL SfxBaseModel::getDialogLibraries()
 {
     SfxModelGuard aGuard( *this );
 
@@ -2434,7 +2399,7 @@ uno::Reference< script::XStorageBasedLibraryContainer > SAL_CALL SfxBaseModel::g
     return xDialogLibraries;
 }
 
-::sal_Bool SAL_CALL SfxBaseModel::getAllowMacroExecution() throw (RuntimeException)
+::sal_Bool SAL_CALL SfxBaseModel::getAllowMacroExecution()
 {
     SfxModelGuard aGuard( *this );
 
@@ -2447,7 +2412,7 @@ uno::Reference< script::XStorageBasedLibraryContainer > SAL_CALL SfxBaseModel::g
 //	XScriptInvocationContext
 //--------------------------------------------------------------------------------------------------------
 
-Reference< document::XEmbeddedScripts > SAL_CALL SfxBaseModel::getScriptContainer() throw (RuntimeException)
+Reference< document::XEmbeddedScripts > SAL_CALL SfxBaseModel::getScriptContainer()
 {
     SfxModelGuard aGuard( *this );
 
@@ -2483,7 +2448,7 @@ Reference< document::XEmbeddedScripts > SAL_CALL SfxBaseModel::getScriptContaine
 //	XEventBroadcaster
 //--------------------------------------------------------------------------------------------------------
 
-void SAL_CALL SfxBaseModel::addEventListener( const uno::Reference< XDOCEVENTLISTENER >& aListener ) throw( uno::RuntimeException )
+void SAL_CALL SfxBaseModel::addEventListener( const uno::Reference< XDOCEVENTLISTENER >& aListener )
 {
     SfxModelGuard aGuard( *this, SfxModelGuard::E_INITIALIZING );
 
@@ -2494,7 +2459,7 @@ void SAL_CALL SfxBaseModel::addEventListener( const uno::Reference< XDOCEVENTLIS
 //	XEventBroadcaster
 //--------------------------------------------------------------------------------------------------------
 
-void SAL_CALL SfxBaseModel::removeEventListener( const uno::Reference< XDOCEVENTLISTENER >& aListener ) throw( uno::RuntimeException )
+void SAL_CALL SfxBaseModel::removeEventListener( const uno::Reference< XDOCEVENTLISTENER >& aListener )
 {
     SfxModelGuard aGuard( *this );
 
@@ -2506,7 +2471,6 @@ void SAL_CALL SfxBaseModel::removeEventListener( const uno::Reference< XDOCEVENT
 //--------------------------------------------------------------------------------------------------------
 // ---------------------------------
 void SAL_CALL SfxBaseModel::addDocumentEventListener( const uno::Reference< document::XDocumentEventListener >& aListener )
-    throw ( uno::RuntimeException )
 {
     SfxModelGuard aGuard( *this, SfxModelGuard::E_INITIALIZING );
     m_pData->m_aInterfaceContainer.addInterface( ::getCppuType((const uno::Reference< document::XDocumentEventListener >*)0), aListener );
@@ -2514,7 +2478,6 @@ void SAL_CALL SfxBaseModel::addDocumentEventListener( const uno::Reference< docu
 
 // ---------------------------------
 void SAL_CALL SfxBaseModel::removeDocumentEventListener( const uno::Reference< document::XDocumentEventListener >& aListener )
-    throw ( uno::RuntimeException )
 {
     SfxModelGuard aGuard( *this );
     m_pData->m_aInterfaceContainer.removeInterface( ::getCppuType((const uno::Reference< document::XDocumentEventListener >*)0), aListener );
@@ -2522,7 +2485,6 @@ void SAL_CALL SfxBaseModel::removeDocumentEventListener( const uno::Reference< d
 
 // ---------------------------------
 void SAL_CALL SfxBaseModel::notifyDocumentEvent( const ::rtl::OUString&, const uno::Reference< frame::XController2 >&, const uno::Any& )
-    throw ( lang::IllegalArgumentException, lang::NoSupportException, uno::RuntimeException )
 {
     throw lang::NoSupportException( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "SfxBaseModel controls all the sent notifications itself!" ) ), uno::Reference< uno::XInterface >() );
 }
@@ -3101,7 +3063,7 @@ void SfxBaseModel::postEvent_Impl( const ::rtl::OUString& aName, const uno::Refe
 
 }
 
-uno::Reference < container::XIndexAccess > SAL_CALL SfxBaseModel::getViewData() throw(::com::sun::star::uno::RuntimeException)
+uno::Reference < container::XIndexAccess > SAL_CALL SfxBaseModel::getViewData()
 {
     SfxModelGuard aGuard( *this );
 
@@ -3144,7 +3106,7 @@ uno::Reference < container::XIndexAccess > SAL_CALL SfxBaseModel::getViewData() 
 	return m_pData->m_contViewData;
 }
 
-void SAL_CALL SfxBaseModel::setViewData( const uno::Reference < container::XIndexAccess >& aData ) throw(::com::sun::star::uno::RuntimeException)
+void SAL_CALL SfxBaseModel::setViewData( const uno::Reference < container::XIndexAccess >& aData )
 {
     SfxModelGuard aGuard( *this );
 
@@ -3184,7 +3146,7 @@ sal_Bool SfxBaseModel::hasEventListeners() const
     return !impl_isDisposed() && (NULL != m_pData->m_aInterfaceContainer.getContainer( ::getCppuType((const uno::Reference< XDOCEVENTLISTENER >*)0) ) );
 }
 
-void SAL_CALL SfxBaseModel::addPrintJobListener( const uno::Reference< view::XPrintJobListener >& xListener ) throw (uno::RuntimeException)
+void SAL_CALL SfxBaseModel::addPrintJobListener( const uno::Reference< view::XPrintJobListener >& xListener )
 {
     SfxModelGuard aGuard( *this, SfxModelGuard::E_INITIALIZING );
 
@@ -3198,7 +3160,7 @@ void SAL_CALL SfxBaseModel::addPrintJobListener( const uno::Reference< view::XPr
 //		m_pData->m_aInterfaceContainer.addInterface( ::getCppuType((const uno::Reference< view::XPrintJobListener >*)0), xListener );
 }
 
-void SAL_CALL SfxBaseModel::removePrintJobListener( const uno::Reference< view::XPrintJobListener >& xListener ) throw (uno::RuntimeException)
+void SAL_CALL SfxBaseModel::removePrintJobListener( const uno::Reference< view::XPrintJobListener >& xListener )
 {
     SfxModelGuard aGuard( *this );
 
@@ -3216,7 +3178,7 @@ void SAL_CALL SfxBaseModel::removePrintJobListener( const uno::Reference< view::
 // the corresponding <so3/iface.hxx> cannon be included because it provides
 // declaration of class SvBorder that conflicts with ../../inc/viewfrm.hxx
 class SvObject;
-sal_Int64 SAL_CALL SfxBaseModel::getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& aIdentifier ) throw(::com::sun::star::uno::RuntimeException)
+sal_Int64 SAL_CALL SfxBaseModel::getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& aIdentifier )
 {
     ::vos::OGuard aGuard( Application::GetSolarMutex() );
 	if ( GetObjectShell() )
@@ -3251,7 +3213,6 @@ void SfxBaseModel::ListenForStorage_Impl( const uno::Reference< embed::XStorage 
 }
 
 uno::Reference< XSTORAGE > SAL_CALL SfxBaseModel::getDocumentSubStorage( const ::rtl::OUString& aStorageName, sal_Int32 nMode )
-    throw ( uno::RuntimeException)
 {
     SfxModelGuard aGuard( *this );
 
@@ -3275,8 +3236,6 @@ uno::Reference< XSTORAGE > SAL_CALL SfxBaseModel::getDocumentSubStorage( const :
 }
 
 Sequence< ::rtl::OUString > SAL_CALL SfxBaseModel::getDocumentSubStoragesNames()
-	throw ( io::IOException,
-			RuntimeException )
 {
     SfxModelGuard aGuard( *this );
 
@@ -3315,7 +3274,6 @@ Sequence< ::rtl::OUString > SAL_CALL SfxBaseModel::getDocumentSubStoragesNames()
 
 
 uno::Reference< script::provider::XScriptProvider > SAL_CALL SfxBaseModel::getScriptProvider()
-    throw ( uno::RuntimeException )
 {
     SfxModelGuard aGuard( *this );
 
@@ -3421,7 +3379,6 @@ static void ConvertSlotsToCommands( SfxObjectShell* pDoc, uno::Reference< contai
 }
 
 uno::Reference< ui::XUIConfigurationManager > SAL_CALL SfxBaseModel::getUIConfigurationManager()
-        throw ( uno::RuntimeException )
 {
     SfxModelGuard aGuard( *this );
 
@@ -3534,10 +3491,6 @@ uno::Reference< ui::XUIConfigurationManager > SAL_CALL SfxBaseModel::getUIConfig
 //____________________________________________________________________________________________________
 
 void SAL_CALL SfxBaseModel::setVisualAreaSize( sal_Int64 nAspect, const awt::Size& aSize )
-		throw ( lang::IllegalArgumentException,
-				embed::WrongStateException,
-				uno::Exception,
-				uno::RuntimeException )
 {
     SfxModelGuard aGuard( *this );
 
@@ -3566,10 +3519,6 @@ void SAL_CALL SfxBaseModel::setVisualAreaSize( sal_Int64 nAspect, const awt::Siz
 }
 
 awt::Size SAL_CALL SfxBaseModel::getVisualAreaSize( sal_Int64 /*nAspect*/ )
-		throw ( lang::IllegalArgumentException,
-				embed::WrongStateException,
-				uno::Exception,
-				uno::RuntimeException)
 {
     SfxModelGuard aGuard( *this );
 
@@ -3597,8 +3546,6 @@ awt::Size SAL_CALL SfxBaseModel::getVisualAreaSize( sal_Int64 /*nAspect*/ )
 
 
 sal_Int32 SAL_CALL SfxBaseModel::getMapUnit( sal_Int64 /*nAspect*/ )
-		throw ( uno::Exception,
-				uno::RuntimeException)
 {
     SfxModelGuard aGuard( *this );
 
@@ -3609,10 +3556,6 @@ sal_Int32 SAL_CALL SfxBaseModel::getMapUnit( sal_Int64 /*nAspect*/ )
 }
 
 embed::VisualRepresentation SAL_CALL SfxBaseModel::getPreferredVisualRepresentation( ::sal_Int64 /*nAspect*/ )
-		throw ( lang::IllegalArgumentException,
-				embed::WrongStateException,
-				uno::Exception,
-				uno::RuntimeException )
 {
     SfxModelGuard aGuard( *this );
 
@@ -3634,11 +3577,6 @@ embed::VisualRepresentation SAL_CALL SfxBaseModel::getPreferredVisualRepresentat
 
 void SAL_CALL SfxBaseModel::loadFromStorage( const uno::Reference< XSTORAGE >& xStorage,
                                              const uno::Sequence< beans::PropertyValue >& aMediaDescriptor )
-    throw ( lang::IllegalArgumentException,
-			DOUBLEINITIALIZATIONEXCEPTION,
-			IOEXCEPTION,
-			EXCEPTION,
-            uno::RuntimeException )
 {
     SfxModelGuard aGuard( *this, SfxModelGuard::E_INITIALIZING );
     if ( IsInitialized() )
@@ -3673,10 +3611,6 @@ void SAL_CALL SfxBaseModel::loadFromStorage( const uno::Reference< XSTORAGE >& x
 
 void SAL_CALL SfxBaseModel::storeToStorage( const uno::Reference< XSTORAGE >& xStorage,
                                 const uno::Sequence< beans::PropertyValue >& aMediaDescriptor )
-    throw ( lang::IllegalArgumentException,
-			IOEXCEPTION,
-			EXCEPTION,
-            uno::RuntimeException )
 {
     SfxModelGuard aGuard( *this );
 
@@ -3734,10 +3668,6 @@ void SAL_CALL SfxBaseModel::storeToStorage( const uno::Reference< XSTORAGE >& xS
 }
 
 void SAL_CALL SfxBaseModel::switchToStorage( const uno::Reference< XSTORAGE >& xStorage )
-        throw ( lang::IllegalArgumentException,
-				IOEXCEPTION,
-				EXCEPTION,
-                uno::RuntimeException )
 {
     SfxModelGuard aGuard( *this );
 
@@ -3759,9 +3689,6 @@ void SAL_CALL SfxBaseModel::switchToStorage( const uno::Reference< XSTORAGE >& x
 }
 
 uno::Reference< XSTORAGE > SAL_CALL SfxBaseModel::getDocumentStorage()
-		throw ( IOEXCEPTION,
-				EXCEPTION,
-                uno::RuntimeException )
 {
     SfxModelGuard aGuard( *this );
 
@@ -3774,7 +3701,6 @@ uno::Reference< XSTORAGE > SAL_CALL SfxBaseModel::getDocumentStorage()
 
 void SAL_CALL SfxBaseModel::addStorageChangeListener(
             const uno::Reference< document::XStorageChangeListener >& xListener )
-        throw ( uno::RuntimeException )
 {
     SfxModelGuard aGuard( *this, SfxModelGuard::E_INITIALIZING );
 
@@ -3784,7 +3710,6 @@ void SAL_CALL SfxBaseModel::addStorageChangeListener(
 
 void SAL_CALL SfxBaseModel::removeStorageChangeListener(
             const uno::Reference< document::XStorageChangeListener >& xListener )
-        throw ( uno::RuntimeException )
 {
     SfxModelGuard aGuard( *this );
 
@@ -3810,7 +3735,6 @@ bool SfxBaseModel::impl_getPrintHelper()
 //=============================================================================
 // css.frame.XModule
  void SAL_CALL SfxBaseModel::setIdentifier(const ::rtl::OUString& Identifier)
-    throw (css::uno::RuntimeException)
 {
     SfxModelGuard aGuard( *this );
     m_pData->m_sModuleIdentifier = Identifier;
@@ -3819,7 +3743,6 @@ bool SfxBaseModel::impl_getPrintHelper()
 //=============================================================================
 // css.frame.XModule
  ::rtl::OUString SAL_CALL SfxBaseModel::getIdentifier()
-    throw (css::uno::RuntimeException)
 {
     SfxModelGuard aGuard( *this );
     if (m_pData->m_sModuleIdentifier.getLength() > 0)
@@ -3871,7 +3794,6 @@ css::uno::Reference< css::frame::XUntitledNumbers > SfxBaseModel::impl_getUntitl
 //=============================================================================
 // css.frame.XTitle
 ::rtl::OUString SAL_CALL SfxBaseModel::getTitle()
-    throw (css::uno::RuntimeException)
 {
     // SYNCHRONIZED ->
     SfxModelGuard aGuard( *this );
@@ -3902,7 +3824,6 @@ css::uno::Reference< css::frame::XUntitledNumbers > SfxBaseModel::impl_getUntitl
 //=============================================================================
 // css.frame.XTitle
 void SAL_CALL SfxBaseModel::setTitle( const ::rtl::OUString& sTitle )
-    throw (css::uno::RuntimeException)
 {
     // SYNCHRONIZED ->
     SfxModelGuard aGuard( *this );
@@ -3914,7 +3835,6 @@ void SAL_CALL SfxBaseModel::setTitle( const ::rtl::OUString& sTitle )
 //=============================================================================
 // css.frame.XTitleChangeBroadcaster
 void SAL_CALL SfxBaseModel::addTitleChangeListener( const css::uno::Reference< css::frame::XTitleChangeListener >& xListener )
-    throw (css::uno::RuntimeException)
 {
     // SYNCHRONIZED ->
     SfxModelGuard aGuard( *this, SfxModelGuard::E_INITIALIZING );
@@ -3927,7 +3847,6 @@ void SAL_CALL SfxBaseModel::addTitleChangeListener( const css::uno::Reference< c
 //=============================================================================
 // css.frame.XTitleChangeBroadcaster
 void SAL_CALL SfxBaseModel::removeTitleChangeListener( const css::uno::Reference< css::frame::XTitleChangeListener >& xListener )
-    throw (css::uno::RuntimeException)
 {
     // SYNCHRONIZED ->
     SfxModelGuard aGuard( *this );
@@ -3940,8 +3859,6 @@ void SAL_CALL SfxBaseModel::removeTitleChangeListener( const css::uno::Reference
 //=============================================================================
 // css.frame.XUntitledNumbers
 ::sal_Int32 SAL_CALL SfxBaseModel::leaseNumber( const css::uno::Reference< css::uno::XInterface >& xComponent )
-    throw (css::lang::IllegalArgumentException,
-           css::uno::RuntimeException         )
 {
     SfxModelGuard aGuard( *this );
 
@@ -3951,8 +3868,6 @@ void SAL_CALL SfxBaseModel::removeTitleChangeListener( const css::uno::Reference
 //=============================================================================
 // css.frame.XUntitledNumbers
 void SAL_CALL SfxBaseModel::releaseNumber( ::sal_Int32 nNumber )
-    throw (css::lang::IllegalArgumentException,
-           css::uno::RuntimeException         )
 {
     SfxModelGuard aGuard( *this );
     impl_getUntitledHelper ()->releaseNumber (nNumber);
@@ -3961,8 +3876,6 @@ void SAL_CALL SfxBaseModel::releaseNumber( ::sal_Int32 nNumber )
 //=============================================================================
 // css.frame.XUntitledNumbers
 void SAL_CALL SfxBaseModel::releaseNumberForComponent( const css::uno::Reference< css::uno::XInterface >& xComponent )
-    throw (css::lang::IllegalArgumentException,
-           css::uno::RuntimeException         )
 {
     SfxModelGuard aGuard( *this );
     impl_getUntitledHelper ()->releaseNumberForComponent (xComponent);
@@ -3971,7 +3884,6 @@ void SAL_CALL SfxBaseModel::releaseNumberForComponent( const css::uno::Reference
 //=============================================================================
 // css.frame.XUntitledNumbers
 ::rtl::OUString SAL_CALL SfxBaseModel::getUntitledPrefix()
-    throw (css::uno::RuntimeException)
 {
     SfxModelGuard aGuard( *this );
     return impl_getUntitledHelper ()->getUntitledPrefix ();
@@ -3980,7 +3892,6 @@ void SAL_CALL SfxBaseModel::releaseNumberForComponent( const css::uno::Reference
 //=============================================================================
 // css::frame::XModel2
 css::uno::Reference< css::container::XEnumeration > SAL_CALL SfxBaseModel::getControllers()
-    throw (css::uno::RuntimeException)
 {
     SfxModelGuard aGuard( *this );
 
@@ -3998,7 +3909,6 @@ css::uno::Reference< css::container::XEnumeration > SAL_CALL SfxBaseModel::getCo
 //=============================================================================
 // css::frame::XModel2
 css::uno::Sequence< ::rtl::OUString > SAL_CALL SfxBaseModel::getAvailableViewControllerNames()
-    throw (css::uno::RuntimeException)
 {
     SfxModelGuard aGuard( *this );
 
@@ -4014,9 +3924,6 @@ css::uno::Sequence< ::rtl::OUString > SAL_CALL SfxBaseModel::getAvailableViewCon
 //=============================================================================
 // css::frame::XModel2
 css::uno::Reference< css::frame::XController2 > SAL_CALL SfxBaseModel::createDefaultViewController( const css::uno::Reference< css::frame::XFrame >& i_rFrame )
-    throw (css::uno::RuntimeException         ,
-           css::lang::IllegalArgumentException,
-           css::uno::Exception                )
 {
     SfxModelGuard aGuard( *this );
 
@@ -4130,9 +4037,6 @@ SfxViewFrame* SfxBaseModel::FindOrCreateViewFrame_Impl( const Reference< XFrame 
 // css::frame::XModel2
 css::uno::Reference< css::frame::XController2 > SAL_CALL SfxBaseModel::createViewController(
         const ::rtl::OUString& i_rViewName, const Sequence< PropertyValue >& i_rArguments, const Reference< XFrame >& i_rFrame )
-    throw (css::uno::RuntimeException         ,
-           css::lang::IllegalArgumentException,
-           css::uno::Exception                )
 {
     SfxModelGuard aGuard( *this );
 
@@ -4218,7 +4122,7 @@ css::uno::Reference< css::frame::XController2 > SAL_CALL SfxBaseModel::createVie
 
 // ::com::sun::star::rdf::XRepositorySupplier:
 uno::Reference< rdf::XRepository > SAL_CALL
-SfxBaseModel::getRDFRepository() throw (uno::RuntimeException)
+SfxBaseModel::getRDFRepository()
 {
     SfxModelGuard aGuard( *this );
 
@@ -4233,7 +4137,7 @@ SfxBaseModel::getRDFRepository() throw (uno::RuntimeException)
 
 // ::com::sun::star::rdf::XNode:
 ::rtl::OUString SAL_CALL
-SfxBaseModel::getStringValue() throw (uno::RuntimeException)
+SfxBaseModel::getStringValue()
 {
     SfxModelGuard aGuard( *this );
 
@@ -4248,7 +4152,7 @@ SfxBaseModel::getStringValue() throw (uno::RuntimeException)
 
 // ::com::sun::star::rdf::XURI:
 ::rtl::OUString SAL_CALL
-SfxBaseModel::getNamespace() throw (uno::RuntimeException)
+SfxBaseModel::getNamespace()
 {
     SfxModelGuard aGuard( *this );
 
@@ -4262,7 +4166,7 @@ SfxBaseModel::getNamespace() throw (uno::RuntimeException)
 }
 
 ::rtl::OUString SAL_CALL
-SfxBaseModel::getLocalName() throw (uno::RuntimeException)
+SfxBaseModel::getLocalName()
 {
     SfxModelGuard aGuard( *this );
 
@@ -4279,7 +4183,6 @@ SfxBaseModel::getLocalName() throw (uno::RuntimeException)
 uno::Reference< rdf::XMetadatable > SAL_CALL
 SfxBaseModel::getElementByMetadataReference(
     const ::com::sun::star::beans::StringPair & i_rReference)
-throw (uno::RuntimeException)
 {
     SfxModelGuard aGuard( *this );
 
@@ -4294,7 +4197,6 @@ throw (uno::RuntimeException)
 
 uno::Reference< rdf::XMetadatable > SAL_CALL
 SfxBaseModel::getElementByURI(const uno::Reference< rdf::XURI > & i_xURI)
-throw (uno::RuntimeException, lang::IllegalArgumentException)
 {
     SfxModelGuard aGuard( *this );
 
@@ -4310,7 +4212,6 @@ throw (uno::RuntimeException, lang::IllegalArgumentException)
 uno::Sequence< uno::Reference< rdf::XURI > > SAL_CALL
 SfxBaseModel::getMetadataGraphsWithType(
     const uno::Reference<rdf::XURI> & i_xType)
-throw (uno::RuntimeException, lang::IllegalArgumentException)
 {
     SfxModelGuard aGuard( *this );
 
@@ -4326,8 +4227,6 @@ throw (uno::RuntimeException, lang::IllegalArgumentException)
 uno::Reference<rdf::XURI> SAL_CALL
 SfxBaseModel::addMetadataFile(const ::rtl::OUString & i_rFileName,
     const uno::Sequence < uno::Reference< rdf::XURI > > & i_rTypes)
-throw (uno::RuntimeException, lang::IllegalArgumentException,
-    container::ElementExistException)
 {
     SfxModelGuard aGuard( *this );
 
@@ -4346,9 +4245,6 @@ SfxBaseModel::importMetadataFile(::sal_Int16 i_Format,
     const ::rtl::OUString & i_rFileName,
     const uno::Reference< rdf::XURI > & i_xBaseURI,
     const uno::Sequence < uno::Reference< rdf::XURI > > & i_rTypes)
-throw (uno::RuntimeException, lang::IllegalArgumentException,
-    datatransfer::UnsupportedFlavorException,
-    container::ElementExistException, rdf::ParseException, io::IOException)
 {
     SfxModelGuard aGuard( *this );
 
@@ -4365,8 +4261,6 @@ throw (uno::RuntimeException, lang::IllegalArgumentException,
 void SAL_CALL
 SfxBaseModel::removeMetadataFile(
     const uno::Reference< rdf::XURI > & i_xGraphName)
-throw (uno::RuntimeException, lang::IllegalArgumentException,
-    container::NoSuchElementException)
 {
     SfxModelGuard aGuard( *this );
 
@@ -4381,8 +4275,6 @@ throw (uno::RuntimeException, lang::IllegalArgumentException,
 
 void SAL_CALL
 SfxBaseModel::addContentOrStylesFile(const ::rtl::OUString & i_rFileName)
-throw (uno::RuntimeException, lang::IllegalArgumentException,
-    container::ElementExistException)
 {
     SfxModelGuard aGuard( *this );
 
@@ -4397,8 +4289,6 @@ throw (uno::RuntimeException, lang::IllegalArgumentException,
 
 void SAL_CALL
 SfxBaseModel::removeContentOrStylesFile(const ::rtl::OUString & i_rFileName)
-throw (uno::RuntimeException, lang::IllegalArgumentException,
-    container::NoSuchElementException)
 {
     SfxModelGuard aGuard( *this );
 
@@ -4416,8 +4306,6 @@ SfxBaseModel::loadMetadataFromStorage(
     uno::Reference< embed::XStorage > const & i_xStorage,
     uno::Reference<rdf::XURI> const & i_xBaseURI,
     uno::Reference<task::XInteractionHandler> const & i_xHandler)
-throw (uno::RuntimeException, lang::IllegalArgumentException,
-    lang::WrappedTargetException)
 {
     SfxModelGuard aGuard( *this );
 
@@ -4444,8 +4332,6 @@ throw (uno::RuntimeException, lang::IllegalArgumentException,
 void SAL_CALL
 SfxBaseModel::storeMetadataToStorage(
     uno::Reference< embed::XStorage > const & i_xStorage)
-throw (uno::RuntimeException, lang::IllegalArgumentException,
-    lang::WrappedTargetException)
 {
     SfxModelGuard aGuard( *this );
 
@@ -4461,8 +4347,6 @@ throw (uno::RuntimeException, lang::IllegalArgumentException,
 void SAL_CALL
 SfxBaseModel::loadMetadataFromMedium(
     const uno::Sequence< beans::PropertyValue > & i_rMedium)
-throw (uno::RuntimeException, lang::IllegalArgumentException,
-    lang::WrappedTargetException)
 {
     SfxModelGuard aGuard( *this );
 
@@ -4488,8 +4372,6 @@ throw (uno::RuntimeException, lang::IllegalArgumentException,
 void SAL_CALL
 SfxBaseModel::storeMetadataToMedium(
     const uno::Sequence< beans::PropertyValue > & i_rMedium)
-throw (uno::RuntimeException, lang::IllegalArgumentException,
-    lang::WrappedTargetException)
 {
     SfxModelGuard aGuard( *this );
 

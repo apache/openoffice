@@ -146,7 +146,7 @@ OFormattedFieldWrapper::~OFormattedFieldWrapper()
 }
 
 //------------------------------------------------------------------
-Any SAL_CALL OFormattedFieldWrapper::queryAggregation(const Type& _rType) throw (RuntimeException)
+Any SAL_CALL OFormattedFieldWrapper::queryAggregation(const Type& _rType)
 {
 	Any aReturn;
 
@@ -191,20 +191,20 @@ Any SAL_CALL OFormattedFieldWrapper::queryAggregation(const Type& _rType) throw 
 }
 
 //------------------------------------------------------------------
-::rtl::OUString SAL_CALL OFormattedFieldWrapper::getServiceName() throw(RuntimeException)
+::rtl::OUString SAL_CALL OFormattedFieldWrapper::getServiceName()
 {
 	// return the old compatibility name for an EditModel
 	return FRM_COMPONENT_EDIT;
 }
 
 //------------------------------------------------------------------
-::rtl::OUString SAL_CALL OFormattedFieldWrapper::getImplementationName(  ) throw (RuntimeException)
+::rtl::OUString SAL_CALL OFormattedFieldWrapper::getImplementationName(  )
 {
 	return ::rtl::OUString::createFromAscii("com.sun.star.comp.forms.OFormattedFieldWrapper");
 }
 
 //------------------------------------------------------------------
-sal_Bool SAL_CALL OFormattedFieldWrapper::supportsService( const ::rtl::OUString& _rServiceName ) throw (RuntimeException)
+sal_Bool SAL_CALL OFormattedFieldWrapper::supportsService( const ::rtl::OUString& _rServiceName )
 {
 	DBG_ASSERT(m_xAggregate.is(), "OFormattedFieldWrapper::supportsService: should never have made it 'til here without an aggregate!");
 	Reference< XServiceInfo > xSI;
@@ -213,7 +213,7 @@ sal_Bool SAL_CALL OFormattedFieldWrapper::supportsService( const ::rtl::OUString
 }
 
 //------------------------------------------------------------------
-Sequence< ::rtl::OUString > SAL_CALL OFormattedFieldWrapper::getSupportedServiceNames(  ) throw (RuntimeException)
+Sequence< ::rtl::OUString > SAL_CALL OFormattedFieldWrapper::getSupportedServiceNames(  )
 {
 	DBG_ASSERT(m_xAggregate.is(), "OFormattedFieldWrapper::getSupportedServiceNames: should never have made it 'til here without an aggregate!");
 	Reference< XServiceInfo > xSI;
@@ -222,7 +222,7 @@ Sequence< ::rtl::OUString > SAL_CALL OFormattedFieldWrapper::getSupportedService
 }
 
 //------------------------------------------------------------------
-void SAL_CALL OFormattedFieldWrapper::write(const Reference<XObjectOutputStream>& _rxOutStream) throw( IOException, RuntimeException )
+void SAL_CALL OFormattedFieldWrapper::write(const Reference<XObjectOutputStream>& _rxOutStream)
 {
 	// can't write myself
 	ensureAggregate();
@@ -262,7 +262,7 @@ void SAL_CALL OFormattedFieldWrapper::write(const Reference<XObjectOutputStream>
 }
 
 //------------------------------------------------------------------
-void SAL_CALL OFormattedFieldWrapper::read(const Reference<XObjectInputStream>& _rxInStream) throw( IOException, RuntimeException )
+void SAL_CALL OFormattedFieldWrapper::read(const Reference<XObjectInputStream>& _rxInStream)
 {
 	if (m_xAggregate.is())
 	{	//  we alread did a decision if we're an EditModel or a FormattedModel
@@ -343,7 +343,7 @@ void SAL_CALL OFormattedFieldWrapper::read(const Reference<XObjectInputStream>& 
 }
 
 //------------------------------------------------------------------
-Reference< XCloneable > SAL_CALL OFormattedFieldWrapper::createClone(  ) throw (RuntimeException)
+Reference< XCloneable > SAL_CALL OFormattedFieldWrapper::createClone(  )
 {
 	ensureAggregate();
 

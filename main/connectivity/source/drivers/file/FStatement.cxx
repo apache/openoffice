@@ -171,14 +171,14 @@ void SAL_CALL OStatement_BASE2::release() throw()
 	relase_ChildImpl();
 }
 //-----------------------------------------------------------------------------
-Any SAL_CALL OStatement_Base::queryInterface( const Type & rType ) throw(RuntimeException)
+Any SAL_CALL OStatement_Base::queryInterface( const Type & rType )
 {
     //RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "file", "Ocke.Janssen@sun.com", "OStatement_Base::queryInterface" );
     const Any aRet = OStatement_BASE::queryInterface(rType);
 	return aRet.hasValue() ? aRet : OPropertySetHelper::queryInterface(rType);
 }
 // -------------------------------------------------------------------------
-Sequence< Type > SAL_CALL OStatement_Base::getTypes(  ) throw(RuntimeException)
+Sequence< Type > SAL_CALL OStatement_Base::getTypes(  )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "file", "Ocke.Janssen@sun.com", "OStatement_Base::getTypes" );
     ::cppu::OTypeCollection aTypes( ::getCppuType( (const Reference< ::com::sun::star::beans::XMultiPropertySet > *)0 ),
@@ -189,13 +189,13 @@ Sequence< Type > SAL_CALL OStatement_Base::getTypes(  ) throw(RuntimeException)
 }
 // -------------------------------------------------------------------------
 
-void SAL_CALL OStatement_Base::cancel(  ) throw(RuntimeException)
+void SAL_CALL OStatement_Base::cancel(  )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "file", "Ocke.Janssen@sun.com", "OStatement_Base::cancel" );
 }
 // -------------------------------------------------------------------------
 
-void SAL_CALL OStatement_Base::close(  ) throw(SQLException, RuntimeException)
+void SAL_CALL OStatement_Base::close(  )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "file", "Ocke.Janssen@sun.com", "OStatement_Base::close" );
 	{
@@ -206,7 +206,7 @@ void SAL_CALL OStatement_Base::close(  ) throw(SQLException, RuntimeException)
 }
 // -------------------------------------------------------------------------
 
-void OStatement_Base::reset() throw (SQLException)
+void OStatement_Base::reset()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "file", "Ocke.Janssen@sun.com", "OStatement_Base::reset" );
 	::osl::MutexGuard aGuard( m_aMutex );
@@ -223,7 +223,7 @@ void OStatement_Base::reset() throw (SQLException)
 // If a ResultSet was created for this Statement, close it
 //--------------------------------------------------------------------
 
-void OStatement_Base::clearMyResultSet () throw (SQLException)
+void OStatement_Base::clearMyResultSet ()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "file", "Ocke.Janssen@sun.com", "OStatement_Base::clearMyResultSet " );
 	::osl::MutexGuard aGuard( m_aMutex );
@@ -244,7 +244,7 @@ void OStatement_Base::clearMyResultSet () throw (SQLException)
 // Sets the warning
 //--------------------------------------------------------------------
 
-void OStatement_Base::setWarning (const SQLWarning &ex) throw( SQLException)
+void OStatement_Base::setWarning (const SQLWarning &ex)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "file", "Ocke.Janssen@sun.com", "OStatement_Base::setWarning " );
 	::osl::MutexGuard aGuard( m_aMutex );
@@ -255,7 +255,7 @@ void OStatement_Base::setWarning (const SQLWarning &ex) throw( SQLException)
 }
 
 // -------------------------------------------------------------------------
-Any SAL_CALL OStatement_Base::getWarnings(  ) throw(SQLException, RuntimeException)
+Any SAL_CALL OStatement_Base::getWarnings(  )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "file", "Ocke.Janssen@sun.com", "OStatement_Base::getWarnings" );
 	::osl::MutexGuard aGuard( m_aMutex );
@@ -264,7 +264,7 @@ Any SAL_CALL OStatement_Base::getWarnings(  ) throw(SQLException, RuntimeExcepti
 	return makeAny(m_aLastWarning);
 }
 // -------------------------------------------------------------------------
-void SAL_CALL OStatement_Base::clearWarnings(  ) throw(SQLException, RuntimeException)
+void SAL_CALL OStatement_Base::clearWarnings(  )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "file", "Ocke.Janssen@sun.com", "OStatement_Base::clearWarnings" );
 	::osl::MutexGuard aGuard( m_aMutex );
@@ -306,7 +306,7 @@ void SAL_CALL OStatement::release() throw()
 }
 // -----------------------------------------------------------------------------
 // -------------------------------------------------------------------------
-sal_Bool SAL_CALL OStatement::execute( const ::rtl::OUString& sql ) throw(SQLException, RuntimeException)
+sal_Bool SAL_CALL OStatement::execute( const ::rtl::OUString& sql )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -317,7 +317,7 @@ sal_Bool SAL_CALL OStatement::execute( const ::rtl::OUString& sql ) throw(SQLExc
 
 // -------------------------------------------------------------------------
 
-Reference< XResultSet > SAL_CALL OStatement::executeQuery( const ::rtl::OUString& sql ) throw(SQLException, RuntimeException)
+Reference< XResultSet > SAL_CALL OStatement::executeQuery( const ::rtl::OUString& sql )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OStatement_BASE::rBHelper.bDisposed);
@@ -334,12 +334,12 @@ Reference< XResultSet > SAL_CALL OStatement::executeQuery( const ::rtl::OUString
 	return xRS;
 }
 // -------------------------------------------------------------------------
-Reference< XConnection > SAL_CALL OStatement::getConnection(  ) throw(SQLException, RuntimeException)
+Reference< XConnection > SAL_CALL OStatement::getConnection(  )
 {
 	return (Reference< XConnection >)m_pConnection;
 }
 // -------------------------------------------------------------------------
-sal_Int32 SAL_CALL OStatement::executeUpdate( const ::rtl::OUString& sql ) throw(SQLException, RuntimeException)
+sal_Int32 SAL_CALL OStatement::executeUpdate( const ::rtl::OUString& sql )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OStatement_BASE::rBHelper.bDisposed);
@@ -367,13 +367,13 @@ void SAL_CALL OStatement_Base::disposing(void)
 	OStatement_BASE::disposing();
 }
 // -----------------------------------------------------------------------------
-Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL OStatement_Base::getPropertySetInfo(  ) throw(RuntimeException)
+Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL OStatement_Base::getPropertySetInfo(  )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "file", "Ocke.Janssen@sun.com", "OStatement_Base::getPropertySetInfo" );
 	return ::cppu::OPropertySetHelper::createPropertySetInfo(getInfoHelper());
 }
 // -----------------------------------------------------------------------------
-Any SAL_CALL OStatement::queryInterface( const Type & rType ) throw(RuntimeException)
+Any SAL_CALL OStatement::queryInterface( const Type & rType )
 {
 	Any aRet = OStatement_XStatement::queryInterface( rType);
 	return aRet.hasValue() ? aRet : OStatement_BASE2::queryInterface( rType);
@@ -459,7 +459,7 @@ void OStatement_Base::setOrderbyColumn(	OSQLParseNode* pColumnRef,
 }
 
 // -----------------------------------------------------------------------------
-void OStatement_Base::construct(const ::rtl::OUString& sql)  throw(SQLException, RuntimeException)
+void OStatement_Base::construct(const ::rtl::OUString& sql)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "file", "Ocke.Janssen@sun.com", "OStatement_Base::construct" );
 	::rtl::OUString aErr;

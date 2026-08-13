@@ -416,7 +416,7 @@ void OObjectBase::SetPropsFromRect(const Rectangle& _rRect)
 	}
 }
 //----------------------------------------------------------------------------
-void OObjectBase::_propertyChange( const  beans::PropertyChangeEvent& /*evt*/ ) throw( uno::RuntimeException)
+void OObjectBase::_propertyChange( const  beans::PropertyChangeEvent& /*evt*/ )
 {
 	DBG_CHKTHIS( rpt_OObjectBase,NULL);
 }
@@ -863,7 +863,7 @@ FASTBOOL OUnoObject::EndCreate(SdrDragStat& rStat, SdrCreateCmd eCmd)
 }
 
 // -----------------------------------------------------------------------------
-void OUnoObject::_propertyChange( const  beans::PropertyChangeEvent& evt ) throw( uno::RuntimeException)
+void OUnoObject::_propertyChange( const  beans::PropertyChangeEvent& evt )
 {
 	DBG_CHKTHIS( rpt_OUnoObject,NULL);
 	OObjectBase::_propertyChange(evt);

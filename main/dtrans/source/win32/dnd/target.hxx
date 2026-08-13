@@ -132,24 +132,21 @@ public:
 	// Must be called.
 	virtual void SAL_CALL disposing();
 	// XInitialization
-	virtual void SAL_CALL initialize( const Sequence< Any >& aArguments )
-		throw(Exception, RuntimeException);
+	virtual void SAL_CALL initialize( const Sequence< Any >& aArguments );
 
 	// XDropTarget
-	virtual void SAL_CALL addDropTargetListener( const Reference< XDropTargetListener >& dtl )
-		throw(RuntimeException);
-	virtual void SAL_CALL removeDropTargetListener( const Reference< XDropTargetListener >& dtl )
-		throw(RuntimeException);
+	virtual void SAL_CALL addDropTargetListener( const Reference< XDropTargetListener >& dtl );
+	virtual void SAL_CALL removeDropTargetListener( const Reference< XDropTargetListener >& dtl );
 	// Default is not active
-	virtual sal_Bool SAL_CALL isActive(  ) throw(RuntimeException);
-	virtual void SAL_CALL setActive( sal_Bool isActive ) throw(RuntimeException);
-	virtual sal_Int8 SAL_CALL getDefaultActions(  ) throw(RuntimeException);
-	virtual void SAL_CALL setDefaultActions( sal_Int8 actions ) throw(RuntimeException);
+	virtual sal_Bool SAL_CALL isActive(  );
+	virtual void SAL_CALL setActive( sal_Bool isActive );
+	virtual sal_Int8 SAL_CALL getDefaultActions(  );
+	virtual void SAL_CALL setDefaultActions( sal_Int8 actions );
 
 	// XServiceInfo
-	virtual OUString SAL_CALL getImplementationName(  ) throw (RuntimeException);
-	virtual sal_Bool SAL_CALL supportsService( const OUString& ServiceName ) throw (RuntimeException);
-	virtual Sequence< OUString > SAL_CALL getSupportedServiceNames(  ) throw (RuntimeException);
+	virtual OUString SAL_CALL getImplementationName(  );
+	virtual sal_Bool SAL_CALL supportsService( const OUString& ServiceName );
+	virtual Sequence< OUString > SAL_CALL getSupportedServiceNames(  );
 
 
     // Functions called from the IDropTarget implementation ( m_pDropTarget)

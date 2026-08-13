@@ -141,7 +141,6 @@ void UnoDialog::centerDialog()
 // -----------------------------------------------------------------------------
 
 Reference< XWindowPeer > UnoDialog::createWindowPeer()
-	throw ( Exception )
 {
     mxDialogWindow->setVisible( sal_False );
 

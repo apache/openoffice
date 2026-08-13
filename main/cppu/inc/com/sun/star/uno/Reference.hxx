@@ -42,7 +42,6 @@ namespace uno
 //__________________________________________________________________________________________________
 inline XInterface * BaseReference::iquery(
 	XInterface * pInterface, const Type & rType )
-    SAL_THROW( (RuntimeException) )
 {
 	if (pInterface)
 	{
@@ -59,7 +58,7 @@ inline XInterface * BaseReference::iquery(
 //__________________________________________________________________________________________________
 template< class interface_type >
 inline XInterface * Reference< interface_type >::iquery(
-	XInterface * pInterface ) SAL_THROW( (RuntimeException) )
+	XInterface * pInterface )
 {
     return BaseReference::iquery(pInterface, interface_type::static_type());
 }
@@ -73,7 +72,6 @@ extern "C" rtl_uString * SAL_CALL cppu_unsatisfied_iset_msg(
 //__________________________________________________________________________________________________
 inline XInterface * BaseReference::iquery_throw(
 	XInterface * pInterface, const Type & rType )
-    SAL_THROW( (RuntimeException) )
 {
     XInterface * pQueried = iquery( pInterface, rType );
 	if (pQueried)
@@ -85,7 +83,7 @@ inline XInterface * BaseReference::iquery_throw(
 //__________________________________________________________________________________________________
 template< class interface_type >
 inline XInterface * Reference< interface_type >::iquery_throw(
-	XInterface * pInterface ) SAL_THROW( (RuntimeException) )
+	XInterface * pInterface )
 {
     return BaseReference::iquery_throw(
         pInterface, interface_type::static_type());
@@ -93,7 +91,7 @@ inline XInterface * Reference< interface_type >::iquery_throw(
 //__________________________________________________________________________________________________
 template< class interface_type >
 inline interface_type * Reference< interface_type >::iset_throw(
-	interface_type * pInterface ) SAL_THROW( (RuntimeException) )
+	interface_type * pInterface )
 {
     if (pInterface)
     {
@@ -149,19 +147,19 @@ inline Reference< interface_type >::Reference( interface_type * pInterface, UnoR
 }
 //__________________________________________________________________________________________________
 template< class interface_type >
-inline Reference< interface_type >::Reference( const BaseReference & rRef, UnoReference_Query ) SAL_THROW( (RuntimeException) )
+inline Reference< interface_type >::Reference( const BaseReference & rRef, UnoReference_Query )
 {
 	_pInterface = iquery( rRef.get() );
 }
 //__________________________________________________________________________________________________
 template< class interface_type >
-inline Reference< interface_type >::Reference( XInterface * pInterface, UnoReference_Query ) SAL_THROW( (RuntimeException) )
+inline Reference< interface_type >::Reference( XInterface * pInterface, UnoReference_Query )
 {
 	_pInterface = iquery( pInterface );
 }
 //__________________________________________________________________________________________________
 template< class interface_type >
-inline Reference< interface_type >::Reference( const Any & rAny, UnoReference_Query ) SAL_THROW( (RuntimeException) )
+inline Reference< interface_type >::Reference( const Any & rAny, UnoReference_Query )
 {
     _pInterface = (typelib_TypeClass_INTERFACE == rAny.pType->eTypeClass
                    ? iquery( static_cast< XInterface * >( rAny.pReserved ) ) : 0);
@@ -169,21 +167,21 @@ inline Reference< interface_type >::Reference( const Any & rAny, UnoReference_Qu
 #ifndef EXCEPTIONS_OFF
 //__________________________________________________________________________________________________
 template< class interface_type >
-inline Reference< interface_type >::Reference( const BaseReference & rRef, UnoReference_QueryThrow ) SAL_THROW( (RuntimeException) )
+inline Reference< interface_type >::Reference( const BaseReference & rRef, UnoReference_QueryThrow )
 {
 	_pInterface = NULL;
 	_pInterface = iquery_throw( rRef.get() );
 }
 //__________________________________________________________________________________________________
 template< class interface_type >
-inline Reference< interface_type >::Reference( XInterface * pInterface, UnoReference_QueryThrow ) SAL_THROW( (RuntimeException) )
+inline Reference< interface_type >::Reference( XInterface * pInterface, UnoReference_QueryThrow )
 {
 	_pInterface = NULL;
 	_pInterface = iquery_throw( pInterface );
 }
 //__________________________________________________________________________________________________
 template< class interface_type >
-inline Reference< interface_type >::Reference( const Any & rAny, UnoReference_QueryThrow ) SAL_THROW( (RuntimeException) )
+inline Reference< interface_type >::Reference( const Any & rAny, UnoReference_QueryThrow )
 {
     _pInterface = NULL;
     _pInterface = iquery_throw( typelib_TypeClass_INTERFACE == rAny.pType->eTypeClass
@@ -191,14 +189,14 @@ inline Reference< interface_type >::Reference( const Any & rAny, UnoReference_Qu
 }
 //__________________________________________________________________________________________________
 template< class interface_type >
-inline Reference< interface_type >::Reference( const Reference< interface_type > & rRef, UnoReference_SetThrow ) SAL_THROW( (RuntimeException) )
+inline Reference< interface_type >::Reference( const Reference< interface_type > & rRef, UnoReference_SetThrow )
 {
     _pInterface = NULL;
     _pInterface = iset_throw( rRef.get() );
 }
 //__________________________________________________________________________________________________
 template< class interface_type >
-inline Reference< interface_type >::Reference( interface_type * pInterface, UnoReference_SetThrow ) SAL_THROW( (RuntimeException) )
+inline Reference< interface_type >::Reference( interface_type * pInterface, UnoReference_SetThrow )
 {
     _pInterface = NULL;
     _pInterface = iset_throw( pInterface );
@@ -258,14 +256,14 @@ inline sal_Bool Reference< interface_type >::set(
 //__________________________________________________________________________________________________
 template< class interface_type >
 inline sal_Bool Reference< interface_type >::set(
-	XInterface * pInterface, UnoReference_Query ) SAL_THROW( (RuntimeException) )
+	XInterface * pInterface, UnoReference_Query )
 {
 	return set( castFromXInterface(iquery( pInterface )), SAL_NO_ACQUIRE );
 }
 //__________________________________________________________________________________________________
 template< class interface_type >
 inline sal_Bool Reference< interface_type >::set(
-	const BaseReference & rRef, UnoReference_Query ) SAL_THROW( (RuntimeException) )
+	const BaseReference & rRef, UnoReference_Query )
 {
 	return set( castFromXInterface(iquery( rRef.get() )), SAL_NO_ACQUIRE );
 }
@@ -287,14 +285,14 @@ inline bool Reference< interface_type >::set(
 //__________________________________________________________________________________________________
 template< class interface_type >
 inline void Reference< interface_type >::set(
-	XInterface * pInterface, UnoReference_QueryThrow ) SAL_THROW( (RuntimeException) )
+	XInterface * pInterface, UnoReference_QueryThrow )
 {
 	set( castFromXInterface(iquery_throw( pInterface )), SAL_NO_ACQUIRE );
 }
 //__________________________________________________________________________________________________
 template< class interface_type >
 inline void Reference< interface_type >::set(
-	const BaseReference & rRef, UnoReference_QueryThrow ) SAL_THROW( (RuntimeException) )
+	const BaseReference & rRef, UnoReference_QueryThrow )
 {
 	set( castFromXInterface(iquery_throw( rRef.get() )), SAL_NO_ACQUIRE );
 }
@@ -313,14 +311,14 @@ inline void Reference< interface_type >::set(
 //__________________________________________________________________________________________________
 template< class interface_type >
 inline void Reference< interface_type >::set(
-	interface_type * pInterface, UnoReference_SetThrow ) SAL_THROW( (RuntimeException) )
+	interface_type * pInterface, UnoReference_SetThrow )
 {
     set( iset_throw( pInterface ), SAL_NO_ACQUIRE );
 }
 //__________________________________________________________________________________________________
 template< class interface_type >
 inline void Reference< interface_type >::set(
-	const Reference< interface_type > & rRef, UnoReference_SetThrow ) SAL_THROW( (RuntimeException) )
+	const Reference< interface_type > & rRef, UnoReference_SetThrow )
 {
     set( rRef.get(), UNO_SET_THROW );
 }
@@ -347,7 +345,7 @@ inline Reference< interface_type > & Reference< interface_type >::operator = (
 //__________________________________________________________________________________________________
 template< class interface_type >
 inline Reference< interface_type > Reference< interface_type >::query(
-	const BaseReference & rRef ) SAL_THROW( (RuntimeException) )
+	const BaseReference & rRef )
 {
 	return Reference< interface_type >(
         castFromXInterface(iquery( rRef.get() )), SAL_NO_ACQUIRE );
@@ -355,7 +353,7 @@ inline Reference< interface_type > Reference< interface_type >::query(
 //__________________________________________________________________________________________________
 template< class interface_type >
 inline Reference< interface_type > Reference< interface_type >::query(
-	XInterface * pInterface ) SAL_THROW( (RuntimeException) )
+	XInterface * pInterface )
 {
 	return Reference< interface_type >(
         castFromXInterface(iquery( pInterface )), SAL_NO_ACQUIRE );

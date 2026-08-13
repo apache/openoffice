@@ -86,14 +86,11 @@ protected:
 
     NavigationServices_DialogType m_nDialogType;
 
-    void implsetTitle( const ::rtl::OUString& aTitle )
-        throw( ::com::sun::star::uno::RuntimeException );
+    void implsetTitle( const ::rtl::OUString& aTitle );
 
-    void implsetDisplayDirectory( const rtl::OUString& rDirectory )
-        throw( com::sun::star::lang::IllegalArgumentException, com::sun::star::uno::RuntimeException );
+    void implsetDisplayDirectory( const rtl::OUString& rDirectory );
 
-    rtl::OUString implgetDisplayDirectory(  )
-        throw( com::sun::star::uno::RuntimeException );
+    rtl::OUString implgetDisplayDirectory(  );
 
     void implInitialize( );
 

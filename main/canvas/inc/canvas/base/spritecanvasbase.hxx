@@ -95,8 +95,7 @@ namespace canvas
         }
 
         // XSpriteCanvas
-        virtual ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XAnimatedSprite > SAL_CALL createSpriteFromAnimation( const ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XAnimation >& animation ) throw (::com::sun::star::lang::IllegalArgumentException,
-                                                                                                                                                                                                                                           ::com::sun::star::uno::RuntimeException)
+        virtual ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XAnimatedSprite > SAL_CALL createSpriteFromAnimation( const ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XAnimation >& animation )
         {
             tools::verifyArgs(animation,
                               BOOST_CURRENT_FUNCTION,
@@ -108,9 +107,7 @@ namespace canvas
         }
 
         virtual ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XAnimatedSprite > SAL_CALL createSpriteFromBitmaps( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XBitmap > >& animationBitmaps,
-                                                                                                                                   sal_Int8                                                                                                           interpolationMode ) throw (::com::sun::star::lang::IllegalArgumentException,
-                                                                                                                                                                                                                                                                                 ::com::sun::star::rendering::VolatileContentDestroyedException,
-                                                                                                                                                                                                                                                                                 ::com::sun::star::uno::RuntimeException)
+                                                                                                                                   sal_Int8                                                                                                           interpolationMode )
         {
             tools::verifyArgs(animationBitmaps,
                               BOOST_CURRENT_FUNCTION,
@@ -124,8 +121,7 @@ namespace canvas
             return BaseType::maCanvasHelper.createSpriteFromBitmaps(animationBitmaps, interpolationMode);
         }
 
-        virtual ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XCustomSprite > SAL_CALL createCustomSprite( const ::com::sun::star::geometry::RealSize2D& spriteSize ) throw (::com::sun::star::lang::IllegalArgumentException,
-                                                                                                                                                                                              ::com::sun::star::uno::RuntimeException)
+        virtual ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XCustomSprite > SAL_CALL createCustomSprite( const ::com::sun::star::geometry::RealSize2D& spriteSize )
         {
             tools::verifySpriteSize(spriteSize,
                                     BOOST_CURRENT_FUNCTION,
@@ -136,8 +132,7 @@ namespace canvas
             return BaseType::maCanvasHelper.createCustomSprite(spriteSize);
         }
 
-        virtual ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XSprite > SAL_CALL createClonedSprite( const ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XSprite >& original ) throw (::com::sun::star::lang::IllegalArgumentException,
-                                                                                                                                                                                                                        ::com::sun::star::uno::RuntimeException)
+        virtual ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XSprite > SAL_CALL createClonedSprite( const ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XSprite >& original )
         {
             tools::verifyArgs(original,
                               BOOST_CURRENT_FUNCTION,

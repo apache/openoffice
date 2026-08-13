@@ -92,7 +92,6 @@ private:
 class Impl1: public Interface1, private Base {
 public:
     virtual css::uno::Any SAL_CALL queryInterface(css::uno::Type const & type)
-        throw (css::uno::RuntimeException)
     {
         if (type
             == getCppuType< css::uno::Reference< css::uno::XInterface > >())
@@ -120,7 +119,6 @@ public:
 class Impl2: public Interface2a, public Interface3, private Base {
 public:
     virtual css::uno::Any SAL_CALL queryInterface(css::uno::Type const & type)
-        throw (css::uno::RuntimeException)
     {
         if (type
             == getCppuType< css::uno::Reference< css::uno::XInterface > >())
@@ -156,7 +154,6 @@ public:
 class Impl2b: public Interface2b, private Base {
 public:
     virtual css::uno::Any SAL_CALL queryInterface(css::uno::Type const & type)
-        throw (css::uno::RuntimeException)
     {
         if (type
             == getCppuType< css::uno::Reference< css::uno::XInterface > >())

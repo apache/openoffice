@@ -53,7 +53,6 @@ ChainablePropertySet::~ChainablePropertySet()
 
 // XPropertySet
 Reference< XPropertySetInfo > SAL_CALL ChainablePropertySet::getPropertySetInfo(  )
-	throw(RuntimeException)
 {
 	return mxInfo;
 }
@@ -71,7 +70,6 @@ void ChainablePropertySet::unlockMutex()
 }
 
 void SAL_CALL ChainablePropertySet::setPropertyValue( const ::rtl::OUString& rPropertyName, const Any& rValue )
-	throw(UnknownPropertyException, PropertyVetoException, IllegalArgumentException, WrappedTargetException, RuntimeException)
 {
 	// acquire mutex in c-tor and releases it in the d-tor (exception safe!).
 	std::auto_ptr< vos::OGuard > pMutexGuard;
@@ -89,7 +87,6 @@ void SAL_CALL ChainablePropertySet::setPropertyValue( const ::rtl::OUString& rPr
 }
 
 Any SAL_CALL ChainablePropertySet::getPropertyValue( const ::rtl::OUString& rPropertyName )
-	throw(UnknownPropertyException, WrappedTargetException, RuntimeException)
 {
 	// acquire mutex in c-tor and releases it in the d-tor (exception safe!).
 	std::auto_ptr< vos::OGuard > pMutexGuard;
@@ -110,32 +107,27 @@ Any SAL_CALL ChainablePropertySet::getPropertyValue( const ::rtl::OUString& rPro
 }
 
 void SAL_CALL ChainablePropertySet::addPropertyChangeListener( const ::rtl::OUString&, const Reference< XPropertyChangeListener >& )
-	throw(UnknownPropertyException, WrappedTargetException, RuntimeException)
 {
 	// todo
 }
 
 void SAL_CALL ChainablePropertySet::removePropertyChangeListener( const ::rtl::OUString&, const Reference< XPropertyChangeListener >& )
-	throw(UnknownPropertyException, WrappedTargetException, RuntimeException)
 {
 	// todo
 }
 
 void SAL_CALL ChainablePropertySet::addVetoableChangeListener( const ::rtl::OUString&, const Reference< XVetoableChangeListener >& )
-	throw(UnknownPropertyException, WrappedTargetException, RuntimeException)
 {
 	// todo
 }
 
 void SAL_CALL ChainablePropertySet::removeVetoableChangeListener( const ::rtl::OUString&, const Reference< XVetoableChangeListener >& )
-	throw(UnknownPropertyException, WrappedTargetException, RuntimeException)
 {
 	// todo
 }
 
 // XMultiPropertySet
 void SAL_CALL ChainablePropertySet::setPropertyValues( const Sequence< ::rtl::OUString >& aPropertyNames, const Sequence< Any >& aValues )
-	throw(PropertyVetoException, IllegalArgumentException, WrappedTargetException, RuntimeException)
 {
 	// acquire mutex in c-tor and releases it in the d-tor (exception safe!).
 	std::auto_ptr< vos::OGuard > pMutexGuard;
@@ -169,7 +161,6 @@ void SAL_CALL ChainablePropertySet::setPropertyValues( const Sequence< ::rtl::OU
 }
 
 Sequence< Any > SAL_CALL ChainablePropertySet::getPropertyValues( const Sequence< ::rtl::OUString >& aPropertyNames )
-	throw(RuntimeException)
 {
 	// acquire mutex in c-tor and releases it in the d-tor (exception safe!).
 	std::auto_ptr< vos::OGuard > pMutexGuard;
@@ -203,26 +194,22 @@ Sequence< Any > SAL_CALL ChainablePropertySet::getPropertyValues( const Sequence
 }
 
 void SAL_CALL ChainablePropertySet::addPropertiesChangeListener( const Sequence< ::rtl::OUString >&, const Reference< XPropertiesChangeListener >& )
-	throw(RuntimeException)
 {
 	// todo
 }
 
 void SAL_CALL ChainablePropertySet::removePropertiesChangeListener( const Reference< XPropertiesChangeListener >& )
-	throw(RuntimeException)
 {
 	// todo
 }
 
 void SAL_CALL ChainablePropertySet::firePropertiesChangeEvent( const Sequence< ::rtl::OUString >&, const Reference< XPropertiesChangeListener >& )
-	throw(RuntimeException)
 {
 	// todo
 }
 
 // XPropertyState
 PropertyState SAL_CALL ChainablePropertySet::getPropertyState( const ::rtl::OUString& PropertyName )
-	throw(UnknownPropertyException, RuntimeException)
 {
 	PropertyInfoHash::const_iterator aIter = mpInfo->maMap.find( PropertyName );
 	if( aIter == mpInfo->maMap.end())
@@ -238,7 +225,6 @@ PropertyState SAL_CALL ChainablePropertySet::getPropertyState( const ::rtl::OUSt
 }
 
 Sequence< PropertyState > SAL_CALL ChainablePropertySet::getPropertyStates( const Sequence< ::rtl::OUString >& rPropertyNames )
-	throw(UnknownPropertyException, RuntimeException)
 {
 	const sal_Int32 nCount = rPropertyNames.getLength();
 
@@ -264,7 +250,6 @@ Sequence< PropertyState > SAL_CALL ChainablePropertySet::getPropertyStates( cons
 }
 
 void SAL_CALL ChainablePropertySet::setPropertyToDefault( const ::rtl::OUString& rPropertyName )
-	throw(UnknownPropertyException, RuntimeException)
 {
 	PropertyInfoHash::const_iterator aIter = mpInfo->maMap.find ( rPropertyName );
 
@@ -274,7 +259,6 @@ void SAL_CALL ChainablePropertySet::setPropertyToDefault( const ::rtl::OUString&
 }
 
 Any SAL_CALL ChainablePropertySet::getPropertyDefault( const ::rtl::OUString& rPropertyName )
-	throw(UnknownPropertyException, WrappedTargetException, RuntimeException)
 {
 	PropertyInfoHash::const_iterator aIter = mpInfo->maMap.find ( rPropertyName );
 
@@ -284,31 +268,26 @@ Any SAL_CALL ChainablePropertySet::getPropertyDefault( const ::rtl::OUString& rP
 }
 
 void ChainablePropertySet::_preGetPropertyState ()
-	throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::beans::PropertyVetoException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException )
 {
 	OSL_ENSURE( sal_False, "you have to implement this yourself!");
 }
 
 void ChainablePropertySet::_getPropertyState( const comphelper::PropertyInfo&, PropertyState& )
-	throw(UnknownPropertyException )
 {
 	OSL_ENSURE( sal_False, "you have to implement this yourself!");
 }
 
 void ChainablePropertySet::_postGetPropertyState ()
-	throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::beans::PropertyVetoException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException )
 {
 	OSL_ENSURE( sal_False, "you have to implement this yourself!");
 }
 
 void ChainablePropertySet::_setPropertyToDefault( const comphelper::PropertyInfo& )
-	throw(UnknownPropertyException )
 {
 	OSL_ENSURE( sal_False, "you have to implement this yourself!");
 }
 
 Any ChainablePropertySet::_getPropertyDefault( const comphelper::PropertyInfo& )
-	throw(UnknownPropertyException, WrappedTargetException )
 {
 	OSL_ENSURE( sal_False, "you have to implement this yourself!");
 

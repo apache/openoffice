@@ -616,21 +616,21 @@ void SAL_CALL VCLXToolkit::disposing()
 }
 
 
-::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer > VCLXToolkit::getDesktopWindow(  ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer > VCLXToolkit::getDesktopWindow(  )
 {
 	::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer > xRef;
 	// 07/00: AppWindow doesn't exist anymore...
 	return xRef;
 }
 
-::com::sun::star::awt::Rectangle VCLXToolkit::getWorkArea(  ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::awt::Rectangle VCLXToolkit::getWorkArea(  )
 {
 	::com::sun::star::awt::Rectangle aRect;
 	// 07/00: AppWindow doesn't exist anymore...
 	return aRect;
 }
 
-::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer > VCLXToolkit::createWindow( const ::com::sun::star::awt::WindowDescriptor& rDescriptor ) throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer > VCLXToolkit::createWindow( const ::com::sun::star::awt::WindowDescriptor& rDescriptor )
 {
 #ifdef WNT
 	CEnableAccessInterface e;
@@ -638,7 +638,7 @@ void SAL_CALL VCLXToolkit::disposing()
     return ImplCreateWindow( rDescriptor, WinBits(0) );
 }
 
-::com::sun::star::uno::Reference< ::com::sun::star::awt::XDevice > VCLXToolkit::createScreenCompatibleDevice( sal_Int32 Width, sal_Int32 Height ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Reference< ::com::sun::star::awt::XDevice > VCLXToolkit::createScreenCompatibleDevice( sal_Int32 Width, sal_Int32 Height )
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
 
@@ -655,7 +655,7 @@ void SAL_CALL VCLXToolkit::disposing()
 	return xRef;
 }
 
-::com::sun::star::uno::Reference< ::com::sun::star::awt::XRegion > VCLXToolkit::createRegion(  ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Reference< ::com::sun::star::awt::XRegion > VCLXToolkit::createRegion(  )
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
 
@@ -1168,7 +1168,7 @@ css::uno::Reference< css::awt::XWindowPeer > VCLXToolkit::ImplCreateWindow(
 	return xRef;
 }
 
-::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer > > VCLXToolkit::createWindows( const ::com::sun::star::uno::Sequence< ::com::sun::star::awt::WindowDescriptor >& rDescriptors ) throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer > > VCLXToolkit::createWindows( const ::com::sun::star::uno::Sequence< ::com::sun::star::awt::WindowDescriptor >& rDescriptors )
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
 
@@ -1188,7 +1188,7 @@ css::uno::Reference< css::awt::XWindowPeer > VCLXToolkit::ImplCreateWindow(
 }
 
 // ::com::sun::star::awt::XSystemChildFactory
-::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer > VCLXToolkit::createSystemChild( const ::com::sun::star::uno::Any& Parent, const ::com::sun::star::uno::Sequence< sal_Int8 >& /*ProcessId*/, sal_Int16 nSystemType ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer > VCLXToolkit::createSystemChild( const ::com::sun::star::uno::Any& Parent, const ::com::sun::star::uno::Sequence< sal_Int8 >& /*ProcessId*/, sal_Int16 nSystemType )
 {
 	Window* pChildWindow = NULL;
 	if ( nSystemType == SYSTEM_DEPENDENT_TYPE )
@@ -1272,7 +1272,7 @@ css::uno::Reference< css::awt::XWindowPeer > VCLXToolkit::ImplCreateWindow(
     ::com::sun::star::awt::MessageBoxType eType,
     ::sal_Int32 aButtons,
     const ::rtl::OUString& aTitle,
-    const ::rtl::OUString& aMessage ) throw (::com::sun::star::uno::RuntimeException)
+    const ::rtl::OUString& aMessage )
 {
     ::com::sun::star::awt::WindowDescriptor aDescriptor;
 
@@ -1335,7 +1335,7 @@ css::uno::Reference< css::awt::XWindowPeer > VCLXToolkit::ImplCreateWindow(
     return xMsgBox;
 }
 
-::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::dnd::XDragGestureRecognizer > SAL_CALL VCLXToolkit::getDragGestureRecognizer( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindow >& window ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::dnd::XDragGestureRecognizer > SAL_CALL VCLXToolkit::getDragGestureRecognizer( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindow >& window )
 {
 	Window * pWindow = VCLUnoHelper::GetWindow( window );
 
@@ -1345,7 +1345,7 @@ css::uno::Reference< css::awt::XWindowPeer > VCLXToolkit::ImplCreateWindow(
 	return ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::dnd::XDragGestureRecognizer >();
 }
 
-::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::dnd::XDragSource > SAL_CALL VCLXToolkit::getDragSource( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindow >& window ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::dnd::XDragSource > SAL_CALL VCLXToolkit::getDragSource( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindow >& window )
 {
 	Window * pWindow = VCLUnoHelper::GetWindow( window );
 
@@ -1355,7 +1355,7 @@ css::uno::Reference< css::awt::XWindowPeer > VCLXToolkit::ImplCreateWindow(
 	return ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::dnd::XDragSource >();
 }
 
-::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::dnd::XDropTarget > SAL_CALL VCLXToolkit::getDropTarget( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindow >& window ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::dnd::XDropTarget > SAL_CALL VCLXToolkit::getDropTarget( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindow >& window )
 {
 	Window * pWindow = VCLUnoHelper::GetWindow( window );
 
@@ -1365,7 +1365,7 @@ css::uno::Reference< css::awt::XWindowPeer > VCLXToolkit::ImplCreateWindow(
 	return ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::dnd::XDropTarget >();
 }
 
-::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::clipboard::XClipboard > SAL_CALL VCLXToolkit::getClipboard( const ::rtl::OUString& clipboardName ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::clipboard::XClipboard > SAL_CALL VCLXToolkit::getClipboard( const ::rtl::OUString& clipboardName )
 {
 	if( clipboardName.getLength() == 0 )
 	{
@@ -1392,12 +1392,12 @@ css::uno::Reference< css::awt::XWindowPeer > VCLXToolkit::ImplCreateWindow(
 }
 
 // XServiceInfo
-::rtl::OUString VCLXToolkit::getImplementationName() throw(::com::sun::star::uno::RuntimeException)
+::rtl::OUString VCLXToolkit::getImplementationName()
 {
 	return rtl::OUString::createFromAscii( "stardiv.Toolkit.VCLXToolkit" );
 }
 
-sal_Bool VCLXToolkit::supportsService( const ::rtl::OUString& rServiceName ) throw(::com::sun::star::uno::RuntimeException)
+sal_Bool VCLXToolkit::supportsService( const ::rtl::OUString& rServiceName )
 {
 	::osl::MutexGuard aGuard( GetMutex() );
 
@@ -1411,7 +1411,7 @@ sal_Bool VCLXToolkit::supportsService( const ::rtl::OUString& rServiceName ) thr
 	return pArray != pArrayEnd;
 }
 
-::com::sun::star::uno::Sequence< ::rtl::OUString > VCLXToolkit::getSupportedServiceNames() throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Sequence< ::rtl::OUString > VCLXToolkit::getSupportedServiceNames()
 {
     ::rtl::OUString aServiceName( ::rtl::OUString::createFromAscii( szServiceName2_Toolkit ) );
     return ::com::sun::star::uno::Sequence< ::rtl::OUString >( &aServiceName, 1);
@@ -1421,7 +1421,6 @@ sal_Bool VCLXToolkit::supportsService( const ::rtl::OUString& rServiceName ) thr
 
 // virtual
 ::sal_Int32 SAL_CALL VCLXToolkit::getTopWindowCount()
-    throw (::css::uno::RuntimeException)
 {
     return static_cast< ::sal_Int32 >(::Application::GetTopWindowCount());
         // XXX  numeric overflow
@@ -1430,7 +1429,6 @@ sal_Bool VCLXToolkit::supportsService( const ::rtl::OUString& rServiceName ) thr
 // virtual
 ::css::uno::Reference< ::css::awt::XTopWindow > SAL_CALL
 VCLXToolkit::getTopWindow(::sal_Int32 nIndex)
-    throw (::css::uno::RuntimeException)
 {
     ::Window * p = ::Application::GetTopWindow(static_cast< long >(nIndex));
         // XXX  numeric overflow
@@ -1441,7 +1439,7 @@ VCLXToolkit::getTopWindow(::sal_Int32 nIndex)
 
 // virtual
 ::css::uno::Reference< ::css::awt::XTopWindow > SAL_CALL
-VCLXToolkit::getActiveTopWindow() throw (::css::uno::RuntimeException)
+VCLXToolkit::getActiveTopWindow()
 {
     ::Window * p = ::Application::GetActiveTopWindow();
     return ::css::uno::Reference< ::css::awt::XTopWindow >(
@@ -1452,7 +1450,6 @@ VCLXToolkit::getActiveTopWindow() throw (::css::uno::RuntimeException)
 // virtual
 void SAL_CALL VCLXToolkit::addTopWindowListener(
     ::css::uno::Reference< ::css::awt::XTopWindowListener > const & rListener)
-    throw (::css::uno::RuntimeException)
 {
     OSL_ENSURE(rListener.is(), "Null rListener");
     ::osl::ClearableMutexGuard aGuard(rBHelper.rMutex);
@@ -1474,7 +1471,6 @@ void SAL_CALL VCLXToolkit::addTopWindowListener(
 // virtual
 void SAL_CALL VCLXToolkit::removeTopWindowListener(
     ::css::uno::Reference< ::css::awt::XTopWindowListener > const & rListener)
-    throw (::css::uno::RuntimeException)
 {
     ::osl::MutexGuard aGuard(rBHelper.rMutex);
     if (!(rBHelper.bDisposed || rBHelper.bInDispose)
@@ -1489,7 +1485,6 @@ void SAL_CALL VCLXToolkit::removeTopWindowListener(
 // virtual
 void SAL_CALL VCLXToolkit::addKeyHandler(
     ::css::uno::Reference< ::css::awt::XKeyHandler > const & rHandler)
-    throw (::css::uno::RuntimeException)
 {
     OSL_ENSURE(rHandler.is(), "Null rHandler");
     ::osl::ClearableMutexGuard aGuard(rBHelper.rMutex);
@@ -1510,7 +1505,6 @@ void SAL_CALL VCLXToolkit::addKeyHandler(
 // virtual
 void SAL_CALL VCLXToolkit::removeKeyHandler(
     ::css::uno::Reference< ::css::awt::XKeyHandler > const & rHandler)
-    throw (::css::uno::RuntimeException)
 {
     ::osl::MutexGuard aGuard(rBHelper.rMutex);
     if (!(rBHelper.bDisposed || rBHelper.bInDispose)
@@ -1524,7 +1518,6 @@ void SAL_CALL VCLXToolkit::removeKeyHandler(
 // virtual
 void SAL_CALL VCLXToolkit::addFocusListener(
     ::css::uno::Reference< ::css::awt::XFocusListener > const & rListener)
-    throw (::css::uno::RuntimeException)
 {
     OSL_ENSURE(rListener.is(), "Null rListener");
     ::osl::ClearableMutexGuard aGuard(rBHelper.rMutex);
@@ -1546,7 +1539,6 @@ void SAL_CALL VCLXToolkit::addFocusListener(
 // virtual
 void SAL_CALL VCLXToolkit::removeFocusListener(
     ::css::uno::Reference< ::css::awt::XFocusListener > const & rListener)
-    throw (::css::uno::RuntimeException)
 {
     ::osl::MutexGuard aGuard(rBHelper.rMutex);
     if (!(rBHelper.bDisposed || rBHelper.bInDispose)
@@ -1562,7 +1554,6 @@ void SAL_CALL VCLXToolkit::removeFocusListener(
 void SAL_CALL VCLXToolkit::fireFocusGained(
     ::com::sun::star::uno::Reference<
     ::com::sun::star::uno::XInterface > const &)
-    throw (::com::sun::star::uno::RuntimeException)
 {
 }
 
@@ -1570,7 +1561,6 @@ void SAL_CALL VCLXToolkit::fireFocusGained(
 void SAL_CALL VCLXToolkit::fireFocusLost(
     ::com::sun::star::uno::Reference<
     ::com::sun::star::uno::XInterface > const &)
-    throw (::com::sun::star::uno::RuntimeException)
 {
 }
 
@@ -1763,7 +1753,6 @@ void VCLXToolkit::callFocusListeners(::VclSimpleEvent const * pEvent,
 // css::awt::XReschedule:
 
 void SAL_CALL VCLXToolkit::reschedule()
-    throw (::com::sun::star::uno::RuntimeException)
 {
     Application::Reschedule(true);
 }

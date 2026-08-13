@@ -59,7 +59,6 @@ void SAL_CALL Accessible::disposing (void)
 
 
 Reference<accessibility::XAccessibleContext> SAL_CALL Accessible::getAccessibleContext (void)
-    throw (cssu::RuntimeException)
 {
     return mxContext;
 }

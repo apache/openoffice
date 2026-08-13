@@ -49,35 +49,24 @@ public:
 	virtual ~IndexedPropertyValuesContainer() throw();
 
 	// XIndexContainer
-	virtual void SAL_CALL insertByIndex( sal_Int32 nIndex, const ::com::sun::star::uno::Any& aElement )
-		throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::IndexOutOfBoundsException,
-			::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL removeByIndex( sal_Int32 nIndex )
-		throw(::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::WrappedTargetException,
-			::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL insertByIndex( sal_Int32 nIndex, const ::com::sun::star::uno::Any& aElement );
+	virtual void SAL_CALL removeByIndex( sal_Int32 nIndex );
 
 	// XIndexReplace
-	virtual void SAL_CALL replaceByIndex( sal_Int32 nIndex, const ::com::sun::star::uno::Any& aElement )
-		throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::IndexOutOfBoundsException,
-			::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL replaceByIndex( sal_Int32 nIndex, const ::com::sun::star::uno::Any& aElement );
 
 	// XIndexAccess
-	virtual sal_Int32 SAL_CALL getCount(  )
-		throw(::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Any SAL_CALL getByIndex( sal_Int32 nIndex )
-		throw(::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::WrappedTargetException,
-			::com::sun::star::uno::RuntimeException);
+	virtual sal_Int32 SAL_CALL getCount(  );
+	virtual ::com::sun::star::uno::Any SAL_CALL getByIndex( sal_Int32 nIndex );
 
 	// XElementAccess
-	virtual ::com::sun::star::uno::Type SAL_CALL getElementType(  )
-		throw(::com::sun::star::uno::RuntimeException);
-	virtual sal_Bool SAL_CALL hasElements(  )
-		throw(::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Type SAL_CALL getElementType(  );
+	virtual sal_Bool SAL_CALL hasElements(  );
 
 	//XServiceInfo
-	virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw(::com::sun::star::uno::RuntimeException);
-	virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw(::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw(::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+	virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
 	// XServiceInfo - static versions (used for component registration)
 	static ::rtl::OUString SAL_CALL getImplementationName_static();
@@ -98,8 +87,6 @@ IndexedPropertyValuesContainer::~IndexedPropertyValuesContainer() throw()
 
 // XIndexContainer
 void SAL_CALL IndexedPropertyValuesContainer::insertByIndex( sal_Int32 nIndex, const ::com::sun::star::uno::Any& aElement )
-	throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::IndexOutOfBoundsException,
-		::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
 {
 	sal_Int32 nSize(maProperties.size());
 	if ((nSize >= nIndex) && (nIndex >= 0))
@@ -140,8 +127,6 @@ void SAL_CALL IndexedPropertyValuesContainer::insertByIndex( sal_Int32 nIndex, c
 }
 
 void SAL_CALL IndexedPropertyValuesContainer::removeByIndex( sal_Int32 nIndex )
-	throw(::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::WrappedTargetException,
-		::com::sun::star::uno::RuntimeException)
 {
 	sal_Int32 nSize(maProperties.size());
 	if ((nIndex < nSize) && (nIndex >= 0))
@@ -175,8 +160,6 @@ void SAL_CALL IndexedPropertyValuesContainer::removeByIndex( sal_Int32 nIndex )
 
 // XIndexReplace
 void SAL_CALL IndexedPropertyValuesContainer::replaceByIndex( sal_Int32 nIndex, const ::com::sun::star::uno::Any& aElement )
-	throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::IndexOutOfBoundsException,
-		::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
 {
 	sal_Int32 nSize(maProperties.size());
 	if ((nIndex < nSize) && (nIndex >= 0))
@@ -192,14 +175,11 @@ void SAL_CALL IndexedPropertyValuesContainer::replaceByIndex( sal_Int32 nIndex, 
 
 // XIndexAccess
 sal_Int32 SAL_CALL IndexedPropertyValuesContainer::getCount(  )
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return maProperties.size();
 }
 
 ::com::sun::star::uno::Any SAL_CALL IndexedPropertyValuesContainer::getByIndex( sal_Int32 nIndex )
-	throw(::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::WrappedTargetException,
-		::com::sun::star::uno::RuntimeException)
 {
 	sal_Int32 nSize(maProperties.size());
 	if (!((nIndex < nSize) && (nIndex >= 0)))
@@ -212,19 +192,17 @@ sal_Int32 SAL_CALL IndexedPropertyValuesContainer::getCount(  )
 
 // XElementAccess
 ::com::sun::star::uno::Type SAL_CALL IndexedPropertyValuesContainer::getElementType(  )
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return ::getCppuType((uno::Sequence<beans::PropertyValue> *)0);
 }
 
 sal_Bool SAL_CALL IndexedPropertyValuesContainer::hasElements(  )
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return !maProperties.empty();
 }
 
 //XServiceInfo
-::rtl::OUString SAL_CALL IndexedPropertyValuesContainer::getImplementationName(  ) throw(::com::sun::star::uno::RuntimeException)
+::rtl::OUString SAL_CALL IndexedPropertyValuesContainer::getImplementationName(  )
 {
 	return getImplementationName_static();
 }
@@ -234,13 +212,13 @@ sal_Bool SAL_CALL IndexedPropertyValuesContainer::hasElements(  )
 	return rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "IndexedPropertyValuesContainer" ) );
 }
 
-sal_Bool SAL_CALL IndexedPropertyValuesContainer::supportsService( const ::rtl::OUString& ServiceName ) throw(::com::sun::star::uno::RuntimeException)
+sal_Bool SAL_CALL IndexedPropertyValuesContainer::supportsService( const ::rtl::OUString& ServiceName )
 {
 	rtl::OUString aServiceName( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.document.IndexedPropertyValues" ) );
 	return aServiceName == ServiceName;
 }
 
-::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL IndexedPropertyValuesContainer::getSupportedServiceNames(  ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL IndexedPropertyValuesContainer::getSupportedServiceNames(  )
 {
 	return getSupportedServiceNames_static();
 }

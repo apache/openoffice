@@ -116,7 +116,7 @@ public:
 	void StartListening();
 	void EndListening(sal_Bool bRemoveListener = sal_True);
 	// PropertyChangeListener
-	virtual void _propertyChange( const  ::com::sun::star::beans::PropertyChangeEvent& evt ) throw(::com::sun::star::uno::RuntimeException);
+	virtual void _propertyChange( const  ::com::sun::star::beans::PropertyChangeEvent& evt );
     virtual void initializeOle() {}
 
 	sal_Bool		supportsService( const ::rtl::OUString& _sServiceName ) const;
@@ -254,7 +254,7 @@ public:
 	TYPEINFO();
 
 	virtual sal_Int32	GetStep() const;
-    virtual void _propertyChange( const  ::com::sun::star::beans::PropertyChangeEvent& evt ) throw(::com::sun::star::uno::RuntimeException);
+    virtual void _propertyChange( const  ::com::sun::star::beans::PropertyChangeEvent& evt );
 
 	/** creates the m_xMediator when it doesn't already exist.
 		@param	_bReverse	when set to <TRUE/> then the properties from the uno control will be copied into report control

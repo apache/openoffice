@@ -97,13 +97,11 @@ private:
     virtual void SAL_CALL layoutEvent (
         const lang::EventObject& xSource,
         sal_Int16 eLayoutEvent,
-        const Any& rInfo)
-        throw (uno::RuntimeException);
+        const Any& rInfo);
 
     //=====  lang::XEventListener  ============================================
     virtual void SAL_CALL
-        disposing (const lang::EventObject& rEventObject)
-        throw (::com::sun::star::uno::RuntimeException);
+        disposing (const lang::EventObject& rEventObject);
 
     virtual void SAL_CALL disposing (void);
 
@@ -315,7 +313,6 @@ void SAL_CALL UpdateLockManager::Implementation::layoutEvent (
     const lang::EventObject&,
     sal_Int16 eLayoutEvent,
     const Any& rInfo)
-    throw (uno::RuntimeException)
 {
     switch (eLayoutEvent)
     {
@@ -359,7 +356,6 @@ void SAL_CALL UpdateLockManager::Implementation::layoutEvent (
 
 
 void SAL_CALL UpdateLockManager::Implementation::disposing (const lang::EventObject& )
-    throw (::com::sun::star::uno::RuntimeException)
 {
 }
 

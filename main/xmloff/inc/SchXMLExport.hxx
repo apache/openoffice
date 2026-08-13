@@ -80,7 +80,7 @@ public:
 	UniReference< XMLPropertySetMapper > GetPropertySetMapper() const;
 
     // XServiceInfo ( : SvXMLExport )
-    virtual ::rtl::OUString SAL_CALL getImplementationName() throw( ::com::sun::star::uno::RuntimeException );
+    virtual ::rtl::OUString SAL_CALL getImplementationName();
 };
 
 #endif	// SCH_XMLEXPORT_HXX_

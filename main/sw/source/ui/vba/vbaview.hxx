@@ -39,23 +39,23 @@ private:
     css::uno::Reference< css::text::XTextViewCursor > mxViewCursor;
     css::uno::Reference< css::beans::XPropertySet > mxViewSettings;
 
-    css::uno::Reference< css::text::XTextRange > getHFTextRange( sal_Int32 nType ) throw (css::uno::RuntimeException);
-    css::uno::Reference< css::text::XTextRange > getFirstObjectPosition( const css::uno::Reference< css::text::XText >& xText ) throw (css::uno::RuntimeException);
+    css::uno::Reference< css::text::XTextRange > getHFTextRange( sal_Int32 nType );
+    css::uno::Reference< css::text::XTextRange > getFirstObjectPosition( const css::uno::Reference< css::text::XText >& xText );
 
 public:
 	SwVbaView( const css::uno::Reference< ooo::vba::XHelperInterface >& rParent, const css::uno::Reference< css::uno::XComponentContext >& rContext,
-        const css::uno::Reference< css::frame::XModel >& rModel ) throw ( css::uno::RuntimeException );
+        const css::uno::Reference< css::frame::XModel >& rModel );
 	virtual ~SwVbaView();
 
    // XView
-    virtual ::sal_Int32 SAL_CALL getSeekView() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setSeekView( ::sal_Int32 _seekview ) throw (css::uno::RuntimeException);
-    virtual ::sal_Int32 SAL_CALL getSplitSpecial() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setSplitSpecial( ::sal_Int32 _splitspecial ) throw (css::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL getTableGridLines() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setTableGridLines( ::sal_Bool _tablegridlines ) throw (css::uno::RuntimeException);
-    virtual ::sal_Int32 SAL_CALL getType() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setType( ::sal_Int32 _type ) throw (css::uno::RuntimeException);
+    virtual ::sal_Int32 SAL_CALL getSeekView();
+    virtual void SAL_CALL setSeekView( ::sal_Int32 _seekview );
+    virtual ::sal_Int32 SAL_CALL getSplitSpecial();
+    virtual void SAL_CALL setSplitSpecial( ::sal_Int32 _splitspecial );
+    virtual ::sal_Bool SAL_CALL getTableGridLines();
+    virtual void SAL_CALL setTableGridLines( ::sal_Bool _tablegridlines );
+    virtual ::sal_Int32 SAL_CALL getType();
+    virtual void SAL_CALL setType( ::sal_Int32 _type );
 
 	// XHelperInterface
 	virtual rtl::OUString& getServiceImplName();

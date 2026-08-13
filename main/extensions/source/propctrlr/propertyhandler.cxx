@@ -85,7 +85,7 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL PropertyHandler::inspect( const Reference< XInterface >& _rxIntrospectee ) throw (RuntimeException, NullPointerException)
+    void SAL_CALL PropertyHandler::inspect( const Reference< XInterface >& _rxIntrospectee )
     {
         if ( !_rxIntrospectee.is() )
             throw NullPointerException();
@@ -125,7 +125,7 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    Sequence< Property > SAL_CALL PropertyHandler::getSupportedProperties() throw (RuntimeException)
+    Sequence< Property > SAL_CALL PropertyHandler::getSupportedProperties()
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         if ( !m_bSupportedPropertiesAreKnown )
@@ -137,19 +137,19 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    Sequence< ::rtl::OUString > SAL_CALL PropertyHandler::getSupersededProperties( ) throw (RuntimeException)
+    Sequence< ::rtl::OUString > SAL_CALL PropertyHandler::getSupersededProperties( )
     {
         return Sequence< ::rtl::OUString >();
     }
 
     //--------------------------------------------------------------------
-    Sequence< ::rtl::OUString > SAL_CALL PropertyHandler::getActuatingProperties( ) throw (RuntimeException)
+    Sequence< ::rtl::OUString > SAL_CALL PropertyHandler::getActuatingProperties( )
     {
         return Sequence< ::rtl::OUString >();
     }
 
     //--------------------------------------------------------------------
-    Any SAL_CALL PropertyHandler::convertToPropertyValue( const ::rtl::OUString& _rPropertyName, const Any& _rControlValue ) throw (UnknownPropertyException, RuntimeException)
+    Any SAL_CALL PropertyHandler::convertToPropertyValue( const ::rtl::OUString& _rPropertyName, const Any& _rControlValue )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         PropertyId nPropId = m_pInfoService->getPropertyId( _rPropertyName );
@@ -176,7 +176,7 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    Any SAL_CALL PropertyHandler::convertToControlValue( const ::rtl::OUString& _rPropertyName, const Any& _rPropertyValue, const Type& _rControlValueType ) throw (UnknownPropertyException, RuntimeException)
+    Any SAL_CALL PropertyHandler::convertToControlValue( const ::rtl::OUString& _rPropertyName, const Any& _rPropertyValue, const Type& _rControlValueType )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         PropertyId nPropId = m_pInfoService->getPropertyId( _rPropertyName );
@@ -196,7 +196,7 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    PropertyState SAL_CALL PropertyHandler::getPropertyState( const ::rtl::OUString& /*_rPropertyName*/ ) throw (UnknownPropertyException, RuntimeException)
+    PropertyState SAL_CALL PropertyHandler::getPropertyState( const ::rtl::OUString& /*_rPropertyName*/ )
     {
         return PropertyState_DIRECT_VALUE;
     }
@@ -204,7 +204,6 @@ namespace pcr
     //--------------------------------------------------------------------
     LineDescriptor SAL_CALL PropertyHandler::describePropertyLine( const ::rtl::OUString& _rPropertyName,
         const Reference< XPropertyControlFactory >& _rxControlFactory )
-        throw (UnknownPropertyException, NullPointerException, RuntimeException)
     {
         if ( !_rxControlFactory.is() )
             throw NullPointerException();
@@ -234,27 +233,27 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    ::sal_Bool SAL_CALL PropertyHandler::isComposable( const ::rtl::OUString& _rPropertyName ) throw (UnknownPropertyException, RuntimeException)
+    ::sal_Bool SAL_CALL PropertyHandler::isComposable( const ::rtl::OUString& _rPropertyName )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         return m_pInfoService->isComposeable( _rPropertyName );
     }
 
     //--------------------------------------------------------------------
-    InteractiveSelectionResult SAL_CALL PropertyHandler::onInteractivePropertySelection( const ::rtl::OUString& /*_rPropertyName*/, sal_Bool /*_bPrimary*/, Any& /*_rData*/, const Reference< XObjectInspectorUI >& /*_rxInspectorUI*/ ) throw (UnknownPropertyException, NullPointerException, RuntimeException)
+    InteractiveSelectionResult SAL_CALL PropertyHandler::onInteractivePropertySelection( const ::rtl::OUString& /*_rPropertyName*/, sal_Bool /*_bPrimary*/, Any& /*_rData*/, const Reference< XObjectInspectorUI >& /*_rxInspectorUI*/ )
     {
         DBG_ERROR( "PropertyHandler::onInteractivePropertySelection: not implemented!" );
         return InteractiveSelectionResult_Cancelled;
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL PropertyHandler::actuatingPropertyChanged( const ::rtl::OUString& /*_rActuatingPropertyName*/, const Any& /*_rNewValue*/, const Any& /*_rOldValue*/, const Reference< XObjectInspectorUI >& /*_rxInspectorUI*/, sal_Bool /*_bFirstTimeInit*/ ) throw (NullPointerException, RuntimeException)
+    void SAL_CALL PropertyHandler::actuatingPropertyChanged( const ::rtl::OUString& /*_rActuatingPropertyName*/, const Any& /*_rNewValue*/, const Any& /*_rOldValue*/, const Reference< XObjectInspectorUI >& /*_rxInspectorUI*/, sal_Bool /*_bFirstTimeInit*/ )
     {
         DBG_ERROR( "PropertyHandler::actuatingPropertyChanged: not implemented!" );
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL PropertyHandler::addPropertyChangeListener( const Reference< XPropertyChangeListener >& _rxListener ) throw (RuntimeException)
+    void SAL_CALL PropertyHandler::addPropertyChangeListener( const Reference< XPropertyChangeListener >& _rxListener )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         if ( !_rxListener.is() )
@@ -263,14 +262,14 @@ namespace pcr
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL PropertyHandler::removePropertyChangeListener( const Reference< XPropertyChangeListener >& _rxListener ) throw (RuntimeException)
+    void SAL_CALL PropertyHandler::removePropertyChangeListener( const Reference< XPropertyChangeListener >& _rxListener )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         m_aPropertyListeners.removeListener( _rxListener );
     }
 
     //--------------------------------------------------------------------
-    sal_Bool SAL_CALL PropertyHandler::suspend( sal_Bool /*_bSuspend*/ ) throw (RuntimeException)
+    sal_Bool SAL_CALL PropertyHandler::suspend( sal_Bool /*_bSuspend*/ )
     {
         return sal_True;
     }
@@ -448,7 +447,7 @@ namespace pcr
     IMPLEMENT_FORWARD_XTYPEPROVIDER2( PropertyHandlerComponent, PropertyHandler, PropertyHandlerComponent_Base )
 
     //--------------------------------------------------------------------
-    ::sal_Bool SAL_CALL PropertyHandlerComponent::supportsService( const ::rtl::OUString& ServiceName ) throw (RuntimeException)
+    ::sal_Bool SAL_CALL PropertyHandlerComponent::supportsService( const ::rtl::OUString& ServiceName )
     {
         StlSyntaxSequence< ::rtl::OUString > aAllServices( getSupportedServiceNames() );
         return ::std::find( aAllServices.begin(), aAllServices.end(), ServiceName ) != aAllServices.end();

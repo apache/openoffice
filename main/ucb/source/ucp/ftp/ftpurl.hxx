@@ -90,10 +90,7 @@ namespace ftp {
         FTPURL(
             const rtl::OUString& aIdent,
             FTPHandleProvider* pFCP = 0
-        )
-            throw(
-                malformed_exception
-            );
+        );
 
         FTPURL(const FTPURL& r);
 
@@ -122,26 +119,21 @@ namespace ftp {
         /** returns the unencoded title */
         rtl::OUString child(void) const;
 
-        std::vector<FTPDirentry> list(sal_Int16 nMode) const
-            throw(curl_exception);
+        std::vector<FTPDirentry> list(sal_Int16 nMode) const;
 
         // returns a pointer to an open tempfile,
         // sought to the beginning of.
-        oslFileHandle open() throw(curl_exception);
+        oslFileHandle open();
 
-        FTPDirentry direntry() const throw(curl_exception);
+        FTPDirentry direntry() const;
 
-        void insert(bool ReplaceExisting,void* stream) const
-            throw(curl_exception);
+        void insert(bool ReplaceExisting,void* stream) const;
 
-        void mkdir(bool ReplaceExisting) const
-            throw(curl_exception);
+        void mkdir(bool ReplaceExisting) const;
 
-        rtl::OUString ren(const rtl::OUString& NewTitle)
-            throw(curl_exception);
+        rtl::OUString ren(const rtl::OUString& NewTitle);
 
-        void del() const
-            throw(curl_exception);
+        void del() const;
 
 
     private:
@@ -160,12 +152,9 @@ namespace ftp {
          */
         std::vector<rtl::OUString> m_aPathSegmentVec;
 
-        void parse(const rtl::OUString& url)
-            throw(
-                malformed_exception
-            );
+        void parse(const rtl::OUString& url);
 
-        rtl::OUString net_title() const throw(curl_exception);
+        rtl::OUString net_title() const;
     };
 
 }

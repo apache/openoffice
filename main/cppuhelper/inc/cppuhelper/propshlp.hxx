@@ -88,8 +88,7 @@ public:
 	   @exception UnknownPropertyException	thrown if the property name is unknown.
 	 */
     virtual ::com::sun::star::beans::Property SAL_CALL getPropertyByName(
-		const ::rtl::OUString& rPropertyName )
-		throw (::com::sun::star::beans::UnknownPropertyException) = 0;
+		const ::rtl::OUString& rPropertyName ) = 0;
 	/**
 	   Return true if the property with the name rPropertyName exist, otherwise false.
 	   @param rPropertyName	the name of the property.
@@ -170,8 +169,7 @@ public:
 	   @exception UnknownPropertyException	thrown if the property name is unknown.
 	 */
     virtual ::com::sun::star::beans::Property SAL_CALL getPropertyByName(
-		const ::rtl::OUString& rPropertyName )
-		throw (::com::sun::star::beans::UnknownPropertyException);
+		const ::rtl::OUString& rPropertyName );
 	/**
 	   Return true if the property with the name rPropertyName exist, otherwise false.
 	   @param rPropertyName	the name of the property.
@@ -406,13 +404,11 @@ public:
 	   Only returns a reference to XMultiPropertySet, XFastPropertySet, XPropertySet and
 	   XEventListener.
 	 */
-	::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType )
-		throw (::com::sun::star::uno::RuntimeException);
+	::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType );
 
 	/** eases implementing XTypeProvider::getTypes, returns the types of XMultiPropertySet, XFastPropertySet, XPropertySet
 	 */
-    ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > getTypes()
-        throw(::com::sun::star::uno::RuntimeException);
+    ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > getTypes();
 
 	/**
 	   Send a disposing notification to the listeners in the containers aBoundLC
@@ -427,37 +423,31 @@ public:
 	   rPropertyName does not exist or is readonly. Otherwise rPropertyName is changed to its handle
 	   value and setFastPropertyValue is called.
 	 */
-	virtual void SAL_CALL setPropertyValue( const ::rtl::OUString& rPropertyName, const ::com::sun::star::uno::Any& aValue )
-		throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::beans::PropertyVetoException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL setPropertyValue( const ::rtl::OUString& rPropertyName, const ::com::sun::star::uno::Any& aValue );
 	/**
 	   Throw UnknownPropertyException if the property with the name
 	   rPropertyName does not exist.
 	 */
-	virtual ::com::sun::star::uno::Any SAL_CALL getPropertyValue(const ::rtl::OUString& aPropertyName)
-		throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Any SAL_CALL getPropertyValue(const ::rtl::OUString& aPropertyName);
 	/** Ignored if the property is not bound. */
 	virtual void SAL_CALL addPropertyChangeListener(
 		const ::rtl::OUString& aPropertyName,
-		const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& aListener)
-		throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+		const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& aListener);
 
 	/** Ignored if the property is not bound. */
 	virtual void SAL_CALL removePropertyChangeListener(
 		const ::rtl::OUString& aPropertyName,
-		const ::com::sun::star::uno::Reference < ::com::sun::star::beans::XPropertyChangeListener >& aListener)
-		throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+		const ::com::sun::star::uno::Reference < ::com::sun::star::beans::XPropertyChangeListener >& aListener);
 
 	/** Ignored if the property is not constrained. */
 	virtual void SAL_CALL addVetoableChangeListener(
 		const ::rtl::OUString& aPropertyName,
-		const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener >& aListener)
-		throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+		const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener >& aListener);
 
 	/** Ignored if the property is not constrained. */
 	virtual void SAL_CALL removeVetoableChangeListener(
 		const ::rtl::OUString& aPropertyName,
-		const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener > & aListener )
-		throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+		const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener > & aListener );
 
 	/**
 	   Throw UnknownPropertyException or PropertyVetoException if the property with the name
@@ -466,39 +456,32 @@ public:
 	   is changed with the setFastPropertyValue_NoBroadcast method and the bound listeners are
 	   notified.
 	  */
-	virtual void SAL_CALL setFastPropertyValue( sal_Int32 nHandle, const ::com::sun::star::uno::Any& rValue )
-		throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::beans::PropertyVetoException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL setFastPropertyValue( sal_Int32 nHandle, const ::com::sun::star::uno::Any& rValue );
 
 	/**
 	   @exception com::sun::star::beans::UnknownPropertyException
          if the property with the handle nHandle does not exist.
 	 */
-	virtual ::com::sun::star::uno::Any SAL_CALL getFastPropertyValue( sal_Int32 nHandle )
-		throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Any SAL_CALL getFastPropertyValue( sal_Int32 nHandle );
 
 	// XMultiPropertySet
 	virtual void SAL_CALL setPropertyValues(
 		const ::com::sun::star::uno::Sequence< ::rtl::OUString >& PropertyNames,
-		const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& Values )
-		throw(::com::sun::star::beans::PropertyVetoException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+		const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& Values );
 
 	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any > SAL_CALL getPropertyValues(
-		const ::com::sun::star::uno::Sequence< ::rtl::OUString >& PropertyNames )
-		throw(::com::sun::star::uno::RuntimeException);
+		const ::com::sun::star::uno::Sequence< ::rtl::OUString >& PropertyNames );
 
 	virtual void SAL_CALL addPropertiesChangeListener(
 		const ::com::sun::star::uno::Sequence< ::rtl::OUString >& PropertyNames,
-		const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertiesChangeListener >& Listener )
-		throw(::com::sun::star::uno::RuntimeException);
+		const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertiesChangeListener >& Listener );
 
 	virtual void SAL_CALL removePropertiesChangeListener(
-		const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertiesChangeListener >& Listener )
-		throw(::com::sun::star::uno::RuntimeException);
+		const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertiesChangeListener >& Listener );
 
 	virtual void SAL_CALL firePropertiesChangeEvent(
 		const ::com::sun::star::uno::Sequence< ::rtl::OUString >& PropertyNames,
-		const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertiesChangeListener > & Listener )
-		throw(::com::sun::star::uno::RuntimeException);
+		const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertiesChangeListener > & Listener );
 	/**
 	   The property sequence is created in the call. The interface isn't used after the call.
 	 */
@@ -534,8 +517,7 @@ protected:
 		sal_Int32 nSeqLen,
 		sal_Int32 * pHandles,
 		const ::com::sun::star::uno::Any * pValues,
-		sal_Int32 nHitCount )
-		SAL_THROW( (::com::sun::star::uno::Exception) );
+		sal_Int32 nHitCount );
 
 	/**
 	   This abstract method must return the name to index table. This table contains all property
@@ -558,8 +540,7 @@ protected:
 		::com::sun::star::uno::Any & rConvertedValue,
 		::com::sun::star::uno::Any & rOldValue,
 		sal_Int32 nHandle,
-		const ::com::sun::star::uno::Any& rValue )
-		throw (::com::sun::star::lang::IllegalArgumentException) = 0;
+		const ::com::sun::star::uno::Any& rValue ) = 0;
 
 	/** The same as setFastPropertyValue; nHandle is always valid.
         The changes must not be broadcasted in this method.
@@ -581,8 +562,7 @@ protected:
     */
 	virtual void SAL_CALL setFastPropertyValue_NoBroadcast(
 		sal_Int32 nHandle,
-		const ::com::sun::star::uno::Any& rValue )
-		throw (::com::sun::star::uno::Exception) = 0;
+		const ::com::sun::star::uno::Any& rValue ) = 0;
 	/**
 	   The same as getFastPropertyValue, but return the value through rValue and nHandle
 	   is always valid.

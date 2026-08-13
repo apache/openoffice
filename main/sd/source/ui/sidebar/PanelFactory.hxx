@@ -75,11 +75,7 @@ public:
 
     cssu::Reference<css::ui::XUIElement> SAL_CALL createUIElement (
         const ::rtl::OUString& rsResourceURL,
-        const ::cssu::Sequence<css::beans::PropertyValue>& rArguments)
-        throw(
-            css::container::NoSuchElementException,
-            css::lang::IllegalArgumentException,
-            cssu::RuntimeException);
+        const ::cssu::Sequence<css::beans::PropertyValue>& rArguments);
 };
 
 

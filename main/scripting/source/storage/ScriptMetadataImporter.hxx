@@ -66,9 +66,7 @@ public:
      */
     void parseMetaData( css::uno::Reference< css::io::XInputStream >
         const & xInput, const ::rtl::OUString & parcelURI,
-        InfoImpls_vec & io_ScriptDatas )
-        throw ( css::xml::sax::SAXException, css::io::IOException,
-            css::uno::RuntimeException );
+        InfoImpls_vec & io_ScriptDatas );
 
     /**
      * Constructor for the meta-data parser
@@ -89,39 +87,35 @@ public:
      *
      * @see com::sun::star::xml::sax::XExtendedDocumentHandler
      */
-    virtual void SAL_CALL startCDATA()
-        throw ( css::xml::sax::SAXException, css::uno::RuntimeException );
+    virtual void SAL_CALL startCDATA();
 
     /**
      * Function to handle the end of CDATA in XML
      *
      * @see com::sun::star::xml::sax::XExtendedDocumentHandler
      */
-    virtual void SAL_CALL endCDATA() throw ( css::uno::RuntimeException );
+    virtual void SAL_CALL endCDATA();
 
     /**
      * Function to handle comments in XML
      *
      * @see com::sun::star::xml::sax::XExtendedDocumentHandler
      */
-    virtual void SAL_CALL comment( const ::rtl::OUString & sComment )
-        throw ( css::xml::sax::SAXException, css::uno::RuntimeException );
+    virtual void SAL_CALL comment( const ::rtl::OUString & sComment );
 
     /**
      * Function to handle line breaks in XML
      *
      * @see com::sun::star::xml::sax::XExtendedDocumentHandler
      */
-    virtual void SAL_CALL allowLineBreak()
-        throw ( css::xml::sax::SAXException, css::uno::RuntimeException );
+    virtual void SAL_CALL allowLineBreak();
 
     /**
      * Function to handle unknowns in XML
      *
      * @see com::sun::star::xml::sax::XExtendedDocumentHandler
      */
-    virtual void SAL_CALL unknown( const ::rtl::OUString & sString )
-        throw ( css::xml::sax::SAXException, css::uno::RuntimeException );
+    virtual void SAL_CALL unknown( const ::rtl::OUString & sString );
 
     /**
      * Function to handle the start of XML document
@@ -129,16 +123,14 @@ public:
      * @see com::sun::star::xml::sax::XExtendedDocumentHandler
      */
     // XDocumentHandler impl
-    virtual void SAL_CALL startDocument()
-        throw ( css::xml::sax::SAXException, css::uno::RuntimeException );
+    virtual void SAL_CALL startDocument();
 
     /**
      * Function to handle the end of the XML document
      *
      * @see com::sun::star::xml::sax::XDocumentHandler
      */
-    virtual void SAL_CALL endDocument()
-        throw ( css::xml::sax::SAXException, css::uno::RuntimeException );
+    virtual void SAL_CALL endDocument();
 
     /**
      * Function to handle the start of an element
@@ -146,33 +138,28 @@ public:
      * @see com::sun::star::xml::sax::XDocumentHandler
      */
     virtual void SAL_CALL startElement( const ::rtl::OUString& aName,
-        const css::uno::Reference< css::xml::sax::XAttributeList > & xAttribs )
-        throw ( css::xml::sax::SAXException,
-            css::uno::RuntimeException );
+        const css::uno::Reference< css::xml::sax::XAttributeList > & xAttribs );
 
     /**
      * Function to handle the end of an element
      *
      * @see com::sun::star::xml::sax::XDocumentHandler
      */
-    virtual void SAL_CALL endElement( const ::rtl::OUString & aName )
-        throw ( css::xml::sax::SAXException, css::uno::RuntimeException );
+    virtual void SAL_CALL endElement( const ::rtl::OUString & aName );
 
     /**
      * Function to handle characters in elements
      *
      * @see com::sun::star::xml::sax::XDocumentHandler
      */
-    virtual void SAL_CALL characters( const ::rtl::OUString & aChars )
-        throw ( css::xml::sax::SAXException, css::uno::RuntimeException );
+    virtual void SAL_CALL characters( const ::rtl::OUString & aChars );
 
     /**
      * Function to handle whitespace
      *
      * @see com::sun::star::xml::sax::XDocumentHandler
      */
-    virtual void SAL_CALL ignorableWhitespace( const ::rtl::OUString & aWhitespaces )
-        throw ( css::xml::sax::SAXException, css::uno::RuntimeException );
+    virtual void SAL_CALL ignorableWhitespace( const ::rtl::OUString & aWhitespaces );
 
     /**
      * Function to handle XML processing instructions
@@ -180,8 +167,7 @@ public:
      * @see com::sun::star::xml::sax::XDocumentHandler
      */
     virtual void SAL_CALL processingInstruction(
-        const ::rtl::OUString & aTarget, const ::rtl::OUString & aData )
-        throw ( css::xml::sax::SAXException, css::uno::RuntimeException );
+        const ::rtl::OUString & aTarget, const ::rtl::OUString & aData );
 
     /**
      * Function to set the document locator
@@ -189,8 +175,7 @@ public:
      * @see com::sun::star::xml::sax::XDocumentHandler
      */
     virtual void SAL_CALL setDocumentLocator(
-        const css::uno::Reference< css::xml::sax::XLocator >& xLocator )
-        throw ( css::xml::sax::SAXException, css::uno::RuntimeException );
+        const css::uno::Reference< css::xml::sax::XLocator >& xLocator );
 
 
 

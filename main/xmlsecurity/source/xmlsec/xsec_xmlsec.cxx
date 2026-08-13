@@ -50,26 +50,22 @@ class SerialNumberAdapterImpl : public WeakImplHelper1<
         ::com::sun::star::security::XSerialNumberAdapter >
 {
     virtual OUString SAL_CALL toString( const Sequence< sal_Int8 >& rSerialNumber )
-        throw (RuntimeException)
     {
         return bigIntegerToNumericString(rSerialNumber);
     }
     virtual Sequence< sal_Int8 > SAL_CALL toSequence( const OUString& rSerialNumber )
-        throw (RuntimeException)
     {
         return numericStringToBigInteger(rSerialNumber);
     }
 };
 
 OUString SerialNumberAdapterImpl_getImplementationName()
-    throw (RuntimeException)
 {
     return OUString(RTL_CONSTASCII_USTRINGPARAM(
         "com.sun.star.security.SerialNumberAdapter"));
 }
 
 Sequence< OUString > SerialNumberAdapterImpl_getSupportedServiceNames()
-    throw (RuntimeException)
 {
     Sequence < OUString > aRet(1);
     OUString* pArray = aRet.getArray();
@@ -79,7 +75,7 @@ Sequence< OUString > SerialNumberAdapterImpl_getSupportedServiceNames()
 }
 
 Reference< XInterface > SerialNumberAdapterImpl_createInstance(
-    const Reference< XComponentContext > &) throw( Exception )
+    const Reference< XComponentContext > &)
 {
     return Reference< XInterface >( *new SerialNumberAdapterImpl() );
 }

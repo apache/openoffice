@@ -91,7 +91,7 @@ TextSearch::~TextSearch()
     delete pJumpTable2;
 }
 
-void TextSearch::setOptions( const SearchOptions& rOptions ) throw( RuntimeException )
+void TextSearch::setOptions( const SearchOptions& rOptions )
 {
     aSrchPara = rOptions;
 
@@ -206,7 +206,6 @@ sal_Int32 FindPosInSeq_Impl( const Sequence <sal_Int32>& rOff, sal_Int32 nPos )
 }
 
 sal_Bool TextSearch::isCellStart(const OUString& searchStr, sal_Int32 nPos)
-        throw( RuntimeException )
 {
     sal_Int32 nDone;
     return nPos == xBreak->previousCharacters(searchStr, nPos+1,
@@ -214,7 +213,6 @@ sal_Bool TextSearch::isCellStart(const OUString& searchStr, sal_Int32 nPos)
 }
 
 SearchResult TextSearch::searchForward( const OUString& searchStr, sal_Int32 startPos, sal_Int32 endPos )
-        throw( RuntimeException )
 {
     SearchResult sres;
 
@@ -311,7 +309,6 @@ SearchResult TextSearch::searchForward( const OUString& searchStr, sal_Int32 sta
 }
 
 SearchResult TextSearch::searchBackward( const OUString& searchStr, sal_Int32 startPos, sal_Int32 endPos )
-        throw(RuntimeException)
 {
     SearchResult sres;
 
@@ -564,7 +561,6 @@ sal_Int32 TextSearch::GetDiff( const sal_Unicode cChr ) const
 
 // TextSearch::NSrchFrwrd is mis-optimized on unxsoli (#i105945#)
 SearchResult TextSearch::NSrchFrwrd( const OUString& searchStr, sal_Int32 startPos, sal_Int32 endPos )
-        throw(RuntimeException)
 {
     SearchResult aRet;
     aRet.subRegExpressions = 0;
@@ -636,7 +632,6 @@ SearchResult TextSearch::NSrchFrwrd( const OUString& searchStr, sal_Int32 startP
 }
 
 SearchResult TextSearch::NSrchBkwrd( const OUString& searchStr, sal_Int32 startPos, sal_Int32 endPos )
-        throw(RuntimeException)
 {
     SearchResult aRet;
     aRet.subRegExpressions = 0;
@@ -766,7 +761,6 @@ void TextSearch::RESrchPrepare( const ::com::sun::star::util::SearchOptions& rOp
 
 SearchResult TextSearch::RESrchFrwrd( const OUString& searchStr,
                                       sal_Int32 startPos, sal_Int32 endPos )
-            throw(RuntimeException)
 {
 	SearchResult aRet;
 	aRet.subRegExpressions = 0;
@@ -813,7 +807,6 @@ SearchResult TextSearch::RESrchFrwrd( const OUString& searchStr,
 
 SearchResult TextSearch::RESrchBkwrd( const OUString& searchStr,
                                       sal_Int32 startPos, sal_Int32 endPos )
-            throw(RuntimeException)
 {
 	// NOTE: for backwards search callers provide startPos/endPos inverted!
 	SearchResult aRet;
@@ -869,7 +862,6 @@ SearchResult TextSearch::RESrchBkwrd( const OUString& searchStr,
 // search for words phonetically
 SearchResult TextSearch::ApproxSrchFrwrd( const OUString& searchStr,
                                           sal_Int32 startPos, sal_Int32 endPos )
-            throw(RuntimeException)
 {
     SearchResult aRet;
     aRet.subRegExpressions = 0;
@@ -916,7 +908,6 @@ SearchResult TextSearch::ApproxSrchFrwrd( const OUString& searchStr,
 
 SearchResult TextSearch::ApproxSrchBkwrd( const OUString& searchStr,
                                           sal_Int32 startPos, sal_Int32 endPos )
-            throw(RuntimeException)
 {
     SearchResult aRet;
     aRet.subRegExpressions = 0;
@@ -974,20 +965,18 @@ static OUString getImplementationName_Static()
 
 OUString SAL_CALL
 TextSearch::getImplementationName()
-                throw( RuntimeException )
 {
     return getImplementationName_Static();
 }
 
 sal_Bool SAL_CALL
 TextSearch::supportsService(const OUString& rServiceName)
-                throw( RuntimeException )
 {
     return !rServiceName.compareToAscii( cSearchName );
 }
 
 Sequence< OUString > SAL_CALL
-TextSearch::getSupportedServiceNames(void) throw( RuntimeException )
+TextSearch::getSupportedServiceNames(void)
 {
     Sequence< OUString > aRet(1);
     aRet[0] = getServiceName_Static();

@@ -79,7 +79,6 @@ public:
 	}
 	virtual ~SwXMLTextBlockImport ( void )
 		throw();
-	virtual void SAL_CALL endDocument(void)
-		throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL endDocument(void);
 };
 #endif

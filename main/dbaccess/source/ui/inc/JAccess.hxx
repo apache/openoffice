@@ -57,17 +57,17 @@ namespace dbaui
 		DECLARE_XTYPEPROVIDER( )
 
 		// XServiceInfo - static methods
-		static ::rtl::OUString getImplementationName_Static(void) throw( com::sun::star::uno::RuntimeException );
+		static ::rtl::OUString getImplementationName_Static(void);
 
-		virtual ::rtl::OUString SAL_CALL getImplementationName() throw(com::sun::star::uno::RuntimeException);
+		virtual ::rtl::OUString SAL_CALL getImplementationName();
 
 		// XAccessible
-		virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleContext > SAL_CALL getAccessibleContext(  ) throw (::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleContext > SAL_CALL getAccessibleContext(  );
 
 		// XAccessibleContext
-		virtual sal_Int32 SAL_CALL getAccessibleChildCount(  ) throw (::com::sun::star::uno::RuntimeException);
-		virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getAccessibleChild( sal_Int32 i ) throw (::com::sun::star::lang::IndexOutOfBoundsException,::com::sun::star::uno::RuntimeException);
-		virtual sal_Int16 SAL_CALL getAccessibleRole(  ) throw (::com::sun::star::uno::RuntimeException);
+		virtual sal_Int32 SAL_CALL getAccessibleChildCount(  );
+		virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getAccessibleChild( sal_Int32 i );
+		virtual sal_Int16 SAL_CALL getAccessibleRole(  );
 
 		OJoinTableView*	getTableView() const { return m_pTableView; }
 

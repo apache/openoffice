@@ -71,7 +71,7 @@ CurlRequest::~CurlRequest()
     curl_easy_setopt( curl, CURLOPT_WRITEDATA, NULL );
 }
 
-void CurlRequest::addHeader( const rtl::OString &name, const rtl::OString &value) throw (DAVException)
+void CurlRequest::addHeader( const rtl::OString &name, const rtl::OString &value)
 {
     rtl::OString line = name + ": " + value;
     struct curl_slist *appended = curl_slist_append( requestHeaders, line.getStr() );
@@ -133,13 +133,13 @@ size_t CurlRequest::curlSendMoreBody( char *buffer, size_t len )
     return bytesToSend;
 }
 
-void CurlRequest::setProvideCredentialsCallback( bool (*callback)(long statusCode, void *userdata) throw (DAVException), void *userdata )
+void CurlRequest::setProvideCredentialsCallback( bool (*callback)(long statusCode, void *userdata), void *userdata )
 {
     provideCredentialsCallback = callback;
     provideCredentialsUserdata = userdata;
 }
 
-void CurlRequest::setURI( CurlUri uri, rtl::OUString path ) throw (DAVException)
+void CurlRequest::setURI( CurlUri uri, rtl::OUString path )
 {
     if ( curlUrl != NULL )
     {
@@ -165,7 +165,7 @@ void CurlRequest::setURI( CurlUri uri, rtl::OUString path ) throw (DAVException)
     curl_easy_setopt( curl, CURLOPT_CURLU, curlUrl );
 }
 
-CURLcode CurlRequest::copy( CurlUri uri, rtl::OUString path ) throw(DAVException)
+CURLcode CurlRequest::copy( CurlUri uri, rtl::OUString path )
 {
     setURI( uri, path );
     curl_easy_setopt( curl, CURLOPT_HTTPGET, 1L );
@@ -173,7 +173,7 @@ CURLcode CurlRequest::copy( CurlUri uri, rtl::OUString path ) throw(DAVException
     return perform();
 }
 
-CURLcode CurlRequest::delete_( CurlUri uri, rtl::OUString path ) throw (DAVException)
+CURLcode CurlRequest::delete_( CurlUri uri, rtl::OUString path )
 {
     setURI( uri, path );
     curl_easy_setopt( curl, CURLOPT_HTTPGET, 1L );
@@ -181,7 +181,7 @@ CURLcode CurlRequest::delete_( CurlUri uri, rtl::OUString path ) throw (DAVExcep
     return perform();
 }
 
-CURLcode CurlRequest::get( CurlUri uri, rtl::OUString path ) throw(DAVException)
+CURLcode CurlRequest::get( CurlUri uri, rtl::OUString path )
 {
     setURI( uri, path );
     curl_easy_setopt( curl, CURLOPT_HTTPGET, 1L );
@@ -189,7 +189,7 @@ CURLcode CurlRequest::get( CurlUri uri, rtl::OUString path ) throw(DAVException)
     return perform();
 }
 
-CURLcode CurlRequest::head( CurlUri uri, rtl::OUString path ) throw (DAVException)
+CURLcode CurlRequest::head( CurlUri uri, rtl::OUString path )
 {
     setURI( uri, path );
     curl_easy_setopt( curl, CURLOPT_NOBODY, 1L );
@@ -197,7 +197,7 @@ CURLcode CurlRequest::head( CurlUri uri, rtl::OUString path ) throw (DAVExceptio
     return perform();
 }
 
-CURLcode CurlRequest::lock( CurlUri uri, rtl::OUString path ) throw (DAVException)
+CURLcode CurlRequest::lock( CurlUri uri, rtl::OUString path )
 {
     setURI( uri, path );
     curl_easy_setopt( curl, CURLOPT_UPLOAD, 1L );
@@ -205,7 +205,7 @@ CURLcode CurlRequest::lock( CurlUri uri, rtl::OUString path ) throw (DAVExceptio
     return perform();
 }
 
-CURLcode CurlRequest::mkcol( CurlUri uri, rtl::OUString path ) throw (DAVException)
+CURLcode CurlRequest::mkcol( CurlUri uri, rtl::OUString path )
 {
     setURI( uri, path );
     curl_easy_setopt( curl, CURLOPT_HTTPGET, 1L );
@@ -213,7 +213,7 @@ CURLcode CurlRequest::mkcol( CurlUri uri, rtl::OUString path ) throw (DAVExcepti
     return perform();
 }
 
-CURLcode CurlRequest::move( CurlUri uri, rtl::OUString path ) throw (DAVException)
+CURLcode CurlRequest::move( CurlUri uri, rtl::OUString path )
 {
     setURI( uri, path );
     curl_easy_setopt( curl, CURLOPT_HTTPGET, 1L );
@@ -221,7 +221,7 @@ CURLcode CurlRequest::move( CurlUri uri, rtl::OUString path ) throw (DAVExceptio
     return perform();
 }
 
-CURLcode CurlRequest::post( CurlUri uri, rtl::OUString path ) throw (DAVException)
+CURLcode CurlRequest::post( CurlUri uri, rtl::OUString path )
 {
     setURI( uri, path );
     curl_easy_setopt( curl, CURLOPT_UPLOAD, 1L );
@@ -229,7 +229,7 @@ CURLcode CurlRequest::post( CurlUri uri, rtl::OUString path ) throw (DAVExceptio
     return perform();
 }
 
-CURLcode CurlRequest::propfind( CurlUri uri, rtl::OUString path ) throw (DAVException)
+CURLcode CurlRequest::propfind( CurlUri uri, rtl::OUString path )
 {
     setURI( uri, path );
     curl_easy_setopt( curl, CURLOPT_UPLOAD, 1L );
@@ -237,7 +237,7 @@ CURLcode CurlRequest::propfind( CurlUri uri, rtl::OUString path ) throw (DAVExce
     return perform();
 }
 
-CURLcode CurlRequest::proppatch( CurlUri uri, rtl::OUString path ) throw (DAVException)
+CURLcode CurlRequest::proppatch( CurlUri uri, rtl::OUString path )
 {
     setURI( uri, path );
     curl_easy_setopt( curl, CURLOPT_UPLOAD, 1L );
@@ -245,7 +245,7 @@ CURLcode CurlRequest::proppatch( CurlUri uri, rtl::OUString path ) throw (DAVExc
     return perform();
 }
 
-CURLcode CurlRequest::put( CurlUri uri, rtl::OUString path ) throw (DAVException)
+CURLcode CurlRequest::put( CurlUri uri, rtl::OUString path )
 {
     setURI( uri, path );
     curl_easy_setopt( curl, CURLOPT_UPLOAD, 1L );
@@ -253,7 +253,7 @@ CURLcode CurlRequest::put( CurlUri uri, rtl::OUString path ) throw (DAVException
     return perform();
 }
 
-CURLcode CurlRequest::unlock( CurlUri uri, rtl::OUString path ) throw (DAVException)
+CURLcode CurlRequest::unlock( CurlUri uri, rtl::OUString path )
 {
     setURI( uri, path );
     curl_easy_setopt( curl, CURLOPT_HTTPGET, 1L );
@@ -261,7 +261,7 @@ CURLcode CurlRequest::unlock( CurlUri uri, rtl::OUString path ) throw (DAVExcept
     return perform();
 }
 
-CURLcode CurlRequest::perform() throw (DAVException)
+CURLcode CurlRequest::perform()
 {
     CURLcode rc = curl_easy_perform( curl );
     long statusCode = 0;

@@ -60,7 +60,6 @@ SwAccessibleEmbeddedObject::~SwAccessibleEmbeddedObject()
 //=====  XInterface  ==========================================================
 com::sun::star::uno::Any SAL_CALL
     SwAccessibleEmbeddedObject::queryInterface (const com::sun::star::uno::Type & rType)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     ::com::sun::star::uno::Any aReturn = SwAccessibleNoTextFrame::queryInterface (rType);
     if ( ! aReturn.hasValue())
@@ -84,14 +83,12 @@ void SAL_CALL
 }
 
 OUString SAL_CALL SwAccessibleEmbeddedObject::getImplementationName()
-        throw( uno::RuntimeException )
 {
 	return OUString(RTL_CONSTASCII_USTRINGPARAM(sImplementationName));
 }
 
 sal_Bool SAL_CALL SwAccessibleEmbeddedObject::supportsService(
 		const ::rtl::OUString& sTestServiceName)
-    throw (uno::RuntimeException)
 {
 	return sTestServiceName.equalsAsciiL( sServiceName,
 										  sizeof(sServiceName)-1 ) ||
@@ -100,7 +97,6 @@ sal_Bool SAL_CALL SwAccessibleEmbeddedObject::supportsService(
 }
 
 uno::Sequence< OUString > SAL_CALL SwAccessibleEmbeddedObject::getSupportedServiceNames()
-        throw( uno::RuntimeException )
 {
     uno::Sequence< OUString > aRet(2);
 	OUString* pArray = aRet.getArray();
@@ -111,7 +107,6 @@ uno::Sequence< OUString > SAL_CALL SwAccessibleEmbeddedObject::getSupportedServi
 
 
 uno::Sequence< sal_Int8 > SAL_CALL SwAccessibleEmbeddedObject::getImplementationId()
-        throw(uno::RuntimeException)
 {
     vos::OGuard aGuard(Application::GetSolarMutex());
     static uno::Sequence< sal_Int8 > aId( 16 );
@@ -125,7 +120,6 @@ uno::Sequence< sal_Int8 > SAL_CALL SwAccessibleEmbeddedObject::getImplementation
 }
 //=====  XAccessibleExtendedAttributes  ========================================================
 ::com::sun::star::uno::Any SAL_CALL SwAccessibleEmbeddedObject::getExtendedAttributes()
-		throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException)
 {
 	::com::sun::star::uno::Any strRet;
 	::rtl::OUString style;

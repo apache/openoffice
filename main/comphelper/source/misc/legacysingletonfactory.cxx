@@ -73,13 +73,13 @@ namespace comphelper
         );
 
         // XServiceInfo
-        virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw (RuntimeException);
-        virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw (RuntimeException);
-        virtual Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw (RuntimeException);
+        virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+        virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+        virtual Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
         // XSingleComponentFactory
-        virtual Reference< XInterface > SAL_CALL createInstanceWithContext( const Reference< XComponentContext >& Context ) throw (Exception, RuntimeException);
-        virtual Reference< XInterface > SAL_CALL createInstanceWithArgumentsAndContext( const Sequence< Any >& Arguments, const Reference< XComponentContext >& Context ) throw (Exception, RuntimeException);
+        virtual Reference< XInterface > SAL_CALL createInstanceWithContext( const Reference< XComponentContext >& Context );
+        virtual Reference< XInterface > SAL_CALL createInstanceWithArgumentsAndContext( const Sequence< Any >& Arguments, const Reference< XComponentContext >& Context );
 
     protected:
         ~LegacySingletonFactory();
@@ -119,13 +119,13 @@ namespace comphelper
     }
 
     //--------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL LegacySingletonFactory::getImplementationName(  ) throw (RuntimeException)
+    ::rtl::OUString SAL_CALL LegacySingletonFactory::getImplementationName(  )
     {
         return m_sImplementationName;
     }
 
     //--------------------------------------------------------------------
-    ::sal_Bool SAL_CALL LegacySingletonFactory::supportsService( const ::rtl::OUString& _rServiceName ) throw (RuntimeException)
+    ::sal_Bool SAL_CALL LegacySingletonFactory::supportsService( const ::rtl::OUString& _rServiceName )
     {
         Sequence< ::rtl::OUString > aServices( getSupportedServiceNames() );
         const ::rtl::OUString* pStart = aServices.getConstArray();
@@ -134,7 +134,7 @@ namespace comphelper
     }
 
     //--------------------------------------------------------------------
-    Sequence< ::rtl::OUString > SAL_CALL LegacySingletonFactory::getSupportedServiceNames(  ) throw (RuntimeException)
+    Sequence< ::rtl::OUString > SAL_CALL LegacySingletonFactory::getSupportedServiceNames(  )
     {
         return m_aServiceNames;
     }
@@ -153,7 +153,7 @@ namespace comphelper
     }
 
     //--------------------------------------------------------------------
-    Reference< XInterface > SAL_CALL LegacySingletonFactory::createInstanceWithContext( const Reference< XComponentContext >& _rxContext ) throw (Exception, RuntimeException)
+    Reference< XInterface > SAL_CALL LegacySingletonFactory::createInstanceWithContext( const Reference< XComponentContext >& _rxContext )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         impl_nts_ensureInstance( _rxContext );
@@ -162,7 +162,7 @@ namespace comphelper
     }
 
     //--------------------------------------------------------------------
-    Reference< XInterface > SAL_CALL LegacySingletonFactory::createInstanceWithArgumentsAndContext( const Sequence< Any >& _rArguments, const Reference< XComponentContext >& _rxContext ) throw (Exception, RuntimeException)
+    Reference< XInterface > SAL_CALL LegacySingletonFactory::createInstanceWithArgumentsAndContext( const Sequence< Any >& _rArguments, const Reference< XComponentContext >& _rxContext )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         if ( !impl_nts_ensureInstance( _rxContext ) )

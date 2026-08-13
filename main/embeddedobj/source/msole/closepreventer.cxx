@@ -27,20 +27,17 @@
 #include "closepreventer.hxx"
 
 void SAL_CALL OClosePreventer::queryClosing( const ::com::sun::star::lang::EventObject&, sal_Bool  )
-		throw (::com::sun::star::util::CloseVetoException, ::com::sun::star::uno::RuntimeException)
 {
 	throw ::com::sun::star::util::CloseVetoException();
 }
 
 void SAL_CALL OClosePreventer::notifyClosing( const com::sun::star::lang::EventObject& )
-		throw (::com::sun::star::uno::RuntimeException)
 {
 	// just a disaster
 	OSL_ENSURE( sal_False, "The object can not be prevented from closing!\n" );
 }
 
 void SAL_CALL OClosePreventer::disposing( const com::sun::star::lang::EventObject& )
-		throw (::com::sun::star::uno::RuntimeException)
 {
 	// just a disaster
 	OSL_ENSURE( sal_False, "The object can not be prevented from closing!\n" );

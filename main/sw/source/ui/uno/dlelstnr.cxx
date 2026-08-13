@@ -106,7 +106,6 @@ SwLinguServiceEventListener::~SwLinguServiceEventListener()
 
 void SwLinguServiceEventListener::processDictionaryListEvent(
 			const DictionaryListEvent& rDicListEvent)
-		throw( RuntimeException )
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -132,7 +131,6 @@ void SwLinguServiceEventListener::processDictionaryListEvent(
 
 void SAL_CALL SwLinguServiceEventListener::processLinguServiceEvent(
 			const LinguServiceEvent& rLngSvcEvent )
-		throw(RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -163,7 +161,6 @@ void SAL_CALL SwLinguServiceEventListener::processLinguServiceEvent(
 
 void SAL_CALL SwLinguServiceEventListener::disposing(
 			const EventObject& rEventObj )
-		throw(RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -176,7 +173,6 @@ void SAL_CALL SwLinguServiceEventListener::disposing(
 
 void SAL_CALL SwLinguServiceEventListener::queryTermination(
 			const EventObject& /*rEventObj*/ )
-		throw(TerminationVetoException, RuntimeException)
 {
 	//vos::OGuard aGuard(Application::GetSolarMutex());
 }
@@ -184,7 +180,6 @@ void SAL_CALL SwLinguServiceEventListener::queryTermination(
 
 void SAL_CALL SwLinguServiceEventListener::notifyTermination(
 			const EventObject& rEventObj )
-		throw(RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 

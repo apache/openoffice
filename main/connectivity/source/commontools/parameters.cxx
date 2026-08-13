@@ -132,7 +132,7 @@ namespace dbtools
     }
 
     //--------------------------------------------------------------------
-    void ParameterManager::setAllParametersNull() SAL_THROW( ( SQLException, RuntimeException ) )
+    void ParameterManager::setAllParametersNull()
     {
         OSL_PRECOND( isAlive(), "ParameterManager::setAllParametersNull: not initialized, or already disposed!" );
         if ( !isAlive() )
@@ -251,7 +251,7 @@ namespace dbtools
 
     //--------------------------------------------------------------------
     void ParameterManager::classifyLinks( const Reference< XNameAccess >& _rxParentColumns,
-        const Reference< XNameAccess >& _rxColumns, ::std::vector< ::rtl::OUString >& _out_rAdditionalFilterComponents ) SAL_THROW(( Exception ))
+        const Reference< XNameAccess >& _rxColumns, ::std::vector< ::rtl::OUString >& _out_rAdditionalFilterComponents )
     {
         OSL_PRECOND( m_aMasterFields.getLength() == m_aDetailFields.getLength(),
             "ParameterManager::classifyLinks: master and detail fields should have the same length!" );
@@ -787,7 +787,7 @@ namespace dbtools
     }
 
     //--------------------------------------------------------------------
-    bool ParameterManager::getColumns( Reference< XNameAccess >& /* [out] */ _rxColumns, bool _bFromComposer ) SAL_THROW(( Exception ))
+    bool ParameterManager::getColumns( Reference< XNameAccess >& /* [out] */ _rxColumns, bool _bFromComposer )
     {
         _rxColumns.clear();
 
@@ -1105,7 +1105,7 @@ namespace dbtools
     //= OParameterContinuation
     //====================================================================
     //--------------------------------------------------------------------
-    void SAL_CALL OParameterContinuation::setParameters( const Sequence< PropertyValue >& _rValues ) throw( RuntimeException )
+    void SAL_CALL OParameterContinuation::setParameters( const Sequence< PropertyValue >& _rValues )
     {
 	    m_aValues = _rValues;
     }

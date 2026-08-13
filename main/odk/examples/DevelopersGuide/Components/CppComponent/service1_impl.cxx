@@ -71,34 +71,25 @@ public:
     virtual ~MyService1Impl() {}
 
     // XInterface
-    virtual Any SAL_CALL queryInterface( Type const & type )
-        throw (RuntimeException);
+    virtual Any SAL_CALL queryInterface( Type const & type );
     virtual void SAL_CALL acquire()
         throw ();
     virtual void SAL_CALL release()
         throw ();
     // XTypeProvider
-    virtual Sequence< Type > SAL_CALL getTypes()
-        throw (RuntimeException);
-    virtual Sequence< sal_Int8 > SAL_CALL getImplementationId()
-        throw (RuntimeException);
+    virtual Sequence< Type > SAL_CALL getTypes();
+    virtual Sequence< sal_Int8 > SAL_CALL getImplementationId();
     // XSomething
-    virtual OUString SAL_CALL methodOne( OUString const & str )
-        throw (RuntimeException);
-    virtual OUString SAL_CALL methodTwo( )
-        throw (RuntimeException);
+    virtual OUString SAL_CALL methodOne( OUString const & str );
+    virtual OUString SAL_CALL methodTwo( );
     // XServiceInfo
-    virtual OUString SAL_CALL getImplementationName()
-        throw (RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( OUString const & serviceName )
-        throw (RuntimeException);
-    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames()
-        throw (RuntimeException);
+    virtual OUString SAL_CALL getImplementationName();
+    virtual sal_Bool SAL_CALL supportsService( OUString const & serviceName );
+    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames();
 };
 
 // XInterface implementation
 Any MyService1Impl::queryInterface( Type const & type )
-    throw (RuntimeException)
 {
     if (type.equals(::cppu::UnoType< Reference< XInterface > >::get()))
     {
@@ -152,7 +143,6 @@ void MyService1Impl::release()
 
 // XTypeProvider implementation
 Sequence< Type > MyService1Impl::getTypes()
-    throw (RuntimeException)
 {
     Sequence< Type > seq( 3 );
     seq[ 0 ] = ::cppu::UnoType< Reference< lang::XTypeProvider > >::get();
@@ -161,7 +151,6 @@ Sequence< Type > MyService1Impl::getTypes()
     return seq;
 }
 Sequence< sal_Int8 > MyService1Impl::getImplementationId()
-    throw (RuntimeException)
 {
     static Sequence< sal_Int8 > * s_pId = 0;
     if (! s_pId)
@@ -182,7 +171,6 @@ Sequence< sal_Int8 > MyService1Impl::getImplementationId()
 
 // XSomething implementation
 OUString MyService1Impl::methodOne( OUString const & str )
-    throw (RuntimeException)
 {
     m_sData = str;
     return OUString( RTL_CONSTASCII_USTRINGPARAM(
@@ -190,7 +178,6 @@ OUString MyService1Impl::methodOne( OUString const & str )
 }
 
 OUString MyService1Impl::methodTwo( )
-    throw (RuntimeException)
 {
     return OUString( RTL_CONSTASCII_USTRINGPARAM(
         "called methodTwo() of MyService1 implementation: ") ) + m_sData;
@@ -198,21 +185,18 @@ OUString MyService1Impl::methodTwo( )
 
 // XServiceInfo implementation
 OUString MyService1Impl::getImplementationName()
-    throw (RuntimeException)
 {
     // unique implementation name
     return OUString( RTL_CONSTASCII_USTRINGPARAM(
                          "my_module.my_sc_implementation.MyService1") );
 }
 sal_Bool MyService1Impl::supportsService( OUString const & serviceName )
-    throw (RuntimeException)
 {
     // this object only supports one service, so the test is simple
     return serviceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM(
                                          "my_module.MyService1") );
 }
 Sequence< OUString > MyService1Impl::getSupportedServiceNames()
-    throw (RuntimeException)
 {
     // this object only supports one service
     OUString serviceName( RTL_CONSTASCII_USTRINGPARAM("my_module.MyService1") );

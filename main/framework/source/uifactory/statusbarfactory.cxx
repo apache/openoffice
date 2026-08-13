@@ -88,7 +88,6 @@ StatusBarFactory::StatusBarFactory( const ::com::sun::star::uno::Reference< ::co
 Reference< XUIElement > SAL_CALL StatusBarFactory::createUIElement(
     const ::rtl::OUString& ResourceURL,
     const Sequence< PropertyValue >& Args )
-throw ( ::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "StatusBarFactory::createUIElement" );
     // SAFE

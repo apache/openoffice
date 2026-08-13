@@ -62,7 +62,6 @@ ManifestReader::~ManifestReader()
 {
 }
 Sequence< Sequence< PropertyValue > > SAL_CALL ManifestReader::readManifestSequence( const Reference< XInputStream >& rStream )
-	throw (::com::sun::star::uno::RuntimeException)
 {
 	Sequence < Sequence < PropertyValue > > aManifestSequence;
 	Reference < XParser > xParser (xFactory->createInstance ( OUString ( RTL_CONSTASCII_USTRINGPARAM ( "com.sun.star.xml.sax.Parser" ) ) ), UNO_QUERY );
@@ -121,19 +120,16 @@ Sequence < OUString > ManifestReader::static_getSupportedServiceNames()
 }
 
 OUString ManifestReader::getImplementationName()
-	throw (RuntimeException)
 {
 	return static_getImplementationName();
 }
 
 sal_Bool SAL_CALL ManifestReader::supportsService(OUString const & rServiceName)
-	throw (RuntimeException)
 {
 	return static_supportsService ( rServiceName );
 }
 
 Sequence < OUString > ManifestReader::getSupportedServiceNames()
-	throw (RuntimeException)
 {
 	return static_getSupportedServiceNames();
 }

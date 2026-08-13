@@ -102,11 +102,11 @@ namespace connectivity { namespace hsqldb
         virtual bool    implTypedNotify(
                             const Reference< XFlushListener >& _rxListener,
                             const EventObject& _rEvent
-                        )   SAL_THROW( ( Exception ) );
+                        );
     };
 
     // -----------------------------------------------------------------------------
-    bool FlushListeners::implTypedNotify( const Reference< XFlushListener >& _rxListener, const EventObject& _rEvent ) SAL_THROW( ( Exception ) )
+    bool FlushListeners::implTypedNotify( const Reference< XFlushListener >& _rxListener, const EventObject& _rEvent )
     {
         _rxListener->flushed( _rEvent );
         return true;    // continue notifying the other listeners, if any
@@ -162,7 +162,7 @@ namespace connectivity { namespace hsqldb
 
     // XFlushable
     //--------------------------------------------------------------------
-    void SAL_CALL OHsqlConnection::flush(  ) throw (RuntimeException)
+    void SAL_CALL OHsqlConnection::flush(  )
     {
         MethodGuard aGuard( *this );
 
@@ -200,21 +200,21 @@ namespace connectivity { namespace hsqldb
    }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OHsqlConnection::addFlushListener( const Reference< XFlushListener >& l ) throw (RuntimeException)
+    void SAL_CALL OHsqlConnection::addFlushListener( const Reference< XFlushListener >& l )
     {
         MethodGuard aGuard( *this );
         m_aFlushListeners.addInterface( l );
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OHsqlConnection::removeFlushListener( const Reference< XFlushListener >& l ) throw (RuntimeException)
+    void SAL_CALL OHsqlConnection::removeFlushListener( const Reference< XFlushListener >& l )
     {
         MethodGuard aGuard( *this );
         m_aFlushListeners.removeInterface( l );
     }
 
     // -------------------------------------------------------------------
-    Reference< XGraphic > SAL_CALL OHsqlConnection::getTableIcon( const ::rtl::OUString& _TableName, ::sal_Int32 _ColorMode ) throw (RuntimeException)
+    Reference< XGraphic > SAL_CALL OHsqlConnection::getTableIcon( const ::rtl::OUString& _TableName, ::sal_Int32 _ColorMode )
     {
         MethodGuard aGuard( *this );
 
@@ -226,7 +226,7 @@ namespace connectivity { namespace hsqldb
     }
 
     // -------------------------------------------------------------------
-    Reference< XInterface > SAL_CALL OHsqlConnection::getTableEditor( const Reference< XDatabaseDocumentUI >& _DocumentUI, const ::rtl::OUString& _TableName ) throw (IllegalArgumentException, WrappedTargetException, RuntimeException)
+    Reference< XInterface > SAL_CALL OHsqlConnection::getTableEditor( const Reference< XDatabaseDocumentUI >& _DocumentUI, const ::rtl::OUString& _TableName )
     {
         MethodGuard aGuard( *this );
 

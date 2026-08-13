@@ -99,43 +99,25 @@ public:
 		, aImplementationName( rImplementationName_ )
 		{}
 
-	/*	The specification is required, not decorative. OFactoryComponentHelper
-		derives from this class AND from OComponentHelper, whose destructor is
-		declared SAL_THROW( (RuntimeException) ). From C++11 on a destructor is
-		implicitly noexcept, so leaving this one bare made the two bases
-		disagree: the derived destructor's implicit specification is the union,
-		which is less restrictive than this one -- C2694. Under C++03, which is
-		what the XP-era compiler uses, destructors carry no implicit
-		specification and the two already agreed, so this is inert there. MSVC
-		does not enforce a dynamic specification other than throw(), so it does
-		not constrain what this destructor may do either. */
 	virtual ~OSingleFactoryHelper();
 
 	// XInterface
-	Any SAL_CALL queryInterface( const Type & rType )
-		throw(::com::sun::star::uno::RuntimeException);
+	Any SAL_CALL queryInterface( const Type & rType );
 
 	// XSingleServiceFactory
-    Reference<XInterface > SAL_CALL createInstance()
-		throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
-    virtual Reference<XInterface > SAL_CALL createInstanceWithArguments(const Sequence<Any>& Arguments)
-		throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+    Reference<XInterface > SAL_CALL createInstance();
+    virtual Reference<XInterface > SAL_CALL createInstanceWithArguments(const Sequence<Any>& Arguments);
     // XSingleComponentFactory
     virtual Reference< XInterface > SAL_CALL createInstanceWithContext(
-        Reference< XComponentContext > const & xContext )
-        throw (Exception, RuntimeException);
+        Reference< XComponentContext > const & xContext );
     virtual Reference< XInterface > SAL_CALL createInstanceWithArgumentsAndContext(
         Sequence< Any > const & rArguments,
-        Reference< XComponentContext > const & xContext )
-        throw (Exception, RuntimeException);
+        Reference< XComponentContext > const & xContext );
 
 	// XServiceInfo
-	OUString SAL_CALL getImplementationName()
-		throw(::com::sun::star::uno::RuntimeException);
-    sal_Bool SAL_CALL supportsService(const OUString& ServiceName)
-		throw(::com::sun::star::uno::RuntimeException);
-    Sequence< OUString > SAL_CALL getSupportedServiceNames(void)
-		throw(::com::sun::star::uno::RuntimeException);
+	OUString SAL_CALL getImplementationName();
+    sal_Bool SAL_CALL supportsService(const OUString& ServiceName);
+    Sequence< OUString > SAL_CALL getSupportedServiceNames(void);
 
 protected:
 	/**
@@ -144,8 +126,7 @@ protected:
 	 * @return the newly created instance. Do not return a previous (one instance) instance.
 	 */
 	virtual Reference<XInterface >	createInstanceEveryTime(
-        Reference< XComponentContext > const & xContext )
-		throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+        Reference< XComponentContext > const & xContext );
 
 	Reference<XMultiServiceFactory > xSMgr;
 	ComponentInstantiation			 pCreateFunction;
@@ -160,7 +141,6 @@ OSingleFactoryHelper::~OSingleFactoryHelper()
 
 //-----------------------------------------------------------------------------
 Any OSingleFactoryHelper::queryInterface( const Type & rType )
-	throw(::com::sun::star::uno::RuntimeException)
 {
     return ::cppu::queryInterface(
         rType,
@@ -173,7 +153,6 @@ Any OSingleFactoryHelper::queryInterface( const Type & rType )
 // OSingleFactoryHelper
 Reference<XInterface > OSingleFactoryHelper::createInstanceEveryTime(
     Reference< XComponentContext > const & xContext )
-	throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
 {
     if (m_fptr)
     {
@@ -198,7 +177,6 @@ Reference<XInterface > OSingleFactoryHelper::createInstanceEveryTime(
 
 // XSingleServiceFactory
 Reference<XInterface > OSingleFactoryHelper::createInstance()
-	throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
 {
     return createInstanceWithContext( Reference< XComponentContext >() );
 }
@@ -206,7 +184,6 @@ Reference<XInterface > OSingleFactoryHelper::createInstance()
 // XSingleServiceFactory
 Reference<XInterface > OSingleFactoryHelper::createInstanceWithArguments(
 	const Sequence<Any>& Arguments )
-	throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
 {
     return createInstanceWithArgumentsAndContext(
         Arguments, Reference< XComponentContext >() );
@@ -216,7 +193,6 @@ Reference<XInterface > OSingleFactoryHelper::createInstanceWithArguments(
 //__________________________________________________________________________________________________
 Reference< XInterface > OSingleFactoryHelper::createInstanceWithContext(
     Reference< XComponentContext > const & xContext )
-    throw (Exception, RuntimeException)
 {
     return createInstanceEveryTime( xContext );
 }
@@ -224,7 +200,6 @@ Reference< XInterface > OSingleFactoryHelper::createInstanceWithContext(
 Reference< XInterface > OSingleFactoryHelper::createInstanceWithArgumentsAndContext(
     Sequence< Any > const & rArguments,
     Reference< XComponentContext > const & xContext )
-    throw (Exception, RuntimeException)
 {
 	Reference< XInterface > xRet( createInstanceWithContext( xContext ) );
 
@@ -256,7 +231,6 @@ Reference< XInterface > OSingleFactoryHelper::createInstanceWithArgumentsAndCont
 
 // XServiceInfo
 OUString OSingleFactoryHelper::getImplementationName()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return aImplementationName;
 }
@@ -264,7 +238,6 @@ OUString OSingleFactoryHelper::getImplementationName()
 // XServiceInfo
 sal_Bool OSingleFactoryHelper::supportsService(
     const OUString& ServiceName )
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	Sequence< OUString > seqServices = getSupportedServiceNames();
 	const OUString * pServices = seqServices.getConstArray();
@@ -277,7 +250,6 @@ sal_Bool OSingleFactoryHelper::supportsService(
 
 // XServiceInfo
 Sequence< OUString > OSingleFactoryHelper::getSupportedServiceNames(void)
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return aServiceNames;
 }
@@ -352,41 +324,34 @@ public:
 	}
 
 	// XInterface
-	Any SAL_CALL queryInterface( const Type & rType )
-		throw(::com::sun::star::uno::RuntimeException);
+	Any SAL_CALL queryInterface( const Type & rType );
 	void SAL_CALL acquire() throw()
 		{ OComponentHelper::acquire(); }
 	void SAL_CALL release() throw()
 		{ OComponentHelper::release(); }
 
 	// XSingleServiceFactory
-    Reference<XInterface > SAL_CALL createInstance()
-		throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
-	Reference<XInterface > SAL_CALL createInstanceWithArguments( const Sequence<Any>& Arguments )
-		throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+    Reference<XInterface > SAL_CALL createInstance();
+	Reference<XInterface > SAL_CALL createInstanceWithArguments( const Sequence<Any>& Arguments );
     // XSingleComponentFactory
     virtual Reference< XInterface > SAL_CALL createInstanceWithContext(
-        Reference< XComponentContext > const & xContext )
-        throw (Exception, RuntimeException);
+        Reference< XComponentContext > const & xContext );
     virtual Reference< XInterface > SAL_CALL createInstanceWithArgumentsAndContext(
         Sequence< Any > const & rArguments,
-        Reference< XComponentContext > const & xContext )
-        throw (Exception, RuntimeException);
+        Reference< XComponentContext > const & xContext );
 
 	// XTypeProvider
-	virtual Sequence< Type > SAL_CALL getTypes() throw (::com::sun::star::uno::RuntimeException);
-	virtual Sequence< sal_Int8 > SAL_CALL getImplementationId() throw(::com::sun::star::uno::RuntimeException);
+	virtual Sequence< Type > SAL_CALL getTypes();
+	virtual Sequence< sal_Int8 > SAL_CALL getImplementationId();
 
 	// XAggregation
-	Any SAL_CALL queryAggregation( const Type & rType )
-		throw(::com::sun::star::uno::RuntimeException);
+	Any SAL_CALL queryAggregation( const Type & rType );
 
 	// XUnloadingPreference
-	virtual sal_Bool SAL_CALL releaseOnNotification()
-		throw(::com::sun::star::uno::RuntimeException);
+	virtual sal_Bool SAL_CALL releaseOnNotification();
 
 	// OComponentHelper
-	void SAL_CALL dispose() throw(::com::sun::star::uno::RuntimeException);
+	void SAL_CALL dispose();
 
 private:
 	Reference<XInterface >	xTheInstance;
@@ -400,7 +365,6 @@ protected:
 
 
 Any SAL_CALL OFactoryComponentHelper::queryInterface( const Type & rType )
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	if( rType == ::getCppuType( (Reference<XUnloadingPreference>*)0))
 	{
@@ -413,7 +377,6 @@ Any SAL_CALL OFactoryComponentHelper::queryInterface( const Type & rType )
 
 // XAggregation
 Any OFactoryComponentHelper::queryAggregation( const Type & rType )
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	Any aRet( OComponentHelper::queryAggregation( rType ) );
 	return (aRet.hasValue() ? aRet : OSingleFactoryHelper::queryInterface( rType ));
@@ -421,7 +384,6 @@ Any OFactoryComponentHelper::queryAggregation( const Type & rType )
 
 // XTypeProvider
 Sequence< Type > OFactoryComponentHelper::getTypes()
-	throw (::com::sun::star::uno::RuntimeException)
 {
     Type ar[ 4 ];
     ar[ 0 ] = ::getCppuType( (const Reference< XSingleServiceFactory > *)0 );
@@ -435,7 +397,6 @@ Sequence< Type > OFactoryComponentHelper::getTypes()
 }
 
 Sequence< sal_Int8 > OFactoryComponentHelper::getImplementationId()
-	throw (::com::sun::star::uno::RuntimeException)
 {
 	static OImplementationId * pId = 0;
 	if (! pId)
@@ -452,7 +413,6 @@ Sequence< sal_Int8 > OFactoryComponentHelper::getImplementationId()
 
 // XSingleServiceFactory
 Reference<XInterface > OFactoryComponentHelper::createInstance()
-	throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
 {
 	if( bOneInstance )
 	{
@@ -469,7 +429,6 @@ Reference<XInterface > OFactoryComponentHelper::createInstance()
 
 Reference<XInterface > OFactoryComponentHelper::createInstanceWithArguments(
 	const Sequence<Any>& Arguments )
-	throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
 {
 	if( bOneInstance )
 	{
@@ -489,7 +448,6 @@ Reference<XInterface > OFactoryComponentHelper::createInstanceWithArguments(
 //__________________________________________________________________________________________________
 Reference< XInterface > OFactoryComponentHelper::createInstanceWithContext(
     Reference< XComponentContext > const & xContext )
-    throw (Exception, RuntimeException)
 {
 	if( bOneInstance )
 	{
@@ -508,7 +466,6 @@ Reference< XInterface > OFactoryComponentHelper::createInstanceWithContext(
 Reference< XInterface > OFactoryComponentHelper::createInstanceWithArgumentsAndContext(
     Sequence< Any > const & rArguments,
     Reference< XComponentContext > const & xContext )
-    throw (Exception, RuntimeException)
 {
 	if( bOneInstance )
 	{
@@ -527,7 +484,6 @@ Reference< XInterface > OFactoryComponentHelper::createInstanceWithArgumentsAndC
 
 // OComponentHelper
 void OFactoryComponentHelper::dispose()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	OComponentHelper::dispose();
 
@@ -551,7 +507,7 @@ void OFactoryComponentHelper::dispose()
 // one-instance factory: sal_False
 // single factory: sal_True
 // component factory: sal_True
-sal_Bool SAL_CALL OFactoryComponentHelper::releaseOnNotification() throw(::com::sun::star::uno::RuntimeException)
+sal_Bool SAL_CALL OFactoryComponentHelper::releaseOnNotification()
 {
 	if( bOneInstance)
 		return sal_False;
@@ -579,55 +535,44 @@ public:
 		{}
 
     // XInterface
-    virtual Any SAL_CALL queryInterface( Type const & type )
-        throw (RuntimeException);
+    virtual Any SAL_CALL queryInterface( Type const & type );
     virtual void SAL_CALL acquire() throw ();
     virtual void SAL_CALL release() throw ();
     // XTypeProvider
-    virtual Sequence< Type > SAL_CALL getTypes()
-        throw (RuntimeException);
+    virtual Sequence< Type > SAL_CALL getTypes();
     // XPropertySet
-    virtual Reference< beans::XPropertySetInfo > SAL_CALL getPropertySetInfo()
-        throw (RuntimeException);
+    virtual Reference< beans::XPropertySetInfo > SAL_CALL getPropertySetInfo();
 
     // OPropertySetHelper
     virtual IPropertyArrayHelper & SAL_CALL getInfoHelper();
     virtual sal_Bool SAL_CALL convertFastPropertyValue(
         Any & rConvertedValue, Any & rOldValue,
-        sal_Int32 nHandle, Any const & rValue )
-        throw (lang::IllegalArgumentException);
+        sal_Int32 nHandle, Any const & rValue );
     virtual void SAL_CALL setFastPropertyValue_NoBroadcast(
-        sal_Int32 nHandle, Any const & rValue )
-        throw (Exception);
+        sal_Int32 nHandle, Any const & rValue );
     using OPropertySetHelper::getFastPropertyValue;
     virtual void SAL_CALL getFastPropertyValue(
         Any & rValue, sal_Int32 nHandle ) const;
 
 	// OSingleFactoryHelper
 	Reference<XInterface > createInstanceEveryTime(
-        Reference< XComponentContext > const & xContext )
-		throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+        Reference< XComponentContext > const & xContext );
 
 	// XSingleServiceFactory
-	Reference<XInterface > SAL_CALL createInstanceWithArguments(const Sequence<Any>& Arguments)
-		throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+	Reference<XInterface > SAL_CALL createInstanceWithArguments(const Sequence<Any>& Arguments);
     // XSingleComponentFactory
     Reference< XInterface > SAL_CALL createInstanceWithArgumentsAndContext(
         Sequence< Any > const & rArguments,
-        Reference< XComponentContext > const & xContext )
-        throw (Exception, RuntimeException);
+        Reference< XComponentContext > const & xContext );
 
 	// XServiceInfo
-    Sequence< OUString > SAL_CALL getSupportedServiceNames(void)
-		throw(::com::sun::star::uno::RuntimeException);
+    Sequence< OUString > SAL_CALL getSupportedServiceNames(void);
 	// XUnloadingPreference
-	sal_Bool SAL_CALL releaseOnNotification()
-		throw( RuntimeException);
+	sal_Bool SAL_CALL releaseOnNotification();
 
 
 private:
-	Reference< XInterface > createModuleFactory()
-		throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+	Reference< XInterface > createModuleFactory();
 
 	/** The registry key of the implementation section */
 	Reference<XRegistryKey >	xImplementationKey;
@@ -643,7 +588,7 @@ protected:
 // XInterface
 //______________________________________________________________________________
 Any SAL_CALL ORegistryFactoryHelper::queryInterface(
-    Type const & type ) throw (RuntimeException)
+    Type const & type )
 {
     Any ret( OFactoryComponentHelper::queryInterface( type ) );
     if (ret.hasValue())
@@ -666,7 +611,7 @@ void ORegistryFactoryHelper::release() throw ()
 
 // XTypeProvider
 //______________________________________________________________________________
-Sequence< Type > ORegistryFactoryHelper::getTypes() throw (RuntimeException)
+Sequence< Type > ORegistryFactoryHelper::getTypes()
 {
     Sequence< Type > types( OFactoryComponentHelper::getTypes() );
     sal_Int32 pos = types.getLength();
@@ -684,7 +629,7 @@ Sequence< Type > ORegistryFactoryHelper::getTypes() throw (RuntimeException)
 // XPropertySet
 //______________________________________________________________________________
 Reference< beans::XPropertySetInfo >
-ORegistryFactoryHelper::getPropertySetInfo() throw (RuntimeException)
+ORegistryFactoryHelper::getPropertySetInfo()
 {
     ::osl::MutexGuard guard( aMutex );
     if (! m_xInfo.is())
@@ -714,7 +659,6 @@ IPropertyArrayHelper & ORegistryFactoryHelper::getInfoHelper()
 //______________________________________________________________________________
 sal_Bool ORegistryFactoryHelper::convertFastPropertyValue(
     Any &, Any &, sal_Int32, Any const & )
-    throw (lang::IllegalArgumentException)
 {
     OSL_ENSURE( 0, "unexpected!" );
     return false;
@@ -723,7 +667,6 @@ sal_Bool ORegistryFactoryHelper::convertFastPropertyValue(
 //______________________________________________________________________________
 void ORegistryFactoryHelper::setFastPropertyValue_NoBroadcast(
     sal_Int32, Any const & )
-    throw (Exception)
 {
     throw beans::PropertyVetoException(
         OUSTR("unexpected: only readonly properties!"),
@@ -749,7 +692,6 @@ void ORegistryFactoryHelper::getFastPropertyValue(
 
 Reference<XInterface > ORegistryFactoryHelper::createInstanceEveryTime(
     Reference< XComponentContext > const & xContext )
-	throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
 {
 	if( !xModuleFactory.is() && !xModuleFactoryDepr.is() )
 	{
@@ -778,7 +720,6 @@ Reference<XInterface > ORegistryFactoryHelper::createInstanceEveryTime(
 
 Reference<XInterface > SAL_CALL ORegistryFactoryHelper::createInstanceWithArguments(
     const Sequence<Any>& Arguments )
-    throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
 {
 	if( !xModuleFactory.is() && !xModuleFactoryDepr.is() )
 	{
@@ -811,7 +752,6 @@ Reference<XInterface > SAL_CALL ORegistryFactoryHelper::createInstanceWithArgume
 Reference< XInterface > ORegistryFactoryHelper::createInstanceWithArgumentsAndContext(
     Sequence< Any > const & rArguments,
     Reference< XComponentContext > const & xContext )
-    throw (Exception, RuntimeException)
 {
 	if( !xModuleFactory.is() && !xModuleFactoryDepr.is() )
 	{
@@ -847,7 +787,6 @@ Reference< XInterface > ORegistryFactoryHelper::createInstanceWithArgumentsAndCo
 
 // OSingleFactoryHelper
 Reference< XInterface > ORegistryFactoryHelper::createModuleFactory()
-	throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
 {
     OUString aActivatorUrl;
     OUString aActivatorName;
@@ -911,7 +850,6 @@ Reference< XInterface > ORegistryFactoryHelper::createModuleFactory()
 
 // XServiceInfo
 Sequence< OUString > ORegistryFactoryHelper::getSupportedServiceNames(void)
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	MutexGuard aGuard( aMutex );
 	if( aServiceNames.getLength() == 0 )
@@ -943,7 +881,7 @@ Sequence< OUString > ORegistryFactoryHelper::getSupportedServiceNames(void)
 	return aServiceNames;
 }
 
-sal_Bool SAL_CALL ORegistryFactoryHelper::releaseOnNotification() throw(::com::sun::star::uno::RuntimeException)
+sal_Bool SAL_CALL ORegistryFactoryHelper::releaseOnNotification()
 {
 	sal_Bool retVal= sal_True;
 	if( isOneInstance() && isInstance())
@@ -988,27 +926,20 @@ public:
 		{}
 
 	// XSingleServiceFactory
-    Reference<XInterface > SAL_CALL createInstance()
-		throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
-    Reference<XInterface > SAL_CALL createInstanceWithArguments(const Sequence<Any>& Arguments)
-		throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+    Reference<XInterface > SAL_CALL createInstance();
+    Reference<XInterface > SAL_CALL createInstanceWithArguments(const Sequence<Any>& Arguments);
 
 	// XServiceInfo
-	OUString SAL_CALL getImplementationName()
-		throw(::com::sun::star::uno::RuntimeException);
-    sal_Bool SAL_CALL supportsService(const OUString& ServiceName)
-		throw(::com::sun::star::uno::RuntimeException);
-    Sequence< OUString > SAL_CALL getSupportedServiceNames(void)
-		throw(::com::sun::star::uno::RuntimeException);
+	OUString SAL_CALL getImplementationName();
+    sal_Bool SAL_CALL supportsService(const OUString& ServiceName);
+    Sequence< OUString > SAL_CALL getSupportedServiceNames(void);
 	//XUnloadingPreference
-	sal_Bool SAL_CALL releaseOnNotification()
-		throw(::com::sun::star::uno::RuntimeException);
+	sal_Bool SAL_CALL releaseOnNotification();
 
 };
 
 // XSingleServiceFactory
 Reference<XInterface > OFactoryProxyHelper::createInstance()
-	throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
 {
 	return xFactory->createInstance();
 }
@@ -1018,14 +949,12 @@ Reference<XInterface > OFactoryProxyHelper::createInstanceWithArguments
 (
 	const Sequence<Any>& Arguments
 )
-	throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
 {
 	return xFactory->createInstanceWithArguments( Arguments );
 }
 
 // XServiceInfo
 OUString OFactoryProxyHelper::getImplementationName()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	Reference<XServiceInfo > xInfo( xFactory, UNO_QUERY  );
 	if( xInfo.is() )
@@ -1035,7 +964,6 @@ OUString OFactoryProxyHelper::getImplementationName()
 
 // XServiceInfo
 sal_Bool OFactoryProxyHelper::supportsService(const OUString& ServiceName)
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	Reference<XServiceInfo > xInfo( xFactory, UNO_QUERY  );
 	if( xInfo.is() )
@@ -1045,7 +973,6 @@ sal_Bool OFactoryProxyHelper::supportsService(const OUString& ServiceName)
 
 // XServiceInfo
 Sequence< OUString > OFactoryProxyHelper::getSupportedServiceNames(void)
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	Reference<XServiceInfo > xInfo( xFactory, UNO_QUERY  );
 	if( xInfo.is() )
@@ -1053,7 +980,7 @@ Sequence< OUString > OFactoryProxyHelper::getSupportedServiceNames(void)
 	return Sequence< OUString >();
 }
 
-sal_Bool SAL_CALL OFactoryProxyHelper::releaseOnNotification() throw(::com::sun::star::uno::RuntimeException)
+sal_Bool SAL_CALL OFactoryProxyHelper::releaseOnNotification()
 {
 
 	Reference<XUnloadingPreference> pref( xFactory, UNO_QUERY);

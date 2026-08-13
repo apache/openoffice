@@ -73,7 +73,6 @@ static OUString localhost( OUString const & addition ) SAL_THROW( () )
 
 //--------------------------------------------------------------------------------------------------
 static inline void dispose( Reference< XInterface > const & x )
-    SAL_THROW( (RuntimeException) )
 {
     Reference< lang::XComponent > xComp( x, UNO_QUERY );
     if (xComp.is())
@@ -107,8 +106,7 @@ public:
         throw ();
 
     // XCurrentContext impl
-    virtual Any SAL_CALL getValueByName( OUString const & name )
-        throw (RuntimeException);
+    virtual Any SAL_CALL getValueByName( OUString const & name );
 };
 //__________________________________________________________________________________________________
 void user_CurrentContext::acquire()
@@ -127,7 +125,6 @@ void user_CurrentContext::release()
 }
 //__________________________________________________________________________________________________
 Any user_CurrentContext::getValueByName( OUString const & name )
-    throw (RuntimeException)
 {
     if (name.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM(USER_CREDS ".id") ))
     {
@@ -373,12 +370,10 @@ public:
         {}
 
     // XAccessControlContext impl
-    virtual void SAL_CALL checkPermission( Any const & perm )
-        throw (RuntimeException);
+    virtual void SAL_CALL checkPermission( Any const & perm );
 };
 //__________________________________________________________________________________________________
 void acc_Restr::checkPermission( Any const & perm )
-    throw (RuntimeException)
 {
     if (perm != m_perm)
     {
@@ -405,12 +400,10 @@ public:
         {}
 
     // XAction impl
-    virtual Any SAL_CALL run()
-        throw (Exception);
+    virtual Any SAL_CALL run();
 };
 //__________________________________________________________________________________________________
 Any Action::run()
-    throw (Exception)
 {
     (*m_action)( m_ac, m_arg );
     return Any();

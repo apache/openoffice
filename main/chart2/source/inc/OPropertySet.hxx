@@ -79,8 +79,7 @@ protected:
         supporting defaults.  If a property does not have a default value, you
         may throw an UnknownPropertyException.
      */
-    virtual ::com::sun::star::uno::Any GetDefaultValue( sal_Int32 nHandle ) const
-        throw(::com::sun::star::beans::UnknownPropertyException) = 0;
+    virtual ::com::sun::star::uno::Any GetDefaultValue( sal_Int32 nHandle ) const = 0;
 
 	/** The InfoHelper table contains all property names and types of
         this object.
@@ -121,8 +120,7 @@ protected:
         ( ::com::sun::star::uno::Any & rConvertedValue,
           ::com::sun::star::uno::Any & rOldValue,
           sal_Int32 nHandle,
-          const ::com::sun::star::uno::Any& rValue )
-		throw (::com::sun::star::lang::IllegalArgumentException);
+          const ::com::sun::star::uno::Any& rValue );
 
 	/** The same as setFastPropertyValue; nHandle is always valid.
         The changes must not be broadcasted in this method.
@@ -143,8 +141,7 @@ protected:
     */
 	virtual void SAL_CALL setFastPropertyValue_NoBroadcast
         ( sal_Int32 nHandle,
-          const ::com::sun::star::uno::Any& rValue )
-		throw (::com::sun::star::uno::Exception);
+          const ::com::sun::star::uno::Any& rValue );
 
 	/**
 	   The same as getFastPropertyValue, but return the value through rValue and
@@ -172,8 +169,7 @@ protected:
     // ========================================
 
     // ____ XInterface ____
-    virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& aType )
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& aType );
 //     virtual void SAL_CALL acquire() throw ();
 //     virtual void SAL_CALL release() throw ();
 
@@ -191,53 +187,33 @@ protected:
 
     // ____ XTypeProvider ____
     virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL
-        getTypes()
-        throw (::com::sun::star::uno::RuntimeException);
+        getTypes();
     virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL
-        getImplementationId()
-        throw (::com::sun::star::uno::RuntimeException);
+        getImplementationId();
 
     // ____ XPropertyState ____
     virtual ::com::sun::star::beans::PropertyState SAL_CALL
-        getPropertyState( const ::rtl::OUString& PropertyName )
-        throw (::com::sun::star::beans::UnknownPropertyException,
-               ::com::sun::star::uno::RuntimeException);
+        getPropertyState( const ::rtl::OUString& PropertyName );
     virtual ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyState > SAL_CALL
-        getPropertyStates( const ::com::sun::star::uno::Sequence< ::rtl::OUString >& aPropertyName )
-        throw (::com::sun::star::beans::UnknownPropertyException,
-               ::com::sun::star::uno::RuntimeException);
+        getPropertyStates( const ::com::sun::star::uno::Sequence< ::rtl::OUString >& aPropertyName );
     virtual void SAL_CALL
-        setPropertyToDefault( const ::rtl::OUString& PropertyName )
-        throw (::com::sun::star::beans::UnknownPropertyException,
-               ::com::sun::star::uno::RuntimeException);
+        setPropertyToDefault( const ::rtl::OUString& PropertyName );
     virtual ::com::sun::star::uno::Any SAL_CALL
-        getPropertyDefault( const ::rtl::OUString& aPropertyName )
-        throw (::com::sun::star::beans::UnknownPropertyException,
-               ::com::sun::star::lang::WrappedTargetException,
-               ::com::sun::star::uno::RuntimeException);
+        getPropertyDefault( const ::rtl::OUString& aPropertyName );
 
     // ____ XMultiPropertyStates ____
     // Note: getPropertyStates() is already implemented in XPropertyState with the
     // same signature
     virtual void SAL_CALL
-        setAllPropertiesToDefault()
-        throw (::com::sun::star::uno::RuntimeException);
+        setAllPropertiesToDefault();
     virtual void SAL_CALL
-        setPropertiesToDefault( const ::com::sun::star::uno::Sequence< ::rtl::OUString >& aPropertyNames )
-        throw (::com::sun::star::beans::UnknownPropertyException,
-               ::com::sun::star::uno::RuntimeException);
+        setPropertiesToDefault( const ::com::sun::star::uno::Sequence< ::rtl::OUString >& aPropertyNames );
     virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any > SAL_CALL
-        getPropertyDefaults( const ::com::sun::star::uno::Sequence< ::rtl::OUString >& aPropertyNames )
-        throw (::com::sun::star::beans::UnknownPropertyException,
-               ::com::sun::star::lang::WrappedTargetException,
-               ::com::sun::star::uno::RuntimeException);
+        getPropertyDefaults( const ::com::sun::star::uno::Sequence< ::rtl::OUString >& aPropertyNames );
 
     // ____ XStyleSupplier ____
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::style::XStyle > SAL_CALL getStyle()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL setStyle( const ::com::sun::star::uno::Reference< ::com::sun::star::style::XStyle >& xStyle )
-        throw (::com::sun::star::lang::IllegalArgumentException,
-               ::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::style::XStyle > SAL_CALL getStyle();
+    virtual void SAL_CALL setStyle( const ::com::sun::star::uno::Reference< ::com::sun::star::style::XStyle >& xStyle );
 
     // ____ XFastPropertyState ____
 //     virtual ::com::sun::star::beans::PropertyState SAL_CALL getFastPropertyState( sal_Int32 nHandle )
@@ -257,12 +233,10 @@ protected:
     // ____ XMultiPropertySet ____
 	virtual void SAL_CALL setPropertyValues(
 		const ::com::sun::star::uno::Sequence< ::rtl::OUString >& PropertyNames,
-		const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& Values )
-		throw(::com::sun::star::beans::PropertyVetoException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+		const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& Values );
 
     // ____ XFastPropertySet ____
-	virtual void SAL_CALL setFastPropertyValue( sal_Int32 nHandle, const ::com::sun::star::uno::Any& rValue )
-		throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::beans::PropertyVetoException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL setFastPropertyValue( sal_Int32 nHandle, const ::com::sun::star::uno::Any& rValue );
 
     // Note: it is assumed that the base class implements setPropertyValue by
     // using setFastPropertyValue

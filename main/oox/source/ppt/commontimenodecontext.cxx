@@ -611,7 +611,7 @@ static OUString getConvertedSubType( sal_Int16 nPresetClass, sal_Int32 nPresetId
 	}
 
 
-	void SAL_CALL CommonTimeNodeContext::endFastElement( sal_Int32 aElement ) throw ( SAXException, RuntimeException)
+	void SAL_CALL CommonTimeNodeContext::endFastElement( sal_Int32 aElement )
 	{
 		if( aElement == ( PPT_TOKEN( iterate ) ) )
 		{
@@ -620,7 +620,7 @@ static OUString getConvertedSubType( sal_Int16 nPresetClass, sal_Int32 nPresetId
 	}
 
 
-	Reference< XFastContextHandler > SAL_CALL CommonTimeNodeContext::createFastChildContext( ::sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttribs ) throw ( SAXException, RuntimeException )
+	Reference< XFastContextHandler > SAL_CALL CommonTimeNodeContext::createFastChildContext( ::sal_Int32 aElementToken, const Reference< XFastAttributeList >& xAttribs )
 	{
 		Reference< XFastContextHandler > xRet;
 

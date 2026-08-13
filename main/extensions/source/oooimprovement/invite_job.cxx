@@ -75,7 +75,7 @@ namespace oooimprovement
     InviteJob::~InviteJob()
     { }
 
-    void SAL_CALL InviteJob::executeAsync(const Sequence<NamedValue>&, const Reference<XJobListener>& listener) throw(RuntimeException)
+    void SAL_CALL InviteJob::executeAsync(const Sequence<NamedValue>&, const Reference<XJobListener>& listener)
     {
         Config config(m_ServiceFactory);
         {
@@ -98,7 +98,7 @@ namespace oooimprovement
         listener->jobFinished(Reference<XAsyncJob>(this), result);
     }
 
-    sal_Bool SAL_CALL InviteJob::supportsService(const OUString& service_name) throw(RuntimeException)
+    sal_Bool SAL_CALL InviteJob::supportsService(const OUString& service_name)
     {
         const Sequence<OUString> service_names(getSupportedServiceNames());
         for (sal_Int32 idx = service_names.getLength()-1; idx>=0; --idx)
@@ -106,10 +106,10 @@ namespace oooimprovement
         return sal_False;
     }
 
-    OUString SAL_CALL InviteJob::getImplementationName() throw(RuntimeException)
+    OUString SAL_CALL InviteJob::getImplementationName()
     { return getImplementationName_static(); }
 
-    Sequence<OUString> SAL_CALL InviteJob::getSupportedServiceNames() throw(RuntimeException)
+    Sequence<OUString> SAL_CALL InviteJob::getSupportedServiceNames()
     { return getSupportedServiceNames_static(); }
 
     OUString SAL_CALL InviteJob::getImplementationName_static()

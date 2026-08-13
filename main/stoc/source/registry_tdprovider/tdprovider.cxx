@@ -128,10 +128,8 @@ class ProviderImpl
               m_xThisProvider( pProvider )
             {}
         // XHierarchicalNameAccess
-        virtual Any SAL_CALL getByHierarchicalName( OUString const & name )
-            throw (container::NoSuchElementException, RuntimeException);
-        virtual sal_Bool SAL_CALL hasByHierarchicalName( OUString const & name )
-            throw (RuntimeException);
+        virtual Any SAL_CALL getByHierarchicalName( OUString const & name );
+        virtual sal_Bool SAL_CALL hasByHierarchicalName( OUString const & name );
 
         // XTypeDescriptionEnumerationAccess
         virtual uno::Reference<
@@ -139,10 +137,7 @@ class ProviderImpl
         createTypeDescriptionEnumeration(
             const ::rtl::OUString& moduleName,
             const uno::Sequence< uno::TypeClass >& types,
-            reflection::TypeDescriptionSearchDepth depth )
-                throw ( reflection::NoSuchTypeNameException,
-                        reflection::InvalidTypeNameException,
-                        uno::RuntimeException );
+            reflection::TypeDescriptionSearchDepth depth );
     };
     friend class TypeDescriptionManagerWrapper;
 
@@ -160,18 +155,18 @@ public:
 	virtual ~ProviderImpl();
 
     // XInitialization
-    virtual void SAL_CALL initialize( const Sequence< Any > & args ) throw (Exception, RuntimeException);
+    virtual void SAL_CALL initialize( const Sequence< Any > & args );
 
 	// XServiceInfo
-	virtual OUString SAL_CALL getImplementationName() throw(::com::sun::star::uno::RuntimeException);
-	virtual sal_Bool SAL_CALL supportsService( const OUString & rServiceName ) throw(::com::sun::star::uno::RuntimeException);
-	virtual Sequence< OUString > SAL_CALL getSupportedServiceNames() throw(::com::sun::star::uno::RuntimeException);
+	virtual OUString SAL_CALL getImplementationName();
+	virtual sal_Bool SAL_CALL supportsService( const OUString & rServiceName );
+	virtual Sequence< OUString > SAL_CALL getSupportedServiceNames();
 
 	// XHierarchicalNameAccess
 	Any getByHierarchicalNameImpl( const OUString & rName );
 
-	virtual Any SAL_CALL getByHierarchicalName( const OUString & rName ) throw(::com::sun::star::container::NoSuchElementException, ::com::sun::star::uno::RuntimeException);
-	virtual sal_Bool SAL_CALL hasByHierarchicalName( const OUString & rName ) throw(::com::sun::star::uno::RuntimeException);
+	virtual Any SAL_CALL getByHierarchicalName( const OUString & rName );
+	virtual sal_Bool SAL_CALL hasByHierarchicalName( const OUString & rName );
 
     // XTypeDescriptionEnumerationAccess
     virtual ::com::sun::star::uno::Reference<
@@ -180,10 +175,7 @@ public:
         const ::rtl::OUString& moduleName,
         const ::com::sun::star::uno::Sequence<
             ::com::sun::star::uno::TypeClass >& types,
-        ::com::sun::star::reflection::TypeDescriptionSearchDepth depth )
-            throw ( ::com::sun::star::reflection::NoSuchTypeNameException,
-                    ::com::sun::star::reflection::InvalidTypeNameException,
-                    ::com::sun::star::uno::RuntimeException );
+        ::com::sun::star::reflection::TypeDescriptionSearchDepth depth );
 };
 //__________________________________________________________________________________________________
 ProviderImpl::ProviderImpl( const com::sun::star::uno::Reference< XComponentContext > & xContext )
@@ -202,8 +194,7 @@ ProviderImpl::~ProviderImpl()
 
 //______________________________________________________________________________
 Any ProviderImpl::TypeDescriptionManagerWrapper::getByHierarchicalName(
-    OUString const & name ) throw (container::NoSuchElementException,
-                                   RuntimeException)
+    OUString const & name )
 {
     try
     {
@@ -219,7 +210,7 @@ Any ProviderImpl::TypeDescriptionManagerWrapper::getByHierarchicalName(
 
 //______________________________________________________________________________
 sal_Bool ProviderImpl::TypeDescriptionManagerWrapper::hasByHierarchicalName(
-    OUString const & name ) throw (RuntimeException)
+    OUString const & name )
 {
 	return m_xTDMgr->hasByHierarchicalName( name ) || m_xThisProvider->hasByHierarchicalName( name );
 }
@@ -230,9 +221,6 @@ ProviderImpl::TypeDescriptionManagerWrapper::createTypeDescriptionEnumeration(
         const ::rtl::OUString& moduleName,
         const uno::Sequence< uno::TypeClass >& types,
         reflection::TypeDescriptionSearchDepth depth )
-    throw ( reflection::NoSuchTypeNameException,
-            reflection::InvalidTypeNameException,
-            uno::RuntimeException )
 {
     try
     {
@@ -287,7 +275,6 @@ void ProviderImpl::disposing()
 //__________________________________________________________________________________________________
 void ProviderImpl::initialize(
     const Sequence< Any > & args )
-    throw (Exception, RuntimeException)
 {
     // registries to read from
     Any const * pRegistries = args.getConstArray();
@@ -309,13 +296,11 @@ void ProviderImpl::initialize(
 // XServiceInfo
 //__________________________________________________________________________________________________
 OUString ProviderImpl::getImplementationName()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return stoc_bootstrap::rdbtdp_getImplementationName();
 }
 //__________________________________________________________________________________________________
 sal_Bool ProviderImpl::supportsService( const OUString & rServiceName )
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	const Sequence< OUString > & rSNL = getSupportedServiceNames();
 	const OUString * pArray = rSNL.getConstArray();
@@ -328,7 +313,6 @@ sal_Bool ProviderImpl::supportsService( const OUString & rServiceName )
 }
 //__________________________________________________________________________________________________
 Sequence< OUString > ProviderImpl::getSupportedServiceNames()
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return stoc_bootstrap::rdbtdp_getSupportedServiceNames();
 }
@@ -430,7 +414,6 @@ Any ProviderImpl::getByHierarchicalNameImpl( const OUString & rName )
 }
 
 Any SAL_CALL ProviderImpl::getByHierarchicalName( const OUString & rName )
-	throw(::com::sun::star::uno::RuntimeException, com::sun::star::container::NoSuchElementException)
 {
 	Any aRet( getByHierarchicalNameImpl( rName ) );
 
@@ -443,7 +426,6 @@ Any SAL_CALL ProviderImpl::getByHierarchicalName( const OUString & rName )
 
 //__________________________________________________________________________________________________
 sal_Bool ProviderImpl::hasByHierarchicalName( const OUString & rName )
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	return getByHierarchicalNameImpl( rName ).hasValue();
 }
@@ -456,9 +438,6 @@ ProviderImpl::createTypeDescriptionEnumeration(
         const OUString & moduleName,
         const Sequence< TypeClass > & types,
         TypeDescriptionSearchDepth depth )
-    throw ( NoSuchTypeNameException,
-            InvalidTypeNameException,
-            RuntimeException )
 {
     return com::sun::star::uno::Reference< XTypeDescriptionEnumeration >(
         TypeDescriptionEnumerationImpl::createInstance( getTDMgr(),
@@ -618,7 +597,6 @@ namespace stoc_bootstrap
 //==================================================================================================
 com::sun::star::uno::Reference< XInterface > SAL_CALL ProviderImpl_create(
     com::sun::star::uno::Reference< XComponentContext > const & xContext )
-	throw(::com::sun::star::uno::Exception)
 {
     return com::sun::star::uno::Reference< XInterface >( *new stoc_rdbtdp::ProviderImpl( xContext ) );
 }

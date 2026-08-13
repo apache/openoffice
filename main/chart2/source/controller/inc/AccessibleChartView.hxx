@@ -81,31 +81,24 @@ public:
     // 4: awt::XWindow representing the view's window (is a vcl Window)
     // all arguments are only valid until next initialization - don't keep them longer
     virtual void SAL_CALL initialize(
-        const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments )
-        throw (::com::sun::star::uno::Exception,
-               ::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments );
 
     // ____ view::XSelectionChangeListener ____
-    virtual void SAL_CALL selectionChanged( const ::com::sun::star::lang::EventObject& aEvent ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL selectionChanged( const ::com::sun::star::lang::EventObject& aEvent );
 
     // ________ XEventListener ________
-    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
     // ________ XAccessibleContext ________
-    virtual ::rtl::OUString SAL_CALL getAccessibleDescription()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getAccessibleParent()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual sal_Int32 SAL_CALL getAccessibleIndexInParent()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getAccessibleName()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual sal_Int16 SAL_CALL getAccessibleRole()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getAccessibleDescription();
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getAccessibleParent();
+    virtual sal_Int32 SAL_CALL getAccessibleIndexInParent();
+    virtual ::rtl::OUString SAL_CALL getAccessibleName();
+    virtual sal_Int16 SAL_CALL getAccessibleRole();
 
     // ________ XAccessibleComponent ________
-    virtual ::com::sun::star::awt::Rectangle SAL_CALL getBounds() throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::awt::Point SAL_CALL getLocationOnScreen() throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::awt::Rectangle SAL_CALL getBounds();
+    virtual ::com::sun::star::awt::Point SAL_CALL getLocationOnScreen();
 
 protected:
     // ________ AccessibleChartElement ________

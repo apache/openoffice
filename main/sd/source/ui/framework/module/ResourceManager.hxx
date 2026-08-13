@@ -86,14 +86,12 @@ public:
     // XConfigurationChangeListener
 
     virtual void SAL_CALL notifyConfigurationChange (
-        const com::sun::star::drawing::framework::ConfigurationChangeEvent& rEvent)
-        throw (com::sun::star::uno::RuntimeException);
+        const com::sun::star::drawing::framework::ConfigurationChangeEvent& rEvent);
 
     // XEventListener
 
     virtual void SAL_CALL disposing (
-        const com::sun::star::lang::EventObject& rEvent)
-        throw (com::sun::star::uno::RuntimeException);
+        const com::sun::star::lang::EventObject& rEvent);
 
 protected:
     ::com::sun::star::uno::Reference<com::sun::star::drawing::framework::XConfigurationController>

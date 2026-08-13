@@ -133,45 +133,44 @@ class PlugInFrame   :   public css::lang::XInitialization           ,
 		//	XInitialization
 		//---------------------------------------------------------------------------------------------------------
 
-		void SAL_CALL initialize( const css::uno::Sequence< css::uno::Any >& seqArguments ) throw(	css::uno::Exception			,
-					 																				css::uno::RuntimeException	);
+		void SAL_CALL initialize( const css::uno::Sequence< css::uno::Any >& seqArguments );
 
 		//---------------------------------------------------------------------------------------------------------
 		//	XPluginInstance
 		//---------------------------------------------------------------------------------------------------------
 
-		void SAL_CALL start			() throw( css::uno::RuntimeException );
-		void SAL_CALL implcb_start	() throw( css::uno::RuntimeException );
-		void SAL_CALL stop			() throw( css::uno::RuntimeException );
-		void SAL_CALL implcb_stop	() throw( css::uno::RuntimeException );
-		void SAL_CALL destroy		() throw( css::uno::RuntimeException );
-		void SAL_CALL implcb_destroy() throw( css::uno::RuntimeException );
+		void SAL_CALL start			();
+		void SAL_CALL implcb_start	();
+		void SAL_CALL stop			();
+		void SAL_CALL implcb_stop	();
+		void SAL_CALL destroy		();
+		void SAL_CALL implcb_destroy();
 		void SAL_CALL createWindow			(	const	css::uno::Any&		aPlatformWindowHandle	,
-														sal_Bool			bEmbedded				) throw( css::uno::RuntimeException );
+														sal_Bool			bEmbedded				);
 		void SAL_CALL implcb_createWindow	(	const	css::uno::Any&		aPlatformWindowHandle	,
-														sal_Bool			bEmbedded				) throw( css::uno::RuntimeException );
+														sal_Bool			bEmbedded				);
 		void SAL_CALL newStream		(	const	::rtl::OUString&								sMIMEDescription,
 										const	::rtl::OUString&								sURL			,
 										const	::rtl::OUString&								sFilter			,
 										const	css::uno::Reference< css::io::XInputStream >&	xStream			,
-										const	css::uno::Any&									aSessionId		) throw( css::uno::RuntimeException );
+										const	css::uno::Any&									aSessionId		);
 	    void SAL_CALL implcb_newStream
 		                            (	const	::rtl::OUString&								sMIMEDescription,
 										const	::rtl::OUString&								sURL			,
 										const	::rtl::OUString&								sFilter			,
 										const	css::uno::Reference< css::io::XInputStream >&	xStream			,
-										const	css::uno::Any&									aSessionId		) throw( css::uno::RuntimeException );
+										const	css::uno::Any&									aSessionId		);
 		void SAL_CALL newURL		(	const	::rtl::OUString&	sMIMEDescription,
 										const	::rtl::OUString&	sURL			,
 										const	::rtl::OUString&	sFilter			,
-										const	css::uno::Any&		aSessionId		) throw( css::uno::RuntimeException );
+										const	css::uno::Any&		aSessionId		);
 		void SAL_CALL implcb_newURL	(	const	::rtl::OUString&	sMIMEDescription,
 										const	::rtl::OUString&	sURL			,
 										const	::rtl::OUString&	sFilter			,
-										const	css::uno::Any&		aSessionId		) throw( css::uno::RuntimeException );
+										const	css::uno::Any&		aSessionId		);
     	virtual void SAL_CALL getHttpServerURL(	::rtl::OUString&	sHost	,
 												sal_uInt16&			nPort	,
-												::rtl::OUString&	sPrefix	) throw( css::uno::RuntimeException );
+												::rtl::OUString&	sPrefix	);
 
 		//---------------------------------------------------------------------------------------------------------
 		//	 XDispatchProvider
@@ -179,20 +178,20 @@ class PlugInFrame   :   public css::lang::XInitialization           ,
 
 		virtual css::uno::Reference< css::frame::XDispatch > SAL_CALL queryDispatch(	const	css::util::URL&	 	aURL			,
 																						const	::rtl::OUString&	sTargetFrameName,
-																								sal_Int32			nSearchFlags	) throw( css::uno::RuntimeException );
-		virtual css::uno::Sequence< css::uno::Reference< css::frame::XDispatch > > SAL_CALL queryDispatches( const css::uno::Sequence< css::frame::DispatchDescriptor >& seqDescripts ) throw( css::uno::RuntimeException );
+																								sal_Int32			nSearchFlags	);
+		virtual css::uno::Sequence< css::uno::Reference< css::frame::XDispatch > > SAL_CALL queryDispatches( const css::uno::Sequence< css::frame::DispatchDescriptor >& seqDescripts );
 
 		//---------------------------------------------------------------------------------------------------------
         //   XDispatchResultListener
 		//---------------------------------------------------------------------------------------------------------
 
-        virtual void SAL_CALL dispatchFinished      ( const css::frame::DispatchResultEvent&                    aEvent     ) throw( css::uno::RuntimeException );
+        virtual void SAL_CALL dispatchFinished      ( const css::frame::DispatchResultEvent&                    aEvent     );
 
 		//---------------------------------------------------------------------------------------------------------
 		//	 XEventListener
 		//---------------------------------------------------------------------------------------------------------
 
-		void SAL_CALL disposing( const css::lang::EventObject& aEvent ) throw( css::uno::RuntimeException );
+		void SAL_CALL disposing( const css::lang::EventObject& aEvent );
 
 	//-------------------------------------------------------------------------------------------------------------
 	//	protected methods

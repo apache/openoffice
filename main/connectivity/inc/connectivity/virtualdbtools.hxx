@@ -122,19 +122,17 @@ namespace connectivity
 				const ::rtl::OUString& _rUser,
 				const ::rtl::OUString& _rPwd,
 				const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory>& _rxFactory
-			) const SAL_THROW ( (::com::sun::star::sdbc::SQLException) ) = 0;
+			) const = 0;
 
 			virtual ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XConnection> connectRowset(
 				const ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XRowSet>& _rxRowSet,
 				const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory>& _rxFactory,
 				sal_Bool _bSetAsActiveConnection
-			) const SAL_THROW ( ( ::com::sun::star::sdbc::SQLException
-                                , ::com::sun::star::lang::WrappedTargetException
-                                , ::com::sun::star::uno::RuntimeException ) ) = 0;
+			) const = 0;
 
 			virtual ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XConnection> getRowSetConnection(
 				const ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XRowSet>& _rxRowSet)
-				const SAL_THROW ( (::com::sun::star::uno::RuntimeException) ) = 0;
+				const = 0;
 
 			virtual ::com::sun::star::uno::Reference< ::com::sun::star::util::XNumberFormatsSupplier> getNumberFormats(
 				const ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XConnection>& _rxConn,

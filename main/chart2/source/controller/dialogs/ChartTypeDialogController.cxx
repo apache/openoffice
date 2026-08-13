@@ -413,7 +413,7 @@ void ChartTypeDialogController::fillExtraControls( const ChartTypeParameter& /*r
                                                   , const uno::Reference< beans::XPropertySet >& /*xTemplateProps*/ ) const
 {
 }
-void ChartTypeDialogController::setTemplateProperties( const uno::Reference< beans::XPropertySet >& /*xTemplateProps*/ ) const throw (uno::RuntimeException)
+void ChartTypeDialogController::setTemplateProperties( const uno::Reference< beans::XPropertySet >& /*xTemplateProps*/ ) const
 {
 }
 //--------------------------------------------------------------------------
@@ -1213,7 +1213,7 @@ void CombiColumnLineChartDialogController::fillExtraControls( const ChartTypePar
     m_pMF_NumberOfLines->SetLast( nMaxLines );
     m_pMF_NumberOfLines->SetMax( nMaxLines );
 }
-void CombiColumnLineChartDialogController::setTemplateProperties( const uno::Reference< beans::XPropertySet >& xTemplateProps ) const throw (uno::RuntimeException)
+void CombiColumnLineChartDialogController::setTemplateProperties( const uno::Reference< beans::XPropertySet >& xTemplateProps ) const
 {
     if( xTemplateProps.is() )
     {

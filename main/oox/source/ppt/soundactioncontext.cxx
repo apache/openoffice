@@ -54,7 +54,7 @@ namespace oox { namespace ppt {
 	}
 
 
-	void SoundActionContext::endFastElement( sal_Int32 aElement ) throw (SAXException, RuntimeException)
+	void SoundActionContext::endFastElement( sal_Int32 aElement )
 	{
 		if ( aElement == PPT_TOKEN( sndAc ) )
 		{
@@ -92,7 +92,7 @@ namespace oox { namespace ppt {
 	}
 
 
-	Reference< XFastContextHandler > SoundActionContext::createFastChildContext( ::sal_Int32 aElement, const Reference< XFastAttributeList >& xAttribs ) throw (SAXException, RuntimeException)
+	Reference< XFastContextHandler > SoundActionContext::createFastChildContext( ::sal_Int32 aElement, const Reference< XFastAttributeList >& xAttribs )
 	{
 		Reference< XFastContextHandler > xRet;
 		AttributeList attribs(xAttribs);

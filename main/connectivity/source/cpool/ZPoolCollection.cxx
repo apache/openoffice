@@ -105,12 +105,12 @@ OPoolCollection::~OPoolCollection()
 	clearConnectionPools(sal_False);
 }
 // -----------------------------------------------------------------------------
-Reference< XConnection > SAL_CALL OPoolCollection::getConnection( const ::rtl::OUString& _rURL ) throw(SQLException, RuntimeException)
+Reference< XConnection > SAL_CALL OPoolCollection::getConnection( const ::rtl::OUString& _rURL )
 {
 	return getConnectionWithInfo(_rURL,Sequence< PropertyValue >());
 }
 // -----------------------------------------------------------------------------
-Reference< XConnection > SAL_CALL OPoolCollection::getConnectionWithInfo( const ::rtl::OUString& _rURL, const Sequence< PropertyValue >& _rInfo ) throw(SQLException, RuntimeException)
+Reference< XConnection > SAL_CALL OPoolCollection::getConnectionWithInfo( const ::rtl::OUString& _rURL, const Sequence< PropertyValue >& _rInfo )
 {
 	MutexGuard aGuard(m_aMutex);
 	Reference< XConnection > xConnection;
@@ -130,26 +130,26 @@ Reference< XConnection > SAL_CALL OPoolCollection::getConnectionWithInfo( const 
 	return xConnection;
 }
 // -----------------------------------------------------------------------------
-void SAL_CALL OPoolCollection::setLoginTimeout( sal_Int32 seconds ) throw(RuntimeException)
+void SAL_CALL OPoolCollection::setLoginTimeout( sal_Int32 seconds )
 {
 	MutexGuard aGuard(m_aMutex);
 	m_xManager->setLoginTimeout(seconds);
 }
 // -----------------------------------------------------------------------------
-sal_Int32 SAL_CALL OPoolCollection::getLoginTimeout(  ) throw(RuntimeException)
+sal_Int32 SAL_CALL OPoolCollection::getLoginTimeout(  )
 {
 	MutexGuard aGuard(m_aMutex);
 	return m_xManager->getLoginTimeout();
 }
 // -----------------------------------------------------------------------------
-::rtl::OUString SAL_CALL OPoolCollection::getImplementationName(  ) throw(RuntimeException)
+::rtl::OUString SAL_CALL OPoolCollection::getImplementationName(  )
 {
 	MutexGuard aGuard(m_aMutex);
 	return getImplementationName_Static();
 }
 
 //--------------------------------------------------------------------------
-sal_Bool SAL_CALL OPoolCollection::supportsService( const ::rtl::OUString& _rServiceName ) throw(RuntimeException)
+sal_Bool SAL_CALL OPoolCollection::supportsService( const ::rtl::OUString& _rServiceName )
 {
 	Sequence< ::rtl::OUString > aSupported(getSupportedServiceNames());
 	const ::rtl::OUString* pSupported = aSupported.getConstArray();
@@ -161,7 +161,7 @@ sal_Bool SAL_CALL OPoolCollection::supportsService( const ::rtl::OUString& _rSer
 }
 
 //--------------------------------------------------------------------------
-Sequence< ::rtl::OUString > SAL_CALL OPoolCollection::getSupportedServiceNames(  ) throw(RuntimeException)
+Sequence< ::rtl::OUString > SAL_CALL OPoolCollection::getSupportedServiceNames(  )
 {
 	return getSupportedServiceNames_Static();
 }
@@ -173,20 +173,20 @@ Reference< XInterface > SAL_CALL OPoolCollection::CreateInstance(const Reference
 }
 
 //--------------------------------------------------------------------------
-::rtl::OUString SAL_CALL OPoolCollection::getImplementationName_Static(  ) throw(RuntimeException)
+::rtl::OUString SAL_CALL OPoolCollection::getImplementationName_Static(  )
 {
 	return ::rtl::OUString::createFromAscii("com.sun.star.sdbc.OConnectionPool");
 }
 
 //--------------------------------------------------------------------------
-Sequence< ::rtl::OUString > SAL_CALL OPoolCollection::getSupportedServiceNames_Static(  ) throw(RuntimeException)
+Sequence< ::rtl::OUString > SAL_CALL OPoolCollection::getSupportedServiceNames_Static(  )
 {
 	Sequence< ::rtl::OUString > aSupported(1);
 	aSupported[0] = ::rtl::OUString::createFromAscii("com.sun.star.sdbc.ConnectionPool");
 	return aSupported;
 }
 // -----------------------------------------------------------------------------
-Reference< XDriver > SAL_CALL OPoolCollection::getDriverByURL( const ::rtl::OUString& _rURL ) throw(RuntimeException)
+Reference< XDriver > SAL_CALL OPoolCollection::getDriverByURL( const ::rtl::OUString& _rURL )
 {
 	// returns the original driver when no connection pooling is enabled else it returns the proxy
 	MutexGuard aGuard(m_aMutex);
@@ -473,16 +473,16 @@ Any OPoolCollection::getNodeValue(const ::rtl::OUString& _rPath,const Reference<
 	return aReturn;
 }
 // -----------------------------------------------------------------------------
-void SAL_CALL OPoolCollection::queryTermination( const EventObject& /*Event*/ ) throw (::com::sun::star::frame::TerminationVetoException, RuntimeException)
+void SAL_CALL OPoolCollection::queryTermination( const EventObject& /*Event*/ )
 {
 }
 // -----------------------------------------------------------------------------
-void SAL_CALL OPoolCollection::notifyTermination( const EventObject& /*Event*/ ) throw (RuntimeException)
+void SAL_CALL OPoolCollection::notifyTermination( const EventObject& /*Event*/ )
 {
 	clearDesktop();
 }
 // -----------------------------------------------------------------------------
-void SAL_CALL OPoolCollection::disposing( const EventObject& Source ) throw (RuntimeException)
+void SAL_CALL OPoolCollection::disposing( const EventObject& Source )
 {
 	MutexGuard aGuard(m_aMutex);
 	if ( m_xDesktop == Source.Source )
@@ -510,7 +510,7 @@ void SAL_CALL OPoolCollection::disposing( const EventObject& Source ) throw (Run
 	}
 }
 // -----------------------------------------------------------------------------
-void SAL_CALL OPoolCollection::propertyChange( const ::com::sun::star::beans::PropertyChangeEvent& evt ) throw (RuntimeException)
+void SAL_CALL OPoolCollection::propertyChange( const ::com::sun::star::beans::PropertyChangeEvent& evt )
 {
 	MutexGuard aGuard(m_aMutex);
 	if(evt.Source == m_xConfigNode)

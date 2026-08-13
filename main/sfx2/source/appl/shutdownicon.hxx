@@ -123,7 +123,7 @@ class SFX2_DLLPUBLIC ShutdownIcon :	public ShutdownIconServiceBase
         static bool GetAutostart();
 		static bool bModalMode;
 
-		void init() throw( ::com::sun::star::uno::Exception );
+		void init();
 
 		static ::com::sun::star::uno::Reference< ::com::sun::star::lang::XSingleServiceFactory >
 					GetWrapperFactory( ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > & xSMgr );
@@ -145,31 +145,19 @@ class SFX2_DLLPUBLIC ShutdownIcon :	public ShutdownIconServiceBase
 		virtual void SAL_CALL disposing();
 
 		// XEventListener
-		virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source )
-			throw(::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
 		// XTerminateListener
-		virtual void SAL_CALL queryTermination( const ::com::sun::star::lang::EventObject& aEvent )
-			throw(::com::sun::star::frame::TerminationVetoException, ::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL notifyTermination( const ::com::sun::star::lang::EventObject& aEvent )
-			throw(::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL queryTermination( const ::com::sun::star::lang::EventObject& aEvent );
+		virtual void SAL_CALL notifyTermination( const ::com::sun::star::lang::EventObject& aEvent );
 
 		// XInitialization
-		virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments )
-			throw( ::com::sun::star::uno::Exception );
+		virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments );
 
         // XFastPropertySet
         virtual void SAL_CALL setFastPropertyValue(       ::sal_Int32                  nHandle,
-                                                    const ::com::sun::star::uno::Any& aValue )
-            throw (::com::sun::star::beans::UnknownPropertyException,
-                    ::com::sun::star::beans::PropertyVetoException,
-                    ::com::sun::star::lang::IllegalArgumentException,
-                    ::com::sun::star::lang::WrappedTargetException,
-                    ::com::sun::star::uno::RuntimeException);
-        virtual ::com::sun::star::uno::Any SAL_CALL getFastPropertyValue( ::sal_Int32 nHandle )
-            throw (::com::sun::star::beans::UnknownPropertyException,
-                    ::com::sun::star::lang::WrappedTargetException,
-                    ::com::sun::star::uno::RuntimeException);
+                                                    const ::com::sun::star::uno::Any& aValue );
+        virtual ::com::sun::star::uno::Any SAL_CALL getFastPropertyValue( ::sal_Int32 nHandle );
 
 		::com::sun::star::uno::Reference< ::com::sun::star::frame::XDesktop > m_xDesktop;
 

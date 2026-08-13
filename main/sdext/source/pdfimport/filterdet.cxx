@@ -159,7 +159,7 @@ namespace {
 
 		virtual ::sal_Bool SAL_CALL callHandlerMethod( const uno::Reference< awt::XDialog >& /*xDialog*/,
 													   const uno::Any& /*EventObject*/,
-													   const ::rtl::OUString& MethodName ) throw (lang::WrappedTargetException, uno::RuntimeException)
+													   const ::rtl::OUString& MethodName )
 		{
             (void)MethodName;
 			OSL_ENSURE( MethodName.compareToAscii("SelectionChanged") == 0,
@@ -168,7 +168,7 @@ namespace {
 			return sal_True;
 		}
 
-		virtual uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedMethodNames(  ) throw (uno::RuntimeException)
+		virtual uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedMethodNames(  )
 		{
 			uno::Sequence< ::rtl::OUString > aMethods(1);
 			aMethods[0] = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "SelectionChanged" ));
@@ -352,7 +352,7 @@ PDFDetector::PDFDetector( const uno::Reference< uno::XComponentContext >& xConte
 {}
 
 // XExtendedFilterDetection
-rtl::OUString SAL_CALL PDFDetector::detect( uno::Sequence< beans::PropertyValue >& rFilterData ) throw( uno::RuntimeException )
+rtl::OUString SAL_CALL PDFDetector::detect( uno::Sequence< beans::PropertyValue >& rFilterData )
 {
     osl::MutexGuard const guard( m_aMutex );
     bool bSuccess = false;

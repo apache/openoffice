@@ -40,7 +40,7 @@ OWeakTypeObject::~OWeakTypeObject()
 {
 }
 
-Any SAL_CALL OWeakTypeObject::queryInterface(const Type & rType )	throw (RuntimeException)
+Any SAL_CALL OWeakTypeObject::queryInterface(const Type & rType )
 {
 	if( rType == XTypeProvider::static_type() )
 		return Any( Reference< XTypeProvider >(this) );
@@ -58,12 +58,12 @@ void SAL_CALL OWeakTypeObject::release()	throw ()
 	::cppu::OWeakObject::release();
 }
 
-Sequence< Type > SAL_CALL OWeakTypeObject::getTypes(  ) throw (RuntimeException)
+Sequence< Type > SAL_CALL OWeakTypeObject::getTypes(  )
 {
 	return Sequence< Type >();
 }
 
-Sequence< ::sal_Int8 > SAL_CALL OWeakTypeObject::getImplementationId(  ) throw (RuntimeException)
+Sequence< ::sal_Int8 > SAL_CALL OWeakTypeObject::getImplementationId(  )
 {
 	return Sequence< ::sal_Int8 >();
 }

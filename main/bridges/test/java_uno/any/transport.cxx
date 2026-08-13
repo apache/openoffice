@@ -46,12 +46,10 @@ namespace
 class Transport : public ::cppu::WeakImplHelper1< XTransport >
 {
 public:
-    virtual Any SAL_CALL mapAny( Any const & any )
-        throw (RuntimeException);
+    virtual Any SAL_CALL mapAny( Any const & any );
 };
 //__________________________________________________________________________________________________
 Any Transport::mapAny( Any const & any )
-    throw (RuntimeException)
 {
     return any;
 }

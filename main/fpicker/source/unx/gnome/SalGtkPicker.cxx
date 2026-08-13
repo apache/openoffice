@@ -169,7 +169,6 @@ RunDialog::~RunDialog()
 }
 
 void SAL_CALL RunDialog::windowOpened( const ::com::sun::star::lang::EventObject& )
-	throw (::com::sun::star::uno::RuntimeException)
 {
 	GdkThreadLock aLock;
 	g_timeout_add_full(G_PRIORITY_HIGH_IDLE, 0, (GSourceFunc)canceldialog, this, NULL);
@@ -249,7 +248,6 @@ SalGtkPicker::~SalGtkPicker()
 }
 
 void SAL_CALL SalGtkPicker::implsetDisplayDirectory( const rtl::OUString& aDirectory )
-	throw( lang::IllegalArgumentException, uno::RuntimeException )
 {
 	OSL_ASSERT( m_pDialog != NULL );
 
@@ -265,7 +263,7 @@ void SAL_CALL SalGtkPicker::implsetDisplayDirectory( const rtl::OUString& aDirec
 		aTxt.getStr() );
 }
 
-rtl::OUString SAL_CALL SalGtkPicker::implgetDisplayDirectory() throw( uno::RuntimeException )
+rtl::OUString SAL_CALL SalGtkPicker::implgetDisplayDirectory()
 {
 	OSL_ASSERT( m_pDialog != NULL );
 
@@ -279,7 +277,7 @@ rtl::OUString SAL_CALL SalGtkPicker::implgetDisplayDirectory() throw( uno::Runti
 	return aCurrentFolderName;
 }
 
-void SAL_CALL SalGtkPicker::implsetTitle( const rtl::OUString& aTitle ) throw( uno::RuntimeException )
+void SAL_CALL SalGtkPicker::implsetTitle( const rtl::OUString& aTitle )
 {
 	OSL_ASSERT( m_pDialog != NULL );
 

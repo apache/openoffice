@@ -130,17 +130,17 @@ namespace cairocanvas
         SpriteCanvasBaseT::disposing();
     }
 
-    ::sal_Bool SAL_CALL SpriteCanvas::showBuffer( ::sal_Bool bUpdateAll ) throw (uno::RuntimeException)
+    ::sal_Bool SAL_CALL SpriteCanvas::showBuffer( ::sal_Bool bUpdateAll )
     {
         return updateScreen( bUpdateAll );
     }
 
-    ::sal_Bool SAL_CALL SpriteCanvas::switchBuffer( ::sal_Bool bUpdateAll ) throw (uno::RuntimeException)
+    ::sal_Bool SAL_CALL SpriteCanvas::switchBuffer( ::sal_Bool bUpdateAll )
     {
         return updateScreen( bUpdateAll );
     }
 
-    sal_Bool SAL_CALL SpriteCanvas::updateScreen( sal_Bool bUpdateAll ) throw (uno::RuntimeException)
+    sal_Bool SAL_CALL SpriteCanvas::updateScreen( sal_Bool bUpdateAll )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
 
@@ -153,7 +153,7 @@ namespace cairocanvas
             mbSurfaceDirty);
     }
 
-    ::rtl::OUString SAL_CALL SpriteCanvas::getServiceName(  ) throw (uno::RuntimeException)
+    ::rtl::OUString SAL_CALL SpriteCanvas::getServiceName(  )
     {
         return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( SPRITECANVAS_SERVICE_NAME ) );
     }

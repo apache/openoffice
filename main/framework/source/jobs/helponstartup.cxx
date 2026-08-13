@@ -152,9 +152,6 @@ HelpOnStartup::~HelpOnStartup()
 //-----------------------------------------------
 // css.task.XJob
 css::uno::Any SAL_CALL HelpOnStartup::execute(const css::uno::Sequence< css::beans::NamedValue >& lArguments)
-    throw(css::lang::IllegalArgumentException,
-          css::uno::Exception                ,
-          css::uno::RuntimeException         )
 {
     // Analyze the given arguments; try to locate a model there and
     // classify it's used application module.
@@ -200,7 +197,6 @@ css::uno::Any SAL_CALL HelpOnStartup::execute(const css::uno::Sequence< css::bea
 
 //-----------------------------------------------
 void SAL_CALL HelpOnStartup::disposing(const css::lang::EventObject& aEvent)
-    throw(css::uno::RuntimeException)
 {
     // SAFE ->
     ResetableGuard aLock(m_aLock);

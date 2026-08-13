@@ -69,7 +69,6 @@ AccessibleScrollPanel::~AccessibleScrollPanel (void)
 
 sal_Int32 SAL_CALL
     AccessibleScrollPanel::getAccessibleChildCount (void)
-    throw (RuntimeException)
 {
     ThrowIfDisposed();
     const vos::OGuard aSolarGuard (Application::GetSolarMutex());
@@ -88,8 +87,6 @@ sal_Int32 SAL_CALL
 
 Reference<XAccessible> SAL_CALL
     AccessibleScrollPanel::getAccessibleChild (sal_Int32 nIndex)
-    throw (lang::IndexOutOfBoundsException,
-        RuntimeException)
 {
     ThrowIfDisposed();
     const vos::OGuard aSolarGuard (Application::GetSolarMutex());
@@ -131,7 +128,6 @@ Reference<XAccessible> SAL_CALL
 
 OUString SAL_CALL
     AccessibleScrollPanel::getImplementationName (void)
-    throw (RuntimeException)
 {
 	return OUString(RTL_CONSTASCII_USTRINGPARAM("AccessibleScrollPanel"));
 }

@@ -43,37 +43,37 @@ class MyKey : public cppu::WeakImplHelper1<registry::XRegistryKey>
 
 {
 public:
-    virtual rtl::OUString SAL_CALL getKeyName() throw (uno::RuntimeException) { return rtl::OUString(); };
+    virtual rtl::OUString SAL_CALL getKeyName() { return rtl::OUString(); };
 
     // Methods
-    virtual sal_Bool SAL_CALL isReadOnly(  ) throw (registry::InvalidRegistryException, uno::RuntimeException) {return sal_False;};
-    virtual sal_Bool SAL_CALL isValid(  ) throw (uno::RuntimeException) {return sal_False;};
-    virtual registry::RegistryKeyType SAL_CALL getKeyType( const rtl::OUString& /*rKeyName*/ ) throw (registry::InvalidRegistryException, uno::RuntimeException) {return registry::RegistryKeyType_KEY;};
-    virtual registry::RegistryValueType SAL_CALL getValueType(  ) throw (registry::InvalidRegistryException, uno::RuntimeException) {return registry::RegistryValueType_NOT_DEFINED;};
-    virtual sal_Int32 SAL_CALL getLongValue(  ) throw (registry::InvalidRegistryException, registry::InvalidValueException, uno::RuntimeException) {return 0;};
-    virtual void SAL_CALL setLongValue( sal_Int32 /*value*/ ) throw (registry::InvalidRegistryException, uno::RuntimeException) {};
-    virtual uno::Sequence< sal_Int32 > SAL_CALL getLongListValue(  ) throw (registry::InvalidRegistryException, registry::InvalidValueException, uno::RuntimeException) { return uno::Sequence<sal_Int32>(); };
-    virtual void SAL_CALL setLongListValue( const uno::Sequence< sal_Int32 >& /*seqValue*/ ) throw (registry::InvalidRegistryException, uno::RuntimeException) {};
-    virtual rtl::OUString SAL_CALL getAsciiValue(  ) throw (registry::InvalidRegistryException, registry::InvalidValueException, uno::RuntimeException) {return rtl::OUString();};
-    virtual void SAL_CALL setAsciiValue( const rtl::OUString& /*value*/ ) throw (registry::InvalidRegistryException, uno::RuntimeException) {};
-    virtual uno::Sequence< rtl::OUString > SAL_CALL getAsciiListValue(  ) throw (registry::InvalidRegistryException, registry::InvalidValueException, uno::RuntimeException) {return uno::Sequence<rtl::OUString>();};
-    virtual void SAL_CALL setAsciiListValue( const uno::Sequence< rtl::OUString >& /*seqValue*/ ) throw (registry::InvalidRegistryException, uno::RuntimeException) {};
-    virtual rtl::OUString SAL_CALL getStringValue(  ) throw (registry::InvalidRegistryException, registry::InvalidValueException, uno::RuntimeException) {return rtl::OUString();};
-    virtual void SAL_CALL setStringValue( const rtl::OUString& /*value*/ ) throw (registry::InvalidRegistryException, uno::RuntimeException) {};
-    virtual uno::Sequence< rtl::OUString > SAL_CALL getStringListValue(  ) throw (registry::InvalidRegistryException, registry::InvalidValueException, uno::RuntimeException) {return uno::Sequence<rtl::OUString>();};
-    virtual void SAL_CALL setStringListValue( const uno::Sequence< rtl::OUString >& /*seqValue*/ ) throw (registry::InvalidRegistryException, uno::RuntimeException) {};
-    virtual uno::Sequence< sal_Int8 > SAL_CALL getBinaryValue(  ) throw (registry::InvalidRegistryException, registry::InvalidValueException, uno::RuntimeException) {return uno::Sequence<sal_Int8>();};
-    virtual void SAL_CALL setBinaryValue( const uno::Sequence< sal_Int8 >& /*value*/ ) throw (registry::InvalidRegistryException, uno::RuntimeException) {};
-    virtual uno::Reference< registry::XRegistryKey > SAL_CALL openKey( const rtl::OUString& /*aKeyName*/ ) throw (registry::InvalidRegistryException, uno::RuntimeException) {return uno::Reference<registry::XRegistryKey>();};
-    virtual uno::Reference< registry::XRegistryKey > SAL_CALL createKey( const rtl::OUString& /*aKeyName*/ ) throw (registry::InvalidRegistryException, uno::RuntimeException) {return uno::Reference<registry::XRegistryKey>();};
-    virtual void SAL_CALL closeKey(  ) throw (registry::InvalidRegistryException, uno::RuntimeException) {};
-    virtual void SAL_CALL deleteKey( const rtl::OUString& /*rKeyName*/ ) throw (registry::InvalidRegistryException, uno::RuntimeException) {};
-    virtual uno::Sequence< uno::Reference< registry::XRegistryKey > > SAL_CALL openKeys(  ) throw (registry::InvalidRegistryException, uno::RuntimeException) {return uno::Sequence<uno::Reference<registry::XRegistryKey> >();};
-    virtual uno::Sequence< rtl::OUString > SAL_CALL getKeyNames(  ) throw (registry::InvalidRegistryException, uno::RuntimeException) {return uno::Sequence<rtl::OUString>();};
-    virtual sal_Bool SAL_CALL createLink( const rtl::OUString& /*aLinkName*/, const rtl::OUString& /*aLinkTarget*/ ) throw (registry::InvalidRegistryException, uno::RuntimeException) {return sal_False;};
-    virtual void SAL_CALL deleteLink( const rtl::OUString& /*rLinkName*/ ) throw (registry::InvalidRegistryException, uno::RuntimeException) {};
-    virtual rtl::OUString SAL_CALL getLinkTarget( const rtl::OUString& /*rLinkName*/ ) throw (registry::InvalidRegistryException, uno::RuntimeException) {return rtl::OUString();};
-    virtual rtl::OUString SAL_CALL getResolvedName( const rtl::OUString& /*aKeyName*/ ) throw (registry::InvalidRegistryException, uno::RuntimeException) {return rtl::OUString();};
+    virtual sal_Bool SAL_CALL isReadOnly(  ) {return sal_False;};
+    virtual sal_Bool SAL_CALL isValid(  ) {return sal_False;};
+    virtual registry::RegistryKeyType SAL_CALL getKeyType( const rtl::OUString& /*rKeyName*/ ) {return registry::RegistryKeyType_KEY;};
+    virtual registry::RegistryValueType SAL_CALL getValueType(  ) {return registry::RegistryValueType_NOT_DEFINED;};
+    virtual sal_Int32 SAL_CALL getLongValue(  ) {return 0;};
+    virtual void SAL_CALL setLongValue( sal_Int32 /*value*/ ) {};
+    virtual uno::Sequence< sal_Int32 > SAL_CALL getLongListValue(  ) { return uno::Sequence<sal_Int32>(); };
+    virtual void SAL_CALL setLongListValue( const uno::Sequence< sal_Int32 >& /*seqValue*/ ) {};
+    virtual rtl::OUString SAL_CALL getAsciiValue(  ) {return rtl::OUString();};
+    virtual void SAL_CALL setAsciiValue( const rtl::OUString& /*value*/ ) {};
+    virtual uno::Sequence< rtl::OUString > SAL_CALL getAsciiListValue(  ) {return uno::Sequence<rtl::OUString>();};
+    virtual void SAL_CALL setAsciiListValue( const uno::Sequence< rtl::OUString >& /*seqValue*/ ) {};
+    virtual rtl::OUString SAL_CALL getStringValue(  ) {return rtl::OUString();};
+    virtual void SAL_CALL setStringValue( const rtl::OUString& /*value*/ ) {};
+    virtual uno::Sequence< rtl::OUString > SAL_CALL getStringListValue(  ) {return uno::Sequence<rtl::OUString>();};
+    virtual void SAL_CALL setStringListValue( const uno::Sequence< rtl::OUString >& /*seqValue*/ ) {};
+    virtual uno::Sequence< sal_Int8 > SAL_CALL getBinaryValue(  ) {return uno::Sequence<sal_Int8>();};
+    virtual void SAL_CALL setBinaryValue( const uno::Sequence< sal_Int8 >& /*value*/ ) {};
+    virtual uno::Reference< registry::XRegistryKey > SAL_CALL openKey( const rtl::OUString& /*aKeyName*/ ) {return uno::Reference<registry::XRegistryKey>();};
+    virtual uno::Reference< registry::XRegistryKey > SAL_CALL createKey( const rtl::OUString& /*aKeyName*/ ) {return uno::Reference<registry::XRegistryKey>();};
+    virtual void SAL_CALL closeKey(  ) {};
+    virtual void SAL_CALL deleteKey( const rtl::OUString& /*rKeyName*/ ) {};
+    virtual uno::Sequence< uno::Reference< registry::XRegistryKey > > SAL_CALL openKeys(  ) {return uno::Sequence<uno::Reference<registry::XRegistryKey> >();};
+    virtual uno::Sequence< rtl::OUString > SAL_CALL getKeyNames(  ) {return uno::Sequence<rtl::OUString>();};
+    virtual sal_Bool SAL_CALL createLink( const rtl::OUString& /*aLinkName*/, const rtl::OUString& /*aLinkTarget*/ ) {return sal_False;};
+    virtual void SAL_CALL deleteLink( const rtl::OUString& /*rLinkName*/ ) {};
+    virtual rtl::OUString SAL_CALL getLinkTarget( const rtl::OUString& /*rLinkName*/ ) {return rtl::OUString();};
+    virtual rtl::OUString SAL_CALL getResolvedName( const rtl::OUString& /*aKeyName*/ ) {return rtl::OUString();};
 };
 
 

@@ -62,7 +62,7 @@ namespace animcore
                                     public TargetPropertiesCreator_Base
     {
     public:
-        static uno::Reference< uno::XInterface > SAL_CALL createInstance( const uno::Reference< uno::XComponentContext >& xContext ) throw ( uno::Exception )
+        static uno::Reference< uno::XInterface > SAL_CALL createInstance( const uno::Reference< uno::XComponentContext >& xContext )
         {
             return uno::Reference< uno::XInterface >( static_cast<cppu::OWeakObject*>(new TargetPropertiesCreator( xContext )) );
         }
@@ -71,15 +71,15 @@ namespace animcore
         virtual void SAL_CALL disposing();
 
         // XTargetPropertiesCreator
-        virtual uno::Sequence< animations::TargetProperties > SAL_CALL createInitialTargetProperties( const uno::Reference< animations::XAnimationNode >& rootNode ) throw (uno::RuntimeException);
+        virtual uno::Sequence< animations::TargetProperties > SAL_CALL createInitialTargetProperties( const uno::Reference< animations::XAnimationNode >& rootNode );
 
         // XServiceInfo
-        virtual ::rtl::OUString SAL_CALL getImplementationName() throw( uno::RuntimeException );
-        virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw( uno::RuntimeException );
-        virtual uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames()  throw( uno::RuntimeException );
+        virtual ::rtl::OUString SAL_CALL getImplementationName();
+        virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+        virtual uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 
         // XServiceName
-        virtual ::rtl::OUString SAL_CALL getServiceName(  ) throw (uno::RuntimeException);
+        virtual ::rtl::OUString SAL_CALL getServiceName(  );
 
     protected:
         ~TargetPropertiesCreator(); // we're a ref-counted UNO class. _We_ destroy ourselves.
@@ -94,7 +94,7 @@ namespace animcore
 
 	// --------------------------------------------------------------------
 
-    uno::Reference< uno::XInterface > SAL_CALL createInstance_TargetPropertiesCreator( const uno::Reference< uno::XComponentContext > & rSMgr ) throw (uno::Exception)
+    uno::Reference< uno::XInterface > SAL_CALL createInstance_TargetPropertiesCreator( const uno::Reference< uno::XComponentContext > & rSMgr )
     {
         return TargetPropertiesCreator::createInstance( rSMgr );
     }
@@ -424,7 +424,7 @@ namespace animcore
     uno::Sequence< animations::TargetProperties > SAL_CALL TargetPropertiesCreator::createInitialTargetProperties
     	(
             const uno::Reference< animations::XAnimationNode >& xRootNode
-        ) throw (uno::RuntimeException)
+        )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
 
@@ -476,17 +476,17 @@ namespace animcore
     }
 
     // XServiceInfo
-    ::rtl::OUString SAL_CALL TargetPropertiesCreator::getImplementationName() throw( uno::RuntimeException )
+    ::rtl::OUString SAL_CALL TargetPropertiesCreator::getImplementationName()
     {
         return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( IMPLEMENTATION_NAME ) );
     }
 
-    sal_Bool SAL_CALL TargetPropertiesCreator::supportsService( const ::rtl::OUString& ServiceName ) throw( uno::RuntimeException )
+    sal_Bool SAL_CALL TargetPropertiesCreator::supportsService( const ::rtl::OUString& ServiceName )
     {
         return ServiceName.equalsIgnoreAsciiCaseAscii( SERVICE_NAME );
     }
 
-    uno::Sequence< ::rtl::OUString > SAL_CALL TargetPropertiesCreator::getSupportedServiceNames()  throw( uno::RuntimeException )
+    uno::Sequence< ::rtl::OUString > SAL_CALL TargetPropertiesCreator::getSupportedServiceNames()
     {
         uno::Sequence< ::rtl::OUString > aRet(1);
         aRet[0] = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM ( SERVICE_NAME ) );
@@ -495,7 +495,7 @@ namespace animcore
     }
 
     // XServiceName
-    ::rtl::OUString SAL_CALL TargetPropertiesCreator::getServiceName(  ) throw (uno::RuntimeException)
+    ::rtl::OUString SAL_CALL TargetPropertiesCreator::getServiceName(  )
     {
         return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( SERVICE_NAME ) );
     }

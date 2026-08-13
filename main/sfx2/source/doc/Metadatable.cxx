@@ -1587,14 +1587,12 @@ Metadatable::JoinMetadatable(Metadatable const & i_rOther,
 
 // ::com::sun::star::rdf::XNode:
 ::rtl::OUString SAL_CALL MetadatableMixin::getStringValue()
-    throw (::com::sun::star::uno::RuntimeException)
 {
     return getNamespace() + getLocalName();
 }
 
 // ::com::sun::star::rdf::XURI:
 ::rtl::OUString SAL_CALL MetadatableMixin::getLocalName()
-    throw (::com::sun::star::uno::RuntimeException)
 {
     ::vos::OGuard aGuard( Application::GetSolarMutex() );
     beans::StringPair mdref( getMetadataReference() );
@@ -1611,7 +1609,6 @@ Metadatable::JoinMetadatable(Metadatable const & i_rOther,
 }
 
 ::rtl::OUString SAL_CALL MetadatableMixin::getNamespace()
-    throw (::com::sun::star::uno::RuntimeException)
 {
     ::vos::OGuard aGuard( Application::GetSolarMutex() );
     const uno::Reference< frame::XModel > xModel( GetModel() );
@@ -1622,7 +1619,6 @@ Metadatable::JoinMetadatable(Metadatable const & i_rOther,
 // ::com::sun::star::rdf::XMetadatable:
 beans::StringPair SAL_CALL
 MetadatableMixin::getMetadataReference()
-throw (uno::RuntimeException)
 {
     ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -1640,7 +1636,6 @@ throw (uno::RuntimeException)
 void SAL_CALL
 MetadatableMixin::setMetadataReference(
     const beans::StringPair & i_rReference)
-throw (uno::RuntimeException, lang::IllegalArgumentException)
 {
     ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -1656,7 +1651,6 @@ throw (uno::RuntimeException, lang::IllegalArgumentException)
 }
 
 void SAL_CALL MetadatableMixin::ensureMetadataReference()
-throw (uno::RuntimeException)
 {
     ::vos::OGuard aGuard( Application::GetSolarMutex() );
 

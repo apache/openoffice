@@ -33,7 +33,7 @@ using namespace ::ooo::vba;
 using namespace ::com::sun::star;
 
 SwVbaBookmark::SwVbaBookmark( const uno::Reference< ooo::vba::XHelperInterface >& rParent, const uno::Reference< uno::XComponentContext >& rContext,
-    const css::uno::Reference< frame::XModel >& rModel, const rtl::OUString& rName ) throw ( css::uno::RuntimeException ) :
+    const css::uno::Reference< frame::XModel >& rModel, const rtl::OUString& rName ) :
     SwVbaBookmark_BASE( rParent, rContext ), mxModel( rModel ), maName( rName ), mbValid( sal_True )
 {
     uno::Reference< text::XBookmarksSupplier > xBookmarksSupplier( mxModel, uno::UNO_QUERY_THROW );
@@ -44,13 +44,13 @@ SwVbaBookmark::~SwVbaBookmark()
 {
 }
 
-void SwVbaBookmark::checkVality() throw ( uno::RuntimeException )
+void SwVbaBookmark::checkVality()
 {
     if( !mbValid )
         throw uno::RuntimeException( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("The bookmark is not valid" ) ), uno::Reference< uno::XInterface >() );
 }
 
-void SAL_CALL SwVbaBookmark::Delete() throw ( uno::RuntimeException )
+void SAL_CALL SwVbaBookmark::Delete()
 {
     checkVality();
     uno::Reference< text::XTextDocument > xTextDocument( mxModel, uno::UNO_QUERY_THROW );
@@ -58,25 +58,25 @@ void SAL_CALL SwVbaBookmark::Delete() throw ( uno::RuntimeException )
     mbValid = sal_False;
 }
 
-void SAL_CALL SwVbaBookmark::Select() throw ( uno::RuntimeException )
+void SAL_CALL SwVbaBookmark::Select()
 {
     checkVality();
     uno::Reference< text::XTextViewCursorSupplier > xViewCursorSupplier( mxModel->getCurrentController(), uno::UNO_QUERY_THROW );
     xViewCursorSupplier->getViewCursor()->gotoRange( mxBookmark->getAnchor(),sal_False );
 }
 
-rtl::OUString SAL_CALL SwVbaBookmark::getName() throw ( uno::RuntimeException )
+rtl::OUString SAL_CALL SwVbaBookmark::getName()
 {
     return maName;
 }
 
-void SAL_CALL SwVbaBookmark::setName( const rtl::OUString& _name ) throw ( uno::RuntimeException )
+void SAL_CALL SwVbaBookmark::setName( const rtl::OUString& _name )
 {
     uno::Reference< container::XNamed > xNamed( mxBookmark, uno::UNO_QUERY_THROW );
     xNamed->setName( _name );
 }
 
-uno::Any SAL_CALL SwVbaBookmark::Range() throw ( uno::RuntimeException )
+uno::Any SAL_CALL SwVbaBookmark::Range()
 {
     uno::Reference< text::XTextContent > xTextContent( mxBookmark, uno::UNO_QUERY_THROW );
     uno::Reference< text::XTextDocument > xTextDocument( mxModel, uno::UNO_QUERY_THROW );

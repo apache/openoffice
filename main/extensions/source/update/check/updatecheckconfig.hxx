@@ -158,44 +158,26 @@ public:
                                 const rtl::OUString& rVersion );
 
     // XElementAccess
-    virtual ::com::sun::star::uno::Type SAL_CALL getElementType(  )
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL hasElements(  )
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Type SAL_CALL getElementType(  );
+    virtual sal_Bool SAL_CALL hasElements(  );
 
     // XNameAccess
-    virtual ::com::sun::star::uno::Any SAL_CALL getByName( const ::rtl::OUString& aName )
-        throw (::com::sun::star::container::NoSuchElementException,
-               ::com::sun::star::lang::WrappedTargetException,
-               ::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames(  )
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName )
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Any SAL_CALL getByName( const ::rtl::OUString& aName );
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames(  );
+    virtual ::sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName );
 
     // XNameReplace
-    virtual void SAL_CALL replaceByName( const ::rtl::OUString& aName, const ::com::sun::star::uno::Any& aElement )
-        throw (::com::sun::star::lang::IllegalArgumentException,
-               ::com::sun::star::container::NoSuchElementException,
-               ::com::sun::star::lang::WrappedTargetException,
-               ::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL replaceByName( const ::rtl::OUString& aName, const ::com::sun::star::uno::Any& aElement );
 
     // XChangesBatch
-    virtual void SAL_CALL commitChanges(  )
-        throw (::com::sun::star::lang::WrappedTargetException,
-               ::com::sun::star::uno::RuntimeException);
-    virtual ::sal_Bool SAL_CALL hasPendingChanges(  )
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::util::ElementChange > SAL_CALL getPendingChanges(  )
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL commitChanges(  );
+    virtual ::sal_Bool SAL_CALL hasPendingChanges(  );
+    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::util::ElementChange > SAL_CALL getPendingChanges(  );
 
     // XServiceInfo
-    virtual rtl::OUString SAL_CALL getImplementationName()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService(rtl::OUString const & serviceName)
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual rtl::OUString SAL_CALL getImplementationName();
+    virtual sal_Bool SAL_CALL supportsService(rtl::OUString const & serviceName);
+    virtual ::com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames();
 
 private:
 
@@ -213,7 +195,6 @@ private:
 
 template <typename T>
 T getValue( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::NamedValue >& rNamedValues, const sal_Char * pszName )
-    throw (::com::sun::star::uno::RuntimeException)
 {
     for( sal_Int32 n=0; n < rNamedValues.getLength(); n++ )
     {

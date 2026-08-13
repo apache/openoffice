@@ -41,8 +41,7 @@ namespace ExternalUriReferenceTranslator {
     com::sun::star::uno::Reference< com::sun::star::uno::XInterface > SAL_CALL
     create(
         com::sun::star::uno::Reference< com::sun::star::uno::XComponentContext >
-            const & context)
-        SAL_THROW((com::sun::star::uno::Exception));
+            const & context);
 
     rtl::OUString SAL_CALL getImplementationName();
 

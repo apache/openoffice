@@ -99,7 +99,7 @@ SwTbxInsertCtrl::~SwTbxInsertCtrl()
 {
 }
 
-void SAL_CALL SwTbxInsertCtrl::update() throw (uno::RuntimeException)
+void SAL_CALL SwTbxInsertCtrl::update()
 {
     ToolBox& rTbx = GetToolBox();
     rtl::OUString aSlotURL( RTL_CONSTASCII_USTRINGPARAM( "slot:" ));

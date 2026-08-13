@@ -45,17 +45,17 @@ public:
     // Parses the given stream, and returns a subclass which implements the virtual methods below.
     static EncryptionInfo* readEncryptionInfo(
         const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& context,
-        ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream>& inputStream ) throw ( ::com::sun::star::uno::Exception );
+        ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream>& inputStream );
 
     virtual ~EncryptionInfo() {}
     // Checks whether decryption can work, ie. we support all the algorithms, key sizes, etc.
     virtual bool isImplemented() = 0;
     // On success, returns a non-empty sequence, and internally stores whatever is needed for a subsequent call to decryptStream() to work.
-    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::beans::NamedValue > verifyPassword( const ::rtl::OUString& rPassword ) throw ( ::com::sun::star::uno::Exception ) = 0;
+    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::beans::NamedValue > verifyPassword( const ::rtl::OUString& rPassword ) = 0;
     // On success, returns true, and internally stores whatever is needed for a subsequent call to decryptStream() to work.
-    virtual bool verifyEncryptionData( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::NamedValue >& rEncryptionData ) throw ( ::com::sun::star::uno::Exception ) = 0;
+    virtual bool verifyEncryptionData( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::NamedValue >& rEncryptionData ) = 0;
     // Decrypts the stream using keys derived from previous calls to verifyPassword() or verifyEncryptionData().
-    virtual void decryptStream( BinaryXInputStream &aEncryptedPackage, BinaryXOutputStream &aDecryptedPackage ) throw ( ::com::sun::star::uno::Exception ) = 0;
+    virtual void decryptStream( BinaryXInputStream &aEncryptedPackage, BinaryXOutputStream &aDecryptedPackage ) = 0;
 };
 
 // ============================================================================

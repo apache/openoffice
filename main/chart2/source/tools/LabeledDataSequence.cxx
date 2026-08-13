@@ -74,14 +74,12 @@ LabeledDataSequence::~LabeledDataSequence()
 
 // ____ XLabeledDataSequence ____
 uno::Reference< chart2::data::XDataSequence > SAL_CALL LabeledDataSequence::getValues()
-    throw (uno::RuntimeException)
 {
     return m_xData;
 }
 
 void SAL_CALL LabeledDataSequence::setValues(
     const uno::Reference< chart2::data::XDataSequence >& xSequence )
-    throw (uno::RuntimeException)
 {
     if( m_xData != xSequence )
     {
@@ -92,14 +90,12 @@ void SAL_CALL LabeledDataSequence::setValues(
 }
 
 uno::Reference< chart2::data::XDataSequence > SAL_CALL LabeledDataSequence::getLabel()
-    throw (uno::RuntimeException)
 {
     return m_xLabel;
 }
 
 void SAL_CALL LabeledDataSequence::setLabel(
     const uno::Reference< chart2::data::XDataSequence >& xSequence )
-    throw (uno::RuntimeException)
 {
     if( m_xLabel != xSequence )
     {
@@ -111,7 +107,6 @@ void SAL_CALL LabeledDataSequence::setLabel(
 
 // ____ XCloneable ____
 uno::Reference< util::XCloneable > SAL_CALL LabeledDataSequence::createClone()
-    throw (uno::RuntimeException)
 {
     uno::Reference< chart2::data::XDataSequence > xNewValues( m_xData );
     uno::Reference< chart2::data::XDataSequence > xNewLabel( m_xLabel );
@@ -130,7 +125,6 @@ uno::Reference< util::XCloneable > SAL_CALL LabeledDataSequence::createClone()
 
 // ____ XModifyBroadcaster ____
 void SAL_CALL LabeledDataSequence::addModifyListener( const Reference< util::XModifyListener >& aListener )
-    throw (uno::RuntimeException)
 {
     try
     {
@@ -144,7 +138,6 @@ void SAL_CALL LabeledDataSequence::addModifyListener( const Reference< util::XMo
 }
 
 void SAL_CALL LabeledDataSequence::removeModifyListener( const Reference< util::XModifyListener >& aListener )
-    throw (uno::RuntimeException)
 {
     try
     {

@@ -131,7 +131,7 @@ public:
 		@onerror	A RuntimeException is thrown.
 	*/
 
-	virtual UNO3_ANY SAL_CALL queryInterface( const UNO3_TYPE& aType ) throw( UNO3_RUNTIMEEXCEPTION );
+	virtual UNO3_ANY SAL_CALL queryInterface( const UNO3_TYPE& aType );
 
 	/**_______________________________________________________________________________________________________
 		@short		increment refcount
@@ -182,7 +182,7 @@ public:
 		@onerror
 	*/
 
-    virtual UNO3_TYPE SAL_CALL getConnectionType() throw( UNO3_RUNTIMEEXCEPTION );
+    virtual UNO3_TYPE SAL_CALL getConnectionType();
 
 	/**_________________________________________________________________________________________________________
 		@short
@@ -197,7 +197,7 @@ public:
 		@onerror
 	*/
 
-    virtual UNO3_REFERENCE< UNO3_XCONNECTIONPOINTCONTAINER > SAL_CALL getConnectionPointContainer() throw( UNO3_RUNTIMEEXCEPTION );
+    virtual UNO3_REFERENCE< UNO3_XCONNECTIONPOINTCONTAINER > SAL_CALL getConnectionPointContainer();
 
 	/**_________________________________________________________________________________________________________
 		@short
@@ -212,9 +212,7 @@ public:
 		@onerror
 	*/
 
-    virtual void SAL_CALL advise( const UNO3_REFERENCE< UNO3_XINTERFACE >& xListener ) throw(	UNO3_LISTENEREXISTEXCEPTION		,
-																								UNO3_INVALIDLISTENEREXCEPTION	,
-																								UNO3_RUNTIMEEXCEPTION			);
+    virtual void SAL_CALL advise( const UNO3_REFERENCE< UNO3_XINTERFACE >& xListener );
 
 	/**_________________________________________________________________________________________________________
 		@short
@@ -229,7 +227,7 @@ public:
 		@onerror
 	*/
 
-    virtual void SAL_CALL unadvise( const UNO3_REFERENCE< UNO3_XINTERFACE >& xListener ) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual void SAL_CALL unadvise( const UNO3_REFERENCE< UNO3_XINTERFACE >& xListener );
 
 	/**_________________________________________________________________________________________________________
 		@short
@@ -244,7 +242,7 @@ public:
 		@onerror
 	*/
 
-    virtual UNO3_SEQUENCE< UNO3_REFERENCE< UNO3_XINTERFACE > > SAL_CALL getConnections() throw( UNO3_RUNTIMEEXCEPTION );
+    virtual UNO3_SEQUENCE< UNO3_REFERENCE< UNO3_XINTERFACE > > SAL_CALL getConnections();
 
 //______________________________________________________________________________________________________________
 //	private methods

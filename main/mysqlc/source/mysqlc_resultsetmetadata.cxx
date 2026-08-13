@@ -40,7 +40,6 @@ OResultSetMetaData::~OResultSetMetaData()
 
 /* {{{ OResultSetMetaData::getColumnDisplaySize() -I- */
 sal_Int32 SAL_CALL OResultSetMetaData::getColumnDisplaySize(sal_Int32 column)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OResultSetMetaData::getColumnDisplaySize");
 
@@ -58,7 +57,6 @@ sal_Int32 SAL_CALL OResultSetMetaData::getColumnDisplaySize(sal_Int32 column)
 
 /* {{{ OResultSetMetaData::getColumnType() -I- */
 sal_Int32 SAL_CALL OResultSetMetaData::getColumnType(sal_Int32 column)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OResultSetMetaData::getColumnType");
 	checkColumnIndex(column);
@@ -81,7 +79,6 @@ sal_Int32 SAL_CALL OResultSetMetaData::getColumnType(sal_Int32 column)
 */
 /* {{{ OResultSetMetaData::getColumnCount() -I- */
 sal_Int32 SAL_CALL OResultSetMetaData::getColumnCount()
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OResultSetMetaData::getColumnCount");
 	try {
@@ -98,7 +95,6 @@ sal_Int32 SAL_CALL OResultSetMetaData::getColumnCount()
 
 /* {{{ OResultSetMetaData::isCaseSensitive() -I- */
 sal_Bool SAL_CALL OResultSetMetaData::isCaseSensitive(sal_Int32 column)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OResultSetMetaData::isCaseSensitive");
 	checkColumnIndex(column);
@@ -117,7 +113,6 @@ sal_Bool SAL_CALL OResultSetMetaData::isCaseSensitive(sal_Int32 column)
 
 /* {{{ OResultSetMetaData::getSchemaName() -I- */
 OUString SAL_CALL OResultSetMetaData::getSchemaName(sal_Int32 column)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OResultSetMetaData::getSchemaName");
 	checkColumnIndex(column);
@@ -136,7 +131,6 @@ OUString SAL_CALL OResultSetMetaData::getSchemaName(sal_Int32 column)
 
 /* {{{ OResultSetMetaData::getColumnName() -I- */
 OUString SAL_CALL OResultSetMetaData::getColumnName(sal_Int32 column)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OResultSetMetaData::getColumnName");
 	checkColumnIndex(column);
@@ -155,7 +149,6 @@ OUString SAL_CALL OResultSetMetaData::getColumnName(sal_Int32 column)
 
 /* {{{ OResultSetMetaData::getTableName() -I- */
 OUString SAL_CALL OResultSetMetaData::getTableName(sal_Int32 column)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OResultSetMetaData::getTableName");
 	checkColumnIndex(column);
@@ -174,7 +167,6 @@ OUString SAL_CALL OResultSetMetaData::getTableName(sal_Int32 column)
 
 /* {{{ OResultSetMetaData::getCatalogName() -I- */
 OUString SAL_CALL OResultSetMetaData::getCatalogName(sal_Int32 column)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OResultSetMetaData::getCatalogName");
 	checkColumnIndex(column);
@@ -193,7 +185,6 @@ OUString SAL_CALL OResultSetMetaData::getCatalogName(sal_Int32 column)
 
 /* {{{ OResultSetMetaData::getColumnTypeName() -I- */
 OUString SAL_CALL OResultSetMetaData::getColumnTypeName(sal_Int32 column)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OResultSetMetaData::getColumnTypeName");
 	checkColumnIndex(column);
@@ -212,7 +203,6 @@ OUString SAL_CALL OResultSetMetaData::getColumnTypeName(sal_Int32 column)
 
 /* {{{ OResultSetMetaData::getColumnLabel() -I- */
 OUString SAL_CALL OResultSetMetaData::getColumnLabel(sal_Int32 column)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OResultSetMetaData::getColumnLabel");
 	checkColumnIndex(column);
@@ -231,7 +221,6 @@ OUString SAL_CALL OResultSetMetaData::getColumnLabel(sal_Int32 column)
 
 /* {{{ OResultSetMetaData::getColumnServiceName() -I- */
 OUString SAL_CALL OResultSetMetaData::getColumnServiceName(sal_Int32 column)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OResultSetMetaData::getColumnServiceName");
 	checkColumnIndex(column);
@@ -244,7 +233,6 @@ OUString SAL_CALL OResultSetMetaData::getColumnServiceName(sal_Int32 column)
 
 /* {{{ OResultSetMetaData::isCurrency() -I- */
 sal_Bool SAL_CALL OResultSetMetaData::isCurrency(sal_Int32 column)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OResultSetMetaData::isCurrency");
 	checkColumnIndex(column);
@@ -263,7 +251,6 @@ sal_Bool SAL_CALL OResultSetMetaData::isCurrency(sal_Int32 column)
 
 /* {{{ OResultSetMetaData::isAutoIncrement() -I- */
 sal_Bool SAL_CALL OResultSetMetaData::isAutoIncrement(sal_Int32 column)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OResultSetMetaData::isAutoIncrement");
 	checkColumnIndex(column);
@@ -282,7 +269,6 @@ sal_Bool SAL_CALL OResultSetMetaData::isAutoIncrement(sal_Int32 column)
 
 /* {{{ OResultSetMetaData::isSigned() -I- */
 sal_Bool SAL_CALL OResultSetMetaData::isSigned(sal_Int32 column)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OResultSetMetaData::isSigned");
 	checkColumnIndex(column);
@@ -301,7 +287,6 @@ sal_Bool SAL_CALL OResultSetMetaData::isSigned(sal_Int32 column)
 
 /* {{{ OResultSetMetaData::getPrecision() -I- */
 sal_Int32 SAL_CALL OResultSetMetaData::getPrecision(sal_Int32 column)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OResultSetMetaData::getPrecision");
 	checkColumnIndex(column);
@@ -320,7 +305,6 @@ sal_Int32 SAL_CALL OResultSetMetaData::getPrecision(sal_Int32 column)
 
 /* {{{ OResultSetMetaData::getScale() -I- */
 sal_Int32 SAL_CALL OResultSetMetaData::getScale(sal_Int32 column)
-	throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException)
 {
 	OSL_TRACE("OResultSetMetaData::getScale");
 	checkColumnIndex(column);
@@ -338,7 +322,6 @@ sal_Int32 SAL_CALL OResultSetMetaData::getScale(sal_Int32 column)
 
 /* {{{ OResultSetMetaData::isNullable() -I- */
 sal_Int32 SAL_CALL OResultSetMetaData::isNullable(sal_Int32 column)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OResultSetMetaData::isNullable");
 	checkColumnIndex(column);
@@ -357,7 +340,6 @@ sal_Int32 SAL_CALL OResultSetMetaData::isNullable(sal_Int32 column)
 
 /* {{{ OResultSetMetaData::isSearchable() -I- */
 sal_Bool SAL_CALL OResultSetMetaData::isSearchable(sal_Int32 column)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OResultSetMetaData::isSearchable");
 	checkColumnIndex(column);
@@ -376,7 +358,6 @@ sal_Bool SAL_CALL OResultSetMetaData::isSearchable(sal_Int32 column)
 
 /* {{{ OResultSetMetaData::isReadOnly() -I- */
 sal_Bool SAL_CALL OResultSetMetaData::isReadOnly(sal_Int32 column)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OResultSetMetaData::isReadOnly");
 	checkColumnIndex(column);
@@ -395,7 +376,6 @@ sal_Bool SAL_CALL OResultSetMetaData::isReadOnly(sal_Int32 column)
 
 /* {{{ OResultSetMetaData::isDefinitelyWritable() -I- */
 sal_Bool SAL_CALL OResultSetMetaData::isDefinitelyWritable(sal_Int32 column)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OResultSetMetaData::isDefinitelyWritable");
 	checkColumnIndex(column);
@@ -414,7 +394,6 @@ sal_Bool SAL_CALL OResultSetMetaData::isDefinitelyWritable(sal_Int32 column)
 
 /* {{{ OResultSetMetaData::isWritable() -I- */
 sal_Bool SAL_CALL OResultSetMetaData::isWritable(sal_Int32 column)
-	throw(SQLException, RuntimeException)
 {
 	OSL_TRACE("OResultSetMetaData::isWritable");
 	checkColumnIndex(column);
@@ -433,7 +412,6 @@ sal_Bool SAL_CALL OResultSetMetaData::isWritable(sal_Int32 column)
 
 /* {{{ OResultSetMetaData::checkColumnIndex() -I- */
 void OResultSetMetaData::checkColumnIndex(sal_Int32 columnIndex)
-	throw (SQLException, RuntimeException)
 {
 	OSL_TRACE("OResultSetMetaData::checkColumnIndex");
 	if (columnIndex < 1 || columnIndex > (sal_Int32) meta->getColumnCount()) {

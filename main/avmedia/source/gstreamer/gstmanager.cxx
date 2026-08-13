@@ -46,7 +46,6 @@ Manager::~Manager()
 // ------------------------------------------------------------------------------
 
 uno::Reference< media::XPlayer > SAL_CALL Manager::createPlayer( const ::rtl::OUString& rURL )
-     throw( uno::RuntimeException )
 {
     return( ::avmedia::gst::Player::create( rURL ) );
 }
@@ -54,7 +53,6 @@ uno::Reference< media::XPlayer > SAL_CALL Manager::createPlayer( const ::rtl::OU
 // ------------------------------------------------------------------------------
 
 ::rtl::OUString SAL_CALL Manager::getImplementationName()
-     throw( uno::RuntimeException )
 {
     return getImplementationName_Static();
 }
@@ -62,7 +60,6 @@ uno::Reference< media::XPlayer > SAL_CALL Manager::createPlayer( const ::rtl::OU
 // ------------------------------------------------------------------------------
 
 sal_Bool SAL_CALL Manager::supportsService( const ::rtl::OUString& ServiceName )
-     throw( uno::RuntimeException )
 {
     return( ServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( AVMEDIA_GSTREAMER_MANAGER_SERVICENAME ) ) );
 }
@@ -70,7 +67,6 @@ sal_Bool SAL_CALL Manager::supportsService( const ::rtl::OUString& ServiceName )
 // ------------------------------------------------------------------------------
 
 uno::Sequence< ::rtl::OUString > SAL_CALL Manager::getSupportedServiceNames()
-     throw( uno::RuntimeException )
 {
     return getSupportedServiceNames_Static();
 }

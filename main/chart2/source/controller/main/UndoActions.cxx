@@ -96,7 +96,7 @@ void SAL_CALL UndoElement::disposing()
 }
 
 // ---------------------------------------------------------------------------------------------------------------------
-::rtl::OUString SAL_CALL UndoElement::getTitle() throw (RuntimeException)
+::rtl::OUString SAL_CALL UndoElement::getTitle()
 {
     return m_sActionString;
 }
@@ -113,13 +113,13 @@ void UndoElement::impl_toggleModelState()
 }
 
 // ---------------------------------------------------------------------------------------------------------------------
-void SAL_CALL UndoElement::undo(  ) throw (UndoFailedException, RuntimeException)
+void SAL_CALL UndoElement::undo(  )
 {
     impl_toggleModelState();
 }
 
 // ---------------------------------------------------------------------------------------------------------------------
-void SAL_CALL UndoElement::redo(  ) throw (UndoFailedException, RuntimeException)
+void SAL_CALL UndoElement::redo(  )
 {
     impl_toggleModelState();
 }
@@ -142,7 +142,7 @@ ShapeUndoElement::~ShapeUndoElement()
 }
 
 // ---------------------------------------------------------------------------------------------------------------------
-::rtl::OUString SAL_CALL ShapeUndoElement::getTitle() throw (RuntimeException)
+::rtl::OUString SAL_CALL ShapeUndoElement::getTitle()
 {
     if ( !m_pAction )
         throw DisposedException( ::rtl::OUString(), *this );
@@ -150,7 +150,7 @@ ShapeUndoElement::~ShapeUndoElement()
 }
 
 // ---------------------------------------------------------------------------------------------------------------------
-void SAL_CALL ShapeUndoElement::undo(  ) throw (UndoFailedException, RuntimeException)
+void SAL_CALL ShapeUndoElement::undo(  )
 {
     if ( !m_pAction )
         throw DisposedException( ::rtl::OUString(), *this );
@@ -158,7 +158,7 @@ void SAL_CALL ShapeUndoElement::undo(  ) throw (UndoFailedException, RuntimeExce
 }
 
 // ---------------------------------------------------------------------------------------------------------------------
-void SAL_CALL ShapeUndoElement::redo(  ) throw (UndoFailedException, RuntimeException)
+void SAL_CALL ShapeUndoElement::redo(  )
 {
     if ( !m_pAction )
         throw DisposedException( ::rtl::OUString(), *this );

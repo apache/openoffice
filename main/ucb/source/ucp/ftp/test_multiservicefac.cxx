@@ -41,9 +41,6 @@ Any SAL_CALL
 Test_MultiServiceFactory::queryInterface(
 	const Type& rType
 )
-	throw(
-		RuntimeException
-	)
 {
 	Any aRet = ::cppu::queryInterface(rType,
 									  SAL_STATIC_CAST( XMultiServiceFactory*,
@@ -72,10 +69,6 @@ XInterface > SAL_CALL
 Test_MultiServiceFactory::createInstance(
 	const ::rtl::OUString& aServiceSpecifier
 )
-	throw (
-		Exception,
-		RuntimeException
-	)
 {
 	return Reference<
 		XInterface >(0);
@@ -89,10 +82,6 @@ Test_MultiServiceFactory::createInstanceWithArguments(
 	const Sequence
 	< Any >& Arguments
 )
-	throw (
-		Exception,
-		RuntimeException
-	)
 {
 	return Reference<
 		XInterface >(0);
@@ -101,9 +90,6 @@ Test_MultiServiceFactory::createInstanceWithArguments(
 Sequence< ::rtl::OUString > SAL_CALL
 Test_MultiServiceFactory::getAvailableServiceNames(
 )
-	throw (
-		RuntimeException
-	)
 {
 	return Sequence< ::rtl::OUString >(0);
 }

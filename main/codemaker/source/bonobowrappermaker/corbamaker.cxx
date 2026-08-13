@@ -42,8 +42,6 @@ sal_Bool produceAllTypes(const OString& typeName,
 						FileStream& o,
 						TypeSet* pAllreadyDumped,
 						TypeSet* generatedConversion)
-
-	throw( CannotDumpException )
 {
 	if (!produceType(typeName, typeMgr,	typeDependencies, pOptions, o, pAllreadyDumped, generatedConversion))
 	{

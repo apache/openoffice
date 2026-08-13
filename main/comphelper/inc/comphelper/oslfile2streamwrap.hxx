@@ -54,11 +54,11 @@ public:
 	virtual ~OSLInputStreamWrapper();
 
 // stario::XInputStream
-	virtual sal_Int32	SAL_CALL	readBytes(staruno::Sequence< sal_Int8 >& aData, sal_Int32 nBytesToRead) throw(stario::NotConnectedException, stario::BufferSizeExceededException, staruno::RuntimeException);
-	virtual sal_Int32	SAL_CALL	readSomeBytes(staruno::Sequence< sal_Int8 >& aData, sal_Int32 nMaxBytesToRead) throw(stario::NotConnectedException, stario::BufferSizeExceededException, staruno::RuntimeException);
-	virtual void		SAL_CALL	skipBytes(sal_Int32 nBytesToSkip) throw(stario::NotConnectedException, stario::BufferSizeExceededException, staruno::RuntimeException);
-	virtual sal_Int32	SAL_CALL	available() throw(stario::NotConnectedException, staruno::RuntimeException);
-	virtual void		SAL_CALL	closeInput() throw(stario::NotConnectedException, staruno::RuntimeException);
+	virtual sal_Int32	SAL_CALL	readBytes(staruno::Sequence< sal_Int8 >& aData, sal_Int32 nBytesToRead);
+	virtual sal_Int32	SAL_CALL	readSomeBytes(staruno::Sequence< sal_Int8 >& aData, sal_Int32 nMaxBytesToRead);
+	virtual void		SAL_CALL	skipBytes(sal_Int32 nBytesToSkip);
+	virtual sal_Int32	SAL_CALL	available();
+	virtual void		SAL_CALL	closeInput();
 };
 
 //==================================================================
@@ -76,9 +76,9 @@ public:
 	OSLOutputStreamWrapper(::osl::File& _rFile) :rFile(_rFile) { }
 
 // stario::XOutputStream
-	virtual void SAL_CALL writeBytes(const staruno::Sequence< sal_Int8 >& aData) throw(stario::NotConnectedException, stario::BufferSizeExceededException, staruno::RuntimeException);
-	virtual void SAL_CALL flush() throw(stario::NotConnectedException, stario::BufferSizeExceededException, staruno::RuntimeException);
-	virtual void SAL_CALL closeOutput() throw(stario::NotConnectedException, stario::BufferSizeExceededException, staruno::RuntimeException);
+	virtual void SAL_CALL writeBytes(const staruno::Sequence< sal_Int8 >& aData);
+	virtual void SAL_CALL flush();
+	virtual void SAL_CALL closeOutput();
 };
 
 }	// namespace comphelper

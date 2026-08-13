@@ -174,7 +174,6 @@ bool BarChartTypeTemplate::isSwapXAndY() const
 sal_Bool SAL_CALL BarChartTypeTemplate::matchesTemplate(
     const Reference< chart2::XDiagram >& xDiagram,
     sal_Bool bAdaptProperties )
-    throw (uno::RuntimeException)
 {
     sal_Bool bResult = ChartTypeTemplate::matchesTemplate( xDiagram, bAdaptProperties );
 
@@ -231,7 +230,6 @@ Reference< chart2::XChartType > BarChartTypeTemplate::getChartTypeForIndex( sal_
 
 Reference< chart2::XChartType > SAL_CALL BarChartTypeTemplate::getChartTypeForNewSeries(
         const uno::Sequence< Reference< chart2::XChartType > >& aFormerlyUsedChartTypes )
-    throw (uno::RuntimeException)
 {
     Reference< chart2::XChartType > xResult( getChartTypeForIndex( 0 ) );
     ChartTypeTemplate::copyPropertiesFromOldToNewCoordianteSystem( aFormerlyUsedChartTypes, xResult );
@@ -241,7 +239,6 @@ Reference< chart2::XChartType > SAL_CALL BarChartTypeTemplate::getChartTypeForNe
 
 // ____ OPropertySet ____
 uno::Any BarChartTypeTemplate::GetDefaultValue( sal_Int32 nHandle ) const
-    throw(beans::UnknownPropertyException)
 {
     const tPropertyValueMap& rStaticDefaults = *StaticBarChartTypeTemplateDefaults::get();
     tPropertyValueMap::const_iterator aFound( rStaticDefaults.find( nHandle ) );
@@ -257,7 +254,6 @@ uno::Any BarChartTypeTemplate::GetDefaultValue( sal_Int32 nHandle ) const
 
 // ____ XPropertySet ____
 Reference< beans::XPropertySetInfo > SAL_CALL BarChartTypeTemplate::getPropertySetInfo()
-    throw (uno::RuntimeException)
 {
     return *StaticBarChartTypeTemplateInfo::get();
 }
@@ -267,7 +263,6 @@ void SAL_CALL BarChartTypeTemplate::applyStyle(
     ::sal_Int32 nChartTypeIndex,
     ::sal_Int32 nSeriesIndex,
     ::sal_Int32 nSeriesCount )
-    throw (uno::RuntimeException)
 {
     ChartTypeTemplate::applyStyle( xSeries, nChartTypeIndex, nSeriesIndex, nSeriesCount );
     DataSeriesHelper::setPropertyAlsoToAllAttributedDataPoints( xSeries, C2U( "BorderStyle" ), uno::makeAny( drawing::LineStyle_NONE ) );
@@ -289,7 +284,6 @@ void SAL_CALL BarChartTypeTemplate::applyStyle(
 
 void SAL_CALL BarChartTypeTemplate::resetStyles(
     const Reference< chart2::XDiagram >& xDiagram )
-    throw (uno::RuntimeException)
 {
     ChartTypeTemplate::resetStyles( xDiagram );
     ::std::vector< Reference< chart2::XDataSeries > > aSeriesVec(

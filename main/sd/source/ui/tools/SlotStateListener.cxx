@@ -161,7 +161,6 @@ uno::Reference<frame::XDispatch>
 
 void SlotStateListener::statusChanged (
     const frame::FeatureStateEvent& rState)
-    throw (uno::RuntimeException)
 {
     ThrowIfDisposed();
     OUString sSlotName (rState.FeatureURL.Complete);
@@ -196,7 +195,6 @@ void SlotStateListener::ReleaseListeners (void)
 
 void SAL_CALL SlotStateListener::disposing (
     const lang::EventObject& )
-    throw (uno::RuntimeException)
 {
 }
 
@@ -204,7 +202,6 @@ void SAL_CALL SlotStateListener::disposing (
 
 
 void SlotStateListener::ThrowIfDisposed (void)
-    throw (lang::DisposedException)
 {
 	if (rBHelper.bDisposed || rBHelper.bInDispose)
 	{

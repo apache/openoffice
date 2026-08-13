@@ -28,14 +28,14 @@ using namespace ::ooo::vba;
 using namespace ::com::sun::star;
 
 ScVbaFormatConditions*
-lcl_getScVbaFormatConditionsPtr( const uno::Reference< excel::XFormatConditions >& xFormatConditions ) throw ( script::BasicErrorException )
+lcl_getScVbaFormatConditionsPtr( const uno::Reference< excel::XFormatConditions >& xFormatConditions )
 {
 	ScVbaFormatConditions* pFormatConditions = static_cast< ScVbaFormatConditions* >( xFormatConditions.get() );
 	if ( !pFormatConditions )
 		DebugHelper::exception(SbERR_METHOD_FAILED, rtl::OUString() );
 	return pFormatConditions;
 }
-ScVbaFormatCondition::ScVbaFormatCondition(  const uno::Reference< XHelperInterface >& xParent, const uno::Reference< uno::XComponentContext > & xContext, const uno::Reference< sheet::XSheetConditionalEntry >& _xSheetConditionalEntry, const uno::Reference< excel::XStyle >& _xStyle, const uno::Reference< excel::XFormatConditions >& _xFormatConditions, const uno::Reference< css::beans::XPropertySet >& _xPropertySet ) throw ( css::uno::RuntimeException ) : ScVbaFormatCondition_BASE( xParent, xContext, uno::Reference< sheet::XSheetCondition >( _xSheetConditionalEntry, css::uno::UNO_QUERY_THROW ) ), moFormatConditions( _xFormatConditions ), mxStyle( _xStyle ), mxParentRangePropertySet( _xPropertySet )
+ScVbaFormatCondition::ScVbaFormatCondition(  const uno::Reference< XHelperInterface >& xParent, const uno::Reference< uno::XComponentContext > & xContext, const uno::Reference< sheet::XSheetConditionalEntry >& _xSheetConditionalEntry, const uno::Reference< excel::XStyle >& _xStyle, const uno::Reference< excel::XFormatConditions >& _xFormatConditions, const uno::Reference< css::beans::XPropertySet >& _xPropertySet ) : ScVbaFormatCondition_BASE( xParent, xContext, uno::Reference< sheet::XSheetCondition >( _xSheetConditionalEntry, css::uno::UNO_QUERY_THROW ) ), moFormatConditions( _xFormatConditions ), mxStyle( _xStyle ), mxParentRangePropertySet( _xPropertySet )
 {
         mxSheetConditionalEntries = lcl_getScVbaFormatConditionsPtr( moFormatConditions )->getSheetConditionalEntries();
 
@@ -45,7 +45,7 @@ ScVbaFormatCondition::ScVbaFormatCondition(  const uno::Reference< XHelperInterf
 
 
 void SAL_CALL
-ScVbaFormatCondition::Delete(  ) throw (script::BasicErrorException, uno::RuntimeException)
+ScVbaFormatCondition::Delete(  )
 {
 	ScVbaFormatConditions* pFormatConditions = lcl_getScVbaFormatConditionsPtr( moFormatConditions );
 	pFormatConditions->removeFormatCondition(msStyleName, sal_True);
@@ -53,7 +53,7 @@ ScVbaFormatCondition::Delete(  ) throw (script::BasicErrorException, uno::Runtim
 }
 
 void SAL_CALL
-ScVbaFormatCondition::Modify( ::sal_Int32 _nType, const uno::Any& _aOperator, const uno::Any& _aFormula1, const uno::Any& _aFormula2 ) throw (script::BasicErrorException, uno::RuntimeException)
+ScVbaFormatCondition::Modify( ::sal_Int32 _nType, const uno::Any& _aOperator, const uno::Any& _aFormula1, const uno::Any& _aFormula2 )
 {
 	try
 	{
@@ -68,23 +68,23 @@ ScVbaFormatCondition::Modify( ::sal_Int32 _nType, const uno::Any& _aOperator, co
 }
 
 uno::Reference< excel::XInterior > SAL_CALL
-ScVbaFormatCondition::Interior(  ) throw (script::BasicErrorException, uno::RuntimeException)
+ScVbaFormatCondition::Interior(  )
 {
 	return mxStyle->Interior();
 }
 
 uno::Reference< excel::XFont > SAL_CALL
-ScVbaFormatCondition::Font(  ) throw (script::BasicErrorException, uno::RuntimeException)
+ScVbaFormatCondition::Font(  )
 {
 	return mxStyle->Font();
 }
 uno::Any SAL_CALL
-ScVbaFormatCondition::Borders( const uno::Any& Index ) throw (script::BasicErrorException, uno::RuntimeException)
+ScVbaFormatCondition::Borders( const uno::Any& Index )
 { return mxStyle->Borders( Index );
 }
 
 sheet::ConditionOperator
-ScVbaFormatCondition::retrieveAPIType(sal_Int32 _nVBAType, const uno::Reference< sheet::XSheetCondition >& _xSheetCondition ) throw ( script::BasicErrorException )
+ScVbaFormatCondition::retrieveAPIType(sal_Int32 _nVBAType, const uno::Reference< sheet::XSheetCondition >& _xSheetCondition )
 {
 	sheet::ConditionOperator aAPIType = sheet::ConditionOperator_NONE;
 	switch (_nVBAType)
@@ -103,7 +103,7 @@ ScVbaFormatCondition::retrieveAPIType(sal_Int32 _nVBAType, const uno::Reference<
 }
 
 void
-ScVbaFormatCondition::setFormula1( const uno::Any& _aFormula1) throw ( script::BasicErrorException )
+ScVbaFormatCondition::setFormula1( const uno::Any& _aFormula1)
 {
 	// getA1Formula *SHOULD* detect whether the formula is r1c1 or A1 syntax
 	// and if R1C1 convert to A1
@@ -111,13 +111,13 @@ ScVbaFormatCondition::setFormula1( const uno::Any& _aFormula1) throw ( script::B
 }
 
 void
-ScVbaFormatCondition::setFormula2( const uno::Any& _aFormula2) throw ( script::BasicErrorException )
+ScVbaFormatCondition::setFormula2( const uno::Any& _aFormula2)
 {
 	ScVbaFormatCondition_BASE::setFormula1( uno::makeAny( lcl_getScVbaFormatConditionsPtr( moFormatConditions )->getA1Formula(_aFormula2)) );
 }
 
 ::sal_Int32 SAL_CALL
-ScVbaFormatCondition::Type(  ) throw ( script::BasicErrorException, uno::RuntimeException )
+ScVbaFormatCondition::Type(  )
 {
 	sal_Int32 nReturnType = 0;
 	if ( mxSheetCondition->getOperator() == sheet::ConditionOperator_FORMULA)
@@ -129,18 +129,18 @@ ScVbaFormatCondition::Type(  ) throw ( script::BasicErrorException, uno::Runtime
 
 
 ::sal_Int32
-ScVbaFormatCondition::Operator( sal_Bool bVal ) throw (script::BasicErrorException )
+ScVbaFormatCondition::Operator( sal_Bool bVal )
 {
 	return ScVbaFormatCondition_BASE::Operator( bVal );
 }
 ::sal_Int32 SAL_CALL
-ScVbaFormatCondition::Operator(  ) throw (script::BasicErrorException, uno::RuntimeException)
+ScVbaFormatCondition::Operator(  )
 {
 	return ScVbaFormatCondition_BASE::Operator( sal_True );
 }
 
 void
-ScVbaFormatCondition::notifyRange() throw ( script::BasicErrorException )
+ScVbaFormatCondition::notifyRange()
 {
 	try
 	{

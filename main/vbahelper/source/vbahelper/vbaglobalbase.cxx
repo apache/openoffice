@@ -95,7 +95,7 @@ VbaGlobalsBase::init(  const uno::Sequence< beans::PropertyValue >& aInitArgs )
 }
 
 uno::Reference< uno::XInterface > SAL_CALL
-VbaGlobalsBase::createInstance( const ::rtl::OUString& aServiceSpecifier ) throw (uno::Exception, uno::RuntimeException)
+VbaGlobalsBase::createInstance( const ::rtl::OUString& aServiceSpecifier )
 {
     uno::Reference< uno::XInterface > xReturn;
     if ( aServiceSpecifier.equals( sAppService ) )
@@ -110,7 +110,7 @@ VbaGlobalsBase::createInstance( const ::rtl::OUString& aServiceSpecifier ) throw
 }
 
 uno::Reference< uno::XInterface > SAL_CALL
-VbaGlobalsBase::createInstanceWithArguments( const ::rtl::OUString& aServiceSpecifier, const uno::Sequence< uno::Any >& Arguments ) throw (uno::Exception, uno::RuntimeException)
+VbaGlobalsBase::createInstanceWithArguments( const ::rtl::OUString& aServiceSpecifier, const uno::Sequence< uno::Any >& Arguments )
 {
 
     uno::Reference< uno::XInterface > xReturn;
@@ -126,7 +126,7 @@ VbaGlobalsBase::createInstanceWithArguments( const ::rtl::OUString& aServiceSpec
 }
 
 uno::Sequence< ::rtl::OUString > SAL_CALL
-VbaGlobalsBase::getAvailableServiceNames(  ) throw (uno::RuntimeException)
+VbaGlobalsBase::getAvailableServiceNames(  )
 {
     static const rtl::OUString names[] = {
     // common

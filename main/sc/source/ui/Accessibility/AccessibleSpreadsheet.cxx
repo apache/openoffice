@@ -819,7 +819,6 @@ sal_Bool ScAccessibleSpreadsheet::IsSameMarkCell()
 	//=====  XAccessibleTable  ================================================
 
 uno::Reference< XAccessibleTable > SAL_CALL ScAccessibleSpreadsheet::getAccessibleRowHeaders(  )
-                    throw (uno::RuntimeException)
 {
     ScUnoGuard aGuard;
     IsObjectValid();
@@ -838,7 +837,6 @@ uno::Reference< XAccessibleTable > SAL_CALL ScAccessibleSpreadsheet::getAccessib
 }
 
 uno::Reference< XAccessibleTable > SAL_CALL ScAccessibleSpreadsheet::getAccessibleColumnHeaders(  )
-                    throw (uno::RuntimeException)
 {
     ScUnoGuard aGuard;
     IsObjectValid();
@@ -857,7 +855,6 @@ uno::Reference< XAccessibleTable > SAL_CALL ScAccessibleSpreadsheet::getAccessib
 }
 
 uno::Sequence< sal_Int32 > SAL_CALL ScAccessibleSpreadsheet::getSelectedAccessibleRows(  )
-    				throw (uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
     IsObjectValid();
@@ -888,7 +885,6 @@ uno::Sequence< sal_Int32 > SAL_CALL ScAccessibleSpreadsheet::getSelectedAccessib
 }
 
 uno::Sequence< sal_Int32 > SAL_CALL ScAccessibleSpreadsheet::getSelectedAccessibleColumns(  )
-    				throw (uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
     IsObjectValid();
@@ -919,7 +915,6 @@ uno::Sequence< sal_Int32 > SAL_CALL ScAccessibleSpreadsheet::getSelectedAccessib
 }
 
 sal_Bool SAL_CALL ScAccessibleSpreadsheet::isAccessibleRowSelected( sal_Int32 nRow )
-    throw (uno::RuntimeException, lang::IndexOutOfBoundsException)
 {
 	ScUnoGuard aGuard;
     IsObjectValid();
@@ -941,7 +936,6 @@ sal_Bool SAL_CALL ScAccessibleSpreadsheet::isAccessibleRowSelected( sal_Int32 nR
 }
 
 sal_Bool SAL_CALL ScAccessibleSpreadsheet::isAccessibleColumnSelected( sal_Int32 nColumn )
-    throw (uno::RuntimeException, lang::IndexOutOfBoundsException)
 {
 	ScUnoGuard aGuard;
     IsObjectValid();
@@ -991,7 +985,6 @@ ScAccessibleCell* ScAccessibleSpreadsheet::GetAccessibleCellAt(sal_Int32 nRow, s
 }
 
 uno::Reference< XAccessible > SAL_CALL ScAccessibleSpreadsheet::getAccessibleCellAt( sal_Int32 nRow, sal_Int32 nColumn )
-    				throw (uno::RuntimeException, lang::IndexOutOfBoundsException)
 {
 	ScUnoGuard aGuard;
     IsObjectValid();
@@ -1011,7 +1004,6 @@ uno::Reference< XAccessible > SAL_CALL ScAccessibleSpreadsheet::getAccessibleCel
 }
 
 sal_Bool SAL_CALL ScAccessibleSpreadsheet::isAccessibleSelected( sal_Int32 nRow, sal_Int32 nColumn )
-    throw (uno::RuntimeException, lang::IndexOutOfBoundsException)
 {
 	ScUnoGuard aGuard;
     IsObjectValid();
@@ -1038,7 +1030,6 @@ sal_Bool SAL_CALL ScAccessibleSpreadsheet::isAccessibleSelected( sal_Int32 nRow,
 
 uno::Reference< XAccessible > SAL_CALL ScAccessibleSpreadsheet::getAccessibleAtPoint(
 	const awt::Point& rPoint )
-		throw (uno::RuntimeException)
 {
 	uno::Reference< XAccessible > xAccessible;
     if (containsPoint(rPoint))
@@ -1063,7 +1054,6 @@ uno::Reference< XAccessible > SAL_CALL ScAccessibleSpreadsheet::getAccessibleAtP
 }
 
 void SAL_CALL ScAccessibleSpreadsheet::grabFocus(  )
-		throw (uno::RuntimeException)
 {
 	if (getAccessibleParent().is())
 	{
@@ -1074,13 +1064,11 @@ void SAL_CALL ScAccessibleSpreadsheet::grabFocus(  )
 }
 
 sal_Int32 SAL_CALL ScAccessibleSpreadsheet::getForeground(  )
-        throw (uno::RuntimeException)
 {
     return COL_BLACK;
 }
 
 sal_Int32 SAL_CALL ScAccessibleSpreadsheet::getBackground(  )
-        throw (uno::RuntimeException)
 {
     ScUnoGuard aGuard;
     IsObjectValid();
@@ -1090,7 +1078,6 @@ sal_Int32 SAL_CALL ScAccessibleSpreadsheet::getBackground(  )
     //=====  XAccessibleContext  ==============================================
 
 uno::Reference<XAccessibleRelationSet> SAL_CALL ScAccessibleSpreadsheet::getAccessibleRelationSet(void)
-        throw (::com::sun::star::uno::RuntimeException)
 {
     utl::AccessibleRelationSetHelper* pRelationSet = NULL;
     if(mpAccDoc)
@@ -1102,7 +1089,6 @@ uno::Reference<XAccessibleRelationSet> SAL_CALL ScAccessibleSpreadsheet::getAcce
 
 uno::Reference<XAccessibleStateSet> SAL_CALL
 	ScAccessibleSpreadsheet::getAccessibleStateSet(void)
-    throw (uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	uno::Reference<XAccessibleStateSet> xParentStates;
@@ -1140,7 +1126,6 @@ uno::Reference<XAccessibleStateSet> SAL_CALL
 
 void SAL_CALL
 		ScAccessibleSpreadsheet::selectAccessibleChild( sal_Int32 nChildIndex )
-		throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
     IsObjectValid();
@@ -1158,7 +1143,6 @@ void SAL_CALL
 
 void SAL_CALL
 		ScAccessibleSpreadsheet::clearAccessibleSelection(  )
-		throw (uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
     IsObjectValid();
@@ -1171,7 +1155,6 @@ void SAL_CALL
 
 void SAL_CALL
 		ScAccessibleSpreadsheet::selectAllAccessibleChildren(  )
-		throw (uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
     IsObjectValid();
@@ -1192,7 +1175,6 @@ void SAL_CALL
 
 sal_Int32 SAL_CALL
 		ScAccessibleSpreadsheet::getSelectedAccessibleChildCount(  )
-		throw (uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
     IsObjectValid();
@@ -1222,7 +1204,6 @@ sal_Int32 SAL_CALL
 
 uno::Reference<XAccessible > SAL_CALL
 		ScAccessibleSpreadsheet::getSelectedAccessibleChild( sal_Int32 nSelectedChildIndex )
-		throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
     IsObjectValid();
@@ -1271,7 +1252,6 @@ uno::Reference<XAccessible > SAL_CALL
 
 void SAL_CALL
 		ScAccessibleSpreadsheet::deselectAccessibleChild( sal_Int32 nChildIndex )
-		throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
     IsObjectValid();
@@ -1327,14 +1307,12 @@ void ScAccessibleSpreadsheet::SelectCell(sal_Int32 nRow, sal_Int32 nCol, sal_Boo
 	//=====  XServiceInfo  ====================================================
 
 ::rtl::OUString SAL_CALL ScAccessibleSpreadsheet::getImplementationName(void)
-        throw (uno::RuntimeException)
 {
 	return rtl::OUString(RTL_CONSTASCII_USTRINGPARAM ("ScAccessibleSpreadsheet"));
 }
 
 uno::Sequence< ::rtl::OUString> SAL_CALL
 	ScAccessibleSpreadsheet::getSupportedServiceNames (void)
-        throw (uno::RuntimeException)
 {
 	uno::Sequence< ::rtl::OUString > aSequence = ScAccessibleTableBase::getSupportedServiceNames();
     sal_Int32 nOldSize(aSequence.getLength());
@@ -1350,7 +1328,6 @@ uno::Sequence< ::rtl::OUString> SAL_CALL
 
 uno::Sequence<sal_Int8> SAL_CALL
 	ScAccessibleSpreadsheet::getImplementationId(void)
-    throw (uno::RuntimeException)
 {
     ScUnoGuard aGuard;
     IsObjectValid();
@@ -1366,7 +1343,6 @@ uno::Sequence<sal_Int8> SAL_CALL
 ///=====  XAccessibleEventBroadcaster  =====================================
 
 void SAL_CALL ScAccessibleSpreadsheet::addEventListener(const uno::Reference<XAccessibleEventListener>& xListener)
-        throw (uno::RuntimeException)
 {
     ScUnoGuard aGuard;
     IsObjectValid();
@@ -1376,7 +1352,6 @@ void SAL_CALL ScAccessibleSpreadsheet::addEventListener(const uno::Reference<XAc
 	//====  internal  =========================================================
 
 Rectangle ScAccessibleSpreadsheet::GetBoundingBoxOnScreen() const
-	throw (uno::RuntimeException)
 {
 	Rectangle aRect;
 	if (mpViewShell)
@@ -1389,7 +1364,6 @@ Rectangle ScAccessibleSpreadsheet::GetBoundingBoxOnScreen() const
 }
 
 Rectangle ScAccessibleSpreadsheet::GetBoundingBox() const
-	throw (uno::RuntimeException)
 {
 	Rectangle aRect;
 	if (mpViewShell)
@@ -1490,7 +1464,6 @@ Rectangle ScAccessibleSpreadsheet::GetVisCells(const Rectangle& rVisArea)
 		return Rectangle();
 }
 sal_Bool SAL_CALL ScAccessibleSpreadsheet::selectRow( sal_Int32 row )
-throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
 {
 	if (IsFormulaMode())
 	{
@@ -1506,7 +1479,6 @@ throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
 }
 
 sal_Bool SAL_CALL ScAccessibleSpreadsheet::selectColumn( sal_Int32 column )
-		throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
 {
 	if (IsFormulaMode())
 	{
@@ -1522,7 +1494,6 @@ sal_Bool SAL_CALL ScAccessibleSpreadsheet::selectColumn( sal_Int32 column )
 }
 
 sal_Bool SAL_CALL ScAccessibleSpreadsheet::unselectRow( sal_Int32 row )
-		throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
 {
 	if (IsFormulaMode())
 	{
@@ -1539,7 +1510,6 @@ sal_Bool SAL_CALL ScAccessibleSpreadsheet::unselectRow( sal_Int32 row )
 }
 
 sal_Bool SAL_CALL ScAccessibleSpreadsheet::unselectColumn( sal_Int32 column )
-		throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
 {
 	if (IsFormulaMode())
 	{

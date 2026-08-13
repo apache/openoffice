@@ -52,33 +52,24 @@ public:
     ::rtl::OUString getParcelLanguage() { return m_sLang; }
     bool isParsed() { return m_bIsParsed; }
     // XDocumentHandler
-    virtual void SAL_CALL startDocument()
-        throw ( css::xml::sax::SAXException, css::uno::RuntimeException );
+    virtual void SAL_CALL startDocument();
 
-    virtual void SAL_CALL endDocument()
-        throw ( css::xml::sax::SAXException, css::uno::RuntimeException );
+    virtual void SAL_CALL endDocument();
 
     virtual void SAL_CALL startElement( const ::rtl::OUString& aName,
-        const css::uno::Reference< css::xml::sax::XAttributeList > & xAttribs )
-        throw ( css::xml::sax::SAXException,
-            css::uno::RuntimeException );
+        const css::uno::Reference< css::xml::sax::XAttributeList > & xAttribs );
 
-    virtual void SAL_CALL endElement( const ::rtl::OUString & aName )
-        throw ( css::xml::sax::SAXException, css::uno::RuntimeException );
+    virtual void SAL_CALL endElement( const ::rtl::OUString & aName );
 
-    virtual void SAL_CALL characters( const ::rtl::OUString & aChars )
-        throw ( css::xml::sax::SAXException, css::uno::RuntimeException );
+    virtual void SAL_CALL characters( const ::rtl::OUString & aChars );
 
-    virtual void SAL_CALL ignorableWhitespace( const ::rtl::OUString & aWhitespaces )
-        throw ( css::xml::sax::SAXException, css::uno::RuntimeException );
+    virtual void SAL_CALL ignorableWhitespace( const ::rtl::OUString & aWhitespaces );
 
     virtual void SAL_CALL processingInstruction(
-        const ::rtl::OUString & aTarget, const ::rtl::OUString & aData )
-        throw ( css::xml::sax::SAXException, css::uno::RuntimeException );
+        const ::rtl::OUString & aTarget, const ::rtl::OUString & aData );
 
     virtual void SAL_CALL setDocumentLocator(
-        const css::uno::Reference< css::xml::sax::XLocator >& xLocator )
-        throw ( css::xml::sax::SAXException, css::uno::RuntimeException );
+        const css::uno::Reference< css::xml::sax::XLocator >& xLocator );
 };
 }
 }

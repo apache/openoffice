@@ -80,7 +80,6 @@ AccessibleGridControlHeaderCell::AccessibleGridControlHeaderCell(sal_Int32 _nCol
 		The count of visible children.
 */
 sal_Int32 SAL_CALL AccessibleGridControlHeaderCell::getAccessibleChildCount()
-	throw ( RuntimeException )
 {
 	return 0;
 }
@@ -90,7 +89,6 @@ sal_Int32 SAL_CALL AccessibleGridControlHeaderCell::getAccessibleChildCount()
 		The XAccessible interface of the specified child.
 */
 Reference<XAccessible > SAL_CALL AccessibleGridControlHeaderCell::getAccessibleChild( sal_Int32 )
-	throw ( IndexOutOfBoundsException,RuntimeException )
 {
 	throw IndexOutOfBoundsException();
 }
@@ -99,7 +97,6 @@ Reference<XAccessible > SAL_CALL AccessibleGridControlHeaderCell::getAccessibleC
 	/** Queries for a new interface. */
 	::com::sun::star::uno::Any SAL_CALL AccessibleGridControlHeaderCell::queryInterface(
 			const ::com::sun::star::uno::Type& rType )
-		throw ( ::com::sun::star::uno::RuntimeException )
 	{
 		Any aRet = AccessibleGridControlCell::queryInterface(rType);
 		return aRet;
@@ -117,7 +114,7 @@ Reference<XAccessible > SAL_CALL AccessibleGridControlHeaderCell::getAccessibleC
 		AccessibleGridControlCell::release();
 	}
 		/** @return  The XAccessibleContext interface of this object. */
-	Reference< com::sun::star::accessibility::XAccessibleContext > SAL_CALL AccessibleGridControlHeaderCell::getAccessibleContext() throw ( RuntimeException )
+	Reference< com::sun::star::accessibility::XAccessibleContext > SAL_CALL AccessibleGridControlHeaderCell::getAccessibleContext()
 	{
 		ensureIsAlive();
 		return this;
@@ -127,7 +124,6 @@ Reference<XAccessible > SAL_CALL AccessibleGridControlHeaderCell::getAccessibleC
 
 /** Grabs the focus to the column header. */
 void SAL_CALL AccessibleGridControlHeaderCell::grabFocus()
-	throw ( ::com::sun::star::uno::RuntimeException )
 {
 }
 // -----------------------------------------------------------------------------
@@ -135,7 +131,6 @@ void SAL_CALL AccessibleGridControlHeaderCell::grabFocus()
 		The name of this class.
 */
 ::rtl::OUString SAL_CALL AccessibleGridControlHeaderCell::getImplementationName()
-	throw ( ::com::sun::star::uno::RuntimeException )
 {
 	return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.accessibility.AccessibleGridControlHeaderCell" ) );
 }
@@ -167,7 +162,6 @@ Rectangle AccessibleGridControlHeaderCell::implGetBoundingBoxOnScreen()
 }
 // -----------------------------------------------------------------------------
 sal_Int32 SAL_CALL AccessibleGridControlHeaderCell::getAccessibleIndexInParent()
-	throw ( RuntimeException )
 {
 	::osl::MutexGuard aGuard( getOslMutex() );
 	ensureIsAlive();

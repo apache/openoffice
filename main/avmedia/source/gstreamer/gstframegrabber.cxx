@@ -173,7 +173,6 @@ gboolean FrameGrabber::busCallback( GstBus* pBus, GstMessage* pMsg )
 // ------------------------------------------------------------------------------
 
 uno::Reference< graphic::XGraphic > SAL_CALL FrameGrabber::grabFrame( double fMediaTime )
-    throw (uno::RuntimeException)
 {
     uno::Reference< graphic::XGraphic > xRet;
 
@@ -278,7 +277,6 @@ uno::Reference< graphic::XGraphic > SAL_CALL FrameGrabber::grabFrame( double fMe
 // ------------------------------------------------------------------------------
 
 ::rtl::OUString SAL_CALL FrameGrabber::getImplementationName(  )
-    throw (uno::RuntimeException)
 {
     return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( AVMEDIA_GSTREAMER_FRAMEGRABBER_IMPLEMENTATIONNAME ) );
 }
@@ -286,7 +284,6 @@ uno::Reference< graphic::XGraphic > SAL_CALL FrameGrabber::grabFrame( double fMe
 // ------------------------------------------------------------------------------
 
 sal_Bool SAL_CALL FrameGrabber::supportsService( const ::rtl::OUString& ServiceName )
-    throw (uno::RuntimeException)
 {
     return ServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM ( AVMEDIA_GSTREAMER_FRAMEGRABBER_SERVICENAME ) );
 }
@@ -294,7 +291,6 @@ sal_Bool SAL_CALL FrameGrabber::supportsService( const ::rtl::OUString& ServiceN
 // ------------------------------------------------------------------------------
 
 uno::Sequence< ::rtl::OUString > SAL_CALL FrameGrabber::getSupportedServiceNames(  )
-    throw (uno::RuntimeException)
 {
     uno::Sequence< ::rtl::OUString > aRet(1);
     aRet[0] = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM ( AVMEDIA_GSTREAMER_FRAMEGRABBER_SERVICENAME ) );

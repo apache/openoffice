@@ -207,10 +207,6 @@ rtl::OUString GetOUString( NSString* pStr )
 
 void MacOSXBackend::setPropertyValue(
     rtl::OUString const &, css::uno::Any const &)
-    throw (
-        css::beans::UnknownPropertyException, css::beans::PropertyVetoException,
-        css::lang::IllegalArgumentException, css::lang::WrappedTargetException,
-        css::uno::RuntimeException)
 {
     throw css::lang::IllegalArgumentException(
         rtl::OUString(
@@ -220,9 +216,6 @@ void MacOSXBackend::setPropertyValue(
 
 css::uno::Any MacOSXBackend::getPropertyValue(
     rtl::OUString const & PropertyName)
-    throw (
-        css::beans::UnknownPropertyException, css::lang::WrappedTargetException,
-        css::uno::RuntimeException)
 {
     if (PropertyName.equalsAsciiL(
             RTL_CONSTASCII_STRINGPARAM("WorkPathVariable")))
@@ -457,7 +450,6 @@ rtl::OUString SAL_CALL MacOSXBackend::getBackendName(void)
 //------------------------------------------------------------------------------
 
 rtl::OUString SAL_CALL MacOSXBackend::getImplementationName(void)
-    throw (uno::RuntimeException)
 {
     return getBackendName();
 }
@@ -475,7 +467,6 @@ uno::Sequence<rtl::OUString> SAL_CALL MacOSXBackend::getBackendServiceNames(void
 //------------------------------------------------------------------------------
 
 sal_Bool SAL_CALL MacOSXBackend::supportsService(const rtl::OUString& aServiceName)
-    throw (uno::RuntimeException)
 {
     uno::Sequence< rtl::OUString > const svc = getBackendServiceNames();
 
@@ -489,7 +480,6 @@ sal_Bool SAL_CALL MacOSXBackend::supportsService(const rtl::OUString& aServiceNa
 //------------------------------------------------------------------------------
 
 uno::Sequence<rtl::OUString> SAL_CALL MacOSXBackend::getSupportedServiceNames(void)
-    throw (uno::RuntimeException)
 {
     return getBackendServiceNames();
 }

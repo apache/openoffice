@@ -48,14 +48,12 @@ namespace oox { namespace drawingml {
 		}
 
         void SAL_CALL TextTabStopListContext::endFastElement( ::sal_Int32 /*Element*/ )
-			throw ( SAXException, RuntimeException)
 		{
 		}
 
 
     Reference< ::XFastContextHandler > TextTabStopListContext::createFastChildContext( ::sal_Int32 aElement,
 																																											 const Reference< XFastAttributeList >& xAttribs )
-			throw (SAXException, RuntimeException)
 		{
 			Reference< XFastContextHandler > xRet;
 			switch( aElement )

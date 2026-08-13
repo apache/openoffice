@@ -212,7 +212,7 @@ void OTableTreeListBox::implOnNewConnection( const Reference< XConnection >& _rx
 }
 
 //------------------------------------------------------------------------
-void OTableTreeListBox::UpdateTableList( const Reference< XConnection >& _rxConnection ) throw(SQLException)
+void OTableTreeListBox::UpdateTableList( const Reference< XConnection >& _rxConnection )
 {
 	Sequence< ::rtl::OUString > sTables, sViews;
 

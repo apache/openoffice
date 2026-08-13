@@ -66,7 +66,6 @@ void ScriptMetadataImporter::parseMetaData(
     Reference< io::XInputStream > const & xInput,
     const ::rtl::OUString & parcelURI,
     InfoImpls_vec &  io_ScriptDatas )
-    throw ( xml::sax::SAXException, io::IOException, RuntimeException )
 {
 
     ::osl::Guard< ::osl::Mutex > aGuard( m_mutex );
@@ -136,35 +135,30 @@ void ScriptMetadataImporter::parseMetaData(
 //*************************************************************************
 // XExtendedDocumentHandler impl
 void ScriptMetadataImporter::startCDATA()
-    throw ( xml::sax::SAXException, RuntimeException )
 {
     OSL_TRACE( "ScriptMetadataImporter: startCDATA()\n" );
 }
 
 //*************************************************************************
 void ScriptMetadataImporter::endCDATA()
-    throw ( RuntimeException )
 {
     OSL_TRACE( "ScriptMetadataImporter: endDATA()\n" );
 }
 
 //*************************************************************************
 void ScriptMetadataImporter::comment( const ::rtl::OUString & sComment )
-    throw ( xml::sax::SAXException, RuntimeException )
 {
     OSL_TRACE( "ScriptMetadataImporter: comment()\n" );
 }
 
 //*************************************************************************
 void ScriptMetadataImporter::allowLineBreak()
-    throw ( xml::sax::SAXException, RuntimeException )
 {
     OSL_TRACE( "ScriptMetadataImporter: allowLineBreak()\n" );
 }
 
 //*************************************************************************
 void ScriptMetadataImporter::unknown( const ::rtl::OUString & sString )
-    throw ( xml::sax::SAXException, RuntimeException )
 {
     OSL_TRACE( "ScriptMetadataImporter: unknown()\n" );
 }
@@ -172,7 +166,6 @@ void ScriptMetadataImporter::unknown( const ::rtl::OUString & sString )
 //*************************************************************************
 // XDocumentHandler impl
 void ScriptMetadataImporter::startDocument()
-    throw ( xml::sax::SAXException, RuntimeException )
 {
     // Ignore for now
     OSL_TRACE( "ScriptMetadataImporter: startDocument()\n" );
@@ -180,7 +173,6 @@ void ScriptMetadataImporter::startDocument()
 
 //*************************************************************************
 void ScriptMetadataImporter::endDocument()
-    throw ( xml::sax::SAXException, RuntimeException )
 {
     // Ignore for now
     OSL_TRACE( "ScriptMetadataImporter: endDocument()\n" );
@@ -190,7 +182,6 @@ void ScriptMetadataImporter::endDocument()
 void ScriptMetadataImporter::startElement(
     const ::rtl::OUString& tagName,
     const Reference< xml::sax::XAttributeList >& xAttribs )
-    throw ( xml::sax::SAXException, RuntimeException )
 {
 
     OSL_TRACE(  "Trace Message : ScriptMetadataImporter: startElement() %s\n",
@@ -320,7 +311,6 @@ void ScriptMetadataImporter::startElement(
 
 //*************************************************************************
 void ScriptMetadataImporter::endElement( const ::rtl::OUString & aName )
-    throw ( xml::sax::SAXException, RuntimeException )
 {
 
     //The end tag of an element
@@ -381,7 +371,6 @@ void ScriptMetadataImporter::endElement( const ::rtl::OUString & aName )
 
 //*************************************************************************
 void ScriptMetadataImporter::characters( const ::rtl::OUString & aChars )
-    throw ( xml::sax::SAXException, RuntimeException )
 {
     OSL_TRACE( "ScriptMetadataImporter: characters()\n");
 
@@ -410,7 +399,6 @@ void ScriptMetadataImporter::characters( const ::rtl::OUString & aChars )
 //*************************************************************************
 void ScriptMetadataImporter::ignorableWhitespace(
     const ::rtl::OUString & aWhitespaces )
-    throw ( xml::sax::SAXException, RuntimeException )
 {
     OSL_TRACE( "ScriptMetadataImporter: ignorableWhiteSpace()\n" );
 }
@@ -418,7 +406,6 @@ void ScriptMetadataImporter::ignorableWhitespace(
 //*************************************************************************
 void ScriptMetadataImporter::processingInstruction(
     const ::rtl::OUString & aTarget, const ::rtl::OUString & aData )
-    throw ( xml::sax::SAXException, RuntimeException )
 {
     OSL_TRACE( "ScriptMetadataImporter: processingInstruction()\n" );
 }
@@ -426,7 +413,6 @@ void ScriptMetadataImporter::processingInstruction(
 //*************************************************************************
 void ScriptMetadataImporter::setDocumentLocator(
     const Reference< xml::sax::XLocator >& xLocator )
-    throw ( xml::sax::SAXException, RuntimeException )
 {
     OSL_TRACE( "ScriptMetadataImporter: setDocumentLocator()\n" );
 }

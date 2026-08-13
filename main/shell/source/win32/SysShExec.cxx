@@ -279,7 +279,6 @@ CSysShExec::CSysShExec( ) :
 //-------------------------------------------------
 
 void SAL_CALL CSysShExec::execute( const OUString& aCommand, const OUString& aParameter, sal_Int32 nFlags )
-        throw (IllegalArgumentException, SystemShellExecuteException, RuntimeException)
 {
     // parameter checking
     if (0 == aCommand.getLength())
@@ -351,7 +350,6 @@ void SAL_CALL CSysShExec::execute( const OUString& aCommand, const OUString& aPa
 // -------------------------------------------------
 
 OUString SAL_CALL CSysShExec::getImplementationName(  )
-	throw( RuntimeException )
 {
 	return OUString::createFromAscii( SYSSHEXEC_IMPL_NAME );
 }
@@ -361,7 +359,6 @@ OUString SAL_CALL CSysShExec::getImplementationName(  )
 // -------------------------------------------------
 
 sal_Bool SAL_CALL CSysShExec::supportsService( const OUString& ServiceName )
-	throw( RuntimeException )
 {
 	Sequence < OUString > SupportedServicesNames = SysShExec_getSupportedServiceNames();
 
@@ -377,7 +374,6 @@ sal_Bool SAL_CALL CSysShExec::supportsService( const OUString& ServiceName )
 // -------------------------------------------------
 
 Sequence< OUString > SAL_CALL CSysShExec::getSupportedServiceNames(	 )
-	throw( RuntimeException )
 {
 	return SysShExec_getSupportedServiceNames();
 }

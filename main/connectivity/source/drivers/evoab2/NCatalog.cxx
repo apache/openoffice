@@ -71,7 +71,7 @@ void OEvoabCatalog::refreshTables()
 		m_pTables = new OEvoabTables(m_xMetaData,*this,m_aMutex,aVector);
 }
 // XTablesSupplier
-Reference< XNameAccess > SAL_CALL  OEvoabCatalog::getTables(  ) throw(RuntimeException)
+Reference< XNameAccess > SAL_CALL  OEvoabCatalog::getTables(  )
 {
         ::osl::MutexGuard aGuard(m_aMutex);
 

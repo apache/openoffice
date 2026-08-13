@@ -78,25 +78,25 @@ public:
 	void SAL_CALL ImplInsertByName( const OUString& aName, const uno::Any& aElement );
 
     // XServiceInfo
-    virtual OUString SAL_CALL getImplementationName(  ) throw( uno::RuntimeException );
-    virtual sal_Bool SAL_CALL supportsService( const  OUString& ServiceName ) throw( uno::RuntimeException);
-    virtual uno::Sequence<  OUString > SAL_CALL getSupportedServiceNames(  ) throw( uno::RuntimeException);
+    virtual OUString SAL_CALL getImplementationName(  );
+    virtual sal_Bool SAL_CALL supportsService( const  OUString& ServiceName );
+    virtual uno::Sequence<  OUString > SAL_CALL getSupportedServiceNames(  );
 
 	// XNameContainer
-	virtual void SAL_CALL insertByName( const  OUString& aName, const  uno::Any& aElement ) throw( lang::IllegalArgumentException, container::ElementExistException, lang::WrappedTargetException, uno::RuntimeException);
-	virtual void SAL_CALL removeByName( const  OUString& Name ) throw( container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException);
+	virtual void SAL_CALL insertByName( const  OUString& aName, const  uno::Any& aElement );
+	virtual void SAL_CALL removeByName( const  OUString& Name );
 
 	// XNameReplace
-    virtual void SAL_CALL replaceByName( const  OUString& aName, const  uno::Any& aElement ) throw( lang::IllegalArgumentException, container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException);
+    virtual void SAL_CALL replaceByName( const  OUString& aName, const  uno::Any& aElement );
 
 	// XNameAccess
-    virtual uno::Any SAL_CALL getByName( const  OUString& aName ) throw( container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException);
-    virtual uno::Sequence<  OUString > SAL_CALL getElementNames(  ) throw( uno::RuntimeException);
-    virtual sal_Bool SAL_CALL hasByName( const  OUString& aName ) throw( uno::RuntimeException);
+    virtual uno::Any SAL_CALL getByName( const  OUString& aName );
+    virtual uno::Sequence<  OUString > SAL_CALL getElementNames(  );
+    virtual sal_Bool SAL_CALL hasByName( const  OUString& aName );
 
 	// XElementAccess
-    virtual uno::Type SAL_CALL getElementType(  ) throw( uno::RuntimeException);
-    virtual sal_Bool SAL_CALL hasElements(  ) throw( uno::RuntimeException);
+    virtual uno::Type SAL_CALL getElementType(  );
+    virtual sal_Bool SAL_CALL hasElements(  );
 };
 
 SvxUnoMarkerTable::SvxUnoMarkerTable( SdrModel* pModel ) throw()
@@ -136,7 +136,7 @@ void SvxUnoMarkerTable::Notify( SfxBroadcaster&, const SfxHint& rHint ) throw()
 		dispose();
 }
 
-sal_Bool SAL_CALL SvxUnoMarkerTable::supportsService( const  OUString& ServiceName ) throw(uno::RuntimeException)
+sal_Bool SAL_CALL SvxUnoMarkerTable::supportsService( const  OUString& ServiceName )
 {
     uno::Sequence< OUString > aSNL( getSupportedServiceNames() );
     const OUString * pArray = aSNL.getConstArray();
@@ -148,13 +148,12 @@ sal_Bool SAL_CALL SvxUnoMarkerTable::supportsService( const  OUString& ServiceNa
     return sal_False;
 }
 
-OUString SAL_CALL SvxUnoMarkerTable::getImplementationName() throw( uno::RuntimeException )
+OUString SAL_CALL SvxUnoMarkerTable::getImplementationName()
 {
 	return OUString( RTL_CONSTASCII_USTRINGPARAM("SvxUnoMarkerTable") );
 }
 
 uno::Sequence< OUString > SAL_CALL SvxUnoMarkerTable::getSupportedServiceNames(  )
-	throw( uno::RuntimeException )
 {
     uno::Sequence< OUString > aSNS( 1 );
     aSNS.getArray()[0] = OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.drawing.MarkerTable" ));
@@ -181,7 +180,6 @@ void SAL_CALL SvxUnoMarkerTable::ImplInsertByName( const OUString& aName, const 
 
 // XNameContainer
 void SAL_CALL SvxUnoMarkerTable::insertByName( const OUString& aApiName, const uno::Any& aElement )
-	throw( lang::IllegalArgumentException, container::ElementExistException, lang::WrappedTargetException, uno::RuntimeException )
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 
@@ -195,7 +193,6 @@ void SAL_CALL SvxUnoMarkerTable::insertByName( const OUString& aApiName, const u
 }
 
 void SAL_CALL SvxUnoMarkerTable::removeByName( const OUString& aApiName )
-	throw( container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException)
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 
@@ -234,7 +231,6 @@ void SAL_CALL SvxUnoMarkerTable::removeByName( const OUString& aApiName )
 
 // XNameReplace
 void SAL_CALL SvxUnoMarkerTable::replaceByName( const OUString& aApiName, const uno::Any& aElement )
-	throw( lang::IllegalArgumentException, container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException )
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 
@@ -323,7 +319,6 @@ static sal_Bool getByNameFromPool( const String& rSearchName, SfxItemPool* pPool
 
 // XNameAccess
 uno::Any SAL_CALL SvxUnoMarkerTable::getByName( const OUString& aApiName )
-	throw( container::NoSuchElementException,  lang::WrappedTargetException, uno::RuntimeException)
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 
@@ -372,7 +367,6 @@ static void createNamesForPool( SfxItemPool* pPool, sal_uInt16 nWhich, std::set<
 }
 
 uno::Sequence< OUString > SAL_CALL SvxUnoMarkerTable::getElementNames()
-	throw( uno::RuntimeException )
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 
@@ -399,7 +393,6 @@ uno::Sequence< OUString > SAL_CALL SvxUnoMarkerTable::getElementNames()
 }
 
 sal_Bool SAL_CALL SvxUnoMarkerTable::hasByName( const OUString& aName )
-	throw( uno::RuntimeException )
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 
@@ -434,13 +427,11 @@ sal_Bool SAL_CALL SvxUnoMarkerTable::hasByName( const OUString& aName )
 
 // XElementAccess
 uno::Type SAL_CALL SvxUnoMarkerTable::getElementType(  )
-	throw( uno::RuntimeException )
 {
 	return ::getCppuType((const drawing::PointSequence*)0);
 }
 
 sal_Bool SAL_CALL SvxUnoMarkerTable::hasElements(  )
-	throw( uno::RuntimeException )
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 

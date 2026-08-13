@@ -51,34 +51,25 @@ class COMPHELPER_DLLPUBLIC OPropertyContainer
 {
 public:
 	// this dtor is needed otherwise we can get a wrong delete operator
-	/*	Classes derived from this one also derive from a UNO base whose destructor
-		is declared SAL_THROW( (RuntimeException) ).  From C++11 on a destructor with
-		no written specification gets an implicit "never throws", so the derived
-		class's own deduced specification came out weaker than this one, which an
-		override may not be (C2694).  Inert under C++03, where no implicit
-		specification exists, and MSVC does not enforce a dynamic specification at
-		run time in any case -- it only uses it for this compile-time check. */
 	virtual ~OPropertyContainer();
 
 protected:
 	OPropertyContainer(::cppu::OBroadcastHelper& _rBHelper);
 
 	/// for scripting : the types of the interfaces supported by this class
-	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes() throw (::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes();
 
 // OPropertySetHelper overridables
 	virtual sal_Bool SAL_CALL convertFastPropertyValue(
 							::com::sun::star::uno::Any & rConvertedValue,
 							::com::sun::star::uno::Any & rOldValue,
 							sal_Int32 nHandle,
-							const ::com::sun::star::uno::Any& rValue )
-								throw (::com::sun::star::lang::IllegalArgumentException);
+							const ::com::sun::star::uno::Any& rValue );
 
 	virtual void SAL_CALL   setFastPropertyValue_NoBroadcast(
 							    sal_Int32 nHandle,
 							    const ::com::sun::star::uno::Any& rValue
-                            )
-                            throw (::com::sun::star::uno::Exception);
+                            );
 
     using OPropertyContainer_Base::getFastPropertyValue;
 	virtual void SAL_CALL getFastPropertyValue(
@@ -87,8 +78,7 @@ protected:
 									 ) const;
 
     // disambiguate a base class method (XFastPropertySet)
-	virtual void SAL_CALL setFastPropertyValue( sal_Int32 nHandle, const ::com::sun::star::uno::Any& rValue )
-		throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::beans::PropertyVetoException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL setFastPropertyValue( sal_Int32 nHandle, const ::com::sun::star::uno::Any& rValue );
 };
 
 //.........................................................................

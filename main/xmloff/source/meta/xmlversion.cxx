@@ -353,7 +353,6 @@ sal_Bool XMLVersionContext::ParseISODateTimeString(
 // ------------------------------------------------------------------------
 
 void SAL_CALL XMLVersionListPersistence::store( const uno::Reference< embed::XStorage >& xRoot, const uno::Sequence< util::RevisionTag >& rVersions )
-    throw (::com::sun::star::io::IOException, ::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
 {
     // no storage, no version list!
     if ( xRoot.is() )
@@ -419,7 +418,6 @@ void SAL_CALL XMLVersionListPersistence::store( const uno::Reference< embed::XSt
 
 // ------------------------------------------------------------------------
 uno::Sequence< util::RevisionTag > SAL_CALL XMLVersionListPersistence::load( const uno::Reference< embed::XStorage >& xRoot )
-        throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::io::IOException, ::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException)
 {
     com::sun::star::uno::Sequence < com::sun::star::util::RevisionTag > aVersions;
 
@@ -509,7 +507,6 @@ rtl::OUString SAL_CALL XMLVersionListPersistence_getImplementationName() throw()
 
 uno::Reference< uno::XInterface > SAL_CALL XMLVersionListPersistence_createInstance(
 		const uno::Reference< lang::XMultiServiceFactory > &)
-	throw( uno::Exception )
 {
     return (cppu::OWeakObject*)new XMLVersionListPersistence;
 }
@@ -530,7 +527,6 @@ rtl::OUString SAL_CALL XMLVersionImExportOOO_getImplementationName() throw()
 
 uno::Reference< uno::XInterface > SAL_CALL XMLVersionImExportOOO_createInstance(
 		const uno::Reference< lang::XMultiServiceFactory > &)
-	throw( uno::Exception )
 {
     return (cppu::OWeakObject*)new XMLVersionListPersistence;
 }

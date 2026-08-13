@@ -115,29 +115,24 @@ class ConfigurationAccess_UICommand : // Order is necessary for right initializa
         virtual                   ~ConfigurationAccess_UICommand();
 
         // XNameAccess
-        virtual ::com::sun::star::uno::Any SAL_CALL getByName( const ::rtl::OUString& aName )
-            throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Any SAL_CALL getByName( const ::rtl::OUString& aName );
 
-        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames()
-            throw (::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames();
 
-        virtual sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName )
-            throw (::com::sun::star::uno::RuntimeException);
+        virtual sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName );
 
         // XElementAccess
-        virtual ::com::sun::star::uno::Type SAL_CALL getElementType()
-            throw (::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Type SAL_CALL getElementType();
 
-        virtual sal_Bool SAL_CALL hasElements()
-            throw (::com::sun::star::uno::RuntimeException);
+        virtual sal_Bool SAL_CALL hasElements();
 
         // container.XContainerListener
-        virtual void SAL_CALL     elementInserted( const ContainerEvent& aEvent ) throw(RuntimeException);
-        virtual void SAL_CALL     elementRemoved ( const ContainerEvent& aEvent ) throw(RuntimeException);
-        virtual void SAL_CALL     elementReplaced( const ContainerEvent& aEvent ) throw(RuntimeException);
+        virtual void SAL_CALL     elementInserted( const ContainerEvent& aEvent );
+        virtual void SAL_CALL     elementRemoved ( const ContainerEvent& aEvent );
+        virtual void SAL_CALL     elementReplaced( const ContainerEvent& aEvent );
 
         // lang.XEventListener
-        virtual void SAL_CALL disposing( const EventObject& aEvent ) throw(RuntimeException);
+        virtual void SAL_CALL disposing( const EventObject& aEvent );
 
     protected:
         virtual ::com::sun::star::uno::Any SAL_CALL getByNameImpl( const ::rtl::OUString& aName );
@@ -289,7 +284,6 @@ Any SAL_CALL ConfigurationAccess_UICommand::getByNameImpl( const ::rtl::OUString
 }
 
 Any SAL_CALL ConfigurationAccess_UICommand::getByName( const ::rtl::OUString& rCommandURL )
-throw ( NoSuchElementException, WrappedTargetException, RuntimeException)
 {
 	Any aRet( getByNameImpl( rCommandURL ) );
 	if( !aRet.hasValue() )
@@ -299,26 +293,22 @@ throw ( NoSuchElementException, WrappedTargetException, RuntimeException)
 }
 
 Sequence< ::rtl::OUString > SAL_CALL ConfigurationAccess_UICommand::getElementNames()
-throw ( RuntimeException )
 {
     return getAllCommands();
 }
 
 sal_Bool SAL_CALL ConfigurationAccess_UICommand::hasByName( const ::rtl::OUString& rCommandURL )
-throw (::com::sun::star::uno::RuntimeException)
 {
     return getByNameImpl( rCommandURL ).hasValue();
 }
 
 // XElementAccess
 Type SAL_CALL ConfigurationAccess_UICommand::getElementType()
-throw ( RuntimeException )
 {
     return( ::getCppuType( (const Sequence< PropertyValue >*)NULL ) );
 }
 
 sal_Bool SAL_CALL ConfigurationAccess_UICommand::hasElements()
-throw ( RuntimeException )
 {
     // There must are global commands!
     return sal_True;
@@ -589,21 +579,21 @@ sal_Bool ConfigurationAccess_UICommand::initializeConfigAccess()
 }
 
 // container.XContainerListener
-void SAL_CALL ConfigurationAccess_UICommand::elementInserted( const ContainerEvent& ) throw(RuntimeException)
+void SAL_CALL ConfigurationAccess_UICommand::elementInserted( const ContainerEvent& )
 {
     ResetableGuard aLock( m_aLock );
     m_bCacheFilled = sal_False;
     fillCache();
 }
 
-void SAL_CALL ConfigurationAccess_UICommand::elementRemoved( const ContainerEvent& ) throw(RuntimeException)
+void SAL_CALL ConfigurationAccess_UICommand::elementRemoved( const ContainerEvent& )
 {
     ResetableGuard aLock( m_aLock );
     m_bCacheFilled = sal_False;
     fillCache();
 }
 
-void SAL_CALL ConfigurationAccess_UICommand::elementReplaced( const ContainerEvent& ) throw(RuntimeException)
+void SAL_CALL ConfigurationAccess_UICommand::elementReplaced( const ContainerEvent& )
 {
     ResetableGuard aLock( m_aLock );
     m_bCacheFilled = sal_False;
@@ -611,7 +601,7 @@ void SAL_CALL ConfigurationAccess_UICommand::elementReplaced( const ContainerEve
 }
 
 // lang.XEventListener
-void SAL_CALL ConfigurationAccess_UICommand::disposing( const EventObject& aEvent ) throw(RuntimeException)
+void SAL_CALL ConfigurationAccess_UICommand::disposing( const EventObject& aEvent )
 {
     // SAFE
     // remove our reference to the config access
@@ -708,7 +698,6 @@ Reference< XNameAccess > UICommandDescription::impl_createConfigAccess(const ::r
 }
 
 Any SAL_CALL UICommandDescription::getByName( const ::rtl::OUString& aName )
-throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "UICommandDescription::getByName" );
     Any a;
@@ -750,7 +739,6 @@ throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::la
 }
 
 Sequence< ::rtl::OUString > SAL_CALL UICommandDescription::getElementNames()
-throw (::com::sun::star::uno::RuntimeException)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "UICommandDescription::getElementNames" );
     ResetableGuard aLock( m_aLock );
@@ -769,7 +757,6 @@ throw (::com::sun::star::uno::RuntimeException)
 }
 
 sal_Bool SAL_CALL UICommandDescription::hasByName( const ::rtl::OUString& aName )
-throw (::com::sun::star::uno::RuntimeException)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "UICommandDescription::hasByName" );
     ResetableGuard aLock( m_aLock );
@@ -780,14 +767,12 @@ throw (::com::sun::star::uno::RuntimeException)
 
 // XElementAccess
 Type SAL_CALL UICommandDescription::getElementType()
-throw (::com::sun::star::uno::RuntimeException)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "UICommandDescription::getElementType" );
     return( ::getCppuType( (const Reference< XNameAccess >*)NULL ) );
 }
 
 sal_Bool SAL_CALL UICommandDescription::hasElements()
-throw (::com::sun::star::uno::RuntimeException)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "UICommandDescription::hasElements" );
     // generic UI commands are always available!

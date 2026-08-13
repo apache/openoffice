@@ -133,8 +133,7 @@ JobDispatch::~JobDispatch()
                 the list of initialization arguments
                 First parameter should be the frame reference we need.
 */
-void SAL_CALL JobDispatch::initialize( const css::uno::Sequence< css::uno::Any >& lArguments ) throw(css::uno::Exception       ,
-                                                                                                     css::uno::RuntimeException)
+void SAL_CALL JobDispatch::initialize( const css::uno::Sequence< css::uno::Any >& lArguments )
 {
     /* SAFE { */
     WriteGuard aWriteLock(m_aLock);
@@ -182,7 +181,7 @@ void SAL_CALL JobDispatch::initialize( const css::uno::Sequence< css::uno::Any >
 */
 css::uno::Reference< css::frame::XDispatch > SAL_CALL JobDispatch::queryDispatch( /*IN*/ const css::util::URL&  aURL             ,
                                                                                   /*IN*/ const ::rtl::OUString& /*sTargetFrameName*/ ,
-                                                                                  /*IN*/       sal_Int32        /*nSearchFlags*/     ) throw(css::uno::RuntimeException)
+                                                                                  /*IN*/       sal_Int32        /*nSearchFlags*/     )
 {
     css::uno::Reference< css::frame::XDispatch > xDispatch;
 
@@ -206,7 +205,7 @@ css::uno::Reference< css::frame::XDispatch > SAL_CALL JobDispatch::queryDispatch
             NULL references are not skipped. Every result
             match to one given descriptor item.
 */
-css::uno::Sequence< css::uno::Reference< css::frame::XDispatch > > SAL_CALL JobDispatch::queryDispatches( const css::uno::Sequence< css::frame::DispatchDescriptor >& lDescriptor ) throw(css::uno::RuntimeException)
+css::uno::Sequence< css::uno::Reference< css::frame::XDispatch > > SAL_CALL JobDispatch::queryDispatches( const css::uno::Sequence< css::frame::DispatchDescriptor >& lDescriptor )
 {
     // don't pack resulting list!
     sal_Int32 nCount = lDescriptor.getLength();
@@ -246,7 +245,7 @@ css::uno::Sequence< css::uno::Reference< css::frame::XDispatch > > SAL_CALL JobD
 */
 void SAL_CALL JobDispatch::dispatchWithNotification( /*IN*/ const css::util::URL&                                             aURL      ,
                                                      /*IN*/ const css::uno::Sequence< css::beans::PropertyValue >&            lArgs     ,
-                                                     /*IN*/ const css::uno::Reference< css::frame::XDispatchResultListener >& xListener ) throw(css::uno::RuntimeException)
+                                                     /*IN*/ const css::uno::Reference< css::frame::XDispatchResultListener >& xListener )
 {
     JobURL aAnalyzedURL(aURL.Complete);
     if (aAnalyzedURL.isValid())
@@ -464,7 +463,7 @@ void JobDispatch::impl_dispatchAlias( /*IN*/ const ::rtl::OUString&             
     @see    dispatchWithNotification()
 */
 void SAL_CALL JobDispatch::dispatch( /*IN*/ const css::util::URL&                                  aURL  ,
-                                     /*IN*/ const css::uno::Sequence< css::beans::PropertyValue >& lArgs ) throw(css::uno::RuntimeException)
+                                     /*IN*/ const css::uno::Sequence< css::beans::PropertyValue >& lArgs )
 {
     dispatchWithNotification(aURL, lArgs, css::uno::Reference< css::frame::XDispatchResultListener >());
 }
@@ -474,7 +473,7 @@ void SAL_CALL JobDispatch::dispatch( /*IN*/ const css::util::URL&               
     @short  not supported
 */
 void SAL_CALL JobDispatch::addStatusListener( /*IN*/ const css::uno::Reference< css::frame::XStatusListener >&,
-                                              /*IN*/ const css::util::URL&                                      ) throw(css::uno::RuntimeException)
+                                              /*IN*/ const css::util::URL&                                      )
 {
 }
 
@@ -483,7 +482,7 @@ void SAL_CALL JobDispatch::addStatusListener( /*IN*/ const css::uno::Reference< 
     @short  not supported
 */
 void SAL_CALL JobDispatch::removeStatusListener( /*IN*/ const css::uno::Reference< css::frame::XStatusListener >&,
-                                                 /*IN*/ const css::util::URL&                                          ) throw(css::uno::RuntimeException)
+                                                 /*IN*/ const css::util::URL&                                          )
 {
 }
 

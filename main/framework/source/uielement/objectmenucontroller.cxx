@@ -121,7 +121,7 @@ void ObjectMenuController::fillPopupMenu( const Sequence< com::sun::star::embed:
 }
 
 // XEventListener
-void SAL_CALL ObjectMenuController::disposing( const EventObject& ) throw ( RuntimeException )
+void SAL_CALL ObjectMenuController::disposing( const EventObject& )
 {
     Reference< css::awt::XMenuListener > xHolder(( OWeakObject *)this, UNO_QUERY );
 
@@ -137,7 +137,7 @@ void SAL_CALL ObjectMenuController::disposing( const EventObject& ) throw ( Runt
 }
 
 // XStatusListener
-void SAL_CALL ObjectMenuController::statusChanged( const FeatureStateEvent& Event ) throw ( RuntimeException )
+void SAL_CALL ObjectMenuController::statusChanged( const FeatureStateEvent& Event )
 {
 	Sequence < com::sun::star::embed::VerbDescriptor > aVerbCommandSeq;
     if ( Event.State >>= aVerbCommandSeq )

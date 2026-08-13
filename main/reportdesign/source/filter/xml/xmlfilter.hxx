@@ -102,7 +102,7 @@ private:
 	Reference<XReportDefinition>					m_xReportDefinition;
     ::boost::shared_ptr<rptui::OReportModel>        m_pReportModel;
 
-	sal_Bool							implImport( const Sequence< PropertyValue >& rDescriptor ) throw (RuntimeException);
+	sal_Bool							implImport( const Sequence< PropertyValue >& rDescriptor );
 
 	SvXMLImportContext* CreateStylesContext(const ::rtl::OUString& rLocalName,
 									 const Reference< XAttributeList>& xAttrList, sal_Bool bIsAutoStyle );
@@ -124,15 +124,15 @@ public:
 	ORptFilter( const Reference< XMultiServiceFactory >& _rxMSF,sal_uInt16 nImportFlags = IMPORT_ALL );
 
 	// XFilter
-    virtual sal_Bool SAL_CALL filter( const Sequence< PropertyValue >& rDescriptor ) throw(RuntimeException);
+    virtual sal_Bool SAL_CALL filter( const Sequence< PropertyValue >& rDescriptor );
 
 	// ::com::sun::star::lang::XServiceInfo
-	virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw (::com::sun::star::uno::RuntimeException);
-	virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw(::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw(::com::sun::star::uno::RuntimeException);
+	virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+	virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
-	static ::com::sun::star::uno::Sequence< ::rtl::OUString > getSupportedServiceNames_Static(void) throw( ::com::sun::star::uno::RuntimeException );
-	static ::rtl::OUString getImplementationName_Static(void) throw( ::com::sun::star::uno::RuntimeException );
+	static ::com::sun::star::uno::Sequence< ::rtl::OUString > getSupportedServiceNames_Static(void);
+	static ::rtl::OUString getImplementationName_Static(void);
 	static ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL
 		create(::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > const & xContext);
 
@@ -145,10 +145,8 @@ public:
     ::boost::shared_ptr<rptui::OReportModel> getSdrModel() const { return m_pReportModel; }
     void FinishStyles();
 
-    virtual void SAL_CALL startDocument(void)
-		throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
-    virtual void SAL_CALL endDocument(void)
-		throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL startDocument(void);
+    virtual void SAL_CALL endDocument(void);
 
 	const SvXMLTokenMap& GetDocElemTokenMap() const;
 	const SvXMLTokenMap& GetReportElemTokenMap() const;
@@ -192,8 +190,8 @@ public:
 class ORptImportHelper
 {
 public:
-	static ::rtl::OUString getImplementationName_Static(  ) throw (::com::sun::star::uno::RuntimeException);
-	static Sequence< ::rtl::OUString > getSupportedServiceNames_Static(  ) throw(::com::sun::star::uno::RuntimeException);
+	static ::rtl::OUString getImplementationName_Static(  );
+	static Sequence< ::rtl::OUString > getSupportedServiceNames_Static(  );
 	static ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL
 		create(::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > const & xContext);
 };
@@ -205,8 +203,8 @@ public:
 class ORptContentImportHelper
 {
 public:
-	static ::rtl::OUString getImplementationName_Static(  ) throw (::com::sun::star::uno::RuntimeException);
-	static Sequence< ::rtl::OUString > getSupportedServiceNames_Static(  ) throw(::com::sun::star::uno::RuntimeException);
+	static ::rtl::OUString getImplementationName_Static(  );
+	static Sequence< ::rtl::OUString > getSupportedServiceNames_Static(  );
 	static ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL
 		create(::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > const & xContext);
 };
@@ -218,8 +216,8 @@ public:
 class ORptStylesImportHelper
 {
 public:
-	static ::rtl::OUString getImplementationName_Static(  ) throw (::com::sun::star::uno::RuntimeException);
-	static Sequence< ::rtl::OUString > getSupportedServiceNames_Static(  ) throw(::com::sun::star::uno::RuntimeException);
+	static ::rtl::OUString getImplementationName_Static(  );
+	static Sequence< ::rtl::OUString > getSupportedServiceNames_Static(  );
 	static ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL
 		create(::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > const & xContext);
 };
@@ -231,8 +229,8 @@ public:
 class ORptMetaImportHelper
 {
 public:
-	static ::rtl::OUString getImplementationName_Static(  ) throw (::com::sun::star::uno::RuntimeException);
-	static Sequence< ::rtl::OUString > getSupportedServiceNames_Static(  ) throw(::com::sun::star::uno::RuntimeException);
+	static ::rtl::OUString getImplementationName_Static(  );
+	static Sequence< ::rtl::OUString > getSupportedServiceNames_Static(  );
 	static ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL
 		create(::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > const & xContext);
 };

@@ -47,15 +47,15 @@ private:
 
 protected:
 	// XServiceInfo
-    virtual OUString SAL_CALL getImplementationName() throw(RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( const OUString& ServiceName ) throw(RuntimeException);
-    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames()  throw(RuntimeException);
+    virtual OUString SAL_CALL getImplementationName();
+    virtual sal_Bool SAL_CALL supportsService( const OUString& ServiceName );
+    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames();
 
     // XIniteractionHandler
-    virtual void SAL_CALL handle( const Reference< task::XInteractionRequest >& ) throw(RuntimeException);
+    virtual void SAL_CALL handle( const Reference< task::XInteractionRequest >& );
 
     // XIniteractionHandler2
-    virtual sal_Bool SAL_CALL handleInteractionRequest( const Reference< task::XInteractionRequest >& ) throw(RuntimeException);
+    virtual sal_Bool SAL_CALL handleInteractionRequest( const Reference< task::XInteractionRequest >& );
 public:
 
 				PDFInteractionHandler( const Reference< XMultiServiceFactory >& rxMSF );
@@ -64,23 +64,19 @@ public:
 
 // -----------------------------------------------------------------------------
 
-OUString PDFInteractionHandler_getImplementationName ()
-	throw ( RuntimeException );
+OUString PDFInteractionHandler_getImplementationName ();
 
 // -----------------------------------------------------------------------------
 
-sal_Bool SAL_CALL PDFInteractionHandler_supportsService( const OUString& ServiceName )
-	throw ( RuntimeException );
+sal_Bool SAL_CALL PDFInteractionHandler_supportsService( const OUString& ServiceName );
 
 // -----------------------------------------------------------------------------
 
-Sequence< OUString > SAL_CALL PDFInteractionHandler_getSupportedServiceNames(  )
-	throw ( RuntimeException );
+Sequence< OUString > SAL_CALL PDFInteractionHandler_getSupportedServiceNames(  );
 
 // -----------------------------------------------------------------------------
 
 Reference< XInterface >
-SAL_CALL PDFInteractionHandler_createInstance( const Reference< XMultiServiceFactory > & rSMgr)
-	throw ( Exception );
+SAL_CALL PDFInteractionHandler_createInstance( const Reference< XMultiServiceFactory > & rSMgr);
 
 #endif // PDFINTERACT_HXX

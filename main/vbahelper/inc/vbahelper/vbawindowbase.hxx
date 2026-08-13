@@ -38,38 +38,36 @@ public:
         const css::uno::Reference< ov::XHelperInterface >& xParent,
         const css::uno::Reference< css::uno::XComponentContext >& xContext,
         const css::uno::Reference< css::frame::XModel >& xModel,
-        const css::uno::Reference< css::frame::XController >& xController )
-        throw (css::uno::RuntimeException);
+        const css::uno::Reference< css::frame::XController >& xController );
     VbaWindowBase(
         css::uno::Sequence< css::uno::Any > const& aArgs,
-        css::uno::Reference< css::uno::XComponentContext > const& xContext )
-        throw (css::uno::RuntimeException);
+        css::uno::Reference< css::uno::XComponentContext > const& xContext );
 
 	// XWindowBase
-    virtual sal_Int32 SAL_CALL getHeight() throw (css::uno::RuntimeException) ;
-    virtual void SAL_CALL setHeight( sal_Int32 _height ) throw (css::uno::RuntimeException) ;
-    virtual sal_Int32 SAL_CALL getLeft() throw (css::uno::RuntimeException) ;
-    virtual void SAL_CALL setLeft( sal_Int32 _left ) throw (css::uno::RuntimeException) ;
-    virtual sal_Int32 SAL_CALL getTop() throw (css::uno::RuntimeException) ;
-    virtual void SAL_CALL setTop( sal_Int32 _top ) throw (css::uno::RuntimeException) ;
-    virtual sal_Bool SAL_CALL getVisible() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setVisible( sal_Bool _visible ) throw (css::uno::RuntimeException);
-    virtual sal_Int32 SAL_CALL getWidth() throw (css::uno::RuntimeException) ;
-    virtual void SAL_CALL setWidth( sal_Int32 _width ) throw (css::uno::RuntimeException) ;
+    virtual sal_Int32 SAL_CALL getHeight() ;
+    virtual void SAL_CALL setHeight( sal_Int32 _height ) ;
+    virtual sal_Int32 SAL_CALL getLeft() ;
+    virtual void SAL_CALL setLeft( sal_Int32 _left ) ;
+    virtual sal_Int32 SAL_CALL getTop() ;
+    virtual void SAL_CALL setTop( sal_Int32 _top ) ;
+    virtual sal_Bool SAL_CALL getVisible();
+    virtual void SAL_CALL setVisible( sal_Bool _visible );
+    virtual sal_Int32 SAL_CALL getWidth() ;
+    virtual void SAL_CALL setWidth( sal_Int32 _width ) ;
 
 	// XHelperInterface
 	virtual rtl::OUString& getServiceImplName();
 	virtual css::uno::Sequence<rtl::OUString> getServiceNames();
 
 protected:
-    css::uno::Reference< css::frame::XController > getController() throw (css::uno::RuntimeException);
-    css::uno::Reference< css::awt::XWindow > getWindow() throw (css::uno::RuntimeException);
-    css::uno::Reference< css::awt::XWindow2 > getWindow2() throw (css::uno::RuntimeException);
+    css::uno::Reference< css::frame::XController > getController();
+    css::uno::Reference< css::awt::XWindow > getWindow();
+    css::uno::Reference< css::awt::XWindow2 > getWindow2();
 
 	css::uno::Reference< css::frame::XModel > m_xModel;
 
 private:
-    void construct( const css::uno::Reference< css::frame::XController >& xController ) throw (css::uno::RuntimeException);
+    void construct( const css::uno::Reference< css::frame::XController >& xController );
 
 	css::uno::WeakReference< css::frame::XController > m_xController;
 	css::uno::WeakReference< css::awt::XWindow > m_xWindow;

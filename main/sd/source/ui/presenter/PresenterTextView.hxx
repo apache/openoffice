@@ -57,8 +57,7 @@ public:
 
     // XInitialization
 
-    virtual void SAL_CALL initialize (const css::uno::Sequence<css::uno::Any>& rArguments)
-        throw (css::uno::Exception, css::uno::RuntimeException);
+    virtual void SAL_CALL initialize (const css::uno::Sequence<css::uno::Any>& rArguments);
 
 
 protected:
@@ -77,7 +76,7 @@ private:
     /** This method throws a DisposedException when the object has already been
         disposed.
     */
-    void ThrowIfDisposed (void) throw (css::lang::DisposedException);
+    void ThrowIfDisposed (void);
 };
 
 } } // end of namespace ::sd::presenter

@@ -291,7 +291,7 @@ public:
 				const std::string &in_module,
 				const std::string &in_lang,
 				bool in_bExtensionMode);
-	bool compile( void ) throw (HelpProcessingException);
+	bool compile( void );
 	void addEntryToJarFile(const std::string &prefix,
 		const std::string &entryName, const std::string &bytesToAdd);
 	void addEntryToJarFile(const std::string &prefix,

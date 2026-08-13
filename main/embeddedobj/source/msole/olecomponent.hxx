@@ -161,29 +161,28 @@ public:
 	void OnClose_Impl();
 
 	// XCloseable
-    virtual void SAL_CALL close( sal_Bool DeliverOwnership ) throw (::com::sun::star::util::CloseVetoException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL addCloseListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloseListener >& Listener ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removeCloseListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloseListener >& Listener ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL close( sal_Bool DeliverOwnership );
+    virtual void SAL_CALL addCloseListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloseListener >& Listener );
+    virtual void SAL_CALL removeCloseListener( const ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloseListener >& Listener );
 
 	// XTransferable
-    virtual ::com::sun::star::uno::Any SAL_CALL getTransferData( const ::com::sun::star::datatransfer::DataFlavor& aFlavor ) throw (::com::sun::star::datatransfer::UnsupportedFlavorException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::datatransfer::DataFlavor > SAL_CALL getTransferDataFlavors(  ) throw (::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL isDataFlavorSupported( const ::com::sun::star::datatransfer::DataFlavor& aFlavor ) throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Any SAL_CALL getTransferData( const ::com::sun::star::datatransfer::DataFlavor& aFlavor );
+    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::datatransfer::DataFlavor > SAL_CALL getTransferDataFlavors(  );
+    virtual sal_Bool SAL_CALL isDataFlavorSupported( const ::com::sun::star::datatransfer::DataFlavor& aFlavor );
 
     // XComponent
-    virtual void SAL_CALL dispose() throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL addEventListener(const com::sun::star::uno::Reference < com::sun::star::lang::XEventListener >& aListener) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removeEventListener(const com::sun::star::uno::Reference < com::sun::star::lang::XEventListener >& aListener) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL dispose();
+    virtual void SAL_CALL addEventListener(const com::sun::star::uno::Reference < com::sun::star::lang::XEventListener >& aListener);
+    virtual void SAL_CALL removeEventListener(const com::sun::star::uno::Reference < com::sun::star::lang::XEventListener >& aListener);
 
 	// XUnoTunnel
-    virtual sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& aIdentifier ) throw(::com::sun::star::uno::RuntimeException) ;
+    virtual sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& aIdentifier ) ;
 
     // XModifiable
-    virtual sal_Bool SAL_CALL isModified() throw (::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL setModified( sal_Bool bModified )
-        throw (::com::sun::star::beans::PropertyVetoException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL addModifyListener( const com::sun::star::uno::Reference < com::sun::star::util::XModifyListener >& xListener ) throw(::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL removeModifyListener( const com::sun::star::uno::Reference < com::sun::star::util::XModifyListener >& xListener) throw(::com::sun::star::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL isModified();
+	virtual void SAL_CALL setModified( sal_Bool bModified );
+    virtual void SAL_CALL addModifyListener( const com::sun::star::uno::Reference < com::sun::star::util::XModifyListener >& xListener );
+    virtual void SAL_CALL removeModifyListener( const com::sun::star::uno::Reference < com::sun::star::util::XModifyListener >& xListener);
 };
 
 #endif

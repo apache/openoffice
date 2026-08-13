@@ -53,36 +53,30 @@ public:
     ~TransliterationImpl();
 
     // Methods
-    virtual rtl::OUString SAL_CALL getName(  ) throw(com::sun::star::uno::RuntimeException) ;
-    virtual sal_Int16 SAL_CALL getType(  ) throw(com::sun::star::uno::RuntimeException) ;
+    virtual rtl::OUString SAL_CALL getName(  ) ;
+    virtual sal_Int16 SAL_CALL getType(  ) ;
 
-    virtual void SAL_CALL loadModule( TransliterationModules modName, const com::sun::star::lang::Locale& rLocale )
-        throw(com::sun::star::uno::RuntimeException) ;
+    virtual void SAL_CALL loadModule( TransliterationModules modName, const com::sun::star::lang::Locale& rLocale ) ;
     virtual void SAL_CALL loadModuleNew( const com::sun::star::uno::Sequence< TransliterationModulesNew >& modName,
-        const com::sun::star::lang::Locale& rLocale ) throw(com::sun::star::uno::RuntimeException) ;
+        const com::sun::star::lang::Locale& rLocale ) ;
     virtual void SAL_CALL loadModuleByImplName( const rtl::OUString& implName,
-        const com::sun::star::lang::Locale& rLocale ) throw(com::sun::star::uno::RuntimeException);
+        const com::sun::star::lang::Locale& rLocale );
     virtual void SAL_CALL loadModulesByImplNames(const com::sun::star::uno::Sequence< rtl::OUString >& modNamelist,
-        const com::sun::star::lang::Locale& rLocale) throw(com::sun::star::uno::RuntimeException);
+        const com::sun::star::lang::Locale& rLocale);
 
     virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getAvailableModules(
-        const com::sun::star::lang::Locale& rLocale, sal_Int16 sType )
-        throw(com::sun::star::uno::RuntimeException);
+        const com::sun::star::lang::Locale& rLocale, sal_Int16 sType );
 
     virtual rtl::OUString SAL_CALL transliterate( const rtl::OUString& inStr, sal_Int32 startPos, sal_Int32 nCount,
-        com::sun::star::uno::Sequence< sal_Int32 >& offset  ) throw(com::sun::star::uno::RuntimeException) ;
+        com::sun::star::uno::Sequence< sal_Int32 >& offset  ) ;
 
     virtual rtl::OUString SAL_CALL folding( const rtl::OUString& inStr, sal_Int32 startPos, sal_Int32 nCount,
-        com::sun::star::uno::Sequence< sal_Int32 >& offset ) throw(com::sun::star::uno::RuntimeException);
+        com::sun::star::uno::Sequence< sal_Int32 >& offset );
 
     // Methods in XExtendedTransliteration
-    virtual rtl::OUString SAL_CALL transliterateString2String( const rtl::OUString& inStr, sal_Int32 startPos, sal_Int32 nCount )
-        throw(com::sun::star::uno::RuntimeException) ;
-    virtual rtl::OUString SAL_CALL transliterateChar2String( sal_Unicode inChar )
-        throw(com::sun::star::uno::RuntimeException) ;
-    virtual sal_Unicode SAL_CALL transliterateChar2Char( sal_Unicode inChar )
-        throw(com::sun::star::i18n::MultipleCharsOutputException,
-                com::sun::star::uno::RuntimeException) ;
+    virtual rtl::OUString SAL_CALL transliterateString2String( const rtl::OUString& inStr, sal_Int32 startPos, sal_Int32 nCount ) ;
+    virtual rtl::OUString SAL_CALL transliterateChar2String( sal_Unicode inChar ) ;
+    virtual sal_Unicode SAL_CALL transliterateChar2Char( sal_Unicode inChar ) ;
 
 /*
     virtual void SAL_CALL createCascadeInstance( const com::sun::star::uno::Sequence< rtl::OUString >& modNamelist,
@@ -94,23 +88,19 @@ public:
         throw(com::sun::star::uno::RuntimeException);
 */
     virtual sal_Bool SAL_CALL equals( const rtl::OUString& str1, sal_Int32 pos1, sal_Int32 nCount1,
-        sal_Int32& nMatch1, const rtl::OUString& str2, sal_Int32 pos2, sal_Int32 nCount2, sal_Int32& nMatch2 )
-        throw(com::sun::star::uno::RuntimeException);
+        sal_Int32& nMatch1, const rtl::OUString& str2, sal_Int32 pos2, sal_Int32 nCount2, sal_Int32& nMatch2 );
     virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL transliterateRange( const rtl::OUString& str1,
-        const rtl::OUString& str2 ) throw(com::sun::star::uno::RuntimeException) ;
+        const rtl::OUString& str2 ) ;
 
     virtual sal_Int32 SAL_CALL compareSubstring( const rtl::OUString& s1, sal_Int32 off1, sal_Int32 len1,
-        const rtl::OUString& s2, sal_Int32 off2, sal_Int32 len2) throw(com::sun::star::uno::RuntimeException);
+        const rtl::OUString& s2, sal_Int32 off2, sal_Int32 len2);
 
-    virtual sal_Int32 SAL_CALL compareString( const rtl::OUString& s1, const rtl::OUString& s2)
-        throw(com::sun::star::uno::RuntimeException);
+    virtual sal_Int32 SAL_CALL compareString( const rtl::OUString& s1, const rtl::OUString& s2);
 
     //XServiceInfo
-    virtual rtl::OUString SAL_CALL getImplementationName(void) throw( com::sun::star::uno::RuntimeException );
-    virtual sal_Bool SAL_CALL supportsService(const rtl::OUString& ServiceName)
-        throw( com::sun::star::uno::RuntimeException );
-    virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames(void)
-        throw( com::sun::star::uno::RuntimeException );
+    virtual rtl::OUString SAL_CALL getImplementationName(void);
+    virtual sal_Bool SAL_CALL supportsService(const rtl::OUString& ServiceName);
+    virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames(void);
 
 private:
 #define maxCascade 27
@@ -122,19 +112,16 @@ private:
     com::sun::star::uno::Reference< com::sun::star::i18n::XExtendedTransliteration > caseignore;
 
     virtual sal_Bool SAL_CALL loadModuleByName( const rtl::OUString& implName,
-        com::sun::star::uno::Reference<com::sun::star::i18n::XExtendedTransliteration> & body, const com::sun::star::lang::Locale& rLocale)
-        throw(com::sun::star::uno::RuntimeException);
+        com::sun::star::uno::Reference<com::sun::star::i18n::XExtendedTransliteration> & body, const com::sun::star::lang::Locale& rLocale);
 
     void clear();
 
     void loadBody( ::rtl::OUString &implName,
-        ::com::sun::star::uno::Reference< ::com::sun::star::i18n::XExtendedTransliteration >& body )
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::uno::Reference< ::com::sun::star::i18n::XExtendedTransliteration >& body );
 
     com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getRange(
         const com::sun::star::uno::Sequence< rtl::OUString > &inStrs,
-        sal_Int32 length, const sal_Int16 _nCascade)
-        throw(com::sun::star::uno::RuntimeException);
+        sal_Int32 length, const sal_Int16 _nCascade);
 };
 
 } } } }

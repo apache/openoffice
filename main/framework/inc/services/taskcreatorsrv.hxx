@@ -128,13 +128,9 @@ class TaskCreatorService : public  css::lang::XTypeProvider
         DECLARE_XSERVICEINFO
 
         // XSingleServiceFactory
-        virtual css::uno::Reference< css::uno::XInterface > SAL_CALL createInstance()
-            throw(css::uno::Exception       ,
-                  css::uno::RuntimeException);
+        virtual css::uno::Reference< css::uno::XInterface > SAL_CALL createInstance();
 
-        virtual css::uno::Reference< css::uno::XInterface > SAL_CALL createInstanceWithArguments(const css::uno::Sequence< css::uno::Any >& lArguments)
-            throw(css::uno::Exception       ,
-                  css::uno::RuntimeException);
+        virtual css::uno::Reference< css::uno::XInterface > SAL_CALL createInstanceWithArguments(const css::uno::Sequence< css::uno::Any >& lArguments);
     //___________________________________________
     // helper
 

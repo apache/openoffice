@@ -115,7 +115,6 @@ void SAL_CALL ToolBarModule::disposing (void)
 
 void SAL_CALL ToolBarModule::notifyConfigurationChange (
     const ConfigurationChangeEvent& rEvent)
-    throw (RuntimeException)
 {
     if (mxConfigurationController.is())
     {
@@ -213,7 +212,6 @@ void ToolBarModule::HandleUpdateEnd (void)
 
 
 void SAL_CALL ToolBarModule::disposing (const lang::EventObject& rEvent)
-    throw (RuntimeException)
 {
     if (mxConfigurationController.is()
         && rEvent.Source == mxConfigurationController)

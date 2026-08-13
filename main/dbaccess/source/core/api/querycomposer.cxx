@@ -142,13 +142,13 @@ void SAL_CALL OQueryComposer::disposing()
 }
 // -------------------------------------------------------------------------
 // ::com::sun::star::lang::XTypeProvider
-Sequence< Type > SAL_CALL OQueryComposer::getTypes() throw (RuntimeException)
+Sequence< Type > SAL_CALL OQueryComposer::getTypes()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OQueryComposer::getTypes" );
 	return ::comphelper::concatSequences(OSubComponent::getTypes(),OQueryComposer_BASE::getTypes());
 }
 // -------------------------------------------------------------------------
-Sequence< sal_Int8 > SAL_CALL OQueryComposer::getImplementationId() throw (RuntimeException)
+Sequence< sal_Int8 > SAL_CALL OQueryComposer::getImplementationId()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OQueryComposer::getImplementationId" );
 	static OImplementationId * pId = 0;
@@ -165,7 +165,7 @@ Sequence< sal_Int8 > SAL_CALL OQueryComposer::getImplementationId() throw (Runti
 }
 // -------------------------------------------------------------------------
 // com::sun::star::lang::XUnoTunnel
-sal_Int64 SAL_CALL OQueryComposer::getSomething( const Sequence< sal_Int8 >& rId ) throw(RuntimeException)
+sal_Int64 SAL_CALL OQueryComposer::getSomething( const Sequence< sal_Int8 >& rId )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OQueryComposer::getSomething" );
 	if (rId.getLength() == 16 && 0 == rtl_compareMemory(getImplementationId().getConstArray(),  rId.getConstArray(), 16 ) )
@@ -174,7 +174,7 @@ sal_Int64 SAL_CALL OQueryComposer::getSomething( const Sequence< sal_Int8 >& rId
 	return 0;
 }
 // -------------------------------------------------------------------------
-Any SAL_CALL OQueryComposer::queryInterface( const Type & rType ) throw(RuntimeException)
+Any SAL_CALL OQueryComposer::queryInterface( const Type & rType )
 {
     //RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OQueryComposer::queryInterface" );
 	Any aRet = OSubComponent::queryInterface(rType);
@@ -185,19 +185,19 @@ Any SAL_CALL OQueryComposer::queryInterface( const Type & rType ) throw(RuntimeE
 // -------------------------------------------------------------------------
 // XServiceInfo
 //------------------------------------------------------------------------------
-rtl::OUString OQueryComposer::getImplementationName(  ) throw(RuntimeException)
+rtl::OUString OQueryComposer::getImplementationName(  )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OQueryComposer::getImplementationName" );
 	return rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.sdb.dbaccess.OQueryComposer"));
 }
 //------------------------------------------------------------------------------
-sal_Bool OQueryComposer::supportsService( const ::rtl::OUString& _rServiceName ) throw (RuntimeException)
+sal_Bool OQueryComposer::supportsService( const ::rtl::OUString& _rServiceName )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OQueryComposer::supportsService" );
 	return ::comphelper::findValue(getSupportedServiceNames(), _rServiceName, sal_True).getLength() != 0;
 }
 //------------------------------------------------------------------------------
-Sequence< ::rtl::OUString > OQueryComposer::getSupportedServiceNames(  ) throw (RuntimeException)
+Sequence< ::rtl::OUString > OQueryComposer::getSupportedServiceNames(  )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OQueryComposer::getSupportedServiceNames" );
 	Sequence< rtl::OUString > aSNS( 1 );
@@ -206,7 +206,7 @@ Sequence< ::rtl::OUString > OQueryComposer::getSupportedServiceNames(  ) throw (
 }
 // -------------------------------------------------------------------------
 // XSQLQueryComposer
-::rtl::OUString SAL_CALL OQueryComposer::getQuery(  ) throw(RuntimeException)
+::rtl::OUString SAL_CALL OQueryComposer::getQuery(  )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OQueryComposer::getQuery" );
 	::connectivity::checkDisposed(OSubComponent::rBHelper.bDisposed);
@@ -219,7 +219,7 @@ Sequence< ::rtl::OUString > OQueryComposer::getSupportedServiceNames(  ) throw (
 	return sQuery;
 }
 // -------------------------------------------------------------------------
-void SAL_CALL OQueryComposer::setQuery( const ::rtl::OUString& command ) throw(SQLException, RuntimeException)
+void SAL_CALL OQueryComposer::setQuery( const ::rtl::OUString& command )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OQueryComposer::setQuery" );
 	::connectivity::checkDisposed(OSubComponent::rBHelper.bDisposed);
@@ -231,7 +231,7 @@ void SAL_CALL OQueryComposer::setQuery( const ::rtl::OUString& command ) throw(S
 	m_sOrgOrder = m_xComposer->getOrder();
 }
 // -------------------------------------------------------------------------
-::rtl::OUString SAL_CALL OQueryComposer::getComposedQuery(  ) throw(RuntimeException)
+::rtl::OUString SAL_CALL OQueryComposer::getComposedQuery(  )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OQueryComposer::getComposedQuery" );
 	::connectivity::checkDisposed(OSubComponent::rBHelper.bDisposed);
@@ -241,7 +241,7 @@ void SAL_CALL OQueryComposer::setQuery( const ::rtl::OUString& command ) throw(S
 	return m_xComposer->getQuery();
 }
 // -------------------------------------------------------------------------
-::rtl::OUString SAL_CALL OQueryComposer::getFilter(  ) throw(RuntimeException)
+::rtl::OUString SAL_CALL OQueryComposer::getFilter(  )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OQueryComposer::getFilter" );
 	::connectivity::checkDisposed(OSubComponent::rBHelper.bDisposed);
@@ -251,7 +251,7 @@ void SAL_CALL OQueryComposer::setQuery( const ::rtl::OUString& command ) throw(S
 	return aFilterCreator.getComposedAndClear();
 }
 // -------------------------------------------------------------------------
-Sequence< Sequence< PropertyValue > > SAL_CALL OQueryComposer::getStructuredFilter(  ) throw(RuntimeException)
+Sequence< Sequence< PropertyValue > > SAL_CALL OQueryComposer::getStructuredFilter(  )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OQueryComposer::getStructuredFilter" );
 	::connectivity::checkDisposed(OSubComponent::rBHelper.bDisposed);
@@ -260,7 +260,7 @@ Sequence< Sequence< PropertyValue > > SAL_CALL OQueryComposer::getStructuredFilt
 	return m_xComposer->getStructuredFilter();
 }
 // -------------------------------------------------------------------------
-::rtl::OUString SAL_CALL OQueryComposer::getOrder(  ) throw(RuntimeException)
+::rtl::OUString SAL_CALL OQueryComposer::getOrder(  )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OQueryComposer::getOrder" );
 	::connectivity::checkDisposed(OSubComponent::rBHelper.bDisposed);
@@ -271,7 +271,7 @@ Sequence< Sequence< PropertyValue > > SAL_CALL OQueryComposer::getStructuredFilt
 	return aOrderCreator.getComposedAndClear();
 }
 // -----------------------------------------------------------------------------
-void SAL_CALL OQueryComposer::appendFilterByColumn( const Reference< XPropertySet >& column ) throw(SQLException, RuntimeException)
+void SAL_CALL OQueryComposer::appendFilterByColumn( const Reference< XPropertySet >& column )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OQueryComposer::appendFilterByColumn" );
 	::connectivity::checkDisposed(OSubComponent::rBHelper.bDisposed);
@@ -304,7 +304,7 @@ void SAL_CALL OQueryComposer::appendFilterByColumn( const Reference< XPropertySe
 	setFilter( aFilterCreator.getComposedAndClear() );
 }
 // -------------------------------------------------------------------------
-void SAL_CALL OQueryComposer::appendOrderByColumn( const Reference< XPropertySet >& column, sal_Bool ascending ) throw(SQLException, RuntimeException)
+void SAL_CALL OQueryComposer::appendOrderByColumn( const Reference< XPropertySet >& column, sal_Bool ascending )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OQueryComposer::appendOrderByColumn" );
 	::connectivity::checkDisposed(OSubComponent::rBHelper.bDisposed);
@@ -321,7 +321,7 @@ void SAL_CALL OQueryComposer::appendOrderByColumn( const Reference< XPropertySet
 	setOrder(aOrderCreator.getComposedAndClear());
 }
 // -------------------------------------------------------------------------
-void SAL_CALL OQueryComposer::setFilter( const ::rtl::OUString& filter ) throw(SQLException, RuntimeException)
+void SAL_CALL OQueryComposer::setFilter( const ::rtl::OUString& filter )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OQueryComposer::setFilter" );
 	::connectivity::checkDisposed(OSubComponent::rBHelper.bDisposed);
@@ -338,7 +338,7 @@ void SAL_CALL OQueryComposer::setFilter( const ::rtl::OUString& filter ) throw(S
 	m_xComposer->setFilter( aFilterCreator.getComposedAndClear() );
 }
 // -------------------------------------------------------------------------
-void SAL_CALL OQueryComposer::setOrder( const ::rtl::OUString& order ) throw(SQLException, RuntimeException)
+void SAL_CALL OQueryComposer::setOrder( const ::rtl::OUString& order )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OQueryComposer::setOrder" );
 	::connectivity::checkDisposed(OSubComponent::rBHelper.bDisposed);
@@ -357,7 +357,7 @@ void SAL_CALL OQueryComposer::setOrder( const ::rtl::OUString& order ) throw(SQL
 }
 // -------------------------------------------------------------------------
 // XTablesSupplier
-Reference< XNameAccess > SAL_CALL OQueryComposer::getTables(  ) throw(RuntimeException)
+Reference< XNameAccess > SAL_CALL OQueryComposer::getTables(  )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OQueryComposer::getTables" );
 	::connectivity::checkDisposed(OSubComponent::rBHelper.bDisposed);
@@ -367,7 +367,7 @@ Reference< XNameAccess > SAL_CALL OQueryComposer::getTables(  ) throw(RuntimeExc
 }
 // -------------------------------------------------------------------------
 // XColumnsSupplier
-Reference< XNameAccess > SAL_CALL OQueryComposer::getColumns(  ) throw(RuntimeException)
+Reference< XNameAccess > SAL_CALL OQueryComposer::getColumns(  )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OQueryComposer::getColumns" );
 	::connectivity::checkDisposed(OSubComponent::rBHelper.bDisposed);
@@ -376,7 +376,7 @@ Reference< XNameAccess > SAL_CALL OQueryComposer::getColumns(  ) throw(RuntimeEx
 	return Reference<XColumnsSupplier>(m_xComposer,UNO_QUERY)->getColumns();
 }
 // -------------------------------------------------------------------------
-Reference< XIndexAccess > SAL_CALL OQueryComposer::getParameters(  ) throw(RuntimeException)
+Reference< XIndexAccess > SAL_CALL OQueryComposer::getParameters(  )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OQueryComposer::getParameters" );
 	::connectivity::checkDisposed(OSubComponent::rBHelper.bDisposed);

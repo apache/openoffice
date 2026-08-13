@@ -60,10 +60,7 @@ public:
 	// XInitialization
     virtual void SAL_CALL initialize(
 		const ::com::sun::star::uno::Sequence<
-			::com::sun::star::uno::Any> & rArguments )
-		throw(
-			::com::sun::star::uno::Exception,
-			::com::sun::star::uno::RuntimeException);
+			::com::sun::star::uno::Any> & rArguments );
 
 protected:
 
@@ -88,7 +85,6 @@ protected:
 ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL
 	XMLAutoTextEventImport_createInstance(
 		const ::com::sun::star::uno::Reference<
-			::com::sun::star::lang::XMultiServiceFactory > & )
-	throw( ::com::sun::star::uno::Exception );
+			::com::sun::star::lang::XMultiServiceFactory > & );
 
 #endif

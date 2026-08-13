@@ -158,21 +158,14 @@ public:
 
 public:
 	// The SAX-Parser-Interface
-    virtual void SAL_CALL parseStream(	const InputSource& structSource)
-		throw (	SAXException,
-				IOException,
-				RuntimeException);
-    virtual void SAL_CALL setDocumentHandler(const Reference< XDocumentHandler > & xHandler)
-		throw (RuntimeException);
+    virtual void SAL_CALL parseStream(	const InputSource& structSource);
+    virtual void SAL_CALL setDocumentHandler(const Reference< XDocumentHandler > & xHandler);
 
-    virtual void SAL_CALL setErrorHandler(const Reference< XErrorHandler > & xHandler)
-		throw (RuntimeException);
-    virtual void SAL_CALL setDTDHandler(const Reference < XDTDHandler > & xHandler)
-		throw (RuntimeException);
-    virtual void SAL_CALL setEntityResolver(const Reference<  XEntityResolver >& xResolver)
-		throw (RuntimeException);
+    virtual void SAL_CALL setErrorHandler(const Reference< XErrorHandler > & xHandler);
+    virtual void SAL_CALL setDTDHandler(const Reference < XDTDHandler > & xHandler);
+    virtual void SAL_CALL setEntityResolver(const Reference<  XEntityResolver >& xResolver);
 
-	virtual void SAL_CALL setLocale( const Locale &locale ) 					throw (RuntimeException);
+	virtual void SAL_CALL setLocale( const Locale &locale );
 
 public: // XServiceInfo
     OUString                     SAL_CALL getImplementationName() throw ();
@@ -189,7 +182,7 @@ private:
 // the extern interface
 //---------------------------------------
 Reference< XInterface > SAL_CALL SaxExpatParser_CreateInstance(
-	Reference< XComponentContext > const & ) throw(Exception)
+	Reference< XComponentContext > const & )
 {
 	SaxExpatParser *p = new SaxExpatParser;
 
@@ -452,9 +445,6 @@ SaxExpatParser::~SaxExpatParser()
 *
 ****************/
 void SaxExpatParser::parseStream(	const InputSource& structSource)
-	throw (SAXException,
-		   IOException,
-		   RuntimeException)
 {
 	// Only one text at one time
 	MutexGuard guard( m_pImpl->aMutex );
@@ -560,7 +550,6 @@ void SaxExpatParser::parseStream(	const InputSource& structSource)
 }
 
 void SaxExpatParser::setDocumentHandler(const Reference< XDocumentHandler > & xHandler)
-	throw (RuntimeException)
 {
 	m_pImpl->rDocumentHandler = xHandler;
 	m_pImpl->rExtendedDocumentHandler =
@@ -568,25 +557,22 @@ void SaxExpatParser::setDocumentHandler(const Reference< XDocumentHandler > & xH
 }
 
 void SaxExpatParser::setErrorHandler(const Reference< XErrorHandler > & xHandler)
-	throw (RuntimeException)
 {
 	m_pImpl->rErrorHandler = xHandler;
 }
 
 void SaxExpatParser::setDTDHandler(const Reference< XDTDHandler > & xHandler)
-	throw (RuntimeException)
 {
 	m_pImpl->rDTDHandler = xHandler;
 }
 
 void SaxExpatParser::setEntityResolver(const Reference < XEntityResolver > & xResolver)
-	throw (RuntimeException)
 {
 	m_pImpl->rEntityResolver = xResolver;
 }
 
 
-void SaxExpatParser::setLocale( const Locale & locale )	throw (RuntimeException)
+void SaxExpatParser::setLocale( const Locale & locale )
 {
 	m_pImpl->locale = locale;
 }

@@ -43,31 +43,31 @@ class ScVbaComment : public ScVbaComment_BASE
 	css::uno::Reference< css::table::XCellRange > mxRange;
 
 private:
-	css::uno::Reference< css::sheet::XSheetAnnotation > SAL_CALL getAnnotation() throw (css::uno::RuntimeException);
-	css::uno::Reference< css::sheet::XSheetAnnotations > SAL_CALL getAnnotations() throw (css::uno::RuntimeException);
-	sal_Int32 SAL_CALL getAnnotationIndex() throw (css::uno::RuntimeException);
-	css::uno::Reference< ov::excel::XComment > SAL_CALL getCommentByIndex( sal_Int32 Index ) throw (css::uno::RuntimeException);
+	css::uno::Reference< css::sheet::XSheetAnnotation > SAL_CALL getAnnotation();
+	css::uno::Reference< css::sheet::XSheetAnnotations > SAL_CALL getAnnotations();
+	sal_Int32 SAL_CALL getAnnotationIndex();
+	css::uno::Reference< ov::excel::XComment > SAL_CALL getCommentByIndex( sal_Int32 Index );
 public:
     ScVbaComment(
         const css::uno::Reference< ov::XHelperInterface >& xParent,
         const css::uno::Reference< css::uno::XComponentContext >& xContext,
         const css::uno::Reference< css::frame::XModel >& xModel,
-        const css::uno::Reference< css::table::XCellRange >& xRange ) throw ( css::lang::IllegalArgumentException );
+        const css::uno::Reference< css::table::XCellRange >& xRange );
 
     virtual ~ScVbaComment() {}
 
     // Attributes
-    virtual rtl::OUString SAL_CALL getAuthor() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setAuthor( const rtl::OUString& _author ) throw (css::uno::RuntimeException);
-    virtual css::uno::Reference< ov::msforms::XShape > SAL_CALL getShape() throw (css::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL getVisible() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setVisible( sal_Bool _visible ) throw (css::uno::RuntimeException);
+    virtual rtl::OUString SAL_CALL getAuthor();
+    virtual void SAL_CALL setAuthor( const rtl::OUString& _author );
+    virtual css::uno::Reference< ov::msforms::XShape > SAL_CALL getShape();
+    virtual sal_Bool SAL_CALL getVisible();
+    virtual void SAL_CALL setVisible( sal_Bool _visible );
 
     // Methods
-    virtual void SAL_CALL Delete() throw (css::uno::RuntimeException);
-    virtual css::uno::Reference< ov::excel::XComment > SAL_CALL Next() throw (css::uno::RuntimeException);
-    virtual css::uno::Reference< ov::excel::XComment > SAL_CALL Previous() throw (css::uno::RuntimeException);
-    virtual rtl::OUString SAL_CALL Text( const css::uno::Any& Text, const css::uno::Any& Start, const css::uno::Any& Overwrite ) throw (css::uno::RuntimeException);
+    virtual void SAL_CALL Delete();
+    virtual css::uno::Reference< ov::excel::XComment > SAL_CALL Next();
+    virtual css::uno::Reference< ov::excel::XComment > SAL_CALL Previous();
+    virtual rtl::OUString SAL_CALL Text( const css::uno::Any& Text, const css::uno::Any& Start, const css::uno::Any& Overwrite );
     // XHelperInterface
     virtual rtl::OUString& getServiceImplName();
     virtual css::uno::Sequence<rtl::OUString> getServiceNames();

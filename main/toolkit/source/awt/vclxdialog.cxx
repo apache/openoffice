@@ -96,7 +96,7 @@ IMPLEMENT_2_FORWARD_XINTERFACE2( VCLXDialog, VCLXWindow, Bin, VCLXDialog_Base );
 
 IMPLEMENT_FORWARD_XTYPEPROVIDER2( VCLXDialog, VCLXWindow, VCLXDialog_Base );
 
-void SAL_CALL VCLXDialog::dispose() throw(::com::sun::star::uno::RuntimeException)
+void SAL_CALL VCLXDialog::dispose()
 {
     {
         ::vos::OGuard aGuard( GetMutex() );
@@ -115,7 +115,6 @@ void VCLXDialog::resizedCb()
 }
 
 void SAL_CALL VCLXDialog::allocateArea( const css::awt::Rectangle &rArea )
-    throw (css::uno::RuntimeException)
 {
     ::com::sun::star::awt::Size reqSize = Bin::getMinimumSize();
     reqSize.Height = getHeightForWidth( rArea.Width );
@@ -157,7 +156,7 @@ void VCLXDialog::ProcessWindowEvent( const VclWindowEvent& _rVclWindowEvent )
     }
 }
 
-void SAL_CALL VCLXDialog::setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any &Value ) throw(::com::sun::star::uno::RuntimeException)
+void SAL_CALL VCLXDialog::setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any &Value )
 {
     ::vos::OGuard aGuard( GetMutex() );
 
@@ -174,7 +173,7 @@ void SAL_CALL VCLXDialog::setProperty( const ::rtl::OUString& PropertyName, cons
     }
 }
 
-::com::sun::star::uno::Any SAL_CALL VCLXDialog::getProperty( const ::rtl::OUString& PropertyName ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Any SAL_CALL VCLXDialog::getProperty( const ::rtl::OUString& PropertyName )
 {
     ::vos::OGuard aGuard( GetMutex() );
 
@@ -195,7 +194,7 @@ void SAL_CALL VCLXDialog::setProperty( const ::rtl::OUString& PropertyName, cons
     return aReturn;
 }
 
-void VCLXDialog::setTitle( const ::rtl::OUString& Title ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXDialog::setTitle( const ::rtl::OUString& Title )
 {
     ::vos::OGuard aGuard( GetMutex() );
 
@@ -204,7 +203,7 @@ void VCLXDialog::setTitle( const ::rtl::OUString& Title ) throw(::com::sun::star
         pWindow->SetText( Title );
 }
 
-void VCLXDialog::setHelpId( const rtl::OUString& rId ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXDialog::setHelpId( const rtl::OUString& rId )
 {
     ::vos::OGuard aGuard( GetMutex() );
 
@@ -213,7 +212,7 @@ void VCLXDialog::setHelpId( const rtl::OUString& rId ) throw(::com::sun::star::u
         pWindow->SetHelpId( rtl::OUStringToOString( rId, RTL_TEXTENCODING_UTF8 ) );
 }
 
-::rtl::OUString VCLXDialog::getTitle() throw(::com::sun::star::uno::RuntimeException)
+::rtl::OUString VCLXDialog::getTitle()
 {
     ::vos::OGuard aGuard( GetMutex() );
 
@@ -224,7 +223,7 @@ void VCLXDialog::setHelpId( const rtl::OUString& rId ) throw(::com::sun::star::u
     return aTitle;
 }
 
-sal_Int16 VCLXDialog::execute() throw(::com::sun::star::uno::RuntimeException)
+sal_Int16 VCLXDialog::execute()
 {
     ::vos::OGuard aGuard( GetMutex() );
 
@@ -248,7 +247,7 @@ sal_Int16 VCLXDialog::execute() throw(::com::sun::star::uno::RuntimeException)
     return nRet;
 }
 
-void VCLXDialog::endDialog( sal_Int32 nResult ) throw(::com::sun::star::uno::RuntimeException)
+void VCLXDialog::endDialog( sal_Int32 nResult )
 {
     ::vos::OGuard aGuard( GetMutex() );
 
@@ -269,7 +268,7 @@ void VCLXDialog::endDialog( sal_Int32 nResult ) throw(::com::sun::star::uno::Run
         pDlg->EndDialog( nResult );
 }
 
-void VCLXDialog::endExecute() throw(::com::sun::star::uno::RuntimeException)
+void VCLXDialog::endExecute()
 {
     endDialog( 0 );
 }

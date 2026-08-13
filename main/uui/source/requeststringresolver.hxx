@@ -46,8 +46,7 @@ public:
     createInstance(
         com::sun::star::uno::Reference<
 	    com::sun::star::lang::XMultiServiceFactory > const &
-	rServiceFactory)
-        SAL_THROW((com::sun::star::uno::Exception));
+	rServiceFactory);
 
 private:
     com::sun::star::uno::Reference<
@@ -65,22 +64,18 @@ private:
 
     virtual ~UUIInteractionRequestStringResolver() SAL_THROW(());
 
-    virtual rtl::OUString SAL_CALL getImplementationName()
-        throw (com::sun::star::uno::RuntimeException);
+    virtual rtl::OUString SAL_CALL getImplementationName();
 
     virtual sal_Bool SAL_CALL supportsService(rtl::OUString const &
-					      rServiceName)
-        throw (com::sun::star::uno::RuntimeException);
+					      rServiceName);
 
     virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL
-    getSupportedServiceNames()
-        throw (com::sun::star::uno::RuntimeException);
+    getSupportedServiceNames();
 
     virtual com::sun::star::beans::Optional< rtl::OUString > SAL_CALL
     getStringFromInformationalRequest(
         const com::sun::star::uno::Reference<
-            com::sun::star::task::XInteractionRequest >& Request )
-        throw (com::sun::star::uno::RuntimeException);
+            com::sun::star::task::XInteractionRequest >& Request );
 };
 
 #endif // UUI_REQUESTSTRINGRESOLVER_HXX

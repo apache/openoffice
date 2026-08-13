@@ -38,13 +38,13 @@ namespace framework
         virtual ~PopupMenuToolbarController();
 
         // XComponent
-        virtual void SAL_CALL dispose() throw ( ::com::sun::star::uno::RuntimeException );
+        virtual void SAL_CALL dispose();
         // XInitialization
-        virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments ) throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments );
         // XToolbarController
-        virtual ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindow > SAL_CALL createPopupWindow() throw (::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindow > SAL_CALL createPopupWindow();
         // XStatusListener
-        virtual void SAL_CALL statusChanged( const ::com::sun::star::frame::FeatureStateEvent& rEvent ) throw ( ::com::sun::star::uno::RuntimeException );
+        virtual void SAL_CALL statusChanged( const ::com::sun::star::frame::FeatureStateEvent& rEvent );
 
     protected:
         PopupMenuToolbarController( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& rxContext,
@@ -81,9 +81,9 @@ namespace framework
         DECLARE_XSERVICEINFO
     private:
         void functionExecuted( const rtl::OUString &rCommand );
-        void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments ) throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
-        void SAL_CALL statusChanged( const ::com::sun::star::frame::FeatureStateEvent& rEvent ) throw ( ::com::sun::star::uno::RuntimeException );
-        void SAL_CALL execute( sal_Int16 KeyModifier ) throw (::com::sun::star::uno::RuntimeException);
+        void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments );
+        void SAL_CALL statusChanged( const ::com::sun::star::frame::FeatureStateEvent& rEvent );
+        void SAL_CALL execute( sal_Int16 KeyModifier );
         void setItemImage( const rtl::OUString &rCommand );
 
         rtl::OUString m_aLastURL;

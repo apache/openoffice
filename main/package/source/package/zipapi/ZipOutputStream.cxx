@@ -69,12 +69,10 @@ ZipOutputStream::~ZipOutputStream( void )
 }
 
 void SAL_CALL ZipOutputStream::setMethod( sal_Int32 nNewMethod )
-	throw(RuntimeException)
 {
 	nMethod = static_cast < sal_Int16 > (nNewMethod);
 }
 void SAL_CALL ZipOutputStream::setLevel( sal_Int32 nNewLevel )
-	throw(RuntimeException)
 {
 	aDeflater.setLevel( nNewLevel);
 }
@@ -82,7 +80,6 @@ void SAL_CALL ZipOutputStream::setLevel( sal_Int32 nNewLevel )
 void SAL_CALL ZipOutputStream::putNextEntry( ZipEntry& rEntry,
                         ZipPackageStream* pStream,
 						sal_Bool bEncrypt)
-	throw(IOException, RuntimeException)
 {
 	if (pCurrentEntry != NULL)
 		closeEntry();
@@ -116,7 +113,6 @@ void SAL_CALL ZipOutputStream::putNextEntry( ZipEntry& rEntry,
 }
 
 void SAL_CALL ZipOutputStream::closeEntry(  )
-	throw(IOException, RuntimeException)
 {
 	ZipEntry *pEntry = pCurrentEntry;
 	if (pEntry)
@@ -189,7 +185,6 @@ void SAL_CALL ZipOutputStream::closeEntry(  )
 }
 
 void SAL_CALL ZipOutputStream::write( const Sequence< sal_Int8 >& rBuffer, sal_Int32 nNewOffset, sal_Int32 nNewLength )
-	throw(IOException, RuntimeException)
 {
 	switch (pCurrentEntry->nMethod)
 	{
@@ -213,14 +208,12 @@ void SAL_CALL ZipOutputStream::write( const Sequence< sal_Int8 >& rBuffer, sal_I
 }
 
 void SAL_CALL ZipOutputStream::rawWrite( Sequence< sal_Int8 >& rBuffer, sal_Int32 /*nNewOffset*/, sal_Int32 nNewLength )
-	throw(IOException, RuntimeException)
 {
 	Sequence < sal_Int8 > aTmpBuffer ( rBuffer.getConstArray(), nNewLength );
 	aChucker.WriteBytes( aTmpBuffer );
 }
 
 void SAL_CALL ZipOutputStream::rawCloseEntry(  )
-	throw(IOException, RuntimeException)
 {
 	if ( pCurrentEntry->nMethod == DEFLATED && ( pCurrentEntry->nFlag & 8 ) )
 		writeEXT(*pCurrentEntry);
@@ -228,7 +221,6 @@ void SAL_CALL ZipOutputStream::rawCloseEntry(  )
 }
 
 void SAL_CALL ZipOutputStream::finish(  )
-	throw(IOException, RuntimeException)
 {
 	if (bFinished)
 		return;
@@ -297,7 +289,6 @@ void ZipOutputStream::doDeflate()
 }
 
 void ZipOutputStream::writeEND(sal_uInt32 nCENOffset, sal_uInt32 nLength)
-	throw(IOException, RuntimeException)
 {
 	aChucker << ENDSIG;
 	aChucker << static_cast < sal_Int16 > ( 0 );
@@ -309,7 +300,6 @@ void ZipOutputStream::writeEND(sal_uInt32 nCENOffset, sal_uInt32 nLength)
 	aChucker << static_cast < sal_Int16 > ( 0 );
 }
 void ZipOutputStream::writeCEN( const ZipEntry &rEntry )
-	throw(IOException, RuntimeException)
 {
     if ( !::comphelper::OStorageHelper::IsValidZipEntryFileName( rEntry.sPath, sal_True ) )
         throw IOException( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Unexpected character is used in file name." ) ), uno::Reference< XInterface >() );
@@ -349,7 +339,6 @@ void ZipOutputStream::writeCEN( const ZipEntry &rEntry )
 	aChucker.WriteBytes( aSequence );
 }
 void ZipOutputStream::writeEXT( const ZipEntry &rEntry )
-	throw(IOException, RuntimeException)
 {
 	aChucker << EXTSIG;
 	aChucker << static_cast < sal_uInt32> ( rEntry.nCrc );
@@ -358,7 +347,6 @@ void ZipOutputStream::writeEXT( const ZipEntry &rEntry )
 }
 
 sal_Int32 ZipOutputStream::writeLOC( const ZipEntry &rEntry )
-	throw(IOException, RuntimeException)
 {
     if ( !::comphelper::OStorageHelper::IsValidZipEntryFileName( rEntry.sPath, sal_True ) )
         throw IOException( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Unexpected character is used in file name." ) ), uno::Reference< XInterface >() );

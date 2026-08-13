@@ -67,31 +67,27 @@ public:
         @return demanded type or empty any
         @see queryAggregation.
     */
-	virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType )
-		throw(::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType );
 
 	/** Set the delegator.  The delegator member reference is a weak reference.
 
         @param Delegator the object that delegate its queryInterface to this aggregate.
     */
-	virtual void SAL_CALL setDelegator( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > & Delegator )
-		throw(::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL setDelegator( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > & Delegator );
 	/** Called by the delegator or queryInterface. Re-implement this method instead of
         queryInterface.
 
         @see queryInterface
     */
-	virtual ::com::sun::star::uno::Any SAL_CALL queryAggregation( const ::com::sun::star::uno::Type & rType )
-		throw(::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Any SAL_CALL queryAggregation( const ::com::sun::star::uno::Type & rType );
 
 protected:
 	/** Virtual dtor. Called when reference count is 0.
 
         @attention
-        Despite the fact that a RuntimeException is allowed to be thrown, you must not throw any
-        exception upon destruction!
+        You must not throw any exception upon destruction!
 	*/
-    virtual ~OWeakAggObject() SAL_THROW_DTOR( (::com::sun::star::uno::RuntimeException) );
+    virtual ~OWeakAggObject();
 
 	/** weak reference to delegator.
 	*/

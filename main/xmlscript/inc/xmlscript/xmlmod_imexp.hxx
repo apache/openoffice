@@ -48,13 +48,11 @@ XCR_DLLPUBLIC void
 SAL_CALL exportScriptModule(
 	::com::sun::star::uno::Reference<
     ::com::sun::star::xml::sax::XExtendedDocumentHandler > const & xOut,
-	const ModuleDescriptor& rMod )
-		SAL_THROW( (::com::sun::star::uno::Exception) );
+	const ModuleDescriptor& rMod );
 
 XCR_DLLPUBLIC ::com::sun::star::uno::Reference<
     ::com::sun::star::xml::sax::XDocumentHandler >
-SAL_CALL importScriptModule( ModuleDescriptor& rMod )
-	SAL_THROW( (::com::sun::star::uno::Exception) );
+SAL_CALL importScriptModule( ModuleDescriptor& rMod );
 
 }
 

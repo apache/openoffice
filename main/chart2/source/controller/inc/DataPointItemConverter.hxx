@@ -80,10 +80,8 @@ protected:
     virtual const sal_uInt16 * GetWhichPairs() const;
     virtual bool GetItemProperty( tWhichIdType nWhichId, tPropertyNameWithMemberId & rOutProperty ) const;
 
-    virtual void FillSpecialItem( sal_uInt16 nWhichId, SfxItemSet & rOutItemSet ) const
-        throw( ::com::sun::star::uno::Exception );
-    virtual bool ApplySpecialItem( sal_uInt16 nWhichId, const SfxItemSet & rItemSet )
-        throw( ::com::sun::star::uno::Exception );
+    virtual void FillSpecialItem( sal_uInt16 nWhichId, SfxItemSet & rOutItemSet ) const;
+    virtual bool ApplySpecialItem( sal_uInt16 nWhichId, const SfxItemSet & rItemSet );
 
 private:
     ::std::vector< ItemConverter * >    m_aConverters;

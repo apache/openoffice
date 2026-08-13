@@ -48,10 +48,10 @@ public:
 			~SvxTbxCtlCustomShapes() {}
 
 	//interface XSubToolbarController:
-    virtual ::sal_Bool SAL_CALL opensSubToolbar() throw (::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getSubToolbarName() throw (::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL functionSelected( const ::rtl::OUString& aCommand ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL updateImage() throw (::com::sun::star::uno::RuntimeException);
+    virtual ::sal_Bool SAL_CALL opensSubToolbar();
+    virtual ::rtl::OUString SAL_CALL getSubToolbarName();
+	virtual void SAL_CALL functionSelected( const ::rtl::OUString& aCommand );
+    virtual void SAL_CALL updateImage();
 
 private:
     rtl::OUString		m_aSubTbName;

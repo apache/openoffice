@@ -144,36 +144,36 @@ public:
 private:
 	Rectangle impl_getScaledRect_nothrow() const;
 	// XStateChangeListener
-	virtual void SAL_CALL changingState( const ::com::sun::star::lang::EventObject& aEvent, ::sal_Int32 nOldState, ::sal_Int32 nNewState ) throw (::com::sun::star::embed::WrongStateException, ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL stateChanged( const ::com::sun::star::lang::EventObject& aEvent, ::sal_Int32 nOldState, ::sal_Int32 nNewState ) throw (::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& aEvent ) throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL changingState( const ::com::sun::star::lang::EventObject& aEvent, ::sal_Int32 nOldState, ::sal_Int32 nNewState );
+	virtual void SAL_CALL stateChanged( const ::com::sun::star::lang::EventObject& aEvent, ::sal_Int32 nOldState, ::sal_Int32 nNewState );
+	virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& aEvent );
 
 	// document::XEventListener
-	virtual void SAL_CALL notifyEvent( const document::EventObject& aEvent ) throw( uno::RuntimeException );
+	virtual void SAL_CALL notifyEvent( const document::EventObject& aEvent );
 
 	// XEmbeddedClient
-	virtual void SAL_CALL saveObject() throw ( embed::ObjectSaveVetoException, uno::Exception, uno::RuntimeException );
-	virtual void SAL_CALL visibilityChanged( sal_Bool bVisible ) throw ( embed::WrongStateException, uno::RuntimeException );
+	virtual void SAL_CALL saveObject();
+	virtual void SAL_CALL visibilityChanged( sal_Bool bVisible );
 
 	// XComponentSupplier
-	virtual uno::Reference< util::XCloseable > SAL_CALL getComponent() throw ( uno::RuntimeException );
+	virtual uno::Reference< util::XCloseable > SAL_CALL getComponent();
 
 	// XInplaceClient
-	virtual sal_Bool SAL_CALL canInplaceActivate() throw ( uno::RuntimeException );
-	virtual void SAL_CALL activatingInplace() throw ( embed::WrongStateException, uno::RuntimeException );
-	virtual void SAL_CALL activatingUI() throw ( embed::WrongStateException, uno::RuntimeException );
-	virtual void SAL_CALL deactivatedInplace() throw ( embed::WrongStateException, uno::RuntimeException );
-	virtual void SAL_CALL deactivatedUI() throw ( embed::WrongStateException, uno::RuntimeException );
-	virtual uno::Reference< ::com::sun::star::frame::XLayoutManager > SAL_CALL getLayoutManager() throw ( embed::WrongStateException, uno::RuntimeException );
-	virtual uno::Reference< frame::XDispatchProvider > SAL_CALL getInplaceDispatchProvider() throw ( embed::WrongStateException, uno::RuntimeException );
-	virtual awt::Rectangle SAL_CALL getPlacement() throw ( embed::WrongStateException, uno::RuntimeException );
-	virtual awt::Rectangle SAL_CALL getClipRectangle() throw ( embed::WrongStateException, uno::RuntimeException );
-	virtual void SAL_CALL translateAccelerators( const uno::Sequence< awt::KeyEvent >& aKeys ) throw ( embed::WrongStateException, uno::RuntimeException );
-	virtual void SAL_CALL scrollObject( const awt::Size& aOffset ) throw ( embed::WrongStateException, uno::RuntimeException );
-	virtual void SAL_CALL changedPlacement( const awt::Rectangle& aPosRect ) throw ( embed::WrongStateException, uno::Exception, uno::RuntimeException );
+	virtual sal_Bool SAL_CALL canInplaceActivate();
+	virtual void SAL_CALL activatingInplace();
+	virtual void SAL_CALL activatingUI();
+	virtual void SAL_CALL deactivatedInplace();
+	virtual void SAL_CALL deactivatedUI();
+	virtual uno::Reference< ::com::sun::star::frame::XLayoutManager > SAL_CALL getLayoutManager();
+	virtual uno::Reference< frame::XDispatchProvider > SAL_CALL getInplaceDispatchProvider();
+	virtual awt::Rectangle SAL_CALL getPlacement();
+	virtual awt::Rectangle SAL_CALL getClipRectangle();
+	virtual void SAL_CALL translateAccelerators( const uno::Sequence< awt::KeyEvent >& aKeys );
+	virtual void SAL_CALL scrollObject( const awt::Size& aOffset );
+	virtual void SAL_CALL changedPlacement( const awt::Rectangle& aPosRect );
 
 	// XWindowSupplier
-	virtual uno::Reference< awt::XWindow > SAL_CALL getWindow() throw ( uno::RuntimeException );
+	virtual uno::Reference< awt::XWindow > SAL_CALL getWindow();
 };
 
 //--------------------------------------------------------------------
@@ -194,7 +194,7 @@ Rectangle SdrLightEmbeddedClient_Impl::impl_getScaledRect_nothrow() const
 	return aLogicRect;
 }
 //--------------------------------------------------------------------
-void SAL_CALL SdrLightEmbeddedClient_Impl::changingState( const ::com::sun::star::lang::EventObject& /*aEvent*/, ::sal_Int32 /*nOldState*/, ::sal_Int32 /*nNewState*/ ) throw (::com::sun::star::embed::WrongStateException, ::com::sun::star::uno::RuntimeException)
+void SAL_CALL SdrLightEmbeddedClient_Impl::changingState( const ::com::sun::star::lang::EventObject& /*aEvent*/, ::sal_Int32 /*nOldState*/, ::sal_Int32 /*nNewState*/ )
 {
 }
 
@@ -210,7 +210,7 @@ void SdrLightEmbeddedClient_Impl::Release()
 }
 
 //--------------------------------------------------------------------
-void SAL_CALL SdrLightEmbeddedClient_Impl::stateChanged( const ::com::sun::star::lang::EventObject& /*aEvent*/, ::sal_Int32 nOldState, ::sal_Int32 nNewState ) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL SdrLightEmbeddedClient_Impl::stateChanged( const ::com::sun::star::lang::EventObject& /*aEvent*/, ::sal_Int32 nOldState, ::sal_Int32 nNewState )
 {
 	::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -226,7 +226,7 @@ void SAL_CALL SdrLightEmbeddedClient_Impl::stateChanged( const ::com::sun::star:
 }
 
 //--------------------------------------------------------------------
-void SAL_CALL SdrLightEmbeddedClient_Impl::disposing( const ::com::sun::star::lang::EventObject& /*aEvent*/ ) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL SdrLightEmbeddedClient_Impl::disposing( const ::com::sun::star::lang::EventObject& /*aEvent*/ )
 {
 	::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -234,7 +234,7 @@ void SAL_CALL SdrLightEmbeddedClient_Impl::disposing( const ::com::sun::star::la
 }
 
 //--------------------------------------------------------------------
-void SAL_CALL SdrLightEmbeddedClient_Impl::notifyEvent( const document::EventObject& aEvent ) throw( uno::RuntimeException )
+void SAL_CALL SdrLightEmbeddedClient_Impl::notifyEvent( const document::EventObject& aEvent )
 {
 	// TODO/LATER: when Writer uses this implementation the code could be shared with SfxInPlaceClient_Impl
 
@@ -301,9 +301,6 @@ void SAL_CALL SdrLightEmbeddedClient_Impl::notifyEvent( const document::EventObj
 
 //--------------------------------------------------------------------
 void SAL_CALL SdrLightEmbeddedClient_Impl::saveObject()
-	throw ( embed::ObjectSaveVetoException,
-			uno::Exception,
-			uno::RuntimeException )
 {
 	// TODO/LATER: when writer uses this implementation the code could be shared with SfxInPlaceClient_Impl
 	uno::Reference< embed::XCommonEmbedPersist > xPersist;
@@ -328,8 +325,6 @@ void SAL_CALL SdrLightEmbeddedClient_Impl::saveObject()
 
 //--------------------------------------------------------------------
 void SAL_CALL SdrLightEmbeddedClient_Impl::visibilityChanged( sal_Bool /*bVisible*/ )
-	throw ( embed::WrongStateException,
-			uno::RuntimeException )
 {
 	// nothing to do currently
 	// TODO/LATER: when writer uses this implementation the code could be shared with SfxInPlaceClient_Impl
@@ -349,7 +344,6 @@ void SAL_CALL SdrLightEmbeddedClient_Impl::visibilityChanged( sal_Bool /*bVisibl
 
 //--------------------------------------------------------------------
 uno::Reference< util::XCloseable > SAL_CALL SdrLightEmbeddedClient_Impl::getComponent()
-	throw ( uno::RuntimeException )
 {
 	uno::Reference< util::XCloseable > xResult;
 
@@ -362,7 +356,6 @@ uno::Reference< util::XCloseable > SAL_CALL SdrLightEmbeddedClient_Impl::getComp
 // XInplaceClient
 //--------------------------------------------------------------------
 sal_Bool SAL_CALL SdrLightEmbeddedClient_Impl::canInplaceActivate()
-	throw ( uno::RuntimeException )
 {
 	sal_Bool bRet = sal_False;
 	::vos::OGuard aGuard( Application::GetSolarMutex() );
@@ -379,15 +372,11 @@ sal_Bool SAL_CALL SdrLightEmbeddedClient_Impl::canInplaceActivate()
 
 //--------------------------------------------------------------------
 void SAL_CALL SdrLightEmbeddedClient_Impl::activatingInplace()
-	throw ( embed::WrongStateException,
-			uno::RuntimeException )
 {
 }
 
 //--------------------------------------------------------------------
 void SAL_CALL SdrLightEmbeddedClient_Impl::activatingUI()
-	throw ( embed::WrongStateException,
-			uno::RuntimeException )
 {
 	::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -433,15 +422,11 @@ void SAL_CALL SdrLightEmbeddedClient_Impl::activatingUI()
 
 //--------------------------------------------------------------------
 void SAL_CALL SdrLightEmbeddedClient_Impl::deactivatedInplace()
-	throw ( embed::WrongStateException,
-			uno::RuntimeException )
 {
 }
 
 //--------------------------------------------------------------------
 void SAL_CALL SdrLightEmbeddedClient_Impl::deactivatedUI()
-	throw ( embed::WrongStateException,
-			uno::RuntimeException )
 {
 	::vos::OGuard aGuard( Application::GetSolarMutex() );
 	com::sun::star::uno::Reference< ::com::sun::star::frame::XLayoutManager > xLayoutManager(getLayoutManager());
@@ -455,8 +440,6 @@ void SAL_CALL SdrLightEmbeddedClient_Impl::deactivatedUI()
 
 //--------------------------------------------------------------------
 uno::Reference< ::com::sun::star::frame::XLayoutManager > SAL_CALL SdrLightEmbeddedClient_Impl::getLayoutManager()
-	throw ( embed::WrongStateException,
-			uno::RuntimeException )
 {
 	uno::Reference< ::com::sun::star::frame::XLayoutManager > xMan;
 	::vos::OGuard aGuard( Application::GetSolarMutex() );
@@ -475,8 +458,6 @@ uno::Reference< ::com::sun::star::frame::XLayoutManager > SAL_CALL SdrLightEmbed
 
 //--------------------------------------------------------------------
 uno::Reference< frame::XDispatchProvider > SAL_CALL SdrLightEmbeddedClient_Impl::getInplaceDispatchProvider()
-	throw ( embed::WrongStateException,
-			uno::RuntimeException )
 {
 	::vos::OGuard aGuard( Application::GetSolarMutex() );
 	return uno::Reference < frame::XDispatchProvider >( lcl_getFrame_throw(mpObj), uno::UNO_QUERY_THROW );
@@ -484,8 +465,6 @@ uno::Reference< frame::XDispatchProvider > SAL_CALL SdrLightEmbeddedClient_Impl:
 
 //--------------------------------------------------------------------
 awt::Rectangle SAL_CALL SdrLightEmbeddedClient_Impl::getPlacement()
-	throw ( embed::WrongStateException,
-			uno::RuntimeException )
 {
 	::vos::OGuard aGuard( Application::GetSolarMutex() );
 	if ( !mpObj )
@@ -503,31 +482,22 @@ awt::Rectangle SAL_CALL SdrLightEmbeddedClient_Impl::getPlacement()
 
 //--------------------------------------------------------------------
 awt::Rectangle SAL_CALL SdrLightEmbeddedClient_Impl::getClipRectangle()
-	throw ( embed::WrongStateException,
-			uno::RuntimeException )
 {
 	return getPlacement();
 }
 
 //--------------------------------------------------------------------
 void SAL_CALL SdrLightEmbeddedClient_Impl::translateAccelerators( const uno::Sequence< awt::KeyEvent >& /*aKeys*/ )
-	throw ( embed::WrongStateException,
-			uno::RuntimeException )
 {
 }
 
 //--------------------------------------------------------------------
 void SAL_CALL SdrLightEmbeddedClient_Impl::scrollObject( const awt::Size& /*aOffset*/ )
-	throw ( embed::WrongStateException,
-			uno::RuntimeException )
 {
 }
 
 //--------------------------------------------------------------------
 void SAL_CALL SdrLightEmbeddedClient_Impl::changedPlacement( const awt::Rectangle& aPosRect )
-	throw ( embed::WrongStateException,
-			uno::Exception,
-			uno::RuntimeException )
 {
 	::vos::OGuard aGuard( Application::GetSolarMutex() );
 	if ( !mpObj )
@@ -587,7 +557,6 @@ void SAL_CALL SdrLightEmbeddedClient_Impl::changedPlacement( const awt::Rectangl
 // XWindowSupplier
 //--------------------------------------------------------------------
 uno::Reference< awt::XWindow > SAL_CALL SdrLightEmbeddedClient_Impl::getWindow()
-	throw ( uno::RuntimeException )
 {
 	::vos::OGuard aGuard( Application::GetSolarMutex() );
 	uno::Reference< awt::XWindow > xCurrent = m_xWindow;

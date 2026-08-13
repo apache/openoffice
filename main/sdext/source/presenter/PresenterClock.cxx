@@ -389,7 +389,6 @@ void PresenterClock::UpdateTime (void)
 //-----  lang::XEventListener -------------------------------------------------
 
 void SAL_CALL PresenterClock::disposing (const lang::EventObject& rEventObject)
-    throw (RuntimeException)
 {
     //    ::osl::MutexGuard aSolarGuard (::osl::Mutex::getGlobalMutex());
     //    osl::MutexGuard aGuard (m_aMutex);
@@ -408,7 +407,6 @@ void SAL_CALL PresenterClock::disposing (const lang::EventObject& rEventObject)
 //----- XPaintListener --------------------------------------------------------
 
 void SAL_CALL PresenterClock::windowPaint (const awt::PaintEvent& rEvent)
-    throw (RuntimeException)
 {
     (void)rEvent;
     ThrowIfDisposed();
@@ -422,7 +420,6 @@ void SAL_CALL PresenterClock::windowPaint (const awt::PaintEvent& rEvent)
 //----- XWindowListener -------------------------------------------------------
 
 void SAL_CALL PresenterClock::windowResized (const awt::WindowEvent& rEvent)
-    throw (RuntimeException)
 {
     (void)rEvent;
     mbIsResizePending = true;
@@ -432,7 +429,6 @@ void SAL_CALL PresenterClock::windowResized (const awt::WindowEvent& rEvent)
 
 
 void SAL_CALL PresenterClock::windowMoved (const awt::WindowEvent& rEvent)
-    throw (RuntimeException)
 {
     (void)rEvent;
     mbIsResizePending = true;
@@ -442,7 +438,6 @@ void SAL_CALL PresenterClock::windowMoved (const awt::WindowEvent& rEvent)
 
 
 void SAL_CALL PresenterClock::windowShown (const lang::EventObject& rEvent)
-    throw (RuntimeException)
 {
     (void)rEvent;
     mbIsResizePending = true;
@@ -452,7 +447,6 @@ void SAL_CALL PresenterClock::windowShown (const lang::EventObject& rEvent)
 
 
 void SAL_CALL PresenterClock::windowHidden (const lang::EventObject& rEvent)
-    throw (RuntimeException)
 {
     (void)rEvent;
 }
@@ -463,7 +457,6 @@ void SAL_CALL PresenterClock::windowHidden (const lang::EventObject& rEvent)
 //----- XMouseListener --------------------------------------------------------
 
 void SAL_CALL PresenterClock::mousePressed (const css::awt::MouseEvent& rEvent)
-    throw (css::uno::RuntimeException)
 {
     (void)rEvent;
     if (rEvent.Buttons == awt::MouseButton::LEFT)
@@ -476,7 +469,6 @@ void SAL_CALL PresenterClock::mousePressed (const css::awt::MouseEvent& rEvent)
 
 
 void SAL_CALL PresenterClock::mouseReleased (const css::awt::MouseEvent& rEvent)
-    throw (css::uno::RuntimeException)
 {
     (void)rEvent;
 }
@@ -485,7 +477,6 @@ void SAL_CALL PresenterClock::mouseReleased (const css::awt::MouseEvent& rEvent)
 
 
 void SAL_CALL PresenterClock::mouseEntered (const css::awt::MouseEvent& rEvent)
-    throw (css::uno::RuntimeException)
 {
     (void)rEvent;
 }
@@ -494,7 +485,6 @@ void SAL_CALL PresenterClock::mouseEntered (const css::awt::MouseEvent& rEvent)
 
 
 void SAL_CALL PresenterClock::mouseExited (const css::awt::MouseEvent& rEvent)
-    throw (css::uno::RuntimeException)
 {
     (void)rEvent;
 }
@@ -505,7 +495,6 @@ void SAL_CALL PresenterClock::mouseExited (const css::awt::MouseEvent& rEvent)
 //----- XResourceId -----------------------------------------------------------
 
 Reference<XResourceId> SAL_CALL PresenterClock::getResourceId (void)
-    throw (RuntimeException)
 {
     return mxViewId;
 }
@@ -514,7 +503,6 @@ Reference<XResourceId> SAL_CALL PresenterClock::getResourceId (void)
 
 
 sal_Bool SAL_CALL PresenterClock::isAnchorOnly (void)
-    throw (RuntimeException)
 {
     return false;
 }
@@ -657,7 +645,6 @@ void PresenterClock::SetMode (const sal_Int32 nMode)
 
 
 void PresenterClock::ThrowIfDisposed (void)
-    throw (::com::sun::star::lang::DisposedException)
 {
 	if (rBHelper.bDisposed || rBHelper.bInDispose)
 	{

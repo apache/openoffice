@@ -53,9 +53,9 @@ class CurlUri
 		void calculateURI ();
 
 	public:
-        CurlUri( const ::rtl::OUString & inUri ) throw ( DAVException );
-        CurlUri( const CURLU * inUri ) throw ( DAVException );
-        CurlUri( const CurlUri &curlUri ) throw ( DAVException );
+        CurlUri( const ::rtl::OUString & inUri );
+        CurlUri( const CURLU * inUri );
+        CurlUri( const CurlUri &curlUri );
 		~CurlUri( );
 
         bool operator== ( const CurlUri & rOther ) const;

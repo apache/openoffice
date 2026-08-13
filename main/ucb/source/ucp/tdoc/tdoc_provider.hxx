@@ -84,17 +84,13 @@ public:
 	virtual com::sun::star::uno::Reference<
 				com::sun::star::ucb::XContent > SAL_CALL
 	queryContent( const com::sun::star::uno::Reference<
-					com::sun::star::ucb::XContentIdentifier >& Identifier )
-		throw( com::sun::star::ucb::IllegalIdentifierException,
-			   com::sun::star::uno::RuntimeException );
+					com::sun::star::ucb::XContentIdentifier >& Identifier );
 
     // XTransientDocumentsDocumentContentFactory
     virtual com::sun::star::uno::Reference<
         com::sun::star::ucb::XContent > SAL_CALL
     createDocumentContent( const ::com::sun::star::uno::Reference<
-                                com::sun::star::frame::XModel >& Model )
-        throw ( com::sun::star::lang::IllegalArgumentException,
-                com::sun::star::uno::RuntimeException );
+                                com::sun::star::frame::XModel >& Model );
 
     // Non-UNO interfaces
     com::sun::star::uno::Reference< com::sun::star::embed::XStorage >
@@ -105,20 +101,17 @@ public:
 
     com::sun::star::uno::Reference< com::sun::star::io::XInputStream >
     queryInputStream( const rtl::OUString & rUri,
-                      const rtl::OUString & rPassword ) const
-        throw ( com::sun::star::packages::WrongPasswordException );
+                      const rtl::OUString & rPassword ) const;
 
     com::sun::star::uno::Reference< com::sun::star::io::XOutputStream >
     queryOutputStream( const rtl::OUString & rUri,
                        const rtl::OUString & rPassword,
-                       bool bTruncate ) const
-        throw ( com::sun::star::packages::WrongPasswordException );
+                       bool bTruncate ) const;
 
     com::sun::star::uno::Reference< com::sun::star::io::XStream >
     queryStream( const rtl::OUString & rUri,
                  const rtl::OUString & rPassword,
-                 bool bTruncate ) const
-        throw ( com::sun::star::packages::WrongPasswordException );
+                 bool bTruncate ) const;
 
     bool queryNamesOfChildren(
         const rtl::OUString & rUri,

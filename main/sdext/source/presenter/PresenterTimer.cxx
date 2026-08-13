@@ -612,7 +612,6 @@ void PresenterClockTimer::CheckCurrentTime (const TimeValue& rCurrentTime)
 //----- XCallback -------------------------------------------------------------
 
 void SAL_CALL PresenterClockTimer::notify (const css::uno::Any& rUserData)
-    throw (css::uno::RuntimeException)
 {
     (void)rUserData;
 

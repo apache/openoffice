@@ -184,8 +184,6 @@ uno::Reference< ucb::XContent > SAL_CALL
 ContentProvider::queryContent(
             const uno::Reference<
                     ucb::XContentIdentifier >& Identifier )
-    throw( ucb::IllegalIdentifierException,
-           uno::RuntimeException )
 {
 	// Check URL scheme...
 

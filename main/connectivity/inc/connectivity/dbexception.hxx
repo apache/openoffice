@@ -261,8 +261,7 @@ OOO_DLLPUBLIC_DBTOOLS void throwFunctionNotSupportedException(
 		const ::rtl::OUString& _rMsg,
         const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _Context,
         const ::com::sun::star::uno::Any& _Next = ::com::sun::star::uno::Any()
-	)
-    throw ( ::com::sun::star::sdbc::SQLException );
+	);
 
 //----------------------------------------------------------------------------------
 /** throws an exception with SQL state IM001, saying that a certain function is not supported
@@ -271,8 +270,7 @@ OOO_DLLPUBLIC_DBTOOLS void throwFunctionNotSupportedException(
         const sal_Char* _pAsciiFunctionName,
         const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _rxContext,
         const ::com::sun::star::uno::Any* _pNextException = NULL
-	)
-    throw ( ::com::sun::star::sdbc::SQLException );
+	);
 
 //----------------------------------------------------------------------------------
 /** throws a function sequence (HY010) exception
@@ -280,8 +278,7 @@ OOO_DLLPUBLIC_DBTOOLS void throwFunctionNotSupportedException(
 OOO_DLLPUBLIC_DBTOOLS void throwFunctionSequenceException(
         const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _Context,
 		const ::com::sun::star::uno::Any& _Next = ::com::sun::star::uno::Any()
-    )
-    throw ( ::com::sun::star::sdbc::SQLException );
+    );
 
 //----------------------------------------------------------------------------------
 /** throw a invalid index sqlexception
@@ -289,8 +286,7 @@ OOO_DLLPUBLIC_DBTOOLS void throwFunctionSequenceException(
 OOO_DLLPUBLIC_DBTOOLS void throwInvalidIndexException(
         const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _Context,
 		const ::com::sun::star::uno::Any& _Next = ::com::sun::star::uno::Any()
-    )
-    throw ( ::com::sun::star::sdbc::SQLException );
+    );
 
 //----------------------------------------------------------------------------------
 /** throw a generic SQLException, i.e. one with an SQLState of HY000, an ErrorCode of 0 and no NextException
@@ -298,8 +294,7 @@ OOO_DLLPUBLIC_DBTOOLS void throwInvalidIndexException(
 OOO_DLLPUBLIC_DBTOOLS void throwGenericSQLException(
         const ::rtl::OUString& _rMsg,
         const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _rxSource
-    )
-    throw (::com::sun::star::sdbc::SQLException);
+    );
 
 //----------------------------------------------------------------------------------
 /** throw a generic SQLException, i.e. one with an SQLState of HY000, an ErrorCode of 0 and no NextException
@@ -308,8 +303,7 @@ OOO_DLLPUBLIC_DBTOOLS void throwGenericSQLException(
 		const ::rtl::OUString& _rMsg,
 		const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _rxSource,
 		const ::com::sun::star::uno::Any& _rNextException
-    )
-    throw (::com::sun::star::sdbc::SQLException);
+    );
 
 //----------------------------------------------------------------------------------
 /** throw a SQLException with SQLState HYC00 (Optional feature not implemented)
@@ -325,8 +319,7 @@ OOO_DLLPUBLIC_DBTOOLS void throwFeatureNotImplementedException(
         const sal_Char* _pAsciiFeatureName,
         const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _rxContext,
         const ::com::sun::star::uno::Any* _pNextException = NULL
-    )
-    throw (::com::sun::star::sdbc::SQLException);
+    );
 
 //----------------------------------------------------------------------------------
 /** throws an SQLException
@@ -337,8 +330,7 @@ OOO_DLLPUBLIC_DBTOOLS void throwSQLException(
         const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _rxContext,
         const sal_Int32 _nErrorCode = 0,
         const ::com::sun::star::uno::Any* _pNextException = NULL
-    )
-    throw (::com::sun::star::sdbc::SQLException);
+    );
 
 //----------------------------------------------------------------------------------
 /** throws an SQLException
@@ -349,8 +341,7 @@ OOO_DLLPUBLIC_DBTOOLS void throwSQLException(
         const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _rxContext,
         const sal_Int32 _nErrorCode = 0,
         const ::com::sun::star::uno::Any* _pNextException = NULL
-    )
-    throw (::com::sun::star::sdbc::SQLException);
+    );
 
 //----------------------------------------------------------------------------------
 /** throws an SQLException
@@ -361,8 +352,7 @@ OOO_DLLPUBLIC_DBTOOLS void throwSQLException(
         const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _rxContext,
         const sal_Int32 _nErrorCode = 0,
         const ::com::sun::star::uno::Any* _pNextException = NULL
-    )
-    throw (::com::sun::star::sdbc::SQLException);
+    );
 
 //.........................................................................
 }	// namespace dbtools

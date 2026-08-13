@@ -119,21 +119,15 @@ public:
         Reference<XComponentContext> const & xComponentContext );
 
     // XUpdatable
-    virtual void SAL_CALL update() throw (RuntimeException);
+    virtual void SAL_CALL update();
 
     // XPackageRegistry
     virtual Reference<deployment::XPackage> SAL_CALL bindPackage(
         OUString const & url, OUString const & mediaType, sal_Bool bRemoved,
-        OUString const & identifier, Reference<XCommandEnvironment> const & xCmdEnv )
-        throw (deployment::DeploymentException,
-               deployment::InvalidRemovedParameterException,
-               CommandFailedException,
-               lang::IllegalArgumentException, RuntimeException);
+        OUString const & identifier, Reference<XCommandEnvironment> const & xCmdEnv );
     virtual Sequence< Reference<deployment::XPackageTypeInfo> > SAL_CALL
-    getSupportedPackageTypes() throw (RuntimeException);
-    virtual void SAL_CALL packageRemoved(OUString const & url, OUString const & mediaType)
-                throw (deployment::DeploymentException,
-                RuntimeException);
+    getSupportedPackageTypes();
+    virtual void SAL_CALL packageRemoved(OUString const & url, OUString const & mediaType);
 
 };
 
@@ -187,8 +181,6 @@ OUString normalizeMediaType( OUString const & mediaType )
 
 void PackageRegistryImpl::packageRemoved(
     ::rtl::OUString const & url, ::rtl::OUString const & mediaType)
-    throw (css::deployment::DeploymentException,
-           css::uno::RuntimeException)
 {
     const t_string2registry::const_iterator i =
         m_mediaType2backend.find(mediaType);
@@ -460,7 +452,7 @@ Reference<deployment::XPackageRegistry> PackageRegistryImpl::create(
 
 // XUpdatable: broadcast to backends
 //______________________________________________________________________________
-void PackageRegistryImpl::update() throw (RuntimeException)
+void PackageRegistryImpl::update()
 {
     check();
     t_registryset::const_iterator iPos( m_allBackends.begin() );
@@ -477,9 +469,6 @@ void PackageRegistryImpl::update() throw (RuntimeException)
 Reference<deployment::XPackage> PackageRegistryImpl::bindPackage(
     OUString const & url, OUString const & mediaType_, sal_Bool bRemoved,
     OUString const & identifier, Reference<XCommandEnvironment> const & xCmdEnv )
-    throw (deployment::DeploymentException, deployment::InvalidRemovedParameterException,
-           CommandFailedException,
-           lang::IllegalArgumentException, RuntimeException)
 {
     check();
     OUString mediaType(mediaType_);
@@ -552,7 +541,7 @@ Reference<deployment::XPackage> PackageRegistryImpl::bindPackage(
 
 //______________________________________________________________________________
 Sequence< Reference<deployment::XPackageTypeInfo> >
-PackageRegistryImpl::getSupportedPackageTypes() throw (RuntimeException)
+PackageRegistryImpl::getSupportedPackageTypes()
 {
     return comphelper::containerToSequence(m_typesInfos);
 }

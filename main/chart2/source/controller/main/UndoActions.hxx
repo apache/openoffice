@@ -80,9 +80,9 @@ public:
                );
 
     // XUndoAction
-    virtual ::rtl::OUString SAL_CALL getTitle() throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL undo(  ) throw (::com::sun::star::document::UndoFailedException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL redo(  ) throw (::com::sun::star::document::UndoFailedException, ::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getTitle();
+    virtual void SAL_CALL undo(  );
+    virtual void SAL_CALL redo(  );
 
     // OComponentHelper
     virtual void SAL_CALL disposing();
@@ -109,9 +109,9 @@ public:
     ShapeUndoElement( SdrUndoAction& i_sdrUndoAction );
 
     // XUndoAction
-    virtual ::rtl::OUString SAL_CALL getTitle() throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL undo(  ) throw (::com::sun::star::document::UndoFailedException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL redo(  ) throw (::com::sun::star::document::UndoFailedException, ::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getTitle();
+    virtual void SAL_CALL undo(  );
+    virtual void SAL_CALL redo(  );
 
     // OComponentHelper
     virtual void SAL_CALL disposing();

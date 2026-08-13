@@ -61,7 +61,6 @@ uno::Reference< embed::XHatchWindow > SAL_CALL OHatchWindowFactory::createHatchW
                 const uno::Reference< awt::XWindowPeer >& xParent,
                 const awt::Rectangle& aBounds,
                 const awt::Size& aHandlerSize )
-    throw (uno::RuntimeException)
 {
     if ( !xParent.is() )
         throw lang::IllegalArgumentException(); // TODO
@@ -74,14 +73,12 @@ uno::Reference< embed::XHatchWindow > SAL_CALL OHatchWindowFactory::createHatchW
 
 //-------------------------------------------------------------------------
 ::rtl::OUString SAL_CALL OHatchWindowFactory::getImplementationName()
-    throw ( uno::RuntimeException )
 {
     return impl_staticGetImplementationName();
 }
 
 //-------------------------------------------------------------------------
 sal_Bool SAL_CALL OHatchWindowFactory::supportsService( const ::rtl::OUString& ServiceName )
-    throw ( uno::RuntimeException )
 {
     uno::Sequence< ::rtl::OUString > aSeq = impl_staticGetSupportedServiceNames();
 
@@ -94,7 +91,6 @@ sal_Bool SAL_CALL OHatchWindowFactory::supportsService( const ::rtl::OUString& S
 
 //-------------------------------------------------------------------------
 uno::Sequence< ::rtl::OUString > SAL_CALL OHatchWindowFactory::getSupportedServiceNames()
-    throw ( uno::RuntimeException )
 {
     return impl_staticGetSupportedServiceNames();
 }

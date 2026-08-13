@@ -89,10 +89,6 @@ SwPanelFactory::~SwPanelFactory (void)
 Reference<ui::XUIElement> SAL_CALL SwPanelFactory::createUIElement (
 	const ::rtl::OUString& rsResourceURL,
 	const ::cssu::Sequence<css::beans::PropertyValue>& rArguments)
-	throw(
-		container::NoSuchElementException,
-		lang::IllegalArgumentException,
-		RuntimeException)
 {
 	Reference<ui::XUIElement> xElement;
 

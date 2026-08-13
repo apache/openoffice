@@ -50,23 +50,15 @@ class SwTextMarkupHelper
         // <--
         ~SwTextMarkupHelper() {}
 
-        sal_Int32 getTextMarkupCount( const sal_Int32 nTextMarkupType )
-                throw (::com::sun::star::lang::IllegalArgumentException,
-                       ::com::sun::star::uno::RuntimeException);
+        sal_Int32 getTextMarkupCount( const sal_Int32 nTextMarkupType );
 
         ::com::sun::star::accessibility::TextSegment getTextMarkup(
                                             const sal_Int32 nTextMarkupIndex,
-                                            const sal_Int32 nTextMarkupType )
-                throw (::com::sun::star::lang::IndexOutOfBoundsException,
-                       ::com::sun::star::lang::IllegalArgumentException,
-                       ::com::sun::star::uno::RuntimeException);
+                                            const sal_Int32 nTextMarkupType );
 
         ::com::sun::star::uno::Sequence< ::com::sun::star::accessibility::TextSegment >
                 getTextMarkupAtIndex( const sal_Int32 nCharIndex,
-                                      const sal_Int32 nTextMarkupType )
-                throw (::com::sun::star::lang::IndexOutOfBoundsException,
-                       ::com::sun::star::lang::IllegalArgumentException,
-                       ::com::sun::star::uno::RuntimeException);
+                                      const sal_Int32 nTextMarkupType );
 
     private:
         SwTextMarkupHelper( const SwTextMarkupHelper& );

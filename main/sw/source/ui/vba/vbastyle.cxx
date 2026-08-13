@@ -32,47 +32,47 @@ using namespace ::ooo::vba;
 using namespace ::com::sun::star;
 
 
-SwVbaStyle::SwVbaStyle( const uno::Reference< XHelperInterface >& xParent, const uno::Reference< uno::XComponentContext > & xContext, const uno::Reference< beans::XPropertySet >& _xPropertySet ) throw ( script::BasicErrorException, uno::RuntimeException ) : SwVbaStyle_BASE( xParent, xContext ) , mxStyleProps( _xPropertySet )
+SwVbaStyle::SwVbaStyle( const uno::Reference< XHelperInterface >& xParent, const uno::Reference< uno::XComponentContext > & xContext, const uno::Reference< beans::XPropertySet >& _xPropertySet ) : SwVbaStyle_BASE( xParent, xContext ) , mxStyleProps( _xPropertySet )
 {
     mxStyle.set( _xPropertySet, uno::UNO_QUERY_THROW );
 }
 
 void SAL_CALL
-SwVbaStyle::setName( const ::rtl::OUString& Name ) throw (uno::RuntimeException)
+SwVbaStyle::setName( const ::rtl::OUString& Name )
 {
 	mxStyle->setName(Name);
 }
 
 ::rtl::OUString SAL_CALL
-SwVbaStyle::getName() throw (uno::RuntimeException)
+SwVbaStyle::getName()
 {
 	return mxStyle->getName();
 }
 
-sal_Int32 SwVbaStyle::getLanguageID( const uno::Reference< beans::XPropertySet >& xTCProps ) throw (uno::RuntimeException)
+sal_Int32 SwVbaStyle::getLanguageID( const uno::Reference< beans::XPropertySet >& xTCProps )
 {
     lang::Locale aLocale;
     xTCProps->getPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("CharLocale") ) ) >>= aLocale;
     return MsLangId::convertLocaleToLanguage( aLocale );
 }
 
-void SwVbaStyle::setLanguageID( const uno::Reference< beans::XPropertySet >& xTCProps, sal_Int32 _languageid ) throw (uno::RuntimeException)
+void SwVbaStyle::setLanguageID( const uno::Reference< beans::XPropertySet >& xTCProps, sal_Int32 _languageid )
 {
     lang::Locale aLocale = MsLangId::convertLanguageToLocale( static_cast<LanguageType>(_languageid) );
     xTCProps->setPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("CharLocale") ), uno::makeAny( aLocale ) ) ;
 }
 
-::sal_Int32 SAL_CALL SwVbaStyle::getLanguageID() throw (uno::RuntimeException)
+::sal_Int32 SAL_CALL SwVbaStyle::getLanguageID()
 {
     return getLanguageID( mxStyleProps );
 }
 
-void SAL_CALL SwVbaStyle::setLanguageID( ::sal_Int32 _languageid ) throw (uno::RuntimeException)
+void SAL_CALL SwVbaStyle::setLanguageID( ::sal_Int32 _languageid )
 {
     setLanguageID( mxStyleProps, _languageid );
 }
 
-::sal_Int32 SAL_CALL SwVbaStyle::getType() throw (uno::RuntimeException)
+::sal_Int32 SAL_CALL SwVbaStyle::getType()
 {
     sal_Int32 nType = word::WdStyleType::wdStyleTypeParagraph;
     uno::Reference< lang::XServiceInfo > xServiceInfo( mxStyle, uno::UNO_QUERY_THROW );
@@ -86,13 +86,13 @@ void SAL_CALL SwVbaStyle::setLanguageID( ::sal_Int32 _languageid ) throw (uno::R
 }
 
 uno::Reference< word::XFont > SAL_CALL
-SwVbaStyle::getFont() throw ( uno::RuntimeException )
+SwVbaStyle::getFont()
 {
     VbaPalette aColors;
     return new SwVbaFont( mxParent, mxContext, aColors.getPalette(), mxStyleProps );
 }
 
-void SwVbaStyle::setStyle( const uno::Reference< beans::XPropertySet >& xTCProps, const uno::Reference< ooo::vba::word::XStyle >& xStyle )throw (uno::RuntimeException)
+void SwVbaStyle::setStyle( const uno::Reference< beans::XPropertySet >& xTCProps, const uno::Reference< ooo::vba::word::XStyle >& xStyle )
 {
     rtl::OUString aStyleType = getOOoStyleTypeFromMSWord( xStyle->getType() );
     xTCProps->setPropertyValue( aStyleType, uno::makeAny( xStyle->getName() ) );

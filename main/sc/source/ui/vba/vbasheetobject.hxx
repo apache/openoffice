@@ -50,28 +50,28 @@ public:
         const css::uno::Reference< css::beans::XPropertySet >& rxPropSet,
         const ScVbaPalette& rPalette,
         const css::uno::Any& rStart,
-        const css::uno::Any& rLength ) throw (css::uno::RuntimeException);
+        const css::uno::Any& rLength );
 	virtual ~ScVbaButtonCharacters();
 
 	// XCharacters attributes
-	virtual ::rtl::OUString SAL_CALL getCaption() throw (css::uno::RuntimeException);
-	virtual void SAL_CALL setCaption( const ::rtl::OUString& rCaption ) throw (css::uno::RuntimeException);
-	virtual ::rtl::OUString SAL_CALL getText() throw (css::uno::RuntimeException);
-	virtual void SAL_CALL setText( const ::rtl::OUString& rText ) throw (css::uno::RuntimeException);
-	virtual sal_Int32 SAL_CALL getCount() throw (css::uno::RuntimeException);
-	virtual css::uno::Reference< ov::excel::XFont > SAL_CALL getFont() throw (css::uno::RuntimeException);
-	virtual void SAL_CALL setFont( const css::uno::Reference< ov::excel::XFont >& rxFont ) throw (css::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getCaption();
+	virtual void SAL_CALL setCaption( const ::rtl::OUString& rCaption );
+	virtual ::rtl::OUString SAL_CALL getText();
+	virtual void SAL_CALL setText( const ::rtl::OUString& rText );
+	virtual sal_Int32 SAL_CALL getCount();
+	virtual css::uno::Reference< ov::excel::XFont > SAL_CALL getFont();
+	virtual void SAL_CALL setFont( const css::uno::Reference< ov::excel::XFont >& rxFont );
 
 	// XCharacters methods
-	virtual void SAL_CALL Insert( const ::rtl::OUString& rString ) throw (css::uno::RuntimeException);
-	virtual void SAL_CALL Delete() throw (css::uno::RuntimeException);
+	virtual void SAL_CALL Insert( const ::rtl::OUString& rString );
+	virtual void SAL_CALL Delete();
 
 	// XHelperInterface
     VBAHELPER_DECL_XHELPERINTERFACE
 
 private:
-    ::rtl::OUString getFullString() const throw (css::uno::RuntimeException);
-    void setFullString( const ::rtl::OUString& rString ) throw (css::uno::RuntimeException);
+    ::rtl::OUString getFullString() const;
+    void setFullString( const ::rtl::OUString& rString );
 
 private:
     ScVbaPalette maPalette;
@@ -92,32 +92,32 @@ public:
         const css::uno::Reference< ov::XHelperInterface >& rxParent,
         const css::uno::Reference< css::uno::XComponentContext >& rxContext,
         const css::uno::Reference< css::frame::XModel >& rxModel,
-        const css::uno::Reference< css::drawing::XShape >& rxShape ) throw (css::uno::RuntimeException);
+        const css::uno::Reference< css::drawing::XShape >& rxShape );
 
     // XSheetObject attributes
-    virtual double SAL_CALL getLeft() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setLeft( double fLeft ) throw (css::uno::RuntimeException);
-    virtual double SAL_CALL getTop() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setTop( double fTop ) throw (css::uno::RuntimeException);
-    virtual double SAL_CALL getWidth() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setWidth( double fWidth ) throw (css::uno::RuntimeException);
-    virtual double SAL_CALL getHeight() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setHeight( double fHeight ) throw (css::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getName() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setName( const ::rtl::OUString& rName ) throw (css::uno::RuntimeException);
-    virtual sal_Int32 SAL_CALL getPlacement() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setPlacement( sal_Int32 nPlacement ) throw (css::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL getPrintObject() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setPrintObject( sal_Bool bPrintObject ) throw (css::uno::RuntimeException);
+    virtual double SAL_CALL getLeft();
+    virtual void SAL_CALL setLeft( double fLeft );
+    virtual double SAL_CALL getTop();
+    virtual void SAL_CALL setTop( double fTop );
+    virtual double SAL_CALL getWidth();
+    virtual void SAL_CALL setWidth( double fWidth );
+    virtual double SAL_CALL getHeight();
+    virtual void SAL_CALL setHeight( double fHeight );
+    virtual ::rtl::OUString SAL_CALL getName();
+    virtual void SAL_CALL setName( const ::rtl::OUString& rName );
+    virtual sal_Int32 SAL_CALL getPlacement();
+    virtual void SAL_CALL setPlacement( sal_Int32 nPlacement );
+    virtual sal_Bool SAL_CALL getPrintObject();
+    virtual void SAL_CALL setPrintObject( sal_Bool bPrintObject );
 
     /** Sets default properties after a new object has been created. */
-    void setDefaultProperties( sal_Int32 nIndex ) throw (css::uno::RuntimeException);
+    void setDefaultProperties( sal_Int32 nIndex );
 
 protected:
     /** Derived classes return the base name used for new objects. */
     virtual ::rtl::OUString implGetBaseName() const = 0;
     /** Derived classes set default properties for new drawing objects. */
-    virtual void implSetDefaultProperties() throw (css::uno::RuntimeException);
+    virtual void implSetDefaultProperties();
 
 protected:
     ScVbaPalette maPalette;
@@ -149,22 +149,22 @@ public:
         const css::uno::Reference< css::frame::XModel >& rxModel,
         const css::uno::Reference< css::container::XIndexContainer >& rxFormIC,
         const css::uno::Reference< css::drawing::XControlShape >& rxControlShape,
-        ListenerType eListenerType ) throw (css::uno::RuntimeException);
+        ListenerType eListenerType );
 
     // XSheetObject attributes
-    virtual ::rtl::OUString SAL_CALL getName() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setName( const ::rtl::OUString& rName ) throw (css::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getOnAction() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setOnAction( const ::rtl::OUString& rMacroName ) throw (css::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL getPrintObject() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setPrintObject( sal_Bool bPrintObject ) throw (css::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getName();
+    virtual void SAL_CALL setName( const ::rtl::OUString& rName );
+    virtual ::rtl::OUString SAL_CALL getOnAction();
+    virtual void SAL_CALL setOnAction( const ::rtl::OUString& rMacroName );
+    virtual sal_Bool SAL_CALL getPrintObject();
+    virtual void SAL_CALL setPrintObject( sal_Bool bPrintObject );
 
     // XControlObject attributes
-    virtual sal_Bool SAL_CALL getAutoSize() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setAutoSize( sal_Bool bAutoSize ) throw (css::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL getAutoSize();
+    virtual void SAL_CALL setAutoSize( sal_Bool bAutoSize );
 
 protected:
-    sal_Int32 getModelIndexInForm() const throw (css::uno::RuntimeException);
+    sal_Int32 getModelIndexInForm() const;
 
 protected:
     css::uno::Reference< css::container::XIndexContainer > mxFormIC;
@@ -185,30 +185,30 @@ public:
         const css::uno::Reference< css::uno::XComponentContext >& rxContext,
         const css::uno::Reference< css::frame::XModel >& rxModel,
         const css::uno::Reference< css::container::XIndexContainer >& rxFormIC,
-        const css::uno::Reference< css::drawing::XControlShape >& rxControlShape ) throw (css::uno::RuntimeException);
+        const css::uno::Reference< css::drawing::XControlShape >& rxControlShape );
 
     // XButton attributes
-    virtual ::rtl::OUString SAL_CALL getCaption() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setCaption( const ::rtl::OUString& rCaption ) throw (css::uno::RuntimeException);
-    virtual css::uno::Reference< ov::excel::XFont > SAL_CALL getFont() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setFont( const css::uno::Reference< ov::excel::XFont >& rxFont ) throw (css::uno::RuntimeException);
-    virtual sal_Int32 SAL_CALL getHorizontalAlignment() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setHorizontalAlignment( sal_Int32 nAlign ) throw (css::uno::RuntimeException);
-    virtual sal_Int32 SAL_CALL getVerticalAlignment() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setVerticalAlignment( sal_Int32 nAlign ) throw (css::uno::RuntimeException);
-    virtual sal_Int32 SAL_CALL getOrientation() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setOrientation( sal_Int32 nOrientation ) throw (css::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getCaption();
+    virtual void SAL_CALL setCaption( const ::rtl::OUString& rCaption );
+    virtual css::uno::Reference< ov::excel::XFont > SAL_CALL getFont();
+    virtual void SAL_CALL setFont( const css::uno::Reference< ov::excel::XFont >& rxFont );
+    virtual sal_Int32 SAL_CALL getHorizontalAlignment();
+    virtual void SAL_CALL setHorizontalAlignment( sal_Int32 nAlign );
+    virtual sal_Int32 SAL_CALL getVerticalAlignment();
+    virtual void SAL_CALL setVerticalAlignment( sal_Int32 nAlign );
+    virtual sal_Int32 SAL_CALL getOrientation();
+    virtual void SAL_CALL setOrientation( sal_Int32 nOrientation );
 
     // XButton methods
     css::uno::Reference< ov::excel::XCharacters > SAL_CALL Characters(
-        const css::uno::Any& rStart, const css::uno::Any& rLength ) throw (css::uno::RuntimeException);
+        const css::uno::Any& rStart, const css::uno::Any& rLength );
 
     // XHelperInterface
     VBAHELPER_DECL_XHELPERINTERFACE
 
 protected:
     virtual ::rtl::OUString implGetBaseName() const;
-    virtual void implSetDefaultProperties() throw (css::uno::RuntimeException);
+    virtual void implSetDefaultProperties();
 };
 
 // ============================================================================

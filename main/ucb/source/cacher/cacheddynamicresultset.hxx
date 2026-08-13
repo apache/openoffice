@@ -77,8 +77,7 @@ public:
 	// own methods ( inherited )
 	//-----------------------------------------------------------------
     virtual void SAL_CALL
-	impl_disposing( const com::sun::star::lang::EventObject& Source )
-		throw( com::sun::star::uno::RuntimeException );
+	impl_disposing( const com::sun::star::lang::EventObject& Source );
 };
 
 //=========================================================================
@@ -125,8 +124,7 @@ public:
 				, const com::sun::star::uno::Reference<
 					com::sun::star::ucb::XContentIdentifierMapping > &
 						ContentIdentifierMapping
-				)
-			throw( com::sun::star::uno::RuntimeException );
+				);
 };
 
 #endif

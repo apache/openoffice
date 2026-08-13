@@ -61,16 +61,12 @@ namespace oooimprovement
             // XAsyncJob
             virtual void SAL_CALL executeAsync(
                 const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::NamedValue>& args,
-                const ::com::sun::star::uno::Reference< ::com::sun::star::task::XJobListener>& listener)
-                throw(::com::sun::star::uno::RuntimeException);
+                const ::com::sun::star::uno::Reference< ::com::sun::star::task::XJobListener>& listener);
 
             // XServiceInfo
-            virtual ::rtl::OUString SAL_CALL getImplementationName()
-                throw(::com::sun::star::uno::RuntimeException);
-            virtual sal_Bool SAL_CALL supportsService(const ::rtl::OUString& service_name)
-                throw(::com::sun::star::uno::RuntimeException);
-            virtual ::com::sun::star::uno::Sequence< ::rtl::OUString> SAL_CALL getSupportedServiceNames()
-                throw(::com::sun::star::uno::RuntimeException);
+            virtual ::rtl::OUString SAL_CALL getImplementationName();
+            virtual sal_Bool SAL_CALL supportsService(const ::rtl::OUString& service_name);
+            virtual ::com::sun::star::uno::Sequence< ::rtl::OUString> SAL_CALL getSupportedServiceNames();
 
         private:
             const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory> m_ServiceFactory;

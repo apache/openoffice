@@ -86,8 +86,7 @@ public:
 
     virtual void close();
 
-    virtual void validate()
-        throw( com::sun::star::ucb::ResultSetException );
+    virtual void validate();
 };
 
 }

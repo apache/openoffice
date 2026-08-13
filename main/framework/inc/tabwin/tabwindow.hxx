@@ -93,50 +93,50 @@ class TabWindow :  public ::com::sun::star::lang::XTypeProvider		        ,
 		//---------------------------------------------------------------------------------------------------------
 	    //	XInitialization
 	    //---------------------------------------------------------------------------------------------------------
-		virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments ) throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+		virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments );
 
         //---------------------------------------------------------------------------------------------------------
 	    //	XComponent
 	    //---------------------------------------------------------------------------------------------------------
-        virtual void SAL_CALL dispose() throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL addEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL removeEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& aListener ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL dispose();
+        virtual void SAL_CALL addEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& xListener );
+        virtual void SAL_CALL removeEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& aListener );
 
         //---------------------------------------------------------------------------------------------------------
 	    //	XSimpleTabController
 	    //---------------------------------------------------------------------------------------------------------
-        virtual ::sal_Int32 SAL_CALL insertTab() throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL removeTab( ::sal_Int32 ID ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL setTabProps( ::sal_Int32 ID, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::NamedValue >& Properties ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
-        virtual ::com::sun::star::uno::Sequence< ::com::sun::star::beans::NamedValue > SAL_CALL getTabProps( ::sal_Int32 ID ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL activateTab( ::sal_Int32 ID ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
-        virtual ::sal_Int32 SAL_CALL getActiveTabID(  ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL addTabListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTabListener >& Listener ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL removeTabListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTabListener >& Listener ) throw (::com::sun::star::uno::RuntimeException);
+        virtual ::sal_Int32 SAL_CALL insertTab();
+        virtual void SAL_CALL removeTab( ::sal_Int32 ID );
+        virtual void SAL_CALL setTabProps( ::sal_Int32 ID, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::NamedValue >& Properties );
+        virtual ::com::sun::star::uno::Sequence< ::com::sun::star::beans::NamedValue > SAL_CALL getTabProps( ::sal_Int32 ID );
+        virtual void SAL_CALL activateTab( ::sal_Int32 ID );
+        virtual ::sal_Int32 SAL_CALL getActiveTabID(  );
+        virtual void SAL_CALL addTabListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTabListener >& Listener );
+        virtual void SAL_CALL removeTabListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTabListener >& Listener );
 
         //---------------------------------------------------------------------------------------------------------
         //  XEventListener
 		//---------------------------------------------------------------------------------------------------------
-	    virtual void SAL_CALL disposing( const css::lang::EventObject& aEvent ) throw( css::uno::RuntimeException );
+	    virtual void SAL_CALL disposing( const css::lang::EventObject& aEvent );
 
 		//---------------------------------------------------------------------------------------------------------
 	    //	XTopWindowListener
 	    //---------------------------------------------------------------------------------------------------------
-        virtual void SAL_CALL windowOpened( const ::com::sun::star::lang::EventObject& e ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL windowClosing( const ::com::sun::star::lang::EventObject& e ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL windowClosed( const ::com::sun::star::lang::EventObject& e ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL windowMinimized( const ::com::sun::star::lang::EventObject& e ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL windowNormalized( const ::com::sun::star::lang::EventObject& e ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL windowActivated( const ::com::sun::star::lang::EventObject& e ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL windowDeactivated( const ::com::sun::star::lang::EventObject& e ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL windowOpened( const ::com::sun::star::lang::EventObject& e );
+        virtual void SAL_CALL windowClosing( const ::com::sun::star::lang::EventObject& e );
+        virtual void SAL_CALL windowClosed( const ::com::sun::star::lang::EventObject& e );
+        virtual void SAL_CALL windowMinimized( const ::com::sun::star::lang::EventObject& e );
+        virtual void SAL_CALL windowNormalized( const ::com::sun::star::lang::EventObject& e );
+        virtual void SAL_CALL windowActivated( const ::com::sun::star::lang::EventObject& e );
+        virtual void SAL_CALL windowDeactivated( const ::com::sun::star::lang::EventObject& e );
 
         //---------------------------------------------------------------------------------------------------------
 	    //	XWindowListener
 	    //---------------------------------------------------------------------------------------------------------
-    	virtual void SAL_CALL windowResized( const css::awt::WindowEvent& aEvent ) throw( css::uno::RuntimeException );
-    	virtual void SAL_CALL windowMoved( const css::awt::WindowEvent& aEvent ) throw( css::uno::RuntimeException );
-        virtual void SAL_CALL windowShown( const css::lang::EventObject& aEvent ) throw( css::uno::RuntimeException );
-        virtual void SAL_CALL windowHidden( const css::lang::EventObject& aEvent ) throw( css::uno::RuntimeException );
+    	virtual void SAL_CALL windowResized( const css::awt::WindowEvent& aEvent );
+    	virtual void SAL_CALL windowMoved( const css::awt::WindowEvent& aEvent );
+        virtual void SAL_CALL windowShown( const css::lang::EventObject& aEvent );
+        virtual void SAL_CALL windowHidden( const css::lang::EventObject& aEvent );
 
     protected:
         DECL_LINK( Activate, TabControl* );
@@ -149,13 +149,13 @@ class TabWindow :  public ::com::sun::star::lang::XTypeProvider		        ,
         virtual sal_Bool                                            SAL_CALL convertFastPropertyValue( com::sun::star::uno::Any&        aConvertedValue ,
                                                                                                        com::sun::star::uno::Any&        aOldValue       ,
                                                                                                        sal_Int32                        nHandle         ,
-                                                                                                       const com::sun::star::uno::Any&  aValue          ) throw( com::sun::star::lang::IllegalArgumentException );
+                                                                                                       const com::sun::star::uno::Any&  aValue          );
         virtual void                                                SAL_CALL setFastPropertyValue_NoBroadcast( sal_Int32                        nHandle         ,
-                                                                                                               const com::sun::star::uno::Any&  aValue          ) throw( com::sun::star::uno::Exception                 );
+                                                                                                               const com::sun::star::uno::Any&  aValue          );
         virtual void                                                SAL_CALL getFastPropertyValue( com::sun::star::uno::Any&    aValue          ,
                                                                                                    sal_Int32                    nHandle         ) const;
         virtual ::cppu::IPropertyArrayHelper&                       SAL_CALL getInfoHelper();
-        virtual ::com::sun::star::uno::Reference< com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo() throw (::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Reference< com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo();
 
         static const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::Property > impl_getStaticPropertyDescriptor();
 

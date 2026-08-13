@@ -81,24 +81,23 @@ IMPLEMENT_FORWARD_XTYPEPROVIDER2( ORoadmapEntry, ORoadmapEntry_Base, ::comphelpe
 //--------------------------------------------------------------------------
 ::com::sun::star::uno::Reference< ::com::sun::star:: beans::XPropertySetInfo > SAL_CALL
     ORoadmapEntry::getPropertySetInfo()
-    throw(::com::sun::star::uno::RuntimeException)
 {
     return ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo >(
         createPropertySetInfo( getInfoHelper() ) );
 }
 
-::rtl::OUString SAL_CALL ORoadmapEntry::getImplementationName(  ) throw (::com::sun::star::uno::RuntimeException)
+::rtl::OUString SAL_CALL ORoadmapEntry::getImplementationName(  )
 {
     ::rtl::OUString aStr = ::rtl::OUString::createFromAscii("com.sun.star.comp.toolkit.RoadmapItem");
     return aStr;
 }
 
-sal_Bool SAL_CALL ORoadmapEntry::supportsService( const ::rtl::OUString& ServiceName ) throw (::com::sun::star::uno::RuntimeException)
+sal_Bool SAL_CALL ORoadmapEntry::supportsService( const ::rtl::OUString& ServiceName )
 {
     return ServiceName.equals( ::rtl::OUString::createFromAscii( "com.sun.star.awt.RoadmapItem" ) );
 }
 
-::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL ORoadmapEntry::getSupportedServiceNames(  ) throw (::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL ORoadmapEntry::getSupportedServiceNames(  )
 {
     ::com::sun::star::uno::Sequence< ::rtl::OUString > aRet(1);
     ::rtl::OUString* pArray = aRet.getArray();

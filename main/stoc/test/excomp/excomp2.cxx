@@ -65,24 +65,24 @@ public:
 	~ExampleComponent2Impl();
 
 	// XInterface
-    virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType );
     virtual void SAL_CALL acquire() throw()
 		{ OWeakObject::acquire(); }
     virtual void SAL_CALL release() throw()
 		{ OWeakObject::release(); }
 
     // XTypeProvider
-	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes() throw (::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId() throw (::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes();
+	virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId();
 
     // XServiceInfo
-    virtual OUString SAL_CALL getImplementationName(  ) throw(RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( const OUString& ServiceName ) throw(RuntimeException);
-    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames(  ) throw(RuntimeException);
+    virtual OUString SAL_CALL getImplementationName(  );
+    virtual sal_Bool SAL_CALL supportsService( const OUString& ServiceName );
+    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames(  );
     static Sequence< OUString > SAL_CALL getSupportedServiceNames_Static(  );
 
 	// XTest
-    virtual OUString SAL_CALL getMessage() throw(RuntimeException);
+    virtual OUString SAL_CALL getMessage();
 
 protected:
 	Mutex		m_mutex;
@@ -103,7 +103,6 @@ ExampleComponent2Impl::~ExampleComponent2Impl()
 
 //*************************************************************************
 Any SAL_CALL ExampleComponent2Impl::queryInterface( const ::com::sun::star::uno::Type & rType )
-	throw(::com::sun::star::uno::RuntimeException)
 {
 	Any aRet = ::cppu::queryInterface(rType,
 									  static_cast< XTypeProvider * >( this ),
@@ -117,7 +116,6 @@ Any SAL_CALL ExampleComponent2Impl::queryInterface( const ::com::sun::star::uno:
 
 //*************************************************************************
 Sequence< Type > SAL_CALL ExampleComponent2Impl::getTypes()
-	throw (::com::sun::star::uno::RuntimeException)
 {
 	static OTypeCollection * pTypes = 0;
 	if (! pTypes)
@@ -139,7 +137,6 @@ Sequence< Type > SAL_CALL ExampleComponent2Impl::getTypes()
 
 //*************************************************************************
 Sequence< sal_Int8 > SAL_CALL ExampleComponent2Impl::getImplementationId()
-	throw (::com::sun::star::uno::RuntimeException)
 {
 	static OImplementationId * pId = 0;
 	if (! pId)
@@ -156,7 +153,6 @@ Sequence< sal_Int8 > SAL_CALL ExampleComponent2Impl::getImplementationId()
 
 //*************************************************************************
 OUString SAL_CALL ExampleComponent2Impl::getImplementationName(  )
-	throw(RuntimeException)
 {
 	Guard< Mutex > aGuard( m_mutex );
 	return OUString( RTL_CONSTASCII_USTRINGPARAM(IMPLNAME2) );
@@ -164,7 +160,6 @@ OUString SAL_CALL ExampleComponent2Impl::getImplementationName(  )
 
 //*************************************************************************
 sal_Bool SAL_CALL ExampleComponent2Impl::supportsService( const OUString& ServiceName )
-	throw(RuntimeException)
 {
 	Guard< Mutex > aGuard( m_mutex );
 	Sequence< OUString > aSNL = getSupportedServiceNames();
@@ -177,7 +172,6 @@ sal_Bool SAL_CALL ExampleComponent2Impl::supportsService( const OUString& Servic
 
 //*************************************************************************
 Sequence<OUString> SAL_CALL ExampleComponent2Impl::getSupportedServiceNames(  )
-	throw(RuntimeException)
 {
 	Guard< Mutex > aGuard( m_mutex );
 	return getSupportedServiceNames_Static();
@@ -191,7 +185,7 @@ Sequence<OUString> SAL_CALL ExampleComponent2Impl::getSupportedServiceNames_Stat
 }
 
 //*************************************************************************
-OUString SAL_CALL ExampleComponent2Impl::getMessage() throw(RuntimeException)
+OUString SAL_CALL ExampleComponent2Impl::getMessage()
 {
 	Guard< Mutex > aGuard( m_mutex );
 	return OUString::createFromAscii("Alle meine Entchen schwimmen auf dem See, schwimmen auf dem See ...");

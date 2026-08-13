@@ -95,7 +95,7 @@ static OUString encodeZipUri( const OUString& rURI )
 	return Uri::encode( rURI, rtl_UriCharClassUric, rtl_UriEncodeCheckEscapes, RTL_TEXTENCODING_UTF8 );
 }
 
-static Reference< XInterface > addFolder( Reference< XInterface >& xRootFolder, Reference< XSingleServiceFactory >& xFactory, const OUString& rName ) throw( Exception )
+static Reference< XInterface > addFolder( Reference< XInterface >& xRootFolder, Reference< XSingleServiceFactory >& xFactory, const OUString& rName )
 {
 	if ( rName.equals( OUString( RTL_CONSTASCII_USTRINGPARAM( ".." ) ) )
 	  || rName.equals( OUString( RTL_CONSTASCII_USTRINGPARAM( "." ) ) ) )
@@ -118,7 +118,7 @@ static Reference< XInterface > addFolder( Reference< XInterface >& xRootFolder, 
 	return xFolder;
 }
 
-static void _addFile( Reference< XInterface >& xRootFolder, Reference< XSingleServiceFactory >& xFactory, Reference< XInputStream >& xInput, OUString aName ) throw( Exception )
+static void _addFile( Reference< XInterface >& xRootFolder, Reference< XSingleServiceFactory >& xFactory, Reference< XInputStream >& xInput, OUString aName )
 {
 
 	Reference< XActiveDataSink > xSink( xFactory->createInstance(), UNO_QUERY );
@@ -139,7 +139,7 @@ static void addFile( Reference< XInterface > xRootFolder, Reference< XSingleServ
 }
 */
 
-void XMLFilterJarHelper::addFile( Reference< XInterface > xRootFolder, Reference< XSingleServiceFactory > xFactory, const OUString& rSourceFile ) throw( Exception )
+void XMLFilterJarHelper::addFile( Reference< XInterface > xRootFolder, Reference< XSingleServiceFactory > xFactory, const OUString& rSourceFile )
 {
 	if( rSourceFile.getLength() &&
 		(rSourceFile.compareToAscii( RTL_CONSTASCII_STRINGPARAM("http:") ) != 0) &&

@@ -43,15 +43,15 @@ class GObjectImpl : public GObjectAccess_BASE
      ::osl::Mutex m_aMutex;
      std::auto_ptr< GraphicObject > mpGObject;
 public:
-     GObjectImpl( uno::Sequence< uno::Any > const & args, uno::Reference< uno::XComponentContext > const & xComponentContext ) throw (uno::RuntimeException);
+     GObjectImpl( uno::Sequence< uno::Any > const & args, uno::Reference< uno::XComponentContext > const & xComponentContext );
 
      // XGraphicObject
-    virtual uno::Reference< graphic::XGraphic > SAL_CALL getGraphic() throw (uno::RuntimeException);
-    virtual void SAL_CALL setGraphic( const uno::Reference< graphic::XGraphic >& _graphic ) throw (uno::RuntimeException);
-    ::rtl::OUString SAL_CALL getUniqueID() throw (uno::RuntimeException);
+    virtual uno::Reference< graphic::XGraphic > SAL_CALL getGraphic();
+    virtual void SAL_CALL setGraphic( const uno::Reference< graphic::XGraphic >& _graphic );
+    ::rtl::OUString SAL_CALL getUniqueID();
 };
 
-GObjectImpl::GObjectImpl( uno::Sequence< uno::Any > const & args, uno::Reference< uno::XComponentContext > const & /*xComponentContext*/ ) throw (uno::RuntimeException)
+GObjectImpl::GObjectImpl( uno::Sequence< uno::Any > const & args, uno::Reference< uno::XComponentContext > const & /*xComponentContext*/ )
 {
     if ( args.getLength() == 1 )
     {
@@ -65,7 +65,7 @@ GObjectImpl::GObjectImpl( uno::Sequence< uno::Any > const & args, uno::Reference
        mpGObject.reset( new GraphicObject() );
 }
 
-uno::Reference< graphic::XGraphic > SAL_CALL GObjectImpl::getGraphic() throw (uno::RuntimeException)
+uno::Reference< graphic::XGraphic > SAL_CALL GObjectImpl::getGraphic()
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     if ( !mpGObject.get() )
@@ -73,7 +73,7 @@ uno::Reference< graphic::XGraphic > SAL_CALL GObjectImpl::getGraphic() throw (un
     return mpGObject->GetGraphic().GetXGraphic();
 }
 
-void SAL_CALL GObjectImpl::setGraphic( const uno::Reference< graphic::XGraphic >& _graphic ) throw (uno::RuntimeException)
+void SAL_CALL GObjectImpl::setGraphic( const uno::Reference< graphic::XGraphic >& _graphic )
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     if ( !mpGObject.get() )
@@ -82,7 +82,7 @@ void SAL_CALL GObjectImpl::setGraphic( const uno::Reference< graphic::XGraphic >
     mpGObject->SetGraphic( aGraphic );
 }
 
-::rtl::OUString SAL_CALL GObjectImpl::getUniqueID() throw (uno::RuntimeException)
+::rtl::OUString SAL_CALL GObjectImpl::getUniqueID()
 {
     ::osl::MutexGuard aGuard( m_aMutex );
     rtl::OUString sId;

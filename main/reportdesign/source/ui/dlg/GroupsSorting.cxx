@@ -113,11 +113,11 @@ public:
 	virtual ~OFieldExpressionControl();
 
     // XEventListener
-    virtual void SAL_CALL disposing(const ::com::sun::star::lang::EventObject& Source) throw( ::com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL disposing(const ::com::sun::star::lang::EventObject& Source);
     // XContainerListener
-	virtual void SAL_CALL elementInserted(const ::com::sun::star::container::ContainerEvent& rEvent) throw(::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL elementReplaced(const ::com::sun::star::container::ContainerEvent& rEvent) throw(::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL elementRemoved(const ::com::sun::star::container::ContainerEvent& rEvent) throw(::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL elementInserted(const ::com::sun::star::container::ContainerEvent& rEvent);
+	virtual void SAL_CALL elementReplaced(const ::com::sun::star::container::ContainerEvent& rEvent);
+	virtual void SAL_CALL elementRemoved(const ::com::sun::star::container::ContainerEvent& rEvent);
 
     void		fillColumns(const uno::Reference< container::XNameAccess>& _xColumns);
 	void		lateInit();
@@ -630,13 +630,13 @@ EditBrowseBox::RowStatus OFieldExpressionControl::GetRowStatus(long nRow) const
 }
 //	XEventListener
 //------------------------------------------------------------------------------
-void SAL_CALL OFieldExpressionControl::disposing(const lang::EventObject& /*e*/) throw( uno::RuntimeException )
+void SAL_CALL OFieldExpressionControl::disposing(const lang::EventObject& /*e*/)
 {
 }
 //------------------------------------------------------------------------------
 // XContainerListener
 //------------------------------------------------------------------------------
-void SAL_CALL OFieldExpressionControl::elementInserted(const container::ContainerEvent& evt) throw(uno::RuntimeException)
+void SAL_CALL OFieldExpressionControl::elementInserted(const container::ContainerEvent& evt)
 {
     if ( m_bIgnoreEvent )
         return;
@@ -683,11 +683,11 @@ void SAL_CALL OFieldExpressionControl::elementInserted(const container::Containe
     }
 }
 //------------------------------------------------------------------------------
-void SAL_CALL OFieldExpressionControl::elementReplaced(const container::ContainerEvent& /*evt*/) throw(uno::RuntimeException)
+void SAL_CALL OFieldExpressionControl::elementReplaced(const container::ContainerEvent& /*evt*/)
 {
 }
 //------------------------------------------------------------------------------
-void SAL_CALL OFieldExpressionControl::elementRemoved(const container::ContainerEvent& evt) throw(uno::RuntimeException)
+void SAL_CALL OFieldExpressionControl::elementRemoved(const container::ContainerEvent& evt)
 {
 	::vos::OClearableGuard aSolarGuard( Application::GetSolarMutex() );
     ::osl::MutexGuard aGuard( m_aMutex );
@@ -1319,7 +1319,7 @@ void OGroupsSortingDialog::showHelpText(sal_uInt16 _nResId)
 	m_aHelpWindow.SetText(String(ModuleRes(_nResId)));
 }
 // -----------------------------------------------------------------------------
-void OGroupsSortingDialog::_propertyChanged(const beans::PropertyChangeEvent& _rEvent) throw( uno::RuntimeException)
+void OGroupsSortingDialog::_propertyChanged(const beans::PropertyChangeEvent& _rEvent)
 {
 	uno::Reference< report::XGroup > xGroup(_rEvent.Source,uno::UNO_QUERY);
 	if ( xGroup.is() )
@@ -1535,7 +1535,7 @@ void OGroupsSortingDialog::resizeControls(const Size& _rDiff)
 
 //------------------------------------------------------------------
 // load the images
-ImageList OGroupsSortingDialog::getImageList(vcl::ImageListType _eType) SAL_THROW (( com::sun::star::lang::IllegalArgumentException ))
+ImageList OGroupsSortingDialog::getImageList(vcl::ImageListType _eType)
 {
     if (_eType == vcl::HIGHCONTRAST_NO)
     {

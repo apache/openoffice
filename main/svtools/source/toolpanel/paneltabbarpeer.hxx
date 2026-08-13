@@ -52,7 +52,7 @@ namespace svt
         virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleContext > CreateAccessibleContext();
 
         // XComponent
-        void SAL_CALL dispose() throw(::com::sun::star::uno::RuntimeException);
+        void SAL_CALL dispose();
 
     private:
         AccessibleFactoryAccess m_aAccessibleFactory;

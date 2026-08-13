@@ -72,48 +72,39 @@ protected:
     explicit RegressionEquation( const RegressionEquation & rOther );
 
     // ____ OPropertySet ____
-    virtual ::com::sun::star::uno::Any GetDefaultValue( sal_Int32 nHandle ) const
-        throw(::com::sun::star::beans::UnknownPropertyException);
+    virtual ::com::sun::star::uno::Any GetDefaultValue( sal_Int32 nHandle ) const;
 
 	virtual ::cppu::IPropertyArrayHelper & SAL_CALL getInfoHelper();
 
     // ____ XPropertySet ____
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL
-        getPropertySetInfo()
-        throw (::com::sun::star::uno::RuntimeException);
+        getPropertySetInfo();
 
 
     // ____ XCloneable ____
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloneable > SAL_CALL createClone()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloneable > SAL_CALL createClone();
 
     // ____ XModifyBroadcaster ____
     virtual void SAL_CALL addModifyListener(
-        const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener )
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener );
     virtual void SAL_CALL removeModifyListener(
-        const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener )
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >& aListener );
 
     // ____ XModifyListener ____
     virtual void SAL_CALL modified(
-        const ::com::sun::star::lang::EventObject& aEvent )
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::lang::EventObject& aEvent );
 
     // ____ XEventListener (base of XModifyListener) ____
     virtual void SAL_CALL disposing(
-        const ::com::sun::star::lang::EventObject& Source )
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::lang::EventObject& Source );
 
     // ____ XTitle ____
     virtual ::com::sun::star::uno::Sequence<
         ::com::sun::star::uno::Reference<
-        ::com::sun::star::chart2::XFormattedString > > SAL_CALL getText()
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::chart2::XFormattedString > > SAL_CALL getText();
     virtual void SAL_CALL setText( const ::com::sun::star::uno::Sequence<
                                    ::com::sun::star::uno::Reference<
-                                   ::com::sun::star::chart2::XFormattedString > >& Strings )
-        throw (::com::sun::star::uno::RuntimeException);
+                                   ::com::sun::star::chart2::XFormattedString > >& Strings );
 
     using ::cppu::OPropertySetHelper::disposing;
 

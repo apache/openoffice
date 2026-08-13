@@ -81,14 +81,12 @@ SingletonTypeDescriptionImpl::~SingletonTypeDescriptionImpl()
 //__________________________________________________________________________________________________
 // virtual
 TypeClass SingletonTypeDescriptionImpl::getTypeClass()
-    throw(::com::sun::star::uno::RuntimeException)
 {
     return TypeClass_SINGLETON;
 }
 //__________________________________________________________________________________________________
 // virtual
 OUString SingletonTypeDescriptionImpl::getName()
-    throw(::com::sun::star::uno::RuntimeException)
 {
     return _aName;
 }
@@ -98,7 +96,6 @@ OUString SingletonTypeDescriptionImpl::getName()
 // virtual
 Reference< XServiceTypeDescription > SAL_CALL
 SingletonTypeDescriptionImpl::getService()
-    throw(::com::sun::star::uno::RuntimeException)
 {
     init();
     return _xServiceTD;
@@ -109,7 +106,6 @@ SingletonTypeDescriptionImpl::getService()
 // virtual
 sal_Bool SAL_CALL
 SingletonTypeDescriptionImpl::isInterfaceBased()
-    throw(::com::sun::star::uno::RuntimeException)
 {
     init();
     return _xInterfaceTD.is();
@@ -119,7 +115,6 @@ SingletonTypeDescriptionImpl::isInterfaceBased()
 // virtual
 Reference< XTypeDescription > SAL_CALL
 SingletonTypeDescriptionImpl::getInterface()
-    throw(::com::sun::star::uno::RuntimeException)
 {
     init();
     return _xInterfaceTD;

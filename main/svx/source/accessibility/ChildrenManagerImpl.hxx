@@ -125,8 +125,7 @@ public:
     long GetChildCount (void) const throw ();
 
 	::com::sun::star::uno::Reference<
-        ::com::sun::star::drawing::XShape> GetChildShape(long nIndex)
-		throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::drawing::XShape> GetChildShape(long nIndex);
     /**	Return the requested accessible child or throw and
         IndexOutOfBoundsException if the given index is invalid.
         @param nIndex
@@ -142,9 +141,7 @@ public:
     */
     ::com::sun::star::uno::Reference<
             ::com::sun::star::accessibility::XAccessible>
-    	GetChild (long nIndex)
-        throw (::com::sun::star::uno::RuntimeException,
-               ::com::sun::star::lang::IndexOutOfBoundsException);
+    	GetChild (long nIndex);
 
     /**	Return the requested accessible child.
         @param aChildDescriptor
@@ -159,8 +156,7 @@ public:
     */
     ::com::sun::star::uno::Reference<
             ::com::sun::star::accessibility::XAccessible>
-        GetChild (ChildDescriptor& aChildDescriptor,sal_Int32 _nIndex)
-        throw (::com::sun::star::uno::RuntimeException);
+        GetChild (ChildDescriptor& aChildDescriptor,sal_Int32 _nIndex);
 
     /**	Return the requested accessible child given a shape.  This method
         searches the list of descriptors for the one that holds the
@@ -177,8 +173,7 @@ public:
     ::com::sun::star::uno::Reference<
             ::com::sun::star::accessibility::XAccessible>
         GetChild (const ::com::sun::star::uno::Reference<
-            ::com::sun::star::drawing::XShape>& xShape)
-        throw (::com::sun::star::uno::RuntimeException);
+            ::com::sun::star::drawing::XShape>& xShape);
 
     /** Update the child manager.  Take care of a modified set of children
         and modified visible area.  This method can optimize the update
@@ -248,22 +243,19 @@ public:
     //=====  lang::XEventListener  ============================================
 
     virtual void SAL_CALL
-        disposing (const ::com::sun::star::lang::EventObject& rEventObject)
-        throw (::com::sun::star::uno::RuntimeException);
+        disposing (const ::com::sun::star::lang::EventObject& rEventObject);
 
 
     //=====  document::XEventListener  ========================================
 
     virtual void SAL_CALL
-        notifyEvent (const ::com::sun::star::document::EventObject& rEventObject)
-        throw (::com::sun::star::uno::RuntimeException);
+        notifyEvent (const ::com::sun::star::document::EventObject& rEventObject);
 
 
     //=====  view::XSelectionChangeListener  ==================================
 
     virtual void  SAL_CALL
-        selectionChanged (const ::com::sun::star::lang::EventObject& rEvent)
-        throw (::com::sun::star::uno::RuntimeException);
+        selectionChanged (const ::com::sun::star::lang::EventObject& rEvent);
 
 
     //=====  IAccessibleViewForwarderListener  ================================
@@ -298,16 +290,14 @@ public:
 		const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape >& _rxShape,
 		const long _nIndex,
 		const AccessibleShapeTreeInfo& _rShapeTreeInfo
-	)	throw (::com::sun::star::uno::RuntimeException);
+	);
     // Add the impl method for IAccessibleParent interface
     virtual AccessibleControlShape* GetAccControlShapeFromModel
-		(::com::sun::star::beans::XPropertySet* pSet)
-		throw (::com::sun::star::uno::RuntimeException);
+		(::com::sun::star::beans::XPropertySet* pSet);
 	virtual ::com::sun::star::uno::Reference<
             ::com::sun::star::accessibility::XAccessible>
         GetAccessibleCaption (const ::com::sun::star::uno::Reference<
-            ::com::sun::star::drawing::XShape>& xShape)
-        throw (::com::sun::star::uno::RuntimeException);
+            ::com::sun::star::drawing::XShape>& xShape);
 protected:
     /** This list holds the descriptors of all currently visible shapes and
         associated accessible object.
@@ -371,8 +361,7 @@ protected:
             child is unknown.
     */
     long GetChildIndex (const ::com::sun::star::uno::Reference<
-        ::com::sun::star::accessibility::XAccessible>& xChild) const
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::accessibility::XAccessible>& xChild) const;
 
     void impl_dispose (void);
 

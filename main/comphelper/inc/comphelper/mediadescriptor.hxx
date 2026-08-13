@@ -270,7 +270,7 @@ class COMPHELPER_DLLPUBLIC MediaDescriptor : public SequenceAsHashMap
          */
         COMPHELPER_DLLPRIVATE sal_Bool impl_openStreamWithPostData(
             const ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream >& _rxPostData
-            )   throw(::com::sun::star::uno::RuntimeException);
+            );
 
         //---------------------------------------
         /** @short  tries to open a stream by using the given URL.
@@ -297,7 +297,7 @@ class COMPHELPER_DLLPUBLIC MediaDescriptor : public SequenceAsHashMap
         COMPHELPER_DLLPRIVATE sal_Bool impl_openStreamWithURL(
             const ::rtl::OUString& sURL,
             sal_Bool bLockFile
-            ) throw(::com::sun::star::uno::RuntimeException);
+            );
 
         //---------------------------------------
         /** @short  some URL parts can make trouble for opening streams (e.g. jumpmarks.)

@@ -88,29 +88,27 @@ public:
 
 	// OPropertySetHelper
 	virtual void SAL_CALL getFastPropertyValue(::com::sun::star::uno::Any& rValue, sal_Int32 nHandle) const;
-	virtual void SAL_CALL setFastPropertyValue_NoBroadcast( sal_Int32 nHandle, const ::com::sun::star::uno::Any& rValue )
-				throw (::com::sun::star::uno::Exception);
+	virtual void SAL_CALL setFastPropertyValue_NoBroadcast( sal_Int32 nHandle, const ::com::sun::star::uno::Any& rValue );
 	virtual sal_Bool SAL_CALL convertFastPropertyValue(
-				::com::sun::star::uno::Any& _rConvertedValue, ::com::sun::star::uno::Any& _rOldValue, sal_Int32 _nHandle, const ::com::sun::star::uno::Any& _rValue )
-				throw (::com::sun::star::lang::IllegalArgumentException);
+				::com::sun::star::uno::Any& _rConvertedValue, ::com::sun::star::uno::Any& _rOldValue, sal_Int32 _nHandle, const ::com::sun::star::uno::Any& _rValue );
 
 	// XLoadListener
-	virtual void SAL_CALL reloaded( const ::com::sun::star::lang::EventObject& aEvent ) throw(::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL reloaded( const ::com::sun::star::lang::EventObject& aEvent );
 
 	// XServiceInfo
 	IMPLEMENTATION_NAME(OComboBoxModel);
-	virtual StringSequence SAL_CALL getSupportedServiceNames() throw(::com::sun::star::uno::RuntimeException);
+	virtual StringSequence SAL_CALL getSupportedServiceNames();
 
 	// UNO
 	DECLARE_UNO3_AGG_DEFAULTS(OComboBoxModel, OBoundControlModel);
-	virtual ::com::sun::star::uno::Any SAL_CALL queryAggregation( const ::com::sun::star::uno::Type& _rType ) throw (::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Any SAL_CALL queryAggregation( const ::com::sun::star::uno::Type& _rType );
 
 	// XPersistObject
-	virtual ::rtl::OUString SAL_CALL	getServiceName() throw(::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL	getServiceName();
 	virtual void SAL_CALL
-		write(const ::com::sun::star::uno::Reference< ::com::sun::star::io::XObjectOutputStream>& _rxOutStream) throw(::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
+		write(const ::com::sun::star::uno::Reference< ::com::sun::star::io::XObjectOutputStream>& _rxOutStream);
 	virtual void SAL_CALL
-		read(const ::com::sun::star::uno::Reference< ::com::sun::star::io::XObjectInputStream>& _rxInStream) throw(::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
+		read(const ::com::sun::star::uno::Reference< ::com::sun::star::io::XObjectInputStream>& _rxInStream);
 
     // OControlModel's property handling
 	virtual void describeFixedProperties(
@@ -121,7 +119,7 @@ public:
     ) const;
 
     // XEventListener
-	virtual void SAL_CALL disposing(const ::com::sun::star::lang::EventObject& Source) throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL disposing(const ::com::sun::star::lang::EventObject& Source);
 
     // prevent method hiding
     using OBoundControlModel::getFastPropertyValue;
@@ -163,7 +161,7 @@ public:
 
 	// XServiceInfo
 	IMPLEMENTATION_NAME(OComboBoxControl);
-	virtual StringSequence SAL_CALL getSupportedServiceNames() throw(::com::sun::star::uno::RuntimeException);
+	virtual StringSequence SAL_CALL getSupportedServiceNames();
 };
 
 //.........................................................................

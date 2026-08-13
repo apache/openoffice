@@ -56,23 +56,23 @@ namespace avmedia
         protected:
 
             // XKeyListener
-            virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw (::com::sun::star::uno::RuntimeException);
-            virtual void SAL_CALL keyPressed( const ::com::sun::star::awt::KeyEvent& e ) throw (::com::sun::star::uno::RuntimeException);
-            virtual void SAL_CALL keyReleased( const ::com::sun::star::awt::KeyEvent& e ) throw (::com::sun::star::uno::RuntimeException);
+            virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
+            virtual void SAL_CALL keyPressed( const ::com::sun::star::awt::KeyEvent& e );
+            virtual void SAL_CALL keyReleased( const ::com::sun::star::awt::KeyEvent& e );
 
             // XMouseListener
-            virtual void SAL_CALL mousePressed( const ::com::sun::star::awt::MouseEvent& e ) throw (::com::sun::star::uno::RuntimeException);
-            virtual void SAL_CALL mouseReleased( const ::com::sun::star::awt::MouseEvent& e ) throw (::com::sun::star::uno::RuntimeException);
-            virtual void SAL_CALL mouseEntered( const ::com::sun::star::awt::MouseEvent& e ) throw (::com::sun::star::uno::RuntimeException);
-            virtual void SAL_CALL mouseExited( const ::com::sun::star::awt::MouseEvent& e ) throw (::com::sun::star::uno::RuntimeException);
+            virtual void SAL_CALL mousePressed( const ::com::sun::star::awt::MouseEvent& e );
+            virtual void SAL_CALL mouseReleased( const ::com::sun::star::awt::MouseEvent& e );
+            virtual void SAL_CALL mouseEntered( const ::com::sun::star::awt::MouseEvent& e );
+            virtual void SAL_CALL mouseExited( const ::com::sun::star::awt::MouseEvent& e );
 
             // XMouseMotionListener
-            virtual void SAL_CALL mouseDragged( const ::com::sun::star::awt::MouseEvent& e ) throw (::com::sun::star::uno::RuntimeException);
-            virtual void SAL_CALL mouseMoved( const ::com::sun::star::awt::MouseEvent& e ) throw (::com::sun::star::uno::RuntimeException);
+            virtual void SAL_CALL mouseDragged( const ::com::sun::star::awt::MouseEvent& e );
+            virtual void SAL_CALL mouseMoved( const ::com::sun::star::awt::MouseEvent& e );
 
             // XFocusListener
-            virtual void SAL_CALL focusGained( const ::com::sun::star::awt::FocusEvent& e ) throw (::com::sun::star::uno::RuntimeException);
-            virtual void SAL_CALL focusLost( const ::com::sun::star::awt::FocusEvent& e ) throw (::com::sun::star::uno::RuntimeException);
+            virtual void SAL_CALL focusGained( const ::com::sun::star::awt::FocusEvent& e );
+            virtual void SAL_CALL focusLost( const ::com::sun::star::awt::FocusEvent& e );
 
         private:
 

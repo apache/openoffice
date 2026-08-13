@@ -56,7 +56,6 @@ void PlotterBase::initPlotter(  const uno::Reference< drawing::XShapes >& xLogic
 	   , const uno::Reference< drawing::XShapes >& xFinalTarget
 	   , const uno::Reference< lang::XMultiServiceFactory >& xShapeFactory
        , const rtl::OUString& rCID )
-	        throw (uno::RuntimeException)
 {
     DBG_ASSERT(xLogicTarget.is()&&xFinalTarget.is()&&xShapeFactory.is(),"no proper initialization parameters");
 	//is only allowed to be called once

@@ -100,9 +100,9 @@ namespace svx
 
     protected:
         // XDispatch
-        virtual void SAL_CALL dispatch( const ::com::sun::star::util::URL& _rURL, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& _rArguments ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL addStatusListener( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XStatusListener >& _rxControl, const ::com::sun::star::util::URL& _rURL ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL removeStatusListener( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XStatusListener >& _rxControl, const ::com::sun::star::util::URL& _rURL ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL dispatch( const ::com::sun::star::util::URL& _rURL, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& _rArguments );
+        virtual void SAL_CALL addStatusListener( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XStatusListener >& _rxControl, const ::com::sun::star::util::URL& _rURL );
+        virtual void SAL_CALL removeStatusListener( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XStatusListener >& _rxControl, const ::com::sun::star::util::URL& _rURL );
 
     protected:
         /** notifies our current state to one or all listeners
@@ -130,7 +130,7 @@ namespace svx
                 our Mutex is locked - else calling the method would not make sense, since
                 it's result could be out-of-date as soon as it's returned to the caller.
         */
-        void    checkAlive() const SAL_THROW((::com::sun::star::lang::DisposedException));
+        void    checkAlive() const;
 
         /** retrieves the current status of our feature, in a format which can be used
             for UNO notifications

@@ -136,7 +136,7 @@ OResultColumn::~OResultColumn()
 }
 // com::sun::star::lang::XTypeProvider
 //--------------------------------------------------------------------------
-Sequence< sal_Int8 > OResultColumn::getImplementationId() throw (RuntimeException)
+Sequence< sal_Int8 > OResultColumn::getImplementationId()
 {
 	static OImplementationId * pId = 0;
 	if (! pId)
@@ -153,13 +153,13 @@ Sequence< sal_Int8 > OResultColumn::getImplementationId() throw (RuntimeExceptio
 
 // XServiceInfo
 //------------------------------------------------------------------------------
-rtl::OUString OResultColumn::getImplementationName(  ) throw(RuntimeException)
+rtl::OUString OResultColumn::getImplementationName(  )
 {
 	return rtl::OUString::createFromAscii("com.sun.star.sdb.OResultColumn");
 }
 
 //------------------------------------------------------------------------------
-Sequence< ::rtl::OUString > OResultColumn::getSupportedServiceNames(  ) throw (RuntimeException)
+Sequence< ::rtl::OUString > OResultColumn::getSupportedServiceNames(  )
 {
 	Sequence< ::rtl::OUString > aSNS( 2 );
 	aSNS[0] = SERVICE_SDBCX_COLUMN;

@@ -55,9 +55,8 @@ public:
                  Reference<XComponentContext> const & xComponentContext );
 
     // XExecutableDialog
-	virtual void SAL_CALL setTitle( OUString const & title )
-        throw (RuntimeException);
-	virtual sal_Int16 SAL_CALL execute() throw (RuntimeException);
+	virtual void SAL_CALL setTitle( OUString const & title );
+	virtual sal_Int16 SAL_CALL execute();
 
     //// XJobExecutor
     //virtual void SAL_CALL trigger( OUString const & event )

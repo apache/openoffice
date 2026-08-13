@@ -150,24 +150,17 @@ public:
     virtual ~MetadatableMixin() {}
 
     // ::com::sun::star::rdf::XNode:
-    virtual ::rtl::OUString SAL_CALL getStringValue()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getStringValue();
 
     // ::com::sun::star::rdf::XURI:
-    virtual ::rtl::OUString SAL_CALL getLocalName()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getNamespace()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getLocalName();
+    virtual ::rtl::OUString SAL_CALL getNamespace();
 
     // ::com::sun::star::rdf::XMetadatable:
-    virtual ::com::sun::star::beans::StringPair SAL_CALL getMetadataReference()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::beans::StringPair SAL_CALL getMetadataReference();
     virtual void SAL_CALL setMetadataReference(
-        const ::com::sun::star::beans::StringPair & i_rReference)
-        throw (::com::sun::star::uno::RuntimeException,
-            ::com::sun::star::lang::IllegalArgumentException);
-    virtual void SAL_CALL ensureMetadataReference()
-        throw (::com::sun::star::uno::RuntimeException);
+        const ::com::sun::star::beans::StringPair & i_rReference);
+    virtual void SAL_CALL ensureMetadataReference();
 
 protected:
     /// get the core object corresponding to this UNO object.

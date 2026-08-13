@@ -710,7 +710,6 @@ Sequence< OUString > SAL_CALL SwXMLExportOOO_getSupportedServiceNames()
 
 Reference< XInterface > SAL_CALL SwXMLExportOOO_createInstance(
 		const Reference< XMultiServiceFactory > & rSMgr)
-	throw( Exception )
 {
 	return (cppu::OWeakObject*)new SwXMLExport( rSMgr, EXPORT_ALL);
 }
@@ -731,7 +730,6 @@ Sequence< OUString > SAL_CALL SwXMLExportStylesOOO_getSupportedServiceNames()
 
 Reference< XInterface > SAL_CALL SwXMLExportStylesOOO_createInstance(
 		const Reference< XMultiServiceFactory > & rSMgr)
-	throw( Exception )
 {
 	return (cppu::OWeakObject*)new SwXMLExport( rSMgr,
 		EXPORT_STYLES | EXPORT_MASTERSTYLES | EXPORT_AUTOSTYLES |
@@ -754,7 +752,6 @@ Sequence< OUString > SAL_CALL SwXMLExportContentOOO_getSupportedServiceNames()
 
 Reference< XInterface > SAL_CALL SwXMLExportContentOOO_createInstance(
 		const Reference< XMultiServiceFactory > & rSMgr)
-	throw( Exception )
 {
 	return (cppu::OWeakObject*)new SwXMLExport(rSMgr,
 		EXPORT_AUTOSTYLES | EXPORT_CONTENT | EXPORT_SCRIPTS |
@@ -777,7 +774,6 @@ Sequence< OUString > SAL_CALL SwXMLExportMetaOOO_getSupportedServiceNames()
 
 Reference< XInterface > SAL_CALL SwXMLExportMetaOOO_createInstance(
 		const Reference< XMultiServiceFactory > & rSMgr)
-	throw( Exception )
 {
 	return (cppu::OWeakObject*)new SwXMLExport( rSMgr, EXPORT_META);
 }
@@ -798,7 +794,6 @@ Sequence< OUString > SAL_CALL SwXMLExportSettingsOOO_getSupportedServiceNames()
 
 Reference< XInterface > SAL_CALL SwXMLExportSettingsOOO_createInstance(
 		const Reference< XMultiServiceFactory > & rSMgr)
-	throw( Exception )
 {
 	return (cppu::OWeakObject*)new SwXMLExport( rSMgr, EXPORT_SETTINGS);
 }
@@ -820,7 +815,6 @@ Sequence< OUString > SAL_CALL SwXMLExport_getSupportedServiceNames()
 
 Reference< XInterface > SAL_CALL SwXMLExport_createInstance(
 		const Reference< XMultiServiceFactory > & rSMgr)
-	throw( Exception )
 {
 	return (cppu::OWeakObject*)new SwXMLExport( rSMgr, EXPORT_ALL|EXPORT_OASIS);
 }
@@ -841,7 +835,6 @@ Sequence< OUString > SAL_CALL SwXMLExportStyles_getSupportedServiceNames()
 
 Reference< XInterface > SAL_CALL SwXMLExportStyles_createInstance(
 		const Reference< XMultiServiceFactory > & rSMgr)
-	throw( Exception )
 {
 	// #110680#
 	//return (cppu::OWeakObject*)new SwXMLExport(
@@ -868,7 +861,6 @@ Sequence< OUString > SAL_CALL SwXMLExportContent_getSupportedServiceNames()
 
 Reference< XInterface > SAL_CALL SwXMLExportContent_createInstance(
 		const Reference< XMultiServiceFactory > & rSMgr)
-	throw( Exception )
 {
 	// #110680#
 	//return (cppu::OWeakObject*)new SwXMLExport(
@@ -896,7 +888,6 @@ Sequence< OUString > SAL_CALL SwXMLExportMeta_getSupportedServiceNames()
 
 Reference< XInterface > SAL_CALL SwXMLExportMeta_createInstance(
 		const Reference< XMultiServiceFactory > & rSMgr)
-	throw( Exception )
 {
 	return (cppu::OWeakObject*)new SwXMLExport(rSMgr, EXPORT_META|EXPORT_OASIS);
 }
@@ -917,7 +908,6 @@ Sequence< OUString > SAL_CALL SwXMLExportSettings_getSupportedServiceNames()
 
 Reference< XInterface > SAL_CALL SwXMLExportSettings_createInstance(
 		const Reference< XMultiServiceFactory > & rSMgr)
-	throw( Exception )
 {
 	return (cppu::OWeakObject*)new SwXMLExport(rSMgr, EXPORT_SETTINGS|EXPORT_OASIS);
 }
@@ -929,7 +919,6 @@ const Sequence< sal_Int8 > & SwXMLExport::getUnoTunnelId() throw()
 }
 
 sal_Int64 SAL_CALL SwXMLExport::getSomething( const Sequence< sal_Int8 >& rId )
-	throw(RuntimeException)
 {
     if( rId.getLength() == 16
         && 0 == rtl_compareMemory( getUnoTunnelId().getConstArray(),
@@ -944,7 +933,6 @@ sal_Int64 SAL_CALL SwXMLExport::getSomething( const Sequence< sal_Int8 >& rId )
 // XServiceInfo
 // override empty method from parent class
 OUString SAL_CALL SwXMLExport::getImplementationName()
-    throw(RuntimeException)
 {
     switch( getExportFlags() )
     {

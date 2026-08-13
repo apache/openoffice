@@ -71,7 +71,7 @@ namespace vba
 const double Millimeter::factor =  35.27778;
 
 uno::Reference< beans::XIntrospectionAccess >
-getIntrospectionAccess( const uno::Any& aObject ) throw (uno::RuntimeException)
+getIntrospectionAccess( const uno::Any& aObject )
 {
 	static uno::Reference< beans::XIntrospection > xIntrospection;
 	if( !xIntrospection.is() )
@@ -83,7 +83,7 @@ getIntrospectionAccess( const uno::Any& aObject ) throw (uno::RuntimeException)
 }
 
 uno::Reference< script::XTypeConverter >
-getTypeConverter( const uno::Reference< uno::XComponentContext >& xContext ) throw (uno::RuntimeException)
+getTypeConverter( const uno::Reference< uno::XComponentContext >& xContext )
 {
 	static uno::Reference< script::XTypeConverter > xTypeConv( xContext->getServiceManager()->createInstanceWithContext( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.script.Converter") ), xContext ), uno::UNO_QUERY_THROW );
 	return xTypeConv;
@@ -114,7 +114,7 @@ class PasteCellsWarningReseter
 {
 private:
 	bool bInitialWarningState;
-	static uno::Reference< beans::XPropertySet > getGlobalSheetSettings() throw ( uno::RuntimeException )
+	static uno::Reference< beans::XPropertySet > getGlobalSheetSettings()
 	{
 		static uno::Reference< beans::XPropertySet > xTmpProps( ::comphelper::getProcessServiceFactory(), uno::UNO_QUERY_THROW );
 		static uno::Reference<uno::XComponentContext > xContext( xTmpProps->getPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "DefaultContext" ))), uno::UNO_QUERY_THROW );
@@ -124,19 +124,19 @@ private:
 		return xProps;
 	}
 
-	bool getReplaceCellsWarning() throw ( uno::RuntimeException )
+	bool getReplaceCellsWarning()
 	{
 		sal_Bool res = sal_False;
 		getGlobalSheetSettings()->getPropertyValue( REPLACE_CELLS_WARNING ) >>= res;
 		return ( res == sal_True );
 	}
 
-	void setReplaceCellsWarning( bool bState ) throw ( uno::RuntimeException )
+	void setReplaceCellsWarning( bool bState )
 	{
 		getGlobalSheetSettings()->setPropertyValue( REPLACE_CELLS_WARNING, uno::makeAny( bState ) );
 	}
 public:
-	PasteCellsWarningReseter() throw ( uno::RuntimeException )
+	PasteCellsWarningReseter()
 	{
 		bInitialWarningState = getReplaceCellsWarning();
 		if ( bInitialWarningState )
@@ -236,7 +236,7 @@ void implnPasteSpecial(sal_uInt16 nFlags,sal_uInt16 nFunction,sal_Bool bSkipEmpt
 }
 
  uno::Reference< frame::XModel >
-getCurrentDocument() throw (uno::RuntimeException)
+getCurrentDocument()
 {
 	uno::Reference< frame::XModel > xModel;
 	SbxObject* pBasic = dynamic_cast< SbxObject* > ( SFX_APP()->GetBasic() );
@@ -477,7 +477,7 @@ void PrintOutHelper( const uno::Any& From, const uno::Any& To, const uno::Any& C
 	dispatchExecute( xModel, SID_VIEWSHELL1 );
 }
 
-rtl::OUString getAnyAsString( const uno::Any& pvargItem ) throw ( uno::RuntimeException )
+rtl::OUString getAnyAsString( const uno::Any& pvargItem )
 {
 	uno::Type aType = pvargItem.getValueType();
 	uno::TypeClass eTypeClass = aType.getTypeClass();

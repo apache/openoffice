@@ -115,8 +115,7 @@ class KeyMapping
                     if the given identifier does not describe
                     a well known key code.
          */
-        virtual sal_uInt16 mapIdentifierToCode(const ::rtl::OUString& sIdentifier)
-            throw(css::lang::IllegalArgumentException);
+        virtual sal_uInt16 mapIdentifierToCode(const ::rtl::OUString& sIdentifier);
 
         //----------------------------------
         /** @short  return a suitable key identifier

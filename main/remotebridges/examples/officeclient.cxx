@@ -68,8 +68,7 @@ public:
 public:     // Methods
 
 
-    virtual sal_Int32 SAL_CALL run( const Sequence< OUString >& aArguments )
-		throw(RuntimeException);
+    virtual sal_Int32 SAL_CALL run( const Sequence< OUString >& aArguments );
 
 
 private: // helper methods
@@ -142,7 +141,7 @@ void OfficeClientMain::registerServices( )
 	}
 }
 
-sal_Int32 OfficeClientMain::run( const Sequence< OUString > & aArguments ) throw ( RuntimeException )
+sal_Int32 OfficeClientMain::run( const Sequence< OUString > & aArguments )
 {
 	printf( "Connecting ....\n" );
 

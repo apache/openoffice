@@ -72,8 +72,7 @@ public:
         context_(context) {}
 
     virtual ::sal_Int32 SAL_CALL run(
-        ::css::uno::Sequence< ::rtl::OUString > const &)
-        throw (::css::uno::RuntimeException);
+        ::css::uno::Sequence< ::rtl::OUString > const &);
 
 private:
     Service(Service &); // not defined
@@ -89,7 +88,6 @@ private:
 };
 
 ::sal_Int32 Service::run(::css::uno::Sequence< ::rtl::OUString > const &)
-    throw (::css::uno::RuntimeException)
 {
     osl_getThreadIdentifier(0); // check for sal
     (new salhelper::SimpleReferenceObject)->release(); // check for salhelper
@@ -237,7 +235,6 @@ namespace CppMain {
 
 ::css::uno::Reference< ::css::uno::XInterface > create(
     ::css::uno::Reference< ::css::uno::XComponentContext > const & context)
-    SAL_THROW((::css::uno::Exception))
 {
     try {
         return static_cast< ::cppu::OWeakObject * >(new Service(context));

@@ -51,19 +51,13 @@ public:
     virtual ~TypeDescriptionEnumerationImpl();
 
     // XEnumeration (base of XTypeDescriptionEnumeration)
-    virtual sal_Bool SAL_CALL hasMoreElements()
-        throw ( ::com::sun::star::uno::RuntimeException );
-    virtual ::com::sun::star::uno::Any SAL_CALL nextElement()
-        throw ( ::com::sun::star::container::NoSuchElementException,
-                ::com::sun::star::lang::WrappedTargetException,
-                ::com::sun::star::uno::RuntimeException );
+    virtual sal_Bool SAL_CALL hasMoreElements();
+    virtual ::com::sun::star::uno::Any SAL_CALL nextElement();
 
     // XTypeDescriptionEnumeration
     virtual ::com::sun::star::uno::Reference<
         ::com::sun::star::reflection::XTypeDescription > SAL_CALL
-    nextTypeDescription()
-        throw ( ::com::sun::star::container::NoSuchElementException,
-                ::com::sun::star::uno::RuntimeException );
+    nextTypeDescription();
 
 private:
     com::sun::star::uno::Reference<

@@ -88,110 +88,110 @@ namespace svxform
         }
 
         // form::XFormController
-        virtual Reference< XControl > SAL_CALL getCurrentControl(  ) throw (RuntimeException);
-        virtual void SAL_CALL addActivateListener( const Reference< form::XFormControllerListener >& l ) throw (RuntimeException);
-        virtual void SAL_CALL removeActivateListener( const Reference< form::XFormControllerListener >& l ) throw (RuntimeException);
+        virtual Reference< XControl > SAL_CALL getCurrentControl(  );
+        virtual void SAL_CALL addActivateListener( const Reference< form::XFormControllerListener >& l );
+        virtual void SAL_CALL removeActivateListener( const Reference< form::XFormControllerListener >& l );
 
         // awt::XTabController
-        virtual void SAL_CALL setModel( const Reference< XTabControllerModel >& Model ) throw (RuntimeException);
-        virtual Reference< XTabControllerModel > SAL_CALL getModel(  ) throw (RuntimeException);
-        virtual void SAL_CALL setContainer( const Reference< XControlContainer >& Container ) throw (RuntimeException);
-        virtual Reference< XControlContainer > SAL_CALL getContainer(  ) throw (RuntimeException);
-        virtual Sequence< Reference< XControl > > SAL_CALL getControls(  ) throw (RuntimeException);
-        virtual void SAL_CALL autoTabOrder(  ) throw (RuntimeException);
-        virtual void SAL_CALL activateTabOrder(  ) throw (RuntimeException);
-        virtual void SAL_CALL activateFirst(  ) throw (RuntimeException);
-        virtual void SAL_CALL activateLast(  ) throw (RuntimeException);
+        virtual void SAL_CALL setModel( const Reference< XTabControllerModel >& Model );
+        virtual Reference< XTabControllerModel > SAL_CALL getModel(  );
+        virtual void SAL_CALL setContainer( const Reference< XControlContainer >& Container );
+        virtual Reference< XControlContainer > SAL_CALL getContainer(  );
+        virtual Sequence< Reference< XControl > > SAL_CALL getControls(  );
+        virtual void SAL_CALL autoTabOrder(  );
+        virtual void SAL_CALL activateTabOrder(  );
+        virtual void SAL_CALL activateFirst(  );
+        virtual void SAL_CALL activateLast(  );
 
         // XServiceInfo
-        virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw (RuntimeException);
-        virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw (RuntimeException);
-        virtual Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw (RuntimeException);
+        virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+        virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+        virtual Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
     private:
         const Reference< form::runtime::XFormController >   m_xDelegator;
     };
 
     //--------------------------------------------------------------------
-    Reference< XControl > SAL_CALL LegacyFormController::getCurrentControl(  ) throw (RuntimeException)
+    Reference< XControl > SAL_CALL LegacyFormController::getCurrentControl(  )
     {
         return m_xDelegator->getCurrentControl();
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL LegacyFormController::addActivateListener( const Reference< form::XFormControllerListener >& _listener ) throw (RuntimeException)
+    void SAL_CALL LegacyFormController::addActivateListener( const Reference< form::XFormControllerListener >& _listener )
     {
         m_xDelegator->addActivateListener( _listener );
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL LegacyFormController::removeActivateListener( const Reference< form::XFormControllerListener >& _listener ) throw (RuntimeException)
+    void SAL_CALL LegacyFormController::removeActivateListener( const Reference< form::XFormControllerListener >& _listener )
     {
         m_xDelegator->removeActivateListener( _listener );
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL LegacyFormController::setModel( const Reference< XTabControllerModel >& _model ) throw (RuntimeException)
+    void SAL_CALL LegacyFormController::setModel( const Reference< XTabControllerModel >& _model )
     {
         m_xDelegator->setModel( _model );
     }
 
     //--------------------------------------------------------------------
-    Reference< XTabControllerModel > SAL_CALL LegacyFormController::getModel(  ) throw (RuntimeException)
+    Reference< XTabControllerModel > SAL_CALL LegacyFormController::getModel(  )
     {
         return m_xDelegator->getModel();
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL LegacyFormController::setContainer( const Reference< XControlContainer >& _container ) throw (RuntimeException)
+    void SAL_CALL LegacyFormController::setContainer( const Reference< XControlContainer >& _container )
     {
         m_xDelegator->setContainer( _container );
     }
 
     //--------------------------------------------------------------------
-    Reference< XControlContainer > SAL_CALL LegacyFormController::getContainer(  ) throw (RuntimeException)
+    Reference< XControlContainer > SAL_CALL LegacyFormController::getContainer(  )
     {
         return m_xDelegator->getContainer();
     }
 
     //--------------------------------------------------------------------
-    Sequence< Reference< XControl > > SAL_CALL LegacyFormController::getControls(  ) throw (RuntimeException)
+    Sequence< Reference< XControl > > SAL_CALL LegacyFormController::getControls(  )
     {
         return m_xDelegator->getControls();
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL LegacyFormController::autoTabOrder(  ) throw (RuntimeException)
+    void SAL_CALL LegacyFormController::autoTabOrder(  )
     {
         m_xDelegator->autoTabOrder();
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL LegacyFormController::activateTabOrder(  ) throw (RuntimeException)
+    void SAL_CALL LegacyFormController::activateTabOrder(  )
     {
         m_xDelegator->activateTabOrder();
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL LegacyFormController::activateFirst(  ) throw (RuntimeException)
+    void SAL_CALL LegacyFormController::activateFirst(  )
     {
         m_xDelegator->activateFirst();
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL LegacyFormController::activateLast(  ) throw (RuntimeException)
+    void SAL_CALL LegacyFormController::activateLast(  )
     {
         m_xDelegator->activateLast();
     }
 
     //--------------------------------------------------------------------
-    ::rtl::OUString SAL_CALL LegacyFormController::getImplementationName(  ) throw (RuntimeException)
+    ::rtl::OUString SAL_CALL LegacyFormController::getImplementationName(  )
     {
         return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "org.openoffice.comp.svx.LegacyFormController" ) );
     }
 
     //--------------------------------------------------------------------
-    ::sal_Bool SAL_CALL LegacyFormController::supportsService( const ::rtl::OUString& _serviceName ) throw (RuntimeException)
+    ::sal_Bool SAL_CALL LegacyFormController::supportsService( const ::rtl::OUString& _serviceName )
     {
         Sequence< ::rtl::OUString > aServices( getSupportedServiceNames() );
         const ::rtl::OUString* pServices = aServices.getConstArray();
@@ -202,7 +202,7 @@ namespace svxform
     }
 
     //--------------------------------------------------------------------
-    Sequence< ::rtl::OUString > SAL_CALL LegacyFormController::getSupportedServiceNames(  ) throw (RuntimeException)
+    Sequence< ::rtl::OUString > SAL_CALL LegacyFormController::getSupportedServiceNames(  )
     {
         Sequence< ::rtl::OUString > aServices(2);
         aServices.getArray()[0] = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.form.FormController" ) );

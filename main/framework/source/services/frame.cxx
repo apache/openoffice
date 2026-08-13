@@ -343,9 +343,7 @@ Frame::~Frame()
 css::uno::Reference< css::lang::XComponent > SAL_CALL Frame::loadComponentFromURL( const ::rtl::OUString&                                 sURL            ,
                                                                                    const ::rtl::OUString&                                 sTargetFrameName,
                                                                                          sal_Int32                                        nSearchFlags    ,
-                                                                                   const css::uno::Sequence< css::beans::PropertyValue >& lArguments      ) throw( css::io::IOException                ,
-                                                                                                                                                                   css::lang::IllegalArgumentException ,
-                                                                                                                                                                   css::uno::RuntimeException          )
+                                                                                   const css::uno::Sequence< css::beans::PropertyValue >& lArguments      )
 {
     {
         // If the frame is closed the call might lead to crash even with target "_blank",
@@ -377,7 +375,7 @@ css::uno::Reference< css::lang::XComponent > SAL_CALL Frame::loadComponentFromUR
 
 	@onerror	A null reference is returned.
 *//*-*****************************************************************************************************/
-css::uno::Reference< css::frame::XFrames > SAL_CALL Frame::getFrames() throw( css::uno::RuntimeException )
+css::uno::Reference< css::frame::XFrames > SAL_CALL Frame::getFrames()
 {
 	/* UNSAFE AREA --------------------------------------------------------------------------------------------- */
     // Register transaction and reject wrong calls.
@@ -414,7 +412,7 @@ css::uno::Reference< css::frame::XFrames > SAL_CALL Frame::getFrames() throw( cs
 
 	@onerror	A null reference is returned.
 *//*-*****************************************************************************************************/
-css::uno::Reference< css::frame::XFrame > SAL_CALL Frame::getActiveFrame() throw( css::uno::RuntimeException )
+css::uno::Reference< css::frame::XFrame > SAL_CALL Frame::getActiveFrame()
 {
 	/* UNSAFE AREA --------------------------------------------------------------------------------------------- */
 	// Register transaction and reject wrong calls.
@@ -442,7 +440,7 @@ css::uno::Reference< css::frame::XFrame > SAL_CALL Frame::getActiveFrame() throw
 
 	@onerror    An assertion is thrown and element is ignored, if given frame isn't already a child of us.
 *//*-*****************************************************************************************************/
-void SAL_CALL Frame::setActiveFrame( const css::uno::Reference< css::frame::XFrame >& xFrame ) throw( css::uno::RuntimeException )
+void SAL_CALL Frame::setActiveFrame( const css::uno::Reference< css::frame::XFrame >& xFrame )
 {
 	/* UNSAFE AREA --------------------------------------------------------------------------------------------- */
 	// Check incoming parameters.
@@ -557,7 +555,7 @@ void lcl_disableLayoutManager(const css::uno::Reference< css::frame::XLayoutMana
 
 	@onerror	We do nothing.
 *//*-*****************************************************************************************************/
-void SAL_CALL Frame::initialize( const css::uno::Reference< css::awt::XWindow >& xWindow ) throw( css::uno::RuntimeException )
+void SAL_CALL Frame::initialize( const css::uno::Reference< css::awt::XWindow >& xWindow )
 {
 	/* UNSAFE AREA --------------------------------------------------------------------------------------------- */
     if (!xWindow.is())
@@ -650,7 +648,7 @@ void SAL_CALL Frame::initialize( const css::uno::Reference< css::awt::XWindow >&
 
 	@onerror	A null reference is returned.
 *//*-*****************************************************************************************************/
-css::uno::Reference< css::awt::XWindow > SAL_CALL Frame::getContainerWindow() throw( css::uno::RuntimeException )
+css::uno::Reference< css::awt::XWindow > SAL_CALL Frame::getContainerWindow()
 {
 	/* UNSAFE AREA --------------------------------------------------------------------------------------------- */
     // Register transaction and reject wrong calls.
@@ -680,7 +678,7 @@ css::uno::Reference< css::awt::XWindow > SAL_CALL Frame::getContainerWindow() th
     @threadsafe yes
     @modified   08.05.2002 09:35, as96863
 *//*-*****************************************************************************************************/
-void SAL_CALL Frame::setCreator( const css::uno::Reference< css::frame::XFramesSupplier >& xCreator ) throw( css::uno::RuntimeException )
+void SAL_CALL Frame::setCreator( const css::uno::Reference< css::frame::XFramesSupplier >& xCreator )
 {
     TransactionGuard aTransaction( m_aTransactionManager, E_HARDEXCEPTIONS );
 
@@ -705,7 +703,7 @@ void SAL_CALL Frame::setCreator( const css::uno::Reference< css::frame::XFramesS
 
 	@onerror	A null reference is returned.
 *//*-*****************************************************************************************************/
-css::uno::Reference< css::frame::XFramesSupplier > SAL_CALL Frame::getCreator() throw( css::uno::RuntimeException )
+css::uno::Reference< css::frame::XFramesSupplier > SAL_CALL Frame::getCreator()
 {
 	/* UNSAFE AREA --------------------------------------------------------------------------------------------- */
     // Register transaction and reject wrong calls.
@@ -728,7 +726,7 @@ css::uno::Reference< css::frame::XFramesSupplier > SAL_CALL Frame::getCreator() 
 
 	@onerror	An empty string is returned.
 *//*-*****************************************************************************************************/
-::rtl::OUString SAL_CALL Frame::getName() throw( css::uno::RuntimeException )
+::rtl::OUString SAL_CALL Frame::getName()
 {
 	/* SAFE { */
     ReadGuard aReadLock( m_aLock );
@@ -750,7 +748,7 @@ css::uno::Reference< css::frame::XFramesSupplier > SAL_CALL Frame::getCreator() 
 
 	@onerror	We do nothing.
 *//*-*****************************************************************************************************/
-void SAL_CALL Frame::setName( const ::rtl::OUString& sName ) throw( css::uno::RuntimeException )
+void SAL_CALL Frame::setName( const ::rtl::OUString& sName )
 {
 	/* SAFE { */
     WriteGuard aWriteLock( m_aLock );
@@ -789,7 +787,7 @@ void SAL_CALL Frame::setName( const ::rtl::OUString& sName ) throw( css::uno::Ru
     @modified   16.05.2002 11:08, as96863
 *//*-*****************************************************************************************************/
 css::uno::Reference< css::frame::XFrame > SAL_CALL Frame::findFrame( const ::rtl::OUString&  sTargetFrameName,
-                                                                           sal_Int32         nSearchFlags    ) throw( css::uno::RuntimeException )
+                                                                           sal_Int32         nSearchFlags    )
 {
     css::uno::Reference< css::frame::XFrame > xTarget;
 
@@ -1070,7 +1068,7 @@ css::uno::Reference< css::frame::XFrame > SAL_CALL Frame::findFrame( const ::rtl
 
 	@onerror	No error should occur!
 *//*-*****************************************************************************************************/
-sal_Bool SAL_CALL Frame::isTop() throw( css::uno::RuntimeException )
+sal_Bool SAL_CALL Frame::isTop()
 {
 	/* UNSAFE AREA --------------------------------------------------------------------------------------------- */
     // Register transaction and reject wrong calls.
@@ -1099,7 +1097,7 @@ sal_Bool SAL_CALL Frame::isTop() throw( css::uno::RuntimeException )
 
 	@onerror	-
 *//*-*****************************************************************************************************/
-void SAL_CALL Frame::activate() throw( css::uno::RuntimeException )
+void SAL_CALL Frame::activate()
 {
 	/* UNSAFE AREA --------------------------------------------------------------------------------------------- */
     // Register transaction and reject wrong calls.
@@ -1199,7 +1197,7 @@ void SAL_CALL Frame::activate() throw( css::uno::RuntimeException )
 
 	@onerror	-
 *//*-*****************************************************************************************************/
-void SAL_CALL Frame::deactivate() throw( css::uno::RuntimeException )
+void SAL_CALL Frame::deactivate()
 {
 	/* UNSAFE AREA --------------------------------------------------------------------------------------------- */
     // Register transaction and reject wrong calls.
@@ -1286,7 +1284,7 @@ void SAL_CALL Frame::deactivate() throw( css::uno::RuntimeException )
 
 	@onerror	No error should occur.
 *//*-*****************************************************************************************************/
-sal_Bool SAL_CALL Frame::isActive() throw( css::uno::RuntimeException )
+sal_Bool SAL_CALL Frame::isActive()
 {
 	/* UNSAFE AREA --------------------------------------------------------------------------------------------- */
     // Register transaction and reject wrong calls.
@@ -1312,7 +1310,7 @@ sal_Bool SAL_CALL Frame::isActive() throw( css::uno::RuntimeException )
 
 	@onerror	-
 *//*-*****************************************************************************************************/
-void SAL_CALL Frame::contextChanged() throw( css::uno::RuntimeException )
+void SAL_CALL Frame::contextChanged()
 {
     // Look for rejected calls!
     // Sometimes called during closing object... => soft exceptions
@@ -1352,7 +1350,7 @@ void SAL_CALL Frame::contextChanged() throw( css::uno::RuntimeException )
     @modified   06.05.2002 11:39, as96863
 *//*-*****************************************************************************************************/
 sal_Bool SAL_CALL Frame::setComponent(  const   css::uno::Reference< css::awt::XWindow >&       xComponentWindow ,
-                                        const   css::uno::Reference< css::frame::XController >& xController      ) throw( css::uno::RuntimeException )
+                                        const   css::uno::Reference< css::frame::XController >& xController      )
 {
     //_____________________________________________________________________________________________________
     // Ignore this HACK of sfx2!
@@ -1518,7 +1516,7 @@ sal_Bool SAL_CALL Frame::setComponent(  const   css::uno::Reference< css::awt::X
 
 	@onerror	A null reference is returned.
 *//*-*****************************************************************************************************/
-css::uno::Reference< css::awt::XWindow > SAL_CALL Frame::getComponentWindow() throw( css::uno::RuntimeException )
+css::uno::Reference< css::awt::XWindow > SAL_CALL Frame::getComponentWindow()
 {
 	/* UNSAFE AREA --------------------------------------------------------------------------------------------- */
     // Register transaction and reject wrong calls.
@@ -1548,7 +1546,7 @@ css::uno::Reference< css::awt::XWindow > SAL_CALL Frame::getComponentWindow() th
 
 	@onerror	A null reference is returned.
 *//*-*****************************************************************************************************/
-css::uno::Reference< css::frame::XController > SAL_CALL Frame::getController() throw( css::uno::RuntimeException )
+css::uno::Reference< css::frame::XController > SAL_CALL Frame::getController()
 {
 	/* UNSAFE AREA --------------------------------------------------------------------------------------------- */
     // It seems to be unavoidable that disposed frames allow to ask for a Controller (#111452)
@@ -1574,7 +1572,7 @@ css::uno::Reference< css::frame::XController > SAL_CALL Frame::getController() t
 
 	@onerror	Listener is ignored.
 *//*-*****************************************************************************************************/
-void SAL_CALL Frame::addFrameActionListener( const css::uno::Reference< css::frame::XFrameActionListener >& xListener ) throw( css::uno::RuntimeException )
+void SAL_CALL Frame::addFrameActionListener( const css::uno::Reference< css::frame::XFrameActionListener >& xListener )
 {
 	/* UNSAFE AREA --------------------------------------------------------------------------------------------- */
 	// Check incoming parameter.
@@ -1589,7 +1587,7 @@ void SAL_CALL Frame::addFrameActionListener( const css::uno::Reference< css::fra
 }
 
 //*****************************************************************************************************************
-void SAL_CALL Frame::removeFrameActionListener( const css::uno::Reference< css::frame::XFrameActionListener >& xListener ) throw( css::uno::RuntimeException )
+void SAL_CALL Frame::removeFrameActionListener( const css::uno::Reference< css::frame::XFrameActionListener >& xListener )
 {
 	/* UNSAFE AREA --------------------------------------------------------------------------------------------- */
 	// Check incoming parameter.
@@ -1623,8 +1621,7 @@ void SAL_CALL Frame::removeFrameActionListener( const css::uno::Reference< css::
     @threadsafe yes
     @modified   06.05.2002 08:33, as96863
 *//*-*****************************************************************************************************/
-void SAL_CALL Frame::close( sal_Bool bDeliverOwnerShip ) throw( css::util::CloseVetoException,
-                                                                css::uno::RuntimeException   )
+void SAL_CALL Frame::close( sal_Bool bDeliverOwnerShip )
 {
     TransactionGuard aTransaction( m_aTransactionManager, E_HARDEXCEPTIONS );
 
@@ -1721,7 +1718,7 @@ void SAL_CALL Frame::close( sal_Bool bDeliverOwnerShip ) throw( css::util::Close
     @threadsafe yes
     @modified   06.05.2002 10:03, as96863
 *//*-*****************************************************************************************************/
-void SAL_CALL Frame::addCloseListener( const css::uno::Reference< css::util::XCloseListener >& xListener ) throw (css::uno::RuntimeException)
+void SAL_CALL Frame::addCloseListener( const css::uno::Reference< css::util::XCloseListener >& xListener )
 {
 	TransactionGuard aTransaction( m_aTransactionManager, E_HARDEXCEPTIONS );
 	// We don't need any lock here ...
@@ -1730,7 +1727,7 @@ void SAL_CALL Frame::addCloseListener( const css::uno::Reference< css::util::XCl
 }
 
 //*****************************************************************************************************************
-void SAL_CALL Frame::removeCloseListener( const css::uno::Reference< css::util::XCloseListener >& xListener ) throw (css::uno::RuntimeException)
+void SAL_CALL Frame::removeCloseListener( const css::uno::Reference< css::util::XCloseListener >& xListener )
 {
 	// Use soft exception mode - mostly this method is called during disposing of this frame ...
 	TransactionGuard aTransaction( m_aTransactionManager, E_SOFTEXCEPTIONS );
@@ -1741,7 +1738,6 @@ void SAL_CALL Frame::removeCloseListener( const css::uno::Reference< css::util::
 
 //*****************************************************************************************************************
 ::rtl::OUString SAL_CALL Frame::getTitle()
-	throw (css::uno::RuntimeException)
 {
 	TransactionGuard aTransaction( m_aTransactionManager, E_HARDEXCEPTIONS );
 
@@ -1756,7 +1752,6 @@ void SAL_CALL Frame::removeCloseListener( const css::uno::Reference< css::util::
 
 //*****************************************************************************************************************
 void SAL_CALL Frame::setTitle( const ::rtl::OUString& sTitle )
-	throw (css::uno::RuntimeException)
 {
 	TransactionGuard aTransaction( m_aTransactionManager, E_HARDEXCEPTIONS );
 
@@ -1771,7 +1766,6 @@ void SAL_CALL Frame::setTitle( const ::rtl::OUString& sTitle )
 
 //*****************************************************************************************************************
 void SAL_CALL Frame::addTitleChangeListener( const css::uno::Reference< css::frame::XTitleChangeListener >& xListener)
-	throw (css::uno::RuntimeException)
 {
 	TransactionGuard aTransaction( m_aTransactionManager, E_HARDEXCEPTIONS );
 
@@ -1786,7 +1780,6 @@ void SAL_CALL Frame::addTitleChangeListener( const css::uno::Reference< css::fra
 
 //*****************************************************************************************************************
 void SAL_CALL Frame::removeTitleChangeListener( const css::uno::Reference< css::frame::XTitleChangeListener >& xListener )
-	throw (css::uno::RuntimeException)
 {
 	TransactionGuard aTransaction( m_aTransactionManager, E_HARDEXCEPTIONS );
 
@@ -1854,7 +1847,7 @@ void Frame::implts_forgetSubFrames()
 
 	@onerror	-
 *//*-*****************************************************************************************************/
-void SAL_CALL Frame::dispose() throw( css::uno::RuntimeException )
+void SAL_CALL Frame::dispose()
 {
     // We should hold a reference to ourself ...
     // because our owner dispose us and release our reference ...
@@ -1990,7 +1983,7 @@ void SAL_CALL Frame::dispose() throw( css::uno::RuntimeException )
 
 	@onerror	Listener is ignored.
 *//*-*****************************************************************************************************/
-void SAL_CALL Frame::addEventListener( const css::uno::Reference< css::lang::XEventListener >& xListener ) throw( css::uno::RuntimeException )
+void SAL_CALL Frame::addEventListener( const css::uno::Reference< css::lang::XEventListener >& xListener )
 {
 	/* UNSAFE AREA --------------------------------------------------------------------------------------------- */
 	// Check incoming parameter.
@@ -2004,7 +1997,7 @@ void SAL_CALL Frame::addEventListener( const css::uno::Reference< css::lang::XEv
 }
 
 //*****************************************************************************************************************
-void SAL_CALL Frame::removeEventListener( const css::uno::Reference< css::lang::XEventListener >& xListener ) throw( css::uno::RuntimeException )
+void SAL_CALL Frame::removeEventListener( const css::uno::Reference< css::lang::XEventListener >& xListener )
 {
 	/* UNSAFE AREA --------------------------------------------------------------------------------------------- */
 	// Check incoming parameter.
@@ -2031,7 +2024,7 @@ void SAL_CALL Frame::removeEventListener( const css::uno::Reference< css::lang::
 
 	@onerror	We return a null reference.
 *//*-*****************************************************************************************************/
-css::uno::Reference< css::task::XStatusIndicator > SAL_CALL Frame::createStatusIndicator() throw( css::uno::RuntimeException )
+css::uno::Reference< css::task::XStatusIndicator > SAL_CALL Frame::createStatusIndicator()
 {
     /* UNSAFE AREA ----------------------------------------------------------------------------------------- */
     // Look for rejected calls!
@@ -2078,7 +2071,7 @@ css::uno::Reference< css::task::XStatusIndicator > SAL_CALL Frame::createStatusI
 *//*-*****************************************************************************************************/
 css::uno::Reference< css::frame::XDispatch > SAL_CALL Frame::queryDispatch( const css::util::URL&   aURL            ,
                                                                             const ::rtl::OUString&  sTargetFrameName,
-                                                                                  sal_Int32         nSearchFlags    ) throw( css::uno::RuntimeException )
+                                                                                  sal_Int32         nSearchFlags    )
 {
 	const char UNO_PROTOCOL[] = ".uno:";
 
@@ -2115,7 +2108,7 @@ css::uno::Reference< css::frame::XDispatch > SAL_CALL Frame::queryDispatch( cons
 
 	@onerror	An empty list is returned.
 *//*-*****************************************************************************************************/
-css::uno::Sequence< css::uno::Reference< css::frame::XDispatch > > SAL_CALL Frame::queryDispatches( const css::uno::Sequence< css::frame::DispatchDescriptor >& lDescriptor ) throw( css::uno::RuntimeException )
+css::uno::Sequence< css::uno::Reference< css::frame::XDispatch > > SAL_CALL Frame::queryDispatches( const css::uno::Sequence< css::frame::DispatchDescriptor >& lDescriptor )
 {
 	// Don't check incoming parameter here! Our helper do it for us and it isn't a good idea to do it more then ones!
 	// But look for rejected calls!
@@ -2138,7 +2131,7 @@ css::uno::Sequence< css::uno::Reference< css::frame::XDispatch > > SAL_CALL Fram
 
 	@onerror	Interceptor is ignored.
 *//*-*****************************************************************************************************/
-void SAL_CALL Frame::registerDispatchProviderInterceptor( const css::uno::Reference< css::frame::XDispatchProviderInterceptor >& xInterceptor ) throw( css::uno::RuntimeException )
+void SAL_CALL Frame::registerDispatchProviderInterceptor( const css::uno::Reference< css::frame::XDispatchProviderInterceptor >& xInterceptor )
 {
 	// We use a helper to support these interface and an interceptor mechanism.
 	// This helper is threadsafe himself and check incoming parameter too.
@@ -2151,7 +2144,7 @@ void SAL_CALL Frame::registerDispatchProviderInterceptor( const css::uno::Refere
 }
 
 //*****************************************************************************************************************
-void SAL_CALL Frame::releaseDispatchProviderInterceptor( const css::uno::Reference< css::frame::XDispatchProviderInterceptor >& xInterceptor ) throw( css::uno::RuntimeException )
+void SAL_CALL Frame::releaseDispatchProviderInterceptor( const css::uno::Reference< css::frame::XDispatchProviderInterceptor >& xInterceptor )
 {
 	// We use a helper to support these interface and an interceptor mechanism.
 	// This helper is threadsafe himself and check incoming parameter too.
@@ -2169,14 +2162,12 @@ void SAL_CALL Frame::releaseDispatchProviderInterceptor( const css::uno::Referen
                 inside the current frame environment
 *//*-*****************************************************************************************************/
 css::uno::Sequence< sal_Int16 > SAL_CALL Frame::getSupportedCommandGroups()
-	throw(css::uno::RuntimeException)
 {
 	return m_xDispatchInfoHelper->getSupportedCommandGroups();
 }
 
 //*****************************************************************************************************************
 css::uno::Sequence< css::frame::DispatchInformation > SAL_CALL Frame::getConfigurableDispatchInformation(sal_Int16 nCommandGroup)
-	throw(css::uno::RuntimeException)
 {
 	return m_xDispatchInfoHelper->getConfigurableDispatchInformation(nCommandGroup);
 }
@@ -2198,7 +2189,7 @@ void SAL_CALL Frame::windowResized( const css::awt::WindowEvent&
 #if OSL_DEBUG_LEVEL > 0
 aEvent
 #endif
-) throw( css::uno::RuntimeException )
+)
 {
 	/* UNSAFE AREA --------------------------------------------------------------------------------------------- */
 	// Check incoming parameter.
@@ -2218,7 +2209,7 @@ void SAL_CALL Frame::focusGained( const css::awt::FocusEvent&
 #if OSL_DEBUG_LEVEL > 0
 aEvent
 #endif
-) throw( css::uno::RuntimeException )
+)
 {
 	/* UNSAFE AREA --------------------------------------------------------------------------------------------- */
 	// Check incoming parameter.
@@ -2258,7 +2249,7 @@ void SAL_CALL Frame::windowActivated( const css::lang::EventObject&
 #if OSL_DEBUG_LEVEL > 0
 aEvent
 #endif
-) throw( css::uno::RuntimeException )
+)
 {
 	/* UNSAFE AREA --------------------------------------------------------------------------------------------- */
 	// Check incoming parameter.
@@ -2286,7 +2277,7 @@ void SAL_CALL Frame::windowDeactivated( const css::lang::EventObject&
 #if OSL_DEBUG_LEVEL > 0
 aEvent
 #endif
-) throw( css::uno::RuntimeException )
+)
 {
 	/* UNSAFE AREA --------------------------------------------------------------------------------------------- */
 	// Check incoming parameter.
@@ -2339,7 +2330,7 @@ aEvent
 }
 
 //*****************************************************************************************************************
-void SAL_CALL Frame::windowClosing( const css::lang::EventObject& ) throw( css::uno::RuntimeException )
+void SAL_CALL Frame::windowClosing( const css::lang::EventObject& )
 {
     /* #i62088#
         Some interceptor objects intercept our "internally asynchronous implemented" dispatch call.
@@ -2407,7 +2398,7 @@ void SAL_CALL Frame::windowClosing( const css::lang::EventObject& ) throw( css::
     @threadsafe yes
     @modified   31.07.2002 07:56, as96863
 *//*-*****************************************************************************************************/
-void SAL_CALL Frame::windowShown( const css::lang::EventObject& ) throw(css::uno::RuntimeException)
+void SAL_CALL Frame::windowShown( const css::lang::EventObject& )
 {
     static sal_Bool bFirstVisibleTask = sal_True;
 
@@ -2441,7 +2432,7 @@ void SAL_CALL Frame::windowShown( const css::lang::EventObject& ) throw(css::uno
     }
 }
 
-void SAL_CALL Frame::windowHidden( const css::lang::EventObject& ) throw(css::uno::RuntimeException)
+void SAL_CALL Frame::windowHidden( const css::lang::EventObject& )
 {
 	/* SAFE { */
 	ReadGuard aReadLock(m_aLock);
@@ -2467,7 +2458,7 @@ void SAL_CALL Frame::windowHidden( const css::lang::EventObject& ) throw(css::un
 
 	@onerror	-
 *//*-*****************************************************************************************************/
-void SAL_CALL Frame::disposing( const css::lang::EventObject& aEvent ) throw( css::uno::RuntimeException )
+void SAL_CALL Frame::disposing( const css::lang::EventObject& aEvent )
 {
 	/* UNSAFE AREA --------------------------------------------------------------------------------------------- */
 	// Check incoming parameter.
@@ -2508,7 +2499,7 @@ void SAL_CALL Frame::disposing( const css::lang::EventObject& aEvent ) throw( cs
     @onerror    -
     @threadsafe yes
 *//*-*************************************************************************************************************/
-sal_Bool SAL_CALL Frame::isActionLocked() throw( css::uno::RuntimeException )
+sal_Bool SAL_CALL Frame::isActionLocked()
 {
 	/* SAFE AREA ----------------------------------------------------------------------------------------------- */
 	ReadGuard aReadLock( m_aLock );
@@ -2516,7 +2507,7 @@ sal_Bool SAL_CALL Frame::isActionLocked() throw( css::uno::RuntimeException )
 }
 
 //*****************************************************************************************************************
-void SAL_CALL Frame::addActionLock() throw( css::uno::RuntimeException )
+void SAL_CALL Frame::addActionLock()
 {
 	/* SAFE AREA ----------------------------------------------------------------------------------------------- */
 	WriteGuard aWriteLock( m_aLock );
@@ -2524,7 +2515,7 @@ void SAL_CALL Frame::addActionLock() throw( css::uno::RuntimeException )
 }
 
 //*****************************************************************************************************************
-void SAL_CALL Frame::removeActionLock() throw( css::uno::RuntimeException )
+void SAL_CALL Frame::removeActionLock()
 {
 	// Register no transaction here! Otherwise we wait for ever inside possible
 	// implts_checkSuicide()/dispose() request ...
@@ -2539,7 +2530,7 @@ void SAL_CALL Frame::removeActionLock() throw( css::uno::RuntimeException )
 }
 
 //*****************************************************************************************************************
-void SAL_CALL Frame::setActionLocks( sal_Int16 nLock ) throw( css::uno::RuntimeException )
+void SAL_CALL Frame::setActionLocks( sal_Int16 nLock )
 {
 	/* SAFE AREA ----------------------------------------------------------------------------------------------- */
     WriteGuard aWriteLock( m_aLock );
@@ -2551,7 +2542,7 @@ void SAL_CALL Frame::setActionLocks( sal_Int16 nLock ) throw( css::uno::RuntimeE
 }
 
 //*****************************************************************************************************************
-sal_Int16 SAL_CALL Frame::resetActionLocks() throw( css::uno::RuntimeException )
+sal_Int16 SAL_CALL Frame::resetActionLocks()
 {
 	// Register no transaction here! Otherwise we wait for ever inside possible
 	// implts_checkSuicide()/dispose() request ...

@@ -253,16 +253,14 @@ public:
 		const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape >& _rxShape,
 		const long _nIndex,
 		const ::accessibility::AccessibleShapeTreeInfo& _rShapeTreeInfo
-	)	throw (::com::sun::star::uno::RuntimeException);
+	);
 
 	virtual ::accessibility::AccessibleControlShape* GetAccControlShapeFromModel
-		(::com::sun::star::beans::XPropertySet* pSet)
-		throw (::com::sun::star::uno::RuntimeException);
+		(::com::sun::star::beans::XPropertySet* pSet);
 	virtual  ::com::sun::star::uno::Reference<
             ::com::sun::star::accessibility::XAccessible>
         GetAccessibleCaption (const ::com::sun::star::uno::Reference<
-            ::com::sun::star::drawing::XShape>& xShape)
-			throw (::com::sun::star::uno::RuntimeException);
+            ::com::sun::star::drawing::XShape>& xShape);
     ///=====  Internal  ========================================================
     void SetDrawBroadcaster();
 
@@ -439,7 +437,6 @@ void ScChildrenShapes::Notify(SfxBroadcaster&, const SfxHint& rHint)
 sal_Bool ScChildrenShapes::ReplaceChild (::accessibility::AccessibleShape* pCurrentChild,
 		const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape >& _rxShape,
 		const long _nIndex, const ::accessibility::AccessibleShapeTreeInfo& _rShapeTreeInfo)
-    throw (uno::RuntimeException)
 {
 	// create the new child
 	::accessibility::AccessibleShape* pReplacement = ::accessibility::ShapeTypeHandler::Instance().CreateAccessibleObject (
@@ -483,7 +480,7 @@ sal_Bool ScChildrenShapes::ReplaceChild (::accessibility::AccessibleShape* pCurr
     return bResult;
 }
 
-::accessibility::AccessibleControlShape * ScChildrenShapes::GetAccControlShapeFromModel(::com::sun::star::beans::XPropertySet* pSet) throw (::com::sun::star::uno::RuntimeException)
+::accessibility::AccessibleControlShape * ScChildrenShapes::GetAccControlShapeFromModel(::com::sun::star::beans::XPropertySet* pSet)
 {
 	sal_Int32 count = GetCount();
 	for (sal_Int32 index=0;index<count;index++)
@@ -504,7 +501,6 @@ sal_Bool ScChildrenShapes::ReplaceChild (::accessibility::AccessibleShape* pCurr
 }
 ::com::sun::star::uno::Reference < ::com::sun::star::accessibility::XAccessible >
 ScChildrenShapes::GetAccessibleCaption (const ::com::sun::star::uno::Reference < ::com::sun::star::drawing::XShape>& xShape)
-			throw (::com::sun::star::uno::RuntimeException)
 {
 	sal_Int32 count = GetCount();
 	for (sal_Int32 index=0;index<count;index++)
@@ -1481,7 +1477,6 @@ void SAL_CALL ScAccessibleDocument::disposing()
 }
 
 void SAL_CALL ScAccessibleDocument::disposing( const lang::EventObject& /* Source */ )
-		throw (uno::RuntimeException)
 {
 	disposing();
 }
@@ -1668,7 +1663,6 @@ void ScAccessibleDocument::Notify( SfxBroadcaster& rBC, const SfxHint& rHint )
 }
 
 void SAL_CALL ScAccessibleDocument::selectionChanged( const lang::EventObject& /* aEvent */ )
-		throw (uno::RuntimeException)
 {
 	sal_Bool bSelectionChanged(sal_False);
 	if (mpAccessibleSpreadsheet)
@@ -1702,7 +1696,6 @@ void SAL_CALL ScAccessibleDocument::selectionChanged( const lang::EventObject& /
 	//=====  XInterface  =====================================================
 
 uno::Any SAL_CALL ScAccessibleDocument::queryInterface( uno::Type const & rType )
-	throw (uno::RuntimeException)
 {
 	uno::Any aAnyTmp;
 	if(rType == ::getCppuType((com::sun::star::uno::Reference<XAccessibleGetAccFlowTo> *)NULL) )
@@ -1731,7 +1724,6 @@ void SAL_CALL ScAccessibleDocument::release()
 
 uno::Reference< XAccessible > SAL_CALL ScAccessibleDocument::getAccessibleAtPoint(
 		const awt::Point& rPoint )
-		throw (uno::RuntimeException)
 {
 	uno::Reference<XAccessible> xAccessible = NULL;
     if (containsPoint(rPoint))
@@ -1761,7 +1753,6 @@ uno::Reference< XAccessible > SAL_CALL ScAccessibleDocument::getAccessibleAtPoin
 }
 
 void SAL_CALL ScAccessibleDocument::grabFocus(  )
-		throw (uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
     IsObjectValid();
@@ -1787,7 +1778,6 @@ void SAL_CALL ScAccessibleDocument::grabFocus(  )
     ///	Return the number of currently visible children.
 sal_Int32 SAL_CALL
     ScAccessibleDocument::getAccessibleChildCount(void)
-    throw (uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
     IsObjectValid();
@@ -1804,8 +1794,6 @@ sal_Int32 SAL_CALL
     ///	Return the specified child or NULL if index is invalid.
 uno::Reference<XAccessible> SAL_CALL
     ScAccessibleDocument::getAccessibleChild(sal_Int32 nIndex)
-    throw (uno::RuntimeException,
-		lang::IndexOutOfBoundsException)
 {
 	ScUnoGuard aGuard;
     IsObjectValid();
@@ -1836,7 +1824,6 @@ uno::Reference<XAccessible> SAL_CALL
     ///	Return the set of current states.
 uno::Reference<XAccessibleStateSet> SAL_CALL
     ScAccessibleDocument::getAccessibleStateSet(void)
-    throw (uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
 	uno::Reference<XAccessibleStateSet> xParentStates;
@@ -1864,7 +1851,6 @@ uno::Reference<XAccessibleStateSet> SAL_CALL
 
 ::rtl::OUString SAL_CALL
     ScAccessibleDocument::getAccessibleName(void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
 	rtl::OUString sName = String(ScResId(STR_ACC_DOC_SPREADSHEET));
 	ScDocument* pScDoc = GetDocument();
@@ -1895,7 +1881,6 @@ uno::Reference<XAccessibleStateSet> SAL_CALL
 
 void SAL_CALL
 	ScAccessibleDocument::selectAccessibleChild( sal_Int32 nChildIndex )
-		throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
     IsObjectValid();
@@ -1929,7 +1914,6 @@ void SAL_CALL
 
 sal_Bool SAL_CALL
 	ScAccessibleDocument::isAccessibleChildSelected( sal_Int32 nChildIndex )
-		throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
     IsObjectValid();
@@ -1962,7 +1946,6 @@ sal_Bool SAL_CALL
 
 void SAL_CALL
 	ScAccessibleDocument::clearAccessibleSelection(  )
-		throw (uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
     IsObjectValid();
@@ -1973,7 +1956,6 @@ void SAL_CALL
 
 void SAL_CALL
 	ScAccessibleDocument::selectAllAccessibleChildren(  )
-		throw (uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
     IsObjectValid();
@@ -1990,7 +1972,6 @@ void SAL_CALL
 
 sal_Int32 SAL_CALL
 	ScAccessibleDocument::getSelectedAccessibleChildCount(  )
-		throw (uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
     IsObjectValid();
@@ -2010,7 +1991,6 @@ sal_Int32 SAL_CALL
 
 uno::Reference<XAccessible > SAL_CALL
 	ScAccessibleDocument::getSelectedAccessibleChild( sal_Int32 nSelectedChildIndex )
-		throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
     IsObjectValid();
@@ -2038,7 +2018,6 @@ uno::Reference<XAccessible > SAL_CALL
 
 void SAL_CALL
 	ScAccessibleDocument::deselectAccessibleChild( sal_Int32 nChildIndex )
-		throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
     IsObjectValid();
@@ -2071,14 +2050,12 @@ void SAL_CALL
 
 ::rtl::OUString SAL_CALL
     ScAccessibleDocument::getImplementationName(void)
-    throw (uno::RuntimeException)
 {
 	return ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM ("ScAccessibleDocument"));
 }
 
 uno::Sequence< ::rtl::OUString> SAL_CALL
 	ScAccessibleDocument::getSupportedServiceNames(void)
-        throw (uno::RuntimeException)
 {
 	uno::Sequence< ::rtl::OUString > aSequence = ScAccessibleContextBase::getSupportedServiceNames();
     sal_Int32 nOldSize(aSequence.getLength());
@@ -2093,14 +2070,12 @@ uno::Sequence< ::rtl::OUString> SAL_CALL
 //=====  XTypeProvider  =======================================================
 
 uno::Sequence< uno::Type > SAL_CALL ScAccessibleDocument::getTypes()
-		throw (uno::RuntimeException)
 {
 	return comphelper::concatSequences(ScAccessibleDocumentImpl::getTypes(), ScAccessibleContextBase::getTypes());
 }
 
 uno::Sequence<sal_Int8> SAL_CALL
 	ScAccessibleDocument::getImplementationId(void)
-    throw (uno::RuntimeException)
 {
     ScUnoGuard aGuard;
     IsObjectValid();
@@ -2207,7 +2182,6 @@ utl::AccessibleRelationSetHelper* ScAccessibleDocument::GetRelationSet(const ScA
 
 ::rtl::OUString SAL_CALL
     ScAccessibleDocument::createAccessibleDescription(void)
-    throw (uno::RuntimeException)
 {
     rtl::OUString sDescription = String(ScResId(STR_ACC_DOC_DESCR));
 	return sDescription;
@@ -2215,7 +2189,6 @@ utl::AccessibleRelationSetHelper* ScAccessibleDocument::GetRelationSet(const ScA
 
 ::rtl::OUString SAL_CALL
     ScAccessibleDocument::createAccessibleName(void)
-    throw (uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
     IsObjectValid();
@@ -2226,7 +2199,6 @@ utl::AccessibleRelationSetHelper* ScAccessibleDocument::GetRelationSet(const ScA
 }
 
 Rectangle ScAccessibleDocument::GetBoundingBoxOnScreen() const
-	throw (uno::RuntimeException)
 {
 	Rectangle aRect;
 	if (mpViewShell)
@@ -2239,7 +2211,6 @@ Rectangle ScAccessibleDocument::GetBoundingBoxOnScreen() const
 }
 
 Rectangle ScAccessibleDocument::GetBoundingBox() const
-	throw (uno::RuntimeException)
 {
 	Rectangle aRect;
 	if (mpViewShell)
@@ -2372,7 +2343,6 @@ ScAddress   ScAccessibleDocument::GetCurCellAddress() const
 	return mpViewShell ? mpViewShell->GetViewData()->GetCurPos() :ScAddress();
 }
 uno::Any SAL_CALL ScAccessibleDocument::getExtendedAttributes()
-		throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException)
 {
 
 	uno::Any anyAtrribute;
@@ -2446,7 +2416,6 @@ com::sun::star::uno::Sequence< com::sun::star::uno::Any > ScAccessibleDocument::
 }
 ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >
 		SAL_CALL ScAccessibleDocument::get_AccFlowTo(const ::com::sun::star::uno::Any& rAny, sal_Int32 nType)
-		throw ( ::com::sun::star::uno::RuntimeException )
 {
 	const sal_Int32 SPELLCHECKFLOWTO = 1;
 	const sal_Int32 FINDREPLACEFLOWTO = 2;
@@ -2547,13 +2516,11 @@ void ScAccessibleDocument::SwitchViewFireFocus()
 }
 
 sal_Int32 SAL_CALL ScAccessibleDocument::getForeground(  )
-        throw (uno::RuntimeException)
 {
     return COL_BLACK;
 }
 
 sal_Int32 SAL_CALL ScAccessibleDocument::getBackground(  )
-        throw (uno::RuntimeException)
 {
 	ScUnoGuard aGuard;
     IsObjectValid();

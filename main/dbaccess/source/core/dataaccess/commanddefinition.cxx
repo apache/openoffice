@@ -114,19 +114,19 @@ IMPLEMENT_GETTYPES2(OCommandDefinition,OCommandDefinition_Base,OComponentDefinit
 IMPLEMENT_FORWARD_XINTERFACE2( OCommandDefinition,OComponentDefinition,OCommandDefinition_Base)
 IMPLEMENT_PROPERTYCONTAINER_DEFAULTS2(OCommandDefinition,OCommandDefinition_PROP)
 //--------------------------------------------------------------------------
-::rtl::OUString OCommandDefinition::getImplementationName_static(  ) throw(RuntimeException)
+::rtl::OUString OCommandDefinition::getImplementationName_static(  )
 {
 	return ::rtl::OUString::createFromAscii("com.sun.star.comp.dba.OCommandDefinition");
 }
 
 //--------------------------------------------------------------------------
-::rtl::OUString SAL_CALL OCommandDefinition::getImplementationName(  ) throw(RuntimeException)
+::rtl::OUString SAL_CALL OCommandDefinition::getImplementationName(  )
 {
 	return getImplementationName_static();
 }
 
 //--------------------------------------------------------------------------
-Sequence< ::rtl::OUString > OCommandDefinition::getSupportedServiceNames_static(  ) throw(RuntimeException)
+Sequence< ::rtl::OUString > OCommandDefinition::getSupportedServiceNames_static(  )
 {
 	Sequence< ::rtl::OUString > aServices(3);
 	aServices.getArray()[0] = SERVICE_SDB_QUERYDEFINITION;
@@ -136,7 +136,7 @@ Sequence< ::rtl::OUString > OCommandDefinition::getSupportedServiceNames_static(
 }
 
 //--------------------------------------------------------------------------
-Sequence< ::rtl::OUString > SAL_CALL OCommandDefinition::getSupportedServiceNames(  ) throw(RuntimeException)
+Sequence< ::rtl::OUString > SAL_CALL OCommandDefinition::getSupportedServiceNames(  )
 {
 	return getSupportedServiceNames_static();
 }
@@ -149,7 +149,7 @@ Reference< XInterface > OCommandDefinition::Create(const Reference< XComponentCo
 }
 
 // -----------------------------------------------------------------------------
-void SAL_CALL OCommandDefinition::rename( const ::rtl::OUString& newName ) throw (SQLException, ElementExistException, RuntimeException)
+void SAL_CALL OCommandDefinition::rename( const ::rtl::OUString& newName )
 {
 	try
 	{

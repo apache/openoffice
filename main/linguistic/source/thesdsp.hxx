@@ -82,11 +82,9 @@ public:
 	// XSupportedLocales
     virtual ::com::sun::star::uno::Sequence<
 			::com::sun::star::lang::Locale > SAL_CALL
-		getLocales()
-			throw(::com::sun::star::uno::RuntimeException);
+		getLocales();
     virtual sal_Bool SAL_CALL
-		hasLocale( const ::com::sun::star::lang::Locale& aLocale )
-			throw(::com::sun::star::uno::RuntimeException);
+		hasLocale( const ::com::sun::star::lang::Locale& aLocale );
 
 	// XThesaurus
     virtual ::com::sun::star::uno::Sequence<
@@ -94,9 +92,7 @@ public:
 				::com::sun::star::linguistic2::XMeaning > > SAL_CALL
 		queryMeanings( const ::rtl::OUString& aTerm,
 				const ::com::sun::star::lang::Locale& aLocale,
-				const ::com::sun::star::beans::PropertyValues& aProperties )
-			throw(::com::sun::star::lang::IllegalArgumentException,
-				  ::com::sun::star::uno::RuntimeException);
+				const ::com::sun::star::beans::PropertyValues& aProperties );
 
 	// LinguDispatcher
 	virtual void

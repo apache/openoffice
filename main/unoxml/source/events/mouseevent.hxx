@@ -57,16 +57,16 @@ protected:
 public:
     explicit CMouseEvent();
 
-    virtual sal_Int32 SAL_CALL getScreenX() throw (RuntimeException);
-    virtual sal_Int32 SAL_CALL getScreenY() throw (RuntimeException);
-    virtual sal_Int32 SAL_CALL getClientX() throw (RuntimeException);
-    virtual sal_Int32 SAL_CALL getClientY() throw (RuntimeException);
-    virtual sal_Bool SAL_CALL getCtrlKey() throw (RuntimeException);
-    virtual sal_Bool SAL_CALL getShiftKey() throw (RuntimeException);
-    virtual sal_Bool SAL_CALL getAltKey() throw (RuntimeException);
-    virtual sal_Bool SAL_CALL getMetaKey() throw (RuntimeException);
-    virtual sal_Int16 SAL_CALL getButton() throw (RuntimeException);
-    virtual Reference< XEventTarget > SAL_CALL getRelatedTarget()  throw(RuntimeException);
+    virtual sal_Int32 SAL_CALL getScreenX();
+    virtual sal_Int32 SAL_CALL getScreenY();
+    virtual sal_Int32 SAL_CALL getClientX();
+    virtual sal_Int32 SAL_CALL getClientY();
+    virtual sal_Bool SAL_CALL getCtrlKey();
+    virtual sal_Bool SAL_CALL getShiftKey();
+    virtual sal_Bool SAL_CALL getAltKey();
+    virtual sal_Bool SAL_CALL getMetaKey();
+    virtual sal_Int16 SAL_CALL getButton();
+    virtual Reference< XEventTarget > SAL_CALL getRelatedTarget();
 
     virtual void SAL_CALL initMouseEvent(
                         const OUString& typeArg,
@@ -83,31 +83,29 @@ public:
                         sal_Bool shiftKeyArg,
                         sal_Bool metaKeyArg,
                         sal_Int16 buttonArg,
-                        const Reference< XEventTarget >& relatedTargetArg)
-        throw(RuntimeException);
+                        const Reference< XEventTarget >& relatedTargetArg);
 
     // delegate to CUIevent
-    virtual Reference< XAbstractView > SAL_CALL getView() throw (RuntimeException);
-    virtual sal_Int32 SAL_CALL getDetail() throw (RuntimeException);
+    virtual Reference< XAbstractView > SAL_CALL getView();
+    virtual sal_Int32 SAL_CALL getDetail();
     virtual void SAL_CALL initUIEvent(const OUString& typeArg,
                      sal_Bool canBubbleArg,
                      sal_Bool cancelableArg,
                      const Reference< XAbstractView >& viewArg,
-                     sal_Int32 detailArg) throw (RuntimeException);
-    virtual OUString SAL_CALL getType() throw (RuntimeException);
-    virtual Reference< XEventTarget > SAL_CALL getTarget() throw (RuntimeException);
-    virtual Reference< XEventTarget > SAL_CALL getCurrentTarget() throw (RuntimeException);
-    virtual PhaseType SAL_CALL getEventPhase() throw (RuntimeException);
-    virtual sal_Bool SAL_CALL getBubbles() throw (RuntimeException);
-    virtual sal_Bool SAL_CALL getCancelable() throw (RuntimeException);
-    virtual com::sun::star::util::Time SAL_CALL getTimeStamp() throw (RuntimeException);
-    virtual void SAL_CALL stopPropagation() throw (RuntimeException);
-    virtual void SAL_CALL preventDefault() throw (RuntimeException);
+                     sal_Int32 detailArg);
+    virtual OUString SAL_CALL getType();
+    virtual Reference< XEventTarget > SAL_CALL getTarget();
+    virtual Reference< XEventTarget > SAL_CALL getCurrentTarget();
+    virtual PhaseType SAL_CALL getEventPhase();
+    virtual sal_Bool SAL_CALL getBubbles();
+    virtual sal_Bool SAL_CALL getCancelable();
+    virtual com::sun::star::util::Time SAL_CALL getTimeStamp();
+    virtual void SAL_CALL stopPropagation();
+    virtual void SAL_CALL preventDefault();
     virtual void SAL_CALL initEvent(
         const OUString& eventTypeArg,
         sal_Bool canBubbleArg,
-        sal_Bool cancelableArg)
-        throw (RuntimeException);
+        sal_Bool cancelableArg);
 };
 }}
 #endif

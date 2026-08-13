@@ -56,9 +56,9 @@ public:
 	virtual ~SwVbaSystem();
 
 	// XSystem
-	virtual sal_Int32 SAL_CALL getCursor() throw ( css::uno::RuntimeException );
-	virtual void SAL_CALL setCursor( sal_Int32 _cursor ) throw ( css::uno::RuntimeException );
-    virtual css::uno::Any SAL_CALL PrivateProfileString( const rtl::OUString& rFilename, const rtl::OUString& rSection, const rtl::OUString& rKey ) throw ( css::uno::RuntimeException );
+	virtual sal_Int32 SAL_CALL getCursor();
+	virtual void SAL_CALL setCursor( sal_Int32 _cursor );
+    virtual css::uno::Any SAL_CALL PrivateProfileString( const rtl::OUString& rFilename, const rtl::OUString& rSection, const rtl::OUString& rKey );
 
 	// XHelperInterface
 	virtual rtl::OUString& getServiceImplName();

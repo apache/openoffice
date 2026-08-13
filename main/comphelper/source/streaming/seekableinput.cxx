@@ -123,10 +123,6 @@ void OSeekableInputWrapper::PrepareCopy_Impl()
 // XInputStream
 //---------------------------------------------------------------------------
 sal_Int32 SAL_CALL OSeekableInputWrapper::readBytes( uno::Sequence< sal_Int8 >& aData, sal_Int32 nBytesToRead )
-	throw ( io::NotConnectedException,
-			io::BufferSizeExceededException,
-			io::IOException,
-			uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -140,10 +136,6 @@ sal_Int32 SAL_CALL OSeekableInputWrapper::readBytes( uno::Sequence< sal_Int8 >& 
 
 //---------------------------------------------------------------------------
 sal_Int32 SAL_CALL OSeekableInputWrapper::readSomeBytes( uno::Sequence< sal_Int8 >& aData, sal_Int32 nMaxBytesToRead )
-	throw ( io::NotConnectedException,
-			io::BufferSizeExceededException,
-			io::IOException,
-			uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -157,10 +149,6 @@ sal_Int32 SAL_CALL OSeekableInputWrapper::readSomeBytes( uno::Sequence< sal_Int8
 
 //---------------------------------------------------------------------------
 void SAL_CALL OSeekableInputWrapper::skipBytes( sal_Int32 nBytesToSkip )
-	throw ( io::NotConnectedException,
-			io::BufferSizeExceededException,
-			io::IOException,
-			uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -174,9 +162,6 @@ void SAL_CALL OSeekableInputWrapper::skipBytes( sal_Int32 nBytesToSkip )
 
 //---------------------------------------------------------------------------
 sal_Int32 SAL_CALL OSeekableInputWrapper::available()
-	throw ( io::NotConnectedException,
-			io::IOException,
-			uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -190,9 +175,6 @@ sal_Int32 SAL_CALL OSeekableInputWrapper::available()
 
 //---------------------------------------------------------------------------
 void SAL_CALL OSeekableInputWrapper::closeInput()
-	throw ( io::NotConnectedException,
-			io::IOException,
-			uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -215,9 +197,6 @@ void SAL_CALL OSeekableInputWrapper::closeInput()
 // XSeekable
 //---------------------------------------------------------------------------
 void SAL_CALL OSeekableInputWrapper::seek( sal_Int64 location )
-	throw ( lang::IllegalArgumentException,
-			io::IOException,
-			uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -231,8 +210,6 @@ void SAL_CALL OSeekableInputWrapper::seek( sal_Int64 location )
 
 //---------------------------------------------------------------------------
 sal_Int64 SAL_CALL OSeekableInputWrapper::getPosition()
-	throw ( io::IOException,
-			uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
@@ -246,8 +223,6 @@ sal_Int64 SAL_CALL OSeekableInputWrapper::getPosition()
 
 //---------------------------------------------------------------------------
 sal_Int64 SAL_CALL OSeekableInputWrapper::getLength()
-	throw ( io::IOException,
-			uno::RuntimeException )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 

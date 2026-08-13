@@ -50,7 +50,6 @@ CertificateContainer::searchMap( const ::rtl::OUString & url, const ::rtl::OUStr
 
 sal_Bool
 CertificateContainer::isTemporaryCertificate ( const ::rtl::OUString & url, const ::rtl::OUString & certificate_name )
-    throw(::com::sun::star::uno::RuntimeException)
 {
 	return searchMap( url, certificate_name, certMap);
 }
@@ -59,7 +58,6 @@ CertificateContainer::isTemporaryCertificate ( const ::rtl::OUString & url, cons
 
 sal_Bool
 CertificateContainer::isCertificateTrust ( const ::rtl::OUString & url, const ::rtl::OUString & certificate_name )
-    throw(::com::sun::star::uno::RuntimeException)
 {
 	return searchMap( url, certificate_name, certTrustMap);
 }
@@ -67,7 +65,6 @@ CertificateContainer::isCertificateTrust ( const ::rtl::OUString & url, const ::
 // -------------------------------------------------------------------
 sal_Bool
 CertificateContainer::addCertificate( const ::rtl::OUString & url, const ::rtl::OUString & certificate_name, ::sal_Bool trust )
-    throw(::com::sun::star::uno::RuntimeException)
 {
 	certMap.insert( Map::value_type( url, certificate_name ) );
 
@@ -80,7 +77,7 @@ CertificateContainer::addCertificate( const ::rtl::OUString & url, const ::rtl::
 
 //-------------------------------------------------------------------------
 ::security::CertificateContainerStatus
-CertificateContainer::hasCertificate( const ::rtl::OUString & url, const ::rtl::OUString & certificate_name ) throw(::com::sun::star::uno::RuntimeException)
+CertificateContainer::hasCertificate( const ::rtl::OUString & url, const ::rtl::OUString & certificate_name )
 {
 	if ( isTemporaryCertificate( url, certificate_name ) )
 	{
@@ -97,7 +94,6 @@ CertificateContainer::hasCertificate( const ::rtl::OUString & url, const ::rtl::
 
 ::rtl::OUString SAL_CALL
 CertificateContainer::getImplementationName( )
-    throw(::com::sun::star::uno::RuntimeException)
 {
     return impl_getStaticImplementationName();
 }
@@ -106,7 +102,6 @@ CertificateContainer::getImplementationName( )
 
 sal_Bool SAL_CALL
 CertificateContainer::supportsService( const ::rtl::OUString& ServiceName )
-    throw(::com::sun::star::uno::RuntimeException)
 {
     if ( ServiceName.compareToAscii("com.sun.star.security.CertificateContainer") == 0 )
         return sal_True;
@@ -118,7 +113,6 @@ CertificateContainer::supportsService( const ::rtl::OUString& ServiceName )
 
 Sequence< ::rtl::OUString > SAL_CALL
 CertificateContainer::getSupportedServiceNames(  )
-    throw(::com::sun::star::uno::RuntimeException)
 {
 	return impl_getStaticSupportedServiceNames();
 }
@@ -127,7 +121,6 @@ CertificateContainer::getSupportedServiceNames(  )
 
 Sequence< ::rtl::OUString > SAL_CALL
 CertificateContainer::impl_getStaticSupportedServiceNames(  )
-    throw(::com::sun::star::uno::RuntimeException)
 {
     Sequence< ::rtl::OUString > aRet(1);
     *aRet.getArray() = ::rtl::OUString::createFromAscii("com.sun.star.security.CertificateContainer");
@@ -138,7 +131,6 @@ CertificateContainer::impl_getStaticSupportedServiceNames(  )
 
 ::rtl::OUString SAL_CALL
 CertificateContainer::impl_getStaticImplementationName()
-    throw(::com::sun::star::uno::RuntimeException)
 {
     return ::rtl::OUString::createFromAscii("com.sun.star.security.CertificateContainer");
 }
@@ -146,7 +138,6 @@ CertificateContainer::impl_getStaticImplementationName()
 //-------------------------------------------------------------------------
 
 Reference< XInterface > SAL_CALL CertificateContainer::impl_createInstance( const Reference< XMultiServiceFactory >& xServiceManager )
-    throw( RuntimeException )
 {
 	return Reference< XInterface >( *new CertificateContainer( xServiceManager ) );
 }
@@ -155,7 +146,6 @@ Reference< XInterface > SAL_CALL CertificateContainer::impl_createInstance( cons
 
 Reference< XSingleServiceFactory > SAL_CALL
 CertificateContainer::impl_createFactory( const Reference< XMultiServiceFactory >& ServiceManager )
-    throw(RuntimeException)
 {
 	Reference< XSingleServiceFactory > xReturn( ::cppu::createOneInstanceFactory( ServiceManager,
 		CertificateContainer::impl_getStaticImplementationName(),

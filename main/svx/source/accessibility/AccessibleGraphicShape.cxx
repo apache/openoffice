@@ -59,7 +59,6 @@ AccessibleGraphicShape::~AccessibleGraphicShape (void)
 //=====  XAccessibleImage  ====================================================
 
 ::rtl::OUString SAL_CALL AccessibleGraphicShape::getAccessibleImageDescription (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
 	if(m_pShape)
       		return m_pShape->GetTitle();
@@ -70,7 +69,6 @@ AccessibleGraphicShape::~AccessibleGraphicShape (void)
 
 
 sal_Int32 SAL_CALL AccessibleGraphicShape::getAccessibleImageHeight (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     return AccessibleShape::getSize().Height;
 }
@@ -79,7 +77,6 @@ sal_Int32 SAL_CALL AccessibleGraphicShape::getAccessibleImageHeight (void)
 
 
 sal_Int32 SAL_CALL AccessibleGraphicShape::getAccessibleImageWidth (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     return AccessibleShape::getSize().Width;
 }
@@ -91,7 +88,6 @@ sal_Int32 SAL_CALL AccessibleGraphicShape::getAccessibleImageWidth (void)
 
 com::sun::star::uno::Any SAL_CALL
     AccessibleGraphicShape::queryInterface (const com::sun::star::uno::Type & rType)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     ::com::sun::star::uno::Any aReturn = AccessibleShape::queryInterface (rType);
     if ( ! aReturn.hasValue())
@@ -125,7 +121,6 @@ void SAL_CALL
 
 ::rtl::OUString SAL_CALL
     AccessibleGraphicShape::getImplementationName (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
 	return ::rtl::OUString(
         RTL_CONSTASCII_USTRINGPARAM("AccessibleGraphicShape"));
@@ -136,7 +131,6 @@ void SAL_CALL
 
 ::com::sun::star::uno::Sequence< ::rtl::OUString> SAL_CALL
     AccessibleGraphicShape::getSupportedServiceNames (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     ThrowIfDisposed ();
     // Get list of supported service names from base class...
@@ -160,7 +154,6 @@ void SAL_CALL
 
 uno::Sequence<uno::Type> SAL_CALL
     AccessibleGraphicShape::getTypes (void)
-    throw (uno::RuntimeException)
 {
     // Get list of types from the context base implementation...
 	uno::Sequence<uno::Type> aTypeList (AccessibleShape::getTypes());
@@ -180,7 +173,6 @@ uno::Sequence<uno::Type> SAL_CALL
 ///	Create the base name of this object, i.e. the name without appended number.
 ::rtl::OUString
     AccessibleGraphicShape::CreateAccessibleBaseName (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
     ::rtl::OUString sName;
 
@@ -206,7 +198,6 @@ uno::Sequence<uno::Type> SAL_CALL
 
 ::rtl::OUString
     AccessibleGraphicShape::CreateAccessibleDescription (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
 	//Solution: Don't use the same information for accessible name and accessible description.
   	 ::rtl::OUString sDesc;
@@ -218,7 +209,6 @@ uno::Sequence<uno::Type> SAL_CALL
 }
 //	Return this object's role.
 sal_Int16 SAL_CALL AccessibleGraphicShape::getAccessibleRole (void)
-		throw (::com::sun::star::uno::RuntimeException)
 {
 	sal_Int16 nAccessibleRole =  AccessibleRole::SHAPE;
 	if( m_pShape->GetModel()->GetImageMapForObject(m_pShape) != NULL )

@@ -74,9 +74,7 @@ namespace canvas
 
         // XIeeeFloatBitmap
         virtual ::com::sun::star::uno::Sequence< float > SAL_CALL getData( ::com::sun::star::rendering::FloatingPointBitmapLayout&	bitmapLayout,
-                                                                           const ::com::sun::star::geometry::IntegerRectangle2D& 	rect ) throw (::com::sun::star::lang::IndexOutOfBoundsException,
-                                                                                                                                               ::com::sun::star::rendering::VolatileContentDestroyedException,
-                                                                                                                                               ::com::sun::star::uno::RuntimeException)
+                                                                           const ::com::sun::star::geometry::IntegerRectangle2D& 	rect )
         {
             verifyInput(rect,
                         static_cast< typename BaseType::UnambiguousBaseType* >(this));
@@ -90,9 +88,7 @@ namespace canvas
 
         virtual void SAL_CALL setData( const ::com::sun::star::uno::Sequence< float >& 				 data,
                                        const ::com::sun::star::rendering::FloatingPointBitmapLayout& bitmapLayout,
-                                       const ::com::sun::star::geometry::IntegerRectangle2D& 		 rect ) throw (::com::sun::star::lang::IllegalArgumentException,
-                                                                                                                   ::com::sun::star::lang::IndexOutOfBoundsException,
-                                                                                                                   ::com::sun::star::uno::RuntimeException)
+                                       const ::com::sun::star::geometry::IntegerRectangle2D& 		 rect )
         {
             verifyInput(bitmapLayout, rect,
                         static_cast< typename BaseType::UnambiguousBaseType* >(this));
@@ -108,9 +104,7 @@ namespace canvas
 
         virtual void SAL_CALL setPixel( const ::com::sun::star::uno::Sequence< float >& 				color,
                                         const ::com::sun::star::rendering::FloatingPointBitmapLayout&	bitmapLayout,
-                                        const ::com::sun::star::geometry::IntegerPoint2D& 				pos ) throw (::com::sun::star::lang::IllegalArgumentException,
-                                                                                                                     ::com::sun::star::lang::IndexOutOfBoundsException,
-                                                                                                                     ::com::sun::star::uno::RuntimeException)
+                                        const ::com::sun::star::geometry::IntegerPoint2D& 				pos )
         {
             verifyInput(bitmapLayout, pos,
                         static_cast< typename BaseType::UnambiguousBaseType* >(this));
@@ -125,9 +119,7 @@ namespace canvas
         }
 
         virtual ::com::sun::star::uno::Sequence< float > SAL_CALL getPixel( ::com::sun::star::rendering::FloatingPointBitmapLayout& bitmapLayout,
-                                                                            const ::com::sun::star::geometry::IntegerPoint2D& 		pos ) throw (::com::sun::star::lang::IndexOutOfBoundsException,
-                                                                                                                                                 ::com::sun::star::rendering::VolatileContentDestroyedException,
-                                                                                                                                                 ::com::sun::star::uno::RuntimeException)
+                                                                            const ::com::sun::star::geometry::IntegerPoint2D& 		pos )
         {
             verifyInput(pos,
                         static_cast< typename BaseType::UnambiguousBaseType* >(this));
@@ -139,7 +131,7 @@ namespace canvas
                                                       pos );
         }
 
-        virtual ::com::sun::star::rendering::FloatingPointBitmapLayout SAL_CALL getMemoryLayout(  ) throw (::com::sun::star::uno::RuntimeException)
+        virtual ::com::sun::star::rendering::FloatingPointBitmapLayout SAL_CALL getMemoryLayout(  )
         {
             typename BaseType::MutexType aGuard( BaseType::m_aMutex );
 

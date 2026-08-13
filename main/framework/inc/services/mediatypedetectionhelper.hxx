@@ -129,7 +129,7 @@ class MediaTypeDetectionHelper	:	public ::cppu::WeakImplHelper2< ::com::sun::sta
 			@onerror	-
 		*//*-*****************************************************************************************************/
 
-		virtual sal_Bool SAL_CALL mapStrings( css::uno::Sequence< ::rtl::OUString >& seqParameter ) throw( css::uno::RuntimeException );
+		virtual sal_Bool SAL_CALL mapStrings( css::uno::Sequence< ::rtl::OUString >& seqParameter );
 
 	//-------------------------------------------------------------------------------------------------------------
 	//	variables

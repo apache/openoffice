@@ -157,7 +157,7 @@ public:
 		@onerror
 	*/
 
-	virtual UNO3_ANY SAL_CALL queryInterface( const UNO3_TYPE& aType ) throw( UNO3_RUNTIMEEXCEPTION );
+	virtual UNO3_ANY SAL_CALL queryInterface( const UNO3_TYPE& aType );
 
 	/**_______________________________________________________________________________________________________
 		@short		increment refcount
@@ -208,7 +208,7 @@ public:
 		@onerror
 	*/
 
-	virtual UNO3_SEQUENCE< UNO3_TYPE > SAL_CALL getTypes() throw( UNO3_RUNTIMEEXCEPTION );
+	virtual UNO3_SEQUENCE< UNO3_TYPE > SAL_CALL getTypes();
 
 	//__________________________________________________________________________________________________________
 	//	XAggregation
@@ -227,7 +227,7 @@ public:
 		@onerror
 	*/
 
-	UNO3_ANY SAL_CALL queryAggregation( const UNO3_TYPE& aType ) throw( UNO3_RUNTIMEEXCEPTION );
+	UNO3_ANY SAL_CALL queryAggregation( const UNO3_TYPE& aType );
 
 	//__________________________________________________________________________________________________________
 	//	XControl
@@ -247,7 +247,7 @@ public:
 	*/
 
     virtual void SAL_CALL createPeer(	const	UNO3_REFERENCE< UNO3_XTOOLKIT >&	xToolkit	,
-										const	UNO3_REFERENCE< UNO3_XWINDOWPEER >&	xParent		) throw( UNO3_RUNTIMEEXCEPTION );
+										const	UNO3_REFERENCE< UNO3_XWINDOWPEER >&	xParent		);
 
 	/**_________________________________________________________________________________________________________
 		@short
@@ -262,7 +262,7 @@ public:
 		@onerror
 	*/
 
-    virtual sal_Bool SAL_CALL setModel( const UNO3_REFERENCE< UNO3_XCONTROLMODEL >& xModel ) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual sal_Bool SAL_CALL setModel( const UNO3_REFERENCE< UNO3_XCONTROLMODEL >& xModel );
 
 	/**_________________________________________________________________________________________________________
 		@short
@@ -277,7 +277,7 @@ public:
 		@onerror
 	*/
 
-    virtual UNO3_REFERENCE< UNO3_XCONTROLMODEL > SAL_CALL getModel() throw( UNO3_RUNTIMEEXCEPTION );
+    virtual UNO3_REFERENCE< UNO3_XCONTROLMODEL > SAL_CALL getModel();
 
 	//__________________________________________________________________________________________________________
     //	XComponent
@@ -296,7 +296,7 @@ public:
 		@onerror
 	*/
 
-    virtual void SAL_CALL dispose() throw( UNO3_RUNTIMEEXCEPTION );
+    virtual void SAL_CALL dispose();
 
 	//__________________________________________________________________________________________________________
 	//	XView
@@ -315,7 +315,7 @@ public:
 		@onerror
 	*/
 
-    virtual sal_Bool SAL_CALL setGraphics( const UNO3_REFERENCE< UNO3_XGRAPHICS >& xDevice ) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual sal_Bool SAL_CALL setGraphics( const UNO3_REFERENCE< UNO3_XGRAPHICS >& xDevice );
 
 	/**_________________________________________________________________________________________________________
 		@short
@@ -330,7 +330,7 @@ public:
 		@onerror
 	*/
 
-    virtual UNO3_REFERENCE< UNO3_XGRAPHICS > SAL_CALL getGraphics() throw( UNO3_RUNTIMEEXCEPTION );
+    virtual UNO3_REFERENCE< UNO3_XGRAPHICS > SAL_CALL getGraphics();
 
 	//__________________________________________________________________________________________________________
 	//	XConnectionPointContainer
@@ -349,7 +349,7 @@ public:
 		@onerror
 	*/
 
-	virtual UNO3_SEQUENCE< UNO3_TYPE > SAL_CALL getConnectionPointTypes() throw( UNO3_RUNTIMEEXCEPTION );
+	virtual UNO3_SEQUENCE< UNO3_TYPE > SAL_CALL getConnectionPointTypes();
 
 	/**_________________________________________________________________________________________________________
 		@short
@@ -364,7 +364,7 @@ public:
 		@onerror
 	*/
 
-    virtual UNO3_REFERENCE< UNO3_XCONNECTIONPOINT > SAL_CALL queryConnectionPoint( const UNO3_TYPE& aType ) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual UNO3_REFERENCE< UNO3_XCONNECTIONPOINT > SAL_CALL queryConnectionPoint( const UNO3_TYPE& aType );
 
 	/**_________________________________________________________________________________________________________
 		@short
@@ -380,7 +380,7 @@ public:
 	*/
 
     virtual void SAL_CALL advise(	const	UNO3_TYPE&							aType		,
-									const	UNO3_REFERENCE< UNO3_XINTERFACE >&	xListener	) throw( UNO3_RUNTIMEEXCEPTION );
+									const	UNO3_REFERENCE< UNO3_XINTERFACE >&	xListener	);
 
 	/**_________________________________________________________________________________________________________
 		@short
@@ -396,7 +396,7 @@ public:
 	*/
 
     virtual void SAL_CALL unadvise(	const	UNO3_TYPE&							aType		,
-									const	UNO3_REFERENCE< UNO3_XINTERFACE >&	xListener	) throw( UNO3_RUNTIMEEXCEPTION );
+									const	UNO3_REFERENCE< UNO3_XINTERFACE >&	xListener	);
 
 	//__________________________________________________________________________________________________________
 	//	impl but public methods to register service!
@@ -458,7 +458,7 @@ protected:
 	virtual sal_Bool SAL_CALL convertFastPropertyValue(			UNO3_ANY&	rConvertedValue	,
 																UNO3_ANY&	rOldValue		,
 																sal_Int32	nHandle			,
-														const	UNO3_ANY&	rValue			) throw( UNO3_ILLEGALARGUMENTEXCEPTION );
+														const	UNO3_ANY&	rValue			);
 
 	/**_________________________________________________________________________________________________________
 		@short
@@ -474,7 +474,7 @@ protected:
 	*/
 
 	virtual void SAL_CALL setFastPropertyValue_NoBroadcast(			sal_Int32	nHandle	,
-						  									const	UNO3_ANY&	rValue	) throw ( ::com::sun::star::uno::Exception );
+						  									const	UNO3_ANY&	rValue	);
 
 	/**_________________________________________________________________________________________________________
 		@short
@@ -524,7 +524,7 @@ protected:
 		@onerror
 	*/
 
-	UNO3_REFERENCE< UNO3_XPROPERTYSETINFO > SAL_CALL getPropertySetInfo() throw( UNO3_RUNTIMEEXCEPTION );
+	UNO3_REFERENCE< UNO3_XPROPERTYSETINFO > SAL_CALL getPropertySetInfo();
 
 	//__________________________________________________________________________________________________________
 	//	BaseControl

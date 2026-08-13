@@ -73,11 +73,10 @@ public:
 		load( const ::com::sun::star::uno::Sequence<
 				::com::sun::star::beans::PropertyValue >& rMediaDescriptor
 				,const ::com::sun::star::uno::Reference<
-				::com::sun::star::frame::XFrame >& xFrame )
-							throw (::com::sun::star::uno::RuntimeException);
+				::com::sun::star::frame::XFrame >& xFrame );
 
     virtual void SAL_CALL
-		cancel()			throw (::com::sun::star::uno::RuntimeException);
+		cancel();
 };
 
 //.............................................................................

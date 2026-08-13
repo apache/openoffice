@@ -69,22 +69,18 @@ public:
     ~ActiveMSPList();
 
     css::uno::Reference< css::script::provider::XScriptProvider >
-        getMSPFromStringContext( const ::rtl::OUString& context )
-            SAL_THROW(( css::lang::IllegalArgumentException, css::uno::RuntimeException ));
+        getMSPFromStringContext( const ::rtl::OUString& context );
 
     css::uno::Reference< css::script::provider::XScriptProvider >
-        getMSPFromAnyContext( const css::uno::Any& context )
-            SAL_THROW(( css::lang::IllegalArgumentException, css::uno::RuntimeException ));
+        getMSPFromAnyContext( const css::uno::Any& context );
 
     css::uno::Reference< css::script::provider::XScriptProvider >
-        getMSPFromInvocationContext( const css::uno::Reference< css::document::XScriptInvocationContext >& context )
-            SAL_THROW(( css::lang::IllegalArgumentException, css::uno::RuntimeException ));
+        getMSPFromInvocationContext( const css::uno::Reference< css::document::XScriptInvocationContext >& context );
 
     //XEventListener
     //======================================================================
 
-    virtual void SAL_CALL disposing( const css::lang::EventObject& Source )
-        throw ( css::uno::RuntimeException );
+    virtual void SAL_CALL disposing( const css::lang::EventObject& Source );
 
 private:
     void addActiveMSP( const css::uno::Reference< css::uno::XInterface >& xComponent,

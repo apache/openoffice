@@ -67,8 +67,6 @@ FrameLoaderFactory::~FrameLoaderFactory()
     16.07.2003 13:37
 -----------------------------------------------*/
 css::uno::Reference< css::uno::XInterface > SAL_CALL FrameLoaderFactory::createInstance(const ::rtl::OUString& sLoader)
-    throw(css::uno::Exception       ,
-          css::uno::RuntimeException)
 {
     return createInstanceWithArguments(sLoader, css::uno::Sequence< css::uno::Any >());
 }
@@ -78,8 +76,6 @@ css::uno::Reference< css::uno::XInterface > SAL_CALL FrameLoaderFactory::createI
 -----------------------------------------------*/
 css::uno::Reference< css::uno::XInterface > SAL_CALL FrameLoaderFactory::createInstanceWithArguments(const ::rtl::OUString&                     sLoader  ,
                                                                                                      const css::uno::Sequence< css::uno::Any >& lArguments)
-    throw(css::uno::Exception       ,
-          css::uno::RuntimeException)
 {
     // SAFE ->
     ::osl::ResettableMutexGuard aLock(m_aLock);
@@ -157,7 +153,6 @@ css::uno::Reference< css::uno::XInterface > SAL_CALL FrameLoaderFactory::createI
     09.07.2003 07:46
 -----------------------------------------------*/
 css::uno::Sequence< ::rtl::OUString > SAL_CALL FrameLoaderFactory::getAvailableServiceNames()
-    throw(css::uno::RuntimeException)
 {
     // must be the same list as ((XNameAccess*)this)->getElementNames() return!
     return getElementNames();

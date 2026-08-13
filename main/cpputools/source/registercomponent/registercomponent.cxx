@@ -193,7 +193,6 @@ struct Options
 };
 
 sal_Bool parseOptions(int ac, char* av[], Options& rOptions, sal_Bool bCmdFile)
-	throw( IllegalArgument )
 {
 	sal_Bool 	ret = sal_True;
 	sal_uInt16	i=0;
@@ -644,7 +643,7 @@ static bool hasService(
 static void bootstrap(
     Options & opt ,
     Reference< XMultiServiceFactory > &xSMgr,
-    Reference< XSimpleRegistry > & reg ) throw ( Exception )
+    Reference< XSimpleRegistry > & reg )
 {
     if( opt.sRegName.equals( opt.sBootRegName2 ) )
     {

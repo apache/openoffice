@@ -86,17 +86,13 @@ struct FactoryImpl : public ::cppu::WeakImplHelper2< lang::XServiceInfo,
     virtual ~FactoryImpl();
 
     // XServiceInfo
-    virtual OUString SAL_CALL getImplementationName()
-        throw (RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( const OUString & rServiceName )
-        throw (RuntimeException);
-    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames()
-        throw (RuntimeException);
+    virtual OUString SAL_CALL getImplementationName();
+    virtual sal_Bool SAL_CALL supportsService( const OUString & rServiceName );
+    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames();
 
     // XProxyFactory
     virtual Reference< XAggregation > SAL_CALL createProxy(
-        Reference< XInterface > const & xTarget )
-        throw (RuntimeException);
+        Reference< XInterface > const & xTarget );
 };
 
 //______________________________________________________________________________
@@ -177,8 +173,7 @@ UnoInterfaceReference FactoryImpl::binuno_queryInterface(
 struct ProxyRoot : public ::cppu::OWeakAggObject
 {
     // XAggregation
-    virtual Any SAL_CALL queryAggregation( Type const & rType )
-        throw (RuntimeException);
+    virtual Any SAL_CALL queryAggregation( Type const & rType );
 
     virtual ~ProxyRoot();
     inline ProxyRoot( ::rtl::Reference< FactoryImpl > const & factory,
@@ -333,7 +328,6 @@ inline ProxyRoot::ProxyRoot(
 
 //______________________________________________________________________________
 Any ProxyRoot::queryAggregation( Type const & rType )
-    throw (RuntimeException)
 {
     Any ret( OWeakAggObject::queryAggregation( rType ) );
     if (! ret.hasValue())
@@ -442,7 +436,6 @@ FactoryImpl::~FactoryImpl()
 //______________________________________________________________________________
 Reference< XAggregation > FactoryImpl::createProxy(
     Reference< XInterface > const & xTarget )
-    throw (RuntimeException)
 {
     return new ProxyRoot( this, xTarget );
 }
@@ -450,14 +443,12 @@ Reference< XAggregation > FactoryImpl::createProxy(
 // XServiceInfo
 //______________________________________________________________________________
 OUString FactoryImpl::getImplementationName()
-    throw (RuntimeException)
 {
     return proxyfac_getImplementationName();
 }
 
 //______________________________________________________________________________
 sal_Bool FactoryImpl::supportsService( const OUString & rServiceName )
-    throw (RuntimeException)
 {
     Sequence< OUString > const & rSNL = getSupportedServiceNames();
     OUString const * pArray = rSNL.getConstArray();
@@ -471,7 +462,6 @@ sal_Bool FactoryImpl::supportsService( const OUString & rServiceName )
 
 //______________________________________________________________________________
 Sequence< OUString > FactoryImpl::getSupportedServiceNames()
-    throw(::com::sun::star::uno::RuntimeException)
 {
     return proxyfac_getSupportedServiceNames();
 }
@@ -479,7 +469,6 @@ Sequence< OUString > FactoryImpl::getSupportedServiceNames()
 //==============================================================================
 static Reference< XInterface > SAL_CALL proxyfac_create(
     Reference< XComponentContext > const & )
-    throw (Exception)
 {
 	Reference< XInterface > xRet;
     {

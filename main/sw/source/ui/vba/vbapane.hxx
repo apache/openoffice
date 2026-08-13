@@ -36,12 +36,12 @@ private:
 
 public:
 	SwVbaPane( const css::uno::Reference< ooo::vba::XHelperInterface >& rParent, const css::uno::Reference< css::uno::XComponentContext >& rContext,
-        const css::uno::Reference< css::frame::XModel >& xModel ) throw ( css::uno::RuntimeException );
+        const css::uno::Reference< css::frame::XModel >& xModel );
 	virtual ~SwVbaPane();
 
     // Methods
-    virtual css::uno::Any SAL_CALL View(  ) throw (css::uno::RuntimeException);
-    virtual void SAL_CALL Close(  ) throw (css::uno::RuntimeException);
+    virtual css::uno::Any SAL_CALL View(  );
+    virtual void SAL_CALL Close(  );
 
 	// XHelperInterface
 	virtual rtl::OUString& getServiceImplName();

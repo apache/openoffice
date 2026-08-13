@@ -70,7 +70,6 @@ class Provider:
 public:
     static css::uno::Reference< css::uno::XInterface > SAL_CALL static_create(
         css::uno::Reference< css::uno::XComponentContext > const & xContext)
-        SAL_THROW((css::uno::Exception))
     { return static_cast< cppu::OWeakObject * >(new Provider(xContext)); }
 
     static rtl::OUString SAL_CALL static_getImplementationName();
@@ -86,25 +85,21 @@ private:
     virtual ~Provider() {}
 
     virtual rtl::OUString SAL_CALL getImplementationName()
-        throw (css::uno::RuntimeException)
     { return static_getImplementationName(); }
 
     virtual sal_Bool SAL_CALL supportsService(rtl::OUString const & ServiceName)
-        throw (css::uno::RuntimeException)
     { return ServiceName == getSupportedServiceNames()[0]; } //TODO
 
     virtual css::uno::Sequence< rtl::OUString > SAL_CALL
-    getSupportedServiceNames() throw (css::uno::RuntimeException)
+    getSupportedServiceNames()
     { return static_getSupportedServiceNames(); }
 
     virtual css::uno::Reference< css::frame::XDispatch > SAL_CALL queryDispatch(
-        css::util::URL const &, rtl::OUString const &, sal_Int32)
-        throw (css::uno::RuntimeException);
+        css::util::URL const &, rtl::OUString const &, sal_Int32);
 
     virtual css::uno::Sequence< css::uno::Reference< css::frame::XDispatch > >
     SAL_CALL queryDispatches(
-        css::uno::Sequence< css::frame::DispatchDescriptor > const & Requests)
-        throw (css::uno::RuntimeException);
+        css::uno::Sequence< css::frame::DispatchDescriptor > const & Requests);
 
     css::uno::Reference< css::uno::XComponentContext > context_;
 };
@@ -125,7 +120,6 @@ css::uno::Sequence< rtl::OUString > Provider::static_getSupportedServiceNames()
 
 css::uno::Reference< css::frame::XDispatch > Provider::queryDispatch(
     css::util::URL const &, rtl::OUString const &, sal_Int32)
-    throw (css::uno::RuntimeException)
 {
     css::uno::Reference< css::frame::XDispatch > dispatch;
     if (!(context_->getValueByName(
@@ -150,7 +144,6 @@ css::uno::Reference< css::frame::XDispatch > Provider::queryDispatch(
 css::uno::Sequence< css::uno::Reference< css::frame::XDispatch > >
 Provider::queryDispatches(
     css::uno::Sequence< css::frame::DispatchDescriptor > const & Requests)
-    throw (css::uno::RuntimeException)
 {
     css::uno::Sequence< css::uno::Reference< css::frame::XDispatch > > s(
         Requests.getLength());
@@ -170,7 +163,6 @@ class Dispatch:
 public:
     static css::uno::Reference< css::uno::XInterface > SAL_CALL static_create(
         css::uno::Reference< css::uno::XComponentContext > const & xContext)
-        SAL_THROW((css::uno::Exception))
     { return static_cast< cppu::OWeakObject * >(new Dispatch(xContext)); }
 
     static rtl::OUString SAL_CALL static_getImplementationName();
@@ -187,32 +179,27 @@ private:
     virtual ~Dispatch() {}
 
     virtual rtl::OUString SAL_CALL getImplementationName()
-        throw (css::uno::RuntimeException)
     { return static_getImplementationName(); }
 
     virtual sal_Bool SAL_CALL supportsService(rtl::OUString const &)
-        throw (css::uno::RuntimeException)
     { return false; } //TODO
 
     virtual css::uno::Sequence< rtl::OUString > SAL_CALL
-    getSupportedServiceNames() throw (css::uno::RuntimeException)
+    getSupportedServiceNames()
     { return static_getSupportedServiceNames(); }
 
     virtual void SAL_CALL dispatch(
         css::util::URL const &,
-        css::uno::Sequence< css::beans::PropertyValue > const &)
-        throw (css::uno::RuntimeException);
+        css::uno::Sequence< css::beans::PropertyValue > const &);
 
     virtual void SAL_CALL addStatusListener(
         css::uno::Reference< css::frame::XStatusListener > const &,
         css::util::URL const &)
-        throw (css::uno::RuntimeException)
     {}
 
     virtual void SAL_CALL removeStatusListener(
         css::uno::Reference< css::frame::XStatusListener > const &,
         css::util::URL const &)
-        throw (css::uno::RuntimeException)
     {}
 
     css::uno::Reference< css::uno::XComponentContext > context_;
@@ -227,7 +214,6 @@ rtl::OUString Dispatch::static_getImplementationName() {
 void Dispatch::dispatch(
     css::util::URL const &,
     css::uno::Sequence< css::beans::PropertyValue > const &)
-    throw (css::uno::RuntimeException)
 {
     css::uno::Reference< css::lang::XMultiComponentFactory > smgr(
         context_->getServiceManager(), css::uno::UNO_SET_THROW);

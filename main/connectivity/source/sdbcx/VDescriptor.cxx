@@ -50,7 +50,7 @@ namespace connectivity
 
 		// -------------------------------------------------------------------------
 		// com::sun::star::lang::XUnoTunnel
-		sal_Int64 SAL_CALL ODescriptor::getSomething( const Sequence< sal_Int8 >& rId ) throw(RuntimeException)
+		sal_Int64 SAL_CALL ODescriptor::getSomething( const Sequence< sal_Int8 >& rId )
 		{
 			return (rId.getLength() == 16 && 0 == rtl_compareMemory(getUnoTunnelImplementationId().getConstArray(),  rId.getConstArray(), 16 ) )
 				? reinterpret_cast< sal_Int64 >( this )
@@ -123,7 +123,7 @@ namespace connectivity
 		}
 
 		// -----------------------------------------------------------------------------
-		Any SAL_CALL ODescriptor::queryInterface( const Type & rType ) throw(RuntimeException)
+		Any SAL_CALL ODescriptor::queryInterface( const Type & rType )
 		{
 			Any aRet = ::cppu::queryInterface(rType,static_cast< XUnoTunnel*> (this));
 			return aRet.hasValue() ? aRet : ODescriptor_PBASE::queryInterface(rType);
@@ -136,7 +136,7 @@ namespace connectivity
 		}
 
 		// -----------------------------------------------------------------------------
-		Sequence< Type > SAL_CALL ODescriptor::getTypes(  ) throw(RuntimeException)
+		Sequence< Type > SAL_CALL ODescriptor::getTypes(  )
 		{
 			::cppu::OTypeCollection aTypes(	::getCppuType( (const Reference< XMultiPropertySet > *)0 ),
 											::getCppuType( (const Reference< XFastPropertySet > *)0 ),

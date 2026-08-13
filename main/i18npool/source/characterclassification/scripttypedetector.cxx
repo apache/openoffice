@@ -67,7 +67,7 @@ static sal_Int16 scriptDirection[] = {
 };
 
 sal_Int16 SAL_CALL
-ScriptTypeDetector::getScriptDirection( const ::rtl::OUString& Text, sal_Int32 nPos, sal_Int16 defaultScriptDirection ) throw (::com::sun::star::uno::RuntimeException)
+ScriptTypeDetector::getScriptDirection( const ::rtl::OUString& Text, sal_Int32 nPos, sal_Int16 defaultScriptDirection )
 {
     sal_Int16 dir = scriptDirection[unicode::getUnicodeDirection(Text[nPos])];
     return (dir == ScriptDirection::NEUTRAL) ? defaultScriptDirection : dir;
@@ -75,7 +75,7 @@ ScriptTypeDetector::getScriptDirection( const ::rtl::OUString& Text, sal_Int32 n
 
 // return value '-1' means either the direction on nPos is not same as scriptDirection or nPos is out of range.
 sal_Int32 SAL_CALL
-ScriptTypeDetector::beginOfScriptDirection( const ::rtl::OUString& Text, sal_Int32 nPos, sal_Int16 direction ) throw (::com::sun::star::uno::RuntimeException)
+ScriptTypeDetector::beginOfScriptDirection( const ::rtl::OUString& Text, sal_Int32 nPos, sal_Int16 direction )
 {
         sal_Int32 cPos = nPos;
 
@@ -89,7 +89,7 @@ ScriptTypeDetector::beginOfScriptDirection( const ::rtl::OUString& Text, sal_Int
 }
 
 sal_Int32 SAL_CALL
-ScriptTypeDetector::endOfScriptDirection( const ::rtl::OUString& Text, sal_Int32 nPos, sal_Int16 direction ) throw (::com::sun::star::uno::RuntimeException)
+ScriptTypeDetector::endOfScriptDirection( const ::rtl::OUString& Text, sal_Int32 nPos, sal_Int16 direction )
 {
         sal_Int32 cPos = nPos;
         sal_Int32 len = Text.getLength();
@@ -104,7 +104,7 @@ ScriptTypeDetector::endOfScriptDirection( const ::rtl::OUString& Text, sal_Int32
 }
 
 sal_Int16 SAL_CALL
-ScriptTypeDetector::getCTLScriptType( const ::rtl::OUString& Text, sal_Int32 nPos ) throw (::com::sun::star::uno::RuntimeException)
+ScriptTypeDetector::getCTLScriptType( const ::rtl::OUString& Text, sal_Int32 nPos )
 {
     static ScriptTypeList typeList[] = {
         { UnicodeScript_kHebrew, UnicodeScript_kHebrew, CTLScriptType::CTL_HEBREW },    // 10
@@ -119,7 +119,7 @@ ScriptTypeDetector::getCTLScriptType( const ::rtl::OUString& Text, sal_Int32 nPo
 
 // Begin of Script Type is inclusive.
 sal_Int32 SAL_CALL
-ScriptTypeDetector::beginOfCTLScriptType( const ::rtl::OUString& Text, sal_Int32 nPos ) throw (::com::sun::star::uno::RuntimeException)
+ScriptTypeDetector::beginOfCTLScriptType( const ::rtl::OUString& Text, sal_Int32 nPos )
 {
     if (nPos < 0)
         return 0;
@@ -137,7 +137,7 @@ ScriptTypeDetector::beginOfCTLScriptType( const ::rtl::OUString& Text, sal_Int32
 
 // End of the Script Type is exclusive, the return value pointing to the begin of next script type
 sal_Int32 SAL_CALL
-ScriptTypeDetector::endOfCTLScriptType( const ::rtl::OUString& Text, sal_Int32 nPos ) throw (::com::sun::star::uno::RuntimeException)
+ScriptTypeDetector::endOfCTLScriptType( const ::rtl::OUString& Text, sal_Int32 nPos )
 {
     if (nPos < 0)
         return 0;
@@ -157,19 +157,19 @@ ScriptTypeDetector::endOfCTLScriptType( const ::rtl::OUString& Text, sal_Int32 n
 const sal_Char sDetector[] = "draft.com.sun.star.i18n.ScriptTypeDetector";
 
 rtl::OUString SAL_CALL
-ScriptTypeDetector::getImplementationName() throw( ::com::sun::star::uno::RuntimeException )
+ScriptTypeDetector::getImplementationName()
 {
     return ::rtl::OUString::createFromAscii(sDetector);
 }
 
 sal_Bool SAL_CALL
-ScriptTypeDetector::supportsService(const rtl::OUString& ServiceName) throw( ::com::sun::star::uno::RuntimeException )
+ScriptTypeDetector::supportsService(const rtl::OUString& ServiceName)
 {
     return !ServiceName.compareToAscii(sDetector);
 }
 
 ::com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL
-ScriptTypeDetector::getSupportedServiceNames() throw( ::com::sun::star::uno::RuntimeException )
+ScriptTypeDetector::getSupportedServiceNames()
 {
     ::com::sun::star::uno::Sequence< ::rtl::OUString > aRet(1);
     aRet[0] = ::rtl::OUString::createFromAscii(sDetector);

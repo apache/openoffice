@@ -39,8 +39,8 @@ public:
 	virtual ~SwVbaTemplate();
 
    // XTemplate
-    virtual rtl::OUString SAL_CALL getName() throw (css::uno::RuntimeException);
-    virtual css::uno::Any SAL_CALL AutoTextEntries( const css::uno::Any& index ) throw (css::uno::RuntimeException);
+    virtual rtl::OUString SAL_CALL getName();
+    virtual css::uno::Any SAL_CALL AutoTextEntries( const css::uno::Any& index );
 	// XHelperInterface
 	virtual rtl::OUString& getServiceImplName();
 	virtual css::uno::Sequence<rtl::OUString> getServiceNames();

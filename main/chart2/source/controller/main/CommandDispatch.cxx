@@ -93,11 +93,9 @@ void SAL_CALL CommandDispatch::disposing()
 
 // ____ XDispatch ____
 void SAL_CALL CommandDispatch::dispatch( const util::URL& /* URL */, const Sequence< beans::PropertyValue >& /* Arguments */ )
-	throw (uno::RuntimeException)
 {}
 
 void SAL_CALL CommandDispatch::addStatusListener( const Reference< frame::XStatusListener >& Control, const util::URL& URL )
-	throw (uno::RuntimeException)
 {
 	tListenerMap::iterator aIt( m_aListeners.find( URL.Complete ));
 	if( aIt == m_aListeners.end())
@@ -113,7 +111,6 @@ void SAL_CALL CommandDispatch::addStatusListener( const Reference< frame::XStatu
 }
 
 void SAL_CALL CommandDispatch::removeStatusListener( const Reference< frame::XStatusListener >& Control, const util::URL& URL )
-	throw (uno::RuntimeException)
 {
 	tListenerMap::iterator aIt( m_aListeners.find( URL.Complete ));
 	if( aIt != m_aListeners.end())
@@ -122,14 +119,12 @@ void SAL_CALL CommandDispatch::removeStatusListener( const Reference< frame::XSt
 
 // ____ XModifyListener ____
 void SAL_CALL CommandDispatch::modified( const lang::EventObject& /* aEvent */ )
-	throw (uno::RuntimeException)
 {
 	fireAllStatusEvents( 0 );
 }
 
 // ____ XEventListener (base of XModifyListener) ____
 void SAL_CALL CommandDispatch::disposing( const lang::EventObject& /* Source */ )
-	throw (uno::RuntimeException)
 {}
 
 void CommandDispatch::fireAllStatusEvents(

@@ -38,7 +38,7 @@ objectDefaultContext::objectDefaultContext( ContextHandler& rParent, Theme& rThe
 {
 }
 
-Reference< XFastContextHandler > objectDefaultContext::createFastChildContext( sal_Int32 aElementToken, const Reference< XFastAttributeList >& /* xAttribs */ ) throw (SAXException, RuntimeException)
+Reference< XFastContextHandler > objectDefaultContext::createFastChildContext( sal_Int32 aElementToken, const Reference< XFastAttributeList >& /* xAttribs */ )
 {
 	switch( aElementToken )
 	{

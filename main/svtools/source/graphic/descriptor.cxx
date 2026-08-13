@@ -207,7 +207,6 @@ uno::Sequence< ::rtl::OUString > GraphicDescriptor::getSupportedServiceNames_Sta
 // ------------------------------------------------------------------------------
 
 uno::Any SAL_CALL GraphicDescriptor::queryAggregation( const uno::Type & rType )
-	throw( uno::RuntimeException )
 {
 	uno::Any aAny;
 
@@ -230,7 +229,6 @@ uno::Any SAL_CALL GraphicDescriptor::queryAggregation( const uno::Type & rType )
 // ------------------------------------------------------------------------------
 
 uno::Any SAL_CALL GraphicDescriptor::queryInterface( const uno::Type & rType )
-	throw( uno::RuntimeException )
 {
 	return OWeakAggObject::queryInterface( rType );
 }
@@ -254,7 +252,6 @@ void SAL_CALL GraphicDescriptor::release()
 // ------------------------------------------------------------------------------
 
 ::rtl::OUString SAL_CALL GraphicDescriptor::getImplementationName()
-	throw( uno::RuntimeException )
 {
 	return getImplementationName_Static();
 }
@@ -262,7 +259,6 @@ void SAL_CALL GraphicDescriptor::release()
 // ------------------------------------------------------------------------------
 
 sal_Bool SAL_CALL GraphicDescriptor::supportsService( const rtl::OUString& ServiceName )
-	throw( uno::RuntimeException )
 {
     uno::Sequence< ::rtl::OUString >	aSNL( getSupportedServiceNames() );
     const ::rtl::OUString*				pArray = aSNL.getConstArray();
@@ -277,7 +273,6 @@ sal_Bool SAL_CALL GraphicDescriptor::supportsService( const rtl::OUString& Servi
 // ------------------------------------------------------------------------------
 
 uno::Sequence< rtl::OUString > SAL_CALL GraphicDescriptor::getSupportedServiceNames()
-	throw( uno::RuntimeException )
 {
 	return getSupportedServiceNames_Static();
 }
@@ -285,7 +280,6 @@ uno::Sequence< rtl::OUString > SAL_CALL GraphicDescriptor::getSupportedServiceNa
 // ------------------------------------------------------------------------------
 
 uno::Sequence< uno::Type > SAL_CALL GraphicDescriptor::getTypes()
-	throw( uno::RuntimeException )
 {
 	uno::Sequence< uno::Type >	aTypes( 6 );
 	uno::Type* 					pTypes = aTypes.getArray();
@@ -303,7 +297,6 @@ uno::Sequence< uno::Type > SAL_CALL GraphicDescriptor::getTypes()
 // ------------------------------------------------------------------------------
 
 uno::Sequence< sal_Int8 > SAL_CALL GraphicDescriptor::getImplementationId()
-	throw( uno::RuntimeException )
 {
 	vos::OGuard 						aGuard( Application::GetSolarMutex() );
 	static uno::Sequence< sal_Int8 >	aId;
@@ -347,10 +340,6 @@ uno::Sequence< sal_Int8 > SAL_CALL GraphicDescriptor::getImplementationId()
 // ------------------------------------------------------------------------------
 
 void GraphicDescriptor::_setPropertyValues( const comphelper::PropertyMapEntry** /*ppEntries*/, const uno::Any* /*pValues*/ )
-	throw( beans::UnknownPropertyException,
-		   beans::PropertyVetoException,
-		   lang::IllegalArgumentException,
-	   	   lang::WrappedTargetException )
 {
 	// we only have readonly attributes
 }
@@ -358,7 +347,6 @@ void GraphicDescriptor::_setPropertyValues( const comphelper::PropertyMapEntry**
 // ------------------------------------------------------------------------------
 
 void GraphicDescriptor::_getPropertyValues( const comphelper::PropertyMapEntry** ppEntries, uno::Any* pValues )
-	throw( beans::UnknownPropertyException, lang::WrappedTargetException )
 {
 	::vos::OGuard aGuard( Application::GetSolarMutex() );
 

@@ -52,16 +52,9 @@ private:
 	sal_Bool         m_bInputStreamCalled;
 	sal_Bool         m_bOutputStreamCalled;
 
-	void throwOnError( GnomeVFSResult result )
-		throw( ::com::sun::star::io::NotConnectedException,
-		       ::com::sun::star::io::BufferSizeExceededException,
-		       ::com::sun::star::io::IOException,
-		       ::com::sun::star::uno::RuntimeException );
+	void throwOnError( GnomeVFSResult result );
 
-	void closeStream( void )
-		throw( ::com::sun::star::io::NotConnectedException,
-		       ::com::sun::star::io::IOException,
-		       ::com::sun::star::uno::RuntimeException );
+	void closeStream( void );
 
 public:
 	Stream ( GnomeVFSHandle         *handle,
@@ -69,8 +62,7 @@ public:
 	virtual ~Stream();
 
 	// XInterface
-	virtual com::sun::star::uno::Any SAL_CALL queryInterface(const ::com::sun::star::uno::Type & type )
-		throw( ::com::sun::star::uno::RuntimeException );
+	virtual com::sun::star::uno::Any SAL_CALL queryInterface(const ::com::sun::star::uno::Type & type );
 	virtual void SAL_CALL acquire( void )
 		throw ()
 			{ OWeakObject::acquire(); }
@@ -79,82 +71,42 @@ public:
 			{ OWeakObject::release(); }
 
 	// XStream
-	virtual com::sun::star::uno::Reference< com::sun::star::io::XInputStream > SAL_CALL getInputStream(  )
-		throw( com::sun::star::uno::RuntimeException );
+	virtual com::sun::star::uno::Reference< com::sun::star::io::XInputStream > SAL_CALL getInputStream(  );
 
-	virtual com::sun::star::uno::Reference< com::sun::star::io::XOutputStream > SAL_CALL getOutputStream(  )
-		throw( com::sun::star::uno::RuntimeException );
+	virtual com::sun::star::uno::Reference< com::sun::star::io::XOutputStream > SAL_CALL getOutputStream(  );
 
 	// XInputStream
 	virtual sal_Int32 SAL_CALL readBytes(
 	  		::com::sun::star::uno::Sequence< sal_Int8 > & aData,
-			sal_Int32 nBytesToRead )
-				throw( ::com::sun::star::io::NotConnectedException,
-			   		   ::com::sun::star::io::BufferSizeExceededException,
-			   		   ::com::sun::star::io::IOException,
-			   		   ::com::sun::star::uno::RuntimeException );
+			sal_Int32 nBytesToRead );
 
 	virtual sal_Int32 SAL_CALL readSomeBytes(
     		::com::sun::star::uno::Sequence< sal_Int8 > & aData,
-			sal_Int32 nMaxBytesToRead )
-        		throw( ::com::sun::star::io::NotConnectedException,
-               		   ::com::sun::star::io::BufferSizeExceededException,
-               		   ::com::sun::star::io::IOException,
-               		   ::com::sun::star::uno::RuntimeException );
+			sal_Int32 nMaxBytesToRead );
 
-	virtual void SAL_CALL skipBytes( sal_Int32 nBytesToSkip )
-        		throw( ::com::sun::star::io::NotConnectedException,
-               		   ::com::sun::star::io::BufferSizeExceededException,
-               		   ::com::sun::star::io::IOException,
-               		   ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL skipBytes( sal_Int32 nBytesToSkip );
 
-	virtual sal_Int32 SAL_CALL available( void )
-        		throw( ::com::sun::star::io::NotConnectedException,
-               		   ::com::sun::star::io::IOException,
-               		   ::com::sun::star::uno::RuntimeException );
+	virtual sal_Int32 SAL_CALL available( void );
 
-	virtual void SAL_CALL closeInput( void )
-        		throw( ::com::sun::star::io::NotConnectedException,
-               		   ::com::sun::star::io::IOException,
-               		   ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL closeInput( void );
 
 	// XSeekable
-	virtual void SAL_CALL seek(	sal_Int64 location )
-		throw( ::com::sun::star::lang::IllegalArgumentException,
-			   ::com::sun::star::io::IOException,
-			   ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL seek(	sal_Int64 location );
 
-	virtual sal_Int64 SAL_CALL getPosition()
-		throw( ::com::sun::star::io::IOException,
-			   ::com::sun::star::uno::RuntimeException );
+	virtual sal_Int64 SAL_CALL getPosition();
 
-	virtual sal_Int64 SAL_CALL getLength()
-		throw( ::com::sun::star::io::IOException,
-			   ::com::sun::star::uno::RuntimeException );
+	virtual sal_Int64 SAL_CALL getLength();
 
         // XOutputStream
-	virtual void SAL_CALL writeBytes( const com::sun::star::uno::Sequence< sal_Int8 >& aData )
-		throw( com::sun::star::io::NotConnectedException,
-		       com::sun::star::io::BufferSizeExceededException,
-		       com::sun::star::io::IOException,
-		       com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL writeBytes( const com::sun::star::uno::Sequence< sal_Int8 >& aData );
 
-	virtual void SAL_CALL flush( void )
-		throw( com::sun::star::io::NotConnectedException,
-		       com::sun::star::io::BufferSizeExceededException,
-		       com::sun::star::io::IOException,
-		       com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL flush( void );
 
 
-        virtual void SAL_CALL closeOutput( void )
-		throw( com::sun::star::io::NotConnectedException,
-		       com::sun::star::io::IOException,
-		       com::sun::star::uno::RuntimeException );
+        virtual void SAL_CALL closeOutput( void );
 
 	// XTruncate
-	virtual void SAL_CALL truncate( void )
-		throw( com::sun::star::io::IOException,
-		       com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL truncate( void );
 };
 
 } // namespace gvfs

@@ -79,15 +79,12 @@ public:
 	// XPropertySetRegistryFactory
     virtual com::sun::star::uno::Reference<
 				com::sun::star::ucb::XPropertySetRegistry > SAL_CALL
-	createPropertySetRegistry( const rtl::OUString& URL )
-		throw( com::sun::star::uno::RuntimeException );
+	createPropertySetRegistry( const rtl::OUString& URL );
 
 	// XInitialization
     virtual void SAL_CALL
 	initialize( const ::com::sun::star::uno::Sequence<
-						::com::sun::star::uno::Any >& aArguments )
-		throw( ::com::sun::star::uno::Exception,
-			   ::com::sun::star::uno::RuntimeException );
+						::com::sun::star::uno::Any >& aArguments );
 
 	const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >&
 	getInitArgs() const;
@@ -141,32 +138,23 @@ public:
 	// XPropertySetRegistry
     virtual com::sun::star::uno::Reference<
 				com::sun::star::ucb::XPersistentPropertySet > SAL_CALL
-	openPropertySet( const rtl::OUString& key, sal_Bool create )
-		throw( com::sun::star::uno::RuntimeException );
+	openPropertySet( const rtl::OUString& key, sal_Bool create );
     virtual void SAL_CALL
-	removePropertySet( const rtl::OUString& key )
-		throw( com::sun::star::uno::RuntimeException );
+	removePropertySet( const rtl::OUString& key );
 
 	// XElementAccess ( XNameAccess is derived from it )
     virtual com::sun::star::uno::Type SAL_CALL
-	getElementType()
-		throw( com::sun::star::uno::RuntimeException );
+	getElementType();
     virtual sal_Bool SAL_CALL
-	hasElements()
-		throw( com::sun::star::uno::RuntimeException );
+	hasElements();
 
     // XNameAccess
     virtual com::sun::star::uno::Any SAL_CALL
-	getByName( const rtl::OUString& aName )
-		throw( com::sun::star::container::NoSuchElementException,
-			   com::sun::star::lang::WrappedTargetException,
-			   com::sun::star::uno::RuntimeException );
+	getByName( const rtl::OUString& aName );
     virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL
-	getElementNames()
-		throw( com::sun::star::uno::RuntimeException );
+	getElementNames();
     virtual sal_Bool SAL_CALL
-	hasByName( const rtl::OUString& aName )
-		throw( com::sun::star::uno::RuntimeException );
+	hasByName( const rtl::OUString& aName );
 
 	// Non-interface methods
 	com::sun::star::uno::Reference< com::sun::star::uno::XInterface >
@@ -219,119 +207,76 @@ public:
 
 	// XComponent
     virtual void SAL_CALL
-	dispose()
-		throw( com::sun::star::uno::RuntimeException );
+	dispose();
     virtual void SAL_CALL
 	addEventListener( const com::sun::star::uno::Reference<
-							com::sun::star::lang::XEventListener >& Listener )
-		throw( com::sun::star::uno::RuntimeException );
+							com::sun::star::lang::XEventListener >& Listener );
     virtual void SAL_CALL
 	removeEventListener( const com::sun::star::uno::Reference<
-							com::sun::star::lang::XEventListener >& Listener )
-		throw( com::sun::star::uno::RuntimeException );
+							com::sun::star::lang::XEventListener >& Listener );
 
 	// XPropertySet
     virtual com::sun::star::uno::Reference<
 				com::sun::star::beans::XPropertySetInfo > SAL_CALL
-	getPropertySetInfo()
-		throw( com::sun::star::uno::RuntimeException );
+	getPropertySetInfo();
     virtual void SAL_CALL
 	setPropertyValue( const rtl::OUString& aPropertyName,
-					  const com::sun::star::uno::Any& aValue )
-		throw( com::sun::star::beans::UnknownPropertyException,
-			   com::sun::star::beans::PropertyVetoException,
-			   com::sun::star::lang::IllegalArgumentException,
-			   com::sun::star::lang::WrappedTargetException,
-			   com::sun::star::uno::RuntimeException );
+					  const com::sun::star::uno::Any& aValue );
     virtual com::sun::star::uno::Any SAL_CALL
-	getPropertyValue( const rtl::OUString& PropertyName )
-		throw( com::sun::star::beans::UnknownPropertyException,
-			   com::sun::star::lang::WrappedTargetException,
-			   com::sun::star::uno::RuntimeException );
+	getPropertyValue( const rtl::OUString& PropertyName );
     virtual void SAL_CALL
 	addPropertyChangeListener( const rtl::OUString& aPropertyName,
 							   const com::sun::star::uno::Reference<
-							   	com::sun::star::beans::XPropertyChangeListener >& xListener )
-		throw( com::sun::star::beans::UnknownPropertyException,
-			   com::sun::star::lang::WrappedTargetException,
-			   com::sun::star::uno::RuntimeException );
+							   	com::sun::star::beans::XPropertyChangeListener >& xListener );
     virtual void SAL_CALL
 	removePropertyChangeListener( const rtl::OUString& aPropertyName,
 								  const com::sun::star::uno::Reference<
-								  	com::sun::star::beans::XPropertyChangeListener >& aListener )
-		throw( com::sun::star::beans::UnknownPropertyException,
-			   com::sun::star::lang::WrappedTargetException,
-			   com::sun::star::uno::RuntimeException );
+								  	com::sun::star::beans::XPropertyChangeListener >& aListener );
     virtual void SAL_CALL
 	addVetoableChangeListener( const rtl::OUString& PropertyName,
 							   const com::sun::star::uno::Reference<
-							   	com::sun::star::beans::XVetoableChangeListener >& aListener )
-		throw( com::sun::star::beans::UnknownPropertyException,
-			   com::sun::star::lang::WrappedTargetException,
-			   com::sun::star::uno::RuntimeException );
+							   	com::sun::star::beans::XVetoableChangeListener >& aListener );
     virtual void SAL_CALL
 	removeVetoableChangeListener( const rtl::OUString& PropertyName,
 								  const com::sun::star::uno::Reference<
-								  	com::sun::star::beans::XVetoableChangeListener >& aListener )
-		throw( com::sun::star::beans::UnknownPropertyException,
-			   com::sun::star::lang::WrappedTargetException,
-			   com::sun::star::uno::RuntimeException );
+								  	com::sun::star::beans::XVetoableChangeListener >& aListener );
 
 	// XPersistentPropertySet
     virtual com::sun::star::uno::Reference<
 				com::sun::star::ucb::XPropertySetRegistry > SAL_CALL
-	getRegistry()
-		throw( com::sun::star::uno::RuntimeException );
+	getRegistry();
     virtual rtl::OUString SAL_CALL
-	getKey()
-		throw( com::sun::star::uno::RuntimeException );
+	getKey();
 
 	// XNamed
     virtual rtl::OUString SAL_CALL
-	getName()
-		throw( ::com::sun::star::uno::RuntimeException );
+	getName();
     virtual void SAL_CALL
-	setName( const ::rtl::OUString& aName )
-		throw( ::com::sun::star::uno::RuntimeException );
+	setName( const ::rtl::OUString& aName );
 
 	// XPropertyContainer
 	virtual void SAL_CALL
 	addProperty( const rtl::OUString& Name,
 				 sal_Int16 Attributes,
-				 const com::sun::star::uno::Any& DefaultValue )
-		throw( com::sun::star::beans::PropertyExistException,
-			   com::sun::star::beans::IllegalTypeException,
-			   com::sun::star::lang::IllegalArgumentException,
-			   com::sun::star::uno::RuntimeException );
+				 const com::sun::star::uno::Any& DefaultValue );
     virtual void SAL_CALL
-	removeProperty( const rtl::OUString& Name )
-		throw( com::sun::star::beans::UnknownPropertyException,
-			   com::sun::star::beans::NotRemoveableException,
-			   com::sun::star::uno::RuntimeException );
+	removeProperty( const rtl::OUString& Name );
 
 	// XPropertySetInfoChangeNotifier
     virtual void SAL_CALL
 	addPropertySetInfoChangeListener( const com::sun::star::uno::Reference<
-			com::sun::star::beans::XPropertySetInfoChangeListener >& Listener )
-		throw( com::sun::star::uno::RuntimeException );
+			com::sun::star::beans::XPropertySetInfoChangeListener >& Listener );
     virtual void SAL_CALL
 	removePropertySetInfoChangeListener( const com::sun::star::uno::Reference<
-			com::sun::star::beans::XPropertySetInfoChangeListener >& Listener )
-		throw( com::sun::star::uno::RuntimeException );
+			com::sun::star::beans::XPropertySetInfoChangeListener >& Listener );
 
 	// XPropertyAccess
     virtual com::sun::star::uno::Sequence<
 				com::sun::star::beans::PropertyValue > SAL_CALL
-	getPropertyValues()
-		throw( com::sun::star::uno::RuntimeException );
+	getPropertyValues();
     virtual void SAL_CALL
 	setPropertyValues( const com::sun::star::uno::Sequence<
-							com::sun::star::beans::PropertyValue >& aProps )
-		throw( com::sun::star::beans::UnknownPropertyException,
-			   com::sun::star::beans::PropertyVetoException,
-			   com::sun::star::lang::IllegalArgumentException,
-			   com::sun::star::lang::WrappedTargetException,
-			   com::sun::star::uno::RuntimeException );
+							com::sun::star::beans::PropertyValue >& aProps );
 
 	// Non-interface methods.
 	PropertySetRegistry& getPropertySetRegistry();

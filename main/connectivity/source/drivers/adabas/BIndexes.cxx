@@ -84,7 +84,7 @@ sdbcx::ObjectType OIndexes::createObject(const ::rtl::OUString& _rName)
 	return xRet;
 }
 // -------------------------------------------------------------------------
-void OIndexes::impl_refresh() throw(RuntimeException)
+void OIndexes::impl_refresh()
 {
 	m_pTable->refreshIndexes();
 }

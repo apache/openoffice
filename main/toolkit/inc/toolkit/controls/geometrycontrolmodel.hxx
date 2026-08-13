@@ -104,35 +104,29 @@ FORWARD_DECLARE_INTERFACE( script, XNameContainer )
 		void releaseAggregation();
 
 	protected:
-		/*	throw(), not throw(RuntimeException): this class derives from
-			WeakAggComponentImplHelper2, whose root base declares
-			~WeakAggComponentImplHelperBase() SAL_THROW( () ) explicitly.  Callers
-			have therefore ALWAYS been promised that destroying one of these does
-			not throw; C++11 merely makes the promise checkable, by giving this
-			destructor an implicit specification deduced from its other bases that
-			contradicted it (C2694).  Stating it matches what was already promised. */
+		/*	Matches ~WeakAggComponentImplHelperBase(), which declares SAL_THROW( () )
+			explicitly: callers have always been promised that destroying one of
+			these does not throw. */
 		~OGeometryControlModel_Base() SAL_THROW( () );
 
 		// XAggregation
-		::com::sun::star::uno::Any SAL_CALL queryAggregation( const ::com::sun::star::uno::Type& _aType ) throw(::com::sun::star::uno::RuntimeException);
+		::com::sun::star::uno::Any SAL_CALL queryAggregation( const ::com::sun::star::uno::Type& _aType );
 
 		// XInterface
-		virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& aType ) throw(::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& aType );
 		virtual void SAL_CALL acquire(  ) throw();
 		virtual void SAL_CALL release(  ) throw();
 
 		// XTypeProvider
-		virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes(  ) throw (::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes(  );
 
 		// OPropertySetHelper overridables
 		virtual sal_Bool SAL_CALL convertFastPropertyValue(
 				::com::sun::star::uno::Any& _rConvertedValue, ::com::sun::star::uno::Any& _rOldValue,
-				sal_Int32 _nHandle, const ::com::sun::star::uno::Any& _rValue )
-			throw (::com::sun::star::lang::IllegalArgumentException);
+				sal_Int32 _nHandle, const ::com::sun::star::uno::Any& _rValue );
 
 		virtual void SAL_CALL setFastPropertyValue_NoBroadcast(
-				sal_Int32 _nHandle, const ::com::sun::star::uno::Any& _rValue)
-			throw (::com::sun::star::uno::Exception);
+				sal_Int32 _nHandle, const ::com::sun::star::uno::Any& _rValue);
 
         using comphelper::OPropertySetAggregationHelper::getFastPropertyValue;
 		virtual void SAL_CALL getFastPropertyValue(
@@ -144,17 +138,17 @@ FORWARD_DECLARE_INTERFACE( script, XNameContainer )
 		virtual ::com::sun::star::uno::Any				getPropertyDefaultByHandle(sal_Int32 nHandle) const;
 
 		// XPropertySet
-		virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo> SAL_CALL getPropertySetInfo() throw(::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo> SAL_CALL getPropertySetInfo();
 
 		// OPropertySetAggregationHelper overridables
 		using OPropertySetAggregationHelper::getInfoHelper;
 
 		// XCloneable
-		virtual ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloneable > SAL_CALL createClone(  ) throw(::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloneable > SAL_CALL createClone(  );
 
 		//XScriptEventsSupplier
 	    virtual ::com::sun::star::uno::Reference< ::com::sun::star::container::XNameContainer >
-			SAL_CALL getEvents(  ) throw(::com::sun::star::uno::RuntimeException);
+			SAL_CALL getEvents(  );
 
 		// XCloneable implementation - to be overwritten
 		virtual OGeometryControlModel_Base* createClone_Impl(
@@ -208,7 +202,7 @@ FORWARD_DECLARE_INTERFACE( script, XNameContainer )
 			::com::sun::star::uno::Reference< ::com::sun::star::util::XCloneable >& _rxAggregateInstance);
 
 		// XTypeProvider
-		virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId(  ) throw (::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId(  );
 	};
 
 	//====================================================================
@@ -248,12 +242,11 @@ FORWARD_DECLARE_INTERFACE( script, XNameContainer )
 			::com::sun::star::uno::Reference< ::com::sun::star::util::XCloneable >& _rxAggregateInstance);
 
 		// XTypeProvider
-		virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId(  ) throw (::com::sun::star::uno::RuntimeException);
+		virtual ::com::sun::star::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId(  );
 
 	private:
 		virtual void SAL_CALL setFastPropertyValue_NoBroadcast(
-				sal_Int32 _nHandle, const ::com::sun::star::uno::Any& _rValue)
-			throw (::com::sun::star::uno::Exception);
+				sal_Int32 _nHandle, const ::com::sun::star::uno::Any& _rValue);
 	};
 
 #include "toolkit/controls/geometrycontrolmodel_impl.hxx"

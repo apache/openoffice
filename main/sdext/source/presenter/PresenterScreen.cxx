@@ -103,18 +103,18 @@ namespace {
 
         // document::XEventListener
 
-        virtual void SAL_CALL notifyEvent( const css::document::EventObject& Event ) throw (css::uno::RuntimeException);
+        virtual void SAL_CALL notifyEvent( const css::document::EventObject& Event );
 
         // XEventListener
 
-        virtual void SAL_CALL disposing ( const css::lang::EventObject& rEvent) throw (css::uno::RuntimeException);
+        virtual void SAL_CALL disposing ( const css::lang::EventObject& rEvent);
 
     private:
         css::uno::Reference<css::frame::XModel2 > mxModel;
         css::uno::Reference<css::uno::XComponentContext> mxComponentContext;
         rtl::Reference<PresenterScreen> mpPresenterScreen;
 
-        void ThrowIfDisposed (void) const throw (::com::sun::star::lang::DisposedException);
+        void ThrowIfDisposed (void) const;
     };
 }
 
@@ -140,7 +140,6 @@ Sequence<OUString> PresenterScreenJob::getSupportedServiceNames_static (void)
 
 
 Reference<XInterface> PresenterScreenJob::Create (const Reference<uno::XComponentContext>& rxContext)
-    SAL_THROW((css::uno::Exception))
 {
     return Reference<XInterface>(static_cast<XWeak*>(new PresenterScreenJob(rxContext)));
 }
@@ -178,7 +177,6 @@ void SAL_CALL PresenterScreenJob::disposing (void)
 
 Any SAL_CALL PresenterScreenJob::execute(
     const Sequence< beans::NamedValue >& Arguments )
-    throw (lang::IllegalArgumentException, Exception, RuntimeException)
 {
 	Sequence< beans::NamedValue > lEnv;
 
@@ -279,7 +277,7 @@ void SAL_CALL PresenterScreenListener::disposing (void)
 
 // document::XEventListener
 
-void SAL_CALL PresenterScreenListener::notifyEvent( const css::document::EventObject& Event ) throw (css::uno::RuntimeException)
+void SAL_CALL PresenterScreenListener::notifyEvent( const css::document::EventObject& Event )
 {
     ThrowIfDisposed();
 
@@ -304,7 +302,6 @@ void SAL_CALL PresenterScreenListener::notifyEvent( const css::document::EventOb
 // XEventListener
 
 void SAL_CALL PresenterScreenListener::disposing (const css::lang::EventObject& rEvent)
-    throw (css::uno::RuntimeException)
 {
     (void)rEvent;
 
@@ -318,8 +315,7 @@ void SAL_CALL PresenterScreenListener::disposing (const css::lang::EventObject& 
 
 
 
-void PresenterScreenListener::ThrowIfDisposed (void) const throw (
-    ::com::sun::star::lang::DisposedException)
+void PresenterScreenListener::ThrowIfDisposed (void) const
 {
 	if (rBHelper.bDisposed || rBHelper.bInDispose)
 	{
@@ -391,7 +387,6 @@ void SAL_CALL PresenterScreen::disposing (void)
 //----- XEventListener --------------------------------------------------------
 
 void SAL_CALL PresenterScreen::disposing (const lang::EventObject& /*rEvent*/)
-    throw (RuntimeException)
 {
 	mxSlideShowControllerWeak = WeakReference<presentation::XSlideShowController>();
 	RequestShutdownPresenterScreen();

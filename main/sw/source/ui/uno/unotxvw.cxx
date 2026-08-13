@@ -173,7 +173,7 @@ void SwXTextView::Invalidate()
 /* -----------------------------18.05.00 10:18--------------------------------
 
  ---------------------------------------------------------------------------*/
-Sequence< uno::Type > SAL_CALL SwXTextView::getTypes(  ) throw(uno::RuntimeException)
+Sequence< uno::Type > SAL_CALL SwXTextView::getTypes(  )
 {
 //	uno::Sequence< uno::Type > aViewTypes = SwXTextViewBaseClass::getTypes();
 	uno::Sequence< uno::Type > aBaseTypes = SfxBaseController::getTypes();
@@ -196,7 +196,7 @@ Sequence< uno::Type > SAL_CALL SwXTextView::getTypes(  ) throw(uno::RuntimeExcep
 /* -----------------------------18.05.00 10:18--------------------------------
 
  ---------------------------------------------------------------------------*/
-Sequence< sal_Int8 > SAL_CALL SwXTextView::getImplementationId(  ) throw(uno::RuntimeException)
+Sequence< sal_Int8 > SAL_CALL SwXTextView::getImplementationId(  )
 {
     vos::OGuard aGuard(Application::GetSolarMutex());
     static Sequence< sal_Int8 > aId( 16 );
@@ -226,7 +226,6 @@ void SAL_CALL SwXTextView::release(  )throw()
 
  ---------------------------------------------------------------------------*/
 uno::Any SAL_CALL SwXTextView::queryInterface( const uno::Type& aType )
-	throw (RuntimeException)
 {
 	uno::Any aRet;
 	if(aType == ::getCppuType((uno::Reference<view::XSelectionSupplier	>*)0))
@@ -281,7 +280,7 @@ uno::Any SAL_CALL SwXTextView::queryInterface( const uno::Type& aType )
 /*-- 17.12.98 09:34:26---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-sal_Bool SwXTextView::select(const uno::Any& aInterface) throw( lang::IllegalArgumentException, uno::RuntimeException )
+sal_Bool SwXTextView::select(const uno::Any& aInterface)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
     uno::Reference< uno::XInterface >  xInterface;
@@ -528,7 +527,7 @@ sal_Bool SwXTextView::select(const uno::Any& aInterface) throw( lang::IllegalArg
 /*-- 17.12.98 09:34:26---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-uno::Any SwXTextView::getSelection(void) throw( uno::RuntimeException )
+uno::Any SwXTextView::getSelection(void)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
 	uno::Reference< uno::XInterface >  aRef;
@@ -634,7 +633,6 @@ uno::Any SwXTextView::getSelection(void) throw( uno::RuntimeException )
   -----------------------------------------------------------------------*/
 void SwXTextView::addSelectionChangeListener(
 									const uno::Reference< view::XSelectionChangeListener > & rxListener)
-									throw( uno::RuntimeException )
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
 	uno::Reference< view::XSelectionChangeListener > * pInsert = new uno::Reference< view::XSelectionChangeListener > ;
@@ -646,7 +644,6 @@ void SwXTextView::addSelectionChangeListener(
   -----------------------------------------------------------------------*/
 void SwXTextView::removeSelectionChangeListener(
 										const uno::Reference< view::XSelectionChangeListener > & rxListener)
-										throw( uno::RuntimeException )
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
 	view::XSelectionChangeListener* pLeft = rxListener.get();
@@ -685,7 +682,6 @@ SdrObject* SwXTextView::GetControl(
 
   -----------------------------------------------------------------------*/
 uno::Reference< awt::XControl >  SwXTextView::getControl(const uno::Reference< awt::XControlModel > & xModel)
-		throw( container::NoSuchElementException, uno::RuntimeException )
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
     uno::Reference< awt::XControl >  xRet;
@@ -696,7 +692,7 @@ uno::Reference< awt::XControl >  SwXTextView::getControl(const uno::Reference< a
 /*-- 08.03.07 13:55------------------------------------------------------
 
   -----------------------------------------------------------------------*/
-uno::Reference< form::runtime::XFormController > SAL_CALL SwXTextView::getFormController( const uno::Reference< form::XForm >& _Form ) throw (RuntimeException)
+uno::Reference< form::runtime::XFormController > SAL_CALL SwXTextView::getFormController( const uno::Reference< form::XForm >& _Form )
 {
 	::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -715,7 +711,7 @@ uno::Reference< form::runtime::XFormController > SAL_CALL SwXTextView::getFormCo
 /*-- 08.03.07 13:55------------------------------------------------------
 
   -----------------------------------------------------------------------*/
-::sal_Bool SAL_CALL SwXTextView::isFormDesignMode(  ) throw (uno::RuntimeException)
+::sal_Bool SAL_CALL SwXTextView::isFormDesignMode(  )
 {
 	::vos::OGuard aGuard( Application::GetSolarMutex() );
     SwView* pView2 = GetView();
@@ -726,7 +722,7 @@ uno::Reference< form::runtime::XFormController > SAL_CALL SwXTextView::getFormCo
 /*-- 08.03.07 13:55------------------------------------------------------
 
   -----------------------------------------------------------------------*/
-void SAL_CALL SwXTextView::setFormDesignMode( ::sal_Bool _DesignMode ) throw (RuntimeException)
+void SAL_CALL SwXTextView::setFormDesignMode( ::sal_Bool _DesignMode )
 {
 	::vos::OGuard aGuard( Application::GetSolarMutex() );
     SwView* pView2 = GetView();
@@ -738,7 +734,7 @@ void SAL_CALL SwXTextView::setFormDesignMode( ::sal_Bool _DesignMode ) throw (Ru
 /*-- 17.12.98 09:34:28---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-uno::Reference< text::XTextViewCursor >  SwXTextView::getViewCursor(void) throw( uno::RuntimeException )
+uno::Reference< text::XTextViewCursor >  SwXTextView::getViewCursor(void)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
     if(GetView())
@@ -756,7 +752,7 @@ uno::Reference< text::XTextViewCursor >  SwXTextView::getViewCursor(void) throw(
 /*-- 17.12.98 09:34:28---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-uno::Reference< beans::XPropertySet >  SwXTextView::getViewSettings(void) throw( uno::RuntimeException )
+uno::Reference< beans::XPropertySet >  SwXTextView::getViewSettings(void)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
     if(m_pView)
@@ -774,7 +770,7 @@ uno::Reference< beans::XPropertySet >  SwXTextView::getViewSettings(void) throw(
 /* -----------------------------30.01.01 15:01--------------------------------
 
  ---------------------------------------------------------------------------*/
-Sequence< Sequence< PropertyValue > > SwXTextView::getRubyList( sal_Bool /*bAutomatic*/ ) throw(RuntimeException)
+Sequence< Sequence< PropertyValue > > SwXTextView::getRubyList( sal_Bool /*bAutomatic*/ )
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -824,7 +820,6 @@ Sequence< Sequence< PropertyValue > > SwXTextView::getRubyList( sal_Bool /*bAuto
  ---------------------------------------------------------------------------*/
 void SAL_CALL SwXTextView::setRubyList(
     const Sequence< Sequence< PropertyValue > >& rRubyList, sal_Bool /*bAutomatic*/ )
-		throw(RuntimeException)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -992,7 +987,6 @@ void SwXTextView::NotifyDBChanged()
  ---------------------------------------------------------------------------*/
 
 uno::Reference< beans::XPropertySetInfo > SAL_CALL SwXTextView::getPropertySetInfo(  )
-    throw (uno::RuntimeException)
 {
     vos::OGuard aGuard( Application::GetSolarMutex() );
     static uno::Reference< XPropertySetInfo > aRef = m_pPropSet->getPropertySetInfo();
@@ -1002,7 +996,6 @@ uno::Reference< beans::XPropertySetInfo > SAL_CALL SwXTextView::getPropertySetIn
 
 void SAL_CALL SwXTextView::setPropertyValue(
         const OUString& rPropertyName, const uno::Any& rValue )
-    throw (beans::UnknownPropertyException, beans::PropertyVetoException, lang::IllegalArgumentException, lang::WrappedTargetException, uno::RuntimeException)
 {
     vos::OGuard aGuard( Application::GetSolarMutex() );
     const SfxItemPropertySimpleEntry* pEntry = m_pPropSet->getPropertyMap()->getByName( rPropertyName );
@@ -1038,7 +1031,6 @@ void SAL_CALL SwXTextView::setPropertyValue(
 
 uno::Any SAL_CALL SwXTextView::getPropertyValue(
         const OUString& rPropertyName )
-    throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
     vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -1092,7 +1084,6 @@ uno::Any SAL_CALL SwXTextView::getPropertyValue(
 void SAL_CALL SwXTextView::addPropertyChangeListener(
         const OUString& /*rPropertyName*/,
         const uno::Reference< beans::XPropertyChangeListener >& /*rxListener*/ )
-    throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
     DBG_WARNING("not implemented");
 }
@@ -1101,7 +1092,6 @@ void SAL_CALL SwXTextView::addPropertyChangeListener(
 void SAL_CALL SwXTextView::removePropertyChangeListener(
         const OUString& /*rPropertyName*/,
         const uno::Reference< beans::XPropertyChangeListener >& /*rxListener*/ )
-    throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
     DBG_WARNING("not implemented");
 }
@@ -1110,7 +1100,6 @@ void SAL_CALL SwXTextView::removePropertyChangeListener(
 void SAL_CALL SwXTextView::addVetoableChangeListener(
         const OUString& /*rPropertyName*/,
         const uno::Reference< beans::XVetoableChangeListener >& /*rxListener*/ )
-    throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
     DBG_WARNING("not implemented");
 }
@@ -1119,7 +1108,6 @@ void SAL_CALL SwXTextView::addVetoableChangeListener(
 void SAL_CALL SwXTextView::removeVetoableChangeListener(
         const OUString& /*rPropertyName*/,
         const uno::Reference< beans::XVetoableChangeListener >& /*rxListener*/ )
-    throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
     DBG_WARNING("not implemented");
 }
@@ -1127,14 +1115,14 @@ void SAL_CALL SwXTextView::removeVetoableChangeListener(
 /* -----------------------------06.04.00 11:07--------------------------------
 
  ---------------------------------------------------------------------------*/
-OUString SwXTextView::getImplementationName(void) throw( RuntimeException )
+OUString SwXTextView::getImplementationName(void)
 {
 	return C2U("SwXTextView");
 }
 /* -----------------------------06.04.00 11:07--------------------------------
 
  ---------------------------------------------------------------------------*/
-sal_Bool SwXTextView::supportsService(const OUString& rServiceName) throw( RuntimeException )
+sal_Bool SwXTextView::supportsService(const OUString& rServiceName)
 {
     return rServiceName.equalsAscii("com.sun.star.text.TextDocumentView") ||
             rServiceName.equalsAscii("com.sun.star.view.OfficeDocumentView");
@@ -1142,7 +1130,7 @@ sal_Bool SwXTextView::supportsService(const OUString& rServiceName) throw( Runti
 /* -----------------------------06.04.00 11:07--------------------------------
 
  ---------------------------------------------------------------------------*/
-Sequence< OUString > SwXTextView::getSupportedServiceNames(void) throw( RuntimeException )
+Sequence< OUString > SwXTextView::getSupportedServiceNames(void)
 {
     Sequence< OUString > aRet(2);
 	OUString* pArray = aRet.getArray();
@@ -1201,7 +1189,7 @@ sal_Bool SwXTextViewCursor::IsTextSelection( sal_Bool bAllowTables ) const
 /*-- 17.12.98 09:36:25---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-sal_Bool SwXTextViewCursor::isVisible(void) throw( uno::RuntimeException )
+sal_Bool SwXTextViewCursor::isVisible(void)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
 	DBG_WARNING("not implemented");
@@ -1210,7 +1198,7 @@ sal_Bool SwXTextViewCursor::isVisible(void) throw( uno::RuntimeException )
 /*-- 17.12.98 09:36:25---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-void SwXTextViewCursor::setVisible(sal_Bool /*bVisible*/) throw( uno::RuntimeException )
+void SwXTextViewCursor::setVisible(sal_Bool /*bVisible*/)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
 	DBG_WARNING("not implemented");
@@ -1218,7 +1206,7 @@ void SwXTextViewCursor::setVisible(sal_Bool /*bVisible*/) throw( uno::RuntimeExc
 /*-- 17.12.98 09:36:26---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-awt::Point SwXTextViewCursor::getPosition(void) throw( uno::RuntimeException )
+awt::Point SwXTextViewCursor::getPosition(void)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
 	awt::Point aRet;
@@ -1244,7 +1232,7 @@ awt::Point SwXTextViewCursor::getPosition(void) throw( uno::RuntimeException )
 /*-- 17.12.98 09:36:26---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-void SwXTextViewCursor::collapseToStart(void) throw( uno::RuntimeException )
+void SwXTextViewCursor::collapseToStart(void)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
     if(m_pView)
@@ -1269,7 +1257,7 @@ void SwXTextViewCursor::collapseToStart(void) throw( uno::RuntimeException )
 /*-- 17.12.98 09:36:26---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-void SwXTextViewCursor::collapseToEnd(void) throw( uno::RuntimeException )
+void SwXTextViewCursor::collapseToEnd(void)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
     if(m_pView)
@@ -1294,7 +1282,7 @@ void SwXTextViewCursor::collapseToEnd(void) throw( uno::RuntimeException )
 /*-- 17.12.98 09:36:27---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-sal_Bool SwXTextViewCursor::isCollapsed(void) throw( uno::RuntimeException )
+sal_Bool SwXTextViewCursor::isCollapsed(void)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
 	sal_Bool bRet = sal_False;
@@ -1314,7 +1302,7 @@ sal_Bool SwXTextViewCursor::isCollapsed(void) throw( uno::RuntimeException )
 /*-- 17.12.98 09:36:27---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-sal_Bool SwXTextViewCursor::goLeft(sal_Int16 nCount, sal_Bool bExpand) throw( uno::RuntimeException )
+sal_Bool SwXTextViewCursor::goLeft(sal_Int16 nCount, sal_Bool bExpand)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
 	sal_Bool bRet = sal_False;
@@ -1333,7 +1321,7 @@ sal_Bool SwXTextViewCursor::goLeft(sal_Int16 nCount, sal_Bool bExpand) throw( un
 /*-- 17.12.98 09:36:27---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-sal_Bool SwXTextViewCursor::goRight(sal_Int16 nCount, sal_Bool bExpand) throw( uno::RuntimeException )
+sal_Bool SwXTextViewCursor::goRight(sal_Int16 nCount, sal_Bool bExpand)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
 	sal_Bool bRet = sal_False;
@@ -1356,7 +1344,6 @@ sal_Bool SwXTextViewCursor::goRight(sal_Int16 nCount, sal_Bool bExpand) throw( u
 void SwXTextViewCursor::gotoRange(
 	const uno::Reference< text::XTextRange > & xRange,
 	sal_Bool bExpand)
-		throw(RuntimeException)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
     if(m_pView && xRange.is())
@@ -1497,7 +1484,7 @@ void SwXTextViewCursor::gotoRange(
 /*-- 17.12.98 09:36:28---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-void SwXTextViewCursor::gotoStart(sal_Bool bExpand) throw( uno::RuntimeException )
+void SwXTextViewCursor::gotoStart(sal_Bool bExpand)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
     if(m_pView)
@@ -1513,7 +1500,7 @@ void SwXTextViewCursor::gotoStart(sal_Bool bExpand) throw( uno::RuntimeException
 /*-- 17.12.98 09:36:28---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-void SwXTextViewCursor::gotoEnd(sal_Bool bExpand) throw( uno::RuntimeException )
+void SwXTextViewCursor::gotoEnd(sal_Bool bExpand)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
     if(m_pView)
@@ -1529,7 +1516,7 @@ void SwXTextViewCursor::gotoEnd(sal_Bool bExpand) throw( uno::RuntimeException )
 /*-- 17.12.98 09:36:28---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-sal_Bool SwXTextViewCursor::jumpToFirstPage(void) throw( uno::RuntimeException )
+sal_Bool SwXTextViewCursor::jumpToFirstPage(void)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
 	sal_Bool bRet = sal_False;
@@ -1551,7 +1538,7 @@ sal_Bool SwXTextViewCursor::jumpToFirstPage(void) throw( uno::RuntimeException )
 /*-- 17.12.98 09:36:29---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-sal_Bool SwXTextViewCursor::jumpToLastPage(void) throw( uno::RuntimeException )
+sal_Bool SwXTextViewCursor::jumpToLastPage(void)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
 	sal_Bool bRet = sal_False;
@@ -1574,7 +1561,7 @@ sal_Bool SwXTextViewCursor::jumpToLastPage(void) throw( uno::RuntimeException )
 /*-- 17.12.98 09:36:30---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-sal_Bool SwXTextViewCursor::jumpToPage(sal_Int16 nPage) throw( uno::RuntimeException )
+sal_Bool SwXTextViewCursor::jumpToPage(sal_Int16 nPage)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
 	sal_Bool bRet = sal_False;
@@ -1587,7 +1574,7 @@ sal_Bool SwXTextViewCursor::jumpToPage(sal_Int16 nPage) throw( uno::RuntimeExcep
 /*-- 17.12.98 09:36:30---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-sal_Bool SwXTextViewCursor::jumpToNextPage(void) throw( uno::RuntimeException )
+sal_Bool SwXTextViewCursor::jumpToNextPage(void)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
 	sal_Bool bRet = sal_False;
@@ -1600,7 +1587,7 @@ sal_Bool SwXTextViewCursor::jumpToNextPage(void) throw( uno::RuntimeException )
 /*-- 17.12.98 09:36:31---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-sal_Bool SwXTextViewCursor::jumpToPreviousPage(void) throw( uno::RuntimeException )
+sal_Bool SwXTextViewCursor::jumpToPreviousPage(void)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
 	sal_Bool bRet = sal_False;
@@ -1613,7 +1600,7 @@ sal_Bool SwXTextViewCursor::jumpToPreviousPage(void) throw( uno::RuntimeExceptio
 /*-- 17.12.98 09:36:32---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-sal_Bool SwXTextViewCursor::jumpToEndOfPage(void) throw( uno::RuntimeException )
+sal_Bool SwXTextViewCursor::jumpToEndOfPage(void)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
 	sal_Bool bRet = sal_False;
@@ -1626,7 +1613,7 @@ sal_Bool SwXTextViewCursor::jumpToEndOfPage(void) throw( uno::RuntimeException )
 /*-- 17.12.98 09:36:32---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-sal_Bool SwXTextViewCursor::jumpToStartOfPage(void) throw( uno::RuntimeException )
+sal_Bool SwXTextViewCursor::jumpToStartOfPage(void)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
 	sal_Bool bRet = sal_False;
@@ -1639,7 +1626,7 @@ sal_Bool SwXTextViewCursor::jumpToStartOfPage(void) throw( uno::RuntimeException
 /* -----------------04.10.99 14:21-------------------
 
  --------------------------------------------------*/
-sal_Int16 SwXTextViewCursor::getPage(void) throw( uno::RuntimeException )
+sal_Int16 SwXTextViewCursor::getPage(void)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
 	short nRet = 0;
@@ -1656,7 +1643,7 @@ sal_Int16 SwXTextViewCursor::getPage(void) throw( uno::RuntimeException )
 /*-- 17.12.98 09:36:33---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-sal_Bool SwXTextViewCursor::screenDown(void) throw( uno::RuntimeException )
+sal_Bool SwXTextViewCursor::screenDown(void)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
 	sal_Bool bRet = sal_False;
@@ -1674,7 +1661,7 @@ sal_Bool SwXTextViewCursor::screenDown(void) throw( uno::RuntimeException )
 /*-- 17.12.98 09:36:33---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-sal_Bool SwXTextViewCursor::screenUp(void) throw( uno::RuntimeException )
+sal_Bool SwXTextViewCursor::screenUp(void)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
 	sal_Bool bRet = sal_False;
@@ -1692,7 +1679,7 @@ sal_Bool SwXTextViewCursor::screenUp(void) throw( uno::RuntimeException )
 /*-- 17.12.98 11:59:05---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-uno::Reference< text::XText >  SwXTextViewCursor::getText(void) throw( uno::RuntimeException )
+uno::Reference< text::XText >  SwXTextViewCursor::getText(void)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
 	uno::Reference< text::XText >  xRet;
@@ -1713,7 +1700,7 @@ uno::Reference< text::XText >  SwXTextViewCursor::getText(void) throw( uno::Runt
 /*-- 17.12.98 11:59:05---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-uno::Reference< text::XTextRange >  SwXTextViewCursor::getStart(void) throw( uno::RuntimeException )
+uno::Reference< text::XTextRange >  SwXTextViewCursor::getStart(void)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
 	uno::Reference< text::XTextRange >  xRet;
@@ -1734,7 +1721,7 @@ uno::Reference< text::XTextRange >  SwXTextViewCursor::getStart(void) throw( uno
 /*-- 17.12.98 11:59:06---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-uno::Reference< text::XTextRange >  SwXTextViewCursor::getEnd(void) throw( uno::RuntimeException )
+uno::Reference< text::XTextRange >  SwXTextViewCursor::getEnd(void)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
 	uno::Reference< text::XTextRange >  xRet;
@@ -1755,7 +1742,7 @@ uno::Reference< text::XTextRange >  SwXTextViewCursor::getEnd(void) throw( uno::
 /* -----------------12.10.99 09:03-------------------
 
  --------------------------------------------------*/
-OUString SwXTextViewCursor::getString(void) throw( uno::RuntimeException )
+OUString SwXTextViewCursor::getString(void)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
 	OUString uRet;
@@ -1788,7 +1775,7 @@ OUString SwXTextViewCursor::getString(void) throw( uno::RuntimeException )
 /*-- 17.12.98 11:59:06---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-void SwXTextViewCursor::setString(const OUString& aString) throw( uno::RuntimeException )
+void SwXTextViewCursor::setString(const OUString& aString)
 {
     ::vos::OGuard aGuard(Application::GetSolarMutex());
     if(m_pView)
@@ -1820,7 +1807,7 @@ void SwXTextViewCursor::setString(const OUString& aString) throw( uno::RuntimeEx
 /*-- 29.06.00 17:33:38---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-uno::Reference< XPropertySetInfo >  SwXTextViewCursor::getPropertySetInfo(  ) throw(RuntimeException)
+uno::Reference< XPropertySetInfo >  SwXTextViewCursor::getPropertySetInfo(  )
 {
     static uno::Reference< XPropertySetInfo >  xRef = m_pPropSet->getPropertySetInfo();
 	return xRef;
@@ -1829,8 +1816,6 @@ uno::Reference< XPropertySetInfo >  SwXTextViewCursor::getPropertySetInfo(  ) th
 
   -----------------------------------------------------------------------*/
 void  SwXTextViewCursor::setPropertyValue( const OUString& rPropertyName, const Any& aValue )
-							throw(UnknownPropertyException, PropertyVetoException,
-								IllegalArgumentException, WrappedTargetException, RuntimeException)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
     if(m_pView)
@@ -1853,7 +1838,6 @@ void  SwXTextViewCursor::setPropertyValue( const OUString& rPropertyName, const 
 
   -----------------------------------------------------------------------*/
 Any  SwXTextViewCursor::getPropertyValue( const OUString& rPropertyName )
-				throw(UnknownPropertyException, WrappedTargetException, RuntimeException)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
 	Any aRet;
@@ -1873,7 +1857,6 @@ Any  SwXTextViewCursor::getPropertyValue( const OUString& rPropertyName )
   -----------------------------------------------------------------------*/
 void  SwXTextViewCursor::addPropertyChangeListener(
     const OUString& /*aPropertyName*/, const uno::Reference< XPropertyChangeListener >& /*xListener*/ )
-		throw(UnknownPropertyException, WrappedTargetException, RuntimeException)
 {
 }
 /*-- 29.06.00 17:33:40---------------------------------------------------
@@ -1881,7 +1864,6 @@ void  SwXTextViewCursor::addPropertyChangeListener(
   -----------------------------------------------------------------------*/
 void  SwXTextViewCursor::removePropertyChangeListener(
     const OUString& /*aPropertyName*/, const uno::Reference< XPropertyChangeListener >& /*aListener*/ )
-		throw(UnknownPropertyException, WrappedTargetException, RuntimeException)
 {
 }
 /*-- 29.06.00 17:33:41---------------------------------------------------
@@ -1889,21 +1871,19 @@ void  SwXTextViewCursor::removePropertyChangeListener(
   -----------------------------------------------------------------------*/
 void  SwXTextViewCursor::addVetoableChangeListener(
     const OUString& /*PropertyName*/, const uno::Reference< XVetoableChangeListener >& /*aListener*/ )
-		throw(UnknownPropertyException, WrappedTargetException, RuntimeException)
 {
 }
 /*-- 29.06.00 17:33:41---------------------------------------------------
 
   -----------------------------------------------------------------------*/
 void  SwXTextViewCursor::removeVetoableChangeListener(
-    const OUString& /*PropertyName*/, const uno::Reference< XVetoableChangeListener >& /*aListener*/ ) throw(UnknownPropertyException, WrappedTargetException, RuntimeException)
+    const OUString& /*PropertyName*/, const uno::Reference< XVetoableChangeListener >& /*aListener*/ )
 {
 }
 /*-- 29.06.00 17:33:41---------------------------------------------------
 
   -----------------------------------------------------------------------*/
 PropertyState  SwXTextViewCursor::getPropertyState( const OUString& rPropertyName )
-    throw(UnknownPropertyException, RuntimeException)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
 	PropertyState eState;
@@ -1922,7 +1902,7 @@ PropertyState  SwXTextViewCursor::getPropertyState( const OUString& rPropertyNam
 
   -----------------------------------------------------------------------*/
 Sequence< PropertyState >  SwXTextViewCursor::getPropertyStates(
-	const Sequence< OUString >& rPropertyNames ) throw(UnknownPropertyException, RuntimeException)
+	const Sequence< OUString >& rPropertyNames )
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
 	Sequence< PropertyState >  aRet;
@@ -1939,7 +1919,6 @@ Sequence< PropertyState >  SwXTextViewCursor::getPropertyStates(
 
   -----------------------------------------------------------------------*/
 void  SwXTextViewCursor::setPropertyToDefault( const OUString& rPropertyName )
-										throw(UnknownPropertyException, RuntimeException)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
     if(m_pView)
@@ -1954,7 +1933,6 @@ void  SwXTextViewCursor::setPropertyToDefault( const OUString& rPropertyName )
 
   -----------------------------------------------------------------------*/
 Any  SwXTextViewCursor::getPropertyDefault( const OUString& rPropertyName )
-						throw(UnknownPropertyException, WrappedTargetException, RuntimeException)
 {
 	Any aRet;
 	::vos::OGuard aGuard(Application::GetSolarMutex());
@@ -1970,7 +1948,7 @@ Any  SwXTextViewCursor::getPropertyDefault( const OUString& rPropertyName )
 /*-- 28.09.99 08:31:19---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-sal_Bool SwXTextViewCursor::goDown(sal_Int16 nCount, sal_Bool bExpand) throw( uno::RuntimeException )
+sal_Bool SwXTextViewCursor::goDown(sal_Int16 nCount, sal_Bool bExpand)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
 	sal_Bool bRet = sal_False;
@@ -1989,7 +1967,7 @@ sal_Bool SwXTextViewCursor::goDown(sal_Int16 nCount, sal_Bool bExpand) throw( un
 /*-- 28.09.99 08:31:20---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-sal_Bool SwXTextViewCursor::goUp(sal_Int16 nCount, sal_Bool bExpand) throw( uno::RuntimeException )
+sal_Bool SwXTextViewCursor::goUp(sal_Int16 nCount, sal_Bool bExpand)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
 	sal_Bool bRet = sal_False;
@@ -2008,7 +1986,7 @@ sal_Bool SwXTextViewCursor::goUp(sal_Int16 nCount, sal_Bool bExpand) throw( uno:
 /*-- 28.09.99 08:31:20---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-sal_Bool SwXTextViewCursor::isAtStartOfLine(void) throw( uno::RuntimeException )
+sal_Bool SwXTextViewCursor::isAtStartOfLine(void)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
 	sal_Bool bRet = sal_False;
@@ -2026,7 +2004,7 @@ sal_Bool SwXTextViewCursor::isAtStartOfLine(void) throw( uno::RuntimeException )
 /*-- 28.09.99 08:31:21---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-sal_Bool SwXTextViewCursor::isAtEndOfLine(void) throw( uno::RuntimeException )
+sal_Bool SwXTextViewCursor::isAtEndOfLine(void)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
 	sal_Bool bRet = sal_False;
@@ -2044,7 +2022,7 @@ sal_Bool SwXTextViewCursor::isAtEndOfLine(void) throw( uno::RuntimeException )
 /*-- 28.09.99 08:31:21---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-void SwXTextViewCursor::gotoEndOfLine(sal_Bool bExpand) throw( uno::RuntimeException )
+void SwXTextViewCursor::gotoEndOfLine(sal_Bool bExpand)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
     if(m_pView)
@@ -2060,7 +2038,7 @@ void SwXTextViewCursor::gotoEndOfLine(sal_Bool bExpand) throw( uno::RuntimeExcep
 /*-- 28.09.99 08:31:22---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-void SwXTextViewCursor::gotoStartOfLine(sal_Bool bExpand) throw( uno::RuntimeException )
+void SwXTextViewCursor::gotoStartOfLine(sal_Bool bExpand)
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
     if(m_pView)
@@ -2076,14 +2054,14 @@ void SwXTextViewCursor::gotoStartOfLine(sal_Bool bExpand) throw( uno::RuntimeExc
 /* -----------------------------06.04.00 11:07--------------------------------
 
  ---------------------------------------------------------------------------*/
-OUString SwXTextViewCursor::getImplementationName(void) throw( RuntimeException )
+OUString SwXTextViewCursor::getImplementationName(void)
 {
 	return C2U("SwXTextViewCursor");
 }
 /* -----------------------------06.04.00 11:07--------------------------------
 
  ---------------------------------------------------------------------------*/
-sal_Bool SwXTextViewCursor::supportsService(const OUString& rServiceName) throw( RuntimeException )
+sal_Bool SwXTextViewCursor::supportsService(const OUString& rServiceName)
 {
     return !rServiceName.compareToAscii("com.sun.star.text.TextViewCursor") ||
             !rServiceName.compareToAscii("com.sun.star.style.CharacterProperties") ||
@@ -2096,7 +2074,7 @@ sal_Bool SwXTextViewCursor::supportsService(const OUString& rServiceName) throw(
 /* -----------------------------06.04.00 11:07--------------------------------
 
  ---------------------------------------------------------------------------*/
-Sequence< OUString > SwXTextViewCursor::getSupportedServiceNames(void) throw( RuntimeException )
+Sequence< OUString > SwXTextViewCursor::getSupportedServiceNames(void)
 {
     Sequence< OUString > aRet(7);
 	OUString* pArray = aRet.getArray();
@@ -2123,7 +2101,6 @@ const uno::Sequence< sal_Int8 > & SwXTextViewCursor::getUnoTunnelId()
 //XUnoTunnel
 sal_Int64 SAL_CALL SwXTextViewCursor::getSomething(
 	const uno::Sequence< sal_Int8 >& rId )
-		throw(uno::RuntimeException)
 {
     if( rId.getLength() == 16
         && 0 == rtl_compareMemory( getUnoTunnelId().getConstArray(),
@@ -2160,7 +2137,7 @@ SwPaM* 	SwXTextViewCursor::GetPaM()
 	return rSh.GetCrsr();
 }
 
-uno::Reference< datatransfer::XTransferable > SAL_CALL SwXTextView::getTransferable(  ) throw (uno::RuntimeException)
+uno::Reference< datatransfer::XTransferable > SAL_CALL SwXTextView::getTransferable(  )
 {
 	::vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -2184,7 +2161,7 @@ uno::Reference< datatransfer::XTransferable > SAL_CALL SwXTextView::getTransfera
     }
 }
 
-void SAL_CALL SwXTextView::insertTransferable( const uno::Reference< datatransfer::XTransferable >& xTrans ) throw (datatransfer::UnsupportedFlavorException, uno::RuntimeException)
+void SAL_CALL SwXTextView::insertTransferable( const uno::Reference< datatransfer::XTransferable >& xTrans )
 {
     ::vos::OGuard aGuard(Application::GetSolarMutex());
 

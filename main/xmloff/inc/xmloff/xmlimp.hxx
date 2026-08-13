@@ -213,52 +213,41 @@ public:
 	static SvXMLImport* getImplementation( ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > ) throw();
 
 	// ::com::sun::star::xml::sax::XDocumentHandler
-	virtual void SAL_CALL startDocument(void)
-		throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL endDocument(void)
-		throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL startDocument(void);
+	virtual void SAL_CALL endDocument(void);
 	virtual void SAL_CALL startElement(const ::rtl::OUString& aName,
-							  const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XAttributeList > & xAttribs)
-		throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL endElement(const ::rtl::OUString& aName)
-		throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL characters(const ::rtl::OUString& aChars)
-		throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL ignorableWhitespace(const ::rtl::OUString& aWhitespaces)
-		throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
+							  const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XAttributeList > & xAttribs);
+	virtual void SAL_CALL endElement(const ::rtl::OUString& aName);
+	virtual void SAL_CALL characters(const ::rtl::OUString& aChars);
+	virtual void SAL_CALL ignorableWhitespace(const ::rtl::OUString& aWhitespaces);
 	virtual void SAL_CALL processingInstruction(const ::rtl::OUString& aTarget,
-									   const ::rtl::OUString& aData)
-		throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL setDocumentLocator(const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XLocator > & xLocator)
-		throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
+									   const ::rtl::OUString& aData);
+	virtual void SAL_CALL setDocumentLocator(const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XLocator > & xLocator);
 
 	// ::com::sun::star::xml::sax::XExtendedDocumentHandler
-	virtual void SAL_CALL startCDATA(void) throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL endCDATA(void) throw( ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL comment(const ::rtl::OUString& sComment)
-		throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL allowLineBreak(void)
-		throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
-	virtual void SAL_CALL unknown(const ::rtl::OUString& sString)
-		throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL startCDATA(void);
+	virtual void SAL_CALL endCDATA(void);
+	virtual void SAL_CALL comment(const ::rtl::OUString& sComment);
+	virtual void SAL_CALL allowLineBreak(void);
+	virtual void SAL_CALL unknown(const ::rtl::OUString& sString);
 
 	// XImporter
-    virtual void SAL_CALL setTargetDocument( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XComponent >& xDoc ) throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL setTargetDocument( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XComponent >& xDoc );
 
     // XFilter
-    virtual sal_Bool SAL_CALL filter( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aDescriptor ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL cancel(  ) throw (::com::sun::star::uno::RuntimeException);
+    virtual sal_Bool SAL_CALL filter( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aDescriptor );
+    virtual void SAL_CALL cancel(  );
 
 	// XInitialization
-    virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments ) throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments );
 
 	// XUnoTunnel
-    virtual sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& aIdentifier ) throw(::com::sun::star::uno::RuntimeException);
+    virtual sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& aIdentifier );
 
 	// XServiceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw(::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw(::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw(::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
     // may be called by certain subclasses that handle document meta-data
     // override to provide customized handling of document statistics

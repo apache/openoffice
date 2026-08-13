@@ -47,7 +47,6 @@ using namespace com::sun::star::ucb;
 uno::Any SAL_CALL
 XStream_impl::queryInterface(
 	const uno::Type& rType )
-	throw( uno::RuntimeException)
 {
 	uno::Any aRet = cppu::queryInterface( rType,
 										  SAL_STATIC_CAST( lang::XTypeProvider*,this ),
@@ -156,7 +155,6 @@ sal_Int32 SAL_CALL XStream_impl::getMinorError()
 
 uno::Reference< io::XInputStream > SAL_CALL
 XStream_impl::getInputStream(  )
-	throw( uno::RuntimeException)
 {
 	{
 		osl::MutexGuard aGuard( m_aMutex );
@@ -168,7 +166,6 @@ XStream_impl::getInputStream(  )
 
 uno::Reference< io::XOutputStream > SAL_CALL
 XStream_impl::getOutputStream(  )
-	throw( uno::RuntimeException )
 {
 	{
 		osl::MutexGuard aGuard( m_aMutex );
@@ -179,7 +176,6 @@ XStream_impl::getOutputStream(  )
 
 
 void SAL_CALL XStream_impl::truncate(void)
-	throw( io::IOException, uno::RuntimeException )
 {
 	if (osl::FileBase::E_None != m_aFile.setSize(0))
 		throw io::IOException( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( OSL_LOG_PREFIX ) ), uno::Reference< uno::XInterface >() );
@@ -198,10 +194,6 @@ sal_Int32 SAL_CALL
 XStream_impl::readBytes(
 	uno::Sequence< sal_Int8 >& aData,
 	sal_Int32 nBytesToRead )
-	throw( io::NotConnectedException,
-		   io::BufferSizeExceededException,
-		   io::IOException,
-		   uno::RuntimeException)
 {
 	if( ! m_nIsOpen )
 		throw io::IOException( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( OSL_LOG_PREFIX ) ), uno::Reference< uno::XInterface >() );
@@ -234,10 +226,6 @@ sal_Int32 SAL_CALL
 XStream_impl::readSomeBytes(
 	uno::Sequence< sal_Int8 >& aData,
 	sal_Int32 nMaxBytesToRead )
-	throw( io::NotConnectedException,
-		   io::BufferSizeExceededException,
-		   io::IOException,
-		   uno::RuntimeException)
 {
 	return readBytes( aData,nMaxBytesToRead );
 }
@@ -246,10 +234,6 @@ XStream_impl::readSomeBytes(
 void SAL_CALL
 XStream_impl::skipBytes(
 	sal_Int32 nBytesToSkip )
-	throw( io::NotConnectedException,
-		   io::BufferSizeExceededException,
-		   io::IOException,
-		   uno::RuntimeException )
 {
 	m_aFile.setPos( osl_Pos_Current, sal_uInt64( nBytesToSkip ) );
 }
@@ -258,9 +242,6 @@ XStream_impl::skipBytes(
 sal_Int32 SAL_CALL
 XStream_impl::available(
 	void )
-	throw( io::NotConnectedException,
-		   io::IOException,
-		   uno::RuntimeException)
 {
 	return 0;
 }
@@ -268,10 +249,6 @@ XStream_impl::available(
 
 void SAL_CALL
 XStream_impl::writeBytes( const uno::Sequence< sal_Int8 >& aData )
-	throw( io::NotConnectedException,
-		   io::BufferSizeExceededException,
-		   io::IOException,
-		   uno::RuntimeException)
 {
 	sal_uInt32 length = aData.getLength();
 	if(length)
@@ -288,9 +265,6 @@ XStream_impl::writeBytes( const uno::Sequence< sal_Int8 >& aData )
 void SAL_CALL
 XStream_impl::closeStream(
 	void )
-	throw( io::NotConnectedException,
-		   io::IOException,
-		   uno::RuntimeException )
 {
 	if( m_nIsOpen )
 	{
@@ -310,9 +284,6 @@ XStream_impl::closeStream(
 void SAL_CALL
 XStream_impl::closeInput(
 	void )
-	throw( io::NotConnectedException,
-		   io::IOException,
-		   uno::RuntimeException )
 {
 	osl::MutexGuard aGuard( m_aMutex );
 	m_bInputStreamCalled = false;
@@ -325,9 +296,6 @@ XStream_impl::closeInput(
 void SAL_CALL
 XStream_impl::closeOutput(
 	void )
-	throw( io::NotConnectedException,
-		   io::IOException,
-		   uno::RuntimeException )
 {
 	osl::MutexGuard aGuard( m_aMutex );
 	m_bOutputStreamCalled = false;
@@ -340,9 +308,6 @@ XStream_impl::closeOutput(
 void SAL_CALL
 XStream_impl::seek(
 	sal_Int64 location )
-	throw( lang::IllegalArgumentException,
-		   io::IOException,
-		   uno::RuntimeException )
 {
 	if( location < 0 )
 		throw lang::IllegalArgumentException( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( OSL_LOG_PREFIX ) ), uno::Reference< uno::XInterface >(), 0 );
@@ -354,8 +319,6 @@ XStream_impl::seek(
 sal_Int64 SAL_CALL
 XStream_impl::getPosition(
 	void )
-	throw( io::IOException,
-		   uno::RuntimeException )
 {
 	sal_uInt64 uPos;
 	if( osl::FileBase::E_None != m_aFile.getPos( uPos ) )
@@ -366,8 +329,6 @@ XStream_impl::getPosition(
 sal_Int64 SAL_CALL
 XStream_impl::getLength(
 	void )
-	throw( io::IOException,
-		   uno::RuntimeException )
 {
         sal_uInt64 uEndPos;
         if ( m_aFile.getSize(uEndPos) != osl::FileBase::E_None )
@@ -378,14 +339,9 @@ XStream_impl::getLength(
 
 void SAL_CALL
 XStream_impl::flush()
-	throw( io::NotConnectedException,
-		   io::BufferSizeExceededException,
-		   io::IOException,
-		   uno::RuntimeException )
 {}
 
 void XStream_impl::waitForCompletion()
-    throw (io::IOException, uno::RuntimeException)
 {
     // At least on UNIX, to reliably learn about any errors encountered by
     // asynchronous NFS write operations, without closing the file directly

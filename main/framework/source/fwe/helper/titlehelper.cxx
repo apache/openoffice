@@ -112,7 +112,6 @@ void TitleHelper::setOwner(const css::uno::Reference< css::uno::XInterface >& xO
 
 //-----------------------------------------------
 ::rtl::OUString SAL_CALL TitleHelper::getTitle()
-    throw (css::uno::RuntimeException)
 {
     // SYNCHRONIZED ->
     ::osl::ResettableMutexGuard aLock(m_aMutex);
@@ -148,7 +147,6 @@ void TitleHelper::connectWithUntitledNumbers (const css::uno::Reference< css::fr
 
 //-----------------------------------------------
 void SAL_CALL TitleHelper::setTitle(const ::rtl::OUString& sTitle)
-    throw (css::uno::RuntimeException)
 {
     // SYNCHRONIZED ->
     ::osl::ResettableMutexGuard aLock(m_aMutex);
@@ -164,7 +162,6 @@ void SAL_CALL TitleHelper::setTitle(const ::rtl::OUString& sTitle)
 
 //-----------------------------------------------
 void SAL_CALL TitleHelper::addTitleChangeListener(const css::uno::Reference< css::frame::XTitleChangeListener >& xListener)
-    throw (css::uno::RuntimeException)
 {
     // container is threadsafe by himself
     m_aListener.addInterface( ::getCppuType( (const css::uno::Reference< css::frame::XTitleChangeListener >*)NULL ), xListener );
@@ -172,7 +169,6 @@ void SAL_CALL TitleHelper::addTitleChangeListener(const css::uno::Reference< css
 
 //-----------------------------------------------
 void SAL_CALL TitleHelper::removeTitleChangeListener(const css::uno::Reference< css::frame::XTitleChangeListener >& xListener)
-    throw (css::uno::RuntimeException)
 {
     // container is threadsafe by himself
     m_aListener.removeInterface( ::getCppuType( (const css::uno::Reference< css::frame::XTitleChangeListener >*)NULL ), xListener );
@@ -180,7 +176,6 @@ void SAL_CALL TitleHelper::removeTitleChangeListener(const css::uno::Reference< 
 
 //-----------------------------------------------
 void SAL_CALL TitleHelper::titleChanged(const css::frame::TitleChangedEvent& aEvent)
-    throw (css::uno::RuntimeException)
 {
     // SYNCHRONIZED ->
     ::osl::ResettableMutexGuard aLock(m_aMutex);
@@ -198,7 +193,6 @@ void SAL_CALL TitleHelper::titleChanged(const css::frame::TitleChangedEvent& aEv
 
 //-----------------------------------------------
 void SAL_CALL TitleHelper::notifyEvent(const css::document::EventObject& aEvent)
-    throw (css::uno::RuntimeException)
 {
     if ( ! aEvent.EventName.equalsIgnoreAsciiCaseAscii ("OnSaveAsDone")
       && ! aEvent.EventName.equalsIgnoreAsciiCaseAscii ("OnTitleChanged"))
@@ -225,7 +219,6 @@ void SAL_CALL TitleHelper::notifyEvent(const css::document::EventObject& aEvent)
 
 //-----------------------------------------------
 void SAL_CALL TitleHelper::frameAction(const css::frame::FrameActionEvent& aEvent)
-    throw(css::uno::RuntimeException)
 {
     // SYNCHRONIZED ->
     ::osl::ResettableMutexGuard aLock(m_aMutex);
@@ -253,7 +246,6 @@ void SAL_CALL TitleHelper::frameAction(const css::frame::FrameActionEvent& aEven
 
 //-----------------------------------------------
 void SAL_CALL TitleHelper::disposing(const css::lang::EventObject& aEvent)
-    throw (css::uno::RuntimeException)
 {
     // SYNCHRONIZED ->
     ::osl::ResettableMutexGuard aLock(m_aMutex);

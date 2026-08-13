@@ -85,17 +85,17 @@ typedef cppu::WeakImplHelper1< XScriptListener > ScriptEventListener_BASE;
 class ScriptEventListenerWrapper : public ScriptEventListener_BASE
 {
 public:
-	ScriptEventListenerWrapper( FmFormModel& _rModel) throw ( RuntimeException )
+	ScriptEventListenerWrapper( FmFormModel& _rModel)
 		:m_rModel( _rModel )
 		,m_attemptedListenerCreation( false )
 	{
 
 	}
     // XEventListener
-    virtual void SAL_CALL disposing(const EventObject& ) throw( RuntimeException ){}
+    virtual void SAL_CALL disposing(const EventObject& ){}
 
     // XScriptListener
-    virtual void SAL_CALL firing(const  ScriptEvent& evt) throw(RuntimeException)
+    virtual void SAL_CALL firing(const  ScriptEvent& evt)
 	{
 		attemptListenerCreation();
 		if ( m_vbaListener.is() )
@@ -104,7 +104,7 @@ public:
 		}
 	}
 
-    virtual Any SAL_CALL approveFiring(const ScriptEvent& evt) throw( com::sun::star::reflection::InvocationTargetException, RuntimeException)
+    virtual Any SAL_CALL approveFiring(const ScriptEvent& evt)
 	{
 		attemptListenerCreation();
 		if ( m_vbaListener.is() )
@@ -532,7 +532,7 @@ void FmXUndoEnvironment::Removed(FmFormObj* pObj)
 
 //	XEventListener
 //------------------------------------------------------------------------------
-void SAL_CALL FmXUndoEnvironment::disposing(const EventObject& e) throw( RuntimeException )
+void SAL_CALL FmXUndoEnvironment::disposing(const EventObject& e)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "svx", "Ocke.Janssen@sun.com", "FmXUndoEnvironment::disposing" );
 	// check if it's an object we have cached informations about
@@ -551,7 +551,7 @@ void SAL_CALL FmXUndoEnvironment::disposing(const EventObject& e) throw( Runtime
 
 // XPropertyChangeListener
 //------------------------------------------------------------------------------
-void SAL_CALL FmXUndoEnvironment::propertyChange(const PropertyChangeEvent& evt) throw(::com::sun::star::uno::RuntimeException)
+void SAL_CALL FmXUndoEnvironment::propertyChange(const PropertyChangeEvent& evt)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "svx", "Ocke.Janssen@sun.com", "FmXUndoEnvironment::propertyChange" );
     ::osl::ClearableMutexGuard aGuard( m_aMutex );
@@ -747,7 +747,7 @@ void SAL_CALL FmXUndoEnvironment::propertyChange(const PropertyChangeEvent& evt)
 
 // XContainerListener
 //------------------------------------------------------------------------------
-void SAL_CALL FmXUndoEnvironment::elementInserted(const ContainerEvent& evt) throw(::com::sun::star::uno::RuntimeException)
+void SAL_CALL FmXUndoEnvironment::elementInserted(const ContainerEvent& evt)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "svx", "Ocke.Janssen@sun.com", "FmXUndoEnvironment::elementInserted" );
 	::vos::OClearableGuard aSolarGuard( Application::GetSolarMutex() );
@@ -773,7 +773,7 @@ void FmXUndoEnvironment::implSetModified()
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL FmXUndoEnvironment::elementReplaced(const ContainerEvent& evt) throw(::com::sun::star::uno::RuntimeException)
+void SAL_CALL FmXUndoEnvironment::elementReplaced(const ContainerEvent& evt)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "svx", "Ocke.Janssen@sun.com", "FmXUndoEnvironment::elementReplaced" );
 	::vos::OClearableGuard aSolarGuard( Application::GetSolarMutex() );
@@ -791,7 +791,7 @@ void SAL_CALL FmXUndoEnvironment::elementReplaced(const ContainerEvent& evt) thr
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL FmXUndoEnvironment::elementRemoved(const ContainerEvent& evt) throw(::com::sun::star::uno::RuntimeException)
+void SAL_CALL FmXUndoEnvironment::elementRemoved(const ContainerEvent& evt)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "svx", "Ocke.Janssen@sun.com", "FmXUndoEnvironment::elementRemoved" );
 	::vos::OClearableGuard aSolarGuard( Application::GetSolarMutex() );
@@ -805,7 +805,7 @@ void SAL_CALL FmXUndoEnvironment::elementRemoved(const ContainerEvent& evt) thro
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL FmXUndoEnvironment::modified( const EventObject& /*aEvent*/ ) throw (RuntimeException)
+void SAL_CALL FmXUndoEnvironment::modified( const EventObject& /*aEvent*/ )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "svx", "Ocke.Janssen@sun.com", "FmXUndoEnvironment::modified" );
     implSetModified();
@@ -1128,7 +1128,7 @@ void FmUndoContainerAction::DisposeElement( const Reference< XInterface > & xEle
 }
 
 //------------------------------------------------------------------------------
-void FmUndoContainerAction::implReInsert( ) SAL_THROW( ( Exception ) )
+void FmUndoContainerAction::implReInsert( )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "svx", "Ocke.Janssen@sun.com", "FmUndoContainerAction::implReInsert" );
 	if ( m_xContainer->getCount() >= m_nIndex )
@@ -1158,7 +1158,7 @@ void FmUndoContainerAction::implReInsert( ) SAL_THROW( ( Exception ) )
 }
 
 //------------------------------------------------------------------------------
-void FmUndoContainerAction::implReRemove( ) SAL_THROW( ( Exception ) )
+void FmUndoContainerAction::implReRemove( )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "svx", "Ocke.Janssen@sun.com", "FmUndoContainerAction::implReRemove" );
     Reference< XInterface > xElement;

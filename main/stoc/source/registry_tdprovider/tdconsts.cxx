@@ -45,14 +45,12 @@ ConstantsTypeDescriptionImpl::~ConstantsTypeDescriptionImpl()
 //__________________________________________________________________________________________________
 // virtual
 TypeClass ConstantsTypeDescriptionImpl::getTypeClass()
-    throw( RuntimeException )
 {
     return TypeClass_CONSTANTS;
 }
 //__________________________________________________________________________________________________
 // virtual
 OUString ConstantsTypeDescriptionImpl::getName()
-    throw( RuntimeException )
 {
     return _aName;
 }
@@ -62,7 +60,6 @@ OUString ConstantsTypeDescriptionImpl::getName()
 // virtual
 Sequence< Reference< XConstantTypeDescription > > SAL_CALL
 ConstantsTypeDescriptionImpl::getConstants()
-    throw ( RuntimeException )
 {
     if ( !_pMembers )
     {

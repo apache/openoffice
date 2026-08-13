@@ -52,7 +52,7 @@ sdbcx::ObjectType OColumns::createObject(const ::rtl::OUString& _rName)
 }
 
 // -------------------------------------------------------------------------
-void OColumns::impl_refresh() throw(RuntimeException)
+void OColumns::impl_refresh()
 {
 	m_aCollection.Refresh();
 }

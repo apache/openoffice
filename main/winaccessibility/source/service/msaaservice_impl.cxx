@@ -107,20 +107,14 @@ public:
     MSAAServiceImpl ();
     virtual ~MSAAServiceImpl( void );
     // XInitialization will be called upon createInstanceWithArguments[AndContext]()
-    virtual void SAL_CALL initialize( Sequence< Any > const & args )
-    throw (Exception);
+    virtual void SAL_CALL initialize( Sequence< Any > const & args );
     // XMSAAService
-    virtual sal_Int64 SAL_CALL getAccObjectPtr (sal_Int64 hWnd, sal_Int64 lParam, sal_Int64 wParam)
-    throw (RuntimeException);
-    virtual void SAL_CALL handleWindowOpened(sal_Int64)
-    throw (RuntimeException);
+    virtual sal_Int64 SAL_CALL getAccObjectPtr (sal_Int64 hWnd, sal_Int64 lParam, sal_Int64 wParam);
+    virtual void SAL_CALL handleWindowOpened(sal_Int64);
     // XServiceInfo
-    virtual OUString SAL_CALL getImplementationName()
-    throw (RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( OUString const & serviceName )
-    throw (RuntimeException);
-    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames()
-    throw (RuntimeException);
+    virtual OUString SAL_CALL getImplementationName();
+    virtual sal_Bool SAL_CALL supportsService( OUString const & serviceName );
+    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames();
 };
 
 /**
@@ -128,7 +122,7 @@ public:
    * @param
    * @return.
    */
-void MSAAServiceImpl::initialize( Sequence< Any > const & args ) throw (Exception)
+void MSAAServiceImpl::initialize( Sequence< Any > const & args )
 {
     if (1 != args.getLength())
     {
@@ -151,7 +145,7 @@ void MSAAServiceImpl::initialize( Sequence< Any > const & args ) throw (Exceptio
    * @param
    * @return Com interface.
    */
-sal_Int64 MSAAServiceImpl::getAccObjectPtr ( sal_Int64 hWnd, sal_Int64 lParam, sal_Int64 wParam) throw (RuntimeException)
+sal_Int64 MSAAServiceImpl::getAccObjectPtr ( sal_Int64 hWnd, sal_Int64 lParam, sal_Int64 wParam)
 {
     return (sal_Int64)GetMSComPtr((sal_IntPtr)hWnd, (sal_IntPtr)lParam, (sal_IntPtr)wParam);
 }
@@ -172,7 +166,7 @@ void MSAAServiceImpl::handleWindowOpened( sal_Int64 pAcc)
    * @param
    * @return Implementation name.
    */
-OUString MSAAServiceImpl::getImplementationName() throw (RuntimeException)
+OUString MSAAServiceImpl::getImplementationName()
 {
     // unique implementation name
     return OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.accessibility.my_sc_impl.MSAAService") );
@@ -183,7 +177,7 @@ OUString MSAAServiceImpl::getImplementationName() throw (RuntimeException)
    * @param Service name.
    * @return If the service name is supported.
    */
-sal_Bool MSAAServiceImpl::supportsService( OUString const & serviceName ) throw (RuntimeException)
+sal_Bool MSAAServiceImpl::supportsService( OUString const & serviceName )
 {
     // this object only supports one service, so the test is simple
     return serviceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM("com.sun.star.accessibility.MSAAService") );
@@ -194,7 +188,7 @@ sal_Bool MSAAServiceImpl::supportsService( OUString const & serviceName ) throw 
    * @param.
    * @return service name sequence.
    */
-Sequence< OUString > MSAAServiceImpl::getSupportedServiceNames() throw (RuntimeException)
+Sequence< OUString > MSAAServiceImpl::getSupportedServiceNames()
 {
     return getSupportedServiceNames_MSAAServiceImpl();
 }

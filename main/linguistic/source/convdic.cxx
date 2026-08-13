@@ -397,7 +397,6 @@ void ConvDic::RemoveEntry( const OUString &rLeftText, const OUString &rRightText
 
 
 OUString SAL_CALL ConvDic::getName(  )
-    throw (RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
     return aName;
@@ -405,7 +404,6 @@ OUString SAL_CALL ConvDic::getName(  )
 
 
 Locale SAL_CALL ConvDic::getLocale(  )
-    throw (RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
     return CreateLocale( nLanguage );
@@ -413,7 +411,6 @@ Locale SAL_CALL ConvDic::getLocale(  )
 
 
 sal_Int16 SAL_CALL ConvDic::getConversionType(  )
-    throw (RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
     return nConversionType;
@@ -421,7 +418,6 @@ sal_Int16 SAL_CALL ConvDic::getConversionType(  )
 
 
 void SAL_CALL ConvDic::setActive( sal_Bool bActivate )
-    throw (RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
     bIsActive = bActivate;
@@ -429,7 +425,6 @@ void SAL_CALL ConvDic::setActive( sal_Bool bActivate )
 
 
 sal_Bool SAL_CALL ConvDic::isActive(  )
-    throw (RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
     return bIsActive;
@@ -437,7 +432,6 @@ sal_Bool SAL_CALL ConvDic::isActive(  )
 
 
 void SAL_CALL ConvDic::clear(  )
-    throw (RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
     aFromLeft .clear();
@@ -457,7 +451,6 @@ uno::Sequence< OUString > SAL_CALL ConvDic::getConversions(
         sal_Int32 nLength,
         ConversionDirection eDirection,
         sal_Int32 /*nTextConversionOptions*/ )
-    throw (IllegalArgumentException, RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
 
@@ -508,7 +501,6 @@ static sal_Bool lcl_SeqHasEntry(
 
 uno::Sequence< OUString > SAL_CALL ConvDic::getConversionEntries(
         ConversionDirection eDirection )
-    throw (RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
 
@@ -544,7 +536,6 @@ uno::Sequence< OUString > SAL_CALL ConvDic::getConversionEntries(
 void SAL_CALL ConvDic::addEntry(
         const OUString& aLeftText,
         const OUString& aRightText )
-    throw (IllegalArgumentException, container::ElementExistException, RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
     if (bNeedEntries)
@@ -558,7 +549,6 @@ void SAL_CALL ConvDic::addEntry(
 void SAL_CALL ConvDic::removeEntry(
         const OUString& aLeftText,
         const OUString& aRightText )
-    throw (container::NoSuchElementException, RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
     if (bNeedEntries)
@@ -570,7 +560,6 @@ void SAL_CALL ConvDic::removeEntry(
 
 
 sal_Int16 SAL_CALL ConvDic::getMaxCharCount( ConversionDirection eDirection )
-    throw (RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
 
@@ -621,7 +610,6 @@ void SAL_CALL ConvDic::setPropertyType(
         const OUString& rLeftText,
         const OUString& rRightText,
         sal_Int16 nPropertyType )
-    throw (container::NoSuchElementException, IllegalArgumentException, RuntimeException)
 {
     sal_Bool bHasElement = HasEntry( rLeftText, rRightText);
     if (!bHasElement)
@@ -638,7 +626,6 @@ void SAL_CALL ConvDic::setPropertyType(
 sal_Int16 SAL_CALL ConvDic::getPropertyType(
         const OUString& rLeftText,
         const OUString& rRightText )
-    throw (container::NoSuchElementException, RuntimeException)
 {
     sal_Bool bHasElement = HasEntry( rLeftText, rRightText);
     if (!bHasElement)
@@ -658,7 +645,6 @@ sal_Int16 SAL_CALL ConvDic::getPropertyType(
 
 
 void SAL_CALL ConvDic::flush(  )
-    throw (RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
 
@@ -682,7 +668,6 @@ void SAL_CALL ConvDic::flush(  )
 
 void SAL_CALL ConvDic::addFlushListener(
         const uno::Reference< util::XFlushListener >& rxListener )
-    throw (RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
     if (rxListener.is())
@@ -692,7 +677,6 @@ void SAL_CALL ConvDic::addFlushListener(
 
 void SAL_CALL ConvDic::removeFlushListener(
         const uno::Reference< util::XFlushListener >& rxListener )
-    throw (RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
     if (rxListener.is())
@@ -701,7 +685,6 @@ void SAL_CALL ConvDic::removeFlushListener(
 
 
 OUString SAL_CALL ConvDic::getImplementationName(  )
-    throw (RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
     return getImplementationName_Static();
@@ -709,7 +692,6 @@ OUString SAL_CALL ConvDic::getImplementationName(  )
 
 
 sal_Bool SAL_CALL ConvDic::supportsService( const OUString& rServiceName )
-    throw (RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
     sal_Bool bRes = sal_False;
@@ -720,7 +702,6 @@ sal_Bool SAL_CALL ConvDic::supportsService( const OUString& rServiceName )
 
 
 uno::Sequence< OUString > SAL_CALL ConvDic::getSupportedServiceNames(  )
-    throw (RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
     return getSupportedServiceNames_Static();

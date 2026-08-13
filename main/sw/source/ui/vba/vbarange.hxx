@@ -43,43 +43,43 @@ private:
     sal_Bool mbMaySpanEndOfDocument;
 
 private:
-    void initialize( const css::uno::Reference< css::text::XTextRange >& rStart, const css::uno::Reference< css::text::XTextRange >& rEnd ) throw (css::uno::RuntimeException);
+    void initialize( const css::uno::Reference< css::text::XTextRange >& rStart, const css::uno::Reference< css::text::XTextRange >& rEnd );
 public:
-	SwVbaRange( const css::uno::Reference< ooo::vba::XHelperInterface >& rParent, const css::uno::Reference< css::uno::XComponentContext >& rContext, const css::uno::Reference< css::text::XTextDocument >& rTextDocument, const css::uno::Reference< css::text::XTextRange >& rStart, sal_Bool _bMaySpanEndOfDocument = sal_False ) throw (css::uno::RuntimeException);
-	SwVbaRange( const css::uno::Reference< ooo::vba::XHelperInterface >& rParent, const css::uno::Reference< css::uno::XComponentContext >& rContext, const css::uno::Reference< css::text::XTextDocument >& rTextDocument, const css::uno::Reference< css::text::XTextRange >& rStart, const css::uno::Reference< css::text::XTextRange >& rEnd, sal_Bool _bMaySpanEndOfDocument = sal_False ) throw (css::uno::RuntimeException);
-	SwVbaRange( const css::uno::Reference< ooo::vba::XHelperInterface >& rParent, const css::uno::Reference< css::uno::XComponentContext >& rContext, const css::uno::Reference< css::text::XTextDocument >& rTextDocument, const css::uno::Reference< css::text::XTextRange >& rStart, const css::uno::Reference< css::text::XTextRange >& rEnd, const css::uno::Reference< css::text::XText >& rText, sal_Bool _bMaySpanEndOfDocument = sal_False ) throw (css::uno::RuntimeException);
+	SwVbaRange( const css::uno::Reference< ooo::vba::XHelperInterface >& rParent, const css::uno::Reference< css::uno::XComponentContext >& rContext, const css::uno::Reference< css::text::XTextDocument >& rTextDocument, const css::uno::Reference< css::text::XTextRange >& rStart, sal_Bool _bMaySpanEndOfDocument = sal_False );
+	SwVbaRange( const css::uno::Reference< ooo::vba::XHelperInterface >& rParent, const css::uno::Reference< css::uno::XComponentContext >& rContext, const css::uno::Reference< css::text::XTextDocument >& rTextDocument, const css::uno::Reference< css::text::XTextRange >& rStart, const css::uno::Reference< css::text::XTextRange >& rEnd, sal_Bool _bMaySpanEndOfDocument = sal_False );
+	SwVbaRange( const css::uno::Reference< ooo::vba::XHelperInterface >& rParent, const css::uno::Reference< css::uno::XComponentContext >& rContext, const css::uno::Reference< css::text::XTextDocument >& rTextDocument, const css::uno::Reference< css::text::XTextRange >& rStart, const css::uno::Reference< css::text::XTextRange >& rEnd, const css::uno::Reference< css::text::XText >& rText, sal_Bool _bMaySpanEndOfDocument = sal_False );
 	virtual ~SwVbaRange();
    css::uno::Reference< css::text::XTextDocument > getDocument() { return mxTextDocument; }
 
-    virtual css::uno::Reference< css::text::XTextRange > SAL_CALL getXTextRange() throw (css::uno::RuntimeException);
+    virtual css::uno::Reference< css::text::XTextRange > SAL_CALL getXTextRange();
 #ifdef TOMORROW
-    void setXTextRange( const css::uno::Reference< css::text::XTextRange >& xRange ) throw (css::uno::RuntimeException);
+    void setXTextRange( const css::uno::Reference< css::text::XTextRange >& xRange );
 #endif
     css::uno::Reference< css::text::XText > getXText() { return mxText; }
     void setXTextCursor( const css::uno::Reference< css::text::XTextCursor >& xTextCursor ) { mxTextCursor = xTextCursor; }
 
 	// Attribute
-    virtual rtl::OUString SAL_CALL getText() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setText( const rtl::OUString& rText ) throw (css::uno::RuntimeException);
-    virtual css::uno::Reference< ooo::vba::word::XParagraphFormat > SAL_CALL getParagraphFormat() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setParagraphFormat( const css::uno::Reference< ooo::vba::word::XParagraphFormat >& rParagraphFormat ) throw (css::uno::RuntimeException);
-    virtual css::uno::Reference< ooo::vba::word::XStyle > SAL_CALL getStyle() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setStyle( const css::uno::Reference< ooo::vba::word::XStyle >& _xStyle ) throw (css::uno::RuntimeException);
+    virtual rtl::OUString SAL_CALL getText();
+    virtual void SAL_CALL setText( const rtl::OUString& rText );
+    virtual css::uno::Reference< ooo::vba::word::XParagraphFormat > SAL_CALL getParagraphFormat();
+    virtual void SAL_CALL setParagraphFormat( const css::uno::Reference< ooo::vba::word::XParagraphFormat >& rParagraphFormat );
+    virtual css::uno::Reference< ooo::vba::word::XStyle > SAL_CALL getStyle();
+    virtual void SAL_CALL setStyle( const css::uno::Reference< ooo::vba::word::XStyle >& _xStyle );
 
-    virtual css::uno::Reference< ooo::vba::word::XFont > SAL_CALL getFont() throw (css::uno::RuntimeException);
+    virtual css::uno::Reference< ooo::vba::word::XFont > SAL_CALL getFont();
     // Methods
-    virtual void SAL_CALL InsertBreak( const css::uno::Any& _breakType ) throw (css::uno::RuntimeException);
-    virtual void SAL_CALL Select() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL InsertParagraph() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL InsertParagraphBefore() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL InsertParagraphAfter() throw (css::uno::RuntimeException);
-    virtual ::sal_Int32 SAL_CALL getLanguageID() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setLanguageID( ::sal_Int32 _languageid ) throw (css::uno::RuntimeException);
-    virtual css::uno::Any SAL_CALL PageSetup() throw (css::uno::RuntimeException);
-    virtual ::sal_Int32 SAL_CALL getStart() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setStart( ::sal_Int32 _start ) throw (css::uno::RuntimeException);
-    virtual ::sal_Int32 SAL_CALL getEnd() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setEnd( ::sal_Int32 _end ) throw (css::uno::RuntimeException);
+    virtual void SAL_CALL InsertBreak( const css::uno::Any& _breakType );
+    virtual void SAL_CALL Select();
+    virtual void SAL_CALL InsertParagraph();
+    virtual void SAL_CALL InsertParagraphBefore();
+    virtual void SAL_CALL InsertParagraphAfter();
+    virtual ::sal_Int32 SAL_CALL getLanguageID();
+    virtual void SAL_CALL setLanguageID( ::sal_Int32 _languageid );
+    virtual css::uno::Any SAL_CALL PageSetup();
+    virtual ::sal_Int32 SAL_CALL getStart();
+    virtual void SAL_CALL setStart( ::sal_Int32 _start );
+    virtual ::sal_Int32 SAL_CALL getEnd();
+    virtual void SAL_CALL setEnd( ::sal_Int32 _end );
 
 	// XHelperInterface
 	virtual rtl::OUString& getServiceImplName();

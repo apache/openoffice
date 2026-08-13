@@ -34,8 +34,7 @@ public:
 
 	~JavaOptions() {}
 
-	sal_Bool initOptions(int ac, char* av[], sal_Bool bCmdFile=sal_False)
-			throw( IllegalArgument );
+	sal_Bool initOptions(int ac, char* av[], sal_Bool bCmdFile=sal_False);
 
 	::rtl::OString	prepareHelp();
 

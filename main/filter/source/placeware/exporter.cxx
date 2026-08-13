@@ -115,7 +115,7 @@ PageEntry::~PageEntry()
 }
 
 
-static void encodeFile( osl::File& rSourceFile, Reference< XOutputStream >& xOutputStream ) throw( ::com::sun::star::uno::Exception )
+static void encodeFile( osl::File& rSourceFile, Reference< XOutputStream >& xOutputStream )
 {
 	if( xOutputStream.is() )
 	{
@@ -190,7 +190,7 @@ static OString convertString( OUString aInput )
 	return aRet;
 }
 
-static void createSlideFile( Reference< XComponent > xDoc, ZipFile& rZipFile, const rtl::OUString& rURL, vector< PageEntry* >& rPageEntries  ) throw( ::com::sun::star::uno::Exception )
+static void createSlideFile( Reference< XComponent > xDoc, ZipFile& rZipFile, const rtl::OUString& rURL, vector< PageEntry* >& rPageEntries  )
 {
 	OString aInfo;
 

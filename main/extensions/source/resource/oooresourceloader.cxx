@@ -111,8 +111,8 @@ namespace res
         static Reference< XInterface > Create( const Reference< XComponentContext >& _rxContext );
 
         // XResourceBundleLoader
-        virtual Reference< XResourceBundle > SAL_CALL loadBundle_Default( const ::rtl::OUString& aBaseName ) throw (MissingResourceException, RuntimeException);
-        virtual Reference< XResourceBundle > SAL_CALL loadBundle( const ::rtl::OUString& abaseName, const Locale& aLocale ) throw (MissingResourceException, RuntimeException);
+        virtual Reference< XResourceBundle > SAL_CALL loadBundle_Default( const ::rtl::OUString& aBaseName );
+        virtual Reference< XResourceBundle > SAL_CALL loadBundle( const ::rtl::OUString& abaseName, const Locale& aLocale );
 
     private:
         OpenOfficeResourceLoader();                                             // never implemented
@@ -210,19 +210,19 @@ namespace res
 
     public:
         // XResourceBundle
-        virtual ::com::sun::star::uno::Reference< ::com::sun::star::resource::XResourceBundle > SAL_CALL getParent() throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL setParent( const ::com::sun::star::uno::Reference< ::com::sun::star::resource::XResourceBundle >& _parent ) throw (::com::sun::star::uno::RuntimeException);
-        virtual ::com::sun::star::lang::Locale SAL_CALL getLocale(  ) throw (::com::sun::star::uno::RuntimeException);
-        virtual ::com::sun::star::uno::Any SAL_CALL getDirectElement( const ::rtl::OUString& key ) throw (::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Reference< ::com::sun::star::resource::XResourceBundle > SAL_CALL getParent();
+        virtual void SAL_CALL setParent( const ::com::sun::star::uno::Reference< ::com::sun::star::resource::XResourceBundle >& _parent );
+        virtual ::com::sun::star::lang::Locale SAL_CALL getLocale(  );
+        virtual ::com::sun::star::uno::Any SAL_CALL getDirectElement( const ::rtl::OUString& key );
 
         // XNameAccess (base of XResourceBundle)
-        virtual ::com::sun::star::uno::Any SAL_CALL getByName( const ::rtl::OUString& aName ) throw (::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames(  ) throw (::com::sun::star::uno::RuntimeException);
-        virtual ::sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName ) throw (::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Any SAL_CALL getByName( const ::rtl::OUString& aName );
+        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames(  );
+        virtual ::sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName );
 
         // XElementAccess (base of XNameAccess)
-        virtual ::com::sun::star::uno::Type SAL_CALL getElementType(  ) throw (::com::sun::star::uno::RuntimeException);
-        virtual ::sal_Bool SAL_CALL hasElements(  ) throw (::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Type SAL_CALL getElementType(  );
+        virtual ::sal_Bool SAL_CALL hasElements(  );
 
     private:
         /** retrieves the element with the given key, without asking our parent bundle
@@ -288,13 +288,13 @@ namespace res
     }
 
     //--------------------------------------------------------------------
-    Reference< XResourceBundle > SAL_CALL OpenOfficeResourceLoader::loadBundle_Default( const ::rtl::OUString& _baseName ) throw (MissingResourceException, RuntimeException)
+    Reference< XResourceBundle > SAL_CALL OpenOfficeResourceLoader::loadBundle_Default( const ::rtl::OUString& _baseName )
     {
         return loadBundle( _baseName, Application::GetSettings().GetUILocale() );
     }
 
     //--------------------------------------------------------------------
-    Reference< XResourceBundle > SAL_CALL OpenOfficeResourceLoader::loadBundle( const ::rtl::OUString& _baseName, const Locale& _locale ) throw (MissingResourceException, RuntimeException)
+    Reference< XResourceBundle > SAL_CALL OpenOfficeResourceLoader::loadBundle( const ::rtl::OUString& _baseName, const Locale& _locale )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
 
@@ -354,21 +354,21 @@ namespace res
     }
 
     //--------------------------------------------------------------------
-    Reference< XResourceBundle > SAL_CALL OpenOfficeResourceBundle::getParent() throw (RuntimeException)
+    Reference< XResourceBundle > SAL_CALL OpenOfficeResourceBundle::getParent()
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         return m_xParent;
     }
 
     //--------------------------------------------------------------------
-    void SAL_CALL OpenOfficeResourceBundle::setParent( const Reference< XResourceBundle >& _parent ) throw (RuntimeException)
+    void SAL_CALL OpenOfficeResourceBundle::setParent( const Reference< XResourceBundle >& _parent )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         m_xParent = _parent;
     }
 
     //--------------------------------------------------------------------
-    Locale SAL_CALL OpenOfficeResourceBundle::getLocale(  ) throw (RuntimeException)
+    Locale SAL_CALL OpenOfficeResourceBundle::getLocale(  )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         return m_aLocale;
@@ -411,7 +411,7 @@ namespace res
     }
 
     //--------------------------------------------------------------------
-    Any SAL_CALL OpenOfficeResourceBundle::getDirectElement( const ::rtl::OUString& _key ) throw (RuntimeException)
+    Any SAL_CALL OpenOfficeResourceBundle::getDirectElement( const ::rtl::OUString& _key )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
 
@@ -421,7 +421,7 @@ namespace res
     }
 
     //--------------------------------------------------------------------
-    Any SAL_CALL OpenOfficeResourceBundle::getByName( const ::rtl::OUString& _key ) throw (NoSuchElementException, WrappedTargetException, RuntimeException)
+    Any SAL_CALL OpenOfficeResourceBundle::getByName( const ::rtl::OUString& _key )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
 
@@ -439,7 +439,7 @@ namespace res
     }
 
     //--------------------------------------------------------------------
-    Sequence< ::rtl::OUString > SAL_CALL OpenOfficeResourceBundle::getElementNames(  ) throw (RuntimeException)
+    Sequence< ::rtl::OUString > SAL_CALL OpenOfficeResourceBundle::getElementNames(  )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         OSL_ENSURE( false, "OpenOfficeResourceBundle::getElementNames: not implemented!" );
@@ -448,7 +448,7 @@ namespace res
     }
 
     //--------------------------------------------------------------------
-    ::sal_Bool SAL_CALL OpenOfficeResourceBundle::hasByName( const ::rtl::OUString& _key ) throw (RuntimeException)
+    ::sal_Bool SAL_CALL OpenOfficeResourceBundle::hasByName( const ::rtl::OUString& _key )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
 
@@ -464,13 +464,13 @@ namespace res
     }
 
     //--------------------------------------------------------------------
-    Type SAL_CALL OpenOfficeResourceBundle::getElementType(  ) throw (RuntimeException)
+    Type SAL_CALL OpenOfficeResourceBundle::getElementType(  )
     {
         return ::cppu::UnoType< Any >::get();
     }
 
     //--------------------------------------------------------------------
-    ::sal_Bool SAL_CALL OpenOfficeResourceBundle::hasElements(  ) throw (RuntimeException)
+    ::sal_Bool SAL_CALL OpenOfficeResourceBundle::hasElements(  )
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         OSL_ENSURE( false, "OpenOfficeResourceBundle::hasElements: not implemented!" );

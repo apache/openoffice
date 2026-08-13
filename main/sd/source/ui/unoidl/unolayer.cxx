@@ -168,19 +168,16 @@ UNO3_GETIMPLEMENTATION_IMPL( SdLayer );
 
 // XServiceInfo
 OUString SAL_CALL SdLayer::getImplementationName()
-	throw(uno::RuntimeException)
 {
 	return OUString( OUString::createFromAscii(sUNO_SdLayer) );
 }
 
 sal_Bool SAL_CALL SdLayer::supportsService( const OUString& ServiceName )
-	throw(uno::RuntimeException)
 {
 	return comphelper::ServiceInfoHelper::supportsService( ServiceName, getSupportedServiceNames() );
 }
 
 uno::Sequence< OUString > SAL_CALL SdLayer::getSupportedServiceNames()
-	throw(uno::RuntimeException)
 {
 	OUString aServiceName( OUString::createFromAscii(sUNO_Service_DrawingLayer) );
 	uno::Sequence< OUString > aSeq( &aServiceName, 1 );
@@ -189,14 +186,12 @@ uno::Sequence< OUString > SAL_CALL SdLayer::getSupportedServiceNames()
 
 // beans::XPropertySet
 uno::Reference< beans::XPropertySetInfo > SAL_CALL SdLayer::getPropertySetInfo(  )
-	throw(uno::RuntimeException)
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 	return pPropSet->getPropertySetInfo();
 }
 
 void SAL_CALL SdLayer::setPropertyValue( const OUString& aPropertyName, const uno::Any& aValue )
-	throw(beans::UnknownPropertyException, beans::PropertyVetoException, lang::IllegalArgumentException, lang::WrappedTargetException, uno::RuntimeException)
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 
@@ -273,7 +268,6 @@ void SAL_CALL SdLayer::setPropertyValue( const OUString& aPropertyName, const un
 }
 
 uno::Any SAL_CALL SdLayer::getPropertyValue( const OUString& PropertyName )
-	throw(beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 
@@ -314,10 +308,10 @@ uno::Any SAL_CALL SdLayer::getPropertyValue( const OUString& PropertyName )
 	return aValue;
 }
 
-void SAL_CALL SdLayer::addPropertyChangeListener( const OUString& , const uno::Reference< beans::XPropertyChangeListener >& ) throw(beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException) {}
-void SAL_CALL SdLayer::removePropertyChangeListener( const OUString& , const uno::Reference< beans::XPropertyChangeListener >& ) throw(beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException) {}
-void SAL_CALL SdLayer::addVetoableChangeListener( const OUString& , const uno::Reference< beans::XVetoableChangeListener >& ) throw(beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException) {}
-void SAL_CALL SdLayer::removeVetoableChangeListener( const OUString& , const uno::Reference< beans::XVetoableChangeListener >& ) throw(beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException) {}
+void SAL_CALL SdLayer::addPropertyChangeListener( const OUString& , const uno::Reference< beans::XPropertyChangeListener >& ) {}
+void SAL_CALL SdLayer::removePropertyChangeListener( const OUString& , const uno::Reference< beans::XPropertyChangeListener >& ) {}
+void SAL_CALL SdLayer::addVetoableChangeListener( const OUString& , const uno::Reference< beans::XVetoableChangeListener >& ) {}
+void SAL_CALL SdLayer::removeVetoableChangeListener( const OUString& , const uno::Reference< beans::XVetoableChangeListener >& ) {}
 
 /** */
 sal_Bool SdLayer::get( LayerAttribute what ) throw()
@@ -427,7 +421,6 @@ void SdLayer::set( LayerAttribute what, sal_Bool flag ) throw()
 //=====  ::com::sun::star::container::XChild  =================================
 
 uno::Reference<uno::XInterface> SAL_CALL SdLayer::getParent (void)
-    throw (::com::sun::star::uno::RuntimeException)
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 
@@ -439,26 +432,24 @@ uno::Reference<uno::XInterface> SAL_CALL SdLayer::getParent (void)
 
 
 void SAL_CALL SdLayer::setParent (const uno::Reference<uno::XInterface >& )
-    throw (::com::sun::star::lang::NoSupportException,
-        ::com::sun::star::uno::RuntimeException)
 {
     throw lang::NoSupportException ();
 }
 
 // XComponent
-void SAL_CALL SdLayer::dispose(  ) throw (uno::RuntimeException)
+void SAL_CALL SdLayer::dispose(  )
 {
 	pLayerManager = 0;
 	mxLayerManager = 0;
 	pLayer = 0;
 }
 
-void SAL_CALL SdLayer::addEventListener( const uno::Reference< lang::XEventListener >& ) throw (uno::RuntimeException)
+void SAL_CALL SdLayer::addEventListener( const uno::Reference< lang::XEventListener >& )
 {
 	DBG_ERROR("not implemented!");
 }
 
-void SAL_CALL SdLayer::removeEventListener( const uno::Reference< lang::XEventListener >& ) throw (uno::RuntimeException)
+void SAL_CALL SdLayer::removeEventListener( const uno::Reference< lang::XEventListener >& )
 {
 	DBG_ERROR("not implemented!");
 }
@@ -485,7 +476,7 @@ SdLayerManager::~SdLayerManager() throw()
 UNO3_GETIMPLEMENTATION_IMPL( SdLayerManager );
 
 // XComponent
-void SAL_CALL SdLayerManager::dispose(  ) throw (uno::RuntimeException)
+void SAL_CALL SdLayerManager::dispose(  )
 {
 	mpModel = 0;
 	if( mpLayers )
@@ -497,31 +488,28 @@ void SAL_CALL SdLayerManager::dispose(  ) throw (uno::RuntimeException)
 	}
 }
 
-void SAL_CALL SdLayerManager::addEventListener( const uno::Reference< lang::XEventListener >& ) throw (uno::RuntimeException)
+void SAL_CALL SdLayerManager::addEventListener( const uno::Reference< lang::XEventListener >& )
 {
 	DBG_ERROR("not implemented!");
 }
 
-void SAL_CALL SdLayerManager::removeEventListener( const uno::Reference< lang::XEventListener >& ) throw (uno::RuntimeException)
+void SAL_CALL SdLayerManager::removeEventListener( const uno::Reference< lang::XEventListener >& )
 {
 	DBG_ERROR("not implemented!");
 }
 
 // XServiceInfo
 OUString SAL_CALL SdLayerManager::getImplementationName()
-	throw(uno::RuntimeException)
 {
 	return OUString( OUString::createFromAscii(sUNO_SdLayerManager) );
 }
 
 sal_Bool SAL_CALL SdLayerManager::supportsService( const OUString& ServiceName )
-	throw(uno::RuntimeException)
 {
 	return comphelper::ServiceInfoHelper::supportsService( ServiceName, getSupportedServiceNames() );
 }
 
 uno::Sequence< OUString > SAL_CALL SdLayerManager::getSupportedServiceNames()
-	throw(uno::RuntimeException)
 {
 	OUString aServiceName( OUString::createFromAscii(sUNO_Service_DrawingLayerManager) );
 	uno::Sequence< OUString > aSeq( &aServiceName, 1 );
@@ -530,7 +518,6 @@ uno::Sequence< OUString > SAL_CALL SdLayerManager::getSupportedServiceNames()
 
 // XLayerManager
 uno::Reference< drawing::XLayer > SAL_CALL SdLayerManager::insertNewByIndex( sal_Int32 nIndex )
-	throw(uno::RuntimeException)
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 
@@ -564,7 +551,6 @@ uno::Reference< drawing::XLayer > SAL_CALL SdLayerManager::insertNewByIndex( sal
 }
 
 void SAL_CALL SdLayerManager::remove( const uno::Reference< drawing::XLayer >& xLayer )
-	throw(container::NoSuchElementException, uno::RuntimeException)
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 
@@ -585,7 +571,6 @@ void SAL_CALL SdLayerManager::remove( const uno::Reference< drawing::XLayer >& x
 }
 
 void SAL_CALL SdLayerManager::attachShapeToLayer( const uno::Reference< drawing::XShape >& xShape, const uno::Reference< drawing::XLayer >& xLayer )
-	throw(uno::RuntimeException)
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 
@@ -606,7 +591,7 @@ void SAL_CALL SdLayerManager::attachShapeToLayer( const uno::Reference< drawing:
 	mpModel->SetModified();
 }
 
-uno::Reference< drawing::XLayer > SAL_CALL SdLayerManager::getLayerForShape( const uno::Reference< drawing::XShape >& xShape ) throw(uno::RuntimeException)
+uno::Reference< drawing::XLayer > SAL_CALL SdLayerManager::getLayerForShape( const uno::Reference< drawing::XShape >& xShape )
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 
@@ -631,7 +616,6 @@ uno::Reference< drawing::XLayer > SAL_CALL SdLayerManager::getLayerForShape( con
 
 // XIndexAccess
 sal_Int32 SAL_CALL SdLayerManager::getCount()
-	throw(uno::RuntimeException)
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 
@@ -648,7 +632,6 @@ sal_Int32 SAL_CALL SdLayerManager::getCount()
 }
 
 uno::Any SAL_CALL SdLayerManager::getByIndex( sal_Int32 nLayer )
-	throw(lang::IndexOutOfBoundsException, lang::WrappedTargetException, uno::RuntimeException)
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 
@@ -672,7 +655,6 @@ uno::Any SAL_CALL SdLayerManager::getByIndex( sal_Int32 nLayer )
 
 // XNameAccess
 uno::Any SAL_CALL SdLayerManager::getByName( const OUString& aName )
-	throw(container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException)
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 
@@ -688,7 +670,6 @@ uno::Any SAL_CALL SdLayerManager::getByName( const OUString& aName )
 }
 
 uno::Sequence< OUString > SAL_CALL SdLayerManager::getElementNames()
-	throw(uno::RuntimeException)
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 
@@ -713,7 +694,7 @@ uno::Sequence< OUString > SAL_CALL SdLayerManager::getElementNames()
 	return aSeq;
 }
 
-sal_Bool SAL_CALL SdLayerManager::hasByName( const OUString& aName ) throw(uno::RuntimeException)
+sal_Bool SAL_CALL SdLayerManager::hasByName( const OUString& aName )
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 
@@ -727,12 +708,11 @@ sal_Bool SAL_CALL SdLayerManager::hasByName( const OUString& aName ) throw(uno::
 
 // XElementAccess
 uno::Type SAL_CALL SdLayerManager::getElementType()
-	throw(uno::RuntimeException)
 {
 	return ITYPE( drawing::XLayer );
 }
 
-sal_Bool SAL_CALL SdLayerManager::hasElements() throw(uno::RuntimeException)
+sal_Bool SAL_CALL SdLayerManager::hasElements()
 {
 	return getCount() > 0;
 }

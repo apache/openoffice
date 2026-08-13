@@ -127,13 +127,13 @@ sal_Unicode cNewLine(0x0a);
         AccessibleStaticTextBase_Impl();
         ~AccessibleStaticTextBase_Impl();
 
-        SvxEditSourceAdapter& GetEditSource() const SAL_THROW((uno::RuntimeException))
+        SvxEditSourceAdapter& GetEditSource() const
         {
             DBG_CHKTHIS( AccessibleStaticTextBase_Impl, NULL );
 
             return maEditSource;
         }
-        void SetEditSource( ::std::auto_ptr< SvxEditSource > pEditSource ) SAL_THROW((uno::RuntimeException));
+        void SetEditSource( ::std::auto_ptr< SvxEditSource > pEditSource );
 
         void SetEventSource( const uno::Reference< XAccessible >& rInterface )
         {
@@ -246,7 +246,7 @@ sal_Unicode cNewLine(0x0a);
         DBG_DTOR( AccessibleStaticTextBase_Impl, NULL );
     }
 
-    void AccessibleStaticTextBase_Impl::SetEditSource( ::std::auto_ptr< SvxEditSource > pEditSource ) SAL_THROW((uno::RuntimeException))
+    void AccessibleStaticTextBase_Impl::SetEditSource( ::std::auto_ptr< SvxEditSource > pEditSource )
     {
         DBG_CHKTHIS( AccessibleStaticTextBase_Impl, NULL );
 
@@ -546,7 +546,7 @@ sal_Unicode cNewLine(0x0a);
     {
     }
 
-    const SvxEditSource& AccessibleStaticTextBase::GetEditSource() const SAL_THROW((::com::sun::star::uno::RuntimeException))
+    const SvxEditSource& AccessibleStaticTextBase::GetEditSource() const
     {
 #ifdef DBG_UTIL
         mpImpl->CheckInvariants();
@@ -561,7 +561,7 @@ sal_Unicode cNewLine(0x0a);
 #endif
     }
 
-    void AccessibleStaticTextBase::SetEditSource( ::std::auto_ptr< SvxEditSource > pEditSource ) SAL_THROW((::com::sun::star::uno::RuntimeException))
+    void AccessibleStaticTextBase::SetEditSource( ::std::auto_ptr< SvxEditSource > pEditSource )
     {
 #ifdef DBG_UTIL
         // precondition: solar mutex locked
@@ -636,7 +636,7 @@ sal_Unicode cNewLine(0x0a);
 #endif
     }
 
-    void AccessibleStaticTextBase::UpdateChildren() SAL_THROW((::com::sun::star::uno::RuntimeException))
+    void AccessibleStaticTextBase::UpdateChildren()
     {
 #ifdef DBG_UTIL
         // precondition: solar mutex locked
@@ -666,26 +666,26 @@ sal_Unicode cNewLine(0x0a);
     }
 
 	// XAccessibleContext
-    sal_Int32 SAL_CALL AccessibleStaticTextBase::getAccessibleChildCount() throw (uno::RuntimeException)
+    sal_Int32 SAL_CALL AccessibleStaticTextBase::getAccessibleChildCount()
     {
         // no children at all
         return 0;
     }
 
-    uno::Reference< XAccessible > SAL_CALL AccessibleStaticTextBase::getAccessibleChild( sal_Int32 /*i*/ ) throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
+    uno::Reference< XAccessible > SAL_CALL AccessibleStaticTextBase::getAccessibleChild( sal_Int32 /*i*/ )
     {
         // no children at all
         return uno::Reference< XAccessible >();
     }
 
-    uno::Reference< XAccessible > SAL_CALL AccessibleStaticTextBase::getAccessibleAtPoint( const awt::Point& /*_aPoint*/ ) throw (uno::RuntimeException)
+    uno::Reference< XAccessible > SAL_CALL AccessibleStaticTextBase::getAccessibleAtPoint( const awt::Point& /*_aPoint*/ )
     {
         // no children at all
         return uno::Reference< XAccessible >();
     }
 
 	// XAccessibleText
-    sal_Int32 SAL_CALL AccessibleStaticTextBase::getCaretPosition() throw (uno::RuntimeException)
+    sal_Int32 SAL_CALL AccessibleStaticTextBase::getCaretPosition()
     {
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -699,12 +699,12 @@ sal_Unicode cNewLine(0x0a);
         return nPos;
     }
 
-    sal_Bool SAL_CALL AccessibleStaticTextBase::setCaretPosition( sal_Int32 nIndex ) throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
+    sal_Bool SAL_CALL AccessibleStaticTextBase::setCaretPosition( sal_Int32 nIndex )
     {
         return setSelection(nIndex, nIndex);
     }
 
-    sal_Unicode SAL_CALL AccessibleStaticTextBase::getCharacter( sal_Int32 nIndex ) throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
+    sal_Unicode SAL_CALL AccessibleStaticTextBase::getCharacter( sal_Int32 nIndex )
     {
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -713,7 +713,7 @@ sal_Unicode cNewLine(0x0a);
         return mpImpl->GetParagraph( aPos.nPara ).getCharacter( aPos.nIndex );
     }
 
-    uno::Sequence< beans::PropertyValue > SAL_CALL AccessibleStaticTextBase::getCharacterAttributes( sal_Int32 nIndex, const ::com::sun::star::uno::Sequence< ::rtl::OUString >& aRequestedAttributes ) throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
+    uno::Sequence< beans::PropertyValue > SAL_CALL AccessibleStaticTextBase::getCharacterAttributes( sal_Int32 nIndex, const ::com::sun::star::uno::Sequence< ::rtl::OUString >& aRequestedAttributes )
     {
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
 		//get the actual index without "\n"
@@ -724,7 +724,7 @@ sal_Unicode cNewLine(0x0a);
         return mpImpl->GetParagraph( aPos.nPara ).getCharacterAttributes( aPos.nIndex, aRequestedAttributes );
     }
 
-    awt::Rectangle SAL_CALL AccessibleStaticTextBase::getCharacterBounds( sal_Int32 nIndex ) throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
+    awt::Rectangle SAL_CALL AccessibleStaticTextBase::getCharacterBounds( sal_Int32 nIndex )
     {
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -742,7 +742,7 @@ sal_Unicode cNewLine(0x0a);
         return aBounds;
     }
 
-    sal_Int32 SAL_CALL AccessibleStaticTextBase::getCharacterCount() throw (uno::RuntimeException)
+    sal_Int32 SAL_CALL AccessibleStaticTextBase::getCharacterCount()
     {
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -754,7 +754,7 @@ sal_Unicode cNewLine(0x0a);
         return nCount;
     }
 
-    sal_Int32 SAL_CALL AccessibleStaticTextBase::getIndexAtPoint( const awt::Point& rPoint ) throw (uno::RuntimeException)
+    sal_Int32 SAL_CALL AccessibleStaticTextBase::getIndexAtPoint( const awt::Point& rPoint )
     {
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -782,7 +782,7 @@ sal_Unicode cNewLine(0x0a);
         return -1;
     }
 
-    ::rtl::OUString SAL_CALL AccessibleStaticTextBase::getSelectedText() throw (uno::RuntimeException)
+    ::rtl::OUString SAL_CALL AccessibleStaticTextBase::getSelectedText()
     {
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -796,7 +796,7 @@ sal_Unicode cNewLine(0x0a);
         return getTextRange( nStart, nEnd );
     }
 
-    sal_Int32 SAL_CALL AccessibleStaticTextBase::getSelectionStart() throw (uno::RuntimeException)
+    sal_Int32 SAL_CALL AccessibleStaticTextBase::getSelectionStart()
     {
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -810,7 +810,7 @@ sal_Unicode cNewLine(0x0a);
         return nPos;
     }
 
-    sal_Int32 SAL_CALL AccessibleStaticTextBase::getSelectionEnd() throw (uno::RuntimeException)
+    sal_Int32 SAL_CALL AccessibleStaticTextBase::getSelectionEnd()
     {
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -824,7 +824,7 @@ sal_Unicode cNewLine(0x0a);
         return nPos;
     }
 
-    sal_Bool SAL_CALL AccessibleStaticTextBase::setSelection( sal_Int32 nStartIndex, sal_Int32 nEndIndex ) throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
+    sal_Bool SAL_CALL AccessibleStaticTextBase::setSelection( sal_Int32 nStartIndex, sal_Int32 nEndIndex )
     {
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -835,7 +835,7 @@ sal_Unicode cNewLine(0x0a);
                                      aEndIndex.nPara, aEndIndex.nIndex );
     }
 
-    ::rtl::OUString SAL_CALL AccessibleStaticTextBase::getText() throw (uno::RuntimeException)
+    ::rtl::OUString SAL_CALL AccessibleStaticTextBase::getText()
     {
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -847,7 +847,7 @@ sal_Unicode cNewLine(0x0a);
         return aRes;
     }
 
-    ::rtl::OUString SAL_CALL AccessibleStaticTextBase::getTextRange( sal_Int32 nStartIndex, sal_Int32 nEndIndex ) throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
+    ::rtl::OUString SAL_CALL AccessibleStaticTextBase::getTextRange( sal_Int32 nStartIndex, sal_Int32 nEndIndex )
     {
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -932,7 +932,7 @@ sal_Unicode cNewLine(0x0a);
 		return aRes;
     }
 
-    ::com::sun::star::accessibility::TextSegment SAL_CALL AccessibleStaticTextBase::getTextAtIndex( sal_Int32 nIndex, sal_Int16 aTextType ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException)
+    ::com::sun::star::accessibility::TextSegment SAL_CALL AccessibleStaticTextBase::getTextAtIndex( sal_Int32 nIndex, sal_Int16 aTextType )
     {
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -983,7 +983,7 @@ sal_Unicode cNewLine(0x0a);
         return aResult;
     }
 
-    ::com::sun::star::accessibility::TextSegment SAL_CALL AccessibleStaticTextBase::getTextBeforeIndex( sal_Int32 nIndex, sal_Int16 aTextType ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException)
+    ::com::sun::star::accessibility::TextSegment SAL_CALL AccessibleStaticTextBase::getTextBeforeIndex( sal_Int32 nIndex, sal_Int16 aTextType )
     {
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
 		sal_Int32 nOldIdx = nIndex;
@@ -1028,7 +1028,7 @@ sal_Unicode cNewLine(0x0a);
         return aResult;
     }
 
-    ::com::sun::star::accessibility::TextSegment SAL_CALL AccessibleStaticTextBase::getTextBehindIndex( sal_Int32 nIndex, sal_Int16 aTextType ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException)
+    ::com::sun::star::accessibility::TextSegment SAL_CALL AccessibleStaticTextBase::getTextBehindIndex( sal_Int32 nIndex, sal_Int16 aTextType )
     {
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
 		sal_Int32 nTemp = nIndex+1;
@@ -1068,7 +1068,7 @@ sal_Unicode cNewLine(0x0a);
         return aResult;
     }
 
-    sal_Bool SAL_CALL AccessibleStaticTextBase::copyText( sal_Int32 nStartIndex, sal_Int32 nEndIndex ) throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
+    sal_Bool SAL_CALL AccessibleStaticTextBase::copyText( sal_Int32 nStartIndex, sal_Int32 nEndIndex )
     {
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
@@ -1083,7 +1083,7 @@ sal_Unicode cNewLine(0x0a);
     }
 
     // XAccessibleTextAttributes
-    uno::Sequence< beans::PropertyValue > AccessibleStaticTextBase::getDefaultAttributes( const uno::Sequence< ::rtl::OUString >& RequestedAttributes ) throw (uno::RuntimeException)
+    uno::Sequence< beans::PropertyValue > AccessibleStaticTextBase::getDefaultAttributes( const uno::Sequence< ::rtl::OUString >& RequestedAttributes )
     {
         // get the intersection of the default attributes of all paragraphs
 
@@ -1120,7 +1120,7 @@ sal_Unicode cNewLine(0x0a);
         return aDefAttrVec.getAsConstList();
     }
 
-    uno::Sequence< beans::PropertyValue > SAL_CALL AccessibleStaticTextBase::getRunAttributes( sal_Int32 nIndex, const uno::Sequence< ::rtl::OUString >& RequestedAttributes ) throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
+    uno::Sequence< beans::PropertyValue > SAL_CALL AccessibleStaticTextBase::getRunAttributes( sal_Int32 nIndex, const uno::Sequence< ::rtl::OUString >& RequestedAttributes )
     {
         // get those default attributes of the paragraph, which are not part
         // of the intersection of all paragraphs and add them to the run attributes

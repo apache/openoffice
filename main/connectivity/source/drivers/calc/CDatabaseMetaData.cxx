@@ -153,7 +153,7 @@ Reference< XResultSet > OCalcDatabaseMetaData::impl_getTypeInfo_throw(  )
 
 Reference< XResultSet > SAL_CALL OCalcDatabaseMetaData::getColumns(
 	const Any& /*catalog*/, const ::rtl::OUString& /*schemaPattern*/, const ::rtl::OUString& tableNamePattern,
-        const ::rtl::OUString& columnNamePattern ) throw(SQLException, RuntimeException)
+        const ::rtl::OUString& columnNamePattern )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "calc", "Ocke.Janssen@sun.com", "OCalcDatabaseMetaData::getColumns" );
 	::osl::MutexGuard aGuard( m_aMutex );
@@ -249,7 +249,7 @@ Reference< XResultSet > SAL_CALL OCalcDatabaseMetaData::getColumns(
 
 // -------------------------------------------------------------------------
 
-::rtl::OUString SAL_CALL OCalcDatabaseMetaData::getURL(  ) throw(SQLException, RuntimeException)
+::rtl::OUString SAL_CALL OCalcDatabaseMetaData::getURL(  )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "calc", "Ocke.Janssen@sun.com", "OCalcDatabaseMetaData::getURL" );
 	::osl::MutexGuard aGuard( m_aMutex );
@@ -259,7 +259,7 @@ Reference< XResultSet > SAL_CALL OCalcDatabaseMetaData::getColumns(
 
 // -------------------------------------------------------------------------
 
-sal_Int32 SAL_CALL OCalcDatabaseMetaData::getMaxBinaryLiteralLength(  ) throw(SQLException, RuntimeException)
+sal_Int32 SAL_CALL OCalcDatabaseMetaData::getMaxBinaryLiteralLength(  )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "calc", "Ocke.Janssen@sun.com", "OCalcDatabaseMetaData::getMaxBinaryLiteralLength" );
 	return STRING_MAXLEN;
@@ -267,25 +267,25 @@ sal_Int32 SAL_CALL OCalcDatabaseMetaData::getMaxBinaryLiteralLength(  ) throw(SQ
 
 // -------------------------------------------------------------------------
 
-sal_Int32 SAL_CALL OCalcDatabaseMetaData::getMaxCharLiteralLength(  ) throw(SQLException, RuntimeException)
+sal_Int32 SAL_CALL OCalcDatabaseMetaData::getMaxCharLiteralLength(  )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "calc", "Ocke.Janssen@sun.com", "OCalcDatabaseMetaData::getMaxCharLiteralLength" );
 	return STRING_MAXLEN;
 }
 // -------------------------------------------------------------------------
-sal_Int32 SAL_CALL OCalcDatabaseMetaData::getMaxColumnNameLength(  ) throw(SQLException, RuntimeException)
+sal_Int32 SAL_CALL OCalcDatabaseMetaData::getMaxColumnNameLength(  )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "calc", "Ocke.Janssen@sun.com", "OCalcDatabaseMetaData::getMaxColumnNameLength" );
 	return STRING_MAXLEN;
 }
 // -------------------------------------------------------------------------
-sal_Int32 SAL_CALL OCalcDatabaseMetaData::getMaxColumnsInIndex(  ) throw(SQLException, RuntimeException)
+sal_Int32 SAL_CALL OCalcDatabaseMetaData::getMaxColumnsInIndex(  )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "calc", "Ocke.Janssen@sun.com", "OCalcDatabaseMetaData::getMaxColumnsInIndex" );
 	return 1;
 }
 // -------------------------------------------------------------------------
-sal_Int32 SAL_CALL OCalcDatabaseMetaData::getMaxColumnsInTable(  ) throw(SQLException, RuntimeException)
+sal_Int32 SAL_CALL OCalcDatabaseMetaData::getMaxColumnsInTable(  )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "calc", "Ocke.Janssen@sun.com", "OCalcDatabaseMetaData::getMaxColumnsInTable" );
 	return 256;
@@ -390,7 +390,6 @@ sal_Bool lcl_IsUnnamed( const Reference<XDatabaseRanges>& xRanges, const ::rtl::
 Reference< XResultSet > SAL_CALL OCalcDatabaseMetaData::getTables(
         const Any& /*catalog*/, const ::rtl::OUString& /*schemaPattern*/,
         const ::rtl::OUString& tableNamePattern, const Sequence< ::rtl::OUString >& types )
-        throw(SQLException, RuntimeException)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "calc", "Ocke.Janssen@sun.com", "OCalcDatabaseMetaData::getTables" );
 	::osl::MutexGuard aGuard( m_aMutex );

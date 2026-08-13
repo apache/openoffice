@@ -769,32 +769,25 @@ class MinimalCommandEnv
 public:
     // XCommandEnvironment
     virtual css::uno::Reference< css::task::XInteractionHandler> SAL_CALL getInteractionHandler()
-        throw (css::uno::RuntimeException)
 	{ return this;}
     virtual css::uno::Reference< css::ucb::XProgressHandler> SAL_CALL getProgressHandler()
-        throw (css::uno::RuntimeException)
 	{ return this;}
 
     // XInteractionHandler
-    virtual void SAL_CALL handle( const css::uno::Reference< css::task::XInteractionRequest>&)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL handle( const css::uno::Reference< css::task::XInteractionRequest>&);
 
     // XProgressHandler
     virtual void SAL_CALL push( const css::uno::Any& /*Status*/)
-        throw (css::uno::RuntimeException)
 	{}
     virtual void SAL_CALL update( const css::uno::Any& /*Status*/)
-        throw (css::uno::RuntimeException)
 	{}
     virtual void SAL_CALL pop()
-        throw (css::uno::RuntimeException)
 	{}
 };
 
 // MinimalCommandEnv's XInteractionHandler simply approves
 void MinimalCommandEnv::handle(
     css::uno::Reference< css::task::XInteractionRequest> const& xRequest)
-    throw ( css::uno::RuntimeException )
 {
     bool bApprove = true;
 

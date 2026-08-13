@@ -37,25 +37,25 @@ public:
     VbaNewFont(
         const css::uno::Reference< ov::XHelperInterface >& rxParent,
         const css::uno::Reference< css::uno::XComponentContext >& rxContext,
-        const css::uno::Reference< css::beans::XPropertySet >& rxModelProps ) throw (css::uno::RuntimeException);
+        const css::uno::Reference< css::beans::XPropertySet >& rxModelProps );
 
     // XNewFont attributes
-    virtual ::rtl::OUString SAL_CALL getName() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setName( const ::rtl::OUString& rName ) throw (css::uno::RuntimeException);
-    virtual double SAL_CALL getSize() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setSize( double fSize ) throw (css::uno::RuntimeException);
-    virtual sal_Int16 SAL_CALL getCharset() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setCharset( sal_Int16 nCharset ) throw (css::uno::RuntimeException);
-    virtual sal_Int16 SAL_CALL getWeight() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setWeight( sal_Int16 nWeight ) throw (css::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL getBold() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setBold( sal_Bool bBold ) throw (css::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL getItalic() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setItalic( sal_Bool bItalic ) throw (css::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL getUnderline() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setUnderline( sal_Bool bUnderline ) throw (css::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL getStrikethrough() throw (css::uno::RuntimeException);
-    virtual void SAL_CALL setStrikethrough( sal_Bool bStrikethrough ) throw (css::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getName();
+    virtual void SAL_CALL setName( const ::rtl::OUString& rName );
+    virtual double SAL_CALL getSize();
+    virtual void SAL_CALL setSize( double fSize );
+    virtual sal_Int16 SAL_CALL getCharset();
+    virtual void SAL_CALL setCharset( sal_Int16 nCharset );
+    virtual sal_Int16 SAL_CALL getWeight();
+    virtual void SAL_CALL setWeight( sal_Int16 nWeight );
+    virtual sal_Bool SAL_CALL getBold();
+    virtual void SAL_CALL setBold( sal_Bool bBold );
+    virtual sal_Bool SAL_CALL getItalic();
+    virtual void SAL_CALL setItalic( sal_Bool bItalic );
+    virtual sal_Bool SAL_CALL getUnderline();
+    virtual void SAL_CALL setUnderline( sal_Bool bUnderline );
+    virtual sal_Bool SAL_CALL getStrikethrough();
+    virtual void SAL_CALL setStrikethrough( sal_Bool bStrikethrough );
 
     // XHelperInterface
     VBAHELPER_DECL_XHELPERINTERFACE

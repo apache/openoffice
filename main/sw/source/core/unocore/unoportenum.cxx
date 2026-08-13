@@ -298,7 +298,6 @@ const uno::Sequence< sal_Int8 > & SwXTextPortionEnumeration::getUnoTunnelId()
  ---------------------------------------------------------------------------*/
 sal_Int64 SAL_CALL SwXTextPortionEnumeration::getSomething(
         const uno::Sequence< sal_Int8 >& rId )
-throw(uno::RuntimeException)
 {
     if( rId.getLength() == 16
         && 0 == rtl_compareMemory( getUnoTunnelId().getConstArray(),
@@ -312,7 +311,6 @@ throw(uno::RuntimeException)
 
  ---------------------------------------------------------------------------*/
 OUString SwXTextPortionEnumeration::getImplementationName()
-throw( RuntimeException )
 {
 	return C2U("SwXTextPortionEnumeration");
 }
@@ -321,7 +319,6 @@ throw( RuntimeException )
  ---------------------------------------------------------------------------*/
 sal_Bool
 SwXTextPortionEnumeration::supportsService(const OUString& rServiceName)
-throw( RuntimeException )
 {
 	return C2U("com.sun.star.text.TextPortionEnumeration") == rServiceName;
 }
@@ -329,7 +326,6 @@ throw( RuntimeException )
 
  ---------------------------------------------------------------------------*/
 Sequence< OUString > SwXTextPortionEnumeration::getSupportedServiceNames()
-throw( RuntimeException )
 {
 	Sequence< OUString > aRet(1);
 	OUString* pArray = aRet.getArray();
@@ -385,7 +381,6 @@ SwXTextPortionEnumeration::~SwXTextPortionEnumeration()
 
   -----------------------------------------------------------------------*/
 sal_Bool SwXTextPortionEnumeration::hasMoreElements()
-throw( uno::RuntimeException )
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 
@@ -395,8 +390,6 @@ throw( uno::RuntimeException )
 
   -----------------------------------------------------------------------*/
 uno::Any SwXTextPortionEnumeration::nextElement()
-throw( container::NoSuchElementException, lang::WrappedTargetException,
-       uno::RuntimeException )
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
 

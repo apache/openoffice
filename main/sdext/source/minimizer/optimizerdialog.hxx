@@ -85,16 +85,16 @@ public :
                      const com::sun::star::uno::Reference< com::sun::star::awt::XWindowPeer >& rxParent );
     ~OptimizerDialog();
 
-    virtual void SAL_CALL statusChanged( const ::com::sun::star::frame::FeatureStateEvent& aState ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& aSource ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL statusChanged( const ::com::sun::star::frame::FeatureStateEvent& aState );
+    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& aSource );
 
-    virtual void SAL_CALL up( const ::com::sun::star::awt::SpinEvent& Event ) throw ( com::sun::star::uno::RuntimeException );
-    virtual void SAL_CALL down( const ::com::sun::star::awt::SpinEvent& Event ) throw ( com::sun::star::uno::RuntimeException );
-    virtual void SAL_CALL first( const ::com::sun::star::awt::SpinEvent& Event ) throw ( com::sun::star::uno::RuntimeException );
-    virtual void SAL_CALL last( const ::com::sun::star::awt::SpinEvent& Event ) throw ( com::sun::star::uno::RuntimeException );
-    virtual void SAL_CALL itemStateChanged( const ::com::sun::star::awt::ItemEvent& Event ) throw ( com::sun::star::uno::RuntimeException );
-    virtual void SAL_CALL actionPerformed( const ::com::sun::star::awt::ActionEvent& Event ) throw ( com::sun::star::uno::RuntimeException );
-    virtual void SAL_CALL textChanged( const ::com::sun::star::awt::TextEvent& Event ) throw ( com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL up( const ::com::sun::star::awt::SpinEvent& Event );
+    virtual void SAL_CALL down( const ::com::sun::star::awt::SpinEvent& Event );
+    virtual void SAL_CALL first( const ::com::sun::star::awt::SpinEvent& Event );
+    virtual void SAL_CALL last( const ::com::sun::star::awt::SpinEvent& Event );
+    virtual void SAL_CALL itemStateChanged( const ::com::sun::star::awt::ItemEvent& Event );
+    virtual void SAL_CALL actionPerformed( const ::com::sun::star::awt::ActionEvent& Event );
+    virtual void SAL_CALL textChanged( const ::com::sun::star::awt::TextEvent& Event );
 
 	sal_Bool				execute();
 

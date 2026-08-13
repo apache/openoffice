@@ -59,8 +59,7 @@ public:
 
     virtual void setExplicitScaleAndIncrement(
             const ExplicitScaleData& rScale
-          , const ExplicitIncrementData& rIncrement )
-                throw (::com::sun::star::uno::RuntimeException);
+          , const ExplicitIncrementData& rIncrement );
 
     virtual sal_Int32 estimateMaximumAutoMainIncrementCount();
     virtual void createAllTickInfos( ::std::vector< ::std::vector< TickInfo > >& rAllTickInfos );

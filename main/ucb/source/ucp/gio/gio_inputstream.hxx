@@ -49,41 +49,22 @@ public:
     virtual ~InputStream();
 
     // XInterface
-    virtual com::sun::star::uno::Any SAL_CALL queryInterface(const ::com::sun::star::uno::Type & type )
-            throw( ::com::sun::star::uno::RuntimeException );
+    virtual com::sun::star::uno::Any SAL_CALL queryInterface(const ::com::sun::star::uno::Type & type );
     virtual void SAL_CALL acquire( void ) throw () { OWeakObject::acquire(); }
     virtual void SAL_CALL release( void ) throw() { OWeakObject::release(); }
 
     // XInputStream
     virtual sal_Int32 SAL_CALL readBytes( ::com::sun::star::uno::Sequence< sal_Int8 > & aData,
-        sal_Int32 nBytesToRead )
-            throw( ::com::sun::star::io::NotConnectedException,
-                ::com::sun::star::io::BufferSizeExceededException,
-                ::com::sun::star::io::IOException,
-                ::com::sun::star::uno::RuntimeException );
+        sal_Int32 nBytesToRead );
 
     virtual sal_Int32 SAL_CALL readSomeBytes( ::com::sun::star::uno::Sequence< sal_Int8 > & aData,
-        sal_Int32 nMaxBytesToRead )
-            throw( ::com::sun::star::io::NotConnectedException,
-                ::com::sun::star::io::BufferSizeExceededException,
-                ::com::sun::star::io::IOException,
-                ::com::sun::star::uno::RuntimeException );
+        sal_Int32 nMaxBytesToRead );
 
-    virtual void SAL_CALL skipBytes( sal_Int32 nBytesToSkip )
-            throw( ::com::sun::star::io::NotConnectedException,
-                ::com::sun::star::io::BufferSizeExceededException,
-                ::com::sun::star::io::IOException,
-                ::com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL skipBytes( sal_Int32 nBytesToSkip );
 
-    virtual sal_Int32 SAL_CALL available( void )
-            throw( ::com::sun::star::io::NotConnectedException,
-                ::com::sun::star::io::IOException,
-                ::com::sun::star::uno::RuntimeException );
+    virtual sal_Int32 SAL_CALL available( void );
 
-    virtual void SAL_CALL closeInput( void )
-            throw( ::com::sun::star::io::NotConnectedException,
-                ::com::sun::star::io::IOException,
-                ::com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL closeInput( void );
 };
 
 } // namespace gio

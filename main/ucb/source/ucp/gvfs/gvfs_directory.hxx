@@ -82,8 +82,7 @@ public:
                           queryPropertyValues( sal_uInt32 nIndex  );
     virtual void          releasePropertyValues( sal_uInt32 nIndex );
     virtual void          close();
-    virtual void          validate()
-        throw( com::sun::star::ucb::ResultSetException );
+    virtual void          validate();
 };
 
 }

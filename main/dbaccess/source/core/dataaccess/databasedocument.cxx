@@ -226,7 +226,7 @@ ODatabaseDocument::~ODatabaseDocument()
     delete m_pEventContainer, m_pEventContainer = NULL;
 }
 // -----------------------------------------------------------------------------
-Any SAL_CALL ODatabaseDocument::queryInterface( const Type& _rType ) throw (RuntimeException)
+Any SAL_CALL ODatabaseDocument::queryInterface( const Type& _rType )
 {
     // strip XEmbeddedScripts and XScriptInvocationContext if we have any form/report
     // which already contains macros. In this case, the database document itself is not
@@ -255,7 +255,7 @@ void SAL_CALL ODatabaseDocument::release(  ) throw ()
 	ODatabaseDocument_OfficeDocument::release();
 }
 //------------------------------------------------------------------------------
-Sequence< Type > SAL_CALL ODatabaseDocument::getTypes(	) throw (RuntimeException)
+Sequence< Type > SAL_CALL ODatabaseDocument::getTypes(	)
 {
 	Sequence< Type > aTypes = ::comphelper::concatSequences(
 		ODatabaseDocument_OfficeDocument::getTypes(),
@@ -296,7 +296,7 @@ Sequence< Type > SAL_CALL ODatabaseDocument::getTypes(	) throw (RuntimeException
     return aTypes;
 }
 //------------------------------------------------------------------------------
-Sequence< sal_Int8 > SAL_CALL ODatabaseDocument::getImplementationId(  ) throw (RuntimeException)
+Sequence< sal_Int8 > SAL_CALL ODatabaseDocument::getImplementationId(  )
 {
 	static ::cppu::OImplementationId * pId = 0;
 	if (! pId)
@@ -466,7 +466,7 @@ void ODatabaseDocument::impl_import_nolck_throw( const ::comphelper::ComponentCo
 }
 
 // -----------------------------------------------------------------------------
-void SAL_CALL ODatabaseDocument::initNew(  ) throw (DoubleInitializationException, IOException, Exception, RuntimeException)
+void SAL_CALL ODatabaseDocument::initNew(  )
 {
     // SYNCHRONIZED ->
     DocumentGuard aGuard( *this, DocumentGuard::InitMethod );
@@ -501,7 +501,7 @@ void SAL_CALL ODatabaseDocument::initNew(  ) throw (DoubleInitializationExceptio
 }
 
 // -----------------------------------------------------------------------------
-void SAL_CALL ODatabaseDocument::load( const Sequence< PropertyValue >& _Arguments ) throw (DoubleInitializationException, IOException, Exception, RuntimeException)
+void SAL_CALL ODatabaseDocument::load( const Sequence< PropertyValue >& _Arguments )
 {
     // SYNCHRONIZED ->
     DocumentGuard aGuard( *this, DocumentGuard::InitMethod );
@@ -578,7 +578,7 @@ namespace
 }
 
 // -----------------------------------------------------------------------------
-::sal_Bool SAL_CALL ODatabaseDocument::wasModifiedSinceLastSave() throw ( RuntimeException )
+::sal_Bool SAL_CALL ODatabaseDocument::wasModifiedSinceLastSave()
 {
     DocumentGuard aGuard( *this );
 
@@ -617,7 +617,7 @@ namespace
 }
 
 // -----------------------------------------------------------------------------
-void SAL_CALL ODatabaseDocument::storeToRecoveryFile( const ::rtl::OUString& i_TargetLocation, const Sequence< PropertyValue >& i_MediaDescriptor ) throw ( RuntimeException, IOException, WrappedTargetException )
+void SAL_CALL ODatabaseDocument::storeToRecoveryFile( const ::rtl::OUString& i_TargetLocation, const Sequence< PropertyValue >& i_MediaDescriptor )
 {
     DocumentGuard aGuard( *this );
     ModifyLock aLock( *this );
@@ -654,7 +654,7 @@ void SAL_CALL ODatabaseDocument::storeToRecoveryFile( const ::rtl::OUString& i_T
 }
 
 // -----------------------------------------------------------------------------
-void SAL_CALL ODatabaseDocument::recoverFromFile( const ::rtl::OUString& i_SourceLocation, const ::rtl::OUString& i_SalvagedFile, const Sequence< PropertyValue >& i_MediaDescriptor ) throw ( RuntimeException, IOException, WrappedTargetException )
+void SAL_CALL ODatabaseDocument::recoverFromFile( const ::rtl::OUString& i_SourceLocation, const ::rtl::OUString& i_SalvagedFile, const Sequence< PropertyValue >& i_MediaDescriptor )
 {
     DocumentGuard aGuard( *this, DocumentGuard::InitMethod );
 
@@ -704,7 +704,7 @@ void SAL_CALL ODatabaseDocument::recoverFromFile( const ::rtl::OUString& i_Sourc
 
 // -----------------------------------------------------------------------------
 // XModel
-sal_Bool SAL_CALL ODatabaseDocument::attachResource( const ::rtl::OUString& _rURL, const Sequence< PropertyValue >& _rArguments ) throw (RuntimeException)
+sal_Bool SAL_CALL ODatabaseDocument::attachResource( const ::rtl::OUString& _rURL, const Sequence< PropertyValue >& _rArguments )
 {
     DocumentGuard aGuard( *this, DocumentGuard::MethodUsedDuringInit );
     return impl_attachResource( _rURL, _rArguments, aGuard );
@@ -753,21 +753,21 @@ sal_Bool ODatabaseDocument::impl_attachResource( const ::rtl::OUString& i_rLogic
 }
 
 // -----------------------------------------------------------------------------
-::rtl::OUString SAL_CALL ODatabaseDocument::getURL(  ) throw (RuntimeException)
+::rtl::OUString SAL_CALL ODatabaseDocument::getURL(  )
 {
     DocumentGuard aGuard( *this, DocumentGuard::MethodWithoutInit );
     return m_pImpl->getURL();
 }
 
 // -----------------------------------------------------------------------------
-Sequence< PropertyValue > SAL_CALL ODatabaseDocument::getArgs(  ) throw (RuntimeException)
+Sequence< PropertyValue > SAL_CALL ODatabaseDocument::getArgs(  )
 {
     DocumentGuard aGuard( *this, DocumentGuard::MethodWithoutInit );
     return m_pImpl->getMediaDescriptor().getPropertyValues();
 }
 
 // -----------------------------------------------------------------------------
-void SAL_CALL ODatabaseDocument::connectController( const Reference< XController >& _xController ) throw (RuntimeException)
+void SAL_CALL ODatabaseDocument::connectController( const Reference< XController >& _xController )
 {
     DocumentGuard aGuard( *this );
 
@@ -794,7 +794,7 @@ void SAL_CALL ODatabaseDocument::connectController( const Reference< XController
 }
 
 // -----------------------------------------------------------------------------
-void SAL_CALL ODatabaseDocument::disconnectController( const Reference< XController >& _xController ) throw (RuntimeException)
+void SAL_CALL ODatabaseDocument::disconnectController( const Reference< XController >& _xController )
 {
     bool bNotifyViewClosed = false;
     bool bLastControllerGone = false;
@@ -839,7 +839,7 @@ void SAL_CALL ODatabaseDocument::disconnectController( const Reference< XControl
 }
 
 // -----------------------------------------------------------------------------
-void SAL_CALL ODatabaseDocument::lockControllers(  ) throw (RuntimeException)
+void SAL_CALL ODatabaseDocument::lockControllers(  )
 {
     DocumentGuard aGuard( *this );
 
@@ -847,7 +847,7 @@ void SAL_CALL ODatabaseDocument::lockControllers(  ) throw (RuntimeException)
 }
 
 // -----------------------------------------------------------------------------
-void SAL_CALL ODatabaseDocument::unlockControllers(  ) throw (RuntimeException)
+void SAL_CALL ODatabaseDocument::unlockControllers(  )
 {
     DocumentGuard aGuard( *this );
 
@@ -855,7 +855,7 @@ void SAL_CALL ODatabaseDocument::unlockControllers(  ) throw (RuntimeException)
 }
 
 // -----------------------------------------------------------------------------
-sal_Bool SAL_CALL ODatabaseDocument::hasControllersLocked(  ) throw (RuntimeException)
+sal_Bool SAL_CALL ODatabaseDocument::hasControllersLocked(  )
 {
     DocumentGuard aGuard( *this );
 
@@ -863,7 +863,7 @@ sal_Bool SAL_CALL ODatabaseDocument::hasControllersLocked(  ) throw (RuntimeExce
 }
 
 // -----------------------------------------------------------------------------
-Reference< XController > SAL_CALL ODatabaseDocument::getCurrentController() throw (RuntimeException)
+Reference< XController > SAL_CALL ODatabaseDocument::getCurrentController()
 {
     DocumentGuard aGuard( *this );
 
@@ -871,7 +871,7 @@ Reference< XController > SAL_CALL ODatabaseDocument::getCurrentController() thro
 }
 
 // -----------------------------------------------------------------------------
-void SAL_CALL ODatabaseDocument::setCurrentController( const Reference< XController >& _xController ) throw (NoSuchElementException, RuntimeException)
+void SAL_CALL ODatabaseDocument::setCurrentController( const Reference< XController >& _xController )
 {
     DocumentGuard aGuard( *this );
 
@@ -901,7 +901,7 @@ void SAL_CALL ODatabaseDocument::setCurrentController( const Reference< XControl
 }
 
 // -----------------------------------------------------------------------------
-Reference< XInterface > SAL_CALL ODatabaseDocument::getCurrentSelection(  ) throw (RuntimeException)
+Reference< XInterface > SAL_CALL ODatabaseDocument::getCurrentSelection(  )
 {
     DocumentGuard aGuard( *this );
 
@@ -915,12 +915,12 @@ Reference< XInterface > SAL_CALL ODatabaseDocument::getCurrentSelection(  ) thro
 // -----------------------------------------------------------------------------
 
 // XStorable
-sal_Bool SAL_CALL ODatabaseDocument::hasLocation(  ) throw (RuntimeException)
+sal_Bool SAL_CALL ODatabaseDocument::hasLocation(  )
 {
     return getLocation().getLength() > 0;
 }
 // -----------------------------------------------------------------------------
-::rtl::OUString SAL_CALL ODatabaseDocument::getLocation(  ) throw (RuntimeException)
+::rtl::OUString SAL_CALL ODatabaseDocument::getLocation(  )
 {
     DocumentGuard aGuard( *this, DocumentGuard::MethodWithoutInit );
     return m_pImpl->getURL();
@@ -928,13 +928,13 @@ sal_Bool SAL_CALL ODatabaseDocument::hasLocation(  ) throw (RuntimeException)
         // the location of the file which the document was possibly recovered from (which would be getDocFileLocation)
 }
 // -----------------------------------------------------------------------------
-sal_Bool SAL_CALL ODatabaseDocument::isReadonly(  ) throw (RuntimeException)
+sal_Bool SAL_CALL ODatabaseDocument::isReadonly(  )
 {
     DocumentGuard aGuard( *this, DocumentGuard::MethodWithoutInit );
 	return m_pImpl->m_bDocumentReadOnly;
 }
 // -----------------------------------------------------------------------------
-void SAL_CALL ODatabaseDocument::store(  ) throw (IOException, RuntimeException)
+void SAL_CALL ODatabaseDocument::store(  )
 {
     DocumentGuard aGuard( *this );
 
@@ -985,7 +985,7 @@ void ODatabaseDocument::impl_throwIOExceptionCausedBySave_throw( const Any& i_rE
 
 // -----------------------------------------------------------------------------
 void ODatabaseDocument::impl_storeAs_throw( const ::rtl::OUString& _rURL, const ::comphelper::NamedValueCollection& _rArguments,
-    const StoreType _eType, DocumentGuard& _rGuard ) throw ( IOException, RuntimeException )
+    const StoreType _eType, DocumentGuard& _rGuard )
 {
     OSL_PRECOND( ( _eType == SAVE ) || ( _eType == SAVE_AS ),
         "ODatabaseDocument::impl_storeAs_throw: you introduced a new type which cannot be handled here!" );
@@ -1106,7 +1106,7 @@ Reference< XStorage > ODatabaseDocument::impl_createStorageFor_throw( const ::rt
 }
 
 // -----------------------------------------------------------------------------
-void SAL_CALL ODatabaseDocument::storeAsURL( const ::rtl::OUString& _rURL, const Sequence< PropertyValue >& _rArguments ) throw (IOException, RuntimeException)
+void SAL_CALL ODatabaseDocument::storeAsURL( const ::rtl::OUString& _rURL, const Sequence< PropertyValue >& _rArguments )
 {
     // SYNCHRONIZED ->
     DocumentGuard aGuard( *this, DocumentGuard::MethodWithoutInit );
@@ -1196,7 +1196,7 @@ void ODatabaseDocument::impl_storeToStorage_throw( const Reference< XStorage >& 
 }
 
 // -----------------------------------------------------------------------------
-void SAL_CALL ODatabaseDocument::storeToURL( const ::rtl::OUString& _rURL, const Sequence< PropertyValue >& _rArguments ) throw (IOException, RuntimeException)
+void SAL_CALL ODatabaseDocument::storeToURL( const ::rtl::OUString& _rURL, const Sequence< PropertyValue >& _rArguments )
 {
     DocumentGuard aGuard( *this );
     ModifyLock aLock( *this );
@@ -1239,14 +1239,14 @@ void SAL_CALL ODatabaseDocument::storeToURL( const ::rtl::OUString& _rURL, const
 
 // -----------------------------------------------------------------------------
 // XModifyBroadcaster
-void SAL_CALL ODatabaseDocument::addModifyListener( const Reference< XModifyListener >& _xListener ) throw (RuntimeException)
+void SAL_CALL ODatabaseDocument::addModifyListener( const Reference< XModifyListener >& _xListener )
 {
     DocumentGuard aGuard( *this );
 	m_aModifyListeners.addInterface(_xListener);
 }
 
 // -----------------------------------------------------------------------------
-void SAL_CALL ODatabaseDocument::removeModifyListener( const Reference< XModifyListener >& _xListener ) throw (RuntimeException)
+void SAL_CALL ODatabaseDocument::removeModifyListener( const Reference< XModifyListener >& _xListener )
 {
     DocumentGuard aGuard( *this );
 	m_aModifyListeners.removeInterface(_xListener);
@@ -1254,7 +1254,7 @@ void SAL_CALL ODatabaseDocument::removeModifyListener( const Reference< XModifyL
 
 // -----------------------------------------------------------------------------
 // XModifiable
-sal_Bool SAL_CALL ODatabaseDocument::isModified(  ) throw (RuntimeException)
+sal_Bool SAL_CALL ODatabaseDocument::isModified(  )
 {
     DocumentGuard aGuard( *this );
 
@@ -1262,7 +1262,7 @@ sal_Bool SAL_CALL ODatabaseDocument::isModified(  ) throw (RuntimeException)
 }
 
 // -----------------------------------------------------------------------------
-void SAL_CALL ODatabaseDocument::setModified( sal_Bool _bModified ) throw (PropertyVetoException, RuntimeException)
+void SAL_CALL ODatabaseDocument::setModified( sal_Bool _bModified )
 {
     DocumentGuard aGuard( *this, DocumentGuard::MethodWithoutInit );
     if ( impl_isInitialized() )
@@ -1295,31 +1295,31 @@ void ODatabaseDocument::impl_setModified_nothrow( sal_Bool _bModified, DocumentG
 
 // -----------------------------------------------------------------------------
 // ::com::sun::star::document::XEventBroadcaster
-void SAL_CALL ODatabaseDocument::addEventListener(const uno::Reference< document::XEventListener >& _Listener ) throw (uno::RuntimeException)
+void SAL_CALL ODatabaseDocument::addEventListener(const uno::Reference< document::XEventListener >& _Listener )
 {
     m_aEventNotifier.addLegacyEventListener( _Listener );
 }
 
 // -----------------------------------------------------------------------------
-void SAL_CALL ODatabaseDocument::removeEventListener( const uno::Reference< document::XEventListener >& _Listener ) throw (uno::RuntimeException)
+void SAL_CALL ODatabaseDocument::removeEventListener( const uno::Reference< document::XEventListener >& _Listener )
 {
     m_aEventNotifier.removeLegacyEventListener( _Listener );
 }
 
 // -----------------------------------------------------------------------------
-void SAL_CALL ODatabaseDocument::addDocumentEventListener( const Reference< XDocumentEventListener >& _Listener ) throw (RuntimeException)
+void SAL_CALL ODatabaseDocument::addDocumentEventListener( const Reference< XDocumentEventListener >& _Listener )
 {
     m_aEventNotifier.addDocumentEventListener( _Listener );
 }
 
 // -----------------------------------------------------------------------------
-void SAL_CALL ODatabaseDocument::removeDocumentEventListener( const Reference< XDocumentEventListener >& _Listener ) throw (RuntimeException)
+void SAL_CALL ODatabaseDocument::removeDocumentEventListener( const Reference< XDocumentEventListener >& _Listener )
 {
     m_aEventNotifier.removeDocumentEventListener( _Listener );
 }
 
 // -----------------------------------------------------------------------------
-void SAL_CALL ODatabaseDocument::notifyDocumentEvent( const ::rtl::OUString& _EventName, const Reference< XController2 >& _ViewController, const Any& _Supplement ) throw (IllegalArgumentException, NoSupportException, RuntimeException)
+void SAL_CALL ODatabaseDocument::notifyDocumentEvent( const ::rtl::OUString& _EventName, const Reference< XController2 >& _ViewController, const Any& _Supplement )
 {
     if ( !_EventName.getLength() )
         throw IllegalArgumentException( ::rtl::OUString(), *this, 1 );
@@ -1339,20 +1339,20 @@ void SAL_CALL ODatabaseDocument::notifyDocumentEvent( const ::rtl::OUString& _Ev
 }
 
 // -----------------------------------------------------------------------------
-Sequence< PropertyValue > SAL_CALL ODatabaseDocument::getPrinter(  ) throw (RuntimeException)
+Sequence< PropertyValue > SAL_CALL ODatabaseDocument::getPrinter(  )
 {
     DBG_ERROR( "ODatabaseDocument::getPrinter: not supported!" );
 	return Sequence< PropertyValue >();
 }
 
 // -----------------------------------------------------------------------------
-void SAL_CALL ODatabaseDocument::setPrinter( const Sequence< PropertyValue >& /*aPrinter*/ ) throw (IllegalArgumentException, RuntimeException)
+void SAL_CALL ODatabaseDocument::setPrinter( const Sequence< PropertyValue >& /*aPrinter*/ )
 {
     DBG_ERROR( "ODatabaseDocument::setPrinter: not supported!" );
 }
 
 // -----------------------------------------------------------------------------
-void SAL_CALL ODatabaseDocument::print( const Sequence< PropertyValue >& /*xOptions*/ ) throw (IllegalArgumentException, RuntimeException)
+void SAL_CALL ODatabaseDocument::print( const Sequence< PropertyValue >& /*xOptions*/ )
 {
     DBG_ERROR( "ODatabaseDocument::print: not supported!" );
 }
@@ -1465,7 +1465,7 @@ void ODatabaseDocument::impl_disposeControllerFrames_nothrow()
 }
 
 // -----------------------------------------------------------------------------
-void SAL_CALL ODatabaseDocument::close( sal_Bool _bDeliverOwnership ) throw (CloseVetoException, RuntimeException)
+void SAL_CALL ODatabaseDocument::close( sal_Bool _bDeliverOwnership )
 {
     // nearly everything below can/must be done without our mutex locked, the below is just for
     // the checks for being disposed and the like
@@ -1505,25 +1505,25 @@ void SAL_CALL ODatabaseDocument::close( sal_Bool _bDeliverOwnership ) throw (Clo
     // <- SYNCHRONIZED
 }
 // -----------------------------------------------------------------------------
-void SAL_CALL ODatabaseDocument::addCloseListener( const Reference< ::com::sun::star::util::XCloseListener >& Listener ) throw (RuntimeException)
+void SAL_CALL ODatabaseDocument::addCloseListener( const Reference< ::com::sun::star::util::XCloseListener >& Listener )
 {
     DocumentGuard aGuard( *this );
 	m_aCloseListener.addInterface(Listener);
 }
 // -----------------------------------------------------------------------------
-void SAL_CALL ODatabaseDocument::removeCloseListener( const Reference< ::com::sun::star::util::XCloseListener >& Listener ) throw (RuntimeException)
+void SAL_CALL ODatabaseDocument::removeCloseListener( const Reference< ::com::sun::star::util::XCloseListener >& Listener )
 {
     DocumentGuard aGuard( *this );
     m_aCloseListener.removeInterface(Listener);
 }
 // -----------------------------------------------------------------------------
-Reference< XNameAccess > SAL_CALL ODatabaseDocument::getFormDocuments(  ) throw (RuntimeException)
+Reference< XNameAccess > SAL_CALL ODatabaseDocument::getFormDocuments(  )
 {
     DocumentGuard aGuard( *this, DocumentGuard::MethodUsedDuringInit );
     return impl_getDocumentContainer_throw( ODatabaseModelImpl::E_FORM );
 }
 // -----------------------------------------------------------------------------
-Reference< XNameAccess > SAL_CALL ODatabaseDocument::getReportDocuments(  ) throw (RuntimeException)
+Reference< XNameAccess > SAL_CALL ODatabaseDocument::getReportDocuments(  )
 {
     DocumentGuard aGuard( *this, DocumentGuard::MethodUsedDuringInit );
     return impl_getDocumentContainer_throw( ODatabaseModelImpl::E_REPORT );
@@ -1662,7 +1662,7 @@ void ODatabaseDocument::impl_writeStorage_throw( const Reference< XStorage >& _r
 }
 
 // -----------------------------------------------------------------------------
-Reference< XUIConfigurationManager > SAL_CALL ODatabaseDocument::getUIConfigurationManager(  ) throw (RuntimeException)
+Reference< XUIConfigurationManager > SAL_CALL ODatabaseDocument::getUIConfigurationManager(  )
 {
     DocumentGuard aGuard( *this );
 
@@ -1700,7 +1700,7 @@ Reference< XUIConfigurationManager > SAL_CALL ODatabaseDocument::getUIConfigurat
     return m_xUIConfigurationManager;
 }
 // -----------------------------------------------------------------------------
-Reference< XStorage > SAL_CALL ODatabaseDocument::getDocumentSubStorage( const ::rtl::OUString& aStorageName, sal_Int32 nMode ) throw (RuntimeException)
+Reference< XStorage > SAL_CALL ODatabaseDocument::getDocumentSubStorage( const ::rtl::OUString& aStorageName, sal_Int32 nMode )
 {
     DocumentGuard aGuard( *this );
 
@@ -1708,7 +1708,7 @@ Reference< XStorage > SAL_CALL ODatabaseDocument::getDocumentSubStorage( const :
     return xStorageAccess->getDocumentSubStorage( aStorageName, nMode );
 }
 // -----------------------------------------------------------------------------
-Sequence< ::rtl::OUString > SAL_CALL ODatabaseDocument::getDocumentSubStoragesNames(  ) throw (::com::sun::star::io::IOException, RuntimeException)
+Sequence< ::rtl::OUString > SAL_CALL ODatabaseDocument::getDocumentSubStoragesNames(  )
 {
     Reference< XDocumentSubStorageSupplier > xStorageAccess( m_pImpl->getDocumentSubStorageSupplier() );
     return xStorageAccess->getDocumentSubStoragesNames();
@@ -1797,35 +1797,35 @@ void ODatabaseDocument::disposing()
 }
 // -----------------------------------------------------------------------------
 // XComponent
-void SAL_CALL ODatabaseDocument::dispose(  ) throw (RuntimeException)
+void SAL_CALL ODatabaseDocument::dispose(  )
 {
     ::cppu::WeakComponentImplHelperBase::dispose();
 }
 // -----------------------------------------------------------------------------
-void SAL_CALL ODatabaseDocument::addEventListener( const Reference< lang::XEventListener >& _xListener ) throw (RuntimeException)
+void SAL_CALL ODatabaseDocument::addEventListener( const Reference< lang::XEventListener >& _xListener )
 {
 	::cppu::WeakComponentImplHelperBase::addEventListener( _xListener );
 }
 // -----------------------------------------------------------------------------
-void SAL_CALL ODatabaseDocument::removeEventListener( const Reference< lang::XEventListener >& _xListener ) throw (RuntimeException)
+void SAL_CALL ODatabaseDocument::removeEventListener( const Reference< lang::XEventListener >& _xListener )
 {
 	::cppu::WeakComponentImplHelperBase::removeEventListener( _xListener );
 }
 // XServiceInfo
 //------------------------------------------------------------------------------
-rtl::OUString ODatabaseDocument::getImplementationName(  ) throw(RuntimeException)
+rtl::OUString ODatabaseDocument::getImplementationName(  )
 {
 	return getImplementationName_static();
 }
 
 //------------------------------------------------------------------------------
-rtl::OUString ODatabaseDocument::getImplementationName_static(  ) throw(RuntimeException)
+rtl::OUString ODatabaseDocument::getImplementationName_static(  )
 {
 	return rtl::OUString::createFromAscii("com.sun.star.comp.dba.ODatabaseDocument");
 }
 
 //------------------------------------------------------------------------------
-Sequence< ::rtl::OUString > ODatabaseDocument::getSupportedServiceNames(  ) throw (RuntimeException)
+Sequence< ::rtl::OUString > ODatabaseDocument::getSupportedServiceNames(  )
 {
 	return getSupportedServiceNames_static();
 }
@@ -1843,7 +1843,7 @@ Reference< XInterface > ODatabaseDocument::Create( const Reference< XComponentCo
 }
 
 //------------------------------------------------------------------------------
-Sequence< ::rtl::OUString > ODatabaseDocument::getSupportedServiceNames_static(  ) throw (RuntimeException)
+Sequence< ::rtl::OUString > ODatabaseDocument::getSupportedServiceNames_static(  )
 {
 	Sequence< ::rtl::OUString > aSNS( 2 );
 	aSNS[0] = ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.sdb.OfficeDatabaseDocument"));
@@ -1852,19 +1852,19 @@ Sequence< ::rtl::OUString > ODatabaseDocument::getSupportedServiceNames_static( 
 }
 
 //------------------------------------------------------------------------------
-sal_Bool ODatabaseDocument::supportsService( const ::rtl::OUString& _rServiceName ) throw (RuntimeException)
+sal_Bool ODatabaseDocument::supportsService( const ::rtl::OUString& _rServiceName )
 {
 	return ::comphelper::findValue(getSupportedServiceNames(), _rServiceName, sal_True).getLength() != 0;
 }
 // -----------------------------------------------------------------------------
-Reference< XDataSource > SAL_CALL ODatabaseDocument::getDataSource() throw (RuntimeException)
+Reference< XDataSource > SAL_CALL ODatabaseDocument::getDataSource()
 {
     DocumentGuard aGuard( *this, DocumentGuard::MethodWithoutInit );
     return m_pImpl->getOrCreateDataSource();
 }
 
 // -----------------------------------------------------------------------------
-void SAL_CALL ODatabaseDocument::loadFromStorage( const Reference< XStorage >& /*xStorage*/, const Sequence< PropertyValue >& /*aMediaDescriptor*/ ) throw (IllegalArgumentException, DoubleInitializationException, IOException, Exception, RuntimeException)
+void SAL_CALL ODatabaseDocument::loadFromStorage( const Reference< XStorage >& /*xStorage*/, const Sequence< PropertyValue >& /*aMediaDescriptor*/ )
 {
     DocumentGuard aGuard( *this );
 
@@ -1875,14 +1875,14 @@ void SAL_CALL ODatabaseDocument::loadFromStorage( const Reference< XStorage >& /
 }
 
 // -----------------------------------------------------------------------------
-void SAL_CALL ODatabaseDocument::storeToStorage( const Reference< XStorage >& _rxStorage, const Sequence< PropertyValue >& _rMediaDescriptor ) throw (IllegalArgumentException, IOException, Exception, RuntimeException)
+void SAL_CALL ODatabaseDocument::storeToStorage( const Reference< XStorage >& _rxStorage, const Sequence< PropertyValue >& _rMediaDescriptor )
 {
     DocumentGuard aGuard( *this );
     impl_storeToStorage_throw( _rxStorage, _rMediaDescriptor, aGuard );
 }
 
 // -----------------------------------------------------------------------------
-void SAL_CALL ODatabaseDocument::switchToStorage( const Reference< XStorage >& _rxNewRootStorage ) throw (IllegalArgumentException, IOException, Exception, RuntimeException)
+void SAL_CALL ODatabaseDocument::switchToStorage( const Reference< XStorage >& _rxNewRootStorage )
 {
     DocumentGuard aGuard( *this );
 
@@ -1893,56 +1893,56 @@ void SAL_CALL ODatabaseDocument::switchToStorage( const Reference< XStorage >& _
 }
 
 // -----------------------------------------------------------------------------
-Reference< XStorage > SAL_CALL ODatabaseDocument::getDocumentStorage(  ) throw (IOException, Exception, RuntimeException)
+Reference< XStorage > SAL_CALL ODatabaseDocument::getDocumentStorage(  )
 {
     DocumentGuard aGuard( *this );
     return m_pImpl->getOrCreateRootStorage();
 }
 
 // -----------------------------------------------------------------------------
-void SAL_CALL ODatabaseDocument::addStorageChangeListener( const Reference< XStorageChangeListener >& _Listener ) throw (RuntimeException)
+void SAL_CALL ODatabaseDocument::addStorageChangeListener( const Reference< XStorageChangeListener >& _Listener )
 {
     DocumentGuard aGuard( *this );
     m_aStorageListeners.addInterface( _Listener );
 }
 
 // -----------------------------------------------------------------------------
-void SAL_CALL ODatabaseDocument::removeStorageChangeListener( const Reference< XStorageChangeListener >& _Listener ) throw (RuntimeException)
+void SAL_CALL ODatabaseDocument::removeStorageChangeListener( const Reference< XStorageChangeListener >& _Listener )
 {
     DocumentGuard aGuard( *this );
     m_aStorageListeners.addInterface( _Listener );
 }
 
 // -----------------------------------------------------------------------------
-Reference< XStorageBasedLibraryContainer > SAL_CALL ODatabaseDocument::getBasicLibraries() throw (RuntimeException)
+Reference< XStorageBasedLibraryContainer > SAL_CALL ODatabaseDocument::getBasicLibraries()
 {
     DocumentGuard aGuard( *this, DocumentGuard::MethodUsedDuringInit );
     return m_pImpl->getLibraryContainer( true );
 }
 
 // -----------------------------------------------------------------------------
-Reference< XStorageBasedLibraryContainer > SAL_CALL ODatabaseDocument::getDialogLibraries() throw (RuntimeException)
+Reference< XStorageBasedLibraryContainer > SAL_CALL ODatabaseDocument::getDialogLibraries()
 {
     DocumentGuard aGuard( *this );
     return m_pImpl->getLibraryContainer( false );
 }
 
 // -----------------------------------------------------------------------------
-::sal_Bool SAL_CALL ODatabaseDocument::getAllowMacroExecution() throw (RuntimeException)
+::sal_Bool SAL_CALL ODatabaseDocument::getAllowMacroExecution()
 {
     DocumentGuard aGuard( *this );
     return m_pImpl->adjustMacroMode_AutoReject();
 }
 
 // -----------------------------------------------------------------------------
-Reference< XEmbeddedScripts > SAL_CALL ODatabaseDocument::getScriptContainer() throw (RuntimeException)
+Reference< XEmbeddedScripts > SAL_CALL ODatabaseDocument::getScriptContainer()
 {
     DocumentGuard aGuard( *this );
     return this;
 }
 
 // -----------------------------------------------------------------------------
-Reference< provider::XScriptProvider > SAL_CALL ODatabaseDocument::getScriptProvider(  ) throw (RuntimeException)
+Reference< provider::XScriptProvider > SAL_CALL ODatabaseDocument::getScriptProvider(  )
 {
     DocumentGuard aGuard( *this );
 
@@ -1964,14 +1964,14 @@ Reference< provider::XScriptProvider > SAL_CALL ODatabaseDocument::getScriptProv
 }
 
 // -----------------------------------------------------------------------------
-Reference< XNameReplace > SAL_CALL ODatabaseDocument::getEvents(  ) throw (RuntimeException)
+Reference< XNameReplace > SAL_CALL ODatabaseDocument::getEvents(  )
 {
     DocumentGuard aGuard( *this, DocumentGuard::MethodUsedDuringInit );
     return m_pEventContainer;
 }
 
 // -----------------------------------------------------------------------------
-void SAL_CALL ODatabaseDocument::disposing( const ::com::sun::star::lang::EventObject& Source ) throw(RuntimeException)
+void SAL_CALL ODatabaseDocument::disposing( const ::com::sun::star::lang::EventObject& Source )
 {
 	if ( m_pImpl.is() )
 		m_pImpl->disposing(Source);
@@ -1992,7 +1992,7 @@ struct CreateAny : public ::std::unary_function< Reference<XController>, Any>
 };
 
 // XModel2
-Reference< XEnumeration > SAL_CALL ODatabaseDocument::getControllers(  ) throw (RuntimeException)
+Reference< XEnumeration > SAL_CALL ODatabaseDocument::getControllers(  )
 {
     DocumentGuard aGuard( *this );
     uno::Sequence< Any> aController( m_aControllers.size() );
@@ -2000,14 +2000,14 @@ Reference< XEnumeration > SAL_CALL ODatabaseDocument::getControllers(  ) throw (
     return new ::comphelper::OAnyEnumeration(aController);
 }
 // -----------------------------------------------------------------------------
-Sequence< ::rtl::OUString > SAL_CALL ODatabaseDocument::getAvailableViewControllerNames(  ) throw (RuntimeException)
+Sequence< ::rtl::OUString > SAL_CALL ODatabaseDocument::getAvailableViewControllerNames(  )
 {
     Sequence< ::rtl::OUString > aNames(1);
     aNames[0] = SERVICE_SDB_APPLICATIONCONTROLLER;
     return aNames;
 }
 // -----------------------------------------------------------------------------
-Reference< XController2 > SAL_CALL ODatabaseDocument::createDefaultViewController( const Reference< XFrame >& _Frame ) throw (IllegalArgumentException, Exception, RuntimeException)
+Reference< XController2 > SAL_CALL ODatabaseDocument::createDefaultViewController( const Reference< XFrame >& _Frame )
 {
     return createViewController(
         ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Default" ) ),
@@ -2017,7 +2017,7 @@ Reference< XController2 > SAL_CALL ODatabaseDocument::createDefaultViewControlle
 }
 
 // -----------------------------------------------------------------------------
-Reference< XController2 > SAL_CALL ODatabaseDocument::createViewController( const ::rtl::OUString& _ViewName, const Sequence< PropertyValue >& _Arguments, const Reference< XFrame >& _Frame ) throw (IllegalArgumentException, Exception, RuntimeException)
+Reference< XController2 > SAL_CALL ODatabaseDocument::createViewController( const ::rtl::OUString& _ViewName, const Sequence< PropertyValue >& _Arguments, const Reference< XFrame >& _Frame )
 {
     if ( !_ViewName.equalsAscii( "Default" ) && !_ViewName.equalsAscii( "Preview" ) )
         throw IllegalArgumentException( ::rtl::OUString(), *this, 1 );
@@ -2099,7 +2099,6 @@ uno::Reference< frame::XUntitledNumbers > ODatabaseDocument::impl_getUntitledHel
 //=============================================================================
 // css.frame.XTitle
 ::rtl::OUString SAL_CALL ODatabaseDocument::getTitle()
-    throw (uno::RuntimeException)
 {
     // SYNCHRONIZED ->
     DocumentGuard aGuard( *this, DocumentGuard::MethodUsedDuringInit );
@@ -2109,7 +2108,6 @@ uno::Reference< frame::XUntitledNumbers > ODatabaseDocument::impl_getUntitledHel
 //=============================================================================
 // css.frame.XTitle
 void SAL_CALL ODatabaseDocument::setTitle( const ::rtl::OUString& sTitle )
-    throw (uno::RuntimeException)
 {
     // SYNCHRONIZED ->
     DocumentGuard aGuard( *this );
@@ -2121,7 +2119,6 @@ void SAL_CALL ODatabaseDocument::setTitle( const ::rtl::OUString& sTitle )
 //=============================================================================
 // css.frame.XTitleChangeBroadcaster
 void SAL_CALL ODatabaseDocument::addTitleChangeListener( const uno::Reference< frame::XTitleChangeListener >& xListener )
-    throw (uno::RuntimeException)
 {
     // SYNCHRONIZED ->
     DocumentGuard aGuard( *this );
@@ -2133,7 +2130,6 @@ void SAL_CALL ODatabaseDocument::addTitleChangeListener( const uno::Reference< f
 //=============================================================================
 // css.frame.XTitleChangeBroadcaster
 void SAL_CALL ODatabaseDocument::removeTitleChangeListener( const uno::Reference< frame::XTitleChangeListener >& xListener )
-    throw (uno::RuntimeException)
 {
     // SYNCHRONIZED ->
     DocumentGuard aGuard( *this );
@@ -2145,8 +2141,6 @@ void SAL_CALL ODatabaseDocument::removeTitleChangeListener( const uno::Reference
 //=============================================================================
 // css.frame.XUntitledNumbers
 ::sal_Int32 SAL_CALL ODatabaseDocument::leaseNumber( const uno::Reference< uno::XInterface >& xComponent )
-    throw (lang::IllegalArgumentException,
-           uno::RuntimeException         )
 {
     DocumentGuard aGuard( *this );
     return impl_getUntitledHelper_throw(xComponent)->leaseNumber (xComponent);
@@ -2155,8 +2149,6 @@ void SAL_CALL ODatabaseDocument::removeTitleChangeListener( const uno::Reference
 //=============================================================================
 // css.frame.XUntitledNumbers
 void SAL_CALL ODatabaseDocument::releaseNumber( ::sal_Int32 nNumber )
-    throw (lang::IllegalArgumentException,
-           uno::RuntimeException         )
 {
     DocumentGuard aGuard( *this );
     impl_getUntitledHelper_throw()->releaseNumber (nNumber);
@@ -2165,8 +2157,6 @@ void SAL_CALL ODatabaseDocument::releaseNumber( ::sal_Int32 nNumber )
 //=============================================================================
 // css.frame.XUntitledNumbers
 void SAL_CALL ODatabaseDocument::releaseNumberForComponent( const uno::Reference< uno::XInterface >& xComponent )
-    throw (lang::IllegalArgumentException,
-           uno::RuntimeException         )
 {
     DocumentGuard aGuard( *this );
     impl_getUntitledHelper_throw(xComponent)->releaseNumberForComponent (xComponent);
@@ -2174,7 +2164,7 @@ void SAL_CALL ODatabaseDocument::releaseNumberForComponent( const uno::Reference
 
 //=============================================================================
 // css.frame.XUntitledNumbers
-::rtl::OUString SAL_CALL ODatabaseDocument::getUntitledPrefix()    throw (uno::RuntimeException)
+::rtl::OUString SAL_CALL ODatabaseDocument::getUntitledPrefix()
 {
     return ::rtl::OUString();/*RTL_CONSTASCII_USTRINGPARAM(" : "));*/
 }

@@ -44,8 +44,6 @@ using namespace com::sun::star;
 namespace {
     const SwWrongList* getTextMarkupList( const SwTxtNode& rTxtNode,
                                           const sal_Int32 nTextMarkupType )
-        throw (::com::sun::star::lang::IllegalArgumentException,
-               ::com::sun::star::uno::RuntimeException)
     {
         const SwWrongList* pTextMarkupList( 0 );
         switch ( nTextMarkupType )
@@ -99,8 +97,6 @@ SwTextMarkupHelper::SwTextMarkupHelper( const SwAccessiblePortionData& rPortionD
 // <--
 
 sal_Int32 SwTextMarkupHelper::getTextMarkupCount( const sal_Int32 nTextMarkupType )
-        throw (::com::sun::star::lang::IllegalArgumentException,
-               ::com::sun::star::uno::RuntimeException)
 {
     sal_Int32 nTextMarkupCount( 0 );
 
@@ -120,9 +116,6 @@ sal_Int32 SwTextMarkupHelper::getTextMarkupCount( const sal_Int32 nTextMarkupTyp
 ::com::sun::star::accessibility::TextSegment
         SwTextMarkupHelper::getTextMarkup( const sal_Int32 nTextMarkupIndex,
                                            const sal_Int32 nTextMarkupType )
-        throw (::com::sun::star::lang::IndexOutOfBoundsException,
-               ::com::sun::star::lang::IllegalArgumentException,
-               ::com::sun::star::uno::RuntimeException)
 {
     if ( nTextMarkupIndex >= getTextMarkupCount( nTextMarkupType ) ||
          nTextMarkupIndex < 0 )
@@ -168,9 +161,6 @@ sal_Int32 SwTextMarkupHelper::getTextMarkupCount( const sal_Int32 nTextMarkupTyp
 ::com::sun::star::uno::Sequence< ::com::sun::star::accessibility::TextSegment >
         SwTextMarkupHelper::getTextMarkupAtIndex( const sal_Int32 nCharIndex,
                                                   const sal_Int32 nTextMarkupType )
-        throw (::com::sun::star::lang::IndexOutOfBoundsException,
-               ::com::sun::star::lang::IllegalArgumentException,
-               ::com::sun::star::uno::RuntimeException)
 {
     // assumption:
     // value of <nCharIndex> is in range [0..length of accessible text)

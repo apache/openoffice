@@ -62,13 +62,13 @@ namespace drawinglayer
 			return Primitive3DSequence();
 		}
 
-		Primitive3DSequence SAL_CALL BasePrimitive3D::getDecomposition( const uno::Sequence< beans::PropertyValue >& rViewParameters ) throw ( uno::RuntimeException )
+		Primitive3DSequence SAL_CALL BasePrimitive3D::getDecomposition( const uno::Sequence< beans::PropertyValue >& rViewParameters )
 		{
 			const geometry::ViewInformation3D aViewInformation(rViewParameters);
 			return get3DDecomposition(rViewParameters);
 		}
 
-		com::sun::star::geometry::RealRectangle3D SAL_CALL BasePrimitive3D::getRange( const uno::Sequence< beans::PropertyValue >& rViewParameters ) throw ( uno::RuntimeException )
+		com::sun::star::geometry::RealRectangle3D SAL_CALL BasePrimitive3D::getRange( const uno::Sequence< beans::PropertyValue >& rViewParameters )
 		{
 			const geometry::ViewInformation3D aViewInformation(rViewParameters);
 			return basegfx::unotools::rectangle3DFromB3DRectangle(getB3DRange(aViewInformation));

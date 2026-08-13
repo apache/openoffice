@@ -124,48 +124,37 @@ public:
 	// XComponent
 	//-----------------------------------------------------------------
 	virtual void SAL_CALL
-	dispose() throw( RUNTIME_EXCEPTION );
+	dispose();
 
     virtual void SAL_CALL
-	addEventListener( const REFERENCE< XEVENTLISTENER >& Listener )
-		throw( RUNTIME_EXCEPTION );
+	addEventListener( const REFERENCE< XEVENTLISTENER >& Listener );
 
     virtual void SAL_CALL
-	removeEventListener( const REFERENCE< XEVENTLISTENER >& Listener )
-		throw( RUNTIME_EXCEPTION );
+	removeEventListener( const REFERENCE< XEVENTLISTENER >& Listener );
 
 	//-----------------------------------------------------------------
 	// XDynamicResultSet
 	//-----------------------------------------------------------------
     virtual REFERENCE< XRESULTSET > SAL_CALL
-	getStaticResultSet(  )
-		throw( LISTENERALREADYSETEXCEPTION, RUNTIMEEXCEPTION );
+	getStaticResultSet(  );
 
 	virtual void SAL_CALL
-	setListener( const REFERENCE< XDYNAMICRESULTSETLISTENER >& Listener )
-		throw( LISTENERALREADYSETEXCEPTION, RUNTIMEEXCEPTION );
+	setListener( const REFERENCE< XDYNAMICRESULTSETLISTENER >& Listener );
 
 	virtual void SAL_CALL
-	connectToCache( const REFERENCE< XDYNAMICRESULTSET > & xCache )
-		throw( LISTENERALREADYSETEXCEPTION,
-			   com::sun::star::ucb::AlreadyInitializedException,
-			   com::sun::star::ucb::ServiceNotFoundException,
-			   RUNTIMEEXCEPTION );
+	connectToCache( const REFERENCE< XDYNAMICRESULTSET > & xCache );
 
     virtual sal_Int16 SAL_CALL
-	getCapabilities()
-		throw( RUNTIMEEXCEPTION );
+	getCapabilities();
 
 	//-----------------------------------------------------------------
 	// own methods:
 	//-----------------------------------------------------------------
     virtual void SAL_CALL
-	impl_disposing( const EVENTOBJECT& Source )
-		throw( RUNTIMEEXCEPTION );
+	impl_disposing( const EVENTOBJECT& Source );
 
     virtual void SAL_CALL
-	impl_notify( const ::com::sun::star::ucb::ListEvent& Changes )
-		throw( RUNTIMEEXCEPTION );
+	impl_notify( const ::com::sun::star::ucb::ListEvent& Changes );
 };
 
 //-----------------------------------------------------------------------------
@@ -190,15 +179,13 @@ public:
 	// XEventListener ( base of XDynamicResultSetListener )
 	//-----------------------------------------------------------------
     virtual void SAL_CALL
-	disposing( const EVENTOBJECT& Source )
-		throw( RUNTIMEEXCEPTION );
+	disposing( const EVENTOBJECT& Source );
 
 	//-----------------------------------------------------------------
 	// XDynamicResultSetListener
 	//-----------------------------------------------------------------
     virtual void SAL_CALL
-	notify( const ::com::sun::star::ucb::ListEvent& Changes )
-		throw( RUNTIMEEXCEPTION );
+	notify( const ::com::sun::star::ucb::ListEvent& Changes );
 
 	//-----------------------------------------------------------------
 	// own methods:
@@ -246,8 +233,7 @@ public:
 	createSortedDynamicResultSet(
 				const REFERENCE< XDYNAMICRESULTSET > & Source,
 				const SEQUENCE< NUMBERED_SORTINGINFO > & Info,
-				const REFERENCE< XANYCOMPAREFACTORY > & CompareFactory )
-		throw( RUNTIMEEXCEPTION );
+				const REFERENCE< XANYCOMPAREFACTORY > & CompareFactory );
 };
 
 #endif

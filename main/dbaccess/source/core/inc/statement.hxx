@@ -100,10 +100,10 @@ public:
 
 
 // ::com::sun::star::lang::XTypeProvider
-	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes() throw (::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes();
 
 // ::com::sun::star::uno::XInterface
-	virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType ) throw (::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType );
 	virtual void SAL_CALL acquire() throw();
     virtual void SAL_CALL release() throw();
 
@@ -111,7 +111,7 @@ public:
 	virtual void SAL_CALL disposing(void);
 
 // com::sun::star::beans::XPropertySet
-	virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  ) throw(::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  );
 
 // comphelper::OPropertyArrayUsageHelper
 	virtual ::cppu::IPropertyArrayHelper* createArrayHelper( ) const;
@@ -123,36 +123,34 @@ public:
 							::com::sun::star::uno::Any & rConvertedValue,
 							::com::sun::star::uno::Any & rOldValue,
 							sal_Int32 nHandle,
-							const ::com::sun::star::uno::Any& rValue )
-								throw (::com::sun::star::lang::IllegalArgumentException);
+							const ::com::sun::star::uno::Any& rValue );
 	virtual void SAL_CALL setFastPropertyValue_NoBroadcast(
 								sal_Int32 nHandle,
 								const ::com::sun::star::uno::Any& rValue
-												 )
-												 throw (::com::sun::star::uno::Exception);
+												 );
 	virtual void SAL_CALL getFastPropertyValue( ::com::sun::star::uno::Any& rValue, sal_Int32 nHandle ) const;
 
 // ::com::sun::star::sdbc::XWarningsSupplier
-    virtual ::com::sun::star::uno::Any SAL_CALL getWarnings(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL clearWarnings(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Any SAL_CALL getWarnings(  );
+    virtual void SAL_CALL clearWarnings(  );
 
 // ::com::sun::star::util::XCancellable
-	virtual void SAL_CALL cancel(  ) throw(::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL cancel(  );
 
 // ::com::sun::star::sdbc::XCloseable
-	virtual void SAL_CALL close(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL close(  );
 
 // ::com::sun::star::sdbc::XMultipleResults
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XResultSet > SAL_CALL getResultSet(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-    virtual sal_Int32 SAL_CALL getUpdateCount(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL getMoreResults(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XResultSet > SAL_CALL getResultSet(  );
+    virtual sal_Int32 SAL_CALL getUpdateCount(  );
+    virtual sal_Bool SAL_CALL getMoreResults(  );
 
 // ::com::sun::star::sdbc::XPreparedBatchExecution
-    virtual void SAL_CALL addBatch(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL clearBatch(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< sal_Int32 > SAL_CALL executeBatch(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL addBatch(  );
+    virtual void SAL_CALL clearBatch(  );
+    virtual ::com::sun::star::uno::Sequence< sal_Int32 > SAL_CALL executeBatch(  );
 // ::com::sun::star::sdbc::XGeneratedResultSet
-	virtual ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XResultSet > SAL_CALL getGeneratedValues(  ) throw (::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XResultSet > SAL_CALL getGeneratedValues(  );
 
 // Helper
 	void disposeResultSet();
@@ -184,23 +182,23 @@ public:
     DECLARE_XTYPEPROVIDER()
 
 // ::com::sun::star::lang::XServiceInfo
-    virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw(::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw(::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw(::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getImplementationName(  );
+    virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
 // ::com::sun::star::sdbc::XStatement
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XResultSet > SAL_CALL executeQuery( const ::rtl::OUString& sql ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-    virtual sal_Int32 SAL_CALL executeUpdate( const ::rtl::OUString& sql ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL execute( const ::rtl::OUString& sql ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XConnection > SAL_CALL getConnection(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XResultSet > SAL_CALL executeQuery( const ::rtl::OUString& sql );
+    virtual sal_Int32 SAL_CALL executeUpdate( const ::rtl::OUString& sql );
+    virtual sal_Bool SAL_CALL execute( const ::rtl::OUString& sql );
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XConnection > SAL_CALL getConnection(  );
 
     // OComponentHelper
 	virtual void SAL_CALL disposing();
 
     // XBatchExecution
-	virtual void SAL_CALL addBatch( const ::rtl::OUString& sql ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL clearBatch(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-	virtual ::com::sun::star::uno::Sequence< sal_Int32 > SAL_CALL executeBatch(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL addBatch( const ::rtl::OUString& sql );
+	virtual void SAL_CALL clearBatch(  );
+	virtual ::com::sun::star::uno::Sequence< sal_Int32 > SAL_CALL executeBatch(  );
 
     using OStatementBase::addBatch;
 

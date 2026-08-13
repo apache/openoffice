@@ -39,21 +39,21 @@ class PagesImpl : public PagesImpl_Base
 	sal_Int32 mnPages;
 public:
 	PagesImpl( sal_Int32 nPages ) : mnPages( nPages ) {}
-	virtual ::sal_Int32 SAL_CALL getCount() throw (uno::RuntimeException) { return mnPages; }
-	virtual uno::Any SAL_CALL getByIndex( ::sal_Int32 Index ) throw (lang::IndexOutOfBoundsException, lang::WrappedTargetException, ::uno::RuntimeException)
+	virtual ::sal_Int32 SAL_CALL getCount() { return mnPages; }
+	virtual uno::Any SAL_CALL getByIndex( ::sal_Int32 Index )
 	{
 		if ( Index < 0 || Index > mnPages )
 			throw lang::IndexOutOfBoundsException();
 		return uno::makeAny( uno::Reference< uno::XInterface >() );
 	}
 	// XElementAccess
-	virtual uno::Type SAL_CALL getElementType() throw (uno::RuntimeException)
+	virtual uno::Type SAL_CALL getElementType()
 	{
 		// no Pages object yet #FIXME
 		//return msforms::XPage::static_type(0);
 		return uno::XInterface::static_type(0);
 	}
-	virtual ::sal_Bool SAL_CALL hasElements( ) throw (uno::RuntimeException)
+	virtual ::sal_Bool SAL_CALL hasElements( )
 	{
 		return ( mnPages > 0 );
 	}
@@ -80,7 +80,7 @@ ScVbaMultiPage::ScVbaMultiPage(
 
 // Attributes
 sal_Int32 SAL_CALL
-ScVbaMultiPage::getValue() throw (css::uno::RuntimeException)
+ScVbaMultiPage::getValue()
 {
     sal_Int32 nValue = 0;
     m_xProps->getPropertyValue( SVALUE ) >>= nValue;
@@ -88,7 +88,7 @@ ScVbaMultiPage::getValue() throw (css::uno::RuntimeException)
 }
 
 void SAL_CALL
-ScVbaMultiPage::setValue( const sal_Int32 _value ) throw (::com::sun::star::uno::RuntimeException)
+ScVbaMultiPage::setValue( const sal_Int32 _value )
 {
     // track change in dialog ( dialog value is 1 based, 0 is a special value )
     m_xProps->setPropertyValue( SVALUE, uno::makeAny( _value ) );
@@ -104,7 +104,7 @@ ScVbaMultiPage::getServiceImplName()
 }
 
 uno::Any SAL_CALL
-ScVbaMultiPage::Pages( const uno::Any& index ) throw (uno::RuntimeException)
+ScVbaMultiPage::Pages( const uno::Any& index )
 {
 	sal_Int32 nValue = 0;
 	m_xProps->getPropertyValue( SVALUEMAX ) >>= nValue;

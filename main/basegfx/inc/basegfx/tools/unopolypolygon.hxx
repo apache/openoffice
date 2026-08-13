@@ -50,30 +50,30 @@ namespace unotools
         explicit UnoPolyPolygon( const B2DPolyPolygon& );
 
         // XPolyPolygon2D
-        virtual void SAL_CALL addPolyPolygon( const ::com::sun::star::geometry::RealPoint2D& position, const ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XPolyPolygon2D >& polyPolygon ) throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
-        virtual ::sal_Int32 SAL_CALL getNumberOfPolygons(  ) throw (::com::sun::star::uno::RuntimeException);
-        virtual ::sal_Int32 SAL_CALL getNumberOfPolygonPoints( ::sal_Int32 polygon ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
-        virtual ::com::sun::star::rendering::FillRule SAL_CALL getFillRule(  ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL setFillRule( ::com::sun::star::rendering::FillRule fillRule ) throw (::com::sun::star::uno::RuntimeException);
-        virtual ::sal_Bool SAL_CALL isClosed( ::sal_Int32 index ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL setClosed( ::sal_Int32 index, ::sal_Bool closedState ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL addPolyPolygon( const ::com::sun::star::geometry::RealPoint2D& position, const ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XPolyPolygon2D >& polyPolygon );
+        virtual ::sal_Int32 SAL_CALL getNumberOfPolygons(  );
+        virtual ::sal_Int32 SAL_CALL getNumberOfPolygonPoints( ::sal_Int32 polygon );
+        virtual ::com::sun::star::rendering::FillRule SAL_CALL getFillRule(  );
+        virtual void SAL_CALL setFillRule( ::com::sun::star::rendering::FillRule fillRule );
+        virtual ::sal_Bool SAL_CALL isClosed( ::sal_Int32 index );
+        virtual void SAL_CALL setClosed( ::sal_Int32 index, ::sal_Bool closedState );
 
         // XLinePolyPolygon2D
-        virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< ::com::sun::star::geometry::RealPoint2D > > SAL_CALL getPoints( ::sal_Int32 nPolygonIndex, ::sal_Int32 nNumberOfPolygons, ::sal_Int32 nPointIndex, ::sal_Int32 nNumberOfPoints ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL setPoints( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< ::com::sun::star::geometry::RealPoint2D > >& points, ::sal_Int32 nPolygonIndex ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
-        virtual ::com::sun::star::geometry::RealPoint2D SAL_CALL getPoint( ::sal_Int32 nPolygonIndex, ::sal_Int32 nPointIndex ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL setPoint( const ::com::sun::star::geometry::RealPoint2D& point, ::sal_Int32 nPolygonIndex, ::sal_Int32 nPointIndex ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< ::com::sun::star::geometry::RealPoint2D > > SAL_CALL getPoints( ::sal_Int32 nPolygonIndex, ::sal_Int32 nNumberOfPolygons, ::sal_Int32 nPointIndex, ::sal_Int32 nNumberOfPoints );
+        virtual void SAL_CALL setPoints( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< ::com::sun::star::geometry::RealPoint2D > >& points, ::sal_Int32 nPolygonIndex );
+        virtual ::com::sun::star::geometry::RealPoint2D SAL_CALL getPoint( ::sal_Int32 nPolygonIndex, ::sal_Int32 nPointIndex );
+        virtual void SAL_CALL setPoint( const ::com::sun::star::geometry::RealPoint2D& point, ::sal_Int32 nPolygonIndex, ::sal_Int32 nPointIndex );
 
         // XBezierPolyPolygon2D
-        virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< ::com::sun::star::geometry::RealBezierSegment2D > > SAL_CALL getBezierSegments( ::sal_Int32 nPolygonIndex, ::sal_Int32 nNumberOfPolygons, ::sal_Int32 nPointIndex, ::sal_Int32 nNumberOfPoints ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL setBezierSegments( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< ::com::sun::star::geometry::RealBezierSegment2D > >& points, ::sal_Int32 nPolygonIndex ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
-        virtual ::com::sun::star::geometry::RealBezierSegment2D SAL_CALL getBezierSegment( ::sal_Int32 nPolygonIndex, ::sal_Int32 nPointIndex ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL setBezierSegment( const ::com::sun::star::geometry::RealBezierSegment2D& point, ::sal_Int32 nPolygonIndex, ::sal_Int32 nPointIndex ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
+        virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< ::com::sun::star::geometry::RealBezierSegment2D > > SAL_CALL getBezierSegments( ::sal_Int32 nPolygonIndex, ::sal_Int32 nNumberOfPolygons, ::sal_Int32 nPointIndex, ::sal_Int32 nNumberOfPoints );
+        virtual void SAL_CALL setBezierSegments( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< ::com::sun::star::geometry::RealBezierSegment2D > >& points, ::sal_Int32 nPolygonIndex );
+        virtual ::com::sun::star::geometry::RealBezierSegment2D SAL_CALL getBezierSegment( ::sal_Int32 nPolygonIndex, ::sal_Int32 nPointIndex );
+        virtual void SAL_CALL setBezierSegment( const ::com::sun::star::geometry::RealBezierSegment2D& point, ::sal_Int32 nPolygonIndex, ::sal_Int32 nPointIndex );
 
         // XServiceInfo
-        virtual ::rtl::OUString SAL_CALL getImplementationName() throw( ::com::sun::star::uno::RuntimeException );
-        virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw( ::com::sun::star::uno::RuntimeException );
-        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames()  throw( ::com::sun::star::uno::RuntimeException );
+        virtual ::rtl::OUString SAL_CALL getImplementationName();
+        virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
+        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
 
         B2DPolyPolygon getPolyPolygon() const;
 

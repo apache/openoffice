@@ -94,17 +94,15 @@ class ModelWinService : public css::lang::XTypeProvider
         //---------------------------------------------------------------------------------------------------------
 		//	XNameAccess
 		//---------------------------------------------------------------------------------------------------------
-    	virtual css::uno::Any SAL_CALL getByName( const ::rtl::OUString& sName ) throw(	css::container::NoSuchElementException	,
-																						css::lang::WrappedTargetException		,
-																						css::uno::RuntimeException				);
-    	virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames() throw( css::uno::RuntimeException );
-    	virtual sal_Bool SAL_CALL hasByName( const ::rtl::OUString& sName ) throw( css::uno::RuntimeException );
+    	virtual css::uno::Any SAL_CALL getByName( const ::rtl::OUString& sName );
+    	virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames();
+    	virtual sal_Bool SAL_CALL hasByName( const ::rtl::OUString& sName );
 
 		//---------------------------------------------------------------------------------------------------------
 		//	XElementAccess
 		//---------------------------------------------------------------------------------------------------------
-		virtual css::uno::Type SAL_CALL getElementType() throw( css::uno::RuntimeException );
-    	virtual sal_Bool SAL_CALL hasElements() throw( css::uno::RuntimeException );
+		virtual css::uno::Type SAL_CALL getElementType();
+    	virtual sal_Bool SAL_CALL hasElements();
 
     private:
         css::uno::Reference< css::lang::XMultiServiceFactory > m_xServiceManager;

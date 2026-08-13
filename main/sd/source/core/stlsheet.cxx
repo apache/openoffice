@@ -742,7 +742,7 @@ OUString SdStyleSheet::GetFamilyString( SfxStyleFamily eFamily )
 
 // --------------------------------------------------------------------
 
-void SdStyleSheet::throwIfDisposed() throw (RuntimeException)
+void SdStyleSheet::throwIfDisposed()
 {
 	if( !mxPool.is() )
 		throw DisposedException();
@@ -834,7 +834,7 @@ Sequence< ::sal_Int8 > SAL_CALL SdStyleSheet::getImplementationId(  ) throw (Run
 // XComponent
 // --------------------------------------------------------------------
 
-void SAL_CALL SdStyleSheet::dispose(  ) throw (RuntimeException)
+void SAL_CALL SdStyleSheet::dispose(  )
 {
 	ClearableMutexGuard aGuard( mrBHelper.rMutex );
     if (!mrBHelper.bDisposed && !mrBHelper.bInDispose)
@@ -886,7 +886,7 @@ void SdStyleSheet::disposing()
 
 // --------------------------------------------------------------------
 
-void SAL_CALL SdStyleSheet::addEventListener( const Reference< XEventListener >& xListener ) throw (RuntimeException)
+void SAL_CALL SdStyleSheet::addEventListener( const Reference< XEventListener >& xListener )
 {
     ClearableMutexGuard aGuard( mrBHelper.rMutex );
 	if (mrBHelper.bDisposed || mrBHelper.bInDispose)
@@ -903,7 +903,7 @@ void SAL_CALL SdStyleSheet::addEventListener( const Reference< XEventListener >&
 
 // --------------------------------------------------------------------
 
-void SAL_CALL SdStyleSheet::removeEventListener( const Reference< XEventListener >& xListener  ) throw (RuntimeException)
+void SAL_CALL SdStyleSheet::removeEventListener( const Reference< XEventListener >& xListener  )
 {
     mrBHelper.removeListener( ::getCppuType( &xListener ), xListener );
 }
@@ -912,7 +912,7 @@ void SAL_CALL SdStyleSheet::removeEventListener( const Reference< XEventListener
 // XModifyBroadcaster
 //------------------------------------------------------------------------
 
-void SAL_CALL SdStyleSheet::addModifyListener( const Reference< XModifyListener >& xListener ) throw (RuntimeException)
+void SAL_CALL SdStyleSheet::addModifyListener( const Reference< XModifyListener >& xListener )
 {
 	ClearableMutexGuard aGuard( mrBHelper.rMutex );
 	if (mrBHelper.bDisposed || mrBHelper.bInDispose)
@@ -931,7 +931,7 @@ void SAL_CALL SdStyleSheet::addModifyListener( const Reference< XModifyListener 
 
 //------------------------------------------------------------------------
 
-void SAL_CALL SdStyleSheet::removeModifyListener( const Reference< XModifyListener >& xListener ) throw (RuntimeException)
+void SAL_CALL SdStyleSheet::removeModifyListener( const Reference< XModifyListener >& xListener )
 {
 	mrBHelper.removeListener( XModifyListener::static_type(), xListener );
 }
@@ -955,21 +955,21 @@ void SdStyleSheet::notifyModifyListener()
 // XServiceInfo
 // --------------------------------------------------------------------
 
-OUString SAL_CALL SdStyleSheet::getImplementationName() throw(RuntimeException)
+OUString SAL_CALL SdStyleSheet::getImplementationName()
 {
 	return OUString::createFromAscii( "SdStyleSheet" );
 }
 
 // --------------------------------------------------------------------
 
-sal_Bool SAL_CALL SdStyleSheet::supportsService( const OUString& ServiceName ) throw(RuntimeException)
+sal_Bool SAL_CALL SdStyleSheet::supportsService( const OUString& ServiceName )
 {
 	return comphelper::ServiceInfoHelper::supportsService( ServiceName, getSupportedServiceNames() );
 }
 
 // --------------------------------------------------------------------
 
-Sequence< OUString > SAL_CALL SdStyleSheet::getSupportedServiceNames() throw(RuntimeException)
+Sequence< OUString > SAL_CALL SdStyleSheet::getSupportedServiceNames()
 {
 	Sequence< OUString > aNameSequence( 10 );
 	OUString* pStrings = aNameSequence.getArray();
@@ -992,7 +992,7 @@ Sequence< OUString > SAL_CALL SdStyleSheet::getSupportedServiceNames() throw(Run
 // XNamed
 // --------------------------------------------------------------------
 
-OUString SAL_CALL SdStyleSheet::getName() throw(RuntimeException)
+OUString SAL_CALL SdStyleSheet::getName()
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 	throwIfDisposed();
@@ -1001,7 +1001,7 @@ OUString SAL_CALL SdStyleSheet::getName() throw(RuntimeException)
 
 // --------------------------------------------------------------------
 
-void SAL_CALL SdStyleSheet::setName( const OUString& rName  ) throw(RuntimeException)
+void SAL_CALL SdStyleSheet::setName( const OUString& rName  )
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 	throwIfDisposed();
@@ -1017,7 +1017,7 @@ void SAL_CALL SdStyleSheet::setName( const OUString& rName  ) throw(RuntimeExcep
 // XStyle
 // --------------------------------------------------------------------
 
-sal_Bool SAL_CALL SdStyleSheet::isUserDefined() throw(RuntimeException)
+sal_Bool SAL_CALL SdStyleSheet::isUserDefined()
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 	throwIfDisposed();
@@ -1026,7 +1026,7 @@ sal_Bool SAL_CALL SdStyleSheet::isUserDefined() throw(RuntimeException)
 
 // --------------------------------------------------------------------
 
-sal_Bool SAL_CALL SdStyleSheet::isInUse() throw(RuntimeException)
+sal_Bool SAL_CALL SdStyleSheet::isInUse()
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 	throwIfDisposed();
@@ -1035,7 +1035,7 @@ sal_Bool SAL_CALL SdStyleSheet::isInUse() throw(RuntimeException)
 
 // --------------------------------------------------------------------
 
-OUString SAL_CALL SdStyleSheet::getParentStyle() throw(RuntimeException)
+OUString SAL_CALL SdStyleSheet::getParentStyle()
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 	throwIfDisposed();
@@ -1051,7 +1051,7 @@ OUString SAL_CALL SdStyleSheet::getParentStyle() throw(RuntimeException)
 
 // --------------------------------------------------------------------
 
-void SAL_CALL SdStyleSheet::setParentStyle( const OUString& rParentName  ) throw(NoSuchElementException, RuntimeException)
+void SAL_CALL SdStyleSheet::setParentStyle( const OUString& rParentName  )
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 	throwIfDisposed();
@@ -1082,7 +1082,7 @@ void SAL_CALL SdStyleSheet::setParentStyle( const OUString& rParentName  ) throw
 // XPropertySet
 // --------------------------------------------------------------------
 
-Reference< XPropertySetInfo > SdStyleSheet::getPropertySetInfo() throw(RuntimeException)
+Reference< XPropertySetInfo > SdStyleSheet::getPropertySetInfo()
 {
 	throwIfDisposed();
     static Reference< XPropertySetInfo > xInfo;
@@ -1093,7 +1093,7 @@ Reference< XPropertySetInfo > SdStyleSheet::getPropertySetInfo() throw(RuntimeEx
 
 // --------------------------------------------------------------------
 
-void SAL_CALL SdStyleSheet::setPropertyValue( const OUString& aPropertyName, const Any& aValue ) throw(UnknownPropertyException, PropertyVetoException, IllegalArgumentException, WrappedTargetException, RuntimeException)
+void SAL_CALL SdStyleSheet::setPropertyValue( const OUString& aPropertyName, const Any& aValue )
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 	throwIfDisposed();
@@ -1174,7 +1174,7 @@ void SAL_CALL SdStyleSheet::setPropertyValue( const OUString& aPropertyName, con
 
 // --------------------------------------------------------------------
 
-Any SAL_CALL SdStyleSheet::getPropertyValue( const OUString& PropertyName ) throw(UnknownPropertyException, WrappedTargetException, RuntimeException)
+Any SAL_CALL SdStyleSheet::getPropertyValue( const OUString& PropertyName )
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 
@@ -1267,16 +1267,16 @@ Any SAL_CALL SdStyleSheet::getPropertyValue( const OUString& PropertyName ) thro
 
 // --------------------------------------------------------------------
 
-void SAL_CALL SdStyleSheet::addPropertyChangeListener( const OUString& , const Reference< XPropertyChangeListener >&  ) throw(UnknownPropertyException, WrappedTargetException, RuntimeException) {}
-void SAL_CALL SdStyleSheet::removePropertyChangeListener( const OUString& , const Reference< XPropertyChangeListener >&  ) throw(UnknownPropertyException, WrappedTargetException, RuntimeException) {}
-void SAL_CALL SdStyleSheet::addVetoableChangeListener( const OUString& , const Reference< XVetoableChangeListener >&  ) throw(UnknownPropertyException, WrappedTargetException, RuntimeException) {}
-void SAL_CALL SdStyleSheet::removeVetoableChangeListener( const OUString& , const Reference< XVetoableChangeListener >&  ) throw(UnknownPropertyException, WrappedTargetException, RuntimeException) {}
+void SAL_CALL SdStyleSheet::addPropertyChangeListener( const OUString& , const Reference< XPropertyChangeListener >&  ) {}
+void SAL_CALL SdStyleSheet::removePropertyChangeListener( const OUString& , const Reference< XPropertyChangeListener >&  ) {}
+void SAL_CALL SdStyleSheet::addVetoableChangeListener( const OUString& , const Reference< XVetoableChangeListener >&  ) {}
+void SAL_CALL SdStyleSheet::removeVetoableChangeListener( const OUString& , const Reference< XVetoableChangeListener >&  ) {}
 
 // --------------------------------------------------------------------
 // XPropertyState
 // --------------------------------------------------------------------
 
-PropertyState SAL_CALL SdStyleSheet::getPropertyState( const OUString& PropertyName ) throw(UnknownPropertyException, RuntimeException)
+PropertyState SAL_CALL SdStyleSheet::getPropertyState( const OUString& PropertyName )
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 
@@ -1357,7 +1357,7 @@ PropertyState SAL_CALL SdStyleSheet::getPropertyState( const OUString& PropertyN
 
 // --------------------------------------------------------------------
 
-Sequence< PropertyState > SAL_CALL SdStyleSheet::getPropertyStates( const Sequence< OUString >& aPropertyName ) throw(UnknownPropertyException, RuntimeException)
+Sequence< PropertyState > SAL_CALL SdStyleSheet::getPropertyStates( const Sequence< OUString >& aPropertyName )
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 
@@ -1377,7 +1377,7 @@ Sequence< PropertyState > SAL_CALL SdStyleSheet::getPropertyStates( const Sequen
 
 // --------------------------------------------------------------------
 
-void SAL_CALL SdStyleSheet::setPropertyToDefault( const OUString& PropertyName ) throw(UnknownPropertyException, RuntimeException)
+void SAL_CALL SdStyleSheet::setPropertyToDefault( const OUString& PropertyName )
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 
@@ -1403,7 +1403,7 @@ void SAL_CALL SdStyleSheet::setPropertyToDefault( const OUString& PropertyName )
 
 // --------------------------------------------------------------------
 
-Any SAL_CALL SdStyleSheet::getPropertyDefault( const OUString& aPropertyName ) throw(UnknownPropertyException, WrappedTargetException, RuntimeException)
+Any SAL_CALL SdStyleSheet::getPropertyDefault( const OUString& aPropertyName )
 {
 	OGuard aGuard( Application::GetSolarMutex() );
 

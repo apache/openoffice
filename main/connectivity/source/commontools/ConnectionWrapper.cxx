@@ -113,13 +113,13 @@ OConnectionWrapper::~OConnectionWrapper()
 
 // XServiceInfo
 // --------------------------------------------------------------------------------
-::rtl::OUString SAL_CALL OConnectionWrapper::getImplementationName(  ) throw (::com::sun::star::uno::RuntimeException)
+::rtl::OUString SAL_CALL OConnectionWrapper::getImplementationName(  )
 {
 	return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.sdbc.drivers.OConnectionWrapper" ) );
 }
 
 // --------------------------------------------------------------------------------
-::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL OConnectionWrapper::getSupportedServiceNames(  ) throw(::com::sun::star::uno::RuntimeException)
+::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL OConnectionWrapper::getSupportedServiceNames(  )
 {
 	// first collect the services which are supported by our aggregate
 	Sequence< ::rtl::OUString > aSupported;
@@ -140,19 +140,19 @@ OConnectionWrapper::~OConnectionWrapper()
 }
 
 // --------------------------------------------------------------------------------
-sal_Bool SAL_CALL OConnectionWrapper::supportsService( const ::rtl::OUString& _rServiceName ) throw(::com::sun::star::uno::RuntimeException)
+sal_Bool SAL_CALL OConnectionWrapper::supportsService( const ::rtl::OUString& _rServiceName )
 {
 	return ::comphelper::findValue( getSupportedServiceNames(), _rServiceName, sal_True ).getLength() != 0;
 }
 
 // --------------------------------------------------------------------------------
-Any SAL_CALL OConnectionWrapper::queryInterface( const Type& _rType ) throw (RuntimeException)
+Any SAL_CALL OConnectionWrapper::queryInterface( const Type& _rType )
 {
 	Any aReturn = OConnection_BASE::queryInterface(_rType);
 	return aReturn.hasValue() ? aReturn : (m_xProxyConnection.is() ? m_xProxyConnection->queryAggregation(_rType) : aReturn);
 }
 // --------------------------------------------------------------------------------
-Sequence< Type > SAL_CALL OConnectionWrapper::getTypes(  ) throw (::com::sun::star::uno::RuntimeException)
+Sequence< Type > SAL_CALL OConnectionWrapper::getTypes(  )
 {
 	return ::comphelper::concatSequences(
 		OConnection_BASE::getTypes(),
@@ -161,7 +161,7 @@ Sequence< Type > SAL_CALL OConnectionWrapper::getTypes(  ) throw (::com::sun::st
 }
 // -----------------------------------------------------------------------------
 // com::sun::star::lang::XUnoTunnel
-sal_Int64 SAL_CALL OConnectionWrapper::getSomething( const Sequence< sal_Int8 >& rId ) throw(RuntimeException)
+sal_Int64 SAL_CALL OConnectionWrapper::getSomething( const Sequence< sal_Int8 >& rId )
 {
 	if (rId.getLength() == 16 && 0 == rtl_compareMemory(getUnoTunnelImplementationId().getConstArray(),  rId.getConstArray(), 16 ) )
 		return reinterpret_cast< sal_Int64 >( this );

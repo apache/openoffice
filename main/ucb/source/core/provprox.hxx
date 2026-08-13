@@ -75,8 +75,7 @@ public:
 	// XContentProviderFactory
     virtual ::com::sun::star::uno::Reference<
 		::com::sun::star::ucb::XContentProvider > SAL_CALL
-	createContentProvider( const ::rtl::OUString& Service )
-		throw( ::com::sun::star::uno::RuntimeException );
+	createContentProvider( const ::rtl::OUString& Service );
 };
 
 //============================================================================
@@ -126,37 +125,29 @@ public:
 	// XContentProviderSupplier
     virtual ::com::sun::star::uno::Reference<
 		::com::sun::star::ucb::XContentProvider > SAL_CALL
-	getContentProvider()
-		throw( ::com::sun::star::uno::RuntimeException );
+	getContentProvider();
 
 	// XContentProvider
     virtual ::com::sun::star::uno::Reference<
 		::com::sun::star::ucb::XContent > SAL_CALL
 	queryContent( const ::com::sun::star::uno::Reference<
-					::com::sun::star::ucb::XContentIdentifier >& Identifier )
-		throw( ::com::sun::star::ucb::IllegalIdentifierException,
-			   ::com::sun::star::uno::RuntimeException );
+					::com::sun::star::ucb::XContentIdentifier >& Identifier );
     virtual sal_Int32 SAL_CALL
 	compareContentIds( const ::com::sun::star::uno::Reference<
 						::com::sun::star::ucb::XContentIdentifier >& Id1,
 					   const ::com::sun::star::uno::Reference<
-					   	::com::sun::star::ucb::XContentIdentifier >& Id2 )
-		throw( ::com::sun::star::uno::RuntimeException );
+					   	::com::sun::star::ucb::XContentIdentifier >& Id2 );
 
 	// XParameterizedContentProvider
     virtual ::com::sun::star::uno::Reference<
 		::com::sun::star::ucb::XContentProvider > SAL_CALL
 	registerInstance( const ::rtl::OUString& Template,
 					  const ::rtl::OUString& Arguments,
-					  sal_Bool ReplaceExisting )
-		throw( ::com::sun::star::lang::IllegalArgumentException,
-			   ::com::sun::star::uno::RuntimeException );
+					  sal_Bool ReplaceExisting );
     virtual ::com::sun::star::uno::Reference<
 		::com::sun::star::ucb::XContentProvider > SAL_CALL
 	deregisterInstance( const ::rtl::OUString& Template,
-						const ::rtl::OUString& Arguments )
-		throw( ::com::sun::star::lang::IllegalArgumentException,
-			   ::com::sun::star::uno::RuntimeException );
+						const ::rtl::OUString& Arguments );
 };
 
 #endif /* !_PROVPROX_HXX */

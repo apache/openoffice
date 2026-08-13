@@ -445,9 +445,9 @@ public:
 	SlotStatusListener();
 
 	// XStatusListener
-	virtual void SAL_CALL statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event ) throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event );
 	// XEventListener
-	virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw (::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
 	// local Members
 	sal_Bool bDisposed;
@@ -470,7 +470,7 @@ SlotStatusListener::SlotStatusListener()
 {}
 
 // XStatusListener
-void SAL_CALL SlotStatusListener::statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event ) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL SlotStatusListener::statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event )
 {
 //    DBG_ERROR1("FeatureURL: %s", ByteString( String( Event.FeatureURL.Complete ), RTL_TEXTENCODING_UTF8 ).GetBuffer() );
 //    DBG_ERROR1("FeatureDescriptor: %s", ByteString( String( Event.FeatureDescriptor ), RTL_TEXTENCODING_UTF8 ).GetBuffer() );
@@ -480,7 +480,7 @@ void SAL_CALL SlotStatusListener::statusChanged( const ::com::sun::star::frame::
 }
 
 // XEventListener
-void SAL_CALL SlotStatusListener::disposing( const ::com::sun::star::lang::EventObject& ) throw (::com::sun::star::uno::RuntimeException)
+void SAL_CALL SlotStatusListener::disposing( const ::com::sun::star::lang::EventObject& )
 {
 	bDisposed = sal_True;
 }

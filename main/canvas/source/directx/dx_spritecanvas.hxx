@@ -122,14 +122,14 @@ namespace dxcanvas
         DECLARE_UNO3_XCOMPONENT_AGG_DEFAULTS( SpriteCanvas, WindowGraphicDeviceBase_Base, ::cppu::WeakComponentImplHelperBase );
 
         // XBufferController (partial)
-        virtual ::sal_Bool SAL_CALL showBuffer( ::sal_Bool bUpdateAll ) throw (::com::sun::star::uno::RuntimeException);
-        virtual ::sal_Bool SAL_CALL switchBuffer( ::sal_Bool bUpdateAll ) throw (::com::sun::star::uno::RuntimeException);
+        virtual ::sal_Bool SAL_CALL showBuffer( ::sal_Bool bUpdateAll );
+        virtual ::sal_Bool SAL_CALL switchBuffer( ::sal_Bool bUpdateAll );
 
         // XSpriteCanvas (partial)
-        virtual sal_Bool SAL_CALL updateScreen( sal_Bool bUpdateAll ) throw (::com::sun::star::uno::RuntimeException);
+        virtual sal_Bool SAL_CALL updateScreen( sal_Bool bUpdateAll );
 
         // XServiceName
-        virtual ::rtl::OUString SAL_CALL getServiceName(  ) throw (::com::sun::star::uno::RuntimeException);
+        virtual ::rtl::OUString SAL_CALL getServiceName(  );
 
         /// Retrieve rendermodule object for this Canvas
         const IDXRenderModuleSharedPtr& getRenderModule() const;

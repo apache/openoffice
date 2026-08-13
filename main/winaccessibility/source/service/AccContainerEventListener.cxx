@@ -47,7 +47,6 @@ AccContainerEventListener::~AccContainerEventListener()
  *	@param AccessibleEventObject	the event object which contains information about event
  */
 void  AccContainerEventListener::notifyEvent( const ::com::sun::star::accessibility::AccessibleEventObject& aEvent )
-throw (::com::sun::star::uno::RuntimeException)
 {
     short role = getRole();
     switch (aEvent.EventId)

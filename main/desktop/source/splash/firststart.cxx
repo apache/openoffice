@@ -78,32 +78,30 @@ FirstStart::~FirstStart()
 }
 
 // XComponent
-void SAL_CALL FirstStart::dispose() throw ( RuntimeException )
+void SAL_CALL FirstStart::dispose()
 {
     EventObject aObject;
     aObject.Source = (XComponent*)this;
     m_aListeners.disposeAndClear( aObject );
 }
 
-void SAL_CALL FirstStart::addEventListener( const Reference< XEventListener > & aListener) throw ( RuntimeException )
+void SAL_CALL FirstStart::addEventListener( const Reference< XEventListener > & aListener)
 {
     m_aListeners.addInterface( aListener );
 }
 
-void SAL_CALL FirstStart::removeEventListener( const Reference< XEventListener > & aListener ) throw ( RuntimeException )
+void SAL_CALL FirstStart::removeEventListener( const Reference< XEventListener > & aListener )
 {
     m_aListeners.removeInterface( aListener );
 }
 
 // XServiceInfo
 ::rtl::OUString SAL_CALL FirstStart::getImplementationName()
-throw ( RuntimeException )
 {
 	return FirstStart::GetImplementationName();
 }
 
 sal_Bool SAL_CALL FirstStart::supportsService( const ::rtl::OUString& rServiceName )
-throw ( RuntimeException )
 {
 	sal_Int32 nSize = sizeof( interfaces ) / sizeof( const char *);
 
@@ -114,14 +112,12 @@ throw ( RuntimeException )
 }
 
 Sequence< ::rtl::OUString > SAL_CALL FirstStart::getSupportedServiceNames()
-throw ( RuntimeException )
 {
 	return FirstStart::GetSupportedServiceNames();
 }
 
 // XJob
 Any SAL_CALL FirstStart::execute(const Sequence<NamedValue>& args)
-throw ( RuntimeException )
 {
     static const ::rtl::OUString ARG_LICENSENEEDED( RTL_CONSTASCII_USTRINGPARAM( "LicenseNeedsAcceptance" ) );
     static const ::rtl::OUString ARG_LICENSEPATH(   RTL_CONSTASCII_USTRINGPARAM( "LicensePath" ) );
@@ -137,7 +133,6 @@ throw ( RuntimeException )
 
 // XJobExecutor
 void SAL_CALL FirstStart::trigger(const OUString&)
-throw ( RuntimeException )
 {
     // trigger wizard with override, so it gets started regardless of
     // configuration

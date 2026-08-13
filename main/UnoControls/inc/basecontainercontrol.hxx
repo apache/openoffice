@@ -151,7 +151,7 @@ public:
 		@onerror	A RuntimeException is thrown.
 	*/
 
-	virtual UNO3_ANY SAL_CALL queryInterface( const UNO3_TYPE& aType ) throw( UNO3_RUNTIMEEXCEPTION );
+	virtual UNO3_ANY SAL_CALL queryInterface( const UNO3_TYPE& aType );
 
 	//________________________________________________________________________________________________________
 	//	XTypeProvider
@@ -170,7 +170,7 @@ public:
 		@onerror	A RuntimeException is thrown.
 	*/
 
-	virtual UNO3_SEQUENCE< UNO3_TYPE > SAL_CALL getTypes() throw( UNO3_RUNTIMEEXCEPTION );
+	virtual UNO3_SEQUENCE< UNO3_TYPE > SAL_CALL getTypes();
 
 	//________________________________________________________________________________________________________
 	//	XAggregation
@@ -189,7 +189,7 @@ public:
 		@onerror	-
 	*/
 
-	virtual UNO3_ANY SAL_CALL queryAggregation( const UNO3_TYPE& aType ) throw( UNO3_RUNTIMEEXCEPTION );
+	virtual UNO3_ANY SAL_CALL queryAggregation( const UNO3_TYPE& aType );
 
 	//________________________________________________________________________________________________________
 	//	XControl
@@ -209,7 +209,7 @@ public:
 	*/
 
 	virtual void SAL_CALL createPeer(	const	UNO3_REFERENCE< UNO3_XTOOLKIT >&	xToolkit	,
-										const	UNO3_REFERENCE< UNO3_XWINDOWPEER >&	xParent		) throw( UNO3_RUNTIMEEXCEPTION );
+										const	UNO3_REFERENCE< UNO3_XWINDOWPEER >&	xParent		);
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -224,7 +224,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual sal_Bool SAL_CALL setModel( const UNO3_REFERENCE< UNO3_XCONTROLMODEL >& xModel ) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual sal_Bool SAL_CALL setModel( const UNO3_REFERENCE< UNO3_XCONTROLMODEL >& xModel );
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -239,7 +239,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual UNO3_REFERENCE< UNO3_XCONTROLMODEL > SAL_CALL getModel() throw( UNO3_RUNTIMEEXCEPTION );
+    virtual UNO3_REFERENCE< UNO3_XCONTROLMODEL > SAL_CALL getModel();
 
 	//________________________________________________________________________________________________________
 	//	XComponent
@@ -258,7 +258,7 @@ public:
 		@onerror	-
 	*/
 
-	virtual void SAL_CALL dispose() throw( UNO3_RUNTIMEEXCEPTION );
+	virtual void SAL_CALL dispose();
 
 	//________________________________________________________________________________________________________
 	//	XEventListener
@@ -277,7 +277,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL disposing( const UNO3_EVENTOBJECT& rEvent ) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual void SAL_CALL disposing( const UNO3_EVENTOBJECT& rEvent );
 
 	//________________________________________________________________________________________________________
 	//	XControlContainer
@@ -297,7 +297,7 @@ public:
 	*/
 
     virtual void SAL_CALL addControl(	const	UNO3_OUSTRING&						sName		,
-										const	UNO3_REFERENCE< UNO3_XCONTROL >&	xControl	) throw( UNO3_RUNTIMEEXCEPTION	);
+										const	UNO3_REFERENCE< UNO3_XCONTROL >&	xControl	);
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -312,7 +312,7 @@ public:
 		@onerror	-
 	*/
 
-	virtual	void SAL_CALL addContainerListener( const UNO3_REFERENCE< UNO3_XCONTAINERLISTENER >& xListener ) throw( UNO3_RUNTIMEEXCEPTION );
+	virtual	void SAL_CALL addContainerListener( const UNO3_REFERENCE< UNO3_XCONTAINERLISTENER >& xListener );
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -327,7 +327,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL removeControl( const UNO3_REFERENCE< UNO3_XCONTROL >& xControl ) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual void SAL_CALL removeControl( const UNO3_REFERENCE< UNO3_XCONTROL >& xControl );
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -342,7 +342,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL removeContainerListener( const UNO3_REFERENCE< UNO3_XCONTAINERLISTENER >& xListener ) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual void SAL_CALL removeContainerListener( const UNO3_REFERENCE< UNO3_XCONTAINERLISTENER >& xListener );
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -357,7 +357,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL setStatusText( const UNO3_OUSTRING& sStatusText ) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual void SAL_CALL setStatusText( const UNO3_OUSTRING& sStatusText );
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -372,7 +372,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual UNO3_REFERENCE< UNO3_XCONTROL > SAL_CALL getControl( const UNO3_OUSTRING& sName) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual UNO3_REFERENCE< UNO3_XCONTROL > SAL_CALL getControl( const UNO3_OUSTRING& sName);
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -387,7 +387,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual UNO3_SEQUENCE< UNO3_REFERENCE< UNO3_XCONTROL > > SAL_CALL getControls() throw( UNO3_RUNTIMEEXCEPTION );
+    virtual UNO3_SEQUENCE< UNO3_REFERENCE< UNO3_XCONTROL > > SAL_CALL getControls();
 
 	//________________________________________________________________________________________________________
 	//	XUnoControlContainer
@@ -406,7 +406,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL addTabController( const UNO3_REFERENCE< UNO3_XTABCONTROLLER >& xTabController ) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual void SAL_CALL addTabController( const UNO3_REFERENCE< UNO3_XTABCONTROLLER >& xTabController );
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -421,7 +421,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL removeTabController( const UNO3_REFERENCE< UNO3_XTABCONTROLLER >& xTabController ) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual void SAL_CALL removeTabController( const UNO3_REFERENCE< UNO3_XTABCONTROLLER >& xTabController );
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -436,7 +436,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual void SAL_CALL setTabControllers( const UNO3_SEQUENCE< UNO3_REFERENCE< UNO3_XTABCONTROLLER > >& xTabControllers ) throw( UNO3_RUNTIMEEXCEPTION );
+    virtual void SAL_CALL setTabControllers( const UNO3_SEQUENCE< UNO3_REFERENCE< UNO3_XTABCONTROLLER > >& xTabControllers );
 
 	/**_______________________________________________________________________________________________________
 		@short		-
@@ -451,7 +451,7 @@ public:
 		@onerror	-
 	*/
 
-    virtual UNO3_SEQUENCE< UNO3_REFERENCE< UNO3_XTABCONTROLLER > > SAL_CALL getTabControllers() throw( UNO3_RUNTIMEEXCEPTION );
+    virtual UNO3_SEQUENCE< UNO3_REFERENCE< UNO3_XTABCONTROLLER > > SAL_CALL getTabControllers();
 
 	//________________________________________________________________________________________________________
 	//	XWindow
@@ -470,7 +470,7 @@ public:
 		@onerror	-
 	*/
 
-	virtual void SAL_CALL setVisible( sal_Bool bVisible ) throw( UNO3_RUNTIMEEXCEPTION );
+	virtual void SAL_CALL setVisible( sal_Bool bVisible );
 
 //____________________________________________________________________________________________________________
 //	protected methods

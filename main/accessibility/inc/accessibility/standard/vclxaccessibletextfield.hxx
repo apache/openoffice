@@ -58,28 +58,21 @@ public:
 
 	// XAccessible
     ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleContext> SAL_CALL
-        getAccessibleContext (void)
-        throw (::com::sun::star::uno::RuntimeException);
+        getAccessibleContext (void);
 
     // XAccessibleContext
-    sal_Int32 SAL_CALL getAccessibleChildCount (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    sal_Int32 SAL_CALL getAccessibleChildCount (void);
     ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible> SAL_CALL
-        getAccessibleChild (sal_Int32 i)
-        throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
-	sal_Int16 SAL_CALL getAccessibleRole (void)
-        throw (::com::sun::star::uno::RuntimeException);
+        getAccessibleChild (sal_Int32 i);
+	sal_Int16 SAL_CALL getAccessibleRole (void);
     ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL
-		getAccessibleParent(  )
-		throw (::com::sun::star::uno::RuntimeException);
+		getAccessibleParent(  );
 
 	// XServiceInfo
-	virtual ::rtl::OUString SAL_CALL getImplementationName (void)
-        throw (::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getImplementationName (void);
     // Return text field specific services.
 	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL
-        getSupportedServiceNames (void)
-        throw (::com::sun::star::uno::RuntimeException);
+        getSupportedServiceNames (void);
 
 protected:
 	virtual ~VCLXAccessibleTextField (void);

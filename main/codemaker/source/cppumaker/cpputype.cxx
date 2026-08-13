@@ -204,7 +204,6 @@ void CppuType::dumpGetCppuTypePostamble(FileStream & out) {
 }
 
 sal_Bool CppuType::dump(CppuOptions* pOptions)
-	throw( CannotDumpException )
 {
     if (!m_dependencies.isValid()) {
         return false;
@@ -231,7 +230,6 @@ sal_Bool CppuType::dumpFile(CppuOptions* pOptions,
                             const OString& sExtension,
                             const OString& sName,
                             const OString& sOutPath )
-	throw( CannotDumpException )
 {
 	sal_Bool ret = sal_False;
 
@@ -874,7 +872,7 @@ OString	CppuType::getTypeClass(const OString& type, sal_Bool bCStyle)
 
 void CppuType::dumpType(FileStream& o, const OString& type,
 						bool bConst, bool bRef, bool bNative, bool cppuUnoType)
-	const throw( CannotDumpException )
+	const
 {
     sal_Int32 seqNum;
     std::vector< rtl::OString > args;
@@ -1243,7 +1241,6 @@ InterfaceType::~InterfaceType()
 
 sal_Bool InterfaceType::dumpHFile(
     FileStream& o, codemaker::cppumaker::Includes & includes)
-	throw( CannotDumpException )
 {
 	OString headerDefine(dumpHeaderDefine(o, "HDL"));
 	o << "\n";
@@ -1273,7 +1270,6 @@ sal_Bool InterfaceType::dumpHFile(
 }
 
 sal_Bool InterfaceType::dumpDeclaration(FileStream& o)
-	throw( CannotDumpException )
 {
 //     rtl::OString cppName(translateUnoToCppIdentifier(
 //                              m_name, "interface", ITM_KEYWORDSONLY, &m_name));
@@ -1306,7 +1302,6 @@ sal_Bool InterfaceType::dumpDeclaration(FileStream& o)
 
 sal_Bool InterfaceType::dumpHxxFile(
     FileStream& o, codemaker::cppumaker::Includes & includes)
-	throw( CannotDumpException )
 {
 	OString headerDefine(dumpHeaderDefine(o, "HPP"));
 	o << "\n";
@@ -2044,35 +2039,30 @@ void InterfaceType::dumpMethodsCppuDecl(FileStream& o, StringSet* pFinishedTypes
 void InterfaceType::dumpExceptionSpecification(
     FileStream & out, sal_uInt32 methodIndex, bool runtimeException)
 {
-    out << " throw (";
-    bool first = true;
-    if (methodIndex <= SAL_MAX_UINT16) {
+    // A specification naming types is not written at all: C++17 removes dynamic
+    // exception specifications from the language, and MSVC has never enforced
+    // one, so nothing is lost by dropping them.  They cannot be dropped from
+    // hand-written overrides alone either -- an override with no specification
+    // is LESS restrictive than a base that has one, which is ill-formed -- so
+    // the generator and the sources have to move together.
+    //
+    // The EMPTY specification stays: it is what acquire() and release() carry,
+    // MSVC implements it as __declspec(nothrow), and C++17 keeps it as a
+    // deprecated spelling of noexcept.  Migrating it is a separate change.
+    bool any = runtimeException;
+    if (!any && methodIndex <= SAL_MAX_UINT16) {
         sal_uInt16 count = m_reader.getMethodExceptionCount(
             static_cast< sal_uInt16 >(methodIndex));
-        for (sal_uInt16 i = 0; i < count; ++i) {
-            rtl::OUString name(
-                m_reader.getMethodExceptionTypeName(
-                    static_cast< sal_uInt16 >(methodIndex), i));
-            if (!name.equalsAsciiL(
+        for (sal_uInt16 i = 0; !any && i < count; ++i) {
+            any = !m_reader.getMethodExceptionTypeName(
+                static_cast< sal_uInt16 >(methodIndex), i).equalsAsciiL(
                     RTL_CONSTASCII_STRINGPARAM(
-                        "com/sun/star/uno/RuntimeException")))
-            {
-                if (!first) {
-                    out << ", ";
-                }
-                first = false;
-                out << scopedCppName(
-                    rtl::OUStringToOString(name, RTL_TEXTENCODING_UTF8));
-            }
+                        "com/sun/star/uno/RuntimeException"));
         }
     }
-    if (runtimeException) {
-        if (!first) {
-            out << ", ";
-        }
-        out << "::com::sun::star::uno::RuntimeException";
+    if (!any) {
+        out << " throw ()";
     }
-    out << ")";
 }
 
 void InterfaceType::dumpAttributeExceptionSpecification(
@@ -2163,7 +2153,6 @@ ConstantsType::~ConstantsType()
 }
 
 sal_Bool ConstantsType::dump(CppuOptions* pOptions)
-	throw( CannotDumpException )
 {
     if (!m_dependencies.isValid()) {
         return false;
@@ -2182,7 +2171,6 @@ sal_Bool ConstantsType::dump(CppuOptions* pOptions)
 
 sal_Bool ConstantsType::dumpHFile(
     FileStream& o, codemaker::cppumaker::Includes & includes)
-	throw( CannotDumpException )
 {
 	sal_Bool bSpecialDefine = sal_True;
 
@@ -2215,7 +2203,6 @@ sal_Bool ConstantsType::dumpHFile(
 }
 
 sal_Bool ConstantsType::dumpDeclaration(FileStream& o)
-	throw( CannotDumpException )
 {
 	sal_uInt16 		fieldCount = m_reader.getFieldCount();
 	OString 		fieldName;
@@ -2244,7 +2231,6 @@ sal_Bool ConstantsType::hasConstants()
 
 sal_Bool ConstantsType::dumpHxxFile(
     FileStream& o, codemaker::cppumaker::Includes &)
-	throw( CannotDumpException )
 {
 	sal_Bool bSpecialDefine = sal_True;
 
@@ -2324,7 +2310,6 @@ StructureType::~StructureType()
 
 sal_Bool StructureType::dumpHFile(
     FileStream& o, codemaker::cppumaker::Includes & includes)
-	throw( CannotDumpException )
 {
 	OString headerDefine(dumpHeaderDefine(o, "HDL"));
 	o << "\n";
@@ -2358,7 +2343,6 @@ sal_Bool StructureType::dumpHFile(
 }
 
 sal_Bool StructureType::dumpDeclaration(FileStream& o)
-	throw( CannotDumpException )
 {
 	o << "\n#ifdef SAL_W32\n"
 	  << "#   pragma pack(push, 8)\n"
@@ -2449,7 +2433,6 @@ sal_Bool StructureType::dumpDeclaration(FileStream& o)
 
 sal_Bool StructureType::dumpHxxFile(
     FileStream& o, codemaker::cppumaker::Includes & includes)
-	throw( CannotDumpException )
 {
 	OString headerDefine(dumpHeaderDefine(o, "HPP"));
 	o << "\n";
@@ -3086,7 +3069,6 @@ ExceptionType::~ExceptionType()
 
 sal_Bool ExceptionType::dumpHFile(
     FileStream& o, codemaker::cppumaker::Includes & includes)
-	throw( CannotDumpException )
 {
 	OString headerDefine(dumpHeaderDefine(o, "HDL"));
 	o << "\n";
@@ -3118,7 +3100,6 @@ sal_Bool ExceptionType::dumpHFile(
 }
 
 sal_Bool ExceptionType::dumpDeclaration(FileStream& o)
-	throw( CannotDumpException )
 {
 	o << "\nclass CPPU_GCC_DLLPUBLIC_EXPORT " << m_name;
 
@@ -3208,7 +3189,6 @@ sal_Bool ExceptionType::dumpDeclaration(FileStream& o)
 
 sal_Bool ExceptionType::dumpHxxFile(
     FileStream& o, codemaker::cppumaker::Includes & includes)
-	throw( CannotDumpException )
 {
 	OString headerDefine(dumpHeaderDefine(o, "HPP"));
 	o << "\n";
@@ -3467,7 +3447,6 @@ EnumType::~EnumType()
 
 sal_Bool EnumType::dumpHFile(
     FileStream& o, codemaker::cppumaker::Includes & includes)
-	throw( CannotDumpException )
 {
 	OString headerDefine(dumpHeaderDefine(o, "HDL"));
 	o << "\n";
@@ -3499,7 +3478,6 @@ sal_Bool EnumType::dumpHFile(
 }
 
 sal_Bool EnumType::dumpDeclaration(FileStream& o)
-	throw( CannotDumpException )
 {
 	o << "\nenum " << m_name << "\n{\n";
 	inc();
@@ -3538,7 +3516,6 @@ sal_Bool EnumType::dumpDeclaration(FileStream& o)
 
 sal_Bool EnumType::dumpHxxFile(
     FileStream& o, codemaker::cppumaker::Includes & includes)
-	throw( CannotDumpException )
 {
 	OString headerDefine(dumpHeaderDefine(o, "HPP"));
 	o << "\n";
@@ -3670,7 +3647,6 @@ TypeDefType::~TypeDefType()
 
 sal_Bool TypeDefType::dumpHFile(
     FileStream& o, codemaker::cppumaker::Includes & includes)
-	throw( CannotDumpException )
 {
 	OString headerDefine(dumpHeaderDefine(o, "HDL"));
 	o << "\n";
@@ -3700,7 +3676,6 @@ sal_Bool TypeDefType::dumpHFile(
 }
 
 sal_Bool TypeDefType::dumpDeclaration(FileStream& o)
-	throw( CannotDumpException )
 {
 	o << "\ntypedef ";
 	dumpType(
@@ -3714,7 +3689,6 @@ sal_Bool TypeDefType::dumpDeclaration(FileStream& o)
 
 sal_Bool TypeDefType::dumpHxxFile(
     FileStream& o, codemaker::cppumaker::Includes & includes)
-	throw( CannotDumpException )
 {
 	OString headerDefine(dumpHeaderDefine(o, "HPP"));
 	o << "\n";
@@ -3732,7 +3706,7 @@ sal_Bool TypeDefType::dumpHxxFile(
 //*************************************************************************
 
 sal_Bool ConstructiveType::dumpHFile(
-    FileStream &, codemaker::cppumaker::Includes &) throw (CannotDumpException)
+    FileStream &, codemaker::cppumaker::Includes &)
 {
     OSL_ASSERT(false);
     return false;
@@ -3774,7 +3748,6 @@ bool ServiceType::isSingleInterfaceBased() {
 
 sal_Bool ServiceType::dumpHxxFile(
     FileStream & o, codemaker::cppumaker::Includes & includes)
-    throw (CannotDumpException)
 {
     sal_uInt16 ctors = m_reader.getMethodCount();
     if (ctors > 0) {
@@ -4136,7 +4109,6 @@ bool SingletonType::isInterfaceBased() {
 
 sal_Bool SingletonType::dumpHxxFile(
     FileStream & o, codemaker::cppumaker::Includes & includes)
-    throw (CannotDumpException)
 {
     rtl::OString cppName(translateUnoToCppIdentifier(
                              m_name, "singleton", isGlobal()));
@@ -4205,7 +4177,6 @@ bool produceType(const OString& typeName,
                  TypeManager const & typeMgr,
                  codemaker::GeneratedTypeSet & generated,
                  CppuOptions* pOptions)
-	throw( CannotDumpException )
 {
 	if (typeName.equals("/") || typeName.equals(typeMgr.getBase()) ||
         TypeManager::isBaseType(typeName) || generated.contains(typeName))
@@ -4339,7 +4310,6 @@ bool produceType(RegistryKey& rTypeKey, bool bIsExtraType,
 					 TypeManager const & typeMgr,
                      codemaker::GeneratedTypeSet & generated,
 					 CppuOptions* pOptions)
-	throw( CannotDumpException )
 {
     OString typeName = typeMgr.getTypeName(rTypeKey);
 

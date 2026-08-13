@@ -35,7 +35,7 @@ ScVbaLabel::ScVbaLabel(  const css::uno::Reference< XHelperInterface >& xParent,
 
 // Attributes
 rtl::OUString SAL_CALL
-ScVbaLabel::getCaption() throw (css::uno::RuntimeException)
+ScVbaLabel::getCaption()
 {
     rtl::OUString Label;
     m_xProps->getPropertyValue( LABEL ) >>= Label;
@@ -43,25 +43,25 @@ ScVbaLabel::getCaption() throw (css::uno::RuntimeException)
 }
 
 void SAL_CALL
-ScVbaLabel::setCaption( const rtl::OUString& _caption ) throw (::com::sun::star::uno::RuntimeException)
+ScVbaLabel::setCaption( const rtl::OUString& _caption )
 {
     m_xProps->setPropertyValue( LABEL, uno::makeAny( _caption ) );
 }
 uno::Any SAL_CALL
-ScVbaLabel::getValue() throw (css::uno::RuntimeException)
+ScVbaLabel::getValue()
 {
     return uno::makeAny( getCaption() );
 }
 
 void SAL_CALL
-ScVbaLabel::setValue( const uno::Any& _value ) throw (::com::sun::star::uno::RuntimeException)
+ScVbaLabel::setValue( const uno::Any& _value )
 {
     rtl::OUString sCaption;
     _value >>= sCaption;
     setCaption( sCaption );
 }
 
-uno::Reference< msforms::XNewFont > SAL_CALL ScVbaLabel::getFont() throw (uno::RuntimeException)
+uno::Reference< msforms::XNewFont > SAL_CALL ScVbaLabel::getFont()
 {
     return new VbaNewFont( this, mxContext, m_xProps );
 }

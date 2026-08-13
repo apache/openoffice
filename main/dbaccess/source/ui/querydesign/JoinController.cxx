@@ -255,7 +255,7 @@ OJoinController::~OJoinController()
 }
 
 // -----------------------------------------------------------------------------
-void SAL_CALL OJoinController::disposing( const EventObject& _rSource ) throw(RuntimeException)
+void SAL_CALL OJoinController::disposing( const EventObject& _rSource )
 {
 	OJoinController_BASE::disposing( _rSource );
 }
@@ -429,7 +429,7 @@ void OJoinController::describeSupportedFeatures()
 	implDescribeSupportedFeature( ".uno:EditDoc",   ID_BROWSER_EDITDOC, CommandGroup::EDIT );
 }
 // -----------------------------------------------------------------------------
-sal_Bool SAL_CALL OJoinController::suspend(sal_Bool _bSuspend) throw( RuntimeException )
+sal_Bool SAL_CALL OJoinController::suspend(sal_Bool _bSuspend)
 {
 	if ( getBroadcastHelper().bInDispose || getBroadcastHelper().bDisposed )
 		return sal_True;

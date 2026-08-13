@@ -43,9 +43,6 @@ ContainerWindowWrapper::~ContainerWindowWrapper()
 void SAL_CALL
 ContainerWindowWrapper::dispose(
 )
-    throw (
-        ::com::sun::star::uno::RuntimeException
-    )
 {
     cppu::OInterfaceContainerHelper *pDisposeEventListeners(0);
 
@@ -68,9 +65,6 @@ ContainerWindowWrapper::addEventListener(
     const ::com::sun::star::uno::Reference<
     ::com::sun::star::lang::XEventListener >& Listener
 )
-    throw (
-        ::com::sun::star::uno::RuntimeException
-    )
 {
     cppu::OInterfaceContainerHelper *pDisposeEventListeners(0);
     {
@@ -94,9 +88,6 @@ ContainerWindowWrapper::removeEventListener(
     const ::com::sun::star::uno::Reference<
     ::com::sun::star::lang::XEventListener >& Listener
 )
-    throw (
-        ::com::sun::star::uno::RuntimeException
-    )
 {
     cppu::OInterfaceContainerHelper *pDisposeEventListeners(0);
     {
@@ -116,9 +107,6 @@ ContainerWindowWrapper::getWindowHandle(
     const ::com::sun::star::uno::Sequence< sal_Int8 >& ProcessId,
     sal_Int16 SystemType
 )
-    throw (
-        ::com::sun::star::uno::RuntimeException
-    )
 {
     if(SystemType == lang::SystemDependent::SYSTEM_WIN32 ||
        SystemType == lang::SystemDependent::SYSTEM_WIN16)
@@ -142,8 +130,6 @@ ContainerWindowWrapper::setPosSize(
     sal_Int32 Height,
     sal_Int16 Flags
 )
-    throw (
-        ::com::sun::star::uno::RuntimeException)
 {
 
 }
@@ -151,9 +137,6 @@ ContainerWindowWrapper::setPosSize(
 ::com::sun::star::awt::Rectangle SAL_CALL
 ContainerWindowWrapper::getPosSize(
 )
-    throw (
-        ::com::sun::star::uno::RuntimeException
-    )
 {
     return awt::Rectangle();
 }
@@ -163,9 +146,6 @@ void SAL_CALL
 ContainerWindowWrapper::setVisible(
     sal_Bool Visible
 )
-    throw (
-        ::com::sun::star::uno::RuntimeException
-    )
 {
 
 }
@@ -175,9 +155,6 @@ void SAL_CALL
 ContainerWindowWrapper::setEnable(
     sal_Bool Enable
 )
-    throw (
-        ::com::sun::star::uno::RuntimeException
-    )
 {
 
 }
@@ -185,9 +162,6 @@ ContainerWindowWrapper::setEnable(
 void SAL_CALL
 ContainerWindowWrapper::setFocus(
 )
-    throw (
-        ::com::sun::star::uno::RuntimeException
-    )
 {
 
 }
@@ -197,9 +171,6 @@ ContainerWindowWrapper::addWindowListener(
     const ::com::sun::star::uno::Reference<
     ::com::sun::star::awt::XWindowListener >& xListener
 )
-    throw (
-        ::com::sun::star::uno::RuntimeException
-    )
 {
 
 }
@@ -209,9 +180,6 @@ ContainerWindowWrapper::removeWindowListener(
     const ::com::sun::star::uno::Reference<
     ::com::sun::star::awt::XWindowListener >& xListener
 )
-    throw (
-        ::com::sun::star::uno::RuntimeException
-    )
 {
 
 }
@@ -222,9 +190,6 @@ ContainerWindowWrapper::addFocusListener(
     const ::com::sun::star::uno::Reference<
     ::com::sun::star::awt::XFocusListener >& xListener
 )
-    throw (
-        ::com::sun::star::uno::RuntimeException
-    )
 {
 
 }
@@ -235,9 +200,6 @@ ContainerWindowWrapper::removeFocusListener(
     const ::com::sun::star::uno::Reference<
     ::com::sun::star::awt::XFocusListener >& xListener
 )
-    throw (
-        ::com::sun::star::uno::RuntimeException
-    )
 {
 
 }
@@ -247,9 +209,6 @@ ContainerWindowWrapper::addKeyListener(
     const ::com::sun::star::uno::Reference<
     ::com::sun::star::awt::XKeyListener >& xListener
 )
-    throw (
-        ::com::sun::star::uno::RuntimeException
-    )
 {
 
 }
@@ -259,9 +218,6 @@ ContainerWindowWrapper::removeKeyListener(
     const ::com::sun::star::uno::Reference<
     ::com::sun::star::awt::XKeyListener >& xListener
 )
-    throw (
-        ::com::sun::star::uno::RuntimeException
-    )
 {
 
 }
@@ -272,9 +228,6 @@ ContainerWindowWrapper::addMouseListener(
     const ::com::sun::star::uno::Reference<
     ::com::sun::star::awt::XMouseListener >& xListener
 )
-    throw (
-        ::com::sun::star::uno::RuntimeException
-    )
 {
 
 }
@@ -285,9 +238,6 @@ ContainerWindowWrapper::removeMouseListener(
     const ::com::sun::star::uno::Reference<
     ::com::sun::star::awt::XMouseListener >& xListener
 )
-    throw (
-        ::com::sun::star::uno::RuntimeException
-    )
 {
 
 }
@@ -298,9 +248,6 @@ ContainerWindowWrapper::addMouseMotionListener(
     const ::com::sun::star::uno::Reference<
     ::com::sun::star::awt::XMouseMotionListener >& xListener
 )
-    throw (
-        ::com::sun::star::uno::RuntimeException
-    )
 {
 
 }
@@ -310,9 +257,6 @@ ContainerWindowWrapper::removeMouseMotionListener(
     const ::com::sun::star::uno::Reference<
     ::com::sun::star::awt::XMouseMotionListener >& xListener
 )
-    throw (
-        ::com::sun::star::uno::RuntimeException
-    )
 {
 
 }
@@ -322,9 +266,6 @@ ContainerWindowWrapper::addPaintListener(
     const ::com::sun::star::uno::Reference<
     ::com::sun::star::awt::XPaintListener >& xListener
 )
-    throw (
-        ::com::sun::star::uno::RuntimeException
-    )
 {
 
 }
@@ -334,9 +275,6 @@ ContainerWindowWrapper::removePaintListener(
     const ::com::sun::star::uno::Reference<
     ::com::sun::star::awt::XPaintListener >& xListener
 )
-    throw (
-        ::com::sun::star::uno::RuntimeException
-    )
 {
 
 }

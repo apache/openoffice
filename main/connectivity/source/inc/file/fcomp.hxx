@@ -75,13 +75,13 @@ namespace connectivity
 			void	 setOrigColumns(const OFileColumns& rCols) { m_orgColumns = rCols; }
 			const OFileColumns getOrigColumns() const { return m_orgColumns; }
 		protected:
-			OOperand* execute_COMPARE(connectivity::OSQLParseNode* pPredicateNode) throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-			OOperand* execute_LIKE(connectivity::OSQLParseNode* pPredicateNode) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-			OOperand* execute_BETWEEN(connectivity::OSQLParseNode* pPredicateNode) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-			OOperand* execute_ISNULL(connectivity::OSQLParseNode* pPredicateNode) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-			OOperand* execute_Operand(connectivity::OSQLParseNode* pPredicateNode) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-			OOperand* execute_Fold(OSQLParseNode* pPredicateNode) throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-			OOperand* executeFunction(OSQLParseNode* pPredicateNode) throw( ::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
+			OOperand* execute_COMPARE(connectivity::OSQLParseNode* pPredicateNode);
+			OOperand* execute_LIKE(connectivity::OSQLParseNode* pPredicateNode);
+			OOperand* execute_BETWEEN(connectivity::OSQLParseNode* pPredicateNode);
+			OOperand* execute_ISNULL(connectivity::OSQLParseNode* pPredicateNode);
+			OOperand* execute_Operand(connectivity::OSQLParseNode* pPredicateNode);
+			OOperand* execute_Fold(OSQLParseNode* pPredicateNode);
+			OOperand* executeFunction(OSQLParseNode* pPredicateNode);
 		};
 
 

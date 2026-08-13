@@ -62,8 +62,8 @@ public:
     virtual void SAL_CALL disposing ();
 
     // XEventListener
-    virtual void SAL_CALL notifyEvent( const ::com::sun::star::document::EventObject& Event ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL notifyEvent( const ::com::sun::star::document::EventObject& Event );
+    virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
     //
     void ExecuteAnnotation (SfxRequest& rRequest);

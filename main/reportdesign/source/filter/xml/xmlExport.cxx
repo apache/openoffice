@@ -80,12 +80,12 @@ namespace rptxml
 		return static_cast< XServiceInfo* >(new ORptExport(Reference< XMultiServiceFactory >(xContext->getServiceManager(),UNO_QUERY),EXPORT_SETTINGS ));
 	}
 	//---------------------------------------------------------------------
-	::rtl::OUString ORptExportHelper::getImplementationName_Static(  ) throw (RuntimeException)
+	::rtl::OUString ORptExportHelper::getImplementationName_Static(  )
 	{
 		return ::rtl::OUString::createFromAscii("com.sun.star.comp.report.XMLSettingsExporter");
 	}
 	//---------------------------------------------------------------------
-	Sequence< ::rtl::OUString > ORptExportHelper::getSupportedServiceNames_Static(  ) throw(RuntimeException)
+	Sequence< ::rtl::OUString > ORptExportHelper::getSupportedServiceNames_Static(  )
 	{
 		Sequence< ::rtl::OUString > aSupported(1);
 		aSupported[0] = ::rtl::OUString::createFromAscii("com.sun.star.document.ExportFilter");
@@ -97,12 +97,12 @@ namespace rptxml
 		return static_cast< XServiceInfo* >(new ORptExport(Reference< XMultiServiceFactory >(xContext->getServiceManager(),UNO_QUERY),EXPORT_CONTENT ));
 	}
 	//---------------------------------------------------------------------
-	::rtl::OUString ORptContentExportHelper::getImplementationName_Static(  ) throw (RuntimeException)
+	::rtl::OUString ORptContentExportHelper::getImplementationName_Static(  )
 	{
 		return ::rtl::OUString::createFromAscii("com.sun.star.comp.report.XMLContentExporter");
 	}
 	//---------------------------------------------------------------------
-	Sequence< ::rtl::OUString > ORptContentExportHelper::getSupportedServiceNames_Static(  ) throw(RuntimeException)
+	Sequence< ::rtl::OUString > ORptContentExportHelper::getSupportedServiceNames_Static(  )
 	{
 		Sequence< ::rtl::OUString > aSupported(1);
 		aSupported[0] = ::rtl::OUString::createFromAscii("com.sun.star.document.ExportFilter");
@@ -116,12 +116,12 @@ namespace rptxml
     		EXPORT_FONTDECLS|EXPORT_OASIS ));
 	}
 	//---------------------------------------------------------------------
-	::rtl::OUString ORptStylesExportHelper::getImplementationName_Static(  ) throw (RuntimeException)
+	::rtl::OUString ORptStylesExportHelper::getImplementationName_Static(  )
 	{
 		return ::rtl::OUString::createFromAscii("com.sun.star.comp.report.XMLStylesExporter");
 	}
 	//---------------------------------------------------------------------
-    Sequence< ::rtl::OUString > ORptStylesExportHelper::getSupportedServiceNames_Static(  ) throw(RuntimeException)
+    Sequence< ::rtl::OUString > ORptStylesExportHelper::getSupportedServiceNames_Static(  )
 	{
 		Sequence< ::rtl::OUString > aSupported(1);
 		aSupported[0] = ::rtl::OUString::createFromAscii("com.sun.star.document.ExportFilter");
@@ -134,12 +134,12 @@ namespace rptxml
 		return static_cast< XServiceInfo* >(new ORptExport(Reference< XMultiServiceFactory >(xContext->getServiceManager(),UNO_QUERY),EXPORT_META ));
 	}
 	//---------------------------------------------------------------------
-	::rtl::OUString ORptMetaExportHelper::getImplementationName_Static(  ) throw (RuntimeException)
+	::rtl::OUString ORptMetaExportHelper::getImplementationName_Static(  )
 	{
 		return ::rtl::OUString::createFromAscii("com.sun.star.comp.report.XMLMetaExporter");
 	}
 	//---------------------------------------------------------------------
-	Sequence< ::rtl::OUString > ORptMetaExportHelper::getSupportedServiceNames_Static(  ) throw(RuntimeException)
+	Sequence< ::rtl::OUString > ORptMetaExportHelper::getSupportedServiceNames_Static(  )
 	{
 		Sequence< ::rtl::OUString > aSupported(1);
 		aSupported[0] = ::rtl::OUString::createFromAscii("com.sun.star.document.ExportFilter");
@@ -152,12 +152,12 @@ namespace rptxml
 		return static_cast< XServiceInfo* >(new ORptExport(Reference< XMultiServiceFactory >(xContext->getServiceManager(),UNO_QUERY),EXPORT_ALL));
 	}
 	//---------------------------------------------------------------------
-	::rtl::OUString ODBFullExportHelper::getImplementationName_Static(  ) throw (RuntimeException)
+	::rtl::OUString ODBFullExportHelper::getImplementationName_Static(  )
 	{
 		return ::rtl::OUString::createFromAscii("com.sun.star.comp.report.XMLFullExporter");
 	}
 	//---------------------------------------------------------------------
-	Sequence< ::rtl::OUString > ODBFullExportHelper::getSupportedServiceNames_Static(  ) throw(RuntimeException)
+	Sequence< ::rtl::OUString > ODBFullExportHelper::getSupportedServiceNames_Static(  )
 	{
 		Sequence< ::rtl::OUString > aSupported(1);
 		aSupported[0] = ::rtl::OUString::createFromAscii("com.sun.star.document.ExportFilter");
@@ -315,18 +315,18 @@ Reference< XInterface > ORptExport::create(Reference< XComponentContext > const 
 }
 
 // -----------------------------------------------------------------------------
-::rtl::OUString ORptExport::getImplementationName_Static(  ) throw(uno::RuntimeException)
+::rtl::OUString ORptExport::getImplementationName_Static(  )
 {
 	return ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.comp.report.ExportFilter"));
 }
 
 //--------------------------------------------------------------------------
-::rtl::OUString SAL_CALL ORptExport::getImplementationName(  ) throw(uno::RuntimeException)
+::rtl::OUString SAL_CALL ORptExport::getImplementationName(  )
 {
 	return getImplementationName_Static();
 }
 //--------------------------------------------------------------------------
-uno::Sequence< ::rtl::OUString > ORptExport::getSupportedServiceNames_Static(  ) throw(uno::RuntimeException)
+uno::Sequence< ::rtl::OUString > ORptExport::getSupportedServiceNames_Static(  )
 {
 	uno::Sequence< ::rtl::OUString > aServices(1);
 	aServices.getArray()[0] = ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.document.ExportFilter"));
@@ -334,12 +334,12 @@ uno::Sequence< ::rtl::OUString > ORptExport::getSupportedServiceNames_Static(  )
 	return aServices;
 }
 //--------------------------------------------------------------------------
-uno::Sequence< ::rtl::OUString > SAL_CALL ORptExport::getSupportedServiceNames(  ) throw(uno::RuntimeException)
+uno::Sequence< ::rtl::OUString > SAL_CALL ORptExport::getSupportedServiceNames(  )
 {
 	return getSupportedServiceNames_Static();
 }
 //------------------------------------------------------------------------------
-sal_Bool SAL_CALL ORptExport::supportsService(const ::rtl::OUString& ServiceName) throw( uno::RuntimeException )
+sal_Bool SAL_CALL ORptExport::supportsService(const ::rtl::OUString& ServiceName)
 {
     return ::comphelper::existsValue(ServiceName,getSupportedServiceNames_Static());
 }
@@ -1462,7 +1462,7 @@ SvXMLAutoStylePoolP* ORptExport::CreateAutoStylePool()
 	return new OXMLAutoStylePoolP(*this);
 }
 // -----------------------------------------------------------------------------
-void SAL_CALL ORptExport::setSourceDocument( const Reference< XComponent >& xDoc ) throw(IllegalArgumentException, RuntimeException)
+void SAL_CALL ORptExport::setSourceDocument( const Reference< XComponent >& xDoc )
 {
 	m_xReportDefinition.set(xDoc,UNO_QUERY_THROW);
 	OSL_ENSURE(m_xReportDefinition.is(),"DataSource is NULL!");

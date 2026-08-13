@@ -162,7 +162,7 @@ OTimeModel::~OTimeModel( )
 IMPLEMENT_DEFAULT_CLONING( OTimeModel )
 
 //------------------------------------------------------------------------------
-::rtl::OUString SAL_CALL OTimeModel::getServiceName() throw ( ::com::sun::star::uno::RuntimeException)
+::rtl::OUString SAL_CALL OTimeModel::getServiceName()
 {
 	return FRM_COMPONENT_TIMEFIELD;	// old (non-sun) name for compatibility !
 }
@@ -198,7 +198,7 @@ void SAL_CALL OTimeModel::getFastPropertyValue(Any& _rValue, sal_Int32 _nHandle 
 
 //------------------------------------------------------------------------------
 sal_Bool SAL_CALL OTimeModel::convertFastPropertyValue(Any& _rConvertedValue, Any& _rOldValue,
-		sal_Int32 _nHandle, const Any& _rValue ) throw(IllegalArgumentException)
+		sal_Int32 _nHandle, const Any& _rValue )
 {
 	if (PROPERTY_ID_FORMATKEY == _nHandle)
 		return convertFormatKeyPropertyValue(_rConvertedValue, _rOldValue, _rValue);
@@ -207,7 +207,7 @@ sal_Bool SAL_CALL OTimeModel::convertFastPropertyValue(Any& _rConvertedValue, An
 }
 
 //------------------------------------------------------------------------------
-void SAL_CALL OTimeModel::setFastPropertyValue_NoBroadcast(sal_Int32 _nHandle, const Any& _rValue) throw ( ::com::sun::star::uno::Exception)
+void SAL_CALL OTimeModel::setFastPropertyValue_NoBroadcast(sal_Int32 _nHandle, const Any& _rValue)
 {
 	if (PROPERTY_ID_FORMATKEY == _nHandle)
 		setFormatKeyPropertyValue(_rValue);

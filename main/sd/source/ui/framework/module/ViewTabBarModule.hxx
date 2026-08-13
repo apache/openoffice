@@ -76,14 +76,12 @@ public:
     // XConfigurationChangeListener
 
     virtual void SAL_CALL notifyConfigurationChange (
-        const css::drawing::framework::ConfigurationChangeEvent& rEvent)
-        throw (css::uno::RuntimeException);
+        const css::drawing::framework::ConfigurationChangeEvent& rEvent);
 
     // XEventListener
 
     virtual void SAL_CALL disposing (
-        const css::lang::EventObject& rEvent)
-        throw (css::uno::RuntimeException);
+        const css::lang::EventObject& rEvent);
 
 private:
     css::uno::Reference<

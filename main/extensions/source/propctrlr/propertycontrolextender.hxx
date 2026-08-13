@@ -52,10 +52,10 @@ namespace pcr
         );
 
         // XKeyListener
-        virtual void SAL_CALL keyPressed( const ::com::sun::star::awt::KeyEvent& e ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL keyReleased( const ::com::sun::star::awt::KeyEvent& e ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL keyPressed( const ::com::sun::star::awt::KeyEvent& e );
+        virtual void SAL_CALL keyReleased( const ::com::sun::star::awt::KeyEvent& e );
         // XEventListener
-        virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw (::com::sun::star::uno::RuntimeException);
+        virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
     protected:
         virtual ~PropertyControlExtender();

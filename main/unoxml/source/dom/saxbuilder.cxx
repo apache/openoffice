@@ -62,19 +62,16 @@ namespace DOM
     }
 
     Sequence< OUString > SAL_CALL CSAXDocumentBuilder::getSupportedServiceNames()
-        throw (RuntimeException)
     {
         return CSAXDocumentBuilder::_getSupportedServiceNames();
     }
 
     OUString SAL_CALL CSAXDocumentBuilder::getImplementationName()
-        throw (RuntimeException)
     {
         return CSAXDocumentBuilder::_getImplementationName();
     }
 
     sal_Bool SAL_CALL CSAXDocumentBuilder::supportsService(const OUString& aServiceName)
-        throw (RuntimeException)
     {
         Sequence< OUString > supported = CSAXDocumentBuilder::_getSupportedServiceNames();
         for (sal_Int32 i=0; i<supported.getLength(); i++)
@@ -86,7 +83,6 @@ namespace DOM
 
 
     SAXDocumentBuilderState SAL_CALL CSAXDocumentBuilder::getState()
-        throw (RuntimeException)
     {
         ::osl::MutexGuard g(m_Mutex);
 
@@ -94,7 +90,6 @@ namespace DOM
     }
 
     void SAL_CALL CSAXDocumentBuilder::reset()
-        throw (RuntimeException)
     {
         ::osl::MutexGuard g(m_Mutex);
 
@@ -106,7 +101,6 @@ namespace DOM
     }
 
     Reference< XDocument > SAL_CALL CSAXDocumentBuilder::getDocument()
-        throw (RuntimeException)
     {
         ::osl::MutexGuard g(m_Mutex);
 
@@ -117,7 +111,6 @@ namespace DOM
     }
 
     Reference< XDocumentFragment > SAL_CALL CSAXDocumentBuilder::getDocumentFragment()
-         throw (RuntimeException)
     {
         ::osl::MutexGuard g(m_Mutex);
 
@@ -127,7 +120,6 @@ namespace DOM
     }
 
     void SAL_CALL CSAXDocumentBuilder::startDocumentFragment(const Reference< XDocument >& ownerDoc)
-        throw (RuntimeException)
     {
         ::osl::MutexGuard g(m_Mutex);
 
@@ -144,7 +136,6 @@ namespace DOM
     }
 
     void SAL_CALL CSAXDocumentBuilder::endDocumentFragment()
-        throw (RuntimeException)
     {
         ::osl::MutexGuard g(m_Mutex);
 
@@ -161,7 +152,7 @@ namespace DOM
 
     // document handler
 
-    void SAL_CALL  CSAXDocumentBuilder::startDocument() throw (RuntimeException, SAXException)
+    void SAL_CALL  CSAXDocumentBuilder::startDocument()
     {
         ::osl::MutexGuard g(m_Mutex);
 
@@ -178,7 +169,7 @@ namespace DOM
         m_aState = SAXDocumentBuilderState_BUILDING_DOCUMENT;
     }
 
-    void SAL_CALL CSAXDocumentBuilder::endDocument() throw (RuntimeException, SAXException)
+    void SAL_CALL CSAXDocumentBuilder::endDocument()
     {
         ::osl::MutexGuard g(m_Mutex);
 
@@ -194,7 +185,6 @@ namespace DOM
     }
 
     void SAL_CALL CSAXDocumentBuilder::startElement(const OUString& aName, const Reference< XAttributeList>& attribs)
-        throw (RuntimeException, SAXException)
     {
         ::osl::MutexGuard g(m_Mutex);
 
@@ -297,7 +287,6 @@ namespace DOM
     }
 
     void SAL_CALL CSAXDocumentBuilder::endElement(const OUString& aName)
-        throw (RuntimeException, SAXException)
     {
         ::osl::MutexGuard g(m_Mutex);
 
@@ -326,7 +315,6 @@ namespace DOM
     }
 
     void SAL_CALL CSAXDocumentBuilder::characters(const OUString& aChars)
-        throw (RuntimeException, SAXException)
     {
         ::osl::MutexGuard g(m_Mutex);
 
@@ -340,7 +328,6 @@ namespace DOM
     }
 
     void SAL_CALL CSAXDocumentBuilder::ignorableWhitespace(const OUString& )
-        throw (RuntimeException, SAXException)
     {
         ::osl::MutexGuard g(m_Mutex);
 
@@ -351,7 +338,6 @@ namespace DOM
     }
 
     void SAL_CALL CSAXDocumentBuilder::processingInstruction(const OUString& aTarget, const OUString& aData)
-        throw (RuntimeException, SAXException)
     {
         ::osl::MutexGuard g(m_Mutex);
 
@@ -366,7 +352,6 @@ namespace DOM
     }
 
     void SAL_CALL CSAXDocumentBuilder::setDocumentLocator(const Reference< XLocator >& aLocator)
-        throw (RuntimeException, SAXException)
     {
         ::osl::MutexGuard g(m_Mutex);
 

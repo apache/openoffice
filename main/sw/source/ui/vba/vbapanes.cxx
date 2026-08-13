@@ -40,21 +40,21 @@ public:
     ~PanesIndexAccess(){}
 
     // XIndexAccess
-    virtual sal_Int32 SAL_CALL getCount(  ) throw (uno::RuntimeException)
+    virtual sal_Int32 SAL_CALL getCount(  )
     {
         return 1;
     }
-    virtual uno::Any SAL_CALL getByIndex( sal_Int32 Index ) throw (lang::IndexOutOfBoundsException, lang::WrappedTargetException, uno::RuntimeException)
+    virtual uno::Any SAL_CALL getByIndex( sal_Int32 Index )
     {
         if( Index != 1 )
             throw container::NoSuchElementException();
         return uno::makeAny( uno::Reference< word::XPane >( new SwVbaPane( mxParent,  mxContext, mxModel ) ) );
     }
-    virtual uno::Type SAL_CALL getElementType(  ) throw (uno::RuntimeException)
+    virtual uno::Type SAL_CALL getElementType(  )
     {
         return word::XPane::static_type(0);
     }
-    virtual sal_Bool SAL_CALL hasElements(  ) throw (uno::RuntimeException)
+    virtual sal_Bool SAL_CALL hasElements(  )
     {
         return sal_True;
     }
@@ -66,12 +66,12 @@ class PanesEnumWrapper : public EnumerationHelper_BASE
 	sal_Int32 nIndex;
 public:
 	PanesEnumWrapper( const uno::Reference< container::XIndexAccess >& xIndexAccess ) : m_xIndexAccess( xIndexAccess ), nIndex( 0 ) {}
-	virtual ::sal_Bool SAL_CALL hasMoreElements(  ) throw (uno::RuntimeException)
+	virtual ::sal_Bool SAL_CALL hasMoreElements(  )
 	{
 		return ( nIndex < m_xIndexAccess->getCount() );
 	}
 
-	virtual uno::Any SAL_CALL nextElement(  ) throw (container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException)
+	virtual uno::Any SAL_CALL nextElement(  )
 	{
 		if ( nIndex < m_xIndexAccess->getCount() )
 			return m_xIndexAccess->getByIndex( nIndex++ );
@@ -84,12 +84,12 @@ SwVbaPanes::SwVbaPanes( const uno::Reference< XHelperInterface >& xParent, const
 }
 // XEnumerationAccess
 uno::Type
-SwVbaPanes::getElementType() throw (uno::RuntimeException)
+SwVbaPanes::getElementType()
 {
 	return word::XPane::static_type(0);
 }
 uno::Reference< container::XEnumeration >
-SwVbaPanes::createEnumeration() throw (uno::RuntimeException)
+SwVbaPanes::createEnumeration()
 {
     return new PanesEnumWrapper( m_xIndexAccess );
 }

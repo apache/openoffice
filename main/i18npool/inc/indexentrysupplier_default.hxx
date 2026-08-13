@@ -39,22 +39,18 @@ public:
 
 	virtual sal_Bool SAL_CALL loadAlgorithm(
 		const com::sun::star::lang::Locale& rLocale,
-		const rtl::OUString& SortAlgorithm, sal_Int32 collatorOptions )
-		throw (com::sun::star::uno::RuntimeException);
+		const rtl::OUString& SortAlgorithm, sal_Int32 collatorOptions );
 
 	virtual rtl::OUString SAL_CALL getIndexKey( const rtl::OUString& IndexEntry,
-		const rtl::OUString& PhoneticEntry, const com::sun::star::lang::Locale& rLocale )
-		throw (com::sun::star::uno::RuntimeException);
+		const rtl::OUString& PhoneticEntry, const com::sun::star::lang::Locale& rLocale );
 
 	virtual sal_Int16 SAL_CALL compareIndexEntry( const rtl::OUString& IndexEntry1,
 		const rtl::OUString& PhoneticEntry1, const com::sun::star::lang::Locale& rLocale1,
 		const rtl::OUString& IndexEntry2, const ::rtl::OUString& PhoneticEntry2,
-		const com::sun::star::lang::Locale& rLocale2 )
-		throw (com::sun::star::uno::RuntimeException);
+		const com::sun::star::lang::Locale& rLocale2 );
 
 	virtual rtl::OUString SAL_CALL getIndexCharacter( const rtl::OUString& rIndexEntry,
-		const com::sun::star::lang::Locale& rLocale, const rtl::OUString& rSortAlgorithm )
-		throw (com::sun::star::uno::RuntimeException);
+		const com::sun::star::lang::Locale& rLocale, const rtl::OUString& rSortAlgorithm );
 
 private:
     Index *index;
@@ -88,9 +84,9 @@ public:
     Index(const com::sun::star::uno::Reference < com::sun::star::lang::XMultiServiceFactory >& rxMSF);
     ~Index();
 
-    void init(const com::sun::star::lang::Locale& rLocale, const rtl::OUString& algorithm) throw (com::sun::star::uno::RuntimeException);
+    void init(const com::sun::star::lang::Locale& rLocale, const rtl::OUString& algorithm);
 
-    void makeIndexKeys(const com::sun::star::lang::Locale &rLocale, const rtl::OUString &algorithm) throw (com::sun::star::uno::RuntimeException);
+    void makeIndexKeys(const com::sun::star::lang::Locale &rLocale, const rtl::OUString &algorithm);
     sal_Int16 getIndexWeight(const rtl::OUString& rIndexEntry);
     rtl::OUString getIndexDescription(const rtl::OUString& rIndexEntry);
 

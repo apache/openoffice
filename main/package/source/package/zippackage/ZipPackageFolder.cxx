@@ -194,7 +194,6 @@ const ::com::sun::star::uno::Sequence < sal_Int8 >& ZipPackageFolder::static_get
 
 	// XNameContainer
 void SAL_CALL ZipPackageFolder::insertByName( const ::rtl::OUString& aName, const uno::Any& aElement )
-		throw(IllegalArgumentException, ElementExistException, WrappedTargetException, uno::RuntimeException)
 {
 	if (hasByName(aName))
 		throw ElementExistException( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( OSL_LOG_PREFIX ) ), uno::Reference< uno::XInterface >() );
@@ -228,7 +227,6 @@ void SAL_CALL ZipPackageFolder::insertByName( const ::rtl::OUString& aName, cons
 	}
 }
 void SAL_CALL ZipPackageFolder::removeByName( const ::rtl::OUString& Name )
-		throw(NoSuchElementException, WrappedTargetException, uno::RuntimeException)
 {
 	ContentHash::iterator aIter = maContents.find ( Name );
 	if ( aIter == maContents.end() )
@@ -237,24 +235,20 @@ void SAL_CALL ZipPackageFolder::removeByName( const ::rtl::OUString& Name )
 }
 	// XEnumerationAccess
 uno::Reference< XEnumeration > SAL_CALL ZipPackageFolder::createEnumeration(  )
-		throw(uno::RuntimeException)
 {
 	return uno::Reference < XEnumeration> (new ZipPackageFolderEnumeration(maContents));
 }
 	// XElementAccess
 uno::Type SAL_CALL ZipPackageFolder::getElementType(  )
-		throw(uno::RuntimeException)
 {
 	return ::getCppuType ((const uno::Reference< XUnoTunnel > *) 0);
 }
 sal_Bool SAL_CALL ZipPackageFolder::hasElements(  )
-		throw(uno::RuntimeException)
 {
 	return maContents.size() > 0;
 }
 	// XNameAccess
 ContentInfo& ZipPackageFolder::doGetByName( const ::rtl::OUString& aName )
-	throw(NoSuchElementException, WrappedTargetException, uno::RuntimeException)
 {
 	ContentHash::iterator aIter = maContents.find ( aName );
 	if ( aIter == maContents.end())
@@ -262,12 +256,10 @@ ContentInfo& ZipPackageFolder::doGetByName( const ::rtl::OUString& aName )
 	return *(*aIter).second;
 }
 uno::Any SAL_CALL ZipPackageFolder::getByName( const ::rtl::OUString& aName )
-	throw(NoSuchElementException, WrappedTargetException, uno::RuntimeException)
 {
 	return uno::makeAny ( doGetByName ( aName ).xTunnel );
 }
 uno::Sequence< ::rtl::OUString > SAL_CALL ZipPackageFolder::getElementNames(  )
-		throw(uno::RuntimeException)
 {
 	sal_uInt32 i=0, nSize = maContents.size();
 	uno::Sequence < ::rtl::OUString > aSequence ( nSize );
@@ -278,13 +270,11 @@ uno::Sequence< ::rtl::OUString > SAL_CALL ZipPackageFolder::getElementNames(  )
 	return aSequence;
 }
 sal_Bool SAL_CALL ZipPackageFolder::hasByName( const ::rtl::OUString& aName )
-	throw(uno::RuntimeException)
 {
 	return maContents.find ( aName ) != maContents.end ();
 }
 	// XNameReplace
 void SAL_CALL ZipPackageFolder::replaceByName( const ::rtl::OUString& aName, const uno::Any& aElement )
-		throw(IllegalArgumentException, NoSuchElementException, WrappedTargetException, uno::RuntimeException)
 {
 	if ( hasByName( aName ) )
 		removeByName( aName );
@@ -687,7 +677,6 @@ bool ZipPackageFolder::saveChild( const ::rtl::OUString &rShortName, const Conte
 }
 
 void ZipPackageFolder::saveContents( ::rtl::OUString &rPath, std::vector < uno::Sequence < PropertyValue > > &rManList, ZipOutputStream & rZipOut, const uno::Sequence < sal_Int8 >& rEncryptionKey, rtlRandomPool &rRandomPool )
-	throw( uno::RuntimeException )
 {
 	bool bWritingFailed = false;
 
@@ -773,7 +762,6 @@ void ZipPackageFolder::releaseUpwardRef( void )
 }
 
 sal_Int64 SAL_CALL ZipPackageFolder::getSomething( const uno::Sequence< sal_Int8 >& aIdentifier )
-	throw(uno::RuntimeException)
 {
 	sal_Int64 nMe = 0;
 	if ( aIdentifier.getLength() == 16 &&
@@ -782,7 +770,6 @@ sal_Int64 SAL_CALL ZipPackageFolder::getSomething( const uno::Sequence< sal_Int8
 	return nMe;
 }
 void SAL_CALL ZipPackageFolder::setPropertyValue( const ::rtl::OUString& aPropertyName, const uno::Any& aValue )
-		throw(UnknownPropertyException, PropertyVetoException, IllegalArgumentException, WrappedTargetException, uno::RuntimeException)
 {
 	if (aPropertyName.equalsAsciiL(RTL_CONSTASCII_STRINGPARAM("MediaType")))
 	{
@@ -800,7 +787,6 @@ void SAL_CALL ZipPackageFolder::setPropertyValue( const ::rtl::OUString& aProper
 		throw UnknownPropertyException( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( OSL_LOG_PREFIX ) ), uno::Reference< uno::XInterface >() );
 }
 uno::Any SAL_CALL ZipPackageFolder::getPropertyValue( const ::rtl::OUString& PropertyName )
-		throw(UnknownPropertyException, WrappedTargetException, uno::RuntimeException)
 {
 	if (PropertyName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( "MediaType" ) ) )
 	{
@@ -819,7 +805,6 @@ uno::Any SAL_CALL ZipPackageFolder::getPropertyValue( const ::rtl::OUString& Pro
 }
 
 void ZipPackageFolder::doInsertByName ( ZipPackageEntry *pEntry, sal_Bool bSetParent )
-		throw(IllegalArgumentException, ElementExistException, WrappedTargetException, uno::RuntimeException)
 {
 	try
     {
@@ -837,20 +822,17 @@ void ZipPackageFolder::doInsertByName ( ZipPackageEntry *pEntry, sal_Bool bSetPa
 		pEntry->setParent ( *this );
 }
 ::rtl::OUString ZipPackageFolder::getImplementationName()
-	throw (uno::RuntimeException)
 {
 	return ::rtl::OUString ( RTL_CONSTASCII_USTRINGPARAM ( "ZipPackageFolder" ) );
 }
 
 uno::Sequence< ::rtl::OUString > ZipPackageFolder::getSupportedServiceNames()
-	throw (uno::RuntimeException)
 {
 	uno::Sequence< ::rtl::OUString > aNames(1);
 	aNames[0] = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM ( "com.sun.star.packages.PackageFolder" ) );
 	return aNames;
 }
 sal_Bool SAL_CALL ZipPackageFolder::supportsService( ::rtl::OUString const & rServiceName )
-	throw (uno::RuntimeException)
 {
 	return rServiceName == getSupportedServiceNames()[0];
 }

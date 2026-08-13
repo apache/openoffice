@@ -53,28 +53,20 @@ public:
 
     //=====  XAccessibleAction  ===============================================
 
-    sal_Int32 SAL_CALL getAccessibleActionCount (void)
-        throw (::com::sun::star::uno::RuntimeException);
+    sal_Int32 SAL_CALL getAccessibleActionCount (void);
 
-    sal_Bool SAL_CALL doAccessibleAction (sal_Int32 nIndex)
-        throw (::com::sun::star::lang::IndexOutOfBoundsException,
-            ::com::sun::star::uno::RuntimeException);
+    sal_Bool SAL_CALL doAccessibleAction (sal_Int32 nIndex);
 
-    ::rtl::OUString SAL_CALL getAccessibleActionDescription (sal_Int32 nIndex)
-        throw (::com::sun::star::lang::IndexOutOfBoundsException,
-            ::com::sun::star::uno::RuntimeException);
+    ::rtl::OUString SAL_CALL getAccessibleActionDescription (sal_Int32 nIndex);
 
     ::com::sun::star::uno::Reference<
         ::com::sun::star::accessibility::XAccessibleKeyBinding> SAL_CALL getAccessibleActionKeyBinding (
-            sal_Int32 nIndex)
-        throw (::com::sun::star::lang::IndexOutOfBoundsException,
-            ::com::sun::star::uno::RuntimeException);
+            sal_Int32 nIndex);
 
     //=====  XInterface  ======================================================
 
     virtual com::sun::star::uno::Any SAL_CALL
-        queryInterface (const com::sun::star::uno::Type & rType)
-        throw (::com::sun::star::uno::RuntimeException);
+        queryInterface (const com::sun::star::uno::Type & rType);
 
     virtual void SAL_CALL
         acquire (void)
@@ -87,30 +79,25 @@ public:
 	//=====  XServiceInfo  ====================================================
 
 	virtual ::rtl::OUString SAL_CALL
-    	getImplementationName (void)
-	    throw (::com::sun::star::uno::RuntimeException);
+    	getImplementationName (void);
 
     virtual ::com::sun::star::uno::Sequence< ::rtl::OUString> SAL_CALL
-        getSupportedServiceNames (void)
-        throw (::com::sun::star::uno::RuntimeException);
+        getSupportedServiceNames (void);
 
     //=====  XTypeProvider  ===================================================
 
     virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type> SAL_CALL
-        getTypes (void)
-        throw (::com::sun::star::uno::RuntimeException);
+        getTypes (void);
 // ====== XAccessibleExtendedAttributes =====================================
-    virtual ::com::sun::star::uno::Any SAL_CALL getExtendedAttributes() throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException) ;
+    virtual ::com::sun::star::uno::Any SAL_CALL getExtendedAttributes() ;
 protected:
     ///	Create a name string that contains the accessible name.
 	virtual ::rtl::OUString
-    	CreateAccessibleBaseName ()
-        throw (::com::sun::star::uno::RuntimeException);
+    	CreateAccessibleBaseName ();
 
     ///	Create a description string that contains the accessible description.
 	virtual ::rtl::OUString
-    	CreateAccessibleDescription ()
-        throw (::com::sun::star::uno::RuntimeException);
+    	CreateAccessibleDescription ();
 
 private:
     /** Don't use the default constructor.  Use the public constructor that

@@ -105,7 +105,7 @@ sal_Bool UnoPropertyArrayHelper::fillPropertyMembersByHandle( ::rtl::OUString * 
 	return aProps;
 }
 
-::com::sun::star::beans::Property UnoPropertyArrayHelper::getPropertyByName(const ::rtl::OUString& rPropertyName) throw (::com::sun::star::beans::UnknownPropertyException)
+::com::sun::star::beans::Property UnoPropertyArrayHelper::getPropertyByName(const ::rtl::OUString& rPropertyName)
 {
 	::com::sun::star::beans::Property aProp;
 	sal_uInt16 nId = GetPropertyId( rPropertyName );

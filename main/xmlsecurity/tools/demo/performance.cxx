@@ -390,66 +390,49 @@ public:
 	/* XSignatureCreationResultListener */
 	virtual void SAL_CALL signatureCreated(
 		sal_Int32 securityId,
-		com::sun::star::xml::crypto::SecurityOperationStatus creationResult )
-		throw (com::sun::star::uno::RuntimeException);
+		com::sun::star::xml::crypto::SecurityOperationStatus creationResult );
 
 	/* XSignatureVerifyResultListener */
 	virtual void SAL_CALL signatureVerified(
 		sal_Int32 securityId,
-		com::sun::star::xml::crypto::SecurityOperationStatus verifyResult )
-		throw (com::sun::star::uno::RuntimeException);
+		com::sun::star::xml::crypto::SecurityOperationStatus verifyResult );
 
 	/* XSAXEventKeeperStatusChangeListener */
-	virtual void SAL_CALL blockingStatusChanged( sal_Bool isBlocking )
-		throw (com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL blockingStatusChanged( sal_Bool isBlocking );
 	virtual void SAL_CALL collectionStatusChanged(
-		sal_Bool isInsideCollectedElement )
-		throw (com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL bufferStatusChanged( sal_Bool isBufferEmpty )
-		throw (com::sun::star::uno::RuntimeException);
+		sal_Bool isInsideCollectedElement );
+	virtual void SAL_CALL bufferStatusChanged( sal_Bool isBufferEmpty );
 
 	/* XXMLSecTester */
 	virtual rtl::OUString SAL_CALL transfer_without_sec(
 		const rtl::OUString& inputFileName,
 		const rtl::OUString& outputFileName,
-		sal_Bool isBridgeInvolved)
-		throw (com::sun::star::uno::RuntimeException);
+		sal_Bool isBridgeInvolved);
 	virtual rtl::OUString SAL_CALL export_xml(
 		const rtl::OUString& inputFileName,
 		const rtl::OUString& outputFileName,
-		sal_Bool isJavaBased)
-		throw (com::sun::star::uno::RuntimeException);
+		sal_Bool isJavaBased);
 	virtual rtl::OUString SAL_CALL import_xml(
 		const rtl::OUString& inputFileName,
 		const rtl::OUString& outputFileName,
-		sal_Bool isJavaBased)
-		throw (com::sun::star::uno::RuntimeException);
+		sal_Bool isJavaBased);
 
 	virtual void SAL_CALL setCryptoDir(
 		const rtl::OUString & javaDirName,
-		const rtl::OUString & cDirName)
-		throw (com::sun::star::uno::RuntimeException);
+		const rtl::OUString & cDirName);
 
 	/* XDocumentHandler */
-	virtual void SAL_CALL endDocument()
-		throw (com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL startDocument()
-		throw (com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL characters(const class rtl::OUString&)
-		throw (com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL processingInstruction(const rtl::OUString&, const rtl::OUString&)
-		throw (com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL ignorableWhitespace(const rtl::OUString&)
-		throw (com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL endDocument();
+	virtual void SAL_CALL startDocument();
+	virtual void SAL_CALL characters(const class rtl::OUString&);
+	virtual void SAL_CALL processingInstruction(const rtl::OUString&, const rtl::OUString&);
+	virtual void SAL_CALL ignorableWhitespace(const rtl::OUString&);
 	virtual void SAL_CALL startElement(
 		const rtl::OUString&,
-		const com::sun::star::uno::Reference< com::sun::star::xml::sax::XAttributeList >&)
-		throw (com::sun::star::uno::RuntimeException);
-	virtual void SAL_CALL endElement(const rtl::OUString&)
-		throw (com::sun::star::uno::RuntimeException);
+		const com::sun::star::uno::Reference< com::sun::star::xml::sax::XAttributeList >&);
+	virtual void SAL_CALL endElement(const rtl::OUString&);
 	virtual void SAL_CALL setDocumentLocator(
-		const com::sun::star::uno::Reference< com::sun::star::xml::sax::XLocator >&)
-		throw (com::sun::star::uno::RuntimeException);
+		const com::sun::star::uno::Reference< com::sun::star::xml::sax::XLocator >&);
 };
 
 rtl::OUString XSecTester::parseFile(
@@ -603,7 +586,6 @@ rtl::OUString XSecTester::parseFile(
 void SAL_CALL XSecTester::signatureCreated(
 	sal_Int32 securityId,
 	cssxc::SecurityOperationStatus creationResult )
-	throw (cssu::RuntimeException)
 {
 	m_nTotalSignatureNumber++;
 	if (creationResult == cssxc::SecurityOperationStatus_OPERATION_SUCCEEDED)
@@ -616,7 +598,6 @@ void SAL_CALL XSecTester::signatureCreated(
 void SAL_CALL XSecTester::signatureVerified(
 	sal_Int32 securityId,
 	cssxc::SecurityOperationStatus verifyResult )
-	throw (cssu::RuntimeException)
 {
 	m_nTotalSignatureNumber++;
 	if (verifyResult == cssxc::SecurityOperationStatus_OPERATION_SUCCEEDED)
@@ -627,13 +608,11 @@ void SAL_CALL XSecTester::signatureVerified(
 
 /* XSAXEventKeeperStatusChangeListener */
 void SAL_CALL XSecTester::blockingStatusChanged( sal_Bool isBlocking )
-	throw (cssu::RuntimeException)
 {
 	this->m_bIsBlocking = isBlocking;
 }
 
 void SAL_CALL XSecTester::collectionStatusChanged( sal_Bool isInsideCollectedElement )
-	throw (cssu::RuntimeException)
 {
 	this->m_bIsInsideCollectedElement = isInsideCollectedElement;
 
@@ -649,7 +628,6 @@ void SAL_CALL XSecTester::collectionStatusChanged( sal_Bool isInsideCollectedEle
 }
 
 void SAL_CALL XSecTester::bufferStatusChanged( sal_Bool isBufferEmpty )
-	throw (cssu::RuntimeException)
 {
 	if (isBufferEmpty)
 	{
@@ -663,7 +641,6 @@ void SAL_CALL XSecTester::bufferStatusChanged( sal_Bool isBufferEmpty )
 
 /* XXMLSecTester */
 rtl::OUString SAL_CALL XSecTester::export_xml( const rtl::OUString& inputFileName, const rtl::OUString& outputFileName, sal_Bool isJavaBased)
-	throw (cssu::RuntimeException)
 {
 	rtl::OUString ouMessage;
 
@@ -681,7 +658,6 @@ rtl::OUString SAL_CALL XSecTester::export_xml( const rtl::OUString& inputFileNam
 }
 
 rtl::OUString SAL_CALL XSecTester::import_xml( const rtl::OUString& inputFileName, const rtl::OUString& outputFileName, sal_Bool isJavaBased)
-	throw (cssu::RuntimeException)
 {
 	rtl::OUString ouMessage;
 
@@ -702,7 +678,6 @@ rtl::OUString SAL_CALL XSecTester::transfer_without_sec(
 	const rtl::OUString& inputFileName,
 	const rtl::OUString& outputFileName,
 	sal_Bool isBridgeInvolved)
-	throw (cssu::RuntimeException)
 {
 	rtl::OUString ouMessage;
 
@@ -778,7 +753,6 @@ rtl::OUString SAL_CALL XSecTester::transfer_without_sec(
 }
 
 void SAL_CALL XSecTester::setCryptoDir(const rtl::OUString & javaDirName, const rtl::OUString & cDirName)
-	throw (cssu::RuntimeException)
 {
 	m_ouJavaCryptokenDir = javaDirName;
 	m_ouCCryptokenDir = cDirName;
@@ -787,7 +761,6 @@ void SAL_CALL XSecTester::setCryptoDir(const rtl::OUString & javaDirName, const 
 
 cssu::Reference< cssu::XInterface > SAL_CALL XSecTester_createInstance(
 	const cssu::Reference< cssl::XMultiServiceFactory > & rSMgr)
-	throw( cssu::Exception )
 {
 	return (cppu::OWeakObject*) new XSecTester( rSMgr );
 }
@@ -1020,35 +993,29 @@ bool SignatureEntity::setReference(const rtl::OUString& ouUri, bool bIsExporting
 
 /* XDocumentHandler */
 void SAL_CALL XSecTester::startDocument()
-	throw (cssu::RuntimeException)
 {
 }
 
 void SAL_CALL XSecTester::endDocument()
-	throw (cssu::RuntimeException)
 {
 }
 
 void SAL_CALL XSecTester::characters(const class rtl::OUString & chars)
-	throw (cssu::RuntimeException)
 {
 	m_xExportHandler->characters(chars);
 }
 
 void SAL_CALL XSecTester::processingInstruction(const rtl::OUString & target, const rtl::OUString &data)
-	throw (cssu::RuntimeException)
 {
 	m_xExportHandler->processingInstruction(target, data);
 }
 
 void SAL_CALL XSecTester::ignorableWhitespace(const rtl::OUString &)
-	throw (cssu::RuntimeException)
 {
 
 }
 
 void SAL_CALL XSecTester::startElement(const rtl::OUString & name, const cssu::Reference<cssxs::XAttributeList> &xAttribs)
-	throw (cssu::RuntimeException)
 {
 	rtl::OUString ouIdAttr = xAttribs->getValueByName(
 		rtl::OUString(RTL_ASCII_USTRINGPARAM("id")));
@@ -1097,7 +1064,6 @@ void SAL_CALL XSecTester::startElement(const rtl::OUString & name, const cssu::R
 }
 
 void SAL_CALL XSecTester::endElement(const rtl::OUString& name)
-	throw (cssu::RuntimeException)
 {
 	if (!m_stCurrentPath.empty())
 	{
@@ -1131,7 +1097,6 @@ void SAL_CALL XSecTester::endElement(const rtl::OUString& name)
 }
 
 void SAL_CALL XSecTester::setDocumentLocator( const cssu::Reference<cssxs::XLocator>& )
-	throw (cssu::RuntimeException)
 {
 }
 

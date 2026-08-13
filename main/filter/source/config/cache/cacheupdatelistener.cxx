@@ -125,7 +125,6 @@ void CacheUpdateListener::stopListening()
     07.03.2004 08:17
 -----------------------------------------------*/
 void SAL_CALL  CacheUpdateListener::changesOccurred(const css::util::ChangesEvent& aEvent)
-    throw(css::uno::RuntimeException)
 {
     // SAFE ->
     ::osl::ResettableMutexGuard aLock(m_aLock);
@@ -228,7 +227,6 @@ void SAL_CALL  CacheUpdateListener::changesOccurred(const css::util::ChangesEven
     05.03.2004 08:44
 -----------------------------------------------*/
 void SAL_CALL CacheUpdateListener::disposing(const css::lang::EventObject& aEvent)
-    throw(css::uno::RuntimeException)
 {
     // SAFE ->
     ::osl::ResettableMutexGuard aLock(m_aLock);

@@ -35,7 +35,7 @@ SwVbaWrapFormat::SwVbaWrapFormat( uno::Sequence< uno::Any > const& aArgs, uno::R
     m_xPropertySet.set( m_xShape, uno::UNO_QUERY_THROW );
 }
 
-void SwVbaWrapFormat::makeWrap() throw (uno::RuntimeException)
+void SwVbaWrapFormat::makeWrap()
 {
     text::WrapTextMode eTextMode = text::WrapTextMode_NONE;
     if( mnSide == word::WdWrapSideType::wdWrapLeft )
@@ -84,7 +84,7 @@ void SwVbaWrapFormat::makeWrap() throw (uno::RuntimeException)
     m_xPropertySet->setPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("TextWrap") ), uno::makeAny( eTextMode ) );
 }
 
-::sal_Int32 SAL_CALL SwVbaWrapFormat::getType() throw (uno::RuntimeException)
+::sal_Int32 SAL_CALL SwVbaWrapFormat::getType()
 {
     sal_Int32 nType = word::WdWrapType::wdWrapSquare;
     text::WrapTextMode eTextMode;
@@ -126,13 +126,13 @@ void SwVbaWrapFormat::makeWrap() throw (uno::RuntimeException)
     return nType;
 }
 
-void SAL_CALL SwVbaWrapFormat::setType( ::sal_Int32 _type ) throw (uno::RuntimeException)
+void SAL_CALL SwVbaWrapFormat::setType( ::sal_Int32 _type )
 {
     mnWrapFormatType = _type;
     makeWrap();
 }
 
-::sal_Int32 SAL_CALL SwVbaWrapFormat::getSide() throw (uno::RuntimeException)
+::sal_Int32 SAL_CALL SwVbaWrapFormat::getSide()
 {
     sal_Int32 nSide = word::WdWrapSideType::wdWrapBoth;
     text::WrapTextMode eTextMode;
@@ -157,61 +157,61 @@ void SAL_CALL SwVbaWrapFormat::setType( ::sal_Int32 _type ) throw (uno::RuntimeE
     return nSide;
 }
 
-void SAL_CALL SwVbaWrapFormat::setSide( ::sal_Int32 _side ) throw (uno::RuntimeException)
+void SAL_CALL SwVbaWrapFormat::setSide( ::sal_Int32 _side )
 {
     mnSide = _side;
     makeWrap();
 }
 
-float SwVbaWrapFormat::getDistance( const rtl::OUString& sName ) throw (uno::RuntimeException)
+float SwVbaWrapFormat::getDistance( const rtl::OUString& sName )
 {
     sal_Int32 nDistance = 0;
     m_xPropertySet->getPropertyValue( sName ) >>= nDistance;
     return static_cast< float >( Millimeter::getInPoints( nDistance ) );
 }
 
-void SwVbaWrapFormat::setDistance( const rtl::OUString& sName, float _distance ) throw (uno::RuntimeException)
+void SwVbaWrapFormat::setDistance( const rtl::OUString& sName, float _distance )
 {
     sal_Int32 nDistance = Millimeter::getInHundredthsOfOneMillimeter( _distance );
     m_xPropertySet->setPropertyValue( sName, uno::makeAny( nDistance ) );
 }
 
-float SAL_CALL SwVbaWrapFormat::getDistanceTop() throw (uno::RuntimeException)
+float SAL_CALL SwVbaWrapFormat::getDistanceTop()
 {
     return getDistance( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("TopMargin") ) );
 }
 
-void SAL_CALL SwVbaWrapFormat::setDistanceTop( float _distancetop ) throw (uno::RuntimeException)
+void SAL_CALL SwVbaWrapFormat::setDistanceTop( float _distancetop )
 {
     setDistance( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("TopMargin") ), _distancetop );
 }
 
-float SAL_CALL SwVbaWrapFormat::getDistanceBottom() throw (uno::RuntimeException)
+float SAL_CALL SwVbaWrapFormat::getDistanceBottom()
 {
     return getDistance( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("BottomMargin") ) );
 }
 
-void SAL_CALL SwVbaWrapFormat::setDistanceBottom( float _distancebottom ) throw (uno::RuntimeException)
+void SAL_CALL SwVbaWrapFormat::setDistanceBottom( float _distancebottom )
 {
     setDistance( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("BottomMargin") ), _distancebottom );
 }
 
-float SAL_CALL SwVbaWrapFormat::getDistanceLeft() throw (uno::RuntimeException)
+float SAL_CALL SwVbaWrapFormat::getDistanceLeft()
 {
     return getDistance( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("LeftMargin") ) );
 }
 
-void SAL_CALL SwVbaWrapFormat::setDistanceLeft( float _distanceleft ) throw (uno::RuntimeException)
+void SAL_CALL SwVbaWrapFormat::setDistanceLeft( float _distanceleft )
 {
     setDistance( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("LeftMargin") ), _distanceleft );
 }
 
-float SAL_CALL SwVbaWrapFormat::getDistanceRight() throw (uno::RuntimeException)
+float SAL_CALL SwVbaWrapFormat::getDistanceRight()
 {
     return getDistance( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("RightMargin") ) );
 }
 
-void SAL_CALL SwVbaWrapFormat::setDistanceRight( float _distanceright ) throw (uno::RuntimeException)
+void SAL_CALL SwVbaWrapFormat::setDistanceRight( float _distanceright )
 {
     setDistance( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("RightMargin") ), _distanceright );
 }

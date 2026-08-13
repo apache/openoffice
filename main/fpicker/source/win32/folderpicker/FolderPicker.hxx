@@ -62,47 +62,37 @@ public:
 	// XExecutableDialog
 	//------------------------------------------------------------------------------------
 
-	virtual void SAL_CALL setTitle( const rtl::OUString& aTitle )
-		throw( com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL setTitle( const rtl::OUString& aTitle );
 
-	virtual sal_Int16 SAL_CALL execute(  )
-		throw( com::sun::star::uno::RuntimeException );
+	virtual sal_Int16 SAL_CALL execute(  );
 
 	//------------------------------------------------------------------------------------
 	// XFolderPicker functions
 	//------------------------------------------------------------------------------------
 
-	virtual void SAL_CALL setDisplayDirectory( const rtl::OUString& aDirectory )
-		throw( com::sun::star::lang::IllegalArgumentException, com::sun::star::uno::RuntimeException );
+	virtual void SAL_CALL setDisplayDirectory( const rtl::OUString& aDirectory );
 
-	virtual rtl::OUString SAL_CALL getDisplayDirectory(  )
-		throw( com::sun::star::uno::RuntimeException );
+	virtual rtl::OUString SAL_CALL getDisplayDirectory(  );
 
-    virtual rtl::OUString SAL_CALL getDirectory( )
-        throw( com::sun::star::uno::RuntimeException );
+    virtual rtl::OUString SAL_CALL getDirectory( );
 
-    virtual void SAL_CALL setDescription( const rtl::OUString& aDescription )
-        throw( com::sun::star::uno::RuntimeException );
+    virtual void SAL_CALL setDescription( const rtl::OUString& aDescription );
 
 	//------------------------------------------------
 	// XServiceInfo
 	//------------------------------------------------
 
-	virtual ::rtl::OUString SAL_CALL getImplementationName(	 )
-		throw(::com::sun::star::uno::RuntimeException);
+	virtual ::rtl::OUString SAL_CALL getImplementationName(	 );
 
-	virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName )
-		throw(::com::sun::star::uno::RuntimeException);
+	virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName );
 
-	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  )
-		throw(::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  );
 
     //------------------------------------------------
 	// XCancellable
 	//------------------------------------------------
 
-    virtual void SAL_CALL cancel( )
-		throw(::com::sun::star::uno::RuntimeException);
+    virtual void SAL_CALL cancel( );
 
 	//------------------------------------------------
 	// overwrite base class method, which is called

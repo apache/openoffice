@@ -60,21 +60,21 @@ public:
     virtual ~DragAndDropClient();
 
     // ::com::sun::star::datatransfer::dnd::XDragGestureListener
-    virtual void dragGestureRecognized( const ::com::sun::star::datatransfer::dnd::DragGestureEvent& dge ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void dragGestureRecognized( const ::com::sun::star::datatransfer::dnd::DragGestureEvent& dge );
 
     // ::com::sun::star::datatransfer::dnd::XDragSourceListener
-    virtual void dragDropEnd( const ::com::sun::star::datatransfer::dnd::DragSourceDropEvent& dsde ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void dragEnter( const ::com::sun::star::datatransfer::dnd::DragSourceDragEvent& dsde ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void dragExit( const ::com::sun::star::datatransfer::dnd::DragSourceEvent& dse ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void dragOver( const ::com::sun::star::datatransfer::dnd::DragSourceDragEvent& dsde ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void dropActionChanged( const ::com::sun::star::datatransfer::dnd::DragSourceDragEvent& dsde ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void dragDropEnd( const ::com::sun::star::datatransfer::dnd::DragSourceDropEvent& dsde );
+    virtual void dragEnter( const ::com::sun::star::datatransfer::dnd::DragSourceDragEvent& dsde );
+    virtual void dragExit( const ::com::sun::star::datatransfer::dnd::DragSourceEvent& dse );
+    virtual void dragOver( const ::com::sun::star::datatransfer::dnd::DragSourceDragEvent& dsde );
+    virtual void dropActionChanged( const ::com::sun::star::datatransfer::dnd::DragSourceDragEvent& dsde );
 
     // ::com::sun::star::datatransfer::dnd::XDropTargetListener
-    virtual void drop( const ::com::sun::star::datatransfer::dnd::DropTargetDropEvent& dtde ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void dragEnter( const ::com::sun::star::datatransfer::dnd::DropTargetDragEnterEvent& dtdee ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void dragExit( const ::com::sun::star::datatransfer::dnd::DropTargetEvent& dte ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void dragOver( const ::com::sun::star::datatransfer::dnd::DropTargetDragEvent& dtde ) throw (::com::sun::star::uno::RuntimeException);
-    virtual void dropActionChanged( const ::com::sun::star::datatransfer::dnd::DropTargetDragEvent& dtde ) throw (::com::sun::star::uno::RuntimeException);
+    virtual void drop( const ::com::sun::star::datatransfer::dnd::DropTargetDropEvent& dtde );
+    virtual void dragEnter( const ::com::sun::star::datatransfer::dnd::DropTargetDragEnterEvent& dtdee );
+    virtual void dragExit( const ::com::sun::star::datatransfer::dnd::DropTargetEvent& dte );
+    virtual void dragOver( const ::com::sun::star::datatransfer::dnd::DropTargetDragEvent& dtde );
+    virtual void dropActionChanged( const ::com::sun::star::datatransfer::dnd::DropTargetDragEvent& dtde );
 };
 
 class VCL_DLLPUBLIC DragAndDropWrapper :
@@ -91,29 +91,29 @@ public:
 					~DragAndDropWrapper();
 
 	// ::com::sun::star::uno::XInterface
-    ::com::sun::star::uno::Any					SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException);
+    ::com::sun::star::uno::Any					SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType );
 	void										SAL_CALL acquire() throw()	{ OWeakObject::acquire(); }
 	void										SAL_CALL release() throw()	{ OWeakObject::release(); }
 
     // ::com::sun::star::lang::XEventListener
-    void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw (::com::sun::star::uno::RuntimeException);
+    void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source );
 
     // ::com::sun::star::datatransfer::dnd::XDragGestureListener
-    void SAL_CALL dragGestureRecognized( const ::com::sun::star::datatransfer::dnd::DragGestureEvent& dge ) throw (::com::sun::star::uno::RuntimeException);
+    void SAL_CALL dragGestureRecognized( const ::com::sun::star::datatransfer::dnd::DragGestureEvent& dge );
 
     // ::com::sun::star::datatransfer::dnd::XDragSourceListener
-    void SAL_CALL dragDropEnd( const ::com::sun::star::datatransfer::dnd::DragSourceDropEvent& dsde ) throw (::com::sun::star::uno::RuntimeException);
-    void SAL_CALL dragEnter( const ::com::sun::star::datatransfer::dnd::DragSourceDragEvent& dsde ) throw (::com::sun::star::uno::RuntimeException);
-    void SAL_CALL dragExit( const ::com::sun::star::datatransfer::dnd::DragSourceEvent& dse ) throw (::com::sun::star::uno::RuntimeException);
-    void SAL_CALL dragOver( const ::com::sun::star::datatransfer::dnd::DragSourceDragEvent& dsde ) throw (::com::sun::star::uno::RuntimeException);
-    void SAL_CALL dropActionChanged( const ::com::sun::star::datatransfer::dnd::DragSourceDragEvent& dsde ) throw (::com::sun::star::uno::RuntimeException);
+    void SAL_CALL dragDropEnd( const ::com::sun::star::datatransfer::dnd::DragSourceDropEvent& dsde );
+    void SAL_CALL dragEnter( const ::com::sun::star::datatransfer::dnd::DragSourceDragEvent& dsde );
+    void SAL_CALL dragExit( const ::com::sun::star::datatransfer::dnd::DragSourceEvent& dse );
+    void SAL_CALL dragOver( const ::com::sun::star::datatransfer::dnd::DragSourceDragEvent& dsde );
+    void SAL_CALL dropActionChanged( const ::com::sun::star::datatransfer::dnd::DragSourceDragEvent& dsde );
 
     // ::com::sun::star::datatransfer::dnd::XDropTargetListener
-    void SAL_CALL drop( const ::com::sun::star::datatransfer::dnd::DropTargetDropEvent& dtde ) throw (::com::sun::star::uno::RuntimeException);
-    void SAL_CALL dragEnter( const ::com::sun::star::datatransfer::dnd::DropTargetDragEnterEvent& dtdee ) throw (::com::sun::star::uno::RuntimeException);
-    void SAL_CALL dragExit( const ::com::sun::star::datatransfer::dnd::DropTargetEvent& dte ) throw (::com::sun::star::uno::RuntimeException);
-    void SAL_CALL dragOver( const ::com::sun::star::datatransfer::dnd::DropTargetDragEvent& dtde ) throw (::com::sun::star::uno::RuntimeException);
-    void SAL_CALL dropActionChanged( const ::com::sun::star::datatransfer::dnd::DropTargetDragEvent& dtde ) throw (::com::sun::star::uno::RuntimeException);
+    void SAL_CALL drop( const ::com::sun::star::datatransfer::dnd::DropTargetDropEvent& dtde );
+    void SAL_CALL dragEnter( const ::com::sun::star::datatransfer::dnd::DropTargetDragEnterEvent& dtdee );
+    void SAL_CALL dragExit( const ::com::sun::star::datatransfer::dnd::DropTargetEvent& dte );
+    void SAL_CALL dragOver( const ::com::sun::star::datatransfer::dnd::DropTargetDragEvent& dtde );
+    void SAL_CALL dropActionChanged( const ::com::sun::star::datatransfer::dnd::DropTargetDragEvent& dtde );
 };
 
 }}	// namespace vcl::unohelper

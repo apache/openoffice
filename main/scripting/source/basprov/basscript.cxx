@@ -110,7 +110,6 @@ namespace basprov
     // -----------------------------------------------------------------------------
 
     Any BasicScriptImpl::invoke( const Sequence< Any >& aParams, Sequence< sal_Int16 >& aOutParamIndex, Sequence< Any >& aOutParam )
-        throw ( provider::ScriptFrameworkErrorException, reflection::InvocationTargetException, uno::RuntimeException)
     {
         // TODO: throw CannotConvertException
         // TODO: check length of aOutParamIndex, aOutParam

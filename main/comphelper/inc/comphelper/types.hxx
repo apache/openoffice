@@ -158,7 +158,7 @@ namespace comphelper
 	COMPHELPER_DLLPUBLIC ::rtl::OUString	getString(const staruno::Any& _rAny);
 	COMPHELPER_DLLPUBLIC sal_Bool		getBOOL(const staruno::Any& _rAny);
 
-	COMPHELPER_DLLPUBLIC sal_Int32		getEnumAsINT32(const staruno::Any& _rAny) throw(starlang::IllegalArgumentException);
+	COMPHELPER_DLLPUBLIC sal_Int32		getEnumAsINT32(const staruno::Any& _rAny);
 
 //= replacement of some former UsrAny.setXXX methods - can be used with rvalues
 	inline void setBOOL(staruno::Any& _rAny, sal_Bool _b)

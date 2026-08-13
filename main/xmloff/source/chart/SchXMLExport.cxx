@@ -3871,7 +3871,7 @@ OUString SAL_CALL SchXMLExport_getImplementationName() throw()
 	return OUString( RTL_CONSTASCII_USTRINGPARAM( "SchXMLExport.Compact" ) );
 }
 
-Reference< uno::XInterface > SAL_CALL SchXMLExport_createInstance(const Reference< lang::XMultiServiceFactory > & rSMgr) throw( uno::Exception )
+Reference< uno::XInterface > SAL_CALL SchXMLExport_createInstance(const Reference< lang::XMultiServiceFactory > & rSMgr)
 {
 	// #110680#
     // #103997# removed some flags from EXPORT_ALL
@@ -3892,7 +3892,7 @@ OUString SAL_CALL SchXMLExport_Oasis_getImplementationName() throw()
 	return OUString( RTL_CONSTASCII_USTRINGPARAM( "SchXMLExport.Oasis.Compact" ) );
 }
 
-Reference< uno::XInterface > SAL_CALL SchXMLExport_Oasis_createInstance(const Reference< lang::XMultiServiceFactory > & rSMgr) throw( uno::Exception )
+Reference< uno::XInterface > SAL_CALL SchXMLExport_Oasis_createInstance(const Reference< lang::XMultiServiceFactory > & rSMgr)
 {
     // #103997# removed some flags from EXPORT_ALL
 	return (cppu::OWeakObject*)new SchXMLExport( rSMgr,
@@ -3915,7 +3915,7 @@ OUString SAL_CALL SchXMLExport_Styles_getImplementationName() throw()
 	return OUString( RTL_CONSTASCII_USTRINGPARAM( "SchXMLExport.Styles" ));
 }
 
-Reference< uno::XInterface > SAL_CALL SchXMLExport_Styles_createInstance(const Reference< lang::XMultiServiceFactory >& rSMgr) throw( uno::Exception )
+Reference< uno::XInterface > SAL_CALL SchXMLExport_Styles_createInstance(const Reference< lang::XMultiServiceFactory >& rSMgr)
 {
 	// #110680#
 	// return (cppu::OWeakObject*)new SchXMLExport( EXPORT_STYLES );
@@ -3935,7 +3935,7 @@ OUString SAL_CALL SchXMLExport_Oasis_Styles_getImplementationName() throw()
 	return OUString( RTL_CONSTASCII_USTRINGPARAM( "SchXMLExport.Oasis.Styles" ));
 }
 
-Reference< uno::XInterface > SAL_CALL SchXMLExport_Oasis_Styles_createInstance(const Reference< lang::XMultiServiceFactory > & rSMgr) throw( uno::Exception )
+Reference< uno::XInterface > SAL_CALL SchXMLExport_Oasis_Styles_createInstance(const Reference< lang::XMultiServiceFactory > & rSMgr)
 {
 	return (cppu::OWeakObject*)new SchXMLExport( rSMgr, EXPORT_STYLES | EXPORT_OASIS );
 }
@@ -3954,7 +3954,7 @@ OUString SAL_CALL SchXMLExport_Content_getImplementationName() throw()
 	return OUString( RTL_CONSTASCII_USTRINGPARAM( "SchXMLExport.Content" ));
 }
 
-Reference< uno::XInterface > SAL_CALL SchXMLExport_Content_createInstance(const Reference< lang::XMultiServiceFactory > & rSMgr) throw( uno::Exception )
+Reference< uno::XInterface > SAL_CALL SchXMLExport_Content_createInstance(const Reference< lang::XMultiServiceFactory > & rSMgr)
 {
 	// #110680#
 	// return (cppu::OWeakObject*)new SchXMLExport( EXPORT_AUTOSTYLES | EXPORT_CONTENT | EXPORT_FONTDECLS );
@@ -3974,7 +3974,7 @@ OUString SAL_CALL SchXMLExport_Oasis_Content_getImplementationName() throw()
 	return OUString( RTL_CONSTASCII_USTRINGPARAM( "SchXMLExport.Oasis.Content" ));
 }
 
-Reference< uno::XInterface > SAL_CALL SchXMLExport_Oasis_Content_createInstance(const Reference< lang::XMultiServiceFactory > & rSMgr) throw( uno::Exception )
+Reference< uno::XInterface > SAL_CALL SchXMLExport_Oasis_Content_createInstance(const Reference< lang::XMultiServiceFactory > & rSMgr)
 {
 	return (cppu::OWeakObject*)new SchXMLExport( rSMgr, EXPORT_AUTOSTYLES | EXPORT_CONTENT | EXPORT_FONTDECLS | EXPORT_OASIS );
 }
@@ -4011,14 +4011,14 @@ OUString SAL_CALL SchXMLExport_Oasis_Meta_getImplementationName() throw()
 	return OUString( RTL_CONSTASCII_USTRINGPARAM( "SchXMLExport.Oasis.Meta" ));
 }
 
-Reference< uno::XInterface > SAL_CALL SchXMLExport_Oasis_Meta_createInstance(const Reference< lang::XMultiServiceFactory > & rSMgr) throw( uno::Exception )
+Reference< uno::XInterface > SAL_CALL SchXMLExport_Oasis_Meta_createInstance(const Reference< lang::XMultiServiceFactory > & rSMgr)
 {
 	return (cppu::OWeakObject*)new SchXMLExport( rSMgr, EXPORT_META | EXPORT_OASIS  );
 }
 
 
 // XServiceInfo
-OUString SAL_CALL SchXMLExport::getImplementationName() throw( uno::RuntimeException )
+OUString SAL_CALL SchXMLExport::getImplementationName()
 {
     switch( getExportFlags())
     {

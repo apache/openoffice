@@ -97,47 +97,35 @@ public:
     virtual ~DocumentMetadataAccess();
 
     // ::com::sun::star::rdf::XNode:
-    virtual ::rtl::OUString SAL_CALL getStringValue()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getStringValue();
 
     // ::com::sun::star::rdf::XURI:
-    virtual ::rtl::OUString SAL_CALL getNamespace()
-        throw (::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL getLocalName()
-        throw (::com::sun::star::uno::RuntimeException);
+    virtual ::rtl::OUString SAL_CALL getNamespace();
+    virtual ::rtl::OUString SAL_CALL getLocalName();
 
     // ::com::sun::star::rdf::XRepositorySupplier:
     virtual ::com::sun::star::uno::Reference<
-        ::com::sun::star::rdf::XRepository > SAL_CALL getRDFRepository()
-        throw (::com::sun::star::uno::RuntimeException);
+        ::com::sun::star::rdf::XRepository > SAL_CALL getRDFRepository();
 
     // ::com::sun::star::rdf::XDocumentMetadataAccess:
     virtual ::com::sun::star::uno::Reference<
                 ::com::sun::star::rdf::XMetadatable > SAL_CALL
         getElementByMetadataReference(
-            const ::com::sun::star::beans::StringPair & i_rReference)
-        throw (::com::sun::star::uno::RuntimeException);
+            const ::com::sun::star::beans::StringPair & i_rReference);
     virtual ::com::sun::star::uno::Reference<
                 ::com::sun::star::rdf::XMetadatable > SAL_CALL
         getElementByURI(const ::com::sun::star::uno::Reference<
-            ::com::sun::star::rdf::XURI > & i_xURI)
-        throw (::com::sun::star::uno::RuntimeException,
-            ::com::sun::star::lang::IllegalArgumentException);
+            ::com::sun::star::rdf::XURI > & i_xURI);
     virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference<
             ::com::sun::star::rdf::XURI > > SAL_CALL getMetadataGraphsWithType(
             const ::com::sun::star::uno::Reference<
-                ::com::sun::star::rdf::XURI > & i_xType)
-        throw (::com::sun::star::uno::RuntimeException,
-            ::com::sun::star::lang::IllegalArgumentException);
+                ::com::sun::star::rdf::XURI > & i_xType);
     virtual ::com::sun::star::uno::Reference<
                 ::com::sun::star::rdf::XURI> SAL_CALL
         addMetadataFile(const ::rtl::OUString & i_rFileName,
             const ::com::sun::star::uno::Sequence<
                 ::com::sun::star::uno::Reference< ::com::sun::star::rdf::XURI >
-                > & i_rTypes)
-        throw (::com::sun::star::uno::RuntimeException,
-            ::com::sun::star::lang::IllegalArgumentException,
-            ::com::sun::star::container::ElementExistException);
+                > & i_rTypes);
     virtual ::com::sun::star::uno::Reference<
                 ::com::sun::star::rdf::XURI> SAL_CALL
         importMetadataFile(::sal_Int16 i_Format,
@@ -148,29 +136,14 @@ public:
                 ::com::sun::star::rdf::XURI > & i_xBaseURI,
             const ::com::sun::star::uno::Sequence<
                 ::com::sun::star::uno::Reference< ::com::sun::star::rdf::XURI >
-                > & i_rTypes)
-        throw (::com::sun::star::uno::RuntimeException,
-            ::com::sun::star::lang::IllegalArgumentException,
-            ::com::sun::star::datatransfer::UnsupportedFlavorException,
-            ::com::sun::star::container::ElementExistException,
-            ::com::sun::star::rdf::ParseException,
-            ::com::sun::star::io::IOException);
+                > & i_rTypes);
     virtual void SAL_CALL removeMetadataFile(
             const ::com::sun::star::uno::Reference<
-                ::com::sun::star::rdf::XURI > & i_xGraphName)
-        throw (::com::sun::star::uno::RuntimeException,
-            ::com::sun::star::lang::IllegalArgumentException,
-            ::com::sun::star::container::NoSuchElementException);
+                ::com::sun::star::rdf::XURI > & i_xGraphName);
     virtual void SAL_CALL addContentOrStylesFile(
-            const ::rtl::OUString & i_rFileName)
-        throw (::com::sun::star::uno::RuntimeException,
-            ::com::sun::star::lang::IllegalArgumentException,
-            ::com::sun::star::container::ElementExistException);
+            const ::rtl::OUString & i_rFileName);
     virtual void SAL_CALL removeContentOrStylesFile(
-            const ::rtl::OUString & i_rFileName)
-        throw (::com::sun::star::uno::RuntimeException,
-            ::com::sun::star::lang::IllegalArgumentException,
-            ::com::sun::star::container::NoSuchElementException);
+            const ::rtl::OUString & i_rFileName);
 
     virtual void SAL_CALL loadMetadataFromStorage(
             const ::com::sun::star::uno::Reference<
@@ -178,28 +151,16 @@ public:
             const ::com::sun::star::uno::Reference<
                 ::com::sun::star::rdf::XURI > & i_xBaseURI,
             const ::com::sun::star::uno::Reference<
-                ::com::sun::star::task::XInteractionHandler> & i_xHandler)
-        throw (::com::sun::star::uno::RuntimeException,
-            ::com::sun::star::lang::IllegalArgumentException,
-            ::com::sun::star::lang::WrappedTargetException);
+                ::com::sun::star::task::XInteractionHandler> & i_xHandler);
     virtual void SAL_CALL storeMetadataToStorage(
             const ::com::sun::star::uno::Reference<
-                ::com::sun::star::embed::XStorage > & i_xStorage)
-        throw (::com::sun::star::uno::RuntimeException,
-            ::com::sun::star::lang::IllegalArgumentException,
-            ::com::sun::star::lang::WrappedTargetException);
+                ::com::sun::star::embed::XStorage > & i_xStorage);
     virtual void SAL_CALL loadMetadataFromMedium(
             const ::com::sun::star::uno::Sequence<
-                ::com::sun::star::beans::PropertyValue > & i_rMedium)
-        throw (::com::sun::star::uno::RuntimeException,
-            ::com::sun::star::lang::IllegalArgumentException,
-            ::com::sun::star::lang::WrappedTargetException);
+                ::com::sun::star::beans::PropertyValue > & i_rMedium);
     virtual void SAL_CALL storeMetadataToMedium(
             const ::com::sun::star::uno::Sequence<
-                ::com::sun::star::beans::PropertyValue > & i_rMedium)
-        throw (::com::sun::star::uno::RuntimeException,
-            ::com::sun::star::lang::IllegalArgumentException,
-            ::com::sun::star::lang::WrappedTargetException);
+                ::com::sun::star::beans::PropertyValue > & i_rMedium);
 
 private:
     std::auto_ptr<DocumentMetadataAccess_Impl> m_pImpl;

@@ -80,7 +80,6 @@ HyphenatedWord::~HyphenatedWord()
 
 
 OUString SAL_CALL HyphenatedWord::getWord()
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 	return aWord;
@@ -88,7 +87,6 @@ OUString SAL_CALL HyphenatedWord::getWord()
 
 
 Locale SAL_CALL HyphenatedWord::getLocale()
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 
@@ -98,7 +96,6 @@ Locale SAL_CALL HyphenatedWord::getLocale()
 
 
 sal_Int16 SAL_CALL HyphenatedWord::getHyphenationPos()
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 	return nHyphenationPos;
@@ -106,7 +103,6 @@ sal_Int16 SAL_CALL HyphenatedWord::getHyphenationPos()
 
 
 OUString SAL_CALL HyphenatedWord::getHyphenatedWord()
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 	return aHyphenatedWord;
@@ -114,7 +110,6 @@ OUString SAL_CALL HyphenatedWord::getHyphenatedWord()
 
 
 sal_Int16 SAL_CALL HyphenatedWord::getHyphenPos()
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 	return nHyphPos;
@@ -122,7 +117,6 @@ sal_Int16 SAL_CALL HyphenatedWord::getHyphenPos()
 
 
 sal_Bool SAL_CALL HyphenatedWord::isAlternativeSpelling()
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 	return bIsAltSpelling;
@@ -149,7 +143,6 @@ PossibleHyphens::~PossibleHyphens()
 
 
 OUString SAL_CALL PossibleHyphens::getWord()
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 	return aWord;
@@ -157,7 +150,6 @@ OUString SAL_CALL PossibleHyphens::getWord()
 
 
 Locale SAL_CALL PossibleHyphens::getLocale()
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 	return CreateLocale( nLanguage );
@@ -165,7 +157,6 @@ Locale SAL_CALL PossibleHyphens::getLocale()
 
 
 OUString SAL_CALL PossibleHyphens::getPossibleHyphens()
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 	return aWordWithHyphens;
@@ -173,7 +164,6 @@ OUString SAL_CALL PossibleHyphens::getPossibleHyphens()
 
 
 Sequence< sal_Int16 > SAL_CALL PossibleHyphens::getHyphenationPositions()
-		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
 	return aOrigHyphenPos;

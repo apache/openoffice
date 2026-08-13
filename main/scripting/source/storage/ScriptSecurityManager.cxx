@@ -80,7 +80,7 @@ static const int ADD_TO_PATH = 2;
 //*************************************************************************
 // ScriptSecurityManager Constructor
 ScriptSecurityManager::ScriptSecurityManager(
-    const Reference< XComponentContext > & xContext ) throw ( RuntimeException )
+    const Reference< XComponentContext > & xContext )
     : m_xContext( xContext, UNO_SET_THROW )
 {
     OSL_TRACE( "< ScriptSecurityManager ctor called >\n" );
@@ -94,7 +94,6 @@ ScriptSecurityManager::ScriptSecurityManager(
 
 void ScriptSecurityManager::addScriptStorage( rtl::OUString scriptStorageURL,
     sal_Int32 storageID)
-throw ( RuntimeException )
 {
     Permission_Hash::const_iterator ph_it = m_permissionSettings.find( scriptStorageURL );
     if ( ph_it != m_permissionSettings.end() )
@@ -246,20 +245,17 @@ bool ScriptSecurityManager::isSecureURL( const OUString & path )
 }
 
 short ScriptSecurityManager::executeStandardDialog()
-throw ( RuntimeException )
 {
     OUString dummyString;
     return executeDialog( dummyString );
 }
 
 short ScriptSecurityManager::executePathDialog( const OUString & path )
-throw ( RuntimeException )
 {
     return executeDialog( path );
 }
 
 short ScriptSecurityManager::executeDialog( const OUString & path )
-throw ( RuntimeException )
 {
     Sequence < Any > aArgs;
     if( path.getLength() != 0 )
@@ -302,7 +298,6 @@ throw ( RuntimeException )
  */
 void ScriptSecurityManager::checkPermission( const OUString & scriptStorageURL,
     const OUString & permissionRequest )
-    throw ( RuntimeException, lang::IllegalArgumentException, security::AccessControlException )
 {
     if( permissionRequest.equals( OUString::createFromAscii( "execute" ) ) )
     {
@@ -357,7 +352,6 @@ void ScriptSecurityManager::removePermissionSettings ( ::rtl::OUString & scriptS
 }
 
 void ScriptSecurityManager::readConfiguration()
-    throw ( RuntimeException)
 {
     try
     {
@@ -467,7 +461,6 @@ void ScriptSecurityManager::readConfiguration()
 }
 
 void ScriptSecurityManager::addToSecurePaths( const OUString & path )
-throw ( RuntimeException )
 {
     OSL_TRACE( "--->ScriptSecurityManager::addToSecurePaths" );
     beans::PropertyValue configPath;

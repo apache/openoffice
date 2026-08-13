@@ -53,7 +53,7 @@ namespace accessibility
 		// -----------------------------------------------------------------------------
 	IMPLEMENT_FORWARD_XTYPEPROVIDER2( AccessibleCheckBoxCell, AccessibleBrowseBoxCell, AccessibleCheckBoxCell_BASE )
 	//--------------------------------------------------------------------
-	Reference< XAccessibleContext > SAL_CALL AccessibleCheckBoxCell::getAccessibleContext(  ) throw (RuntimeException)
+	Reference< XAccessibleContext > SAL_CALL AccessibleCheckBoxCell::getAccessibleContext(  )
 	{
 		ensureIsAlive();
 		return this;
@@ -77,7 +77,7 @@ namespace accessibility
 	// XAccessibleValue
 	// -----------------------------------------------------------------------------
 
-	Any SAL_CALL AccessibleCheckBoxCell::getCurrentValue(  ) throw (RuntimeException)
+	Any SAL_CALL AccessibleCheckBoxCell::getCurrentValue(  )
 	{
 		::osl::MutexGuard aGuard( getOslMutex() );
 
@@ -99,14 +99,14 @@ namespace accessibility
 
 	// -----------------------------------------------------------------------------
 
-	sal_Bool SAL_CALL AccessibleCheckBoxCell::setCurrentValue( const Any& ) throw (RuntimeException)
+	sal_Bool SAL_CALL AccessibleCheckBoxCell::setCurrentValue( const Any& )
 	{
 		return sal_False;
 	}
 
 	// -----------------------------------------------------------------------------
 
-	Any SAL_CALL AccessibleCheckBoxCell::getMaximumValue(  ) throw (RuntimeException)
+	Any SAL_CALL AccessibleCheckBoxCell::getMaximumValue(  )
 	{
 		::osl::MutexGuard aGuard( getOslMutex() );
 
@@ -122,7 +122,7 @@ namespace accessibility
 
 	// -----------------------------------------------------------------------------
 
-	Any SAL_CALL AccessibleCheckBoxCell::getMinimumValue(  ) throw (RuntimeException)
+	Any SAL_CALL AccessibleCheckBoxCell::getMinimumValue(  )
 	{
 		Any aValue;
 		aValue <<= (sal_Int32) 0;
@@ -131,23 +131,22 @@ namespace accessibility
 	}
 	// -----------------------------------------------------------------------------
 	// XAccessibleContext
-	sal_Int32 SAL_CALL AccessibleCheckBoxCell::getAccessibleChildCount(  ) throw (::com::sun::star::uno::RuntimeException)
+	sal_Int32 SAL_CALL AccessibleCheckBoxCell::getAccessibleChildCount(  )
 	{
 		return 0;
 	}
 	// -----------------------------------------------------------------------------
-	::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL AccessibleCheckBoxCell::getAccessibleChild( sal_Int32 ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException)
+	::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL AccessibleCheckBoxCell::getAccessibleChild( sal_Int32 )
 	{
 		throw ::com::sun::star::lang::IndexOutOfBoundsException();
 	}
 	// -----------------------------------------------------------------------------
-	::rtl::OUString SAL_CALL AccessibleCheckBoxCell::getImplementationName() throw ( ::com::sun::star::uno::RuntimeException )
+	::rtl::OUString SAL_CALL AccessibleCheckBoxCell::getImplementationName()
 	{
 		return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.comp.svtools.TableCheckBoxCell" ) );
 	}
 	// -----------------------------------------------------------------------------
 	sal_Int32 SAL_CALL AccessibleCheckBoxCell::getAccessibleIndexInParent()
-			throw ( ::com::sun::star::uno::RuntimeException )
 	{
 		::osl::MutexGuard aGuard( getOslMutex() );
 

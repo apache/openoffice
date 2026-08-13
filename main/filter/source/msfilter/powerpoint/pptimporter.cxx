@@ -40,19 +40,16 @@
 // -----------------
 
 NMSP_RTL::OUString PptImporter_getImplementationName()
-	throw( NMSP_UNO::RuntimeException )
 {
 	return B2UCONST( "com.sun.star.presentation.PptImporter" );
 }
 #define SERVICE_NAME "com.sun.star.document.ImportFilter"
 sal_Bool SAL_CALL PptImporter_supportsService( const NMSP_RTL::OUString& ServiceName )
-	throw( NMSP_UNO::RuntimeException )
 {
     return ServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( SERVICE_NAME ) );
 }
 
 SEQ( NMSP_RTL::OUString ) SAL_CALL PptImporter_getSupportedServiceNames()
-	throw( NMSP_UNO::RuntimeException )
 {
 	SEQ( NMSP_RTL::OUString ) aRet(1);
     NMSP_RTL::OUString* pArray = aRet.getArray();
@@ -99,7 +96,6 @@ void SAL_CALL PptImporter::release() throw()
 
 // XFilter
 sal_Bool SAL_CALL PptImporter::filter( const SEQ( NMSP_BEANS::PropertyValue )& aDescriptor )
-	throw ( NMSP_UNO::RuntimeException )
 {
 
 
@@ -123,37 +119,31 @@ sal_Bool SAL_CALL PptImporter::filter( const SEQ( NMSP_BEANS::PropertyValue )& a
 	return aFilter.filter( aDescriptor, xHdl );
 }
 void SAL_CALL PptImporter::cancel()
-	throw ( NMSP_UNO::RuntimeException )
 {
     aFilter.cancel();
 }
 
 // XImporter
 void SAL_CALL PptImporter::setTargetDocument( const REF( NMSP_LANG::XComponent )& xDoc )
-	throw ( NMSP_LANG::IllegalArgumentException, NMSP_UNO::RuntimeException)
 {
     xImporter->setTargetDocument( xDoc );
 }
 
 // XInitialization
 void SAL_CALL PptImporter::initialize( const SEQ( NMSP_UNO::Any )& /* aArguments */ )
-	throw ( NMSP_UNO::Exception, NMSP_UNO::RuntimeException )
 {
 }
 
 // XServiceInfo
 NMSP_RTL::OUString SAL_CALL PptImporter::getImplementationName()
-	throw( NMSP_UNO::RuntimeException )
 {
 	return PptImporter_getImplementationName();
 }
 sal_Bool SAL_CALL PptImporter::supportsService( const NMSP_RTL::OUString& rServiceName )
-	throw( NMSP_UNO::RuntimeException )
 {
     return PptImporter_supportsService( rServiceName );
 }
 SEQ( NMSP_RTL::OUString ) SAL_CALL PptImporter::getSupportedServiceNames()
-	throw ( NMSP_UNO::RuntimeException )
 {
     return PptImporter_getSupportedServiceNames();
 }

@@ -96,13 +96,11 @@ public:
 
     // XElementAccess
     virtual typename Collection<T>::Type_t SAL_CALL getElementType()
-        throw( typename Collection<T>::RuntimeException_t )
     {
         return Collection<T>::getElementType();
     }
 
     virtual sal_Bool SAL_CALL hasElements()
-        throw( typename Collection<T>::RuntimeException_t )
     {
         return Collection<T>::hasElements();
     }
@@ -110,9 +108,6 @@ public:
     // XNameAccess : XElementAccess
     virtual typename Collection<T>::Any_t SAL_CALL getByName(
         const rtl::OUString& aName )
-        throw( typename Collection<T>::NoSuchElementException_t,
-               typename Collection<T>::WrappedTargetException_t,
-               typename Collection<T>::RuntimeException_t )
     {
         if( hasItem( aName ) )
             return com::sun::star::uno::makeAny( getItem( aName ) );
@@ -122,14 +117,12 @@ public:
     }
 
     virtual Names_t SAL_CALL getElementNames()
-        throw( typename Collection<T>::RuntimeException_t )
     {
         return getNames();
     }
 
     virtual sal_Bool SAL_CALL hasByName(
         const rtl::OUString& aName )
-        throw( typename Collection<T>::RuntimeException_t )
     {
         return hasItem( aName ) ? sal_True : sal_False;
     }

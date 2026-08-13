@@ -66,8 +66,6 @@ UcbCommandEnvironment::~UcbCommandEnvironment()
 // virtual
 void SAL_CALL UcbCommandEnvironment::initialize(
         const uno::Sequence< uno::Any >& aArguments )
-    throw( uno::Exception,
-           uno::RuntimeException )
 {
     if ( ( aArguments.getLength() < 2 ) ||
          !( aArguments[ 0 ] >>= m_xIH ) ||
@@ -83,7 +81,6 @@ void SAL_CALL UcbCommandEnvironment::initialize(
 
 // virtual
 ::rtl::OUString SAL_CALL UcbCommandEnvironment::getImplementationName()
-    throw ( uno::RuntimeException )
 {
     return getImplementationName_Static();
 }
@@ -92,7 +89,6 @@ void SAL_CALL UcbCommandEnvironment::initialize(
 // virtual
 sal_Bool SAL_CALL
 UcbCommandEnvironment::supportsService( const ::rtl::OUString& ServiceName )
-    throw ( uno::RuntimeException )
 {
     uno::Sequence< rtl::OUString > aSNL = getSupportedServiceNames();
     const rtl::OUString * pArray = aSNL.getConstArray();
@@ -108,7 +104,6 @@ UcbCommandEnvironment::supportsService( const ::rtl::OUString& ServiceName )
 // virtual
 uno::Sequence< ::rtl::OUString > SAL_CALL
 UcbCommandEnvironment::getSupportedServiceNames()
-    throw ( uno::RuntimeException )
 {
     return getSupportedServiceNames_Static();
 }
@@ -142,7 +137,6 @@ UcbCommandEnvironment::getSupportedServiceNames_Static()
 // virtual
 uno::Reference< task::XInteractionHandler > SAL_CALL
 UcbCommandEnvironment::getInteractionHandler()
-    throw ( uno::RuntimeException )
 {
     return m_xIH;
 }
@@ -151,7 +145,6 @@ UcbCommandEnvironment::getInteractionHandler()
 // virtual
 uno::Reference< ucb::XProgressHandler > SAL_CALL
 UcbCommandEnvironment::getProgressHandler()
-    throw ( uno::RuntimeException )
 {
     return m_xPH;
 }
@@ -165,7 +158,6 @@ UcbCommandEnvironment::getProgressHandler()
 static uno::Reference< uno::XInterface > SAL_CALL
 UcbCommandEnvironment_CreateInstance(
     const uno::Reference< lang::XMultiServiceFactory> & rSMgr )
-    throw( uno::Exception )
 {
     lang::XServiceInfo * pX = static_cast< lang::XServiceInfo * >(
         new UcbCommandEnvironment( rSMgr ) );

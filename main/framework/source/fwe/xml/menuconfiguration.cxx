@@ -87,7 +87,6 @@ MenuConfiguration::~MenuConfiguration()
 
 Reference< XIndexAccess > MenuConfiguration::CreateMenuBarConfigurationFromXML(
 	Reference< XInputStream >& rInputStream )
-throw ( WrappedTargetException )
 {
 	Reference< XParser > xParser( m_rxServiceManager->createInstance(SERVICENAME_SAXPARSER),UNO_QUERY);
 
@@ -137,7 +136,6 @@ throw ( WrappedTargetException )
 PopupMenu* MenuConfiguration::CreateBookmarkMenu(
 	::com::sun::star::uno::Reference< ::com::sun::star::frame::XFrame >& rFrame,
 	const ::rtl::OUString& aURL )
-throw ( ::com::sun::star::lang::WrappedTargetException )
 {
 	if ( aURL == BOOKMARK_NEWMENU )
 		return new BmkMenu( rFrame, BmkMenu::BMK_NEWMENU );
@@ -150,7 +148,6 @@ throw ( ::com::sun::star::lang::WrappedTargetException )
 void MenuConfiguration::StoreMenuBarConfigurationToXML(
 	Reference< XIndexAccess >& rMenuBarConfiguration,
 	Reference< XOutputStream >& rOutputStream )
-throw ( WrappedTargetException )
 {
 	Reference< XDocumentHandler > xWriter;
 

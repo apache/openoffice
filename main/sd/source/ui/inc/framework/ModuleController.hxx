@@ -85,15 +85,13 @@ public:
 
     // XModuleController
 
-    virtual void SAL_CALL requestResource(const ::rtl::OUString& rsResourceURL)
-        throw (css::uno::RuntimeException);
+    virtual void SAL_CALL requestResource(const ::rtl::OUString& rsResourceURL);
 
 
     // XInitialization
 
     virtual void SAL_CALL initialize(
-        const css::uno::Sequence<css::uno::Any>& aArguments)
-        throw (css::uno::Exception, css::uno::RuntimeException);
+        const css::uno::Sequence<css::uno::Any>& aArguments);
 
 private:
     css::uno::Reference<
