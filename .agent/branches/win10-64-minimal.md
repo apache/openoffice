@@ -90,74 +90,99 @@ for the non-Windows branch and inert here.
 
 This one is a correction owed to `common/20-build-conventions.md` as well.
 
-## Next up — remove dynamic exception specifications tree-wide
+## Exception specifications — (a) done, (b) is next
 
-Agreed on the dev list 2026-08-12. Self-contained; everything needed to start is
-here. **Owed to `../migration/frontier.md`** when this branch merges — it is
+Agreed on the dev list 2026-08-12 as **two separate changes**, deliberately not
+combined. **Owed to `../migration/frontier.md`** when this branch merges — it is
 tree-wide work, not win10-specific, and it is only recorded here because a topic
 branch may not write the shared migration record.
 
-**Two separate changes. Do not combine them.**
-
-- **(a) `throw(X)` → delete outright.** Removed in C++17; MSVC never enforced it;
-  GCC/Sun/SGI never even saw it (`SAL_THROW` expands to nothing there).
+- **(a) `throw(X)` → delete outright.**
 - **(b) `throw()` → migrate to `noexcept`, not delete.** MSVC *does* honour this
   one (`__declspec(nothrow)`: elided unwind paths plus a terminate-on-throw
   contract worth keeping on `acquire()`/`release()` and destructors). C++17 keeps
-  it as a deprecated spelling of `noexcept`; C++20 removes it. Deleting would
+  it as a deprecated spelling of `noexcept`; C++20 removes it, so deleting would
   lose something the compiler actually implements.
 
-Size, measured 2026-08-12 under `main/`:
+### (a) landed 2026-08-13 — green on both configs
 
-| Spelling | Count | Goes to |
-| --- | ---: | --- |
-| `SAL_THROW( () )` | 3,677 | (b) |
-| `SAL_THROW( (Type) )` | 827 | (a) |
-| literal `throw(…RuntimeException…)` | ~32,600 | (a) |
+72,490 sites across 5,063 files, atomic with the generator as required. Beyond
+the bulk deletion:
 
-The last figure is soft — it includes declaration/definition duplication. The
-other two are exact.
+- `InterfaceType::dumpExceptionSpecification()` (`cpputype.cxx` ~line 2044) now
+  emits a specification **only when the list would be empty**, and nothing
+  otherwise — so generated `acquire()`/`release()` keep `throw ()` and hand it
+  to (b).
+- `SAL_THROW_DTOR` and its three uses are deleted; the interim gate from
+  `4ee3de1fe6` became redundant exactly as predicted.
+- scaddins' `THROWDEF_RTE*` macros and their 341 uses are deleted — pure
+  specification macros, so after (a) they expand to nothing.
+- The nine destructor comments this branch wrote about
+  `SAL_THROW( (RuntimeException) )` are retired, since nothing says that any more.
 
-### The constraint that decides the approach — it cannot be incremental
+**Deliberately not done, recorded rather than forgotten:** `main/unodevtools`'
+skeletonmaker still emits `throw (RuntimeException)` into the C++ skeletons it
+**generates** (centralised in `cpptypemaker.cxx` ~line 245, plus ~50 fragmented
+string literals in `cppcompskeleton.cxx`). Harmless — those are member functions,
+and an override more restrictive than a spec-free base is legal — but it hands new
+component authors a construct C++17 deleted. It could not be verified when (a)
+landed because the module was not built here; it is now migrated on
+`bazel-migration` with a gtest suite (`//main/unodevtools:skeletonmaker_test`), so
+it can be. `main/codemaker/source/bonobowrappermaker` likewise, and that one is
+dead code (in no `BUILD.bazel` and no `build.lst`).
 
-The specifications are **generated**. `InterfaceType::dumpExceptionSpecification()`
-in `main/codemaker/source/cppumaker/cpputype.cxx` (~line 2044) writes `" throw ("`
-onto every UNO interface method, so every generated `.hpp` carries them. For a
-non-destructor virtual function, an override with no specification may throw
-anything, which is **less** restrictive than a base declaring
-`throw(RuntimeException)` ⇒ ill-formed. Stripping hand-written overrides while
-generated bases keep theirs only trades one error set for another. **cppumaker and
-the sources must move in one commit.** ("Remove them a module at a time" is the
-natural instinct, and it does not work.)
+### (b) — migrate the empty specification to `noexcept`
 
-**Safe:** exception specifications do not participate in name mangling ⇒ not an
-ABI break. Backward compatible for extensions too — once bases lose their
-specifications, a third-party component still declaring `throw(RuntimeException)`
-on its overrides is merely *more* restrictive, which is legal, so external UNO
-components keep compiling unchanged.
+Size, measured 2026-08-13 over tracked C/C++ under `main/`, post-(a). Exact:
 
-### Why it is urgent rather than cosmetic
+| Spelling | Count |
+| --- | ---: |
+| literal `throw()` | 4,367 |
+| `SAL_THROW( () )` | 2,057 |
+| `SAL_THROW_EXTERN_C()` | 768 |
 
-Since C++11 a destructor with no written specification is implicitly `noexcept`.
-A class inheriting from a UNO base (`~OWeakObject`, declared
-`throw(RuntimeException)`) **and** an ordinary base (implicitly non-throwing)
-therefore claims both "may throw" and "will not throw" about destroying the same
-object. No annotation resolves it — `noexcept(false)` gives the identical error.
-Three such destructors produced **6,690 errors across 25 modules / 242 classes**
-on a modern MSVC. All three bodies are `{}`: the specification described a
-possibility the implementation never took.
+Plus the generated headers: cppumaker's `dumpExceptionSpecification` is now the
+only thing that emits one, on `acquire()`/`release()` alone.
 
-### Already done, and superseded by this task
+**The constraint that decides the approach — `noexcept` cannot be spelled
+literally.** VS2008 (VC9) is still the default toolchain (`--config=winXP-x86`)
+and has no `noexcept`; only the win10 toolchain (`_MSC_VER >= 1900`) does. So (b)
+is not a text substitution but a macro: `SAL_THROW( () )` already *is* that macro
+in the right position, and the shortest honest form of (b) is to make one
+spelling (say `SAL_NOEXCEPT`, or `SAL_THROW( () )` itself) expand to `noexcept`
+where available and `throw()` otherwise, then converge the 4,367 literal `throw()`
+spellings and cppumaker's emission onto it. Deciding the spelling is the design
+question; the sweep after it is mechanical. Note `SAL_THROW_EXTERN_C()` is a
+**third** case, not a variant of the other two: it is for `extern "C"` functions
+and already expands to nothing when compiled as C, so whatever (b) picks must
+keep that arm.
 
-Commit `4ee3de1fe6` added `SAL_THROW_DTOR()` in `main/sal/inc/sal/types.h` (empty
-on `_MSC_VER >= 1900`, defers to `SAL_THROW` otherwise) and applied it to exactly
-those three destructors — `~OWeakObject` (`cppuhelper/inc/cppuhelper/weak.hxx` +
-`source/weak.cxx`), `~OWeakAggObject` (`weakagg.hxx` + `source/weak.cxx`),
-`~OComponentHelper` (`component.hxx` + `source/component.cxx`). That is an
-**interim gate** to unblock the win10 toolchain. When (a) lands, `SAL_THROW_DTOR`
-and its three uses should be deleted — they become redundant.
+**Safe, and (a) proved it:** exception specifications do not participate in name
+mangling ⇒ not an ABI break, and third-party UNO components keep compiling.
 
-**Sequencing:** land (a) first (it is the C++17 blocker and it is mechanical),
-then (b) separately. Verify both `--config=winXP-x86` and `--config=win10-x64`
-after each; (a) needs a full `//main/staging:install` because it touches
-generated headers, i.e. every TU.
+### How to do a sweep this size safely — the method (a) validated
+
+Write a comment/string-aware classifier, not a regex. Treat `throw (…)` as a
+**specification** only when all four hold:
+
+1. the argument is a comma-separated list of type names, counting `typename`,
+   template args, and a macro line-continuation *inside* the list;
+2. the previous significant token is `)`, `const` or `volatile`, with
+   `\`+newline skipped as whitespace so macro bodies anchor correctly;
+3. the argument is non-empty — for (b), invert this;
+4. the **following** token is one of `{ ; = : , ) #`, otherwise it is a throw
+   statement whose operand carries a C-style cast (`throw (UINT) ERROR_…;` in
+   `desktop/win32/source/setup/setup_main.cxx` is the single site in the tree
+   that needs rule 4).
+
+When editing, do not swallow whitespace across a `//` comment (it comments out
+the rest of the line) nor across a macro's `\` (it leaves a stray one mid-line).
+
+**Verify by invariant, not by reading 5,000 diffs:** a deletion-only rewrite must
+leave the per-file code-level counts of `{`, `}` and `;` unchanged and drop `(`
+and `)` equally. That check caught real bugs and is cheap. Every site the
+classifier **rejects** must be inspected by hand — there were 30 in (a), and one
+was a genuine false positive.
+
+Verify both `--config=winXP-x86` and `--config=win10-x64` with a full
+`//main/staging:install`: like (a), (b) touches generated headers, i.e. every TU.

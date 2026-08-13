@@ -398,4 +398,66 @@ containers passed between DLLs will read garbage.
 6. Once the build succeeds, update the **frontier** in [CLAUDE.md](../CLAUDE.md)
    and move the module into [Migrated-packages.md](../Migrated-packages.md).
 
+---
+
+## 9. Helper scripts in `build/tools/`
+
+Most files here are **build-step helpers**: a Bazel rule runs them as part of an
+action, and they are listed in `build/tools/BUILD.bazel` under `exports_files`
+so a rule can name them as a label (`make_images_zip.pl`, `fcfg_merge.pl`,
+`stage_install.pl`, …). Adding one means adding it to that list.
+
+`throwspec.py` is the exception and is **not** in `exports_files`. It is a
+**one-shot source migration tool**: no rule refers to it, it edits the source
+tree in place, and it is run by hand. It lives here because the knowledge in it
+is worth more than the script.
+
+### `throwspec.py` — C++ dynamic exception specifications
+
+```bash
+python build/tools/throwspec.py report   # classify every site, change nothing
+python build/tools/throwspec.py apply    # delete the specifications with a type list
+python build/tools/throwspec.py verify   # check a finished rewrite against HEAD
 ```
+
+It removed 72,490 `throw(X)` / `SAL_THROW( (X) )` specifications across 5,063
+files in one commit — which had to be one commit, because the specifications are
+also **generated** (`InterfaceType::dumpExceptionSpecification` in
+`main/codemaker/source/cppumaker/cpputype.cxx`), and an override carrying no
+specification is *less* restrictive than a base that has one. Stripping
+hand-written overrides while generated bases keep theirs only trades one error
+set for another.
+
+**What it is really for.** A regular expression cannot tell these apart — both
+are the token `throw`, whitespace, `(`, a name, `)`:
+
+```cpp
+void foo( int n ) throw (RuntimeException);     // specification -> delete
+if ( bad ) throw (UINT) ERROR_ALREADY_RUNNING;  // statement     -> keep
+```
+
+So the script lexes each file into code / comment / string first, then accepts a
+site as a specification only when the argument parses as a type list, the
+preceding token is `)` / `const` / `volatile`, the argument is non-empty, **and**
+the following token is one of `{ ; = : , ) #`. That last condition exists for
+exactly one site in the whole tree (`desktop/win32/source/setup/setup_main.cxx`,
+a throw statement whose operand carries a C-style cast) and every weaker rule
+gets it wrong. The rules are commented in full at the top of the file — read
+them there before changing any of them.
+
+Everything the classifier rejects is **reported, never silently skipped**; there
+were 30 such sites and all 30 want human eyes.
+
+**`verify` is the reason a change this size is reviewable.** The rewrite only
+ever deletes, so per file the counts of `{`, `}` and `;` must come out unchanged
+and `(` / `)` must drop equally. That covers a five-thousand-file diff in
+seconds. Files you also edited by hand will show up in its output — reconcile
+the list against what you touched deliberately rather than expecting it empty.
+
+**Next use.** The follow-up task migrates the *empty* specification (`throw()`,
+which MSVC implements as `__declspec(nothrow)`) to `noexcept`; those sites are
+already reported under kind `EMPTY`. Select those instead of `SPEC` and give
+`rewrite()` a substituting variant — the span bookkeeping is identical, only the
+replacement text differs. Note that `noexcept` cannot be written literally while
+VS2008 is the default toolchain; see the frontier in
+[CLAUDE.md](../CLAUDE.md).
